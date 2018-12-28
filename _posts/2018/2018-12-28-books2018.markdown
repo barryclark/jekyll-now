@@ -1,0 +1,54 @@
+---
+layout: post
+title: "The books of 2018"
+date: "2018-12-28 20:15:43 +0100"
+---
+
+## Novels and short stories
+
+- '*Stephen Florida*' by Gabe Habash (\*\*\*)
+- '==*Een Idea verschijnt (De moord op Commendatore #1)*' by Haruki Murakami (\*\*\*\*\*)==
+- '==*Metaforen verschuiven (De moord op Commendatore #2)*' by Haruki Murakami (\*\*\*\*\*)==
+- '*Angela Carter's Book of Fairy Tales*' by Angela Carter (\*\*\*\*\*)
+- '*The Boy in the Striped Pajamas*' by John Boyne (\*\*\*\*)
+- '*The Sandman Omnibus, Vol. 1*' by Neil Gaiman (\*\*\*\*\*)
+- '*Do Androids Dream of Electric Sheep?*' by Philip K. Dick (\*\*\*\*)
+- '*The Lathe of Heaven*' by Ursula K. Le Guin (\*\*\*\*)
+- '*The Handmaid's Tale*' by Margaret Atwood (\*\*\*\*\*)
+- =='*Het achtste leven (voor Brilka)*' by Nino Haratischwili (\*\*\*\*\*)==
+- '*The Rook (The Checquy Files, #1)*' by Daniel O'Malley (\*\*\*\*)
+- '*Stiletto (The Checquy Files, #2)*' by Daniel O'Malley (\*\*\*)
+
+
+## Self-improvement and productivity
+
+- '*Tools of Titans*' by Timothy Ferriss (\*\*\*)
+- '*Deep Work: Rules for Focused Success in a Distracted World*' by Cal Newport (\*\*\*\*)
+- '*How Not to Be Wrong: The Power of Mathematical Thinking*' by Jordan Ellenberg (\*\*\*\*)
+- '*Think Like an Engineer*' by Guru Madhavan (\*\*)
+- '*The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life*' by Mark Manson (\*\*\*\*\*)
+
+## Biology
+
+- '*How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence*' by Michael Pollan (\*\*\*)
+- '*Self Comes to Mind: Constructing the Conscious Brain*' by António R. Damásio (\*\*\*)
+- '*The Drunken Botanist: The Plants That Create the World's Great Drinks*' by Amy  Stewart (\*\*\*\*)
+- '*The Hidden Life of Trees: What They Feel, How They Communicate*' by Peter Wohlleben (\*\*\*\*)
+- '*Thinking Like a Phage: The Genius of the Viruses That Infect Bacteria and Archaea*' by Merry Youle (\*\*\*\*\*)
+- '*Sapiens: A Brief History of Humankind*' by Yuval Noah Harari (\*\*\*\*\*)
+
+## Mathematics and computer science
+
+- '*Clean Code: A Handbook of Agile Software Craftsmanship*' by Robert C. Martin (\*\*\*)
+- '*Bioinformatics Algorithms: An Active Learning Approach*' by Phillip Compeau (\*\*\*\*\*)
+- '*Elements of Causal Inference: Foundations and Learning Algorithms*' by Jonas Peters (\*\*\*)
+- '*Deep learning with Python*' by Francois Chollet (\*\*\*\*)
+- '*In Pursuit of the Traveling Salesman: Mathematics at the Limits of Computation*' by William J.  Cook (\*\*\*\*\*)
+
+## Physics
+
+- '*Statistical Mechanics: Algorithms and Computations*' by Werner Krauth (\*\*\*\*)
+- ==andere boek SP?==
+- '*Special Relativity and Classical Field Theory*' by Leonard Susskind (\*\*\*\*)
+- '*Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies*' by Geoffrey B. West (\*\*\*\*)
+- '*Life 3.0: Being Human in the Age of Artificial Intelligence*' by Max Tegmark (\*\*\*)
