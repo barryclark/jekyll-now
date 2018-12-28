@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Machine Learning - Tom M. Mitchell
+comments: true
 date: 2018-12-25
 ---
 Title: [Machine Learning](http://www.cs.cmu.edu/~tom/mlbook.html).
