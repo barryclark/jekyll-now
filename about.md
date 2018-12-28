@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Thông tin tác giả
+title: About me
 permalink: /about/
 ---
 
-### Mô tả
+### Description
 
-Học cử nhân [Khoa học máy tính](https://cs.uit.edu.vn/) tại trường [đại học Công nghệ thông tin - ĐHQG TP.HCM](https://www.uit.edu.vn/).
+My name is Duy Nguyen. I'm a student at the [Vietnam National University - HCMC University of Information Technology](https://en.uit.edu.vn/) majoring in [Computer Science](http://cs.uit.edu.vn/home-2/).
 
-Lĩnh vực quan tâm: [Toán học](https://vi.wikipedia.org/wiki/To%C3%A1n_h%E1%BB%8Dc) &rarr; [Khoa học máy tính](https://vi.wikipedia.org/wiki/Khoa_h%E1%BB%8Dc_m%C3%A1y_t%C3%ADnh) &rarr; [Trí tuệ nhân tạo](https://vi.wikipedia.org/wiki/Tr%C3%AD_tu%E1%BB%87_nh%C3%A2n_t%E1%BA%A1o) &rarr; [Máy học](https://vi.wikipedia.org/wiki/H%E1%BB%8Dc_m%C3%A1y).
+I'm interested in [Mathematics](https://en.wikipedia.org/wiki/Mathematics) &rarr; [Computer Science](https://en.wikipedia.org/wiki/Computer_science) &rarr; [Artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) &rarr; [Machine learning](https://en.wikipedia.org/wiki/Machine_learning).
 
-### Liên hệ
+### Contact
 
 [duyqnguyenle@gmail.com](mailto:duyqnguyenle@gmail.com)
