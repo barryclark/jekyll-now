@@ -3,11 +3,11 @@ layout: post
 title: Machine Learning - Tom M. Mitchell
 date: 2018-12-25
 ---
-Sách: [Machine Learning](http://www.cs.cmu.edu/~tom/mlbook.html).
+Title: [Machine Learning](http://www.cs.cmu.edu/~tom/mlbook.html).
 
-Tác giả: Giáo sư [Tom M. Mitchell](http://www.cs.cmu.edu/~tom/).
+Author: Prof. [Tom M. Mitchell](http://www.cs.cmu.edu/~tom/).
 
-Mục lục
+Table of contents
 1. Introduction
 2. Concept Learning and the General-to-Specific Ordering
 3. Decision Tree Learning
