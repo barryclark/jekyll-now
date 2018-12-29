@@ -1,218 +1,220 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" type="text/css" href="/style.css" />
-      <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-      <!-- Fonts -->
+    <!-- Fonts -->
 
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-      {% include jquery.html %}
-      {% include analytics.html %}
+    {% include jquery.html %}
+    {% include analytics.html %}
 
-  </head>
+</head>
 
-  <body>
-      <div class="container--fluid clearfix">
-          <header class="header--candidate">
+<body>
+<div class="container--fluid clearfix">
+    <header class="header--candidate">
 
-              <div class="header--candidate__left-side">
-                  <button class="header--candidate__hamburger"><i class="fa fa-bars"></i></button>
-                  <a href="{{ site.url }}/"><img src="{{ site.baseurl }}/assets/svg/logo--dark.svg" class="header--candidate__logo"/></a>
-              </div>
+        <div class="header--candidate__left-side">
+            <button class="header--candidate__hamburger"><i class="fa fa-bars"></i></button>
+            <a href="{{ site.url }}/"><img src="{{ site.baseurl }}/assets/svg/logo--dark.svg" class="header--candidate__logo"/></a>
+        </div>
 
-              <nav class="header--candidate__navigation">
-                  {% include navigation.html candidate=true %}
-              </nav>
+        <nav class="header--candidate__navigation">
+            {% include navigation.html candidate=true %}
+        </nav>
 
-          </header>
-      </div>
+    </header>
 
-      <section class="container--fluid candidate__section--1">
-          <div class="container clearfix">
-              <div class="candidate__section--1__text">
-                  <h1>Seu novo jeito de encontrar o emprego <span class="text-color--yellow--200">certo!</span></h1>
+</div>
 
-                  <ul>
-                      <li>Crie sua conta 100% grátis</li>
-                      <li>Responda em 5 minutinhos nossas perguntas online</li>
-                      <li>Preencha seu perfil e grave seu vídeo se apresentando</li>
-                      <li>Esteja visível para nossas 2.700 empresas na hora!</li>
-                  </ul>
+<section class="container--fluid candidate__section--1">
 
-                  <a href="{{ site.url }}/login/candidato">
-                      <button>Quero Trabalhar</button>
-                  </a>
-              </div>
+    <div class="candidate__section--1__image">
+        <img src="{{ site.baseurl }}/assets/img/bianka.png"/>
+    </div>
 
-              <div class="candidate__section--1__image">
-                  <img src="{{ site.url }}/assets/img/bianka.jpg"/>
-              </div>
-          </div>
-      </section>
+    <div class="container clearfix">
+        <div class="candidate__section--1__text">
+            <h1>Seu novo jeito de encontrar o emprego <span class="text-color--yellow--200">certo!</span></h1>
 
-      <section class="container clearfix candidate__section--2">
-          <h1><span class="text-color--deep-orange--500">+2.000</span> Empresas contratando com a <span class="text-color--deep-orange--500">Empreguei</span></h1>
+            <a href="{{ site.baseurl }}/login/candidato">
+                <button>Comecar agora, 100% grátis</button>
+            </a>
+        </div>
 
-          <div class="candidate__section--2__client-list">
-              <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/bioage.png" /></div>
-              <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/ford.png"/></div>
-              <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/renault.png"/></div>
-              <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/oppacart.png"/></div>
-              <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/heineken.png"/></div>
-              <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/even.png"/></div>
-              <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/benjamin.png"/></div>
-              <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/lopes.png"/></div>
-          </div>
-      </section>
+    </div>
 
-      <section class="container--fluid candidate__section--3" id="a-empreguei">
-          <div class="container clearfix">
-              <div class="candidate__section--3__text">
-                  <h1>Por que criamos a Empreguei?</h1>
+</section>
 
-                  <p>Chega de pagar para sites antigos de vagas</p>
-                  <p>Chega de elaborar currículo e ficar enviando por e-mail</p>
-                  <p>Saiba qual o salário da vaga antes de se aplicar</p>
-                  <p>As vagas são sempre perto da sua casa</p>
-                  <p>Veja tudo no app na palma da sua mão</p>
+<section class="container clearfix candidate__section--2">
+    <h1><span class="text-color--deep-orange--500">+2.000</span> Empresas contratando com a <span class="text-color--deep-orange--500">Empreguei</span></h1>
 
-              </div>
+    <div class="candidate__section--2__client-list">
+        <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/bioage.png" /></div>
+        <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/ford.png"/></div>
+        <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/renault.png"/></div>
+        <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/oppacart.png"/></div>
+        <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/heineken.png"/></div>
+        <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/even.png"/></div>
+        <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/benjamin.png"/></div>
+        <div class="candidate__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/lopes.png"/></div>
+    </div>
+</section>
 
-              <div class="candidate__section--1__image">
-                  <img src="{{ site.baseurl }}/assets/img/app-screens.png" />
-              </div>
-          </div>
-      </section>
+<section class="container--fluid candidate__section--3" id="a-empreguei">
+    <div class="container clearfix">
+        <div class="candidate__section--3__text">
+            <h1>Por que criamos a Empreguei?</h1>
 
-      <section class="container clearfix candidate__section--4" id="como-funciona">
-          <h1>Como Funciona</h1>
-          <p>Quem faz o que gosta nunca precisará trabalhar!</p>
+            <p>Chega de pagar para sites antigos de vagas</p>
+            <p>Chega de elaborar currículo e ficar enviando por e-mail</p>
+            <p>Saiba qual o salário da vaga antes de se aplicar</p>
+            <p>As vagas são sempre perto da sua casa</p>
+            <p>Veja tudo no app na palma da sua mão</p>
 
-          <div class="candidate__section--4__feature">
-              <img src="{{ site.baseurl }}/assets/svg/phone--touched.svg" />
+        </div>
 
-              <p>Baixe nosso app na Play Store</p>
-          </div>
+        <div class="candidate__section--3__image">
+            <img src="{{ site.baseurl }}/assets/img/app-screens.png" />
+        </div>
+    </div>
+</section>
 
-          <div class="candidate__section--4__feature">
-              <img src="{{ site.baseurl }}/assets/svg/people.svg" />
+<section class="container clearfix candidate__section--4" id="como-funciona">
+    <h1>Como Funciona</h1>
+    <p>Quem faz o que gosta nunca precisará trabalhar!</p>
 
-              <p>Crie seu perfil 100% grátis</p>
-          </div>
+    <div class="candidate__section--4__feature">
+        <img src="{{ site.baseurl }}/assets/svg/dollar.svg" />
 
-          <div class="candidate__section--4__feature">
-              <img src="{{ site.baseurl }}/assets/svg/building.svg" />
+        <p>Crie sua conta 100% grátis</p>
+    </div>
 
-              <p>Escolha as vagas que você preferir</p>
-          </div>
-
-          <div class="candidate__section--4__feature">
-              <img src="{{ site.baseurl }}/assets/svg/hand-shake--outlined.svg" />
-
-              <p>Comece a trabalhar em 24 horas</p>
-          </div>
-      </section>
-
-      <section class="container--fluid candidate__section--5">
-          <div class="container clearfix">
-              <div class="candidate__section--5__text">
-                  <h1>Não perca tempo!</h1>
-
-                  <p>Encontre seu novo emprego agora!</p>
-
-                  <a href="{{ site.url}}/login/candidato">
-                      <button>Encontrar Emprego Ideal</button>
-                  </a>
-              </div>
-
-              <div class="candidate__section--5__video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/os2bKFg2VRs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-          </div>
-      </section>
-
-      <section class="container clearfix candidate__section--6">
-          <h1>Por que a Empreguei é diferente?</h1>
-          <h2>Aplicativo na Google Play ou Site!</h2>
-
-          <ul>
-
-              <li>100% Digital</li>
-              <li>100% Grátis</li>
-              <li>Você recebe as vagas no app</li>
-              <li>Você vai trabalhar perto de casa</li>
-              <li>Você conversa com a empresa direto no app</li>
-              <li>Só vai nas entrevistas legais</li>
-
-          </ul>
-
-          <div class="candidate__section--6__links">
-              <a href='https://play.google.com/store/apps/details?id=com.hatchr.jobn&hl=pt-PT&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png'/></a>
-
-              <a href="{{ site.url }}/login/candidatos">
-                  <button>Acessar Site</button>
-              </a>
-          </div>
-      </section>
-
-      <section class="container--fluid candidate__section--7" id="midia">
-          <div class="container clearfix">
-              <h1>Na Mídia</h1>
-
-              <div class="candidate__section--7__news">
-
-                  <div class="candidate__section--7__news__new">
-                      <img src="{{ site.baseurl }}/assets/img/endeavor.png" />
-
-                      <a href="https://endeavor.org.br/empreendedores-endeavor/marcio-furtado/"><button>Leia Mais</button></a>
-                  </div>
-
-                  <div class="candidate__section--7__news__new">
-                      <img src="{{ site.baseurl }}/assets/img/exame.png" />
-
-                      <a href="https://exame.abril.com.br/pme/conheca-o-tinder-que-faz-voce-dar-match-com-vagas-de-emprego/"><button>Leia Mais</button></a>
-                  </div>
-
-                  <div class="candidate__section--7__news__new">
-                      <img src="{{ site.baseurl }}/assets/img/globo-news.png" />
-
-                      <a href="http://g1.globo.com/globo-news/conta-corrente/videos/t/todos-os-videos/v/dicas-para-pais-e-filhos-que-desejam-empreender-juntos/5232406/"><button>Leia Mais</button></a>
-                  </div>
-
-                  <div class="candidate__section--7__news__new">
-                      <img src="{{ site.baseurl }}/assets/img/valor.png" />
-
-                      <a href="http://www.valor.com.br/empresas/3830136/nivel-de-internacionalizacao-ainda-e-baixo"><button>Leia Mais</button></a>
-                  </div>
-
-              </div>
-          </div>
-
-      </section>
-
-      {% include footer.html candidate=true %}
-
-      <script>
-
-          $('.header--candidate__hamburger').click(function(){
-              $('.header--candidate nav').slideToggle(100);
-          });
+    <div class="candidate__section--4__feature">
+        <img src="{{ site.baseurl }}/assets/svg/phone--touched.svg" />
 
 
-      </script>
+        <p>Responda em 5 minutinhos nossas perguntas online</p>
+    </div>
 
-  </body>
+    <div class="candidate__section--4__feature">
+        <img src="{{ site.baseurl }}/assets/svg/people.svg" />
+
+        <p>Preencha seu perfil 100% Digital</p>
+    </div>
+
+    <div class="candidate__section--4__feature">
+        <img src="{{ site.baseurl }}/assets/svg/face-scan.svg" />
+
+        <p>Esteja visível para nossas 2.700 empresas na hora!</p>
+    </div>
+</section>
+
+<!--<section class="container&#45;&#45;fluid candidate__section&#45;&#45;5">-->
+    <!--<div class="container clearfix">-->
+        <!--<div class="candidate__section&#45;&#45;5__text">-->
+            <!--<h1>Não perca tempo!</h1>-->
+
+            <!--<p>Encontre seu novo emprego agora!</p>-->
+
+            <!--<a href="{{ site.url}}/login/candidato">-->
+                <!--<button>Encontrar Emprego Ideal</button>-->
+            <!--</a>-->
+        <!--</div>-->
+
+        <!--<div class="candidate__section&#45;&#45;5__video">-->
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/os2bKFg2VRs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<!--<section class="container clearfix candidate__section&#45;&#45;6">-->
+    <!--<h1>Por que a Empreguei é diferente?</h1>-->
+    <!--<h2>Aplicativo na Google Play ou Site!</h2>-->
+
+    <!--<ul>-->
+
+        <!--<li>100% Digital</li>-->
+        <!--<li>100% Grátis</li>-->
+        <!--<li>Você recebe as vagas no app</li>-->
+        <!--<li>Você vai trabalhar perto de casa</li>-->
+        <!--<li>Você conversa com a empresa direto no app</li>-->
+        <!--<li>Só vai nas entrevistas legais</li>-->
+
+    <!--</ul>-->
+
+    <!--<div class="candidate__section&#45;&#45;6__links">-->
+        <!--<a href='https://play.google.com/store/apps/details?id=com.hatchr.jobn&hl=pt-PT&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png'/></a>-->
+
+        <!--<a href="{{ site.url }}/login/candidatos">-->
+            <!--<button>Acessar Site</button>-->
+        <!--</a>-->
+    <!--</div>-->
+<!--</section>-->
+
+<section class="container--fluid candidate__section--7" id="midia">
+    <div class="container clearfix">
+        <h1>Na Mídia</h1>
+
+        <div class="candidate__section--7__news">
+
+            <div class="candidate__section--7__news__new">
+                <img src="{{ site.baseurl }}/assets/img/endeavor.png" />
+
+                <a href="https://endeavor.org.br/empreendedores-endeavor/marcio-furtado/"><button>Leia Mais</button></a>
+            </div>
+
+            <div class="candidate__section--7__news__new">
+                <img src="{{ site.baseurl }}/assets/img/exame.png" />
+
+                <a href="https://exame.abril.com.br/pme/conheca-o-tinder-que-faz-voce-dar-match-com-vagas-de-emprego/"><button>Leia Mais</button></a>
+            </div>
+
+            <div class="candidate__section--7__news__new">
+                <img src="{{ site.baseurl }}/assets/img/globo-news.png" />
+
+                <a href="http://g1.globo.com/globo-news/conta-corrente/videos/t/todos-os-videos/v/dicas-para-pais-e-filhos-que-desejam-empreender-juntos/5232406/"><button>Leia Mais</button></a>
+            </div>
+
+            <div class="candidate__section--7__news__new">
+                <img src="{{ site.baseurl }}/assets/img/valor.png" />
+
+                <a href="http://www.valor.com.br/empresas/3830136/nivel-de-internacionalizacao-ainda-e-baixo"><button>Leia Mais</button></a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+{% include footer.html candidate=true %}
+
+<script>
+
+    $('.header--candidate__hamburger').click(function(){
+        $('.header--candidate nav').slideToggle(100);
+    });
+
+
+</script>
+
+<a class="play-store" href='https://play.google.com/store/apps/details?id=com.hatchr.jobn&hl=pt-PT&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+        <img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png'/>
+    </a>
+
+</body>
 </html>
