@@ -19,6 +19,7 @@ Today, I will be adding more social icons in the footer.
       * Add the function in Ruby and HTML
     3. _config.yml 
       * Enter your username of the social account here
+      * [What is YAML or YML?](https://stackoverflow.com/questions/22268952/what-is-the-difference-between-yaml-vs-yml-extension) 
   * Now, restart the server if you are running the site in local (jekyll server). You should see the social icons below in the footer. 😎
 
 ### Press kits and icons
@@ -27,9 +28,10 @@ Today, I will be adding more social icons in the footer.
 * [Soundcloud icon](https://de.wikipedia.org/wiki/Datei:SoundCloud_-_Logo.svg)  
   * Click Originaldatei then View Page Source to get SVG codes
 * [Shutterstock icon](https://twitter.com/shutterstock)
+* Thinking about including my ElixirForum account, I came acroos this [SVG collection site](https://github.com/gilbarbara/logos).  After reading this [Github thread](https://github.com/elixir-lang/elixir-lang.github.com/issues/575), I feel like I might even probably have to remove some of the social icons I just added due to copyrights reasons.  
+Anyway, I just made a different icon for ElixirForum account icon. 
+* [StackExchange icon](https://stackoverflow.com/company/press)
 
-Thinking about including my ElixirForum account, I came acroos this [SVG collection site](https://github.com/gilbarbara/logos).  After reading this [Github thread](https://github.com/elixir-lang/elixir-lang.github.com/issues/575), I feel like I might even probably have to remove some of the social icons I just added due to copyrights reasons.  
-Anyway, I just made a different icon.  
 ### Notes
 
 * SVG tricks shown by Ko Pyae Sone when back in Softhatch are pretty helpful here. 

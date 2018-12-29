@@ -33,30 +33,31 @@ note: make sure you don't have any folder with the name **something** under form
   * Change SVG to base64 [here](https://www.base64-image.de/).
   * You might want to read this [09: SVG with Data URIs][2]
 
-## Inspiration to write this blog
-* Aaron Swartz, The Internet's Own Boy. <http://www.aaronsw.com/weblog>
-* [Joseph "Joe" Leslie Armstrong][3], the creator of [Erlang programming language][4]. 
-  * Jekyll: <https://joearms.github.io/oldindex.html> 
-  * TiddlyWiki: <https://joearms.github.io/>
-* The YC people 
-  * Paul Graham. <http://paulgraham.com/> 
-  * Jessica Livingston. <http://foundersatwork.posthaven.com/> 
-  * Sam Altman. <http://blog.samaltman.com/>
-* Friends 
-  * Tinnei Pang. <https://www.tinneipang.com/>
-
 ## Notes
-* In 2013, it was my first attempt to follow his tutorial to create something similar but  failed. <http://hankquinlan.github.io/blog/>
+* In 2015, I guess, it was my first attempt to follow this [tutorial](http://jmcglone.com/guides/github-pages/) to create something similar but failed. <http://hankquinlan.github.io/blog/>
 
-### More to read
+## More to read
+
+#### Jekyll and Github Pages
+
 * [Github Pages Basics](https://help.github.com/categories/github-pages-basics/)
+* [How does Jekyll work?](https://www.bytesandwich.com/jekyll/software/blogging/2016/09/14/how-does-jekyll-work.html)
+* [How does a static site generator like Jekyll work?](https://www.quora.com/How-does-a-static-site-generator-like-Jekyll-work)
+* [Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
+
+#### Github and Git
+
+* [Configuring a publishing source for GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
 * [Proper Git commit messages](https://chris.beams.io/posts/git-commit/)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
+
+#### Alternatives to Github Pages
+
+* [Example: Setting up a Static Website Using a Custom Domain](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#website-hosting-custom-domain-walkthrough-domain-registry)
 * [Hosting on Gitlab.com with GitLab Pages](https://about.gitlab.com/2016/04/07/gitlab-pages-setup/)
 
 [1]: https://www.quora.com/What-HEX-color-does-Quora-use-for-its-logo
 [2]: https://css-tricks.com/lodge/svg/09-svg-data-uris/
-[3]: https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)
-[4]: https://en.wikipedia.org/wiki/Erlang_(programming_language) 
 
 <!-- ![_config.yml]({{ site.baseurl }}/images/config.png) -->
 Just a photo taken at Yathae Pyan Cave, Hpa-An, Karen State of Myanmar:  
