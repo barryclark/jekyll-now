@@ -102,23 +102,30 @@
 
 .company__section--1{
   margin-top: 64px;
-  background: $blue500;
   -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+  overflow: hidden;
+  position: relative;
+  height: 600px;
 
   & .container {
+    right: 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row-reverse wrap;
+    z-index: 2;
+    position: absolute;
+    height: 600px;
   }
 
   &__text{
     flex-shrink: 6;
-    flex-basis: 55%;
+    flex-basis: 75%;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-self: right;
 
     @include mobile {
       flex-basis: 100%;
@@ -126,10 +133,12 @@
 
     h1 {
       font-family: Gidolinya, sans-serif;
-      font-size: 64px;
-      line-height: 64px;
+      font-size: 32px;
       text-transform: uppercase;
       color: white;
+      width: 100%;
+      text-align: center;
+      margin: 32px 32px;
 
       @include mobile {
         font-size: 48px;
@@ -205,106 +214,23 @@
   }
 
   &__image{
-    flex-shrink: 4;
-    flex-basis: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-flow: row nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 600px;
+    background: $blue500;
 
-    @include mobile {
-      justify-content: center;
-      flex-basis: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center left;
+      opacity: .8;
     }
 
-    &__card{
-      background: white;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 16px;
-      margin-left: 16px;
-      margin-bottom: 32px;
-      transition: .3s;
-      border-radius: 16px;
-      flex-basis: 200px;
-
-      &:last-child {
-        @include mobile {
-          display: none;
-        }
-      }
-
-      @include tablet {
-        flex-basis: 80%;
-        margin-right: 16px;
-      }
-
-      &:hover {
-        -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
-        box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
-        transform: scale(1.03);
-      }
-
-      h2 {
-        line-height: 18px;
-        font-size: 18px;
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-        height: 16px;
-        margin: 16px 0 0 0;
-      }
-
-      ul {
-        padding: 0;
-
-        li {
-          list-style: none;
-          font-size: 14px;
-          padding: 0;
-          padding-top: 4px;
-          padding-bottom: 4px;
-
-          &:nth-child(1) {
-            border-bottom: 1px solid lightgrey;
-          }
-
-          &:nth-child(2) {
-            padding-top: 8px;
-          }
-
-          &:last-child {
-            padding-bottom: 0;
-          }
-
-          &::before {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 16px;
-          }
-
-          &:nth-child(1)::before { content: url('https://empreguei.github.io/assets/svg/education.svg') }
-          &:nth-child(2)::before { content: url('https://empreguei.github.io/assets/svg/mail.svg') }
-          &:nth-child(3)::before { content: url('https://empreguei.github.io/assets/svg/phone.svg') }
-          &:nth-child(4)::before { content: url('https://empreguei.github.io/assets/svg/money.svg') }
-          &:nth-child(5)::before { content: url('https://empreguei.github.io/assets/svg/tie.svg') }
-          &:nth-child(6)::before { content: url('https://empreguei.github.io/assets/svg/party.svg') }
-          &:nth-child(7)::before { content: url('https://empreguei.github.io/assets/svg/distance.svg') }
-          &:nth-child(8)::before { content: url('https://empreguei.github.io/assets/svg/bike.svg') }
-        }
-      }
-
-      img {
-        align-self: center;
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        object-fit: cover;
-        object-position: top center;
-      }
-    }
   }
 }
 
@@ -368,11 +294,11 @@
 
 .company__section--3{
   margin-top: 64px;
-  padding-bottom: 64px;
   background: $grey100;
   -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+  padding: 0;
 
   & .container {
     display: flex;
@@ -386,6 +312,7 @@
     flex-flow: column nowrap;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 32px;
 
     @include mobile {
       flex-basis: 100%;
@@ -395,48 +322,36 @@
       font-family: Gidolinya, sans-serif;
       line-height: 64px;
       color: $grey800;
+      text-align: right;
+      width: 100%;
+      padding-right: 32px;
 
       @include mobile {
         text-align: center;
       }
     }
 
-    ul {
-      font-size: 24px;
+    &__line {
+      padding-right: 32px;
+      width: 100%;
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      text-align: right;
+      font-size: 20px;
+      line-height: 1.2;
+      align-items: center;
+      margin: 8px;
 
-      @include mobile {
-        margin: 32px;
-      }
+      &__icon {
+        margin-left: 16px;
+        margin-right: 8px;
 
-      li {
-        letter-spacing: 1px;
-        margin-top: 16px;
-        padding: 0;
-        list-style: none;
-
-        &::before {
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 16px;
+        img {
+          width: 40px;
+          height: auto;
+          max-width: none;
         }
       }
-
-      & li:nth-child(1)::before {
-        content: url("https://empreguei.github.io/assets/svg/coin.svg");
-      }
-      & li:nth-child(2)::before {
-        content: url("https://empreguei.github.io/assets/svg/no-cv.svg");
-      }
-      & li:nth-child(3)::before {
-        content: url("https://empreguei.github.io/assets/svg/hand-shake--money.svg");
-      }
-      & li:nth-child(4)::before {
-        content: url("https://empreguei.github.io/assets/svg/person--ok.svg");
-      }
-      & li:nth-child(5)::before {
-        content: url("https://empreguei.github.io/assets/svg/building--briefcase.svg");
-      }
-
     }
 
     a {
@@ -476,9 +391,9 @@
     }
 
     img {
-      width: 90%;
-      height: 90%;
-      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       object-position: center;
     }
 
@@ -586,9 +501,13 @@
 
   &__plans {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+
+    @include tablet {
+      flex-flow: row wrap;
+    }
 
     &__plan {
       padding: 16px;
@@ -722,6 +641,45 @@
         -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
         box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
+      }
+    }
+
+    &__advantages {
+      background: $blue500;
+      justify-self: stretch;
+      display: flex;
+      flex-flow: row wrap;
+      flex-shrink: 2;
+      justify-content: space-evenly;
+
+      h1 {
+        width: 100%;
+        color: $white;
+        text-align: center;
+      }
+
+      .advantage {
+        flex-basis: 40%;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+
+        h2 {
+          text-align: center;
+          color: $blue50;
+        }
+
+        div {
+          background: white;
+          border-radius: 200px;
+          width: 150px;
+          height: 150px;
+
+          img {
+            width: 150px;
+          }
+        }
       }
     }
   }

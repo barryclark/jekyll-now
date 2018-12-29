@@ -1,217 +1,275 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" type="text/css" href="/style.css" />
-      <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-      <!-- Fonts -->
+    <!-- Fonts -->
 
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-      {% include jquery.html %}
-      {% include analytics.html %}
+    {% include jquery.html %}
+    {% include analytics.html %}
 
-  </head>
+</head>
 
-  <body>
-      <div class="container--fluid clearfix">
-          <header class="header--company">
+<body>
+<div class="container--fluid clearfix">
+    <header class="header--company">
 
-              <div class="header--company__left-side">
-                  <button class="header--company__hamburger"><i class="fa fa-bars"></i></button>
-                  <a href="{{ site.url }}/"><img src="{{ site.baseurl }}/assets/svg/logo--dark.svg" class="header--company__logo"/></a>
-              </div>
+        <div class="header--company__left-side">
+            <button class="header--company__hamburger"><i class="fa fa-bars"></i></button>
+            <a href="{{ site.url }}/"><img src="{{ site.baseurl }}/assets/svg/logo--dark.svg" class="header--company__logo"/></a>
+        </div>
 
-              <nav class="header--company__navigation">
-                  {% include navigation.html company=true %}
-              </nav>
+        <nav class="header--company__navigation">
+            {% include navigation.html company=true %}
+        </nav>
 
-          </header>
-      </div>
+    </header>
+</div>
 
-      <section class="container--fluid company__section--1" id="a-empreguei">
-          <div class="container clearfix">
-              <div class="company__section--1__text">
-                  <h1>O jeito Empreguei de contratar o <span class="text-color--yellow--200">melhor </span>talento em 24 horas</h1>
+<section class="container--fluid company__section--1" id="a-empreguei">
+    <div class="company__section--1__image">
+        <img src="{{ site.baseurl }}/assets/img/header-bg--companies.jpg"/>
+    </div>
 
-                  <ul>
-                      <li>Publique de forma inteligente sua vaga em 1 minuto</li>
-                      <li>Visualize na hora os 5% melhores talentos para você</li>
-                      <li>Entreviste na plataforma quantos você quiser</li>
-                      <li>Tudo digital, online e sem currículos por e-mail</li>
-                  </ul>
+    <div class="container clearfix">
+        <div class="company__section--1__text">
+            <h1>O jeito Empreguei de contratar o <span class="text-color--yellow--200">melhor </span>talento</h1>
 
-                  <a href="{{ site.url }}/login/empresa">
-                      <button>Publicar Vaga Agora!</button>
-                  </a>
-              </div>
+            <!--<ul>-->
+            <!--<li>Publique de forma inteligente sua vaga em 1 minuto</li>-->
+            <!--<li>Visualize na hora os 5% melhores talentos para você</li>-->
+            <!--<li>Entreviste na plataforma quantos você quiser</li>-->
+            <!--<li>Tudo digital, online e sem currículos por e-mail</li>-->
+            <!--</ul>-->
 
-              <div class="company__section--1__image">
-                  <img src="{{ site.baseurl }}/assets/img/candidate-card.png"/>
-              </div>
-          </div>
-      </section>
+            <a href="{{ site.url }}/login/empresa">
+                <button>Publicar Vaga Agora!</button>
+            </a>
+        </div>
+    </div>
+</section>
 
-      <section class="container clearfix company__section--2">
-          <h1><span class="text-color--blue--500">+2.000</span> Empresas eliminaram o currículo com a <span class="text-color--blue--500">Empreguei</span></h1>
+<section class="container clearfix company__section--2">
+    <h1><span class="text-color--blue--500">+2.000</span> Empresas eliminaram o currículo com a <span class="text-color--blue--500">Empreguei</span></h1>
 
-          <div class="company__section--2__client-list">
-              <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/bioage.png" /></div>
-              <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/ford.png"/></div>
-              <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/renault.png"/></div>
-              <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/oppacart.png"/></div>
-              <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/heineken.png"/></div>
-              <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/even.png"/></div>
-              <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/benjamin.png"/></div>
-              <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/lopes.png"/></div>
-          </div>
-      </section>
+    <div class="company__section--2__client-list">
+        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/bioage.png" /></div>
+        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/ford.png"/></div>
+        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/renault.png"/></div>
+        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/oppacart.png"/></div>
+        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/heineken.png"/></div>
+        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/even.png"/></div>
+        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/benjamin.png"/></div>
+        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/lopes.png"/></div>
+    </div>
+</section>
 
-      <section class="container--fluid company__section--3">
-          <div class="container clearfix">
-              <div class="company__section--3__text">
-                  <h1>Por que criamos a Empreguei</h1>
+<section class="container--fluid company__section--3">
+    <div class="container clearfix">
+        <div class="company__section--3__text">
+            <h1>Por que criamos a Empreguei</h1>
 
-                  <ul>
-                      <li>Você sabia que, em média, 2 a cada 5 colaboradores da sua empresa são "Millenials"?</li>
-                      <li>Você sabia que, nos próximos 2 anos, 3 a cada 5 colaboradores serão "Millenials"?</li>
-                      <li>A Empreguei prepara você e sua empresa para aproveitar ao maximo o potencial e as qualidades dessa galera!</li>
-                  </ul>
+            <div class="company__section--3__text__line">
+                <div class="company__section--3__text__line__icon">
+                    <img src="{{ site.baseurl }}/assets/svg/pie-chart.svg" />
+                </div>
+                <div>
+                    Você sabia que, em média, 2 a cada 5 colaboradores da sua empresa são "Millennials"?
+                </div>
+            </div>
+            <div class="company__section--3__text__line">
+                <div class="company__section--3__text__line__icon">
+                    <img src="{{ site.baseurl }}/assets/svg/profit.svg" />
+                </div>
+                <div>
+                    Você sabia que, nos próximos 2 anos, 3 a cada 5 colaboradores serão "Millennials"?
+                </div>
+            </div>
+            <div class="company__section--3__text__line">
+                <div class="company__section--3__text__line__icon">
+                    <img src="{{ site.baseurl }}/assets/svg/innovation.svg" />
+                </div>
+                <div>
+                    A Empreguei prepara você e sua empresa para aproveitar ao maximo o potencial e as qualidades dessa galera!
+                </div>
+            </div>
 
-              </div>
+        </div>
 
-              <div class="company__section--3__image">
-                  <img src="{{ site.baseurl }}/assets/img/millenials.png" />
-              </div>
-          </div>
-      </section>
+        <div class="company__section--3__image">
+            <img src="{{ site.baseurl }}/assets/img/millenials.png" />
+        </div>
+    </div>
+</section>
 
-      <section class="container clearfix company__section--4" id="como-funciona">
-          <h1>Como Funciona</h1>
+<section class="container clearfix company__section--4" id="como-funciona">
+    <h1>Como Funciona</h1>
 
-          <div class="company__section--4__feature">
-              <img src="{{ site.baseurl }}/assets/svg/location.svg" />
+    <div class="company__section--4__feature">
+        <img src="{{ site.baseurl }}/assets/svg/location.svg" />
 
-              <p>Publique sua vaga e local de trabalho</p>
-          </div>
+        <p>Publique sua vaga e local de trabalho</p>
+    </div>
 
-          <div class="company__section--4__feature">
-              <img src="{{ site.baseurl }}/assets/svg/discount.svg" />
+    <div class="company__section--4__feature">
+        <img src="{{ site.baseurl }}/assets/svg/discount.svg" />
 
-              <p>Receba em 30 segundos os candidatos mais compatíveis</p>
-          </div>
+        <p>Veja os 5% melhores talentos</p>
+    </div>
 
-          <div class="company__section--4__feature">
-              <img src="{{ site.baseurl }}/assets/svg/chat-bubbles.svg" />
+    <div class="company__section--4__feature">
+        <img src="{{ site.baseurl }}/assets/svg/chat-bubbles.svg" />
 
-              <p>Entreviste na plataforma quantos quiser</p>
-          </div>
+        <p>Entreviste na plataforma quantos quiser</p>
+    </div>
 
-          <div class="company__section--4__feature">
-              <img src="{{ site.baseurl }}/assets/svg/chart.svg" />
+    <div class="company__section--4__feature">
+        <img src="{{ site.baseurl }}/assets/svg/chart.svg" />
 
-              <p>Contrate em 24 horas e aumente sua produtividade</p>
-          </div>
-      </section>
+        <p>Contrate em tempo recorde</p>
+    </div>
+</section>
 
-      <section class="container--fluid company__section--5">
-          <div class="container clearfix">
-              <div class="company__section--5__text">
-                  <p>Veja como o Thiago, diretor de uma rede de franquias, está recrutando seus talentos com o jeito Empreguei!</p>
+<!--<section class="container&#45;&#45;fluid company__section&#45;&#45;5">-->
+<!--<div class="container clearfix">-->
+<!--<div class="company__section&#45;&#45;5__text">-->
+<!--<p>Veja como o Thiago, diretor de uma rede de franquias, está recrutando seus talentos com o jeito Empreguei!</p>-->
 
-                  <a href="{{ site.url}}/login/empresa">
-                      <button>Publicar Vaga</button>
-                  </a>
-              </div>
+<!--<a href="{{ site.url}}/login/empresa">-->
+<!--<button>Publicar Vaga</button>-->
+<!--</a>-->
+<!--</div>-->
 
-              <div class="company__section--5__video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/74HhDbDWpvw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-          </div>
-      </section>
+<!--<div class="company__section&#45;&#45;5__video">-->
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/74HhDbDWpvw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
 
-      <section class="container clearfix company__section--6" id="precos">
-          <h1>Preços</h1>
+<section class="container clearfix company__section--6" id="precos">
 
-          <div class="company__section--6__plans">
+    <div class="company__section--6__plans">
 
-              <div class="company__section--6__plans__plan">
-                  <div class="company__section--6__plans__plan__name">de <del>R$ 199,00</del> por</div>
-                  <div class="company__section--6__plans__plan__only">Só</div>
-                  <div class="company__section--6__plans__plan__price">R$ 129,00</div>
-                  <div class="company__section--6__plans__plan__description">Por Vaga</div>
-                  <h2>Sem Mensalidade!</h2>
-                  <div class="company__section--6__plans__plan__features">
-                      <li class="item">5% melhores talentos pra você</li>
-                      <li class="item">Todos em até 5km da vaga</li>
-                      <li class="item">Converse em tempo real com eles</li>
-                      <li class="item">Todos eles com foto</li>
-                      <li class="item">Acesso instantâneo à base compatível</li>
-                  </div>
-                  <a href="{{ site.url }}/register/companies">
-                      <button>Publicar Vaga Agora!</button>
-                  </a>
-              </div>
+        <div class="company__section--6__plans__plan">
+            <div class="company__section--6__plans__plan__name">de <del>R$ 199,00</del> por</div>
+            <div class="company__section--6__plans__plan__only">Só</div>
+            <div class="company__section--6__plans__plan__price">R$ 129,00</div>
+            <div class="company__section--6__plans__plan__description">Por Vaga</div>
+            <h2>Sem Mensalidade!</h2>
+            <div class="company__section--6__plans__plan__features">
+                <li class="item">5% melhores talentos pra você</li>
+                <li class="item">Todos em até 5km da vaga</li>
+                <li class="item">Converse em tempo real com eles</li>
+                <li class="item">Todos eles com foto</li>
+                <li class="item">Acesso instantâneo à base compatível</li>
+            </div>
+            <a href="{{ site.url }}/register/companies">
+                <button>Publicar Vaga Agora!</button>
+            </a>
+        </div>
 
-          </div>
-      </section>
+        <div class="company__section--6__plans__advantages">
+            <h1>Ganhos Imediatos</h1>
 
-      <section class="container--fluid company__section--7" id="midia">
-          <div class="container clearfix">
-              <h1>Na Mídia</h1>
+            <div class="advantage">
+                <div>
+                    <img src="{{ site.baseurl }}/assets/svg/bicycle--illustration.svg"/>
+                </div>
 
-              <div class="company__section--7__news">
+                <h2>
+                    Economize R$ 3600,00 se o candidato for a pé ou de bike para o trabalho!
+                </h2>
+            </div>
 
-                  <div class="company__section--7__news__new">
-                      <img src="{{ site.baseurl }}/assets/img/endeavor.png" />
+            <div class="advantage">
+                <div>
+                    <img src="{{ site.baseurl }}/assets/svg/teamwork--illustration.svg"/>
+                </div>
 
-                      <a href="https://endeavor.org.br/empreendedores-endeavor/marcio-furtado/"><button>Leia Mais</button></a>
-                  </div>
+                <h2>
+                    Reduza 70% de sua rotatividade e tenha um time de talentos unidos
+                </h2>
+            </div>
 
-                  <div class="company__section--7__news__new">
-                      <img src="{{ site.baseurl }}/assets/img/exame.png" />
+            <div class="advantage">
+                <div>
+                    <img src="{{ site.baseurl }}/assets/svg/engagement--illustration.svg"/>
+                </div>
 
-                      <a href="https://exame.abril.com.br/pme/conheca-o-tinder-que-faz-voce-dar-match-com-vagas-de-emprego/"><button>Leia Mais</button></a>
-                  </div>
+                <h2>Colaboradores são muito mais produtivos e engajados quando residem próximo do trabalho</h2>
+            </div>
 
-                  <div class="company__section--7__news__new">
-                      <img src="{{ site.baseurl }}/assets/img/globo-news.png" />
+            <div class="advantage">
+                <div>
+                    <img src="{{ site.baseurl }}/assets/svg/money--illustration.svg"/>
+                </div>
 
-                      <a href="http://g1.globo.com/globo-news/conta-corrente/videos/t/todos-os-videos/v/dicas-para-pais-e-filhos-que-desejam-empreender-juntos/5232406/"><button>Leia Mais</button></a>
-                  </div>
+                <h2>Tudo isso pelo valor de 5% de um salário mínimo e nenhum custo extra!</h2>
+            </div>
+        </div>
 
-                  <div class="company__section--7__news__new">
-                      <img src="{{ site.baseurl }}/assets/img/valor.png" />
+    </div>
+</section>
 
-                      <a href="http://www.valor.com.br/empresas/3830136/nivel-de-internacionalizacao-ainda-e-baixo"><button>Leia Mais</button></a>
-                  </div>
+<section class="container--fluid company__section--7" id="midia">
+    <div class="container clearfix">
+        <h1>Na Mídia</h1>
 
-              </div>
-          </div>
+        <div class="company__section--7__news">
 
-      </section>
+            <div class="company__section--7__news__new">
+                <img src="{{ site.baseurl }}/assets/img/endeavor.png" />
 
-      {% include footer.html company=false %}
+                <a href="https://endeavor.org.br/empreendedores-endeavor/marcio-furtado/"><button>Leia Mais</button></a>
+            </div>
 
-      <script>
+            <div class="company__section--7__news__new">
+                <img src="{{ site.baseurl }}/assets/img/exame.png" />
 
-          $('.header--company__hamburger').click(function(){
-              $('.header--company nav').slideToggle(100);
-          });
+                <a href="https://exame.abril.com.br/pme/conheca-o-tinder-que-faz-voce-dar-match-com-vagas-de-emprego/"><button>Leia Mais</button></a>
+            </div>
+
+            <div class="company__section--7__news__new">
+                <img src="{{ site.baseurl }}/assets/img/globo-news.png" />
+
+                <a href="http://g1.globo.com/globo-news/conta-corrente/videos/t/todos-os-videos/v/dicas-para-pais-e-filhos-que-desejam-empreender-juntos/5232406/"><button>Leia Mais</button></a>
+            </div>
+
+            <div class="company__section--7__news__new">
+                <img src="{{ site.baseurl }}/assets/img/valor.png" />
+
+                <a href="http://www.valor.com.br/empresas/3830136/nivel-de-internacionalizacao-ainda-e-baixo"><button>Leia Mais</button></a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+{% include footer.html company=false %}
+
+<script>
+
+    $('.header--company__hamburger').click(function(){
+        $('.header--company nav').slideToggle(100);
+    });
 
 
-      </script>
+</script>
 
-  </body>
+</body>
 </html>
