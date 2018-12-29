@@ -85,6 +85,7 @@ date: 2018-12-23
   
 * MACHINE LEARNING
 
+  * www.andrey-melentyev.com
   * machinelearningcoban.com
   * ongxuanhong.wordpress.com
   * sites.google.com/a/wru.vn/cse445spring2016
