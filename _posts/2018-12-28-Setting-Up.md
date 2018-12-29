@@ -26,7 +26,7 @@ note: make sure you don't have any folder with the name **something** under form
 ### Quora icon
 * The Quora icon next to the Youtube icon is not showing up, but you can ... (Nevermind, it appears now. Like after several minutes.)
   * I downloaded this [Quora logo](https://goo.gl/images/EeXytb) which is a png. 
-  * I use this [converter](https://image.online-convert.com/convert-to-svg) to convert it to SVG. 
+  * I use this [converter](https://image.online-convert.com/convert-to-svg) or [this](https://convertio.co/png-svg/) to convert it to SVG. 
   * Then in the SVG file, I changed width to 31.100000pt, height to 31.100000pt, and color to [#AA2200][1]. 
   * Change SVG to base64 [here](https://www.base64-image.de/).
   * You might want to read this [09: SVG with Data URIs][2]
