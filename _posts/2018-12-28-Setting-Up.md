@@ -1,8 +1,10 @@
 ---
 layout: post
-title: This is my very first post.
+title: Setting up the blog
 ---
 
+Location: Yangon  
+Welcome to my very first post!  
 So what did I just do? ကျနော်ဘာလုပ်မိလိုက်ပါလိမ့်။
 
 Here is a simple instruction on how to create a blog like this. (Just in case if I forget how I built this. lol.) 
@@ -56,4 +58,6 @@ note: make sure you don't have any folder with the name **something** under form
 [3]: https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)
 [4]: https://en.wikipedia.org/wiki/Erlang_(programming_language) 
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+<!-- ![_config.yml]({{ site.baseurl }}/images/config.png) -->
+Just a photo taken at Yathae Pyan Cave, Hpa-An, Karen State of Myanmar:  
+![alt text](https://s3-ap-southeast-1.amazonaws.com/cdn.sawthinkar/YathaePyanCave.JPG "Yathae Pyan Cave")

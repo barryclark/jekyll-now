@@ -1,10 +1,10 @@
 ---
 layout: post
-title: My second post
+title: Adding social account icons in the footer
 ---
 
 08:41 Yangon  
-Welcome to my second post
+Welcome to my second post!  
 
 Today, I will be adding more social icons in the footer. 
 ### Social icons 
@@ -26,7 +26,10 @@ Today, I will be adding more social icons in the footer.
 * [Goodreads icon](https://www.goodreads.com/about/press)  
 * [Soundcloud icon](https://de.wikipedia.org/wiki/Datei:SoundCloud_-_Logo.svg)  
   * Click Originaldatei then View Page Source to get SVG codes
+* [Shutterstock icon](https://twitter.com/shutterstock)
 
+Thinking about including my ElixirForum account, I came acroos this [SVG collection site](https://github.com/gilbarbara/logos).  After reading this [Github thread](https://github.com/elixir-lang/elixir-lang.github.com/issues/575), I feel like I might even probably have to remove some of the social icons I just added due to copyrights reasons.  
+Anyway, I just made a different icon.  
 ### Notes
 
 * SVG tricks shown by Ko Pyae Sone when back in Softhatch are pretty helpful here. 
