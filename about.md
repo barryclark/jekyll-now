@@ -4,15 +4,27 @@ title: About
 permalink: /about/
 ---
 
-I am the Director of Ecosystem at the Cloud Native Computing Foundation. My mission is to make end users successful and productive with cloud native technologies such as Kubernetes and Prometheus.
+![Cheryl Hung](https://avatars3.githubusercontent.com/u/11319250?v=3&u=336db9e336bff5ab7c6716770e14257ba48b4720&s=400)
 
-In addition to being a prolific public speaker, I founded the Cloud Native London meetup. We are a strong, open, diverse developer community around the cloud native platform and technologies in London. Each monthly event gets 200-300 attendees; [come join us in London on the first Tuesday of each month](https://www.meetup.com/Cloud-Native-London)!
+I am the Director of Ecosystem at the Cloud Native Computing Foundation. My
+mission is to make end users successful and productive with cloud native
+technologies such as Kubernetes and Prometheus.
+
+In addition to being a prolific public speaker, I founded the Cloud Native
+London meetup. We are a strong, open, diverse developer community around the
+cloud native platform and technologies in London. Each monthly event gets
+200-300 attendees; [come join us in London on the first Wednesday of each
+month](https://www.meetup.com/Cloud-Native-London)!
 
 ## Background
 
-Previously I led product management and the DevOps engineering team at StorageOS, a startup building persistent storage for containers. At Google, I was a C++ software engineer building location services and search infrastructure for Google Maps. 
+Previously I led product management and the DevOps engineering team at
+StorageOS, a startup building persistent storage for containers. At Google, I
+built location services and search infrastructure for Google Maps, primarily in
+C++.
 
-I hold a Masters in Computer Science from the University of Cambridge, King's College.
+I hold a Masters in Computer Science from the University of Cambridge, King's
+College.
 
 ## Contact me
 
@@ -21,8 +33,6 @@ I hold a Masters in Computer Science from the University of Cambridge, King's Co
 * Informal: Cheryl
 * Professional: Ms Cheryl Hung
 * Chinese: 洪雪晴
-
-[Download my resume here.](http://www.oicheryl.com/resources/CherylJHung.pdf)
 
 ### Source code
 

@@ -1,6 +1,9 @@
 ---
 layout: post
-title: "[Photos] [Oct 2018] Cloud Native London October 2018 Roundup"
+title: "Cloud Native London October 2018 Roundup"
+tags:
+  - "2018"
+  - Meetup
 ---
 
 ![Cloud Native London October](https://pbs.twimg.com/media/DpFfBRuXgAEII1q.jpg)
@@ -16,14 +19,14 @@ First up was a discussion on Auditing with eBPF, followed by an explanation of a
 Luke Addison from Jetstack told us about eBPF (extended Berkeley Packet Filter), showing how:
 
 * eBPF provides a powerful user space API for running programs in kernel space
-* eBPF programs can be attached to certain code paths in the Linux kernel so that they are triggered when that code path is traversed 
-* Running an eBPF program using a DaemonSet on a Kubernetes cluster can be used to aggregate kernel metrics 
+* eBPF programs can be attached to certain code paths in the Linux kernel so that they are triggered when that code path is traversed
+* Running an eBPF program using a DaemonSet on a Kubernetes cluster can be used to aggregate kernel metrics
 
 ![Paul Fremantle](https://pbs.twimg.com/media/DpFn7R8XcAAoPmE.jpg)
 
 Following that, Paul Fremantle from WSO2 gave a live demo of Ballerina, a Cloud Native Programming Language. His takeaways were that:
 
-* There is an explosion of programmable endpoints happening, and many programmers are now building applications that rely on multiple network endpoints, whether they are APIs, microservices, cloud services or SaaS apps. Ballerina is a new language designed to help code the glue between such services. 
+* There is an explosion of programmable endpoints happening, and many programmers are now building applications that rely on multiple network endpoints, whether they are APIs, microservices, cloud services or SaaS apps. Ballerina is a new language designed to help code the glue between such services.
 
 * Ballerina takes its inspiration from sequence diagrams and every program can be represented as a sequence diagram. The concurrency model and workers are based on the ideas of independent communicating parties.
 

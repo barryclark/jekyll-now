@@ -1,6 +1,9 @@
 ---
 layout: post
-title: "[Audio] [May 2018] HashiCast Episode 3 - Cheryl Hung, StorageOS"
+title: "HashiCast Episode 3 - Cheryl Hung, StorageOS"
+tags:
+  - Podcast
+  - "2018"
 ---
 
 ![HashiCast Episode 3 - Cheryl Hung, StorageOS]({{site.baseurl}}/images/2018-5-1-hashicasts.png)

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Becoming Director of Ecosystem at CNCF"
+tags:
+  - Featured
+  - "2018"
 ---
 
 ![CNCF logo](https://about.gitlab.com/images/case_study_logos/cncf-logo.png)

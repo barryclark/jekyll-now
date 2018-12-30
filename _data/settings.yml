@@ -1,0 +1,70 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: ''
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: 'UA-101991886-1'
+
+menu:
+- {name: 'Featured posts', path: 'tags', url: '#featured'}
+- {name: 'Events', path: 'events', url: ''}
+- {name: 'About', path: 'about', url: ''}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'github', link: 'https://www.github.com/oicheryl'}
+- {icon: 'twitter', link: 'https://twitter.com/oicheryl'}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/cheryljhung/'}
+# - {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
+# - {icon: 'rss-square', link: '/feed.xml'}
+# - {icon: 'rss-square', link: '/rss-feed.xml'}
+
+# Customize site text
+pagination:
+  next_page: 'Next 10'
+  previous_page: 'Previous 10'
+
+# Text prefix for tags at the bottom of each post.
+post_tags: 'Tagged with'
+
+post_date_prefix: 'Written by'
+
+sharing_button_prompt: ''
+
+post_navigation:
+  # Options are 'category', and 'site'. 'category' will only use the first
+  # category assigned to the post.
+  type: category
+
+  # Available positions are 'top', and 'bottom'.
+  postion: ['top', 'bottom']
+
+  # Text to use for the previous post link. `{category}` and `{title}` will be
+  # replaced as expected. If `type` is `site` {category} with be `site.title`.
+  previous_title: 'Previous in "{category}": {title}'
+
+  # Text to use for the next post link. `{category}` and `{title}` will be
+  # replaced as expected. If `type` is `site` {category} with be `site.title`.
+  next_title: 'Next in "{category}": {title}'
+
+related_posts:
+  # Text for heading above related posts.
+  heading: 'You may also enjoy:'
+
+  # Method used to generate related posts. Options are:
+  # 'tags' - Related posts are randomly selected from those with shared tags.
+  # 'site' - Related posts are randomly selected from the contents of
+  #          `site.related_posts`.
+  type: site
+
+  # Enable to declare a post field (declared in the post front matter) which
+  # should be used as a filter for which posts are included in the related posts.
+  # post_filter: favourite
+
+  # Maximum number of related posts to show below each post.
+  count: 3
+
+  # Whether the content of the post_navigation should be excluded from the
+  # related posts.
+  exclude_post_navigation: true

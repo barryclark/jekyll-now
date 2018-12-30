@@ -1,6 +1,9 @@
 ---
 layout: post
-title: "[July 2018] Would you like me to speak at your next event?"
+title: "Would you like me to speak at your next event?"
+tags:
+  - Photos
+  - "2018"
 ---
 
 Awesome! Generally I'm super happy to travel and speak at conferences and meetups, especially for keynotes and if you can provide support for travel costs.

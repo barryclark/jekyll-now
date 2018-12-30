@@ -1,6 +1,9 @@
 ---
 layout: post
-title: "[Article] [Jan 2018] The 8 Principles of Cloud Native Storage - The New Stack"
+title: "The 8 Principles of Cloud Native Storage - The New Stack"
+tags:
+  - Article
+  - "2018"
 ---
 
 ![The New Stack](https://storage.googleapis.com/cdn.thenewstack.io/media/2018/01/4c6c1d07-samuel-zeller-111390.jpg)
@@ -14,5 +17,3 @@ My article was published in The New Stack on 15 Jan 2018.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Good read from <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a>:<br><br>&quot;The 8 Principles of Cloud Native Storage&quot;<a href="https://t.co/RmkhcCKMUv">https://t.co/RmkhcCKMUv</a></p>&mdash; Greg Knieriemen (@Knieriemen) <a href="https://twitter.com/Knieriemen/status/954100664988291077?ref_src=twsrc%5Etfw">January 18, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-

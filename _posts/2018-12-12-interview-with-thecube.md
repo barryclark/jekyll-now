@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "[Video] [Dec 2018] Interview with theCube - KubeCon CloudNativeCon, Seattle"
+title: "Interview with theCube - KubeCon CloudNativeCon NA 2918"
+tags:
+  - Video
+  - "2018"
 ---
 
-<iframe width="700px" height="394px" src="https://www.youtube.com/embed/3vcfxbZwOFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/3vcfxbZwOFI" frameborder="0" allowfullscreen></iframe>
+</p>
 
-I recorded this interview with John Furrier of theCube at Kubecon CloudNativeCon NA 2018 in Seattle.
+I recorded my second interview interview with John Furrier of theCube at Kubecon
+CloudNativeCon NA 2018 in Seattle. We discuss the cloud native end user
+community.

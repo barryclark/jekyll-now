@@ -1,11 +1,17 @@
 ---
 layout: post
-title: "[Video] [Slides] [June 2018] Persistent Storage for Kubernetes in production - Which solution and why? - Container Days, Hamburg"
+title: "Persistent Storage for Kubernetes in production - Which solution and why? - Container Days, Hamburg"
+tags:
+  - Video
+  - Slides
+  - "2018"
 ---
 
-<iframe width="700px" height="394px" src="https://www.youtube.com/embed/8i4fSvdp4tk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/8i4fSvdp4tk" frameborder="0" allowfullscreen></iframe>
+</p>
 
-<object data="http://www.oicheryl.com/resources/2018-6-19-containerdayshamburg.pdf" type="application/pdf" width="700px" height="700px">
+<object data="http://www.oicheryl.com/resources/2018-6-19-containerdayshamburg.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="http://www.oicheryl.com/resources/2018-6-19-containerdayshamburg.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-6-19-containerdayshamburg.pdf">Download PDF</a>.
     </embed>

@@ -1,6 +1,9 @@
 ---
 layout: post
-title: "[Photos] [Videos] [Sep 2018] Cloud Native London September 2018 Roundup"
+title: "Cloud Native London September 2018 Roundup"
+tags:
+  - "2018"
+  - Meetup
 ---
 
 ![Cloud Native London September](https://pbs.twimg.com/media/DmRan-WX4AITHT7.jpg)
@@ -34,11 +37,11 @@ Finally Michael Ducy from Sysdig told us about ["Runtime Security for Cloud Nati
 * Cloud Native platforms provide lots of options for securing workloads running on them. The wide range of configurable security options can be overwhelming.
 * Tools such as Host Intrusion/Abnormality detection can provide an additional layer of security for Cloud Native platforms. These tools can help:
   - Define what normal behavior.
-  - Provide a mechanism for generating an audit trail 
+  - Provide a mechanism for generating an audit trail
   - Provide data that can be correlated with other events
 * Container image scanning provides a "point in time" method for verifying that you're not shipping known vulnerabilities. You still need some form of protection at the Runtime level, which Falco can provide.
 
-Finally, congratulations to the winner of a free ticket to the Skills Matter CloudNative London 2018 conference: Peter Bell! 
+Finally, congratulations to the winner of a free ticket to the Skills Matter CloudNative London 2018 conference: Peter Bell!
 
 ## Cloud Native London October
 

@@ -1,13 +1,17 @@
 ---
 layout: post
-title: "[Photos] [Nov 2018] Cloud Native London November 2018 Roundup"
+title: "Cloud Native London November 2018 Roundup"
+tags:
+  - Video
+  - Meetup
+  - "2018"
 ---
 
 ![Cloud Native London November](https://pbs.twimg.com/media/DrbAqq2XQAI1bh-.jpg)
 
 The venue was packed out for Cloud Native London's November meetup, ably hosted by Dominique Top from Docker London, and featuring three fascinating talks.
 
-As always, thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), and [Opsview](https://www.opsview.com/). Thanks also to [Entrepreneur First](https://www.joinef.com/), who once again hosted us at their venue. 
+As always, thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), and [Opsview](https://www.opsview.com/). Thanks also to [Entrepreneur First](https://www.joinef.com/), who once again hosted us at their venue.
 
 First up we heard about managing deployments with Kapitan followed by Cortex and horizontally scalable, highly available Prometheus monitoring, and wrapping up with a presentation of experiences with Kubernetes operators.
 

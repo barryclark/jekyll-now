@@ -1,9 +1,14 @@
 ---
 layout: post
-title: "[Video] [Nov 2018] The Great Debate: Serverless vs Kubernetes"
+title: "The Great Debate: Serverless vs Kubernetes"
+tags:
+  - Video
+  - "2018"
 ---
 
-<iframe width="700px" height="394px" src="https://www.youtube.com/embed/_eSh4ZIVAQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/_eSh4ZIVAQ0" frameborder="0" allowfullscreen></iframe>
+</p>
 
 Thanks to Contino for inviting me to host this debate on Serverless vs Kubernetes!
 

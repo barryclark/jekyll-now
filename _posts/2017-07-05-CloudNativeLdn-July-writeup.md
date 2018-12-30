@@ -1,6 +1,11 @@
 ---
 layout: post
-title: "[Photos] [Slides] [Jul 2017] Sliders and speakers at Cloud Native London July"
+title: "Sliders and speakers at Cloud Native London July"
+tags:
+  - Photos
+  - Slides
+  - "2017"
+  - Meetup
 ---
 
 ![Michael Hausenblas, Cheryl Hung and Ben Hall]({{site.baseurl}}/images/IMG_20170704_185045.jpg)
@@ -16,7 +21,7 @@ There was great positive feedback about:
 
 My slides are available here:
 
-<object data="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf" type="application/pdf" width="700px" height="700px">
+<object data="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf">Download PDF</a>.</p>
     </embed>

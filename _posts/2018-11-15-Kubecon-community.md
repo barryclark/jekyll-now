@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "[Video] [Nov 2018] Why KubeCon is so important for the community, KubeCon + CloudNativeCon China"
+title: "Why KubeCon is so important for the community, KubeCon + CloudNativeCon China"
+tags:
+  - Video
+  - "2018"
 ---
 
-<iframe width="700px" height="394px" src="https://www.youtube.com/embed/L8SA77k1mBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/L8SA77k1mBQ" frameborder="0" allowfullscreen></iframe>
+</p>
 
 I enjoyed recording this interview with Swapnil Bhartiya of TFiR at the first KubeCon + CloudNativeCon China, in Shanghai. We discuss Kubernetes, community and my secret side line as a movie extra!

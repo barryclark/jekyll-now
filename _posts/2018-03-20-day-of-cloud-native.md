@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "[Slides] [Mar 2018] Introduction to container storage - Day of Cloud Native, Oslo"
+title: "Introduction to container storage - Day of Cloud Native, Oslo"
+tags:
+  - Slides
+  - "2018"
 ---
 
-<object data="http://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf" type="application/pdf" width="700px" height="700px">
+<object data="http://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="http://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf">Download PDF</a>.
     </embed>

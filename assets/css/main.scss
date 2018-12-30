@@ -1,0 +1,24 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+
+$darkest-content-color: #172431;
+$darker-content-color: #203344 !default;
+$light-content-color: #456d93 !default;
+$lighter-content-color: #9bb6d0 !default;
+$lightest-content-color: #f0f4f8 !default;
+
+.w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#9bb6d0 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#6992b8 !important}
+.w3-theme-l1 {color:#fff !important; background-color:#456d93 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#294157 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#253a4e !important}
+.w3-theme-d3 {color:#fff !important; background-color:#203344 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#1b2b3a !important}
+.w3-theme-d5 {color:#fff !important; background-color:#172431 !important}
+
+
+@import "lagrange";

@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "[Slides] [Apr 2018] Persistent storage for Kubernetes - DevOps with Kubernetes Meetup by Hotels.com"
+title: "Persistent storage for Kubernetes - DevOps with Kubernetes Meetup by Hotels.com"
+tags:
+  - Slides
+  - "2018"
 ---
 
-<object data="http://www.oicheryl.com/resources/2018-4-25-hotelscom.pdf" type="application/pdf" width="700px" height="700px">
+<object data="http://www.oicheryl.com/resources/2018-4-25-hotelscom.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="http://www.oicheryl.com/resources/2018-4-25-hotelscom.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-4-25-hotelscom">Download PDF</a>.
     </embed>

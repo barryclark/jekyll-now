@@ -1,6 +1,9 @@
 ---
 layout: post
-title: "[Photos] [Sep 2017] Presenting at CloudNative and ContainerSched conferences"
+title: "Presenting at CloudNative and ContainerSched conferences"
+tags:
+  - Photos
+  - "2017"
 ---
 
 ![Cheryl Hung]({{site.baseurl}}/images/37318524542_29c1f0d543_z.jpg)
@@ -28,7 +31,3 @@ All in all, an excellent awareness raising event for StorageOS, and a great even
 ![Cheryl Hung]({{site.baseurl}}/images/37318526162_a8220cafe4_z.jpg)
 
 ![Cheryl Hung]({{site.baseurl}}/images/37348200931_11827b677d_z.jpg)
-
-
-
-

@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "[Slides] [Mar 2018] What does the CNCF actually do? - Cloud Native and Kubernetes Oslo"
+title: "What does the CNCF actually do? - Cloud Native and Kubernetes Oslo"
+tags:
+  - Slides
+  - "2018"
 ---
 
-<object data="http://www.oicheryl.com/resources/2018-3-19-what-does-the-CNCF-actually-do.pdf" type="application/pdf" width="700px" height="700px">
+<object data="http://www.oicheryl.com/resources/2018-3-19-what-does-the-CNCF-actually-do.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="http://www.oicheryl.com/resources/2018-3-19-what-does-the-CNCF-actually-do.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-3-19-what-does-the-CNCF-actually-do.pdf">Download PDF</a>.
     </embed>

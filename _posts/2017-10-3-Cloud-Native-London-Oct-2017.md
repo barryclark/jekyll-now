@@ -1,6 +1,11 @@
 ---
 layout: post
-title: "[Photos] [Slides] [Oct 2017] Monzo and linkerd at Cloud Native London October"
+title: "Monzo and linkerd at Cloud Native London October"
+tags:
+  - Photos
+  - Slides
+  - "2017"
+  - Meetup
 ---
 
 ![Dario Simonetti, Cheryl Hung and Irina Bednova]({{site.baseurl}}/images/CNLOct-0.jpg)
@@ -9,7 +14,7 @@ October's [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-Londo
 
 Unfortunately James Stewart had to pull out due to illness, but he will be back at a future meetup. Instead I gave an extended welcome to the principles behind Cloud Native and why the group exists, since the group has grown to 750 members in a mere five months. Those slides are available here:
 
-<object data="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf" type="application/pdf" width="700px" height="700px">
+<object data="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf">
         This browser does not support PDFs. Please <a href="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf">download the PDF</a> to view it.</p>
     </embed>
