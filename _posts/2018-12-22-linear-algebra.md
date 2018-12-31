@@ -6,3 +6,6 @@ date: 2018-12-22
 Source: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/).
 
 Instructor(s): Prof. [Gilbert Strang](http://www-math.mit.edu/~gs/).
+
+Syllabus
+* Unit I: Ax = b and the Four Subspaces
