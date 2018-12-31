@@ -4,6 +4,8 @@ title: "The books of 2018"
 date: "2018-12-28 20:15:43 +0100"
 ---
 
+
+
 ## Novels and short stories
 
 - '*Stephen Florida*' by Gabe Habash (\*\*\*)
@@ -13,29 +15,32 @@ date: "2018-12-28 20:15:43 +0100"
 - '*The Boy in the Striped Pajamas*' by John Boyne (\*\*\*\*)
 - '*The Sandman Omnibus, Vol. 1*' by Neil Gaiman (\*\*\*\*\*)
 - '*Do Androids Dream of Electric Sheep?*' by Philip K. Dick (\*\*\*\*)
+- '*The Word is Murder*' by Anthony Horowitz (\*\*\*\*)
 - '*The Lathe of Heaven*' by Ursula K. Le Guin (\*\*\*\*)
 - '*The Handmaid's Tale*' by Margaret Atwood (\*\*\*\*\*)
 - =='*Het achtste leven (voor Brilka)*' by Nino Haratischwili (\*\*\*\*\*)==
+- '*A Day in the Life of Marlon Bundo*' by Jill Twiss (\*\*\*\*)
 - '*The Rook (The Checquy Files, #1)*' by Daniel O'Malley (\*\*\*\*)
 - '*Stiletto (The Checquy Files, #2)*' by Daniel O'Malley (\*\*\*)
 
+## Cooking
 
-## Self-improvement and productivity
-
-- '*Tools of Titans*' by Timothy Ferriss (\*\*\*)
-- '*Deep Work: Rules for Focused Success in a Distracted World*' by Cal Newport (\*\*\*\*)
-- '*How Not to Be Wrong: The Power of Mathematical Thinking*' by Jordan Ellenberg (\*\*\*\*)
-- '*Think Like an Engineer*' by Guru Madhavan (\*\*)
-- '*The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life*' by Mark Manson (\*\*\*\*\*)
+- '*The 4-Hour Chef: The Simple Path to Cooking Like a Pro, Learning Anything, and Living the Good Life*' by Timothy Ferriss (\*\*\*)
+- '*Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking*' by Samin Nosrat (\*\*\*\*\*)
 
 ## Biology
 
 - '*How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence*' by Michael Pollan (\*\*\*)
+- '*Introduction to Population Ecology*' by Larry L. Rockwood (\*\*\*)
 - '*Self Comes to Mind: Constructing the Conscious Brain*' by António R. Damásio (\*\*\*)
 - '*The Drunken Botanist: The Plants That Create the World's Great Drinks*' by Amy  Stewart (\*\*\*\*)
 - '*The Hidden Life of Trees: What They Feel, How They Communicate*' by Peter Wohlleben (\*\*\*\*)
 - '*Thinking Like a Phage: The Genius of the Viruses That Infect Bacteria and Archaea*' by Merry Youle (\*\*\*\*\*)
 - '*Sapiens: A Brief History of Humankind*' by Yuval Noah Harari (\*\*\*\*\*)
+- *'21 Lessons for the 21st Century'* by Yuval Noah Harari (\*\*\*\*)[^18bddb78]
+- '*The Plant Messiah*' by Carlos Magdalena (\*\*\*)
+
+[^18bddb78]: Ok, not really biology, but I did not want to make a new category.
 
 ## Mathematics and computer science
 
@@ -43,12 +48,25 @@ date: "2018-12-28 20:15:43 +0100"
 - '*Bioinformatics Algorithms: An Active Learning Approach*' by Phillip Compeau (\*\*\*\*\*)
 - '*Elements of Causal Inference: Foundations and Learning Algorithms*' by Jonas Peters (\*\*\*)
 - '*Deep learning with Python*' by Francois Chollet (\*\*\*\*)
-- '*In Pursuit of the Traveling Salesman: Mathematics at the Limits of Computation*' by William J.  Cook (\*\*\*\*\*)
+- '*Julia Programming for Operations Research: A Primer on Computing*' by Changhyun Kwon (\*\*\*)
+- '*The Book of Why: The New Science of Cause and Effect*'
+by Judea Pearl, check my [blogpost](https://michielstock.github.io/causality/) (\*\*\*\*\*)
+- '*In Pursuit of the Traveling Salesman: Mathematics at the Limits of Computation*' by William J. Cook (\*\*\*\*\*)
 
 ## Physics
 
 - '*Statistical Mechanics: Algorithms and Computations*' by Werner Krauth (\*\*\*\*)
-- ==andere boek SP?==
+- *'Statistical Mechanics: Entropy, Order Parameters and Complexity'* by Sethna, James P. (\*\*\*\*)
 - '*Special Relativity and Classical Field Theory*' by Leonard Susskind (\*\*\*\*)
 - '*Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies*' by Geoffrey B. West (\*\*\*\*)
+- '*The Beginning of Infinity: Explanations that Transform the World*' by David Deutsch (\*\*\*)
 - '*Life 3.0: Being Human in the Age of Artificial Intelligence*' by Max Tegmark (\*\*\*)
+
+## Self-improvement and productivity
+
+- '*Tools of Titans*' by Timothy Ferriss (\*\*\*)
+- '*Deep Work: Rules for Focused Success in a Distracted World*' by Cal Newport (\*\*\*\*)
+- '*How Not to Be Wrong: The Power of Mathematical Thinking*' by Jordan Ellenberg (\*\*\*\*)
+- '*Think Like an Engineer*' by Guru Madhavan (\*\*)
+- '*The Floor is Yours*' by Hans van De Water and Toon Verlinden
+- '*The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life*' by Mark Manson (\*\*\*\*\*)
