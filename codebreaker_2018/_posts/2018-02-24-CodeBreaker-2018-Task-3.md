@@ -7,7 +7,7 @@ title: NSA Codebreaker 2018, Task 3
 For task 3, we are asked to determine how the victim id is generated, in order to see if any information can be determined if we know just the victim id. 
 
 To aid in our effort to generate the victim id for the infected computer, we are provided with the following information:<br>
-{% JavaScript %}
+```JavaScript
 {
     "cpu_bits": "32",
     "ip_address": "10.118.138.237",
@@ -16,7 +16,7 @@ To aid in our effort to generate the victim id for the infected computer, we are
     "otp_value": "790513",
     "time_of_infection": "Mon, 13 Aug 2018 08:34:05 GMT"
 }
-{% endhighlight %}
+```
 
 What is interesting, although irrelevant, about this information is that the operating system is Windows, though the binaries provided are for Linux. 
 
