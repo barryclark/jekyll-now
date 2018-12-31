@@ -7,5 +7,10 @@ Source: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-06sc-lin
 
 Instructor(s): Prof. [Gilbert Strang](http://www-math.mit.edu/~gs/).
 
-Syllabus
+Course syllabus
 * Unit I: Ax = b and the Four Subspaces
+  * The Geometry of Linear Equations
+  * An Overview of Key Ideas
+  * Elimination with Matrices
+* Unit II: Least Squares, Determinants and Eigenvalues
+* Unit III: Positive Definite Matrices and Applications
