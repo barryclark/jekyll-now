@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: abcxyz
 permalinks: /data/18.01SC/abcxyz
 ---
 
