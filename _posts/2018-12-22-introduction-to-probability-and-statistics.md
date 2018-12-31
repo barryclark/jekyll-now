@@ -7,7 +7,7 @@ Source: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-05-intro
 
 Instructor(s): [Jeremy Orloff](http://math.mit.edu/directory/profile.php?pid=1369), [Jonathan Bloom](http://math.mit.edu/~jbloom/).
 
-Course arc
+Course archive
 * Probability
 * Statistics: Bayesian Inference
 * Statistics: Frequentist Inference—Null Hypothesis Significance Testing (NHST)
