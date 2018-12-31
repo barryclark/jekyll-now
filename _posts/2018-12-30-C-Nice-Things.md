@@ -1,0 +1,71 @@
+---
+layout: post
+title: C Nice Things
+---
+
+# Steps
+1. Install Git
+2. Create GitHub Account
+3. Add SSH Keys (Optional)
+4. Create repository online 
+
+## Difference between `.` and `->`
+It's just the dot version when you want to access elements of a struct/class that is a pointer instead of a reference.
+
+```
+struct foo
+{
+  int x;
+  float y;
+};
+
+struct foo var;
+struct foo* pvar;
+
+var.x = 5;
+(&var)->y = 14.3;
+pvar->y = 22.4;
+(*pvar).x = 6;
+That's it!
+```
+Ref: https://stackoverflow.com/a/2575051/2806163
+
+## `scanf ("%[^\n]s", name)` is got to be the best way to take input beyond a space. `[^\n]` tells to take input while it is not a newline `('\n')`.
+
+## [When and why to use `malloc` answer by me](https://stackoverflow.com/a/53979498/2806163)
+
+## Why should I use `malloc` when I can normally allocate variable size array
+There are at least five benefits to using malloc over variable length arrays.
+
+1. Most notably, objects created with malloc persist after execution of the current block ends. This means that such objects can be returned (by pointer) to callers of functions. This use is frequent in real-world applications. Arrays created as variable-length arrays cease to exist when execution of their block ends.
+2. Arrays created with malloc can be resized with realloc. Variable-length arrays cannot be resized.
+3. As of the 2011 C standard, variable-length arrays are optional for C implementations to support. A general-purpose C implementation of any quality will support them, but the fact they are optional means code that is intended to be portable must either not use variable-length arrays or must guard against the lack of support by testing the preprocessor macro __STDC_NO_VLA__ and providing alternate code.
+4. Commonly, variable-length arrays are much more limited in size than arrays allocated with malloc. Variable-length arrays are generally implemented using stack space, and stacks are typically limited to some not-large number of mebibytes (although that can generally be increased when building an executable). For objects created with malloc, gibibytes of memory may be available in modern systems.
+5. If creation of an array does fail with malloc, NULL will be returned, and the programmer can easily write code to detect that and deal with it. If creation of a variable-length array fails, the common behavior is for the operating system to terminate the program with some memory error. (Various C implementations may provide means to intercept this error, but it is considerably more of a nuisance than testing the malloc return value for NULL, and it is not portable.)
+Ref: https://stackoverflow.com/a/51451640/2806163
+
+## Why use `malloc` in general?
+```
+char *some_memory = "Hello World";
+```
+is creating a pointer to a string constant. That means the string "Hello World" will be somewhere in the read-only part of the memory and you just have a pointer to it. You can use the string as read-only. You **cannot** make changes to it. Example:
+
+```
+some_memory[0] = 'h';
+```
+Is asking for trouble.
+
+On the other hand
+
+```
+some_memory = (char *)malloc(size_to_allocate);
+```
+is allocating a char array ( a variable) and some_memory points to that allocated memory. Now this array is both read and write. You can now do:
+
+```
+some_memory[0] = 'h';
+```
+and the array contents change to "hello World"
+
+Ref: https://stackoverflow.com/a/1963812/2806163
+
