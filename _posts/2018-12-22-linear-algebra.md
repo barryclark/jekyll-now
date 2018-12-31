@@ -7,7 +7,7 @@ Source: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-06sc-lin
 
 Instructor(s): Prof. [Gilbert Strang](http://www-math.mit.edu/~gs/).
 
-Course syllabus
+Course archive
 * Unit I: Ax = b and the Four Subspaces
   * The Geometry of Linear Equations
   * An Overview of Key Ideas
