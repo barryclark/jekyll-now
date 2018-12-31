@@ -13,21 +13,28 @@ tags:
 - Oracle
 ---
 
-###### Cleanup old archivelogs, control file backups and flashback restore points [^1].
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+<script>
+var clipboard = new Clipboard('.btn');
+clipboard.on('success', function(e) { console.log(e); });
+clipboard.on('error', function(e) { console.log(e); });
+</script>
+
+##### Clean Archivelogs / ctrl file backups / flashback area [^1].
 [^1]: The script is proved to work in Oracle 12.2.;
 
-
+<br>
 The script below does the following things:
-
+<br>
 - Removes (deletes) orphaned, expired and obsolete archivelogs and backups
 - Removes (deletes) past archivelogs
 - Removes (deletes) control file backups
 - Removes (deletes) flashback restore points on CDB and PDB(s)
 - *Works with no parameters*
+- *Copy the script using this button &rarr;* <button class="btn" data-clipboard-target="#a" title="Copy code"><i class="fa fa-copy"></i></button>
 
----
-
-```shell
+<pre id="a" style="border:1px solid White; display: inline-block; white-space:pre-wrap;">
 RUN {
 #Deletes obsolete and orphaned archivelogs and controlfile backups
 change archivelog all crosscheck;
@@ -70,6 +77,6 @@ EXCEPTION
 end;
 /
 }
-```
+</pre>
 
 ---

@@ -2,16 +2,41 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<header class="post-header">
+	<div>
+		<span>Posted on </span><span class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</span>
+	</div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+	<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+</header>
 
-  <div class="date">
-    <br>Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="entry-content" itemprop="articleBody">
+		{{ content }}
+	</div>
 </article>
+
+<div id="post-nav">
+	<div class="next">
+		{% if page.previous.url %}
+		<a href="{{ site.baseurl }}{{ page.previous.url }}">
+			<span>Next entry</span>
+			{{ page.previous.title }}
+		</a>
+		{% endif %}
+	</div>
+
+	<div class="previous">
+		{% if page.next.url %}
+		<a href="{{ site.baseurl }}{{ page.next.url }}">
+			<span>Previous entry</span>
+			{{ page.next.title }}
+		</a>
+		{% endif %}
+	</div>
+</div>
+<br>
+<br>
+<br>
+
+<h2 class="footer-heading"><a href="{{ site.baseurl }}/table-of-contents">Table of Contents</a></h2>

@@ -1,0 +1,69 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Font variables
+$font-name: libretto-icons;
+$font-path-file-name: {{ site.baseurl }}/assets/fonts/$font-name/$font-name;
+
+@font-face {
+    font-family: $font-name;
+    src: url($font-path-file-name+'.eot'); /* IE9 Compat Modes */
+    src: url($font-path-file-name+'.woff') format('woff'), /* Pretty Modern Browsers */
+         url($font-path-file-name+'.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url($font-path-file-name+'.svg#font_name') format('svg'); /* Legacy iOS */
+}
+
+
+
+// Our variables
+$base-font-family: "Libre Baskerville", Baskerville, "Book Antiqua", Georgia, Times, serif;
+$base-font-size:   17px;
+$base-font-weight: 400;
+$base-line-height: 2;
+
+$small-font-size:  $base-font-size * 0.875;
+
+$spacing-unit:     30px;
+
+$brand-color:      #787065;
+$background-color: #f2f1ed;
+$text-color:       #363431;
+$title-color:      #943526;
+
+$grey-color:       #a09a92;
+$grey-color-light: lighten($grey-color, 30%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

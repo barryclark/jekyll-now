@@ -1,0 +1,5 @@
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+gem "jekyll-feed"
+gem "jekyll-sitemap"
+gem "jekyll-theme-cayman"

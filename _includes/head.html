@@ -1,0 +1,29 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#943526">
+
+	{% if page.thumbnail %}
+	<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/{{ page.thumbnail }}">
+	{% else %}
+	<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/thumbnail.jpg">
+	{% endif %}
+
+	{% if page.title %}
+	<meta property="og:title" content="{{ site.title }} • {{ page.title }}">
+	{% else %}
+	<meta property="og:title" content="{{ site.title }}">
+	{% endif %}
+
+	<link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/png">
+
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
+
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
