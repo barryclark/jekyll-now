@@ -9,6 +9,9 @@ My goal is becoming an artificial intelligence expert in a large international c
 In the first half of 2019, I must complete 2 goals. First goal is getting a TOEIC certificate with score 900. The last goal is getting a machine learning intership in a international corporation.<br>
 In the last half of 2019, I must complete only 1 goal. The goal is complete the capstone project with score 9.5.
 ### The 2020 plan
+(updating)
 ### The 2021 plan
+(updating)
 ### The 2022 plan
+(updating)
 
