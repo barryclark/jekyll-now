@@ -164,8 +164,8 @@ inputfile='home/claire/homologyLGL/homology.ncol'
 
 #Generate a full LGL, not just the minimal spanning tree (MST)
 treelayout = '1'
-usemst = '1'
-
+usemst = '0'
+outputmst = '0'
 #No edgeweight, so:
 useoriginalweights = '0'
 ```
