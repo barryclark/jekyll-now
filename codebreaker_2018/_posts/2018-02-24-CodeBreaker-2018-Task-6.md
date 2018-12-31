@@ -26,11 +26,11 @@ The deployment of the contract and payment of the ransom happens the same as it 
 3. Call getDecryptionKey<br>
 
 I generated authToken using the python module [pyotp](https://github.com/pyauth/pyotp). 
-'''python
+{% highlight python %}
 import pyotp
 totp = pyotp.TOTP('7P57CDMIUWYV5BMHT3C7HIGJOYRLDVZT')
 totp.now()
-'''
+{% endhighlight %}
 
 
 

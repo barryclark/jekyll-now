@@ -23,7 +23,7 @@ Now we can get all AuthEvents for block 0 to 13000.
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_5/ransom_otps.png)
 
 Below is the code to check if an IP has been compromised. 
-'''python
+{% highlight python %}
 otps = [215101, 365630, 70188, 62999, 13101, 812754, 837966, 637429, 920579, 565044]
 vic_ids = [41104295052609710489876817339063368457051087978980658748165354102064406814475,
 85629548258931642040262789841388823594590514300256475050520076724017815239842,
@@ -63,5 +63,5 @@ for ip in range(startip, endip):
             print(ip)
             print(get_ip(ip))
             print('----------------')
-'''
+{% endhighlight %}
 

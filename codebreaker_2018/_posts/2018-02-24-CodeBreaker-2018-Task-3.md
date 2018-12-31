@@ -7,7 +7,7 @@ title: NSA Codebreaker 2018, Task 3
 For task 3, we are asked to determine how the victim id is generated, in order to see if any information can be determined if we know just the victim id. 
 
 To aid in our effort to generate the victim id for the infected computer, we are provided with the following information:<br>
-'''json
+{% json %}
 {
     "cpu_bits": "32",
     "ip_address": "10.118.138.237",
@@ -16,7 +16,7 @@ To aid in our effort to generate the victim id for the infected computer, we are
     "otp_value": "790513",
     "time_of_infection": "Mon, 13 Aug 2018 08:34:05 GMT"
 }
-'''
+{% endhighlight %}
 
 What is interesting, although irrelevant, about this information is that the operating system is Windows, though the binaries provided are for Linux. 
 
@@ -36,7 +36,7 @@ To convert an IPv4 address to the int32 equivalent the following [formula](http:
 
 Below is the python script I used to generate the victim ID, that was provided in the orginal ransom note to validate that I had the format correct.
 
-'''python
+{% highlight python %}
 import M2Crypto
 import base64
 
@@ -47,13 +47,13 @@ vid = hmac.update(message)
 vid = hmac.digest()
 for c in vid:
     print hex(ord(c))[2:],
-'''
+{% endhighlight %}
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_3/output.png)
 
 The below python code will generate the victim id required for this task. 
 
-'''python
+{% highlight python %}
 import M2Crypto
 import base64
 
@@ -65,6 +65,6 @@ vid = hmac.update(message)
 vid = hmac.digest()
 for c in vid:
     print hex(ord(c))[2:]
-'''
+{% endhighlight %}
 
 
