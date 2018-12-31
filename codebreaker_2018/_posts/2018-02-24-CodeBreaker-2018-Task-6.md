@@ -4,7 +4,7 @@ permalink: /CodeBreaker-2018-Task-6/
 title: NSA Codebreaker 2018, Task 6
 ---
 
-For task 6, you are asked to find a way to decrypt the victim's encryption key without paying the ransom. Below are some of the reason this is possible:<br>
+For task 6, you are asked to find a way to decrypt the victim's encryption key without paying the ransom. Below are some of the reasons this is possible:<br>
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_6/vid_not_checked.png)
 - Escrow contract does not check to see if a victim ID has already been registered<br>
 - Ransom amount is set by the Ransom contract<br>

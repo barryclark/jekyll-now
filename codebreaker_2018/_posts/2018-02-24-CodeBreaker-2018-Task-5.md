@@ -4,7 +4,7 @@ permalink: /CodeBreaker-2018-Task-5/
 title: NSA Codebreaker 2018, Task 5
 ---
 
-Task 5 asks us to determine what IPs on a subnet have been compromised, based on the victim ids we found in task 4. 
+Task 5 asks us to determine what IPs on 10.130.0.0/16 have been compromised, based on the victim ids we found in task 4. 
 
 The TOTP that each contract originally used to for authentication needs to be found, otherwise there are 2^16 IP addresses and  10^6 TOTPs to check, 65,536,000,000 combinations. Below is the general flow when a victim is compromised, further details can be found [here](). 
 
@@ -14,9 +14,14 @@ Fortunately, we can take advantage of the way the Registry contract communicates
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_5/event_code.png)
 
-The Registry contract serves multiple Escrow contracts, so the blocks to check for events need to be limited. This can be done by looking at the first and last AuthCallbackEvent emitted by the Escrow Contract. 
+The Registry contract serves multiple Escrow contracts, so the blocks to check for events need to be limited. This can be done by looking at the last AuthCallbackEvent emitted by the Escrow Contract and only searching upto that block. 
 
 [Code to pull AuthCallbackEvents]
+{% highlight python %}
+authCallback_filter = escrow.eventFilter('AuthCallbackEvent', {'fromBlock' : 0, 'toBlock' : 'latest'})
+authCallback_events = authCallback_filter.get_all_entries()
+authCallback_events[12]
+{% endhighlight %}
 
 Now we can get all AuthEvents for block 0 to 13000. 
 

@@ -24,15 +24,16 @@ To determine how the victim id is generated, the function _cid needs to be rever
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_3/gia_otp.png)
 
-The function _gia is called with a pointer to var_B8, which is then moved to var_98. The epoch time and the base32 decoded OTP secret are passed to a function to create the time-based OTP (TOTP). The malware uses snprintf to get the first 6 digits of the TOTP, and stores the result in *(var_98+4), resulting in <gia><totp>. 
+The function _gia is called with a pointer to var_B8, which is then moved to var_98. The epoch time and the base32 decoded OTP secret are passed to a function to create the time-based OTP (TOTP). The malware uses snprintf to get the first 6 digits of the TOTP, and stores the result in *(var_98+4), resulting in \<gia\>\<totp\>. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_3/hmac_args.png)
 
-The value <gia><totp> is used as the input for HMAC-SHA256 with the TOTP secret key as the key to the HMAC algorithm. 
+The value \<gia\>\<totp\> is used as the input for HMAC-SHA256 with the TOTP secret key as the key to the HMAC algorithm. 
 
 The next step is to determine what the function _gia returns. We know the return value is 4 bytes, since the TOTP was stored at *(var_98+4). I was not able to determine what the function does by Google, but I was able to determine what it likely returns based on the victim information provided and the return size. The value is 4 bytes long which is the same amount of bytes needed to represent the IPv4 address space. 
 
-To convert an IPv4 address to the int32 equivalent the following [formula](http://www.aboutmyip.com/AboutMyXApp/IP2Integer.jsp?ipAddress=10.118.138.237) can be used: (first octet * 256³) + (second octet * 256²) + (third octet * 256) + (fourth octet).
+To convert an IPv4 address to the int32 equivalent the following [formula](http://www.aboutmyip.com/AboutMyXApp/IP2Integer.jsp?ipAddress=10.118.138.237) can be used:<br>
+(first octet * 256³) + (second octet * 256²) + (third octet * 256) + (fourth octet).
 
 Below is the python script I used to generate the victim ID, that was provided in the orginal ransom note to validate that I had the format correct.
 

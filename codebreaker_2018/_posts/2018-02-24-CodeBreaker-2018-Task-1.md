@@ -4,10 +4,10 @@ permalink: /CodeBreaker-2018-Task-1/
 title: NSA Codebreaker 2018, Task 1
 ---
 
-For task 1, you are asked to find out:<br>
+For task 1, you are asked to find:<br>
 - Victim Identifier<br>
 - Encrypted Ransom Key<br>
-- One-Time Passcode (OTP) used to authenticate the client to the ransomware LP<br>
+- One-Time Passcode (OTP) used to authenticate the Ransom contract to the Register contract<br>
 - Escrow contract address<br>
 
 The Victim Identifier and the Escrow contract address can be found by examining the ransom note left by the ransomware. 
@@ -42,7 +42,7 @@ The _cid function takes 3 arguments, each are pointers to data return, they are 
 
 In the _cid function there is a call to get_totp_token, and then snprinf is used to get the first 6 digits from the TOTP. The TOTP and the return from _gia are passed to the HMAC-SHA256, this is the victim id. The victim id and TOTP are concatenated and returned by the _cid, meaning the TOPT should be the 6 chars right after the victim id in the network traffic. 
 
-![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_1/_c_hh.png)
+![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_1/c_hh.png)
 
 There is one byte of the network traffic I couldn't determine, 02, that appear before the IP address. The full message is passed to _c_hh to create a MAC of the message. 
 

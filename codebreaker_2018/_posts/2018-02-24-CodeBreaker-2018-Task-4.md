@@ -62,7 +62,7 @@ ev_filter = escrow.eventFilter('DecryptEvent', {'fromBlock' : 0, 'toBlock' : 'la
 events = ev_filter.get_all_entries()
 {% endhighlight %}
 
-![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/contract/events.png)
+![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_4/events.png)
 
 Victims that have not paid:<br>
 - 0x5ae034e049c13cfdaf9bc2497221812f90af61e6fcee5d0c3c583dd364275f0b<br>
