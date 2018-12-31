@@ -7,7 +7,7 @@ Source: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-01sc-sin
 
 Instructor(s): Prof. [David Jerison](http://math.mit.edu/~jerison/).
 
-Course syllabus
+Course archive
 * Differentiation
   * Part A: Definition and Basic Rules
     * Session 1: Introduction to Derivatives
