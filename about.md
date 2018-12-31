@@ -6,7 +6,7 @@ permalink: /about/
 
 ### About me
 
-My name is Duy Nguyen. I'm a student at the [HCMC University of Information Technology](https://en.uit.edu.vn/), majoring in [Computer Science](http://cs.uit.edu.vn/home-2/). My university is a member university of [Vietnam National University - Ho Chi Minh City](https://vnuhcm.edu.vn/).
+My name is Duy Nguyen. I'm a student at the [HCM City University of Information Technology](https://en.uit.edu.vn/)(UIT), majoring in [Computer Science](http://cs.uit.edu.vn/home-2/). My university is a member university of [Vietnam National University HCM City](https://vnuhcm.edu.vn/)(VNUHCM).
 
 I'm interested in Mathematics &rarr; Computer Science &rarr; Artificial Intelligence &rarr; Machine Learning.
 
