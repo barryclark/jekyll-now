@@ -63,4 +63,4 @@ For this task, the encryption key needs to be retrieved without paying the ranso
 
 This task continues the work from task 6, but now the ransom paid by the victims needs to be retrieved and returned. Only one line needs to be added to the contract from task 6, though understanding what to add is more difficult.  
 
-[Task 6 Writeup](https://armerj.github.io/CodeBreaker-2018-Task-7)
+[Task 7 Writeup](https://armerj.github.io/CodeBreaker-2018-Task-7)

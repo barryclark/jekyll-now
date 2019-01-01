@@ -16,7 +16,6 @@ Fortunately, we can take advantage of the way the Registry contract communicates
 
 The Registry contract serves multiple Escrow contracts, so the blocks to check for events need to be limited. This can be done by looking at the last AuthCallbackEvent emitted by the Escrow Contract and only searching upto that block. 
 
-[Code to pull AuthCallbackEvents]
 {% highlight python %}
 authCallback_filter = escrow.eventFilter('AuthCallbackEvent', {'fromBlock' : 0, 'toBlock' : 'latest'})
 authCallback_events = authCallback_filter.get_all_entries()

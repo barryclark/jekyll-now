@@ -37,13 +37,15 @@ Generating multiple decryptEvents will not have the desired effect, since the de
 
 The second method is to notice that escrowMap[id] is set to the amount paid, 0 in this case, and ransomAmount is greater than 0. This will cause an [underflow](https://medium.com/3-min-blockchain/understanding-uint-overflows-and-underflows-solidity-ethereum-8603339259e6), which is when a unsigned number is subtracted from a smaller unsigned number. This will result in escrowMap[id] being a little less than 2^32, and we can call the requestRefund function to retrieve all the ether in the Escrow contract. 
 
-If the Escrow contract prevented a Ransom Contract from registering, by checking for that victim id, there is another attack using requestRefund. This requires a little more set up, since calling this function is restricted to the victim address. 
+If the Escrow contract prevented a Ransom Contract from re-registering, by checking for that victim ID, there is another attack using requestRefund. This requires a little more set up, since calling this function is restricted to the victim address. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/restrict_to_victim.png)
 
 The victim address can be set to the Ransom contracts address when the Ransom contract first registers with the Escrow. 
  
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/set_vic_address.png)
+
+Now, instead of calling the register function, requestRefund is called. This will cause a underflow 
 
 
 
