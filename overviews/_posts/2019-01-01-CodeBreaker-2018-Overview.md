@@ -1,9 +1,15 @@
 ---
 layout: post
+permalink: /CodeBreaker-2018-Overview/
 title: NSA Codebreaker 2018, Overview
 ---
 
-Each year NSA puts out a challenge called Codebreaker that requires reverse engineering and exploitation skills. This year is was designed around the Ethereum blockchain; how to interact, deploy contracts, read storage, and exploit vulnerabilities. I believe this year was both easier and tougher than last year. The earlier tasks ask you to reverse engineer two Linux libraries that seem to be more obfuscated than last year. The later tasks ask you to interact and analyze Ethereum smart contracts, which in my opinion requires a different thinking than traditional programming. There were 7 tasks and 1 warm-up task. This year I was able to complete all six tasks, along with 1.18% of participants; 1529 finished task 0 (as of 31 Dec 2018). 
+Each year NSA puts out a challenge called Codebreaker that requires reverse engineering and exploitation skills. This year is was designed around the Ethereum blockchain; how to interact, deploy contracts, read storage, and exploit vulnerabilities. I believe this year was both easier and tougher than last year. The earlier tasks ask you to reverse engineer two Linux libraries that seem to be more obfuscated than last year. The later tasks ask you to interact and analyze Ethereum smart contracts, which in my opinion requires a different thinking than traditional programming. There were 7 tasks and 1 warm-up task. 
+
+This year I was able to complete all seven tasks, along with 1.18% of participants who finished task 0. 
+
+- 2855 people signed up<br>
+- 1529 finished task 0 (as of 31 Dec 2018). <br>
 
 # Task 0 - Warm Up - (Network Traffic Analysis) #
 
