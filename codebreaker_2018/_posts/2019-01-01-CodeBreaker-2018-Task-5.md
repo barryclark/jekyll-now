@@ -6,7 +6,7 @@ title: NSA Codebreaker 2018, Task 5
 
 Task 5 asks us to determine what IPs on 10.130.0.0/16 have been compromised, based on the victim ids we found in task 4. 
 
-The TOTP that each contract originally used to for authentication needs to be found, otherwise there are 2^16 IP addresses and  10^6 TOTPs to check, 65,536,000,000 combinations. Below is the general flow when a victim is compromised, further details can be found [here](). 
+The TOTP that each contract originally used to for authentication needs to be found, otherwise there are 2^16 IP addresses and  10^6 TOTPs to check, 65,536,000,000 combinations. Below is the general flow when a victim is compromised, further details can be found [here](https://armerj.github.io/CodeBreaker-2018-Contract/).  
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/contract/contract_deployment.png)
 

@@ -24,7 +24,7 @@ To determine how the victim id is generated, the function _cid needs to be rever
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_3/gia_otp.png)
 
-The function _gia is called with a pointer to var_B8, which is then moved to var_98. The epoch time and the base32 decoded OTP secret are passed to a function to create the time-based OTP (TOTP). The malware uses snprintf to get the first 6 digits of the TOTP, and stores the result in *(var_98+4), resulting in \<gia\>\<totp\>. 
+The function _gia is called with a pointer to var_B8, which is then moved to var_98. The epoch time and the base32 decoded OTP secret are passed to a function to create the time-based OTP (TOTP). The malware uses snprintf to convert the TOTP to a string, and later stores the result in *(var_98+4), resulting in \<gia\>\<totp\>. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_3/hmac_args.png)
 

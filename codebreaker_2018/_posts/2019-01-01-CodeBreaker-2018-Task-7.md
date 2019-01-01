@@ -8,9 +8,9 @@ For task 7, we need to find a way to retrieve the Ether victims have already pai
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/request_refund.png)
 
-Re-entrancy can be used to call other functions and effect the state of the contract in other ways. To see how the contract is vulnerable, the payRansom flow needs to be understood. I will go into brief description, but more detail can be found [here](). 
+Re-entrancy can be used to call other functions and effect the state of the contract in other ways. To see how the contract is vulnerable, the payRansom flow needs to be understood. I will go into brief description, but more detail can be found [here](https://armerj.github.io/CodeBreaker-2018-Contract/). 
 
-![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/contract/victim_pays_ransom.png)
+![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/contract/victim_pays_ransom_1.png)
 
 To decrypt the encryption key an off chain oracle is required, since secrets can't be kept on the block chain. When the decryptKey function is called, the Escrow contract will emit a DecryptEvent for the oracle to process. The oracle will attempt to decrypt the key and use it to decrypt the file submitted by the victim. Once complete the oracle will call the decryptCallback function, which does not check to see if the amount the victim paid is equal or greater then the ransom amount. The function instead assumes that the amount the victim paid is equal or greater, since the values were checked in the decryptKey function. 
 
@@ -21,6 +21,8 @@ As mentioned in task 6, the Escrow doesn't check if a Ransom contract has alread
 We can use this vulnerability and re-entrancy to steal all the Escrow contract's Ether. Below is the flow of the attack. 
  
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/steal_ether.png)
+
+Below is a simple time line of the transaction, which makes it more clear that the event is emitted after the block is mined. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/steal_ether_timeline.png)
 
@@ -34,8 +36,6 @@ Generating multiple decryptEvents will not have the desired effect, since the de
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/file_check.png)
 
 The second method is to notice that escrowMap[id] is set to the amount paid, 0 in this case, and ransomAmount is greater than 0. This will cause an [underflow](https://medium.com/3-min-blockchain/understanding-uint-overflows-and-underflows-solidity-ethereum-8603339259e6), which is when a unsigned number is subtracted from a smaller unsigned number. This will result in escrowMap[id] being a little less than 2^32, and we can call the requestRefund function to retrieve all the ether in the Escrow contract. 
-
-[example of underflow] 
 
 If the Escrow contract prevented a Ransom Contract from registering, by checking for that victim id, there is another attack using requestRefund. This requires a little more set up, since calling this function is restricted to the victim address. 
 
