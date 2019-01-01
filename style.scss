@@ -314,6 +314,22 @@ nav {
   background-color: $p5;
 }
 
+table, th, td {
+  border: 1px solid $p7;
+  width: 25%;
+  padding: 5px;
+}
+
+th {
+  background-color: $p3;
+  color: $lightGray;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: $p1;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
