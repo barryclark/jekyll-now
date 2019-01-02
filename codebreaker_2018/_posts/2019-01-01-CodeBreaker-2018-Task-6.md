@@ -13,6 +13,7 @@ For task 6, you are asked to find a way to decrypt the victim's encryption key w
 [picture]
 - ?Encryption key is not tied to victim ID?<br>
 
+# Exploit Contract by Registering with ransomAmount = 0 #
 
 One method to achieve the desired outcome is to register a Ransom contract with same victim ID and ransom amount equal to 0. To make it easier, I also hard coded all the arguments, except for the authToken. 
 

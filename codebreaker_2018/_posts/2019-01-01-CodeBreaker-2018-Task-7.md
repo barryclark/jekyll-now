@@ -46,7 +46,7 @@ Generating multiple decryptEvents will not have the desired effect, since the de
 
 ## Using Underflow to Call requestRefund ##
 
-The second method is to notice that escrowMap[id] is set to the amount paid, 0 in this case, and ransomAmount is greater than 0. This will cause an [underflow](https://medium.com/3-min-blockchain/understanding-uint-overflows-and-underflows-solidity-ethereum-8603339259e6), which is when a unsigned number is subtracted from a smaller unsigned number. This will result in escrowMap[id] being a little less than 2^32, and we can call the requestRefund function to retrieve all the ether in the Escrow contract. 
+The second method is to notice that escrowMap[id] is set to the amount paid, 0 in this case, and ransomAmount is greater than 0. This will cause an [underflow](https://medium.com/3-min-blockchain/understanding-uint-overflows-and-underflows-solidity-ethereum-8603339259e6), which is when a unsigned number is subtracted from a smaller unsigned number. This will result in escrowMap[id] being a little less than 2^256, and we can call the requestRefund function to retrieve all the ether in the Escrow contract. 
 
 # Exploit Contract by Calling requestRefund #
 
