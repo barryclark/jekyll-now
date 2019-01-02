@@ -155,7 +155,7 @@ Sample questions will be posted by January 31, 2019.
 </div>
 
 ## FAQ
-<div class="main-banner-btn-cont">
+<div id="cwrapper">
   <a href="javascript:expandAll()" class="btn-grey">Expand All</a>
   <a href="javascript:collapseAll()" class="btn-grey">Collapse All</a>
 </div>
