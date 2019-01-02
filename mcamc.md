@@ -199,7 +199,7 @@ Due to space limitations, up to one adult per team can stay. We encourage at lea
 **Where is parking? Where is the drop-off location?**  
 
 {: .answer}
-Our school is located at 100 Technology Drive, Edison, NJ. Refering to [this map](https://www.middlesexcc.edu/campus-map/) of Middlesex County College, our high school is building AC, located on the western side of campus. Parking is available in Lots 1 and 2 (not 1B). If you are not parking, students may be dropped off directly in front of our school (building AC). For reference, our building has a tall American flag in front.
+Refering to [this map](https://www.middlesexcc.edu/campus-map/) of Middlesex County College, our high school is building AC, located on the western side of campus. Parking is available in Lots 1 and 2 (not 1B). If you are not parking, students may be dropped off directly in front of our school.
 
 ### Payment
 
