@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Giữa đời là dòng chảy.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Hiện đang làm hục mặt ở VCC.
+Chuyên đi tìm giải pháp cho loài người và robot.
+Mộng tưởng rất xa con người ...
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[me@hiepnm.com](mailto:me@hiepnm.com)
