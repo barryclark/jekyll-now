@@ -155,6 +155,9 @@ Sample questions will be posted by January 31, 2019.
 </div>
 
 ## FAQ
+<div class="main-banner-btn-cont">
+      <a href="/mcamc/register" class="banner-btn">Register Now</a>
+</div>
 ### Registration
 
 {: .question}
@@ -253,8 +256,24 @@ Please contact [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com) with yo
   function hideShow(i) {
     display = document.getElementsByClassName("answer")[i].style.display;
     document.getElementsByClassName("answer")[i].style.display = display ? "" : "none";
-
+    
     questionHTML = document.getElementsByClassName("question")[i].innerHTML;
     document.getElementsByClassName("question")[i].innerHTML = (questionHTML[48] === 'r') ? questionHTML.replace("_right", "_down") : questionHTML.replace("_down", "_right");
+  }
+  
+  function expandAll() {
+    for (let i = 0; i < questions.length; i++) {
+      document.getElementsByClassName("answer")[i].style.display = "";
+      questionHTML = document.getElementsByClassName("question")[i].innerHTML;
+      document.getElementsByClassName("question")[i].innerHTML = questionHTML.replace("_right", "_down");
+    }
+  }
+  
+  function collapseAll() {
+    for (let i = 0; i < questions.length; i++) {
+        document.getElementsByClassName("answer")[i].style.display = "none";
+        questionHTML = document.getElementsByClassName("question")[i].innerHTML;
+        document.getElementsByClassName("question")[i].innerHTML = questionHTML.replace("_down", "_right");
+    }
   }
 </script>
