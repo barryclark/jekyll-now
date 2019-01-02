@@ -22,7 +22,7 @@ clipboard.on('error', function(e) { console.log(e); });
 </script>
 
 ##### Clean Archivelogs / ctrl file backups / flashback area [^1].
-[^1]: The script is proved to work in Oracle 12.2.;
+[^1]: The script is proved to work with Oracle 12.2.;
 
 <br>
 The script below does the following things:

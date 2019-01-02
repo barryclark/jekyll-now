@@ -18,7 +18,7 @@ clipboard.on('error', function(e) { console.log(e); });
 </script>
 
 ###### Flashback a Container or a Pluggable Database [^1]
-[^1]: The script is proved to work for Oracle 12.2.
+[^1]: The script is proved to work with Oracle 12.2.
 
 This article contains scripts, which should be used for taking flashback restore points and restoring a pluggable database to these restore points (Doc ID [2308215.1](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=441866581127929&id=2308215.1&displayIndex=1&_afrWindowMode=0&_adf.ctrl-state=vxgtnvmef_4#FIX%23FIX)).
 
