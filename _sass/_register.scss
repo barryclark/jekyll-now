@@ -1,0 +1,62 @@
+.reg-choice {
+	background-color: #eceff1;
+	padding: 10px 15px;
+	margin: 10px 15px;
+}
+
+.reg-choice:hover {
+	background-color: #cfd8dc;
+	cursor: pointer;
+}
+
+.cognito {
+	font-family: Lato, sans-serif !important;
+}
+
+.cognito label {
+	font-size: 16px;
+	color: black;
+}
+
+.cognito input {
+	padding: 5px;
+	font-size: 16px;
+}
+
+.cognito .c-helptext {
+	font-size: 13px;
+	font-style: italic;
+	color: #666;
+}
+
+.cognito .c-validation {
+	font-size: 13px !important;
+	font-style: italic;
+	padding: 3px 5px;
+}
+
+.cognito h4 {
+	color: black;
+}
+
+.cognito .c-yesno-checkbox span {
+	padding-left: 5px;
+}
+
+.cognito .c-repeating-section-container {
+	padding: 0 !important;
+	margin: 8px !important;
+}
+
+.cognito .c-repeating-section-container:nth-child(odd) {
+	background: rgba(180, 180, 180, 0.15) !important;
+}
+
+.cognito .c-repeating-section-container:nth-child(even) {
+	background: rgba(180, 180, 180, 0.05);
+}
+
+.cognito .btn-secondary {
+	background-color: #E95420 !important;
+	border-color: #E95420 !important;
+}

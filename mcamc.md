@@ -14,12 +14,23 @@ meta: |
   </script>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ---
-# Middlesex County Academy Math Competition
-(some tagline here)
 
-March 30, 2019
+# NOTICE
+**This website is a work in progress. Although you may regard any information provided on this website as true, some images, functionality, and/or information may be missing. Additional images, functionality, and/or information may be added without notice.**
 
-MCAMC registration opens January 2, 2019
+<div class="main-banner">
+  <div class="main-banner-cont">
+  <img src="/images/mcamc-bkg-large.svg" class="main-banner-img">
+  <div class="main-banner-overlay">
+    <h1><a href="/mcamc">Middlesex County Academy Math Competition</a></h1>
+    <p class="main-banner-text">Saturday, March 30, 2019</p>
+    <p class="main-banner-text">a team-based competition for grades 6-8</p>
+    <div class="main-banner-btn-cont">
+      <a href="/mcamc/register" class="banner-btn">Register Now</a>
+    </div>
+  </div>
+  </div>
+</div>
 
 ## What is MCAMC?
 

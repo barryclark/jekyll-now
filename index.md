@@ -17,6 +17,9 @@ layout: default
   {% endfor %}
 </div> -->
 
+# NOTICE
+**This website is a work in progress. Although you may regard any information provided on this website as true, some images, functionality, and/or information may be missing. Additional images, functionality, and/or information may be added without notice.**
+
 <div class="main-banner">
 	<div class="main-banner-cont">
 	<img src="/images/mcamc-bkg-large.svg" class="main-banner-img">
@@ -26,7 +29,7 @@ layout: default
 		<p class="main-banner-text">a team-based competition for grades 6-8</p>
 		<div class="main-banner-btn-cont">
 			<a href="/mcamc" class="banner-btn">Learn More</a>
-			<a class="banner-btn btn-disabled">Registration opens January 2, 2019</a>
+			<a href="/mcamc/register" class="banner-btn">Register Now</a>
 		</div>
 	</div>
 	</div>
@@ -37,8 +40,6 @@ layout: default
 
 Please check the Internal Use page for information regarding club activities and resources.
 
-# NOTICE
-**This website is a work in progress. Information provided on this website will change without notice until it is finalized. While this notice is here, do not regard information provided on this website as true.**
 
 <script type="text/javascript">
 	function isIE() {
