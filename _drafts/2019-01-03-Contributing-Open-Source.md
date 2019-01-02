@@ -28,7 +28,7 @@ does well.
 Without that, it becomes a never-ending minefield of guessing what will be valuable in the short
 term as well as what is worthwhile pursuing in the long-term.
 
-# The Selfish Selflessness Perspective
+# Selfish Selflessness: Perspective is Important
 
 While it may not always be _voiced_, I can't help but feel that all too often I see people take the
 attitude of _"well, it doesn't necessarily help me or what I'm doing; why should I bother?"_
@@ -38,6 +38,7 @@ the necessary knowledge **right now** to make something happen that you'd like t
 
 Even so, I think it's well worth your while to contribute as much as you're able to spare the time
 for as a hobby.
+I have at least a few reasons for believing this.
 
 ## Reason 1: It helps the overall development of the project
 
@@ -89,3 +90,85 @@ In the interests of transparency, that idea _still_ hasn't really gotten anywher
 It's still out of my depth a bit, but I'm confident now that given enough time to work on it and
 sufficient guidance, I could absolutely make it happen.
 It's a pet project that I've not yet found the time to complete just yet, but it's very much doable.
+
+Before I got too far with _that_, however, someone brought up PowerShell's rather **sparse** support
+for different numeric types.
+Sure, you can apply a type cast, but unlike many other languages &mdash; including its close cousin
+C# &mdash; PowerShell really only supported `int`, `long`, `decimal`, and `double` at the time.
+(This has [since](https://github.com/PowerShell/PowerShell/pull/7813) [changed](https://github.com/PowerShell/PowerShell/pull/7901).)
+
+I started to wonder about this as well, and before long I asked Patrick if he knew where I should
+start looking &mdash; and of course he did.
+I've since found that quite a lot of the folks you'll run across in the PowerShell repository (and
+indeed many of those who maintain or contribute to projects written in PowerShell) are _extremely_
+helpful and willing to point you where you need to go.
+
+After several iterations and a couple of pull requests I ended up closing because, frankly, my
+commit history was an absolute **mess**, I had a three part project on my hands.
+The last pull request in this particular saga is still pending review, but if you're interested in
+checking out the improvements I coded into the tokenizer (including the native ability for PS to
+parse binary numbers, with a _very_ gracious nod to [HumanEquivalentUnit](https://github.com/HumanEquivalentUnit)
+for his impressive work helping me refine and optimize the binary parse method) you can find that
+ongoing [here](https://github.com/PowerShell/PowerShell/pull/7993) at the time of writing.
+
+And beyond that, I've since branched out into some extra smaller projects, like improving the type
+inference for `$_` and `$PSItem` in a `catch {}` block, once again with some interesting ideas from
+Patrick's inventive mind.
+
+Now, I started out knowing _some_ C#, but not an awful lot.
+I would say I knew just enough to be able to comprehend most code bases I would be reading, but in
+terms of actually being able to _write_ it well, I was pretty rusty at best.
+I took one year of a C# course back in college, and then got too bored to continue; I wasn't exactly
+the model student for that sort of thing.
+However, having a project to puzzle over for a time really helped me get a great many more tools
+under my belt, and I'm relatively confident that at the moment I could probably work in any codebase
+I want to, provided I have a little bit of extra time to familiarize myself with the code and
+general structure.
+
+## Reason 3: It prepares you to take on the tougher stuff
+
+As I mentioned above, I made it rather hard for myself in the beginning when I started contributing
+to PS Core; I can't say I would _recommend_ starting that way, but it certainly has its merits.
+Even so, it's probably not for **everyone**.
+We all learn in different ways, after all.
+
+But no matter where you start, you'll be gaining some amount of familiarity with the project's code,
+their general code of conduct, their methodology when it comes to the product's lifecycle and the
+rhythm they like to work with.
+
+Hang around the repository and look at other people's pull requests, talk about issues that are
+raised, and keep learning.
+Sooner or later, you'll be ready enough to tackle that issue you've been eyeing for the past couple
+weeks.
+And if you're not quite sure where to start, I can think of no better way than to simply submit an
+issue on the problem or enhancement you're looking to create, lay out what you do know, what you
+don't, and more often than not someone else will happily help you figure out where to start.
+
+If you hit a major roadblock, don't be afraid to submit a WIP pull request and ping a few of the
+active maintainers or contributors asking for a bit of assistance.
+Most of them are only too happy to help, overjoyed that someone else is also willing to help out,
+even if they're having difficulties.
+
+# Contribute
+
+With that all said, I really only can urge everyone to contribute wherever they can.
+It's all too easy to say "Well, someone _else_ will make it happen eventually."
+And, sure, maybe they will.
+But maybe they **won't**, because they think _just like you_.
+
+Change happens when a _community_ makes it happen, not when one lone person decides it's time.
+Time and time again we see in this world that some corporate "leader" or CEO tries to make something
+change, but doesn't really tell anyone else how or why it _should_ change.
+Inevitably, it backfires &mdash; the community is a rubber band that pulls things back to how they
+were in some form or another.
+
+If you want your favourite tool, framework, or language to get better, it's very much up to you.
+Many will grow without you, if they must, but in just about every case, another pair of helping
+hands and a fresh set of eyes with just a _slightly_ different perspective can really amplify the
+growth and accelerate progress immensely.
+
+What deserves your time?
+
+What deserves your perspective?
+
+How can you make an impact?
