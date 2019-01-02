@@ -16,6 +16,8 @@ To decrypt the encryption key an off chain oracle is required, since secrets can
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/decrypt_callback.png)
 
+# Exploit Contract by Re-registering #
+
 As mentioned in task 6, the Escrow doesn't check if a Ransom contract has already been registered. At first it may seem that this is a race condition, since the ransom amount needs to be set to 0 before the decryptCallback function is called. This is actually not the case, since [events are emitted when the block has been mined](https://medium.com/hello-sugoi/ethereum-communicating-with-the-off-chain-world-789fea13163b), and not when emitted in the code. This means that after the event has been emitted, but before control is returned to the Escrow contract we can use re-entrancy to effect any part of the contracts state we want. 
 
 We can use this vulnerability and re-entrancy to steal all the Escrow contract's Ether. Below is the flow of the attack. 
@@ -26,7 +28,14 @@ Below is a simple time line of the transaction, which makes it more clear that t
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/steal_ether_timeline.png)
 
+## Causing Decryption to Fail to Receive Ether ##
+
 There were 3 victims, who each paid 100 Ether, so there is 300 Ether we need to retrieve. There are two methods we can use to get this amount. The first is to re-register the Ransom contract with ransomAmount set to 300, and cause the decryption in the oracle to fail, by giving a bad key or file. This will result in authResult being false and the Escrow contract transferring the ransom amount back to the payer, us. 
+
+To check the Escrow contract's balance the below code can be used. 
+{% highlight python %}
+w3.fromWei(w3.eth.getBalance(escrow.address), 'ether')
+{% endhighlight %}
 
 Below is a video of the attack.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/skca2Wn9_sI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -35,7 +44,11 @@ Generating multiple decryptEvents will not have the desired effect, since the de
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/file_check.png)
 
+## Using Underflow to Call requestRefund ##
+
 The second method is to notice that escrowMap[id] is set to the amount paid, 0 in this case, and ransomAmount is greater than 0. This will cause an [underflow](https://medium.com/3-min-blockchain/understanding-uint-overflows-and-underflows-solidity-ethereum-8603339259e6), which is when a unsigned number is subtracted from a smaller unsigned number. This will result in escrowMap[id] being a little less than 2^32, and we can call the requestRefund function to retrieve all the ether in the Escrow contract. 
+
+# Exploit Contract by Calling requestRefund #
 
 If the Escrow contract prevented a Ransom Contract from re-registering, by checking for that victim ID, there is another attack using requestRefund. This requires a little more set up, since calling this function is restricted to the victim address. 
 
@@ -45,7 +58,7 @@ The victim address can be set to the Ransom contracts address when the Ransom co
  
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker_2018/Task_7/set_vic_address.png)
 
-Now, instead of calling the register function, requestRefund is called. This will cause a underflow 
+Now, instead of calling the register function, requestRefund is called. This will cause a underflow and requestRefund can be used to retrieve all the Ether. 
 
 
 
