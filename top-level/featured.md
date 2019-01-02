@@ -14,6 +14,7 @@ Quoted on the following sites:
 
 * [40-Day Frugal/Financial Lent Challenge](http://99to1percent.com/40-day-frugal-financial-lent/)
 * [Early Retirement Wisdom From 50+ Top Finance Writers](https://themoneymix.com/early-retirement/)
+* [Money Goals – 30+ Experts Share Their 2019 Resolutions](https://wealthynickel.com/money-goals/)
 
 Backlined on the following webpages:
 
