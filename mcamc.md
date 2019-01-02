@@ -156,7 +156,8 @@ Sample questions will be posted by January 31, 2019.
 
 ## FAQ
 <div class="main-banner-btn-cont">
-      <a href="/mcamc/register" class="banner-btn">Register Now</a>
+  <a href="javascript:expandAll()" class="btn-grey">Expand All</a>
+  <a href="javascript:collapseAll()" class="btn-grey">Collapse All</a>
 </div>
 ### Registration
 
