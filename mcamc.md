@@ -20,11 +20,11 @@ meta: |
 
 <div class="main-banner">
   <div class="main-banner-cont">
+    <div class="main-banner-overlay">
+      <h1>Middlesex County Academy Math Competition</h1>
+    </div>
   <img src="/images/mcamc-bkg-large.svg" class="main-banner-img">
   <div class="main-banner-overlay">
-    <h1><a href="/mcamc">Middlesex County Academy Math Competition</a></h1>
-    <p class="main-banner-text">Saturday, March 30, 2019</p>
-    <p class="main-banner-text">a team-based competition for grades 6-8</p>
     <div class="main-banner-btn-cont">
       <a href="/mcamc/register" class="banner-btn">Register Now</a>
     </div>
@@ -116,7 +116,7 @@ In the Live Round, each team will again work together, and the style of the ques
 
 All teams gather together in large rooms and compete live, with scores displayed in real-time on screens and projectors. Several tables in the room are set up with graders and questions. Questions come in sets of 3, and there are 8 sets of questions. When the round starts, each team sends one person to pick up the first set of questions and then return back to their team. The team works together to solve these 3 questions, and when the team is done, they send someone to submit their answers and recieve the next set of questions. Answers may not be changed after they are submitted, and answers will be graded on the spot, with the results immediately displayed on screens and projectors around the room. 
 
-As a side note, at several high school competitions, the Live Round is consistently the most exciting and engaging round. We're proud to be the first middle school math competition to offer a Live Round, so we hope that you enjoy it!
+As a side note, at several high school competitions, the Live Round is consistently the most exciting and engaging round. We're proud to be the first middle school math competition to our knowledge that offers a Live Round, so we hope that you enjoy it!
 
 ### Scoring
 We designed our scoring system to give more points to harder questions, as well as to prevent ties. Each round (individual, team, and live) is first scored separately, then roughly averaged for an overall score. 
@@ -128,7 +128,8 @@ We designed our scoring system to give more points to harder questions, as well 
 For the Individual Round, for each question, each student recieves $$\frac{1}{p + 0.25}$$ points for answering correctly, where $$p$$ is the fraction of students who answered the question correctly. For the Team Round, for each question, the team similarly recieves $$\frac{1}{p + 0.25}$$ points for answering correctly. For the Live Round, each question will have a point value written next to it, which increase with every set. The overall team score is $$100(\frac{I}{I*} + \frac{T}{T*} + \frac{L}{L*})$$, where $$I$$, $$T$$, and $$L$$ are the team's individual average, team, and live scores, and $$I*$$, $$T*$$, and $$L*$$ are the top individual average, team, and live scores across all teams.
 
 ### Awards
-Awards will be given to the top 15 individuals, the top 10 teams in Team Round, the top 10 teams in Live Round, and the top 10 teams overall. Additional prizes will be given to the top 5 individuals and top 5 teams overall. We'll be announcing what these prizes are soon, so keep an eye out!
+Both team awards and individual awards will be given. Please stay tuned for details.
+<!-- Awards will be given to the top 15 individuals, the top 10 teams in Team Round, the top 10 teams in Live Round, and the top 10 teams overall. Additional prizes will be given to the top 5 individuals and top 5 teams overall. We'll be announcing what these prizes are soon, so keep an eye out! -->
 
 ## Sample Questions
 Sample questions will be posted by January 31, 2019.
@@ -140,7 +141,7 @@ Sample questions will be posted by January 31, 2019.
 **Can you describe the overall registration process for schools and other organizations?**
 
 {: .answer}
-Each organization submits one registration form. The form allows each organization to register up to 5 teams of 6 students each. The organization will be asked to designate a coach that will receive communications from MCAMC, as well as provide basic information about each student participating. If your school or organization would like to register more than 5 teams, or if you have any other questions, please contact us at [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com). 
+Each organization submits one registration form. The organization will be asked to designate a coach that will receive communications from MCAMC, as well as provide basic information about each student participating. Please see the payment section for payment details. If you have any other questions, please contact us at [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com). 
 
 {: .question}
 **Can I register as individual without a team?**  
@@ -172,7 +173,7 @@ Just a writing utensil is good! We will provide scrap paper and anything else yo
 **Can parents and teachers stay?**  
 
 {: .answer}
-Due to space limitations, up to 1 adult per team can stay. We encourage at least 1 adult per organization/school to stay. 
+Due to space limitations, up to one adult per team can stay. We encourage at least one adult per organization/school to stay. For students registering individually, one adult per student may stay. 
 
 {: .question}
 **Where is parking? Where is the drop-off location?**  
@@ -186,7 +187,7 @@ Our school is located at 100 Technology Drive, Edison, NJ. Refering to [this map
 **What does the overall payment process look like?**  
 
 {: .answer}
-In the registration form, the school, organization, or individual will have the ability to preorder pizza and T-shirts. You can expect an email within one buisness day of registration containing the total amount owed. Payment (cash or check made out to TODO) or a guarantee of payment must be mailed to 100 Technology Drive, Edison, NJ 08837 and *received* by the indicated deadline. We will send another email when we recieve your payment or guarantee of payment. We do not accept online payments at this time. If you have any questions, please contact us at [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com).
+In the registration form, the school, organization, or individual will have the ability to preorder pizza and T-shirts. The total amount owed will be displayed before the registration form is submitted. Payment (cash or check made out to Middlesex County Academy) or a guarantee of payment must be mailed to 100 Technology Drive, Edison, NJ 08837 and *received* by the indicated deadline. We will send another email when we recieve your payment or guarantee of payment. We do not accept online payments at this time. If you have any questions, please contact us at [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com).
 
 {: .question}
 **How much does MCAMC cost? Can I pay at the door?**  
@@ -198,13 +199,13 @@ MCAMC costs $10 per student. Payment at the door will not be accepted. Payment m
 **What dining options are available?**  
 
 {: .answer}
-Pizza can be preordered at $12 per 18-inch pie. If you do not wish to eat pizza, the College Center ([building CC on this map](https://www.middlesexcc.edu/campus-map/)) has a food court. Prices at the food court range from $5 to $10 per person. *Students must be accompanied by an adult if leaving designated competition areas. We will not be responsible for students who travel to the College Center or other such locations. Please take care to not get lost and return in a timely fashion. By registering for MCAMC, the organization coach or student parent agrees to these terms.*
+Pizza can be preordered at $12 per 18-inch pie. If you do not wish to eat pizza, the College Center ([building CC on this map](https://www.middlesexcc.edu/campus-map/)) has a food court. Prices at the food court range are around $8 per person. *Students must be accompanied by an adult if leaving designated competition areas. We will not be responsible for students who travel to the College Center or other such locations. Please take care to not get lost and return in a timely fashion. By registering for MCAMC, the organization coach or student parent agrees to these terms.*
 
 {: .question}
 **Are there T-shirts?**  
 
 {: .answer}
-Yes! T-shirts are available for $12. You can check out this year's design [here](TODO). T-shirts must be preordered when registering and will not be sold the day of the competition.
+Yes! T-shirts are available for $12. This year's design will be uploaded shortly. T-shirts must be preordered when registering and will not be sold the day of the competition.
 
 ### Miscellaneous
 
