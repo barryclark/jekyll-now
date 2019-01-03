@@ -29,7 +29,7 @@ meta: |
 
 ## What is MCAMC?
 
-MCAMC brings an exciting new type of math competition to the middle school audience - one that involves working together as a team with your friends. In contrast most other competitions that only involve working independently, get ready for a day filled with collaboration and action! 
+MCAMC brings an exciting new type of math competition to the middle school audience — one that involves working together as a team with your friends. In contrast other competitions that only involve working independently, get ready for a day filled with collaboration and action! 
 
 ## Important Dates
 
@@ -37,7 +37,7 @@ MCAMC brings an exciting new type of math competition to the middle school audie
 <table>
   <tr>
     <td>Registration Opens</td>
-    <td>January 2, 2019</td>
+    <td>January 3, 2019</td>
   </tr>
   <tr>
     <td>Sample Questions Released</td>
@@ -98,23 +98,21 @@ MCAMC brings an exciting new type of math competition to the middle school audie
 </div>
 
 ## Format and Rules
-MCAMC is structured into 3 rounds, each round lasting 1 hour each. Form teams of 4-6 students from grades 6-8 and compete together!
+Form teams of 4-6 students from your school in grades 6-8 and compete together! MCAMC is structured into 3 rounds, each round lasting 1 hour. 
 
 ### Individual Round
-The Individual Round comes first and might be something familiar — 20 questions spanning various topics. The questions will be similar in difficulty to the AMC 8.
+The Individual Round comes first and is the most traditional of the 3 rounds. There are 20 questions spanning various topics. The questions will be similar in difficulty to the AMC 8.
 
 ### Team Round
-In the Team Round, each team of 4-6 students works together to solve another set of 20 questions, but with a twist! This time, all 20 questions are related to one topic — a topic that you've probably never worked with before. We'll give you lots of background information to help you solve these 20 questions. This round is not just about testing what you know, but also about learning new things and playing around with new ideas!
+The Team Round comes second, and you will be working within your team of 4-6 students to solve another 20 questions, but now with a twist! This time, all 20 questions will be related to one topic — a topic that you've probably never seen before. We will provide enough background information and guidance to help you solve these 20 questions, so be prepared to learn something new. 
 
 ### Live Round
-In the Live Round, each team will again work together, and the style of the questions will be similar to the style of the Individual Round, just a little harder now because you can work together as a team. The twist comes in the format.
+The Live Round comes last, and you will again be working within your team. The style of the questions will be similar to that of the Individual Round, with a slight difficulty increase because you will be working as a team. Questions will come in sets of 3, and there are 8 sets of questions. The difficulty increases every set.
 
-All teams gather together in large rooms and compete live, with scores displayed in real-time on screens and projectors. Several tables in the room are set up with graders and questions. Questions come in sets of 3, and there are 8 sets of questions. When the round starts, each team sends one person to pick up the first set of questions and then return back to their team. The team works together to solve these 3 questions, and when the team is done, they send someone to submit their answers and recieve the next set of questions. Answers may not be changed after they are submitted, and answers will be graded on the spot, with the results immediately displayed on screens and projectors around the room. 
-
-As a side note, at several high school competitions, the Live Round is consistently the most exciting and engaging round. We're proud to be the first middle school math competition to our knowledge that offers a Live Round, so we hope that you enjoy it!
+It is called the Live Round because this round will be scored in real-time! All teams gather in large rooms, where several tables will be set up with graders and questions. When the round starts, each team sends one person to pick up the first set of questions and then return back to their team. The team works together to solve these 3 questions, and when the team is done, they send someone to submit their answers and recieve the next set of questions. Answers may not be changed after they are submitted, and answers will be graded on the spot, with the results immediately displayed on screens and projectors around the room. 
 
 ### Scoring
-We designed our scoring system to give more points to harder questions, as well as to prevent ties. Each round (individual, team, and live) is first scored separately, then roughly averaged for an overall score. 
+We designed our scoring system to give more points to harder questions, as well as to prevent ties. Each person's individual score comes from the Individual Round, while the team overall score depends on the average of Individual Round scores, the Team Round score, and the Live Round score, with each component equally important. 
 
 {: .question}
 **Show scoring specifics**
@@ -123,7 +121,7 @@ We designed our scoring system to give more points to harder questions, as well 
 For the Individual Round, for each question, each student recieves $$\frac{1}{p + 0.25}$$ points for answering correctly, where $$p$$ is the fraction of students who answered the question correctly. For the Team Round, for each question, the team similarly recieves $$\frac{1}{p + 0.25}$$ points for answering correctly. For the Live Round, each question will have a point value written next to it, which increase with every set. The overall team score is $$100(\frac{I}{I*} + \frac{T}{T*} + \frac{L}{L*})$$, where $$I$$, $$T$$, and $$L$$ are the team's individual average, team, and live scores, and $$I*$$, $$T*$$, and $$L*$$ are the top individual average, team, and live scores across all teams.
 
 ### Awards
-Both team awards and individual awards will be given. Please stay tuned for details.
+Both individual awards and team awards will be given. Please stay tuned for details.
 <!-- Awards will be given to the top 15 individuals, the top 10 teams in Team Round, the top 10 teams in Live Round, and the top 10 teams overall. Additional prizes will be given to the top 5 individuals and top 5 teams overall. We'll be announcing what these prizes are soon, so keep an eye out! -->
 
 ## Sample Questions
@@ -154,13 +152,14 @@ Sample questions will be posted by January 31, 2019.
   <a href="javascript:expandAll()" class="btn-grey">Expand All</a>
   <a href="javascript:collapseAll()" class="btn-grey">Collapse All</a>
 </div>
+
 ### Registration
 
 {: .question}
 **Can you describe the overall registration process for schools and other organizations?**
 
 {: .answer}
-Each organization submits one registration form. The organization will be asked to designate a coach that will receive communications from MCAMC, as well as provide basic information about each student participating. Please see the payment section for payment details. If you have any other questions, please contact us at [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com). 
+Each organization submits one registration form. The organization will be asked to designate a coach who will receive communications from MCAMC, and to provide basic information about each student participating. Please see the payment section for payment details. If you have any other questions, please contact us at [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com). 
 
 {: .question}
 **Can I register as individual without a team?**  
@@ -168,17 +167,18 @@ Each organization submits one registration form. The organization will be asked 
 {: .answer}
 Yes! If your school is not participating in MCAMC, you can register as individual. On the day of the competition, you will be matched with a team, and you will be able to participate in all rounds just like everyone else. However, if your school is participating in MCAMC, please register with your school.
 
+
 {: .question}
-**Our school contains grade 5 and/or grade 9. Can these students participate?**  
+**What are the exact eligibility requirements to participate in MCAMC?**  
 
 {: .answer}
-Grade 9 students *may not* participate. Students grade 5 and under *may* participate, but the questions on the competition assume a middle school level understanding of mathematics. Younger students may find this competition too difficult.
+Students must be in grade 8 or below. Grade 9 students *may not* participate, even if your middle school contains grade 9. Younger students *may* participate, but the difficulty of the competition stays the same. Additionally, homeschooled students *may* participate. There are no location requirements. 
 
 {: .question}
 **Can organizations other than schools form teams?**  
 
 {: .answer}
-Yes! Any team from anywhere may participate. However, if a student's school is participating in MCAMC, then the student should register with their school.
+Yes! Any team from anywhere may participate, including but not limited to enrichment programs and weekend programs.
 
 ### Day of the Competition
 
@@ -218,7 +218,7 @@ MCAMC costs $10 per student. Payment at the door will not be accepted. Payment m
 **What dining options are available?**  
 
 {: .answer}
-Pizza can be preordered at $12 per 18-inch pie. If you do not wish to eat pizza, the College Center ([building CC on this map](https://www.middlesexcc.edu/campus-map/)) has a food court. Prices at the food court range are around $8 per person. *Students must be accompanied by an adult if leaving designated competition areas. We will not be responsible for students who travel to the College Center or other such locations. Please take care to not get lost and return in a timely fashion. By registering for MCAMC, the organization coach or student parent agrees to these terms.*
+Pizza can be preordered at $12 per 18-inch pie. If you do not wish to eat pizza, the College Center ([building CC on this map](https://www.middlesexcc.edu/campus-map/)) has a food court. Prices at the food court are around $8 per person. *Students must be accompanied by an adult if leaving designated competition areas. We will not be responsible for students who travel to the College Center or other such locations. Please take care to not get lost and return in a timely fashion. By registering for MCAMC, the organization coach or student parent agrees to these terms.*
 
 {: .question}
 **Are there T-shirts?**  
