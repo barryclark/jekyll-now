@@ -1,6 +1,8 @@
 
 # PSC x Code for Canada project updates
 
+Link to live site: https://code-for-canada.github.io/psc-updates/
+
 This is a blog run by the [Code for Canada fellows at the Public Service Commission](https://medium.com/code-for-canada/inboxing-clever-db6a334dda7d). It contains monthly project updates. Overall these are considered public, but some items might link to some internal facing content.
 
 ## Instructions on publishing a blog post
