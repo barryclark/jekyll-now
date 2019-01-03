@@ -8,7 +8,7 @@ excerpt: JSR 292 defines a new bytecode, i.e. InvokeDynamic, that allows the exe
 >
 > -- <cite>[André Gide](http://en.wikipedia.org/wiki/Andr%E9_Gide)</cite>
 
-[JSR 292 (Supporting Dynamically Typed Languages on the Java Platform)](JSR 292 (Supporting Dynamically Typed Languages on the Java Platform), introduced in Java SE 7, is about simplifying and improving the support of dynamically typed languages on the Java Platform. JSR 292 defines a new bytecode, i.e. InvokeDynamic, that allows the execution of method invocations in the absence of static type information. So it is clearly the first bytecode that has been designed for dynamically typed language and not for the Java language.
+[JSR 292 (Supporting Dynamically Typed Languages on the Java Platform)](https://www.jcp.org/en/jsr/detail?id=292), introduced in Java SE 7, is about simplifying and improving the support of dynamically typed languages on the Java Platform. JSR 292 defines a new bytecode, i.e. InvokeDynamic, that allows the execution of method invocations in the absence of static type information. So it is clearly the first bytecode that has been designed for dynamically typed language and not for the Java language.
 
 [Project Nashorn](http://openjdk.java.net/projects/nashorn/), Java 8's new JavaScript engine relies heavily on InvokeDynamic. In Fact, originally Nashorn 'was just' an InvokeDynamic Proof of Concept. The PoC was successful and Nashorn has, since then, evolved into a high-performance 100% ECMAScript compliant engine.
 
