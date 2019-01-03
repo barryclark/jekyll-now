@@ -53,7 +53,7 @@ I'll continue my experiments promoting this blog and [my other, dog-oriented blo
 
 ## Abstract Goal: Professional & Personal Development
 
-In November of last year, we both joined Toastmasters, and we both have our first speech next week. I still need to write that one, which I'll be doing as soon as I publish this post (procrastinating much?).
+In November of last year, we both joined Toastmasters, and we both have our [first speech](https://hendrixjoseph.github.io/toastmasters-icebreaker-speech-the-story-of-joe/) next week. I still need to write that one, which I'll be doing as soon as I publish this post (procrastinating much?).
 
 I will be graduating with my Master's in Computer Science this year, either at the end of summer semester or the end of fall semester. It depends if there's a course offered during the summer which I can take.
 
