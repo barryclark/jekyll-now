@@ -286,15 +286,35 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  margin-top: 30px;
   background-color: $lightGray;
 }
 
 footer {
-  padding: 20px 0;
-  text-align: center;
+  padding: 10px 0 15px 0;
+  text-align: left;
+  color: #444;
+}
+
+footer h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+footer p {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: #444;
+}
+
+.footer-column {
+  display: inline-block;
+  padding-right: 75px;
 }
 
 .fc-event-hover {
@@ -316,6 +336,14 @@ footer {
 .fc-content-skeleton tr td:last-child .fc-event-hover .fc-content {
   left: auto;
   right: 0;
+}
+
+.copyright {
+  background-color: #DDD;
+  color: #666;
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
