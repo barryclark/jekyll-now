@@ -29,7 +29,7 @@ meta: |
 
 ## What is MCAMC?
 
-MCAMC brings an exciting new type of math competition to the middle school audience — one that involves working together as a team with your friends. In contrast other competitions that only involve working independently, get ready for a day filled with collaboration and action! 
+MCAMC brings an exciting new type of math competition to the middle school audience — one that involves working together as a team with your friends. In contrast to other competitions that only involve working independently, get ready for a day filled with collaboration and action! 
 
 ## Important Dates
 
