@@ -15,9 +15,6 @@ meta: |
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ---
 
-# NOTICE
-**This website is a work in progress. Although you may regard any information provided on this website as true, some images, functionality, and/or information may be missing. Additional images, functionality, and/or information may be added without notice.**
-
 <div class="banner main-banner">
   <div class="banner-cont main-banner-cont">
   <a href="/mcamc"><img src="/images/mcamc-bkg-large.svg" class="main-banner-img"></a>
