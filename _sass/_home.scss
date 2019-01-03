@@ -1,11 +1,36 @@
 @import "variables";
 
-.main-banner {
+.banner {
 	position: relative;
-	background-color: #ced7db;
+	text-align: center;
 }
 
-.main-banner-cont {
+.main-banner {
+	background-color: black;
+	color: white;
+}
+
+.sub-banner {
+	background-color: #DDD;
+	margin-top: 12px;
+}
+
+.main-banner-title a {
+  	@include mobile {
+    	margin-top: 5px;
+  	}
+  	color: white;
+}
+
+.main-banner-title a:hover {
+	color: white;
+}
+
+.sub-banner-title a:hover {
+	color: black;
+}
+
+.banner-cont {
 	padding: 10px;
 }
 
@@ -19,11 +44,7 @@
 	}
 }
 
-.main-banner-overlay {
-	text-align: center;
-}
-
-.main-banner-btn-cont {
+.banner-btn-cont {
 	margin-top: 22px;
 	padding-bottom: 22px;
 }

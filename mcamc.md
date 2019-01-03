@@ -18,14 +18,12 @@ meta: |
 # NOTICE
 **This website is a work in progress. Although you may regard any information provided on this website as true, some images, functionality, and/or information may be missing. Additional images, functionality, and/or information may be added without notice.**
 
-<div class="main-banner">
-  <div class="main-banner-cont">
-    <div class="main-banner-overlay">
-      <h1>Middlesex County Academy Math Competition</h1>
-    </div>
-  <img src="/images/mcamc-bkg-large.svg" class="main-banner-img">
+<div class="banner main-banner">
+  <div class="banner-cont main-banner-cont">
+  <a href="/mcamc"><img src="/images/mcamc-bkg-large.svg" class="main-banner-img"></a>
   <div class="main-banner-overlay">
-    <div class="main-banner-btn-cont">
+    <h1 class="main-banner-title"><a href="/mcamc">Middlesex County Academy Math Competition</a></h1>
+    <div class="banner-btn-cont">
       <a href="/mcamc/register" class="banner-btn">Register Now</a>
     </div>
   </div>
