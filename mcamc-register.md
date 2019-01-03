@@ -24,6 +24,7 @@ function reg(type) {
   document.getElementById("reg0").style.display = "none";
   document.getElementById("reg1").style.display = "none";
   document.getElementById("i-am-registering-as-aan").style.display = "none";
+  document.getElementById("mcamc-registration").style.display = "none";
   if (!choiceMade) {
     if (type === 0) {
       Cognito.load("forms", { id: "2" });
