@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Type Conversion in JPA 2.1
-excerpt: JPA 2.1 adds support for Type Conversion methods, sometime called Type Converter. ...
+excerpt: JPA 2.1 adds support for Type Conversion methods, sometime called Type Converter...
 ---
 
 
