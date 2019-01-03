@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java EE 8 Community Survey &#48 The Final Part!
+title: Java EE 8 Community Survey - The Final Part!
 excerpt: As we promised earlier, the final phase of this outreach is an opportunity for you...
 ---
 
