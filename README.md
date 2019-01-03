@@ -4,7 +4,7 @@
 This is a blog run by the [Code for Canada fellows at the Public Service Commission](https://medium.com/code-for-canada/inboxing-clever-db6a334dda7d). It contains monthly project updates. Overall these are considered public, but some items might link to some internal facing content.
 
 ## Instructions on publishing a blog post
-Edit `/_posts/2018-11-3-update-1.md` to publish an update post. 
+Edit `/_posts/2018-11-3-update-1.md` to publish a post. 
 
 Merging to 'master' will publish your updates to the site within a few minutes. Creating a new branch with a pull request is a way to get a review/confirmation of your content before publishing.
 
