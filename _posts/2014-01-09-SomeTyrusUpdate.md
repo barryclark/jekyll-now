@@ -11,11 +11,11 @@ Tyrus 1.0 was released mid 2013 when the JSR 356 specification went final. Since
 
 Here are some of features and improvments that were recently added to Tyrus :
 
-** [WebSocket Extension](https://blogs.oracle.com/PavelBucek/entry/websocket_extensions_in_tyrus) : A new filtering capability to processes incoming and outgoing WebSocket frames.
+* [WebSocket Extension](https://blogs.oracle.com/PavelBucek/entry/websocket_extensions_in_tyrus) : A new filtering capability to processes incoming and outgoing WebSocket frames.
 
-** [Shared Client Container](https://blogs.oracle.com/pavelbucek/tyrus-client-shared-container) : An improved container for WebSocket clients who need to deal with lot of connections.
+* [Shared Client Container](https://blogs.oracle.com/pavelbucek/tyrus-client-shared-container) : An improved container for WebSocket clients who need to deal with lot of connections.
 
-** [Optimized WebSocket Broadcast](https://blogs.oracle.com/PavelBucek/entry/optimized_websocket_broadcast) : A server-side WebSocket endpoint optimization for broadcasting payload.
+* [Optimized WebSocket Broadcast](https://blogs.oracle.com/PavelBucek/entry/optimized_websocket_broadcast) : A server-side WebSocket endpoint optimization for broadcasting payload.
 
 
 *Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/some-tyrus-updates) blog.*
