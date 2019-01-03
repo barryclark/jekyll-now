@@ -89,7 +89,7 @@ if ($BlogPostFile) {
     $ShortLink = Invoke-WebRequest -Uri "https://tinyurl.com/api-create.php?url=$BlogUrl" -UseBasicParsing |
         Select-Object -ExpandProperty Content
 
-    $Tweet = 'Check out my latest blog post! "{0}" — {1}' -f $FriendlyTitle, $ShortLink
+    $Tweet = 'Check out my latest blog post! "{0}" - {1}' -f $FriendlyTitle, $ShortLink
     if ($Tweet.Length -gt 140) { $Tweet.Substring(0, 108) + "... $ShortUri"}
     Write-Host "Writing Variables"
     Write-Host "##vso[task.setvariable variable=DoTweet]DO THE THING"
