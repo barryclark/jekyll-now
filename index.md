@@ -37,7 +37,7 @@ layout: default
 		<h1 class="sub-banner-title"><a href="/internal-use">Resources For Current MCA Students</a></h1>
 		<p>Please check the Internal Use page for information regarding club activities and resources.</p>
 		<div class="banner-btn-cont">
-			<a href="/mcamc" class="banner-btn">View Resources</a>
+			<a href="/internal-use" class="banner-btn">View Resources</a>
 		</div>
 	</div>
 </div>
