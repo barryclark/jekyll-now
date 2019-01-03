@@ -229,10 +229,10 @@ Yes! T-shirts are available for $12. This year's design will be uploaded shortly
 ### Miscellaneous
 
 {: .question}
-**Does a high score on the MCAMC guarantee admission to Middlesex County Academy?**  
+**Does a high score on the MCAMC impact admission to Middlesex County Academy?**  
 
 {: .answer}
-No, our competition is not affiliated with the admissions process of our school. However, our admissions team is well aware of the rigor and importance of math competitions in general, including but not limited to the MCAMC. We encourage those who enjoy math competions to apply!
+Our competition is not affiliated with the admissions process of our school. However, our admissions team is well aware of the rigor and importance of math competitions in general, including but not limited to the MCAMC. We encourage those who enjoy math competions to apply!
 
 {: .question}
 **I have a question not listed here.**  
