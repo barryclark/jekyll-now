@@ -28,16 +28,20 @@ Still, 2018 contained some great fiction, both high- and low-brow. As always, a 
 
 ## Cooking
 
-If you like cooking, you must absolutely read *Salt, Fat, Acid, Heat*[^1e403ae1]! I also became a bit of of Tim Ferriss fanboy, so I went though the *4-Hour Chef* on a lonely Friday evening. The first chapter on metalearning is perhaps the most general applicable. As a side-note, Tim Ferriss interviewed Nosrat, the author of *Salt, Fat, Acid, Heat*, on his [podcast](https://open.spotify.com/episode/2ZOlNC7ec4dJbMsg0xJoR9).
+If you like cooking, you must absolutely read *Salt, Fat, Acid, Heat*[^1e403ae1]! I also became a bit of of Tim Ferriss fanboy, so I went though the *4-Hour Chef* on a lonely Friday evening. The first chapter on metalearning is perhaps the most general applicable. As a side-note, Tim Ferriss interviewed Nosrat, the author of *Salt, Fat, Acid, Heat*, on his [podcast](https://open.spotify.com/episode/2ZOlNC7ec4dJbMsg0xJoR9)[^25bdf9e5].
 
-- [ ] complete this
+[^25bdf9e5]: I also recommend it, because Nosrat also shows a more vulnerable side of herself. At the time, I was somewhat anxious and hearing that such a succesful person has more or less the same worries did good for me.
 
-[^1e403ae1]: Or watch the Netflix series if that is your thing.
+[^1e403ae1]: Or watch the Netflix series if, which I hear is very good!
 
 - '**Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking**' by Samin Nosrat (\*\*\*\*\*)
 - '*The 4-Hour Chef: The Simple Path to Cooking Like a Pro, Learning Anything, and Living the Good Life*' by Timothy Ferriss (\*\*\*)
 
 ## Biology
+
+Many interesting biology books. During my time at [Poisotlab](http://poisotlab.io) they started the habit of reading one chapter a week of Rockwood, with a different person summarizing the chapter every Friday. An excellent idea! The textbook itself is also a recommended intro to population ecology, a topic not really discussed during my studies as Bioscience Engineer.
+
+I definitely recommend reading *Thinking Like a Phage*. Finally a book with the phage and not the bacterium as the protagonist! Not only super interesting, but already worth buying for the gorgeous [artwork](https://thinkinglikeaphage.com/)!
 
 - '*How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence*' by Michael Pollan (\*\*\*)
 - '*Introduction to Population Ecology*' by Larry L. Rockwood (\*\*\*)
@@ -46,35 +50,49 @@ If you like cooking, you must absolutely read *Salt, Fat, Acid, Heat*[^1e403ae1]
 - '*The Plant Messiah*' by Carlos Magdalena (\*\*\*)
 - '*The Hidden Life of Trees: What They Feel, How They Communicate*' by Peter Wohlleben (\*\*\*\*)
 - '**Thinking Like a Phage: The Genius of the Viruses That Infect Bacteria and Archaea**' by Merry Youle (\*\*\*\*\*)
-- '*Sapiens: A Brief History of Humankind*' by Yuval Noah Harari (\*\*\*\*\*)
-- *'21 Lessons for the 21st Century'* by Yuval Noah Harari (\*\*\*\*)[^18bddb78]
 
-[^18bddb78]: Ok, not really biology, but I did not want to make a new category.
+## Anthropology
+
+I usually don't read too much about societies and history. So it has to be a pretty highly-regarded book when I pick it up in this topic. The books of Harari and Rosling are strongly recommended, and I enjoyed reading them all enormously!
+
+- '**Sapiens: A Brief History of Humankind**' by Yuval Noah Harari (\*\*\*\*\*)
+- '**21 Lessons for the 21st Century**' by Yuval Noah Harari (\*\*\*\*)
+- '**Factfulness: Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think**' by Hans Rosling
+ (\*\*\*\*)
+- '*Life 3.0: Being Human in the Age of Artificial Intelligence*' by Max Tegmark (\*\*\*)
+
 
 ## Mathematics and computer science
 
+If you want to up your game in bioinformatics, *Bioinformatics Algorithms: An Active Learning Approach* is good a textbook as any to this topic. *The Book of Why* also sent some shockwaves in the machine learning community this year. I wished I had read it sooner and can recommend it to any scientist. I tried to summarize the main points earlier in a [blogpost](https://michielstock.github.io/causality/).
+
+By coincidence, I discovered the little gem *In Pursuit of the Traveling Salesman*, an amusing introduction to this famous computer science problem and an accessible overview to many topics in discrete optimization.
+
 - '*Clean Code: A Handbook of Agile Software Craftsmanship*' by Robert C. Martin (\*\*\*)
-- '*Bioinformatics Algorithms: An Active Learning Approach*' by Phillip Compeau (\*\*\*\*\*)
+- '**Bioinformatics Algorithms: An Active Learning Approach**' by Phillip Compeau (\*\*\*\*\*)
 - '*Elements of Causal Inference: Foundations and Learning Algorithms*' by Jonas Peters (\*\*\*)
 - '*Deep learning with Python*' by Francois Chollet (\*\*\*\*)
 - '*Julia Programming for Operations Research: A Primer on Computing*' by Changhyun Kwon (\*\*\*)
 - '**The Book of Why: The New Science of Cause and Effect**'
-by Judea Pearl, check my [blogpost](https://michielstock.github.io/causality/) (\*\*\*\*\*)
+by Judea Pearl (\*\*\*\*\*)
 - '**In Pursuit of the Traveling Salesman: Mathematics at the Limits of Computation**' by William J. Cook (\*\*\*\*\*)
 
 ## Physics
+
+Like many quantitative biologists, I suffer from a modest form of [physics envy](https://en.wikipedia.org/wiki/Physics_envy). As you see, I had quite a bit of interest in statistical physics this year. The book by Werner Krauth is perhaps of interest to those wanting learn more about sampling algorithms from a physics point-of-view.
+
+For people interested in biology and society, I strongly recommend *Scale*. When studying, I was always fascinated by the allometric laws, which could be used to estimate metabolic rate based on body weight. They were always a bit of a mystery to me, until I read this book written by the person who gave theoretical justification to this these laws. I am always very wary for physicists who propose their theories of everything, but this book contains many interesting 
 
 - '*Statistical Mechanics: Algorithms and Computations*' by Werner Krauth (\*\*\*\*)
 - *'Statistical Mechanics: Entropy, Order Parameters and Complexity'* by Sethna, James P. (\*\*\*\*)
 - '*Special Relativity and Classical Field Theory*' by Leonard Susskind (\*\*\*\*)
 - '**Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies**' by Geoffrey B. West (\*\*\*\*)
 - '*The Beginning of Infinity: Explanations that Transform the World*' by David Deutsch (\*\*\*)
-- '*Life 3.0: Being Human in the Age of Artificial Intelligence*' by Max Tegmark (\*\*\*)
 
 ## Self-improvement and productivity
 
 - '*Tools of Titans*' by Timothy Ferriss (\*\*\*)
-- '*Deep Work: Rules for Focused Success in a Distracted World*' by Cal Newport (\*\*\*\*)
+- '**Deep Work: Rules for Focused Success in a Distracted World**' by Cal Newport (\*\*\*\*)
 - '**How Not to Be Wrong: The Power of Mathematical Thinking**' by Jordan Ellenberg (\*\*\*\*)
 - '*Think Like an Engineer*' by Guru Madhavan (\*\*)
 - '*The Floor is Yours*' by Hans van De Water and Toon Verlinden
