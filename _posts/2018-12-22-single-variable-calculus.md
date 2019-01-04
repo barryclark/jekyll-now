@@ -24,6 +24,8 @@ Course archive
     * Session 12: Higher Derivatives
   * Part B: Implicit Differentiation and Inverse Functions
     * Session 13: Implicit Differentiation
+    * Session 14: Examples of Implicit Differentiation
+    * Session 15: Implicit Differentiation and Inverse Functions
 * Applications of Differentiation
   * Part A: Approximation and Curve Sketching
   * Part B: Optimization, Related Rates and Newton's Method
