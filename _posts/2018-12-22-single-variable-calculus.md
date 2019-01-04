@@ -23,7 +23,7 @@ Course archive
     * Session 11: Chain Rule
     * Session 12: Higher Derivatives
   * Part B: Implicit Differentiation and Inverse Functions
-    * Session 13: Implicit Differentiation ([my note](/data/18.01SC/abcxyz))
+    * Session 13: Implicit Differentiation
 * Applications of Differentiation
   * Part A: Approximation and Curve Sketching
   * Part B: Optimization, Related Rates and Newton's Method
