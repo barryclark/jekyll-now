@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The :books: of 2018"
+title: "The books of 2018"
 date: "2019-01-04 20:15:43 +0100"
 ---
 
