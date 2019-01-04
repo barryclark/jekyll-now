@@ -1,18 +1,22 @@
 ---
 layout: post
 title: "The :books: of 2018"
-date: "2018-12-28 20:15:43 +0100"
+date: "2019-01-04 20:15:43 +0100"
 ---
 
-![Me in our new bookshelf. ](../../images/2017_books/bookshelve.jpeg)
+![Me in our new bookshelf.](../../images/2017_books/bookshelve.jpeg)
 
-Peeking in someone's bookshelf is roughly equivalent with looking into that person's brain, seeing what they are interested in, want to learn and become. With the new year, I find it useful to look back to the books of 2018. Some of the best books I have read are recommendations, so if
+Peeking in someone's bookshelf is roughly equivalent with looking into that person's brain, seeing what they are interested in, want to learn and become[^7845d4b1]. With the new year, it is useful to look back to the books of 2018. I ordered them by topic and highlighted those why I found particularly good!
+
+[^7845d4b1]: You can probably guess that I was a great fan of the #bookchallenge on Twitter.
+
+Some of the best books I have read are recommendations. If you know a book I would like, feel free to do suggestions. You can always add me on [Goodreads](https://www.goodreads.com/user/show/4249244-michiel).
 
 ## Novels and short stories
 
-I notice that I am enjoying fiction less than I am used to. Being in academia for a decade has wired my brain to be able to process facts and information quite efficiently whereas I (still) struggle to keep track of the names of many characters in stories.
+I notice that I am reading less fiction than I am used to. Being in academia for a decade has wired my brain to be able to process facts and information quite efficiently whereas I often (still) struggle to keep track of the names of most characters in stories.
 
-Still, 2018 contained some great fiction, both high- and low-brow. As always, a new book of Murakami is a delight. I particularly enjoyed reading one or two of the fairy tales collected by Angela Carter. For those liking humorous books and the Harry Potter series, I could recommend the The Checquy Files series.
+Still, 2018 contained some stories for me, both high- and low-brow. As always, a new book of Murakami is a delight! I also enjoyed reading one or two of the fairy tales collected by Angela Carter before going to bed. For those liking humorous books, I could recommend the The Checquy Files series. Think: what if the Ministey of Magic ran a spy agency?
 
 - '*Stephen Florida*' by Gabe Habash (\*\*\*)
 - '*Een Idea verschijnt (De moord op Commendatore #1)*' by Haruki Murakami (\*\*\*\*\*)
@@ -24,16 +28,16 @@ Still, 2018 contained some great fiction, both high- and low-brow. As always, a 
 - '*The Word is Murder*' by Anthony Horowitz (\*\*\*\*)
 - '*The Lathe of Heaven*' by Ursula K. Le Guin (\*\*\*\*)
 - '*The Handmaid's Tale*' by Margaret Atwood (\*\*\*\*\*)
-- '*Het achtste leven (voor Brilka)*' by Nino Haratischwili (\*\*\*\*\*)
+- '**Het achtste leven (voor Brilka)**' by Nino Haratischwili (\*\*\*\*\*)
 - '*A Day in the Life of Marlon Bundo*' by Jill Twiss (\*\*\*\*)
 - '*The Rook (The Checquy Files, #1)*' by Daniel O'Malley (\*\*\*\*)
 - '*Stiletto (The Checquy Files, #2)*' by Daniel O'Malley (\*\*\*)
 
 ## Cooking
 
-If you like cooking, you must absolutely read *Salt, Fat, Acid, Heat*[^1e403ae1]! I also became a bit of of Tim Ferriss fanboy, so I went though the *4-Hour Chef* on a lonely Friday evening. The first chapter on metalearning is perhaps the most general applicable. As a side-note, Tim Ferriss interviewed Nosrat, the author of *Salt, Fat, Acid, Heat*, on his [podcast](https://open.spotify.com/episode/2ZOlNC7ec4dJbMsg0xJoR9)[^25bdf9e5].
+If you like cooking, you must absolutely read *Salt, Fat, Acid, Heat*[^1e403ae1]! I also became a bit of of Tim Ferriss fanboy last year, so I went though the *4-Hour Chef* on a lonely Friday evening. The first chapter on metalearning is perhaps the most general applicable. As a side-note, Tim Ferriss interviewed Nosrat, the author of *Salt, Fat, Acid, Heat*, on his [podcast](https://open.spotify.com/episode/2ZOlNC7ec4dJbMsg0xJoR9)[^25bdf9e5].
 
-[^25bdf9e5]: I also recommend it, because Nosrat also shows a more vulnerable side of herself. At the time, I was somewhat anxious and hearing that such a succesful person has more or less the same worries did good for me.
+[^25bdf9e5]: I also recommend it because Nosrat also shows a more vulnerable side of herself. At the time, I was somewhat anxious and hearing that such a successful person has more or less the same worries did good for me.
 
 [^1e403ae1]: Or watch the Netflix series if, which I hear is very good!
 
@@ -42,9 +46,11 @@ If you like cooking, you must absolutely read *Salt, Fat, Acid, Heat*[^1e403ae1]
 
 ## Biology
 
-Many interesting biology books. During my time at [Poisotlab](http://poisotlab.io) they started the habit of reading one chapter a week of Rockwood, with a different person summarizing the chapter every Friday. An excellent idea! The textbook itself is also a recommended intro to population ecology, a topic not really discussed during my studies as Bioscience Engineer.
+Many interesting biology books. During my time at [Poisotlab](http://poisotlab.io) they started the habit of reading one chapter a week of Rockwood's *Introduction to Population Biology*, with a different person summarizing the chapter every Friday. An excellent idea! The textbook itself is also a recommended intro to population ecology, a topic not really discussed during my studies as Bioscience Engineer.
 
-I definitely recommend reading *Thinking Like a Phage*. Finally a book with the phage and not the bacterium as the protagonist! Not only super interesting, but already worth buying for the gorgeous [artwork](https://thinkinglikeaphage.com/)!
+I definitely recommend reading *Thinking Like a Phage*. Finally a book with the phage and not the bacterium as the protagonist! Not only super interesting, but already worth buying for the gorgeous artwork!
+
+![Some artwork of *Thinking Like a Phage*. Just look at it! Illustration by Leah Pantéa.](https://thinkinglikeaphage.files.wordpress.com/2017/03/summary6web350.jpg)
 
 - '*How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence*' by Michael Pollan (\*\*\*)
 - '*Introduction to Population Ecology*' by Larry L. Rockwood (\*\*\*)
@@ -56,7 +62,7 @@ I definitely recommend reading *Thinking Like a Phage*. Finally a book with the 
 
 ## Anthropology
 
-I usually don't read too much about societies and history. So it has to be a pretty highly-regarded book when I pick it up in this topic. The books of Harari and Rosling are strongly recommended, and I enjoyed reading them all enormously!
+I usually don't read too much about society and history. So it has to be a pretty highly-regarded book when I pick it up in this topic. The books of Harari and Rosling are strongly recommended, and I enjoyed reading them enormously!
 
 - '**Sapiens: A Brief History of Humankind**' by Yuval Noah Harari (\*\*\*\*\*)
 - '**21 Lessons for the 21st Century**' by Yuval Noah Harari (\*\*\*\*)
