@@ -4,11 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Machine learning & Predictive data analyst with 2 years of experience. Experienced in Machine learning algorithms (such as Segmentation and Modelling) and A/B Testing. Expert understanding of Software Development Life Cycle (SDLC) as well as Agile/Scrum methodology. Hands on experience in writing queries in SQL and R to extract, transform and load (ETL) data from large datasets. Utilizing advanced data analysis skills on Tableau and SQL Server to develop insights. Seeking to leverage data analytical skills to improve corporate performance as a data analyst/data scientist.
+Hey hey! I’m Shreyas,a recent graduate from the University of North Carolina, Charlotte with a Master’s degree in Computer Science in May 2018.Currently, I’m working as a Teaching Assistant at a Bootcamp conducted by Trilogy Education Services in Charlotte, NC.
+
+I am an avid learner and ambitious data scientist looking to dive in the boundless field of Data Science and Machine Learning. I enjoy teaching my learnings and help understand the deeper concepts with a tinge of fun.
+
+
+Check out my [resume]({{ site.url }}/assets/KnowMe.pdf).
 
 ### More Information
 
-A good programmer always reuses code hence I wrote code templates which can be used readily and can be modified according to the situation, thus increasing efficiency and allowing better time management. Kindly have a look at <a href="{{ site.baseurl }}/project">my work</a> for some of my projects.
+A good programmer naturally reuses code, therefore I preferred to write Code templates that can be extend for future use. The extensibility,thus increases efficiency and help me utilize the time for more challenging tasks.
+Kindly look through my exciting <a href="{{ site.baseurl }}/project">work</a>.
 
 
 ### Contact me

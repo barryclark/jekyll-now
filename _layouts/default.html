@@ -11,8 +11,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.ico">
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
@@ -43,6 +43,11 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+          <div class="text-small mt3">
+            <p class="mt0 mb2">
+              Content ©{{ site.time | date: "%Y" }} Shreyas Vaidyanath. All rights reserved. <br>
+              All design and code are open source <a href="https://github.com/shreyas1701/shreyas1701.github.io" target="_blank">on GitHub</a>.
+            </p>
         </footer>
       </div>
     </div>
