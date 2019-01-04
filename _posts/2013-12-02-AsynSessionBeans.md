@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Asynchronous session beans and 'Concurrency Utilities for Java EE API'
-excerpt: ...
+excerpt: There are different approaches to obtain an asynchronous behaviour within a Java EE application...
 ---
 
 > t's true hard work never killed anybody, but I figure, why take the chance?
