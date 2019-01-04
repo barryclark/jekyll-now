@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "The books of 2018"
+title: "The :books: of 2018"
 date: "2018-12-28 20:15:43 +0100"
 ---
 
 ![Me in our new bookshelf. ](../../images/2017_books/bookshelve.jpeg)
+
+Peeking in someone's bookshelf is roughly equivalent with looking into that person's brain, seeing what they are interested in, want to learn and become. With the new year, I find it useful to look back to the books of 2018. Some of the best books I have read are recommendations, so if
+
 ## Novels and short stories
 
 I notice that I am enjoying fiction less than I am used to. Being in academia for a decade has wired my brain to be able to process facts and information quite efficiently whereas I (still) struggle to keep track of the names of many characters in stories.
@@ -81,7 +84,7 @@ by Judea Pearl (\*\*\*\*\*)
 
 Like many quantitative biologists, I suffer from a modest form of [physics envy](https://en.wikipedia.org/wiki/Physics_envy). As you see, I had quite a bit of interest in statistical physics this year. The book by Werner Krauth is perhaps of interest to those wanting learn more about sampling algorithms from a physics point-of-view.
 
-For people interested in biology and society, I strongly recommend *Scale*. When studying, I was always fascinated by the allometric laws, which could be used to estimate metabolic rate based on body weight. They were always a bit of a mystery to me, until I read this book written by the person who gave theoretical justification to this these laws. I am always very wary for physicists who propose their theories of everything, but this book contains many interesting 
+For people interested in biology and society, I strongly recommend *Scale*. When studying, I was always fascinated by the allometric laws, which could be used to estimate metabolic rate based on body weight. They were always a bit of a mystery to me, until I read this book written by the person who gave theoretical justification to this these laws. I am always very wary for physicists who propose their theories of everything, but this book contains many interesting insights, from predicting metabolic activity and life expectancy to why cities can live forever.  
 
 - '*Statistical Mechanics: Algorithms and Computations*' by Werner Krauth (\*\*\*\*)
 - *'Statistical Mechanics: Entropy, Order Parameters and Complexity'* by Sethna, James P. (\*\*\*\*)
@@ -91,9 +94,13 @@ For people interested in biology and society, I strongly recommend *Scale*. When
 
 ## Self-improvement and productivity
 
+Getting older and having more responsibilities, I start to like 'self-improvement books' more. *Deep Work* and *The Subtle Art of Not Giving a F\*ck* gave some practical, useful advice to become a better, more stable and productive person (though I can't claim to always follow the advice to the letter).
+
+*How Not to Be Wrong* is also highly recommended to use a more mathematical and probabilistic way of thinking. It also makes for an entertaining read.
+
 - '*Tools of Titans*' by Timothy Ferriss (\*\*\*)
 - '**Deep Work: Rules for Focused Success in a Distracted World**' by Cal Newport (\*\*\*\*)
-- '**How Not to Be Wrong: The Power of Mathematical Thinking**' by Jordan Ellenberg (\*\*\*\*)
 - '*Think Like an Engineer*' by Guru Madhavan (\*\*)
 - '*The Floor is Yours*' by Hans van De Water and Toon Verlinden
-- '*The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life*' by Mark Manson (\*\*\*\*\*)
+- '**The Subtle Art of Not Giving a F\*ck: A Counterintuitive Approach to Living a Good Life**' by Mark Manson (\*\*\*\*\*)
+- '**How Not to Be Wrong: The Power of Mathematical Thinking**' by Jordan Ellenberg (\*\*\*\*)
