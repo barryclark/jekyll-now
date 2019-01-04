@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Hello World
+crosspost_to_medium: true
 ---
 ### Say Whattttt?! Hello to the Internet World!!
 

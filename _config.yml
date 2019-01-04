@@ -60,6 +60,9 @@ permalink: /:title/
 # The release of Jekyll Now that you're using
 version: v3.7.4
 
+# Medium token for cross-posting
+MEDIUM_USER_ID: 1dc243f79a1a2c256b2f68751ec3b1029ff277e5dae173533c1ec49aebb2a1111
+
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
