@@ -61,7 +61,12 @@ permalink: /:title/
 version: v3.7.4
 
 # Medium token for cross-posting
-MEDIUM_USER_ID: 1dc243f79a1a2c256b2f68751ec3b1029ff277e5dae173533c1ec49aebb2a1111
+MEDIUM_USER_ID: '1dc243f79a1a2c256b2f68751ec3b1029ff277e5dae173533c1ec49aebb2a1111'
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: public
+  license: all-rights-reserved
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
