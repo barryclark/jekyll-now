@@ -249,6 +249,16 @@ img {
 /*********************/
 
 //
+// .adsbygoogle
+//
+
+.adsbygoogle {
+  -webkit-filter: $dropShadow;
+  -ms-filter: $dropShadow;
+  filter: $dropShadow;
+}
+
+//
 // .masthead
 //
 

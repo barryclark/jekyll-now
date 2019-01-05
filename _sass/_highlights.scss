@@ -5,9 +5,9 @@ pre {
   padding: 7px 7px 7px 10px;
   border: 2px solid #0063B1;
   border-top-width: 12px;
-  -moz-box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
-  -webkit-box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: $boxShadow;
+  -webkit-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
   margin: 20px 0 20px 0;
   overflow: auto;
 
