@@ -13,4 +13,4 @@ I am a machine learning engineer as well as a PhD student at the University of C
 
 ### Contact me
 
-[lmuhlstein@ucsd.edu](mailto:lmuhlstein@ucsd.edu)
+[larrymuhlstein@gmail.com](mailto:larrymuhlstein@gmail.com)
