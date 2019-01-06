@@ -6,7 +6,7 @@ date: "2019-01-04 20:15:43 +0100"
 
 ![Me in our new bookshelf.](../../images/2017_books/bookshelve.jpeg)
 
-Peeking in someone's bookshelf is roughly equivalent with looking into that person's brain, seeing what they are interested in, want to learn and become[^7845d4b1]. With the new year, it is useful to look back to the books of 2018. I ordered them by topic and highlighted those why I found particularly good!
+Peeking in someone's bookshelf is roughly equivalent with looking into that person's brain, seeing what they are interested in, want to learn and become[[^7845d4b1]]. With the new year, it is useful to look back to the books of 2018. I ordered them by topic and highlighted those why I found particularly good!
 
 [^7845d4b1]: You can probably guess that I was a great fan of the #bookchallenge on Twitter.
 
@@ -35,7 +35,7 @@ Still, 2018 contained some stories for me, both high- and low-brow. As always, a
 
 ## Cooking
 
-If you like cooking, you must absolutely read *Salt, Fat, Acid, Heat*[^1e403ae1]! I also became a bit of of Tim Ferriss fanboy last year, so I went though the *4-Hour Chef* on a lonely Friday evening. The first chapter on metalearning is perhaps the most general applicable. As a side-note, Tim Ferriss interviewed Nosrat, the author of *Salt, Fat, Acid, Heat*, on his [podcast](https://open.spotify.com/episode/2ZOlNC7ec4dJbMsg0xJoR9)[^25bdf9e5].
+If you like cooking, you must absolutely read *Salt, Fat, Acid, Heat*[[^1e403ae1]]! I also became a bit of of Tim Ferriss fanboy last year, so I went though the *4-Hour Chef* on a lonely Friday evening. The first chapter on metalearning is perhaps the most general applicable. As a side-note, Tim Ferriss interviewed Nosrat, the author of *Salt, Fat, Acid, Heat*, on his [podcast](https://open.spotify.com/episode/2ZOlNC7ec4dJbMsg0xJoR9)[[^25bdf9e5]].
 
 [^25bdf9e5]: I also recommend it because Nosrat also shows a more vulnerable side of herself. At the time, I was somewhat anxious and hearing that such a successful person has more or less the same worries did good for me.
 
