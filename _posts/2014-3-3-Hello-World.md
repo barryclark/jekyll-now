@@ -2,7 +2,6 @@
 layout: post
 title: My first post
 categories: mathematics programming
-math: true
 ---
 
 $$e^{i\pi} + 1 = 0$$
