@@ -9,4 +9,4 @@ Here is a test for an internal link thing ![_config.yml]({{ site.baseurl }}/imag
 
 [Link to Google?](https://www.google.com).
 
-$$\lvert 0\rangle$$
+$$\sum_{x\in X}{P(x)log_2(P(x)})$$
