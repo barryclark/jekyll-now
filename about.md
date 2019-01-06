@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-I am a PhD student in the Department of Cognitive Science at UCSD. I think about language and communication and how it is possible to use the former to do the latter despite uncertainty at every level. I have background in cognitive science, computer science, neuroscience, philosophy, lingusitics, mathematics, and artificial intelligence, and I try to bring all of these tools and perspectives to bear on this question.
+Model and world is about the relationship between our models (interpreted broadly) and the worlds they are trying to capture. I explore theoretical issues about the nature of such relationships and their limitations. I also delve into some interesting case studies and discuss some tools of the trade such as information theory and computational learning theory.
 
-### More Information
 
-I also spend time thinging about more traditional epistemological and metaphysical problems as well as what some might consider to be more practical issues.
+### About the author
+
+I am a machine learning engineer as well as a PhD student at the University of California San Diego. I love discovering how things work and how to make things work and started this site to communicate with a larger community of thinkers.
 
 ### Contact me
 
