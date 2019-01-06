@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Model and world is about the relationship between our models (interpreted broadly) and the worlds they are trying to capture. I explore theoretical issues about the nature of such relationships and their limitations. I also delve into some interesting case studies and discuss some tools of the trade such as information theory and computational learning theory.
+Model and world is about the relationship between our models (theories, concepts, equations, etc. interpreted broadly) and the worlds (things, processes, etc.) they are trying to capture. I explore theoretical issues about the nature of such relationships and their limitations. I also delve into some interesting case studies and discuss some tools of the trade such as information theory and computational learning theory.
 
 
 ### About the author
