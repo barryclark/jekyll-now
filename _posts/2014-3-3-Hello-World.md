@@ -8,6 +8,8 @@ math: true
 
 $$e^{i\pi} + 1 = 0$$
 
+$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$
+
 This is a test post to see how to do such things.
 
 Here is a test for an internal link thing ![_config.yml]({{ site.baseurl }}/images/first-post.png)
