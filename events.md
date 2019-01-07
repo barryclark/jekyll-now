@@ -8,11 +8,19 @@ permalink: /events/
 
 February 25 - 28: Mobile World Congress, Barcelona
 
+March 12 - 13: Open Source Leadership Summit, Half Moon Bay
+
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 
 June 24 - 26: ContainerDays, Hamburg
 * Keynote
 
-June 26 - 28: KubeCon + CloudNativeCon China, Shanghai
+June 26 - 28: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
+
+July 17 - 19: Open Source Summit Japan, Tokyo
+
+August 21 - 23: Open Source Summit + Embedded Linux Conference North America, San Diego
+
+October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 
 November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
