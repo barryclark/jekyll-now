@@ -33,7 +33,7 @@ I have expanded my selection of [t-shirts on Amazon](https://hendrixjoseph.githu
 My wife didn't publish or write a book, and I didn't publish or make an Android app. I did publish [a children's ebook called *The Adventures of Princess*](https://www.amazon.com/dp/B07M68STB4/?tag=hendrixjoseph-20) which is about my dog Princess and me meeting my wife, although I bit fictionalized.
 
 ![Cover for The Adventures of Princess](/images/princess-cover.jpg)
-**Cover for The Adventures of Princess**
+*Cover for The Adventures of Princess*
 
 As far as getting a raise at work, I actually got *three* raises and one promotion.
 
@@ -56,7 +56,7 @@ We also wanted to walk more - and we have walked some, although I don't think I 
 Finally, she did give birth to our beautiful baby son (as evidenced by the previous paragraph!)
 
 ![Our beautiful baby son, one day old.](/images/the-little-guy/the-little-guy.jpg)
-**Our beautiful baby son, one day old.**
+*Our beautiful baby son, one day old.*
 
 ## 2019 Goals & Resolutions
 
@@ -64,7 +64,7 @@ Finally, she did give birth to our beautiful baby son (as evidenced by the previ
 
 Now that I've recapped my 2018 goals and resolutions, it's time to figure out and plan 2019.
 
-**I shared a few of these goals for [Wealthy Nickel's 
+> **I shared a few of these goals for [Wealthy Nickel's 
 Money Goals roundup post](https://wealthynickel.com/money-goals/). See if you can find my contribution!**
 
 I'm mostly going to keep the same abstract goals, except I'm going to combine "spend less" and "earn more" into one abstract goal of "improve our finances" and rename "professional & personal development" to "develop personally & professionally" to better fit the verb phrase structure of the other abstract goals.
@@ -88,7 +88,7 @@ I also want to publish a variant of [the book I published last year](https://www
 The most I've weighed in the past is 250 lbs. Recently I weighed myself and I was once again up to 250 lbs. I do not want to set a new record, so I want to lose at least 25 lbs and get down to 225 lbs. To do this, I've restarted counting my calories via [the MyFitnessPal app](https://www.myfitnesspal.com/profile/joehx84), as well as began to take the stairs at work again. I'm also eating a banana for breakfast and my afternoon snack instead of the PopTart and Granola Bar I used to.
 
 ![MyFitnessPal Weight Ticker](https://www.myfitnesspal.com/ticker/show/1538/6100/115386100.png)
-*MyFitnessPal Weight Ticker *
+*MyFitnessPal Weight Ticker*
 
 It seems to be working - I weighed myself earlier this week and I was down to 244.4 lbs.
 
