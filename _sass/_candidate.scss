@@ -107,7 +107,7 @@
   box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
   overflow: hidden;
   position: relative;
-  height: 600px;
+  height: 700px;
 
   & .container {
     display: flex;
@@ -115,7 +115,7 @@
     justify-content: start;
     z-index: 2;
     position: absolute;
-    height: 600px;
+    height: 700px;
   }
 
   &__text{
@@ -216,20 +216,49 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 600px;
-    background: $blue500;
+    height: 700px;
+    background: $purpleA700;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: top right;
-      opacity: .9;
+      opacity: .8;
     }
 
   }
-}
 
+  &__icons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+      background: $orange700;
+      opacity: .7;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 16px;
+      margin: 16px 8px;
+      width: 130px;
+      border-radius: 32px;
+
+      h4 {
+        color: white;
+        margin: 0;;
+      }
+      img {
+        height: 50px;
+      }
+    }
+  }
+}
 .candidate__section--2{
   h1 {
     text-align: center;
