@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Request KubeCon CFP feedback
+title: Request end user KubeCon CFP feedback
 permalink: /kubeconcfp/
 ---
 
