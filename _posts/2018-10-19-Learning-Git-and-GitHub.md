@@ -24,8 +24,8 @@ Disclaimer: This tutorial is meant for absolute beginners. I have used terminolo
 <img align="right" src="{{ site.baseurl }}/images/git/what-is-GitHub.png"/>
 
 # Commands
-* `git init` - to initialize a repository
-* `git status` - 
+* `git init`{:.git} - to initialize a repository
+* `git status`{.git} - 
 	* to check what files are on/not-on stage 
 	* to check if there have been any uncommitted changes
 	* to check for untracked files
