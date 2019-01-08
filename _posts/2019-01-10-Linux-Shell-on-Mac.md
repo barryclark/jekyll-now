@@ -11,7 +11,7 @@ I did Google for a while and it seemed to be some error with GCC or Mac. I could
     * If you do wanna try this out. [Parallels](https://www.parallels.com/blogs/linux-on-mac/) might be a nice option
     * A [random blog](https://www.macworld.co.uk/how-to/mac/how-install-linux-on-mac-3637265/) on instructions for setting up
 * Dual Boot: Would need an external hard disk/pendrive of enough size. But seems like a reasonable option. Though the dual booting software on Mac is a little buggy
-* Docker! Seems to be the perfect solution. Should not consume much space... When I installed it, the binary was a little heavy and I was asked to make an account too. Further, I had to install 30 MB image for Ubuntu and about 300 MB of GCC + GDB. Seems reasonable. But somehow this totaled up to 7.11 GB. <img align="right" src="{{ site.baseurl }}/images/docker-mac-size.png" height="27%">
+* Docker! Seems to be the perfect solution. Should not consume much space... When I installed it, the binary was a little heavy and I was asked to make an account too. Further, I had to install 30 MB image for Ubuntu and about 300 MB of GCC + GDB. Seems reasonable. But somehow this totaled up to 7.11 GB. <img align="right" src="{{ site.baseurl }}/images/docker-mac-size.png" width="200"/>
     * [Docker Image OF Ubuntu](https://hub.docker.com/_/ubuntu/?tab=reviews)
     * [Run a Docker Image](https://stackoverflow.com/a/18498313/2806163)
     * [Install Packages in Ubuntu - inside Docker](https://stackoverflow.com/a/27273543/2806163)
