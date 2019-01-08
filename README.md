@@ -16,6 +16,7 @@ In a few minutes you'll be set up with a minimal, responsive blog like the one b
 - [Barry Clark](https://github.com/barryclark/jekyll-now) - Thanks to his open source project to create Jekyll sites in minutes.
 - [Jekyll](https://github.com/jekyll/jekyll) - Thanks to its creators, contributors and maintainers.
 - [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel. They're beautiful.
+- [SVG Icons](https://github.com/simple-icons/simple-icons)- Thanks Simple-Icons
 - [Solarized Light Pygments](https://gist.github.com/edwardhotchkiss/2005058) - Thanks, Edward.
 - [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml in this repository.
 - [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy), [Luke Patton](https://github.com/lkpttn) - Thanks for the design/code reviews.
