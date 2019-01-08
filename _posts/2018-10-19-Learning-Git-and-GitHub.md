@@ -47,10 +47,12 @@ Download the latest package from the [official git website](https://git-scm.com/
 ## 4. Create a Repository locally
 You can create a repository in a folder. It can be empty or you can even have your pre-existing files that you wish to add in that project/repository. To initialize git tracking use command:
 > git init 
-Do note that while executing the above command, your terminal should be inside the appropriate project directory
+
+*Do note that while executing the above command, your terminal should be inside the appropriate project directory*
 
 ## 5. Make Commits
 > `git add filename` OR `git add --all`
+
 to stage files/directories
 
 > `git commit -m "Your message here"`
