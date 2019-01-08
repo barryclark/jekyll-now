@@ -3,6 +3,21 @@ layout: post
 title: Learning Git and GitHub
 ---
 
+[Slides](https://docs.google.com/presentation/d/1e9NjKW0ERKePt6VDNZivk-ijxaZfopIV-R1iLHuf1tg/edit?usp=sharing)
+
+# Steps
+1. Install Git
+2. Create GitHub Account
+3. Add SSH Keys (Optional)
+4. Create repository online 
+
+<img align="right" src="{{ site.baseurl }}/images/git_github.png" width="400"/>
+
+## Installation
+Download it from the [official git website](https://git-scm.com/)
+
+
+
 # Commands
 * `git init` - to initialize a repository
 * `git status` - 
@@ -23,6 +38,9 @@ This is a special type of file, called `.gitignore`. It should be placed inside 
 There is an awesome website [gitignore.io](https://www.gitignore.io/) which helps you to create such files. Suppose you do not want any extra files that show up with python(eg. `*.pyc`)/mac (eg `.DS_Store`), you can just enter `python` and `macOS` on the website to generate the `.gitignore` file [gitignore.io/api/macos,python](https://www.gitignore.io/api/macos,python)
 You can simply do `subl .gitignore` to open a new file and copy paste the contents from the website. As soon as you add that to git tracking (`git add .gitignore`), you will see that all the other extension files which you wanted to get rid of and were being shown in untracked section, vanish! :D
 
+### Ignore certain extension files
+Adding the line `*.ext` in the `.gitignore` file will work. But, there is a small catch, if you already have commited a file with the same extension, then git will still continue to track it. In this scenario, if you want to remove that file and stop git from tracking it, run the command `git rm --cached <FileName>`
+
 # Few Extras :)
 * `git diff --color-words` to see the changes in words instead of sentences
 * `git checkout commitHash` to temporarily switch to a branch at that particular commit, helps in testing
@@ -34,5 +52,7 @@ You can simply do `subl .gitignore` to open a new file and copy paste the conten
 * `git diff --color-words --no-index publications.py publications\ \(1\).py`
 
 ## Useful Links
-* [Atlassian]()
+* [Atlassian](https://www.atlassian.com/git) - Comes in handy when you have a new command at hand, but no way to comprehend it
 * [CheatSheets](https://epir.at/2017/08/26/gsoc-2017-vlc-for-macos-interface-redesign/)
+* [ProGit](https://git-scm.com/book/en/v2) - High Quality, book authored by Co-Founder of GitHub. Available for free
+* [git - the simple guide](http://rogerdudler.github.io/git-guide/)
