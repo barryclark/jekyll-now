@@ -19,32 +19,42 @@ Disclaimer: This tutorial is meant for absolute beginners. I have used terminolo
 8. Use and Understand the web Interface for your remote
 9. Learn more and Collaborate
 
+## 0. What is git
 <img align="right" src="{{ site.baseurl }}/images/git/what-is-git.png"/>
 
+## What is GitHub
 <img align="right" src="{{ site.baseurl }}/images/git/what-is-GitHub.png"/>
 
+## 1. Install Git
+Download the latest package from the [official git website](https://git-scm.com/)
+
+## 2. Sign-Up on [GitHub](https://github.com/)
+
 # Commands
-* `git init`{:.git} - to initialize a repository
-* `git status`{.git} - 
+
+* `git status` - 
 	* to check what files are on/not-on stage 
 	* to check if there have been any uncommitted changes
 	* to check for untracked files
-* `git add` - to stage files/directories
-	* `git add --all`
-* `git commit -m "Your message here"`
 * `git log` - to see all the commits locally 
 * `git push origin master` to push all the local comits on your remote, master branch (default branch)
 * `git remote add origin git@github.com:Daksh/test-git-session.git`
 * `git remote -v`
 * `git clone`
 
-## Gitignore
-This is a special type of file, called `.gitignore`. It should be placed inside the main folder of your repository (top-most folder). What this file does, is indicate to git that there are some files (or some files with particular extensions) that I wish to ignore. They will be there in my local instance but don't ask/tell me each time that they are untracked. Ignore them!
-There is an awesome website [gitignore.io](https://www.gitignore.io/) which helps you to create such files. Suppose you do not want any extra files that show up with python(eg. `*.pyc`)/mac (eg `.DS_Store`), you can just enter `python` and `macOS` on the website to generate the `.gitignore` file [gitignore.io/api/macos,python](https://www.gitignore.io/api/macos,python)
-You can simply do `subl .gitignore` to open a new file and copy paste the contents from the website. As soon as you add that to git tracking (`git add .gitignore`), you will see that all the other extension files which you wanted to get rid of and were being shown in untracked section, vanish! :D
+## 3. [Connect to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/) (Optional)
 
-### Ignore certain extension files
-Adding the line `*.ext` in the `.gitignore` file will work. But, there is a small catch, if you already have commited a file with the same extension, then git will still continue to track it. In this scenario, if you want to remove that file and stop git from tracking it, run the command `git rm --cached <FileName>`
+## 4. Create a Repository locally
+You can create a repository in a folder. It can be empty or you can even have your pre-existing files that you wish to add in that project/repository. To initialize git tracking use command:
+> git init 
+Do note that while executing the above command, your terminal should be inside the appropriate project directory
+
+## 5. Make Commits
+> `git add filename` OR `git add --all`
+to stage files/directories
+
+> `git commit -m "Your message here"`
+
 
 # Few Extras :)
 * `git diff --color-words` to see the changes in words instead of sentences
@@ -56,7 +66,15 @@ Adding the line `*.ext` in the `.gitignore` file will work. But, there is a smal
 * `git checkout <sha-1 of that commit>`
 * `git diff --color-words --no-index publications.py publications\ \(1\).py`
 
-## Useful Links
+## Gitignore
+This is a special type of file, called `.gitignore`. It should be placed inside the main folder of your repository (top-most folder). What this file does, is indicate to git that there are some files (or some files with particular extensions) that I wish to ignore. They will be there in my local instance but don't ask/tell me each time that they are untracked. Ignore them!
+There is an awesome website [gitignore.io](https://www.gitignore.io/) which helps you to create such files. Suppose you do not want any extra files that show up with python(eg. `*.pyc`)/mac (eg `.DS_Store`), you can just enter `python` and `macOS` on the website to generate the `.gitignore` file [gitignore.io/api/macos,python](https://www.gitignore.io/api/macos,python)
+You can simply do `subl .gitignore` to open a new file and copy paste the contents from the website. As soon as you add that to git tracking (`git add .gitignore`), you will see that all the other extension files which you wanted to get rid of and were being shown in untracked section, vanish! :D
+
+### Ignore certain extension files
+Adding the line `*.ext` in the `.gitignore` file will work. But, there is a small catch, if you already have commited a file with the same extension, then git will still continue to track it. In this scenario, if you want to remove that file and stop git from tracking it, run the command `git rm --cached <FileName>`
+
+# Useful Links/Resources
 * [Atlassian](https://www.atlassian.com/git) - Comes in handy when you have a new command at hand, but no way to comprehend it
 * [CheatSheets](https://epir.at/2017/08/26/gsoc-2017-vlc-for-macos-interface-redesign/)
 * [ProGit](https://git-scm.com/book/en/v2) - High Quality, book authored by Co-Founder of GitHub. Available for free
