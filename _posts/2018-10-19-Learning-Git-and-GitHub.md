@@ -55,6 +55,7 @@ to stage files/directories
 
 > `git commit -m "Your message here"`
 
+## Guide to GitHub
 
 # Few Extras :)
 * `git diff --color-words` to see the changes in words instead of sentences
