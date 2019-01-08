@@ -3,20 +3,25 @@ layout: post
 title: Learning Git and GitHub
 ---
 
-[Slides](https://docs.google.com/presentation/d/1e9NjKW0ERKePt6VDNZivk-ijxaZfopIV-R1iLHuf1tg/edit?usp=sharing)
+<img align="right" src="{{ site.baseurl }}/images/git/git_github.png" width="400"/>
+
+Disclaimer: This tutorial is meant for absolute beginners. I have used terminology in a way that eases understandings, and hence certain words might have a (little) different, deeper meaning associated to it.
 
 # Steps
-1. Install Git
-2. Create GitHub Account
-3. Add SSH Keys (Optional)
-4. Create repository online 
+0. What is Git and GitHub
+1. [Install Git](https://git-scm.com/)
+2. Create [GitHub](https://github.com/) Account
+3. [Connect to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/) (Optional)
+4. Create a Repository locally
+5. Make Commits 
+6. Explore its other capabilities
+7. Upload your Repository to GitHub (remote)
+8. Use and Understand the web Interface for your remote
+9. Learn more and Collaborate
 
-<img align="right" src="{{ site.baseurl }}/images/git_github.png" width="400"/>
+<img align="right" src="{{ site.baseurl }}/images/git/what-is-git.png"/>
 
-## Installation
-Download it from the [official git website](https://git-scm.com/)
-
-
+<img align="right" src="{{ site.baseurl }}/images/git/what-is-GitHub.png"/>
 
 # Commands
 * `git init` - to initialize a repository
