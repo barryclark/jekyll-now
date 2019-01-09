@@ -33,7 +33,7 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 
 # Links (optional).
-url_preprint = ""
+url_preprint = "https://psyarxiv.com/d38aq"
 url_code = ""
 url_dataset = "https://osf.io/z3cx2/"
 url_project = ""

@@ -33,7 +33,7 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 
 # Links (optional).
-url_preprint = ""
+url_preprint = "https://psyarxiv.com/dvb6r"
 url_code = ""
 url_dataset = ""
 url_project = ""
