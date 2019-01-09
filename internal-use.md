@@ -20,5 +20,5 @@ meta: |
 
 
 # Resources
-
+If the below does not work, you can find the same resources [at this link](https://drive.google.com/open?id=1Q0mVa-GxQhcASpula1EPLNYTu0v_wk5w).
 <iframe src="https://drive.google.com/embeddedfolderview?id=1Q0mVa-GxQhcASpula1EPLNYTu0v_wk5w#list" width="100%" height="500" frameborder="0"></iframe>
