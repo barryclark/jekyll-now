@@ -14,7 +14,8 @@ You can follow David on Twitter: [@delabassee](https://twitter.com/delabassee).
 
 
 
-* [Headshot square 150 × 152 pixels (300 pixels/inch) 30 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/Delabassee_150.jpg)
+* [Headshot square 150 × 150 pixels (300 pixels/inch) 30 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/Delabassee_150.jpg)
+* [Headshot square 512 × 512 pixels (200 pixels/inch) 177 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/delabassee_headshot_512.jpeg)
 * [Headshot square 600 × 600 pixels (200 pixels/inch) 230 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/delabassee_headshot_1000.jpeg)
 * [Portrait 1535 × 2126 pixels (300 pixels/inch) 2,2 MB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/Delabassee_XL.jpg) 
 
