@@ -14,3 +14,6 @@ Prior to that, I was working as an Evangelist in the Oracle Java EE organization
 I am also a regular speaker at [conferences and user groups, large and small, local and global](http://delabassee.com/conferences/).
 
 I can be reached on [Twitter](https://twitter.com/delabassee) (DMs are open).
+
+<br/><br/>
+See [here] for a more formal, third person bio. 
