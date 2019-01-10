@@ -6,7 +6,7 @@ redirect_from:
   - /Bio/
 ---
 
-David Delabassée works in the Serverless Developer Relations Team at Oracle where he is spending most of his time on the open source Fn Project. Prior to that, he was involved in Java EE 8 and its transition to the Eclipse Foundation as part of the Jakarta EE initiative. Over the years, David has championed Java extensively throughout the world, by presenting at conferences and user groups, large and small. He blogs at [https://delabassee.com](https://twitter.com/delabassee) and has authored many technical articles for various publications.
+David Delabassée works in the Serverless Developer Relations Team at Oracle where he is spending most of his time on the open source Fn Project. Prior to that, he was involved in Java EE 8 and its transition to the Eclipse Foundation as part of the Jakarta EE initiative. Over the years, David has championed Java extensively throughout the world, by presenting at conferences and user groups, large and small. He blogs at [https://delabassee.com](https://delabassee.com) and has authored many technical articles for various publications.
 
 David lives in Belgium. In his spare time, he enjoys playing video games with his daughter and tinkering with technologies such as domotics, electronics, and pinballs.
 
