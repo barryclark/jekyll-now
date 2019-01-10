@@ -18,6 +18,8 @@ paginate: 5
 # Flags below are optional
 #
 
+include: ['_proposals']
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
