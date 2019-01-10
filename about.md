@@ -3,7 +3,6 @@ layout: page
 title: About me...
 permalink: /about/
 redirect_from:
-  - /bio/
   - /david/
   - /David/
 ---
@@ -16,4 +15,4 @@ I am also a regular speaker at [conferences and user groups, large and small, lo
 I can be reached on [Twitter](https://twitter.com/delabassee) (DMs are open).
 
 <br/><br/>
-See [here] for a more formal, third person bio. 
+See [here](/bio) for a more formal, third person bio. 
