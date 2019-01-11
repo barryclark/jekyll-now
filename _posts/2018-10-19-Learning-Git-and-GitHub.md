@@ -28,26 +28,39 @@ Disclaimer: This tutorial is meant for absolute beginners. I have used terminolo
 ## 1. Install Git
 Download the latest package from the [official git website](https://git-scm.com/)
 
+In case you prefer simple commands for the terminal
+1. Linux
+	1. sudo apt-get install git (Ubuntu)
+	2. sudo yum install git (Fedora)
+2. MacOS
+	1. Install [Brew](https://brew.sh): `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+	2. brew install git 
+
+Post installation, you can configure your name, email, and default text editor (for commit messages and some other use-cases)
+> `git config --global user.name “Your Name”`
+> `git config --global user.email “Your Email”`
+> `git config --global core.editor “nano”`
+
+
 ## 2. Sign-Up on [GitHub](https://github.com/)
 
 ## 3. [Connect to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/) (Optional)
 
 ## 4. Create a Repository locally
 You can create a repository in a folder. It can be empty or you can even have your pre-existing files that you wish to add in that project/repository. To initialize git tracking use command:
-```git
-git init 
-```
+> `git init`
 
 *Do note that while executing the above command, your terminal should be inside the appropriate project directory*
 
 ## 5. Make Commits
+
+<img src="{{ site.baseurl }}/images/git/lifecycle.png"/>
+
 > `git add filename` OR `git add --all`
 
 to stage files/directories
 
-```git
-git commit -m "Your message here"
-```
+> `git commit -m "Your message here"`
 
 ## 6. Some useful commands
 
