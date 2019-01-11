@@ -45,7 +45,7 @@ layout: default
 ## About Us
 
 {: .center}
-We are high school students who want to have fun with mathematics! The MCA Math League is one of the largest clubs at the Middlesex County Academy in Edison, NJ, and we hold events for students of our high school, as well as events open to the public. Please join us in our quest to show you just how fun mathematics can be, and we hope to see you soon!
+We are high school students who want to have fun with mathematics! The MCA Math League is one of the largest clubs at the [Middlesex County Academy](https://www.mcvts.net/edison), an engineering-focused career academy in Edison, NJ. We hold events for students of our high school, as well as events open to the public. Please join us in our quest to show you just how fun mathematics can be—we hope to see you soon!
 
 ## Location
 <div class="mapouter">
