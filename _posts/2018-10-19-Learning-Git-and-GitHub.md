@@ -115,6 +115,7 @@ You can simply do `subl .gitignore` to open a new file and copy paste the conten
 Adding the line `*.ext` in the `.gitignore` file will work. But, there is a small catch, if you already have commited a file with the same extension, then git will still continue to track it. In this scenario, if you want to remove that file and stop git from tracking it, run the command `git rm --cached <FileName>`
 
 # Useful Links/Resources
+* [GitHub Students Pack](https://education.github.com/pack)
 * [Atlassian](https://www.atlassian.com/git) - Comes in handy when you have a new command at hand, but no way to comprehend it
 * [CheatSheets](https://epir.at/2017/08/26/gsoc-2017-vlc-for-macos-interface-redesign/)
 * [ProGit](https://git-scm.com/book/en/v2) - High Quality, book authored by Co-Founder of GitHub. Available for free
