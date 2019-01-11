@@ -285,7 +285,11 @@ footer {
 
 // index
 
-ul.experiences, ul.work {
+section.block {
+  margin-bottom: 40px;
+}
+
+ul.career, ul.work {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -299,9 +303,7 @@ ul.experiences, ul.work {
   }
 }
 
-ul.experiences {
-  
-
+ul.career {
   li {
     &:not(:last-child) {
       margin-bottom: 20px;
