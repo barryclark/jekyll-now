@@ -15,21 +15,22 @@
 
 html {
   font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Serif', sans-serif;
 }
 
 body {
   background: $white;
-  font: 16px $helvetica;
+  font-size: 16px;
   color: $darkGray;
-  line-height: 1.45;
+  line-height: 1.5em;
+  font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 2em 0 0.75em;
   padding: 0;
 
   @include mobile {
@@ -445,6 +446,7 @@ footer {
     bottom:30px;
     left:0px;
     font-size:36px;
+    line-height: 1.25;
     width:100%;
     background-color: rgba(0,0,0,.65);
     padding: 30px 20px 15px 20px;
@@ -592,7 +594,7 @@ input,textarea,select {
 .page__comments-title {
  margin-bottom:10px;
  padding-bottom:10px;
- font-size:.75em;
+ font-size:1em;
  text-transform:uppercase;
  border-bottom:1px solid #f2f3f3;
 }
@@ -676,12 +678,12 @@ figcaption {
 }
 
 code.highlighter-rouge {
-  color:#914210;
-  background-color:#ffe6ba;
-  padding: 3px;
+  color: $darkGray;
+  background-color:rgb(218,218,218);
+  padding: 2.5px;
   font-family: "Menlo","DejaVu Sans Mono","Consolas","Ubuntu Mono","Courier New",monospace;
-  font-size: 12px;
-  border-radius: 3px;
+  font-size: 14px;
+  border-radius: 2px;
 }
 
 // Photography section
@@ -733,4 +735,8 @@ code.highlighter-rouge {
   -webkit-column-count: 1;
   column-count:         1;
   }
+}
+
+#content {
+  max-width: 72ch;
 }

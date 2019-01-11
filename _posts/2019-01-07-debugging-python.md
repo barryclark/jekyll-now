@@ -2,27 +2,29 @@
 layout: post
 title: Better Command Line Debugging with Python
 date: 2019-01-07
-categories: [Javascript]
-picture: /assets/images/foo.png
-published: false
-excerpt: Bladiebla
+categories: [Programming]
+picture: /assets/images/pydebug/debug.png
+published: true
+excerpt: How to automatically create an interactive python shell when errors occur in your script
 ---
 
-# Easier python debugging
+## Debugging the Hard Way
 
-> Warning, these tips don't apply to Jupyter!
+For those of you who are terminal fanatics, and love running their code from the command line, debugging can sometimes be a pain. Often my debugging workflow would have been (when not working in PyCharm), reading the error, finding the file and line number, opening the respective script and adding a `pdb.set_trace` statement, and then rerunning the script. 
 
-For those of you who are terminal fanatics, and love running their code from the command line. Debugging can sometimes be a pain. If I had a euro for each time I've written pdb.set_trace(), I'd be a very rich man. Fortunately I came across a better solution!
+This long process doesn't just take up some precious time, but it interrupts your mental flow. So maybe there's a better way...
 
-## Entering post mortem debugging
+## Post Mortem Debugging
 
-This stackoverflow discussion [stackoverflow discussion](https://stackoverflow.com/questions/242485/starting-python-debugger-automatically-on-error) gave a great solution to my problem. All you have to do is run your problematic script in the following way:
+This [stackoverflow discussion](https://stackoverflow.com/questions/242485/starting-python-debugger-automatically-on-error) gives a great solution to our problem. All you have to do is run your problematic script in the following way:
 
 ```bash
 python -m pdb -c continue error.py
 ```
 
-which does the following:
+This will run the `error.py` script, and if any errors are encountered it stops and launches an interactive python shell at the moment where the error happens. 
+
+Here's an example of the output:
 
 ```bash
 Traceback (most recent call last):
@@ -45,8 +47,22 @@ Running 'cont' or 'step' will restart the program
 (Pdb) 
 ```
 
-## Something about ipdb and pycharm
+This is great! Although we still have to rerun the script, we no longer need to dive into the code and set our breakpoints with `pdb.set_trace`. 
 
-## Aliasing to save you from typing
+## Less typing with bash aliases
 
-# Subtitle
+Although using this saves some steps, we still need to remember this pretty verbose command. If you aren't already familiar with bash aliases, this is as good a time as any to start using them. 
+
+All you need to do is add the following line to either your `~/.bashrc` or `~/.bash_aliases` file:
+
+```  bash
+alias pydebug="python -m pdb -c continue"
+```
+
+Now instead of typing that whole string of commands, we can just call `pydebug error.py` and we get the same debugging magic. 
+
+Remember that you need to reload your `.bashrc` file before your aliases work. Just run `source .bashrc` and you're ready to go
+
+## Adding some functionality to pdb
+
+Most of you probably don't work in the basic python shell too much, and I personally am pretty hopeless without intelligent code completion. If you want all these wonderful things in this debugging shell, you're in luck! You just need to replace `pdb` with `ipdb` and you get an IPython shell instead of the basic python one. Although `pdb` is included with python itself, `ipdb` needs to be pip installed.
