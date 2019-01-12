@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Visual density and immersion: a chart'
-published: true
+published: false
 ---
 
-blah blah blah
