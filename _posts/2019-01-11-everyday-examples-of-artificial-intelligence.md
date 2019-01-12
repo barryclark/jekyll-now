@@ -56,7 +56,7 @@ That photo, along with the tags, is added to the millions of photos and tags Fac
 A less controversial use of AI is the detection of fraudulent use of credit cards. Credit card companies want to approve all transactions used by their cardholders, but deny any transactions by malicious actors.
 
 ![Credit Cards](/images/everyday-examples-of-artificial-intelligence/credit-cards.jpg)
-*Credit: https://pixabay.com/en/credit-card-bank-card-theft-1591492/*
+*Credit: [https://pixabay.com/en/credit-card-bank-card-theft-1591492/](https://pixabay.com/en/credit-card-bank-card-theft-1591492/)*
 
 The AI algorithms look at your transactions and try to identify any transactions that are outside your normal spending pattern. The transaction data isn't limited to stores but also amount and geographic location.
 
@@ -67,6 +67,6 @@ Credit card fraud detection is more difficult than other types of artificial int
 So whether you're texting your wife in the morning, browsing Facebook during work hours, or setting your thermostat in the evening, artificial intelligence is used more often than one might think and it all around us.
 
 Further reading:
-* https://medium.com/@the_manifest/16-examples-of-artificial-intelligence-ai-in-your-everyday-life-655b2e6a49de
-* https://beebom.com/examples-of-artificial-intelligence/
-* https://www.intel.com/content/www/us/en/analytics/artificial-intelligence/ai-in-your-pocket-infographic.html
+*[16 Examples of Artificial Intelligence (AI) in Your Everyday Life]( https://medium.com/@the_manifest/16-examples-of-artificial-intelligence-ai-in-your-everyday-life-655b2e6a49de)
+* [10 Examples of Artificial Intelligence You’re Using in Daily Life](https://beebom.com/examples-of-artificial-intelligence/)
+*[Examples of Artificial Intelligence in Everyday Life](https://www.intel.com/content/www/us/en/analytics/artificial-intelligence/ai-in-your-pocket-infographic.html)
