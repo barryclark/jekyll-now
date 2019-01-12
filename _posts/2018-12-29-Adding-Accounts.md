@@ -13,9 +13,9 @@ Today, I will be adding more social icons in the footer.
   * Then in the SVG file, adjust width, height, and color. 
   * Change SVG to base64 [here](https://www.base64-image.de/). 
   * So there are three files in which you need to change. 
-    1. _svg-icons.scss 
+    1. _sass/_svg-icons.scss 
       * Put your base64 string here.
-    2. svg-icons.html 
+    2. _includes/svg-icons.html 
       * Add the function in Ruby and HTML
     3. _config.yml 
       * Enter your username of the social account here
