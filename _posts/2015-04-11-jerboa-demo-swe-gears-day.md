@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jerboa demo for SWE gears day
-categories: robots
+categories: [robots, academia]
 ---
 
 Doing robotics research is one thing, making them presentable and accessible to the public is quite another. I was tasked with engaging high school girls (who were getting a GRASP lab tour for [SWE GEARS Day](https://fling.seas.upenn.edu/~swe/cgi-bin/gearsday.php)), and I'd guess that keeping their attention through a robot presentation is probably much harder than a conference talk audience's.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jerboa leaping video
-categories: robots
+categories: [robots, academia]
 ---
 
 After dabbling at some [boom-assisted steady-state hopping]({% post_url 2015-03-31-jerboa-hopping-video %}), Jerboa is now trying out transitional behaviors in 3D!
