@@ -14,9 +14,13 @@ layout: default
       <div class="entry">
         <!-- {{ post.content | truncatewords:40 }} -->
         {{ post.excerpt }}
+
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       </div>
       
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+      </div>
     </article>
   {% endfor %}
 </div>
