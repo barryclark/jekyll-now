@@ -18,8 +18,8 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+  background: $white;
+  font: 16px/1.5 $helvetica;
   color: $darkGray;
 }
 
@@ -33,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: bold;
+  font-weight: medium;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   a {
     color: inherit;
   }
@@ -197,7 +197,7 @@ img {
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
-  letter-spacing: 1px;
+  letter-spacing: .27em;
 }
 
 .site-description {
