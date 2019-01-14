@@ -13,19 +13,19 @@ What we can see here that resource groups allow you to organize your resources o
 
 In our example, we have two resource groups **guitarshop-webapps-rg**, containing production and development versions of the web client and the **guitarshop-dbs-rg** containing production and development databases for the imaginary **Guitar Shop** application.
 
-|![resource groups](../images/AzureResourceTags/resource-groups.PNG "Resource groups")|
+|![resource groups](../images/AzureResourceTags/resource-groups.PNG)|
 |:--:|
 | *Resource groups* |
 
 In **guitarshop-webapps-rg** we have production and development app services and app service plans
 
-|![webapps resource group resources](../images/AzureResourceTags/webapps-rg.PNG "Resource groups")|
+|![webapps resource group resources](../images/AzureResourceTags/webapps-rg.PNG)|
 |:--:|
 | *WebApps resource group* |
 
 In **guitarshop-dbs-rg** we have production and development databases and servers
 
-|![databases resource group resources](../images/AzureResourceTags/dbs-rg.PNG "Resource groups")|
+|![databases resource group resources](../images/AzureResourceTags/dbs-rg.PNG)|
 |:--:|
 | *DBs resource group* |
 
@@ -33,7 +33,7 @@ In **guitarshop-dbs-rg** we have production and development databases and server
 Additional to our resource group organization we can add a tag to our resources representing environment resources are belonging to. I have assigned **Env** tag with values **Dev** and **Production** to corresponding databases and web applications which allows me to see all the resources belonging to Production and Development environments. 
 By clicking on **Env:Production** tag you can filter for all the resources with that tag
 
-|![production resources](../images/AzureResourceTags/prod-env-tag.PNG "Resource groups")|
+|![production resources](../images/AzureResourceTags/prod-env-tag.PNG)|
 |:--:|
 | *Resources under Production tag* |
 
@@ -51,3 +51,53 @@ You can assign tags using the Azure portal, Powershell or Azure CLI. There is al
 4. Tags applied to the resource group are not inherited by the resources in that resource group
 
 For the full list of limitation please check [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-using-tags)
+
+## Manage tags using Powershell
+
+```
+# Adding tag Env with value Test when creating new resource
+New-AzureRmStorageAccount -Name guitarshopteststoracc `
+ -ResourceGroupName guitarshop-dbs-rg `
+ -Location 'West Europe' `
+ -SkuName Standard_LRS `
+ -Tag @{ Env="Test"}
+
+ # Reading the tags after resource creation
+ $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc -ResourceGroupName guitarshop-dbs-rg
+ $resource.Tags
+```
+|![add tags when creating a resource](../images/AzureResourceTags/ps-after-creation.PNG)|
+|:--:|
+| *Resource tags after creating a resource* |
+
+```
+ # Update tags on existing resource
+ Set-AzureRmResource -ResourceName $resource.ResourceName `
+ -ResourceGroupName $resource.ResourceGroupName `
+ -ResourceType $resource.ResourceType `
+ -Tag @{ Env='Test'; Department='IT' } `
+ -Force
+
+# Reading the tags after updating resource
+ $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc -ResourceGroupName guitarshop-dbs-rg
+ $resource.Tags
+ ```
+|![update tags when updating a resource](../images/AzureResourceTags/ps-after-update.PNG)|
+|:--:|
+| *Resource tags after updating a resource* |
+
+```
+# Removing tags from the resource
+ Set-AzureRmResource -ResourceName $resource.ResourceName `
+ -ResourceGroupName $resource.ResourceGroupName `
+ -ResourceType $resource.ResourceType `
+ -Tag @{} `
+ -Force
+
+# Reading tags after removing them from resource
+ $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc -ResourceGroupName guitarshop-dbs-rg
+ $resource.Tags
+```
+|![remove tags when updating a resource](../images/AzureResourceTags/ps-after-removal.PNG)|
+|:--:|
+| *No resource tags after removing them from a resource* |
