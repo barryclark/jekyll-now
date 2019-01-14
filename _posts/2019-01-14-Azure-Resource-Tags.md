@@ -63,7 +63,8 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
  -Tag @{ Env="Test"}
 
  # Reading the tags after resource creation
- $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc -ResourceGroupName guitarshop-dbs-rg
+ $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
+ -ResourceGroupName guitarshop-dbs-rg
  $resource.Tags
 ```
 |![add tags when creating a resource](../images/AzureResourceTags/ps-after-creation.PNG)|
@@ -79,7 +80,8 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
  -Force
 
 # Reading the tags after updating resource
- $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc -ResourceGroupName guitarshop-dbs-rg
+ $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
+ -ResourceGroupName guitarshop-dbs-rg
  $resource.Tags
  ```
 |![update tags when updating a resource](../images/AzureResourceTags/ps-after-update.PNG)|
@@ -95,9 +97,12 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
  -Force
 
 # Reading tags after removing them from resource
- $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc -ResourceGroupName guitarshop-dbs-rg
+ $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
+ -ResourceGroupName guitarshop-dbs-rg
  $resource.Tags
 ```
+
 |![remove tags when updating a resource](../images/AzureResourceTags/ps-after-removal.PNG)|
 |:--:|
 | *No resource tags after removing them from a resource* |
+
