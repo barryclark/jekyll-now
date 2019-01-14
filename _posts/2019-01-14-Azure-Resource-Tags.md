@@ -54,6 +54,23 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 
 ## Manage tags using Powershell
 
+<pre>
+  <code class="ruby">
+    # Adding tag Env with value Test when creating new resource
+    New-AzureRmStorageAccount -Name guitarshopteststoracc `
+    -ResourceGroupName guitarshop-dbs-rg `
+    -Location 'West Europe' `
+    -SkuName Standard_LRS `
+    -Tag @{ Env="Test"}
+
+    # Reading the tags after resource creation
+    $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
+    -ResourceGroupName guitarshop-dbs-rg
+
+    $resource.Tags
+  </code>
+</pre>
+
 ~~~powershell
 # Adding tag Env with value Test when creating new resource
 New-AzureRmStorageAccount -Name guitarshopteststoracc `
