@@ -54,7 +54,7 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 
 ## Manage tags using Powershell
 
-```
+~~~powershell
 # Adding tag Env with value Test when creating new resource
 New-AzureRmStorageAccount -Name guitarshopteststoracc `
  -ResourceGroupName guitarshop-dbs-rg `
@@ -65,14 +65,15 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
  # Reading the tags after resource creation
  $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
  -ResourceGroupName guitarshop-dbs-rg
+
  $resource.Tags
-```
+~~~
 
 |![add tags when creating a resource](../images/AzureResourceTags/ps-after-creation.PNG)|
 |:--:|
 | *Resource tags after creating a resource* |
 
-```
+~~~powershell
  # Update tags on existing resource
  Set-AzureRmResource -ResourceName $resource.ResourceName `
  -ResourceGroupName $resource.ResourceGroupName `
@@ -83,14 +84,15 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
 # Reading the tags after updating resource
  $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
  -ResourceGroupName guitarshop-dbs-rg
+
  $resource.Tags
- ```
+ ~~~
 
 |![update tags when updating a resource](../images/AzureResourceTags/ps-after-update.PNG)|
 |:--:|
 | *Resource tags after updating a resource* |
 
-```
+~~~powershell
 # Removing tags from the resource
  Set-AzureRmResource -ResourceName $resource.ResourceName `
  -ResourceGroupName $resource.ResourceGroupName `
@@ -101,8 +103,9 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
 # Reading tags after removing them from resource
  $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
  -ResourceGroupName guitarshop-dbs-rg
+ 
  $resource.Tags
-```
+~~~
 
 |![remove tags when updating a resource](../images/AzureResourceTags/ps-after-removal.PNG)|
 |:--:|
