@@ -67,6 +67,7 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
  -ResourceGroupName guitarshop-dbs-rg
  $resource.Tags
 ```
+
 |![add tags when creating a resource](../images/AzureResourceTags/ps-after-creation.PNG)|
 |:--:|
 | *Resource tags after creating a resource* |
@@ -84,6 +85,7 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
  -ResourceGroupName guitarshop-dbs-rg
  $resource.Tags
  ```
+
 |![update tags when updating a resource](../images/AzureResourceTags/ps-after-update.PNG)|
 |:--:|
 | *Resource tags after updating a resource* |
@@ -106,3 +108,6 @@ New-AzureRmStorageAccount -Name guitarshopteststoracc `
 |:--:|
 | *No resource tags after removing them from a resource* |
 
+## Manage tags using Azure CLI
+
+## Summary
