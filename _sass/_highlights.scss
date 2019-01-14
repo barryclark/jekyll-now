@@ -1,12 +1,14 @@
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family:'Source Code Pro', Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-weight: 500;
 }
 
 .highlight { 
   margin: 2.4em 0em;
   font-size: 14px;
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  line-height: 1.5;
+  font-family: 'Source Code Pro', Menlo,Monaco,Consolas,"Courier New",monospace;
   box-shadow: 3px 2px 1px rgba(0,0,0,0.1);
   border-radius: 5px;
 
