@@ -54,6 +54,7 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 
 ## Manage tags using Powershell
 
+### Adding tags when creating the resource
 <pre>
   <code class="bash">
     # Adding tag Env with value Test when creating new resource
@@ -75,6 +76,8 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 |:--:|
 | *Resource tags after creating a resource* |
 
+### Adding tags to existing resource
+
 <pre>
   <code class="bash">
     # Update tags on existing resource
@@ -95,6 +98,8 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 |![update tags when updating a resource](../images/AzureResourceTags/ps-after-update.PNG)|
 |:--:|
 | *Resource tags after updating a resource* |
+
+### Removing tags from a resource
 
 <pre>
   <code class="bash">
