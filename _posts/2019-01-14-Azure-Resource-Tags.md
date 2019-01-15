@@ -43,6 +43,10 @@ You can add additional grouping using tags like grouping resources by cost cente
 ## Use tags to do cost analysis
 One very important thing from the business perspective we can do using tags is cost analysis. In the Azure portal, if you go to your subscription and then to Cost Analysis section you can see the list of your resources and their cost. Now, using tags, you can filter for Production and you can get a list of resources belonging to Production environment and their costs. 
 
+|![cost analysis](../images/AzureResourceTags/cost-analysis.PNG)|
+|:--:|
+| *Cost analysis for resources under Production tag* |
+
 ## Managing tags
 You can assign tags using the Azure portal, Powershell or Azure CLI. There is also some limitation when creating and using tags, some of which are:
 1. You can add up to 15 tags to a resource
@@ -54,7 +58,7 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 
 ## Manage tags using Powershell
 
-### Adding tags when creating the resource
+### Adding tags when creating new resource
 <pre>
   <code class="bash">
     # Adding tag Env with value Test when creating new resource
@@ -69,12 +73,13 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
     -ResourceGroupName guitarshop-dbs-rg
 
     $resource.Tags
+
+    # Result
+    Name                           Value
+    ----                           -----
+    Env                            Test
   </code>
 </pre>
-
-|![add tags when creating a resource](../images/AzureResourceTags/ps-after-creation.PNG)|
-|:--:|
-| *Resource tags after creating a resource* |
 
 ### Adding tags to existing resource
 
@@ -92,12 +97,14 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
     -ResourceGroupName guitarshop-dbs-rg
 
     $resource.Tags
+
+    # Result
+    Name                           Value
+    ----                           -----
+    Department                     IT
+    Env                            Test
   </code>
 </pre>
-
-|![update tags when updating a resource](../images/AzureResourceTags/ps-after-update.PNG)|
-|:--:|
-| *Resource tags after updating a resource* |
 
 ### Removing tags from a resource
 
@@ -115,13 +122,77 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
     -ResourceGroupName guitarshop-dbs-rg
     
     $resource.Tags
+
+    # Result is empty line
   </code>
 </pre>
 
-|![remove tags when updating a resource](../images/AzureResourceTags/ps-after-removal.PNG)|
-|:--:|
-| *No resource tags after removing them from a resource* |
-
 ## Manage tags using Azure CLI
 
+### Adding tags when creating new resource
+<pre>
+  <code class="bash">
+    # Adding tag Env with value Test when creating new resource
+    az storage account create --name guitarshopteststoracc `
+    --resource-group guitarshop-dbs-rg `
+    --location westeurope `
+    --sku Standard_LRS `
+    --tags Env=Test
+
+    # Reading the tags after resource creation
+     az storage account show --name guitarshopteststoracc `
+    --resource-group guitarshop-dbs-rg `
+    --query tags
+
+    # Result 
+    {
+      "Env": "Test"
+    }
+  </code>
+</pre>
+
+### Adding tags to existing resource
+
+<pre>
+  <code class="bash">
+    # Update tags on existing resource
+    az resource tag --tags Env=Test Department=IT `
+    --resource-group guitarshop-dbs-rg `
+    --name guitarshopteststoracc `
+    --resource-type Microsoft.Storage/storageAccounts
+
+    # Reading the tags after updating resource
+    az storage account show --name guitarshopteststoracc `
+    --resource-group guitarshop-dbs-rg `
+    --query tags
+
+    # Result 
+    {
+      "Department": "IT",
+      "Env": "Test"
+    }
+  </code>
+</pre>
+
+### Removing tags from a resource
+
+<pre>
+  <code class="bash">
+    # Removing tags from the resource
+    az resource tag --tags '' `
+    --resource-group guitarshop-dbs-rg `
+    --name guitarshopteststoracc `
+    --resource-type Microsoft.Storage/storageAccounts
+
+    # Reading tags after removing them from resource
+    az storage account show --name guitarshopteststoracc `
+    --resource-group guitarshop-dbs-rg `
+    --query tags
+
+    # Result
+    {}
+  </code>
+</pre>
+
 ## Summary
+As you can see Tags can be very powerfull addition to your toolset. They are really easy to add and manage and there are many ways to use them organizing your resources. I would really like to hear how you use tags and what are some strategies you use when organizing your resources
