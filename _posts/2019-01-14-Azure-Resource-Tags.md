@@ -55,7 +55,7 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 ## Manage tags using Powershell
 
 <pre>
-  <code class="bash">
+  <code class="powershell">
     # Adding tag Env with value Test when creating new resource
     New-AzureRmStorageAccount -Name guitarshopteststoracc `
     -ResourceGroupName guitarshop-dbs-rg `
@@ -76,7 +76,7 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 | *Resource tags after creating a resource* |
 
 <pre>
-  <code class="bash">
+  <code class="powershell">
     # Update tags on existing resource
     Set-AzureRmResource -ResourceName $resource.ResourceName `
     -ResourceGroupName $resource.ResourceGroupName `
@@ -97,7 +97,7 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 | *Resource tags after updating a resource* |
 
 <pre>
-  <code class="bash">
+  <code class="powershell">
     # Removing tags from the resource
     Set-AzureRmResource -ResourceName $resource.ResourceName `
     -ResourceGroupName $resource.ResourceGroupName `
