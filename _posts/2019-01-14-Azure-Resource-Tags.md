@@ -55,7 +55,7 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 ## Manage tags using Powershell
 
 <pre>
-  <code class="ruby">
+  <code class="powershell">
     # Adding tag Env with value Test when creating new resource
     New-AzureRmStorageAccount -Name guitarshopteststoracc `
     -ResourceGroupName guitarshop-dbs-rg `
@@ -71,58 +71,47 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
   </code>
 </pre>
 
-~~~powershell
-# Adding tag Env with value Test when creating new resource
-New-AzureRmStorageAccount -Name guitarshopteststoracc `
- -ResourceGroupName guitarshop-dbs-rg `
- -Location 'West Europe' `
- -SkuName Standard_LRS `
- -Tag @{ Env="Test"}
-
- # Reading the tags after resource creation
- $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
- -ResourceGroupName guitarshop-dbs-rg
-
- $resource.Tags
-~~~
-
 |![add tags when creating a resource](../images/AzureResourceTags/ps-after-creation.PNG)|
 |:--:|
 | *Resource tags after creating a resource* |
 
-~~~powershell
- # Update tags on existing resource
- Set-AzureRmResource -ResourceName $resource.ResourceName `
- -ResourceGroupName $resource.ResourceGroupName `
- -ResourceType $resource.ResourceType `
- -Tag @{ Env='Test'; Department='IT' } `
- -Force
+<pre>
+  <code class="powershell">
+    # Update tags on existing resource
+    Set-AzureRmResource -ResourceName $resource.ResourceName `
+    -ResourceGroupName $resource.ResourceGroupName `
+    -ResourceType $resource.ResourceType `
+    -Tag @{ Env='Test'; Department='IT' } `
+    -Force
 
-# Reading the tags after updating resource
- $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
- -ResourceGroupName guitarshop-dbs-rg
+    # Reading the tags after updating resource
+    $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
+    -ResourceGroupName guitarshop-dbs-rg
 
- $resource.Tags
- ~~~
+    $resource.Tags
+  </code>
+</pre>
 
 |![update tags when updating a resource](../images/AzureResourceTags/ps-after-update.PNG)|
 |:--:|
 | *Resource tags after updating a resource* |
 
-~~~powershell
-# Removing tags from the resource
- Set-AzureRmResource -ResourceName $resource.ResourceName `
- -ResourceGroupName $resource.ResourceGroupName `
- -ResourceType $resource.ResourceType `
- -Tag @{} `
- -Force
+<pre>
+  <code class="powershell">
+    # Removing tags from the resource
+    Set-AzureRmResource -ResourceName $resource.ResourceName `
+    -ResourceGroupName $resource.ResourceGroupName `
+    -ResourceType $resource.ResourceType `
+    -Tag @{} `
+    -Force
 
-# Reading tags after removing them from resource
- $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
- -ResourceGroupName guitarshop-dbs-rg
- 
- $resource.Tags
-~~~
+    # Reading tags after removing them from resource
+    $resource = Get-AzureRmResource -ResourceName guitarshopteststoracc `
+    -ResourceGroupName guitarshop-dbs-rg
+    
+    $resource.Tags
+  </code>
+</pre>
 
 |![remove tags when updating a resource](../images/AzureResourceTags/ps-after-removal.PNG)|
 |:--:|
