@@ -9,6 +9,8 @@ Disclaimer: This tutorial is meant for absolute beginners. I have used terminolo
 
 # [YouTube Video Tutorial](https://youtu.be/MUQfKFzIOeU)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MUQfKFzIOeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Steps
 0. What is Git and GitHub
 1. [Install Git](https://git-scm.com/)
