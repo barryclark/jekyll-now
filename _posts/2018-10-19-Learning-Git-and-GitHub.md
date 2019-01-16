@@ -7,6 +7,8 @@ title: Learning Git and GitHub
 
 Disclaimer: This tutorial is meant for absolute beginners. I have used terminology in a way that eases understandings, and hence certain words might have a (little) different, deeper meaning associated to it.
 
+# [YouTube Video Tutorial](https://youtu.be/MUQfKFzIOeU)
+
 # Steps
 0. What is Git and GitHub
 1. [Install Git](https://git-scm.com/)

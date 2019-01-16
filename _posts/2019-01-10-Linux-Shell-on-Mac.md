@@ -17,4 +17,5 @@ I did Google for a while and it seemed to be some error with GCC or Mac. I could
     * [Install Packages in Ubuntu - inside Docker](https://stackoverflow.com/a/27273543/2806163)
 * Noah! Seems like some sort of magical solution that I found in [this](https://unix.stackexchange.com/a/212761/251573) SO Answer. It is on [GitHub](https://github.com/linux-noah/noah)... trying it out
 * If that does not work, I will probably look for some lightweight/barebones Linux OS and install it on a VM perhaps. Something that does not take a lot of space or computing power
-* https://stackoverflow.com/a/37779659/2806163
+* <https://stackoverflow.com/a/37779659/2806163> 
+* Ubuntu has a [MinimalCD Version](https://help.ubuntu.com/community/Installation/MinimalCD) which takes <100 MB. I am using this with Parallels currently (for installing Pintos)
