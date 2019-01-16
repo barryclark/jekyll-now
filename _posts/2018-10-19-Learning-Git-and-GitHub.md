@@ -3,13 +3,13 @@ layout: post
 title: Learning Git and GitHub
 ---
 
-<img align="right" src="{{ site.baseurl }}/images/git/git_github.png" width="400"/>
+<!-- <img align="right" src="{{ site.baseurl }}/images/git/git_github.png" width="400"/> -->
 
 Disclaimer: This tutorial is meant for absolute beginners. I have used terminology in a way that eases understandings, and hence certain words might have a (little) different, deeper meaning associated to it.
 
 # [YouTube Video Tutorial](https://youtu.be/MUQfKFzIOeU)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MUQfKFzIOeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="720" height="405" src="https://www.youtube.com/embed/MUQfKFzIOeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Steps
 0. What is Git and GitHub
