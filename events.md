@@ -11,12 +11,12 @@ February 25 - 28: Mobile World Congress, Barcelona
 March 12 - 14: Open Source Leadership Summit, Half Moon Bay
 
 April 1: Open Infra Days, London
-* Talk
+* Talk TBC
 
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 
 June 24 - 26: ContainerDays, Hamburg
-* Keynote
+* Keynote TBC
 
 June 26 - 28: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
 
