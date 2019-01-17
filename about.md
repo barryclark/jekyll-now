@@ -18,10 +18,7 @@ month](https://www.meetup.com/Cloud-Native-London)!
 
 ## Background
 
-Previously I led product management and the DevOps engineering team at
-StorageOS, a startup building persistent storage for containers. At Google, I
-built location services and search infrastructure for Google Maps, primarily in
-C++.
+From 2010-2015 I was an engineer at Google, building location services and search infrastructure for Google Maps. Later I led Product and DevOps at a startup building persistent storage for containers.
 
 I hold a Masters in Computer Science from the University of Cambridge, King's
 College.
