@@ -16,4 +16,4 @@ This blog is a place where I write some important things that I want to note for
 
 ### Contact me
 
-[16520296@gm.uit.edu.vn](mailto:16520296@gm.uit.edu.vn)
+via my organization email [16520296@gm.uit.edu.vn](mailto:16520296@gm.uit.edu.vn)
