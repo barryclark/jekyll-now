@@ -80,10 +80,10 @@ Explore all you like, and experiment &mdash; that's the **fun** way to learn, in
 
 # Checking Collisions and Overlaps
 
-Now, you'll notice one interesting thing a little _missing_ in the above example, and that's the
+Now, you'll notice one interesting thing &mdash; a little bit _missing_ in the above example. That's the
 sort of "collision checking" or intersection checking that I'm doing **lots** of in PSWordCloud.
 To do that, we have a fairly simple process we can follow, with one small caveat.
-When we're drawing out first item, we need to _ignore_ the collision checking, because the libraries
+When we're drawing our first item, we need to _ignore_ the collision checking, because the libraries
 do some funny things when trying to check collisions against an empty `Region`.
 
 With that mentioned, we can check for collisions based on the `Region` object using the
@@ -94,9 +94,10 @@ existing graphics surface object.
 
 Using this and just retrying a bunch of times as we scan across the image space, we can check any
 given area for empty space.
-You will however notice the somewhat tricky lack of an exact overload for checking the visibility of
-a `GraphicsPath` &mdash; this stymied me for a moment until I realised that the `GraphicsPath`
-object has a `$Path.GetBounds()` method, which returns a `[RectangleF]` object.
+You will, however, notice the somewhat tricky lack of an exact overload for checking the visibility
+of a `GraphicsPath`.
+This stymied me for a moment until I realised that the `GraphicsPath` object has a
+`$Path.GetBounds()` method, which returns a `[RectangleF]` object.
 Using this, we can check if a given path's bounds intersect with (are visible when drawn over) the
 existing Region object.
 
@@ -107,7 +108,7 @@ $WordBounds = $WordPath.GetBounds()
 $WordIsColliding = $FilledSpace.IsVisible($WordBounds)
 ```
 
-With that, we have the framework for figuring out whether or not objects collide or not, and there
+With that, we have the framework for figuring out whether or not objects collide, and there
 are a _whole_ lot of different objects you can work with in `System.Drawing` &mdash; lines, curves,
 ellipses, polygons, paths, etc. And with the `GraphicsPath` objects, you can create literally
 anything you want or need using its methods.
