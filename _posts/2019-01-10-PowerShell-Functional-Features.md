@@ -15,7 +15,7 @@ create some side effect like there often is in object oriented languages.
 I've been meaning to write this post for a while now, ever since my post on
 [Anonymous Functions](/2018/10/26/Anonymous-Functions/).
 I've been turning over in my head the similarities PowerShell has to some functional languages,
-perticularly F#, so I thought it was about time I wrote about it!
+particularly F#, so I thought it was about time I wrote about it!
 
 I'll restrict my comments here to languages I know pretty well myself, so that really only leaves me
 with C#, F#, and PowerShell at the time of writing.
@@ -200,7 +200,7 @@ sumNumbers 1 2 3 // returns: 6
 
 // Define a curried function
 let addToThree x y =
-    printNumbers 3
+    sumNumbers 3
 
 // Call curried version, with two parameters
 addToThree 2 2 // returns: 7
