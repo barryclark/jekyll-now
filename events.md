@@ -10,6 +10,9 @@ February 25 - 28: Mobile World Congress, Barcelona
 
 March 12 - 14: Open Source Leadership Summit, Half Moon Bay
 
+April 1: Open Infra Days, London
+* Talk
+
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 
 June 24 - 26: ContainerDays, Hamburg
