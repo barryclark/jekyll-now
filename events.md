@@ -8,7 +8,7 @@ permalink: /events/
 
 February 25 - 28: Mobile World Congress, Barcelona
 
-March 12 - 13: Open Source Leadership Summit, Half Moon Bay
+March 12 - 14: Open Source Leadership Summit, Half Moon Bay
 
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 
