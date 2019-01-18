@@ -30,6 +30,7 @@ math = false
 
 This course surveys essential concepts and methods used in quantitative empirical research in the fields of education and psychology, in order to prepare students both to be informed consumers of research and to conduct empirical research of their own. The course is organized around four main themes: measurement, populations and sampling, experimental causal research, and quasi-experimental causal research. On each theme, we read relevant theoretical and methodological literature, discuss empirical research in light of those concepts, and develop research proposals using the methods that we discuss. Throughout, emphasis is on building intuition and heuristics regarding research designs and methods.
 
+* [2019 (Spring) Syllabus](/files/syllabi/EDP381C-2-10775-Research-Design-2019S)
 * [2018 (Fall) Syllabus](/files/syllabi/EDP381C-2-10540-Research-Design-2018F.pdf)
 * [2018 (Spring) Syllabus](/files/syllabi/EDP381C-2-10200-Research-Design-2018S.pdf)
 * [2017 (Spring) Syllabus](/files/syllabi/EDP381C-2-10895-Research-Design-2017S.pdf)

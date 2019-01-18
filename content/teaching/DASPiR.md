@@ -40,5 +40,6 @@ This course provides training in using the open-source statistical programming e
 
 Content relevant to designing and implementing Monte Carlo simulation studies is interwoven throughout the course.
 
+* [2019 (Spring) Syllabus](/files/syllabi/EDP380C-20-10745-Data-Analysis-Simulation-and-Programming-in-R-2019S.pdf)
 * [2017 (Spring) Syllabus](/files/syllabi/EDP384-10875-Data-Analysis-Simulation-and-Programming-in-R-2017S.pdf)
 * [2015 (Spring) Syllabus](/files/syllabi/EDP384-10585-Data-Analysis-Simulation-and-Programming-in-R-2015S.pdf)
