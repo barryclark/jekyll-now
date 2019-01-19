@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Interview with theCube - KubeCon CloudNativeCon NA 2918"
+title: "Interview with theCube - KubeCon+CloudNativeCon NA 2018"
 tags:
   - Video
   - "2018"
