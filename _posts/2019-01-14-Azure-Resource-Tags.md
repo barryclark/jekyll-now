@@ -48,7 +48,7 @@ One very important thing from the business perspective we can do using tags is c
 | *Cost analysis for resources under Production tag* |
 
 ## Managing tags
-You can assign tags using the Azure portal, Powershell or Azure CLI. There is also some limitation when creating and using tags, some of which are:
+You can assign tags using the Azure portal, Powershell, Azure CLI or ARM Templates. There is also some limitation when creating and using tags, some of which are:
 1. You can add up to 15 tags to a resource
 2. You cannot add a tag to all resources
 3. The tag name is limited to 512 characters, and the tag value is limited to 256 characters
