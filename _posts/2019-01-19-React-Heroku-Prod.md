@@ -17,6 +17,8 @@ I hope you find this a quick and informative answer! As always, if you have comm
 
 I want this to be free of cruft, so if you’re looking for how to ready Heroku for an app, check [their own documentation on setting up the CLI app](https://devcenter.heroku.com/articles/heroku-cli). For now, just install it and log in so you can push the build to Heroku. Once you’ve done that, go to your dashboard and create a new machine for your app. Name it whatever you want.
 
+![Create Heroku App](/images/react_heroku_prod/create_heroku.png)
+
 ### A lone config variable
 
 You’ll want to turn on the npm production variable for Heroku. This can be done two ways, both of which are pretty easy. In your Heroku machine’s dashboard, go to Settings -> Config Vars -> Reveal Config Vars, and add a new one like this:
@@ -108,4 +110,4 @@ git push heroku deploy:master
 
 Watch it build and open your site, then check your extension! You should be up and running with a prod build.
 
-[ last pic of extension ]
+![SUCCESS](/images/react_heroku_prod/running_prod.png)
