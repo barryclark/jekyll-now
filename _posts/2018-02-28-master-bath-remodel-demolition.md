@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Master Bath Remodel: Demolition"
-tags: [web]
+tags: [diy]
 keywords: [master bath remodel, master bathroom remodel, bath remodel, bathroom remodel]
 image: /images/bathroom-remodel/bathroom-sketch.png
 ---
