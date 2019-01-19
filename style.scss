@@ -155,7 +155,7 @@ img {
   background: $blue;
 
   a{
-    color: $white;
+    color: $lightGray;
   }
 }
 
@@ -207,7 +207,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $white;
+  color: $lightGray;
   font-size: 16px;
 
   @include mobile {
