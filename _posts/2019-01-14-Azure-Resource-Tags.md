@@ -195,4 +195,4 @@ For the full list of limitation please check [here](https://docs.microsoft.com/e
 </pre>
 
 ## Summary
-As you can see Tags can be very powerfull addition to your toolset. They are really easy to add and manage and there are many ways to use them organizing your resources. I would really like to hear how you use tags and what are some strategies you use when organizing your resources
+As you can see Tags can be very powerfull addition to your toolset. They are really easy to add and manage and there are many ways to use them to organize your resources. I would really like to hear how you use tags and what are some strategies you use when organizing your resources
