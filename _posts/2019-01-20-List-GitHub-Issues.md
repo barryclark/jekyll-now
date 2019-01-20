@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assignment: list-github-issues
+title: Assignment; list-github-issues
 ---
 
 This site was a coding challenge given during a company interview. The task was to build a way to view GitHub issues for open source repos. 
