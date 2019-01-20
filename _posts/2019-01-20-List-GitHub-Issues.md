@@ -70,7 +70,7 @@ Second, also provided with the base issue data is some info about the user that 
 Next, we’re replicating the labels that are found on the actual GitHub issue. This is fun — when a label’s JSON arrives from your request, you can poke through it and see what color was chosen for it by the org. Since this is just a hexadecimal value, we can override the style of the labels to be a pound sign (octothorpe, hashtag, whatever) plus this value. All you have to do is:
 
 ```javascript
-<div style={{backgroundColor: `#${labelColor}`}}></div>
+backgroundColor: `#${labelColor}`
 ```
 
 I dislike inline styles in React (or plain JavaScript for that matter), but it’s got some uses!
