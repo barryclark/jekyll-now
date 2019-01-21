@@ -3,10 +3,11 @@
 #
 
 # Name of your site (displayed in the header)
-name: Code for Canada x PSC
+name: Code for Canada x PSC / CFP
 
 # Short bio or description (displayed in the header)
 description: Project updates from partnership between Code for Canada and Public Service Commission
+description_fr: Mises à jour sur le projet entre Code for Canada et la Commission de la fonction publique
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/code-for-canada/psc-updates/master/images/cfc-web-logo.png
