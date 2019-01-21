@@ -10,14 +10,14 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="date">
-	    Published on {{ post.date | date: "%B %e, %Y" }}
+	    Rédigé le {{ post.date | date: "%B %e, %Y" }}
 	  </div>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Lire la suite</a>
     </article>
   {% endfor %}
 </div>
