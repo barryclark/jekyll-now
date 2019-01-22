@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: You're up and running! ✓
 ---
 
 **This post is written by Barry Clark as an example post for jekyll-now.**
