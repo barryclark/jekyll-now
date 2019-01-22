@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding social account icons in the footer
+title: Adding social account icons in the footer 🚿
 ---
 
 08:41 Yangon  

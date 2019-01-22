@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up the blog
+title: Setting up the blog 🎉
 ---
 
 Location: Yangon  
