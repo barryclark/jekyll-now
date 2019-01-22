@@ -1,0 +1,69 @@
+---
+title: Effective sample size aggregation
+author: James
+date: '2019-01-22'
+slug: effective-sample-size-aggregation
+categories: []
+tags:
+  - econometrics
+  - weighting
+header:
+  caption: ''
+  image: ''
+---
+
+In settings with independent observations, sample size is one way to quickly characterize the precision of an estimate. But what if your estimate is based on _weighted_ data, where each observation doesn't necessarily contribute to equally to the estimate? Here, one useful way to gauge the precision of an estimate is the _effective sample size_ or ESS. Suppose that we have $N$ independent observations $Y_1,...,Y_N$ drawn from a population with standard deviation $\sigma$, and that observation $i$ receives weight $w_i$. We take the weighted sample mean
+$$
+\tilde{y} = \frac{1}{W} \sum_{i=1}^N w_i Y_i, \qquad \text{where} \qquad W = \sum_{i=1}^N w_i.
+$$
+with sampling variance
+$$
+\text{Var}(\tilde{y}) = \frac{\sigma^2}{W^2} \sum_{i=1}^N w_i^2.
+$$
+
+The ESS is the number of observations from an equally weighted sample that would yield the same level of precision as the weighted sample mean. In an equally weighted sample of size $\tilde{N}$, the variance would be simply $\sigma^2 / \tilde{N}$, and so ESS is the value of $\tilde{N}$ that solves
+$$
+\frac{\sigma^2}{\tilde{N}} = \frac{\sigma^2}{W^2} \sum_{i=1}^N w_i^2.
+$$
+
+Re-arranging, the ESS is thus defined as
+$$
+\tilde{N} = \frac{W^2}{\sum_{i=1}^N w_i^2}.
+$$
+
+The ESS is reported in several packages for propensity score weighting, including [twang](https://CRAN.R-project.org/package=twang) and [optweight](https://CRAN.R-project.org/package=optweight). In the propensity score context, ESS is a useful measure for comparing different sets of estimated propensity weights, in that weights (or propensity score models/matching methods) that have a larger ESS will yield a more precise estimate of a treatment effect. Given two sets of weights that achieve equivalent degrees of balance, the weights with larger ESS are thus preferable. Methods introduced by [Zubizarreta (2015)](https://doi.org/10.1080/01621459.2015.1023805)---and implemented in the [optweight](https://CRAN.R-project.org/package=optweight) package---take this logic a step further by using ESS as an objective function to be minimized, subject to specified balancing constraints. 
+
+# Multi-site effective sample size
+
+Two of my recent projects have involved applying propensity score weighting methods in multi-site settings, where we are interested in estimating site-specific treatment effects as well as an overall aggregate effect. It is straight-forward to calculate an ESS for each site, but how then should we aggregate the ESS across sites to characterize the precision of the overall estimate? Several times now, I have found myself having to re-derive the aggregated ESS, and so I am going to work through it here now so as to save future-me (and perhaps you, dear reader) some time.
+
+Suppose that we have $J$ sites, $n_j$ observations from site $j$ for $j = 1,...,J$, and total sample size $N = \sum_{j=1}^J n_j$. Observation $i$ from site $j$ has outcome $Y_{ij}$ and weight $w_{ij}$. The site-specific weighted average at site $j$ is then
+$$
+\tilde{y}_j = \frac{1}{W_j} \sum_{i=1}^{n_j} w_{ij} Y_{ij}, \qquad \text{where} \qquad W_j = \sum_{i=1}^{n_j} w_{ij}
+$$
+and the overall average is 
+$$
+\tilde{y} = \frac{1}{N} \sum_{j=1}^J n_j \ \tilde{y}_j = \frac{1}{N} \sum_{j=1}^J \sum_{i=1}^{n_j} \frac{n_j w_{ij}}{W_j} Y_{ij}.
+$$
+
+For calculating the overall average, observation $i$ from unit $j$ contributes weight $u_{ij} = n_j w_{ij} / W_j$.
+
+Using these unit-specific weights, the effective sample size for the overall average is
+$$
+ESS = \frac{N^2}{\sum_{j=1}^J \sum_{i=1}^{n_j} u_{ij}^2}.
+$$
+We can also define a site-specific ESS for site $j$:
+$$
+ESS_j = \frac{W_j^2}{\sum_{i=1}^{n_j} w_{ij}^2}.
+$$
+
+Using the decomposition of the weights as $u_{ij} = n_j w_{ij} / W_j$, the overall ESS can be written as 
+$$
+ESS = \frac{N^2}{\sum_{j=1}^J n_j^2 \left(\sum_{i=1}^{n_j} w_{ij}^2 / W_j^2\right)}.
+$$
+Noting that the term in the parentheses of the denominator is equivalent to $1 / ESS_j$, the overall ESS can therefore be written in terms of the site-specific ESSs and sample sizes:
+$$
+ESS = \frac{N^2}{\sum_{j=1}^J n_j^2 / ESS_j}.
+$$
+
+There you go. Future me will thank me for this!
