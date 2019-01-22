@@ -60,8 +60,8 @@ Home Depot Links:
 * [LASH System Pro Pliers](https://www.homedepot.com/p/300873467)
 
 Amazon Links: 
-* [Curved LASH Clips (96 per Pack)](https://www.amazon.com/dp/B00FK8TAEY)
-* [LASH Wedges aka "Part B" (96 per Pack)](https://www.amazon.com/dp/B00FK8TB16)
-* [LASH System Pro Pliers](https://www.amazon.com/dp/B06XXN9X1Q)
+* [Curved LASH Clips (96 per Pack)](https://www.amazon.com/dp/B00FK8TAEY/?tag=hendrixjoseph-20)
+* [LASH Wedges aka "Part B" (96 per Pack)](https://www.amazon.com/dp/B00FK8TB16/?tag=hendrixjoseph-20)
+* [LASH System Pro Pliers](https://www.amazon.com/dp/B06XXN9X1Q/?tag=hendrixjoseph-20)
 
-Oh, and I didn't need to use [the special LASH pliers](https://www.amazon.com/QEP-99757Q-Pro-LASH-Pliers/dp/B06XXN9X1Q/) - my fingers were strong enough to push the wedges into the clips. Maybe with the pliers, I could've pushed the wedges further into the clips, resulting in a flatter installation, or maybe I would've just broken the clips. They would probably be beneficial for professionals in order to help prevent hand fatigue and cramping, though.
+Oh, and I didn't need to use [the special LASH pliers](https://www.amazon.com/QEP-99757Q-Pro-LASH-Pliers/dp/B06XXN9X1Q/?tag=hendrixjoseph-20) - my fingers were strong enough to push the wedges into the clips. Maybe with the pliers, I could've pushed the wedges further into the clips, resulting in a flatter installation, or maybe I would've just broken the clips. They would probably be beneficial for professionals in order to help prevent hand fatigue and cramping, though.
