@@ -15,10 +15,7 @@ April 1: Open Infra Days, London
 
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 
-June 24 - 26: ContainerDays, Hamburg
-* Keynote TBC
-
-June 26 - 28: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
+June 23 - 27: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
 
 July 17 - 19: Open Source Summit Japan, Tokyo
 
