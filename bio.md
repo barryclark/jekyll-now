@@ -12,10 +12,6 @@ David lives in Belgium. In his spare time, he enjoys playing video games with hi
 
 You can follow him on Twitter [@delabassee](https://twitter.com/delabassee).
 
-Delabassee_1000.jpg            delabassee_headshot_512.jpeg
-Delabassee_150.jpg             fn/
-Delabassee_220.jpg
-
 
 * [Headshot square 150 × 150 pixels (300 pixels/inch) 30 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/Delabassee_150.jpg)
 * [Headshot square 220 × 220 pixels (300 pixels/inch) 50 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/Delabassee_220.jpg)
