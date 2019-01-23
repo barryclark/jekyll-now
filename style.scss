@@ -161,15 +161,21 @@ img {
 // .masthead
 //
 .wrapper-masthead {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  background: $blue;
+
+  a{
+    color: $lightGray;
+  }
 }
 
 .masthead {
-    padding: 20px 0;
-    border-bottom: 1px solid $lightGray;
-    @include mobile {
-        text-align: center;
-    }
+  padding: 20px 0;
+  // border-bottom: 1px solid $lightGray;
+
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .site-avatar {
@@ -207,12 +213,13 @@ img {
 }
 
 .site-description {
-    margin: -5px 0 0 0;
-    color: $gray;
-    font-size: 16px;
-    @include mobile {
-        margin: 3px 0;
-    }
+  margin: -5px 0 0 0;
+  color: $lightGray;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
 }
 
 nav {
