@@ -7,7 +7,11 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <p>
+        {% for category in post.categories %}
+        <span class="post-category">{{category}}</span>
+        {% endfor %}
+      </p>
       <div class="entry">
         {{ post.excerpt }}
       </div>
