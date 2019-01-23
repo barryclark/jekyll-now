@@ -21,7 +21,7 @@ Delabassee_220.jpg
 * [Headshot square 220 × 220 pixels (300 pixels/inch) 50 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/Delabassee_220.jpg)
 * [Headshot square 512 × 512 pixels (200 pixels/inch) 177 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/delabassee_headshot_512.jpeg)
 * [Headshot square 600 × 600 pixels (200 pixels/inch) 230 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/delabassee_headshot_1000.jpeg)
-* [Headshot square 1000 × 1000 pixels (300 pixels/inch) 706 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/1000.jpg)
+* [Headshot square 1000 × 1000 pixels (300 pixels/inch) 706 KB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/Delabassee_1000.jpg)
 * [Portrait 1535 × 2126 pixels (300 pixels/inch) 2,2 MB](https://raw.githubusercontent.com/delabassee/delabassee.github.io/master/images/Delabassee_XL.jpg) 
 
 
