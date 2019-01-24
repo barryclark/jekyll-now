@@ -20,9 +20,9 @@ function generate() {
   var outputbox = document.getElementById('output');
   
   for (i = 0; i < alphabet.length; i++) {
-    var letter = 
+    var letter = alphabet.charAt(i);
     var listNode = document.createElement("LI");
-    var listText = document.createTextNode(input + " " + alphabet.charAt(i));
+    var listText = document.createTextNode(input + " " + letter);
     listNode.appendChild(listText);
     outputbox.appendChild(listNode);
   }
