@@ -25,9 +25,8 @@ function generate() {
     var searchText = input + " " + alphabet.charAt(i);
     var encodedSearchText = encodeURIComponent(searchText);
    
-    //list = list + "<ul>" + searchParts[0] + encodedSearchText + searchParts[1] + searchText + searchParts[2] + "</ul>";
-   
     var list = $("<li />").append(searchText);
+    list.append("<ul>" + searchParts[0] + encodedSearchText + searchParts[1] + searchText + searchParts[2] + "</ul>");
    
     outputbox.append(list);
   }
