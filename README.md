@@ -10,11 +10,6 @@ $ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 4000:4000 je
 
 If everything works out, the jekyll server will serve the blog preview on `http://127.0.0.1:4000`. (The option `--future` makes jekyll render posts with a publication date in the future as well.) Once you verified that your changes render without error, you can submit a pull request against out blog repo.
 
-Please note to set the proxy if you are working from within the Haufe Intranet
-
-    set HTTP_PROXY=http://proxy.haufemg.com:8083/
-    set HTTPS_PROXY=http://proxy.haufemg.com:8083/
-
 If you find bugs or issues you can [open an issue](https://github.com/Haufe-Lexware/Haufe-Lexware.github.io/issues/new) describing the problem that you're looking to resolve and we'll go from there.
 
 ---
