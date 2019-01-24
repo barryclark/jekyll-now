@@ -15,27 +15,25 @@ function generate() {
   var alphabet = "abcdefghijklmnopqrstuvwxyz";
   var searchParts = ["<li><a href='https://www.amazon.com/s/?field-keywords=", "' >", "</a></li>"];
  
-  var inputbox = document.getElementById('input');
-  var input = inputbox.value;
+  var inputbox = $(".input");
+  var input = inputbox..text();
   
-  var outputbox = document.getElementById('output');
+  var outputbox = $(".output");
+  outputbox.empty();
  
-  while (outputbox.firstChild) {
-   outputbox.removeChild(outputbox.firstChild);
-  }
+  var list = "";
   
   for (i = 0; i < alphabet.length; i++) {
-    var letter = alphabet.charAt(i);
-    var listText = input + " " + letter;
-    var listNode = document.createElement("LI");
-    var listTextNode = document.createTextNode(listText);
-    listNode.appendChild(listTextNode);
-    outputbox.appendChild(listNode);
+    var searchText = input + " " + alphabet.charAt(i);
+    var encodedSearchText = encodeURIComponent(searchText);
    
-    var listTextEncoded = encodeURIComponent(listText);
-    var sublistNode = document.createElement("UL");
-    sublistNode.innerHTML = searchParts[0] + listTextEncoded + searchParts[1] + listText + searchParts[2];
-    listNode.appendChild(sublistNode);
+    var list = list + "<li>" + searchText;
+   
+    list = list + "<ul>" + searchParts[0] + encodedSearchText + searchParts[1] + searchText + searchParts[2] + "</ul>";
+   
+    list = list + </li>
   }
+  
+  outputbox.html(list);
 }
 </script>
