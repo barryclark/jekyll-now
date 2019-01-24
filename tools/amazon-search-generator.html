@@ -12,10 +12,10 @@ permalink: /tools/amazon-search-generator/
 <script>
 function generate() {
   var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var searchParts = ["<li><a href='https://www.amazon.com/s/?field-keywords=", "' >", "</a></li>"];
  
   var inputbox = document.getElementById('input');
   var input = inputbox.value;
-  var encoded = encodeURIComponent(input);
   
   var outputbox = document.getElementById('output');
  
@@ -25,10 +25,18 @@ function generate() {
   
   for (i = 0; i < alphabet.length; i++) {
     var letter = alphabet.charAt(i);
+    var listText = input + " " + letter;
     var listNode = document.createElement("LI");
-    var listText = document.createTextNode(input + " " + letter);
-    listNode.appendChild(listText);
+    var listTextNode = document.createTextNode(listText);
+    listNode.appendChild(listTextNode);
     outputbox.appendChild(listNode);
+   
+    var listTextEncoded = encodeURIComponent(listText);
+    var sublistNode = document.createElement("UL");
+    var sublistTextNode = document.createTextNode(searchParts[0] + listTextEncoded + searchParts[1] + listText + searchParts[2]);
+   
+    sublistNode.appendChild(sublistTextNode);
+    listNode.appendChild(sublistNode);
   }
 }
 </script>
