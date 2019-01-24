@@ -27,7 +27,9 @@ function generate() {
    
     //list = list + "<ul>" + searchParts[0] + encodedSearchText + searchParts[1] + searchText + searchParts[2] + "</ul>";
    
-    outputbox.append("<li>" +  searchText + "</li>");
+    var list = $("<li />").append(searchText);
+   
+    outputbox.append(list);
   }
 }
 </script>
