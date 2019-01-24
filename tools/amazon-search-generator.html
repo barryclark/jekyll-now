@@ -1,0 +1,25 @@
+---
+layout: page
+title: Amazon Search Generator
+permalink: /tools/amazon-search-generator/
+---
+
+<input id="input" type="text" name="search" />
+<input onclick="generate()" value="Generate!" type="button">
+
+<ul id="output"></ul>
+ 
+<script>
+  var inputbox = document.getElementById('input');
+	var input = inputbox.value;
+  var encoded = encodeURIComponent(input);
+  
+  var outputbox = document.getElementById('output');
+  
+  for (i = 'a'; i < 'z' + 1; i++) {
+    var listNode = document.createElement("LI");
+    var listText = document.createTextNode(input + " " + i);
+    listNode.appendChild(textnode);
+    outputbox.appendChild(listNode);
+  }
+</script>
