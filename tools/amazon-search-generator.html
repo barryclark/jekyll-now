@@ -11,15 +11,18 @@ permalink: /tools/amazon-search-generator/
  
 <script>
 function generate() {
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+ 
   var inputbox = document.getElementById('input');
   var input = inputbox.value;
   var encoded = encodeURIComponent(input);
   
   var outputbox = document.getElementById('output');
   
-  for (i = 'a'; i < 'z' + 1; i++) {
+  for (i = 0; i < alphabet.length; i++) {
+    var letter = 
     var listNode = document.createElement("LI");
-    var listText = document.createTextNode(input + " " + i);
+    var listText = document.createTextNode(input + " " + alphabet.charAt(i));
     listNode.appendChild(listText);
     outputbox.appendChild(listNode);
   }
