@@ -33,9 +33,7 @@ function generate() {
    
     var listTextEncoded = encodeURIComponent(listText);
     var sublistNode = document.createElement("UL");
-    var sublistTextNode = document.createTextNode(searchParts[0] + listTextEncoded + searchParts[1] + listText + searchParts[2]);
-   
-    sublistNode.appendChild(sublistTextNode);
+    sublistNode.innerHTML = searchParts[0] + listTextEncoded + searchParts[1] + listText + searchParts[2];
     listNode.appendChild(sublistNode);
   }
 }
