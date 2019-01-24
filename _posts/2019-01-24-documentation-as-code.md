@@ -3,7 +3,7 @@ layout: post
 title: "Documentation as code"
 subtitle: 
 category: dev
-tags: [documentation, asciidoc, maven]
+tags: [development, devops]
 author: Frank Enders
 editor_email: frank.enders@haufe-lexware.com
 header-img: "images/new/Exportiert_30.jpg"
