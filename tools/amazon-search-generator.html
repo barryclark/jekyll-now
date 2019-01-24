@@ -18,6 +18,10 @@ function generate() {
   var encoded = encodeURIComponent(input);
   
   var outputbox = document.getElementById('output');
+ 
+  while (outputbox.firstChild) {
+   outputbox.removeChild(outputbox.firstChild);
+  }
   
   for (i = 0; i < alphabet.length; i++) {
     var letter = alphabet.charAt(i);
