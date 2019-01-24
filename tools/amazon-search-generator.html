@@ -20,20 +20,14 @@ function generate() {
   
   var outputbox = $("#output");
   outputbox.empty();
- 
-  var list = "";
   
   for (i = 0; i < alphabet.length; i++) {
     var searchText = input + " " + alphabet.charAt(i);
     var encodedSearchText = encodeURIComponent(searchText);
    
-    var list = list + "<li>" + searchText;
+    //list = list + "<ul>" + searchParts[0] + encodedSearchText + searchParts[1] + searchText + searchParts[2] + "</ul>";
    
-    list = list + "<ul>" + searchParts[0] + encodedSearchText + searchParts[1] + searchText + searchParts[2] + "</ul>";
-   
-    list = list + "</li>"
+    outputbox.append("<li>" +  searchText + "</li>"
   }
-  
-  outputbox.text(list);
 }
 </script>
