@@ -10,8 +10,9 @@ permalink: /tools/amazon-search-generator/
 <ul id="output"></ul>
  
 <script>
+function generate() {
   var inputbox = document.getElementById('input');
-	var input = inputbox.value;
+  var input = inputbox.value;
   var encoded = encodeURIComponent(input);
   
   var outputbox = document.getElementById('output');
@@ -22,4 +23,5 @@ permalink: /tools/amazon-search-generator/
     listNode.appendChild(listText);
     outputbox.appendChild(listNode);
   }
+}
 </script>
