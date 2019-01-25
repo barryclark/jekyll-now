@@ -5,7 +5,7 @@ title: GSoC - VLC macOS Interface Redesign
 <img align="right" src="{{ site.baseurl }}/images/vlc_logo.png" width="27%" height="27%">
 Earlier this summer I got selected in [Google Summer of Code](https://summerofcode.withgoogle.com/) to work with [VideoLAN](https://www.videolan.org/index.html) on the Project [VLC macOS Interface Redesign](https://summerofcode.withgoogle.com/projects/#5721689099337728). It has been a blessing to get a chance to work on one of the highest impact open source projects. I had a phenomenal experience. Let's have a look at my contributions :)
 
-You can have a look at my [GSoC Project Page](https://summerofcode.withgoogle.com/projects/#5721689099337728) and [Proposal](https://github.com/Daksh/Daksh.github.io/blob/master/images/proposal.pdf)
+You can have a look at my [GSoC Project Page](https://summerofcode.withgoogle.com/projects/#5721689099337728) and [Proposal]({{ site.baseurl }}/images/proposal.pdf)
 
 Feel free **to jump right to the [code](https://code.videolan.org/GSoC2018/macOS/vlc/branches)**
 
