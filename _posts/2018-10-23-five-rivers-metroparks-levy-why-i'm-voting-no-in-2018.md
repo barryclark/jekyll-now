@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Five Rivers Metroparks Levy - Why I'm Voting No in 2018
-tags: [politics]
+tags: [politics, tax]
 keywords: [five rivers metroparks levy, five rivers levy, metroparks levy, montgomery county levy, issue 6, issue 6 ohio, ohio issue 6]
 image: /images/vote-no-five-rivers-metroparks-levy.png
 ---
