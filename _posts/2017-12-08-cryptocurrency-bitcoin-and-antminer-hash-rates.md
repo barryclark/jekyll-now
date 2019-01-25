@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Cryptocurrency, Bitcoin, & AntMiner Hash Rates
-tags: [money]
-keywords: [antimer hash rates, bitcoin, cryptocurrency, antminer]
+tags: [money, cryptocurrency]
+keywords: [antimer hash rates, bitcoin, antminer]
 mathjax: true
 image: /images/antminer-s3.jpg
 ---
