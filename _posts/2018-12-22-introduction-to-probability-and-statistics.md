@@ -9,6 +9,8 @@ Instructor(s): [Jeremy Orloff](http://math.mit.edu/directory/profile.php?pid=136
 
 Course archive
 * Probability
+  * Introduction, counting and sets	
+  * Probability basics
 * Statistics: Bayesian Inference
 * Statistics: Frequentist Inference—Null Hypothesis Significance Testing (NHST)
 * Statistics: Confidence Intervals; Regression
