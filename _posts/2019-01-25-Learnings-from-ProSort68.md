@@ -5,9 +5,19 @@ title: Learnings from ProSort 68 Div-2
 
 Recently I took part in a competetive programming contest. It was a practice one and I learnt some very important things.
 
+## Major take-aways
+Thanks to Bhavye Anand Gupta, for the explanations and patience :D
+
+1. Modular Arithmetic 
+	1. `(a*b)%m = a%m * b%m`
+	2. `(a/b)%m = a%m * (b-inverse)%m`
+2. Fermat's Little Theorem (FLT): `(b-inverse)%m = ( b^(m-2) )%m` IF m is prime, and in our case it is.
+	PS: For calculating `b^(m-2)` use fast exponentiation. Fast exponentiation means a recursive function in which; for `a^n` you just calculate `a^(n/2)`, and so on.  
+3. For calculation of Factorial, pre-compute it and store in an array
+
 I was successfully able to solve the following two problems:
 
-# Problem 1: "New Problem"
+## Problem 1: "New Problem"
 
 You can find the same problem in Practice on Codeforces.
 [Original Problem Page](http://foobar.contest.codeforces.com/group/0U62CQraSv/contest/237095/problem/A)
@@ -53,7 +63,7 @@ while True:
 		out = getNext(out)
 ```
 
-# Problem 2: "Beautiful Numbers"
+## Problem 2: "Beautiful Numbers"
 
 You can find the same problem in Practice on Codeforces.
 [Original Problem Page](http://foobar.contest.codeforces.com/group/0U62CQraSv/contest/237095/problem/B)
@@ -165,7 +175,7 @@ print(ans)
 	
 ```
 
-# Files and Resources
+## Files and Resources
 1. Complete Problem Set: [Link](http://foobar.contest.codeforces.com/group/0U62CQraSv/contest/237095/problems), [PDF]({{ site.baseurl }}/resources/proSort68/problemSet.pdf)
 2. [new_problem.py]({{ site.baseurl }}/resources/proSort68/new_problem.py)
 3. [beautiful_numbers.cpp]({{ site.baseurl }}/resources/proSort68/beautiful_numbers.cpp)
