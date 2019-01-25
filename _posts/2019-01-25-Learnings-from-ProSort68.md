@@ -11,8 +11,8 @@ Thanks to Bhavye Anand Gupta, for the explanations and patience :D
 1. Modular Arithmetic 
 	1. ```(a*b)%m = a%m * b%m```
 	2. ```(a/b)%m = a%m * (b-inverse)%m```
-2. Fermat's Little Theorem (FLT): ```(b-inverse)%m = ( b^(m-2) )%m``` <br />IF m is prime, and in our case it is.
-	<br />PS: For calculating ```b^(m-2)``` use fast exponentiation. Fast exponentiation means a recursive function in which; for ```a^n``` you just calculate ```a^(n/2)```, and so on.  
+2. Fermat's Little Theorem (FLT): ```(b-inverse)%m = ( b^(m-2) )%m``` <br />*IF m is prime, and in our case it is.*
+	<br /><br />PS: For calculating ```b^(m-2)``` use fast exponentiation. Fast exponentiation means a recursive function in which; for ```a^n``` you just calculate ```a^(n/2)```, and so on.  
 3. For calculation of Factorial, pre-compute it and store in an array
 
 I was successfully able to solve the following two problems:
