@@ -15,6 +15,7 @@ function generate() {
   var alphabet = "abcdefghijklmnopqrstuvwxyz";
   var searchParts = ["<li><a href='https://www.amazon.com/s/?field-keywords=", "' >", "</a></li>"];
   var amazon = "https://completion.amazon.com/search/complete?search-alias=aps&client=amazon-search-ui&mkt=1&q=";
+  var callback = "&callback=?";
  
   var inputbox = $("#input");
   var input = inputbox.val();
@@ -31,9 +32,10 @@ function generate() {
 	
 	outputbox.append(list);
 	
-	$.ajax({url: amazon + encodedSearchText, success: function(result){
-		list.html(result);
-	}});
+	$.ajax({url: amazon + encodedSearchText + callback,
+			success: function(result){
+				list.html(result);
+			}});
   }
 }
 </script>
