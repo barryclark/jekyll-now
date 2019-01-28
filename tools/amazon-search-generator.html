@@ -32,10 +32,11 @@ function generate() {
 	
 	outputbox.append(list);
 	
-	$.ajax({url: amazon + encodedSearchText + callback,
-			success: function(result){
-				list.html(result);
-			}});
+	$.getJSON(amazon + encodedSearchText + callback,
+			  function(result){
+				 list.html(result);
+			  }
+	);
   }
 }
 </script>
