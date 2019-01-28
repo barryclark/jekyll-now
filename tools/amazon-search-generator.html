@@ -34,7 +34,9 @@ function generate() {
 	
 	$.getJSON(amazon + encodedSearchText + callback,
 			  function(result){
-				 list.html(result);
+				 //list.html(result);
+				 console.log("result:");
+				 console.log(result);
 			  }
 	);
   }
