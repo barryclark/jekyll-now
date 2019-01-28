@@ -28,15 +28,18 @@ function generate() {
     var encodedSearchText = encodeURIComponent(searchText);
    
     var list = $("<li />").append(searchText);
+	var sublist = $("<ul />");
+		
     //list.append("<ul>" + searchParts[0] + encodedSearchText + searchParts[1] + searchText + searchParts[2] + "</ul>");
-	
+	list.append(sublist);
 	outputbox.append(list);
 	
 	$.getJSON(amazon + encodedSearchText + callback,
 			  function(result){
-				 //list.html(result);
-				 console.log("result:");
-				 console.log(result[1]);
+				 result[1].forEach(function(item) {
+					console.log(item);
+					sublist.append("<li>" + item + "</li>");
+				 });
 			  }
 	);
   }
