@@ -6,6 +6,7 @@ jquery: true
 ---
 
 <form onsubmit="generate();return false;">
+<input id="include-tag" type="checkbox">Include Amazon Associate Tag in Links
 <input id="input" type="text" name="search" />
 <input onclick="generate()" value="Generate!" type="button">
 </form>
@@ -21,6 +22,8 @@ function generate() {
  
   var inputbox = $("#input");
   var input = inputbox.val();
+  
+  var tag = $("#include-tag").val() ? "&tag=hendrixjoseph-20" : "";
   
   var outputbox = $("#output");
   outputbox.empty();
@@ -39,7 +42,7 @@ function generate() {
 			  function(result){
 				 result[1].forEach(function(item) {
 					var encodedItem = encodeURIComponent(item);
-					sublist.append(searchParts[0] + encodedItem + searchParts[1] + item + searchParts[2]);
+					sublist.append(searchParts[0] + encodedItem + tag + searchParts[1] + item + searchParts[2]);
 				 });
 			  }
 	);
