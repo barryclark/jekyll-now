@@ -1,4 +1,6 @@
---- --- //
+---
+---
+//
 // IMPORTS
 //
 @import "reset";
@@ -290,10 +292,11 @@ footer {
 }
 
 .post-category {
-    padding: 4px;
-    background: $blue;
+    padding: 5px;
+    background: $blueGray;
     color: $lightGray;
     margin-right: 5px;
+    border-radius: 4px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
