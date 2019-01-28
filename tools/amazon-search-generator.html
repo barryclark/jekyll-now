@@ -5,14 +5,16 @@ permalink: /tools/amazon-search-generator/
 jquery: true
 ---
 
+<form onsubmit="generate();return false;">
 <input id="input" type="text" name="search" />
 <input onclick="generate()" value="Generate!" type="button">
+</form>
 
 <ul id="output"></ul>
  
 <script>
 function generate() {
-  var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");;
+  var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   var searchParts = ["<li><a href='https://www.amazon.com/s/?field-keywords=", "' >", "</a></li>"];
   var amazon = "https://completion.amazon.com/search/complete?search-alias=aps&client=amazon-search-ui&mkt=1&q=";
   var callback = "&callback=?";
@@ -24,22 +26,20 @@ function generate() {
   outputbox.empty();
   
   alphabet.forEach(function(letter) {
-  //for (i = 0; i < alphabet.length; i++) {
-    var searchText = input + " " + letter;//alphabet.charAt(i);
+    var searchText = input + " " + letter;
     var encodedSearchText = encodeURIComponent(searchText);
    
     var list = $("<li />").append(searchText);
 	var sublist = $("<ul />");
 		
-    //list.append("<ul>" + searchParts[0] + encodedSearchText + searchParts[1] + searchText + searchParts[2] + "</ul>");
 	list.append(sublist);
 	outputbox.append(list);
 	
 	$.getJSON(amazon + encodedSearchText + callback,
 			  function(result){
 				 result[1].forEach(function(item) {
-					console.log(item);
-					sublist.append("<li>" + item + "</li>");
+					var encodedItem = encodeURIComponent(item);
+					sublist.append(searchParts[0] + encodedItem + searchParts[1] + item + searchParts[2]);
 				 });
 			  }
 	);
