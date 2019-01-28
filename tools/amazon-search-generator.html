@@ -23,7 +23,7 @@ function generate() {
   var inputbox = $("#input");
   var input = inputbox.val();
   
-  var doTag = $("#include-tag").val();
+  var doTag = $("#include-tag").is(':checked');
   var tag = doTag ? "&tag=hendrixjoseph-20" : "";
   
   var outputbox = $("#output");
