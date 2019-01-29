@@ -3,6 +3,7 @@ layout: post
 title: Sensor- und Elektronikauswahl
 lang: DE
 ref: Sensorauswahl
+categories: [cansat2018]
 teaserImage: /images/Prototyping.jpg
 ---
 

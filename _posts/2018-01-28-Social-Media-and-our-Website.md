@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Social Media and our Website
-ref: socialWeb
 lang: EN
+ref: socialWeb
+categories: [cansat2018]
 ---
 
 The day is almost over and our social media channels have been updated. Via [Twitter](https://twitter.com/Apoapsis_HGV), 

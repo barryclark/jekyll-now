@@ -3,6 +3,7 @@ layout: post
 title: Wilkommen auf unserem Blog!
 lang: DE
 ref: first
+categories: [cansat2018]
 ---
 
 Hier werdet ihr Neuigkeiten über unser Projekt erfahren, zum Beispiel Tests von Komponenten,

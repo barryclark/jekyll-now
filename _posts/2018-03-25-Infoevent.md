@@ -3,6 +3,7 @@ layout: post
 title: Infoevent on 23/03/2018
 lang: EN
 ref: hase
+categories: [cansat2018]
 teaserImage: /images/Osterhase_Die_fertigen_Plakate.jpg
 ---
 

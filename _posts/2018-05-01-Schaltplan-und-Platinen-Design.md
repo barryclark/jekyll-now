@@ -3,6 +3,7 @@ layout: post
 title: Schaltplan und Platinendesign
 lang: DE
 ref: PCBDesign
+categories: [cansat2018]
 teaserImage: /images/CanSat_PCB_V1.png
 ---
 

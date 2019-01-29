@@ -6,14 +6,21 @@ title: Über uns und das Projekt
 ref: about
 ---
 
+## Wer sind wir?
+Wir sind das Team Apoapsis aus Vaterstetten. Unsere Gruppe besteht aus acht Schülern des Humboldt-Gymnasiums Vaterstetten in Baldham bei München.
+
+
 ## Was ist ein CanSat?
 Ein CanSat ist eine Kapsel in der Größe einer handelsüblichen Getränkedose, die mithilfe einer kleinen Rakete in eine Höhe von ca. 1000m geschossen wird und daraufhin an einem Fallschirm wieder runtergleitet. Dabei sammeln die Sensoren an Bord verschiedene Daten über die Umgebung, zum Beispiel Temperatur, Druck, Position und vieles mehr. Diese Daten werden entweder in Echtzeit an eine Bodenstation übertragen oder in der Kapsel gespeichert und nach der Landung ausgelesen.
 
-Mehr Informationen über die Herausforderung gibt es auf der Website des offiziellen CanSat-Wettbewerbs 2018 unter [cansat.de](https://cansat.de)
+Mehr Informationen über die Herausforderung gibt es auf der Website des offiziellen CanSat-Wettbewerbs 2019 unter [cansat.de](https://cansat.de)
 
 
-## Wer sind wir?
-Wir sind das Team Apoapsis aus Vaterstetten. Unsere Gruppe besteht aus Niklas Cölle, Leon Hauser, Thomas Schlienz, Henrik Böving and Felix Edelmann, und wir besuchen alle die 11. Jahrgangsstufe des
-Humboldt-Gymnasiums Vaterstetten. Mit unserem CanSat wollen wir die Feinstaubkonzentration der Atmosphäre in der Luft messen. Die gesammelten Daten werden in einer Datenbank, die dann auf dieser Website hinzugefügt wird, gesammelt, und werden für jeden zugänglich sein.
+## Was macht unser CanSat?
+Unser CanSat wird während des Falls zwei Kamera-Arme ausklappen und so 3D-Aufnahmen machen. Dabei wird er mithilfe eines Reaktionrads stabilisert, damit die Aufnahmen nicht verwackeln.
 
-Inspiriert wurden wir durch das Projekt [luftdaten.info](http://luftdaten.info) des OK Lab Stuttgart, welches die Messungen von öffentlich zugänglichen Feinstaubsensoren sammelt, in Echtzeit verarbeitet und auf einer Karte öffentlich dargestellt.
+Mithilfe der stereoskopischen Aufnahmen erhoffen wir uns, mehr Informationen über das Landegebiet zu erhalten, als mit einer einzelnen Kamera. Mit den gesammelten Informationen über die Entfernung zum Boden können wir eine Höhenkarte bilden.
+
+Eine starke Drehung des CanSats könnte die Aufnahmen stark verzerren. Dem wollen wir mit dem Reaktionsrad entgegenwirken, welches die Drehung um die vertikale Achse weitestgehend stabilisieren soll.
+
+Ursprung der Idee sind die beiden CanSat Teams [LabSat](https://www.cansat.de/team-labsat) und [CASA](https://www.cansat.de/team-casa), die 2018 am CanSat Wettbewerb teilgenommen haben. Wir wollen mit unserem CanSat die Aspekte der Sekundärmission beider Teams vereinen.

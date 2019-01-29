@@ -3,6 +3,7 @@ layout: post
 title: First Construction
 lang: EN
 ref: ErsteKonstruktion
+categories: [cansat2018]
 teaserImage: /images/Assembely.jpg
 ---
 

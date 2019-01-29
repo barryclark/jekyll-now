@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Über Social Media und unsere Website
-ref: socialWeb
 lang: DE
+ref: socialWeb
+categories: [cansat2018]
 ---
 
 Der Tag ist fast rum, und unsere Social Media Kanäle wurden auf den neusten Stand

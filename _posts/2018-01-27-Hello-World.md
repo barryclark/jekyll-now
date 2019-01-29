@@ -3,6 +3,7 @@ layout: post
 title: Welcome to our Blog!
 lang: EN
 ref: first
+categories: [cansat2018]
 ---
 
 Here you will find news about our project, for example about the tests of components,

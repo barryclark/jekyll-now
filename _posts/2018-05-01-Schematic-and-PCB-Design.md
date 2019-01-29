@@ -3,6 +3,7 @@ layout: post
 title: Schematic and PCB Design
 lang: EN
 ref: PCBDesign
+categories: [cansat2018]
 teaserImage: /images/CanSat_PCB_V1.png
 ---
 
