@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Life Before and After Google - An interview with The New Stack at KubeCon+CloudNativeCon NA 2018"
+title: "My Life Before and After Google - An interview with The New Stack at KubeCon+CloudNativeCon"
 tags:
   - Video
   - "2018"
