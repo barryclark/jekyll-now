@@ -13,7 +13,25 @@ jquery: true
 
 <ul id="output"></ul>
 
-<h2 id="background">Background - Why Write Another Keyword Tool For Amazon?</h2>
+{{ ## Background - Why Write Another Keyword Tool For Amazon?
+
+With all the Amazon Keyword Tools out there, why did I bother writing and publishing another one?
+
+First and foremost - I like programming and creating things.
+
+Secondly, though, this Amazon keyword generator does something that I haven't been able to find on any of the other keyword tools - a link to the Amazon search results page for that keyword.
+
+What's so important about the search results? While keyword suggestions are nice (and an important part of this tool!) I wanted to see what the competition is for each of these keywords with one simple click. And what better place to see the competition than on Amazon itself!
+
+I knew I could generate the appropriate URL after [analysing Amazon's search URLs](https://hendrixjoseph.github.io/amazon-url-anatomy-dissection/#amazon-search-urls).
+
+I plan on using this mostly for my Merch By Amazon T-Shirt / Print-On-Demand business, but it can also be useful if you're an Amazon affiliate, Amazon FBA seller, or just sell on Amazon in general.
+
+## Technical Stuff
+
+This is all written in the browser in JavaScript and uses JQuery. You can view the source either by simply [viewing source on your browser](view-source:https://hendrixjoseph.github.io/tools/amazon-keyword-search-generator/), or you can go to [the source hosted on GitHub](https://github.com/hendrixjoseph/hendrixjoseph.github.io/blob/master/tools/amazon-search-generator.html).
+
+It uses a JSONP callback to Amazon's API, which I learned from [this post on Stackoverflow](https://stackoverflow.com/questions/31544085/using-amazons-affiliate-api-for-autocompletion). | markdownify }}
  
 <script>
 function generate() {
