@@ -4,9 +4,9 @@ title: Inspiration to write this blog ✍️
 ---
 
 13:57 Yangon  
-The third post, contains a list of pretty good blogs
+The third post contains a list of pretty good blogs
 
-Edited 19:40 Jan 22 2019 
+Edited 19:40 Jan 22, 2019 
 
 * Aaron Swartz, The Internet's Own Boy <http://www.aaronsw.com/weblog>
 * [Joseph "Joe" Leslie Armstrong][3], the creator of [Erlang programming language][4] 
@@ -46,9 +46,12 @@ I don't remember exactly where I read this from. Maybe, Twitter. They say, there
 
 So what happened now? Everyone seems gradually sucked into the platforms like Facebook. 🤷🏽‍♂️
 
-This is also one of the main reasons I ended using Facebook  and its other products. I was frustrated when I couldn't deactivate my account instantly and realized I barely own all my info posted on Facebook. Another reason is to [minimize dopamine hits][10] made from notification, likes, shares and instant chats. Starting from the second week of January 2019, I have also been trying to use only [grayscaled screen][9] on my phone. 
+This is also one of the main reasons I ended using Facebook  and its other products. I was frustrated when I couldn't deactivate my account instantly and realized I barely own all my info posted on Facebook. Another reason is to [minimize dopamine hits][10] made from notification, likes, shares and instant chats. Starting from the second week of January 2019, I have also been trying to use the [grayscaled screen][9] on my phone more often. 
 
-What I believe is that one day, for a certain extent, people will have their own profile and personal timeline. And there will be a certain decentralized platform, which will just redirect to the personal sites or scrapes the public content from those personal sites instead of storing all the users' data and personal information. And I think [Brave browser][7] is taking an initial step with that and [Basic Attention Token][8] will be common among bloggers and readers. 
+Here are the some useful setting options. 
+![alt text](https://s3-ap-southeast-1.amazonaws.com/cdn.sawthinkar/+smartinvertcolorfilers.png "Color Filters, Reduce White Point, Smart Invert ")
+
+What I believe is that one day, to a certain extent, people will have their own profile and personal timeline. And there will be a certain decentralized platform, which will just redirect to the personal sites or scrapes the public content from those personal sites instead of storing all the users' data and personal information. And I think [Brave browser][7] is taking an initial step with that and [Basic Attention Token][8] will be common among bloggers and readers. 
 
 I also have $BAT setup for this blog, and if you ever feel like supporting me, here is the [referral link][11] to download Brave. 
 
