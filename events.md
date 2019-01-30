@@ -6,7 +6,7 @@ permalink: /events/
 
 ### 2019
 
-February 25 - 28: Mobile World Congress, Barcelona
+February 24 - 28: Mobile World Congress, Barcelona
 
 March 12 - 14: Open Source Leadership Summit, Half Moon Bay
 
