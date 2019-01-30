@@ -21,8 +21,7 @@
     <a href="{{ site.url }}/sitemap/">Sitemap</a>
   </span>
   <span>Tools:
-    <a href="{{ site.url }}/tools/temperature-converson/">Temperature Conversion</a>
-    <a href="{{ site.url }}/tools/compound-interest-calculator/">Compound Interest Calculator</a>
+    {% assign tools = site.pages | where_exp: "page", "page.path contains 'tools/'" %}{% for tool in tools %}<a href="{{ site.url }}{{ tool.url }}">{{ tool.title }}</a>{% endfor %}
   </span>
   </div>
 </footer>
