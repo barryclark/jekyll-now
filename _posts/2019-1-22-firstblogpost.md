@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Hello World!
+title: Blog #1
 ---
-First Blog Post!
+Hello World!
 
 We worked on a generative art exercise and assigned project 1.
+
+Surfed the web for ideas!
