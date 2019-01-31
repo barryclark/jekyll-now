@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Computer Science Major
-Art Minor
+
 Missouri State University
 
 ### Contact me
