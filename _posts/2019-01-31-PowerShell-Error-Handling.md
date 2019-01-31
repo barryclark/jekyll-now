@@ -6,8 +6,6 @@ categories: [PowerShell, Scripting, "Best Practices"]
 tags: [powershell, pwsh, errors]
 ---
 
-Intro paragraph (this will be used as the synopsis/summary/excerpt on the post listing pages)
-
 # Different Types of Errors
 
 ## Terminating Errors
