@@ -132,7 +132,7 @@ $PSCmdlet.WriteError($ErrorRecord)
 There are no true hard-and-fast rules here.
 If one solution works especially well for what you happen to be putting together, don't let me deter
 you.
-However, I would use you to consider _both_ the impact to your users as well as yourself or your
+However, I would urge you to consider _both_ the impact to your users as well as yourself or your
 team before selecting a single-minded approach to error creation.
 Not all error scenarios are created equal, so it's very rare that I would recommend using one type
 over all others.
