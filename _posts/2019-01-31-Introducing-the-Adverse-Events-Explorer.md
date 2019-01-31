@@ -2,12 +2,13 @@
 layout: post
 title: Introducing the Adverse Events Explorer
 ---
+*This post [originally appeared](http://resources.rhoworld.com/blog/introducing-the-adverse-events-explorer) on [Rho's Corporate Blog](http://resources.rhoworld.com/blog).*
 
 In the conduct of clinical trials, few tasks are as important as monitoring and reporting adverse events (AEs). The standard method of reporting AEs is to compile detailed listings of every adverse event reported in a study. Medical monitors and regulatory bodies are then tasked with reviewing these listings to monitor patient safety and search for complications and side effects associated with an investigational product.
 
 For studies with large participant enrollment, severe diseases, complex treatments, or long treatment timelines, thousands of AEs may be reported, leading to scores of pages of listings. While comprehensive reporting is necessary, the current approach of creating page after page of listings is inefficient. Worse, this reporting approach creates a risk that that clinically-relevant safety signals will be obscured by the sheer volume of events reported.
 
-Members of Rho's Center for Applied Data Visualization (ADV) recognized an opportunity to improve upon this paradigm by creating an [interactive web-based Adverse Event Explorer](http://rhoinc.github.io/aeexplorer/test-page/), which gives study monitors a more intuitive and powerful way to query AE data in real time.
+Members of Rho's Data Science team recognized an opportunity to improve upon this paradigm by creating an [interactive web-based Adverse Event Explorer](http://rhoinc.github.io/aeexplorer/test-page/), which gives study monitors a more intuitive and powerful way to query AE data in real time.
 
 ![AE Explorer](https://resources.rhoworld.com/hs-fs/hub/161293/file-2625108093-png/ae-explorer.png?width=594&name=ae-explorer.png)
 
