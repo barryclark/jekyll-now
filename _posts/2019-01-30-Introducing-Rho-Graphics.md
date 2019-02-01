@@ -2,7 +2,6 @@
 layout: post
 title: Introducing Rho Data Visualization
 ---
-*This post [originally appeared](http://resources.rhoworld.com/blog/resourcebrcenter/rhos-blog/introducing-rhos-graphics-group-0) on [Rho's Corporate Blog](http://resources.rhoworld.com/blog).*
 
 We work in clinical research and our industry is driven by data. Every phase of our trials requires us to collect, monitor, analyze, and report data. While each of these steps is equally important, reporting is arguably the most impactful step. When we create reports, we invite our audience to interpret the data and draw meaningful conclusions.
  
@@ -19,3 +18,5 @@ Rho took these challenges to heart. In 2014, we created a Data Science team to r
 <img src="{{ site.baseurl }}/images/scatter.png" align="right" />  In support of our projects, the has developed hundreds of novel graphics for both static reports and interactive web-based use. In both cases, the response from our clients and research partners has been overwhelmingly positive. Beginning in 2015, we began taking the best of our visualizations and turning them into reusable, open source tools developed on [GitHub](https://github.com/RhoInc).  At the time of this post, we have over 50 publicly available repositories available for anyone to use.  
 
 Data visualization has tremendous potential to improve the way we communicate, understand, and interact with data. If you would like to learn more about Rho’s data visualization work, contact us: [graphics@rhoworld.com](mailto:graphics@rhoworld.com).
+
+*This post [originally appeared](http://resources.rhoworld.com/blog/resourcebrcenter/rhos-blog/introducing-rhos-graphics-group-0) on [Rho's Corporate Blog](http://resources.rhoworld.com/blog).*
