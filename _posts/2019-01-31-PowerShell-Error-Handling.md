@@ -87,7 +87,7 @@ error occurred, but continue processing the remainder of the items.
 Unlike terminating errors, non-terminating errors:
 
 * Do **not** trigger `try`/`catch` blocks.
-* Do not affect the interrupt the script's control flow.
+* Do not affect the script's control flow.
 
 ### `Write-Error`
 
