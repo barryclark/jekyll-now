@@ -218,7 +218,7 @@ MCAMC costs $10 per student. Payment at the door will not be accepted. Payment m
 **What dining options are available?**  
 
 {: .answer}
-Pizza can be preordered at \$12 per large (14-inch) pie. Schools and organizations may only purchase by the pie for the sake of efficiency. Individuals may preorder slices at \$2 per slice. If you do not wish to eat pizza, the College Center ([building CC on this map](https://www.middlesexcc.edu/campus-map/)) has a food court. Prices at the food court are around $8 per person. Students must be accompanied by an adult if leaving designated competition areas, and MCAMC will not be held responsible while students are away with an adult.
+Pizza can be preordered at <span>$</span>12 per large (14-inch) pie. Schools and organizations may only purchase by the pie for the sake of efficiency. Individuals may preorder slices at <span>$</span>2 per slice. If you do not wish to eat pizza, the College Center ([building CC on this map](https://www.middlesexcc.edu/campus-map/)) has a food court. Prices at the food court are around $8 per person. Students must be accompanied by an adult if leaving designated competition areas, and MCAMC will not be held responsible while students are away with an adult.
 
 {: .question}
 **Are there T-shirts?**  
