@@ -32,7 +32,7 @@ meta: |
 MCAMC brings an exciting new type of math competition to the middle school audience — one that involves working together as a team with your friends. In contrast to other competitions that only involve working independently, get ready for a day filled with collaboration and action! 
 
 ## Recent Updates
-February 1, 2019: We apologize for the delay in releasing sample questions. Sample questions will be released at 4PM EST on February 2, 2019.
+**February 1, 2019:** We apologize for the delay in releasing sample questions. Sample questions will be released at 4PM EST on February 2, 2019.
 
 ## Important Dates
 
