@@ -32,6 +32,8 @@ meta: |
 MCAMC brings an exciting new type of math competition to the middle school audience — one that involves working together as a team with your friends. In contrast to other competitions that only involve working independently, get ready for a day filled with collaboration and action! 
 
 ## Recent Updates
+**February 2, 2019:** Sample questions are released! Please scroll down the Sample Questions section to try them.
+
 **February 1, 2019:** We apologize for the delay in releasing sample questions. Sample questions will be released at 4PM EST on February 2, 2019.
 
 ## Important Dates
@@ -128,7 +130,13 @@ Both individual awards and team awards will be given. Please stay tuned for deta
 <!-- Awards will be given to the top 15 individuals, the top 10 teams in Team Round, the top 10 teams in Live Round, and the top 10 teams overall. Additional prizes will be given to the top 5 individuals and top 5 teams overall. We'll be announcing what these prizes are soon, so keep an eye out! -->
 
 ## Sample Questions
-Sample questions will be posted by January 31, 2019.
+[Sample Individual](https://www.mcamath.com/pdf/Sample%20Individual.pdf)
+
+[Sample Team](https://www.mcamath.com/pdf/Sample%20Team.pdf)
+
+[Sample Live](https://www.mcamath.com/pdf/Sample%20Live.pdf)
+
+[Sample Answers](https://www.mcamath.com/pdf/Sample%20Answers.pdf)
 
 ## Location
 <div class="mapouter">
