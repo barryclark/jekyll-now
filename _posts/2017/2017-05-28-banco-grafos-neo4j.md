@@ -4,7 +4,7 @@ permalink: "/2017/04/banco-grafos-neo4j.html"
 categories: [java, nosql, banco de dados, ferramentas, grafos]
 ---
 
-O modelo relacional de banco de dados é provavelmente o mais utilizado pelas aplicações para a grande maioria das soluções de software, mas como vimos no [post sobre Nosql]({{ site.baseurl }}{% post_url 2017-01-28-o-que-devo-saber-sobre-nosql %}) existem outras alternativas para os problemas em que o relacional não atende bem. Uma dessas alternativas é o banco de grafos que foca nos relacionamentos dos registros, ajudando a obter informações complexas muito rapidamente. Nesse artigo será mostrada uma introdução sobre banco de grafos e o Neo4j, dando uma idéia sonbre a tecnologia.
+O modelo relacional de banco de dados é provavelmente o mais utilizado pelas aplicações para a grande maioria das soluções de software, mas como vimos no [post sobre Nosql]({{ site.baseurl }}{% post_url /2017/2017-01-28-o-que-devo-saber-sobre-nosql %}) existem outras alternativas para os problemas em que o relacional não atende bem. Uma dessas alternativas é o banco de grafos que foca nos relacionamentos dos registros, ajudando a obter informações complexas muito rapidamente. Nesse artigo será mostrada uma introdução sobre banco de grafos e o Neo4j, dando uma idéia sonbre a tecnologia.
 
 > "É um erro terrível teorizar antes de termos informação."
 >
