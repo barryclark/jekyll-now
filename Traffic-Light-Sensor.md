@@ -94,6 +94,16 @@ Most traffic lights work by changing to green when it knows a car is approaching
 
 We're going to change our traffic light to green when we know a car less than 15cm away from the sensor, and if it isn't then turn it red.
 
-We need an if..else block, and a comparison block. Both of these can be found inside Logic in your toolbox.
+We need an if..else block, and a comparison block. Both of these can be found inside Logic in your toolbox. 
+
+You can also find the `Distance` block under Variables.
 
 ![Instruction 6](/images/MicroBits/Distance-6.png "Instruction 6")
+
+The top section will be tell the other Microbit to turn the traffic lights green, and the bottom section will be to turn them red.
+
+To do this, we're going to send a radio string of either STOP or GO to the other Microbit.
+
+![Instruction 7](/images/MicroBits/Distance-7.png "Instruction 7")
+
+Well Done! You've now finished all the code for your distance sensor. If your partner is struggling then make sure to give them a hand.
