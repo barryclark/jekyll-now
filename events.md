@@ -9,6 +9,7 @@ permalink: /events/
 February 24 - 28: Mobile World Congress, Barcelona
 
 March 4 - 6: QCon, London
+* Talk on "Architecting for the Cloud / Streaming Architectures" track
 
 March 12 - 14: Open Source Leadership Summit, Half Moon Bay
 
