@@ -8,7 +8,7 @@ permalink: /events/
 
 February 24 - 28: Mobile World Congress, Barcelona
 
-March 4 - 6: Open Source Leadership Summit, Half Moon Bay
+March 4 - 6: QCon, London
 
 March 12 - 14: Open Source Leadership Summit, Half Moon Bay
 
