@@ -17,7 +17,7 @@ permalink: /feed.xml
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.excerpt | xml_escape }}</description>
-        <content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
+        <content:encoded><![CDATA[{{ post.content | remove: "?tag=hendrixjoseph-20" | remove: "&tag=hendrixjoseph-20" }}]]></content:encoded>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <dc:creator>JoeHx</dc:creator>
         <link>{{ site.url }}{{ post.url }}</link>
