@@ -14,27 +14,27 @@ As the tools in experiments neuroscience are rapidly developing, this is an impo
 * recent advances in theoretical neuroscience
 * popular theories in neuroscience
 
-Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Seminar Room. 
+Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Seminar Room.
 
 **Join the club** by joining the [SBU Computational Neuroscience Google Group](https://groups.google.com/d/forum/sbu-computational-neuroscience/join)
 
-# 2018 Fall Schedule
-
-- September 10th: Braden Brinkman 
-- September 17th: Logan Becker 
-- September 24th: Sima Mofakham
-- October 1st: Giancarlo LaCamera
+# 2019 Spring Schedule
+- February 11th: Ian Jordan
+- February 18th: Piotr Sokół
+- February 25th:
+- March 3rd: No JC - Cosyne
+- March 11th: Giancarlo La Camera
+- March 18th:
+- March 25th:
+- April 1st: No JC - Prof. Tononi's lecutre
+- April 8th: Josue Nassar
+- April 15th: Junyan Song
+- April 22nd:
+- April 29nd:
+- May 6th: Tong
+- May 13th: Yanliang Shi
+- May 20th: Sima Mofakham
 - October 8th: No JC - Fall Break
-- October 15th: Yuan Zhao
-- October 22nd: Piotr Sokol
-- October 29th: Jake Crosser
-- November 5th: No JC - SFN
-- November 12th: Memming Park
-- November 19th: JunYan Song
-- November 26th: Yanliang Shi
-- December 3rd:  No JC
-- December 10th: Josue Nassar 
-- December 17th: Ian Jordan
 
 You can pick or [**suggest papers**](https://www.google.com/url?q=https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/edit?usp%3Dsharing&sa=D&ust=1472068897083000&usg=AFQjCNF5f_dZMloe4l3jWOm_mhxe7utbqw) to be discussed.
 
