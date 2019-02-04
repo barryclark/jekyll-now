@@ -2,7 +2,7 @@
 layout: post
 title:  ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness(2018)
 category: journalclub
-olddate: 2019-02-11
+olddate: February 11, 2019
 ---
  
 *Robert Geirhos, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, Wieland Brendel*. Stimulus- and goal-oriented frameworks for understanding natural vision, ICLR 2019 (2018) 
