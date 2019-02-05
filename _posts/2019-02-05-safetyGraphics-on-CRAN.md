@@ -1,6 +1,6 @@
 ---
 layout: post
-title: safetyGraphics are live
+title: safetyGraphics R Library released to CRAN
 ---
 
 We're excited to report that the `safetyGraphics` R package is now on [CRAN](https://cran.r-project.org/web/packages/safetyGraphics/index.html)!  `safetyGraphics` is designed to make it easy to create create interactive graphics related to clinical trial safety. We're still in beta, but are very excited about the progress so far - here's a sneak peek: 
