@@ -35,6 +35,8 @@ Connect any one of your white crocodile clips to GND on your microbit, and conne
 
 Take your distance sensor and insert it facing away from your wires, **if you're not sure then please ask.**
 
+![Instruction 10](/images/MicroBits/Distance-10.jpg "Instruction 10")
+
 Congratulations! You should have now successfully connected your sensor to your Microbit. 
 
 **Make sure to get it checked before you continue.**
