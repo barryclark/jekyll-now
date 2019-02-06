@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Six Essential Items for Reselling on eBay and Amazon
+title: Six Essential Items for Reselling Online
 tags: [money]
-keywords: [ebay, amazon, thrift store, thrift stores, garage sale, garage sales, resell, reselling, ship, shipping, mailer, label, shipping label, flip, flipping]
+keywords: [ebay, thrift store, thrift stores, garage sale, garage sales, resell, reselling, ship, shipping, mailer, label, shipping label, flip, flipping]
 image: /images/covers/flipping-cover.png
 ---
 
-Earlier this year I started a new hobby - flipping things I find at garage sales, thrift stores, and even regular retail stores. Flipping essentially means I sell it elsewhere more than what I paid for. I sell most of these items on eBay, and some on Amazon, which means I need to ship these items. There are a few things I've found essential for shipping, and here's a list of six of them:
+Earlier this year I started a new hobby - flipping things I find at garage sales, thrift stores, and even regular retail stores. Flipping essentially means I sell it elsewhere more than what I paid for. I sell most of these items on eBay, which means I need to ship these items. There are a few things I've found essential for shipping, and here's a list of six of them:
 
 ## [0. Postal Scale](https://www.amazon.com/s/?url=search-alias=office-products&field-keywords=postal+scale&n=1068986&tag=hendrixjoseph-20)
 
-How did I forget this? When you ship things on Amazon or eBay, you need to know how much it weighs. This is simply because you'll be purchasing shipping through Amazon or eBay because they offer a discount over what you'd pay at USPS at the counter.
+How did I forget this? When you ship things on eBay, you need to know how much it weighs. This is simply because you'll be purchasing shipping through eBay because they offer a discount over what you'd pay at USPS at the counter.
 
 This is so important I'm making it the zeroth item. Also zeroth so I can keep the title.
 
