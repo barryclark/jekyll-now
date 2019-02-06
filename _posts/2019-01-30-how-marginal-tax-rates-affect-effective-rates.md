@@ -11,6 +11,8 @@ Perhaps it's old news by now, but Alexandria Ocasio-Cortez ("AOC") recently prop
 
 A marginal tax is one that brackets income into two or more amounts, and only those amounts in that bracket are taxed at that rate (there will be an example below). A progressive marginal tax is one where the tax brackets on higher incomes are taxed more, as opposed to a regressive marginal tax where the tax brackets on lower incomes are taxed more. The US uses a progressive marginal income tax. I know of nowhere that uses a regressive model.
 
+> Confused about how marginal tax rates work in general? Check out Time In the Market's post [A Simple Explanation of How Tax Brackets Work](https://timeinthemarket.com/a-simple-explanation-of-how-tax-brackets-work/).
+
 The myth that crossing a tax bracket threshold means that you will make less money is strong. I first remember hearing people saying that they make less money due to taxes during my high school pizza-slinging job, and have even heard it said at my current white-collared software engineering job:
 
 * "I actually make less now after the promotion, thanks to taxes!"
