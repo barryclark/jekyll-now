@@ -83,7 +83,9 @@ We now need a new block `on radio received receivedString` for when the distance
 
 ![Instruction 5](/images/MicroBits/LED-5.png "Instruction 5")
 
-We just need to check which string we are getting. Inside Logic on your toolbox, you'll find an `if..else` block, and a comparison block `0 = 0`. 
+We just need to check which string we are getting. Inside Logic on your toolbox, you'll find an `if..else` block, and a comparison block `0 = 0`.
+
+Also under Text you will find a block which lets you type in a string.
 
 ![Instruction 6](/images/MicroBits/LED-6.png "Instruction 6")
 

@@ -31,7 +31,7 @@ Next, attach one end of your crocodile clips to the ends of your wires. The colo
 
 Now we need to connect our sensor to the Microbit and to our battery. Connect the red crocodile clip to Pin 0 on your Microbit, and the green on to Pin 1.
 
-Connect any one of your white crocodile clips to GND on your microbit, and connect the other to the red wire on your large battery pack. Finally, connect the yellow crocodile clip to the black wire on your large battery pack.
+Connect any one of your white crocodile clips to GND on your microbit, and connect the other to the **black** wire on your large battery pack. Finally, connect the yellow crocodile clip to the **red** wire on your large battery pack.
 
 Take your distance sensor and insert it facing away from your wires, **if you're not sure then please ask.**
 
@@ -71,6 +71,8 @@ You are looking for 'Sonar', once you click on it, it will be added to your tool
 We need a place to store how far away our car is from the sensor, so we need to create a variable to do so.
 
 Inside you toolbox look for `Variables` then the button for to create a variable. Let's call this "Distance"
+
+Also create a "State" variable for later.
 
 You can then drag the `Set Distance to 0` block into the `forever` block.
 
