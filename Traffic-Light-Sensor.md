@@ -72,7 +72,7 @@ We need a place to store how far away our car is from the sensor, so we need to 
 
 Inside you toolbox look for `Variables` then the button for to create a variable. Let's call this "Distance"
 
-Also create a "State" variable for later.
+Also create a "State" variable for later.;
 
 You can then drag the `Set Distance to 0` block into the `forever` block.
 
