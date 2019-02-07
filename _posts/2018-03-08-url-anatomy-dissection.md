@@ -37,13 +37,13 @@ An --- product URL links to a unique product. In the case of the Nintendo Switch
 
     /Nintendo-Switch-Neon-Blue-Red-Joy/dp/B01MUAGZ49/ref=sr_1_2?s=videogames&ie=UTF8&qid=1520015026&sr=1-2&keywords=nintendo%2Bswitch&th=1
 
-![--- Product URL 01](/images/screenshots/product-url-01.png)
+![--- Product URL 01](/images/screenshots/url-01.png)
 
 After I removed all the URL parameters, I found that the page is mostly unchanged:
 
     /Nintendo-Switch-Neon-Blue-Red-Joy/dp/B01MUAGZ49/ref=sr_1_2
 
-![--- Product URL 02](/images/screenshots/product-url-02.png)
+![--- Product URL 02](/images/screenshots/url-02.png)
 
 The biggest change is that the search box is now empty.
 
@@ -51,13 +51,13 @@ Playing around with the URL, I found out you can remove both the "ref=" part and
 
     /dp/B01MUAGZ49/
 
-![--- Product URL 03](/images/screenshots/product-url-03.png)
+![--- Product URL 03](/images/screenshots/url-03.png)
 
 In fact, you can change the product description, and the page is the same:
 
     /totally-not-a-nintendo-switch/dp/B01MUAGZ49/
 
-![--- Product URL 04](/images/screenshots/product-url-04.png)
+![--- Product URL 04](/images/screenshots/url-04.png)
 
 I believe, and what most other people believe, is that the in-URL product description is mostly an SEO tactic. What's important is having the "/dp/" part and the "B01MUAGZ49" part.
 
