@@ -2,7 +2,7 @@
 layout: post
 title: "Case Study: Facebook Boost Post"
 tags: [facebook, money]
-keywords: [facebook post, facebook boost post, boost post, boosted post, merch by amazon, t-shirt, shirt]
+keywords: [facebook post, facebook boost post, boost post, boosted post, t-shirt, shirt]
 image: /images/facebook-boost-results/facebook-boost-target.png
 ---
 
