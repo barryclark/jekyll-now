@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scooters: Where to Prioritize Improvements
+title: Austin Scooter Trip Density Map
 ---
 Where should we implement changes to reduce dockless vehicle parking problems?
 
