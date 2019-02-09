@@ -14,7 +14,7 @@ It's hard to believe it's Spring already. But since it's the twentieth, it's tim
 It's been rather slow on the blog side of things as I've only been able to write three posts:
 
 * [Bathroom Remodel - I've Done This Before](https://hendrixjoseph.github.io/bathroom-remodel-ive-done-this-before/)
-* [Amazon URL Anatomy Dissection](https://hendrixjoseph.github.io/amazon-url-anatomy-dissection/)
+* [--- URL Anatomy Dissection](https://hendrixjoseph.github.io/url-anatomy-dissection/)
 * [Master Bath Remodel: Demolition](https://hendrixjoseph.github.io/master-bath-remodel-demolition/)
 
 None of these posts I felt were stellar, but they're something. I also didn't finish any books in February, so I wasn't able to do a "books I finished" post. I do have a few topics for more article-type blog posts sitting in my head, but it's been a busy month with school, my new position at work, remodeling the bathroom, and preparing for a baby. (Which makes me think, I'll probably make a post on the costs of preparing for a baby!)
