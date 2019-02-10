@@ -17,7 +17,7 @@ Java Day Tokyo, JPoint (Russia), Serverless NYC, JCConf (Taiwan), DevOpsCon (Ger
 JPrime (Bulgaria), ConFoo Montreal, GeeCon (Krakow), JFokus (Sweden), JavaZone (Norway), JNation (Portugal), Heapcon (Serbia), 
 JDK.IO (Danemark), JDD (Krakow), Voxxed Days (Banff, Bucharest, Minsk, Zürich, Belgrade, Vienna, Cluj-Napoca, Vilnius), 33rd Degree (Krakow), 
 LavaOne (Hawaii), JavaLand (Germany), CodeMotion (Israel), Oracle Code (Paris, Tel Aviv, Berlin, London), 
-Oracle OpenWorld (San Francisco, Moscow), SnowCamp (France), India Dev Days, Java'Cro (Croatia), 
+Oracle OpenWorld (San Francisco, Moscow, London, Dubai), SnowCamp (France), India Dev Days, Java'Cro (Croatia), 
 Java'SI (Slovenia), Jazoon (Switzerland), RigaDevDays (Latvia), JBCN (Spain), JJUG CCC (Japan),
 Open Source Day Zagreb, Magdeburg DevDays (Germany), EclipseCon (Germany), SoftShake Geneva, JVM-Con (Germany), 
 Java2Days (Bulgaria), QCon London, JAX London, Oracle Developer Day South Africa, Java Day São Paulo, 
