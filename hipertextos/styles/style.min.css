@@ -1247,7 +1247,7 @@ nav label {
 .simple article,
 #layout-simple:checked ~ #layout-result article {
 	border: none;
-	border-top: 1px solid var(--color-softgrey);
+	border-top: 0px;
 	padding: 16px 0;
 }
 .simple article h3,
@@ -1264,25 +1264,18 @@ nav label {
 }
 .simple article div img,
 #layout-simple:checked ~ #layout-result article div img {
-	height: 254px;
-	margin-bottom: 16px;
+	height: 310px;
+	margin-bottom: 6px;
 	object-fit: cover;
 	width: 100%;
 }
 .simple article nav,
 #layout-simple:checked ~ #layout-result article nav {
-	border-color: transparent;
-	text-align: center;
+	display:none;
 }
 .simple article nav a,
 #layout-simple:checked ~ #layout-result article nav a {
-	background-color: var(--color-softgrey);
-	border-radius: 50%;text-decoration:none;
-	color: #fff;
-	height: 65px;
-	line-height: 65px;
-	padding: 0;
-	width: 62px;
+	display:none;
 }
 
 /* List view */
@@ -1293,16 +1286,16 @@ nav label {
 	border-top: 1px solid var(--color-grey);
 	height: 280px;
 	margin: 0;
-	padding: 2px 0 0;
+	padding: 0;
 }
 .list article h3,
 #layout-list:checked ~ #layout-result article h3 {
-	margin: 0;
-	padding: 0 64px 0 0;
+	margin: 0;line-height:1em;
+	padding-top: 21px;
 }
 .list article strong,
 #layout-list:checked ~ #layout-result article strong {
-	font-size: 15px;float:right;font-weight:300;
+	font-size: 13px;float:right;font-weight:300;
 	margin:0;color:var(--color-grey);
 }
 .list article div,
@@ -1314,12 +1307,12 @@ nav label {
 }
 .list article div img,
 #layout-list:checked ~ #layout-result article div img {
-	border-radius: 12%;
-	height: 120px;
+	border-radius: 6%;
+	height: 150px;
 	float: left;
-	margin: 0 23px 0 0;
+	margin: 0 12px 0 0;
 	object-fit: cover;	
-	width: 120px;
+	width: 150px;
 }
 .list article nav,
 #layout-list:checked ~ #layout-result article nav {
@@ -1328,7 +1321,7 @@ nav label {
 	position: absolute;
 	right: 0; top: 0; bottom: 0;
 	text-align: center;
-	width: 48px;
+	width: 50px;
 }
 .list article nav a,
 #layout-list:checked ~ #layout-result article nav a {
@@ -1336,9 +1329,9 @@ nav label {
 	border-color: transparent;
 	color: #fff;text-decoration:none;
 	line-height: 32px;
-	height: 48px;
+	height: 50px;
 	padding: 7px 0;
-	width: 48px;
+	width: 50px;
 }
 @media (max-width: 767px) {
     .list article div img,
@@ -1462,16 +1455,16 @@ nav label {
 }
 .gallery article h3,
 #layout-gallery:checked ~ #layout-result article h3 {
-	font-size: 25px;
+	font-size: 20px;
 	height: 30px;
-	line-height: 27px;
+	line-height: 26px;
 	margin: 0;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	overflow: hidden;position:absolute;left:6px;
+	text-overflow: ellipsis;text-align:left;
 }
 .gallery article strong,
 #layout-gallery:checked ~ #layout-result article strong {
-	height: 16px;
+	display:none;
 }
 .gallery article div,
 #layout-gallery:checked ~ #layout-result article div {
@@ -1498,13 +1491,11 @@ nav label {
 #layout-gallery:checked ~ #layout-result article nav a {
 	background-color: transparent;
 	border-color: transparent;
-	color: #fff;
+	color: rgba(255,255,255,0.12);
 }
 .gallery article:hover nav a,
 #layout-gallery:checked ~ #layout-result article:hover nav a {
-	background-color: #fff;
-	border-color: #fff;
-	color: #000;
+	color: #fff;text-decoration:none;text-shadow: 1px 2px 9px rgba(0,0,0,.9) 
 }	
 
 /* Cards view */
@@ -1524,25 +1515,24 @@ nav label {
 }
 .cards article:hover,
 #layout-cards:checked ~ #layout-result article:hover {
-	box-shadow: 0 2px 6px rgba(0,0,0,.6);
+	box-shadow: 0 2px 12px rgba(0,0,0,.23);
 }
 .cards article h3,
 #layout-cards:checked ~ #layout-result article h3 {
-	font-size: 20px;
-	height: 30px;
-	line-height: 25px;
+	font-size: 18px;
+	height: 21px;
+	line-height: 12px;
 	margin: 0;
 	padding: 0 4px;
 	overflow: hidden;
 }
 .cards article strong,
 #layout-cards:checked ~ #layout-result article strong {
-	height: 16px;background:var(--color-blue);color:#fff;
-	padding: 3px 80% 8px 6px;width:100%;overflow:hidden;
+	display:none;
 }
 .cards article div,
 #layout-cards:checked ~ #layout-result article div {
-	height: 186px;
+	height: 175px;
 	overflow: hidden;
 	padding: 0;
 }.cards article div img,
@@ -1671,6 +1661,7 @@ nav label {
 			width: 100%;
 	}
 }
+
 
 /* ------------------------------------------------------------ Components */
 
