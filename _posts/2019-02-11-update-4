@@ -1,0 +1,36 @@
+---
+layout: post
+title: End of Discovery!
+lang: en
+ref: update-4
+---
+
+Since early November, we have been in a project phase known as Discovery. During this phase, we undertook:
+-	User and domain research
+-	One-on-one meetings with internal stakeholders
+-	Technical research
+-	Identified areas of opportunity
+-	Laid groundwork for Agile workflows
+This looks like a perfect blend of Technical Feasibility, while balancing Business and User Needs.
+
+**What we’ve Been Up to: User Research**
+-	We spoke to people in four categories: Current Managers, Scorers, Test Administrators, and Prospective Managers (i.e. Supervisors or Team Leaders)
+-	We spoke to a total of 28 people in 15 cities in 5 provinces, and the National Capital Region
+-	We conducted interviews in French and English, to reflect the reality of people managing in the federal public service 
+-	We also conducted a number of field studies, where we observed: Current Managers in their work environments, as well as testing and scoring sessions
+If you’re interested in the full findings of our UX Research, visit this post: https://code-for-canada.github.io/psc-updates/update-3/
+
+Development
+-	In December, the technical stack we proposed (which included: React, Python, Django, and Nginx) was the first of its kind in 15+ years
+-	Since its approval, we have successfully implemented these new technologies on our local machines, and created a skeleton application using all of these
+-	Established best practices for code reviews, automated unit testing, linting, and services like Snyk, to ensure our code is consistent and secure
+
+**What We’re Currently Working On:**
+-	Continuing to work through challenges in establishing a new deployment process using Docker (a containerization software)
+-	Re-visiting the research conducted by the PPC
+-	Establish product look and feel
+
+**What’s Coming Up in February?**
+-	Beginning to validate existing eMIB wireframes based on our user research
+-	Ongoing user research to fill in gaps
+-	Prototyping product ideas
