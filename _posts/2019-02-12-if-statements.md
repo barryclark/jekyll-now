@@ -16,7 +16,7 @@ def some_function(a, b, c):
 	return "a not foo"
 ```
 These sort of nested if statements are common practice, and seem the easiest way to go for the programmer.
-```
+```python
 if a is True:
 	if b is True:
 		do z
@@ -30,7 +30,8 @@ For example, what if you needed 4 different checks, all with their own return st
 A method I saw used recently and instantly began integrating into my code base is the following idea: 
 
 **Return the desired value as the default.**
-```
+
+```python
 if a is not True:
 	do x
 if b is not True:
@@ -40,6 +41,7 @@ do z
 I think it's clear to see how this is much easier to read, and requires fewer comments. The checks guide the reader through the decision making, giving an immediate response to any checks which don't pass. Rather than scrolling down past the entire 'true' block of the `if` statement to see the `else` behaviour, it is directly below. It also brings the code back down to a friendlier indentation level, preventing it from straying off screen due as the complexity of any checks increases.
 
 With this style our example function becomes:
+
 ```python
 def some_function(a, b, c):
 	if a != 'foo':
