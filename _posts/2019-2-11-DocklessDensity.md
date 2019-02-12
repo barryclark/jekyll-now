@@ -6,7 +6,7 @@ Where should we implement changes to reduce dockless vehicle parking problems?
 
 [A few weeks ago the City of Austin published the live-updating dockless mobility trip dataset.](https://data.austintexas.gov/Transportation-and-Mobility/Dockless-Vehicle-Trips/7d8e-dm7r) The data goes back to April 2018. 
 
-To show where scooters are being parked around the city, I mapped the sum of trips originating and ending in Austin (minimum 20k total trips). Regardless of a scooter trip beginning or ending, a scooter will need to be parked somewhere. From this map we can see where the parking-related impacts will be the highest around the city. 
+To show where scooters are being parked around the city, I mapped where people pick up and park scooters. On the map is this shown as the sum of trips originating and ending in Austin (minimum 20k total trips). Regardless of a scooter trip beginning or ending, a scooter will need to be parked somewhere. From this map we can see where the highest parking-related impacts will be found around the city. 
 
 <iframe width="100%" height="520" frameborder="0" src="https://thomashenry.carto.com/builder/6d1bca14-3cf1-403f-ad03-9a997e7dd71a/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
