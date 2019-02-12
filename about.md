@@ -4,11 +4,11 @@ title: About Me
 permalink: /about/
 ---
 
-I am a senior at the University of Texas studying aerospace engineering. 
+Recent grad from UT Austin, Transportation Engineer. 
 
 I enjoy maps, planes, data, transportation, and coffee.
 
-Everything on this blog was done for fun, free, and is for everyone.
+Everything on this blog was done for fun, free, and is for everyone to enjoy. 
 
 
 ### Contact me
