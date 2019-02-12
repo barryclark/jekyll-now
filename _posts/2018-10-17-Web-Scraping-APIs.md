@@ -4,7 +4,7 @@ title: Web Scraping - APIs
 ---
 
 
-This is a follow up to my [first post](https://gerket.github.io/Web-Scraping-HTML/) about web scraping with HTML. As previously discussed, web scraping is the act of pulling information directly off of the internet. This is an important skill to have as a data scientist because we won't always have the data that we want in nice, clean databases or `.csv` files. Sometimes we'll have to get the data for ourselves. In the case of getting data from websites, we look to web scraping. Here I'm going to collect information about a specific Pokemon, Growlithe, from [pokeapi.co]( https://pokeapi.co).
+This is a follow up to my [first post](https://gerket.github.io/Web-Scraping-HTML/) about web scraping with HTML. As previously discussed, web scraping is the act of pulling information directly off of the internet. This is an important skill to have as a data scientist because we won't always have the data that we want in clean, local databases or `.csv` files. Sometimes we'll have to get the data for ourselves. In the case of getting data from websites, we look to web scraping. Here I'm going to collect information about a specific Pokemon, Growlithe, from [pokeapi.co]( https://pokeapi.co).
 
 There are multiple ways of scraping data off of the internet. Last time I discussed pulling the HTML of the website directly and parsing through that data. Another way to scrape data is through the use of an API. An API, or Application Program Interface, is a tool made by the programmers of a website to help other programmers interact with their data or other aspects of their site.
 
