@@ -4,8 +4,8 @@ title:  Spike-timing-dependent ensemble encoding by non-classically responsive c
 category: journalclub
 olddate: February 18, 2019
 ---
-
-*b'Michele N Insanally, Ioana Carcea, Rachel E Field, Chris C Rodgers, Brian DePasquale, Kanaka Rajan, Michael R DeWeese, Badr F Albanna, Robert C Froemke, Stephanie Palmer'*. eLife (2019)
+ 
+*Michele N Insanally, Ioana Carcea, Rachel E Field, Chris C Rodgers, Brian DePasquale, Kanaka Rajan, Michael R DeWeese, Badr F Albanna, Robert C Froemke, Stephanie Palmer*. eLife (2019) 
 [(eLife)](https://doi.org/10.7554/eLife.42409)
 [(local cache)]({{site.url}}/journalclub/JCpapers/Insanally-STDE.pdf)
 
