@@ -16,6 +16,7 @@ def some_function(a, b, c):
 	return "a not foo"
 ```
 These sort of nested if statements are common practice, and seem the easiest way to go for the programmer.
+
 ```python
 if a is True:
 	if b is True:
