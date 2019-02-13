@@ -9,7 +9,7 @@ name: Duy's blog
 description: Just a UIT student
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /data/logo.png
+avatar:
 
 #
 # Flags below are optional
