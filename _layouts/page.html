@@ -1,12 +1,23 @@
----
-layout: default
----
-
-<article class="page">
-
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-</article>
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include html_meta %}
+    <title>How to use MathJax in Jekyll generated Github pages -- Haixing Hu's Homepage</title>
+    <link href="/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    {% if page.use_math %}
+      {% include mathjax_support %}
+    {% endif %}
+  </head>
+  <body>
+    {% include navigation_bar %}
+    <div class="container-narrow">
+      <div class="content">
+        {{ content }}
+      </div>
+      <hr/>
+      {% include footer %}
+    </div>
+    {% include JB/analytics %}
+  </body>
+</html>
