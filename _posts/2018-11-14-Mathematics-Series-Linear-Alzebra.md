@@ -16,9 +16,9 @@ A good understanding of linear alzebra in essential for understanding and workin
 Content:
 1. Terminology
 2. Assumption-
-      Multiplying Mateicses and Vectors
-     Identity adn Iverse Matrix
-     Norms
+      Multiplying Matrix and Vectors
+      Identity and Inverse Matrix
+      Norms
       Deteminant    
  3. Linear Dependence Span
  4. Special Kind of Matricses
@@ -29,9 +29,9 @@ Content:
 1. Scalar - A scalar is just a single number.
 I will be writing Scalar in Italic lower-case letter in italics. For example
 
-Scalar \mathit{s}
+Scalar $$\mathit{s}
 
 2. Vector - A Vecor is an array of numbers.
 I will write them in  Bold lower case letter. For example
 
-Vector \mathbf{v} 
+Vector $$\mathbf{v} 
