@@ -6,6 +6,7 @@ use_math: true
 ---
 
 
+Visisble change 
 Machine learning is one of the most hot topics right now. But before diving into this topic we need proficiency in some major topics in mathematcis i.e. Probability, Information Theory, Linear Alzebra, Diffrentiation and Integration. 
 
 I will be discussing Linear Alzebra in this blog. I will also write a blog about the remaining topics in the upcoming blog so please stay tuned.
