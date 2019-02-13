@@ -2,7 +2,7 @@
 layout: post
 title:  "Mathemactics Linear Alzebra"
 categories: jekyll mathematics programming
-math: true
+use_math: true
 ---
 
 
