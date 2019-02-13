@@ -12,4 +12,4 @@ Full-Stack Developer, grado en ingeneria inform√°tica especializado en tecnolog√
 
 ### Contact me
 
-[tariik21@gmail.com](mailto:email@domain.com)
+[khalfaoui.t@hotmail.com](mailto:email@domain.com)
