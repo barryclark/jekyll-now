@@ -6,11 +6,11 @@ permalink: /publications/
 
 **Vulnerability to snakebite envenoming: a global mapping of hotspots**
 
-Lancet 2018-07
+##### Lancet 2018-07
 
-_Summary_
-_Background_**
-_Snakebite envenoming is a frequently overlooked cause of mortality and morbidity. Data for snake ecology and existing snakebite interventions are scarce, limiting accurate burden estimation initiatives. Low global awareness stunts new interventions, adequate health resources, and available health care. Therefore, we aimed to synthesise currently available data to identify the most vulnerable populations at risk of snakebite, and where additional data to manage this global problem are needed._
+##### _Summary_ 
+##### _Background_** 
+##### <i>Snakebite envenoming is a frequently overlooked cause of mortality and morbidity. Data for snake ecology and existing snakebite interventions are scarce, limiting accurate burden estimation initiatives. Low global awareness stunts new interventions, adequate health resources, and available health care. Therefore, we aimed to synthesise currently available data to identify the most vulnerable populations at risk of snakebite, and where additional data to manage this global problem are needed.</i>
 
 _Methods_**
 _We assembled a list of snake species using WHO guidelines. Where relevant, we obtained expert opinion range (EOR) maps from WHO or the Clinical Toxinology Resources. We also obtained occurrence data for each snake species from a variety of websites, such as VertNet and iNaturalist, using the spocc R package (version 0.7.0). We removed duplicate occurrence data and categorised snakes into three groups: group A (no available EOR map or species occurrence records), group B (EOR map but <5 species occurrence records), and group C (EOR map and ≥5 species occurrence records). For group C species, we did a multivariate environmental similarity analysis using the 2008 WHO EOR maps and newly available evidence. Using these data and the EOR maps, we produced contemporary range maps for medically important venomous snake species at a 5 × 5 km resolution. We subsequently triangulated these data with three health system metrics (antivenom availability, accessibility to urban centres, and the Healthcare Access and Quality [HAQ] Index) to identify the populations most vulnerable to snakebite morbidity and mortality._
