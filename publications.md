@@ -8,6 +8,7 @@ permalink: /publications/
 
 <i> Lancet (2018-07) </i>
 
+<a href = "pubs/1-s2.0-S0140673618312248-main.pdf" download target = "_blank">Click here to download pdf</a>
 ---
 
 [Existing and potential infection risk zones of yellow fever worldwide: a modelling analysis](https://www.ncbi.nlm.nih.gov/pubmed/29398634)
