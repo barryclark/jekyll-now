@@ -8,8 +8,9 @@ permalink: /publications/
 
 <i> Lancet (2018-07) </i>
 
-<img src="https://github.com/joshlongbottom/joshlongbottom.github.io/raw/master/images/pdf_dl_icon.png" height="42" width="42" href = "https://github.com/joshlongbottom/joshlongbottom.github.io/raw/master/pubs/1-s2.0-S0140673618312248-main.pdf" download>
-
+<a href = "https://github.com/joshlongbottom/joshlongbottom.github.io/raw/master/pubs/1-s2.0-S0140673618312248-main.pdf" download>
+	<img src="https://github.com/joshlongbottom/joshlongbottom.github.io/raw/master/images/pdf_dl_icon.png" height="42" width="42"> 
+</a>
 ---
 
 [Existing and potential infection risk zones of yellow fever worldwide: a modelling analysis](https://www.ncbi.nlm.nih.gov/pubmed/29398634)
