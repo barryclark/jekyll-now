@@ -15,3 +15,9 @@ My DTP research aims to produce high spatial resolution maps of neglected tropic
 [My ResearchGate](https://www.researchgate.net/profile/Joshua_Longbottom)
 
 [**Contact me**](mailto:joshua.longbottom@lstmed.ac.uk)
+
+Why not check out my other website:
+
+<blockquote class="embedly-card"><h4><a href="https://www.epi-blog.com/">Home | Epi-Blog</a></h4><p>Epi-Blog is a public health themed blogging platform where members may post content about global health research and events.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
