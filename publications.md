@@ -8,7 +8,7 @@ permalink: /publications/
 
 <i> Lancet (2018-07) </i>
 
-<img src="https://github.com/joshlongbottom/joshlongbottom.github.io/raw/master/images/pdf_dl_icon.png" height="42" width="42"><a href = "https://github.com/joshlongbottom/joshlongbottom.github.io/raw/master/pubs/1-s2.0-S0140673618312248-main.pdf" download>Click here to download pdf</a>
+<img src="https://github.com/joshlongbottom/joshlongbottom.github.io/raw/master/images/pdf_dl_icon.png" height="42" width="42" href = "https://github.com/joshlongbottom/joshlongbottom.github.io/raw/master/pubs/1-s2.0-S0140673618312248-main.pdf" download>
 
 ---
 
