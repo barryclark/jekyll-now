@@ -1,11 +1,11 @@
 ---
 layout: post
-title: SCS - Self-Contained Systems
-subtitle: Thoughts about Self-Contained Systems architecture pattern  
+title: Using NLP to Read Between the Lines
+subtitle: Demystifying the Language of German Reference Letters 
 category: dev
-tags: [api, microservice, devops]
-author: Rainer Zehnle
-author_email: rainer.zehnle@haufe-lexware.com 
+tags: [content, data, development]
+author: Alexey Paramonov
+author_email: alexey.paramonov@haufe-lexware.com
 header-img: "images/new/Exportiert_57.jpg"
 ---
 
