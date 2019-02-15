@@ -40,7 +40,7 @@ Here are the variations of the same sentence based on its (German) grade:
 
 People, who write German letters of reference in Germany, must master a special, secret language to say what they really mean about employee performance. One way to be faster about writing these letters is to have a repository of reuse sentences. But, even with a large amount of pre-defined sentences onboard, we will never be able to satisfy all possible specific needs and formulations our customers might require.
 
-So, if a suitable boilerplate sentence isn’t found, authors must write it on their own. The problem occurs when the new sentence is not precisely formulated in accordance to the examples given above, it might change the overall grade of the reference letter. 
+So, if a suitable boilerplate sentence isn’t found, authors must write it on their own. The problem occurs when the new sentence is not precisely formulated in accordance with the examples given above, it might change the overall grade of the reference letter. 
 
 Let’s say our author/manager aims to keep a high overall grade for a reference. To do this, she wants to emphasize one more valuable skill in the letter in addition to all the standard texts. If this sentence is not formulated correctly, this change might have the unintended effect of downgrading the whole text. Until now, we were not able evaluate new sentences without human intervention. But with Machine Learning, it becomes possible.
 
