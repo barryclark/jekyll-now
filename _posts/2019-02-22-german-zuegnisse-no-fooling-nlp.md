@@ -38,7 +38,7 @@ Here are the variations of the same sentence based on its (German) grade:
 
 ## Mastering reference-speak and the risk of WYOS (writing your own sentence)
 
-People, who write German letters of reference in Germany, must master a special, secret language to say what they really mean about employee performance. One way to be faster about writing these letters is to have a repository of reuse sentences. But, even with a large amount of pre-defined sentences onboard, we will never be able to satisfy all possible specific needs and formulations our customers might require.
+People, who write German letters of reference in Germany, must master a special domain language to say what they really mean about employee performance. One way to be faster about writing these letters is to have a repository of reuse sentences. But, even with a large amount of pre-defined sentences onboard, we will never be able to satisfy all possible specific needs and formulations our customers might require.
 
 So, if a suitable boilerplate sentence isn’t found, authors must write it on their own. The problem occurs when the new sentence is not precisely formulated in accordance with the examples given above, it might change the overall grade of the reference letter. 
 
@@ -46,7 +46,7 @@ Let’s say our author/manager aims to keep a high overall grade for a reference
 
 ## Machine Learning to predict how good, bad, or ugly a text really is
 
-Thinking about the data we could use for training future ML models and realized that we had a data fortune in the form of pre-defined sentences with assigned grades, which had been created by our Editorial Department. 
+Thinking about the data we could use for training future ML models, we realized that we had data in the form of pre-defined sentences with assigned grades, which had been created by our Editorial Department. 
 
 In Machine Learning vocabulary, we had (instead of “sentences”) - a “dataset”, and (instead of “assigned grades”) - “labels”. So, we’ve got a labeled dataset, which we can use for supervised Machine Learning. Great!
 
@@ -63,7 +63,6 @@ After further analysis, the number boils down to 1100+ unique sentences. The rea
 ### Cleansing
 
 We did several things here to make the data more suitable for machine processing:
-We did several things here to make the data more suitable for machine processing:
 -	We removed all placeholders (things like {Titel} and {Name}) from templates;
 -	We removed all punctuation because most of the time it doesn’t carry any additional information;
 -	We removed stop words.  
@@ -72,7 +71,7 @@ One thing to consider here is to exclude some words like ’sehr’ from the sto
 
 - We performed word stemming.  
 Ultimately, we want to do lemmatization. Lemmatization is a process of bringing different words or forms of words with the same essential meaning to one. For example, ‘give’-‘gave’-‘given’ results in just ‘give’.   
-Stemming in contrast just blindly chops off word endings and suffixes to reduce form variations of the same sense. Thus, ’possibilities’ and ‘possibility’ are reduced to ‘possibiliti’. While lemmatization is more sophisticated and precise algorithm, it is not provided yet for German language from de-facto standard library NLTK for natural language manipulations.
+Stemming in contrast just blindly chops off word endings and suffixes to reduce form variations of the same sense. Thus, ’possibilities’ and ‘possibility’ are reduced to ‘possibiliti’. While lemmatization is a more sophisticated and precise algorithm, it is not provided yet for German language from the de-facto standard library NLTK for natural language manipulations.
 
 ### Pre-processed data
 
