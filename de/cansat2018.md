@@ -8,6 +8,17 @@ ref: cansat2018
 
 Beim [5. Deutschen CanSat-Wettbewerb 2018](https://www.cansat.de/wettbewerb-2018) haben wir bereits den 4. Platz erreicht. Hier könnt ihr alles über unsere erste Teilnahme als Apoapsis-Team nachlesen.
 
+<div class="toc">
+  <h4>Table of contents</h4>
+  <ul>
+    <li><a href="#überblick">Überblick</a></li>
+    <li><a href="#über-uns">Über uns</a></li>
+    <li><a href="#das-team">Das Team</a></li>
+    <li><a href="#sponsoren">Sponsoren</a></li>
+    <li><a href="#blog-einträge-2018">Blog-Einträge (2018)</a></li>
+  </ul>
+</div>
+
 ## Überblick
 
 <div class="page-banner">
@@ -33,39 +44,39 @@ Inspiriert wurden wir durch das Projekt [luftdaten.info](http://luftdaten.info) 
 </div>
 
 <section class="team-member-presentation" id="niklas">
-  <img src="{{ site.baseurl }}/images/team-member-niklas.jpg" />
+  <img src="{{ site.baseurl }}/images/2018-team-members/niklas.jpg" />
   <span>„Ich bin <strong>Niklas Cölle</strong> und Projektleiter unseres Teams. Ich kümmere mich hauptsächlich um die Elektronik und die Steuerung unseres CanSats, helfe aber auch bei der Softwareentwicklung. Schon seit längerem interessiere ich mich für Raumfahrt und wollte daher schon immer mal ein Projekt wie dieses umsetzen.“</span>
 </section>
 
 <section class="team-member-presentation" id="leon">
-  <img src="{{ site.baseurl }}/images/team-member-leon.jpg" />
+  <img src="{{ site.baseurl }}/images/2018-team-members/leon.jpg" />
   <span>„Mein Name ist <strong>Leon Hauser</strong>. Ich übernehme im Apoapsis Team die Rolle des ‚Konstrukteurs‘ der Hardware, aus Eigeninteresse am Beruf eines Ingenieurs. Dem Projekt bin ich beigetreten, da ich mich immer für die Konstruktion von Flugkörpern aus der Raumfahrt interessiert habe und auf eine solche Chance nicht verzichten konnte.“</span>
 </section>
 
 <section class="team-member-presentation" id="thomas">
-  <img src="{{ site.baseurl }}/images/team-member-thomas.jpg" />
+  <img src="{{ site.baseurl }}/images/2018-team-members/thomas.jpg" />
   <span>„Ich bin <strong>Thomas Schlienz</strong> und kümmere mich bei Apoapsis um Recherche und Auswertung. Seit jeher fasziniert mich die Möglichkeiten, welche uns durch die Satellitentechnologie eröffnet werden – das macht die Gelegenheit, bei diesem Projekt mitzumachen, besonders aufregend. Auch finde ich die Arbeit in einem Team spannend.“</span>
 </section>
 
 <section class="team-member-presentation" id="henrik">
-  <img src="{{ site.baseurl }}/images/team-member-henrik.jpg" />
+  <img src="{{ site.baseurl }}/images/2018-team-members/henrik.jpg" />
   <span>„Ich bin <strong>Henrik Böving</strong> und einer der Programmierer unseres Teams. Als Hobby-Entwickler und Python-Fan bin ich verantwortlich für die Programmierung des CanSats, der dazugehörigen Bodenstation und für die Auswertung der Daten.“</span>
 </section>
 
 <section class="team-member-presentation" id="felix">
-  <img src="{{ site.baseurl }}/images/team-member-felix.jpg" />
+  <img src="{{ site.baseurl }}/images/2018-team-members/felix.jpg" />
   <span>„Mein Name ist <strong>Felix Edelmann</strong>. Als unterstützendes Mitglied kümmere ich mich um die Webseite und helfe bei Programmier-Problemen.“</span>
 </section>
 
 ## Sponsoren
 
 <section class="sponsor-presentation" id="techmatrix">
-  <a href="https://www.techmatrix.de/"><img src="{{ site.baseurl }}/images/sponsoren/Techmatrix_CMYK.png" /></a>
+  <a href="https://www.techmatrix.de/"><img src="{{ site.baseurl }}/images/2018-sponsoren/Techmatrix_CMYK.png" /></a>
   <span>Das Unternehmen <a href="https://www.techmatrix.de/"><strong>Techmatrix Consulting GmbH</strong></a> aus Neufarn hat unser Projekt durch eine Geldspende unterstützt.</span>
 </section>
 
 <section class="sponsor-presentation" id="watterott">
-  <a href="https://www.watterott.com/"><img src="{{ site.baseurl }}/images/sponsoren/Watterott.png" /></a>
+  <a href="https://www.watterott.com/"><img src="{{ site.baseurl }}/images/2018-sponsoren/Watterott.png" /></a>
   <span>Das Unternehmen <a href="https://www.watterott.com/"><strong>Watterott</strong></a> hat allen CanSat-Teams Bauteile im Gesamtwert von 200€ bereitgestellt. Wir haben ihr Angebot dankbar angenommen und unsere GPS Module von ihnen erhalten.</span>
 </section>
 
@@ -74,7 +85,7 @@ Inspiriert wurden wir durch das Projekt [luftdaten.info](http://luftdaten.info) 
 </section>
 
 <section class="sponsor-presentation" id="caas">
-  <a href="http://www.carbontubes.eu/"><img src="{{ site.baseurl }}/images/sponsoren/caas.png" /></a>
+  <a href="http://www.carbontubes.eu/"><img src="{{ site.baseurl }}/images/2018-sponsoren/caas.png" /></a>
   <span>Das Unternehmen <a href="http://www.carbontubes.eu/"><strong>CAAS</strong></a> aus Slovenien hat uns bei der Auswahl der Kohlenstoff-Verbundsstoff-Röhren geholfen, aus der wir die Hülle unseres CanSat bauen wollen.</span>
 </section>
 

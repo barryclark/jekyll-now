@@ -4,7 +4,7 @@ title: Infoevent on 23/03/2018
 lang: EN
 ref: hase
 categories: [cansat2018]
-teaserImage: /images/Osterhase_Die_fertigen_Plakate.jpg
+teaserImage: /images/posts/2018-03-25_Osterhase_Die_fertigen_Plakate.jpg
 ---
 
 On March 23, an information event was held at our school for
@@ -18,12 +18,12 @@ That meant for us: Making posters, designing flyers, preparing the information s
 The day before the event Henrik and Niklas put together the posters which
 Felix had previously designed on the computer:
 
-{% include image.html path="/images/Osterhase_Die_fertigen_Plakate.jpg" caption="The finished posters" %}
+{% include image.html path="/images/posts/2018-03-25_Osterhase_Die_fertigen_Plakate.jpg" caption="The finished posters" %}
 
 In addition to that, Niklas made flyer from the last slide of the
 presentation which were given to the students then.
 
-{% include image.html path="/images/Osterhase_Erstellen_der_Flyer.jpg" caption="Creating the flyers" %}
+{% include image.html path="/images/posts/2018-03-25_Osterhase_Erstellen_der_Flyer.jpg" caption="Creating the flyers" %}
 
 Finally the event came: right after our physics exam we wrote on the day,
 we arranged the tables and posters in the school hall
@@ -33,4 +33,4 @@ who offered us to test the parachute of our CanSat with his drone.
 
 In conclusion, the day was quite successful.
 
-{% include image.html path="/images/Osterhase_Thomas.jpg" caption="Thomas presenting" %}
+{% include image.html path="/images/posts/2018-03-25_Osterhase_Thomas.jpg" caption="Thomas presenting" %}

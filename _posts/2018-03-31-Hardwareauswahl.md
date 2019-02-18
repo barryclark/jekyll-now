@@ -4,7 +4,7 @@ title: Sensor- und Elektronikauswahl
 lang: DE
 ref: Sensorauswahl
 categories: [cansat2018]
-teaserImage: /images/Prototyping.jpg
+teaserImage: /images/posts/2018-03-31_Prototyping.jpg
 ---
 
 Die letzten Tage waren wir ziemlich aktiv und haben viel
@@ -12,7 +12,7 @@ an der Hardware und Software für den CanSat gearbeitet. Wir geben
 euch hier mal einen kurzen Überblick über die Sensoren und Elektronik
 die wir verwenden werden.
 
-{% include image.html path="/images/Prototyping.jpg" caption="Hardwaredesign kann sehr schnell unordentlich werden..." %}
+{% include image.html path="/images/posts/2018-03-31_Prototyping.jpg" caption="Hardwaredesign kann sehr schnell unordentlich werden..." %}
 
 ### Primärmission
 Die Primärmission besteht darin, während des Fluges den Luftdruck und

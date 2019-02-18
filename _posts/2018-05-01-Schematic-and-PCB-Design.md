@@ -4,7 +4,7 @@ title: Schematic and PCB Design
 lang: EN
 ref: PCBDesign
 categories: [cansat2018]
-teaserImage: /images/CanSat_PCB_V1.png
+teaserImage: /images/posts/2018-05-01_CanSat_PCB_V1.png
 ---
 
 After some time full of exams and tests we finally got to
@@ -14,13 +14,13 @@ take our next step: The PCB design.
 
 Before you start printing a PCB (Printed Circuit Board), you have to design a circuit diagram (or: schematic diagram) which includes all the components and electrical connections you need in a properly arranged schema.
 
-{% include image.html path="/images/Erster_Schaltplan.jpg" caption="Our first schematic" %}
+{% include image.html path="/images/posts/2018-05-01_Erster_Schaltplan.jpg" caption="Our first schematic" %}
 
 It's best to do it digitally, but it helps to have it all on paper as well.
 The design tool we used is the web application EasyEDA, with which you can also convert schematics to PCB designs.
 The electronics have been tested on breadboards before, so we could easily convert them into a schematic.
 
-{% include image.html path="/images/CanSat_Schaltplan.png" caption="Our schematic: each box represents a layer in the CanSat" %}
+{% include image.html path="/images/posts/2018-05-01_CanSat_Schaltplan.png" caption="Our schematic: each box represents a layer in the CanSat" %}
 
 ### Step 2: PCB design
 
@@ -29,7 +29,7 @@ Now you arrange all parts according to how it should look in the end.
 You also have to consider how to arrange them, especially if you don't have a lot of space.
 We decided to design three different PCBs which will be stacked in the CanSat.
 
-{% include image.html path="/images/CanSat_PCB_V1.png" caption="Our PCB design" %}
+{% include image.html path="/images/posts/2018-05-01_CanSat_PCB_V1.png" caption="Our PCB design" %}
 
 ### Step 3: Paper printout
 
@@ -38,7 +38,7 @@ it may be worth it to print the finished design out on cardboard. Of course you 
 if all the components fit on the board the way you wanted them to.
 It's especially helpful for us since we can arrange all three parts the way we want to connect them in that CanSat.
 
-{% include image.html path="/images/CanSat_PCB_Layout.jpg" caption="For testing: All three layers printed on cardboard" %}
+{% include image.html path="/images/posts/2018-05-01_CanSat_PCB_Layout.jpg" caption="For testing: All three layers printed on cardboard" %}
 
 ### And now?
 

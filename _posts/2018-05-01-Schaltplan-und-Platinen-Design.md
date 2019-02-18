@@ -4,7 +4,7 @@ title: Schaltplan und Platinendesign
 lang: DE
 ref: PCBDesign
 categories: [cansat2018]
-teaserImage: /images/CanSat_PCB_V1.png
+teaserImage: /images/posts/2018-05-01_CanSat_PCB_V1.png
 ---
 
 Nach einiger Zeit voller Prüfungen und Tests haben wir
@@ -18,13 +18,13 @@ sollte man natürlich wissen, was man überhaupt designen will. Dazu hilft es, e
 Dabei zeichnet man erstmal alle seine benötigten Komponenten und die elektrischen Verbindungen dazwischen ein
 und ordnet alles an. 
 
-{% include image.html path="/images/Erster_Schaltplan.jpg" caption="Unser erster Schaltplan, hier noch auf Papier" %}
+{% include image.html path="/images/posts/2018-05-01_Erster_Schaltplan.jpg" caption="Unser erster Schaltplan, hier noch auf Papier" %}
 
 Am besten macht man das Ganze digital, aber es hilft, sich das ganze auf Papier nochmal festzuhalten.
 Wir haben als Design Tool die Webanwendung EasyEDA verwendet, mit der man gezeichnete Schalpläne auch direkt zu PCBs umwandeln kann.
 Die Elektronik hatten wir vorher bereits auf Steckplatinen angeordnet, deswegen konnten wir diese Verbindungen eins zu eins übernehmen.
 
-{% include image.html path="/images/CanSat_Schaltplan.png" caption="Unser Schaltplan. jeder Kasten steht für eine Schicht im CanSat, die dann übereinander angeordnet werden" %}
+{% include image.html path="/images/posts/2018-05-01_CanSat_Schaltplan.png" caption="Unser Schaltplan. jeder Kasten steht für eine Schicht im CanSat, die dann übereinander angeordnet werden" %}
 
 ### Schritt 2: PCB Design
 
@@ -33,7 +33,7 @@ Dabei ordnet man wieder alle seine Komponenten an, diesmal aber so, wie alles sp
 Auch muss man beachten, dass man alle Leiterbahnen sorgfältig anordnet, besonders, wenn man nur wenig Platz hat.
 Wir haben dazu entschieden, drei verschiedene Platinen zu designen, welche im CanSat übereinander angeordnet werden sollen.
 
-{% include image.html path="/images/CanSat_PCB_V1.png" caption="Unser PCB Design" %}
+{% include image.html path="/images/posts/2018-05-01_CanSat_PCB_V1.png" caption="Unser PCB Design" %}
 
 ### Schritt 3: Ausdrucken und „Testbestückung“
 
@@ -43,7 +43,7 @@ lohnt es sich, das Design auszudrucken und auf Pappe zu kleben. Zwar kann man da
 Vor allem für uns ist das ganz hilfreich, da wir das Ganze in drei Raumebenen verschieben und vergleichen können, ob alle 
 Verbindungen auch übereinander passen.
 
-{% include image.html path="/images/CanSat_PCB_Layout.jpg" caption="Zum Testen: Alle drei Layer auf Pappe ausgedruckt und bestückt" %}
+{% include image.html path="/images/posts/2018-05-01_CanSat_PCB_Layout.jpg" caption="Zum Testen: Alle drei Layer auf Pappe ausgedruckt und bestückt" %}
 
 ### Und jetzt?
 
