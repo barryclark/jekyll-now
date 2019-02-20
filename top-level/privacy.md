@@ -30,6 +30,10 @@ I run Google Adsense mainly to know how to use Adsense. This is the single ad ba
 
 This site participates in the [Amazon Services LLC Associates Program](https://affiliate-program.amazon.com/help/operating/agreement), an affiliate advertising program designed to provide a means for this site to earn fees by linking to Amazon.com and affiliated sites.
 
+### VigLink
+
+This site uses VigLink to automatically affiliate commercial links. This is done via a JavaScript snippet. Visit [VigLink's Consumer Disclosure Page](https://www.viglink.com/legal/consumer-disclosure/) for more information.
+
 ## Social Media
 
 ### Comments
