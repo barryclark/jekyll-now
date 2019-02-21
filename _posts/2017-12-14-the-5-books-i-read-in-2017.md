@@ -43,5 +43,3 @@ My wife actually bought me this book - and several other dad-to-be books. I espe
 ### And You?
 
 How many books did you read this year? What were they?
-
-{% include amazon/native-ad.html title="The 5 Books I Read in 2017" asin="B001R1LCKS,B06Y3C3XPV,0671015206,B017WQBF5I,B007BV1KIW" %}

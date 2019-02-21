@@ -9,11 +9,7 @@ March was an incredible month. I started a [major renovation](http://hendrixjose
 
 I'm not too bothered by the fact I only finished one book - after all, I didn't finish any books in February. The last "book report" blog post I published was for [January](http://hendrixjoseph.github.io/january-2018-book-reading-list/). And it's not like I haven't been reading anything else - in addition to the book I did finish (which I'll mention later), I've been reading  [Cryptography And Network Security](https://www.amazon.com/Cryptography-Network-Security-William-Stallings/dp/9332585229/?tag=hendrixjoseph-20) for school and [Husband-Coached Childbirth](https://www.amazon.com/Husband-Coached-Childbirth-Fifth-Bradley-Natural/dp/055338516X/?tag=hendrixjoseph-20).
 
-{% include amazon/native-ad.html title="These books are so unrelated...." asin="9332585229,055338516X" %}
-
 Oh, and I read magazines, too. I tend to stick with magazines I can get for free. The ones I'm currently subscribed to are [Game Informer](https://www.amazon.com/Game-Informer/dp/B00DEM6PTG/?tag=hendrixjoseph-20) and [Popular Mechanics](https://www.amazon.com/Hearst-Magazines-Popular-Mechanics/dp/B001THPA26/?tag=hendrixjoseph-20).
-
-{% include amazon/native-ad.html title="Appearently you can order magazine subscriptions on Amazon" asin="B00DEM6PTG,B001THPA26" %}
 
 Onto what I actually finished reading in March:
 
@@ -32,5 +28,3 @@ I didn't learn much I didn't already know from this book, but it was interesting
 Hopefully next month I'll have finished more than one book, so I look forward to writing that post.
 
 Have you read The Richest Man in Babylon?
-
-{% include amazon/native-ad.html title="The Richest Man in Babylon" asin="1939438330" %}

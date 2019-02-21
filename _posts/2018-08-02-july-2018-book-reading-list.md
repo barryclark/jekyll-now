@@ -23,8 +23,6 @@ Of course, I made sure to make sure to read to my son. The book I read to him du
 * [I Love You As Big As the World](https://www.amazon.com/Love-You-As-Big-World/dp/1589256034/?tag=hendrixjoseph-20)
 * [First 100 Things That Go](https://www.amazon.com/First-100-Touch-Lift-Scholastic/dp/1407172468/?tag=hendrixjoseph-20)
 
-{% include amazon/native-ad.html title="A few of the books I read to my son this month" asin="1492656208,9999030165,1589256034,1407172468" %}
-
 There's another book I read to him with the theme of goodnight. I can't seem to find it or remember exactly what it was. All I remember is that I read it to him in the middle of the afternoon - it most definitely wasn't time for goodnight!
 
 [HTML for Babies](https://www.amazon.com/HTML-Babies-Code-Sterling-Childrens/dp/1454921552/?tag=hendrixjoseph-20) was an odd one. It isn't really readable - it's pretty much written exactly as it says, *in HTML*. I mean, it just feels odd to say `div style color red`.

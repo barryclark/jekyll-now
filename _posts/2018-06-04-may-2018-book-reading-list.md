@@ -13,8 +13,6 @@ One book a month is still better than [last year, where I only read five books](
 Continuing with the theme of the year (that theme is being a new dad) I read 
 [The Complete Idiot's Guide to Being a New Dad](https://www.amazon.com/Complete-Idiots-Guide-Being-New/dp/1615642471/?tag=hendrixjoseph-20). I was actually rather disappointed with this book. It's not that it was a bad book, it's just that it didn't get to actual parenting until chapter 8. The first seven chapters dealt with pregnancy.
 
-{% include amazon/native-ad.html title="The Complete Idiot's Guide to Being a New Dad" asin="1615642471" %}
-
 There's nothing inherently wrong with a book about being a new dad dealing with the ins and outs of pregnancy. However, my wife gave birth to our baby boy at the end of March, so we've already been through pregnancy and birth. What I was wanting is advice on how to deal with having a child and being a father.
 
 ![The books I read in May 2018.](/images/books/may-2018-books-read.jpg)
@@ -30,8 +28,6 @@ I read him two new books this month:
 
 * [I Love You, Dad (Daniel Tiger's Neighborhood)](https://www.amazon.com/Love-You-Daniel-Tigers-Neighborhood/dp/1481457365/?tag=hendrixjoseph-20)
 * [Daddy Kisses by Anne Gutman](https://www.amazon.com/Daddy-Kisses-Anne-Gutman/dp/0811839141/?tag=hendrixjoseph-20)
-
-{% include amazon/native-ad.html title="Children's Books" asin="1481457365,0811839141" %}
 
 Notice a theme with these two books? :)
 

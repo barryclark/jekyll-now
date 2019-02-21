@@ -17,8 +17,6 @@ So what was that short book I read?
 
 * [Are We Good Enough for Liberty?](https://www.amazon.com/Are-We-Good-Enough-Liberty-ebook/dp/B00XRS63NU/?tag=hendrixjoseph-20)
 
-{% include amazon/native-ad.html title="Are We Good Enough for Liberty?" asin="B00XRS63NU" %}
-
 I picked this book up for free at a Libertarian convention a few years ago (I don't really remember which year it was). Essentially it argues that in order for freedom to succeed, people need to have strong morals. 
 
 ## Books I Read to My Son
