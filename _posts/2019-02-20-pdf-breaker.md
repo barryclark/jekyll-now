@@ -9,7 +9,7 @@ Hopefully occasionally, but not too often. This guide won't break any speed reco
 
 We'll do this in Python for readability and speed in writing, not speed in execution.
 
-## Planning the Script
+### Planning the Script
 
 Before you get to coding, think about what you want to do. 
 
@@ -17,7 +17,7 @@ First we'll generate a list of possible characters to test, then generate each c
 
 Eventually we could add command line arguments but I just needed this for one file, so feel free to extend this as you see fit.
 
-## Generating the Characters 
+### Generating the Characters 
 
 For this first function we'll take a list of parameters and return the list of characters they represent. We could just take a master list and loop through all of the possible characters but if you have an idea of what the password is you can knock a couple loops off the process.
 
@@ -86,3 +86,50 @@ It's a bit verbose with some status output that isn't that important, but I like
 Now it's just a matter of getting a filename, some character parameters, and a whole bunch of time! This does takes quite a while testing the log in for each password combination.
 
 Have fun! And use *responsibly*.
+
+Full code:
+
+```python
+import pikepdf
+from datetime import datetime
+import itertools
+
+def get_char_list(params):
+    letters = 'abcdefghijklmnopqrstuvwxyz'
+    nums = '01234567890'
+    special_chars = '`~!@#$%^&*()-_=+[{]}\\|;:"/?.>,<' + "'"
+    chars = ''
+
+    if 'a' in params:
+        chars += letters
+    if 'A' in params:
+        chars += letters.upper()
+    if '1' in params:
+        chars += nums
+    if '!' in params:
+        chars += special_chars
+
+    return chars
+        
+def break_pdf(fname, chars):
+    print(f'Starting at {datetime.now()}')
+    for size in itertools.count(1):
+        for s in itertools.product(chars, repeat=size):
+            test_case = ''.join(s)
+            try:
+                pdf = pikepdf.open(fname, password=str(test_case))
+                print(f'Password: {test_case}')
+                print(f'Finished at {datetime.now()}')
+                return pdf
+            except:
+                pass
+        print(f'Done with {size} length strings...')
+
+
+fname = ''
+char_params = 'a'
+
+chars = get_char_list(char_params)
+
+break_pdf(fname, chars)
+```
