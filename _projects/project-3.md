@@ -13,7 +13,7 @@ We all know that Keras has been integrated into Tensorflow, it is wiser to build
 We decided to use the mountain bike/road bike dataset that consists of 200 images sized 990 x 580 pixels. The training dataset contains 2 classes that are mutually exclusive (do not overlap)with each class containing 100 images. The test dataset contains 10 images with both classes.
 Here are a few pictures were taken from the dataset:
 
- ![Input Images](/images/projects/proj-3/inputimages.png "Mountain Bike Images")
+ ![Input Images](/images/projects/proj-3/inputimages.PNG "Mountain Bike Images")
 
 This project utilizes tf.keras and creates the classifier model using Keras layers.
 Here's how the model with tf.keras layer looks like:
