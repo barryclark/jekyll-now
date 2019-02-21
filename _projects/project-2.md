@@ -14,14 +14,14 @@ Our analysis addresses the following questions:
 
 Several techniques were deployed for performing data analysis and gaining insights into data.
 
-![WordCloud](/images/projects/proj-2/wordcloud1.PNG "WordCloud for positive words")
-![Sentiment Analysis](/images/projects/proj-2/SentimentAnalysis1.PNG "Pie Chart for Sentiment Analysis")
+![WordCloud](/images/projects/proj-2/wordcloud1.png "WordCloud for positive words")
+![Sentiment Analysis](/images/projects/proj-2/SentimentAnalysis1.png "Pie Chart for Sentiment Analysis")
 
 The technique used for time series modelling: 
 [ARIMA](https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average)
 
-![Time Line Decomposition](/images/projects/proj-2/TimeSeries1.PNG "Decomposed Components")
-![Time Series Modelling](/images/projects/proj-2/TimeSeries2.PNG "Model Result Comparison")
+![Time Line Decomposition](/images/projects/proj-2/TimeSeries1.png "Decomposed Components")
+![Time Series Modelling](/images/projects/proj-2/TimeSeries2.png "Model Result Comparison")
 
 Forecasting a Time Series Trend: The ARIMA forecasting for a stationary time series is nothing but a linear equation. The predictors depend on the parameters (p,d,q) of the ARIMA model: 
 *	Number of AR (Auto-Regressive) terms (p)                                                           
