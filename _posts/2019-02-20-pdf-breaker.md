@@ -83,6 +83,17 @@ def break_pdf(fname, chars):
 
 It's a bit verbose with some status output that isn't that important, but I like keep tabs on where things are at.
 
+Wrap everything up into a single function:
+
+```python
+def pdf_unlocker(fname, params):
+    chars = get_char_list(params)
+
+    pdf, password = break_pdf(fname, chars)
+
+    return {'pdf': pdf, 'password': password}
+```
+
 Now it's just a matter of getting a filename, some character parameters, and a whole bunch of time! This does takes quite a while testing the log in for each password combination.
 
 Have fun! And use *responsibly*.
@@ -92,7 +103,15 @@ Full code:
 ```python
 import pikepdf
 from datetime import datetime
-import itertools
+import itertools 
+
+def pdf_unlocker(fname, params):
+    chars = get_char_list(params)
+
+    pdf, password = break_pdf(fname, chars)
+
+    return {'pdf': pdf, 'password': password}
+
 
 def get_char_list(params):
     letters = 'abcdefghijklmnopqrstuvwxyz'
@@ -120,16 +139,9 @@ def break_pdf(fname, chars):
                 pdf = pikepdf.open(fname, password=str(test_case))
                 print(f'Password: {test_case}')
                 print(f'Finished at {datetime.now()}')
-                return pdf
+                return pdf, test_case
             except:
                 pass
         print(f'Done with {size} length strings...')
 
-
-fname = ''
-char_params = 'a'
-
-chars = get_char_list(char_params)
-
-break_pdf(fname, chars)
 ```
