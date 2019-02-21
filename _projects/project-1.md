@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'HACKATHONCLT MMXVIII - Runners Up in the Hack Category'
+title: 'HACKATHONCLT MMXVIII -Runners Up in the Hack Category'
 ---
-TO FIND SOLUTIONS TO CHARLOTTE’S ECONOMIC MOBILITY CRISIS
+To find solutions to charlotte’s economic mobility crisis
 
 ![Hackthonclt2018](/images/projects/proj-1/cbrbizz.PNG "Featured in cbrbizz instagram channel")
 

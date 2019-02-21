@@ -17,6 +17,20 @@ html {
   font-size: 100%;
 }
 
+// .jekyll-twitter-plugin{
+//   height: 100vh;
+//   float: right;
+//   max-height: 40%;
+//   margin-right: 20;
+//    top:20%;
+//   width: 30%;
+// }
+
+.sidebar.right {
+  padding-right: 0;
+  // float: right;
+}
+
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
@@ -241,6 +255,21 @@ nav {
 // .main
 //
 
+.column-8 {
+  width: 66%;
+}
+.left {
+  float: left;
+}
+
+.column-4 {
+  width: 33%;
+}
+
+.right {
+  float: right;
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -275,10 +304,10 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {
+  background-color: $lightGray;
   padding: 20px 0;
   text-align: center;
 }

@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="posts left column-8 fullscreen-on-palm">
   {% for post in site.posts %}
-    <article class="post">
+    <article class="post left column-8 fullscreen-on-palm">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -16,3 +16,10 @@ layout: default
     </article>
   {% endfor %}
 </div>
+{% include side-bar.html %}
+<div class="clearfix"></div>
+
+
+
+
+
