@@ -35,8 +35,8 @@ Apparently, I read quite a few different books to him in January. These books ar
 
 Last month I mentioned that I had discovered [Prime Reading](https://www.amazon.com/kindle-dbs/hz/bookshelf/prime/) - a way to borrow and read books electronically for "free" if you're an Amazon Prime Member.
 
-> If you don't have Amazon Prime, you can [try Amazon Prime with a 30-Day free trial](https://www.amazon.com/tryprimefree?ref_=assoc_tag_ph_1427739975520&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=hendrixjoseph-20&linkId=31761dc315f8f9e71043bf6e41747fbc). There's also [Prime Discounted Monthly Offering](https://www.amazon.com/l/16256994011?ref_=assoc_tag_ph_1501285904297&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=hendrixjoseph-20&linkId=7c9b8944a8c44dfcebc2446ea540d62a) if you qualify, as well as a [
-Prime Student 6-month Trial](https://www.amazon.com/gp/student/signup/info/?ref_=assoc_tag_ph_1402130811706&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=hendrixjoseph-20&linkId=660a0fe39ed0cd02dbe0e531897ee959) if you have a .edu email address.
+> If you don't have Amazon Prime, you can [try Amazon Prime with a 30-Day free trial](https://www.amazon.com/tryprimefree). There's also [Prime Discounted Monthly Offering](https://www.amazon.com/l/16256994011) if you qualify, as well as a [
+Prime Student 6-month Trial](https://www.amazon.com/gp/student/signup/info/) if you have a .edu email address.
 
 I finished one book via Prime Reading. Well, it was actually a comic book (*ahem*, **Graphic Novel**), but it was still reading. This graphic novel was [Deadpool Vol. 1: Secret Invasion](https://www.amazon.com/Deadpool-Vol-1-Secret-Invasion-ebook/dp/B00AAJQYPG/). A lot of fun.
 
