@@ -10,11 +10,10 @@ I've run a few Facebook ads before, never spending more than a couple bucks and 
 
 ### The Boosted Post
 
-<div style="text-align: center;">
-<div class="fb-post" data-href="https://www.facebook.com/JoesGithubBlog/posts/1347255428685845"></div>
-</div>
+![The Boosted Facebook Post](/images/facebook-boost-results/facebook-boosted-post.png "The Boosted Facebook Post")
+*[The Boosted Facebook Post](https://www.facebook.com/JoeHxPage/posts/1347255428685845)*
 
-Keep in mind the product I'm advertising is [one](http://amzn.to/2rgQRsA) of [my Merch by Amazon shirts](http://hendrixjoseph.github.io/t-shirts/). These shirts are currently available only in the United States, so someone from outside the US is unlikely to actually buy my product.
+Keep in mind the product I'm advertising is [one](https://www.amazon.com/dp/B072J3XZMP/) of [my Merch by Amazon shirts](http://hendrixjoseph.github.io/t-shirts/). These shirts are currently available only in the United States, so someone from outside the US is unlikely to actually buy my product.
 
 ### The Audience
 
@@ -42,7 +41,7 @@ In addition to these results, I was able to get two people to like my page.
 
 ### Any sales?
 
-Possibly, but I doubt it. During the boost, I sold [a black text / white shirt version of the HTML shirt](http://amzn.to/2swGSgo) (and it was a women's shirt to boot!). However, I used my Amazon Associates tracking id in the boosted post and saw no purchases of any kind.
+Possibly, but I doubt it. During the boost, I sold [a black text / white shirt version of the HTML shirt](https://www.amazon.com/dp/B071WKG3SV/) (and it was a women's shirt to boot!). However, I used my Amazon Associates tracking id in the boosted post and saw no purchases of any kind.
 
 ### Conclusion
 
