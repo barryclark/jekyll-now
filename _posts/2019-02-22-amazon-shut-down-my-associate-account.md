@@ -2,7 +2,7 @@
 layout: post
 title: Amazon Shut Down My Associate Account
 tags: [meta]
-keywords: []
+keywords: [amazon, associate account, shut down, associate, affiliate, viglink]
 image: /images/frown.png
 ---
 
