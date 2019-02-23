@@ -12,15 +12,15 @@ Which I can, and did, say!
 
 ## The Book I Read for Me
 
-The book I read for me is **[The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results](https://www.amazon.com/ONE-Thing-Surprisingly-Extraordinary-Results/dp/B00C1BHQXK/?tag=hendrixjoseph-20)**.
+The book I read for me is **[The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results](https://www.abebooks.com/products/isbn/9781885167774/30240279074)**.
 
-The title of the book seems to imply that it's going to bestow some knowledge about the most important thing - something that everyone should focus one. Something more akin to the book **[The Secret](https://www.amazon.com/The-Secret-Rhonda/dp/B002M5E2DW/?tag=hendrixjoseph-20)**.
+The title of the book seems to imply that it's going to bestow some knowledge about the most important thing - something that everyone should focus one. Something more akin to the book **[The Secret](https://www.abebooks.com/products/isbn/9781582701707/30227671745)**.
 
 But it doesn't. It never really defines exactly what the "one thing" is. That's because everyone's "one thing" is different - and may even be different at different times.
 
 Instead, the premise of the book is that you should focus on one thing at a time. It is anti-multitasking - it even discusses the cons of multitasking in one chapter.
 
-One thing (hah! see what I did there) I liked is not the book itself, but rather how I came across it. I've had [Amazon Prime](https://amzn.to/2VCAX8p) for a number of years (in fact, [Amazon Prime Student](https://amzn.to/2M2LuoG) thanks to my .edu email) and mainly enjoyed for the "free" shipping, and a few shows such as [Mr. Robot](https://amzn.to/2AzFrUc) and [The Man in the High Castle](https://amzn.to/2sl1j1e).
+One thing (hah! see what I did there) I liked is not the book itself, but rather how I came across it. I've had Amazon Prime for a number of years (in fact, Amazon Prime Student thanks to my .edu email) and mainly enjoyed for the "free" shipping, and a few shows such as [Mr. Robot](https://amzn.to/2AzFrUc) and [The Man in the High Castle](https://amzn.to/2sl1j1e).
 
 Apparently, another benefit of Amazon Prime is [Prime Reading](https://amzn.to/2FmmIyG). If I understand it correctly, you can read a bunch of books for free. It's not as great as [Kindle Unlimited](https://amzn.to/2RHbP14) - the choices are slimmer. Also, you "borrow" the books and can only borrow ten at a time.
 
@@ -49,10 +49,10 @@ I was able to read to him five different books (but more than five different tim
 
 Here are the five books I read to my son in December:
 
-* [Polar Bear, Polar Bear, What Do You Hear?](https://www.amazon.com/Polar-Bear-Do-You-Hear/dp/0805053883/?tag=hendrixjoseph-20)
-* [I Love My Daddy Because...](https://www.amazon.com/I-Love-My-Daddy-Because/dp/0525472509/?tag=hendrixjoseph-20)
-* [Daddy Hugs](https://www.amazon.com/Daddy-Hugs-Classic-Board-Books/dp/1416941207/?tag=hendrixjoseph-20)
-* [Giraffes Can't Dance](https://www.amazon.com/Giraffes-Cant-Dance-Giles-Andreae/dp/0545392551/?tag=hendrixjoseph-20)
-* [Newtonian Physics for Babies](https://www.amazon.com/Newtonian-Physics-Babies-Baby-University/dp/1492656208/?tag=hendrixjoseph-20)
+* [Polar Bear, Polar Bear, What Do You Hear?](https://www.abebooks.com/products/isbn/9780805053883/30130515213)
+* [I Love My Daddy Because...](https://www.abebooks.com/products/isbn/9780525472506/22447691600)
+* [Daddy Hugs](https://www.abebooks.com/products/isbn/9780689877711/22718106864)
+* [Giraffes Can't Dance](https://www.abebooks.com/products/isbn/9780439539470/30087127131)
+* [Newtonian Physics for Babies](https://www.abebooks.com/products/isbn/9781492656203/30223004124)
 
 How's your month of December go? Did you read any good books? Do you intend on checking out that [Prime Reading](https://amzn.to/2FmmIyG) thing?

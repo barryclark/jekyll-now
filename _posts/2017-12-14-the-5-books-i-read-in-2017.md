@@ -10,21 +10,21 @@ image: /images/covers/neuromancer-book-cover.jpg
 
 So, without further ado, here are the five books I read in 2017:
 
-### [Don Quixote](https://www.amazon.com/Don-Quixote-Miguel-Cervantes-ebook/dp/B001R1LCKS/?tag=hendrixjoseph-20)
+### [Don Quixote](https://www.abebooks.com/servlet/SearchResults?tn=Don+Quixote&sortby=17&pt=book)
 
 I've wanted to read Don Quixote for a long time. It's an early example of a novel, written in Spain during the 1500s. What's interesting about that is that novels didn't really become popular until the 1800s. The actual book I read was an English translation (since I don't speak Spanish, let alone 16th century Spanish) that translated it into Shakespearean or King James English - you know, with a lot of "thees", "thous", and verbs that end in "eth".
 
 It was a hard read and actually took me a few years.
 
-### [Xenia, After](https://www.amazon.com/Xenia-After-Joe-Schlegel-ebook/dp/B06Y3C3XPV/?tag=hendrixjoseph-20)
+### [Xenia, After](https://www.amazon.com//dp/B06Y3C3XPV/)
 
 ***Xenia, After*** is a post-apocalyptic novel placed in my hometown written by someone I went to high school with. This was also the first ebook I ever read to completion, and the first ebook I ever paid for.
 
-### [The Millionaire Next Door](https://www.amazon.com/Millionaire-Next-Door-Thomas-Stanley/dp/0671015206/?tag=hendrixjoseph-20)
+### [The Millionaire Next Door](https://www.abebooks.com/products/isbn/9780671015206/1340936316)
 
 I'm always looking to increase my personal finance knowledge, and The Millionaire Next Door seems to be a pretty popular book in that area. I was expecting a book on personal finance, but instead, the book discussed the demographics and habits of millionaires in the United States.
 
-### [Neuromancer](https://www.amazon.com/Neuromancer-William-Gibson-1984-09-15/dp/B017WQBF5I/?tag=hendrixjoseph-20)
+### [Neuromancer](https://www.abebooks.com/products/isbn/9780441569595/3030961920)
 
 ![Neuromancer Book Cover](/images/covers/neuromancer-book-cover.jpg)
 
@@ -32,13 +32,13 @@ Another book I've wanted to read for a while. Published in 1984, Neuromancer sta
 
 This book was also William Gibson's debut novel. When I bought this book at Half Price Books, they were also selling [a first-edition copy of the book](https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5337996799&mpre=https://www.ebay.com/sch/i.html?_nkw=neuromancer+first+edition) for somewhere around $250. Of course, my copy is a reprint (although still a print from the 80's) that cost maybe a percent of that.
 
-William Gibson also wrote the short story [Johnny Mnemonic](https://www.amazon.com/Johnny-Mnemonic-William-Gibson/dp/044100234X/?tag=hendrixjoseph-20), which is placed in the same "universe" as Neuromancer and also later made into [a movie starring Keanu Reeves](https://www.amazon.com/Johnny-Mnemonic-Blu-Ray-Keanu-Reeves/dp/B004R0MF48/?tag=hendrixjoseph-20).
+William Gibson also wrote the short story [Johnny Mnemonic](https://www.abebooks.com/products/isbn/9780671523008/30112982957), which is placed in the same "universe" as Neuromancer and also later made into [a movie starring Keanu Reeves](https://www.amazon.com/Johnny-Mnemonic-Blu-Ray-Keanu-Reeves/dp/B004R0MF48/?tag=hendrixjoseph-20).
 
-### [Dad's Guide to Pregnancy For Dummies](https://www.amazon.com/Dads-Guide-Pregnancy-Dummies-Stefan-ebook/dp/B007BV1KIW/?tag=hendrixjoseph-20)
+### [Dad's Guide to Pregnancy For Dummies](https://www.abebooks.com/products/isbn/9780470767900/30218588112)
 
 I got married this year and we are already expecting the next big thing come April. If the last sentence was too vague and the book title didn't make it super obvious, my wife is pregnant. We are having a little boy.
 
-My wife actually bought me this book - and several other dad-to-be books. I especially like the ["for dummies" book series](https://www.amazon.com/s/?field-keywords=for+dummies&tag=hendrixjoseph-20), so I chose this one first.
+My wife actually bought me this book - and several other dad-to-be books. I especially like the ["for dummies" book series](https://www.abebooks.com/servlet/SearchResults?pt=book&ds=20&sortby=17&tn=for+dummies), so I chose this one first.
 
 ### And You?
 

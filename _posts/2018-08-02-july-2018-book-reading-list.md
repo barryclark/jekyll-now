@@ -16,17 +16,17 @@ The last day of class was July 25th, so I didn't have a ton of time to catch up 
 
 Of course, I made sure to make sure to read to my son. The book I read to him during July are:
 
-* [Newtonian Physics for Babies](https://www.amazon.com/Newtonian-Physics-Babies-Baby-University/dp/1492656208/?tag=hendrixjoseph-20)
-* [My First Book of Superpowers (DC Super Heroes)](https://www.amazon.com/First-Book-Superpowers-Super-Heroes/dp/1941367070/?tag=hendrixjoseph-20)
-* [Pooh's Best Day: A Book About Weather](https://www.amazon.com/Poohs-Best-Day-Weather-Disney/dp/9999030165/?tag=hendrixjoseph-20)
-* [HTML for Babies](https://www.amazon.com/HTML-Babies-Code-Sterling-Childrens/dp/1454921552/?tag=hendrixjoseph-20)
-* [I Love You As Big As the World](https://www.amazon.com/Love-You-As-Big-World/dp/1589256034/?tag=hendrixjoseph-20)
-* [First 100 Things That Go](https://www.amazon.com/First-100-Touch-Lift-Scholastic/dp/1407172468/?tag=hendrixjoseph-20)
+* [Newtonian Physics for Babies](https://www.abebooks.com/products/isbn/9781492656203/30223004124)
+* [My First Book of Superpowers (DC Super Heroes)](https://www.abebooks.com/products/isbn/9781941367070/30175841835)
+* [Pooh's Best Day: A Book About Weather](https://www.abebooks.com/products/isbn/9789999030168/22506549902)
+* [HTML for Babies](https://www.abebooks.com/products/isbn/9781454921554/22596215167)
+* [I Love You As Big As the World](https://www.abebooks.com/products/isbn/9781589256033/22843424793)
+* [First 100 Things That Go](https://www.abebooks.com/products/isbn/9781407172460/30109918954)
 
 There's another book I read to him with the theme of goodnight. I can't seem to find it or remember exactly what it was. All I remember is that I read it to him in the middle of the afternoon - it most definitely wasn't time for goodnight!
 
-[HTML for Babies](https://www.amazon.com/HTML-Babies-Code-Sterling-Childrens/dp/1454921552/?tag=hendrixjoseph-20) was an odd one. It isn't really readable - it's pretty much written exactly as it says, *in HTML*. I mean, it just feels odd to say `div style color red`.
+[HTML for Babies](https://www.abebooks.com/products/isbn/9781454921554/22596215167) was an odd one. It isn't really readable - it's pretty much written exactly as it says, *in HTML*. I mean, it just feels odd to say `div style color red`.
 
-I did think [Newtonian Physics for Babies](https://www.amazon.com/Newtonian-Physics-Babies-Baby-University/dp/1492656208/?tag=hendrixjoseph-20) was pretty well done. It did follow some order. Essentially, it talks about the forces on a ball in much the same tune as ["See Spot Run"](https://www.amazon.com/Wheres-Spot-Eric-Hill/dp/0399240462/?tag=hendrixjoseph-20) (or is it [Dick and Jane](https://www.amazon.com/Dick-Jane-Go-ebook/dp/B00GMYSCEE/?tag=hendrixjoseph-20)?)
+I did think [Newtonian Physics for Babies](https://www.abebooks.com/products/isbn/9781492656203/30223004124) was pretty well done. It did follow some order. Essentially, it talks about the forces on a ball in much the same tune as ["See Spot Run"](https://www.abebooks.com/products/isbn/9780399240461/22837654248) (or is it [Dick and Jane](https://www.abebooks.com/products/isbn/9780448434056/30035417968)?)
 
 All-in-all, it's much easier to read a bunch of short books to the little guy than it is to read one book for me!

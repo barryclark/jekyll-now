@@ -15,7 +15,7 @@ I still made sure I had time to read, though.
 
 I was only able to read one book in the entire month of October:
 
-[![Star Trek: The Eugenics Wars: The Rise and Fall of Khan Noonien Singh: Volume 1](/images/books/star-trek-the-eugenics-war.jpg)*Star Trek: The Eugenics Wars: The Rise and Fall of Khan Noonien Singh: Volume 1*](https://www.amazon.com/Star-Trek-The-Eugenics-War/dp/1451613490/?tag=hendrixjoseph-20)
+[![Star Trek: The Eugenics Wars: The Rise and Fall of Khan Noonien Singh: Volume 1](/images/books/star-trek-the-eugenics-war.jpg)*Star Trek: The Eugenics Wars: The Rise and Fall of Khan Noonien Singh: Volume 1*](https://www.abebooks.com/products/isbn/9780743406420/30193774623)
 
 In fact, I started the book at the end of September and didn't finish it until the last day of October - I finished reading it while waiting for trick-or-treaters to show up at my front door (sadly, no one came to my door for candy).
 
@@ -27,15 +27,15 @@ It's hard to believe the little guy is already over seven months old. I know it'
 
 Of course, I continue to read to him. Here are the books I read to him in October:
 
-* [Dear Zoo: A Lift-the-Flap Book](https://www.amazon.com/Dear-Zoo-Lift-Flap-Book/dp/141694737X/?tag=hendrixjoseph-20)
-* [Dog Wants to Play](https://www.amazon.com/Dog-Wants-To-Play/dp/B00HFXK3YI/?tag=hendrixjoseph-20)
-* [If I Could Keep You Little](https://www.amazon.com/If-Could-Keep-You-Little/dp/1402272375/?tag=hendrixjoseph-20)
-* [I Love My Puppy](https://www.amazon.com/I-Love-My-Puppy/dp/0545835941/?tag=hendrixjoseph-20)
-* [My First Superman Book: Touch and Feel](https://www.amazon.com/My-First-Superman-Book-Heroes/dp/1935703005/?tag=hendrixjoseph-20)
-* [Daddy Hugs by Karen Katz](https://www.amazon.com/Daddy-Hugs-Classic-Board-Books/dp/1416941207/?tag=hendrixjoseph-20)
-* [Simon Says... Roar Like a Lion!](https://www.amazon.com/Simon-Says-Roar-Like-Lion/dp/1780656041/?tag=hendrixjoseph-20)
-* [Polar Bear, Polar Bear, What Do You Hear?](https://www.amazon.com/Polar-Bear-What-Brown-Friends/dp/0805053883/?tag=hendrixjoseph-20)
-* [Fisher-Price: Peekaboo, Baby! Faces & Feelings](https://www.amazon.com/Fisher-Price-Peekaboo-Baby/dp/0061448850/?tag=hendrixjoseph-20)
+* [Dear Zoo: A Lift-the-Flap Book](https://www.abebooks.com/products/isbn/9781416947370/22895150425)
+* [Dog Wants to Play](https://www.abebooks.com/products/isbn/9780670016334/22915683944)
+* [If I Could Keep You Little](https://www.abebooks.com/products/isbn/9781934082928/22765913444)
+* [I Love My Puppy](https://www.abebooks.com/products/isbn/9780545835947/22451989377)
+* [My First Superman Book: Touch and Feel](https://www.abebooks.com/products/isbn/9781935703006/30219713170)
+* [Daddy Hugs by Karen Katz](https://www.abebooks.com/products/isbn/9780689877711/22718106864)
+* [Simon Says... Roar Like a Lion!](https://www.abebooks.com/products/isbn/9781780656045/30135176868)
+* [Polar Bear, Polar Bear, What Do You Hear?](https://www.abebooks.com/products/isbn/9780805053883/30130515213)
+* [Fisher-Price: Peekaboo, Baby! Faces & Feelings](https://www.abebooks.com/products/isbn/9780007285747/30182001218)
 
 If you've kept up with my book reading posts, you'll notice that I read some of the same books to him. I often read the same book to him multiple times, so just because there are only nine books listed above, doesn't mean I only read to him nine times.
 

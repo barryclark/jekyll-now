@@ -11,7 +11,7 @@ For the month of May, I only read one book, which seems to be the trend for the 
 One book a month is still better than [last year, where I only read five books](https://hendrixjoseph.github.io/the-5-books-i-read-in-2017/).
 
 Continuing with the theme of the year (that theme is being a new dad) I read 
-[The Complete Idiot's Guide to Being a New Dad](https://www.amazon.com/Complete-Idiots-Guide-Being-New/dp/1615642471/?tag=hendrixjoseph-20). I was actually rather disappointed with this book. It's not that it was a bad book, it's just that it didn't get to actual parenting until chapter 8. The first seven chapters dealt with pregnancy.
+[The Complete Idiot's Guide to Being a New Dad](https://www.abebooks.com/products/isbn/9781615642472/22914225642). I was actually rather disappointed with this book. It's not that it was a bad book, it's just that it didn't get to actual parenting until chapter 8. The first seven chapters dealt with pregnancy.
 
 There's nothing inherently wrong with a book about being a new dad dealing with the ins and outs of pregnancy. However, my wife gave birth to our baby boy at the end of March, so we've already been through pregnancy and birth. What I was wanting is advice on how to deal with having a child and being a father.
 
@@ -26,14 +26,14 @@ Reading is probably good for him beyond a literacy standpoint. I tend to be a qu
 
 I read him two new books this month:
 
-* [I Love You, Dad (Daniel Tiger's Neighborhood)](https://www.amazon.com/Love-You-Daniel-Tigers-Neighborhood/dp/1481457365/?tag=hendrixjoseph-20)
-* [Daddy Kisses by Anne Gutman](https://www.amazon.com/Daddy-Kisses-Anne-Gutman/dp/0811839141/?tag=hendrixjoseph-20)
+* [I Love You, Dad (Daniel Tiger's Neighborhood)](https://www.abebooks.com/products/isbn/9781481457361/30231258092)
+* [Daddy Kisses by Anne Gutman](https://www.abebooks.com/products/isbn/9780811839143/30051600703)
 
 Notice a theme with these two books? :)
 
 I also re-read a book to him from last month:
 
-* [Snuggle Puppy!](https://www.amazon.com/Snuggle-Puppy-Boynton-Board-Sandra/dp/0761130675/?tag=hendrixjoseph-20)
+* [Snuggle Puppy!](https://www.abebooks.com/products/isbn/9780761130673/22580693203)
 
 He's slowly getting more interactive - he smiles occasionally and is able to hold is head up longer. He will look and me and will follow things with his eyes. I like to hold a burp clothe above his head and swing it back and forth. In turn, he likes watching it swing back and forth.
 

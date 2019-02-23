@@ -17,14 +17,14 @@ I have made reading to my son a priority; it helps that my wife also makes readi
 
 Here are the books I read to him in November:
 
-* [Puppies (Three Minute Tales)](https://www.amazon.com/Puppies-Three-Minute-Tales/dp/0752596985/?tag=hendrixjoseph-20)
-* [Newtonian Physics for Babies](https://www.amazon.com/Newtonian-Physics-Babies-Baby-University/dp/1492656208/?tag=hendrixjoseph-20)
-* [I Love You, Good Night](https://www.amazon.com/I-Love-You-Good-Night/dp/0689862121/?tag=hendrixjoseph-20)
-* [Touch and Feel: Puppy](https://www.amazon.com/Touch-Feel-Puppy/dp/0756691664/?tag=hendrixjoseph-20)
-* [Dog Wants to Play](https://www.amazon.com/Dog-Wants-To-Play/dp/B00HFXK3YI/?tag=hendrixjoseph-20)
-* [If I Could Keep You Little](https://www.amazon.com/If-Could-Keep-You-Little/dp/1402272375/?tag=hendrixjoseph-20)
+* [Puppies (Three Minute Tales)](https://www.abebooks.com/products/isbn/9780752596983/30039745931)
+* [Newtonian Physics for Babies](https://www.abebooks.com/products/isbn/9781492656203/30223004124)
+* [I Love You, Good Night](https://www.abebooks.com/products/isbn/9780689862120/22802080723)
+* [Touch and Feel: Puppy](hhttps://www.abebooks.com/products/isbn/9780756691660/30236443616)
+* [Dog Wants to Play](https://www.abebooks.com/products/isbn/9780670016334/22915683944)
+* [If I Could Keep You Little](https://www.abebooks.com/products/isbn/9781934082928/22765913444)
 
-[![If I Could Keep You Little](/images/books/if-i-could-keep-you-little.jpg)](https://www.amazon.com/If-Could-Keep-You-Little/dp/1402272375/?tag=hendrixjoseph-20)
+[![If I Could Keep You Little](/images/books/if-i-could-keep-you-little.jpg)](https://www.abebooks.com/products/isbn/9781934082928/22765913444)
 
 I think there were a couple more books I read to him, but I didn't get around to writing down what books they were.
 

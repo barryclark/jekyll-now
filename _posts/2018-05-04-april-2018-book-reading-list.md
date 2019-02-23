@@ -11,7 +11,7 @@ Just like [in last month's book reading list](https://hendrixjoseph.github.io/ma
 
 ## Husband-Coached Childbirth
 
-I began reading [Husband-Coached Childbirth](https://www.amazon.com/Husband-Coached-Childbirth-Fifth-Bradley-Natural/dp/055338516X/?tag=hendrixjoseph-20) while my wife was still pregnant and had hoped to finish it before she gave birth. I utterly failed that goal. True, my wife gave birth two weeks early (or rather, her due date was two weeks late!) - but I didn't even finish by the actual due date!
+I began reading [Husband-Coached Childbirth](https://www.abebooks.com/products/isbn/9780553375565/22891078442) while my wife was still pregnant and had hoped to finish it before she gave birth. I utterly failed that goal. True, my wife gave birth two weeks early (or rather, her due date was two weeks late!) - but I didn't even finish by the actual due date!
 
 I read this book because my wife and I were taking a Bradley Method class. The [Bradley method of natural childbirth](https://en.wikipedia.org/wiki/Bradley_method_of_natural_childbirth) isn't as anti-medicine or anti-artificial as some other "natural" proponents for other things. Rather, Dr. Bradley, the doctor behind the method, only believed medical intervention was necessary for a small fraction of pregnancy and births.
 
@@ -21,7 +21,7 @@ He admits that his language and mannerisms may be a bit old-fashioned, particula
 
 I would suggest any pregnant couple to take such a class. We met weekly, and not only was it good information wise, it also served as a form of group therapy (mostly for the pregnant women in the class), allowing everyone to share what we were currently going through. It was a bit pricey ($300), so it might not be within everyone's budget.
 
-The website to find a Bradley Method class is http://www.bradleybirth.com/.
+The website to find a Bradley Method class is [http://www.bradleybirth.com/](http://www.bradleybirth.com/).
 
 ## Children's Books
 
@@ -29,11 +29,9 @@ More important than the books I'm reading for me are the books I'm reading for m
 
 I've only read three different books to him so far, at least as memory serves:
 
-* [Snuggle Puppy!](https://www.amazon.com/Snuggle-Puppy-Boynton-Board-Sandra/dp/0761130675/?tag=hendrixjoseph-20)
-* [Who Lives Here? (Baby Einstein)](https://www.amazon.com/baby-einstein-Playful-Discoveries-Animals/dp/0439912571/?tag=hendrixjoseph-20)
-* [Spot Loves His Dad](https://www.amazon.com/Spot-Loves-His-Eric-Hill/dp/0723254826/?tag=hendrixjoseph-20)
-
-{% include amazon/native-ad.html title="Children's Books" asin="0761130675,0439912571,0723254826" %}
+* [Snuggle Puppy!](https://www.abebooks.com/products/isbn/9780761130673/22580693203)
+* [Who Lives Here? (Baby Einstein)](https://www.abebooks.com/products/isbn/9780439912570/22516917037)
+* [Spot Loves His Dad](https://www.abebooks.com/products/isbn/9780723254829/30113315406)
 
 I've read the first two several times to him; the third I've only read once. My wife has read a few more. Pretty much all of the books, if in fact not all, have been bought used. My wife is pretty good at finding deals.
 
