@@ -1,12 +1,12 @@
 ---
 layout: post
-title: First Half 2018 MBA Sales Report
+title: First Half 2018 Merch by Amazon Sales Report
 tags: [money, sales report]
-keywords: [tshirt, t-shirts, t-shirt, tshirts, print-on-demand, sales, entrepreneur, excel, charts]
+keywords: [amazon, merch, merch by amazon, print-on-demand, sales, entrepreneur, excel, charts]
 image: /images/merch/first-half-2018/weekly-sales.png
 ---
 
-Almost a year ago now I wrote a post about [my first seven months on MBA](https://hendrixjoseph.github.io/my-first-seven-months-on-mba-sales-report/). Since then, I've written nothing. I was thinking about doing monthly reports, but each month quickly went by, especially with [the birth of my son](https://hendrixjoseph.github.io/life-update/).
+Almost a year ago now I wrote a post about [my first seven months on Merch by Amazon](https://hendrixjoseph.github.io/my-first-seven-months-on-merch-by-amazon-sales-report/). Since then, I've written nothing. I was thinking about doing monthly reports, but each month quickly went by, especially with [the birth of my son](https://hendrixjoseph.github.io/life-update/).
 
 I then considered doing quarterly reports, but Q2 came and went before I could catch my breath. So instead, I'll do a first-half of 2018 report.
 
@@ -132,6 +132,6 @@ Designs Sold | Total Sold | Sum of Royalty
 
 ## Other Print-On-Demand Sites
 
-MBA is by far my biggest money-maker. I'm on a few other POD sites, but make nowhere near the same amount. I only made $17.33 on [Redbubble](https://www.redbubble.com/en/people/joehx), $12.00 on [TeePublic](https://hendrixjoseph.github.io/teepublic/), and $6.63 on [Teespring](https://teespring.com/stores/joehxs-store).
+Merch by Amazon is by far my biggest money-maker. I'm on a few other POD sites, but make nowhere near the same amount. I only made $17.33 on [Redbubble](https://www.redbubble.com/en/people/joehx), $12.00 on [TeePublic](https://hendrixjoseph.github.io/teepublic/), and $6.63 on [Teespring](https://teespring.com/stores/joehxs-store).
 
-***Curious what t-shirt designs I have for sale on MBA? I set up [a special MBA search page](https://hendrixjoseph.github.io/t-shirts/) to show all of my MBA t-shirt designs. I also set up a similar page for [my PopSocket designs](https://hendrixjoseph.github.io/popsockets/).***
+***Curious what t-shirt designs I have for sale on Amazon? I set up [a special Amazon search page](https://hendrixjoseph.github.io/t-shirts/) to show all of my Merch by Amazon t-shirt designs. I also set up a similar page for [my PopSocket designs](https://hendrixjoseph.github.io/popsockets/).***

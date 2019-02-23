@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "My First Seven Months on MBA: Sales Report"
+title: "My First Seven Months on Merch by Amazon: Sales Report"
 tags: [money, sales report]
-keywords: [tshirt, t-shirts, t-shirt, tshirts, print-on-demand, sales, entrepreneur, excel, charts]
+keywords: [amazon, merch, merch by amazon, print-on-demand, sales, entrepreneur, excel, charts]
 image: /images/merch/weekly-sales.png
 ---
 
-Ever being the entrepreneur, I've been playing around with the print-on-demand service [MBA](https://merch.amazon.com/landing). I've been doing this since March - although I believe I requested an account sometime late last year - and in my first four months, I had lackluster sales. Hell, I had no sales at all in the month of April!
+Ever being the entrepreneur, I've been playing around with Amazon's Print-On-Demand service [Merch by Amazon](https://merch.amazon.com/landing). I've been doing this since March - although I believe I requested an account sometime late last year - and in my first four months, I had lackluster sales. Hell, I had no sales at all in the month of April!
 
 However, my sales since July have really taken off. In September alone I made around $270. In this blog post, I'm just going to display a few charts reporting my sales and revenue - one by gender, one by size, and one by color. Then I'll show you a weekly and monthly chart.
 

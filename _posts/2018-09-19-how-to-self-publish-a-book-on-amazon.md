@@ -2,7 +2,7 @@
 layout: post
 title: How to Self-Publish a Book on Amazon
 tags: [books]
-keywords: [book, ebook, self-publish]
+keywords: [book, ebook, amazon, self-publish, amazon kindle direct publishing, kindle direct publishing, kdp]
 hashtags: [writing, selfpublished]
 ---
 
@@ -25,7 +25,7 @@ To set up a KDP account, you first need [an Amazon account](https://www.amazon.c
 
 You need the Amazon account because you log into KDP with your Amazon account. Once you log into the KDP website, you need to complete your KDP account. To do this, you only need to do a tax interview and provide bank information.
 
-![Logging into the KDP website using an Amazon login.](/images/screenshots/book/login.png)
+![Logging into the KDP website using an Amazon login.](/images/amazon-screenshots/kpd/kdp-login.png)
 *Logging into the KDP website using an Amazon login.*
 
 The tax interview is simple enough - you need to state whether you're an individual or business, whether or not you're a US person, provide your name and address, and finally, provide your tax id, which is typically your social security number.
@@ -44,17 +44,17 @@ You submit your book to the KDP website via a three-page wizard on the website i
 
 For the first page of the wizard, you provide your book details. The mandatory details for a book are language (such as English), title, author, description, and category. There are also optional details, which are a subtitle, series name and number, other contributors (such as additional authors), keywords, and children's age and grade range for children's books.
 
-![Page one of the wizard.](/images/screenshots/book/wizard-page-one.png)
+![Page one of the wizard.](/images/amazon-screenshots/kpd/wizard-page-one.png)
 *Page one of the wizard*
 
 The second page of the wizard is where you upload your book. You must also create a cover - either by using Amazon's online cover creator, which has a large number of free stock images to use, or by uploading your own image. It is on this second page that you also provide an [ISBN](https://en.wikipedia.org/wiki/International_Standard_Book_Number). An ISBN is optional for ebooks but mandatory for print books, however, Amazon will provide a free ISBN for print books. However, the same ISBN cannot be used both the print edition and electronic edition of a book.
 
-![Page two of the wizard.](/images/screenshots/book/wizard-page-two.png)
+![Page two of the wizard.](/images/amazon-screenshots/kpd/wizard-page-two.png)
 *Page two of the wizard*
 
 The third and final page of the wizard is where you choose the price of your book. You also choose between different royalty options. For instance, you can enroll your book in [KDP Select](https://kdp.amazon.com/en_US/select). KDP Select means you make the ebook version your book exclusive to the Kindle Store. In return, you get additional benefits, such as additional royalties and inclusion of your book in the [Kindle Unlimited](https://www.amazon.com/kindle-dbs/hz/signup/?tag=hendrixjoseph-20) program.
 
-![Page three of the wizard.](/images/screenshots/book/wizard-page-three.png)
+![Page three of the wizard.](/images/amazon-screenshots/kpd/wizard-page-three.png)
 *Page three of the wizard*
 
 ## Conclusion
