@@ -11,5 +11,6 @@
 \begin{pdf}<a href="/publications/\format{\pdf}">PDF </a>\end{pdf}
 \begin{youtube}<a href="\format{\youtube}">youtube</a> \end{youtube}
 \begin{eprint}<a href="https://arxiv.org/abs/\format{\eprint}">arXiv</a> \end{eprint}
+\begin{code}<a href="\format{\code}">code</a> \end{code}
 	</td>
 </tr>
