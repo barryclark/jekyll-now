@@ -69,7 +69,7 @@ Vanguard's Individual 401(k) Employer Kit said to wait 10 days after they receiv
 
 ## 7. I registered for a Vanguard Small Business Online account.
 
-Contributions - both from the employee side and employer side - can only be made via [Vanguard Small Business Online](https://smallbiz.vanguard.com), not Vanguard's normal investor account.
+Contributions - both from the employee side and employer side - can only be made via [Vanguard Small Business Online](smallbiz.vanguard.com), not Vanguard's normal investor account.
 
 I can view the account in my normal investor account, but when I tried to buy funds on that normal investor account, it gives me an error saying "You don't have the authority to transact on this account."
 
