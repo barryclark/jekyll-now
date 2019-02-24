@@ -35,7 +35,7 @@ In June - plus on May 31 - I bought stock in the following companies:
 * Kroger
 * Verizon
 
-Kroger and Verizon fit the description of companies I use. I also occasionally shop at GameStop, as well as use Groupon. My wife actually wears a [Fitbit](https://www.amazon.com/Fitbit-Wireless-Activity-Wristband-Tangerine/dp/B00N2BWKGG/?tag=hendrixjoseph-20). I don't drive a Ford - I'm more a GM guy - but the stock was more affordable. Plug Power is an alternative power company.
+Kroger and Verizon fit the description of companies I use. I also occasionally shop at [GameStop](https://www.gamestop.com/), as well as use [Groupon](https://www.groupon.com/). My wife actually wears a [Fitbit](https://www.fitbit.com/). I don't drive a Ford - I'm more a GM guy - but the stock was more affordable. Plug Power is an alternative power company.
 
 That leaves General Electric (GE) and Helios and Matheson Analytics Inc. I'm not sure why I bought GE - I guess I just like the company. Helios and Matheson Analytics Inc. is the company behind MoviePass, and while it might not make sense now, I think MoviePass has potential - although that's mostly a gut feeling.
 

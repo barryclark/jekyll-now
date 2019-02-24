@@ -77,7 +77,7 @@ Print-on-demand is mostly t-shirts, although there are other products such as [P
 
 I assume my [Square Cash Referrals](https://hendrixjoseph.github.io/square-cash/) came from my [Square Cash Review](https://hendrixjoseph.github.io/square-cash-review/), although I could be wrong.
 
-Amazon Associates is just when someone buys a product from [Amazon](https://www.amazon.com/?tag=hendrixjoseph-20) after clicking an Amazon link from this website.
+Amazon Associates is just when someone buys a product from Amazon after clicking an Amazon link from this website.
 
 ## Totals
 

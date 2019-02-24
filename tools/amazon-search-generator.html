@@ -7,7 +7,6 @@ share: true
 ---
 
 <form onsubmit="generate();return false;">
-<div><input id="include-tag" type="checkbox" checked>Include Amazon Associate Tag in Links. <em>By keeping this checkbox checked, I may receive a commission from Amazon if you buy something after clicking one of the generated links.</em></div>
 <div><input id="input" type="text" name="search" />
 <input onclick="generate()" value="Generate!" type="button"></div>
 </form>
@@ -46,9 +45,6 @@ function generate() {
   var inputbox = $("#input");
   var input = inputbox.val();
   
-  var doTag = $("#include-tag").is(':checked');
-  var tag = doTag ? "&tag=hendrixjoseph-20" : "";
-  
   var outputbox = $("#output");
   outputbox.empty();
   
@@ -66,7 +62,7 @@ function generate() {
 			  function(result){
 				 result[1].forEach(function(item) {
 					var encodedItem = encodeURIComponent(item);
-					sublist.append(searchParts[0] + encodedItem + tag + searchParts[1] + item + searchParts[2]);
+					sublist.append(searchParts[0] + encodedItem + searchParts[1] + item + searchParts[2]);
 				 });
 			  }
 	);

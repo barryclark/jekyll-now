@@ -18,13 +18,13 @@ To confirm we do indeed have hard water, I searched "[free hard water test](http
 
 I ordered both tests on Sunday, August 27, 2018.
 
-The first test came just a couple days later on August 30, 2018. This test came from a provider (manufacturer, I suppose) of water softeners: [EcoPure](https://www.amazon.com/stores/node/6500397011/?tag=hendrixjoseph-20).
+The first test came just a couple days later on August 30, 2018. This test came from a provider (manufacturer, I suppose) of water softeners: [EcoPure](https://ecopure.com/).
 
 To order a free hard water test strip from EcoPure, use the following link:
 
 [https://ecopure.com/test-strip-request/](https://ecopure.com/test-strip-request/)
 
-The second test came just over a month later on September 28, 2018. This test came from [Morton Salt](https://www.amazon.com/MORTON-SALT-1501-Systemsaver-Pellet/dp/B000BPDHDG/?tag=hendrixjoseph-20). Of course, you use salt to soften water.
+The second test came just over a month later on September 28, 2018. This test came from [Morton Salt](https://www.mortonsalt.com/). Of course, you use salt to soften water.
 
 To order a free hard water test strip from Morton Salt, use the following link:
 

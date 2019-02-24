@@ -41,7 +41,7 @@ It might not sound like much, but it will pay for itself in less than a year.
 
 I'm not going to go into details, but I have an upcoming opportunity at work to increase my income at work beyond the normal merit raise. It's not without risk, however.
 
-Onto things I can be more specific about, I am expanding [the t-shirt designs I have on Amazon](https://www.amazon.com/s/?field-keywords=joehx&tag=hendrixjoseph-20) to other print-on-demand sites. Currently, I have [a TeeSpring account](https://teespring.com/stores/joehxs-store) and [a RedBubble account](https://www.redbubble.com/people/joehx), and plan on expanding to other platforms as well. Unfortunately, I don't have anything more specific or concrete than that.
+Onto things I can be more specific about, I am expanding [the t-shirt designs I have on Amazon](https://hendrixjoseph.github.io/t-shirts/) to other print-on-demand sites. Currently, I have [a TeeSpring account](https://teespring.com/stores/joehxs-store) and [a RedBubble account](https://www.redbubble.com/people/joehx), and plan on expanding to other platforms as well. Unfortunately, I don't have anything more specific or concrete than that.
 
 My wife has already been on top of this one. She's been busy the last couple of days selling leftover decorations from [our wedding](https://hendrixjoseph.github.io/four-things-i'm-excited-for-in-2017/#getting-married). I think a large portion of these items we never used to begin with.
 
