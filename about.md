@@ -8,8 +8,13 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Si estas aquí es que quieres contarme algo, puedes rellenar el formulario o buscarme en Linkedin, intentare contestarte lo antes posible.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+<form accept-charset="UTF-8" action="https://formkeep.com/f/exampletoken" method="POST">
+  <input type="email" name="email" placeholder="Your Email">
+  <input type="text" name="name" placeholder="Your Name">
+  <input type="hidden" name="utf8" value="✓">
+  <button type="submit">Submit</button>
+</form>
