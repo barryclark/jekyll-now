@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title:  "Chatbot 8: 微软小冰架构"
+title:  "Chatbot 8: 微软小冰对话机器人架构"
 date:   2019-02-23 22:00
 categories: 微软小冰 DeepBot 聊天机器人架构 
 ---
@@ -367,7 +367,7 @@ PDR、NRG和UDR生成的所有候选response，利用 boosted tree 模型统一�
 
 
 
-#### 图片评论（Image Commenting) 
+#### 图片评论（Image Commenting)
 
 图片评论指的是用户发了一张图，然后小冰看图回话。整体架构类似通用闲聊，先用检索和生成的方式产生候选response，然后再对候选结果做排序。 
 
