@@ -14,7 +14,7 @@ I was able to publish five posts this month:
 * [Fixing My Wife's Timex Ironman Watch](https://hendrixjoseph.github.io/fixing-my-wifes-timex-ironman-watch/)
 * [January 2019 Book Reading List](https://hendrixjoseph.github.io/january-2019-book-reading-list/)
 * [How Marginal Tax Rates Affect Effective Rates](https://hendrixjoseph.github.io/how-marginal-tax-rates-affect-effective-rates/)
-* [Second Half 2018 MBA Sales Report](https://hendrixjoseph.github.io/second-half-2018-mba-sales-report/)
+* [Second Half 2018 Merch by Amazon Sales Report](https://hendrixjoseph.github.io/second-half-2018-merch-by-amazon-sales-report/)
 * [How Do You Report Virtual Currency Transactions to the IRS?](https://hendrixjoseph.github.io/how-do-you-report-virtual-currency-transactions-to-the-irs/)
 
 I also have some new "sections" on this site that aren't blog posts per se:
