@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why am I doing this?
+tags: [Personal]
 ---
 
 There are two extremes that must be avoided.
