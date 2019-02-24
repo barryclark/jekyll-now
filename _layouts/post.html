@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title | date_to_string}}</h1>
+  <h1>{{ page.title | "%d/%m/%Y"}}</h1>
 
   <div class="entry">
     {{ content }}
