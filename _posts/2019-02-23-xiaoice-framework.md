@@ -389,7 +389,7 @@ RR 首先从社交网站上收集（图片，评论）对。然后线上一张�
 
 
 
-**Generator-based Retriever (GR) **
+**Generator-based Retriever (GR)**
 
 
 
