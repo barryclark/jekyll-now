@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title | "%d/%m/%Y"}}</h1>
+  <h1>{{ page.title |{{ page.date | date: "%d/%m/%Y" }}}}</h1>
 
   <div class="entry">
     {{ content }}
@@ -11,12 +11,6 @@ layout: default
 
   <div class="date">
     Publicado el {{ page.date | date: "%d/%m/%Y" }}
-<span>[
-  {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-  {% endfor %}
-]</span>
   </div>
 
   {% include disqus.html %}
