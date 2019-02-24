@@ -11,6 +11,10 @@ layout: default
 
   <div class="date">
     Publicado el {{ page.date | date: "%d/%m/%Y" }}
+      {% if post.tags.size > 0 %}
+        Tag{% if post.tags.size > 1 %}s{% endif %}:
+        {{ post.tags | sort | join: ", " }}
+      {% endif %}
   </div>
 
   {% include disqus.html %}
