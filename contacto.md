@@ -1,7 +1,6 @@
-### Contacto
 
 
-Si estas aquí es que quieres contarme algo, puedes rellenar el formulario o buscarme en [Linkedin](https://www.linkedin.com/in/alvaro-garcia-25803028/), o puedes completar el formulario, intentare contestarte lo antes posible.
+Si estas aquí es que quieres contarme algo, puedes rellenar el formulario o buscarme en [Linkedin](https://www.linkedin.com), o puedes completar el formulario, intentare contestarte lo antes posible.
 
 
 <form accept-charset="UTF-8" action="https://formkeep.com/f/exampletoken" method="POST">
