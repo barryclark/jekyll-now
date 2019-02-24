@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title:  "Chatbot 8: 微软小冰架构"
 date:   2019-02-23 22:00
