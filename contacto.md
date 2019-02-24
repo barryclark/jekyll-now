@@ -9,8 +9,8 @@ Si estas aquí es que quieres contarme algo, puedes rellenar el formulario o bus
 
 
 <form accept-charset="UTF-8" action="https://formkeep.com/f/exampletoken" method="POST">
-  <input type="email" name="Email" placeholder="Your Email">
-  <input type="text" name="Nombre" placeholder="Your Name">
+  <input type="text" name="name" placeholder="Nombre">
+  <input type="email" name="email" placeholder="Email">  
   <input type="hidden" name="utf8" value="✓">
   <button type="submit">Enviar</button>
 </form>
