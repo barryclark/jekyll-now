@@ -11,10 +11,12 @@ layout: default
 
   <div class="date">
     Publicado el {{ page.date | date: "%d/%m/%Y" }}
-      {% if post.tags.size > 0 %}
-        Tag{% if post.tags.size > 1 %}s{% endif %}:
-        {{ post.tags | sort | join: ", " }}
-      {% endif %}
+<span>[
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+  {% endfor %}
+]</span>
   </div>
 
   {% include disqus.html %}
