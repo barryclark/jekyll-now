@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Alvaro Garcia Izquierdo
+name: Hello world
 
 # Short bio or description (displayed in the header)
 description: Blog sobre mi dia a dia
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: #barryclark/jekyll-now
   instagram:
-  linkedin: in/alvaro-garcia-25803028/
+  linkedin: 
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: #jekyllrb
