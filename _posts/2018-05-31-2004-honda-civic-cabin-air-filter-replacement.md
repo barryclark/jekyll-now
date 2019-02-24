@@ -17,10 +17,10 @@ My wife's car is a 2004 Honda Civic that she's owned for a year. Her previous ca
 ![The dirty cabin air filters.](/images/2004-honda-civic-cabin-air-filter/dirty-cabin-air-filter.jpg)
 *The dirty cabin air filters.*
 
-I bought an [ACDelco brand cabin air filter](https://www.amazon.com/ACDelco-CF3110-Professional-Cabin-Filter/dp/B012TZ0UAI/?tag=hendrixjoseph-20) on Amazon for around ten bucks. There's two in a package - which is good because the car actually uses two.
+I bought an [ACDelco brand cabin air filter](https://shop.advanceautoparts.com/p/purolator-one-cabin-air-filter-c15439/15790110-P) on Amazon for around ten bucks. There's two in a package - which is good because the car actually uses two.
 
 ![The ACDelco Cabin Air Filter still in the package. ](/images/2004-honda-civic-cabin-air-filter/cabin-air-filter-in-package.jpg)
-*[The ACDelco Cabin Air Filter](https://www.amazon.com/ACDelco-CF3110-Professional-Cabin-Filter/dp/B012TZ0UAI/?tag=hendrixjoseph-20) still in the package.*
+*[The ACDelco Cabin Air Filter](https://shop.advanceautoparts.com/p/purolator-one-cabin-air-filter-c15439/15790110-P) still in the package.*
 
 Amazon had an option to have it installed for $150, which I guess is the going rate for shops? Of course, I didn't choose that, but I would LOVE to know how to be the one to install cabin air filters for $150 a pop!
 

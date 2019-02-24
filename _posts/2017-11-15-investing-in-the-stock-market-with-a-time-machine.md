@@ -20,7 +20,7 @@ Day one I invest a fixed amount of money - $1000 in the experiments below. I cho
 
 Then, I check if the opening value of the S&P 100 index fund is higher or equal to the previous day's opening value. If so, then I hold. If not, I sell. This ensures that the number of shares and value can never go down - they'll either stay the same or go up.
 
-I accomplished this in [Microsoft Excel](https://www.amazon.com/Microsoft-Office-Home-Student-Download/dp/B0153V62P2/?tag=hendrixjoseph-20). I set up Excel's IF function in a similar fashion to the following: `=IF(A3>=A2,B2,C2/A3)`. A more pseudocode variant of this is:
+I accomplished this in [Microsoft Excel](https://www.microsoft.com/en-us/p/excel/cfq7ttc0k7dx?activetab=pivot%3aoverviewtab). I set up Excel's IF function in a similar fashion to the following: `=IF(A3>=A2,B2,C2/A3)`. A more pseudocode variant of this is:
 
 ```
 If PRICE ≥ PRICE YESTERDAY
@@ -73,6 +73,6 @@ The percent gain is how much the experiment gained in value, whereas the market 
 
 It makes sense that the longer I have, the more money I made - which is mostly why the two year-long experiments netted in more money than the one-month experiments. What was interesting is that the poor market performance of 2008 brought in more money than the good market performance of 2016, indicating that there is more money to be made when a market is in decline. Of course, if the stock market bottomed out at zero, I would have no money at the end regardless. If I had a time machine, then I would certainly have foreknowledge of the market hitting zero.
 
-Of course, I don't have a [time machine](https://www.amazon.com/Doctor-Who-Complete-Blu-ray-Season/dp/B003XIIW2Y/?tag=hendrixjoseph-20), or oracle drive, or [crystal ball](https://www.amazon.com/Amlong-Crystal-Clear-Redwood-Resin/dp/B01BCS7J3Y/?tag=hendrixjoseph-20). Plus, there's the fact that investing in the stock market influences the stock market affects the performance of the stock market, so doing this with a [time machine](https://www.amazon.com/Time-Machine-H-G-Wells/dp/1420952226/?tag=hendrixjoseph-20) may change history, depending on what theory of time travel you may subscribe to.
+Of course, I don't have a [time machine](https://www.amazon.com/Doctor-Who-Complete-Blu-ray-Season/dp/B003XIIW2Y/?tag=hendrixjoseph-20), or oracle drive, or [crystal ball](https://www.amazon.com/Amlong-Crystal-Clear-Redwood-Resin/dp/B01BCS7J3Y/?tag=hendrixjoseph-20). Plus, there's the fact that investing in the stock market influences the stock market affects the performance of the stock market, so doing this with a [time machine](https://www.abebooks.com/products/isbn/9780486284729/30059231216) may change history, depending on what theory of time travel you may subscribe to.
 
 Oh, and [here's the Excel spreadsheet I used to to conduct my experiments](/xlxs/stock-magic.xlsx).

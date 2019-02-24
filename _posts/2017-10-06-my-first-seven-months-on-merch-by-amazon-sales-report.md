@@ -10,7 +10,7 @@ Ever being the entrepreneur, I've been playing around with Amazon's Print-On-Dem
 
 However, my sales since July have really taken off. In September alone I made around $270. In this blog post, I'm just going to display a few charts reporting my sales and revenue - one by gender, one by size, and one by color. Then I'll show you a weekly and monthly chart.
 
-I don't intend to go into any analysis of these charts - I just had fun making them in [Microsoft Excel](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=aps&field-keywords=microsoft+excel&linkCode=ll2&tag=hendrixjoseph-20&linkId=9adccab45a38f91338f29a22ca313f5b). If you want to see some of my designs, check out [the t-shirt section](http://hendrixjoseph.github.io/t-shirts/) of my blog.
+I don't intend to go into any analysis of these charts - I just had fun making them in [Microsoft Excel](https://www.microsoft.com/en-us/p/excel/cfq7ttc0k7dx). If you want to see some of my designs, check out [the t-shirt section](http://hendrixjoseph.github.io/t-shirts/) of my blog.
 
 <style>h3 { text-align: center; }</style>
 

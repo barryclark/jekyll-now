@@ -41,7 +41,7 @@ However, with the advent of [Freedom Fries](https://en.wikipedia.org/wiki/Freedo
 
 ### Repositioning Words
 
-You know how in certain lists, certain parts of the title are out of order? For instance, "[Great Gatsby, The](https://www.amazon.com/dp/1987817990?tag=hendrixjoseph-20)." The list already does that with Iran, calling it "Iran (Islamic Republic of)."
+You know how in certain lists, certain parts of the title are out of order? For instance, "[Great Gatsby, The](https://www.abebooks.com/products/isbn/9781976300349/22790058643)." The list already does that with Iran, calling it "Iran (Islamic Republic of)."
 
 So let's refer to this great country as "America, United States of." Now we're getting someplace - number four alphabetically:
 

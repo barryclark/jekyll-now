@@ -16,7 +16,7 @@ Ah yes, the humble hamburger, also known as the burger. A special sandwich from 
     <tr><td>
       <figure>
         <img src="/images/burgers/bobevans.jpg" alt="Bob Evans Farm Fresh Burgers" />
-        <figcaption ><a href="https://www.amazon.com/Bob-Evans-Gift-Card-mail/dp/B01M6BF9IE/ref=as_li_ss_tl?s=gift-cards&ie=UTF8&qid=1507342202&sr=1-2&keywords=Bob+Evans+Gift+Card&linkCode=ll1&tag=hendrixjoseph-20&linkId=7f73cf01b392c03ced9893d38e1e14cc">Bob Evans Farm Fresh Burgers</a></figcaption>
+        <figcaption ><a href="https://www.giftcardmall.com/store-gift-cards/bob-evans-gift-card">Bob Evans Farm Fresh Burgers</a></figcaption>
       </figure>
     </td></tr>
   </table>
@@ -31,17 +31,17 @@ I've never been impressed with Bob Evan's other burgers. But the one I got (the 
     <tr><td style="width: 33%;">
       <figure>
         <img src="/images/burgers/McDonalds.gif" alt="McDonald's" />
-        <figcaption ><a href="https://www.amazon.com/McDonalds-Behind-John-F-Love/dp/0553347594/ref=as_li_ss_tl?ie=UTF8&qid=1507342027&sr=8-15&keywords=mcdonalds+gift+card&linkCode=ll1&tag=hendrixjoseph-20&linkId=0ddcdafc036354598166de08b7343ee7">McDonald's</a></figcaption>
+        <figcaption ><a href="https://www.mcdonalds.com/us/en-us.html">McDonald's</a></figcaption>
       </figure>
     </td><td style="width: 33%;">
       <figure>
         <img src="/images/burgers/BurgerKing.gif" alt="Burger King" />
-        <figcaption><a href="https://www.amazon.com/Burger-King-25/dp/B00F2RZPOM/ref=as_li_ss_tl?ie=UTF8&qid=1507342027&sr=8-1&keywords=mcdonalds+gift+card&linkCode=ll1&tag=hendrixjoseph-20&linkId=b12ece7da99fdf1b12a6387f6f23620e">Burger King</a></figcaption>
+        <figcaption><a href="https://www.giftcardmall.com/e-gift-cards/burger-king-egift-card">Burger King</a></figcaption>
       </figure>
     </td><td style="width: 33%;">
       <figure>
         <img src="/images/burgers/Wendys.gif" alt="Wendy's" />
-        <figcaption><a href="https://www.amazon.com/Wendys-20-Gift-Card/dp/B00P3DUFRW/ref=as_li_ss_tl?ie=UTF8&qid=1507342027&sr=8-2&keywords=mcdonalds+gift+card&linkCode=ll1&tag=hendrixjoseph-20&linkId=c5cf3ddbd70bf7c010940b1e8afe7301">Wendy's</a></figcaption>
+        <figcaption><a href="https://www.giftcardmall.com/store-gift-cards/wendys-gift-card">Wendy's</a></figcaption>
       </figure>
     </td></tr>
   </table>
@@ -61,7 +61,7 @@ I've come not to like the fast food burgers. They always seem too dry. My friend
     </td><td style="width: 50%;">
       <figure>
         <img src="/images/burgers/bubba.jpg" alt="Bubba" />
-        <figcaption><a href="https://www.amazon.com/BUBBA-BURGER-CHUCK-PATTIES-ORIGINAL/dp/B0725NDC2P/ref=as_li_ss_tl?s=gift-cards&ie=UTF8&qid=1507342292&sr=8-1&keywords=bubba+burger&linkCode=ll1&tag=hendrixjoseph-20&linkId=94d0bfb44befe592da6ea44b34ae2f5d">Bubba</a></figcaption>
+        <figcaption><a href="https://bubbafoods.com/">Bubba</a></figcaption>
       </figure>
     </td></tr>
   </table>

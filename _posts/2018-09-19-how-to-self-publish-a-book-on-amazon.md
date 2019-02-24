@@ -21,7 +21,7 @@ Self-publishing a book via Amazon Kindle Direct Publishing (or KDP) is a three-s
 
 1. Set up a KDP account
 
-To set up a KDP account, you first need [an Amazon account](https://www.amazon.com/?tag=hendrixjoseph-20) - most people already have an Amazon account, but if not, setting up an Amazon account is easy enough.
+To set up a KDP account, you first need [an Amazon account](https://www.amazon.com/) - most people already have an Amazon account, but if not, setting up an Amazon account is easy enough.
 
 You need the Amazon account because you log into KDP with your Amazon account. Once you log into the KDP website, you need to complete your KDP account. To do this, you only need to do a tax interview and provide bank information.
 
@@ -65,8 +65,8 @@ Self-publishing a book via Amazon Kindle Direct Publishing (or KDP) is done thro
 
 Here are a few people I know who have published a book on Amazon:
 
-* [C. Brady](https://www.amazon.com/C.-Brady/e/B078WFMMB7/?tag=hendrixjoseph-20)
-* [Kevin Reichling](https://www.amazon.com/s/?search-alias=digital-text&field-author=Kevin+L.+Reichling&tag=hendrixjoseph-20)
-* [Joe Schlegel](https://www.amazon.com/Joe-Schlegel/e/B009SASEMY/?tag=hendrixjoseph-20)
+* [C. Brady](https://www.amazon.com/C.-Brady/e/B078WFMMB7/)
+* [Kevin Reichling](https://www.amazon.com/s/?search-alias=digital-text&field-author=Kevin+L.+Reichling)
+* [Joe Schlegel](https://www.amazon.com/Joe-Schlegel/e/B009SASEMY/)
 
 Have you published a book on Amazon? If so, feel free to drop the link to your book or author page in the comments below!

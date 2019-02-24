@@ -12,4 +12,4 @@ I've been playing with creating (Youtube) videos, including merging a couple tog
 
 This is two videos stitched together (which I learned how to do [here](https://www.msftnext.com/merge-videos-windows-10-photos-app/)) with a transition image I made with [Paint.NET](https://www.getpaint.net/).
 
-I ordered both the [replacement band](https://www.amazon.com/gp/product/B0768MH97N/?tag=hendrixjoseph-20) and [watch repair tool](https://www.amazon.com/gp/product/B071HHR58P/?tag=hendrixjoseph-20) on Amazon. Funny enough both cost about as much as a new watch would've cost, but I wanted to learn the process. Plus, if I have to do it again, I'll already have the tool.
+I ordered both the [replacement band](https://www.amazon.com/gp/product/B0768MH97N/) and [watch repair tool](https://www.amazon.com/gp/product/B071HHR58P/) on Amazon. Funny enough both cost about as much as a new watch would've cost, but I wanted to learn the process. Plus, if I have to do it again, I'll already have the tool.

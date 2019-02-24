@@ -5,7 +5,7 @@ tags: [matlab, old blog]
 keywords: [programming]
 ---
 
-Sometimes in [MatLab](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=aps&field-keywords=matlab&linkCode=ll2&tag=hendrixjoseph-20&linkId=5c585b73ba95ddcd090feac3d15cbc61) you’ll have a class, and you want to have a function or method in that class that modifies an instance variable in some way. But if you code your class like this:
+Sometimes in [MatLab](https://www.mathworks.com/products/matlab.html) you’ll have a class, and you want to have a function or method in that class that modifies an instance variable in some way. But if you code your class like this:
 
 Code:
 {% highlight matlab linenos %}

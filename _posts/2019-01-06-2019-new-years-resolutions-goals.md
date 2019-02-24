@@ -81,7 +81,7 @@ We also intend to do what we failed to do last year - eat out at most three time
 
 I want to create and publish an Android app. I didn't do this last year, so I will accomplish this goal this year. I don't intend for the app to be anything groundbreaking - in fact, it will probably be an app that's been done a million times.
 
-I also want to publish a variant of [the book I published last year](https://www.amazon.com/dp/B07M68STB4/?tag=hendrixjoseph-20). Last year's book was a children's book from the vantage point of my dog, Princess. This year's book will be a similar children's book, but from the vantage point of my wife's dog, Niko.
+I also want to publish a variant of [the book I published last year](https://www.amazon.com/dp/B07M68STB4/). Last year's book was a children's book from the vantage point of my dog, Princess. This year's book will be a similar children's book, but from the vantage point of my wife's dog, Niko.
 
 ## Be Healthier
 
