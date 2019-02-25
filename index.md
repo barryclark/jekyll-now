@@ -3,7 +3,7 @@ layout: default
 title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δεχόμαστε Bitcoin στην Ελλάδα
 ---
 
-Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/), στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/), στη [Ρόδο](https://www.meetup.com/Rhodes-Blockchains-Cryptocurrencies-Meetup/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
+Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/) ([Πέμπτη 14 Μαρτίου στο Orange Grove](https://www.meetup.com/BlockchainGreece-0/events/259129157/)), στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/), στη [Ρόδο](https://www.meetup.com/Rhodes-Blockchains-Cryptocurrencies-Meetup/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
 
 - [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
@@ -301,7 +301,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-11-30
+Τελευταία ενημέρωση: 2019-02-25
 
 <!-- <div class="posts">
   {% for post in site.posts %}
