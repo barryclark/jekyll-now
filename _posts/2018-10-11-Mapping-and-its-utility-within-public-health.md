@@ -13,7 +13,7 @@ Spatial Epidemiology may sound like a relatively new branch of science, what wit
 
 The most famous example is that of John Snow (no, not the leading character from Game of Thrones), a 19th century physician working in London during the period of a large Cholera outbreak (~1850’s). He is known as “the founding father of epidemiology” for his work on mapping the locations where Cholera infections had occurred and tying this data to information which could be used to inform future disease risk. For example, by mapping wells and water pumps and comparing their spatial distribution with that of Cholera cases (see the amazing map below), John identified potential sources of infection.
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/2/27/Snow-cholera-map-1.jpg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Snow-cholera-map-1.jpg" width="200">
 
 Nowadays the premise of spatial epidemiology is much the same, however, we now have a wealth of available satellite data informing us of environmental conditions across space (such as vegetation coverage, elevation, land-surface temperature, precipitation etc.) which can be used alongside statistical models and information on disease occurrence to predict where future cases may occur. 
 
