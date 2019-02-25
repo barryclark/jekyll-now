@@ -33,7 +33,7 @@ That's a 25% reduction. Last year we spent almost *four grand* eating out (altho
 
 We also intend to be more frugal when we do eat out by using coupons or ordering less expensive dishes.
 
-The other is for her to cut my hair. I got my hair cut five times last year for a total of $88. That's almost $18 a haircut. Hair trimmers can cost anywhere from $260 for [a professional hair trimmer](https://www.amazon.com/Andis-Professional-Powerful-Lightweight-Cordless/dp/B06XGQJPK7/?tag=hendrixjoseph-20) (haha, not buying that one) to $20 for [a much cheaper, but still quality hair trimmer](https://www.amazon.com/Wahl-Color-Complete-Cutting-79300-400T/dp/B000JNQSIQ/?tag=hendrixjoseph-20), at least on Amazon (note these prices will probably change over time). You might even do better if you shop around.
+The other is for her to cut my hair. I got my hair cut five times last year for a total of $88. That's almost $18 a haircut. Hair trimmers can cost anywhere from $260 for [a professional hair trimmer](https://www.walmart.com/ip/690806300) (haha, not buying that one) to $20 for [a much cheaper, but still quality hair trimmer](https://www.walmart.com/ip/10965214). You might even do better if you shop around.
 
 It might not sound like much, but it will pay for itself in less than a year.
 

@@ -22,7 +22,7 @@ We had two concrete goals for this abstract goal: eat out at most three times a 
 
 We forgot about the eating out limit was three times a month and fell back on our old habit of eating out once a weekend.
 
-And, while I did end up buying [a pair of hair trimmers](https://www.amazon.com/Wahl-Color-Complete-Cutting-79300-400T/dp/B000JNQSIQ/?tag=hendrixjoseph-20), I only cut my own hair once and ended up going to the barbershop for the remainder of the year. That one self-haircut did "pay for itself," though.
+And, while I did end up buying [a pair of hair trimmers](https://www.walmart.com/ip/Wahl-Color-Complete-Cutting-79300-400T/10965214), I only cut my own hair once and ended up going to the barbershop for the remainder of the year. That one self-haircut did "pay for itself," though.
 
 ## Earn More
 
@@ -30,7 +30,7 @@ The concrete goals for "earn more" consisted of: getting a raise at work, expand
 
 I have expanded my selection of [t-shirts on Amazon](https://hendrixjoseph.github.io/t-shirts/), as well as porting several designs over to my [Redbubble account](https://www.redbubble.com/people/joehx) and my [TeePublic account](https://www.teepublic.com/user/joehx). I've stopped putting effort into my [TeeSpring account](https://teespring.com/stores/joehxs-store) mainly because I receive almost no sales via that site whereas I receive regular sales on the others. That said, I will leave what shirts I have on TeeSpring.
 
-My wife didn't publish or write a book, and I didn't publish or make an Android app. I did publish [a children's ebook called *The Adventures of Princess*](https://www.amazon.com/dp/B07M68STB4/?tag=hendrixjoseph-20) which is about my dog Princess and me meeting my wife, although I bit fictionalized.
+My wife didn't publish or write a book, and I didn't publish or make an Android app. I did publish [a children's ebook called *The Adventures of Princess*](https://www.amazon.com/dp/B07M68STB4/) which is about my dog Princess and me meeting my wife, although I bit fictionalized.
 
 ![Cover for The Adventures of Princess](/images/princess-cover.jpg)
 *Cover for The Adventures of Princess*

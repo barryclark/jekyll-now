@@ -64,7 +64,7 @@ This means something that pays for itself in less than a year is definitely wort
 
 Now let's look at a couple of examples. I'm going to write these as math word problems. Sorry if it gives anyone flashbacks to math class!
 
-> A [60-watt equivalent LED lightbulb](https://www.amazon.com/Philips-60-Watt-Equivalent-Light-White/dp/B00XNHGL28?tag=hendrixjoseph-20) costs $3.25 and uses 6.5 watts of electricity. Assuming the bulb is on for eight hours a day and electricity costs 11&cent; a kilowatt-hour, how soon will it pay for itself? What's the approximate rate of return and is it worth it?
+> A [60-watt equivalent LED lightbulb](https://www.homedepot.com/p/303313298) costs $3.25 and uses 6.5 watts of electricity. Assuming the bulb is on for eight hours a day and electricity costs 11&cent; a kilowatt-hour, how soon will it pay for itself? What's the approximate rate of return and is it worth it?
 
     old daily cost: 60 watts * (1 kilowatt / 1000 watts) * 8 hours *  $0.11 = $0.0528
     new daily cost: 6.5 watts * (1 kilowatt / 1000 watts) * 8 hours *  $0.11 = $0.00572

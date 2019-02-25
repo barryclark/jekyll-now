@@ -32,7 +32,7 @@ It's common vernacular to say "don't worry" when something troubling is on the h
 You're allowed to feel.
 
 ![Glad Trash Bags](/images/emotions/glad-trash-bags.jpg)
-*[Don't Get Mad, Get Glad!](https://www.amazon.com/Glad-Tall-Kitchen-Drawstring-Trash/dp/B00ASBOP9S/?tag=hendrixjoseph-20) If only it were that easy...*
+*[Don't Get Mad, Get Glad!](https://www.homedepot.com/p/Glad-Tall-Kitchen-Drawstring-Trash-Bags/205959531) If only it were that easy...*
 
 ## Don't Discount Your Emotions
 

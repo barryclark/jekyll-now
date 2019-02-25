@@ -11,7 +11,7 @@ The month of March is going to be an intense one for me. In addition to my norma
 ![Sketch of the planned master bath remodel.](/images/bathroom-remodel/bathroom-sketch.png)
 *Sketch of the planned master bath remodel.*
 
-Why am I remodeling the master bathroom? Essentially, it needs repair. The bathroom is at the point where the costs of repairing it are high enough that it just makes sense. I haven't crunched any serious numbers - I'm mostly a DIY type person, so labor is cheap - but the drywall needs replaced (too much moisture damage and mold), the floor molding is falling off at places, the sink and vanity are not fixed, and there are no [GFCI outlets](https://www.amazon.com/s/?url=search-alias%3Dtools&field-keywords=gfci+outlet&tag=hendrixjoseph-20). Not to mention that the style is horribly out of date. The room still has wallpaper! Thankfully, there is no carpet - but I'll still replace the flooring.
+Why am I remodeling the master bathroom? Essentially, it needs repair. The bathroom is at the point where the costs of repairing it are high enough that it just makes sense. I haven't crunched any serious numbers - I'm mostly a DIY type person, so labor is cheap - but the drywall needs replaced (too much moisture damage and mold), the floor molding is falling off at places, the sink and vanity are not fixed, and there are no [GFCI outlets](https://www.homedepot.com/p/302520895). Not to mention that the style is horribly out of date. The room still has wallpaper! Thankfully, there is no carpet - but I'll still replace the flooring.
 
 ![An example of some water damage.](/images/bathroom-remodel/water-damage.jpg)
 *An example of some water damage.*

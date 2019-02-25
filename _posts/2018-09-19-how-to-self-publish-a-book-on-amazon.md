@@ -52,7 +52,7 @@ The second page of the wizard is where you upload your book. You must also creat
 ![Page two of the wizard.](/images/amazon-screenshots/kpd/wizard-page-two.png)
 *Page two of the wizard*
 
-The third and final page of the wizard is where you choose the price of your book. You also choose between different royalty options. For instance, you can enroll your book in [KDP Select](https://kdp.amazon.com/en_US/select). KDP Select means you make the ebook version your book exclusive to the Kindle Store. In return, you get additional benefits, such as additional royalties and inclusion of your book in the [Kindle Unlimited](https://www.amazon.com/kindle-dbs/hz/signup/?tag=hendrixjoseph-20) program.
+The third and final page of the wizard is where you choose the price of your book. You also choose between different royalty options. For instance, you can enroll your book in [KDP Select](https://kdp.amazon.com/en_US/select). KDP Select means you make the ebook version your book exclusive to the Kindle Store. In return, you get additional benefits, such as additional royalties and inclusion of your book in the [Kindle Unlimited](https://www.amazon.com/kindle-dbs/hz/signup/) program.
 
 ![Page three of the wizard.](/images/amazon-screenshots/kpd/wizard-page-three.png)
 *Page three of the wizard*

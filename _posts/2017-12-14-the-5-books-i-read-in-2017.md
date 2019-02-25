@@ -28,11 +28,11 @@ I'm always looking to increase my personal finance knowledge, and The Millionair
 
 ![Neuromancer Book Cover](/images/covers/neuromancer-book-cover.jpg)
 
-Another book I've wanted to read for a while. Published in 1984, Neuromancer started the cyberpunk genre and even used the phrase "matrix" in the sense that was later used in the 1999 movie [The Matrix](https://www.amazon.com/Matrix-Keanu-Reeves/dp/B000GJPL1S/?tag=hendrixjoseph-20).
+Another book I've wanted to read for a while. Published in 1984, Neuromancer started the cyberpunk genre and even used the phrase "matrix" in the sense that was later used in the 1999 movie [The Matrix](https://www.walmart.com/ip/The-Matrix-Collection-Blu-ray/43349819).
 
 This book was also William Gibson's debut novel. When I bought this book at Half Price Books, they were also selling [a first-edition copy of the book](https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5337996799&mpre=https://www.ebay.com/sch/i.html?_nkw=neuromancer+first+edition) for somewhere around $250. Of course, my copy is a reprint (although still a print from the 80's) that cost maybe a percent of that.
 
-William Gibson also wrote the short story [Johnny Mnemonic](https://www.abebooks.com/products/isbn/9780671523008/30112982957), which is placed in the same "universe" as Neuromancer and also later made into [a movie starring Keanu Reeves](https://www.amazon.com/Johnny-Mnemonic-Blu-Ray-Keanu-Reeves/dp/B004R0MF48/?tag=hendrixjoseph-20).
+William Gibson also wrote the short story [Johnny Mnemonic](https://www.abebooks.com/products/isbn/9780671523008/30112982957), which is placed in the same "universe" as Neuromancer and also later made into [a movie starring Keanu Reeves](https://www.walmart.com/ip/Johnny-Mnemonic-DVD/15715886).
 
 ### [Dad's Guide to Pregnancy For Dummies](https://www.abebooks.com/products/isbn/9780470767900/30218588112)
 

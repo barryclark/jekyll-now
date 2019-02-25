@@ -26,18 +26,18 @@ The example I gave in my introduction is *text prediction*. What my phone is doi
 
 ## Smart Thermostats such as Nest
 
-When I moved in with my wife, one of the first things I did was upgrade to a smart thermostat - the [Nest Learning Thermostat](https://www.amazon.com/Nest-T3007ES-Thermostat-Temperature-Generation/dp/B0131RG6VK/?tag=hendrixjoseph-20), to be exact. Of course, the main reason I upgraded the thermostat is that she still had the old round style with a mercury switch.
+When I moved in with my wife, one of the first things I did was upgrade to a smart thermostat - the [Nest Learning Thermostat](https://www.homedepot.com/p/Nest-T3007ES-Thermostat-Temperature-Generation/206391087), to be exact. Of course, the main reason I upgraded the thermostat is that she still had the old round style with a mercury switch.
 
 ![The Nest Learning Thermostat, installed & working.](/images/everyday-examples-of-artificial-intelligence/nest-thermostat.jpg)
 *The Nest Learning Thermostat, installed & working.*
 
-What makes the [Nest Thermostat](https://www.amazon.com/Nest-T3007ES-Thermostat-Temperature-Generation/dp/B0131RG6VK/?tag=hendrixjoseph-20) so smart - why is it AI?
+What makes the [Nest Thermostat](https://www.homedepot.com/p/Nest-T3007ES-Thermostat-Temperature-Generation/206391087) so smart - why is it AI?
 
-The easy answer is that the [Nest Thermostat](https://www.amazon.com/Nest-T3007ES-Thermostat-Temperature-Generation/dp/B0131RG6VK/?tag=hendrixjoseph-20) learns when you adjust the temperature and simply sets itself to that temperature at the same time.
+The easy answer is that the [Nest Thermostat](https://www.homedepot.com/p/Nest-T3007ES-Thermostat-Temperature-Generation/206391087) learns when you adjust the temperature and simply sets itself to that temperature at the same time.
 
-But it does more than that. [The Nest Thermostat](https://www.amazon.com/Nest-T3007ES-Thermostat-Temperature-Generation/dp/B0131RG6VK/?tag=hendrixjoseph-20) learns how long it takes to heat up or cool your home based on factors such as the temperature and humidity inside, and the weather outside (which it gets from the Internet).
+But it does more than that. [The Nest Thermostat](https://www.homedepot.com/p/Nest-T3007ES-Thermostat-Temperature-Generation/206391087) learns how long it takes to heat up or cool your home based on factors such as the temperature and humidity inside, and the weather outside (which it gets from the Internet).
 
-So the [Nest](https://www.amazon.com/Nest-T3007ES-Thermostat-Temperature-Generation/dp/B0131RG6VK/?tag=hendrixjoseph-20) not only auto-adjusts the temperature at a certain time, it will make it so the temperature in your home is at a comfortable level by a certain time - say, when you get home from work.
+So the [Nest](https://www.homedepot.com/p/Nest-T3007ES-Thermostat-Temperature-Generation/206391087) not only auto-adjusts the temperature at a certain time, it will make it so the temperature in your home is at a comfortable level by a certain time - say, when you get home from work.
 
 ## Facebook Facial Recognition
 

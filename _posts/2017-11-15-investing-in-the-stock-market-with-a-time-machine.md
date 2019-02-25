@@ -6,7 +6,7 @@ keywords: [microsoft excel, excel, stock market, stock, market, investment, inve
 image: /images/stock-magic/2016-chart.png
 ---
 
-One of the most challenging aspects of investing is lack of foreknowledge or future knowledge - we simply do not know what the performance of a stock or index fund will be. But what if we could print out a list of opening values of a stock and then take [a time machine](https://www.amazon.com/Back-Future-Complete-Adventures-Blu-ray/dp/B01LAQPGCO/?tag=hendrixjoseph-20) backward in time and invest with foreknowledge? Would we be able to make much more money than otherwise possible?
+One of the most challenging aspects of investing is lack of foreknowledge or future knowledge - we simply do not know what the performance of a stock or index fund will be. But what if we could print out a list of opening values of a stock and then take [a time machine](https://www.walmart.com/ip/Back-to-the-Future-The-Complete-Adventures-Blu-ray/54527164) backward in time and invest with foreknowledge? Would we be able to make much more money than otherwise possible?
 
 *If this blog post interests you, then check out [Is a Time Series Correlated with its Future Self?](http://hendrixjoseph.github.io/is-a-time-series-correlated-with-its-future-self/)*
 
@@ -73,6 +73,6 @@ The percent gain is how much the experiment gained in value, whereas the market 
 
 It makes sense that the longer I have, the more money I made - which is mostly why the two year-long experiments netted in more money than the one-month experiments. What was interesting is that the poor market performance of 2008 brought in more money than the good market performance of 2016, indicating that there is more money to be made when a market is in decline. Of course, if the stock market bottomed out at zero, I would have no money at the end regardless. If I had a time machine, then I would certainly have foreknowledge of the market hitting zero.
 
-Of course, I don't have a [time machine](https://www.amazon.com/Doctor-Who-Complete-Blu-ray-Season/dp/B003XIIW2Y/?tag=hendrixjoseph-20), or oracle drive, or [crystal ball](https://www.amazon.com/Amlong-Crystal-Clear-Redwood-Resin/dp/B01BCS7J3Y/?tag=hendrixjoseph-20). Plus, there's the fact that investing in the stock market influences the stock market affects the performance of the stock market, so doing this with a [time machine](https://www.abebooks.com/products/isbn/9780486284729/30059231216) may change history, depending on what theory of time travel you may subscribe to.
+Of course, I don't have a [time machine](https://www.walmart.com/ip/Doctor-Who-Light-Up-Tardis-Kit/21663928), or oracle drive, or [crystal ball](https://www.walmart.com/ip/Crystal-Ball-with-Stand-Halloween-Decoration/29949453). Plus, there's the fact that investing in the stock market influences the stock market affects the performance of the stock market, so doing this with a [time machine](https://www.abebooks.com/products/isbn/9780486284729/30059231216) may change history, depending on what theory of time travel you may subscribe to.
 
 Oh, and [here's the Excel spreadsheet I used to to conduct my experiments](/xlxs/stock-magic.xlsx).
