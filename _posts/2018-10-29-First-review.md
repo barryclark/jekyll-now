@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tackling your first review: getting over the hurdle.
+title: Tackling your first review, getting over the hurdle.
 ---
 
 As early career researchers, we eventually start publishing articles and showcasing our work to the world. With such exposure comes the occasional request to review other research articles within your area of expertise.
@@ -21,7 +21,7 @@ Most peer review systems operate by anonymous peer review, however, a few global
 4. *Take your time*. 
 Journals generally have quite tight deadlines for reviewers - usually 2 weeks since accepting to review. This, combined with your commitments to your own research etc., can cause reviewers to stress and speed through a review. Take your time. Read the whole manuscript through once, without making any comments. Next, I generally tackle one section at a time, and have a break afterward. For example, I will re-read the introduction and make comments directly on the manuscript (normally through the 'insert comment' option in word) as I go. Once I've finished a section, I'll collate all my comments into a word document, and have a break before moving on to the methods. 
 
-Sometimes, things  which you may flag/raise or have questions about are answered further within the manuscript. Therefore, it's good to re-read your comments after reading through the next section, and remove any issues or questions which have been addressed. If you know in advance that you will not have the time to adequately review the article, you can email the editor prior to accepting to review, asking for a longer window. Again, you can always decline to review if it is not a convenient time.
+    Sometimes, things  which you may flag/raise or have questions about are answered further within the manuscript. Therefore, it's good to re-read your comments after reading through the next section, and remove any issues or questions which have been addressed. If you know in advance that you will not have the time to adequately review the article, you can email the editor prior to accepting to review, asking for a longer window. Again, you can always decline to review if it is not a convenient time.
 
 5. *If you have any major concerns, raise these with the editor in your response*. 
 One of the biggest issues (in my opinion) with reviewing articles is that most reviewers don't pay enough attention toward rigorously investigating the methodology used, and the statistics used to obtain the results given. If you feel like you don't fully understand an element of the article, mention this to the editor so that they can possibly seek an additional reviewer who can provide the necessary critique of those elements. These no shame in stating that you don't feel comfortable commenting on a certain section. For example, if an article included a large section of statistical analysis, and you're not a statistician, mention this to the editor. There is generally a section in the response submission to add a message which will go to the editor only (not the authors).
