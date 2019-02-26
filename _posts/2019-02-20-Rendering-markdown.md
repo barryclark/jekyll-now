@@ -20,10 +20,14 @@ Reactive/dynamic documents are ones which change in response to a set of paramet
 I wanted to render tables displaying the generated district-level summary statistics within a separate panel on the apps UI. This task, in itself, is relatively simple within Shiny if a single table is passed to each panel (see example code below):
 
 *In ui.R:*
-`tabPanel(value ='tab3', title = "Summary Statistics", tableOutput("report")))`
+```
+tabPanel(value ='tab3', title = "Summary Statistics", tableOutput("report")))
+```
 
 *In server.R:*
-`output$statistics <- renderTable({summary_statistics})`
+```
+output$statistics <- renderTable({summary_statistics})
+```
 
 However, as you can see from the above code, `tableOutput` can only take one object. There is not a simple way to display multiple tables within one `tableOutput` call. To get around this, and display multiple tables within one `tabPanel`, I decided that I would produce an R Markdown document displaying tables for each of the 'surfaces' a user selects. 
 
@@ -49,7 +53,9 @@ stats_list: NA
 Setting objects within the `params` argument to NA allowed me to feed a list of parameters from the current global environment, directly into the R Markdown document. The above code defines a parameter `stats_list` as an empty object, I then refer to this within the Markdown document as:
 
 *In markdown.rmd:*
-`params$stat_list`
+```
+params$stat_list
+```
 
 This Markdown document was then saved within the central directory for the app. Prior to updating this document based on user inputs, I had two lines of code which copy the template document to a temporary directory on the computer of the user of the app. This is because once the app is deployed, the user would not have write permissions to the current working directory. The template was copied using the following:
 
@@ -64,7 +70,9 @@ file.copy("markdown.rmd", tempReport, overwrite = TRUE)
 This parameter object is a list to feed into the Markdown document. The objects within the list are generated in another section of my code within the server.R file, based off of a user input object `input`. The parameter list is defined as:
 
 *In server.R:*
-`params <- list(stats_list = stats_list)`
+```
+params <- list(stats_list = stats_list)
+```
 
 When rendering the document using the `render` function in the `rmarkdown` document, I then specify `params` within the Markdown file to be the parameter list `params` defined above, as follows:
 
@@ -95,11 +103,15 @@ return(includeHTML(paste0(tempdir(), "/populated_markdown.html")))
 The above function returns the output file from the `render` function, as a chunk of html text. To assign this to an `output` object, which is then callable within the `tabPanel` argument in the UI, I then run the following code:
 
 *In server.R:*
-<code> output$report <- renderUI({getPage()}) </code>
+```
+output$report <- renderUI({getPage()})
+```
 
 I can then render this Markdown (in html) within the `tabPanel` in the UI, by then calling the output object:
 
 *In ui.R:*
-<code> tabPanel(value ='tab3', title = "Summary statistics", htmlOutput("report"))) </code>
+```
+tabPanel(value ='tab3', title = "Summary statistics", htmlOutput("report")))
+```
 
 This is a bit of a long-winded workaround, but allows me to generate a dynamic markdown document which can also be rendered as an output report for each user of the app.   
