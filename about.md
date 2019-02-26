@@ -12,8 +12,6 @@ My DTP research aims to produce high spatial resolution maps of neglected tropic
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-4151-9031" href="https://orcid.org/0000-0002-4151-9031" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-4151-9031</a></div>
 
-<a href = "https://www.researchgate.net/profile/Joshua_Longbottom" download>
-	<img src="https://github.com/joshlongbottom/joshlongbottom.github.io/blob/master/images/49394.png" height="42" width="42" title="My ResearchGate" > 
-</a> 
+[My ResearchGate](https://www.researchgate.net/profile/Joshua_Longbottom)
 
 [Contact me](mailto:joshua.longbottom@lstmed.ac.uk)
