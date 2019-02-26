@@ -23,7 +23,7 @@ I wanted to render tables displaying the generated district-level summary statis
 `tabPanel(value ='tab3', title = "Summary Statistics", tableOutput("report")))`
 
 *In server.R:*
-<code> output$statistics <- renderTable({summary_statistics}) </code>
+`output$statistics <- renderTable({summary_statistics})`
 
 However, as you can see from the above code, `tableOutput` can only take one object. There is not a simple way to display multiple tables within one `tableOutput` call. To get around this, and display multiple tables within one `tabPanel`, I decided that I would produce an R Markdown document displaying tables for each of the 'surfaces' a user selects. 
 
@@ -43,7 +43,7 @@ This template was relatively simple, and consisted of several chunks of code uti
 Setting objects within the `params` argument to NA allowed me to feed a list of parameters from the current global environment, directly into the R Markdown document. The above code defines a parameter `stats_list` as an empty object, I then refer to this within the Markdown document as:
 
 *In markdown.rmd:*
-<code> params$stat_list </code>
+`params$stat_list`
 
 This Markdown document was then saved within the central directory for the app. Prior to updating this document based on user inputs, I had two lines of code which copy the template document to a temporary directory on the computer of the user of the app. This is because once the app is deployed, the user would not have write permissions to the current working directory. The template was copied using the following:
 
@@ -56,7 +56,7 @@ file.copy("markdown.rmd", tempReport, overwrite = TRUE)`
 This parameter object is a list to feed into the Markdown document. The objects within the list are generated in another section of my code within the server.R file, based off of a user input object `input`. The parameter list is defined as:
 
 *In server.R:*
-<code> params <- list(stats_list = stats_list) </code>
+`params <- list(stats_list = stats_list)`
 
 When rendering the document using the `render` function in the `rmarkdown` document, I then specify `params` within the Markdown file to be the parameter list `params` defined above, as follows:
 
@@ -70,7 +70,7 @@ The `render` function will generate an output Markdown document in the specified
 Once the updated markdown file is saved in a temporary directory, I render this markdown within the server.R file, and assign it as a specified `output` object. To do this I define a bespoke function `get_page` as:
 
 *In server.R:*
-`getPage <- function() { return(includeHTML(paste0(tempdir(), "/populated_markdown.html")))}`
+<code> getPage <- function() {return(includeHTML(paste0(tempdir(), "/populated_markdown.html")))} </code>
   
 The above function returns the output file from the `render` function, as a chunk of html text. To assign this to an `output` object, which is then callable within the `tabPanel` argument in the UI, I then run the following code:
 
