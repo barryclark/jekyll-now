@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I'm from Murrells Inlet, SC, and I'm studying Industrial Engineering w/ a Computing Emphasis at Clemson University. I'm a member of the Calhoun Honors College. My goal is to utilize my knowledge, work ethic, and problem-solving skills in an environment which allows me to learn anything and everything about engineering, software development, and business operations. 
+I'm from Murrells Inlet, SC, and I'm studying Industrial Engineering w/ a Computing Emphasis at Clemson University's Calhoun Honors College. When I'm not working or playing with side-projects I like to practice guitar, play tennis, and read. I'm always interested in learning and trying new things.
+
+My goal is to utilize my knowledge, work ethic, and problem-solving skills in an environment which allows me to learn anything and everything about engineering, software development, and business operations. 
 
 ### Honors & Achievements
 
