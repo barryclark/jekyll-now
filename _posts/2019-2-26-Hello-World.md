@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marine Hydradynamics Lab
+title: taxt
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
