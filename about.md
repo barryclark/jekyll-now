@@ -14,4 +14,4 @@ My DTP research aims to produce high spatial resolution maps of neglected tropic
 
 [My ResearchGate](https://www.researchgate.net/profile/Joshua_Longbottom)
 
-<center>[**Contact me**](mailto:joshua.longbottom@lstmed.ac.uk)</center>
+[Contact me](mailto:joshua.longbottom@lstmed.ac.uk)
