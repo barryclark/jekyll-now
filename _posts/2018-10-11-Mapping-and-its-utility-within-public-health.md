@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mapping and its utility within public health
+title: Mapping and its utility within public health.
 ---
 
 Maps are without a doubt the best way to visualise spatial information. Want to know how to get from A to B? You can use a map. Want to know where the nearest Tesco is? You can use a map. The utility of maps in day to day life is probably taken for granted by most of us – we use them without realising. Sat-Nav, GoogleMaps™ and AppleMaps™, although digital, are maps and work on the same premises established thousands of years ago - they visualise information in geographical space.
