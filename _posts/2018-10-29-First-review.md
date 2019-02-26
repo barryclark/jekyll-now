@@ -1,0 +1,8 @@
+Tackling your first review: getting over the hurdle.
+As early career researchers, we eventually start publishing articles and showcasing our work to the world. With such exposure comes the occasional request to review other research articles within your area of expertise.
+
+Being asked to review your first paper may be quite daunting, especially as, in my opinion, it's not something we're fully prepared for. There doesn't seem to be any formal training being offered within universities, and most people feel that they can't approach other researchers for help as they have to keep their review confidential.
+
+This post aims to serve as a basic introduction to how to review your first research article, with several tips which I've accumulated over my time as a reviewer (granted, this is only 2 years). 
+
+1. Don't be afraid to decline an invitation to review. Receiving your first invitation to review can be pretty exciting, as, contributing to the appraisal of others research is a testament to your knowledge in a particular research area. Some journals, however, may request that you review an article which is out of the scope of your knowledge or expertise.  In these instances, if you feel like you would be unable to provide meaningful and technical comments on the manuscript, there's no harm in declining to review. When invited to review, most journals will automatically create a reviewer account for you on their online system. Use this account to specify your research areas and interests, this should hopefully ensure that the specific journal does not send you manuscripts outside of your area of expertise in the future. 
