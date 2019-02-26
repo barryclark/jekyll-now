@@ -4,12 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm from Murrells Inlet, SC, and I'm studying Industrial Engineering w/ a Computing Emphasis at Clemson University. I'm a member of the Calhoun Honors College. My goal is to utilize my knowledge, work ethic, and problem-solving skills in an environment which allows me to learn anything and everything about engineering, software development, and business operations. 
 
-### More Information
+### Honors & Achievements
 
-A place to include any other types of information that you'd like to include about yourself.
+- Winner of Best Domain Registered with Domain.com [MLH Award] at CUhackit 2019
+- Member of the Calhoun Honors College at Clemson University
+- South Carolina Palmetto Fellows Scholarship recipient
+- Participated in CUhackit's "Hello World!" Freshman Hackathon
+
+### Skills
+- Python
+- C
+- MatLab
+- Java
+- Excel, MS Office
+- GitHub basics
+- Linux Command-line basics
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[SRusse5@clemson.edu](mailto:SRusse5@clemson.edu)
