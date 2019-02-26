@@ -29,7 +29,7 @@ However, as you can see from the above code, `tableOutput` can only take one obj
 
 I then planned to render this R Markdown document within the `tabPanel`. Rendering an existing R Markdown document in a tabPanel is straightforward, using the `includeMarkdown` function, however, since the UI builds when the app is deployed, there is no way to include the dynamic R Markdown which updates based on user input.
 
-The solution:
+# The solution:
 
 The key to solving this problem was to create an R Markdown document which was responsive to objects/parameters within the current R environment. The main steps I took are as follows:
 
@@ -38,17 +38,24 @@ The key to solving this problem was to create an R Markdown document which was r
 This template was relatively simple, and consisted of several chunks of code utilising the `kable` function within the `knitr` package. The most important part of this document was a `params` argument situated in the header of the markdown document:
 
 In markdown.rmd:
-
+<code> --- 
+title: "Summary statistics" 
+output: html_document 
+params: stats_list: NA 
+---
+</code>
 
 Setting objects within the `params` argument to NA allowed me to feed a list of parameters from the current global environment, directly into the R Markdown document. The above code defines a parameter `stats_list` as an empty object, I then refer to this within the Markdown document as:
 
 In markdown.rmd:
-
+<code> params$stat_list </code>
 
 This Markdown document was then saved within the central directory for the app. Prior to updating this document based on user inputs, I had two lines of code which copy the template document to a temporary directory on the computer of the user of the app. This is because once the app is deployed, the user would not have write permissions to the current working directory. The template was copied using the following:
 
 In server.R:
-
+<code> tempReport <- file.path(tempdir(), "markdown.rmd") 
+file.copy("markdown.rmd", tempReport, overwrite = TRUE)
+                     </code>
 
 2. Feed a parameter object into the Markdown document. The parameter object changes based on each users `input` (selection of specified variables).
 
