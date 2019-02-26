@@ -1,10 +1,15 @@
-Rendering reactive R Markdown documents within a Shiny app.
+---
+layout: post
+title: Rendering reactive R Markdown documents within a Shiny app.
+---
+
 This blog will serve as a technical(ish) post on how to generate dynamic, user-input specific R Markdown documents within a Shiny app. I am posting this guide primarily because I had some difficulty trying to figure this out myself, and couldn't find any existing posts on the topic on StackOverflow or similar sites. 
 
-What is Shiny?
+*What is Shiny?*
 
-Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a web-page or embed them in R Markdown documents or build dashboards. 
-The specific problem:
+> Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a web-page or embed them in R Markdown documents or build dashboards. 
+
+# The specific problem:
 
 As noted in the official description of Shiny (above), one of the primary purposes of Shiny is to embed apps within R Markdown documents. 
 
