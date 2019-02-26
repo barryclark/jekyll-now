@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown Style Guide
+title: Marine Hydradynamics Lab
 ---
 
 
