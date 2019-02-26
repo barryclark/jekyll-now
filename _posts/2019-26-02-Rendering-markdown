@@ -20,10 +20,10 @@ Reactive/dynamic documents are ones which change in response to a set of paramet
 I wanted to render tables displaying the generated district-level summary statistics within a separate panel on the apps UI. This task, in itself, is relatively simple within Shiny if a single table is passed to each panel (see example code below):
 
 In ui.R:
-
+<code> tabPanel(value ='tab3', title = "Summary Statistics", tableOutput("report")))</code>
 
 In server.R:
-
+<code> output$statistics <- renderTable({summary_statistics}) </code>
 
 However, as you can see from the above code, `tableOutput` can only take one object. There is not a simple way to display multiple tables within one `tableOutput` call. To get around this, and display multiple tables within one `tabPanel`, I decided that I would produce an R Markdown document displaying tables for each of the 'surfaces' a user selects. 
 
