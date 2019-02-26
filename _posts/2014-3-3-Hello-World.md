@@ -1,10 +1,31 @@
 ---
 layout: post
-title: You're up and running!
+title: Thanks for visiting my website
 ---
+You can find some things I've worked on in in the projects tab, and below is a brief summary of what I'm about
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+### About me
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+I'm from Murrells Inlet, SC, and I'm studying Industrial Engineering w/ a Computing Emphasis at Clemson University's Calhoun Honors College. When I'm not working or playing with side-projects I like to practice guitar, play tennis, and read. I'm always interested in learning and trying new things.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+My goal is to utilize my knowledge, work ethic, and problem-solving skills in an environment which allows me to learn anything and everything about engineering, software development, and business operations. 
+
+### Honors & Achievements
+
+- Winner of Best Domain Registered with Domain.com [MLH Award] at CUhackit 2019
+- Member of the Calhoun Honors College at Clemson University
+- South Carolina Palmetto Fellows Scholarship recipient
+- Participated in CUhackit's "Hello World!" Freshman Hackathon
+
+### Skills
+- Python
+- C
+- MatLab
+- Java
+- Excel, MS Office
+- GitHub basics
+- Linux Command-line basics
+
+### Contact me
+
+[SRusse5@clemson.edu](mailto:SRusse5@clemson.edu)
