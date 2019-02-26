@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marine Hydradynamics Lab.
+title: Marine Hydradynamics Lab
 ---
 ## Publication ##
 
