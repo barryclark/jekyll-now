@@ -18,7 +18,7 @@ ref: team
 
 <section class="team-member-presentation" id="leon">
   <img src="{{ site.baseurl }}/images/2019-team-members/leon.jpg" />
-  <span>“My name is <strong>Leon Hauser</strong>. I assume the role of the ‘structural engineer’, since I'm interested in an engineer's career. I joined the project because I've been interested in the construction of aerospace vehicles for a long time and couldn't resign such an opportunity.”</span>
+  <span>“My name is <strong>Leon Hauser</strong>. In 2018, I already assumed the role of the ‘structural engineer’ (since I'm interested in an engineer's career); I'm responsible for the construction this year as well. I joined the project because I've been interested in the construction of aerospace vehicles for a long time and couldn't resign such an opportunity.”</span>
 </section>
 
 <section class="team-member-presentation" id="henrik">
@@ -39,4 +39,14 @@ ref: team
 <section class="team-member-presentation" id="jakob">
   <img src="{{ site.baseurl }}/images/2019-team-members/jakob.jpg" />
   <span>“My name is <strong>Jakob Schaarschmidt</strong> and I engage in electronics and construction of our CanSat. I was suggested to this project by the Humboldt Academy of Science and Engineering (HASE) of our school.”</span>
+</section>
+
+<section class="team-member-presentation" id="johanna">
+  <img src="{{ site.baseurl }}/images/2019-team-members/johanna.jpg" />
+  <span>“I'm <strong>Johanna Schneeberger</strong> and like Henrik, I'm responsible for programming. Amongst others, this means designing the controlment of the various sensors in our CanSat.”</span>
+</section>
+
+<section class="team-member-presentation" id="victor">
+  <img src="{{ site.baseurl }}/images/2019-team-members/victor.jpg" />
+  <span>“My name is <strong>Victor Sun</strong> and together with Leon, I'm engaged in the (mechanical) construction of the CanSat. I also help out with other problems when needed.”</span>
 </section>

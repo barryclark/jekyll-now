@@ -18,7 +18,7 @@ ref: team
 
 <section class="team-member-presentation" id="leon">
   <img src="{{ site.baseurl }}/images/2019-team-members/leon.jpg" />
-  <span>„Mein Name ist <strong>Leon Hauser</strong>. Ich übernehme im Apoapsis Team die Rolle des ‚Konstrukteurs‘ der Hardware, aus Eigeninteresse am Beruf eines Ingenieurs. Dem Projekt bin ich beigetreten, da ich mich immer für die Konstruktion von Flugkörpern aus der Raumfahrt interessiert habe und auf eine solche Chance nicht verzichten konnte.“</span>
+  <span>„Mein Name ist <strong>Leon Hauser</strong>. Ich übernahm schon 2018 die Rolle des ‚Konstrukteurs‘ der Hardware (aus Eigeninteresse am Beruf eines Ingenieurs) und bin auch dieses Jahr für die Konstruktion zuständig. Dem Projekt bin ich beigetreten, da ich mich immer für die Konstruktion von Flugkörpern aus der Raumfahrt interessiert habe und auf eine solche Chance nicht verzichten konnte.“</span>
 </section>
 
 <section class="team-member-presentation" id="henrik">
@@ -39,4 +39,14 @@ ref: team
 <section class="team-member-presentation" id="jakob">
   <img src="{{ site.baseurl }}/images/2019-team-members/jakob.jpg" />
   <span>„Mein Name ist <strong>Jakob Schaarschmidt</strong> und ich beteilige mich bei verschiedenen Problemen zur Elektronik und Konstruktion des CanSats. Angeregt wurde ich dabei von der Humboldt Academy of Science and Engineering (HASE) unserer Schule.“</span>
+</section>
+
+<section class="team-member-presentation" id="johanna">
+  <img src="{{ site.baseurl }}/images/2019-team-members/johanna.jpg" />
+  <span>„Ich bin <strong>Johanna Schneeberger</strong> und genauso wie Henrik für die Programmierung zuständig. Dabei beschäftige ich mich unter Anderem mit der Ansteuerung der verschiedenen Sensoren in unserem CanSat.“</span>
+</section>
+
+<section class="team-member-presentation" id="victor">
+  <img src="{{ site.baseurl }}/images/2019-team-members/victor.jpg" />
+  <span>„Mein Name ist <strong>Victor Sun</strong> und und ich übernehme gemeinsam mit Leon die (mechanische) Konstruktion des CanSats. Bei Bedarf helfe ich auch in den anderen Bereichen ein wenig aus.“</span>
 </section>
