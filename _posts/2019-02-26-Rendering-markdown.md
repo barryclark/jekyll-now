@@ -20,7 +20,7 @@ Reactive/dynamic documents are ones which change in response to a set of paramet
 I wanted to render tables displaying the generated district-level summary statistics within a separate panel on the apps UI. This task, in itself, is relatively simple within Shiny if a single table is passed to each panel (see example code below):
 
 *In ui.R:*
-<code> tabPanel(value ='tab3', title = "Summary Statistics", tableOutput("report")))</code>
+`tabPanel(value ='tab3', title = "Summary Statistics", tableOutput("report")))`
 
 *In server.R:*
 <code> output$statistics <- renderTable({summary_statistics}) </code>
@@ -38,11 +38,7 @@ The key to solving this problem was to create an R Markdown document which was r
 This template was relatively simple, and consisted of several chunks of code utilising the `kable` function within the `knitr` package. The most important part of this document was a `params` argument situated in the header of the markdown document:
 
 *In markdown.rmd:*
-`--- </br>
-title: "Summary statistics"  
-output: html_document 
-params: stats_list: NA 
----`
+`--- title: "Summary statistics"  output: html_document params: stats_list: NA ---`
 
 Setting objects within the `params` argument to NA allowed me to feed a list of parameters from the current global environment, directly into the R Markdown document. The above code defines a parameter `stats_list` as an empty object, I then refer to this within the Markdown document as:
 
@@ -65,11 +61,7 @@ This parameter object is a list to feed into the Markdown document. The objects 
 When rendering the document using the `render` function in the `rmarkdown` document, I then specify `params` within the Markdown file to be the parameter list `params` defined above, as follows:
 
 *In server.R:*
-`rmarkdown::render(tempReport, 
-output_file = paste0(tempdir(), "/populated_markdown.html"), 
-output_format = "html_document", 
-params = params, 
-envir = globalenv())`
+`rmarkdown::render(tempReport, output_file = paste0(tempdir(), "/populated_markdown.html"), output_format = "html_document", params = params, envir = globalenv())`
 
 The `render` function will generate an output Markdown document in the specified `output_format`. The above code also saves this updated document in a temporary directory on each app users computer as defined in the `output_file` argument.
 
@@ -78,11 +70,7 @@ The `render` function will generate an output Markdown document in the specified
 Once the updated markdown file is saved in a temporary directory, I render this markdown within the server.R file, and assign it as a specified `output` object. To do this I define a bespoke function `get_page` as:
 
 *In server.R:*
-`getPage <- function() { 
-      
-      return(includeHTML(paste0(tempdir(), "/populated_markdown.html"))) 
-      
-}`
+`getPage <- function() { return(includeHTML(paste0(tempdir(), "/populated_markdown.html")))}`
   
 The above function returns the output file from the `render` function, as a chunk of html text. To assign this to an `output` object, which is then callable within the `tabPanel` argument in the UI, I then run the following code:
 
@@ -95,5 +83,3 @@ I can then render this Markdown (in html) within the `tabPanel` in the UI, by th
 <code> tabPanel(value ='tab3', title = "Summary statistics", htmlOutput("report"))) </code>
 
 This is a bit of a long-winded workaround, but allows me to generate a dynamic markdown document which can also be rendered as an output report for each user of the app.   
-
-Below is the final rendered table within the output tab:
