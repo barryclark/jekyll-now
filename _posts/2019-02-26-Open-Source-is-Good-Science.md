@@ -2,11 +2,11 @@
 layout: post
 title: Embracing Open Source as Good Science
 ---
-<img src="/images/open.png" align="right" /> Sharing.  It's one of the earliest lessons your parents try to teach you - don't hoard, take turns, be generous.  Sharing is a great lesson for life.  Sharing is also a driving force behind scientific progress and software development.  Science and software rely on communal principles of transparency, knowledge exchange, reproducibility, and mutual benefit.  
+<img src="{{ site.baseurl }}/images/open.png" align="right" /> Sharing.  It's one of the earliest lessons your parents try to teach you - don't hoard, take turns, be generous.  Sharing is a great lesson for life.  Sharing is also a driving force behind scientific progress and software development.  Science and software rely on communal principles of transparency, knowledge exchange, reproducibility, and mutual benefit.  
 
 The practice of open sharing or open sourcing has advanced these fields in several ways:
 * [promoting better science](https://opensource.com/education/11/10/default-open-scientific-method) through transparency, peer review, and knowledge promotion
-* increasing community engagement by inviting scrutiny, feedback, mutual sharing, and collaboration
+* increasing [community engagement](https://opensource.com/open-organization/16/5/appreciating-full-power-open) by inviting scrutiny, feedback, mutual sharing, and collaboration
 * aligning with [government policy](https://open.usa.gov/) on openness and visibility in publicly-funded work
 
 We also feel strongly that the impetus for open sharing is reflected in [Rho's core values](http://www.rhoworld.com/rho/about/our-values) - especially team culture, innovation, integrity, and quality.  Given our values, and given our role in conducting science and creating software, we've been exploring ways that we can be more active in the so-called "sharing economy" when it comes to our work.  
@@ -17,8 +17,9 @@ We released our first open source tool - the openFDA Adverse Event Explorer - in
 
 Most repositories include examples and wikis that describe the tools and how they can be used.  An example of one of these tools, the Population Explorer is shown below.
 
-##Interactive Population Explorer
-<img src="/images/population-explorer.png"/>
+## Interactive Population Explorer
+<img src="{{ site.baseurl }}/images/population-explorer.png"/>
+
 *Access summary data on study population and subpopulations of interest in real time.*
 
 One of over 50 public projects on Rho's GitHub page - available at: [https://github.com/RhoInc/](https://github.com/RhoInc)
