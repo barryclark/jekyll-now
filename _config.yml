@@ -78,7 +78,7 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Theme
-theme: minima  
+theme: jekyll-theme-cayman  
 
 # Exclude these files from your production _site
 exclude:
