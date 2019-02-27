@@ -7,8 +7,13 @@ ref: team
 ---
 
 <div class="page-banner">
+<<<<<<< HEAD
   <img src="{{ site.baseurl }}/images/hgv-425x250.jpg" />
   <div>Wir sind eine Gruppe aus sechs Schülern des <a href="http://www.humboldt-gym.de/">Humboldt-Gymnasiums Vaterstetten (HGV)</a> in Baldham bei München.</div>
+=======
+  {% include linked-image.html path="/images/2019-team-members/gruppenbild-querformat.jpg" %}
+  <div>Wir sind eine Gruppe aus acht Schülern des <a href="http://www.humboldt-gym.de/">Humboldt-Gymnasiums Vaterstetten (HGV)</a> in Baldham bei München.</div>
+>>>>>>> 3415da3... fixup! Fix typo
 </div>
 
 <section class="team-member-presentation" id="niklas">
@@ -48,5 +53,5 @@ ref: team
 
 <section class="team-member-presentation" id="victor">
   <img src="{{ site.baseurl }}/images/2019-team-members/victor.jpg" />
-  <span>„Mein Name ist <strong>Victor Sun</strong> und und ich übernehme gemeinsam mit Leon die (mechanische) Konstruktion des CanSats. Bei Bedarf helfe ich auch in den anderen Bereichen ein wenig aus.“</span>
+  <span>„Mein Name ist <strong>Victor Sun</strong> und ich übernehme gemeinsam mit Leon die (mechanische) Konstruktion des CanSats. Bei Bedarf helfe ich auch in den anderen Bereichen ein wenig aus.“</span>
 </section>
