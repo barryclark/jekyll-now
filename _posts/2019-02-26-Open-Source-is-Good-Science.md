@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Embracing Open Source as Good Science
+author: Ryan Bailey
 ---
 <img src="{{ site.baseurl }}/images/open.png" align="right" /> Sharing.  It's one of the earliest lessons your parents try to teach you - don't hoard, take turns, be generous.  Sharing is a great lesson for life.  Sharing is also a driving force behind scientific progress and software development.  Science and software rely on communal principles of transparency, knowledge exchange, reproducibility, and mutual benefit.  
 
