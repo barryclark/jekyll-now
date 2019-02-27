@@ -1,6 +1,4 @@
 <figure class="post-image">
-  <a href="{{ include.path }}">
-    <img src="{{ include.path }}" alt="{{ include.caption }}" />
-  </a>
+  {% include linked-image.html path=include.path alt=include.caption %}
   <figcaption>{{ include.caption }}</figcaption>
 </figure>

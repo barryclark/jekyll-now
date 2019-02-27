@@ -7,13 +7,8 @@ ref: team
 ---
 
 <div class="page-banner">
-<<<<<<< HEAD
-  <img src="{{ site.baseurl }}/images/hgv-425x250.jpg" />
-  <div>We're a group of six students from the <a href="http://www.humboldt-gym.de/">Humboldt-Gymnasium Vaterstetten</a> in Baldham near Munich.</div>
-=======
   {% include linked-image.html path="/images/2019-team-members/gruppenbild-querformat.jpg" %}
   <div>We're a group of eight students from the <a href="http://www.humboldt-gym.de/">Humboldt-Gymnasium Vaterstetten</a> in Baldham near Munich.</div>
->>>>>>> 3415da3... fixup! Fix typo
 </div>
 
 <section class="team-member-presentation" id="niklas">

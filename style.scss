@@ -283,11 +283,12 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 
-  & > img {
-    max-height: 200px;
+  img {
+    max-height: 400px;
+    width: 400px;
     max-width: 100%;
-    margin-bottom: 3rem;
   }
 
   & > div {
@@ -296,7 +297,6 @@ nav {
     font-style: italic;
     font-weight: $nunito-light;
     line-height: 1.7;
-    margin-bottom: 3rem;
   }
 }
 
