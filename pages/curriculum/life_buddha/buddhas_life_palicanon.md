@@ -1,10 +1,19 @@
 ---
 layout: page
 title: Life of the Buddha as described by Suttas from the Pali Canon
-permalink: /pages/buddhas_life/
+permalink: /pages/curriculum/life_buddha/pali_canon/
 ---
 
-| SUTTA            | DESCRIPTION                                                                 | SOURCE |
+**Learning Objectives**:
+- list the main steps of the life of the Buddha
+- find the references to the stories given by the Pali Canon
+
+<!-- TODO: create links for each sutta to sutta central -->
+
+The following table provides a summary of the steps of the life of the Buddha, as they are describd in the Suttas of the Pali Canon. The original idea of such a table came from [Access To Insight](https://www.accesstoinsight.org/ptf/buddha.html), I just completed it with other references (see below).
+
+
+| SUTTA            | DESCRIPTION                                                                 | REF |
 | :--              | :--                                                                         | :--    |
 | _                | **Young prince Gotama**                                                     |        |
 | Snp&nbsp;III.11  | Asita, the seer, visits the newborn prince                                  | [1]    |
@@ -58,9 +67,8 @@ permalink: /pages/buddhas_life/
 | MN&nbsp;26.25    | On his way to Benares, the Buddha meets Ajivaka Upaka.                                 | [2]    |
 | MN&nbsp;26.26-28 | The Buddha meets the five bhikkhus who are at first reluctant in hearing his Dhamma.   | [2]    |
 | MN&nbsp;26.29-30 | Every now and then, the Buddha teaches the five bhikkhus (non-specific).               | [2]    |
-| SN&nbsp;56.11    | _Dhammacakkappavattana Sutta_                                                          | &nbsp; |
-| SN&nbsp;22.59    | _Pañcavaggi Sutta_ (aka _Anattalakkhana Sutta_)                                        | &nbsp; |
-
+| SN&nbsp;56.11    | _Dhammacakkappavattana Sutta_ (first sutta)                                            | &nbsp; |
+| SN&nbsp;22.59    | _Pañcavaggi Sutta_ (aka _Anattalakkhana Sutta_, second sutta)                          | &nbsp; |
 
 
 <!---
@@ -68,7 +76,6 @@ permalink: /pages/buddhas_life/
 | DN 14       | ?                                                                    | [2] |
 
 after Ud1.4 check order of things depending on the concepts taught?
-
 -->
 
 [1] [Access To Insight](https://www.accesstoinsight.org/ptf/buddha.html).
