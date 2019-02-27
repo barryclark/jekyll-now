@@ -10,10 +10,10 @@ permalink: /pages/curriculum/life_buddha/pali_canon/
 
 <!-- TODO: create links for each sutta to sutta central -->
 
-The following table provides a summary of the steps of the life of the Buddha, as they are describd in the Suttas of the Pali Canon. The original idea of such a table came from [Access To Insight](https://www.accesstoinsight.org/ptf/buddha.html), I just completed it with other references (see below).
+_Note: the original idea of such a table came from [Access To Insight](https://www.accesstoinsight.org/ptf/buddha.html), we just completed it with other references (see below)._
 
 
-| SUTTA            | DESCRIPTION                                                                 | REF |
+| **SUTTA**        | **DESCRIPTION**                                                             | **REF** |
 | :--              | :--                                                                         | :--    |
 | _                | **Young prince Gotama**                                                     |        |
 | Snp&nbsp;III.11  | Asita, the seer, visits the newborn prince                                  | [1]    |
@@ -69,7 +69,7 @@ The following table provides a summary of the steps of the life of the Buddha, a
 | MN&nbsp;26.29-30 | Every now and then, the Buddha teaches the five bhikkhus (non-specific).               | [2]    |
 | SN&nbsp;56.11    | _Dhammacakkappavattana Sutta_ (first sutta)                                            | &nbsp; |
 | SN&nbsp;22.59    | _Pañcavaggi Sutta_ (aka _Anattalakkhana Sutta_, second sutta)                          | &nbsp; |
-
+{:.mkdtablestyle}
 
 <!---
 | _                | **Facing Mara**                                                      | [2] |
@@ -78,7 +78,7 @@ The following table provides a summary of the steps of the life of the Buddha, a
 after Ud1.4 check order of things depending on the concepts taught?
 -->
 
-[1] [Access To Insight](https://www.accesstoinsight.org/ptf/buddha.html).
-[2] Following along [Bhikkhu Bodhi's systematic study of the Majjhima Nikaya](http://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html).
-[3] found by a [search for "Uruvela" on suttacentral](https://suttacentral.net/search?query=uruvela)
-[4] [Bhikkhu Nanamoli, Life of the Buddha according to the Pali Canon](https://www.amazon.com/Life-Buddha-According-Pali-Canon/dp/1928706126)
+[1] [Access To Insight](https://www.accesstoinsight.org/ptf/buddha.html).  
+[2] [Bhikkhu Bodhi's systematic study of the Majjhima   Nikaya](http://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html).  
+[3] found by a [search for "Uruvela" on suttacentral](https://suttacentral.net/search?query=uruvela)  
+[4] [Bhikkhu Nanamoli, Life of the Buddha according to the Pali Canon](https://www.amazon.com/Life-Buddha-According-Pali-Canon/dp/1928706126)  
