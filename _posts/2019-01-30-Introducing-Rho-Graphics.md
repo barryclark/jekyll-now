@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Rho Data Visualization
+author: Ryan Bailey
 ---
 
 We work in clinical research and our industry is driven by data. Every phase of our trials requires us to collect, monitor, analyze, and report data. While each of these steps is equally important, reporting is arguably the most impactful step. When we create reports, we invite our audience to interpret the data and draw meaningful conclusions.
