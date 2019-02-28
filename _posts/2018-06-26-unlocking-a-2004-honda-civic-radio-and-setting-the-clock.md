@@ -8,8 +8,6 @@ image: /images/2004-honda-civic-radio.png
 
 A week or so ago, my wife's car broke down. The pully on the A/C compressor pulley wobbled and seized, so not only did her 2004 Honda Civic have no A/C, it smoked under the hood from the belt rubbing against the belt. So I had some work to do, and in the course of the repair I had to disconnect the negative battery cable because of reasons (and if you must know, it's because I had to move the alternator out of the way, and in doing so I started sparking things. Safety second, I guess).
 
-{% include amazon/native-ad.html title="The Two Major Components I Replaced" asin="B00FRMB1JU,B00JXYG274" %}
-
 The thing is with Honda, or at least this generation of Honda Civics is that if you disconnect the battery, you end up locking the radio. Some sort of antitheft property that ends up only annoying people who work on them and disconnect the battery.
 
 > **You might also like: [2004 Honda Civic Cabin Air Filter Replacement](https://hendrixjoseph.github.io/2004-honda-civic-cabin-air-filter-replacement/)**
