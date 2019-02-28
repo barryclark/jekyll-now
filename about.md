@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A lifelong developer, my interests lay in taking things apart to see how they work.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I primarily focus on C and C++ these days.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Shouldn't be hard to find my email
