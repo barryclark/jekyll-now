@@ -12,7 +12,7 @@ header-img: "images/new/Exportiert_57.jpg"
 ## Demystifying the Language of German Reference Letters with NLP - Part 1
 
 
-It is a legal obligation in Germany for all companies to provide reference letters for everyone leaving the company. A reference letter is essentially an evaluation, a final certificate, which an employee gets before leaving a company or changing supervisors and serves as a qualification for the next employer by proving two things: did this person really work for the company in the past, and, how good from the company's perspective did she or he perform.
+It's a legal obligation in Germany for all companies to provide reference letters for everyone leaving the company. A reference letter is essentially an evaluation, a final certificate, which an employee gets before leaving a company or changing supervisors and serves as a qualification for the next employer by proving two things: did this person really work for the company in the past, and, how good from the company's perspective did she or he perform.
 
 ## It's complicated
 
