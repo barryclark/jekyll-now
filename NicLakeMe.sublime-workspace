@@ -1,0 +1,346 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "style.scss",
+			"settings":
+			{
+				"buffer_size": 4521,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_sass/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 629,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2018-12-23-2019-goals.md",
+			"settings":
+			{
+				"buffer_size": 7260,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 143.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/N/Libraries/Documents/GitHub/niclake.github.io",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_includes",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_layouts",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_posts",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_sass",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/images"
+	],
+	"file_history":
+	[
+		"/N/Libraries/Dropbox/front-end-exercise-master/package.json",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_config.yml",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_sass/_highlights.scss",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_sass/_variables.scss",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/about.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_posts/2018-8-23-breath-of-the-wild.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_posts/2018-8-18-portal-portal-2.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_posts/2018-11-24-shadow-of-the-colossus.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_posts/2018-8-24-minit.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/style.scss",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_sass/_reset.scss",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_layouts/default.html",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/index.html",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_layouts/post.html",
+		"/N/Libraries/Dropbox/Web Site/blog.niclake.com/wp-content/themes/niclake/style.css",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/categories.html",
+		"/L/VSTs/Dexed/Cartridges/NicPatches.syx",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_includes/meta.html",
+		"/N/Libraries/Dropbox/Web Site/blog.niclake.com/wp-content/themes/niclake/header.php",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/GAMEREVIEWTEMPLATE.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_posts/2018-8-15-Hello-World.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_includes/svg-icons.html",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/token.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_posts/2018-8-18-Portal-and-Portal-2.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/_posts/2018-8-16-Test-Post-Please-Ignore.md",
+		"/N/Libraries/Documents/GitHub/niclake.github.io/.gitignore"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"N:\\Libraries\\Documents\\GitHub\\niclake.github.io",
+			"<current file>",
+			"N:\\Libraries\\Documents\\GitHub\\niclake.github.io"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"table",
+			"avatar",
+			"W-L",
+			">\n",
+			"for post in paginator.posts",
+			"excerpt",
+			"READ MORE",
+			"footer",
+			"$hel",
+			"li ",
+			"footnote"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"0-0"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4138,
+								4138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4611.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_sass/_variables.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2018-12-23-2019-goals.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3074,
+								3074
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 498.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "NicLakeMe.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 213.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
