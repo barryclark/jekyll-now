@@ -22,7 +22,7 @@ In March of 2018, [the IRS released another bulletin reminding US taxpayers to r
 
 So how do you report virtual currency transactions to the IRS? The easy, non-helpful answer is simply "on your tax return" (i.e. via the standard [Form 1040](https://www.irs.gov/forms-pubs/about-form-1040) or one of its many schedules). This points you in the right direction, but can still be confusing.
 
-Conceivable, income derived from cryptocurrencies could be reported in one of four different places, at least on the 2018 Form 1040 or [Schedule 1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf):
+Conceivably, income derived from cryptocurrencies could be reported in one of four different places, at least on the 2018 Form 1040 or [Schedule 1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf):
 
 1. Line 1 of Form 1040, if you were paid via cryptocurrencies and received a [Form W-2](https://www.irs.gov/forms-pubs/about-form-w-2). This is unlikely.
 2. Line 12 of Schedule 1, which also requires the [Schedule C](https://www.irs.gov/forms-pubs/about-schedule-c-form-1040). This is self-employment income, which would be if you either mined cryptocurrency or got paid in cryptocurrency as an independent contractor (and possibly received a [Form 1099-MISC](https://www.irs.gov/forms-pubs/about-form-1099-misc) or some other type of 1099.).
