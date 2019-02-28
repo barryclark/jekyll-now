@@ -17,18 +17,15 @@ First, you need the obvious: copper pipe or tubing, as well as the fittings to a
 
 You will also need:
 
-* [Solder wire](https://amzn.to/2LbWG1W)
-* [Soldering paste / flux](https://amzn.to/2SIdNLl)
-
-Sometimes the soldering wire and paste can be bought as [a kit](https://amzn.to/2Qvcrag).
+* [Solder and Flux Kit](https://www.homedepot.com/p/Bernzomatic-Solder-and-Flux-Kit-333559/203507471)
 
 ## Tools Needed
 
-* [Copper pipe cutter](https://amzn.to/2Lc7QE5)
-* [Emery cloth / sandpaper](https://amzn.to/2Lfv6AN)
-* [Propane torch](https://amzn.to/2EigMpZ) and [propane](https://amzn.to/2Lfgz8e)
-* [Measuring tape](https://amzn.to/2LcgUIY)
-* Marker (such as a [Sharpie](https://amzn.to/2SIg6Ov)) 
+* [Copper pipe cutter](https://www.homedepot.com/p/Husky-Tube-Cutter/303666106)
+* [Emery cloth / sandpaper](https://www.homedepot.com/p/100562118)
+* [Propane torch and propane](https://www.homedepot.com/p/Bernzomatic-WK2301-Propane-Torch-Kit/202539561)
+* [Measuring tape](https://www.homedepot.com/p/DEWALT-25-ft-Tape-Measure/206676358)
+* Marker (such as a [Sharpie](https://www.homedepot.com/p/Sharpie-Black-Fine-Point-Permanent-Markers/202313061)) 
 
 ## Steps
 
@@ -63,7 +60,7 @@ The below video depicts me completing steps 10 through 15:
 
 One of the most common problems you'll encounter when soldering / sweating copper is that the solder won't take. What happens is the solder will melt, but as soon as it touches the pipe, it beads and solidifies. The reason for this is that there is water in the pipes. You **CANNOT** solder copper pipe if there is any water in the pipe. Sometimes a little moisture will burn off, but if there is even a trickle of water in the pipe - for instance, if an earlier valve doesn't completely close - the solder will not take.
 
-The solution is to prevent water from getting to where you are attempting to solder. An "old school" solution is to insert a piece of white bread into the pipe. The bread should dissolve over time. A more modern solution is to use [dissolvable pipe plugs](https://amzn.to/2QNuTdl).
+The solution is to prevent water from getting to where you are attempting to solder. An "old school" solution is to insert a piece of white bread into the pipe. The bread should dissolve over time. A more modern solution is to use [dissolvable pipe plugs](https://www.lowes.com/pd/JSC-1-2-in-Sure-Sweat-Dissolvable-Pipe-Plugs/3643050).
 
 ## Money-saving Tips
 

@@ -34,14 +34,14 @@ I actually solved the hard water issue before I received the Morton Salt hard wa
 
 ## The Ecopure Test
 
-Ecupure is a manufacturer of water solutions (and I by solution I don't mean they dissolve stuff in water). Check out [Ecupure's Amazon store](https://amzn.to/2z7IBxE) if you're curious.
+Ecupure is a manufacturer of water solutions (and I by solution I don't mean they dissolve stuff in water). Check out [the search results for Ecupure on Home Depot's website](https://www.homedepot.com/s/Ecupure) if you're curious.
 
 The test came with an Ecopure pamphlet:
 
 ![The Ecopure Pamphlet and Test](/images/hard-water/ecopure/test.jpg)
 *The Ecopure Pamphlet and Test*
 
-The test Ecopure sent involved dipping the stick into a cup of water. It was somewhat reminiscent of using those [litmus pH test strips](https://amzn.to/2DgYa97) back in high school chemistry class.
+The test Ecopure sent involved dipping the stick into a cup of water. It was somewhat reminiscent of using those [litmus pH test strips](https://www.walmart.com/tp/ph-test-strips) back in high school chemistry class.
 
 ![Holding the Test Strip Above The Cup of Water](/images/hard-water/ecopure/cup.jpg)
 *Holding the Test Strip Above The Cup of Water*
@@ -65,7 +65,7 @@ Next thing I tried is looking for the manual for our water softener - except the
 
 After I found and read the manual, I realized that our water softener wasn't set right - mostly due to the fact that it was unplugged from the electricity while the new hot water tank was installed. I set it up, and our dishes started to become more clear.
 
-Oh, and I put some [water softener cleanser](https://amzn.to/2RJniJI) into the brine tank (it actually goes into the little pipe thing in the brine tank) for good measure.
+Oh, and I put some [water softener cleanser](https://www.homedepot.com/p/300091047) into the brine tank (it actually goes into the little pipe thing in the brine tank) for good measure.
 
 ## The Morton Test
 
@@ -76,7 +76,7 @@ The Morton test also came with a pamphlet, but this pamphlet was more geared tow
 ![The Morton Pamphlet](/images/hard-water/morton/pamphlet.jpg)
 *The Morton Pamphlet*
 
-I'm not sure why Morton didn't push their product harder - although the pamphlet did come with a coupon. Maybe it's because they sell more than just [water softener salt](https://amzn.to/2JUwNmR) - they're also well known for their [table salt](https://amzn.to/2JWBTyT).
+I'm not sure why Morton didn't push their product harder - although the pamphlet did come with a coupon. Maybe it's because they sell more than just [water softener salt](https://www.homedepot.com/p/Morton-Salt-40-lbs-Water-Softener-Salt-Pellets/100089553) - they're also well known for their [table salt](https://www.target.com/s?searchTerm=morton).
 
 The Morton test had me run the test strip underneath a stream of water for one second, then wait 15 seconds. I compared it to the chart on the package and **GASP** it says I still have hard water:
 
