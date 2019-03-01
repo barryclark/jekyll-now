@@ -36,7 +36,7 @@ Auf der Karte sind Roboter, Raketenteile und Bedingungsanleitungen zu finden. Di
 - Große Sachen müssen bewegt werden mithilfe von z.B. einem Hebel
 - Türen öffnen
 
-### Bedinungsanleitungen
+### Bedienungsanleitungen
 Die Bedienungsnaleitungen de gefunden werden können erhalten Puzzles. Die Puzzles sind 2D Rätsel die auf die Bedenungsnaleitung gedruckt sind.  Wenn der Roboter das Rätsel gelöst hat entwickelt sich seine KI Weiter und er hat verstanden wie es ein teil löst.
 Die Puzzles haben folgenden Aufbau:
 - Alles befindet sich in einem Gitter
