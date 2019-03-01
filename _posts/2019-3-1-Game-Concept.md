@@ -3,6 +3,8 @@ layout: post
 title: Game Concept
 ---
 
+The game concepts "Purpose and Despair".
+
 # PaD: Purpose and Despair
 
 ## General
