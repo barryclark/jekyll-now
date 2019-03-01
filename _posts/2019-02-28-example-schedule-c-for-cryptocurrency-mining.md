@@ -41,7 +41,7 @@ First, the steps:
 
 Next, the equation:
 
-    (input &times; hours / usage) &times bill = costs
+    (input × hours / usage) × bill = costs
 
 Finally, an example:
 
@@ -96,7 +96,7 @@ Yeah, I don't think they need to know, and it's not really any of their business
 
 But I digress.
 
-For Line A "Principal business or profession, including product or service" I put "CRYPTOCURRENCY MINING (E.G. BITCOIN MINING)". Generally, for this line, I try to describe my business with a possible example. The actual instructions from the IRS for this line are as follows:
+For Line A "Principal business or profession, including product or service" I put "**CRYPTOCURRENCY MINING (E.G. BITCOIN MINING)**". Generally, for this line, I try to describe my business with a possible example. The actual instructions from the IRS for this line are as follows:
 
 > Describe the business or professional activity that provided your principal source of income reported on line 1. If you owned more than one business, you must complete a separate Schedule C for each business. Give the general field or activity and the type of product or service. If your general field or activity is wholesale or retail trade, or services connected with production services (mining, construction, or manufacturing), also give the type of customer or client. For example, "wholesale sale of hardware to retailers" or "appraisal of real estate for lending institutions."
 
