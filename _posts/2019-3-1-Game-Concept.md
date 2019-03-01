@@ -3,9 +3,7 @@ layout: post
 title: Game Concept
 ---
 
-The game concepts "Purpose and Despair".
-
-# PaD: Purpose and Despair
+What are the basic game concepts of our game "Purpose and Despair"
 
 ## General
 - 1st Person
