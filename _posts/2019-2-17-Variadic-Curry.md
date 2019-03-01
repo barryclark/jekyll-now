@@ -19,7 +19,7 @@ We see then that we'll need some way to handle an arbitrary number of universal 
 
 As a first step, let's define the type of n-ary functions on types:
 
-![equation](https://latex.codecogs.com/gif.latex?%5Cmathsf%7BTy%7D_0%20%3A%3D%20%5Cmathsf%7BType%7D%5C%5C%20%5Cmathsf%7BTy%7D_%7Bn&plus;1%7D%20%3A%3D%20%5Cmathsf%7BType%7D%20%5Crightarrow%20%5Cmathsf%7BTy%7D_n)
+![equation](https://latex.codecogs.com/gif.latex?\begin{align*}&space;\mathsf{Ty}&space;&:&space;\mathsf{nat}&space;\rightarrow&space;\mathsf{Type}\\&space;\mathsf{Ty}_0&space;&:=&space;\mathsf{Type}\\&space;\mathsf{Ty}_{n&plus;1}&space;&:=&space;\mathsf{Type}&space;\rightarrow&space;\mathsf{Ty}_n&space;\end{align*})
 
 Given such a type-level function, we can turn it into a type via the universal closure, which captures each type variable under a universal quantifier:
 
@@ -29,7 +29,9 @@ Once again, this can be defined recursively in a fairly straightforward fashion:
 
 ![equation](https://latex.codecogs.com/gif.latex?\begin{align*}&space;\mathsf{UC}&space;&:&space;\forall&space;n.&space;\mathsf{Ty}_n&space;\rightarrow&space;\mathsf{Type}\\&space;\mathsf{UC_0}(T)&space;&:=&space;T\\&space;\mathsf{UC_{n&plus;1}}(F)&space;&:=&space;\forall&space;X.&space;\mathsf{UC_n}(FX)&space;\end{align*})
 
+With that out of the way, we see that it suffices now to define the follow type-level function:
 
+![equation](https://latex.codecogs.com/gif.latex?\lambda&space;X_1&space;\ldots&space;\lambda&space;X_n&space;\lambda&space;Y.&space;(X_1&space;\times&space;\ldots&space;\times&space;X_n&space;\rightarrow&space;Y)&space;\rightarrow&space;X_1&space;\rightarrow&space;\ldots&space;\rightarrow&space;X_n&space;\rightarrow&space;Y&space;:&space;\mathsf{Ty}_{n&plus;1})
 
 
 ![equation](https://latex.codecogs.com/png.latex?({\color{Blue}&space;X_1&space;\times&space;\ldots&space;\times&space;X_n}&space;\rightarrow&space;{\color{Green}&space;Y})&space;\rightarrow&space;{\color{Orange}&space;X_1&space;\rightarrow&space;\ldots&space;\rightarrow&space;X_n&space;\rightarrow&space;Y}.)
