@@ -34,7 +34,6 @@ Am Ende fliegt er damit vom Planeten und Ende.
 Auf der Karte sind Roboter, Raketenteile und Bedingungsanleitungen zu finden. Diese sind durch Rätsel versteckt die gelöst werden müssen. Diese Rätsel können z.B. sein:
 - Ein Weg muss gefunden werden um an einen Ort mit Teilen zu gelangen, dazu müssen Gegenstände bewegt werden die Schalter und Knöpfe betätigen
 - Große Sachen müssen bewegt werden mithilfe von z.B. einem Hebel
-- evtl. "Schaltpläne" mit logischen Operatoren wo man aus Eingangssignalen Ausgangssignale machen muss (AND, OR, XOR,...)
 - Türen öffnen
 
 ### Bedinungsanleitungen
