@@ -6,62 +6,62 @@ title: Game Concept
 What are the basic game concepts of our game "Purpose and Despair"
 
 ## General
-- 1st Person
-- Puzzle Spiel
-- Keine Dialoge
-- Keine Begegnungen mit NPCs
-- Intro = drop auf den Planeten aber keinerler Erklärung wer man eigentlich ist
-- Ziel = Rakete um auf anderen Planeten zu kommen denn es gibt keine butter zum rüberschieben (und das ist sein purpose)
+- 1st person
+- Puzzle Game
+- No dialogs
+- No encounters with NPCs
+- Intro = drop on the planet but no explanation of who you really are
+- Target = rocket to get to other planets because there is no butter to push over (and that is his purpose)
 
 ## Player
-Der Roboter von Rick and Morty der die Butter rübergibt --> Das weiß der Spieler nicht.
+Rick and Morty's robot handing over the butter --> The player doesn't know that.
 
 ## Setting
-Menschen sind hochentwickelt und haben gelernt wie Weltraumreisen möglich sind.
+People are highly developed and have learned how space travel is possible.
   
 
 ## Story
-Ein kleiner Roboter wird von seinen Besitzern weggeworfen und kommt mittels "Müllabfuhr" auf einen Planeten der als Müllhalde genutzt wird und wo nur Müll/Schrott rumliegt.
-Das Initialeziel des Roboters ist es den Planeten zu verlassen um den Besitzern zu zeigen das er doch garnicht so nutztlos ist.
-Dazu muss er eine Rakete bauen.
-Er kann am Anfang aber nur Sachen drücken und ziehen.
-Er geht nun so durch die Level und stößt auf derzeit unlösbare Probleme die er nur lösen kann indem er andere Sachen erlernt. Das erlernen besteht aus zwei Teilen, zum einen muss der Roboter sich durch die Weltschlagen und neue teile für sich finden, diese Teile kann er an sich ranbauen. Um die teile nutzen zu können muss aber seine KI erweitert werden, dies geschieht mithilfe von "Bedinungsanleitungen" die gefunden werden müssen in der Spielwelt. Ist eine Bedinungsanleitung gefunden so kann ein Rätsel gestartet werden welches bei erfolgreichen Abschluss das Upgrade für den Roboter freischaltet und eine neue Fähigkeit erlernen kann.
-Er muss nun sich durch die kniffligen Level wagen um Teile für sich und die Rakete zu finden um sie zu bauen.
-Am Ende fliegt er damit vom Planeten und Ende.
+A small robot is thrown away by its owners and comes via "garbage collection" to a planet which is used as a garbage dump and where only garbage/scrap is lying around.
+The initial goal of the robot is to leave the planet to show the owners that it is not so useless.
+He has to build a rocket.
+At the beginning he can only push and pull things.
+He now walks through the levels and encounters currently unsolvable problems which he can only solve by learning other things. The learning consists of two parts, on the one hand the robot has to find himself through the world battles and new parts for himself, these parts he can build on himself. In order to be able to use the parts however its AI must be extended, this happens with the help of "condition manuals" which must be found in the game world. Once a manual has been found, a puzzle can be started which, if successfully completed, will unlock the upgrade for the robot and learn a new skill.
+He must now venture through the tricky levels to find parts for himself and the rocket to build them.
+In the end he flies away from the planet and the end.
 
-## Rätsel
-### Kartenrätsel
-Auf der Karte sind Roboter, Raketenteile und Bedingungsanleitungen zu finden. Diese sind durch Rätsel versteckt die gelöst werden müssen. Diese Rätsel können z.B. sein:
-- Ein Weg muss gefunden werden um an einen Ort mit Teilen zu gelangen, dazu müssen Gegenstände bewegt werden die Schalter und Knöpfe betätigen
-- Große Sachen müssen bewegt werden mithilfe von z.B. einem Hebel
-- Türen öffnen
+## Puzzle
+### Card puzzle
+On the map you can find robots, rocket parts and condition manuals. These are hidden by puzzles that have to be solved. These puzzles can be for example:
+- A way has to be found to get to a place with parts, to do this objects have to be moved which operate switches and buttons.
+- Large things have to be moved with the help of a lever, for example.
+- open doors
 
-### Bedienungsanleitungen
-Die Bedienungsnaleitungen de gefunden werden können erhalten Puzzles. Die Puzzles sind 2D Rätsel die auf die Bedenungsnaleitung gedruckt sind.  Wenn der Roboter das Rätsel gelöst hat entwickelt sich seine KI Weiter und er hat verstanden wie es ein teil löst.
-Die Puzzles haben folgenden Aufbau:
-- Alles befindet sich in einem Gitter
-- Man muss einen Stromkreis schließen und alle Objekte mit sprom versorgen.
-- Es gibt eine Stromquelle und mehrere Objekte pro Level.
-- Zwischen diesen Objekten sind Felder mit Leitungen die man drehen kann.
-- Durch das drehen der Leitungen muss das Stromnetz geschlossen werden.
+### User manuals
+The service lines de can be found get puzzles. The puzzles are 2D puzzles printed on the operating instructions.  When the robot has solved the puzzle his AI develops further and he has understood how it solves a piece.
+The puzzles have the following structure:
+- Everything is in a grid
+- You have to close a circuit and supply all objects with sprom.
+- There is one power source and several objects per level.
+- Between these objects are fields with wires that you can rotate.
+- By turning the wires you have to close the power grid.
 
-## Fortschritt
-Neue Teile finden und die entsprechende Fähigkeit erlernen um eine Rakete zu bauen.
+## Progress
+Find new parts and learn the appropriate skill to build a rocket.
 
-### Grundfähigkeiten
-- Schieben
-- Ziehen
+### Basic skills
+- pushing
+- pull
 
-### erlernbare Fähigkeiten
-- Heben
-- Hebel platzieren und betätigen
-- kleine Stufen erklimmen können
-- Leitern benutzen von z.B. alten Baumachinen
-- vlt Strom anschalten und "Schaltpläne" mit Strom versorgen
+### learnable skills
+- lifting
+- Place and actuate the lever
+- be able to climb small steps
+- Use ladders from e.g. old construction machines
+- maybe use switch on power and supply "circuit diagrams" with power
 - ...
 
 ## Map
-Ein zentraler Ort wo er der Roboter sich upgraden kann und die Rakete bauen kann.
-Es handelt sich um eine große Karte wo es bestimmte Bereiche gibt und verschiedene Teile zu finden sind.
-Im Hintergrund sind Schrott und Müll überwiegend zu sehen aber es gibt ebenfalls Eastereggs im Hintergrund die letztendlich verraten um welchen ursprünglichen Besitzer es sich handelt.
-(z.B. Hint: "You pass butter" auf Schild im Hintergund oder Spiegel wo er sein aussehen tatsächlich sieht)
+A central place where he can upgrade the robot and build the rocket.
+It is a large map where there are certain areas and different parts to find.
+In the background you can see mostly scrap and garbage, but there are also Eastereggs in the background that reveal the original owner.
+(e.g. Hint: "You pass butter" on sign in the background or mirror where he actually sees his look)
