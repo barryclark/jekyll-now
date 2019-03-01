@@ -27,7 +27,7 @@ Given such a type-level function, we can turn it into a type via the universal c
 
 Once again, this can be defined recursively in a fairly straightforward fashion:
 
-![equation](https://latex.codecogs.com/gif.latex?%5Cmathsf%7BUC%7D_0%20%28T%29%20%3A%3D%20T%5C%5C%20%5Cmathsf%7BUC%7D_%7Bn&plus;1%7D%20%28F%29%20%3A%3D%20%5Cforall%20X%2C%20%5Cmathsf%7BUC%7D_n%20%28F%20X%29)
+![equation](https://latex.codecogs.com/gif.latex?\begin{align*}&space;\mathsf{UC}&space;&:&space;\forall&space;n.&space;\mathsf{Ty}_n&space;\rightarrow&space;\mathsf{Type}\\&space;\mathsf{UC_0}(T)&space;&:=&space;T\\&space;\mathsf{UC_{n&plus;1}}(F)&space;&:=&space;\forall&space;X.&space;\mathsf{UC_n}(FX)&space;\end{align*})
 
 
 
