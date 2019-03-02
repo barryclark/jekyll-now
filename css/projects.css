@@ -1,0 +1,80 @@
+/* Project Elements */
+.project-outer {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 10px;
+}
+.project-img img {
+  width: 100%;
+}
+h3.project-headlines {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+span.tags {
+  font-size: 10px;
+  border-bottom: 1px #888 dotted;
+  margin: 0 5px;
+}
+span.tags:first-child {
+  margin-left: 0;
+}
+span.tags:last-child {
+  margin-right: 0;
+}
+.project-footer {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+.project-footer .project-link {
+  display: inline-block;
+  position: relative;
+  float: left;
+  text-decoration: none;
+}
+.project-footer .project-timeline {
+  display: inline-block;
+  position: relative;
+  float: right;
+  font-size: 13px;
+  font-style: italic;
+}
+.project-inner > a {
+  display: block;
+}
+.project-img {
+  width: 230px;
+  height: 200px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/** Project Tag Filters **/
+.tag-group {
+  margin: 0 0 25px 0;
+}
+span.tag-cloud {
+  margin: 0 2px;
+  cursor: pointer;
+  font-size: 75%;
+  padding: .2em .6em .3em;
+  font-weight: 700;
+  display: inline;
+}
+.tag-cloud.active {
+  background: #ccc;
+}
+.project-item.not-show {
+  display: none;
+}
+a.project-detail:hover {
+  text-decoration: none;
+}
+a.project-detail:hover h3 {
+  color: #62A253;
+}
