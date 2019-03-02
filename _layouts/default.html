@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!--<link rel="shortcut icon" href="/img/favicon.ico" />-->
-      <title>{% if page.title %}{{ page.title }} - {{ site.name }}{% endif %}</title>
+      <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
       <meta name="author" content="{{ site.author }}" />
       <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
       <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
@@ -78,7 +78,7 @@
   <div class="container">
       <div class="col-sm-3">
           <div class="fixed-condition">
-              <a href="/"><img class="profile-avatar" src="{{ site.avatar }}" height="120px" width="120px" /></a>
+              <a href="/"><img class="profile-avatar" src="{{ site.avatar }}" height="120px" width="160" /></a>
               <h1 class="author-name">{{ site.author }}</h1>
               {% if site.about %}
               <div class="profile-about">
