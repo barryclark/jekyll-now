@@ -100,6 +100,11 @@
               <ul class="sidebar-nav">
                   <strong>Navigation</strong>
                   <li><a href="/">Home</a></li>
+
+                  {% for c in site.categories %}
+                  <li><a class="about" href="{{ site.baseurl }}/category/{{ c.title }}">{{ c.title }}</a></li>
+                  {% endfor %}
+
                   {% for i in site.urls %}
                   <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
                   {% endfor %}
