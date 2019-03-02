@@ -6,10 +6,10 @@
 name: Sol Labs
 
 # Short bio or description (displayed in the header)
-description: Sollabs Main Page 
+description: Sollabs Main Page
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/CyanRYi/cyanryi.github.io/master/images/profile.jpg
+avatar: /images/profile.jpg
 
 #
 # Flags below are optional
@@ -21,7 +21,7 @@ footer-links:
   email: cyan.r.yi@gmail.com
   facebook:
   flickr:
-  github: CyanRYi
+  github: https://github.com/CyanRYi
   instagram:
   linkedin:
   pinterest:
@@ -73,9 +73,15 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-paginate
+  - jekyll-gist
 
 # Exclude these files from your production _site
 exclude:
