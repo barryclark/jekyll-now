@@ -10,9 +10,8 @@ permalink: /about/
 
 ### More Information
 
-Developer Programmer & Software Architect since 19 Oct 2013
-Working inside of Spring & Java Environment
+{{ site.about }}
 
 ### Contact me
 
-[{{ site.footer-links.email }}](mailto:{{ site.footer-links.email }})
+[{{ site.email }}](mailto:{{ site.email }})

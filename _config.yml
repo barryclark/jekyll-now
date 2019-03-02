@@ -4,33 +4,15 @@
 
 # Name of your site (displayed in the header)
 name: Sol Labs
-
+author: Cyan Raphael Yi
+about: Developer Programmer & Software Architect since 2013. Working inside of Spring & Java Environment
 # Short bio or description (displayed in the header)
 description: Sollabs Main Page
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/profile.jpg
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: cyan.r.yi@gmail.com
-  facebook:
-  flickr:
-  github: https://github.com/CyanRYi
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
+email: cyan.r.yi@gmail.com
+github: https://github.com/CyanRYi
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account

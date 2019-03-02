@@ -1,53 +1,143 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--<link rel="shortcut icon" href="/static/img/favicon.ico" />-->
+      <title>{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.author }}{% endif %}</title>
+      <meta name="author" content="{{ site.author }}" />
+      <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
+      <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+      <meta content="{{ site.title }}" property="og:site_name">
 
-    {% include meta.html %}
+      {% if page.noindex %}
+      <meta name="robots" content="noindex">
+      {% endif %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      {% if page.title %}
+      <meta content="{{ page.title }}" property="og:title">
+      <meta content="article" property="og:type">
+      {% else %}
+      <meta content="{{ site.name }}" property="og:title">
+      <meta content="website" property="og:type">
+      {% endif %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+      {% if page.description %}
+      <meta content="{{ page.description }}" property="og:description">
+      {% else %}
+      <meta content="{{ site.description }}" property="og:description">
+      {% endif %}
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+      {% if page.url %}
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+      {% endif %}
+
+      {% if page.date %}
+      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+      <meta content="{{ site.url }}/about/" property="article:author">
+      {% endif %}
+
+      {% if page.image %}
+      <meta content="{{ site.url }}/images/posts/{{ page.image }}" property="og:image">
+      {% else %}
+      <meta content="{{ site.url }}{{ site.avatar }}" property="og:image">
+      {% endif %}
+
+      {% if page.categories %}
+      {% for category in page.categories limit:1 %}
+      <meta content="{{ category }}" property="article:section">
+      {% endfor %}
+      {% endif %}
+
+      {% if page.tags %}
+      {% for tag in page.tags %}
+      <meta content="{{ tag }}" property="article:tag">
+      {% endfor %}
+      {% endif %}
+
+      <!-- Font awesome icons -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/static/css/syntax.css">
+      <!-- Bootstrap core CSS -->
+      <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="/static/css/super-search.css">
+      <link rel="stylesheet" href="/static/css/thickbox.css">
+      <link rel="stylesheet" href="/static/css/projects.css">
+      <link rel="stylesheet" href="/static/css/main.css">
+
+      {% if jekyll.environment == "production" %}
+      <!-- Google Analytics -->
+      <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', '{{ site.google_analytics }}', 'auto');
+          ga('send', 'pageview');
+      </script>
+      {% endif %}
   </head>
 
   <body>
-    <div class="wrapper-masthead">
       <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+          <div class="col-sm-3">
+              <div class="fixed-condition">
+                  <a href="/"><img class="profile-avatar" src="{{ site.avatar }}" height="75px" width="75px" /></a>
+                  <h1 class="author-name">{{ site.author }}</h1>
+                  {% if site.about %}
+                  <div class="profile-about">
+                      {{ site.about }}
+                  </div>
+                  {% endif %}
+                  <div class="social">
+                      <ul>
+                          {% for link in site.social %}
+                          <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
+                          {% endfor %}
+                      </ul>
+                  </div>
+                  <div class="search" id="js-search">
+                      <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
+                      <ul class="search__results" id="js-search__results"></ul>
+                  </div>
+                  <hr />
+                  <ul class="sidebar-nav">
+                      <strong>Navigation</strong>
+                      <li><a href="/">Home</a></li>
+                      {% for i in site.urls %}
+                      <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
+                      {% endfor %}
+                  </ul>
+              </div>
+              <!-- end /.fixed-condition -->
+              <div class="col-sm-8 col-offset-1 main-layout">
+                  {{ content }}
+                  <footer>
+                      &copy; {{ site.author }}
+                      {% if site.github %}
+                      - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyll.
+                      {% endif %}
+                      <div class="btn-github" style="float:right;">
+                          <iframe src="https://ghbtns.com/github-btn.html?user=agusmakmun&repo=agusmakmun.github.io&type=star&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
+                          <iframe src="https://ghbtns.com/github-btn.html?user=agusmakmun&repo=agusmakmun.github.io&type=fork&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
+                      </div>
+                  </footer>
+              </div>
+              <!-- end /.col-sm-8 -->
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/lang/kr">Blog(kr)</a>
-            <!--<a href="{{ site.baseurl }}/lang/en">Blog(en)</a>-->
-            <a href="{{ site.baseurl }}/lang/jp">Blog(jp)</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
     </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="/static/js/bootstrap.min.js"></script>
+      <script src="/static/js/super-search.js"></script>
+      <script src="/static/js/thickbox-compressed.js"></script>
+      <script src="/static/js/projects.js"></script>
   </body>
 </html>
