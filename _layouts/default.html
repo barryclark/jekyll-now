@@ -4,8 +4,8 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--<link rel="shortcut icon" href="/static/img/favicon.ico" />-->
-      <title>{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.author }}{% endif %}</title>
+      <!--<link rel="shortcut icon" href="/img/favicon.ico" />-->
+      <title>{% if page.title %}{{ page.title }} - {{ site.name }}{% endif %}</title>
       <meta name="author" content="{{ site.author }}" />
       <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
       <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
@@ -60,16 +60,16 @@
       <!-- Font awesome icons -->
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
       <!-- syntax highlighting CSS -->
-      <link rel="stylesheet" href="/static/css/syntax.css">
+      <link rel="stylesheet" href="/css/syntax.css">
       <!-- Bootstrap core CSS -->
-      <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
       <!-- Custom CSS -->
-      <link rel="stylesheet" href="/static/css/super-search.css">
-      <link rel="stylesheet" href="/static/css/thickbox.css">
-      <link rel="stylesheet" href="/static/css/projects.css">
-      <link rel="stylesheet" href="/static/css/main.css">
+      <link rel="stylesheet" href="/css/super-search.css">
+      <link rel="stylesheet" href="/css/thickbox.css">
+      <link rel="stylesheet" href="/css/projects.css">
+      <link rel="stylesheet" href="/css/main.css">
 
       {% if jekyll.environment == "production" %}
       <!-- Google Analytics -->
@@ -135,9 +135,9 @@
     </div>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script src="/static/js/bootstrap.min.js"></script>
-      <script src="/static/js/super-search.js"></script>
-      <script src="/static/js/thickbox-compressed.js"></script>
-      <script src="/static/js/projects.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/super-search.js"></script>
+      <script src="/js/thickbox-compressed.js"></script>
+      <script src="/js/projects.js"></script>
   </body>
 </html>
