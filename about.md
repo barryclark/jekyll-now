@@ -5,8 +5,7 @@ permalink: /about/
 ---
 
 * title : Sol labs
-* name : Cyan Raphael Yi
-* name(ko_kr) : 이현승
+* name : Cyan Raphael Yi(이현승)
 * timezone : GMT+0900
 
 ### More Information
@@ -16,4 +15,4 @@ Working inside of Spring & Java Environment
 
 ### Contact me
 
-[cyan.r.yi@gmail.com](mailto:cyan.r.yi@gmail.com)
+[{{ site.footer-links.email }}](mailto:{{ site.footer-links.email }})
