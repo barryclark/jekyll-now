@@ -81,6 +81,9 @@ urls:
   - text: XML Feed
     url: /feed.xml
 
+enableTags: true
+tagarray: []
+
 # Collections for tags
 collections:
   lang:

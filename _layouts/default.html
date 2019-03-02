@@ -78,24 +78,13 @@
   <div class="container">
       <div class="col-sm-3">
           <div class="fixed-condition">
-              <a href="/"><img class="profile-avatar" src="{{ site.avatar }}" height="75px" width="75px" /></a>
+              <a href="/"><img class="profile-avatar" src="{{ site.avatar }}" height="120px" width="120px" /></a>
               <h1 class="author-name">{{ site.author }}</h1>
               {% if site.about %}
               <div class="profile-about">
                   {{ site.about }}
               </div>
               {% endif %}
-              <div class="social">
-                  <ul>
-                      {% for link in site.social %}
-                      <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
-                      {% endfor %}
-                  </ul>
-              </div>
-              <div class="search" id="js-search">
-                  <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
-                  <ul class="search__results" id="js-search__results"></ul>
-              </div>
               <hr />
               <ul class="sidebar-nav">
                   <strong>Navigation</strong>
@@ -113,6 +102,10 @@
           <!-- end /.fixed-condition -->
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
+          <div class="search" id="js-search">
+              <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
+              <ul class="search__results" id="js-search__results"></ul>
+          </div>
           {{ content }}
           <footer>
               &copy; {{ site.author }}
