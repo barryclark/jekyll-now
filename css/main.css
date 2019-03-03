@@ -14,9 +14,9 @@ hr {
   border-bottom: 1px solid #fff;
 }
 span.time, span.categories, span.post-tags {
-  color: #ADADAD;
+  color: #000080;
   margin-bottom: 5px;
-  font-size: 11px;
+  font-size: 15px;
 }
 h1, h2, h3 {
   color: #696969;
