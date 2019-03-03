@@ -117,7 +117,7 @@ public static class BInitializer implements SomeInitializer {
 
 B, A, AA 순으로 출력되는 것을 확인할 수 있다.
 
-> @Order의 경우 attribute를 입력하지 않으면 기본값으로 2147483647, Integer의 MAX 값으로 입력됨을 알아두자.
+> @Order의 경우 attribute의 기본값이 2147483647(Integer의 MAX 값) 임을 알아두자.
 
 
 ### 응용2
@@ -132,12 +132,11 @@ public class SomeConfiguration {
 
     @Autowired
     @Qualifier("live")
-    private SomeInitializer[] initializers;
+    private Collection<SomeInitializer> initializers;
 
     public void initialize() {
 
-        Stream.of(initializers).forEach(SomeInitializer::init);
-        //initializers.(SomeInitializer::init);
+        initializers.forEach(SomeInitializer::init);
     }
 }
 
