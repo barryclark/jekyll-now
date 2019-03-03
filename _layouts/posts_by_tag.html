@@ -9,15 +9,15 @@ layout: default
     <hr />
     {% for tag in site.tags %}
         {% if page.name == tag %}
-            <button class="btn btn-sm btn-default active">{{ page.title }}</button>
+            <button class="btn btn-sm btn-default active">{{ tag.title }}</button>
         {% else %}
-            <a href="/tag/{{ c_slug }}" class="btn btn-sm btn-default">{{ page.title }}</a>
+            <a href="/tag/{{ tag.name }}" class="btn btn-sm btn-default">{{ tag.title }}</a>
         {% endif %}
     {% endfor %}
 
   <hr />
-  {% if site.tags[page.tags] %}
-    {% for post in site.tags[page.tags] %}
+  {% if site.tags[page.name] %}
+    {% for post in site.tags[page.name] %}
       {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% if forloop.first %}
           <h4>{{ post_year }}</h4>
@@ -26,7 +26,7 @@ layout: default
 
       {% if forloop.first == false %}
         {% assign previous_index = forloop.index0 | minus: 1 %}
-        {% capture previous_post_year %}{{ site.tags[page.tags][previous_index].date | date: '%Y' }}{% endcapture %}
+        {% capture previous_post_year %}{{ site.tags[page.name][previous_index].date | date: '%Y' }}{% endcapture %}
         {% if post_year != previous_post_year %}
           </div>
           <h4>{{ post_year }}</h4>
