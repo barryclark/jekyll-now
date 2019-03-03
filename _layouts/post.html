@@ -7,12 +7,8 @@ layout: default
 </header>
 
 <span class="time">{{ page.date | date_to_string }}</span>
-
-{% if page.categories %}
-<span class="categories">
-    &raquo; {% for category in page.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
-  </span>
-{% endif %}
+&raquo;
+{% include categories.html %}
 
 <div class="content">
     <div class="post">{{ content }}</div>

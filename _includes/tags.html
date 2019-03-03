@@ -1,8 +1,10 @@
 {% if page.tags %}
 <span class="tags">
+    {% assign isFirst = true %}
     {% for tag in page.tags %}
         {% for t in site.tags %}
             {% if t.name == tag %}
+                {% unless isFirst %}, {% endunless %}
                 <a href="/tag/{{ t.name }}" title="{{ t.title }}"> {{ t.title }} </a>
             {% endif %}
         {% endfor %}

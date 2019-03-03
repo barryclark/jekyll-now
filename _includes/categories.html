@@ -1,0 +1,13 @@
+{% if page.categories %}
+<span class="categories">
+    {% assign isFirst = true %}
+    {% for category in page.categories %}
+        {% for c in site.categories %}
+            {% if c.name == category %}
+                {% unless isFirst %}, {% endunless %}
+                <a href="/category/{{ c.name }}">{{ c.title }}</a>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</span>
+{% endif %}
