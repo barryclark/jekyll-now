@@ -94,11 +94,19 @@
                     <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
                   {% endfor %}
 
+                  <hr/>
+
                   <strong>Category</strong>
                   {% for c in site.categories %}
-                      <li><a class="about" href="{{ site.baseurl }}/category/{{ c.title }}">{{ c.title }}</a></li>
+                      <li><a class="about" href="{{ site.baseurl }}/category/{{ c.name }}">{{ c.title }}</a></li>
                   {% endfor %}
               </ul>
+              <hr/>
+              <span class="tags">
+                  {% for tag in site.tags %}
+                    <a href="/tag/{{ tag.name }}" title="{{ tag.title }}">{{ tag.title }}</a>
+                  {% endfor %}
+              </span>
           </div>
           <!-- end /.fixed-condition -->
       </div>
