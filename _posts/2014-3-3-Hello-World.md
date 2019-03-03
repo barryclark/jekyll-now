@@ -51,8 +51,29 @@ Below is the 2014 election map. Notice the regionalism. The red represents provi
 
 ![Figure 2]({{ site.baseurl }}/images/2011_Thai_general_election_results_per_region.png "2011 election result.")
 <p align="center">
-    <font size="2"><b>Figure 2.</b>  2011 election result.</font>
+    <font size="2"><b>Figure 2.</b>  2011 election district winner result.</font>
     <font size="1"> the red represents the provinces won by PT party, the blue represents the provinces won by the Democratic party.</font>
 </p>
 
-# 2. Electoral System
+## 3.1 Proportional party list representation
+What you see in figure 2 is the district winners. Recall that the party is awarded party list seats proportional to nation-wide country votes. The total seat is shown here.
+
+ ![Figure 3]({{ site.baseurl }}/images/2011_election_actual.png "2011 election result pie.")
+<p align="center">
+    <font size="2"><b>Figure 3.</b>  2011 election result. the district winner and party list is shown separately.</font>
+</p>
+
+# 4. 2019 Election prediction
+One good way to illustrate what the change in electoral system will cause is to just assume that the voting preferences of people do not change much, and the district lines are exactly preserved, and the only change in just the system. 
+Here we will take the voting data of 2014 and project it to 2019. We then will calculate the party list using 2019 system. The result is shown below.
+
+ ![Figure 4]({{ site.baseurl }}/images/2019_election.png "2019 election result pie.")
+<p align="center">
+    <font size="2"><b>Figure 3.</b>  2019 election prediction. the district winner and party list is shown separately.</font>
+</p>
+
+
+*Notice that PT does not get any party list at all. This is due to the problem with the overhang seats. We can say that MMA system penalizes them (which is obvious because the military regime wants to curtail the populist chance to get into office).*
+
+# 5. Counter-measure
+Fortunately (or unfortunately) there is a counter measure to the MMA penalty. 
