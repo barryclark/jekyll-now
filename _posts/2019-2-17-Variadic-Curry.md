@@ -33,6 +33,23 @@ With that out of the way, we see that it suffices now to define the follow type-
 
 ![equation](https://latex.codecogs.com/gif.latex?\lambda&space;X_1&space;\ldots&space;\lambda&space;X_n&space;\lambda&space;Y.&space;(X_1&space;\times&space;\ldots&space;\times&space;X_n&space;\rightarrow&space;Y)&space;\rightarrow&space;X_1&space;\rightarrow&space;\ldots&space;\rightarrow&space;X_n&space;\rightarrow&space;Y&space;:&space;\mathsf{Ty}_{n&plus;1})
 
+For the sake of brevity, I won't go into exact detail on how to define this, but it's worth mentioning some of the combinators on type-level functions that are required:
+
+Given a type-level function, increase the arity by one by adding an unused argument at the end:
+
+![equation](https://latex.codecogs.com/gif.latex?%5CPhi%20%5Cmapsto%20%5Clambda%20X_1%5Cldots%5Clambda%20X_n%5Clambda%20Y.%5CPhi%20X_1%20%5Cldots%20X_n)
+
+Given a unary type-level function and a type-level function, apply the unary function underneath all the lambda abstracted arguments:
+
+![equation](https://latex.codecogs.com/gif.latex?F%2C%20%5CPhi%20%5Cmapsto%20%5Clambda%20X_1%5Cldots%5Clambda%20X_n.%20F%28%5CPhi%20X_1%20%5Cldots%20X_n%29)
+
+Given a binary type-level function and two type-level functions of matching arity, apply the binary function to both underneath all the lambda abstracted arguments:
+
+![equation](https://latex.codecogs.com/gif.latex?F%2C%20%5CPhi%2C%5CPsi%20%5Cmapsto%20%5Clambda%20X_1%5Cldots%5Clambda%20X_n.%20F%28%5CPhi%20X_1%20%5Cldots%20X_n%29%28%5CPsi%20X_1%5Cldots%20X_n%29)
+
+# Defining the currying function
+
+With the type defined, we can finally move on to actually defining the function in question.
 
 ![equation](https://latex.codecogs.com/png.latex?({\color{Blue}&space;X_1&space;\times&space;\ldots&space;\times&space;X_n}&space;\rightarrow&space;{\color{Green}&space;Y})&space;\rightarrow&space;{\color{Orange}&space;X_1&space;\rightarrow&space;\ldots&space;\rightarrow&space;X_n&space;\rightarrow&space;Y}.)
 
