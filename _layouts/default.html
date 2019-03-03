@@ -102,11 +102,11 @@
                   {% endfor %}
               </ul>
               <hr/>
-              <span class="tags">
+              <div class="tags">
                   {% for tag in site.tags %}
-                    <a href="/tag/{{ tag.name }}" title="{{ tag.title }}">{{ tag.title }}</a>
+                      <a href="/tag/{{ tag.name }}" title="{{ tag.title }}"><strong><i>{{ tag.title }}</i></strong></a>
                   {% endfor %}
-              </span>
+              </div>
           </div>
           <!-- end /.fixed-condition -->
       </div>

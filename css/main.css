@@ -31,10 +31,10 @@ h2, h3 {
 }
 a, a:link, a:active {
   text-decoration: none;
-  color: #000080;
+  color: #2a6496;
 }
 a:hover {
-  color: #2a6496;
+  color: #1e0010;
   text-decoration: underline;
 }
 
@@ -104,6 +104,12 @@ div.col-sm-3 img.profile-avatar {
   -o-border-radius: 150px;
   margin-left: auto;
   margin-right: auto;
+}
+div.tags a {
+  background-color: #66afe9;
+  color: #000080;
+  font-size: 15px;
+  margin: 3px;
 }
 
 /* Pagination */
