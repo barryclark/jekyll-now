@@ -18,15 +18,7 @@ layout: default
     <div class="post">{{ content }}</div>
 </div>
 
-<span class="tags">
-    {% for tag in page.tags %}
-        {% for t in site.tags %}
-            {% if t.name == tag %}
-                <a href="/tags/{{ t.name }}" title="{{ t.title }}">{{ t.title }}</a>
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
-</span>
+{% include tags.html %}
 
 {% assign hasSimilar = '' %}
 {% for post in site.posts  %}
