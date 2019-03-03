@@ -3,7 +3,7 @@
     {% for tag in page.tags %}
         {% for t in site.tags %}
             {% if t.name == tag %}
-                <a href="/tags/{{ t.name }}" title="{{ t.title }}" style="color: '{{ t.color }}'">{{ t.title }}</a>
+                <a href="/tags/{{ t.name }}" title="{{ t.title }}"> {{ t.title }} </a>
             {% endif %}
         {% endfor %}
     {% endfor %}
