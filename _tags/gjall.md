@@ -1,4 +1,4 @@
 ---
 name: gjall
-title: Gjall
+title: tech.sollabs.gjall
 ---
