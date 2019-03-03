@@ -3,8 +3,9 @@ layout: post
 title: Thailand Election 2019
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+<br>
+![Logos]({{ site.baseurl }}/images/2011_Thailand_general_election_results_per_region.png "2011_Thailand_Election.")
+<br>
+<br>
+<br>
+Thailand, my motherland, will hold an election in March 24th, 2019.
