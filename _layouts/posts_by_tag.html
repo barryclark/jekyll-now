@@ -2,21 +2,18 @@
 layout: default
 ---
 <header class="post-header">
-  <h1 class="post-title">Articles by tag: {{ page.tags }}</h1>
+    <h1 class="post-title">Articles by tag: {{ page.title }}</h1>
 </header>
 
 <div class="post-content">
-  <hr />
-  {% for tag in site.tags %}
-    {% capture tag_slug %}{{ tag | first }}{% endcapture %}
-    {% for c_slug in tag_slug %}
-      {% if c_slug == page.tags %}
-        <button class="btn btn-sm btn-default active">{{ c_slug }}</button>
-      {% else %}
-        <a href="/tag/{{ c_slug }}" class="btn btn-sm btn-default">{{ c_slug }}</a>
-      {% endif %}
+    <hr />
+    {% for tag in site.tags %}
+        {% if page.name == tag %}
+            <button class="btn btn-sm btn-default active">{{ page.title }}</button>
+        {% else %}
+            <a href="/tag/{{ c_slug }}" class="btn btn-sm btn-default">{{ page.title }}</a>
+        {% endif %}
     {% endfor %}
-  {% endfor %}
 
   <hr />
   {% if site.tags[page.tags] %}
