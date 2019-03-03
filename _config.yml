@@ -85,10 +85,10 @@ urls:
 collections:
   tags:
     output: true
-    permalink: /tags/:path/
+    permalink: /tag/:path/
 defaults:
   - scope:
       path: ''
       type: tags
     values:
-      layout: tag
+      layout: posts_by_tag
