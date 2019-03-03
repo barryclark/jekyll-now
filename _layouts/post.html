@@ -8,11 +8,11 @@ layout: default
 
 <span class="time">{{ page.date | date_to_string }}</span>
 
-<!--{% if page.categories %}
+{% if page.categories %}
 <span class="categories">
     &raquo; {% for category in page.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
   </span>
-{% endif %}-->
+{% endif %}
 
 <div class="content">
     <div class="post">{{ content }}</div>
