@@ -1,5 +1,4 @@
 ---
 name: spring
-title: Spring framework
-color: 088A08
+title: 나만-모르는-Spring
 ---
