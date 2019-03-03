@@ -13,7 +13,7 @@ hr {
   border-top: 1px solid #F7F1F1;
   border-bottom: 1px solid #fff;
 }
-span.time, span.categories, span.post-tags {
+span.time, span.categories, span.tags {
   color: #000080;
   margin-bottom: 5px;
   font-size: 15px;
