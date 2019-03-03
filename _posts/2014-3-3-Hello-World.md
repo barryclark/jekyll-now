@@ -4,7 +4,7 @@ title: Thailand Election 2019
 ---
 
 <br>
-![Logos]({{ site.baseurl }}/images/2011_Thai_general_election_results_per_region.png "2011_Thailand_Election.")
+![Logos]({{ site.baseurl }}/images/Thailand_globe_map.jpg "Thailand_map")
 <br>
 <br>
 <br>
