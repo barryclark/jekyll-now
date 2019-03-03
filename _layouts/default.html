@@ -68,7 +68,7 @@
       <!-- Custom CSS -->
       <link rel="stylesheet" href="/css/super-search.css">
       <link rel="stylesheet" href="/css/thickbox.css">
-      <link rel="stylesheet" href="/css/projects.css">
+      <!--<link rel="stylesheet" href="/css/projects.css">-->
       <link rel="stylesheet" href="/css/main.css">
 
       {% include analytics.html %}
@@ -90,12 +90,13 @@
                   <strong>Navigation</strong>
                   <li><a href="/">Home</a></li>
 
-                  {% for c in site.categories %}
-                  <li><a class="about" href="{{ site.baseurl }}/category/{{ c.title }}">{{ c.title }}</a></li>
+                  {% for i in site.urls %}
+                    <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
                   {% endfor %}
 
-                  {% for i in site.urls %}
-                  <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
+                  <strong>Category</strong>
+                  {% for c in site.categories %}
+                      <li><a class="about" href="{{ site.baseurl }}/category/{{ c.title }}">{{ c.title }}</a></li>
                   {% endfor %}
               </ul>
           </div>
