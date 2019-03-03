@@ -248,8 +248,8 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 Μπορείτε να χρησιμοποιήσετε κάποια από αυτές τις υπηρεσίες:
 
-- <strike>www.cashila.com</strike>
 - [Bitwala](https://bitwa.la)
+- [AAVE](https://pay.aave.com)
 
 ### <a name="sepatobitcoin"></a> Πως μπορώ να δεχτώ έμβασμα σε τράπεζα της Ευρωζώνης και να μετατρέψω τα Ευρώ σε Bitcoin;
 
@@ -301,7 +301,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2019-02-25
+Τελευταία ενημέρωση: 2019-03-02
 
 <!-- <div class="posts">
   {% for post in site.posts %}
