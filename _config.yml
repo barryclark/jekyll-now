@@ -86,9 +86,17 @@ collections:
   tags:
     output: true
     permalink: /tag/:path/
+  categories:
+    output: true
+    permalink: /categories/:path/
 defaults:
   - scope:
       path: ''
       type: tags
     values:
       layout: posts_by_tag
+  - scope:
+      path: ''
+      type: categories
+    values:
+      layout: posts_by_category
