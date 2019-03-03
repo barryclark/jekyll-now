@@ -19,7 +19,13 @@ layout: default
 </div>
 
 <span class="tags">
-    {% for tag in page.tags %}<a href="/tags/{{ tag }}" title="{{ tag.title }}">{{ tag.title }}</a>{% endfor %}
+    {% for tag in page.tags %}
+        {% for t in site.tags %}
+            {% id t.name == tag %}
+                <a href="/tags/{{ t.name }}" title="{{ t.title }}">{{ t.title }}</a>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
 </span>
 
 {% assign hasSimilar = '' %}

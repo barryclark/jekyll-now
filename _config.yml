@@ -81,23 +81,12 @@ urls:
   - text: XML Feed
     url: /feed.xml
 
-enableTags: true
-tagarray: []
-
 # Collections for tags
 collections:
-  lang:
-    output: true
-    permalink: /lang/:path/
   tags:
     output: true
     permalink: /tags/:path/
 defaults:
-  - scope:
-      path: ''
-      type: lang
-    values:
-      layout: lang
   - scope:
       path: ''
       type: tags

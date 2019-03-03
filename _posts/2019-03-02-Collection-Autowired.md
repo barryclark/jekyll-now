@@ -1,7 +1,6 @@
 ---
 layout: post
 title: byType DI로 복수의 Bean 받기
-lang: kr
 categories: [spring]
 tags: spring
 ---
