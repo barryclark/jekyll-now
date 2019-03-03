@@ -11,7 +11,7 @@ layout: default
         {% if page.name == category.name %}
             <button class="btn btn-sm btn-default active">{{ category.title }}</button>
         {% else %}
-            <a href="/_categories/{{ category.name }}" class="btn btn-sm btn-default">{{ category.title }}</a>
+            <a href="/category/{{ category.name }}" class="btn btn-sm btn-default">{{ category.title }}</a>
         {% endif %}
     {% endfor %}
     <hr />
