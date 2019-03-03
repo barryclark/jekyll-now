@@ -8,38 +8,46 @@ layout: default
 <div class="post-content">
     <hr />
     {% for tag in site.tags %}
-        {% if page.name == tag %}
+        {% if page.name == tag.name %}
             <button class="btn btn-sm btn-default active">{{ tag.title }}</button>
         {% else %}
             <a href="/tag/{{ tag.name }}" class="btn btn-sm btn-default">{{ tag.title }}</a>
         {% endif %}
     {% endfor %}
+    <hr />
+    {% assign postExist = false %}
+    {% for post in site.posts %}
+        {% if post.tags contains page.name %}
+            {% unless postExist %}
+                {% assign postExist = true %}
+            {% endunless %}
 
-  <hr />
-  {% if site.tags[page.name] %}
-        <p>true-1</p>
-        {% for post in site.tags[page.name] %}
             {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+
             {% if forloop.first %}
                 <h4>{{ post_year }}</h4>
                 <div class="list-group">
             {% else %}
                 {% assign previous_index = forloop.index0 | minus: 1 %}
                 {% capture previous_post_year %}{{ site.tags[page.name][previous_index].date | date: '%Y' }}{% endcapture %}
+
                 {% if post_year != previous_post_year %}
                     </div>
                     <h4>{{ post_year }}</h4>
                     <div class="list-group">
                 {% endif %}
             {% endif %}
+
             <ul class="posts">
                 <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
             </ul>
+
             {% if forloop.last %}
                 </div>
             {% endif %}
-        {% endfor %}
-  {% else %}
+        {% endif %}
+    {% endfor %}
+    {% unless postExist %}
         <p>There are no posts in this tag.</p>
-  {% endif %}
+    {% endunless %}
 </div>
