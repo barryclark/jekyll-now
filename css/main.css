@@ -14,7 +14,7 @@ hr {
   border-bottom: 1px solid #fff;
 }
 span.time, span.categories, span.tags {
-  color: #000080;
+  color: #4A4A4A;
   margin-bottom: 5px;
   font-size: 15px;
 }
@@ -31,10 +31,10 @@ h2, h3 {
 }
 a, a:link, a:active {
   text-decoration: none;
-  color: #3fa757;
+  color: #000080;
 }
 a:hover {
-  color: #B3B3B3;
+  color: #2a6496;
   text-decoration: underline;
 }
 
