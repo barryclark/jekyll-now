@@ -165,11 +165,9 @@ curl -X POST \
 성공시에는 Filter는 물론, Controller 내부의 Log까지 정확히 찍히지만,
 실패시에는 Controller 내부의 Log가 찍히지 않는다.
 
-> 이는, Spring Controller의 돌아가는 구조와 연관이 있다.
+> Spring Security, Validation, Parameter Binding 등에서 실패하면, Handler Method(Controller의 Method)에 진입 자체를 못하기 때문이다.(Spring Controller의 구동원리 때문이다.)
 
-> Spring Security, Validation, Parameter Binding 등에서 실패하면, Handler Method(Controller의 Method)에 진입 자체를 못하기 때문이다.
-
-> 이 얘기는 Log가 누락된다는 얘기다.
+> 다시말해, 이 얘기는 Log가 누락된다는 얘기다.
 
 ### 추가설정
 
@@ -214,4 +212,4 @@ AbstractLoggingFilter class를 통해 세부적인 설정이 가능하다.
 
 [Gjall](https://gjall.sollabs.tech)은 그래서 만들었다.
 
-> 사실 반쯤 나만 쓰려고 만들어놨는데 생각보다 가져다 쓰는 사람도 있더라...
+_사실 내가 쓰려고 만들어놨는데 가져다 쓰는 사람도 생각보다 좀 있더라..._
