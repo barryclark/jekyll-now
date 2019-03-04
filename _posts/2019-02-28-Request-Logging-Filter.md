@@ -88,9 +88,9 @@ public class CommonsRequestLoggingFilter extends AbstractRequestLoggingFilter {
 * Logger의 debug level을 활성화시키고
 * CommonsRequestLoggingFilter(더 정확히는 AbstractRequestLoggingFilter)를 Spring Bean으로 만들어줄 것
 
-'''
+```
 logging.level.org.springframework.web.filter=debug
-'''
+```
 {% highlight java %}
     @Bean
     public CommonsRequestLoggingFilter requestLoggingFilter() {
@@ -140,11 +140,11 @@ curl -X POST \
 }'
 {% endhighlight %}
 
-'''
+```
 2019-02-28 06:59:34.383 DEBUG 19200 --- [nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/]
 2019-02-28 06:59:34.551  INFO 19200 --- [nio-8080-exec-2] com.example.apiLogging.DummyController   : TEST, 0
 2019-02-28 06:59:34.553 DEBUG 19200 --- [nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [uri=/]
-'''
+```
 
 {% highlight shell %}
 curl -X POST \
@@ -156,11 +156,11 @@ curl -X POST \
 }'
 {% endhighlight %}
 
-'''
+```
 2019-02-28 07:07:24.145 DEBUG 19200 --- [nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/]
 2019-02-28 07:07:24.188  WARN 19200 --- [nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public void com.example.apiLogging.DummyController.dummyPost(com.example.apiLogging.DummyController$Parameter): [Field error in object 'parameter' on field 'age': rejected value [-1]; codes [Min.parameter.age,Min.age,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [parameter.age,age]; arguments []; default message [age],0]; default message [반드시 0보다 같거나 커야 합니다.]] ]
 2019-02-28 07:07:24.188 DEBUG 19200 --- [nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [uri=/]
-'''
+```
 
 성공시에는 Filter는 물론, Controller 내부의 Log까지 정확히 찍히지만,
 실패시에는 Controller 내부의 Log가 찍히지 않는다.
@@ -198,14 +198,14 @@ AbstractLoggingFilter class를 통해 세부적인 설정이 가능하다.
 
 {% endhighlight %}
 
-'''
+```
 2019-02-28 07:18:35.261 DEBUG 7176 --- [nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before : uri=/;client=0:0:0:0:0:0:0:1;headers=[cache-control:"no-cache", postman-token:"65f03248-1b27-402b-9182-076dfca37bf1", user-agent:"PostmanRuntime/7.1.1", accept:"*/*", host:"localhost:8080", cookie:"JSESSIONID=A579B512FAB76D98833DB27213EA8555", accept-encoding:"gzip, deflate", content-length:"32", connection:"keep-alive", Content-Type:"application/json;charset=UTF-8"]
 2019-02-28 07:18:35.391  INFO 7176 --- [nio-8080-exec-1] com.example.apiLogging.DummyController   : TEST, 0
 2019-02-28 07:18:35.393 DEBUG 7176 --- [nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After : uri=/;client=0:0:0:0:0:0:0:1;headers=[cache-control:"no-cache", postman-token:"65f03248-1b27-402b-9182-076dfca37bf1", user-agent:"PostmanRuntime/7.1.1", accept:"*/*", host:"localhost:8080", cookie:"JSESSIONID=A579B512FAB76D98833DB27213EA8555", accept-encoding:"gzip, deflate", content-length:"32", connection:"keep-alive", Content-Type:"application/json;charset=UTF-8"];payload={
 	"age" : 0,
 	"name" : "TEST"
 }
-'''
+```
 
 ### 마치며
 물론, 저것만으로도 사실 좀 세부적인 정보를 얻는건 힘들다.
