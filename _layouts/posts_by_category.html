@@ -27,7 +27,9 @@ layout: default
             {% if forloop.first %}
                 <h4>{{ post_year }}</h4>
                 <div class="list-group">
-            {% else %}
+            {% endif %}
+
+            {% if forloop.first == false %}
                 {% assign previous_index = forloop.index0 | minus: 1 %}
                 {% capture previous_post_year %}{{ site.tags[page.name][previous_index].date | date: '%Y' }}{% endcapture %}
 
