@@ -371,7 +371,7 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
+  margin-top: 135px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
@@ -738,4 +738,25 @@ code.highlighter-rouge {
 
 #content {
   max-width: 72ch;
+}
+
+.sidebar_profile {
+  border-color: #ddd;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-style: solid;
+  margin-top: 175px;
+  text-align: center;
+  font-size: 14px;
+  img {
+    margin-top: -115px;
+    border-radius: 50%;
+    width: 85%;
+  }
+}
+
+.sidebar_subscribe {
+  background-color: orange;
+  height: 100px;
+  margin-top: 20px;
 }
