@@ -21,3 +21,5 @@ Email: [16520296@gm.uit.edu.vn](mailto:16520296@gm.uit.edu.vn)
 Twitter: [@duyqnguyenle](https://twitter.com/duyqnguyenle)
 
 LinkedIn: [duyqnguyenle](https://www.linkedin.com/in/duyqnguyenle)
+
+Skype: duyqnguyenle
