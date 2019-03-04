@@ -8,7 +8,7 @@ tags: [spring]
  - 이 글은 같은 주제로 popit에도 기고되어 있습니다.
  
  
- ### popit에는 안했던 이야기
+### popit에는 안했던 이야기
  
  RESTful API를 작성하다 보면 개발단계에서 디버깅을 해야할일이 많은데, Logging이 항상 문제였다.
  
@@ -21,7 +21,7 @@ Google을 뒤지다가 발견한 것이 [ContentCachingRequestWrapper](https://d
 
 문서에 대놓고 쓰여 있는 것이 [AbstractRequestLoggingFilter](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/filter/AbstractRequestLoggingFilter.html)
 
-*불변의 진리. 세상에 똑똑한 사람은 많고, 내가 만드려는건 이미 누가 다 만들어놨다.*
+_**불변의 진리. 세상에 똑똑한 사람은 많고, 내가 만드려는건 이미 누가 다 만들어놨다.**_
 
 심지어 구현체도 있다. [CommonsRequestLoggingFilter](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/filter/CommonsRequestLoggingFilter.html)
 
