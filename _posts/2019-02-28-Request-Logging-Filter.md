@@ -213,3 +213,5 @@ AbstractLoggingFilter class를 통해 세부적인 설정이 가능하다.
 하물며 Status Code조차 없기 때문에 요청의 성공/실패 여부조차 알기 힘드니 뭐..
 
 [Gjall](https://gjall.sollabs.tech)은 그래서 만들었다.
+
+> 사실 반쯤 나만 쓰려고 만들어놨는데 생각보다 가져다 쓰는 사람도 있더라...
