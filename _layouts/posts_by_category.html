@@ -31,7 +31,7 @@ layout: default
 
             {% if forloop.first == false %}
                 {% assign previous_index = forloop.index0 | minus: 1 %}
-                {% capture previous_post_year %}{{ site.tags[page.name][previous_index].date | date: '%Y' }}{% endcapture %}
+                {% capture previous_post_year %}{{ site.posts[previous_index].date | date: '%Y' }}{% endcapture %}
 
                 {% if post_year != previous_post_year %}
                     </div>
