@@ -18,14 +18,14 @@ avatar:
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: 16520296@gm.uit.edu.vn
+  email:
   facebook: 
   flickr: 
   github: duyqnguyenle
   instagram: 
   linkedin: duyqnguyenle
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: ok # just type anything here for a working RSS icon
   twitter: duyqnguyenle
   stackoverflow: 
   youtube: # channel/<your_long_string> or user/<user-name>
