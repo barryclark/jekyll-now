@@ -16,4 +16,6 @@ This blog is a place where I write some important things that I want to note for
 
 ### Contact me
 
-Via my organization email [16520296@gm.uit.edu.vn](mailto:16520296@gm.uit.edu.vn)
+Email [16520296@gm.uit.edu.vn](mailto:16520296@gm.uit.edu.vn)
+Twitter [@duyqnguyenle](https://twitter.com/duyqnguyenle)
+LinkedIn [duyqnguyenle](https://www.linkedin.com/in/duyqnguyenle/)
