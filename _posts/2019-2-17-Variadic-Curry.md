@@ -91,19 +91,19 @@ and this is a basic STLC exercise.
 
 After a bit of maneuvering to ensure that type arguments are passed around in the correct manner, we can finally define our variadic currying function.  Let's see how it works:
 
-```
+~~~
 Compute variadic_curry 10.
-```
+~~~
 
 yields
 
-```
+~~~
      = fun (X X0 X1 X2 X3 X4 X5 X6 X7 X8 X9 X10 : Type)
          (x : uncurried_type 10 X X0 X1 X2 X3 X4 X5 X6 X7 X8 X9 X10) 
          (x0 : X) (x1 : X0) (x2 : X1) (x3 : X2) (x4 : X3) (x5 : X4) 
          (x6 : X5) (x7 : X6) (x8 : X7) (x9 : X8) (x10 : X9) =>
        x (x0, (x1, (x2, (x3, (x4, (x5, (x6, (x7, (x8, (x9, x10))))))))))
      : curry_type 10
-```
+~~~
 
 which is indeed what we wanted.
