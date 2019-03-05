@@ -33,6 +33,15 @@ Spring-data-jpa(+QueryDsl)를 쓴다면 이런 코드에 익숙할 것이다.
     }
 {% endhighlight %}
 
+{% highlight shell %}  
+curl -X GET \
+  'http://localhost:12001/test?page=0&size=50' \
+  -H 'Accept: application/json' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 715f37b6-2516-4182-9440-826e2ee2277f'
+{% endhighlight %}
+
 ```
 2019-03-05 16:05:21.761  INFO 21332 --- [io-12001-exec-4] tech.sollabs.webdemo.TestResource        : size : 50
 2019-03-05 16:05:21.761  INFO 21332 --- [io-12001-exec-4] tech.sollabs.webdemo.TestResource        : number : 0
