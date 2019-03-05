@@ -9,11 +9,11 @@ layout: default
 <span class="time">{{ page.date | date_to_string }}</span>
 &raquo;
 {% include categories.html %}
-
+<hr/>
 <div class="content">
     <div class="post">{{ content }}</div>
 </div>
-
+<hr/>
 {% include tags.html %}
 
 {% assign hasSimilar = '' %}
