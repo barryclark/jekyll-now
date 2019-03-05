@@ -20,7 +20,7 @@ Both the books above I read via the Prime Reading program.
 
 I also bought a Kindle at a thrift store for around eight bucks. It's an older Kindle, but well worth the eight bucks. It's much better than reading ebooks on my phone - way fewer distractions.
 
-![The cover of A Brief History of Everyone Who Ever Lived on my thrift-store-bought Kindle.] (/images/books/kindle-adam-rutherford.jpg)
+![The cover of A Brief History of Everyone Who Ever Lived on my thrift-store-bought Kindle.](/images/books/kindle-adam-rutherford.jpg)
 *The cover of A Brief History of Everyone Who Ever Lived on my thrift-store-bought Kindle.*
 
 ## Books I Read to My Son
