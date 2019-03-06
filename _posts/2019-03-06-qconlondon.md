@@ -19,3 +19,9 @@ The Cloud Native Trail Map provides a path for enterprises to deploy cloud nativ
 In this talk we’ll look at how the needs of applications change as they grow and become more complex, and the stages in which organisations adopt specific cloud native technologies.
  
 We’ll then examine the journey that Monzo, a UK based digital bank, have taken over the last four years, the stages they went through as they grew, the challenges they faced at each point, and the technologies and techniques they used to build a cloud native bank.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">CNCF projects are taking over the world! <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> takes us through a journey building cloud native apps. <a href="https://twitter.com/hashtag/qcon?src=hash&amp;ref_src=twsrc%5Etfw">#qcon</a> <a href="https://twitter.com/hashtag/qconlondon?src=hash&amp;ref_src=twsrc%5Etfw">#qconlondon</a> <a href="https://t.co/uszXfWN5jO">pic.twitter.com/uszXfWN5jO</a></p>&mdash; Matt Heath (@mattheath) <a href="https://twitter.com/mattheath/status/1103263429467492352?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Really enjoying <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> and <a href="https://twitter.com/mattheath?ref_src=twsrc%5Etfw">@mattheath</a> reinforcing that message of gradually introducing cloud native technology - you don’t need to do everything at once!<a href="https://twitter.com/hashtag/qconlondon?src=hash&amp;ref_src=twsrc%5Etfw">#qconlondon</a></p>&mdash; Sam Newman (@samnewman) <a href="https://twitter.com/samnewman/status/1103268367983611906?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
