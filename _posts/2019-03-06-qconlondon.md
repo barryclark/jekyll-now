@@ -25,3 +25,9 @@ We’ll then examine the journey that Monzo, a UK based digital bank, have taken
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Really enjoying <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> and <a href="https://twitter.com/mattheath?ref_src=twsrc%5Etfw">@mattheath</a> reinforcing that message of gradually introducing cloud native technology - you don’t need to do everything at once!<a href="https://twitter.com/hashtag/qconlondon?src=hash&amp;ref_src=twsrc%5Etfw">#qconlondon</a></p>&mdash; Sam Newman (@samnewman) <a href="https://twitter.com/samnewman/status/1103268367983611906?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Start simple... Just containers and few services. <a href="https://t.co/AjsGncWbEX">pic.twitter.com/AjsGncWbEX</a></p>&mdash; Gwen (Chen) Shapira (@gwenshap) <a href="https://twitter.com/gwenshap/status/1103263905311281154?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">With more complexity... You need messaging and tracing. And service mesh to make deployments less disruptive. <a href="https://t.co/pE6pzJMWpi">pic.twitter.com/pE6pzJMWpi</a></p>&mdash; Gwen (Chen) Shapira (@gwenshap) <a href="https://twitter.com/gwenshap/status/1103264504077533185?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
