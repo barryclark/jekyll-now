@@ -30,7 +30,7 @@ The concrete goals for "earn more" consisted of: getting a raise at work, expand
 
 I have expanded my selection of [t-shirts on Amazon](https://hendrixjoseph.github.io/t-shirts/), as well as porting several designs over to my [Redbubble account](https://www.redbubble.com/people/joehx) and my [TeePublic account](https://www.teepublic.com/user/joehx). I've stopped putting effort into my [TeeSpring account](https://teespring.com/stores/joehxs-store) mainly because I receive almost no sales via that site whereas I receive regular sales on the others. That said, I will leave what shirts I have on TeeSpring.
 
-My wife didn't publish or write a book, and I didn't publish or make an Android app. I did publish [a children's ebook called *The Adventures of Princess*](https://www.amazon.com/dp/B07M68STB4/) which is about my dog Princess and me meeting my wife, although I bit fictionalized.
+My wife didn't publish or write a book, and I didn't publish or make an Android app. I did publish [a children's ebook called *The Adventures of Princess*](https://www.amazon.com/dp/B07M68STB4/?tag=hendrixjoseph-20) which is about my dog Princess and me meeting my wife, although I bit fictionalized.
 
 ![Cover for The Adventures of Princess](/images/princess-cover.jpg)
 *Cover for The Adventures of Princess*
@@ -81,7 +81,7 @@ We also intend to do what we failed to do last year - eat out at most three time
 
 I want to create and publish an Android app. I didn't do this last year, so I will accomplish this goal this year. I don't intend for the app to be anything groundbreaking - in fact, it will probably be an app that's been done a million times.
 
-I also want to publish a variant of [the book I published last year](https://www.amazon.com/dp/B07M68STB4/). Last year's book was a children's book from the vantage point of my dog, Princess. This year's book will be a similar children's book, but from the vantage point of my wife's dog, Niko.
+I also want to publish a variant of [the book I published last year](https://www.amazon.com/dp/B07M68STB4/?tag=hendrixjoseph-20). Last year's book was a children's book from the vantage point of my dog, Princess. This year's book will be a similar children's book, but from the vantage point of my wife's dog, Niko.
 
 ## Be Healthier
 

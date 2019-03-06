@@ -11,18 +11,18 @@ August was a good month for reading. I read four books for myself and eleven dif
 
 ## Books I Read for Me
 
-* [Turning Your Blog into a Book: Getting Started](https://www.amazon.com/dp/B01MZBLFF2/)
-* [Java Interview Guide: How to Build Confidence With a Solid Understanding of Core Java Principles](https://www.amazon.com/gp/product/B015HF9SJQ/)
-* [Retail Arbitrage](https://www.amazon.com/gp/product/B005Z2CYQ6/)
+* [Turning Your Blog into a Book: Getting Started](https://www.amazon.com/dp/B01MZBLFF2/?tag=hendrixjoseph-20)
+* [Java Interview Guide: How to Build Confidence With a Solid Understanding of Core Java Principles](https://www.amazon.com/gp/product/B015HF9SJQ/?tag=hendrixjoseph-20)
+* [Retail Arbitrage](https://www.amazon.com/gp/product/B005Z2CYQ6/?tag=hendrixjoseph-20)
 * [Cybercrime and the Darknet](https://www.abebooks.com/products/isbn/9781784288686/22462592955)
 
 The first three of these books were ebooks given away free by their authors. That said, they weren't worthless, in fact, they were actually pretty decent.
 
-[Retail Arbitrage](https://www.amazon.com/gp/product/B005Z2CYQ6/) is [Chris Green](https://www.amazon.com/Mr.-Chris-Green/e/B005PPUPX2/)'s first book, and probably one of his better ones, too. He routinely gives away his ebooks for free on one of his Facebook groups.
+[Retail Arbitrage](https://www.amazon.com/gp/product/B005Z2CYQ6/?tag=hendrixjoseph-20) is [Chris Green](https://www.amazon.com/Mr.-Chris-Green/e/B005PPUPX2/?tag=hendrixjoseph-20)'s first book, and probably one of his better ones, too. He routinely gives away his ebooks for free on one of his Facebook groups.
 
-[Java Interview Guide](https://www.amazon.com/gp/product/B015HF9SJQ/) was better than I expected. Typically I have low expectations for interview guides - I expect them to have a bunch of irrelevant trivia that is intended to be memorized. This ebook has information that would be good for any Java developer, even if they already have a job and no need to prepare for an interview.
+[Java Interview Guide](https://www.amazon.com/gp/product/B015HF9SJQ/?tag=hendrixjoseph-20) was better than I expected. Typically I have low expectations for interview guides - I expect them to have a bunch of irrelevant trivia that is intended to be memorized. This ebook has information that would be good for any Java developer, even if they already have a job and no need to prepare for an interview.
 
-I actually [left a review](https://www.amazon.com/gp/customer-reviews/R1UFMWNDL6NOQI/) for [Turning Your Blog into a Book](https://www.amazon.com/dp/B01MZBLFF2/): "Quick read, but quite motivating. Actually has a couple of actionable ideas that make it worth reading more than just the title."
+I actually [left a review](https://www.amazon.com/gp/customer-reviews/R1UFMWNDL6NOQI/) for [Turning Your Blog into a Book](https://www.amazon.com/dp/B01MZBLFF2/?tag=hendrixjoseph-20): "Quick read, but quite motivating. Actually has a couple of actionable ideas that make it worth reading more than just the title."
 
 Finally, [Cybercrime and the Darknet](https://www.abebooks.com/products/isbn/9781784288686/22462592955). I don't know what to say about this book. It tried to read like a textbook, except without end-of-the-chapter questions. It was well researched, or at least it had an appendix with pages after pages of sources. That said, it would sometimes get facts wrong - for instance, it assumes that social engineering, such as phishing, is not hacking. The writing felt amateurish, although that could be that its author is British. Finally, it had an obvious pro-government, anti-libertarian bias.
 

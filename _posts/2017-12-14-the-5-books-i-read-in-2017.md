@@ -16,7 +16,7 @@ I've wanted to read Don Quixote for a long time. It's an early example of a nove
 
 It was a hard read and actually took me a few years.
 
-### [Xenia, After](https://www.amazon.com//dp/B06Y3C3XPV/)
+### [Xenia, After](https://www.amazon.com//dp/B06Y3C3XPV/?tag=hendrixjoseph-20)
 
 ***Xenia, After*** is a post-apocalyptic novel placed in my hometown written by someone I went to high school with. This was also the first ebook I ever read to completion, and the first ebook I ever paid for.
 

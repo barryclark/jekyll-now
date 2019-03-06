@@ -68,7 +68,7 @@ When the option did expire, FIT was at $5.75. If I had kept the option, I would'
     $6.00 * 100 - $5.75 * 100 = $0.25 * 100 = $25.00
     $25.00 - $11.00 = $14.00
 
-I guess I should've kept it. [¯\\_(ツ)_/¯](https://www.amazon.com/%C2%AF%5C_(%E3%83%84)_%2F%C2%AF/dp/B076Q9F9YT/).
+I guess I should've kept it. [¯\\_(ツ)_/¯](https://www.amazon.com/%C2%AF%5C_(%E3%83%84)_%2F%C2%AF/dp/B076Q9F9YT/?tag=hendrixjoseph-20).
 
 I've already bought some more options this month, but I'm doing horrible. I'll fill everyone in on next month's post:
 
@@ -86,7 +86,7 @@ To recap, here are the stocks I picked last month in June:
 * Kroger
 * Verizon
 
-They're all doing okay, especially compared to that second one: Helios and Matheson Analytics Inc. (HMNY). HMNY is the parent company of MoviePass. They did a 250-1 reverse stock split. I had only bought 10 of their stocks for around 50&cent; each. This meant that my 10 stocks turned into one of their new stocks since every fractional share of the new stock was turned into a whole share. I should've sold it immediately when it was around $12 or so, because their stocks are right back at only a few pennies a share. Again, [¯\\_(ツ)_/¯](https://www.amazon.com/%C2%AF%5C_(%E3%83%84)_%2F%C2%AF/dp/B076Q9F9YT/).
+They're all doing okay, especially compared to that second one: Helios and Matheson Analytics Inc. (HMNY). HMNY is the parent company of MoviePass. They did a 250-1 reverse stock split. I had only bought 10 of their stocks for around 50&cent; each. This meant that my 10 stocks turned into one of their new stocks since every fractional share of the new stock was turned into a whole share. I should've sold it immediately when it was around $12 or so, because their stocks are right back at only a few pennies a share. Again, [¯\\_(ツ)_/¯](https://www.amazon.com/%C2%AF%5C_(%E3%83%84)_%2F%C2%AF/dp/B076Q9F9YT/?tag=hendrixjoseph-20).
 
 ## Remember!
 

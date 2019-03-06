@@ -35,4 +35,4 @@ Now, without further ado, here are the ten Christmas and New Year's themed table
 10. What was the shortest time it took you to break a New Year's resolution? What was that resolution?
 
 ![Keep Christ in Christmas long-sleeve t-shirt](/images/christmas-t-shirt.png)
-*check out this [Christmas long-sleeve t-shirt on Amazon](https://www.amazon.com/dp/B0778SC542/)*
+*check out this [Christmas long-sleeve t-shirt on Amazon](https://www.amazon.com/dp/B0778SC542/?tag=hendrixjoseph-20)*

@@ -65,8 +65,8 @@ Self-publishing a book via Amazon Kindle Direct Publishing (or KDP) is done thro
 
 Here are a few people I know who have published a book on Amazon:
 
-* [C. Brady](https://www.amazon.com/C.-Brady/e/B078WFMMB7/)
-* [Kevin Reichling](https://www.amazon.com/s/?search-alias=digital-text&field-author=Kevin+L.+Reichling)
-* [Joe Schlegel](https://www.amazon.com/Joe-Schlegel/e/B009SASEMY/)
+* [C. Brady](https://www.amazon.com/C.-Brady/e/B078WFMMB7/?tag=hendrixjoseph-20)
+* [Kevin Reichling](https://www.amazon.com/s/?search-alias=digital-text&field-author=Kevin+L.+Reichling&tag=hendrixjoseph-20)
+* [Joe Schlegel](https://www.amazon.com/Joe-Schlegel/e/B009SASEMY/?tag=hendrixjoseph-20)
 
 Have you published a book on Amazon? If so, feel free to drop the link to your book or author page in the comments below!

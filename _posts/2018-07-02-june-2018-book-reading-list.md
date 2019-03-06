@@ -9,7 +9,7 @@ image: /images/books/june-2018-books-read.png
 
 Time is precious - once again, I only managed to fit in one book in my busy schedule for the month. Hopefully, come August, I'll have more time, since the last session for the last class in my Master's program is on July 25th. Of course, my son might be mobile by then - he'll be four months on the 26th - so he will require more attention.
 
-The book I managed to read this month was [Symptoms to Watch for in Your Dog: How to Tell if Your Dog Is Sick and What to Do Next](https://www.amazon.com/dp/B06W52BQY8/). This was an ebook that the author happened to be giving away for free at the time; it's somewhere around nine dollars right now.
+The book I managed to read this month was [Symptoms to Watch for in Your Dog: How to Tell if Your Dog Is Sick and What to Do Next](https://www.amazon.com/dp/B06W52BQY8/?tag=hendrixjoseph-20). This was an ebook that the author happened to be giving away for free at the time; it's somewhere around nine dollars right now.
 
 ## Children's Books
 

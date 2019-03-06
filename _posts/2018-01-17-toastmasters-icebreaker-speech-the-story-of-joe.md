@@ -15,7 +15,7 @@ I gave this speech last week (January 9th if you want a date). So did my wife. M
 ![One of the few times I wasn't looking at my notes.](/images/toastmasters/joe-icebreaker.png)
 *One of the few times I wasn't looking at my notes.*
 
-Sigh. I did record the speech using my Galaxy S5 and a [cute little tripod called a Square Jellyfish](https://www.amazon.com/Square-Jellyfish-Tripod-Mount-Long/dp/B01LYGH7XN/). Unfortunately, the sound wasn't that great (it's a phone), but you could hear what we said. I'm currently looking to see if I can edit or adjust the sound and make the speech more clear.
+Sigh. I did record the speech using my Galaxy S5 and a [cute little tripod called a Square Jellyfish](https://www.amazon.com/Square-Jellyfish-Tripod-Mount-Long/dp/B01LYGH7XN/?tag=hendrixjoseph-20). Unfortunately, the sound wasn't that great (it's a phone), but you could hear what we said. I'm currently looking to see if I can edit or adjust the sound and make the speech more clear.
 
 Oh, and I'm tall, so the camera cut off the top of my head. Since I set up the phone, there wasn't anyone to fix this!
 
