@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Disk Capacity planning (A short story) 
+excerpt_separator: <!--more-->
 tags: [capacity planning]
 ---
 
@@ -22,6 +23,7 @@ If you have not seen one, it looks something like this
 
 In other words, based on some "realistic guesstimations" (see what I did there?) you are projecting a low- and high-watermark 
 for the future. 
+<!--more-->
 
 This exercise will allow you to do 2 things:
 

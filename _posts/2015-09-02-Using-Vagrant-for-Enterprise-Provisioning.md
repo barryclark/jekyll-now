@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using Vagrant for Enterprise Provisioning (A practical example)
+excerpt_separator: <!--more-->
 tags: [vagrant, virtualbox, tutorials]
 ---
 
@@ -22,6 +23,7 @@ These may have grown organically, but they usually end up being copied from proj
 How can you provide the benefits of environment-as-code, while avoiding copy-paste hell?  
 
 Hopefully this post will provide an answer.
+<!--more-->
 
 ## Some requirements
 

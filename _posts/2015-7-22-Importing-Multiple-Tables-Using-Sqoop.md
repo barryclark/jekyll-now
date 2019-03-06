@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Importing multiple tables using Sqoop 
+excerpt_separator: <!--more-->
 tags: [sqoop, hadoop, utilities]
 ---
 
@@ -17,6 +18,7 @@ However, you may hit a point where you
 * you really need to go down into the fine-grained details of Sqoop options for that weird legacy table.
 
 Through trial-and-error I have concluded to a relatively simple Bash script, which goes through a list of CSV list of tables.
+<!--more-->
 
 ## How it works
 

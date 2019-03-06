@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Problem with Spring's @PathVariable across builds
+excerpt_separator: <!--more-->
 tags: [spring, web development]
 ---
 
@@ -22,6 +23,8 @@ The failing method was something like
 ```
 
 But why??
+<!--more-->
+
 The name of the argument matches the path variable, a nice little feature of Spring. 
 
 After some digging online, it appears that the “implicit PathVariable name” feature only works when [debug information is on at compile time][1].

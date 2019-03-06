@@ -1,13 +1,9 @@
 ---
 layout: post
 title: Hiring a Great Technical Team (Part 3/3)
+excerpt_separator: <!--more-->
 tags: [hiring, team creation, job description, candidate search]
 ---
-
-*This is the final part of a 3-part series of articles*
-
-*[Part 1][1]*
-*[Part 2][2]*
 
 ## Keeping track of candidates
 
@@ -40,6 +36,7 @@ Or at times, without even that, just hands in the pockets, and trying to figure 
 
 No!
 Prepare, prepare, prepare!
+<!--more-->
 
 Being confident in your interviewing and "interrogation" skills is one thing; for sure you will have plenty of time to 
 judge the candidate's character.   
@@ -204,6 +201,12 @@ Hopefully these articles will prompt you to see the whole hiring process under a
 and use the tools readily available to you to improve it.
 
 Happy hiring!
+
+*This is the final part of a 3-part series of articles*
+
+*[Part 1][1]*
+*[Part 2][2]*
+
 
 
    [1]: http://sgerogia.github.io/Hiring-a-Great-Technical-Team-Part-1/

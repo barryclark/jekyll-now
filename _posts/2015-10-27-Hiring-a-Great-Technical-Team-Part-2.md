@@ -1,13 +1,9 @@
 ---
 layout: post
 title: Hiring a Great Technical Team (Part 2/3)
+excerpt_separator: <!--more-->
 tags: [hiring, team creation, cv screening, candidate assessment]
 ---
-
-*This is part 2 of a 3-part series of articles*
-
-* *[Part 1][1]*
-* *[Part 3][7]*
 
 ## "Gathering" stage
 
@@ -58,7 +54,7 @@ I am only going to highlight a few things, which I pay attention to (in addition
    Again there is no right or wrong, it always depends on the current role and the project. 
    What I am personally looking for is a nice balance of (and exposure to) different technologies, while taking some time to truly master them. 
    I believe that a team of [monoculturalists][4] is as bad as a team of [JOATMON][5]s.
-
+<!--more-->
 Some of the points above might sound like nit-picking. 
 However, when faced with a stack of CVs and when a working day only has 8h (ok, I am joking, more like 10h), you need to 
 make some decisions and prioritizations on "reasonable" grounds.
@@ -329,6 +325,12 @@ More than anything you want candidates leaving your building with the best impre
 This candidate may not have been a good fit, but a friend of hers might be. 
 
 Word of mouth is invaluable!
+
+
+*This is part 2 of a 3-part series of articles*
+
+* *[Part 1][1]*
+* *[Part 3][7]*
 
 
    [1]: http://sgerogia.github.io/Hiring-a-Great-Technical-Team-Part-1/

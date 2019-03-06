@@ -1,13 +1,9 @@
 ---
 layout: post
 title: Hiring a Great Technical Team (Part 1/3)
+excerpt_separator: <!--more-->
 tags: [hiring, team creation, job description, candidate search]
 ---
-
-*This is part 1 of a 3-part series of articles*
-
-* *[Part 2][10]*
-* *[Part 3][11]*
 
 ## Prologue 
 
@@ -29,6 +25,7 @@ The stress here is on **good**.
 And unfortunately the difference between bad, average and good is [exponential][3].
 So, finding the right people can **not** be treated as a side-job.
 It is the most important function and you, as team/tech lead, should treat it as so.
+<!--more-->
 
 You may be lucky enough to be already working in a [leading tech company][4]. 
 In this case you are very fortunate, as after [years of excellence][6], hiring the "creme de la creme", 
@@ -141,6 +138,10 @@ Make sure you familiarize yourself with your company's policy in that aspect, be
 and call one such candidate. 
 You may find yourself in some serious trouble! 
 
+*This is part 1 of a 3-part series of articles*
+
+* *[Part 2][10]*
+* *[Part 3][11]*
 
 
 

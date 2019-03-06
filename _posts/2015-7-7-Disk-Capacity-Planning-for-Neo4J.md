@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Disk capacity planning for Neo4J 
+excerpt_separator: <!--more-->
 tags: [neo4j, capacity planning, utilities]
 ---
 
@@ -9,6 +10,7 @@ The [Cypher query language][1] and its [traversal API][2] offer some interesting
 For example, storing build artifacts and their dependencies. 
 
 It can store [billions of nodes and relationships][3], which is great, but brings up an interesting question: how much space will it take on disk?
+<!--more-->
 
 ## Background
 
