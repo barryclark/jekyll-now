@@ -18,16 +18,12 @@ layout: default
     {% assign postExist = false %}
     {% for post in site.posts %}
         {% if post.categories contains page.name %}
-            {% unless postExist %}
-                {% assign postExist = true %}
-            {% endunless %}
-
             {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-
-            {% if forloop.first %}
+            {% unless postExist %}
                 <h4>{{ post_year }}</h4>
                 <div class="list-group">
-            {% endif %}
+                {% assign postExist = true %}
+            {% endunless %}
 
             {% if forloop.first == false %}
                 {% assign previous_index = forloop.index0 | minus: 1 %}
