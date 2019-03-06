@@ -18,16 +18,14 @@ layout: default
     {% assign postExist = false %}
     {% for post in site.posts %}
         {% if post.tags contains page.name %}
+            {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
             {% unless postExist %}
+                <h4>{{ post_year }}</h4>
+                <div class="list-group">
                 {% assign postExist = true %}
             {% endunless %}
 
-            {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-
-            {% if forloop.first %}
-                <h4>{{ post_year }}</h4>
-                <div class="list-group">
-            {% else %}
+            {% if forloop.first == false %}
                 {% assign previous_index = forloop.index0 | minus: 1 %}
                 {% capture previous_post_year %}{{ site.posts[previous_index].date | date: '%Y' }}{% endcapture %}
 
