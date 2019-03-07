@@ -22,7 +22,7 @@ On the Right you can see the player from a third perspective and on the left you
 
 The pickupable objects can be used to activate a button the red cube next to it show that the button is not pressed.
 
-![Button](images/button.png)
+![Button](../images/button.png)
 
 The button consists of a base and a top that can be activated.
 The button will change into an activated state if and object is on top of it.
