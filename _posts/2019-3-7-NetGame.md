@@ -41,7 +41,7 @@ The game in its current state (at the time of this post) can generate any size o
 
 The game logic is implemented as completly separated piece of code, it can be ported to any C# platform and thus one could create e.g. daily puzzle for all players as challenge.
 
-The generation algorithm creates tile for a tile a spanning tree by placing servers and then randomly selecting a new place for a branch to grow on. It is guaranteed to never have tiles that are without any connection or with connections to all side (as they could not be rotated)
+The generation algorithm creates tile for tile a spanning tree by placing servers and then randomly selecting a new place for a branch to grow on. It is guaranteed to never have tiles that are without any connection or with connections to all side (as they could not be rotated)
 
 ### Unity integration
 
