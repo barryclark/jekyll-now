@@ -14,6 +14,6 @@ Bài tập: Bao gồm 6 bài tập đều sử dụng ngôn ngữ Python để l
 Máy tính chỉ làm 2 việc: thực thi tính toán và lưu trữ kết quả của các tính toán đó.
 
 Tri thức có 2 dạng: khai báo (declarative) và mệnh lệnh (imperative).
-* Tri thức dạng khai báo là các phát biểu về một sự thật hiển nhiên. Ví dụ như \sqrt{x} là một số \\( y \\) sao cho $y*y = x$. 
+* Tri thức dạng khai báo là các phát biểu về một sự thật hiển nhiên. Ví dụ như căn bậc 2 của *x* là một số *y* sao cho *y* * *y* = *x*. 
 
  
