@@ -19,5 +19,8 @@ Tri thức có 2 dạng: khai báo (declarative) và mệnh lệnh (imperative).
   * Bắt đầu với 1 số *g* (dự đoán).
   * Nếu *g* * *g* xấp xỉ *x* thì dừng, *g* chính là kết quả.
   * Đặt lại *g* = (*g* + *x*/*g*) / 2.
+  * Tiếp tục lặp lại bước đầu tiên.
+ 
+ 
 
  
