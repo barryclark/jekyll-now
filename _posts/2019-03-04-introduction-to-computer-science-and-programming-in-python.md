@@ -9,6 +9,10 @@ Sách tham khảo: Guttag, John. Introduction to Computation and Programming Usi
  
 Bài tập: Bao gồm 6 bài tập đều sử dụng ngôn ngữ Python để lập trình. 
 
+* 1. What is computation?
 
+Máy tính chỉ làm 2 việc: thực thi tính toán và lưu trữ kết quả của các tính toán đó. 
+
+Tri thức có 2 dạng: khai báo (declarative) và mệnh lệnh (imperative).
 
  
