@@ -3,7 +3,7 @@ layout: post
 title: Environment interaction
 ---
 
-option for the player to interact with the environment.
+Option for the player to interact with the environment.
 
 # Pickup of objects
 
