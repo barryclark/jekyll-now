@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+	background-image: url("Rolling_Waves_Mod-ultra-HD.jpg") ;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: #00664d;
 }
 
 .container {
@@ -30,12 +30,16 @@ body {
   width: 100%;
 }
 
+table, th, td {
+	border: 3px solid black
+	;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
 
-  line-height: 1.7;
+  line-height: 1.5;
   margin: 1em 0 15px;
   padding: 0;
 
