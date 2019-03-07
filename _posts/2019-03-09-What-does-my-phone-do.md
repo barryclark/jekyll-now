@@ -29,7 +29,7 @@ Enter [Wireshark][1].
 
 ## Jaws
 
-![Shark](../images/wireshark-mobile/fikri-rasyid-689579-unsplash.jpg)
+![Shark](../images/wireshark-mobile/david-clode-451037-unsplash.jpg)
 > Photo by David Clode on Unsplash
 
 Wireshark is a communication packet analysis tool. It has been around for 20 
@@ -38,22 +38,22 @@ From Ethernet to Bluetooth to Token Ring and beyond.
 It can filter packets, correlate, introspect, import, export, book cinema tickets, you name it! 
 
 How to install it?  
-Very easily, with an installer for Mac and Windows.
+Very easily, with [installers for Mac and Windows][].
 
 You have installed Wireshark on your computer and you are thinking... 
 
 ## And now what?
 
-![Observe](../images/wireshark-mobile/fikri-rasyid-689579-unsplash.jpg)
+![Observe](../images/wireshark-mobile/franck-v-1294760-unsplash.jpg)
 > Photo by Franck V. on Unsplash
 
-There are 2 ways to capture your mobile phone's traffic<sup>2 that 
-the amateur guy writing this could quickly think of</sup>
+There are 2 ways to capture your mobile phone's traffic.<sup>2 that 
+the amateur guy writing this could quickly think of :-)</sup>
 
-* Capture wifi traffic  
+* **Capture wifi traffic**  
 Your phone and your laptop are part of the same wifi network.
 
-* Mobile phone uses your PC as access point  
+* **Mobile phone uses your PC as access point**  
 Your phone connects to your laptop/machine to access the internet. (if 
 your phone and OS support this)
 
@@ -75,11 +75,12 @@ E.g. some device is flooding your local airwaves, packets keep dropping off,...
 You need to know what you are doing and looking at at this low level. 
 
 Depending on your laptop and wireless card, you may need to tweak things 
-to actually get some meaningful traffic. 
+to actually get some meaningful traffic, i.e. let Wireshark interpret the 
+low-level stuff for you. 
 
-Let's see an example. All screenshots and settings are from a MacBook Pro, 
-running MacOS Mojave and Wireshark 3.0.0. Your settings and UI may differ
-slightly. 
+Note: *All screenshots and settings are from a MacBook Pro, 
+running MacOS Mojave and Wireshark 3.0.0.  
+Your settings and UI may differ slightly.* 
 
 **What is my laptop's IP?**
 
@@ -240,4 +241,4 @@ Happy 'sharking!
    [3]: https://wiki.wireshark.org/CaptureFilters
    [4]: https://wiki.wireshark.org/HowToDecrypt802.11
    [5]: https://idioms.thefreedictionary.com/grasping+at+straws 
-   
+   [6]: https://www.wireshark.org/#download
