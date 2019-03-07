@@ -15,5 +15,9 @@ Máy tính chỉ làm 2 việc: thực thi tính toán và lưu trữ kết qu�
 
 Tri thức có 2 dạng: khai báo (declarative) và mệnh lệnh (imperative).
 * Tri thức dạng khai báo là các phát biểu về một sự thật hiển nhiên. Ví dụ như căn bậc 2 của *x* là một số *y* sao cho *y* * *y* = *x*. 
+* Tri thức dạng mệnh lệnh là tri thức hướng dẫn cách để suy luận thông tin. Ví dụ phương pháp Heron (hay phương pháp Babylon):
+  * Bắt đầu với 1 số *g* (dự đoán).
+  * Nếu *g* * *g* xấp xỉ *x* thì dừng, *g* chính là kết quả.
+  * Đặt lại *g* = (*g* + *x/g*) / 2.
 
  
