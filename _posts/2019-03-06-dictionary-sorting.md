@@ -39,7 +39,7 @@ If I wanted to grab the oldest dog, you may think I could do something like:
 print(max(dogs, key='age'))
 ```
 
-Unforunately it's sliiightly more complicated than that. The key argument isn't the key of the dict or whatever object you have in your iterable. It's *actually* the key function that will sort the list, so just pop a lambda expression in there:
+Unforunately it's sliiightly more complicated than that. The key argument isn't the key of the dict or whatever object you have in your iterable. It's actually the key *function* that will sort the list, so just pop a lambda expression in there:
 
 ```python
 print(max(dogs, key=lambda x: x['age']))
