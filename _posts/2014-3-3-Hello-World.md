@@ -12,4 +12,30 @@ It might not be very helpful to you, but what I am trying to say is, with React,
 
 
 ## quick example
-![code example]()
+This is an example that I created using pure Javascript.
+![code example](/images/1-what-is-react/count-js.png)
+
+All I want is making a button and span so each time I press the button, I want to show the increased number next to the button. As you can see, there are so many 'appendChild' to create some elements.
+
+![](https://media.giphy.com/media/nkLB4Gp8H6hFe/giphy.gif)
+
+
+Let's have a look what I wrote in React
+
+```javascript
+import React, { useState } from 'react';
+
+function App () {
+  const [count, setCount] = useState(0)
+  return (
+    <div>
+      <span>{count}</span>
+      <button onClick={() => {
+        setCount(count +1)
+      }}>increment</button>
+    </div>
+  )
+}
+
+```
+<iframe src="https://codesandbox.io/embed/jj0vxjy5v5?fontsize=14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
