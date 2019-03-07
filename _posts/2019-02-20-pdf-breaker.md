@@ -55,7 +55,7 @@ Nothing fancy, probably easier ways to do this. Oh well.
 
 ## Break the PDF
 
-Time to break the PDF. Now you need to import itertools and pikepdf. We're using pikepdf instead of PyPDF2 as it handles more types of PDF encryption.
+Time to break the PDF. You need to import itertools and pikepdf. We're using pikepdf instead of PyPDF2 as it handles more types of PDF encryption.
 
 I've included some datetime.datetime calls as well to check times for later on.
 
