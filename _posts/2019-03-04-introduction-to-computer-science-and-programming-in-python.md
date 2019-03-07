@@ -18,6 +18,6 @@ Tri thức có 2 dạng: khai báo (declarative) và mệnh lệnh (imperative).
 * Tri thức dạng mệnh lệnh là tri thức hướng dẫn cách để suy luận thông tin. Ví dụ phương pháp Heron (hay phương pháp Babylon):
   * Bắt đầu với 1 số *g* (dự đoán).
   * Nếu *g* * *g* xấp xỉ *x* thì dừng, *g* chính là kết quả.
-  * Đặt lại *g* = (*g* + *x/g*) / 2.
+  * Đặt lại *g* = (*g* + *x*/*g*) / 2.
 
  
