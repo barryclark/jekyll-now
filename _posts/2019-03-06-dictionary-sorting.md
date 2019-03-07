@@ -15,7 +15,7 @@ Initially, I thought this would slightly easier than it is, since 'key' sounds l
 dog_one = {
     'name': 'Bear',
     'age': 13,
-    'breed': 'Golden Lab'
+    'breed': 'Yellow Lab'
 }
 
 dog_two = {
