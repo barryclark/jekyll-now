@@ -784,14 +784,7 @@ header a.home:hover{
         margin-bottom: 24px!important;
     }
 }
-// Swup animation
-.transition-fade{
-    transition: .4s;
-    opacity: 1;
-}
-html.is-animating .transition-fade{
-    opacity: 0;
-}
+
 // GLITCH TEXT EFFECT
 
 .glitch_text{

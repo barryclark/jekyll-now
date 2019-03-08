@@ -55,30 +55,9 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Based on Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <script src="/node_modules/swup/dist/swup.min.js"></script>
-    <script> 
-      const swup = new Swup({
-      cache: true,
-      animationSelector: '[class^="a-"]',
-      elements: ['#swup'],
-      pageClassPrefix: '',
-      debugMode: false,
-      scroll: true,
-      preload: true,
-      support: true,
-      disableIE: false,
-
-      animateScrollToAnchor: false,
-      animateScrollOnMobile: false,
-      doScrollingRightAway: false,
-      scrollDuration: 0,
-
-      LINK_SELECTOR: 'a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup]), a[xlink\\:href]'
-})
-    </script>
   </head>
 
-  <body id="swup" class="transition-fade">
+  <body>
     <header class="main-header">
        <span class="gradient"></span>
         <div class="header-inner">
@@ -103,4 +82,5 @@
     </div>
     {% include analytics.html %}
   </body>
+   
 </html>
