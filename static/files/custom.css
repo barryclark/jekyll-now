@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+body { font-family: 'Lato', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; font-size: 150%;}
+h1, h2, h3, h4 { font-family: 'Yanone Kaffeesatz'; }
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', 'Lucida Console', Monaco, monospace; }
+
+.title-slide {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 100%), url(clubSandwich.jpg); 
+  background-size: cover;
+}
+
+.background-image {
+  opacity: 0.2;
+}
+
+.title-slide h1, .title-side h2, .title-slide h3 {
+  color: #49007c;
+}
+
+h1, h2, h3 {
+  color: #49007c;
+}
+
+div.my-header {
+    background-color: #F77A00;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffb76b), color-stop(0%,#ffa73d), color-stop(0%,#ffffff), color-stop(10%,#ffffff), color-stop(25%,#F77A00), color-stop(100%,#F77A00));
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    text-align: left;
+}
