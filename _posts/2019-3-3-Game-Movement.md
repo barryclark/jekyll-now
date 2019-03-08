@@ -52,3 +52,6 @@ As stated in the blog post about the game concepts, the player will be able to p
 Even though the player is able to push the object while moving forwards and backwards, he will only see the object if he is pushing it forwards, since the camera will always show the area in front of him.
 
 ![pushable object](/images/pushable_object.png)
+
+## Time invested
+Tim 3h

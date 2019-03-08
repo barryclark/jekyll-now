@@ -31,3 +31,6 @@ This can also be the player itself.
 In the image below you can see the button is activated by an object, seen in the green color of the cube which changes color accordingly to the state of the button.
 
 ![pressedButton](/images/pressedButton.png)
+
+## Time invested
+Tim 2h

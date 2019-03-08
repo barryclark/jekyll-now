@@ -64,3 +64,8 @@ A central place where he can upgrade the robot and build the rocket.
 It is a large map where there are certain areas and different parts to find.
 In the background you can see mostly scrap and garbage, but there are also Eastereggs in the background that reveal the original owner.
 (e.g. Hint: "You pass butter" on sign in the background or mirror where he actually sees his look)
+
+
+## Time invested
+Hermann 2h
+Tim 2h

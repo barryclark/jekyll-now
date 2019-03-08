@@ -49,3 +49,6 @@ The current unity integration uses a tilemap renderer in an offscreen environmen
 A small script converts the NetGame tile types and their power status to Unity tiles consisting of a sprite (out of a small sprite sheet) and its transform.
 Lattern can be used to animate the rotation by the player.
 With the camera rendering offscreen, the resulting texture can be applied to any old 3D object in the "real" world of PurposeAndDespair.
+
+## Time invested
+Hermann 8h
