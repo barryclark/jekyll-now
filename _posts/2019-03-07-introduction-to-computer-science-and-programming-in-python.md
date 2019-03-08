@@ -27,7 +27,9 @@ Hình thức hóa một chút, **thuật toán** là một dãy hữu hạn các
 
 Máy tính đời đầu gọi là *fixed-program computers*, được thiết kế để làm những công việc rất cụ thể, chủ yếu là để giải các bài toán như tính quỹ đạo của đạn pháo. Một trong những chiếc máy tính đầu tiên (xây dựng vào năm 1941 bởi Atanasoff và Berry) không làm gì ngoài giải hệ phương trình tuyến tính. Máy bombe của Alan Turing xây dựng trong Thế Chiến Thứ Hai chỉ với mục đích phá mã máy Enigma của Đức Quốc Xã. Máy tính cầm tay đơn giản cũng là một *fixed-program computers*. Nó có thể làm phép tính số học đơn giản nhưng không thể làm những việc như xử lí văn bản hay chạy video game. Muốn thay đổi chương trình thì người ta phải thay thế mạch.
 
-Chiếc máy tính thực sự hiện đại đầu tiên là chiếc Manchester Mark 1. Khác với những người tiền nhiệm, nó là một *stored-program computer*. Nó lưu trữ và thao tác một dãy các lệnh, và có khả năng thực thi bất kì lệnh nào trong dãy đó. Bằng cách tạo ra kiến trúc tập lệnh, và biểu diễn tính toán như một dãy các lệnh, ta được một cổ máy linh hoạt hơn.
+Chiếc máy tính thực sự hiện đại đầu tiên là chiếc Manchester Mark 1. Khác với những người tiền nhiệm, nó là một *stored-program computer*. Nó lưu trữ và thao tác một dãy các lệnh, và có khả năng thực thi bất kì lệnh nào trong dãy đó. Bằng cách tạo ra kiến trúc tập lệnh, và biểu diễn tính toán như một dãy các lệnh, ta được một cổ máy linh hoạt hơn. Nếu coi các lệnh là dữ liệu, ta có thể dễ dàng thay đổi chương trình, và việc đó được kiểm soát bởi một chương trình khác. Do đó trọng tâm của máy tính là một chương trình được gọi là *interpreter*, nó có thể thực thi bất kì tập lệnh hợp lệ nào và sử dụng nó để tính toán bất cứ vấn đề nào miễn sao vấn đề đó mô tả được bằng những câu lệnh đơn giản. 
+
+Chương trình và dữ liệu được lưu trong bộ nhớ. *Program counter* trỏ vào một vị trí cụ thể trong vùng nhớ và việc tính toán bắt đầu từ câu lệnh tại vị trí đó. Và thông thường nó sẽ thực hiện câu lệnh kế tiếp nhưng đôi khi dựa vào bộ test hiện thời nó có thể nhảy đến bất cứ câu lệnh nào trong dãy lệnh. Đó gọi là *flow of control* (điều khiển luồng). 
  
  
 
