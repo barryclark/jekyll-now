@@ -23,7 +23,9 @@ Tri thức có 2 dạng: **khai báo (declarative)** và **mệnh lệnh (impera
   
 **Thuật toán** là một dãy các bước đơn giản cùng với flow of control xác định khi nào mỗi bước được thực hiện. Phương pháp Heron là một ví dụ về thuật toán theo kiểu *đoán-và-thử* (là thuật toán mà dễ dàng kiểm tra xem một dự đoán có tốt hay không).
 
-Hình thức hóa một chút, **thuật toán** là  
+Hình thức hóa một chút, **thuật toán** là một dãy hữu hạn các bước mô tả tính toán với một tập các input nó sẽ tiến hành thông qua một tập các trạng thái xác định và cho ra output.
+
+Máy tính đời đầu gọi là *fixed-program computers*, được thiết kế để làm những công việc rất cụ thể, chủ yếu là để giải các toán như tính quỹ đạo của đạn pháo. Một trong những chiếc máy tính đầu tiên (xây dựng vào năm 1941 bởi Atanasoff và Berry) không làm gì ngoài giải hệ phương trình tuyến tính. Máy bombe của Alan Turing xây dựng trong Thế Chiến Thứ Hai với mục đích phá mã máy Enigma của Đức Quốc Xã. Máy tính cầm tay đơn giản là một *fixed-program computers*. Làm phép tính số học đơn giản thì được nhưng không thể làm những việc như xử lí văn bản hay chạy video game. Muốn thay đổi chương trình thì người ta phải thay thế mạch. 
  
  
 
