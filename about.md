@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Software Engineer || Innovation Supporter || International Background
+Software Engineer
 
 ### More Information
 
