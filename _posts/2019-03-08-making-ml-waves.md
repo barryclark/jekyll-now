@@ -15,4 +15,4 @@ Haufe Group continues moving forward with machine learning - our CTO, Raul, pres
 
 Presentation slides are available to the public domain at - [Haufe Group AWS Summit ML Presentation](https://bit.ly/2tVJruz)
 
-We haven't gotten to ML tsunami status yet, but we're getting there. Stay tuned for more ML stories.
+We haven't reached ML tsunami status yet, but we're getting there. Stay tuned for more ML stories.
