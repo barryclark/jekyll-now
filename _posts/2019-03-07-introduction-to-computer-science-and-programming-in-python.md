@@ -50,5 +50,10 @@ Mỗi ngôn ngữ lập trình đều có: các cấu trúc cơ sở, cú pháp,
 * **Ngữ nghĩa tĩnh** định nghĩa chuôi các kí tự (đúng cú pháp) như thế nào là hợp lệ về mặt ý nghĩa.
 * **Ngữ nghĩa** liên kết một nghĩa với một chuôi các kí tự đúng cú pháp và không mắc lỗi ngữ nghĩa tĩnh. Trong ngôn ngữ tự nhiên, ngữ nghĩa của một câu có thể mơ hồ. Nhưng ngôn ngữ lập trình được thiết kế sao cho mỗi chương trình đều chỉ có duy nhất một nghĩa.  
  
+Lỗi cú pháp là lỗi phổ biến nhất (đặc biệt đối với những ai học ngôn ngữ lập trình mới), nhưng nó lại là lỗi ít nguy hiểm nhất. Điều tồi tệ là khi chương trình thực thi khác với những gì mà người viết mong muốn,cụ thể là:
+* Chương trình bị crash.
+* Hoặc nó không dừng.
+* Hoặc nó đưa ra kết quả không đúng.
+
 
  
