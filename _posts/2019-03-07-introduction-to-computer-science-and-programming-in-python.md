@@ -9,7 +9,9 @@ date: 2019-03-07
  
 **Bài tập**: Bao gồm 6 bài tập đều sử dụng ngôn ngữ Python để lập trình. 
 
-**1. What is computation?** (Chương 1 và 2.1)
+**1. What is computation?**
+
+Đọc chương 1 và phần 2.1 trong sách tham khảo.
 
 Máy tính chỉ làm 2 việc: thực thi tính toán và lưu trữ kết quả của các tính toán đó.
 
