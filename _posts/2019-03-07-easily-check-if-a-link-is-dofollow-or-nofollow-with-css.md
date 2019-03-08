@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Easily Check if a Link is DoFollow or NoFollow with CSS
-tags: [meta, github]
+tags: [javascript, web, css]
 keywords: [dofollow, nofollow, link, css, javascript, stylesheet]
 image: /images/reddit-marked-up.png
 ---
