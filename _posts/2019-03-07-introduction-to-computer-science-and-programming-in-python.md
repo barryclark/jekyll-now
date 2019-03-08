@@ -37,8 +37,18 @@ Với một tập cố định những tính năng ban đầu, một lập trìn
 
 Năm 1936, Alan Turing đã mô tả một thiết bị điện toán giả định gọi là *Universal Turing Machine* (máy Turing). Máy có bộ nhớ không giới hạn ở dạng băng. Trên đó ta có thể viết 0 và 1 cùng với một vài lệnh cơ bản như đọc, di chuyển và viết lên băng. Luận đề Church-Turing phát biểu rằng nếu một hàm là khả tính, thì máy Turing có thể lập trình để tính được nó. 
 
-Không phải mọi bài toán đều có lời giải. Turing đã chỉ ra rằng không thể viết một chương trình với đầu vào là một chương trình khác tùy ý, gọi là P và in ra True nếu và chỉ nếu P chạy mãi mãi. Đó gọi là *halting problem* (bài toán dừng).
- 
+Turing đã chỉ ra rằng không thể viết một chương trình với đầu vào là một chương trình khác tùy ý, gọi là P và in ra True nếu và chỉ nếu P chạy mãi mãi. Đó gọi là *halting problem* (bài toán dừng).
+
+Luận đề Church-Turing dẫn đến một khái niệm gọi là *Turing completeness*. Một ngôn ngữ lập trình được cho là *Turing complete* nếu như nó có thể sử dụng để mô phỏng máy Turing. Và tất cả ngôn ngữ lập trình hiện đại đều là *Turing complete*. Kết quả là bất cứ thứ gì có thể lập trình bằng một ngôn ngữ lập trình này thì đều có thể lập trình bằng một ngôn ngữ lập trình khác. Tuy nhiên có một vài thứ sẽ dễ dàng lập trình hơn trong một vài ngôn ngữ lập trình cụ thể. Nhưng về cơ bản tất cả các ngôn ngữ lập trình đều tương đương về sức mạnh tính toán. 
+
+Điều tốt nhất và cũng là điều tồi tệ nhất trong lập trình chính là: máy tính sẽ làm chính xác những gì bạn yêu cầu.
+
+Không có ngôn ngữ lập trình nào là tốt nhất. Mỗi ngôn ngữ lập trình đều có ưu và nhược điểm. 
+
+Mỗi ngôn ngữ lập trình đều có: các cấu trúc cơ sở, cú pháp, ngữ nghĩa và ngữ nghĩa tĩnh. 
+* **Cú pháp** định nghĩa chuỗi các kí tự như thế nào là hợp lệ về mặt hình thức.
+* **Ngữ nghĩa tĩnh** định nghĩa chuôi các kí tự (đúng cú pháp) như thế nào là hợp lệ về mặt ý nghĩa.
+* **Ngữ nghĩa** liên kết một nghĩa với một chuôi các kí tự đúng cú pháp và không mắc lỗi ngữ nghĩa tĩnh. Trong ngôn ngữ tự nhiên, ngữ nghĩa của một câu có thể mơ hồ. Nhưng ngôn ngữ lập trình được thiết kế sao cho mỗi chương trình đều chỉ có duy nhất một nghĩa.  
  
 
  
