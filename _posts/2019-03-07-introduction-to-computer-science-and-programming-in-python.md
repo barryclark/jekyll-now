@@ -29,7 +29,9 @@ Máy tính đời đầu gọi là *fixed-program computers*, được thiết k
 
 Chiếc máy tính thực sự hiện đại đầu tiên là chiếc Manchester Mark 1. Khác với những người tiền nhiệm, nó là một *stored-program computer*. Nó lưu trữ và thao tác một dãy các lệnh, và có khả năng thực thi bất kì lệnh nào trong dãy đó. Bằng cách tạo ra kiến trúc tập lệnh, và biểu diễn tính toán như một dãy các lệnh, ta được một cổ máy linh hoạt hơn. Nếu coi các lệnh là dữ liệu, ta có thể dễ dàng thay đổi chương trình, và việc đó được kiểm soát bởi một chương trình khác. Do đó trọng tâm của máy tính là một chương trình được gọi là *interpreter*, nó có thể thực thi bất kì tập lệnh hợp lệ nào và sử dụng nó để tính toán bất cứ vấn đề nào miễn sao vấn đề đó mô tả được bằng những câu lệnh đơn giản. 
 
-Chương trình và dữ liệu được lưu trong bộ nhớ. *Program counter* trỏ vào một vị trí cụ thể trong vùng nhớ và việc tính toán bắt đầu từ câu lệnh tại vị trí đó. Và thông thường nó sẽ thực hiện câu lệnh kế tiếp nhưng đôi khi dựa vào bộ test hiện thời nó có thể nhảy đến bất cứ câu lệnh nào trong dãy lệnh. Đó gọi là *flow of control* (điều khiển luồng). 
+Chương trình và dữ liệu được lưu trong bộ nhớ. *Program counter* trỏ vào một vị trí cụ thể trong vùng nhớ và việc tính toán bắt đầu từ câu lệnh tại vị trí đó. Và thông thường nó sẽ thực hiện câu lệnh kế tiếp nhưng đôi khi dựa vào bộ test hiện thời nó có thể nhảy đến bất cứ câu lệnh nào trong dãy lệnh. Đó gọi là *flow of control* (điều khiển luồng). Nó cho phép chương trình thực hiện những tác vụ phức tạp. 
+
+Với một tập cố định những tính năng ban đầu, một lập trình viên giỏi có thể tạo ra những chương trình hữu ích mà không bị giới hạn. Điều đó cho thấy lập trình là một cố gắng tuyệt vời. 
  
  
 
