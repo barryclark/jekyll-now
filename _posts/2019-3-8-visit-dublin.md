@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understand SSL certificates (root, intermediate, semi-intemediate, partial, ....)
+title: Visiting Dublin
 ---
 
 Visiting Dublin
