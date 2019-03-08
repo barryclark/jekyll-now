@@ -3,7 +3,7 @@ layout: post
 title: Haufe Group making waves with ML
 subtitle:  
 category: dev
-tags: [content, data, development]
+tags: [conference, data, development]
 author: Scott Speights
 author_email: scott.speights@haufe-lexware.com
 header-img: "images/MLLab/ml-waves.jpg"
