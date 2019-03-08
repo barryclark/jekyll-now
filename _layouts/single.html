@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
 
-        <meta property="og:type" content="article" />
+    <title>{% if page.title %}{{ page.title }}  {% endif %}{{ site.name }}</title>
 
-        <meta property="og:title" content="{{ page.title }}" />
-        <meta property="og:image" content="{{ page.image.feature }}" />
-        <meta property="og:site_name" content="Dactrtr" />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="author" content=" = D A C T R T R = " />
+    <meta name="description" content="{{ site.description }}"/>
+    <!--
+    TAKE THIS FOR INSPECTING MY CODE :)
+              // ""--.._
+             ||  (_)  _ "-._
+             ||    _ (_)    '-.
+             ||   (_)   __..-'
+              \\__..--""
+    -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- the amazing gallery is SLICK -> http://kenwheeler.github.io/slick/ -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="../assets/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="../assets/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../assets/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="../assets/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-        <title>{% if page.title %}{{ page.title }} @ {% endif %}{{ site.name }} {{ site.description }}</title>
+<!--    Facebook metas   -->
+    
+<meta property="og:url" content= "http://dactrtr.rocks" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Dactrtr Blog" />
+<meta property="og:description" content="With great power comes a great blog, I don't have any power so this blog is shit" />
+<meta property="og:image" content="http://i.imgur.com/klFFr7E.png" />
 
-        <meta name="author" content="{{ site.name }}" />
-        <meta name="description" content="{{ site.description }}">
+    
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
 
-        <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <link rel="stylesheet" type="text/css" href="../assets/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="../assets/slick/slick-theme.css"/>
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="../assets/favicon-196x196.png" sizes="196x196" />
-        <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/png" href="../assets/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="../assets/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" type="image/png" href="../assets/favicon-128.png" sizes="128x128" />
-        <meta name="application-name" content="&nbsp;"/>
-        <meta name="msapplication-TileColor" content="#FFFFFF" />
-        <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-        <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-        <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-        <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
+    <!-- Based on Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script> 
+      const swup = new Swup();
+    </script>
+  </head>
 
-        <!-- Based with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    </head>
-
-    <body class="thepost">
+    <body id="swup" class="thepost transition-fade">
         {% if page.image.feature %}
         <header class="single-header" style="
         background: url({{ page.image.feature }});
@@ -91,6 +105,5 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../assets/slick/slick.min.js"></script>
     <script type="text/javascript" src="../assets/init.js"></script>
-
     </body>
 </html>

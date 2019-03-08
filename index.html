@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="posts">
   {% for post in paginator.posts %}
-    <article class="post"> 
+    <article  class="post"> 
        {% if post.image.feature %}
         <a href="{{ site.baseurl }}{{ post.url }}" style="background:url({{ post.image.feature}});background-size:cover;background-position-y: center;">
         {% else %}
