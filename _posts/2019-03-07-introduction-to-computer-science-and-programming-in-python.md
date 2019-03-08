@@ -36,6 +36,8 @@ Với một tập cố định những tính năng ban đầu, một lập trìn
 Để tạo ra những câu lệnh thì chúng ta cần **ngôn ngữ lập trình**. 
 
 Năm 1936, Alan Turing đã mô tả một thiết bị điện toán giả định gọi là *Universal Turing Machine* (máy Turing). Máy có bộ nhớ không giới hạn ở dạng băng. Trên đó ta có thể viết 0 và 1 cùng với một vài lệnh cơ bản như đọc, di chuyển và viết lên băng. Luận đề Church-Turing phát biểu rằng nếu một hàm là khả tính, thì máy Turing có thể lập trình để tính được nó. 
+
+Không phải mọi bài toán đều có lời giải. Turing đã chỉ ra rằng không thể viết một chương trình với đầu vào là một chương trình khác tùy ý, gọi là P và in ra True nếu và chỉ nếu P chạy mãi mãi. Đó gọi là *halting problem* (bài toán dừng).
  
  
 
