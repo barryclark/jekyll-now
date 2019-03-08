@@ -6,11 +6,6 @@ permalink: /events/
 
 ### 2019
 
-February 24 - 28: Mobile World Congress, Barcelona
-
-March 4 - 6: QCon, London
-* **A Guided Journey of Cloud Native featuring Monzo**
-
 March 9: TECH(K)NOW Day London
 * **Open source for first timers**
 
