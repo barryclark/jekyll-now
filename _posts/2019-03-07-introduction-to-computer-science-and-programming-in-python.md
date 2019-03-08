@@ -32,6 +32,10 @@ Chiếc máy tính thực sự hiện đại đầu tiên là chiếc Manchester
 Chương trình và dữ liệu được lưu trong bộ nhớ. *Program counter* trỏ vào một vị trí cụ thể trong vùng nhớ và việc tính toán bắt đầu từ câu lệnh tại vị trí đó. Và thông thường nó sẽ thực hiện câu lệnh kế tiếp nhưng đôi khi dựa vào bộ test hiện thời nó có thể nhảy đến bất cứ câu lệnh nào trong dãy lệnh. Đó gọi là *flow of control* (điều khiển luồng). Nó cho phép chương trình thực hiện những tác vụ phức tạp. 
 
 Với một tập cố định những tính năng ban đầu, một lập trình viên giỏi có thể tạo ra những chương trình hữu ích mà không bị giới hạn. Điều đó cho thấy lập trình là một cố gắng tuyệt vời. 
+
+Để tạo ra những câu lệnh thì chúng ta cần **ngôn ngữ lập trình**. 
+
+Năm 1936, Alan Turing đã mô tả một thiết bị điện toán giả định gọi là *Universal Turing Machine* (máy Turing). Máy có bộ nhớ không giới hạn ở dạng băng. Trên đó ta có thể viết 0 và 1 cùng với một vài lệnh cơ bản như đọc, di chuyển và viết lên băng. Luận đề Church-Turing phát biểu rằng nếu một hàm là khả tính, thì máy Turing có thể lập trình để tính được nó. 
  
  
 
