@@ -25,7 +25,9 @@ Tri thức có 2 dạng: **khai báo (declarative)** và **mệnh lệnh (impera
 
 Hình thức hóa một chút, **thuật toán** là một dãy hữu hạn các bước mô tả tính toán với một tập các input nó sẽ tiến hành thông qua một tập các trạng thái xác định và cho ra output.
 
-Máy tính đời đầu gọi là *fixed-program computers*, được thiết kế để làm những công việc rất cụ thể, chủ yếu là để giải các toán như tính quỹ đạo của đạn pháo. Một trong những chiếc máy tính đầu tiên (xây dựng vào năm 1941 bởi Atanasoff và Berry) không làm gì ngoài giải hệ phương trình tuyến tính. Máy bombe của Alan Turing xây dựng trong Thế Chiến Thứ Hai với mục đích phá mã máy Enigma của Đức Quốc Xã. Máy tính cầm tay đơn giản là một *fixed-program computers*. Làm phép tính số học đơn giản thì được nhưng không thể làm những việc như xử lí văn bản hay chạy video game. Muốn thay đổi chương trình thì người ta phải thay thế mạch. 
+Máy tính đời đầu gọi là *fixed-program computers*, được thiết kế để làm những công việc rất cụ thể, chủ yếu là để giải các bài toán như tính quỹ đạo của đạn pháo. Một trong những chiếc máy tính đầu tiên (xây dựng vào năm 1941 bởi Atanasoff và Berry) không làm gì ngoài giải hệ phương trình tuyến tính. Máy bombe của Alan Turing xây dựng trong Thế Chiến Thứ Hai chỉ với mục đích phá mã máy Enigma của Đức Quốc Xã. Máy tính cầm tay đơn giản cũng là một *fixed-program computers*. Nó có thể làm phép tính số học đơn giản nhưng không thể làm những việc như xử lí văn bản hay chạy video game. Muốn thay đổi chương trình thì người ta phải thay thế mạch.
+
+Chiếc máy tính thực sự hiện đại đầu tiên là chiếc Manchester Mark 1. Khác với những người tiền nhiệm, nó là một *stored-program computer*. Nó lưu trữ và thao tác một dãy các lệnh, và có khả năng thực thi bất kì lệnh nào trong dãy đó. Bằng cách tạo ra kiến trúc tập lệnh, và biểu diễn tính toán như một dãy các lệnh, ta được một cổ máy linh hoạt hơn.
  
  
 
