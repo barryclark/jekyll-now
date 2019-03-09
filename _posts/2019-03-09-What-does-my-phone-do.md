@@ -38,7 +38,7 @@ From Ethernet to Bluetooth to Token Ring and beyond.
 It can filter packets, correlate, introspect, import, export, book cinema tickets, you name it! 
 
 How to install it?  
-Very easily, with [installers for Mac and Windows][].
+Very easily, with [installers for Mac and Windows][6].
 
 You have installed Wireshark on your computer and you are thinking... 
 
