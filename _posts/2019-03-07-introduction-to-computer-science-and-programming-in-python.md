@@ -68,6 +68,10 @@ Lỗi cú pháp là lỗi phổ biến nhất (đặc biệt đối với nhữn
    * Ngôn ngữ lập trình thông dịch: Mã nguồn được thực thi một cách trực tiếp bởi trình thông dịch. Dễ dàng gỡ lỗi hơn vì dựa thông báo lỗi có thể dễ dàng đối chiếu với mã nguồn.
    * Ngôn ngữ lập trình biên dịch: Mã nguồn được chuyển sang mã máy (bằng trình biên dịch) trước. Chạy nhanh hơn và dùng ít không gian bộ nhớ hơn.
    * Vào thời kì sơ khai của máy tính, người ta phải viết mã nguồn bằng một ngôn ngữ rất gần với mã máy và nó có thể thông dịch một cách trực tiếp bằng phần cứng.
+   
+   Chương trình bằng ngôn ngữ Python còn được gọi là script (kịch bản). Trình thông dịch của python còn được gọi là shell (vỏ).  Một lệnh (command) thường được gọi là một phát biểu hay tuyên bố (statement), trình thông dịch dựa vào nó để thực thi. Câu lệnh print("Nguyen Le Quang Duy") yêu cầu trình biên dịch gọi hàm print xuất ra màn hình dòng chữ Nguyen Le Quang Duy. Đối tượng (objects) là cốt lõi trong chương trình, mỗi đối tượng đều có kiểu dữ liệu (type). Kiểu dữ liệu bao gồm vô hướng (scalar) và có hướng (non-scalar). Kiểu vô hướng: None, int, float, bool. Kiểu có hướng: string, list,... 
+   
+   Đối tượng và toán tử (operators) kết hợp tạo nên biểu thức (expressions). Toán tử == kiểm tra xem 2 biểu thức có bằng nhau không, toán tử != thì ngược lại. 
  
  **2. Branching and Iteration**
  
