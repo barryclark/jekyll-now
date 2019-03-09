@@ -72,6 +72,8 @@ Lỗi cú pháp là lỗi phổ biến nhất (đặc biệt đối với nhữn
    Chương trình bằng ngôn ngữ Python còn được gọi là script (kịch bản). Trình thông dịch của python còn được gọi là shell (vỏ).  Một lệnh (command) thường được gọi là một phát biểu hay tuyên bố (statement), trình thông dịch dựa vào nó để thực thi. Câu lệnh print("Nguyen Le Quang Duy") yêu cầu trình biên dịch gọi hàm print xuất ra màn hình dòng chữ Nguyen Le Quang Duy. Đối tượng (objects) là cốt lõi trong chương trình, mỗi đối tượng đều có kiểu dữ liệu (type). Kiểu dữ liệu bao gồm vô hướng (scalar) và có hướng (non-scalar). Kiểu vô hướng: None, int, float, bool. Kiểu có hướng: string, list,... 
    
    Đối tượng và toán tử (operators) kết hợp tạo nên biểu thức (expressions). Biến (variables) là sự liên kết đối tượng với một cái tên, hay nói cách khác biến chỉ là một cái tên được gán cho đối tượng. Câu lệnh gán liên kết một cái tên ở bên trái phép gán với một đối tượng (được mô tả bởi một biểu thức) ở bên phải phép gán. Một đối tượng có thể có nhiều tên hoặc không có tên nào. 
+   
+   Hầu hết lập trình viên sử dụng text editor - một thành phần của IDE (Integrated Development Environment) - môi trường phát triển tích hợp. 
  
  **2. Branching and Iteration**
  
