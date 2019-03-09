@@ -16,9 +16,10 @@ Quoted on the following sites:
 * [Early Retirement Wisdom From 50+ Top Finance Writers](https://themoneymix.com/early-retirement/)
 * [Money Goals – 30+ Experts Share Their 2019 Resolutions](https://wealthynickel.com/money-goals/)
 
-Backlined on the following webpages:
+Backlinked on the following webpages:
 
 * [rskelton.com Tech Stack Details](https://rskelton.com/rskelton-tech-stack/)
+* [How much can you earn from an Amazon Merch business?](https://www.nichepursuits.com/merch-informer-review/#How_much_can_you_earn_from_an_Amazon_Merch_business)
 
 This blog is also in the following blog directories:
 
