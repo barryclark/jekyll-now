@@ -9,22 +9,15 @@ tags: [philosophy]
 
 개발팀 내부적으로는 오래된 DB Table 기반에서 조금 더 Domain 기반의 개발로 넘어가고자 하는 과정이었기에 
 
-1월부터 가장 먼저 시작한 것은 기존에 작업된 도메인을 분석하는 일이었다.
+기존에 작업된 도메인을 분석하다가 눈에 걸린 것이 '서버(Server)'라는 도메인이었다.
 
-설계가 오래 묵어 다양한 문제가 많았지만 그중 하나가 '서버(Server)'라는 도메인이었다.
+Server라는 이름만으로는 도메인의 명확한 의미를 파악하기 어려웠는데,  
 
-> 이것이 물리적인 서버인가가, 아니면 interface의 대상이 되는 Instance인가
+속성은 연동, 혹은 API 호출 대상으로써의 의미였던 한면, 실제 물리적인 장치를 의미하는 장치 도메인을 상속하고 있었기 때문이다.
 
-라는 질문을 던지는 것으로부터 시작될 수 밖에 없었는데, 
+모호한 용어의 사용으로 의미가 전달되지 않는 이러한 문제는 흔히 발생한다. 
 
-해당 도메인이 가진 속성은 Instance의 의미가 대부분이었음에도 실제 물리적인 장치를 의미하는 장치 테이블을 상속하고 있었기 때문이다.
-
-지나치게 추상적인, 혹은 중의적인 용어의 사용으로 의미가 전달되지 않는 이러한 문제는 누구에게나 빈번하게 발생한다. 
-
-아래 글들을 보면, 위 사례와 같은 고민은 나만 하진 않는다.
-
-* [popit - 흔한-프로그래머의-작명에-대한-사뭇-진지한-이야기(안영회)](https://www.popit.kr/%ED%9D%94%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%9D%98-%EC%9E%91%EB%AA%85%EC%97%90-%EB%8C%80%ED%95%9C-%EC%82%AC%EB%AD%87-%EC%A7%84%EC%A7%80%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0/)
-* [popit - 상태와-이벤트라는-모호한-말이-낳은-결과-찾아내기(안영회)](https://www.popit.kr/%EC%83%81%ED%83%9C%EC%99%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%9D%BC%EB%8A%94-%EB%AA%A8%ED%98%B8%ED%95%9C-%EB%A7%90%EC%9D%B4-%EB%82%B3%EC%9D%80-%EA%B2%B0%EA%B3%BC-%EC%B0%BE%EC%95%84%EB%82%B4%EA%B8%B0/)
+아래 글들을 보면, 위 사례와 같은 고민은 나만 하진 않는다.[1][c1]
 
 ---
 ### 이것이 정말 중요한 문제일까?
@@ -52,7 +45,7 @@ tags: [philosophy]
 켄트 벡이 (책처럼) 읽기 쉬운 코드를 작성함으로써 프로그램에서 커뮤니케이션의 가치를 강조하고 이를 통해 비용 절감이 가능하다고 주장하는 것은 명확해 보인다.
 
 > 이런 일을 방지하기 위해, 개발자는 읽는 사람의 입장에서 생각하고 자신의 코드를 리팩토링하는 데 일치된 노력을 기울여 읽는 사람이 그것을 이해할 수 있도록 해야 한다. (p. 114)
-    - Robert C. Martin, 클린 소프트웨어(이용원, 김정민, 정지호 역), 제이펍 (원제 : Agile Software Development, Principles, Patterns, and Practices)
+    - Robert C. Martin, 클린 소프트웨어(이용원, 김정민, 정지호 역), 제이펍 (원제 : Agile Software Development, Principles, Patterns, and Practices)[2][c2]
     
 사실 이 책에서는 습관적이라고 할만큼 많은 부분에서 불명확한 용어를 수정하는 과정이 등장하지만 그 중 한 문장을 인용하였다. 
 
@@ -94,7 +87,8 @@ tags: [philosophy]
 > According to the use theory of meaning, the words are not defined by reference to the objects they designate, 
 nor by the mental representations one might associate with them, but by how they are used
     - Wittgenstein, Philosophical Investigations
-    의미론의 사용 이론에 따르면, 단어들은 그들이 지정하는 물건에 대한 참조나 그것과 연관될 수 있는 정신적 표현에 의해서 정의되는 것이 아니라 어떻게 사용되는지에 의해서 정의된다
+    
+> 의미론의 사용 이론에 따르면, 단어들은 그들이 지정하는 물건에 대한 참조나 그것과 연관될 수 있는 정신적 표현에 의해서 정의되는 것이 아니라 어떻게 사용되는지에 의해서 정의된다
 
 이 주장을 (아주 크게 잘라내서) 요약하면 _단어가 어떤 **맥락**에서 어떤 **목적**을 가지고 사용되었는지가 그 단어를 의미있게 만든다_고 할 수 있다.
 
@@ -108,8 +102,9 @@ nor by the mental representations one might associate with them, but by how they
 예를 들어 아래 문제를 풀어보자.
 
 > ![문제](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Turkse_angora.jpg/200px-Turkse_angora.jpg) 
->   이 그림속 생물을 표현하는 단어를 고르시오.
-    ① 동물    ② 고양이    ③ 흰고양이    ④ 터키쉬 앙고라
+
+> 이 그림속 생물을 표현하는 단어를 고르시오.
+> ① 동물    ② 고양이    ③ 흰고양이    ④ 터키쉬 앙고라
     
 시험문제가 이렇게 출제되면 학부모들이 들고 일어날 것이다.
 
@@ -274,3 +269,7 @@ concise의 예를 보자. 이 단어를 '간결한', '간명한', '명료한' �
 4. [popit - 함께-그리고-가볍게-하는-소프트웨어-설계의-즐거움(안영회)](https://www.popit.kr/%ED%95%A8%EA%BB%98-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%95%98%EB%8A%94-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%84%A4%EA%B3%84%EC%9D%98-%EC%A6%90%EA%B1%B0%EC%9B%80/) 좋은 예시가 아닐까.
 
 5. 포스팅은 한글제목과 함께 파일명(+링크 주소)으로 쓰는 영문제목을 붙이는데, 연습삼아 나름 여러가지로 신경쓰고 있다.
+
+
+[c1][popit - 흔한-프로그래머의-작명에-대한-사뭇-진지한-이야기(안영회)](https://www.popit.kr/%ED%9D%94%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%9D%98-%EC%9E%91%EB%AA%85%EC%97%90-%EB%8C%80%ED%95%9C-%EC%82%AC%EB%AD%87-%EC%A7%84%EC%A7%80%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0/), [popit - 상태와-이벤트라는-모호한-말이-낳은-결과-찾아내기(안영회)](https://www.popit.kr/%EC%83%81%ED%83%9C%EC%99%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%9D%BC%EB%8A%94-%EB%AA%A8%ED%98%B8%ED%95%9C-%EB%A7%90%EC%9D%B4-%EB%82%B3%EC%9D%80-%EA%B2%B0%EA%B3%BC-%EC%B0%BE%EC%95%84%EB%82%B4%EA%B8%B0/) 사실 stackoverflow만 찾아봐도 매우 흔한 문제다.
+[c2]: 해당 책은 한글로 두번 번역되어 출판되었다. 여기서 참조한 서적은 2017년 재판된 서적이나, 초판은 다른 제목으로 번역/출판된 것으로 알고 있다.
