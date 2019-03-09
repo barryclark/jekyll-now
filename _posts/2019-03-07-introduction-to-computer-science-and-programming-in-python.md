@@ -57,6 +57,18 @@ Lỗi cú pháp là lỗi phổ biến nhất (đặc biệt đối với nhữn
  Hoặc nó không dừng.
  Hoặc nó đưa ra kết quả không đúng.
  
+ Mặc dù các ngôn ngữ lập trình là khác nhau, tuy nhiên cũng có một số khía cạnh chúng có thể liên quan:
+ * Ngôn ngữ lập trình bậc thấp vs Ngôn ngữ lập trình bậc cao:
+   * Bậc thấp: Người lập trình sử dụng các câu lệnh và đối tượng dữ liệu ở mức độ phần cứng (dịch 64 bit dữ liệu từ nơi này sang nơi khác).
+   * Bậc cao: Người lập trình sử dụng những thao tác ở mức độ trừu tượng hơn (pop up một menu lên màn hình).
+ * Ngôn ngữ lập trình phổ thông vs Ngôn ngữ lập trình chuyên môn hóa:
+   * Ngôn ngữ lập trình phổ thông: Những chức năng cơ bản của ngôn ngữ lập trình có ứng dụng rộng rãi.
+   * Ngôn ngữ lập trình chuyên môn hóa: Những chức năng cơ bản của ngôn ngữ lập trình tập trung vào một lĩnh vực.
+ * Ngôn ngữ lập trình thông dịch vs Ngôn ngữ lập trình biên dịch:
+   * Ngôn ngữ lập trình thông dịch: Mã nguồn được thực thi một cách trực tiếp bởi trình thông dịch. Dễ dàng gỡ lỗi hơn vì dựa thông báo lỗi có thể dễ dàng đối chiếu với mã nguồn.
+   * Ngôn ngữ lập trình biên dịch: Mã nguồn được chuyển sang mã máy (bằng trình biên dịch) trước. Chạy nhanh hơn và dùng ít không gian bộ nhớ hơn.
+   * Vào thời kì sơ khai của máy tính, người ta phải viết mã nguồn bằng một ngôn ngữ rất gần với mã máy và nó có thể thông dịch một cách trực tiếp bằng phần cứng.
+ 
  **2. Branching and Iteration**
  
  **3. String Manipulation, Guess and Check, Approximations, Bisection**
