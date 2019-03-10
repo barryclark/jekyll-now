@@ -31,10 +31,15 @@ h2, h3 {
 }
 a, a:link, a:active {
   text-decoration: none;
-  color: #2a6496;
+  color: #3c763d;
 }
 a:hover {
   color: #1e0010;
+  text-decoration: underline;
+}
+a.footnote {
+  color: #080808;
+  font-style: italic;
   text-decoration: underline;
 }
 
