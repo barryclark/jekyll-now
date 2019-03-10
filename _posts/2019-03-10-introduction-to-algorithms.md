@@ -15,7 +15,8 @@ date: 2019-03-10
 **Bài tập**: Có 7 bài tập gồm: bài tập lập trình bằng Python và bài tập lý thuyết.
 
 **Unit 1: Introduction**
-1.	Algorithmic thinking, peak finding
+1. Algorithmic thinking, peak finding
+2. Models of computation, Python cost model, document distance
 
 **Unit 2: Sorting and Trees**
 
