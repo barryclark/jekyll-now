@@ -50,13 +50,6 @@ a.footnote {
   list-style: circle;
   margin-bottom: 15px;
 }
-.language {
-  margin-bottom: 15px;
-}
-.flag {
-  margin: 0 5px 0 5px;
-  width: 30px;
-}
 
 /* Layout */
 .main-layout {
@@ -103,7 +96,6 @@ footer {
 
 /* Left column */
 div.col-sm-3 {
-  margin-top: 100px;
   font-size: 13px;
   color: #666;
 }
@@ -111,6 +103,13 @@ div.col-sm-3 strong {
   font-size: 16px;
   color: #4A4A4A;
   font-weight: normal;
+}
+div.col-sm-3 div.language {
+    margin-top: 15px;
+}
+div.col-sm-3 img.flag {
+    margin: 0 5px 0 5px;
+    max-width: 30px;
 }
 div.col-sm-3 div.profile-about {
   margin-top: 10px;
@@ -160,12 +159,13 @@ div.tags a {
 /* Responsive Conditional */
 @media (min-width: 1024px) {
   .fixed-condition {
+    margin-top: 60px;
     position: fixed;
     max-width: 255px;
   }
 }
 @media (max-width: 768px) {
   div.col-sm-3 {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
