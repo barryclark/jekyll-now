@@ -4,6 +4,9 @@
     <span class="tags">
         {% assign isFirst = true %}
         {% for tag in page.tags %}
+            {% if forloop.first == false %}
+            ,
+            {% endfor %}
             {% for t in site.tags %}
                 {% if t.name == tag %}
                     {% unless isFirst %}, {% endunless %}
