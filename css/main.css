@@ -50,6 +50,9 @@ a.footnote {
   list-style: circle;
   margin-bottom: 15px;
 }
+.language {
+  margin: 0 auto 15px auto;
+}
 .flag {
   margin: 0 5px 0 5px;
   width: 30px;
