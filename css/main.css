@@ -46,12 +46,11 @@ a.footnote {
 .fb-like {
   float: right;
 }
-
 .posts li {
   list-style: circle;
   margin-bottom: 15px;
 }
-.language a {
+.flag {
   margin: 0 5px 0 5px;
   width: 30px;
 }
