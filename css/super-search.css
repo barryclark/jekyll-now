@@ -34,10 +34,6 @@ input#js-search__input {
   position: absolute;
   right: 12px;
 }
-
-.search {
-  margin-top: 50px;
-}
 .search.is-active {
   opacity: 1;
   visibility: visible;

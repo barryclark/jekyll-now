@@ -131,14 +131,14 @@
                       <a href="/tag/{{ tag.name }}" title="{{ tag.title }}"><strong><i>{{ tag.title }}</i></strong></a>
                   {% endfor %}
               </div>
+              <div class="search" id="js-search">
+                  <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
+                  <ul class="search__results" id="js-search__results"></ul>
+              </div>
           </div>
           <!-- end /.fixed-condition -->
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
-          <div class="search" id="js-search">
-              <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
-              <ul class="search__results" id="js-search__results"></ul>
-          </div>
           {{ content }}
           <footer>
               &copy; {{ site.author }}

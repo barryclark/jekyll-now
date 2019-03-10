@@ -163,6 +163,9 @@ div.tags a {
     position: fixed;
     max-width: 255px;
   }
+  .main-layout {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 768px) {
   div.col-sm-3 {
