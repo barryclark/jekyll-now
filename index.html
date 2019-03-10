@@ -8,7 +8,7 @@ layout: default
 
     <ol class="posts">
         {% for post in paginator.posts %}
-
+            {% include post_link.html %}
         {% endfor %}
     </ol>
 
