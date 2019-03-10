@@ -22,6 +22,7 @@ layout: default
             {% unless postExist %}
                 <h4>{{ post_year }}</h4>
                 <div class="list-group">
+                    <ul class="posts">
                 {% assign postExist = true %}
             {% endunless %}
 
@@ -30,6 +31,7 @@ layout: default
                 {% capture previous_post_year %}{{ site.posts[previous_index].date | date: '%Y' }}{% endcapture %}
 
                 {% if post_year != previous_post_year %}
+                        </ul>
                     </div>
                     <h4>{{ post_year }}</h4>
                     <div class="list-group">

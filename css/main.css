@@ -49,8 +49,7 @@ a.footnote {
 
 .posts li {
   list-style: circle;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 /* Layout */
