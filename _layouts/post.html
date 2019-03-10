@@ -9,6 +9,7 @@ layout: default
 <span class="time">{{ page.date | date_to_string }}</span>
 &raquo;
 {% include categories.html %}
+{% include fb_buttons.html %}
 <hr/>
 <div class="content">
     <div class="post">{{ content }}</div>
@@ -28,7 +29,7 @@ layout: default
                         <ul>
                 {% endif %}
                 <li class="relatedPost">
-                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    <a href="{{ postLink }}">{{ post.title }}</a>
                     {% if post.categories %}
                         (Categories: {% for category in post.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %})
                     {% endif %}
