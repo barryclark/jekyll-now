@@ -8,53 +8,63 @@
       <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
       <meta name="author" content="{{ site.author }}" />
       <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
-      <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+
       <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
       <meta content="{{ site.title }}" property="og:site_name">
 
+      {% if page.title %}
+        <meta name="keywords" content="{{ page.title }},{% for t in page.tags %}{{ t.title }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+      {% else %}
+        <meta name="keywords" content="dev, devloper, spring, oop, developer philosophy" />
+      {% endif %}
+
       {% if page.noindex %}
-      <meta name="robots" content="noindex">
+        <meta name="robots" content="noindex">
       {% endif %}
 
       {% if page.title %}
-      <meta content="{{ page.title }}" property="og:title">
-      <meta content="article" property="og:type">
+        <meta content="{{ page.title }}" property="og:title">
+        <meta content="article" property="og:type">
       {% else %}
-      <meta content="{{ site.name }}" property="og:title">
-      <meta content="website" property="og:type">
+        <meta content="{{ site.name }}" property="og:title">
+        <meta content="website" property="og:type">
       {% endif %}
 
       {% if page.description %}
-      <meta content="{{ page.description }}" property="og:description">
+        <meta content="{{ page.description }}" property="og:description">
       {% else %}
-      <meta content="{{ site.description }}" property="og:description">
+        <meta content="{{ site.description }}" property="og:description">
       {% endif %}
 
       {% if page.url %}
-      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+        <meta content="{{ site.url }}{{ page.url }}" property="og:url">
       {% endif %}
 
       {% if page.date %}
-      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-      <meta content="{{ site.url }}/about/" property="article:author">
+        <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+        <meta content="{{ site.url }}/about/" property="article:author">
       {% endif %}
 
       {% if page.image %}
-      <meta content="{{ site.url }}/images/posts/{{ page.image }}" property="og:image">
+        <meta content="{{ site.url }}/images/posts/{{ page.image }}" property="og:image">
       {% else %}
-      <meta content="{{ site.url }}{{ site.avatar }}" property="og:image">
+        <meta content="{{ site.url }}{{ site.avatar }}" property="og:image">
       {% endif %}
 
       {% if page.categories %}
-      {% for category in page.categories limit:1 %}
-      <meta content="{{ category }}" property="article:section">
-      {% endfor %}
+        {% for category in page.categories limit:1 %}
+            <meta content="{{ category }}" property="article:section">
+        {% endfor %}
       {% endif %}
 
       {% if page.tags %}
-      {% for tag in page.tags %}
-      <meta content="{{ tag }}" property="article:tag">
-      {% endfor %}
+        {% for tag in page.tags %}
+            {% for t in site.tags %}
+                {% if t.name == tag %}
+                    <meta content="{{ t.title }}" property="article:tag">
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
       {% endif %}
 
       <!-- Font awesome icons -->
