@@ -16,8 +16,6 @@ layout: default
 <hr/>
 {% include tags.html %}
 
-{% include comments.html %}
-
 {% assign hasSimilar = '' %}
 {% for post in site.posts  %}
     {% assign postHasSimilar = false %}
@@ -45,6 +43,8 @@ layout: default
         </ul>
     </div>
 {% endif %}
+<hr/>
+{% include comments.html %}
 
 <div class="PageNavigation">
     {% if page.previous.url %}
