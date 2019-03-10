@@ -51,6 +51,10 @@ a.footnote {
   list-style: circle;
   margin-bottom: 15px;
 }
+div.language image {
+  margin: 0 5px 0 5px;
+  width: 30px;
+}
 
 /* Layout */
 .main-layout {
