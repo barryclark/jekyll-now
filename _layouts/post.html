@@ -44,6 +44,8 @@ layout: default
 </div>
 {% endif %}
 
+{% include comments.html %}
+
 <div class="PageNavigation">
     {% if page.previous.url %}
     <a class="prev" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
