@@ -12,12 +12,6 @@
       <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
       <meta content="{{ site.title }}" property="og:site_name">
 
-      {% if page.title %}
-        <meta name="keywords" content="{{ page.title }},{% for t in page.tags %}{{ t.title }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
-      {% else %}
-        <meta name="keywords" content="dev, devloper, spring, oop, developer philosophy" />
-      {% endif %}
-
       {% if page.noindex %}
         <meta name="robots" content="noindex">
       {% endif %}
@@ -57,14 +51,23 @@
         {% endfor %}
       {% endif %}
 
+      {% capture pageTags %}{% endcapture %}
+
       {% if page.tags %}
         {% for tag in page.tags %}
             {% for t in site.tags %}
                 {% if t.name == tag %}
                     <meta content="{{ t.title }}" property="article:tag">
+                    {% capture pageTags %}{{t.title}}, {{pageTags}}{% endcapture %}
                 {% endif %}
             {% endfor %}
         {% endfor %}
+      {% endif %}
+
+      {% if page.title %}
+        <meta name="keywords" content="{{ page.title }},{{ pageTags }}" />
+      {% else %}
+        <meta name="keywords" content="dev, devloper, spring, oop, developer philosophy" />
       {% endif %}
 
       <!-- Font awesome icons -->
