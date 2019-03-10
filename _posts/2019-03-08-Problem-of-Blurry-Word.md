@@ -270,6 +270,7 @@ concise의 예를 보자. 이 단어를 '간결한', '간명한', '명료한' �
 
 5. 포스팅은 한글제목과 함께 파일명(+링크 주소)으로 쓰는 영문제목을 붙이는데, 연습삼아 나름 여러가지로 신경쓰고 있다.
 
+===
+[^1]: [popit - 흔한-프로그래머의-작명에-대한-사뭇-진지한-이야기(안영회)](https://www.popit.kr/%ED%9D%94%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%9D%98-%EC%9E%91%EB%AA%85%EC%97%90-%EB%8C%80%ED%95%9C-%EC%82%AC%EB%AD%87-%EC%A7%84%EC%A7%80%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0/), [popit - 상태와-이벤트라는-모호한-말이-낳은-결과-찾아내기(안영회)](https://www.popit.kr/%EC%83%81%ED%83%9C%EC%99%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%9D%BC%EB%8A%94-%EB%AA%A8%ED%98%B8%ED%95%9C-%EB%A7%90%EC%9D%B4-%EB%82%B3%EC%9D%80-%EA%B2%B0%EA%B3%BC-%EC%B0%BE%EC%95%84%EB%82%B4%EA%B8%B0/) 사실 stackoverflow만 찾아봐도 매우 흔한 문제다.
 
-[^1][popit - 흔한-프로그래머의-작명에-대한-사뭇-진지한-이야기(안영회)](https://www.popit.kr/%ED%9D%94%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%9D%98-%EC%9E%91%EB%AA%85%EC%97%90-%EB%8C%80%ED%95%9C-%EC%82%AC%EB%AD%87-%EC%A7%84%EC%A7%80%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0/), [popit - 상태와-이벤트라는-모호한-말이-낳은-결과-찾아내기(안영회)](https://www.popit.kr/%EC%83%81%ED%83%9C%EC%99%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%9D%BC%EB%8A%94-%EB%AA%A8%ED%98%B8%ED%95%9C-%EB%A7%90%EC%9D%B4-%EB%82%B3%EC%9D%80-%EA%B2%B0%EA%B3%BC-%EC%B0%BE%EC%95%84%EB%82%B4%EA%B8%B0/) 사실 stackoverflow만 찾아봐도 매우 흔한 문제다.
 [^2]: 해당 책은 한글로 두번 번역되어 출판되었다. 여기서 참조한 서적은 2017년 재판된 서적이나, 초판은 다른 제목으로 번역/출판된 것으로 알고 있다.
