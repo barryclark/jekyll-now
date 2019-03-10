@@ -20,3 +20,17 @@ date: 2019-03-10
   * Should have/Could have + p.p: nên xảy ra, có thể đã xảy ra, nhưng không xảy ra.
   * Use to/Would: thói quen trong quá khứ nay đã không còn.
   
+ **Unit 2: Tenses**
+ * Thì hiện tại: 
+   * Thì hiện tại đơn giản: nói về thói quen, sở thích, những điều hiển nhiên.
+   * Hiện tại tiếp diễn: hành động tức thời.
+   * Hiện tại tiếp diễn: hành động xảy ra trong quá khứ có kết quả ở hiện tại. Thường đi chung với *just, yet, for, since, ever, never, first time, second time, this week*.
+ * Thì quá khứ:
+   * Quá khứ đơn: hành động đã kết thúc trong quá khứ.
+   * Quá khứ tiếp diễn: hành động tức thời trong quá khứ.
+   * Quá khứ hoàn thành: hành động xảy ra trước một thời điểm nhất định trong quá khứ.
+ * Thì tương lai: sử dụng Will và những từ khác cho nghĩa tương lai.
+   * Sử dụng *will* cho quyết định tức thời.
+   * Sử dụng *be going to* cho kế hoạch đã lập trước.
+   * Sử dụng *Thì hiện tại đơn* thay cho *Thì tương lai đơn* mệnh đề trạng từ theo sau bởi *if, the moment, when*. 
+  
