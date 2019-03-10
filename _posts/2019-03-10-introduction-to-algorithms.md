@@ -16,7 +16,9 @@ date: 2019-03-10
 
 **Unit 1: Introduction**
 1. Algorithmic thinking, peak finding
-  * ksjfsjdosdjof
+
+<p>If you want to mark something as code, indent it by 4 spaces.</p>
+ 
 2. Models of computation, Python cost model, document distance
 
 **Unit 2: Sorting and Trees**
