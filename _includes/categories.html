@@ -6,6 +6,7 @@
             {% if c.name == category %}
                 {% unless isFirst %}, {% endunless %}
                 <a href="/category/{{ c.name }}">{{ c.title }}</a>
+                {% assign isFirst = false %}
             {% endif %}
         {% endfor %}
     {% endfor %}
