@@ -1,4 +1,4 @@
-{% unless useShareButton %}
+{% if useShareButton != false %}
     {% assign useShareButton = true %}
-{% endunless %}
-<div class="fb-like" data-href="{{ site.url }}{{ post.url }}" data-width="50" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="{{ useShareButton }}"></div>
+{% endif %}
+<div class="fb-like" data-href="{{ site.url }}{{ post.url }}" data-width="50" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="{{ useShareButton }}"></div>
