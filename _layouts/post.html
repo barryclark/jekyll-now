@@ -9,6 +9,7 @@ layout: default
 <span class="time">{{ page.date | date_to_string }}</span>
 &raquo;
 {% include categories.html %}
+{% assign refererUri = {{ site.url }} | append: {{ page.url }} %}}
 {% include fb_buttons.html %}
 <hr/>
 <div class="content">

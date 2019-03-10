@@ -1,5 +1,6 @@
 <li>
     {% assign useShareButton = false %}
     <a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i>
+    {% assign refererUri = {{ site.url }} | append: {{ post.url }} %}}
     {% include fb_buttons.html %}
 </li>

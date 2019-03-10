@@ -1,5 +1,4 @@
 {% if useShareButton != false %}
     {% assign useShareButton = true %}
 {% endif %}
-<span>{{ site.url }}</span><span>{{ post.url }}</span>
-<div class="fb-like" data-href="{{ site.url }}{{ post.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="{{ useShareButton }}"></div>
+<div class="fb-like" data-href="{{ refererUri }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="{{ useShareButton }}"></div>
