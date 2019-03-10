@@ -33,17 +33,12 @@ layout: default
                     </div>
                     <h4>{{ post_year }}</h4>
                     <div class="list-group">
+                        <ul class="posts">
                 {% endif %}
             {% endif %}
-
-            <ul class="posts">
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a> &raquo;
-                    <i><span>{{ post.date | date_to_string }}</span></i>
-                </li>
-            </ul>
-
+            {% include post_link.html %}
             {% if forloop.last %}
+                    </ul>
                 </div>
             {% endif %}
         {% endif %}
