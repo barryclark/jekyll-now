@@ -3,4 +3,5 @@
     <a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i>
     {% capture refererUri %}{{ site.url }}{{ post.url }}{% endcapture %}
     {% include fb_buttons.html %}
+    <hr/>
 </li>
