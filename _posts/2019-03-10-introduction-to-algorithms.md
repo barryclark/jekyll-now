@@ -14,8 +14,21 @@ date: 2019-03-10
 
 **Bài tập**: Có 7 bài tập gồm: bài tập lập trình bằng Python và bài tập lý thuyết.
 
-**1. Unit 1: Introduction **
-**2. Unit 2 **
+**Unit 1: Introduction**
+
+**Unit 2: Sorting and Trees**
+
+**Unit 3: Hashing**
+
+**Unit 4: Numerics**
+
+**Unit 5: Graphs**
+
+**Unit 6: Shortest Paths**
+
+**Unit 7: Dynamic Programming**
+
+**Unit 8: Advanced Topics**
 
 
 
