@@ -43,6 +43,10 @@ a.footnote {
   text-decoration: underline;
 }
 
+.fb-like {
+  float: right;
+}
+
 /* Layout */
 .main-layout {
   background: #fff;
