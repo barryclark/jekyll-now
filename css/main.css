@@ -47,6 +47,11 @@ a.footnote {
   float: right;
 }
 
+.posts li {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 /* Layout */
 .main-layout {
   background: #fff;
@@ -141,33 +146,6 @@ div.tags a {
   text-align: left;
 }
 
-/* Social Icons */
-.social{
-  display: block;
-  margin: 10px 0;
-}
-.social ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.social ul li {
-  display: inline-block;
-  margin: 0 5px;
-}
-.social li a {
-  font-size: 16px;
-  color: #969394;
-}
-.social li a:hover {
-  color: #6D6D6D;
-}
-
-.share-page {
-  padding: 10px 10px 5px;
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
-}
 .post-content img,
 .content img {
   max-width: 100%
