@@ -38,7 +38,7 @@ baseurl: ""
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v1.2.0
+version: v3.7.4
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -55,14 +55,10 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
 markdown: kramdown
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-paginate
   - jekyll-gist
 
 # Exclude these files from your production _site
@@ -100,3 +96,6 @@ defaults:
       type: categories
     values:
       layout: posts_by_category
+  - scope:
+      path: 'en/:path'
+      lang: 'en_us'
