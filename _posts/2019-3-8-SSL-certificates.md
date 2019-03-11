@@ -26,7 +26,7 @@ What I need to do to ensure the trust is to go to the computer that is mine, let
 
 But who gives certificates? The certificate must be created by someone who you trust, to make sure that those things are valid. In the internet world, there are a bunch of companies that issue these certificates, and some of them are trusted by the browsers. Here's a snapshot from my Chrome.
 
-![alt text](https://vladcozma.github.io/blog/images/ssl/ssl-02.jpg "Chrome certificates")  
+![alt text](https://vladcozma.github.io/blog/images/ssl/ssl-03.jpg "Chrome certificates")  
 
 But now the mistery deepens, as you'll see that these certificates are personal, intermediate or trusted root.
 
