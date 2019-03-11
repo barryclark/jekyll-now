@@ -24,8 +24,8 @@ Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Sem
 - February 25th:
 - March 3rd: No JC - Cosyne
 - March 11th: Giancarlo La Camera
-- March 18th:
-- March 25th:
+- March 18th: No JC - spring break
+- March 25th: Yuan Zhao
 - April 1st: No JC - Prof. Tononi's lecutre
 - April 8th: Josue Nassar
 - April 15th: Junyan Song
@@ -34,7 +34,7 @@ Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Sem
 - May 6th: Tong Liang
 - May 13th: Yanliang Shi
 - May 20th: Sima Mofakham
-- October 8th: No JC - Fall Break
+
 
 You can pick or [**suggest papers**](https://www.google.com/url?q=https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/edit?usp%3Dsharing&sa=D&ust=1472068897083000&usg=AFQjCNF5f_dZMloe4l3jWOm_mhxe7utbqw) to be discussed.
 
