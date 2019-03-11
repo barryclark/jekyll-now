@@ -11,3 +11,7 @@ Become a Packeter to make the web safer. Get rewarded for protecting the privacy
 ### Contact PacketStream
 
 [support@packetstream.io](mailto:support@packetstream.io)
+
+### PacketStream Communities
+
+{% include svg-icons.html %}
