@@ -28,4 +28,6 @@ But who gives certificates? The certificate must be created by someone who you t
 
 ![alt text](https://vladcozma.github.io/blog/images/ssl/ssl-02.jpg "Chrome certificates")  
 
-But now the mistery deepens, as you'll see strange 
+But now the mistery deepens, as you'll see that these certificates are personal, intermediate or trusted root.
+
+
