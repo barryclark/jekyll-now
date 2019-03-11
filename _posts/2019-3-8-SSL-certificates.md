@@ -1,6 +1,11 @@
 ---
 layout: post
-title: Understand SSL certificates (root, intermediate, semi-intemediate, partial, ....)
+title: Understand SSL certificates (root, intermediate, semi-intermediate, partial, ....)
 ---
 
-I needed to ensure trust between two servers and I need corporate certificates to do that, and first I had to understand what it means.
+### Problem 
+I need to ensure trust between two servers and I need corporate certificates to do that.
+
+#### What is SSL 
+
+![alt text](https://vladcozma.github.io/blog/images/ssl/ssl-01.jpg "connection 1")
