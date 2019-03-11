@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+PacketStream is the world's first peer-to-peer privacy marketplace. Check us out at [https://packetstream.io](https://packetstream.io)
 
-### More Information
+Become a Packeter to make the web safer. Get rewarded for protecting the privacy of yourself and others.
 
-A place to include any other types of information that you'd like to include about yourself.
+### Contact PacketStream
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[support@packetstream.io](mailto:support@packetstream.io)
