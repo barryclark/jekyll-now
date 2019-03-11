@@ -104,8 +104,9 @@ div.col-sm-3 strong {
   color: #4A4A4A;
   font-weight: normal;
 }
-div.col-sm-3 div.language {
+div.language {
     margin-top: 15px;
+    visibility: hidden;
 }
 div.col-sm-3 img.flag {
     margin: 0 5px 0 5px;
