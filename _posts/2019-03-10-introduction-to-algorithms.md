@@ -16,7 +16,13 @@ date: 2019-03-10
 
 **Unit 1: Introduction**
 
+Định nghĩa thuật toán:
+* Là một thủ tục tính toán tường minh nhận đầu vào là một vài giá trị hoặc một tập các giá trị và trả về đầu ra cũng là một vài giá trị hoặc một tập các giá trị.
+* Là một dãy các bước tính toán đầu ra từ đầu vào.
+* Là công cụ để giải những bài toán tường minh.
+* Phát biểu của bài toán xác định mối quan hệ giữa đầu vào và đầu ra. Còn thuật toán thì mô tả thủ tục tính toán cụ thể để đạt được mối quan hệ đó.
 
+Một trường hợp cụ thể của bài toán bao gồm đầu vào dùng để tìm ra lời giải cho bài toán sao cho đầu vào này thỏa mãn bất kì ràng buộc nào được nêu ra trong phát biểu của bài toán.
 
 **Unit 2: Sorting and Trees**
 
