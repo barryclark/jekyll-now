@@ -73,7 +73,7 @@ On one occasion the Blessed One was living at the Saddle Mountain State park, ne
 
 {% assign speculativeviews = page.matikas.speculativeviews %}
 Then, while the lay follower Scott was alone in meditation, the following thought arose in his mind:
-"These speculative views have beenleft undeclared by the Blessed One, set aside and rejected by him, namely: {% for proposition in speculativeviews %}'{{proposition.affirmative}}' and '{{proposition.negative}}'{% if forloop.last %}.{% else %};{% endif %}{% endfor %}  
+"These speculative views have been left undeclared by the Blessed One, set aside and rejected by him, namely: {% for proposition in speculativeviews %}'{{proposition.affirmative}}' and '{{proposition.negative}}'{% if forloop.last %}.{% else %};{% endif %}{% endfor %}  
 The Blessed One does not declare these to me, and I do not approve of and accept the fact that he does not declare these to me, so I shall go to the Blessed One and ask him the meaning of this.
 If he declares to me {% for proposition in speculativeviews %}either '{{proposition.affirmative}}' or '{{proposition.negative}}', {% endfor %} then I will lead the holy life under him; if he does not declare these to me, then I will abandon the training and return to the low life."
 
@@ -98,7 +98,7 @@ Then, when it was evening, the lay follower Scott rose from meditation and went 
 
 "And what have I declared? 'This is suffering' -- I have declared. 'This is the origin of suffering' -- I have declared. 'This is the cessation of suffering' -- I have declared. 'This is the path leading to the cessation of suffering' -- I have declared.
 
-"Why have I declared that? Because it is beneficial, it belongs to the fundamentals of the holy life, it leads to disenchantment, to dispassion, to cessation, to peace, to direct knowledge, to enlightenment, to Nibbana. That is why I have declared it."
+"Why have I declared that? Because it is beneficial, it belongs to the fundamentals of the holy life, it leads to disenchantment, to dispassion, to cessation, to peace, to direct knowledge, to enlightenment, to Nibbana. That is why I have declared it.
 
 "Therefore, Scott, remember what I have left undeclared as undeclared, and remember what I have declared as declared.
 
