@@ -26,7 +26,11 @@ Một trường hợp cụ thể của bài toán bao gồm đầu vào dùng đ
 
 Nhiều chương trình sử dụng sắp xếp như là một bước trung gian, vậy nên sắp xếp chính là một công việc cơ bản trong khoa học máy tính. Có rất nhiều thuật toán sắp xếp, vậy đâu là thuật toán tốt nhất cho một ứng dụng nhất định dựa trên số lượng phần tử cần được sắp xếp, các phần tử đã được sắp xếp đến mức độ nào, giá trị của các phần tử, kiến trúc máy tính, kiểu của thiết bị lưu trữ (bộ nhớ chính, đĩa, băng).
 
-Một thuật toán được gọi là đúng nếu như nó dừng 
+Một thuật toán được gọi là đúng nếu ứng với mỗi đầu vào, nó dừng và trả về một đầu ra chính xác tương ứng. Một thuật toán là không đúng nếu như nó không thể đáp ứng một trong các yêu cầu trên. Tuy nhiên những thuật toán không đúng có thể hữu dụng nếu ta biết cách kiểm soát tỉ lệ sai sót của nó. Tuy nhiên, thông thường ta chỉ quan tâm đến những thuật toán đúng.
+
+Thuật toán có thể là một chương trình máy tính hay thậm chí là một mẫu thiết kế phần cứng. Yêu cầu duy nhất là nó phải cung cấp một mô tả chính xác 
+
+
 
 **Unit 2: Sorting and Trees**
 
