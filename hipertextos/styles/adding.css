@@ -33,7 +33,10 @@ main {padding-bottom:0!important;}
     padding-bottom:6px;padding-top:6px;}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .06em;text-align: center;color:var(--color-hardgrey);}
 #web-oferta p {max-width:30%;margin-left:35%;}
-
+#web-music {
+    background-image: url("/img/home.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
+    background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;
+}
 img.front-responsive  {width:450px;margin-top:68px;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
