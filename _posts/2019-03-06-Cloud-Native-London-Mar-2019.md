@@ -53,7 +53,7 @@ And also: shoutout to the guy who came all the way from New Zealand for a weddin
 
 The next meetup is on Wednesday 3rd April, and joining us are speakers from Airbus, Bristol University and Component Soft. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/257404686/) Don’t forget to sign up directly with CodeNode as we get closer to the date. 
 
-![Socks](https://user-images.githubusercontent.com/4482381/28546112-8908b356-7097-11e7-8104-957eb3ad6b10.png)
+![Socks](https://user-images.githubusercontent.com/127370/29047271-dc139758-7b7f-11e7-9a91-e92bef612fa7.jpg)
 
 Also, next month comes with a little challenge! We’re always seeking to get different folks to come along to our meetups, so if you can bring along a guest (or encourage someone to come) to the April meetup who is from an underrepresented group, you’ll both get some cool socks!
 
