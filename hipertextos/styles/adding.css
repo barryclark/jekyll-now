@@ -83,7 +83,9 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #layout h3 u { font-weight:300; letter-spacing: 0em}
 
 /* Covers */
-#covers {color: var(--color-grey);}
+#covers a {color: var(--color-grey);text-decoration:none;}
+#covers .cover-links {padding-top:16px;margin-top:-30px;padding-bottom:16px;border:thin solid transparent;display:block;border-radius:6px;}
+#covers .cover-links:hover {border:thin solid rgba(60,60,60,.69);display:block;}
 #covers img {width: 13%;margin-bottom:1.2em; }
 #covers article {border:0;}
 #page #covers article {text-shadow:1px 1px 3px rgba(0,0,0,.12);}
@@ -235,3 +237,4 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
     #page-header.cover {background-image: url("/img/home_m.jpg");background-size: 100% auto;background-position: fixed !important;}
 	#icons a {width:18%;padding:8px;}
 }
+
