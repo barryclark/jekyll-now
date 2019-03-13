@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is a website to report on what I've been working on in the last few weeks.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+To be filled.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[mfidino@lpzoo.org](mailto:mfidino@lpzoo.org)
