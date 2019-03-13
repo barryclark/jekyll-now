@@ -36,6 +36,8 @@ MCAMC brings an exciting new type of math competition to the middle school audie
 
 **February 1, 2019:** We apologize for the delay in releasing sample questions. Sample questions will be released at 4PM EST on February 2, 2019.
 
+**March 10, 2019:** Registration deadline has been extended to March 15th!
+
 ## Important Dates
 
 <div class="mcamc-table">
