@@ -50,7 +50,7 @@ MCAMC brings an exciting new type of math competition to the middle school audie
   </tr>
   <tr>
     <td>Registration Closes</td>
-    <td>March 8, 2019</td>
+    <td>March 15, 2019</td>
   </tr>
   <tr>
     <td>Payment Received By</td>
