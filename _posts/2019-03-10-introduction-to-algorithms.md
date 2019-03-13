@@ -28,7 +28,7 @@ Nhiều chương trình sử dụng sắp xếp như là một bước trung gia
 
 Một thuật toán được gọi là đúng nếu ứng với mỗi đầu vào, nó dừng và trả về một đầu ra chính xác tương ứng. Một thuật toán là không đúng nếu như nó không thể đáp ứng một trong các yêu cầu trên. Tuy nhiên những thuật toán không đúng có thể hữu dụng nếu ta biết cách kiểm soát tỉ lệ sai sót của nó. Tuy nhiên, thông thường ta chỉ quan tâm đến những thuật toán đúng.
 
-Thuật toán có thể là một chương trình máy tính hay thậm chí là một mẫu thiết kế phần cứng. Yêu cầu duy nhất là nó phải cung cấp một mô tả chính xác 
+Thuật toán có thể là một chương trình máy tính hay thậm chí là một mẫu thiết kế phần cứng. Yêu cầu duy nhất là nó phải cung cấp một mô tả chính xác về thủ tục tính toán.
 
 
 
