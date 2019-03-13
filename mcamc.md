@@ -32,11 +32,12 @@ meta: |
 MCAMC brings an exciting new type of math competition to the middle school audience — one that involves working together as a team with your friends. In contrast to other competitions that only involve working independently, get ready for a day filled with collaboration and action! 
 
 ## Recent Updates
+**March 10, 2019:** Registration deadline has been extended to March 15th!
+
 **February 2, 2019:** Sample questions are released! Please scroll down the Sample Questions section to try them.
 
 **February 1, 2019:** We apologize for the delay in releasing sample questions. Sample questions will be released at 4PM EST on February 2, 2019.
 
-**March 10, 2019:** Registration deadline has been extended to March 15th!
 
 ## Important Dates
 
