@@ -22,8 +22,7 @@ header {z-index:1!Important;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 main {padding-bottom:0!important;}
-#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index:2;
-	min-height:71vh;padding-top:10em;}
+#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index:2;background-size: cover fixed;background-repeat: no-repeat;}
 #page-main.darkmode {background:#111;}
 #page-main.darkmode em a {background:#111;}
 #ilu-oferta {height:80vh;background-image: url("/img/ilu.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
@@ -238,7 +237,3 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
     #page-header.cover {background-image: url("/img/home_m.jpg");background-size: 100% auto;background-position: fixed !important;}
 	#icons a {width:18%;padding:8px;}
 }
-
-
-
-
