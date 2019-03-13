@@ -24,6 +24,10 @@ date: 2019-03-10
 
 Một trường hợp cụ thể của bài toán bao gồm đầu vào dùng để tìm ra lời giải cho bài toán sao cho đầu vào này thỏa mãn bất kì ràng buộc nào được nêu ra trong phát biểu của bài toán.
 
+Nhiều chương trình sử dụng sắp xếp như là một bước trung gian, vậy nên sắp xếp chính là một công việc cơ bản trong khoa học máy tính. Có rất nhiều thuật toán sắp xếp, vậy đâu là thuật toán tốt nhất cho một ứng dụng nhất định dựa trên số lượng phần tử cần được sắp xếp, các phần tử đã được sắp xếp đến mức độ nào, giá trị của các phần tử, kiến trúc máy tính, kiểu của thiết bị lưu trữ (bộ nhớ chính, đĩa, băng).
+
+Một thuật toán được gọi là đúng nếu như nó dừng 
+
 **Unit 2: Sorting and Trees**
 
 **Unit 3: Hashing**
