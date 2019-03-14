@@ -104,7 +104,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 .nextt {min-width:41px;height:45px;margin:0px;}
 .nextt.to-up {transform: rotate(180deg)!important; padding-top:5px;}
 
-.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.svg") ;min-height:650px;margin-top:-60px;mask-image: url("/hipertextos/svg/arrow.svg") ;
+div.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.svg") ;max-width:100%;min-height:100%;height:680px;margin-top:-60px;mask-image: url("/hipertextos/svg/arrow.svg") ;
 background-image: url("/img/home.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
     background-size: cover;background-repeat: no-repeat;
 }
