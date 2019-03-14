@@ -95,6 +95,10 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #covers h4 {margin:0px;line-height:1em;}
 #fronters img {min-width:110px;}
 #fronters p {margin: 0px;min-width:100%;}
+#fronters-brand svg {max-width:72px;}
+
+.nextt.to-up {transform: rotate(180deg) }
+.nextt {min-width:72px;min-height:72px;height:100px;width:100px;}
 
 #matte-demo {background-image: url("/img/texture/dark_grey.png");
 background-size:256px 256px;background-repeat: repeat;image-rendering: crisp-edges;
