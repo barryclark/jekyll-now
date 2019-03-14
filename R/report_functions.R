@@ -64,16 +64,19 @@ report_summary <- function(x = NULL, next_meeting = NULL){
   return(list(project = by_project,
               client = by_client,
               weeks_since = weeks_since,
-              time_range = trange))
+              time_range = trange,
+              next_meeting = next_meeting))
 }
 
-plot_projects <- function(x, filename = "project_plot.tiff"){
+plot_projects <- function(x, filename = "project_plot.tiff",
+                          next_meeting = NULL){
   if(!all(colnames(x) %in% c("project_name", "client_category", "prop_time"))){
     err <- paste0("\nWrong table supplied to ",
                   crayon::red("plot_projects()","."))
     stop(err)
   }
-  tiff(paste0("./images/",filename), height = 7, width = 7,
+  tiff(paste0("./images/",next_meeting, "_",filename),
+       height = 7, width = 7,
        units = "in", res = 400, compression = "lzw")
   par(mar =c(6,12,0.5,1))
 
@@ -122,13 +125,15 @@ plot_projects <- function(x, filename = "project_plot.tiff"){
 }
 
 
-plot_clients <- function(x, filename = "client_plot.tiff"){
+plot_clients <- function(x, filename = "client_plot.tiff",
+                         next_meeting = NULL){
   if(!all(colnames(x) %in% c("client_name","client_category", "prop_time"))){
     err <- paste0("\nWrong table supplied to ",
                   crayon::red("plot_clients()","."))
     stop(err)
   }
-  tiff(paste0("./images/",filename), height = 7, width = 7,
+  tiff(paste0("./images/",next_meeting, "_",filename),
+       height = 7, width = 7,
        units = "in", res = 400, compression = "lzw")
   par(mar =c(6,12,0.5,1))
 
@@ -175,13 +180,14 @@ plot_clients <- function(x, filename = "client_plot.tiff"){
 
 }
 
-plot_weeks <- function(x, filename = "weeks_since.tiff"){
+plot_weeks <- function(x, filename = "weeks_since.tiff",
+                       next_meeting = NULL){
   if(!all(colnames(x) %in% c("project_name","client_name", "last_touch"))){
     err <- paste0("\nWrong table supplied to ",
                   crayon::red("plot_weeks()","."))
     stop(err)
   }
-  tiff(paste0("./images/",filename), height = 7, width = 7,
+  tiff(paste0("./images/",next_meeting, "_",filename), height = 7, width = 7,
        units = "in", res = 400, compression = "lzw")
   par(mar =c(6,12,0.5,1))
 
@@ -232,13 +238,13 @@ plot_weeks <- function(x, filename = "weeks_since.tiff"){
 plot_all <- function(x = NULL){
   cat(cli::rule(center = " * GENERATING FIGURES * ", col = "purple"),"\n")
   cat(crayon::cyan( cli::symbol$bullet," Time spent per client:      "))
-  plot_clients(x$client)
+  plot_clients(x$client, next_meeting = x$next_meeting)
   cat(crayon::green( cli::symbol$tick), "\n")
   cat(crayon::cyan( cli::symbol$bullet," Time spent per project:     "))
-  plot_projects(x$project)
+  plot_projects(x$project, next_meeting = x$next_meeting)
   cat(crayon::green( cli::symbol$tick), "\n")
   cat(crayon::cyan( cli::symbol$bullet," Time since project visited: "))
-  plot_weeks(x$weeks_since)
+  plot_weeks(x$weeks_since, next_meeting = x$next_meeting)
   cat(crayon::green( cli::symbol$tick), "\n")
 
 
