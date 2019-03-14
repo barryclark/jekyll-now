@@ -36,12 +36,12 @@ main {padding-bottom:0!important;}
 #web-oferta p {max-width:30%;margin-left:35%;}
 #web-music {
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
-    background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;
+    background-size: cover;background-repeat: no-repeat;border: none;border-top:5px solid var(--color-hardgrey);border-bottom:5px solid var(--color-hardgrey);
+    color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;
 }
-#web-branding { 
-    box-shadow:inset 12px 12px 18px rgba(15,15,15,1), inset 2px 2px 600px rgba(15,15,15,1);
+#web-branding {
     background-image: url("/img/homed.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
-    background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;
+    background-size: cover;background-repeat: no-repeat;border: none; color: var(--color-white);border-top:5px solid var(--color-hardgrey);border-bottom:5px solid var(--color-hardgrey);letter-spacing: .06em;overflow: hidden;text-align: center;
 }
 img.front-responsive  {width:450px;margin-top:68px;}
 .text-left {text-align:left;}
@@ -101,7 +101,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #fronters img {min-width:110px;}
 #fronters p {margin: 0px;min-width:100%;}
 #fronters-brand svg {max-width:38px;height:85px;}
-#fronters-brand section {border-top:thin solid rgba(40,40,40,.69);border-bottom:thin solid rgba(40,40,40,.69);padding:18px 0px 18px 0px;}
+#fronters-brand section {padding:18px 0px 18px 0px;}
 #fronters-brand .imagens {width:100%;padding:2px;overflow:hidden;border-radius:36px;}
 #fronters-brand h4, #fronters-brand p {text-align:left;}
 #fronters-brand article a {margin:0px!important;padding:0px!important;}
