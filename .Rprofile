@@ -8,6 +8,7 @@ source("./R/check_functions.R")
 source("./R/scrape_functions.R")
 source("./R/utility_functions.R")
 source("./R/report_functions.R")
+source("./R/markdown_functions.R")
 
 # require magrittr package
 require("magrittr")
