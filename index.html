@@ -16,13 +16,13 @@ matte-demo:
 				<hr class="lines">
 				<div>
 					<h2>Web</h2>
-					<img src="/img/html5css3.png" class="front-responsive" rel="llenguatge Html5 i Css3">
-					<hr>
 					<img src="/img/responsive.png" class="front-responsive" rel="imatge relativa als diferents tamanys de pantalla">
 					<hr>
 					{% if site.web %}
 						<p>{{ site.web }}</p>
 					{% endif %}
+					<hr>
+					<img src="/img/html5css3.png" class="front-responsive" rel="llenguatge Html5 i Css3">
 					<hr>
 					<div id="fronters" class="thumb-10 pushed-1">
 						<div class="thumb-3">
@@ -51,11 +51,10 @@ matte-demo:
 				<hr class="lines">
 				<div>
 					<h2>Branding</h2>
-					<br>
 					{% if site.web %}
 						<p>{{ site.brand }}</p>
 					{% endif %}
-					<br>
+					<hr>
 					<div id="fronters-brand" class="thumb-8 pushed-2">
 						<div class="thumb-4">
 							<span class="icon-bars"></span>
@@ -96,11 +95,11 @@ matte-demo:
 				<hr class="lines">
 				<div>
 					<h2>Grafísmes</h2>
-					<hr>
 					{% if site.web %}
 						<p>{{ site.grafics }}</p>
 					{% endif %}
 					<br>
+					
 					<hr>			
 					<em><a class="next-top" href="#web-music"><img class="nextt" src="hipertextos/svg/arrow.svg"></a></em>
 				</div>
@@ -109,11 +108,11 @@ matte-demo:
 				<hr>
 				<div>
 					<h2>Música</h2>
-					<hr>
 					{% if site.web %}
 						<p>{{ site.music }}</p>
 					{% endif %}
 					<br>
+					
 					<hr>
 					<em><a class="next-top" href="#page-header"><img class="nextt to-up" src="hipertextos/svg/arrow.svg"></a></em>
 				</div>
