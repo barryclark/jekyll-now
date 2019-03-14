@@ -18,4 +18,4 @@ Here are some of the top reasons why you might benefit from using residential IP
 
 This is just the tip of the iceberg. There are hundreds of use cases for PacketStream.
 
-Sign up today to try it out. https://packetstream.io/signup(https://packetstream.io/signup)
+Sign up today to try it out. [https://packetstream.io/signup](https://packetstream.io/signup)
