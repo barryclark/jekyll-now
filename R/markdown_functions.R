@@ -30,9 +30,8 @@ add_to_github <- function(x = NULL){
    cat(crayon::cyan( cli::symbol$bullet," Generating markdown file: "))
    make_md(x = x)
    cat(crayon::green( cli::symbol$tick), "\n")
-   cat(crayon::cyan( cli::symbol$bullet," Pushing to github:        "))
+   cat(crayon::cyan( cli::symbol$bullet," Pushing to github:\n"))
    add_to_github(x=x)
-   cat(crayon::green('   Pushed\n'))
    cat(cli::rule(center = " * TIME REPORT COMPLETE * ", col = "green"),"\n")
 
 }
