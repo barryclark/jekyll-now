@@ -68,16 +68,16 @@ report_summary <- function(x = NULL, next_meeting = NULL){
               next_meeting = next_meeting))
 }
 
-plot_projects <- function(x, filename = "project_plot.tiff",
+plot_projects <- function(x, filename = "project_plot.jpg",
                           next_meeting = NULL){
   if(!all(colnames(x) %in% c("project_name", "client_category", "prop_time"))){
     err <- paste0("\nWrong table supplied to ",
                   crayon::red("plot_projects()","."))
     stop(err)
   }
-  tiff(paste0("./images/",next_meeting, "_",filename),
+  jpeg(paste0("./images/",next_meeting, "_",filename),
        height = 7, width = 7,
-       units = "in", res = 400, compression = "lzw")
+       units = "in", res = 250)
   par(mar =c(6,12,0.5,1))
 
   if(max(x$prop_time) < 0.5){
@@ -125,16 +125,16 @@ plot_projects <- function(x, filename = "project_plot.tiff",
 }
 
 
-plot_clients <- function(x, filename = "client_plot.tiff",
+plot_clients <- function(x, filename = "client_plot.jpg",
                          next_meeting = NULL){
   if(!all(colnames(x) %in% c("client_name","client_category", "prop_time"))){
     err <- paste0("\nWrong table supplied to ",
                   crayon::red("plot_clients()","."))
     stop(err)
   }
-  tiff(paste0("./images/",next_meeting, "_",filename),
+  jpeg(paste0("./images/",next_meeting, "_",filename),
        height = 7, width = 7,
-       units = "in", res = 400, compression = "lzw")
+       units = "in", res = 250)
   par(mar =c(6,12,0.5,1))
 
   if(max(x$prop_time) < 0.5){
@@ -179,16 +179,16 @@ plot_clients <- function(x, filename = "client_plot.tiff",
   invisible(dev.off())
 }
 
-plot_category <- function(x, filename = "category_plot.tiff",
+plot_category <- function(x, filename = "category_plot.jpg",
                           next_meeting = NULL){
   if(!all(colnames(x) %in% c("client_name","client_category", "prop_time"))){
     err <- paste0("\nWrong table supplied to ",
                   crayon::red("plot_category()","."))
     stop(err)
   }
-  tiff(paste0("./images/",next_meeting, "_",filename),
+  jpeg(paste0("./images/",next_meeting, "_",filename),
        height = 7, width = 7,
-       units = "in", res = 400, compression = "lzw")
+       units = "in", res = 250)
   par(mar =c(6,12,0.5,1))
 
   x <- x %>%
@@ -238,15 +238,16 @@ plot_category <- function(x, filename = "category_plot.tiff",
 
   invisible(dev.off())
 }
-plot_weeks <- function(x, filename = "weeks_since.tiff",
+plot_weeks <- function(x, filename = "weeks_since.jpg",
                        next_meeting = NULL){
   if(!all(colnames(x) %in% c("project_name","client_name", "last_touch"))){
     err <- paste0("\nWrong table supplied to ",
                   crayon::red("plot_weeks()","."))
     stop(err)
   }
-  tiff(paste0("./images/",next_meeting, "_",filename), height = 7, width = 7,
-       units = "in", res = 400, compression = "lzw")
+  jpeg(paste0("./images/",next_meeting, "_",filename),
+       height = 7, width = 7,
+       units = "in", res = 250)
   par(mar =c(6,12,0.5,1))
 
   xmax <- as.numeric(ceiling(max(x$last_touch)/5)*5)

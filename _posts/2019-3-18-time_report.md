@@ -8,18 +8,18 @@ This is a summary of what I have done between 2019-03-04 and 2019-03-17.
 
 At the most broad scale, here is the proportion of time I have spent working across four different categories: for UWIN, for those in UWI, for those in the Conservation & Science department, and external collaborations.
 
-![category_plot]({{ site.baseurl}}/images/2019-3-18_category_plot.tiff)
+![_config.yml]({{ site.baseurl}}/images/2019-3-18_category_plot.jpg)
 
 Within each of these categories, I have worked with 9 clients. Split across these clients my last two weeks looked like:
 
-![client_plot]({{ site.baseurl}}/images/2019-3-18_client_plot.tiff)
+![_config.yml]({{ site.baseurl}}/images/2019-3-18_client_plot.jpg)
 
 I worked on 15 projects. My time split amongst them was:
 
-![project_plot]({{ site.baseurl}}/images/2019-3-18_project_plot.tiff)
+![_config.yml]({{ site.baseurl}}/images/2019-3-18_project_plot.jpg)
 
 Of the projects that I work on there are 11 that I believe will result in publication.
 
 Here is the last I have worked on each of these projects:
 
-![weeks_since]({{ site.baseurl}}/images/2019-3-18_weeks_since.tiff)
+![_config.yml]({{ site.baseurl}}/images/2019-3-18_weeks_since.jpg)
