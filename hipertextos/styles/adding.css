@@ -104,9 +104,9 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 .nextt {min-width:41px;height:45px;margin:0px;}
 .nextt.to-up {transform: rotate(180deg)!important; padding-top:5px;}
 
-div.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.png") ;max-width:480px;height:480px;margin-top:-30px;
+div.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.png") ;width:480px;height:480px;margin-top:-30px;
 background-image: url("/img/home.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
-    background-size: cover;background-repeat: no-repeat;
+    background-size: cover;background-repeat: no-repeat;z-index:-10;position:absolute;left:12%;
 }
 
 #matte-demo {background-image: url("/img/texture/dark_grey.png");
