@@ -67,6 +67,35 @@
     		});
 		});
   	</script>{% endif %}
+  	<script>
+		// Animations on scroll
+		// Create a window variable to set the scroll
+		var win = $(window);
+		// Create a variable for .anim
+		var variable1 = $('.animeonscroll');
+		var variable2 = $('#animeonscroll');
+		// Apply the animations on scroll
+		win.scroll(function(event) {
+		  variable1.each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+			  el.addClass('anm-moveFromLeftFade slow'); 
+			} else {
+			  el.removeClass('anm-moveFromLeftFade slow'); 
+			} 
+		  });
+		});
+		win.scroll(function(event) {
+		  variable2.each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+			  el.addClass('anm-moveFromRightFade slow'); 
+			} else {
+			  el.removeClass('anm-moveFromRightFade slow'); 
+			} 
+		  });
+		});
+	</script>
     {% include analytics.html %}
   </body>
 </html>
