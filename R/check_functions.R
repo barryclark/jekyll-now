@@ -3,10 +3,10 @@ check_clients <- function(clients = NULL){
   # check if the file exists, create if not.
   if(!file.exists("./Data/fidino_clients.csv")){
     # add a client_category
-    readr::write_csv(clients,"./Data/fidino_clients.csv")
+    readr::write_csv(clients,"./data/fidino_clients.csv")
   }
   # if it does exist, check to see if any new clients need to be added.
-  if(file.exists("./Data/fidino_clients.csv")){
+  if(file.exists("./data/fidino_clients.csv")){
     clients_csv <- readr::read_csv("./Data/fidino_clients.csv",
                                    col_types = list(
                                      client_id = readr::col_character(),
@@ -44,7 +44,7 @@ check_clients <- function(clients = NULL){
       clients_csv$client_category[to_fill] <- tmp_names
     }
 
-      readr::write_csv(clients_csv, "./Data/fidino_clients.csv")
+      readr::write_csv(clients_csv, "./data/fidino_clients.csv")
   }
   return(clients_csv)
     }

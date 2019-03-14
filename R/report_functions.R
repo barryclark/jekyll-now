@@ -7,14 +7,14 @@ report_summary <- function(x = NULL, next_meeting = NULL){
       stop("\n\nnext_meeting must be the format 'YYYY-m-d'.")
     }
   }
-  if(!file.exists("./Data/meeting_days.csv")){
+  if(!file.exists("./data/meeting_days.csv")){
     err <- paste0("\n", crayon::red('do_summary()'),
-                  " requires a 'meeting_days.csv' in the Data subfolder.\n",
+                  " requires a 'meeting_days.csv' in the data subfolder.\n",
                   "If meetings are always on a given day,\nuse ",
                   crayon::red('meeting_days()'), " to generate.")
     stop(err)
   } else {
-    days <- read.csv("./Data/meeting_days.csv") %>%
+    days <- read.csv("./data/meeting_days.csv") %>%
       dplyr::mutate_all(lubridate::ymd) %>%
       tibble::as_tibble(.)
   }
@@ -68,7 +68,7 @@ report_summary <- function(x = NULL, next_meeting = NULL){
 }
 
 plot_projects <- function(x, filename = "project_plot.tiff"){
-  if(!all(colnames(x) %in% c("project_name", "client_name", "prop_time"))){
+  if(!all(colnames(x) %in% c("project_name", "client_category", "prop_time"))){
     err <- paste0("\nWrong table supplied to ",
                   crayon::red("plot_projects()","."))
     stop(err)
