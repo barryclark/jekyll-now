@@ -38,6 +38,11 @@ main {padding-bottom:0!important;}
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
     background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;
 }
+#web-branding { 
+    box-shadow:inset 12px 12px 18px rgba(15,15,15,1), inset 2px 2px 600px rgba(15,15,15,1);
+    background-image: url("/img/homed.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
+    background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;
+}
 img.front-responsive  {width:450px;margin-top:68px;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
