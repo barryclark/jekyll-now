@@ -177,9 +177,67 @@ plot_clients <- function(x, filename = "client_plot.tiff",
          fill = plot_cols(), cex = 1.5)
 
   invisible(dev.off())
-
 }
 
+plot_category <- function(x, filename = "category_plot.tiff",
+                          next_meeting = NULL){
+  if(!all(colnames(x) %in% c("client_name","client_category", "prop_time"))){
+    err <- paste0("\nWrong table supplied to ",
+                  crayon::red("plot_category()","."))
+    stop(err)
+  }
+  tiff(paste0("./images/",next_meeting, "_",filename),
+       height = 7, width = 7,
+       units = "in", res = 400, compression = "lzw")
+  par(mar =c(6,12,0.5,1))
+
+  x <- x %>%
+    dplyr::group_by(client_category) %>%
+    dplyr::summarise(prop_time = sum(prop_time)) %>%
+    dplyr::arrange(dplyr::desc(prop_time))
+
+
+  if(max(x$prop_time) < 0.5){
+    xmax <- 0.5
+  } else if(max(x$prop_time) > 0.5){
+    xmax <- 0.8
+  } else if(max(x$prop_time) < 0.75){
+    xmax <- 1
+  }
+  suppressWarnings(plot(1~1, ylim = c(0.5, nrow(x)+0.5), xlim = c(0, xmax), bty = 'l',
+                        xaxt="n", type="n", yaxt="n", xlab="",ylab=""))
+
+  axis(side = 1, at = seq(0, xmax, 0.1),
+       tck = -0.025,labels = NA)
+  axis(side = 1, at = seq(0, xmax, 0.05),
+       tck = -0.025/2,labels = NA)
+  axis(side = 2, at = seq(1, nrow(x)),
+       tck = -0.025, labels = NA)
+
+  abline(h = 1:nrow(x), col = "gray90")
+  abline(v=seq(0,xmax,0.1), col = "gray90")
+  go_by <- ifelse(xmax == 1, 0.2, 0.1)
+  mtext(text = seq(0, xmax, go_by), side = 1,
+        at = seq(0, xmax, go_by), line = 0.6, cex = 1.2)
+
+  cols <- plot_cols()[as.numeric(factor(x$client_category))]
+
+  mtext(text = x$client_category, side = 2, las = 1,
+        at = rev(seq(1, nrow(x))), line = .9, cex = 1.2)
+  mtext(text = "Proportion of time spent\nper category", 1,
+        at = xmax / 2, line = 4.20, cex = 1.75)
+  rect(xleft = rep(-0.02, dplyr::n_distinct(x$client_category)),
+       xright = x$prop_time,
+       ybottom = rev(seq(1,nrow(x))) -0.25,
+       ytop = rev(seq(1,nrow(x))) +0.25,
+       col = cols, lwd = 1.4)
+
+  legend("bottomright", legend = c("C&S department", "External",
+                                   "UWI", "UWIN"),bty = "n",
+         fill = plot_cols(), cex = 1.5)
+
+  invisible(dev.off())
+}
 plot_weeks <- function(x, filename = "weeks_since.tiff",
                        next_meeting = NULL){
   if(!all(colnames(x) %in% c("project_name","client_name", "last_touch"))){
@@ -237,6 +295,9 @@ plot_weeks <- function(x, filename = "weeks_since.tiff",
 
 plot_all <- function(x = NULL){
   cat(cli::rule(center = " * GENERATING FIGURES * ", col = "purple"),"\n")
+  cat(crayon::cyan( cli::symbol$bullet," Time spent per category:      "))
+  plot_category(x$client, next_meeting = x$next_meeting)
+  cat(crayon::green( cli::symbol$tick), "\n")
   cat(crayon::cyan( cli::symbol$bullet," Time spent per client:      "))
   plot_clients(x$client, next_meeting = x$next_meeting)
   cat(crayon::green( cli::symbol$tick), "\n")
@@ -246,6 +307,5 @@ plot_all <- function(x = NULL){
   cat(crayon::cyan( cli::symbol$bullet," Time since project visited: "))
   plot_weeks(x$weeks_since, next_meeting = x$next_meeting)
   cat(crayon::green( cli::symbol$tick), "\n")
-
-
+  return(x)
 }
