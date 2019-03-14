@@ -23,14 +23,15 @@ Tertarik utk gabung?
 ..silahkan membuat essay/tulisan orsinil(bukan copas) sebanyak satu lembar A4, photo
 kemudian kirim @rubynitas, pilih salah satu topik di bawah ini:
 
-1.[ ]ceritakan siapa anda 
-2.[ ]kesan anda terhadap perusahaan
-3.[ ]pikiran/ide anda dalam terhadap masa depan  
+1.\[ \]ceritakan siapa anda 
+2.\[ \]kesan anda terhadap perusahaan
+3.\[ \]pikiran/ide anda dalam terhadap masa depan  
 
 Benefit ..?
-..akan baaanyak keuntungan yg akan anda dapatkan..salah dua diantaranya:
-*wawasan IT bertambah secara signifikan akan berguna utk kelanjutan jenjang karir anda
-*rekam jejak berorganisasi ..bersosialisasi meningkatkan semangat hidup anda secara alami
+..akan baaanyak sekali keuntungan yg akan anda dapatkan..salah dua diantaranya:
+
+\*wawasan IT bertambah secara signifikan akan berguna utk kelanjutan jenjang karir anda
+\*rekam jejak berorganisasi ..bersosialisasi meningkatkan semangat hidup anda secara alami
 
 
 ### Contact me
