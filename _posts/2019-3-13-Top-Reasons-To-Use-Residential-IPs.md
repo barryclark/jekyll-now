@@ -2,10 +2,9 @@
 layout: post
 title: Top Reasons To Use Residential IPs
 ---
+Nowadays, there are many tools available to protect your privacy online. What makes residential IPs different? <br><br>![Residential IPs]({{ site.baseurl }}/images/post_content/neighbors.jpg)
 
-Nowadays, there are many tools available to protect your privacy online. What makes residential IPs different?
 
-[![Residential IPs]({{ site.baseurl }}/images/post_content/neighbors.jpg)]
 
 Here are some of the top reasons why you might benefit from using residential IPs:
 
