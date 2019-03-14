@@ -19,19 +19,19 @@ Kriteria relawan yang dibutuhkan:
 3. *_good diksi_oriented*..berpikiran positif dlm hal pemilihan kata setiap kali memposting/updating blog
 4. *_pria/wanita, shift/non_shift_*..semua boleh ikut audisi
 
-Tertarik utk gabung? 
+**Tertarik** utk gabung? 
 ..silahkan membuat essay/tulisan orsinil(bukan copas) sebanyak satu lembar A4, photo
 kemudian kirim @rubynitas, pilih salah satu topik di bawah ini:
 
-1.\[ \]ceritakan siapa anda 
-2.\[ \]kesan anda terhadap perusahaan
-3.\[ \]pikiran/ide anda dalam terhadap masa depan  
+1.[ ] ceritakan siapa anda 
+2.[ ] kesan anda terhadap perusahaan
+3.[ ] pikiran/ide anda terhadap masa depan  
 
-Benefit ..?
+**Benefit** ..?
 ..akan baaanyak sekali keuntungan yg akan anda dapatkan..salah dua diantaranya:
 
-\*wawasan IT bertambah secara signifikan akan berguna utk kelanjutan jenjang karir anda
-\*rekam jejak berorganisasi ..bersosialisasi meningkatkan semangat hidup anda secara alami
+* wawasan IT bertambah secara signifikan akan berguna utk kelanjutan jenjang karir anda
+* rekam jejak berorganisasi ..bersosialisasi meningkatkan semangat hidup anda secara alami
 
 
 ### Contact me
