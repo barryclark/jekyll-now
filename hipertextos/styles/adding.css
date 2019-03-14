@@ -97,8 +97,9 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #fronters p {margin: 0px;min-width:100%;}
 #fronters-brand svg {max-width:72px;}
 
-.nextt.to-up {transform: rotate(180deg) }
-.nextt {min-width:72px;min-height:72px;height:100px;width:100px;}
+.next-top {max-width:72px;max-height:72px;border-radius:50%;border:none;background:var(--color-hardgrey)!important;}
+.nextt {min-width:41px;height:45px;margin:0px;}
+.nextt.to-up {transform: rotate(180deg)!important; padding-top:5px;}
 
 #matte-demo {background-image: url("/img/texture/dark_grey.png");
 background-size:256px 256px;background-repeat: repeat;image-rendering: crisp-edges;
