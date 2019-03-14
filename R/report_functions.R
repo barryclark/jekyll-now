@@ -296,7 +296,7 @@ plot_weeks <- function(x, filename = "weeks_since.jpg",
 
 plot_all <- function(x = NULL){
   cat(cli::rule(center = " * GENERATING FIGURES * ", col = "purple"),"\n")
-  cat(crayon::cyan( cli::symbol$bullet," Time spent per category:      "))
+  cat(crayon::cyan( cli::symbol$bullet," Time spent per category:    "))
   plot_category(x$client, next_meeting = x$next_meeting)
   cat(crayon::green( cli::symbol$tick), "\n")
   cat(crayon::cyan( cli::symbol$bullet," Time spent per client:      "))
