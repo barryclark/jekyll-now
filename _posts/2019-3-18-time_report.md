@@ -10,11 +10,11 @@ At the most broad scale, here is the proportion of time I have spent working acr
 
 ![_config.yml]({{ site.baseurl}}/images/2019-3-18_category_plot.jpg)
 
-Within each of these categories, I have worked with 9 clients. Split across these clients my last two weeks looked like:
+Within each of these categories, I have worked with 10 clients. Split across these clients my last two weeks looked like:
 
 ![_config.yml]({{ site.baseurl}}/images/2019-3-18_client_plot.jpg)
 
-I worked on 15 projects. My time split amongst them was:
+I worked on 17 projects. My time split amongst them was:
 
 ![_config.yml]({{ site.baseurl}}/images/2019-3-18_project_plot.jpg)
 
