@@ -103,8 +103,8 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 .nextt {min-width:41px;height:45px;margin:0px;}
 .nextt.to-up {transform: rotate(180deg)!important; padding-top:5px;}
 
-img.mask {-webkit-mask-image: url("/hipertextos/svg/arrow.svg");min-width:100%;}
-.mask {background-position: top center;background-attachment: fixed;background-size: cover fixed;background-repeat: no-repeat;}
+.masked {-webkit-mask-image: url("/hipertextos/svg/arrow.svg");min-width:100%;}
+
 #matte-demo {background-image: url("/img/texture/dark_grey.png");
 background-size:256px 256px;background-repeat: repeat;image-rendering: crisp-edges;
 text-align:center;padding:12px 13% 12px 13%;color:var(--color-softgrey);}
