@@ -96,7 +96,9 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #fronters img {min-width:110px;}
 #fronters p {margin: 0px;min-width:100%;}
 #fronters-brand svg {max-width:72px;}
-
+#fronters-brand .imagens {width:100%;padding:2px;overflow:hidden;}
+#fronters-brand article a {margin:0px!important;padding:0px!important;}
+#fronters-brand .imagens:hover {padding:8px;}
 .next-top {max-width:72px;max-height:72px;border-radius:50%;border:none;background:var(--color-hardgrey)!important;}
 .nextt {min-width:41px;height:45px;margin:0px;}
 .nextt.to-up {transform: rotate(180deg)!important; padding-top:5px;}
