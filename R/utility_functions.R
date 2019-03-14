@@ -46,4 +46,14 @@ plot_cols <- function(){
   return(c('#1A8998', '#7D20A6','#EFF726', '#F98B26'))
 }
 
+do_everything <- function(next_meeting = NULL){
+  get_all() %>%
+    check_all() %>%
+    join_data() %>%
+    report_summary(., next_meeting = next_meeting) %>%
+    plot_all() %>%
+    make_post()
+
+}
+
 
