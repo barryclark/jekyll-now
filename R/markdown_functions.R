@@ -32,7 +32,7 @@ add_to_github <- function(x = NULL){
    cat(crayon::green( cli::symbol$tick), "\n")
    cat(crayon::cyan( cli::symbol$bullet," Pushing to github:        "))
    add_to_github(x=x)
-   cat(crayon::green( cli::symbol$tick), "\n")
+   cat(crayon::green('   Pushed\n'))
    cat(cli::rule(center = " * TIME REPORT COMPLETE * ", col = "green"),"\n")
 
 }
