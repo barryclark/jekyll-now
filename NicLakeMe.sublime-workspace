@@ -17,18 +17,36 @@
 			}
 		},
 		{
-			"file": "_sass/_variables.scss",
+			"file": "_posts/2018-12-23-2019-goals.md",
 			"settings":
 			{
-				"buffer_size": 629,
+				"buffer_size": 7332,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_posts/2018-12-23-2019-goals.md",
+			"file": "/N/Libraries/Downloads/BigBagKbdTrixPKL-master/EPKL_Settings.ini",
 			"settings":
 			{
-				"buffer_size": 7260,
+				"buffer_size": 9112,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2018-8-23-breath-of-the-wild.md",
+			"settings":
+			{
+				"buffer_size": 4958,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2019-2-27-apex-legends.md",
+			"settings":
+			{
+				"buffer_size": 5795,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -45,6 +63,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
 			[
 				"remo",
 				"Package Control: Remove Package"
@@ -92,6 +114,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/nicla/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
 		"/N/Libraries/Dropbox/front-end-exercise-master/package.json",
 		"/N/Libraries/Documents/GitHub/niclake.github.io/_config.yml",
 		"/N/Libraries/Documents/GitHub/niclake.github.io/_sass/_highlights.scss",
@@ -121,7 +144,7 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -138,6 +161,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"start",
 			"table",
 			"avatar",
 			"W-L",
@@ -197,52 +221,24 @@
 						"translation.y": 4611.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "_sass/_variables.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 629,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								157,
-								164
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "_posts/2018-12-23-2019-goals.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7260,
+						"buffer_size": 7332,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3074,
-								3074
+								5284,
+								5284
 							]
 						],
 						"settings":
@@ -252,10 +248,95 @@
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 498.0,
+						"translation.y": 770.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/N/Libraries/Downloads/BigBagKbdTrixPKL-master/EPKL_Settings.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3675,
+								3680
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 305.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_posts/2018-8-23-breath-of-the-wild.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/MultiMarkdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_posts/2019-2-27-apex-legends.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5215,
+								5215
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Markdown/MultiMarkdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 96.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
