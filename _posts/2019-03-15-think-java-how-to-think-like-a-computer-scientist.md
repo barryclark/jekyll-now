@@ -3,6 +3,7 @@ layout: post
 title: Think Java - How to Think Like a Computer Scientist
 date: 2019-03-15
 ---
+Textbook: http://greenteapress.com/wp/think-java/
 ## Chapter 1: The way of the program
 Thinking like a computer scientist combines some of the best features of mathematics, engineering, and natural science.
 * Like mathematicians, computer scientists use formal languages to denote ideas, specifically computations.
