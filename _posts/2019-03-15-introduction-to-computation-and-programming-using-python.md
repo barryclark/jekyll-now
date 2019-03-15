@@ -1,15 +1,11 @@
 ---
 layout: post
-title: Introduction to Computer Science and Programming in Python (Fall 2016)
+title: Introduction to Computation and Programming Using Python with Application to Understanding Data (Second Edition)
 date: 2019-03-15
 ---
-**Mục đích**: Hiểu được vai trò của tính toán trong giải quyết vấn đề và tự tin viết được những chương trình (nhỏ) có ích.
-
 **Sách tham khảo**: Guttag, John. [Introduction to Computation and Programming Using Python: With Application to Understanding Data Second Edition](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition). MIT Press, 2016. ISBN: 9780262529624.
- 
-**Bài tập**: Bao gồm 6 bài tập đều sử dụng ngôn ngữ Python để lập trình. 
 
-**1. What is computation?**
+**1. Getting Started**
 
 Đọc chương 1 và phần 2.1 trong sách tham khảo.
 
@@ -57,6 +53,8 @@ Lỗi cú pháp là lỗi phổ biến nhất (đặc biệt đối với nhữn
  Hoặc nó không dừng.
  Hoặc nó đưa ra kết quả không đúng.
  
+ **2. Introduction to Python**
+ 
  Mặc dù các ngôn ngữ lập trình là khác nhau, tuy nhiên cũng có một số khía cạnh chúng có thể liên quan:
  * Ngôn ngữ lập trình bậc thấp vs Ngôn ngữ lập trình bậc cao:
    * Bậc thấp: Người lập trình sử dụng các câu lệnh và đối tượng dữ liệu ở mức độ phần cứng (dịch 64 bit dữ liệu từ nơi này sang nơi khác).
@@ -74,27 +72,5 @@ Lỗi cú pháp là lỗi phổ biến nhất (đặc biệt đối với nhữn
    Đối tượng và toán tử (operators) kết hợp tạo nên biểu thức (expressions). Biến (variables) là sự liên kết đối tượng với một cái tên, hay nói cách khác biến chỉ là một cái tên được gán cho đối tượng. Câu lệnh gán liên kết một cái tên ở bên trái phép gán với một đối tượng (được mô tả bởi một biểu thức) ở bên phải phép gán. Một đối tượng có thể có nhiều tên hoặc không có tên nào. 
    
    Hầu hết lập trình viên sử dụng text editor - một thành phần của IDE (Integrated Development Environment) - môi trường phát triển tích hợp. 
- 
- **2. Branching and Iteration**
- 
- **3. String Manipulation, Guess and Check, Approximations, Bisection**
- 
- **4. Decomposition, Abstractions, Functions**
- 
- **5. Tuples, Lists, Aliasing, Mutability, Cloning**
- 
- **6. Recursion, Dictionaries**
- 
- **7. Testing, Debugging, Exceptions, Assertions**
- 
- **8. Object Oriented Programming**
- 
- **9. Python Classes and Inheritance**
- 
- **10. Understanding Program Efficiency, Part 1**
- 
- **11. Understanding Program Efficiency, Part 1 (Cont.)**
- 
- **12. Searching and Sorting algorithms**
  
  
