@@ -12,3 +12,4 @@ Tư duy như một nhà khoa học máy tính kết hợp một vài đặc trư
 Kỹ năng quan trọng nhất đối với một nhà khoa học máy tính là kỹ năng giải quyết vấn đề. Đó là khả năng xây dựng vấn đề, sáng tạo lời giải và diễn đạt nó một cách rõ ràng và chính xác. 
 
 ### 1.1 What is programming?
+
