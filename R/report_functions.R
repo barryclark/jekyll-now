@@ -110,7 +110,7 @@ plot_projects <- function(x, filename = "project_plot.jpg",
   mtext(text = "Proportion of time spent\non projects", 1,
         at = xmax / 2, line = 4.20, cex = 1.75)
 
-  rect(xleft = rep(-0.02, nrow(x)),
+  rect(xleft = rep(0, nrow(x)),
        xright = x$prop_time,
        ybottom = rev(seq(1,nrow(x))) -0.3,
        ytop = rev(seq(1,nrow(x))) +0.3,
@@ -166,7 +166,7 @@ plot_clients <- function(x, filename = "client_plot.jpg",
         at = rev(seq(1, nrow(x))), line = .9, cex = 1.2)
   mtext(text = "Proportion of time spent\nper client", 1,
         at = xmax / 2, line = 4.20, cex = 1.75)
-  rect(xleft = rep(-0.02, dplyr::n_distinct(x$client_name)),
+  rect(xleft = rep(0, dplyr::n_distinct(x$client_name)),
        xright = x$prop_time,
        ybottom = rev(seq(1,nrow(x))) -0.25,
        ytop = rev(seq(1,nrow(x))) +0.25,
@@ -226,7 +226,7 @@ plot_category <- function(x, filename = "category_plot.jpg",
         at = rev(seq(1, nrow(x))), line = .9, cex = 1.2)
   mtext(text = "Proportion of time spent\nper category", 1,
         at = xmax / 2, line = 4.20, cex = 1.75)
-  rect(xleft = rep(-0.02, dplyr::n_distinct(x$client_category)),
+  rect(xleft = rep(0, dplyr::n_distinct(x$client_category)),
        xright = x$prop_time,
        ybottom = rev(seq(1,nrow(x))) -0.25,
        ytop = rev(seq(1,nrow(x))) +0.25,
@@ -282,7 +282,7 @@ plot_weeks <- function(x, filename = "weeks_since.jpg",
         at = rev(seq(1, nrow(x))), line = .9, cex = 1.2)
   mtext(text = "Weeks since project\n visited", 1,
         at = xmax / 2, line = 4.20, cex = 1.75)
-  rect(xleft = rep(-0.02, nrow(x)),
+  rect(xleft = rep(0, nrow(x)),
        xright = as.numeric(x$last_touch),
        ybottom = rev(seq(1,nrow(x))) -0.25,
        ytop = rev(seq(1,nrow(x))) +0.25,
