@@ -57,7 +57,7 @@ Java programs are made up of class and method definitions, and methods are made 
 System.out.println("Hello, World!");
 ```
 Like most statements, the print statement ends with a semicolon (;).
-
- 
+Java is “case-sensitive”, which means that uppercase and lowercase are not the same.
+ .
 
 
