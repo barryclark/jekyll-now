@@ -1,6 +1,5 @@
----
-layout: post
-title: You're up and running!
+title: 来GITHUB 的第一天
+新奇的东西可以玩很久
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
