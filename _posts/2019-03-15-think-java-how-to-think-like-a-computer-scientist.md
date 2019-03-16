@@ -51,4 +51,11 @@ run faster than interpreted programs.
 
 Java is both compiled and interpreted. Instead of translating programs directly into machine language, the Java compiler generates byte code. Similar to machine language, byte code is easy and fast to interpret. But it is also portable, so it is possible to compile a Java program on one machine, transfer the byte code to another machine, and run the byte code on the other machine. The interpreter that runs byte code is called a “Java Virtual Machine” (JVM).
 
+### 1.4 The hello world program
+Java programs are made up of class and method definitions, and methods are made up of statements. A statement is a line of code that performs a basic operation. this line is a print statement that displays a message on the screen:
+```
+System.out.println("Hello, World!");
+```
+ 
+
 
