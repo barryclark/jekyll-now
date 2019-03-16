@@ -61,7 +61,7 @@ public class Hello {
     }
 }
  ```
-Java programs are made up of class and method definitions, and methods are made up of statements. A statement is a line of code that performs a basic operation. this line is a print statement that displays a message on the screen:
+Java programs are made up of class and method definitions, and methods are made up of statements. A statement is a line of code that performs a basic operation. This line is a print statement that displays a message on the screen:
 ```
 System.out.println("Hello, World!");
 ```
@@ -75,6 +75,10 @@ public static void main(String[] args)
 ```
 The name and format of main is special: when the program runs, it starts at the first statement in main and ends when it finishes the last statement.
 
-A class is a collection of methods. 
+A class is a collection of methods. This program defines a class named Hello. Class name is conventional to start with a capital letter. The name of the class has to match the name of the file it is in.
+
+Java uses squiggly braces ({ and }) to group things together.
+
+The line that begins with two slashes (//) is a comment, which is a bit of English text that explains the code. When the compiler sees //, it ignores everything from there until the end of the line. Comments have no effect on the execution of the program, but they make it easier for other programmers (and your future self) to understand what you meant to do.
 
 
