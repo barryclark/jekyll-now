@@ -25,9 +25,30 @@ The details look different in different languages, but a few basic instructions 
 So you can think of programming as the process of breaking down a large, complex task into smaller and smaller subtasks. The process continues until the subtasks are simple enough to be performed with the basic instructions provided by the computer.
 
 ### 1.2 What is computer science?
+Computer science is the science of algorithms, including their discovery and analysis.
 
+An algorithm is a sequence of steps that specifies how to solve a problem.
 
+Programming errors are called bugs, and the process of tracking them down and correcting them is called debugging.
 
+### 1.3 Programming languages
+Java is a high-level language.
 
+Before they can run, programs in high-level languages have to be translated into a low-level language, also called “machine language”. This translation takes some time, which is a small disadvantage of high-level languages.
+
+But high-level languages have two advantages:
+* It is much easier to program in a high-level language. Programs take less time to write, they are shorter and easier to read, and they are more likely to be correct.
+* High-level languages are portable, meaning they can run on different kinds of computers with few or no modifications. Low-level programs can only run on one kind of computer, and have to be rewritten to run on another.
+
+Two kinds of programs translate high-level languages into low-level languages: interpreters and compilers.
+* An interpreter processes the program a little at a time, alternately reading lines and performing computations.
+* A compiler reads the entire program and translates it completely before the program starts running.
+
+The high-level program is called the source code, and the translated program is called the object code or the executable.
+
+Once a program is compiled, you can execute it repeatedly without further translation. As a result, compiled programs often
+run faster than interpreted programs.
+
+Java is both compiled and interpreted. Instead of translating programs directly into machine language, the Java compiler generates byte code. Similar to machine language, byte code is easy and fast to interpret. But it is also portable, so it is possible to compile a Java program on one machine, transfer the byte code to another machine, and run the byte code on the other machine. The interpreter that runs byte code is called a “Java Virtual Machine” (JVM).
 
 
