@@ -55,10 +55,10 @@ Java is both compiled and interpreted. Instead of translating programs directly 
  The hello world program in Java:
  ```
 public class Hello {
-  public static void main(String[] args) {
-    // generate some simple output
-    System.out.println("Hello, World!");
-  }
+ public static void main(String[] args) {
+  // generate some simple output
+  System.out.println("Hello, World!");
+ }
 }
  ```
 Java programs are made up of class and method definitions, and methods are made up of statements. A statement is a line of code that performs a basic operation. this line is a print statement that displays a message on the screen:
