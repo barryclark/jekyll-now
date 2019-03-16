@@ -56,6 +56,8 @@ Java programs are made up of class and method definitions, and methods are made 
 ```
 System.out.println("Hello, World!");
 ```
+Like most statements, the print statement ends with a semicolon (;).
+
  
 
 
