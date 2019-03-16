@@ -52,12 +52,29 @@ run faster than interpreted programs.
 Java is both compiled and interpreted. Instead of translating programs directly into machine language, the Java compiler generates byte code. Similar to machine language, byte code is easy and fast to interpret. But it is also portable, so it is possible to compile a Java program on one machine, transfer the byte code to another machine, and run the byte code on the other machine. The interpreter that runs byte code is called a “Java Virtual Machine” (JVM).
 
 ### 1.4 The hello world program
+ The hello world program in Java:
+ ```
+public class Hello {
+public static void main(String[] args) {
+// generate some simple output
+System.out.println("Hello, World!");
+}
+}
+ ```
 Java programs are made up of class and method definitions, and methods are made up of statements. A statement is a line of code that performs a basic operation. this line is a print statement that displays a message on the screen:
 ```
 System.out.println("Hello, World!");
 ```
-Like most statements, the print statement ends with a semicolon (;).
+Like most statements, the print statement ends with a semicolon (;). 
+
 Java is “case-sensitive”, which means that uppercase and lowercase are not the same.
- .
+
+A method is a named sequence of statements. This program defines one method named main:
+```
+public static void main(String[] args)
+```
+The name and format of main is special: when the program runs, it starts at the first statement in main and ends when it finishes the last statement.
+
+A class is a collection of methods. 
 
 
