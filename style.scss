@@ -66,6 +66,7 @@ h4 {
 
 p {
   margin: 15px 0;
+  font-family: $georgia;
 }
 
 a {
@@ -80,6 +81,7 @@ a {
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
+  font-family: $georgia;
 }
 
 ul {
@@ -123,11 +125,11 @@ img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: #ff9999;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: #ff9999;
 }
 
 // Nicolas Gallagher's micro clearfix hack
