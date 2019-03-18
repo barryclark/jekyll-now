@@ -6,7 +6,9 @@ permalink: /mcamc/register
 
 ## MCAMC Registration
 
+### Registration is now closed!
 
+<!––
 ### I am registering as a/an...
 
 <div style="text-align: center">
@@ -36,3 +38,4 @@ function reg(type) {
   }
 }
 </script>
+––> 
