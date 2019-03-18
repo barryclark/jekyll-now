@@ -10,7 +10,7 @@ permalink: /featured/
 * [The Financial Diet's The 7 Personal Finance Articles We Loved This Week (March 16, 2018)](https://thefinancialdiet.com/the-7-personal-finance-articles-we-loved-this-week-2/)
 * [Dr. Fire's Weekend Roundup: Volume 5 (September 30, 2018)](http://drfire.co.uk/weekend-roundup-volume-5/)
 
-Quoted on the following sites:
+Quoted on the following webpages:
 
 * [Best Financial Tips For Newlyweds And Couples](https://moneypedals.com/best-financial-advice-for-newlyweds-and-couples/)
 * [40-Day Frugal/Financial Lent Challenge](http://99to1percent.com/40-day-frugal-financial-lent/)
