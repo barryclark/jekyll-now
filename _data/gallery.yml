@@ -9,23 +9,23 @@
 #  - jekyll-art-gallery-generator
 
 source_dir: _photography  # original images, that will be cropped according to the size_limit, thumbnailed and posted
-title: Portfolio
+title: Gallery
 #sort_field: "timestamp"
 sort_field: "title" # sorting of the galleries on the gallery index page
 #sort_reverse: true
 thumbnail_size:
-  x: 250
-  y: 250
+  x: 500
+  y: 500
 front_thumb_size:     # best image thumb size for the gallery super-index page
-  x: 150
+  x: 500
   y: 500
 header_thumb_size:    # best image thumb for the header of a gallery index page
   x: 1900
   y: 170
 
-scale_method: crop # default for all galleries. could be fit or crop, crop_bottom, crop_right, crop_left, crop_top ('crop' crops around, others crop out the side indicated as a parameter
-strip_exif: true
-size_limit: 1000 # maximum size, px in either dimention, to limit the images to
+scale_method: fit # default for all galleries. could be fit or crop, crop_bottom, crop_right, crop_left, crop_top ('crop' crops around, others crop out the side indicated as a parameter
+strip_exif: false
+size_limit: 1920 # maximum size, px in either dimention, to limit the images to
 
 # Visible watermark - Transparent image, from images/ folder, with grayscale used for hardlight compositing, lower bottom corner.
 #watermark: Watermark2_200x200.png
@@ -35,21 +35,13 @@ galleries:
   # if the gallery is listed it uses specified values except for defaults
   Hidden Gallery:
     hidden: true # don't generate index file - it's still on the web though
-  Shows 2018:
-    title: Shows in November # name used in the navigation bar and headers
-    description: Where I've been, what I've done in 2018
-    #hidden: true
-    #sort_field: name # rule for sorting images within galleries.
-    #best_image: MoonLight.jpg
-    #header_image: sy_header.jpg
-    Super1.jpg: Set one
-    SSDa2.jpg: All in two
-    scale_method: crop_bottom
-  Paintings:
-    description: Egg tempera, acrylic and gold leaf on wood.
-    best_image: Soob.jpg
-    header_image: paintings_header.jpg
-    scale_method: crop_bottom
-    paintings.jpg: Nevy
+  Random:
+    title: Random Collection # name used in the navigation bar and headers
+    description: Pictures that don't quite belong to any other album
+#    #hidden: true
+#    #sort_field: name # rule for sorting images within galleries.
+    best_image: 20180901.jpg
+#    #header_image: sy_header.jpg
+#    scale_method: crop_bottom
 
 #symlink: true # to avoid copying big files into the generated site folder - does not work with stripping EXIF

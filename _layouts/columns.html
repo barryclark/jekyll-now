@@ -4,7 +4,9 @@ layout: default
 
 <div class="row">
   <div class="col-md-2">
+    {% if page.layout == "post" %}
     <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+    {% endif %}
   </div>
   <div id="content" class="mx-auto col-lg-8">
     {{ content }}

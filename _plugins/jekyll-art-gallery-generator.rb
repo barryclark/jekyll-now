@@ -2,6 +2,7 @@
 # Distribiuted under MIT license with attribution
 #
 require 'rmagick'
+require 'exifr/jpeg'
 include Magick
 
 include FileUtils
@@ -76,7 +77,6 @@ module Jekyll
           else
             site.data["gallery"]["galleries"][gallery_title]=gallery.data
           end
-          site.data["navigation"].push({"title"=> gallery.data["title"], "url"=> gallery.data["link"], "side"=> "left"})
           site.data["galleries-sorted"].push(gallery.data["title"]) # sorted array to order the galleries hash on the portfolio page
         end
       }
@@ -138,13 +138,14 @@ module Jekyll
 
         # process and copy images
       self.data["captions"] = {}
+      self.data["exif"] = {}
+
       date_times = {}
       Dir.foreach(dir) do |image|
         next if image.chars.first == "."
         next unless image.downcase().end_with?(*$image_extensions)
 
         image_path = File.join(dir, image) # source image short path
-        # img_src = site.in_source_dir(image_path) # absolute path for the source image
 
         # extract timestamp
         if sort_field == "timestamp"
@@ -219,6 +220,13 @@ module Jekyll
           self.data["captions"][dest_image]=gallery_config[image]
         else
           # If not defined add a trimmed filename to help with SEO
+          self.data["exif"][dest_image] = {}
+          self.data["exif"][dest_image]["model"]=EXIFR::JPEG.new(dest_image_abs_path).model
+          self.data["exif"][dest_image]["focal_length"]=EXIFR::JPEG.new(dest_image_abs_path).focal_length
+          self.data["exif"][dest_image]["shutter"]=EXIFR::JPEG.new(dest_image_abs_path).exposure_time.to_s
+          self.data["exif"][dest_image]["iso"]=EXIFR::JPEG.new(dest_image_abs_path).iso_speed_ratings
+          self.data["exif"][dest_image]["fstop"]=EXIFR::JPEG.new(dest_image_abs_path).f_number.to_f
+          
           self.data["captions"][dest_image]=File.basename(image,File.extname(image)).gsub("_", " ")
         end
         # remember the image
@@ -227,7 +235,6 @@ module Jekyll
 
         # make a thumbnail
         makeThumb(image_path, dest_image, config["thumbnail_size"]["x"] || 400, config["thumbnail_size"]["y"] || 400, scale_method)
-        #@site.static_files << GalleryFile.new(site, base, File.join(@dir, "thumbs"), dest_image)
       end
 
       # sort pictures inside the gallery
