@@ -12,6 +12,7 @@ permalink: /featured/
 
 Quoted on the following sites:
 
+* [Best Financial Tips For Newlyweds And Couples](https://moneypedals.com/best-financial-advice-for-newlyweds-and-couples/)
 * [40-Day Frugal/Financial Lent Challenge](http://99to1percent.com/40-day-frugal-financial-lent/)
 * [Early Retirement Wisdom From 50+ Top Finance Writers](https://themoneymix.com/early-retirement/)
 * [Money Goals – 30+ Experts Share Their 2019 Resolutions](https://wealthynickel.com/money-goals/)
