@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sutra on the Quest Contradictory to Facts and Theory
+title: Sutra on the Quest Contradictory to Both Theory and Facts
 tags: [Datayana Sutras, Modernism, Original Buddhism]
 
 # below, concepts for the generation of the sutta
@@ -121,7 +121,7 @@ Then, when it was evening, the lay follower Scott rose from meditation and went 
 
 #### <span style="color:gray">The root of all trolling</span>
 
-"Bhikkux, and Scott, I shall teach you a discourse on the Quest Contradictory to Theory and Facts. Listen and attend closely to what i shall say." -- "Yes, venerable sir," the bhikkux replied. -- "Okay," Scott replied. The Blessed one said this:
+"Bhikkux, and Scott, I shall teach you a discourse on the Quest Contradictory to both Theory and Facts. Listen and attend closely to what I shall say." -- "Yes, venerable sir," the bhikkux replied. -- "Okay," Scott replied. The Blessed one said this:
 
 {% assign subjects = page.matikas.subjects %}
 {% assign objects = page.matikas.objects %}
