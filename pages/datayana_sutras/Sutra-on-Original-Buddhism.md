@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sutra on the Clinging to a Non-Clinging Dharma
+title: Sutra on the Quest Contradictory to Facts and Theory
 tags: [Datayana Sutras, Modernism, Original Buddhism]
 
 # below, concepts for the generation of the sutta
 matikas:
   speculativeviews:
     - interrogative: "What is Original Buddhism?"
-      affirmative: "this is Original Buddhism"
-      negative: "this is not Original Buddhism"
+      affirmative: "this tradition is Original Buddhism"
+      negative: "this tradition is not Original Buddhism"
     - interrogative: "Is this Sutta authentic?"
       affirmative: "this Sutta is authentic"
       negative: "this Sutta is not authentic"
@@ -61,9 +61,26 @@ matikas:
       understanding: "have fully understood it"
   # ... just different objects
   objects:
-    - "Buddhist Practice"
-    - "Buddhist Scriptures"
-    - "Buddhist Teachings"
+    - "tradition"
+    - "scripture"
+    - "practice"
+  verbs:
+    - "hearing"
+    - "memorizing"
+    - "practicing"
+    - "reciting"
+    - "speaking"
+    - "writing"
+    - "commenting"
+    - "organizing"
+    - "systematizing"
+    - "synthesizing"
+    - "elaborating on"
+    - "expanding on"
+    - "transporting"
+    - "translating"
+    - "adapting"
+    - "appropriating"
 ---
 
 Thus have I heard.  
@@ -104,7 +121,7 @@ Then, when it was evening, the lay follower Scott rose from meditation and went 
 
 #### <span style="color:gray">The root of all trolling</span>
 
-"Bhikkux, and Scott, I shall teach you a discourse on Clinging to a Non-Clinging Dharma. Listen and attend closely to what i shall say." -- "Yes, venerable sir," the Bhikkux replied. -- "Okay," Scott replied. The Blessed one said this:
+"Bhikkux, and Scott, I shall teach you a discourse on the Quest Contradictory to Theory and Facts. Listen and attend closely to what i shall say." -- "Yes, venerable sir," the bhikkux replied. -- "Okay," Scott replied. The Blessed one said this:
 
 {% assign subjects = page.matikas.subjects %}
 {% assign objects = page.matikas.objects %}
@@ -114,14 +131,43 @@ Then, when it was evening, the lay follower Scott rose from meditation and went 
 {% endfor %}
 {% endfor %}
 
+That is what the Blessed One said. But Scott did not delight in the Blessed One's words.
+
+#### <span style="color:gray">Dhamma has no past, no present, no future</span>
+
+The Blessed One having mastered the Sublime Dhamma Eye that leads to Enlightenment, saw clearly Scott's lack of delight on his face. The Blessed One addressed the Bhikkhux thus:
+
+{% assign verbs = page.matikas.verbs %}
+
+"Bhikkux, this Dhamma is without discoverable beginning. A first point is not discerned of beings {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %}
+. What do you think, Scott, which is more: the stream of perspiration that buddhists have sweat while {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %} -- this or the water in the four great oceans?"  
+"As we understand the Dhamma taught by the Blessed One, venerable sir, the stream of perspiration that we have sweat while {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %} -- this alone is more than the water in the four great oceans."  
+"Good, good, bhikkhux!, It is good that you unerstand the Dhamma taught by me in such a way. The stream of perspiration that buddhists have sweat while {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %} -- this alone is more than the water in the four great oceans. For a long time, bhikkux, you have experienced teachings, scriptures and practices; as you have experienced those, sweating by exertion of right effort, the stream of perspiration that you have sweat is more than the water in the four great oceans. For what reason? Because, bhikkux, this Dhamma is without discoverable beginning. A first point is not discerned of beings {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %}."
+
+{% assign objects = page.matikas.objects %}
+{% for object in objects %}
+"Bhikkux, {{object}} is impermanent, both of the past and the future, not to speak of the present. The cause and condition for the arising of {{object}} is also impermanent. As {{object}} has originated from what is impermanent, how could it be permanent? Thus, {{object}} is impermanent, conditioned, dependently arisen, subject to destruction, to vanishing, to fading away, to cessation. {% if forloop.first or forloop.last %} Seeing Thus, Bhikkhux, the instructed noble disciple experiences distancing towards {{object}} of the past, they do not seek delight in {{object}} of the future, and they are practicing equanimity towards {{object}} of the present, for its fading away and cessation. Experiencing distancing they become dispassionate. Through dispassion their mind is liberated. When it is liberated there comes the knowledge: 'It's liberated.' They understands: 'Destroyed it birth, the holy life has been lived, what had to be done has been done, there is no more for this state of being.'" {% else %} Seeing Thus ... They understands: '... there is no more for this state of being.'" {% endif %}
+{% endfor %}
+
 #### <span style="color:gray">Final Verses</span>
 
 About this is was said:
-> True Buddhism is an illusion,
-  False Buddhism is real.
 
-That is what the Blessed One said. But Scott did not delight in the Blessed One's words.
+> True Buddhism is an illusion,  
+  False Buddhism is real.  
+  Buddhism is an ocean,  
+  Traditions are waves.  
+  Traditions of the past, present and future,  
+  like all phenomenons,  
+  they are interdependent,  
+  they are impermanent,  
+  they are empty of self-existence.  
+  Illusion about that leads to suffering.  
+  Traditions, Scriptures and Practices are contingent.  
+  Buddhism is not two, not one.
+
+That is what the Blessed One said. Elated, the bhikkux and Scott delighted in the Blessed One's statement. And while this discourse was being spoken, the minds of the bhikkux were liberated from the taints by non-clinging. Scott's mind started clinging to non-clinging.
 
 ## Commentary
 
-This is obviously a free and creative adaptation of MN1 and MN63.
+This is obviously a free and creative adaptation of MN1 and MN63, SN 15.3, SN 22.9
