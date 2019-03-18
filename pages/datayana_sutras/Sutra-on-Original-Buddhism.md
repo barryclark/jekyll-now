@@ -121,7 +121,7 @@ Then, when it was evening, the lay follower Scott rose from meditation and went 
 
 #### <span style="color:gray">The root of all trolling</span>
 
-"Bhikkux, and Scott, I shall teach you a discourse on the Quest Contradictory to both Theory and Facts. Listen and attend closely to what I shall say." -- "Yes, venerable sir," the bhikkux replied. -- "Okay," Scott replied. The Blessed one said this:
+"Bhikkhux, and Scott, I shall teach you a discourse on the Quest Contradictory to both Theory and Facts. Listen and attend closely to what I shall say." -- "Yes, venerable sir," the bhikkhux replied. -- "Okay," Scott replied. The Blessed one said this:
 
 {% assign subjects = page.matikas.subjects %}
 {% assign objects = page.matikas.objects %}
@@ -139,14 +139,14 @@ The Blessed One having mastered the Sublime Dhamma Eye that leads to Enlightenme
 
 {% assign verbs = page.matikas.verbs %}
 
-"Bhikkux, this Dhamma is without discoverable beginning. A first point is not discerned of beings {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %}
+"Bhikkhux, this Dhamma is without discoverable beginning. A first point is not discerned of beings {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %}
 . What do you think, Scott, which is more: the stream of perspiration that buddhists have sweat while {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %} -- this or the water in the four great oceans?"  
 "As we understand the Dhamma taught by the Blessed One, venerable sir, the stream of perspiration that we have sweat while {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %} -- this alone is more than the water in the four great oceans."  
-"Good, good, bhikkhux!, It is good that you unerstand the Dhamma taught by me in such a way. The stream of perspiration that buddhists have sweat while {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %} -- this alone is more than the water in the four great oceans. For a long time, bhikkux, you have experienced teachings, scriptures and practices; as you have experienced those, sweating by exertion of right effort, the stream of perspiration that you have sweat is more than the water in the four great oceans. For what reason? Because, bhikkux, this Dhamma is without discoverable beginning. A first point is not discerned of beings {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %}."
+"Good, good, bhikkhux!, It is good that you understand the Dhamma taught by me in such a way. The stream of perspiration that buddhists have sweat while {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %} -- this alone is more than the water in the four great oceans. For a long time, bhikkhux, you have experienced teachings, scriptures and practices; as you have experienced those, sweating by exertion of right effort, the stream of perspiration that you have sweat is more than the water in the four great oceans. For what reason? Because, bhikkhux, this Dhamma is without discoverable beginning. A first point is not discerned of beings {% for verb in verbs %} {{verb}}{% if forloop.first or forloop.last %} this Dhamma{% endif %}{% unless forloop.last %}, {%endunless%}{% endfor %}."
 
 {% assign objects = page.matikas.objects %}
 {% for object in objects %}
-"Bhikkux, {{object}} is impermanent, both of the past and the future, not to speak of the present. The cause and condition for the arising of {{object}} is also impermanent. As {{object}} has originated from what is impermanent, how could it be permanent? Thus, {{object}} is impermanent, conditioned, dependently arisen, subject to destruction, to vanishing, to fading away, to cessation. {% if forloop.first or forloop.last %} Seeing Thus, Bhikkhux, the instructed noble disciple experiences distancing towards {{object}} of the past, they do not seek delight in {{object}} of the future, and they are practicing equanimity towards {{object}} of the present, for its fading away and cessation. Experiencing distancing they become dispassionate. Through dispassion their mind is liberated. When it is liberated there comes the knowledge: 'It's liberated.' They understands: 'Destroyed it birth, the holy life has been lived, what had to be done has been done, there is no more for this state of being.'" {% else %} Seeing Thus ... They understands: '... there is no more for this state of being.'" {% endif %}
+"Bhikkhux, {{object}} is impermanent, both of the past and the future, not to speak of the present. The cause and condition for the arising of {{object}} is also impermanent. As {{object}} has originated from what is impermanent, how could it be permanent? Thus, {{object}} is impermanent, conditioned, dependently arisen, subject to destruction, to vanishing, to fading away, to cessation. {% if forloop.first or forloop.last %} Seeing Thus, Bhikkhux, the instructed noble disciple experiences distancing towards {{object}} of the past, they do not seek delight in {{object}} of the future, and they are practicing equanimity towards {{object}} of the present, for its fading away and cessation. Experiencing distancing they become dispassionate. Through dispassion their mind is liberated. When it is liberated there comes the knowledge: 'It's liberated.' They understands: 'Destroyed it birth, the holy life has been lived, what had to be done has been done, there is no more for this state of being.'" {% else %} Seeing Thus ... They understands: '... there is no more for this state of being.'" {% endif %}
 {% endfor %}
 
 #### <span style="color:gray">Final Verses</span>
@@ -166,7 +166,7 @@ About this is was said:
   Traditions, Scriptures and Practices are contingent.  
   Buddhism is not two, not one.
 
-That is what the Blessed One said. Elated, the bhikkux and Scott delighted in the Blessed One's statement. And while this discourse was being spoken, the minds of the bhikkux were liberated from the taints by non-clinging. Scott's mind started clinging to non-clinging.
+That is what the Blessed One said. Elated, the bhikkhux and Scott delighted in the Blessed One's statement. And while this discourse was being spoken, the minds of the bhikkhux were liberated from the taints by non-clinging. Scott's mind started clinging to non-clinging.
 
 ## Commentary
 
