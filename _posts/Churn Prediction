@@ -1,0 +1,17 @@
+I analyzed subscriber data for a small edtech startup and am sharing my approach. Please get in touch with comments if you are interested in learning more with me.
+
+# Goals
+Increase monthly retention. People dropping off after first few months.
+Retention rate = retained subscribers per month / total previous month subscribers 
+
+## Questions
+What does our retention rate look like?
+What are staying users trying that others aren’t?
+What indicates possible churn?
+Can we predict who will/won’t churn?
+
+### Marketing Example
+If people who engage in [specific user behavior] are more likely to be retained, find subscriber who hasn’t engaged in [specific user behavior] and is likely to churn - send them an email to have them try that out, since that correlates with them staying longer.
+
+### Attribution
+I'd like to attribute much of the code and thought that went into this churn investigation to reddit user emarkou whose 3-part blog series was enlightening and her code is on github https://github.com/blendo-app/NBD-Pareto-churn-model
