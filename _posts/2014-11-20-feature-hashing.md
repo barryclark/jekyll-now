@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "特征哈希（Feature Hashing）"
 date:   2014-11-20 21:41
+mathjax: true
 tags: machine_learning feature_engineering feature_learning dimensionality_reduction
 ---
 

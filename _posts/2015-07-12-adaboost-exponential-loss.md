@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "Adaboost与指数损失"
 date:   2015-07-12 14:35
+mathjax: true
 tags: 机器学习 SVM Hinge L2
 ---
 

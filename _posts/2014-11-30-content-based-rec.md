@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "基于内容的推荐（Content-based Recommendations）"
 date:   2012-04-10 14:06
+mathjax: true
 tags: 推荐算法 推荐系统 Content-based Recommendations
 ---
 

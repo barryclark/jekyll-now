@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "说说中国的计划生育政策"
 date:   2009-11-21 09:52
+mathjax: true
 tags: 计划生育 男女平衡
 ---
 

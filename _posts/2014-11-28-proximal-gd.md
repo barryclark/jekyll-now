@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "Proximal Gradient Descent for L1 Regularization"
 date:   2013-11-16 14:54
+mathjax: true
 tags: 机器学习 优化算法
 ---
 

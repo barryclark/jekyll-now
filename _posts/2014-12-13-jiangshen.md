@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "aDev第13期#个性化推荐技术#总结（Part II：江申@百度）"
 date:   2012-11-10 00:33
+mathjax: true
 tags: 企业推荐系统 拍卖词推荐 推荐算法 百度
 ---
 

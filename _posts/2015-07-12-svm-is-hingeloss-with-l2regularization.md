@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "SVM等于Hinge损失 + L2正则化"
 date:   2015-07-12 08:38
+mathjax: true
 tags: 机器学习 SVM Hinge L2
 ---
 

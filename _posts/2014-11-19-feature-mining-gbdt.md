@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "利用GBDT模型构造新特征"
 date:   2014-11-19 17:17
+mathjax: true
 tags: machine_learning feature_engineering feature_learning
 ---
 

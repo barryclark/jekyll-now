@@ -3,6 +3,7 @@ published: true
 layout: post
 title:  "L2约束与L2正则项优化问题的关系"
 date:   2015-07-11 09:52
+mathjax: true
 tags: 机器学习 最优化 L2正则项
 ---
 
