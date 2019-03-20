@@ -1,10 +1,8 @@
-I analyzed subscriber data for a small edtech startup and am sharing my approach. Please get in touch with comments if you are interested in learning more with me.
+I analyzed subscriber data for a small edtech startup and am sharing my work. Please get in touch with comments if you are interested in learning more with me.
 
 # Goal
-**Increase monthly retention.** 
-
-People are dropping off after first few months.
-Retention rate = retained subscribers per month / total previous month subscribers 
+In our initial discovery meeting we identified the major goal for this project, **Increase monthly retention.** 
+I set out to predict churning behavior and identify factors relating to churn.
 
 ## Questions
 [What does our retention rate look like?] (#retention)
@@ -18,4 +16,12 @@ If people who engage in [specific user behavior] are more likely to be retained,
 I'd like to attribute much of the code and thought that went into this churn investigation to reddit user emarkou whose 3-part blog series was enlightening and her code is on github https://github.com/blendo-app/NBD-Pareto-churn-model
 
 # Retention <a name="retention"></a>
-I used 
+First, I cleaned Mixpanel data of aggregate events per unique user. Events were selected by the product team as events that play a role in user engagement and highlight the core value of the product.
+Cleaning involved NAs, outliers, and incorrect labels. Some issues include erroneous subscription periods, special accounts, and active subscribers labeled as having churned. Notice how the correlation plot varied between raw and cleaned data:
+
+
+The team believes that users are dropping off after first few months. To test this claim I visualized.
+
+
+
+Retention rate = retained subscribers per month / total previous month subscribers 
