@@ -17,8 +17,9 @@ I'd like to attribute much of the code and thought that went into this churn inv
 
 # Retention <a name="retention"></a>
 First, I cleaned Mixpanel data of aggregate events per unique user. Events were selected by the product team as events that play a role in user engagement and highlight the core value of the product.
-Cleaning involved NAs, outliers, and incorrect labels. Some issues include erroneous subscription periods, special accounts, and active subscribers labeled as having churned. Notice how the correlation plot varied between raw and cleaned data:
-
+Cleaning involved NAs, outliers, and incorrect labels. Some issues include erroneous subscription periods, special accounts, and active subscribers labeled as churned. Notice how the correlation plot varied between raw and cleaned data:
+![Raw corr plot](/images/corrPlot_dirty.jpeg)
+![Cleaned corr plot](/images/corrPlot_clean.jpeg)
 
 The team believes that users are dropping off after first few months. To test this claim I visualized.
 
