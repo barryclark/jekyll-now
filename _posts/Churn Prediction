@@ -37,11 +37,10 @@ From each of them we can get a sense of which features explain more of the varia
 
 ## Random Forest
 I split 75% of the data for the training set and 25% to test. The initial RF with 2000 trees had the resulting confusion matrix:
-
-prediction    0    1
-         0 4382 1084
-         1  682 9194
-
+prediction | 0 | 1 
+---|---|---
+0 | 4382 |1084
+1 | 682 | 9194
 
 ### Attribution
 I'd like to attribute much of the code and thought that went into this churn investigation to reddit user emarkou (Eleni Markou) whose [4-part blog series](https://www.blendo.co/blog/predicting-churn-email-unsubscribe/) was enlightening and her code is on [github](https://github.com/blendo-app/NBD-Pareto-churn-model)
