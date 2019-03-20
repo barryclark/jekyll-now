@@ -4,16 +4,16 @@ I analyzed subscriber data for a small edtech startup and am sharing my work. Pl
 In our initial discovery meeting we identified the major goal for this project, **Increase monthly retention.** 
 I set out to predict churning behavior and identify factors relating to churn.
 
+### Marketing Example
+If people who engage in [specific user behavior] are more likely to be retained, find subscriber who hasn’t engaged in [specific user behavior] and is likely to churn - send them an email to have them try that out, since that correlates with them staying longer.
+
 ## Questions
 [What does our retention rate look like?] (#retention)
 [What indicates possible churn?] (#features)
 [Can we predict who will/won’t churn?] (#prediction)
 
-### Marketing Example
-If people who engage in [specific user behavior] are more likely to be retained, find subscriber who hasn’t engaged in [specific user behavior] and is likely to churn - send them an email to have them try that out, since that correlates with them staying longer.
-
 # Retention <a name="retention"></a>
-First, I cleaned Mixpanel data of aggregate events per unique user. Events were selected by the product team as events that play a role in user engagement and highlight the core value of the product.
+First, I cleaned Mixpanel data of aggregate events per unique user. Events were selected by the product team as events that play a role in user engagement and highlight the core value of the product. This file is called the "Segmentation_Report".
 Cleaning involved NAs, outliers, and incorrect labels. Some issues include erroneous subscription periods, special accounts, and active subscribers labeled as churned. Notice how the correlation plot varied between raw and cleaned data:
 ![Raw corr plot](/images/corrPlot_dirty.jpeg)
 ![Cleaned corr plot](/images/corrPlot_clean.jpeg)
@@ -26,9 +26,22 @@ Usually in months 1, 2, and 3.
 ![density sub duration 5mo](/images/churnDensitybySubDuration5mo.jpeg)
 Particularly after 1-month.
 
+# Features <a name="features"></a>
 
+Three models were tried on the Segmentation_Report data:
+- Random Forest
+- Lasso
+- Logistic Regression
 
-Retention rate = retained subscribers per month / total previous month subscribers 
+From each of them we can get a sense of which features explain more of the variability in Churn. The values of the coefficients are very small, indicating small effects.
+
+## Random Forest
+I split 75% of the data for the training set and 25% to test. The initial RF with 2000 trees had the resulting confusion matrix:
+
+prediction    0    1
+         0 4382 1084
+         1  682 9194
+
 
 ### Attribution
 I'd like to attribute much of the code and thought that went into this churn investigation to reddit user emarkou (Eleni Markou) whose [4-part blog series](https://www.blendo.co/blog/predicting-churn-email-unsubscribe/) was enlightening and her code is on [github](https://github.com/blendo-app/NBD-Pareto-churn-model)
