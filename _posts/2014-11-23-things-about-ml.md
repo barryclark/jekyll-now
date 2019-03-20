@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "机器学习里需要知道的12堂课"
 date:   2012-10-30 19:35
-categories: machine_learning algorithms
+tags: machine_learning algorithms
 ---
 
 下图是我对Pedro Domingos 2012年的论文“A few useful things to know about machine learning”[^ml_things]的总结，大图可以在[这里][big_pic]下载，[xmind源文件][xmind]也可以免费下载。翻译与理解不对的地方请大家指正。

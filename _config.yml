@@ -1,21 +1,111 @@
 # Site settings
-title: BreezeDeus
+title: Breezedeus
+SEOTitle: Breezedeus | breeze | deus
+header-img: img/home-bg.png
 email: breezedeus@163.com
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
+description: "算法攻城 | 数学"
+keyword: "breezedeus, 机器学习, 推荐系统, NLP, 对话机器人, 爱因互动, 一个AI"
 url: "http://breezedeus.github.io" # the base hostname & protocol for your site
-twitter_username: breezedeus
-github_username:  breezedeus
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: false
+weibo_username:     deus
+zhihu_username:     breezedeus-50
+github_username:    breezedeus
+twitter_username:   breezedeus
+#facebook_username: breezedeus
+#linkedin_username:  firstname-lastname-idxxxx
+
+
 
 # Build settings
-markdown: kramdown
-
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+#permalink: pretty
 permalink: /:year/:month/:day/breezedeus-:title.html
+paginate: 20
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN
 
-#gems: [mathml.jb]
 
-# new
-#comments: true
 
-#paginate: 5
-#paginate_path: "/page:num/"
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+
+
+# Disqus settings
+disqus_username: breezedeus
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "算法优化世界"
+sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "爱因互动",
+        href: "https://einplus.cn/"
+    },{
+        title: "ChatbotsChina",
+        href: "https://weibo.com/5937873544/profile"
+    },{
+        title: "一个AI",
+        href: "http://yige.ai"
+    }
+  ]

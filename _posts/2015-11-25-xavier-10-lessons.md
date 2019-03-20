@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Xavier带来的10个新机器学习认识"
 date:   2015-11-25 22:19
-categories: 实际问题 机器学习 推荐系统 特征工程 Quora Xavier
+tags: 实际问题 机器学习 推荐系统 特征工程 Quora Xavier
 ---
 
 [Xavier Amatriain](https://www.quora.com/profile/Xavier-Amatriain)今年年初从Netflix跑到Quora去当副总裁了，不过依旧发扬着他的分享精神。这篇文章我主要跟着他最近分享的slides[^lessons15]并结合自己的看法来简单说说。这个slides其实已经是Xavier这个系列的第二部分了，第一部分[^lessons14]是他2014年底给出的。

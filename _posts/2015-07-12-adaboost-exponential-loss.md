@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Adaboost与指数损失"
 date:   2015-07-12 14:35
-categories: 机器学习 SVM Hinge L2
+tags: 机器学习 SVM Hinge L2
 ---
 
 Adaboost是著名的ensemble分类算法，具体算法描述见下图[^graph_ml]：

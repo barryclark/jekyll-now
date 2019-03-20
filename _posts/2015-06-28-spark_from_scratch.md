@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Spark介绍"
 date:   2015-06-28 15:22
-categories: spark 分布式计算 LR 路径长度
+tags: spark 分布式计算 LR 路径长度
 ---
 
 前两天我在部门内部分享了spark介绍，内容从IDE到Spark里最重要的一些基本概念，以及MLlib和GraphX的简单使用。

@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "利用GBDT模型构造新特征"
 date:   2014-11-19 17:17
-categories: machine_learning feature_engineering feature_learning
+tags: machine_learning feature_engineering feature_learning
 ---
 
 实际问题中，可直接用于机器学习模型的特征往往并不多。能否从“混乱”的原始log中挖掘到有用的特征，将会决定机器学习模型效果的好坏。引用下面一句流行的话：

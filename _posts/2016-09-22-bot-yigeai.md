@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Chatbot 5: 创建Bot的中文平台——一个AI（yige.ai）"
 date:   2016-09-22 11:00
-categories: 一个AI yige.ai 虚拟机器人 Bot Chatbot 聊天机器人 
+tags: 一个AI yige.ai 虚拟机器人 Bot Chatbot 聊天机器人 
 ---
 
 *2016年9月22日11:00*，**[一个AI（www.yige.ai）](http://www.yige.ai)**准时对外发布，这是我们研发已久的中文聊天机器人（bot）免费创建平台。

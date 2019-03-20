@@ -3,7 +3,7 @@ published: false
 layout: post
 title:  "Chatbot 8: 探索对话中的seq2seq模型"
 date:   2017-08-04 15:29
-categories: seq2seq Bot Chatbot 聊天机器人 爱因互动
+tags: seq2seq Bot Chatbot 聊天机器人 爱因互动
 ---
 
 **Seq2seq+Attention**的模型，不仅是机器翻译的baseline模型，现在也成了开域聊天生成式的baseline模型。网络上有很多文章说的都是把某些对话数据灌到这个模型，然后结果就是深度学习生成式聊天模型了。本文就是来泼冷水的，谈谈我们的经验，看看是不是所谓的深度学习生成式模型真的有说的那么神奇，已经完胜传统的检索模型……

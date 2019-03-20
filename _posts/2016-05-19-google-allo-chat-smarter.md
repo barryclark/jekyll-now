@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Chatbot 1: Google的智能问答技术"
 date:   2016-05-19 16:30
-categories: LSTM RNN Allo chatbot 聊天机器人 人工智能 深度学习
+tags: LSTM RNN Allo chatbot 聊天机器人 人工智能 深度学习
 ---
 
 去年底Google在Gmail里引入了能自动回信的smart reply功能[^gmail]，能对收到的邮件利用深度学习技术自动产生3个可能的回复，如下图底栏的蓝色语句：

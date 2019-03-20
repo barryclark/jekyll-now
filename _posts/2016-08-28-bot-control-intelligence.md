@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Chatbot 6: 对话交互时代的各种Bot——可控性与智能性的权衡"
 date:   2016-09-24 11:00
-categories: 虚拟机器人 Bot Chatbot 聊天机器人 一个AI yige.ai
+tags: 虚拟机器人 Bot Chatbot 聊天机器人 一个AI yige.ai
 ---
 
 本文很长，但其实我只分享以下两个个人观点，欢迎大家指正：

@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "《Head First Data Analysis》笔记"
 date:   2010-10-11 09:52
-categories: 数据分析 Head_First
+tags: 数据分析 Head_First
 ---
 
 # 第一章：数据分析介绍

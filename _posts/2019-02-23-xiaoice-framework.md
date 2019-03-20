@@ -2,8 +2,12 @@
 published: true
 layout: post
 title:  "Chatbot 8: 微软小冰对话机器人架构"
+subtitle: 如何从0开始构建一个工业级对话机器人
+header-style: text
 date:   2019-02-23 22:00
-categories: 微软小冰 DeepBot 聊天机器人架构 
+mathjax: true
+tags: 微软小冰 DeepBot 聊天机器人 爱因互动
+
 ---
 
 
@@ -341,7 +345,7 @@ PDR、NRG和UDR生成的所有候选response，利用 boosted tree 模型统一�
 
 * **全局凝聚力（Global Cohesion）** 特征：$R'$ 要与 $Q_c$、$C$ 语义一致。$R'$ 与 $(Q_c, C)$ 之间的全局凝聚力分数通过另一个语义匹配模型DSSM计算得到。DSSM的训练数据来自历史对话session。 
 
-* **同理心匹配（Empathy Matching）** 特征：好的 $R'$ 应当符合小冰的人设。可以把 $R'$ 当作query，$(C, Q_c)$ 作为背景，通过同理心计算模块中的 CQU 和 UU 计算得到 $\mathbf{e}_{R'}$。然后再把 $\mathbf{e}_{R'}$ 和我们期望得到的 $\mathbf{e}_{R}$ 进行比较，获得各种比较分数作为特征。 
+* **同理心匹配（Empathy Matching）** 特征：好的 $R'$ 应当符合小冰的人设。可以把 $R'$ 当作query，$(C, Q_c)$ 作为背景，通过同理心计算模块中的 CQU 和 UU 计算得到$\mathbf{e}_{R'}$ 。然后再把 $\mathbf{e}_{R'}$ 和我们期望得到的 $\mathbf{e}_{R}$ 进行比较，获得各种比较分数作为特征。 
 
 * **检索匹配（Retrieval Matching）** 特征：这类特征仅用在 PDR 产生的候选response上。记与候选response $R'$ 对应的q为 $Q'$。可以利用各种方法计算 $Q_c$ 与 $Q'$ 的匹配分数，如BM25、Tf-Idf、或者各种意义匹配方法如DSSM等。 
 

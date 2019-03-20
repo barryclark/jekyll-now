@@ -3,7 +3,7 @@ published: false
 layout: post
 title:  "特征工程（Feature Engineering）"
 date:   2014-11-15 18:30
-categories: machine_learning feature_engineering feature_learning
+tags: machine_learning feature_engineering feature_learning
 ---
 
 

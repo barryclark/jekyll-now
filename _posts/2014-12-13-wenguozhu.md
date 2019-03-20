@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "aDev第13期#个性化推荐技术#总结（Part III, Final: 稳国柱@豆瓣）"
 date:   2012-11-12 10:44
-categories: 企业推荐系统 推荐算法 电影推荐 图书推荐 音乐推荐 豆瓣
+tags: 企业推荐系统 推荐算法 电影推荐 图书推荐 音乐推荐 豆瓣
 ---
 
 # Talk3：寻路推荐，稳国柱@豆瓣

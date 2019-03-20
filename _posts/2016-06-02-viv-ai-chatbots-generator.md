@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Chatbot 4: Viv能搅动bot市场吗？"
 date:   2016-09-01 22:21
-categories: Viv chatbot bot 聊天机器人 人工智能 Siri
+tags: Viv chatbot bot 聊天机器人 人工智能 Siri
 ---
 
 Siri的开发团队从苹果离职后开发了**[Viv](http://viv.ai)**，一个bot创建平台。Viv还没正式发布，只是在今年5月9日的[TechCrunch Disrupt](https://techcrunch.com/2016/05/09/heres-what-viv-looks-like-the-next-generation-ai-assistant-built-by-siri-creator/)（[演讲视频][viv_video]）大会上show off了一下，以下是系统截图。

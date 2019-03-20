@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "特征哈希（Feature Hashing）"
 date:   2014-11-20 21:41
-categories: machine_learning feature_engineering feature_learning dimensionality_reduction
+tags: machine_learning feature_engineering feature_learning dimensionality_reduction
 ---
 
 在[特征处理（Feature Processing）][fproc]中我介绍了利用笛卡尔乘积的方法来构造组合特征。这种方法虽然简单，但麻烦的是会使得特征数量爆炸式增长。比如一个可以取N个不同值的类别特征，与一个可以去M个不同值的类别特征做笛卡尔乘积，就能构造出N\*M个组合特征。 

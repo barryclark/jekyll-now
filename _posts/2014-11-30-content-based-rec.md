@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "基于内容的推荐（Content-based Recommendations）"
 date:   2012-04-10 14:06
-categories: 推荐算法 推荐系统 Content-based Recommendations
+tags: 推荐算法 推荐系统 Content-based Recommendations
 ---
 
 Collaborative Filtering Recommendations (协同过滤，简称CF) 是目前最流行的推荐方法，在研究界和工业界得到大量使用。但是，工业界真正使用的系统一般都不会只有CF推荐算法，**Content-based Recommendations (CB)**基本也会是其中的一部分。

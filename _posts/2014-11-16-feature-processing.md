@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "特征处理（Feature Processing）"
 date:   2014-11-15 18:30
-categories: machine_learning feature feature_learning
+tags: machine_learning feature feature_learning
 ---
 
 

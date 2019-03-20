@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "aDev第13期#个性化推荐技术#总结（Part I：袁全@一淘）"
 date:   2012-11-01 01:36
-categories: 企业推荐系统 推荐算法 一淘
+tags: 企业推荐系统 推荐算法 一淘
 ---
 
 # Talk1：Large-scale Ecommerce RS in Etao，袁全@一淘

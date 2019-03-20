@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Chatbot 3: 利用LSTM构建半检索式Chatbots"
 date:   2016-06-15 11:15
-categories: LSTM chatbot 聊天机器人 人工智能
+tags: LSTM chatbot 聊天机器人 人工智能
 ---
 
 微软研究者最近发表了论文“[End-to-end LSTM-based dialog control optimized with supervised and reinforcement learning](http://arxiv.org/abs/1606.01269)”，论文里提出了利用LSTM构建半检索式聊天系统的一般框架。这是流程图，下面我以用户输入“Call Jason Williams”为例具体说明每步都在做什么。

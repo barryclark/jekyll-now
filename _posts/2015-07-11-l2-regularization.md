@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "L2约束与L2正则项优化问题的关系"
 date:   2015-07-11 09:52
-categories: 机器学习 最优化 L2正则项
+tags: 机器学习 最优化 L2正则项
 ---
 
 所谓的**L2约束问题**，就是带L2约束的优化问题，见下式：

@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "SVM等于Hinge损失 + L2正则化"
 date:   2015-07-12 08:38
-categories: 机器学习 SVM Hinge L2
+tags: 机器学习 SVM Hinge L2
 ---
 
 这里说的SVM是指最原始的2分类SVM，不考虑SVM的其他各种扩展。为简单起见，我们也只考虑线性SVM，对于带核函数的SVM，利用相似的推导我们可以获得相同的结论：

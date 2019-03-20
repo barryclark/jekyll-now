@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Facebook的朋友推荐系统"
 date:   2012-08-25 11:53
-categories: industrial_system recommender_system
+tags: industrial_system recommender_system
 ---
 
 

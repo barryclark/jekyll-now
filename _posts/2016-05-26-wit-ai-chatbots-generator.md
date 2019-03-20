@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "Chatbot 2: 低价制造chatbots的利器 Wit.ai"
 date:   2016-05-26 23:15
-categories: wit.ai chatbot 聊天机器人 人工智能
+tags: wit.ai chatbot 聊天机器人 人工智能
 ---
 
 **[Wit.ai](https://wit.ai)**[注：要梯子]是Facebook收购的一家AI公司，他们的主要产品是一个帮助制造chatbot的平台：**Bot Engine**。Chatbot开发者可以通过bot engine提供的网页工具和API接口比较方便地构建具有某种特定功能的chatbot，比如酒店预订、订餐、打车，甚至是找对象等等。

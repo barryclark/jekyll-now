@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "也说说EM"
 date:   2012-08-12 14:12
-categories: machine_learning algorithms theory
+tags: machine_learning algorithms theory
 ---
 
 前几天看Andrew Ng 讲EM的视频，又温习了一遍这玩意。 

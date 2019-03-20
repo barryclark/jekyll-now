@@ -3,7 +3,8 @@ published: true
 layout: post
 title:  "L1正则化优化问题的一种求解方法"
 date:   2015-07-11 20:05
-categories: 机器学习 最优化 L1正则项
+mathjax: true
+tags: 机器学习 最优化 L1正则项
 ---
 
 所谓的**L1正则化**优化问题，就是如下带$L_1$正则化的最小化问题：

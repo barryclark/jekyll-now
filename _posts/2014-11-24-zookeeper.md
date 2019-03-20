@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "ZooKeeper介绍"
 date:   2014-11-24 18:53
-categories: 分布式系统 理论
+tags: 分布式系统 理论
 ---
 
 ZooKeeper使用了**client-server（客户端-服务器）**的架构，其中server指的是提供ZooKeeper服务的那些结点，而client指的是使用ZooKeeper服务的那些结点。[^ibm_blog]

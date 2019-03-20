@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "为什么镜子会使人左右颠倒，却不会上下颠倒？"
 date:   2010-01-07 09:52
-categories: 镜子 左右颠倒
+tags: 镜子 左右颠倒
 ---
 
 ![熊照镜子][bear]
