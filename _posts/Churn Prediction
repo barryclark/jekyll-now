@@ -1,4 +1,4 @@
-I analyzed subscriber data for a small edtech startup and am sharing my work. Please get in touch with comments if you are interested in learning more with me.
+I analyzed subscriber data for a small edtech startup and am sharing my work.
 
 # Goal
 In our initial discovery meeting we identified the major goal for this project, **Increase monthly retention.** 
@@ -9,8 +9,8 @@ If people who engage in [specific user behavior] are more likely to be retained,
 
 ## Questions
 [What does our retention rate look like?] (#retention)
-[What indicates possible churn?] (#features)
 [Can we predict who will/won’t churn?] (#prediction)
+[What features indicate possible churn?] (#features)
 
 # Retention <a name="retention"></a>
 First, I cleaned Mixpanel data of aggregate events per unique user. Events were selected by the product team as events that play a role in user engagement and highlight the core value of the product. This file is called the "Segmentation_Report".
@@ -26,12 +26,12 @@ Usually in months 1, 2, and 3.
 ![density sub duration 5mo](/images/churnDensitybySubDuration5mo.jpeg)
 Particularly after 1-month.
 
-# Features <a name="features"></a>
+# Prediction <a name="prediction"></a>
 
-Three models were tried on the Segmentation_Report data:
+Three models were tried on the Segmentation_Report data to predict which subscribers would churn based on features from the Segmentation_Report.
 - Random Forest
-- Lasso
 - Logistic Regression
+- Lasso Regression
 
 From each of them we can get a sense of which features explain more of the variability in Churn. The values of the coefficients are very small, indicating small effects.
 
@@ -41,6 +41,30 @@ prediction | 0 | 1
 ---|---|---
 0 | 4382 |1084
 1 | 682 | 9194
+
+The model is relatively accurate, but prone to overfit. 
+```R
+> accuracy<- (A+D)/(A+B+C+D)
+[1] 0.8848911
+> specificity<-D/(B+D) # true negatives / total negatives
+[1] 0.8653239
+> sensitivity<-A/(A+C) # true positives / total positives
+[1] 0.894532
+> precision<-A/(A+B) # true positives / predicted positives
+[1] 0.9309437
+> F1<-2*precision*sensitivity/(precision+sensitivity)
+[1] 0.9123747
+```
+![RFmodelVarImpPlot](/images/initialRFvarImpPlot.jpeg)
+
+## Logistic Regression
+The lrm
+
+## Lasso
+Lasso regression is a regularization technique to shrink some of the parameters in our logistic regression model
+
+# Features <a name="features"></a>
+
 
 ### Attribution
 I'd like to attribute much of the code and thought that went into this churn investigation to reddit user emarkou (Eleni Markou) whose [4-part blog series](https://www.blendo.co/blog/predicting-churn-email-unsubscribe/) was enlightening and her code is on [github](https://github.com/blendo-app/NBD-Pareto-churn-model)
