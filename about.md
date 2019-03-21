@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Scott Shapiro
+title: About
 permalink: /about/
 ---
 
