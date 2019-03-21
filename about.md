@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about-Scott-Shapiro/
+permalink: /about/
 ---
 
 Product Manager. Cryptocurrency enthusiast. Berkeley MBA. Paleo. Aspiring Mountaineer.
