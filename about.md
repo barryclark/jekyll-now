@@ -1,15 +1,13 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about-Scott-Shapiro/
 ---
 
-Some information about you!
+Product Manager. Cryptocurrency enthusiast. Berkeley MBA. Paleo. Aspiring Mountaineer.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+### About this site
+Jekyll on Github Pages.
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[m.me/scott.shapiro](m.me/scott.shapiro)
