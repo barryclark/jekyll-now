@@ -1,0 +1,149 @@
+@startuml Architecture
+page 2x1
+package NetGame {
+    enum Direction {
+        Up
+        Down
+        Left
+        Right
+        xDelta()
+        yDelta()
+        rotate()
+    }
+
+    class Directions {
+        rotate()
+    }
+
+    Directions *-up- Direction : components
+
+    note "Immutable Class" as NoteIC
+    Directions .. NoteIC
+    TilePos .left. NoteIC
+    Tile .. NoteIC
+
+    Direction <..> Directions : <<convert>>
+
+    class TilePos {
+        x
+        y
+        move(Direction)
+    }
+
+    enum TileType {
+        Wire
+        Terminal
+        Server
+    }
+
+    enum TileStatus {
+        Unpowered
+        Powered
+        Cyclic
+    }
+
+    class Tile {
+        ' TileType type
+        ' TileStatus status
+        ' Directions connections
+        int powerId
+    }
+
+    Tile -> TileType : type
+    Tile -> TileStatus : status
+    Tile -> Directions : connections
+
+    class NetGame {
+        int width
+        int height
+        bool isCompleted
+        getTileAt(TilePos)
+        randomizeRotations()
+        rotateAt(TilePos)
+    }
+
+    NetGame o-- Tile : tiles
+
+    class Generator {
+        int width
+        int height
+        int seed
+        int serverCount
+        int powerTypeCount
+        generate()
+    }
+
+    Generator .left.> NetGame : <<create>>
+}
+
+package UnityNetGame {
+    class NetGameBehaviour {
+        Unity.Tilemaps.Tilemap tilemap
+        GenerateNewPuzzle()
+        ResetPuzzle()
+        OnClickAt(Vector2)
+    }
+
+    NetGameBehaviour -> NetGame
+
+    class NetGamePanel {
+        Update()
+    }
+
+    NetGamePanel -> NetGameBehaviour
+}
+
+package UnityLogicGame {
+    interface IActivator {
+    }
+
+    interface IActivatable {
+        OnActivate()
+        OnDeactivate()
+    }
+
+    IActivator .right.> IActivatable : <<triggers>>
+
+    class Button {
+    }
+    Button -up-|> IActivator
+
+    class CubeSpawner {
+    }
+    CubeSpawner -up-|> IActivatable
+
+    class Lamp {
+    }
+    Lamp -up-|> IActivatable
+
+    class Door {
+    }
+    Door -up-|> IActivatable
+}
+
+package UnityMovement {
+
+    class PlayerAbilities {
+    }
+
+    class Player {
+    }
+
+    Player -> PlayerAbilities : abilities
+
+    class UpgradeController {
+    }
+
+    class ManualStandController {
+    }
+    ManualStandController -> PlayerAbilities
+    ManualStandController -> IActivator
+    ManualStandController -> UpgradeController
+    ManualStandController -[hidden]->IActivatable
+}
+
+
+NetGamePanel -[hidden]->Player
+ManualStandController -[hidden]->Button
+
+@enduml

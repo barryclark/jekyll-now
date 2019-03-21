@@ -1,0 +1,25 @@
+@startuml Components
+
+class GameObject {
+}
+
+
+class Component {
+}
+
+GameObject *-right- Component
+
+class MyScript1 {
+}
+
+class MyScript2 {
+}
+
+class MyScript3 {
+}
+
+MyScript1 -up-|> Component
+MyScript2 -up-|> Component
+MyScript3 -up-|> Component
+
+@enduml
