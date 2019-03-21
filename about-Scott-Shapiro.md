@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About
+title: About Scott Shapiro
 permalink: /about-Scott-Shapiro/
 ---
 
 Product Manager. Cryptocurrency enthusiast. Berkeley MBA. Paleo. Aspiring Mountaineer.
 
-### About this site
+#### This site
 Jekyll on Github Pages.
 
-### Contact me
+#### Contact me
 [m.me/scott.shapiro](m.me/scott.shapiro)
