@@ -6,16 +6,26 @@ header:
     background-color: "#6B8A78"
 ---
 
-<h1> {{ page.title }} </h1>
+<div class="gallery-header">
+    <img src="{{ page.header.image_fullwidth }}">
+    <h1> {{ page.title }} </h1>
+</div>
+<div class="gallery-info-banner">
+    <div class="album-location">
+        <i class="fas fa-globe-europe"></i>
+        {{ site.data.gallery.galleries[page.gallery].location }}
+    </div>
+    <div class="album-date">
+        <i class="far fa-calendar-alt"></i>
+        {{ site.data.gallery.galleries[page.gallery].date }}
+    </div>
+</div>
 
-<section class="photos" data-featherlight-gallery data-featherlight-filter="a">
-{% for image in page.images %}
-        <a href="{{ image }}">
-            <img src="{{ page.link }}/thumbs/{{ image }}">
-        </a>
-        {{ page.exif[image] }}
-{% endfor %}
+<section class="photos forcedgallery">
+    {% for image in page.images %}
+        <a href="{{ image }}" title="
+        <b> {{ page.exif[image].model }} with {{ page.exif[image].lens }}</b> <br>
+        ISO {{ page.exif[image].iso }} {{ page.exif[image].shutter }} @ f/{{ page.exif[image].fstop }} {{ page.exif[image].focal_length }}mm
+        " alt="Photo Alt"><img src="thumbs/{{ image }}" border="0" class="thumb"></a>
+    {% endfor %}
 </section>
-
-<!--{{ page.exif_model[image] }}-->
-{{ page }}

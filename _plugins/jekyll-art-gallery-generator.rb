@@ -222,11 +222,12 @@ module Jekyll
           # If not defined add a trimmed filename to help with SEO
           self.data["exif"][dest_image] = {}
           self.data["exif"][dest_image]["model"]=EXIFR::JPEG.new(dest_image_abs_path).model
-          self.data["exif"][dest_image]["focal_length"]=EXIFR::JPEG.new(dest_image_abs_path).focal_length
+          self.data["exif"][dest_image]["focal_length"]=EXIFR::JPEG.new(dest_image_abs_path).focal_length.to_i
           self.data["exif"][dest_image]["shutter"]=EXIFR::JPEG.new(dest_image_abs_path).exposure_time.to_s
           self.data["exif"][dest_image]["iso"]=EXIFR::JPEG.new(dest_image_abs_path).iso_speed_ratings
           self.data["exif"][dest_image]["fstop"]=EXIFR::JPEG.new(dest_image_abs_path).f_number.to_f
-          
+          self.data["exif"][dest_image]["lens"]=EXIFR::JPEG.new(dest_image_abs_path).lens_model
+
           self.data["captions"][dest_image]=File.basename(image,File.extname(image)).gsub("_", " ")
         end
         # remember the image

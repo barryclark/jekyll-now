@@ -14,16 +14,16 @@ title: Gallery
 sort_field: "title" # sorting of the galleries on the gallery index page
 #sort_reverse: true
 thumbnail_size:
-  x: 500
-  y: 500
+  x: 150
+  y: 150
 front_thumb_size:     # best image thumb size for the gallery super-index page
   x: 500
   y: 500
 header_thumb_size:    # best image thumb for the header of a gallery index page
   x: 1900
-  y: 170
+  y: 600
 
-scale_method: fit # default for all galleries. could be fit or crop, crop_bottom, crop_right, crop_left, crop_top ('crop' crops around, others crop out the side indicated as a parameter
+scale_method: crop # default for all galleries. could be fit or crop, crop_bottom, crop_right, crop_left, crop_top ('crop' crops around, others crop out the side indicated as a parameter
 strip_exif: false
 size_limit: 1920 # maximum size, px in either dimention, to limit the images to
 
@@ -37,11 +37,16 @@ galleries:
     hidden: true # don't generate index file - it's still on the web though
   Random:
     title: Random Collection # name used in the navigation bar and headers
-    description: Pictures that don't quite belong to any other album
-#    #hidden: true
-#    #sort_field: name # rule for sorting images within galleries.
+    date: Whenever
+    location: Wherever
     best_image: 20180901.jpg
-#    #header_image: sy_header.jpg
+    header_image: 20180901.jpg
 #    scale_method: crop_bottom
+  music_video:
+    title: Pineapple Road Shoot
+    date: Jan 13, 2019
+    location: Wassenaar, NL
+    best_image: DSC02381.jpg
+    header_image: DSC02381.jpg
 
 #symlink: true # to avoid copying big files into the generated site folder - does not work with stripping EXIF
