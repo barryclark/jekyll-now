@@ -254,6 +254,15 @@ Our competition is not affiliated with the admissions process of our school. How
 {: .answer}
 Please contact [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com) with your question. We will be happy to answer!
 
+## Sponsors
+
+<div class="sponsor-table">
+<div class="sponsor-row">
+  <div><a href="https://www.youcandothecube.com"><img src="/images/rubiks.svg"></a></div>
+  <div><strong>You Can Do The Rubik's Cube</strong><br><a href="https://www.youcandothecube.com">https://www.youcandothecube.com</a></div>
+</div>
+</div>
+
 <script type="text/javascript">
   questions = document.getElementsByClassName("question");
   for (let i = 0; i < questions.length; i++) {

@@ -17,6 +17,24 @@
 	}
 }
 
+.sponsor-table {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.sponsor-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.sponsor-row img {
+	max-width: 280px;
+	height: auto;
+}
+
 .q-icon {
 	vertical-align: -5px;
 }
