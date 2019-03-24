@@ -1074,8 +1074,8 @@ nav a:not(:hover) {
 /* Light theme (default) */
 
 #page {
-	background: var(--color-black);
-	color: var(--color-white);
+	background: var(--color-white);
+	color: var(--color-black);
 }
 a {
 	color: var(--color-link);
@@ -1219,7 +1219,7 @@ nav label {
 	--color-translucentblack: rgba(0,0,0,.5);
 	--color-translucentwhite: rgba(255,255,255,.5);
 	
-	--color-background: rgba(255,255,255,1);
+	--color-background: rgba(0,0,0,1);
 	
 	--font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	--font-code: Monaco, Menlo, Consolas,'Courier New', monospace;
@@ -2142,8 +2142,8 @@ nav strong label mark {
 	padding-top:180px;
 }
 .cover {
-	height: 62vh;
-	padding-top: 190px;
+	height: 72vh;
+	padding-top: 210px;
 }
 .sticky-header {
 	background-color: #fff;
