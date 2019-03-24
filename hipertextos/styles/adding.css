@@ -89,9 +89,13 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Portfolio Titles */
 #layout h3 u { font-weight:300; letter-spacing: 0em}
 
+#glass-front {background:var(--color-black);margin-top:0px!important;}
+
 /* Covers */
 #covers a {color: var(--color-grey);text-decoration:none;margin:6px;}
-#covers .cover-links {padding-top:16px;margin-top:-30px;padding-bottom:16px;border:thin solid transparent;display:block;border-radius:6px;}
+#covers .cover-links {padding-top:16px;
+    margin-top:-30px;padding-bottom:16px;
+    border:thin solid transparent;display:block;border-radius:6px;}
 #covers .cover-links:hover {border:thin solid rgba(60,60,60,.69);display:block;}
 #covers img {width: 12%;margin:0px; }
 #covers article {border:0;}
