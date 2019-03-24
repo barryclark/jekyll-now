@@ -2142,8 +2142,8 @@ nav strong label mark {
 	padding-top:180px;
 }
 .cover {
-	height: 56vh;
-	padding-top: 160px;
+	height: 72vh;
+	padding-top: 210px;
 }
 .sticky-header {
 	background-color: #fff;
@@ -2862,3 +2862,4 @@ dialog,
 }
 
 /* The end */
+
