@@ -46,6 +46,8 @@ main {padding-bottom:0!important;}
     background-image: url("/img/homed.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
     background-size: cover;background-repeat: no-repeat;border: none; color: var(--color-white);border-top:5px solid var(--color-hardgrey);border-bottom:5px solid var(--color-hardgrey);letter-spacing: .06em;overflow: hidden;text-align: center;
 }
+#logotips article {padding:23px;}
+#fronters-brand .cover-justify svg {min-width:72px;}
 img.front-responsive  {width:450px;margin-top:68px;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
