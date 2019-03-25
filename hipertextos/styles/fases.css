@@ -55,10 +55,6 @@ header, footer {
 .ktr-header,
 .ktr-header h1 {
 	border-color: transparent;
-	line-height: 1.2em;
-	margin: 0;
-	padding: 0;
-	text-transform: uppercase;
   	-webkit-hyphens: none;
   	   -moz-hyphens: none;
   		-ms-hyphens: none;
@@ -563,6 +559,7 @@ header, footer {
 	z-index: 100;
 	tranform: translate3D(0, 0, 600px);
 }
+
 
 
 
