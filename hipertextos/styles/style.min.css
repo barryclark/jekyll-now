@@ -2861,6 +2861,561 @@ dialog,
 	stroke: transparent !important;
 }
 
+/* Symbols */
+/* ------------------------------------------------------------ Symbols */
+
+/* Symbols with HTML Entities */
+
+[class*='units']:after, 
+[class*='units']:before, 
+.units:after {
+	font-size: 1em
+}
+[class*='symbol']:before, 
+.symbol:before {
+	display: inline;
+	margin-right: .5em;
+}
+[class*='symbol'].button-icon:before {
+	margin: 0;
+}
+.symbol-bottom-arrow:before {
+	content:'\2193';
+}
+.symbol-top-arrow:before {
+	content:'\2191';
+}
+.symbol-left-arrow:before {
+	content:'\2190';
+}
+.symbol-right-arrow:before {
+	content:'\2192';
+}
+.symbol-bi-arrow:before {
+	content:'\2194';
+}
+.symbol-bottom-arrows:before {
+	content:'\21D3';
+}
+.symbol-top-arrows:before {
+	content:'\21D1';
+}
+.symbol-left-arrows:before {
+	content:'\21D0';
+}
+.symbol-right-arrows:before {
+	content:'\21D2';
+}
+.symbol-bi-arrows:before {
+	content:'\21D4';
+}
+
+.next:after,
+.prev:before,
+.symbol-bottom:before,
+.symbol-top:before,
+.symbol-left:before,
+.symbol-right:before {
+	content:'\25B6';
+ 	display: inline-block;
+}
+.symbol-bottom:before {
+ 	 -o-transform: rotate(90deg);
+	 -ms-transform: rotate(90deg);
+	 -moz-transform: rotate(90deg);
+	 -webkit-transform: rotate(90deg);
+	 transform: rotate(90deg);
+}
+.symbol-top:before {
+ 	 -o-transform: rotate(270deg);
+	 -ms-transform: rotate(270deg);
+	 -moz-transform: rotate(270deg);
+	 -webkit-transform: rotate(270deg);
+	 transform: rotate(270deg);
+}
+.prev:before,
+.symbol-left:before {
+ 	margin-right: .25em;
+ 	 -o-transform: rotate(180deg);
+	 -ms-transform: rotate(180deg);
+	 -moz-transform: rotate(180deg);
+	 -webkit-transform: rotate(180deg);
+	 transform: rotate(180deg);
+}
+.next:after,
+.symbol-right:before {
+ 	margin-left: .25em;
+}
+
+.symbol-bottom-hand:before {
+	content:'\261F';
+}
+.symbol-top-hand:before {
+	content:'\261D';
+}
+.symbol-left-hand:before {
+	content:'\261C';
+}
+.symbol-right-hand:before {
+	content:'\261E';
+}
+
+.symbol-add:before {
+	content:'\271A';
+}
+.symbol-atsign:before,
+.tweet-quote cite:before {
+	content: '\0040';
+}
+.symbol-airplane:before {
+	content:'\2708';
+}
+.symbol-atom:before {
+	content:'\269B';
+}
+.symbol-badge-star:before {
+	content:'\2739';
+}
+.symbol-biohazard:before {
+	content:'\2623';
+}
+.symbol-blackphone:before {
+	content:'\260E';
+}
+.symbol-blackstar:before {
+	content:'\2605';
+}
+.symbol-blacksun:before {
+	content:'\2600';
+}
+.symbol-bullet:before {
+	content:'\2022';
+}
+.symbol-caduceus:before {
+	content:'\2695';
+}
+.symbol-cents:before, 
+.units-cents:after {
+	content:' \00a2';
+}
+.symbol-chess-white-king:before {
+	content:'\2654';
+}
+.symbol-chess-white-queen:before {
+	content:'\2655';
+}
+.symbol-chess-white-rook:before {
+	content:'\2656';
+}
+.symbol-chess-white-bishop:before {
+	content:'\2657';
+}
+.symbol-chess-white-knight:before {
+	content:'\2658';
+}
+.symbol-chess-white-pawn:before {
+	content:'\2659';
+}
+.symbol-chess-black-king:before {
+	content:'\265A';
+}
+.symbol-chess-black-queen:before {
+	content:'\265B';
+}
+.symbol-chess-black-rook:before {
+	content:'\265C';
+}
+.symbol-chess-black-bishop:before {
+	content:'\265D';
+}
+.symbol-chess-black-knight:before {
+	content:'\265E';
+}
+.symbol-chess-black-pawn:before {
+	content:'\265F';
+}
+.symbol-close:before {
+	content:'\2297';
+}
+.symbol-cloud:before {
+	content:'\2601';
+}
+.symbol-club:before {
+	content:'\2663';
+}
+.symbol-command:before {
+	content:'\2318';
+}
+.symbol-copyright:before {
+	content:'\00a9';
+	font-weight: bold;
+}
+.symbol-cross:before {
+	content:'\271D';
+}
+.symbol-css:before {
+	content: '\007b css\007D';
+}
+.symbol-david:before {
+	content:'\2721';
+}
+.symbol-diamond:before {
+	content:'\2666';
+}
+.symbol-dollar:before, 
+.units-dollar:after {
+	content:' $';
+}
+.symbol-edit:before {
+	content:'\270E';
+}
+.symbol-email:before {
+	content:'\2709';
+}
+.symbol-euro:before, 
+.units-euro:after {
+	content:' \20AC';
+}
+.symbol-favorite:before {
+	content:'\2665';
+}
+.symbol-female:before {
+	content:'\2640';
+}
+.symbol-firstquartermoon:before {
+	content:'\263D';
+}
+.symbol-flag:before {
+	content:'\2691';
+}
+.symbol-flower:before {
+	content:'\2741';
+}
+.symbol-forward:before {
+	content:'\25B6\25B6';
+}
+.symbol-frowningface:before  {
+	content:'\2639';
+}
+.symbol-full:before {
+	content:'\22A0';
+}
+.symbol-gear:before {
+	content:'\2699';
+}
+.symbol-game:before {
+	content:'\1F3AE';
+}
+.symbol-grid:before {
+	content:'\2665';
+}
+.symbol-heart:before {
+	content:'\2665';
+}
+.symbol-hammerandsickle:before {
+	content:'\262D';
+}
+.symbol-hash:before {
+	content: '\2317';
+}
+.symbol-html:before {
+	content: '\003C html\003E';
+}
+.symbol-hipertextos:before {
+	content:'\003C -\003E';
+}
+.symbol-hotsprings:before {
+	content:'\2668';
+}
+.symbol-hours:before, 
+.units-hours:after {
+	content:' hour(s)';
+}
+.symbol-hyperlink:before {
+	content:'\221E';
+ 	display: inline-block;
+	 -o-transform: rotate(45deg);
+	 -ms-transform: rotate(45deg);
+	 -moz-transform: rotate(45deg);
+	 -webkit-transform: rotate(45deg);
+	 transform: rotate(45deg);
+}
+.symbol-infinity:before {
+	content:'\221E';
+}
+.symbol-iching-heaven:before, 
+.symbol-list:before {
+	content:'\2630';
+}
+.symbol-iching-lake:before {
+	content:'\2631';
+}
+.symbol-iching-fire:before {
+	content:'\2632';
+}
+.symbol-iching-thunder:before {
+	content:'\2633';
+}
+.symbol-iching-wind:before {
+	content:'\2634';
+}
+.symbol-iching-water:before {
+	content:'\2635';
+}
+.symbol-iching-mountain:before, 
+.symbol-blog-layout:before  {
+	content:'\2636';
+}
+.symbol-iching-earth:before, 
+.symbol-grid:before {
+	content:'\2637';
+}
+.symbol-js:before {
+	content: '\007b js\007D';
+}
+.symbol-justice:before {
+	content:'\2696';
+}
+.symbol-keyboard:before {
+	content:' \2328';
+}
+.symbol-km:before, 
+.units-km:after {
+	content:' km';
+}
+.symbol-lastquartermoon:before {
+	content:'\263E';
+}
+.symbol-list:before {
+	content:'\2630';
+}
+.symbol-male:before {
+	content:'\2642';
+}
+.symbol-meters:before, 
+.units-meters:after {
+	content:' meters';
+}
+.symbol-minutes:before, 
+.units-minutes:after {
+	content:' minute(s)';
+}
+.symbol-moonstar:before {
+	content:'\262A';
+}
+.symbol-more:before {
+	content:'\2295';
+}
+.symbol-music-quarter:before {
+	content:'\2669';
+}
+.symbol-music-eighth:before {
+	content:'\266A';
+}
+.symbol-music-beamed-eighth:before, 
+.symbol-musicnote:before {
+	content:'\266B';
+}
+.symbol-music-beamed-sixteenth:before {
+	content:'\266C';
+}
+.symbol-music-flat:before {
+	content:'\266D';
+}
+.symbol-music-natural:before {
+	content:'\266E';
+}
+.symbol-music-sharp:before {
+	content:'\266F';
+}
+.symbol-ok:before, 
+.link-ok:after {
+	content:'\2714';
+}
+.symbol-paragraph:before {
+	content:'\00b6';
+}
+.symbol-peace:before  {
+	content:'\262E';
+}
+.symbol-pic:before {
+	content:'\25A3';
+}
+.symbol-phone:before {
+	content:'\2706';
+}
+.symbol-planet-earth:before {
+	content:'\2641';
+}
+.symbol-planet-jupiter:before {
+	content:'\2643';
+}
+.symbol-planet-mars:before {
+	content:'\2642';
+}
+.symbol-planet-mercury:before {
+	content:'\263F';
+}
+.symbol-planet-neptune:before {
+	content:'\2646';
+}
+.symbol-planet-pluto:before {
+	content:'\2647';
+}
+.symbol-planet-saturn:before {
+	content:'\2644';
+}
+.symbol-planet-uranus:before {
+	content:'\2645';
+}
+.symbol-planet-venus:before {
+	content:'\2640';
+}
+.symbol-play:before {
+	content:'\25B6';
+}
+.symbol-pound:before, 
+.units-pound:after {
+	content:' \00a3';
+}
+.symbol-radioactive:before {
+	content:'\2622';
+}
+.symbol-recycle:before {
+	content:'\267D';
+}
+.symbol-recycle2:before {
+	content:'\267C';
+}
+.symbol-registered:before {
+	content:'\00ae';
+	font-weight: bold;
+	margin: 1px 0 -1px;
+}
+.symbol-remove:before {
+	content:'\2716';
+	margin: 1px 0 -1px;
+}
+.symbol-return:before {
+	content:'\21B5';
+}
+.symbol-rew:before {
+	content:'\25B6\25B6';
+	-o-transform: rotate(180deg);
+	 -ms-transform: rotate(180deg);
+	 -moz-transform: rotate(180deg);
+	 -webkit-transform: rotate(180deg);
+	 transform: rotate(180deg);
+}
+.symbol-save:before {
+	content:'\2713';
+}
+.symbol-scissors:before {
+	content:'\2704';
+}
+.symbol-seconds:before, 
+.units-seconds:after {
+	content:' second(s)';
+}
+.symbol-section:before {
+	content:' \00a7';
+}
+.symbol-share:before {
+	content:'\23CD';
+}
+.symbol-skull:before {
+	content:'\2620';
+}
+.symbol-smilingface:before {
+	content:'\263A';
+	margin: 1px 0 -1px;
+}
+.symbol-snow:before {
+	content:'\2744';
+}
+.symbol-snowman:before {
+	content:'\2603';
+}
+.symbol-spade:before {
+	content:'\2660';
+}
+.symbol-spark:before {
+	content:'\2737';
+}
+.symbol-star:before {
+	content:'\2605';
+}
+.symbol-stop:before {
+	content:'\25A0';
+}
+.symbol-sun:before {
+	content:'\2600';
+}
+.symbol-tools:before {
+	content:'\2692';
+}
+.symbol-umbrella:before {
+	content:'\2602';
+}
+.symbol-unable:before {
+	content:'\2205';
+}
+.symbol-warning:before {
+	content:'\26A0';
+}
+.symbol-watch:before {
+	content:'\231A';
+}
+.symbol-whitephone:before {
+	content:'\260F';
+}
+.symbol-whitestar:before, 
+.link-starred:after {
+	content:'\2606';
+}
+.symbol-wrong:before {
+	content:'\2718';
+}
+.symbol-yingyang:before {
+	content:'\262F';
+}
+.symbol-zodiac-aries:before {
+	content:'\2648';
+}
+.symbol-zodiac-taurus:before {
+	content:'\2649';
+}
+.symbol-zodiac-gemini:before {
+	content:'\264A';
+}
+.symbol-zodiac-cancer:before {
+	content:'\264B';
+}
+.symbol-zodiac-leo:before {
+	content:'\264C';
+}
+.symbol-zodiac-virgo:before {
+	content:'\264D';
+}
+.symbol-zodiac-libra:before {
+	content:'\264E';
+}
+.symbol-zodiac-scorpio:before {
+	content:'\264F';
+}
+.symbol-zodiac-sagittarius:before {
+	content:'\2650';
+}
+.symbol-zodiac-capricorn:before {
+	content:'\2651';
+}
+.symbol-zodiac-aquarius:before {
+	content:'\2652';
+}
+.symbol-zodiac-piscis:before {
+	content:'\2653';
+}
+
 /* The end */
 
 
