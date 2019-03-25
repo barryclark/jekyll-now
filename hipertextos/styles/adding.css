@@ -19,9 +19,9 @@ main.darkmode {padding-top:0px!important;border:none;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
-.cover img {width:123px;margin-bottom:2.0em;}
-.cover h2 { letter-spacing: 0.01em;line-height:1.2em;font-weight: lighter ;font-size:1.5em!important; }
-.cover h1 {letter-spacing: 0.01em;line-height:1.0em;font-size:2.8em;font-weight: lighter }
+.cover img {width:80px;margin-bottom:2.0em;display:none;}
+.cover h2 { letter-spacing: 0.01em;line-height:1.2em;font-weight: lighter ;font-size:1.2em!important; }
+.cover h1 {letter-spacing: 0.01em;line-height:1.0em;font-size:2.4em;font-weight: lighter }
 #coffee h2 {margin:0;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
@@ -91,19 +91,22 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 
 /* Portfolio Titles */
 #layout h3 u { font-weight:300; letter-spacing: 0em}
-
-#glass-front {background:var(--color-black);margin-top:0px!important;
+hr.lifting {margin:0px;height:1px;}
+#glass-front {background:var(--color-black);margin-top:0px!important;padding-top:52px;
 background-image: url("/img/homed.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
     background-size: cover;background-repeat: no-repeat;border: none;overflow: hidden;text-align: center;
 }
 
-
 /* Covers */
-#covers a {color: var(--color-grey);text-decoration:none;margin:6px;}
+#covers a {color: var(--color-grey);text-decoration:none;margin:0px;}
 #covers .cover-links {padding-top:16px;
     margin-top:-30px;padding-bottom:16px;
     border:thin solid transparent;display:block;border-radius:6px;}
-#covers .cover-links:hover {border:thin solid rgba(60,60,60,.69);display:block;}
+#covers a:hover, #covers .cover-links a:hover {color:var(--color-white);}
+#covers a h4:hover {color:var(--color-white);}
+#covers a:after {content: '\25B6';opacity:0.06;position:absolute;margin-left:-15px;bottom:16px;padding-right:6px;
+    -o-transform: rotate(90deg);-ms-transform: rotate(90deg);-moz-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+#covers a:hover:after {content: '\25B6';opacity:100;position:absolute;bottom:6px;text-align: center;}
 #covers img {width: 11%;margin:0px; }
 #covers article {border:0;}
 #page #covers article {text-shadow:1px 1px 3px rgba(0,0,0,.12);}
