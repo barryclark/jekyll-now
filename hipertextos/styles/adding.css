@@ -99,14 +99,14 @@ background-image: url("/img/homed.jpg");image-rendering: crisp-edges;background-
 
 /* Covers */
 #covers a {color: var(--color-grey);text-decoration:none;margin:0px;}
-#covers .cover-links {padding-top:16px;
-    margin-top:-30px;padding-bottom:16px;
+#covers .cover-links {padding-top:6px;
+    margin-top:-30px;padding-bottom:32px;
     border:thin solid transparent;display:block;border-radius:6px;}
-#covers a:hover, #covers .cover-links a:hover {color:var(--color-white);}
-#covers a h4:hover {color:var(--color-white);}
-#covers a:after {content: '\25B6';opacity:0.06;position:absolute;margin-left:-15px;bottom:16px;padding-right:6px;
+#glass-front a:hover, #covers .cover-links a:hover {color:var(--color-white);}
+#glass-front a h4:hover {color:var(--color-white);}
+#glass-front a.cover-links:after {content: '\25B6';opacity:0.06;position:absolute;margin-left:-15px;bottom:16px;padding-right:6px;
     -o-transform: rotate(90deg);-ms-transform: rotate(90deg);-moz-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);}
-#covers a:hover:after {content: '\25B6';opacity:100;position:absolute;bottom:6px;text-align: center;}
+#glass-front a:hover:after {content: '\25B6';opacity:100;position:absolute;bottom:6px;text-align: center;}
 #covers img {width: 11%;margin:0px; }
 #covers article {border:0;}
 #page #covers article {text-shadow:1px 1px 3px rgba(0,0,0,.12);}
@@ -273,4 +273,4 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
 @media (max-width: 432px) {
     #page-header.cover {background-image: url("/img/home_m.jpg");background-size: 100% auto;background-position: fixed !important;}
 	#icons a {width:18%;padding:8px;}
-}
+}-
