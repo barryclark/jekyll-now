@@ -2333,6 +2333,8 @@ dialog,
 /* Meridianus theme */
 
 #theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpg")!important;}
+#theme-meridianus:checked ~ #page #web-music { background-image: url("/img/homes-sun.jpg")!important;}
+#theme-meridianus:checked ~ #page #web-branding { background-image: url("/img/homed-sun.jpg")!important;}
 
 #theme-meridianus:checked ~ #page,
 #theme-meridianus:checked ~ #site-nav,
@@ -2372,6 +2374,8 @@ dialog,
 /* vesperum theme */
 
 #theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpg")!important;}
+#theme-vesperum:checked ~ #page #web-music { background-image: url("/img/homes-blue.jpg")!important;}
+#theme-vesperum:checked ~ #page #web-branding { background-image: url("/img/homed-blue.jpg")!important;}
 
 #theme-vesperum:checked ~ #page,
 #theme-vesperum:checked ~ #site-nav,
@@ -2411,6 +2415,8 @@ dialog,
 /* Nox theme */
 
 #theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpg")!important;}
+#theme-vesperum:checked ~ #page #web-music { background-image: url("/img/homes-night.jpg")!important;}
+#theme-vesperum:checked ~ #page #web-branding { background-image: url("/img/homed-night.jpg")!important;}
 
 #theme-nox:checked ~ #page,
 #theme-nox:checked ~ #site-nav,
