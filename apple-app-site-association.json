@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "4Y59FUR69Z.anubisoft.escoffee",
+        "paths": [
+          "NOT /e/*",
+          "*",
+          "/"
+        ]
+      }
+    ]
+  }
+}
