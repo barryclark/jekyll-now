@@ -19,7 +19,7 @@ main.darkmode {padding-top:0px!important;border:none;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
-.cover img {width:80px;margin-bottom:2.0em;display:none;}
+.cover img {width:80px;margin-bottom:2.0em;}
 .cover h2 { letter-spacing: 0.01em;line-height:1.2em;font-weight: lighter ;font-size:1.2em!important; }
 .cover h1 {letter-spacing: 0.01em;line-height:1.0em;font-size:2.4em;font-weight: lighter }
 #coffee h2 {margin:0;}
