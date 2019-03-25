@@ -333,22 +333,22 @@ header, footer {
 .th-vesperum:hover:after,
 .th-nox:hover:after {
 	background-color: rgba(0,0,0,.9);
-	border: 1px solid rgba(255,255,255,.9);
-	border-radius: 8px;
+	border: 1px solid rgba(255,255,255,.15);
+	border-radius: 28px;
 	color: #ffffff;
 	content: attr(data-title);
 	cursor: pointer;
 	position: absolute;
 	padding: 0 16px;
-	font-size: 16px;
-	line-height: 48px;
-	height: 48px;
+	font-size: 15px;
+	line-height: 40px;
+	height: 38px;
 	min-width: 120px;
 	text-align: center;
 	text-transform: uppercase;
-	left: -190%;
+	left: -450%;
 	right: auto;
-	top: 20%;
+	top: 0;
 	z-index: 30;
 }
 .th-tesis:hover:after,
@@ -400,16 +400,16 @@ header, footer {
 .th-sintesis,
 .th-dialectica,
 .th-aurora {
-	background-color: #ffffff;
+	background-color: var(--color-yellow) !important;
 }
 .th-meridianus {
-	background-color: rgba(248,228,211,1) !important;
+	background-color: var(--color-red)  !important;
 }
 .th-vesperum {
-	background-color: rgba(228,220,238,1) !important;
+	background-color: var(--color-violet)  !important;
 }
 .th-nox {
-	background-color: #000000 !important;
+	background-color: var(--color-soft-black)  !important;
 	color: #ffffff !important;
 }
 .ktr-button-moon-bubble input:checked ~ span .th-tesis {
@@ -506,16 +506,16 @@ header, footer {
 	padding: 5px 0px;
 	line-height: 78px;
 	text-align: center;
-	width: 96px;
-	height: 96px;
+	width: 40px;
+	height: 40px;
 }
 [class*='ktr-button'] img,
 [class*='ktr-button'] svg {
 	display: block;
 	position: relative;
-	margin: 7px auto 0;
-	width: 64px;
-	height: 64px;
+	margin: 0px auto 0;
+	width: 26px;
+	height: 26px;
 }
 [class*='ktr-button'] svg {
     margin: 0 auto;
@@ -563,4 +563,6 @@ header, footer {
 	z-index: 100;
 	tranform: translate3D(0, 0, 600px);
 }
+
+
 
