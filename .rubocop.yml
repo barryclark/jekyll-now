@@ -1,0 +1,6 @@
+AllCops:
+  Exclude:
+    - _site/**/*
+
+Metrics/LineLength:
+  Enabled: false

@@ -2,16 +2,13 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<h1>{{ page.title }}</h1>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+<p class="view">by {{ page.author | default: site.author }}</p>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+{{content}}
 
-  {% include disqus.html %}
-</article>
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
