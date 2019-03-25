@@ -59,7 +59,21 @@
 		<!-- Out of page
 		================================================== -->	
     {% include partials/dialog.html %}  
-    
+
+		<!-- Out of page
+		================================================== -->
+		<!-- Fixed navigation -->		
+		<div class="ktr-button-sun-bubble">
+			<input id="bubble" name="bubble" type="checkbox" hidden>
+			<span>
+				<em><label class="th-nox" for="theme-nox" data-title="Nox"></label></em>
+				<em><label class="th-vesperum" for="theme-vesperum" data-title="Vesperum"></label></em>
+				<em><label class="th-meridianus" for="theme-meridianus" data-title="Meridianus"></label></em>
+				<em><label class="th-aurora" for="theme-aurora" data-title="Aurora"></label></em>
+			</span>
+			<em><label class="th-switcher" for="bubble" title="Themes"><b id="sun-phase"><img src="https://acozar.github.io/src/img/sun-burning.gif"></b></label></em>
+		</div>	
+
     <!-- Scripts
     ================================================== -->
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
