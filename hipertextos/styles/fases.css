@@ -69,31 +69,6 @@ header, footer {
 	width: 48px;
 }
 
-/* KTR Form */
-
-.ktr-form header {
-	border-top: 1px solid currentColor;
-	border-bottom: 1px solid currentColor;
-}
-.ktr-form ul,
-.ktr-form li {
-	list-style: none;
-	padding: 16px 0;
-}
-.ktr-form label {
-	margin: 16px 0;
-}
-.ktr-form label span {
-	color: rgba(168,47,47,1);
-}
-.ktr-form input {
-	border-radius: 16px;
-	border: 1px solid currentColor;
-}
-.ktr-form imput[type=submit] {
-	padding: 16px;
-	width: 50%;
-}
 
 /* KTR article list */
 
@@ -503,7 +478,8 @@ label.th-nox:hover {cursor: pointer!important}
 [class*='ktr-button'] a,
 [class*='ktr-button'] label {
 	border-radius: 50%;
-	border: none;
+    background-color:rgba(10,10,10,.8);
+	border:thin solid rgba(200,200,200,.22);
 	font-size: 48px;
 	padding: 5px 0px;
 	line-height: 78px;
@@ -514,10 +490,15 @@ label.th-nox:hover {cursor: pointer!important}
 [class*='ktr-button'] img,
 [class*='ktr-button'] svg {
 	display: block;
+    opacity:.32;
 	position: relative;
-	margin: 0px auto 0;
-	width: 26px;
-	height: 26px;
+	margin: -2px auto 0;
+	width: 25px;
+	height: 25px;
+}
+[class*='ktr-button'] img:hover,
+[class*='ktr-button'] svg:hover {
+    opacity:.8;
 }
 [class*='ktr-button'] svg {
     margin: 0 auto;
@@ -565,9 +546,3 @@ label.th-nox:hover {cursor: pointer!important}
 	z-index: 100;
 	tranform: translate3D(0, 0, 600px);
 }
-
-
-
-
-
-
