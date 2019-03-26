@@ -12,10 +12,10 @@ body * {
 
 }
 #page, dialog {
-	cursor: url('/hipertextos/src/cursors/cursor.png'), auto !important;
+	cursor: url('/hipertextos/cursors/cursor.png'), auto !important;
 }
 a, label, button {
-	cursor: url('/hipertextos/src/cursors/cursorpointer.png'), auto !important;
+	cursor: url('/hipertextos/cursors/cursorpointer.png'), auto !important;
 }
 a:active, label:active, button:active {
 	cursor: pointer;
