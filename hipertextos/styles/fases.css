@@ -311,7 +311,7 @@ header, footer {
 	content: attr(data-title);
 	cursor: pointer;
 	position: absolute;
-	padding: 0 16px;
+	padding: 0 6px;
 	font-size: 15px;
 	line-height: 40px;
 	height: 38px;
@@ -509,17 +509,17 @@ label.th-nox:hover {cursor: pointer!important}
 @media screen and (max-width: 1024px) {
 	[class*='ktr-button'] a,
 	[class*='ktr-button'] label {
-		line-height: 46px;
-		width: 64px;
-		height: 64px;
+		line-height: 45px;
+		width: 45px;
+		height: 45px;
 	}
 	[class*='ktr-button'] img,
 	[class*='ktr-button'] svg {
 		display: block;
 		position: relative;
-		margin: 0 auto;
-		width: 52px;
-		height: 52px;
+		margin: 1px auto;
+		width: 28px;
+		height: 28px;
 	}
 	.ktr-button-moon-bubble em label {
 		padding-top: 12px;
