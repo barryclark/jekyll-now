@@ -2339,15 +2339,17 @@ dialog,
     background-image: url("/img/homed-sun.jpg")!important;
 }
 #theme-meridianus:checked ~ #page div.masked {background-image: url("/img/homes-sun.jpg")!important;}
-
 #theme-meridianus:checked ~ #page #site-nav a {
 	color: rgba(255,220,180,1);	
 }
 #theme-meridianus:checked ~ #page #site-nav {
 	background: rgba(26,16,18,.95)!important;
 }
-#theme-meridianus:checked ~ #page a {
-	color: ;	
+#theme-meridianus:checked ~ #page #page-main.darkmode  {
+	background-color: rgba(21,15,18,1) ;	
+}
+#theme-meridianus:checked ~ #page #page-footer {
+	background-color: rgba(41,35,38,1) ;	
 }
 #theme-meridianus:checked ~ #page em a,
 #theme-meridianus:checked ~ #page em label,
@@ -2388,6 +2390,12 @@ dialog,
 }
 #theme-vesperum:checked ~ #page #site-nav {
 	background: rgba(6,5,8,1)!important;
+}
+#theme-vesperum:checked ~ #page #page-main.darkmode  {
+	background-color: rgba(17,20,23,1) ;	
+}
+#theme-vesperum:checked ~ #page #page-footer {
+	background-color: rgba(26,32,35,1) ;	
 }
 #theme-vesperum:checked ~ #page,
 #theme-vesperum:checked ~ #site-nav,
@@ -2438,6 +2446,12 @@ dialog,
 }
 #theme-nox:checked ~ #page #site-nav {
 	background: rgba(18,18,21,1)!important;
+}
+#theme-nox:checked ~ #page #page-main.darkmode  {
+	background-color: rgba(22,22,25,1) ;	
+}
+#theme-nox:checked ~ #page #page-footer {
+	background-color: rgba(33,33,35,1) ;	
 }
 #theme-nox:checked ~ #page,
 #theme-nox:checked ~ #site-nav,
