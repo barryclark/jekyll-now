@@ -2338,6 +2338,7 @@ dialog,
 #theme-meridianus:checked ~ #page #glass-front { 
     background-image: url("/img/homed-sun.jpg")!important;
 }
+#theme-meridianus:checked ~ #page div.masked {background-image: url("/img/homes-sun.jpg")!important;}
 
 #theme-meridianus:checked ~ #page,
 #theme-meridianus:checked ~ #site-nav,
@@ -2382,6 +2383,8 @@ dialog,
 #theme-vesperum:checked ~ #page #glass-front { 
     background-image: url("/img/homed-blue.jpg")!important;
 }
+#theme-vesperum:checked ~ #page div.masked {background-image: url("/img/homes-blue.jpg")!important;}
+
 #theme-vesperum:checked ~ #page,
 #theme-vesperum:checked ~ #site-nav,
 #theme-vesperum:checked ~ #page-nav,
@@ -2425,6 +2428,8 @@ dialog,
 #theme-nox:checked ~ #page #glass-front { 
     background-image: url("/img/homed-night.jpg")!important;
 }
+#theme-nox:checked ~ #page div.masked {background-image: url("/img/homes-night.jpg")!important;}
+
 #theme-nox:checked ~ #page,
 #theme-nox:checked ~ #site-nav,
 #theme-nox:checked ~ #page-nav,

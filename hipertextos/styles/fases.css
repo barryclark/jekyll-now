@@ -285,6 +285,7 @@ header, footer {
 .ktr-button-sun-bubble em label {
 	padding-top: 8px;
 }
+.ktr-button-sun-bubble em label :hover {cursor: pointer;}
 .ktr-button-moon-bubble span .th-tesis,
 .ktr-button-moon-bubble span .th-antitesis,
 .ktr-button-moon-bubble span .th-sintesis,
@@ -396,16 +397,16 @@ header, footer {
 .th-sintesis,
 .th-dialectica,
 .th-aurora {
-	background-color: var(--color-yellow) !important;
+	background-color: rgba(132,52,69,1) !important;
 }
 .th-meridianus {
-	background-color: var(--color-red)  !important;
+	background-color: rgba(190,120,62,1) !important;
 }
 .th-vesperum {
-	background-color: var(--color-violet)  !important;
+	background-color: rgba(69,75,120,1)  !important;
 }
 .th-nox {
-	background-color: var(--color-soft-black)  !important;
+	background-color: rgba(32,32,32,1) !important;
 	color: #ffffff !important;
 }
 .ktr-button-moon-bubble input:checked ~ span .th-tesis {
@@ -559,6 +560,7 @@ header, footer {
 	z-index: 100;
 	tranform: translate3D(0, 0, 600px);
 }
+
 
 
 
