@@ -392,6 +392,11 @@ header, footer {
 		padding-top: 6px;
 	}
 }
+label.th-aurora:hover,
+label.th-meridianus:hover,
+label.th-vesperum:hover,
+label.th-nox:hover {cursor: pointer!important}
+
 .th-tesis,
 .th-antitesis,
 .th-sintesis,
@@ -560,6 +565,7 @@ header, footer {
 	z-index: 100;
 	tranform: translate3D(0, 0, 600px);
 }
+
 
 
 
