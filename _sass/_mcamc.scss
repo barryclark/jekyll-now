@@ -28,10 +28,14 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+
+	div {
+		margin: 10px;
+	}
 }
 
 .sponsor-row img {
-	max-width: 280px;
+	max-width: 240px;
 	height: auto;
 }
 

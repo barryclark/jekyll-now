@@ -261,6 +261,10 @@ Please contact [mcamathleague@gmail.com](mailto:mcamathleague@gmail.com) with yo
   <div><a href="https://www.youcandothecube.com"><img src="/images/rubiks.svg"></a></div>
   <div><strong>You Can Do The Rubik's Cube</strong><br><a href="https://www.youcandothecube.com">https://www.youcandothecube.com</a></div>
 </div>
+<div class="sponsor-row">
+  <div><a href="https://artofproblemsolving.com/"><img src="/images/aops.png"></a></div>
+  <div><strong>Art of Problem Solving</strong><br><a href="https://artofproblemsolving.com/">https://artofproblemsolving.com/</a></div>
+</div>
 </div>
 
 <script type="text/javascript">
