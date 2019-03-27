@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/fases.css" />
 	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
-	{% if page.parallax %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/parallax.css" />{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
     {% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />{% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -113,9 +112,9 @@
 
 			$(window).scroll(function(){
 				var barra = $(window).scrollTop();
-				var posicion = barra * 0.10;
+				var posicion = barra * 0.40;
 
-			$('header').css({
+			$('.parallax').css({
 				'background-position': '0 -' + posicion + 'px'
 				});
 			});
