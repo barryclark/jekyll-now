@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various Definitions of #NoEstimates
+title: Various Definitions of NoEstimates
 ---
 
 I've noticed people argue for #NoEstimates in a bunch of different ways. Here are some:
