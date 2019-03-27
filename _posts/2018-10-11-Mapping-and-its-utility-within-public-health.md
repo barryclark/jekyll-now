@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Mapping and its utility within public health.
 ---
 
