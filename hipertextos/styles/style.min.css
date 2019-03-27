@@ -2332,13 +2332,13 @@ dialog,
 
 /* Meridianus theme */
 
-#theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpg")!important;}
-#theme-meridianus:checked ~ #page #web-music { background-image: url("/img/homes-sun.jpg")!important;}
+#theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpf")!important;}
+#theme-meridianus:checked ~ #page #web-music { background-image: url("/img/homes-sun.jpf")!important;}
 #theme-meridianus:checked ~ #page #web-branding,
 #theme-meridianus:checked ~ #page #glass-front { 
-    background-image: url("/img/homed-sun.jpg")!important;
+    background-image: url("/img/homed-sun.jpf")!important;
 }
-#theme-meridianus:checked ~ #page div.masked {background-image: url("/img/homes-sun.jpg")!important;}
+#theme-meridianus:checked ~ #page div.masked {background-image: url("/img/homes-sun.jpf")!important;}
 #theme-meridianus:checked ~ #page #site-nav a {
 	color: rgba(255,220,180,1);	
 }
@@ -2378,13 +2378,13 @@ dialog,
 
 /* vesperum theme */
 
-#theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpg")!important;}
-#theme-vesperum:checked ~ #page #web-music { background-image: url("/img/homes-blue.jpg")!important;}
+#theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpf")!important;}
+#theme-vesperum:checked ~ #page #web-music { background-image: url("/img/homes-blue.jpf")!important;}
 #theme-vesperum:checked ~ #page #web-branding,
 #theme-vesperum:checked ~ #page #glass-front { 
-    background-image: url("/img/homed-blue.jpg")!important;
+    background-image: url("/img/homed-blue.jpf")!important;
 }
-#theme-vesperum:checked ~ #page div.masked {background-image: url("/img/homes-blue.jpg")!important;}
+#theme-vesperum:checked ~ #page div.masked {background-image: url("/img/homes-blue.jpf")!important;}
 #theme-vesperum:checked ~ #page #site-nav a {
 	color: rgba(180,180,200,1);	
 }
@@ -2434,13 +2434,13 @@ dialog,
 
 /* Nox theme */
 
-#theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpg")!important;}
-#theme-nox:checked ~ #page #web-music { background-image: url("/img/homes-night.jpg")!important;}
+#theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpf")!important;}
+#theme-nox:checked ~ #page #web-music { background-image: url("/img/homes-night.jpf")!important;}
 #theme-nox:checked ~ #page #web-branding,
 #theme-nox:checked ~ #page #glass-front { 
-    background-image: url("/img/homed-night.jpg")!important;
+    background-image: url("/img/homed-night.jpf")!important;
 }
-#theme-nox:checked ~ #page div.masked {background-image: url("/img/homes-night.jpg")!important;}
+#theme-nox:checked ~ #page div.masked {background-image: url("/img/homes-night.jpf")!important;}
 #theme-nox:checked ~ #page #site-nav a {
 	color: rgba(150,150,150,1);	
 }
