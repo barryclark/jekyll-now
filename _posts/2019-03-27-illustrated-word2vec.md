@@ -627,7 +627,7 @@ Now that we've established the two central ideas of skipgram and negative sampli
 
 Before the training process starts, we pre-process the text we're training the model against. In this step, we determine the size of our vocabulary (we'll call this <code class="plain_code mdc-text-amber-700">vocab_size</code>, think of it as, say, 10,000) and which words belong to it.
 
-At the start of the training phase, we create two matrices -- an <code class="plain_code mdc-text-green-500">Embedding</code> matrix and a <code class="plain_code mdc-text-purple-500">Embedding</code> matrix. These two matrices have an embedding for each word in our vocabulary (So <code class="plain_code mdc-text-amber-700">vocab_size</code> is one of their dimensions). The second dimension is how long we want each embedding to be (<code class="plain_code mdc-text-amber-900">embedding_size</code> -- 300 is a common value, but we've looked at an example of 50 earlier in this post).
+At the start of the training phase, we create two matrices -- an <code class="plain_code mdc-text-green-500">Embedding</code> matrix and a <code class="plain_code mdc-text-purple-500">Context</code> matrix. These two matrices have an embedding for each word in our vocabulary (So <code class="plain_code mdc-text-amber-700">vocab_size</code> is one of their dimensions). The second dimension is how long we want each embedding to be (<code class="plain_code mdc-text-amber-900">embedding_size</code> -- 300 is a common value, but we've looked at an example of 50 earlier in this post).
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/word2vec/word2vec-embedding-context-matrix.png "/>
