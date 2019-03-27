@@ -277,7 +277,7 @@ Let's now turn to the training process to learn more about how this embedding ma
 “A process cannot be understood by stopping it. Understanding must move with the flow of the process, must join it and flow with it.” ~Dune
 </blockquote>
 
-Language models have a huge advantage over most other machine learning models. That advantage is that we are able to train them on running text -- which we have an abundance of. Think at all the books, articles, Wikipedia content, and other forms of text data we have lying around. Contrast this with a lot of other machine learning models which need hand-crafted features and specially-collected data.
+Language models have a huge advantage over most other machine learning models. That advantage is that we are able to train them on running text -- which we have an abundance of. Think of all the books, articles, Wikipedia content, and other forms of text data we have lying around. Contrast this with a lot of other machine learning models which need hand-crafted features and specially-collected data.
 
 > "You shall know a word by the company it keeps" J.R. Firth
 
@@ -530,7 +530,7 @@ While this extends our understanding of the process, it's still not how word2vec
 “To attempt an understanding of Muad'Dib without understanding his mortal enemies, the Harkonnens, is to attempt seeing Truth without knowing Falsehood. It is the attempt to see the Light without knowing Darkness. It cannot be.” ~Dune
 </blockquote>
 
-Recall how the three steps of how this neural language model calculates its prediction:
+Recall the three steps of how this neural language model calculates its prediction:
 <br />  
 
 <div class="img-div" markdown="0">
