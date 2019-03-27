@@ -238,7 +238,7 @@ We can think of the model as looking like this black box:
 
 <br />
 
-But in practice, the model doesn't output only one word. It actually outputs a probability score for all the words it knows (the model's "vocabulary", which can be range from a few thousand to over a million words). The keyboard application then has to find the words with the highest scores, and present those to the user.
+But in practice, the model doesn't output only one word. It actually outputs a probability score for all the words it knows (the model's "vocabulary", which can range from a few thousand to over a million words). The keyboard application then has to find the words with the highest scores, and present those to the user.
 
 <br />
 
@@ -326,7 +326,7 @@ We then slide our window to the next position and create a second sample:
 <div class="img-div" markdown="0">
   <image src="/images/word2vec/lm-sliding-window-3.png"/>
   <br />
-  We now have generated the first sample in the dataset we can later use to train a language model.
+  An the second example is now generated.
 </div>
 
 <br />  
@@ -627,7 +627,7 @@ Now that we've established the two central ideas of skipgram and negative sampli
 
 Before the training process starts, we pre-process the text we're training the model against. In this step, we determine the size of our vocabulary (we'll call this <code class="plain_code mdc-text-amber-700">vocab_size</code>, think of it as, say, 10,000) and which words belong to it.
 
-At the start of the training phase, we create two matrices -- an Embedding matrix and a Context matrix. These two matrices have an embedding for each word in our vocabulary (So <code class="plain_code mdc-text-amber-700">vocab_size</code> is one of their dimensions). The second dimension is how long we want each embedding to be (<code class="plain_code mdc-text-amber-900">embedding_size</code> -- 300 is a common value, but we've looked at an example of 50 earlier in this post).
+At the start of the training phase, we create two matrices -- an <code class="plain_code mdc-text-green-500">Embedding</code> matrix and a <code class="plain_code mdc-text-purple-500">Embedding</code> matrix. These two matrices have an embedding for each word in our vocabulary (So <code class="plain_code mdc-text-amber-700">vocab_size</code> is one of their dimensions). The second dimension is how long we want each embedding to be (<code class="plain_code mdc-text-amber-900">embedding_size</code> -- 300 is a common value, but we've looked at an example of 50 earlier in this post).
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/word2vec/word2vec-embedding-context-matrix.png "/>
