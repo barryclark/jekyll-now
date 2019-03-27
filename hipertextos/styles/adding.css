@@ -195,7 +195,7 @@ main {
 #web-oferta, #web-branding, #web-grafics, #web-music {
     letter-spacing: .06em;
     text-align: center;
-    color: var(--color-hardgrey);
+    color: var(--color-grey);
 }
 
 #web-oferta p {
@@ -460,13 +460,13 @@ hr.lifting {
 
 #covers .cover-links {
     padding-top: 6px;
-    margin-top: -30px;
+    margin-top: -20px;
     padding-bottom: 32px;
     border: thin solid transparent;
     display: block;
-    border-radius: 6px;
 }
-
+#covers .cover-icon {max-width: 100%;
+  height: auto;}
 #glass-front a:hover, #covers .cover-links a:hover {
     color: var(--color-white);
 }
@@ -498,8 +498,7 @@ hr.lifting {
 }
 
 #covers img {
-    width: 11%;
-    margin: 0px;
+    width: 72px;opacity:0.6; margin: 0px;
 }
 
 #covers article {
@@ -1234,5 +1233,3 @@ main {
         padding: 8px;
     }
 }
-
-
