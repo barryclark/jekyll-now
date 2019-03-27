@@ -60,7 +60,7 @@ Let's switch the range to be from -1 to 1:
   <image src="/images/word2vec/introversion-extraversion-1.png"/>
 </div>
 
-How well do you feel you know a person knowing only this one piece of information about them? Not much. People are complex. So let's add another dimension -- the sore of one other trait from the test.
+How well do you feel you know a person knowing only this one piece of information about them? Not much. People are complex. So let's add another dimension -- the score of one other trait from the test.
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/word2vec/two-traits-vector.png"/>
