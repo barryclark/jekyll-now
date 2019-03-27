@@ -204,7 +204,7 @@ main {
 }
 
 #web-music {
-    background-image: url("/img/home.jpf");
+    background-image: url("/img/music.jpf");
     image-rendering: crisp-edges;
     background-position: top center;
     background-attachment: fixed;
