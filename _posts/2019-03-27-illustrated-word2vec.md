@@ -583,7 +583,7 @@ This can now be computed at blazing speed -- processing millions of examples in 
   <br />  
 </div>
 
-To address this, we need to introduce *negative samples* to our dataset -- samples of words that are not neighbors.  Our model needs to return 0 for those samples. Now that's a challenge that the model has work hard to solve -- but still at blazing fast speed.
+To address this, we need to introduce *negative samples* to our dataset -- samples of words that are not neighbors.  Our model needs to return 0 for those samples. Now that's a challenge that the model has to work hard to solve -- but still at blazing fast speed.
 
 
 <br />  
