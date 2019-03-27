@@ -15,6 +15,7 @@ I've noticed people argue for #NoEstimates in a bunch of different ways. Here ar
 - We could estimate reliably, but there are other approaches that produce better outcomes. Using estimtes takes your attention away from those other approaches.
 - When there's a lot of technical debt, you can't estimate reliably because you don't know when you'll hit a quagmire. Accidental complexity greatly exceeds essential complexity, but inconsistently. See "[7 minutes 26 seconds](https://www.youtube.com/watch?v=WSes_PexXcA)".
 - When the team owns its business outcomes, it doesn't need estimates. See "[AFM Optimizing](https://www.agilefluency.org/)".
+- My boss uses estimates as a tool of abuse and manipulation, creating an unsafe work environment.
 
 I'm not trying to judge any of these ideas. As Tim Ottinger [put it](https://twitter.com/tottinge/status/1110965262856146948):
 
