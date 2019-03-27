@@ -70,7 +70,7 @@ How well do you feel you know a person knowing only this one piece of informatio
 
 I've hidden which traits we're plotting just so you get used to not knowing what each dimension represents -- but still getting a lot of value from the vector representation of a person's personality.
 
-We can now say that this vector partially represents my personality. The usefulness of such representation comes when you want to compare two other people to me. Say I get hit by a ```bus``` and I need to replaced by someone with a similar personality. In the following figure, which of the two people is more similar to me?
+We can now say that this vector partially represents my personality. The usefulness of such representation comes when you want to compare two other people to me. Say I get hit by a ```bus``` and I need to be replaced by someone with a similar personality. In the following figure, which of the two people is more similar to me?
 
 
 <div class="img-div-any-width" markdown="0">
