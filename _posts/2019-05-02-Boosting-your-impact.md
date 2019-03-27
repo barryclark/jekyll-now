@@ -2,7 +2,6 @@
 layout: post
 title: Boosting your impact - best global health journals (2017).
 ---
-# Boosting your impact - best global health journals (2017).
 The impact factor (IF) of an academic journal is a metric used to reflect the yearly average number of citations per article published. It is often used as a proxy for the importance of a journal within its field, with journals having a higher impact factor deemed to be more important than those with lower ones.
 
 Generally, a journals impact factor influences an authors decisions to submit, and publishing within more renowned journals tends to influence a researchers credibility. Impact factors change yearly, as journals either increase their impact - publishing highly citable papers, or decrease their impact - with less influential papers being published that year. 
