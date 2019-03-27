@@ -2142,8 +2142,9 @@ nav strong label mark {
 	padding-top:180px;
 }
 .cover {
-	height: 72vh;
+	height: 65vh;
 	padding-top: 210px;
+	border:none!important;
 }
 .sticky-header {
 	background-color: #fff;
