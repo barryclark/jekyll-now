@@ -10,7 +10,7 @@ parallax: true
 	{% include partials/head.html %}
     <main id="page-main" role="main" class="darkmode anm-fadeIn delay-100">
 			<section id="covers">
-				<div id="glass-front">
+				<div id="glass-front" class="parallax">
 				{% include partials/navigation/covers.html %}
 				<hr class="lifting">
 				</div>
@@ -52,7 +52,7 @@ parallax: true
 					<em><a class="next-top" href="#web-branding"><img class="nextt" src="hipertextos/svg/arrow.svg"></a></em>
 				</div>
 			</div>
-			<div id="web-branding">
+			<div id="web-branding" class="parallax">
 				<hr>
 				<div>
 					<h2>Branding</h2>
@@ -108,7 +108,7 @@ parallax: true
 						<p>{{ site.grafics }}</p>
 					{% endif %}
 					<br>
-						<div class="masked" style="background-image: url('{{ site.baseurl }}/img/home.jpg');">
+						<div class="masked parallax" style="background-image: url('{{ site.baseurl }}/img/home.jpg');">
 							<hr>
 						</div>
 					<div class="text-left thumb-6 pushed-6">
@@ -131,7 +131,7 @@ parallax: true
 					<em><a class="next-top" href="#web-music"><img class="nextt" src="hipertextos/svg/arrow.svg"></a></em>
 				</div>
 			</div>
-			<div id="web-music">
+			<div id="web-music" class="parallax">
 				<hr>
 				<div>
 					<h2>Música</h2>
