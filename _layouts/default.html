@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
-    
-    {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
+{%- include head.html -%}
+<script src="/simple-jekyll-search.min.js" type="text/javascript"></script>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+<body>
+  {%- include header.html -%}
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+
+  <div class="main column_large_8 column_large_push_2 clearfix">
+    <section class="all_news search_box" id="search_box">
+      <header class="margin_top">
+        <h3>
+          نتایج جستجو
+        </h3>
+      </header>
+      <div class="row" id="results-container">
+
+
+
       </div>
-    </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+    </section>
+  </div>
+  <div class="main" id="main_div">
+    {{content}}
+  </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+  {%- include footer.html -%}
+</body>
+<script src="simple-jekyll-search.min.js" type="text/javascript"></script>
 
-    {% include analytics.html %}
-  </body>
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: './search.json',
+    searchResultTemplate: '   <div class="column_large_4">  <figure class="news_box">            <div class="img">              <img src="{{ site.url }}/assets/img/{img_name}" alt="">            </div>            <span class="tag">{tags}</span>            <figcaption>              <h2>{title}</h2>              <span class="time">{date}</span>              <p>                {content}              </p>              <a href="{url}" class="readmore">ادامه مطلب</a>            </figcaption>          </figure>        </div>'
+  })
+
+</script>
+
 </html>

@@ -1,0 +1,6 @@
+ks-percent( value, total )
+    value = _strip-units( value )
+    total = _strip-units( total )
+    value / total * 100%
+
+percent = ks-percent unless ks-no-conflict

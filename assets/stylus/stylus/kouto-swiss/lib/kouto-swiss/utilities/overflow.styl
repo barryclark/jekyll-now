@@ -1,0 +1,9 @@
+ks-overflow( value, args... )
+    if value == ellipsis
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+    else
+        overflow: value args
+
+overflow = ks-overflow unless ks-no-conflict

@@ -1,0 +1,73 @@
+
+tags_default      = {
+  
+  blockquote  : {
+    border-right: solid 4px colors.grey
+    padding-right: 10px
+  }
+  
+  h1          : {
+    font-size: rem(20)
+    margin: 0
+  }
+  h2          : {
+    font-size: rem(18)
+  }
+  h3          : {
+    font-size: rem(16)
+  }
+  h4          : {
+    font-size: rem(14)
+  }
+  h5          : {
+    font-size: rem(14)
+  }
+  
+  em          : {
+    font-style: italic
+  }
+
+  hr          : {
+    border: none
+    border-bottom: solid 1px colors.grey
+  }
+
+  input       : {
+    vertical-align: middle
+  }
+  
+  label       : {
+    user-select: none
+  }
+
+  img         : {
+    vertical-align: middle
+  }
+  
+  bdi         : {
+    font-size: 1.1em
+  }
+  
+  ul          : {
+    ul: {
+      padding-right: 20px
+    }
+  }
+
+  ol          : {
+    list-style: inside decimal
+    
+    ol: {
+      padding-right: 20px
+    }
+  }
+}
+
+tags = merge(tags_default, tags)
+
+
+code 
+  direction: ltr
+  
+  
+prepare(tags)

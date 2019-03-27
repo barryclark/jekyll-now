@@ -1,0 +1,29 @@
+ks-size( values... )
+    if length( values ) == 1
+        width: values[ 0 ] || auto
+        height: values[ 0 ] || auto
+    else
+        width: values[ 0 ] if values[ 0 ] != false
+        height: values[ 1 ] if values[ 1 ] != false
+
+size = ks-size unless ks-no-conflict
+
+ks-min-size( values... )
+    if length( values ) == 1
+        min-width: values[ 0 ] || auto
+        min-height: values[ 0 ] || auto
+    else
+        min-width: values[ 0 ] if values[ 0 ] != false
+        min-height: values[ 1 ] if values[ 1 ] != false
+
+min-size = ks-min-size unless ks-no-conflict
+
+ks-max-size( values... )
+    if length( values ) == 1
+        max-width: values[ 0 ] || auto
+        max-height: values[ 0 ] || auto
+    else
+        max-width: values[ 0 ] if values[ 0 ] != false
+        max-height: values[ 1 ] if values[ 1 ] != false
+
+max-size = ks-max-size unless ks-no-conflict

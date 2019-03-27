@@ -1,0 +1,143 @@
+
+inputs_default   = {
+  enable      : true
+  
+  input       : {
+    enable      : true
+    class       : "input"
+    css         : {
+      font-family: global.font-family
+      padding : global.padding
+      border-radius : global.border-radius
+      font-size : global.font-size
+      background-color : colors.white
+      border : 1px solid colors.grey - 10%
+      color : colors.text
+      background-position : left 5px center
+      line-height : normal
+      height: 37px
+      background-repeat : no-repeat
+      display : block
+      width: 100%
+      vertical-align: middle
+
+      '&:disabled' : {
+        background-color : colors.grey
+        cursor : not-allowed
+      }
+
+      '&:focus' : {
+        border-color : colors.blue
+        outline : 0
+      }
+
+      '&.has_error' : {
+        border-color : colors.red
+        color : colors.red
+      }
+
+      '&.has_success' : {
+        border-color : colors.green
+        color : colors.green
+      }
+    }
+
+    sizes : {
+      auto : {
+        width : auto
+      }
+    }
+    
+  }
+  
+  select          : {
+    enable          : true
+    class           : 'input'
+    tag_selector    : true
+    css             : {
+      height: 37px
+      font-family: global.font-family
+      padding : global.padding
+      border-radius : global.border-radius
+      font-size : global.font-size
+      background-color : colors.white
+      border : 1px solid colors.grey - 10%
+      color : colors.text
+      background-position : left 5px center
+      line-height : normal
+      height: 37px
+      background-repeat : no-repeat
+      display : block
+      width: 100%
+      vertical-align: middle
+    }
+  }
+  
+  textarea        : {
+    enable          : true
+    class           : 'input'
+    tag_selector    : true
+    css             : {
+      resize : vertical
+      height: auto
+      line-height : global.line-height
+    }
+  }
+  
+  checkables      : {
+    enable          : true
+    class           : 'input'
+    tag_selector    : true
+    css             : {
+      vertical-align: middle
+      display: initial
+      width: auto
+    }
+  }
+
+}
+
+merge-rec(inputs_default, inputs)
+
+if inputs_default.enable 
+
+  // Inputs
+  $input
+    prepare: inputs_default.input.css
+
+  if inputs_default.input.enable
+    .{inputs_default.input.class}
+      @extend $input
+      for name, prop in inputs_default.input.sizes
+        &_{name}
+          @extend $input
+          prepare: prop
+
+  // Selects
+  if inputs_default.select.enable
+    if inputs_default.select.tag_selector
+      select.{inputs_default.select.class}
+        css: inputs_default.select.css
+    else
+      .{inputs_default.select.class}
+        css: inputs_default.select.css
+      
+  // Textarea
+  if inputs_default.textarea.enable
+    if inputs_default.textarea.tag_selector
+      textarea.{inputs_default.textarea.class}
+        css: inputs_default.textarea.css
+    else
+      .{inputs_default.textarea.class}
+        css: inputs_default.textarea.css
+  
+  if inputs_default.checkables.enable
+    if inputs_default.checkables.tag_selector
+      input[type='checkbox']
+      input[type='radio']
+        &.{inputs_default.checkables.class}
+          css: inputs_default.checkables.css
+    else
+      .{inputs_default.checkables.class}
+        css: inputs_default.checkables.css
+      

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<main class="main column_large_8 column_large_push_2 clearfix">
+
+  <section class="all_news">
+    <header>
+      <h2>آرشیو </h2>
+    </header>
+    <div class="row">
+    
+      <div class="column_large_4">
+        <figure class="news_box">
+          <div class="img">
+            <img src="{{ site.url }}/assets/img/{{ post.img_name }}" alt="">
+          </div>
+
+          <span class="tag">{{post.tags}}</span>
+          <figcaption>
+            <h2>{{post.title}}</h2>
+            <span class="time">{{post.date | date_to_long_string  }}</span>
+            <p>
+             {{post.excerpt}}
+            </p>
+            <a href="{{ site.url }}/{{post.url}}" class="readmore">ادامه مطلب</a>
+          </figcaption>
+        </figure>
+      </div>
+
+
+    </div>
+
+  </section>
+</main>

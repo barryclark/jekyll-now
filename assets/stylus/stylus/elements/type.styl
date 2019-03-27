@@ -1,0 +1,58 @@
+
+type_default = {
+
+  enable    : true
+  class     : 'text'
+  
+  colors    : {
+    red       : {
+      color: colors.red
+    }
+    green     : {
+      color: colors.green
+    }
+    orange    : {
+      color: colors.orange
+    }
+    blue      : {
+      color: colors.blue
+    }
+    grey      : {
+      color: colors.grey - 30%
+    }
+    yellow    : {
+      color: colors.yellow
+    }
+    purple    : {
+      color: colors.purple
+    }
+  }
+  
+  sizes     : {
+    small     : {
+      font-size: .8em !important
+    }
+    
+    large     : {
+      font-size: 1.2em !important
+    }
+    
+    xlarge    : {
+      font-size: 1.6em !important
+    }
+  }
+  
+}
+
+merge-rec(type_default, type)
+
+if type_default.enable
+  .{type_default.class}
+    for name, prop in type_default.colors
+      &_{name}
+        prepare: prop
+        
+    for name, prop in type_default.sizes
+      &_{name}
+        prepare: prop
+        

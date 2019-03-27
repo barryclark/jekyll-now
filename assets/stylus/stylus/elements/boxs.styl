@@ -1,0 +1,71 @@
+
+box_default           = {
+  enable                : true
+
+  class                 : 'box'
+  
+  css                   : {
+    background-color: colors.white
+    border: 1px solid colors.grey
+    border-radius: global.border-radius
+  }
+  
+
+  header_css            : {
+    padding: global.padding
+    border-bottom: 1px solid colors.grey
+  }
+
+  body_css              : {
+    padding: global.padding
+  }
+
+  title_css             : {
+
+    '&::after'            : {
+      content: ''
+      display: block
+      position: relative
+      top: 7px
+      border-bottom: solid 2px colors.blue
+    }
+  }
+  
+  tools_css             : {
+
+  }
+  
+  footer_css            : {
+    border-top: 1px solid colors.grey
+    padding: global.padding
+  }
+  
+}
+
+box = merge-rec(box_default, box)
+
+
+if box_default.enable
+  .{box_default.class}
+    prepare: box_default.css
+    &:not(:last-child)
+      margin-bottom: global.margin
+      
+    // Header
+    &_header
+      prepare: box_default.header_css
+      clear: fix
+
+    &_title
+      prepare: box_default.title_css
+      float: global.direction
+
+    &_tools
+      float: global.direction
+      prepare: box_default.tools_css
+
+    &_body
+      prepare: box_default.body_css
+
+    &_footer
+      prepare: box_default.footer_css

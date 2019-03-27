@@ -1,0 +1,101 @@
+ks-position( pos, values )
+    if last( values ) == "!important"
+        _void = pop( values )
+        important = "!important"
+    else
+        important = ""
+    if pos == sticky
+        if !( "css-sticky" in ks-support-ignore-features )
+            for prefix in caniuse-prefixes( "css-sticky" )
+                position: unquote( "-" + prefix + "-sticky " + important )
+        else if ks-vendors-prefixes isnt false
+                if ks-vendors-prefixes isnt recommended
+                    prefixes = ks-vendors-prefixes
+                if prefixes
+                    for prefix in prefixes
+                        position: unquote( "-" + prefix + "-sticky " + important )
+        position: unquote( "sticky " + important )
+    else
+        position: pos unquote( important )
+    // NOTE: this is kinda lame. Needs refactor. Probably.
+    if top in values || right in values || bottom in values || left in values
+        currentProp = null
+        props = top right bottom left
+        for value, index in values
+            if index == 0
+                if value in props
+                    currentProp = value
+                else
+                    error( "When using relative keywords in position mixin, you must start with a keyword." )
+            else if index < length( values ) - 1
+                if value in props
+                    if currentProp
+                        {currentProp}: 0
+                    currentProp = value
+                else
+                    if currentProp == null
+                        error( "When using relative keywords in position mixins, you cant make two numeric values follow." )
+                    {currentProp}: value
+                    currentProp = null
+            else
+                if value in props
+                    if currentProp
+                        {currentProp}: 0
+                    {value}: 0
+                else
+                    {currentProp}: value
+    else
+        if length( values ) == 1 && values[ 0 ] != false
+            top: values[ 0 ] unquote( important )
+            right: values[ 0 ] unquote( important )
+            bottom: values[ 0 ] unquote( important )
+            left: values[ 0 ] unquote( important )
+        if length( values ) == 2
+            top: values[ 0 ] unquote( important ) if values[ 0 ] != false
+            right: values[ 1 ] unquote( important ) if values[ 1 ] != false
+            bottom: values[ 0 ] unquote( important ) if values[ 0 ] != false
+            left: values[ 1 ] unquote( important ) if values[ 1 ] != false
+        if length( values ) == 3
+            top: values[ 0 ] unquote( important ) if values[ 0 ] != false
+            right: values[ 1 ] unquote( important ) if values[ 1 ] != false
+            bottom: values[ 2 ] unquote( important ) if values[ 2 ] != false
+            left: values[ 1 ] unquote( important ) if values[ 1 ] != false
+        if length( values ) == 4
+            top: values[ 0 ] unquote( important ) if values[ 0 ] != false
+            right: values[ 1 ] unquote( important ) if values[ 1 ] != false
+            bottom: values[ 2 ] unquote( important ) if values[ 2 ] != false
+            left: values[ 3 ] unquote( important ) if values[ 3 ] != false
+
+ks-static( values... )
+    ks-position( static, values )
+
+ks-relative( values... )
+    ks-position( relative, values )
+
+ks-absolute( values... )
+    ks-position( absolute, values )
+
+ks-fixed( values... )
+    ks-position( fixed, values )
+
+ks-sticky( values... )
+    ks-position( sticky, values )
+
+unless ks-no-conflict
+    static( values... )
+        ks-position( static, values )
+
+    relative( values... )
+        ks-position( relative, values )
+
+    absolute( values... )
+        ks-position( absolute, values )
+
+    fixed( values... )
+        ks-position( fixed, values )
+
+    sticky( values... )
+        ks-position( sticky, values )
+
+    position( value, values... )
+        ks-position( value, values )

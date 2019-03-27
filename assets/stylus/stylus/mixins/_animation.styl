@@ -1,0 +1,33 @@
+// Author       : Mehran Arjmand
+// Description  : Use full functions for animation and transform and transition
+
+// Make translate function with polar coordinate
+translateD(direction, distance)
+  _transX = 0
+  _transY = 0
+
+  if (distance is unit)
+    _transX = cos(direction) * distance
+    _transY = sin(direction) * distance
+  else
+
+    if (up in direction or top in direction)
+      _transY -= distance
+    if (down in direction or bottom in direction)
+      _transY += distance
+      
+    if (right in direction)
+      _transX += distance
+    if (left in direction)
+      _transX -= distance
+
+  if _transX != 0 and _transY != 0
+    translate(_transX, _transY)
+  else if _transY == 0
+    translateX(_transX)
+  else
+    translateY(_transY)
+    
+/*transitions()
+  if is_tuple(arguments)
+    transition: unquote(join(", ", arguments))*/

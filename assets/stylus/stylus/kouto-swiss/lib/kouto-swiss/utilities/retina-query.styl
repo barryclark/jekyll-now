@@ -1,0 +1,14 @@
+ks-retina-query( media = all, density = 1 )
+    media = join( " ", media )
+    query = media + " and (-webkit-min-device-pixel-ratio: " + density + "), "
+    query += media + " and (min--moz-device-pixel-ratio: " + density + "), "
+    query += media + " and (-o-min-device-pixel-ratio: " + density + "/1), "
+    query += media + " and (min-device-pixel-ratio: " + density + "), "
+    query += media + " and (min-resolution: " + ceil( density * 96 ) + "dpi), "
+    query += media + " and (min-resolution: " + density + "dppx)"
+    @media query
+        {block}
+
+retina-query = ks-retina-query unless ks-no-conflict
+ks-hidpi-query = ks-retina-query unless ks-no-conflict
+hidpi-query = ks-hidpi-query unless ks-no-conflict

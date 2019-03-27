@@ -1,0 +1,47 @@
+// Author      : Mehran Arjmand
+// Description : Get only inner or outer shadow from variable
+
+outer-shadow(shadows...)
+  _list   = ""
+  _length = 0
+
+  if(shadows)
+
+    for shadow in shadows
+      unless('inset' in shadow)
+        _length += 1
+        push(_list, (shadow))
+        p(_list)
+        
+    _list = slice(_list, 1)
+    
+    if _length > 1
+      _list = join(',', _list)
+      box-shadow: unquote(_list)
+    else if _length > 0
+      box-shadow: _list
+    else 
+      box-shadow: none
+
+inner-shadow(shadows...)
+  _list   = ""
+  _length = 0
+
+  if(shadows)
+
+    for shadow in shadows
+      if('inset' in shadow)
+        _length += 1
+        push(_list, (shadow))
+        p(_list)
+        
+    _list = slice(_list, 1)
+    
+    if _length > 1
+      _list = join(',', _list)
+      box-shadow: unquote(_list)
+    else if _length > 0
+      box-shadow: _list
+    else 
+      box-shadow: none
+

@@ -1,0 +1,125 @@
+{
+  "name": "kouto-swiss",
+  "version": "1.1.0",
+  "version_date": "2017-02-26",
+  "description": "A complete CSS framework for Stylus",
+  "keywords": [
+    "Stylus",
+    "CSS",
+    "framework",
+    "polyfill",
+    "grid",
+    "vendors",
+    "responsive",
+    "reset",
+    "utility"
+  ],
+  "homepage": "http://kouto-swiss.io",
+  "github": "http://github.com/leny/kouto-swiss",
+  "author": {
+    "name": "leny",
+    "email": "info@flatland.be",
+    "url": "http://leny.me"
+  },
+  "contributors": [
+    {
+      "name": "leny",
+      "url": "http://leny.me"
+    },
+    {
+      "name": "filipelinhares",
+      "url": "http://filipelinhares.com"
+    },
+    {
+      "name": "PunKeel",
+      "url": "http://www.ungeek.fr"
+    },
+    {
+      "name": "kaok",
+      "url": "http://otherside.in"
+    },
+    {
+      "name": "bcbcarl",
+      "url": "https://github.com/bcbcarl"
+    },
+    {
+      "name": "srsgores",
+      "url": "http://seangoresht.com"
+    },
+    {
+      "name": "teohhanhui",
+      "url": "https://github.com/teohhanhui"
+    },
+    {
+      "name": "kix",
+      "url": "http://blog.kixlive.ru"
+    },
+    {
+      "name": "morenoh149",
+      "url": "http://harrymoreno.com"
+    },
+    {
+      "name": "mehcode",
+      "url": "https://github.com/mehcode"
+    },
+    {
+      "name": "sdegutis",
+      "url": "http://sdegutis.github.io"
+    },
+    {
+      "name": "BYODKM",
+      "url": "https://byodkm.com"
+    },
+    {
+      "name": "dmitrykiselyov",
+      "url": "https://github.com/dmitrykiselyov"
+    },
+    {
+      "name": "EmmanuelBeziat",
+      "url": "https://www.emmanuelbeziat.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leny/kouto-swiss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leny/kouto-swiss/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/leny/kouto-swiss/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/kouto-swiss.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "prefiks": "^0.3",
+    "stylus": "0.54.5"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "cheerio": "^0.22.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.1.0",
+    "grunt-concurrent": "^2.2.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-cli": "^3.0.0",
+    "highlight.js": "^9.9.0",
+    "load-grunt-tasks": "^3.4.1",
+    "marked": "^0.3.5",
+    "mocha": "^3.1.2",
+    "should": "^11.1.1"
+  }
+}

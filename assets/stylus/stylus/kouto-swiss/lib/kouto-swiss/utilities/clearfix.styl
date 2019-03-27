@@ -1,0 +1,38 @@
+ks-clearfix()
+    if ks-support-ie <= 7
+        *zoom 1
+    &:before
+    &:after
+        content: " "
+        display: table
+    &:after
+        clear: both
+
+clearfix = ks-clearfix unless ks-no-conflict
+
+ks-clear( value, args... )
+    if value == fix
+        clearfix()
+    else
+        clear: value args
+
+clear = ks-clear unless ks-no-conflict
+
+_ks-fix-processing( current-property )
+    if( current-property[ 0 ] == "clear" )
+        fix
+    else
+        error( "fix() must be used within a clear property" )
+
+ks-fix()
+    if( current-property )
+        _ks-fix-processing( current-property )
+    else
+        error( "ks-fix() must be used within a clear property" )
+
+unless ks-no-conflict
+    fix()
+        if( current-property )
+            _ks-fix-processing( current-property )
+        else
+            error( "fix() must be used within a clear property" )

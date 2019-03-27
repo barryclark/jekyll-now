@@ -1,0 +1,14 @@
+ks-triangle( direction, size, face-color, back-color = transparent )
+    width: 0
+    height: 0
+    border: size solid back-color
+    if direction == up || direction == down-left || direction == down-right
+        border-bottom-color: face-color
+    if direction == down || direction == up-left || direction == up-right
+        border-top-color: face-color
+    if direction == left || direction == down-right || direction == up-right
+        border-right-color: face-color
+    if direction == right || direction == down-left || direction == up-left
+        border-left-color: face-color
+
+triangle = ks-triangle unless ks-no-conflict

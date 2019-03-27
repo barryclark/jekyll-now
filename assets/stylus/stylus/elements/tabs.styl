@@ -1,0 +1,85 @@
+
+tab_default   = {
+  enable : false,
+  class : "tab"
+  css   : {
+    list-style : none
+    padding : 0
+    width : 100%
+    border-bottom : 1px solid colors.grey
+    float : right
+    margin-bottom : global.margin
+  }
+  types : {
+    horizontal : {
+      'li' : {
+        position : relative
+        float : right
+        '&:hover' : {
+          background-color : colors.grey
+          cursor : pointer
+        }
+        '&.active' : {
+          border : 1px solid colors.grey
+          border-bottom : transparent
+          margin-bottom : -1px
+          background-color : colors.white
+          '&:hover' : {
+            background-color : colors.white
+          }
+          'a' : {
+            color : colors.blue
+          }
+        }
+        'a' : {
+          font-size : global.font-size
+          color : colors.text
+          margin : global.margin
+          padding : global.padding
+          cursor : pointer
+          line-height : global.line-height + 1.5
+        }
+      }
+    }
+    vertical : {
+      'li' : {
+        display : block
+        position : relative
+        float : none
+        'a' : {
+          color : colors.text
+          display : block
+          line-height : global.line-height
+          padding : global.padding
+          cursor : pointer
+        }
+        '&:hover' : {
+          background-color : colors.grey + 30%
+        }
+      '&.active' : {
+        background-color : colors.grey
+        'a' : {
+          color : colors.blue
+        }
+      }
+      }
+    }
+  }
+}
+
+tab = extend(tab_default, tab)
+
+$tab
+  prepare: tab.css
+
+if tab.enable
+  .{tab.class}
+    @extend $tab
+    for name, prop in tab.types
+      &_{name}
+        @extend $tab
+        prepare: prop
+  //for name, prop in input.size
+  //  &_{name}
+  //    @extend $input
+  //    prepare: prop

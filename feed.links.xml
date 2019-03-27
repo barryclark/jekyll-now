@@ -1,0 +1,23 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.name | xml_escape }} - Links</title>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+		<link>{{ site.url }}</link>
+		<atom:link href="{{ site.url }}/feed.links.xml" rel="self" type="application/rss+xml" />
+		{% for post in site.posts %}
+			{% if post.link %}
+			<item>
+				<title>{{ post.title | xml_escape }}</title>
+				<description>{{ post.content | xml_escape }}</description>
+				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+				<link>{{ post.link | escape }}</link>
+				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+			</item>
+			{% endif %}
+		{% endfor %}
+	</channel>
+</rss>

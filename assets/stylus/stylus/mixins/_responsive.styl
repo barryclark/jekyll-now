@@ -1,0 +1,78 @@
+// Author       : Mehran Arjmand
+// Description  : Responsive functions
+
+// make column name from size by replacing '.' with '_'
+column-name(size, delimiter = '_') 
+    replace('\.', delimiter, s('%s',size))
+
+// make css class with media queries for responsive grid system
+column-responsive(column_count,  column_sizes, queries, column_name='column', $column)
+  _i            = 0
+
+  for name, break_point in queries
+
+    if (_i != 0)
+
+      // other size
+      @media only screen and ( max-width: break_point )
+        for size in column_sizes
+          .{column_name}_{name}_{column-name(size)}
+              @extend $column
+              width: (100% / (column_count / size))
+          .{column_name}_{name}_push_{column-name(size)}
+            right: (100% / (column_count / size))
+          .{column_name}_{name}_pull_{column-name(size)}
+            left: (100% / (column_count / size))
+        .{column_name}_{name}_reorder
+          left: 0
+          right: 0
+
+    else
+
+      // minimum size is default in mobile first responsive
+      for size in column_sizes
+        .{column_name}_{name}_{column-name(size)}
+              @extend $column
+              width: (100% / (column_count / size))
+        .{column_name}_{name}_push_{column-name(size)}
+          right: (100% / (column_count / size))
+        .{column_name}_{name}_pull_{column-name(size)}
+          left: (100% / (column_count / size))
+          
+        .{column_name}_{name}_reorder
+          left: 0
+          right: 0
+
+    _i            += 1
+    
+class-prepare(properties, prefix, postfix) 
+  for name, property in properties
+    {prefix}{name}{postfix}
+      prepare: property
+
+properties-responsive(queries, properties)
+  _i              = 0
+  prev_value      = ""
+  prev_name       = ""
+
+  for name, break_point in queries
+    // escape first time
+    
+    if (_i != 0)
+    
+      if ( _i == 1 )
+        @media only screen and ( min-width: break_point )
+          class-prepare( properties , '.' , '_' + prev_name );
+
+      if ( _i > 1 )
+        @media only screen and ( min-width: break_point ) and ( max-width: prev_value )
+          class-prepare( properties , '.' , '_' + prev_name );
+
+      // last time
+      if ( _i == length(queries) - 1)
+        @media only screen and ( max-width: break_point )
+          class-prepare( properties , '.' , '_' + name );
+      
+    prev_value      = break_point
+    prev_name       = name
+    _i              += 1;

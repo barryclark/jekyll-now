@@ -1,17 +1,25 @@
 ---
-layout: default
+layout: page
 ---
-
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
+<header>
+  <h2>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h2>
+  <div class="time">
+    {{ page.date | date: "%a, %b %d, %y" }}
+    توسط <a href="">
+      {% if page.author %}
+      {{ page.author }}
+      {% else %}
+      admin
+      {% endif %}</a>
+   
   </div>
+</header>
+<div>
+  <img src="{{ site.url }}/assets/img/{{ page.img_name }}" alt="">
+</div>
+<div class="column_large_9">
+  {{ content }}
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+</div>
 
-  {% include disqus.html %}
-</article>
+

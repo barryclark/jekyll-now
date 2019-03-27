@@ -1,0 +1,143 @@
+.top_news
+    figure
+        overflow hidden
+        margin: 0
+        padding: 0
+        position relative
+        height 550px;
+        figcaption 
+            position absolute
+            bottom: 0px
+            padding: 20px
+            background-image: linear-gradient(to top, rgba(0,0,0,0.98) 0%,rgba(0,0,0,0) 100%)
+            h2 
+                a
+                    color: colors.white
+                    margin-top: 10px;
+                    font-size: 14px
+                    transition: all .3s
+                    &:hover
+                        color: colors.basic
+            span 
+                background-color: colors.basic;
+                color: colors.white;
+                padding: 2px 5px;
+                border-radius: 5px
+.category 
+    margin-bottom: 70px
+    header 
+        margin-top: 5px;
+        margin-bottom: 15px
+        h2
+            float right
+            font-size: 22px
+            color: colors.basic
+            font-weight: bold
+        button 
+            float left
+            background-color: transparent
+            border:none
+            color:colors.basic
+            font-family: iranyekan
+            padding: 5px;
+            cursor pointer
+            margin-top: 20px
+            &:hover
+                border-bottom:1px solid colors.basic
+
+    div.news
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        figure
+            overflow hidden
+            margin: 0
+            padding: 0
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            img 
+                height 100%
+            figcaption 
+                position absolute
+                bottom: 0px
+                padding: 20px
+                background-image: linear-gradient(to top, rgba(0,0,0,0.98) 0%,rgba(0,0,0,0) 100%)
+                transition: all .3s
+                h2 
+                    color: colors.white
+                    margin-top: 10px;
+                    font-size: 16px
+                    transition: all .3s
+                    margin-bottom: 15px
+                p
+                    color: colors.white
+                    font-size : 10px
+                a 
+                    background-color transparent
+                    color : colors.basic
+                    font-family: iranyekan
+                    border:none
+                    float left 
+                    cursor: pointer
+                    border-bottom: 1px solid transparent
+                    &:hover
+                        border-bottom: 1px solid colors.basic
+                &:hover
+                    padding-bottom: 35px;
+        &.hast_margin
+            margin-bottom: 36px
+.news_box
+    overflow hidden
+    margin: 0px
+    margin-bottom: 60px
+    .img
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        img 
+            position:  absolute;
+            top: 0;
+            height 100%;
+    .tag
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #e96721;
+        color: #fff;
+        padding: 3px 9px;
+        font-size: 10px;
+        border-radius: 0px 5px 5px 0px;
+    figcaption 
+        h2
+            font-weight: bold
+            font-size: 16px;
+            margin-top: 10px;
+        .time
+            font-size: 10px;
+            color: #949494
+        .readmore
+            float left
+            color:colors.basic
+            &:hover
+                border-bottom: 1px solid colors.basic
+                
+
+.loadmore
+    text-align: center
+    border:1px solid colors.basic
+    background-color:colors.basic
+    width: 340px
+    margin: 0 auto
+    padding: 5px 
+    transition all .3s
+    a
+        display inline-block
+        width 100%
+        color: colors.white
+    &:hover
+        background-color:  colors.basic - 30%
+        a
+            color:colors.white

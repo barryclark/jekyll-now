@@ -1,0 +1,43 @@
+_ks-repeating-linear-gradient-processing( current-property, start, props )
+    if( current-property[ 0 ] == "background-image" )
+        steps = ()
+        compat-steps = ()
+        if( length( start ) == 1 )
+            if( start is a "color" )
+                push( steps, start )
+                push( compat-steps, start )
+            else
+                push( steps, start )
+                if( unit( start ) == "deg" )
+                    push( compat-steps, start + 180deg )
+                else
+                    push( compat-steps, start )
+        else
+            push( steps, join( " ", start ) )
+            if( start[ 0 ] == "to" )
+                shift( start )
+                push( compat-steps, join( " ", opposite-position( start ) ) )
+            else
+                push( compat-steps, join( " ", start ) )
+
+        for prop in props
+            push( steps, join( " ", prop ) )
+            push( compat-steps, join( " ", prop ) )
+
+        add-property( "background-image", unquote( "-webkit-repeating-linear-gradient(" + join( ",", compat-steps ) + ")" ) )
+        unquote( "repeating-linear-gradient(" + join( ",", steps ) + ")" )
+    else
+        error( "repeating-linear-gradient() must be used within a 'background-image' property" )
+
+ks-repeating-linear-gradient( start, props... )
+    if( current-property )
+        _ks-repeating-linear-gradient-processing( current-property, start, props )
+    else
+        error( "ks-repeating-linear-gradient() must be used within a 'background-image' property" )
+
+unless ks-no-conflict
+    repeating-linear-gradient( start, props... )
+        if( current-property )
+            _ks-repeating-linear-gradient-processing( current-property, start, props )
+        else
+            error( "repeating-linear-gradient() must be used within a 'background-image' property" )

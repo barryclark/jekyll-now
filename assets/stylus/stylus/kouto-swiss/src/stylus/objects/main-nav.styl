@@ -1,0 +1,38 @@
+/* leny/kouto-swiss
+ *
+ * /src/stylus/objects/main-nav.styl - Main nav object
+ *
+ * coded by leny@flatLand!
+ * started at 07/12/2016
+ */
+
+.main-nav
+    display none
+    width 16rem
+    float right
+    padding 3.2rem 0 0
+    h2
+        display none
+    ul
+        list-style none
+        padding 0
+        > li
+            margin-bottom 2rem
+            font-size 1.6rem
+            font-weight bold
+            > a
+                display block
+                margin-bottom 1rem
+                color #555
+            > ul
+                padding-left 1rem
+                li
+                    margin-bottom .5rem
+                    a
+                        margin-bottom 0
+                        font-weight normal
+                        font-size 1.2rem
+
++media-query( screen, min-width 960px )
+    .main-nav
+        display block

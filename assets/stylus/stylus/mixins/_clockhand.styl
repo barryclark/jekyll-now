@@ -1,0 +1,51 @@
+// Author       : Mehran Arjmand
+// Description  : expand false value in shorthand properties
+
+
+// use for get sutiable value from shorthand
+_get_value_by_index(value, index)
+  _length   = length(value)
+  if _length > index
+    value[index]
+  else 
+    if _length < 3
+      value[ (index % _length) ]
+    else
+      value[ (index % 2) ]
+
+// Check if the list has false value
+_has_false(list)
+  _i = 0
+  _result = false
+  
+  for item in list
+    if item == false
+      _result = true
+    _i += _i
+
+  _result
+
+
+_clockhand(property, values)
+  _directions_cw     = top right bottom left
+
+  if (_has_false(values))
+    _i = 0
+    
+    for d in _directions_cw
+      
+      if _get_value_by_index(values, _i) != false
+        {property}-{d}: _get_value_by_index(values, _i)
+
+      _i = _i + 1
+
+  else
+    {property}: values
+    
+// margin properties use _clockhand function
+margin()
+  _clockhand(margin, arguments)
+
+// padding properties use _clockhand function
+padding()
+  _clockhand(padding, arguments)

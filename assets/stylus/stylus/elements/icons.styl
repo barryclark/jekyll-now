@@ -1,0 +1,49 @@
+
+icon_default      = {
+  enable      : true
+
+  class       : 'icon'
+  size        : 20px
+  angles      : 90 180 270
+  
+  sizes       : {
+  }
+}
+
+icon = merge-rec(icon_default, icon)
+
+if icon.enable
+  .icon 
+    size: icon.size
+    vertical-align: middle
+    fill: currentcolor
+    pointer-events: none
+    
+    &.clickable
+      pointer-events: auto
+      
+    &.animate
+      transition: transform global.transition-duration
+      
+    &.spin
+      animation spin infinite 1s 0s steps(8)
+
+    &.flip_h
+        transform scale(-1, 1)
+
+    &.flip_v
+        transform scale(1, -1)
+
+    for angle in icon.angles
+      &.rotate_{angle}
+        transform s('rotate(%sdeg)', angle)
+    for name, prop in icon.sizes
+      &_{name}
+        css: prop
+
+
+  @keyframes spin
+    from
+      transform rotate(0deg);
+    to 
+      transform rotate(360deg);

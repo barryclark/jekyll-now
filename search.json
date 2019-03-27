@@ -1,0 +1,30 @@
+---
+
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.categories | join: ','  }}",
+      "tags"     : "{{ post.tags | join: ',' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date: '%b %d, %y' }}",
+      "img_name" : "{{post.img_name}}",
+      "content"  : "{{ post.content | strip_html | strip_newlines | url_decode | escape_once  | truncate: 200}}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for page in site.pages %}
+   {
+     {% if page.title != nil %}
+        "title"    : "{{ page.title | escape }}",
+        "category" : "{{ page.categories | join: ','   }}",
+        "tags"     : "{{ page.tags | join: ',' }}",
+        "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "date"     : "{{ page.date  | date: '%b %d, %y'}}",
+        "img_name" : "{{page.img_name}}",
+        "content"  : "{{ page.content | strip_html | strip_newlines | url_decode | escape_once  | truncate: 200 }}"
+     {% endif %}
+   } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

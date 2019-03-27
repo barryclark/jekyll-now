@@ -1,0 +1,105 @@
+
+
+forms_default       = {
+  enable        : true
+  class         : 'form'
+
+  responsive      : true
+
+  gutter          : 10px
+
+  column_count    : 12
+  column_sizes    : 1..12
+
+  css        : {
+
+  }
+
+  input_css               : {
+    display: block
+
+    '&[type="checkbox"],&[type="radio"]' : {
+      display: inline-block
+      width: auto
+
+      '+ .form_label' : {
+        width: auto
+        display: inline-block
+        min-height: 0
+        margin-top: 45px
+        margin-bottom: 0
+      }
+
+    }
+  }
+
+  label               : {
+    css: {
+      display: block
+      margin-bottom: global.margin
+      line-height: global.line-height
+      min-height: 30px
+    }
+  }
+
+  label_inline            : {
+    css: {
+      display: block
+      text-align: left
+      margin-top: .3em
+    }
+  }
+
+  messages                : {
+    enable                  : true
+    class                   : 'message'
+
+    css                     : {
+      font-size: rem(11)
+      text-align: right
+      display: block
+    }
+
+    types                   : {
+
+      'red'                   : {
+        color: colors.red
+      }
+
+      'green'                 : {
+        color: colors.green
+      }
+
+    }
+  }
+
+}
+
+merge-rec(forms_default, forms)
+
+if forms_default.enable
+  // New revision
+  // Use columns instead of form
+  // Follow foundation rules
+  .label
+    css: forms_default.label.css
+
+  .label_inline
+    css: forms_default.label_inline.css
+
+  .radio
+  .checkbox
+    + label
+      display: inline-block
+      margin-top: .3em
+
+  // messages
+  $message
+    css: forms_default.messages.css
+
+  .message
+    for name, prop in forms_default.messages.types
+      &_{name}
+        @extend $message
+        css: prop
+

@@ -1,0 +1,15 @@
+ks-flex-axis( mainAxis, crossAxis = null )
+    mainPossibleValues = flex-start flex-end center space-between space-evenly space-around
+    crossPossibleValues = flex-start flex-end center baseline stretch
+
+    if crossAxis
+        mainAxis = ( mainAxis in mainPossibleValues ) ? mainAxis : flex-start
+        crossAxis = ( crossAxis in crossPossibleValues ) ? crossAxis : stretch
+    else
+        crossAxis = ( mainAxis in crossPossibleValues ) ? mainAxis : stretch
+        mainAxis = ( mainAxis in mainPossibleValues ) ? mainAxis : flex-start
+
+    justify-content: mainAxis
+    align-items: crossAxis
+
+flex-axis = ks-flex-axis unless ks-no-conflict

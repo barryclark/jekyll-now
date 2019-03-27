@@ -1,12 +1,37 @@
 ---
 layout: default
 ---
+<section class="news_content">
+    <div class="column_large_8 column_large_push_2">
+        <article class="single_news clearfix">
+            {{content}}
 
-<article class="page">
+            <div class="column_large_3">
+                <h2>
+                  
+                    اخرین مطالب
+                </h2>
+                 
 
-  <h1>{{ page.title }}</h1>
 
-  <div class="entry">
-    {{ content }}
-  </div>
-</article>
+                {%- for posts in site.related_posts  | group_by: 'category' -%}
+
+
+                <div class="ralated_news clearfix">
+                    <a href="{{ site.url }}/{{posts.url}}">
+                        <figure class="column_large_5">
+                            <img src="{{ site.url }}/assets/img/{{ posts.img_name }}" alt="">
+                        </figure>
+                        <figcaption class="column_large_7">
+                            <h2>{{posts.title}}</h2>
+                            <span class="time">{{posts.date | date: "%a, %b %d, %y"}}</span>
+                        
+                        </figcaption>
+                    </a>
+                </div>
+                {%- endfor -%}
+
+            </div>
+        </article>
+    </div>
+</section>

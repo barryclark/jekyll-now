@@ -1,0 +1,47 @@
+// Author      : Mehran Arjmand
+// Description : Choose proper value from array for shorthand properties
+// Version     : 1.0.0
+
+// e.g:
+//    margin-right: X Y Z -> margin-right: Y
+//    margin-right: X     -> margin-right: X
+_shorthand-prop(prop, values, poitions)
+  _length   = length(values)
+  _i        = 0
+  _value    = false
+
+  for position in poitions
+    if position == 1
+      
+      if _length > _i
+        _value = values[_i]
+
+    _i += 1
+  
+  if _value != false
+    {prop}: _value
+
+margin-top()
+  _shorthand-prop(margin-top, arguments, 1 0 0 0)
+
+margin-right()
+  _shorthand-prop(margin-right, arguments, 1 1 0 0)
+  
+margin-bottom()
+  _shorthand-prop(margin-bottom, arguments, 1 0 1 0)
+  
+margin-left()
+  _shorthand-prop(margin-left, arguments, 1 1 0 1)
+  
+
+padding-top()
+  _shorthand-prop(padding-top, arguments, 1 0 0 0)
+
+padding-right()
+  _shorthand-prop(padding-right, arguments, 1 1 0 0)
+  
+padding-bottom()
+  _shorthand-prop(padding-bottom, arguments, 1 0 1 0)
+  
+padding-left()
+  _shorthand-prop(padding-left, arguments, 1 1 0 1)

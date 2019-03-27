@@ -1,0 +1,142 @@
+
+buttons_default   = {
+  enable    : true
+  
+  class : "btn"
+  css   : {
+    color: white
+    font-family: global.font-family
+    padding : global.padding
+    outline : 0
+    border : 0
+    border-radius : global.border-radius
+    background-repeat : no-repeat
+    background-position : left 5px center
+    text-align : center
+    line-height : global.line-height
+    cursor : pointer
+    font-size : global.font-size - 1
+    transition: background-color 0.3s
+    display: inline-block
+    background-color : colors.accent
+    
+    '&:hover'  :{
+      background-color : colors.blue - global.hover
+      color : colors.white
+    }
+    
+    '&:focus' :{
+      background-color : colors.blue - global.focus
+      color : colors.white
+    }
+
+    '&:disabled' : {
+      cursor : not-allowed
+      opacity : .50
+      background-color : colors.grey
+      color : colors.grey - 20%
+      '&:hover' : {
+        background-color : colors.grey
+        color : colors.grey - 20%
+      }
+    }
+
+  }
+
+  colors : {
+
+    blue : {
+      background-color : colors.blue
+      border-color : colors.blue
+      color : colors.white
+      '&:hover'  :{
+        background-color : colors.blue - global.hover
+        color : colors.white
+      }
+      '&:focus' :{
+        background-color : colors.blue - global.focus
+        color : colors.white
+      }
+    }
+
+    green : {
+      background-color : colors.green
+      border-color : colors.green
+      color : colors.white
+      '&:hover' :{
+        background-color : colors.green - global.hover
+        color : colors.white
+      }
+      '&:focus' :{
+        background-color : colors.green - global.focus
+        color : colors.white
+      }
+    }
+
+    red : {
+      background-color : colors.red
+      border-color : colors.red
+      color : colors.white
+      '&:hover' :{
+        background-color : colors.red - global.hover
+        color : colors.white
+      }
+      '&:focus' :{
+        background-color : colors.red - global.focus
+        color : colors.white
+      }
+    }
+
+    grey :{
+      background-color : colors.grey
+      border-color : colors.grey
+      color : colors.grey - 80%
+      '&:hover' :{
+        background-color : colors.grey - global.hover
+        color : colors.grey - 80%
+      }
+      '&:focus' :{
+        background-color : colors.grey - global.focus
+        color : colors.grey - 80%
+      }
+    }
+  }
+
+  sizes : {
+    block :{
+      width : 100%
+    }
+    large :{
+      padding : global.padding
+      font-size : 18px
+    }
+    medium :{
+      padding : global.padding
+      font-size : 14px
+    }
+    small : {
+      padding : global.padding
+      font-size : 12px
+    }
+
+  }
+}
+
+merge-rec(buttons_default, buttons)
+
+if buttons_default.enable
+
+  $buttons
+    prepare: buttons_default.css
+
+
+  .{buttons_default.class}
+    @extend $buttons
+    for name, prop in buttons_default.colors
+      &_{name}
+        @extend $buttons
+        prepare: prop
+    for name, prop in buttons_default.sizes
+      &_{name}
+        @extend $buttons
+        prepare: prop

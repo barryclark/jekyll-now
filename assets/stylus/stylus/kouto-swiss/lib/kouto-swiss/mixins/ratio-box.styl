@@ -1,0 +1,16 @@
+ks-ratio-box( ratio = 1/1 )
+    ratio = _strip-units( ratio )
+
+    overflow: hidden
+    position: relative
+
+    // The container's height, as a percentage of the
+    // container's width, is set by assigning
+    // padding-top to a pseudo-element.
+    &:before
+      content: ""
+      display: block
+      height: 0
+      padding-top: (1 / ratio) * 100%
+
+ratio-box = ks-ratio-box unless ks-no-conflict

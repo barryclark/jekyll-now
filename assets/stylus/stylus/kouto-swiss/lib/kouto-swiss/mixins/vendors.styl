@@ -1,0 +1,185 @@
+ks-vendors-prefixes = recommended
+
+ks-vendor( property, value, feature = null, prefixes = null, official = true )
+    unless "vendor" in called-from
+        if ks-vendors-prefixes isnt false
+            if feature isnt null and !( feature in ks-support-ignore-features )
+                for prefix in caniuse-prefixes( feature )
+                    prefixedproperty = "-" + prefix + "-" + property
+                    {prefixedproperty}: value
+            else
+                if ks-vendors-prefixes isnt recommended
+                    prefixes = ks-vendors-prefixes
+                if prefixes
+                    for prefix in prefixes
+                        prefixedproperty = "-" + prefix + "-" + property
+                        {prefixedproperty}: value
+    if official
+        {property}: value
+
+vendor = ks-vendor unless ks-no-conflict
+
+unless ks-no-conflict
+    animation()
+        ks-vendor( "animation", arguments, feature: "css-animation" )
+    animation-delay()
+        ks-vendor( "animation-delay", arguments, feature: "css-animation" )
+    animation-direction()
+        ks-vendor( "animation-direction", arguments, feature: "css-animation" )
+    animation-duration()
+        ks-vendor( "animation-duration", arguments, feature: "css-animation" )
+    animation-fill-mode()
+        ks-vendor( "animation-fill-mode", arguments, feature: "css-animation" )
+    animation-iteration-count()
+        ks-vendor( "animation-iteration-count", arguments, feature: "css-animation" )
+    animation-name()
+        ks-vendor( "animation-name", arguments, feature: "css-animation" )
+    animation-play-state()
+        ks-vendor( "animation-play-state", arguments, feature: "css-animation" )
+    animation-timing-function()
+        ks-vendor( "animation-timing-function", arguments, feature: "css-animation" )
+
+    appearance()
+        ks-vendor( "appearance", arguments, prefixes: webkit moz )
+
+    backface-visibility()
+        ks-vendor( "backface-visibility", arguments, prefixes: webkit ms )
+
+    background-clip()
+        ks-vendor( "background-clip", arguments, feature: "background-img-opts" )
+    background-origin()
+        ks-vendor( "background-origin", arguments, feature: "background-img-opts" )
+    background-size()
+        ks-vendor( "background-size", arguments, feature: "background-img-opts" )
+
+    border-image-source()
+        ks-vendor( "border-image-source", arguments, feature: "border-image" )
+    border-image-slice()
+        ks-vendor( "border-image-slice", arguments, feature: "border-image" )
+    border-image-width()
+        ks-vendor( "border-image-width", arguments, feature: "border-image" )
+    border-image-outset()
+        ks-vendor( "border-image-outset", arguments, feature: "border-image" )
+    border-image-repeat()
+        ks-vendor( "border-image-repeat", arguments, feature: "border-image" )
+    border-image()
+        ks-vendor( "border-image", arguments, feature: "border-image" )
+
+    box-shadow()
+        ks-vendor( "box-shadow", arguments, feature: "css-boxshadow" )
+
+    box-sizing()
+        ks-vendor( "box-sizing", arguments, feature: "css3-boxsizing" )
+
+    clip-path()
+        ks-vendor( "clip-path", arguments, feature: "css-clip-path" )
+
+    column-count()
+        ks-vendor( "column-count", arguments, feature: "multicolumn" )
+    column-fill()
+        ks-vendor( "column-fill", arguments, feature: "multicolumn" )
+    column-gap()
+        ks-vendor( "column-gap", arguments, feature: "multicolumn" )
+    column-rule()
+        ks-vendor( "column-rule", arguments, feature: "multicolumn" )
+    column-rule-color()
+        ks-vendor( "column-rule-color", arguments, feature: "multicolumn" )
+    column-rule-style()
+        ks-vendor( "column-rule-style", arguments, feature: "multicolumn" )
+    column-rule-width()
+        ks-vendor( "column-rule-width", arguments, feature: "multicolumn" )
+    column-span()
+        ks-vendor( "column-span", arguments, feature: "multicolumn")
+    column-width()
+        ks-vendor( "column-width", arguments, feature: "multicolumn" )
+    columns()
+        ks-vendor( "columns", arguments, feature: "multicolumn" )
+
+    grid()
+        ks-vendor( "grid", arguments, feature: "css-grid" )
+    grid-area()
+        ks-vendor( "grid-area", arguments, feature: "css-grid" )
+    grid-auto-columns()
+        ks-vendor( "grid-auto-columns", arguments, feature: "css-grid" )
+    grid-auto-flow()
+        ks-vendor( "grid-auto-flow", arguments, feature: "css-grid" )
+    grid-auto-position()
+        ks-vendor( "grid-auto-position", arguments, feature: "css-grid" )
+    grid-auto-rows()
+        ks-vendor( "grid-auto-rows", arguments, feature: "css-grid" )
+    grid-column()
+        ks-vendor( "grid-column", arguments, feature: "css-grid" )
+    grid-column-end()
+        ks-vendor( "grid-column-end", arguments, feature: "css-grid" )
+    grid-column-start()
+        ks-vendor( "grid-column-start", arguments, feature: "css-grid" )
+    grid-row()
+        ks-vendor( "grid-row", arguments, feature: "css-grid" )
+    grid-row-end()
+        ks-vendor( "grid-row-end", arguments, feature: "css-grid" )
+    grid-row-start()
+        ks-vendor( "grid-row-start", arguments, feature: "css-grid" )
+    grid-template()
+        ks-vendor( "grid-template", arguments, feature: "css-grid" )
+    grid-template-areas()
+        ks-vendor( "grid-template-areas", arguments, feature: "css-grid" )
+    grid-template-columns()
+        ks-vendor( "grid-template-columns", arguments, feature: "css-grid" )
+    grid-template-rows()
+        ks-vendor( "grid-template-rows", arguments, feature: "css-grid" )
+
+    hyphens()
+        ks-vendor( "hyphens", arguments, feature: "css-hyphens" )
+
+    justify-content()
+        ks-vendor( "justify-content", arguments, feature: "flexbox" )
+
+    mask()
+        ks-vendor( "mask", arguments, feature: "css-masks" )
+
+    opacity( value )
+        if value == inherit or value == initial
+            -ms-filter value
+            filter value
+        else
+            val = round( value * 100 )
+            if val == 100
+                -ms-filter: none
+                filter: none
+            else
+                -ms-filter: '"progid:DXImageTransform.Microsoft.Alpha(Opacity=%s)"' % val
+                filter: 'alpha(opacity=%s)' % val
+        opacity: value
+
+    order()
+        ks-vendor( "order", arguments, feature: "flexbox" )
+
+    perspective()
+        if current-property[ 0 ] is "perspective"
+            ks-vendor( "perspective", arguments, feature: "transforms3d" )
+        else
+            unquote( "perspective(" + arguments + ")" )
+
+    perspective-origin()
+        ks-vendor( "perspective-origin", arguments, feature: "transforms3d" )
+
+    transform()
+        ks-vendor( "transform", arguments, feature: "transforms2d" )
+    transform-origin()
+        ks-vendor( "transform-origin", arguments, feature: "transforms2d" )
+    transform-style()
+        ks-vendor( "transform-style", arguments, feature: "transforms3d" )
+
+    transition()
+        ks-vendor( "transition", arguments, feature: "css-transitions" )
+    transition-delay()
+        ks-vendor( "transition-delay", arguments, feature: "css-transitions" )
+    transition-duration()
+        ks-vendor( "transition-duration", arguments, feature: "css-transitions" )
+    transition-property()
+        ks-vendor( "transition-property", arguments, feature: "css-transitions" )
+    transition-timing-function()
+        ks-vendor( "transition-timing-function", arguments, feature: "css-transitions" )
+
+    user-select( value )
+        ks-vendor( "user-select", arguments, feature: "user-select-none" )

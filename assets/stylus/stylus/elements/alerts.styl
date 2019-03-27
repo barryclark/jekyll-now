@@ -1,0 +1,50 @@
+alert_default     = {
+  enable      : true
+
+  class       : "alert"
+  css         : {
+    font-size: rem(12)
+    line-height: 1.5
+    display: block
+    padding: global.padding
+    border-radius: global.border-radius
+    margin-bottom: global.margin
+    color: #fff
+    'a'   : {
+      color: alpha(#fff, 0.8)
+      border-bottom: dotted 1px #fff
+      '&:hover' : {
+        color: alpha(#fff, 1)
+      }
+    }
+  }
+
+  colors      : {
+    red         : {
+      background-color: colors.red
+      border: solid 1px colors.red - 20%
+    }
+    green         : {
+      background-color: colors.green
+      border: solid 1px colors.green - 20%
+    }
+    orange         : {
+      background-color: colors.orange
+      border: solid 1px colors.orange - 20%
+    }
+  }
+}
+
+merge-rec(alert_default, alert)
+
+$alert
+  prepare: alert_default.css
+
+if alert_default.enable
+  .{alert_default.class}
+    @extend $alert
+    for name, prop in alert_default.colors
+      &_{name}
+        @extend $alert
+        prepare: prop
+    

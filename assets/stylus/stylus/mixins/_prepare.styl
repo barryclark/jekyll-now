@@ -1,0 +1,24 @@
+// Author       : Mehran Arjmand
+// Description  : make css style from hash values
+// Version      : 1.1.1
+
+prepare(object, max_depth = -1, skip = false, skip_values  = none initial, skip_properties = "")
+  if(object)
+    for prop, value in object
+    
+      unless(skip and (value in skip_values or replace("_", "-", prop) in skip_properties))
+
+        if(prop == border)
+
+          border: value
+
+        else if(typeof(value) == 'object')
+
+          if (max_depth != 0)
+            {prop}
+              prepare(value, max_depth > 0 ? max_depth - 1 : max_depth, skip, skip_values, skip_properties)
+
+        else
+          {replace("_", "-", prop)}: value
+
+css = prepare

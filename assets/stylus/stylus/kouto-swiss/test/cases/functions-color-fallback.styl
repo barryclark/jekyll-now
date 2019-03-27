@@ -1,0 +1,74 @@
+@import 'kouto-swiss'
+
+body
+    background: color-fallback( red )
+
+body
+    background: color-fallback( #f00 )
+
+body
+    background: color-fallback( rgb( 255, 0, 0 ) )
+
+body
+    background: color-fallback( rgba( 255, 0, 0, .5 ) )
+
+body
+    background: color-fallback( rgba( 255, 0, 0, 1 ) )
+
+body
+    background: color-fallback( hsla( 0, 100%, 50%, .5 ) )
+
+body
+    background: color-fallback( hsla( 0, 100%, 50%, 1 ) )
+
+body
+    border: 1px solid color-fallback( rgba( 255, 0, 0, .5 ) )
+
+body
+    border: 1px solid color-fallback( rgba( 255, 0, 0, 1 ) )
+
+body
+    background: color-fallback( rgba( 202, 43, 120, .5 ) )
+
+body
+    color: color-fallback( hsla( 63, 83%, 68%, .5 ) )
+
+body
+    background: color-fallback( rgba( 202, 43, 120, .5 ) ) url( test.png ) top left repeat
+
+body
+    background: rgba( 255, 0, 0, .5 )
+
+ks-color-fallback-enabled = true
+
+body
+    background: rgba( 255, 0, 0, .5 )
+
+body
+    background: rgba( 255, 0, 0, 1 )
+
+body
+    background: hsla( 0, 100%, 50%, .5 )
+
+body
+    background: hsla( 0, 100%, 50%, 1 )
+
+body
+    border: 1px solid rgba( 255, 0, 0, .5 )
+
+body
+    color: hsla( 63, 83%, 68%, .5 )
+
+body
+    color: color-fallback( hsla( 63, 83%, 68%, .5 ) )
+
+body
+    background: rgba( 202, 43, 120, .5 ) url( test.png ) top left repeat
+
+ks-color-fallback-enabled = false
+
+body
+    background: rgba( 255, 0, 0, .5 )
+
+body
+    background: rgba( 255, 0, 0, 1 )

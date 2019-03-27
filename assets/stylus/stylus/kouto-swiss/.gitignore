@@ -1,0 +1,6 @@
+.grunt
+build/Release
+node_modules
+docset
+*.orig
+.idea

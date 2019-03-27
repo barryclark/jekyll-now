@@ -1,0 +1,64 @@
+
+tooltip_default     = {
+  enable      : true
+  class       : ''
+  attr        : 'data-tooltip'
+  css         : {
+    background-color: #333
+    padding: global.padding
+    white-space: pre
+    text-align: center
+    color: #fff
+    border-radius: global.border-radius
+    opacity: 0.9
+    font-size: rem(10)
+  }
+  triangle    : {
+    size : 5px
+    direction: down
+  }
+  animation   : {
+    distance: 5px
+    duration: 0.3s
+    direction: bottom
+  }
+}
+
+tooltip = merge(tooltip_default, tooltip)
+
+if tooltip.enable
+  [{tooltip.attr}]
+    position: relative
+
+    &::after
+      content: attr(data-tooltip)
+      display: block
+      absolute: false 50% 100% false
+      margin-bottom: tooltip.triangle.size
+      prepare(tooltip.css, skip: true, skip_properties: opacity)
+      opacity: 0
+      visibility: hidden
+      transform: translateD(tooltip.animation.direction, - tooltip.animation.distance) translateX(50%)
+      transition: visibility 0s 0.3s, opacity .3s, transform tooltip.animation.duration
+
+    &::before
+      content: ''
+      triangle(tooltip.triangle.direction, tooltip.triangle.size, tooltip.css.background-color)
+      absolute: false 50% 100% false
+      margin-bottom: (- tooltip.triangle.size)
+      visibility: hidden
+      opacity: 0
+      transform: translateD(tooltip.animation.direction, - tooltip.animation.distance) translateX(50%)    
+      transition: visibility 0s 0.3s, opacity .3s, transform tooltip.animation.duration
+
+    &:hover
+      &::after
+      &::before
+        visibility: visible
+        transition: visibility 0s 0s, opacity .3s, transform tooltip.animation.duration
+        transform: translateX(50%)
+        
+      &::after
+        opacity: tooltip.css.opacity if tooltip.css.opacity
+      &::before
+        opacity: tooltip.css.opacity if tooltip.css.opacity

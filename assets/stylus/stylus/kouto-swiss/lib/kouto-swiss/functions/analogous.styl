@@ -1,0 +1,21 @@
+// analogous( color )
+// returns analogous variations of given color
+
+ks-analogous( color )
+    first = spin( color, 30 )
+    second = spin( color, -30 )
+    ( first second )
+
+analogous = ks-analogous unless ks-no-conflict
+
+// extended-analogous( color )
+// returns extended analogous variations (4 instead of 2) of given color
+
+ks-extended-analogous( color )
+    first = spin( color, 30 )
+    second = spin( color, -30 )
+    third = spin( color, 60 )
+    fourth = spin( color, -60 )
+    ( first second third fourth )
+
+extended-analogous = ks-extended-analogous unless ks-no-conflict

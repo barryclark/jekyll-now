@@ -1,0 +1,17 @@
+// Author       : Mehran Arjmand
+// Description  : Merge object recursivly
+// Version      : 1.0.1
+
+merge-rec(src, dist, depth = -1)
+  for key, value in dist
+
+    if key in src
+      if type(value) == 'object' && depth != 0
+        src[key] = merge-rec(src[key], dist[key], depth - 1)
+      else
+        src[key] = dist[key]
+
+    else
+      src[key] = dist[key]
+  src
+

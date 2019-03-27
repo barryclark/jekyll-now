@@ -1,0 +1,10 @@
+// monochrome( color )
+// returns monochromatic variations of given color
+
+ks-monochrome( color )
+    baseLightness = lightness( color )
+    first = adjust( color, "lightness", baseLightness * 0.666666666666666 )
+    second = adjust( color, "lightness", baseLightness * 0.333333333333333 )
+    ( first second )
+
+monochrome = ks-monochrome unless ks-no-conflict

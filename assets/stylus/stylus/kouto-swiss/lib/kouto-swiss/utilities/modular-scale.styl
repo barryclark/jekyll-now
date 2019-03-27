@@ -1,0 +1,22 @@
+ks-golden = 1.618
+ks-minor-second = 1.067
+ks-major-second = 1.125
+ks-minor-third = 1.2
+ks-major-third = 1.25
+ks-perfect-fourth = 1.333
+ks-augmented-fourth = 1.414
+ks-perfect-fifth = 1.5
+ks-minor-sixth = 1.6
+ks-major-sixth = 1.667
+ks-minor-seventh = 1.778
+ks-major-seventh = 1.875
+ks-octave = 2
+ks-major-tenth = 2.5
+ks-major-eleventh = 2.667
+ks-major-twelfth = 3
+ks-double-octave = 4
+
+ks-modular-scale( base, step, ratio = ks-perfect-fifth )
+    base * ( ratio ** step )
+
+modular-scale = ks-modular-scale unless ks-no-conflict

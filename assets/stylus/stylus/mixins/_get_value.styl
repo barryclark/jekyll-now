@@ -1,0 +1,19 @@
+// Author       : Mehran Arjmand
+// Description  : Get value of a property by type
+
+_get-value(property, type, count = 1, offset = 0)
+  _i = 0
+  _list = ()
+  for prop in property
+    if(count == 0)
+      break
+    if(type(prop) == type)
+      append(_list, prop)
+      _i += 1
+    else if(prop is a 'unit' and unit(prop) == type)
+      append(_list, prop)
+      _i += 1
+  {_list}
+  
+v(property, type, count = 1, offset = 0)
+  _get-value(property, type, count, offset)

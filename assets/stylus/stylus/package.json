@@ -1,0 +1,19 @@
+{
+  "name": "part-styl",
+  "version": "1.1.0",
+  "description": "dynamic CSS Framework made by stylus",
+  "main": "index.styl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "stylus",
+    "partdp"
+  ],
+  "author": "UI Team of Partdp",
+  "license": "ISC"
+}

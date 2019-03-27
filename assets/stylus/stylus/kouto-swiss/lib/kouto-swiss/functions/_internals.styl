@@ -1,0 +1,13 @@
+// _replace
+// internal search and replace in expr
+_replace( expr, str, val )
+    expr = clone( expr )
+    for e, i in expr
+        if str == e
+            expr[ i ] = val
+    expr
+
+// _strip-units
+// remove units of a number
+_strip-units( val )
+    unit( val, "" )
