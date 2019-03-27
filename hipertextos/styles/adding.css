@@ -8,6 +8,14 @@ header {z-index:1!Important;}
 
 main.darkmode {padding-top:0px!important;border:none;}
 
+.parallax {
+	/*Transition*/ 
+	-webkit-transition: all .0s ease;
+	-moz-transition: all .0s ease;
+	-ms-transition: all .0s ease;
+	-o-transition: all .0s ease;
+	transition: all .0s ease;
+}
 /* Nav */
 #site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
 #site-nav a {font-weight: 200;min-width: 14%;border: none;letter-spacing: .016em;}
