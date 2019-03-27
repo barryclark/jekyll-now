@@ -713,6 +713,11 @@ Different tasks are served better by different window sizes. One [heuristic](htt
 The number of negative samples is another factor of the training process. The original paper prescribes 5-20 as being a good number of negative samples. It also states that 2-5 seems to be enough when you have a large enough dataset. The Gensim default is 5 negative samples.
 
 # Conclusion
+
+<blockquote class="subtle">
+“If it falls outside your yardsticks, then you are engaged with intelligence, not with automation”  ~God Emperor of Dune
+</blockquote>
+
 I hope that you now have a sense for word embeddings and the word2vec algorithm. I also hope that now when you read a paper mentioning "skip gram with negative sampling" (SGNS) (like the recommendation system papers at the top), that you have a better sense for these concepts. As always, all feedback is appreciated <a href="https://twitter.com/jalammar">@jalammar</a>.
 
 # References & Further Readings
