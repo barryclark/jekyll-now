@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Tackling your first review, getting over the hurdle.
 ---
 
