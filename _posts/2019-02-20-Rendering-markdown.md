@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Rendering reactive R Markdown documents within a Shiny app.
 ---
 
