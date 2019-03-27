@@ -4,6 +4,8 @@ title: Relaunching the Rho Graphics Website
 author: Jeremy Wildfire
 ---
 
+<TODO: add a screenshot of the new page before posting> 
+
 Our team is all about developing [open-source tools](https://rhoinc.github.io/blog/Open-Source-is-Good-Science/), so we do lots of our work in public. Yet we've been pretty bad about maintaining a decent public website in recent years. That ends today! We're happy to announce the launch of the [new Rho Graphics website](rhoinc.github.io/graphics). 
 
 The site includes a [homepage](rhoinc.github.io/graphics) along which links to our [code on github](github.com/rhoinc) and to stand-alone pages tracking our [publications](rhoinc.github.io/publication-library), [visualizations](rhoinc.github.io/viz-library), [data](rhoinc.github.io/data-library) and, of course, this [blog](rhoinc.github.io/blog). 
