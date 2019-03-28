@@ -16,12 +16,12 @@
 *:hover:after,
 *:target,
 *:focus {
-	/*Transition*/ 
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
+        /*Transition*/ 
+	-webkit-transition: all 1.0s ease;
+	-moz-transition: all 1.0s ease;
+	-ms-transition: all 1.0s ease;
+	-o-transition: all 1.0s ease;
+	transition: all 1.0s ease;
 }
 ::-moz-selection {
 	background-color: #dd0000;

@@ -8,12 +8,6 @@
 
 header {
     z-index: 1 !Important;
-        /*Transition*/ 
-	-webkit-transition: all 2.0s ease;
-	-moz-transition: all 2.0s ease;
-	-ms-transition: all 2.0s ease;
-	-o-transition: all 2.0s ease;
-	transition: all 2.0s ease;
 }
 
 .lines {
