@@ -141,11 +141,12 @@ main {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    border: none;
+    border: thin solid rgba(120,120,120,0.16);
+    border-top: thin solid rgba(190,190,190,0.25);
     overflow: hidden;
     text-align: center;
-    max-width:60%;
-    margin-left:20%;
+	padding:32px 21px 0 11px;
+    border-radius:12px;
 }
 
 #logotips article {

@@ -2335,7 +2335,12 @@ dialog,
 
 #theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpf")!important;}
 #theme-meridianus:checked ~ #page #web-music { background-image: url("/img/homes-sun.jpf")!important;}
-#theme-meridianus:checked ~ #page #web-branding,
+#theme-meridianus:checked ~ #page #web-branding{ 
+    background-image: url("/img/home-sun.jpf")!important;
+}
+#theme-meridianus:checked ~ #page #blured { 
+    background-image: url("/img/homed-sun.jpf")!important;
+}
 #theme-meridianus:checked ~ #page #glass-front { 
     background-image: url("/img/homed-sun.jpf")!important;
 }
@@ -2381,7 +2386,12 @@ dialog,
 
 #theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpf")!important;}
 #theme-vesperum:checked ~ #page #web-music { background-image: url("/img/homes-blue.jpf")!important;}
-#theme-vesperum:checked ~ #page #web-branding,
+#theme-vesperum:checked ~ #page #web-branding { 
+    background-image: url("/img/homes-blue.jpf")!important;
+}
+#theme-vesperum:checked ~ #page #blured { 
+    background-image: url("/img/homes-blue.jpf")!important;
+}
 #theme-vesperum:checked ~ #page #glass-front { 
     background-image: url("/img/homed-blue.jpf")!important;
 }
@@ -2437,7 +2447,12 @@ dialog,
 
 #theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpf")!important;}
 #theme-nox:checked ~ #page #web-music { background-image: url("/img/homes-night.jpf")!important;}
-#theme-nox:checked ~ #page #web-branding,
+#theme-nox:checked ~ #page #web-branding { 
+    background-image: url("/img/homes-night.jpf")!important;
+}
+#theme-nox:checked ~ #page #blured { 
+    background-image: url("/img/homed-night.jpf")!important;
+}
 #theme-nox:checked ~ #page #glass-front { 
     background-image: url("/img/homed-night.jpf")!important;
 }
