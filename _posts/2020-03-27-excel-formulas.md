@@ -22,5 +22,6 @@ As a bonus I started to implement something to handle the Excel builtins like SU
 Anywho, check it out!
 
 [GitHub Repo](https://github.com/joetats/xlFormulas)
+
 [PyPi Project Page](https://pypi.org/project/xl-formulas/)
 
