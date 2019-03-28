@@ -7,6 +7,21 @@ permalink: /statistics/
 {% for post in site.posts %}
   {% capture text %}{{ post.content | strip_html }}{% endcapture %}
   {% capture alltext %}{{ alltext }} {{ text }}{% endcapture %}
+  {% capture title %}{{ post.title.size }}{% endcapture %}
+  {% if longesttitle %}
+      {% if post.title.size > longesttitlesize %}
+      {% assign longesttitle = post %}
+      {% assign longesttitlesize = post.title.size %}
+    {% elsif post.title.size < shortesttitlesize %}
+      {% assign shortesttitle = post %}
+      {% assign shortesttitlesize = post.title.size %}
+    {% endif %}
+  {% else %}
+    {% assign longesttitle = post %}
+    {% assign shortesttitle = post %}
+    {% assign longesttitlesize = post.title.size %}
+    {% assign shortesttitlesize = post.title.size %}  
+  {% endif %}
   {% assign words = text.size %}
   {% if mostwords %}
     {% if words > mostwords %}
@@ -52,3 +67,5 @@ permalink: /statistics/
 * The first post was on [{{ site.posts.last.date | date: "%B %e, %Y" }}]({{ site.posts.last.url }}).
 * The [post with the most words]({{ mostpost.url }}) has {{ mostpost.content | strip_html | number_of_words }} words.
 * The [post with the least words]({{ leastpost.url }}) has {{ leastpost.content | strip_html | number_of_words }} words.
+* The post with the longest title is [{{ longesttitle.title }}]({{ longesttitle.url }}).
+* The post with the shortest title is [{{ shortesttitle.title }}]({{ shortesttitle.url }}).
