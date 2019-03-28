@@ -120,7 +120,7 @@ main {
 }
 
 #web-branding {
-    background-image: url("/img/homed.jpf");
+    background-image: url("/img/home.jpf");
     image-rendering: crisp-edges;
     background-position: top center;
     background-attachment: fixed;
@@ -133,6 +133,19 @@ main {
     letter-spacing: .06em;
     overflow: hidden;
     text-align: center;
+}
+#blured {
+    background-image: url("/img/homed.jpf");
+    image-rendering: crisp-edges;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+    max-width:60%;
+    margin-left:20%;
 }
 
 #logotips article {
