@@ -168,7 +168,7 @@ main {
 }
 
 img.front-responsive {
-    width: 450px;
+    width: 250px;
     margin-top: 68px;
 }
 
@@ -342,7 +342,7 @@ hr.lifting {margin: 0px;height: 1px;}
     text-align: center;
 }
 
-#covers img {
+#covers .cover-icon img {
     width: 72px;opacity:0.6; margin: 0px;
 }
 
