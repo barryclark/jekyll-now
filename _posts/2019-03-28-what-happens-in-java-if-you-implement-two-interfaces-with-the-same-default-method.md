@@ -5,6 +5,7 @@ tags: [java]
 keywords: [interface, default, default method, duplicate default method]
 hashtags: [java, programming]
 image: /images/Java_logo.jpg
+thumbnail: true
 ---
 
 Java 8 introduced the ability for interfaces to have default methods. Default methods are methods with an implementation. This is in stark contrast to the notion that interfaces should only have unimplemented, abstract methods.
