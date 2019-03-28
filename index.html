@@ -10,7 +10,7 @@ parallax: true
 	{% include partials/head.html %}
     <main id="page-main" role="main" class="darkmode anm-fadeIn delay-100">
 			<section id="covers">
-				<div id="glass-front" class="parallax">
+				<div id="glass-front">
 				{% include partials/navigation/covers.html %}
 				<hr class="lifting">
 				</div>
@@ -19,13 +19,10 @@ parallax: true
 					<h2>Web</h2>
 					<img src="/img/responsive.png" class="front-responsive" rel="imatge relativa als diferents tamanys de pantalla">
 					<hr>
-					{% if site.web %}
-						<p>{{ site.web }}</p>
-					{% endif %}
-					<hr>
-					<div id="fronters" class="thumb-8 pushed-2">
+					<div id="fronters" class="thumb-5 pushed-1">
 					<img src="/img/html5css3.png" class="htmlcss" rel="llenguatge Html5 i Css3">
 					<section class="cover-justify">
+   {% if site.web %}<h5>{{ site.web }}</h5>{% endif %}
 					<p><em>Disseny exclusiu per projecte.</em></p>
 					<p>Edició Web, Gestió de domini i allotjament, Posicionamient SEO, Estadístiques, Publicitat a la Xarxa i e-mail marketing.</p>
 					</section>
