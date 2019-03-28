@@ -4,11 +4,9 @@ title: Collection of useful links and websites
 date: 2018-12-23
 ---
 * HOW TO BE A PROGRAMMER
-
   * github.com/braydie/HowToBeAProgrammer
   
 * COMPUTER SCIENCE
-
   * github.com/open-source-society/computer-science
   * github.com/prakhar1989/awesome-courses
   * Rookieslab.com
@@ -20,19 +18,16 @@ date: 2018-12-23
   * snasiriany.me
   
 * PHYSICS
-
   * damtson.wordpress.com
   
 * ONLINE PUBLISHING PLATFORM
-
   * Spiderum.com
   * medium.com
+  
 * HISTORY
-
   * Historyofinformation.com
   
 * GITHUB
-
   * duc0
   * Yenthanh132
   * Vodanh
@@ -55,11 +50,9 @@ date: 2018-12-23
   * rwbarton
   
 * INTERVIEW
-
   * github.com/jwasham/coding-interview-university
   
 * MATHEMATICS
-
   * vuhavan.wordpress.com
   * cohtran.blogspot.com
   * toanhockithu.wordpress.com
@@ -79,12 +72,10 @@ date: 2018-12-23
   * mathblog.com
   
 * C/C++
-
   * cplusplus.com
   * cppreference.com
   
 * MACHINE LEARNING
-
   * www.andrey-melentyev.com
   * machinelearningcoban.com
   * ongxuanhong.wordpress.com
@@ -97,12 +88,10 @@ date: 2018-12-23
   * nguyenvanhieu.vn
   
 * NATURAL LANGUAGE PROCESSING
-
   * Viet.jnlp.org
   * vlsp.org
   
 * SOME
-
   * vnoi.info
   * stackoverflow.com
   * stackexchange.com
@@ -110,14 +99,12 @@ date: 2018-12-23
   * commonlounge.com
   
 * ALGORIMTH
-
   * geeksforgeeks.org
   * petr-mitrichev.blogspot.com
   * visualgo.net
   * sites.google.com/site/kc97ble
   
 * BLOG
-
   * joelonsoftware.com
   * blog.codinghorror.com
   * codeblog.jonskeet.uk
@@ -128,18 +115,15 @@ date: 2018-12-23
   * trandatnh.wordpress.com
   
 * CODER NEWS
-
   * bikeshed.fm
   * softwareengineeringdaily.com/category/podcast
   
 * GOOD POSTS
-
   * news.ycombinator.com
   * Hckrnews.com
   * Reddit.com
   
 * CODE JUDGE
-
   * spoj.com
   * codeforces.com
   * codechef.com
@@ -150,15 +134,7 @@ date: 2018-12-23
   * uva.onlinejudge.org
   * ntucoder.net
   
-* DICTIONARY
-
-  * merriam-webster.com
-  * dictionary.cambridge.org
-  * dictionary.com
-  * thefreedictionary.com
-  
 * CTF
-
   * ctftime.org
   * hackthis.co.uk
   * canyouhack.it
@@ -166,7 +142,6 @@ date: 2018-12-23
   * ringzer0team.com
   
 * SECURITY
-
   * vnsecurity.net
   * hvaonline.net
   * hvazone.com
@@ -177,39 +152,11 @@ date: 2018-12-23
   * whitehat.vn
   * tradahacking.vn
   
-* COURSES
-
-  * edx.org
-  * coursera.org
-  * khanacademy.org
-  * ocw.mit.edu
-  * scpd.stanford.edu
-  * alison.com
-  * coursmos.com
-  * open.edu/openlearn
-  * startupclass.samaltman.com
-  * udacity.com
-  * codeschool.com
-  
 * BOOKS
-
   * b-ok.cc
   * Libgen.io
   * sachxua.net/forum/
   
-* DEVELOPERS
-
-  * dev.tube
   
-* DATA SCIENCE
-
-  * datacamp.com
-  * dataquest.io
-  * kaggle.com
-  * datamonkey.pro
-  
-* PYTHON
-
-  * pythonprogramming.net
 
 
