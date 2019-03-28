@@ -126,7 +126,6 @@ main {
     max-width: 30%;
     margin-left: 35%;
 }
-
 #web-music {
     background-image: url("/img/music.jpf");
     image-rendering: crisp-edges;
@@ -167,9 +166,11 @@ main {
     min-width: 72px;
 }
 
+#web-oferta { background:var(--color-softgrey); }
+
 img.front-responsive {
     width: 320px;margin-top: 32px;
-    opacity:.21;
+    opacity:.5;
 }
 #fronters img.htmlcss {
     width: 16.555555%;margin-left: 32.555555%;
