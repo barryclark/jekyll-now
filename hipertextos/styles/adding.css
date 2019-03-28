@@ -145,7 +145,7 @@ main {
 
 #web-oferta { background:var(--color-softgrey);
     image-rendering: crisp-edges;
-    background-position:  center;
+    background-position: top center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
