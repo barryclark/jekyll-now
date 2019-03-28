@@ -5,7 +5,7 @@
 #web-credits, #page-header, #post-header, #post-share, #date {text-align: center;}
 header {z-index: 1 !Important;}
 .lines {background: rgba(69, 69, 69, .12) !important;height: 2px;}
-main.darkmode {padding-top: 0px !important;border: none;}
+main.darkmode {margin-top:-10px;padding-top: 0px !important;border: none;}
 
 .parallax {-webkit-transition: all .0s ease;-moz-transition: all .0s ease;-ms-transition: all .0s ease;-o-transition: all .0s ease;transition: all .0s ease;}
 
@@ -168,10 +168,12 @@ main {
 }
 
 img.front-responsive {
-    width: 250px;
-    margin-top: 68px;
+    width: 320px;margin-top: 32px;
+    opacity:.21;
 }
-
+#fronters img.htmlcss {
+    width: 16.555555%;margin-left: 32.555555%;
+}
 .text-left {
     text-align: left;
 }
