@@ -2334,7 +2334,7 @@ dialog,
 /* Meridianus theme */
 
 #theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpf")!important;}
-#theme-meridianus:checked ~ #page #web-music { background-image: url("/img/homes-sun.jpf")!important;}
+#theme-meridianus:checked ~ #page #web-music { }
 #theme-meridianus:checked ~ #page #web-branding{ 
     background-image: url("/img/home-sun.jpf")!important;
 }
@@ -2385,7 +2385,7 @@ dialog,
 /* vesperum theme */
 
 #theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpf")!important;}
-#theme-vesperum:checked ~ #page #web-music { background-image: url("/img/homes-blue.jpf")!important;}
+#theme-vesperum:checked ~ #page #web-music { }
 #theme-vesperum:checked ~ #page #web-branding { 
     background-image: url("/img/homes-blue.jpf")!important;
 }
@@ -2446,7 +2446,7 @@ dialog,
 /* Nox theme */
 
 #theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpf")!important;}
-#theme-nox:checked ~ #page #web-music { background-image: url("/img/homes-night.jpf")!important;}
+#theme-nox:checked ~ #page #web-music { }
 #theme-nox:checked ~ #page #web-branding { 
     background-image: url("/img/homes-night.jpf")!important;
 }
