@@ -85,30 +85,6 @@ main {
     background: #111;
 }
 
-#ilu-oferta {
-    height: 80vh;
-    background-image: url("/img/ilu.jpg");
-    image-rendering: crisp-edges;
-    background-position: top center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    color: #fff;
-    letter-spacing: .06em;
-    overflow: hidden;
-    text-align: center;
-}
-
-#ilu-oferta {
-    padding: 69px 0 80px 0;
-}
-
-#ilu-oferta p {
-    max-width: 30%;
-    margin-left: 35%;
-}
-
 #ilu-process {
     max-height: 100%;
     overflow: hidden;
@@ -122,10 +98,11 @@ main {
     color: var(--color-grey);
 }
 
-#web-oferta p {
-    max-width: 30%;
-    margin-left: 35%;
+#web-oferta #fronters {
+    max-width: 45%;
+    margin-right: 35%;
 }
+.animeonscroll img {padding:8px;max-width:30%;}
 #web-music {
     background-image: url("/img/music.jpf");
     image-rendering: crisp-edges;
@@ -166,14 +143,20 @@ main {
     min-width: 72px;
 }
 
-#web-oferta { background:var(--color-softgrey); }
+#web-oferta { background:var(--color-softgrey);
+    image-rendering: crisp-edges;
+    background-position:  center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;}
 
 img.front-responsive {
-    width: 320px;margin-top: 32px;
+    width: 280px;
     opacity:.5;
 }
 #fronters img.htmlcss {
-    width: 16.555555%;margin-left: 32.555555%;
+    max-width: 300px;
 }
 .text-left {
     text-align: left;
@@ -222,11 +205,12 @@ p em {
 }
 
 section.cover-justify p {
-    padding: 6px 20px 0 20px;
-    line-height: 24px;
+    padding: 16px 0 0 0;
+    line-height: 26px;
     font-size: 15px !important;
-    letter-spacing: .01em
+    letter-spacing: .001em
 }
+section.cover-justify h5 {text-align:right;margin:0px!important;}
 
 /* Page & Header */
 .cover#page-header {
@@ -381,8 +365,7 @@ hr.lifting {margin: 0px;height: 1px;}
 }
 
 #fronters .cover-justify {
-    text-align: left;
-    max-width: 30%;
+    text-align: right;
 }
 
 #fronters-brand svg {
@@ -443,14 +426,6 @@ div.masked {
     background-repeat: no-repeat;
     z-index: -10;position: absolute;left: 12%;
 }
-#matte-demo {
-    background-image: url("/img/texture/dark_grey.png");
-    background-size: 256px 256px;background-repeat: repeat;
-    image-rendering: crisp-edges;text-align: center;
-    padding: 12px 13% 12px 13%;color: var(--color-softgrey);
-}
-#matte-demo .demos {padding: 8px;}
-#matte-demo .demo-xl {padding: 8px;}
 
 /* Dialog */
 #dialog .icon-alarm svg {max-width: 23px !important;}
