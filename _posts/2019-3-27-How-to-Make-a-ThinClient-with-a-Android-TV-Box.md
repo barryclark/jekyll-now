@@ -13,7 +13,7 @@ Next you can update your site name, avatar and other options using the _config.y
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.9.6, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <link rel="shortcut icon" href="http://blog.mgdtecnologia.com.br/assets/images/logo2.png" type="image/x-icon">
   <meta name="description" content="Site Generator Description">
   
   <title>Page 1</title>
@@ -42,7 +42,7 @@ Next you can update your site name, avatar and other options using the _config.y
 </section>
 
 
-  <section class="engine"><a href="https://mobirise.info/c">free web builder</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <section class="engine"><a href="https://mobirise.info/c">free web builder</a></section><script src="http://blog.mgdtecnologia.com.br/assets/web/assets/jquery/jquery.min.js"></script>
   <script src="http://blog.mgdtecnologia.com.br/assets/popper/popper.min.js"></script>
   <script src="http://blog.mgdtecnologia.com.br/assets/tether/tether.min.js"></script>
   <script src="http://blog.mgdtecnologia.com.br/assets/bootstrap/js/bootstrap.min.js"></script>
