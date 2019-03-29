@@ -81,7 +81,19 @@ main {
 #page-main.darkmode em a {
     background: #111;
 }
-
+.apple {
+    background: transparent!important;border-radius:3px;
+    margin-top:32px!important;letter-spacing: 0.01em;
+}
+.apple:hover {
+    background: var(--color-black) !important;color:var(--color-white);
+}
+#web-music .apple,
+#web-branding .apple,
+#web-grafics .apple {
+    background: rgba(252,51,90,1) !important;border-color:rgba(232,31,60,1);
+    margin:32px!important;color:var(--color-white);
+}
 #ilu-process {
     max-height: 100%;
     overflow: hidden;
