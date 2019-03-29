@@ -1,1 +1,1 @@
- Sitemap: http://hendrixjoseph.github.io/sitemap.xml
+Sitemap: https://hendrixjoseph.github.io/sitemap.xml
