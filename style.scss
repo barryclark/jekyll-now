@@ -222,23 +222,24 @@ header {
 }
 
 .site-name {
-  margin: 0;
+  margin: 0 0 0.2em 0;
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
-  line-height: 1.7;
+  line-height: 1;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
+  max-width: 320px;
 
   @include mobile {
-    margin: 3px 0;
+    margin: 0 auto;
   }
 }
 
