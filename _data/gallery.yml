@@ -14,8 +14,8 @@ title: Gallery
 sort_field: "title" # sorting of the galleries on the gallery index page
 #sort_reverse: true
 thumbnail_size:
-  x: 150
-  y: 150
+  x: 300
+  y: 300
 front_thumb_size:     # best image thumb size for the gallery super-index page
   x: 500
   y: 500

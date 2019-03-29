@@ -21,11 +21,11 @@ header:
     </div>
 </div>
 
-<section class="photos forcedgallery">
+<section class="photo-gallery forcedgallery">
     {% for image in page.images %}
-        <a href="{{ image }}" title="
+        <a class="single-photo" href="{{ image }}" title="
         <b> {{ page.exif[image].model }} with {{ page.exif[image].lens }}</b> <br>
         ISO {{ page.exif[image].iso }} {{ page.exif[image].shutter }} @ f/{{ page.exif[image].fstop }} {{ page.exif[image].focal_length }}mm
-        " alt="Photo Alt"><img src="thumbs/{{ image }}" border="0" class="thumb"></a>
+        "><img src="thumbs/{{ image }}" border="0" class="thumb"></a>
     {% endfor %}
 </section>
