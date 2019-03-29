@@ -12,7 +12,7 @@ What are the busiest days on Austin's roads? Where is everyone going?
 ](https://data.austintexas.gov/Transportation-and-Mobility/Radar-Traffic-Counts/i626-g7ub) The data goes back almost a year now, so I decided to find the days with the most traffic at each sensor. Please note that higher volumes doesn't necessarily mean higher congestion. 
 
 
-<iframe width="700" height="400" frameborder="0" scrolling="no" src="//plot.ly/~charlie2343/11.embed"></iframe>
+<iframe width="700" height="400" frameborder="0" scrolling="no" src="//plot.ly/~charlie2343/24.embed"></iframe>
 *ACL's impact on traffic at south end of Loop 360 near Zilker Park*
 
 
@@ -22,7 +22,7 @@ These Fridays usually happened right before a large event like Austin City Limit
 
 The usually high weekday traffic combined with event traffic that continues late into the day combines to create hectic conditions late into the evening. 
 
-<iframe width="700" height="400" frameborder="0" scrolling="no" src="//plot.ly/~charlie2343/16.embed"></iframe>
+<iframe width="700" height="400" frameborder="0" scrolling="no" src="//plot.ly/~charlie2343/23.embed"></iframe>
 *ACL's impact on traffic along Cesar Chavez across from Zilker Park*
 
 
