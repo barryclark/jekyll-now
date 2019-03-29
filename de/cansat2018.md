@@ -71,12 +71,16 @@ Inspiriert wurden wir durch das Projekt [luftdaten.info](http://luftdaten.info) 
 ## Sponsoren
 
 <section class="sponsor-presentation" id="techmatrix">
-  <a href="https://www.techmatrix.de/"><img src="{{ site.baseurl }}/images/2018-sponsoren/Techmatrix_CMYK.png" /></a>
+  <figure>
+    <a href="https://www.techmatrix.de/"><img src="{{ site.baseurl }}/images/2018-sponsoren/Techmatrix_CMYK.png" /></a>
+  </figure>
   <span>Das Unternehmen <a href="https://www.techmatrix.de/"><strong>Techmatrix Consulting GmbH</strong></a> aus Neufarn hat unser Projekt durch eine Geldspende unterstützt.</span>
 </section>
 
 <section class="sponsor-presentation" id="watterott">
-  <a href="https://www.watterott.com/"><img src="{{ site.baseurl }}/images/2018-sponsoren/Watterott.png" /></a>
+  <figure>
+    <a href="https://www.watterott.com/"><img src="{{ site.baseurl }}/images/2018-sponsoren/Watterott.png" /></a>
+  </figure>
   <span>Das Unternehmen <a href="https://www.watterott.com/"><strong>Watterott</strong></a> hat allen CanSat-Teams Bauteile im Gesamtwert von 200€ bereitgestellt. Wir haben ihr Angebot dankbar angenommen und unsere GPS Module von ihnen erhalten.</span>
 </section>
 
@@ -85,7 +89,9 @@ Inspiriert wurden wir durch das Projekt [luftdaten.info](http://luftdaten.info) 
 </section>
 
 <section class="sponsor-presentation" id="caas">
-  <a href="http://www.carbontubes.eu/"><img src="{{ site.baseurl }}/images/2018-sponsoren/caas.png" /></a>
+  <figure>
+    <a href="http://www.carbontubes.eu/"><img src="{{ site.baseurl }}/images/2018-sponsoren/caas.png" /></a>
+  </figure>
   <span>Das Unternehmen <a href="http://www.carbontubes.eu/"><strong>CAAS</strong></a> aus Slovenien hat uns bei der Auswahl der Kohlenstoff-Verbundsstoff-Röhren geholfen, aus der wir die Hülle unseres CanSat bauen wollen.</span>
 </section>
 
@@ -98,7 +104,7 @@ Inspiriert wurden wir durch das Projekt [luftdaten.info](http://luftdaten.info) 
   <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="meta">{{ post.date | date: "%d.%m.%Y"}}</span></h3>
 
   {% if post.teaserImage %}
-    <figure class="teaser-image">
+    <figure class="left">
       <a href="{{ post.url }}">
         <img src="{{ post.teaserImage }}" alt="{{ post.title }}" />
       </a>

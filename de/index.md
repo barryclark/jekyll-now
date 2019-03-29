@@ -25,7 +25,7 @@ ref: index
   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="meta">{{ post.date | date: "%d.%m.%Y"}}</span></h2>
 
   {% if post.teaserImage %}
-    <figure class="teaser-image">
+    <figure class="left">
       <a href="{{ post.url }}">
         <img src="{{ post.teaserImage }}" alt="{{ post.title }}" />
       </a>

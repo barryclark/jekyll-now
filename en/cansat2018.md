@@ -98,7 +98,7 @@ We were inspired by the project [luftdaten.info](http://luftdaten.info) of the O
   <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="meta">{{ post.date | date: "%d/%b/%Y" }}</span></h3>
 
   {% if post.teaserImage %}
-    <figure class="teaser-image">
+    <figure class="left">
       <a href="{{ post.url }}">
         <img src="{{ post.teaserImage }}" alt="{{ post.title }}" />
       </a>

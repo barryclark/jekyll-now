@@ -333,10 +333,8 @@ a.read-more {
   }
 }
 
-.post-image {
-  display: block;
-  max-width: 650px;
-  margin: 0 auto;
+figure {
+  max-width: 250px;
 
   figcaption {
     text-align: center;
@@ -344,15 +342,30 @@ a.read-more {
   }
 }
 
-.teaser-image {
-  float: left;
-  max-width: 250px;
-  margin: 0 1em 1em 0;
+figure.left,
+figure.right {
+  margin-bottom: 1em;
 
   @include mobile {
     float: none;
     margin: 0 auto;
   }
+}
+
+figure.left {
+  margin-right: 1em;
+  float: left;
+}
+
+figure.right {
+  margin-left: 1em;
+  float: right;
+}
+
+figure.center {
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .toc {
@@ -376,13 +389,13 @@ a.read-more {
   font-style: italic;
   flex-direction: row-reverse;
 
-  img {
+  figure {
     margin: 1em;
-    max-height: 150px;
+    flex-shrink: 0;
   }
 
-  a, img {
-    flex-shrink: 0;
+  img {
+    max-height: 150px;
   }
 
   @include mobile {
@@ -400,6 +413,7 @@ a.read-more {
   }
 
   img {
+    margin: 1em;
     width: 96px;
     height: 96px;
     border-radius: 16px;
