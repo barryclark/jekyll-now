@@ -20,7 +20,7 @@ We have implemented different patterns that fall into these categories.
 To help the player get to know the game and learn him the basic mechanics, there is a tutorial in the game. During this you will learn how you can upgrade you character, move around the world and learn the restictions of you abilities.
 F.e. in the beginning you are too weak to push an object. Later on you will be stronger and can accomplish such tasks.
 
-![Tutorial](/images/tutorial.png)
+![Tutorial](/images/Tutorial.png)
 
 The tutorial is designed to present the player an open world but the player will most likely follow a (more or less) given path through the tutorial.
 
