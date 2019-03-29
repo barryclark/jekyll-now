@@ -5,8 +5,10 @@ lang: DE
 ref: index
 ---
 
-<div class="page-banner">
-  <img src="{{ site.baseurl }}/images/logo-1024x512.png" />
+<div class="page-banner side-figure">
+  <figure class="medium">
+    <img src="{{ site.baseurl }}/images/logo-1024x512.png" />
+  </figure>
   <div>
     <p><abbr title="Apoapsis ist ein Begriff aus der Astronomie: Er beschreibt den Punkt, an dem ein Körper in seiner Umlaufbahn um einen Zentralkörper weitestmöglich von diesem Zentralkörper entfernt ist.">Apoapsis</abbr> heißt unsere Mission, mit der wir beim <a href="https://cansat.de">Deutschen CanSat-Wettbewerb der ESA 2019</a> teilnehmen.</p>
     <p><strong>Was ist ein CanSat?</strong> Ein Minisatellit in der Größe einer Getränkedose.</p>

@@ -11,7 +11,7 @@ The last days we were pretty active and
 worked a lot on the hardware and software for the CanSat. Here we give
 a brief overview of the sensors and electronics we will use.
 
-{% include image.html path="/images/posts/2018-03-31_Prototyping.jpg" caption="You can almost see what's going on" %}
+{% include post-figure.html path="/images/posts/2018-03-31_Prototyping.jpg" caption="You can almost see what's going on" %}
 
 ### Primary mission
 During the primary mission we will measure air density and temperature.

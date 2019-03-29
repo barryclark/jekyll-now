@@ -9,7 +9,7 @@ teaserImage: /images/posts/2019-03-06_Blockdiagram.jpg
 
 We have set ourselves a lot of goals for our secondary mission this year and to achieve all of them, we need a way better hardware than last year – because adding an Arduino and a few sensor breakouts is not nearly enough.
 
-{% include image.html path="/images/posts/2019-03-06_Blockdiagram.jpg" %}
+{% include post-figure.html path="/images/posts/2019-03-06_Blockdiagram.jpg" %}
 
 ## Primary mission
 

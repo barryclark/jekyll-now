@@ -21,8 +21,10 @@ At [ESA's German CanSat competition of 2018](https://www.cansat.de/wettbewerb-20
 
 ## Overview
 
-<div class="page-banner">
-  <img src="{{ site.baseurl }}/images/logo-1024x512.png" />
+<div class="page-banner side-figure">
+  <figure class="medium">
+    <img src="{{ site.baseurl }}/images/logo-1024x512.png" />
+  </figure>
   <div>
     <p>Our mission is called <abbr title="Apoapsis is an astronomical term: It describes the furthest point of an orbit from the central mass.">Apoapsis</abbr>, with which we want to take part at the ESA's German CanSat competition of 2018.</p>
     <p><strong>What is a CanSat?</strong> A mini satellite at the size of a soda can.</p>
@@ -38,55 +40,79 @@ We were inspired by the project [luftdaten.info](http://luftdaten.info) of the O
 
 ## The team
 
-<div class="page-banner">
-  <img src="{{ site.baseurl }}/images/hgv-425x250.jpg" />
+<div class="page-banner side-figure">
+  <figure class="medium">
+    <img src="{{ site.baseurl }}/images/hgv-425x250.jpg" />
+  </figure>
   <div>We're a group of five eleventh-graders from the <a href="http://www.humboldt-gym.de/">Humboldt-Gymnasium Vaterstetten</a> in Baldham near Munich.</div>
 </div>
 
-<section class="team-member-presentation" id="niklas">
-  <img src="{{ site.baseurl }}/images/2018-team-members/niklas.jpg" />
+<section class="team-member-presentation side-figure" id="niklas">
+  <figure>
+    <img src="{{ site.baseurl }}/images/2018-team-members/niklas.jpg" />
+  </figure>
   <span>“I'm <strong>Niklas Cölle</strong>, the team's project leader. I'm responsible for the satellite's eletronics and control units. However, I also help with software development. I've always been interested in aerospace engineering and therefore wanted to work on a project like this one.”</span>
 </section>
 
-<section class="team-member-presentation" id="leon">
-  <img src="{{ site.baseurl }}/images/2018-team-members/leon.jpg" />
+<section class="team-member-presentation side-figure" id="leon">
+  <figure>
+    <img src="{{ site.baseurl }}/images/2018-team-members/leon.jpg" />
+  </figure>
   <span>“My name is <strong>Leon Hauser</strong>. I assume the role of the ‘structural engineer’, since I'm interested in an engineer's career. I joined the project because I've been interested in the construction of aerospace vehicles for a long time and couldn't resign such an opportunity.”</span>
 </section>
 
-<section class="team-member-presentation" id="thomas">
-  <img src="{{ site.baseurl }}/images/2018-team-members/thomas.jpg" />
+<section class="team-member-presentation side-figure" id="thomas">
+  <figure>
+    <img src="{{ site.baseurl }}/images/2018-team-members/thomas.jpg" />
+  </figure>
   <span>“I'm <strong>Thomas Schlienz</strong> and my departments are research and evaluation. I'm fascinated by the opportunities that modern satellite technologies offer us – that's what this project makes especially exciting. Working together in a team is also very rewarding to me.”</span>
 </section>
 
-<section class="team-member-presentation" id="henrik">
-  <img src="{{ site.baseurl }}/images/2018-team-members/henrik.jpg" />
+<section class="team-member-presentation side-figure" id="henrik">
+  <figure>
+    <img src="{{ site.baseurl }}/images/2018-team-members/henrik.jpg" />
+  </figure>
   <span>“I'm <strong>Henrik Böving</strong>, one of our team's coders. As a developer and a python fan, I'm responsible for programming the CanSat and the ground station as well as for the evaluation of the collected data.”</span>
 </section>
 
-<section class="team-member-presentation" id="felix">
-  <img src="{{ site.baseurl }}/images/2018-team-members/felix.jpg" />
+<section class="team-member-presentation side-figure" id="felix">
+  <figure>
+    <img src="{{ site.baseurl }}/images/2018-team-members/felix.jpg" />
+  </figure>
   <span>“My name is <strong>Felix Edelmann</strong>. As supporting member, I maintain the website and help with coding-related problems.“</span>
 </section>
 
 ## Sponsors
 
-<section class="sponsor-presentation" id="techmatrix">
-  <a href="https://www.techmatrix.de/"><img src="{{ site.baseurl }}/images/2018-sponsoren/Techmatrix_CMYK.png" /></a>
+<section class="side-figure" id="techmatrix">
   <span>The company <a href="https://www.techmatrix.de/"><strong>Techmatrix Consulting GmbH</strong></a> from Neufarn supported our project with a donation.</span>
+  <figure>
+    <a href="https://www.techmatrix.de/">
+      <img src="{{ site.baseurl }}/images/2018-sponsoren/Techmatrix_CMYK.png" />
+    </a>
+  </figure>
 </section>
 
-<section class="sponsor-presentation" id="watterott">
-  <a href="https://www.watterott.com/"><img src="{{ site.baseurl }}/images/2018-sponsoren/Watterott.png" /></a>
+<section class="side-figure" id="watterott">
   <span>The company <a href="https://www.watterott.com/"><strong>Watterott</strong></a> supplied all CanSat teams with construction components worth 200€. We thankfully accepted their offer and received our GPS modules from them.</span>
+  <figure>
+    <a href="https://www.watterott.com/">
+      <img src="{{ site.baseurl }}/images/2018-sponsoren/Watterott.png" />
+    </a>
+  </figure>
 </section>
 
-<section class="sponsor-presentation" id="urs-investigators">
+<section class="side-figure" id="urs-investigators">
   <span>The former CanSat Team <a href="https://ursinvestigators.blogspot.com/"><strong>URSinvestigators</strong></a>, which took part at the German CanSat competition 2015 and at the European CanSat competition 2016, left us parachute silk and proper string over, which we gratefully received.</span>
 </section>
 
-<section class="sponsor-presentation" id="caas">
-  <a href="http://www.carbontubes.eu/"><img src="{{ site.baseurl }}/images/2018-sponsoren/caas.png" /></a>
+<section class="side-figure" id="caas">
   <span>The company <a href="http://www.carbontubes.eu/"><strong>CAAS</strong></a> from Slovenia helped us choosing the high-quality carbon composite pipe we will be using for the hull of our CanSat.</span>
+  <figure>
+    <a href="http://www.carbontubes.eu/">
+      <img src="{{ site.baseurl }}/images/2018-sponsoren/caas.png" />
+    </a>
+  </figure>
 </section>
 
 ## Blog posts (2018)

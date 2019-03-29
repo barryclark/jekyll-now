@@ -24,7 +24,17 @@ $nunito-light: 300;
 $nunito-medium: 600;
 $nunito-bold: 800;
 
+// Dimensions
+$small-width: 250px;
+$medium-width: 400px;
+$big-width: 650px;
+
 // Mobile breakpoints
+@mixin tablet {
+  @media screen and (max-width: 850px) {
+    @content;
+  }
+}
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;

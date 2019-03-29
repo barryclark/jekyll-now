@@ -12,7 +12,7 @@ an der Hardware und Software für den CanSat gearbeitet. Wir geben
 euch hier mal einen kurzen Überblick über die Sensoren und Elektronik
 die wir verwenden werden.
 
-{% include image.html path="/images/posts/2018-03-31_Prototyping.jpg" caption="Hardwaredesign kann sehr schnell unordentlich werden..." %}
+{% include post-figure.html path="/images/posts/2018-03-31_Prototyping.jpg" caption="Hardwaredesign kann sehr schnell unordentlich werden..." %}
 
 ### Primärmission
 Die Primärmission besteht darin, während des Fluges den Luftdruck und

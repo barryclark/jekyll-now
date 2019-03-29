@@ -9,6 +9,7 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -154,13 +155,74 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
+
+figure {
+  max-width: $small-width;
+
+  &.medium {
+    max-width: $medium-width;
+  }
+
+  &.big {
+    max-width: $big-width;
+  }
+
+  &.left,
+  &.right {
+    margin-bottom: 1em;
+
+    @include mobile {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+
+  &.left {
+    margin-right: 1em;
+    float: left;
+  }
+
+  &.right {
+    margin-left: 1em;
+    float: right;
+  }
+
+  &.center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.side-figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5em 0 1.5em;
+  font-style: italic;
+  padding: .4em 0;
+
+  figure {
+    margin: 0 1em;
+    flex-shrink: 0;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
 
 /*********************/
 /* LAYOUT / SECTIONS */
@@ -278,25 +340,14 @@ nav {
 }
 
 .page-banner {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-
-  img {
-    max-height: 400px;
-    width: 400px;
-    max-width: 100%;
-  }
+  line-height: 1.7;
 
   & > div {
-    padding: 0 1rem;
-    max-width: 400px;
-    font-style: italic;
-    font-weight: $nunito-light;
-    line-height: 1.7;
+    max-width: $medium-width;
+  }
+
+  @include tablet {
+    flex-direction: column;
   }
 }
 
@@ -305,15 +356,6 @@ nav {
   font-family: monospace;
   margin-left: 1em;
   color: $secondary-black;
-}
-
-blockquote {
-  margin: 1.8em .8em;
-  border-left: 2px solid $divider-black;
-  padding: 0.1em 1em;
-  color: $secondary-black;
-  font-size: 22px;
-  font-style: italic;
 }
 
 .comments {
@@ -333,41 +375,6 @@ a.read-more {
   }
 }
 
-figure {
-  max-width: 250px;
-
-  figcaption {
-    text-align: center;
-    font-style: italic;
-  }
-}
-
-figure.left,
-figure.right {
-  margin-bottom: 1em;
-
-  @include mobile {
-    float: none;
-    margin: 0 auto;
-  }
-}
-
-figure.left {
-  margin-right: 1em;
-  float: left;
-}
-
-figure.right {
-  margin-left: 1em;
-  float: right;
-}
-
-figure.center {
-  display: block;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
 .toc {
   background: rgba($apoapsis-darkblue, .1);
   padding: 1em 2em .5em 1em;
@@ -380,32 +387,9 @@ figure.center {
   }
 }
 
-.team-member-presentation,
-.sponsor-presentation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: .5em 0 1.5em;
-  font-style: italic;
-  flex-direction: row-reverse;
-
-  figure {
-    margin: 1em;
-    flex-shrink: 0;
-  }
-
-  img {
-    max-height: 150px;
-  }
-
-  @include mobile {
-    flex-direction: column;
-  }
-}
-
 .team-member-presentation {
-  &:nth-of-type(odd) {
-    flex-direction: row;
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
 
     @include mobile {
       flex-direction: column;
@@ -413,7 +397,6 @@ figure.center {
   }
 
   img {
-    margin: 1em;
     width: 96px;
     height: 96px;
     border-radius: 16px;

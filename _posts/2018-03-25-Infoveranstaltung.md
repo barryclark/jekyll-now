@@ -19,13 +19,13 @@ Das hieß für uns: Plakate zu basteln, Flyer designen, Infostand herrichten.
 Am Tag vor der Veranstaltung bastelten Henrik und Niklas die Plakate zusammen,
 die Felix zuvor bereits am Computer designt hatte:
 
-{% include image.html path="/images/posts/2018-03-25_Osterhase_Die_fertigen_Plakate.jpg" caption="Die fertigen Plakate" %}
+{% include post-figure.html path="/images/posts/2018-03-25_Osterhase_Die_fertigen_Plakate.jpg" caption="Die fertigen Plakate" %}
 
 Außerdem fertigte Niklas dann noch aus der letzten Folie der
 Präsentation ein paar Flyer an, die den Schülern noch mitgegeben
 werden konnten.
 
-{% include image.html path="/images/posts/2018-03-25_Osterhase_Erstellen_der_Flyer.jpg" caption="Das Erstellen der Flyer" %}
+{% include post-figure.html path="/images/posts/2018-03-25_Osterhase_Erstellen_der_Flyer.jpg" caption="Das Erstellen der Flyer" %}
 
 Schließlich war es soweit: Direkt nach der Physik Klausur, die wir an dem Tag
 noch geschrieben haben, stellten wir im Atrium die Pinnwände und Tische auf
@@ -35,4 +35,4 @@ der uns anbot, den Fallschirm unseres CanSats mit seiner Drone zu testen.
 
 Allgemein war der Tag ziemlich erfolgreich.
 
-{% include image.html path="/images/posts/2018-03-25_Osterhase_Thomas.jpg" caption="Thomas beim Präsentieren" %}
+{% include post-figure.html path="/images/posts/2018-03-25_Osterhase_Thomas.jpg" caption="Thomas beim Präsentieren" %}

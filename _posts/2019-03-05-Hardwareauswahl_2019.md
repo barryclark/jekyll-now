@@ -9,7 +9,7 @@ teaserImage: /images/posts/2019-03-06_Blockdiagram.jpg
 
 Wir haben uns für unsere Sekundärmission dieses Jahr viel vorgenommen und um das alles zu erreichen brauchen wir um einiges bessere Hardware als im Vorjahr – denn mit einem Arduino und ein paar Sensor Breakouts ist es noch lange nicht getan.
 
-{% include image.html path="/images/posts/2019-03-06_Blockdiagram.jpg" %}
+{% include post-figure.html path="/images/posts/2019-03-06_Blockdiagram.jpg" %}
 
 ## Primärmission
 
