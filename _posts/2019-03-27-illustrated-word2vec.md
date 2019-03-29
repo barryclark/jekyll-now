@@ -106,8 +106,8 @@ The problem with five dimensions is that we lose the ability to draw neat little
 
 At the end of this section, I want us to come out with two central ideas:
 
-1. We can represent people (and things) as vectors of numbers (Which is great for machines!).
-2. We can easily calculate how similar vectors are to each other
+1. We can represent people (and things) as vectors of numbers (which is great for machines!).
+2. We can easily calculate how similar vectors are to each other.
 
 
 <div class="img-div-any-width" markdown="0">
@@ -608,7 +608,7 @@ This idea is inspired by [Noise-contrastive estimation](http://proceedings.mlr.p
 
 # Skipgram with Negative Sampling (SGNS)
 
-We have now covered two of the central ideas in word2vec: as pair, they're called skipgram with negative sampling.
+We have now covered two of the central ideas in word2vec: as a pair, they're called skipgram with negative sampling.
 
 <div class="img-div" markdown="0">
   <image src="/images/word2vec/skipgram-with-negative-sampling.png "/>
@@ -702,7 +702,7 @@ Two key hyperparameters in the word2vec training process are the window size and
   <br />  
 </div>
 
-Different tasks are served better by different window sizes. One [heuristic](https://youtu.be/tAxrlAVw-Tk?t=648) is that smaller window sizes (2-15) lead to embeddings where high similarity scores between two embeddings indicates that the words are *interchangeable* (notice that antonyms are often interchangable if we're only looking at their surrounding words -- e.g. *good* and *bad* often appear in similar contexts). Larger window sizes(15-50, or even more) lead to embeddings where similarity is more indicative of *relatedness* of the words. In practice, you'll often have to provide [annotations](https://youtu.be/ao52o9l6KGw?t=287) that guide the embedding process leading to a useful similarity sense for your task. The Gensim default window size is 5 (two words before and two words after the input word, in addition to the input word itself).
+Different tasks are served better by different window sizes. One [heuristic](https://youtu.be/tAxrlAVw-Tk?t=648) is that smaller window sizes (2-15) lead to embeddings where high similarity scores between two embeddings indicates that the words are *interchangeable* (notice that antonyms are often interchangable if we're only looking at their surrounding words -- e.g. *good* and *bad* often appear in similar contexts). Larger window sizes (15-50, or even more) lead to embeddings where similarity is more indicative of *relatedness* of the words. In practice, you'll often have to provide [annotations](https://youtu.be/ao52o9l6KGw?t=287) that guide the embedding process leading to a useful similarity sense for your task. The Gensim default window size is 5 (two words before and two words after the input word, in addition to the input word itself).
 
 
 <div class="img-div" markdown="0">
