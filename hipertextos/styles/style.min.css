@@ -2336,7 +2336,7 @@ dialog,
 #theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpf")!important;}
 #theme-meridianus:checked ~ #page #web-music { }
 #theme-meridianus:checked ~ #page #web-branding{ 
-    background-image: url("/img/home-sun.jpf")!important;
+    background-image: url("/img/homes-sun.jpf")!important;
 }
 #theme-meridianus:checked ~ #page #blured { 
     background-image: url("/img/homed-sun.jpf")!important;
@@ -2390,7 +2390,7 @@ dialog,
     background-image: url("/img/homes-blue.jpf")!important;
 }
 #theme-vesperum:checked ~ #page #blured { 
-    background-image: url("/img/homes-blue.jpf")!important;
+    background-image: url("/img/homed-blue.jpf")!important;
 }
 #theme-vesperum:checked ~ #page #glass-front { 
     background-image: url("/img/homed-blue.jpf")!important;
