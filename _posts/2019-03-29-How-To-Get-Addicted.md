@@ -44,4 +44,5 @@ There could also be a screen that displays the achievements you dont have yet. A
 # Time invested
 
 Tim: 2h
+
 Hermann: 2h
