@@ -3,7 +3,7 @@ layout: default_en
 title: How to buy, sell, spend and accept Bitcoin in Greece
 ---
 
-Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0/), [Thessaloniki](https://www.meetup.com/BlockchainGreece-1/), [Rhodes](https://www.meetup.com/Rhodes-Blockchains-Cryptocurrencies-Meetup/) or [Paphos](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Join our [Slack](https://bitcoingreece.herokuapp.com) (online chat).
+Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0/), [Thessaloniki](https://www.meetup.com/BlockchainGreece-1/) or [Paphos](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Join our [Slack](https://bitcoingreece.herokuapp.com) (online chat).
 
 - [Which companies, stores and professionals accept Bitcoin in Greece?](#merchant-table)
 - [How can I buy Bitcoin in Greece?](#buybitcoin)

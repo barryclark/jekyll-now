@@ -3,7 +3,7 @@ layout: default
 title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δεχόμαστε Bitcoin στην Ελλάδα
 ---
 
-Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/), στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/), στη [Ρόδο](https://www.meetup.com/Rhodes-Blockchains-Cryptocurrencies-Meetup/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
+Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/), στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
 
 - [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
