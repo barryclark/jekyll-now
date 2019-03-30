@@ -168,8 +168,8 @@ div.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.png") ;width: 480p
 #dialog dialog {background-color:var(--color-black); border: none;border-radius: 7px 7px 6px 6px;}
 #dialog dialog p {text-align: center;color: var(--color-grey);}
 #dialog header {border: none;padding: 21px;border-radius: 6px 6px 0 0;}
-#dialog header h2 svg {width: 32px;margin: 0px 12px 0 0;}
-#dialog header h2 {font-size: 2.6em;margin-bottom: 6px;font-weight: normal;}
+#dialog header h2 svg {width: 72px;margin: 0px 12px 0 0;}
+#dialog header h2 {font-size: 3em;margin-bottom: 6px;font-weight: normal;}
 #dialog header .lead {line-height: 1em;margin-bottom: 7px;}
 #dialog em a {border: none;background:none;color: var(--color-grey);text-decoration:none;}
 img.dialog-svg {width: 342px;height: 72px;}
@@ -177,8 +177,9 @@ img.dialog-svg {width: 342px;height: 72px;}
 #dialog header {padding-top: 10px;}
 
 #deep img.dialog-svg {max-width: 52px;height: 130px;margin-left: 8px;float: left;}
-#deep em a {font-size: 2.6em !important;line-height: 2em;width: 100%;text-align: left;background:#000;border-top: 1px solid #222;margin-bottom: 6px;}
+#deep em a {font-size: 2.3em !important;line-height: 2em;width: 60%;text-align: left;background:#000;border-top: 1px solid #222;margin-bottom: 1px;padding-top:0px;}
 #deep em a:hover {color: var(--color-white) ;background-color: #111;text-decoration: none;}
+
 #dialog header, #dialog dialog label {background: var(--color-soft-black);color: var(--color-hardgrey);}
 .rights#dialog dialog label {background: transparent;color: var(--color-hardgrey);}
 .rights#dialog header {background: var(--color-yellow);}
