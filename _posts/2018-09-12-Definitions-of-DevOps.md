@@ -19,7 +19,7 @@ Do these definitions resonate with you? What other definitions have you seen?
 
 EDIT: @jamesshore has [seen another definition](https://twitter.com/jamesshore/status/1086510556201213952): 4: Ops for dev environments, in contrast to ProdOps. 
 
-EDIT: Herr are a couple more from [this article](https://continuousdelivery.com/2012/10/theres-no-such-thing-as-a-devops-team/) by Jez Humboldt:
+EDIT: Here are a couple more from [this article](https://continuousdelivery.com/2012/10/theres-no-such-thing-as-a-devops-team/) by Jez Humboldt:
 
 5: A group that interfaces between Dev and Ops.
 
