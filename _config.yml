@@ -3,10 +3,11 @@
 #
 
 # Theme
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 
 # Name of your site (displayed in the header)
 name: Scott Shapiro
+title: Scott Shapiro
 
 # Short bio or description (displayed in the header)
 description: A personal blog
