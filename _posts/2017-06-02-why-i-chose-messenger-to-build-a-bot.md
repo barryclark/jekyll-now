@@ -30,7 +30,7 @@ image: /newblog/wp-content/uploads/2017/05/robots-764951_960_720.png
 categories:
   - "I'm building a bot"
 ---
-_I recently built a Messenger Bot. This is the second in a series describing how I built it and what I learned. My first post was about [why I started down this path of building a bot.](http://www.scottshapiro.com/im-building-a-bot/)_
+_I recently built a Messenger Bot. This is the second in a series describing how I built it and what I learned. My first post was about [why I started down this path of building a bot.]({{ site.baseurl }}{% post_url 2017-05-27-im-building-a-bot %})_
 
 ## Why Messenger?
 
