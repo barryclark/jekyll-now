@@ -2338,7 +2338,7 @@ dialog,
 #theme-meridianus:checked ~ #page #web-branding{ 
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
-#theme-meridianus:checked ~ #page #blured { background-color:rgba(32,30,30,.98);
+#theme-meridianus:checked ~ #page #blured { background-color:rgba(50,32,32,.98);
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-meridianus:checked ~ #page #glass-front { 
@@ -2389,7 +2389,7 @@ dialog,
 #theme-vesperum:checked ~ #page #web-branding { 
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
-#theme-vesperum:checked ~ #page #blured { background-color:rgba(32,30,30,.98);
+#theme-vesperum:checked ~ #page #blured { background-color:rgba(20,90,120,.98);
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-vesperum:checked ~ #page #glass-front { 
@@ -2450,7 +2450,7 @@ dialog,
 #theme-nox:checked ~ #page #web-branding { 
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
-#theme-nox:checked ~ #page #blured { background-color:rgba(32,30,30,.98);
+#theme-nox:checked ~ #page #blured { background-color:rgba(2,15,21,.98);
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-nox:checked ~ #page #glass-front { 
