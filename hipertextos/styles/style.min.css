@@ -2336,7 +2336,7 @@ dialog,
 #theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
 #theme-meridianus:checked ~ #page #web-music { }
 #theme-meridianus:checked ~ #page #web-branding{ 
-    background-image: url("/img/homes-sun.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
+    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-meridianus:checked ~ #page #blured { 
     background-image: url("/img/homed-sun.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
@@ -2387,7 +2387,7 @@ dialog,
 #theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
 #theme-vesperum:checked ~ #page #web-music { }
 #theme-vesperum:checked ~ #page #web-branding { 
-    background-image: url("/img/homes-blue.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
+    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-vesperum:checked ~ #page #blured { 
     background-image: url("/img/homed-blue.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
@@ -2448,7 +2448,7 @@ dialog,
 #theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
 #theme-nox:checked ~ #page #web-music { }
 #theme-nox:checked ~ #page #web-branding { 
-    background-image: url("/img/homes-night.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
+    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-nox:checked ~ #page #blured { 
     background-image: url("/img/homed-night.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;

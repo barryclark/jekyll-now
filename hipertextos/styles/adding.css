@@ -64,14 +64,11 @@ main {padding-bottom: 0 !important;}
     border-top: 5px solid var(--color-hardgrey);border-bottom: 5px solid var(--color-hardgrey);letter-spacing: .06em;overflow: hidden;text-align: center;
 }
 #blured {
-    background-image: url("/img/branding.jpf");image-rendering: crisp-edges;background-position: top center;
+    background-image: url("/img/brandingblur.jpf");background-position: top center;
     background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
     border: thin solid rgba(120,120,120,0.16);border-top: thin solid rgba(190,190,190,0.25);overflow: hidden;text-align: center;
     padding:32px 21px 0 11px;border-radius:12px;
     z-index: 30;
-    -webkit-backdrop-filter: blur(300px)!important;
-    backdrop-filter: blur(300px)!important;
-    background-color: rgba(255, 255, 255, 0.2);
 }
 .note svg {max-width:100px;}
 #logotips article {padding: 23px;}
