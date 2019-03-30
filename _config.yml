@@ -3,7 +3,7 @@
 #
 
 # Theme
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 
 # Name of your site (displayed in the header)
 name: Scott Shapiro
@@ -75,8 +75,6 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-# Use the following plug-ins
-gems:
 
 # Exclude these files from your production _site
 exclude:
@@ -86,6 +84,8 @@ exclude:
   - README.md
   - CNAME
 
+ 
+# Use the following plug-ins
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
