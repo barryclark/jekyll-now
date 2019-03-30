@@ -46,7 +46,7 @@ I even bought a USB bitcoin miner off Amazon for $14.49 and paid $4.99 for shipp
 
 <img src="/wp-content/uploads/2017/06/Screen-Shot-2017-06-11-at-8.15.06-PM-1024x482.png" alt="" width="1024" height="482" /> 
 
-[My solar power, when it behaves]({{ site.baseurl }}{% 2017-06-06-how-i-got-started-building-a-messenger-bot-with-alexa %}), overproduces. So this was a way to make use of that energy that PG&E gives me pennies on the dollar for. I mined 0.02 bitcoin before the difficulty got so extreme due to competition from huge industrial miners. Within a couple months, I gave up. But at the time, the amount I mined covered the cost of my USB miner. Score.
+[My solar power, when it behaves]({{ site.baseurl }}{% post_url 2017-06-06-how-i-got-started-building-a-messenger-bot-with-alexa %}), overproduces. So this was a way to make use of that energy that PG&E gives me pennies on the dollar for. I mined 0.02 bitcoin before the difficulty got so extreme due to competition from huge industrial miners. Within a couple months, I gave up. But at the time, the amount I mined covered the cost of my USB miner. Score.
 
 ## Plenty of scams; I got gox&#8217;d a bitcoin
 
