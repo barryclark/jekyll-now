@@ -45,6 +45,10 @@ main {padding-bottom: 0 !important;}
 }
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;
 }
+#web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {
+    letter-spacing: -0.045em;margin-bottom:10px;line-height:1.2em;
+}
+#web-oferta h1 {color:var(--color-black);}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .06em;text-align: center;color: var(--color-grey);}
 #web-oferta #fronters {max-width: 45%;margin-right: 35%;}
 .animeonscroll img {padding:8px;max-width:30%;}
@@ -66,7 +70,7 @@ main {padding-bottom: 0 !important;}
 #fronters-brand .cover-justify svg {min-width: 72px;}
 #web-oferta { background:var(--color-softgrey);image-rendering: crisp-edges;background-position: top center;
     background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;}
-img.front-responsive {width: 280px;opacity:.5;}
+#web-oferta .note {width: 180px;}
 #fronters img.htmlcss {max-width: 300px;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
@@ -123,7 +127,8 @@ hr.lifting {margin: 0px;height: 1px;}
 /* Covers */
 #covers a {color: var(--color-grey);text-decoration: none;margin: 0px;}
 #covers .cover-links {padding-top: 6px;margin-top: -20px;padding-bottom: 32px;border: thin solid transparent;display: block;}
-#covers .cover-icon {max-width: 100%;height: auto;}
+#covers .cover-icon {max-width: 100%;height: auto;opacity:0.3;}
+#covers a:hover {opacity:1;}
 #glass-front a:hover, #covers .cover-links a:hover {color: var(--color-white);}
 #glass-front a h4:hover {color: var(--color-white);}
 #glass-front a.cover-links:after {content: '\25B6';opacity: 0.06;position: absolute;margin-left: -15px;bottom: 16px;padding-right: 6px;-o-transform: rotate(90deg);-ms-transform: rotate(90deg);-moz-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);}
