@@ -45,7 +45,7 @@ Twenty days in, it&#8217;s been confirmed by over 100k nodes. I can&#8217;t wait
 
 ### 2. My name in litecoin and Bitcoin
 
-The lack of readability in cryptocurrency addresses has annoyed me since day one. Cryptocurrency addresses are just a random string of letters and numbers. This is why I jumped on the [opportunity to own scottshapiro.eth](http://www.scottshapiro.com/ens-cyptocurrency-domain-name-scottshapiro-eth/).
+The lack of readability in cryptocurrency addresses has annoyed me since day one. Cryptocurrency addresses are just a random string of letters and numbers. This is why I jumped on the [opportunity to own scottshapiro.eth]({{ site.baseurl }}{% post_url 2017-07-08-ens-cyptocurrency-domain-name-scottshapiro-eth %})
 
 For Bitcoin and Litecoin, an open source program called [Vanitygen](https://en.bitcoin.it/wiki/Vanitygen) lets you generate slightly more readable addresses. Like a personalized license plate, but without going to the DMV. The problem is that Vanitygen program uses a ton of computing power. It has to guess each time until it gets it right. Brute force. There are trillions of permutations. tried running it on my Raspberry Pi server at home, but it would have taken almost a week to generate the Bitcoin address I wanted. However, I was able to generate a Litecoin address easily (I love this coin for being so efficient) [LScottJCSQXkTJ4KRwZZkbC1HCSvN21e4H](https://ltc-bitcore3.trezor.io/address/LScottJCSQXkTJ4KRwZZkbC1HCSvN21e4H).
 
@@ -98,6 +98,6 @@ While using AWS and learning about Spot pricing of remnant sever inventory at de
 
 ### 7. Cryptocurrency housekeeping
 
-While I haven&#8217;t been focused on trading cryptocurrency or ICO&#8217;s, I have been doing a lot of housekeeping. I setup a Lisk nano wallet, found an old Decred wallet. I redeemed a [Prism I had setup on Shapeshift](http://www.scottshapiro.com/prism-shapeshift-first-impressions/). I moved coins off of Exchanges to hardware wallets. If you&#8217;re not in the habit of doing this, see the latest about [Binance being down for over a day](https://cointelegraph.com/news/binance-exchange-halts-trading-withdrawals-over-server-issue-assures-no-hack).
+While I haven&#8217;t been focused on trading cryptocurrency or ICO&#8217;s, I have been doing a lot of housekeeping. I setup a Lisk nano wallet, found an old Decred wallet. I redeemed a [Prism I had setup on Shapeshift]({{ site.baseurl }}{% post_url 2017-08-18-prism-shapeshift-first-impressions %}). I moved coins off of Exchanges to hardware wallets. If you&#8217;re not in the habit of doing this, see the latest about [Binance being down for over a day](https://cointelegraph.com/news/binance-exchange-halts-trading-withdrawals-over-server-issue-assures-no-hack).
 
 _I&#8217;m heading back to work shortly, but still have some time before then to wrap up some of these projects. I want to spend on Lightning Network, for example. Shoot a me a note if there&#8217;s anything else I should look into as well!_

@@ -36,7 +36,7 @@ IPO&#8217;s have a lengthy form called an S-1 that details all of their strategy
 
 ## 3. The Ethereum network can&#8217;t handle it
 
-Ethereum grinds to a halt each time an ICO happens. This happened [yesterday with the Status ICO](https://twitter.com/ryaneshea/status/877196958380810240) and again today with the [Civic ICO](http://www.scottshapiro.com/civic-ico-aside-heres-bigger-challenge/). If these companies really valued this process and were not trying to simply strike while the iron is hot, they would figure out more sustainable means for selling tokens.
+Ethereum grinds to a halt each time an ICO happens. This happened [yesterday with the Status ICO](https://twitter.com/ryaneshea/status/877196958380810240) and again today with the [Civic ICO]({{ site.baseurl }}{% 2017-06-19-civic-ico-aside-heres-bigger-challenge %})If these companies really valued this process and were not trying to simply strike while the iron is hot, they would figure out more sustainable means for selling tokens.
 
 ## 4. Fundamental valuation is almost impossible
 
@@ -44,7 +44,7 @@ ICO&#8217;s are effectively selling pre-paid credit. It&#8217;s like buying a St
 
 ## 5. ICO buyers are speculators, not token consumers
 
-What we are seeing are scalpers lining up to buy concert tickets. Only to sell them to actual fans who weren&#8217;t aware of the concert when tickets went on sale. If you look at BAT, ownership is ridiculously concentrated. [5 buyers got half the supply](https://cryptoinsider.com/basic-attention-token-sale-raises-35-million-less-30-seconds/). I&#8217;d bet Ether that no meaningful advertisers (who are the [target market for owning BAT](http://www.scottshapiro.com/brave-attention-token-analysis/)) are part of this group. If BAT truly becomes useful, advertisers will have to find their way to buy BAT from these speculators off exchanges.
+What we are seeing are scalpers lining up to buy concert tickets. Only to sell them to actual fans who weren&#8217;t aware of the concert when tickets went on sale. If you look at BAT, ownership is ridiculously concentrated. [5 buyers got half the supply](https://cryptoinsider.com/basic-attention-token-sale-raises-35-million-less-30-seconds/). I&#8217;d bet Ether that no meaningful advertisers (who are the [target market for owning BAT]({{ site.baseurl }}{% 2017-06-08-brave-attention-token-analysis %})I are part of this group. If BAT truly becomes useful, advertisers will have to find their way to buy BAT from these speculators off exchanges.
 
 * * *
 

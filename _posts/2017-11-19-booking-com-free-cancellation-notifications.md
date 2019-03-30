@@ -21,8 +21,7 @@ I often book way more reservations than I&#8217;ll ever use. Sometimes I&#8217;m
 
 But it&#8217;s hard to keep track of all the reservations I make. Specifically, when I can still cancel without a fee. Booking heavily markets &#8220;free cancellation&#8221; as a feature, but doesn&#8217;t want to incentivize cancellations.
 
-I searched around for apps that might scan your gmail or connect to Booking.com and notify you. But I couldn&#8217;t find anything. This is just like when [I struggled to get notified if my solar power system was down](http://www.scottshapiro.com/im-building-a-bot/).
-
+I searched around for apps that might scan your gmail or connect to Booking.com and notify you. But I couldn&#8217;t find anything. This is just like when [I struggled to get notified if my solar power system was down]({{ site.baseurl }}{% post_url 2017-05-27-im-building-a-bot %}).
 So I built a tiny app that solves this problem.
 
 <img src="/wp-content/uploads/2017/11/Screen-Shot-2017-11-19-at-4.57.55-PM-1024x505.png" alt="" width="1024" height="505" /> 

@@ -38,7 +38,7 @@ Fees are high, at 2.5% + 0.05 ETH (edit: not 5%) for simply constructing a portf
 
 ## Funding a Prism
 
-I&#8217;m a [big fan of ENS (Ethereum Name Service)](http://www.scottshapiro.com/ens-cyptocurrency-domain-name-scottshapiro-eth/). Anything that skirts copying/pasting of public keys or photos of QR codes is a plus. Prism doesn&#8217;t yet integrate with ENS, so I had to lookup my public key and paste that. Like many services where you transfer coins as a first step, providing your “return address” is critical. Prism suggests using MEW but this would be easier with in-browser solutions like Metamask or in the future, Toshi. Or a direct integration from now sister company Keepkey.
+I&#8217;m a [big fan of ENS (Ethereum Name Service)]({{ site.baseurl }}{% post_url 2017-07-08-ens-cyptocurrency-domain-name-scottshapiro-eth %}) Anything that skirts copying/pasting of public keys or photos of QR codes is a plus. Prism doesn&#8217;t yet integrate with ENS, so I had to lookup my public key and paste that. Like many services where you transfer coins as a first step, providing your “return address” is critical. Prism suggests using MEW but this would be easier with in-browser solutions like Metamask or in the future, Toshi. Or a direct integration from now sister company Keepkey.
 
 ## 10 minutes to fund
 

@@ -18,7 +18,7 @@ image: /newblog/wp-content/uploads/2017/06/1036px-Demareteion_0667.jpg
 categories:
   - Cryptocurrency
 ---
-_After entering cryptocurrency [via Bitcoin in 2013](http://scottshapiro.com/my-first-year-in-bitcoin-2013/), I expanded my purview to other coins. Below is my opinion on the fundamentals of some other cryptocurrencies, without regard to price or technical analysis. Disclosure: I hold positions in many of these below. This is not investment advice._
+_After entering cryptocurrency [via Bitcoin in 2013]({{ site.baseurl }}{% post_url 2017-06-17-my-first-year-in-bitcoin-2013 %}), I expanded my purview to other coins. Below is my opinion on the fundamentals of some other cryptocurrencies, without regard to price or technical analysis. Disclosure: I hold positions in many of these below. This is not investment advice._
 
 # The big three cryptocurrencies
 
@@ -82,6 +82,6 @@ This is a **meme** gone wild. Sometimes is takes the community behind a meme to 
 
 There are a ton of new projects built on Ethereum, similar to startups building on AWS. These projects are raising tons of cash by pre-selling their product in the form of a specialized token to consumers, kind of like Kickstarter. They then pay their suppliers with these tokens. I assume the accounting treatment is “pre-paid revenue”.
 
-I [recently wrote about one, **Basic Attention Token (BAT)**](http://www.scottshapiro.com/brave-attention-token-analysis/) given its relationship to the ad industry. [So did my friend and former colleague Sriram](http://sriramk.com/bat-ads). BAT is one of the most hyped Initial Coin Offerings on Ethereum, selling out in less than a minute. There&#8217;s a lot of fervor over the technicals, which are irrelevant in the long term, but BAT will go nowhere unless they can gather a point of leverage. They are making inroads with a techie publishers but that won&#8217;t do much other than prove their technology out. [Similar situation with **Civic**](http://www.scottshapiro.com/civic-ico-aside-heres-bigger-challenge/). They need to find leverage points to build a multi-sided market.
+I [recently wrote about one, **Basic Attention Token (BAT)**]({{ site.baseurl }}{% post_url 2017-06-08-brave-attention-token-analysis %}) given its relationship to the ad industry. [So did my friend and former colleague Sriram](http://sriramk.com/bat-ads). BAT is one of the most hyped Initial Coin Offerings on Ethereum, selling out in less than a minute. There&#8217;s a lot of fervor over the technicals, which are irrelevant in the long term, but BAT will go nowhere unless they can gather a point of leverage. They are making inroads with a techie publishers but that won&#8217;t do much other than prove their technology out. [Similar situation with **Civic**]({{ site.baseurl }}{% 2017-06-19-civic-ico-aside-heres-bigger-challenge %}). They need to find leverage points to build a multi-sided market.
 
 Net net, I love watching and writing about tokens but am generally bearish on most of the applications. I think we&#8217;ll continue to see a wave of funding and then a crash, with a few survivors. Then we&#8217;ll see a second, more robust wave of projects emerge.
