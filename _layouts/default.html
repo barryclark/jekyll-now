@@ -123,16 +123,6 @@
 				duration: 1000
 			});
 		</script>
-
-		<script>
-			hljs.initHighlightingOnLoad();
-
-			$('.hero__scroll').on('click', function(e) {
-				$('html, body').animate({
-					scrollTop: $(window).height()
-				}, 1200);
-			});
-		</script>
   	{% if page.comments %}<script src="{{ site.baseurl }}/hipertextos/js/lightbox.min.js"></script>
 	<script type="text/javascript">
   		$(document).ready(function() {
