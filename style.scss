@@ -754,7 +754,7 @@ code.highlighter-rouge {
     flex-wrap: wrap;
     img {
         padding: 2px;
-        margin-top: -6px;
+        margin-top: -5px;
     }
     .album {
         position: relative;
@@ -762,10 +762,21 @@ code.highlighter-rouge {
         flex: 0 0 50%;
         width: 100%;
         h2 { 
-           position: absolute; 
-           top: 75%; 
-           left: 20px; 
-           width: 100%; 
+          z-index: 1;
+          text-align: center;
+          font-weight: 600;
+          font-family: "Gotham SSm A","Gotham SSm B","Century Gothic",Helvetica,Arial,sans-serif;
+          text-shadow: 1px 1px 2px rgba(0,0,0,.8);
+          letter-spacing: 1px;
+          color: #fff;
+          padding-bottom: 0.1em;
+          border-bottom: 2px solid #fff;
+          font-size: 16;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 0px;
+          width: 80%;
+          transform: translateX(10%);
         }
     }
 }
