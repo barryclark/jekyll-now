@@ -11,7 +11,7 @@ Product Manager. Cryptocurrency enthusiast. Berkeley MBA. Paleo. Aspiring Mounta
 Jekyll on Github Pages.
 
 #### Contact me
-messenger: [m.me/scott.shapiro](http://m.me/scott.shapiro)
+[messenger](http://m.me/scott.shapiro): m.me/scott.shapiro
 <br>[btc](http://btc.scottshapiro.com/): 1Scottu5rUaX8fsnBjXqJtC5pcmddHk7d
 
 #### History
