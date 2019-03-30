@@ -1,6 +1,6 @@
 ---
 id: 138
-title: Enter Messenger!
+title: Enter Messenger
 date: 2017-06-13T05:55:04+00:00
 author: Scott Shapiro
 layout: post
