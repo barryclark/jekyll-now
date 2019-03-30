@@ -30,7 +30,7 @@ categories:
 ---
 _I recently built a Messenger Bot. This is the fourth part in a series describing how I built it and what I learned._
 
-[After implementing Alexa](http://www.scottshapiro.com/how-i-got-started-building-a-messenger-bot-with-alexa/), I realized that it wouldn&#8217;t be a huge step to [do something similar on Messenger](http://www.scottshapiro.com/why-i-chose-messenger-to-build-a-bot/). After all, push notifications was my top requirement.
+[After implementing Alexa]({{ site.baseurl }}{% post_url 2017-05-27-im-building-a-bot %}), I realized that it wouldn&#8217;t be a huge step to [do something similar on Messenger]({{ site.baseurl }}{% 2017-06-06-how-i-got-started-building-a-messenger-bot-with-alexa %}). After all, push notifications was my top requirement.
 
 ## Thankful for tutorials
 
