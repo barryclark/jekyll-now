@@ -12,6 +12,7 @@ Jekyll on Github Pages.
 
 #### Contact me
 [m.me/scott.shapiro](http://m.me/scott.shapiro)
+
 btc: [1Scottu5rUaX8fsnBjXqJtC5pcmddHk7d](http://btc.scottshapiro.com/)
 
 #### History
