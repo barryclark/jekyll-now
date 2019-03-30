@@ -46,7 +46,11 @@ main {padding-bottom: 0 !important;}
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;
 }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {
-    letter-spacing: -0.045em;margin-bottom:10px;line-height:1.2em;
+    letter-spacing: -0.045em;margin-bottom:10px;line-height:1em;
+}
+#web-grafics h1 { margin-bottom:42px;line-height:.9em; }
+#web-oferta h2, #web-branding h2, #web-grafics h2, #web-music h2 {
+    font-weight: normal ;letter-spacing: -0.045em;margin-bottom:23px;
 }
 #web-oferta h1 {color:var(--color-black);}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .06em;text-align: center;color: var(--color-grey);}
