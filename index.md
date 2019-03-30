@@ -3,11 +3,11 @@ layout: default
 title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δεχόμαστε Bitcoin στην Ελλάδα
 ---
 
-Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/) ([Πέμπτη 14 Μαρτίου στο Orange Grove](https://www.meetup.com/BlockchainGreece-0/events/259129157/)), στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/), στη [Ρόδο](https://www.meetup.com/Rhodes-Blockchains-Cryptocurrencies-Meetup/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
+Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/), στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/), στη [Ρόδο](https://www.meetup.com/Rhodes-Blockchains-Cryptocurrencies-Meetup/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
 
 - [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
-- [Πώς μπορώ να αγοράσω Bitcoin στην Ελλάδα;](#buybitcoin)
+- [Πώς μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin στην Ελλάδα;](#buybitcoin)
 - [Που μπορώ να μάθω περισσότερα για το Bitcoin;](#bitcoin.org)
 - [Σε τι διαφέρει το Bitcoin από μετρητά, από χρήματα στην τράπεζα, από το χρυσό;](#compare)
 - [Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;](#wallet)
@@ -59,7 +59,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Περιοδικό Fortune](https://subscription.timeinc.com/storefront/site/fo-20for1999ccar1214bc.html)
 - [Wikipedia](https://wikimediafoundation.org/wiki/Ways_to_Give#bitcoin), για δωρεές
 
-### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω Bitcoin στην Ελλάδα;
+### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin στην Ελλάδα;
 
 - Στα εξής Bitcoin ATM:
 
@@ -301,7 +301,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2019-03-02
+Τελευταία ενημέρωση: 2019-03-30
 
 <!-- <div class="posts">
   {% for post in site.posts %}
