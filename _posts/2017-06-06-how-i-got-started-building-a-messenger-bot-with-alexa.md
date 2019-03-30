@@ -18,11 +18,6 @@ dsq_thread_id:
   - "5873749287"
 instant_articles_submission_id:
   - "1911316682423672"
-enclosure:
-  - |
-    http://www.scottshapiro.com/newblog/wp-content/uploads/2017/06/img_7797.trim_.mp4
-    25313507
-    video/mp4
     
 dpsp_networks_shares:
   - 'a:2:{s:9:"pinterest";i:0;s:8:"facebook";i:19;}'
@@ -40,7 +35,7 @@ My first encounter with my solar power system&#8217;s API was not with Messenger
 
 ## Starting with Alexa
 
-Shortly after I setup my Alexa, I was geeking out on things to do with it. After setting up a [wifi lightbulb](https://www.amazon.com/TP-Link-Dimmable-Equivalent-Assistant-LB100/dp/B01HXM8XF6), I started thinking about other household tasks for Alexa. This was right around the time of the [$300 power bill](http://www.scottshapiro.com/im-building-a-bot/). Putting two and two together, I figured Alexa could help me get smarter about my solar power system.
+Shortly after I setup my Alexa, I was geeking out on things to do with it. After setting up a [wifi lightbulb](https://www.amazon.com/TP-Link-Dimmable-Equivalent-Assistant-LB100/dp/B01HXM8XF6), I started thinking about other household tasks for Alexa. This was right around the time of the [$300 power bill]({{ site.baseurl }}{% post_url 2017-05-27-im-building-a-bot %}). Putting two and two together, I figured Alexa could help me get smarter about my solar power system.
 
 The first Google search result for &#8220;Enphase Alexa&#8221; was a winner.&nbsp;I found a [github project](https://github.com/dzimmanck/enphase-echo) that did exactly this, except it&#8217;s pull not push. It wouldn&#8217;t notify me. But it would let me see examples of working with my Enphase solar system&#8217;s API. I&#8217;m fascinated by what Amazon is doing with Alexa and am always looking for new use cases for my Echo. This was a turnkey opportunity.
 
@@ -65,14 +60,6 @@ The **[Enphase solar system&#8217;s API](https://developer.enphase.com/docs)** i
 Setting up the **[Alexa skill](https://developer.amazon.com/edw/home.html#/)** was easy, just copy/pasting node.js code and linking it to my Lambda instance. Most of this is around recognizing and mapping semantics. I had to redo the Lambda setup a few times as it would only work from US-East and not other AWS datacenter locations.
 
 <img src="/wp-content/uploads/2017/06/Screen-Shot-2017-05-28-at-5.05.19-PM-300x154.png" alt="" width="300" height="154" class="alignnone size-medium wp-image-135" /> 
-
-Here&#8217;s a demo where I ask Alexa how much power I produced last month!​ All I do is ask my echo a simple question.&nbsp;
-
-<div style="width: 640px;" class="wp-video">
-  <!--[if lt IE 9]><![endif]--><video class="wp-video-shortcode" id="video-130-1" width="640" height="360" preload="metadata" controls="controls"><source type="video/mp4" src="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/06/img_7797.trim_.mp4?_=1" />
-  
-  <a href="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/06/img_7797.trim_.mp4">http://www.scottshapiro.com/newblog/wp-content/uploads/2017/06/img_7797.trim_.mp4</a></video>
-</div>​
 
 ## Next step: Push notifications
 
