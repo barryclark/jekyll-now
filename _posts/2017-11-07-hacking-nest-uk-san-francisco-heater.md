@@ -20,7 +20,7 @@ _I&#8217;m addicted to the smart home, but have struggled for years to find a so
 
 ### My thermostat is old and analog. I wish I had a Nest
 
-I live in an old house, built in the 1950&#8217;s. But I&#8217;m making it smart. The first step was Alexa, with TP-Link smart bulbs and Sonos. Then I [integrated my rooftop solar system with Messenger](http://www.scottshapiro.com/im-building-a-bot/).
+I live in an old house, built in the 1950&#8217;s. But I&#8217;m making it smart. The first step was Alexa, with TP-Link smart bulbs and Sonos. Then I [integrated my rooftop solar system with Messenger]({{ site.baseurl }}{% post_url 2017-05-27-im-building-a-bot %}).
 
 Now that Winter Is Coming, it&#8217;s time to focus on heating: pre-heating the house before we get home from work, and again before we get out of bed in the morning.
 
