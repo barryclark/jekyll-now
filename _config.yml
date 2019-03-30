@@ -3,7 +3,7 @@
 #
 
 # Theme
-theme: jekyll-theme-merlot
+theme: jekyll-theme-minimal
 
 # Name of your site (displayed in the header)
 name: Scott Shapiro
