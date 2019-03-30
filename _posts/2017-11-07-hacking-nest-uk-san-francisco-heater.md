@@ -28,11 +28,11 @@ Now that Winter Is Coming, it&#8217;s time to focus on heating: pre-heating the 
 
 I&#8217;ve had my eye on a Nest Thermostat for a long time. But the one type of heater that doesn&#8217;t work with Nest is the one we have: Millivolt. Unlike the other 99% of people with furnaces in the US, we lack a C-wire since we don&#8217;t have a 24 Volt system.
 
-<img src="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_9982-768x1024.jpg" alt="" width="768" height="1024" class="alignnone size-small wp-image-348" srcset="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_9982-768x1024.jpg 768w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_9982-225x300.jpg 225w" sizes="(max-width: 768px) 100vw, 768px" /> 
+<img src="/wp-content/uploads/2017/11/IMG_9982-768x1024.jpg" alt="" width="768" height="1024" /> 
 
 That&#8217;s been the standard for decades and what Nest is built on. Millivolt is a century-old off-the-grid method of heating that runs off a 0.5mV closed circuit. This is awesome if the power goes out but not otherwise.
 
-<img src="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0143-768x1024.jpg" alt="" width="768" height="1024" class="alignnone size-small wp-image-347" srcset="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0143-768x1024.jpg 768w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0143-225x300.jpg 225w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0143.jpg 1536w" sizes="(max-width: 768px) 100vw, 768px" /> 
+<img src="/wp-content/uploads/2017/11/IMG_0143-768x1024.jpg" alt="" width="768" height="1024" /> 
 
 ### But Nest UK can be hacked to work in San Francisco!
 
@@ -55,7 +55,7 @@ First step was to pair the Heat Link (controller for the heater) with the Thermo
 
 ### Why Didn&#8217;t USB power work On Heat Link?
 
-<img src="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0082-1-1024x768.jpg" alt="" width="1024" height="768" class="alignnone size-large wp-image-350" srcset="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0082-1-1024x768.jpg 1024w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0082-1-300x225.jpg 300w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0082-1-768x576.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img src="/wp-content/uploads/2017/11/IMG_0082-1-1024x768.jpg" alt="" width="1024" height="768"  /> 
 
 I USB powered the Heat Link (yes, there&#8217;s a microUSB port!). And it didn&#8217;t do anything. The instructions say to connect it to the live main power at 230V, which is supplied by all modern UK furnaces. I don&#8217;t have 230V but I definitely have USB. The Nest documentation, website, and support had no info on the Heat Link&#8217;s USB port. Trying chat support, I kept getting directed to US support who didn&#8217;t know anything about the Heat Link since it shouldn&#8217;t exist in the US. [I even posted on Reddit](https://www.reddit.com/r/Nest/comments/78ro2s/uk_nest_heat_link_not_pairing_help/)[](https://www.reddit.com/r/Nest/comments/78ro2s/uk_nest_heat_link_not_pairing_help/).
 
@@ -63,7 +63,7 @@ I USB powered the Heat Link (yes, there&#8217;s a microUSB port!). And it didn&#
 
 My last hope before returning was to try AC power to the Nest instead of the clean and safe USB option (isn&#8217;t everything USB powered now??). The nest manual suggests a 100-230V range in some places but 230V in other places. I figured I could try 110V and there&#8217;d be a 50/50 shot at frying the Heat Link. I stripped some 18 gauge wire, jammed it into an old surge protector, connected it to the L and N leads on the Nest. It booted up and paired with the Thermostat within a minute. Boom. I&#8217;m in business.
 
-<img src="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0088-768x1024.jpg" alt="" width="768" height="1024" class="alignnone size-large wp-image-335" srcset="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0088-768x1024.jpg 768w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0088-225x300.jpg 225w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0088.jpg 1536w" sizes="(max-width: 768px) 100vw, 768px" /> 
+<img src="/wp-content/uploads/2017/11/IMG_0088-768x1024.jpg" alt="" width="768" height="1024" /> 
 
 Next step was to see if the Heat Link could actually control the furnace. I have no experience with HVAC or thermostats and only some electrical engineering from college 15 years ago. So I connected a pair of wires to the Nest where the manual suggest it worked with “dry contact” systems. I couldn&#8217;t confirm from the internet that Dry Contact is equivalent to Millivolt, but both definitions seemed similar &#8211; no exogenous power source.
 
@@ -71,11 +71,11 @@ Next step was to see if the Heat Link could actually control the furnace. I have
 
 Before going down to the furnace and crawling around to wire up the Heat Link, I rigged it up to the Thermostat since those wires go straight to the thermostat. The Heat Link was still powered by the rigged up surge protector and was ready to roll. I hit the manual override button and the heater kicked in immediately. Success!! I verified that the thermostat was connected and recognized the manual override. Yup, it did. We&#8217;re in business!
 
-<img src="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0090-e1510112863865-566x1024.jpg" alt="" width="566" height="1024" class="alignnone size-large wp-image-337" srcset="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0090-e1510112863865-566x1024.jpg 566w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0090-e1510112863865-166x300.jpg 166w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0090-e1510112863865-768x1391.jpg 768w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0090-e1510112863865.jpg 1131w" sizes="(max-width: 566px) 100vw, 566px" /> 
+<img src="/wp-content/uploads/2017/11/IMG_0090-e1510112863865-566x1024.jpg" alt="" width="566" height="1024"  /> 
 
 I then headed down to the furnace and wired up the Heat Link to the leads on the crusty old gas valve. The thermostat is sitting pretty in our living room, connected to the cloud via wifi and the Heat Link by its own protocol. I&#8217;m hoping that we&#8217;re not only more comfortable this winter but also more energy efficient.
 
-<img src="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0141-768x1024.jpg" alt="" width="768" height="1024" class="alignnone size-large wp-image-345" srcset="http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0141-768x1024.jpg 768w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0141-225x300.jpg 225w, http://www.scottshapiro.com/newblog/wp-content/uploads/2017/11/IMG_0141.jpg 1536w" sizes="(max-width: 768px) 100vw, 768px" /> 
+<img src="/wp-content/uploads/2017/11/IMG_0141-768x1024.jpg" alt="" width="768" height="1024" /> 
 
 I&#8217;m excited to see how this works and excited to be a Nest customer. I haven&#8217;t had to import a foreign item before as globalization has made technology so similar everywhere. But 100-year old heating technology wasn&#8217;t nearly globalized. So importing did the trick. Now it&#8217;s rigged up with Alexa, IFTTT, and Google Home!
 
