@@ -22,212 +22,10 @@ a:active, label:active, button:active {
 	cursor: url('/hipertextos/cursors/cursorpointerred.png'), auto !important;
 }
 
-/* Blockquote */
-
-blockquote {
-	border: none;
-	text-align: center;
-}
-blockquote:before,
-blockquote:after {
-	border-top: 2px solid currentColor;
-	content:' ';
-	display: block;
-	height: 2px;
-	margin: 16px auto;
-	width: 20%;
-}
-
-/* KTR header */
-
-header, footer {
-	text-align: center;
-}
-@media screen and (max-width: 1024px) {
-	#page-header h1 {
-		font-size: 24px;
-		margin: 0px;
-	}
-	#page-header p {
-		font-size: 16px;
-	}
-}
-.ktr-header,
-.ktr-header h1 {
-	border-color: transparent;
-  	-webkit-hyphens: none;
-  	   -moz-hyphens: none;
-  		-ms-hyphens: none;
-  			hyphens: none;
-}
-.ktr-header h1 a {
-	text-decoration: none;
-}
-#acozar-symbol {
-	height: 48px;
-	margin-bottom: 48px;
-	width: 48px;
-}
-
-
-/* KTR article list */
-
-.ktr-list {
-	margin: 64px auto;
-	width: 80%;
-}
-.ktr-list article {
-	border-color: transparent;
-	text-align: center;
-	margin: 0 auto 64px;
-}
-.ktr-list article img {
-	border: 1px solid rgba(0,0,0,.5);
-	border-radius: 50%;
-	display: block;
-	margin: 0 auto;
-	object-fit: cover;
-	object-position: center;
-	height: 128px;
-	width: 128px;
-}
-.ktr-list article h3 {
-	margin: 0;
-	text-transform: uppercase;
-  	-webkit-hyphens: none;
-  	   -moz-hyphens: none;
-  		-ms-hyphens: none;
-  			hyphens: none;
-}
-.ktr-list article strong {
-	font-size: 12px;;
-}
-
-/* KTR article gallery */
-
-.ktr-gallery,
-.ktr-media {
-	margin: 64px auto;
-	text-align: center;
-	width: 80%;
-}
-.ktr-gallery article,
-.ktr-media article {
-	border-color: transparent;
-	float: left;
-	height: 256px;
-	margin: 0 0 64px 1%;
-	width: 24%;
-}
-.ktr-gallery article:first-child {
-	float: none;
-	height: 384px;
-	width: 99%;
-}
-.ktr-gallery article img {
-	border: 1px solid rgba(0,0,0,.5);
-	border-radius: 50%;
-	display: block;
-	margin: 0 auto;
-	object-fit: cover;
-	object-position: center;
-	height: 160px;
-	width: 160px;
-}
-.ktr-media article img {
-	display: block;
-	margin: 0 auto;
-	object-fit: cover;
-	object-position: center;
-	height: 160px;
-	width: 284px;
-}
-.ktr-gallery article:first-child img {
-	height: 256px;
-	width: 256px;
-}
-.ktr-gallery article h3,
-.ktr-media article h3 {
-	font-size: 20px;
-	line-height: 1.2em;
-	margin: 32px 0 0;
-	text-transform: uppercase;
-  	-webkit-hyphens: none;
-  	   -moz-hyphens: none;
-  		-ms-hyphens: none;
-  			hyphens: none;
-}
-.ktr-gallery article:first-child h3 {
-	font-size: 32px;
-}
-.ktr-gallery article strong,
-.ktr-media article strong {
-	font-size: 12px;;
-}
-@media (max-width: 1024px) {
-	.ktr-gallery article,
-	.ktr-media article {
-		width: 48%;
-	}
-	.ktr-gallery article img,
-	.ktr-media article img {
-		height: 128px;
-		width: 128px;
-	}
-	.ktr-gallery article h3,
-	.ktr-gallery article:first-child h3 {
-		font-size: 16px;
-	}
-}
-
-/* KTR article post */
-
-.article-body img {
-	display: block;
-	margin: 0 auto 64px;
-}
-.article-image {
-	margin: 0 -1% 64px !important;
-	min-width: 102%;
-	max-width: 102%;
-}
-@media (max-width: 1024px) {
-	.article-body {
-		display: block;
-		margin: 0 auto;
-		width: 96%;
-	}
-	.article-image {
-		margin: 0 0 64px !important;
-		min-width: 100%;
-		max-width: 100%;
-	}
-}
-
 /* KTR landing */
 
 .ktr-landing-first {
 	text-align: center;
-}
-
-/* KTR footer */
-
-.ktr-footer {
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-image: url('../ics/isotype.png');
-	background-size: 512px;
-	padding-bottom: 512px;
-}
-@media screen and (max-width: 1024px) {
-	.ktr-footer {
-		background-size: 256px;
-		padding-bottom: 360px;
-	}
-}
-#page-footer {
-	padding: 8px;
 }
 
 /* KTR bubble Menu */
@@ -484,17 +282,17 @@ label.th-nox:hover {cursor: pointer!important}
 	padding: 5px 0px;
 	line-height: 78px;
 	text-align: center;
-	width: 40px;
-	height: 40px;
+	width: 48px;
+	height: 48px;
 }
 [class*='ktr-button'] img,
 [class*='ktr-button'] svg {
 	display: block;
-    opacity:.32;
+    opacity:.5;
 	position: relative;
 	margin: -2px auto 0;
-	width: 25px;
-	height: 25px;
+	width: 32px;
+	height: 32px;
 }
 [class*='ktr-button'] img:hover,
 [class*='ktr-button'] svg:hover {
