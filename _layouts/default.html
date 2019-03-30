@@ -115,6 +115,7 @@
   	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/fases.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/onscroll.js"></script>
   	{% if page.comments %}<script src="{{ site.baseurl }}/hipertextos/js/lightbox.min.js"></script>
 	<script type="text/javascript">
   		$(document).ready(function() {
@@ -125,41 +126,6 @@
     		});
 		});
   	</script>{% endif %}
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('#animation1').addClass('anm-fadeIn');
-			});
-			$('#clickthis').click(function(){
-				$('#animation2').toggleClass('anm-fadeIn');
-			});
-			// Animations on scroll
-			// Create a window variable to set the scroll
-			var win = $(window);
-			// Create a variable for .anim
-			var variable1 = $('.animeonscroll');
-			var variable2 = $('#animeonscroll');
-			// Apply the animations on scroll
-			win.scroll(function(event) {
-			  variable1.each(function(i, el) {
-				var el = $(el);
-				if (el.visible(true)) {
-				  el.addClass('anm-moveFromLeftFade slow'); 
-				} else {
-				  el.removeClass('anm-moveFromLeftFade slow'); 
-				} 
-			  });
-			});
-			win.scroll(function(event) {
-			  variable2.each(function(i, el) {
-				var el = $(el);
-				if (el.visible(true)) {
-				  el.addClass('anm-moveFromRightFade slow'); 
-				} else {
-				  el.removeClass('anm-moveFromRightFade slow'); 
-				} 
-			  });
-			});
-		</script>	
     {% include analytics.html %}    
   </body>
 </html>
