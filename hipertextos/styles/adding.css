@@ -275,119 +275,29 @@ main {
 }
 
 @media (max-width: 1366px) {
-    #page-header.cover {
-        padding-top: 120px;
-    }
-
-    img.dialog-svg {
-        width: 80px !important;
-        height: 70px;
-    }
-
-    #web-oferta p {
-        font-size: .9em;
-        max-width: 30%;
-        margin-left: 35%;
-    }
-
-    #coffee .thumb-2 {
-        width: 33.33333% !important;
-    }
-
-    #coffee .pushed-5 {
-        margin-left: 33.33333% !important;
-    }
-
-    #covers {
-        text-rendering: optimizeLegibility;
-    }
-
-    #covers article h4 {
-        font-size: 23px;
-        margin-bottom: 6px;
-    }
-
-    #covers article h5 {
-        font-size: 21px;
-        margin: 0px;
-    }
-
-    #covers .cover-justify p {
-        font-size: 16px !important;
-        letter-spacing: 0.001em;
-        max-width: 80%;
-        margin-left: 10%;
-    }
-
-    #covers article p em {
-        font-size: 18px !important;
-        letter-spacing: 0.001em;
-    }
-
-    .thumb-5, .thumb-6 {
-        width: 100%;
-    }
-
-    img.dialog-svg {
-        width: 340px;
-        height: 100px;
-    }
-
-    #deep img.dialog-svg {
-        max-width: 120px;
-        height: 150px;
-        margin-left: 12px;
-        float: left;
-    }
-
-    #deep em a {
-        font-size: 2em !important;
-        line-height: 3em;
-    }
-
-    #matte-demo {
-        padding: 12px 2% 12px 2%;
-    }
-
-    #matte-demo .demos {
-        padding: 6px;
-    }
-
-    #matte-demo .demo-xl {
-        padding: 6px;
-    }
-
-    strong em a {
-        font-size: 16px;
-    }
-
-    aside.thumb-3 {
-        margin-top: 1.em;
-    }
-
-    aside.thumb-3 a {
-        font-size: 18px;
-    }
-
-    aside.thumb-3 a svg {
-        width: 23px;
-    }
-
-    aside.thumb-3 p {
-        margin: 1em 0 1em 0;
-        border-bottom: thin solid #eee;
-    }
+    #page-header.cover {padding-top: 110px;height:50vh;}
+    img.dialog-svg {width: 80px !important;height: 70px;}
+    #coffee .thumb-2 {width: 33.33333% !important;}
+    #coffee .pushed-5 {margin-left: 33.33333% !important;}
+    #covers {text-rendering: optimizeLegibility;}
+    #covers article h4 {font-size: 23px;margin-bottom: 6px;    }
+    #covers article h5 {font-size: 21px;margin: 0px;    }
+    #covers .cover-justify p {font-size: 16px !important;letter-spacing: 0.001em;max-width: 80%;margin-left: 10%;}
+    #covers article p em {font-size: 18px !important;letter-spacing: 0.001em;}
+    .thumb-5, .thumb-6 {width: 100%;}
+    img.dialog-svg {width: 340px;height: 100px;}
+    #deep img.dialog-svg {max-width: 120px;height: 150px;margin-left: 12px;float: left;}
+    #deep em a {font-size: 2em !important;line-height: 3em;}
+    strong em a {font-size: 16px;}
+    aside.thumb-3 {margin-top: 1.em;}
+    aside.thumb-3 a {font-size: 18px;}
+    aside.thumb-3 a svg {width: 23px;}
+    aside.thumb-3 p {margin: 1em 0 1em 0;border-bottom: thin solid #eee;    }
 }
 
 @media (max-width: 1242px) {
-    #page-header.cover {
-        background-image: url("/img/home_b.jpg");
-        background-position: fixed;
-    }
-
-    .cover#page-header {
-        padding-top: 80px;
-    }
+    #page-header.cover {background-image: url("/img/home_b.jpg");background-position: fixed;}
+    .cover#page-header {padding-top: 80px;}
 
     .cover#page-header h1 {
         line-height: 1.0em;
@@ -403,23 +313,6 @@ main {
         font-size: 17px;
         max-width: 50%;
         margin-left: 25%;
-    }
-
-    #covers .cell-3 {
-        min-width: 50%;
-        margin-bottom: 32px;
-    }
-
-    #matte-demo {
-        padding: 6px 1% 6px 1%;
-    }
-
-    #matte-demo .demos {
-        padding: 4px;
-    }
-
-    #matte-demo .demo-xl {
-        padding: 4px;
     }
 
     img.dialog-svg {
@@ -495,11 +388,6 @@ main {
     #covers article img {
         margin-top: 32px;
     }
-
-    #covers article {
-        width: 100%;
-    }
-
     .cover-page .thumb-9, .cover-page .thumb-3 {
         width: 100%;
     }
@@ -629,7 +517,9 @@ main {
         background-size: 100% auto;
         background-position: fixed !important;
     }
-
+    #covers article {
+        width: 50%;
+    }
     #icons a {
         width: 18%;
         padding: 8px;
