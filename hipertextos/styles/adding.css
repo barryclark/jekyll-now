@@ -21,8 +21,8 @@ main.darkmode {margin-top:-10px;padding-top: 0px !important;border: none;}
 #site-nav label {color: var(--color-grey);border: thin solid transparent;}
 #site-nav label:hover {color: var(--color-soft-grey);border: thin solid #353535;}
 .cover img {width: 80px;margin-bottom: 2.0em;}
-.cover h2 {letter-spacing: 0.01em;line-height: 1.2em;font-weight: lighter ;font-size: 1.2em !important;}
-.cover h1 {letter-spacing: 0.01em;line-height: 1.0em;font-size: 2.4em;font-weight: lighter}
+.cover h2 {letter-spacing: 0.001em;line-height: .8em;font-weight: normal ;font-size: 1em !important;}
+.cover h1 {letter-spacing: 0.001em;line-height: .6em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
 body {text-align: justify;-moz-hyphens: none;-ms-hyphens: none;-webkit-hyphens: none;-o-hyphens: none;hyphens: none;word-wrap: none;}
 p, ul {font-size: 18px;line-height: 27px;}
@@ -46,14 +46,14 @@ main {padding-bottom: 0 !important;}
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;
 }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {
-    letter-spacing: -0.045em;margin-bottom:10px;line-height:1em;
+    letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;
 }
-#web-grafics h1 { margin-bottom:42px;line-height:.9em; }
+#web-grafics h1 { margin-bottom:42px;line-height:1.1em; }
 #web-oferta h2, #web-branding h2, #web-grafics h2, #web-music h2 {
     font-weight: normal ;letter-spacing: -0.045em;margin-bottom:23px;
 }
 #web-oferta h1 {color:var(--color-black);}
-#web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .06em;text-align: center;color: var(--color-grey);}
+#web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .0012em;text-align: center;color: var(--color-grey);}
 #web-oferta #fronters {max-width: 45%;margin-right: 35%;}
 .animeonscroll img {padding:8px;max-width:30%;}
 #web-music {background-image: url("/img/music.jpf");image-rendering: crisp-edges;background-position: top center;
@@ -73,7 +73,7 @@ main {padding-bottom: 0 !important;}
 #fronters-brand .cover-justify svg {min-width: 72px;}
 #web-oferta { background:var(--color-softgrey);image-rendering: crisp-edges;background-position: top center;
     background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;}
-#web-oferta .note {width: 180px;}
+#web-oferta .note {width: 260px;}
 #fronters img.htmlcss {max-width: 300px;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
@@ -139,7 +139,7 @@ hr.lifting {margin: 0px;height: 1px;}
 #covers .cover-icon img {width: 72px;opacity:0.6; margin: 0px;}
 #covers article {border: 0;}
 #page #covers article {text-shadow: 1px 1px 3px rgba(0, 0, 0, .12);}
-#covers h5 {line-height: 1.8em;}
+#covers h5 {line-height: 1.5em;}
 #covers h4 {margin: 0px;line-height: 1em;}
 #fronters img {min-width: 110px;}
 #fronters p {margin: 0px;min-width: 100%;}
