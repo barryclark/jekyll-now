@@ -163,24 +163,27 @@ hr.lifting {margin: 0px;height: 1px;}
 div.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.png") ;width: 480px;height: 480px;margin-top: -30px;background-image: url("/img/golden.jpf");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;z-index: -10;position: absolute;left: 12%;}
 
 /* Dialog */
-#dialog .icon-alarm svg {max-width: 23px !important;}
+#dialog .icon-cog svg {max-width: 32px !important;margin-left:42px;}
 #dialog {max-height: 80%;overflow: hidden;}
-#dialog dialog {background-color:var(--color-black); border: none;border-radius: 7px 7px 6px 6px;}
-#dialog dialog p {text-align: center;color: var(--color-grey);}
-#dialog header {border: none;padding: 21px;border-radius: 6px 6px 0 0;}
+#dialog dialog { border: none;border-radius: 17px 17px 17px 17px;}
+#dialog header {border: none;padding: 2px;border-radius: 12px 12px 0 0;}
 #dialog header h2 svg {width: 72px;margin: 0px 12px 0 0;}
-#dialog header h2 {font-size: 3em;margin-bottom: 6px;font-weight: normal;}
-#dialog header .lead {line-height: 1em;margin-bottom: 7px;}
-#dialog em a {border: none;background:none;color: var(--color-grey);text-decoration:none;}
-img.dialog-svg {width: 342px;height: 72px;}
-#dialog dialog div a {font-size: 15px;}
+#dialog header h2 {font-size: 1.8em;margin-bottom: 1px;font-weight: lighter;}
+#dialog em a {margin:0px!important;border: none;background:none;color: var(--color-hardgrey);text-decoration:none;text-align:left!important;}
+img.dialog-svg {width: 100%;height: 128px;}
 #dialog header {padding-top: 10px;}
+#dialog img.dialog-svg {max-width:100%;padding:26px;height: 235px;margin-left: 0px;float: left;opacity:.5;}
+#dialog img.dialog-svg:hover {opacity:1;}
+#deep .dialog-ic svg {fill:var(--color-grey)!important ;width: 48px;height: 115px;margin-left: 10px;float: left;margin-right: 30px;}
+#deep .dialog-ic svg:hover {color:var(--color-white);fill:var(--color-white);}
+#dialog em a {font-size: 2.3em !important;line-height: 2em;width: 100%;background:transparent ;
+    margin-bottom: 1px;padding-top:0px;}
+#dialog em a:hover  {color: var(--color-black) ;fill: var(--color-black) ;background-color: var(--color-softgrey) ;text-decoration: none;}
+#dialog header, #dialog dialog label {background: var(--color-black);color: var(--color-grey);}
 
-#deep img.dialog-svg {max-width: 52px;height: 130px;margin-left: 8px;float: left;}
-#deep em a {font-size: 2.3em !important;line-height: 2em;width: 60%;text-align: left;background:#000;border-top: 1px solid #222;margin-bottom: 1px;padding-top:0px;}
-#deep em a:hover {color: var(--color-white) ;background-color: #111;text-decoration: none;}
+#map iframe {border-radius:15px!important;}
+#map {padding-bottom:0px;}
 
-#dialog header, #dialog dialog label {background: var(--color-soft-black);color: var(--color-hardgrey);}
 .rights#dialog dialog label {background: transparent;color: var(--color-hardgrey);}
 .rights#dialog header {background: var(--color-yellow);}
 .rights#dialog .yellow {color: var(--color-yellow) !important;}
@@ -301,40 +304,32 @@ main {
 @media (max-width: 1242px) {
     #page-header.cover {}
     .cover#page-header {padding-top: 80px;}
-
     .cover#page-header h1 {
         line-height: 1.0em;
-        font-size: 26px ;
-    }
-
+        font-size: 26px ;    }
     .cover#page-header h2 {
         line-height: 1.2em;
         font-size: 18px ;
     }
-
     #web-oferta p {
         font-size: 17px;
         max-width: 50%;
         margin-left: 25%;
     }
-
     img.dialog-svg {
         width: 140px;
         height: 100px;
     }
-
     #deep img.dialog-svg {
         max-width: 40px;
         height: 60px;
         margin-left: 12px;
         float: left;
     }
-
     #deep em a {
         font-size: 1.8em !important;
         line-height: 1.2em;
     }
-
     img.front-responsive {
         width: 320px;
         margin-top: 60px;
@@ -346,97 +341,79 @@ main {
         background-size: 180% auto;
         background-position: fixed !important;
     }
-
     .cover#page-header {
         padding-top: 50px;
     }
-
     .cover#page-header h1 {
         line-height: 0.8em;
         font-size: 21px ;
     }
-
     .cover#page-header h2 {
         line-height: 1.2em;
         font-size: 19px ;
     }
-
     #web-oferta p {
         font-size: 14px;
         max-width: 80%;
         margin-left: 10%;
     }
-
     #covers article h4 {
         font-size: 26px;
         line-height: 1.3em;
     }
-
     #covers article h5 {
         font-size: 23px;
     }
-
     #covers .cover-justify p {
         font-size: 12px !important;
         letter-spacing: 0.005em;
         line-height: 2.1em;
     }
-
     #covers article p em {
         font-size: 19px !important;
         letter-spacing: 0.015em;
     }
-
     #covers article img {
         margin-top: 32px;
     }
     .cover-page .thumb-9, .cover-page .thumb-3 {
         width: 100%;
     }
-
     #dialog .icon-alarm svg {
         max-width: 16px !important;
         margin: 0;
         padding: 0;
     }
-
     #dialog dialog p {
         font-size: 12px;
         line-height: 1.5em;
     }
-
     #dialog header {
         padding: 12px;
         border-radius: 6px 6px 0 0;
     }
-
     #dialog header h2 svg {
         width: 16px;
         margin: 0px 6px 0 0;
     }
-
     #dialog header h2 {
         font-size: 1.25em;
         margin-bottom: 0px;
     }
-
     #dialog header .lead {
         font-size: 14px;
         line-height: 1.2em;
         margin: 0;
     }
-
     #dialog div em a {
         font-size: 10px;
         line-height: 2.3em;
         padding: 7px;
     }
-
     img.dialog-svg {
         width: 45px !important;
         height: 45px;
     }
-
     aside.thumb-3 {
         text-align: center;
         margin-top: 2.1em;
