@@ -29,7 +29,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 main {padding-bottom: 0 !important;}
 #page-header.cover {background-image: url("/img/home.jpf");background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;
 }
-#page-header.cover, #glass-front, #blured {
+.cover, #glass-front, #blured {
 	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;
 	-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
