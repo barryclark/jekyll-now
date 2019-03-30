@@ -2467,7 +2467,7 @@ dialog,
 	background-color: rgba(22,22,25,1) ;	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-nox:checked ~ #page #page-footer {
-	background-color: rgba(33,33,35,1) ;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;	
+	background-color: rgba(32,32,32,1) ;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;	
 }
 #theme-nox:checked ~ #page,
 #theme-nox:checked ~ #site-nav,
