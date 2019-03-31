@@ -1,3 +1,7 @@
+---
+title: Jekyll serves my blog 10x faster than Wordpress
+---
+
 Jekyll is 10x faster than Wordpress for my blog. 
 
 I just setup a Jekyll version of this blog, hosted on GitHub Pages. It loads 10x faster than the Wordpress version and my Pingdom score went from a D to an A. Granted it doesn’t have all the same functionality, but I’m more okay with that. 
