@@ -2,6 +2,7 @@
 layout: serveis
 title: Serveis
 permalink: /serveis/
+parallax: true
 
 ---
 
