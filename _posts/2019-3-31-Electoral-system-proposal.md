@@ -6,7 +6,7 @@ title: Thailand Election's algebra problem
 <br>
 ![Logos]({{ site.baseurl }}/images/Future_forward.png "heated speakers'corner style debate")
 <p align="center">
-    <font size="4"> A passionate speaker's corner styled speech by Future forward party.</font>
+    <font size="4"> <b> A passionate speaker's corner styled speech by Future forward party. </b> </font>
 </p>
 <br>
 <br>
