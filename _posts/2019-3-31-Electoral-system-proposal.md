@@ -49,9 +49,10 @@ So I come up with a proposal to do away with the confusing method, to cover the 
 Roughly, we calculate the voter per representative first. And use that number to find out for a given party, how many voters are left unaccounted for by the district representatives. These come from voters whose party lost in districts. Their voice is rescued by the party list so to speak.
 Then from the unaccounted-for-voters, we calculate a quotient by dividing the un-accounted-for-voters by number of party list plus 1 (to prevent dividing by 0). The formula is
 
-\begin{equation}
+%%latex
+\begin{align}
 quot = \frac{unaccounted-for-voters}{party_list + 1}
-\end{equation}
+\end{align}
 
 Then a single party list seat is awarded to the party with the high quotient successively until the the total seat of representatives is 500 (this is represented by the while loop).
 
