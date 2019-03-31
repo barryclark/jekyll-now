@@ -38,10 +38,12 @@ This way of allocating seats give a small party (often single-issued party) a ch
 *The overhang seats will be important later on when we see the situation in Thailand.*
 
 ### Method of rounding
-Often when a party list is allocated to parties, the exact proportionality is not possible one has to round the proportional seats often a fractional number to a whole number. The question is to round up or round down, and how to keep the total seats after rounding under the desired number. There are numbers of methods, but the method used in Thailand election is called Jefferson Method.
+Often when a party list is allocated to parties, the exact proportionality is not possible one has to round the proportional seats often a fractional number to a whole number. The question is to round up or round down, and how to keep the total seats after rounding under the desired number. There are numbers of methods, but the method used in Thailand election is called Hamilton method or largest remainder method.
 
-#### Jefferson method (Highest average method)
-Named after Thomas Jefferson who introduced this method to allocate the congressional seats to states in 1791, this method first allocates seats to the whole number of proportional seats disregard the remainders (decimal points). If there is any remaining seats, they are allocated first to highest remainders, and so on.
+#### Hamilton method
+This method is named after Alexander Hamilton, who invented it in 1792. It allocates the party list seats according to "quotas" each party has. A quota represents a rough number of votes required for a single seat. For example, if there are 1 million votes and 100 seats to be allocated, a simple quota (also known as Hare quota) is 1 million/100 = 10000. That is, roughly a party will be awarded 1 seat per every 10000 votes it has.
+
+Now the problem arises when there are parties with *fractional quotas*; so we need rounding of some kind. The rounding rule is as followed. First apply a floor function, that is, takes integer of quotas and award parties accordingly. Then if there is any remaining party list seat to be given, a priority is ranked by the fractional remainder (i.e. the decimal points), the largest remainder is first in rank. One additional seat is given to a party according to the remainder ranking.
 
 
 # 3. 2014 Election Result
