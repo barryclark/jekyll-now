@@ -37,6 +37,9 @@
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
 #resumed-web em {padding:1em 0 1em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
+#web-icons {background:var(--color-black);color:var(--color-white);}
+#web-icons h1, #web-icons h4 {margin-bottom:0px;}
+
 #resumed-paint svg {width:23px;}
 #resumed-paint {color:var(--color-translucentwhite);}
 #resumed-paint h5 {margin: 0 0 6px 0;}
