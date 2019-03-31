@@ -39,6 +39,10 @@
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {background:var(--color-black);color:var(--color-white);}
 #web-icons h1, #web-icons h4 {margin-bottom:0px;}
+#web-top img {margin-right:21px;max-width:160px;margin-bottom:80px;}
+#web-top h4 {border-top:thin solid #eee;padding-top:8px;}
+#web-top em a {padding:8px 12px 8px 12px;margin-top:12px;text-decoration:none;background-color:transparent;color:var(--color-soft);border-radius:6px;}
+#resumed-web {color:var(--color-grey);}
 
 #resumed-paint svg {width:23px;}
 #resumed-paint {color:var(--color-translucentwhite);}
