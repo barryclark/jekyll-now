@@ -44,10 +44,26 @@ Imagine a case that there is one seat left to allocate but two or more party are
 
 So I come up with a proposal to do away with the confusing method, to cover the edge cases (in case of tie), and avoid re-scaling (which can distort a voting power). I wrote up a procedure as a python function that takes in pandas dataframe and return dataframe with the calculated representative seats. The method of allocating seat is inspired by *Jefferson method* (after Thomas Jefferson). The code is shown here.
 
-![Figure 1]({{ site.baseurl }}/images/Jefferson_method.png "Jefferson method")
-<p align="center">
-    <font size="2"><b>Figure 1.</b>  A python function that implements a proposed change in representative allocation procedure in Thailand.</font>
-</p>
+
+```python
+def Jefferson_method(df_copy,max_seat = 500):
+    """implement highest average method. This calculation is inspried by the Jefferson method (attributed to Thomas Jefferson).
+    The change is we remove votes that is attributed to district seats out first, and calculate the voters unaccounted for by district seats, 
+    by allocating party lists to the party."""
+    
+    df = df_copy.copy(deep=True)
+    df['party_list'] = 0
+    voter_per_rep = (df['voters'].sum()/max_seat)
+    df['unaccounted_for_voters'] = np.where((df['voters'] - df['district_won']*voter_per_rep) > 0, df['voters'] - df['district_won']*voter_per_rep,0)
+    while df['district_won'].sum() + df['party_list'].sum() < max_seat:
+        df['quotients'] = pd.to_numeric(df['unaccounted_for_voters']/(df['party_list'] + 1))
+
+        df['quotients'][df['Party'] == 'etc'] = 0  #these are pool of too small parties (a few hundred votes that will not be counted. so the quotient is set as 0)
+        df['party_list'] = np.where(df.index == df.quotients.idxmax(axis=0), df['party_list'] + 1, df['party_list'])
+        
+    df['total_seats'] = df['district_won'] + df['party_list']
+    return df
+```
 
 Roughly, we calculate the voter per representative first. And use that number to find out for a given party, how many voters are left unaccounted for by the district representatives. These come from voters whose party lost in districts. Their voice is rescued by the party list so to speak.
 Then from the unaccounted-for-voters, we calculate a quotient by dividing the un-accounted-for-voters by number of party list plus 1 (to prevent dividing by 0) **quotient = unaccounted-for-voters/(party_list + 1)**. Then a single party list seat is awarded to the party with the high quotient successively until the the total seat of representatives is 500 (this is represented by the while loop).
@@ -56,7 +72,7 @@ Then from the unaccounted-for-voters, we calculate a quotient by dividing the un
 <br>
 The election result calculated by this procedure is shown here.
 
-![Figure 2]({{ site.baseurl }}/images/result_from_Jefferson.png "Jefferson method")
+![Figure 1]({{ site.baseurl }}/images/result_from_Jefferson.png "Jefferson method")
 <p align="center">
     <font size="2"><b>Figure 2.</b> The representative seats of Thailand election of 2019 calculated using my proposed method.</font>
 </p>
