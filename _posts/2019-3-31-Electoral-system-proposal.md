@@ -58,7 +58,7 @@ The election result calculated by this procedure is shown here.
     <font size="2"><b>Figure 2.</b> The representative seats of Thailand election of 2019 calculated using my proposed method.</font>
 </p>
 
-This method is 1. the allocation is more proportional than the 1st scenario and always almost identical to the 2nd scenario, 2. easy to understand and implement than the 2nd scenario, 3. there is no scaling problem, so we avoid distorting the proportionality, and lastly 4. there is no tie since we always add one single seat at a time, and it is implausible for two party to have the same quotient (to have the same quotient they must have the same number of voters). Thus, we cover an edge case.
+This method solves following problems: 1. the allocation is more proportional than the 1st scenario and always almost identical to the 2nd scenario, 2. easy to understand and implement than the 2nd scenario, 3. there is no scaling problem, so we avoid distorting the proportionality, and lastly 4. there is no tie since we always add one single seat at a time, and it is implausible for two party to have the same quotient (to have the same quotient they must have the same number of voters). Thus, we cover an edge case.
 
 
 **Read more:**
