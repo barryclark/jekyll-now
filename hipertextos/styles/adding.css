@@ -6,7 +6,7 @@
 header {z-index: 1 !Important;}
 .lines {background: rgba(69, 69, 69, .12) !important;height: 2px;}
 main.darkmode {margin-top:-10px;padding-top: 0px !important;border: none;}
-
+main {border:none!important;}
 .parallax {-webkit-transition: all .0s ease;-moz-transition: all .0s ease;-ms-transition: all .0s ease;-o-transition: all .0s ease;transition: all .0s ease;}
 
 /* Nav */
