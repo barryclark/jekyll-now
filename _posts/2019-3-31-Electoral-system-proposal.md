@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Thailand Election 2019
+title: Thailand Election's algebra problem
 ---
 
 <br>
 ![Logos]({{ site.baseurl }}/images/Future_forward.png "heated speakers'corner style debate")
 <p align="center">
-    <font size="2"></b>passionate speaker's corner style speech by Future forward party.</font>
+    <font size="4"> A passionate speaker's corner styled speech by Future forward party.</font>
 </p>
 <br>
 <br>
@@ -15,9 +15,9 @@ title: Thailand Election 2019
 # 1. Suffrage as a matter of algebra
 
 This blog is about my proposal to amend the election law and electoral allocation procedure to make the them clearer and easy to understand. 
-In my previous post I laid out an argument why the current electoral system is terrible in that it favors small parties, and that in long run tends to fracture political coalitions. Here is another post telling why the Election law is terrible. The election was held by March 24 2019, and as of now, March 31, 2019, the election commission has not released the party list result. Actually there has been a great deal of confusion over how the election law determine the party lists. Most intellectuals, lawyers, and afficianados who have interpreted the law come up with either one of the two methods of calculating party lists. The actual election law is quite difficult to understand, the laws are intercalated, and have a lot of nested conditional clauses. The law make references to other parts of the law; and the lack of mathematical notations makes it difficult to follow. You can read how the calculation is done here in this blog.
+In my previous post I laid out an argument why the current electoral system is terrible in that it favors small parties, and that in long run tends to fracture political coalitions. Here is another post telling why the Election law is terrible. The election was held by March 24 2019, and as of now, March 31, 2019, the election commission has not released the party list result. Actually there has been a great deal of confusion over how the election law determine the party lists. Most intellectuals, lawyers, and afficianados who have interpreted the law come up with either one of the two methods of calculating party lists. The actual election law is quite difficult to understand, the laws are intercalated, and have a lot of nested conditional clauses. The law make references to other parts of the law; and the lack of mathematical notations makes it difficult to follow. You can read how the calculation is done here in this blog by professor Allen Hicken.
 
-https://www.thaidatapoints.com/post/calculating-the-party-list-seats?fbclid=IwAR2BP0PGZWp8SE_ZvqdPs2v1G4TjaiccJeglxHKexFv9s38KPXuX6jxYxnU
+[Thai data points Blog](https://www.thaidatapoints.com/post/calculating-the-party-list-seats?fbclid=IwAR2BP0PGZWp8SE_ZvqdPs2v1G4TjaiccJeglxHKexFv9s38KPXuX6jxYxnU)
 
 
 # 2. The problem with the calculations
@@ -37,9 +37,9 @@ After the scaling, there can be more than one party who gets assigned the same n
 Imagine a case that there is one seat left to allocate but two or more party are assigned the same number party list. The problem is **the law does not say**.
 
 
-# 3. A proposal for change
+# 3. A proposed solution
 
-So I come up with a proposal to do away with the confusing procedure, to cover the edge cases (in case of tie), and avoid re-scaling (which can distort a voting power). I wrote up a procedure as a python function that takes in pandas dataframe and return dataframe with the calculated representative seats. The method of allocating seat is inspired by *Jefferson method* (after Thomas Jefferson). The code is shown here.
+So I come up with a proposal to do away with the confusing method, to cover the edge cases (in case of tie), and avoid re-scaling (which can distort a voting power). I wrote up a procedure as a python function that takes in pandas dataframe and return dataframe with the calculated representative seats. The method of allocating seat is inspired by *Jefferson method* (after Thomas Jefferson). The code is shown here.
 
 ![Figure 1]({{ site.baseurl }}/images/Jefferson_method.png "Jefferson method")
 <p align="center">
@@ -65,6 +65,7 @@ This method is 1. the allocation is more proportional than the 1st scenario and 
 
 
 Read more:
+1. 
 1. https://en.wikipedia.org/wiki/D'Hondt_method the procedure I proposed is inspired by the "Jefferson method".
 2. https://en.wikipedia.org/wiki/Largest_remainder_method  the method currently used in Thailand is inspired by the "Hamilton method".
 3. https://en.wikipedia.org/wiki/Apportionment_paradox this is a nice article talking about a common sense violation that can arises from electoral procedure. Specifically, Balinski-Young theorem shows that the Hamilton method satisfies quota rule, but creates Alabama paradox and population paradox; while Jefferson method is free from Alabama paradox or population paradox but may not satisfy quota rule.
