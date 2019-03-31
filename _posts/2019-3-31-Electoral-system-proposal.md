@@ -37,7 +37,7 @@ After the scaling, there can be more than one party who gets assigned the same n
 Imagine a case that there is one seat left to allocate but two or more party are assigned the same number party list. The problem is **the law does not say**.
 
 
-# 3. A proposed solution
+# 4. A proposed solution
 
 So I come up with a proposal to do away with the confusing method, to cover the edge cases (in case of tie), and avoid re-scaling (which can distort a voting power). I wrote up a procedure as a python function that takes in pandas dataframe and return dataframe with the calculated representative seats. The method of allocating seat is inspired by *Jefferson method* (after Thomas Jefferson). The code is shown here.
 
@@ -50,6 +50,7 @@ Roughly, we calculate the voter per representative first. And use that number to
 Then from the unaccounted-for-voters, we calculate a quotient by dividing the un-accounted-for-voters by number of party list plus 1 (to prevent dividing by 0) **quotient = unaccounted-for-voters/(party_list + 1)**. Then a single party list seat is awarded to the party with the high quotient successively until the the total seat of representatives is 500 (this is represented by the while loop).
 
 <br>
+<br>
 The election result calculated by this procedure is shown here.
 
 ![Figure 2]({{ site.baseurl }}/images/result_from_Jefferson.png "Jefferson method")
@@ -60,7 +61,8 @@ The election result calculated by this procedure is shown here.
 This method is 1. the allocation is more proportional than the 1st scenario and always almost identical to the 2nd scenario, 2. easy to understand and implement than the 2nd scenario, 3. there is no scaling problem, so we avoid distorting the proportionality, and lastly 4. there is no tie since we always add one single seat at a time, and it is implausible for two party to have the same quotient (to have the same quotient they must have the same number of voters). Thus, we cover an edge case.
 
 
-Read more:
+**Read more:**
+<br>
 1. [Jefferson method](https://en.wikipedia.org/wiki/D'Hondt_method/) the procedure I proposed is inspired by the "Jefferson method".
 2. [Hamilton method](https://en.wikipedia.org/wiki/Largest_remainder_method/)  the method currently used in Thailand is inspired by the "Hamilton method".
 3. [Balinski-Young theorem](https://en.wikipedia.org/wiki/Apportionment_paradox/) this is a nice article talking about a common sense violation that can arises from electoral procedure. Specifically, Balinski-Young theorem shows that the Hamilton method satisfies quota rule, but creates Alabama paradox and population paradox; while Jefferson method is free from Alabama paradox or population paradox but may not satisfy quota rule.
