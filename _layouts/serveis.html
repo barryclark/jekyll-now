@@ -20,8 +20,26 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-serveis.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/aos.css" />    
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    
+  	{% if page.parallax %}<script src="{{ site.baseurl }}/hipertextos/js/jquery-latest.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function(){
 
+			$(window).scroll(function(){
+				var barra = $(window).scrollTop();
+				var posicion = barra * 0.30;
+
+			$('.parallax').css({
+				'background-position': '0 -' + posicion + 'px'
+				});
+			});
+
+		});
+  	</script>
+  	{% endif %}
+  	
     {% include favicons.html %}
 	<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -30,7 +48,15 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-WXMBJZW');</script>
 	<!-- End Google Tag Manager -->
-	
+
+  	{% if page.parallax %}
+	<img class="preload" src="/img/home.jpf" width="2010" height="1340">
+	<img class="preload" src="/img/homed.jpf" width="2010" height="1340">
+	<img class="preload" src="/img/imac.jpf" width="1920" height="1920">
+	<img class="preload" src="/img/golden.jpf" width="2010" height="1340">
+	<img class="preload" src="/img/music.jpf" width="1920" height="2880">
+  	{% endif %}
+  	
   </head>
 
   <body>
@@ -52,7 +78,7 @@
 				<a href="#coffee" title="Fem un cafè?" class="anm-zoomIn delay-1000"><img src="{{ site.baseurl }}/hipertextos/svg/coffee.svg" alt="enllaç a pendre un cafè"><br>Cafè?</a>
 			 </div>
 		</nav>
-  	<main id="page-main" class="serveis">
+  	<main id="page-main" class="serveis parallax">
   		<section id="">
   			
   		</section>
@@ -165,7 +191,7 @@
 			</div>			
 			<hr>
 		</section>
-		<section id="section-music"  class="anm-fadeIn delay-1500">
+		<section id="section-music"  class="parallax anm-fadeIn delay-1500">
 			<hr><br>
 			<img src="{{ site.baseurl }}/hipertextos/svg/music.svg" alt="Secció Música en viu" class="big-icon">
 			<h2>Música</h2>
@@ -198,6 +224,13 @@
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/aos.js"></script>
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
     {% include analytics.html %}
   </body>
 </html>
