@@ -4,7 +4,7 @@
 #page-header.serveis-header {background-image: url("/img/serveis.jpg");	background-position: top center;
 	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
 	border:none;color: #fff;overflow: hidden;
-	text-align: center;height: 66vh;
+	text-align: center;height: 52vh;
 }
 #page-header div h1 {font-weight:400;letter-spacing: 0.005em; font-size:1.0em;line-height:1.7em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
 #page-header div {border-bottom:thin solid #fafafa;height:42px;}
@@ -13,16 +13,20 @@
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
 
-#page-header h2 {font-size:2.9em;padding-top:230px;font-weight: 400;letter-spacing: none;}
-#page-header h5 {padding-top:260px;font-weight: 200;}
+#page-header h2 {font-size:2.9em;padding-top:190px;font-weight: 400;letter-spacing: none;}
+#page-header h5 {padding-top:220px;font-weight: 200;}
+
+#page-nav {background-color:var(--color-white)!important;}
+#page-nav a {text-decoration:none;}
+#page-nav a:hover {color:var(--color-black);}
 
 /* Serveis */
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;}
 #section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
-#section-print {background-image: url("/img/print.jpg");background-position:fixed;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
-#section-web, #section-brand, #section-print {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
-#section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
+#section-music {background-image: url("/img/print.jpg");background-position:fixed;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
+#section-web, #section-brand, #section-music {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
+#section-web svg, #section-brand svg, #section-paint svg, #section-music svg {width:64px;}
 #resumed-web svg {width:26px;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
 #resumed-web em {padding:1em 0 1em 0;}
@@ -89,13 +93,13 @@ img.big-icon {width:64px;padding-top:16px;}
 @media (max-width: 1242px) {
 	#section-web {background-image: url("/img/web_b.jpg");background-position:fixed;}
 	#section-brand {background-image: url("/img/blog_b.jpg");background-position:fixed;}
-	#section-print {background-image: url("/img/print_b.jpg");background-position:fixed;}
+	#section-music {background-image: url("/img/print_b.jpg");background-position:fixed;}
 }
 @media (max-width: 768px) {
     #section-web {background-image: url("/img/texture/h_paper.png");background-size:200px 200px;background-repeat: repeat;}
     #section-brand {background-image: url("/img/texture/yellow_skulls.png");background-size:400px 400px;background-repeat: repeat;}
-    #section-print {background-image: url("/img/texture/white_tree.png");background-size:350px 350px;background-repeat: repeat;}
-    #section-web, #section-brand, #section-paint, #section-print {line-height:.6em;}
+    #section-music {background-image: url("/img/texture/white_tree.png");background-size:350px 350px;background-repeat: repeat;}
+    #section-web, #section-brand, #section-paint, #section-music {line-height:.6em;}
     #browser-ios.thumb {display:none;visibility:hidden;}
     #section-web .cell-x1 {	width: 20%;}
     #section-web .cell-10 {width: 100% !important;margin:0;}
