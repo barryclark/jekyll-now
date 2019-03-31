@@ -29,7 +29,7 @@
 	box-shadow:inset 0px -120px 69px rgba(255,255,255,1);}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;}
 #section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
-#section-music {background-image: url("/img/print.jpg");background-position:fixed;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
+#section-music {background-image: url("/img/music.jpf");background-position:bottom center;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
 #section-web, #section-brand, #section-music {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-music svg {width:64px;}
 #resumed-web svg {width:26px;}
