@@ -27,7 +27,7 @@
 #serveis-pre h2 {margin-bottom:6px;}
 #serveis-pre h4 {text-align:right;margin-right:21%;}
 #section-web {background-image: url("/img/imac.jpf");background-position:fixed;image-rendering: crisp-edges;}
-#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;}
+#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;margin-top:-30px;}
 #section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
 #section-music {background-image: url("/img/music.jpf");background-position:bottom center;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
 #section-web, #section-brand, #section-music {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
@@ -36,12 +36,12 @@
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
 #resumed-web em {padding:1em 0 1em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
-#web-icons {background:rgba(10,10,10,.96);color:var(--color-white);text-align:justify;}
+#web-icons {padding-top:32px;background:linear-gradient(var(--color-softblack), rgba(10,10,10,.96));color:var(--color-white);text-align:justify;}
 #web-icons h1, #web-icons h3, #web-icons p {margin-bottom:0px;padding-left:12px;}
 #web-top img {}
-#web-top h3 {border-top:thin solid #eee;padding-top:2px;}
+#web-top h3 {border-top:thin solid var(--color-hardgrey) ;padding-top:2px;max-width:98%;}
 #web-top em a {padding:8px 12px 8px 12px;margin-left:12px;margin-top:12px;text-decoration:none;background-color:transparent;color:var(--color-soft);border-radius:6px;}
-#resumed-web {color:var(--color-hardgrey);background:rgba(180,180,180,.95);}
+#resumed-web {color:var(--color-hardgrey);background:rgba(180,180,180,.95);margin-bottom:-45px;}
 
 #resumed-paint svg {width:23px;}
 #resumed-paint {color:var(--color-translucentwhite);}
