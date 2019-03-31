@@ -17,7 +17,7 @@ title: Thailand Election's algebra problem
 This blog is about my proposal to amend the election law and electoral allocation procedure to make the them clearer and easy to understand. 
 In my previous post I laid out an argument why the current electoral system is terrible in that it favors small parties, and that in long run tends to fracture political coalitions. Here is another post telling why the Election law is terrible. The election was held by March 24 2019, and as of now, March 31, 2019, the election commission has not released the party list result. Actually there has been a great deal of confusion over how the election law determine the party lists. Most intellectuals, lawyers, and afficianados who have interpreted the law come up with either one of the two methods of calculating party lists. The actual election law is quite difficult to understand, the laws are intercalated, and have a lot of nested conditional clauses. The law make references to other parts of the law; and the lack of mathematical notations makes it difficult to follow. You can read how the calculation is done here in this blog by professor Allen Hicken.
 
-[Thai data points Blog](https://www.thaidatapoints.com/post/calculating-the-party-list-seats?fbclid=IwAR2BP0PGZWp8SE_ZvqdPs2v1G4TjaiccJeglxHKexFv9s38KPXuX6jxYxnU)
+[Thai data points Blog](https://www.thaidatapoints.com/post/calculating-the-party-list-seats?fbclid=IwAR2BP0PGZWp8SE_ZvqdPs2v1G4TjaiccJeglxHKexFv9s38KPXuX6jxYxnU/)
 
 
 # 2. The problem with the calculations
@@ -49,7 +49,7 @@ So I come up with a proposal to do away with the confusing method, to cover the 
 Roughly, we calculate the voter per representative first. And use that number to find out for a given party, how many voters are left unaccounted for by the district representatives. These come from voters whose party lost in districts. Their voice is rescued by the party list so to speak.
 Then from the unaccounted-for-voters, we calculate a quotient by dividing the un-accounted-for-voters by number of party list plus 1 (to prevent dividing by 0). The formula is
 
-quot = $\frac{unaccounted-for-voters}{party_list + 1}$
+$quot = \frac{unaccounted-for-voters}{party_list + 1}$
 
 Then a single party list seat is awarded to the party with the high quotient successively until the the total seat of representatives is 500 (this is represented by the while loop).
 
@@ -65,7 +65,6 @@ This method is 1. the allocation is more proportional than the 1st scenario and 
 
 
 Read more:
-1. 
-1. https://en.wikipedia.org/wiki/D'Hondt_method the procedure I proposed is inspired by the "Jefferson method".
-2. https://en.wikipedia.org/wiki/Largest_remainder_method  the method currently used in Thailand is inspired by the "Hamilton method".
-3. https://en.wikipedia.org/wiki/Apportionment_paradox this is a nice article talking about a common sense violation that can arises from electoral procedure. Specifically, Balinski-Young theorem shows that the Hamilton method satisfies quota rule, but creates Alabama paradox and population paradox; while Jefferson method is free from Alabama paradox or population paradox but may not satisfy quota rule.
+1. https://en.wikipedia.org/wiki/D'Hondt_method/ the procedure I proposed is inspired by the "Jefferson method".
+2. https://en.wikipedia.org/wiki/Largest_remainder_method/  the method currently used in Thailand is inspired by the "Hamilton method".
+3. https://en.wikipedia.org/wiki/Apportionment_paradox/ this is a nice article talking about a common sense violation that can arises from electoral procedure. Specifically, Balinski-Young theorem shows that the Hamilton method satisfies quota rule, but creates Alabama paradox and population paradox; while Jefferson method is free from Alabama paradox or population paradox but may not satisfy quota rule.
