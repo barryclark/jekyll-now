@@ -21,7 +21,8 @@
 #page-nav a:hover {color:var(--color-black);}
 
 /* Serveis */
-#section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
+#section-web {background-image: url("/img/imac.jpf");background-position:fixed;image-rendering: crisp-edges;
+	box-shadow:inset 0px -120px 69px rgba(255,255,255,1);}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;}
 #section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
 #section-music {background-image: url("/img/print.jpg");background-position:fixed;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
