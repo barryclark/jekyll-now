@@ -14,15 +14,17 @@ title: Thailand Election's algebra problem
 
 # 1. Suffrage as a matter of algebra
 
-This blog is about my proposal to amend the election law and electoral allocation procedure to make the them clearer and easy to understand. 
-In my previous post I laid out an argument why the current electoral system is terrible in that it favors small parties, and that in long run tends to fracture political coalitions. Here is another post telling why the [Election law](https://www.ect.go.th/ect_th/download/article/article_20180913155522.pdf) is terrible. The election was held by March 24 2019, and as of now, March 31, 2019, the election commission has not released the party list result. Actually there has been a great deal of confusion over how the election law determine the party lists. Most intellectuals, lawyers, and afficianados who have interpreted the law come up with either one of the two methods of calculating party lists. The actual election law is quite difficult to understand, the laws are intercalated, and have a lot of nested conditional clauses. The law make references to other parts of the law; and the lack of mathematical notations makes it difficult to follow. You can read how the calculation is done here in this blog by professor Allen Hicken.
+This blog is about my proposal to criticize the election law and electoral allocation procedure. I also want to put forward a way to make the the procedure clearer and easy to understand. In my previous [post](https://vincentk1991.github.io/Hello-World/) I laid out an argument why the current electoral system is terrible in that it favors small parties, and that in long run tends to fracture political coalitions. Here is another post telling why the [Election law](https://www.ect.go.th/ect_th/download/article/article_20180913155522.pdf) is terrible. The election was held by March 24 2019, and as of now, March 31, 2019, the election commission has not released the party list result. Actually there has been a great deal of confusion over how the election law determine the party lists. Most intellectuals, lawyers, and afficianados who have interpreted the law come up with either one of the two methods of calculating party lists. The actual election law is quite difficult to understand, the laws are intercalated, and have a lot of nested conditional clauses. The law make references to other parts of the law; and the lack of mathematical notations makes it difficult to follow. You can read how the calculation is done here in this blog by professor Allen Hicken.
 
 [Thai data points Blog](https://www.thaidatapoints.com/post/calculating-the-party-list-seats?fbclid=IwAR2BP0PGZWp8SE_ZvqdPs2v1G4TjaiccJeglxHKexFv9s38KPXuX6jxYxnU/)
 
 
+This kind of confusion highlights gross incompetence of the election comission. Moreover, it casts doubt on the legislative process done by the national legislative assembly.
+
+
 # 2. The problem with the calculations
 
-Now, I have my thought on which one is correct, and my previous blog implements that method. Simply put I think the 2nd scenario makes more sense from the mathematics point of view. The first scenario takes too many seats away from too many people who vote for a big party and gives them to small parties.
+Now, I have my thought on which one is correct, since my previous blog implements that method. Simply put I think the 2nd scenario makes more sense from the mathematics point of view. The first scenario takes too many seats away from too many people who vote for a big party and gives them to small parties.
 
 The first method distort the voting power of people because of the scaling problem. After calculating the first round of eligible party list seats, it scale the number down to 150 (the number of party list seat). 
 Geometrically, the scaling is akin to shrinking the floating number line from 0-infinity to 0-150. The farther out you along the number line, the more shrinking you will see. In our case, it shrinks the number of a party having more eligible party list seats disproportionally more than a small party that doesn't yet have party list.
@@ -30,6 +32,7 @@ Geometrically, the scaling is akin to shrinking the floating number line from 0-
 The 2nd scenario keeps the shrinkage low because it shrinks the integer number line from 1-infinity to 0-150. As a a result, the allocation of a representative of a giver party to the voters is close to the ideal voter per represenative (about 70000 voters per representative).
 
 If one thinks about *the purpose* of the election procedure, I will argue the main purpose the election must satisfy is to allocate representation fairly. Furthermore, one criterion for fairness is *proportionality*. A number of votes per representative should be roughly equal for all parties. That is to prevent a vote given to one party to have more power than another. The 1st scenario violates this criterion. A voter per representative for a small party is approximately 30000; while a voter per representative for a larger party can be up to 78000. A vote given to a large party worth half as much as a vote given to a small party. In 2nd scenario, the voter per representative is about 71000 across all parties. So I argue that while **the 1st scenario violates the purpose of the election, the 2nd scenario satisfies it**.
+
 
 # 3. the edge case 
 
@@ -59,6 +62,7 @@ The election result calculated by this procedure is shown here.
 </p>
 
 This method solves following problems: 1. the allocation is more proportional than the 1st scenario and always almost identical to the 2nd scenario, 2. easy to understand and implement than the 2nd scenario, 3. there is no scaling problem, so we avoid distorting the proportionality, and lastly 4. there is no tie since we always add one single seat at a time, and it is implausible for two party to have the same quotient (to have the same quotient they must have the same number of voters). Thus, we cover an edge case.
+In the end, I hope that my post here shows how writing a good law might be benefited from having a clean code in mind. I hope that the lawmakers of Thailand may learn something from the coders.
 
 
 **Read more:**
