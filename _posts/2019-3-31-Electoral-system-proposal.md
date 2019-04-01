@@ -45,16 +45,7 @@ Imagine a case that there is one seat left to allocate but two or more party are
 So I come up with a proposal to do away with the confusing method, to cover the edge cases (in case of tie), and avoid re-scaling (which can distort a voting power). I wrote up a procedure as a python function that takes in pandas dataframe and return dataframe with the calculated representative seats. The method of allocating seat is inspired by *Jefferson method* (after Thomas Jefferson). The code is shown here.
 
 
-```
-	test = 45
-```
-
 {% highlight python %}
-def test(run):
-	return run
-{% endhighlight %}
-
-```python
 def Jefferson_method(df_copy,max_seat = 500):
 
     """implement highest average method. This calculation is inspried by the Jefferson method (attributed to Thomas Jefferson).
@@ -73,7 +64,8 @@ def Jefferson_method(df_copy,max_seat = 500):
         
     df['total_seats'] = df['district_won'] + df['party_list']
     return df
-```
+{% endhighlight %}
+
 
 Roughly, we calculate the voter per representative first. And use that number to find out for a given party, how many voters are left unaccounted for by the district representatives. These come from voters whose party lost in districts. Their voice is rescued by the party list so to speak.
 Then from the unaccounted-for-voters, we calculate a quotient by dividing the un-accounted-for-voters by number of party list plus 1 (to prevent dividing by 0) **quotient = unaccounted-for-voters/(party_list + 1)**. Then a single party list seat is awarded to the party with the high quotient successively until the the total seat of representatives is 500 (this is represented by the while loop).
