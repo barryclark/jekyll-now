@@ -45,9 +45,14 @@ Imagine a case that there is one seat left to allocate but two or more party are
 So I come up with a proposal to do away with the confusing method, to cover the edge cases (in case of tie), and avoid re-scaling (which can distort a voting power). I wrote up a procedure as a python function that takes in pandas dataframe and return dataframe with the calculated representative seats. The method of allocating seat is inspired by *Jefferson method* (after Thomas Jefferson). The code is shown here.
 
 
-```python
+```
 	test = 45
 ```
+
+{% highlight python %}
+def test(run):
+	return run
+{% endhighlight %}
 
 ```python
 def Jefferson_method(df_copy,max_seat = 500):
