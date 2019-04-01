@@ -23,7 +23,7 @@ As a result, we’ve got all sentences from the employee’s assessment evaluate
 
 Just like in the first article, we have a very clean and legally verified dataset with labeled sentences from our editorial department, which serves as a ground truth for the model. We decided to use the same scoring system as in our dataset, where the highest score is 1 and the lowest is 4. There are no intermediate values between scores.
 
-## Finding the clusters and assigning clusters
+## Sorting and finding bordering indices
 
 The key idea is to consider the four scores as four clusters. Let’s walk through the technical details of the process.
 
@@ -33,7 +33,7 @@ This is how the data look like in the beginning:
 
  We sort the whole dataset by score. Now it is easy to find border indices of scores and divide the dataset into four data sets. These data sets correspond to our four score clusters.
 
-As usual, we need to convert from words to numbers. Before we do that, we need to clean the data. processing steps here are documents that are not strings, are too short and/or not written in German. Then, we remove punctuation and transform every word to lower case.
+As usual, we need to convert from words to numbers. Before we do that, we need to clean the data. Processing steps here are documents that are not strings, are too short and/or not written in German. Then, we remove punctuation and transform every word to lower case.
 
 As a last step before training, we apply a simple CountVectorizer to convert our words into numerical form. As a very common measure to offset frequently appearing words in general from the words specific to the particular corpus we also apply the TF-IDF algorithm. Now we are ready to start training.
 
@@ -56,7 +56,7 @@ There is also another important limitation that I must mention. The model was on
 
 It is also forbidden by law to include such extreme sentences in reference letters. So if a sentence with "very bad" is fed in, the model might pick up words like “very” and since the model has never encountered words like "bad", may assign a score of 1: i.e. the model is only performant for texts that conform to the legal constraints of German reference letters, and, would have to be retrained to fit different kinds of texts. 
 
-## Next steps: scrubbing sensitive data away
+## Next steps: scrubbing irrelevant and wrong data away
 
 Further experiments focus on confidentiality evaluations. Sentences should be redacted and cleansed first before being fed into the classifier. It will help to separate sentences, which don’t fulfill legal requirements and also those, which are not part of the assessment, like company or role description.
 
