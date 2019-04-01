@@ -60,6 +60,11 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
         <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>
     <tr>
+        <td>Piraeus</td>
+        <td><a href="https://goo.gl/maps/hCCcRJWHTLx">Sachtouri 56, Piraeus 18537</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
         <td>Glyfada, Attica</td>
         <td><a href="https://goo.gl/maps/VwQbWgmdcbk">DAMA shopping centre, Genimmata 59-61, Glyfada 16562</a></td>
         <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
@@ -150,7 +155,7 @@ Bcash Greece has published [videos with instructions on how to use their Bitcoin
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2019-03-30
+Last update: 2019-04-01
 
 <!-- <div class="posts">
   {% for post in site.posts %}

@@ -90,6 +90,11 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
         <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>
     <tr>
+        <td>Πειραιάς</td>
+        <td><a href="https://goo.gl/maps/hCCcRJWHTLx">Σαχτούρη 56, Πειραιάς 18537</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
         <td>Γλυφάδα, Αττική</td>
         <td><a href="https://goo.gl/maps/VwQbWgmdcbk">Εμπορικό κέντρο DAMA, Γεννηματά 59-61, Γλυφάδα 16562</a></td>
         <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
@@ -301,7 +306,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2019-03-30
+Τελευταία ενημέρωση: 2019-04-01
 
 <!-- <div class="posts">
   {% for post in site.posts %}
