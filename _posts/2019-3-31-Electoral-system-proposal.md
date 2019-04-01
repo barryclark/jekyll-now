@@ -46,7 +46,12 @@ So I come up with a proposal to do away with the confusing method, to cover the 
 
 
 ```python
+	test = 45
+```
+
+```python
 def Jefferson_method(df_copy,max_seat = 500):
+
     """implement highest average method. This calculation is inspried by the Jefferson method (attributed to Thomas Jefferson).
     The change is we remove votes that is attributed to district seats out first, and calculate the voters unaccounted for by district seats, 
     by allocating party lists to the party."""
