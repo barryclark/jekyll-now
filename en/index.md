@@ -41,83 +41,83 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
     </tr>
     <tr>
         <td>Acharnes, Attica</td>    
-        <td><a href="https://goo.gl/maps/HxSWFsnH5kR2">Orizontes bookshop, Thiveou Ioannou 20, Acharnes 13671</a></td>
+        <td><a href="https://goo.gl/maps/HxSWFsnH5kR2" rel="nofollow">Orizontes bookshop, Thiveou Ioannou 20, Acharnes 13671</a></td>
         <td> </td>
     </tr>
     <tr>
         <td>Acharnes, Attica</td>
-        <td><a href="https://goo.gl/maps/gKL1bEheaQ32">Aegean gas station, Dekelias 94, Acharnes 13671</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/gKL1bEheaQ32" rel="nofollow">Aegean gas station, Dekelias 94, Acharnes 13671</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Athens</td>
-        <td><a href="https://goo.gl/maps/bdipXzwYhHU2">Dimitrakopoulou 84, Koukaki, Athens 11741</a></td>
-        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/bdipXzwYhHU2" rel="nofollow">Dimitrakopoulou 84, Koukaki, Athens 11741</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Athens</td>
-        <td><a href="https://goo.gl/maps/BUVquX7zwWL2">Pireos 68, Athens 10436</a></td>
-        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/BUVquX7zwWL2" rel="nofollow">Pireos 68, Athens 10436</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Piraeus</td>
-        <td><a href="https://goo.gl/maps/hCCcRJWHTLx">Sachtouri 56, Piraeus 18537</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/hCCcRJWHTLx" rel="nofollow">Sachtouri 56, Piraeus 18537</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Glyfada, Attica</td>
-        <td><a href="https://goo.gl/maps/VwQbWgmdcbk">DAMA shopping centre, Genimmata 59-61, Glyfada 16562</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/VwQbWgmdcbk" rel="nofollow">DAMA shopping centre, Genimmata 59-61, Glyfada 16562</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Vrilissia, Attica</td>
-        <td><a href="https://goo.gl/maps/vcPqykfBvCx">New Yorkers Fitness Club, 15A, 25is Martiou str, Vrilissia 15235</a></td>
-        <td>+30 6944225521 <a href="https://www.facebook.com/groupbtcgreece/">GroupBTC Greece</a></td>
+        <td><a href="https://goo.gl/maps/vcPqykfBvCx" rel="nofollow">New Yorkers Fitness Club, 15A, 25is Martiou str, Vrilissia 15235</a></td>
+        <td>+30 6944225521 <a href="https://www.facebook.com/groupbtcgreece/" rel="nofollow">GroupBTC Greece</a></td>
     </tr>
     <tr>
         <td>Agia Paraskevi, Attica</td>
-        <td><a href="https://goo.gl/maps/rJmzphtnPj62">Solomou 22, Agia Paraskevi 15341</a> 24h access</td>
-        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/rJmzphtnPj62" rel="nofollow">Solomou 22, Agia Paraskevi 15341</a> 24h access</td>
+        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Thessaloniki</td>
-        <td><a href="https://goo.gl/maps/G8WhqZoNpKo">Anagenniseos 7, Thessaloniki 54627</a></td>
-        <td>+30 6941412894 <a href="http://thesscash.gr">Thess Cash</a> (a Bcash Greece ATM)</td>
+        <td><a href="https://goo.gl/maps/G8WhqZoNpKo" rel="nofollow">Anagenniseos 7, Thessaloniki 54627</a></td>
+        <td>+30 6941412894 <a href="http://thesscash.gr" rel="nofollow">Thess Cash</a> (a Bcash Greece ATM)</td>
     </tr>
     <tr>
         <td>Heraklion</td>
-        <td><a href="https://goo.gl/maps/d84PexJUYzC2">Kalokairinou 64, Heraklion 71201, Crete</a></td>
-        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/d84PexJUYzC2" rel="nofollow">Kalokairinou 64, Heraklion 71201, Crete</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Myconos</td>
-        <td><a href="https://goo.gl/maps/qWNWUbEVzd42">Wine bar restaurant Vinos, Kalogera 4, Myconos 84600</a></td>
-        <td>+30 6940262025 <a href="https://www.winebarvinos.com">Vinos Bitcoin ATM</a> (a GroupBTC ATM)</td>
+        <td><a href="https://goo.gl/maps/qWNWUbEVzd42" rel="nofollow">Wine bar restaurant Vinos, Kalogera 4, Myconos 84600</a></td>
+        <td>+30 6940262025 <a href="https://www.winebarvinos.com" rel="nofollow">Vinos Bitcoin ATM</a> (a GroupBTC ATM)</td>
     </tr>
     <tr>
         <td>Myconos</td>
-        <td><a href="https://goo.gl/maps/3r5JHyvzuJM2">MyMall shopping centre, Myconos</a> 24h access</td>
-        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/3r5JHyvzuJM2" rel="nofollow">MyMall shopping centre, Myconos</a> 24h access</td>
+        <td>+30 6998499499 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Larisa</td>
-        <td><a href="https://goo.gl/maps/LDGupm9kXQ42">Iosonos 20, Larisa 41223</a></td>
-        <td>+30 6975609542 <a href="http://www.bitcoinspot.gr">Bitcoin Spot</a> (a Bcash Greece ATM)</td>
+        <td><a href="https://goo.gl/maps/LDGupm9kXQ42" rel="nofollow">Iosonos 20, Larisa 41223</a></td>
+        <td>+30 6975609542 <a href="http://www.bitcoinspot.gr" rel="nofollow">Bitcoin Spot</a> (a Bcash Greece ATM)</td>
     </tr>
     <tr>
         <td>Kalamata</td>
-        <td><a href="https://goo.gl/maps/b7QLuFkTT512">Nikitara 3, Kalamata 24100</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/b7QLuFkTT512" rel="nofollow">Nikitara 3, Kalamata 24100</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Patras</td>
-        <td><a href="https://goo.gl/maps/tDcGDb5hxoD2">Agiou Andreou 1, Patras 262 23</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/tDcGDb5hxoD2" rel="nofollow">Agiou Andreou 1, Patras 262 23</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Kastoria</td>
-        <td><a href="https://goo.gl/maps/QoxJMHP6UPK2">Mitropoleos 2, Kastoria 521 00</a></td>
-        <td>+30 6941412894 <a href="https://bcash.gr">Bcash Greece</a></td>
+        <td><a href="https://goo.gl/maps/QoxJMHP6UPK2" rel="nofollow">Mitropoleos 2, Kastoria 521 00</a></td>
+        <td>+30 6941412894 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Ioannina</td>
