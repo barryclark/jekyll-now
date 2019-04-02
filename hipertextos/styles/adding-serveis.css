@@ -29,6 +29,7 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #serveis-pre h2 {margin-bottom:6px;}
 #serveis-pre h4 {text-align:right;margin-right:21%;}
 #section-web {background-image: url("/img/imac.jpf");background-position:fixed;image-rendering: crisp-edges;}
+#section-web h2 {margin-bottom:0px;line-height:.96em;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;margin-top:-30px;}
 #section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
 #section-music {background-image: url("/img/music.jpf");background-position:bottom center;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
