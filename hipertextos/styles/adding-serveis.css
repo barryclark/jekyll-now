@@ -40,7 +40,7 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {padding-top:32px;background:linear-gradient(rgba(80,80,80,1), rgba(60,60,60,.98), rgba(50,50,50,.9));color:var(--color-white);text-align:justify;}
 #web-top img {margin-right:6px;}
-#web-icons h3 {margin-bottom:12px;}
+#web-icons h3 {}
 #web-top p {max-width:90%;}
 #web-top h4 {font-weight: lighter;font-size:1.6em;margin-bottom:12px;
     border-top:thin solid var(--color-hardgrey) ;padding-top:2px;max-wdth:99%;}
