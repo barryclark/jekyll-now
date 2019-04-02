@@ -6,7 +6,7 @@ If you've used our friend referral system, then you know that every Packeter mak
 
 Starting today, you will earn 50% of the lifetime earnings from all the Packeters you refer!
 
-That's over 15 times more then the current referral bonus.
+That's over 15 times more than the current referral bonus.
 
 This promotion will last through the end of the month so start taking advantage of it now. 
 
