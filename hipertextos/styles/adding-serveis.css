@@ -38,11 +38,11 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
 #resumed-web em {padding:1em 0 1em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
-#web-icons {padding-top:32px;background:linear-gradient(rgba(80,80,80,1), rgba(60,60,60,.98), rgba(50,50,50,.9));color:var(--color-white);text-align:justify;}
+#web-icons {padding-top:32px;background:linear-gradient(rgba(80,80,80,1), rgba(60,60,60,.98), rgba(50,50,50,.9));color:var(--color-white);}
 #web-top img {margin-right:6px;}
-#web-icons h3 {}
+#web-icons h3 {text-align:justify;}
 #web-top p {max-width:90%;}
-#web-top h4 {font-weight: lighter;font-size:1.6em;margin-bottom:12px;
+#web-top h4 {font-weight: lighter;font-size:1.6em;margin-bottom:12px;text-align:right;
     border-top:thin solid var(--color-hardgrey) ;padding-top:2px;max-wdth:99%;}
 #web-top em a {padding:8px 12px 8px 12px;margin-top:12px;text-decoration:none;background-color:transparent;color:var(--color-soft);border-radius:6px;}
 #resumed-web {color:var(--color-hardgrey);background:rgba(20,20,20,.95);margin-bottom:-50px;}
