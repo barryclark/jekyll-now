@@ -46,7 +46,7 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
     border-top:thin solid var(--color-hardgrey) ;padding-top:2px;max-wdth:99%;}
 #web-top em a {padding:8px 12px 8px 12px;margin-top:12px;text-decoration:none;background-color:transparent;color:var(--color-soft);border-radius:6px;}
 #resumed-web {color:var(--color-hardgrey);background:rgba(20,20,20,.95);margin-bottom:-50px;}
-
+.flashed {float:right;}
 
 #resumed-paint svg {width:23px;}
 #resumed-paint {color:var(--color-translucentwhite);}
