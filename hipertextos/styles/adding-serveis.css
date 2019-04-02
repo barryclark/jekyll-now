@@ -38,13 +38,13 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
 #resumed-web em {padding:1em 0 1em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
-#web-icons {padding-top:32px;background:linear-gradient(rgba(80,80,80,1), rgba(60,60,60,.98), rgba(50,50,50,.9));color:var(--color-white);}
+#web-icons {text-align:justify;background:linear-gradient(rgba(80,80,80,1), rgba(60,60,60,.98), rgba(50,50,50,.9));color:var(--color-white);}
 #web-top img {margin-right:6px;}
-#web-icons h3 {text-align:justify;}
-#web-top p {max-width:90%;text-align:justify;}
-#web-top h4 {font-weight: lighter;font-size:1.6em;margin-bottom:12px;text-align:right;
-    border-top:thin solid var(--color-hardgrey) ;padding-top:2px;max-wdth:99%;}
-#web-top em a {padding:8px 12px 8px 12px;margin-top:12px;text-decoration:none;background-color:transparent;color:var(--color-soft);border-radius:6px;}
+#web-icons h3 {line-height: 1em; margin-bottom:0px;}
+#web-top p {max-width:96%; text-align:justify;}
+#web-top h4 {font-weight: lighter;font-size:1.1em;line-height: .6em;padding-bottom:12px;margin-bottom:12px;text-align:left;
+    border-bottom:thin solid var(--color-hardgrey) ;max-width:96%;}
+#web-top em a {padding:6px 16px 8px 16px; margin-top:6px;text-decoration:none;background-color:transparent;color:var(--color-soft);border-radius:6px;}
 #resumed-web {color:var(--color-hardgrey);background:rgba(20,20,20,.95);margin-bottom:-50px;}
 
 #resumed-paint svg {width:23px;}
