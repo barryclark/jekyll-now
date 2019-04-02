@@ -6,12 +6,6 @@ permalink: /events/
 
 ### 2019
 
-March 28: Cloud Native: Delivering Effective Warehouse Solutions, London
-* **Navigating the cloud native ecosystem for end users**
-
-April 1: OpenInfraDays UK, London
-* **Navigating the cloud native ecosystem for end users**
-
 April 20: TECH(K)NOW Day, Taipei
 * **Open source for first timers** (talk and workshop)
 
