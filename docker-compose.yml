@@ -1,0 +1,11 @@
+version: '3'
+services:
+  blog2:
+    image: jekyll/builder
+    ports:
+      - 4000:4000
+    volumes:
+      - ./:/srv/jekyll/blog
+    command: >
+      sh -c "cd blog
+      && jekyll serve"
