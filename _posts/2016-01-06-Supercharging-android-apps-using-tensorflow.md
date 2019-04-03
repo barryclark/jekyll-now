@@ -5,7 +5,9 @@ title: >-
   Supercharging Android Apps With TensorFlow (Google's Open Source Machine
   Learning Library)
 ---
-
+<span class="discussion">Discussion:
+<a href="https://www.reddit.com/r/androiddev/comments/3zpkb6/supercharging_android_apps_with_tensorflow/" class="">Reddit r/Android (80 points, 16 comments)</a>
+</span>
 
 
 
@@ -24,7 +26,7 @@ title: >-
 
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning library. This is a big deal for three reasons:
 
-1. Machine Learning expertise: Google is a dominant force in machine learning. Its prominence in search owes a lot to the strides it achieved in machine learning. 
+1. Machine Learning expertise: Google is a dominant force in machine learning. Its prominence in search owes a lot to the strides it achieved in machine learning.
 2. Scalability: the announcement noted that TensorFlow was initially designed for internal use and that it's already in production for some live product features.
 3. Ability to run on Mobile.
 
@@ -44,7 +46,7 @@ The Android example page gives you an idea on how to build the app, and ultimate
 
 NOTE: Android 5.0 or later required since the example uses the [Camera2](android.hardware.camera2) package introduced in Android 5.0.
 
-NOTE: if your device runs Android 6.0 or later, you have to install the app with the following command (It gives the app the appropriate permissions it needs to run): 
+NOTE: if your device runs Android 6.0 or later, you have to install the app with the following command (It gives the app the appropriate permissions it needs to run):
 
 ```
 	adb install -r -g /path/to/apk.apk
@@ -84,8 +86,8 @@ The `native` keywords in these method signatures indicate that these methods are
 	TENSORFLOW_METHOD(initializeTensorflow)(...) {
     ...
     }
-    
-    
+
+
 	JNIEXPORT jstring JNICALL
 	TENSORFLOW_METHOD(classifyImageBmp)(...) {
     ...
@@ -110,7 +112,7 @@ And the value of the cell would be the actual value of R or G or B channel for t
 ## The Model
 As you read the example's [README.md](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android), you'll notice that it instructs you to download a zip file containing the TensorFlow model and add it to the `assets` directory. This zip file contains two files that are important for us:
 
-1. `tensorflow_inception_graph.pb`- At 54 MBs unzipped, this file constitutes the majority of the APK size (58 MBs). This is our trained machine learning model and where the magic comes from. It's a pre-built TensorFlow [Graph](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Graph) describing the exact operations needed to compute a classification from input image data. This Graph is serialized and encoded into binary with Google's [Protocol Buffers](https://developers.google.com/protocol-buffers/?hl=en) so it can be deserialized across different platforms (think of it as a binary-encoded JSON file). 
+1. `tensorflow_inception_graph.pb`- At 54 MBs unzipped, this file constitutes the majority of the APK size (58 MBs). This is our trained machine learning model and where the magic comes from. It's a pre-built TensorFlow [Graph](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Graph) describing the exact operations needed to compute a classification from input image data. This Graph is serialized and encoded into binary with Google's [Protocol Buffers](https://developers.google.com/protocol-buffers/?hl=en) so it can be deserialized across different platforms (think of it as a binary-encoded JSON file).
 
 2. `imagenet_comp_graph_label_strings.txt`- this contains the 1000 classifications that the output of the model corresponds to (e.g. "vending machine", "water bottle", "coffee mug"). These classifications are [defined](http://image-net.org/challenges/LSVRC/2014/browse-synsets) by the ImageNet Large Scale Visual Recognition Challenge which the model was built to compete in.
 

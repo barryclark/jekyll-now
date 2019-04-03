@@ -3,6 +3,9 @@ layout: prediction_post
 published: True
 title: A Gentle Visual Intro to Data Analysis in Python Using Pandas
 ---
+<span class="discussion">Discussions:
+<a href="https://news.ycombinator.com/item?id=18351685" class="hn-link">Hacker News (195 points, 51 comments)</a>, <a href="https://www.reddit.com/r/Python/comments/9scznd/a_gentle_visual_intro_to_data_analysis_in_python/" class="">Reddit r/Python (140 points, 18 comments)</a>
+</span>
 
 
 If you're planning to learn data analysis, machine learning, or data science tools in python, you're most likely going to be using the wonderful <a href="https://pandas.pydata.org/">pandas</a> library. Pandas is an open source library for data manipulation and analysis in python.

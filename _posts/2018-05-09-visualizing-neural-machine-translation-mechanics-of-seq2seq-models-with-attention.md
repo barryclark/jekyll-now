@@ -3,7 +3,9 @@ layout: prediction_post
 published: True
 title: Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
 ---
-
+<span class="discussion">Translations: <a href="https://blog.csdn.net/qq_41664845/article/details/84245520">Chinese (Simplified)</a>, <a href="https://nlpinkorean.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/">Korean</a></span>
+<br />
+<span class="discussion">Watch: MIT's <a href="https://youtu.be/53YvP6gdD7U?t=335">Deep Learning State of the Art</a> lecture referencing this post</span>
 
 **May 25th update:** New graphics (RNN animation, word embedding graph), color coding, elaborated on the final attention example.
 

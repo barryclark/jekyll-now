@@ -4,6 +4,14 @@ published: True
 title: The Illustrated Word2vec
 ---
 
+<span class="discussion"> Discussions:
+<a href="https://news.ycombinator.com/item?id=19498356" class="hn-link">Hacker News (347 points, 37 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/b60jtg/p_the_illustrated_word2vec/" class="">Reddit r/MachineLearning (151 points, 19 comments)</a>
+</span>
+<br />
+<span class="discussion">
+Translations: <a href="https://habr.com/ru/post/446530/">Russian</a>
+</span>
+
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/word2vec/word2vec.png"/>
