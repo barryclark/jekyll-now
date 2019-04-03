@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 16px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -204,7 +204,7 @@ img {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
-
+  font-family: $helveticaNeue;
   @include mobile {
     margin: 3px 0;
   }
