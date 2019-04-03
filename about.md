@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I do code. As many of those who loves tech, I use my curiosity to gather knowledge. 
+And `YES` - I love riddles and logic puzzles. I am happy to share my thoughts here.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Last 2 years, my main focus of interests are data streaming, integrations and clouds. 
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[nikita.zhevnitskiy@gmail.com](mailto:nikita.zhevnitskiy@gmail.com)
