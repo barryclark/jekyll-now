@@ -137,6 +137,11 @@ sup {
   top: -0.5em;
 }
 
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
