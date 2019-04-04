@@ -39,7 +39,8 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #section-web, #section-brand, #section-music {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-music svg {width:64px;}
 #resumed-web svg {width:26px;}
-#resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
+#resumed-web {text-align:center!important;font-size:15px;}
+#resumed-web div {}
 #resumed-web em {padding:1em 0 1em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {text-align:justify;background:linear-gradient(rgba(80,80,80,1), rgba(60,60,60,.98), rgba(50,50,50,.9));
@@ -50,7 +51,7 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #web-top h4 {font-weight: lighter;font-size:1em;line-height: .7em;padding-bottom:8px;margin-bottom:6px;text-align:left;
     border-bottom:thin solid var(--color-hardgrey) ;max-width:96%;}
 #web-top em a {padding:5px 12px 5px 12px;font-size:.9em; margin-top:6px;text-decoration:none;background-color:transparent;color:var(--color-soft);border-radius:6px;}
-#resumed-web {color:var(--color-hardgrey);background:rgba(20,20,20,.95);}
+#resumed-web {color:var(--color-hardgrey);}
 
 #resumed-paint svg {width:23px;}
 #resumed-paint {color:var(--color-translucentwhite);}
