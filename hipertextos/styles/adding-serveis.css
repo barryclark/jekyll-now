@@ -35,8 +35,12 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #browser-ios svg {max-width:28px;color:rgba(130,130,130,.5) ;margin:0 12px 0 0;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;margin-top:-30px;}
 #section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
-#section-music {background:linear-gradient(rgba(120,30,80,1),rgba(20,50,150,1));border:none;text-align:center;}
-#section-web, #section-brand, #section-music {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
+#section-music {background:linear-gradient(rgba(216,80,162,1),rgba(193,100,160,.9),rgba(97,149,209,1));
+    color:var(--color-white) ;border:none;text-align:center;}
+#section-web, #section-brand, #section-music {
+    background-position: top center;background-attachment: fixed;
+    background-size: cover;background-repeat: no-repeat;
+    border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-music svg {width:64px;}
 #resumed-web svg {width:42px;}
 #resumed-web {font-size:17px;line-height:1.6em;letter-spacing: -0.032em;
