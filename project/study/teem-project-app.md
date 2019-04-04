@@ -5,7 +5,7 @@ permalink: /projects/study/teem-project-app
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/TEEM-web-app](https://github.com/NikitaZhevnitskiy/TEEM-web-app)  
+[https://github.com/zhenik/TEEM-web-app](https://github.com/zhenik/TEEM-web-app)  
  
 ****
 

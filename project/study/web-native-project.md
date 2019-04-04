@@ -5,7 +5,7 @@ permalink: /projects/study/web-native-project
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/web-assignment](https://github.com/NikitaZhevnitskiy/web-assignment)  
+[https://github.com/zhenik/web-assignment](https://github.com/zhenik/web-assignment)  
  
 ****
 

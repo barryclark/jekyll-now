@@ -5,7 +5,7 @@ permalink: /projects/study/tic-tac-toe-game
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/TicTacToe_android](https://github.com/NikitaZhevnitskiy/TicTacToe_android)  
+[https://github.com/zhenik/TicTacToe_android](https://github.com/zhenik/TicTacToe_android)  
  
 ****
 

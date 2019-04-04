@@ -5,7 +5,7 @@ permalink: /projects/study/coin-portfolio
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/coin-portfolio](https://github.com/NikitaZhevnitskiy/coin-portfolio)  
+[https://github.com/zhenik/coin-portfolio](https://github.com/zhenik/coin-portfolio)  
  
 ****
 

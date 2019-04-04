@@ -5,7 +5,7 @@ permalink: /projects/study/teem-android-app
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/pj_android](https://github.com/NikitaZhevnitskiy/pj_android)  
+[https://github.com/zhenik/pj_android](https://github.com/zhenik/pj_android)  
  
 ****
 

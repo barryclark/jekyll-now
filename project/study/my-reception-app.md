@@ -5,7 +5,7 @@ permalink: /projects/study/my-reception-app
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/myReception](https://github.com/NikitaZhevnitskiy/myReception)  
+[https://github.com/zhenik/myReception](https://github.com/zhenik/myReception)  
  
 ****
 

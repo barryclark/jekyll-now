@@ -5,7 +5,7 @@ permalink: /projects/study/devops
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/devops-exam](https://github.com/NikitaZhevnitskiy/devops-exam)  
+[https://github.com/zhenik/devops-exam](https://github.com/zhenik/devops-exam)  
  
 ****
 

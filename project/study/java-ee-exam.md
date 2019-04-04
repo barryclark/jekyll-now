@@ -5,7 +5,7 @@ permalink: /projects/study/java-ee-exam
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/javaEE_exam](https://github.com/NikitaZhevnitskiy/javaEE_exam)  
+[https://github.com/zhenik/javaEE_exam](https://github.com/zhenik/javaEE_exam)  
  
 ****
 

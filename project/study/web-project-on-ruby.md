@@ -21,7 +21,7 @@ Heroku: [https://westerhub.herokuapp.com/](https://westerhub.herokuapp.com/)
 #### Team:
 - Eva Dahlø ([Github: dem92](https://github.com/dem92))
 - Joakim Jacobsen ([Github: JoakimEJ](https://github.com/JoakimEJ))
-- Nikita Zhevnitskiy ([Github: NikitaZhevnitskiy](https://github.com/NikitaZhevnitskiy))
+- Nikita Zhevnitskiy ([Github: NikitaZhevnitskiy](https://github.com/zhenik))
 
 
 ![1]({{ site.baseurl }}/images/projects/web-project-on-ruby/1.png)

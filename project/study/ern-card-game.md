@@ -5,7 +5,7 @@ permalink: /projects/study/ern-card-game
 ---
 
 ----
-[https://github.com/NikitaZhevnitskiy/ern-card-game](https://github.com/NikitaZhevnitskiy/ern-card-game)  
+[https://github.com/zhenik/ern-card-game](https://github.com/zhenik/ern-card-game)  
  
 ****
 
