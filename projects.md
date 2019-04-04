@@ -22,3 +22,4 @@ permalink: /projects/
 ### Video projects
 * [Island trip]({{ site.baseurl }}/projects/video/island-trip)
 * [Siberia trip]({{ site.baseurl }}/projects/video/siberia-trip)
+* [Promo videos for Paolo]({{ site.baseurl }}/projects/video/promo-paolo)
