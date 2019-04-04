@@ -99,7 +99,7 @@ As we've mentioned already, an encoder receives a list of vectors as input. It p
 <div class="img-div-any-width" markdown="0">
   <img src="/images/t/encoder_with_tensors_2.png" />
   <br />
-  The word at each position passes through a self-encoding process. Then, they each pass through a feed-forward neural network -- the exact same network with each vector flowing through it separately.
+  The word at each position passes through a self-attention process. Then, they each pass through a feed-forward neural network -- the exact same network with each vector flowing through it separately.
 </div>
 
 ## Self-Attention at a High Level
