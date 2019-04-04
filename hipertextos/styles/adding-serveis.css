@@ -42,8 +42,7 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #resumed-web {font-size:16px;line-height:1.6em;letter-spacing: -0.032em;
     color:var(--color-grey);}
 
-#resumed-web div {}
-#resumed-web em {padding:.75em 0 .75em 0;}
+#resumed-web em {padding:1em 0 1em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {text-align:justify;background:linear-gradient(rgba(190,190,190,.3), rgba(200,200,200,1));
     color:var(--color-hardgrey);}
