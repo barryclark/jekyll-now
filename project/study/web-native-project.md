@@ -9,7 +9,7 @@ permalink: /projects/study/web-native-project
  
 ****
 
-![ern-card-game]({{ site.baseurl }}/images/projects/web-native-project/nodereact.jpg)
+![web-native-project]({{ site.baseurl }}/images/projects/web-native-project/nodereact.jpg)
 
 #### Tech stack
 nodeJs, react, react-native, web sockets, mongoDb
