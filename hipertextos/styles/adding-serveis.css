@@ -51,12 +51,10 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {text-align:justify;background:linear-gradient(rgba(190,190,190,.3), rgba(200,200,200,1));
     color:var(--color-hardgrey);}
-#web-top img {border-radius:6px;padding:1px;margin-top: 0px;margin-bottom:0px;}
-#web-top  {text-align:center;}
-#web-top .bcn h4, #web-top .bcn p {text-align:center;}
-#web-icons h3 {border-bottom:thin solid rgba(50,50,50,.1) ;font-size:1.6em;line-height: 1.2em; margin-bottom:0px;}
-#web-top p {font-size:.9em;line-height:1.3em;}
-#web-top h4 {font-weight: lighter;font-size:1.3em;line-height: .8em;padding-bottom:8px;margin-bottom:6px;}
+#web-top img {border-radius:14px;padding:1px;margin-top: -6px;margin-bottom:20px;}
+#web-top  {text-align:justify;}
+#web-icons h3 {border-bottom:thin solid rgba(50,50,50,.1) ;font-size:1.6em;line-height: 1em; padding-left:6px;margin-bottom:0px;}
+#web-top p {font-size:.9em;line-height:1.3em;padding:2px 6px 0 6px;}
 #resumed-paint svg {width:23px;}
 #resumed-paint {color:var(--color-translucentwhite);}
 #resumed-paint h5 {margin: 0 0 6px 0;}
