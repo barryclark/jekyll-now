@@ -31,8 +31,8 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #section-web {background-image: url("/img/imac.jpf");background-position:fixed;image-rendering: crisp-edges;}
 #section-web h2 {line-height:.96em;}
 #section-web h5 {line-height:1.3em;font-weight: normal;}
-#browser-ios {padding:23px 0 36px 0;line-height:2.6em;background:var(--color-black);text-align:center;}
-#browser-ios svg {max-width:32px;color:rgba(130,130,130,.5) ;margin:0 12px 0 0;}
+#browser-ios {padding:12px 0 28px 0;line-height:2.6em;background:var(--color-black);text-align:center;}
+#browser-ios svg {max-width:28px;color:rgba(130,130,130,.5) ;margin:0 12px 0 0;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;margin-top:-30px;}
 #section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
 #section-music {background-image: url("/img/music.jpf");background-position:bottom center;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
@@ -44,7 +44,7 @@ h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {text-align:justify;background:linear-gradient(rgba(80,80,80,1), rgba(60,60,60,.98), rgba(50,50,50,.9));
     color:var(--color-white);}
-#web-top img {margin-right:6px;}
+#web-top img {margin-right:4px;margin-bottom: 0px;}
 #web-icons h3 {font-size:1.6em;line-height: .9em; margin-bottom:0px;}
 #web-top p {font-size:.9em;line-height:1.3em;max-width:96%; text-align:justify;}
 #web-top h4 {font-weight: lighter;font-size:1em;line-height: .7em;padding-bottom:8px;margin-bottom:6px;text-align:left;
