@@ -46,10 +46,12 @@ h3.head-section small {font-size:12px;}
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {text-align:justify;background:linear-gradient(rgba(190,190,190,1), rgba(200,200,200,1));
     color:var(--color-hardgrey);}
-#web-top img {margin-right:4px;margin-bottom: 0px;}
+#web-top img {padding:6px;margin-bottom: 0px;}
+#web-top  {text-align:center;}
+#web-top .bcn h4, #web-top .bcn p {text-align:center;}
 #web-icons h3 {font-size:1.6em;line-height: .9em; margin-bottom:0px;}
-#web-top p {font-size:.9em;line-height:1.3em;max-width:96%; text-align:justify;}
-#web-top h4 {font-weight: lighter;font-size:1.3em;line-height: .7em;padding-bottom:8px;margin-bottom:6px;text-align:left;
+#web-top p {font-size:.9em;line-height:1.3em;max-width:90%;margin-left:2.5%;}
+#web-top h4 {font-weight: lighter;font-size:1.3em;line-height: .8em;padding-bottom:8px;margin-bottom:6px;
     border-bottom:thin solid var(--color-hardgrey) ;max-width:96%;}
 #web-top em a {padding:5px 12px 5px 12px;font-size:.9em; margin-top:6px;text-decoration:none;background-color:transparent;color:var(--color-hardgrey);border-radius:6px;}
 #resumed-web {color:var(--color-grey);}
