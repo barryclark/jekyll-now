@@ -15,7 +15,7 @@ We were inundated for our April Cloud Native London meetup - with a bigger and m
 First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/), [SUSE](https://www.suse.com/) and [Component Soft](https://www.componentsoft.io/)
 
 
-First was a talk on connecting your microservices with Istio, then running HPC Workloads via Jupyter, wrapping up with Codilime’s journey to Kubernetes . 
+First was a talk on connecting your microservices with Istio, then running HPC Workloads via Jupyter, wrapping up with Codilime’s journey to Kubernetes. 
 
 ![Laszlo Budai](https://pbs.twimg.com/media/D3P5DlMWAAIfdYk.jpg)
 
