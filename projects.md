@@ -15,3 +15,4 @@ permalink: /projects/
 * [Tic tac toe game android app]({{ site.baseurl }}/projects/study/tic-tac-toe-game)
 * [Web project on Ruby]({{ site.baseurl }}/projects/study/web-project-on-ruby)
 * [Java ee exam]({{ site.baseurl }}/projects/study/java-ee-exam)
+* [Music quiz]({{ site.baseurl }}/projects/study/music-quiz)
