@@ -39,7 +39,9 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #section-web, #section-brand, #section-music {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-music svg {width:64px;}
 #resumed-web svg {width:32px;}
-#resumed-web {text-align:center!important;font-size:15px;line-height:1.6em;letter-spacing: -0.032em}
+#resumed-web {font-size:16px;line-height:1.6em;letter-spacing: -0.032em;
+    color:var(--color-grey);}
+
 #resumed-web div {}
 #resumed-web em {padding:.75em 0 .75em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
@@ -51,7 +53,6 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #web-icons h3 {border-bottom:thin solid rgba(50,50,50,.1) ;font-size:1.6em;line-height: 1.2em; margin-bottom:0px;}
 #web-top p {font-size:.9em;line-height:1.3em;}
 #web-top h4 {font-weight: lighter;font-size:1.3em;line-height: .8em;padding-bottom:8px;margin-bottom:6px;}
-#resumed-web {color:var(--color-grey);}
 
 #resumed-paint svg {width:23px;}
 #resumed-paint {color:var(--color-translucentwhite);}
