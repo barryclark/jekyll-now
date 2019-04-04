@@ -15,3 +15,11 @@ permalink: /projects/
 * [Tic tac toe game android app]({{ site.baseurl }}/projects/study/tic-tac-toe-game)
 * [Web project on Ruby]({{ site.baseurl }}/projects/study/web-project-on-ruby)
 * [Java ee exam]({{ site.baseurl }}/projects/study/java-ee-exam)
+* [Music quiz]({{ site.baseurl }}/projects/study/music-quiz)
+* [Tower defence game]({{ site.baseurl }}/projects/study/tower-defence-game)
+* [Ball game]({{ site.baseurl }}/projects/study/ball-game)
+
+### Video projects
+* [Island trip]({{ site.baseurl }}/projects/video/island-trip)
+* [Siberia trip]({{ site.baseurl }}/projects/video/siberia-trip)
+* [Promo videos for Paolo]({{ site.baseurl }}/projects/video/promo-paolo)
