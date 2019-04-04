@@ -22,6 +22,7 @@
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
 /* Serveis */
+.precedent {text-align:left;}
 h3.head-section {font-size:1.8em;font-weight:lighter ;margin-bottom:-12px;}
 h4.head-section {font-size:1.5em; margin-bottom:23px;}
 #serveis-pre {text-align:center;box-shadow:inset 0 90px 80px #eee;
