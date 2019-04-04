@@ -16,3 +16,4 @@ permalink: /projects/
 * [Web project on Ruby]({{ site.baseurl }}/projects/study/web-project-on-ruby)
 * [Java ee exam]({{ site.baseurl }}/projects/study/java-ee-exam)
 * [Music quiz]({{ site.baseurl }}/projects/study/music-quiz)
+* [Tower defence game]({{ site.baseurl }}/projects/study/tower-defence-game)
