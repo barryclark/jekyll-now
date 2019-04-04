@@ -49,7 +49,7 @@ Finally Tomasz Madycki from CodiLime gave us a talk on ["Our journey to Kubernet
 
 ## Cloud Native London May
 
-The next meetup is on Wednesday 1st May, and joining us are speakers from Microsoft, ForgeRock and Finimize. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/257909863/). We’ll be back at Monzo for the May meetup.
+The next meetup is on Wednesday 1st May, and joining us are speakers from Microsoft, ForgeRock and Finimize. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/257909863/) We’ll be back at Monzo for the May meetup.
 
 See you next month!
 
