@@ -26,7 +26,7 @@ Laszlo Budai from Component Soft gave a talk about ["Istio – connect your micr
 * Is securing service-to-service communication of your #CloudNative application a headache for you? Not anymore! In my talk at #CludNativeLon I have demonstrated how Istio (istio.io) provides a secure communication channel between your microservices. Want to know more? Check this out: https://bit.ly/2uJzalx.
 
 
-![Christopher Woods](https://pbs.twimg.com/media/D3P_7a3XsAIg-QH.jpg)
+![Christopher Woods](https://pbs.twimg.com/media/D3QLmOUXkAA3zUF.jpg)
 
 Following that, Dr Christoper Woods from Bristol University discussed ["Running HPC Workloads via Jupyter using Kubernetes and Fn serverless functions"](https://skillsmatter.com/skillscasts/13710-running-hpc-workloads-via-jupyter-using-kubernetes-and-fn-serverless-functions), mentioning that:
 
