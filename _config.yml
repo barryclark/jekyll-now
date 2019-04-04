@@ -6,7 +6,7 @@
 name: Testing With Fun
 
 # Short bio or description (displayed in the header)
-description: Learning, practicing and sharing testing with fun.
+description: Learning, practicing and sharing testing with fun. 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/39122808?s=40&v=4
@@ -21,12 +21,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: https://github.com/Luke-yuliu
+  github: Luke-yuliu
   instagram:
-  linkedin: https://www.linkedin.com/in/lukeyuliu/
+  linkedin: lukeyuliu
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: https://twitter.com/yuliu_luke
+  twitter: yuliu_luke
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
