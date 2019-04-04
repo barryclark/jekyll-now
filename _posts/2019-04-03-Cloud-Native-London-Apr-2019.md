@@ -23,7 +23,7 @@ Laszlo Budai from Component Soft gave a talk about ["Istio – connect your micr
 
 * Component Soft is an IT training and consulting company focusing on open source cloud and cloud native technologies and offering Docker, Kubernetes and Istio trainings in London, Berlin, Budapest as well as in live online and private class format in whole Europe.
 * Istio (istio.io), an open source service mesh, transparently integrates into your #CloudNative application and will provide you a bunch of nice features like intelligent routing, end-to-end authentication, access control, observability etc. You can learn more about it at https://bit.ly/2uJzalx.
-* Is securing service-to-service communication of your #CloudNative application a headache for you? Not anymore! In my talk at #CludNativeLon I have demonstrated how Istio (istio.io) provides a secure communication channel between your microservices. Want to know more? Check this out: https://bit.ly/2uJzalx.
+* Is securing service-to-service communication of your #CloudNative application a headache for you? Not anymore! In my talk at #CloudNativeLon I have demonstrated how Istio (istio.io) provides a secure communication channel between your microservices. Want to know more? Check this out: https://bit.ly/2uJzalx.
 
 
 ![Christopher Woods](https://pbs.twimg.com/media/D3QLmOUXkAA3zUF.jpg)
