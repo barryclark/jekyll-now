@@ -12,6 +12,9 @@ April 20: TECH(K)NOW Day, Taipei
 April 29: Google Developer Group Cloud, London
 * **Navigating the cloud native ecosystem for end users**
 
+May 8: Cloud Native Manchester
+* **Introduction to the CNCF**
+
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 * **Keynote**
 * **CNCF End User Awards**
