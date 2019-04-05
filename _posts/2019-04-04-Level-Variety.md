@@ -36,4 +36,4 @@ It look like you have to somehow push the cube from the pipe or the cube on top 
 
 # Time invested
 
-Time: 3h
+Tim: 3h
