@@ -13,6 +13,8 @@ April 29: Google Developer Group Cloud, London
 * **Navigating the cloud native ecosystem for end users**
 
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
+* **Keynote**
+* **CNCF End User Awards**
 * **Navigating the cloud native ecosystem for end users**
 
 June 23 - 27: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
