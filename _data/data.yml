@@ -85,6 +85,14 @@
   category_en: Gaming center
   location_gr: Άλιμος, Αττική, Ελλάδα
   location_en: Alimos, Attica, Greece
+  
+- company_gr: u_m@d
+  company_en: u_m@d
+  url: https://www.facebook.com/U_mad-Internet-Sports-Cafe-856396714483027/
+  category_gr: Internet sports cafe
+  category_en: Internet sports cafe
+  location_gr: Νέα Σμύρνη, Αττική, Ελλάδα
+  location_en: Nea Smyrni, Attica, Greece
 
 - company_gr: daskaloi.gr
   company_en: daskaloi.gr
@@ -301,6 +309,14 @@
   category_en: Gift shop
   location_gr: Ρέθυμνο, Κρήτη, Ελλάδα
   location_en: Rethymno, Crete, Greece
+
+- company_gr: 35°North
+  company_en: 35°North
+  url: https://35north.eu
+  category_gr: Εξαιρετικό παρθένο ελαιόλαδο
+  category_en: Extra virgin olive oil
+  location_gr: Σητεία, Κρήτη, Ελλάδα
+  location_en: Sitia, Crete, Greece
 
 - company_gr: Ειρηναίος Ρουστάς
   company_en: Irinaios Roustas
