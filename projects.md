@@ -3,8 +3,11 @@ layout: projects
 title: Projects
 permalink: /projects/
 ---
+### Contributions
+* [kafka-steward]({{ site.baseurl }}/projects/contributions/kafka-steward)
 
 ### Study projects
+* [Bachelor thesis]({{ site.baseurl }}/projects/study/bachelor-thesis)
 * [Ern card game]({{ site.baseurl }}/projects/study/ern-card-game)
 * [Coin portfolio]({{ site.baseurl }}/projects/study/coin-portfolio)
 * [Web native project]({{ site.baseurl }}/projects/study/web-native-project)
