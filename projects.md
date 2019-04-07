@@ -5,6 +5,7 @@ permalink: /projects/
 ---
 ### Contributions
 * [kafka-steward]({{ site.baseurl }}/projects/contributions/kafka-steward)
+* [amqp-helper]({{ site.baseurl }}/projects/contributions/amqp-helper)
 
 ### Study projects
 * [Bachelor thesis]({{ site.baseurl }}/projects/study/bachelor-thesis)
