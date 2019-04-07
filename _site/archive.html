@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Play pod - Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="fanap Soft" /></head>
+
+
+<script src="/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+
+<body><header class="main_header clearfix">
+    <div class="column_large_8 column_large_push_2">
+        <div class="row">
+            <div class="logo column_large_1">
+                <img src="http://localhost:4000/assets/img/logo.png" alt="">
+            </div>
+            <div class="languge column_large_2 left">
+                <input type="text" id="search-input" class="input" onkeydown="changeView()" placeholder="جستجو ...">
+                <!-- <select name="" id="" class="input">
+                    <option value="">فارسی</option>
+                    <option value="">انگلیسی</option>
+
+                </select> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="column_large_12 header_nav">
+                <ul>
+                    <li class="">
+
+                        <a href='http://localhost:4000'>صفحه اصلی</a>
+                    </li>
+
+                    <li>
+                        <a href="http://localhost:4000/aboutus.html">درباره ما</a>
+                    </li>
+
+                    <li>
+                        <a href="http://localhost:4000/contactus.html">تماس با ما</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+</header><nav class="main_nav clearfix">
+
+    <ul class="column_large_8 column_large_push_2">
+        
+
+        <li>
+            <a href="http://localhost:4000/category/playPod"> playPod </a>
+        </li>
+        
+
+        <li>
+            <a href="http://localhost:4000/category/io"> io </a>
+        </li>
+        
+
+      
+    </ul>
+</nav>
+<script>
+    function changeView() {
+
+        if (document.getElementById("search-input").value) {
+            document.getElementById("search_box").style.display = "none";
+            document.getElementById("main_div").style.display = "block";
+            console.log("none",document.getElementById("search-input").value);
+        }
+        else {
+            document.getElementById("search_box").style.display = "block";
+            document.getElementById("main_div").style.display = "none";
+            console.log|("block",document.getElementById("search-input").value);
+         
+
+        }
+    }
+</script><div class="main column_large_8 column_large_push_2 clearfix">
+    <section class="all_news search_box" id="search_box">
+      <header class="margin_top">
+        <h3>
+          نتایج جستجو
+        </h3>
+      </header>
+      <div class="row" id="results-container">
+
+
+
+      </div>
+
+    </section>
+  </div>
+  <div class="main" id="main_div">
+    <main class="main column_large_8 column_large_push_2 clearfix">
+<!-- <h1>آرشیو  'archive'</h1> -->
+
+<section class="all_news">
+  <div class="row">
+    </div>
+  <!-- <div class="loadmore">
+    <a href="">محتوای بیشتر</a>
+  </div> -->
+</section>
+</main>
+  </div><footer class="main_footer column_large_12">
+  <p>@fanap Soft</p>
+</footer>
+</body>
+<script src="simple-jekyll-search.min.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: './search.json',
+    searchResultTemplate: '   <div class="column_large_4">  <figure class="news_box">            <div class="img">              <img src="http://localhost:4000/assets/img/{img_name}" alt="">            </div>            <span class="tag">{tags}</span>            <figcaption>              <h2>{title}</h2>              <span class="time">{date}</span>              <p>                {content}              </p>              <a href="{url}" class="readmore">ادامه مطلب</a>            </figcaption>          </figure>        </div>'
+  })
+
+</script>
+
+</html> 

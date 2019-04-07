@@ -1,0 +1,28 @@
+ks-font-face( name, font-src, weight = false, style = false, formats = local eot woff2 woff truetype svg, svg-font-name = false, local-font-name = false )
+    @font-face
+        font-family: name
+        if weight
+            font-weight: weight
+        if style
+            font-style: style
+        fonts = ()
+        if local in formats
+            local-name = local-font-name ? local-font-name : name
+            push(fonts, 'local("' + local-name + '")')
+        if eot in formats
+            src: url( font-src + ".eot" )
+            push( fonts, 'url("' + font-src + '.eot?#iefix") format("embedded-opentype")' )
+        if woff2 in formats
+            push( fonts, 'url("' + font-src + '.woff2") format("woff2")' )
+        if woff in formats
+            push( fonts, 'url("' + font-src + '.woff") format("woff")' )
+        if opentype in formats || otf in formats
+            push( fonts, 'url("' + font-src + '.otf") format("opentype")' )
+        if truetype in formats || ttf in formats
+            push( fonts, 'url("' + font-src + '.ttf") format("truetype")' )
+        if svg in formats
+            svg-name = svg-font-name ? svg-font-name : name
+            push( fonts, 'url("' + font-src + '.svg#' + svg-name + '") format("svg")' )
+        src: unquote( join( ", ", fonts ) )
+
+font-face = ks-font-face unless ks-no-conflict

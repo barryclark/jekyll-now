@@ -1,0 +1,9 @@
+// split-complements( color )
+// returns split complements variations of given color
+
+ks-split-complements( color )
+    first = spin( color, 150 )
+    second = spin( color, -150 )
+    ( first second )
+
+split-complements = ks-split-complements unless ks-no-conflict

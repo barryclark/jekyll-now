@@ -30,6 +30,20 @@ theme: minima
 plugins:
   - jekyll-feed
 
+gems:
+  - jekyll-archives
+
+
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tags: '/tags/:name/'
+    category: '/category/:name/'
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

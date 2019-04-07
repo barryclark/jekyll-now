@@ -2,8 +2,7 @@
 layout: post
 title:  "Welcome to 2!"
 date:   2019-02-27 12:35:05 +0330
-mainCategory: playPod
-categories: [cat1, mostafa]
+categories: [playPod, io]
 tags: [fun]
 img_name: news2.jpg
 permalink: /2019/02/27/welcom-to-jek

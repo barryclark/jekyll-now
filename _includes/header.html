@@ -37,7 +37,7 @@
 </header>
 {%- if page.url == "/" -%}
 
-<section class="top_news ">
+<section class="top_news clearfix ">
     {%- for lastnews in site.posts limit: 3 -%}
     {% assign index = index | plus: 1 %}
 
@@ -66,11 +66,11 @@
         {% for category in site.categories limit: 8 %}
 
         <li>
-            <a href="{{site.url}}/archive#{{category[0]}}"> {{category[0]}}</a>
+            <a href="{{site.url}}/category/{{category[0]}}"> {{category[0]}} </a>
         </li>
         {% endfor %}
 
-
+      
     </ul>
 </nav>
 <script>

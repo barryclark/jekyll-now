@@ -1,0 +1,18 @@
+
+html
+  direction: global.direction
+  font-family: global.font-family
+  font-size: global.font-size
+  color: global.color
+
+body
+  line-height: global.line-height
+  background-color: global.background-color if global.background-color
+
+a
+  text-decoration: none
+  color: colors.blue
+  &:hover
+    color: @color + global.hover
+  &:focus
+    color: @color + global.focus

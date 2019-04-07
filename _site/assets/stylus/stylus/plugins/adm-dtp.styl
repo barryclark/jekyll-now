@@ -1,0 +1,744 @@
+
+$green= #56c489;
+$warmBrown= #e3d6a9;
+$brown= #7e4311;
+$blue= #378bd3;
+$orange= #fc5f2a;
+$gray= #797979;
+$red= #E64949;
+$mainColor= $red;
+$todayColor= $warmBrown;
+$dtpContainerWidth= 20em;
+$FAfont= inherit;
+$ENfont= sans-serif;
+// RESET
+html 
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+*,
+*:before,
+*:after 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+a:active,
+a:hover 
+    outline: 0;
+
+
+.dtp-trs-3 
+    transition: all .3s;
+
+.dtp-trs-5 
+    transition: all .5s;
+
+
+.dtp-i 
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    fill: inherit;
+    &.dtp-i-90 
+        transform: rotate(90deg);
+    
+    &.dtp-i-180 
+        transform: rotate(180deg);
+    
+    &.dtp-i-270 
+        transform: rotate(270deg);
+    
+
+
+.dtp-ig 
+    // Useless feature
+    display: none
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: table-cell;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+
+    .fakeIcon 
+        opacity: 0;
+        height: 10px;
+        width: 10px;
+    
+    .calendarIcon,
+    .removeIcon,
+    .closeIcon 
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 32px;
+        padding: 0px 8px;
+        padding-top: 2px;
+        transition: all .3s ceaser($easeInOutBack);
+        transform: translateY(0);
+    
+    .calendarIcon 
+        fill: darken($gray, 10%);
+    
+    .closeIcon 
+        background: $blue;
+        fill: white;
+        transform: translateY(-100%);
+    
+
+
+.ADMdtp-calendar-container.rtl 
+    font-family: $FAfont;
+    direction: rtl;
+
+
+.ADMdtp 
+    font-family: $ENfont, sans-serif;
+    line-height: 1.42857143;
+    color: $gray;
+    
+    &.rtl 
+        font-family: $FAfont;
+        .masterInput 
+            input 
+                direction: ltr;
+                @extend $input
+            
+        
+    
+    ng-transclude,
+    .clickOutContainer 
+        position: relative;
+        display: block;
+    
+    
+    hr 
+        height: 0;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #eee;
+    
+    
+    
+
+
+.dtpNewBox 
+    $bgColor: darken(#fff, 3%);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    background: $bgColor;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    direction: ltr;
+    //transform: translateY(100%);
+    &.active 
+        //background: rgba(#fff, .95);
+        //transform: translateY(0);
+        opacity: 1;
+        height: $dtpContainerWidth;
+        .timeSelectIcon 
+            transform: translate(0, 0);
+        
+        .content 
+            opacity: 1;
+        
+    
+    &:after,
+    &:before 
+        content: '';
+        position: absolute;
+        display: block;
+        background: $bgColor;
+        height: 100%;
+        width: 1em;
+        top: 0;
+        z-index: 0;
+    
+    &:after 
+        left: -1em;
+    
+    &:before 
+        right: -1em;
+    
+    
+    &, .content, .calendarIcon 
+        transition: all .5s;
+    
+    
+    .content 
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        opacity: 0;
+    
+    .calendarIcon 
+        $triWidth: 3em;
+        position: absolute;
+        display: block;
+        top: .3em;
+        left: -.5em;
+        z-index: 1;
+        font-size: 1.2em;
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        transform: translate(-$triWidth, -$triWidth);
+        svg 
+            height: 22px;
+            width: 17px;
+            fill: white;
+        
+        &.show 
+            transform: translate(0, 0);
+        
+        &:after 
+            content: '';
+            position: absolute;
+            display: block;
+            top: -6px;
+            left: -6px;
+            width: 0;
+            height: 0;
+            border-top: $triWidth solid $mainColor;
+            border-right: $triWidth solid transparent;
+            z-index: -1;
+        
+    
+
+
+.ADMdtpInput 
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    &[class*="col-"] 
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+    
+    input 
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: inherit;
+        margin: 0;
+        box-shadow: inset 0 1px 1px rgba(black, .075);
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 100%;
+        margin-bottom: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        &:focus 
+            border-color: #66afe9;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        
+    
+
+    input 
+        position: relative;
+        display: block;
+        transition: all .15s;
+        &[disabled] 
+            background: white;
+            color: black;
+        
+    
+    >.removeIcon 
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 2px;
+        z-index: 3;
+        fill: $red;
+        padding: 8px;
+        cursor: pointer;
+        opacity: .7;
+        font-size: 1.1em;
+        height: 34px;
+        &:hover 
+            opacity: 1;
+        
+    
+    &.open 
+        .dtp-ig 
+            .calendarIcon 
+                transform: translateY(100%);
+            
+            .closeIcon 
+                transform: translateY(0);
+            
+        
+    
+    &.disable 
+        input[disabled] 
+            background: darken(white, 5%);
+            color: lighten(black, 50%);
+        
+        >.removeIcon 
+            display: none !important;
+        
+        .dtp-ig 
+            cursor: not-allowed;
+        
+    
+
+
+
+.ADMdtp-box 
+    position: absolute;
+    display: block;
+    width: $dtpContainerWidth;
+    max-width: 100vw;
+    min-height: $dtpContainerWidth;
+    // max-height: 45.25em;
+    padding: 1em;
+    padding-top: 0;
+    border-radius: 5px;
+    background: white;
+    overflow: hidden;
+    z-index: 9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    transition: opacity .5s, height .5s;
+    font-size: 14px;
+    ::-moz-selection 
+        background: transparent;
+    
+    ::selection 
+        background: transparent;
+    
+    &.square 
+        height: $dtpContainerWidth;
+        header 
+            .arrow 
+                &.left 
+                    margin-left: -2em;
+                
+                &.right 
+                    margin-right: -2em;
+                
+            
+        
+        footer 
+            height: 0;
+        
+    
+    .arrow 
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        z-index: 1;
+        top: 0;
+        fill: $gray;
+        direction: ltr;
+        font-size: 1em;
+        width: 38px;
+        height: 100%;
+        padding: 0 .3em;
+        
+        &.left 
+            left: 0;
+            &:hover 
+                margin-left: -.3em;
+                fill: darken($warmBrown, 10%);
+            
+        
+        &.right 
+            right: 0;
+            &:hover 
+                margin-right: -.3em;
+                fill: darken($warmBrown, 10%);
+            
+        
+    
+    header 
+        font-size: 1.2em;
+        position: relative;
+        
+        .yearMonth 
+            width: 100%;
+            position: relative;
+            display: block;
+            text-align: center;
+            padding: 1em 0;
+            z-index: 0;
+            cursor: pointer;
+            color: $gray;
+        
+    
+    .daysNames,
+    .ADMdtpDays 
+        width: 100%;
+        >span 
+            width: calc("100% / 7");
+            display: inline-block;
+            text-align: center;
+        
+    
+    .ADMdtpDays 
+        min-height: 12em;
+    
+    .daysNames 
+        >span 
+            font-weight: bold;
+            cursor: context-menu;
+            color: $mainColor;
+        
+    
+    footer 
+        height: 1.7em;
+        position: relative;
+        overflow: hidden;
+        .today 
+            position: absolute;
+            display: block;
+            width: 6em;
+            height: 1.7em;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: .5em;
+            background: transparent;
+            color: darken($warmBrown, 20%);
+            border: 1px solid transparent;
+            text-align: center;
+            outline: none;
+            font-family: inherit;
+            cursor: pointer;
+            line-height: 1;
+            
+            &:hover 
+                border-color: #f2f2f2;
+            
+            &:active 
+                background: lighten($warmBrown, 20%);
+            
+        
+        .calTypeContainer 
+            position: absolute;
+            display: block;
+            width: 5.5em;
+            height: 1.7em;
+            right: 0;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: .5em;
+            border: 1px solid transparent;
+            
+            &:hover 
+                border-color: #f2f2f2;
+                &.gregorian 
+                    p.jalali 
+                        background: $warmBrown;
+                    
+                
+                &.jalali 
+                    p.gregorian 
+                        background: $warmBrown;
+                    
+                
+            
+            &:active 
+                background: lighten($warmBrown, 20%);
+            
+            p 
+                margin: 0;
+                line-height: 1.4em;
+                text-align: center;
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 0.1em 0;
+                white-space: nowrap;
+                //font-family: $ENfont;
+                color: darken($warmBrown, 20%);
+                transition: all .3s, transform .3s ceaser($easeInOutBack);
+                &.jalali 
+                    transform: translateY(100%);
+                
+            
+            &.jalali 
+                p 
+                    &.gregorian 
+                        transform: translateY(-100%);
+                    
+                    &.jalali 
+                        transform: translateY(0);
+                    
+                
+            
+        
+        .timeSelectIcon 
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            font-size: 1.5em;
+            padding: 0.1em;
+            margin-left: 0.2em;
+            fill: $warmBrown;
+            cursor: pointer;
+            
+            &:hover 
+                fill: darken($warmBrown, 20%);
+            
+            &:active 
+                fill: $warmBrown;
+            
+        
+    
+    hr 
+        margin: .5em 0;
+    
+
+.ADMdtpMonths 
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    &.onYear 
+        span>span 
+            width: calc("25% - 6px");
+        
+    
+    &.rtl 
+        span>span 
+            float: right;
+        
+    
+    span>span 
+        $bgColor:= #ebebeb;
+        $color:= #a8a8a8;
+        width: calc("33% - 6px");
+        text-align: center;
+        position: relative;
+        display: block;
+        float: left;
+        border-radius: .5em;
+        background: $bgColor;
+        color: $color;
+        border: 1px solid darken($bgColor, 5%);
+        padding: 1em 0;
+        margin: 3px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: .9em;
+        
+        &.selected 
+            border-color: darken($bgColor, 10%);
+            background: darken($bgColor, 10%);
+            color: darken($color, 20%);
+        
+        &:hover 
+            border-color: darken($bgColor, 10%);
+            background: darken($bgColor, 10%);
+            color: darken($color, 20%);
+        
+    
+
+.ADMdtpYears 
+    $bgColor:= #ebebeb;
+    $color:= #b9b9b9;
+    color: $color;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 0.2em;
+    p 
+        margin: 0;
+        cursor: pointer;
+        
+        &:before 
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            border-bottom: 2px solid #ECECEC;
+            top: 1em;
+            left: 0;
+            z-index: -1;
+            transition: all .3s;
+        
+        &:hover 
+            color: $mainColor;
+            &:before 
+                border-color: rgba($mainColor, .2);
+            
+        
+    
+    .arrow 
+        margin-top: 0em;
+        height: 35px;
+        width: 35px;
+        opacity: .7;
+        &.right 
+            right: 1.5em;
+        
+        &.left 
+            left: 1.5em;
+        
+    
+
+.ADMdtpTime 
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    span 
+        width: 33%;
+        height: 3em;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.3em;
+        vertical-align: middle;
+        line-height: 3em;
+        &.dtpIcon 
+            cursor: pointer;
+            svg 
+                fill: $mainColor;
+                height: 43px;
+                position: absolute;
+                display: block;
+                width: 100%;
+                top: 0.2em;
+                left: 0;
+                
+            
+            &:hover 
+                svg 
+                    fill: lighten($mainColor, 20%);
+                
+                &:before 
+                    background: lighten($warmBrown, 15%);
+                
+            
+            &:active 
+                svg 
+                    fill: $mainColor;
+                
+                &.up 
+                    margin-top: -3px;
+                
+                &.down 
+                    margin-bottom: -3px;
+                
+            
+            &:before 
+                transition: all .5s;
+                padding: .8em 1em;
+                border-radius: 1em;
+            
+        
+        &.period 
+            font-size: 2em;
+        
+    
+
+.ADMdtpDays 
+    >span 
+        >span 
+            width: 100%;
+            height: 100%;
+            padding: .5em;
+            border-radius: .5em;
+            cursor: pointer;
+            position: relative;
+            display: block;
+            @include backface-visibility(hidden);
+            &.disable 
+                opacity: .5;
+                cursor: context-menu;
+            
+            &:not(.disable) 
+                &:hover 
+                    background: lighten($mainColor, 35%);
+                    color: darken($mainColor, 15%);
+                
+            
+            &.selected 
+                background: $mainColor !important;
+                color: white !important;
+                border-radius: 5em;
+            
+            &.valid 
+                background: lighten($mainColor, 40%);
+                border-radius: 0;
+                &.min 
+                    border-top-left-radius: .5em;
+                    border-bottom-left-radius: .5em;
+                    border-left: 2px solid lighten($mainColor, 25%);
+                
+                &.max 
+                    border-top-right-radius: .5em;
+                    border-bottom-right-radius: .5em;
+                    border-right: 2px solid lighten($mainColor, 25%);
+                
+            
+            &.notValid 
+            &.today 
+                &:after 
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 0;
+                    border-bottom: .7em solid $todayColor;
+                    border-left: .7em solid transparent;
+                
+            
+        
+        //        @for $i from 1 through 50 
+        //            &:nth-child(#$i)>span 
+        //                transition: all .5s, transform .2s #$i*.01s ceaser($easeInOutBack);
+        //            
+        //        
+    
+    &.loading 
+        >span>span 
+            transform: rotateY(90deg) translateX(-10px);
+        
+    
+

@@ -6,10 +6,11 @@ layout: default
   
   
   {% for category in site.categories %}
+
   <section class="category ">
     <header class="clearfix">
-      <h2>بازی های {{ category | first }}</h2>
-      <button>ادامه بیشتر از دسته بندی</button>
+      <h2>بازی های {{ category | first }} </h2>
+      <a href="{{site.url}}/category/{{ category | first }}/">ادامه بیشتر از دسته بندی</a>
     </header>
     <div class="row">
       <div class="column_large_8">

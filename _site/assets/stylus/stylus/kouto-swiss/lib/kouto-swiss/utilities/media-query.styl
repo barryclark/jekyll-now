@@ -1,0 +1,20 @@
+_parse-media-query-conditions( conditions, skipMedia = false )
+    parsed-conditions = ()
+    for condition, index in conditions
+        if index is 0 and skipMedia is false
+            push( parsed-conditions, ( join( " ", condition ) ) )
+        else
+            push( parsed-conditions, "(" + condition[ 0 ] + ": " + condition[ 1 ] + ")" )
+    return unquote( join( " and ", parsed-conditions ) )
+
+ks-media-query( media = all, conditions... )
+    if ks-support-media-queries
+        query = length( media[ 0 ] ) > 1 ? _parse-media-query-conditions( media ) : join( " ", media )
+        if length( conditions )
+            query = query + " and " + _parse-media-query-conditions( conditions, true )
+        @media query
+            {block}
+    else
+        {block}
+
+media-query = ks-media-query unless ks-no-conflict

@@ -1,0 +1,26 @@
+/* leny/kouto-swiss
+ *
+ * /src/stylus/base/text.styl - Base text styles
+ *
+ * coded by leny@flatLand!
+ * started at 07/12/2016
+ */
+
+*
+    -webkit-font-smoothing antialiased
+    -webkit-text-size-adjust 100%
+
+p, li
+    font-size 1.4rem
+
+blockquote
+    position relative
+    margin 0 auto
+    padding-left 4rem
+    font-size 1.6rem
+    font-style italic
+    &::before
+        content "“"
+        absolute top left .5rem
+        font-size 3.2rem
+        color primary

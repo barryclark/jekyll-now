@@ -1,0 +1,19 @@
+_ks-repeating-radial-gradient-processing( current-property, props )
+    if( current-property[ 0 ] == "background-image" )
+        add-property( "background-image", unquote( "-webkit-repeating-radial-gradient(" + join( ",", props ) + ")" ) )
+        unquote( "repeating-radial-gradient(" + join( ",", props ) + ")" )
+    else
+        error( "repeating-radial-gradient() must be used within a 'background-image' property" )
+
+ks-repeating-radial-gradient( props... )
+    if( current-property )
+        _ks-repeating-radial-gradient-processing( current-property, props )
+    else
+        error( "ks-repeating-radial-gradient() must be used within a 'background-image' property" )
+
+unless ks-no-conflict
+    repeating-radial-gradient( props... )
+        if( current-property )
+            _ks-repeating-radial-gradient-processing( current-property, props )
+        else
+            error( "repeating-radial-gradient() must be used within a 'background-image' property" )

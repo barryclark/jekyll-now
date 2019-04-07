@@ -1,0 +1,78 @@
+
+utils_default         = {
+
+  enable                : true
+  responsive            : true
+  
+  classes               : {
+
+    left                  : {
+      float: left !important
+    }
+
+    right                  : {
+      float: right !important
+    }
+    
+    text_center             : {
+      text-align: center !important
+    }
+
+    text_right             : {
+      text-align: right !important
+    }
+    
+    text_left              : {
+      text-align: left !important
+    }
+    
+    margin_top          : {
+      margin-top: global.margin
+    }
+
+    margin_bottom          : {
+      margin-bottom: global.margin
+    }
+
+    padding_top          : {
+      padding-top: global.padding
+    }
+
+    padding_bottom          : {
+      padding-bottom: global.padding
+    }
+
+    padding_not :{
+      padding: 0
+    }
+    
+    clearfix                : {
+      clear: fix
+    }
+    
+    no_wrap: {
+      white-space: nowrap
+    }
+  }
+  
+  // Must be descending because of desktop first
+  media_query     : {
+    large           : none
+    // Medium starting below 970px
+    medium          : 970px
+    // small starting below 750px
+    small           : 750px
+  }
+
+}
+
+merge-rec(utils_default, utils)
+
+if utils_default.enable
+
+  for class, prop in utils_default.classes
+    .{class}
+      prepare: prop
+
+  if utils_default.responsive
+    properties-responsive( utils_default.media_query, utils_default.classes )

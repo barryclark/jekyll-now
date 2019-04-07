@@ -1,0 +1,69 @@
+doctype html
+html( lang="en" )
+    head
+        meta( charset="UTF-8" )/
+        title kouto swiss - A complete CSS framework for Stylus
+
+        meta( name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0, minimal-ui" )/
+
+        link( rel="stylesheet", href="/assets/css/styles.css" )/
+
+        //if lt IE 9
+            script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
+
+    body
+        main.wrapper
+            header.header
+                h1.header__title
+                    include ../assets/svg/logo.svg
+                    include ../assets/svg/logotype.svg
+
+                section.about
+                    h2.about__title The missing CSS toolbox for Stylus
+
+                    div.about__sources.sources
+                        a.sources__link( href="https://github.com/leny/kouto-swiss" )
+                            include ../assets/svg/github-icon.svg
+                            span.sources__text See the code on #[strong.sources__github GitHub]
+
+                    div.about__version.version
+                        span.version__label version #[strong.version__number #{pkg.version}]
+                        = " "
+                        time.version__date( datetime=pkg.version_date )= utils.date_format( pkg.version_date )
+                        = " "
+                        a.version__changelog-link( href="https://github.com/leny/kouto-swiss/blob/master/CHANGELOG.md", target="new" ) see changelog
+
+            .documentation
+                nav#main-nav.main-nav
+                    h2 Navigation
+
+                    ul
+                        each chapter in index.chapters
+                            li
+                                a( href="#" + chapter )= utils.capitalize( chapter )
+                                ul
+                                    each entry in index[ chapter ]
+                                        li
+                                            a( href="#" + chapter + "_" + entry )= entry
+                section.content
+                    h2.hidden Introduction
+
+                    blockquote Stylus is great, but… where’s my Compass/Bourbon?
+
+                    p Here comes #[strong kouto swiss], the missing CSS toolbox for Stylus!
+
+                    p #[strong kouto swiss] gives you a lot of mixins, functions and utilities to code faster, and include the power of #[a( href="//caniuse.com" ) caniuse website] to make your stylesheets fits your compatibility needs.
+
+                each chapter in index.chapters
+                    section.content( id=chapter )
+                        h2= utils.capitalize( chapter )
+
+                        each entry in index[ chapter ]
+                            section.entry( id=chapter + "_" + entry )!= utils.chapter_entry_content( chapter, entry )
+
+            footer.footer
+                .footer__content
+                    p #[strong kouto swiss] is maintained by #[a( href="http://leny.me" ) leny]. Any question? Please tweet #[a( href="http://twitter.com/leny_be" ) @leny_be].
+
+                    p #[strong kouto swiss] is copyright ©2014 #[a( href="https://github.com/leny" ) leny]. It is free software, and may be redistributed under the terms specified in the LICENSE file.
+

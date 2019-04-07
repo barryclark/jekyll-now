@@ -1,0 +1,100 @@
+ks-font-stack( name )
+    if name == "Arial"
+        return unquote( 'Arial, "Helvetica Neue", Helvetica, sans-serif' )
+    if name == "Arial Black"
+        return unquote( '"Arial Black", "Arial Bold", Gadget, sans-serif' )
+    if name == "Arial Narrow"
+        return unquote( '"Arial Narrow", Arial, sans-serif' )
+    if name == "Arial Rounded MT Bold"
+        return unquote( '"Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif' )
+    if name == "Avant Garde"
+        return unquote( '"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif' )
+    if name == "Calibri"
+        return unquote( 'Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif' )
+    if name == "Candara"
+        return unquote( 'Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif' )
+    if name == "Century Gothic"
+        return unquote( '"Century Gothic", CenturyGothic, AppleGothic, sans-serif' )
+    if name == "Franklin Gothic Medium"
+        return unquote( '"Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif' )
+    if name == "Futura"
+        return unquote( 'Futura, "Trebuchet MS", Arial, sans-serif' )
+    if name == "Geneva"
+        return unquote( 'Geneva, Tahoma, Verdana, sans-serif' )
+    if name == "Gill Sans"
+        return unquote( '"Gill Sans", "Gill Sans MT", Calibri, sans-serif' )
+    if name == "Helvetica"
+        return unquote( '"Helvetica Neue", Helvetica, Arial, sans-serif' )
+    if name == "Impact"
+        return unquote( 'Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif' )
+    if name == "Lucida Grande"
+        return unquote( '"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif' )
+    if name == "Optima"
+        return unquote( 'Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif' )
+    if name == "Segoe UI"
+        return unquote( '"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif' )
+    if name == "Tahoma"
+        return unquote( 'Tahoma, Verdana, Segoe, sans-serif' )
+    if name == "Trebuchet MS"
+        return unquote( '"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif' )
+    if name == "Verdana"
+        return unquote( 'Verdana, Geneva, sans-serif' )
+    if name == "Baskerville"
+        return unquote( 'Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif' )
+    if name == "Big Caslon"
+        return unquote( '"Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif' )
+    if name == "Bodoni MT"
+        return unquote( '"Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif' )
+    if name == "Book Antiqua"
+        return unquote( '"Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif' )
+    if name == "Calisto MT"
+        return unquote( '"Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif' )
+    if name == "Cambria"
+        return unquote( 'Cambria, Georgia, serif' )
+    if name == "Didot"
+        return unquote( 'Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif' )
+    if name == "Garamond"
+        return unquote( 'Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif' )
+    if name == "Georgia"
+        return unquote( 'Georgia, Times, "Times New Roman", serif' )
+    if name == "Goudy Old Style"
+        return unquote( '"Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif' )
+    if name == "Hoefler Text"
+        return unquote( '"Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif' )
+    if name == "Lucida Bright"
+        return unquote( '"Lucida Bright", Georgia, serif' )
+    if name == "Palatino"
+        return unquote( 'Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif' )
+    if name == "Perpetua"
+        return unquote( 'Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif' )
+    if name == "Rockwell"
+        return unquote( 'Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif' )
+    if name == "Rockwell Extra Bold"
+        return unquote( '"Rockwell Extra Bold", "Rockwell Bold", monospace' )
+    if name == "Times New Roman"
+        return unquote( 'TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif' )
+    if name == "Andale Mono"
+        return unquote( '"Andale Mono", AndaleMono, monospace' )
+    if name == "Consolas"
+        return unquote( 'Consolas, monaco, monospace' )
+    if name == "Courier New"
+        return unquote( '"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace' )
+    if name == "Lucida Console"
+        return unquote( '"Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace' )
+    if name == "Lucida Sans Typewriter"
+        return unquote( '"Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace' )
+    if name == "Monaco"
+        return unquote( 'Monaco, Consolas, "Lucida Console", monospace' )
+    if name == "Copperplate"
+        return unquote( 'Copperplate, "Copperplate Gothic Light", fantasy' )
+    if name == "Papyrus"
+        return unquote( 'Papyrus, fantasy' )
+    if name == "Brush Script MT"
+        return unquote( '"Brush Script MT", cursive' )
+    if name == "System"
+        return unquote( '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' )
+    if name == "System with Emojis"
+        return unquote( '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"' )
+    return name
+
+font-stack = ks-font-stack unless ks-no-conflict

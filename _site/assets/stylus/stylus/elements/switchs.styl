@@ -1,0 +1,65 @@
+
+switch_default      = {
+  enable        : true
+  class         : 'switch'
+  paddle_class  : 'switch_paddle'
+  
+  back              : {
+    display: block
+    width: 35px
+    height: 20px
+    margin-top: .3em
+    margin-bottom: 2px
+    transition: all .3s ease
+    background-color: colors.grey
+    border-radius: 1000px
+    border: solid 1px colors.grey - 20%
+    position: relative
+    cursor: pointer
+  }
+
+  back_active        : {
+    background-color: colors.green
+    border-color: colors.green - 20%
+  }
+  
+  paddle            : {
+    width: 18px
+    height: 18px
+    background-color: #fff
+    border-radius: 1000px
+    transition: left .3s ease
+  }
+  paddle_active    : {
+  }
+
+}
+
+merge-rec(switch_default, switch)
+
+if switch_default.enable
+  .{switch_default.class}
+    display: inline-block
+    vertical-align: middle
+    
+    .{switch_default.paddle_class}
+      prepare: switch_default.back
+
+      &::before 
+        content: "";
+        display: block;
+        position: absolute;
+        vertical-align: middle
+        top: 50%;
+        left: 0;
+        margin-top: -1px if switch_default.paddle.height % 2 != 0
+        transform: translateY(-50%)
+        prepare: switch_default.paddle
+        
+    input 
+      display: none;
+      &:checked + .{switch_default.paddle_class}
+        prepare: switch_default.back_active
+        &::before
+          left: switch_default.back.width - switch_default.paddle.width - (switch_default.back.border ? v(switch_default.back.border, 'px') * 2 : 0)
+          prepare: switch_default.paddle_active

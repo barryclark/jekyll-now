@@ -1,0 +1,9 @@
+// triad( color )
+// returns triad variations of given color
+
+ks-triad( color )
+    first = spin( color, 120 )
+    second = spin( color, -120 )
+    ( first second )
+
+triad = ks-triad unless ks-no-conflict

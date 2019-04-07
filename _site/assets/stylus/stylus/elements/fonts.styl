@@ -1,0 +1,49 @@
+
+
+fonts_default       = {
+  path                : '../font/'
+  families      : {
+
+    'IRANSansWeb'      : {
+
+      formats         : 'eot' 'woff' 'woff2' 'ttf' 'svg'
+
+      src             : {
+        'IRANSansWeb'   : {
+          weight        : normal
+        }
+        'IRANSansWeb_Light'       : {
+          weight        : 200
+        }
+        'IRANSansWeb_Bold'         : {
+          weight        : bold
+        }
+      }
+      
+    },
+        'roboto'      : {
+
+      formats         : 'eot' 'woff' 'woff2' 'ttf' 'svg'
+
+      src             : {
+        'robotoregular'   : {
+          weight        : normal
+        }
+        'robotolight'       : {
+          weight        : 200
+        }
+        'robotobold'         : {
+          weight        : bold
+        }
+      }
+      
+    }
+
+  }
+}
+
+fonts = extend(fonts_default, fonts)
+
+for name, font in fonts.families
+  for path, prop in font.src
+    font-face( name: name, font-src: pathjoin(fonts.path, path), weight: prop.weight, style: prop.style, formats: font.formats )

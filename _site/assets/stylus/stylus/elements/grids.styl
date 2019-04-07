@@ -1,0 +1,59 @@
+
+
+grids_default    = {
+  enable          : true
+  width           : 1170px
+  gutter          : 10px
+  
+  column_count    : 12
+  column_sizes    : 1 2 2.4 3 4 5 6 7 8 9 10 11 12
+  column_name     : 'column'
+  
+  responsive      : true
+  
+  // Must be descending because of desktop first
+  media_query     : {
+    large           : none
+    // Medium starting below 970px
+    medium          : 970px
+    // small starting below 750px
+    small           : 750px
+  }
+}
+
+grids = merge(grids_default, grids)
+
+if grids.enable
+  .wrapper
+    max-width: grids.width
+    margin: 0 auto
+    padding: false grids.gutter
+
+  .row
+    box-sizing-reset()
+    margin: false (- grids.gutter)
+    clear: fix
+    &.collapse
+      margin: false 0
+
+  $column
+    position: relative
+    float: global.direction
+    padding: false grids.gutter
+    min-height: 1px
+    .row.collapse > &
+      padding: false 0
+    &.center
+      margin: 0 auto
+      float: none  
+    
+  if grids.responsive
+
+    column-responsive(grids.column_count, grids.column_sizes, grids.media_query, grids.column_name, $column)
+      
+  else
+
+    for i in grids.column_sizes
+      .{grids.column_name}_{i}
+        @extend $column
+        width: (i / grids.column_count) * 100%

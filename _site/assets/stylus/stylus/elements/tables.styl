@@ -1,0 +1,120 @@
+
+tables_default   = {
+  enable    : true
+
+  selector  : ".table"
+
+  css   : {
+    width : 100%
+    margin-bottom : global.margin
+    border-collapse : collapse
+    border-spacing : 0
+    overflow-x : hidden
+    text-align : center
+    border : 1px solid colors.grey
+    'caption' : {
+      font-weight : bold
+      font-size : global.font-size
+      margin-bottom : global.margin
+      text-align : right
+    }
+    'thead' : {
+      border-bottom : 1px solid colors.grey
+      line-height : global.line-height
+      font-weight : bold
+      'th' : {
+        'img' : {
+          width : 12px
+          height : 12px
+          cursor : pointer
+          vertical-align : middle
+        }
+        'svg' : {
+          cursor : pointer
+          vertical-align : middle
+        }
+      }
+    }
+    'tbody' : {
+      'tr' : {
+        border-bottom : 1px solid colors.grey
+        line-height : global.line-height
+        'td' : {
+          vertical-align : middle
+          'a' : {
+            cursor : pointer
+            font-weight : bold
+          }
+          'input' : {
+            margin : 0 auto
+          }
+        }
+        '&.bg_green' : {
+          background-color : colors.green
+          '&:hover' : {
+            background-color : colors.green - 10%
+          }
+        'td' : {
+          color : colors.white
+        }
+      }
+        '&.bg_red' : {
+          background-color : colors.red
+          '&:hover' : {
+            background-color : colors.red - 10%
+          }
+        'td' : {
+          color : colors.white
+        }
+      }
+      }
+
+    }
+    'tfoot' : {
+      line-height : global.line-height
+      font-weight : bold
+    }
+  }
+  types : {
+    striped : {
+      'tbody' : {
+        'tr' : {
+          '&:nth-child(odd)' : {
+            background-color : colors.grey + 50%
+          }
+        }
+
+      }
+    }
+    hover : {
+      'tbody' : {
+        'tr' : {
+          '&:hover' : {
+            background-color : colors.grey + 20%
+          }
+        }
+      }
+    }
+    scroll : {
+      overflow-x : auto
+      'table' : {
+        width : auto
+      }
+    }
+  }
+}
+
+merge-rec(tables_default, tables)
+
+if tables_default.enable
+
+  $table
+    prepare: tables_default.css
+
+
+  {tables_default.selector}
+    @extend $table
+    for name, prop in tables_default.types
+      &_{name}
+        @extend $table
+        prepare: prop

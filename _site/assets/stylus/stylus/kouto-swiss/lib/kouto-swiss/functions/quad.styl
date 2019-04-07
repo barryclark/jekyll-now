@@ -1,0 +1,12 @@
+// quad( color )
+// returns quad (tetrad) variations of given color
+
+ks-quad( color )
+    first = spin( color, 90 )
+    second = spin( color, -90 )
+    third = spin( color, 180 )
+    ( first second third )
+
+quad = ks-quad unless ks-no-conflict
+ks-tetrad = ks-quad
+tetrad = ks-quad unless ks-no-conflict
