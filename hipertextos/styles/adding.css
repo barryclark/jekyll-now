@@ -225,15 +225,20 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
 
 .text-slider {
 	display: block;
-	margin: 0 auto 64px;
-	padding: 32px 0;
+	margin: 0 auto 60px;
+	padding: 12px 0;
 	position: relative;
 	text-align: center;
 }
 .text-slider h2 {
+	font-size: 60px;
+	line-height: 60px;
+	margin: 0 auto 60px;
+    letter-spacing: -0.05em;
+}
+.text-slider h2 div span {
 	font-size: 80px;
 	line-height: 80px;
-	margin: 0 auto 80px;
 	text-transform: uppercase;
 }
 .text-slider div {
@@ -266,7 +271,7 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
 			animation-delay: 5s;
 }
 .text-slider p {
-	font-size: 48px;
+	
 }
 @media screen and (max-width: 1024px) {
 	.text-slider h2 {

@@ -43,10 +43,10 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
     background-size: cover;background-repeat: no-repeat;
     border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-music svg {width:64px;}
-#resumed-web svg {width:42px;}
-#resumed-web {font-size:17px;line-height:1.6em;letter-spacing: -0.032em;
+#resumed-web svg {width:39px;}
+#resumed-web {font-size:17px;line-height:1.5em;letter-spacing: -0.032em;
     color:var(--color-grey);}
-#resumed-web div {padding:10px;}
+#resumed-web div {}
 #resumed-web em {padding:1.5em 0 1.5em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {text-align:justify;background:linear-gradient(rgba(190,190,190,.3), rgba(200,200,200,1));
