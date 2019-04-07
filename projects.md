@@ -27,6 +27,10 @@ permalink: /projects/
 * [Tower defence game]({{ site.baseurl }}/projects/study/tower-defence-game)
 * [Ball game]({{ site.baseurl }}/projects/study/ball-game)
 
+### Media
+* [How to - confluent schema registry](https://blog.sysco.no/kafka/ConfluentKafkaSchemaRegistryPart1/)
+* [Automatic tests for webservice with RestAssured, WireMock and Testcontainers libraries](http://blog.sysco.no/automatic/tests/web-service-testing/)
+
 ### Video projects
 * [Island trip]({{ site.baseurl }}/projects/video/island-trip)
 * [Siberia trip]({{ site.baseurl }}/projects/video/siberia-trip)
