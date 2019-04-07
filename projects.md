@@ -9,6 +9,7 @@ permalink: /projects/
 * [Zipkin storage kafka]({{ site.baseurl }}/projects/contributions/zipkin-storage-kafka)
 * [Kafka-steward]({{ site.baseurl }}/projects/contributions/kafka-steward)
 * [Amqp-helper]({{ site.baseurl }}/projects/contributions/amqp-helper)
+* [Docker nginx consul]({{ site.baseurl }}/projects/contributions/docker-nginx-consul)
 
 ### Study projects
 * [Bachelor thesis]({{ site.baseurl }}/projects/study/bachelor-thesis)
