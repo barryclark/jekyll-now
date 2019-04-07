@@ -277,9 +277,10 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ένα κρυπτονόμισμα που δεν εμφανίζεται [στη λίστα αυτή](http://www.coincap.io) μπορεί να είναι ύποπτο.
 - Ένα κρυπτονόμισμα που παρουσιάζει τον εαυτό του ως επενδυτική ευκαιρία είναι σίγουρα ύποπτο.
 - Ένα κρυπτονόμισμα ή επενδυτικό σχήμα που υπόσχεται εξωπραγματικές αποδόσεις, όπως να διπλασιάσει τα χρήματά σας σε 2 μήνες, είναι απάτη.
+- Ένα κρυπτονόμισμα ή επενδυτικό σχήμα που σας ανταμείβει για να εγγράφετε άλλους σε αυτό με ποσοστά, είναι απάτη.
 - Πολλές από τις «επενδυτικές ευκαιρίες» σε cloud mining είναι απάτες. Σκεφτείτε, αν κάποιοι έχουν εξοπλισμό που μπορεί να κάνει επικερδές mining σε κρυπτονομίσματα, γιατί να τον νοικιάσουν σε εσάς;
 - Ένα ανταλλακτήριο που πουλάει ένα κρυπτονόμισμα σε πολύ χαμηλή τιμή (π.χ. πουλάει Bitcoin στη μισή τιμή σε σχέση με άλλα ανταλλακτήρια) είναι απάτη.
-- Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
+- Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace, BitClub. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
 ### <a name="electricitycost"></a> Έχω οικιακό τιμολόγιο €0,10/KWh της ΔΕΗ, μπορώ να κάνω mining κρυπτονομισμάτων;
@@ -306,7 +307,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2019-04-06
+Τελευταία ενημέρωση: 2019-04-07
 
 <!-- <div class="posts">
   {% for post in site.posts %}
