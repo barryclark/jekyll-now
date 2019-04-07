@@ -38,7 +38,7 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #section-brand h3, #section-brand h4.head-section small,
 #section-brand a {
 	color:var(--color-white);}
-#section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
+#section-paint {background-color:var(--color-black) ;text-align:center;}
 #section-music {background:linear-gradient(rgba(216,80,162,1),rgba(193,100,160,.9),rgba(97,149,209,1));
     color:var(--color-white) ;border:none;text-align:center;}
 #section-web, #section-brand, #section-music {
@@ -88,11 +88,14 @@ img.big-icon {width:64px;padding-top:16px;}
 }
 #petals-case img{
     position:absolute ;
-    left:120px;
+    left:0;
     top:center;
 }
 #petals-case .petals  {z-index:-1;}
 #petals-case .petals-shadow {top:72px;z-index: -10;
+}
+@media (max-width: 1800px) {
+    #petals-case img { width:48%;}
 }
 
 @media (max-width: 1250px) {
@@ -105,12 +108,16 @@ img.big-icon {width:64px;padding-top:16px;}
     #section-paint h5 {font-size: 19px;}
     #section-paint em {font-size: 14px;}
 	#resumed-paint svg {width:23px;}
+    #petals-case img { min-width:100%;opacity:.4;}
+    #resumed-paint {color:var(--color-white);}
     #browser-ios .thumb {width: 49.9999999999% !important;}
 	#section-brand h5 {line-height:1.0em;}
     #resumed-print.cell-6 {width:96%!important;}
     #resumed-print.pushed-6 {margin-left:0;}
 }
 @media (max-width: 1242px) {
+    @media (max-width: 1250px) {}
+
 }
 @media (max-width: 768px) {
     #section-web, #section-brand, #section-paint, #section-music {line-height:.6em;}
