@@ -92,3 +92,4 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
 
+mailchimp-list: https://scottshapiro.us16.list-manage.com/subscribe/post?u=5c7e9216b6ff26ac8fbd9c161&amp;id=b2ceab4033
