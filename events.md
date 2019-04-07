@@ -27,7 +27,7 @@ July 17 - 19: Open Source Summit Japan, Tokyo
 August 21 - 23: Open Source Summit + Embedded Linux Conference North America, San Diego
 
 October 2 - 3:  OpenInfraDays Nordics, Stockholm
-* Keynote
+* **Keynote**
 
 October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 
