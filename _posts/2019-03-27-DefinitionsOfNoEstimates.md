@@ -3,7 +3,7 @@ layout: post
 title: Definitions of NoEstimates
 ---
 
-I've noticed people argue for #NoEstimates in a bunch of different ways. Here are some:
+I've noticed people argue for (or against) #NoEstimates in a bunch of different ways. They'll often say "what #NoEstimates is *really* about is..."
 
 1. Size everything about the same and count them, it'll give you just as good results as estimating, without the cost of estimating.
 1. Split stories as small as you can and then count them, it'll give you just as good results as estimating, without the cost of estimating.
