@@ -4,6 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 ### Contributions
+* [Akka/alpakka]({{ site.baseurl }}/projects/contributions/akka-alpakka)
 * [Testcontainers-java]({{ site.baseurl }}/projects/contributions/testcontainers-java)
 * [Zipkin storage kafka]({{ site.baseurl }}/projects/contributions/zipkin-storage-kafka)
 * [Kafka-steward]({{ site.baseurl }}/projects/contributions/kafka-steward)
