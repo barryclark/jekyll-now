@@ -6,15 +6,14 @@
 	border:none;color: #fff;overflow: hidden;
 	text-align: center;height: 42vh;
 }
-#page-header div h1 {font-weight:400;letter-spacing: 0.005em; font-size:1.0em;line-height:1.7em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
-#page-header div {border-bottom:thin solid #fafafa;height:42px;}
-#phone-fine svg {max-width:15px;margin-right:5px;}
+#page-header div h2 {font-size:3.2em;line-height:1.2em;margin-bottom:0px;}
+#page-header div {height:42px;}
 #page-header div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
 
-#page-header h2 {font-size:2.9em;padding-top:190px;font-weight: 400;letter-spacing: none;}
-#page-header h5 {padding-top:220px;font-weight: 200;}
+#page-header h2 {font-size:2.9em;padding-top:120px;font-weight: 400;letter-spacing: none;}
+#page-header h5 {padding-top:150px;font-weight: 200;}
 
 #page-nav {background-color:var(--color-white)!important;height:79px;overflow:hidden;}
 #page-nav a {text-decoration:none;}
