@@ -34,8 +34,8 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #section-web h2 {line-height:.96em;}
 #section-web h5 {line-height:1.3em;font-weight: normal;}
 #browser-ios {padding:12px 0 28px 0;line-height:2.6em;
-    background:rgba(69,65,65,1) ;text-align:center;}
-#browser-ios svg {max-width:28px;color:rgba(130,130,130,.5) ;margin:0 12px 0 0;}
+    background:rgba(189,185,185,1) ;text-align:center;}
+#browser-ios svg {max-width:28px;color:rgba(212,212,212,1) ;margin:0 12px 0 0;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;margin-top:-30px;}
 #section-brand h3, #section-brand h4.head-section small,
 #section-brand a {
@@ -48,18 +48,18 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
     background-size: cover;background-repeat: no-repeat;
     border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-music svg {width:64px;}
-#resumed-web svg {width:39px;}
-#resumed-web {font-size:17px;line-height:1.5em;letter-spacing: -0.032em;
+#resumed-web svg {width:32px;}
+#resumed-web {font-size:15px;line-height:1.6em;letter-spacing: -0.012em;
     color:var(--color-grey);}
-#resumed-web div {}
+#resumed-web div {padding: 32px 0 32px 0;}
 #resumed-web em {padding:1.5em 0 1.5em 0;}
 #responsive img {max-width:55%;margin-left:143%;}
 #web-icons {text-align:justify;background:linear-gradient(rgba(190,190,190,.3), rgba(200,200,200,1));
     color:var(--color-hardgrey);}
 #web-top img {border-radius:14px;padding:1px;margin-top: -6px;margin-bottom:20px;}
 #web-top  {text-align:justify;}
-#web-icons h3 {border-bottom:thin solid rgba(50,50,50,.1) ;font-size:1.6em;line-height: 1em; padding-left:6px;margin-bottom:0px;}
-#web-top p {font-size:.9em;line-height:1.3em;padding:2px 6px 0 6px;}
+#web-icons h3 {font-size:1.6em;line-height: 1em; padding-left:12px;margin-bottom:0px;}
+#web-top p {font-size:15px;line-height:1.2em;padding:3px 12px 12px 12px;}
 #resumed-paint svg {width:23px;}
 #resumed-paint {color:var(--color-translucentwhite);}
 #resumed-paint h5 {margin: 0 0 6px 0;}
