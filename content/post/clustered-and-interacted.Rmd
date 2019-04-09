@@ -1,0 +1,129 @@
+---
+title: A handmade clubSandwich for multi-site trials
+author: James
+date: '2019-03-09'
+draft: true
+slug: handmade-clubSandwich
+categories: []
+tags:
+  - sandwiches
+  - econometrics
+  - weighting
+  - instrumental-variables
+header:
+  caption: ''
+  image: ''
+---
+
+
+```{r, message = FALSE}
+library(tidyverse)
+data(STAR, package = "AER")
+
+STAR_urban <-
+  STAR %>%
+  filter(
+    # limit to urban/inner city schools
+    schoolk %in% c("urban","inner-city"),
+    # limit to complete outcome data
+    !is.na(readk), !is.na(mathk)
+  ) %>%
+  droplevels() %>%
+  # collapse control conditions
+  mutate(
+    stark = fct_collapse(stark, regular = c("regular","regular+aide"))
+  ) %>%
+  # calculate inverse-propensity weight
+  group_by(schoolidk) %>%
+  mutate(
+    n = n(),
+    nT = sum(stark=="small"),
+    wt = ifelse(stark=="small", n / nT, n / (n - nT))
+  ) %>%
+  select(schoolidk, stark, readk, mathk, wt)
+
+STAR_summary <- 
+  STAR_urban %>%
+  count(schoolidk)
+
+STAR_urban %>%
+  group_by(schoolidk, stark) %>%
+  summarise(
+    n = n(),
+    wt = sum(wt)
+  ) %>%
+  mutate(n = sum(n)) %>%
+  spread(stark, wt)
+
+```
+After these exclusions, the data include a total of `r sum(STAR_summary$n)` students from `r nrow(STAR_summary)` schools, ranging in size from `r min(STAR_summary$n)` to `r max(STAR_summary$n)` students.
+
+For starters, let's get the average impacts using a seeming unrelated regression specification, with both conventional and clubSandwich standard errors. 
+```{r}
+library(clubSandwich)
+```
+
+```{r}
+STAR_wt <- lm(cbind(readk, mathk) ~ 0 + schoolidk + stark, weights = wt, data = STAR_urban)
+
+# conventional SEs
+CR0 <- 
+  coef_test(STAR_wt, vcov = "CR0", 
+            cluster = STAR_urban$schoolidk, 
+            test = "z",
+            coefs = c("readk:starksmall","mathk:starksmall"))
+CR0
+
+# clubSandwich SEs
+CR2 <- 
+  coef_test(STAR_wt, vcov = "CR2", 
+            cluster = STAR_urban$schoolidk, 
+            coefs = c("readk:starksmall","mathk:starksmall"))
+
+CR2
+```
+
+Now I'll do it "by hand"---or rather, with a bit of `dplyr`:
+
+```{r}
+
+# summary statistics by site
+
+school_summaries <- 
+  STAR_urban %>%
+  group_by(schoolidk, stark) %>%
+  summarise(
+    # means by arm and site
+    readk = mean(readk),
+    mathk = mean(mathk),
+    n_arm = n()
+  ) %>%
+  summarise(
+    # impact estimates by site
+    readk = diff(readk),
+    mathk = diff(mathk),
+    n = sum(n_arm),
+    p = n_arm[stark=="small"] / n
+  ) %>%
+  mutate(
+    w = n
+  )
+
+# overall impacts
+
+school_summaries %>%
+  gather("subject","impact_j", readk, mathk) %>%
+  group_by(subject) %>%
+  summarise(
+    impact = weighted.mean(impact_j, w = w),
+    SE_CR0 = sqrt(sum(w^2 * (impact_j - impact)^2) / sum(w)^2),
+    SE_CR2 = sqrt(sum(w^2 * (impact_j - impact)^2 / (1 - w / sum(w))) / sum(w)^2),
+    df_CR2 = 1 / (sum(w^2 / (sum(w) - w)^2) - 
+                    2 * sum(w^3 / (sum(w) - w)^2) / sum(w) + 
+                    sum(w^2 / (sum(w) - w))^2 / sum(w)^2)
+  ) %>%
+  knitr::kable(digits = 2)
+```
+
+The CR0 and CR2 standard errors match the results from `coef_test`, as do the Satterthwaite degrees of freedom. Note that the degrees of freedom are equal to `r round(CR2$df[1], 1)` in this case, a bit less than $J - 1 = 22$ due to variation in the weight assigned to each school. 
+

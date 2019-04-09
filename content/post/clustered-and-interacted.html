@@ -1,0 +1,161 @@
+---
+title: A handmade clubSandwich for multi-site trials
+author: James
+date: '2019-03-09'
+draft: true
+slug: handmade-clubSandwich
+categories: []
+tags:
+  - sandwiches
+  - econometrics
+  - weighting
+  - instrumental-variables
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<pre class="r"><code>library(tidyverse)
+data(STAR, package = &quot;AER&quot;)
+
+STAR_urban &lt;-
+  STAR %&gt;%
+  filter(
+    # limit to urban/inner city schools
+    schoolk %in% c(&quot;urban&quot;,&quot;inner-city&quot;),
+    # limit to complete outcome data
+    !is.na(readk), !is.na(mathk)
+  ) %&gt;%
+  droplevels() %&gt;%
+  # collapse control conditions
+  mutate(
+    stark = fct_collapse(stark, regular = c(&quot;regular&quot;,&quot;regular+aide&quot;))
+  ) %&gt;%
+  # calculate inverse-propensity weight
+  group_by(schoolidk) %&gt;%
+  mutate(
+    n = n(),
+    nT = sum(stark==&quot;small&quot;),
+    wt = ifelse(stark==&quot;small&quot;, n / nT, n / (n - nT))
+  ) %&gt;%
+  select(schoolidk, stark, readk, mathk, wt)
+
+STAR_summary &lt;- 
+  STAR_urban %&gt;%
+  count(schoolidk)
+
+STAR_urban %&gt;%
+  group_by(schoolidk, stark) %&gt;%
+  summarise(
+    n = n(),
+    wt = sum(wt)
+  ) %&gt;%
+  mutate(n = sum(n)) %&gt;%
+  spread(stark, wt)</code></pre>
+<pre><code>## # A tibble: 23 x 4
+## # Groups:   schoolidk [23]
+##    schoolidk     n regular small
+##    &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt; &lt;dbl&gt;
+##  1 2            52      52    52
+##  2 9           120     120   120
+##  3 10           51      51    51
+##  4 14           34      34    34
+##  5 15           55      55    55
+##  6 16          105     105   105
+##  7 18           79      79    79
+##  8 19           99      99    99
+##  9 22          129     129   129
+## 10 26           49      49    49
+## # ... with 13 more rows</code></pre>
+<p>After these exclusions, the data include a total of 1810 students from 23 schools, ranging in size from 34 to 134 students.</p>
+<p>For starters, let’s get the average impacts using a seeming unrelated regression specification, with both conventional and clubSandwich standard errors.</p>
+<pre class="r"><code>library(clubSandwich)</code></pre>
+<pre class="r"><code>STAR_wt &lt;- lm(cbind(readk, mathk) ~ 0 + schoolidk + stark, weights = wt, data = STAR_urban)
+
+# conventional SEs
+CR0 &lt;- 
+  coef_test(STAR_wt, vcov = &quot;CR0&quot;, 
+            cluster = STAR_urban$schoolidk, 
+            test = &quot;z&quot;,
+            coefs = c(&quot;readk:starksmall&quot;,&quot;mathk:starksmall&quot;))
+CR0</code></pre>
+<pre><code>##               Coef Estimate   SE p-val (z) Sig.
+## 1 readk:starksmall     6.21 3.13    0.0473    *
+## 2 mathk:starksmall    12.47 5.58    0.0254    *</code></pre>
+<pre class="r"><code># clubSandwich SEs
+CR2 &lt;- 
+  coef_test(STAR_wt, vcov = &quot;CR2&quot;, 
+            cluster = STAR_urban$schoolidk, 
+            coefs = c(&quot;readk:starksmall&quot;,&quot;mathk:starksmall&quot;))
+
+CR2</code></pre>
+<pre><code>##               Coef Estimate   SE d.f. p-val (Satt) Sig.
+## 1 readk:starksmall     6.21 2.70   19       0.0332    *
+## 2 mathk:starksmall    12.47 4.79   19       0.0174    *</code></pre>
+<p>Now I’ll do it “by hand”—or rather, with a bit of <code>dplyr</code>:</p>
+<pre class="r"><code># summary statistics by site
+
+school_summaries &lt;- 
+  STAR_urban %&gt;%
+  group_by(schoolidk, stark) %&gt;%
+  summarise(
+    # means by arm and site
+    readk = mean(readk),
+    mathk = mean(mathk),
+    n_arm = n()
+  ) %&gt;%
+  summarise(
+    # impact estimates by site
+    readk = diff(readk),
+    mathk = diff(mathk),
+    n = sum(n_arm),
+    p = n_arm[stark==&quot;small&quot;] / n
+  ) %&gt;%
+  mutate(
+    w = n
+  )
+
+# overall impacts
+
+school_summaries %&gt;%
+  gather(&quot;subject&quot;,&quot;impact_j&quot;, readk, mathk) %&gt;%
+  group_by(subject) %&gt;%
+  summarise(
+    impact = weighted.mean(impact_j, w = w),
+    SE_CR0 = sqrt(sum(w^2 * (impact_j - impact)^2) / sum(w)^2),
+    SE_CR2 = sqrt(sum(w^2 * (impact_j - impact)^2 / (1 - w / sum(w))) / sum(w)^2),
+    df_CR2 = 1 / (sum(w^2 / (sum(w) - w)^2) - 
+                    2 * sum(w^3 / (sum(w) - w)^2) / sum(w) + 
+                    sum(w^2 / (sum(w) - w))^2 / sum(w)^2)
+  ) %&gt;%
+  knitr::kable(digits = 2)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">subject</th>
+<th align="right">impact</th>
+<th align="right">SE_CR0</th>
+<th align="right">SE_CR2</th>
+<th align="right">df_CR2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">mathk</td>
+<td align="right">12.47</td>
+<td align="right">5.58</td>
+<td align="right">5.76</td>
+<td align="right">19.07</td>
+</tr>
+<tr class="even">
+<td align="left">readk</td>
+<td align="right">6.21</td>
+<td align="right">3.13</td>
+<td align="right">3.23</td>
+<td align="right">19.07</td>
+</tr>
+</tbody>
+</table>
+<p>The CR0 and CR2 standard errors match the results from <code>coef_test</code>, as do the Satterthwaite degrees of freedom. Note that the degrees of freedom are equal to 19 in this case, a bit less than <span class="math inline">\(J - 1 = 22\)</span> due to variation in the weight assigned to each school.</p>
