@@ -80,6 +80,11 @@ enableGitInfo = false
   # Diplay a logo in navigation bar rather than title (optional).
   #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
   logo = ""
+  
+  # Set to true to disable code folding
+  disable_codefolding = false
+  # Set to "hide" or "show" all codes by default
+  codefolding_show = "hide"
 
   # Enable/disable map in Contact widget.
   # To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
