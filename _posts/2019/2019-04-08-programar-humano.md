@@ -1,5 +1,5 @@
 ---
-title: "Programar é humano"
+title: "Programar é ciência humana"
 permalink: "/2019/04/programar-e-humano.html"
 categories: [desenvolvimento, offtopic, stress, ansiedade]
 ---
