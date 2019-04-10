@@ -8,8 +8,8 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+El valor de tu mente es un blog para ayudar a la gente a sacar el potencial en su mente.
 
-### Contact me
+### Ponte en contacto
 
-[email@domain.com](mailto:email@domain.com)
+[elvalordetumente@gmail.com](mailto:elvalordetumente@gmail.com)
