@@ -37,7 +37,7 @@ Following that, Dr Christoper Woods from Bristol University discussed ["Running 
 
 ![Tomasz Madycki](https://pbs.twimg.com/media/D3QKjHgW4AcgIJC.jpg)
 
-Finally Tomasz Madycki from CodiLime gave us a talk on ["Our journey to Kubernetes"](https://skillsmatter.com/skillscasts/13711-our-journey-to-kubernetes). He talked about:
+Finally Tomasz Madycki from [CodiLime](http://codilime.com/) gave us a talk on ["Our journey to Kubernetes"](https://skillsmatter.com/skillscasts/13711-our-journey-to-kubernetes). He talked about:
 
 
 * his experience with migration to Kubernetes on GCP
