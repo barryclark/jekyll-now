@@ -15,7 +15,7 @@ header:
 
 At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I've developed, how to understand the extent to which people are using them, how they're being used, and so on. I've had badges on my github repos for a while now:
 
-- clubSandwich: [![](https://cranlogs.r-pkg.org/badges/last-month/clubSandwich)](https://CRAN.R-project.org/package=clubSandwich)
+- clubSandwich: ![](https://cranlogs.r-pkg.org/badges/last-month/clubSandwich?display=inline-block)
 - ARPobservation: [![](https://cranlogs.r-pkg.org/badges/last-month/ARPobservation)](https://CRAN.R-project.org/package=ARPobservation)
 - scdhlm: [![](https://cranlogs.r-pkg.org/badges/last-month/scdhlm)](https://CRAN.R-project.org/package=scdhlm)
 - SingleCaseES: [![](https://cranlogs.r-pkg.org/badges/last-month/SingleCaseES)](https://CRAN.R-project.org/package=SingleCaseES)
@@ -158,16 +158,25 @@ Thus, `clubSandwich` sits in between `metafor` and `robumeta`, at the `r focal_d
 library(colorspace)
 library(ggrepel)
 
-focal_pkg_dat <- 
+downloads_sample <- 
   downloads_past_six %>%
-  filter(package %in% c(Pusto_pkgs, meta_pkgs)) %>%
+  arrange(count) %>%
+  mutate(
+    focal = package %in% c(Pusto_pkgs,meta_pkgs),
+    tenth = (row_number(count) %% 10) == 1
+  ) %>%
+  filter(focal | tenth)
+
+focal_pkg_dat <- 
+  downloads_sample %>%
+  filter(focal) %>%
   mutate(Pusto = if_else(package %in% Pusto_pkgs, "Pusto","comparison"))
 
 title_str <- paste("Average monthly downloads of R packages from", as_date(as_date(to_date) - duration(6, "months")),"through",to_date)
 
 qualitative_hcl(n = 2, h = c(140, -30), c = 90, l = 40, register = "custom-qual")
 
-ggplot(downloads_past_six, aes(x = package, y = count)) +
+ggplot(downloads_sample, aes(x = package, y = count)) +
   geom_col() + 
   geom_col(data = focal_pkg_dat, aes(color = Pusto, fill = Pusto), size = 1.5) + 
   geom_label_repel(
@@ -177,12 +186,11 @@ ggplot(downloads_past_six, aes(x = package, y = count)) +
     nudge_y = 0.5,
     point.padding = 0.3
   ) + 
-  scale_x_discrete(labels = NULL) + 
   scale_y_log10(breaks = c(20, 50, 200, 500, 2000, 5000, 20000, 50000, 200000), labels = scales::comma) + 
   scale_fill_discrete_qualitative(palette = "custom-qual") + 
   scale_color_discrete_qualitative(palette = "custom-qual") + 
-  labs(x = "Packages", y = "Downloads (per month)", title = title_str) + 
-  theme(legend.position = "none")
+  labs(x = "", y = "Downloads (per month)", title = title_str) + 
+  theme(legend.position = "none", axis.line.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())
 
 ```
 
@@ -231,9 +239,15 @@ Another interesting pattern is in the download rate of `scdhlm`, which looks lik
 
 Clearly, download counts are only a very rough proxy for package usage. In marketing-speak, they might be more like leads than conversion, in that people might be downloading a package only to discover that it's not good for anything and then never use it to accomplish anything. Downloads are also not one-time events. If they use it in their work, a single person will likely download a package many times, over a span of time as new versions are released, onto multiple machines that they might use, by accident in the process of trying to install some other package, and so on. Downloads of inter-related packages are likely to be highly correlated too, as they will be with release of new major versions of R, which probably makes it a bit tricky to do event studies. 
 
-Ultimately, I don't know that knowing where my packages stand in terms of download rankings is all that useful. The packages that I've developed are all aimed at fairly academic audiences, which means that citations would probably be a better measure of contribution. The problem is, many people don't know that they should be citing software, or how to do it. As usual, there's an R function for that. Here's the citation for `clubSandwich`:
-```{r}
+Ultimately, I don't know that knowing where my packages stand in terms of download rankings is all that useful. The packages that I've developed are all aimed at fairly academic audiences, which means that citations would probably be a better measure of contribution. The problem is, many people don't know that they should be citing software, or how to do it. As usual, there's an R function for that. Here's how to get the citation for `clubSandwich`:
+
+```{r citation, eval = FALSE}
 citation(package="clubSandwich") %>%
   print(style = "textVersion")
 ```
 
+which returns the following: 
+
+> 
+    ```{r, echo = FALSE, ref.label = "citation", results='asis'}
+    ```
