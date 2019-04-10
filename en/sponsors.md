@@ -14,3 +14,12 @@ ref: sponsoren
     </a>
   </figure>
 </section>
+
+<section class="side-figure" id="watterott">
+  <span>The company <a href="https://www.watterott.com/"><strong>Watterott</strong></a> supplied all CanSat teams with some construction components. We thankfully accepted their offer and received some sensors from them.</span>
+  <figure>
+    <a href="https://www.watterott.com/">
+      <img src="{{ site.baseurl }}/images/2018-sponsoren/Watterott.png" />
+    </a>
+  </figure>
+</section>
