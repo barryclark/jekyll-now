@@ -15,10 +15,10 @@ header:
 
 At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I've developed, how to understand the extent to which people are using them, how they're being used, and so on. I've had badges on my github repos for a while now:
 
-- clubSandwich: [<img src = "https://cranlogs.r-pkg.org/badges/last-month/clubSandwich" style="display: inline-block;"/>](https://CRAN.R-project.org/package=clubSandwich)
-- ARPobservation: [<img src = "https://cranlogs.r-pkg.org/badges/last-month/ARPobservation" style="display: inline-block;"/>](https://CRAN.R-project.org/package=ARPobservation)
-- scdhlm: [<img src = "https://cranlogs.r-pkg.org/badges/last-month/scdhlm" style="display: inline-block;"/>](https://CRAN.R-project.org/package=scdhlm)
-- SingleCaseES: [<img src = "https://cranlogs.r-pkg.org/badges/last-month/SingleCaseES" style="display: inline-block;"/>](https://CRAN.R-project.org/package=SingleCaseES)
+- clubSandwich: [<img src = "https://cranlogs.r-pkg.org/badges/last-month/clubSandwich" style="display: inline-block; max-width:100%;"/>](https://CRAN.R-project.org/package=clubSandwich)
+- ARPobservation: [<img src = "https://cranlogs.r-pkg.org/badges/last-month/ARPobservation" style="display: inline-block; max-width:100%;"/>](https://CRAN.R-project.org/package=ARPobservation)
+- scdhlm: [<img src = "https://cranlogs.r-pkg.org/badges/last-month/scdhlm" style="display: inline-block; max-width:100%;"/>](https://CRAN.R-project.org/package=scdhlm)
+- SingleCaseES: [<img src = "https://cranlogs.r-pkg.org/badges/last-month/SingleCaseES" style="display: inline-block; max-width:100%;"/>](https://CRAN.R-project.org/package=SingleCaseES)
 
 These statistics come from the [METACRAN](https://www.r-pkg.org/) site, which makes available data on daily downloads of all packages on CRAN (one of the main repositories for sharing R packages). The downloads are from the RStudio mirror of CRAN, which is only one of many mirrors around the world. Although the data do not represent complete tallies of all package downloads, they are nonetheless the best available source that I'm aware of. 
 
