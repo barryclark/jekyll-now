@@ -5,7 +5,7 @@ date: '2017-10-07'
 slug: delta-method-and-2SLS-SEs
 categories: []
 tags:
-  - instrumental variables
+  - instrumental-variables
   - delta method
 header:
   caption: ''
