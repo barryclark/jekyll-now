@@ -1,16 +1,14 @@
 ---
 title: CRAN downloads of my packages
 author: James
-date: '2019-04-08'
+date: '2019-04-09'
 slug: package-downloads
-draft: true
 categories: []
 tags:
   - programming
 header:
   caption: ''
   image: ''
-  code_folding: hide
 ---
 
 <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
@@ -24,7 +22,7 @@ header:
 <li>SingleCaseES: <a href="https://CRAN.R-project.org/package=SingleCaseES"><img src="http://cranlogs.r-pkg.org/badges/last-month/SingleCaseES" /></a></li>
 </ul>
 <p>These statistics come from the <a href="https://www.r-pkg.org/">METACRAN</a> site, which makes available data on daily downloads of all packages on CRAN (one of the main repositories for sharing R packages). The downloads are from the RStudio mirror of CRAN, which is only one of many mirrors around the world. Although the data do not represent complete tallies of all package downloads, they are nonetheless the best available source that I’m aware of.</p>
-<p>The thing is, the download numbers are rather hard to interpret. Beyond knowing that somebody out there is at least <em>trying</em> to use the tools I’ve made, it’s pretty hard to gauge whether 300 or 3000 or 3 million downloads a month is a good usage level. In this post, I’ll attempt to put just a little bit of context around these numbers. Emphasis on <em>little bit</em>, as I’m not at all satisfied with what I’ll show below, but at least it’s something beyond four numbers floating in the air.</p>
+<p>The thing is, the download numbers are rather hard to interpret. Beyond knowing that somebody out there is at least <em>trying</em> to use the tools I’ve made, it’s pretty hard to gauge whether 300 or 3000 or 3 million downloads a month is a good usage level. In this post, I’ll attempt to put just a little bit of context around these numbers. Emphasis on <em>little bit</em>, as I’m not all that satisfied with what I’ll show below, but at least it’s something beyond four numbers floating in the air.</p>
 <div id="getting-package-download-data" class="section level3">
 <h3>Getting package download data</h3>
 <p>I used the <code>cranlogs</code> package to get daily download counts of all currently available CRAN packages over the period 2018-04-06 through 2019-04-06. I then limited the sample to packages that had been downloaded at least once between 2018-04-06 and 2018-10-05. This had the effect of excluding about 1000 packages that were either only recently added to CRAN or that had been discontinued but were still sitting on CRAN.</p>
@@ -186,24 +184,35 @@ scdhlm
 </tbody>
 </table>
 <p>Thus, <code>clubSandwich</code> sits in between <code>metafor</code> and <code>robumeta</code>, at the 90th percentile among all active packages on CRAN. The other packages are much less widely downloaded, averaging between 200 and 400 downloads per month. The distribution of monthly download rates is <em>highly</em> skewed, as can be seen in the figure below. About 68% of packages are downloaded 500 times or fewer per month, while only 7% of packages get more than 5000 downloads per month.</p>
-<pre class="r"><code>Pusto_pkg_dat &lt;- 
-  downloads_past_six %&gt;%
-  filter(package %in% Pusto_pkgs)
+<pre class="r"><code>library(colorspace)
+library(ggrepel)
 
-meta_pkg_dat &lt;- 
+focal_pkg_dat &lt;- 
   downloads_past_six %&gt;%
-  filter(package %in% meta_pkgs)
+  filter(package %in% c(Pusto_pkgs, meta_pkgs)) %&gt;%
+  mutate(Pusto = if_else(package %in% Pusto_pkgs, &quot;Pusto&quot;,&quot;comparison&quot;))
 
 title_str &lt;- paste(&quot;Average monthly downloads of R packages from&quot;, as_date(as_date(to_date) - duration(6, &quot;months&quot;)),&quot;through&quot;,to_date)
 
+qualitative_hcl(n = 2, h = c(140, -30), c = 90, l = 40, register = &quot;custom-qual&quot;)
+
 ggplot(downloads_past_six, aes(x = package, y = count)) +
   geom_col() + 
-  geom_col(data = Pusto_pkg_dat, color = &quot;green&quot;, size = 1.5) + 
-  geom_col(data = meta_pkg_dat, color = &quot;purple&quot;, size = 1.5) + 
+  geom_col(data = focal_pkg_dat, aes(color = Pusto, fill = Pusto), size = 1.5) + 
+  geom_label_repel(
+    data = focal_pkg_dat, aes(color = Pusto, label = package),
+    segment.size = 0.4,
+    segment.color = &quot;grey50&quot;,
+    nudge_y = 0.5,
+    point.padding = 0.3
+  ) + 
   scale_x_discrete(labels = NULL) + 
   scale_y_log10(breaks = c(20, 50, 200, 500, 2000, 5000, 20000, 50000, 200000), labels = scales::comma) + 
-  labs(x = &quot;Packages&quot;, y = &quot;Downloads (per month)&quot;, title = title_str)</code></pre>
-<p><img src="/post/CRAN-package-downloads_files/figure-html/unnamed-chunk-6-1.png" width="960" /></p>
+  scale_fill_discrete_qualitative(palette = &quot;custom-qual&quot;) + 
+  scale_color_discrete_qualitative(palette = &quot;custom-qual&quot;) + 
+  labs(x = &quot;Packages&quot;, y = &quot;Downloads (per month)&quot;, title = title_str) + 
+  theme(legend.position = &quot;none&quot;)</code></pre>
+<p><img src="/post/CRAN-package-downloads_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
 </div>
 <div id="downloads-over-time" class="section level3">
 <h3>Downloads over time</h3>
@@ -234,8 +243,18 @@ weekly_downloads %&gt;%
   expand_limits(y = 0) + 
   facet_wrap(~ package, scales = &quot;free&quot;, ncol = 2) + 
   theme_minimal() + 
+  labs(x = &quot;&quot;, y = &quot;Downloads (per month)&quot;) + 
   theme(legend.position = &quot;none&quot;)</code></pre>
 <p><img src="/post/CRAN-package-downloads_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
 <p>There are a couple of curious features in these plots. For one, there are big spikes in downloads of <code>ARPobservation</code> and <code>SingleCaseES</code>. The <code>ARPobservation</code> spike was in mid-June of 2018, when I was at the IES Single-Case Design training institute and demonstrated some of the package’s tools. The <code>SingleCaseES</code> spike was in early January, 2019. Perhaps someone was teaching a class in single-case research and demonstrated the package? Or something at the IES PI meeting (January 9-10, 2019)?</p>
 <p>Another interesting pattern is in the download rate of <code>scdhlm</code>, which looks like it increased systematically starting in September, 2018. I wonder if this was the result of someone demonstrating or incorporating use of the package into a course. Lacking details about where the downloads are coming from, it’s hard to do anything but speculate.</p>
+</div>
+<div id="caveats-and-musings" class="section level3">
+<h3>Caveats and musings</h3>
+<p>Clearly, download counts are only a very rough proxy for package usage. In marketing-speak, they might be more like leads than conversion, in that people might be downloading a package only to discover that it’s not good for anything and then never use it to accomplish anything. Downloads are also not one-time events. If they use it in their work, a single person will likely download a package many times, over a span of time as new versions are released, onto multiple machines that they might use, by accident in the process of trying to install some other package, and so on. Downloads of inter-related packages are likely to be highly correlated too, as they will be with release of new major versions of R, which probably makes it a bit tricky to do event studies.</p>
+<p>Ultimately, I don’t know that knowing where my packages stand in terms of download rankings is all that useful. The packages that I’ve developed are all aimed at fairly academic audiences, which means that citations would probably be a better measure of contribution. The problem is, many people don’t know that they should be citing software, or how to do it. As usual, there’s an R function for that. Here’s the citation for <code>clubSandwich</code>:</p>
+<pre class="r"><code>citation(package=&quot;clubSandwich&quot;) %&gt;%
+  print(style = &quot;textVersion&quot;)</code></pre>
+<pre><code>## James Pustejovsky (2018). clubSandwich: Cluster-Robust (Sandwich) Variance Estimators with Small-Sample
+## Corrections. R package version 0.3.2. https://CRAN.R-project.org/package=clubSandwich</code></pre>
 </div>
