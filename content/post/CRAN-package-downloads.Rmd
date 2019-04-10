@@ -15,7 +15,7 @@ header:
 
 At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I've developed, how to understand the extent to which people are using them, how they're being used, and so on. I've had badges on my github repos for a while now:
 
-- clubSandwich: ![](https://cranlogs.r-pkg.org/badges/last-month/clubSandwich)
+- clubSandwich: ![](https://cranlogs.r-pkg.org/badges/last-month/clubSandwich?display=inline-block)
 - ARPobservation: [![](https://cranlogs.r-pkg.org/badges/last-month/ARPobservation)](https://CRAN.R-project.org/package=ARPobservation)
 - scdhlm: [![](https://cranlogs.r-pkg.org/badges/last-month/scdhlm)](https://CRAN.R-project.org/package=scdhlm)
 - SingleCaseES: [![](https://cranlogs.r-pkg.org/badges/last-month/SingleCaseES)](https://CRAN.R-project.org/package=SingleCaseES)
@@ -53,7 +53,9 @@ pkg_downloads <-
   select(Package, Version) %>%
   mutate(grp = 1 + trunc((row_number() - 1) / 100)) %>%
   nest(Package, Version) %>%
-  mutate(downloads = map(.$data, ~ cran_downloads(packages = .$Package, from = from_date, to = to_date))) %>%
+  mutate(downloads = map(.$data, ~ cran_downloads(packages = .$Package, 
+                                                  from = from_date, 
+                                                  to = to_date))) %>%
   select(-data) %>%
   unnest()
 ```
@@ -131,7 +133,8 @@ focal_downloads <-
   arrange(desc(count))
 
 focal_downloads %>%
-  rename(`Average monthly downloads` = count, `Percentile of CRAN packages` = pct_less) %>%
+  rename(`Average monthly downloads` = count, 
+         `Percentile of CRAN packages` = pct_less) %>%
   kable() %>%
   kable_styling(bootstrap_options = c("hover", "condensed"), full_width = FALSE)
 ```

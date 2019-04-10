@@ -18,7 +18,7 @@ header:
 
 <p>At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I’ve developed, how to understand the extent to which people are using them, how they’re being used, and so on. I’ve had badges on my github repos for a while now:</p>
 <ul>
-<li>clubSandwich: <img src="https://cranlogs.r-pkg.org/badges/last-month/clubSandwich" /></li>
+<li>clubSandwich: <img src="https://cranlogs.r-pkg.org/badges/last-month/clubSandwich?display=inline-block" /></li>
 <li>ARPobservation: <a href="https://CRAN.R-project.org/package=ARPobservation"><img src="https://cranlogs.r-pkg.org/badges/last-month/ARPobservation" /></a></li>
 <li>scdhlm: <a href="https://CRAN.R-project.org/package=scdhlm"><img src="https://cranlogs.r-pkg.org/badges/last-month/scdhlm" /></a></li>
 <li>SingleCaseES: <a href="https://CRAN.R-project.org/package=SingleCaseES"><img src="https://cranlogs.r-pkg.org/badges/last-month/SingleCaseES" /></a></li>
@@ -42,7 +42,9 @@ pkg_downloads &lt;-
   select(Package, Version) %&gt;%
   mutate(grp = 1 + trunc((row_number() - 1) / 100)) %&gt;%
   nest(Package, Version) %&gt;%
-  mutate(downloads = map(.$data, ~ cran_downloads(packages = .$Package, from = from_date, to = to_date))) %&gt;%
+  mutate(downloads = map(.$data, ~ cran_downloads(packages = .$Package, 
+                                                  from = from_date, 
+                                                  to = to_date))) %&gt;%
   select(-data) %&gt;%
   unnest()</code></pre>
 <pre class="r"><code>downloaded_last_yr &lt;- 
@@ -99,7 +101,8 @@ focal_downloads &lt;-
   arrange(desc(count))
 
 focal_downloads %&gt;%
-  rename(`Average monthly downloads` = count, `Percentile of CRAN packages` = pct_less) %&gt;%
+  rename(`Average monthly downloads` = count, 
+         `Percentile of CRAN packages` = pct_less) %&gt;%
   kable() %&gt;%
   kable_styling(bootstrap_options = c(&quot;hover&quot;, &quot;condensed&quot;), full_width = FALSE)</code></pre>
 <table class="table table-hover table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
