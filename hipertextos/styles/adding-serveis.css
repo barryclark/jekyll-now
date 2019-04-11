@@ -23,9 +23,8 @@
 /* Serveis */
 h3.head-section {color:var(--color-hardgrey) ;font-size:1.6em;font-weight:lighter ;line-height: 1.1em;margin-bottom:0px;}
 h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1.6em;}
-#section-music h3.head-section {color:rgba(138,208,255,1) ;}
-#section-music h4.head-section small {color:rgba(138,208,255,1) }
-
+#section-music h3.head-section {color:rgba(190,245,255,1) ;}
+#section-music h4.head-section small {color:rgba(190,245,255,1) }
 #serveis-pre {text-align:center;box-shadow:inset 0 90px 80px #eee;
     padding:80px 0 69px 0;margin:0 0 12px 0;}
 #serveis-pre h2 {margin-bottom:6px;}
@@ -44,6 +43,8 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #section-paint {background-color:var(--color-black) ;text-align:center;}
 #section-music {background:linear-gradient(rgba(216,80,162,1),rgba(193,100,160,.9),rgba(97,149,209,1));
     color:var(--color-white) ;border:none;text-align:center;}
+img.apps {border-radius:28px;max-width:60%;}
+
 #section-web, #section-brand, #section-music {
     background-position: top center;background-attachment: fixed;
     background-size: cover;background-repeat: no-repeat;
