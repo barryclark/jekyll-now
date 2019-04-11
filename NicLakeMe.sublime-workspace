@@ -20,9 +20,28 @@
 			"file": "_posts/2018-12-23-2019-goals.md",
 			"settings":
 			{
-				"buffer_size": 7332,
+				"buffer_size": 7780,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/I/Games/Steam/steamapps/common/Dark Souls Prepare to Die Edition/DATA/DSfix.ini",
+			"settings":
+			{
+				"buffer_size": 7852,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nJsPrettier\n----------\n\n  ## 1.26.0\n  \n  Release Date: 2019-03-17\n  \n  - Added support for formatting PHP files; requires the Prettier PHP Plugin:\n  \n        cd to/project/directory\n        npm install @prettier/plugin-php\n  \n    More information on the Prettier PHP Plugin:\n    https://github.com/prettier/plugin-php\n",
+			"settings":
+			{
+				"buffer_size": 368,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
 			}
 		},
 		{
@@ -144,7 +163,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 33.0
 	},
 	"find_in_files":
 	{
@@ -221,7 +240,7 @@
 						"translation.y": 4611.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -230,15 +249,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7332,
+						"buffer_size": 7780,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5284,
-								5284
+								5398,
+								5398
 							]
 						],
 						"settings":
@@ -248,14 +267,73 @@
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 770.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/I/Games/Steam/steamapps/common/Dark Souls Prepare to Die Edition/DATA/DSfix.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6155,
+								6169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2356.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								368,
+								368
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"default_dir": "I:\\Games\\Steam\\steamapps\\common\\Dark Souls Prepare to Die Edition\\DATA",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "/N/Libraries/Downloads/BigBagKbdTrixPKL-master/EPKL_Settings.ini",
 					"semi_transient": false,
 					"settings":
@@ -279,11 +357,11 @@
 						"translation.y": 305.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "_posts/2018-8-23-breath-of-the-wild.md",
 					"semi_transient": true,
 					"settings":
@@ -311,7 +389,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "_posts/2019-2-27-apex-legends.md",
 					"semi_transient": false,
 					"settings":
@@ -336,7 +414,7 @@
 						"translation.y": 96.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -344,7 +422,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -381,7 +459,7 @@
 	"project": "NicLakeMe.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
