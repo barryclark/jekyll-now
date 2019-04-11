@@ -1,0 +1,31 @@
+<p>) Show that <span class="math inline">$\mathscr{B}=(1,x,\frac{3}{2}x^2-\frac{1}{2})$</span> is a basis of <span class="math inline">𝒫<sub>2</sub>(ℝ)</span>.<br />
+b) Find the coordinate representation of <span class="math inline"><em>x</em><sup>2</sup></span> with respect to <span class="math inline">ℬ</span>.<br />
+c)</p>
+<p>Let <span class="math inline"><em>D</em> : 𝒫<sub>2</sub>(ℝ) → 𝒫<sub>2</sub>(ℝ)</span> be the derivative operator. Find the coordinate representation of D with respect to <span class="math inline">ℬ</span>.<br />
+d)</p>
+<p>Use your answers to the last two parts to calculate <span class="math inline">$\frac{d}{dx}(x^2)$</span>.</p>
+<p><em>Solution:</em></p>
+<ol>
+<li><p>Let <span class="math inline"><em>T</em> : 𝒫<sub>2</sub>(ℝ) → ℝ<sup>3</sup></span> so <span class="math inline">$T(ax^2+bx+c)=\begin{bmatrix}
+    a\\b\\c
+    \end{bmatrix}$</span>. Let <span class="math inline"><em>A</em> = [<em>T</em>(ℬ<sub>1</sub>)|…|ℬ<sub>3</sub>]</span>. <br /><span class="math display">$$A=\begin{bmatrix}
+    0 &amp; 0 &amp; \frac{3}{2}\\
+    0 &amp; 1 &amp; 0\\
+    1 &amp; 0 &amp; \frac{-1}{2}
+    \end{bmatrix}$$</span><br /> In RREF, <span class="math inline"><em>A</em> = <em>I</em><sub>3</sub></span>. Thus it is a basis.</p></li>
+<li><p>If <span class="math inline">$\mathscr{B}=(1,x,\frac{3}{2}x^2-\frac{1}{2})$</span>, let <span class="math inline"><strong>b</strong><sub><strong>1</strong></sub> = 1</span>, <span class="math inline"><strong>b</strong><sub><strong>2</strong></sub> = <em>x</em></span>, <span class="math inline">$\mathbf{b_{3}}=\frac{3}{2}x^2-\frac{1}{2}$</span>.<br />
+Then <span class="math inline">$x^2=\frac{2}{3}(\frac{3}{2}x^2-\frac{1}{2})+\frac{1}{3}(1)=\frac{2}{3}\mathbf{b_{3}}+\frac{1}{3}\mathbf{b_{1}}$</span>. So <span class="math inline">$x^2 = \begin{bmatrix}
+    \frac{1}{3 }\\0\\\frac{2}{3}
+    \end{bmatrix}_\mathscr{B}$</span>.</p></li>
+<li><p>Let <span class="math inline">$D=[\frac{d}{dx}\mathbf{b_{1}}|\frac{d}{dx}\mathbf{b_{2}}|\frac{d}{dx}\mathbf{b_{3}}]=\begin{bmatrix}
+    0 &amp; 0 &amp; 0\\
+    0 &amp; 0 &amp; 3\\
+    0 &amp; 1 &amp; 0
+    \end{bmatrix}_\mathscr{B}$</span>.</p></li>
+<li><p>If <span class="math inline">$x^2=\begin{bmatrix}\frac{1}{3}\\0\\\frac{2}{3}\end{bmatrix}_\mathscr{B}$</span>, then <span class="math inline">$D\begin{bmatrix}\frac{1}{3}\\0\\\frac{2}{3}\end{bmatrix}_\mathscr{B}=\begin{bmatrix}
+    0\\
+    2\\
+    0
+    \end{bmatrix}_\mathscr{B}$</span>, which is <span class="math inline">2<strong>b</strong><sub><strong>2</strong></sub> = 2<em>x</em></span>.</p></li>
+</ol>
+<p>et <span class="math inline"><em>R</em> ∈ ℒ(ℝ<sup>2</sup>)</span> be the counterclockwise</p>
