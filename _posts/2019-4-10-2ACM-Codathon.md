@@ -5,14 +5,14 @@ date: April 10, 2019
 time: 22:54 UTC-4 
 ---
 
-This problem was posed in the ACM Lower Division Codeathon. I chose this problem because it is a very nice strategy problem. Not necessarily solely an algorithm problem anymore. It is also partly a strategy and optimization problem all rollwed into one. The original analysis was from USACO's Nick Wu, [Cow Tipping](http://usaco.org/current/data/sol_cowtip_bronze_jan17.html). The [Original Problem](http://usaco.org/index.php?page=viewproblem2&cpid=689).
+This problem was posed in the Spring 2019 ACM Lower Division Codeathon. I chose this problem because it is a very nice strategy problem. Not necessarily solely an algorithm problem anymore. It is also partly a strategy and optimization problem all rollwed into one. The original analysis was from USACO's Nick Wu, [Cow Tipping](http://usaco.org/current/data/sol_cowtip_bronze_jan17.html). The [Original Problem](http://usaco.org/index.php?page=viewproblem2&cpid=689).
 
 > 
 > ### Gameboard
 > 
 > ---
 > 
-> The queen is trying to repaint her `n` `x` `n` chessboard. Someone decided to repaint the chessboard, so it is no longer in the alternating colors like a chessboard should be. The squares in the chessboard can be of two colors, black, or white. The queen can only work in rectangles(squares included) however, and she doesn't have any paint. The squares are very scared of the frightening queen, so when she orders the squares to switch they switch, from where she is standing to the upper-left most square(in a rectangular fashion).
+> The queen is trying to repaint her $$n x n$$ chessboard. Someone decided to repaint the chessboard, so it is no longer in the alternating colors like a chessboard should be. The squares in the chessboard can be of two colors, black, or white. The queen can only work in rectangles(squares included) however, and she doesn't have any paint. The squares are very scared of the frightening queen, so when she orders the squares to switch they switch, from where she is standing to the upper-left most square(in a rectangular fashion).
 > 
 > When she does order the squares, every square to the left most square on the same row, to the top most square, and all squares from those boundaries to the upper most left square, flip from black to white, and from white to black. However it is very taxing for the queen to order all of her square. She would like to know what the minimum number of orders would be sufficent for her to get all of her squares in the correct orientation so she can bring her pieces to the board.
 > 
@@ -59,7 +59,7 @@ This problem was posed in the ACM Lower Division Codeathon. I chose this problem
 > 
 > ### Parameters
 > 
-> $3 < n < 100$
+> $$3 < n < 100$$
 > 
 > ## Output
 > 
@@ -164,3 +164,7 @@ public class Solution {
     }
 }//solution
 ```
+
+#### Note
+
+It seems that this problem is $$O(n^4)$$.
