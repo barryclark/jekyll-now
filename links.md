@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Useful Links
 ---
 ## References
 * [ACM](http://acm.cse.sc.edu)
