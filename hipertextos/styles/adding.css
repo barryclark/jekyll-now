@@ -51,7 +51,10 @@ main {padding-bottom: 0 !important;}
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {
     letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;
 }
-#web-grafics h1 { margin-bottom:42px;line-height:1.1em; }
+#web-grafics h1 { margin-bottom:38px;line-height:.85em; }
+#web-grafics h4 {margin-bottom:6px;}
+#web-grafics p {margin-bottom:12px;padding-left:48px;}
+
 #web-oferta h2, #web-branding h2, #web-grafics h2, #web-music h2 {
     font-weight: lighter ;letter-spacing: -0.045em;margin-bottom:23px;
     line-height:1em;font-size:1.4em;
@@ -76,6 +79,9 @@ main {padding-bottom: 0 !important;}
     box-shadow:1px 3px 12px rgba(20,20,20,.25), 1px 6px 72px rgba(120,120,120,.25);
 }
 img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
+#web-music img.note {border:thin solid rgba(220,220,220,.75);}
+#web-branding img.note {background: rgba(235,235,235,.8);}
+
 #logotips article {padding: 23px;}
 #fronters-brand .cover-justify svg {min-width: 72px;}
 #web-oferta { background:var(--color-softgrey);image-rendering: crisp-edges;background-position: top center;
