@@ -64,8 +64,9 @@ img.apps {border-radius:28px;max-width:64%;}
 #web-top  {text-align:justify;}
 #web-icons h3 {font-size:1.6em;line-height: 1em; padding-left:12px;margin-bottom:0px;}
 #web-top p {font-size:15px;line-height:1.2em;padding:3px 12px 12px 12px;}
-#resumed-paint svg {width:23px;}
+#resumed-paint svg {width:32px;}
 #resumed-paint {color:var(--color-translucentwhite);}
+#super-cover img {border: 6px solid #111;border-radius:14px;max-width:768px;height:auto;}
 #resumed-paint h5 {margin: 0 0 8px 0;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
@@ -85,17 +86,6 @@ img.big-icon {width:52px; }
 #resumed-apps .publi span {background:linear-gradient(rgba(244,82,15,1), rgba(224,62,5,1));}
 #resumed-apps .sound span {background:linear-gradient(rgba(125,54,157,1), rgba(105,14,117,1))}
 
-#petals-case img{
-    position:absolute ;
-    left:0;
-    top:center;
-}
-#petals-case .petals  {z-index:-1;}
-#petals-case .petals-shadow {top:72px;z-index: -10;
-}
-@media (max-width: 1800px) {
-    #petals-case img { width:48%;}
-}
 
 @media (max-width: 1250px) {
     #section-web .pushed-6 {}
