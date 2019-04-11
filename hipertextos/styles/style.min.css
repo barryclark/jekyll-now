@@ -2341,9 +2341,6 @@ dialog,
 #theme-meridianus:checked ~ #page #blured {
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
-#theme-meridianus:checked ~ #page #glass-front { 
-    background-image: url("/img/homed-sun.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
 #theme-meridianus:checked ~ #page div.masked {}
 #theme-meridianus:checked ~ #page #site-nav a {
 	color: rgba(255,220,180,1);-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
@@ -2391,9 +2388,6 @@ dialog,
 }
 #theme-vesperum:checked ~ #page #blured {
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-vesperum:checked ~ #page #glass-front { 
-    background-image: url("/img/homed-blue.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-vesperum:checked ~ #page div.masked {}
 #theme-vesperum:checked ~ #page #site-nav a {
@@ -2452,9 +2446,6 @@ dialog,
 }
 #theme-nox:checked ~ #page #blured {
     -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-nox:checked ~ #page #glass-front { 
-    background-image: url("/img/homed-night.jpf")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-nox:checked ~ #page div.masked {}
 #theme-nox:checked ~ #page #site-nav a {
