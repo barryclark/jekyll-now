@@ -43,7 +43,7 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #section-paint {background-color:var(--color-black) ;text-align:center;}
 #section-music {background:linear-gradient(rgba(216,80,162,1),rgba(193,100,160,.9),rgba(97,149,209,1));
     color:var(--color-white) ;border:none;text-align:center;}
-img.apps {border-radius:28px;max-width:60%;}
+img.apps {border-radius:28px;max-width:64%;}
 
 #section-web, #section-brand, #section-music {
     background-position: top center;background-attachment: fixed;
@@ -69,7 +69,7 @@ img.apps {border-radius:28px;max-width:60%;}
 #section-brand h5 {line-height:1.3em;}
 #section-brand .thumb-4 img {max-width:48%;}
 #section-brand h4{line-height:1.18em;}
-img.big-icon {width:64px;padding-top:16px;}
+img.big-icon {width:52px; }
 #section-paint {color:var(--color-white);}
 
 #resumed-apps {padding:4%;}
@@ -83,21 +83,6 @@ img.big-icon {width:64px;padding-top:16px;}
 #resumed-apps .publi span {background:linear-gradient(rgba(244,82,15,1), rgba(224,62,5,1));}
 #resumed-apps .sound span {background:linear-gradient(rgba(125,54,157,1), rgba(105,14,117,1))}
 
-/* Animacions propies */
-
-#diamond {padding-left:6%;}
-@keyframes diamond {
-    0% {background-image: url(/assets/branding/logos1.jpg);background-repeat: none ;border:none;}
-    25% {background-image: url(/assets/branding/logos2.jpg);background-repeat: none ;border:none;}
-    50% {background-image: url(/assets/branding/logos3.jpg);background-repeat: none ;border:none;}
-    75% {background-image: url(/assets/branding/logos4.jpg);background-repeat: none ;border:none;}
-    100% {background-image: url(/assets/branding/logos6.jpg);background-repeat: none ;border:none;}
-}
-#diamond-base {width:290px;height:290px;margin-left:6%;
-	background-image: url(/assets/branding/logos1.jpg) no-repeat top left;background-size: contain;
-	animation-name: diamond;animation-iteration-count: infinite;
-    animation-duration: 9.5s;
-}
 #petals-case img{
     position:absolute ;
     left:0;
