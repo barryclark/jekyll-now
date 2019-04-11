@@ -21,8 +21,8 @@ main {border:none!important;}
 #site-nav label {color: var(--color-grey);border: thin solid transparent;}
 #site-nav label:hover {color: var(--color-soft-grey);border: thin solid #353535;}
 .cover img {width: 80px;margin-bottom: 2.0em;}
-.cover h2 {letter-spacing: 0.001em;line-height: .8em;font-weight: normal ;font-size: 1em !important;}
-.cover h1 {letter-spacing: 0.001em;line-height: .6em;font-size: 2.69em;font-weight: lighter}
+.cover h2 {letter-spacing: -0.001em;line-height: 1.2em;font-weight: normal ;font-size: 1em !important;}
+.cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
 body {text-align: justify;-moz-hyphens: none;-ms-hyphens: none;-webkit-hyphens: none;-o-hyphens: none;hyphens: none;word-wrap: none;}
 p, ul {font-size: 18px;line-height: 27px;}
@@ -128,25 +128,23 @@ figure em a {border: none;border-bottom;line-height: 0.2em;padding: 12px 4px;}
 #layout h3 u {font-weight: 300;letter-spacing: 0em}
 hr.lifting {margin: 0px;height: 1px;}
 
-#glass-front {
-    background: transparent;margin-top: 0px !important;padding-top: 52px;background-image: url("/img/homed.jpf");image-rendering: crisp-edges;
-    background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;overflow: hidden;text-align: center;
-}
+#glass-front {min-width:100%;background: rgba(12,12,12,.98) ;padding: 10px !important;}
+
 /* Covers */
-#covers a {color: var(--color-grey);text-decoration: none;margin: 0px;}
-#covers .cover-links {padding-top: 6px;margin-top: -20px;padding-bottom: 32px;border: thin solid transparent;display: block;}
-#covers .cover-icon {max-width: 100%;height: auto;opacity:0.3;}
-#covers a:hover {opacity:1;}
+#glass-front a {color: var(--color-grey);text-decoration: none;margin: 0px;}
+#glass-front .cover-links {padding-top: 16px;margin-top: 0px;padding-bottom: 32px;display: block;}
+#glass-front .cover-icon {max-width: 100%;height: auto;opacity:0.3;}
+#glass-front a:hover {opacity:1;}
 #glass-front a:hover, #covers .cover-links a:hover {color: var(--color-white);}
 #glass-front a h4:hover {color: var(--color-white);}
 #glass-front a.cover-links:after {content: '\25B6';opacity: 0.06;position: absolute;margin-left: -15px;bottom: 16px;padding-right: 6px;-o-transform: rotate(90deg);-ms-transform: rotate(90deg);-moz-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);}
 #glass-front a:hover:after {content: '\25B6';opacity: 100;    position: absolute;bottom: 6px;text-align: center;}
-#covers .cover-icon img {width: 72px;opacity:0.6; margin: 0px;}
-#covers article {border: 0;}
+#glass-front .cover-icon img {width: 72px;opacity:0.6; margin: 0px;}
+#glass-front article, #covers article {border: 0;}
 #page #covers article {text-shadow: 1px 1px 3px rgba(0, 0, 0, .12);}
-#covers h5 {line-height: 1.5em;}
-#covers h4 {margin: 0px;line-height: 1em;}
-#fronters img {min-width: 110px;}
+#glass-front h5 {line-height: 1em;font-size:23px;}
+#glass-front h4 {margin: 0px;font-size:1.6em;line-height: 1em;letter-spacing: -0.01em;}
+#glass-front img {width: 72px;margin-bottom:6px;}
 #fronters p {margin: 0px;min-width: 100%;}
 #fronters .front-responsive {min-width: 19%;margin-left: 30%;}
 #fronters .cover-justify {text-align: right;}
