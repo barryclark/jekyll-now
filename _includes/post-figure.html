@@ -1,4 +1,4 @@
-<figure class="center big">
+<figure class="{{ include.alignment | default: 'center' }} {{ include.image_size | default: 'big' }}">
   {% include self-linked-image.html path=include.path alt=include.caption %}
   <figcaption>{{ include.caption }}</figcaption>
 </figure>

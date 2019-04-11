@@ -33,7 +33,7 @@ A rotating motor is something great, even though it would be better to know in w
 
 ### Processor
 
-In order to process two video live feeds at the same time, it takes more computing power than an ATMega328P – as it was installed on the Arduino Nano we wanted to use last year – could ever deliver. That's why we want to use the [STM32H743ZI](https://www.st.com/resource/en/datasheet/stm32h743zi.pdf) from STMicroelectronics. We chose the chip not only because of its catchy name, but also because of its outstanding performance. The processor is based on the ARM Cortex M7; with 400&nbsp;MHz (25 times faster than an Arduino) and 1&nbsp;MByte RAM (500 times more than an Arduino) it will be easy to record multiple measurements and images simultaneously.
+In order to process two video live feeds at the same time, it takes more computing power than an ATMega328P – as it is installed on an Arduino Nano – could ever deliver. That's why we want to use the [STM32H743ZI](https://www.st.com/resource/en/datasheet/stm32h743zi.pdf) from STMicroelectronics. We chose the chip not only because of its catchy name, but also because of its outstanding performance. The processor is based on the ARM Cortex M7; with 400&nbsp;MHz (25 times faster than an Arduino) and 1&nbsp;MByte RAM (500 times more than an Arduino) it will be easy to record multiple measurements and images simultaneously.
 
 To make the chip easier to program, we will implement an HAL (Hardware Abstraction Layer). This ensures that our program works largely independent of the hardware, which can be helpful if we decide to use a different chip after all. The programming will be discussed in more detail in a later blog post.
 
