@@ -174,16 +174,6 @@ figure {
     max-width: $big-width;
   }
 
-  &.left,
-  &.right {
-    margin-bottom: 1em;
-
-    @include mobile {
-      float: none;
-      margin: 0 auto;
-    }
-  }
-
   &.left {
     margin-right: 1em;
     float: left;
@@ -192,6 +182,16 @@ figure {
   &.right {
     margin-left: 1em;
     float: right;
+  }
+
+  &.left,
+  &.right {
+    margin-bottom: 1em;
+
+    @include mobile {
+      float: none;
+      margin: 0 auto;
+    }
   }
 
   &.center {
