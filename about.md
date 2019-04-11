@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Some information about Glidermed!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Es un grupo de amigos que se dedican a aprender y divertirse jugando CTF con el objetivo de adquirir nuevos conocimientos.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:glidermed@googlegroups.com)
