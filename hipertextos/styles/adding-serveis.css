@@ -41,7 +41,7 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #section-brand h3, #section-brand h4.head-section small,
 #section-brand a {
 	color:var(--color-white);}
-#section-paint h2, #section-brand h2 {margin-bottom:0px;letter-spacing: -0.042em}
+#section-paint h1, #section-brand h1 {margin-bottom:0px;letter-spacing: -0.042em}
 #section-paint {background-color:var(--color-black) ;text-align:center;}
 #section-music {background:linear-gradient(rgba(216,80,162,1),rgba(193,100,160,.9),rgba(97,149,209,1));
     color:var(--color-white) ;border:none;text-align:center;}
