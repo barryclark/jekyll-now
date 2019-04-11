@@ -11,16 +11,6 @@
 body * {
 
 }
-#page, dialog {
-	cursor: url('/hipertextos/cursors/cursor.png'), auto !important;
-}
-a, label, button {
-	cursor: url('/hipertextos/cursors/cursorpointer.png'), auto !important;
-}
-a:active, label:active, button:active {
-	cursor: pointer;
-	cursor: url('/hipertextos/cursors/cursorpointerred.png'), auto !important;
-}
 
 /* KTR landing */
 
