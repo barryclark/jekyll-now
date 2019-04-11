@@ -64,10 +64,9 @@ img.apps {border-radius:28px;max-width:64%;}
 #web-top  {text-align:justify;}
 #web-icons h3 {font-size:1.6em;line-height: 1em; padding-left:12px;margin-bottom:0px;}
 #web-top p {font-size:15px;line-height:1.2em;padding:3px 12px 12px 12px;}
-#resumed-paint svg {width:32px;}
+#resumed-paint svg {width:32px;min-width:100%;}
 #resumed-paint {color:var(--color-translucentwhite);}
 #super-cover img {border: 6px solid #111;border-radius:14px;max-width:768px;height:auto;}
-#resumed-paint h5 {margin: 0 0 8px 0;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
 #section-brand .thumb-4 img {max-width:48%;}
