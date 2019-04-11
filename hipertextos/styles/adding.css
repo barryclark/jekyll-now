@@ -74,7 +74,7 @@ main {padding-bottom: 0 !important;}
     border-top:thin solid rgba(250,250,250,.62);border-bottom:thin solid rgba(250,250,250,.72);
     box-shadow:1px 3px 12px rgba(20,20,20,.25), 1px 6px 72px rgba(120,120,120,.25);
 }
-.note svg {max-width:100px;}
+img.note {max-width:72px;background:var(--color-black);}
 #logotips article {padding: 23px;}
 #fronters-brand .cover-justify svg {min-width: 72px;}
 #web-oferta { background:var(--color-softgrey);image-rendering: crisp-edges;background-position: top center;
