@@ -8,13 +8,12 @@ parallax: true
 ---
     {% include partials/navigation/nav.html %}
 	{% include partials/head.html %}
+	<div id="glass-front">
+		{% include partials/navigation/covers.html %}
+		<hr class="lifting">
+	</div>
     <main id="page-main" role="main" class="darkmode anm-fadeIn delay-100">
 			<section id="covers">
-				<div id="glass-css"></div>
-				<div id="glass-front">
-				{% include partials/navigation/covers.html %}
-				<hr class="lifting">
-				</div>
 			<div id="web-oferta" class="parallax" style="background-image: url('{{ site.baseurl }}/img/imac.jpf');">
 				<div>
 					<hr>
