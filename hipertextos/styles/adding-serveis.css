@@ -35,7 +35,7 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #browser-ios {padding:12px 0 28px 0;line-height:2.6em;
     background:rgba(189,185,185,1) ;text-align:center;}
 #browser-ios svg {max-width:28px;color:rgba(212,212,212,1) ;margin:0 12px 0 0;}
-#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;margin-top:-30px;}
+#section-brand {background:linear-gradient(rgba(155,235,255,1),rgba(105,255,235,.9), rgba(155,155,155,1));}
 #section-brand h3, #section-brand h4.head-section small,
 #section-brand a {
 	color:var(--color-white);}
