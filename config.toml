@@ -82,7 +82,7 @@ enableGitInfo = false
   logo = ""
   
   # Set to true to disable code folding
-  disable_codefolding = false
+  disable_codefolding = true
   # Set to "hide" or "show" all codes by default
   codefolding_show = "hide"
 
@@ -168,7 +168,7 @@ enableGitInfo = false
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   custom_css = ["codefolding.css"]
-  custom_js  = ["collapse.js","dropdown.js","transition.js","codefolding.js"]
+  custom_js  = []
 
   # Publication types.
   #   Used to categorize publications.
