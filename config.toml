@@ -167,8 +167,8 @@ enableGitInfo = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["codefolding"]
-  custom_js  = []
+  custom_css = ["codefolding.css"]
+  custom_js  = ["collapse.js","dropdown.js","transition.js","codefolding.js"]
 
   # Publication types.
   #   Used to categorize publications.
