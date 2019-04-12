@@ -1,0 +1,23 @@
+---
+title: Test post
+author: James
+date: '2019-04-12'
+slug: test-post
+draft: true
+categories: []
+tags:
+  - programming
+header:
+  caption: ''
+  image: ''
+---
+
+Blah blah blah
+
+```{r setup, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(lubridate)
+
+plot(1:100)
+```
+
