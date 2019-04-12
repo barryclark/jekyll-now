@@ -3,16 +3,28 @@ layout: default
 ---
 
 <div class="posts">
+  <div class="container">
+    This page contains reports that track how much time I spend on different
+    projects to make it easier for me to shift my priorities from week to week.
+    I track the time I spend on different tasks with
+    <a href="https://clockify.me/tracker">clockify</a> and then pull that with
+    their api, summarize my time spent in varying ways, and create a markdown
+    file that reports on what I have worked on (all of which is done in R). I
+    generate reports every other Monday.
+  </div>
+  <br />
+  <div class="container">
+    You can see how I do this on the github page for this site right
+    <a href="https://github.com/mfidino/mfidino.github.io/tree/master/R">here</a
+    >.
+  </div>
   {% for post in site.posts %}
-    <article class="post">
+  <article class="post">
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="entry">{{ post.excerpt }}</div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  </article>
   {% endfor %}
 </div>
