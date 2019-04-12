@@ -34,6 +34,7 @@ library(cranlogs)
 to_date <- "2019-04-06"
 from_date <- as.character(as_date(to_date) - duration(1, "year"))
 file_name <- paste0("CRAN package downloads ", to_date, ".rds")
+
 ```
 
 I used the `cranlogs` package to get daily download counts of all currently available CRAN packages over the period `r from_date` through `r as.character(to_date)`. I then limited the sample to packages that had been downloaded at least once between `r from_date` and `r as_date(as_date(to_date) - duration(6, "months"))`. This had the effect of excluding about 1000 packages that were either only recently added to CRAN or that had been discontinued but were still sitting on CRAN.
