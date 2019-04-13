@@ -5,9 +5,9 @@ permalink: /about/
 published: true
 ---
 #### Bio
-Product Manager. Cryptocurrency enthusiast. Berkeley MBA. Paleo. Aspiring Mountaineer.
+Product Manager. Cryptocurrency enthusiast. Dad. Berkeley MBA. Paleo. Aspiring Mountaineer.
 
-#### Me
+#### Reach
 [messenger](http://m.me/scott.shapiro): m.me/scott.shapiro
 <br>btc: 1Scottu5rUaX8fsnBjXqJtC5pcmddHk7d
 <br>Lightning Network: [ln.shap.ro](https://1ml.com/node/0206c7b60457550f512d80ecdd9fb6eb798ce7e91bf6ec08ad9c53d72e94ef620d/)
