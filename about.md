@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: Über keep-on-learning
 permalink: /about/
 ---
 
-Some information about you!
+### Was steckt hinter keep-on-learning?
 
-### More Information
+Das Ziel hinter dieser Unternehmung ist eine Plattform zu schaffen, die es Interessierten ermöglicht aktuelle Programmiersprachen erlernen zu können.
 
-A place to include any other types of information that you'd like to include about yourself.
+### Kontakt
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[webmasterATkeep-on-learning.de](mailto:webmaster@keep-on-learning.de)
