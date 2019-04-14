@@ -46,15 +46,19 @@ Bush narrowly won the razor-thin race in Florida and got 271 votes, while Gore g
 The re-apportionment is generally done every decade, following a decennial census. US
 
 **3.1 The Jefferson method** (invented by Thomas Jefferson) was the first method used from 1790 to 1832.
+
 **3.2 The Webster method** (invented also by a famous stateman Daniel Webster) was used from 1840 to 1850.
+
 **3.3 The Hamilton method** (proposed by Alexander Hamilton, also a stateman) was used from 1850 to 1900. This method although seemed to round the seats well, introduced a number of paradoxes and absurdity to apportionment, Finally, the Webster method was re-introduced in 1911 til 1940.
+
 **3.4 The Huntington-Hill method** (by two mathematicians Edward Vermilye Huntington, Joseph Adna Hill) method was introduced in 1941, and is still the method used today.
+
 **3.5 The Dean method** (by James Deam a professor of Astronomy at Dartmouth college). This method was never used.
 
 
 # 4. What's in each method
 
-Let's consider first the Jefferson's method.
+**4.1** Let's consider first the Jefferson's method.
 
 
 <details>
@@ -87,10 +91,10 @@ def Jefferson_method(df,House_seat = 435):
 
 The idea behind this method is that for each seat awarded, we first calculate the quotient score, then the each congressional seat is awarded to a state with highest quotient score. The process is repeated until all seats are accounted for.
 
+------------------------------------------------------------------------------------
 <br>
 <br>
-
-Webster method is similar to the Jefferson method, but the quotient is calculated slightly differently, so that the quotients of states already have large number of congressional seats are downweighted compared to smaller states. The history of how this method replaced the Jefferson method is fascinating. read [here](https://www.maa.org/press/periodicals/convergence/apportioning-representatives-in-the-united-states-congress-websters-method-of-apportionment/) for more information. 
+**4.2** Webster method is similar to the Jefferson method, but the quotient is calculated slightly differently, so that the quotients of states already have large number of congressional seats are downweighted compared to smaller states.
 
 <details>
 <summary>
@@ -119,10 +123,12 @@ def Webster_method(df,House_seat = 435):
 </p>
 </details>
 
+The history of how this method replaced the Jefferson method is fascinating. read [here](https://www.maa.org/press/periodicals/convergence/apportioning-representatives-in-the-united-states-congress-websters-method-of-apportionment/) for more information. 
 
+------------------------------------------------------------------------------------
 <br>
 <br>
-Then let's consider Hamilton method as well.
+**4.3** Then let's consider Hamilton method as well.
 
 <details>
 <summary>
@@ -160,11 +166,10 @@ def Hamilton_method(df,House_seat = 435):
 
 Hamilton method operates from a different underlying algebra. Instead of awarding seat to highest quotient, seats are given according to quota. First, seats are given according to the whole number of quota each state receives. Then the remaining seats are given by rank of the remainder of the quota. This method has a big advantage of keeping seats for each state within the proportional quota, namely within +/- 1 seats from the exact floating quota number. However, it leads to a lot of "paradoxes". read [here](https://en.wikipedia.org/wiki/Apportionment_paradox#Alabama_paradox/) for more information.
 
+------------------------------------------------------------------------------------
 <br>
 <br>
-
-
-The Dean method was never used, but it is interesting. The idea is to calculate the quota, not from the arithmetic mean, but from harmonic mean. The property of the harmonic mean is that it mitigates the impact of large outliers and aggravates that of small outliers. In other words, this method favor the small states over the big states.
+**4.4** The Dean method was never used, but it is interesting. The idea is to calculate the quota, not from the arithmetic mean, but from harmonic mean. The property of the harmonic mean is that it mitigates the impact of large outliers and aggravates that of small outliers. In other words, this method favor the small states over the big states.
 
 <details>
 <summary>
@@ -212,10 +217,10 @@ def Dean_method(df, House_seat = 435):
 
 Notice that the divisor here has to be adjusted so that the quota it gives out to states sum to 435.
 
+------------------------------------------------------------------------------------
 <br>
 <br>
-
-Lastly we consider Hungtinton-Hill method, which is the one in used today.
+**4.5** Lastly we consider Hungtinton-Hill method, which is the one in used today.
 
 <details>
 <summary>
