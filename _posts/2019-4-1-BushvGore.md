@@ -286,7 +286,11 @@ In any case, it seems the Hill method will stay with us for another decade as th
 
 **read more:**
 [Pythagorean means](https://en.wikipedia.org/wiki/Pythagorean_means/)
+
 [apportionement paradoxes](https://en.wikipedia.org/wiki/Apportionment_paradox#Alabama_paradox/) 
+
 [history of replacing Jefferson method with Webster method](https://www.maa.org/press/periodicals/convergence/apportioning-representatives-in-the-united-states-congress-websters-method-of-apportionment/)
+
 [proof of inequality of arithmetic and geometric means](https://en.wikipedia.org/wiki/Inequality_of_arithmetic_and_geometric_means/)
+
 [the court case that followed the election](https://en.wikipedia.org/wiki/Bush_v._Gore/)
