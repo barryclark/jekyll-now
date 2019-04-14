@@ -1,10 +1,10 @@
 ---
 layout: post
-title: You're up and running!
+title: Hit me
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Here's the idea:
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+You ever sit around your place, wishing a friend was around to toss you a snack? Nibl is our solution. We want to design a robot candy turret that responds to the voice command "Hit me", then does an infrared scan of the room to locate you, and then fires a Skittle. This blog will follow our journey. Welcome!
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+-Bhaskar
