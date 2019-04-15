@@ -5,7 +5,6 @@
 // IMPORTS
 //
 
-@import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
@@ -13,12 +12,10 @@
 /* BASE RULES */
 /**************/
 
-html {
-  font-size: 100%;
-}
 body,h1,h2,h3,h4,h5,h6 {
     font-family: "Lato", sans-serif
 }
+
 .w3-bar,h1,button {
     font-family: "Montserrat", sans-serif
 }
@@ -48,9 +45,24 @@ header{
   padding-top:1em;
   padding-bottom:1em;
   color: #326195; /* Rho Blue */
-
 }
 
+header .pre-head {
+  margin-top:16px;
+  font-size:24px;
+  vertical-align:text-bottom;
+}
+
+ header .pre-head img {
+  margin-right:.1em;
+  margin-bottom:.2em;
+}
+
+header h1 {
+ margin-top:0;
+ line-height: 1;
+ margin-bottom:16px;
+}
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -117,8 +129,19 @@ header{
   }
 }
 
+// Article tweaks
+article p{
+  margin-bottom:1em;
+  margin-top:0
+}
+
+article img{
+  max-width:90%;
+  padding:1em;
+}
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-
