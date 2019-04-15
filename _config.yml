@@ -84,6 +84,13 @@ authors:
     web_short_name: infinityworks.com
     gravatar: b372025c9a09ffa9b9de905fb01753e1
     linkedin: richard-harper-uk
+  robvk:
+    display_name: Robert van Kooten
+    email: robert.vankooten@infinityworks.com
+    web: https://til.robvk.uk/
+    web_short_name: robvk.uk
+    gravatar: a71f4a55aabbaa77bf1c3e2e4e33e6c1
+    linkedin: robertvankootenuk
     
 #
 # Flags below are optional
