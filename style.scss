@@ -287,3 +287,31 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+// Added stuff
+// Twitter Bootstrap Tables
+
+// https://github.com/twbs/bootstrap/blob/master/scss/_tables.scss
+
+table {
+  width: 100%;
+  margin-bottom: 10;
+  background-color: #fff; // Reset for nesting within parents with `background-color`.
+
+  th,td {
+    padding: 5 px;
+    vertical-align: top;
+    border-top: 1 px solid #111;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * 1 px) solid #111;
+  }
+
+  tbody + tbody {
+    border-top: (2 * 1 px) solid #111;
+  }
+}
+

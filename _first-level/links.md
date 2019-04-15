@@ -9,7 +9,7 @@ title: Useful Links
 * [C++](http://www.cplusplus.com/)
 * [Elliptic Curves - John Kopper](https://math.uchicago.edu/~may/VIGRE/VIGRE2010/REUPapers/Kopper.pdf)
 * [Graph Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
-* [Graph Theory]({{ site.url }}/assets/Graph Theory Finland CC.pdf)
+* [Graph Theory]({{ site.url }}/assets/pdfs/Graph Theory Finland CC.pdf)
 * [Cool Youtube Videos]({{ site.url }}/youtube)
 
 ## Other Blogs
