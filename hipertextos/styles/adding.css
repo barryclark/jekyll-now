@@ -167,7 +167,7 @@ hr.lifting {margin: 0px;height: 1px;}
 .nextt {min-width: 41px;height: 45px;margin: 0px;}
 .nextt.to-up {transform: rotate(180deg) !important;padding-top: 5px;}
 
-div.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.png") ;width: 480px;height: 480px;margin-top: -30px;background-image: url("/img/golden.jpf");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;z-index: -10;position: absolute;left: 12%;}
+div.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.png") ;width: 480px;height: 480px;margin-top: -30px;background-image: url("/img/golden.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;z-index: -10;position: absolute;left: 12%;}
 
 /* Dialog */
 #dialog .icon-cog svg {max-width: 32px !important;margin-left:42px;}
