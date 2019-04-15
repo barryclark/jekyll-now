@@ -62,6 +62,10 @@ collections:
     path: _posts
     output: true
     permalink: /:collection/:path
+  first-level:
+    path: _first-level
+    output: true
+    permalink: /:name
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
