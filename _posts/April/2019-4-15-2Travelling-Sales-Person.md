@@ -37,7 +37,7 @@ def travellingsalesperson():
       i = 0
 ```
 
-So the other thing is $$i$$ and $$x$$. I chose these so we can change the difficulty of the search. This search will search until, we've gone $$x$$ searches without an optimization, or we hit our global maximum. This allows us to either restart with a different heuristic instead of nearest neighbor, or just cutoff at our local minimum. The problem with the Travelling Salesperson is its not an easy problem. To find the optimal solution, it is unknown if there even exists an algorithm in [$$O(2^n)$$](https://en.wikipedia.org/wiki/Travelling_salesman_problem#Exact_algorithms). This is a decent solution for algorithms that will finish in a certain amount of time.  
+So the other thing is $$i$$ and $$x$$. I chose these so we can change the difficulty of the search. This search will search until, we've gone $$x$$ searches without an optimization, or we hit our global maximum. This allows us to either restart with a different heuristic instead of nearest neighbor, or just cutoff at our local minimum. The problem with the Travelling Salesperson is its not an easy problem. To find the optimal solution, it is unknown if there even exists an algorithm in [$$O(2^n)$$](https://en.wikipedia.org/wiki/Travelling_salesman_problem#Exact_algorithms). I think this is a good implementation of something that might be useful on say a cell phone.
 
 I would love to do some more analysis, but instead I'll leave you with a stanalone [file]() with the code, and the progression over the course of a 12 node graph and a cutofflimit 400,000 which is computed in less than a second on my computer.
 
