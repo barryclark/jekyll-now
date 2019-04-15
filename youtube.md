@@ -17,6 +17,7 @@ I believe Youtube is an amazing resource. The content creators on Youtube can do
 * [CuriousInventor](https://www.youtube.com/channel/UCOGrxFj_j7PZRQM63OFCwmA) 
 * [CodeBullet](https://www.youtube.com/channel/UC0e3QhIYukixgh5VVpKHH9Q)
 * [Art of the Problem](https://www.youtube.com/channel/UCotwjyJnb-4KW7bmsOoLfkg)
+* [Suckerpinch](https://www.youtube.com/user/suckerpinch)
 
 
 ## 3Blue1Brown
@@ -26,6 +27,8 @@ I believe Youtube is an amazing resource. The content creators on Youtube can do
 * [Putnam Cool Solution](https://www.youtube.com/watch?v=OkmNXy7er84)
 * [Pythagorean Triples](https://www.youtube.com/watch?v=QJYmyhnaaek)
 * [Calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM)
+* [Cryptocurrency](https://www.youtube.com/watch?v=bBC-nXj3Ng4)
+* 
 
 ## P vs NP
 * [P vs NP Hackadashery](https://www.youtube.com/watch?v=YX40hbAHx3s)
@@ -37,8 +40,8 @@ I believe Youtube is an amazing resource. The content creators on Youtube can do
 * [Cryptography](https://www.youtube.com/playlist?list=PLB4D701646DAF0817)
 * [Computer Science](https://www.youtube.com/playlist?list=PLbg3ZX2pWlgI_ej6ZhGd45-cPoWLZD9pT)
 * [Prime Numbers](https://www.youtube.com/watch?v=3RfYfMjZ5w0)
-* 
 
-## MIT Courseware
+## Other videos
 
 * [MIT Graph Theory](https://www.youtube.com/watch?v=h9wxtqoa1jY)
+* [Cryptocurrency CuriousInventor](https://www.youtube.com/watch?v=Lx9zgZCMqXE&list=PLSWi_EtqTl0KQ7cdOtwMHp4BnVQ18iTXi)
