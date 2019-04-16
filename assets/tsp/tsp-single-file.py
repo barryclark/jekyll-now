@@ -1,52 +1,3 @@
----
-layout: post
-title: Travelling Salesperson Problem
-date: April 15, 2019
-time: 19:39 UTC-4
----
-So the Travelling Salesperson Problem, is a really cool problem in Mathematics and Computer Science. For more information see, [Wikipedia](https://en.wikipedia.org/wiki/Travelling_salesman_problem) and [Youtube Visualization](https://www.youtube.com/watch?v=SC5CX8drAtU).
-
-So I want a solution that would be nice for a handheld phone. It's a combination of a Greedy Nearest Neighbor search, and Lin-Kernighan Heuristic with a cut off for when we hit the local minimum. I didn't want to cut it off with some high limit. I wanted it to search until the search became futile compared to some upper limit. I've written a small little program(I also made it one file so you can try it yourself), to implement this heuristic.
-
-#### Psuedocode
-```python
-def travellingsalesperson():
-  # we want a connected adjacency matrix graph with all distances
-  # If you have say a unbridgable gap, like an ocean put +INF
-  matrix = getdistancematrix
-  # conduct nearest neighbor search
-  nnwalk = _nearestneighbor(matrix)
-  # ge the total distance of the trip
-  weight = _getweight(nnwalk, matrix)
-  i = 0
-  globali = 0
-  while i < x and globali < globalmax:
-    i += 1
-    globali += 1
-    # copy the walk
-    walk = nnwalk[:]
-    # random 3 opt swap
-    threeoptswap(walk)
-    # figure out the weight of the new walk
-    tweight = _getweight(walk, matrix)
-    # if it's a good walk, it's our new maximum
-    if weight > tweight:
-      nnwalk = walk[:]
-      weight = tweight
-      # reset i
-      i = 0
-```
-
-So the other thing is $$i$$ and $$x$$. I chose these so we can change the difficulty of the search. This search will search until, we've gone $$x$$ searches without an optimization, or we hit our global maximum. This allows us to either restart with a different heuristic instead of nearest neighbor, or just cutoff at our local minimum. The problem with the Travelling Salesperson is its not an easy problem. To find the optimal solution, it is unknown if there even exists an algorithm in [$$O(2^n)$$](https://en.wikipedia.org/wiki/Travelling_salesman_problem#Exact_algorithms). I think this is a good implementation of something that might be useful on say a cell phone.
-
-I would love to do some more analysis, but instead I'll leave you with a standalone [file]({{ site.url }}/assets/tsp/tsp-single-file.py) with the code, and the progression over the course of a 12 node graph and a `cutofflimit` 400,000 which is computed in less than a second on my computer.
-
-
-![]({{ site.url }}/images/tsp/tsp.gif)
-##### Note:
-I know this is not good code, I rewrote all the work I have so I can put it all into one file.
-### Single File Code to try yourself
-```python
 # Copyright 2019 Justin Baum
 # tsp-single-file.py
 # Python3
@@ -175,4 +126,3 @@ def _getweight(walk, matrix):
 
 if __name__ == "__main__":
   main()
-```
