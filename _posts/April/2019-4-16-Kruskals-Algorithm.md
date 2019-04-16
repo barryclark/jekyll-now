@@ -37,7 +37,7 @@ import random
 
 def kruskals(matrix):
   m = len(matrix)
-  E = [[i, j, matrix[i][j]] for i in range(m) for j in range(m)]
+  E = [[i, j, matrix[i][j]] for i in range(m) for j in range(i+1,m)]
   E.sort(key = lambda x: x[2])
   walk = []
   dj = list(range(m))
@@ -98,4 +98,5 @@ V = gennodes(10)
 matrix = makematrix(V)
 
 showGraph(V, matrix, kruskals(matrix))
+
 ```
