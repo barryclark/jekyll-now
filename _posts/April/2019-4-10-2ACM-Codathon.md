@@ -5,7 +5,7 @@ date: April 10, 2019
 time: 23:17 UTC-4 
 ---
 
-This problem was posed in the Spring 2019 ACM Lower Division Codeathon. I chose this problem because it is a very nice strategy problem. Not necessarily solely an algorithm problem anymore. It is also partly a strategy and optimization problem all rollwed into one. The original analysis was from USACO's Nick Wu, [Cow Tipping](http://usaco.org/current/data/sol_cowtip_bronze_jan17.html). The [Original Problem](http://usaco.org/index.php?page=viewproblem2&cpid=689).
+This problem was posed in the Spring 2019 ACM Lower Division Codeathon. I chose this problem because it is a very nice strategy problem. Not necessarily solely an algorithm problem anymore. It is also partly a strategy and optimization problem all rolled into one. The original analysis was from USACO's Nick Wu, [Cow Tipping](http://usaco.org/current/data/sol_cowtip_bronze_jan17.html). The [Original Problem](http://usaco.org/index.php?page=viewproblem2&cpid=689).
 
 
 > ### Gameboard
@@ -79,7 +79,7 @@ It corresponds to the board
 ![Input Board](../images/qboard/input.png "Input Board"){:height="200px" width="200px"}.  
 The question is what is the minimum number of steps to get to this board,  
 ![Output Board](../images/qboard/output.png "Output Board"){:height="200px" width="200px" align="center"}.  
-Which square do we start with? This is the key question, we want to start with a square such that, we never have to change it again. This works for the bottom right square. Once we check it, and flip accordingly, we can go in either the up or left directions. This is because now we never need to return to that corner. So the same logic holds for the next square. Once we either flip it, or ignore it, we can never undo our progress for that particular square. However everytime we flip a square, we need to go back and flip all the previous squares. Which is why this is $$O(n^4)$$. This particular problem has a minimum number of flips as 4.
+Which square do we start with? This is the key question, we want to start with a square such that, we never have to change it again. This works for the bottom right square. Once we check it, and flip accordingly, we can go in either the up or left directions. This is because now we never need to return to that corner. So the same logic holds for the next square. Once we either flip it, or ignore it, we can never undo our progress for that particular square. However every time we flip a square, we need to go back and flip all the previous squares. Which is why this is $$O(n^4)$$. This particular problem has a minimum number of flips as 4.
 
 
 ## Python Solution
