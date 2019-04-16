@@ -5,7 +5,7 @@
 
 import networkx as nx
 import matplotlib.pyplot as plt
-import networkutils as nu
+#import networkutils as nu
 
 """
 1. Sort all the edges in non-decreasing order of their weight.
@@ -48,7 +48,28 @@ def showGraph(V, matrix, walk):
   nx.draw(X, V, with_labels=True)
   plt.savefig('fig.png')
 
-V = nu.gennodes(10)
-matrix = nu.makematrix(V)
+## Utils
+def gennodes(n, size = 200):
+  graph = {}
+  for i in range(n):
+    x = random.randint(0, size)
+    y = random.randint(0,size)
+    graph[i] = (x,y)
+  return graph
+
+def makematrix(V):
+  m = len(V)
+  matrix = [[0 for i in range(m)] for j in range(m)]
+  for node in V:
+    for neighbor in V:
+      point1 = V[node]
+      point2 = V[neighbor]
+      matrix[node][neighbor] = int(dist(point1, point2)**0.5)
+  return matrix
+
+## Run code
+
+V = gennodes(10)
+matrix = makematrix(V)
 
 showGraph(V, matrix, kruskals(matrix))

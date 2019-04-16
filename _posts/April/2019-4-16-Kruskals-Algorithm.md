@@ -6,11 +6,13 @@ time: 15:50 UTC-4
 ---
 
 This is more of an addendum to [Travelling Salesperson]({{ site.url }}/posts/April/2019-4-15-2Travelling-Sales-Person).
-I quickly made a solution to Minimum Spanning Tree problem. This algorithm runs in $$O(\alpha(n)n\log(n))$$ time. This is the Inverse Ackerman function $$\alpha$$, and it grows incredibly slow, $$\alpha (2^{2^{2^{65533}}} - 3) = 4$$. So for all values this algorithm will run for, this is $$O(n\log(n))$$.
-
-The true analysis of this algorithm would be $$O(E\log(E))$$, however our set-up is always a connected graph, so we can just denote it as $$n$$ which would technically be $$V$$. For a more detailed analysis, check Wikipedia's for a simple to follow one [here](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm#Complexity).
+I quickly made a solution to Minimum Spanning Tree problem. This algorithm runs in $$O(\alpha(E)E\log(E))$$ time. This is the Inverse Ackerman function $$\alpha$$, and it grows incredibly slow, $$\alpha (2^{2^{2^{65533}}} - 3) = 4$$. So the analysis of this algorithm would basically be $$O(E\log(E))$$, however our set-up is always a connected graph, so we can just denote it as $$E=n(n-1)/2$$, which is ~$$n^2$$. And for when $$n=V$$, our algorithm runs in $$O(\alpha(n^2)n^2 2\log(n))$$ which is $$O(n^2\log(n))$$. For a more detailed analysis, check Wikipedia's for a simple to follow one [here](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm#Complexity).
 
 ![]({{ site.url }}/images/tsp/kruskal1.png)
+
+### Addendum
+
+I wanted to thank William Edwards, he posed a problem in the USC Codeathon this Spring, and it was the disjoint set data structure. It is brilliantly simple, an incredibly weird run time $$O(\alpha(n))$$, and otherwise cool algorithm. It is implemented in a not very forward facing way down below.
 
 ## Source Code
 
@@ -24,7 +26,7 @@ Click [here]({{ site.url }}/assets/tsp/kruskals-algo.py) for the source file.
 
 import networkx as nx
 import matplotlib.pyplot as plt
-import networkutils as nu
+#import networkutils as nu
 
 """
 1. Sort all the edges in non-decreasing order of their weight.
@@ -67,8 +69,29 @@ def showGraph(V, matrix, walk):
   nx.draw(X, V, with_labels=True)
   plt.savefig('fig.png')
 
-V = nu.gennodes(10)
-matrix = nu.makematrix(V)
+## Utils
+def gennodes(n, size = 200):
+  graph = {}
+  for i in range(n):
+    x = random.randint(0, size)
+    y = random.randint(0,size)
+    graph[i] = (x,y)
+  return graph
+
+def makematrix(V):
+  m = len(V)
+  matrix = [[0 for i in range(m)] for j in range(m)]
+  for node in V:
+    for neighbor in V:
+      point1 = V[node]
+      point2 = V[neighbor]
+      matrix[node][neighbor] = int(dist(point1, point2)**0.5)
+  return matrix
+
+## Run code
+
+V = gennodes(10)
+matrix = makematrix(V)
 
 showGraph(V, matrix, kruskals(matrix))
 ```
