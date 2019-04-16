@@ -26,6 +26,7 @@ Click [here]({{ site.url }}/assets/tsp/kruskals-algo.py) for the source file.
 
 import networkx as nx
 import matplotlib.pyplot as plt
+import random
 #import networkutils as nu
 
 """
@@ -87,6 +88,9 @@ def makematrix(V):
       point2 = V[neighbor]
       matrix[node][neighbor] = int(dist(point1, point2)**0.5)
   return matrix
+
+def dist(point1, point2):
+  return (point1[0] - point2[0])**2 + (point1[1] - point2[1])**2
 
 ## Run code
 
