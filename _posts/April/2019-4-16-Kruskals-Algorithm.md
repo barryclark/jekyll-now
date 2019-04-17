@@ -14,6 +14,10 @@ I quickly made a solution to Minimum Spanning Tree problem. This algorithm runs 
 
 I wanted to thank William Edwards, he posed a problem in the USC Codeathon this Spring, and it was the disjoint set data structure. It is brilliantly simple, an incredibly weird run time $$O(\alpha(n))$$, and otherwise cool algorithm. It is implemented in a not very forward facing way down below.
 
+Also to show how fast this algorithm is, here's 100 nodes, which would be practically unsolvable in the Travelling Salesperson Problem.
+![]({{ site.url }}/images/tsp/kruskal2.gif)
+
+
 ## Source Code
 
 Click [here]({{ site.url }}/assets/tsp/kruskals-algo.py) for the source file.
