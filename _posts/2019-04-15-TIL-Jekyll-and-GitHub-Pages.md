@@ -56,7 +56,6 @@ You can only add a single domain through the UI. So what about `www` and my blog
 
 At this point I spent a little time digging into whether I could get the DNS for the subdomain to point to a subfolder on the primary domain. I'm pretty sure DNS won't do this and normally you'd configure the web server to route traffic by domain to a website on the server. I did read an amusing thread on a forum with one person becoming quite irate whilst repeatedly claiming their work DNS did exactly this. I gave it a go anyway, just in case. Even though Route53 accepts a full URL as the target for a `CNAME`, it doesn't work.
 
-{: .um-actually}
 DNS only deals with domain names and IP addresses. An A record maps a domain to one or more IP addresses. A CNAME maps a domain to another domain. as in "go look up this domain instead and route your traffic there."
 
 So how to get around this? [This Stack Overflow answer](https://stackoverflow.com/questions/10685961/multiple-github-pages-and-custom-domains-via-dns) we looked at before seems to insinuate you can have multiple `CNAME` files in different folders and it will route traffic automagically? Let's try and find out.
@@ -75,7 +74,6 @@ But I now have an idea. I create another repository called `TodayILearned`. In t
 
 So why an `A` for the root and `CNAME` for TIL? According to [the GitHub docs](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-an-alias-or-aname-record-with-your-dns-provider) you can use a CNAME for the root but this can cause problems with things like e-mail. For this to work correctly, your DNS provider needs to support something called "CNAME Flattening". I don't have time to dig into what that is and whether Route53 supports it right now, so using an `A` record is the easiest way forward.
 
-{: .box-note}
 **Edit:** I searched later on and found that CloudFlare supports CNAME Flattening, but couldn't find any AWS docs on the topic so I surmise they probably don't support it. Good thing I went with an A record for the root!
 
 And there you have it! `robvk.uk` is now going to my `thatrobvk.github.io` repository, and `til.robvk.uk` goes to my `TodayILearned` repository. One final tweak was to change the main site's `CNAME` file to contain `www.robvk.uk` so that's the domain people see instead of `robvk.uk`.
