@@ -28,7 +28,6 @@ I believe Youtube is an amazing resource. The content creators on Youtube can do
 * [Pythagorean Triples](https://www.youtube.com/watch?v=QJYmyhnaaek)
 * [Calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM)
 * [Cryptocurrency](https://www.youtube.com/watch?v=bBC-nXj3Ng4)
-* 
 
 ## P vs NP
 * [P vs NP Hackadashery](https://www.youtube.com/watch?v=YX40hbAHx3s)
