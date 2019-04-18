@@ -34,10 +34,8 @@ There's nothing special in the first part as it is basically about building the 
 
 The interresting part is the following line
 `RUN /opt/openjdk-12/bin/jlink --compress=2 --no-header-files --no-man-pages --strip-debug --output /function/fnjre --add-modules $(/opt/openjdk-12/bin/jdeps --print-module-deps /function/target/function.jar)`
-
 To understand it, we need to first look at the 2nd part of this command.
-
-`/opt/openjdk-12/bin/jdeps --print-module-deps /function/target/function.jar)` is using [`jdeps`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html) to produce a list of modules required by our function (`function.jar`), modules list that is passed to [`jlink`](https://docs.oracle.com/en/java/javase/11/tools/jlink.html) via its `--add-modules` parameter. Using those modules (abd only those!), `jlink` will produce a custom JRE that will be placed in the `/function/fnjre` directory.
+`/opt/openjdk-12/bin/jdeps --print-module-deps /function/target/function.jar` is using [`jdeps`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html) to produce a list of modules required by our function (`function.jar`), modules list that is passed to [`jlink`](https://docs.oracle.com/en/java/javase/11/tools/jlink.html) via its `--add-modules` parameter. Using those modules (abd only those!), `jlink` will produce a custom JRE that will be placed in the `/function/fnjre` directory.
 
 To even reduce the size of the JRE, we instruct `jlink`to remove headers file, man pages, debugging information and finally, we compress the result JRE.
 
