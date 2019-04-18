@@ -18,7 +18,7 @@ To create a function that uses GraalVM `native-init` we will use the Fn `init-im
 
 `fn init --init-image fnproject/fn-java-native-init graalfunc`
 
-The parameter passed (_"fnproject/fn-java-native-init"_) to `init-image` is a Docker image that will produce all the artifact required by the function, including GraalVM AOT compiler.
+The parameter passed (_"fnproject/fn-java-native-init"_) to `init-image` is a Docker image that will produce all the artifacts required by the function, including GraalVM AOT compiler support.
 
 If you look at the content of the newly created _"modularfunc"_ directory, you will see familiar content (`pom.xml`, `func.yaml`, `HelloFunction.java`, etc.) but also a `Dockerfile` that Fn will use to build the actual container image of the function.
 
