@@ -16,7 +16,7 @@ To create a function that uses `jlink` we will use the Fn `init-image` feature.
 
 The parameter passed (_"delabassee/jlink-jre"_) to `init-image` is, in fact, a Docker image that will produce all the artifact required by the function.
 
-:bulb: Running this image will output all the generated artifacts for the function, `docker run delabassee/jlink-init`.
+:bulb: Running this image will output all the generated artifacts for the function, `docker run delabassee/jlink-jre`.
 
 The parameter passed (_"delabassee/jlink-jre"_) to `init-image` is, in fact, a Docker image that will produce all the artifact required by the function.
 
