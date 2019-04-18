@@ -12,9 +12,9 @@ In addition, it is a good practice to avoid carrying, in a container, any unused
 
 To create a function that uses `jlink` we will use the Fn `init-image` feature.
 
-`fn init --init-image delabassee/jlink-init modularfunc`
+`fn init --init-image delabassee/jlink-jre modularfunc`
 
-The parameter passed (_"delabassee/jlink-init"_) to `init-image` is, in fact, a Docker image that will produce all the artifact required by the function.
+The parameter passed (_"delabassee/jlink-jre"_) to `init-image` is, in fact, a Docker image that will produce all the artifact required by the function.
 
 If you look at the content of the newly created _"modularfunc"_ directory, you will see familiar content (`pom.xml`, `func.yaml`, `HelloFunction.java`, etc.); the only noticeable difference being a new `Dockerfile` that Fn is using to build the actual container image of the function.
 
