@@ -6,4 +6,6 @@
 
 * [Utiliser jlink pour faire son propre JRE](https://github.com/delabassee/delabassee.github.io/blob/master/lab/jlink.md)
 
+* [Utiliser GraalVM pour améliorer ses functions Java](https://github.com/delabassee/delabassee.github.io/blob/master/lab/GraalVM.md)
+
 * [Autres tutoriaux](https://fnproject.io/tutorials/)
