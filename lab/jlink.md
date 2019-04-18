@@ -1,6 +1,6 @@
 ## Exercise - A Serverless Java function with a custom JRE.
 
-JPMS introduced in Java 9 adds [modularity to the Java platform](https://blogs.oracle.com/java/modular-development). With `jlink` 's JPMS, it is now possible to create a Java Runtime that only carries the modules that are required by your application.
+The Java Platform Module System (JPMS), introduced in Java 9, adds [modularity to the Java platform](https://blogs.oracle.com/java/modular-development). With `jlink` 's JPMS, it is now possible to create a Java Runtime that only carries the modules that are required by your application.
 
 When invoking a serverless function, the Fn infrastructure will get the request via a trigger (ex. HTTP) and will transparently start the container for that function using the appropriate container image (assuming it isn't alerady running).
 
