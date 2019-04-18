@@ -1,4 +1,4 @@
-## Atelier Serverless Java - Devoxx France
+## Atelier Serverless Java - Devoxx France - http://bit.do/labfn
 
 * [Installer Fn et son CLI](https://fnproject.io/tutorials/install/)
 
