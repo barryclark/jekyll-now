@@ -13,6 +13,8 @@ GraalVM offers many features but in this exercise, we will solely focus on Graal
 
 To create a function that uses GraalVM `native-init` we will use the Fn `init-image` feature.
 
+:bulb: This is not a typo! There's `native-init`, a GraalVM feature and `init-image`, an Fn feature!
+
 `fn init --init-image fnproject/fn-java-native-init graalfunc`
 
 The parameter passed (_"fnproject/fn-java-native-init"_) to `init-image` is a Docker image that will produce all the artifacts required by the function, including GraalVM AOT compiler support.
