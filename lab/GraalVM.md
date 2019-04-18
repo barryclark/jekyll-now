@@ -36,7 +36,7 @@ fn invoke someapp graalfunc
 
 If we look at the `Dockerfile`, we can see that it's a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) as it uses multiple images (`fnproject/fn-java-fdk-build`, `fnproject/fn-java-native`, etc.).
 
-The key part of the `Dockefile` is the following commands wehre a GraalVM container image (`fnproject/fn-java-native`) is used to invoke the `native-image` utility to compile our Java Serverless function into a native executbale. The benefit of this approach is that nothing is required on the developer machine, no GraalVM setup, nor any Java setup!
+The key part of the `Dockefile` is the following commands wehre a GraalVM container image (`fnproject/fn-java-native`) is used to invoke the `native-image` utility to compile our Java Serverless function into a native executbale. The benefit of this approach, i.e. buidling into containers, is that nothing is required on the developer machine, no GraalVM setup nor any Java installation!
 
 ```
 FROM fnproject/fn-java-native:latest as build-native-image
