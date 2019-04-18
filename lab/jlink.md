@@ -53,7 +53,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 david               0.0.2               e7a57e4c755b        1 minute ago        40MB
 ```
 
-:mega: You might want to check [`dive`](https://medium.com/fnproject/dive-into-serverless-functions-5d1ba3572906), a convinient tool to explore container image.
+:mega: You might want to check [`dive`]((https://medium.com/fnproject/dive-into-serverless-functions-5d1ba3572906)), a convinient tool to explore container image and its layers.
 
-You can see that our function container image only weight **40MB** and includes everything (and just that!) to run our Serverless function, i.e. the operating system, our custom JRE and our Java 12 function with its dependencies! As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. And to better appreciate the benefits of JPMS, compare that number with the size of Java function created using the trditional, i.e. non modular approach (see previous exercice).
+You can see that our function container image only weight **40MB** and includes everything (and just that!) to run our Serverless function, i.e. the operating system, our custom JRE and our Java 12 function with its dependencies! As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. And to better appreciate the benefits of JPMS, compare that number with the size of Java function created using the trditional, i.e. non modular approach (see [earlier exercice](https://fnproject.io/tutorials/JavaFDKIntroduction/)).
 
