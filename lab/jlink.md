@@ -18,15 +18,17 @@ The parameter passed (_"delabassee/jlink-init"_) to `init-image` is, in fact, a 
 
 If you look at the content of the newly created _"modularfunc"_ directory, you will see familiar content (`pom.xml`, `func.yaml`, `HelloFunction.java`, etc.); the only noticeable difference being a new `Dockerfile`.
 
-### Deploy the function
+### Build and Deploy the Function
 
-You can deploy and run the function, as usual, using the Fn CLI.
+You can build, deploy and run the function, as usual, using the Fn CLI.
 
 ```
 fn create someapp
 fn deploy --app someapp modularfunc
 fn invoke someapp modularfunc
 ```
+
+### Using jlink to create a custom JRE
 
 If we look at the `Dockerfile`, we can see that it's a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) as it uses multiple images (`fn-cache:latest`, `maven:3.6.0-jdk-12-alpine` and `alpine:latest`).
 
@@ -44,7 +46,7 @@ The rest of the `Dockerfile` is about building the container image itself using 
 
 ### Conlusion
 
-To undestand the benefits of a JPMS and a custom JRE, you should  measure the size of the produced image. You can do that using `docker images` and the name of the container image. If you you didn't write the container image name earlier, `fn inspect someapp modularfunc` will give you all the details of the function, including its container image name. 
+You can see that creating and using a custom JRE is simple as everything is handled by Fn via its `init-image` feature. To undestand the benefits of such custom JRE, you should  measure the size of the produced image. You can do that using `docker images` and the name of the function container image. If you you didn't write the container image name earlier, `fn inspect someapp modularfunc` will give you all the details of the function, including its container image name. 
 
 ```
 docker images modularfunc:0.0.2
@@ -54,5 +56,5 @@ david               0.0.2               e7a57e4c755b        1 minute ago        
 
 :mega: You might want to check [`dive`]((https://medium.com/fnproject/dive-into-serverless-functions-5d1ba3572906)), a convinient tool to explore container image and its layers.
 
-You can see that our function container image only weight **40MB** and includes everything (and just that!) to run our Serverless function, i.e. the operating system, our custom JRE and our Java 12 function with its dependencies! As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. And to better appreciate the benefits of JPMS, compare that number with the size of Java function created using the trditional, i.e. non modular approach (see [earlier exercice](https://fnproject.io/tutorials/JavaFDKIntroduction/)).
+You can see that our function container image only weight **40MB** and it includes everything (and just that!) to run our Serverless function, i.e. the operating system, our custom JRE and our Java 12 function with its dependencies! As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. And to better appreciate the benefits of JPMS, compare that number with the size of Java function created using the trditional, i.e. non modular approach (see [earlier exercice](https://fnproject.io/tutorials/JavaFDKIntroduction/)).
 
