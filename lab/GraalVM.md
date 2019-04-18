@@ -1,15 +1,12 @@
 ## Exercise - Using GraalVM to create native Serverless Java function
 
 
-As mentioned in the previous exercise, reducing the size of the function container image is key.
+As mentioned in the previously, reducing the size of a unction container image is key.
 
-In addition to JPMS, we can also use [GraalVM](https://www.graalvm.org), an open-source high-performance virtual machine developed by Oracle Labs, to further reduce the size of a function container image.
+In addition to [JPMS and `jlink`](https://github.com/delabassee/delabassee.github.io/blob/master/lab/jlink.md), we can also use [GraalVM](https://www.graalvm.org), an open-source high-performance virtual machine developed by Oracle Labs, to further reduce the size of a function container image.
 
-GraalVM offers many features, in this exercise, we will solely focus on GraalVM `native-image` feature. 
-`native-image` is an AOT (Ahead-of-Time) compiler that will [compile Java code into a native binary executable](https://www.graalvm.org/docs/reference-manual/aot-compilation/) that will run on a given target host.
-
-
-fn init --init-image fnproject/fn-java-native-init graalfunc`
+GraalVM offers many features but in this exercise, we will solely focus on GraalVM `native-image` feature. 
+`native-image` is an AOT (Ahead-of-Time) compiler that will [compile Java code into a native binary executable](https://www.graalvm.org/docs/reference-manual/aot-compilation/).
 
 
 ### Boostrap the function
