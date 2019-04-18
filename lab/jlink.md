@@ -28,26 +28,26 @@ fn deploy --app someapp modularfunc
 fn invoke someapp modularfunc
 ```
 
-Now let's look at the Dockerfile
+Now let's look at the `Dockerfile`.
 
-We can see that it's a multistage build as it uses multiple images (fn-cache:latest as cache-stage, maven:3.6.0-jdk-12-alpine as build-stage and alpine:latest).
+We can see that it's a [multistage build](https://docs.docker.com/develop/develop-images/multistage-build/) as it uses multiple images (`fn-cache:latest`, `maven:3.6.0-jdk-12-alpine` and `alpine:latest`).
 
-There's nothing special in the first part as it is basically about building the function using Maven. 
+There's nothing special in the first part as it is basically about building the Java function using Maven. 
 
 The interresting part is the following line
 `RUN /opt/openjdk-12/bin/jlink --compress=2 --no-header-files --no-man-pages --strip-debug --output /function/fnjre --add-modules $(/opt/openjdk-12/bin/jdeps --print-module-deps /function/target/function.jar)`
 
 To understand it, we need to look at the 2nd part first. 
 
-`/opt/openjdk-12/bin/jdeps --print-module-deps /function/target/function.jar)` is using jdeps to produce a list of modules required by our function (function.jar), modules list that is passed to jlink via its `--add-modules` parameter.
-Using those modules, `jlink` will produce a custom JRE that will be placed in the `/function/fnjre` directory.
-To even reduce the size of the JRE, we instruct `jlink`to remove headers file, man pages, debugging information and finally, we compress the result.
+`/opt/openjdk-12/bin/jdeps --print-module-deps /function/target/function.jar)` is using [`jdeps`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html) to produce a list of modules required by our function (`function.jar`), modules list that is passed to [`jlink`](https://docs.oracle.com/en/java/javase/11/tools/jlink.html) via its `--add-modules` parameter.
+Using those modules (abd only those!), `jlink` will produce a custom JRE that will be placed in the `/function/fnjre` directory.
+To even reduce the size of the JRE, we instruct `jlink`to remove headers file, man pages, debugging information and finally, we compress the result JRE.
 
-The rest of the Dockerfile is about building the Serverless container image itself using the files from the previous stage (ex. `COPY --from=build-stage /function/fnjre/ /function/fnjre/`) and from an other image (`COPY --from=cache-stage /libfnunixsocket.so /lib`).
+The rest of the `Dockerfile` is about building the container image itself using the files generated in the the previous stage (ex. `COPY --from=build-stage /function/fnjre/ /function/fnjre/`) and a shared object from a cache image (`COPY --from=cache-stage /libfnunixsocket.so /lib`).
 
 ### Conlusion
 
-To undestand the benefits of a JPMS and a custom JRE, you should  measure the size of the produced image using the name of the container image. If you you didn't write the container image name earlier, `fn inspect someapp modular func` will give you all the details of the function, including its container image name. 
+To undestand the benefits of a JPMS and a custom JRE, you should  measure the size of the produced image. You can do that using `docker images` and the name of the container image. If you you didn't write the container image name earlier, `fn inspect someapp modularfunc` will give you all the details of the function, including its container image name. 
 
 ```
 docker images modularfunc:0.0.2
@@ -55,5 +55,5 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 david               0.0.2               e7a57e4c755b        1 minute ago        40MB
 ```
 
-You can see that our function container image only weight 40MB and includes everything (and just that) to run our Serverless function, i.e. Alpine/Linux, our custom JRE and our (Java 12) function with its dependencies! As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. And to better appreciate the benefits of JPMS, compare those number with the size of Java function created using the trditional, i.e. non modular approach.
+You can see that our function container image only weight **40MB** and includes everything (and just that!) to run our Serverless function, i.e. the operating system, our custom JRE and our Java 12 function with its dependencies! As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. And to better appreciate the benefits of JPMS, compare that number with the size of Java function created using the trditional, i.e. non modular approach (see previous exercice).
 
