@@ -70,3 +70,5 @@ david               0.0.2               e7a57e4c755b        1 minute ago        
 :mega: You might want to check [`dive`]((https://medium.com/fnproject/dive-into-serverless-functions-5d1ba3572906)), a convenient tool to explore container image and its layers.
 
 You can see that our function container image only weight **20MB** and it includes everything (and just that!) to run our Serverless function, i.e. the operating system and our `Java` function that has been compiled and linked into a native Linux executable. It should be mentioned that this executable doesn't require any external Java runtime as it also embeds SubstrateVM. As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. 
+
+For more details on GraalVM integration in Fn, you can check this [article](https://medium.com/fnproject/serverless-functions-some-like-it-aot-ea8b46951335).
