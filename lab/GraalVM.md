@@ -32,21 +32,31 @@ fn deploy --app someapp graalfunc
 fn invoke someapp graalfunc
 ```
 
-### ...
+### Using GraalVM `native-image'
 
-If we look at the `Dockerfile`, we can see that it's a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) as it uses multiple images (`fn-cache:latest`, `maven:3.6.0-jdk-12-alpine` and `alpine:latest`).
+If we look at the `Dockerfile`, we can see that it's a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) as it uses multiple images (`fnproject/fn-java-fdk-build`, `fnproject/fn-java-native`, etc.).
 
-There's nothing special in the first part as it is basically about building the Java function using Maven. 
+The key part is the following commands wehre a GraalVM container image is used to invoke the `native-image` utility to compiler our Java Serverless function into a native executbale. The benefit of this approach is that nothing is required on the developer machine (no GraalVM setup, no Java setup, etc.).
 
-The interresting part is the following line
-`RUN /opt/openjdk-12/bin/jlink --compress=2 --no-header-files --no-man-pages --strip-debug --output /function/fnjre --add-modules $(/opt/openjdk-12/bin/jdeps --print-module-deps /function/target/function.jar)`. 
+```
+FROM fnproject/fn-java-native:latest as build-native-image
+LABEL maintainer="tomas.zezula@oracle.com"
+WORKDIR /function
+COPY --from=build /function/target/*.jar target/
+COPY --from=build /function/src/main/conf/reflection.json reflection.json
+COPY --from=build /function/src/main/conf/jni.json jni.json
+RUN /usr/local/graalvm/bin/native-image \
+    --static \
+    --delay-class-initialization-to-runtime=com.fnproject.fn.runtime.ntv.UnixSocketNative \
+    -H:Name=func \
+    -H:+ReportUnsupportedElementsAtRuntime \
+    -H:ReflectionConfigurationFiles=reflection.json \
+    -H:JNIConfigurationFiles=jni.json \
+    -classpath "target/*"\
+    com.fnproject.fn.runtime.EntryPoint
+```
 
-To understand it, we need to first look at the 2nd part of this command.
-`/opt/openjdk-12/bin/jdeps --print-module-deps /function/target/function.jar` is using [`jdeps`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html) to produce a list of modules required by our function (`function.jar`), modules list that is passed to [`jlink`](https://docs.oracle.com/en/java/javase/11/tools/jlink.html) via its `--add-modules` parameter. Using those modules (abd only those!), `jlink` will produce a custom JRE that will be saved in the `/function/fnjre` directory.
-
-To even reduce the size of this JRE, we instruct `jlink`to remove headers file, man pages, debugging information and finally, we compress the result JRE.
-
-The rest of the `Dockerfile` is about building the container image itself using the files generated in the the previous stage (ex. `COPY --from=build-stage /function/fnjre/ /function/fnjre/`) and a shared object from a cache image (`COPY --from=cache-stage /libfnunixsocket.so /lib`).
+The rest of the Dockerfile is pretty straight forward. 
 
 ### Conlusion
 
