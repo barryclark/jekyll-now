@@ -28,7 +28,7 @@ fn deploy --app someapp modularfunc
 fn invoke someapp modularfunc
 ```
 
-If we look at the `Dockerfile`, we can see that it's a [multistage build](https://docs.docker.com/develop/develop-images/multistage-build/) as it uses multiple images (`fn-cache:latest`, `maven:3.6.0-jdk-12-alpine` and `alpine:latest`).
+If we look at the `Dockerfile`, we can see that it's a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) as it uses multiple images (`fn-cache:latest`, `maven:3.6.0-jdk-12-alpine` and `alpine:latest`).
 
 There's nothing special in the first part as it is basically about building the Java function using Maven. 
 
