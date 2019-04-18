@@ -1,4 +1,4 @@
-## Exercise - Serverless Java function with a custom JRE.
+## Exercise - A Serverless Java function with a custom JRE.
 
 JPMS introduced in Java 9 adds [modularity to the Java platform](https://blogs.oracle.com/java/modular-development). With `jlink` 's JPMS, it is now possible to create a Java Runtime that only carries the modules that are required by your application.
 
