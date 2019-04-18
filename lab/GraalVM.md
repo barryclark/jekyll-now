@@ -36,11 +36,10 @@ fn invoke someapp graalfunc
 
 If we look at the `Dockerfile`, we can see that it's a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) as it uses multiple images (`fnproject/fn-java-fdk-build`, `fnproject/fn-java-native`, etc.).
 
-The key part is the following commands wehre a GraalVM container image is used to invoke the `native-image` utility to compiler our Java Serverless function into a native executbale. The benefit of this approach is that nothing is required on the developer machine (no GraalVM setup, no Java setup, etc.).
+The key part of the `Dockefile` is the following commands wehre a GraalVM container image (`fnproject/fn-java-native`) is used to invoke the `native-image` utility to compile our Java Serverless function into a native executbale. The benefit of this approach is that nothing is required on the developer machine, no GraalVM setup, nor any Java setup!
 
 ```
 FROM fnproject/fn-java-native:latest as build-native-image
-LABEL maintainer="tomas.zezula@oracle.com"
 WORKDIR /function
 COPY --from=build /function/target/*.jar target/
 COPY --from=build /function/src/main/conf/reflection.json reflection.json
@@ -56,11 +55,11 @@ RUN /usr/local/graalvm/bin/native-image \
     com.fnproject.fn.runtime.EntryPoint
 ```
 
-The rest of the Dockerfile is pretty straight forward. 
+The rest of the `Dockerfile` is pretty straight forward. 
 
 ### Conlusion
 
-You can see that creating and using a native image is trivial as everything is handled by Fn via its `init-image` feature. To appreciate the benefits of such custom JRE, you should measure the size of the produced image. You can do that using `docker images` and the name of the function container image. If you didn't write the container image name earlier, `fn inspect someapp modularfunc` will give you all the details of the function, including its container image name. 
+You can see that creating and using a GraalVM `native-image` is trivial as everything is handled by Fn via its `init-image` feature. To appreciate the underlying benefits, you should measure the size of the produced image. You can do that using `docker images` and the name of the function container image. If you didn't write the container image name earlier, `fn inspect someapp modularfunc` will give you all the details of the function, including its container image name. Another benefit is that the startup time of the "Java" function is improved as it is now invoked as a native executable.
 
 ```
 docker images graalfunc:0.0.2
@@ -70,4 +69,4 @@ david               0.0.2               e7a57e4c755b        1 minute ago        
 
 :mega: You might want to check [`dive`]((https://medium.com/fnproject/dive-into-serverless-functions-5d1ba3572906)), a convenient tool to explore container image and its layers.
 
-You can see that our function container image only weight **20MB** and it includes everything (and just that!) to run our Serverless function, i.e. the operating system and our Java function that has been compiled and linked into a Linux executable. It should be mentioned that this executable doesn't require any external Java runtime as it embeds SubstrateVM. As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. 
+You can see that our function container image only weight **20MB** and it includes everything (and just that!) to run our Serverless function, i.e. the operating system and our `Java` function that has been compiled and linked into a native Linux executable. It should be mentioned that this executable doesn't require any external Java runtime as it also embeds SubstrateVM. As said earlier, the smaller the container image is, the faster it will be loaded from the registry when it is invoked. 
