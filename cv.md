@@ -45,7 +45,7 @@
  
 **Publications**
 
-* W Zhao, B Bachhav, C McWhite, L Segatori, "A yeast selection system for the detection of proteasomal activation", Prrotein Engineering Design and Selection 2019:gzz006
+* W Zhao, B Bachhav, C McWhite, L Segatori, "A yeast selection system for the detection of proteasomal activation", Protein Engineering Design and Selection 2019:gzz006
 * A Zeileis, JC Fisher, K Hornik, R Ihaka, CD McWhite, P Murrell, R Stauffer, CO Wilke, "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes", arXiv:1903.06490
 * AH Kachroo, JM Laurent, A Akhmetov, M Szilagyi-Jones, CD McWhite, A Zhao, EM Marcotte. “Systematic bacterialization of yeast genes identifies a near-universally swappable pathway", eLife 2017;6:e25093
 * KS Drew, C Lee, RL Huizar, F Tu, B Borgeson, CD McWhite, Y Ma, JB Wallingford, EM Marcotte, “Integration of over 9,000 mass spectrometry experiments builds a global map of human protein complexes”, Molecular Systems Biology (2017) 13, 932
