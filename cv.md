@@ -45,13 +45,15 @@
  
 **Publications**
 
+* W Zhao, B Bachhav, C McWhite, L Segatori, "A yeast selection system for the detection of proteasomal activation", Prrotein Engineering Design and Selection 2019:gzz006
+* A Zeileis, JC Fisher, K Hornik, R Ihaka, CD McWhite, P Murrell, R Stauffer, CO Wilke, "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes", arXiv:1903.06490
 * AH Kachroo, JM Laurent, A Akhmetov, M Szilagyi-Jones, CD McWhite, A Zhao, EM Marcotte. “Systematic bacterialization of yeast genes identifies a near-universally swappable pathway", eLife 2017;6:e25093
 * KS Drew, C Lee, RL Huizar, F Tu, B Borgeson, CD McWhite, Y Ma, JB Wallingford, EM Marcotte, “Integration of over 9,000 mass spectrometry experiments builds a global map of human protein complexes”, Molecular Systems Biology (2017) 13, 932
 * BJ Liebeskind, CD McWhite, EM Marcotte, “Towards Consensus Gene Ages”, Genome Biology and Evolution 8 (6): 1812-1823, 2016
 * CD McWhite, AG Meyer, CO Wilke, “Sequence amplification via cell passaging creates spurious signals of positive adaptation in influenza virus H3N2 hemagglutinin”, Virus Evolution 2 (2):vew026, 2016
-* CD McWhite, BJ Liebeskind, EM Marcotte, “Applications of comparative evolution to human disease genetics”, Current opinion in genetics & development 35, 16-24, 2015 
-* W Zhao, M Bonem, CD McWhite, JJ Silberg, L Segatori, “Sensitive detection of proteasomal activation using the Deg-On mammalian synthetic gene circuit”, Nature communications 5, 2014
-* A Demelash, P Rudrabhatla, HC Pant, X Wang, ND Amin, CD McWhite, X Naizhen, RI Linnoila, “Achaete-scute homologue-1 (ASH1) stimulates migration of lung cancer cells through Cdk5/p35 pathway”, Molecular biology of the cell 23 (15), 2856-2866, 2012
+* CD McWhite, BJ Liebeskind, EM Marcotte, “Applications of comparative evolution to human disease genetics”, Current Opinion in Genetics & Development 35, 16-24, 2015 
+* W Zhao, M Bonem, CD McWhite, JJ Silberg, L Segatori, “Sensitive detection of proteasomal activation using the Deg-On mammalian synthetic gene circuit”, Nature Communications 5, 2014
+* A Demelash, P Rudrabhatla, HC Pant, X Wang, ND Amin, CD McWhite, X Naizhen, RI Linnoila, “Achaete-scute homologue-1 (ASH1) stimulates migration of lung cancer cells through Cdk5/p35 pathway”, Molecular Biology of the cell 23 (15), 2856-2866, 2012
  
 **Outreach**
 
@@ -59,9 +61,13 @@
 * Introduction to Network Visualization, Austin R Users Group, Spring, 2018
 * BAHFest Texas, A festival of bad ad-hoc hypotheses, Spring, 2018
  
-**Presentations**
+**Talks**
 
+* Computing on Phenotypes, Ames, IA, 4/2019
 * First International Plant Systems Biology Conference, Roscoff, France, 9/2018
+
+**Posters**
+
 * The Society for Molecular Biology and Evolution, Austin, TX, 7/2017
 * Omics Approaches to Study the Proteome Keystone Conference, Breckenridge, CO, 1/2017
 * Plant Biology, Austin, TX, 7/2016
