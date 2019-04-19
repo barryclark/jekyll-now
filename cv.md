@@ -57,9 +57,9 @@
  
 **Outreach**
 
-* colorblindr: An R package to aid design of colorblind-interpretable figures
+* Author of colorblindr: An R package to aid design of colorblind-interpretable figures
 * Introduction to Network Visualization, Austin R Users Group, Spring, 2018
-* BAHFest Texas, A festival of bad ad-hoc hypotheses, Spring, 2018
+* Speaker at BAHFest Texas, A festival of bad ad-hoc hypotheses, Spring, 2018
  
 **Talks**
 
