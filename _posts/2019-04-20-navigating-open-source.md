@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Navigating Open Source - TEC(K)NOW Day, Taipei"
+title: "Navigating Open Source - TECH(K)NOW Day, Taipei"
 tags:
   - Slides
   - "2019"
@@ -12,7 +12,7 @@ tags:
     </embed>
 </object>
 
-Here are my slides from a talk I gave on "Navigating Open Source" at TEC(K)NOW Day in Taipei, Taiwan.
+Here are my slides from a talk I gave on "Navigating Open Source" at TECH(K)NOW Day in Taipei, Taiwan.
 
 Summary:
 
