@@ -17,7 +17,7 @@ Here are my slides from a talk I gave on "Navigating Open Source" at TEC(K)NOW D
 Summary:
 
 * The impact of open source is both personal and universal.
-* Understand how you want to engage.
+* Understand *how* you want to engage in open source.
 * Find sponsors to help you with the unspoken rules.
 
 Resources:
