@@ -9,7 +9,7 @@ I have decided to come back to the TSP problem. I have optimized my approximatio
 
 These graphs are incredibly tricky to solve. Technically for a 100 node graph there are, $$9332621544394415268169923885626670049071596826438162146859296389521\\
 7599993229915608941463976156518286253697920827223758251185210916864\\
-000000000000000000000000$$ different solutions, that all would need to be checked to guarantee the optimal solution. A 40 node graph, is approximated in just 1-2 seconds on my computer with this heuristic, there are $$815915283247897734345611269596115894272000000000$$ different graphs that would need to be checked to find the most optimal solution. This problem is also believed to be NP-Complete, so the best we can do are approximations. 
+00000000000000000000000$$ different solutions, that all would need to be checked to guarantee the optimal solution. A 40 node graph, is approximated in just 1-2 seconds on my computer with this heuristic, there are $$815915283247897734345611269596115894272000000000$$ different graphs that would need to be checked to find the most optimal solution. This problem is also believed to be NP-Complete, so the best we can do are approximations. 
 
 ![]({{ site.url }}/images/tsp/tsp2/out1.gif)
 ![]({{ site.url }}/images/tsp/tsp2/out2.gif)
