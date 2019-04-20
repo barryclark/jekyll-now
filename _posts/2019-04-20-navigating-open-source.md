@@ -20,6 +20,8 @@ Summary:
 * Understand *how* you want to engage in open source.
 * Find sponsors to help you with the unspoken rules.
 
+![Cheryl Hung speaking at TECH(K)NOW Day Taipei](https://pbs.twimg.com/media/D4kP-b-U0AALmY2.jpg)
+
 Resources:
 
 * Github survey of open source developers: [opensourcesurvey.org/2017](opensourcesurvey.org/2017)
