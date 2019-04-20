@@ -7,7 +7,7 @@ permalink: /events/
 ### 2019
 
 April 20: TECH(K)NOW Day, Taipei
-* **Navigating open sources**
+* **Navigating open source**
 
 April 29: Google Developer Group Cloud, London
 * **Navigating the cloud native ecosystem for end users**
