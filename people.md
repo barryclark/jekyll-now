@@ -62,6 +62,13 @@ permalink: /people/
 * PhD student, Department of Applied Mathematics and Statistics, Stony Brook University
 * Co-advised by Dr. Pei Fen Kuan
 
+{: .person-name }
+## Eben Kadile
+![Eben Kadile](/images/Eben.jpg){: .profile-photo }
+
+* Undergraduate student, Department of Mathematics, Stony Brook University
+* [Website](http://ebencowley.com/)
+
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
