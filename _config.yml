@@ -5,6 +5,9 @@ collections:
   posts:
     title: Posts
     output: true
+  resources:
+    title: Resources
+    output: true
   teams:
     title: Teams
     output: true
