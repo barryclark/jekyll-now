@@ -1072,59 +1072,24 @@ nav a:not(:hover) {
 
 /* Button effects */
 
-.button-slideCenter,
-.button-slideTop,
-.button-slideBottom,
-.button-slideLeft,
-.button-slideRight {
+a.slideBottom {
 	overflow: hidden;
 	position: relative;
 }
-.button-slideCenter:after,
-.button-slideTop:after,
-.button-slideBottom:after,
-.button-slideLeft:after,
-.button-slideRight:after {
+a.slideBottom:after {
 	content: attr(data-link);
 	position: absolute;
 	padding: .5em 0;
 	z-index: 2;
 }
-.button-slideCenter:hover,
-.button-slideTop:hover,
-.button-slideBottom:hover,
-.button-slideLeft:hover,
-.button-slideRight:hover {
+a.slideBottom:hover {
 	color: transparent !important;
 }
-.button-slideCenter:after {
-	visibility: hidden;
-	left: 40%;
-	width: 0%;
-}
-.button-slideTop:after {
-	top: -5em;
-	width: 100%;
-}
-.button-slideBottom:after {
+a.slideBottom:after {
 	top: 5em;
 	width: 100%;
 }
-.button-slideLeft:after {
-	top: 0;
-	left: -20em;
-	width: 0%;
-}
-.button-slideRight:after {
-	top: 0;
-	left: 20em;
-	width: 0%;
-}
-.button-slideCenter:hover:after,
-.button-slideTop:hover:after,
-.button-slideBottom:hover:after,
-.button-slideLeft:hover:after,
-.button-slideRight:hover:after {
+a.slideBottom:hover:after {
 	color: #000;
 	visibility: visible;
 	top: 0;
@@ -1133,6 +1098,7 @@ nav a:not(:hover) {
 	width: 100%;
 	height: 100%;
 }
+
 /* ------------------------------------------------------------ Skin */
 
 /* Light theme (default) */
