@@ -17,8 +17,7 @@ month](https://www.meetup.com/Cloud-Native-London)!
 
 ## Background
 
-I spent five years at Google as a C++ engineer on Google Maps, before moving to
-StorageOS to lead Product, DevOps and DevRel. I hold a Masters in 
+Previously, I was a software engineer at Google, primarily writing C++ on Google Maps. I've been a product manager, DevOps engineering manager and developer advocate. I hold a Masters in 
 Computer Science from the University of Cambridge, King's College.
 
 ## Contact me
