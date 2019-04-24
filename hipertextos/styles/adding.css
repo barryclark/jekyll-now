@@ -225,8 +225,10 @@ img.dialog-svg {width: 100%;height: 128px;}
 
 /* Web section Gallery */
 
-.web-img h3 {font-size:4.2em;margin-bottom:0px;text-align: center}
-.web-img h3:before { }
+.web-img h3 {font-size:4.2em;margin-bottom:0px;text-align: center;background: var(--color-soft-grey);
+    border-radius:0 0 12px 12px;
+}
+a.web-img {text-decoration:none!important;}
 
 /* Go UP button */
 
