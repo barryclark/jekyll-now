@@ -754,12 +754,11 @@ code.highlighter-rouge {
     flex-wrap: wrap;
     img {
         padding: 2px;
-        margin-top: -5px;
     }
     .album {
         position: relative;
         flex: 1;
-        flex: 0 0 50%;
+        flex: 0 0 33%;
         width: 100%;
         h2 { 
           z-index: 1;
@@ -771,6 +770,7 @@ code.highlighter-rouge {
           color: #fff;
           padding-bottom: 0.1em;
           border-bottom: 2px solid #fff;
+          margin-bottom: 25px;
           font-size: 16;
           text-transform: uppercase;
           position: absolute;
