@@ -226,9 +226,11 @@ img.dialog-svg {width: 100%;height: 128px;}
 /* Web section Gallery */
 
 .web-img h3 {font-size:4.2em;margin-bottom:0px;text-align: center;background: var(--color-soft-grey);
-    border-radius:0 0 12px 12px;
+    border-radius:0 0 12px 12px;margin-bottom:8px;
 }
 a.web-img {text-decoration:none!important;}
+a.web-img :hover {background:var(--color-hardgrey);color:var(--color-softgrey);}
+#webs img {border-radius:12px 12px 0 0;border:thin solid #eee;}
 
 /* Go UP button */
 
