@@ -230,6 +230,13 @@ em small #go-up:hover {background: rgba(0, 0, 0, .3);}
 main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--color-white);box-shadow: 0 75px 60px rgba(0, 0, 0, .32);}
 #page-footer {position: fixed;box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);bottom: 0px;z-index: 0;width: 100%;max-height: 310px !important;}
 
+article.panel-flip-onhover {
+}
+.panel-flip .back,
+.panel-flip-onhover .back {
+    background-color:var(--color-black);
+    min-height:100%;    border-radius:12px;
+}
 .text-slider {
 	display: block;
 	margin: 0 auto 60px;
