@@ -7,7 +7,7 @@ olddate: April 29, 2019
  
 *Chengcheng Huang, Douglas A. Ruff, Ryan Pyle, Robert Rosenbaum, Marlene R. Cohen, Brent Doiron*. Neuron (2019) 
 [(Neuron)](http://www.sciencedirect.com/science/article/pii/S0896627318310432)
-[(local cache)]({{site.url}}/journalclub/JCpapers/CircuitVariability.pdf)
+[(local cache)]({{site.url}}/journalclub/JCpapers/CircuitModelsofVariability.pdf)
 
 #### Abstract
 Summary
