@@ -6,9 +6,16 @@
 header {z-index: 1 !Important;}
 .lines {background: rgba(69, 69, 69, .12) !important;height: 2px;}
 main.darkmode {margin-top:-10px;padding-top: 0px !important;border: none;}
-main {border:none!important;}
+main {border:none!important;padding-bottom: 0 !important;}
 .parallax {-webkit-transition: all .0s ease;-moz-transition: all .0s ease;-ms-transition: all .0s ease;-o-transition: all .0s ease;transition: all .0s ease;}
-
+body {text-align: justify;-moz-hyphens: none;-ms-hyphens: none;-webkit-hyphens: none;-o-hyphens: none;hyphens: none;word-wrap: none;}
+p, ul {font-size: 18px;line-height: 27px;}
+#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;
+	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
+}
+@media (max-width: 1024px) {
+    		#page-header.cover {background-image: url("/img/m-home.jpg");}
+}
 /* Nav */
 #site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
 #site-nav a {font-weight: 200;min-width: 14%;border: none;letter-spacing: .016em;}
@@ -24,14 +31,7 @@ main {border:none!important;}
 .cover h2 {letter-spacing: -0.001em;line-height: 1.2em;font-weight: normal ;font-size: 1em !important;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
-body {text-align: justify;-moz-hyphens: none;-ms-hyphens: none;-webkit-hyphens: none;-o-hyphens: none;hyphens: none;word-wrap: none;}
-p, ul {font-size: 18px;line-height: 27px;}
-main {padding-bottom: 0 !important;}
-#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;
-}
-@media (max-width: 1024px) {
-    		#page-header.cover {background-image: url("/img/m-home.jpg");}
-}
+
 .cover, #glass-front, #blured {
 	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;
 	-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;

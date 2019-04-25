@@ -2334,25 +2334,12 @@ dialog,
 /* Meridianus theme */
 
 #theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpg")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
-#theme-meridianus:checked ~ #page #web-music { }
-#theme-meridianus:checked ~ #page #web-branding{ 
-    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-meridianus:checked ~ #page #blured {
-    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
+@media (max-width: 1024px) {
+    #theme-meridianus:checked ~ #page #page-header.cover {background-image: url("/img/mh-sun.jpg");}
 }
 #theme-meridianus:checked ~ #page div.masked {}
-#theme-meridianus:checked ~ #page #site-nav a {
-	color: rgba(255,220,180,1);-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-meridianus:checked ~ #page #site-nav {
-	background: rgba(32,12,12,.98)!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
 #theme-meridianus:checked ~ #page #page-main.darkmode  {
 	background-color: rgba(21,15,18,1) ;	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-meridianus:checked ~ #page #page-footer {
-	background-color: rgba(41,35,38,1) ;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;	
 }
 #theme-meridianus:checked ~ #page em a,
 #theme-meridianus:checked ~ #page em label,
@@ -2382,25 +2369,12 @@ dialog,
 /* vesperum theme */
 
 #theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpg")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
-#theme-vesperum:checked ~ #page #web-music { }
-#theme-vesperum:checked ~ #page #web-branding { 
-    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-vesperum:checked ~ #page #blured {
-    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
+@media (max-width: 1024px) {
+    #theme-vesperum:checked ~ #page #page-header.cover {background-image: url("/img/mh-blue.jpg");}
 }
 #theme-vesperum:checked ~ #page div.masked {}
-#theme-vesperum:checked ~ #page #site-nav a {
-	color: rgba(180,180,200,1);	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-vesperum:checked ~ #page #site-nav {
-	background: rgba(6,5,8,1)!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
 #theme-vesperum:checked ~ #page #page-main.darkmode  {
 	background-color: rgba(17,20,23,1) ;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;	
-}
-#theme-vesperum:checked ~ #page #page-footer {
-	background-color: rgba(26,32,35,1) ;	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
 #theme-vesperum:checked ~ #page,
 #theme-vesperum:checked ~ #site-nav,
@@ -2440,26 +2414,14 @@ dialog,
 /* Nox theme */
 
 #theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpg")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
-#theme-nox:checked ~ #page #web-music { }
-#theme-nox:checked ~ #page #web-branding { 
-    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-nox:checked ~ #page #blured {
-    -webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
+@media (max-width: 1024px) {
+    #theme-nox:checked ~ #page #page-header.cover {background-image: url("/img/mh-night.jpg");}
 }
 #theme-nox:checked ~ #page div.masked {}
-#theme-nox:checked ~ #page #site-nav a {
-	color: rgba(150,150,150,1);	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-nox:checked ~ #page #site-nav {
-	background: rgba(32,32,32,1)!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
 #theme-nox:checked ~ #page #page-main.darkmode  {
 	background-color: rgba(22,22,25,1) ;	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
 }
-#theme-nox:checked ~ #page #page-footer {
-	background-color: rgba(32,32,32,1) ;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;	
-}
+
 #theme-nox:checked ~ #page,
 #theme-nox:checked ~ #site-nav,
 #theme-nox:checked ~ #page-nav,
