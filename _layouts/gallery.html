@@ -26,6 +26,14 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-WXMBJZW');</script>
 	<!-- End Google Tag Manager -->
+	
+	<style type="text/css">
+		.preload {display: none;}
+	</style>
+
+  	{% if page.parallax %}
+	<img class="preload" src="/img/portfoli.jpg" width="1920" height="943">
+  	{% endif %}
 
   </head>
 
