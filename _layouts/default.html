@@ -86,7 +86,10 @@ margin:-50px 0 0 -50px;
   </head>
 
   <body>
-
+	<div id="preloader">
+		<div id="loader">&nbsp;</div>
+	</div>
+	
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXMBJZW"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -117,7 +120,7 @@ margin:-50px 0 0 -50px;
 		<!-- Out of page
 		================================================== -->
 		<!-- Fixed navigation -->		
-		<div class="ktr-button-sun-bubble anm-scaleUpDown">
+		<div class="ktr-button-sun-bubble anm-scaleUpDown delay-300">
 			<input id="bubble" name="bubble" type="checkbox" hidden>
 			<span>
 				<em><label class="th-nox" for="theme-nox" data-title="Nit"></label></em>
@@ -151,12 +154,13 @@ margin:-50px 0 0 -50px;
     		});
 		});
   	</script>{% endif %}
-  	<script type="text/javascript">
-  		$(window).load(function() {
-    		$('#preloader').fadeOut('slow');
-    		$('body').css({'overflow':'visible'});
-		})
-  	</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$('#preloader').fadeOut('slow');
+	$('body').css({'overflow':'visible'});
+})
+</script>
     {% include analytics.html %}    
   </body>
 </html>
