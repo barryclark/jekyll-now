@@ -17,16 +17,6 @@ p, ul {font-size: 18px;line-height: 27px;}
     		#page-header.cover {background-image: url("/img/m-home.jpg");}
 }
 /* Nav */
-#site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
-#site-nav a {font-weight: 200;min-width: 14%;border: none;letter-spacing: .016em;}
-#site-nav a:visited {color: var(--color-grey);text-decoration: none;}
-#site-nav a:hover, #site-nav a b:hover {color: #fff !important;background: #000;text-decoration: none;}
-#site-nav a b {text-transform: uppercase;font-weight: normal ;}
-#site-nav a b:before {border-bottom: thin solid #252525;content: ' ';display: block;position: absolute;left: 46%;right: 0;width: 8%;padding-bottom: 2px;}
-#site-nav a b:after {border-bottom: thin solid #252525;content: ' ';display: block;position: absolute;left: 46%;right: 0;width: 8%;margin-top: -2px;}
-#current-nav, #current-nav a:visited, #current-nav:visited {color: #fff !important;}
-#site-nav label {color: var(--color-grey);border: thin solid transparent;}
-#site-nav label:hover {color: var(--color-soft-grey);border: thin solid #353535;}
 .cover img {width: 80px;margin-bottom: 2.0em;}
 .cover h2 {letter-spacing: -0.001em;line-height: 1.2em;font-weight: normal ;font-size: 1em !important;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
