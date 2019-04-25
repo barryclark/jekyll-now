@@ -6,18 +6,14 @@ permalink: /about/
 
 ![Cheryl Hung](https://avatars3.githubusercontent.com/u/11319250?v=3&u=336db9e336bff5ab7c6716770e14257ba48b4720&s=400)
 
-I am the Director of Ecosystem at the Cloud Native Computing Foundation. My
-mission is to to increase the adoption of Kubernetes and cloud native by growing the community and advocating for end users.
+I'm a software engineer by background; I enjoy solving challenging problems at Google and startups. Now I advocate for and build communities around open source infrastructure, as a director at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
 
-In addition to being a prolific public speaker, I founded the Cloud Native
-London meetup. We are a strong, open, diverse developer community around the
-cloud native platform and technologies in London. Each monthly event gets
-200-300 attendees; [come join us in London on the first Wednesday of each
-month](https://www.meetup.com/Cloud-Native-London)!
+I love public speaking and also founded the [Cloud Native
+London meetup](https://www.meetup.com/Cloud-Native-London). We meet on the first Wednesday of each month; come join the community around Kubernetes and cloud native platform in London!
 
 ## Background
 
-Previously, I was a software engineer at Google, primarily writing C++ on Google Maps. I've been a product manager, DevOps engineering manager and developer advocate. I hold a Masters in 
+Previously, I was a software engineer at Google, writing C++ on Google Maps. I've been a product manager, DevOps engineering manager and developer advocate. I hold a Masters in 
 Computer Science from the University of Cambridge, King's College.
 
 ## Contact me
