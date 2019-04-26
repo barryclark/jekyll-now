@@ -1,17 +1,27 @@
 ---
 layout: post
-title: Make 16x More On PacketStream
+title: What Is A Proxy Server
 ---
-If you've used our friend referral system, then you know that every Packeter makes 3% of the lifetime earnings from all the new Packeters they refer. Today, we're announcing a very special, limited time promotion. <br><br>![Referral Earnings]({{ site.baseurl }}/images/post_content/ref-ps1.gif)
+What Is A Proxy Server and What Is An IP Address? 
+and why Sierra Burgess Is a Loser is a cat-fishing movie <br><br> ![What is a proxy]({{ site.baseurl }}/images/post_content/malware_meme.jpg)
 
-Starting today, you will earn 50% of the lifetime earnings from all the Packeters you refer!
+If you are a tech virgin like I am, you are probably thinking, “What the heck is a proxy server?!”
 
-That's over 15 times more than the current referral bonus.
+First, let’s go back to middle school when you had a crush on someone. You are the computer, your crush is the Internet, and your best friend is the proxy server. Now, being the shy person you were, you probably asked your best friend to ask your crush if your crush liked you. Consequently, your crush would have told your best friend whether he/she liked you or not. Your best friend then told you he/she didn’t like you and you would cry yourself to sleep that night.
 
-This promotion will last through the end of the month so start taking advantage of it now. 
 
-When telling your friends about PacketStream just make sure you give them your unique referral link which you can find in your Dashboard or here: [https://packetstream.io/dashboard/referrals](https://packetstream.io/dashboard/referrals).
+This is exactly what a proxy server does. Except for the part where it breaks your heart. You as a computer asks a proxy server to connect to the Internet, and the Internet in return tells the proxy server that you can connect and finally, you are hooked up to the Internet.
 
-Time is ticking! Get this to your friends now so you can all start earning. Remember to post on all your social media channels so your friends don't miss out! 
+Let’s move on to IP addresses.
 
-![Make Money]({{ site.baseurl }}/images/post_content/ref-ps2.gif)
+IP addresses is simple to explain. It’s the more obvious characteristic that identifies you. It might be your name, the way you look, or the way you talk. Basically it’s who you are.
+
+![What are IP Addresses]({{ site.baseurl }}/images/post_content/sierra_movie_poster.png)
+
+Now, to explain how PacketStream works, I will use a movie called Sierra Burgess Is A Loser as an analogy. #Shoutout to Netflix for free marketing
+
+Sierra Burgess Is A Loser, is a romantic comedy movie (it’s really a cat-fishing movie), where Sierra, who doesn’t fit into the beauty norm, has a crush on a boy named Jamey. Somehow, they connect online and start flirting with each other. Thinking she’s not good enough for Jamey, Sierra uses her friend, Veronica who is a popular cheerleader, to pretend as if Veronica were Sierra to go on a date with Jamey. As a result Sierra and Jamey are dating, but Jamey is actually going out with Veronica while talking to Sierra over texts and calls. 
+
+Now, if you have caught on to what I’m trying to say, PacketStream allows Sierra (your IP address) to use Veronica’s looks (a residential IP address) to hook up with Jamey (the Internet).
+
+Now that I’ve explained to you what PacketStream is, look out for our next blog post about how you can use it! 
