@@ -6,14 +6,14 @@ permalink: /events/
 
 ### 2019
 
-April 20: TECH(K)NOW Day, Taipei
-* **Navigating open source**
-
 April 29: Google Developer Group Cloud, London
 * **Navigating the cloud native ecosystem for end users**
 
 May 8: Cloud Native Manchester
 * **Introduction to the CNCF**
+
+May 16: Docker London
+* **Navigating open source**
 
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 * **Keynote**
@@ -21,6 +21,7 @@ May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 * **Navigating the cloud native ecosystem for end users**
 
 June 23 - 27: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
+* **Navigating the cloud native ecosystem for end users**
 
 July 17 - 19: Open Source Summit Japan, Tokyo
 
