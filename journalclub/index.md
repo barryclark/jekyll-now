@@ -28,9 +28,9 @@ Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Sem
 - March 25th: Yuan Zhao
 - April 1st: No JC - Prof. Tononi's lecutre
 - April 8th: Josue Nassar
-- April 15th: Junyan Song
+- April 15th:
 - April 22nd:
-- April 29th:
+- April 29th: Tianshu Li
 - May 6th: Tong Liang
 - May 13th: Yanliang Shi
 - May 20th: Sima Mofakham
