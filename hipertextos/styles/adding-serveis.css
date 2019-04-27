@@ -35,7 +35,8 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #resumed-web h3 {margin-bottom:1em;line-height:1.1em;margin-top:-10px;letter-spacing: -0.012em;}
 #resumed-web h3 small {letter-spacing: -0.002em;}
 #resumed-web .thumb-3 {border-right:thin solid rgba(190,190,190,1);padding-top:0px;}
-#resumed-web .thumb-9 { padding-top:4px;text-align:left;padding-left:6px;}
+#resumed-web .thumb-4 { padding-top:12px;}
+
 #browser-ios {padding:12px 0 28px 0;line-height:2.6em;
     text-align:center;}
 #browser-ios svg {max-width:28px;color:rgba(212,212,212,1) ;margin:0 12px 0 0;}
@@ -56,7 +57,7 @@ img.apps {border-radius:28px;max-width:64%;}
     background-size: cover;background-repeat: no-repeat;
     border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-music svg {width:64px;}
-#resumed-web svg {width:32px;}
+#resumed-web svg {width:38px;}
 #resumed-web {font-size:15px;line-height:1.6em;letter-spacing: -0.012em;
     color:var(--color-grey);}
 #resumed-web div {padding: 32px 0 32px 0;}
@@ -111,7 +112,7 @@ img.big-icon {width:52px; }
     #resumed-print.pushed-6 {margin-left:0;}
 }
 @media (max-width: 1242px) {
-    @media (max-width: 1250px) {}
+	#resumed-web .thumb-4 { min-width:100%;}
 
 }
 @media (max-width: 768px) {
