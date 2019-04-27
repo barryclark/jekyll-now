@@ -4,7 +4,7 @@ title: Bookshelf
 permalink: /bookshelf/
 ---
 
-##Introduction
+##Introduction##
 
 This page lists the books I have read and some of my thoughts on each of them. Reading is one of my favorite ways of learning something new and exploring new worlds. Sometimes it's just a great way to take a break from the real world. 
 
