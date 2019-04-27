@@ -32,9 +32,10 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #section-web {text-align:justify;background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,.9), rgba(235,235,235,1));}
 #section-web h2 {line-height:.96em;}
 #section-web h5 {line-height:1.3em;font-weight: normal;}
-#resumed-web h3 {margin-bottom:1em;line-height:1.1em;margin-top:-10px;}
-#resumed-web .thumb-2 {border-right:thin solid rgba(190,190,190,1);padding-top:0px;}
-#resumed-web .thumb-10 {padding-top:4px;text-align:left;padding-left:6px;}
+#resumed-web h3 {margin-bottom:1em;line-height:1.1em;margin-top:-10px;letter-spacing: -0.012em;}
+#resumed-web h3 small {letter-spacing: -0.002em;}
+#resumed-web .thumb-3 {border-right:thin solid rgba(190,190,190,1);padding-top:0px;}
+#resumed-web .thumb-9 { padding-top:4px;text-align:left;padding-left:6px;}
 #browser-ios {padding:12px 0 28px 0;line-height:2.6em;
     text-align:center;}
 #browser-ios svg {max-width:28px;color:rgba(212,212,212,1) ;margin:0 12px 0 0;}
