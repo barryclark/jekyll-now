@@ -42,9 +42,14 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
     text-align:center;}
 #browser-ios svg {max-width:28px;color:rgba(212,212,212,1) ;margin:0 12px 0 0;}
 
-#section-brand {background:linear-gradient(rgba(240,240,240,1),rgba(230,230,230,1), rgba(189,185,185,1));}
-#section-brand h1.head-full {font-size:6.4em;letter-spacing: -0.07em}
-#section-brand h3, #section-brand h4.head-section small,
+#section-brand {background:linear-gradient(rgba(180,180,180,1),rgba(212,212,212,1), rgba(255,255,255,1));}
+#section-brand h1.head-full {
+    font-size:6.2em;line-height:1.05em;letter-spacing: -0.07em;margin-top:16px;margin-bottom:32px;
+    color: transparent;background-size:400px 400px;background-repeat: repeat;
+  background: url('/img/texture/h_seamless.png') repeat;background-attachment: fixed;
+  -webkit-background-clip: text;
+}
+#section-brand h3, #section-brand h4.head-section small, 
 #section-brand a {
 	color:var(--color-white);}
 #section-paint h1, #section-brand h1 {margin-bottom:0px;letter-spacing: -0.042em}
