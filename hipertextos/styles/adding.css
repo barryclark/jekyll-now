@@ -22,10 +22,6 @@ p, ul {font-size: 18px;line-height: 27px;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
 
-.cover, #glass-front, #blured {
-	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;
-	-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
 #page-main.darkmode {background: #111;}
 #page-main.darkmode em a {background: #111;}
 .apple {background: transparent!important;border-radius:3px;margin-top:32px!important;letter-spacing: 0.01em;}
