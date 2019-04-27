@@ -290,7 +290,7 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
 @-webkit-keyframes textSliding{
 		0% { opacity: 0; }
 		5% { opacity: 0; -webkit-transform: translateY(-50px); }
-    
+}
 @-webkit-keyframes textSliding{
 	0% { opacity: 0; }
 	5% { opacity: 0; -webkit-transform: translateY(-50px); }
