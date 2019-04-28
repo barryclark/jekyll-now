@@ -2,6 +2,7 @@
 layout: post
 title: "Navigating Open Source - TECH(K)NOW Day, Taipei"
 tags:
+  - Photos
   - Slides
   - "2019"
 ---
