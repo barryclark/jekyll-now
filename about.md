@@ -6,7 +6,7 @@ permalink: /about/
 
 ![Cheryl Hung](https://avatars3.githubusercontent.com/u/11319250?v=3&u=336db9e336bff5ab7c6716770e14257ba48b4720&s=400)
 
-I'm a software engineer by background; I enjoy solving challenging problems at Google and startups. Now I advocate for and build communities around open source infrastructure, as a director at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
+I'm a software engineer by background; I enjoyed solving challenging problems at Google and startups. Now I advocate for and build communities around open source infrastructure, as a director at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
 
 I frequently speak, and also founded the [Cloud Native
 London meetup](https://www.meetup.com/Cloud-Native-London) for the community around Kubernetes and cloud native platform in London. You can find me, plus 200-300 techies, on the first Wednesday of every month.
