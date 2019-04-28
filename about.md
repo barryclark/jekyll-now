@@ -19,7 +19,7 @@ Previously, I was a C++ engineer on Google Maps. I've been a product manager, De
 
 ## Contact me
 
-[Tweet me](https://twitter.com/oicheryl) for speaking engagements and new opportunities. My preferred forms of address are:
+[Tweet me](https://twitter.com/oicheryl) for speaking engagements and new opportunities.
 
 * Informal: Cheryl
 * Professional: Ms Cheryl Hung
