@@ -2,12 +2,12 @@
 layout: tags
 ---
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('a.menu').click(function(){
-            return false;
-        })
-    })
+<!-- Avoid the jump to the tags -->
+
+<script>
+ $(document).ready(function(){
+    $(window).scrollTop(0);
+});
 </script>
 
 <h3>I advocate for, and build communities around, Kubernetes, cloud native and open source.</h3>
