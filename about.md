@@ -8,8 +8,8 @@ permalink: /about/
 
 I'm a software engineer by background; I enjoy solving challenging problems at Google and startups. Now I advocate for and build communities around open source infrastructure, as a director at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
 
-I love public speaking and also founded the [Cloud Native
-London meetup](https://www.meetup.com/Cloud-Native-London). We meet on the first Wednesday of each month; come join the community around Kubernetes and cloud native platform in London!
+I frequently speak, and also founded the [Cloud Native
+London meetup](https://www.meetup.com/Cloud-Native-London) for the community around Kubernetes and cloud native platform in London. You can find me, plus 200-300 techies, on the first Wednesday of every month.
 
 ## Background
 
