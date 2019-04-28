@@ -6,7 +6,7 @@ permalink: /about/
 
 ## Work
 
-- DevOps Engineer, Site Reliability Engieer
+- DevOps Engineer, Site Reliability Engineer
   - Kubernetes
   - Container
   - Go, Python 3.x
@@ -18,9 +18,15 @@ permalink: /about/
   - udev, hal, dbus, Webkit, GStreamer
 - Former Writer of Linux magazine in Japan.
 
+## Education
+
+- University of the People('18-)
+  - Degree Seeking Student
+  - Bachelor of Computer Science
+
 ## Community
 
-- [Slideshare][http://www.slideshare.net/mitsutaka]
+- [Slideshare](http://www.slideshare.net/mitsutaka)
 - Japan Linux Conference 2010 Speaker
 - 第51回コンピュータセキュリティ研究発表会(CSEC51) Speaker/Panelist
 - MeeGo Seminar Winter 2010 Speaker
