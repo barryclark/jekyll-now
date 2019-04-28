@@ -7,7 +7,6 @@ disqus:
 google-ID: 'UA-101991886-1'
 
 menu:
-- {name: 'Featured posts', path: 'tags', url: '#featured'}
 - {name: 'Events', path: 'events', url: ''}
 - {name: 'About', path: 'about', url: ''}
 
