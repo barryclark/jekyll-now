@@ -25,7 +25,7 @@ Summary:
 
 Resources:
 
-* Github survey of open source developers: [opensourcesurvey.org/2017](opensourcesurvey.org/2017)
-* Contributing for individuals and for companies: [opensource.guide](opensource.guide), [todogroup.org](todogroup.org), [chaoss.community](chaoss.community)
-* Contributing to and joining the CNCF: [github.com/cncf/contribute](github.com/cncf/contribute), [cncf.io/about/join](cncf.io/about/join)
+* [Github survey of open source developers](opensourcesurvey.org/2017)
+* Contributing for [individuals](opensource.guide) and [companies](todogroup.org), and [measuring impact](chaoss.community)
+* [Contributing to](github.com/cncf/contribute) and [joining the CNCF](cncf.io/about/join)
 
