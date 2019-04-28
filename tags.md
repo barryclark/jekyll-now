@@ -4,10 +4,10 @@ layout: tags
 
 <!-- Avoid the jump to the tags -->
 
-<script language="javascript">
- $(document).onload(function(){
-    $(window).scrollTop(0);
-});
+<script>
+ document.addEventListener("DOMContentLoaded", function(){
+   window.scrollTo(0, 0);
+ });
 </script>
 
 <h3>I advocate for, and build communities around, Kubernetes, cloud native and open source.</h3>
