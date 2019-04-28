@@ -15,7 +15,7 @@ London meetup](https://www.meetup.com/Cloud-Native-London) for the community aro
 
 ## Background
 
-Previously, I was a C++ engineer on Google Maps. I've been a product manager, DevOps engineering manager and developer advocate. I hold a Masters in Computer Science from the University of Cambridge, King's College.
+Previously, I was a C++/Java/Python engineer on Google Maps. I've been a product manager, DevOps engineering manager and developer advocate. I hold a Masters in Computer Science from the University of Cambridge, King's College.
 
 ## Contact me
 
