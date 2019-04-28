@@ -6,7 +6,7 @@ permalink: /about/
 
 ![Cheryl Hung](https://avatars3.githubusercontent.com/u/11319250?v=3&u=336db9e336bff5ab7c6716770e14257ba48b4720&s=400)
 
-I am a Director of Ecosystem at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
+I am Director of Ecosystem at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
 
 I'm a software engineer by background; I enjoyed solving challenging problems at Google and startups. Now I advocate for and build communities around open source infrastructure.
 
