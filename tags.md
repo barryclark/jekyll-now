@@ -5,7 +5,7 @@ layout: tags
 <!-- Avoid the jump to the tags -->
 
 <script>
- document.addEventListener("DOMContentLoaded", function(){
+ window.addEventListener("load", function(){
    window.scrollTo(0, 0);
  });
 </script>
