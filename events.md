@@ -19,7 +19,8 @@ May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 * **Keynote**
 * **CNCF End User Awards**
 * **Navigating the cloud native ecosystem for end users**
-* [**Intro + Deep Dive BoF: Telecom User Group and Cloud Native Network Functions (CNF) Testbed**](https://sched.co/MSzj)
+* **Intro + Deep Dive BoF: Telecom User Group and Cloud Native Network Functions (CNF) Testbed**
+* **Birds of a Feather: Financial Services User Group (FSUG)**
 
 June 23 - 27: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
 * **Navigating the cloud native ecosystem for end users**
