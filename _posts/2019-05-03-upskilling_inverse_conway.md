@@ -42,4 +42,6 @@ We’ve had a great co-creation experience with AWS: Big thanks to them and to m
 
 Finally, the folks, who took the course, are more highly engaged than ever to be working for Haufe Group. We’re still on the road, as far as mastering machine learning and transforming the organization goes. Investing in our people so they can accomplish more is a great way to catalyze these transformations.
 
-Stay tuned for more news about upskilling in HG Dev Community and how it impacts our culture. And, check out Will's take on the upskilling next week on the dev blog. 
+Stay tuned for more news about upskilling in HG Dev Community and how it impacts our culture. And, check out Will's take on the upskilling next week on the dev blog.
+
+US Navy | Blue Angels, Double Farvel maneuver | https://bit.ly/2LccfdT | CC BY 2.0
