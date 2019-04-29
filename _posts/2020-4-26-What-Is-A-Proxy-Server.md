@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Is A Proxy Server
+title: PacketStream for Beginners (Customers Edition) Pt.1
 ---
 What Is A Proxy Server and What Is An IP Address? 
 and why Sierra Burgess Is a Loser is a cat-fishing movie <br><br> ![What is a proxy]({{ site.baseurl }}/images/post_content/malware_meme.jpg)
