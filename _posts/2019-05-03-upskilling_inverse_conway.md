@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Upskilling technology and culture
 subtitle:  
 category: dev
 tags: [culture, data, development]
