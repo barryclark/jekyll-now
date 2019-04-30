@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Cloud Senior Developer at Rightpoint, specializing in O365, SharePoint and all things Azure.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Check out my wordpress blog at https://derekgusoff.wordpress.com/
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[@dgusoff](https://twitter.com/dgusoff)
