@@ -10,7 +10,7 @@ May 8: Cloud Native Manchester
 * **Introduction to the CNCF**
 
 May 16: Docker London
-* **Navigating open source**
+* **Navigating the cloud native ecosystem**
 
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 * **Keynote**
