@@ -6,9 +6,6 @@ permalink: /events/
 
 ### 2019
 
-April 29: Google Developer Group Cloud, London
-* **Navigating the cloud native ecosystem for end users**
-
 May 8: Cloud Native Manchester
 * **Introduction to the CNCF**
 
