@@ -26,7 +26,7 @@ Bad news: I haven't completed any yet.
 
 Good news: I have 5 in flight, with 3 (Pokemon Let's Go, Dark Souls 1, and Half Life) nearing the finish line.
 
-GREAT news: Last night, [I hit Gold in League of Legends](leagueTweet) on my main account. This is something I've been trying to do for 6 years now, and I finally accomplished my goal. I immediately uninstalled the game, as I know I have a HUGE backlog to get through. I'll likely go back in June, but I wanted to force myself to have May to focus on other games. I don't have League, Overwatch, WoW, or Apex installed currently, so we'll see if that helps galvanize me.
+GREAT news: Last night, [I hit Gold in League of Legends][leagueTweet] on my main account. This is something I've been trying to do for 6 years now, and I finally accomplished my goal. I immediately uninstalled the game, as I know I have a HUGE backlog to get through. I'll likely go back in June, but I wanted to force myself to have May to focus on other games. I don't have League, Overwatch, WoW, or Apex installed currently, so we'll see if that helps galvanize me.
 
 ### Goal 5: Read 12 books
 
