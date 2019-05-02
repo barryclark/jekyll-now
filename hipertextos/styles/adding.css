@@ -54,17 +54,16 @@ p, ul {font-size: 18px;line-height: 27px;}
 #web-music {background-image: url("/img/music.jpg");image-rendering: crisp-edges;background-position: top center;
     background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;border-top: 5px solid var(--color-hardgrey);border-bottom: 5px solid var(--color-hardgrey);
     color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;}
-#web-branding {background-image: url("/img/branding.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;
-    background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);
-    border-top: 5px solid var(--color-hardgrey);border-bottom: 5px solid var(--color-hardgrey);letter-spacing: .06em;overflow: hidden;text-align: center;
+#web-branding {background-image: url("/img/texture/dark_grey.png");background-size:256px 256px;background-repeat: repeat;background-attachment: fixed;
+    border: none;letter-spacing: .06em;overflow: hidden;text-align: center;
 }
-#blured {background:rgba(230,230,230,.9);color:var(--color-hardgrey);
+#blured {background:rgba(255,255,255,.75);color:var(--color-hardgrey);
     background-size: cover;background-repeat: no-repeat;
     overflow: hidden;text-align: center;
     padding:32px 21px 0 11px;border-radius:12px;
     z-index: 30;border:thin solid rgba(200,200,200,.72);
     border-top:thin solid rgba(250,250,250,.62);border-bottom:thin solid rgba(250,250,250,.72);
-    box-shadow:1px 3px 12px rgba(20,20,20,.25), 1px 6px 72px rgba(120,120,120,.25);
+    box-shadow:1px 3px 12px rgba(0,0,0,.25), 1px 6px 32px rgba(0,0,0,.25);
 }
 img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #web-music img.note {border:thin solid rgba(220,220,220,.75);}
