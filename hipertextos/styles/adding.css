@@ -54,15 +54,14 @@ p, ul {font-size: 18px;line-height: 27px;}
 #web-music {background-image: url("/img/music.jpg");image-rendering: crisp-edges;background-position: top center;
     background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;border-top: 5px solid var(--color-hardgrey);border-bottom: 5px solid var(--color-hardgrey);
     color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;}
-#web-branding {background-image: url("/img/texture/dark_grey.png");background-size:256px 256px;background-repeat: repeat;background-attachment: fixed;
+#web-branding {background: rgb(34,193,195);background: linear-gradient(347deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     border: none;letter-spacing: .06em;overflow: hidden;text-align: center;
 }
-#blured {background:rgba(255,255,255,.75);color:var(--color-hardgrey);
-    background-size: cover;background-repeat: no-repeat;
+#blured { background-image: url("/img/texture/white_tree.png");background-size:350px 350px;background-repeat: repeat;background-attachment: fixed;
+	color:var(--color-hardgrey);
     overflow: hidden;text-align: center;
     padding:32px 21px 0 11px;border-radius:12px;
-    z-index: 30;border:thin solid rgba(200,200,200,.72);
-    border-top:thin solid rgba(250,250,250,.62);border-bottom:thin solid rgba(250,250,250,.72);
+    z-index: 30;border:thin solid rgba(250,250,250,.8);
     box-shadow:1px 3px 12px rgba(0,0,0,.25), 1px 6px 32px rgba(0,0,0,.25);
 }
 img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
@@ -142,10 +141,10 @@ hr.lifting {margin: 0px;height: 1px;}
 #fronters p {margin: 0px;min-width: 100%;}
 #fronters .front-responsive {min-width: 19%;margin-left: 30%;}
 #fronters .cover-justify {text-align: right;}
-#fronters-brand svg {max-width: 38px;height: 85px;}
+#fronters-brand svg {max-width: 54px;height: 80px;}
 #fronters-brand section {padding: 18px 0px 18px 0px;}
 #fronters-brand .imagens {width: 100%;padding: 2px;overflow: hidden;border-radius: 36px;}
-#fronters-brand h4, #fronters-brand p {text-align: left;}
+#fronters-brand h4, #fronters-brand p {letter-spacing: -0.012em;}
 
 #fronters-brand article a {margin: 0px !important;padding: 0px !important;}
 #fronters-music svg {max-width: 72px;margin: 16px 0px 18px 0px;}
