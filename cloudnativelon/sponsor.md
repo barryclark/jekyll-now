@@ -1,5 +1,5 @@
 ---
 permalink: /cnl-sponsor
 redirect_to:
-  - https://docs.google.com/document/d/e/2PACX-1vSGU6tM-u8U8DJPNa3vRluXGvALW3a8J8i-NKF2k8mePNHPhzPiaR9zVg2raMGwL0Ate-hfSukYxCoV/pub
+  - https://docs.google.com/forms/d/e/1FAIpQLSdirBvzk7gR6c4FM6BoKWlttTnXOWRNpUx4oTq5Nzfsg8UMDA/viewform
 ---
