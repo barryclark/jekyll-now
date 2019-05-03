@@ -19,14 +19,14 @@ Money is an abstraction.
 
 An abstraction is a high-level concept - an idea rather than a thing. Normally you can't hold it in your hand.
 
-Categories are probably the easiest example of abstraction to grasp. In fact, this is how Wikipedia defines it - "a concept that acts as a common noun for all subordinate concepts, and connects any related concepts as a group, field, or category."
+Categories are probably the easiest example of abstraction to grasp. In fact, this is how [Wikipedia defines an abstraction](https://en.wikipedia.org/wiki/Abstraction) - "a concept that acts as a common noun for all subordinate concepts, and connects any related concepts as a group, field, or category."
 
 The opposite of an abstraction is a concrete, specific example.
 
-"All red things" could be a category, whereas an apple could be a specific example. Except that *an apple* could be an abstraction itself - *Red Delicious* being more specific, or even this particular apple itself:
+"All red things" could be a category, whereas an apple could be a specific example. Except that *an apple* could be an abstraction itself - *[Red Delicious](https://en.wikipedia.org/wiki/Red_Delicious)* being more specific, or even this particular apple itself:
 
-![Picture of an apple.](/images/apple.jpg)
-*Picture of an apple.*
+![Picture of an apple. A Gala Apple to be exact.](/images/apple.jpg)
+*Picture of an apple. A [Gala Apple](https://en.wikipedia.org/wiki/Gala_%28apple%29) to be exact.*
 
 ## How is money an abstraction?
 
@@ -37,13 +37,13 @@ What's unique about money as an abstraction is that you can hold it in your hand
 
 What makes money an abstraction is that it represents things it is not. It's what it allows us to do.
 
-As a medium of exchange - a way to pay for things - we no longer have to trade concrete items. Instead of trading wheat for chickens, we trade wheat for money, and then money for chickens.
+As a [medium of exchange](https://en.wikipedia.org/wiki/Medium_of_exchange) - a way to pay for things - we no longer have to trade concrete items. Instead of trading wheat for chickens, we trade wheat for money, and then money for chickens.
 
-As a store of value, we no longer have to keep silos full of grain in anticipation of hard times. Instead, we keep money in an emergency fund for hard times instead.
+As a [store of value](https://en.wikipedia.org/wiki/Store_of_value), we no longer have to keep silos full of grain in anticipation of hard times. Instead, we keep money in an emergency fund for hard times instead.
 
-As a unit of measurement, we can determine how much is needed, or how much is lost, without getting into the details. Instead of knowing we need 10 tons of bricks, 20 cases of mortar, and 10 people to build a house, we know we need $300,000.
+As a [unit of measurement](https://en.wikipedia.org/wiki/Unit_of_account), we can determine how much is needed, or how much is lost, without getting into the details. Instead of knowing we need 10 tons of bricks, 20 cases of mortar, and 10 people to build a house, we know we need $300,000.
 
-![Money and currency symbols from around the world.](images/money-symbols.png)
+![Money and currency symbols from around the world.](/images/money-symbols.png)
 *Money and currency symbols from around the world.*
 
 ## Money is Resources
