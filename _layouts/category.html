@@ -2,11 +2,22 @@
 layout: default
 ---
 
+<h1>{{ page.category | capitalize }}</h1>
+
+{% for category in site.categories %}
+  {% if category[0] == page.category %}
+    {% assign posts = category[1] %}
+  {% endif %}
+{% endfor %}
+
 <div class="posts">
-  {% for post in site.categories.{{ page.category }} %}
+  {% for post in posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="date">
+          {{ post.date | date: "%B %e, %Y" }}
+        </div>
 
       <div class="entry">
         {{ post.excerpt }}
