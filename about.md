@@ -8,7 +8,7 @@ permalink: /about/
 
 I am Director of Ecosystem at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
 
-I'm a software engineer by background; I enjoyed solving challenging problems at Google and startups. Now I advocate for and build communities around open source infrastructure.
+I'm a software engineer by background; I enjoyed solving challenging problems at Google and startups. Now I advocate for and build communities around Kubernetes, cloud native and open source infrastructure.
 
 I frequently speak, and also founded the [Cloud Native
 London meetup](https://www.meetup.com/Cloud-Native-London) for the community around Kubernetes and cloud native platform in London. You can find me, plus 200-300 techies, on the first Wednesday of every month.
