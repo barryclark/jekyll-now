@@ -28,7 +28,7 @@
 
           <nav>
             {% for item in site.data.navigation %}
-                <a href="{{ item.link }}">
+                <a href="{{ site.baseurl }}{{ item.link }}">
                     {{ item.name }}
                 </a>
             {% endfor %}
