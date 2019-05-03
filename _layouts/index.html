@@ -5,8 +5,10 @@ title: Home
 
 {{ content }}
 
-<!-- Show latest post-->
-{% include post-summary.html post=site.posts.first %}
+<!-- Show latest 3 post-->
+{% for post in site.posts limit:3 %}
+  {% include post-summary.html post=post %}
+{% endfor %}
 
 <!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
 <!-- With added pipe to handle lack of sort_natural -->
