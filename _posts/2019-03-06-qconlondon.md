@@ -2,6 +2,7 @@
 layout: post
 title: "A Guided Journey of Cloud Native, featuring Monzo - QCon, London"
 tags:
+  - Photos
   - Slides
   - "2019"
 ---
