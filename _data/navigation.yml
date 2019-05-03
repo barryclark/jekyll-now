@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: Python
+  link: /python.html
+- name: About
+  link: /about.md
