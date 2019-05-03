@@ -2,6 +2,7 @@
 layout: post
 title: "Cloud Native London October 2018 Roundup"
 tags:
+  - Photos
   - "2018"
   - Meetup
 ---
