@@ -2,6 +2,22 @@
 layout: index
 ---
 
-![Cheryl Hung](https://avatars3.githubusercontent.com/u/11319250?v=3&u=336db9e336bff5ab7c6716770e14257ba48b4720&s=100){: .align-left}I advocate for, and build communities around, Kubernetes, cloud native and open source.
+{% for post in paginator.posts %}
+  {% include post-summary.html post=post %}
+{% endfor %}
 
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-button pagination-active" href="{{ paginator.next_page_path }}" class="next">{{ site.data.settings.pagination.previous_page }}</a>
+  {% else %}
+    <span class="pagination-button">{{ site.data.settings.pagination.previous_page }}</span>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    <a class="pagination-button pagination-active" href="{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
+  {% else %}
+    <span class="pagination-button">{{ site.data.settings.pagination.next_page }}</span>
+  {% endif %}
+</div>
 
