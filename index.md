@@ -1,6 +1,5 @@
 ---
 layout: index
-permalink: index
 ---
 
 <h3>I advocate for, and build communities around, Kubernetes, cloud native and open source.</h3>
