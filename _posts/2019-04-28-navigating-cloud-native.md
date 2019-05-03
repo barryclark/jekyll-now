@@ -2,6 +2,7 @@
 layout: post
 title: "Navigating the cloud native ecosystem - GDG Cloud London"
 tags:
+  - Photos
   - Slides
   - "2019"
 ---
