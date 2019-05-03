@@ -2,6 +2,7 @@
 layout: post
 title: "Meetup roundup: Cloud Native London March 2019"
 tags:
+  - Photos
   - Video
   - Meetup
   - "2019"
