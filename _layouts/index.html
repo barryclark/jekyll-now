@@ -5,6 +5,9 @@ title: Home
 
 {{ content }}
 
+<!-- Show latest post-->
+{% include post-summary.html post=site.posts.first %}
+
 <!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
 <!-- With added pipe to handle lack of sort_natural -->
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}|{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
@@ -44,6 +47,3 @@ title: Home
     {% endfor %}
   </div>
 </div>
-
-<!-- Show latest post-->
-{% include post-summary.html post=site.posts.first %}
