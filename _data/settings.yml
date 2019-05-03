@@ -21,8 +21,8 @@ social:
 
 # Customize site text
 pagination:
-  next_page: 'Next 10'
-  previous_page: 'Previous 10'
+  next_page: 'Newer'
+  previous_page: 'Older'
 
 # Text prefix for tags at the bottom of each post.
 post_tags: 'Tagged with'
