@@ -28,7 +28,10 @@
 
           <nav>
             {% for item in site.data.navigation %}
-                <a href="{{ site.baseurl }}{{ item.link }}">
+            
+                {% capture url %}{{ site.baseurl }}{{ item.link }}{% endcapture %}
+                
+                <a href="{{ url }}"{% if page.url == url %}style="font-weight: bold;"{% endif %}>
                     {{ item.name }}
                 </a>
             {% endfor %}
