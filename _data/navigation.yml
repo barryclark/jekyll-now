@@ -1,6 +1,6 @@
 - name: Home
   link: /
-- name: Python
-  link: /python/
+- name: Blog
+  link: /blog/
 - name: About
   link: /about/
