@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Serverless Java Challenges and Triumphs
-permalink: /Challenges/
+permalink: /proposal/Challenges
 ---
 
 ### Short abstract
