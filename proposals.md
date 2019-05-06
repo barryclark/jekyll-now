@@ -12,6 +12,7 @@ redirect_from:
 * [Serverless functions with an open-source FaaS platform](/proposal/Fn)
 * [Serverless Java Challenges and Triumphs](/proposal/Challenges)
 * [JVMs in Containers, towards a perfect symbiosis!](/proposal/JVMinContainers)
+* :fr:[La JVM et Docker, vers une symbiose parfaite!](/proposal/JVMinContainersFR)
 * [Project Helidon - Java Libraries for Microservices](/proposal/Helidon)
 * [ROS introduction for Java Developers](/proposal/ROS)
 
