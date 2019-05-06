@@ -1,6 +1,6 @@
 ---
 layout: page
-title: JVMs in Containers, towards a perfect symbiosis
+title: JVMs in Containers, towards a perfect symbiosis!
 permalink: /proposal/JVMinContainers
 ---
 
