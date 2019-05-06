@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Serverless functions with an open-source FaaS platform
-permalink: /Fn/
+permalink: /proposal/Fn
 ---
 
 ### Abstract
