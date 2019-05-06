@@ -1,7 +1,7 @@
 ---
 layout: page
 title: La JVM et Docker, vers une symbiose parfaite!
-permalink: /proposal/JVMinContainers
+permalink: /proposal/JVMinContainersFR
 ---
 
 ### Abstract
