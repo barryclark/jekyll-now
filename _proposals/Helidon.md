@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project Helidon | Java Libraries for Microservices
+title: Project Helidon - Java Libraries for Microservices
 permalink: /proposal/Helidon
 ---
 
