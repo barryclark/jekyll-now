@@ -11,3 +11,4 @@ redirect_from:
 
 * [Serverless functions with an open-source FaaS platform](/proposal/Fn)
 * [Serverless Java Challenges and Triumphs](/proposal/Challenges)
+* [JVMs in Containers, towards a perfect symbiosis!](/proposal/JVMinContainers)
