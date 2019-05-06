@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ROS (Robot Operating System) introduction for Java developers
+title: Robot Operating System for Java developers
 permalink: /proposal/ROS
 ---
 
