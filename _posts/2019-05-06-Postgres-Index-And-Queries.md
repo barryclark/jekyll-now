@@ -53,8 +53,11 @@ This returns results looking like this
 
 The columns in the above table are
 * `relname`: Name of the DB table
+
 * `indexrelname`: Name of the user index these stats are for
+
 * `relid`: Identifier of the 'apples' table inside Postgres
+
 * `indexrelid`: Identifier of each index for Postgres. This is an [OID][6] and, [if you have not tampered with the defaults][7] 
 only used for system objects. What this means in plain English is that it gives you a sense of an index's "age": the 
 higher the id, the newer the index. This can help put the rest of the numbers into perspective.  
@@ -62,16 +65,35 @@ For example, in the results above we can deduce that
   * the primary key `apples_pkey` was created almost at the same time as the 'apples' table (as one would expect)
   * next to be created was `index_apples_on_created_at`
   * last one was `index_apples_on_farm_id_and_variety_type` 
+
 * `idx_scan`: How many times the index has been scanned (used).  
 This can be either directly by a application query (e.g. `SELECT * FROM apples WHERE id = 1`) or indirectly due to a JOIN. 
 For example, the primary key index `apples_pkey` has been scanned over 318 million times.
+
 * `idx_tup_read`: This is the number of index entries returned as a result of an index scan.  
 An easy-to-understand example is the primary key (e.g. `SELECT * FROM apples WHERE id = 1`). If there is an apple with 
 id = 1, then `idx_tup_read` will increase by 1. Modifying slightly the query `SELECT * FROM apples WHERE id IN (1, 2)` 
 `idx_tup_read` will increase by 2 (if both ids exist). In both of these queries, `idx_scan` will increase by 1.
+
 * `idx_tup_fetch`: These are the number of rows fetched from the table as a result of an index scan.  
 This is increased as a result of both positive and false positive results.  
-     
+For example, if both ids exist, the query `SELECT * FROM apples WHERE id IN (1, 2)` will increase
+`idx_tup_fetch` by 2, returning the rows to the client. Even if the query is modified to 
+`SELECT * FROM apples WHERE id IN (1, 2) AND color = 'purple'` the counter would still be increased by 2.
+The reason is that the tuples will need to be loaded from disk to examine the value of 'color'.  
+Even if 'purple' is unknown and the query returns 0 rows, the counter will still be increased. 
+
+## Forensics 
+
+![Investigation](../images/postgres-indexes-queries/helloquence-61189-unsplash.jpg)
+> Photo by Helloquence on Unsplash     
+
+True power of `pg_stat_user_indexes` 
+lies when you examine how it changes over time
+
+This can be very revealing of how your application's queries behave under the hood
+
+
 
 ## Parting thought
 
