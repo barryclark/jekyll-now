@@ -2,7 +2,7 @@
 layout: post
 title: Open Source 101
 date: May 6, 2019
-time:
+time: 22:10 UTC-4
 ---
 
 So now that the semester has finally ended for me, I will finally have time to really dedicate to some more studies, and I will be working full time this summer at NineFx Inc in Columbia, SC as a Software Engineer. I wanted to talk about my time at [Open Source 101](https://opensource101.com/) in Columbia. The main event for me was, the talk about Machine Learning, where an engineer [Dan Zaratsian](https://opensource101.com/member/dan-zaratsian/), had shown that a trained neural network was able to tell if patients had cancer, or other diseases solely through images. It was extremely eye opening, to actually see what I've been hearing, and the fear that computers will soon be able to do many if not all of our essential jobs. Other than that, I enjoyed many of the talks given at the conference.
