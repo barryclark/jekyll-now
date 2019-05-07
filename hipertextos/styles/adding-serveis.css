@@ -76,12 +76,13 @@ img.apps {border-radius:28px;max-width:64%;}
 #web-top  {text-align:justify;}
 #web-icons h3 {font-size:1.6em;line-height: 1em; padding-left:12px;margin-bottom:0px;}
 #web-top p {font-size:15px;line-height:1.2em;padding:3px 12px 12px 12px;}
-#resumed-paint svg {padding:12px;min-width:100%;width:32px!important}
+#resumed-paint svg {padding:9px;min-width:100%;width:32px!important}
 #resumed-paint {color:var(--color-translucentwhite);}
-#resumed-paint h5 {margin-bottom:16px;}
-#resumed-paint div {display: block;float: left;margin-top:32px;
-	height: auto;width: 100%;width: 49.9999999999%;letter-spacing: -0.03em}
-#super-cover img {border: 6px solid #111;border-radius:14px;max-width:768px;height:auto;}
+#resumed-paint h5 {margin-bottom:12px;}
+#section-paint h4 {margin-bottom:0px;}
+#resumed-paint div {display: block;float: left;margin-top:0px;
+	height: auto;width: 100%;width: 33.3333333333%;letter-spacing: -0.012em}
+#super-cover img {border: 3px solid #111;border-radius:16px;max-width:762px;height:auto;margin-bottom:-10px;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
 #section-brand .thumb-4 img {max-width:48%;}
