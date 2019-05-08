@@ -140,6 +140,7 @@ hr.lifting {margin: 0px;height: 1px;}
 #fronters-brand section {padding: 18px 0px 18px 0px;}
 #fronters-brand .imagens {width: 100%;padding: 2px;overflow: hidden;border-radius: 36px;}
 #fronters-brand h4, #fronters-brand p {letter-spacing: -0.012em;}
+#fronters-brand .goldentarget { max-width:600px;width:100%; }
 
 #fronters-brand article a {margin: 0px !important;padding: 0px !important;}
 #fronters-music svg {max-width: 72px;margin: 16px 0px 18px 0px;}
