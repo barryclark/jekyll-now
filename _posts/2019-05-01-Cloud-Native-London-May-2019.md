@@ -13,7 +13,7 @@ tags:
 
 We were at a different venue for our May Cloud Native London meetup - thanks to [Monzo](https://monzo.com/), who hosted us! 
 
-First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/), [SUSE](https://www.suse.com/), [ForgeRock[(https://www.forgerock.com/) and [GridGain](https://www.gridgain.com/)
+First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/), [SUSE](https://www.suse.com/), [ForgeRock](https://www.forgerock.com/) and [GridGain](https://www.gridgain.com/)
 
 
 First was a discussion of the Azure SQL Database, then An intro to EKS, wrapping up with a talk on the ForgeRock identity platform.
