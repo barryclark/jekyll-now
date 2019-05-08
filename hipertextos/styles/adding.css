@@ -138,6 +138,8 @@ hr.lifting {margin: 0px;height: 1px;}
 #glass-front h4 {margin: 0px;font-size:1.6em;line-height: 1em;letter-spacing: -0.01em;}
 #glass-front img {width: 72px;margin-bottom:6px;}
 #fronters h5 {margin-bottom: 16px!important;}
+#fronters h3 {margin-bottom: 0px!important;}
+#fronters h1 {line-height:1em;}
 #fronters p {margin: 0px;min-width: 100%;}
 #fronters .front-responsive {min-width: 19%;margin-left: 30%;}
 #fronters .cover-justify {text-align: right;}
