@@ -75,6 +75,12 @@ img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #web-branding h3 i a, #web-oferta h3 i a { font-size:1.1em;font-style: normal;letter-spacing: -0.045em;padding-left:12px;text-decoration:none;}
 #web-branding h3 a:hover, #web-oferta h3 a:hover { text-decoration:underline;}
 #web-branding h3, #web-oferta h3 {line-height:1em;margin-bottom: 0px!important;}
+#web-grafics em a {border-radius:8px;padding:12px 27px 12px 27px;
+    background-color:var(--color-red)!important;color:var(--color-white);
+    border:thin solid var(--color-red);margin:1.2em 0 1.6em 0;}
+#web-grafics em a:hover {
+    background-color:var(--color-white)!important;color:var(--color-red);
+    border:thin solid var(--color-red);text-decoration:none;}
 
 em hr {border-bottom: thin solid #eee;}
 em u label, em u a {
