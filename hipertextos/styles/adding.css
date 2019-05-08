@@ -24,7 +24,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
 
-#page-main.darkmode {background: rgba(160,0,20,1);}
+#page-main.darkmode {background: var(--color-white);}
 #page-main.darkmode em a {background: #111;}
 
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;
@@ -43,7 +43,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 #web-oferta h1, #blured h1 {color:var(--color-black);}
 #web-branding h1 {color:var(--color-white);}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .0012em;text-align: center;color: var(--color-grey);}
-#web-grafics {color: var(--color-soft);}
+#web-grafics {color: var(--color-red);}
 #web-oferta #fronters {max-width: 45%;margin-right: 35%;}
 .animeonscroll img {padding:8px;max-width:30%;}
 #web-music {background-image: url("/img/music.jpg");image-rendering: crisp-edges;background-position: top center;
@@ -60,7 +60,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 }
 img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #web-music img.note {border:thin solid rgba(220,220,220,.75);}
-#web-grafics img.note {border:thin solid rgba(220,220,220,.75);}
+#web-grafics img.note {background: var(--color-red);}
 #web-branding img.note {background: rgba(20,20,20,.1);}
 
 #logotips article {padding: 23px;}
