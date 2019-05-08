@@ -71,9 +71,10 @@ img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #fronters img.htmlcss {max-width: 300px;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
-#web-grafics h3 i, #web-branding h3 i, #web-oferta h3 i {font-size:.62em;font-weight:normal;color:var(--color-link);font-style:normal;}
-#web-grafics h3 i a, #web-branding h3 i a, #web-oferta h3 i a { font-size:1.1em;font-style: normal;letter-spacing: -0.045em;padding-left:12px;text-decoration:none;}
-#web-grafics h3 a:hover, #web-branding h3 a:hover, #web-oferta h3 a:hover { text-decoration:underline;}
+#web-branding h3 i, #web-oferta h3 i {font-size:.62em;font-weight:normal;color:var(--color-link);font-style:normal;}
+#web-branding h3 i a, #web-oferta h3 i a { font-size:1.1em;font-style: normal;letter-spacing: -0.045em;padding-left:12px;text-decoration:none;}
+#web-branding h3 a:hover, #web-oferta h3 a:hover { text-decoration:underline;}
+#web-branding h3, #web-oferta h3 {line-height:1em;margin-bottom: 0px!important;}
 
 em hr {border-bottom: thin solid #eee;}
 em u label, em u a {
@@ -138,7 +139,6 @@ hr.lifting {margin: 0px;height: 1px;}
 #glass-front h4 {margin: 0px;font-size:1.6em;line-height: 1em;letter-spacing: -0.01em;}
 #glass-front img {width: 72px;margin-bottom:6px;}
 #fronters h5 {margin-bottom: 16px!important;}
-#fronters h3 {line-height:1em;margin-bottom: 0px!important;}
 #fronters h1 {line-height:1em;}
 #fronters p {margin: 0px;min-width: 100%;}
 #fronters .front-responsive {min-width: 19%;margin-left: 30%;}
