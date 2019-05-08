@@ -35,7 +35,7 @@ There are a few major reasons why I think the game is so successful:
 
 (Another clip of a win from last night.)
 
-<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/s/q7tdi/ldbmka" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+<div class="embed"><iframe src="https://streamable.com/s/q7tdi/ldbmka" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
 The biggest complaints I've seen about this game so far are somewhat dumb; that being "[all the paid content is too expensive!!!][kotakuApex]" Well, Dave, the game is COMPLETELY FREE. They need to recover the money from somewhere, yeah? Honestly, I don't think I'll ever make a single purchase with actual money in this game, but that's just me.
 
