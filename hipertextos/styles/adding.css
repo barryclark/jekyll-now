@@ -24,16 +24,9 @@ p, ul {font-size: 18px;line-height: 27px;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
 
-#page-main.darkmode {background: #111;}
+#page-main.darkmode {background: rgba(160,0,20,1);}
 #page-main.darkmode em a {background: #111;}
-.apple {background: transparent!important;border-radius:3px;margin-top:32px!important;letter-spacing: 0.01em;}
-.apple:hover {background: var(--color-black) !important;color:var(--color-white);}
-#web-music .apple,
-#web-branding .apple,
-#web-grafics .apple {
-    background: rgba(252,51,90,1) !important;border-color:rgba(232,31,60,1);
-    margin:32px!important;color:var(--color-white);
-}
+
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;
 }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {
@@ -48,25 +41,27 @@ p, ul {font-size: 18px;line-height: 27px;}
     line-height:1em;font-size:1.4em;
 }
 #web-oferta h1, #blured h1 {color:var(--color-black);}
+#web-branding h1 {color:var(--color-white);}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .0012em;text-align: center;color: var(--color-grey);}
+#web-grafics {color: var(--color-soft);}
 #web-oferta #fronters {max-width: 45%;margin-right: 35%;}
 .animeonscroll img {padding:8px;max-width:30%;}
 #web-music {background-image: url("/img/music.jpg");image-rendering: crisp-edges;background-position: top center;
     background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;border-top: 5px solid var(--color-hardgrey);border-bottom: 5px solid var(--color-hardgrey);
     color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;}
-#web-branding {background: rgb(34,193,195);background: linear-gradient(347deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+#web-branding {background: rgba(20,20,20,1);
     border: none;letter-spacing: .06em;overflow: hidden;text-align: center;
 }
-#blured { background-image: url("/img/texture/white_tree.png");background-size:350px 350px;background-repeat: repeat;background-attachment: fixed;
+#blured {
 	color:var(--color-hardgrey);
     overflow: hidden;text-align: center;
     padding:32px 21px 0 11px;border-radius:12px;
-    z-index: 30;border:thin solid rgba(250,250,250,.8);
-    box-shadow:1px 3px 12px rgba(0,0,0,.25), 1px 6px 32px rgba(0,0,0,.25);
+    z-index: 30;
 }
 img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #web-music img.note {border:thin solid rgba(220,220,220,.75);}
-#web-branding img.note {background: rgba(235,235,235,.8);}
+#web-grafics img.note {border:thin solid rgba(220,220,220,.75);}
+#web-branding img.note {background: rgba(20,20,20,.1);}
 
 #logotips article {padding: 23px;}
 #fronters-brand .cover-justify svg {min-width: 72px;}
