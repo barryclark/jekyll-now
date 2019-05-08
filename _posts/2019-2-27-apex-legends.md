@@ -21,7 +21,7 @@ I've actively been uninstalling a lot of "time sink" games from my computer (**O
 
 (Below is a clip of a recent game I played with some of my friends. Excuse the swearing.)
 
-<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/s/9lg6p/ioxcpn" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+<div class="embed"><iframe src="https://streamable.com/s/9lg6p/ioxcpn" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
 There are a few major reasons why I think the game is so successful:
 
