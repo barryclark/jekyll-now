@@ -71,7 +71,8 @@ img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #fronters img.htmlcss {max-width: 300px;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
-#web-oferta i a { font-size:1.2em;font-style: normal;letter-spacing: -0.045em;padding-left:8px;text-decoration:none;}
+#web-oferta i {color:var(--color-link);font-style:normal;}
+#web-oferta i a { font-size:1.1em;font-style: normal;letter-spacing: -0.045em;padding-left:12px;text-decoration:none;}
 #web-oferta a:hover { text-decoration:underline;}
 
 em hr {border-bottom: thin solid #eee;}
