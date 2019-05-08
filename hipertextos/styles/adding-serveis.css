@@ -56,8 +56,6 @@ h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1
 #section-paint {background-color:var(--color-black) ;text-align:center;}
 #section-music {background:linear-gradient(rgba(216,80,162,1),rgba(193,100,160,.9),rgba(97,149,209,1));
     color:var(--color-white) ;border:none;text-align:center;}
-img.apps {border-radius:28px;max-width:64%;}
-
 #section-web, #section-brand, #section-music {
     background-position: top center;background-attachment: fixed;
     background-size: cover;background-repeat: no-repeat;
@@ -90,7 +88,7 @@ img.apps {border-radius:28px;max-width:64%;}
 img.big-icon {width:52px; }
 #section-paint {color:var(--color-white);}
 
-#resumed-apps {padding:4%;}
+#resumed-apps {padding:1%;}
 #resumed-apps .agenda span, #resumed-apps .publi span,
 #resumed-apps .sound span {
     border-radius:12px;

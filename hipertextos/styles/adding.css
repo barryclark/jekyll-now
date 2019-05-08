@@ -18,7 +18,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 @media (max-width: 1024px) {
     		#page-header.cover {background-image: url("/img/m-home.jpg");}
 }
-/* Nav */
+img.apps {border-radius:27px;max-width:153px;}
 .cover img {width: 80px;margin-bottom: 2.0em;}
 .cover h2 {letter-spacing: -0.001em;line-height: 1.2em;font-weight: normal ;font-size: 1em !important;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
