@@ -15,11 +15,20 @@ ref: sponsoren
   </figure>
 </section>
 
+<section class="side-figure" id="teleorbit">
+  <span>The company <a href="https://teleorbit.eu/en/"><strong>TeleOrbit</strong></a>, which acts in the GNSS and mobile positioning technology, has financially supported us. Latest news can be found on Twitter: <a href="https://twitter.com/teleorbitgmbh">@teleorbitgmbh</a></span>
+  <figure>
+    <a href="https://teleorbit.eu/en/">
+      <img src="{{ site.baseurl }}/images/2019-sponsoren/TeleOrbit.jpg" />
+    </a>
+  </figure>
+</section>
+
 <section class="side-figure" id="watterott">
-  <span>The company <a href="https://www.watterott.com/"><strong>Watterott</strong></a> supplied all CanSat teams with some construction components. We thankfully accepted their offer and received some sensors from them.</span>
+  <span>The electronics distributor <a href="https://www.watterott.com/"><strong>Watterott</strong></a> supplied all CanSat teams with some construction components. We thankfully accepted their offer and received some sensors from them.</span>
   <figure>
     <a href="https://www.watterott.com/">
-      <img src="{{ site.baseurl }}/images/2018-sponsoren/Watterott.png" />
+      <img src="{{ site.baseurl }}/images/2019-sponsoren/Watterott.png" />
     </a>
   </figure>
 </section>
