@@ -71,9 +71,9 @@ img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #fronters img.htmlcss {max-width: 300px;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
-#web-oferta h3 i {font-size:.62em;font-weight:normal;color:var(--color-link);font-style:normal;}
-#web-oferta h3 i a { font-size:1.1em;font-style: normal;letter-spacing: -0.045em;padding-left:12px;text-decoration:none;}
-#web-oferta h3 a:hover { text-decoration:underline;}
+#web-grafics h3 i, #web-branding h3 i, #web-oferta h3 i {font-size:.62em;font-weight:normal;color:var(--color-link);font-style:normal;}
+#web-grafics h3 i a, #web-branding h3 i a, #web-oferta h3 i a { font-size:1.1em;font-style: normal;letter-spacing: -0.045em;padding-left:12px;text-decoration:none;}
+#web-grafics h3 a:hover, #web-branding h3 a:hover, #web-oferta h3 a:hover { text-decoration:underline;}
 
 em hr {border-bottom: thin solid #eee;}
 em u label, em u a {
