@@ -7,9 +7,9 @@ tags:
   - "2019"
 ---
 
-<object data="http://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf">Download PDF</a>.
+<object data="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf" type="application/pdf" width="100%" height="700px">
+    <embed src="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf">
+        This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf">Download PDF</a>.
     </embed>
 </object>
 
