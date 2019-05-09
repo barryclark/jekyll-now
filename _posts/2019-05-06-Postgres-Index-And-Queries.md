@@ -99,9 +99,8 @@ Initial
  relid | indexrelid | schemaname | relname |           indexrelname                       | idx_scan  | idx_tup_read | idx_tup_fetch
 -------+------------+------------+---------+----------------------------------------------+-----------+--------------+---------------
  29667 |    3403877 | public     | apples  | index_apples_farmed_not_yet_in_truck         |        37 |     73003975 |             0
- 29667 |    4188612 | public     | apples  | index_apples_cancelled_not_yet_in_submission |        49 |      8212498 |             0
- 29667 |    1848177 | public     | apples  | index_apples_on_to_state                     |       377 |    250021437 |             0
- 29667 |   43112037 | public     | apples  | index_apples_bankint_debitor_id              |      5750 |         5761 |          5747
+ 29667 |    1848177 | public     | apples  | index_apples_on_to_farm                      |       377 |    200021437 |             0
+ 29667 |   43112037 | public     | apples  | index_apples_on_to_truck                     |      5750 |    100021437 |     100014483
  29667 |     250135 | public     | apples  | index_apples_on_bank_report_entry_id         |     11623 |        11592 |         11592
  29667 |    4163798 | public     | apples  | index_apples_currently_pending_submission    |    456656 |     10389493 |       9934080
  29667 |    2221043 | public     | apples  | index_apples_on_bank_submission_batch_id     |    610985 |      7728067 |       5130577
@@ -116,9 +115,8 @@ Some time later
  relid | indexrelid | schemaname | relname |           indexrelname                       | idx_scan  | idx_tup_read | idx_tup_fetch
 -------+------------+------------+---------+----------------------------------------------+-----------+--------------+---------------
  29667 |    3403877 | public     | apples  | index_apples_farmed_not_yet_in_truck         |        37 |     73003975 |             0
- 29667 |    4188612 | public     | apples  | index_apples_cancelled_not_yet_in_submission |        53 |      8828917 |             0
- 29667 |    1848177 | public     | apples  | index_apples_on_to_state                     |       410 |    274158086 |             0
- 29667 |   43112037 | public     | apples  | index_apples_bankint_debitor_id              |      6345 |         6344 |          6330
+ 29667 |    1848177 | public     | apples  | index_apples_on_to_farm                      |       410 |    274158086 |             0
+ 29667 |   43112037 | public     | apples  | index_apples_on_to_truck                     |      5963 |    174153032 |     174133019
  29667 |     250135 | public     | apples  | index_apples_on_bank_report_entry_id         |     14148 |        14113 |         14113
  29667 |    4163798 | public     | apples  | index_apples_currently_pending_submission    |    456702 |     11861352 |      11348327
  29667 |    2221043 | public     | apples  | index_apples_on_bank_submission_batch_id     |    691441 |      8306617 |       5449462
@@ -130,6 +128,9 @@ Some time later
 
 ### 1. Unused index
 
+![Abandoned](../images/postgres-indexes-queries/v2osk-188240-unsplash.jpg)
+> Photo by v2osk on Unsplash
+
 Indexes do not come for free.  
 They impose 2 types of "tax" which we need to take into account:
 * [performance overhead][5] for write-heavy applications
@@ -138,10 +139,41 @@ They impose 2 types of "tax" which we need to take into account:
 Therefore, the worst kind of index is the unused one.
 
 In the above example, the `index_apples_farmed_not_yet_in_truck` index's counters have not moved between the 2 snapshots.  
-Assuming that all of our application's use cases have been executed<sup>crucial assumption!</sup>, it is safe to say that
+Assuming that all of our application's use cases have been executed between the 2 snapshots<sup>crucial assumption!</sup>, it is safe to say that
 this index needs to go and soon!
 
-### 2. Efficient index 
+It may be that the index was created at some point in the application's life and then things moved on. 
+Either new code was added or the query was deprecated. 
+
+Comparing the 2 snapshots (rather than [looking only for a zero counter][8]) will reveal this.
+
+### 2. Too broad index 
+
+![Too big](../images/postgres-indexes-queries/sutirta-budiman-560115-unsplash.jpg)
+> Photo by sutirta budiman on Unsplash
+
+Looking to [Wikipedia][9] for the definition of an index
+> A database index is a data structure that improves the speed of data retrieval operations on a database table at the 
+cost of additional writes and storage space to maintain the index data structure.
+
+An ideal index is an efficient filter which allows us to cherry-pick the few rows which match our query.  
+This operation is much faster than scanning the entire table. 
+Or so it is meant to be.
+
+Let's take `index_apples_on_to_farm` as an example.  
+Between the 2 snapshots the index was used 33 times (410 - 377). 
+In those scans it returned a little over 74 million index entries. That is over 2.2 million index entries per scan. 
+This number needs to be put into perspective. 
+
+If tbe apples table has, say, 3 billion rows, then the `index_apples_on_to_farm` is working beautifully. 
+Each scan brings back a tiny fraction of the rows. 
+
+But if it has, say, 4 million rows, then it is a completely different story! 
+Maintaining an index simply to filter out only, say, half the rows might add of questionable gain, especially in a 
+write-heavy table. 
+
+In this fictitious example (the query planner would probably [not let this happen in real life][9]), 
+
 
 
 ## Parting thought
@@ -165,6 +197,8 @@ calibrate the use of your indexes and weed out inefficiences.
    [5]: https://en.wikipedia.org/wiki/Write_amplification
    [6]: https://www.postgresql.org/docs/10/datatype-oid.html
    [7]: https://wiki.postgresql.org/wiki/Disk_Usage
+   [8]: https://www.cybertec-postgresql.com/en/get-rid-of-your-unused-indexes/
+   [9]: https://www.postgresql.org/docs/current/row-estimation-examples.html
    
    
    
