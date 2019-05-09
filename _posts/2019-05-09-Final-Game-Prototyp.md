@@ -106,6 +106,13 @@ It would make sense to provide the player with these helping features even after
 
 ## Future Work
 
+There are a couple different thing that would be could be implemented in the future.
+First of there is the player help as proposed in the overall evaluation of the analytics. This includes a redesign of the tutorial area to try and make it more self explanatory.
+
+Another thing is the expansion of the game worl itself. Currently the gameworld is pretty small with only a couple of levels. We would like to expand the world so that there are more level, more achievements and a greater challenge in the more difficult level.
+
+Something we haven't considered yet is the final launching plattform. Currently it looks like this will be a PC only game, but we can see it find some players in the mobil market as well. So we might want to consider making a mobile build and testing it out on our phone to see how it works. If this test is satisfying this might be the  market to go.
+
 ## Things we learned 
 
 There were a lot of things we were able to learn during the course.
