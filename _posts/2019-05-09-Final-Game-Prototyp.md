@@ -8,7 +8,7 @@ Let's finish it for now!
 # Purpose and Despair
 
 Purpose and Despaitr is a first person puzzle game.
-It aims to challenge the the player by providing interesting level that needs out of the box thinking.
+It aims to challenge the the player by providing interesting levels that need out of the box thinking.
 
 You are a small roboter the is stranded on a lonely planet.
 The task you have to tackle is to leave the planet.
@@ -19,10 +19,21 @@ To achieve you goal you will have to learn new skills on order to complete more 
 And if you complete your journey you might have learned your purpose or are in despair.
 
 ## Demo
-- video
-- graphics
+
+<!--<video width="80%" controls>
+    <source src="../trailer.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>-->
 
 ## Architecture
+
+During the development of the prototype we focused mainly on getting a great game put together, but there would have been many problems without having a disciplined architecture.
+Our key features on that regard are based on isolation of different components and responsibilites.
+For example the puzzle game mechanics could be completly cut out of the code base and it would still work perfectly.
+Also we leveraged concepts from domain driven design (e.g. immutable value types) to further enhance our code quality.
+You can see a summary of the architecture in this diagram:
+
+![PurposeAndDespair Architecture](../images/2019-3-21-architecture/architecture.svg)
 
 ## Analytics
 
@@ -140,7 +151,7 @@ The use of the version control system git allowed us the efficently work togethe
 We tested out GitHub pages to create this blog, and we were impressed how easy it is. 
 Another thing we were not expecting is the fast you can make your game publicly available.
 We used the WebGL build feature unity provides to create a WebGL build. We were than able to upload this build GitHub pages and provide a way to play the game in a browser.
-If you click ![here]("../game/index.html") or on the "Play it Now!" button you can test it out yourself!
+If you click [here]("../game/index.html") or on the "Play it Now!" button you can test it out yourself!
 
 Next to the game itself we had to think about the user that is supposed to play the game. We weren't ablt the just code a game and call it done, we had to think about our users behavior and adapt accordingly. To help us understand our users we created some analytics.
 We learned alot about creating them and how you could use them to improve the game. 
