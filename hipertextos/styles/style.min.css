@@ -2000,21 +2000,21 @@ dialog,
 
 /* Meridianus theme */
 
-#theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpg")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
+#theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpg")!important;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 @media (max-width: 1024px) {
     #theme-meridianus:checked ~ #page #page-header.cover {background-image: url("/img/mh-sun.jpg");}
 }
 
 /* vesperum theme */
 
-#theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpg")!important;	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
+#theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpg")!important;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 @media (max-width: 1024px) {
     #theme-vesperum:checked ~ #page #page-header.cover {background-image: url("/img/mh-blue.jpg");}
 }
 
 /* Nox theme */
 
-#theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpg")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
+#theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpg")!important;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 @media (max-width: 1024px) {
     #theme-nox:checked ~ #page #page-header.cover {background-image: url("/img/mh-night.jpg");}
 }
