@@ -11,7 +11,7 @@ Purpose and Despaitr is a first person puzzle game.
 It aims to challenge the the player by providing interesting level that needs out of the box thinking.
 
 You are a small roboter the is stranded on a lonely planet.
-The task you have to tackle is to leave th planet.
+The task you have to tackle is to leave the planet.
 
 ![Character](../images/first_character_model.png)
 
@@ -31,28 +31,28 @@ And if you complete your journey you might have learned your purpose or are in d
 In the picture you can see most of the information we collected during our test period.
 We collected the following activities with these events:
 
-| Event             | Activity                                  |
-| ----------------- |-------------------------------------------|
-| AchievementGained | An achievemnt is unlocked by the player   |
-| ButtonsPressed	| The player uses a button                  |
-| CubeSpawned	    | The player spawns a cube                  |
-| DoorOpened	    | A door is opened                          |
-| NetgameCompleted	| A NetGame is completed                    |
-| NetgameCreated	| A new NetGameis created                   |
-| PickedUp	        | The player picked up a cube               |
-| SteppedUp	        | The player stepped upa stair              |
+| Event              | Activity                                  |
+| ------------------ | ----------------------------------------- |
+| AchievementGained  | An achievemnt is unlocked by the player   |
+| ButtonsPressed	 | The player uses a button                  |
+| CubeSpawned	     | The player spawns a cube                  |
+| DoorOpened	     | A door is opened                          |
+| NetgameCompleted	 | A NetGame is completed                    |
+| NetgameCreated	 | A new NetGameis created                   |
+| PickedUp	         | The player picked up a cube               |
+| SteppedUp	         | The player stepped upa stair              |
 
 We have quickly realised that the SteppedUp event is rather useless, so we removed this event.
 
 There have been a couple of things we learned from the analytics.
 The analytics help us find problems in our code and we were able to solve them.
-In the following graph you can see the amount a door is opend (orange) and the times a button is pressed (black).
+In the following graph you can see the amount a door is opened (orange) and the times a button is pressed (black).
 
 ![Netgame analysis](../images/door_problem.png)
 
 What you can see is that there are way more DoorOpend events than ButtonPressed events. Currently the only way to open a door is by pressing a button. This mean, that there is a problem in the door mechanic. A door is opened multiple times per button press. We were able to resolve this problem that we found because of the analytics.
 
-In the following graph you can see the amount an achievemnts was gained (yellow) and the amount a netgame is created. 
+In the following graph you can see the amount an achievements was gained (yellow) and the amount a NetGame is created. 
 
 ![Game progress analysis](../images/game_progress.png)
 
