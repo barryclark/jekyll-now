@@ -102,14 +102,25 @@ This will also be ablt to help with new skills you learned. So if you unlocked a
 It would make sense to provide the player with these helping features even after they should lready know them. Because if you return to the gae after a breal you might now remember the keys you need. So we thought about giving the player the option to show the helps on some sort of menu or at a certain place in the game (like a traing ground for the abilities).
 
 ## Design Patterns and Achievements
-- graphics
+
+As we already stated, we have implemented two design patterns. A tutorial and achievements. And as shown in the overall analytics evaluation especially the tutorial needs some work. We discussed the way we would improve the turorial and achievements already, so we thought about other design pattern that are not yet implemented but would fit the game as well.
+
+We would like to expand on the illusion of control our game gives the player. The player needs more "choices". So we will need more variety in level and environment in general. But the player will only be able to play the game with more skills he can unlock. For this we need more skills as well and more level entry obstacles.
+This concept could be improved with a skillpoint system as well. Lets say the player unlockes an upgrade, rather than getter the upgrade the player will get an amount of skillpoints. The player can invest these in the skills he likes. This results in more control for the player. And we could also make more expensive skills where you need to finish mulitple NetGames in order to unlock a single skill.
+
+This illusion of control is next to the tutorial and achievements the main design pattern we want to fo us on.
+
 
 ## Future Work
 
 There are a couple different thing that would be could be implemented in the future.
+We have menntioned alot in the upper chapters and only want to summerize here.
+
 First of there is the player help as proposed in the overall evaluation of the analytics. This includes a redesign of the tutorial area to try and make it more self explanatory.
 
-Another thing is the expansion of the game worl itself. Currently the gameworld is pretty small with only a couple of levels. We would like to expand the world so that there are more level, more achievements and a greater challenge in the more difficult level.
+Another thing is the expansion of the game world itself. Currently the gameworld is pretty small with only a couple of levels. We would like to expand the world so that there are more level, more achievements and a greater challenge in the more difficult level.
+
+In order to add more depth for the player we are thinking about adding a skill tree where the user can choose what skill he wants to unlock.
 
 Something we haven't considered yet is the final launching plattform. Currently it looks like this will be a PC only game, but we can see it find some players in the mobil market as well. So we might want to consider making a mobile build and testing it out on our phone to see how it works. If this test is satisfying this might be the  market to go.
 
