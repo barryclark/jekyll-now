@@ -294,6 +294,14 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
 			font-size: 48px;
 		}
 	}
+	@media screen and (max-width: 768px) {
+		.text-slider h2 {
+			font-size: 36px;
+		}
+        .text-slider h2 div span {
+			font-size: 45px;
+		}
+	}
 @-webkit-keyframes textSliding{
 		0% { opacity: 0; }
 		5% { opacity: 0; -webkit-transform: translateY(-50px); }
