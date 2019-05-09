@@ -65,7 +65,7 @@ The applicable years for each of the other cars are as follows:
 
 ### 1. Open the glove box.
 
-![The glove box, unopened.](closed-glove-box.jpg)
+![The glove box, unopened.](/images/2007-chevrolet-cobalt-cabin-air-filter/closed-glove-box.jpg)
 *The glove box, unopened. Do I really need to tell you how to open it?*
 
 ### 2. Remove stuff from the glove box and set aside.
