@@ -20,10 +20,10 @@ And if you complete your journey you might have learned your purpose or are in d
 
 ## Demo
 
-<!--<video width="80%" controls>
+<video width="80%" controls>
     <source src="../trailer.mp4" type="video/mp4">
 Your browser does not support the video tag.
-</video>-->
+</video>
 
 ## Architecture
 
