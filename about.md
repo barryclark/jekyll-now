@@ -38,18 +38,18 @@ My DTP research aims to produce high spatial resolution maps of neglected tropic
 </ul>
 
 ### Professional Positions:
-2014-2017: 	Research Assistant, Spatial Ecology and Epidemiology Group, University of Oxford
-	   PI:  Professor Simon Hay
+**2014-2017:** *Research Assistant, Spatial Ecology and Epidemiology Group, University of Oxford*
+<br> PI:  Professor Simon Hay
 
 ### Professional Associations:
 American Society of Tropical Medicine and Hygiene (2018 – present)
-British Ecological Society (2018 – present)
-LSTM R-users (2018 – present) (Co-founder)
+<br> British Ecological Society (2018 – present)
+<br> LSTM R-users (2018 – present) (Co-founder)
 
 ### Academic referee:
 *Parasites & Vectors*
-*PLoS One*
-*PLoS NTD*
+<br> *PLoS One*
+<br> *PLoS NTD*
 
 ### Oral and poster presentations:
 World Health Organisation: Achieving NTD Control, Elimination and Eradication Targets Post-2020, Modelling Perspectives and Priorities. *Geneva, 15-16th April 2019.* **Oral Presentation.**
