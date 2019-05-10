@@ -6,12 +6,6 @@ permalink: /events/
 
 ### 2019
 
-May 8: Cloud Native Manchester
-* **Introduction to the CNCF**
-
-May 16: Docker London
-* **Navigating the cloud native ecosystem**
-
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
 * **Keynote**
 * **CNCF End User Awards 2019 (NA/EU)**
