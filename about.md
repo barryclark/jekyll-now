@@ -13,5 +13,45 @@ My DTP research aims to produce high spatial resolution maps of neglected tropic
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-4151-9031" href="https://orcid.org/0000-0002-4151-9031" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-4151-9031</a></div>
 
 [My ResearchGate](https://www.researchgate.net/profile/Joshua_Longbottom)
-
 [Contact me](mailto:joshua.longbottom@lstmed.ac.uk)
+
+## Education and Training: 
+2021: Liverpool School of Tropical Medicine, Liverpool, UK
+	Doctor of Philosophy (Ph.D.), Tropical Medicine
+	Medical Research Council (MRC) – Full scholarship funding
+	Dissertation: “Micro-level Spatial Epidemiology of Neglected Tropical Diseases”
+	Supervisors: Professor Steve Torr, Dr. Michelle Stanton
+
+2018: Lancaster University Medical School, Lancaster, UK
+	Master of Research (M.Res.), Global Health: Translational and Quantitative Skills
+	Medical Research Council (MRC) – Full scholarship funding
+	Dissertations: “Co-dominance of Anopheles mosquitoes in Southern Cameroon”
+          		   “Mapping accessibility in relation to entomological sampling”
+          		   “A spatial demographic model of tsetse within Northern Zimbabwe”
+
+2014: Liverpool School of Tropical Medicine, Liverpool, UK
+	Master of Science (M.Sc.), Molecular Biology of Parasites and Disease Vectors
+	Dissertation: “Insecticide resistance within Aedes albopictus from Malaysia”
+
+## Professional Positions:
+2014-2017: 	Research Assistant, Spatial Ecology and Epidemiology Group, University of Oxford
+	   PI:  Professor Simon Hay
+
+## Professional Associations:
+American Society of Tropical Medicine and Hygiene (2018 – present)
+British Ecological Society (2018 – present)
+LSTM R-users (2018 – present) (Co-founder)
+
+## Academic referee:
+*Parasites & Vectors*
+*PLoS One*
+*PLoS NTD*
+
+## Oral and poster presentations:
+2019. World Health Organisation: Achieving NTD Control, Elimination and Eradication Targets Post-2020, Modelling Perspectives and Priorities. *Geneva, 15-16th April 2019.* **Oral Presentation.**
+2018. "Spatial analysis of transport networks in northern Uganda for guiding vector control activities for sleeping sickness." *American Society of Tropical Medicine and Hygiene 67th Annual Meeting, New Orleans, 28th October – 1st November 2018.* **Oral Presentation (session 170).**
+2018. "Spatial analysis of transport networks in northern Uganda for guiding vector control activities for sleeping sickness." *American Society of Tropical Medicine and Hygiene 67th Annual Meeting, New Orleans, 28th October – 1st November 2018.* **Poster.**
+2018. "Global mapping of vulnerability to snakebite." *Snakebite – From Science to Society conference, Leiden, 22nd June 2018.* **Oral Presentation.**
+2018. "Global mapping of vulnerability to snakebite." *One Health, Many Perspectives: Emerging Research from LMICs conference, Liverpool, 29th August 2018.* **Oral Presentation.** 
+2017. "Mapping the spatial distribution of the Japanese encephalitis vector, Culex tritaeniorhynchus Giles." *Royal Entomological Society special interest group meeting, London, 17th May 2017.* **Poster.**
+2015. "Elucidating the role of CYP6P12: Insecticide resistance within Aedes albopictus from Malaysia." *59th Annual Ecological Genetics Group Conference, Liverpool, 30th March 2015.* **Oral Presentation.**
