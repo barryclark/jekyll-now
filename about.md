@@ -13,8 +13,7 @@ My DTP research aims to produce high spatial resolution maps of neglected tropic
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-4151-9031" href="https://orcid.org/0000-0002-4151-9031" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-4151-9031</a></div>
 
 [My ResearchGate](https://www.researchgate.net/profile/Joshua_Longbottom)
-
-[**Contact me**](mailto:joshua.longbottom@lstmed.ac.uk)
+[Contact me](mailto:joshua.longbottom@lstmed.ac.uk)
 
 ## Education and Training: 
 2021: Liverpool School of Tropical Medicine, Liverpool, UK
@@ -56,4 +55,3 @@ LSTM R-users (2018 – present) (Co-founder)
 2018. "Global mapping of vulnerability to snakebite." *One Health, Many Perspectives: Emerging Research from LMICs conference, Liverpool, 29th August 2018.* **Oral Presentation.** 
 2017. "Mapping the spatial distribution of the Japanese encephalitis vector, Culex tritaeniorhynchus Giles." *Royal Entomological Society special interest group meeting, London, 17th May 2017.* **Poster.**
 2015. "Elucidating the role of CYP6P12: Insecticide resistance within Aedes albopictus from Malaysia." *59th Annual Ecological Genetics Group Conference, Liverpool, 30th March 2015.* **Oral Presentation.**
-
