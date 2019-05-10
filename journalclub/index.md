@@ -19,6 +19,7 @@ Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Sem
 **Join the club** by joining the [SBU Computational Neuroscience Google Group](https://groups.google.com/d/forum/sbu-computational-neuroscience/join)
 
 # 2019 Spring Schedule
+- February 4th: Braden Brinkman
 - February 11th: Ian Jordan
 - February 18th: Piotr Sokół
 - February 25th:
