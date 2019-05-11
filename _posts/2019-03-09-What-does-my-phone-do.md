@@ -12,7 +12,7 @@ tags: [smartphone, network, wireshark]
 
 What is your phone really doing?  
 
-More specifically, what are the apps installedo n your phone really doing?  
+More specifically, what are the apps installed on your phone really doing?  
 Do they just sit there? Do they constantly send data to thir servers? 
 Do you even know what is sending data where and how often?
 
