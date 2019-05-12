@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>Last 5 posts</h1>
+<h2>Last 5 posts</h2>
 {% for post in site.posts limit:5 %}
     {{ post.date | date: "%d %b %Y" }} >> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br>
 {% endfor %}
