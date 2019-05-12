@@ -12,6 +12,17 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+  
+  {% assign prefix = "Tags: #" %}
+  
+  <div class="tags">
+    {% for t in page.tags %}
+    {% assign tag = t | downcase | replace:" ","-" %}
+    {{ prefix | append: tag }}
+    {% assign prefix = ", #" %}
+    {% endfor %}
+  </div>
+
 
   {% include disqus.html %}
 </article>
