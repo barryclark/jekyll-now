@@ -54,12 +54,10 @@ function setStyles() {
     colorTip.innerHTML = currColor;
 }
 
-
- // event listeners on inputs 
+// event listeners on inputs 
 fontInput.onchange = populateStorage;
 titleInput.onchange = populateStorage;
 colorInput.onchange = populateStorage;
-
 
 // Check for support function from MDN
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API

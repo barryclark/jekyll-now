@@ -15,6 +15,9 @@ var Game = (function(){
 
     // Publics 
     var app = {
+        config: {
+            initialScore: [0,0]
+        },
         buttons: {
             newGame: document.querySelector('.btn-new'),
             rollDice: document.querySelector('.btn-roll'),
@@ -32,9 +35,7 @@ var Game = (function(){
         },
         dice: document.querySelector('.dice')
     }
-    app.scores = [0,0];
-    app.activePlayer = 0;
-    app.roundScore = 0;
+    
 
     app.getRandom = function(min, max) {
         // Inclusive of each end
@@ -44,18 +45,21 @@ var Game = (function(){
     }
     
     app.init = function(){
-        _attachListeners();
-        console.log('iniited');
+        app.scores = app.config.initialScore;
+        app.activePlayer = 0;
+        app.roundScore = 0;
         app.dice.style.display = 'none';
         app.p1.score.innerHTML = '0';
         app.p2.score.innerHTML = '0';
         app.p1.current.innerHTML = '0';
         app.p2.current.innerHTML = '0';
+        _attachListeners();
+        
     }
 
     function _attachListeners(){ 
         // Attach listeners 
-        // app.buttons.newGame.addEventListener('click', _handleClick)
+         app.buttons.newGame.addEventListener('click', app.init)
          app.buttons.rollDice.addEventListener('click', _rollDice)
          app.buttons.hold.addEventListener('click', _hold)
     }
@@ -71,8 +75,11 @@ var Game = (function(){
     }
 
     function _applyScore(score){
-        console.log(app.roundScore);
+        app.scores = app.config.initialScore;
+    }
 
+    function _newGame(){
+        app.scores = app.config.initialScore;
     }
 
     function _rollDice(){
