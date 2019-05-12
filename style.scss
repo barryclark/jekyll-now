@@ -123,6 +123,11 @@ img {
   color: $gray;
 }
 
+.tags {
+  font-style: oblique;
+  color: $darkGray;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
