@@ -1,15 +1,18 @@
-/* by Isard Miralles  ADDING EXTRA to Blog - CSS */
+/* by Isard Miralles  ADDING EXTRA to Landing page - CSS */
 /* ------------------------------------------------------------ Resets */
 
 .cover.landing {background:var(--color-soft-black)!important;background-image: none!important;}
-
+.cover {padding-top:36px;height:100%!important;}
+#page-main div {text-align:center;}
+.prices {font-weight:300;font-size:3.1em;}
+.prices:after {content:'€';right:0;bottom:0;font-size:.5em;color:var(--color-grey);}
 
 @media (max-width: 1600px) {
 }
 @media (max-width: 1250px) {
 }
 @media (max-width: 1242px) {
-
+    .thumb-10 {margin-left:0px;width:100%;}
 }
 @media (max-width: 768px) {
 
