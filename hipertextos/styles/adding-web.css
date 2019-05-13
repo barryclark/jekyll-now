@@ -1,7 +1,7 @@
 /* by Isard Miralles  ADDING EXTRA to Blog - CSS */
 /* ------------------------------------------------------------ Resets */
 
-
+.cover.landing {background:var(--color-soft-black)!important;background-image: none!important;}
 
 
 @media (max-width: 1600px) {
