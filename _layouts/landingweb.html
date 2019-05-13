@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+  <head>
+    <meta name="encoding" charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+	<link rel="canonical" href="http://isardmiralles.com/"/>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/fases.css" />
+	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/aos.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+  	{% if page.parallax %}<script src="{{ site.baseurl }}/hipertextos/js/jquery-latest.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+
+			$(window).scroll(function(){
+				var barra = $(window).scrollTop();
+				var posicion = barra * 0.30;
+
+			$('.parallax').css({
+				'background-position': '0 -' + posicion + 'px'
+				});
+			});
+
+		});
+  	</script>
+  	{% endif %}
+	
+    {% include favicons.html %}
+    
+	<!-- Google Tag Manager -->
+		<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WXMBJZW');</script>
+	<!-- End Google Tag Manager -->
+	
+	<style type="text/css">
+		.preload {display: none;}
+		#site-nav {font-family: "San Francisco"}
+	</style>
+	
+
+  	{% if page.parallax %}
+	<img class="preload" src="/img/home.jpg" width="2010" height="1920">
+	<img class="preload" src="/img/homes-blue.jpg" width="2010" height="1920">
+	<img class="preload" src="/img/homes-sun.jpg" width="2010" height="1920">
+	<img class="preload" src="/img/homes-night.jpg" width="2010" height="1920">
+	<img class="preload" src="/img/imac.jpg" width="1920" height="1920">
+	<img class="preload" src="/img/golden.jpg" width="1920" height="1280">
+  	{% endif %}
+
+  </head>
+
+  <body>
+	<div id="preloader">
+		<div id="loader">&nbsp;</div>
+	</div>
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXMBJZW"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+		<!-- Theme inputs (invisibles) -->		
+		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden>
+		
+	<!-- Page content -->
+	<div class="page" id="page">
+      {{ content }}
+    {% include partials/footer.html %}
+	</div>
+
+		<!-- Out of page
+		================================================== -->	
+    {% include partials/dialog.html %}  
+
+    <!-- Scripts
+    ================================================== -->
+  	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/fases.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/aos.js"></script>
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+<script type="text/javascript">
+$(window).load(function() {
+	$('#preloader').fadeOut('slow');
+	$('body').css({'overflow':'visible'});
+})
+</script>
+    {% include analytics.html %}    
+  </body>
+</html>
