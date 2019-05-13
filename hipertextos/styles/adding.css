@@ -69,6 +69,7 @@ img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
     background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;}
 #web-oferta .note {width: 260px;}
 #fronters img.htmlcss {max-width: 300px;}
+.text-center {text-align: center;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
 #web-branding h3 i, #web-oferta h3 i {font-size:.62em;font-weight:normal;color:var(--color-link);font-style:normal;}
