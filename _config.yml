@@ -21,7 +21,8 @@ portfoli-lead: Treballs destacats
 
 # Web Prices
 basica: 300
-completa: 600
+normal: 600
+completa: 900
 tenda: 900
 
 # Includes an icon in the footer for each username you enter
