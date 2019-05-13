@@ -6,8 +6,11 @@
 .prices {font-weight:300;font-size:3.1em;}
 .prices:after {content:'€';right:0;bottom:0;font-size:.5em;color:var(--color-grey);}
 #tarifes h2, #tarifes h3 {text-align:center;}
-#tarifes .thumb-4 {border:thin solid var(--color-soft-grey);}
-#tarifes h5 {font-weight:200;font-size:1.2em;}
+#tarifes .thumb-4 {}
+#tarifes h5 {font-weight:200;line-height:1.8em;
+    margin-bottom:6px;border-bottom:thin solid var(--color-softgrey);}
+#tarifes .checked {text-align: center;font-size:1.4em;color:var(--color-green);}
+#tarifes .none {text-align: center;font-size:1.4em;color:var(--color-grey);}
 
 @media (max-width: 1600px) {
 }
