@@ -3,9 +3,11 @@
 
 .cover.landing {background:var(--color-soft-black)!important;background-image: none!important;}
 .cover {padding-top:36px;height:100%!important;}
-#tarifes h2, #tarifes h3 {text-align:center;}
 .prices {font-weight:300;font-size:3.1em;}
 .prices:after {content:'€';right:0;bottom:0;font-size:.5em;color:var(--color-grey);}
+#tarifes h2, #tarifes h3 {text-align:center;}
+#tarifes .thumb-4 {border:thin solid var(--color-soft-grey);}
+#tarifes h5 {font-weight:200;font-size:1.2em;}
 
 @media (max-width: 1600px) {
 }
