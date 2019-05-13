@@ -14,8 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/style.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/fases.css" />
-	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
+	{% if page.web %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-web.css" />{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/aos.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -48,26 +47,12 @@
 	<!-- End Google Tag Manager -->
 	
 	<style type="text/css">
-		.preload {display: none;}
 		#site-nav {font-family: "San Francisco"}
 	</style>
-	
-
-  	{% if page.parallax %}
-	<img class="preload" src="/img/home.jpg" width="2010" height="1920">
-	<img class="preload" src="/img/homes-blue.jpg" width="2010" height="1920">
-	<img class="preload" src="/img/homes-sun.jpg" width="2010" height="1920">
-	<img class="preload" src="/img/homes-night.jpg" width="2010" height="1920">
-	<img class="preload" src="/img/imac.jpg" width="1920" height="1920">
-	<img class="preload" src="/img/golden.jpg" width="1920" height="1280">
-  	{% endif %}
 
   </head>
 
   <body>
-	<div id="preloader">
-		<div id="loader">&nbsp;</div>
-	</div>
 	
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXMBJZW"
@@ -93,7 +78,6 @@
     ================================================== -->
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
-  	<script src="{{ site.baseurl }}/hipertextos/js/fases.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/aos.js"></script>
 		<script>
@@ -102,12 +86,6 @@
 				duration: 1000
 			});
 		</script>
-<script type="text/javascript">
-$(window).load(function() {
-	$('#preloader').fadeOut('slow');
-	$('body').css({'overflow':'visible'});
-})
-</script>
     {% include analytics.html %}    
   </body>
 </html>
