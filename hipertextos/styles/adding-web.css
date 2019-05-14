@@ -12,19 +12,15 @@ h5.title {font-weight:200;line-height:1.8em;
 #tarifes .checked {text-align: center;font-size:1.4em;color:var(--color-green);}
 #tarifes .none {text-align: center;line-height:1em;font-size:2.6em;color:var(--color-grey);}
 #tarifes p {margin-bottom:0px;}
-
+#tarifes p b {font-size:2em;}
 
 @media (max-width: 1600px) {
 }
 @media (max-width: 1250px) {
 }
 @media (max-width: 1242px) {
-    .thumb-10 {margin-left:0px;width:100%;}
 }
 @media (max-width: 768px) {
-
 }
-
 @media (max-width: 432px) {
-
 }
