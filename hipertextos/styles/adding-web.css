@@ -3,7 +3,7 @@
 
 .cover.landing {background:var(--color-soft-black)!important;background-image: none!important;}
 .cover {padding-top:36px;height:100%!important;}
-.prices {font-weight:300;font-size:3.1em;}
+.prices {font-weight:300;font-size:3.1em;line-height:1.5em;background:rgba(242,242,242,1);border:thin solid #fff;}
 .prices:after {content:'€';right:0;bottom:0;font-size:.5em;color:var(--color-grey);}
 #tarifes h2, #tarifes h3 {text-align:center;}
 #tarifes .thumb-4 {}
@@ -14,6 +14,7 @@ h5.title {font-weight:200;letter-spacing: -0.02em; line-height:1.5em;
 #tarifes p {margin-bottom:0px;}
 #tarifes p b {font-size:2em;}
 .preus hr {margin:9px;}
+#process .thumb-3 {border:thin solid #eee;padding:6%;text-align:center;}
 
 @media (max-width: 1600px) {
 }
