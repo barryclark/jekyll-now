@@ -1,0 +1,25 @@
+---
+layout: post
+title: Building Things with DNA
+---
+
+Word Count: 500
+
+We all know that DNA (DeoxyriboNucleic Acid) is the stuff that makes us who we are. We read about CRISPR and the possibility of designer babies in the news. We order test kits to learn about our genetic history. We are building a library of the entire human genome. DNA is the Lego that is used to build humans, and we are learning to play with the pieces to understand ourselves and improve our lives.
+
+But what if we used the same Lego blocks to build things other than people? The Microsystems and Mechanobiology Lab at Carnegie Mellon University specializes in building structures out of DNA. Things like tubes, tiles, smiley faces, tiny robots - shapes you would never find in nature. When I joined the lab it made me interested in biology for the first time because we were using DNA to build things that I understood, like beams and tubes, instead of things that have always confused me, like genes and chromosomes. But even though I am an engineer, I still need to learn the biology behind how DNA works. 
+
+DNA is the code that describes how to make all the different molecules that make up a human being. A single nucleotide - the most basic unit of the DNA molecule - is repeated many times to form a long filament. The structure of a DNA molecule is similar to a ladder, and you could think of each rung of the ladder as a nucleotide. 
+
+A long strand of DNA (made up of anywhere from hundreds to millions of nucleotides) will code for making a particular structure in your body, like a protein. This long strand is called a gene, and cells in your body can read it like a computer program. I always thought that each of us must have really different genes because we all look so unique. However, in reality, over 99% of my genes are the same as yours. The differences that you see between people is due to variations in less than 1% of all the genes you have. So although we all look very different, we all have a lot in common, genetically speaking.
+
+Genes themselves are contained in chromosomes. Chromosomes are large structures made out of DNA that is wrapped around histone proteins to give it some rigidity. Every human has 46 chromosomes, and spread across these chromosomes are all the genes you need to build a person. Together, the chromosomes contain your genome - in other words, the chromosomes contain all the genes that you have. Each chromosome contains on average 100 million base pairs (we will talk more about base pairs soon). Altogether, the human genome - all of your DNA code - is made up of over 6 billion base pairs. 
+
+Next time we will dive down into the molecular structure of DNA. But until then, maybe you’ve read enough about DNA to imagine how it could be used to build structures that we have never seen before. What would you build with DNA?
+
+####References
+
+[1] Khan Academy. “DNA.” <https://www.khanacademy.org/science/biology/dna-as-the-genetic-material/structure-of-dna/v/dna-deoxyribonucleic-acid> Visited 05/13/2019.
+[2] National Institutes of Health, U.S. National Library of Medicine. “What is a genome?” <https://ghr.nlm.nih.gov/primer/hgp/genome> Visited 05/13/2019. 
+[3] National Institutes of Health, U.S. National Library of Medicine. “What is a gene?” <https://ghr.nlm.nih.gov/primer/basics/gene> Visited 05/13/2019.
+
