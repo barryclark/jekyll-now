@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello world!
+title: Hello World!
 ---
 Wow, many thanks to Barry Clark and his [Jekyll Now repository](https://github.com/barryclark/jekyll-now)! I have literally set up my website in 10 minutes while sitting at an airport terminal. 
 
