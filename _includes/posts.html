@@ -9,7 +9,7 @@
 <nav class="tags">{% assign tags = post.tags | sort %}{% for tag in tags %}<a href="/tags/#{{ tag | replace:' ','-' }}">{{ tag }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}</nav>
 </div>
 <hr />
-<div class="sample entry{% if post.twitter_post %} twitter-post{% endif %}{% if post.facebook_post %} facebook-post{% endif %}">
+<div class="sample entry{% if post.twitter_post %} twitter-post{% endif %}">
 {% if post.image %}{% unless post.twitter_post %}<a href="{{ post.url }}"><img src="{% if post.thumbnail %}{{ post.image | replace_first: 'images','images/thumbnails' }}{% else %}{{ post.image }}{% endif %}" class="thumbnail" alt="{{ post.title | xml_escape }}" /></a>{% endunless %}{{ post.excerpt }}
 {% else %}{{ post.excerpt }}{% endif %}
 </div>     

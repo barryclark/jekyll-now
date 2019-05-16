@@ -11,7 +11,7 @@ jquery: true
 
 {% include facebook/view-content.html %}
 <article class="post">
-  <h1 itemprop="headline" class="post-header">{% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif post.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ post.title }}</h1>
+  <h1 itemprop="headline" class="post-header">{% if post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif post.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ post.title }}</h1>
   
   {% include social/share.html url=post.url text=post.title %} 
   
@@ -27,7 +27,7 @@ jquery: true
   
   {% include affiliate-disclosure.html %}
 
-  <div itemprop="articleBody" class="entry{% if post.twitter_post %} twitter-post{% endif %}{% if post.facebook_post %} facebook-post{% endif %}">
+  <div itemprop="articleBody" class="entry{% if post.twitter_post %} twitter-post{% endif %}">
     {{ content }}
     <nav class="pagination" style="font-size: 2em;">
       <a href="{{ page.postUrl }}{% unless page.page == 2 %}page{{ page.page | minus: 1 }}{% endunless %}">Previous</a>

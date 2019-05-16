@@ -11,4 +11,4 @@
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | xml_escape }}{% else %}{{ site.description }}{% endif %}" />
 
 {% if layout.isPost %}<meta name="keywords" content="{% for keyword in page.keywords %}{{ keyword }},{% endfor %}{% for tag in page.tags %}{{ tag | replace:'_',' ' }}{% unless forloop.last %},{% endunless %}{% endfor %}" />{% endif %}
-<meta name="author" content="Joseph Hendrix" />
+<meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Joseph Hendrix{% endif %}" />
