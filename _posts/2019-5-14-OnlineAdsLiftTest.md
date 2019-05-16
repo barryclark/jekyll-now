@@ -4,7 +4,7 @@ title: Bayesian Approach for Measuring Ads Conversion Lift test
 ---
 
 <br>
-![Logos]({{ site.baseurl }}/images/online_ads.jpeg "online ads")
+![Logos]({{ site.baseurl }}/images/online_ads.jpg "online ads")
 <p align="center">
     <font size="4"> <b> The tsunami of online ads we all face everyday. </b> </font>
 </p>
@@ -100,7 +100,7 @@ what does the model look like? We assume that there is a probability p for each 
 The conjugate prior of binomial distribution posterior is a beta distribution. So we need the prior to be beta distribution. Now have just specify both the prior and the posterior. The lift calculation is the deterministic process after we get the posterior.
 
 
-![Figure 1]({{ site.baseurl }}/images/plate_notation_png_liftt.png "plate_notation")
+![Figure 1]({{ site.baseurl }}/images/plate_notation_png_lift.png "plate_notation")
 <p align="center">
     <font size="2"><b>Figure 1.</b> graphical diagram representing dependency among the variables. The random variables are in ellipses. The deterministic variables are in boxes. The shdaded ellipses represents likelihood. </font>
 </p>
