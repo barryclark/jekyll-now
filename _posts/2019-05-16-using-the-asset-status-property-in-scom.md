@@ -1,9 +1,8 @@
 ---
 date: 2019-05-16
 layout: post
+title: Using the Asset Status Property in SCOM
 ---
-
-# Using the Asset Status Property in SCOM
 
 When creating groups in [System Center Operations Manager (SCOM)](https://docs.microsoft.com/system-center/scom/welcome), it may be helpful to know what stage of the lifecycle the monitored object is in. SCOM has an `Asset Status` property is used by [System Center Service Manager (SCSM)](https://docs.microsoft.com/system-center/scsm) to manage the status of the object, however this property isn't visible or usable in the SCOM interface with the exception of creating a group.
 
