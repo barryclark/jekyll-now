@@ -15,7 +15,7 @@ Veamos un ejemplo sencillo con el cual todo buen programador empieza en este mun
 ```
 Usamos Write-Host para imprimir el texto "Hola mundo!"
 
-Veamos un ejemplo más de como se puede hacer lo mismo con la Write-Output 
+Veamos un ejemplo más de como se puede hacer lo mismo utilizando Write-Output 
 
 *Aquí el código en powershell*
 
