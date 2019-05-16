@@ -6,7 +6,7 @@ fbauthor: https://www.facebook.com/themoneymix
 tags: [guest post, meta, money]
 keywords: [google adsense, adsense, adsense alternatives, money, blog, blogging, bloggers, interactive offers, mediavine, monumetric]
 image: /images/adense-alternatives/google-screenshot.png
-excerpt: **Google AdSense. It seems like Google's AdSense advertising platform is the default mechanism that bloggers use to [make money](https://yourmoneygeek.com/how-to-make-money-fast-easy/) from their sites. It's an easy system to get into, but that is also a considerable part of the problem. It's too easy.  Today, we're going to talk about some AdSense alternatives.**
+excerpt: Google AdSense. It seems like Google's AdSense advertising platform is the default mechanism that bloggers use to [make money](https://yourmoneygeek.com/how-to-make-money-fast-easy/) from their sites. It's an easy system to get into, but that is also a considerable part of the problem. It's too easy.  Today, we're going to talk about some AdSense alternatives.
 ---
 
 <span style="text-align: center;">*The following post was written in partnership with Interactive Offers.*</span>
