@@ -7,9 +7,9 @@ Hay muchas maneras de obtener un mismo resultado cuando trabajamos con Powershel
 
 Veamos un ejemplo sencillo con el cual todo buen programador empieza en este mundo de codigos.
 
-## Aquí el código en Powershell
+# Aquí el código en Powershell
 
-```ruby
+```powershell
 
 Write-Host "Hola Mundo!"
 
