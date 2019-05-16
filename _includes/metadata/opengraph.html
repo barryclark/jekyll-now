@@ -3,7 +3,7 @@
 <meta property="fb:app_id" content="{{ site.fb-app-id }}"/>
 <meta property="og:site_name" content="{{ site.name }}" />
 <meta property="og:type" content="article" />
-<meta property="article:author" content="% if page.fbauthor %}{{ page.fbauthor }}{% else %}https://www.facebook.com/joseph.hendrix.5{% endif %}" />
+<meta property="article:author" content="{% if page.fbauthor %}{{ page.fbauthor }}{% else %}https://www.facebook.com/joseph.hendrix.5{% endif %}" />
 {% for tag in page.tags %}<meta property="article:tag" content="{{ tag | replace:'_',' ' }}" />{% endfor %}
 {% for keyword in page.keywords %}<meta property="article:tag" content="{{ keyword }}" />{% endfor %}
 <meta property="article:published_time" content="{% if page.date %}{{ page.date | date: '%Y-%m-%d' }}{% else %}{{ site.time | date: '%Y-%m-%d' }}{% endif %}" />
