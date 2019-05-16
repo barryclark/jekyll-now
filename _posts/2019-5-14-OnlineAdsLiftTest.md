@@ -181,7 +181,7 @@ This algorithm tries to guide us to spend time in region of parameter space prop
 3.1 generate a candidate for the next sample, by picking from the jumping distribution.
 3.2 we can either accept the new point and move there, or we reject the new point and stays where we are. The acceptance is computed as the acceptance probability 
 
-p(x_i+1|x_i) = min(1,p(x_i+1)q(x_i|x_i+1)/(p(x_i)q(x_i+1|x_i))
+p(x_i+1 | x_i) = min(1,p(x_i+1)q(x_i | x_i+1)/(p(x_i)q(x_i+1 | x_i))
 
 3.3 pick a random value V from a uniform distribution on the interval [0,1], if the acceptance probability calculated in 3.2 is greater than V, then we accept x_i+1, otherwise stay at x_i.
 We keep iterates from 2 till we have enough samples.
