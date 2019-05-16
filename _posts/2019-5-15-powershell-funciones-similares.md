@@ -11,7 +11,7 @@ Veamos un ejemplo sencillo con el cual todo buen programador empieza en este mun
 
 ```powershell
 > Write-Host "Hola Mundo!"
-"Hola Mundo"
+"Hola Mundo!"
 ```
 Usamos Write-Host para imprimir el texto "Hola mundo!"
 
@@ -29,7 +29,7 @@ Vale la pena señalar que aunque Write-Output y Write-Host muestran un texto en 
 *Veamos*
 
 ```powershell
-> $mensaje = Write-Output "Hola Mundo"
+> $mensaje = Write-Output "Hola Mundo!"
 > $mensaje
 "Hola Mundo!"
 ```
