@@ -9,7 +9,7 @@ Veamos un ejemplo sencillo con el cual todo buen programador empieza en este mun
 
 ## Aquí el código en Powershell
 
-```Python
+```ruby
 
 Write-Host "Hola Mundo!"
 
