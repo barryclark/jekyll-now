@@ -1,18 +1,553 @@
----
-layout: candidates
----
+<!doctype html>
+<html lang="pt">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Empreguei">
+    <meta property="og:description" content="O fim do currículo.">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <link rel="alternate" type="application/rss+xml" title="Empreguei - O fim do currículo."
+        href="https://empreguei.github.io/feed.xml">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Scroll Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Icon -->
+    <link rel="icon"
+        href="https://lh3.googleusercontent.com/rf-d0GXeG3bVGpQkoUMLxJsfMobbZXaWAtjMPJAru0-ZadhI2mqK8cN1ssjjl-3Xej0=s180-rw">
+
+    <title>Empreguei - o fim do currículo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="content-body">
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm p-0 m-0" style="background-color: white;">
+
+            <a target="_blank" class="navbar-brand ml-3 mr-3 mt-2 mb-2" href="https://empreguei.com/">
+                <img src="./svg/logo--dark.svg" width="180">
+            </a>
+
+            <button class="navbar-toggler ml-3 mr-3 mt-2 mb-2" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse m-0 p-0 pr-3 pl-3" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-default increase-hover" href="#vagas">Vagas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-default increase-hover" href="#clientes">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-default increase-hover" href="#howItsWork">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-default increase-hover" href="#vantagens">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-default increase-hover" href="#app">App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-default increase-hover" href="#mídia">Mídia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-candidate increase-hover"
+                            href="https://empreguei.com/login/candidato">Quero trabalhar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-company increase-hover" href="land_companies.html">Sou empresa</a>
+                    </li>
+                    <li class="m-1"></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div style="background-color: #FF7043;" class="position-relative">
+
+            <img src="./img/header-bg-candidates-compressed.jpg" alt="" id="header-image">
+
+            <div class="position-absolute w-100 h-100 p-2" style="top: 0;">
+                <div class="position-absolute mr-2" style="right: 0;">
+                    <a target="_blank"
+                        href="https://play.google.com/store/apps/details?id=com.hatchr.jobn&hl=pt-PT&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                        <img alt="Disponível no Google Play" width="180px"
+                            src="https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png">
+                    </a>
+                </div>
+
+                <div class="d-flex align-items-center col-md-8 offset-md-4 col-lg-10 offset-lg-2 justify-content-center"
+                    style="height: 100%;" data-aos-duration="2000" data-aos="fade-up">
+                    <div class="text-center">
+                        <h1 class="header-message d-none d-sm-block pt-5" style="text-shadow: 2px 2px 5px #222222;">SEU
+                            NOVO APP PARA DAR O <span style="color: #FFF59D;">MATCH</span> NO EMPREGO CERTO!</h1>
+                        <div class="d-block d-sm-none" style="margin-top: 320px;"></div>
+
+                        <!-- button for desktop -->
+                        <div class="d-none d-sm-block">
+                            <a href="https://empreguei.com/login/candidato">
+                                <button class="text-uppercase m-2 header-button increase-hover shadow">Comece agora,
+                                    100%
+                                    grátis</button>
+                            </a>
+                        </div>
+
+                        <!-- button for mobile -->
+                        <div class="d-block d-sm-none">
+                            <a href="https://empreguei.com/login/candidato">
+                                <button class="text-uppercase m-2 header-button-outline increase-hover shadow">Acessar o tinder de emprego</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Vagas -->
+        <div id="vagas" style="padding-top: 80px;">
+            <h2 class="text-center pb-2 section-title">
+                Setores que Temos Vagas
+            </h2>
+            <div class="pt-md-4 pb-md-4 pl-md-3 pr-md-3 row m-0 justify-content-center">
+
+                <div class="col-auto mt-1 mb-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center header-icon">
+                        <div>
+                            <img src="./svg/home/dress.svg" width="50" height="50" alt="">
+                            <h4>Moda</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto mt-1 mb-3">
+                    <div class="p-3 header-icon justify-content-center align-items-center increase-hover">
+                        <div>
+                            <img src="./svg/home/make-up.svg" width="50" alt="">
+                            <h4>Estética</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto mt-1 mb-3">
+                    <div class="p-3 header-icon justify-content-center align-items-center increase-hover">
+                        <div>
+                            <img src="./svg/home/makeup.svg" width="50" alt="">
+                            <h4>Cosméticos</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto mt-1 mb-3">
+                    <div class="p-3 header-icon justify-content-center align-items-center increase-hover">
+                        <div>
+                            <img src="./svg/home/medicine.svg" width="50" alt="">
+                            <h4>Farmácia</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto mt-1 mb-3">
+                    <div class="p-3 header-icon justify-content-center align-items-center increase-hover">
+                        <div>
+                            <img src="./svg/home/online-shop.svg" width="50" alt="">
+                            <h4>E-Commerce</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto mt-1 mb-3">
+                    <div class="p-3 header-icon justify-content-center align-items-center increase-hover">
+                        <div>
+                            <img src="./svg/home/perfume.svg" width="50" alt="">
+                            <h4>Perfumaria</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto mt-1 mb-3">
+                    <div class="p-3 header-icon justify-content-center align-items-center increase-hover">
+                        <div>
+                            <img src="./svg/home/restaurant.svg" width="50" alt="">
+                            <h4>Alimentação</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto mt-1 mb-3">
+                    <div class="p-3 header-icon justify-content-center align-items-center increase-hover">
+                        <div>
+                            <img src="./svg/home/shopping-bag.svg" width="50" alt="">
+                            <h4>Varejo</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dropdown-divider ml-5 mr-5"></div>
+
+        <!-- Clientes -->
+        <div class="" id="clientes" style="padding-top: 75px;">
+            <h2 class="text-center section-title p-5">Mais de 2.000 Empresas
+                contratando com a Empreguei</h2>
+
+            <div class="p-4 justify-content-center mb-5">
+
+                <div class="row justify-content-center">
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="./img/bioage.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px; ">
+                            <img src="./img/ford.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="./img/renault.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="./img/oppacart.png" width="120" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="./img/heineken.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px; ">
+                            <img src="./img/even.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="./img/benjamin.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px; ">
+                            <img src="./img/lopes.png" width="120" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dropdown-divider ml-5 mr-5 mt-2"></div>
+
+        <!-- Como funciona -->
+        <div class="container section section-four" style="padding-top: 75px;" id="howItsWork">
+            <h2 class="mt-2">Como Funciona</h2>
+
+            <div class="m-0 row justify-content-center p-2 mt-5">
+                <div class="col-auto col-md-3 text-center increase-hover pt-2">
+                    <img src="./svg/dollar.svg" width="110" alt="">
+                    <p>Crie sua conta 100% gratis</p>
+                </div>
+
+                <div class="col-auto col-md-3 text-center increase-hover pt-2">
+                    <img src="./svg/phone--touched.svg" width="110" alt="">
+                    <p>Responda em 5 minutinhos nossas perguntas online</p>
+                </div>
+
+                <div class="col-auto col-md-3 text-center increase-hover pt-2">
+                    <img src="./svg/people.svg" width="110" alt="">
+                    <p>Preencha seu perfil 100% Digital</p>
+                </div>
+
+                <div class="col-auto col-md-3 text-center increase-hover pt-2">
+                    <img src="./svg/face-scan.svg" width="110" alt="">
+                    <p>Esteja visível para nossas 2.700 empresas na hora!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-divider ml-5 mr-5 mt-2"></div>
+
+        <!-- Vantagens -->
+        <div class="m-0 section-three" id="vantagens" style="padding-top: 75px;">
+
+            <h2 class="pt-5 section-title pl-2 pr-2">Vantagens da Empreguei</h2>
+            <div class="container">
+
+                <div class="justify-content-center d-flex mt-5 pl-2 pr-2">
+
+                    <div class="d-table">
+                        <div class="pt-4 pb-4 d-flex align-items-center">
+                            <img src="./img/no-payment.png" alt="no payment" width="56">
+                            <span>Chega de pagar para sites antigos de vagas</span>
+                        </div>
+
+                        <div class="pt-4 pb-4 d-flex align-items-center">
+                            <img src="./img/file-rounded.png" alt="no payment" width="56" class="">
+                            <span>Chega de elaborar currículo e ficar enviando por e-mail</span>
+                        </div>
+
+                        <div class="pt-4 pb-4 d-flex align-items-center">
+                            <img src="./img/money-bag.png" alt="no payment" width="56" class="">
+                            <span>Saiba qual o salário da vaga antes de se aplicar</span>
+                        </div>
+
+                        <div class="pt-4 pb-4 d-flex align-items-center">
+                            <img src="./img/map-perspective.png" alt="no payment" width="56" class="">
+                            <span>As vagas são sempre perto da sua casa</span>
+                        </div>
+
+                        <div class="pt-4 pb-4 d-flex align-items-center">
+                            <img src="./img/mobile-app.png" alt="no payment" width="56" class="">
+                            <span>Veja tudo no app na palma da sua mão</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dropdown-divider m-5"></div>
+
+        <!-- Plataforma e App-->
+        <div class="container section" id="app" style="padding-top: 75px;">
+            <h2 class="pb-5 pl-2 pr-2">Plataforma e App Inteligentes</h2>
+
+            <div class="row m-0">
+                <div class="col-auto d-flex align-items-center justify-content-center">
+                    <div>
+                        <img src="./img/smart-mac_computer-empreguei.png" height="550" alt="" class="img-fluid p-3">
+                    </div>
+                </div>
+
+                <div class="col-xl pt-3 pt-xl-5">
+                    <p class="f-default f-23">Você pode baixar o App Empreguei em Android na PlayStore ou acessar de
+                        qualquer computador! </p>
+                    <p class="f-default f-23">100% grátis e prático </p>
+                    <p class="f-default f-23">Dê quantos Matches em empregos você quiser</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dropdown-divider mt-5 ml-5 mr-5"></div>
+
+        <!-- Não perca tempo -->
+        <div class="m-0 section section-five align-items-center row justify-content-center pt-1 pb-1" id="vantagens">
+            <div class="col-auto text-center">
+                <h2 class="text-uppercase">Não perca tempo</h2>
+                <p class="text-uppercase">Encontre seu novo emprego agora</p>
+
+                <a href="https://empreguei.com/login/candidato">
+                    <button class="increase-hover shadow">Comece agora, 100% grátis</button>
+                </a>
+            </div>
+            <div class="col-auto mb-3">
+
+                <iframe class="embed-responsive embed-responsive-16by9 m-md-5"
+                    style="min-width: 46 0px; min-height: 350px;" src="https://www.youtube.com/embed/n2oNhc7iH0c"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+        <!-- Na Mídia -->
+        <div class="section section-6 text-center pl-1 pr-1 pb-5" style="padding-top: 75px;" id="mídia">
+            <h2> Na <span style="color: #FF7043;">Mídia</span> </h2>
+            <div style="height: 60px;"></div>
+            <div class="m-0 row justify-content-center">
+
+                <!-- Endeavor -->
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="./img/endeavor.png" alt="Endeavor">
+                    </div>
+
+                    <a target="_blank" href="https://endeavor.org.br/empreendedores-endeavor/marcio-furtado/">
+                        <div class="w-100 btn-learn-more">
+                            <span>Leia Mais</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Exame -->
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="./img/exame.png" alt="Exame">
+                    </div>
+
+                    <a target="_blank"
+                        href="https://exame.abril.com.br/pme/conheca-o-tinder-que-faz-voce-dar-match-com-vagas-de-emprego/">
+                        <div class="w-100 btn-learn-more">
+                            <span>Leia Mais</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Globo News -->
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="./img/globo-news.png" alt="Globo News">
+                    </div>
+
+                    <a target="_blank"
+                        href="http://g1.globo.com/globo-news/conta-corrente/videos/t/todos-os-videos/v/dicas-para-pais-e-filhos-que-desejam-empreender-juntos/5232406/">
+                        <div class="w-100 btn-learn-more">
+                            <span>Leia Mais</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Valor -->
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="./img/valor.png" alt="Valor">
+                    </div>
+
+                    <a target="_blank"
+                        href="http://www.valor.com.br/empresas/3830136/nivel-de-internacionalizacao-ainda-e-baixo">
+                        <div class="w-100 btn-learn-more">
+                            <span>Leia Mais</span>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer class="section footer border-top pt-3 pb-3">
+            <div class="container">
+                <div class="row justify-content-center mt-2">
+                    <div class="col-md-4 text-center">
+                        <h2>Mapa</h2>
+                        <p>Como funciona</p>
+                        <p>Mídia</p>
+                        <p>Quero Trabalhar</p>
+                        <p>Sou Empresa</p>
+                    </div>
+
+                    <div class="col-md-4 text-center justify-content-center mt-2">
+                        <h2>
+                            <a target="_blank" href="https://empreguei.com/blog"
+                                style="text-decoration: none; color: #252525;">
+                                Blog
+                            </a>
+                        </h2>
+
+                        <div class="row p-2 justify-content-center">
+                            <a target="_blank" href="mailto:atendimento@empreguei.com" class="col-auto p-1">
+                                <div style="background-color: #222222; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fas fa-envelope" style="color: white;"></i>
+                                </div>
+                            </a>
+
+                            <a target="_blank" href="https://www.facebook.com/empreguei" class="col-auto p-1">
+                                <div style="background-color: #4267b2; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fab fa-facebook-f" style="color: white;"></i>
+                                </div>
+                            </a>
+                            <a target="_blank" href="https://github.com/empreguei" class="col-auto p-1">
+                                <div style="background-color: #333333; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fab fa-github" style="color: white;"></i>
+                                </div>
+                            </a>
+
+                            <a target="_blank" href="https://youtube.com/channel/UC1peiEtI5BSPEfAY-tqUH4A"
+                                class="col-auto p-1">
+                                <div style="background-color: red; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fab fa-youtube" style="color: white;"></i>
+                                </div>
+                            </a>
+
+                            <a target="_blank" href="https://instagram.com/empreguei" class="col-auto p-1">
+                                <div style="background-color: #333333; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fab fa-instagram" style="color: white;"></i>
+                                </div>
+                            </a>
+
+                            <div class="col-12">
+                                <a target="_blank"
+                                    href="https://play.google.com/store/apps/details?id=com.hatchr.jobn&hl=pt-PT&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                                    <img alt="Disponível no Google Play" width="180px"
+                                        src="https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-2 text-center justify-content-center">
+                        <h2>® 2017 Empreguei</h2>
+                        <p>empreguei.com é uma empresa apoiada pela</p>
+                        <div>
+                            <img src="./img/endeavor.png" alt="Endeavor" width="200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            $('body').scrollspy({ target: ".navbar", offset: 250 });
+        });
+    </script>
+</body>
+
+</html>

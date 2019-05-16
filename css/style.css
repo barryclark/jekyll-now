@@ -1,0 +1,272 @@
+@font-face {
+  font-family: Gidolinya;
+  src: url("../fonts/Gidolinya-Regular.woff");
+}
+.content-body { margin-top: 78px; }
+.f-default {
+  font-family: Gidolinya, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.f-19{ font-size: 19px; }
+.f-23{ font-size: 23px; }
+.f-27{ font-size: 27px; }
+.f-32{ font-size: 32px; }
+.f-48{ font-size: 48px; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+#header-image {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center left;
+  opacity: 0.8;
+}
+
+.nav-btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 15px !important;
+  border-radius: 64px !important;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  transition: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.nav-btn:hover {
+  box-shadow: 1px 4px 8px #aaaaaa !important;
+}
+
+.increase-hover {
+  transition: .3s;
+}
+
+.increase-hover:hover {
+  transform:scale(1.02,1.02);
+  -webkit-transform:scale(1.02,1.02);
+  -moz-transform:scale(1.02,1.02);
+}
+
+.nav-btn-default {
+  color: #FF7043 !important;
+}
+
+.nav-btn-default:hover {
+  background-color: #eeeeee;
+}
+
+.nav-btn-candidate {
+  color: white !important;
+  background-color: #FF7043 !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  box-shadow: 1px 4px 8px #aaaaaa !important;
+}
+
+.nav-btn-company {
+  color: white !important;
+  background-color: #2196F3 !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  box-shadow: 1px 4px 8px #aaaaaa !important;
+}
+
+.header-message {
+  font-family: Gidolinya, sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+.header-button {
+  font-size: 24px;
+  background-color: white;
+  cursor: pointer;
+  padding: 30px 64px;
+  border: none;
+  border-radius: 64px;
+  color: #FF7043;
+  transition: .3s;
+  font-weight: 700;
+}
+
+.header-button-outline {
+  font-size: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 30px 64px;
+  border: 2px solid white;
+  border-radius: 64px;
+  color: white;
+  transition: .3s;
+  font-weight: 700;
+}
+
+.header-icon {
+  font-family: Gidolinya, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #F57C00;
+  color: white;
+  text-align: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 26px;
+  align-items: center;
+  box-shadow: 1px 2px 5px #999999;
+  opacity: 0.8;
+}
+
+.header-icon h4{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.header-icon img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-family: Gidolinya, Helvetica Neue, Helvetica, Arial, sans-serif; 
+  font-size: 32px;
+  text-align: center;
+}
+
+/** section 3 **/ 
+.section-three {
+  padding: 0px;
+}
+
+.section-three div div span {
+  font-family: Gidolinya, Helvetica Neue, Helvetica, Arial, sans-serif; 
+  font-size: 27px;
+  padding: 0;
+  margin: 12px; 
+  color: #333333;
+}
+
+/** section 4 **/ 
+.section-four {
+  padding: 44px 28px;
+}
+
+.section-four p {
+  text-align: center;
+  font-family: Gidolinya, Helvetica Neue, Helvetica, Arial, sans-serif; 
+  font-size: 20px;
+  font-weight: normal;
+  padding: 20px 0px;
+}
+
+.section-four div p {
+  font-size: 24px;
+  color: #555555;
+}
+
+/** section five **/
+.section-five{
+  background-color: #f6f6f6;
+}
+
+.section-five p {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.section-five button {
+    background: #FF7043;
+    font-size: 18px;
+    padding: 16px 32px;
+    border-radius: 64px;
+    border: none;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.section {
+
+}
+
+.section h2 {
+  font-family: Gidolinya, Helvetica Neue, Helvetica, Arial, sans-serif; 
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* section 6 */
+.section .btn-learn-more {
+  padding: 14px 0px; 
+  cursor: pointer;
+  background-color: #FF7043;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.section .btn-learn-more span {
+  font-size: 16px; 
+  color: white;
+  text-transform: uppercase;
+  transition: .4s;
+}
+
+.section .midia-item > div {
+  height: 180px; 
+  width: 230px;
+}
+
+.section .midia-item > div > img {
+  width: 100%; 
+  object-fit: contain;
+}
+
+.footer {
+  background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 900px){
+  .header-message{
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .header-button{
+    font-size: 19px;
+    padding: 32px 28px;
+  }
+
+  .header-button-outline {
+    font-size: 19px;
+    padding: 32px 28px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+
+/*  svg icons */
+.svg-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: white;
+}
