@@ -45,6 +45,7 @@ Vale la pena señalar que aunque Write-Output y Write-Host muestran un texto en 
 > "Hola Mundo"
 "Hola Mundo"
 
+```
 
 
 
