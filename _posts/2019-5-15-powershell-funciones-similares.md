@@ -10,10 +10,8 @@ Veamos un ejemplo sencillo con el cual todo buen programador empieza en este mun
 *Aquí el código en powershell*
 
 ```powershell
-
 > Write-Host "Hola Mundo!"
 "Hola Mundo"
-
 ```
 Usamos Write-Host para imprimir el texto "Hola mundo!"
 
@@ -22,7 +20,6 @@ Veamos un ejemplo más de como se puede hacer lo mismo con la Write-Output
 *Aquí el código en powershell*
 
 ```powershell
-
 > Write-Output "Hola Mundo!"
 "Hola Mundo"
 ```
@@ -32,19 +29,16 @@ Vale la pena señalar que aunque Write-Output y Write-Host muestran un texto en 
 *Veamos*
 
 ```powershell
-
 > $mensaje = Write-Output "Hola Mundo"
 > $mensaje
 "Hola Mundo"
-
 ```
 
 *Y por último tambien podríamos tipear directamente para mostrar el texto en la pantalla*
 
-```
+```powershell
 > "Hola Mundo"
 "Hola Mundo"
-
 ```
 
 
