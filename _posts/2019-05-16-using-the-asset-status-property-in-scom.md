@@ -61,7 +61,9 @@ To set the asset status of a monitoring object, first the SCOM monitoring object
 
 ```powershell
 $monitoringObject = Get-SCOMMonitoringObject -DisplayName computer01.contoso.com |
-    Where-Object -FilterScript { ( Get-SCOMClass -Id $_.LeastDerivedNonAbstractMonitoringClassId ).Name -eq 'Microsoft.Windows.Computer' }
+    Where-Object -FilterScript {
+        ( Get-SCOMClass -Id $_.LeastDerivedNonAbstractMonitoringClassId ).Name -eq 'Microsoft.Windows.Computer'
+    }
 ```
 
 Now the object status can be set. This is accomplished by setting the **'[System.ConfigItem].AssetStatus'** property on the monitoring object. Take special note of the single quotes surrounding the property name. If these are omitted, setting the property will fail.
