@@ -25,13 +25,22 @@ $managementPack = Get-SCOMManagementPack -Name System.Library
 # Get the values which begin with System.ConfigItem.AssetStatusEnum
 $managementPack.GetEnumerations() |
     Where-Object -FilterScript { $_.Name -match '^System.ConfigItem.AssetStatusEnum' } |
-    Select-Object -Property Name, @{n=Id;e={$_.Id.Guid}}
+    Sort-Object -Property Name |
+    Select-Object -Property Name, @{n='Id';e={$_.Id.Guid}}
 ```
 
 This should generate the following output:
 
 ```output
-Need the AssetStatusEnum output here
+Name                                                  Id
+----                                                  --
+System.ConfigItem.AssetStatusEnum.Deployed            6842782d-3707-20a5-659c-b5d4091e2c49
+System.ConfigItem.AssetStatusEnum.DeploymentRequested 4f8b8635-96b4-f534-9739-ea44fe3d86ec
+System.ConfigItem.AssetStatusEnum.Disposed            7c9f378e-2738-4607-336b-b00aff8024ff
+System.ConfigItem.AssetStatusEnum.Purchased           8972ed2a-dc07-e16c-857c-880e06c8f897
+System.ConfigItem.AssetStatusEnum.PurchaseRequested   35e7d4a5-05f5-6b56-54c8-c4f781af60be
+System.ConfigItem.AssetStatusEnum.Retired             f37e8b8c-e3df-47c1-bd23-41cb3c8dfa57
+System.ConfigItem.AssetStatusEnum.Undefined           a90fc2e9-65a8-77a5-fd4e-85b4bb662e70
 ```
 
 _*Note*: The ID property values may vary from system to system._
