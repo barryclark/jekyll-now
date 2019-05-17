@@ -44,7 +44,7 @@ System.ConfigItem.AssetStatusEnum.Retired             f37e8b8c-e3df-47c1-bd23-41
 System.ConfigItem.AssetStatusEnum.Undefined           a90fc2e9-65a8-77a5-fd4e-85b4bb662e70
 ```
 
-_*Note*: The ID property values may vary from system to system._
+_**Note:** The ID property values may vary from system to system._
 
 ### Get a specific asset status
 
