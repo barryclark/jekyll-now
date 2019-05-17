@@ -5,15 +5,15 @@ categories: SCOM
 title: Using the Asset Status Property in SCOM
 ---
 
-When creating groups in [System Center Operations Manager (SCOM)](https://docs.microsoft.com/system-center/scom/welcome), it may be helpful to know what stage of the lifecycle the monitored object is in. SCOM has an `Asset Status` property is used by [System Center Service Manager (SCSM)](https://docs.microsoft.com/system-center/scsm) to manage the status of the object, however this property isn't visible or usable in the SCOM interface with the exception of creating a group.
+When creating groups in [System Center Operations Manager (SCOM)](https://docs.microsoft.com/system-center/scom/welcome), it may be helpful to know what stage of the lifecycle the monitored object is in. SCOM has an **Asset Status** property is used by [System Center Service Manager (SCSM)](https://docs.microsoft.com/system-center/scsm) to manage the status of the object, however this property isn't visible or usable in the SCOM interface with the exception of creating a group.
 
 ## Asset Status Enum
 
-The asset statuses available to us are stored as an enum called `System.ConfigItem.AssetStatusEnum` in the `System.Library` management pack.
+The asset statuses available to us are stored as an enum called **System.ConfigItem.AssetStatusEnum** in the **System.Library** management pack.
 
 ### Get the available asset statuses
 
-To list out the available values in the `AssetStatusEnum`, execute the following:
+To list out the available values in the **AssetStatusEnum**, execute the following:
 
 ```powershell
 # Connect to the SCOM management group
@@ -53,7 +53,7 @@ To get a specific asset status object, execute the following:
 $enum = $managementPack.GetEnumeration("System.ConfigItem.AssetStatusEnum.Deployed")
 ```
 
-The `$enum` variable will be used when setting the status on a monitoring object.
+The **$enum** variable will be used when setting the status on a monitoring object.
 
 ## Set the asset status of an object
 
@@ -64,7 +64,7 @@ $monitoringObject = Get-SCOMMonitoringObject -DisplayName computer01.contoso.com
     Where-Object -FilterScript { ( Get-SCOMClass -Id $_.LeastDerivedNonAbstractMonitoringClassId ).Name -eq 'Microsoft.Windows.Computer' }
 ```
 
-Now the object status can be set. This is accomplished by setting the `'[System.ConfigItem].AssetStatus'` property on the monitoring object. Take special note of the single quotes surrounding the property name. If these are omitted, setting the property will fail.
+Now the object status can be set. This is accomplished by setting the **'[System.ConfigItem].AssetStatus'** property on the monitoring object. Take special note of the single quotes surrounding the property name. If these are omitted, setting the property will fail.
 
 ```powershell
 $monitoringObject.'[System.ConfigItem].AssetStatus'.Value = $enum
