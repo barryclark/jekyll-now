@@ -15,7 +15,7 @@ The asset statuses available to us are stored as an enum called `System.ConfigIt
 
 To list out the available values in the `AssetStatusEnum`, execute the following:
 
-```PowerShell
+```powershell
 # Connect to the SCOM management group
 New-SCOMManagementGroupConnection -ComputerName ManagementGroup1
 
@@ -49,7 +49,7 @@ _**Note:** The ID property values may vary from system to system._
 
 To get a specific asset status object, execute the following:
 
-```PowerShell
+```powershell
 $enum = $managementPack.GetEnumeration("System.ConfigItem.AssetStatusEnum.Deployed")
 ```
 
@@ -59,20 +59,20 @@ The `$enum` variable will be used when setting the status on a monitoring object
 
 To set the asset status of a monitoring object, first the SCOM monitoring object must be obtained. The following example shows how to get the monitoring object of a Microsoft Windows computer object.
 
-```PowerShell
+```powershell
 $monitoringObject = Get-SCOMMonitoringObject -DisplayName computer01.contoso.com |
     Where-Object -FilterScript { ( Get-SCOMClass -Id $_.LeastDerivedNonAbstractMonitoringClassId ).Name -eq 'Microsoft.Windows.Computer' }
 ```
 
 Now the object status can be set. This is accomplished by setting the `'[System.ConfigItem].AssetStatus'` property on the monitoring object. Take special note of the single quotes surrounding the property name. If these are omitted, setting the property will fail.
 
-```PowerShell
+```powershell
 $monitoringObject.'[System.ConfigItem].AssetStatus'.Value = $enum
 ```
 
 Finally, save the changes to the monitoring object.
 
-```PowerShell
+```powershell
 $monitoringObject.Overwrite()
 ```
 
