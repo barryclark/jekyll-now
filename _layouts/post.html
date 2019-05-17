@@ -4,6 +4,13 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
+  <div class="post-categories">
+  {% assign categories = post.categories %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div>
 
   <div class="entry">
     {{ content }}
