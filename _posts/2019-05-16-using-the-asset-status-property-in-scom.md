@@ -84,4 +84,4 @@ In order to use the asset status to populate a dynamic group in SCOM, the ID (Gu
 
 ## Scripts
 
-[Here](https://github.com/randomnote1/SCOM/tree/master/src/AssetStatus) are a few scripts which can be used to set the asset status proeprty of a monitoring object.
+[Here](https://github.com/randomnote1/SCOM/tree/master/src/AssetStatus) are a few scripts which can be used to set the asset status property of a monitoring object.
