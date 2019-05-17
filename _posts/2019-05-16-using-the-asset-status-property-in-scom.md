@@ -31,7 +31,7 @@ $managementPack.GetEnumerations() |
 
 This should generate the following output:
 
-```output
+```powershell
 Name                                                  Id
 ----                                                  --
 System.ConfigItem.AssetStatusEnum.Deployed            6842782d-3707-20a5-659c-b5d4091e2c49
