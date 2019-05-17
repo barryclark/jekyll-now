@@ -1,6 +1,7 @@
 ---
 date: 2019-05-16
 layout: post
+tags: [ System Center, Operations Manager ]
 title: Using the Asset Status Property in SCOM
 ---
 
