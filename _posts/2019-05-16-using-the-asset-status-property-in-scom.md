@@ -80,7 +80,7 @@ $monitoringObject.Overwrite()
 
 In order to use the asset status to populate a dynamic group in SCOM, the ID (Guid) of the asset status must be used. This is unfortunate because it makes reading the group definitions difficult, however the good news is it can be done!
 
-![Create Windows computer group using the asset status property](./images/scom-create-windows-computer-group-using-the-asset-status-property.png)
+![Create Windows computer group using the asset status property]({{ site.baseurl }}/images/scom-create-windows-computer-group-using-the-asset-status-property.png)
 
 ## Scripts
 
