@@ -1,19 +1,12 @@
+/*
 
-pre.highlight {
-    background-color: #efefef;
-    padding: 7px 7px 7px 10px;
-    border: 1px solid #ddd;
-    -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-    box-shadow: 3px 3px rgba(0,0,0,0.1);
-    margin: 20px 0 20px 0;
-    overflow: scroll;
-  }
+    Name:       Base16 Kimbie Dark
+    Author:     Jan T. Sott
 
-code {
-    font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-}
+    Pygments template by Jan T. Sott (https://github.com/idleberg)
+    Created with Base16 Builder by Chris Kempson (https://github.com/chriskempson/base16-builder)
 
+*/
 pre.highlight .hll { background-color: #84613d }
 pre.highlight  { background: #221a0f; color: #fbebd4 }
 pre.highlight .c { color: #a57a4c } /* Comment */
