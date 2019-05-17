@@ -70,3 +70,7 @@ $monitoringObject.Overwrite()
 ## Create a group from the object asset status
 
 In order to use the asset status to populate a dynamic group in SCOM, the ID (Guid) of the asset status must be used. This is unfortunate because it makes reading the group definitions difficult, however the good news is it can be done!
+
+## Scripts
+
+[Here](https://github.com/randomnote1/SCOM/tree/master/src/AssetStatus) are a few scripts which can be used to set the asset status proeprty of a monitoring object.
