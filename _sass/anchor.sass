@@ -1,0 +1,23 @@
+a.ghost, a.gray, a.disabled
+  border-radius: 2px
+  padding: .4em .8em
+
+a.ghost
+  background: $link-color
+  box-shadow: 0 0 0 2px $link-color inset
+  color: white
+  transition: .1s
+
+a.ghost:hover
+  background: transparent
+  color: $link-color
+
+a.gray, a.disabled
+  background: reduce(8)
+  transition: background, .2s
+
+a.gray:hover, a.disabled:hover
+  color: inherit
+
+a.gray:hover
+  background: reduce(20)

@@ -1,0 +1,24 @@
+---
+---
+
+@import index, anchor
+
+body > header, article, body > footer
+  padding: 1.5em calc(34% - 12rem)
+
+@media (max-width: 40em)
+  body > header, article, body > footer
+    padding: 1.5em 1em
+
+body > header
+  box-shadow: 0 0 1em rgba(40, 40, 40, .03)
+
+article, body > footer
+  border-top: 1px solid reduce(12)
+
+article
+  background: reduce(1)
+
+body > footer
+  background: reduce(5)
+  color: reduce(100)

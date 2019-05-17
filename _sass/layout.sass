@@ -1,0 +1,20 @@
+body, aside, main
+  flex-direction: column
+
+main, article
+  flex-grow: 1
+
+header, footer
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+  nav > *
+    margin: 0 0.8em
+
+  nav > :first-child
+    margin-left: 0
+
+  nav > :last-child
+    margin-right: 0

@@ -1,12 +1,7 @@
 ---
 layout: default
 ---
-
-<article class="page">
-
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
+<article>
+  <header><h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1></header>
+{{ content }}
 </article>

@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="{% if site.dark_theme %}dark{% else %}light{% endif %}">
 
-    {% include meta.html %}
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+<meta charset="{{ site.encoding }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta name="author" content="{{ page.author | default: site.author | escape}}">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+<link rel="stylesheet" href="{{ site.style | default: "theme" | prepend: "/assets/css/" | append: ".css" | relative_url }}">
+{% if site.plugins contains "jekyll-feed" %}<link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | relative_url }}" title="{{ site.title }}" />{% endif %}
+{% if page.mathjax or site.mathjax %}
+<link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">
+<script defer src="{{ "/assets/katex/katex.min.js" | relative_url }}"></script>
+<script defer src="{{ "/assets/katex/contrib/mathtex-script-type.min.js" | relative_url }}"></script>
+{% endif %}
+{% if site.comments.disqus %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
+{% if site.comments.isso %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<header class="{% if site.dark_header %}dark{% endif %}">
+  {% unless site.hide_title %}
+    <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+  {% endunless %}
+  {% if site.navigation %}
+    <nav>
+    {% for path in site.navigation %}
+      {% if path.first %}
+        <a href="{{ path.first[1] }}">{{ path.first[0] }}</a>
+      {% else %}
+        {% assign node = site.pages | where: "name", path | first %}<a href="{{ node.url | relative_url }}">{{ node.title }}</a>
+      {% endif %}
+    {% endfor %}
+    </nav>
+  {% endif %}
+  {% if site.icons %}
+    <nav>
+    {% for link in site.icons %}
+      <a class="icon" href="{{ link[1] }}"><svg><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ link[0] }}"></use></svg></a>
+    {% endfor %}
+    </nav>
+  {% endif %}
+</header>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+{{ content }}
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
 </html>

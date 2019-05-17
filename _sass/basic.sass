@@ -1,0 +1,80 @@
+body
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+  font-size: 16px
+  font-size: $font-size
+  font-weight: $font-weight
+  line-height: $line-height
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body, blockquote, figure
+  margin: 0
+
+a
+  color: inherit
+  text-decoration: inherit
+  transition: color .2s
+  &.selected, &:hover
+    color: reduce(100)
+
+article a, b, strong, th
+  font-weight: $font-weight + 100
+
+h1, h2, h3, h4, h5, h6
+  font-weight: $heading-weight
+
+article a
+  color: $link-color
+
+article header a, article footer a
+  font-weight: inherit
+  color: inherit
+
+header time
+  color: reduce(100)
+
+hr
+  border: 1px solid reduce(30)
+  margin: 2em 0
+
+blockquote
+  border-left: 4px solid $link-color
+  padding-left: 1.5em
+
+img
+  border-radius: 2px
+  max-width: 100%
+  height: auto
+  margin: .5em 0
+
+table
+  border-spacing: 1px
+  box-shadow: 0px 0px 0px 1px reduce(16) inset
+
+tr:hover, tr:nth-child(even) td
+  background: reduce(6)
+
+th
+  background: reduce(10)
+  text-align: inherit
+
+th, td
+  box-shadow: 0px 0px 0px 1px reduce(16)
+  padding: .5em 1em
+
+pre
+  background: rgba(38, 38, 38, 0.8)
+  color: white
+  border-radius: 2px
+  font-size: .8em
+  margin: 1.5em 0
+  padding: .8em 1.2em
+  white-space: pre-wrap
+
+p code
+  background: reduce(15)
+  opacity: .75
+  border-radius: 2px
+  font-size: .9em
+  margin: 0 .1em
+  padding: .2em .4em

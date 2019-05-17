@@ -1,0 +1,83 @@
+---
+---
+
+body
+  display: flex
+  min-height: 100vh
+
+nav
+  margin: 0.5em 0
+
+table
+  width: 100%
+
+header h1
+  margin: 0
+
+h1
+  font-size: 1.7em
+
+{% if site.navigation and site.icons %}
+
+body > header h1
+  width: 100%
+  margin-top: 0.1em
+  margin-bottom: 0.5em
+
+{% else %}
+
+body > header h1
+  font-size: 1.6em
+
+{% endif %}
+
+article header
+  display: block
+  margin-bottom: 1.5em
+
+article header h1
+  margin-bottom: 0.2em
+
+article footer
+  padding: 1em 0
+
+.icon
+  margin: 0 1em
+
+.icon svg
+  height: 1.1em
+  width: 1.1em
+  fill: currentColor
+  vertical-align: text-bottom
+
+.archive div
+  display: flex
+  flex-wrap: wrap
+  align-items: baseline
+
+.archive h3
+  margin: 0.2em 0
+
+.archive h3, .archive a
+  font-weight: inherit
+
+.archive time
+  min-width: 10em
+
+.large img, .large.embed
+  max-width: 140%
+  margin-right: -20%
+  margin-left: -20%
+
+.embed
+  position: relative
+  padding-bottom: 56.25%
+  margin: 1.5em 0
+
+.embed.large
+  padding-bottom: 78.75%
+
+.embed iframe
+  position: absolute
+  width: 100%
+  height: 100%
