@@ -49,7 +49,7 @@ When you're fishing for a particular type of fish (your target audience), it's w
 
 This is text advertising at its best, and its potential is enormous.
 
-![Interactive Offers Screenshot](https://themoneymix.com/wp-content/uploads/2019/05/dedicated-emails-lg.gif)
+![Interactive Offers Screenshot](/images/adense-alternatives/interactive-offers.gif)
 
 And, here's my favorite part: They fully support email-based advertisements.
 
@@ -71,11 +71,11 @@ We highly recommend checking out [Interactive Offers](http://interactiveoffers.c
 
 But, they are one of the top display-ad providers in the business if your only (or primary) focus is on monetizing your blog's front end pages. As of the time of this writing, they require at least 25,000 sessions per month before you can apply for the program (note that sessions are different than pageviews).
 
-![Mediavine Screenshot 1](https://themoneymix.com/wp-content/uploads/2019/05/Screenshot-2019-05-06-at-7.56.41-PM.png)
+![Mediavine Screenshot 1](/images/adense-alternatives/mediavine-1.png)
 
 All Mediavine customers get access to a simple dashboard to view your income and payouts, RPMs and other numbers that you might care about. It is relatively easy to use.
 
-![Mediavine Screenshot 2](https://themoneymix.com/wp-content/uploads/2019/05/Screenshot-2019-05-06-at-8.54.29-PM.png)
+![Mediavine Screenshot 2](/images/adense-alternatives/mediavine-2.png)
 
 And, bloggers can opt out of ads by topic (i.e., alcohol, dating, fast food, etc.). Though Mediavine does not support the ability to pick and choose specific ads to display, the ability to opt out is the flexibility that most bloggers need to have.
 
@@ -101,7 +101,7 @@ It's relatively easy to advertise with the Amazon platform, but you cannot adver
 
 "Ad management done right," according to their website, [Monumetric](https://www.monumetric.com/) (formerly known as 'The Blogger Network') is another ad management service that monetizes blogs through the use of display ads. They break up their services by the number of pageviews of the blog:
 
-![Monumetric Screenshot](https://themoneymix.com/wp-content/uploads/2019/05/Screenshot-2019-05-06-at-8.24.24-PM.png)
+![Monumetric Screenshot](/images/adense-alternatives/monumetric.png)
 
 Monumetric is a step up from Google AdSense for several reasons:
 
@@ -144,7 +144,7 @@ And, most affiliate programs require a sign-up - not just a click. Meaning, it's
 
 Successful bloggers make affiliate marketing work, but it doesn't come easy.
 
-![Ads all over the place](https://themoneymix.com/wp-content/uploads/2019/05/ads-1663031_1280-1024x891.png)
+![Ads all over the place](/images/adense-alternatives/ads-all-over-the-place.png)
 
 ## How to choose the best AdSense alternative
 
