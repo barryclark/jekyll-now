@@ -64,6 +64,6 @@ The system doesn't seem to indicate how many predictions you have made. I'm not 
 
 If you don't know what you're doing at first, just guess. With ten guesses, you should average five correct answers a day, which would be five points a day.
 
-If you don't have WeBull, use my [WeBull Referral Link](https://hendrixjoseph.github.io/webull/) and get one free stock.
+> If you don't have WeBull, use my [WeBull Referral Link](https://hendrixjoseph.github.io/webull/) and get one free stock.
 
 Are there any other ways to get WeBull points I don't know about that you do? What is your trading strategy? Comment below!
