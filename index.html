@@ -2,3 +2,9 @@
 layout: home
 title: "Home"
 ---
+<head>
+<!-- Your head content -->
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
+</head>

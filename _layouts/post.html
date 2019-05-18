@@ -3,6 +3,12 @@ layout: default
 comments: true
 # other options
 ---
+<head>
+  <!-- Your head content -->
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+</head>
 <article>
   <header>
     {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
