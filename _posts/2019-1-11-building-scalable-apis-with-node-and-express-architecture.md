@@ -4,6 +4,7 @@ title: "Building Scalable APIs with Node and Express: Architecture"
 excerpt: |
  There are many ways to organize a Node application, and figuring out how to do so can be a source of great stress and frustration if you don't have much experience.
  In this article I'm going to walk through one approach by building a simple yet fully functional and scalable API
+published: false
 ---
 
 There are many ways to organize a Node application, and figuring out how to do so can be a source of great stress and frustration if you don't have much experience.

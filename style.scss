@@ -13,14 +13,24 @@
 /* BASE RULES */
 /**************/
 
+html, body, #site-container {
+  height: 100%;
+}
+
 html {
-  font-size: 100%;
+  font-size: 18px;
 }
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.75;
   color: $darkGray;
+}
+
+#site-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -31,21 +41,15 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 15px 0 10px 0;
   padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   a {
     color: inherit;
   }
@@ -67,8 +71,8 @@ h4 {
   color: $gray;
 }
 
-p {
-  margin: 15px 0;
+p, ul, ol {
+  margin: 10px 0 15px 0;
 }
 
 a {
@@ -80,17 +84,13 @@ a {
   }
 }
 
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
 ul {
-  list-style-type: disc;
+  padding-left: 0;
 }
 
 ol {
   list-style-type: decimal;
+  padding-left: 30px;
 }
 
 ol ul, ul ol, ul ul, ol ol {
@@ -163,23 +163,33 @@ pre {
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
 
   @include mobile {
     text-align: center;
+    flex-direction: column;
+  }
+}
+
+.site-info {
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
   }
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
+  display: block;
+  width: 50px;
+  height: 50px;
   margin-right: 15px;
 
   @include mobile {
-    float: none;
-    display: block;
     margin: 0 auto;
   }
 
@@ -188,24 +198,12 @@ pre {
   }
 }
 
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
 .site-name {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-size: 24px;
 }
 
 .site-description {
@@ -214,20 +212,17 @@ pre {
   font-size: 16px;
 
   @include mobile {
-    margin: 3px 0;
+    margin-top: 0;
+    margin-bottom: 5px;
   }
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  display: flex;
   font-size: 18px;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
+    flex-direction: column;
     font-size: 16px;
   }
 
@@ -236,9 +231,9 @@ nav {
     color: $darkGray;
     text-align: right;
     font-weight: 300;
-    letter-spacing: 1px;
 
     @include mobile {
+      text-align: center;
       margin: 0 10px;
       color: $blue;
     }
@@ -248,6 +243,10 @@ nav {
 //
 // .main
 //
+
+#main {
+  flex: 1;
+}
 
 .posts > .post {
   padding-bottom: 2em;
@@ -283,8 +282,6 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
 
@@ -296,7 +293,7 @@ footer {
 // index
 
 section.block {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 ul.career, ul.work {
@@ -322,6 +319,30 @@ ul.career {
     .title {
       font-weight: bold;
     }
+  }
+}
+
+.post {
+  line-height: 1.85;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 30px 0 15px 0;
+  }
+
+  h1 {
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p, ul, ol {
+    margin: 15px 0 30px 0;
   }
 }
 

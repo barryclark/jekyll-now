@@ -11,38 +11,46 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/articles">Articles</a>
-            <a href="mailto:{{ site.email }}">Contact Me</a>
-          </nav>
-        </header>
+    <div id="site-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead">
+            <div class="site-info">
+              <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    
+              <div>
+                <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                <p class="site-description">{{ site.description }}</p>
+              </div>
+            </div>
+    
+            <nav>
+              {% assign postsLength = site.posts | size %}
+              {% if postsLength > 0 %} 
+                <a href="{{ site.baseurl }}/articles">Articles</a>
+              {% endif %}
+              <a href="mailto:{{ site.email }}">Contact</a>
+            </nav>
+          </header>
+        </div>
       </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+  
+      <div id="main" role="main" class="container">
+        {{ content }}
+      </div>
+  
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            {% include svg-icons.html %}
+          </footer>
+        </div>
       </div>
     </div>
 
