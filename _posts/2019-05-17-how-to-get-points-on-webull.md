@@ -3,6 +3,7 @@ layout: post
 title: How to Get Points on WeBull
 tags: [money]
 keywords: [webull, points, webull points, paper trading, stock prediction, stock predictions, stock]
+hashtags: [webull]
 image: /images/webull/cover.png
 ---
 
