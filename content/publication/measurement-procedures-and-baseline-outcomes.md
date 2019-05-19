@@ -34,8 +34,8 @@ selected = false
 
 # Links (optional).
 url_preprint = "https://psyarxiv.com/dv9jg/"
-url_code = "https://osf.io/n9jud/"
-url_dataset = "https://osf.io/n9jud/"
+url_code = "https://osf.io/3avsw/"
+url_dataset = "https://osf.io/b7a3u/"
 url_project = ""
 url_slides = ""
 url_video = ""
