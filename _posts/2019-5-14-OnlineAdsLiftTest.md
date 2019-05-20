@@ -20,7 +20,7 @@ The goal of this experiment is to find ***lift*** which is the success that is a
 At the end of the experiment, we observe a number of audiences in the test group convert to become customers (buy the product) (c_test). A number of audiences in the control group also convert (c_control), perhaps at a different rate. The conversion in the control group is the *baseline* conversion rate.
 *A reach* happens when an ad is successfully shown to the test group. A number of audiences in the test group that is reached by an ad and also convert (c_reach). The dependency of the reach on the test group creates a heirarchical structure in the model that will be explored further when we talk about the modelling. 
 
-Now, you must realize that among these reached audiences who convert, some of them would have converted had the ads not been shown to them. This is due to the *baseline* conversion. The task here is to find, after accounting for the *baseline* conversion, how many reached audiences convert **above and beyond the baseline level**. That is the **lift**. The way we can think of the lift conversion is in term of a *proportional impact* in our model describing how many people will convert given they see an ad compared to not seeing the ad.
+Now, you must realize that among these reached audiences who convert, some of them would have converted had the ads not been shown to them. This is due to the *baseline* conversion. The task here is to find, after accounting for the *baseline* conversion, how many reached audiences convert **above and beyond the baseline level**. That is the **lift**. The way we can think of the lift conversion is in term of a *proportional impact* in our model describing how many people will convert given they see an ad compared to not seeing the ad. This is a simplistic description of course. For more discussion (i.e. what if the ads were run to general population before the experiment, will it affects our interpretation of the experiment?) see the appendix.
 
 
 So to illustrate I will show a simple experimental result below
@@ -163,15 +163,23 @@ The p_conv_control gives us a probability that a random person will become a cus
 
 # Appendix
 
-## 1. What is Markov chain Monte carlo algorithm?
+## 1. What exactly is being measured in the experiment?
 
-Before we talked about MCMC, let's talk about a simple way to perform a simulation-based approach to find the posterior and the likelihood. One way to do the simulation is we perform a grid-sampling by defining an interval of parameters, and place a grid of points in the interval, draw a point in the grid to compute the likelihood and prior. Now if we have infinite points, we will arrive at the exact posterior.
-But this method becomes unfeasible as the number of parameters increases because the shape of posterior distribution gets more and more complex, and the volume of posterior becomes much narrower compared to the whole parameter space. This makes simple grid sampling unable to find the region in parameter space where posterior distribution is not zero.
+Earlier I said the lift is *proportional impact* of an ad on convertion given they see the ad (compared to not seeing the ad). The question is how long ago did they see an ad? Recall that the experiment has a set window of time that the data is collected. So more accurately, the lift is *proportional short-term impact* of an ad on conversion given they see an ad within a window period. The randomized control trial such as this may be suitable for short-term impact, but it may not be suitable for studying of a longer term impact of an ad as running a control group for a long window can be costly.
 
-So this is where MCMC comes in.
+What is the interpretation when the same ad is shown to general population prior to the experiment? If the ad is out there , that'd mean that the the long-term effect of ads that were shown to both control and test groups prior to the experiment will be measured as *baseline*. This causes us to underestimate the impact of the ad.
+
+
+## 2. What is Markov chain Monte carlo algorithm?
+
+Before we talked about MCMC, let's talk about a simpler way to perform a simulation-based approach to find the posterior distribution. One way to do the simulation is we perform a grid-sampling by defining an interval of parameters, and place a grid of points in the interval, draw a point in the grid to compute the likelihood and prior. Now if we have infinite points, we will arrive at the exact posterior distribution.
+But this method becomes unfeasible as the number of parameters increases because the shape of posterior distribution gets more and more complex, and the volume of posterior distribution becomes much narrower compared to the whole parameter space. This makes simple grid sampling unable to find the region in parameter space where posterior distribution is not zero.
+
+From that intuition, this is where MCMC comes in.
+
 We need a way to sampling points in high dimensional space such that we samples more points from the region that has greater probability (and not spend too much sampling in region where posterior is null). The sampling part here is the Monte-Carlo part.
 
-The second part, Markov chain, describes a sequence of states and probabilities describing the transition among the states. The states are the parameters in the parameter space, so if we find the transition probabilities that is proportional to the posterior distribution, we will spend more simulations on the parameter space that is associated with higher posterior distribution.  
+The second part, Markov chain, describes a sequence of states and probabilities describing the transition among the states. The states are the parameters in the parameter space, so if we find the transition probabilities that is proportional to the likelihood, we will spend more simulations on the parameter space that is associated with higher posterior distribution.  
 There are many ways to find the transition probabilities that has such property. One way to do it is **Metropolis-Hastings algorithm**. Actually, the Pymc3 implements a newer method known as No-U-Turn sampler (NUTS). read [here](http://www.stat.columbia.edu/~gelman/research/published/nuts.pdf) for more information.
 
 So what is Metropolis-Hastings?
@@ -183,12 +191,14 @@ This algorithm tries to guide us to spend time in region of parameter space prop
 
 3.2 we can either accept the new point and move there, or we reject the new point and stays where we are. The acceptance is computed as the acceptance probability 
 
-p(x_i+1 | x_i) = min(1,p(x_i+1)q(x_i | x_i+1)/(p(x_i)q(x_i+1 | x_i))
+p(x_i+1 | x_i) = min(1,(likelihood of x_i+1/likelihood of x_i))
 
 3.3 pick a random value V from a uniform distribution on the interval [0,1], if the acceptance probability calculated in 3.2 is greater than V, then we accept x_i+1, otherwise stay at x_i.
 We keep iterates from 2 till we have enough samples.
 
-The idea behind this algorithm is to move through the parameter space and if the new point is a higher density region, we always accept the move, if not, we probabilistically reject or accept accept the move. 
+The idea behind this algorithm is to move through the parameter space and if the new point is a higher density region, we sometimes accept the move but not always. The acceptance probability being compared to a random value ensures that the algorithm will spend proportional time to points with higher attitude.
+
+The reason for comparing the acceptance probability with the random value is that if we deterministically accept a point with higher density, the algorithm becomes a way of solving the  posterior maximixation. But we do not want the maximization at all. What we want is to map the parameter space, and this algorithm provide a way to backtrack away from the high density region (so we can explore other regions as well).  
 
 
 ## 2. Comment on the statistical significance
