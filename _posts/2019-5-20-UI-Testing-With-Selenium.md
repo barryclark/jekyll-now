@@ -15,4 +15,4 @@ Here are some key areas that I have addressed in the repo:
 * The page model pattern and abstracting common tasks.
 * Authentication.
 * SharePoint Modern controls.
-* Testing and configurtion with the NUnit framework.
+* Testing and configuration with the NUnit framework.
