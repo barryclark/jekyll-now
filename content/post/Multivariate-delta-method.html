@@ -51,7 +51,7 @@ header:
 r = \frac{s_{xy}}{\sqrt{s_{xx} s_{yy}}},
 \]</span></p>
 <p>where <span class="math inline">\(s_{xx}\)</span> and <span class="math inline">\(s_{yy}\)</span> are sample variances and <span class="math inline">\(s_{xy}\)</span> is the sample covariance. These sample variances and covariances are unbiased estimates of <span class="math inline">\(\phi_{xx}\)</span>, <span class="math inline">\(\phi_{yy}\)</span>, and <span class="math inline">\(\phi_{xy}\)</span>, respectively. So in terms of the above notation, we have <span class="math inline">\(\mathbf{T} = \left(s_{xx}, s_{yy}, s_{xy}\right)\)</span>, <span class="math inline">\(\boldsymbol\theta = \left(\phi_{xx}, \phi_{yy}, \phi_{xy}\right)\)</span>, and <span class="math inline">\(\rho = \phi_{xy} / \sqrt{\phi_{xx} \phi_{yy}}\)</span>.</p>
-<p>From <a href="%7B%7B%20site.url%20%7D%7D/distribution-of-sample-variances">a previous post</a>, we can work out the variance-covariance matrix of <span class="math inline">\(\mathbf{T}\)</span>:</p>
+<p>From <a href="/distribution-of-sample-variances">a previous post</a>, we can work out the variance-covariance matrix of <span class="math inline">\(\mathbf{T}\)</span>:</p>
 <p><span class="math display">\[
 \text{Var}\left(\sqrt{n - 1} \left[\begin{array}{c} s_{xx} \\ s_{yy} \\ s_{xy}\end{array}\right]\right) = \boldsymbol\Sigma = \left[\begin{array}{ccc} 2 \phi_{xx}^2 &amp; &amp; \\ 2 \phi_{xy}^2 &amp; 2 \phi_{yy}^2 &amp; \\ 2 \phi_{xy} \phi_{xx} &amp; 2 \phi_{xy} \phi_{yy} &amp; \phi_{xy}^2 + \phi_{xx} \phi_{yy}\end{array}\right].
 \]</span></p>

@@ -66,7 +66,7 @@ $$
 
 where $s_{xx}$ and $s_{yy}$ are sample variances and $s_{xy}$ is the sample covariance. These sample variances and covariances are unbiased estimates of $\phi_{xx}$, $\phi_{yy}$, and $\phi_{xy}$, respectively. So in terms of the above notation, we have $\mathbf{T} = \left(s_{xx}, s_{yy}, s_{xy}\right)$, $\boldsymbol\theta = \left(\phi_{xx}, \phi_{yy}, \phi_{xy}\right)$, and $\rho = \phi_{xy} / \sqrt{\phi_{xx} \phi_{yy}}$. 
 
-From [a previous post]({{ site.url }}/distribution-of-sample-variances), we can work out the variance-covariance matrix of $\mathbf{T}$: 
+From [a previous post](/distribution-of-sample-variances), we can work out the variance-covariance matrix of $\mathbf{T}$: 
 
 $$
 \text{Var}\left(\sqrt{n - 1} \left[\begin{array}{c} s_{xx} \\ s_{yy} \\ s_{xy}\end{array}\right]\right) = \boldsymbol\Sigma = \left[\begin{array}{ccc} 2 \phi_{xx}^2 & & \\ 2 \phi_{xy}^2 & 2 \phi_{yy}^2 & \\ 2 \phi_{xy} \phi_{xx} & 2 \phi_{xy} \phi_{yy} & \phi_{xy}^2 + \phi_{xx} \phi_{yy}\end{array}\right].
