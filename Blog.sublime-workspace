@@ -1,0 +1,308 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 1846,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 2621,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 74.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown (Github) (Naomi)"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"packageresou",
+				"PackageResourceViewer: Open Resource"
+			]
+		],
+		"width": 447.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/niclake/Documents/GitHub/niclake.github.io",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_includes",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_layouts",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_sass"
+	],
+	"file_history":
+	[
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-12-23-2019-goals.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/about.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-8-24-minit.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-8-23-breath-of-the-wild.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-8-18-portal-portal-2.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-11-24-shadow-of-the-colossus.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-11-17-we-bought-a-house.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-8-15-Hello-World.md",
+		"/Users/niclake/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_layouts/default.html",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_config.yml",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_layouts/post.html",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_category/gaming.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_category/random.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-08-16-Test-Post.md",
+		"/Users/niclake/Documents/GitHub/niclake.github.io/_posts/2018-08-15-Hello-World.md",
+		"/Users/niclake/Desktop/signature.html",
+		"/Users/niclake/Dropbox/ShineChiro/Signature/signature.html",
+		"/Users/niclake/.rvm/gems/ruby-2.4.1/gems/t-3.1.0/lib/t/cli.rb",
+		"/Users/niclake/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/niclake/Downloads/cookie.xml",
+		"/Users/niclake/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/niclake/Desktop/Wedding Music.txt"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 91.0,
+		"where_history":
+		[
+			"/Users/niclake/Documents/GitHub/niclake.github.io",
+			"/Users/niclake/Documents/GitHub",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"style.",
+			"style.scss",
+			"avatar",
+			"default",
+			"page",
+			"page.html"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Blog.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 53.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 560.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
