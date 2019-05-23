@@ -2,7 +2,6 @@
 layout: post
 title: "36 people in container tech you should be following"
 tags:
-  - Featured
   - Article
   - "2018"
 ---
