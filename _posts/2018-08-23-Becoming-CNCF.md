@@ -2,7 +2,7 @@
 layout: post
 title: "Becoming Director of Ecosystem at CNCF"
 tags:
-  - Featured
+  - Article
   - "2018"
 ---
 
