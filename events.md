@@ -6,13 +6,6 @@ permalink: /events/
 
 ### 2019
 
-May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
-* **Keynote**
-* **CNCF End User Awards 2019 (NA/EU)**
-* **Navigating the cloud native ecosystem for end users**
-* **Intro + Deep Dive BoF: Telecom User Group and Cloud Native Network Functions (CNF) Testbed**
-* **Birds of a Feather: Financial Services User Group (FSUG)**
-
 June 23 - 27: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
 * **CNCF End User Awards 2019 (China)**
 * **Navigating the cloud native ecosystem for end users**
