@@ -6,6 +6,8 @@ permalink: /events/
 
 ### 2019
 
+June 3 - 4: Call for Code Day, Geneva
+
 June 23 - 27: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
 * **CNCF End User Awards 2019 (China)**
 * **Navigating the cloud native ecosystem for end users**
