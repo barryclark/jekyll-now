@@ -4,7 +4,6 @@ title: "A CNCF Graduated Project Overview - KubeCon CloudNativeCon, Seattle"
 tags:
   - Video
   - "2018"
-  - Featured
 ---
 
 <p class="video-wrapper">
