@@ -4,7 +4,6 @@ title: "Crossing the chasm with cloud native - Open FinTech Forum keynote"
 tags:
   - Slides
   - "2018"
-  - Featured
 ---
 
 <p class="video-wrapper">
