@@ -13,50 +13,50 @@ Before creating the dashboard we need to collect the information we want to disp
 
 1. Get the _Server Pending Restart Monitor_ object.
 
-    ```PowerShell
+    ```powershell
     $rebootRequiredMonitor = Get-SCOMMonitor -DisplayName 'Server Pending Restart Monitor'
     ```
 
 1. Get the class which is targeted by the reboot required monitor. In this case it is an Operating System object.
 
-    ```PowerShell
+    ```powershell
     $operatingSystemClass = Get-SCOMClass -Id $rebootRequiredMonitor.Target.Id
     ```
 
 1. Get all instances of the Operating System class.
 
-    ```PowerShell
+    ```powershell
     $operatingSystems = Get-SCOMClassInstance -Class $operatingSystemClass
     ```
 
 1. Create a collection to use when searching for the state of the monitor in the context of the operating system. This a requirement when using the `GetMonitoringStates()` method.
 
-    ```PowerShell
+    ```powershell
     $monitorCollection = New-Object -TypeName 'System.Collections.Generic.List[Microsoft.EnterpriseManagement.Configuration.ManagementPackMonitor]'
     $monitorCollection.Add($rebootRequiredMonitor)
     ```
 
 1. Get one of the operating system objects to work with
 
-   ```PowerShell
+   ```powershell
     $operatingSystem = $operatingSystems[0]
     ```
 
 1. Get the first state of the monitor in the context of the specified operating system.
 
-    ```PowerShell
+    ```powershell
     $rebootState = $operatingSystem.GetMonitoringStates($monitorCollection)[0]
     ```
 
 1. Get the context of the last state change events and cast it as an XML object.
 
-    ```PowerShell
+    ```powershell
     [xml]$context = $rebootState.GetStateChangeEvents()[-1].Context
     ```
 
 1. From here all of the properties which are available in the _Server Pending Restart Monitor_ can be listed.
  
-    ```PowerShell
+    ```powershell
     $context.DataItem.Property
     ```
 
@@ -66,7 +66,7 @@ Now that the data to display is collected, a data object must be created so the 
 
 1. Create a hashtable to translate between the HealthState value and alphabetical characters. This will be used as part of the `Id` field which is used to sort the table.
 
-    ```PowerShell
+    ```powershell
     $sortTable = @{
         0 = 'd'
         1 = 'c'
@@ -77,19 +77,19 @@ Now that the data to display is collected, a data object must be created so the 
 
 1. Create a data object with a dummy namespace. The namespace name does not appear to be important.
 
-    ```PowerShell
+    ```powershell
     $dataObject = $ScriptContext.CreateInstance('xsd://foo!bar/baz')
     ```
 
 1. Get the numeric value of the health state.
 
-    ```PowerShell
+    ```powershell
     $healthStateValue = $rebootState[0].HealthState.value__
     ```
 
 1. Translate the health state value to the alphabetic character which will be used to sort the grid.
 
-    ```PowerShell
+    ```powershell
     $sortId = $sortTable[$healthStateValue]
     ```
 
@@ -97,13 +97,13 @@ Now that the data to display is collected, a data object must be created so the 
     - The `Id` field must be a string.
     - The `Id` field is the only field which is used to sort the grid.
 
-    ```PowerShell
+    ```powershell
     $dataObject['Id'] = "$sortId $($operatingSystem.Id.ToString())"
     ```
 
 1. Add the rest of the data properties as desired.
 
-    ```PowerShell
+    ```powershell
     $dataObject['Health State'] = $ScriptContext.CreateWellKnownType('xsd://Microsoft.SystemCenter.Visualization.Library!Microsoft.SystemCenter.Visualization.OperationalDataTypes/MonitoringObjectHealthStateType',$rebootState[0].HealthState.value__)
     $dataObject['Maintenance Mode'] = $ScriptContext.CreateWellKnownType('xsd://Microsoft.SystemCenter.Visualization.Library!Microsoft.SystemCenter.Visualization.OperationalDataTypes/MonitoringObjectInMaintenanceModeType',$operatingSystem.InMaintenanceMode)
     $dataObject['Computer'] = [System.String]($operatingSystem.'[Microsoft.Windows.Computer].PrincipalName'.Value)
@@ -116,7 +116,7 @@ Now that the data to display is collected, a data object must be created so the 
 
 1. Add the data object to the collection which is returned to the PowerShell Grid Widget.
 
-    ```PowerShell
+    ```powershell
     $ScriptContext.ReturnCollection.Add($dataObject)
     ```
 
