@@ -11,7 +11,7 @@
 			"file": "style.scss",
 			"settings":
 			{
-				"buffer_size": 4521,
+				"buffer_size": 4579,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -20,20 +20,85 @@
 			"file": "_posts/2018-12-23-2019-goals.md",
 			"settings":
 			{
-				"buffer_size": 7895,
+				"buffer_size": 8366,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nJsPrettier\n----------\n\n  ## 1.26.0\n  \n  Release Date: 2019-03-17\n  \n  - Added support for formatting PHP files; requires the Prettier PHP Plugin:\n  \n        cd to/project/directory\n        npm install @prettier/plugin-php\n  \n    More information on the Prettier PHP Plugin:\n    https://github.com/prettier/plugin-php\n",
+			"contents": "; Lines starting ; (semicolons) are commented out.\n; That is, they do not affect the code and are here for demonstration purposes only.\n; ----------------------------------\n\n; HOWTO: Adding more disks\n; ----------------------------------\n; Adding more disks is a pretty straightforward process. Follow the following steps to turn\n; this 2 disks skin into a 3 disks skin. You can then extend it even further as you wish.\n;\n; 1) Create a new variable called disk3=X: directly below disk2=D: in the [Variables] section\n; 2) Create a copy of the [measureTotalDisk2] and [measureUsedDisk2] sections\n; 3) Rename the copied sections to [measureTotalDisk3] and [measureUsedDisk3], respectively.\n;    Also change Drive=#disk2# to Drive=#disk3#\n; 4) Create a copy of the [meterLabelDisk2], [meterValueDisk2], and [meterBarDisk2].\n;    Rename all Disk2's in the copied sections to Disk3.\n; 5) Now we need to change the Y= values to adjust height. Change Y= under [meterLabelDisk3]\n;    to Y=80 (calculated by adding 20 to the Y= value of previous meterLabel).\n;    Then change Y= under [meterBarDisk3] to Y=92 (calculated by adding 20 to the Y= value of previous meterBar).\n; 6) Save the file as '3 Disks.ini'. Now right-click on the Rainmeter tray icon and select\n;    'Refresh All'. Now go activate the '3 Disks.ini' skin and enjoy! :)\n\n[Rainmeter]\n; This section contains general settings that can be used to change how Rainmeter behaves.\nUpdate=1000\nBackground=#@#Background.png\n; #@# is equal to Rainmeter\\Skins\\illustro\\@Resources\nBackgroundMode=3\nBackgroundMargins=0,34,0,14\n\n[Metadata]\n; Contains basic information of the skin.\nName=Disk\nAuthor=poiru\nInformation=Displays disk usage.\nLicense=Creative Commons BY-NC-SA 3.0\nVersion=1.0.0\n\n[Variables]\n; Variables declared here can be used later on between two # characters (e.g. #MyVariable#).\nfontName=Trebuchet MS\ntextSize=8\ncolorBar=235,170,0,255\ncolorText=255,255,255,205\ndisk1=C:\ndisk2=I:\ndisk3=N:\ndisk4=L:\n\n; ----------------------------------\n; MEASURES return some kind of value\n; ----------------------------------\n\n[measureTotalDisk1]\n; This measure returns the total disk space\nMeasure=FreeDiskSpace\nDrive=#disk1#\nTotal=1\nUpdateDivider=120\n\n[measureUsedDisk1]\n; Returns inverted value of free disk space (i.e. used disk space)\nMeasure=FreeDiskSpace\nDrive=#disk1#\nInvertMeasure=1\nUpdateDivider=120\n\n[measureTotalDisk2]\nMeasure=FreeDiskSpace\nDrive=#disk2#\nTotal=1\nUpdateDivider=120\n\n[measureUsedDisk2]\nMeasure=FreeDiskSpace\nDrive=#disk2#\nInvertMeasure=1\nUpdateDivider=120\n\n; ----------------------------------\n; STYLES are used to \"centralize\" options\n; ----------------------------------\n\n[styleTitle]\nStringAlign=Center\nStringCase=Upper\nStringStyle=Bold\nStringEffect=Shadow\nFontEffectColor=0,0,0,50\nFontColor=#colorText#\nFontFace=#fontName#\nFontSize=10\nAntiAlias=1\nClipString=1\n\n[styleLeftText]\nStringAlign=Left\n; Meters using styleLeftText will be left-aligned.\nStringCase=None\nStringStyle=Bold\nStringEffect=Shadow\nFontEffectColor=0,0,0,20\nFontColor=#colorText#\nFontFace=#fontName#\nFontSize=#textSize#\nAntiAlias=1\nClipString=1\n\n[styleRightText]\nStringAlign=Right\nStringCase=None\nStringStyle=Bold\nStringEffect=Shadow\nFontEffectColor=0,0,0,20\nFontColor=#colorText#\nFontFace=#fontName#\nFontSize=#textSize#\nAntiAlias=1\nClipString=1\n\n[styleBar]\nBarColor=#colorBar#\nBarOrientation=HORIZONTAL\nSolidColor=255,255,255,15\n\n; ----------------------------------\n; METERS display images, text, bars, etc.\n; ----------------------------------\n\n[meterTitle]\nMeter=String\nMeterStyle=styleTitle\n; Using MeterStyle=styleTitle will basically \"copy\" the\n; contents of the [styleTitle] section here during runtime.\nX=100\nY=12\nW=190\nH=18\nText=Disks\n; Even though the text is set to Disks, Rainmeter will display\n; it as DISKS, because styleTitle contains StringCase=Upper.\n\n[meterLabelDisk1]\nMeter=String\nMeterStyle=styleLeftText\nX=10\nY=40\nW=190\nH=14\nText=#disk1#\\\n\n[meterValueDisk1]\nMeter=String\nMeterStyle=styleRightText\nMeasureName=measureUsedDisk1\nMeasureName2=measureTotalDisk1\nX=200\nY=0r\n; r stands for relative. In this case, the Y postition of meterValueCPU is 0 pixels\n; below the Y value of the previous meter (i.e it's the same as in meterLabelCPU).\nW=190\nH=14\nText=%1B/%2B used\n; %1 stands for the value of MeasureName (measureUsedDisk1 in this case).\n; %2 stands for the value of MeasureName2.\nNumOfDecimals=1\nAutoScale=1\n; Because disk measures return the free/used space in bytes, we must use AutoScale=1 to\n; automatically scale the value into a more readable figure.\nLeftMouseUpAction=[\"#disk1#\\\"]\n; Open #disk1# on click\n\n[meterBarDisk1]\nMeter=Bar\nMeterStyle=styleBar\nMeasureName=measureUsedDisk1\nX=10\nY=52\nW=190\nH=1\n\n[meterLabelDisk2]\nMeter=String\nMeterStyle=styleLeftText\nX=10\nY=60\nW=190\nH=14\nText=Game Disk\nLeftMouseUpAction=[\"#disk2#\\\"]\n\n[meterValueDisk2]\nMeter=String\nMeterStyle=styleRightText\nMeasureName=measureUsedDisk2\nMeasureName2=measureTotalDisk2\nX=200\nY=0r\nW=190\nH=14\nText=%1B/%2B used\nNumOfDecimals=1\nAutoScale=1\n\n[meterBarDisk2]\nMeter=Bar\nMeterStyle=styleBar\nMeasureName=measureUsedDisk2\nX=10\nY=72\nW=190\nH=1\n\n[meterLabelDisk3]\nMeter=String\nMeterStyle=styleLeftText\nX=10\nY=60\nW=190\nH=14\nText=Big Disk\nLeftMouseUpAction=[\"#disk2#\\\"]\n\n[meterValueDisk3]\nMeter=String\nMeterStyle=styleRightText\nMeasureName=measureUsedDisk2\nMeasureName2=measureTotalDisk2\nX=200\nY=0r\nW=190\nH=14\nText=%1B/%2B used\nNumOfDecimals=1\nAutoScale=1\n\n[meterBarDisk3]\nMeter=Bar\nMeterStyle=styleBar\nMeasureName=measureUsedDisk2\nX=10\nY=72\nW=190\nH=1\n\n[meterLabelDisk4]\nMeter=String\nMeterStyle=styleLeftText\nX=10\nY=60\nW=190\nH=14\nText=Bigger Disk\nLeftMouseUpAction=[\"#disk2#\\\"]\n\n[meterValueDisk4]\nMeter=String\nMeterStyle=styleRightText\nMeasureName=measureUsedDisk2\nMeasureName2=measureTotalDisk2\nX=200\nY=0r\nW=190\nH=14\nText=%1B/%2B used\nNumOfDecimals=1\nAutoScale=1\n\n[meterBarDisk4]\nMeter=Bar\nMeterStyle=styleBar\nMeasureName=measureUsedDisk2\nX=10\nY=72\nW=190\nH=1",
+			"file": "/C/Program Files/Rainmeter/Defaults/Skins/illustro/Disk/2 Disks.ini",
+			"file_size": 5264,
+			"file_write_time": 131363208340000000,
 			"settings":
 			{
-				"buffer_size": 368,
+				"buffer_size": 5888,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/N/Libraries/Downloads/poke/css/pokemon.css",
+			"settings":
+			{
+				"buffer_size": 904,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/* Generated by Glyphter (http://www.glyphter.com) on  Sat May 11 2019*/\n@font-face {\n  font-family: 'pokemon';\n  src: url(\"http://niclake.me/fonts/pokemon.eot\");\n  src: url(\"http://niclake.me/fonts/pokemon.eot?#iefix\") format('embedded-opentype'),\n       url(\"http://niclake.me/fonts/pokemon.woff\") format('woff'),\n       url(\"http://niclake.me/fonts/pokemon.ttf\") format('truetype'),\n       url(\"http://niclake.me/fonts/pokemon.svg#pokemon\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n@font-face {\n  font-family: 'C64ProMono';\n  src: url(\"/fonts/C64_Pro_Mono-STYLE.eot\");\n  src: url(\"/fonts/C64_Pro_Mono-STYLE.eot?#iefix\") format('embedded-opentype'),\n       url(\"/fonts/C64_Pro_Mono-STYLE.woff\") format('woff'),\n       url(\"/fonts/C64_Pro_Mono-STYLE.ttf\") format('truetype'),\n       url(\"/fonts/C64_Pro_Mono-STYLE.svg#C64ProMono\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n.icon {\n  display: inline-block;\n  font: normal normal normal 14px/1 C64ProMono;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  transform: translate(0, 0);\n  border: solid 1px;\n}\n\n[class*='icon-']:before{\n\tdisplay: inline-block;\n  font-family: 'pokemon';\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale\n}\n.icon-pokeball:before{content:'\\0041';}\n.icon-pokedex:before{content:'\\0042';}\n.icon-grass:before{content:'\\0043';}\n.icon-fire:before{content:'\\0044';}\n.icon-water:before{content:'\\0045';}\n.icon-electric:before{content:'\\0046';}",
+			"file": "/N/Libraries/Downloads/newfonts/css/pokemon.css",
+			"file_size": 897,
+			"file_write_time": 132020858020000000,
+			"settings":
+			{
+				"buffer_size": 1619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "[{w:15,h:1.5,d:true},\"<h2>GMK Ryme by /u/PhoenixUNI\"],\n[{y:0.5,c:\"#bc251e\",t:\"#c5c7ca\",p:\"R1\",a:6},\"Esc\",{x:1,c:\"#c5c7ca\",t:\"#bc251e\",f:4},\"F1\",\"F2\",\"F3\",\"F4\",{x:0.5,c:\"#171718\"},\"F5\",\"F6\",\"F7\",\"F8\",{x:0.5,c:\"#c5c7ca\"},\"F9\",\"F10\",\"F11\",\"F12\",{x:0.25,c:\"#171718\",f:3},\"Print\",\"Scroll\",\"Pause\"],\n[{y:0.5,c:\"#c5c7ca\",a:4,f:6},\"~\\n`\",{f:4},\"!\\n1\",\"@\\n2\",\"#\\n3\",\"$\\n4\",\"%\\n5\",\"^\\n6\",\"&\\n7\",\"*\\n8\",\"(\\n9\",\")\\n0\",\"&mdash;\\n&ndash;\",\"+\\n=\",{c:\"#171718\",a:6,f:3,w:2},\"Backspace\",{x:0.25},\"Insert\",\"Home\",\"PgUp\",{x:0.25},\"Num\",{f:9},\"&divide;\",\"&times;\",\"&minus;\"],\n[{p:\"R2\",a:4,w:1.5},\"\\n<i class='kb kb-Line-Start-End'></i>\",{c:\"#c5c7ca\",f:6},\"Q\",\"W\",\"E\",\"R\",\"T\",\"Y\",\"U\",\"I\",\"O\",\"P\",{f:4},\"{\\n[\",\"}\\n]\",{f:5,w:1.5},\"|\\n\\\\\",{x:0.25,c:\"#171718\",a:6,f:3},\"Delete\",\"End\",\"PgDn\",{x:0.25,c:\"#c5c7ca\",a:4,f:6},\"7\",\"8\",\"9\",{c:\"#171718\",p:\"R3\",a:6,f:9,h:2},\"&plus;\"],\n[{f:3,w:1.75},\"Caps Lock\",{c:\"#c5c7ca\",a:4,f:6},\"A\",\"S\",\"D\",\"F\",\"G\",\"H\",\"J\",\"K\",\"L\",{f:4},\":\\n;\",\"\\\"\\n'\",{c:\"#bc251e\",t:\"#c5c7ca\",a:6,f:3,w:2.25},\"Run\",{x:3.5,c:\"#c5c7ca\",t:\"#bc251e\",a:4,f:6},\"4\",\"5\",\"6\"],\n[{c:\"#171718\",p:\"R4\",a:6,f:9,w:2.25},\"⇧\",{c:\"#c5c7ca\",a:4,f:6},\"Z\",\"X\",\"C\",\"V\",\"B\",\"N\",\"M\",{f:4},\"<\\n,\",\">\\n.\",\"?\\n/\",{c:\"#171718\",a:6,f:3,w:2.75},\"⇧\",{x:1.25,a:4,f:6},\"&uarr;\",{x:1.25,c:\"#c5c7ca\"},\"1\",\"2\",\"3\",{c:\"#171718\",p:\"R3\",a:6,f:4,h:2},\"Enter\",{c:\"#bc251e\",t:\"#c5c7ca\",p:\"$3\",h:2},\"Enter\"],\n[{c:\"#171718\",t:\"#bc251e\",p:\"R4\",f:3,w:1.25},\"Control\",{w:1.25},\"Super\",{w:1.25},\"Alt\",{c:\"#c5c7ca\",t:\"#c5c7ca\",a:7,f:4,w:6.25},\"\",{c:\"#171718\",t:\"#bc251e\",a:6,f:3,w:1.25},\"Alt\",{w:1.25},\"Super\",{w:1.25},\"Fn\",{w:1.25},\"Control\",{x:0.25,a:4,f:6},\"&larr;\",\"&darr;\",\"&rarr;\",{x:0.25,c:\"#c5c7ca\",w:2},\"0\",\".\"],\n[{y:0.75,c:\"#171718\",p:\"R1\",a:6,f:3},\"Esc\",{a:4,f:6},\"~\\n`\",{x:12,c:\"#c5c7ca\",f:5},\"|\\n\\\\\",{x:0.25,c:\"#171718\",a:6,f:3},\"Delete\",\"End\",\"PgDn\"],\n[{x:12,p:\"R2\",w:1.5},\"Backspace\",{a:4,f:5,w:1.5},\"|\\n\\\\\",{x:0.25,a:6,f:3},\"PgUp\",{x:2.25,f:9},\"&minus;\",\"&equals;\",{x:0.25,f:4,w:1.25,h:2,w2:1.5,h2:1,x2:-0.25},\"Run\",{x:0.25,c:\"#bc251e\",t:\"#c5c7ca\",w:1.25,h:2,w2:1.5,h2:1,x2:-0.25},\"Run\"],\n[{c:\"#171718\",t:\"#bc251e\",f:3,w:1.25,w2:1.75,l:true},\"Caps\",{x:0.5,w:1.75},\"Pika Pika\",{c:\"#c5c7ca\",a:4,f:4,n:true},\"F\",{n:true},\"J\",{n:true},\"5\",{x:6.25,c:\"#171718\",a:6,w:2.25},\"Run\",{x:0.25,p:\"R3\",f:3},\"PgDn\",{x:2.25,f:9},\"&plus;\",{x:0.25,c:\"#c5c7ca\",a:4,f:6},\"~\\n#\"],\n[{c:\"#171718\",p:\"R4\",a:6,f:3,w:2},\"⇧\",{x:6},\"Ctrl\",\"Alt\",\"Fn\",{w:1.75},\"⇧\",{w:2.25},\"⇧\",{x:0.25},\"End\",{c:\"#bc251e\",t:\"#c5c7ca\",a:4,f:6},\"&uarr;\",{x:1.25,c:\"#c5c7ca\",t:\"#bc251e\"},\"0\",{x:0.25,c:\"#171718\",a:6,f:3,w:1.25},\"⇧\",{c:\"#c5c7ca\",a:4,f:5},\"|\\n\\\\\"],\n[{c:\"#171718\",a:6,f:3,w:1.5},\"Control\",\"Super\",{w:1.5},\"Alt\",{c:\"#c5c7ca\",t:\"#c5c7ca\",a:7,f:4,w:7},\"\",{c:\"#171718\",t:\"#bc251e\",a:6,f:3,w:1.5},\"Alt\",\"Super\",{w:1.5},\"Control\",{x:0.25,c:\"#bc251e\",t:\"#c5c7ca\",a:4,f:6},\"&larr;\",\"&darr;\",\"&rarr;\"],\n[{y:0.75,c:\"#f8c200\",t:\"#171718\",p:\"R1\",a:7,f:9},\"<i class='icon icon-electric'></i>\",{c:\"#ee6d00\"},\"<i class='icon icon-fire'></i>\",{c:\"#0084c2\"},\"<i class='icon icon-water'></i>\",{c:\"#689b34\"},\"<i class='icon icon-grass'></i>\"],\n[{c:\"#171718\",t:\"#bc251e\",w:1.75},\"ICON1\",\"<i class='icon icon-pokeball'></i>\",{c:\"#c5c7ca\"},\"<i class='icon icon-pokeball'></i>\",{c:\"#bc251e\",t:\"#c5c7ca\"},\"<i class='icon icon-pokeball'></i>\"],\n[{c:\"#171718\",t:\"#bc251e\",w:2.25},\"ICON1\",{c:\"#bc251e\",t:\"#c5c7ca\",w:2.25},\"ICON1\",{c:\"#171718\",t:\"#bc251e\",w:2.25},\"ICON2\",{c:\"#bc251e\",t:\"#c5c7ca\",w:2.25},\"ICON2\"],\n[{c:\"#171718\",t:\"#bc251e\",w:1.25},\"<i class='icon icon-pokedex'></i>\",{w:1.25},\"<i class='icon icon-pokedex'></i>\",{w:1.25},\"<i class='icon icon-pokeball'></i>\",{w:1.25},\"<i class='icon icon-pokeball'></i>\"],\n[{w:1.5},\"<i class='icon icon-pokedex'></i>\",{w:1.5},\"<i class='icon icon-pokedex'></i>\",\"<i class='icon icon-pokeball'></i>\",\"<i class='icon icon-pokeball'></i>\"]\n",
+			"file": "/N/Libraries/Desktop/ryme.json",
+			"file_size": 3850,
+			"file_write_time": 132021423575348463,
+			"settings":
+			{
+				"buffer_size": 3781,
 				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
+				"name": "[{w:15,h:1.5,d:true},\"<h2>GMK Ryme by /u/PhoenixUN"
+			}
+		},
+		{
+			"file": "/N/Libraries/Desktop/phptest.html",
+			"settings":
+			{
+				"buffer_size": 264,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 1846,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/N/Libraries/Downloads/gmk-ryme-v0-1.json",
+			"settings":
+			{
+				"buffer_size": 9471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/N/Libraries/Downloads/gmk-ryme-v0-1 (2).json",
+			"settings":
+			{
+				"buffer_size": 9454,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -42,14 +107,6 @@
 			{
 				"buffer_size": 9112,
 				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_posts/2018-8-23-breath-of-the-wild.md",
-			"settings":
-			{
-				"buffer_size": 4958,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,6 +132,10 @@
 		"selected_items":
 		[
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -85,10 +146,6 @@
 			[
 				"Package Control: re",
 				"Package Control: Remove Package"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"Package Control: in",
@@ -125,6 +182,8 @@
 	],
 	"file_history":
 	[
+		"/N/Libraries/Documents/Rainmeter/Skins/illustro/Disk/4 Disks.ini",
+		"/C/Users/nicla/AppData/Roaming/Rainmeter/Rainmeter.ini",
 		"/I/Games/Steam/steamapps/common/Dark Souls Prepare to Die Edition/DATA/DSfix.ini",
 		"/C/Users/nicla/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
 		"/N/Libraries/Dropbox/front-end-exercise-master/package.json",
@@ -163,6 +222,7 @@
 		"height": 94.0,
 		"where_history":
 		[
+			"<current file>",
 			"N:\\Libraries\\Documents\\GitHub\\niclake.github.io",
 			"<current file>",
 			"N:\\Libraries\\Documents\\GitHub\\niclake.github.io"
@@ -173,6 +233,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"Shift\"",
+			"SA",
+			"393b3b",
+			"\"bc251e",
+			"d9dae0",
+			"b81b24",
+			"171718",
+			"SA ",
+			"B81B24",
+			"d31929",
+			"2d3238",
+			"212224",
+			"e5e4df",
+			"ba1312",
 			"start",
 			"table",
 			"avatar",
@@ -192,6 +266,18 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"⇧\"",
+			"171718",
+			"\"",
+			"c5c7ca",
+			"bc251e",
+			"393b3b",
+			"b81b24",
+			"B81B24",
+			"2b2c2e",
+			"2d3238",
+			"d9dae0",
+			"d31929",
 			"0-0"
 		],
 		"reverse": false,
@@ -203,7 +289,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -212,15 +298,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4521,
+						"buffer_size": 4579,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4138,
-								4138
+								0,
+								0
 							]
 						],
 						"settings":
@@ -233,7 +319,7 @@
 						"translation.y": 4611.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -242,15 +328,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7895,
+						"buffer_size": 8366,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6501,
-								6501
+								4066,
+								4066
 							]
 						],
 						"settings":
@@ -260,35 +346,180 @@
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 315.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "/C/Program Files/Rainmeter/Defaults/Skins/illustro/Disk/2 Disks.ini",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 368,
+						"buffer_size": 5888,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								368,
-								368
+								0,
+								5888
 							]
 						],
 						"settings":
 						{
-							"auto_indent": false,
-							"default_dir": "I:\\Games\\Steam\\steamapps\\common\\Dark Souls Prepare to Die Edition\\DATA",
+							"syntax": "Packages/INI/INI.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/N/Libraries/Downloads/poke/css/pokemon.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 904,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								904
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/N/Libraries/Downloads/newfonts/css/pokemon.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1201,
+								1388
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/N/Libraries/Desktop/ryme.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3781,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								3781
+							]
+						],
+						"settings":
+						{
+							"auto_name": "[{w:15,h:1.5,d:true},\"<h2>GMK Ryme by /u/PhoenixUN",
 							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
 							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/N/Libraries/Desktop/phptest.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								264
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/Liquid-HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_layouts/default.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/Liquid-HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -298,7 +529,67 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 8,
+					"file": "/N/Libraries/Downloads/gmk-ryme-v0-1.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/N/Libraries/Downloads/gmk-ryme-v0-1 (2).json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "/N/Libraries/Downloads/BigBagKbdTrixPKL-master/EPKL_Settings.ini",
 					"semi_transient": false,
 					"settings":
@@ -322,39 +613,11 @@
 						"translation.y": 305.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "_posts/2018-8-23-breath-of-the-wild.md",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 4958,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/MultiMarkdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 11,
 					"file": "_posts/2019-2-27-apex-legends.md",
 					"semi_transient": false,
 					"settings":
@@ -379,7 +642,7 @@
 						"translation.y": 96.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
