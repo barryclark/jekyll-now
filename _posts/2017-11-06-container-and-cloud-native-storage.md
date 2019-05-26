@@ -15,7 +15,7 @@ tags:
 I spoke at the Microservices Conference in London on 6 November, 2017 on "What's the future of cloud and container native storage?" and here are the slides to follow along with the video:
 
 <object data="https://www.oicheryl.com/resources/What's-the-future-of-container-and-cloud-native-storage.pdf" type="application/pdf" width="100%" height="700px">
-    <a href="http://www.oicheryl.com/resources/What's-the-future-of-container-and-cloud-native-storage.pdf">Download PDF</a>
+    <a href="https://www.oicheryl.com/resources/What's-the-future-of-container-and-cloud-native-storage.pdf">Download PDF</a>
 </object>
 
 Resource links:
