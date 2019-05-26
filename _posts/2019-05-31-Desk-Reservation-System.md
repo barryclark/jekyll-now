@@ -28,6 +28,18 @@ https://docs.opencv.org/trunk/d4/dc6/tutorial_py_template_matching.html
 https://stackoverflow.com/questions/21829469/removing-or-preventing-duplicate-template-matches-in-opencv-with-python
 
 
+SVG
+
+http://thenewcode.com/696
+
+http://thenewcode.com/428/Using-SVG-In-Web-Pages
+
+http://thenewcode.com/744/Make-SVG-Responsive
+
+Image map
+
+https://html.com/images/how-to-make-an-image-map/
+https://en.wikipedia.org/wiki/Image_map
 
 ## Parting thought
 
