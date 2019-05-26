@@ -13,7 +13,7 @@ London meetup](https://www.meetup.com/Cloud-Native-London) for the London commun
 
 ## Background
 
-Previously I was a C++/Java/Python engineer at Google. I've been in startups as a product manager, DevOps engineering manager and developer advocate. I graduated from the University of Cambridge, King's College, with a Masters in Computer Science.
+Previously I was a C++/Java/Python engineer at Google. In startups, I've been a product manager, DevOps engineering manager and developer advocate. I graduated from the University of Cambridge, King's College, with a Masters in Computer Science.
 
 ## Contact me
 
