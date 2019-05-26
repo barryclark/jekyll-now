@@ -6,10 +6,8 @@ tags:
   - "2018"
 ---
 
-<object data="http://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf">Download PDF</a>.
-    </embed>
+<object data="https://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf" type="application/pdf" width="100%" height="700px">
+  <a href="https://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf">Download PDF</a>
 </object>
 
 These are my slides from "Introduction to container storage", a workshop I ran at Day of Cloud Native in Oslo on 20 March, 2018.
