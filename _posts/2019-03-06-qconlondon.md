@@ -7,10 +7,8 @@ tags:
   - "2019"
 ---
 
-<object data="http://www.oicheryl.com/resources/2019-03-06-guided-journey.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/2019-03-06-guided-journey.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2019-03-06-guided-journey.pdf">Download PDF</a>.
-    </embed>
+<object data="https://www.oicheryl.com/resources/2019-03-06-guided-journey.pdf" type="application/pdf" width="100%" height="700px">
+  <a href="https://www.oicheryl.com/resources/2019-03-06-guided-journey.pdf">Download PDF</a>
 </object>
 
 These are my slides from ["A Guided Journey of Cloud Native, featuring Monzo"](https://qconlondon.com/london2019/speakers/cheryl-hung), a session I co-hosted with Matt Heath from Monzo at QCon, London in March 2019..
