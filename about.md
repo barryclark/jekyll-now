@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="https://www.oicheryl.com/images/headshot.jpeg" alt="Cheryl Hung, Director of CNCF" height="300" width="300">
 
-I am Director of Ecosystem at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
+I'm Cheryl Hung, Director of Ecosystem at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
 
 I'm a software engineer by background; I enjoyed solving challenging problems at Google and startups. Now I advocate for and build communities around Kubernetes, cloud native and open source infrastructure.
 
