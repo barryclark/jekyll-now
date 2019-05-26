@@ -8,9 +8,7 @@ tags:
 ---
 
 <object data="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf">Download PDF</a>.
-    </embed>
+  <a href="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf">Download PDF</a>
 </object>
 
 I was honoured to be the inaugural speaker at Cloud Native Manchester on May 8, 2019, to introduce the CNCF and talk about the different ways to get involved with open source.
