@@ -21,8 +21,8 @@ There was great positive feedback about:
 
 My slides are available here:
 
-<object data="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf" type="application/pdf" width="100%" height="700px">
-  <a href="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf">Download PDF</a>.
+<object data="https://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf" type="application/pdf" width="100%" height="700px">
+  <a href="https://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf">Download PDF</a>.
 </object>
 
 Thanks to our sponsors, StorageOS, Sainsbury's, the CNCF and Tecknuovo, plus all the work that happened in the background to make it happen - reception, food prep and delivery, the AV crew, name tags, serving staff and cleaners.
