@@ -6,8 +6,8 @@ tags:
   - "2019"
 ---
 
-<object data="http://www.oicheryl.com/resources/2019-03-09-open-source.pdf" type="application/pdf" width="100%" height="700px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2019-03-09-open-source.pdf">Download PDF</a>.
+<object data="https://www.oicheryl.com/resources/2019-03-09-open-source.pdf" type="application/pdf" width="100%" height="700px">
+  <a href="https://www.oicheryl.com/resources/2019-03-09-open-source.pdf">Download PDF</a>
 </object>
 
 These are my slides from a talk I gave at TECH(K)NOW Day London 2019.
