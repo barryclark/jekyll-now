@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Cheryl Hung](../images/headshot.jpeg)
+![Cheryl Hung](../images/headshot.jpeg =400x400)
 
 I am Director of Ecosystem at the [Cloud Native Computing Foundation](https://cncf.io), part of the Linux Foundation.
 
