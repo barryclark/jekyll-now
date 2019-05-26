@@ -13,8 +13,6 @@ tags:
 
 I gave a talk on "There's no such thing as a 'stateless' architecture" at ContainerSched in London on 28 September, 2017. Slides from my talk are also available:
 
-<object data="http://www.oicheryl.com/resources/theres-no-such-thing-as-a-stateless-architecture.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/theres-no-such-thing-as-a-stateless-architecture.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/theres-no-such-thing-as-a-stateless-architecture">Download PDF</a>.
-    </embed>
+<object data="https://www.oicheryl.com/resources/theres-no-such-thing-as-a-stateless-architecture.pdf" type="application/pdf" width="100%" height="700px">
+   <a href="https://www.oicheryl.com/resources/theres-no-such-thing-as-a-stateless-architecture">Download PDF</a>
 </object>
