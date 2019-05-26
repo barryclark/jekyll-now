@@ -7,10 +7,8 @@ tags:
   - "2019"
 ---
 
-<object data="http://www.oicheryl.com/resources/2019-04-20-navigating-open-source.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/2019-04-20-navigating-open-source.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2019-04-20-navigating-open-source.pdf">Download PDF</a>.
-    </embed>
+<object data="https://www.oicheryl.com/resources/2019-04-20-navigating-open-source.pdf" type="application/pdf" width="100%" height="700px">
+    <a href="https://www.oicheryl.com/resources/2019-04-20-navigating-open-source.pdf">Download PDF</a>
 </object>
 
 Here are my slides from a talk I gave on "Navigating Open Source" at TECH(K)NOW Day in Taipei, Taiwan.
