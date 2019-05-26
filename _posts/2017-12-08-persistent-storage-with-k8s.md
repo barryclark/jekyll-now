@@ -14,10 +14,8 @@ tags:
 
 My talk at Kubecon + Cloud Native Con North America 2017 is titled "Persistent Storage with Kubernetes in Production - which solution and why?" and the slides are available here:
 
-<object data="http://www.oicheryl.com/resources/2017-12-8-persistent-storage.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/2017-12-8-persistent-storage.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2017-12-8-persistent-storage.pdf">Download PDF</a>.
-    </embed>
+<object data="https://www.oicheryl.com/resources/2017-12-8-persistent-storage.pdf" type="application/pdf" width="100%" height="700px">
+    <a href="https://www.oicheryl.com/resources/2017-12-8-persistent-storage.pdf">Download PDF</a>
 </object>
 
 Resource links:
