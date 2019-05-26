@@ -6,10 +6,8 @@ tags:
   - "2018"
 ---
 
-<object data="http://www.oicheryl.com/resources/2018-4-25-hotelscom.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/2018-4-25-hotelscom.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-4-25-hotelscom">Download PDF</a>.
-    </embed>
+<object data="https://www.oicheryl.com/resources/2018-4-25-hotelscom.pdf" type="application/pdf" width="100%" height="700px">
+  <a href="https://www.oicheryl.com/resources/2018-4-25-hotelscom">Download PDF</a>
 </object>
 
 Here are my slides from my talk "Persistent storage for Kubernetes - which solution at why?" at [DevOps with Kubernetes Meetup by Hotels.com](https://www.eventbrite.co.uk/e/devops-with-kubernetes-meetup-by-hotelscom-expedia-tickets-44107262008) on 25 April 2018. In this talk I cover:
