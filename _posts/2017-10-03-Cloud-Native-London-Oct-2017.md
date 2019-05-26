@@ -14,10 +14,8 @@ October's [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-Londo
 
 Unfortunately James Stewart had to pull out due to illness, but he will be back at a future meetup. Instead I gave an extended welcome to the principles behind Cloud Native and why the group exists, since the group has grown to 750 members in a mere five months. Those slides are available here:
 
-<object data="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf">
-        This browser does not support PDFs. Please <a href="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf">download the PDF</a> to view it.</p>
-    </embed>
+<object data="https://www.oicheryl.com/resources/CloudNativeLondonOct.pdf" type="application/pdf" width="100%" height="700px">
+  <a href="https://www.oicheryl.com/resources/CloudNativeLondonOct.pdf">Download PDF</p>
 </object>
 
 Our first speaker, Dario Simonetti, explained the different benefits that linkerd brought to their infrastructure at Attest, and the difference between data plane components like linkerd vs control plane components like Istio.
