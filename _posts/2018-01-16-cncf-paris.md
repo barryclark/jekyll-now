@@ -6,13 +6,11 @@ tags:
   - "2018"
 ---
 
-<object data="http://www.oicheryl.com/resources/2018-1-16-persistent-storage.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/2018-1-16-persistent-storage.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-1-16-persistent-storage.pdf">Download PDF</a>.
-    </embed>
+<object data="https://www.oicheryl.com/resources/2018-1-16-persistent-storage.pdf" type="application/pdf" width="100%" height="700px">
+    <a href="https://www.oicheryl.com/resources/2018-1-16-persistent-storage.pdf">Download PDF</a>
 </object>
 
-My talk at CNCF Paris on 16 Jan 2018 is titled "Persistent Storage with Kubernetes in Production - which solution and why?" and the slides are available here.
+My talk at CNCF Paris on 16 Jan 2018 is titled "Persistent Storage with Kubernetes in Production - which solution and why?" and the slides are available above.
 
 Resource links:
 * [StorageOS browser demo](https://demo.storageos.cloud)
