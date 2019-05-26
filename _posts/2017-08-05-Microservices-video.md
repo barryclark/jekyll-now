@@ -13,6 +13,6 @@ tags:
 
 I gave a talk at the London μServices (Microservices) User Group meetup on "Persistent storage for Docker - which solution and why?" on 2 August, 2017 in London. My slides are also available here:
 
-<object data="http://www.oicheryl.com/resources/Persistent Storage in Docker.pdf" type="application/pdf" width="100%" height="700px">
-  <a href="http://www.oicheryl.com/resources/Persistent Storage in Docker.pdf">Download PDF</a>
+<object data="https://www.oicheryl.com/resources/Persistent Storage in Docker.pdf" type="application/pdf" width="100%" height="700px">
+  <a href="https://www.oicheryl.com/resources/Persistent Storage in Docker.pdf">Download PDF</a>
 </object>
