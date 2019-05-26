@@ -6,10 +6,8 @@ tags:
   - "2018"
 ---
 
-<object data="http://www.oicheryl.com/resources/2018-5-9-redhatsummit.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="http://www.oicheryl.com/resources/2018-5-9-redhatsummit.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-5-9-redhatsummit.pdf">Download PDF</a>.
-    </embed>
+<object data="https://www.oicheryl.com/resources/2018-5-9-redhatsummit.pdf" type="application/pdf" width="100%" height="700px">
+  <a href="https://www.oicheryl.com/resources/2018-5-9-redhatsummit.pdf">Download PDF</a>
 </object>
 
 Learn how StorageOS integrates natively with K8S and OpenShift to provide Persistent Volumes and Storage Classes. Cheryl Hung, Product Manager at StorageOS discusses how any application or database can be containerized and deployed on an OpenShift cluster on-premises or in the cloud.
