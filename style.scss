@@ -121,6 +121,42 @@ em, i {
   /*border-top: 1px solid #333;*/
 }
 
+/* ==============================================
+  Features/Labeles Formatted table
+*/
+.prediction table.features-table{
+  font-size: 90% ;
+  border-collapse: collapse;
+  /*border: 1px solid #bbb;*/
+  margin: 40px auto;
+}
+
+.prediction table.features-table th.inactive_cell,
+.prediction table.features-table td.inactive_cell{
+  border: 0px solid #bbb;
+}
+
+.prediction table.features-table th{
+  font-size: 90% ;
+  text-align:center;
+  border: 1px solid #bbb;
+  padding:10px;
+}
+.prediction table.features-table td{
+  text-align:center;
+  border: 1px solid #bbb;
+}
+
+.prediction table.features td.feature{
+
+}
+
+.prediction .grad-descent-one{
+  background-image: linear-gradient(90deg, #86F38E, #EFF532)
+}
+
+/* ============================================== */
+
 .middle-aligned{
   vertical-align:middle !important;
 }
