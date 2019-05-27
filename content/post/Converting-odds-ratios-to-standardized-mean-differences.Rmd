@@ -1,0 +1,39 @@
+---
+title: Converting from odds ratios to standardized mean differences: Logistic regression coefficients inflate effects
+author: James
+date: '2019-05-26'
+slug: Converting-odds-ratios-to-standardized-mean-differences
+categories: []
+draft: true
+tags:
+  - meta-analysis
+  - odds-ratios
+  - effect sizes
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+One of the central problems in research synthesis is that studies use a variety of different types of outcome measures to assess a construct. This is the main reason that meta-analysis often uses standardized, scale-free effect sizes (such as standardized mean differences), so that findings from studies that use different measures can be combined and contrasted on a common metric. In syntheses of education research (as well as other fields), a further issue that sometimes arises is that some included studies might report effects on a dichotomous outcome, while others report effects (of the same intervention, say) but using a continuous outcome measure. 
+
+```{r}
+logit <- function(x) log(x) - log(1 - x)
+
+n0 <- 10000
+n1 <- 10000
+r <- 0.7
+p0 <- 0.4
+SMD <- 0.4
+trt <- c(rep(0, n0), rep(1, n1))
+Y <- rlogis(n0 + n1, location = logit(p0) + trt * SMD * pi / sqrt(3))
+X <- r * (Y - trt * SMD) * sqrt(3) / pi + rnorm(n0 + n1, sd = sqrt(1 - r^2))
+B <- Y > 0
+
+LOR_basic <- diff(logit(tapply(B, trt, mean)))
+logit_fit <- glm(B ~ trt + X, family = "binomial")
+LOR_logit <- coef(logit_fit)["trt"]
+probs_margin <- tapply(predict(logit_fit, ,type = "response"), trt, mean)
+LOR_margin <- diff(logit(probs_margin))
+```
+
