@@ -1,48 +1,16 @@
-	{% if page.posting %}
-	 <link rel="prerender" href="{{ page.next.url }}">
-	 <link rel="prerender" href="{{ page.previous.url }}">
-	{% endif %}		
 	<meta name="distribution" content="global"/>
-	<meta name="keywords" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} Badalona, pagines web originals, Barcelona, diseny gràfic, matte painting" />
+	<meta name="keywords" content="tarifas web, edició html, Barcelona, Badalona, disseny grafic, edició web, pagines web economiques, web barata, freelance web, responsive, sense plantilles, art web, grafismes web" />
 	<meta name="description" content="{{ site.description }}" />
 	<meta name="robots" content="index, follow" />
     <meta name="author" href="http://isardmiralles.com/contacte/" />
     <meta name="designer" content="Isard Miralles">
-	{% if page.home %}
-	<meta itemprop="name" content="Inici"/>
-	<meta itemprop="url" content="http://isardmiralles.com/"/>
+
+	<meta itemprop="name" content="Tarifes"/>
+	<meta itemprop="url" content="http://isardmiralles.com/tarifes"/>
 	<meta itemprop="thumbnailUrl" content="http://isardmiralles.com//hipertextos/brand/cover.png"/>
 	<link rel="image_src" href="http://isardmiralles.com/hipertextos/brand/cover.png" />
 	<meta itemprop="image" content="http://isardmiralles.com/hipertextos/brand/cover.png"/>
-	{% endif %}
-	{% if page.bloggin %}
-	<meta itemprop="name" content="Secció Blog"/>
-	<meta itemprop="url" content="http://isardmiralles.com/blog"/>
-	<meta itemprop="thumbnailUrl" content="http://isardmiralles.com/hipertextos/brand/cover.png"/>
-	<link rel="image_src" href="http://isardmiralles.com/hipertextos/brand/cover.png" />
-	<meta itemprop="image" content="http://isardmiralles.com/hipertextos/brand/cover.png"/>
-	{% endif %}
-	{% if page.category %}
-	<meta itemprop="name" content="{{ page.title }}"/>
-	<meta itemprop="url" content="http://isardmiralles.com/{{ page.url }}"/>
-	<meta itemprop="thumbnailUrl" content="http://isardmiralles.com/{{ page.img }}"/>
-	<link rel="image_src" href="http://isardmiralles.com/{{ page.img }}" />
-	<meta itemprop="image" content="http://isardmiralles.com/{{ page.img }}"/>
-	{% endif %}
-	{% if page.galleria %}
-	<meta itemprop="name" content="Secció Portfoli"/>
-	<meta itemprop="url" content="http://isardmiralles.com/portfoli"/>
-	<meta itemprop="thumbnailUrl" content="http://isardmiralles.com/hipertextos/brand/cover.png"/>
-	<link rel="image_src" href="http://isardmiralles.com/hipertextos/brand/cover.png" />
-	<meta itemprop="image" content="http://isardmiralles.com/hipertextos/brand/cover.png"/>
-	{% endif %}
-	{% if page.about %}
-	<meta itemprop="name" content="Secció contacte"/>
-	<meta itemprop="url" content="http://isardmiralles.com/contacte"/>
-	<meta itemprop="thumbnailUrl" content="http://isardmiralles.com/hipertextos/brand/cover.png"/>
-	<link rel="image_src" href="http://isardmiralles.com/hipertextos/brand/cover.png" />
-	<meta itemprop="image" content="http://isardmiralles.com/hipertextos/brand/cover.png"/>
-	{% endif %}	
+
 	<!-- Metadata: GeoTags -->
 	<meta name="geo.region" content="Catalunya" />
 	<meta name="geo.placename" content="Barcelona" />
@@ -52,33 +20,7 @@
 	<meta property="og:type" content="website"/>	
 	{% if page.img %}<meta name="twitter:image:src" content="http://isardmiralles.com/{{ post.img }}">{% endif %}
 	{% if page.img %}<meta property="og:image" content="http://isardmiralles.com/{{ post.img }}" />{% endif %}		
-    {% if page.posting %}
-    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% endif %}">
-    <meta name="description" content="{{ page.excerpt| normalize_whitespace | strip_html }}" />
-    <meta itemprop="description" content="{{ page.excerpt| normalize_whitespace | strip_html }}">
-    <meta property="og:description" content="{{ page.excerpt| normalize_whitespace | strip_html }}" />
-    <meta itemprop="image" content="http://isardmiralles.com/{{ post.img }}">
-	<!-- Twitter Card data -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@{{ site.footer-links.twitter }}">
-	<meta name="twitter:title" content="{{ page.title }}">
-	<meta name="twitter:description" content="{{ page.excerpt|  normalize_whitespace | strip_html }}">
-	<meta name="twitter:url" content="http://isardmiralles.com/{{ page.url }}">
-	<meta name="twitter:creator" content="@{{ site.footer-links.twitter }}">
-	<!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
-	<!-- Open Graph data -->
-	<meta property="og:title" content="{{ page.title }}" />
-	<meta property="og:type" content="article" />
-	<meta property="og:url" content=" {{ site.baseurl }}" />
-	<meta property="og:description" content="{{ page.excerpt|  normalize_whitespace | strip_html }}" />
-	<meta property="og:site_name" content="{{ site.baseurl }}" />
-	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-	<meta property="article:published_time" content="{{ page.date }}" />
-	<meta property="article:modified_time" content="{{ page.date }}" />
-	<meta property="article:section" content="Post" />
-	<meta property="article:tag" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} " />
-	<meta property="fb:admins" content="Isard-Miralles-261219727225263" />
-    {% else %}
+
     <meta itemprop="name" content="{{ page.title }} {{ site.name }}">
     <meta name="description" content="{{ site.description }}" />
     <meta itemprop="description" content="{{ site.description }}">
@@ -104,4 +46,3 @@
 	<meta property="article:modified_time" content="{{ page.date }}" />
 	<meta property="article:tag" content="Isard Miralles,{% for tag in page.tags %} {{ tag }}, {% endfor %} Isard Miralles, Badalona, Barcelona, disseny, diseny gràfic, diseny web, matte painting, Barcelona, photoshop, contractar freelance, artista web, web responsive, html5, css3, mandalas, geometria sagrada, numero aureo, proporciones aureas, logos" />
 	<meta property="fb:admins" content="Isard-Miralles-261219727225263" />
-    {% endif %}
