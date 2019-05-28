@@ -209,7 +209,7 @@ To understand how to process objects in parallel using Python, it is useful to t
 
 Imagine that we have to perform the same task of toasting bread slices through a single-slice toaster and our job is to toast 100 slices of bread. If we say that each slice of bread takes 30 seconds to toast, then it takes 3000 seconds (= 50 minutes) for a single toaster to finish toasting all the bread slices. However, if we have 4 toasters, we would divide the pile of bread slices into 4 equal stacks and each toaster will be in charge of toasting one stack of bread slices. With this approach, it will take just 750 seconds (= 12.5 minutes) to finish the same job!
 
-![alt text](https://github.com/hweecat/hweecat.github.io/blob/master/images/seq_vs_parallel_process.jpg?raw "Sequential vs Parallel Toasts")
+![alt text](https://cdn-images-1.medium.com/max/1200/1*xdfCfJgR8ttCyXMnnFXhjQ.png "Sequential vs Parallel Toasts")
 Sequential vs Parallel Processing - illustrated using toasts
 
 The above logic of parallel processing can also be executed in Python for processing the ~300,000 images in each image dataset:
