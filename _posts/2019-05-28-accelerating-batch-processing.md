@@ -10,7 +10,7 @@ In a data science project, one of the biggest bottlenecks (in terms of time) is 
 In fact, time bottlenecks resulting from long execution times are even more accentuated for batch processing of image data, which are often read as numpy arrays of large dimensions.
 
 ## Problem Description
-About 2 months ago, my colleagues and I took part in the Advanced Category for the Shopee National Data Science Challenge 2019. The competition involves extracting product attributes from product title, and we were given three main categories of items: mobile, fashion and beauty products. In addition, we were also given the image path of each item and the associated image file - all 77.6 GB of it!
+About 2 months ago, my colleagues and I took part in the Advanced Category for the [Shopee National Data Science Challenge 2019](https://medium.com/r/?url=https%3A%2F%2Fcareers.shopee.sg%2Fndsc%2F). The competition involves extracting product attributes from product title, and we were given three main categories of items: mobile, fashion and beauty products. In addition, we were also given the image path of each item and the associated image file - all 77.6 GB of it!
 
 It was our first ever competition on Kaggle, and we started out feeling confident with the hybrid text-and-image model we had in mind - only to face bottlenecks in downloading and processing the large image datasets into Numpy arrays in order to feed them as inputs for our model. Here are some of my notes on the approach I attempted to resolve these issues, with particular focus on how I used numba and concurrent.futures to accelerate batch processing of almost a million images from several months to just around a few days.
 
