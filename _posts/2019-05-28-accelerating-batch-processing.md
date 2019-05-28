@@ -51,23 +51,27 @@ In short, we needed a solution whereby we could store and access our files whene
 In the end, we decided on using Google Cloud Storage (GCS) to store and access our image files. GCS is a RESTful online file storage web service on the Google Cloud Platform (GCP) which allows worldwide storage and retrieval of any amount of data at any time. Google provides 12 months and US$300 of GCP credits as a free tier user, which is perfect for our case since the credits would last for at least a month if we use them wisely.
 
 First, I created a GCS bucket by using gsutil mb on Cloud SDK (the instructions on installing and setting up Cloud SDK can be found here and here respectively - I used apt-get to install Cloud SDK on my Ubuntu image, while Cloud SDK is available in Colab).
+
 ```
 # Replace 'my-bucket' with your own unique bucket name
 ! gsutil mb gs://my-bucket
 ```
 
 Let's say I decide to call my storage bucket 'shopee-cindyandfriends':
+
 ```
 ! gsutil mb gs://shopee-cindyandfriends
 ```
 
 Next, I proceeded to upload all my image files from each folder directory to my storage bucket using gsutil cp. Since I have a large amount of files to transfer, I performed a parallel copy using the gsutil -m option. The syntax is as follows:
+
 ```
 # Replace 'dir' with directory to copy from
 ! gsutil -m cp -r dir gs://my-bucket
 ```
 
 Let's say I'm uploading all the image files from the fashion_image directory to my storage bucket:
+
 ```
 ! gsutil -m cp -r fashion_image gs://shopee-cindyandfriends
 ```
@@ -77,17 +81,20 @@ Now, wait patiently and go about your usual day (maybe take a nap or grab some c
 2. If your upload is interrupted or if any failures were not successfully retried at the end of the gsutil cp run, you can restart the upload by running the same gsutil cp command that you ran to start the upload.
 
 Uploading the image files to the GCS bucket using gsutil cp command took around 12–15 hours in total, surviving poor connection and network disruptions. Do not try uploading large amounts of files using the GCP web console - your browser will crash!
+
 ![alt text](https://cdn-images-1.medium.com/max/1200/1*2vmUe8ClFeJL7dbt6XUU6Q.jpeg "upload files")
 All 4 folders in our storage bucket - success!
 
 ## Step 3: Import each image file from Cloud Storage to Colab
 Now that we have our complete set of image files uploaded on Cloud Storage, we need to be able to access these files on Colab via the image path of each item in the dataset. The image path of each item is extracted from the dataframe which in turn was extracted from the CSV file of the corresponding dataset.
+
 ```python
 def define_imagepath(index):
     '''Function to define image paths for each index'''
     imagepath = fashion_train.at[index, 'image_path']
     return imagepath
 ``` 
+
 Remember the problem of poor connection? To ensure that retry handling is also performed during import operations from GCP, I used the retrying package as a simplified way to add retry behavior to the Google API Client function. Here's the Python code I used:
 
 ```python
