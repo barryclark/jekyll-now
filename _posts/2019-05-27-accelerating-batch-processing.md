@@ -281,7 +281,7 @@ In conclusion, here are my takeaways:
 2. Facing poor connection issues? Retry handling can help save you the heartache from having to re-upload or re-download your files.
 3. Numba and concurrent.futures are useful when you are looking for a hassle-free way to speed up pre-processing of large datasets without manually adding type definitions or delving into the details of parallel processing.
 
-For reference, the codes accompanying this write-up can be found here.
+For reference, the codes accompanying this write-up can be found [here](https://github.com/hweecat/numba-image-processing/).
 
 ## References:
 1. [Official Google Cloud Storage documentation on gsutil](https://medium.com/r/?url=https%3A%2F%2Fcloud.google.com%2Fstorage%2Fdocs%2Fgsutil)
