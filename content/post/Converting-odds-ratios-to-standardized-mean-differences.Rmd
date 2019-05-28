@@ -1,5 +1,5 @@
 ---
-title: Converting from odds ratios to standardized mean differences: Logistic regression coefficients inflate effects
+title: Converting from odds ratios to standardized mean differences: What to do with logistic regression coefficients?
 author: James
 date: '2019-05-26'
 slug: Converting-odds-ratios-to-standardized-mean-differences
@@ -20,20 +20,50 @@ One of the central problems in research synthesis is that studies use a variety 
 ```{r}
 logit <- function(x) log(x) - log(1 - x)
 
-n0 <- 10000
-n1 <- 10000
-r <- 0.7
-p0 <- 0.4
-SMD <- 0.4
-trt <- c(rep(0, n0), rep(1, n1))
-Y <- rlogis(n0 + n1, location = logit(p0) + trt * SMD * pi / sqrt(3))
-X <- r * (Y - trt * SMD) * sqrt(3) / pi + rnorm(n0 + n1, sd = sqrt(1 - r^2))
-B <- Y > 0
+simulate_OR_to_SMD <- function(p0, SMD, r, n0, n1) {
+  
+  # simulate data
+  trt <- c(rep(0, n0), rep(1, n1))
+  Y <- rlogis(n0 + n1, location = logit(p0) + trt * SMD * pi / sqrt(3))
+  X <- r * (Y - trt * SMD) * sqrt(3) / pi + rnorm(n0 + n1, sd = sqrt(1 - r^2))
+  B <- Y > 0
 
-LOR_basic <- diff(logit(tapply(B, trt, mean)))
-logit_fit <- glm(B ~ trt + X, family = "binomial")
-LOR_logit <- coef(logit_fit)["trt"]
-probs_margin <- tapply(predict(logit_fit, ,type = "response"), trt, mean)
-LOR_margin <- diff(logit(probs_margin))
+  # calculate LORs
+  logit_fit <- glm(B ~ trt + X, family = "binomial")
+  LOR_marginal <- as.numeric(diff(logit(tapply(B, trt, mean))))
+  LOR_logit <- coef(logit_fit)[["trt"]]
+  LORs <- c(LOR_marginal, LOR_logit)
+  
+  # convert to SMDs
+  SMDs <- LORs * sqrt(3) / pi
+  
+  data.frame(type = c("marginal","conditional"), LOR_est = LORs, SMD_est = SMDs)
+} 
+
+simulate_OR_to_SMD(p0 = 0.6, SMD = 0.4, r = 0.7, n0 = 10000, n1 = 10000)
+
+```
+
+```{r}
+library(tidyverse)
+
+params <- 
+  list(
+    p0 = seq(0.2, 0.8, 0.2),
+    SMD = seq(0.2, 0.8, 0.2),
+    r = seq(0, 0.9, 0.1)
+  ) %>%
+  cross_df()
+
+SMDs <- 
+  params %>%
+  mutate(res = pmap(., simulate_OR_to_SMD, n0 = 50000, n1 = 50000)) %>%
+  unnest() %>%
+  mutate(RB = SMD_est / SMD)
+
+ggplot(SMDs, aes(r, RB, color = type)) + 
+  geom_point() + geom_line() + 
+  facet_grid(SMD ~ p0, labeller = "label_both") + 
+  theme_light()
 ```
 
