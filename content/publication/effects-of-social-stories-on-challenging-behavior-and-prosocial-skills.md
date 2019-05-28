@@ -3,7 +3,7 @@ title = "Examining the effects of social stories on challenging behavior and pro
 date = 2019-05-15T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Charis L. Price", "James E. Pustejovsky", "Michaelene M. Ostrosky", "Rosa Milagros Santos"]
+authors = ["Charis L. Wahman", "James E. Pustejovsky", "Michaelene M. Ostrosky", "Rosa Milagros Santos"]
 
 # Publication type.
 # Legend:
