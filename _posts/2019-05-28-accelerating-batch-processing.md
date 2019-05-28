@@ -82,7 +82,7 @@ All 4 folders in our storage bucket - success!
 
 ## Step 3: Import each image file from Cloud Storage to Colab
 Now that we have our complete set of image files uploaded on Cloud Storage, we need to be able to access these files on Colab via the image path of each item in the dataset. The image path of each item is extracted from the dataframe which in turn was extracted from the CSV file of the corresponding dataset.
-```
+```python
 def define_imagepath(index):
     '''Function to define image paths for each index'''
     imagepath = fashion_train.at[index, 'image_path']
@@ -90,7 +90,7 @@ def define_imagepath(index):
 ``` 
 Remember the problem of poor connection? To ensure that retry handling is also performed during import operations from GCP, I used the retrying package as a simplified way to add retry behavior to the Google API Client function. Here's the Python code I used:
 
-```
+```python
 from retrying import retry
 from google.colab import auth
 @retry(wait_exponential_multiplier=1000, wait_exponential_max=10000)
@@ -114,7 +114,7 @@ Okay, let's proceed to define our functions for pre-processing the image into nu
 ## Step 4: Convert each image to standardized numpy array
 It is observed that the images in the dataset are of different formats (some are RGB while others are RGBA with an additional alpha channel) and different dimensions. As machine learning models usually require inputs of equal dimensions, pre-processing is required to convert each image in the dataset to a standardized format and resize the images into equal dimensions. Here's the Python function for RGB conversion, resizing and numpy array conversion:
 
-```
+```python
 from PIL import Image
 def image_resize(index):
       '''Convert + resize image'''
@@ -126,7 +126,7 @@ def image_resize(index):
 
 Seems easy to follow so far? Okay, let's put all the above steps together and attempt to write the processing code for the entire image dataset:
 
-```
+```python
 def image_proc(image, start, end):    
   
      gcp_imageimport(image)
@@ -182,7 +182,7 @@ Numba provides the ability to speed up computationally heavy codes (such as for 
 
 Here's the Python function for image conversion and resizing, wrapped with jit to create an efficient, compiled version of the function:
 
-```
+```python
 from numba import jit   # JIT processing of numpy arrays
 from PIL import Image
 
@@ -217,7 +217,7 @@ The above logic of parallel processing can also be executed in Python for proces
 
 What is great about executing parallel processing tasks in Python is that there is a high-level API available as part of the standard Python library for launching asynchronous parallel tasks - the concurrent.futures module. All I needed to do is to change the code slightly such that the function that I would like to apply (i.e. the task to be implemented on each image) is mapped to every image in the dataset.
 
-```
+```python
 #N = len(beauty_train['image_path'])     # for final partition
 N = 35000
 start = 0
@@ -241,7 +241,7 @@ with ProcessPoolExecutor() as executor:
 
 From the above code, this line:
 
-```
+```python
 with ProcessPoolExecutor() as executor:
 ```
 boots up as many processes as the number of cores available on the connected instance (in my case, the number of GPU cores in Colab that are made available during the session).
@@ -256,7 +256,7 @@ Since Python 3.5, executor.map() also allows us to chop lists into chunks by spe
 
 To store the pre-processed data into a numpy array for easy "pickling" in Python, I used the following line of code:
 
-```
+```python
 imgarray_np = np.array([x for x in future])
 ```
 
