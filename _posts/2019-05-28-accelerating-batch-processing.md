@@ -280,7 +280,7 @@ In conclusion, here are my takeaways:
 For reference, the codes accompanying this write-up can be found here.
 
 ## References:
-1. Official Google Cloud Storage documentation on gsutil
-2. Colab Notebook with recipes for external data handling
-3. A ~5 minute guide to Numba by Anaconda Inc.
-4. Official Python documentation on concurrent.futures
+1. [Official Google Cloud Storage documentation on gsutil](https://medium.com/r/?url=https%3A%2F%2Fcloud.google.com%2Fstorage%2Fdocs%2Fgsutil)
+2. [Colab Notebook with recipes for external data handling](https://medium.com/r/?url=https%3A%2F%2Fcolab.research.google.com%2Fnotebooks%2Fio.ipynb)
+3. [A ~5 minute guide to Numba by Anaconda Inc.](https://medium.com/r/?url=https%3A%2F%2Fnumba.pydata.org%2Fnumba-doc%2Fdev%2Fuser%2F5minguide.html)
+4. [Official Python documentation on concurrent.futures](https://medium.com/r/?url=https%3A%2F%2Fdocs.python.org%2F3%2Flibrary%2Fconcurrent.futures.html)
