@@ -29,10 +29,6 @@ The first bottleneck we faced was downloading the image files from the Dropbox l
 
 This bottleneck was resolved using the wget command on Ubuntu in Windows 10 WSL (Windows Subsystem for Linux). The best part about using the wget command for downloading large files is that it works exceedingly well for poor or unstable connections, as wget will keep retrying until the whole file has been retrieved and is also smart enough to continue the download from where it left off.
 
-![alt text][logo]
-[logo]: https://media.giphy.com/media/5YiJNZFizBtoZkXvAm/giphy.gif "wget command"
-wget - a lifesaver for downloading large files when Google Chrome fails due to "Network error"
-
 I opened 2 instances of Ubuntu for WSL and ran wget commands on each instance to download the .tar.gz archive files containing the images for the three categories. All four archive files were downloaded successfully after 16 hours, surviving poor connection and network errors. Extracting the image files from the archive files using the tar -xvzf command took another 12 hours in total.
 
 Tip: Working on command line is usually faster than working on GUI - so it pays to know a bit of command line as a speed hack.
