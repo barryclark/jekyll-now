@@ -19,6 +19,11 @@ code span::-moz-selection, code::-moz-selection {
   background: black;
 }
 
+code span::selection, code::selection {
+  color: white;
+  background: black;
+}
+
 .highlight .c { color: #586E75 } /* Comment */
 .highlight .err { color: #000000 } /* Error */
 .highlight .g { color: #000000 } /* Generic */
