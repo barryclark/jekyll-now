@@ -24,4 +24,6 @@ That was the final command and all that was needed to trigger the automatic play
 
 What struck me with this part of the program is how simple problem solving can be some times. With one line of code everything is taken care of. I know this would not be scaleable for Windows systems etc however for the basic job this program needs to do. This basic fix is perfect and (I think) quite elegant.
 
+![VLC](https://raw.githubusercontent.com/RemakingEden/mysite/master/images/posts/vlc.png)
+
 On the next post I will talk about the final step of the program. Scheduling so that the application would automatically switch to snow films at a specific time and automatically running when the Pi is turned on.
