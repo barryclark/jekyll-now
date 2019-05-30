@@ -30,7 +30,6 @@ Step three was to collect the objects needed:
 
 I used a Raspberry Pi which is a tiny credit card sized computer that is incredibly cheap to buy. They are low powered but are perfect for this kind of job. Find more info about them here. 
 
-
-Raspberry Pi
+![Raspberry Pi](https://raw.githubusercontent.com/RemakingEden/mysite/images/posts/pi.jpeg)
 
 On the next post I will talk about how I used Python to manipulate a browser to cycle through different URL's, refresh them, focus certain objects and more automatically.
