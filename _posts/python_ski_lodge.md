@@ -34,5 +34,3 @@ I used a Raspberry Pi which is a tiny credit card sized computer that is incredi
 Raspberry Pi
 
 On the next post I will talk about how I used Python to manipulate a browser to cycle through different URL's, refresh them, focus certain objects and more automatically.
-
-#python #niseko #ski #snowboard #lodge #raspberrypi #raspberry #pi 
