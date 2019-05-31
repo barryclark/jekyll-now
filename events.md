@@ -22,6 +22,7 @@ October 2 - 3:  OpenInfraDays Nordics, Stockholm
 October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 
 November 7: Bristech Conference, Bristol
+* **Keynote**
 
 November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
 
