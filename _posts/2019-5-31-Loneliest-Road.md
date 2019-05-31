@@ -2,10 +2,11 @@
 layout: post
 title: A Trip Down the Loneliest Road in America
 ---
+Where should we implement changes to reduce dockless vehicle parking problems?
+
+[A few weeks ago the City of Austin published the live-updating dockless mobility trip dataset.](https://data.austintexas.gov/Transportation-and-Mobility/Dockless-Vehicle-Trips/7d8e-dm7r) The data goes back to April 2018. 
+
 A month ago, CGP Grey started a youtube livestream with no context. Everyone in the chat and in the subreddit were perplexed. Where was he going? Why isn't he talking or listening to music? It turned out to be a stream of his roadtrip that he took back in 2017, he later uploaded a vlog explaining the trip. One of the goals of the roadtrip was to drive a Tesla through one of the most empty places in the contiguous United States. 
-
-
-
 
 <iframe width="100%" height="520" frameborder="0" src="https://thomashenry.carto.com/builder/e6b1838f-b35f-49ad-9136-18f3125c21b2/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
