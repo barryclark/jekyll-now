@@ -3,7 +3,7 @@
 # only main files contain this front matter, not partials.
 ---
 
-$darkest-content-color: #172431;
+$darkest-content-color: rgba(45,45,45,0.98);
 $darker-content-color: #203344 !default;
 $light-content-color: #456d93 !default;
 $lighter-content-color: #9bb6d0 !default;
@@ -11,7 +11,10 @@ $lightest-content-color: #f0f4f8 !default;
 /* $background-color: #f2f2f2;*/
 $background-color: white;
 $content-width: 65% !default;
-$masthead-subtitle: $darkest-content-color;
+$masthead-title-color: $lightest-content-color !default;
+$masthead-subtitle-color: $masthead-title-color !default;
+$link-hover-color: $light-content-color !default;
+
 
 .w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
@@ -28,15 +31,29 @@ $masthead-subtitle: $darkest-content-color;
     padding: 20px;
 }
 
+.masthead {
+    background: $darkest-content-color;
+}
+
 .masthead-title {
-    background: white;
     margin: auto;
     width: 65%;
+    padding: 20px;
 }
 
 .menu {
-    background: white;
-    padding-bottom: 20px;
+    background: $darkest-content-color;
+    float: right;
+}
+
+nav.menu-content a {
+    color: $lightest-content-color;
+    padding-left: 3rem;
+}
+
+img.hero-image {
+  float: left;
+  margin-right: 20px;
 }
 
 article.post-container {
@@ -75,8 +92,6 @@ a.divLink {
 @import "lagrange";
 
 .masthead {
-  padding-top: 2.2rem;
-  padding-bottom: 0rem;
-  margin-bottom: 2rem;
-
+  padding-top: 0.75rem;
+  padding-bottom: 1.9rem;
 }
