@@ -51,9 +51,31 @@ nav.menu-content a {
     padding-left: 3rem;
 }
 
+.hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1.5rem;
+}
+
 img.hero-image {
-  float: left;
-  margin-right: 20px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div.hero-text {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.tags-list {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2 ;
+}
+
+.posts-by-tag {
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
 }
 
 article.post-container {
