@@ -72,7 +72,7 @@ Todas as características contribuíram para a utilização da linguagem, mas se
 
 Imagine um desenvolvedor que precisa criar um player de música com duas funções básicas: ler um arquivo de áudio e executar o som nas caixas multimídias (bem anos 90). Para controlar o som da placa de áudio, existe um *driver* que conversa com o Sistema Operacional e esse sistema operacional possui uma API específica para chamar funções de som. 
 
-Pense que agora que esse desenvolvedor precisa criar um player para cada *SO* do mercado (Windows, Mac e Linux), ele vai precisar traduzir o código para cada um com um compilador, mas cada sistema pode ter sua particularidade e API diferente para interagir. Lembrando que em 1995, o hardware e software ainda estavam mais para *plug and prey* (instale e reze).
+Pense que agora que esse desenvolvedor precisa criar um player para cada *SO* do mercado (Windows, Mac e Linux), ele vai precisar traduzir o código para cada um com um compilador, mas cada sistema pode ter sua particularidade e API diferente para interagir. Lembrando que em 1995, o hardware e software ainda estavam mais para *plug and pray* (instale e reze).
 
 O Java apresentou uma solução que se tornou o principal pilar da tecnologia: a *Java Virtual Machine* ou para bom português Máquina Virtual Java. Como o próprio nome diz trata-se de um software que simula uma máquina física e consegue executar vários programas, gerenciando os processos, memória e arquivos, mas com uma diferença fundamental: por ser virtual não dependia de hardwares. Na época a maioria dos ambientes de desenvolvimento dominantes eram baseados em linguagens compiladas, precisavam transpor o código para o ambiente específico o qual se desejava rodar aquele programa, algo assim: 
 
@@ -102,7 +102,7 @@ Esse processo permitiu que muitas soluções ótimas do mercado se tornassem esp
 
 #### Resgate do JavaEE
 
-Recentemente a Oracle [liberou o JavaEE para o open source](https://opensource.com/article/18/5/jakarta-ee), isso permitiu que o futuro da plataforma voltada para sistemas corporativos possa ser agora cuidado pela própria comunidade sob o nome de JakartaEE. Pra mim foi uma excelente notícia, pois o JavaEE estava sendo muito criticado por não apresentar
+Recentemente a Oracle [liberou o JavaEE para o open source](https://opensource.com/article/18/5/jakarta-ee), isso permitiu que o futuro da plataforma voltada para sistemas corporativos possa ser agora cuidado pela própria comunidade sob o nome de JakartaEE. Pra mim foi uma excelente notícia, pois o JavaEE estava sendo muito criticado por não apresentar evoluções frente as novas tendências de mercado.
 
 {% include image.html url="/images/2019/05/jakarta-ee.jpeg" description="JakartaEE" %}
 
