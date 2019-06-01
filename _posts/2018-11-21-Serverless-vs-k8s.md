@@ -6,9 +6,9 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/_eSh4ZIVAQ0" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 Thanks to Contino for inviting me to host this debate on Serverless vs Kubernetes!
 

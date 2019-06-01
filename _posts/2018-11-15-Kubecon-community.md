@@ -6,8 +6,8 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/L8SA77k1mBQ" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 I enjoyed recording this interview with Swapnil Bhartiya of TFiR at the first KubeCon + CloudNativeCon China, in Shanghai. We discuss Kubernetes, community and my secret side line as a movie extra!

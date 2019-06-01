@@ -6,8 +6,8 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/RWwvZvnRV8s" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 A short interview I did for the CNCF, as an Ambassador in London. Read the full transcript here: [Meet the Ambassador: Cheryl Hung](https://www.cncf.io/blog/2018/07/26/meet-the-ambassador-cheryl-hung).

@@ -8,9 +8,9 @@ tags:
   - Photos
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://player.vimeo.com/video/241538232" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 I spoke at the Microservices Conference in London on 6 November, 2017 on "What's the future of cloud and container native storage?" and here are the slides to follow along with the video:
 

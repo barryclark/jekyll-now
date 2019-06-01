@@ -8,9 +8,9 @@ tags:
   - "2019"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/6HVxJ_65L2c" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 This was my talk on "Navigating the Cloud Native Community for End Users" at KubeCon CloudNative Con Barcelona in May 2019.
 

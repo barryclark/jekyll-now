@@ -7,9 +7,9 @@ tags:
   - "2017"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://player.vimeo.com/video/228229016" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 I gave a talk at the London μServices (Microservices) User Group meetup on "Persistent storage for Docker - which solution and why?" on 2 August, 2017 in London. My slides are also available here:
 

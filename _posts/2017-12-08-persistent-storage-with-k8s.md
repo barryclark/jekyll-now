@@ -8,9 +8,9 @@ tags:
   - Featured
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/hqE5c5pyfrk" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 My talk at Kubecon + Cloud Native Con North America 2017 is titled "Persistent Storage with Kubernetes in Production - which solution and why?" and the slides are available here:
 

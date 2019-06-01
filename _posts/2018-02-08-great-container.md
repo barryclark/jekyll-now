@@ -7,9 +7,9 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/MkHZgJseOkU" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 This was a fun event held in London on Feb 8, 2018, with myself moderating an evening debate between four teams. Each team consisted of one advocate and one customer.
 

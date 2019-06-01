@@ -6,8 +6,8 @@ tags:
   - "2019"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/YSuZS5wusqU" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 Back on theCube once again! This interview covers KubeCon CloudNativeCon and diversity in open source.

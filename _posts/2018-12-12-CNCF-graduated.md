@@ -6,9 +6,9 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/uK6Fobid0pI?start=20" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 I recorded this podcast with Matt Klein, Senior Software Engineer at Lyft and founder of the Envoy project, at KubeCon CloudNativeCon NA 2018 in Seattle.
 

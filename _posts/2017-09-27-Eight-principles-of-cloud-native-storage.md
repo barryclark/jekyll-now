@@ -7,9 +7,9 @@ tags:
   - "2017"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://player.vimeo.com/video/235727293" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 I gave a talk at the CloudNative conference in London on "Eight principles for Cloud Native Storage" on 27 September, 2017. My slides are available here:
 

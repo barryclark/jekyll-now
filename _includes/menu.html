@@ -1,0 +1,7 @@
+<div class="menu">
+  <nav class="menu-content">
+    {% for item in site.data.settings.menu %}
+      <a href="/{{ item.path }}/{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+</div>

@@ -8,9 +8,9 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/_adkJbf1bRU" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 The room was packed out for Cloud Native London's December meetup, ably hosted by Dominique Top and featuring three brilliant, fascinating talks.
 

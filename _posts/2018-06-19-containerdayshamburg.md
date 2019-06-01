@@ -7,9 +7,9 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/8i4fSvdp4tk" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 <object data="https://www.oicheryl.com/resources/2018-6-19-containerdayshamburg.pdf" type="application/pdf" width="100%" height="700px">
     <a href="https://www.oicheryl.com/resources/2018-6-19-containerdayshamburg.pdf">Download PDF</a>

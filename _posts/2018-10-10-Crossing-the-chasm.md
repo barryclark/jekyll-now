@@ -6,9 +6,9 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/IvoCWfBbeqo" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 These are my slides from my keynote on "Crossing the chasm with cloud native", which I delivered at Open FinTech Forum in New York on Wednesday October 10, 2018.
 

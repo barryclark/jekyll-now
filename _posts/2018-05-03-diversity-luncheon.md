@@ -6,9 +6,9 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/WFlFmhKSnv0" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 At KubeCon & CloudNativeCon EU 2018 in Copenhagen, I sat on a diversity panel discussing how to get more underrepresented groups into community and public speaking.
 

@@ -6,9 +6,9 @@ tags:
   - "2018"
 ---
 
-<p class="video-wrapper">
+<div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/ASIv6wi3YeE" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
 I moderated this panel on cloud native storage as part of KubeCon + CloudNativeCon in Seattle in December 2018. The speakers featured are:
 
