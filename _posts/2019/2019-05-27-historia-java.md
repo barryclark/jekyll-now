@@ -122,6 +122,8 @@ Essa lista que vou colocar é uma opnião pessoal, das principais mudanças e ev
 
 * J2SE 5.0 (30/09/2004) - essa versão foi a primeira grande evolução da **linguagem** Java, trouxe a API de genéricos, conversão automáticam de primitivos para objetos, enum e outros. Para mim o principal foi a [api de concorrência](https://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/package-summary.html) que trouxe muitas utilidades para lidar com Threads.
 
+* Java SE 6 (11/12/2006) - nova versão do JDBC (4) e o _Scripting Language Support_ que posso destacar;
+
 * Java SE 7 (07/07/2011) - após um hiato de 5 anos, trouxe poucas mas significativas mudanças como a nova API de I/O que trouxe um salto de desempenho e o gerenciamento automático de recursos no try-catch.
 
 * Java SE 8 (18/03/2014) - a segunda grande evolução da **linguagem** com a inclusão de paradigma funcional (com lambdas e *default methods*) e a inclusão de *streams*;
