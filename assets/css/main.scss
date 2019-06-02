@@ -62,20 +62,30 @@ nav.menu-content a {
     padding-left: 2rem;
 }
 
-.hero {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 1.5rem;
+* {
+  box-sizing: border-box;
 }
 
-img.hero-image {
-    grid-column: 1;
-    grid-row: 1;
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
 
-div.hero-text {
-    grid-column: 2;
-    grid-row: 1;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1068px) {
+  .column {
+    width: 100%;
+  }
 }
 
 .social {
