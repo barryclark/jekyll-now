@@ -2,6 +2,7 @@
 layout: post
 title: "Cloud Native London December 2018 Roundup"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Paybase, DNEG and ControlPlane at Cloud Native London."
+image: https://pbs.twimg.com/media/DuPOblYXgAIDUDp.jpg
 tags:
   - Photos
   - Video
@@ -9,15 +10,13 @@ tags:
   - "2018"
 ---
 
-<div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/_adkJbf1bRU" frameborder="0" allowfullscreen></iframe>
-</div>
-
 The room was packed out for Cloud Native London's December meetup, ably hosted by Dominique Top and featuring three brilliant, fascinating talks.
 
 As always, thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/) and [Pusher](https://pusher.com/)
 
-![Cloud Native London December](https://pbs.twimg.com/media/DuPOblYXgAIDUDp.jpg)
+<div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/_adkJbf1bRU" frameborder="0" allowfullscreen></iframe>
+</div>
 
 First up was using Spinnaker and Kubernetes for continuous delivery in the cloud with Spinnaker and Kubernetes, followed by a modern approach to writing microservices called gRPC, and wrapping up with implementing secure GitOps in production.
 

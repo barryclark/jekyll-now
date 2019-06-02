@@ -2,14 +2,12 @@
 layout: post
 title: "Cloud Native London January 2019 Roundup"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts HashiCorp and Elastic at Cloud Native London."
+image: https://pbs.twimg.com/media/DwafGRPX0AARdNg.jpg
 tags:
   - Video
   - Meetup
   - "2019"
 ---
-
-
-![Cloud Native London January](https://pbs.twimg.com/media/DwafGRPX0AARdNg.jpg)
 
 The room was raring to go for the first Cloud Native London meetup of 2019, featuring three enthralling talks, and I was back hosting!
 

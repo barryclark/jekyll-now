@@ -2,15 +2,14 @@
 layout: post
 title: "A Guided Journey of Cloud Native, featuring Monzo - QCon, London"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, co-hosts a talk with Monzo at QCon London."
+image: https://pbs.twimg.com/media/D0-UPDIWoAE9C5q.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/9tMJqznIWJh1cj
 tags:
   - Photos
   - Slides
   - "2019"
 ---
 
-<object data="https://www.oicheryl.com/resources/2019-03-06-guided-journey.pdf" type="application/pdf" width="100%" height="700px">
-  <a href="https://www.oicheryl.com/resources/2019-03-06-guided-journey.pdf">Download PDF</a>
-</object>
 
 These are my slides from ["A Guided Journey of Cloud Native, featuring Monzo"](https://qconlondon.com/london2019/speakers/cheryl-hung), a session I co-hosted with Matt Heath from Monzo at QCon, London in March 2019..
 
