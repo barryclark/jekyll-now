@@ -32,6 +32,12 @@ layout: default
 
 {{ content }}
 
+{% if page.slides %}
+  <div class="slides-wrapper">
+    <iframe src="{{ page.slides }}" frameborder="0" allowfullscreen></iframe>
+  </div>
+{% endif %}
+
 {% if page.hacker_news %}
   <p><a href="{{ page.hacker_news }}" class="fa-hackernews">{{ site.data.settings.hacker_news_prompt }}</a></p>
 {% endif %}
