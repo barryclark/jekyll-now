@@ -3,15 +3,12 @@ layout: post
 title: "Introduction to the CNCF - Cloud Native Manchester"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, describes the mission and structure of the Cloud Native Computing Foundation and how to get involved at Cloud Native Manchester."
 image: /images/2019-05-08-introduction-to-cncf.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/3L20UXN0a4KZwQ
 tags:
   - Photos
   - Slides
   - "2019"
 ---
-
-<object data="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf" type="application/pdf" width="100%" height="700px">
-  <a href="https://www.oicheryl.com/resources/2019-05-08-introduction-to-cncf.pdf">Download PDF</a>
-</object>
 
 I was honoured to be the inaugural speaker at Cloud Native Manchester on May 8, 2019, to introduce the CNCF and talk about the different ways to get involved with open source.
 

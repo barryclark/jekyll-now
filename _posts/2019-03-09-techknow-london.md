@@ -3,14 +3,11 @@ layout: post
 title: "Open Source for First Timers - TECH(K)NOW Day, London"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source at TECH(K)NOW Day London."
 image: /images/2019-03-09-open-source.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/eRghzkguUfRVnc
 tags:
   - Slides
   - "2019"
 ---
-
-<object data="https://www.oicheryl.com/resources/2019-03-09-open-source.pdf" type="application/pdf" width="100%" height="700px">
-  <a href="https://www.oicheryl.com/resources/2019-03-09-open-source.pdf">Download PDF</a>
-</object>
 
 These are my slides from a talk I gave at TECH(K)NOW Day London 2019.
 

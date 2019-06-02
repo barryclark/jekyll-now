@@ -3,17 +3,14 @@ layout: post
 title: "Navigating the cloud native ecosystem - GDG Cloud London"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source at GDG Cloud London."
 image: /images/2019-04-28-navigating-cloud-native.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/45sQaQfnE22CIQ
 tags:
   - Photos
   - Slides
   - "2019"
 ---
 
-<object data="https://www.oicheryl.com/resources/2019-04-28-navigating-cloud-native.pdf" type="application/pdf" width="100%" height="700px">
-    <a href="https://www.oicheryl.com/resources/2019-04-28-navigating-cloud-native.pdf">Download PDF</a>
-</object>
-
-Here are my slides from a talk I gave on "Navigating the cloud native ecosystem" at Google Developer Groups Cloud London.
+I spoke at Google Developer Groups Cloud London on "Navigating the cloud native ecosystem".
 
 Summary:
 

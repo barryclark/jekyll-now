@@ -3,15 +3,12 @@ layout: post
 title: "Navigating Open Source - TECH(K)NOW Day, Taipei"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source at TECH(K)NOW Day Taipei."
 image: /images/2019-04-20-navigating-open-source.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/EKRiWl0Z9Ekfuk
 tags:
   - Photos
   - Slides
   - "2019"
 ---
-
-<object data="https://www.oicheryl.com/resources/2019-04-20-navigating-open-source.pdf" type="application/pdf" width="100%" height="700px">
-    <a href="https://www.oicheryl.com/resources/2019-04-20-navigating-open-source.pdf">Download PDF</a>
-</object>
 
 Here are my slides from a talk I gave on "Navigating Open Source" at TECH(K)NOW Day in Taipei, Taiwan.
 

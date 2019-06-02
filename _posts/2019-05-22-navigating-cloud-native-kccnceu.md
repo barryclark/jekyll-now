@@ -11,10 +11,10 @@ tags:
   - "2019"
 ---
 
+I spoke at KubeCon CloudNativeCon Barcelona on "Navigating the Cloud Native Community for End Users".
+
 <div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/6HVxJ_65L2c" frameborder="0" allowfullscreen></iframe>
 </div>
-
-This was my talk on "Navigating the Cloud Native Community for End Users" at KubeCon CloudNative Con Barcelona in May 2019.
 
 [Join as an CNCF End User Supporter](https://www.cncf.io/endusersupporter)
