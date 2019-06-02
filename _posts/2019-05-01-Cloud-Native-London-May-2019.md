@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Roundup: May 2019 Cloud Native London meetup"
-description: "Cheryl Hung hosts Cloud Native London May 2019 with Microsoft, Finimize and ForgeRock."
+description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Microsoft, Finimize and ForgeRock at Cloud Native London."
 tags:
   - Photos
   - Video

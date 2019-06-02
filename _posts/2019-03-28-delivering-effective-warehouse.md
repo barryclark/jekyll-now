@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Navigating the Cloud Native Ecosystem for End Users - Cloud Native: Delivering Effective Warehouse Solutions, London"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how the CNCF supports end users."
 tags:
   - Slides
   - "2019"

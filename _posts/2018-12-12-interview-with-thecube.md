@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Interview with theCube - KubeCon+CloudNativeCon NA 2018"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, discusses the end user community."
 tags:
   - Video
   - "2018"

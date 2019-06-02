@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Cloud Native London January 2019 Roundup"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts HashiCorp and Elastic at Cloud Native London."
 tags:
   - Video
   - Meetup
@@ -29,7 +30,7 @@ Nic Jackson from HashiCorp discussed ["Securing and integrating legacy applicati
 Following that, Samir Bennacer from Elastic talked about ["Observable Kubernetes with the Elastic Stack"](https://skillsmatter.com/skillscasts/13338-observable-kubernetes-with-the-elastic-stack), discussing:
 
 * An intro to Elastic Stack
-* Kubernetes challenges 
+* Kubernetes challenges
 * Logging and monitoring Kubernetes
 * APM tracing
 
@@ -41,7 +42,7 @@ Finally I gave an overview about CNCF in ["Crossing the chasm with cloud native"
 
 * The Cloud Native Computing Foundation (cncf.io) is a non-profit, founded in 2015, as part of the Linux Foundation. The foundation’s mission is to make cloud native computing ubiquitous by fostering and sustaining an ecosystem of open source, vendor-neutral projects.
 
-* Out of 30+ projects, the most well known is Kubernetes. The maturity level of a project indicates the velocity and adoption. There are 3 graduated projects (including Kubernetes), 17 incubating, and 12 sandbox projects. 
+* Out of 30+ projects, the most well known is Kubernetes. The maturity level of a project indicates the velocity and adoption. There are 3 graduated projects (including Kubernetes), 17 incubating, and 12 sandbox projects.
 
 * The CNCF organises the biggest conference in this space, KubeCon + CloudNativeCon.  8000 attended the last conference, and the next one is 20-23 May in Barcelona. The Call For Proposals (CfP) closes one week on Friday, so get your talk proposals in soon!
 

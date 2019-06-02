@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Guided Journey of Cloud Native, featuring Monzo - QCon, London"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, co-hosts a talk with Monzo."
 tags:
   - Photos
   - Slides
@@ -14,9 +15,9 @@ tags:
 These are my slides from ["A Guided Journey of Cloud Native, featuring Monzo"](https://qconlondon.com/london2019/speakers/cheryl-hung), a session I co-hosted with Matt Heath from Monzo at QCon, London in March 2019..
 
 The Cloud Native Trail Map provides a path for enterprises to deploy cloud native applications, and the steps they’ll encounter along their journey. However, the needs of each enterprise are rarely the same and these journeys are rarely linear.
- 
+
 In this talk we’ll look at how the needs of applications change as they grow and become more complex, and the stages in which organisations adopt specific cloud native technologies.
- 
+
 We’ll then examine the journey that Monzo, a UK based digital bank, have taken over the last four years, the stages they went through as they grew, the challenges they faced at each point, and the technologies and techniques they used to build a cloud native bank.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">CNCF projects are taking over the world! <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> takes us through a journey building cloud native apps. <a href="https://twitter.com/hashtag/qcon?src=hash&amp;ref_src=twsrc%5Etfw">#qcon</a> <a href="https://twitter.com/hashtag/qconlondon?src=hash&amp;ref_src=twsrc%5Etfw">#qconlondon</a> <a href="https://t.co/uszXfWN5jO">pic.twitter.com/uszXfWN5jO</a></p>&mdash; Matt Heath (@mattheath) <a href="https://twitter.com/mattheath/status/1103263429467492352?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>

@@ -9,7 +9,7 @@ I'm Cheryl Hung, Director of Ecosystem at the [Cloud Native Computing Foundation
 I founded the [Cloud Native
 London meetup](https://www.meetup.com/Cloud-Native-London) for the London community around Kubernetes and cloud native platform. You can meet me there, plus 200-300 techies, on the first Wednesday of every month.
 
-<img src="https://www.oicheryl.com/images/headshot.jpeg" alt="Cheryl Hung, Director of CNCF" height="300" width="300">
+<img src="/images/headshot.jpeg" alt="Cheryl Hung, Director of CNCF" height="300" width="300">
 
 ## Background
 

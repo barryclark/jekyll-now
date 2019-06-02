@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Navigating the cloud native ecosystem - GDG Cloud London"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source."
 tags:
   - Photos
   - Slides
@@ -27,4 +28,3 @@ Resources:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">At <a href="https://twitter.com/Google?ref_src=twsrc%5Etfw">@google</a> hearing an amazing talks by Googler <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> about <a href="https://twitter.com/CloudNativeFdn?ref_src=twsrc%5Etfw">@CloudNativeFdn</a> and <a href="https://twitter.com/kubernetesio?ref_src=twsrc%5Etfw">@kubernetesio</a>.<a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://t.co/IYkUUt6Lto">pic.twitter.com/IYkUUt6Lto</a></p>&mdash; Brainrex (@brainrexAI) <a href="https://twitter.com/brainrexAI/status/1122920844882251776?ref_src=twsrc%5Etfw">April 29, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
