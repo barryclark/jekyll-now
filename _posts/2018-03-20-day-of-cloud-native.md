@@ -1,14 +1,13 @@
 ---
 layout: post
 title: "Introduction to container storage - Day of Cloud Native, Oslo"
+description: "Cheryl Hung, Product Manager at StorageOS, explains the challenges of container storage at Day of Cloud Native"
+image: https://pbs.twimg.com/media/DYu0gPOVAAEEvl6.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/7Fv5HSgSvaVG0X
 tags:
   - Slides
   - "2018"
 ---
-
-<object data="https://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf" type="application/pdf" width="100%" height="700px">
-  <a href="https://www.oicheryl.com/resources/2018-3-20-intro-to-container-storage.pdf">Download PDF</a>
-</object>
 
 These are my slides from "Introduction to container storage", a workshop I ran at Day of Cloud Native in Oslo on 20 March, 2018.
 

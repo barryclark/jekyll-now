@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Persistent storage with Kubernetes in production - Kubecon + Cloud Native Con 2017, Austin"
+description: "Cheryl Hung, Product Manager at StorageOS, talks about cloud native storage with Kubernetes at KubeCon CloudNativeCon."
+image: https://pbs.twimg.com/media/DyK5nu_XQAAryfE.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/axa0to9qRjaeAg
 tags:
   - Video
   - Slides
@@ -8,15 +11,11 @@ tags:
   - Featured
 ---
 
+My talk at Kubecon + Cloud Native Con North America 2017 is titled "Persistent Storage with Kubernetes in Production - which solution and why?":
+
 <div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/hqE5c5pyfrk" frameborder="0" allowfullscreen></iframe>
 </div>
-
-My talk at Kubecon + Cloud Native Con North America 2017 is titled "Persistent Storage with Kubernetes in Production - which solution and why?" and the slides are available here:
-
-<object data="https://www.oicheryl.com/resources/2017-12-8-persistent-storage.pdf" type="application/pdf" width="100%" height="700px">
-    <a href="https://www.oicheryl.com/resources/2017-12-8-persistent-storage.pdf">Download PDF</a>
-</object>
 
 Resource links:
 * [StorageOS browser demo](https://demo.storageos.cloud)

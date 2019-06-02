@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "Persistent storage with Kubernetes in production - CNCF Paris"
+description: "Cheryl Hung, Product Manager at StorageOS discusses evaluating storage options for Kubernetes"
+image: https://pbs.twimg.com/media/DTrui3JWsAET6h8.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/wHl2VXMOPI1hp3
 tags:
   - Slides
   - "2018"
 ---
 
-<object data="https://www.oicheryl.com/resources/2018-1-16-persistent-storage.pdf" type="application/pdf" width="100%" height="700px">
-    <a href="https://www.oicheryl.com/resources/2018-1-16-persistent-storage.pdf">Download PDF</a>
-</object>
-
-My talk at CNCF Paris on 16 Jan 2018 is titled "Persistent Storage with Kubernetes in Production - which solution and why?" and the slides are available above.
+I spoke at CNCF Paris on 16 Jan 2018 on "Persistent Storage with Kubernetes in Production - which solution and why?".
 
 Resource links:
 * [StorageOS browser demo](https://demo.storageos.cloud)

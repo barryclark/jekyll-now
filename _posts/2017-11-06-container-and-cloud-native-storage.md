@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "What's the future of cloud and container native storage - Microservices conference"
+description: "Cheryl Hung, Product Manager at StorageOS, discusses the future of storage with Kubernetes and cloud native."
+image: /images/2017-11-06-cloud-native-storage.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/szpHx4LEOyfQ8A
 tags:
   - Video
   - Slides
@@ -8,15 +11,11 @@ tags:
   - Photos
 ---
 
+I spoke at the Microservices Conference in London on 6 November, 2017 on "What's the future of cloud and container native storage?".
+
 <div class="video-wrapper">
     <iframe src="https://player.vimeo.com/video/241538232" frameborder="0" allowfullscreen></iframe>
 </div>
-
-I spoke at the Microservices Conference in London on 6 November, 2017 on "What's the future of cloud and container native storage?" and here are the slides to follow along with the video:
-
-<object data="https://www.oicheryl.com/resources/What's-the-future-of-container-and-cloud-native-storage.pdf" type="application/pdf" width="100%" height="700px">
-    <a href="https://www.oicheryl.com/resources/What's-the-future-of-container-and-cloud-native-storage.pdf">Download PDF</a>
-</object>
 
 Resource links:
 * [Try StorageOS with browser-based tutorials](https://my.storageos.com/main/tutorials)

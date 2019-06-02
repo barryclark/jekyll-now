@@ -1,15 +1,13 @@
 ---
 layout: post
 title: "The Great Container Management Debate"
+description: "Cheryl Hung, Product Manager at StorageOS, moderates a panel on competing container orchestration systems."
+image: /images/2018-2-8-pic1.jpg
 tags:
   - Video
   - Photos
   - "2018"
 ---
-
-<div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/MkHZgJseOkU" frameborder="0" allowfullscreen></iframe>
-</div>
 
 This was a fun event held in London on Feb 8, 2018, with myself moderating an evening debate between four teams. Each team consisted of one advocate and one customer.
 
@@ -23,7 +21,10 @@ This was a fun event held in London on Feb 8, 2018, with myself moderating an ev
 
 **RANCHER:** Shannon Williams, Rancher Co-Founder; Tom Bamford, Platform Engineering Lead, Buildit@Wipro Digital
 
-![The Great Container Management Debate]({{site.baseurl}}/images/2018-2-8-pic1.jpg)
+<div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/MkHZgJseOkU" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 I greatly enjoyed hearing the teams discuss the complexity, tooling, integration with existing systems, security, diagnostics and upgrading of their chosen container management platforms.
 

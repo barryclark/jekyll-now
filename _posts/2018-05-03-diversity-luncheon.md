@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Diversity Luncheon Panel at KubeCon CloudNativeCon"
+description: "Cheryl Hung, Product Manager at StorageOS, discusses diversity and open source."
+image: https://i.ytimg.com/vi/WFlFmhKSnv0/maxresdefault.jpg
 tags:
   - Video
   - "2018"

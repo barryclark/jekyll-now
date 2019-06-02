@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Monzo and linkerd at Cloud Native London October"
+description: "Cheryl Hung, Product Manager at StorageOS, hosts Attest and Monzo at Cloud Native London"
+image: /images/2017-10-03-cnl.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/GbAIwb7kEAsTNx
 tags:
   - Photos
   - Slides
@@ -8,15 +11,9 @@ tags:
   - Meetup
 ---
 
-![Dario Simonetti, Cheryl Hung and Irina Bednova]({{site.baseurl}}/images/CNLOct-0.jpg)
-
 October's [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London/events/240108227) was another resounding success, with pizza and beers and 100 developers, devops and techies attending.
 
-Unfortunately James Stewart had to pull out due to illness, but he will be back at a future meetup. Instead I gave an extended welcome to the principles behind Cloud Native and why the group exists, since the group has grown to 750 members in a mere five months. Those slides are available here:
-
-<object data="https://www.oicheryl.com/resources/CloudNativeLondonOct.pdf" type="application/pdf" width="100%" height="700px">
-  <a href="https://www.oicheryl.com/resources/CloudNativeLondonOct.pdf">Download PDF</p>
-</object>
+Unfortunately James Stewart had to pull out due to illness, but he will be back at a future meetup. Instead I gave an extended welcome to the principles behind Cloud Native and why the group exists, since the group has grown to 750 members in a mere five months. Those slides are available below.
 
 Our first speaker, Dario Simonetti, explained the different benefits that linkerd brought to their infrastructure at Attest, and the difference between data plane components like linkerd vs control plane components like Istio.
 

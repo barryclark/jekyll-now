@@ -1,23 +1,23 @@
 ---
 layout: post
 title: "Persistent Storage for Kubernetes in production - Which solution and why? - Container Days, Hamburg"
+description: "Cheryl Hung, Product Manager at StorageOS, explains how to choose persistent storage for Kubernetes"
+image: https://pbs.twimg.com/media/DgDjcCaX4AEdzdc.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/BuSRtismCMPjrw
 tags:
   - Video
   - Slides
   - "2018"
 ---
 
+I spoke at ContainerDays Hamburg on ["Persistent Storage for Kubernetes in production - Which solution and why?"](https://containerdays.io/program/persistent-storage-with-kubernetes-in-production-which-solution-and-why,2823.html).
+
+_Persistent storage often seems like a confusing plethora of options, from local volumes, NFS, distributed storage like Ceph, cloud storage such as AWS’s EBS and S3, to volume plugins with Docker and Kubernetes integration. This talk compares and contrasts the most popular solutions, and lays out the eight principles for cloud native storage._
+
 <div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/8i4fSvdp4tk" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<object data="https://www.oicheryl.com/resources/2018-6-19-containerdayshamburg.pdf" type="application/pdf" width="100%" height="700px">
-    <a href="https://www.oicheryl.com/resources/2018-6-19-containerdayshamburg.pdf">Download PDF</a>
-</object>
-
-These are my slides from ["Persistent Storage for Kubernetes in production - Which solution and why?"](https://containerdays.io/program/persistent-storage-with-kubernetes-in-production-which-solution-and-why,2823.html), a talk I gave at ContainerDays 2018 in Hamburg on 19 June, 2018.
-
-_Persistent storage often seems like a confusing plethora of options, from local volumes, NFS, distributed storage like Ceph, cloud storage such as AWS’s EBS and S3, to volume plugins with Docker and Kubernetes integration. This talk compares and contrasts the most popular solutions, and lays out the eight principles for cloud native storage._
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks <a href="https://twitter.com/ConDaysEU?ref_src=twsrc%5Etfw">@ConDaysEU</a> <a href="https://twitter.com/hashtag/CDS18?src=hash&amp;ref_src=twsrc%5Etfw">#CDS18</a> for hosting me at ContainerDays, Hamburg! My slides are at <a href="https://t.co/5hbcgpLek1">https://t.co/5hbcgpLek1</a>. <a href="https://t.co/JVrqzdNcXo">pic.twitter.com/JVrqzdNcXo</a></p>&mdash; Cheryl J. Hung (@oicheryl) <a href="https://twitter.com/oicheryl/status/1009056765600829441?ref_src=twsrc%5Etfw">June 19, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
