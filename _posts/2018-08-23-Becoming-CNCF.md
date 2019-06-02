@@ -2,12 +2,11 @@
 layout: post
 title: "Becoming Director of Ecosystem at CNCF"
 description: "Cheryl Hung announces that she is joining the Cloud Native Computing Foundation as Director of Ecosystem."
+image: https://www.cncf.io/wp-content/uploads/2019/04/cncf-logo-facebook.jpg
 tags:
   - Article
   - "2018"
 ---
-
-![CNCF logo](https://about.gitlab.com/images/case_study_logos/cncf-logo.png)
 
 After twenty months, I’m moving on from StorageOS. I am deeply grateful to my manager Alex for being an incredible role model, and to my reports Ferran, Frank and the rest of the team for being brilliant, patient, understanding and kind. (Although I’ll definitely live on in Jira tickets for some time yet…!)
 

@@ -2,26 +2,22 @@
 layout: post
 title: "Crossing the chasm with cloud native - Open FinTech Forum keynote"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, keynotes Open FinTech Forum with a discussion of how Kubernetes has gone mainstream."
+image: /images/2018-10-10-crossing-the-chasm.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/2YonCoGkpW1AwN
 tags:
   - Slides
   - "2018"
 ---
 
+I gave the keynote for Open FinTech Forum in New York on "Crossing the chasm with cloud native".
+
 <div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/IvoCWfBbeqo" frameborder="0" allowfullscreen></iframe>
 </div>
 
-These are my slides from my keynote on "Crossing the chasm with cloud native", which I delivered at Open FinTech Forum in New York on Wednesday October 10, 2018.
-
-<object data="https://www.oicheryl.com/resources/2018-10-10-crossing-the-chasm.pdf" type="application/pdf" width="100%" height="700px">
-   <a href="https://www.oicheryl.com/resources/2018-10-10-crossing-the-chasm.pdf">Download PDF</a>
-</object>
-
-![Cheryl Hung, Crossing the chasm with cloud native]({{site.baseurl}}/images/2018-10-10-pic1.jpg)
-
 I also participated in the Forum "Real-World Kubernetes Use Cases in Financial Services: Lessons Learned".
 
-![Cheryl Hung, Real-World Kubernetes Use Cases in Financial Services]({{site.baseurl}}/images/2018-10-10-pic2.jpg)
+![Cheryl Hung, Real-World Kubernetes Use Cases in Financial Services](/images/2018-10-10-k8s-use-case-in-financial-services.jpg)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> crushing it <a href="https://twitter.com/linuxfoundation?ref_src=twsrc%5Etfw">@linuxfoundation</a> event on Open FinTech. Welcome! <a href="https://t.co/DFkqgeKWuS">https://t.co/DFkqgeKWuS</a></p>&mdash; Jamie Smith (@JamieSmithLove) <a href="https://twitter.com/JamieSmithLove/status/1050426110280904706?ref_src=twsrc%5Etfw">October 11, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

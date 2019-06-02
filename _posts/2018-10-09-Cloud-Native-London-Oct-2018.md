@@ -2,13 +2,12 @@
 layout: post
 title: "Cloud Native London October 2018 Roundup"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Jetstack, WSO2 and Exelerys at Cloud Native London."
+image: https://pbs.twimg.com/media/DpFfBRuXgAEII1q.jpg
 tags:
   - Photos
   - "2018"
   - Meetup
 ---
-
-![Cloud Native London October](https://pbs.twimg.com/media/DpFfBRuXgAEII1q.jpg)
 
 Despite a change of venue, our loyal audience gathered to hear three knowledgeable speakers discuss containers and cloud native. They were ably hosted by Matt Saunders from London DevOps - thanks Matt!
 

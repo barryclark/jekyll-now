@@ -2,12 +2,11 @@
 layout: post
 title: "Cloud Native London September 2018 Roundup"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts the Financial Times, Armakuni and Sysdig at Cloud Native London."
+image: https://pbs.twimg.com/media/DmRan-WX4AITHT7.jpg
 tags:
   - "2018"
   - Meetup
 ---
-
-![Cloud Native London September](https://pbs.twimg.com/media/DmRan-WX4AITHT7.jpg)
 
 The room was packed out for Cloud Native London's September meetup, ably hosted by Dominique Top and featuring three brilliant talks and a prize draw.
 
