@@ -12,8 +12,6 @@ Python, SQL, VBA.
 
 <br>
 
-<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/41567186/activity-summary/911595536839f9b509fee1e5ed1fdfc76d8dd79d'></iframe>
-
 <hr style="width:30%; margin-left:0;">
 
 
@@ -25,5 +23,7 @@ Located in Sterling, VA
 <br>
 <br>
 <hr>
+
+<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/41567186/activity-summary/911595536839f9b509fee1e5ed1fdfc76d8dd79d'></iframe>
 
 *Hosted on GitHub, Powered by Jekyll, Forked from jekyll-now by barryclark*
