@@ -49,7 +49,7 @@ post_navigation:
 
 related_posts:
   # Text for heading above related posts.
-  heading: 'You may also enjoy:'
+  heading: 'Latest Articles'
 
   # Method used to generate related posts. Options are:
   # 'tags' - Related posts are randomly selected from those with shared tags.

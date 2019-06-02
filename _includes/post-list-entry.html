@@ -1,0 +1,9 @@
+<h3>
+  <a href="{{ include.post.url }}">
+  	{% if include.index %}
+  		<span class="post-list-index">{{ include.index }}.  </span>
+  	{% endif %}
+    {{ include.post.title }}
+    <span class="small">{{ include.post.date | date: "%B %-d, %Y" }}</span>
+  </a>
+</h3>

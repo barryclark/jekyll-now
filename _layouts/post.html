@@ -10,28 +10,17 @@ layout: default
 
 <span class="post-date">
   {{ site.data.settings.post_date_prefix }}
-  {% assign d = page.date | date: "%-d"  %}
-  {{ page.date | date: "%B" }}
-  {% case d %}
-    {% when '1' or '21' or '31' %}{{ d }}st,
-    {% when '2' or '22' %}{{ d }}nd,
-    {% when '3' or '23' %}{{ d }}rd,
-    {% else %}{{ d }}th,{% endcase %}
-  {{ page.date | date: "%Y" }}
-  by
-  {% if page.author %}
-    {{ page.author }}
-  {% else %}
-    {{ site.author }}
-  {% endif %}
-
+  {{ page.date | date: "%B %-d, %Y" }}
   {% include post-tags.html %}
-
 </span>
 
 <h1>
   {{ page.title }}
 </h1>
+
+{% include social-sharing.html %}
+
+<hr>
 
 {% if page.image %}
   <img src="{{ page.image }}">
@@ -47,9 +36,9 @@ layout: default
   <p><a href="{{ page.hacker_news }}" class="fa-hackernews">{{ site.data.settings.hacker_news_prompt }}</a></p>
 {% endif %}
 
-<footer>
+<hr>
 
-{% include social-sharing.html %}
+<footer>
 
 {% if site.data.settings.post_navigation.postion contains 'bottom' %}
   {% include post-navigation.html %}

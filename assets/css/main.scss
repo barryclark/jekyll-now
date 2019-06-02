@@ -15,6 +15,7 @@ $masthead-subtitle-color: $masthead-title-color !default;
 $link-hover-color: $light-content-color !default;
 $heading-font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 $body-font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+$horizontal-rule-color: $lighter-content-color;
 
 .w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
@@ -40,7 +41,7 @@ $body-font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Ar
 
 .masthead-title {
     margin: auto;
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 .site-logo {
@@ -79,7 +80,7 @@ div.hero-text {
 }
 
 .social {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .tags-list {
@@ -125,8 +126,13 @@ a.divLink {
     /*workaround to make clickable in IE */
 }
 
-.summary {
+h1, h2, h3 {
   font-weight: normal;
+}
+
+hr {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 @import "lagrange";
