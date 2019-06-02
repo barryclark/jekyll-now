@@ -2,6 +2,7 @@
 layout: post
 title: "Navigating the Cloud Native Community for End Users - KubeCon CloudNative Con Barcelona"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, explains how and why the CNCF supports end users at KubeCon CloudNativeCon."
+image: https://i.ytimg.com/vi/6HVxJ_65L2c/maxresdefault.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/A5pbTpms9hMuTo
 tags:
   - Photos
