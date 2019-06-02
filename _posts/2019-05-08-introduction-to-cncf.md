@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Introduction to the CNCF - Cloud Native Manchester"
+description: "Cheryl describes the mission and structure of the Cloud Native Computing Foundation and how to get involved."
 tags:
   - Photos
   - Slides

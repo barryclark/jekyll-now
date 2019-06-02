@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloud computing needs more women - SiliconANGLE"
-description: "SiliconAngle interview with Cheryl Hung, Director of Ecosystem CNCF, on May 28, 2019"
+description: "Cheryl Hung talks about open source leadership and women."
 tags:
   - Article
   - "2019"
