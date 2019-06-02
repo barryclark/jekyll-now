@@ -13,15 +13,11 @@ London meetup](https://www.meetup.com/Cloud-Native-London) for the London commun
 
 ## Background
 
-Previously I was a C++/Java/Python engineer at Google. In startups, I've been a product manager, DevOps engineering manager and developer advocate. I graduated from the University of Cambridge, King's College, with a Masters in Computer Science.
+Previously I wrote C++/Java/Python as a software engineer at Google. I've been a product manager, DevOps engineering manager and developer advocate. I graduated from the University of Cambridge, King's College, with a Masters in Computer Science.
 
 ## Contact me
 
 [Tweet me](https://twitter.com/oicheryl) for speaking engagements and new opportunities.
-
-* Informal: Cheryl
-* Professional: Ms Cheryl Hung
-* Chinese: 洪雪晴
 
 ### Source code
 

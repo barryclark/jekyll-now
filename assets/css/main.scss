@@ -8,13 +8,13 @@ $darker-content-color: #203344 !default;
 $light-content-color: #456d93 !default;
 $lighter-content-color: #9bb6d0 !default;
 $lightest-content-color: #f0f4f8 !default;
-/* $background-color: #f2f2f2;*/
-$background-color: white;
+$background-color: white; /* #f2f2f2;*/
 $content-width: 65% !default;
 $masthead-title-color: $lightest-content-color !default;
 $masthead-subtitle-color: $masthead-title-color !default;
 $link-hover-color: $light-content-color !default;
-
+$heading-font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+$body-font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 
 .w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
@@ -28,17 +28,31 @@ $link-hover-color: $light-content-color !default;
 .w3-theme-d5 {color:#fff !important; background-color:#172431 !important}
 
 .padded {
-    padding: 20px;
+    padding: 0.75rem;
 }
 
 .masthead {
     background: $darkest-content-color;
+    padding: 22px;
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .masthead-title {
     margin: auto;
-    width: 65%;
-    padding: 20px;
+    padding: 1rem;
+    padding-right: 3rem;
+}
+
+.site-logo {
+    display: inline;
+    vertical-align: middle;
+    padding-right: 1rem;
+}
+
+.site-title {
+    padding-right: 4rem;
 }
 
 .menu {
@@ -48,7 +62,7 @@ $link-hover-color: $light-content-color !default;
 
 nav.menu-content a {
     color: $lightest-content-color;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 .hero {
@@ -113,8 +127,11 @@ a.divLink {
 
 @import "lagrange";
 
+
 .masthead {
+/*
   padding-top: 0.75rem;
   padding-bottom: 1.9rem;
+*/
   margin-bottom: 3rem;
 }
