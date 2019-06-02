@@ -27,7 +27,7 @@ pagination:
 # Text prefix for tags at the bottom of each post.
 post_tags: 'Tagged with'
 
-post_date_prefix: 'Written by'
+post_date_prefix: ''
 
 sharing_button_prompt: ''
 

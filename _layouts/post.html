@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{% include post-metadata.html page=page %}
+
+{% for category in page.categories limit: 1 %}
+  <span class="post-date post-category">{{navigation_category_page.title | default: navigation_category}}:</span>
+{% endfor %}
+
+<span class="post-date">
+  {{ site.data.settings.post_date_prefix }}
+  {% assign d = page.date | date: "%-d"  %}
+  {{ page.date | date: "%B" }}
+  {% case d %}
+    {% when '1' or '21' or '31' %}{{ d }}st,
+    {% when '2' or '22' %}{{ d }}nd,
+    {% when '3' or '23' %}{{ d }}rd,
+    {% else %}{{ d }}th,{% endcase %}
+  {{ page.date | date: "%Y" }}
+  by
+  {% if page.author %}
+    {{ page.author }}
+  {% else %}
+    {{ site.author }}
+  {% endif %}
+
+  {% include post-tags.html %}
+
+</span>
+
+<h1>
+  {{ page.title }}
+</h1>
+
+{% if page.image %}
+  <img src="{{ page.image }}">
+{% endif %}
+
+{% if site.data.settings.post_navigation.postion contains 'top' %}
+  {% include post-navigation.html %}
+{% endif %}
+
+{{ content }}
+
+{% if page.hacker_news %}
+  <p><a href="{{ page.hacker_news }}" class="fa-hackernews">{{ site.data.settings.hacker_news_prompt }}</a></p>
+{% endif %}
+
+<footer>
+
+{% include social-sharing.html %}
+
+{% if site.data.settings.post_navigation.postion contains 'bottom' %}
+  {% include post-navigation.html %}
+{% endif %}
+
+{% include related-posts.html %}
+
+{% if site.data.settings.disqus.comments %}
+  {% include disqus.html %}
+{% endif %}
+</footer>

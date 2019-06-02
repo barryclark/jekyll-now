@@ -41,21 +41,20 @@ $body-font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Ar
 .masthead-title {
     margin: auto;
     padding: 1rem;
-    padding-right: 3rem;
 }
 
 .site-logo {
     display: inline;
     vertical-align: middle;
-    padding-right: 1rem;
 }
 
 .site-title {
-    padding-right: 4rem;
+    padding-left: 1rem;
 }
 
 .menu {
     float: right;
+    padding-left: 4rem;
 }
 
 nav.menu-content a {
@@ -79,6 +78,10 @@ div.hero-text {
     grid-row: 1;
 }
 
+.social {
+  font-size: 2rem;
+}
+
 .tags-list {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -96,7 +99,6 @@ article.post-container {
 
 article.box {
     position: relative;
-
 }
 
 article.box:hover {
@@ -123,13 +125,12 @@ a.divLink {
     /*workaround to make clickable in IE */
 }
 
+.summary {
+  font-weight: normal;
+}
+
 @import "lagrange";
 
-
 .masthead {
-/*
-  padding-top: 0.75rem;
-  padding-bottom: 1.9rem;
-*/
   margin-bottom: 3rem;
 }
