@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Crossing the chasm with cloud native - Open FinTech Forum keynote"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, keynotes Open FinTech Forum with a discussion of how Kubernetes has gone mainstream."
 tags:
   - Slides
   - "2018"

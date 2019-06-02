@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Navigating the cloud native ecosystem - GDG Cloud London"
-description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source."
+description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source at GDG Cloud London."
 tags:
   - Photos
   - Slides

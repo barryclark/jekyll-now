@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Navigating Open Source - TECH(K)NOW Day, Taipei"
-description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source."
+description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source at TECH(K)NOW Day Taipei."
 tags:
   - Photos
   - Slides

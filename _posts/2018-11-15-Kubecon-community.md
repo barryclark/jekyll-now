@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why KubeCon is so important for the community, KubeCon + CloudNativeCon China"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, discusses Kubernetes and community with TFiR."
 tags:
   - Video
   - "2018"

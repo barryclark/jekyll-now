@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Becoming Director of Ecosystem at CNCF"
+description: "Cheryl Hung announces that she is joining the Cloud Native Computing Foundation as Director of Ecosystem."
 tags:
   - Article
   - "2018"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Leveraging Cloud Native Technology to Transform Your Enterprise - KubeCon CloudNativeCon Barcelona"
-description: "Cheryl Hung, Director of Ecosystem at CNCF, discusses how and why enterprise IT migrates to Kubernetes and cloud native, with IBM, Mastercard and Intuit."
+description: "Cheryl Hung, Director of Ecosystem at CNCF, moderates a discussion with IBM, Mastercard and Intuit on Kubernetes in the enterprise at KubeCon CloudNativeCon."
 tags:
   - Video
   - "2019"

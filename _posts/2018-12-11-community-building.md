@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Community Building from Scratch: Sharing Experience of CNCF and K8s Meetups - KubeCon CloudNativeCon, Seattle"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, discusses the purpose and logistics behind organizing meetups at KubeCon CloudNativeCon."
 tags:
   - Video
   - "2018"
