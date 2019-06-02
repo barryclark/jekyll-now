@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "containerd, K8s internals and Keel at Cloud Native London August"
+description: "Cheryl Hung, Developer Advocate at StorageOS, hosts StorageOS, Jetstack and Docker at Cloud Native London."
+image: /images/CloudNativeLondonAugust.jpg
 tags:
   - Photos
   - "2017"
   - Meetup
 ---
-
-![Karolis Rusenas, James Munnelly, Steven Thwaites, Cheryl Hung]({{site.baseurl}}/images/CloudNativeLondonAugust.jpg)
 
 Another successful meetup, featuring Karolis Rusenas from StorageOS, James Munnelly from Jetstack and Steven Thwaites of Docker.
 

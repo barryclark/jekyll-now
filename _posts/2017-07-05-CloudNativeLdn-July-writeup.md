@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Sliders and speakers at Cloud Native London July"
+description: "Cheryl Hung, Developer Advocate at StorageOS, hosts Red Hat and Katacoda at Cloud Native London"
+image: /images/IMG_20170704_185045.jpg
 tags:
   - Photos
   - Slides
   - "2017"
   - Meetup
 ---
-
-![Michael Hausenblas, Cheryl Hung and Ben Hall]({{site.baseurl}}/images/IMG_20170704_185045.jpg)
 
 The inaugural Cloud Native London meetup went smoothly, with myself as host and [Michael Hausenblas](https://twitter.com/mhausenblas) and [Ben Hall](https://twitter.com/Ben_Hall) speaking.
 

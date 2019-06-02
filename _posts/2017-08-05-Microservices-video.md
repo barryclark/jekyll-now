@@ -1,18 +1,17 @@
 ---
 layout: post
 title: "Persistent storage for Docker - London μServices (Microservices) User Group"
+description: "Cheryl Hung, Developer Advocate at StorageOS, talks about persistent storage for containers at the Microservices User Group."
+image: /images/2017-08-05-persistent-storage-docker.jpg
+slides: //www.slideshare.net/slideshow/embed_code/key/ttApnJweS2hD4S
 tags:
   - Video
   - Slides
   - "2017"
 ---
 
+I gave a talk at the London μServices (Microservices) User Group meetup on "Persistent storage for Docker - which solution and why?" on 2 August, 2017 in London. My slides are also available below.
+
 <div class="video-wrapper">
     <iframe src="https://player.vimeo.com/video/228229016" frameborder="0" allowfullscreen></iframe>
 </div>
-
-I gave a talk at the London μServices (Microservices) User Group meetup on "Persistent storage for Docker - which solution and why?" on 2 August, 2017 in London. My slides are also available here:
-
-<object data="https://www.oicheryl.com/resources/Persistent Storage in Docker.pdf" type="application/pdf" width="100%" height="700px">
-  <a href="https://www.oicheryl.com/resources/Persistent Storage in Docker.pdf">Download PDF</a>
-</object>

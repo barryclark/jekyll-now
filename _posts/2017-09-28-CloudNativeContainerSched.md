@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Presenting at CloudNative and ContainerSched conferences"
+description: "Cheryl Hung, Developer Advocate at StorageOS, presenting at conferences."
+image: /images/2017-09-28-cloudnative.jpg
 tags:
   - Photos
   - "2017"
   - Featured
 ---
-
-![Cheryl Hung]({{site.baseurl}}/images/37318524542_29c1f0d543_z.jpg)
 
 I presented at two separate conferences in September in London, CloudNative and ContainerSched. Even though they are two separate conferences, they ran over three contiguous days, cover similar topics and I spoke at and sponsored both, so it felt like one conference.
 
