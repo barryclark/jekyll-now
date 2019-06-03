@@ -17,6 +17,7 @@ h5.title {font-weight:200;color:var(--color-grey);letter-spacing: -0.02em; line-
 #tarifes p b {font-size:2em;}
 #tarifes p b.stan {font-size:1.1em;color:rgba(130,130,130,1);}
 #tarifes p i {font-size:1.6em;font-style: normal;}
+#tarifes h5 small {letter-spacing: 0.01em; font-size:0.69em;}
 .preus hr {margin:9px;}
 #process .thumb-3 {border:thin solid #eee;padding:6%;text-align:center;}
 .soft {color:rgba(150,150,150,1); }
