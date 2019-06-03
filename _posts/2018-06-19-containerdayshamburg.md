@@ -2,7 +2,7 @@
 layout: post
 title: "Persistent Storage for Kubernetes in production - Which solution and why? - Container Days, Hamburg"
 description: "Cheryl Hung, Product Manager at StorageOS, explains how to choose persistent storage for Kubernetes"
-image: https://pbs.twimg.com/media/DgDjcCaX4AEdzdc.jpg
+feature_image: https://pbs.twimg.com/media/DgDjcCaX4AEdzdc.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/BuSRtismCMPjrw
 tags:
   - Video

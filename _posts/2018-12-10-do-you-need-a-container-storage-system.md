@@ -2,7 +2,7 @@
 layout: post
 title: "Do you need a container storage system? - Cloud Native Storage Day, KubeCon + CloudNativeCon NA 2018"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, moderates a panel with MayaData, Portworx and Red Hat on cloud native storage at KubeCon CloudNativeCon."
-image: https://i.ytimg.com/vi/ASIv6wi3YeE/maxresdefault.jpg
+feature_image: https://i.ytimg.com/vi/ASIv6wi3YeE/maxresdefault.jpg
 tags:
   - Video
   - "2018"

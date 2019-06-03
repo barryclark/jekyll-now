@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Would you like me to speak at your next event?"
-image: /images/headshot.jpeg
+feature_image: /images/headshot.jpeg
 tags:
   - Photos
   - "2018"

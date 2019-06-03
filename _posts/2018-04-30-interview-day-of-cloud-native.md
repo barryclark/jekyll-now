@@ -2,7 +2,7 @@
 layout: post
 title: "Interview with Cheryl Hung - Day of Cloud Native 2018"
 description: "Cheryl Hung, Product Manager at StorageOS, talks about her journey into DevOps and predictions for cloud native storage."
-image: https://i.ytimg.com/vi/r20uXic_Hpw/maxresdefault.jpg
+feature_image: https://i.ytimg.com/vi/r20uXic_Hpw/maxresdefault.jpg
 tags:
   - Video
   - "2018"

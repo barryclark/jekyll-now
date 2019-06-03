@@ -2,7 +2,7 @@
 layout: post
 title: "Keynotes and presenting at KubeCon CloudNativeCon Barcelona"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, at KubeCon CloudNativeCon Barcelona."
-image: https://pbs.twimg.com/media/D7Euo3jW4AAro7k?format=jpg&name=large
+feature_image: https://pbs.twimg.com/media/D7Euo3jW4AAro7k?format=jpg&name=large
 tags:
   - Photos
   - "2019"

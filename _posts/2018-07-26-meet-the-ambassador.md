@@ -2,7 +2,7 @@
 layout: post
 title: "Meet the Ambassador: CNCF"
 description: "Cheryl Hung, Product Manager at StorageOS, talks about being a CNCF Ambassador."
-image: https://i.ytimg.com/vi/RWwvZvnRV8s/maxresdefault.jpg
+feature_image: https://i.ytimg.com/vi/RWwvZvnRV8s/maxresdefault.jpg
 tags:
   - Video
   - "2018"
