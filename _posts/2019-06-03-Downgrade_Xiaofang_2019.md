@@ -4,7 +4,7 @@ title: Xiaofang firmware downgrade 2019
 ---
 
 Recently I have been looking into more and more Xiaomi devices and being pleasantly surprised at every stage. The products are always great quality and so cheap. 
-The only problem I run into, especially with the home devices, is the way Xiaomi likes to restrict access to some devices to mainland China. In the past the workaround has been simple, set the app to mainland China and Xiaomi will turn a blind eye. However, with firmware version 5.6.2.197 this changed for me on my Xiafang camera.
+The only problem I run into, especially with the home devices, is the way Xiaomi likes to restrict access to some devices to mainland China. In the past the workaround has been simple, set the app to mainland China and Xiaomi will turn a blind eye. However, with firmware version 5.6.2.197 this changed for me on my Xiaofang camera.
 
 ![Xiaofang Camera](https://raw.githubusercontent.com/RemakingEden/mysite/master/images/posts/xiaofang.jpeg)
 
