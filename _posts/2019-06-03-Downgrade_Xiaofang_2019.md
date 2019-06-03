@@ -23,15 +23,15 @@ Here is all the steps I took to get my device back to working order:
 5. Hold down the reset button and plug the camera into power. Hold the button for 15 seconds and then release (The LED should be flashing orange and blue at this point)
 6. Wait for 30 seconds and then press the set up button and go through the normal app pairing setup process.
 
-    Note : My app pairing did not go smoothly. I was having issues with the camera connecting to the router but just keep trying if you are having problems. After around 3/5 attempts I got there.
+    ```Note : My app pairing did not go smoothly. I was having issues with the camera connecting to the router but just keep trying if you are having problems. After around 3/5 attempts I got there.
 
-    **Important - The app will pair completely however you will not be able to view your camera at this point. With this new firmware, if you tap on the camera in app it will get stuck on connecting (1/30). When you are at this stage please move onto the next step**
+    Important - The app will pair completely however you will not be able to view your camera at this point. With this new firmware, if you tap on the camera in app it will get stuck on connecting (1/30). When you are at this stage please move onto the next step```
 
 7. Tap on the camera in app. While it states "Connecting (1/3)" tap on the three dots in the top right
 8. Tap "General settings" > "Check for firmware updates"
 9. The screen should state "Current version 5.6.2.77 Latest version 5.6.2.138". Tap "Update"
 
-    Note : This was not smooth either, it took 10 or so attempts after turning the camera off and on again and closing the app and opening again etc. Eventually the update was allowed and processed as usual.
+    ```Note : This was not smooth either, it took 10 or so attempts after turning the camera off and on again and closing the app and opening again etc. Eventually the update was allowed and processed as usual.```
 
 10. After the update is complete, the app should work as usual. Make sure your "Region" is still "China" and do not update the firmware of your camera and you should be able to continue enjoying your cheap budget wireless camera.
 
