@@ -64,34 +64,22 @@ nav.menu-content a {
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
-img.hero-image {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-div.hero-text {
-    grid-column: 2;
-    grid-row: 1;
+.hero-item {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
 
 .social {
   font-size: 1.8rem;
-}
-
-.tags-list {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 2 ;
-}
-
-.posts-by-tag {
-    grid-column: 1 / 2;
-    grid-row: 3 / 3;
 }
 
 article.post-container {
@@ -106,6 +94,7 @@ article.box:hover {
     cursor: hand;
     cursor: pointer;
     opacity: .8;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
 }
 
 a.divLink {
@@ -131,8 +120,8 @@ h1, h2, h3 {
 }
 
 hr {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 36px;
+  margin-bottom: 50px;
 }
 
 .slides-wrapper {
@@ -148,6 +137,18 @@ hr {
     width: 100%;
     height: 100%;
   }
+}
+
+.about-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-logos img {
+  margin: 10px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @import "lagrange";
