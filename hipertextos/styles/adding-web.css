@@ -15,11 +15,11 @@ h5.title {font-weight:200;color:var(--color-grey);letter-spacing: -0.02em; line-
 #tarifes .none {text-align: center;line-height:1em;margin-bottom:-25px; font-size:2.6em;color:var(--color-grey);}
 #tarifes p {margin-bottom:0px;padding:1px;}
 #tarifes p b {font-size:2em;}
-#tarifes p b.stan {font-size:1.1em;}
+#tarifes p b.stan {font-size:1.1em;color:rgba(130,130,130,1);}
 #tarifes p i {font-size:1.6em;font-style: normal;}
 .preus hr {margin:9px;}
 #process .thumb-3 {border:thin solid #eee;padding:6%;text-align:center;}
-.soft {color:var(--color-grey);}
+.soft {color:rgba(150,150,150,1);}
 
 @media (max-width: 1600px) {
 }
