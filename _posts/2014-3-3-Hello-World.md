@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Delete your code: in search of a minimalist approach to software
+title: "Delete your code: in search of a minimalist approach to software"
 ---
 
 ![](https://cdn-images-1.medium.com/max/2600/1*HTKqg1DFILEq90zjQV8onw.jpeg)
