@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about me!
+Engineering at McAfee. Python and stuff. Currently getting into functional programming and distributed systems.
 
 ### Contact me
 
