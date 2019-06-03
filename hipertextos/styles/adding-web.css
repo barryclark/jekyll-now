@@ -1,8 +1,9 @@
 /* by Isard Miralles  ADDING EXTRA to Landing page - CSS */
 /* ------------------------------------------------------------ Resets */
 
-.cover.landing {background:var(--color-soft-black)!important;background-image: none!important;}
+.cover.landing {background:var(--color-soft-black)!important;background-image: none!important; }
 .cover {padding-top:36px;height:100%!important;}
+#web-oferta {}
 .prices {font-weight:300;font-size:3.1em;line-height:1.5em;background:rgba(242,242,242,1);border:thin solid #fff;}
 .prices:after {content:'€';right:0;bottom:0;font-size:.5em;color:var(--color-grey);}
 #tarifes h2, #tarifes h3 {text-align:center;}
@@ -12,12 +13,13 @@ h5.title {font-weight:200;color:var(--color-grey);letter-spacing: -0.02em; line-
     margin-bottom:6px;border-bottom:thin solid rgba(200,200,200,1);}
 #tarifes .checked {text-align: center;font-size:1.4em;color:var(--color-green);}
 #tarifes .none {text-align: center;line-height:1em;margin-bottom:-25px; font-size:2.6em;color:var(--color-grey);}
-#tarifes p {margin-bottom:0px;}
+#tarifes p {margin-bottom:0px;padding:1px;}
 #tarifes p b {font-size:2em;}
-#tarifes p b.stan {font-size:1em;}
+#tarifes p b.stan {font-size:1.1em;}
 #tarifes p i {font-size:1.6em;font-style: normal;}
 .preus hr {margin:9px;}
 #process .thumb-3 {border:thin solid #eee;padding:6%;text-align:center;}
+.soft {color:var(--color-grey);}
 
 @media (max-width: 1600px) {
 }
