@@ -56,5 +56,7 @@ Again with some Googling and use of Stack Overflow I found a way to refresh the 
 
 Simple and it did the job.
 
+![Selenium demo](https://raw.githubusercontent.com/RemakingEden/mysite/master/images/posts/selenium.gif)
+
 This is all that was needed for the Selenium section and was suprisingly simple and fun and created a visually appealing program.
 In the next part I will focus on trying to get VLC to start playing randomly looped videos at a set time every day. This comes with many more challenges than the code above and left me stumped for a few days.
