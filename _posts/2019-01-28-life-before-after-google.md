@@ -3,6 +3,7 @@ layout: post
 title: "My Life Before and After Google - An interview with The New Stack at KubeCon+CloudNativeCon"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, tells her story from Google to the Cloud Native Computing Foundation with The New Stack."
 feature_image: "https://cdn.thenewstack.io/media/2019/01/d42eeaba-cheryl_hung.jpg"
+video: https://www.youtube.com/embed/AZzJkjGNOdY
 tags:
   - Video
   - "2018"
@@ -10,10 +11,6 @@ tags:
 ---
 
 I'm always a fan of the wonderful Alex and Judy at The New Stack! In this interview, recorded at KubeCon + CloudNativeCon NA 2018 in Seattle, we chat about my aspirations as a teenager to work for Google, and how it's led to my current role at the Cloud Native Computing Foundation spreading the word about Kubernetes and cloud native.
-
-<div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/AZzJkjGNOdY" frameborder="0" allowfullscreen></iframe>
-</div>
 
 You can also check out the podcast version of the interview here:
 

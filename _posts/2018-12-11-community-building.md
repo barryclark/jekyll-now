@@ -3,6 +3,7 @@ layout: post
 title: "Community Building from Scratch: Sharing Experience of CNCF and K8s Meetups - KubeCon CloudNativeCon, Seattle"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, discusses meetups with Nokia, Luxas Labs and Red Hat at KubeCon CloudNativeCon."
 feature_image: /images/2018-12-11-community-building.jpg
+video: https://www.youtube.com/embed/SHnVBGIQOsc
 tags:
   - Video
   - "2018"

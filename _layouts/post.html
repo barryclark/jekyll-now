@@ -26,11 +26,19 @@ layout: default
   <img src="{{ page.image }}">
 {% endif %}
 
+{% if page.video %}
+  <div class="video-wrapper">
+      <iframe src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+  </div>
+{% endif %}
+
 {% if site.data.settings.post_navigation.postion contains 'top' %}
   {% include post-navigation.html %}
 {% endif %}
 
 {{ content }}
+
+<p>
 
 {% if page.slides %}
   <div class="slides-wrapper">
