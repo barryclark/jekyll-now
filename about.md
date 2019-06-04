@@ -22,5 +22,7 @@ Tech stack:
 ### Contact me
 
 [renan.libsantana@gmail.com](mailto:renan.libsantana@gmail.com)
+
 [Linkedin](https://linkedin.com/in/renanliberato/)
+
 [Twitter](https://twitter.com/renanlibegato)
