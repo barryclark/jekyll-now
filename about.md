@@ -4,12 +4,23 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a brazilian software developer based on Sao Paulo.
+I have worked in web, mobile and desktop software projects and I value every one, because they are an important part of what I am and what I think now.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Tech stack:
+ - Web
+    - PHP: Zend Framework, Laravel.
+    - JS: React JS, Vue.
+    - C#: .NET ecossystem.
+ - Mobile
+    - React Native (More than 4 apps up and running on Android & iOS!!)
+ - Desktop
+    - C#: .NET/WPF ecossystem.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[renan.libsantana@gmail.com](mailto:renan.libsantana@gmail.com)
+[Linkedin](https://linkedin.com/in/renanliberato/)
+[Twitter](https://twitter.com/renanlibegato)
