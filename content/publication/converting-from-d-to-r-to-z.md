@@ -34,7 +34,7 @@ selected = false
 
 # Links (optional).
 url_preprint = "/files/Converting-from-d-to-r-to-z.pdf"
-url_code = ""
+url_code = "https://github.com/jepusto/d-to-r-to-z"
 url_dataset = ""
 url_project = ""
 url_slides = ""
