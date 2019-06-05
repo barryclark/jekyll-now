@@ -1,5 +1,60 @@
 % Encoding: UTF-8
 
+@Unpublished{Zhao2019a,
+  title         = "Streaming Variational Monte Carlo",
+  author        = "Zhao, Yuan and Nassar, Josue and Jordan, Ian and Bugallo,
+                   M{\'o}nica and Park, Il Memming",
+  abstract      = "Nonlinear state-space models are powerful tools to describe
+                   dynamical structures in complex time series. In a streaming
+                   setting where data are processed one sample at a time,
+                   simultaneously inferring the state and their nonlinear
+                   dynamics has posed significant challenges in practice. We
+                   develop a novel online learning framework, leveraging
+                   variational inference and sequential Monte Carlo, which
+                   enables flexible and accurate Bayesian joint filtering. Our
+                   method provides a filtering posterior arbitrarily close to
+                   the true filtering distribution for a wide class of dynamics
+                   models and observation models. Specifically, the proposed
+                   framework can efficiently infer a posterior over the
+                   dynamics using sparse Gaussian processes. Constant time
+                   complexity per sample makes our approach amenable to online
+                   learning scenarios and suitable for real-time applications.",
+  month         =  jun,
+  year          =  2019,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1906.01549"
+}
+
+@Unpublished{Jordan2019a,
+  title         = "Gated recurrent units viewed through the lens of continuous
+                   time dynamical systems",
+  author        = "Jordan, Ian D and Sokol, Piotr Aleksander and Park, Il
+                   Memming",
+  abstract      = "Gated recurrent units (GRUs) are specialized memory elements
+                   for building recurrent neural networks. Despite their
+                   incredible success in natural language, speech, and video
+                   processing, little is understood about the specific dynamics
+                   representable in a GRU network, along with the constraints
+                   these dynamics impose when generalizing a specific task. As
+                   a result, it is difficult to know a priori how successful a
+                   GRU network will perform on a given task. Using a continuous
+                   time analysis, we gain intuition on the inner workings of
+                   GRU networks. We restrict our presentation to low dimensions
+                   to allow for a comprehensive visualization. We found a
+                   surprisingly rich repertoire of dynamical features that
+                   includes stable limit cycles (nonlinear oscillations),
+                   multi-stable dynamics with various topologies, and
+                   homoclinic orbits. We contextualize the usefulness of the
+                   different kinds of dynamics and experimentally test their
+                   existence.",
+  month         =  jun,
+  year          =  2019,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "1906.01005"
+}
+
 @InProceedings{Nassar2019a,
   author    = {Josue Nassar and Scott Linderman and Il Memming Park and Monica Bugallo},
   title     = {Tree-structured locally linear dynamics model to uproot Bayesian neural data analysis},
@@ -107,6 +162,7 @@ pre-activations for each layer.},
 TrSLDS is a multi-scale hierarchical generative model for the state-space dynamics where each node of the latent tree captures locally linear dynamics.
 TrSLDS can be learned efficiently and in a  fully Bayesian manner using Gibbs sampling.
 We showcase TrSLDS' potential of inferring low-dimensional interpretable dynamical systems on a variety of examples.},
+  url       = {https://ieeexplore.ieee.org/document/8645122},
   file      = {Nassar2018a.pdf},
   owner     = {memming},
   timestamp = {2018.07.18},
@@ -168,33 +224,29 @@ We showcase TrSLDS' potential of inferring low-dimensional interpretable dynamic
 }
 
 @Unpublished{Zhao2017c,
-  author               = {Zhao, Yuan and Park, Il Memming},
-  title_old                = {Recursive Variational Bayesian Dual Estimation for Nonlinear Dynamics and {Non-Gaussian} Observations},
-  title                = {Variational Recursive Dual Filtering},
-  year                 = {2017},
-  abstract             = {State space models provide an interpretable framework for complex time series
-by combining an intuitive dynamical system model with a probabilistic
-observation model. We developed a flexible online learning framework for latent
-nonlinear state dynamics and filtered latent states. Our method utilizes the
-stochastic gradient variational Bayes method to jointly optimize the parameters
-of the nonlinear dynamics, observation model, and the recognition model. Unlike
-previous approaches, our framework can incorporate non-trivial observation
-noise models and infer in real-time. We test our method on point process
-observations driven by continuous attractor dynamics, demonstrating its ability
-to recover the phase portrait, filtered trajectory, and produce long-term
-predictions for neuroscience applications.},
-  archiveprefix        = {arXiv},
-  citeulike-article-id = {14403579},
-  citeulike-linkout-0  = {http://arxiv.org/abs/1707.09049},
-  citeulike-linkout-1  = {http://arxiv.org/pdf/1707.09049},
-  comment              = {submitted to ICML 2018; NIPS 2017},
-  day                  = {27},
-  eprint               = {1707.09049},
-  journal              = {ArXiv e-prints},
-  keywords             = {bayesian-filter, dual-estimation, nonlinear-dynamics, poisson-observation, state-space, time-series},
-  owner                = {memming},
-  posted-at            = {2017-07-31 12:08:02},
-  note		       = {(under review)}
+  title         = "Variational Joint Filtering",
+  author        = "Zhao, Yuan and Park, Il Memming",
+  abstract      = "State space models provide an interpretable framework for
+                   complex time series by combining an intuitive dynamical
+                   system model with a probabilistic observation model. We
+                   developed a flexible online learning framework for latent
+                   nonlinear state dynamics and filtered latent states. Our
+                   method utilizes the stochastic gradient variational Bayes
+                   method to jointly optimize the parameters of the nonlinear
+                   dynamics, observation model, and the black-box recognition
+                   model. Unlike previous approaches, our framework can
+                   incorporate non-trivial observation noise models and has
+                   potential of inferring in real-time. We test our method on
+                   point process and Gaussian observations driven by continuous
+                   attractor dynamics and nonstationary systems, demonstrating
+                   its ability to recover the phase portrait, filtered
+                   trajectory, and produce long-term predictions for online
+                   machine learning.",
+  month         =  jul,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1707.09049"
 }
 
 @InProceedings{Zhao2017b,

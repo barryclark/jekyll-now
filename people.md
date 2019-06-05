@@ -10,6 +10,7 @@ permalink: /people/
 
 * Assistant Professor
   * [Department of Neurobiology and Behavior (NBB; home)](https://medicine.stonybrookmedicine.edu/neurobiology)
+  * [Center for Neural Circuit Dynamics (CNCD)](https://www.stonybrook.edu/cncd/)
   * [Institute for Advanced Computing Science (IACS)](http://www.iacs.stonybrook.edu/)
   * [Department of Applied Mathematics and Statistics (AMS)](http://www.stonybrook.edu/commcms/ams2/)
   * [Institute of AI-driven Discovery and Innovation](https://ai.stonybrook.edu/)
@@ -56,13 +57,6 @@ permalink: /people/
 * PhD student, Department of Applied Mathematics and Statistics, Stony Brook University
 
 {: .person-name }
-## Junyan Song
-![Junyan Song](/images/Junyan.jpg){: .profile-photo }
-
-* PhD student, Department of Applied Mathematics and Statistics, Stony Brook University
-* Co-advised by Dr. Pei Fen Kuan
-
-{: .person-name }
 ## Eben Kadile
 ![Eben Kadile](/images/Eben.jpg){: .profile-photo }
 
@@ -78,6 +72,13 @@ permalink: /people/
 ----
 
 # Past members
+
+{: .person-name }
+## Junyan Song
+![Junyan Song](/images/Junyan.jpg){: .profile-photo }
+
+* PhD student, Department of Applied Mathematics and Statistics, Stony Brook University
+* Co-advised by Dr. Pei Fen Kuan
 
 {: .person-name }
 ## Kathleen Esfahany
