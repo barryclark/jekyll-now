@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 开张大吉!
+title: lucky openning
 ---
 
 今天天气真是好啊, 真是好!
