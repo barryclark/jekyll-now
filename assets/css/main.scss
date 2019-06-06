@@ -41,7 +41,7 @@ $horizontal-rule-color: $lighter-content-color;
 
 .masthead-title {
     margin: auto;
-    padding: 0.7rem;
+    padding: 0 22px;
 }
 
 .site-logo {
@@ -51,6 +51,7 @@ $horizontal-rule-color: $lighter-content-color;
 
 .site-title {
     padding-left: 1rem;
+    vertical-align: text-bottom;
 }
 
 .menu {
@@ -61,6 +62,7 @@ $horizontal-rule-color: $lighter-content-color;
 nav.menu-content a {
     color: $lightest-content-color;
     padding-left: 2rem;
+    padding-right: 0px;
 }
 
 .hero {
