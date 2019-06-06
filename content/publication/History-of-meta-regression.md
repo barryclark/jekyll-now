@@ -17,7 +17,7 @@ authors = ["Elizabeth Tipton","James E. Pustejovsky", "Hedyeh Ahmadi"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "_Research Synthesis Methods_, forthcoming"
+publication = "_Research Synthesis Methods, 10_(2), 161-179"
 
 # Abstract and optional shortened version.
 abstract = "At the beginning of the development of meta‐analysis, understanding the role of moderators was given the highest priority, with meta‐regression provided as a method for achieving this goal. Yet in current practice, meta‐regression is not as commonly used as anticipated. This paper seeks to understand this mismatch by reviewing the history of meta‐regression methods over the past 40 years. We divide this time span into four periods and examine three types of methodological developments within each period: technical, conceptual, and practical. Our focus is broad and includes development of methods in the fields of education, psychology, and medicine. We conclude the paper with a discussion of five consensus points, as well as open questions and areas of research for the future."

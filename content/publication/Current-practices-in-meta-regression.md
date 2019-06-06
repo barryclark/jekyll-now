@@ -17,7 +17,7 @@ authors = ["Elizabeth Tipton","James E. Pustejovsky", "Hedyeh Ahmadi"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "_Research Synthesis Methods_, forthcoming"
+publication = "_Research Synthesis Methods, 10_(2), 180-194"
 
 # Abstract and optional shortened version.
 abstract = "Having surveyed the history and methods of meta‐regression in a previous paper,1 in this paper we review which and how meta‐regression methods are applied in recent research syntheses. To do so, we reviewed studies published in 2016 across four leading research synthesis journals: _Psychological Bulletin_, the _Journal of Applied Psychology_, _Review of Education Research_, and the _Cochrane Library_. We find that the best practices defined in the previous review are rarely carried out in practice. In light of the identified discrepancies, we consider how to move forward, first by identifying areas where further methods development is needed to address persistent problems in the field, and second by discussing how to more effectively disseminate points of methodological consensus."
