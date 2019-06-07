@@ -15,7 +15,7 @@ We were inundated for our April Cloud Native London meetup - with a bigger and m
 First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/), [SUSE](https://www.suse.com/) and [Component Soft](https://www.componentsoft.io/)
 
 
-First was a talk on connecting your microservices with Istio, then running HPC Workloads via Jupyter, wrapping up with Codilime’s journey to Kubernetes.
+First was a talk on connecting your microservices with Istio, then running HPC Workloads via Jupyter.
 
 ![Laszlo Budai](https://pbs.twimg.com/media/D3P5DlMWAAIfdYk.jpg)
 
@@ -33,19 +33,6 @@ Following that, Dr Christoper Woods from Bristol University discussed ["Running 
 * Jupyter notebooks provide a great interface for researchers to build and share reproducible research computing and data analysis experiments.
 * Jupyter can run on Kubernetes, but mechanisms are needed to allow compute or data analysis triggered in a notebook to burst out onto dedicated HPC resources.
 * Fn is an open source serverless framework that can be used to wrap-up simulations and analyses into triggerable, autoscaling functions.
-
-
-![Tomasz Madycki](https://pbs.twimg.com/media/D3QKjHgW4AcgIJC.jpg)
-
-Finally Tomasz Madycki from [CodiLime](https://codilime.com/) gave us a talk on ["Our journey to Kubernetes"](https://skillsmatter.com/skillscasts/13711-our-journey-to-kubernetes). He talked about:
-
-
-* his experience with migration to Kubernetes on GCP
-* the pros and cons of the lift and shift approach
-* how to securely connect network devices to Kubernetes internal network
-* different ways of setting up data cluster services
-* tools used for the deployment process
-
 
 ## Cloud Native London May
 
