@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Call for Code, The United Nations Human Rights Office"
-description: "Cheryl Hung, Director of Ecosystem at CNCF, participating in a hackathon with the United Nations."
+title: "Call for Code, The United Nations Human Rights Office, Geneva Switzerland"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, participating in a hackathon with the United Nations Human Rights Office in Geneva, Switzerland."
 feature_image: /images/2019-06-04-callforcode4.jpg
 tags:
   - Photos
