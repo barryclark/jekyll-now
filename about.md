@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="about-logos">
   <a href="https://www.oicheryl.com"><img src="/images/headshot.jpeg" alt="Cheryl Hung, Director of CNCF"></a>
-  <a href="https://www.cncf.io"><img src="/assets/cncf-logo.jpg"></a>
+  <a href="https://www.cncf.io"><img src="/assets/cncf-logo.png"></a>
   <a href="https://www.meetup.com/Cloud-Native-London/"><img src="/assets/cloudnativelon.jpeg"></a>
 </div>
 
