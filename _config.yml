@@ -91,7 +91,14 @@ authors:
     web_short_name: robvk.uk
     gravatar: a71f4a55aabbaa77bf1c3e2e4e33e6c1
     linkedin: robertvankootenuk
-    
+  stein_fletcher:
+    display_name: Stein Fletcher
+    email: stein.fletcher@infinityworks.com
+    web: https://stein.wtf
+    web_short_name: stein.wtf
+    gravatar: b720c55560f2ca8a9d531bc3b48622c6
+    linkedin: steinfletcher
+
 #
 # Flags below are optional
 #
