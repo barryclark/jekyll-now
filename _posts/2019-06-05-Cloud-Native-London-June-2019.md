@@ -29,7 +29,7 @@ Following that, Michael Coté from Pivotal shared his experiences with ["Creatin
 * At scale, changing culture requires executive support and much work. Otherwise, you're just putting up new posters in the hallway. 
 * Achieving a blameless culture requires management taking the first step: discussing their own failures at the failure festivals.
 
-![Andreas Claesson](https://pbs.twimg.com/media/D5gL3LzXkAEdBVw.jpg)
+![Andreas Claesson](https://pbs.twimg.com/media/D8UdpcLUEAEgV-8.jpg)
 
 Next up was Andreas Claesson from mnemonic, discussing [“Securing microservices in a serverless world"](https://skillsmatter.com/skillscasts/14001-securing-microservices-in-a-serverless-world), mentioning that:
 
