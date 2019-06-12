@@ -12,7 +12,13 @@ June 23 - 27: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
 
 July 17 - 19: Open Source Summit Japan, Tokyo
 
+August 7: Cloud Native London, London
+
 August 21 - 23: Open Source Summit + Embedded Linux Conference North America, San Diego
+
+September 4: Cloud Native London, London
+
+October 1: Cloud Native London, London
 
 October 2 - 3:  OpenInfraDays Nordics, Stockholm
 * **Keynote**
@@ -22,10 +28,14 @@ October 8:  Cloud Native Revolution, Philadelphia
 
 October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 
+November 6: Cloud Native London, London
+
 November 7: Bristech Conference, Bristol
 * **Keynote**
 
 November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
+
+December 4: Cloud Native London, London
 
 ### 2020
 
