@@ -10,7 +10,7 @@ tags:
   - "2019"
 ---
 
-We packed out the room at Codenode for our June 2019 Cloud Native London Meetup!
+We packed out the room at Codenode, with 300 attendees at the June 2019 Cloud Native London Meetup!
 
 As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/), [SUSE](https://www.suse.com/), and [Twistlock](https://www.twistlock.com/) for making this all possible!
 
@@ -49,7 +49,7 @@ Finally Alex Tasioulis talked about ["Observability for microservices: practical
 
 ## Cloud Native London July
 
-The next meetup is on Wednesday 3rd July, and joining us are speakers from Microsoft, SUSE, and  Dynatrace. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/259545470/) Don’t forget to sign up directly with CodeNode as we get closer to the date!
+The next meetup is on Wednesday 3rd July, and joining us are speakers from Suade, SUSE, and  Dynatrace. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/259545470/) Don’t forget to sign up directly with CodeNode as we get closer to the date!
 
 See you next month!
 
