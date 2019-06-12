@@ -18,6 +18,8 @@ August 21 - 23: Open Source Summit + Embedded Linux Conference North America, Sa
 
 September 4: Cloud Native London
 
+September 23 - 25: Open Networking Summit EU, Antwerp
+
 October 1: Cloud Native London
 
 October 2 - 3:  OpenInfraDays Nordics, Stockholm
@@ -35,7 +37,9 @@ November 7: Bristech Conference, Bristol
 
 November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
 
-December 4: Cloud Native London
+December 2 - 6: AWS re:Invent, Las Vegas
+
+December 12: Open Fintech Forum, New York
 
 ### 2020
 
