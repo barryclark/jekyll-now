@@ -19,6 +19,9 @@ August 21 - 23: Open Source Summit + Embedded Linux Conference North America, Sa
 October 2 - 3:  OpenInfraDays Nordics, Stockholm
 * **Keynote**
 
+October 8:  Cloud Native Revolution, Philadelphia
+* **Keynote**
+
 October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 
 November 7: Bristech Conference, Bristol
