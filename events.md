@@ -20,8 +20,6 @@ September 4: Cloud Native London
 
 September 23 - 25: Open Networking Summit EU, Antwerp
 
-October 1: Cloud Native London
-
 October 2 - 3:  OpenInfraDays Nordics, Stockholm
 * **Keynote**
 
