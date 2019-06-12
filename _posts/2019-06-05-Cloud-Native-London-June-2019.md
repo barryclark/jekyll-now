@@ -15,11 +15,11 @@ We packed out the room at Codenode for our June 2019 Cloud Native London Meetup!
 As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/), [SUSE](https://www.suse.com/), and [Twistlock](https://www.twistlock.com/) for making this all possible!
 
 
-First was a recap of Kubecon, for anyone who wasn’t able to be there, then we were into the talks for the evening with a discussion on Creating a DevOps culture, then Securing microservices in a serverless world, wrapping up with a talk on Observability for microservices..
+First was a recap of KubeCon CloudNativeCon, for anyone who wasn’t able to be there, then we were into the talks for the evening with a discussion on Creating a DevOps culture, then Securing microservices in a serverless world, wrapping up with a talk on Observability for microservices.
 
 ![Josh Michielsen](https://pbs.twimg.com/media/D8URs-VUYAEdUdp.jpg)
 
-Kicking off the evening, Josh Michielsen gave us a recap of the events of KubeCon Europe 2019, in Barcelona. All the talks from the Con were uploaded by  the CNCF to [a playlist on Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2PpmMAnvpvsnR4c27wJePh3), so check that out for more info!
+Kicking off the evening, Josh Michielsen gave us a recap of the events of KubeCon Europe 2019, in Barcelona. All the talks from KubeCon are available on the [CNCF playlist on Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2PpmMAnvpvsnR4c27wJePh3), so check that out!
 
 ![Michael Coté](https://pbs.twimg.com/media/D8UWXBqUwAAREgw.jpg)
 
