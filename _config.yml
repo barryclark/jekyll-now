@@ -268,7 +268,7 @@ tag_archive:
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
+# - http://jch.penibelst.de/ca
 compress_html:
   clippings: all
   ignore:

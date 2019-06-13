@@ -1,12 +1,12 @@
 ---
-title: 2019-06-01 19 Hybrid技术方案
+title: 2019-06-01 26 React Native
 permalink: /year-archive/
 layout: posts
 last_modified_at: 2019-06-01T09:45:06-05:00
 tags:
-  - Hybrid
+  - React Native
 categories:
-  - Hybrid
+  - React Native
 ---
 
 ### 基础语法
