@@ -1,6 +1,6 @@
 ---
 title: JS与Android交互
-permalink: /web/
+permalink: /web/JS-Android/
 layout: posts
 last_modified_at: 2018-12-20T09:45:06-05:00
 tags:
