@@ -15,15 +15,12 @@ At the time of writing this post these were the best learning resources that I'v
 
 My language of choice is Python. If you never heard of it, learn the bare minimum of how it works, and then jump straight into the following resources.
 
-#### [1. Practical Machine Learning Tutorial with Python Intro][1] 
-by [sentdex](https://www.youtube.com/user/sentdex/about).
+ **[1. Practical Machine Learning Tutorial with Python Intro][1]**<br>by [sentdex](https://www.youtube.com/user/sentdex/about).
 
-#### [2. Your First Machine Learning Project in Python Step-By-Step][2] 
-by [PhD. Jason Brownlee at Machine Learning Mastery](https://machinelearningmastery.com)
+**[2. Your First Machine Learning Project in Python Step-By-Step][2]** <br>by [PhD. Jason Brownlee at Machine Learning Mastery](https://machinelearningmastery.com)
 This resource was actually recommended by the Two Minutes Paper youtuber in the video below.
 
-#### [3. How To Get Started With Machine Learning][4] 
-by [Two Minutes Paper][3] 
+**[3. How To Get Started With Machine Learning][4]** <br>by [Two Minutes Paper][3] 
 Short video overview with a great list of additional resources.
 
 
