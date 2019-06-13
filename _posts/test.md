@@ -3,11 +3,28 @@ layout: post
 title: Getting Started with AI
 published: true
 ---
-This is a short overview of information that I've found to get you started learning the ins and outs of AI and everything around it. "If you think you are late to the party, you aren't. You are just in time" [Youtuber first intro tutorial]
+This is a short overview of information that I've found to get you started learning the ins and outs of AI and everything around it. 
+"But if you think you're kind of late to the to the party with machine learning I assure you're not" **- [sentdex](https://www.youtube.com/user/sentdex/about)**.
+
+### You are ...
+... an engineering graduate or a practicing engineer in the Mechanical, Civil, Chemical, or Electrical disciplines. You have some exposure to programming. You want to see where Artificial Intelegence can be used in your field and how it can help you.
 
 ![][logo]
 ### Resources
-~~Learning about Artificial Intelegence and what it can do is a right time.~~
-I think this will contineu to apply within next 5 years when it comes to learning about Artificial Intelegence. I am also under impression that more and more engineers will turn to AI to further advance their works. Here is a brief review of the resources that could help you quick-start this process.
+At the time of writing this post these were the best learning resources that I've found, subjectively speaking. There was no objective evaluation of reliable critarias. If I liked the feel of it and the presentation of the material, it was good enough for me. Although the one criteria that I kept in mind is to make sure the material would not dwell too much on the programing theory, and more on the application side of things.
+
+My language of choice is Python. If you never heard of it, learn the bare minimum of how it works, and then jump straight into the following resources.
+
+#### [1. Practical Machine Learning Tutorial with Python Intro][1] - by [sentdex](https://www.youtube.com/user/sentdex/about).
+
+#### [2. Your First Machine Learning Project in Python Step-By-Step][2] - by [PhD. Jason Brownlee at Machine Learning Mastery](https://machinelearningmastery.com)
+This resource was actually recommended by the [Two Minutes Paper][3] youtuber in the video below.
+
+#### [3. How To Get Started With Machine Learning][4] - by [Two Minutes Paper][3] 
+Short video overview with a great list of additional resources.
 
 [logo]: https://ourdailybread.ca/wp-content/uploads/2018/05/29-770x425.jpg "Horizon"
+[1]: https://www.youtube.com/watch?v=OGxgnH8y2NM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=1
+[2]: https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+[3]: https://www.youtube.com/user/keeroyz/about
+[4]: https://youtu.be/4h0uC9FPVMQ
