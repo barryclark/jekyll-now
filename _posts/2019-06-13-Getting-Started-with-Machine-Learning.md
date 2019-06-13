@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting Started with Machine Learning
+date: 2019-06-13
 published: true
 ---
 This post is a short overview of the information that I've found to get you started learning the ins and outs of Machine Learning and everything around it.
