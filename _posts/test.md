@@ -23,7 +23,7 @@ This resource was actually recommended by the [Two Minutes Paper][3] youtuber in
 #### [3. How To Get Started With Machine Learning][4] - by [Two Minutes Paper][3] 
 Short video overview with a great list of additional resources.
 
-[logo]: images/calm-horizon.jpg "Calm-Horizon"
+[logo]: https://yev-d.github.io/images/calm-horizon.jpg "Calm-Horizon"
 [1]: https://www.youtube.com/watch?v=OGxgnH8y2NM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=1
 [2]: https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 [3]: https://www.youtube.com/user/keeroyz/about
