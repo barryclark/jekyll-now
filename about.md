@@ -4,12 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Mechanical Engineering Graduate of Lakehead University, I am passionate about shipbuilding, structural design, programming and automation. I think it is time to bring AI into the core of engineering theory and I hope to one day contribute to that.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
