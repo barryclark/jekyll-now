@@ -9,13 +9,16 @@ onload="if(submitted) {window.location='https://agarciaizquierdo.github.io/thank
 <form action="https://docs.google.com/forms/d/12JV2TspPGbY4nFJKyzxjdldC9hgkaM8AacsoTaAfcLY/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
     
       <label>Nombre</label>
-      <input type="text" placeholder="Nombre" name="entry.2005620554" required><br/>
+      <input type="text" placeholder="Nombre" name="entry.2005620554" required>
+      
   
       <label>Email</label>
-      <input type="email" placeholder="Email" name="entry.1045781291" required><br/>
+      <input type="email" placeholder="Email" name="entry.1045781291" required>
+      
     
       <label>Comentarios</label>
-      <textarea rows="5" placeholder="Comentarios" name="entry.839337160" required></textarea><br/>
+      <textarea rows="5" placeholder="Comentarios" name="entry.839337160" required></textarea>
+      
      
       <button type="submit">Enviar</button>
 </form>
