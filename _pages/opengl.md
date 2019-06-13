@@ -2,9 +2,7 @@
 title: OpenGL
 layout: collection
 permalink: /opengl/
-collection: OpenGL
-entries_layout: grid
-classes: wide
+collection: opengl
 author_profile: true
 ---
 

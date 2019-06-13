@@ -307,7 +307,6 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share:  true
       related: true
   # _android
   - scope:
@@ -317,7 +316,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share:  true
       related: true
   # _ios
   - scope:
@@ -327,7 +325,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share:  true
       related: true
   # _web
   - scope:
@@ -337,7 +334,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share:  true
       related: true
   # _algorithm
   - scope:
@@ -347,7 +343,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share:  true
       related: true
   # _os
   - scope:
@@ -357,7 +352,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share:  true
       related: true
   # _opengl
   - scope:
@@ -367,5 +361,4 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share:  true
       related: true
