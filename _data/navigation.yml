@@ -1,12 +1,18 @@
 # main links
 main:
-  - title: "技术博文"
-    url: /year-archive/
-  - title: "目录"
-    url: /categories/
   - title: "Android"
     url: /android/
-  - title: "笔记目录"
+  - title: "Web"
+    url: /web/
+  - title: "iOS"
+    url: /iOS/
+  - title: "Algorithm"
+    url: /algorithm/
+  - title: "操作系统"
+    url: /os/
+  - title: "OpenGL"
+    url: /opengl/
+  - title: "目录"
     url: /collection-archive/
   - title: "关于"
     url: /about/

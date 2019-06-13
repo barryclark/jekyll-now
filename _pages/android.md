@@ -2,7 +2,7 @@
 title: Android
 layout: collection
 permalink: /android/
-collection: android
+collection: Android
 entries_layout: grid
 classes: wide
 ---
