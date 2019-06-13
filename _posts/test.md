@@ -6,8 +6,8 @@ published: true
 This is a short overview of information that I've found to get you started learning the ins and outs of Machine Learning and everything around it. 
 "... if you think you're kind of late to the to the party with machine learning I assure you, you're not" **- [sentdex](https://www.youtube.com/user/sentdex/about)**.
 
-### You are ...
-... an engineering graduate or a practicing engineer in the Mechanical, Civil, Chemical, or Electrical disciplines. You have some exposure to programming. You want to see where Machine Learning can be used in your field and how it can help you.
+### Who's this for
+You are an engineering graduate or a practicing engineer in the Mechanical, Civil, Chemical, or Electrical disciplines. You have some exposure to programming. You want to see where Machine Learning can be used in your field and how it can help you.
 
 ![][logo]
 ### Resources
@@ -17,12 +17,14 @@ My language of choice is Python. If you never heard of it, learn the bare minimu
 
  **[1. Practical Machine Learning Tutorial with Python Intro][1]**<br>by [sentdex](https://www.youtube.com/user/sentdex/about).
 
-**[2. Your First Machine Learning Project in Python Step-By-Step][2]** <br>by [PhD. Jason Brownlee at Machine Learning Mastery](https://machinelearningmastery.com)
+**[2. Your First Machine Learning Project in Python Step-By-Step][2]** <br>by [PhD. Jason Brownlee at Machine Learning Mastery](https://machinelearningmastery.com)<br>
 This resource was actually recommended by the Two Minutes Paper youtuber in the video below.
 
-**[3. How To Get Started With Machine Learning][4]** <br>by [Two Minutes Paper][3] 
+**[3. How To Get Started With Machine Learning][4]** <br>by [Two Minutes Paper][3] <br>
 Short video overview with a great list of additional resources.
 
+### Mind Bugs
+There are few questions that bug me at this point. Is machine learning just an over dressed expression meaning something simple? Is it just good all probabilities and statistics that we all love and hate? Will it be somwthing completely new to an engineering mind or will it be just an application of the undergrad theory? I guess once I'll learn more, I will come back to this post with an update. At this stage, my guess is that Machine Learning is just an application of stats & probability. 
 
 
 [logo]: https://yev-d.github.io/images/calm-horizon.jpg "Calm-Horizon"
