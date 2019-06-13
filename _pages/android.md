@@ -8,7 +8,7 @@ author_profile: true
 
 {% capture written_label %}'None'{% endcapture %}
 
-{% for android in site.android %}
+{% for android in site.androids %}
     {% unless android.output == false or android.label == "posts" %}
       {% capture label %}{{ android.label }}{% endcapture %}
       {% if label != written_label %}
