@@ -17,8 +17,7 @@ onload="if(submitted) {window.location='https://agarciaizquierdo.github.io/thank
       
     
       <label>Comentarios</label>      
-      <textarea rows="5" placeholder="Comentarios" name="entry.839337160" required></textarea>
-      
+      <textarea rows="5" placeholder="Comentarios" name="entry.839337160" required></textarea>      
      
       <button type="submit">Enviar</button>
 </form>
