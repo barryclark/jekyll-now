@@ -5,10 +5,12 @@ permalink: /about/
 ---
 Mechanical Engineering Graduate of Lakehead University, I am passionate about shipbuilding, structural design, programming and automation. I think it is time to bring AI into the core of engineering theory and I hope to one day contribute to that.
 
-### Contact me
+### Contact me1
 
 <form method="POST" action="https://formspree.io/ydenysov@outlook.com">
   <input type="email" name="email" placeholder="Your email">
-  <textarea name="message" placeholder="Your Message"></textarea>
+  
+  <textarea name="message" placeholder="Your Message" width="300" height="100"></textarea>
+  
   <button type="submit">Send Test</button>
 </form>
