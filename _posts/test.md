@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with AI
+title: Getting Started with Machine Learning
 published: true
 ---
-This is a short overview of information that I've found to get you started learning the ins and outs of AI and everything around it. 
-"But if you think you're kind of late to the to the party with machine learning I assure you're not" **- [sentdex](https://www.youtube.com/user/sentdex/about)**.
+This is a short overview of information that I've found to get you started learning the ins and outs of Machine Learning and everything around it. 
+"... if you think you're kind of late to the to the party with machine learning I assure you're not" **- [sentdex](https://www.youtube.com/user/sentdex/about)**.
 
 ### You are ...
-... an engineering graduate or a practicing engineer in the Mechanical, Civil, Chemical, or Electrical disciplines. You have some exposure to programming. You want to see where Artificial Intelegence can be used in your field and how it can help you.
+... an engineering graduate or a practicing engineer in the Mechanical, Civil, Chemical, or Electrical disciplines. You have some exposure to programming. You want to see where Machine Learning can be used in your field and how it can help you.
 
 ![][logo]
 ### Resources
