@@ -4,7 +4,9 @@ main:
     url: /year-archive/
   - title: "目录"
     url: /categories/
-  - title: "读书"
-    url: /reader/
+  - title: "Android"
+    url: /_android/
+  - title "Collections"
+    url: /collection-archive/
   - title: "关于"
     url:
