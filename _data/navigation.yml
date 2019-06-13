@@ -12,7 +12,5 @@ main:
     url: /os/
   - title: "OpenGL"
     url: /opengl/
-  - title: "目录"
-    url: /collection-archive/
   - title: "关于"
     url: /about/
