@@ -295,6 +295,11 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+# Android
+android:
+  output: true
+  permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
