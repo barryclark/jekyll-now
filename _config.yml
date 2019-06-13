@@ -279,7 +279,21 @@ collections:
   android:
     output: true
     permalink: /:collection/:path/
-
+  iOS:
+    output: true
+    permalink: /:collection/:path/
+  web:
+    output: true
+    permalink: /:collection/:path/
+  algorithm:
+    output: true
+    permalink: /:collection/:path/
+  os:
+    output: true
+    permalink: /:collection/:path/
+  opengl:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -297,8 +311,61 @@ defaults:
       related: true
   # _android
   - scope:
-      path: "_android"
+      path: ""
       type: android
     values:
       layout: single
       author_profile: true
+      read_time: true
+      share:  true
+      related: true
+  # _ios
+  - scope:
+      path: ""
+      type: iOS
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share:  true
+      related: true
+  # _web
+  - scope:
+      path: ""
+      type: web
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share:  true
+      related: true
+  # _algorithm
+  - scope:
+      path: ""
+      type: algorithm
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share:  true
+      related: true
+  # _os
+  - scope:
+      path: ""
+      type: os
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share:  true
+      related: true
+  # _opengl
+  - scope:
+      path: ""
+      type: opengl
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share:  true
+      related: true
