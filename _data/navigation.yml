@@ -6,7 +6,7 @@ main:
     url: /categories/
   - title: "Android"
     url: /android/
-    - title: "笔记目录"
+  - title: "笔记目录"
     url: /collection-archive/
   - title: "关于"
     url: /about/
