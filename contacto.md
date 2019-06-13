@@ -4,7 +4,7 @@ Si estas aquí es que quieres contarme algo, puedes buscarme en [Linkedin](https
 
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+onload="if(submitted) {window.location='thankyou.md';}"></iframe>
 
 <form action="https://docs.google.com/forms/d/12JV2TspPGbY4nFJKyzxjdldC9hgkaM8AacsoTaAfcLY/formResponse" method="post">
       <label>Nombre</label>
