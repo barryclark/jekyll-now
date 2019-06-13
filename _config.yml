@@ -279,7 +279,7 @@ collections:
   android:
     output: true
     permalink: /:collection/:path/
-  iOS:
+  ios:
     output: true
     permalink: /:collection/:path/
   web:

@@ -2,7 +2,7 @@
 title: iOS
 layout: collection
 permalink: /iOS/
-collection: iOS
+collection: ios
 author_profile: true
 ---
 
