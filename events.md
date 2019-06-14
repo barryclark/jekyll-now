@@ -26,6 +26,9 @@ October 2 - 3:  OpenInfraDays Nordics, Stockholm
 October 8:  Cloud Native Revolution, Philadelphia
 * **Keynote**
 
+October 22 - 23:  Automotive Grade Linux All Member Meeting, Monte Carlo
+* **Keynote**
+
 October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 
 November 6: Cloud Native London
