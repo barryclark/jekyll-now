@@ -59,7 +59,7 @@ Arrays.stream(holders)
       .forEach(thisIsAnArray -> thisIsAnArray.length);
 ```
 
-Initially, I tried to call `[flatMap](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-)`, but that didn't work:
+Initially, I tried to call [`flatMap`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-), but that didn't work:
 
 ```java
 Arrays.stream(holders)
@@ -76,7 +76,7 @@ The type of getArray() from the type Main is Object[],
 this is incompatible with the descriptor's return type: Stream<? extends R>
 ```
 
-It does turn out that `flatMap` is what I wanted, I just needed to call it after the initial `[map](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#map-java.util.function.Function-)` call. `flatMap` takes a `Stream`, so I need to convert the array to a stream... Which I already know how to do, being that's what I started with:
+It does turn out that `flatMap` is what I wanted, I just needed to call it after the initial [`map`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#map-java.util.function.Function-) call. `flatMap` takes a `Stream`, so I need to convert the array to a stream... Which I already know how to do, being that's what I started with:
 
 ```java
 Arrays.stream(holders)
