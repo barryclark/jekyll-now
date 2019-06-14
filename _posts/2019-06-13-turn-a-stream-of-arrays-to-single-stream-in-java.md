@@ -51,7 +51,7 @@ Arrays.stream(holders)
       .map(ArrayHolder::getArray)
 ```
 
-But when I go to do something, say, with the `[forEach](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#forEach-java.util.function.Consumer-)` method, it wants to do things to the array, not the individual objects:
+But when I go to do something, say, with the [`forEach`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#forEach-java.util.function.Consumer-) method, it wants to do things to the array, not the individual objects:
 
 ```java
 Arrays.stream(holders)
