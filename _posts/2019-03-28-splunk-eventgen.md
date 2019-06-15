@@ -7,7 +7,7 @@ layout: post
 guid: https://agarciaizquierdo.github.io/2019/03/28/splunk-eventgen/
 permalink: /2019/03/28/splunk-eventgen/
 categories:
-  - Sin categoría
+  - Splunk
 tags:
   - Eventgen
   - generador eventos
