@@ -1,6 +1,8 @@
 ---
 layout: prjs
 title: My Second Project
+slug: proj
+name: Proj
 category: MyDegreeProject
 permalink: /projects/
 ---
