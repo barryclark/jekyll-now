@@ -28,7 +28,7 @@ The internal structure of a leaf was conceptualized using ASTM and AISC structur
 One leaf consists of 5 horizontal composite girders and 11 ST 10X33 Tee-girders. The horizontal composite girder is made from AISC MC 18 x 58 C-channel and ASTM W27 x 368 wide I-beam (For further details refer to the drawing package).
 
 ## Hinges
-<p align="center"><img src="/images/Degree-Proj-subassy.png" alt="Hinge subassembly" width="75%"></p>
+<p align="center"><img src="/images/Degree-Proj-subassy.png" alt="Hinge subassembly"></p>
 To allow for the rotation of the gate, we decided to go with the gudgeon and pintle on the top and bottom respectively. This configuration creates a pivot axis allowing the leaf to swing open/closed.
 
 The leaf sits on the pintle, which supports its full or reduced weight. The pintle assembly is made of a fixed base, a pintle sphere and a socket. The base is fixed to the ground while the pintle sphere is placed on top of it. Since it is immersed in water, a dynamic seal is used to ensure the grease is sealed off from the environment.
@@ -43,9 +43,6 @@ We started with an idea to extend the drydock by 40 feet, or about two adult gir
 In this post, I’ve shrunk the 189-page report to a digestible short article. The topics such as detailed design process, stress analysis, auxiliary components, actuation system, sealing methods, hydraulic system and cost analysis can be found in the full report below. The details of all the components can be found in the Drawing Package.
 If you have any questions or comments, don’t hesitate to write me a line.
 
-<p align="center">
-
-<a href="https://yev920418637.files.wordpress.com/2019/06/drydock-gate-degree-project-report.pdf">Drydock Gate – Degree Project Report</a>
+<p align="center"><a href="https://yev920418637.files.wordpress.com/2019/06/drydock-gate-degree-project-report.pdf">Drydock Gate – Degree Project Report</a></p>
 <br><br>
-<a href="https://yev920418637.files.wordpress.com/2019/06/dwg-package.pdf">DWG Package</a>
-</p>
+<p align="center"><a href="https://yev920418637.files.wordpress.com/2019/06/dwg-package.pdf">DWG Package</a></p>
