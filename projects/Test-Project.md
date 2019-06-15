@@ -1,6 +1,7 @@
 ---
 layout: prjs
-title: Projects
+title: My project
+category: MyDegreeProject
 permalink: /projects/
 ---
 
