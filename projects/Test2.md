@@ -4,7 +4,6 @@ title: My Second Project
 slug: proj
 name: Proj
 category: MyDegreeProject
-permalink: /projects/
 ---
 
 ### Some text for my second project
