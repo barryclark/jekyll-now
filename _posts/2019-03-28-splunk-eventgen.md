@@ -15,7 +15,7 @@ tags:
   - Splunk Español
 ---
 <div class="separator" style="clear:both;text-align:center;">
-  <a href="https://1.bp.blogspot.com/-UibNyg686CE/XJKdpDoQ-hI/AAAAAAABO0Y/QYyhTvh60aQ_RGeIZ0nHWF9zdC0zV46ZgCLcBGAs/s320/Captura.PNG" style="margin-left:1em;margin-right:1em;"><img border="0" height="122" src="https://agarciaizquierdo.github.io/2019/03/28/splunk-eventgen/" width="320" /></a>
+  <a href="https://1.bp.blogspot.com/-UibNyg686CE/XJKdpDoQ-hI/AAAAAAABO0Y/QYyhTvh60aQ_RGeIZ0nHWF9zdC0zV46ZgCLcBGAs/s320/Captura.PNG" style="margin-left:1em;margin-right:1em;"><img border="0" height="122" src="https://1.bp.blogspot.com/-UibNyg686CE/XJKdpDoQ-hI/AAAAAAABO0Y/QYyhTvh60aQ_RGeIZ0nHWF9zdC0zV46ZgCLcBGAs/s320/Captura.PNG" width="320" /></a>
 </div>
 
 Uno de los mayores problemas que nos podemos encontrar para hacer pruebas de **tiempo real** o demos, es la falta de alguna fuente que nos provea de estos eventos.  
