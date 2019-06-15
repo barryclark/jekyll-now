@@ -13,7 +13,7 @@ onload="if(submitted) {window.location='https://agarciaizquierdo.github.io/thank
       
       <label>Email</label>
       <input type="email" placeholder="Email" name="entry.1045781291" required><br>   
-      <label>Comentarios</label>      
+      <label>Comentarios</label><br>
       <textarea rows="5" placeholder="Comentarios" name="entry.839337160" required></textarea>           
       <button type="submit">Enviar</button>
 </form>
