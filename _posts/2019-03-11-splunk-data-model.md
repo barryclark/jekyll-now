@@ -50,7 +50,7 @@ Algunas de las ventajas de disponer de nuestro **Data Model**
 </div>
 
 <div class="separator" style="clear:both;text-align:center;">
-  <a href="http://alvarogarciahome.files.wordpress.com/2019/06/c6909-data_mode_export.png" style="margin-left:1em;margin-right:1em;"><img border="0" height="27" src="http://localhost/testsite/wp-content/uploads/2019/06/15f59-data_mode_export.png" width="400" /></a>
+  <a href="https://4.bp.blogspot.com/-iRhCr-HM9Ns/XIbPpu1jjTI/AAAAAAABOwU/HXWIuoPhpJkCCJbEgmLEKR-bM-EtMqIKQCLcBGAs/s400/data_mode_export.png" style="margin-left:1em;margin-right:1em;"><img border="0" height="27" src="https://4.bp.blogspot.com/-iRhCr-HM9Ns/XIbPpu1jjTI/AAAAAAABOwU/HXWIuoPhpJkCCJbEgmLEKR-bM-EtMqIKQCLcBGAs/s400/data_mode_export.png" width="400" /></a>
 </div>
 
 <div class="separator" style="clear:both;text-align:center;">
@@ -63,7 +63,7 @@ Algunas de las ventajas de disponer de nuestro **Data Model**
 
 
 <div class="separator" style="clear:both;text-align:center;">
-  <a href="http://alvarogarciahome.files.wordpress.com/2019/06/3efbe-data_mode_import.png" style="margin-left:1em;margin-right:1em;"><img border="0" height="18" src="http://localhost/testsite/wp-content/uploads/2019/06/c55f5-data_mode_import.png" width="400" /></a>
+  <a href="https://1.bp.blogspot.com/-QuUUeQ-kYR8/XIbPyeQA4_I/AAAAAAABOwY/vcX5reua9Lk4SSWant3qb0h09qnS6sDOgCLcBGAs/s400/data_mode_import.png" style="margin-left:1em;margin-right:1em;"><img border="0" height="18" src="https://1.bp.blogspot.com/-QuUUeQ-kYR8/XIbPyeQA4_I/AAAAAAABOwY/vcX5reua9Lk4SSWant3qb0h09qnS6sDOgCLcBGAs/s400/data_mode_import.png" width="400" /></a>
 </div>
 
 <div class="separator" style="clear:both;text-align:center;">
