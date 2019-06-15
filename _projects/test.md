@@ -2,8 +2,9 @@
 layout: post
 title: Getting Started with Machine Learning
 date: 2019-06-13
-category: Projects
+slug: Test-Project
+name: Test-Project
 published: true
 ---
 
-Test
+Test Project is a Test.
