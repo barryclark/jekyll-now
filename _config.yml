@@ -11,11 +11,6 @@ description: Mechanical engineering, programming, automation & Artificial Intell
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://yev-d.github.io/images/Selfie2019_Skype.jpg
 
-collections:
-  projects:
-    output: true
-    permalink: /blog/projects/:name/
-
 #
 # Flags below are optional
 #
