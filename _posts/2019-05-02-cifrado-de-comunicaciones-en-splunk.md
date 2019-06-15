@@ -4,7 +4,7 @@ title: Cifrado de comunicaciones en Splunk
 date: 2019-05-02T10:27:00+02:00
 author: Alvaro Garcia Izquierdo
 layout: post
-guid: http://alvarogarcia.home.blog/2019/05/02/cifrado-de-comunicaciones-en-splunk/
+guid: https://agarciaizquierdo.github.io/2019/05/02/cifrado-de-comunicaciones-en-splunk/
 permalink: /2019/05/02/cifrado-de-comunicaciones-en-splunk/
 categories:
   - Sin categoría
@@ -16,7 +16,7 @@ tags:
   - splunk forwarder
 ---
 <div class="separator" style="clear:both;text-align:center;">
-  <a href="http://localhost/testsite/wp-content/uploads/2019/06/a166f-00000000ec.jpg" style="margin-left:1em;margin-right:1em;"><img border="0" height="200" src="https://3.bp.blogspot.com/--p5WP-LRD-4/XMrF2Jx-oOI/AAAAAAABPG0/8ln9QYUIbrscsZ38TyPJxz7UYMqgz4yCgCLcBGAs/s320/00000000EC.jpg" width="320" /></a>
+  <a href="https://agarciaizquierdo.github.io/2019/05/02/cifrado-de-comunicaciones-en-splunk/" style="margin-left:1em;margin-right:1em;"><img border="0" height="200" src="https://3.bp.blogspot.com/--p5WP-LRD-4/XMrF2Jx-oOI/AAAAAAABPG0/8ln9QYUIbrscsZ38TyPJxz7UYMqgz4yCgCLcBGAs/s320/00000000EC.jpg" width="320" /></a>
 </div>
 
 Uno de los puntos mas importante en despliegues de **Splunk**, y algo que debería ser una costumbre en todos los primeros pasos de despliegues, es la instalación y configuración de certificados.  
