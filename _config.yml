@@ -12,7 +12,7 @@ description: Mechanical engineering, programming, automation & Artificial Intell
 avatar: https://yev-d.github.io/images/Selfie2019_Skype.jpg
 
 collections:
-  _projects:
+  projects:
     output: true
     permalink: /blog/projects/:name/
 
