@@ -4,7 +4,7 @@ title: Enviar email desde Qlik Sense
 date: 2019-04-04T07:00:00+02:00
 author: Alvaro Garcia Izquierdo
 layout: post
-guid: http://alvarogarcia.home.blog/2019/04/04/enviar-email-desde-qlik-sense/
+guid: https://agarciaizquierdo.github.io/2019/04/04/enviar-email-desde-qlik-sense/
 permalink: /2019/04/04/enviar-email-desde-qlik-sense/
 categories:
   - Sin categoría
@@ -15,7 +15,7 @@ tags:
   - trucos
 ---
 <div class="separator" style="clear:both;text-align:center;">
-  <a href="http://localhost/testsite/wp-content/uploads/2019/06/53078-sin2bt25c325adtulo.png" style="margin-left:1em;margin-right:1em;"><img border="0" src="http://localhost/testsite/wp-content/uploads/2019/06/53078-sin2bt25c325adtulo.png" /></a>
+  <a href="https://agarciaizquierdo.github.io/2019/04/04/enviar-email-desde-qlik-sense/" style="margin-left:1em;margin-right:1em;"><img border="0" src="https://4.bp.blogspot.com/-oe9ExQiO7Mo/XKIhv82e0EI/AAAAAAABO4A/v27f3LLVqNYDLqmuBt0f2zgdzRPm5iVPACLcBGAs/s1600/Sin%2Bt%25C3%25ADtulo.png" /></a>
 </div>
 
 Uno de los mayores problemas que me encontré al comenzar a trabajar con **Qlik**, es que por defecto, no tenia posibilidad de enviar informes por email o peor aun, enviar notificaciones de errores (problemas en la descarga de ficheros, errores de cambios de campos&#8230;) Para esto era necesario comprar otro producto, llamado <a href="https://www.qlik.com/es-es/products/nprinting" target="_blank" rel="noopener noreferrer"><b>Nprinting</b></a>.
