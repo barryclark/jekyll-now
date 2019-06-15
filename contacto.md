@@ -1,6 +1,6 @@
 
 
-Si estas aquí es que quieres contarme algo, puedes buscarme en [Linkedin](https://www.linkedin.com/in/alvaro-garcia-25803028/)
+Si estas aquí es que quieres contarme algo, puedes rellenar el formulario o buscarme en [Linkedin](https://www.linkedin.com/in/alvaro-garcia-25803028/)
 
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
@@ -11,9 +11,9 @@ onload="if(submitted) {window.location='https://agarciaizquierdo.github.io/thank
       <label>Nombre</label>
       <input type="text" placeholder="Nombre" name="entry.2005620554" required><br>
       
-      <label>Email </label>
+      <label>Email</label>
       <input type="email" placeholder="Email" name="entry.1045781291" required><br>   
-      <label>Comentarios1</label><br>
+      <label>Comentarios</label><br>
       <textarea rows="5" placeholder="Comentarios" name="entry.839337160" required></textarea><br>         
       <button type="submit">Enviar</button>
 </form>
