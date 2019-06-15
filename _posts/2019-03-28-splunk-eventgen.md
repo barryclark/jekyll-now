@@ -4,7 +4,7 @@ title: Splunk Eventgen
 date: 2019-03-28T06:16:00+02:00
 author: Alvaro Garcia Izquierdo
 layout: post
-guid: http://alvarogarcia.home.blog/2019/03/28/splunk-eventgen/
+guid: https://agarciaizquierdo.github.io/2019/03/28/splunk-eventgen/
 permalink: /2019/03/28/splunk-eventgen/
 categories:
   - Sin categoría
@@ -15,7 +15,7 @@ tags:
   - Splunk Español
 ---
 <div class="separator" style="clear:both;text-align:center;">
-  <a href="http://alvarogarciahome.files.wordpress.com/2019/06/3d6ed-captura.png" style="margin-left:1em;margin-right:1em;"><img border="0" height="122" src="http://localhost/testsite/wp-content/uploads/2019/06/3c37d-captura.png" width="320" /></a>
+  <a href="https://1.bp.blogspot.com/-UibNyg686CE/XJKdpDoQ-hI/AAAAAAABO0Y/QYyhTvh60aQ_RGeIZ0nHWF9zdC0zV46ZgCLcBGAs/s320/Captura.PNG" style="margin-left:1em;margin-right:1em;"><img border="0" height="122" src="https://agarciaizquierdo.github.io/2019/03/28/splunk-eventgen/" width="320" /></a>
 </div>
 
 Uno de los mayores problemas que nos podemos encontrar para hacer pruebas de **tiempo real** o demos, es la falta de alguna fuente que nos provea de estos eventos.  
