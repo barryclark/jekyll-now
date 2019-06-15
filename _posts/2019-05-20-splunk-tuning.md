@@ -15,7 +15,7 @@ tags:
   - Splunk ulimits
 ---
 <div class="separator" style="clear:both;text-align:center;">
-  <a href="http://localhost/testsite/wp-content/uploads/2019/06/a1d9a-performance-tunning_0.jpg" style="margin-left:1em;margin-right:1em;"><img border="0" height="243" src="https://3.bp.blogspot.com/-UveTvDXRjBU/XNrT03LazQI/AAAAAAABPRY/ok--aW6MAcMxsByDlh8KYZ0pB_aPOIUwACLcBGAs/s320/performance-tunning_0.jpg" width="320" /></a>
+  <a href="http://alvarogarcia.home.blog/2019/05/20/splunk-tuning/" style="margin-left:1em;margin-right:1em;"><img border="0" height="243" src="https://3.bp.blogspot.com/-UveTvDXRjBU/XNrT03LazQI/AAAAAAABPRY/ok--aW6MAcMxsByDlh8KYZ0pB_aPOIUwACLcBGAs/s320/performance-tunning_0.jpg" width="320" /></a>
 </div>
 
 Siempre que realizamos una implementación de **Splunk**, u otro producto, una de las cosas que debemos cuidar es el tuning y aplicar las mejores practicas recomendadas por el fabricante.  
