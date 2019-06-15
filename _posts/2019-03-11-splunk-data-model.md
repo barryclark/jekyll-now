@@ -4,7 +4,7 @@ title: Splunk Data Model
 date: 2019-03-11T21:23:00+02:00
 author: Alvaro Garcia Izquierdo
 layout: post
-guid: http://alvarogarcia.home.blog/2019/03/11/splunk-data-model/
+guid: https://agarciaizquierdo.github.io/2019/03/11/splunk-data-model/
 permalink: /2019/03/11/splunk-data-model/
 categories:
   - Sin categoría
@@ -14,7 +14,7 @@ tags:
   - Splunk Español
 ---
 <div class="separator" style="clear:both;text-align:center;">
-  <a href="http://localhost/testsite/wp-content/uploads/2019/06/bf221-data_model.jpg" style="margin-left:1em;margin-right:1em;"><img border="0" height="225" src="http://alvarogarciahome.files.wordpress.com/2019/06/58c74-data_model.jpg" width="400" /></a>
+  <a href="https://2.bp.blogspot.com/-gX_U0IJsqv0/XIbQUsC6IcI/AAAAAAABOwk/V8Lnut2wbckcudBXgnFTZJ-Pma_LVBmoACLcBGAs/s1600/data_model.jpg" style="margin-left:1em;margin-right:1em;"><img border="0" height="225" src="https://2.bp.blogspot.com/-gX_U0IJsqv0/XIbQUsC6IcI/AAAAAAABOwk/V8Lnut2wbckcudBXgnFTZJ-Pma_LVBmoACLcBGAs/s1600/data_model.jpg" width="400" /></a>
 </div>
 
 Los &#171;**Data Model**&#187; de **Splunk**  nos pueden servir de gran ayuda en muchos proyectos, en el caso de tener un gran cantidad de registros (miles de millones). Aunque esta es una novedad introducida hace tiempo, aún existen despliegues donde no se usan, es bastante habitual verlo en las App de seguridad, como por ejemplo **<a href="https://splunkbase.splunk.com/app/491/" target="_blank" rel="noopener noreferrer">Palo Alto</a>**  
