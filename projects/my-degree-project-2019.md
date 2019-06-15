@@ -45,7 +45,7 @@ If you have any questions or comments, don’t hesitate to write me a line.
 
 <p align="center">
 
-[Drydock Gate – Degree Project Report](https://yev920418637.files.wordpress.com/2019/06/drydock-gate-degree-project-report.pdf)
-
-[DWG Package](https://yev920418637.files.wordpress.com/2019/06/dwg-package.pdf)
+<a href="https://yev920418637.files.wordpress.com/2019/06/drydock-gate-degree-project-report.pdf">Drydock Gate – Degree Project Report</a>
+<br><br>
+<a href="https://yev920418637.files.wordpress.com/2019/06/dwg-package.pdf">DWG Package</a>
 </p>
