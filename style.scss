@@ -30,12 +30,6 @@ body {
   width: 100%;
 }
 
-.with-photo:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Ensure we don't have skinny columns of text next to photos */
 .entry p:before,
 .entry h1:before,

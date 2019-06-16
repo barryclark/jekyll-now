@@ -24,14 +24,41 @@ a service call and "hey presto" my new code runs (or fails, hopefully spectacula
 My code changes also need to persist so I can check them into github or bitbucket once
 I reach a point where something useful is completed, unit tests run etc. 
 
-Using host storage directly from a containers is not a solution: kubernetes typically runs on a cluster 
-across multiple nodes, so host storage cannot be shared reliably across containers. 
+Using host storage directly from a container is not a solution: kubernetes preferably runs on a cluster 
+spanning multiple nodes, so host storage cannot be shared reliably across containers. 
 
 [Skaffold](https://skaffold.dev) can provide real-time sync from your local machine to kubernetes pods, and this is fine if
 you have a fully-fledged *nix commandline at your disposal and can satisfy the laundry list
 of dependencies. But I want something simple and portable that could conceivably work on an iPad. 
 
 This is my starting point. 
+
+## For the impatient
+
+To try it out, assuming you have a Kubernetes cluster running:
+```
+$ git clone git@github.com:drpump/devkube-yaml && cd devkube-yaml
+$ kubectl apply -f nfs-volume.yml 
+$ kubectl apply -f nfs.yml 
+$ kubectl apply -f nfs-service.yml 
+### wait for the service setup to complete and find the NFS node internal IP address
+$ kubectl describe services
+$ vi web-pod.yml  ### set the NFS server IP address 
+$ vi alpine.yml   ### set the NFS server IP address
+$ kubectl apply -f web-service.yml 
+$ kubectl apply -f alpine.yml 
+$ kubectl describe nodes | grep ExternalIP  ### get the external node IP addresses
+### open http://<external_ip>:30080 in your browser
+$ kubectl get pods
+$ kubectl exec <alpine_pod_id> -it /bin/ash
+...
+root# cat > /mnt/nfs/index.html
+Hello from kubernetes
+^D
+root# exit
+...
+### refresh your browser window
+```
 
 ## The components
 
