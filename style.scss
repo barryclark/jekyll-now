@@ -25,9 +25,35 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 1080px;
+  padding: 0 3ex;
   width: 100%;
+}
+
+.with-photo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Ensure we don't have skinny columns of text next to photos */
+.entry p:before,
+.entry h1:before,
+.entry h2:before,
+.entry h3:before,
+.entry h4:before,
+.entry h5:before,
+.entry h6:before {
+	content: "";
+	width: 10ex;
+	display: block;
+	overflow: hidden;
+}
+
+div.photo-inline {
+	float: right; 
+  padding: 0 0 2ex 1ex;
+  width: 50%;
 }
 
 h1, h2, h3, h4, h5, h6 {
