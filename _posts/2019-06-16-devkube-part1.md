@@ -9,6 +9,8 @@ photo-meta: Pana GX7, Pana 12-32mm, 2019 Stanwell Tops, NSW Australia
 Create a kubernetes cluster that includes a writable, persistent NFS service so that you can 
 develop applications inside kubernetes. 
 
+See https://github.com/drpump/devkube-yaml/ for source. 
+
 ## Overview
 
 Most of my software nowadays is being deployed 
@@ -64,7 +66,7 @@ and partly because I can automate the provisioning of the service.
 
 Kubernetes has a nice abstraction for storage called a _Persistent Volume Claim_, and most
 cloud providers have a way to encapsulate their persistent storage using this abstraction.
-The [Digital Ocean](https://www.digitalocean.com/products/kubernetes/) variation looks like this:
+The [Digital Ocean](https://www.digitalocean.com/products/kubernetes/) variation looks like this ([nfs-volume.yml](http://github.com/drpump/devkube-yaml/blob/master/nfs-volume.yml)):
 
 ```
 apiVersion: v1
@@ -85,12 +87,12 @@ configuration should be possible in other kubernetes environments, including Min
 it in a _Persistent Volume Claim_ isolates our dependency on Digital Ocean so the remainder of the configuration 
 should work in any kubernetes environment. 
 
-The NFS server deployment looks like this:
+The NFS server deployment looks like this ([nfs.yml](http://github.com/drpump/devkube-yaml/blob/master/nfs.yml)):
 
 ```
 apiVersion: extensions/v1beta1
 kind: Deployment
-metadata:
+metadata:s
   name: nfs
 spec:
   replicas: 1
@@ -136,7 +138,7 @@ to be one instance, but general advice from the 'net is to use `Deployment`.
 ## The tricky part: nfs kubernetes services
 
 To make this NFS share available to other pods in the cluster, we also need to create a kubernetes service 
-using the following configuration:
+using the following configuration ([nfs-service.yml](http://github.com/drpump/devkube-yaml/blob/master/nfs-service.yml)):
 
 ```
 apiVersion: v1
@@ -195,7 +197,7 @@ Endpoints:  10.244.1.24:2049
 ```
 
 Look for one of the `Endpoints: ` lines in the service description and add the IP address to the
-nginx configuration then deploy:
+nginx configuration then deploy ([web-pod.yml](http://github.com/drpump/devkube-yaml/blob/master/web-pod.yml)):
 
 ```
 apiVersion: extensions/v1beta1
@@ -230,7 +232,7 @@ Note that we're mounting `/` from the NFS service on the nginx `html` directory,
 NFS share will become accessible through the web service. A subordinate directory could be used if desired 
 to limit the scope (e.g. `/html/`).
 
-Our nginx server should be running so now we need to define a service so that it is accessible:
+Our nginx server should be running so now we need to define a service so that it is accessible ([web-service.yml](http://github.com/drpump/devkube-yaml/blob/master/web-service.yml)):
 ```
 apiVersion: v1
 kind: Service
@@ -257,8 +259,12 @@ We actually want to make the service visible outside the cluster, which is done 
   If you don't specify a nodePort, kubernetes will allocate one automatically and you can use `kubectl get services` 
   to find it. 
 
-Thus if we have a node with the IP address `245.122.10.11` allocated to our cluster, we can navigate to 
-`http://245.122.10.11:30080/` and see the default nginx home page.
+To find the node IP addresses, run 
+```
+$ kubectl describe nodes | grep ExternalIP
+```
+Say we have a node with the IP address `245.122.10.11`, we can navigate to `http://245.122.10.11:30080/` and 
+see the default nginx home page.
 
 You can use more usual port numbers (i.e. 80, 443) through configuration of a kubernetes _ingress_ controller. 
 Depending on the controller chosen, it can automate the deployment of certificates etc. Services can alternatively
@@ -269,7 +275,7 @@ but remember that it's not private.
 
 So we now have an application server serving content from a writable NFS share. We need a way to get content onto the share. 
 It's also kinda handy to have an accessible container in the cluster with a few tools you can use for debugging and testing. 
-For this purpose, I've deployed a minimalist Alpine Linux container as follows:
+For this purpose, I've deployed a minimalist Alpine Linux container as follows ([alpine.yml](http://github.com/drpump/devkube-yaml/blob/master/alpine.yml)):
 ```
 apiVersion: extensions/v1beta1
 kind: Deployment
