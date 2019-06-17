@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Get guidance on Call For Proposal
+title: Get guidance on submitting CfP
 permalink: /cfp-review/
 ---
 
