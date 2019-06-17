@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Request end user KubeCon CFP feedback
-permalink: /kubeconcfp/
+title: Get guidance on Call For Proposal
+permalink: /cfp-review/
 ---
 
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/cjhung/kubecon-cfp-review" style="min-width:320px;height:580px;"></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/cjhung/cfp-review" style="min-width:320px;height:580px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 <!-- Calendly inline widget end -->
