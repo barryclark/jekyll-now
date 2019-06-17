@@ -24,7 +24,7 @@ I'm going to group the debts not normally thought of as debt into two groups: *d
 
 ### Sit-Down Restaurants
 
-![Cafe table and chairs by engin akyurt from Pixabay](/images/cafe/jpg)
+![Cafe table and chairs by engin akyurt from Pixabay](/images/cafe.jpg)
 *Cafe table and chairs by [engin akyurt](https://pixabay.com/users/Engin_Akyurt-3656355/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2707758) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2707758)*
 
 #### How is it debt?
@@ -77,7 +77,7 @@ Check out some online resources such as this article [Get Help With Your Energy 
 
 ### Doctor bills
 
-[Stethoscope by estableman from Pixabay](/images/stethoscope.jpg)
+![Stethoscope by estableman from Pixabay](/images/stethoscope.jpg)
 *Image by [estableman](https://pixabay.com/users/estableman-5508870/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2359757) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2359757)*
 
 #### How is it debt?
