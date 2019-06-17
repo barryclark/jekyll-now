@@ -4,8 +4,8 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
-      <div style="float: right; width: 20%"><img src="/photos/{{post.photo}}"/></div>
+    <article class="post clearfix">
+      <div class="thumbnail"><img src="/photos/{{post.photo}}"/></div>
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 

@@ -50,6 +50,19 @@ div.photo-inline {
   width: 50%;
 }
 
+div.thumbnail {
+  margin: 1em 0;
+  vertical-align: middle;
+  float: right; 
+  padding: 2ex 0 0.5ex 0.5ex;
+  width: 20%
+}
+
+div.thumbnail img {
+  border:1px solid #999999; 
+  padding: 0.3ex
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
