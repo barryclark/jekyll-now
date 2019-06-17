@@ -49,7 +49,7 @@ After a one-time manual download and install of the `%install_github` macro itse
 ## Examples!
 
 For demonstration, let's generate graphical data codebooks in both R and SAS.
-Rho developed an R package named (datadigest)[https://github.com/RhoInc/datadigest] that produces an interactive summary of a tabular dataset by column:
+Rho developed an R package named [datadigest](https://github.com/RhoInc/datadigest) that produces an interactive summary of a tabular dataset by column:
 
 ```R
 devtools::install_github(
