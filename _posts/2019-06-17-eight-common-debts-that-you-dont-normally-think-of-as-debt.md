@@ -126,7 +126,7 @@ However, if you truly can't pay, and the shop is at least someone honest, they w
 
 If the cost is more than what you expected, you may have some rights. In most places, car repairs shouldn't cost more than 10% of the estimate. If it will cost more than 10%, then the shop should provide another estimate (it might be over the phone, though). They also shouldn't do unauthorized repairs - or at least charge you unauthorized repairs.
 
-#### Further resources
+#### Further Resources
 
 * [Car Repairs and the Law](https://consumer.findlaw.com/lemon-law/car-repairs-and-the-law.html)
 * [Mechanics' liens and repair shop repossession?](https://www.austinchronicle.com/columns/2004-02-27/198915/)
@@ -185,6 +185,9 @@ Keep in mind that the bank doesn't keep enough to give everyone all of their mon
 * [Bank Failure](https://www.investopedia.com/terms/b/bank-failure.asp)
 
 ### Gift Cards
+
+![Gift card rack at my local Kroger store.](/images/gift-cards.jpg)
+*Gift card rack at my local Kroger store.*
 
 #### How is it debt?
 
