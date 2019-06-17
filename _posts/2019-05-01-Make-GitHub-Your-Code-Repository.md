@@ -7,19 +7,76 @@ Downloading code from [GitHub](https://github.com/)® manually is straightforwar
 However, because this process is manual it needs to be repeated whenever the repository changes, such as when the developer applies bug fixes or incorporates new features.
 SAS® and R provide users the tools to programmatically download and source repositories housed on GitHub.
 
-
-
-SAS and R both have a base set of functionality, but they differ in that R provides access to user-created packages, code bundles that extend R’s functionality, hosted on services like the [Comprehensive R Archive Network](https://cran.r-project.org/) (CRAN) and GitHub.
+SAS and R both have a base set of functionality, but they differ in that R provides access to user-created packages, code bundles that extend R's functionality, hosted on services like the [Comprehensive R Archive Network](https://cran.r-project.org/) (CRAN) and GitHub.
 CRAN hosts established, vetted packages while GitHub tends to host more developmental packages.
 GitHub is not limited to R code, however, so the macro described in this paper extends to SAS access to remote code repositories so ingrained in R development.
 
-SAS users typically store reusable SAS programs in directories known as AUTOCALL libraries.
-These code repositories might reside on the programmer’s computer or on a network drive, and are generally developed in isolation, by a single programmer or within a single organization.
-R users, meanwhile, pull reusable code down from CRAN.
-Hosting services provide easy and universal access to codebases, and require only an internet connection.
+## Sourcing Code from GitHub
 
-GitHub is a programming language-agnostic hosting service that allows users to store and access code in the cloud.
-It leverages Git, an open-source version control system, to track and control changes to the code.
-Storing code remotely allows the programmer to access, modify, and run it from any workstation with an internet connection.
-Additionally Git tracks every change to the code and makes available every version, tracked in a commit history.
-If a newer version causes problems the user can easily revert to an earlier version.
+In R, the [devtools package](https://cran.r-project.org/web/packages/devtools/index.html) contains a function named `install_github` that allows users to automate the installation of packages directly from GitHub:
+
+```R
+# Install and source the devtools package.
+install.packages("devtools") 
+library(devtools) 
+
+# Call install_github to download a repository directly from GitHub and then source it.
+install_github("RhoInc/datadigest") 
+library(datadigest)
+```
+
+SAS lacks built-in functionality to simultaneously download and install code from GitHub, which prompted the creation of the SAS macro `%install_github` (available at [RhoInc/sas-install-github](https://github.com/RhoInc/sas-install-github)).
+This macro behaves much like the corresponding R package.
+After a one-time manual download and install of the `%install_github` macro itself, SAS users are henceforth able to use the macro to automagically download and install other SAS code directly from GitHub.
+
+```SAS
+* Source the install_github program;
+%include "my/utility/macros/install_github.sas";
+
+* Call install_github to download and source a .sas file directly from GitHub;
+%install_github(
+    repo = RhoInc/violinPlot,
+    file = src/violinPlot.sas
+); 
+
+* or to download and source a collection of .sas files stored in a single folder;
+%install_github(
+    repo = RhoInc/sas-codebook,
+    folder = Macros
+); 
+```
+
+## Examples!
+
+For demonstration, let's generate graphical data codebooks in both R and SAS.
+Rho developed an R package named (datadigest)[https://github.com/RhoInc/datadigest] that produces an interactive summary of a tabular dataset by column:
+
+```R
+devtools::install_github(
+  'RhoInc/datadigest'
+)
+
+datadigest::codebook(
+  data = mtcars
+)
+```
+
+<img style="border:2px solid #999" src="{{ site.baseurl }}/images/2019-05-01-Make-GitHub-Your-Code-Repository-r-example.png" align="center" />
+
+With the same idea in mind Rho also developed a SAS package that produces static summaries of SAS datasets by variable:
+
+```SAS
+%install_github(
+  repo = RhoInc/sas-codebook,
+  folder = Macros
+);
+
+%codebook_generic(
+  data = sashelp.cars
+);
+```
+<img style="border:2px solid #999" src="{{ site.baseurl }}/images/2019-05-01-Make-GitHub-Your-Code-Repository-sas-example.png" align="center" />
+
+To access R or SAS code directly from GitHub without the hassle of a manual download, use the `install_github` function from the R package devtools or the SAS macro `%install_github` to help automate the process.
+With these functions, programmers can access and continue their work anywhere with an internet connection, effectively becoming workstation-agnostic.
+GitHub�s API extends the advantage of remote code repositories to SAS users, a capability R users have enjoyed for years.
