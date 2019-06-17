@@ -1,0 +1,20 @@
+- title: 개발공부
+  url: /study.html
+  sublinks:
+    - title: Javascript
+      url: /javascript.html
+    - title: Node.js
+      url: /nodeJs.html
+    - title: React
+      url: /react.html
+    - title: React Native
+      url: /reactNative.html
+- title: 프로젝트
+  url: /project.html
+  sublinks:
+    - title: 여행직구앱
+      url: /fetch.html
+- title: TIL
+  url: /til.html
+- title: Life in Jeju
+  url: /nomad.html
