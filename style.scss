@@ -21,6 +21,7 @@ body {
   background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  height: 100vh;
 }
 
 .container {
@@ -85,7 +86,7 @@ a {
 
 ul,
 ol {
-  margin: 15px 0;
+  margin: 10px 0;
   padding-left: 30px;
 }
 
@@ -129,7 +130,7 @@ img {
 }
 
 .date {
-  font-style: italic;
+  font-size: 14px;
   color: $gray;
 }
 
@@ -178,8 +179,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   margin-right: 15px;
 
   @include mobile {
@@ -192,7 +193,15 @@ img {
     border-radius: 5px;
   }
 }
-
+.email_icon {
+  width: 25px;
+  margin-bottom: -2px;
+}
+.vertical_line {
+  height: 18px;
+  margin-left: 20px;
+  margin-bottom: -3px;
+}
 .site-info {
   float: left;
 
@@ -285,15 +294,38 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
+  }
+
+  .tag {
+    display: inline;
+    font-weight: 300;
+    font-size: 12px;
+
+    li:before {
+      content: " ";
+    }
+
+    li {
+      display: inline;
+      margin: 0;
+
+      > a {
+        margin: 3px 3px 3px 0;
+        padding: 5px 7px;
+        color: #282828;
+        background-color: #e9ecef;
+        border-radius: 5px;
+      }
+    }
   }
 }
 
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  // border-bottom: 1px solid #ddd;
+  background-color: $white;
 }
 
 footer {
