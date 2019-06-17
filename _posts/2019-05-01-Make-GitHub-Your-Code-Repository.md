@@ -83,4 +83,4 @@ With the same idea in mind Rho also developed a SAS package that produces static
 
 To access R or SAS code directly from GitHub without the hassle of a manual download, use the `install_github` function from the R package remotes or the SAS macro `%install_github` to help automate the process.
 With these functions, programmers can access and continue their work anywhere with an internet connection, effectively becoming workstation-agnostic.
-GitHub’s API extends the advantage of remote code repositories to SAS users, a capability R users have enjoyed for years.
+GitHub's API extends the advantage of remote code repositories to SAS users, a capability R users have enjoyed for years.
