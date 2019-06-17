@@ -53,29 +53,29 @@ Rho developed an R package named (datadigest)[https://github.com/RhoInc/datadige
 
 ```R
 devtools::install_github(
-  'RhoInc/datadigest'
+    'RhoInc/datadigest'
 )
 
 datadigest::codebook(
-  data = mtcars
+    data = mtcars
 )
 ```
 
-<img style="border:2px solid #999" src="{{ site.baseurl }}/images/2019-05-01-Make-GitHub-Your-Code-Repository-r-example.png" align="center" />
+<img style="margin:0 auto" src="{{ site.baseurl }}/images/2019-05-01-Make-GitHub-Your-Code-Repository-r-example.png" align="center" />
 
 With the same idea in mind Rho also developed a SAS package that produces static summaries of SAS datasets by variable:
 
 ```SAS
 %install_github(
-  repo = RhoInc/sas-codebook,
-  folder = Macros
+    repo = RhoInc/sas-codebook,
+    folder = Macros
 );
 
 %codebook_generic(
-  data = sashelp.cars
+    data = sashelp.cars
 );
 ```
-<img style="border:2px solid #999" src="{{ site.baseurl }}/images/2019-05-01-Make-GitHub-Your-Code-Repository-sas-example.png" align="center" />
+<img style="margin:0 auto" src="{{ site.baseurl }}/images/2019-05-01-Make-GitHub-Your-Code-Repository-sas-example.png" align="center" />
 
 To access R or SAS code directly from GitHub without the hassle of a manual download, use the `install_github` function from the R package devtools or the SAS macro `%install_github` to help automate the process.
 With these functions, programmers can access and continue their work anywhere with an internet connection, effectively becoming workstation-agnostic.
