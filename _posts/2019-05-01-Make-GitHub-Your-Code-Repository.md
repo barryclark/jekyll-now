@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Make GitHub Your Code Repository
+author: Spencer Childress
 ---
 
-Downloading code from [GitHub](https://github.com/)® manually is straightforward: navigate to the repository website, download the ZIP file, and extract it to your working directory.
+Downloading code from [GitHub](https://github.com/)Â® manually is straightforward: navigate to the repository website, download the ZIP file, and extract it to your working directory.
 However, because this process is manual it needs to be repeated whenever the repository changes, such as when the developer applies bug fixes or incorporates new features.
-SAS® and R provide users the tools to programmatically download and source repositories housed on GitHub.
+SASÂ® and R provide users the tools to programmatically download and source repositories housed on GitHub.
 
 SAS and R both have a base set of functionality, but they differ in that R provides access to user-created packages, code bundles that extend R's functionality, hosted on services like the [Comprehensive R Archive Network](https://cran.r-project.org/) (CRAN) and GitHub.
 CRAN hosts established, vetted packages while GitHub tends to host more developmental packages.
@@ -79,4 +80,4 @@ With the same idea in mind Rho also developed a SAS package that produces static
 
 To access R or SAS code directly from GitHub without the hassle of a manual download, use the `install_github` function from the R package devtools or the SAS macro `%install_github` to help automate the process.
 With these functions, programmers can access and continue their work anywhere with an internet connection, effectively becoming workstation-agnostic.
-GitHub’s API extends the advantage of remote code repositories to SAS users, a capability R users have enjoyed for years.
+GitHubâ€™s API extends the advantage of remote code repositories to SAS users, a capability R users have enjoyed for years.
