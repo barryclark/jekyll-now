@@ -3,9 +3,9 @@ layout: post
 title: Make GitHub Your Code Repository
 ---
 
-Downloading code from [GitHub](https://github.com/)Â® manually is straightforward: navigate to the repository website, download the ZIP file, and extract it to your working directory.
+Downloading code from [GitHub](https://github.com/)® manually is straightforward: navigate to the repository website, download the ZIP file, and extract it to your working directory.
 However, because this process is manual it needs to be repeated whenever the repository changes, such as when the developer applies bug fixes or incorporates new features.
-SASÂ® and R provide users the tools to programmatically download and source repositories housed on GitHub.
+SAS® and R provide users the tools to programmatically download and source repositories housed on GitHub.
 
 SAS and R both have a base set of functionality, but they differ in that R provides access to user-created packages, code bundles that extend R's functionality, hosted on services like the [Comprehensive R Archive Network](https://cran.r-project.org/) (CRAN) and GitHub.
 CRAN hosts established, vetted packages while GitHub tends to host more developmental packages.
