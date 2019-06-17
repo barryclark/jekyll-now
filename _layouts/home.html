@@ -2,12 +2,21 @@
 layout: archive
 ---
 
-{{ content }}
+{% capture written_label %}'None'{% endcapture %}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
+{% for collection in site.collections %}
+  {% if collection == android %}
+    {% unless collection.output == false or collection.label == "posts" %}
+      {% capture label %}{{ collection.label }}{% endcapture %}
+      {% if label != written_label %}
+        <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
+        {% capture written_label %}{{ label }}{% endcapture %}
+      {% endif %}
+    {% endunless %}
+    {% for post in collection.docs %}
+      {% unless collection.output == false or collection.label == "posts" %}
+        {% include archive-single.html %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}
-
-{% include paginator.html %}

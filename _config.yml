@@ -107,9 +107,6 @@ author:
   location         : "China"
   email            : "venciallee@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:venciallee@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "http://vencial.com"

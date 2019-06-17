@@ -2,7 +2,7 @@
 main:
   - title: "Android"
     url: /android/
-  - title: "Web"
+  - title: "大前端"
     url: /web/
   - title: "iOS"
     url: /iOS/
