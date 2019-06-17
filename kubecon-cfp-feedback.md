@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Get guidance on submitting CfP
 permalink: /cfp-review/
 ---
 
