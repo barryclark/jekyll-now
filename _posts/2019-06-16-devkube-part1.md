@@ -361,7 +361,7 @@ place of the default nginx page.
 We've created a simple, writable development environment using kubernetes in the cloud. Our code is stored 
 safely on a persistent volume hosted by the cloud provider. We can start and stop our cluster at any time.
 
-What's good about this:
+#### The good
 * I can develop from anywhere provided I'm able to bootstrap the cluster (at present using kubectl) and
   upload or edit the content.  
 * My development environment is now somewhat closer to what we actually use in production. And with a bit
@@ -373,7 +373,7 @@ What's good about this:
 * I no longer need a $5K laptop to get the grunt required for software development.
 * It's quick and easy to fire up a development environment for a newly hired developer.
 
-What's missing or wrong:
+#### The bad
 * _(rant)_ I detest writing boatloads of boilerplate YAML code. _Programming the infrastructure_ (sic)
   is really a bit of a farce at present and an anathema to good coding and DRY principles (*D*on't 
   *R*epeat *Y*ourself). My next version of this will be in Ruby or Python, which have fairly elegant 
@@ -387,7 +387,7 @@ What's missing or wrong:
   cluster using ssh or the `kubect proxy` command. I prefer https since this is more easily shared
   with co-workers. 
   
-And for the future:
+#### The future
 * We need to add databases, cache servers etc to provide a realistic environment. For development,
   I lean towards running these in containers within the cluster. This ensures portability 
   across cloud platforms, although might look less like production if you're using cloud database
