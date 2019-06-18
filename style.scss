@@ -446,12 +446,14 @@ nav {
 //   min-height: 360px;
 // }
 .notice {
+  font-family: $Spoqa;
+  font-weight: thin;
+
   text-align: center;
-  margin-top: 2em;
+  margin-top: 4em;
   .comingSoon {
     font-size: 2em;
-    font-weight: thin;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
   img {
     width: 100%;
