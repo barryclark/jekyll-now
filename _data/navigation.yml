@@ -1,5 +1,5 @@
 - title: 개발공부
-  url: /study.html
+  url: /study
   sublinks:
     - title: 컴퓨터 공학 / 네트워크
       url: /computerScience.html
@@ -12,13 +12,13 @@
     - title: React Native
       url: /reactNative.html
 - title: 프로젝트
-  url: /project.html
+  url: /project
   sublinks:
     - title: 블로그 생성기
       url: /blogWithJekyll.html
     - title: 여행직구앱
       url: /fetch.html
 - title: TIL
-  url: /til.html
+  url: /til
 - title: Life in Jeju
-  url: /nomad.html
+  url: /nomad

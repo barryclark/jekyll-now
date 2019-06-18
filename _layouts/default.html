@@ -30,10 +30,11 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/study">개발공부</a>
-            <a href="{{ site.baseurl }}/프로젝트">프로젝트</a>
-            <a href="{{ site.baseurl }}/TIL">TIL</a>
-            <a href="{{ site.baseurl }}/jeju">Life in Jeju</a>
+              <span>
+            {% for item in site.data.navigation %}
+            <a href="{{ site.baseurl }}{{item.url}}">{{item.title}}</a>
+            {% endfor %}
+            <span>
             <img
               src="{{ site.baseurl }}/images/vertical_line.png"
               class="vertical_line"
