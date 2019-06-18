@@ -238,7 +238,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 20px; // @TODO: Vertically middle align
+  margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -275,6 +275,7 @@ nav {
 
 // }
 .posts > .post {
+  margin-top: 1.5em;
   font-family: $helveticaNeue;
   padding: 2.5em 2em;
   border: 1px solid #ebebeb;
@@ -306,7 +307,6 @@ nav {
 
 .posts > .post:first-child {
   font-family: $helveticaNeue;
-
   margin-top: 4em;
   // border-bottom: none;
 }
@@ -410,6 +410,31 @@ nav {
       }
     }
   }
+}
+
+.post-lists > .post-list {
+  font-family: $helveticaNeue;
+  color: $primary;
+  border-bottom: 2px solid $lightGray;
+  padding: 0;
+  margin: 2em 0.5em 0;
+
+  .listTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 1em;
+  }
+  .listEntry {
+    font-size: 16px;
+  }
+  .date {
+    padding: 1.2em 0 2em;
+    color: $gray;
+  }
+}
+
+.post-lists > .post-list:last-child {
+  border-bottom: none;
 }
 
 .wrapper-footer {

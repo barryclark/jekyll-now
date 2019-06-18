@@ -2,6 +2,20 @@
 layout: default
 ---
 
-<ul id="post-list">
-  {% for post in site.categories.Study %} {% endfor %}
-</ul>
+<div class="post-lists">
+  {% for post in site.categories.study %}
+  <ul class="post-list">
+    <div class="aListBox">
+      <div class="listTitle">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </div>
+      <div class="listEntry">
+        {{ post.excerpt }}
+      </div>
+      <div class="date">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </div>
+    </div>
+  </ul>
+  {% endfor %}
+</div>

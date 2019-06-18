@@ -6,30 +6,27 @@ layout: default
   {% for post in site.posts %}
   <article class="post">
     <div class="entryTitleDev">
-        <span class="entryTitle">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          </span>
-      
-          <span class="meta">
-            <!-- <span class="date">
+      <span class="entryTitle">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </span>
+      <span class="meta">
+        <!-- <span class="date">
               {{ post.date | date: "%Y-%m-%d" }}
             </span> -->
-            <ul class="tag">
-              {% for tag in post.tags %}
-              <li>
-                <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-                  {{ tag }}
-                </a>
-              </li>
-              {% endfor %}
-            </ul>
-          </span>
+        <ul class="tag">
+          {% for tag in post.tags %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+              {{ tag }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </span>
     </div>
 
-
     <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      {{ post.excerpt }}
     </div>
 
     <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
