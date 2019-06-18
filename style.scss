@@ -269,23 +269,85 @@ nav {
 //
 
 .posts > .post {
+  font-family: $helveticaNeue;
+
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
+  font-family: $helveticaNeue;
+
   padding-bottom: 1em;
   border-bottom: none;
 }
 
 .post {
+  font-family: $helveticaNeue;
+  line-height: 1.7;
+  color: $primary;
+
+  h1 {
+    font-family: $helveticaNeue;
+    color: $primary;
+    font-weight: bold;
+
+    line-height: 1.7;
+    margin: 1.5em 0 0.25em;
+    padding: 0;
+  }
+  .date {
+    margin: 0.8em 0 3em;
+  }
+  h2 {
+    font-family: $helveticaNeue;
+    color: $primary;
+    font-weight: bold;
+
+    line-height: 1.7;
+    margin: 2.5em 0 1em;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 0.5em;
+  }
+  h3 {
+    font-family: $helveticaNeue;
+    color: $primary;
+    font-weight: bold;
+
+    line-height: 1.7;
+    margin: 2.5em 0 1em;
+    padding-bottom: 0.5em;
+  }
   blockquote {
+    line-height: 1.4;
     margin: 1.8em 0.8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
+    margin-left: 0px;
+    border-left: 4px solid $mainPurple;
+    padding-left: 0px;
+    padding: 0.5em 2em;
     color: $gray;
-    font-size: 22px;
+    font-size: 20px;
     font-style: italic;
+    background-color: $bgGray;
+  }
+  a {
+    text-decoration: underline;
+  }
+  hr {
+    margin: 2em 0;
+  }
+  .innerBox {
+    line-height: 1.7;
+    font-size: 16px;
+    margin: 1.8em 0em;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding: 1.5em 2em;
+    background-color: $bgGray;
+  }
+  img {
+    margin-top: 1.6em;
+    margin: 0.9em 1.2em;
   }
 
   .comments {
