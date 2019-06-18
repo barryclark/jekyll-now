@@ -1,6 +1,8 @@
 - title: 개발공부
   url: /study.html
   sublinks:
+    - title: 컴퓨터 공학 / 네트워크
+      url: /computerScience.html
     - title: Javascript
       url: /javascript.html
     - title: Node.js
@@ -12,6 +14,8 @@
 - title: 프로젝트
   url: /project.html
   sublinks:
+    - title: 블로그 생성기
+      url: /blogWithJekyll.html
     - title: 여행직구앱
       url: /fetch.html
 - title: TIL
