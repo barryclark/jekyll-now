@@ -1,7 +1,7 @@
 - title: 개발공부
   url: /study
   sublinks:
-    - title: 컴퓨터 공학 / 네트워크
+    - title: 컴퓨터 공학
       url: /computerScience.html
     - title: Javascript
       url: /javascript.html

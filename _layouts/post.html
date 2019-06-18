@@ -2,12 +2,14 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-  <div class="date">Written on {{ page.date | date: "%B %e, %Y" }}</div>
-  <div class="entry">
-    {{ content }}
-  </div>
+<div class="container">
+  <article class="post">
+    <h1>{{ page.title }}</h1>
+    <div class="date">Written on {{ page.date | date: "%B %e, %Y" }}</div>
+    <div class="entry">
+      {{ content }}
+    </div>
 
-  {% include disqus.html %}
-</article>
+    {% include disqus.html %}
+  </article>
+</div>
