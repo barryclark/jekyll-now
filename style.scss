@@ -280,7 +280,7 @@ nav {
   padding: 2em 2.3em;
   border: 1px solid #ebebeb;
   border-radius: 10px;
-  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15), 0 0px 2px rgba(0, 0, 0, 0.12);
   .entryTitleDev {
     display: flex;
     align-items: center;
@@ -438,6 +438,25 @@ nav {
   border-bottom: none;
 }
 
+// .post-header {
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   width: 100%;
+//   min-height: 360px;
+// }
+.notice {
+  text-align: center;
+  margin-top: 2em;
+  .comingSoon {
+    font-size: 2em;
+    font-weight: thin;
+    margin-bottom: 1em;
+  }
+  img {
+    width: 100%;
+  }
+}
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
