@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $helveticaNeue;
+  font-family: $Spoqa;
   color: $darkerGray;
   font-weight: bold;
 
@@ -216,7 +216,7 @@ img {
   margin: 0;
   color: "#282828";
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $Spoqa;
   font-weight: 400;
   font-size: 19px;
   letter-spacing: 1px;
@@ -239,7 +239,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $Spoqa;
   font-size: 18px;
 
   @include mobile {
@@ -276,11 +276,11 @@ nav {
 // }
 .posts > .post {
   margin-top: 1.5em;
-  font-family: $helveticaNeue;
-  padding: 2.5em 2em;
+  font-family: $Spoqa;
+  padding: 2em 2.3em;
   border: 1px solid #ebebeb;
   border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.22);
   .entryTitleDev {
     display: flex;
     align-items: center;
@@ -288,7 +288,7 @@ nav {
     border-bottom: 1px solid #ebebeb;
   }
   .entryTitle {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
     padding: 0;
     border: none;
@@ -301,35 +301,36 @@ nav {
     text-decoration: none;
   }
   .entry {
+    font-size: 16px;
     margin-top: 1.5em;
   }
 }
 
 .posts > .post:first-child {
-  font-family: $helveticaNeue;
-  margin-top: 4em;
+  font-family: $Spoqa;
+  margin-top: 2.5em;
   // border-bottom: none;
 }
 
 .post {
-  font-family: $helveticaNeue;
+  font-family: $Spoqa;
   line-height: 1.7;
   color: $primary;
 
   h1 {
-    font-family: $helveticaNeue;
+    font-family: $Spoqa;
     color: $primary;
     font-weight: bold;
 
     line-height: 1.7;
-    margin: 1.5em 0 0.25em;
+    margin: 1.2em 0 0.25em;
     padding: 0;
   }
   .date {
     margin: 0.8em 0 3em;
   }
   h2 {
-    font-family: $helveticaNeue;
+    font-family: $Spoqa;
     color: $primary;
     font-weight: bold;
 
@@ -339,7 +340,7 @@ nav {
     padding-bottom: 0.5em;
   }
   h3 {
-    font-family: $helveticaNeue;
+    font-family: $Spoqa;
     color: $primary;
     font-weight: bold;
 
@@ -354,7 +355,7 @@ nav {
     border-left: 4px solid $mainPurple;
     padding-left: 0px;
     padding: 0.5em 2em;
-    color: $gray;
+    color: #7a7a7a;
     font-size: 20px;
     font-style: italic;
     background-color: $bgGray;
@@ -413,7 +414,7 @@ nav {
 }
 
 .post-lists > .post-list {
-  font-family: $helveticaNeue;
+  font-family: $Spoqa;
   color: $primary;
   border-bottom: 2px solid $lightGray;
   padding: 0;
