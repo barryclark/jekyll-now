@@ -507,8 +507,10 @@ nav {
 }
 .highlighter-rouge {
   font-family: "IBM Plex Mono", monospace;
+  border-radius: 6px;
   background-color: #f8f8f8;
-  color: $darkPurple;
+  color: $lightPurple;
+  padding: 4px 8px;
   margin: 0 2px 0;
 }
 .wrapper-footer {
