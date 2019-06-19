@@ -2,6 +2,15 @@
 layout: default
 ---
 
+{% if page.url contains "study" %}
+<div>
+  {% include sidebar_study.html %}
+</div>
+{% else if page.url contains "project" %}
+<div>
+  {% include sidebar_project.html %}
+</div>
+{% endif %}
 <div class="container">
   <article class="post">
     <h1>{{ page.title }}</h1>
