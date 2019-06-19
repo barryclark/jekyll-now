@@ -279,30 +279,29 @@ nav {
   margin-left: 20px;
   color: $darkGray;
   font-weight: 300;
-  position: absolute;
+  float: left;
+  position: relative;
   left: 5em;
-  top: 8em;
 
   ul,
   li {
     margin: 0;
     margin-bottom: 0.5em;
-
     padding: 0;
     list-style-type: none;
     width: 7em;
-    // @include mobile {
-    //   // width: width;
-    //   // float: none !important;
-    //   // display: inline-block;
-    //   // margin: 0 auto;
-    // }
   }
-  li {
-    .active {
-      color: $mainPurple;
-      font-weight: 500;
-    }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: $darkGray;
+    font-weight: 300;
+  }
+  li .activated {
+    color: $secondary;
+    font-weight: 500;
   }
 }
 .posts > .post {
@@ -433,13 +432,11 @@ nav {
       display: inline;
       margin: 0;
 
-      > a {
-        margin: 0px 4px;
-        padding: 8px 10px;
-        color: #282828;
-        background-color: #e9ecef;
-        border-radius: 5px;
-      }
+      margin: 0px 4px;
+      padding: 6px 8px;
+      color: #282828;
+      background-color: #e9ecef;
+      border-radius: 5px;
     }
   }
 }

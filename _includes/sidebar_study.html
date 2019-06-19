@@ -1,16 +1,27 @@
 <div class="sidebars">
   {% assign link = site.data.navigation[0] %}
   <ul>
-    {% if page.url contains link.url %} {% assign class = 'active' %} {% endif
-    %}
+    {% if page.url == "/study/" %}
+    <li class="sidebar">
+      <p class="activated">
+        {{ link.title }}
+      </p>
+    </li>
+    {% else %}
     <li class="sidebar">
       <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
     </li>
-    {% for sublink in link.sublinks %} {% if page.url contains sublink.url %} {%
-    assign class = 'active' %} {% endif %}
+    {% endif %} {% for sublink in link.sublinks %} {% if page.url contains
+    sublink.url %}
+    <li class="sidebar">
+      <p class="activated">
+        {{ sublink.title }}
+      </p>
+    </li>
+    {% else %}
     <li class="sidebar">
       <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
     </li>
-    {% assign class = 'active' %} {% endfor %}
+    {% endif %}{% endfor %}
   </ul>
 </div>

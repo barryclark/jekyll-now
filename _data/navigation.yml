@@ -2,22 +2,22 @@
   url: /study
   sublinks:
     - title: 컴퓨터 공학
-      url: /computerScience.html
+      url: /study/computerScience
     - title: Javascript
-      url: /javascript.html
+      url: /study/javascript
     - title: Node.js
-      url: /nodeJs.html
+      url: /study/nodeJs
     - title: React
-      url: /react.html
+      url: /study/react
     - title: React Native
-      url: /reactNative.html
+      url: /study/RNative
 - title: 프로젝트
   url: /project
   sublinks:
     - title: 블로그 생성기
-      url: /blogWithJekyll.html
+      url: /project/blogWithJekyll
     - title: 여행직구앱
-      url: /fetch.html
+      url: /project/fetch
 - title: TIL
   url: /til
 - title: Life in Jeju
