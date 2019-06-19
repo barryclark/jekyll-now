@@ -474,18 +474,21 @@ nav {
 // }
 .notice {
   font-family: $Spoqa;
-  font-weight: thin;
+  font-weight: 300;
+  letter-spacing: 1px;
 
   text-align: center;
-  margin-top: 3.5em;
+  margin-top: 2em;
+  font-size: 1.5em;
+
   .comingSoon {
-    font-size: 1.5em;
     margin-bottom: 2em;
   }
   img {
     width: 100%;
   }
 }
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;

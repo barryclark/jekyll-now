@@ -1,0 +1,27 @@
+<div class="sidebars">
+  {% assign link = site.data.navigation[1] %}
+  <ul>
+    {% if page.url == "/project/" %}
+    <li class="sidebar">
+      <p class="activated">
+        {{ link.title }}
+      </p>
+    </li>
+    {% else %}
+    <li class="sidebar">
+      <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+    </li>
+    {% endif %} {% for sublink in link.sublinks %} {% if page.url contains
+    sublink.url %}
+    <li class="sidebar">
+      <p class="activated">
+        {{ sublink.title }}
+      </p>
+    </li>
+    {% else %}
+    <li class="sidebar">
+      <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+    </li>
+    {% endif %}{% endfor %}
+  </ul>
+</div>
