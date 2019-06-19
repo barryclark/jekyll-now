@@ -1,8 +1,0 @@
-<div class="sidebar">
-  {% assign links = site.data.navigation %} {% for link in links %} {% if
-  page.url contains link.url %} {% for sublink in link.sublinks %}
-  <div>
-    <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-  </div>
-  {% endfor %} {% endif %} {% endfor %}
-</div>
