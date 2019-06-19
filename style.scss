@@ -170,8 +170,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   @include mobile {
     text-align: center;
   }
@@ -272,7 +271,7 @@ nav {
 // .main
 //
 .sidebars {
-  padding: 1em 1em 0.5em;
+  padding: 1em 0em 0.5em;
   border: 1px solid #ebebeb;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   font-family: $Spoqa;
@@ -300,24 +299,36 @@ nav {
     font-weight: 300;
   }
   li .activated {
-    color: $secondary;
+    color: $lightPurple;
     font-weight: 500;
+    background-color: $bgGray;
   }
 }
 .posts > .post {
-  margin-top: 1.5em;
+  // margin-top: 1.5em;
+  margin: 1em 0.5em 0;
+
   font-family: $Spoqa;
-  padding: 2em 2.3em;
-  border: 1px solid #ebebeb;
-  border-radius: 10px;
-  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15), 0 0px 2px rgba(0, 0, 0, 0.12);
+  padding: 2em 0em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  .entryCategory {
+    font-family: $Spoqa;
+    font-weight: 800;
+    font-size: 18px;
+    color: $lightPurple;
+    margin-bottom: 0.4em;
+  }
   .entryTitleDev {
+    font-family: $Spoqa;
+
     display: flex;
     align-items: center;
-    padding-bottom: 0.7em;
-    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 0.2em;
   }
+
   .entryTitle {
+    font-family: $Spoqa;
+
     font-size: 22px;
     font-weight: bold;
     padding: 0;
@@ -325,12 +336,16 @@ nav {
     margin-bottom: -0.1em;
   }
   .meta {
+    font-family: $Spoqa;
+
     margin: 0.2em 0 0.2em 0.8em;
   }
   a {
     text-decoration: none;
   }
   .entry {
+    font-family: $Spoqa;
+
     font-size: 16px;
     margin-top: 1.5em;
   }
@@ -338,10 +353,12 @@ nav {
 
 .posts > .post:first-child {
   font-family: $Spoqa;
-  margin-top: 2.5em;
-  // border-bottom: none;
+  margin-top: 1.5em;
 }
-
+.posts > .post:last-child {
+  font-family: $Spoqa;
+  border-bottom: none;
+}
 .post {
   font-family: $Spoqa;
   line-height: 1.7;
@@ -366,7 +383,7 @@ nav {
 
     line-height: 1.7;
     margin: 2.5em 0 1em;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     padding-bottom: 0.5em;
   }
   h3 {
@@ -443,7 +460,7 @@ nav {
 .post-lists > .post-list {
   font-family: $Spoqa;
   color: $primary;
-  border-bottom: 2px solid $lightGray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding: 0;
   margin: 2em 0.5em 0;
 

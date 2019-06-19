@@ -3,7 +3,7 @@ layout: post
 title: Intro to React
 date: 2019-04-15
 comments: true
-categories: [study, react]
+categories: [Study, react]
 tags: [React]
 excerpt: React는 Facebook이 만든 JavaScript 라이브러리다. 그렇다면, JavaScript 라이브러리는 무엇이고, 왜 필요한 것일까?
 ---
