@@ -302,19 +302,18 @@ nav {
     font-weight: 500;
   }
 }
-
+.post:hover {
+  opacity: 0.5;
+}
 .posts > .post {
-  :hover {
-    opacity: 0.5;
-  } // margin-top: 1.5em;
   margin: 1em 0.5em 0;
   font-family: $Spoqa;
-  padding: 1.5em 0em;
+  padding: 1em 0em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   .entryCategory {
     font-family: $Spoqa;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     color: $lightPurple;
     margin-bottom: 0.4em;
   }
@@ -329,7 +328,7 @@ nav {
   .entryTitle {
     font-family: $Spoqa;
 
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     padding: 0;
     border: none;
@@ -337,6 +336,7 @@ nav {
   }
   .meta {
     font-family: $Spoqa;
+    font-size: 14px;
 
     margin: 0.2em 0 0.2em 0.8em;
   }
@@ -346,7 +346,7 @@ nav {
   .entry {
     font-family: $Spoqa;
 
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 1em;
   }
 }
@@ -438,7 +438,7 @@ nav {
   .tag {
     display: inline;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
 
     li:before {
       content: " ";
