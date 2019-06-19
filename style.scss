@@ -488,7 +488,12 @@ nav {
     width: 100%;
   }
 }
-
+.highlighter-rouge {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #f8f8f8;
+  color: $darkPurple;
+  margin: 0 2px 0;
+}
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
