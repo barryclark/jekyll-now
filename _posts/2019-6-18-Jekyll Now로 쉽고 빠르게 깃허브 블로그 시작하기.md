@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll Now로 쉽고 빠르게 깃허브 블로그 시작하기
-date: 2019-06-19
+date: 2019-06-18
 comments: true
 categories: [Project, blogWithJekyll]
 tags: [Jekyll, Mac OS]

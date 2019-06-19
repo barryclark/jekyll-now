@@ -1,7 +1,7 @@
 /***************/
 /* MEYER RESET */
 /***************/
-
+@import "variables";
 html,
 body,
 div,
@@ -124,8 +124,26 @@ q:after {
   content: none;
 }
 table {
+  background: #fff;
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 2px;
+  margin: 2em 0;
+  thead {
+    font-weight: bold;
+    padding: 2em;
+  }
+  tbody {
+    padding: 1em;
+  }
+  th {
+    padding: 0.5em 1.5em;
+    border-bottom: 1.5px solid $lightPurple;
+  }
+  td {
+    font-weight: 300;
+    padding: 0.5em 1.5em;
+    border: 1px solid $bgGray;
+  }
 }
 // Apply a natural box layout model to all elements
 // from: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
