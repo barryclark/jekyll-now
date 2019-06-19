@@ -304,12 +304,14 @@ nav {
     background-color: $bgGray;
   }
 }
-.posts > .post {
-  // margin-top: 1.5em;
-  margin: 1em 0.5em 0;
 
+.posts > .post {
+  :hover {
+    opacity: 0.5;
+  } // margin-top: 1.5em;
+  margin: 1em 0.5em 0;
   font-family: $Spoqa;
-  padding: 2em 0em;
+  padding: 1.5em 0em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   .entryCategory {
     font-family: $Spoqa;
@@ -347,7 +349,7 @@ nav {
     font-family: $Spoqa;
 
     font-size: 16px;
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
 }
 
