@@ -28,13 +28,14 @@
               <a href="{{ site.baseurl }}/">{{ site.name }}</a>
             </p>
           </div>
-
           <nav>
-            <span>
-              {% for item in site.data.navigation %}
+            {% for item in site.data.navigation %} {% assign class = nil %}{% if
+            page.url contains item.url %} {% assign class = 'active' %} {% endif
+            %}
+            <span class="{{ class }}">
               <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-              {% endfor %}
             </span>
+            {% endfor %}
             <img
               src="{{ site.baseurl }}/images/vertical_line.png"
               class="vertical_line"

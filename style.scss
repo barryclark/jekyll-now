@@ -234,7 +234,9 @@ img {
     margin: 3px 0;
   }
 }
-
+nav span.active a {
+  font-weight: 550;
+}
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
