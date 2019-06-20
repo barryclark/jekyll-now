@@ -30,11 +30,11 @@
           </div>
 
           <nav>
-              <span>
-            {% for item in site.data.navigation %}
-            <a href="{{ site.baseurl }}{{item.url}}">{{item.title}}</a>
-            {% endfor %}
             <span>
+              {% for item in site.data.navigation %}
+              <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+              {% endfor %}
+            </span>
             <img
               src="{{ site.baseurl }}/images/vertical_line.png"
               class="vertical_line"
