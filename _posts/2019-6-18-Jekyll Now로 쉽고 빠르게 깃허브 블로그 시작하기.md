@@ -3,7 +3,7 @@ layout: post
 title: Jekyll Now로 쉽고 빠르게 깃허브 블로그 시작하기
 date: 2019-06-18
 comments: true
-categories: [Project, blogWithJekyll]
+categories: [Project, blogwithjekyll]
 tags: [Jekyll, Mac OS]
 excerpt: 네이버, 이글루, 티스토리, 미디엄 등 많은 블로그를 사용해 보았지만, 내 입맛에 맛는 블로그를 찾기란 여간 힘든게 아니였다. 코딩을 배우고 가장 좋은 것은 이렇게 직접 만들어 볼 수 있는게 아닐까?
 ---
