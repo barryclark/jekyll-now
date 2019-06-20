@@ -38,4 +38,34 @@ layout: default
     </article>
     {% endfor %}
   </div>
+  <!-- Pagination links -->
+  <!-- <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% else %}
+    <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number "
+      >Page: {{ paginator.page }} of {{ paginator.total_pages }}</span
+    >
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+    <span class="next ">Next</span>
+    {% endif %}
+  </div> -->
+  <div class="pagination">
+    {% assign maxPageNum = paginator.total_pages %} {% assign currentPage =
+    paginator.page %} {% for i in (1..maxPageNum)%} {% if currentPage == i %} {%
+    assign class = 'active' %} {% else % }{% assign class = nil %} {% endif %}
+    {% if i == 1 %}
+    <span class="pageNum {{ class }}">
+      <a href="{{ site.baseurl }}/">{{ i }}</a></span
+    >
+    {% else %}
+    <span class="pageNum {{ class }}">
+      <a href="{{ site.baseurl }}/page{{ i }}/">{{ i }}</a></span
+    >
+    {% endif %} {% endfor %}
+  </div>
 </div>
