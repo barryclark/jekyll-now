@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
-
+.highlight > .highlight {
+  background-color: #f8f8f8;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
 .highlight {
   background-color: #f8f8f8;
-  padding: 7px 7px 7px 20px;
+  padding: 7px 7px 7px 22px;
   // border: 1px solid #ddd;
   // -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   // // -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
