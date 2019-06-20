@@ -352,7 +352,27 @@ nav {
     margin-top: 1em;
   }
 }
+.pagination span.active {
+  border-radius: 50%;
+  background-color: $darkPurple;
+  a {
+    color: #fff;
+  }
+}
+.pagination {
+  text-align: center;
+  font-family: $Spoqa;
+  margin-top: 3em;
 
+  span {
+    a {
+      color: $darkPurple;
+    }
+    font-size: 14px;
+    padding: 0.5em 0.9em;
+    margin: 0.4em;
+  }
+}
 .posts > .post:first-child {
   font-family: $Spoqa;
   margin-top: 1.5em;
@@ -496,7 +516,6 @@ nav {
   font-weight: 300;
   letter-spacing: 1px;
 
-  text-align: center;
   margin-top: 2em;
   font-size: 1.5em;
 
@@ -524,7 +543,6 @@ nav {
 
 footer {
   padding: 20px 0;
-  text-align: center;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

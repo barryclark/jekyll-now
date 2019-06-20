@@ -55,10 +55,10 @@ layout: default
     {% endif %}
   </div> -->
   <div class="pagination">
-    {% assign maxPageNum = paginator.total_pages %} {% assign currentPage =
-    paginator.page %} {% for i in (1..maxPageNum)%} {% if currentPage == i %} {%
-    assign class = 'active' %} {% else % }{% assign class = nil %} {% endif %}
-    {% if i == 1 %}
+    {% assign maxPageNum = paginator.total_pages %} {% assign class = 'unactive'
+    %} {% assign currentPage = paginator.page %} {% for i in (1..maxPageNum)%}
+    {% if currentPage == i %} {% assign class = 'active' %}{% else %}{% assign
+    class = 'unactive' %} {% endif %} {% if i == 1 %}
     <span class="pageNum {{ class }}">
       <a href="{{ site.baseurl }}/">{{ i }}</a></span
     >
