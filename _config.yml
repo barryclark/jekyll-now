@@ -36,7 +36,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-142529094-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -90,3 +90,4 @@ exclude:
 
 paginate: 5 # 한 페이지 당 표시하고자 하는 포스트의 최대 개수
 paginate_path: "/page:num/" # URL 규칙
+
