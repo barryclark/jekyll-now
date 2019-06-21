@@ -16,7 +16,7 @@ With that brief introduction, let’s dive in and take a closer look.
 
 ## Publicly Traded REITs
 
-The most common and readily available way to invest in real estate is via real estate investment trusts or REITs (pronounced Reets). REITs purchase a variety of different types of real estate (residential, commercial, multi-family, etc.) Many REITs offer a diversity of these types of real estate in their funds. Most REITs are publicly traded securities offered on stock exchanges via ETFs or mutual funds. The firms offering these REITs must register them with the Securities Exchange Commission [(SEC](https://www.sec.gov/)). They are subject to SEC rules and regulations regarding the formation, purchase, and sale of the securities.
+The most common and readily available way to invest in real estate is via real estate investment trusts or REITs (pronounced Reets). REITs purchase a variety of different types of real estate (residential, commercial, multi-family, etc.) Many REITs offer a diversity of these types of real estate in their funds. Most REITs are publicly traded securities offered on stock exchanges via ETFs or mutual funds. The firms offering these REITs must register them with the Securities Exchange Commission [(SEC)](https://www.sec.gov/). They are subject to SEC rules and regulations regarding the formation, purchase, and sale of the securities.
 
 The firms that offer them are investment firms. Registration for investment companies offering products is different than those of private investment funds. I'll explain that shortly.
 
