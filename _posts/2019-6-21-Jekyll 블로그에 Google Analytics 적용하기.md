@@ -5,8 +5,12 @@ date: 2019-06-21
 comments: true
 categories: [Project, blogwithjekyll]
 tags: [Jekyll, Google Analytics]
-excerpt:
+excerpt: Github Page는 다른 블로그 서비스와는 다르게 이 기능을 제공하지는 않기 때문에 Google Analytics를 이용해야 한다. 어떻게?!
 ---
+
+웹페이지를 개설했으니, 방문자 수가 궁금하다!
+
+Github Page는 다른 블로그 서비스와는 다르게 이 기능을 제공하지는 않기 때문에 Google Analytics를 이용해야 한다. 어떻게?!
 
 ## 1. Google Analytics 가입하기
 
