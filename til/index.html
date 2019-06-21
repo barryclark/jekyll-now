@@ -4,21 +4,20 @@ layout: default
 
 <div class="container">
   <p class="notice">learning something new everyday</p>
-  <div class="post-lists">
+  <ul class="til-lists">
     {% for post in site.categories.til %}
-    <ul class="post-list">
-      <div class="aListBox">
-        <div class="listTitle">
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </div>
-        <div class="listEntry">
-          {{ post.excerpt }}
-        </div>
-        <div class="date">
-          {{ post.date | date: "%Y-%m-%d" }}
-        </div>
-      </div>
-    </ul>
+    <li class="til-list">
+      <a href="{{ site.baseurl }}{{ post.url }}"
+        >{{ post.date | date: "%Y-%m-%d" }}
+        <ul class="tag">
+          {% for tag in post.tags %}
+          <li>
+            {{ tag }}
+          </li>
+          {% endfor %}
+        </ul></a
+      >
+    </li>
     {% endfor %}
-  </div>
+  </ul>
 </div>

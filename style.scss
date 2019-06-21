@@ -478,7 +478,48 @@ nav {
     }
   }
 }
+ul.til-lists {
+  list-style: none; /* Remove default bullets */
+  margin-top: 1em;
+  padding-top: 1em;
+}
+ul.til-lists li::before {
+  font-size: 30px;
+  opacity: 0.8;
+  vertical-align: middle;
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $mainPurple; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+}
+ul.til-lists .tag {
+  vertical-align: 2px;
 
+  display: inline;
+  font-weight: 500;
+  font-size: 12px;
+  padding-left: 1em;
+  li:before {
+    content: " ";
+  }
+
+  li {
+    display: inline;
+    margin: 0 4px;
+    padding: 6px 8px;
+    color: #282828;
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+}
+.til-list {
+  margin: 2em 0;
+  a {
+    color: $primary;
+    font-weight: 500;
+    padding-left: 0.5em;
+  }
+}
 .post-lists > .post-list {
   font-family: $Spoqa;
   color: $primary;
@@ -515,7 +556,7 @@ nav {
   font-family: $Spoqa;
   font-weight: 300;
   letter-spacing: 1px;
-
+  text-align: center;
   margin-top: 2em;
   font-size: 1.5em;
 
