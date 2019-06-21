@@ -433,6 +433,7 @@ nav {
     text-decoration: underline;
   }
   hr {
+    border-color: rgba(0, 0, 0, 0.07);
     margin: 2em 0;
   }
   .innerBox {
@@ -481,10 +482,10 @@ nav {
 
 ul.til-lists {
   font-family: $Spoqa;
-
   list-style: none; /* Remove default bullets */
   margin-top: 2em;
   padding-top: 1em;
+  padding-left: 1em;
 }
 ul.til-lists li::before {
   font-size: 30px;
@@ -578,6 +579,15 @@ ul.til-lists .tag {
   color: $lightPurple;
   padding: 4px 8px;
   margin: 0 2px 0;
+}
+.reference {
+  font-family: $Spoqa;
+  font-size: 16px;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  background-color: $lightPurple;
+  opacity: 0.8;
+  color: white;
 }
 .wrapper-footer {
   text-align: right;
