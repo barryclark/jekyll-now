@@ -98,6 +98,13 @@ authors:
     web_short_name: stein.wtf
     gravatar: b720c55560f2ca8a9d531bc3b48622c6
     linkedin: steinfletcher
+  emily_birch:
+    display_name: Emily Birch
+    email: emily.birch@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    gravatar: 40b84e411c52561c79e704b29dd82a02
+    linkedin: emily-birch-a01b5190
 
 #
 # Flags below are optional
