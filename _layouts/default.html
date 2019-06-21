@@ -51,7 +51,11 @@
     </div>
 
     <div id="main" role="main">
-      {{ content }}
+      {{ content | replace: '
+      <li>[ ]', '</li>
+      <li class="box">' | replace: '</li>
+      <li>[x]', '</li>
+      <li class="box_done">' }}</li>
     </div>
 
     <div class="wrapper-footer">
