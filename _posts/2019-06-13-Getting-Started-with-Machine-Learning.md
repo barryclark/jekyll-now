@@ -28,7 +28,6 @@ Short video overview with a great list of additional resources.
 ### Mind Bugs
 Few questions bug me at this point. Is machine learning just an overdressed expression meaning something simple? Is it merely good old probabilities and statistics that we all love and hate? Will it be something entirely new for an engineering mind, or will it be just an application of the undergrad theory? I guess once I'll learn more, I will come back to this post with an update. At this stage, I think that Machine Learning is just an application of stats & probability.
 
-\\( 1/x^{2} \\) & \( 1/x^{2} \)
 
 [logo]: https://yev-d.github.io/images/calm-horizon.jpg "Calm-Horizon"
 [1]: https://www.youtube.com/watch?v=OGxgnH8y2NM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=1
