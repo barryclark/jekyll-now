@@ -16,10 +16,10 @@
   sublinks:
     - title: 블로그 생성기
       url: /project/blogwithjekyll
-    - title: 여행직구앱
-      url: /project/fetch
-    - title: 여행일정앱
-      url: /project/mtn
+    # - title: 여행직구앱
+    #   url: /project/fetch
+    # - title: 여행일정앱
+    #   url: /project/mtn
 - title: TIL
   url: /til
 - title: Life in Jeju
