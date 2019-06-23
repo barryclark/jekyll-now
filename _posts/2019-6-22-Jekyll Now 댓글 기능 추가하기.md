@@ -76,6 +76,10 @@ comments: true
 
 물론, 코멘트 창이 필요없는 경우, `comments: false`를 입력하면 된다.
 
+<br>
 👏 **댓글창 구현된 모습**
 
-![disqus 구현](/images/disqus_applied.png "disqus 구현")
+<img src="/images/disqus_applied.png" alt="disqus_applied" style="border:1px solid #bcbcbc">
+<br>
+<br>
+<br>
