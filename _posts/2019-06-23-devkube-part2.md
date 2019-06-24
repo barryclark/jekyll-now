@@ -1,14 +1,14 @@
 ---
 layout: post_with_photo
 title: Fire up kubernetes from iOS using python
-photo: 
-caption: 
-photo-meta: 
+photo: IMG_1168.jpg
+caption: Mum's resident sunbird
+photo-meta: Pana GX7, Oly 14-150mm, Bramston Beach Qld Australia, 2015
 ---
 
 This article shows how to create and use a cloud-hosted Kubernetes cluster using Python scripts on an iPad. The eventual goal is to be able to use an iPad as an end-user device for development of applications running in a cloud-hosted kubernetes cluster.
 
-See https://github.com/drpump/devkube-python/ for source. The scripts should also work on Linux and OS X.
+See https://github.com/drpump/devkube-python/tree/v1.0 for source. The scripts should also work on Linux and OS X.
 
 ### For the impatient
 
@@ -25,11 +25,18 @@ Prerequisites:
   $ cd devkube-python
   $ export DO_TOKEN=<my_token>
   $ python3 docluster.py   ### takes a while to create the cluster
-  $ source cluster.env.    ### load the cert and URL for cluster
+  ...
+  $ source cluster.env     ### load the cert and URL for cluster
   $ python3 -i exec.py
+  ...
   >>> pk.deploy_nfs()
+  Waiting for nfs startup ...
+  Waiting for nfs startup ...
+  nfs running in cluster on 10.244.0.218
   >>> pk.deploy_ssh()
+  ssh accessible on port 30022 on IPs ['165.22.128.219', '165.22.128.246']
   >>> pk.deploy_web()
+  web server accessible at http://165.22.128.219:30080
   >>> ^D
   $ ssh -p 30022 root@<your_node_ip>
   ...
@@ -39,9 +46,9 @@ Prerequisites:
   # 
 ```
 
-Then navigate to the URL printed by `deploy_web` above to see the result.
+Then navigate to the URL printed by `pk.deploy_web()` above to see the result.
 
-If you are using a Linux or OS X machine, you can also use Visual Studio Code [remote development](https://code.visualstudio.com/docs/remote/ssh) via ssh in this cluster. 
+If you are using a Linux or OS X machine, you can also use Visual Studio Code for [remote development](https://code.visualstudio.com/docs/remote/ssh) via ssh in this cluster. 
 
 ## Starting point
 
@@ -53,7 +60,7 @@ If you don't happen to have an iOS device with iSH handy, the scripts here shoul
 
 ### Code Overview
 
-There are four python3 scripts in the [git repo](git@github.com:drpump/devkube-python):
+There are four python scripts in the [git repo](https://github.com/drpump/devkube-python):
 
 1. `docluster.py` creates a digital ocean kubernetes cluster with two nodes then saves the cluster URL and public/private keys for access.
 1. `objects.py` has functions to construct the Python dict objects for each Kubernetes object that we need in our cluster. This is somewhat extensible in a fairly simple fashion.
@@ -68,7 +75,7 @@ Caveat: I've been coding for a long time, but I am a novice at Python. Code impr
 
 The process described here depends on [iSH](http://ish.app). iSH is a new iOS app that is available via [TestFlight](https://developer.apple.com/testflight/) (i.e. it's a beta app that you can use as a beta tester). iSH emulates an Intel processor and provides a Unix shell command line based on Alpine Linux. It also allows you to install binary packages with `apk`, making it an incredibly useful tool for programmers on iOS, especially if you're used to the Unix command line. I use it frequently, for example, to run git commands and ssh.
 
-The python code discussed in the rest of this article was run in iSH after installing python3 and pip (`apk add python3-dev`). It *should* also be feasible to run these scripts in Pythonista, but I haven't yet worked out a way to save and load environment variables and I dont want to have passwords and keys in my repository.
+The python code discussed in the rest of this article was run in iSH after installing python3 and pip (`apk add python3-dev`). It *should* also be feasible to run these scripts in [Pythonista](http://omz-software.com/pythonista/), but I haven't yet worked out a way to save and load environment variables and I dont want to have passwords and keys in my repository.
 
 ## Creating the cluster
 
@@ -216,7 +223,7 @@ To use this function, we need to provide a `name`, a label matcher (in my case, 
     return exposed_service(WEB_SERVICE, match_role, 'http', 80, 30080, namespace)
 ```
 
-This creates a Kubernetes object for a service that expects service instances (i.e. containers running nginx or similar web server) to listen on port 80, and exposes that port externally on port 30080. Once the server container is running and the service object is deployed, you can hit `http://<address>:30080/` with your web browser to access the web server. `<address>` can be the public IP address of *any* node in your cluster. `kubecreate` provides a convenient `get_node_ips(sess)` function to retrieve node IP addresses.
+This creates a Kubernetes object for a service that expects service instances (i.e. containers running nginx or similar web server) to listen on port 80, and exposes that port externally on port 30080. Once the server container is running and the service object is deployed, you can hit `http://<address>:30080/` with your web browser to access the web server. `<address>` can be the public IP address of *any* node in your cluster. `pykube` provides a convenient `get_node_ips()` function to retrieve node IP addresses.
 
 Note that on most kubernete platforms, exposed port numbers must be > 30000 unless you modify the kubernetes cluster configuration.
 
@@ -276,7 +283,7 @@ And creation is thus:
   pk.sess.post(kind_path(pvc()), json=myobject)
 ```
 
-`pykube` provides convenience functions for creating related groups of objects (e.g. the objects required for the nfs server). These are discussed in the following sections.
+`pykube` also rovides convenience functions for creating related groups of objects (e.g. the objects required for the nfs server). These are discussed in the following sections.
 
 ### NFS server
 
@@ -321,7 +328,7 @@ The creation of the secret, ssh server and ssh_service is wrapped up in a conven
   >>> pk.deploy_ssh()
 ```
 
-This creates a CentOS container running sshd and will print the IP address and port number you can use to login. So `ssh <node_ip> -p 30022` gets you a terminal session in this container. The previously-created NFS server share will also be mounted. The ssh server will only allow connections made using your private key, so this is reasonably secure (I'm trusting c4po not to include any backdoors).
+This creates a CentOS container running sshd and will print the IP address and port number you can use to login. So `ssh root@<node_ip> -p 30022` gets you a terminal session in this container. The previously-created NFS server share will also be mounted. The ssh server will only allow connections made using your private key, so this is reasonably secure (I'm trusting c4po not to include any backdoors).
 
 Note that for debugging purposes, it might be useful to create an ssh instance that doesn't mount the nfs share. I did this initially because I had an error in my `nfs_server()` object. We have two deployment base objects, `deployment()` and `nfs_deployment()`, so the change is to switch out the `nfs_deployment()`. A good exercise for you to try at home.
 
@@ -347,24 +354,24 @@ Note that throughout this article I've used the default namespace (`default`) bu
 
 ## Wrapping up
 
-If you've followed me this far, you'll have a working kubernetes cluster in DigitalOcean created entirely from a Python script running on an iPad. The scripts are pretty straightforward and the cluster creation script should be adaptible to work with your favourite kubernetes provider. As with the previous `kubectl` approach, this cluster can be created and deleted whenever you like. Any changes you've made to the web server will be retained unless you delete your storage volume.
+If you've followed me this far, you'll have a working kubernetes cluster in DigitalOcean created entirely from a Python script running on an iPad. The scripts are pretty straightforward and the cluster creation script should be adaptible to work with your favourite kubernetes provider.
 
 #### The good
 * The cluster creation steps are now automated
 * You can create a working cluster from your iPad or even your iPhone, which significantly increases the convenience factor over `kubectl`
 * The configuration provides some ability to debug through retrieving cluster objects and ssh into the cluster
 * You can provision and manage kubernetes using a structured, well-defined and well-known programmming language
-* Further, you might even prefer using the `kubecreate` functions over `kubectl`, although admittedly the scope is more limited
+* Further, you might even prefer using the `pykube` functions over `kubectl`, although admittedly the scope is more limited
 * The python code has minimal dependencies and requires no C libraries, making it quite portable
 * ssh access to the cluster is reasonably well secured
 * If your source machine can run Visual Studio Code, you can use the remote development capability on the cluster.
-
 
 #### The bad
 * We still don't have a useful editing solution for an iPad: using `vim` via ssh is not really a solution. Local editing (e.g. `GoCoEdit` or `TextTastic`) with rsync for synchronisation seems achievable via iSH but needs some scripting for usability and still doesn't provide IDE capabilities. 
 * The ssh container image has quite a limited set of tools. Ideally it would include `rsync` and `git` for content, plus network tools for debugging the cluster.
 * The http service is still unsecured. Tunnelling via ssh is an option although might not work on an iPad. Using https via an ingress controller or load balancer is still preferable.
 * We haven't yet deployed a real application server, database or cache.
+* Digital Ocean doesn't yet provide a way to re-attach an old volume to a new kubernetes cluster. So you need to push all of your code before destroying the cluster, and manually destroy the volume after the cluster is destroyed. 
 
 #### The future
 * I'll extend the ssh container image with appropriate tools, possibly using two containers (one for cluster management/debug, and one for content creation/sync)
