@@ -10,7 +10,7 @@ excerpt: condition/state에 따라 간단하게 style에 변화를 줄 수 있�
 
 excerpt: condition/state에 따라 간단하게 style에 변화를 줄 수 있는 방법!
 
-바로 style을 배열로 주는 것이다. 기본 style과, state에 따라 달라지는 style을 조건부로 주어 `isCompleted`라는 state가 변할 때 마다 다른 style 효과를 줄 수 있다.
+바로 style을 배열로 주는 것이다. 공통된 style과, state에 따라 달라지는 style을 조건부로 주어 `isCompleted`라는 state가 변할 때 마다 다른 style 효과를 줄 수 있다.
 
 ```javascript
 <View
