@@ -30,6 +30,7 @@ React Native의 가장 큰 장점은 ios와 android를 동시에 개발 할 수 
 아래 예제에서 android와 ios에서 shadow 값을 주는 방법이 다르기 때문에 `Platform.select` 메소드를 사용했다.
 
 ```javascript
+...
 <View style={styles.card}>
   <TextInput style={styles.input} placeholder="New To Do" />
 </View>
