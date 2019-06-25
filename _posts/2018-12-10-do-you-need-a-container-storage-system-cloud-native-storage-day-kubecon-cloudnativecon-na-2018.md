@@ -7,7 +7,7 @@ video: https://www.youtube.com/embed/ASIv6wi3YeE
 tags:
   - Video
   - "2018"
-redirect_from: /do-you-need-a-container-storage-system
+redirect_from: /do-you-need-a-container-storage-system/
 ---
 
 I moderated this panel on cloud native storage as part of KubeCon + CloudNativeCon in Seattle in December 2018. The speakers featured are:
