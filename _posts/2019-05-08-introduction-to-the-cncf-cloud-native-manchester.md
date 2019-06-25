@@ -8,6 +8,7 @@ tags:
   - Photos
   - Slides
   - "2019"
+redirect_from: /introduction-to-cncf
 ---
 
 I was honoured to be the inaugural speaker at Cloud Native Manchester on May 8, 2019, to introduce the CNCF and talk about the different ways to get involved with open source.
