@@ -6,6 +6,7 @@ image: https://storage.googleapis.com/cdn.thenewstack.io/media/2018/01/4c6c1d07-
 tags:
   - Article
   - "2018"
+redirect_from: /the-new-stack
 ---
 
 My article was published in The New Stack on 15 Jan 2018.
