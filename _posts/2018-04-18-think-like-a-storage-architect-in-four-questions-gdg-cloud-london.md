@@ -7,6 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/4OIpoqaaO09eYA
 tags:
   - Slides
   - "2018"
+redirect_from: /gdgcloud
 ---
 
 I spoke at GDG (Google Developer Groups) Cloud London on "Think like a storage architect, in four questions".
