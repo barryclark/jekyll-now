@@ -9,6 +9,7 @@ tags:
   - Video
   - Slides
   - "2018"
+redirect_from: /containerdayshamburg
 ---
 
 I spoke at ContainerDays Hamburg on ["Persistent Storage for Kubernetes in production - Which solution and why?"](https://containerdays.io/program/persistent-storage-with-kubernetes-in-production-which-solution-and-why,2823.html).
