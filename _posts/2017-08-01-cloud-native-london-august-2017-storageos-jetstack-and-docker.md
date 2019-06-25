@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "containerd, K8s internals and Keel at Cloud Native London August"
+title: "Cloud Native London, August 2017: StorageOS, Jetstack and Docker"
 description: "Cheryl Hung, Developer Advocate at StorageOS, hosts StorageOS, Jetstack and Docker at Cloud Native London."
 image: /images/CloudNativeLondonAugust.jpg
 tags:
