@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London February 2019 Roundup"
+title: "Condé Nast International, Student.com and Cloudership at Cloud Native London, February 2019"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Condé Nast International, Student.com and Cloudership at Cloud Native London."
 image: https://pbs.twimg.com/media/Dyvrp3KWsAAAzl2.jpg
 tags:
@@ -8,6 +8,7 @@ tags:
   - Video
   - Meetup
   - "2019"
+redirect_from: /Cloud-Native-London-Feb-2019
 ---
 
 
