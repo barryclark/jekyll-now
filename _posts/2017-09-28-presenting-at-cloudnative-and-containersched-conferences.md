@@ -7,6 +7,7 @@ tags:
   - Photos
   - "2017"
   - Featured
+redirect_from: /CloudNativeContainerSched
 ---
 
 I presented at two separate conferences in September in London, CloudNative and ContainerSched. Even though they are two separate conferences, they ran over three contiguous days, cover similar topics and I spoke at and sponsored both, so it felt like one conference.
