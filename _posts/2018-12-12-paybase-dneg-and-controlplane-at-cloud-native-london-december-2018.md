@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London December 2018 Roundup"
+title: "Paybase, DNEG and ControlPlane at Cloud Native London, December 2018"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Paybase, DNEG and ControlPlane at Cloud Native London."
 image: https://pbs.twimg.com/media/DuPOblYXgAIDUDp.jpg
 tags:
@@ -8,6 +8,7 @@ tags:
   - Video
   - Meetup
   - "2018"
+redirect_from: /Cloud-Native-London-Dec-2018
 ---
 
 The room was packed out for Cloud Native London's December meetup, ably hosted by Dominique Top and featuring three brilliant, fascinating talks.
