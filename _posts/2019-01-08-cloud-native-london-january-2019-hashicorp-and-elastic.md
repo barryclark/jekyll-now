@@ -7,7 +7,7 @@ tags:
   - Video
   - Meetup
   - "2019"
-redirect_from: /Cloud-Native-London-Jan-2019
+redirect_from: /Cloud-Native-London-Jan-2019/
 ---
 
 The room was raring to go for the first Cloud Native London meetup of 2019, featuring three enthralling talks, and I was back hosting!
