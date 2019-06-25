@@ -24,7 +24,7 @@ excerpt: condition/state에 따라 간단하게 style에 변화를 줄 수 있�
 <br>
 **전체 컴포넌트 코드**
 
-```javascript
+```react
 export default class ToDo extends Component {
   state = {
     isCompleted: false
