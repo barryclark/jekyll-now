@@ -8,6 +8,7 @@ tags:
   - Photos
   - Slides
   - "2019"
+redirect_from: /qconlondon
 ---
 
 
