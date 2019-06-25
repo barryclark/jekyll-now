@@ -7,6 +7,7 @@ video: https://www.youtube.com/embed/r20uXic_Hpw
 tags:
   - Video
   - "2018"
+redirect_from: /interview-day-of-cloud-native
 ---
 
 A quick interview on how I ended up in DevOps, why I run the #CloudNativeLon community and my predictions for storage, recorded at the Day of Cloud Native, 21 March 2018 in Oslo, Norway.
