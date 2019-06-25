@@ -7,6 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/eRghzkguUfRVnc
 tags:
   - Slides
   - "2019"
+redirect_from: /techknow-london
 ---
 
 These are my slides from a talk I gave at TECH(K)NOW Day London 2019.
