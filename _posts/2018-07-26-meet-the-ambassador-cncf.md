@@ -6,6 +6,7 @@ feature_image: https://i.ytimg.com/vi/RWwvZvnRV8s/maxresdefault.jpg
 tags:
   - Video
   - "2018"
+redirect_from: /meet-the-ambassador
 ---
 
 
