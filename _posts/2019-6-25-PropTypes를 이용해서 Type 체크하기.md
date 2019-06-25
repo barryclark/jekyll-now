@@ -140,3 +140,16 @@ TypeTest.propTypes = {
 ```
 
 <br>
+
+- class component 내에서 static 형태로 쓰일 수도 있다.
+
+```react
+export default class State extends Component {
+   static propTypes = {
+    requiredNumber: PropTypes.number.isRequired
+
+   }
+}
+```
+
+<br>
