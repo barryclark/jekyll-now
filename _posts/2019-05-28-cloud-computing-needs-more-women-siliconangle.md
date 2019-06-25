@@ -6,6 +6,7 @@ image: https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2019/0
 tags:
   - Article
   - "2019"
+redirect_from: /cloud-computing-women
 ---
 
 My article on cloud computing and women was published in SiliconANGLE in May 2019.
