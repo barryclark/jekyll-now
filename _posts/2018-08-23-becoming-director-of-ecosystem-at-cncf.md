@@ -6,7 +6,7 @@ image: https://www.cncf.io/wp-content/uploads/2019/04/cncf-logo-facebook.jpg
 tags:
   - Article
   - "2018"
-redirect_from: /Becoming-CNCF
+redirect_from: /Becoming-CNCF/
 ---
 
 After twenty months, I’m moving on from StorageOS. I am deeply grateful to my manager Alex for being an incredible role model, and to my reports Ferran, Frank and the rest of the team for being brilliant, patient, understanding and kind. (Although I’ll definitely live on in Jira tickets for some time yet…!)
