@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Cheryl Hung's blog"
 description: "Cheryl Hung's introductory post"
 image: /favicon.ico
-redirect_from: /Welcome
+redirect_from: /Welcome/
 
 ---
 
