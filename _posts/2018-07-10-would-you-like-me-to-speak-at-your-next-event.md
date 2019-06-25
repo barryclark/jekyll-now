@@ -5,7 +5,7 @@ feature_image: /images/headshot.jpeg
 tags:
   - Photos
   - "2018"
-redirect_from: /speaking-break
+redirect_from: /speaking-break/
 ---
 
 Awesome! Generally I'm super happy to travel and speak at conferences and meetups, especially for keynotes and if you can provide support for travel costs.
