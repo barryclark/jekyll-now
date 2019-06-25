@@ -8,7 +8,7 @@ tags:
   - Photos
   - Slides
   - "2019"
-redirect_from: /navigating-cloud-native
+redirect_from: /navigating-cloud-native/
 ---
 
 I spoke at Google Developer Groups Cloud London on "Navigating the cloud native ecosystem".
