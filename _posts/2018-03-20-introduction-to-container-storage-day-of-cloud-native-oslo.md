@@ -7,6 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/7Fv5HSgSvaVG0X
 tags:
   - Slides
   - "2018"
+redirect_from: /day-of-cloud-native
 ---
 
 These are my slides from "Introduction to container storage", a workshop I ran at Day of Cloud Native in Oslo on 20 March, 2018.
