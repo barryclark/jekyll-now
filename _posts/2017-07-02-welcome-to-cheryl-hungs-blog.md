@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Welcome to Cheryl Hung's blog
+title: "Welcome to Cheryl Hung's blog"
 description: "Cheryl Hung's introductory post"
-redirect_from: /Welcome
 image: /favicon.ico
+redirect_from: /Welcome
+
 ---
 
 I'm the product manager at [StorageOS](https://storageos.com), where I code, write and speak about storage, containers and cloud. I'm active in the developer community and speak at meetups related to Docker containers, Kubernetes, microservices, cloud native and more.
