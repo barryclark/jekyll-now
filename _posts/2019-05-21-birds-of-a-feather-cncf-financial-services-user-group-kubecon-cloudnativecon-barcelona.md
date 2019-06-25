@@ -7,7 +7,7 @@ slides: "//www.slideshare.net/slideshow/embed_code/key/g2Nr5r0ioHqg4V"
 tags:
   - Slides
   - "2019"
-redirect_from: /bof-fsug
+redirect_from: /bof-fsug/
 ---
 
 Slides from the Birds of a Feather discussion on the CNCF Financial Services User Group at KubeCon CloudNative Con Barcelona in May 2019.
