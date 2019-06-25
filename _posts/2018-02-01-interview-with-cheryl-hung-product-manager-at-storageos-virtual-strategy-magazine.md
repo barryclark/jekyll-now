@@ -6,6 +6,7 @@ image: https://virtual-strategy.com/wp-content/uploads/2018/02/StorageOS_Hung_02
 tags:
   - Article
   - "2018"
+redirect_from: /interview-virtual-strategy
 ---
 
 My interview was published in Virtual Strategy Magazine on February 1, 2018.
