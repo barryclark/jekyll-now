@@ -7,7 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/CefWi0uwCl9paV
 tags:
   - Slides
   - "2018"
-redirect_from: /redhatsummit
+redirect_from: /redhatsummit/
 ---
 
 I spoke at Red Hat Summit on ["StorageOS: A Software Defined Storage Solution for OpenShift"](https://agenda.summit.redhat.com/SessionDetail.aspx?id=171677).
