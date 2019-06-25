@@ -4,7 +4,7 @@ title: State 관리하기(feat.immutability)
 date: 2019-04-21
 comments: true
 categories: [Study, react]
-tags: [React, Props, Arrow function]
+tags: [React, State, Immutability]
 excerpt: 리액트를 다루면서 맞닥뜨리게 되는 중요한 개념 중 하나가 바로 state의 immutability(변경불가성)이다. 프로그래밍에서 immutability란, 객체가 생성된 이후 그 상태를 변경할 수 없는 디자인 패턴을 말한다.
 ---
 
