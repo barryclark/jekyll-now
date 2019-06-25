@@ -10,7 +10,7 @@ tags:
   - Slides
   - Video
   - "2019"
-redirect_from: /navigating-cloud-native-kccnceu
+redirect_from: /navigating-cloud-native-kccnceu/
 ---
 
 I spoke at KubeCon CloudNativeCon Barcelona on "Navigating the Cloud Native Community for End Users".
