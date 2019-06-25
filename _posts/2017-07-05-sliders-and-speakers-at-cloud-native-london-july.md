@@ -8,6 +8,7 @@ tags:
   - Slides
   - "2017"
   - Meetup
+redirect_from: /CloudNativeLdn-July-writeup
 ---
 
 The inaugural Cloud Native London meetup went smoothly, with myself as host and [Michael Hausenblas](https://twitter.com/mhausenblas) and [Ben Hall](https://twitter.com/Ben_Hall) speaking.
