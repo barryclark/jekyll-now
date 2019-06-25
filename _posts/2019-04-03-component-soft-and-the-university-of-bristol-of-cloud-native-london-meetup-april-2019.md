@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Roundup of Cloud Native London Meetup - April 2019"
-description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Component Soft, the University of Bristol and Codilime at Cloud Native London."
+title: "Component Soft and the University of Bristol of Cloud Native London Meetup, April 2019"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Component Soft and the University of Bristol at Cloud Native London."
 image: https://pbs.twimg.com/media/D3QBumeX4AA4oyw.jpg
 tags:
   - Photos
   - Video
   - Meetup
   - "2019"
+redirect_from: /Cloud-Native-London-Apr-2019
 ---
 
 We were inundated for our April Cloud Native London meetup - with a bigger and more diverse crowd than we’ve ever had before! We also had three fantastic speakers.
