@@ -7,7 +7,7 @@ video: https://www.youtube.com/embed/zEIr1mq-81E
 tags:
   - Video
   - "2019"
-redirect_from: /
+redirect_from: /intro-tug-barcelona
 ---
 
 At KubeCon CloudNativeCon Barcelona, I introduced the CNCF Telecom User Group, along with Dan Kohn of the CNCF and Taylor Carpenter of Vulk Coop.
