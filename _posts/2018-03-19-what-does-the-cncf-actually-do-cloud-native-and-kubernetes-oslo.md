@@ -7,6 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/lfaikDBecv7c6T
 tags:
   - Slides
   - "2018"
+redirect_from: /cloud-native-oslo
 ---
 
 As a CNCF ambassador, I gave an introduction on "What does the CNCF actually do?" at Cloud Native and Kubernetes Oslo on 19 March, 2018. Slides from my talk are available above.
