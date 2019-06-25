@@ -8,7 +8,7 @@ tags:
   - Video
   - "2018"
   - Featured
-redirect_from: /thecube
+redirect_from: /thecube/
 ---
 
 I spoke to theCube at KubeCon & CloudNativeCon EU 2018 about the state of cloud native, community, storage and more.
