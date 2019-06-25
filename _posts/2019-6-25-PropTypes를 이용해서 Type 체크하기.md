@@ -141,6 +141,16 @@ TypeTest.propTypes = {
 
 <br>
 
+- class의 instance를 전달할 때는,
+
+```react
+TypeTest.propTypes = {
+  optionalMessage: PropTypes.instanceOf(Message),
+};
+```
+
+<br>
+
 - class component 내에서 static 형태로 쓰일 수도 있다.
 
 ```react
