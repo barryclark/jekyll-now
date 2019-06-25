@@ -7,6 +7,7 @@ tags:
   - Photos
   - "2017"
   - Meetup
+redirect_from: /CloudNativeLdn-August-writeup
 ---
 
 Another successful meetup, featuring Karolis Rusenas from StorageOS, James Munnelly from Jetstack and Steven Thwaites of Docker.
