@@ -7,6 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/dN6N4lqVDW0yPS
 tags:
   - Slides
   - "2018"
+redirect_from: /hotelscom
 ---
 
 Here are my slides from my talk "Persistent storage for Kubernetes - which solution at why?" at [DevOps with Kubernetes Meetup by Hotels.com](https://www.eventbrite.co.uk/e/devops-with-kubernetes-meetup-by-hotelscom-expedia-tickets-44107262008) on 25 April 2018. In this talk I cover:
