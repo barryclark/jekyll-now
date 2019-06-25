@@ -1,5 +1,4 @@
 <head>
-  {% seo title=false %}  
   <title>
      {% if page.title %}
       {{ page.title }} - {{ site.title }}
@@ -32,7 +31,7 @@
   {% include google-analytics.html %}
 
   <!-- Use Jekyll SEO plugin -->
-  {% seo %}
+  {% seo title=false %}
   
   <!-- Additional head content -->
   {% include custom-head.html %}
