@@ -7,6 +7,7 @@ video: https://www.youtube.com/embed/YSuZS5wusqU
 tags:
   - Video
   - "2019"
+redirect_from: /interview-with-thecube-barcelona
 ---
 
 Back on theCube once again! This interview covers KubeCon CloudNativeCon and diversity in open source.
