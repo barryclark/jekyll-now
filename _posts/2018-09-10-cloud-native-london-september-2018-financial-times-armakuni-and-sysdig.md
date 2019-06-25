@@ -6,7 +6,7 @@ image: https://pbs.twimg.com/media/DmRan-WX4AITHT7.jpg
 tags:
   - "2018"
   - Meetup
-redirect_from: /cloudnativelon-sep18
+redirect_from: /cloudnativelon-sep18/
 ---
 
 The room was packed out for Cloud Native London's September meetup, ably hosted by Dominique Top and featuring three brilliant talks and a prize draw.
