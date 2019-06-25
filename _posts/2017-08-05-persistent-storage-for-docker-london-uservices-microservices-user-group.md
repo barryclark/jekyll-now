@@ -8,7 +8,7 @@ tags:
   - Video
   - Slides
   - "2017"
-redirect_from: /Microservices-video
+redirect_from: /Microservices-video/
 ---
 
 I gave a talk at the London μServices (Microservices) User Group meetup on "Persistent storage for Docker - which solution and why?" on 2 August, 2017 in London. My slides are also available below.
