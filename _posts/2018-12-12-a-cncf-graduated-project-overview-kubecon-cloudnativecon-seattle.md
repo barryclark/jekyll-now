@@ -7,6 +7,7 @@ video: https://www.youtube.com/embed/uK6Fobid0pI?start=20
 tags:
   - Video
   - "2018"
+redirect_from: /CNCF-graduated
 ---
 
 I recorded this podcast with Matt Klein, Senior Software Engineer at Lyft and founder of the Envoy project, at KubeCon CloudNativeCon NA 2018 in Seattle.
