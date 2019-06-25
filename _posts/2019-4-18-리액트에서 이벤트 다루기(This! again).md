@@ -4,7 +4,7 @@ title: 리액트에서 이벤트 다루기(This! again)
 date: 2019-04-18
 comments: true
 categories: [Study, react]
-tags: [React, Props]
+tags: [React, Props, Arrow function]
 excerpt: 단방향 데이터 플로우(one-way data flow)는 리액트의 큰 특징 중 하나이다. 위의 그림처럼 상위 컴포넌트는 하위 컴포넌트에게 props의 형태로 data를 전달할 수 있으나, 하위 컴포넌트는 받은 props를 변경할 수도 없을 뿐더러, 상위 컴포넌트로 전달할 수도 없다. 그렇다면, 하위 컴포넌트에서의 변화로 인해 상위 컴포넌트가 변화해야하는 경우엔 어떻게 해야할까?
 ---
 
