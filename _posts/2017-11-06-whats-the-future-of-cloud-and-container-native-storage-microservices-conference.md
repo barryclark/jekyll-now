@@ -9,7 +9,7 @@ tags:
   - Slides
   - "2017"
   - Photos
-redirect_from: /container-and-cloud-native-storage
+redirect_from: /container-and-cloud-native-storage/
 ---
 
 I spoke at the Microservices Conference in London on 6 November, 2017 on "What's the future of cloud and container native storage?".
