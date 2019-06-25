@@ -8,6 +8,7 @@ tags:
   - Video
   - Slides
   - "2017"
+redirect_from: /Eight-principles-of-cloud-native-storage
 ---
 
 I gave a talk at the CloudNative conference in London on "Eight principles for Cloud Native Storage" on 27 September, 2017. My slides are available here:
