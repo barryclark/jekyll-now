@@ -7,7 +7,7 @@ video: https://www.youtube.com/embed/WFlFmhKSnv0
 tags:
   - Video
   - "2018"
-redirect_from: /diversity-luncheon
+redirect_from: /diversity-luncheon/
 ---
 
 At KubeCon & CloudNativeCon EU 2018 in Copenhagen, I sat on a diversity panel discussing how to get more underrepresented groups into community and public speaking.
