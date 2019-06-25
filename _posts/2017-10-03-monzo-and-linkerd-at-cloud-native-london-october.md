@@ -9,6 +9,7 @@ tags:
   - Slides
   - "2017"
   - Meetup
+redirect_from: /Cloud-Native-London-Oct-2017
 ---
 
 October's [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London/events/240108227) was another resounding success, with pizza and beers and 100 developers, devops and techies attending.
