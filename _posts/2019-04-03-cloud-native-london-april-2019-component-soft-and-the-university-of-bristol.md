@@ -8,7 +8,7 @@ tags:
   - Video
   - Meetup
   - "2019"
-redirect_from: /Cloud-Native-London-Apr-2019
+redirect_from: /Cloud-Native-London-Apr-2019/
 ---
 
 We were inundated for our April Cloud Native London meetup - with a bigger and more diverse crowd than we’ve ever had before! We also had three fantastic speakers.
