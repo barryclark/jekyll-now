@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Book time to chat
+description: Request time on Cheryl's calendar for a call.
 permalink: /bookme/
 ---
 
