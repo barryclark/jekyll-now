@@ -6,6 +6,7 @@ feature_image: /images/2019-06-04-callforcode4.jpg
 tags:
   - Photos
   - "2019"
+redirect_from: /callforcode
 ---
 
 I was invited to Geneva, Switzerland to take part in a hackathon with the United Nations Human Rights Office.
