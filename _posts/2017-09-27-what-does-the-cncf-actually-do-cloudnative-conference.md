@@ -8,7 +8,7 @@ tags:
   - Video
   - Slides
   - "2017"
-redirect_from: /What-does-the-CNCF-do
+redirect_from: /What-does-the-CNCF-do/
 ---
 
 My talk at the CloudNative conference in London on "What does the CNCF actually do?" on 27 September, 2017. Slides available here:
