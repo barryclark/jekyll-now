@@ -6,7 +6,7 @@ image: https://cdn-images-1.medium.com/max/1600/1*RR2CCmq2zcIGXnzI6eDhYg.jpeg
 tags:
   - Article
   - "2018"
-redirect_from: /people-to-follow
+redirect_from: /people-to-follow/
 ---
 
 Container Camp named the **36 people in container tech you should be following** including Jesse Frazelle, Ashley McNamara and Sarah Novotny. I'm genuinely flattered to be included alongside many brilliant names!
