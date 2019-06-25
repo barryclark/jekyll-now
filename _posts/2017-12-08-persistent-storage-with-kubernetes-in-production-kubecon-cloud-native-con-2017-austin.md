@@ -10,6 +10,7 @@ tags:
   - Slides
   - "2017"
   - Featured
+redirect_from: /persistent-storage-with-k8s-austin
 ---
 
 My talk at Kubecon + Cloud Native Con North America 2017 is titled "Persistent Storage with Kubernetes in Production - which solution and why?":
