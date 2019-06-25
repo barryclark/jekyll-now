@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meetup roundup: Cloud Native London March 2019"
+title: "Controlplane, Contino and Sardina Systems at Cloud Native London, March 2019"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Controlplane, Contino and Sardina Systems at Cloud Native London."
 image: https://pbs.twimg.com/media/D0_-76QXQAAEf3E.jpg
 tags:
@@ -8,6 +8,7 @@ tags:
   - Video
   - Meetup
   - "2019"
+redirect_from: /Cloud-Native-London-Mar-2019
 ---
 
 
