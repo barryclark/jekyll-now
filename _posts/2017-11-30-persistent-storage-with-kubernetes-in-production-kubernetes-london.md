@@ -7,7 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/axa0to9qRjaeAg
 tags:
   - Slides
   - "2017"
-redirect_from: /persistent-storage-with-k8s-k8s-london
+redirect_from: /persistent-storage-with-k8s-k8s-london/
 ---
 
 
