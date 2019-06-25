@@ -7,7 +7,7 @@ video: https://www.youtube.com/embed/3vcfxbZwOFI
 tags:
   - Video
   - "2018"
-redirect_from: /interview-with-thecube-seattle
+redirect_from: /interview-with-thecube-seattle/
 ---
 
 I recorded my second interview interview with John Furrier of theCube at Kubecon
