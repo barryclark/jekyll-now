@@ -7,7 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/wHl2VXMOPI1hp3
 tags:
   - Slides
   - "2018"
-redirect_from: /cncf-paris
+redirect_from: /cncf-paris/
 ---
 
 I spoke at CNCF Paris on 16 Jan 2018 on "Persistent Storage with Kubernetes in Production - which solution and why?".
