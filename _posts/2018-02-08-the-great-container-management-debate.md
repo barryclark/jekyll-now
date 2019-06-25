@@ -8,7 +8,7 @@ tags:
   - Video
   - Photos
   - "2018"
-redirect_from: /great-container
+redirect_from: /great-container/
 ---
 
 This was a fun event held in London on Feb 8, 2018, with myself moderating an evening debate between four teams. Each team consisted of one advocate and one customer.
