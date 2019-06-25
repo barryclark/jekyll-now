@@ -7,7 +7,7 @@ tags:
   - Photos
   - "2018"
   - Meetup
-redirect_from: /Cloud-Native-London-Oct-2018
+redirect_from: /Cloud-Native-London-Oct-2018/
 ---
 
 Despite a change of venue, our loyal audience gathered to hear three knowledgeable speakers discuss containers and cloud native. They were ably hosted by Matt Saunders from London DevOps - thanks Matt!
