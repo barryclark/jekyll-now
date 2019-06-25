@@ -8,7 +8,7 @@ video: https://www.youtube.com/embed/IvoCWfBbeqo
 tags:
   - Slides
   - "2018"
-redirect_from: /Crossing-the-chasm
+redirect_from: /Crossing-the-chasm/
 ---
 
 I gave the keynote for Open FinTech Forum in New York on "Crossing the chasm with cloud native".
