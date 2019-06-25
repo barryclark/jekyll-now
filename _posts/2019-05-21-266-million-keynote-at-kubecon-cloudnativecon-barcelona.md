@@ -11,7 +11,7 @@ tags:
   - Slides
   - "2019"
   - Featured
-redirect_from: /266million
+redirect_from: /266million/
 ---
 
 My keynote, "2.66 Million", from KubeCon CloudNativeCon EU in Barcelona. This was the largest audience that I've spoken to to date, with 7700 people plus livestreaming.
