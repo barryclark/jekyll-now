@@ -8,7 +8,7 @@ tags:
   - Video
   - Meetup
   - "2019"
-redirect_from: /Cloud-Native-London-June-2019
+redirect_from: /Cloud-Native-London-June-2019/
 ---
 
 We packed out the room at Codenode, with 300 attendees at the June 2019 Cloud Native London Meetup!
