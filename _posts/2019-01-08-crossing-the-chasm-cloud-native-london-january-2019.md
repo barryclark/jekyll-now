@@ -7,7 +7,7 @@ slides: //www.slideshare.net/slideshow/embed_code/key/2YonCoGkpW1AwN
 tags:
   - Slides
   - "2019"
-redirect_from: /cnlon
+redirect_from: /cnlon/
 ---
 
 In this talk I gave at Cloud Native London, I talk about my own journey from being an engineer at Google using Borg, to what the role of the CNCF is now and what I'm looking forward to in 2019.
