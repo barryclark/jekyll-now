@@ -7,6 +7,7 @@ video: https://www.youtube.com/embed/_eSh4ZIVAQ0
 tags:
   - Video
   - "2018"
+redirect_from: /Serverless-vs-k8s
 ---
 
 Thanks to Contino for inviting me to host this debate on Serverless vs Kubernetes!
