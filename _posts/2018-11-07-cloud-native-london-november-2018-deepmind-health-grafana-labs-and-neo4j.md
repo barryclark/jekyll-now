@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DeepMind Health, Grafana Labs and Neo4j at Cloud Native London, November 2018"
+title: "Cloud Native London, November 2018: DeepMind Health, Grafana Labs and Neo4j"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts DeepMind Health, Grafana Labs and Neo4j at Cloud Native London."
 image: https://pbs.twimg.com/media/DrbAqq2XQAI1bh-.jpg
 tags:
