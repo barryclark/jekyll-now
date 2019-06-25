@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "June 2019 Cloud Native London meetup roundup"
-description: "Cheryl Hung, Director of Ecosystem at CNCF, hosting Alex Tasioulis, plus speakers from Pivotal and mnemonic at Cloud Native London."
+title: "Pivotal, mnemonic and Alex Tasioulis at Cloud Native London, June 2019"
+description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Pivotal, mnemonic and Alex Tasioulis at Cloud Native London."
 image: https://pbs.twimg.com/media/D8UUO6qUIAAXWSN.jpg
 tags:
   - Photos
   - Video
   - Meetup
   - "2019"
+redirect_from: /Cloud-Native-London-June-2019
 ---
 
 We packed out the room at Codenode, with 300 attendees at the June 2019 Cloud Native London Meetup!
