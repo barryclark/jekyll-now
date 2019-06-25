@@ -8,6 +8,7 @@ tags:
   - Photos
   - Slides
   - "2019"
+redirect_from: /navigating-open-source
 ---
 
 Here are my slides from a talk I gave on "Navigating Open Source" at TECH(K)NOW Day in Taipei, Taiwan.
