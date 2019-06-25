@@ -21,7 +21,7 @@ Prerequisites:
 * A Digital Ocean account and API token
 
 ```
-  $ git clone git@github.com:drpump/devkube-python
+  $ git clone git@github.com:drpump/devkube-python --branch v1.0
   $ cd devkube-python
   $ export DO_TOKEN=<my_token>
   $ python3 docluster.py   ### takes a while to create the cluster
@@ -60,7 +60,7 @@ If you don't happen to have an iOS device with iSH handy, the scripts here shoul
 
 ### Code Overview
 
-There are four python scripts in the [git repo](https://github.com/drpump/devkube-python):
+There are four python scripts in the [git repo](https://github.com/drpump/devkube-python/tree/v1.0 ):
 
 1. `docluster.py` creates a digital ocean kubernetes cluster with two nodes then saves the cluster URL and public/private keys for access.
 1. `objects.py` has functions to construct the Python dict objects for each Kubernetes object that we need in our cluster. This is somewhat extensible in a fairly simple fashion.
@@ -346,7 +346,7 @@ It will print the URL for the server so you can browse there and see the default
 
 `pykube` provides a few other convenience functions to make it easier to use in an interactive shell. Key ones:
 
-* `pk.ppo(object)` with retrieve the specified object and its status via the API then prettyprint the returned JSON, e.g. `pk.ppo(objects.web_server())`
+* `pk.ppo(object)` will retrieve the specified object and its status via the API then prettyprint the returned JSON, e.g. `pk.ppo(objects.web_server())`
 * `pk.ppk(kind)` will retrieve a list of objects of the specified kind then prettyprint the returned JSON, e.g. `pk.ppk('endpoints')`
 * `pk.get_node_ips()` will retrieve node information and extract the IP addresses of kubernetes cluster nodes
 
@@ -354,13 +354,13 @@ Note that throughout this article I've used the default namespace (`default`) bu
 
 ## Wrapping up
 
-If you've followed me this far, you'll have a working kubernetes cluster in DigitalOcean created entirely from a Python script running on an iPad. The scripts are pretty straightforward and the cluster creation script should be adaptible to work with your favourite kubernetes provider.
+If you've followed me this far, you'll have a working kubernetes cluster in DigitalOcean created entirely from a Python script running on an iPad. The scripts are pretty straightforward and the cluster creation script should be adaptable to work with your favourite kubernetes provider.
 
 #### The good
 * The cluster creation steps are now automated
 * You can create a working cluster from your iPad or even your iPhone, which significantly increases the convenience factor over `kubectl`
-* The configuration provides some ability to debug through retrieving cluster objects and ssh into the cluster
 * You can provision and manage kubernetes using a structured, well-defined and well-known programmming language
+* The configuration provides some ability to debug through retrieving cluster objects and ssh into the cluster
 * Further, you might even prefer using the `pykube` functions over `kubectl`, although admittedly the scope is more limited
 * The python code has minimal dependencies and requires no C libraries, making it quite portable
 * ssh access to the cluster is reasonably well secured
@@ -375,7 +375,7 @@ If you've followed me this far, you'll have a working kubernetes cluster in Digi
 
 #### The future
 * I'll extend the ssh container image with appropriate tools, possibly using two containers (one for cluster management/debug, and one for content creation/sync)
-* With the pending iPadOS (iOS 13) browser changes, it becomes more feasible to deploy and use a browser-based IDE like [coder.com](https://coder.com). So I'll deploy and test the coder.com browser-based IDE container
+* With the pending iPadOS (iOS 13) browser changes, it becomes more feasible to deploy and use a browser-based IDE like [coder.com](https://github.com/cdr/code-server). So I'll deploy and test this browser-based IDE container
 * I'll add a database and cache
 * I'll add an application server, most likely Rails in the first instance
 * I need to somehow bootstrap the content in application server instances. In Rails, for example, we would need to checkout or upload the application, seed the database, etc. Ideally this can be automated so that if you're using a set of microservices but only actively develop one of them, the others can be automatically deployed, seeded etc. Alternatively, we could deploy production docker images for read-only microservices.
