@@ -8,7 +8,7 @@ tags:
   - Video
   - Meetup
   - "2019"
-redirect_from: /Cloud-Native-London-Feb-2019
+redirect_from: /Cloud-Native-London-Feb-2019/
 ---
 
 
