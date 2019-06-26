@@ -70,7 +70,7 @@ And it's not only addition that we can do this way:
 
 <br />
 
-There are often cases when we want carry out an operation between an array and a single number (we can also call this an operation between a vector and a scalar), say for example our array represents distance in miles and we want to convert it to kilometers. We simply say ```data * 1.6```:
+There are often cases when we want carry out an operation between an array and a single number (we can also call this an operation between a vector and a scalar). Say, for example, our array represents distance in miles and we want to convert it to kilometers. We simply say ```data * 1.6```:
 
 
 <div class="img-div-any-width" markdown="0">
@@ -85,7 +85,7 @@ See how NumPy understood that operation to mean that the multiplication should h
 
 ## Indexing
 
-We can index and slices NumPy arrays in all the ways we can slice python lists:
+We can index and slice NumPy arrays in all the ways we can slice python lists:
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/numpy/numpy-array-slice.png"/>
@@ -101,7 +101,7 @@ Additional benefits NumPy gives us are aggregation functions:
   <br />
 </div>
 
-In addition to `min`, `max`, and `sum`, you get all the greats like `mean` to get the average, `prod` to get the result of multiplying all the elements together, `std` to get standard deviation, and plenty of others.
+In addition to `min`, `max`, and `sum`, you get all the greats like `mean` to get the average, `prod` to get the result of multiplying all the elements together, `std` to get standard deviation, and [plenty of others](https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html).
 
 
 ## In more dimensions
@@ -152,7 +152,7 @@ We can get away with doing these arithmetic operations on matrices of different 
 
 ### Dot Product
 
-A key distinction to make with arithmetic is the case of [matrix multiplication](https://www.mathsisfun.com/algebra/matrix-multiplying.html) using the dot product. NumPy gives ever matrix a `dot()` method we can use to carry-out dot product operations with other matrices:
+A key distinction to make with arithmetic is the case of [matrix multiplication](https://www.mathsisfun.com/algebra/matrix-multiplying.html) using the dot product. NumPy gives every matrix a `dot()` method we can use to carry-out dot product operations with other matrices:
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/numpy/numpy-matrix-dot-product-1.png"/>
@@ -161,7 +161,7 @@ A key distinction to make with arithmetic is the case of [matrix multiplication]
 
 <br />
 
-I've added matrix dimensions at the bottom of this figure to stress that the tow matrices have to have the same dimension on the side they face each other with. You can visualize this operation as looking like this:
+I've added matrix dimensions at the bottom of this figure to stress that the two matrices have to have the same dimension on the side they face each other with. You can visualize this operation as looking like this:
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/numpy/numpy-matrix-dot-product-2.png"/>
@@ -321,6 +321,8 @@ Think of all the data types you'll need to crunch and build models around (sprea
 #### Audio and Timeseries
  * An audio file is a one-dimensional array of samples. Each sample is a number representing a tiny chunk of the audio signal. CD-quality audio may have 44,100 samples per second and each sample is an integer between -65535 and 65536. Meaning if you have a ten-seconds WAVE file of CD-quality, you can load it in a NumPy array with length 10 * 44,100 = 441,000 samples. Want to extract the first second of audio? simply load the file into a NumPy array that we'll call `audio`, and get `audio[:44100]`.
 
+ Here's a look at a slice of an audio file:
+
   <div class="img-div-any-width" markdown="0">
     <image src="/images/numpy/numpy-audio.png"/>
     <br />
@@ -331,7 +333,9 @@ The same goes for time-series data (for example, the price of a stock over time.
 #### Images
  * An image is a matrix of pixels of size (height x width).
 
-   * If the image is black and white (greyscale), each pixel can be represented by a single number (commonly between 0 and 255). Want to crop the top left 10 x 10 pixel part of the image? Just tell NumPy to get you `image[:10,:10]`.
+   * If the image is black and white (grayscale), each pixel can be represented by a single number (commonly between 0 (black) and 255 (white)). Want to crop the top left 10 x 10 pixel part of the image? Just tell NumPy to get you `image[:10,:10]`.
+
+Here's a look at a slice of an image file:
 
 
      <div class="img-div-any-width" markdown="0">
