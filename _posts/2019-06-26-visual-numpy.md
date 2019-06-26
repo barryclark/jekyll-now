@@ -338,10 +338,10 @@ The same goes for time-series data (for example, the price of a stock over time.
 Here's a look at a slice of an image file:
 
 
-     <div class="img-div-any-width" markdown="0">
-       <image src="/images/numpy/numpy-grayscale-image.png"/>
-       <br />
-     </div>
+ <div class="img-div-any-width" markdown="0">
+   <image src="/images/numpy/numpy-grayscale-image.png"/>
+   <br />
+ </div>
 
 
    * If the image is colored, then each pixel is represented by three numbers - a value for each of red, green, and blue. In that case we need a 3rd dimension (because each cell can only contain one number). So a colored image is represented by an ndarray of dimensions: (height x width x 3).
