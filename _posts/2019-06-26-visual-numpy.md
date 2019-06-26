@@ -328,12 +328,12 @@ Think of all the data types you'll need to crunch and build models around (sprea
     <br />
   </div>
 
-The same goes for time-series data (for example, the price of a stock over time.
+The same goes for time-series data (for example, the price of a stock over time).
 
 #### Images
  * An image is a matrix of pixels of size (height x width).
 
-   * If the image is black and white (grayscale), each pixel can be represented by a single number (commonly between 0 (black) and 255 (white)). Want to crop the top left 10 x 10 pixel part of the image? Just tell NumPy to get you `image[:10,:10]`.
+   * If the image is black and white (a.k.a. grayscale), each pixel can be represented by a single number (commonly between 0 (black) and 255 (white)). Want to crop the top left 10 x 10 pixel part of the image? Just tell NumPy to get you `image[:10,:10]`.
 
 Here's a look at a slice of an image file:
 
