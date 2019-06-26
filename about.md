@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I have been working in the IT industry for nearly 20 years now. I'm now working for [Nuxeo](wwww.nuxeo.com) as a Cloud Engineer. Nuxeo is a Content Service Platform that allow companies to put their content to work. I'm in charge of the engineering of the company's cloud platform.
+
+As I like sharing, I'm trying to keep that place with constant new stories about what I'm working on.
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dmetzler@gmail.com](mailto:dmetzler@gmail.com)
