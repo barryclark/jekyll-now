@@ -601,12 +601,12 @@ When we start training the model, we do not know the best initial value of its p
 <div class="img-div-any-width" markdown="0">
   <image src="/images/grad/gradient-descent-random-init-detailed.png"/>
   <br />
-  Steps #2 and #3 are optional. We don't really need them as we'll repeat them in the gradient descent step. I'm including them here to set up the following figure.
+  Calculating MSE in this step is optional. We don't really need it as we'll repeat it in the gradient descent step. I'm including it here to set up the following figure.
 </div>
 
 
 
-One common way to visualize gradient descent is to think of it as being teleported to a mountain and trying to climb down -- with lower altitudes corresponding to less error. Think of as this, where the X-axis is the parameter value, and the Y-axis is the Error/loss at that value. Our goal is minimize the error/loss function, which in this case is Mean Square Error (there are other loss functions).
+One common way to visualize gradient descent is to think of it as being teleported to a mountain and trying to climb down -- with lower altitudes corresponding to less error. Think of as this, where the X-axis is the parameter value, and the Y-axis is the Error/loss at that value. Our goal is to minimize the error/loss function, which in this case is Mean Square Error (there are other loss functions).
 
 
 <div class="img-div-any-width" markdown="0">
