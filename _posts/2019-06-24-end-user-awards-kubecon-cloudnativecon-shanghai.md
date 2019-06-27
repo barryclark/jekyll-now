@@ -11,5 +11,7 @@ tags:
   - "2019"
 ---
 
-At KubeCon CloudNativeCon Shanghai, I presented the End User Award 2019 to DiDi. I also chose to do this in Mandarin, which I've been learning for about eight months. Although it was obviously not a native speaker, people told me afterwards it was clear and understandable, and that they appreciated the effort. I was very happy!
+At KubeCon CloudNativeCon Shanghai, I presented the End User Award 2019 to DiDi. I also chose to do this in Mandarin, which I've been learning for about eight months.
+
+Although I'm obviously not a native speaker (my parents are from Hong Kong), people told me afterwards it was clear and understandable, and that they appreciated the effort. I was very happy!
 
