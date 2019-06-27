@@ -10,7 +10,7 @@ It’s well known that the technology industry is not the most diverse, but buil
 
 This blog post marks the beginning of our journey to make positive change to the diversity of the computing industry. We are setting out to build a more diverse workforce and an inclusive working environment for all at Infinity Works.
 
-This means looking at all of our processes from recruitment, events and leadership to day-to-day working. It means ensuring we reduce unconscious bias, it means reaching out toq under-represented groups and it means getting involved in the wider community. We want to listen and learn to ensure we include more diverse viewpoints and ways of thinking.
+This means looking at all of our processes from recruitment, events and leadership to day-to-day working. It means ensuring we reduce unconscious bias, it means reaching out to under-represented groups and it means getting involved in the wider community. We want to listen and learn to ensure we include more diverse viewpoints and ways of thinking.
 
 Our aims are to make sure that everyone has a chance to succeed at IW and to be happy in their workplace. We want to share our love of computing with the community around us and aim to devote more time to working with under-represented groups, encouraging them into a career in computing and technology.
 
