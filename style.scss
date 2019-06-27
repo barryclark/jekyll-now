@@ -282,6 +282,7 @@ nav {
   float: left;
   position: relative;
   left: 5em;
+  display: none;
 
   ul,
   li {
@@ -302,6 +303,9 @@ nav {
   li .activated {
     color: $lightPurple;
     font-weight: 500;
+  }
+  @media only screen and (min-width: 1320px) {
+    display: inline;
   }
 }
 .posts > .post:hover {

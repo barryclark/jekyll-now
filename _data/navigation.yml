@@ -7,8 +7,8 @@
       url: /study/javascript
     - title: Node.js
       url: /study/nodejs
-    # - title: HTML & CSS
-    #   url: /study/html_css
+    - title: HTML & CSS
+      url: /study/html_css
     - title: React
       url: /study/react
     - title: React Native
