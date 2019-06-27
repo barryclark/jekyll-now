@@ -304,7 +304,7 @@ nav {
     color: $lightPurple;
     font-weight: 500;
   }
-  @media only screen and (min-width: 1320px) {
+  @media (min-width: 1320px) {
     display: inline;
   }
 }
