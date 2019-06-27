@@ -7,7 +7,7 @@ name: Infinity Works
 title: Infinity Works
 
 # Short bio or description (displayed in the header)
-description: Engineering Blog
+description: Company Blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/infinityworks.png
@@ -98,6 +98,20 @@ authors:
     web_short_name: infinityworks.com
     gravatar: d2137733fa2a3550317712d237472b43
     linkedin: georgia-gage
+  stein_fletcher:
+    display_name: Stein Fletcher
+    email: stein.fletcher@infinityworks.com
+    web: https://stein.wtf
+    web_short_name: stein.wtf
+    gravatar: b720c55560f2ca8a9d531bc3b48622c6
+    linkedin: steinfletcher
+  emily_birch:
+    display_name: Emily Birch
+    email: emily.birch@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    gravatar: 40b84e411c52561c79e704b29dd82a02
+    linkedin: emily-birch-a01b5190
 
 #
 # Flags below are optional
@@ -129,13 +143,13 @@ google_analytics: UA-83439332-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://engineering.infinityworks.com
+url: http://blog.infinityworks.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-# baseurl: "http://engineering.infinityworks.com/"
+# baseurl: "http://blog.infinityworks.com/"
 
 #
 # !! You don't need to change any of the configuration flags below !!
