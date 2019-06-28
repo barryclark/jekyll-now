@@ -351,10 +351,14 @@ nav {
   }
   .entry {
     font-family: $Spoqa;
-
     font-size: 16px;
     margin-top: 1em;
   }
+}
+.lan-translate {
+  font-family: $Spoqa;
+  font-size: 14px;
+  font-weight: 200;
 }
 .pagination span.active {
   border-radius: 50%;
