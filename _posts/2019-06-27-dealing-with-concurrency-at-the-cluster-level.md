@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Dealing With Concurrency At The Cluster Level
+img_url: /images/2019-06-27-trains.png
+img_credits: Photo by <a href="https://unsplash.com/@bbsody">Maxim Melnikov on Unsplash</a>
 ---
 
 Concurrency has always been a problem in software development. As soon as you have several path of execution, some part of your program may access the same resource at the same time... and problem happen at that particular moment.

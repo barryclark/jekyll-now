@@ -13,6 +13,20 @@
     <meta name="author" content="{{ site.name }}" />
 
     {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@{{ site.twitter_username }}"/>
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}"/>
+    <meta name="twitter:image" content="{% if page.img_url %}{{ site.url }}{{ page.img_url }}{% else %}{{ site.url }}/assets/logo-github.png{% endif %}"/>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}"/>
+    <meta property="og:site_name" content="Damien Metzler's blog"/>
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}"/>
+    <meta property="og:image" content="{{ site.url }}{{ page.img_url | default: site.img_url }}"/>
+    <meta property="og:image:width" content="{{ page.img_width | default: site.img_width }}"/>
+    <meta property="og:image:height" content="{{ page.img_width | default: site.img_height }}"/>
     {% endif %}
