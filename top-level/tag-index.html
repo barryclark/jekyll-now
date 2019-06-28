@@ -7,5 +7,4 @@ csses: [/css/tags.css]
 
 <ul>{% assign tags = site.tags | sort %}{% for tag in tags %}
 <li><a href="/tags/#{{ tag[0] | replace: ' ', '-' }}">{{ tag[0] }}</a></li>
-<h2 id="{{ tag[0] | replace: ' ', '-' }}"></h2>
 {% endfor %}</ul>
