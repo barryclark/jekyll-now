@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Non nobis solum nati sumus
+Mechanical Project Engineer at FJA.
+
 
 ### More Information
 
-Forever student enthusiast about programmning and caring Earth.
+https://farmandosb.github.io/resume/
 
 ### Contact me
 
