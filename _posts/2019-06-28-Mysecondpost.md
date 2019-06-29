@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My first post!
+title: My second post!
 ---
 
 I came back before I expected!... Now let's try with a photo.
