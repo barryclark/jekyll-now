@@ -15,3 +15,4 @@ At KubeCon CloudNativeCon Shanghai, I presented the End User Award 2019 to DiDi.
 
 Although I'm obviously not a native speaker (my parents are from Hong Kong), people told me afterwards it was clear and understandable, and that they appreciated the effort. I was very happy!
 
+You can read the press release from PR Newswire here: [Cloud Native Computing Foundation Announces DiDi as Winner of Top End User Award](https://www.prnewswire.com/news-releases/cloud-native-computing-foundation-announces-didi-as-winner-of-top-end-user-award-300873191.html).
