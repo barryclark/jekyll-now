@@ -12,4 +12,4 @@ Forever student enthusiast about programmning and caring Earth.
 
 ### Contact me
 
-[email@domain.com](mailto:fasb85@gmail.com)
+[fasb85@gmail.com](mailto:fasb85@gmail.com)
