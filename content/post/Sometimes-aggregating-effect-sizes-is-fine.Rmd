@@ -1,0 +1,22 @@
+---
+title: Sometimes, aggregating effect sizes is fine
+author: James
+date: '2019-06-28'
+draft: true
+slug: Sometimes-aggregating-effect-sizes-is-fine
+categories: []
+tags:
+  - effect sizes
+  - meta-analysis
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+In meta-analyses of psychology, education, and other social science research, it is very common that the set of studies meeting inclusion criteria includes some studies with more than one relevant effect size. 
+For example, in a meta-analysis of intervention effects on reading outcomes, some studies may have used multiple measures of reading outcomes (each of which meets inclusion criteria), or may have measured outcomes at multiple follow-up times; some studies might have also investigated more than one version of an intervention, and it might be of interest to include effect sizes comparing each version to the no-intervention control condition;
+and it's even possible that some studies may have _all_ of these features, potentially contributing _lots_ of effect size estimates. 
+These situations create a technical challenge for conducting a meta-analysis because effect size estimates 
+
+Okay let's get technical. 
