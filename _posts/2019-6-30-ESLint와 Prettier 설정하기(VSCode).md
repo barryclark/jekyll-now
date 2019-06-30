@@ -96,6 +96,31 @@ package.json파일의 `eslintConfig` 부분에서 이것을 사용하지 않겠�
   }
 ```
 
+<br>
+
+추가적으로, App.test.js 파일을 저장해 보면, 아래와 같은 오류가 발생하는데,
+
+![Eslint env 에러](/images/env-error.png "Eslint env 에러")
+
+<br>
+`env`에 `browser`와 `jest`를 추가해주면 된다.
+
+```javascript
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "airbnb"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": 0
+    },
+    "env": {
+      "jest": true,
+      "browser": true
+    }
+  }
+```
+
 ### Prettier 설정하기
 
 프로젝트의 루트 디렉토리에 `.prettierrc` 파일을 만들고, 사용하고자하는 옵션을 추가한다.
@@ -134,11 +159,15 @@ package.json 파일에 적용한다.
     ],
     "rules": {
       "react/jsx-filename-extension": 0
+    },
+    "env": {
+      "jest": true,
+      "browser": true
     }
   }
 ```
 <br>
-
+ 
 이제 깔끔한 코드 작성할 준비 완료 ! 😎
 
 <br>
