@@ -1,10 +1,16 @@
 ---
 layout: post
 title:  Test-GMERemoteX509Cert
-tag: notReady
+categories:
+    - PowerShell
+tags: 
+    - PowerShell
+    - X509
 ---
 I need quick method to verify whichof our services expose expiring certificates (and verify to control process of changing done by Network security team). 
-Of course there are many other methods. Sometimes are obvious (like ```curl```), other looks complicated like us for simple task all [PSPKI](https://github.com/PKISolutions/PSPKI) module (as )
+Of course there are many other methods. Sometimes are obvious (like ```curl```), other looks complicated like us for simple task all [PSPKI](https://github.com/PKISolutions/PSPKI) module (as Vadims Podāns, author of first propagate on his homepage code which in misterious way  [do not work](https://www.google.com/search?q=site%3Awww.sysadmins.lv+Test-WebServerSSL) and later include it to huge PowerShell module, with C# code behing - so it diffiult to audit those code before deploy). 
+
+From other side existing code looks good for use once, and oriented to show once and now. I take one of example [PowerShell to get remote website’s SSL certificate expiration](https://iamoffthebus.wordpress.com/2014/02/04/powershell-to-get-remote-websites-ssl-certificate-expiration/) by CRCerr0r and convert it to module. 
 
 ```powershell 
 function Test-GMERemoteX509Cert {
@@ -28,7 +34,7 @@ function Test-GMERemoteX509Cert {
     $req.CookieContainer = New-Object -TypeName System.Net.CookieContainer
     $req.Timeout = $timeoutMilliseconds
     try {$null = $req.GetResponse()} catch {$errorString = ('Exception while checking URL {0} {1} ' -f $url, $_)}
-    [datetime]$expiration = $req.ServicePoint.Certificate.GetExpirationDateString()
+    [datetime]$expiration = [system.datetime]::Parse($req.ServicePoint.Certificate.GetExpirationDateString())
     [int]$certExpiresIn = ($expiration - $(get-date)).Days
     $certName = $req.ServicePoint.Certificate.GetName()
     $null = $req.ServicePoint.Certificate.GetPublicKeyString()
