@@ -291,6 +291,9 @@ collections:
   opengl:
     output: true
     permalink: /:collection/:path/
+  mathematics:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -353,6 +356,15 @@ defaults:
   - scope:
       path: ""
       type: opengl
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
+  # _mathematics
+  - scope:
+      path: ""
+      type: mathematics
     values:
       layout: single
       author_profile: true
