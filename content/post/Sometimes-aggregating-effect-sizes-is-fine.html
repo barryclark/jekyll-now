@@ -1,0 +1,215 @@
+---
+title: 'Sometimes, aggregating effect sizes is fine'
+author: James
+date: '2019-06-28'
+slug: Sometimes-aggregating-effect-sizes-is-fine
+categories: []
+draft: true
+tags:
+  - effect sizes
+  - meta-analysis
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+
+
+<p>In meta-analyses of psychology, education, and other social science research, it is very common that some of the studies meeting inclusion criteria report more than one relevant effect size.
+For example, in a meta-analysis of intervention effects on reading outcomes, some studies may have used multiple measures of reading outcomes (each of which meets inclusion criteria), or may have measured outcomes at multiple follow-up times; some studies might have also investigated more than one version of an intervention, and it might be of interest to include effect sizes comparing each version to the no-intervention control condition;
+and it’s even possible that some studies may have <em>all</em> of these features, potentially contributing <em>lots</em> of effect size estimates.</p>
+<p>These situations create a technical challenge for conducting a meta-analysis.
+Because effect size estimates from the same study are correlated, it’s not usually reasonable to use methods that are premised on each effect size estimate being independent (i.e., univariate methods).
+Instead, the analyst needs methods that take into account the dependencies among estimates coming from the same study.
+It used to be common to use ad hoc approaches for handling dependence, such as averaging the estimates together or selecting one estimate per study and then using univariate methods.
+More sophisticated, multivariate meta-analysis (MVMA) models that directly account for correlations among the effect size estimates had been developed but were challenging to implement and so rarely used (at least, that’s my impression).
+More recently, techniques such as multi-level meta-analysis (MLMA) and robust variance estimation (RVE) have emerged, which account for dependencies while using all available effect size estimates and still being feasible to implement.
+These new techniques of MLMA, and RVE are starting to be adopted in practice, and it is not implausible that they will become the standard approach in psychological and educational meta-analysis within a few years.</p>
+<p>Given the extent of interest in MLMA and RVE, one might wonder: are the older ad hoc approaches <em>ever</em> reasonable or appropriate?
+I think that some are, under certain circumstances.
+In this post I’ll highlight one such circumstance, where aggregating effect size estimates is not only reasonable but leads to <em>exactly the same results</em> as a multivariate model. This occurs when two conditions are met:</p>
+<ol style="list-style-type: decimal">
+<li>We are not interested in within-study heterogeneity of effects and</li>
+<li>Any predictors included in the model only vary between studies (i.e., effect sizes from the same study all have the same values of the predictors).</li>
+</ol>
+<p>In short, if all we care about is understanding between-study variation in effect sizes, then it is fine to aggregate them up to the study level.</p>
+<div id="a-model-thats-okay-to-average" class="section level1">
+<h1>A model that’s okay to average</h1>
+<p>To make this argument precise, let me lay out a model where it applies.
+For full generality, I’ll consider a meta-regression model for a collection of <span class="math inline">\(K\)</span> studies, where study <span class="math inline">\(k\)</span> contributes <span class="math inline">\(J_k \geq 1\)</span> effect size estimates.
+Let <span class="math inline">\(T_{jk}\)</span> denote effect size estimate <span class="math inline">\(j\)</span> in study <span class="math inline">\(k\)</span>, with sampling variance <span class="math inline">\(S_{jk}^2\)</span>.
+Effect size estimates from study <span class="math inline">\(k\)</span> maybe be correlated at the sampling level, so that <span class="math inline">\(\text{Cov}(T_{ik}, T_{jk}) = \rho_{ijk} S_{ik} S_{jk}\)</span>.
+Let <span class="math inline">\(\mathbf{x}_k\)</span> be a row vector of predictor variables for study <span class="math inline">\(k\)</span>.
+Note that the predictors do not have a subscript <span class="math inline">\(j\)</span> because I’m assuming here that they are constant within a study.
+A multivariate meta-regression model for these data might be:
+<span class="math display">\[
+T_{jk} = \mathbf{x}_k \boldsymbol\beta + u_k + e_{jk},
+\]</span>
+where <span class="math inline">\(u_k\)</span> is a between-study random effect with variance <span class="math inline">\(\tau^2\)</span> and <span class="math inline">\(e_{jk}\)</span> is the sampling error for effect size <span class="math inline">\(j\)</span> from study <span class="math inline">\(k\)</span>, assumed to have known variance <span class="math inline">\(S_{jk}^2\)</span>.
+Errors from the same study are correlated, so <span class="math inline">\(\text{Cov}(e_{ik}, e_{jk}) = \rho_{ijk} S_{ik} S_{jk}\)</span>.
+I will assume that the correlations are known, although in practice one might need to just take a guess about the degree of correlation, such as by assuming <span class="math inline">\(\rho_{ijk} = 0.7\)</span> for all pairs of estimates from each included study.</p>
+<p>This is a commonly considered model for dependent effect size estimates.
+In the paper that introduced RVE, Hedges, Tipton, and Johnson (2010) termed it the “correlated effects” model (implemented in <code>robumeta</code> as <code>model = "CORR"</code>, which is the default).
+Note that it also satisfies the conditions I outlined above: no within-study random effects, predictors that vary only between study.
+One could fit it easily using the <code>rma.mv()</code> function in the <code>metafor</code> package.</p>
+<p>An alternative to this multivariate model would be to first average the effects within each study, then fit a univariate random effects model.
+Just how we do the averaging will matter: we’ll need to use inverse-variance weighting.
+I’ll start by describing the general case (which requires a little matrix algebra) and then commenting on a common special case (which is easier to express).
+Let <span class="math inline">\(\mathbf{T}_k\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vector of effect size estimates from study <span class="math inline">\(k\)</span>. Let <span class="math inline">\(\mathbf{S}_k\)</span> be the <span class="math inline">\(J_k \times J_k\)</span> sampling covariance matrix for <span class="math inline">\(\mathbf{T}_k\)</span>, and let <span class="math inline">\(\mathbf{1}_k\)</span> be a <span class="math inline">\(J_k \times 1\)</span> vector of 1s. The inverse-variance weighted average of the effects from study k can then be written as
+<span class="math display">\[
+\bar{T}_k = V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{T}_k, 
+\]</span>
+where <span class="math inline">\(V_k = 1 / (\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k)\)</span>, which is also the sampling variance of <span class="math inline">\(\bar{T}_k\)</span>.</p>
+<p>After aggregating, a conventional, univariate random effects model for the averaged effect sizes would then be
+<span class="math display">\[
+\bar{T}_k = \mathbf{x}_k \boldsymbol\beta + u_k + \bar{e}_k, 
+\]</span>
+where <span class="math inline">\(\text{Var}(u_k) = \tau^2\)</span> and <span class="math inline">\(\text{Var}(\bar{e}_k) = V_k\)</span>.
+This model can be fit using <code>rma.uni</code> from <code>metafor</code>.
+In fact, doing so will yield the same estimates of model parameters as fitting the multivariate model—for all intents and purposes, they are equivalent models.
+There are at several different ways to see that this equivalence holds.
+I’ll offer three, from most practical to most theoretical.
+(If you’d rather just take my word that this claim is true, feel free to skip down to the <a href="#so-what">last section</a>, where I comment on implications.)</p>
+</div>
+<div id="computational-equivalence" class="section level1">
+<h1>Computational equivalence</h1>
+<p>One good way to check the equivalence of the univariate and multivariate models is to apply both to a real dataset.</p>
+<p>The main limitation of using real data here is generality—how can we be sure that these results aren’t just a quirk of this particular dataset? Would we get the same results for <em>any</em> dataset?</p>
+</div>
+<div id="from-multivariate-to-univariate-model" class="section level1">
+<h1>From multivariate to univariate model</h1>
+<p>Here’s another, somewhat more general perspective on the relationship between the models: the univariate model can be <em>derived</em> directly from the multivariate one. Start with the multivariate model in matrix form:
+<span class="math display">\[
+\mathbf{T}_k = \mathbf{x}_k \boldsymbol\beta \mathbf{1}_k + u_k \mathbf{1}_k + \mathbf{e}_k,
+\]</span>
+where <span class="math inline">\(\mathbf{e}_k\)</span> is the vector of sampling errors for study <span class="math inline">\(k\)</span>, with <span class="math inline">\(\text{Var}(\mathbf{e}_k) = \mathbf{S}_k\)</span>. Pre-multiply both sides by <span class="math inline">\(V_k \mathbf{1}_k’ \mathbf{S}_k^{-1}\)</span> to get
+<span class="math display">\[
+\begin{aligned}
+V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{T}_k &amp;= V_k \left(\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k\right) \mathbf{x}_k \boldsymbol\beta + u_k V_k \left(\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k\right) + V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{e}_k \\
+\bar{T}_k &amp;= \mathbf{x}_k \boldsymbol\beta + u_k + \bar{e}_k,
+\end{aligned}
+\]</span>
+where <span class="math inline">\(\text{Var}(\bar{e}_k) = V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{S}_k \mathbf{S}_k^{-1} \mathbf{1}_k V_k = V_k\)</span>, just as in the univariate model.</p>
+<p>This demonstrates that the parameters of the two models are the same quantities—that is, both models are estimating the same thing. But that would also hold if we used <em>any</em> weighted average of <span class="math inline">\(\mathbf{T}_k\)</span>—it needn’t be inverse-variance. The only thing that would be different is <span class="math inline">\(\text{Var}(\bar{e}_k)\)</span>. To fully establish the equivalence of the two models, we’ll need to look at the likelihoods of each model.</p>
+</div>
+<div id="equivalence-of-likelihoods" class="section level1">
+<h1>Equivalence of likelihoods</h1>
+<p>Typically multivariate meta-analysis models are estimated by full maximum likelihood (FML) or restricted maximum likelihood methods. FML and RML are also commonly used for univariate meta-analysis. With these methods, estimates are obtained as the parameter values that maximize the log likelihood (or the restricted likelihood for RML). Therefore, we can establish the exact equivalence of parameter estimates by showing that the log likelihood of the univariate and multivariate models differ by a constant value (so that the location of the maxima are identical).</p>
+<div id="full-likelihood" class="section level2">
+<h2>Full likelihood</h2>
+<p>For the univariate model, the log-likelihood contribution of study <span class="math inline">\(k\)</span>:
+<span class="math display">\[
+l^{U}_k\left(\boldsymbol\beta, \tau^2\right) = -\frac{1}{2} \log\left(\tau^2 + V_k\right) - \frac{1}{2} \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k}.
+\]</span>
+For the multivariate model, the log-likelihood contribution of study <span class="math inline">\(k\)</span> is:
+<span class="math display">\[
+l^{MV}_k\left(\boldsymbol\beta, \tau^2\right) = -\frac{1}{2} A -\frac{1}{2} B
+\]</span>
+where
+<span class="math display">\[
+A = \log\left|\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right| 
+\]</span>
+and
+<span class="math display">\[
+B = \left(\mathbf{T}_k - \mathbf{x}_k \boldsymbol\beta \mathbf{1}_k\right)&#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right)^{-1} \left(\mathbf{T}_k - \mathbf{x}_k \boldsymbol\beta \mathbf{1}_k\right).
+\]</span>
+The term <span class="math inline">\(A\)</span> can be rearranged as
+<span class="math display">\[
+A = \log\left|\left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39;\mathbf{S}_k^{-1} + \mathbf{I}_k\right) \mathbf{S}_k\right|
+\]</span>
+where <span class="math inline">\(\mathbf{I}_k\)</span> is a <span class="math inline">\(J_k \times J_k\)</span> identity matrix. One of the properties of determinants is that the determinant of a product of two matrices is equal to the product of the determinants. Another is that, for two vectors <span class="math inline">\(\mathbf{u}\)</span> and <span class="math inline">\(\mathbf{v}\)</span>, <span class="math inline">\(\left|\mathbf{I} + \mathbf{u}\mathbf{v}&#39;\right| = 1 + \mathbf{v}&#39;\mathbf{u}\)</span>. Applying both of these properties, it follows that
+<span class="math display">\[
+\begin{aligned}
+A &amp;= \log\left|\left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39;\mathbf{S}_k^{-1} + \mathbf{I}_k\right) \mathbf{S}_k\right| \\
+&amp;= \log \left( \left|\mathbf{I}_k + \tau^2\mathbf{1}_k\mathbf{1}_k&#39;\mathbf{S}_k^{-1}\right| \left|\mathbf{S}_k\right|\right) \\
+&amp;= \log \left(1 + \frac{\tau^2}{V_k}\right) + \log \left|\mathbf{S}_k\right| \\
+&amp;= \log(\tau^2 + V_k) - \log(V_k) + \log \left|\mathbf{S}_k\right|.
+\end{aligned}
+\]</span>
+The <span class="math inline">\(B\)</span> term takes a little more work.
+From <a href="https://en.wikipedia.org/wiki/Sherman%E2%80%93Morrison_formula">the Sherman-Morrison identity</a>, we have that:
+<span class="math display" id="eq:Sherman">\[
+\left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right)^{-1} = \mathbf{S}_k^{-1} - \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&#39;\mathbf{S}_k^{-1},
+\tag{1}
+\]</span>
+by which it follows that
+<span class="math display" id="eq:inversevariance">\[
+\mathbf{1}_k&#39;\left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right)^{-1}\mathbf{1}_k = \frac{1}{\tau^2 + V_k}.
+\tag{2}
+\]</span>
+Now, rearrange the <span class="math inline">\(B\)</span> term to get
+<span class="math display">\[
+\begin{aligned}
+B &amp;= \left[\mathbf{T}_k - \bar{T}_k \mathbf{1}_k + \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \mathbf{1}_k\right]&#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right)^{-1} \left[\mathbf{T}_k - \bar{T}_k \mathbf{1}_k + \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \mathbf{1}_k\right] \\
+&amp;= B_1 + 2 B_2 + B_3
+\end{aligned}
+\]</span>
+where
+<span class="math display">\[
+\begin{aligned}
+B_1 &amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right)^{-1} \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) \\
+B_2 &amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right)^{-1} \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\
+B_3 &amp;= \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \mathbf{1}_k&#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right)^{-1} \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\
+&amp;= \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k}
+\end{aligned}
+\]</span>
+and the last equality follows from <a href="#eq:inversevariance">(2)</a>. Applying <a href="#eq:Sherman">(1)</a> to <span class="math inline">\(B_1\)</span>,
+<span class="math display">\[
+\begin{aligned}
+B_1 &amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \left[\mathbf{S}_k^{-1} - \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&#39;\mathbf{S}_k^{-1}\right] \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) \\ 
+&amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) - \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&#39;\mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) \\
+&amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right).
+\end{aligned}
+\]</span>
+The second term drops out because <span class="math inline">\(\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1} \mathbf{1}_k = \bar{T}_k / V_k - \bar{T}_k / V_k = 0\)</span>. Along similar lines,
+<span class="math display">\[
+\begin{aligned}
+B_2 &amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \left[\mathbf{S}_k^{-1} - \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&#39;\mathbf{S}_k^{-1}\right] \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\ 
+&amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1}\mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) - \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&#39;\mathbf{S}_k^{-1}\mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\
+&amp;= 0.
+\end{aligned}
+\]</span>
+Thus, the full <span class="math inline">\(B\)</span> term reduces to
+<span class="math display">\[
+B = \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) + \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k}
+\]</span>
+and the multivariate log likelihood contribution is
+<span class="math display">\[
+\begin{aligned}
+l^{MV}_k\left(\boldsymbol\beta, \tau^2\right) &amp;= -\frac{1}{2} \log(\tau^2 + V_k) + \frac{1}{2} \log(V_k) - \frac{1}{2}\log \left|\mathbf{S}_k\right| - \frac{1}{2} \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) -\frac{1}{2} \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k} \\
+&amp;= l^U_k\left(\boldsymbol\beta, \tau^2\right) + \frac{1}{2} \log(V_k) - \frac{1}{2}\log \left|\mathbf{S}_k\right| - \frac{1}{2} \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right).
+\end{aligned}
+\]</span>
+The last three terms depend on the data (<span class="math inline">\(\mathbf{T}_k\)</span> and <span class="math inline">\(\mathbf{S}_k\)</span>) but not on the parameters <span class="math inline">\(\boldsymbol\beta\)</span> or <span class="math inline">\(\tau^2\)</span>. Therefore, the univariate and multivariate likelihoods will be maximized at the same parameter values, i.e., the FML estimators are identical.</p>
+</div>
+<div id="restricted-likelihood" class="section level2">
+<h2>Restricted likelihood</h2>
+<p>In practice, it is more common to use RML estimation rather than FML.
+The RML estimators maximize a different objective function that includes the full likelihood, plus an additional term. The RML objective function for the univariate model is
+<span class="math display">\[
+\sum_{k=1}^K l^U_k(\boldsymbol\beta, \tau^2) - \frac{1}{2} R^U(\tau^2)
+\]</span>
+where
+<span class="math display">\[
+R^U(\tau^2) = \log \left|\sum_{k=1}^k\frac{\mathbf{x}_k&#39; \mathbf{x}_k}{\tau^2 + V_k} \right|.
+\]</span>
+For the multivariate model, the RML objective is
+<span class="math display">\[
+\sum_{k=1}^K l^{MV}_k(\boldsymbol\beta, \tau^2) - \frac{1}{2} R^{MV}(\tau^2).
+\]</span>
+where
+<span class="math display">\[
+\begin{aligned}
+R^{MV}(\tau^2) &amp;= \log \left|\sum_{k=1}^k \mathbf{x}_k&#39;\mathbf{1}_k&#39;\left(\tau^2\mathbf{1}_k\mathbf{1}_k&#39; + \mathbf{S}_k\right)^{-1}\mathbf{1}_k \mathbf{x}_k \right|\\
+&amp;= \log \left|\sum_{k=1}^k\frac{\mathbf{x}_k&#39; \mathbf{x}_k}{\tau^2 + V_k} \right| \\
+&amp;= R^U(\tau^2)
+\end{aligned}
+\]</span>
+because of <a href="#eq:inversevariance">(2)</a>. Thus, the univariate and multivariate models also have the same RML estimators.</p>
+</div>
+</div>
+<div id="so-what" class="section level1">
+<h1>So what?</h1>
+<p>blahbeddy blah blah.</p>
+</div>
