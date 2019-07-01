@@ -55,13 +55,9 @@ Consider grouping the image and the rectangle together so you don't accidentally
 So there you have it. Putting a border around an image in Inkscape definitely could be easier, but it's not hard. At least for a rectangular image!
 
 <style>
-li img {
-	display: initial;
-}
-
-li em {
+li em, li img {
 	font-size: inherit;
-	display: inherit;
+	display: inline;
 	margin: inherit;
 }
 </style>
