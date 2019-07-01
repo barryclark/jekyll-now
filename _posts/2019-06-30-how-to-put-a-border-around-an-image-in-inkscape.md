@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Put A Border Around An Image In Inkscape
-tags: [inkscape]
+tags: [inkscape, design & illustration]
 keywords: [image, border, stroke]
 image: /images/inkscape/image-border-7.png
 ---
