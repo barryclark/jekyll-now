@@ -1,5 +1,5 @@
 ---
-title: Converting from odds ratios to standardized mean differences: What to do with logistic regression coefficients?
+title: 'Converting from odds ratios to standardized mean differences: What to do with logistic regression coefficients?'
 author: James
 date: '2019-05-26'
 slug: Converting-odds-ratios-to-standardized-mean-differences

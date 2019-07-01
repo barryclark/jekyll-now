@@ -1,0 +1,82 @@
+---
+title: 'Converting from odds ratios to standardized mean differences: What to do with logistic regression coefficients?'
+author: James
+date: '2019-05-26'
+slug: Converting-odds-ratios-to-standardized-mean-differences
+categories: []
+draft: true
+tags:
+  - meta-analysis
+  - odds-ratios
+  - effect sizes
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+
+
+<p>One of the central problems in research synthesis is that studies use a variety of different types of outcome measures to assess a construct. This is the main reason that meta-analysis often uses standardized, scale-free effect sizes (such as standardized mean differences), so that findings from studies that use different measures can be combined and contrasted on a common metric. In syntheses of education research (as well as other fields), a further issue that sometimes arises is that some included studies might report effects on a dichotomous outcome, while others report effects (of the same intervention, say) but using a continuous outcome measure.</p>
+<pre class="r"><code>logit &lt;- function(x) log(x) - log(1 - x)
+
+simulate_OR_to_SMD &lt;- function(p0, SMD, r, n0, n1) {
+  
+  # simulate data
+  trt &lt;- c(rep(0, n0), rep(1, n1))
+  Y &lt;- rlogis(n0 + n1, location = logit(p0) + trt * SMD * pi / sqrt(3))
+  X &lt;- r * (Y - trt * SMD) * sqrt(3) / pi + rnorm(n0 + n1, sd = sqrt(1 - r^2))
+  B &lt;- Y &gt; 0
+
+  # calculate LORs
+  logit_fit &lt;- glm(B ~ trt + X, family = &quot;binomial&quot;)
+  LOR_marginal &lt;- as.numeric(diff(logit(tapply(B, trt, mean))))
+  LOR_logit &lt;- coef(logit_fit)[[&quot;trt&quot;]]
+  LORs &lt;- c(LOR_marginal, LOR_logit)
+  
+  # convert to SMDs
+  SMDs &lt;- LORs * sqrt(3) / pi
+  
+  data.frame(type = c(&quot;marginal&quot;,&quot;conditional&quot;), LOR_est = LORs, SMD_est = SMDs)
+} 
+
+simulate_OR_to_SMD(p0 = 0.6, SMD = 0.4, r = 0.7, n0 = 10000, n1 = 10000)</code></pre>
+<pre><code>##          type   LOR_est   SMD_est
+## 1    marginal 0.7386497 0.4072389
+## 2 conditional 0.8345872 0.4601320</code></pre>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## Registered S3 methods overwritten by &#39;ggplot2&#39;:
+##   method         from 
+##   [.quosures     rlang
+##   c.quosures     rlang
+##   print.quosures rlang</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;rvest&#39;:
+##   method            from
+##   read_xml.response xml2</code></pre>
+<pre><code>## -- Attaching packages ----------------------------------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## v ggplot2 3.1.1     v purrr   0.3.2
+## v tibble  2.1.3     v dplyr   0.8.1
+## v tidyr   0.8.3     v stringr 1.4.0
+## v readr   1.3.1     v forcats 0.4.0</code></pre>
+<pre><code>## -- Conflicts -------------------------------------------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>params &lt;- 
+  list(
+    p0 = seq(0.2, 0.8, 0.2),
+    SMD = seq(0.2, 0.8, 0.2),
+    r = seq(0, 0.9, 0.1)
+  ) %&gt;%
+  cross_df()
+
+SMDs &lt;- 
+  params %&gt;%
+  mutate(res = pmap(., simulate_OR_to_SMD, n0 = 50000, n1 = 50000)) %&gt;%
+  unnest() %&gt;%
+  mutate(RB = SMD_est / SMD)</code></pre>
+<pre><code>## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred</code></pre>
+<pre class="r"><code>ggplot(SMDs, aes(r, RB, color = type)) + 
+  geom_point() + geom_line() + 
+  facet_grid(SMD ~ p0, labeller = &quot;label_both&quot;) + 
+  theme_light()</code></pre>
+<p><img src="/post/Converting-odds-ratios-to-standardized-mean-differences_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
