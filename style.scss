@@ -572,10 +572,7 @@ ul.til-lists .tag {
   text-align: center;
   margin-top: 2em;
   font-size: 1.5em;
-
-  .comingSoon {
-    margin-bottom: 2em;
-  }
+  line-height: 1.6;
   img {
     width: 100%;
   }
@@ -611,6 +608,7 @@ ul.til-lists .tag {
 
 footer {
   padding: 20px 5px;
+  height: 62px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

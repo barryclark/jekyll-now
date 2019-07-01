@@ -2,7 +2,25 @@
 layout: default
 ---
 
-<div class="notice">
-  <div class="comingSoon">June 29 - July 25</div>
-  <img src="{{ site.baseurl }}/images/jeju_intro.jpeg" />
+<div class="container">
+  <p class="notice">
+    초보 개발자의 제주도 한 달 디지털 노마드 체험기<br />(June 29 - July 25)
+  </p>
+  <div class="post-lists">
+    {% for post in site.categories.nomad %}
+    <ul class="post-list">
+      <div class="aListBox">
+        <div class="listTitle">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="listEntry">
+          {{ post.excerpt }}
+        </div>
+        <div class="date">
+          {{ post.date | date: "%Y-%m-%d" }}
+        </div>
+      </div>
+    </ul>
+    {% endfor %}
+  </div>
 </div>
