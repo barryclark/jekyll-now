@@ -8,7 +8,7 @@ redirect_from:
 
 David is a Developer Advocate in the Java Platform Group at Oracle. Prior to that, he was involved in Oracle's Serverless initiatives. David has also been heavily involved in Java EE 8 and its transition to the Eclipse Foundation as part of the Jakarta EE initiative. 
 
-Over the years, David has championed Java extensively throughout the world, by presenting at conferences and user groups, large and small. He blogs at https://delabassee.com and has authored many technical articles for various publications.
+Over the years, David has championed Java extensively throughout the world, by presenting at [conferences](https://delabassee.com/conferences) and user groups, large and small. He blogs at https://delabassee.com and has authored many technical articles for various publications.
 
 David lives in Belgium. In his spare time, he enjoys playing video games with his daughter and tinkering with technologies such as domotics, electronics, and pinballs.
 
