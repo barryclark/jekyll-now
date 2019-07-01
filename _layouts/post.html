@@ -6,7 +6,7 @@ layout: default
 <div>
   {% include sidebar_study.html %}
 </div>
-{% else if page.url contains "project" %}
+{% endif %} {% if page.url contains "project" %}
 <div>
   {% include sidebar_project.html %}
 </div>
