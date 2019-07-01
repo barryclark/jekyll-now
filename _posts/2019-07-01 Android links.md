@@ -2,8 +2,8 @@
 title: Android
 layout: collection
 permalink: /android/
-collection: android
 author_profile: true
+last_modified_at: 2019-07-01T09:45:06-05:00
 ---
 
 {% capture written_label %}'None'{% endcapture %}
