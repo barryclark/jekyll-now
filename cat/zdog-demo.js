@@ -23,7 +23,7 @@ let Robot = new Zdog.Group({
 
 // ==FONT==
 var font = new Zdog.Font({
-   src:'/Montserrat/Montserrat-Bold.ttf', 
+   src:'Montserrat-Bold.ttf', 
 });
 var Header = new Zdog.Text({
     addTo: illo,
