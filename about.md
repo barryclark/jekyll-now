@@ -6,7 +6,7 @@ redirect_from:
   - /david/
   - /David/
 ---
-My name is David Delabassée, I am in the Java space since the early days of this technology. I'm a DevRel in Oracle's Java Platform Group.
+My name is David Delabassée, I'm a DevRel in Oracle's Java Platform Group. In fact, I am in the Java ecosystem since the early days of this technology. 
 
 Before joining the Java Platform Group, I was working in Oracle's Serverless Group where I was mostly focused on the open source [Fn Project](https://github.com/fnproject) (and I still enjoy that project!).
 
