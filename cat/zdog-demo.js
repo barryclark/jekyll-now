@@ -23,7 +23,7 @@ let Robot = new Zdog.Group({
 
 // ==FONT==
 var font = new Zdog.Font({
-   src:'https://github.com/dactrtr/dactrtr.github.io/blob/master/cat/Montserrat-Bold.ttf', 
+    src:'Montserrat-bold.ttf',
 });
 var Header = new Zdog.Text({
     addTo: illo,
@@ -54,7 +54,8 @@ let rBase = new Zdog.Hemisphere({
     fill:true,
     backface:'#889B9B',
     rotate:{x:2},
-})
+});
+
 
 
 // ==CAT==
