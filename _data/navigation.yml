@@ -10,6 +10,8 @@ main:
     url: /algorithm/
   - title: "操作系统"
     url: /os/
+  - title: "Mathematics"
+    url: /mathematics/
   - title: "OpenGL"
     url: /opengl/
   - title: "关于"
