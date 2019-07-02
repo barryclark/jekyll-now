@@ -1,8 +1,10 @@
 ---
 title: 'Sometimes, aggregating effect sizes is fine'
 author: James
-date: '2019-06-28'
+date: '2019-07-02'
 slug: Sometimes-aggregating-effect-sizes-is-fine
+bibliography: [meta-references.bib]
+link-citations: true
 categories: []
 draft: true
 tags:
@@ -22,9 +24,9 @@ and it’s even possible that some studies may have <em>all</em> of these featur
 <p>These situations create a technical challenge for conducting a meta-analysis.
 Because effect size estimates from the same study are correlated, it’s not usually reasonable to use methods that are premised on each effect size estimate being independent (i.e., univariate methods).
 Instead, the analyst needs methods that take into account the dependencies among estimates coming from the same study.
-It used to be common to use ad hoc approaches for handling dependence, such as averaging the estimates together or selecting one estimate per study and then using univariate methods.
-More sophisticated, multivariate meta-analysis (MVMA) models that directly account for correlations among the effect size estimates had been developed but were challenging to implement and so rarely used (at least, that’s my impression).
-More recently, techniques such as multi-level meta-analysis (MLMA) and robust variance estimation (RVE) have emerged, which account for dependencies while using all available effect size estimates and still being feasible to implement.
+It used to be common to use ad hoc approaches for handling dependence, such as averaging the estimates together or selecting one estimate per study and then using univariate methods <span class="citation">(cf. Becker <a href="#ref-Becker2000multivariate" role="doc-biblioref">2000</a>)</span>.
+More sophisticated, multivariate meta-analysis (MVMA) models that directly account for correlations among the effect size estimates had been developed <span class="citation">(Kalaian and Raudenbush <a href="#ref-Kalaian1996multivariate" role="doc-biblioref">1996</a>)</span> but were challenging to implement and so rarely used (at least, that’s my impression).
+More recently, techniques such as multi-level meta-analysis <span class="citation">(MLMA; Van den Noortgate et al. <a href="#ref-VandenNoortgate2013threelevel" role="doc-biblioref">2013</a>, <a href="#ref-VandenNoortgate2015metaanalysis" role="doc-biblioref">2015</a>)</span> and robust variance estimation <span class="citation">(RVE; Hedges, Tipton, and Johnson <a href="#ref-Hedges2010robust" role="doc-biblioref">2010</a>)</span> have emerged, which account for dependencies while using all available effect size estimates and still being feasible to implement.
 These new techniques of MLMA, and RVE are starting to be adopted in practice, and it is not implausible that they will become the standard approach in psychological and educational meta-analysis within a few years.</p>
 <p>Given the extent of interest in MLMA and RVE, one might wonder: are the older ad hoc approaches <em>ever</em> reasonable or appropriate?
 I think that some are, under certain circumstances.
@@ -50,17 +52,16 @@ where <span class="math inline">\(u_k\)</span> is a between-study random effect 
 Errors from the same study are correlated, so <span class="math inline">\(\text{Cov}(e_{ik}, e_{jk}) = \rho_{ijk} S_{ik} S_{jk}\)</span>.
 I will assume that the correlations are known, although in practice one might need to just take a guess about the degree of correlation, such as by assuming <span class="math inline">\(\rho_{ijk} = 0.7\)</span> for all pairs of estimates from each included study.</p>
 <p>This is a commonly considered model for dependent effect size estimates.
-In the paper that introduced RVE, Hedges, Tipton, and Johnson (2010) termed it the “correlated effects” model (implemented in <code>robumeta</code> as <code>model = "CORR"</code>, which is the default).
+In the paper that introduced RVE, <span class="citation">Hedges, Tipton, and Johnson (<a href="#ref-Hedges2010robust" role="doc-biblioref">2010</a>)</span> termed it the “correlated effects” model (implemented in <code>robumeta</code> as <code>model = "CORR"</code>, which is the default).
 Note that it also satisfies the conditions I outlined above: no within-study random effects, predictors that vary only between study.
 One could fit it easily using the <code>rma.mv()</code> function in the <code>metafor</code> package.</p>
 <p>An alternative to this multivariate model would be to first average the effects within each study, then fit a univariate random effects model.
 Just how we do the averaging will matter: we’ll need to use inverse-variance weighting.
-I’ll start by describing the general case (which requires a little matrix algebra) and then commenting on a common special case (which is easier to express).
 Let <span class="math inline">\(\mathbf{T}_k\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vector of effect size estimates from study <span class="math inline">\(k\)</span>. Let <span class="math inline">\(\mathbf{S}_k\)</span> be the <span class="math inline">\(J_k \times J_k\)</span> sampling covariance matrix for <span class="math inline">\(\mathbf{T}_k\)</span>, and let <span class="math inline">\(\mathbf{1}_k\)</span> be a <span class="math inline">\(J_k \times 1\)</span> vector of 1s. The inverse-variance weighted average of the effects from study k can then be written as
 <span class="math display">\[
 \bar{T}_k = V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{T}_k, 
 \]</span>
-where <span class="math inline">\(V_k = 1 / (\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k)\)</span>, which is also the sampling variance of <span class="math inline">\(\bar{T}_k\)</span>.</p>
+where <span class="math inline">\(V_k = 1 / (\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k)\)</span>, which is also the sampling variance of <span class="math inline">\(\bar{T}_k\)</span>.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <p>After aggregating, a conventional, univariate random effects model for the averaged effect sizes would then be
 <span class="math display">\[
 \bar{T}_k = \mathbf{x}_k \boldsymbol\beta + u_k + \bar{e}_k, 
@@ -74,8 +75,132 @@ I’ll offer three, from most practical to most theoretical.
 </div>
 <div id="computational-equivalence" class="section level1">
 <h1>Computational equivalence</h1>
-<p>One good way to check the equivalence of the univariate and multivariate models is to apply both to a real dataset.</p>
-<p>The main limitation of using real data here is generality—how can we be sure that these results aren’t just a quirk of this particular dataset? Would we get the same results for <em>any</em> dataset?</p>
+<p>One good way to check the equivalence of the univariate and multivariate models is to apply both to a dataset. I’ll use the data from a stylized example described in <span class="citation">Tanner-Smith and Tipton (<a href="#ref-TannerSmith2013robust" role="doc-biblioref">2013</a>)</span>, looking at the effects of alcohol abuse treatments on alcohol consumption among adolescents and young adults. (The data are simulated for teaching purposes, so don’t infer anything about real life from the results below!) The data are included in the <code>robumeta</code> package:</p>
+<pre class="r"><code>library(tidyverse)
+
+data(corrdat, package = &quot;robumeta&quot;)
+
+# sort by study
+corrdat &lt;- arrange(corrdat, studyid, esid)</code></pre>
+<p>The data consist of 172 effect sizes from 39 studies. Some studies report effects at multiple follow-up times and/or for multiple programs compared to a common control condition, leading to dependent effect size estimates.The data also include variables encoding a variety of sample and study characteristics, such as whether the study was conducted with a college student sample and the gender composition of the sample:</p>
+<pre class="r"><code>head(corrdat)</code></pre>
+<pre><code>##   esid studyid effectsize        var binge followup males college
+## 1 4006       1  0.2086383 0.03246468     1 51.42857    67       0
+## 2 4016       1  0.2244635 0.03244931     1 51.42857    67       0
+## 3 4026       1  0.3151743 0.03278697     1 51.42857    67       0
+## 4 3513       2  0.2220929 0.01972874     0 17.14286    81       1
+## 5 3514       2 -0.1922628 0.02031393     0 17.14286    86       1
+## 6 3556       2  0.3273109 0.01987042     0 17.14286    81       1</code></pre>
+<p>Suppose that we are interested in estimating the differences in average effects by type of sample, controlling for the proportion of males in the study. For some reason, there is within-study variation in the percentage of males, so I’ll first take the study-level average for this covariate:</p>
+<pre class="r"><code>corrdat &lt;-
+  corrdat %&gt;%
+  group_by(studyid) %&gt;%
+  mutate(males = mean(males))</code></pre>
+<p>We can then fit this model using a multi-variate meta-regression in metafor. We’ll first need to create a variance-covariance matrix for the effect size estimates in each study, which can be accomplished using <code>impute_covariance_matrix</code> from <code>clubSandwich</code> (<a href="/imputing-covariance-matrices-for-multi-variate-meta-analysis/">further details here</a>). I’ll assume a correlation of 0.6 between pairs of effect sizes within a given study:</p>
+<pre class="r"><code>library(clubSandwich)
+library(metafor)
+
+V_list &lt;- impute_covariance_matrix(vi = corrdat$var, cluster = corrdat$studyid, r = 0.6)
+
+MV_fit &lt;- rma.mv(effectsize ~ college + males, V = V_list, 
+                 random = ~ 1 | studyid,
+                 data = corrdat, method = &quot;REML&quot;)
+MV_fit</code></pre>
+<pre><code>## 
+## Multivariate Meta-Analysis Model (k = 172; method: REML)
+## 
+## Variance Components:
+## 
+##             estim    sqrt  nlvls  fixed   factor 
+## sigma^2    0.0590  0.2429     39     no  studyid 
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 169) = 815.2448, p-val &lt; .0001
+## 
+## Test of Moderators (coefficients 2:3):
+## QM(df = 2) = 9.9016, p-val = 0.0071
+## 
+## Model Results:
+## 
+##          estimate      se     zval    pval    ci.lb    ci.ub 
+## intrcpt    0.6466  0.2693   2.4007  0.0164   0.1187   1.1744   * 
+## college    0.3703  0.1317   2.8123  0.0049   0.1122   0.6283  ** 
+## males     -0.0076  0.0038  -1.9832  0.0473  -0.0152  -0.0001   * 
+## 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Alternately, we could aggregate the effects up to the study level and then fit a univariate meta-regression using the same moderators. Here is a function to calculate the aggregated effect size estimates and variances:</p>
+<pre class="r"><code>agg_effects &lt;- function(yi, vi, r = 0.6) {
+  corr_mat &lt;- r + diag(1 - r, nrow = length(vi))
+  sd_mat &lt;- tcrossprod(sqrt(vi))
+  V_inv_mat &lt;- chol2inv(chol(sd_mat * corr_mat))
+  V &lt;- 1 / sum(V_inv_mat)
+  data.frame(es = V * sum(yi * V_inv_mat), var = V)
+}</code></pre>
+<p>Here’s the data-munging:</p>
+<pre class="r"><code>corrdat_agg &lt;-
+  corrdat %&gt;%
+  group_by(studyid) %&gt;%
+  summarise(
+    es = list(agg_effects(yi = effectsize, vi = var, r = 0.6)),
+    males = mean(males),
+    college = mean(college)
+  ) %&gt;%
+  unnest()
+
+head(corrdat_agg)</code></pre>
+<pre><code>## # A tibble: 6 x 5
+##   studyid males college      es    var
+##     &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+## 1       1  67         0  0.249  0.0239
+## 2       2  81         1 -0.0210 0.0129
+## 3       3  76.2       0  0.726  0.0819
+## 4       4  80         1  0.370  0.0431
+## 5       5  79         0 -0.0911 0.0281
+## 6       6  74         0 -0.416  0.0111</code></pre>
+<p>And here’s the meta-regression:</p>
+<pre class="r"><code>uni_fit &lt;- rma.uni(es ~ college + males, vi = var, 
+                   data = corrdat_agg, method = &quot;REML&quot;)
+uni_fit</code></pre>
+<pre><code>## 
+## Mixed-Effects Model (k = 39; tau^2 estimator: REML)
+## 
+## tau^2 (estimated amount of residual heterogeneity):     0.0590 (SE = 0.0242)
+## tau (square root of estimated tau^2 value):             0.2429
+## I^2 (residual heterogeneity / unaccounted variability): 61.42%
+## H^2 (unaccounted variability / sampling variability):   2.59
+## R^2 (amount of heterogeneity accounted for):            19.12%
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 36) = 96.7794, p-val &lt; .0001
+## 
+## Test of Moderators (coefficients 2:3):
+## QM(df = 2) = 9.9016, p-val = 0.0071
+## 
+## Model Results:
+## 
+##          estimate      se     zval    pval    ci.lb    ci.ub 
+## intrcpt    0.6466  0.2693   2.4007  0.0164   0.1187   1.1744   * 
+## college    0.3703  0.1317   2.8123  0.0049   0.1122   0.6283  ** 
+## males     -0.0076  0.0038  -1.9832  0.0473  -0.0152  -0.0001   * 
+## 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>The heterogeneity estimates are nearly equal (the difference is due to using numerical optimization):</p>
+<pre class="r"><code>MV_fit$sigma2</code></pre>
+<pre><code>## [1] 0.0589972</code></pre>
+<pre class="r"><code>uni_fit$tau2</code></pre>
+<pre><code>## [1] 0.05899673</code></pre>
+<p>And the meta-regression coefficient estimates are identical for all practical intents and purposes:</p>
+<pre class="r"><code>coef(MV_fit)</code></pre>
+<pre><code>##      intrcpt      college        males 
+##  0.646561371  0.370274721 -0.007633517</code></pre>
+<pre class="r"><code>coef(uni_fit)</code></pre>
+<pre><code>##      intrcpt      college        males 
+##  0.646561352  0.370274307 -0.007633519</code></pre>
+<pre class="r"><code>all.equal(coef(MV_fit), coef(uni_fit))</code></pre>
+<pre><code>## [1] &quot;Mean relative difference: 4.243578e-07&quot;</code></pre>
+<p>For this example we can achieve the same results using either multivariate meta-analysis or univariate meta-analysis of aggregated effect size estimates.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> The main limitation of this illustration is generality—how can we be sure that these results aren’t just a quirk of this particular dataset? Would we get the same results for <em>any</em> dataset?</p>
 </div>
 <div id="from-multivariate-to-univariate-model" class="section level1">
 <h1>From multivariate to univariate model</h1>
@@ -211,5 +336,78 @@ because of <a href="#eq:inversevariance">(2)</a>. Thus, the univariate and multi
 </div>
 <div id="so-what" class="section level1">
 <h1>So what?</h1>
-<p>blahbeddy blah blah.</p>
+<p>Beyond being a good excuse to write a bunch of matrix algebra, why does any of this matter? I think there are two main implications. First, it is useful to recognize this equivalence in order to understand when fitting a multivariate model is <em>necessary</em>. If both of the conditions that I’ve described hold, then it is entirely acceptable to use aggregation rather than moving to a more complicated multivariate model.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Using the simpler univariate model might be desirable because it makes the analysis easier to follow, because it makes it easier to run diagnostics or create illustrations of the results, or because of software limitations. Conversely, if either of the conditions does not hold, then there may be differences between the two approaches and the analyst will need to think carefully about which method better addresses her research questions.</p>
+<p>A second implication is computational: because it gives the same results, the univariate model could be used as a short-cut for fitting the multivariate model. Compare the differences in computational time:</p>
+<pre class="r"><code>library(microbenchmark)
+microbenchmark(
+  uni = rma.uni(es ~ college + males, vi = var, 
+                data = corrdat_agg, method = &quot;REML&quot;),
+  multi = rma.mv(effectsize ~ college + males, V = V_list, 
+                 random = ~ 1 | studyid,
+                 data = corrdat, method = &quot;REML&quot;)
+)</code></pre>
+<pre><code>## Unit: milliseconds
+##   expr     min       lq     mean   median      uq      max neval
+##    uni  8.5842  9.12545 11.00676  9.48365 10.2338 111.7084   100
+##  multi 75.4859 80.84105 86.10042 82.43330 86.4336 187.1972   100</code></pre>
+<p>If the aggregation is done in advance, it is <em>way</em> quicker to fit the univariate model. Using it as a short-cut could be useful if we needed to estimate <em>lots</em> of multi-variate meta-regressions (as long as the equivalence conditions hold). For example, if we needed to bootstrap the multivariate model, we could pre-compute the aggregated effects and then just bootstrap the much simple, much quicker univariate model.</p>
+<p>I suspect that the results I’ve presented here can be further generalized, but this will need a bit of further investigation. For one, there are also equivalences between variance estimators: using the CR2 cluster-robust variance estimator for the multivariate model is equivalent to using the HC2 heteroskedasticity-robust variance estimator for the univariate model with aggregated effects.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
+For another, I think the same sort of equivalence relationship might hold even if there are additional random effects in the model, so long as the random effects are at the study level or higher levels of aggregation (e.g., lab effects, where labs are nested within studies).
+I’ll leave these generalizations as exercises for a future rainy day.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Becker2000multivariate">
+<p>Becker, Betsy Jane. 2000. “Multivariate Meta-analysis.” In <em>Handbook of Applied Multivariate Statistics and Mathematical Modeling</em>, edited by Steven D Brown and Howard E. A. Tinsley, 499–525. San Diego, CA: Academic Press. <a href="https://doi.org/10.1016/B978-012691360-6/50018-5">https://doi.org/10.1016/B978-012691360-6/50018-5</a>.</p>
+</div>
+<div id="ref-borenstein2009introduction">
+<p>Borenstein, Michael, Larry V. Hedges, Julian P T Higgins, and Hannah R Rothstein. 2009. <em>Introduction to Meta-Analysis</em>. Chichester, UK: John Wiley &amp; Sons, Ltd. <a href="https://doi.org/10.1002/9780470743386">https://doi.org/10.1002/9780470743386</a>.</p>
+</div>
+<div id="ref-Hedges2010robust">
+<p>Hedges, Larry V., Elizabeth Tipton, and Matthew C Johnson. 2010. “Robust variance estimation in meta-regression with dependent effect size estimates.” <em>Research Synthesis Methods</em> 1 (1): 39–65. <a href="https://doi.org/10.1002/jrsm.5">https://doi.org/10.1002/jrsm.5</a>.</p>
+</div>
+<div id="ref-Kalaian1996multivariate">
+<p>Kalaian, Hripsime a., and Stephen W Raudenbush. 1996. “A multivariate mixed linear model for meta-analysis.” <em>Psychological Methods</em> 1 (3): 227–35. <a href="https://doi.org/10.1037/1082-989X.1.3.227">https://doi.org/10.1037/1082-989X.1.3.227</a>.</p>
+</div>
+<div id="ref-TannerSmith2013robust">
+<p>Tanner-Smith, Emily E, and Elizabeth Tipton. 2013. “Robust variance estimation with dependent effect sizes: Practical considerations including a software tutorial in Stata and SPSS.” <em>Research Synthesis Methods</em> 5 (1): 1–34. <a href="https://doi.org/10.1002/jrsm.1091">https://doi.org/10.1002/jrsm.1091</a>.</p>
+</div>
+<div id="ref-VandenNoortgate2013threelevel">
+<p>Van den Noortgate, Wim, José Antonio López-López, Fulgencio Marín-Martínez, and Julio Sánchez-Meca. 2013. “Three-level meta-analysis of dependent effect sizes.” <em>Behavior Research Methods</em> 45 (2): 576–94. <a href="https://doi.org/10.3758/s13428-012-0261-6">https://doi.org/10.3758/s13428-012-0261-6</a>.</p>
+</div>
+<div id="ref-VandenNoortgate2015metaanalysis">
+<p>———. 2015. “Meta-analysis of multiple outcomes: a multilevel approach.” <em>Behavior Research Methods</em> 47 (4): 1274–94. <a href="https://doi.org/10.3758/s13428-014-0527-2">https://doi.org/10.3758/s13428-014-0527-2</a>.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>A common special case is that the sampling variances for effect sizes within a given study <span class="math inline">\(k\)</span> are <em>all equal</em>, so that <span class="math inline">\(S_{ik} = s_{jk} = S_k\)</span> for <span class="math inline">\(i,j = 1,...,J_ik\)</span> and <span class="math inline">\(k = 1,...,K\)</span>. We might further posit that there is a constant sampling correlation between every pair of effect sizes within a given study, so that <span class="math inline">\(\rho_{ijk} = \rho_k\)</span> for <span class="math inline">\(i,j = 1,...,J_ik\)</span> and <span class="math inline">\(k = 1,...,K\)</span>. If both of these conditions hold, then the inverse-variance weighted average effect size simplifies to the arithmetic average
+<span class="math display">\[
+\bar{T}_k = \frac{1}{J_k} \sum_{j=1}^{J_k} T_{jk}
+\]</span>
+with sampling variance
+<span class="math display">\[
+V_k = \frac{(J_k - 1)\rho_k + 1}{J} \times S_k^2
+\]</span>
+<span class="citation">(cf. Borenstein et al. <a href="#ref-borenstein2009introduction" role="doc-biblioref">2009</a>, XX)</span>.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>The same thing holds if we use FML rather than RML estimation—try it for yourself and see!<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>As RVE and MLMA become more wide-spread, I could imagine it happening that a meta-analyst who uses aggregation and a univariate model might get push-back from a reviewer, who uncritically recommends using a “more advanced” method to handle dependence. The results in this post provide a way for the meta-analyst to establish that doing so would be unnecessary.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Here’s verification with the computational example from above:</p>
+<pre class="r"><code># multivariate CR2
+coef_test(MV_fit, vcov = &quot;CR2&quot;)</code></pre>
+<pre><code>##     Coef. Estimate      SE t-stat d.f. p-val (Satt) Sig.
+## 1 intrcpt  0.64656 0.17647   3.66 11.5      0.00345   **
+## 2 college  0.37027 0.18648   1.99 11.9      0.07053    .
+## 3   males -0.00763 0.00287  -2.66 14.5      0.01826    *</code></pre>
+<pre class="r"><code># univariate HC2
+coef_test(uni_fit, vcov = &quot;CR2&quot;, cluster = corrdat_agg$studyid)</code></pre>
+<pre><code>##     Coef. Estimate      SE t-stat d.f. p-val (Satt) Sig.
+## 1 intrcpt  0.64656 0.17622   3.67 11.5      0.00342   **
+## 2 college  0.37027 0.18597   1.99 11.9      0.06985    .
+## 3   males -0.00763 0.00287  -2.66 14.5      0.01808    *</code></pre>
+<a href="#fnref4" class="footnote-back">↩</a></li>
+</ol>
 </div>
