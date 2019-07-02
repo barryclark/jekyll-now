@@ -6,7 +6,6 @@ slug: Sometimes-aggregating-effect-sizes-is-fine
 bibliography: [meta-references.bib]
 link-citations: true
 categories: []
-draft: true
 tags:
   - effect sizes
   - meta-analysis
@@ -16,24 +15,24 @@ header:
   preview: yes
 ---
 
-In meta-analyses of psychology, education, and other social science research, it is very common that some of the studies meeting inclusion criteria report more than one relevant effect size. 
+In meta-analyses of psychology, education, and other social science research, it is very common that some of the included studies report more than one relevant effect size. 
 For example, in a meta-analysis of intervention effects on reading outcomes, some studies may have used multiple measures of reading outcomes (each of which meets inclusion criteria), or may have measured outcomes at multiple follow-up times; some studies might have also investigated more than one version of an intervention, and it might be of interest to include effect sizes comparing each version to the no-intervention control condition;
 and it's even possible that some studies may have _all_ of these features, potentially contributing _lots_ of effect size estimates.
 
 These situations create a technical challenge for conducting a meta-analysis. 
 Because effect size estimates from the same study are correlated, it's not usually reasonable to use methods that are premised on each effect size estimate being independent (i.e., univariate methods). 
-Instead, the analyst needs methods that take into account the dependencies among estimates coming from the same study. 
+Instead, the analyst needs to apply methods that take into account the dependencies among estimates coming from the same study. 
 It used to be common to use ad hoc approaches for handling dependence, such as averaging the estimates together or selecting one estimate per study and then using univariate methods [cf. @Becker2000multivariate]. 
 More sophisticated, multivariate meta-analysis (MVMA) models that directly account for correlations among the effect size estimates had been developed [@Kalaian1996multivariate] but were challenging to implement and so rarely used (at least, that's my impression). 
 More recently, techniques such as multi-level meta-analysis [MLMA; @VandenNoortgate2013threelevel; @VandenNoortgate2015metaanalysis] and robust variance estimation [RVE; @Hedges2010robust] have emerged, which account for dependencies while using all available effect size estimates and still being feasible to implement. 
-These new techniques of MLMA, and RVE are starting to be adopted in practice, and it is not implausible that they will become the standard approach in psychological and educational meta-analysis within a few years. 
+These new techniques of MLMA and RVE are starting to be more widely adopted in practice, and it is not implausible that they will become the standard approach in psychological and educational meta-analysis within a few years. 
 
 Given the extent of interest in MLMA and RVE, one might wonder: are the older ad hoc approaches _ever_ reasonable or appropriate? 
 I think that some are, under certain circumstances. 
 In this post I'll highlight one such circumstance, where aggregating effect size estimates is not only reasonable but leads to _exactly the same results_ as a multivariate model. This occurs when two conditions are met:
 
 1. We are not interested in within-study heterogeneity of effects and
-2. Any predictors included in the model only vary between studies (i.e., effect sizes from the same study all have the same values of the predictors).
+2. Any predictors included in the model vary between studies but not within a given study (i.e., effect sizes from the same study all have the same values of the predictors).
 
 In short, if all we care about is understanding between-study variation in effect sizes, then it is fine to aggregate them up to the study level.
 
@@ -42,21 +41,21 @@ In short, if all we care about is understanding between-study variation in effec
 To make this argument precise, let me lay out a model where it applies. 
 For full generality, I'll consider a meta-regression model for a collection of $K$ studies, where study $k$ contributes $J_k \geq 1$ effect size estimates. 
 Let $T_{jk}$ denote effect size estimate $j$ in study $k$, with sampling variance $S_{jk}^2$. 
-Effect size estimates from study $k$ maybe be correlated at the sampling level, so that $\text{Cov}(T_{ik}, T_{jk}) = \rho_{ijk} S_{ik} S_{jk}$. 
+Effect size estimates from study $k$ maybe be correlated at the sampling level, with correlation $\rho_{ijk}$ between effect size estimates $i$ and $j$ from study $k$. 
+I will assume that the correlations are known, although in practice one might need to just take a guess about the degree of correlation, such as by assuming $\rho_{ijk} = 0.7$ for all pairs of estimates from each included study. 
 Let $\mathbf{x}_k$ be a row vector of predictor variables for study $k$. 
 Note that the predictors do not have a subscript $j$ because I'm assuming here that they are constant within a study. 
+
 A multivariate meta-regression model for these data might be:
 $$
 T_{jk} = \mathbf{x}_k \boldsymbol\beta + u_k + e_{jk},
 $$
 where $u_k$ is a between-study random effect with variance $\tau^2$ and $e_{jk}$ is the sampling error for effect size $j$ from study $k$, assumed to have known variance $S_{jk}^2$. 
 Errors from the same study are correlated, so $\text{Cov}(e_{ik}, e_{jk}) = \rho_{ijk} S_{ik} S_{jk}$. 
-I will assume that the correlations are known, although in practice one might need to just take a guess about the degree of correlation, such as by assuming $\rho_{ijk} = 0.7$ for all pairs of estimates from each included study. 
-
 This is a commonly considered model for dependent effect size estimates. 
 In the paper that introduced RVE, @Hedges2010robust termed it the "correlated effects" model (implemented in `robumeta` as `model = "CORR"`, which is the default). 
 Note that it also satisfies the conditions I outlined above: no within-study random effects, predictors that vary only between study. 
-One could fit it easily using the `rma.mv()` function in the `metafor` package.
+We can fit it using the `rma.mv()` function in the `metafor` package, as I will demonstrate below.
 
 An alternative to this multivariate model would be to first average the effects within each study, then fit a univariate random effects model. 
 Just how we do the averaging will matter: we'll need to use inverse-variance weighting. 
@@ -64,7 +63,7 @@ Let $\mathbf{T}_k$ be the $J_k \times 1$ vector of effect size estimates from st
 $$
 \bar{T}_k = V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{T}_k, 
 $$
-where $V_k = 1 / (\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k)$, which is also the sampling variance of $\bar{T}_k$.[^specialcase] 
+where $V_k = 1 / (\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k)$. The quantity $V_k$ is also the sampling variance of $\bar{T}_k$.[^specialcase] 
 
 [^specialcase]: A common special case is that the sampling variances for effect sizes within a given study $k$ are _all equal_, so that $S_{ik} = s_{jk} = S_k$ for $i,j = 1,...,J_ik$ and $k = 1,...,K$. We might further posit that there is a constant sampling correlation between every pair of effect sizes within a given study, so that $\rho_{ijk} = \rho_k$ for $i,j = 1,...,J_ik$ and $k = 1,...,K$. If both of these conditions hold, then the inverse-variance weighted average effect size simplifies to the arithmetic average
 $$
@@ -74,9 +73,9 @@ with sampling variance
 $$
 V_k = \frac{(J_k - 1)\rho_k + 1}{J} \times S_k^2
 $$
-[cf. @borenstein2009introduction, p. XX].
+[cf. @borenstein2009introduction, Eq. (24.6), p. 230].
 
-After aggregating, a conventional, univariate random effects model for the averaged effect sizes would then be
+A conventional, univariate random effects model for the averaged effect sizes is
 $$
 \bar{T}_k = \mathbf{x}_k \boldsymbol\beta + u_k + \bar{e}_k, 
 $$
@@ -89,7 +88,7 @@ I'll offer three, from most practical to most theoretical.
 
 # Computational equivalence
 
-One good way to check the equivalence of the univariate and multivariate models is to apply both to a dataset. I'll use the data from a stylized example described in @TannerSmith2013robust, looking at the effects of alcohol abuse treatments on alcohol consumption among adolescents and young adults. (The data are simulated for teaching purposes, so don't infer anything about real life from the results below!) The data are included in the `robumeta` package:
+One good way to check the equivalence of the univariate and multivariate models is to apply both to a dataset. I'll use the data from a stylized example described in @TannerSmith2013robust, looking at the effects of alcohol abuse interventions on alcohol consumption among adolescents and young adults. (The data are simulated for teaching purposes, so don't infer anything about real life from the results below!) The data are included in the `robumeta` package:
 ```{r, warning = FALSE, message = FALSE}
 library(tidyverse)
 
@@ -102,7 +101,7 @@ The data consist of `r nrow(corrdat)` effect sizes from `r length(unique(corrdat
 ```{r}
 head(corrdat)
 ```
-Suppose that we are interested in estimating the differences in average effects by type of sample, controlling for the proportion of males in the study. For some reason, there is within-study variation in the percentage of males, so I'll first take the study-level average for this covariate:
+Suppose that we are interested in estimating the differences in average effects by type of sample (college versus adolescent), controlling for the proportion of males in the study. For some reason, there is within-study variation in the percentage of males, so I'll take the study-level average for this covariate:
 ```{r}
 corrdat <-
   corrdat %>%
@@ -110,7 +109,9 @@ corrdat <-
   mutate(males = mean(males))
 ```
 
-We can then fit this model using a multi-variate meta-regression in metafor. We'll first need to create a variance-covariance matrix for the effect size estimates in each study, which can be accomplished using `impute_covariance_matrix` from `clubSandwich` ([further details here](/imputing-covariance-matrices-for-multi-variate-meta-analysis/)). I'll assume a correlation of 0.6 between pairs of effect sizes within a given study:
+We can then fit this model using a multi-variate meta-regression in metafor. 
+
+In order to estimate the model, we'll first need to create a variance-covariance matrix for the effect size estimates in each study, which can be accomplished using `impute_covariance_matrix` from `clubSandwich` ([further details here](/imputing-covariance-matrices-for-multi-variate-meta-analysis/)). I'll assume a correlation of 0.6 between pairs of effect sizes within a given study:
 ```{r, warning = FALSE, message = FALSE}
 library(clubSandwich)
 library(metafor)
@@ -158,13 +159,13 @@ The heterogeneity estimates are nearly equal (the difference is due to using num
 MV_fit$sigma2
 uni_fit$tau2
 ```
-And the meta-regression coefficient estimates are identical for all practical intents and purposes:
+And the meta-regression coefficient estimates are identical to six decimal places:
 ```{r}
 coef(MV_fit)
 coef(uni_fit)
 all.equal(coef(MV_fit), coef(uni_fit))
 ```
-For this example we can achieve the same results using either multivariate meta-analysis or univariate meta-analysis of aggregated effect size estimates.[^FML] The main limitation of this illustration is generality---how can we be sure that these results aren't just a quirk of this particular dataset? Would we get the same results for _any_ dataset? 
+For this example we arrive at the same results using either multivariate meta-analysis or univariate meta-analysis of aggregated effect size estimates.[^FML] The main limitation of this illustration is generality---how can we be sure that these results aren't just a quirk of this particular dataset? Would we get the same results for _any_ dataset? 
 
 [^FML]: The same thing holds if we use FML rather than RML estimation---try it for yourself and see!
 
@@ -183,11 +184,11 @@ V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{T}_k &= V_k \left(\mathbf{1}_k’ 
 $$
 where $\text{Var}(\bar{e}_k) = V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{S}_k \mathbf{S}_k^{-1} \mathbf{1}_k V_k = V_k$, just as in the univariate model. 
 
-This demonstrates that the parameters of the two models are the same quantities—that is, both models are estimating the same thing. But that would also hold if we used _any_ weighted average of $\mathbf{T}_k$---it needn't be inverse-variance. The only thing that would be different is $\text{Var}(\bar{e}_k)$. To fully establish the equivalence of the two models, we'll need to look at the likelihoods of each model.
+This demonstrates that the parameters of the two models are the same quantities—that is, both models are estimating the same thing. But that would also hold if we used _any_ weighted average of $\mathbf{T}_k$---it needn't be inverse-variance. The only thing that would be different is $\text{Var}(\bar{e}_k)$. To fully establish the equivalence of the two models, I'll examine the likelihoods of each model.
 
 # Equivalence of likelihoods 
 
-Typically multivariate meta-analysis models are estimated by full maximum likelihood (FML) or restricted maximum likelihood methods. FML and RML are also commonly used for univariate meta-analysis. With these methods, estimates are obtained as the parameter values that maximize the log likelihood (or the restricted likelihood for RML). Therefore, we can establish the exact equivalence of parameter estimates by showing that the log likelihood of the univariate and multivariate models differ by a constant value (so that the location of the maxima are identical). 
+Multivariate meta-analysis models are typically estimated by full maximum likelihood (FML) or restricted maximum likelihood methods. FML and RML are also commonly used for univariate meta-analysis. With these methods, estimates are obtained as the parameter values that maximize the log likelihood of the model, given the data (or the restricted likelihood for RML). Therefore, we can establish the exact equivalence of parameter estimates by showing that the log likelihood of the univariate and multivariate models differ by a constant value (so that the location of the maxima are identical). 
 
 ## Full likelihood 
 
@@ -243,11 +244,10 @@ $$
 \begin{aligned}
 B_1 &= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)' \left(\tau^2\mathbf{1}_k\mathbf{1}_k' + \mathbf{S}_k\right)^{-1} \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) \\
 B_2 &= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)' \left(\tau^2\mathbf{1}_k\mathbf{1}_k' + \mathbf{S}_k\right)^{-1} \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\
-B_3 &= \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \mathbf{1}_k' \left(\tau^2\mathbf{1}_k\mathbf{1}_k' + \mathbf{S}_k\right)^{-1} \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\
-&= \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k}
+B_3 &= \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \mathbf{1}_k' \left(\tau^2\mathbf{1}_k\mathbf{1}_k' + \mathbf{S}_k\right)^{-1} \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)
 \end{aligned}
 $$
-and the last equality follows from \@ref(eq:inversevariance). Applying \@ref(eq:Sherman) to $B_1$,
+Applying \@ref(eq:Sherman) to $B_1$,
 $$
 \begin{aligned}
 B_1 &= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)' \left[\mathbf{S}_k^{-1} - \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k'\mathbf{S}_k^{-1}\right] \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) \\ 
@@ -262,6 +262,10 @@ B_2 &= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)' \left[\mathbf{S}_k^{-
 &= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)' \mathbf{S}_k^{-1}\mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) - \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)' \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k'\mathbf{S}_k^{-1}\mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\
 &= 0.
 \end{aligned}
+$$
+Finally, the third term simplifies using \@ref(eq:inversevariance):
+$$
+B_3 = \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k}.
 $$
 Thus, the full $B$ term reduces to
 $$
@@ -303,7 +307,7 @@ because of \@ref(eq:inversevariance). Thus, the univariate and multivariate mode
 
 # So what?
 
-Beyond being a good excuse to write a bunch of matrix algebra, why does any of this matter? I think there are two main implications. First, it is useful to recognize this equivalence in order to understand when fitting a multivariate model is _necessary_. If both of the conditions that I've described hold, then it is entirely acceptable to use aggregation rather than moving to a more complicated multivariate model.[^reviewer2] Using the simpler univariate model might be desirable because it makes the analysis easier to follow, because it makes it easier to run diagnostics or create illustrations of the results, or because of software limitations. Conversely, if either of the conditions does not hold, then there may be differences between the two approaches and the analyst will need to think carefully about which method better addresses her research questions.
+Beyond being a good excuse to write a bunch of matrix algebra, why does any of this matter? I think there are two main implications. First, it is useful to recognize the equivalence of these models in order to understand when the multivariate model is _necessary_. If both of the conditions that I've described hold, then it is entirely acceptable to use aggregation rather than the more complicated multivariate model.[^reviewer2] Using the simpler univariate model might be desirable in practice because it makes the analysis easier to follow, because it makes it easier to run diagnostics or create illustrations of the results, or because of software limitations. Conversely, if either of the conditions does not hold, then there may be differences between the two approaches and the analyst will need to think carefully about which method better addresses their research questions.
 
 [^reviewer2]: As RVE and MLMA become more wide-spread, I could imagine it happening that a meta-analyst who uses aggregation and a univariate model might get push-back from a reviewer, who uncritically recommends using a "more advanced" method to handle dependence. The results in this post provide a way for the meta-analyst to establish that doing so would be unnecessary. 
 
@@ -318,10 +322,10 @@ microbenchmark(
                  data = corrdat, method = "REML")
 )
 ```
-If the aggregation is done in advance, it is _way_ quicker to fit the univariate model. Using it as a short-cut could be useful if we needed to estimate _lots_ of multi-variate meta-regressions (as long as the equivalence conditions hold). For example, if we needed to bootstrap the multivariate model, we could pre-compute the aggregated effects and then just bootstrap the much simple, much quicker univariate model. 
+If the aggregation is done in advance, it is _way_ quicker to fit the univariate model. The short-cut would be useful if we needed to estimate _lots_ of multi-variate meta-regressions (as long as the equivalence conditions hold). For example, if we needed to bootstrap the multivariate model, we could pre-compute the aggregated effects and then just bootstrap the much simpler, much quicker univariate model. 
 
 I suspect that the results I've presented here can be further generalized, but this will need a bit of further investigation. For one, there are also equivalences between variance estimators: using the CR2 cluster-robust variance estimator for the multivariate model is equivalent to using the HC2 heteroskedasticity-robust variance estimator for the univariate model with aggregated effects.[^RVE]
-For another, I think the same sort of equivalence relationship might hold even if there are additional random effects in the model, so long as the random effects are at the study level or higher levels of aggregation (e.g., lab effects, where labs are nested within studies).
+For another, the same sort of equivalence relationships hold even if there are additional random effects in the model, so long as the random effects are at the study level or higher levels of aggregation (e.g., lab effects, where labs are nested within studies).
 I'll leave these generalizations as exercises for a future rainy day.
 
 [^RVE]: Here's verification with the computational example from above:
