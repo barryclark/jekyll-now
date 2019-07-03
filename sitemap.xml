@@ -4,7 +4,18 @@
   
   <url>
     <loc>https://chrisclarkson.org/</loc>
-    <lastmod>2019-07-03T15:02:27+01:00</lastmod>
+    <lastmod>2019-07-03T16:22:49+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tutorials/coming_soon/</loc>
+    <lastmod>2019-07-03T16:22:49+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tutorials/</loc>
+    <lastmod>2019-07-03T16:22:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,7 +65,30 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tutorials/all/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/cybersecurity/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/categories/others/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/tutorials/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/tutorials/</loc>
     <lastmod>2018-10-01T16:52:02+01:00</lastmod>
     <priority>0</priority>
   </url>
