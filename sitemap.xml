@@ -3,22 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chrisclarkson.org/posts/first/</loc>
-    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/tags/beginning/</loc>
-    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chrisclarkson.org/categories/</loc>
+    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,9 +21,30 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/posts/first/</loc>
+    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/</loc>
+    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/beginning/</loc>
+    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/categories/posts/</loc>
     <lastmod>2018-10-01T16:52:09+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/about/</loc>
   </url>
   
   <url>
@@ -50,12 +57,6 @@
   
   <url>
     <loc>https://chrisclarkson.org/study/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/tags/</loc>
-    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

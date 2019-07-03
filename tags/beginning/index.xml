@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Beginning on Chris Clarkson</title>
+    <title>beginning on Chris Clarkson</title>
     <link>https://chrisclarkson.org/tags/beginning/</link>
-    <description>Recent content in Beginning on Chris Clarkson</description>
+    <description>Recent content in beginning on Chris Clarkson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Oct 2018 16:52:09 +0100</lastBuildDate>
@@ -19,7 +19,7 @@
       <guid>https://chrisclarkson.org/posts/first/</guid>
       <description>And so, With the help of Hugo the site has been relaunched.
 Look out for posts on:
- Hacking Reverse Engineering Electronics Coding The Cloud  There will also be the odd post about Climbing, Motorcycles and other goings on too</description>
+ Hacking The Cloud Reverse Engineering Coding Hardware Drones  There will also be the odd post about Climbing, Motorcycles and other goings on too</description>
     </item>
     
   </channel>

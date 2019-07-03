@@ -19,18 +19,17 @@
       <guid>https://chrisclarkson.org/posts/first/</guid>
       <description>And so, With the help of Hugo the site has been relaunched.
 Look out for posts on:
- Hacking Reverse Engineering Electronics Coding The Cloud  There will also be the odd post about Climbing, Motorcycles and other goings on too</description>
+ Hacking The Cloud Reverse Engineering Coding Hardware Drones  There will also be the odd post about Climbing, Motorcycles and other goings on too</description>
     </item>
     
     <item>
-      <title>About Chris</title>
+      <title>About Me</title>
       <link>https://chrisclarkson.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrisclarkson.org/about/</guid>
-      <description>Identifies as Developer, Hacker, and Geek. Has a passion for all things tech especially if it is Cyber Security related.
-Loves Science Fiction and Fantasy. Favourite books are the Lord of the Rings and books from the Warhammer 40k Universe. Prefers TV Series to Films, Game of Thrones, Walking Dead, Stargate etc. but does enjoy films from the MCU and Star Wars.
-Also a keen motorcyclist and boulderer when not chasing around after 2 kids and my darling wife.</description>
+      <description>Hi, I&amp;rsquo;m Chris. I am a Hacker, Developer and Geek. I have a passion for all things Cyber Security, but my main areas of focus are in Hardware &amp;ldquo;hacking&amp;rdquo; (making and breaking) and the Cloud. You can never know everything, but knowledge is power; so I always strive to learn something new as often as family, work and life allow.
+I am also a motorcyclist and boulderer when not chasing around after 2 kids and my darling wife.</description>
     </item>
     
     <item>
@@ -39,8 +38,9 @@ Also a keen motorcyclist and boulderer when not chasing around after 2 kids and 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrisclarkson.org/projects/</guid>
-      <description>Work I am doing at the moment&amp;hellip;
- VulnHub - To support my PWK/OSCP course and generally sharpen those offensive security skills I have been working through some of the machines on here. HackTheBox - More sharpening of skills, but with challenges to test a particular area as well such as RE, crypto etc.  </description>
+      <description>Things I am working on at the moment&amp;hellip;
+CyberSecLab - Terraform, Ansible and Python scripts for an offensive security lab in AWS
+Inspired by Rob and his Shiva project to automatically create an attack ready ubuntu host, I decided to expand on the concept and automate the deployment of not only an attack host, but an environment where you can perform all manner of cyber-sec activities from anywhere you choose has an internet connection.</description>
     </item>
     
     <item>
@@ -50,8 +50,8 @@ Also a keen motorcyclist and boulderer when not chasing around after 2 kids and 
       
       <guid>https://chrisclarkson.org/resources/</guid>
       <description> Pages Just some links to pages I have found useful across the internet.
- Pentesterlabs HackTheBox Hacksplaining BrightTalk 0x00sec Azeria Labs CodeArcana Blackroomsec Radare2 Gitbook Cheatography  Github Repos Useful Repos from Github
- Ropper Reverse Engineering JohnTheRipper Ninja Admins Awesome Hacking Awesome CyberSkills  </description>
+ PentesterAcademy HackTheBox The Many Hats Club Blackroomsec 0x00sec Pentesterlabs Hacksplaining BrightTalk Azeria Labs CodeArcana Radare2 Gitbook Cheatography  Github Repos Useful Repos from Github
+ Awesome Hacking Reverse Engineering Ninja Admins Awesome CyberSkills Ropper JohnTheRipper  </description>
     </item>
     
     <item>
@@ -60,8 +60,8 @@ Also a keen motorcyclist and boulderer when not chasing around after 2 kids and 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrisclarkson.org/study/</guid>
-      <description>Here is a list of the materials I have or am studying.
-Courses  Penetration Testing With Kali (In Progress)  The precursor course to the OSCP examination. Its very difficult to put into words how much I have learned from this course so far, and there is always more to learn #TryHarder.  Certified Ethical Hacker (Completed)  An excellent introduction to the ways a hacker works to compromise a system.</description>
+      <description>Past and Present
+Courses  Penetration Testing With Kali  The precursor course to the OSCP examination. Its very difficult to put into words how much I have learned from this course so far, and there is always more to learn #TryHarder.  CISSP (Completed)  The Gold standard for information security professionals, I would advise anybody working in IT Security to do this course. Its benefit lies in understanding, as a techie I gained a deeper understanding and appreciation of how the Policy and process side of Security works.</description>
     </item>
     
   </channel>
