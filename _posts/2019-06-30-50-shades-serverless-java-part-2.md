@@ -264,6 +264,6 @@ When our application is not used, it costs nothing: this is true serverless! And
 
 
 ## References
-
+ * Code for the samples: [https://github.com/dmetzler/50-shades-serverless-java/blob/master/serverless-movie-service-]()
  * Serverless Application Model: [https://github.com/awslabs/serverless-application-model]()
  * AWS Serverless Java Container: [https://github.com/awslabs/aws-serverless-java-container]()
