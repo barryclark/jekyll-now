@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chrisclarkson.org/categories/</loc>
-    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
+    <loc>https://chrisclarkson.org/</loc>
+    <lastmod>2019-07-03T15:02:27+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/</loc>
+    <loc>https://chrisclarkson.org/cyberseclab/</loc>
+    <lastmod>2019-07-03T15:02:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/</loc>
     <lastmod>2018-10-01T16:52:09+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -44,7 +49,82 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/others/all/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/others/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/awssolassoc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/awssolpro/</loc>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/attacking_network_protocols/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/ceh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/chfi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/cissp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/drones/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/hackthebox/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/hobbies/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/study/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/overthewire/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/practical_reverse_engineering/</loc>
   </url>
   
   <url>
@@ -56,7 +136,23 @@
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/study/</loc>
+    <loc>https://chrisclarkson.org/books/reversing_secrets_of_re/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/root-me/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/the_ida_pro_book/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/drones/first/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/vulnhub/</loc>
   </url>
   
 </urlset>

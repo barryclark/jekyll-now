@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses on Chris Clarkson</title>
+    <link>https://chrisclarkson.org/courses/</link>
+    <description>Recent content in Courses on Chris Clarkson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://chrisclarkson.org/courses/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Solutions Architect - Associate</title>
+      <link>https://chrisclarkson.org/courses/awssolassoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/courses/awssolassoc/</guid>
+      <description>Excellent course to learn the intricacies of AWS and round out the knowledge gained on the Job.</description>
+    </item>
+    
+    <item>
+      <title>AWS Solutions Architect - Professional</title>
+      <link>https://chrisclarkson.org/courses/awssolpro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/courses/awssolpro/</guid>
+      <description>Obtained a much deeper understanding of AWS and especially its capabilities and limitations with respect to securing cloud workloads</description>
+    </item>
+    
+    <item>
+      <title>CEH</title>
+      <link>https://chrisclarkson.org/courses/ceh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/courses/ceh/</guid>
+      <description>An excellent introduction to the ways a hacker works to compromise a system.</description>
+    </item>
+    
+    <item>
+      <title>CHFI</title>
+      <link>https://chrisclarkson.org/courses/chfi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/courses/chfi/</guid>
+      <description>A very insightful course into art of computer forensics and the techniques that are used to catch hackers. Very interesting to take the knowledge gained here and work out ways to evade them, excellent course to take that stage further and develop the adversarial mindset.</description>
+    </item>
+    
+    <item>
+      <title>CISSP</title>
+      <link>https://chrisclarkson.org/courses/cissp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/courses/cissp/</guid>
+      <description>The Gold standard for information security professionals, I would advise anybody working in IT Security to do this course. Its benefit lies in understanding, as a techie I gained a deeper understanding and appreciation of how the Policy and process side of Security works.</description>
+    </item>
+    
+  </channel>
+</rss>
