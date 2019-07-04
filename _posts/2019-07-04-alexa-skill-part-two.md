@@ -145,7 +145,7 @@ Alexa supports the majority of features defined by the SSML standard, but not al
 
 If you want to play about with SSML, the Alexa Developer Console provides a sandbox under the “Test” tab, which allows you to write SSML and have Alexa say it. This way you can identify the best way to output what you want Alexa to say, and experiment with tones, speeds, emphasis on certain words etc to make her feel more human:
 
-![SSML Testing UI](http://www.foyst.co.uk/wp-content/uploads/2019/07/Screenshot-2019-07-04-at-10.16.27.png)
+![SSML Testing UI]({{"/images/20190704-SSMS-Testing.png"}})
 
 ## Wrapping Up
 

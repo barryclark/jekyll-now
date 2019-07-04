@@ -14,7 +14,7 @@ With Alexa, what you write are Skills – code functions that carry out the acti
 
 Once you get set up with an account, you’ll end up at a page listing your current skills. Towards the right hand side there’s a button called “Create Skill”, go ahead and click that to be taken to the following page to create your skill:
 
-![Create Alexa Skill UI](http://www.foyst.co.uk/wp-content/uploads/2019/06/20190609-Skill-Creation-Page.png)
+![Create Alexa Skill UI]({{"/images/20190609-Skill-Creation-Page.png"}})
 
 Amazon gives you a number of template models to choose from, to speed up development and give examples of what you can do with Alexa. You can also “Provision your own” backend resources, directing your Skill either to a http endpoint or an AWS Lambda. Alternatively, you can choose “Alexa-Hosted”, which uses AWS Lambda but integrates the code development into the Alexa Console, so you can do code development alongside in the same UI.
 
@@ -22,7 +22,7 @@ An Alexa Skill can have one or more Intents – actions or requests that your Sk
 
 As part of designing the UX, I found it useful to test how I’d interact with my Skill on an Echo Device, but with the microphone turned off. It was interesting to see how many variations I could come up with to request booking a room, and I noted all of these variations and configured them as Utterances, as you can see below:
 
-![Alexa Interaction Model UI](http://www.foyst.co.uk/wp-content/uploads/2019/06/20190609-Alexa-Intention-Model.png)
+![Alexa Interaction Model UI]({{"/images/20190609-Alexa-Intention-Model.png"}})
 
 Within these Utterances, you can have Slots too – parameter placeholders that allow you to specify variables to the request, making the requests more dynamic. In my case, this was allowing the user to specify the duration of the booking, and optionally providing a start time, but it equally could have been movie actors, days of the week, a telephone number etc. Amazon has various Slot Types, such as animals, dates, countries and so on, which allows Alexa to try to match the user request with a value in that Slot Type. These Slots can be optional as well, so your requests can include one or more parameters. You can do this by configuring multiple Utterances, that use one or more of your Slots.
 
