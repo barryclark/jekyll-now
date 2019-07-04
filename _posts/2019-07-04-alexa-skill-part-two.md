@@ -1,5 +1,7 @@
 # Booking a Meeting Room with Alexa – Part Two – Coding the Skill
 
+Originally published at [www.foyst.co.uk](http://www.foyst.co.uk/2019/07/booking-a-meeting-room-with-alexa-part-two-coding-the-skill/)
+
 In my previous post I talk about how to build up the Interaction Model for your Skill using the Alexa Developer Console. Now, I’ll talk about how to write code that can handle the requests.
 
 ## Setting Up

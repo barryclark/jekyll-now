@@ -1,5 +1,7 @@
 # Booking a Meeting Room with Alexa – Part One
 
+Originally published at [www.foyst.co.uk](http://www.foyst.co.uk/2019/06/booking-a-meeting-room-with-alexa-part-one/)
+
 Hey there! This is part one into my adventures of developing an Alexa skill. I was inspired recently on client site, where I saw they’d installed a shiny new room booking system. Each meeting room had a touch screen setup outside of it, and from it you could see who’d booked the room, and also use it to book the room out if it was available.
 
 It had the right idea, but from talking to people I learnt that it wasn’t the most user-friendly, and that it had cost a pretty penny too! I’d been looking for an excuse to dabble with Alexa and Voice UIs, so I decided to see if I could build something similar with commodity hardware.
