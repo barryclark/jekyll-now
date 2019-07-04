@@ -112,6 +112,13 @@ authors:
     web_short_name: infinityworks.com
     gravatar: 40b84e411c52561c79e704b29dd82a02
     linkedin: emily-birch-a01b5190
+  ben_foster:
+    display_name: Ben Foster
+    email: ben.foster@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    gravatar: 1035367ebd95a5075a36a4bdb3e8361a
+    linkedin: ben-foster
 
 #
 # Flags below are optional
