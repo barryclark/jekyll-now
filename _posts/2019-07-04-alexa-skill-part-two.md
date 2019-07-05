@@ -1,6 +1,8 @@
-# Booking a Meeting Room with Alexa – Part Two – Coding the Skill
-
-Originally published at [www.foyst.co.uk](http://www.foyst.co.uk/2019/07/booking-a-meeting-room-with-alexa-part-two-coding-the-skill/)
+---
+layout: post
+title: Booking a Meeting Room with Alexa – Part Two – Coding the Skill
+author: ben_foster
+---
 
 In my previous post I talk about how to build up the Interaction Model for your Skill using the Alexa Developer Console. Now, I’ll talk about how to write code that can handle the requests.
 
@@ -168,3 +170,5 @@ Build your Front End, Your Way
 Build the Back-End  
 [Start with AWS Lambda](http://go.amazonalexadev.com/VHFA000woD0I100EwptMdX0)  
 [More Tools – No Back-End Setup Required](http://go.amazonalexadev.com/Ao0o0pEF10XwDMt00w010HI)
+
+(Originally published at [www.foyst.co.uk](http://www.foyst.co.uk/2019/06/booking-a-meeting-room-with-alexa-part-one/))
