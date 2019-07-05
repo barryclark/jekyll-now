@@ -67,12 +67,24 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/fpv/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/others/hackthebox/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://chrisclarkson.org/others/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/taranis/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -85,6 +97,18 @@
   <url>
     <loc>https://chrisclarkson.org/drones/first/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/beginner/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/drones/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
