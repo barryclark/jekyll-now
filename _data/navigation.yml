@@ -12,6 +12,8 @@ main:
     url: /os/
   - title: "Mathematics"
     url: /mathematics/
+  - title: "English"
+    url: /english/
   - title: "OpenGL"
     url: /opengl/
   - title: "关于"

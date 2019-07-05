@@ -1,14 +1,15 @@
 ---
-title: Android
-permalink: /android/
+title: English
+layout: collection
+permalink: /english/
+collection: english
 author_profile: true
-last_modified_at: 2019-07-01T09:45:06-05:00
 ---
 
 {% capture written_label %}'None'{% endcapture %}
 
 {% for collection in site.collections %}
-  {% if collection == android %}
+  {% if collection == english %}
     {% unless collection.output == false or collection.label == "posts" %}
       {% capture label %}{{ collection.label }}{% endcapture %}
       {% if label != written_label %}

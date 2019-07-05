@@ -294,6 +294,9 @@ collections:
   mathematics:
     output: true
     permalink: /:collection/:path/
+  english:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -365,6 +368,15 @@ defaults:
   - scope:
       path: ""
       type: mathematics
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
+  # _english
+  - scope:
+      path: ""
+      type: english
     values:
       layout: single
       author_profile: true
