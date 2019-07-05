@@ -12,11 +12,20 @@
     
     
     <item>
-      <title>posts</title>
+      <title>Posts</title>
       <link>https://chrisclarkson.org/categories/posts/</link>
       <pubDate>Fri, 05 Jul 2019 09:32:37 +0100</pubDate>
       
       <guid>https://chrisclarkson.org/categories/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>https://chrisclarkson.org/categories/books/</link>
+      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
+      
+      <guid>https://chrisclarkson.org/categories/books/</guid>
       <description></description>
     </item>
     
@@ -30,16 +39,7 @@
     </item>
     
     <item>
-      <title>books</title>
-      <link>https://chrisclarkson.org/categories/books/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/categories/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>drones</title>
+      <title>Drones</title>
       <link>https://chrisclarkson.org/categories/drones/</link>
       <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
       
@@ -48,18 +48,18 @@
     </item>
     
     <item>
-      <title>others</title>
+      <title>Others</title>
       <link>https://chrisclarkson.org/categories/others/</link>
-      <pubDate>Mon, 01 Oct 2018 16:52:02 +0100</pubDate>
+      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
       
       <guid>https://chrisclarkson.org/categories/others/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tutorials</title>
+      <title>Tutorials</title>
       <link>https://chrisclarkson.org/categories/tutorials/</link>
-      <pubDate>Mon, 01 Oct 2018 16:52:02 +0100</pubDate>
+      <pubDate>Wed, 03 Jul 2019 16:22:49 +0100</pubDate>
       
       <guid>https://chrisclarkson.org/categories/tutorials/</guid>
       <description></description>
