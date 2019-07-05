@@ -1,6 +1,8 @@
-# Booking a Meeting Room with Alexa – Part One
-
-Originally published at [www.foyst.co.uk](http://www.foyst.co.uk/2019/06/booking-a-meeting-room-with-alexa-part-one/)
+---
+layout: post
+title: Booking a Meeting Room with Alexa – Part One
+author: ben_foster
+---
 
 Hey there! This is part one into my adventures of developing an Alexa skill. I was inspired recently on client site, where I saw they’d installed a shiny new room booking system. Each meeting room had a touch screen setup outside of it, and from it you could see who’d booked the room, and also use it to book the room out if it was available.
 
@@ -56,3 +58,5 @@ At this point, everything that I did in the UI was now available to me as code, 
 You can also use the ASK CLI to create a Skill from scratch, without ever needing to use the UI. You can use `ask new` to configure and provision a Skill, and it also creates you a folder structure with the json files I generated from my existing Skill already set up, ready for you to get started.
 
 So that was a rather quick “how to get up and going” creating an Alexa Skill. The next step is linking the Skill to some backend code to handle the requests. I’ll be following this blog up with a how to on that, but in the meantime if you have any questions feel free to give me a shout!
+
+(Originally published at [www.foyst.co.uk](http://www.foyst.co.uk/2019/06/booking-a-meeting-room-with-alexa-part-one/))
