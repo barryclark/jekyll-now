@@ -82,13 +82,13 @@
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/categories/tutorials/</loc>
+    <loc>https://chrisclarkson.org/tags/tutorials/</loc>
     <lastmod>2018-10-01T16:52:02+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/tags/tutorials/</loc>
+    <loc>https://chrisclarkson.org/categories/tutorials/</loc>
     <lastmod>2018-10-01T16:52:02+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -102,7 +102,7 @@
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/about/</loc>
+    <loc>https://chrisclarkson.org/personal/</loc>
   </url>
   
   <url>
