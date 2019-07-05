@@ -3,9 +3,138 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chrisclarkson.org/</loc>
-    <lastmod>2019-07-03T16:22:49+01:00</lastmod>
+    <loc>https://chrisclarkson.org/categories/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/posts/the-road-is-long/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/posts/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/delays/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/posts/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/cissp/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/drones/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/hackthebox/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/the_ida_pro_book/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/drones/first/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/awssolpro/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/root-me/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/awssolassoc/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/reversing_secrets_of_re/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/vulnhub/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/ceh/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/others/overthewire/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/chfi/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/practical_reverse_engineering/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/attacking_network_protocols/</loc>
+    <lastmod>2019-07-05T09:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -25,36 +154,12 @@
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/categories/</loc>
-    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/posts/</loc>
-    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chrisclarkson.org/posts/first/</loc>
     <lastmod>2018-10-01T16:52:09+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/tags/</loc>
-    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chrisclarkson.org/tags/beginning/</loc>
-    <lastmod>2018-10-01T16:52:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/categories/posts/</loc>
     <lastmod>2018-10-01T16:52:09+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -94,50 +199,7 @@
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/courses/awssolassoc/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/courses/awssolpro/</loc>
-  </url>
-  
-  <url>
     <loc>https://chrisclarkson.org/personal/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/books/attacking_network_protocols/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/books/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/courses/ceh/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/courses/chfi/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/courses/cissp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/courses/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/drones/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/others/hackthebox/</loc>
   </url>
   
   <url>
@@ -149,44 +211,11 @@
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/others/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/others/overthewire/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/books/practical_reverse_engineering/</loc>
-  </url>
-  
-  <url>
     <loc>https://chrisclarkson.org/projects/</loc>
   </url>
   
   <url>
     <loc>https://chrisclarkson.org/resources/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/books/reversing_secrets_of_re/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/others/root-me/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/books/the_ida_pro_book/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/drones/first/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chrisclarkson.org/others/vulnhub/</loc>
   </url>
   
 </urlset>
