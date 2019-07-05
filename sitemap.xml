@@ -32,7 +32,25 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/dad/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/death/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/tags/delays/</loc>
+    <lastmod>2019-07-05T09:32:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/goals/</loc>
     <lastmod>2019-07-05T09:32:37+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -50,8 +68,26 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/ceh/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/cissp/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/courses/cissp/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/courses/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -73,12 +109,30 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/grc/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/others/hackthebox/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/isc2/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/others/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/standards/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -106,14 +160,80 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/books/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/books/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/disassembly/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/categories/drones/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/exploits/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/aws/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/courses/awssolpro/</loc>
     <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/amazon/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/cloud/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/course/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/devops/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/devsecops/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/professional/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -137,8 +257,44 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/development/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/engineering/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/reverse/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/courses/ceh/</loc>
     <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/ec-council/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/ethical/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/hacker/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -147,8 +303,26 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/security/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/chfi/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/courses/chfi/</loc>
     <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/forensics/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -157,8 +331,20 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/advanced/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/books/attacking_network_protocols/</loc>
     <lastmod>2019-07-05T09:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/protocol/</loc>
+    <lastmod>2019-07-05T09:00:00+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -211,13 +397,13 @@
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/categories/tutorials/</loc>
+    <loc>https://chrisclarkson.org/tags/tutorials/</loc>
     <lastmod>2018-10-01T16:52:02+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/tags/tutorials/</loc>
+    <loc>https://chrisclarkson.org/categories/tutorials/</loc>
     <lastmod>2018-10-01T16:52:02+01:00</lastmod>
     <priority>0</priority>
   </url>
