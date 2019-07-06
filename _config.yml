@@ -88,6 +88,6 @@ exclude:
   - README.md
   - CNAME
 
-paginate: 5 # 한 페이지 당 표시하고자 하는 포스트의 최대 개수
+paginate: 10 # 한 페이지 당 표시하고자 하는 포스트의 최대 개수
 paginate_path: "/page:num/" # URL 규칙
 
