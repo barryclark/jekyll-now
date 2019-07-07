@@ -27,8 +27,7 @@ imagespath = workpath + "images/" + args.indir
 mkdir(imagespath)
 
 
-content = f"""
----
+content = f"""---
 layout: post
 title: {args.indir}
 ---
