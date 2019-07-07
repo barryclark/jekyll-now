@@ -27,7 +27,7 @@ imagespath = workpath + "images/" + args.indir
 mkdir(imagespath)
 
 
-content = """
+content = f"""
 ---
 layout: post
 title: {args.indir}
@@ -46,7 +46,7 @@ for image in files:
 	subprocess.run(["cp", newpath + "/" + image, imagespath])
 	subprocess.run(["git", "add", imagespath + "/" + image])
 
-	imageref = "![_config.yml]({{{{ site.baseurl }}}}/images/{args.indir}/{image})\n\n"
+	imageref = f"![_config.yml]({{{{ site.baseurl }}}}/images/{args.indir}/{image})\n\n"
 	f.write(imageref)
 
 f.close()
