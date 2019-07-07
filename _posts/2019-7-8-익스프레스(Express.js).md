@@ -45,6 +45,8 @@ exports.isAdmin = (req, res, next) => {
 };
 ```
 
+<br>
+
 `isAdmin` 미들웨어가 필요한 경로에 아래와 같이 미들웨어를 포함하여 라우터를 작성하면 된다.
 
 ```javascript
