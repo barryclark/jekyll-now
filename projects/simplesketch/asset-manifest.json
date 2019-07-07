@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projects/simplesketch/static/css/main.c63dc2c0.chunk.css",
+    "main.js": "/projects/simplesketch/static/js/main.28c90c50.chunk.js",
+    "main.js.map": "/projects/simplesketch/static/js/main.28c90c50.chunk.js.map",
+    "runtime~main.js": "/projects/simplesketch/static/js/runtime~main.ead2077c.js",
+    "runtime~main.js.map": "/projects/simplesketch/static/js/runtime~main.ead2077c.js.map",
+    "static/js/2.c9e41c47.chunk.js": "/projects/simplesketch/static/js/2.c9e41c47.chunk.js",
+    "static/js/2.c9e41c47.chunk.js.map": "/projects/simplesketch/static/js/2.c9e41c47.chunk.js.map",
+    "index.html": "/projects/simplesketch/index.html",
+    "precache-manifest.5253da1c9b8c9d766ba4e785e4358bcf.js": "/projects/simplesketch/precache-manifest.5253da1c9b8c9d766ba4e785e4358bcf.js",
+    "service-worker.js": "/projects/simplesketch/service-worker.js",
+    "static/css/main.c63dc2c0.chunk.css.map": "/projects/simplesketch/static/css/main.c63dc2c0.chunk.css.map"
+  }
+}
