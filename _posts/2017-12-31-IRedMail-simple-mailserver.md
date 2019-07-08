@@ -3,7 +3,10 @@ layout: post
 title: Simple e-mail testlab using Azure and iRedMail
 ---
 
-1. install Azure machine
+
+TBD 
+1. install Azure machine 
+2. setup required hostname 
 
 
 
