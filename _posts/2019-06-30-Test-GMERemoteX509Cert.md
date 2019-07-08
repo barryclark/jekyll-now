@@ -7,8 +7,9 @@ tags:
     - PowerShell
     - X509
 ---
-I need quick method to verify whichof our services expose expiring certificates (and verify to control process of changing done by Network security team). 
-Of course there are many other methods. Sometimes are obvious (like ```curl```), other looks complicated like us for simple task all [PSPKI](https://github.com/PKISolutions/PSPKI) module (as Vadims Podāns, author of first propagate on his homepage code which in misterious way  [do not work](https://www.google.com/search?q=site%3Awww.sysadmins.lv+Test-WebServerSSL) and later include it to huge PowerShell module, with C# code behing - so it diffiult to audit those code before deploy. But from other side it's very interesting to see his progress. For now it's high quality code). 
+I need quick method to verify which of our services expose expiring certificates (and verify to control process of changing done by Network security team).  
+
+Of course there are many other methods. Sometimes are obvious (like [```openssl s_client -showcerts -connect wwww.google.com:443```](https://langui.sh/2009/03/14/checking-a-remote-certificate-chain-with-openssl/) or ```curl```), other looks complicated like us for simple task all [PSPKI](https://github.com/PKISolutions/PSPKI) module (as Vadims Podāns, author of first propagate on his homepage code which in misterious way  [do not work](https://www.google.com/search?q=site%3Awww.sysadmins.lv+Test-WebServerSSL) and later include it to huge PowerShell module, with C# code behing - so it diffiult to audit those code before deploy. But from other side it's very interesting to see his progress. For now it's high quality code). 
 
 From other side existing code looks good for use once, and oriented to show once and now. I take one of example [PowerShell to get remote website’s SSL certificate expiration](https://iamoffthebus.wordpress.com/2014/02/04/powershell-to-get-remote-websites-ssl-certificate-expiration/) by CRCerr0r and convert it to module. 
 
