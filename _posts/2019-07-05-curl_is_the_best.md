@@ -28,6 +28,7 @@ Nice. :)
 
 3rd - some examples: 
 ```
+curl -k -vvv https://site.to.verify.certs/ 
 ```
 
 HTH,
