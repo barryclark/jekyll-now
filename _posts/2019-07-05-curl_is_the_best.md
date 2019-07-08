@@ -10,6 +10,7 @@ tags:
     - X509
 ---
 
+Curl is also on Windows... 
 1st: 
 > On December 19 2017, Microsoft announced that since insider build 17063 of Windows 10, curl is now a default component. 
 via: https://daniel.haxx.se/blog/2018/01/13/microsoft-curls-too/ 
