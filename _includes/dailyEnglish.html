@@ -1,6 +1,10 @@
 {% if page.dailyEnglish %}
 <div class="dailyLang">
   <h2>매일 영어 한 문장</h2>
-  <p>{{ page.dailyEnglish }}</p>
+  <ul>
+    {% for sentence in page.dailyEnglish %}
+    <li>{{ sentence }}</li>
+    {% endfor %}
+  </ul>
 </div>
 {% endif %}
