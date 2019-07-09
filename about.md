@@ -10,7 +10,7 @@ permalink: /about/
 
 ### More Information
 
-The Haufe Group stands for integrated cloud and desktop solutions in the areas of taxation, legal, bookkeeping, learning, and talent management It is a leading media and software vendor for professional online portals, e-procurement, online communities, and human resource & organizational development solutions. 
+The Haufe Group stands for integrated cloud and desktop solutions in the areas of taxation, legal, bookkeeping, learning, and talent management. It is a leading media and software vendor for professional online portals, e-procurement, online communities, and human resource & organizational development solutions. 
 
 The main target groups are large and midsize firms, small businesses and freelancers, tax advisers and lawyers, the public sector, real estate agents, and nonprofit organizations. A number of our brands – Haufe, Haufe Academy, and Lexware – are market leaders in these target groups. 
 
