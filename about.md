@@ -42,10 +42,12 @@ American Society of Tropical Medicine and Hygiene (2018 – present)
 <br> LSTM R-users (2018 – present) (Co-founder)
 
 ### Academic referee:
-*Parasites & Vectors*
+*Scientific Data*
+<br> *Parasites & Vectors*
 <br> *PLoS One*
 <br> *PLoS NTD*
 <br> *Annals of Global Health*
+
 
 ### Oral and poster presentations:
 World Health Organisation: Achieving NTD Control, Elimination and Eradication Targets Post-2020, Modelling Perspectives and Priorities. *Geneva, 15-16th April 2019.* **Oral Presentation.**
