@@ -10,7 +10,7 @@ As data scientists, exploratory analyses performed using emerging techniques are
 
 In 2017, the 10,000th R package was published to CRAN and this became a hot topic in the R community.  It turns out we were not the only people struggling to navigate through all of the options.  This provided the last bit of motivation we needed to create our own solution.  Thus, the idea of `CRANsearcher` was born to fulfill an unmet need.
 
-We went about building `CRANsearcher` with the analysis workflow in mind.  The application, which allows for efficient navigation of tens of thousands of R packages, can be run directly from R.   With the click of a button in RStudio, `CRANsearcher` is launched; it loads the entire CRAN package database (in real time) into a table that is sortable and filterable by release date.  The user can perform multi-term search to discover packages through their names and descriptions.  Packages can be explored further through external links and installed with the click of a button.
+We went about building `CRANsearcher` with the analysis workflow in mind.  The application, which allows for efficient navigation of tens of thousands of R packages, can be run directly from R.    `CRANsearcher` is launched with the click of a button in RStudio. As shown below, it loads the entire CRAN package database (in real time) into a table that is sortable and filterable by release date.  The user can perform multi-term searches to discover packages through their names and descriptions.  Packages can be explored further through external links and installed with the click of a button.
 
 <img src="https://raw.githubusercontent.com/RhoInc/CRANsearcher/master/inst/image/gif/CRANsearcher_addin.gif"/>
 
