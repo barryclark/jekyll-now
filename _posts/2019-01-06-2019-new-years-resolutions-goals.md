@@ -32,7 +32,7 @@ I have expanded my selection of [t-shirts on Amazon](https://hendrixjoseph.githu
 
 My wife didn't publish or write a book, and I didn't publish or make an Android app. I did publish [a children's ebook called *The Adventures of Princess*](https://www.amazon.com/dp/B07M68STB4/?tag=hendrixjoseph-20) which is about my dog Princess and me meeting my wife, although I bit fictionalized.
 
-![Cover for The Adventures of Princess](/images/princess-cover.jpg)
+![Cover for The Adventures of Princess](/images/books/covers/princess-cover.jpg)
 *Cover for The Adventures of Princess*
 
 As far as getting a raise at work, I actually got *three* raises and one promotion.
