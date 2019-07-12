@@ -3,7 +3,7 @@ layout: post
 title: Rethinking the Flag of Huber Heights, Ohio
 tags: [vexillology]
 keywords: [flag of huber heights, flag, flags, huber heights, huber heights flag]
-image: /images/flags/huber-heights-gen.png
+image: /images/flags/huber-heights/huber-heights-gen.png
 ---
 
 I recently watched the following video on [why city flags may be the worst-designed thing you've never noticed](https://www.youtube.com/watch?v=pnv5iKB2hl4) and began thinking about local municipality flags:
