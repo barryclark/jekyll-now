@@ -15,6 +15,8 @@
       url: /study/rnative
     - title: Python
       url: /study/py
+    - title: Algorithm
+      url: /study/algorithm
 - title: 프로젝트
   url: /project
   sublinks:
@@ -26,5 +28,5 @@
     #   url: /project/mtn
 - title: TIL
   url: /til
-- title: Life in Jeju
-  url: /nomad
+# - title: Life in Jeju
+#   url: /nomad
