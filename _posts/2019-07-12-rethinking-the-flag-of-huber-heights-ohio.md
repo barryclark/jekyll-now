@@ -48,6 +48,6 @@ I think that looks fine, but I also wanted to play with the colors a bit. I chan
 ![The Flag of Huber Heights, Ohio in Red, White, and Blue](/images/flags/huber-heights/my-huber-heights-4.png)
 *The Flag of Huber Heights, Ohio in Red, White, and Blue*
 
-These hex colors are <span style="background: #BF0A30;color: white;padding: 0 0.5em;">#BF0A30 (red)</span>, #FFFFFF (white), and <span style="background: #BF0A30;color: white;padding: 0 0.5em;">#002868 (blue)</span>.
+These hex colors are <span style="background: #BF0A30;color: white;padding: 0 0.5em;">#BF0A30 (red)</span>, #FFFFFF (white), and <span style="background: #002868;color: white;padding: 0 0.5em;">#002868 (blue)</span>.
 
 I've had a few thoughts on other flags, such as Montgomery County Ohio, Greene County Ohio, and Toastmasters, but that's a post for another day.
