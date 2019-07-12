@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First project demo - Vocalizing the Perso-Arabic script
+title: Demo - Vocalizing the Perso-Arabic script
 ---
 
 Today my first project demo is live! When I decided to create this site, one big reason was for me to be able to showcase some projects I have worked on. One big issue, however, is that most of them have been part of courses and lack a UI. But now at least one of my projects has had a UI added to it and [is now live!](http://vocalizer.thomasvakili.se/)
@@ -14,6 +14,8 @@ Some more background - Persian and its scripts
 Persian is a language (which happens to be one of my mother tongues) which is spoken mostly in Iran, Afghanistan (where it's called Dari) and Tajikistan (where it is called Tajik). In Afghanistan and Iran, it is written in the Perso-Arabic script, while it is written using a Cyrillic alphabet in Tajikistan.
 
 The Perso-Arabic script is basically a variety of the Arabic script. It is also written from right to left and the main difference is that a few letters are added, and a few letters are modified. One other big similarity is that the script omits short vowels. This means that the word for "went", pronounced "raft", is written as "r-f-t". Native speakers of a language will not pronounce every single letter and so a native Persian speaker will have no issues with this. However, this word might as well be pronounced as "reft" or "roft" or even "rafat".
+
+![Different ways of vocalizing k-t-b.]({{ site.url }}/images/ketab.png){: .center-image }
 
 Enter the Tajik alphabet. Because Tajikistan was part of the Soviet Union, its dialect of Persian was written in a Cyrillic alphabet just like Russian. A lot can be said of this fascinating side-effect of world history, but here I just want to point out why this is relevant for the project: the Tajik script writes out short vowels.
 
