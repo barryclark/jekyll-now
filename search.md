@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Search past posts
+title: Discover more posts
 permalink: /search/
 description: "Discover content on Cheryl Hung's blog."
 ---
