@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: "Explore Cheryl Hung's journey and experience."
 ---
 
 <div class="about-logos">
