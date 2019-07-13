@@ -2,6 +2,7 @@
 layout: page
 title: Events
 permalink: /events/
+description: "Meet Cheryl Hung at global conferences and events."
 ---
 
 ### 2019
