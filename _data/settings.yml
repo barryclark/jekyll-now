@@ -9,6 +9,7 @@ google-ID: 'UA-101991886-1'
 menu:
 - {name: 'Events', path: 'events', url: ''}
 - {name: 'About', path: 'about', url: ''}
+- {name: 'Search', path: 'search', url: ''}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
