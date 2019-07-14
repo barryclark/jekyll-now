@@ -4,7 +4,7 @@ title: Prototype과 상속
 date: 2019-04-14
 comments: true
 categories: [Study, javascript]
-tags: [Javascript, Prototype]
+tags: [Javascript, Prototype, __proto__]
 excerpt: JavaScript는 Prototype 기반의 언어라고 불린다. 그만큼 JavaScript를 이해하고 사용하기 위해 Prototype에 대한 이해가 중요하…………지만! 그만큼 어렵고 복잡하다…..😔
 ---
 
