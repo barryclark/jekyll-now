@@ -22,6 +22,8 @@
   sublinks:
     - title: 블로그 생성기
       url: /project/blogwithjekyll
+    - title: 노마드제주
+      url: /project/nomadjeju
     # - title: 여행직구앱
     #   url: /project/fetch
     # - title: 여행일정앱
