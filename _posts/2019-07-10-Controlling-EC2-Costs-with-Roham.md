@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keeping AWS costs down is eas using Roham
+title: Keeping AWS costs down is easy using Roham
 subtitle: Automate stop/start/termination of your EC2 Instances based on schedule tags
 category: dev
 tags: [howto, cloud, devops]
@@ -10,7 +10,7 @@ header-img: "images/new/Exportiert_29.jpg"
 ---
 
 
-# Saving costs with tagging, lambda functions, and Roham?
+# Saving costs with tags, lambda functions, and Roham?
 Roham saves you cost on AWS by stopping/terminating/starting Instances on schedules defined by you. Roham gives you these benefits:
 
   - It helps you to stop/start/terminate EC2 Instances based on schedule tags
