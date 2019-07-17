@@ -12,8 +12,10 @@ Controls engineers use a couple of different graphical depiction techniques to u
 If you look in most controls textbooks, they will provide several different definitions of the root locus plot. The 3 definitions that are most useful are [1]: 
 
 1. **The root locus is a method for inferring dynamic properties of the closed loop system as the gain, K, changes.** This description is my favorite because it is the most intuitive. It basically says that we can see the system’s response in the time domain for any value of K on this one plot. This is possible because, depending on the location of a point in the s-plane, it represents a different kind of response in the time domain, as shown in the image below. Try to remember this chart in your head as we move on, because it will help you intuitively grasp what the root locus is telling you. 
+
 ![Fig 1]({{ site.baseurl }}/images/Rlocus_locations.jpg "Figure 1"){:width="500px"}  
 **Figure 1**
+
 2. **The root locus plots the all the points that are solutions of the closed loop transfer function.** We can write the CL TF equation in 3 ways but they all mean the same thing: 
 ![Fig eqn1]({{ site.baseurl }}/images/2019-07-16-RootLocus/eqn1.PNG "Figure eqn1"){:width="250px"}  
 3. **The root locus contains all the points where the phase of the open loop transfer function is 180 degrees.** This last definition is harder for me to wrap my head around, but it will come in useful when we have to draw the root locus later on. 
