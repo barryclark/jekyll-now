@@ -11,7 +11,8 @@ Controls engineers use a couple of different graphical depiction techniques to u
 
 If you look in most controls textbooks, they will provide several different definitions of the root locus plot. The 3 definitions that are most useful are [1]: 
 
-1. **The root locus is a method for inferring dynamic properties of the closed loop system as the gain, K, changes.** This description is my favorite because it is the most intuitive. It basically says that we can see the system’s response in the time domain for any value of K on this one plot. This is possible because, depending on the location of a point in the s-plane, it represents a different kind of response in the time domain, as shown in the image below. Try to remember this chart in your head as we move on, because it will help you intuitively grasp what the root locus is telling you. ![Fig 1]({{ site.baseurl }}/images/2019-07-16-RootLocus/Rlocus_locations.jpg "Figure 1"){:width="500px"}  
+1. **The root locus is a method for inferring dynamic properties of the closed loop system as the gain, K, changes.** This description is my favorite because it is the most intuitive. It basically says that we can see the system’s response in the time domain for any value of K on this one plot. This is possible because, depending on the location of a point in the s-plane, it represents a different kind of response in the time domain, as shown in the image below. Try to remember this chart in your head as we move on, because it will help you intuitively grasp what the root locus is telling you. 
+![Fig 1]({{ site.baseurl }}/images/2019-07-16-RootLocus/Rlocus_locations.jpg "Figure 1"){:width="500px"}  
 **Figure 1**
 2. **The root locus plots the all the points that are solutions of the closed loop transfer function.** We can write the CL TF equation in 3 ways but they all mean the same thing: ![Fig eqn1]({{ site.baseurl }}/images/2019-07-16-RootLocus/eqn1.png "Figure eqn1"){:width="250px"}  
 3. **The root locus contains all the points where the phase of the open loop transfer function is 180 degrees.** This last definition is harder for me to wrap my head around, but it will come in useful when we have to draw the root locus later on. 
@@ -35,7 +36,6 @@ I have drawn the root locus showing the poles and zeros on the s-plane to get us
 
 ![Fig 2]({{ site.baseurl }}/images/2019-07-16-RootLocus/R1.jpg "Figure 2"){:width="500px"}  
 **Figure 2**
-
 2. **Loci are on the Real axis to the left of an odd number of poles and zeros located on the Real axis.** Although it is easy to implement this rule (I just did it below, take a look), it is a little more complicated to understand why it exists. 
 
 ![Fig 3]({{ site.baseurl }}/images/2019-07-16-RootLocus/R2_rlocus.jpg "Figure 3"){:width="500px"}  
@@ -45,7 +45,6 @@ Do you remember the 3rd definition of the root locus above, that says that all t
 
 ![Fig 4]({{ site.baseurl }}/images/2019-07-16-RootLocus/R2.jpg "Figure 4"){:width="500px"}  
 **Figure 4**
-
 3. **For large values of K, the remaining N - M branches of the root locus are asymptotic to lines at specific angles, radiating from a center point s = a on the Real axis.** We can calculate the angles and the center point using the equations below. For this example, I have calculated that there is an asymptote oriented at 90 degrees which originates at s = -4.5. You can see the asymptote drawn in red below. 
 
 ![Fig eqn3]({{ site.baseurl }}/images/2019-07-16-RootLocus/eqn3.png "Figure eqn3"){:width="250px"}  
@@ -60,13 +59,11 @@ How about the equation for the center point? Well, if you imagine that we are a 
 ![Fig eqn4]({{ site.baseurl }}/images/2019-07-16-RootLocus/eqn4.png "Figure eqn4"){:width="250px"}  
 
 In this case, alpha is the point on the Real axis where all the poles and zeros appear to be clustered. The equation for alpha is found using some polynomial manipulation that I don’t want to describe in detail here, but you can read about it in [1]. 
-
 4. **Angles of departure (branch leaving a pole) and angles of arrival (branch terminating at a zero) can be calculated.** The equations for departure and arrival angles are: 
 
 ![Fig eqn5]({{ site.baseurl }}/images/2019-07-16-RootLocus/eqn5.png "Figure eqn5"){:width="250px"}  
 
 Notice that they are for poles and zeros of multiplicity q. This means that we may have multiple poles and zeros stacked on top of each other. If that is the case, divide the answer by q (the number of stacked poles or zeros) to get the true arrival/departure angle. For this problem, we do not necessarily need to calculate these angles directly because we know that the branches depart from the poles along the Real axis using Rule 2. 
-
 5. **The locus can have multiple roots of multiplicity q, and the branches of the root locus will approach these q roots at angles as calculated in the equation below.** This rule is for cases where multiple branches are approaching the Real axis and we want to find the angle at which they should intercept the Real axis. Again in this example, we don’t have this situation but it does come in handy for certain systems. 
 
 ![Fig eqn6]({{ site.baseurl }}/images/2019-07-16-RootLocus/eqn6.png "Figure eqn6"){:width="250px"}  
