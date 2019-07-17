@@ -554,6 +554,27 @@ ul.til-lists .tag {
     padding: 1.2em 0 2em;
     color: $gray;
   }
+
+  .tag {
+    display: inline;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    li:before {
+      content: " ";
+    }
+
+    li {
+      display: inline;
+      margin: 0;
+
+      margin: 0px 4px 2px;
+      padding: 6px 8px;
+      color: #282828;
+      background-color: #e9ecef;
+      border-radius: 5px;
+    }
+  }
 }
 
 .post-lists > .post-list:last-child {

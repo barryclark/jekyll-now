@@ -12,6 +12,11 @@ layout: default
       <div class="aListBox">
         <div class="listTitle">
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <ul class="tag">
+            <li>
+              {{ post.tags[0] }}
+            </li>
+          </ul>
         </div>
         <div class="listEntry">
           {{ post.excerpt }}
