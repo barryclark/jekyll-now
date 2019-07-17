@@ -17,7 +17,9 @@ If you look in most controls textbooks, they will provide several different defi
 **Figure 1**
 
 2. **The root locus plots the all the points that are solutions of the closed loop transfer function.** We can write the CL TF equation in 3 ways but they all mean the same thing: 
+
 ![Fig eqn1]({{ site.baseurl }}/images/2019-07-16-RootLocus/eqn1.PNG "Figure eqn1"){:width="250px"}  
+
 3. **The root locus contains all the points where the phase of the open loop transfer function is 180 degrees.** This last definition is harder for me to wrap my head around, but it will come in useful when we have to draw the root locus later on. 
 
 Given these descriptions of the root locus, hopefully you can see that it contains a lot of useful information. We will come back to this idea after we have drawn a root locus plot to show how we can pull this information from the diagram. For now, let’s try to draw one. As an example, let’s consider the closed loop transfer function: 
@@ -46,9 +48,11 @@ Do you remember the 3rd definition of the root locus above, that says that all t
 Okay, I know, this rule is confusing too, but we can figure out where it comes from. Let’s start with the angle of the asymptote. Again, this asymptote represents what happens when the gain, K, is very large. When the gain is large, we are on these N-M branches that are heading for infinity. Definition 3 from above is still in effect, so the sum of the angles from all the poles and zeros to our position on the asymptote must still be equal to 180 degrees. And when we are on the root locus but NOT on the Real axis, we are on all the asymptote branches simultaneously. That’s why the SUM of the N-M angles from the poles and zeros to our current locations must be equal to 180 degrees. How about the equation for the center point? Well, if you imagine that we are a long way from the Real axis, somewhere on the asymptote, then you can imagine that all the poles and zeros of the system look as though they are clustered together. We can approximate the root locus equation as:  
 ![Fig eqn4]({{ site.baseurl }}/images/eqn4.PNG "Figure eqn4"){:width="250px"}  
 In this case, alpha is the point on the Real axis where all the poles and zeros appear to be clustered. The equation for alpha is found using some polynomial manipulation that I don’t want to describe in detail here, but you can read about it in [1]. 
+
 4. **Angles of departure (branch leaving a pole) and angles of arrival (branch terminating at a zero) can be calculated.** The equations for departure and arrival angles are:   
 ![Fig eqn5]({{ site.baseurl }}/images/eqn5.PNG "Figure eqn5"){:width="250px"}  
 Notice that they are for poles and zeros of multiplicity q. This means that we may have multiple poles and zeros stacked on top of each other. If that is the case, divide the answer by q (the number of stacked poles or zeros) to get the true arrival/departure angle. For this problem, we do not necessarily need to calculate these angles directly because we know that the branches depart from the poles along the Real axis using Rule 2. 
+
 5. **The locus can have multiple roots of multiplicity q, and the branches of the root locus will approach these q roots at angles as calculated in the equation below.** This rule is for cases where multiple branches are approaching the Real axis and we want to find the angle at which they should intercept the Real axis. Again in this example, we don’t have this situation but it does come in handy for certain systems. 
 
 ![Fig eqn6]({{ site.baseurl }}/images/eqn6.PNG "Figure eqn6"){:width="250px"}  
