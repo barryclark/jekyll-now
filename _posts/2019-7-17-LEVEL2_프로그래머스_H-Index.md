@@ -46,6 +46,11 @@ function solution(citations) {
 ```
 
 <br>
+
+<div class='innerBox'>
+이 문제는 문제를 잘못작성해서 한참동안 삽질을 ㅠㅠ  </div>
+
+<br>
 <span class="reference">문제바로가기</span>
 
 [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747)
