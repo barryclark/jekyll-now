@@ -3,13 +3,14 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Code for Canada x PSC / CFP
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Project updates from partnership between Code for Canada and Public Service Commission
+description_fr: Mises à jour sur le projet entre Code for Canada et la Commission de la fonction publique
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://raw.githubusercontent.com/code-for-canada/psc-updates/master/images/cfc-web-logo.png
 
 #
 # Flags below are optional
@@ -21,12 +22,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: code-for-canada/
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: code4ca
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -47,7 +48,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "/psc-updates"
 
 #
 # !! You don't need to change any of the configuration flags below !!

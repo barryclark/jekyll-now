@@ -3,21 +3,21 @@ layout: default
 ---
 
 <div class="posts">
-  {% assign posts=site.posts | where:"lang", "en" %}
+  {% assign posts=site.posts | where:"lang", "fr" %}
   {% for post in posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="date">
-	    Published on {{ post.date | date: "%B %e, %Y" }}, by {{ post.author }}
+	    Rédigé le {{ post.date | date: "%B %e, %Y" }}, par {{ post.author }}
 	  </div>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Lire la suite</a>
     </article>
   {% endfor %}
 </div>
