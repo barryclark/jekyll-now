@@ -7,10 +7,6 @@ description: "Meet Cheryl Hung at global conferences and events."
 
 ### 2019
 
-June 23 - 27: KubeCon + CloudNativeCon + Open Source Summit China, Shanghai
-* **CNCF End User Awards 2019 (China)**
-* **Navigating the cloud native ecosystem for end users**
-
 July 17 - 19: Open Source Summit Japan, Tokyo
 
 August 7: Cloud Native London
