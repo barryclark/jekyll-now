@@ -15,4 +15,7 @@ excerpt: Sequelize는 MySQL의 복잡한 문법을 간단하게 자바스크립�
 ```bash
 $ yarn add sequelize mysql2
 $ yarn global add sequelize-cli
+$ yarn sequelize init
 ```
+
+`sequelize init`을 하고나면 프로젝트의 루트디렉토리에 config, migrations, models, seeders 폴더가 생성된다.

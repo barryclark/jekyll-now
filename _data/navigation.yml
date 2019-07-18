@@ -17,6 +17,8 @@
       url: /study/py
     - title: Algorithm
       url: /study/algorithm
+    - title: 기타
+      url: /study/etc
 - title: 프로젝트
   url: /project
   sublinks:

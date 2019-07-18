@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div>
+  {% include sidebar_study.html %}
+</div>
+<div class="container">
+  <div class="post-lists">
+    {% for post in site.categories.etc %}
+    <ul class="post-list">
+      <div class="aListBox">
+        <div class="listTitle">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="listEntry">
+          {{ post.excerpt }}
+        </div>
+        <div class="date">
+          {{ post.date | date: "%Y-%m-%d" }}
+        </div>
+      </div>
+    </ul>
+    {% endfor %}
+  </div>
+</div>
