@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToyProblem_02_nonrepeatedCharacter.md
+title: ToyProblem_02_nonrepeatedCharacter
 date: 2019-07-19
 comments: true
 categories: [Study, algorithm]
