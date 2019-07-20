@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 2019-7-18-Passport와 JWT를 이용한 로그인 구현_local
-date: 2019-07-18
+title: Passport와 JWT를 이용한 로그인 구현_local
+date: 2019-07-20
 comments: true
 categories: [Study, nodejs]
 tags: [NodeJs, Passport, JWT]
