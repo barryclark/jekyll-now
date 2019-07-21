@@ -98,7 +98,7 @@ sudo docker run -itd --name memcached -p 11211:11211 -e MEMCACHED_MEMUSAGE=32 rb
 
 2. You can use this Gist that contains the entire code and a simple demostration.
 
-{% gist https://gist.github.com/Jumpi96/95fdd81045b04ea141403d76e48bc158 %}
+{% gist 95fdd81045b04ea141403d76e48bc158 %}
 
 3. Run the code with ```python multi_tenant_cache.py``` and you should see:
 ```
@@ -114,5 +114,5 @@ Lisboa cached /info is: 2 days
 *****
 
 ### References
-* Memcached Docker image: https://sysadmins.co.za/dockerizing-a-memcached-server-for-docker-on-alpine/
-* Werkzeug Cache: https://werkzeug.palletsprojects.com/en/0.14.x/contrib/cache/
+* Memcached Docker image: [https://sysadmins.co.za/dockerizing-a-memcached-server-for-docker-on-alpine/](https://sysadmins.co.za/dockerizing-a-memcached-server-for-docker-on-alpine/)
+* Werkzeug Cache: [https://werkzeug.palletsprojects.com/en/0.14.x/contrib/cache/](https://werkzeug.palletsprojects.com/en/0.14.x/contrib/cache/)
