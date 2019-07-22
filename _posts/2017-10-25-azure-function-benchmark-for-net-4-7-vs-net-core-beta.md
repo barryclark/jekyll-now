@@ -21,9 +21,9 @@ tags:
   - azurefunction
   - paas
 ---
-## Azure Function benchmark for .Net 4.7 vs .Net Core beta, how much request per seconds we canÂ squeeze?
+## Azure Function benchmark for .Net 4.7 vs .Net Core beta, how much request per seconds we can squeeze?
 
-There was some benchmark done by my colleagueÂ [Roberto](https://robertoprevato.github.io/Comparing-Linux-hosted-to-Windows-hosted-ASP-NET-Core-applications-in-Azure-Application-Service-Plan/) about running application on app service plan vs app service plan for docker.
+There was some benchmark done by my colleague [Roberto](https://robertoprevato.github.io/Comparing-Linux-hosted-to-Windows-hosted-ASP-NET-Core-applications-in-Azure-Application-Service-Plan/) about running application on app service plan vs app service plan for docker.
 
 That inspired me for some other approach to run the same code sample but on azure function running .net 4.7 vs azure function running .net core
 
@@ -51,7 +51,7 @@ The size of machine for app service plan is S1, testing approach is ab benchmark
 
 &nbsp;
 
-The setup is pre compiledÂ Azure Function running .Net 4.7
+The setup is pre compiled Azure Function running .Net 4.7
 
 <img class="alignnone size-full wp-image-246" src="/wp-content/uploads/2017/10/fun-runtime.jpg" alt="" width="205" height="72" /> 
 
@@ -160,7 +160,7 @@ using Newtonsoft.Json;
 }
 </pre>
 
-Cmd for testingÂ Â ab -n 5000 -c 150 -l http://&#8230;&#8230; ?s=&#8221;&#8221;Â s=1,Â s=10 ,Â s=100
+Cmd for testing  ab -n 5000 -c 150 -l http://&#8230;&#8230; ?s=&#8221;&#8221; s=1, s=10 , s=100
 
 ab results :
 
@@ -406,6 +406,6 @@ From results we can see that .net core on azure functions is still in beta and t
 
 the performance look even nice.
 
-When comparing .net 4.7 precompiled vs .net 4.7 notÂ precompiled (csx) the result is very similar but the first call are slower.
+When comparing .net 4.7 precompiled vs .net 4.7 not precompiled (csx) the result is very similar but the first call are slower.
 
 When we look on .net core beta on Azure function it do not look good but this is just beta, so for final version I assume it can be much better.

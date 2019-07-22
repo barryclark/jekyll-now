@@ -44,7 +44,7 @@ And the reason of that is that the exception rate metric is also catching handle
 
 <img class="alignnone size-full wp-image-277" src="/wp-content/uploads/2017/11/2017-11-02-11_38_34-Metrics-Explorer-Microsoft-Azure.png" alt="" width="549" height="124" srcset="/wp-content/uploads/2017/11/2017-11-02-11_38_34-Metrics-Explorer-Microsoft-Azure.png 549w, /wp-content/uploads/2017/11/2017-11-02-11_38_34-Metrics-Explorer-Microsoft-Azure-300x68.png 300w" sizes="(max-width: 549px) 100vw, 549px" /> 
 
-_Exception rate_Â is a system performance counter. The CLR counts all the handled and unhandled exceptions that are thrown, and divides the total in a sampling interval by the length of the interval. The Application Insights SDK collects this result and sends it to the portal.
+_Exception rate_ is a system performance counter. The CLR counts all the handled and unhandled exceptions that are thrown, and divides the total in a sampling interval by the length of the interval. The Application Insights SDK collects this result and sends it to the portal.
 
 From my point of view this do not make sense,
 
@@ -52,4 +52,4 @@ especially when there are cases in code when you can handle situations only by c
 
 In summary we want to have all possible alerts setup but we should not use &#8220;exception rate&#8221; metric alert.
 
-Here can find more aboutÂ [System performance counters in Application Insights](https://docs.microsoft.com/gl-es/azure/application-insights/app-insights-performance-counters)
+Here can find more about [System performance counters in Application Insights](https://docs.microsoft.com/gl-es/azure/application-insights/app-insights-performance-counters)
