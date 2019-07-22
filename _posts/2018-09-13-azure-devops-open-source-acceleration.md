@@ -32,11 +32,11 @@ I assume there will be more very good staff coming and this is just start.
 
 The VSTS was spitted in 5 services:
 
-##<img class="alignnone size-full wp-image-334" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Pipelines.png" alt="" width="30" />  Azure Pipelines
+## <img class="alignnone size-full wp-image-334" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Pipelines.png" alt="" width="30" />  Azure Pipelines
 
 CI/CD that works with any language, platform, and cloud. Connect to GitHub or any Git repository and deploy continuously. <a href="https://azure.microsoft.com/services/devops/pipelines/" target="_blank" rel="noopener">Learn More ></a>
 
-##<img class="alignnone size-full wp-image-333" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Boards.png" alt="" width="33" />  Azure Boards
+## <img class="alignnone size-full wp-image-333" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Boards.png" alt="" width="33" />  Azure Boards
 
 Powerful work tracking with Kanban boards, backlogs, team dashboards, and custom reporting. <a href="https://azure.microsoft.com/services/devops/boards/" target="_blank" rel="noopener">Learn more ></a>
 
@@ -44,11 +44,11 @@ Powerful work tracking with Kanban boards, backlogs, team dashboards, and custom
 
 Maven, npm, and NuGet package feeds from public and private sources. <a href="https://azure.microsoft.com/services/devops/artifacts/" target="_blank" rel="noopener">Learn more ></a>
 
-##<img class="alignnone size-full wp-image-335" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Repos.png" alt="" width="32" />  Azure Repos
+## <img class="alignnone size-full wp-image-335" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Repos.png" alt="" width="32" />  Azure Repos
 
 Unlimited cloud-hosted private Git repos for your project. Collaborative pull requests, advanced file management, and more. <a href="https://azure.microsoft.com/services/devops/repos/" target="_blank" rel="noopener">Learn more ></a>
 
-##<img class="alignnone size-full wp-image-336" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Test-Plans.png" alt="" width="29" />  Azure Test Plans
+## <img class="alignnone size-full wp-image-336" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Test-Plans.png" alt="" width="29" />  Azure Test Plans
 
 All in one planned and exploratory testing solution. <a href="https://azure.microsoft.com/services/devops/test-plans/" target="_blank" rel="noopener">Learn more ></a>
 
