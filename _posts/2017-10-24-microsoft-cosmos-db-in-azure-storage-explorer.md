@@ -16,6 +16,6 @@ The extension allows you to manage Cosmos DB entities, manipulate data, create a
 
 &nbsp;
 
-<img class="alignnone size-full wp-image-232" src="/wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer.png" alt="" width="1024" height="553" srcset="/wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer.png 1024w, /wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer-300x162.png 300w, /wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer-768x415.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img class="alignnone size-full wp-image-232" src="/wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer.png" alt="" width="1024" height="auto" srcset="/wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer.png 1024w, /wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer-300x162.png 300w, /wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer-768x415.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 https://azure.microsoft.com/en-us/blog/microsoft-cosmos-db-in-azure-storage-explorer-preview/?cdn=disable
