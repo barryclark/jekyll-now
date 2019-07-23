@@ -7,12 +7,13 @@ layout: post
 guid: http://blog.janono.pl/?p=289
 permalink: /2017/11/microsoft-connect-2017/
 image: /wp-content/uploads/2017/11/connect2017.jpg
+featured-img: /wp-content/uploads/2017/11/connect2017.jpg
 categories:
   - Event
 tags:
   - Connect
   - Event
-  - microsoft
+  - Microsoft
 ---
 Info about event here <https://www.microsoft.com/en-us/connectevent>
 

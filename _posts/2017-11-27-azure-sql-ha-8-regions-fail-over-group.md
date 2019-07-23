@@ -19,11 +19,11 @@ tags:
   - sql
 format: image
 ---
+<img class="alignnone size-full wp-image-298" src="/wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure.png" alt="" width="1015" height="318" srcset="/wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure.png 1015w, /wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure-300x94.png 300w, /wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure-768x241.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" />
 ## How to create free High Availability Azure Sql Db with fail-over group in 8 regions with Arm template for free.
 
 Let&#8217;s go to <https://portal.azure.com> and lets try to create it we will see that option is not available to crate free tire.
 
-<img class="alignnone size-full wp-image-298" src="/wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure.png" alt="" width="1015" height="318" srcset="/wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure.png 1015w, /wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure-300x94.png 300w, /wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure-768x241.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" /> 
 
 But if go and check here [https://resources.azure.com](https://resources.azure.com/) other deployment template for other azure sql database we can see with what parameters it was created so we can play with it.
 

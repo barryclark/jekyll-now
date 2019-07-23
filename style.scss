@@ -287,3 +287,18 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+.TitleBanner {
+  color: white; // White text...
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75); // ...against a dark background
+
+  background-size: cover;
+  background-position: center;
+  background-image: url(/path/to/backup/image);
+}
+
+.TitleBanner--inverse {
+    color: black; // Here we have dark text
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.75); // ...against a light background
+}
