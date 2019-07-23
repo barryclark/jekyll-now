@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToyProblem_06_commonCharacters
-date: 2019-07-22
+date: 2019-07-23
 comments: true
 categories: [Study, algorithm]
 tags: [Javascript]
