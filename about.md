@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Documenting my journey of learning Python, setting up a homelab and moving into the technology field.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[joss.sparkes@gmail.com](mailto:joss.sparkes@gmail.com)
