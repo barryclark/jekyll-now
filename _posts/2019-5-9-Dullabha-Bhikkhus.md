@@ -15,7 +15,7 @@ ___
 
 20 days Taung Galay monastery, Hpa-an
 visited Kaw Phyar Cave 
-
+10 days meditation retreat 
 ***
 
 6 days climbing Mt. Mulayit. 
