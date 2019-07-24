@@ -8,7 +8,7 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <div class="FeaturedImgBanner {% if post.inverse-img %}FeaturedImgBanner--inverse{% endif %}" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
+      <div class="Banner {% if post.inverse-img %}Banner--inverse{% endif %}" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
         <!-- Include your post title, byline, date, and other info inside the header here. -->
         {{ post.title }}
       </div>

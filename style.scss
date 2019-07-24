@@ -302,3 +302,9 @@ footer {
     color: black; // Here we have dark text
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.75); // ...against a light background
 }
+
+.Banner {
+  color: black; // Here we have dark text
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.75); // ...against a light background
+  min-width: 200px;
+}
