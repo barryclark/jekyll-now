@@ -5,8 +5,7 @@ date: 2019-07-22
 comments: true
 categories: [Study, algorithm]
 tags: [Javascript]
-excerpt: Bubble sort is the most basic sorting algorithm in all of Computer
-Sciencedom.
+excerpt: Bubble sort is the most basic sorting algorithm in all of Computer Sciencedom.
 ---
 
 ### 문제
