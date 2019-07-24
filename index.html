@@ -10,7 +10,6 @@ layout: default
 
       <div class="Banner {% if post.inverse-img %}Banner--inverse{% endif %}" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
         <!-- Include your post title, byline, date, and other info inside the header here. -->
-        {{ post.title }}
       </div>
 
       <p class="post-date">{{ post.date | date_to_long_string }}</p>
