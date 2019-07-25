@@ -25,3 +25,5 @@ Awards:
 	* This was fun, we were called `Gamecork Fourth` because we were the all freshman team.
 	* We ended up being the only USC team to place, and yes `Gamecork` was misspelled.
 * 2017 USC@ACM Fall Codeathon 146: 1st Place
+
+[Resume]({{ site.url }}/assets/pdfs/Resume.pdf)
