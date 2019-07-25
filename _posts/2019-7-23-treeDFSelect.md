@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToyProblem_07_treeDFSelect
+title: treeDFSelect
 date: 2019-07-23
 comments: true
 categories: [Study, algorithm]

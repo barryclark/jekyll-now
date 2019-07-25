@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToyProblem_04_nthFibonacci
+title: nthFibonacci
 date: 2019-07-21
 comments: true
 categories: [Study, algorithm]

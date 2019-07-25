@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToyProblem_09_deepEquality
+title: deepEquality
 date: 2019-07-24
 comments: true
 categories: [Study, algorithm]

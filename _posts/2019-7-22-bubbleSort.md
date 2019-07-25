@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToyProblem_05_bubbleSort
+title: bubbleSort
 date: 2019-07-22
 comments: true
 categories: [Study, algorithm]

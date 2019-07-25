@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToyProblem_08_largestProductOfThree
+title: largestProductOfThree
 date: 2019-07-23
 comments: true
 categories: [Study, algorithm]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToyProblem_03_isSubsetOf
+title: isSubsetOf
 date: 2019-07-20
 comments: true
 categories: [Study, algorithm]
