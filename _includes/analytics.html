@@ -1,5 +1,5 @@
 {% if site.google_analytics %}
-	<!-- Google Analytics 
+	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -12,18 +12,5 @@
 		  'title': '{{ page.title | replace: "'", "\\'" }}'
 		});
 	</script>
-	 Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.google_analytics }}', {
-            'page_title' : '{{ page.title }}',
-            'page_path': '{{ page.url }}'
-        });
-    b</script>
-
 	<!-- End Google Analytics -->
 {% endif %}
