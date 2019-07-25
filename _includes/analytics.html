@@ -19,7 +19,10 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', '{{ site.google_analytics }}');
+        gtag('config', '{{ site.google_analytics }}', {
+            'page_title' : '{{ page.title }}',
+            'page_path': '{{ page.url }}'
+        });
     b</script>
 
 	<!-- End Google Analytics -->
