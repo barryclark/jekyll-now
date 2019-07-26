@@ -5,7 +5,7 @@ date: 2019-07-25
 comments: true
 categories: [Study, algorithm]
 tags: [Javascript]
-excerpt: Write a function that, given two objects, returns whether or not the two are deeply equivalent
+excerpt: Given a sorted array that has been rotated some number of items right or left, i.e. [0, 1, 2, 3, 4, 5, 6, 7] might become [4, 5, 6, 7, 0, 1, 2, 3]
 ---
 
 ### 문제
