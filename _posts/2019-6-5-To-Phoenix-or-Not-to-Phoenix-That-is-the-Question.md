@@ -3,7 +3,7 @@ layout: post
 title: To Phoenix or Not to Phoenix — That is the Question
 ---
 
-![Phoenix Web Framework]({{ site.baseurl }}/images/elixir-phoenixjpg)
+![Phoenix Web Framework]({{ site.baseurl }}/images/elixir-phoenix.jpg)
 
 I have been playing around with Elixir and Phoenix over the last couple of months. I have also just joined Up Learn as the Head of Engineering with the enviable job of rebuilding the platform for long term maintenance and use. This post is about the conundrum of whether to go with Phoenix as the backend web framework when rebuilding the platform. The alternative would be Django, a framework I have used for almost 10 years.
 
