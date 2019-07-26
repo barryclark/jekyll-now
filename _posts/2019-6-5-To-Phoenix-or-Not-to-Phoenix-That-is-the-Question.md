@@ -3,9 +3,9 @@ layout: post
 title: To Phoenix or Not to Phoenix — That is the Question
 ---
 
-![Phoenix Web Framework]({{ site.baseurl }}/images/elixir-phoenix.jpg)
-
 I have been playing around with Elixir and Phoenix over the last couple of months. I have also just joined Up Learn as the Head of Engineering with the enviable job of rebuilding the platform for long term maintenance and use. This post is about the conundrum of whether to go with Phoenix as the backend web framework when rebuilding the platform. The alternative would be Django, a framework I have used for almost 10 years.
+
+![Phoenix Web Framework]({{ site.baseurl }}/images/elixir-phoenix.jpg)
 
 # For
 **Functional Programming Language:** Phoenix is built on Elixir programming language, which is a functional language. As with many other functional languages Elixir brings with it properties of immutability, functional composition (higher order functions), parallelization, and lazy evaluation. Many of these properties make organizing complex systems and arguing about their correctness easy. They also make it easier to write programs that have lesser bugs and utilize multiple cores seamlessly. For those interested in learning benefits of functional programming, I will redirect you to this post or this Quora question. In the short term, parallelization will provide performance boost which will allow me to not spend time and resources on scaling systems and maintaining them at scale. The better organization of complex systems will allow us to decompose the product as different teams manage different parts of it.
