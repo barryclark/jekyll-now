@@ -16,9 +16,8 @@ Obviously, there are many other skills that could have been taught to achieve th
 
 We have designed the programme as a 6 month long part time training, split into two equal parts. The first part involves classroom teaching and practice and the second part is a 3 month long part time internship at a web/mobile app development company. The content of the training is reverse engineered by answering the question:
 
-```
-If we were to interview an entry level software tester what would we expect them to know?
-```
+> If we were to interview an entry level software tester what would we expect them to know?
+
 
 This resulted in teaching the participants the following topics:
 
