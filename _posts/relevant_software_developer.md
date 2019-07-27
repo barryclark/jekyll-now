@@ -2,8 +2,11 @@
 layout: post
 title: How do I keep up to date as a software developer
 ---
+Introducing.. well me
+---------------------
+I am a professional software developer (or at least employed ;) ) for about 8 years, and programming in some way for about 17 years. Actually my first programming language was in my mother tounge (Hebrew), surprisingly or not, which was based upon turtle language in a afternoon course in junior high and got me hooked on this world.
 
-I have been asked a couple of times in the past few weeks on how I keep up to date as a software developer, so this lead me to think about what that actual means to "keep up to date" does this means broad general knowledge or in depth knowledge at your specific area of expertise.  
+So why am I writing this blog, you maybe wondering, it's because one of my most important ideals of sharing my knowledge which ties in my mind very tightly to this blog subject and contributes a lot. Which started  when I have been asked a couple of times in the past few weeks on how I keep up to date as a software developer, so this lead me to think about what that actual means to "keep up to date" does this means broad general knowledge or in depth knowledge at your specific area of expertise.  
 
 
 Why
