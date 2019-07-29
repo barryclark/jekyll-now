@@ -47,8 +47,8 @@ To enable a highly scalable learning mechanism the videos can form a self learni
 ## Creating the Right Videos
 Having taught the first batch we have largely figured out what needs to be taught in the software testing programme. We also have lecture-by-lecture slides that details the content for each lecture. This raw material is a fantastic starting point for preparing the videos. However, with video based lectures, a teacher does not have the luxury of looking at the students to quickly guage whether they are following the content being taught. This means that the content of the video needs to be structured so that a variety of students are able to follow well and *learn* effectively.
 
-For this purpose of ensuring *effective learning*, I have turned to understanding research on neuroscience of learning. I am in the process of identifying aspects of the research that will be useful when structuring our video based online course. I use this series as a way to orgnise my understanding of this research.
+For this purpose of ensuring *effective learning*, I have turned to understanding research on neuroscience of learning. I am in the process of identifying aspects of the research that will be useful when structuring our video based online course. I use this series as a way to organise my understanding of this research.
 
 ---
 
-In the next post I will talk about what I mean by *learning* and look at the first empricical technique of learning - **Testing**.
+In the next post I will talk about what I mean by *learning* and look at the first empirical technique of learning - **Testing**.
