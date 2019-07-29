@@ -20,7 +20,7 @@ selected = false
 # projects = ["deep-learning"]
 
 # Links (optional).
-url_pdf = "/files/SRSM 2019-GEST.pdf"
+url_pdf = ""
 url_slides = "/files/SRSM 2019-GEST.pdf"
 url_video = ""
 url_code = ""
