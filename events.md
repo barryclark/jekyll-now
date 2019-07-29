@@ -35,8 +35,6 @@ November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
 
 December 2 - 6: AWS re:Invent, Las Vegas
 
-December 12: Open Fintech Forum, New York
-
 ### 2020
 
 March 31 - April 2: KubeCon + CloudNativeCon Europe, Amsterdam
