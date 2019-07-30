@@ -1,0 +1,11 @@
+<ul class="post-categories">
+  {% if post %} {% assign categories = post.categories %} {% else %} {% assign
+  categories = page.categories %} {% endif %} {% for category in categories %}
+  <li>
+    <i class="fa fa-tags"></i>
+    <a href="{{ site.baseurl }}/categories/#{{ category | slugize }}">{{
+      category
+    }}</a>
+  </li>
+  {% endfor %}
+</ul>
