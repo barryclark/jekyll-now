@@ -21,6 +21,9 @@ October 2 - 3:  OpenInfraDays Nordics, Stockholm
 October 8:  Cloud Native Revolution, Philadelphia
 * **Keynote**
 
+October 19 - 20:  OggCamp, Manchester
+* **Stopping Brexit with data science**
+
 October 22 - 23:  Automotive Grade Linux All Member Meeting, Monte Carlo
 * **Keynote**
 
