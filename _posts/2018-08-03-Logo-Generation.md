@@ -15,7 +15,7 @@ At some point, I thought about animating it and using that animation instead of 
 
 Recently, I picked up a book from 2010 called [Generative Design](http://www.generative-gestaltung.de/1/lang/en). In it there are all kinds of gems:
 
-<iframe class="centered" src="http://player.vimeo.com/video/15658375?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="550" height="310" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<iframe class="centered" src="https://player.vimeo.com/video/15658375?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="550" height="310" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 I was going over the book normally and stumbled upon this page:
 
@@ -30,14 +30,14 @@ So I set out to play with Canvas to try and recreate the drawing. Easy enough: d
 * draw it
 
 <figure class="manikin content-surge">
-    <iframe src="http://logo-generation.surge.sh/simple-black.html" frameborder="0" width="500" height="550"></iframe>
+    <iframe src="https://logo-generation.surge.sh/simple-black.html" frameborder="0" width="500" height="550"></iframe>
     <figcaption>Basic wave generation through rotation and scaling of a square</figcaption>
 </figure>
 
 Then I thought I'd need to add some color to it in order to generate some actual colored waves: I had to ditch the square and use lines instead, so that they could be made of different colors:
 
 <figure class="manikin content-surge">
-    <iframe src="http://logo-generation.surge.sh/four-offsets.html" frameborder="0" width="500" height="550"></iframe>
+    <iframe src="https://logo-generation.surge.sh/four-offsets.html" frameborder="0" width="500" height="550"></iframe>
     <figcaption>Fully customizable wave generation!</figcaption>
 </figure>
 
