@@ -7,7 +7,7 @@ tag: drawmeakicker,webgl
 Man, it feels good to ship stuff. After a few months just sitting on this project while it was 90% done, I finally launched [Draw Me a Kicker](http://drawmeakicker.com/). It's not completely finished, and it will be a bit buggy for a while, but I'll get to it. 
 
 <figure class="content-youtube fourbythree">
-	<iframe src="http://www.youtube.com/embed/mbBs5oQdYyQ" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/mbBs5oQdYyQ" frameborder="0" allowfullscreen></iframe>
 	<figcaption>Quick overview of the project</figcaption>
 </figure>
 

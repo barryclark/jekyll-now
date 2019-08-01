@@ -19,7 +19,7 @@ As this site is mostly out there for my web work, you probably don't care all th
 My biggest thing is mountainboarding. Mountainboarding is a mashup of skateboarding, snowboarding and mountainbiking: you strap yourself to a board with big pneumatic wheels and you go down grassy hills, mountain trails, dirt jumps, skateparks, you name it. It's a pretty obscure sport, I'll give you that, but the cool thing with it is the community. I have mountainboarding friends all around the globe, and it's really fun to meet all kinds of people who are so different, yet share the same passion.
 
 <figure class="content-youtube">
-	<iframe src="http://www.youtube.com/embed/9cTG0U6IMHU" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/9cTG0U6IMHU" frameborder="0" allowfullscreen></iframe>
 	<figcaption>Dirt jumps are fun! Here some riding in Boulder, CO, with my friend Kody Stewart</figcaption>
 </figure>
 
