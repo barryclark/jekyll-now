@@ -8,7 +8,7 @@ Hello friend (I hope)!
 
 My name is Mikaël Gramont, from France. I usually go by Mika, as it's nicer to my ears (at least, in the US :p).
 
-I'm a frontend developer, currently working for Google on the [Cultural Institute](https://www.google.com/culturalinstitute/beta/) front-end team. There are many titles out there for what I do: web developer, front-end engineer, UX engineer, etc. Some might say I push pixels around, but those are haters. I like to think that I build high-quality, fast, accessible and robust user interfaces, in line with today's standards.
+I'm a frontend developer. There are many titles out there for what I do: web developer, front-end engineer, UX engineer, etc. Some might say I push pixels around, but those are haters. I like to think that I build high-quality, fast, accessible and robust user interfaces, in line with today's standards.
 
 Okay I push pixels around, fine.
 
@@ -27,7 +27,7 @@ Mountainboarding has done a lot for me. It's the reason why I got into web devel
 
 After a while I started enjoying it a whole lot more, and rebuilt that site as [www.mountainboard.fr](https://www.mountainboard.fr). I learned so much! In the meantime, I spent a few years as a consultant in the automotive industry (not my thing, really), but thanks to my experience, managed to get a job as a web developer with a startup in Toulouse, France. If not for mountainboarding, I have no idea what kind of job I'd have today.
 
-After that, I spent 6 years in the Bay Area, working at YouTube for most of that time.
+After that, I spent 6 years in the Bay Area, working at YouTube for most of that time, transferred to the Paris Google office where I worked at the [Google Cultural Institute](https://artsandculture.google.com/). After a year there, I moved to Biarritz where I joined [OnRewind](https://www.onrewind.com).
 
 ### The rest
 
