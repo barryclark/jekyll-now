@@ -9,3 +9,4 @@ Gemfile.lock
 node_modules
 package.json
 _posts/2015-10-10-Markdown.md
+.idea
