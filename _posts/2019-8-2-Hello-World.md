@@ -9,5 +9,7 @@ In the mean time, enjoy these wild elephants having a splash
 
 ![Elephants at Udawalawe National Park, Sri Lanka](https://github.com/amyquinton/amyquinton.github.io/blob/master/images/elephants.mov)
 
-
 {% include figure.html src="/images/elephants.mov" %}
+
+
+{% include figure.html src="images/elephants.mov" %}
