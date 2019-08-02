@@ -7,6 +7,4 @@ This site is currently under construction and will be more exciting soon (I know
 
 In the mean time, enjoy these wild elephants having a splash
 
-![]({{"/images/elephants.mov"|absolute_url}})
-
 ![]({{"/images/elephants.png"|absolute_url}})
