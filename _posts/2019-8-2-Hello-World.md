@@ -10,3 +10,7 @@ In the mean time, enjoy these wild elephants having a splash
 {% include figure.html src="/images/Beachphoto.png" %}
 
 ![Elephants at Udawalawe National Park, Sri Lanka](https://amyquinton.github.io/images/elephants.mov)
+
+![Some text]({{https://amyquinton.github.io}}/images/Beachphoto.png)
+
+<img itemprop="image" class="img-rounded" src="{{ https://amyquinton.github.io }}/images/Beachphoto.png" alt="Tush Chen">
