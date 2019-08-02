@@ -13,4 +13,4 @@ In the mean time, enjoy these wild elephants having a splash
 
 ![Some text]({{https://amyquinton.github.io}}/images/elephants.mov)
 
-<img itemprop="image" class="img-rounded" src="{{ https://amyquinton.github.io }}/images/Beachphoto.png" alt="Tush Chen">
+<img itemprop="image" class="img-rounded" src="{{ https://amyquinton.github.io }}/images/elephants.mov" alt="Tush Chen">
