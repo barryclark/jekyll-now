@@ -11,6 +11,4 @@ In the mean time, enjoy these wild elephants having a splash
 
 ![Elephants at Udawalawe National Park, Sri Lanka](https://amyquinton.github.io/images/elephants.mov)
 
-![Some text]({{https://amyquinton.github.io}}/images/elephants.mov)
-
-<img itemprop="image" class="img-rounded" src="{{ https://amyquinton.github.io }}/images/elephants.mov" alt="Tush Chen">
+![Some text]({{https://amyquinton.github.io}}/images/Beachphoto.png)
