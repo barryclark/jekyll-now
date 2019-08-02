@@ -17,14 +17,11 @@ permalink: /workforce
     <span class="header-description">Android app</span>
 </h1>
 
-<section>
-    <p>Workforce makes it easy for organizations to coordinate assignments to-do from the back office to the field. Using your device, receive assignments in the field, report progress, call for assistance and much more.</p>
-</section>
+Workforce makes it easy for organizations to coordinate assignments to-do from the back office to the field. Using your device, receive assignments in the field, report progress, call for assistance and much more.
 
-<section>
-    <h2>Goals</h2>
-    <p>Explorer set a baseline precedent for how our field apps should look and feel. Workforce's usability needs to hit that bar and continue to increase it. We want to improve the information hierarchy so long lists are less daunting and easier to parse. Lastly, we want to spend some time in the field improving our understanding of how people complete their work.</p>
-</section>
+
+## Goals
+Explorer set a baseline precedent for how our field apps should look and feel. Workforce's usability needs to hit that bar and continue to increase it. We want to improve the information hierarchy so long lists are less daunting and easier to parse. Lastly, we want to spend some time in the field improving our understanding of how people complete their work.
 
 <a target="_blank" href="https://www.justinvelgos.com/">Justin Velgos</a> (iOS) and I (Android) are currently redesigning this app. In the meantime, read more about what it is, who uses it, and why.
 

@@ -75,15 +75,15 @@ p {
 		color: #FFF;
 		font-weight: 500;
 	}
-
-	strong { font-weight: bold; }
 }
+
+strong { font-weight: bold; }
 
 section { margin-bottom: 64px; }
 
 hr {
 	border: 0.5px solid $color--divider;
-	margin: 32px 0;
+	margin: 64px 0;
 }
 
 .subtitle {
@@ -300,10 +300,15 @@ hr {
 	list-style-type: initial;
 	
 	span { display: block; }
+
 	li { margin-left: 1em; }
 }
 
-.projects ul { margin-bottom: 64px; }
+.projects ul { 
+	margin-bottom: 64px; 
+	
+	li:not(:last-child) { margin-bottom: 16px; }
+}
 
 footer {
   margin: 48px 0;
