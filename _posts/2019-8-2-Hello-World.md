@@ -9,4 +9,4 @@ In the mean time, enjoy these wild elephants having a splash
 
 {% include figure.html src="/images/Beachphoto.png" %}
 
-![Elephants at Udawalawe National Park]({{https://amyquinton.github.io}}/images/Elephants.png)
+![Elephants at Udawalawe National Park]({{https://amyquinton.github.io}}/images/elephants.png)
