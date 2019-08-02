@@ -1,0 +1,14 @@
+{% capture full_url %}{{ include.src | absolute_url }}{% endcapture %}
+<figure>
+    <a href="{{ full_url }}">
+        <img
+          class="lozad"
+          data-src="{{ full_url }}"
+          alt="{% if include.alt == blank %}{{ include.caption }}{% else %}{{ include.alt }}{% endif %}" />
+    </a>
+    {% if include.caption != blank %}
+    <figcaption>
+    {{ include.caption }}
+    </figcaption>
+    {% endif %}
+</figure>
