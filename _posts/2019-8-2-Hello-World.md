@@ -9,6 +9,4 @@ In the mean time, enjoy these wild elephants having a splash
 
 {% include figure.html src="/images/Beachphoto.png" %}
 
-![Elephants at Udawalawe National Park, Sri Lanka](https://amyquinton.github.io/images/elephants.mov)
-
-![Some text]({{https://amyquinton.github.io}}/images/Beachphoto.png)
+![Elephants at Udawalawe National Park]({{https://amyquinton.github.io}}/images/Elephants.png)
