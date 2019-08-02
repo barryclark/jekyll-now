@@ -7,6 +7,10 @@ This site is currently under construction and will be more exciting soon (I know
 
 In the mean time, enjoy these wild elephants having a splash
 
-{% include figure.html src="/images/Beachphoto.png" %}
-
 ![Elephants at Udawalawe National Park]({{https://amyquinton.github.io}}/images/elephants.png)
+
+![]({{"/images/elephants.mov"|absolute_url}})
+
+![Amy at the beach]({{https://amyquinton.github.io}}/images/Beachphoto.png)
+
+![]({{"/images/elephants.png"|absolute_url}})
