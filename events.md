@@ -19,7 +19,7 @@ October 2 - 3:  OpenInfraDays Nordics, Stockholm
 * **Keynote**
 
 October 8:  Cloud Native Revolution, Philadelphia
-* **Keynote**
+* **Keynote: Cloud native past, present and future**
 
 October 19 - 20:  OggCamp, Manchester
 * **Stopping Brexit with data science**
