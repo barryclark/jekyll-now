@@ -7,4 +7,4 @@ This site is currently under construction and will be more exciting soon (I know
 
 In the mean time, enjoy these wild elephants having a splash
 
-{% include figure.html src="/images/elephants.mov" %}
+{% include figure.html src="/images/Beachphoto.png" %}
