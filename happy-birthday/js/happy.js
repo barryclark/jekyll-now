@@ -55,7 +55,7 @@ let cHead = new Zdog.RoundedRect({
   fill:true,
   translate:{y:-120}
 })
-let rightEye = new Zdog.Anchor({
+let rightEye = new Zdog.Group({
   addTo:cHead,
   translate:{z:50,y:-25,x:35}
 })
@@ -67,18 +67,19 @@ let cRightEye = new Zdog.Ellipse({
 })
 let cPupil = new Zdog.Ellipse({
   addTo:rightEye,
-  diameter:15,
-  stroke:15,
+  diameter:25,
+  stroke:5,
   color:'#000',
   translate:{z:10},
   fill:true,
 })
 let cGlare = new Zdog.Ellipse({
   addTo:rightEye,
-  diameter:5,
-  stroke:10,
+  diameter:15,
+  stroke:0,
+  fill:true,
   color:'#fff',
-  translate:{x:10,y:-10,z:10}
+  translate:{x:8,y:-10,z:10}
 })
 rightEye.copyGraph({
   translate:{z:50,y:-25,x:-35}
