@@ -60,7 +60,7 @@ mkdir /var/lib/docker/pihole-unbound && cd /var/lib/docker/pihole-unbound
 git clone https://github.com/chriscrowe/docker-pihole-unbound
 ```
 
-*Now comes the configuration. Once that is complete it should be as simple as running 1 command.*
+	*Now comes the configuration. Once that is complete it should be as simple as running 1 command.*
 
 7. Open the "docker-compose.yaml file
 ```
@@ -90,15 +90,16 @@ cd ../..
 sudo docker-compose up -d
 ```
 
-With that final command you should have an operating instance of PiHole and unbound on their own IP addresses. You can check the progress of the building of these containers using the command
+	With that final command you should have an operating instance of PiHole and unbound on their own IP addresses. You can check the progress of the building of these containers using the command
 ```
 sudo docker ps
 ```
 
-When you see healthy displaying next to each container you know they are running correctly. If you do not see healthy, look back through the steps above and ensure you have not missed any stages. Also check that your IP addresses were free.
+	When you see healthy displaying next to each container you know they are running correctly. If you do not see healthy, look back through the steps above and ensure you have not missed any stages. Also check that your IP addresses were free.
 
-Now you can visit your PiHole at the IP address you gave it. Default is 192.168.1.5/admin. This should show you a nice fresh PiHole desktop. You can go and add new blocklists. Import a teleporter file from you last PiHole and all the usual. 
-We have one final thing we need to do to secure your PiHole configuration. Add a password. 
+	Now you can visit your PiHole at the IP address you gave it. Default is 192.168.1.5/admin. This should show you a nice fresh PiHole desktop. You can go and add new blocklists. Import a teleporter file from you last PiHole and all the usual. 
+
+	We have one final thing we need to do to secure your PiHole configuration. Add a password. 
 
 14. Execute the command to get into the PiHole containers shell
 ```
