@@ -41,30 +41,30 @@ So now for the installation steps themselves:
 2. Set up Raspbian securely. Including creating a new user, changing the default password, setting "sudo" to require a password every time, setting up a firewall and Fail2Ban and more ([Steps Here](https://www.raspberrypi.org/documentation/configuration/security.md)
 
 3. Install Docker to the pi using the following command
- 
-```curl -sSL https://get.docker.com | sh
+```
+curl -sSL https://get.docker.com | sh
 ```
 
 4. Install Docker Compose using the following command 
-
-```apt-get install docker-compose
+```
+apt-get install docker-compose
 ```
 
 5. Go to the docker folder on your Pi and create a new directory with this command
-
-```mkdir /var/lib/docker/pihole-unbound && cd /var/lib/docker/pihole-unbound
+```
+mkdir /var/lib/docker/pihole-unbound && cd /var/lib/docker/pihole-unbound
 ```
 
 6. Clone the docker-pihole-unbound repository with git
-
-```git clone https://github.com/chriscrowe/docker-pihole-unbound
+```
+git clone https://github.com/chriscrowe/docker-pihole-unbound
 ```
 
 *Now comes the configuration. Once that is complete it should be as simple as running 1 command.*
 
 7. Open the "docker-compose.yaml file
-
-```nano docker-compose.yaml
+```
+nano docker-compose.yaml
 ```
 
 8. Edit the line "parent: ovs\_eth1" to "parent: eth0" if you are using a wired connection. If you are using a wireless connection please run the command "ifconfig" and take the name of the wireless input and replace "eth0" with it.
@@ -74,25 +74,25 @@ So now for the installation steps themselves:
 9. Edit the "IPv4\_address" line, the "ServerIP" and the "ip\_range" to fit with your network (Unless you have set static IP addresses in your network and already have 192.168.1.5/6 in use. The default configuration should work without editing.)
 
 10. Open the secondary/backup DNS file 
-
-```nano pihole/config/resolv.conf
+```
+nano pihole/config/resolv.conf
 ```
 
 11. Change the line "nameserver 192.168.1.13 # secondary Pi-Hole or DNS server" to a backup pi or DNS provider. I simply changed mine to "nameserver 1.1.1.1", this uses Cloudflare if my PiHole stops working.
 
 12. Change directory back to the compose file
-
-```cd ../..
+```
+cd ../..
 ```
 
 13. Execute the command
-
-```sudo docker-compose up -d
+```
+sudo docker-compose up -d
 ```
 
 With that final command you should have an operating instance of PiHole and unbound on their own IP addresses. You can check the progress of the building of these containers using the command
-
-```sudo docker ps
+```
+sudo docker ps
 ```
 
 When you see healthy displaying next to each container you know they are running correctly. If you do not see healthy, look back through the steps above and ensure you have not missed any stages. Also check that your IP addresses were free.
@@ -101,20 +101,20 @@ Now you can visit your PiHole at the IP address you gave it. Default is 192.168.
 We have one final thing we need to do to secure your PiHole configuration. Add a password. 
 
 14. Execute the command to get into the PiHole containers shell
-
-```docker exec -it pihole bash
+```
+docker exec -it pihole bash
 ```
 
 16. Execute the command and follow the instructions to set the password
-
-```pihole -a -p
+```
+pihole -a -p
 ```
 
 That's it, you should be complete and have an up and running secure PiHole and Unbound instance. 
 
 You can test this config with dig
-
-```dig google.com @192.168.1.5 
+```
+dig google.com @192.168.1.5 
 # Expecting "status: NOERROR"
 ```
 
