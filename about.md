@@ -19,7 +19,6 @@ London meetup](https://www.meetup.com/Cloud-Native-London) for the London commun
 ## Background
 
 <div class="about-logos">
-  <a href="https://storageos.com/"><img src="/assets/storageos.svg"></a>
   <a href="https://www.google.com/"><img src="/assets/google.png"></a>
   <a href="https://www.cam.ac.uk/"><img src="/assets/cambridge.jpg"></a>
 </div>
