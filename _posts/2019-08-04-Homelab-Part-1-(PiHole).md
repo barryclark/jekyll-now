@@ -3,12 +3,12 @@ layout: post
 title: Homelab Part 1 (PiHole)
 ---
 
-This series is going to document my first serious look into homelabbing. I have been doing little bits here and there over the past few years. Automating this, hosting that, trying so many times and never quite succeding to create a VPN into my home network. Over these years I have always had one thing holding me back. I have not been on my own network. I have been sharing one with lots of other people, which meant breaking things was not an option really. I'm pretty sure without breaking a lot of things, I cannot get this to work.
+This series is going to document my first serious look into home-labbing. I have been doing little bits here and there over the past few years. Automating this, hosting that, trying so many times and never quite succeeding to create a VPN into my home network. Over these years I have always had one thing holding me back. I have not been on my own network. I have been sharing one with lots of other people, which meant breaking things was not an option really. I'm pretty sure without breaking a lot of things, I cannot get this to work.
 
-So here I am, finally with my own network. A strange network running off a Three unlimited data phone plan plugged into an OpenWRT Archer C7, but my network still. In the future in a prologue I will go into how I made the first section work, that was hard enough. But for now, I am going to talk about my first addition to the lab, one that it appears many people start with and the most clear to me for its benifits and ease of set up. PiHole.
+So here I am, finally with my own network. A strange network running off a Three unlimited data phone plan plugged into an OpenWRT Archer C7, but my network still. In the future in a prologue I will go into how I made the first section work, that was hard enough. But for now, I am going to talk about my first addition to the lab, one that it appears many people start with and the most clear to me for its benefits and ease of set up. PiHole.
 
 The hardware I used:
-* Raspberry Pi (I used the 3b as this was what I had although I have heard it works pefectly on a Pi Zero)
+* Raspberry Pi (I used the 3b as this was what I had although I have heard it works perfectly on a Pi Zero)
 * An SD Card
 
 The software I used:
@@ -18,21 +18,21 @@ The software I used:
 * Macvlan networks (https://docs.docker.com/network/macvlan/)
 * Git (apt-get install git)
 
-Now I am not a complete noob with Pihole, I have been running it for the past couple of months with little to no hassle. It really is as simple as it looks, which is the brilliance of it as a first project.
+Now I am not a complete noob with PiHole, I have been running it for the past couple of months with little to no hassle. It really is as simple as it looks, which is the brilliance of it as a first project.
 
 For those of you that have not heard of this before, here is a simple explanation of PiHole. A device sits between your computer and the internet and intercepts DNS traffic. It looks at these requests and compares them to lists it has been provided. If it decides this request is risky. They are trackers, ads or other malsites. They will not be forwarded to the internet and therefore will essentially be blocked.
 
-Pihole has actually been working fantastic for me recently. I have it cranked up to a very high level of blocking as I am the only person who uses my network and I find it interesting seeing where all my traffic is going. I currently get around 60% blocking without seeing any interuptions to my internet use.
+PiHole has actually been working fantastic for me recently. I have it cranked up to a very high level of blocking as I am the only person who uses my network and I find it interesting seeing where all my traffic is going. I currently get around 60% blocking without seeing any interruptions to my internet use.
 
-![Pihole Dash](https://raw.githubusercontent.com/RemakingEden/mysite/master/images/posts/homelab/piholeDash.png)
+![PiHole Dash](https://raw.githubusercontent.com/RemakingEden/mysite/master/images/posts/homelab/piholeDash.png)
 
-My only issue is that I have had this instance of Raspbian (The operating system) going for over a year now. I created my [Ski Lodge Python Project](https://remakingeden.github.io/mysite/python_ski_lodge/) on it and have messed around with countless other things. This leads to dependancies all over the place and makes it very hard to know what is on the RaspberryPi and why certain updates/changes do not work.
+My only issue is that I have had this instance of Raspbian (The operating system) going for over a year now. I created my [Ski Lodge Python Project](https://remakingeden.github.io/mysite/python_ski_lodge/) on it and have messed around with countless other things. This leads to dependencies all over the place and makes it very hard to know what is on the Raspberry Pi and why certain updates/changes do not work.
 
 Enter... Docker. I had a vague understanding of docker however it took this video to really make it clear to me why I would want to use it.
 
 [![Docker Tutorial](https://raw.githubusercontent.com/RemakingEden/mysite/master/images/posts/homelab/docker.jpg)](https://www.youtube.com/watch?v=pGYAg7TMmp0)
 
-It keeps all the dependancies to itself in its own container and allows Raspbian to stay its raw self. Available for me to mutate and mess up later.
+It keeps all the dependencies to itself in its own container and allows Raspbian to stay its raw self. Available for me to mutate and mess up later.
 
 So now for the installation steps themselves:
 
@@ -72,7 +72,7 @@ nano docker-compose.yaml
 nano pihole/config/resolv.conf
 ```
 
-11. Change the line "nameserver 192.168.1.13 # secondary Pi-Hole or DNS server" to a backup pi or DNS provider. I simply changed mine to "nameserver 1.1.1.1", this uses Cloudflare if my pihole stops working.
+11. Change the line "nameserver 192.168.1.13 # secondary Pi-Hole or DNS server" to a backup pi or DNS provider. I simply changed mine to "nameserver 1.1.1.1", this uses Cloudflare if my PiHole stops working.
 
 12. Change directory back to the compose file
 ```
@@ -84,16 +84,16 @@ cd ../..
 sudo docker-compose up -d
 ```
 
-With that final command you should have an operating instance of pihole and unbound on their own IP addresses. You can check the progress of the building of these containers using the command
+With that final command you should have an operating instance of PiHole and unbound on their own IP addresses. You can check the progress of the building of these containers using the command
 ```
 sudo docker ps
 ```
-When you see healthy displaying next to each container you know they are running correctly. If you do not see healthly, look back through the steps above and ensure you have not missed any stages. Also check that your IP addresses were free.
+When you see healthy displaying next to each container you know they are running correctly. If you do not see healthy, look back through the steps above and ensure you have not missed any stages. Also check that your IP addresses were free.
 
-Now you can visit your pihole at the ip address you gave it. Default is 192.168.1.5/admin. This should show you a nice fresh pihole desktop. You can go and add new blocklists. Import a teleporter file from you last pihole and all the usual. 
-We have one final thing we need to do to secure your pihole configuration. Add a password. 
+Now you can visit your PiHole at the IP address you gave it. Default is 192.168.1.5/admin. This should show you a nice fresh PiHole desktop. You can go and add new blocklists. Import a teleporter file from you last PiHole and all the usual. 
+We have one final thing we need to do to secure your PiHole configuration. Add a password. 
 
-14. Execute the command to get into the pihole containers shell
+14. Execute the command to get into the PiHole containers shell
 ```
 docker exec -it pihole bash
 ```
@@ -103,7 +103,7 @@ docker exec -it pihole bash
 pihole -a -p
 ```
 
-Thats it, you should be complete and have an up and running secure Pihole and Unbound instance. 
+That's it, you should be complete and have an up and running secure PiHole and Unbound instance. 
 
 You can test this config with dig
 ```
@@ -111,7 +111,7 @@ dig google.com @192.168.1.5
 # Expecting "status: NOERROR"
 ```
 
-If everything is working then you need to add the IP address of your pihole container (Default 192.168.1.5) to your DNS entry in your router or your device and watch the ads and trackers get blocked.
+If everything is working then you need to add the IP address of your PiHole container (Default 192.168.1.5) to your DNS entry in your router or your device and watch the ads and trackers get blocked.
 
 For blocklists I highly recommend [Wally3k](https://v.firebog.net/hosts/lists.php) and [The Block List Project](https://tspprs.com/).
 
