@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Homelab Part 1 (PiHole)
+title: Homelab Part 1 - PiHole
 ---
 
 This series is going to document my first serious look into home-labbing. I have been doing little bits here and there over the past few years. Automating this, hosting that, trying so many times and never quite succeeding to create a VPN into my home network. Over these years I have always had one thing holding me back. I have not been on my own network. I have been sharing one with lots of other people, which meant breaking things was not an option really. I'm pretty sure without breaking a lot of things, I cannot get this to work.
