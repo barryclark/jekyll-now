@@ -60,8 +60,9 @@ mkdir /var/lib/docker/pihole-unbound && cd /var/lib/docker/pihole-unbound
 git clone https://github.com/chriscrowe/docker-pihole-unbound
 ```
 
-	*Now comes the configuration. Once that is complete it should be as simple as running 1 command.*
+*Now comes the configuration. Once that is complete it should be as simple as running 1 command.*
 
+{:start="7"}
 7. Open the "docker-compose.yaml file
 ```
 nano docker-compose.yaml
@@ -71,6 +72,7 @@ nano docker-compose.yaml
 
 *This whole setup uses ([macvlan networks](https://docs.docker.com/network/macvlan/)) which allow the pi to use the same ports multiple times which is important with something that uses as many ports as the pihole. It does this by essentially creating new devices within your pi which need their own IP address. You can read more about it in the link above.*
 
+{:start="9"}
 9. Edit the "IPv4\_address" line, the "ServerIP" and the "ip\_range" to fit with your network (Unless you have set static IP addresses in your network and already have 192.168.1.5/6 in use. The default configuration should work without editing.)
 
 10. Open the secondary/backup DNS file 
@@ -101,12 +103,13 @@ sudo docker ps
 
 	We have one final thing we need to do to secure your PiHole configuration. Add a password. 
 
+{:start="14"}
 14. Execute the command to get into the PiHole containers shell
 ```
 docker exec -it pihole bash
 ```
 
-16. Execute the command and follow the instructions to set the password
+15. Execute the command and follow the instructions to set the password
 ```
 pihole -a -p
 ```
