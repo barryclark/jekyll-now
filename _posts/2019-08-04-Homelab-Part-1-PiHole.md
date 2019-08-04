@@ -70,24 +70,26 @@ nano docker-compose.yaml
 
 8. Edit the line "parent: ovs\_eth1" to "parent: eth0" if you are using a wired connection. If you are using a wireless connection please run the command "ifconfig" and take the name of the wireless input and replace "eth0" with it.
 
+9. Edit the line "mvance/unbound:latest" to "mvance/unbound-rpi:latest". This gets unbound to work correctly on the Raspberry Pi.
+
 *This whole setup uses ([macvlan networks](https://docs.docker.com/network/macvlan/)) which allow the pi to use the same ports multiple times which is important with something that uses as many ports as the pihole. It does this by essentially creating new devices within your pi which need their own IP address. You can read more about it in the link above.*
 
-{:start="9"}
-9. Edit the "IPv4\_address" line, the "ServerIP" and the "ip\_range" to fit with your network (Unless you have set static IP addresses in your network and already have 192.168.1.5/6 in use. The default configuration should work without editing.)
+{:start="10"}
+10. Edit the "IPv4\_address" line, the "ServerIP" and the "ip\_range" to fit with your network (Unless you have set static IP addresses in your network and already have 192.168.1.5/6 in use. The default configuration should work without editing.)
 
-10. Open the secondary/backup DNS file 
+11. Open the secondary/backup DNS file 
 ```
 nano pihole/config/resolv.conf
 ```
 
-11. Change the line "nameserver 192.168.1.13 # secondary Pi-Hole or DNS server" to a backup pi or DNS provider. I simply changed mine to "nameserver 1.1.1.1", this uses Cloudflare if my PiHole stops working.
+12. Change the line "nameserver 192.168.1.13 # secondary Pi-Hole or DNS server" to a backup pi or DNS provider. I simply changed mine to "nameserver 1.1.1.1", this uses Cloudflare if my PiHole stops working.
 
-12. Change directory back to the compose file
+13. Change directory back to the compose file
 ```
 cd ../..
 ```
 
-13. Execute the command
+14. Execute the command
 ```
 sudo docker-compose up -d
 ```
@@ -103,13 +105,13 @@ sudo docker ps
 
 	We have one final thing we need to do to secure your PiHole configuration. Add a password. 
 
-{:start="14"}
-14. Execute the command to get into the PiHole containers shell
+{:start="15"}
+15. Execute the command to get into the PiHole containers shell
 ```
 docker exec -it pihole bash
 ```
 
-15. Execute the command and follow the instructions to set the password
+16. Execute the command and follow the instructions to set the password
 ```
 pihole -a -p
 ```
