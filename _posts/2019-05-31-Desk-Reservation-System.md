@@ -5,27 +5,26 @@ excerpt_separator: <!--more-->
 tags: [opencv, spring, hackathon]
 ---
 
-## Chit-chatting 
+##  
 
-![Slack](../images/searching-slack/pankaj-patel-642856-unsplash.jpg)
-> Photo by Pankaj Patel on Unsplash
-
-Late adopter as I am, I have been using it both in a geographically distributed startup as well as
-I have been using [Slack][1] quite a lot this last year for my day-to-day work.  
-a tightly knit mature company. 
-
-In both cases, it is a force multiplier.
-
-The benefits it brings are [pretty][2] [well][3] [documented][4] and I will not go over them here.
-
-What I will cover is how to easily utilize [Slack's API][5] for historical data processing.   
+.   
 <!--more-->
 
 ## 
 
+Detect image 
+
 https://docs.opencv.org/trunk/d4/dc6/tutorial_py_template_matching.html
 
 https://stackoverflow.com/questions/21829469/removing-or-preventing-duplicate-template-matches-in-opencv-with-python
+
+OAuth
+https://www.callicoder.com/spring-boot-security-oauth2-social-login-part-1/
+https://www.callicoder.com/spring-boot-security-oauth2-social-login-part-2/
+https://www.callicoder.com/spring-boot-security-oauth2-social-login-part-3/
+
+https://github.com/callicoder/spring-boot-react-oauth2-social-login-demo
+
 
 
 SVG
@@ -41,14 +40,23 @@ Image map
 https://html.com/images/how-to-make-an-image-map/
 https://en.wikipedia.org/wiki/Image_map
 
+
+curl https://start.spring.io/starter.tgz \
+  -d groupId=com.affinitycrypto.desking \
+  -d artifactId=desk-information-service \
+  -d version=0.0.1-SNAPSHOT \
+  -d name=DeskInformation \
+  -d description='Desk Information service' \
+  -d packageName=com.affinitycrypto.desking.info \
+  -d dependencies=web,h2,data-jpa,security,oauth2-client \
+  -d language=kotlin \
+  -d type=maven-project \
+  -d baseDir=desk-finder \
+  | tar -xzvf -
+
 ## Parting thought
 
-![Doctor](../images/searching-slack/neonbrand-258972-unsplash.jpg)
-> Photo by NeONBRAND on Unsplash
-
-Slack is a versatile and mature communication tool.  
-Its open API and large number of apps and integrations allow for some extremely interesting use cases 
-even on the free plan.   
+ 
 
 
 
