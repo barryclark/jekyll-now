@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am a Computer Science graduate student from Rochester Institute of Technology (RIT). At RIT, I worked on deep learning projects with professor [Ray Ptucha](https://people.rit.edu/rwpeec/). I have 2.5 years work experience in applied machine learning and deep learning. Previously, I have worked with two startups Teradeep and Nirveda Cognition and currently I am at Center for Deep Learning in Electronics Manufacturing [CDLe](https://cdle.ai/). 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[suhas.callin@gmail.com](suhas.callin@gmail.com)
