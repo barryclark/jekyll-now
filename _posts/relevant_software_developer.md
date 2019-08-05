@@ -20,7 +20,7 @@ How
 
 So how to tackle this important task: in my mind it's an ongoing way of life, like a doctor that reads a medical journals, goes to medical conventions, checks out his colleagues' work and more (a lot more) so we need to always practice it and it will become or inspire a very interesting part of your work. After a bit of philosophy let's get down to the specifics:
 
-* General curiosity - grandfather saying "always learn when someone is helping you". always ask why, do take things as there is. Explore always when given a task to do, look to your right and left. Your colleagues (discussions, reviews to you and to them)
+* General curiosity - My grandfather always said "always learn when someone is helping you". Always ask why, do not take things as they are. Explore always when given a task to do, look to your right and left. Your colleagues (discussions, reviews to you and to them)
 * Share knowledge, *always with everyone*, you can be surprised when you're wrong (What?! NO..) or out of date, use the time the other people spent in exploring those topics. And even you are correct and out of date that will give some practice in convoying ideas and being a leader.
 * *GitHub explore* - I like to check weekly (or when I remember) the [trending projects](https://github.com/trending) in the languages I use currently or interested in, and I look for cool new projects that trends in the open source community (the wisdom of the masses). I think this is a very fun and easy way of finding currently relevant projects and more specially inspiration for future projects.  
 * Articles feeds
