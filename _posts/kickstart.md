@@ -42,7 +42,7 @@ The concept of a holophrase caught my attention about a year ago, and I've been 
 
 Oh man, you didn't actually think you were gonna get out of here without an emotional hook, did you?
 
-When I was 4 years old, I went and sat down at the family piano, and asked my mom (who was a piano teacher) to teach me how to play. I spent the next 14 years honing my craft, and eventually became one of the best under-18 piano players in the state of Iowa. I also picked up drums & percussion, bass, and guitar along the way as well. I was a 2-time All-State percussionist, and entered college as a music education major. While that didn't pan out for me (got bit by the injury bug), music has never left my blood.
+When I was 4 years old, I went and sat down at the family piano, and asked my mom (who was a piano teacher) to teach me how to play. I spent the next 14 years honing my craft, and eventually became one of the best under-18 piano players in the state of Iowa. I also picked up drums & percussion, bass, and guitar along the way as well. I was a 2-time All-State percussionist, and entered college as a music education major. While that didn't pan out for me ([got bit by the injury bug][rerouting]), music has never left my blood.
 
 In the fall of 2012, while in the midst of recording my first EP *Sailing*, my mom was diagnosed with cancer. I rushed to finish it, because I wanted her to be able to hear what I had done.
 
@@ -60,4 +60,5 @@ So yeah. The Kickstarter is live, and will run until August 23rd. I'm so excited
 [headerImg]: IMGURL "The Music Plays You - Holophrase"
 [kickstarter]: https://www.kickstarter.com/projects/themusicplaysyou/holophrase
 [kickstart]: https://youtu.be/CmXWkMlKFkI?t=28
+[rerouting]: http://niclake.me/rerouting/
 [foundation]: https://soundcloud.com/themusicplaysyou/anchor-yourself-foundation-demo-2
