@@ -37,7 +37,7 @@ window._env_ = {
 
 If we are able to generate an `env-config.js` file at startup that evaluates our environment variables, then we can include that file in our `index.html` file. Thanks to [this hack from Krunoslav Banovac](https://www.freecodecamp.org/news/how-to-implement-runtime-environment-variables-with-create-react-app-docker-and-nginx-7f9d42a91d70/) a simple shell script can do that for us.
 
-I created a simple Docker image with an [entrypoint](https://github.com/dmetzler/html-docker-package/blob/7b6e3c2a36ad9fd3eb4f29be75aafe3257d922ea/entrypoint.sh) that embeds that mechanism. At the end the entrypoint take the resulting directory and moves it to a destination volume or synce it with a S3 bucket. A usable docker-compose file would then become:
+I created a simple Docker image with an [entrypoint](https://github.com/dmetzler/html-docker-package/blob/7b6e3c2a36ad9fd3eb4f29be75aafe3257d922ea/entrypoint.sh) that embeds that mechanism. In the end, the entrypoint take the resulting directory and moves it to a destination volume or synce it with a S3 bucket. A usable docker-compose file would then become:
 
 ```yaml
 version: '3'
@@ -63,7 +63,7 @@ volumes:
 
 The entrypoint will move the static files (with our evaluated `env-config.js`) to a common volume between our image and the NGinx container.
 
-What I like in this solution, is that the developer just takes care of the application and not how it isserved. The DevOps can then choose its preferred way to deploy the application: NGinx, Apache or S3. For instance, to deploy our application on an S3 bucket, we just need to run:
+What I like in this solution, is that the developer just takes care of the application and not how it is served. The DevOps can then choose its preferred way to deploy the application: NGinx, Apache or S3. For instance, to deploy our application on an S3 bucket, we just need to run:
 
 
 ```console
@@ -136,7 +136,7 @@ Thanks to some go features we are also able to locally serve the content of our 
 2019/07/25 20:31:42 [INFO] Listening for connection on port :8080
 ```
 
-# Conlusion
+# Conclusion
 
 In this post, I adapted a solution to package an application in a distroless Docker image that allows the configuration on environment variables at runtime.
 I coded the Go-Deploy tool very (very) quickly in order to replace all the external tooling (shell and `aws-cli`), which allows the distroless image to be very small (21.4MB).
