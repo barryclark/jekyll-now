@@ -105,9 +105,7 @@ set a default region, if they ask application name, give it a name. For the firs
 
 2.4 Use python, 3.6 (which is default)
 
-{% highlight python %}
 2.5 Do not set up SSH
-{% endhighlight %}
 
 Now you have created a directory. To deploy an app
 
@@ -117,7 +115,7 @@ Now you have created a directory. To deploy an app
 eb create
 {% endhighlight %}
 
-enter the environment name, and DNS NAME. select a load-balancer type (use 2 which is a default for application)
+enter the environment name (for example your-environment-name), and DNS NAME. select a load-balancer type (use 2 which is a default for application)
 
 If the work is sucessfull, you will see the result in the updated webapp.
 
@@ -145,7 +143,7 @@ eb terminate
 
 
 # Work Cited
-1. [AWS has a good resource on FLASK webapp](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html) I
+1. [AWS has a good resource on FLASK webapp](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)
 2. [another good blog post very easy to read](https://medium.com/@korniichuk/dash-on-aws-44a0f50a030a)
 3. [my code I used for making the webapp](https://github.com/VincentK1991/Streeteasy_dashboard_aws)
 4. [how to upload and read your csv file from googlesheet](https://www.megalytic.com/knowledge/using-google-sheets-to-host-editable-csv-files)
