@@ -23,7 +23,7 @@ img.apps {border-radius:27px;max-width:153px;}
 .cover h2 {letter-spacing: -0.001em;line-height: 1.2em;font-weight: normal ;font-size: 1em !important;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
-
+.cover-justify em a {background:transparent!important;margin-bottom:1em;}
 #page-main.darkmode {background: var(--color-white);}
 #page-main.darkmode em a {background: #111;}
 
