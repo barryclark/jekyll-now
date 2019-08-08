@@ -66,7 +66,7 @@ Noted also that this approach requires spliting the dataset into the training se
 
 # What does the tree look like? 
 
-![Figure 3]({{ site.baseurl }}/images/test_example2.pdf "causal tree")
+![Figure 3]({{ site.baseurl }}/images/graph_heterogenous_effect.png "causal tree")
 <p align="center">
     <font size="2"><b>Figure 3.</b> A tree diagram estimating the probability of recovery. The decision rules as well as the mean squared error are shown. The "value" refers to probability of recovery. </font>
 </p>
