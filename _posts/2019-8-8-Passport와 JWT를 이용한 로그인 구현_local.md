@@ -62,9 +62,9 @@ passport.use(
 
 ### users 라우터 작성
 
-`/users/signin` 엔드포인트로 로그인을 하도록 작성했다. 이전에 작성한 passport 쪽 로그인 로직을 통해 user가 없거나, 비밀번호가 일치하지 않으면 `user = false` 값이 전달될 것이다. user 값이 있다면 이를 이용하여 token을 형성하여 front로 token을 전달하는 로직이다.
-
+`/users/signin` 엔드포인트로 로그인을 하도록 작성했다.
 `passport.authenticate("local", )`을 통해 이전에 작성한 passport 미들웨어 중, 'local'에 해당하는 미들웨어를 사용할 수 있다.
+로그인에 성공한다면, token을 형성하여 프론트 엔드로 userToken을 전달한다.
 
 ```javascript
 var express = require("express");
