@@ -7,4 +7,5 @@ ErrorDocument 404 /404.html
 
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
+RedirectMatch 301 ^(.*)$ http://isardmiralles.com
 
