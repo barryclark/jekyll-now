@@ -33,6 +33,7 @@ const { Users } = require("../models");
 const crypto = require("crypto");
 
 passport.use(
+  "local",
   new LocalStrategy(
     {
       usernameField: "email",
