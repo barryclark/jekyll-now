@@ -25,6 +25,8 @@ $ yarn add passport passport-local passport-jwt jsonwebtoken
 passport 디렉토리를 만들고, index.js 파일을 만든다.
 회원가입 시, 비밀번호를 암호화하여 저장하였기 때문에, 저장된 암호화된 비밀번호와, 입력된 비밀번호의 암호화 값이 같은지를 확인하는 내용을 추가하였다.
 
+'local' 계정으로 로그인하는 로직을 작성하고 있기 때문에, `passport.use( "local", new LocalStrategy())`을 활용한다.
+
 ```javascript
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
@@ -61,6 +63,8 @@ passport.use(
 ### users 라우터 작성
 
 `/users/signin` 엔드포인트로 로그인을 하도록 작성했다. 이전에 작성한 passport 쪽 로그인 로직을 통해 user가 없거나, 비밀번호가 일치하지 않으면 `user = false` 값이 전달될 것이다. user 값이 있다면 이를 이용하여 token을 형성하여 front로 token을 전달하는 로직이다.
+
+`passport.authenticate("local", )`을 통해 이전에 작성한 passport 미들웨어 중, 'local'에 해당하는 미들웨어를 사용할 수 있다.
 
 ```javascript
 var express = require("express");
