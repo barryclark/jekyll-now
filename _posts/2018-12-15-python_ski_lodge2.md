@@ -3,7 +3,9 @@ layout: post
 title: Python program for Ski Lodge TV (Part 2)
 ---
 
-This is part 2 of a small series describing the design and build of a Python application for the ski lodges I have worked at for the past few years. For Part one click here.
+This is part 2 of a small series describing the design and build of a Python application for the ski lodges I have worked at for the past few years. 
+
+For Part one click [here](https://jsparkes.com/python_ski_lodge/).
 
 This post will focus on the aim:
 Between certain times in the morning it should show weather, lift status and avalanche web pages on a rotating carousel.
