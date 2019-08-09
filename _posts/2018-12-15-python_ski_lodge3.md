@@ -3,7 +3,10 @@ layout: post
 title: Python program for Ski Lodge TV (Part 3)
 ---
 
-This is part 3 of a small series describing the design and build of a Python application for the ski lodges I have worked at for the past few years. For Part one click here.
+This is part 3 of a small series describing the design and build of a Python application for the ski lodges I have worked at for the past few years. 
+
+For Part one click [here](https://jsparkes.com/python_ski_lodge/).
+
 This post will focus on the aim:
 After a certain time when most guests have left switch to a loop of snow films for the guests left behind.
 To achieve this I wanted to use old faithful VLC media player. I knew it could create looped playlists and play fullscreen. I just needed to figure out how to trigger it with Python.
