@@ -5,9 +5,9 @@ title: Keeping up to date as a software developer
 Introducing.. well me
 ---------------------
 
-I am a professional software developer (or at least employed one ;) ) for about 8 years, and programming in some way for about 17 years. Actually my first programing language was in my mother tongue (Hebrew), surprisingly or not, which was based upon turtle language in a afternoon course in junior high which got me hooked and still going strong.
+I am a professional software developer (or at least an employed one ;) ) for about 8 years, and programming in some way for about 17 years. Actually my first programing language was in my mother tongue (Hebrew), surprisingly or not. Which was based upon the "turtle" language in a afternoon course in my junior high, which got me hooked and still going strong.
 
-So why am I writing this blog, you maybe wondering, it's because one of my most important ideals of sharing my knowledge which ties in my mind very tightly to this blog subject. Which started when I have been asked a couple of times in the past few weeks on how I keep up to date as a developer, so this lead me to reflect on my way with this post. And I am looking forward for the possible followup conversations and to learn something new.
+So why am I writing this blog, you maybe wondering, it's because one of my most important ideal of sharing my knowledge which ties in my mind very tightly to this blog subject. So I have started when I have been asked a couple of times in the past few weeks on how I keep up to date as a developer, that had lead me to reflect on my way with this post. And I am also looking forward for the possible followup conversations to come and to learn how others do it.
 
 Why
 ---
@@ -20,14 +20,28 @@ How
 
 So how to tackle this important task: in my mind it's an ongoing way of life, like a doctor that reads a medical journals, goes to medical conventions, checks out his colleagues' work and more (a lot more) so we need to always practice it and it will become or inspire a very interesting part of your work. After a bit of philosophy let's get down to the specifics:
 
-* General curiosity - My grandfather always said "always learn when someone is helping you". Always ask why, do not take things as they are. Explore always when given a task to do, look to your right and left. Your colleagues (discussions, reviews to you and to them)
-* Share knowledge, *always with everyone*, you can be surprised when you're wrong (What?! NO..) or out of date, use the time the other people spent in exploring those topics. And even you are correct and out of date that will give some practice in convoying ideas and being a leader.
-* *GitHub explore* - I like to check weekly (or when I remember) the [trending projects](https://github.com/trending) in the languages I use currently or interested in, and I look for cool new projects that trends in the open source community (the wisdom of the masses). I think this is a very fun and easy way of finding currently relevant projects and more specially inspiration for future projects.  
+* General curiosity - My grandfather always said "always learn when someone is helping you". Always ask why, do not agree to let knowledge pass you by. Explore always when given a task to do, look to your right and left. Your colleagues (discussions, reviews to you and to them)
+* Share knowledge, *always and with everyone* - If in the course of a discussion, code review or by giving a talk.
+  You may surprise yourself that you're wrong (What?! NO..) or out of date, use the time that other had spent in exploring those topics. And even if you are correct that will give some practice in convoying ideas and being a leader.
+* *GitHub explore* - I very much like to check on weekly basis (or when I am bored) the [trending projects](https://github.com/trending) in particular the languages I use currently or interested in, and I look for cool new projects that are trending in the open source community (the wisdom of the masses).
+I think this is a very fun and easy way of finding currently relevant projects and maybe same inspiration for future projects, if for work or fun purposes.
 * Articles feeds
-* YouTube videos - There are a lot of conventions around the world on a very wide range of topics (from language specific, different fields, frameworks and etc) which make their lectures extremely accessible through filming and posting them to a YouTube channel platform. So this allows on your own time to catchup on probably any topics that you’re interested, this due to this wide abundance. Another great way of finding interesting videos is via following the channel of the companies you wonder how they work (or interested working in), they are actually a collection of videos for conventions the company's people had given.
+* YouTube videos - There are a lot of conventions around the world on a very wide range of topics (from language specific, different fields, frameworks and etc) which make their lectures extremely accessible through filming and posting them to a YouTube channel platform.
+This allows on your own time to catchup on probably any topics that you’re interested, this due to this wide abundance. Another great way of finding interesting videos is via following the channel of the companies you wonder how they work (or interested working in), they are actually a collection of videos for conventions the company's people had given.
 * Podcasts - Like YouTube videos there are a lot from around the world on a very wide range of topics, and this is a great medium because you consume it while on the go with just a pair with headphones. I recommend subscribing to a lot of podcasts, because probably you will not like all the content and it's nice to always have interesting content to listen and also it will give you the same value as GitHub trending (so also an interesting topics to explore without "saving" the time in listening not interesting chapter).
-* Meetups - Because of limited free time or chance I only go to some meetups which are a great source of information and creating connections with your colleagues, so this also very much in line of my ideal of sharing the knowledge. Besides actually going there are two other ways of enjoying that information, one is via meetups that record their sessions and publish on a YouTube channel (which of course is great!!). And the second one is the GitHub trending experience, so subscribe to a lot of meetups and enjoy the trending topics, but *go to meetups* and support the organizers that do this on their on time and without no payment (THANK YOU!!).
+* Meetups - Because of limited free time or chance I only go to some meetups which are a great source of information and creating connections with your colleagues, so this also very much in line of my ideal of sharing the knowledge.
+Besides actually going there are two other ways of enjoying that information, one is via meetups that record their sessions and publish on a YouTube channel (which of course is great!!). And the second one is like the "GitHub trending experience" (trademark pending ;) ), so subscribe to a lot of meetups and enjoy the trending topics, but *go to meetups* and support the organizers that do this on their on time and without no payment (THANK YOU!!).
 * Online courses - Of course they are a great resource of learning, but I think this is out of scope of just "getting up to date" because the main goal is to easily (somewhat easily of course) widen your view and knowledge and not necessarily deep-in. But this is a great next step when you encountered something you found interesting.
+
+Day 0 - So what to do now!?
+---------------------------
+
+Firstly *congrats* on starting this journey, I am sure you will enjoy it and benefit from it.
+"OK so really what do I do now.." so like I mentioned in the passing, a good place to start widening your knowledge is what's relevant today current programing languages, specific areas in computer science like: ML, embedded programing and etc. Something that will benefit you tomorrow, so it will give you the push/kick/drive (I can go on :) ) to continue.
+In regards to the medium, you should chose the one you feel easiest for to stick with it. Like checking out the [GitHub trending page](https://github.com/trending) or going to meetup because you can drag someone with you (hopefully not by force).
+After the first taste of cool new information, the hunger will set in for more sources because you probably will be more curious in a wider scope as you widen your perceptive and knowledge.
+
+I recommend if you learned something interesting, that drove you to read more then source about it *SHARE* it with you colleagues (work, friends and community). You will probably gain a lot from the *discussions* that will arise, that will help you in getting to know about other related issues or even to find out that you did not quiet understood what you read. Use the research that other people worked hard to achieve and give back.
 
 Conclusion
 ----------
