@@ -8,6 +8,10 @@ ErrorDocument 404 /404.html
 ## Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
 
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
+RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
+
 <ifModule mod_gzip.c>
 mod_gzip_on Yes
 mod_gzip_dechunk Yes
@@ -18,8 +22,4 @@ mod_gzip_item_include mime ^application/x-javascript.*
 mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </ifModule>
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
-RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
 
