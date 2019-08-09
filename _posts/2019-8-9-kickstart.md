@@ -30,6 +30,8 @@ My wife and I ran into some unexpected expenses when we moved this past fall, an
 
 Additionally, I learned after releasing my first EP that having someone master my album or create artwork for it should be something I plan from the beginning, and not an 11th hour afterthought. I've already reached out to people and gotten things lined up, and the rest of the funds will go towards that.
 
+![altText][midImg]
+
 ### What does "holophrase" mean?
 
 Let's go back to Wikipedia again! "Holophrasis is the prelinguistic use of a single word to express a complex idea. A holophrase may resemble an interjection, but whereas an interjection is linguistic, and has a specific grammatical function, a holophrase is simply a vocalization memorized by rote and used without grammatical intent."
@@ -57,7 +59,8 @@ After some conversations with a couple of people this summer, that energy has be
 So yeah. The Kickstarter is live, and will run until August 23rd. I'm so excited about this album, and I hope you all are as well. [Any amount helps, even if all you can afford is $1.][kickstarter] Thank you so much for your support, and I cannot wait to share this music with all of you.
 
 
-[headerImg]: IMGURL "The Music Plays You - Holophrase"
+[headerImg]: https://i.imgur.com/nCNlDpp.jpg "The Music Plays You - Holophrase"
+[midImg]: https://imgur.com/A1PGBvT.jpg "The Music Plays You - Holophrase"
 [kickstarter]: https://www.kickstarter.com/projects/themusicplaysyou/holophrase
 [kickstart]: https://youtu.be/CmXWkMlKFkI?t=28
 [rerouting]: http://niclake.me/rerouting/
