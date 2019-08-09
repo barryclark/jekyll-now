@@ -1,5 +1,5 @@
 ---
 permalink: /cnl-sponsor
-redirect_to:
-  - https://docs.google.com/forms/d/e/1FAIpQLSdirBvzk7gR6c4FM6BoKWlttTnXOWRNpUx4oTq5Nzfsg8UMDA/viewform
 ---
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdirBvzk7gR6c4FM6BoKWlttTnXOWRNpUx4oTq5Nzfsg8UMDA/viewform?embedded=true" width="640" height="1832" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
