@@ -7,7 +7,7 @@ $darkest-content-color: rgba(45,45,45,0.98);
 $darker-content-color: #203344 !default;
 $light-content-color: #456d93 !default;
 $lighter-content-color: #9bb6d0 !default;
-$lightest-content-color: #f0f4f8 !default;
+$lightest-content-color: rgba(250,250,250,0.98) !default;
 $background-color: white; /* #f2f2f2;*/
 $content-width: 65% !default;
 $masthead-title-color: $lightest-content-color !default;
@@ -61,7 +61,7 @@ $horizontal-rule-color: $lighter-content-color;
 
 nav.menu-content a {
     color: $lightest-content-color;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-right: 0px;
 }
 
@@ -146,6 +146,7 @@ hr {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .about-logos a {
   margin: 10px;
   max-width: 200px;
@@ -153,11 +154,30 @@ hr {
   margin-right: auto;
 }
 
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product {
+  margin: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: $lightest-content-color;
+}
+
 .form {
   margin-left: auto;
-  margin-right: auto;    
-  width: 640px;
+  margin-right: auto;
+  width: 100%;
   height: 1818px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @import "lagrange";

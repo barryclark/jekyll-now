@@ -7,6 +7,7 @@ disqus:
 google-ID: 'UA-101991886-1'
 
 menu:
+- {name: 'Cloud Native London', path: 'cloudnativelondon', url: ''}
 - {name: 'Events', path: 'events', url: ''}
 - {name: 'About', path: 'about', url: ''}
 - {name: 'Search', path: 'search', url: ''}
