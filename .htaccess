@@ -3,12 +3,10 @@ RewriteCond %{HTTP_REFERER} semalt\.com [NC,OR]
 RewriteCond %{HTTP_REFERER} buttons-for-website\.com [NC] 
 RewriteRule .* - [F]
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404.md
 
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
-
-RedirectMatch 301 ^(.*)$ http://isardmiralles.com
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
