@@ -28,7 +28,8 @@ img.apps {border-radius:27px;max-width:153px;}
 #page-main.darkmode em a {background: #111;}
 
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;}
-#glassed {color:var(--color-hardgrey) ;background:rgba(230,230,230,.75);padding:32px;}
+#glassed {text-align:justify; color:var(--color-hardgrey) ;
+    background:rgba(230,230,230,.75);padding:32px 21% 32px 21%;}
 
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {
     letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;
@@ -375,6 +376,7 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     aside.thumb-3 a {font-size: 18px;}
     aside.thumb-3 a svg {width: 23px;}
     aside.thumb-3 p {margin: 1em 0 1em 0;border-bottom: thin solid #eee;    }
+    #glassed {padding:12px 2% 12px 2%;}
 }
 
 @media (max-width: 1242px) {
@@ -399,7 +401,7 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     #fronters h1 {font-size:2em;margin:0px;}
     #fronters h3 {font-size:1.2em;margin:0px;}
     #fronters h5 {font-size:1.1em;margin:0px;}
-    
+    #glassed {padding:12px 12% 12px 12%;}
     #web-branding em a, #web-grafics em a,
     #web-music em a {display:none;}
     
