@@ -5,11 +5,14 @@ RewriteRule .* - [F]
 
 ErrorDocument 404 /404.html
 
-# Prevent access to .txt & .yml files
+## Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
-
-RedirectMatch 301 ^(.*)$ http://isardmiralles.com
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
-RewriteRule ^(.*)$ http://isardmiralles.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://isardmiralles.com/$1 [R=301,L,QSA]
+
