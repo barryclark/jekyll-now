@@ -4,12 +4,17 @@ html
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='description', content='Some description')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
 		link(rel="stylesheet", href="css/style.css")
+		link(href='https://fonts.googleapis.com/css?family=Pacifico&display=swap' rel='stylesheet')
+
+		title Днем народження
 	//- Hello Hello!
 	body
-		canvas.zdog-canvas(width="640" height="960")
+		.grid
+			h1.title 🌺 Днем народження 🌺
+			canvas.zdog-canvas(width="640" height="480")
+			h2.name ⚡️✨🌟⭐️ АСЯ ⭐️🌟✨⚡️
 		//- script(src='https://unpkg.com/zdog@1/dist/zdog.dist.min.js')
 		script(src='js/zdog.dist.min.js')
-
 		script(src='js/happy.js')
