@@ -87,7 +87,7 @@ body {
   text-align: center;
   z-index: 4;
   color: #fff;
-  font-size: 5rem;
+  font-size: 4rem;
   text-shadow: 3px 3px 20px #2282B4; }
   @media screen and (max-width: 529px) {
     .title {
