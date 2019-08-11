@@ -1,24 +1,20 @@
-ErrorDocument 404 /404
+ErrorDocument 404 /404.html
 
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
 
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{ENV:HTTPS} !on [NC]
 RewriteCond %{HTTP_HOST} ^isardmiralles\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.isardmiralles\.com$
 RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L,NE]
+</IfModule>
 
 #comprimir archivos de texto, html, javascript, css, xml
-AddOutputFilterByType DEFLATE text/plain
-AddOutputFilterByType DEFLATE text/html
-AddOutputFilterByType DEFLATE text/xml
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE application/xml
-AddOutputFilterByType DEFLATE application/xhtml+xml
-AddOutputFilterByType DEFLATE application/rss+xml
-AddOutputFilterByType DEFLATE application/javascript
-AddOutputFilterByType DEFLATE application/x-javascript
+<ifmodule>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
+</ifmodule>
 
 # Block fake traffic
 RewriteEngine On
