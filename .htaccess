@@ -11,6 +11,3 @@ RedirectMatch 404 \.(txt|yml)$
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
 RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
-
-RewriteEngine On
-RewriteRule test\ http://www.google.com [R]
