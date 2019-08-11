@@ -1,18 +1,29 @@
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404
 
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
 
 #redirección permanente de dominio www a sin www
-RewriteEngine on
+RewriteEngine On
 Options +FollowSymLinks
 RewriteCond %{HTTP_HOST} ^www\.isardmiralles\.com$ [NC]
-RewriteRule ^(.*)$ http://isardmiralles.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
 
 #redirección permanente de dominio http a https
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
 RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
+
+#comprimir archivos de texto, html, javascript, css, xml
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
 
 # Block fake traffic
 RewriteEngine on
