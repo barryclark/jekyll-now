@@ -1,10 +1,10 @@
 var thehours = new Date().getHours();
 
 	var themessage;
-	var night = ('<img id="sun-phase" src="/hipertextos/cursors/sun-night.gif">');
-	var morning = ('<img id="sun-phase" src="/hipertextos/cursors/sun-morning.gif">');
-	var afternoon = ('<img id="sun-phase" src="/hipertextos/cursors/sun-afternoon.gif">');
-	var evening = ('<img id="sun-phase" src="/hipertextos/cursors/sun-evening.gif">');
+	var night = ('<img id="sun-phase" src="/hipertextos/cursors/sun-night.gif" alt="Nit">');
+	var morning = ('<img id="sun-phase" src="/hipertextos/cursors/sun-morning.gif" alt="Alba">');
+	var afternoon = ('<img id="sun-phase" src="/hipertextos/cursors/sun-afternoon.gif" alt="Cènit">');
+	var evening = ('<img id="sun-phase" src="/hipertextos/cursors/sun-evening.gif" alt="Vespre">');
 
 	if (thehours >= 0 && thehours < 6) {
 		themessage = night; 
@@ -32,18 +32,18 @@ $('#sun-phase').html(themessage);
 
 $(function() {
    $('.th-aurora').click(function() {
-   		$('#sun-phase').html('<img id="sun-phase" src="/hipertextos/cursors/sun-morning.gif">');
+   		$('#sun-phase').html('<img id="sun-phase" src="/hipertextos/cursors/sun-morning.gif" alt="Alba">');
    });
 
    $('.th-meridianus').click(function() {
-   		$('#sun-phase').html('<img id="sun-phase" src="/hipertextos/cursors/sun-afternoon.gif">');
+   		$('#sun-phase').html('<img id="sun-phase" src="/hipertextos/cursors/sun-afternoon.gif" alt="Cènit">');
    });
 
    $('.th-vesperum').click(function() {
-   		$('#sun-phase').html('<img id="sun-phase" src="/hipertextos/cursors/sun-evening.gif">');
+   		$('#sun-phase').html('<img id="sun-phase" src="/hipertextos/cursors/sun-evening.gif" alt="Vespre">');
    });
 
    $('.th-nox').click(function() {
-   		$('#sun-phase').html('<img id="sun-phase" src="/hipertextos/cursors/sun-night.gif">');
+   		$('#sun-phase').html('<img id="sun-phase" src="/hipertextos/cursors/sun-night.gif" alt="Nit">');
    });
 });
