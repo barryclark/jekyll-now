@@ -13,6 +13,4 @@ RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
 RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
 
 RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://isardmiralles.com/$1 [R=301,L,QSA]
-
+RewriteRule test\.html http://www.google.com [R]
