@@ -1,4 +1,4 @@
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404
 
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
