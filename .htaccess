@@ -1,13 +1,22 @@
-## STOP REFERRER SPAM 
-RewriteCond %{HTTP_REFERER} semalt\.com [NC,OR] 
-RewriteCond %{HTTP_REFERER} buttons-for-website\.com [NC] 
-RewriteRule .* - [F]
-
 ErrorDocument 404 /404.html
 
-## Prevent access to .txt & .yml files
+# Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
 RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
+
+# Block fake traffic
+RewriteEngine on
+Options +FollowSymlinks
+# Block all http and https referrals from semalt.com” and all subdomains of “semalt.com”
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+.)*semalt.com [NC,OR] # Block all http and https referrals from “kambasoft.com” and all subdomains of “kambasoft.com”
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+.)*kambasoft.com [NC] RewriteRule ^(.*)$ http://semalt.com/ [L] # Block all http and https referrals from semalt.com” and all subdomains of “semalt.com”
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+.)*semalt.semalt.com [NC,OR] # block visitors referred from semalt.com
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} semalt.com [NC] RewriteRule .* – [F] # End semalt block
+# block referer spam buttons for website
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} buttons-for-website.com
+RewriteRule ^.* – [F,L] # End buttons for website block
