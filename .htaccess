@@ -5,9 +5,8 @@ RedirectMatch 404 \.(txt|yml)$
 
 #redirección permanente de dominio www a sin www
 RewriteEngine On
-Options +FollowSymLinks
-RewriteCond %{HTTP_HOST} ^www\.isardmiralles\.com$ [NC]
-RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.isardmiralles.com [NC]
+RewriteRule ^(.*)$ http://isardmiralles.com/$1 [L,R=301]
 
 #redirección permanente de dominio http a https
 RewriteEngine On
@@ -26,7 +25,7 @@ AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 
 # Block fake traffic
-RewriteEngine on
+RewriteEngine On
 Options +FollowSymlinks
 # Block all http and https referrals from semalt.com” and all subdomains of “semalt.com”
 RewriteCond %{HTTP_REFERER} ^https?://([^.]+.)*semalt.com [NC,OR] # Block all http and https referrals from “kambasoft.com” and all subdomains of “kambasoft.com”
