@@ -48,3 +48,14 @@ Conclusion
 ----------
 
 Although this seems like a huge task and cumbersome with a little (or very much) philosophical view of my, but in a practical view these options are a part of the possible tool set of every programmer and you must find out what works for you. Because if this won't be easy and hopefully fun for you it will not happen, so try really try and see what works for you there is no silver bullet.
+
+Examples - What I enjoy now
+---------------------------
+
+I didn't want to list this in the blog, so it will be more easy to find it later after reading this post (or before it's a possibility ;)).
+
+* Articles feeds -.
+* YouTube videos -.
+* Podcasts -.
+
+Until next time :)
