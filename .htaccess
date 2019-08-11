@@ -3,15 +3,11 @@ ErrorDocument 404 /404
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
 
-#redirección permanente de dominio www a sin www
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.isardmiralles.com [NC]
-RewriteRule ^(.*)$ http://isardmiralles.com/$1 [L,R=301]
-
-#redirección permanente de dominio http a https
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
-RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
+RewriteCond %{ENV:HTTPS} !on [NC]
+RewriteCond %{HTTP_HOST} ^isardmiralles\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.isardmiralles\.com$
+RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L,NE]
 
 #comprimir archivos de texto, html, javascript, css, xml
 AddOutputFilterByType DEFLATE text/plain
