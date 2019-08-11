@@ -4,7 +4,8 @@
     <meta name="encoding" charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-	<link rel="canonical" href="https://isardmiralles.com/"/>
+	<link rel="alternate" hreflang="ca" href="isardmiralles.com"/>
+	<link rel="canonical" href="isardmiralles.com/"/>
 
     {% include meta.html %}
 
@@ -37,34 +38,11 @@
 		});
   	</script>
   	{% endif %}
-	
     {% include favicons.html %}
-	
-	<style type="text/css">
-		.preload {display: none;}
-		#site-nav {font-family: "San Francisco"}
-		body {
-overflow: hidden;
-}
-/* preloader */
-#preloader {
-position: fixed;
-top:0; left:0;
-right:0; bottom:0;
-background: #000;
-z-index: 100;
-}
-#loader {
-width: 100px;
-height: 100px;
-position: absolute;
-left:50%; top:50%;
-background: url(../hipertextos/images/loading.gif) no-repeat center 0;
-margin:-50px 0 0 -50px;
-}
+	<style type="text/css">.preload {display: none;} #site-nav {font-family: "San Francisco"} body {overflow: hidden;}
+	#preloader { position: fixed;top:0; left:0;right:0; bottom:0;background: #000;z-index: 100;}#loader {width: 100px;height: 100px;position: absolute;left:50%; top:50%;background: url(../hipertextos/images/loading.gif) no-repeat center 0;margin:-50px 0 0 -50px;}
 	</style>
 	
-
   	{% if page.parallax %}
 	<img class="preload" src="/img/home.jpg" width="2010" height="1920" alt="imatge de fons a l'alba">
 	<img class="preload" src="/img/homes-sun.jpg" width="2010" height="1920" alt="imatge de fons de dia">
