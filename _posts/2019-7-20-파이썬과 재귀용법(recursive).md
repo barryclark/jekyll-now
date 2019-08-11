@@ -36,4 +36,4 @@ multi_table_9(9)
 
 ## 관련 포스트
 
-[LEVEL2*프로그래머스*더 맵게](/study/algorithm/LEVEL2_프로그래머스_더-맵게/)
+[LEVEL2\_프로그래머스\_더 맵게](/study/algorithm/LEVEL2_프로그래머스_더-맵게/)
