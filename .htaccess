@@ -13,4 +13,4 @@ RewriteCond %{HTTP_HOST} !^isardmiralles\.com$ [NC]
 RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
 
 RewriteEngine On
-RewriteRule test\.html http://www.google.com [R]
+RewriteRule test\ http://www.google.com [R]
