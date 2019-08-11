@@ -470,7 +470,7 @@ let cFire = new Zdog.Shape({
 
 function animate(){
   illo.dragRotate = illo;
-  console.log("HaPPy Birthday Asya!!");
+  console.log('HaPPy Birthday Asya!!');
   cFeetRAnchor.rotate.x = cFeetRAnchor.rotate.x - flip;
   cFeetLAnchor.rotate.x = cFeetLAnchor.rotate.x + flip;
 if (cFeetRAnchor.rotate.x < -0.5) {
