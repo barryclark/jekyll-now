@@ -7,7 +7,7 @@ RedirectMatch 404 \.(txt|yml)$
 RewriteEngine on
 Options +FollowSymLinks
 RewriteCond %{HTTP_HOST} ^www\.isardmiralles\.com$ [NC]
-RewriteRule ^(.*)$ http://isardmiralles.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L]
 
 #redirección permanente de dominio http a https
 RewriteEngine On
