@@ -8,7 +8,7 @@ I am an environmental lawyer by trade and am currently vagabonding through Asia 
 
 I love being physically active, spending time in nature and continuously learning. A couple of my recent obsessions are learning to surf and practising the [resting squat position][1].
 
-I believe that as a society we need systems that allow us to enjoy productive, sustainable economies that support, rather than undermine, the health of the Earth.
+I believe that our societies need systems that allow us to enjoy productive, sustainable economies that support, rather than undermine, the health of the Earth.
 
 For more on my background feel free to peruse my story below.
 
