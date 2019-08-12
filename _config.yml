@@ -104,9 +104,3 @@ defaults:
       path: "assets/print"
     values:
       image: true
-
-gzip:
-  extensions:
-    - '.html'
-    - '.css'
-    - '.js
