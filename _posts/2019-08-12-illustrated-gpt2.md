@@ -438,7 +438,7 @@ In matrix form, we calculate the scores by multiplying a queries matrix by a key
   <br />
 </div>
 
-After the multiplication, we slap on our attention mask triangle. It set the cells we want to mask to -infinity or a very small number (e.g. -1 billion in GPT2):
+After the multiplication, we slap on our attention mask triangle. It set the cells we want to mask to -infinity or a very large negative number (e.g. -1 billion in GPT2):
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/gpt2/transformer-attention-mask.png"/>
