@@ -11,11 +11,6 @@ RewriteCond %{HTTP_HOST} ^www\.isardmiralles\.com$
 RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L,NE]
 </IfModule>
 
-#comprimir archivos de texto, html, javascript, css, xml
-<ifmodule>
-AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
-</ifmodule>
-
 # Block fake traffic
 RewriteEngine On
 Options +FollowSymlinks
