@@ -8,6 +8,8 @@ I am an environmental lawyer by trade and am currently vagabonding through Asia 
 
 I love being physically active, spending time in nature and continuously learning. A couple of my recent obsessions are learning to surf and practising the [resting squat position][1].
 
+I believe that as a society we need systems that allow us to enjoy productive, sustainable economies that support, rather than undermine, the health of the Earth.
+
 For more on my background feel free to peruse my story below.
 
 ### Early years
@@ -22,6 +24,6 @@ At the end of 2014, I moved to Melbourne and started professional life as a sust
 I realised I enjoyed legal problem solving in this practical context more than my experience at law school led me to believe I would. With a desire to further progress my legal skills I transitioned from consulting to legal practice. I was fortunate to land a role in the environment and planning team of a global law firm, working alongside one of Australia’s leading environmental and climate change lawyers. This immersion into legal practice within a fast paced corporate environment was both challenging and rewarding. 
 
 ### Vagabonding
-After two years working as a lawyer, about five years of professional life and being newly married, my husband and I decided to take a year off “normal life”, commencing in June 2019.  We sold and gave away almost everything we owned and set out on an adventure. For us, this year is about exploring new places and ideas, gaining fresh perspectives, reflecting on our values and life direction (both as individuals and newly-weds), slowing down, playing, connecting with our intrinsic interests and creativity and well - doing just about whatever we like (which we recently discovered includes surfing!).  
+After two years working as a lawyer, about five years of professional life and being newly married,I decided with my husband to take a year off “normal life”, commencing in June 2019.  We sold and gave away almost everything we owned and set out on an adventure. For us, this year is about exploring new places and ideas, gaining fresh perspectives, reflecting on our values and life direction (both as individuals and newly-weds), slowing down, playing, connecting with our intrinsic interests and creativity and well - doing just about whatever we like (which we recently discovered includes surfing!).  
 
 [1]: https://www.mamamia.com.au/resting-squat-benefits/
