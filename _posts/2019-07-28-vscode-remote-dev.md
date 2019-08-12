@@ -22,5 +22,6 @@ Initially, my remote development workflow looks similar to this:
 7. Check if I am getting the expected output files
 8. Repeat Step 1
 
-Problem is, what if we are working with large datasets and we can't store them on our local machine?
+Problem is, what if we are working with large datasets and we can't store them on our local machine? Do we have to buy even more external storage just to be able to download and work with the data on our local machine, only to re-upload changes back to the remote instance?
 
+That's where Remote Development functionalities
