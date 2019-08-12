@@ -4,6 +4,12 @@ published: True
 title: A Visual Intro to NumPy and Data Representation
 ---
 
+<span class="discussion">Discussions:
+<a href="https://news.ycombinator.com/item?id=20282985" class="hn-link">Hacker News (366 points, 21 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/c5nc89/p_a_visual_intro_to_numpy_and_data_representation/" class="">Reddit r/MachineLearning (256 points, 18 comments)</a>
+</span>
+<br />
+<span class="discussion">Translations: <a href="https://note.mu/sayajewels/n/n95edaedb0fc5">Japanese</a></span>
+
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/numpy/numpy-array.png"/>
@@ -242,6 +248,25 @@ In a lot of ways, dealing with a new dimension is just adding a comma to the par
   <br />
 </div>
 
+Note: Keep in mind that when you print a 3-dimensional NumPy array, the text output visualizes the array differently than shown here.  NumPy's order for printing n-dimensional arrays is that the last axis is looped over the fastest, while the first is the slowest. Which means that ```np.ones((4,3,2))``` would be printed as:
+
+```python
+array([[[1., 1.],
+        [1., 1.],
+        [1., 1.]],
+
+       [[1., 1.],
+        [1., 1.],
+        [1., 1.]],
+
+       [[1., 1.],
+        [1., 1.],
+        [1., 1.]],
+
+       [[1., 1.],
+        [1., 1.],
+        [1., 1.]]])
+```
 
 ## Practical Usage
 
@@ -319,7 +344,7 @@ Think of all the data types you'll need to crunch and build models around (sprea
  </div>
 
 #### Audio and Timeseries
- * An audio file is a one-dimensional array of samples. Each sample is a number representing a tiny chunk of the audio signal. CD-quality audio may have 44,100 samples per second and each sample is an integer between -65535 and 65536. Meaning if you have a ten-seconds WAVE file of CD-quality, you can load it in a NumPy array with length 10 * 44,100 = 441,000 samples. Want to extract the first second of audio? simply load the file into a NumPy array that we'll call `audio`, and get `audio[:44100]`.
+ * An audio file is a one-dimensional array of samples. Each sample is a number representing a tiny chunk of the audio signal. CD-quality audio may have 44,100 samples per second and each sample is an integer between -32767 and 32768. Meaning if you have a ten-seconds WAVE file of CD-quality, you can load it in a NumPy array with length 10 * 44,100 = 441,000 samples. Want to extract the first second of audio? simply load the file into a NumPy array that we'll call `audio`, and get `audio[:44100]`.
 
  Here's a look at a slice of an audio file:
 

@@ -9,7 +9,7 @@ title: The Illustrated Word2vec
 </span>
 <br />
 <span class="discussion">
-Translations: <a href="https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651669277&idx=2&sn=bc8f0590f9e340c1f1359982726c5a30&chksm=bd4c648e8a3bed9817f30c5a512e79fe0cc6fbc58544f97c857c30b120e76508fef37cae49bc&scene=0&xtrack=1#rd">Chinese (Simplified)</a>, <a href="https://databreak.netlify.com/2019-04-25-illustrated_word2vec/">Korean</a>, <a href="https://habr.com/ru/post/446530/">Russian</a>
+Translations: <a href="https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651669277&idx=2&sn=bc8f0590f9e340c1f1359982726c5a30&chksm=bd4c648e8a3bed9817f30c5a512e79fe0cc6fbc58544f97c857c30b120e76508fef37cae49bc&scene=0&xtrack=1#rd">Chinese (Simplified)</a>, <a href="https://databreak.netlify.com/2019-04-25-illustrated_word2vec/">Korean</a>, <a href="https://pessoalex.wordpress.com/2019/03/29/o-word2vec-ilustrado/">Portuguese</a>, <a href="https://habr.com/ru/post/446530/">Russian</a>
 </span>
 
 
