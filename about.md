@@ -4,12 +4,35 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+PinGuと申します。Java四年とJavaScript六年経験があり、プログラマーです。
 
-### More Information
+日本語を勉強して、日本に移住したいです。
 
-A place to include any other types of information that you'd like to include about yourself.
+<details><summary>技能と経験など</summary>
 
-### Contact me
+### 言語
 
-[email@domain.com](mailto:email@domain.com)
+* Chinese
+* English
+* Japanese
+
+### 経験
+
+* Program Language
+  * JavaScript
+  * Java(Spring/Hibernate/JPA)(OCPJPあり)
+  * PHP (もうやりたくない)
+* Database
+  * MySQL/MariaDB
+  * PostgreSQL
+* OS
+  * Windows
+  * Linux (CentOS 6+/Arch Linux)
+* Cloud and Virtualization
+  * Google Cloud Platform
+  * Azure
+  * Docker
+
+会社のクラウドインフラを管理しているので、コマンドラインが上手、情報セキュリティ対策も多かれ少なかれ理解している:p
+
+</details>
