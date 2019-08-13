@@ -8,7 +8,7 @@ PinGuと申します。Java四年とJavaScript六年経験があり、プログ�
 
 日本語を勉強して、日本に移住したいです。
 
-<details><summary>技能と経験など</summary>
+<details markdown="1"><summary>技能と経験など</summary>
 
 ### 言語
 
