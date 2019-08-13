@@ -12,7 +12,7 @@ Account number:
 
 ## Pay by direct debit
 
-[Set up a direct debit for 15th of each month]([https://pay.gocardless.com/AL00022PZ9KJKJ)
+[Set up a direct debit for 15th of each month](https://pay.gocardless.com/AL00022PZ9KJKJ)
 
 ## Pay by credit/debit card
 
