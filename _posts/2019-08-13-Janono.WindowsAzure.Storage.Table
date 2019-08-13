@@ -18,11 +18,10 @@ tags:
 ---
 
 
+
 # Janono.WindowsAzure.Storage.Table
 
-![alt text](https://raw.githubusercontent.com/janusznowak/Janono.WindowsAzure.Storage.Table/master/src/Janono.WindowsAzure.Storage.Table.png)
-
-[![Build Status](https://dev.azure.com/janono-pub/Janono.WindowsAzure.Storage.Table/_apis/build/status/janusznowak.Janono.WindowsAzure.Storage.Table?branchName=master)](https://dev.azure.com/janono-pub/Janono.WindowsAzure.Storage.Table/_build/latest?definitionId=20&branchName=master)
+[![Build status](https://dev.azure.com/janono-pub/Janono.WindowsAzure.Storage.Table/_apis/build/status/janusznowak.Janono.WindowsAzure.Storage.Table?branchName=master)](https://dev.azure.com/janono-pub/Janono.WindowsAzure.Storage.Table/_build/latest?definitionId=20&branchName=master)
 
 ## Janono.WindowsAzure.Storage.Table
 
