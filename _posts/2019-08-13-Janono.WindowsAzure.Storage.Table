@@ -77,5 +77,4 @@ namespace Janono.WindowsAzure.Storage.Table.Example
         }
     }
 }
-
-        ```
+```
