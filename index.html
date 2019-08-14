@@ -4,8 +4,8 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post"> 
-       {% if post.image.feature %}
-        <a href="{{ site.baseurl }}{{ post.url }}" style="background:url({{ post.image.feature}});background-size:cover;background-position-y: center;">
+       {% if post.feature %}
+        <a href="{{ site.baseurl }}{{ post.url }}" style="background:url({{ post.feature}});background-size:cover;background-position-y: center;">
         {% else %}
         <a href="{{ site.baseurl }}{{ post.url }}" style="background:url(http://i.giphy.com/FRmOsocKhM1xK.gif);background-size:cover;background-position-y: center;">
         {% endif %}
