@@ -1,27 +1,23 @@
-
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-sku_FbsNED5mU2Onot"
-  role="link"
->
-  One month sponsorship
+<button id="checkout-button-sku_FcKSyxgCZkGGfx" role="link">
+  Pay by credit card
 </button>
 
 <div id="error-message"></div>
 
-<script>
-  var stripe = Stripe('pk_test_UdxvSn4lx17grmpJi0RNXWcb00Pej398Ov');
 
-  var checkoutButton = document.getElementById('checkout-button-sku_FbsNED5mU2Onot');
+<script>
+  var stripe = Stripe('sk_live_b4K4LqQ3P5mdkuVpI1141XH200BEn5o5rJ');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_FcKSyxgCZkGGfx');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_FbsNED5mU2Onot', quantity: 1}],
+      items: [{sku: 'sku_FcKSyxgCZkGGfx', quantity: 1}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
@@ -29,7 +25,7 @@
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
       successUrl: 'https://www.oicheryl.com/cloudnativelondon/success',
-      cancelUrl: 'https://www.oicheryl.com/cloudnativelondon/canceled',
+      cancelUrl: 'https://www.oicheryl.com/cloudnativelondon',
     })
     .then(function (result) {
       if (result.error) {
