@@ -3,8 +3,7 @@ layout: post
 title:  Fury Road I
 titledesc: ... we travel again!
 author: dactrtr
-image:
-    feature: http://screenrant.com/wp-content/uploads/Mad-Max-Fury-Road-explosion.jpg
+feature: http://screenrant.com/wp-content/uploads/Mad-Max-Fury-Road-explosion.jpg
 ---
 
  *disclaimer: this isn't about Mad Max Fury Road, it's about the road trip through the south island, mini review of mad max, it's like Caffeine for the eyes, just amazing.*

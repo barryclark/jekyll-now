@@ -3,8 +3,7 @@ layout:  post
 title:  Outtatime
 titledesc: actualizaciones
 author: dactrtr
-image:
-    feature: https://media.giphy.com/media/l0IyiKbiDdEalPyes/giphy-downsized.gif
+feature: https://media.giphy.com/media/l0IyiKbiDdEalPyes/giphy-downsized.gif
 ---
 
 ## Abandonado

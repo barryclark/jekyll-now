@@ -3,8 +3,7 @@ layout: post
 title:  FusionDrive 
 titledesc: MELTED
 author: dactrtr
-image:
-    feature: http://media.bestofmicro.com/MacBook-Shot-Israeli,8-L-233589-13.jpg
+feature: http://media.bestofmicro.com/MacBook-Shot-Israeli,8-L-233589-13.jpg
 ---
 ## Dealing with OSX
 

@@ -3,8 +3,7 @@ layout: scream
 title:  Redesign
 titledesc: blog and portfolio
 author: dactrtr
-image:
-    feature: https://media.giphy.com/media/l2R0dZTDEZ9rS2O6k/giphy.gif
+feature: https://media.giphy.com/media/l2R0dZTDEZ9rS2O6k/giphy.gif
 ---
 
 

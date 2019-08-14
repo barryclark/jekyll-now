@@ -3,8 +3,7 @@ layout:  post
 title:  Jekyll+iPad+editorial
 titledesc: combo breaker
 author: dactrtr
-image:
-    feature: https://i.imgur.com/z4cwciH.jpg
+feature: https://i.imgur.com/z4cwciH.jpg
 ---
 
 ## Posteando como un campion

@@ -3,8 +3,7 @@ layout: post
 title:  Challenges
 titledesc: Inktober fail
 author: dactrtr
-image:
-    feature: http://i.imgur.com/44WuWbA.jpg
+feature: http://i.imgur.com/44WuWbA.jpg
 ---
 ## Inktober, Dinovember and the next one.
 

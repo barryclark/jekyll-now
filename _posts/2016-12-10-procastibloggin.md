@@ -3,8 +3,7 @@ layout: post
 title:  Procastiblog
 titledesc: f*ck off FB
 author: dactrtr
-image:
-    feature: http://i.imgur.com/44WuWbA.jpg
+feature: http://i.imgur.com/44WuWbA.jpg
 ---
 
 ## Other day, other page
