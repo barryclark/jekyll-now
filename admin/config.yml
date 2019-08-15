@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   # repo: dactrtr/dactrtr.github.io
   # site_domain: dactrtr.netlify.com
   branch: master # Branch to update (optional; defaults to master)
