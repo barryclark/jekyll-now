@@ -2,21 +2,21 @@
 <script src="https://js.stripe.com/v3"></script>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button id="checkout-button-sku_FcKSyxgCZkGGfx" role="link">
-  Pay by debit / credit card
+<button id="checkout-button-sku_FbsNED5mU2Onot" role="link">
+  Pay by debit / credit card - TEST
 </button>
 
 <div id="error-message"></div>
 
 <script>
-  var stripe = Stripe('pk_live_gRovPiGzsmDnzUPZlDt4mR6U00q124AvQ7');
+  var stripe = Stripe('pk_test_UdxvSn4lx17grmpJi0RNXWcb00Pej398Ov');
 
-  var checkoutButton = document.getElementById('checkout-button-sku_FcKSyxgCZkGGfx');
+  var checkoutButton = document.getElementById('checkout-button-sku_FbsNED5mU2Onot');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_FcKSyxgCZkGGfx', quantity: 1}],
+      items: [{sku: 'sku_FbsNED5mU2Onot', quantity: 1}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
