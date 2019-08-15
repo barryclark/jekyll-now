@@ -3,12 +3,6 @@ ErrorDocument 404 /404.html
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
 
-RewriteEngine On
-RewriteCond %{ENV:HTTPS} !on [NC]
-RewriteCond %{HTTP_HOST} ^isardmiralles\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.isardmiralles\.com$
-RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R=301,L,NE]
-
 # Block fake traffic
 RewriteEngine On
 Options +FollowSymlinks
