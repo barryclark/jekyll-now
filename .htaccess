@@ -5,7 +5,7 @@ RedirectMatch 404 \.(txt|yml)$
 
 RewriteEngine On
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule (.*) https://isardmiralles.com/$1 [R=301,L,QSA]
 
 # Block fake traffic
 RewriteEngine On
