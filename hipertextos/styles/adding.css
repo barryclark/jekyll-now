@@ -105,6 +105,8 @@ p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 
 section.cover-justify p {padding: 16px 0 0 0;line-height: 26px;font-size: 15px !important;letter-spacing: .001em}
 section.cover-justify h5 {text-align:right;margin:0px!important;}
 
+#info-seo {text-align:center;}
+
 /* Page & Header */
 .cover#page-header {background-color: var(--color-black);}
 .medias#page-header {background-image: url("/img/portfoli.jpg");background-position:center center;background-attachment: fixed;background-size: cover fixed;
