@@ -3,14 +3,13 @@
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button id="checkout-button-sku_FcKSyxgCZkGGfx" role="link">
-  Pay by credit card
+  Pay by debit / credit card
 </button>
 
 <div id="error-message"></div>
 
-
 <script>
-  var stripe = Stripe('sk_live_b4K4LqQ3P5mdkuVpI1141XH200BEn5o5rJ');
+  var stripe = Stripe('pk_live_gRovPiGzsmDnzUPZlDt4mR6U00q124AvQ7');
 
   var checkoutButton = document.getElementById('checkout-button-sku_FcKSyxgCZkGGfx');
   checkoutButton.addEventListener('click', function () {
@@ -25,7 +24,7 @@
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
       successUrl: 'https://www.oicheryl.com/cloudnativelondon/success',
-      cancelUrl: 'https://www.oicheryl.com/cloudnativelondon',
+      cancelUrl: 'https://www.oicheryl.com/cloudnativelondon/canceled',
     })
     .then(function (result) {
       if (result.error) {
