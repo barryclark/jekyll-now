@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Este es un post de prueba
 titledesc: no se como resulte
 date: 2019-08-15T03:44:17.292Z
