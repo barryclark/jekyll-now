@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: dactrtr.github.io
+  repo: dactrtr/dactrtr.github.io
   site_domain: gracious-northcutt-77299f.netlify.com
   branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
