@@ -4,7 +4,7 @@ ErrorDocument 404 /404.html
 RedirectMatch 404 \.(txt|yml)$
 
 RewriteEngine On
-RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Block fake traffic
