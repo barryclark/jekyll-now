@@ -8,16 +8,29 @@
 				<h2><i class="icon-cog"></i>Isard Miralles<h2>
 			</header>
 			<div>
-			<p>
-			<div id="deep" class="thumb-8">
-				<em><a href="mailto:{{ site.footer-links.email }}" title="Correu electrònic"><span class="icon-gmail dialog-ic"></span> {{ site.footer-links.email }}</a></em>
-				<em><a href="tel:+34 {{ site.phone }}" title="Trucar"><span class="icon-mobile dialog-ic"></span> {{ site.phone }}</a></em>
-			</div>
-			<em class="thumb-4"><a href="{{ site.baseurl }}/hipertextos/brand/vcard.vcf" download=".vcard" title="Desar contacte"><img class="dialog-svg" src="{{ site.baseurl }}/hipertextos/svg/arrows.svg" alt="botó desar contacte (vCard)"></a></em>
-			</p>
-			</div>
-			<div id="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23923.965013756326!2d2.222986641163784!3d41.4501645225289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bb1298efb741%3A0x987b0abc3e6ea84d!2sBadalona%2C+Barcelona!5e0!3m2!1ses!2ses!4v1553975454204!5m2!1ses!2ses" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div itemscope itemtype="http://schema.org/Person">
+					<p>
+					<div id="deep" class="thumb-8">
+						<em><a href="mailto:{{ site.footer-links.email }}" title="Correu electrònic" itemprop="email"><span class="icon-gmail dialog-ic"></span> {{ site.footer-links.email }}</a></em>
+						<em><a href="tel:+34 {{ site.phone }}" title="Trucar" itemprop="telephone"><span class="icon-mobile dialog-ic"></span> {{ site.phone }}</a></em>
+					</div>
+					<em class="thumb-4"><a href="{{ site.baseurl }}/hipertextos/brand/vcard.vcf" download=".vcard" title="Desar contacte"><img class="dialog-svg" src="{{ site.baseurl }}/hipertextos/svg/arrows.svg" alt="botó desar contacte (vCard)"></a></em>
+					</p>
+				</div>
+				<div id="info-seo">
+  					<img src="../hipertextos/brand/isardmiralles.jpg" itemprop="image" alt="Foto de {{ site.name }}"/>
+  					<span itemprop="name">{{ site.name }} </span>
+  					<span itemprop="jobTitle">Creatiu, Dissenyador i Músic</span>
+  					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    					<span itemprop="streetAddress">
+							c/Anton Romeu 26, baixos
+							Badalona
+    					</span>
+    					<span itemprop="addressLocality">Badalona</span>,
+    					<span itemprop="addressRegion">ES</span>
+    					<span itemprop="postalCode">08912</span>
+					</div>
+				</div>
 			</div>
 		</dialog>
 	</div>
