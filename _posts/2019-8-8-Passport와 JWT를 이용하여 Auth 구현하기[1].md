@@ -66,6 +66,7 @@ module.exports = router;
 ### users 컨트롤러 작성
 
 passport 미들웨어 `passport.authenticate(passport 미들웨어 이름, callback)`를 통해 사용한다. passport 미들웨어 실행결과 `(err, user, info*)`가 callback 함수로 넘어오기 때문에, 어떤 작업을 수행할지 정의해주면 된다.
+
 또한, session을 사용하지 않는 경우, `{ session: false }`를 `passport.authenticate()`의 인자로 넘겨주어야 한다. signin 시, "local_login"이라는 패스포트 미들웨어를 통해 유효한 유저인지 확인이 되고 나면, token을 생성하여 client로 보내주는 코드를 추가하였다.
 
 ```javascript
@@ -119,9 +120,10 @@ module.exports = {
 ### module 폴더 내 passport.js 작성
 
 module 디렉토리를 만들고, passport.js 파일을 만든다.
-회원가입 시, 비밀번호를 암호화하여 저장하였기 때문에, 저장된 암호화된 비밀번호와, 입력된 비밀번호의 암호화 값이 같은지를 확인하는 내용을 추가하였다.
 
-local 계정으로 회원가입과 로그인 하는 미들웨어를 작성하고 있기 때문에, `new LocalStrategy()`를 사용한다. `passReqToCallback: true`라는 속성을 주면 `req`에 담겨온 다양한 정보를 사용할 수 있다.
+local 계정으로 회원가입과 로그인 하는 미들웨어를 작성하고 있기 때문에, `new LocalStrategy()`를 사용한다. passport의 LocalStrategy는 `usernameField` `email`를 사용하기 때문에 `req`에 담겨온 추가적인 정보를 미들웨어 내에서 사용하고 싶다면 `passReqToCallback: true`라는 속성을 추가해 준다.
+
+회원가입 시, 비밀번호를 암호화하여 저장하였기 때문에, 저장된 암호화된 비밀번호와, 입력된 비밀번호의 암호화 값이 같은지를 확인하는 내용을 추가하였다.
 
 ```javascript
 const passport = require("passport");
