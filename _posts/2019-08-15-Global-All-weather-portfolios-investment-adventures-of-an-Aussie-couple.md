@@ -154,7 +154,7 @@ The historical performance plot in [Figure 2](#figure-2-link) below shows that o
 
 |Asset type|All Seasons Domestic Aus (ASX)|Our Version Domestic Aus (ASX)|Our Version Global (ASX)|Our Version Global (NYSE/ NASDAQ)|Global with IL-bonds (NYSE/ NASDAQ)|
 |:---|:---|:---|:---|:---|:---|
-|Equities|30% VAS|24% VAS|20% VESG;<br>3% VGE|9% VEA;<br>11% VTI;<br>3% EEM|9% VEA;<br>10% VTI;<br>2% EEM|
+|Equities|30% VAS or FAIR |24% VAS or FAIR|20% VESG;<br>3% VGE|9% VEA;<br>11% VTI;<br>3% EEM|9% VEA;<br>10% VTI;<br>2% EEM|
 |Emerging market credit|-|-|13% IHEB|13% EMB|9% EMB|
 |Long-term treasury bonds (~20-25 yrs)|40% GSBK39 &/or GSBI41 &/or GSBE47* |25% GSBK39 &/or GSBI41 &/or GSBE47*|-|27% TLT|14% TLT|
 |Intermediate treasury bonds (~7-10 yrs)|15% IGB|15% IGB|51% VIF|24% BWX|24% BWX|
