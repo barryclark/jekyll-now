@@ -3,11 +3,9 @@ ErrorDocument 404 /404.html
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
 
-<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !^443$
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-</IfModule>
 
 # Block fake traffic
 RewriteEngine On
