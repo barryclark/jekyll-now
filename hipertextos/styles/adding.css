@@ -29,8 +29,9 @@ img.apps {border-radius:27px;max-width:153px;}
 
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;}
 #glassed {text-align:justify; color:var(--color-hardgrey) ;
-    background: linear-gradient(to right, rgba(220,220,220,.75), rgba(255,255,255,.98));padding:32px 32% 32px 32%;margin-bottom:-15px!important;}
-#glassed p {font-size:1.1em; }
+    background: linear-gradient(to right, rgba(220,220,220,.75), rgba(255,255,255,.96));
+    padding:32px 25% 32px 25%;margin-bottom:-15px!important;}
+#glassed p {font-size:1.06em;line-height:1.6em  }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {
     letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;
 }
@@ -376,7 +377,7 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     aside.thumb-3 a {font-size: 18px;}
     aside.thumb-3 a svg {width: 23px;}
     aside.thumb-3 p {margin: 1em 0 1em 0;border-bottom: thin solid #eee;    }
-    #glassed {padding:22px;}
+    #glassed {padding:26px;}
 }
 
 @media (max-width: 1242px) {
@@ -384,11 +385,11 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover#page-header {padding-top: 80px;}
     .cover#page-header h1 {line-height: 1.0em;font-size: 26px ;}
     .cover#page-header h2 {line-height: 1.2em;font-size: 18px ;}
-    #web-oferta p {font-size: 17px;max-width: 50%;margin-left: 25%;}
     img.dialog-svg {width: 140px;height: 100px;}
     #deep img.dialog-svg {max-width: 40px;height: 60px;margin-left: 12px;float: left;}
     #deep em a {font-size: 1.8em !important;line-height: 1.2em;}
     img.front-responsive {width: 320px;margin-top: 60px;}
+    #glassed {padding:26px;}
 }
 
 @media (max-width: 800px) {
@@ -396,13 +397,11 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     }
     #web-oferta {background-size: auto 150%;background-position: fixed !important;
     }
-    #glassed {padding:10px;}
     #web-oferta .note {display:none;}
     #web-oferta h2 {margin-bottom:0px;}
     #fronters h1 {font-size:2em;margin:0px;}
     #fronters h3 {font-size:1.2em;margin:0px;}
     #fronters h5 {font-size:1.1em;margin:0px;}
-    #glassed {padding:12px 12% 12px 12%;}
     #web-branding em a, #web-grafics em a,
     #web-music em a {display:none;}
     #logotips.thumb-10 {margin:0px;min-width:100%;}
@@ -411,7 +410,6 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover#page-header {padding-top: 50px;}
     .cover#page-header h1 {line-height: 0.8em;font-size: 21px ;}
     .cover#page-header h2 {line-height: 1.2em;font-size: 19px ;}
-    #web-oferta p {font-size: 14px;max-width: 80%;margin-left: 10%;}
     #covers article h4 {font-size: 26px;line-height: 1.3em;}
     #covers article h5 {font-size: 23px;}
     #covers .cover-justify p {font-size: 12px !important;letter-spacing: 0.005em;line-height: 2.1em;}
@@ -439,13 +437,14 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     #deep img.dialog-svg {min-width: 20px;height: 70px;margin-left: 3px;float: left;}
     #deep em a {font-size: 1.2em !important;line-height: 2.2em;}
     img.front-responsive {width: 300px;}
+    #glassed {padding:32px;}
 }
 @media (max-width: 500px) {
     #page-header.cover {
         background-size: 280% auto;
         background-position: fixed !important;
     }
-    #web-oferta {
+    #glassed {
 
     }
     #fronters {margin:0px;min-width:70%;}
