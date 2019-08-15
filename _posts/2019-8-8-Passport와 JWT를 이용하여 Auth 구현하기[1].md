@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Passport와 JWT를 이용한 로그인 구현_local
+title: Passport와 JWT를 이용하여 Auth 구현하기[1]
 date: 2019-08-08
 comments: true
 categories: [Study, nodejs]
