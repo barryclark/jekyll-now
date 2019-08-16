@@ -8,7 +8,7 @@ tags: [NodeJs, Passport, JWT]
 excerpt: 요즘은 대부분의 서비스가 자체 사이트 회원가입과 로그인 뿐만 아니라 구글, 페이스북 등 기존 유저가 가지고 있던 어카운트를 활용하여 로그인 하는 소셜로그인 서비스를 제공한다.
 ---
 
-요즘은 대부분의 서비스가 자체 사이트 회원가입과 로그인 뿐만 아니라 구글, 페이스북 등 기존 유저가 가지고 있던 어카운트를 활용하여 로그인 하는 소셜로그인 서비스를 제공한다. 한 가지의 소셜 로그인만 제공을 한다면 해당 SNS에서 제공하는 API를 사용하면 되겠지만, 여러가지 로그인 방법을 앱에 탑재하고 싶다면 **[Passport 모듈](https://github.com/jaredhanson/passport)을 활용**하는것이 좋을 것 같다.
+요즘은 대부분의 서비스가 자체 사이트 회원가입과 로그인 뿐만 아니라 구글, 페이스북 등 기존 유저가 가지고 있던 어카운트를 활용하여 로그인 하는 소셜로그인 서비스를 제공한다. 한 가지의 소셜 로그인만 제공을 한다면 해당 SNS에서 제공하는 API를 사용하면 되겠지만, 여러가지 로그인 방법을 앱에 탑재하고 싶다면 **[Passport 모듈](https://github.com/jaredhanson/passport)을 활용**하는것이 좋다.
 
 Passport 모듈은 다양한 인증 API를 간편하게 구현할 수 있도록 하는 모듈로, user 정보를 session에 저장한다. 하지만 JWT을 사용하는 동시에 session을 사용하는 것은 불필요한 작업이다. 다행히도 Passport는 사용자 정보를 session에 저장하는 대신 request에 저장할 수 있는 기능을 제공하고 있다.
 
@@ -54,7 +54,7 @@ module.exports = app;
 |  POST  | `/users/signin` |  로그인  |
 
 ```javascript
-var router = express.Router();
+const router = express.Router();
 const controllers = require("../controllers");
 
 router.post("/signup", controllers.users.signup.post);
@@ -65,7 +65,7 @@ module.exports = router;
 
 ### users 컨트롤러 작성
 
-passport 미들웨어 `passport.authenticate(passport 미들웨어 이름, callback)`를 통해 사용한다. passport 미들웨어 실행결과 `(err, user, info*)`가 callback 함수로 넘어오기 때문에, 어떤 작업을 수행할지 정의해주면 된다.
+passport 미들웨어는 `passport.authenticate(passport 미들웨어 이름, callback)`를 통해 사용한다. passport 미들웨어 실행결과 `(err, user, info*)`가 callback 함수로 넘어오기 때문에, 어떤 작업을 수행할지 정의해주면 된다.
 
 또한, session을 사용하지 않는 경우, `{ session: false }`를 `passport.authenticate()`의 인자로 넘겨주어야 한다. signin 시, "local_login"이라는 패스포트 미들웨어를 통해 유효한 유저인지 확인이 되고 나면, token을 생성하여 client로 보내주는 코드를 추가하였다.
 
@@ -121,7 +121,7 @@ module.exports = {
 
 module 디렉토리를 만들고, passport.js 파일을 만든다.
 
-local 계정으로 회원가입과 로그인 하는 미들웨어를 작성하고 있기 때문에, `new LocalStrategy()`를 사용한다. passport의 LocalStrategy는 `usernameField` `email`를 사용하기 때문에 `req`에 담겨온 추가적인 정보를 미들웨어 내에서 사용하고 싶다면 `passReqToCallback: true`라는 속성을 추가해 준다.
+기본적으로 `passport.use(미들웨어 이름, Strategy)` 형태로 작성해주면 되는데, local 계정으로 회원가입과 로그인 하는 미들웨어를 작성하고 있기 때문에, `new LocalStrategy()`를 사용한다. passport의 LocalStrategy는 `usernameField` `email`를 사용하기 때문에 `req`에 담겨온 추가적인 정보를 미들웨어 내에서 사용하고 싶다면 `passReqToCallback: true`라는 속성을 추가해 준다.
 
 회원가입 시, 비밀번호를 암호화하여 저장하였기 때문에, 저장된 암호화된 비밀번호와, 입력된 비밀번호의 암호화 값이 같은지를 확인하는 내용을 추가하였다.
 
