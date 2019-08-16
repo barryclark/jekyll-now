@@ -3,6 +3,11 @@ ErrorDocument 404 /404.html
 # Prevent access to .txt & .yml files
 RedirectMatch 404 \.(txt|yml)$
 
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://isardmiralles.com/$1 [R,L]
+
 # Block fake traffic
 RewriteEngine On
 Options +FollowSymlinks
