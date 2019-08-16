@@ -1,5 +1,15 @@
+<div class="clearfix"></div>
+<br>
+<div id="comments">
+<div class="post-header bg-{{site.default_post_color}}">
+  <h1 class="h1 post-title">Comments</h1>
+</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<article class="post-content">
+<p>Want to leave a comment? Visit <a href="https://github.com/subhadeep1024/Blogs/issues/{{page.commentIssueId}}"> this post's issue page on GitHub</a> (you'll need a GitHub account).</p>
+</article>
+</div>
+
 <script type="text/javascript">
   function loadComments(data) {
     for (var i=0; i<data.length; i++) {
@@ -9,27 +19,11 @@
       var cbody = data[i].body_html;
       var cavatarlink = data[i].user.avatar_url;      
       var cdate = new Date(data[i].created_at);
-      $("#comments").append(
-         "<div class='comment'>" + 
-            "<div class='commentheader'>" + 
-              "<div class='commentgravatar'>" + 
-                '<img src="' + cavatarlink + '" alt="" width="30" height="30">' + 
-              "</div>" + 
-              "<a class='commentuser' href=\""+ cuserlink + "\">" + 
-                cuser + 
-              "</a>" + 
-              "<a class='commentdate' href=\"" + clink + "\">" + 
-                cdate.toLocaleDateString("en") +  
-              "</a>" +
-            "</div>" + 
-            "<div class='commentbody'>" + 
-              cbody + 
-            "</div>" + 
-          "</div>"
-      );
+      var dopts = { month: 'short', day: 'numeric', year: 'numeric' }
+      $("#comments").append('<br><div class="post-header bg-{{site.default_post_color}}"><span class="post-meta">' + cdate.toLocaleDateString("en", dopts) + '</span><br><a class="post-link" href="' + cuserlink + '"><h3 class="h3 post-title">' + cuser + '</h3></a></div><article class="post-content">' + cbody + '</article>');
     }
   }
-  $.ajax("https://api.github.com/repos/subhadeep1024/Blogs/issues/{{page.commentIssueId}}/comments", {
+  $.ajax("https://api.github.com/repos/subhadeep1024/Blogs/issues/{{ page.commentIssueId }}/comments", {
     headers: {Accept: "application/vnd.github.v3.html+json"},
     dataType: "json",
     success: function(msg){
