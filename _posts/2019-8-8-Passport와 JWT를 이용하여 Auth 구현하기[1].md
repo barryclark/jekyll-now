@@ -191,3 +191,10 @@ passport.use(
   )
 );
 ```
+
+<br>
+<span class="reference">관련 post</span>
+
+- [Passport와 JWT를 이용하여 Auth 구현하기[2]](/study/nodejs/Passport와-JWT를-이용하여-Auth-구현하기-2/)
+- [Passport와 JWT를 이용하여 Auth 구현하기[3]](/study/rnative/Passport와-JWT를-이용하여-Auth-구현하기-3/)
+- [Passport와 JWT를 이용하여 Auth 구현하기[4]](/study/rnative/Passport와-JWT를-이용하여-Auth-구현하기-4/)
