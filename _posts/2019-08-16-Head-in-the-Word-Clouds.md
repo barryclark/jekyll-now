@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Head in the (Word) Clouds, Feet on the Ground
+author: Ryan Bailey
 ---
 
 One of the teams I used to work on at my company had a tradition of creating friendly little word clouds that they would printout and give to team members on their birthday.  They were easy to make, and a fun alternative to the standard birthday card, but I never gave word clouds much serious thought as a data visualization tool.  To me, they were merely a fun diversion and a nice decoration to liven up my drab cubicle walls.
