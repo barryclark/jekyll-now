@@ -7,8 +7,6 @@ description: "Meet Cheryl Hung at global conferences and events."
 
 ### 2019
 
-August 7: Cloud Native London
-
 August 21 - 23: Open Source Summit + Embedded Linux Conference North America, San Diego
 
 September 4: Cloud Native London
