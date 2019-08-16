@@ -21,7 +21,7 @@ layout: default
 <div id="comments">
   <h2>Comments</h2>
   <div id="header">
-    Want to leave a comment? Visit <a href="https://github.com/barryclark/jekyll-now/issues/{{page.commentIssueId}}"> this post's issue page on GitHub</a> (you'll need a GitHub account. What? Like you already don't have one?!).
+    Want to leave a comment? Visit <a href="https://github.com/subhadeep1024/Blogs/issues/{{page.commentIssueId}}"> this post's issue page on GitHub</a> (you'll need a GitHub account. What? Like you already don't have one?!).
   </div>
 </div>
 
@@ -33,7 +33,7 @@ layout: default
    // ...
   }
 
-  $.ajax("https://api.github.com/repos/barryclark/jekyll-now/issues/{{page.commentIssueId}}/comments", {
+  $.ajax("https://api.github.com/repos/subhadeep1024/Blogs/issues/{{page.commentIssueId}}/comments", {
     headers: {Accept: "application/vnd.github.full+json"},
     success: function(msg){
       loadComments(msg);
@@ -53,7 +53,7 @@ layout: default
     for (var i=0; i<data.length; i++) {
       var cuser = data[i].user.login;
       var cuserlink = "https://www.github.com/" + data[i].user.login;
-      var clink = "https://github.com/barryclark/jekyll-now/issues/{{page.commentIssueId}}#issuecomment-" + data[i].url.substring(data[i].url.lastIndexOf("/")+1);
+      var clink = "https://github.com/subhadeep1024/Blogs/issues/{{page.commentIssueId}}#issuecomment-" + data[i].url.substring(data[i].url.lastIndexOf("/")+1);
       var cbody = data[i].body_html;
       var cavatarlink = data[i].user.avatar_url;
       var cdate = Date.parse(data[i].created_at).toString("yyyy-MM-dd HH:mm:ss");
