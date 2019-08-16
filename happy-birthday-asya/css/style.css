@@ -49,7 +49,7 @@ table {
   box-sizing: border-box; }
 
 body {
-  background: #2EB5FB;
+  background:url("../bg.png");
   width: 100%;
   height: 100vh;
   display: -ms-grid;
@@ -115,7 +115,6 @@ body {
 .zdog-canvas {
   display: -ms-grid;
   display: grid;
-  background: #2EB5FB;
   -ms-grid-row-align: center;
   align-self: center;
   -ms-grid-column-align: center;
