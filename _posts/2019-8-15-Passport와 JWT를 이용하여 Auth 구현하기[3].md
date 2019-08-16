@@ -130,7 +130,7 @@ export default SocialWebview;
 
 ```react
   const INJECTED_JAVASCRIPT =
-    '(function() {window.ReactNativeWebView.postMessage((window.document.getElementsByTagName("pre")[0].innerHTML));})();';
+    '(function() {if(window.document.getElementsByTagName("pre").length>0){window.ReactNativeWebView.postMessage((window.document.getElementsByTagName("pre")[0].innerHTML));}})();';
   const _handleMessage = async event => {
     console.log(JSON.parse(event.nativeEvent.data));
     let result = JSON.parse(event.nativeEvent.data);
