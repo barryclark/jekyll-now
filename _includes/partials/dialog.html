@@ -5,14 +5,14 @@
 		<dialog>
 				<label for="modal-two">x</label>
 			<header>
-				<h2 itemprop="name"><i class="icon-cog"></i>{{ site.name }}<h2>
+				<h2 itemprop="name"><i class="icon-cog"></i>{{ site.name }}</h2>
 			</header>
 			<div>
 				<div itemscope itemtype="http://schema.org/Person">
 					<p>
 					<div id="deep" class="thumb-8">
 						<em><a href="mailto:{{ site.footer-links.email }}" title="Correu electrònic" itemprop="email"><span class="icon-gmail dialog-ic"></span> {{ site.footer-links.email }}</a></em>
-						<em><a href="tel:+34 {{ site.phone }}" title="Trucar" itemprop="telephone"><span class="icon-mobile dialog-ic"></span> {{ site.phone }}</a></em>
+						<em><a href="tel:+34{{ site.phone }}" title="Trucar" itemprop="telephone"><span class="icon-mobile dialog-ic"></span> {{ site.phone }}</a></em>
 					</div>
 					<em class="thumb-4"><a href="{{ site.baseurl }}/hipertextos/brand/vcard.vcf" download=".vcard" title="Desar contacte"><img class="dialog-svg" src="{{ site.baseurl }}/hipertextos/svg/arrows.svg" alt="botó desar contacte (vCard)"></a></em>
 					</p>
