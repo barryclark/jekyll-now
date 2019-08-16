@@ -16,12 +16,35 @@ layout: default
   {% include disqus.html %}
 </article>
 
+
+
 <div id="comments">
   <h2>Comments</h2>
   <div id="header">
     Want to leave a comment? Visit <a href="https://github.com/barryclark/jekyll-now/issues/1482"> this post's issue page on GitHub</a> (you'll need a GitHub account. What? Like you already don't have one?!).
   </div>
 </div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  function loadComments(data) {
+   // ...
+  }
+
+  $.ajax("https://api.github.com/repos/barryclark/jekyll-now/issues/1482/comments", {
+    headers: {Accept: "application/vnd.github.full+json"},
+    success: function(msg){
+      loadComments(msg);
+   }
+  });
+</script>
+
+
+
+
+
 <script type="text/javascript" src="http://datejs.googlecode.com/svn/trunk/build/date-en-US.js"></script>
 
 <script type="text/javascript">
