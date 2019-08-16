@@ -1,5 +1,5 @@
 ---
-date: 2019-05-16
+date: 2019-05-16 08:00:00 -05:00
 layout: post
 categories: PowerShell
 title: Use ConvertFrom-Csv to convert quser output to a PowerShell object

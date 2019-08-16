@@ -1,5 +1,5 @@
 ---
-date: 2019-05-16
+date: 2019-05-16 00:00:00 -05:00
 layout: post
 categories: SCOM
 title: Using the Asset Status Property in SCOM

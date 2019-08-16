@@ -1,5 +1,5 @@
 ---
-date: 2019-05-24
+date: 2019-05-24 00:00:00 -05:00
 layout: post
 categories: SCOM
 title: Create a PowerShell Grid Widget dashboard to display Pending Restart status
