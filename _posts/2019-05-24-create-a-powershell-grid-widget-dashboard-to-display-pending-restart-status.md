@@ -55,7 +55,7 @@ Before creating the dashboard we need to collect the information we want to disp
     ```
 
 1. From here all of the properties which are available in the _Server Pending Restart Monitor_ can be listed.
- 
+
     ```powershell
     $context.DataItem.Property
     ```
