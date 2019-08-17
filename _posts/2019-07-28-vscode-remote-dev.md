@@ -55,10 +55,11 @@ If you are running earlier Windows, you can use Git for Windows which contains s
 
 ### Visual Studio Code or Visual Studio Code Insiders
 
-Remote Development in Visual Studio Code was initially released in beta through Visual Studio Code Insiders on 2nd May 2019, and has been released as a Preview extension in Visual Studio Code since the May 2019 (version 1.35) update. A few colleagues and I have been playing around with Remote Development since its beta release on Visual Studio Code Insiders; since then, the team 
+Remote Development in Visual Studio Code was initially released in beta through Visual Studio Code Insiders on 2nd May 2019, and has been released as a Preview extension in Visual Studio Code since the May 2019 (version 1.35) update. A few colleagues and I have been playing around with Remote Development since its beta release on Visual Studio Code Insiders; since then, we have conducted an internal team briefing (with our ever-helpful system architect leading the briefing) on how to set up Remote-SSH in Visual Studio Code for use with our development cloud. In fact, I'm using Remote-WSL in Visual Studio Code to write this post and pushing updates to Github via Git on Visual Studio Code.
 
+Stable releases are on Visual Studio Code; however, if you would like to test out improvements and new features that the Visual Studio Code team are working on for future releases, you could play around with Visual Studio Code Insiders - it's like having a sneak peek into what's coming up in the next stable release of Visual Studio Code.
 
-
+### Remote Development extension
 
 
 
