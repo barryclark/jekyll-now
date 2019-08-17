@@ -15,7 +15,7 @@ font-size: 12px
 </style>
 
 
-In this blog we share our path to applying individual US-centric All-Weather investment information to an Australian situation, with the result being a global All-Weather portfolio. This is by no means advice, rather we share our experience in case it is interesting or useful to others and to further develop our ideas. We embarked on this because our current situation necessitated reducing our investment timing risk and an “All-Weather” approach could smooth out the ride.
+In this blog we share our path to applying US-centric All-Weather investment information to an Australian situation, with the result being a global All-Weather portfolio. This is by no means advice, rather we share our experience in case it is interesting or useful to others and to further develop our ideas. We embarked on this because our current situation necessitated reducing our investment timing risk and an “All-Weather” approach could smooth out the ride.
 
 <p class="comment">
 ⚠️ <b>warning links ahead:</b> <a href="https://en.wikipedia.org/wiki/Hyperlink">link</a> abundance due to attempted definition provision for things unfamiliar to non-experts (like us!) 
@@ -121,7 +121,7 @@ For sure, [Figure 1](#figure-1-link) shows the overall return of 100% equities (
 <a name="figure-1-link"></a>
 #### Domestic Australian All-Seasons and Our Versions of the asset mix protect capital, with less frequent and smaller drawdowns than the ASX 300
 ![]({{"/images/AU-combo.png"|absolute_url}})
-**Figure 1**. *Historical performance simulations of domestic Australian “All-Seasons” and “Our Version” portfolios show these portfolios had considerably smaller and less frequent drawdowns compared to 100% equities via the ASX 300 acummulation index. The relevant securities and weights for each of these portfolios are shown in [Table 2](#table-2-link). ETFs for the required asset classes were not available prior to 2012 so the pre-2012 performance shown is based on their underlying indexes. Historical bond performance was derived from futures price indices with coupon payments accumulated semi annually at 10 historical year yield rates. The commodities performance reflects underlying SPGCLEP commodities index only, excluding potential ETF distribution payments. We painstakingly sourced this historic index data from a variety of free sources and can't guarantee its accuracy - if anybody reading this has access to a proprietary data source they’d like to share with us, please get in touch!* <br>
+**Figure 1**. *Historical performance simulations of domestic Australian “All-Seasons” and “Our Version” portfolios show these portfolios had considerably smaller and less frequent drawdowns compared to 100% equities via the ASX 300 acummulation index. The relevant securities and weights for each of these portfolios are shown in [Table 2](#table-2-link). ETFs for the required asset classes were not available prior to 2012 so the pre-2012 performance shown is based on their underlying indexes. Historical bond performance was derived from futures price indices with coupon payments accumulated semi annually at historical 10 year yield rates. The commodities performance reflects underlying SPGCLEP commodities index only, excluding potential ETF distribution payments. We painstakingly sourced this historic index data from a variety of free sources and can't guarantee its accuracy - if anybody reading this has access to a proprietary data source they’d like to share with us, please get in touch!* <br>
 <sub> Note these simulated results do not include brokerage fees and assumes the desired portfolio balance is maintained throughout, whereas in practice, the portfolio would be rebalanced periodically (e.g. every 6 months or so). Simulated historical performance results have inherent limitations since unlike an actual performance record, simulations do not reflect the cost of trading or the impact of actual trades on market factors such as volume and liquidity. See the Q and A section below for commentary on periodic rebalancing. <sub>
 
 
@@ -150,11 +150,11 @@ The historical performance plot in [Figure 2](#figure-2-link) below shows that o
 ***
 
 <a name="table-2-link"></a>
-**Table 2.** *Relevant securities and their weights for each of the portfolios represented by the historical performance plots: All-Seasons (Domestic Australia), Our Version including IL Bonds (Domestic Australia), Our Version (Global-ASX), Our Version (Global-US NYSE/NASDAQ), Our Version including IL bonds (Global-US NYSE/NASDAQ). Historical performance simulations of these portfolios versus 100% equities are shown in Figures 1 and 2. A short description for each ticker is provided in Table 3 below.*
+**Table 2.** *Relevant securities and their weights for each of the portfolios represented by the historical performance plots: All-Seasons (Domestic Australia), Our Version including IL Bonds (Domestic Australia), Our Version (Global-ASX), Our Version (Global-US NYSE/NASDAQ), Our Version including IL bonds (Global-US NYSE/NASDAQ). Historical performance simulations of these portfolios versus 100% equities are shown in [Figure 1](#figure-1-link) and [Figure 2](#figure-2-link). A short description for each ticker is provided in [Table 3](#table-3-link) below.*
 
 |Asset type|All Seasons Domestic Aus (ASX)|Our Version Domestic Aus (ASX)|Our Version Global (ASX)|Our Version Global (NYSE/ NASDAQ)|Global with IL-bonds (NYSE/ NASDAQ)|
 |:---|:---|:---|:---|:---|:---|
-|Equities|30% VAS or FAIR |24% VAS or FAIR|20% VESG;<br>3% VGE|9% VEA;<br>11% VTI;<br>3% EEM|9% VEA;<br>10% VTI;<br>2% EEM|
+|Equities|30% VAS or FAIR|24% VAS or FAIR|20% VESG;<br>3% VGE|9% VEA;<br>11% VTI;<br>3% EEM|9% VEA;<br>10% VTI;<br>2% EEM|
 |Emerging market credit|-|-|13% IHEB|13% EMB|9% EMB|
 |Long-term treasury bonds (~20-25 yrs)|40% GSBK39 &/or GSBI41 &/or GSBE47* |25% GSBK39 &/or GSBI41 &/or GSBE47*|-|27% TLT|14% TLT|
 |Intermediate treasury bonds (~7-10 yrs)|15% IGB|15% IGB|51% VIF|24% BWX|24% BWX|
@@ -168,6 +168,7 @@ The historical performance plot in [Figure 2](#figure-2-link) below shows that o
 
 ***
 
+<a name="table-3-link"></a>
 **Table 3.** *Description and Exchange for each security listed in the [Table 2](#table-2-link). It’s worth noting that BetaShares Australian Sustainability Leaders ETF ([FAIR][23]) provides an ethical/sustainable Aussie equities option, and Vanguard Ethically Conscious International Shares Index ETF ([VESG][41]) provides an ethical/sustainable Global equities option, we found these really interesting.*
 
 |Ticker|Exchange|Description|
@@ -196,6 +197,7 @@ The historical performance plot in [Figure 2](#figure-2-link) below shows that o
 |VEA|NYSE|Vanguard FTSE Developed Markets ETF|
 |VTI|NYSE|Vanguard Total Stock Market ETF|
 |WIP|NYSE|SPDR FTSE International Government Inflation-Protected Bond ETF|
+|FAIR|ASX|BetaShares Australian Sustainability Leaders ETF|
 
 ***
 
@@ -265,7 +267,7 @@ Of course, we cannot comprehensively cover everything here. If you’re after a 
 
 ***
 
-**Question:** How do you know when and by how much to rebalance the portfolio weights. Is this based on the prevailing growth and inflation environments? If som wouldn't it require a measure and also a forecast for growth and inflation?
+**Question:** How do you know when and by how much to rebalance the portfolio weights. Is this based on the prevailing growth and inflation environments? If so wouldn't it require a measure and also a forecast for growth and inflation?
 
 **Answer:**
 
