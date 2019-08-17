@@ -177,6 +177,7 @@ The historical performance plot in [Figure 2](#figure-2-link) below shows that o
 |DBC|NYSE|Invesco DB Commodity Index Tracking Fund|
 |EEM|NYSE|iShares MSCI Emerging Markets ETF|
 |EMB|NASDAQ|iShares JP Morgan USD Emerging Markets Bond ETF|
+|FAIR|ASX|BetaShares Australian Sustainability Leaders ETF|
 |GLD|NYSE|SPDR Gold Shares|
 |GOLD|ASX|ETFS Physical Gold (non-hedged)|
 |GSBE47|ASX|Exchange-traded Treasury Bond – maturity 2047|
@@ -197,7 +198,6 @@ The historical performance plot in [Figure 2](#figure-2-link) below shows that o
 |VEA|NYSE|Vanguard FTSE Developed Markets ETF|
 |VTI|NYSE|Vanguard Total Stock Market ETF|
 |WIP|NYSE|SPDR FTSE International Government Inflation-Protected Bond ETF|
-|FAIR|ASX|BetaShares Australian Sustainability Leaders ETF|
 
 ***
 
