@@ -78,8 +78,11 @@ To install all these extensions, go to **Extensions** on Visual Studio Code and 
 According to the Visual Studio Code docs on Remote - SSH, the instructions for configurating SSH-based authentication are as follows:
 
 1. Check to see if you already have a SSH key. The public key is typically located at **_~/.ssh/id_rsa.pub on macOS/Linux_**, and at **_%USERPROFILE%\.ssh\id_rsa.pub_** on Windows.
-    * If you do not have a key, run the following command in a terminal / command prompt to generate a SSH key-pair. This command creates a RSA-4096 key-pair:
+    * If you do not have a key, run the following command in a terminal / command prompt to generate a SSH key-pair. This command creates a key-pair encrypterd using RSA-4096:
     ```ssh-keygen -t rsa -b 4096```
+
+2. Add the contents of your local public key (the **_id_rsa.pub_** file) to the appropriate authorized_keys file(s) on the remote host:
+    * On Windows, run the following commmands in a local command prompt:
 
 ## References
 
