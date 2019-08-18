@@ -53,17 +53,32 @@ Otherwise, from **Manage optional features -> Add a feature**, select **OpenSSH 
 
 If you are running earlier Windows, you can use Git for Windows which contains ssh.exe in the install path. Note that I have not tested the setup on earlier Windows - it was stated in the [Troubleshooting section of the VSCode Remote Development Docs](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client).
 
+Note that PuTTY is not supported on Windows since the ssh command must be in the path.
+
 ### Visual Studio Code or Visual Studio Code Insiders
 
-Remote Development in Visual Studio Code was initially released in beta through Visual Studio Code Insiders on 2nd May 2019, and has been released as a Preview extension in Visual Studio Code since the May 2019 (version 1.35) update. A few colleagues and I have been playing around with Remote Development since its beta release on Visual Studio Code Insiders; since then, we have conducted an internal team briefing (with our ever-helpful system architect leading the briefing) on how to set up Remote-SSH in Visual Studio Code for use with our development cloud. In fact, I'm using Remote-WSL in Visual Studio Code to write this post and pushing updates to Github via Git on Visual Studio Code.
+Remote Development in Visual Studio Code was initially released in beta through Visual Studio Code Insiders on 2nd May 2019, and has been released as a Preview extension in Visual Studio Code since the May 2019 (version 1.35) update. A few colleagues and I have been playing around with Remote Development since its beta release on Visual Studio Code Insiders; since then, we have conducted an internal team briefing (with our ever-helpful system architect leading the briefing) on how to set up Remote - SSH in Visual Studio Code for use with our development cloud. In fact, I'm using Remote - WSL in Visual Studio Code to write this post and pushing updates to Github via Git on Visual Studio Code.
 
 Stable releases are on Visual Studio Code; however, if you would like to test out improvements and new features that the Visual Studio Code team are working on for future releases, you could play around with Visual Studio Code Insiders - it's like having a sneak peek into what's coming up in the next stable release of Visual Studio Code.
 
+At the point of writing this post, Visual Studio Code Insiders supports 32-bit ARMv7l (or ARMv8 in 32-bit mode) glibc-based Linux (Raspbian Stretch/9+) hosts and Alpine Linux.
+
 ### Remote Development extension
 
+The Remote Development extension pack consists of the following:
 
+1. Remote - SSH
+2. Remote - Containers
+3. Remote - WSL
 
+To install all these extensions, go to **Extensions** on Visual Studio Code and search for **Remote Development** in the Marketplace.
 
+### Configuring SSH-based authentication
 
-## References:
+According to the Visual Studio Code docs on Remote - SSH, the instructions for configurating SSH-based authentication are as follows:
+
+1. Check to see if 
+
+## References
+
 1. [Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh)
