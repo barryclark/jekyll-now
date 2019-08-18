@@ -10,7 +10,6 @@ When running computation codes on the remote HPC (high-performance computing) cl
 
 Amongst my scatter-brained angst of ensuring that the correct jobs are run on the HPC and the correct results are retrieved from the HPC back to my local desktop environment, I wonder - is there a more user-friendly way for me to work and make changes directly on the remote environment, without going through vim and (clumsily, since I do tend to make mistakes on vim) mess up my configuration files?
 
-
 ---
 
 ## Challenges of doing remote dev work in Data Analytics
@@ -18,6 +17,7 @@ Amongst my scatter-brained angst of ensuring that the correct jobs are run on th
 When I started my current role as a data engineer in a Data Analytics team, the team was getting started with moving code development work onboard an on-premise development cloud. Running data preprocessing and model training codes on our laptops took hours or even days to complete, since our work laptops were meant for general-purpose usage and weren't powerful enough (2 cores, 4 threads) to run deep learning codes and computationally-intensive workflows without crashing halfway. Running our codes on CentOS-based compute VM instances in our development cloud was relatively smoother and faster after the VM instances were scaled up to 32 cores; however, editing codes on-the-fly within the remote instance did not feel as intuitive as developing/debugging codes on the GUI code editors on our Windows-based local machine.
 
 Initially, my remote development workflow looks similar to this:
+
 1. Write/edit code on Notepad++ / Visual Studio Code / Jupyter Notebook within local machine
 2. Debug code on Windows CMD terminal / Ubuntu on WSL
 3. If code runs correctly for reduced computational load (correct logic, no syntax errors etc.),refactor/modify code to run for full computational load if required.
@@ -31,12 +31,12 @@ Problem is, what if we are working with large datasets and we can't store them o
 
 That's where the Remote Development Extension in Visual Studio Code comes in to make writing and developing code directly on the remote instance easier - we can now write code closer to our data sources residing in the remote environment. When more data comes in after our Proof of Concept for a data science project gets the buy-in from our clients/business users, the ability to work closer to our data sources within a remote environment (be it a data lake, database, data mart etc.) becomes even more important.
 
-
 ---
 
 ## Setting up a remote dev environment in Visual Studio Code
 
 To get started, we need:
+
 1. An OpenSSH compatible SSH client
 2. Visual Studio Code or Visual Studio Code Insiders
 3. Remote Development extension pack on Visual Studio Code
@@ -77,7 +77,9 @@ To install all these extensions, go to **Extensions** on Visual Studio Code and 
 
 According to the Visual Studio Code docs on Remote - SSH, the instructions for configurating SSH-based authentication are as follows:
 
-1. Check to see if 
+1. Check to see if you already have a SSH key. The public key is typically located at **_~/.ssh/id_rsa.pub on macOS/Linux_**, and at **_%USERPROFILE%\.ssh\id_rsa.pub_** on Windows.
+    * If you do not have a key, run the following command in a terminal / command prompt to generate a SSH key-pair. This command creates a RSA-4096 key-pair:
+    ```ssh-keygen -t rsa -b 4096```
 
 ## References
 
