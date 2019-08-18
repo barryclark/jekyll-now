@@ -16,10 +16,9 @@ Once you're done, implement a queue using two stacks.
 
 ### 풀이
 
+**Stack Class**
+
 ```javascript
-/**
- * Stack Class
- */
 var Stack = function() {
   this.storage = [];
   this.front = 0;
@@ -44,10 +43,12 @@ var Stack = function() {
     return this.rear - this.front;
   };
 };
+```
 
-/**
- * Queue Class
- */
+<br>
+**Queue Class**
+
+```javascript
 var Queue = function() {
   // Use two `stack` instances to implement your `queue` Class
   var inbox = new Stack();
