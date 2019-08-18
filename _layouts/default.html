@@ -3,6 +3,8 @@
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
+    {% include head.html %}
+    {% seo %}
     {% include meta.html %}
 
     <!--[if lt IE 9]>

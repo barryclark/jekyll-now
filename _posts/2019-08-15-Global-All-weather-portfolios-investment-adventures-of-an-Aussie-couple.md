@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Global “all-weather” portfolios - investment adventures of an Aussie couple
+author: Daniel Newman, Amy Quinton
+description: Global all weather investment portfolio for an Australian situation via the ASX
 ---
 
 <style>
@@ -18,7 +20,7 @@ font-size: 12px
 In this blog we share our path to applying US-centric All-Weather investment information to an Australian situation, with the result being a global All-Weather portfolio. This is by no means advice, rather we share our experience in case it is interesting or useful to others and to further develop our ideas. We embarked on this because our current situation necessitated reducing our investment timing risk and an “All-Weather” approach could smooth out the ride.
 
 <p class="comment">
-⚠️ <b>warning links ahead:</b> <a href="https://en.wikipedia.org/wiki/Hyperlink">link</a> abundance due to attempted definition provision for things unfamiliar to non-experts (like us!) 
+⚠️ <b>warning links ahead:</b> <a href="https://en.wikipedia.org/wiki/Hyperlink">link</a> abundance due to attempted definition provision for things unfamiliar to non-experts (like us!)
 </p>
 
 ## Our story - discovering  “All-Weather” investment & why we wanted in
@@ -26,9 +28,9 @@ We ([Amy][1] and [Dan][2]) are a couple in our early 30s, just married, and enjo
 
 We knew from the stock market’s history that our life-savings could quickly plummet in value and take years to recuperate. We didn’t want this to happen at the same time we planned to use our savings for a house deposit! So we started selling our equities and by the start of 2019 most of our savings were sitting in a cash savings account.
 
-The problem was that it could be awhile before we actually purchased a house and we had a nagging sense that our savings should be doing more for us in the meantime. We no longer want the risk of being almost 100% in equities but we also aren’t happy holding mainly cash since any other asset class will provide more returns than cash over time. And we definitely weren’t interested in trying to time the equity market. So what to do? 
+The problem was that it could be awhile before we actually purchased a house and we had a nagging sense that our savings should be doing more for us in the meantime. We no longer want the risk of being almost 100% in equities but we also aren’t happy holding mainly cash since any other asset class will provide more returns than cash over time. And we definitely weren’t interested in trying to time the equity market. So what to do?
 
-When we heard about Bridgewater Associates’ [“All-Weather” strategy][6] to minimize downturns in any economic environment while outperforming cash this seemed like an elegant solution. Living in Melbourne with its reputation for four seasons in one day we’ve learnt to either be prepared for surprise changes in weather or face the consequences! [queue [Four Seasons In One Day][7] by Aussie band Crowded House]. The “All-Weather” analogy struck a chord and we thought having an investment portfolio designed to weather any economic storm would be awesome for our situation! 
+When we heard about Bridgewater Associates’ [“All-Weather” strategy][6] to minimize downturns in any economic environment while outperforming cash this seemed like an elegant solution. Living in Melbourne with its reputation for four seasons in one day we’ve learnt to either be prepared for surprise changes in weather or face the consequences! [queue [Four Seasons In One Day][7] by Aussie band Crowded House]. The “All-Weather” analogy struck a chord and we thought having an investment portfolio designed to weather any economic storm would be awesome for our situation!
 
 ![]({{"/images/melbourne-weather.jpg"|absolute_url}})
 Image [source][8].
@@ -40,14 +42,14 @@ Fortunately, in 2014 the founder of Bridgewater Associates, [Ray Dalio][9], shar
 ## Our problem - how do we apply US-centric All-Weather advice to our Australian situation?
 We found several blogs/articles about [how a normal US citizen could implement their own All-Weather-like strategy][12] but it was not clear how to do this in Australia. So we set out to find a solution that we could personally use, which we share in this blog.
 
-But first, a brief background on what is an All-Weather portfolio? 
+But first, a brief background on what is an All-Weather portfolio?
 
 ### What is an All-Weather portfolio?
 <sub> *“If you can’t predict the future with much certainty and you don’t know which particular economic conditions will unfold, then it seems reasonable to hold a mix of assets that can perform well across all different types of economic environments. Leverage helps make the impact of the asset classes similar.” (from Bridgewater’s [The All-Weather Story][13])* <sub>
 
 All-Weather is an approach to asset allocation designed to minimize downside and perform relatively well regardless of the prevailing economic environment, hence the name “All-Weather”.  The concept was first implemented by Ray Dalio and his team at Bridgewater Associates, now the largest hedge fund in the world. In researching and developing All-Weather, Bridgewater recognized there are primarily two factors driving the value of any asset class - the levels of economic activity (growth) and inflation. Therefore, the economy can be broadly viewed as having four “environments”. These are:
 
-> (1) Rising growth; (2) Falling growth; (3) Rising inflation; and (4) Falling inflation. 
+> (1) Rising growth; (2) Falling growth; (3) Rising inflation; and (4) Falling inflation.
 
 Throughout history and across countries, distinct asset classes have consistently performed well during each of these four environments. So, there is a season for all assets, but unlike the real weather we never know which seasons are next or when the seasons will change, and worse, two seasons can occur at once! So surprises impact asset prices due to unexpected rises or falls in growth and inflation.
 
@@ -55,7 +57,7 @@ Recognizing this, an All-Weather portfolio essentially comprises four sub-portfo
 
 
 ![]({{"/images/all-weather-environments.png"|absolute_url}})
-Image taken from Bridgewater’s [The All Weather Story][13] 
+Image taken from Bridgewater’s [The All Weather Story][13]
 
 The All-Weather approach assumes we can't forecast the future so we don’t know which particular growth/inflation conditions will unfold. Given this, it assigns weights such that there is an equal amount of risk (25%) in each of the 4 possible growth/inflation environments. Therefore the portfolio is designed to perform no matter which growth/inflation environment eventuates.
 
@@ -71,9 +73,9 @@ In a nutshell, the Dalio/Robbins All-Seasons portfolio looks like this:
 - 7.5% commodities
 
 ### All-Seasons vs Bridewater’s All-Weather - what’s the difference?
-**An important point to clarify is that All-Seasons is NOT the same as Bridgewater’s All-Weather.** Bridgewater uses cheap [leverage][16] and sophisticated investment instruments to increase returns while still minimizing risk. The simplified All-Seasons portfolio does not use leverage and thus has **lower expected returns than Bridgewater's All-Weather, but still reduces risk.** 
+**An important point to clarify is that All-Seasons is NOT the same as Bridgewater’s All-Weather.** Bridgewater uses cheap [leverage][16] and sophisticated investment instruments to increase returns while still minimizing risk. The simplified All-Seasons portfolio does not use leverage and thus has **lower expected returns than Bridgewater's All-Weather, but still reduces risk.**
 
-Throughout this article, we use the term “All-Weather” to convey the general concept of diversified, risk-balanced asset allocation developed by Bridgewater outlined above, acknowledging that All-Weather portfolios that utilise leverage appropriately, like Bridgewater do, will outperform non-leveraged versions. See the Q and A section below for more commentary on using leverage in a risk balanced investment strategy. 
+Throughout this article, we use the term “All-Weather” to convey the general concept of diversified, risk-balanced asset allocation developed by Bridgewater outlined above, acknowledging that All-Weather portfolios that utilise leverage appropriately, like Bridgewater do, will outperform non-leveraged versions. See the Q and A section below for more commentary on using leverage in a risk balanced investment strategy.
 
 *As an aside, we’re still working on figuring out how the average individual investor in Australia can cost-effectively leverage the lower volatility assets (e.g. Treasury bonds) to have similar expected volatility/returns as equities, thus maintaining risk parity while increasing returns, like Bridgewater can. One way might be through Treasury bond futures. But we need to iron out how to achieve this practically in a cost effect way. If you have the answer, let us know!*
 
@@ -86,13 +88,13 @@ Click [here to skip](#table-2-link) straight to our table of portfolios showing 
 
 ### Domestic
 
-The All-Seasons portfolio outlined by Robbins’ has a domestic bent, comprising US stocks and [government bonds (ie treasuries)][19]. We wanted exposure to both Australian and Global asset markets. 
+The All-Seasons portfolio outlined by Robbins’ has a domestic bent, comprising US stocks and [government bonds (ie treasuries)][19]. We wanted exposure to both Australian and Global asset markets.
 
 The relevant global ETFs available on the Australian Securities Exchange (ASX) exclude Australian assets (ie are “ex AU”). Therefore to have exposure to Australian and global markets it was necessary to include these securities separately (see the Q and A section below for more commentary on this).
 
 We first located domestic Australian securities traded on the ASX matching [each asset type suggested by Ray Dalio to Tony Robbins for the simplified All-Seasons portfolio][20]. The [Table 1](#table-1-link) below includes the relevant Domestic securities we found.
- 
-Scroll down to [Table 2](#table-2-link) and for example portfolios that select one security from each asset type. 
+
+Scroll down to [Table 2](#table-2-link) and for example portfolios that select one security from each asset type.
 
 <a name="table-1-link"></a>
 **Table 1.** *Relevant securities for asset types in an Australian domestic “All-Seasons” portfolio.*
@@ -106,15 +108,15 @@ Scroll down to [Table 2](#table-2-link) and for example portfolios that select o
 |Commodities|BetaShares Commodities Basket ETF - Currency Hedged (synthetic) ([QBC][30])|
 
 
-We understood that the underlying principles of the All-Weather approach are [timeless and universal][31] and therefore would apply in Australia (and globally). But we weren’t sure whether the [asset class proportions recommended for the US All-Seasons][32] would be the same in Australia. So we (particularly [the data scientist among us][33]) wanted to test it out on plenty of historical data before trusting it with our life savings. To sense test, we first looked at historical performance using the [All-Seasons asset weights][32] for both US and Australian assets. 
+We understood that the underlying principles of the All-Weather approach are [timeless and universal][31] and therefore would apply in Australia (and globally). But we weren’t sure whether the [asset class proportions recommended for the US All-Seasons][32] would be the same in Australia. So we (particularly [the data scientist among us][33]) wanted to test it out on plenty of historical data before trusting it with our life savings. To sense test, we first looked at historical performance using the [All-Seasons asset weights][32] for both US and Australian assets.
 
 Dan built [an algorithm][34] to perform risk-parity weighting in line with Bridgewater’s [All-Weather principles][35]. This was useful to:
- 
+
 1. confirm that Australian and global based asset classes have roughly the same relative risk-weightings as their US counterparts,
 2. allow adjustment of the risk-parity weights to account for additional asset types, such as [inflation linked (IL) bonds][36] and [emerging market (EM) credit][37], and
 3. [back-test][38] the resulting portfolio weights to assess historical returns and more importantly, [drawdowns][39], in terms of their size, duration and frequency.
 
-Experimenting with different assets through [this algorithm][34] gave us comfort that the asset weightings recommended for the US are generally applicable in Australia (and globally). Since Bridgewater uses IL-bonds and EM credit in their All-Weather strategy, and since we can access these via the ASX and have [an algorithm][34] enabling us to risk-balance them, we also added IL bonds (and EM credit for global) to our versions of the All-Weather. Historical performance plots in [Figure 1](#figure-1-link), using Australian domestic assets, shows that “our version” does a very good job of avoiding downturns compared to 100% equities/ASX300. 
+Experimenting with different assets through [this algorithm][34] gave us comfort that the asset weightings recommended for the US are generally applicable in Australia (and globally). Since Bridgewater uses IL-bonds and EM credit in their All-Weather strategy, and since we can access these via the ASX and have [an algorithm][34] enabling us to risk-balance them, we also added IL bonds (and EM credit for global) to our versions of the All-Weather. Historical performance plots in [Figure 1](#figure-1-link), using Australian domestic assets, shows that “our version” does a very good job of avoiding downturns compared to 100% equities/ASX300.
 
 For sure, [Figure 1](#figure-1-link) shows the overall return of 100% equities (ASX 300 accumulation) was the highest, but it also shows one could have put money in/taken it out of All-Seasons and Our Version at any time since 2001 without suffering unpalatable losses. This is what we are currently after! The same can not be said for 100% equities/ASX300 which, on four occasions between 2001 and 2019, suffered drawdowns large enough to be unacceptable for our current situation.
 
@@ -139,12 +141,12 @@ This process meant we identified ETFs available on US securities exchanges that 
 
 Out of curiosity we added inflation-linked bonds to our Global (NYSE/ NASDAQ) portfolio. But given we could not find a global IL bond ETF on the ASX, we chose not to include IL bonds in our Global (ASX) portfolio. Of course it would be possible to access a Global IL bonds ETF via an international trading platform, but at this point we wanted to stick to ASX traded global securities to reduce complexity.
 
-The historical performance plot in [Figure 2](#figure-2-link) below shows that our Global version also does well at avoiding downturns compared to a 100% global equities allocation. Again, 100% equities gives a higher return, but our current time-horizon and needs favour limiting drawdowns over maximising returns. 
+The historical performance plot in [Figure 2](#figure-2-link) below shows that our Global version also does well at avoiding downturns compared to a 100% global equities allocation. Again, 100% equities gives a higher return, but our current time-horizon and needs favour limiting drawdowns over maximising returns.
 
 <a name="figure-2-link"></a>
 #### Our Global asset mix protects capital during turbulence with less frequent and smaller drawdowns, compared to 100% Global Equities
 ![]({{"/images/Global-combo.png"|absolute_url}})
-**Figure 2.** *Historical performance simulations of “Our Version” of an unleveraged global All-Weather portfolio show it had lower returns but also considerably smaller and less frequent drawdowns compared to 100% “Global Equities”. The relevant securities and weights for each of the portfolios depicted here are provided in [Table 2](#table-2-link).*<br> 
+**Figure 2.** *Historical performance simulations of “Our Version” of an unleveraged global All-Weather portfolio show it had lower returns but also considerably smaller and less frequent drawdowns compared to 100% “Global Equities”. The relevant securities and weights for each of the portfolios depicted here are provided in [Table 2](#table-2-link).*<br>
 <sub>Note these simulated results do not include brokerage fees and assumes the desired portfolio balance is maintained throughout, whereas in practice, the portfolio would be rebalanced periodically (e.g. every 6 months or so). Simulated historical performance results have inherent limitations since unlike an actual performance record, simulations do not reflect the cost of trading or the impact of actual trades on market factors such as volume and liquidity. See the Q and A section below for commentary on periodic rebalancing.<sub>
 
 ***
@@ -201,14 +203,14 @@ The historical performance plot in [Figure 2](#figure-2-link) below shows that o
 
 ***
 
-## Closing Remarks 
+## Closing Remarks
 In the hope it may be interesting or useful to others, we’ve shared our experiences of realising we had to switch our time-horizon from long- to medium-term when thinking about investing, and that an “All-Weather” approach could help us do this. We’ve also shared our path to overcoming the problem of how to apply US-centric All-Seasons/All-Weather advice to an Australian situation using both domestic and global assets - the result being a globally diversified All-Weather portfolio. We do not comment on what percentage should be allocated to domestic vs global assets, however we do discuss this further in the Q and A section.
 
-It’s worth noting that if our personal situation was different, say already owning a house and not needing to draw on our savings for the next 20 years, we may just keep dollar cost averaging our savings into low cost passive equity index funds. But that’s not the case for us right now. 
+It’s worth noting that if our personal situation was different, say already owning a house and not needing to draw on our savings for the next 20 years, we may just keep dollar cost averaging our savings into low cost passive equity index funds. But that’s not the case for us right now.
 
-Also, we are not trying to convince anyone in any situation to take our approach. We know a lot of people are interested in All-Weather, and we are simply sharing our own process and experience in building these portfolios in case it is interesting/beneficial to others, and also to clarify and develop our own thinking. To be clear, we are not qualified in finance - our backgrounds are data science/neuroscience, and law/environmental sustainability. 
+Also, we are not trying to convince anyone in any situation to take our approach. We know a lot of people are interested in All-Weather, and we are simply sharing our own process and experience in building these portfolios in case it is interesting/beneficial to others, and also to clarify and develop our own thinking. To be clear, we are not qualified in finance - our backgrounds are data science/neuroscience, and law/environmental sustainability.
 
-But we’ve enjoyed finding a solution to protect our assets’ value during any economic environment in case we want to draw on it at any time. We hope our approach will tame the rollercoaster that comes with the usual bull-runs and drawdowns when entirely in equities (see [Figure 3](#figure-3-link) below), and also decrease our discomfort if there is another big down-turn like 2008. 
+But we’ve enjoyed finding a solution to protect our assets’ value during any economic environment in case we want to draw on it at any time. We hope our approach will tame the rollercoaster that comes with the usual bull-runs and drawdowns when entirely in equities (see [Figure 3](#figure-3-link) below), and also decrease our discomfort if there is another big down-turn like 2008.
 
 We plan to keep refining our All-Weather portfolios / approach as time permits, hopefully finding practical ways to **a)** leverage the low volatility assets up to the level of equities’ volatility thus maintaining our All-Weather risk balance while increasing our expected returns, **b)** include global IL bonds in our ASX based global portfolio, **c)** add more [ESG][42] compatible assets, **d)** improve the code in our [all-weather-risk-parity][34] repository to allow it be used for any country (pull-requests with improvements/additions welcome if any devs. are reading this!) - perhaps we’ll even make a dashboard so those not comfortable with programming can play around, and **e)** research whether or not there is a place for crypto currencies to be added into our All-Weather asset mix. So much to do, so little time! But we’ll see how we go.<br>
 
@@ -229,7 +231,7 @@ Of course, we cannot comprehensively cover everything here. If you’re after a 
 
 - The asset allocation is not based on the correlations between assets.
 - Rather, the portfolio is created based on the relationships of assets types to their environmental drivers. (There are four environmental drivers – economic growth, economic decline, inflation and deflation.)
-- While asset classes offer a risk premium that is similar once adjusting for risk, their inherent sensitivities to shifts in the economic environment are different. 
+- While asset classes offer a risk premium that is similar once adjusting for risk, their inherent sensitivities to shifts in the economic environment are different.
 - Therefore, we can structure a portfolio of risk adjusted asset classes so that their environmental sensitivities reliably offset one another, leaving the risk premium as the driver of returns.
 
 ***
@@ -238,7 +240,7 @@ Of course, we cannot comprehensively cover everything here. If you’re after a 
 
 **Answer:** No, because:
 
-- The leverage makes the volatility of your bonds’ equal to your equities and thus gives better diversification than possible without leverage. “For example, if I put 50% of my money in an unleveraged Treasury bond and 50% of my money in stocks, my portfolio would have been dominated by stocks during the 2008 financial crisis because stocks are more volatile; however, if I leveraged my bonds to have the same volatility as stocks, I would have had much better diversification and would have had much lower risks during the financial crisis.” (Bridgewater’s [Engineering Targeted Returns and-Risks][44]) 
+- The leverage makes the volatility of your bonds’ equal to your equities and thus gives better diversification than possible without leverage. “For example, if I put 50% of my money in an unleveraged Treasury bond and 50% of my money in stocks, my portfolio would have been dominated by stocks during the 2008 financial crisis because stocks are more volatile; however, if I leveraged my bonds to have the same volatility as stocks, I would have had much better diversification and would have had much lower risks during the financial crisis.” (Bridgewater’s [Engineering Targeted Returns and-Risks][44])
 - We wouldn't  need to use too much leverage, for example Bridgewater’s All-Weather strategy is only around 2 times leveraged.
 
 ***
@@ -247,19 +249,19 @@ Of course, we cannot comprehensively cover everything here. If you’re after a 
 
 **Answer:** This is an important question in relation to portfolio diversification.
 
-- A desire to have geographical diversification was the reason we created a global All-Weather portfolio. The reasons for our approach to develop both the domestic and global portfolios separately are two-fold: 
+- A desire to have geographical diversification was the reason we created a global All-Weather portfolio. The reasons for our approach to develop both the domestic and global portfolios separately are two-fold:
 
 	- First, it was simpler to apply the All-Weather principles to domestic and global separately because global All-Weather asset allocation is more complex than domestic only. Our limited resources and reliance on global index funds means our global risk weightings are less precise. This is in part because we cannot control the exact weightings the index funds use across countries. For example, the global stocks ETF is geographically weighted differently to the global bonds ETF.
-	- Second, the global ETFs traded on the ASX exclude Australian assets (ie are “ex AU”), therefore to have exposure to Australian markets it is necessary to include these securities separately. 
+	- Second, the global ETFs traded on the ASX exclude Australian assets (ie are “ex AU”), therefore to have exposure to Australian markets it is necessary to include these securities separately.
 
-- Although we have noted that geographical diversification is important (see relevant [Bridgewater Associates 2019 article][17] and [Vanguard Australia 2017][45] article on benefits of international diversification), we have not commented on how we think assets should be allocated across the Australian vs Global assets because it is a thorny issue. For example, if we were to allocate assets based on Australia’s market cap within global indices, we would only have about 3% Australian assets and the rest (97%) would be global. However, [Vanguard Australia’s research][46] shows that Australians tend to have a strong home bias when investing in shares. In 2014, Australians collectively held 66.5% Australian shares in their share portfolio, despite Australia representing only approximately 2.5% of the global market at that time. Robin Bowerman, Head of Corporate Affairs at Vanguard Australia comments that ‘home-bias investing ranks among the biggest forms of under-diversification’ ([see Bowerman’s article][47]). We have found that we are not completely immune to this ‘home bias’, even though we are aware of the problem! 
+- Although we have noted that geographical diversification is important (see relevant [Bridgewater Associates 2019 article][17] and [Vanguard Australia 2017][45] article on benefits of international diversification), we have not commented on how we think assets should be allocated across the Australian vs Global assets because it is a thorny issue. For example, if we were to allocate assets based on Australia’s market cap within global indices, we would only have about 3% Australian assets and the rest (97%) would be global. However, [Vanguard Australia’s research][46] shows that Australians tend to have a strong home bias when investing in shares. In 2014, Australians collectively held 66.5% Australian shares in their share portfolio, despite Australia representing only approximately 2.5% of the global market at that time. Robin Bowerman, Head of Corporate Affairs at Vanguard Australia comments that ‘home-bias investing ranks among the biggest forms of under-diversification’ ([see Bowerman’s article][47]). We have found that we are not completely immune to this ‘home bias’, even though we are aware of the problem!
 - According to Aidan Geysen, Senior Investment Strategist and Manager with Vanguard’s Investment Strategy Group, there are numerous reasons investors prefer home equities, some of which are behavioural and some that have sound investment rationale, including ‘a preference for the familiar, ease of access, aversion to currency risk, tax benefits and liability hedging to name a few’ ([see Geysen’s article][48]). Along with all information included in our article, we leave the reader to form their own view on what geographical asset allocation is most appropriate.
 
 ***
 
-**Question:** How does your algorithm arrive at the target weights for the various asset classes? 
+**Question:** How does your algorithm arrive at the target weights for the various asset classes?
 
-**Answer:** The algorithm takes as input the users’ desired assets which the user has already pre-assigned into their relevant "environments" in this ['portfolio-settings.yaml'][49] file (e.g. stocks go in the 'rising growth' and the 'falling inflation' environments because that's when they tend to do well, IL-bonds assigned to the 'rising inflation' and 'falling growth' environments, etc). The algorithm then: 
+**Answer:** The algorithm takes as input the users’ desired assets which the user has already pre-assigned into their relevant "environments" in this ['portfolio-settings.yaml'][49] file (e.g. stocks go in the 'rising growth' and the 'falling inflation' environments because that's when they tend to do well, IL-bonds assigned to the 'rising inflation' and 'falling growth' environments, etc). The algorithm then:
 
 1. creates weights for risk-parity of the assets within each environment, essentially creating 4 "sub-portfolios", a sub-portfolio for each environment. Then,
 2. it looks at the overall volatility of each sub-portfolio and creates risk-parity weights between each of the 4 sub-portfolios so each takes on 25% of the risk. Then,
@@ -271,8 +273,8 @@ Of course, we cannot comprehensively cover everything here. If you’re after a 
 
 **Answer:**
 
-- This passive All-Weather approach assumes we can't/won't forecast the future so we don’t know which particular growth/inflation conditions will unfold. Given this, it assigns weights such that there is an equal amount of risk (25%) in each of the 4 possible growth/inflation environments. Therefore the portfolio is designed to perform no matter which growth/inflation environment dominates. 
-- Regarding the question of when/how much to rebalance: how much is easy because we simply rebalance so our portfolio weights are back in line with the target weights already determined by the All-Weather risk-parity algorithm. These target weights shouldn’t change much year-to-year as they should be arrived at using many year's historical volatility data. Each additional year of volatility data has small effect on overall volatility estimates. 
+- This passive All-Weather approach assumes we can't/won't forecast the future so we don’t know which particular growth/inflation conditions will unfold. Given this, it assigns weights such that there is an equal amount of risk (25%) in each of the 4 possible growth/inflation environments. Therefore the portfolio is designed to perform no matter which growth/inflation environment dominates.
+- Regarding the question of when/how much to rebalance: how much is easy because we simply rebalance so our portfolio weights are back in line with the target weights already determined by the All-Weather risk-parity algorithm. These target weights shouldn’t change much year-to-year as they should be arrived at using many year's historical volatility data. Each additional year of volatility data has small effect on overall volatility estimates.
 - But when to rebalance depends on how happy we are to let the weights drift considering brokerage costs. In this [article][15] on a simplified version of Ray Dalio’s All-Weather, Robbins recommends rebalancing the All-Seasons “at least annually” and notes that “if done properly, this can actually increase tax efficiency”. People’s tax situations vary so we don’t comment on a tax strategy here.
 - If a big financial upheaval, like in 2008, occurs in the middle of our usual rebalancing interim, it may be worth rebalancing prematurely. But assuming our portfolio weights are still within a few % of the targets weights (we’d assign some arbitrary threshold, say <10% abs. overall unbalance) there should be limited need to rebalance outside our chosen interval.
 
@@ -281,14 +283,14 @@ Of course, we cannot comprehensively cover everything here. If you’re after a 
 **Question:** What about including crypto currencies like BitCoin?
 
 **Answer:** We could certainly consider adding crypto currencies like BitCoin into an asset mix, if we had good reasoning and evidence to decide in which of the four environments it should do well. But we have not yet done any research to confirm. We plan to research this in the future.
-  
+
 ***
 
 Want to know more about Bridgewater’s All-Weather investment strategy? See their articles:
- 
-1. [The All Weather Story: How Bridgewater Associates created the All Weather Investment Strategy, the foundation of the ‘Risk Parity’ Movement][6]; 
-2. [Engineering Targeted Returns and Risk][44]; 
-3. [Our thoughts about Risk Parity and All Weather][43]; 
+
+1. [The All Weather Story: How Bridgewater Associates created the All Weather Investment Strategy, the foundation of the ‘Risk Parity’ Movement][6];
+2. [Engineering Targeted Returns and Risk][44];
+3. [Our thoughts about Risk Parity and All Weather][43];
 4. [Risk Parity is about Balance][35].
 
 
