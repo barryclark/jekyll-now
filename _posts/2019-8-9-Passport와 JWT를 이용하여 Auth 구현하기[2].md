@@ -196,4 +196,4 @@ const socialLogin = (loginData, accessToken, social, cb) => {
 
 - [Passport와 JWT를 이용하여 Auth 구현하기[1]](/study/nodejs/Passport와-JWT를-이용하여-Auth-구현하기-1/)
 - [Passport와 JWT를 이용하여 Auth 구현하기[3]](/study/rnative/Passport와-JWT를-이용하여-Auth-구현하기-3/)
-- [Passport와 JWT를 이용하여 Auth 구현하기[4]](/study/rnative/Passport와-JWT를-이용하여-Auth-구현하기-4/)
+- [Passport와 JWT를 이용하여 Auth 구현하기[4]](/study/nodejs/Passport와-JWT를-이용하여-Auth-구현하기-4/)

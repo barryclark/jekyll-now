@@ -23,10 +23,10 @@ Passport 모듈은 다양한 인증 API를 간편하게 구현할 수 있도록 
 
 ### Passport 설치
 
-Passport는 각 SNS별 로그인 기능을 패키지화해서 제공하므로, `passport`와 원하는 패키지를 설치해 주면 되는데, 이번 포스팅은 local 로그인에 관한 내용을 다룰 것이므로, `passport`와 `passport-local`을 설치한다. 또한, JWT 구현을 위해 `passport-jwt`와 `jsonwebtoken`도 설치한다.
+Passport는 각 SNS별 로그인 기능을 패키지화해서 제공하므로, `passport`와 원하는 패키지를 설치해 주면 되는데, 이번 포스팅은 local 로그인에 관한 내용을 다룰 것이므로, `passport`와 `passport-local`을 설치한다. 또한, JWT 구현을 위해 `jsonwebtoken`도 설치한다.
 
 ```bash
-$ yarn add passport passport-local passport-jwt jsonwebtoken
+$ yarn add passport passport-local jsonwebtoken
 ```
 
 ### app.js 작성
@@ -70,6 +70,8 @@ passport 미들웨어는 `passport.authenticate(passport 미들웨어 이름, ca
 또한, session을 사용하지 않는 경우, `{ session: false }`를 `passport.authenticate()`의 인자로 넘겨주어야 한다. signin 시, "local_login"이라는 패스포트 미들웨어를 통해 유효한 유저인지 확인이 되고 나면, token을 생성하여 client로 보내주는 코드를 추가하였다.
 
 ```javascript
+const jwt = require("jsonwebtoken");
+
 module.exports = {
   signup: {
     post: async (req, res, next) => {
@@ -128,7 +130,6 @@ module 디렉토리를 만들고, passport.js 파일을 만든다.
 ```javascript
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
-const passportJWT = require("passport-jwt");
 const { Users } = require("../models");
 const crypto = require("crypto");
 
