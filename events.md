@@ -2,12 +2,13 @@
 layout: page
 title: Events
 permalink: /events/
-description: "Meet Cheryl Hung at global conferences and events."
+description: "Cheryl Hung's upcoming talks at global conferences and events."
 ---
 
 ### 2019
 
 August 21 - 23: Open Source Summit + Embedded Linux Conference North America, San Diego
+* **Keynote**
 
 September 4: Cloud Native London
 
