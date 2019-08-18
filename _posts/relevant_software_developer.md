@@ -48,7 +48,7 @@ Firstly *congrats* on starting this journey, I am sure you will enjoy it and ben
 In regards to the medium, you should chose the one you feel easiest for to stick with it. Like checking out the [GitHub trending page](https://github.com/trending) or going to meetup because you can drag someone with you (hopefully not by force).
 After the first taste of cool new information, the hunger will set in for more sources because you probably will be more curious in a wider scope as you widen your perceptive and knowledge.
 
-I recommend if you learned something interesting, that drove you to read more then source about it *SHARE* it with you colleagues (work, friends and community). You will probably gain a lot from the *discussions* that will arise, that will help you in getting to know about other related issues or even to find out that you did not quiet understood what you read. Use the research that other people worked hard to achieve and give back.
+I recommend if you learned something interesting, that drove you to read more then source about it **SHARE** it with you colleagues (work, friends and community). You will probably gain a lot from the **discussions** that will arise, that will help you in getting to know about other related issues or even to find out that you did not quiet understood what you read. Use the research that other people worked hard to achieve and give back.
 
 Conclusion
 ----------
@@ -60,8 +60,19 @@ Examples - What I enjoy now
 
 I didn't want to list this in the blog, so it will be more easy to find it later after reading this post (or before it's a possibility ;)).
 
-* Articles feeds -.
-* YouTube videos -.
-* Podcasts -.
+* Articles feeds
+  * [Medium](https://medium.com/).
+  * [dev.to](https://dev.to/).
+
+* YouTube videos
+  * [CppCon](https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg).
+  * [PyCon Worldwide](https://www.youtube.com/results?search_query=pycon).
+  * [FullStack Developers Israel (Hebrew)](https://www.youtube.com/channel/UCV7lV9Lq2sc7t0QEKS4xH7A).
+  * [Reversim (Hebrew)](https://www.youtube.com/channel/UCYo4kdfR4KkHKMaE6xqO8XA).
+  * [StatsCraft (Hebrew)](https://www.youtube.com/channel/UCkHK2ZtGlbG_vvH0lTdpjkQ).
+  * [Wix Engineering Tech Talks](https://www.youtube.com/channel/UCFXVPytLSv9ojAMgBIDh_qA).
+* Podcasts
+  * [Reversim (Hebrew)]().
+  * [No tarbut developers (Hebrew)](http://notarbut.co/).
 
 Until next time :)
