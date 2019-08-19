@@ -15,6 +15,13 @@ avatar: https://gravatar.com/avatar/a24c01394983fa6274e24238a67d0177?size=640
 # Flags below are optional
 #
 
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/avater.png
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -76,6 +83,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-seo-tag # Generate OpenGraph and TwitterCard metadata
 
 # Exclude these files from your production _site
 exclude:
