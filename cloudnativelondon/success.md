@@ -4,7 +4,7 @@ title: Thanks for supporting Cloud Native London!
 description: "Cloud Native London sponsor on boarding"
 ---
 
-If this is the first time you have sponsored, please copy the following into an email and complete:
+If you are a first time sponsor, please copy the following into an email and complete:
 
 > **Company:**  
 > **One line blurb:**  
