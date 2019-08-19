@@ -1,12 +1,16 @@
 ---
 layout: page
-title: Payment options for Cloud Native London sponsorship
+title: Payment methods for Cloud Native London
 description: "Pay Cloud Native London by bank transfer, direct debit, credit or debit card."
 ---
 
-## 1. One off payment
+Monthly sponsors usually pay through a direct debit. The payment goes out on the
+15th of each month.
 
-Here are account details for bank transfers:
+<button onclick="location.href='https://pay.gocardless.com/AL00022PZ8R1ZJ'" type="button">
+         Set up direct debit</button>
+
+For one-off payments, make the bank transfer to:
 
 > **Amount:** £600.00  
 > **Payee name:** Cloud Native London Ltd  
@@ -14,18 +18,10 @@ Here are account details for bank transfers:
 > **Account number:** 507049586  
 > **Reference:** See invoice
 
-Debit / credit cards cost us a lot more in transaction fees, so we
-appreciate you using bank transfer if possible!
+Alternatively, you can make a card payment:
 
 {% if jekyll.environment == "production" %}
 {% include stripe.html %}
 {% else %}
 {% include stripe-test.html %}
 {% endif %}
-
-
-
-## 2. Regular sponsorship
-
-<button onclick="location.href='https://pay.gocardless.com/AL00022PZ8R1ZJ'" type="button">
-         Set up direct debit on the 15th of each month</button>
