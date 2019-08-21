@@ -25,9 +25,13 @@ Kicking off our evening, Erik Onnen from Cloudability asked [What did that conta
 
 Our second speaker was Rimantas Mocevicius from JFrog, who talked about his experiences around [How community projects such as central repositories can be run on Kubernetes](https://skillsmatter.com/skillscasts/14328-how-community-projects-such-as-central-repositories-can-be-run-on-kubernetes).
 
-We also have a reminder for you that comes with a tasty offer: 
+## Offers
 
-[Helm Summit](https://events.linuxfoundation.org/events/helm-summit-2019/) is taking place in Amsterdam, Netherlands on September 11-12. Use HELM19B20 for a 20% discount off the ticket price. 
+[**Helm Summit**](https://events.linuxfoundation.org/events/helm-summit-2019/) is taking place in Amsterdam, Netherlands on September 11-12. Use HELM19B20 for a 20% discount off the ticket price.
+
+ESPC19, Europe’s largest Microsoft Technologies Conference, is taking place in Prague from 2–5 December. [**Azure @ ESPC19**](http://bit.ly/AzureESPC19) is dedicated to all things Azure, including containers, AKS and DevOps.
+1. Enter the [online entry competition](http://bit.ly/AzureESPC19Comp) by Wednesday 28th August 2019 to win one of three 3-day tickets.
+2. Early Bird Pricing is currently available. Use ESPC19Azure for an additional €200 discount on any [3 or 4 day tickets](http://bit.ly/ESPC19Tickets)
 
 ## Cloud Native London September
 
