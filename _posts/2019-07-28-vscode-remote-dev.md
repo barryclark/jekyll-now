@@ -2,7 +2,7 @@
 layout: post
 title: "Musings about Remote Development with Visual Studio Code"
 description: "Short snippets of notes on VSCode Remote Developent extensions from the perspective of a remote compute user"
-excerpt: Keeping codes and configuration files in sync between client machine and remote server used to be a drawn-out exercise in personal responsibility via SFTP/SCP. VSCode Remote Development looks to change that - for the better.
+excerpt: Keeping codes and configuration files in sync between client machine and remote server used to be a drawn-out exercise in personal responsibility via SFTP/SCP. VSCode Remote Development looks to change that - for the better. Here's my notes on VSCode Remote Development.
 ---
 ---
 
@@ -41,7 +41,7 @@ To get started, we need:
 2. Visual Studio Code or Visual Studio Code Insiders
 3. Remote Development extension pack on Visual Studio Code
 
-At the time of this post, my local machine is running on Windows 10 version 1809.
+At the time of this post, my local machine is running on **Windows 10 version 1809**.
 
 ### OpenSSH client for Windows users
 
@@ -82,7 +82,73 @@ According to the Visual Studio Code docs on Remote - SSH, the instructions for c
     ```ssh-keygen -t rsa -b 4096```
 
 2. Add the contents of your local public key (the **_id_rsa.pub_** file) to the appropriate authorized_keys file(s) on the remote host:
-    * On Windows, run the following commmands in a local command prompt:
+    * Run the following commmands in a local command prompt:
+
+    ```bash
+    SET REMOTEHOST=your-user-name-on-host@host-fqdn-or-ip-goes-here
+
+    scp %USERPROFILE%\.ssh\id_rsa.pub %REMOTEHOST%:~/tmp.pub
+    ssh %REMOTEHOST% "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat ~/tmp.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && rm -f ~/tmp.pub"
+    ```
+
+Since I might need to access multiple remote hosts using SSH, I configured SSH-based authentication using a dedicated SSH key for Remote SSH in Visual Studio Code. The instructions in the docs are as follows:
+
+1. Run the following command in a terminal / command prompt to generate a SSH key-pair. This command creates a key-pair encrypterd using RSA-4096:
+```ssh-keygen -t rsa -b 4096 -f %USERPROFILE%\.ssh\id_rsa-remote-ssh```
+
+2. In VS Code, run Remote-SSH: Open Configuration File... in the Command Palette (F1), select an SSH config file, and add (or modify) a host entry as follows:
+
+    ```yaml
+    Host name-of-ssh-host-here
+    User your-user-name-on-host
+    HostName host-fqdn-or-ip-goes-here
+    IdentityFile ~/.ssh/id_rsa-remote-ssh
+    ```
+
+3. Add the contents of the local id_rsa-remote-ssh.pub file generated in step 1 to the appropriate authorized_keys file(s) on the SSH host:
+    * Run the following commmands in a local command prompt:
+
+    ```bash
+    SET REMOTEHOST=your-user-name-on-host@host-fqdn-or-ip-goes-here
+
+    scp %USERPROFILE%\.ssh\id_rsa.pub %REMOTEHOST%:~/tmp.pub
+    ssh %REMOTEHOST% "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat ~/tmp.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && rm -f ~/tmp.pub"
+    ```
+
+### Setting Up SSH-Agent
+
+To enable SSH Agent automatically on Windows, start PowerShell as an Administrator and run the following commands:
+
+```powershell
+# Make sure you're running as an Administrator
+Set-Service ssh-agent -StartupType Automatic
+Start-Service ssh-agent
+Get-Service ssh-agent
+```
+
+Now the agent will be started automatically on login.
+
+After started, try to add identity by using the command:
+
+```powershell
+ssh-add
+```
+
+A few colleagues faced errors when running the above command. A workaround solution recommended by my team's chief architect is to run the following command:
+
+```powershell
+sc.exe create sshd binPath=C:\Windows\System32\OpenSSH\ssh.exe
+```
+
+and try to add identity again.
+
+Use the following command to check if identity is added successfully:
+
+```powershell
+ssh-add -l
+```
+
+## Connecting to Remote Instance via Visual Studio Code
 
 ## References
 
