@@ -13,7 +13,7 @@ tags:
 
 * Data centers emit as much CO2 as the airline industry. If the global IT industry were a country, only China and the United States would contribute more to climate change.
 
-* Infrastructure matters, but the impact is up to us.
+* Infrastructure matters - but the impact is up to us.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cheryl Hung, Director of Ecosystem, Cloud Native Computing Foundation<a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> <a href="https://twitter.com/CloudNativeFdn?ref_src=twsrc%5Etfw">@CloudNativeFdn</a> <a href="https://twitter.com/hashtag/ossummit?src=hash&amp;ref_src=twsrc%5Etfw">#ossummit</a> - incredible momentum, but much more to come! 40% of companies don&#39;t even run 10% of their containers in production. <a href="https://t.co/wI2NjxUNXY">pic.twitter.com/wI2NjxUNXY</a></p>&mdash; The Linux Foundation (@linuxfoundation) <a href="https://twitter.com/linuxfoundation/status/1164576729123475456?ref_src=twsrc%5Etfw">August 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
