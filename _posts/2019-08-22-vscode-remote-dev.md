@@ -73,7 +73,7 @@ The Remote Development extension pack consists of the following:
 
 To install all these extensions, go to **Extensions** on VS Code and search for **Remote Development** in the Marketplace.
 
-### Configuring SSH-based authentication
+### Configuring SSH-based authentication for Remote - SSH
 
 According to the Visual Studio Code docs on Remote - SSH, the instructions for configurating SSH-based authentication are as follows:
 
