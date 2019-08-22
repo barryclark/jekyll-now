@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Musings about Remote Development with Visual Studio Code"
-description: "Short snippets of notes on VSCode Remote Developent extensions from the perspective of a remote compute user"
-excerpt: Keeping codes and configuration files in sync between client machine and remote server used to be a drawn-out exercise in personal responsibility via SFTP/SCP. VSCode Remote Development looks to change that - for the better. Here's my notes on VSCode Remote Development.
+description: "Short snippets of notes on VS Code Remote Developent extensions from the perspective of a remote compute user"
+excerpt: Keeping codes and configuration files in sync between client machine and remote server used to be a drawn-out exercise in personal responsibility via SFTP/SCP. VS Code Remote Development looks to change that - for the better. Here's my notes on VS Code Remote Development.
 ---
 ---
 
@@ -29,7 +29,7 @@ Initially, my remote development workflow looks similar to this:
 
 Problem is, what if we are working with large datasets and we can't store them on our local machine? Do we have to buy even more external storage just to be able to download and work with the data on our local machine, only to re-upload changes back to the remote instance?
 
-That's where the Remote Development Extension in Visual Studio Code comes in to make writing and developing code directly on the remote instance easier - we can now write code closer to our data sources residing in the remote environment. When more data comes in after our Proof of Concept for a data science project gets the buy-in from our clients/business users, the ability to work closer to our data sources within a remote environment (be it a data lake, database, data mart etc.) becomes even more important.
+That's where the Remote Development Extension in VS Code comes in to make writing and developing code directly on the remote instance easier - we can now write code closer to our data sources residing in the remote environment. When more data comes in after our Proof of Concept for a data science project gets the buy-in from our clients/business users, the ability to work closer to our data sources within a remote environment (be it a data lake, database, data mart etc.) becomes even more important.
 
 ---
 
@@ -51,7 +51,7 @@ To check if you have OpenSSH Client installed, go to **Settings -> Manage option
 
 Otherwise, from **Manage optional features -> Add a feature**, select **OpenSSH Client** and (if desired, but not needed for getting Remote Dev to work) OpenSSH Server to install.
 
-If you are running earlier Windows, you can use Git for Windows which contains ssh.exe in the install path. Note that I have not tested the setup on earlier Windows - it was stated in the [Troubleshooting section of the VSCode Remote Development Docs](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client).
+If you are running earlier Windows, you can use Git for Windows which contains ssh.exe in the install path. Note that I have not tested the setup on earlier Windows - it was stated in the [Troubleshooting section of the VS Code Remote Development Docs](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client).
 
 Note that PuTTY is not supported on Windows since the ssh command must be in the path.
 
@@ -71,7 +71,7 @@ The Remote Development extension pack consists of the following:
 2. Remote - Containers
 3. Remote - WSL
 
-To install all these extensions, go to **Extensions** on Visual Studio Code and search for **Remote Development** in the Marketplace.
+To install all these extensions, go to **Extensions** on VS Code and search for **Remote Development** in the Marketplace.
 
 ### Configuring SSH-based authentication
 
@@ -91,7 +91,7 @@ According to the Visual Studio Code docs on Remote - SSH, the instructions for c
     ssh %REMOTEHOST% "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat ~/tmp.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && rm -f ~/tmp.pub"
     ```
 
-Since I might need to access multiple remote hosts using SSH, I configured SSH-based authentication using a dedicated SSH key for Remote SSH in Visual Studio Code. The instructions in the docs are as follows:
+Since I might need to access multiple remote hosts using SSH, I configured SSH-based authentication using a dedicated SSH key for Remote SSH in VS Code. The instructions in the docs are as follows:
 
 1. Run the following command in a terminal / command prompt to generate a SSH key-pair. This command creates a key-pair encrypterd using RSA-4096:
 ```ssh-keygen -t rsa -b 4096 -f %USERPROFILE%\.ssh\id_rsa-remote-ssh```
@@ -149,6 +149,26 @@ ssh-add -l
 ```
 
 ## Connecting to Remote Instance via Visual Studio Code
+
+After configuring SSH-based authentication on the local machine, we are ready to run Remote - SSH on VS Code to connect to our remote instance.
+
+1. Run Remote-SSH: Connect to Host... from the Command Palette (F1) and enter the host and your user on the host in the input box as follows: user@hostname
+
+2. After a moment, VS Code will connect to the SSH server and set itself up. VS Code will keep you up-to-date using a progress notification and you can see a detailed log in the Remote - SSH output channel.
+
+3. After you are connected, you'll be in an empty window. You can then open a folder or workspace on the remote machine using File > Open... or File > Open Workspace...
+
+4. Install any extensions you want to use on this host from the Extensions view.
+
+Here lies a problem we are currently facing: VS Code and its Extensions are installed on the remote instance for **each user** who accesses remotely via VS Code. Each VS Code user installation on the remote instance takes up more than 1 GB of disk space - which had not been previously factored into when we first upgraded our remote instance. As Remote Development is still in Preview, improvements on the extension are expected to be made over the next few months. In the meantime, the space allocation required to support VS Code on the remote instance would need to be factored in when we eventually move to our new development cloud.
+
+--
+
+## Concluding Remarks
+
+VS Code Remote Development is a godsend when working with large datasets that are stored remotely - it is now possible to write and edit code even closer to where the data resides without leaving VS Code. I'm looking forward to further developments on VS Code Remote Development extension, and reaping the full benefits of remote development in the near future.
+
+Credit goes to my team's awesome chief architect for proposing the use of Visual Studio Code Remote Development setup in the team's dev environment (even before the extension was made available in stable), as well as to the contributors of VS Code Remote Development extension (code contributors and docs writers).
 
 ## References
 
