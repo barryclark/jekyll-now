@@ -19,10 +19,6 @@ font-size: 12px
 
 In this blog we share our path to applying US-centric All-Weather investment information to an Australian situation, with the result being a global All-Weather portfolio. This is by no means advice, rather we share our experience in case it is interesting or useful to others and to further develop our ideas. We embarked on this because our current situation necessitated reducing our investment timing risk and an “All-Weather” approach could smooth out the ride.
 
-<p class="comment">
-⚠️ <b>warning links ahead:</b> <a href="https://en.wikipedia.org/wiki/Hyperlink">link</a> abundance due to attempted definition provision for things unfamiliar to non-experts (like us!)
-</p>
-
 ## Our story - discovering  “All-Weather” investment & why we wanted in
 We ([Amy][1] and [Dan][2]) are a couple in our early 30s, just married, and enjoying the flexibility of renting without a house mortgage. Until 2018 we invested almost 100% of our (modest) savings in a portfolio of [equities][3] (aka. shares/stocks) - following advice given to people with long [time-horizons][4] to invest savings heavily in equities, preferably by [dollar cost averaging][5], to maximize returns over the long run. We were happy to take on the risk of equities until we decided we might want to buy a house in the next 5 years and realized our equity investment time-horizon wasn’t so long-term after all.
 
