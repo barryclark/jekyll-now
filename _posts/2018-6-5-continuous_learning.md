@@ -3,7 +3,11 @@ layout: post
 title: Continuous Learning Feedback System
 ---
 
-![_config.yml]({{ site.baseurl }}/images/continuos_learning.png)
+
+
+<p align="center">
+  <img width="600" height="400" src="{{ site.baseurl }}/images/continuos_learning.png">
+</p>
 
 Designing and developing continuous learning search feedback system to train
 neural networks from user feedback data. Two types of feedback are received

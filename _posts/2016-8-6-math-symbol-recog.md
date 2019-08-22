@@ -3,7 +3,11 @@ layout: post
 title: Math Symbol Recognition system
 ---
 
-![_config.yml]({{ site.baseurl }}/images/MathSymbol_1.png)
+
+
+<p align="center">
+  <img width="460" height="300" src="{{ site.baseurl }}/images/MathSymbol_1.png">
+</p>
 
 Implemented entire system from scratch using non deep learning methods for Math Symbol Recognition.
 The data contained x, y co-ordinates obtained from stylus strokes on the tablet.

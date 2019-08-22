@@ -2,7 +2,9 @@
 layout: post
 title: CNN based Information Retrieval
 ---
-![_config.yml]({{ site.baseurl }}/images/cnn_search.png)
+<p align="center">
+  <img width="600" height="400" src="{{ site.baseurl }}/images/cnn_search.png">
+</p>
 
 Most of the state of the art architectures use sparse inputs like one hot encoding or ngraphs to
 represent words. One of the problems with sparse representation is that a huge

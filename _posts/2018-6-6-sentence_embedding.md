@@ -3,7 +3,9 @@ layout: post
 title: Sentence Embedding based Information Retrieval
 ---
 
-![_config.yml]({{ site.baseurl }}/images/sentence_embedding_search.png)
+<p align="center">
+  <img width="600" height="400" src="{{ site.baseurl }}/images/sentence_embedding_search.png">
+</p>
 
 Recent IR papers with CNNs try to match phrases of query with phrases in the
 document, i.e ustext-indenting 3\*3 (trigram), 2\*2 (bigram) filters. Most of the

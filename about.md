@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a Computer Science graduate student from Rochester Institute of Technology (RIT). At RIT, I worked on deep learning projects with professor
+[Ray Ptucha](https://people.rit.edu/rwpeec/).
+Currently, I am working as a Deep Learning Engineer at Center for Deep Learning in Electronics Manufacturing (CDLe).
+I am interested in machine learning and deep learning software development.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[suhas.callin@gmail.com](mailto:suhas.callin@gmail.com)

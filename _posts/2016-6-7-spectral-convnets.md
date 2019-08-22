@@ -3,7 +3,9 @@ layout: post
 title: Spectral Convolutional Neural Network
 ---
 
-![_config.yml]({{ site.baseurl }}/images/SpectralConvnet_1.png)
+<p align="center">
+  <img width="600" height="400" src="{{ site.baseurl }}/images/SpectralConvnet_1.png">
+</p>
 
 Implemented Spectral Convolutional Neural Networks. The convolution operation in
 spatial domain is quite expensive, so the idea here was to perform convolution
