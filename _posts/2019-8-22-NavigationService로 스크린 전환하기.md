@@ -13,6 +13,7 @@ React Navigation에서 screen에서 screen 사이를 오가는건 간단하지�
 ### NavigationService 세팅
 
 **NavigationService.js**
+
 다른 곳에서 `NavigationService.navigate(routeName, params)`로 페이지 이동을 할 수 있도록 함수를 작성해 준다.
 
 ```react
@@ -39,7 +40,9 @@ export default {
 };
 ```
 
+<br>
 **App.js**
+
 `NavigationService`를 `TopLevelNavigoator`로 설정해 준다.
 
 ```react
