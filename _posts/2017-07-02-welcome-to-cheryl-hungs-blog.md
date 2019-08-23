@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Cheryl Hung's blog"
-description: "Cheryl Hung's introductory post"
+description: "Read about Cheryl Hung's background and experience"
 image: /favicon.ico
 redirect_from: /Welcome/
 

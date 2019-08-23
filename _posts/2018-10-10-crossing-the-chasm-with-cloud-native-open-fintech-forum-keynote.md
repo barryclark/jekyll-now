@@ -11,7 +11,11 @@ tags:
 redirect_from: /Crossing-the-chasm/
 ---
 
-I gave the keynote for Open FinTech Forum in New York on "Crossing the chasm with cloud native".
+* The Cloud Native Computing Foundation is the home of Kubernetes, Prometheus and several dozen other projects, organised by maturity.
+
+* Graduated projects have "crossed the chasm" or become mainstream.
+
+* Incubating projects are for early adopters, while sandbox projects are experimental.
 
 I also participated in the Forum "Real-World Kubernetes Use Cases in Financial Services: Lessons Learned".
 

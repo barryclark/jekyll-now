@@ -12,12 +12,10 @@ tags:
 redirect_from: /navigating-cloud-native/
 ---
 
-I spoke at Google Developer Groups Cloud London on "Navigating the cloud native ecosystem".
-
-Summary:
-
 * The impact of open source is both personal and universal.
+
 * Understand how you want to contribute to open source, and specialize.
+
 * Find sponsors to help you with the unspoken rules of open source.
 
 Resources:

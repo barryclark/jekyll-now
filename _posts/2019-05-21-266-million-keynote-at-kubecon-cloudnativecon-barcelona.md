@@ -14,11 +14,13 @@ tags:
 redirect_from: /266million/
 ---
 
-My keynote, "2.66 Million", from KubeCon CloudNativeCon EU in Barcelona. This was the largest audience that I've spoken to to date, with 7700 people plus livestreaming.
+* Cloud native is 2.66 million contributions from 56,214 contributors, based on Github pull requests and comments on the CNCF-hosted projects.
 
-I had a great time speaking about the contributor pipeline, women in open source, and mental health in tech.
+* Unfortunately only 3% of those contributors are women. To grow from 2.66 million to 5 million to 10 million, we need to support and sustain the pipeline of contributors.
 
-Many people told me afterwards that they felt inspired to participate and contribute to Kubernetes and the other CNCF projects.
+* The cool thing about cloud native is, it doesn't matter where we work, we're all working on the same things.
+
+This was the largest audience that I've spoken to to date, with 7700 people plus livestreaming. Many people told me afterwards that they felt inspired to participate and contribute to Kubernetes and the other CNCF projects.
 
 I also presented the End User Awards to Intuit later that day.
 

@@ -10,4 +10,8 @@ tags:
 redirect_from: /bof-fsug/
 ---
 
-Slides from the Birds of a Feather discussion on the CNCF Financial Services User Group at KubeCon CloudNative Con Barcelona in May 2019.
+* The CNCF Financial Services User Group is a group of 15-20 banks, fintech startups and other companies running Kubernetes in highly regulated environments.
+
+* The mission is to foster interest and engagement from the finance industry to address security, regulatory and compliance related issues when using cloud native platforms.
+
+* Join the mailing list and monthly calls: [https://github.com/cncf/financial-user-group](https://github.com/cncf/financial-user-group)

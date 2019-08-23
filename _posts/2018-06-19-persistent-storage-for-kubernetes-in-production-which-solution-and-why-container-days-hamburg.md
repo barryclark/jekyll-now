@@ -12,6 +12,12 @@ tags:
 redirect_from: /containerdayshamburg/
 ---
 
+* There is no such thing as a stateless architecture!
+
+* The eight principles of cloud native storage are: Application-centric, platform agnostic, declarative and composable, API-driven, natively secure, agile, performant and consistently available.
+
+* StorageOS can help provide highly-available persistent data volumes with Kubernetes.
+
 I spoke at ContainerDays Hamburg on ["Persistent Storage for Kubernetes in production - Which solution and why?"](https://containerdays.io/program/persistent-storage-with-kubernetes-in-production-which-solution-and-why,2823.html).
 
 _Persistent storage often seems like a confusing plethora of options, from local volumes, NFS, distributed storage like Ceph, cloud storage such as AWS’s EBS and S3, to volume plugins with Docker and Kubernetes integration. This talk compares and contrasts the most popular solutions, and lays out the eight principles for cloud native storage._

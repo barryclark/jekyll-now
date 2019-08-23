@@ -10,7 +10,11 @@ tags:
 redirect_from: /cncf-paris/
 ---
 
-I spoke at CNCF Paris on 16 Jan 2018 on "Persistent Storage with Kubernetes in Production - which solution and why?".
+* There is no such thing as a stateless architecture!
+
+* The eight principles of cloud native storage are: Application-centric, platform agnostic, declarative and composable, API-driven, natively secure, agile, performant and consistently available.
+
+* StorageOS can help provide highly-available persistent data volumes with Kubernetes.
 
 Resource links:
 * [StorageOS browser demo](https://demo.storageos.cloud)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Roundup: July 2019 Cloud Native London meetup - Suade Labs, SUSE, and Dynatrace"
-description: "Cheryl Hung, Director of Ecosystem at CNCF, hosting speakers from Suade Labs, SUSE and Dynatrace at Cloud Native London."
+description: "Read the roundup from Suade Labs, SUSE and Dynatrace at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 image: https://pbs.twimg.com/media/D-kf3WoWwAA2xwT.jpg
 tags:
   - Photos
@@ -15,15 +15,15 @@ It was a very busy, lively crowd at Codenode for our July 2019 Cloud Native Lond
 As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/), [SUSE](https://www.suse.com/), [Twistlock](https://www.twistlock.com/), and [Esqimo](https://www.esqimo.com/) for making this all possible!
 
 
-First up was a talk on CNCF tools, then we went from Code to Production on Kubernetes with Open Source tools, wrapping up with a discussion on Continuous Deployment & Operations on Kubernetes with keptn. 
+First up was a talk on CNCF tools, then we went from Code to Production on Kubernetes with Open Source tools, wrapping up with a discussion on Continuous Deployment & Operations on Kubernetes with keptn.
 
 ![Hubert Bosiacki](https://pbs.twimg.com/media/D-kgUFUWsAIvbOn.jpg)
 
 Kicking off our evening, Hubert Bosiacki from Suade Labs shared his experiences with ["CNCF tools for SysOps"](https://skillsmatter.com/skillscasts/12558-cloud-native), explaining that:
 
-*  40 – 90% of the total cost of the product are included after the product is developed and released. 
-* Containers changing how we’re working, deploying, delivering applications, however, they’re evolving as well. 
-* Stable tools with stable license help with migration legacy software to modern times. 
+*  40 – 90% of the total cost of the product are included after the product is developed and released.
+* Containers changing how we’re working, deploying, delivering applications, however, they’re evolving as well.
+* Stable tools with stable license help with migration legacy software to modern times.
 
 ![Rob de Canha-Knight](https://pbs.twimg.com/media/D-kntQiXkAAZiCp.jpg)
 
@@ -50,4 +50,3 @@ The next meetup is on Wednesday 7th August, and joining us are speakers from Con
 See you next month!
 
 Cheryl (@oicheryl)
-

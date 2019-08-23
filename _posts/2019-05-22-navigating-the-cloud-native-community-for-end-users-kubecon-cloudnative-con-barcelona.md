@@ -13,6 +13,8 @@ tags:
 redirect_from: /navigating-cloud-native-kccnceu/
 ---
 
-I spoke at KubeCon CloudNativeCon Barcelona on "Navigating the Cloud Native Community for End Users".
+* End users are organizations that use cloud native technology internally, but don't sell any cloud native services externally.
 
-[Join as an CNCF End User Supporter](https://www.cncf.io/endusersupporter)
+* The Cloud Native Computing Foundation helps end users to navigate the ecosystem, hire engineering talent, and align with cloud native.
+
+* Joining as an [End User Supporter](https://www.cncf.io/endusersupporter) is cheaper than buying five KubeCon tickets.

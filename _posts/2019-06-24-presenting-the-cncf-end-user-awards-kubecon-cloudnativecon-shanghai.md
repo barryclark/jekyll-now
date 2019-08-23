@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Presenting the CNCF End User Awards - KubeCon CloudNativeCon Shanghai"
-description: "Watch the video of Cheryl Hung, Director of Ecosystem at CNCF, announcing the CNCF End User Awards China 2019."
+title: "CNCF End User Awards - KubeCon CloudNativeCon Shanghai"
+description: "Cheryl Hung, Director of Ecosystem at the CNCF, presents the CNCF End User Awards China 2019 to DiDi."
 feature_image: /images/2019-06-24-end-user-awards-kubecon-cloudnativecon-shanghai.jpg
 video: https://www.youtube.com/embed/eZd0ksRPw0k
 slides: //www.slideshare.net/slideshow/embed_code/key/aoEmaKbbGg1h8u

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloud Native London, June 2019: Pivotal, mnemonic and Alex Tasioulis"
-description: "Cheryl Hung, Director of Ecosystem at CNCF, hosts Pivotal, mnemonic and Alex Tasioulis at Cloud Native London."
+description: "Read the roundup from Pivotal, mnemonic and Alex Tasioulis at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 image: https://pbs.twimg.com/media/D8UUO6qUIAAXWSN.jpg
 tags:
   - Photos
@@ -27,7 +27,7 @@ Kicking off the evening, Josh Michielsen gave us a recap of the events of KubeCo
 Following that, Michael Coté from Pivotal shared his experiences with ["Creating a DevOps culture, whatever that means"](https://skillsmatter.com/skillscasts/12557-cloud-native), explaining that:
 
 * Large, traditional organizations don't need to fear West Coast Robot Dogs, they need to fear themselves and their own, but easily curable ineptitude at software.
-* At scale, changing culture requires executive support and much work. Otherwise, you're just putting up new posters in the hallway. 
+* At scale, changing culture requires executive support and much work. Otherwise, you're just putting up new posters in the hallway.
 * Achieving a blameless culture requires management taking the first step: discussing their own failures at the failure festivals.
 
 ![Andreas Claesson](https://pbs.twimg.com/media/D8UdpcLUEAEgV-8.jpg)

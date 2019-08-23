@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloud Native London, October 2017: Monzo and linkerd"
-description: "Cheryl Hung, Product Manager at StorageOS, hosts Attest and Monzo at Cloud Native London"
+description: "Read the roundup from Attest and Monzo at Cloud Native London, hosted by Cheryl Hung, Developer advocate at StorageOS."
 image: /images/2017-10-03-cnl.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/GbAIwb7kEAsTNx
 tags:
