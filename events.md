@@ -12,6 +12,8 @@ August 21 - 23: Open Source Summit + Embedded Linux Conference North America, Sa
 
 September 4: Cloud Native London
 
+September 10: Workshop on research and technical development of energy efficiency in cloud computing, Brussels
+
 September 23 - 25: Open Networking Summit EU, Antwerp
 
 October 2 - 3:  OpenInfraDays Nordics, Stockholm
