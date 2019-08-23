@@ -2,7 +2,7 @@
 layout: post
 title: "Infrastructure matters - Open Source Summit 2019 keynote, San Diego"
 description: "Read why infrastructure matters from Cheryl Hung, CNCF Director of Ecosystem."
-feature_image: /images/2019-08-22-infrastructure-matters-open-source-summit-2019-san-diego.jpg
+image: https://pbs.twimg.com/media/ECln0OsUwAAOmXb?format=jpg&name=small
 slides: "//www.slideshare.net/slideshow/embed_code/key/mCK4LlhLM1zsxf"
 tags:
   - Slides
