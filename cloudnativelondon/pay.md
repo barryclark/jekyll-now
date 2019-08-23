@@ -16,9 +16,9 @@ For one-off payments, make the bank transfer to:
 > **Payee name:** Cloud Native London Ltd  
 > **Sort code:** 60-83-71  
 > **Account number:** 507049586  
-> **IBAN:** GB33SRLG60837157049586
-> **SWIFT/BIC:** SRLGGB2L
-> **Reference:** See invoice 
+> **IBAN:** GB33SRLG60837157049586  
+> **SWIFT/BIC:** SRLGGB2L  
+> **Reference:** See invoice   
 
 Alternatively, you can make a card payment:
 
