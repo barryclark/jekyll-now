@@ -18,7 +18,7 @@ For one-off payments, make the bank transfer to:
 > **Account number:** 507049586  
 > **IBAN:** GB33SRLG60837157049586
 > **SWIFT/BIC:** SRLGGB2L
-> **Reference:** See invoice
+> **Reference:** See invoice 
 
 Alternatively, you can make a card payment:
 
