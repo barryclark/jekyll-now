@@ -5,9 +5,9 @@ title: Keeping up to date as a software developer
 Introducing.. well me
 ---------------------
 
-I am a professional software developer (or at least an employed one ;) ) for about 8 years, and programming in some way for about 17 years. Actually my first programing language was in my mother tongue (Hebrew), surprisingly or not, that was based on the "turtle" language in a afternoon course in my junior high. And after the point, I was hooked and still going strong.
+I am a professional software developer (or at least an employed one ;) ) for about 8 years, and programming in some way for about 17 years. Actually my first programing language, surprisingly or not, was in my mother tongue (Hebrew) that was based on the "turtle" language in a afternoon course in my junior high. And after the point, I was hooked and still going strong.
 
-So why am I writing this blog, you maybe wondering, it's because one of my most important ideal of sharing knowledge which ties in my mind very tightly to this blog subject. Which I have started when I have been asked a couple of times in the past few weeks on "how I keep up to date as a developer", that had lead me to reflect on my way with this post. And I am also looking forward for the possible related conversations to come and to learn how others do it.
+So why am I writing this blog, you maybe wondering, it's because one of my most important ideals of sharing knowledge, which ties in my mind very tightly to this post subject. Which I have started when I have been asked a couple of times in the past few weeks on "how I keep up to date as a developer", that had lead me to reflect on my way with this post. And I am also looking forward for the possible related conversations to come and to learn how others do it.
 
 Why
 ---
