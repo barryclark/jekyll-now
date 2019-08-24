@@ -67,6 +67,7 @@ I didn't want to list this in the post, so it will be more easy to find it after
 * Articles feeds
   * [Medium](https://medium.com/).
   * [dev.to](https://dev.to/).
+  * [Hacker News](https://news.ycombinator.com/).
 * YouTube videos
   * [PyCon Worldwide](https://www.youtube.com/results?search_query=pycon).
   * [CppCon](https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg).
@@ -80,5 +81,7 @@ I didn't want to list this in the post, so it will be more easy to find it after
   * [No tarbut developers (Hebrew)](http://notarbut.co/).
   * [Talk Python To Me](https://talkpython.fm/).
   * [Podcast.__init__](https://www.pythonpodcast.com/).
+  * [The Changelog](https://changelog.com/podcast).
+  * [Making Software (Hebrew)](https://www.ranlevi.com/software/).
 
 Until next time :)
