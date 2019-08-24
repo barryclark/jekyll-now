@@ -50,10 +50,10 @@ After the first taste of cool new information, the hunger will set in for more s
 
 I recommend if you learned something interesting, that drove you to read more then source about it **SHARE** it with you colleagues (work, friends and community). You will probably gain a lot from the **discussions** that will arise, that will help you in getting to know about other related issues or even to find out that you did not quiet understood what you read. Use the research that other people worked hard to achieve and give back.
 
-Conclusion
-----------
+Conclusions
+-----------
 
-Although this seems like a huge task and cumbersome with a little (or very much) philosophical view of my, but in a practical view these options are a part of the possible tool set of every programmer and you must find out what works for you. Because if this won't be easy and hopefully fun for you it will not happen, so try really try and see what works for you there is no silver bullet.
+Although this seems like a huge and cumbersome task with a little (or very much) philosophical side (coming from my view of this), but in a practical sense, these options are a part of the possible tool belt of every programmer and you should find out what works for you. Because if this won't be easy and hopefully fun for you it will not happen, so try (really try!), and see what works for you there is no silver bullet.
 
 Examples - My current resources
 -------------------------------
