@@ -44,11 +44,12 @@ Day 0 - So what to do now!?
 ---------------------------
 
 Firstly *congrats* on starting this journey, I am sure you will enjoy it and benefit from it.
-"OK so really what do I do now.." so like I mentioned in the passing, a good place to start widening your knowledge is what's relevant today current programing languages, specific areas in computer science like: ML, embedded programing and etc. Something that will benefit you tomorrow, so it will give you the push/kick/drive (I can go on :) ) to continue.
-In regards to the medium, you should chose the one you feel easiest for to stick with it. Like checking out the [GitHub trending page](https://github.com/trending) or going to meetup because you can drag someone with you (hopefully not by force).
-After the first taste of cool new information, the hunger will set in for more sources because you probably will be more curious in a wider scope as you widen your perceptive and knowledge.
+"OK so really what do I do now.." so like I mentioned in the passing, a good place to start widening your knowledge is what's relevant to you today: current programing languages you use, specific areas in computer science like: ML, embedded programing and etc. Something that will benefit you tomorrow, so it will give you the push/kick/drive (I can go on :) ) to start.
 
-I recommend if you learned something interesting, that drove you to read more then source about it **SHARE** it with you colleagues (work, friends and community). You will probably gain a lot from the **discussions** that will arise, that will help you in getting to know about other related issues or even to find out that you did not quiet understood what you read. Use the research that other people worked hard to achieve and give back.
+In regards to which medium to start with, you should chose the one you feel easiest for to stick with it. Like checking out the [GitHub trending page](https://github.com/trending) or going to meetup because you can drag someone with you (hopefully not by force).
+After the first taste of cool new information, the hunger will start to set in for more sources because you probably will be more curious and want to widen your perceptive and knowledge.
+
+I recommend if you learned something interesting, that drove you to read more then source about it **SHARE** it with you colleagues (work, friends and/or community). You will probably gain a lot from the **discussions** that will arise, that will help you in getting to know about other related issues or even to find out that you did not quiet understood what you learned. Use the research that other people worked hard to achieve and always give back.
 
 Conclusions
 -----------
@@ -58,7 +59,7 @@ Although this seems like a huge and cumbersome task with a little (or very much)
 Examples - My current resources
 -------------------------------
 
-I didn't want to list this in the post, so it will be more easy to find it after reading this post (or before, it's a possibility ;)).
+I didn't want to list this in the post, so it will be more easy to find it after reading this post (or before, it's a possibility ;) ).
 
 * Articles feeds
   * [Medium](https://medium.com/).
