@@ -12,8 +12,8 @@ So why am I writing this blog, you maybe wondering, it's because one of my most 
 Why
 ---
 
-During my first programming job, I had a "very deep" thought that "I must stay relevant, up to date" but I did not know how to do that. As I gained more and more experience, I have learned the importance of gaining wide knowledge which contributes a few very good very important benefits:
-Wide knowledge can introduce concepts, ideas and even tools for in visioning new features or improving the current ones. Which could extend the tool belt with new knowledge about architectural concepts, tools and standard practices. Or even spark new interest personal or even career wise.
+During my first programming job, I had a "very deep" thought that "I must stay relevant, up to date" but I did not know how to do that. As I gained more and more experience, I have learned the importance of gaining wide knowledge which contributes a couple of very good and important benefits:
+Wide knowledge can introduce concepts, ideas and even tools for envisioning new features or improving the current ones. Which could extend the tool belt with new knowledge about architectural concepts, tools and standard practices. Or even spark new interest personal or even a whole new career wise.
 
 How
 ---
