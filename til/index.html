@@ -8,7 +8,7 @@ layout: default
     {% for post in site.categories.til %}
     <li class="til-list">
       <a href="{{ site.baseurl }}{{ post.url }}"
-        >{{ post.date | date: "%Y-%m-%d" }}
+        >{{ post.title }}
         <ul class="tag">
           {% for tag in post.tags %}
           <li>
