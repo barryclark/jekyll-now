@@ -27,9 +27,7 @@ So how to tackle this important task: in my mind it's an ongoing way of life, li
 * **GitHub explore** - I very much like to check on weekly basis (or when I am bored) the [trending projects](https://github.com/trending) in particular the languages I use currently or interested in, and I look for cool new projects that are trending in the open source community (the wisdom of the masses).
 
     I think this is a very fun and easy way of finding currently relevant projects and maybe same inspiration for future projects, if for work or fun purposes.
-* **Articles feeds** - For the ones that are not familiar this medium, it's usually an email subscription newsletter with interesting articles.
-
-    This is a problematic resource because they could "bombarded" you with emails, and you could ignore them easily. So in my mind, when you subscribe to a feed if it possible define as narrow as possible scope of interest.
+* **Articles feeds** - For the ones that are not familiar this medium, it's usually an email subscription newsletter with interesting articles. This is a problematic resource because they could "bombarded" you with emails, and you could ignore them easily. So in my mind, when you subscribe to a feed if it possible define as narrow as possible scope of interest.
 
     Also for managing those subscriptions I suggest, if you did not read them for let say three months you should unsubscribe, you will do a favor to you by not dealing with this and a favor for the feed's managers that pay money for sending you the email with expectation for revenue from ads. And after you catch up with these feeds and like them, resubscribe to the feed and repeat. I also suggest, if you use a Gmail account, please use the ability of [adding a context](https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html) to your received email by subscribing to a feed with '<user-name>+<topic>@gmail.com' so you could combine feeds with the same area.
 
