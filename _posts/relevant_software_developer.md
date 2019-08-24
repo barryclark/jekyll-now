@@ -55,24 +55,26 @@ Conclusion
 
 Although this seems like a huge task and cumbersome with a little (or very much) philosophical view of my, but in a practical view these options are a part of the possible tool set of every programmer and you must find out what works for you. Because if this won't be easy and hopefully fun for you it will not happen, so try really try and see what works for you there is no silver bullet.
 
-Examples - What I enjoy now
----------------------------
+Examples - My current resources
+-------------------------------
 
-I didn't want to list this in the blog, so it will be more easy to find it later after reading this post (or before it's a possibility ;)).
+I didn't want to list this in the post, so it will be more easy to find it after reading this post (or before, it's a possibility ;)).
 
 * Articles feeds
   * [Medium](https://medium.com/).
   * [dev.to](https://dev.to/).
-
 * YouTube videos
-  * [CppCon](https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg).
   * [PyCon Worldwide](https://www.youtube.com/results?search_query=pycon).
-  * [FullStack Developers Israel (Hebrew)](https://www.youtube.com/channel/UCV7lV9Lq2sc7t0QEKS4xH7A).
+  * [CppCon](https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg).
   * [Reversim (Hebrew)](https://www.youtube.com/channel/UCYo4kdfR4KkHKMaE6xqO8XA).
-  * [StatsCraft (Hebrew)](https://www.youtube.com/channel/UCkHK2ZtGlbG_vvH0lTdpjkQ).
+  * [FullStack Developers Israel (Hebrew)](https://www.youtube.com/channel/UCV7lV9Lq2sc7t0QEKS4xH7A).
   * [Wix Engineering Tech Talks](https://www.youtube.com/channel/UCFXVPytLSv9ojAMgBIDh_qA).
+  * [All Day DevOps](https://www.alldaydevops.com/ondemand-recordings).
+  * [StatsCraft (Hebrew)](https://www.youtube.com/channel/UCkHK2ZtGlbG_vvH0lTdpjkQ).
 * Podcasts
-  * [Reversim (Hebrew)]().
+  * [Reversim (Hebrew)](https://www.reversim.com/).
   * [No tarbut developers (Hebrew)](http://notarbut.co/).
+  * [Talk Python To Me](https://talkpython.fm/).
+  * [Podcast.__init__](https://www.pythonpodcast.com/).
 
 Until next time :)
