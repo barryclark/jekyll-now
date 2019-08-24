@@ -360,7 +360,6 @@ nav {
   font-weight: 200;
 }
 .pagination span.active {
-  border-radius: 50%;
   background-color: $darkPurple;
   a {
     color: #fff;
@@ -372,12 +371,18 @@ nav {
   margin-top: 3em;
 
   span {
+    padding: 0.4em;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin: 0.2em;
+
     a {
       color: $darkPurple;
     }
-    font-size: 14px;
-    padding: 0.5em 0.9em;
-    margin: 0.4em;
+    // padding: 0.5em 1em;
   }
 }
 .posts > .post:first-child {
