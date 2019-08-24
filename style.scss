@@ -279,7 +279,9 @@ nav {
   color: $darkGray;
   font-weight: 300;
   float: left;
-  position: relative;
+  z-index: 100;
+  position: fixed;
+  // position: relative;
   left: 5em;
   display: none;
 
