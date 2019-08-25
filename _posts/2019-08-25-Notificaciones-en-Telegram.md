@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Notificaciones en Telegram
-author: Parra
-categories: notificaciones
+categories: [notificaciones, telegram]
 tags: [Telegram, notificaciones, scripts, bash, raspberry pi, linux, raspbian, debian]
 url_webhook: https://es.wikipedia.org/wiki/Webhook
 url_script: /scripts/publishMessageToRaspiBot.sh
