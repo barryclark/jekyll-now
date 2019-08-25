@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Notificaciones en Telegram
-categories: [Telegram, notificaciones]
+categories: notificaciones
 tags: [Telegram, notificaciones, scripts, bash, raspberry pi, linux, raspbian, debian]
 url_webhook: https://es.wikipedia.org/wiki/Webhook
 url_script: /scripts/publishMessageToRaspiBot.sh
 image_example: /images/example_notification_to_telegram.png
+published: true
 ---
 
 Soy un usuario asiduo de [Telegram](telegram.org) y desde que habilitó la opción de los _bot_ no he parado de buscar y entender cómo funcionan 
