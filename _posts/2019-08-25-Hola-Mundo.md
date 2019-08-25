@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: post
+excerpt_separator: <!--more-->
 title: ¡Hola Mundo!
 ---
 
