@@ -5,7 +5,7 @@ title: Categorías
 ---  
 
 {% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
+  <h3 id="{{ category[0] }}">{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
       <li><span>
