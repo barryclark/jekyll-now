@@ -2,7 +2,7 @@ GIT is distributed versions control system which is now widely used all around t
 
 Let’s start with first few east commands and then further move on more advanced command
 
-#Status
+<h1>Status</h1>
 
 Status command informs the user about the tracked and untracked changes it has made on the original file snapshot. It change could include -  rename, delete, modify etc, The general color code is green for the tracked changes and red for untracked changes. We can add untracked changes to tracked changes using the ```add``` command which will be discussed later.
 ```
