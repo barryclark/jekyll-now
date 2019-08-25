@@ -16,7 +16,8 @@ git status
 <h3>Add</h3>
 
 Git works on 3 tier tree architecture which involves - Working, Staging index and Repository. Whatever changes user makes will be first done in the working tier, Git provides the facility of choosing which all the file change you want to push it upstream. Staging area is for that, You can make the change put it on staging area.  You can’t commit to the repository without the changes being in the staging area. 
-![alt text](images/Screen-Shot-2014-08-03-at-9.43.15-PM.png)
+![add command](images/Screen-Shot-2014-08-03-at-9.43.15-PM.png)
+
 ```
 git add Path/to/File
 ```
