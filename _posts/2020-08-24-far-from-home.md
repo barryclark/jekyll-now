@@ -1,9 +1,0 @@
----
-title: Far From home
-layout: travel
-subtitle: Far from home
-titledesc: Memito turns 30
-feature: https://lh3.googleusercontent.com/5KzU-WthErBfFEqfRFX_3ChE81DcOH0YtjaSWDSGEup1Mz2JRINV7ErS_PFYkn-hCyzsWz1TwruGBaUnPTICv2odeyPdF3XB-bhQ9dbZNvwQfr0LU6ZNwH3kA6embi5kAq0Kf2ZMwVzqGr9AoGHxGv42JnR-z1RNotdqsCOJX36hlFTpDWBRo6lCgmWVdmABMsZjyFrsXrpDcnCZh_OhbcOrAI6Ivqf9hr-09HAAVJZJlemZlKBO52QbQIwGP3-pXsdnwRl-sBMJ4T6jKiGFrtQvPlVIntU6k782NaJe42k1TGWJy62YtdaR250QUtNJq2tDIIoHfmoBb2JwZyocK9YdyUGx0MK1ZBX6RxQVTM236iA4Me6mYOHg-jf53pZwxi2dHl0jjN01_WWLQa7P4RFv6NgSwCSWR_Q3n0M3xMggPK-oNYAcOKepXRWEord7iDBcKJibT_Ag4vqn3HYVVrLLS-Zj3PvuTVsh3wWiFhvWypaOU_3rDdASiZ503uZHCqlOXcUNaVKAw7mxxhfW8wPngkhMErcGQjdiIr8DmU7OnDJ9XAq0dfz_Z9b4g-8U9ZDX2rBa08WbZU5tXt1o1JOTSuze_7PhnELOE7w-BVX-mk35goWZLKrfo3xsTU_3di_fX822-Qy2Fcw-mH8gYMcrRvfGItBf=w3360-h1892-no
----
-
-<iframe src="https://uploads.knightlab.com/storymapjs/f32b4f89c88589e922f1d19b6d6c0a80/memito-far-from-home/index.html" frameborder="0" width="100%" height="100%"></iframe>

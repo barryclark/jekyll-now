@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,700italic,900,900italic,300italic);
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 // Font variables
 $font-name: "akularegular";
 $font-path-file-name: /assets/fonts/Akula-webfont;
@@ -272,7 +271,7 @@ h1.title{
 }
 h4.desc{
     color:#cbcaca;
-    font-family: merriweather;
+    font-family: $body;
     position: relative;
     font-size: 1.1rem;
     text-align: center;
@@ -286,7 +285,7 @@ h4.desc{
 }
 h3.date{
     color:#fff;
-    font-family: merriweather;
+    font-family: $body;
     width: 100%;
     position: relative;
     text-align: center;
@@ -374,7 +373,7 @@ article.post a img.feat{
     padding: 3px;
     z-index: 4;
     font-size: 1.2rem;
-    font-family: Merriweather;
+    font-family: $body;
     font-weight: lighter;
     width: 50%;
     order:2;
@@ -516,7 +515,7 @@ article.post a img.feat{
     width: 100%;
 }
 .footer{
-    font-family: Merriweather;
+    font-family: $body;
     text-align: center;
     font-size:0.8rem;
     color: rgba(255,255,255,0.5);
@@ -624,7 +623,7 @@ header a.home:hover{
             color: #fff;
             z-index: 4;
             margin-bottom: 0px;
-            font-family: merriweather;
+            font-family: $body;
             padding-left: 10px;
             padding-right:10px;
             @include mobile-small{
@@ -637,7 +636,7 @@ header a.home:hover{
         padding: 10px;
         font-size: 9em;
         color: #fff;
-        font-family: akularegular, merriweather;
+        font-family: akularegular, $body;
         position: relative;
         text-align: center;
         width: 100%;
@@ -652,7 +651,7 @@ header a.home:hover{
 }
 
 #single-post .entry{
-    font-family: "Merriweather", serif;
+    font-family: $body, serif;
     color: #3A4145;
     padding-top: 10px;
     line-height: 1.5em;
@@ -694,7 +693,7 @@ header a.home:hover{
     }
 }
 #single-post article.post p {
-    font-family: "Merriweather", serif;
+    font-family: $body, serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
