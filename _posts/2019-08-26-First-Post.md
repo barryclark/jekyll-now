@@ -7,10 +7,11 @@ title: First Post
 ---
 
 
-# This is my first post of Euny Dev Note
+This is my first post of Euny Dev Note.<br>
+Below is Python code attach test.
 
 ```python
-class EunyDevNote(Object):
+class EunyDevNote(object):
     status = None # type: str
     def __init__(self):
         self.status = 'created'
