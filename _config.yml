@@ -19,11 +19,12 @@ avatar: /images/notepad-icon.png
 defaults:
   -
     scope:
-      path: "posts" # All files in the project
+      path: "" # All files in the project
+      type: "posts" # Where the type is post
     values:
       layout: "post"
       author: "Parra"
-      categories: ["offtopic"]
+      categories: "offtopic"
 
 # Includes an icon in the footer for each username you enter
 footer-links:
