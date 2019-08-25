@@ -1,0 +1,214 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+// <<<<< INLINE
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: $font-weight-heading;
+  margin: 4rem 0 1rem;
+}
+
+.heading {
+  font-weight: $font-weight-heading;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+h3, .h3 {
+  font-size: 1.17em;
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  &.lead {
+    padding: 0 1rem;
+  }
+}
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  padding-left: 1.25rem;
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+.hr {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+// >>>>>
+
+// <<<<< LINK
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading {
+  text-rendering: optimizeLegibility; // link
+}
+
+h1 + h2, .h1 + .h2, h1 + .h2, .h1 + h2,
+h2 + h3, .h2 + .h3, h2 + .h3, .h2 + h3,
+h3 + h4, .h3 + .h4, h3 + .h4, .h3 + h4,
+h4 + h5, .h4 + .h5, h4 + .h5, .h4 + h5,
+h5 + h6, .h5 + .h6, h5 + .h6, .h5 + h6 {
+  margin-top: 0;
+}
+
+dt {
+  font-weight: $font-weight-bold;
+}
+
+dd {
+  margin-bottom: .5rem;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: $font-weight-bold;
+  color: #555;
+  text-transform: uppercase;
+
+  &[title] {
+    cursor: help;
+    border-bottom: 1px dotted $border-color;
+  }
+}
+
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: $gray;
+  border-left: .25rem solid $border-color;
+
+  &.lead {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left-width: 0.4rem;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.lead {
+  font-size: 1.2em;
+}
+
+.fine {
+  font-size: .83em;
+}
+
+.faded {
+  color: $gray;
+}
+
+.read-more {
+  @extend .faded;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  &::after {
+    content: " \2192"; // →
+    font-family: 'icomoon'!important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: smaller;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  position: relative;
+
+  > .permalink {
+    @media screen {
+      border-bottom: none;
+      opacity: 0;
+      width: 1.5rem;
+      text-align: center;
+      float: right;
+      transition: opacity 400ms;
+      will-change: opacity;
+    }
+
+    @media screen and (min-width: $break-point-1 + 2em) {
+      float: none;
+      position: absolute;
+      top: 0;
+      left: -1.75rem;
+    }
+
+    @media print {
+      display: none;
+    }
+  }
+
+  &:hover > .permalink {
+    opacity: 0.5;
+  }
+
+  & > .permalink:hover,
+  & > .permalink:focus {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+}
+
+@media print {
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, dt {
+    page-break-inside: avoid;
+    break-inside: avoid-page;
+    page-break-after: avoid;
+    break-after: avoid-page;
+  }
+}
+// >>>>> LINK

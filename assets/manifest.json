@@ -1,0 +1,45 @@
+---
+# https://developer.mozilla.org/en-US/docs/Web/Manifest
+---
+{
+  {% if site.lang %}"lang": "{{ site.lang }}",{% endif %}
+  "name": "{{ site.title }}",
+  "short_name": "{{ site.title }}",
+  "description": "{{ site.description | markdownify | strip_html | strip_newlines }}",
+  "start_url": "{{ '/' | relative_url }}?utm_source=homescreen",
+  "theme_color": "{{ site.theme_color | default:site.accent_color | default:'#4fb1ba' }}",
+  "background_color": "#fff",
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "{{ 'assets/icons/icon@0,25x.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "{{ 'assets/icons/icon@0,5x.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "{{ 'assets/icons/icon@0,75x.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "{{ 'assets/icons/icon.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "{{ 'assets/icons/icon@2x.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "{{ 'assets/icons/icon@3x.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "576x576"
+    }
+  ]}

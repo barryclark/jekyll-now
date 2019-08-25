@@ -1,0 +1,144 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+// <<<<< LINK
+body {
+  /* Prevent side-scrolling on mobile */
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+}
+
+hy-push-state, hy-drawer {
+  display: block;
+  overflow: hidden;
+}
+// >>>>>
+
+// <<<<< INLINE
+@media screen {
+  body::before {
+    content: '';
+    width: .5rem;
+    background: $border-color;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+html {
+  @media screen and (min-width: $break-point-1) {
+    font-size: $root-font-size-medium;
+  }
+
+  @media screen and (min-width: $break-point-font-large) {
+    font-size: $root-font-size-large;
+  }
+}
+// >>>>>
+
+@media print { html { font-size: $root-font-size-print; } } // link
+
+// Link styles
+hy-push-state a, .a {
+  position: relative; // inline
+  padding-bottom: .15rem; // inline
+  border-bottom: 1px solid; // inline
+  transition: color 500ms, border-color 250ms; // link
+
+  // <<< link
+  &:hover {
+    text-decoration: none;
+    transition: color 500ms, border-color 50ms;
+  }
+
+  &.no-hover {
+    border-bottom: none;
+    padding-bottom: none;
+    transition: none;
+
+    &:hover {
+      transition: none;
+    }
+  }
+  // >>>
+}
+
+.content .img {
+  overflow: hidden; // inline
+  background-color: $gray-bg; // inline
+
+  // <<< link
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjkwIiB2aWV3Qm94PSIwIDAgMTYwIDkwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxnIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQ4ODI4LCAwLCAwLCAwLjA0Nzk5MSwgNTQuOTk5OTczLCAyMC40MjgxNDgpIj4KICAgIDxwYXRoIGQ9Ik05NTkuODg0IDEyOGMwLjA0MCAwLjAzNCAwLjA4MiAwLjA3NiAwLjExNiAwLjExNnY3NjcuNzdjLTAuMDM0IDAuMDQwLTAuMDc2IDAuMDgyLTAuMTE2IDAuMTE2aC04OTUuNzdjLTAuMDQwLTAuMDM0LTAuMDgyLTAuMDc2LTAuMTE0LTAuMTE2di03NjcuNzcyYzAuMDM0LTAuMDQwIDAuMDc2LTAuMDgyIDAuMTE0LTAuMTE0aDg5NS43N3pNOTYwIDY0aC04OTZjLTM1LjIgMC02NCAyOC44LTY0IDY0djc2OGMwIDM1LjIgMjguOCA2NCA2NCA2NGg4OTZjMzUuMiAwIDY0LTI4LjggNjQtNjR2LTc2OGMwLTM1LjItMjguOC02NC02NC02NHYweiIgc3R5bGU9ImZpbGw6IHJnYigyMjEsIDIyMSwgMjIxKTsiLz4KICAgIDxwYXRoIGQ9Ik04MzIgMjg4YzAgNTMuMDIwLTQyLjk4IDk2LTk2IDk2cy05Ni00Mi45OC05Ni05NiA0Mi45OC05NiA5Ni05NiA5NiA0Mi45OCA5NiA5NnoiIHN0eWxlPSJmaWxsOiByZ2IoMjIxLCAyMjEsIDIyMSk7Ii8+CiAgICA8cGF0aCBkPSJNODk2IDgzMmgtNzY4di0xMjhsMjI0LTM4NCAyNTYgMzIwaDY0bDIyNC0xOTJ6IiBzdHlsZT0iZmlsbDogcmdiKDIyMSwgMjIxLCAyMjEpOyIvPgogIDwvZz4KPC9zdmc+');
+  // >>>
+
+  img {
+    margin: 0; // inline
+    width: 100%; // inline
+    height: 100%; // inline
+    object-fit: cover; // link
+    object-position: center; // link
+  }
+}
+
+// <<<<< INLINE
+// Fade in animation
+.fade-in {
+  animation-duration: 500ms;
+  animation-name: fade-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from { transform: translateY(-3rem); opacity: 0; }
+  50%  { transform: translateY(-3rem); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+// Utility classes
+.fl { float: left; }
+.fr { float: right; }
+.mb4 { margin-bottom: 4rem }
+.mb6 { margin-bottom: 6rem }
+.mt0 { margin-top: 0 }
+.mt4 { margin-top: 4rem }
+.pb0 { padding-bottom: 0 }
+// >>>>> INLINE
+
+.clearfix, .clearafter::after { @include clearfix(); } // both
+
+.sr-only {
+  display: none; // inline
+  // <<< link
+  display: unset;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+  // >>>
+}

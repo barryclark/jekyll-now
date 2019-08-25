@@ -1,0 +1,63 @@
+{
+  "name": "hydejack",
+  "version": "7.5.2",
+  "description": "Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com) theme, stolen by [`@qwtel`](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com). You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).",
+  "scripts": {
+    "clean": "rm -f assets/js/hydejack-$npm_package_version.js & rm -f _sass/**/__*/* & wait",
+    "test": "echo \"Warning: no test specified\" && exit 0",
+    "build": "npm run build:js & npm run build:css & wait",
+    "build:js": "webpack --env prod --display-modules --display-optimization-bailout",
+    "build:css": ".scripts/build-css.js",
+    "watch": "npm run watch:js & npm run watch:css",
+    "watch:js": "webpack --progress --colors --watch --env dev",
+    "watch:css": "npm run build:css && onchange '_sass/**/*.scss' -e '_sass/**/__*/*' -- npm run build:css '{{changed}}'",
+    "serve": "bundle exec jekyll serve --port=$npm_package_config_port --host=0.0.0.0",
+    "lint": "eslint _js/src",
+    "dev": "npm run watch & npm run serve",
+    "prepare": "npm run lint && npm run test && npm run clean && npm run build",
+    "resume": "json2yaml _data/resume.json > _data/resume.yml"
+  },
+  "config": {
+    "port": 4000
+  },
+  "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
+  "license": "GPL-3.0",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.5",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "json2yaml": "^1.1.0",
+    "onchange": "^4.0.0",
+    "re-template-tag": "^2.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^3.12.0",
+    "webpack-merge": "^4.1.3",
+    "yargs": "^12.0.1"
+  },
+  "dependencies": {
+    "color": "^3.0.0",
+    "core-js": "^2.5.7",
+    "elem-dataset": "^1.1.1",
+    "hy-drawer": "^1.0.0-pre.21",
+    "hy-push-state": "^1.0.0-pre.21",
+    "rxjs": "^6.2.1",
+    "web-animations-js": "^2.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qwtel/hydejack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qwtel/hydejack/issues"
+  },
+  "homepage": "https://github.com/qwtel/hydejack#readme"
+}

@@ -1,0 +1,34 @@
+<hy-drawer>
+  <header id="_sidebar" class="sidebar" role="banner">
+    {% if image.background %}
+      {% capture bg_style %}background:{{ image.background }}{% endcapture %}
+      {% capture bg_class %}sidebar-bg {% if image.overlay %}sidebar-overlay{% endif %}{% endcapture %}
+    {% else %}
+      {% capture bg_style %}background-color:{{ color }};{% if image != 'none' %}background-image:url({% include smart-url url=image %}){% endif %}{% endcapture %}
+      {% capture bg_class %}sidebar-bg {% if image != 'none' %}sidebar-overlay{% endif %}{% endcapture %}
+    {% endif %}
+    <div class="{{ bg_class }}" style="{{ bg_style }}"></div>
+
+    <div class="sidebar-sticky">
+      <div class="sidebar-about">
+        <h2 class="h1"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h2>
+        {% assign text = site.tagline | default:site.description %}
+        {% if text %}
+          <p class="{% if text.size > 100 %}fine{% endif %}">
+            {{ text | markdownify | replace:'<p>','' | replace:'</p>','' }}
+          </p>
+        {% endif %}
+      </div>
+
+      <nav class="sidebar-nav heading" role="navigation">
+        {% include nav.html %}
+      </nav>
+
+      {% assign author = site.data.authors.first[1] | default:site.author %}
+
+      <div class="sidebar-social">
+        {% include social.html author=author %}
+      </div>
+    </div>
+  </header>
+</hy-drawer>

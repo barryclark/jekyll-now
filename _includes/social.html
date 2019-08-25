@@ -1,0 +1,20 @@
+<span class="sr-only">{{ site.data.strings.social | default:"Social" }}{{ site.data.strings.colon }}</span>
+<ul>
+  {% unless include.author.social.twitter %}
+    {% assign twitter_username = author.twitter.username | default: author.twitter | default:site.twitter.username | default:site.twitter | default:site.twitter_username %}
+    {% if twitter_username %}
+      {% include social-list-item.html platform="twitter" username=twitter_username %}
+    {% endif %}
+  {% endunless %}
+
+  {% unless include.author.social.github %}
+    {% assign github_username = author.github.username | default: author.github | default:site.github.username | default:site.github | default:site.github_username %}
+    {% if github_username %}
+      {% include social-list-item.html platform="github" username=github_username %}
+    {% endif %}
+  {% endunless %}
+
+  {% for link in include.author.social %}
+    {% include social-list-item.html platform=link.first username=link.last %}
+  {% endfor %}
+</ul>

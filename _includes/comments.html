@@ -1,0 +1,8 @@
+{% assign disqus = site.disqus | default:site.disqus_shortname %}
+{% if disqus and page.comments %}
+<aside class="comments related" role="complementary">
+  <h2 class="hr">{{ site.data.strings.comments | default:"Comments" }}</h2>
+  <div id="disqus_thread"></div>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+{% endif %}

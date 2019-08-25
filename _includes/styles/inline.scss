@@ -1,0 +1,73 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+{% assign font_heading = site.font_heading | default:"'Roboto Slab', Helvetica, Arial, sans-serif" %}
+{% assign font =         site.font         | default:"'Noto Sans', Helvetica, Arial, sans-serif" %}
+
+$font-family-heading: {{ font_heading }};
+$font-family: {{ font }};
+
+@import "variables";
+@import "my-variables";
+@import "mixins";
+
+// @import "reboot-mod";
+
+
+@import "pooleparty/__inline/base";
+@import "pooleparty/__inline/type";
+@import "pooleparty/__inline/table";
+@import "pooleparty/__inline/footer";
+@import "pooleparty/__inline/footnotes";
+@import "pooleparty/__inline/code";
+@import "pooleparty/__inline/posts";
+@import "pooleparty/__inline/related";
+@import "pooleparty/__inline/message";
+@import "pooleparty/__inline/pagination";
+
+@import "hydejack/__inline/base";
+@import "hydejack/__inline/sidebar";
+@import "hydejack/__inline/social";
+@import "hydejack/__inline/menu";
+@import "hydejack/__inline/content";
+@import "hydejack/__inline/avatar";
+@import "hydejack/__inline/katex";
+@import "hydejack/__inline/footer";
+
+// {% unless site.hydejack.no_mark_external or site.no_mark_external %}
+//   @import "hydejack/__link/mark-external";
+// {% endunless %}
+// {% unless site.hydejack.no_break_layout %}
+//   @import "hydejack/__link/break-layout";
+// {% endunless %}
+
+// @import "syntax";
+// @import "spinner";
+
+@import "my-inline";
+// @import "my-style";
+
+{% unless site.hydejack.no_google_fonts or site.no_google_fonts %}
+  {% assign font = font | split:',' | shift | join:',' %}
+  {% assign font_heading = font_heading | split:',' | shift | join:',' %}
+{% endunless %}
+
+html { font-family: {{ font | default:"serif" }}; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: {{ font_heading | default:"serif" }}; }

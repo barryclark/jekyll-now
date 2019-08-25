@@ -1,0 +1,16 @@
+<footer role="contentinfo">
+  <hr/>
+  {% if site.copyright.size > 0 %}
+    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
+  {% endif %}
+  {% if site.legal.size > 0 %}
+    <nav class="legal"><small>
+    {% for le in site.legal %}
+      <a href="{% include smart-url url=le.href %}">{{ le.name | default:le.title }}</a>
+      {% unless forloop.last %}{{ site.data.strings.separator | default:'|' }}{% endunless %}
+    {% endfor %}
+    </small></nav>
+  {% endif %}
+  <p><small>Powered by <a class="external" href="https://qwtel.com/hydejack/">Hydejack</a> v<span id="_version">7.5.2</span></small></p>
+  <hr class="sr-only"/>
+</footer>

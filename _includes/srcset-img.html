@@ -1,0 +1,24 @@
+{% if include.img.src or include.img.path %}
+  {% assign srcset = null %}
+
+  {% if include.img.srcset %}
+    {% capture srcset %}{% for hash in include.img.srcset %}{% assign tmp = hash[1] %}{% include smart-url url=tmp %} {{ hash[0] }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+  {% endif %}
+
+  {% assign src = include.img.src | default:include.img.path %}
+  <img
+    src="{% include smart-url url=src %}"
+    {% if include.class %}class="{{ include.class }}"{% endif %}
+    {% if include.alt %}alt="{{ include.alt }}"{% endif %}
+    {% if srcset %}srcset="{{ srcset | strip }}"{% endif %}
+    {% if include.sizes %}sizes="{{ include.sizes }}"{% endif %}
+    {% if include.property %}property="{{ include.property }}"{% endif %}
+  />
+{% else %}
+  <img
+    src="{% include smart-url url=include.img %}"
+    {% if include.class %}class="{{ include.class }}"{% endif %}
+    {% if include.alt %}alt="{{ include.alt }}"{% endif %}
+    {% if include.property %}property="{{ include.property }}"{% endif %}
+  />
+{% endif %}

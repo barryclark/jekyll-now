@@ -1,0 +1,15 @@
+---
+# https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx
+---
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="{{ '/assets/icons/tile-small.png' | relative_url }}"/>
+      <square150x150logo src="{{ '/assets/icons/tile-medium.png' | relative_url }}"/>
+      <wide310x150logo src="{{ '/assets/icons/tile-wide.png' | relative_url }}"/>
+      <square310x310logo src="{{ '/assets/icons/tile-large.png' | relative_url }}"/>
+      <TileColor>{{ site.accent_color | default:'#4fb1ba' }}</TileColor>
+    </tile>
+  </msapplication>
+</browserconfig>

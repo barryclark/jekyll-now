@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+{% unless page.redirect %}
+  {% if plugins contains 'jekyll-seo-tag' %}{% include head/seo-tag.html %}
+  {% else %}{% include head/seo-fallback.html %}{% endif %}
+
+  {% if site.keywords or page.keywords %}
+    <meta name="keywords" content="{{ page.keywords | default:site.keywords | join:',' }}">
+  {% endif %}
+{% else %}
+  <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+  <title>{{ site.data.strings.redirecting | default:"Redirecting..." }}</title>
+{% endunless %}
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="application-name" content="{{ site.title }}">
+<meta name="msapplication-config" content="{{ '/assets/ieconfig.xml' | relative_url }}">
+
+{% unless site.hydejack.no_theme_color %}
+<meta name="theme-color" content="{{ page.theme_color | default:color | default:'#4fb1ba' }}">
+{% endunless %}
+
+<meta name="generator" content="Hydejack v7.5.2">

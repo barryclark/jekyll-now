@@ -1,0 +1,80 @@
+---
+# Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+layout: compress
+---
+
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] | default:site.author %}
+{% assign plugins = site.plugins | default:site.gems %}
+
+{% if plugins contains 'jekyll-seo-tag' %}
+  {% assign color = site.accent_color | default:'#4fb1ba' %}
+  {% assign image = site.accent_image | default:'/assets/img/sidebar-bg.jpg' %}
+
+  {% if page.categories.size > 0 %}
+    {% assign category_name = page.categories.first %}
+    {% assign category = site.featured_categories | where: "slug", category_name | first %}
+    {% if category.accent_color %}{% assign color = category.accent_color %}{% endif %}
+    {% if category.accent_image %}{% assign image = category.accent_image %}{% endif %}
+  {% elsif page.tags.size > 0 %}
+    {% assign tag_name = page.tags.first %}
+    {% assign tag = site.featured_tags | where: "slug", tag_name | first %}
+    {% if tag.accent_color %}{% assign color = tag.accent_color %}{% endif %}
+    {% if tag.accent_image %}{% assign image = tag.accent_image %}{% endif %}
+  {% elsif author %}
+    {% if author.accent_color %}{% assign color = author.accent_color %}{% endif %}
+    {% if author.accent_image %}{% assign image = author.accent_image %}{% endif %}
+  {% endif %}
+
+  {% if page.accent_color %}{% assign color = page.accent_color %}{% endif %}
+  {% if page.accent_image %}{% assign image = page.accent_image %}{% endif %}
+
+{% else %}
+  {% assign color = site.accent_color | default:site.color | default:'#4fb1ba' %}
+  {% assign image = site.accent_image | default:site.image | default:'/assets/img/sidebar-bg.jpg' %}
+
+  {% if page.categories.size > 0 %}
+    {% assign category_name = page.categories.first %}
+    {% assign category = site.featured_categories | where: "slug", category_name | first %}
+    {% if category.accent_color or category.color %}{% assign color = category.accent_color | default:category.color %}{% endif %}
+    {% if category.accent_image or category.image %}{% assign image = category.accent_image | default:category.image %}{% endif %}
+  {% elsif page.tags.size > 0 %}
+    {% assign tag_name = page.tags.first %}
+    {% assign tag = site.featured_tags | where: "slug", tag_name | first %}
+    {% if tag.accent_color %}{% assign color = tag.accent_color | default:tag.color %}{% endif %}
+    {% if tag.accent_image %}{% assign image = tag.accent_image | default:tag.image %}{% endif %}
+  {% elsif author %}
+    {% if author.accent_color or author.color %}{% assign color = author.accent_color | default:author.color %}{% endif %}
+    {% if author.accent_image or author.image %}{% assign image = author.accent_image | default:author.image %}{% endif %}
+  {% endif %}
+
+  {% if page.accent_color or page.color %}{% assign color = page.accent_color | default:page.color %}{% endif %}
+  {% if page.accent_image or page.image %}{% assign image = page.accent_image | default:page.image %}{% endif %}
+{% endif %}
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  {% include body.html %}
+  {% include templates.html %}
+</body>

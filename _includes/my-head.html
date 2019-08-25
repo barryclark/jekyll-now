@@ -1,0 +1,13 @@
+{% comment %}
+<!--
+Using `preload` so that page rendering doesn't get blocked.
+Fill in `href`. You may have to adjust `as` and `onload`/`rel`, depending on content.
+-->
+<link href="<path/to/content.css>" rel="preload" as="style" onload="this.rel='stylesheet'">
+
+<!--
+Fallback in case JavaScript isn't enabled.
+Fill in `href`. You may have to adjust `rel`.
+-->
+<noscript><link href="<path/to/content.css>" rel="stylesheet"></noscript>
+{% endcomment %}

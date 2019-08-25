@@ -1,0 +1,58 @@
+{% comment %}<!--
+  These styles interact with JavsScript. Their ordering MUST NOT be changed. See `_js/cross-fader.js`.
+-->{% endcomment %}
+<style id="_pageStyle">
+{% capture page_style %}
+  .content a:not(.btn) {
+    color: {{ color }};
+    border-color: fade-out({{ color }}, 0.8);
+  }
+
+  .content a:not(.btn):hover {
+    border-color: {{ color }};
+  }
+
+  :focus {
+    outline-color: {{ color }};
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: {{ color }};
+    border-color: {{ color }};
+  }
+
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 3px rgba({{ color }}, .5);
+  }
+
+  .btn-primary:hover, .btn-primary.hover {
+    color: #fff;
+    background-color: darken({{ color }}, 7.5%);
+    border-color: darken({{ color }}, 7.5%);
+  }
+
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: {{ color }};
+    border-color: {{ color }};
+  }
+
+  .btn-primary:active, .btn-primary.active {
+    color: #fff;
+    background-color: darken({{ color }}, 7.5%);
+    border-color: darken({{ color }}, 7.5%);
+  }
+
+  ::selection {
+    color: #fff;
+    background: {{ color }};
+  }
+
+  ::-moz-selection {
+    color: #fff;
+    background: {{ color }};
+  }
+{% endcapture %}
+{{ page_style | scssify }}
+</style>

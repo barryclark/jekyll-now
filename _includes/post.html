@@ -1,0 +1,38 @@
+{% assign post = include.post %}
+{% assign link_title = include.link_title %}
+
+<article id="post{{ post.id | replace:'/','-' }}" class="page post{% if link_title %} mb6{% endif %}" role="article">
+  <header>
+    <h1 class="post-title">
+      {% if link_title %}<a href="{{ post.url | relative_url }}" class="flip-title">{% endif %}
+        {{ post.title }}
+      {% if link_title %}</a>{% endif %}
+    </h1>
+
+    <p class="post-date heading">
+      {% assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" %}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
+      {% assign category_start     = site.data.strings.category_start     | default:"in " %}
+      {% assign tag_start          = site.data.strings.tag_start          | default:"on " %}
+      {% assign category_separator = site.data.strings.category_separator | default:" / " %}
+      {% assign tag_separator      = site.data.strings.tag_separator      | default:", "  %}
+      {% include tag-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator %}
+      {% include tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %}
+    </p>
+
+    {% include message.html text=post.description hide=page.hide_description %}
+  </header>
+
+  {% unless include.excerpt %}
+    {{ post.content }}
+  {% else %}
+    {{ post.excerpt }}
+    {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
+    {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+    <footer>
+      <p class="read-more">
+        {{ text | replace:"<!--post_title-->", post_title }}
+      </p>
+    </footer>
+  {% endunless %}
+</article>

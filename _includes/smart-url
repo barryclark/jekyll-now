@@ -1,0 +1,1 @@
+{% assign url = include.url %}{% if url contains '//' %}{{ url }}{% else %}{% assign url = url | remove_first:site.baseurl %}{{ url | relative_url }}{%- endif -%}

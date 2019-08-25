@@ -1,0 +1,5 @@
+{% for post in paginator.posts %}
+  {% include post.html post=post link_title=true excerpt=true %}
+{% endfor %}
+
+{% include pagination.html %}

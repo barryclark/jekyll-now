@@ -1,0 +1,12 @@
+{% if include.href.size > 0 %}
+  <a
+    class="{{ include.class }} {{ include.a_class }}"
+    href="{{ include.href }}"
+    {% if include.rel %}rel="{{ include.rel }}"{% endif %}
+    {% if include.property %}property="{{ include.property }}"{% endif %}
+  >
+    {{ include.title }}
+  </a>
+{% else %}
+  <span class="{{ include.class }} {{ include.span_class }}">{{ include.title }}</span>
+{% endif %}

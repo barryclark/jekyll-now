@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eslint-config-airbnb",
+  "env": {
+    "browser": true,
+  },
+  "globals": {
+    "loadCSS": true,
+    "loadJSDeferred": true,
+  },
+  "rules": {
+    "no-param-reassign": "off",
+    "class-methods-use-this": "off",
+    "no-underscore-dangle": "off",
+    "no-console": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": "off",
+  },
+}

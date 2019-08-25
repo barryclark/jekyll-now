@@ -1,0 +1,24 @@
+<!--[if gt IE 8]><!---->
+{% capture style_url %}{% link assets/css/hydejack-7.5.2.css %}{% endcapture %}
+
+{% if site.hydejack.no_inline_css or jekyll.environment == 'development' %}
+  <link rel="stylesheet" href="{{ style_url | relative_url }}">
+{% else %}
+  <style>
+    {% capture include_to_scssify %}{% include styles/inline.scss %}{% endcapture %}
+    {{ include_to_scssify | scssify }}
+    {% if page.layout == "projects" or page.layout == "project" or page.layout == "welcome" %}
+      {% capture include_to_scssify %}{% include styles/pro/projects.scss %}{% endcapture %}
+      {{ include_to_scssify | scssify }}
+    {% elsif page.layout == "resume" %}
+      {% capture include_to_scssify %}{% include styles/pro/resume.scss %}{% endcapture %}
+      {{ include_to_scssify | scssify }}
+    {% endif %}
+  </style>
+  <link id="_stylePreload" rel="preload" as="style" href="{{ style_url | relative_url }}">
+  <script>window.setRelStylesheet('_stylePreload');</script>
+  <noscript><link rel="stylesheet" href="{{ style_url | relative_url }}"></noscript>
+{% endif %}
+
+{% include page-style.html %}
+<!--<![endif]-->

@@ -1,0 +1,33 @@
+{% unless page.redirect %}
+  {% if site.google_analytics %}
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      {% if site.hydejack.cookies_banner %}
+        if (navigator.CookiesOK) {
+          ga('create', '{{ site.google_analytics }}', 'auto');
+        } else if (localStorage && localStorage.getItem('hy:cookiesOK')) {
+          ga('create', '{{ site.google_analytics }}', {
+            'storage': 'none',
+            'clientId': localStorage.getItem('ga:clientId')
+          });
+        } else {
+          ga('create', '{{ site.google_analytics }}', {
+            'storage': 'none'
+          });
+          ga('set', 'forceSSL', true);
+          ga('set', 'anonymizeIp', true);
+        }
+      {% else %}
+        ga('create', '{{ site.google_analytics }}', 'auto');
+      {% endif %}
+      ga('send', 'pageview');
+      loadJSDeferred('https://www.google-analytics.com/analytics.js');
+    </script>
+  {% endif %}
+
+  <!--[if gt IE 9]><!---->
+  {% capture js_url %}{% link assets/js/hydejack-7.5.2.js %}{% endcapture %}
+  <script>loadJSDeferred('{{ js_url | relative_url }}');</script>
+  {% include my-scripts.html %}
+  <!--<![endif]-->
+{% endunless %}

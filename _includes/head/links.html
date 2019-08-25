@@ -1,0 +1,29 @@
+{% if plugins contains 'jekyll-feed' %}{% include head/feed-tag.html %}{% endif %}
+
+{% assign lang = page.lang | default:site.lang | default:'en' %}
+<link rel="alternate" href="{{ page.url | absolute_url }}" hreflang="{{ lang | downcase | replace:'_','-' }}">
+
+<link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/icons/icon.png' | relative_url }}">
+
+<link rel="manifest" href="{{ '/assets/manifest.json' | relative_url }}">
+
+{% unless site.hydejack.no_google_fonts or site.no_google_fonts %}
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+{% endunless %}
+{% if site.google_analytics %}
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+{% endif %}
+
+{% assign disqus = site.disqus | default:site.disqus_shortname %}
+{% if disqus %}
+<link id="_disqusJS" rel="dns-prefetch" href="https://{{ disqus }}.disqus.com/embed.js">
+{% endif %}
+
+{% comment %}<!--
+The links below are here so that we can use their `href` in JS (see `_js/src/katex.js`).
+This way, CDN optimizers or other tools can modify the URL and we avoid hard-coding it in JavaScript.
+-->{% endcomment %}
+<link id="_katexJS"  rel="dns-prefetch" href="{{ '/assets/bower_components/katex/dist/katex.min.js'  | relative_url }}">
+<link id="_katexCSS" rel="dns-prefetch" href="{{ '/assets/bower_components/katex/dist/katex.min.css' | relative_url }}">

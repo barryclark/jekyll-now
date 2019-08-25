@@ -1,0 +1,75 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+* {
+  box-sizing: border-box; // inline
+  // -webkit-tap-highlight-color: transparent; // link
+}
+
+// <<<<< INLINE
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $root-font-size;
+  line-height: $root-line-height;
+}
+
+body {
+  color: $body-color;
+  background-color: $body-bg;
+  overflow-y: scroll;
+}
+
+// No `:visited` state is required by default (browsers will use `a`)
+a {
+  text-decoration: none;
+}
+
+.lead {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.content img, .img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border: none;
+
+  &.lead {
+    max-width: calc(100% + 2rem);
+    width: calc(100% + 2rem);
+  }
+}
+// >>>>> INLINE
+
+// <<<<< LINK
+@media print {
+  a:not(.no-print-link)::after {
+    content: " (" attr(href) ") ";
+    font-size: .83em;
+    opacity: 0.67;
+  }
+}
+// >>>>> LINK

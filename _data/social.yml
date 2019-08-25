@@ -1,0 +1,203 @@
+# This file contains meta data for various social media sites
+email:
+  name: Email
+  icon: icon-mail
+amazon:
+  name: Amazon
+  icon: icon-amazon
+google:
+  name: Google
+  icon: icon-google
+google-plus:
+  name: Google+
+  icon: icon-google-plus
+  prepend: 'https://plus.google.com/'
+google-drive:
+  name: Google Drive
+  icon: icon-google-drive
+facebook:
+  name: Facebook
+  icon: icon-facebook
+  prepend: 'https://facebook.com/'
+instagram:
+  name: Instagram
+  icon: icon-instagram
+  prepend: 'https://instagram.com/'
+whatsapp:
+  name: WhatsApp
+  icon: icon-whatsapp
+spotify:
+  name: Spotify
+  icon: icon-spotify
+  prepend: "https://play.spotify.com/"
+telegram:
+  name: Telegram
+  icon: icon-telegram
+twitter:
+  name: Twitter
+  icon: icon-twitter
+  prepend: 'https://twitter.com/'
+vine:
+  name: Vine
+  icon: icon-vine
+  prepend: 'https://vine.com/'
+vk:
+  name: VK
+  icon: icon-vk
+  prepend: "https://vk.com/"
+renren:
+  name: 人人网
+  icon: icon-renren
+sina-weibo:
+  name: Sina Weibo
+  icon: icon-sina-weibo
+rss:
+  name: RSS
+  icon: icon-rss2
+youtube:
+  name: YouTube
+  icon: icon-youtube
+  prepend: "https://www.youtube.com/channel/"
+twitch:
+  name: Twitch
+  icon: icon-twitch
+  prepend: "https://www.twitch.tv/"
+vimeo:
+  name: Vimeo
+  icon: icon-vimeo
+  prepend: "https://www.vimeo.com/"
+lanyrd:
+  name: Lanyrd
+  icon: icon-lanyrd
+flickr:
+  name: Flickr
+  icon: icon-flickr2
+  prepend: "https://flickr.com/people/"
+dribbble:
+  name: Dribbble
+  icon: icon-dribbble
+  prepend: "https://dribbble.com/"
+behance:
+  name: Behance
+  icon: icon-behance
+  prepend: "https://www.behance.net/"
+deviantart:
+  name: DeviantArt
+  icon: icon-deviantart
+  prepend: "https://"
+  append: ".deviantart.com"
+500px:
+  name: 500px
+  icon: icon-500px
+  prepend: "https://500px.com/"
+steam:
+  name: Steam
+  icon: icon-steam
+  pretend: "http://steamcommunity.com/profiles/"
+dropbox:
+  name: Dropbox
+  icon: icon-dropbox
+ondrive:
+  name: OneDrive
+  icon: icon-ondrive
+github:
+  name: GitHub
+  icon: icon-github
+  prepend: "https://github.com/"
+npm:
+  name: npm
+  icon: icon-npm
+  prepend: "https://npmjs.com/~"
+basecamp:
+  name: Basecamp
+  icon: icon-basecamp
+trello:
+  name: Trello
+  icon: icon-trello
+  prepend: "https://trello.com/"
+wordpress:
+  name: WordPress
+  icon: icon-wordpress
+joomla:
+  name: Joomla!
+  icon: icon-joomla
+ello:
+  name: Ello
+  icon: icon-ello
+  prepend: "https://ello.co/"
+blogger:
+  name: Blogger
+  icon: icon-blogger
+  prepend: "https://www.blogger.com/profile/"
+tumblr:
+  name: Tumblr
+  icon: icon-tumblr
+  prepend: "https://"
+  append: ".tumblr.com"
+yahoo:
+  name: Yahoo
+  icon: icon-yahoo
+soundcloud:
+  name: SoundCloud
+  icon: icon-soundcloud
+  prepend: "https://soundcloud.com/"
+skype:
+  name: Skype
+  icon: icon-skype
+reddit:
+  name: reddit
+  icon: icon-reddit
+  prepend: "https://www.reddit.com/user/"
+hackernews:
+  name: Hacker News
+  icon: icon-hackernews
+  prepend: "https://news.ycombinator.com/user?id="
+wikipedia:
+  name: Wikipedia
+  icon: icon-wikipedia
+linkedin:
+  name: LinkedIn
+  icon: icon-linkedin2
+  prepend: "https://www.linkedin.com/in/"
+lastfm:
+  name: Last.fm
+  icon: icon-lastfm
+  prepend: "http://www.last.fm/user/"
+delicious:
+  name: Delicious
+  icon: icon-delicious
+  prepend: "http://del.icio.us/"
+stumbleupon:
+  name: StumbleUpon
+  icon: icon-stumbleupon
+  prepend: "http://www.stumbleupon.com/stumbler/"
+stackoverflow:
+  name: Stack Overflow
+  icon: icon-stackoverflow
+  prepend: "http://stackoverflow.com/users/"
+pinterest:
+  name: Pinterest
+  icon: icon-pinterest2
+  prepend: "https://www.pinterest.com/"
+xing:
+  name: XING
+  icon: icon-xing2
+  prepend: "https://www.xing.com/profile/"
+flattr:
+  name: Flattr
+  icon: icon-flattr
+foursquare:
+  name: Foursquare
+  icon: icon-foursquare
+  prepend: "https://foursquare.com/user/"
+yelp:
+  name: Yelp
+  icon: icon-yelp
+  prepend: "https://www.yelp.com/user_details?userid="
+paypal:
+  name: PayPal
+  icon: icon-paypal
+  prepend: "https://www.paypal.me/"
+download:
+  name: Download
+  icon: icon-box-add

@@ -1,0 +1,26 @@
+{% assign tags = include.tags %}
+{% assign meta = include.meta %}
+{% assign start_with = include.start_with %}
+{% assign separator = include.separator %}
+{% assign end_with = include.end_with %}
+
+{% assign content = '' %}
+
+{% if tags.size > 0 %}
+  {% assign content = start_with %}
+  {% for tag_slug in tags %}
+    {% capture iter_separator %}{% if forloop.last %}{{ end_with }}{% else %}{{ separator }}{% endif %}{% endcapture %}
+
+    {% assign tag = meta | where: "slug", tag_slug | first %}
+
+    {% if tag %}
+      {% capture content_temp %}{{ content }}<a href="{{ tag.url | relative_url }}" class="flip-title">{{ tag.title }}</a>{{ iter_separator }}{% endcapture %}
+    {% else %}
+      {% capture content_temp %}{{ content }}<span>{{ tag_slug | capitalize }}</span>{{ iter_separator }}{% endcapture %}
+    {% endif %}
+
+    {% assign content = content_temp %}
+  {% endfor %}
+{% endif %}
+
+{{ content }}

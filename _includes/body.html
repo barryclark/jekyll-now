@@ -1,0 +1,25 @@
+{% include menu.html %}
+
+<hy-push-state>
+  <main
+    id="_main"
+    class="content fade-in layout-{{ page.layout }}"
+    role="main"
+    data-color="{{ color | escape }}"
+    data-theme-color="{{ page.theme_color | escape }}"
+    {% unless image.background %}
+      data-image="{% if image == 'none' %}none{% else %}{% capture tmp %}{% include smart-url url=image %}{% endcapture %}{{ tmp | escape }}{% endif %}"
+      {% if image != 'none' %}data-overlay{% endif %}
+    {% else %}
+      data-background="{{ image.background | escape }}"
+      {% if image.overlay %}data-overlay{% endif %}
+    {% endunless %}
+    >
+    {{ content }}
+    {% include comments.html %}
+    {% include footer.html %}
+  </main>
+  {% include sidebar.html %}
+</hy-push-state>
+
+{% include scripts.html %}
