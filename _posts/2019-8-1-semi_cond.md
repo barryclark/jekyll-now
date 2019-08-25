@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mask Defect Classification of Scanning Electron Microscope Images
+title: Mask Defect Classification of Scanning Electron Microscope (SEM) Images and Generation of SEM images using GANs
 ---
 In semiconductor manufacturing, one of the major task is printing patterns on
 Wafer (silicon). To print patterns on wafer, we create its corresponding counterpart
