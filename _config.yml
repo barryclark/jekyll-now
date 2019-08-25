@@ -24,7 +24,6 @@ defaults:
     values:
       layout: "post"
       author: "Parra"
-      categories: "offtopic"
 
 # Includes an icon in the footer for each username you enter
 footer-links:
