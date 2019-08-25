@@ -1,5 +1,5 @@
 ---
-layout: scream
+layout: quotes
 title:  Redesign
 titledesc: blog and portfolio
 author: dactrtr

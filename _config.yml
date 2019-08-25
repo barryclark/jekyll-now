@@ -24,6 +24,8 @@ collections:
         output: true
     projects:
         output: true
+    travels:
+        output: true
         
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -73,6 +75,9 @@ sass:
 jekyll_admin:
   hidden_links:
     - pages
+    - travels
+    - quotes
+    - data files
 # Use the following plug-ins
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
