@@ -5,9 +5,6 @@
 # Name of your site (displayed in the header)
 name: Parra
 
-# Default author for post
-author: Parra
-
 # Short bio or description (displayed in the header)
 description: Mi bloc de notas online, proyectos y cacharreos varios
 
@@ -17,6 +14,17 @@ avatar: /images/notepad-icon.png
 #
 # Flags below are optional
 #
+
+# Default values
+defaults:
+  -
+    scope:
+      path: "" # All files in the project
+      type: "posts" # Where the type is post
+    values:
+      layout: "post"
+      author: "Parra"
+      category: "offtopic"
 
 # Includes an icon in the footer for each username you enter
 footer-links:
