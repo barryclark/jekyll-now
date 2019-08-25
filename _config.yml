@@ -19,8 +19,7 @@ avatar: /images/notepad-icon.png
 defaults:
   -
     scope:
-      path: "" # All files in the project
-      type: "posts" # Where the type is post
+      path: "posts" # All files in the project
     values:
       layout: "post"
       author: "Parra"
