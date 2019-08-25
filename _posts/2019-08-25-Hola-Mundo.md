@@ -2,6 +2,7 @@
 layout: post
 excerpt_separator: <!--more-->
 title: ¡Hola Mundo!
+category: offtopic
 published: true
 ---
 
