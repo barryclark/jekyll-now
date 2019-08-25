@@ -9,8 +9,7 @@ Status command informs the user about the tracked and untracked changes it has m
 git status
 ```
 
-![status command](./../images/Screenshot 2019-08-25 at 12.35.55 AM.png)
-
+<img src = ./../images/Screen-Shot-2014-08-03-at-9.43.15-PM.png> add command</img>
 
 
 <h3>Add</h3>
