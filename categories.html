@@ -5,9 +5,8 @@ title: Ideas
 ---  
 
 {% for category in site.categories %}
-  <li><span>
-    {{ category }}
-    {% for post in category %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
     <li><span>
           {{  post.date | date: '%-d' }} 
               {% assign m = post.date | date: '%-m' %}
@@ -28,5 +27,5 @@ title: Ideas
               {{  post.date | date: '%Y' }}
           </span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li> 
     {% endfor %}
-  </span></li>
-  
+  </ul>
+{% endfor %}
