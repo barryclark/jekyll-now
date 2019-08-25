@@ -24,7 +24,7 @@ Así pues, haciendo uso del script [publishMessageToRaspiBot.sh]({{ page.url_scr
 y `API_KEY` con los valores correspondientes al `chat_id` de nuestra cuenta de Telegram donde queramos recibir la notificación y el 
 _token_ del _bot_ que vamos a usar, bastará con invocar la orden (con el mensaje entre comillas):
 
-```bash
+```
 ./publishMessageToRaspiBot.sh "Este mensaje ha sido enviado desde la consola ejecutando el script \`publishMessageToRaspiBot.sh\`."
 ```
 
@@ -32,4 +32,4 @@ Y acto seguido en la cuenta de telegram se recibirá dicho mensaje:
 ![Ejemplo de notificación enviada a Telegram]({{ page.image_example }})
 
 Así, bastará con invocar dicho _script_ en cada notificación de la RPi que queramos enviar con la información (siempre que no supere 
-los 1024 caracteres) y, haciendo uso del formato _Markdown_ podremos darle incluso cierto formato.
+los 1024 caracteres). Además, haciendo uso del formato _Markdown_, podremos darle incluso cierto formato (también está la opción de usar HTML, pero de momento me basta con esto).
