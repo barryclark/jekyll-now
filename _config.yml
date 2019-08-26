@@ -69,7 +69,7 @@ kramdown:
     css_class: 'highlight'
 
 # Pagination 
-paginate: 2
+paginate: 10
 paginate_path: /page:num/
 
 # Set the Sass partials directory, as we're using @imports
