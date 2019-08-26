@@ -107,7 +107,7 @@ const upload = multer({
 });
 ```
 
-### upload 모듈 만들기
+### upload 라우터 작성하기
 
 'uploadedImages'라는 이름으로 최대 5개의 파일을 보내올 것이기 때문에 아래와 같이 라우터를 작성한다. 하나의 파일만 업로드 한다면, `upload.single("uploadedImage")`을 사용한다. S3에 업로드가 되고 나면 `req.file` 혹은 `req.files`에 파일정보가 저장되며, `req.file.location`에서 url을 확인할 수 있다.
 
