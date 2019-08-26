@@ -20,7 +20,7 @@ sistema de notificaciones que me avise cada vez que alguien (idealmente sólo yo
 ni monitor... sólo la toma de red y de corriente.
 
 Así pues, decidí notificar estos eventos haciendo uso de mi cuenta de Telegram y el _script_ de notificaciones que describí 
-[aquí]({% post_url 2018-08-25-Notificaciones-en-Telegram %}). Buscando información en internet, descubrí que la mejor manera de 
+[aquí]({% post_url 2019-08-25-Notificaciones-en-Telegram %}). Buscando información en internet, descubrí que la mejor manera de 
 tratar los eventos SSH es haciendo uso del PAM. Con esto en mente, creé el _script_ 
 [ssh_alert_script_pam.sh]({{ site.base_url }}/scripts/ssh_alert_script_pam.sh) y le metí los manejadores para `open_session` y 
 `close_session` solamente, con el fin de crear un mensaje que posteriormente pasaría a mi _script_ de notificación.
