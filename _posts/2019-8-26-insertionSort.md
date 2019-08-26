@@ -5,7 +5,7 @@ date: 2019-08-26
 comments: true
 categories: [Study, algorithm]
 tags: [Javascript]
-excerpt: Insertion sort is a basic sorting algorithm. Insertion sort iterates over an array, growing a sorted array behind the current location. It takes each element from the input and finds the spot, up to the current point, where that element belongs. It does this until it gets to the end of the array.
+excerpt: Insertion sort is a basic sorting algorithm. Insertion sort iterates over an array, growing a sorted array behind the current location. It takes each element from the input and finds the spot, up to the current point, where that element belongs.
 ---
 
 ### 문제
