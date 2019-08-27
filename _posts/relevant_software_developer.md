@@ -72,6 +72,7 @@ I didn't want to list this in the post, so it will be easier to find it after re
   * [PyCon Worldwide](https://www.youtube.com/results?search_query=pycon).
   * [CppCon](https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg).
   * [Reversim (Hebrew)](https://www.youtube.com/channel/UCYo4kdfR4KkHKMaE6xqO8XA).
+  * [goto; Conferences](https://www.youtube.com/user/GotoConferences).
   * [FullStack Developers Israel (Hebrew)](https://www.youtube.com/channel/UCV7lV9Lq2sc7t0QEKS4xH7A).
   * [Wix Engineering Tech Talks](https://www.youtube.com/channel/UCFXVPytLSv9ojAMgBIDh_qA).
   * [All Day DevOps](https://www.alldaydevops.com/ondemand-recordings).
