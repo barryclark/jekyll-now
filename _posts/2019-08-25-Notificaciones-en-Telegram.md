@@ -25,7 +25,7 @@ Así pues, haciendo uso del script [publishMessageToRaspiBot.sh]({{ page.url_scr
 y `API_KEY` con los valores correspondientes al `chat_id` de nuestra cuenta de Telegram donde queramos recibir la notificación y el 
 _token_ del _bot_ que vamos a usar, bastará con invocar la orden (con el mensaje entre comillas):
 
-```
+``` bash
 ./publishMessageToRaspiBot.sh "Este mensaje ha sido enviado desde la consola ejecutando el script \`publishMessageToRaspiBot.sh\`."
 ```
 
