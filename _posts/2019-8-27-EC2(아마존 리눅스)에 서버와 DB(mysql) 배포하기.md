@@ -1,0 +1,69 @@
+---
+layout: post
+title: EC2(아마존 리눅스)에 서버와 DB(mysql) 배포하기
+date: 2019-08-27
+comments: true
+categories: [Study, etc]
+tags: [AWS, mysql, node.js]
+excerpt: Jeju for Nomads 프로젝트 배포를 할 시기가 왔다(너무 늦은 감이 있지만 😂). 프로젝트 크기가 크지 않다보니 DB를 RDS에, 서버를 EC2에 배포하는 것이 좀 오버스러운 것 같아 EC2에 mysql을 설치하여 서버와 DB를 모두 EC2에 배포 해 보기로 했다.
+---
+
+Jeju for Nomads 프로젝트 배포를 할 시기가 왔다(너무 늦은 감이 있지만 😂). 프로젝트 크기가 크지 않다보니 DB를 RDS에, 서버를 EC2에 배포하는 것이 좀 오버스러운 것 같아 EC2에 mysql을 설치하여 서버와 DB를 모두 EC2에 배포 해 보기로 했다.
+
+## EC2 인스턴스 생성
+
+### 인스턴스 생성
+
+가장 먼저 해야할 일은 Amazon EC2 인스턴스를 생성하는 것이다. 운영체제를 선택하고(여기선 Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type을 사용함) 인스턴스를 만드는데, 보안그룹으로 ssh와 web 접속을 위한 http, https 보안그룹을 추가한다.
+
+![AWS Security Group for SSH](/images/aws_security_group_ssh.png "AWS Security Group for SSH")
+
+![AWS Security Group](/images/aws_security_group.png "AWS Security Group")
+
+이제 '인스턴스 시작'을 클릭하면 '기존 키 페어 선택 또는 새 키 페어 생성'이라는 창이 뜨는데, 키 페어 생성을 선택하고 키페어 이름을 입력한 뒤 **'키 페어 다운로드'를 하여 다운받은 .pem 파일은 잘 보관**해 둔다.
+
+### 탄력적 IP 할당
+
+생성이 되면 '인스턴스' 대시보드에서 확인할 수 있다. 생성이 되면 IPv4 퍼블릭 IP가 할당이 되는데, 인스턴스를 끄고 켤 때 마다 새로운 IP가 할당되므로 그 때 마다 클라이언트에서 서버 IP를 수정해 주어야 하는 상황이 된다. 따라서 고정 IP를 할당해주는 것이 좋은데, **탄력적 IP** 이다.
+
+탄력적 IP 생성 및 할당 방법은 아주 간단하다. EC2 대시보드에 '탄력적 IP'를 클릭하고, '새주소 할당' 및 '할당'을 클릭하면 IP 주소가 생성된다. 우클릭 후 '주소연결'을 누르면 아래와 같이 연결하고자 하는 인스턴스를 선택할 수 있다.
+
+![AWS Elastic IP](/images/aws_elastic_ip.png "AWS Elastic IP")
+
+인스턴스와 프라이빗 IP를 선택하고 연결을 누르면 완료. 다시 '인스턴스' 대시보드로 돌아오면 탄력적 IP가 부여된 것을 확인할 수 있다.
+
+## EC2 접속 및 환경세팅
+
+이제 생성된 EC2에 접속해 보자.
+
+### EC2 접속
+
+먼저, 터미널 사용자의 홈 디렉토리에 `.ssh` 폴더를 만들고, EC2를 생성하면서 다운받은 키페어(.pem) 파일을 복사해 온다.
+
+```bash
+mkdir .ssh
+cd .ssh
+cp [original_file] [copied_file]
+```
+
+그리고 인스턴스 대시보드에서 연결하고자 하는 인스턴스를 선택한 후 '연결'탭을 클릭하면 연결 방법이 친절하게 설명되어 있다.
+
+```bash
+chmod 400 [pem-file-name]
+ssh -i [pem-file-name] ec2-user@ec[ip-of-ec2]
+```
+
+계속 진행할거냐는 물음에 yes를 입력하면,
+'Amazon Linux AMI'라는 레터가 뜨고, 접속이 완료된다.
+
+```bash
+Are you sure you want to continue connecting (yes/no)? yes
+```
+
+접속이 되면 아래 명령어를 사용하여 EC2 인스턴스에 설치되어있는 패키지를 업데이트 한다.
+
+```bash
+yum update -y
+```
+
+### MySQL 설치
