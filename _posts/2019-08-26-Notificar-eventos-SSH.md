@@ -36,7 +36,7 @@ y ejecuté las siguientes órdenes:
 Ya tenemos listo el _script_ para gestionar los eventos PAM de _login_ y _logout_ y sólo nos queda referenciarlo en el PAM para que lo 
 ejecute. Así pues, en `/etc/pam.d/sshd` al final del archivo añadimos lo siguiente:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # SSH Alert script
 session required pam_exec.so /etc/pam.scripts/ssh_alert_script_pam.sh
 {% endhighlight %}
