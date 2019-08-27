@@ -28,7 +28,7 @@ tratar los eventos SSH es haciendo uso del PAM. Con esto en mente, creé el _scr
 Una vez creado lo ubiqué en la carpeta `/etc/pam.scripts/` (que previamente tuve que crear, para tener todos mis _scripts_ de PAM agrupados) 
 y ejecuté las siguientes órdenes:
 
-```
+``` bash
 # chown root:root ssh_alert_script_pam.sh
 # chmod 0700 ssh_alert_script_pam.sh
 ```
