@@ -28,18 +28,18 @@ tratar los eventos SSH es haciendo uso del PAM. Con esto en mente, creé el _scr
 Una vez creado lo ubiqué en la carpeta `/etc/pam.scripts/` (que previamente tuve que crear, para tener todos mis _scripts_ de PAM agrupados) 
 y ejecuté las siguientes órdenes:
 
-``` bash
+{% highlight bash %}
 # chown root:root ssh_alert_script_pam.sh
 # chmod 0700 ssh_alert_script_pam.sh
-```
+{% endhighlight %}
 
 Ya tenemos listo el _script_ para gestionar los eventos PAM de _login_ y _logout_ y sólo nos queda referenciarlo en el PAM para que lo 
 ejecute. Así pues, en `/etc/pam.d/sshd` al final del archivo añadimos lo siguiente:
 
-```
+{% highlight bash linenos %}
 # SSH Alert script
 session required pam_exec.so /etc/pam.scripts/ssh_alert_script_pam.sh
-```
+{% endhighlight %}
 
 ¡Y listo!
 
