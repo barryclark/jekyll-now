@@ -5,7 +5,10 @@ permalink: /about/
 published: true
 ---
 
-Hello! I'm Jay and this is my English tech [blog](/). The most popular post here is my [Visual and Interactive Guide to the Basics of Neural Networks](/visual-interactive-guide-basics-neural-networks/) (which was called [awesome](https://simplystatistics.org/2016/12/20/noncomprehensive-list-of-awesome/), [must share](https://www.facebook.com/kaggle/photos/a.10150387148668464.377856.135534208463/10154865388138464/?type=3&hc_ref=ARQS_GO4ZGUA8CF_Fus-jB2FVUxlkMU8UgleekyycPWbRjFoD4foj65C9vGn0s8Do6Y), [and](https://www.facebook.com/photo.php?fbid=10154054954207143&set=a.471131017142.254979.722677142&type=3&theater) [other](https://www.reddit.com/r/programming/comments/5igdix/a_visual_and_interactive_guide_to_the_basics_of/) things)
+Hello! I'm Jay and this is my English tech [blog](/). The most popular posts here are:
+* [The Illustrated Transformer](/illustrated-transformer/) (Referenced in AI/ML Courses at [MIT](https://www.youtube.com/watch?v=53YvP6gdD7U&feature=youtu.be&t=334), and [Cornell](http://www.cs.cornell.edu/courses/cs5740/2019sp/schedule.html))
+* [The Illustrated BERT, ELMo, and co.](/illustrated-bert/) (Referenced in AI/ML Courses at [Stanford](http://web.stanford.edu/class/cs224n/) and [CMU](http://phontron.com/class/nn4nlp2019/schedule/contextual-representation.html))
+* [Visual and Interactive Guide to the Basics of Neural Networks](/visual-interactive-guide-basics-neural-networks/) (which was called [awesome](https://simplystatistics.org/2016/12/20/noncomprehensive-list-of-awesome/), [must share](https://www.facebook.com/kaggle/photos/a.10150387148668464.377856.135534208463/10154865388138464/?type=3&hc_ref=ARQS_GO4ZGUA8CF_Fus-jB2FVUxlkMU8UgleekyycPWbRjFoD4foj65C9vGn0s8Do6Y), [and](https://www.facebook.com/photo.php?fbid=10154054954207143&set=a.471131017142.254979.722677142&type=3&theater) [other](https://www.reddit.com/r/programming/comments/5igdix/a_visual_and_interactive_guide_to_the_basics_of/) things)
 
 
 As this is my technical blog, it's probably fitting to point out some aspects of technology that fascinate me:
