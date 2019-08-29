@@ -13,3 +13,11 @@ As it turns out:
 1. There were more than 150 (?) people in the audience (I was expecting a much cosier crowd, so I got a bit nervous),
 2. Only 20 out of the 150+ people in the audience were from data science/analytics background, and;
 3. There were a few interesting questions on I/O and threads raised during Q&A, and a few people stayed around to ask further questions.
+
+I've decided to write a post about it, since not everyone has the time to watch tech talk videos and the volunteers at Engineers.SG weren't at the meetup to record my talk (though I did try to record myself speaking, with not-so-great results).
+
+---
+
+## What is parallel processing?
+
+When we first started learning programming, we run our codes one-by-one in a sequential manner. Sequential processing means that you complete
