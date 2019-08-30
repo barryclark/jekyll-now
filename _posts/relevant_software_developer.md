@@ -20,7 +20,7 @@ How
 
 So how to tackle this important task: in my mind it's an ongoing way of life, like a doctor that reads a medical journals, goes to medical conventions, checks out his colleagues' work and more (a lot more) so we need to always practice it and it will become or inspire a very interesting part of your work. After a bit of philosophy let's get down to the specifics:
 
-* **General curiosity** - My grandfather always said "always learn when someone is helping you". Always ask why, do not agree to let knowledge pass you by. Explore always when given a task to do, look to your right and left for different solutions possibilities. Always pay attention, listen to your colleagues work/"shop" discussions, and always learn from reviews given to you and you give to them.
+* **General curiosity** - My grandfather always said to me "when someone is helping you, always watch over their shoulders", which I construe as always ask why, do not agree to let knowledge pass you by. Explore always when given a task to do, look to your right and left for different solutions possibilities. Always pay attention, listen, to your colleagues work/"shop" discussions, and always learn from reviews given to you and you give to them.
 * **Share knowledge, *always and with everyone*** - If in the course of a discussion, code review, by giving a talk or any other way.
 
   You may surprise yourself that you're wrong (What!? NO..) or out of date, use the time that others had spent in exploring those topics. And even if you are correct that will give some practice in conveying  ideas and maybe understanding those subjects more.
