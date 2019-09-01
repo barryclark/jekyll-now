@@ -6,7 +6,9 @@ excerpt: Sometimes, we just can't make things run indefinitely faster on a singl
 ---
 ---
 Where: [Python User Group Singapore, August 2019 Meetup](https://www.meetup.com/Singapore-Python-User-Group/events/263765155/)
+
 When: 27 August 2019
+
 Location: Zendesk Singapore
 
 Resources used:
