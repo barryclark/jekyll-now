@@ -14,7 +14,7 @@ Location: Zendesk Singapore
 Resources used:
 - [Official Python documentation on concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html)
 - [Built-in Functions](https://docs.python.org/3/library/functions.html#map)
-- [Accelerating Batch Processing of Images in Python — with gsutil, numba and concurrent.futures](_posts/2019-05-27-accelerating-batch-processing.md)
+- [Accelerating Batch Processing of Images in Python — with gsutil, numba and concurrent.futures](_posts\2019-05-27-accelerating-batch-processing.md)
 
 ## Recap
 
@@ -57,6 +57,7 @@ I have attended Python User Group Singapore meetups (on-and-off) since November 
 4. Questions from the audience during and after Q&A were on threading and parallel + async I/O operations/executions - topics that I have yet to explore extensively.
 5. Time management - my talk overran slightly beyond 30 minutes as someone in the audience interrupted halfway to clarify about Spark and parallel processing, so it got a bit late and people started leaving.
 6. I need a taller standing tripod to record my own talks when Engineers.SG is not recording. My mini-tripod was positioned on a table facing the stage at a really weird angle, and the recording was marred by people walking around blocking the camera view. Much thanks to Ka Ho for being my temporary video-recording tech support (and effective stand-in for Engineers.SG) while I was on stage.
+7. Slight technicality error in my slides: the huge 19.4 times speedup was due in part to numba. Speedup achieved with 4-core was around 2-3 times faster in my case due to Amdahl's law, but it's still better than no speedup at all.
 
 ### Things that went well
 

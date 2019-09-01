@@ -17,7 +17,7 @@ I'm currently learning how to make my Python codes run faster so that I can have
 My goal for 2019 is to:
 
 1. ~~Speak at a tech meetup~~ (and hope my reputation in the tech community does not go down the drain)
-    - Update 2019-09-01: **Goal achieved** - I did my [first-ever public tech meetup talk]((https://www.meetup.com/Singapore-Python-User-Group/events/263765155/)) on 27th August 2019, and over 100 people attended my talk (a larger turnout than usual). Reflection on talk [here](_posts/2019-08-27-parallel-programming-python.md)
+    - Update 2019-09-01: **Goal achieved** - I did my [first-ever public tech meetup talk]((https://www.meetup.com/Singapore-Python-User-Group/events/263765155/)) on 27th August 2019, and over 100 people attended my talk (a larger turnout than usual). Reflection on talk [here](_posts\2019-08-27-parallel-programming-python.md)
 
 2. Build up my Github portfolio
 3. Write more tech posts to document my learning journey and (hopefully) share with more people
