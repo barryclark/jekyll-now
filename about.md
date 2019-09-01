@@ -16,10 +16,15 @@ I'm currently learning how to make my Python codes run faster so that I can have
 
 My goal for 2019 is to:
 
-1. Speak at a tech meetup (and hope my reputation in the tech community does not go down the drain) - Update 2019-08-22: I have booked a speaking slot with the friendly folks from [Python User Group Singapore](https://pugs.org.sg) - more details on the meetup [here](https://www.meetup.com/Singapore-Python-User-Group/events/263765155/)!
+1. ~~Speak at a tech meetup~~ (and hope my reputation in the tech community does not go down the drain)
+    - Update 2019-08-22: I have booked a speaking slot with the friendly folks from [Python User Group Singapore](https://pugs.org.sg) - more details on the meetup [here](https://www.meetup.com/Singapore-Python-User-Group/events/263765155/)!
+    - Update 2019-09-01: **Goal achieved** - I spoke at my first-ever tech meetup on 27th August 2019, and over 100 people attended my talk (a larger turnout than usual).
+
 2. Build up my Github portfolio
 3. Write more tech posts to document my learning journey and (hopefully) share with more people
-4. Speak at a tech conference so that I can share what I've learnt with even more people - Update 2019-08-22: I will be speaking at [Women Who Code Connect Asia 2019](https://asia.womenwhocode.dev/) in Singapore on 31st August 2019. See you there!
+4. ~~Speak at a tech conference so that I can share what I've learnt with even more people~~
+    - Update -2019-08-22: I will be speaking at [Women Who Code Connect Asia 2019](https://asia.womenwhocode.dev/) in Singapore on 31st August 2019. See you there!
+    - Update 2019-09-01: **Goal achieved** - I delivered my first-ever conference talk on 31st August 2019. Awaiting recordings from the lovely volunteers from Engineers.SG
 
 ### Contact me
 
