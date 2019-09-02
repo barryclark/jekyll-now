@@ -33,7 +33,7 @@ October 31 - November 1: MIT Technology Review Leadership Summit, Singapore
 
 November 6: Cloud Native London
 
-November 7: Bristech Conference, Bristol
+November 4-7: O'Reilly Software Architecture, Berlin
 * **Keynote**
 
 November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
