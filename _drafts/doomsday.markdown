@@ -18,15 +18,25 @@ The Doomsday Principle is a specific application of this idea. Suppose that we m
 
 One can formalize the Doomsday Argument using the language of Bayesian reasoning and by assuming vague priors. I find that the figure below suffises.
 
-FIGUUR uitleggen.
+![](doomsday_fig.svg)
 
 It is quite easy to derive 95% confidence intervals. Let us say that we are in the 95% middle part. Best-case, we have only seen 2.5% (1/40) of the total span. This would put the end at 39 times the current duration. In the worst case, we have already seen 97.5% of humanity's story. This means that there is only 1/39 of the duration up to now left...
 
 One can also estimate the end of civiliastion in a slightly different way. Rather taking the time line of when humanity started, one could argue that it is more sensible to take the number of people that have been born to predict the number of people that will be born. The cumulative number of humans having been born is roughly 70 bilion (lifting number from Gott's orginal paper proposing this arumentation). So the number of people yet to be born should be between 1.8 billion and 2.7 trillon, with 95% confidence. Tranlating this in years humany has left requires making assumtions one future demographics. Assuming everying remains roughly the same, doomsday will fall between 12 and 18,000 year from now.
 
-The huge uncertainty of the predictions, together with the two confilcting prediction (depending on how they are made), can be seen as serous critiques on the Doomsday Argement. I am willing to still accept this theory, since making predictions always requires assumptions. Different assumtions will lead to different outcomes. The extreme uncertainty is a consequence of the tiny amount of information that is used. The predictions are still sobering, the world is unlikely to end in the next decade, nor are we likely to reach for the stars and propagate or species over the wholo galaxy for the next million years.  
+The huge uncertainty of the predictions, together with the two confilcting prediction (depending on how they are made), can be seen as serous critiques on the Doomsday Argement. I am willing to still accept this theory, since making predictions always requires assumptions. Different assumtions will lead to different outcomes. The extreme uncertainty is a consequence of the tiny amount of information that is used. The predictions are still sobering, the world is unlikely to end in the next decade, nor are we likely to reach for the stars and propagate or species over the whole galaxy for the next million years.
 
 ## Choosing a scientific programming language
+
+Rather than predicting the end of the world, let us apply the Doomsday Argument to something less important[^54b37e9f]: the relevance of programming languages! Below, I have applied the theory on a series of popular programming langues in scientific computing. I added 80% confidence bands to each prediction, capped of at 2100 because I don't particular care what people use when I am under the sod.
+
+[^54b37e9f]: Though no less quarreled over in by tech people.
+
+![The Doomsday Principle applied on some programming langues. Red dashed lines are 80% confidence intervals.](languages_obsolescence.svg)
+
+Starting PhD students might now consider Julia as their main programming language. It should be relevant for roughly the time span of a doctorate. Python or C++ might still last for a carreer. Who still uses MATLAB has likely already had a carreer in this language. Fortran is here to stay, at least for the near future. Note that the lower bound are all very soon. Almost all languages can become irrelevant overnight.
+
+What is around will remain around, this is called the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect). The Doomsday Principle is conservative, the bets are always placed on whatever is around the longest. The Coca Cola company will be aound after the last burger is served in MacDonalds and Christianity is expected to outlast Islam, but nothing will last forever.
 
 ## Simulations and aliens
 
@@ -56,4 +66,4 @@ If quantum suicide works, it would theoretically be possible ot harness this to 
 
 ## Conclusion
 
-The Doomsday Argument is mind-boggling concept, deceptively simple, full of paradoxes, obviously correct and yet violates all logic. Much of the hottest topics of our time, the end of the world, the Simulation Hypothesis, the Fermi Paradox, Superintelligent AI, etc. have some root in it or can be approached by it. Most of this blog post is based on *[The Doomsday Calculation](https://www.goodreads.com/book/show/42283303-the-doomsday-calculation?from_search=true)*, by William Poundstone. I could not put it down and it provide topics for conversations for pleny of hot tub sessions.
+The Doomsday Argument is mind-boggling concept, deceptively simple, full of paradoxes, obviously correct and yet violates all logic. Much of the hottest topics of our time, the end of the world, the Simulation Hypothesis, the Fermi Paradox, Superintelligent AI, etc. have some root in it or can be approached by it. Most of this blog post is based on *[The Doomsday Calculation](https://www.goodreads.com/book/show/42283303-the-doomsday-calculation?from_search=true)*, by William Poundstone. I could not put it down and it provide topics for conversations for pleny drinking converation. Or hot tub sessions.
