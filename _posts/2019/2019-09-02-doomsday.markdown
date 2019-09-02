@@ -1,7 +1,7 @@
 ---
-layout: "post"
-title: "doomsday"
-date: "2019-09-01 14:32"
+layout: post
+title: "On the Apocalypse, programming languages and quantum suicide"
+date: '2019-09-02 18:27'
 ---
 
 In *Good Omens*, Agnes Nutter, Witch, predicts the Apocalypse with extraordinary accuracy: on a specific date, a little bit after tea time. The end of the world is not only a subject of fiction. Serious (and less serious) scientists, politicians, entrepreneurs, and other contemporary prophets have suggested more potential causes than I would dare to count. It might surprise you that there actually is a formula that can predict how long our civilization, or just about anything, will last, and it hardly requires any expert knowledge or complex calculations! The Doomsday Argument is so simple, so elegant that it seems too good to be true. Yet, it is hotly debated among professional and amateur philosophers who can all not quite agree on why it could not possibly hold. This debate is far-reaching since the Doomsday Argument touches all the big questions are pondering about: *will we reach the singularity*, *are we living in a simulation*, and *where are all the aliens*?
@@ -20,7 +20,7 @@ Based on fossil evidence, anatomically modern humans arose about 200,000 years a
 
 One can formalize the Doomsday Argument using the language of Bayesian reasoning and by assuming vague priors. I find that the figure below suffices.
 
-![Illustration of the Doomsday Argument.](doomsday_fig.svg)
+![Illustration of the Doomsday Argument.](../../images/2019_doomsday/doomsday_fig.svg)
 
 It is quite easy to derive 95% confidence intervals. Let us say that we are in the 95% middle part. Best-case, we have only seen 2.5% (1/40) of the total span. This would put the end at 39 times the current duration. In the worst case, we have already seen 97.5% of humanity's story. This means that there is only 1/39 of the period up to now left...
 
@@ -34,7 +34,7 @@ Rather than predicting the end of the world, let us apply the Doomsday Argument 
 
 [^54b37e9f]: Though no less quarreled over in by tech people.
 
-![The Doomsday Principle applied to some programming languages. Red dashed lines are 80% confidence intervals.](languages_obsolescence.svg)
+![The Doomsday Principle applied to some programming languages. Red dashed lines are 80% confidence intervals.](../../images/2019_doomsday/languages_obsolescence.svg)
 
 Starting PhD students might now consider Julia as their primary programming language. It should be relevant for roughly the period of a doctorate. Python or C++ might still last for a career. Who still uses MATLAB has likely already had a career in this language. Fortran is here to stay, at least for the near future. Note that the lower bounds are all very soon. Almost all programming languages can become irrelevant overnight.
 
