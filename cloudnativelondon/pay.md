@@ -20,6 +20,8 @@ For one-off payments, make the bank transfer to:
 > **SWIFT/BIC:** SRLGGB2L  
 > **Reference:** See invoice   
 
+We can also raise an invoice for 3/6/12 months (£1800/£3600/£7200) in one go.
+
 Alternatively, you can make a card payment:
 
 {% if jekyll.environment == "production" %}
