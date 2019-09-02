@@ -3,9 +3,9 @@ layout: post
 title: A brief desciption on Q-Learning and how it is implemented
 categories: [AI, ML, Q-Learning, Reinforcement learning]
 datetime: 04-09-2019
+author: Amin R.
+readingtime: 7m
 ---
-
-# A brief desciption on Q-Learning and how it is implemented
 
 Are you trying to develop a simple AI agent to win a game? Maybe Q-Learning is a good choice for you. Your system will learn based on its previous experiences, which means in order to reach a good decision to choose between its possible actions, it should have experienced a similar situation. Base on the environment, that may end up the situation when we leave two of our agents to play against each other and learn from it, or just put agent in the world to learn from its experiences!
 
@@ -31,14 +31,14 @@ Put the agent at the start cell, and let it takes its first action! At the begin
 
 Before coding, let's look at the formulas. They help to implement what everyone knows as Q-Learning. This is the learning formula, based on Wikipedia:
 
-$Q^{new}(s_t, a_t) \leftarrow (1-\alpha).Q(s_t, a_t)+\alpha . (r_t + \gamma . max_aQ(s_{t+1}, a))$
+$$Q^{new}(s_t, a_t) \leftarrow (1-\alpha).Q(s_t, a_t)+\alpha . (r_t + \gamma . max_aQ(s_{t+1}, a))$$
 
 In this calculation:
 
-- $Q^{new}(s_t, a_t)$ is the new Q-value (score) for this state, action pair
-- $\alpha$ is the learning rate, between 0 and 1 (0 means no learning and 1 means dismiss old learnings
-- $\gamma$ is the discount value. This is between 0 and 1, and shows how much the score is important. For 0, even final state, actions are considered worthless. For something in between, the calculated score becomes less important as it goes away from the final score, say end of an episode.
-- $max_aQ(s_{t+1}, a)$ is the Q-value for best available action in state _s_.
+- $$Q^{new}(s_t, a_t)$$ is the new Q-value (score) for this state, action pair
+- $$\alpha$$ is the learning rate, between 0 and 1 (0 means no learning and 1 means dismiss old learnings
+- $$\gamma$$ is the discount value. This is between 0 and 1, and shows how much the score is important. For 0, even final state, actions are considered worthless. For something in between, the calculated score becomes less important as it goes away from the final score, say end of an episode.
+- $$max_aQ(s_{t+1}, a)$$ is the Q-value for best available action in state _s_.
 
 ## Developing the Q-Learning environment
 
