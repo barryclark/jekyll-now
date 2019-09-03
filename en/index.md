@@ -155,7 +155,7 @@ Bcash Greece has published [videos with instructions on how to use their Bitcoin
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2019-04-06
+Last update: 2019-09-03
 
 <!-- <div class="posts">
   {% for post in site.posts %}
