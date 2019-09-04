@@ -17,10 +17,10 @@ avatar: https://avatars2.githubusercontent.com/u/12252699
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: bongo@haguest.com
   facebook:
   flickr:
-  github: BongoEADGC6/bongoeadgc6.github.io
+  github: BongoEADGC6
   instagram:
   linkedin:
   pinterest:
@@ -36,7 +36,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-147134547-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
