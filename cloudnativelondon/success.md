@@ -12,4 +12,6 @@ If you are a first time sponsor, please copy the following into an email and com
 
 Attach a company logo, and send to cheryljhung@gmail.com with subject "New sponsor information".
 
+Check the [FAQ](/cloudnativelondon/faq) if you want to bring swag or a banner.
+
 We look forward to seeing you at the meetup!
