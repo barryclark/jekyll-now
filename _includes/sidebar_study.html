@@ -3,9 +3,9 @@
   <ul>
     {% if page.url == "/study/" %}
     <li class="sidebar">
-      <p class="activated">
+      <a href="{{ site.baseurl }}{{ link.url }}" class="activated">
         {{ link.title }}
-      </p>
+      </a>
     </li>
     {% else %}
     <li class="sidebar">
@@ -14,9 +14,9 @@
     {% endif %} {% for sublink in link.sublinks %} {% if page.url contains
     sublink.url %}
     <li class="sidebar">
-      <p class="activated">
+      <a href="{{ site.baseurl }}{{ sublink.url }}" class="activated">
         {{ sublink.title }}
-      </p>
+      </a>
     </li>
     {% else %}
     <li class="sidebar">
