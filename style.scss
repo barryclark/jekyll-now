@@ -367,12 +367,15 @@ nav {
     color: #fff;
   }
 }
+
 .pagination {
   text-align: center;
   font-family: $Spoqa;
   margin-top: 3em;
+  align-items: center;
 
   span {
+    justify-content: center;
     padding: 0.4em;
     display: inline-block;
     width: 30px;
@@ -380,13 +383,13 @@ nav {
     border-radius: 30px;
     font-size: 14px;
     margin: 0.2em;
-
     a {
       color: $darkPurple;
     }
     // padding: 0.5em 1em;
   }
 }
+
 .posts > .post:first-child {
   font-family: $Spoqa;
   margin-top: 1.5em;

@@ -92,6 +92,16 @@ exclude:
   - README.md
   - CNAME
 
-paginate: 10 # 한 페이지 당 표시하고자 하는 포스트의 최대 개수
-paginate_path: "/page:num/" # URL 규칙
+# paginate: 10 # 한 페이지 당 표시하고자 하는 포스트의 최대 개수
+# paginate_path: "/page:num/" # URL 규칙
 
+# Paginate config
+pagination:
+  enabled: true
+  per_page: 10
+  sort_reverse: true
+  title: ":title"
+  permalink: "/page:num/"
+  trail:
+    before: 2
+    after: 2

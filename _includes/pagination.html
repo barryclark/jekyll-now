@@ -1,0 +1,26 @@
+<div class="pagination">
+  {% if paginator.total_pages <= 10 %} {% assign first = 1 %} {% assign last =
+  paginator.total_pages %} {% else %} {% assign first = paginator.page | minus:
+  8 %} {% if first < 1 %} {% assign first = 1 %} {% endif %} {% assign last =
+  first | plus: 9 %} {% if last > paginator.total_pages %} {% assign last =
+  paginator.total_pages %} {% endif %} {% endif %} {% if paginator.previous_page
+  %}
+  <span class="next">
+    <a href="{{ site.url }}{{ paginator.previous_page_path }}"><</a>
+  </span>
+  {% endif %} {% assign currentPage = paginator.page %}{% for i in (first..last)
+  %} {% if currentPage == i %} {% assign class = 'active' %}{% else %}{% assign
+  class = 'unactive' %} {% endif %} {% if i == 1 %}
+  <span class="pageNum {{ class }}">
+    <a href="{{ site.baseurl }}/">{{ i }}</a></span
+  >
+  {% else %}
+  <span class="pageNum {{ class }}">
+    <a href="{{ site.baseurl }}/page{{ i }}/">{{ i }}</a></span
+  >
+  {% endif %}{% endfor %}{% if paginator.next_page %}
+  <span>
+    <a class="next" href="{{ site.url }}{{ paginator.next_page_path }}">></a>
+  </span>
+  {% endif %}
+</div>
