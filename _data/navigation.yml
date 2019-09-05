@@ -3,8 +3,8 @@
   sublinks:
     - title: 컴퓨터 공학
       url: /study/computerscience
-    - title: HTML & CSS
-      url: /study/html_css
+    # - title: HTML & CSS
+    #   url: /study/html_css
     - title: Javascript
       url: /study/javascript
     - title: Node.js
