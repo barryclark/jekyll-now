@@ -591,6 +591,24 @@ ul.til-lists .tag {
   border-bottom: none;
 }
 
+#myBtn {
+  padding: 0;
+  position: fixed;
+  bottom: 160px;
+  right: auto;
+  margin-left: 740px;
+  z-index: 0;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+}
+#btn_img {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
 // .post-header {
 //   background-position: center;
 //   background-repeat: no-repeat;

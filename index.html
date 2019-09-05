@@ -4,7 +4,7 @@ layout: default
 
 <div class="container">
   <div class="posts">
-    {% for post in paginator.posts %}
+    {% include backToTopButton.html %} {% for post in paginator.posts %}
     <article class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
         <div class="entryCategory">
