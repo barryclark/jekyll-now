@@ -5,7 +5,7 @@ layout: default
 <div class="container">
   <p class="notice">learning something new everyday</p>
   <ul class="til-lists">
-    {% for post in site.categories.til %}
+    {% include backToTopButton.html %} {% for post in site.categories.til %}
     <li class="til-list">
       <a href="{{ site.baseurl }}{{ post.url }}"
         >{{ post.title }}

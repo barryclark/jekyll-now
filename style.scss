@@ -594,9 +594,10 @@ ul.til-lists .tag {
 #myBtn {
   padding: 0;
   position: fixed;
-  bottom: 160px;
+  bottom: auto;
   right: auto;
-  margin-left: 740px;
+  margin-left: 760px;
+  margin-top: 250px;
   z-index: 0;
   font-size: 18px;
   border: none;
