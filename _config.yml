@@ -1,31 +1,32 @@
 # Site settings
-title: "Carte Noire"
-email: jacob@jacobtomlinson.co.uk
-description: "A dark blog theme for Jekyll."
+title: "Joel Whitney"
+email: whitney.joel.b@gmail.com
+description: "Personal blog"
 baseurl: ""
-url: "http://carte-noire.jacobtomlinson.co.uk/"
-title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
-title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
-google_analytics: "UA-20365477-4"
-disqus_account: cartenoire
-github_repository: https://github.com/jacobtomlinson/carte-noire
-addthis_id: ra-513c6fa83da6ec67
+url: "https://joelwhitney.github.io"
+title_description: "GIS software, spatial data anyalytics, and location intelligence at <a href=https://esri.com>esri</a>.  Develop software for iOS, macOS, and Python in my spare time."
+title_image: "https://www.gravatar.com/avatar/3c1f1234d97343cd8e5766a73ed65d4a?s=500&d=mm"
+google_analytics: ""
+disqus_account: joelwhitney
+github_repository:
+addthis_id:
 post_limit: 5
+work_post_limit: 5
 
 # Social usernames/URLs
-twitter_username: _jacobtomlinson
-github_username:  jacobtomlinson
-instagram_username: 
-reddit_username: 
-linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
-google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
-stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
+twitter_username:
+github_username:  JoelWhitney
+instagram_username:
+reddit_username:
+linkedin_link: https://www.linkedin.com/in/joelwhitney/
+google_plus_link:
+stackoverflow_link:
 xing_link:
 facebook_link:
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: ""
+footer_right: ""
 
 # Build settings
 markdown: kramdown
@@ -36,3 +37,4 @@ kramdown:
 
 permalink: pretty
 exclude: [vendor]
+1: https://esri.com

@@ -1,15 +1,15 @@
 ---
 layout:     post
-title:      Carte Noire in Action
+title:      Beerventory
 date:       2014-06-10 12:31:19
 summary:    See what the different elements looks like.
-categories: jekyll
+category: Personal project
 thumbnail: cogs
 tags:
- - demo
- - action
- - carte
- - noire
+ - iOS
+ - Swift
+ - Beer inventory
+ - Amazon DynamoDB
 ---
 
 **Note** - This article is a derivative of ["See pixyll in action"][1], taken from the lovely jekyll theme [pixyll][4].

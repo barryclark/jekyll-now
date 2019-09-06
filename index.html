@@ -10,7 +10,7 @@ make-smaller-titles: true
         <div class="col-md-12 main content-panel">
 
             <div class="gravatar">
-                <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+                <img src="{{ site.title_image }}" class="img-circle about-image" height="130" width="130" alt="{{ site.title }}" />
             </div>
 
             <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
@@ -21,20 +21,41 @@ make-smaller-titles: true
 
             {% include social_links.html %}
           </div>
+
           <div class="col-md-12 main content-panel">
 
-            <div class="articles">
+            <div class="posts">
 
-              <h2>Latest Articles</h2>
+              <h2>Work projects</h2>
 
               <ul>
-                  {% for post in site.posts limit: site.post_limit %}
-
+                  {% assign work_posts = site.posts | where: "category", "Work project" %}
+                  {% for post in work_posts limit: site.work_post_limit %}
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+                          <small class="hidden-xs">{{ post.date | date: "%Y" }}</small><br>
+                          <small class="hidden-xs">{{ post.tags | join: "|" }}</small>
                       </li>
+                  {% endfor %}
+                  <li>
+                      <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
+                  </li>
+              </ul>
 
+            </div>
+
+            <div class="posts">
+
+              <h2>Personal projects</h2>
+
+              <ul>
+                  {% assign personal_posts = site.posts | where: "category", "Personal project" %}
+                  {% for post in personal_posts limit: site.personal_post_limit %}
+                      <li>
+                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                          <small class="hidden-xs">{{ post.date | date: "%Y" }}</small><br>
+                          <small class="hidden-xs">{{ post.tags | join: "|" }}</small>
+                      </li>
                   {% endfor %}
                   <li>
                       <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>

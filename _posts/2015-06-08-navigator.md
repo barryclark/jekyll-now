@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      Using thumbnails
-date:       2014-06-08 12:32:18
+title:      Navigator for ArcGIS
+date:       2015-06-08 12:32:18
 summary:    Using thumbnails in your Carte Noire articles.
-categories: jekyll
+category: Work project
 thumbnail: jekyll
 tags:
- - thumbnails
- - carte noire
+  - Product
+  - ArcGIS
 ---
 
 Carte Noire is designed to start each article with an all-white image as a

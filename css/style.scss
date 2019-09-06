@@ -187,7 +187,7 @@ ul {
 	.fa-linkedin:hover {
 		color: $linkedin;
 	}
-	
+
 	.fa-xing:hover {
 		color: $xing;
 	}
@@ -195,7 +195,7 @@ ul {
 	.fa-google-plus:hover {
 		color: $google-plus;
 	}
-	
+
 	.fa-facebook:hover {
 		color: $facebook;
 	}
@@ -207,15 +207,15 @@ ul {
 	.fa-stack-overflow:hover {
 		color: $stack-overflow;
 	}
-	
+
 	.fa-instagram:hover {
 		color: $instagram;
 	}
-	
+
 	.fa-reddit-alien:hover {
 		color: $reddit;
 	}
-	
+
 	.fa-rss:hover {
 		color: $rss;
 	}
@@ -300,7 +300,57 @@ ul {
 		font-size: 2em;
 	}
 
-	.articles {
+	.posts {
+		text-align: center;
+		font-size: 20px;
+
+		h2 {
+			margin-bottom: 30px;
+			color: $light-blue;
+			font-size: 26px;
+		}
+
+		ul {
+
+			padding: 0px;
+
+			li {
+				margin-bottom: 20px;
+				font-size: 24px;
+
+				a:hover {
+					color: $light-medium;
+				}
+
+				small {
+					font-size: 14px;
+					margin-top: -10px;
+					padding-top: 0px;
+					color: $light-medium;
+				}
+
+			}
+
+			li:nth-last-of-type(1) {
+
+				small {
+					font-size: 16px;
+				}
+
+			}
+		}
+
+		a, a:active {
+			color: $white;
+			white-space: nowrap;
+		}
+
+		a:hover {
+			color: $light-blue;
+		}
+	}
+
+	.posts {
 		text-align: center;
 		font-size: 20px;
 

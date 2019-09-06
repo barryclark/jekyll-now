@@ -31,14 +31,14 @@
 
     var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
 
-    listOfArticlesDiv = document.getElementsByClassName("articles");
+    listOfArticlesDiv = document.getElementsByClassName("posts");
 
     for (i = 0; i < listOfArticlesDiv.length; i++) {
 
-      listOfA = document.getElementsByClassName("articles")[i].getElementsByTagName("a");
-      listOfSmall = document.getElementsByClassName("articles")[i].getElementsByTagName("small");
+      listOfA = document.getElementsByClassName("posts")[i].getElementsByTagName("a");
+      listOfSmall = document.getElementsByClassName("posts")[i].getElementsByTagName("small");
 
-      divWidth = document.getElementsByClassName("articles")[i].offsetWidth;
+      divWidth = document.getElementsByClassName("posts")[i].offsetWidth;
 
       for (k = 0; k < listOfSmall.length; k++) {
 
@@ -57,7 +57,7 @@
 
   function getStartFontSize() {
     try {
-      startingFontSize = parseInt($(document.getElementsByClassName("articles")[0].getElementsByTagName("a")[0]).css("font-size"));
+      startingFontSize = parseInt($(document.getElementsByClassName("posts")[0].getElementsByTagName("a")[0]).css("font-size"));
       setFontSize();
       window.addEventListener('resize', setFontSize, true);
     } catch (e) {}

@@ -27,7 +27,7 @@ make-smaller-titles: true
       {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
       {% if forloop.first %}
-      <div class="col-md-12 content-panel articles">
+      <div class="col-md-12 content-panel posts">
         <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
         <ul>
       {% endif %}
@@ -43,7 +43,7 @@ make-smaller-titles: true
         {% if this_year != next_year %}
           </ul>
         </div>
-        <div class="col-md-12 content-panel articles">
+        <div class="col-md-12 content-panel posts">
           <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
           <ul>
         {% endif %}
