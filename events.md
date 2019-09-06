@@ -26,6 +26,7 @@ October 22 - 23:  Automotive Grade Linux All Member Meeting, Monte Carlo
 * **Keynote**
 
 October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
+* **Keynote**
 
 October 31 - November 1: MIT Technology Review Leadership Summit, Singapore
 * **Keynote: The Power of Transforming Systems**
