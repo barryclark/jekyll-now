@@ -33,8 +33,8 @@ make-smaller-titles: true
                   {% for post in work_posts limit: site.work_post_limit %}
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small class="hidden-xs">{{ post.date | date: "%Y" }}</small><br>
-                          <small class="hidden-xs">{{ post.tags | join: "|" }}</small>
+                          <small>{{ post.date | date: "%Y" }}</small><br>
+                          <small>{{ post.tags | join: "|" }}</small>
                       </li>
                   {% endfor %}
                   <li>
@@ -53,8 +53,8 @@ make-smaller-titles: true
                   {% for post in personal_posts limit: site.personal_post_limit %}
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small class="hidden-xs">{{ post.date | date: "%Y" }}</small><br>
-                          <small class="hidden-xs">{{ post.tags | join: "|" }}</small>
+                          <small>{{ post.date | date: "%Y" }}</small><br>
+                          <small>{{ post.tags | join: "|" }}</small>
                       </li>
                   {% endfor %}
                   <li>
