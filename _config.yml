@@ -85,3 +85,13 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# seo-tag
+twitter:
+ username: QuintonAmy
+social:
+ name: Amy Quinton
+ links:
+   - https://github.com/amyquinton
+   - https://twitter.com/QuintonAmy
+   - https://www.linkedin.com/in/amyquinton/
