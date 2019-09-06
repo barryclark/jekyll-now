@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Klaskarena
+title:      Beerventory
 date:       2014-06-10 12:31:19
 summary:    See what the different elements looks like.
 category: Personal project
@@ -8,8 +8,8 @@ thumbnail: cogs
 tags:
  - iOS
  - Swift
- - Klask standings
- - Google Firebase
+ - Beer inventory
+ - Amazon DynamoDB
 ---
 
 **Note** - This article is a derivative of ["See pixyll in action"][1], taken from the lovely jekyll theme [pixyll][4].

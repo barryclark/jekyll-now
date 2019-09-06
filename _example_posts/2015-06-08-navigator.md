@@ -6,8 +6,7 @@ summary:    Using thumbnails in your Carte Noire articles.
 category: Work project
 thumbnail: jekyll
 tags:
-  - Product
-  - ArcGIS
+  - Navigator for ArcGIS
   - iOS
   - Android
 ---
