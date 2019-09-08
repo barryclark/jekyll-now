@@ -54,7 +54,7 @@ paginate_path: "blog/page:num"
 # Travis build info
 username:             bongoeadgc6
 repo:                 bongoeadgc6.github.io
-branch:               master
+branch:               release
 
 # Jekyll source / destination
 source:               .
