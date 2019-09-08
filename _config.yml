@@ -79,9 +79,13 @@ plugins:
 
 # Exclude these files from your production _site
 exclude:
+  - Rakefile
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - CNAME
+  - changelog.md
+  - "*.Rmd"
   - vendor
+  - .travis.yml
