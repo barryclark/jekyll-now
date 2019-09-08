@@ -27,7 +27,8 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/blog">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
@@ -36,8 +37,9 @@
 
     <div id="main" role="main" class="container">
       {{ content }}
+      {% posts.html %}
     </div>
-
+    
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
