@@ -1,18 +1,19 @@
 language: ruby
 cache: bundler
-branches:
-  only:
-  - release
+rvm:
+  - 2.2.7
+  - 2.3.4
+  - 2.4.1
+matrix:
+  include:
+  allow_failures:
+    - rvm: 2.3.4
+    - rvm: 2.4.1
+  fast_finish: true
+install:
+  - travis_retry bundle install
+before_script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --only-4xx --assume-extension --check-favicon --check-html --allow-hash-href
 script:
-  - JEKYLL_ENV=production bundle exec jekyll build --destination site
-deploy:
-  provider: pages
-  local-dir: ./site
-  target-branch: master
-  email: deploy@travis-ci.org
-  name: Deployment Bot
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  on:
-    branch: release
+  - bundle exec rake site:deploy --quiet

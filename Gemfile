@@ -1,15 +1,13 @@
 source "https://rubygems.org"
-ruby "2.5.3"
 
-gem "jekyll", "~> 3.8"
+gem "rake", "~> 10.1.1"
+gem 'html-proofer'
+gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
-  gem "jekyll-archives", "~> 2.1"
-  gem "jekyll-include-cache", "~> 0.1"
-  gem "jekyll-remote-theme", "~> 0.3"
-  gem "jekyll-feed", "~> 0.11"
-  gem "jekyll-gist", "~> 1.5"
+  gem "jekyll-paginate"
   gem "jekyll-sitemap"
-  gem "hash-joiner"
-  # and a bunch of other jekyll plugin gems...
+  gem "jekyll-gist"
+  gem "jekyll-feed"
+  gem "jemoji"
 end
