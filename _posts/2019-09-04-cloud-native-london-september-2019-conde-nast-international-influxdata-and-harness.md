@@ -26,7 +26,7 @@ Takeaway:
 * I hope that my talk can serve as an example to enterprises that OSS can be successfully utilised to operate and accelerate cloud native applications and technologies.
 * Open source software is a key part of a successful cloud native strategy, and not all software has to come with a support contract.
 
-![David McKay](https://pbs.twimg.com/media/EBY3HN9WwAAebhL?format=jpg)
+![David McKay]()
 
 Our second speaker was David McKay from InfluxData describing [Cloud Native Telegraf](https://skillsmatter.com/skillscasts/14328-how-community-projects-such-as-central-repositories-can-be-run-on-kubernetes).
 
