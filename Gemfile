@@ -9,5 +9,6 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme", "~> 0.3"
   gem "jekyll-feed", "~> 0.11"
   gem "jekyll-gist", "~> 1.5"
+  gem 'hash-joiner'
   # and a bunch of other jekyll plugin gems...
 end
