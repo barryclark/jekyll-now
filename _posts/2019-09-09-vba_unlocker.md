@@ -42,9 +42,11 @@ Change the extension of the .xlsm file to .zip, and open the archive with 7-zip.
 
 When you open the **vbaProject.bin** file with a hex editor, you should be able to search for CMG and see the three key value pairs in readable text. Copy the values for the password and save them somewhere. To save time, the three values that correspond to a password of '1234' are below:
 
+```
 CMG="82802EAEB4B2B4B2B0B6B0B6"
 DPB="0406A830A8AFC5AFC5503BB0C5E451A1601C8376D39507149E04DBDE9B2528620BA427CCE0E6"
 GC="86842AB22EB6B1B7B1B7B1"
+```
 
 Once you have these, you can use them to change any password-protected VBA project in Excel to unlock with a password of '1234'.
 
