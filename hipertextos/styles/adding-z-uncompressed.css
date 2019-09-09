@@ -342,7 +342,7 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 
 @media (max-width: 800px) {
-    #page-header.cover, #glass-front {background-size: 120% auto;background-position: fixed !important;}
+    #glass-front {background-size: 120% auto;background-position: fixed !important;}
     #web-oferta {background-size: auto 150%;background-position: fixed !important;}
     #web-oferta .note {display:none;}
     #web-oferta h2 {margin-bottom:0px;}
@@ -386,8 +386,9 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     img.front-responsive {width: 300px;}
     #glassed {padding:32px;}
 }
-@media (max-width: 500px) {
-    #page-header.cover {background-size: 280% auto;background-position: fixed !important;}
+@media (max-width: 512px) {
+    #page-header.cover {padding-top: 90px;height:48vh;background-size: 280% auto;background-position: fixed !important;}
+    .ktr-button-sun-bubble {display: none;visibility: hidden;}
     #fronters {margin:0px;min-width:70%;}
     #blured {margin: 0px;min-width:100%;}
     .note svg {max-width:64px;}
@@ -399,11 +400,6 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     #fronters-music h4 small {font-size:13px; letter-spacing: -0.02em}
     div.masked {display:none;}
     #web-grafics p {font-size: 12px;}
-    #covers article {
-        width: 50%;
-    }
-    #icons a {
-        width: 18%;
-        padding: 8px;
-    }
+    #covers article {width: 50%;}
+    #icons a {width: 18%;padding: 8px;}
 }
