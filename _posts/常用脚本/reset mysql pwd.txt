@@ -1,0 +1,18 @@
+
+ps aux | grep mysql 
+kill -9
+
+mysqld_safe --skip-grant-tables &
+
+mysql -uroot -p    
+use mysql;
+update user set password=PASSWORD('fhfhfh123') where user="root";
+
+flush privileges;
+
+quit;
+
+reboot
+
+
+237,664.72
