@@ -3,16 +3,13 @@ layout: page
 description: Frequently asked questions for sponsors at Cloud Native London
 ---
 
-#### How many attendees do you get? What are the demographics?
-
 Cloud Native London is the largest and most active [cloud native meetup globally](https://www.meetup.com/pro/cncf), with 200-300 attendees each month.
 
-We're working on a demographics survey, but anecdotally:
-* 95% men, 5% women
-* 90% are technical, as developers, devops engineers, sysadmins, architects, leads etc. The remainder are CIO/CTOs, recruiters, technical sales etc.
-* Wide spread of company sizes from startups to large enterprises. Financial services and fintech are particularly well represented.
+The audience is 90% technical (developers, devops engineers, sysadmins, cloud architects, platform leads).
 
-We can't share attendee email addresses with sponsors to protect their privacy.
+There is a wide spread of company sizes, from startups to large enterprises. Financial services and fintech are particularly well represented.
+
+The focus is on high quality, technical content. Due to high demand from UK, EU and US speakers, the next open speaking slot is mid-2020.
 
 #### Can we host an event at our office or run an event on a specific day?
 
@@ -45,6 +42,10 @@ We work with one recruitment agency at a time, so we won't add more until furthe
 You can post your event to the [discussion board](https://www.meetup.com/Cloud-Native-London/discussions/).
 
 If you want to have your paid-for event emailed out to the group, we ask for a small donation towards running costs. Email cheryl@cloudnativelon.com for more.
+
+#### What are payment options?
+
+[Read about payment options.](https://www.oicheryl.com/cloudnativelondon/pay/)
 
 #### What if I have further questions?
 
