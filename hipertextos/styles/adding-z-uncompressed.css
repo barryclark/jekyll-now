@@ -385,9 +385,11 @@ main {margin-bottom: 232px;z-index: 1;overflow:hidden;background-color: var(--co
     #deep em a {font-size: 1.2em !important;line-height: 2.2em;}
     img.front-responsive {width: 300px;}
     #glassed {padding:32px;}
+    #page {margin-bottom:-90px;}
 }
-@media (max-width: 512px) {
-    #page-header.cover {background-image: url("/img/home_b.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 280% auto;background-position: fixed !important;}
+@media (max-width: 540px) {
+	#fases {display:none!important;visibility: hidden!important}
+    #page-header.cover {background-image: url("/img/home_b.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 180% auto;background-position: fixed !important;}
     .ktr-button-sun-bubble {display: none;visibility: hidden;}
     #fronters {margin:0px;min-width:70%;}
     #blured {margin: 0px;min-width:100%;}
