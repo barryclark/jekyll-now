@@ -6,7 +6,9 @@ permalink: /about/
 
 I'm an engineer who likes data and automating things.
 
-My experience is in manufacturing; I've made things ranging from bulk aluminum to satcom equipment.
+My entire career has revolved around manufacturing; I've made things ranging from bulk aluminum to satcom equipment. Experience is generally centered around QA, process engineering, and continual improvement. I'll post cool things I find or put together here every now and then.
+
+I've recently started making videos for Real Python, you can check out my profile [here](https://realpython.com/team/jtatusko/)!
 
 Python, SQL, VBA. 
 
@@ -24,6 +26,5 @@ Located in Sterling, VA
 <br>
 <hr>
 
-<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/41567186/activity-summary/911595536839f9b509fee1e5ed1fdfc76d8dd79d'></iframe>
 
 *Hosted on GitHub, Powered by Jekyll, Forked from jekyll-now by barryclark*
