@@ -2000,129 +2000,25 @@ dialog,
 
 /* Meridianus theme */
 
-#theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpg")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
+#theme-meridianus:checked ~ #page #page-header.cover { background-image: url("/img/homes-sun.jpg")!important;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 @media (max-width: 1024px) {
     #theme-meridianus:checked ~ #page #page-header.cover {background-image: url("/img/mh-sun.jpg");}
-}
-#theme-meridianus:checked ~ #page div.masked {}
-#theme-meridianus:checked ~ #page #page-main.darkmode  {
-	background-color: rgba(21,15,18,1) ;	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
-#theme-meridianus:checked ~ #page em a,
-#theme-meridianus:checked ~ #page em label,
-#theme-meridianus:checked ~ #page em button {
-	background-color: ;
-	color: ;	
-}
-#theme-meridianus:checked ~ #page a:visited,
-#theme-meridianus:checked ~ #page em a:visited {
-	color: ;
-}
-#theme-meridianus:checked ~ #page label:hover,
-#theme-meridianus:checked ~ #page button:hover,
-#theme-meridianus:checked ~ #page a:hover,
-#theme-meridianus:checked ~ #page a:visited:hover {
-	color: ;
-}
-#theme-meridianus:checked ~ #page a:active,
-#theme-meridianus:checked ~ #page a:visited:active {
-	color: ;
-}
-#theme-meridianus:checked ~ #page nav a:hover,
-#theme-meridianus:checked ~ #page nav label:hover {
-	background-color: ;
 }
 
 /* vesperum theme */
 
-#theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpg")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
+#theme-vesperum:checked ~ #page #page-header.cover { background-image: url("/img/homes-blue.jpg")!important;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 @media (max-width: 1024px) {
     #theme-vesperum:checked ~ #page #page-header.cover {background-image: url("/img/mh-blue.jpg");}
-}
-#theme-vesperum:checked ~ #page div.masked {}
-#theme-vesperum:checked ~ #page #page-main.darkmode  {
-	background-color: rgba(17,20,23,1) ;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;	
-}
-#theme-vesperum:checked ~ #page,
-#theme-vesperum:checked ~ #site-nav,
-#theme-vesperum:checked ~ #page-nav,
-#theme-vesperum:checked ~ div > dialog {
-	background-color: ;
-	color: ;	
-}
-#theme-vesperum:checked ~ #page a {
-	color: ;	
-}
-#theme-vesperum:checked ~ #page em a,
-#theme-vesperum:checked ~ #page em label,
-#theme-vesperum:checked ~ #page em button {
-	background-color: ;
-	color: ;	
-}
-#theme-vesperum:checked ~ #page a:visited,
-#theme-vesperum:checked ~ #page em a:visited {
-	color: ;
-}
-#theme-vesperum:checked ~ #page label:hover,
-#theme-vesperum:checked ~ #page button:hover,
-#theme-vesperum:checked ~ #page a:hover,
-#theme-vesperum:checked ~ #page a:visited:hover {
-	color: ;
-}
-#theme-vesperum:checked ~ #page a:active,
-#theme-vesperum:checked ~ #page a:visited:active {
-	color: ;
-}
-#theme-vesperum:checked ~ #page nav a:hover,
-#theme-vesperum:checked ~ #page nav label:hover {
-	background-color: ;
 }
 
 /* Nox theme */
 
-#theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpg")!important;-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;}
+#theme-nox:checked ~ #page #page-header.cover { background-image: url("/img/homes-night.jpg")!important;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 @media (max-width: 1024px) {
     #theme-nox:checked ~ #page #page-header.cover {background-image: url("/img/mh-night.jpg");}
 }
-#theme-nox:checked ~ #page div.masked {}
-#theme-nox:checked ~ #page #page-main.darkmode  {
-	background-color: rgba(22,22,25,1) ;	-webkit-transition: all 2.0s ease;-moz-transition: all 2.0s ease;-ms-transition: all 2.0s ease;-o-transition: all 2.0s ease;transition: all 2.0s ease;
-}
 
-#theme-nox:checked ~ #page,
-#theme-nox:checked ~ #site-nav,
-#theme-nox:checked ~ #page-nav,
-#theme-nox:checked ~ div > dialog {
-	background-color: ;
-	color: ;	
-}
-#theme-nox:checked ~ #page a {
-	color: ;	
-}
-#theme-nox:checked ~ #page em a,
-#theme-nox:checked ~ #page em label,
-#theme-nox:checked ~ #page em button {
-	background-color: ;
-	color: ;	
-}
-#theme-nox:checked ~ #page a:visited,
-#theme-nox:checked ~ #page em a:visited {
-	color: ;
-}
-#theme-nox:checked ~ #page label:hover,
-#theme-nox:checked ~ #page button:hover,
-#theme-nox:checked ~ #page a:hover,
-#theme-nox:checked ~ #page a:visited:hover {
-	color: ;
-}
-#theme-nox:checked ~ #page a:active,
-#theme-nox:checked ~ #page a:visited:active {
-	color: ;
-}
-#theme-nox:checked ~ #page nav a:hover,
-#theme-nox:checked ~ #page nav label:hover {
-	background-color: ;
-}
 /* ------------------------------------------------------------ Visibility & basic responsiveness */
 
 /* Default & desktop */
