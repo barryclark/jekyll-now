@@ -1,0 +1,38 @@
+---
+layout: post
+title: Llewellyn's Open/Closed Open Source Strategy
+---
+
+# Problem
+
+Some years ago, our organization used an open source project to run one part of our business. It was good but not a perfect fit. Since it's open source, we modified it to add the features we needed.
+
+Once we had forked, taking updates from main got harder. Maybe they changed an internal detail that we were depending on. Maybe they changed the same code we changed and now we have a merge conflict.
+
+As we lagged behind the main branch, we missed out on valuable features and bug fixes. We spent more and more of our own time maintaining our local fork.
+
+I was talking about this with [Llewellyn Falco](https://twitter.com/LlewellynFalco) and he suggested a strategy that I've found useful ever since.
+
+# Possible solutions
+
+- If you fork the project, you get the above problems that increase your costs while descreasing the value you get from the project.
+
+- If you ask the project maintainers to add the feature you've been missing all along, you have to describe it in a way that makes sense for the whole breadth of their audience, then wait until they decide to implement it, and it still might not exactly meet your unique local needs.
+
+- If you send a Pull Request to add the feature you've been missing, you have to build it in a way that way that makes sense for the whole breadth of their audience while still meeting your unique local needs. That's really hard, and the compromises you make may decrease the value for you. You have to negotiate with the project maintainers to ensure that it fits their vision for the project. You have to wait while they review, accept, deploy your new feature.
+
+If your new feature only makes sense in your local context, then you're out of luck.
+
+- Instead, send a Pull Request to add _*extensibility*_ that makes it easy to plug in the feature you need locally.
+
+It's easier to get the project maintainers to accept general-purpose extensibility because it is useful for everyone, and it's a lot less code for them to review/merge/maintain vs. your whole feature. And it's well-suited to your new feature because you built it for exactly that purpose.
+
+This is the "[Open-Closed Principle](https://en.wikipedia.org/wiki/Open–closed_principle)" applied to a while open source project.
+
+# Do try this at home
+
+Here's a problem I've often experineced when adding a feature to a large legacy codebase: I modify the existing code to accept my new functionality. This makes the code more complicated; the new feature is difficult to test in isolation; I have to edit the same code as everyone else; if I edit someone else's code then I have to go through their code review / ownership process; if I edit unowned code it's probably a mess that I don't want to take responsibility for. Every code change requires building / deploying lots of code.
+
+Alternatively, apply Llewellyn's Open Source Open Closed Strategy. Ask "what extensibilty would make it easy to add this feature?", then build that extensibility, then plug in my feature. Even though this isn't Open Source exactly, the strategy still applies.
+
+This strategy is especially useful if I'm adding a new feature that is similar to an existing feature. If I make both of features into plugins to extensibility, I have two consumers (plus a third consumer in tests), making it more likely I'll build a good, general-purpose API that will be well-suited to the _next_ feature in this space.
