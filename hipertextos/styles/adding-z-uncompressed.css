@@ -163,6 +163,7 @@ img.dialog-svg {width: 100%;height: 128px;}
 #web-credits {opacity: .75;background-color: #fafafa;border-bottom: thin solid var(--color-softgrey);border-top: thin solid var(--color-softgrey);}
 #web-credits label svg {max-width: 72px;margin: 10px;opacity: .6;border-radius: 50%;}
 #web-credits label svg:hover {cursor: pointer !important;opacity: 1;box-shadow: 0 1px 3px rgba(0, 0, 0, .3);}
+#page-footer p a {padding:4px;}
 
 /* Classic Gallery */
 .listed .img-icon {width: 32px;}
