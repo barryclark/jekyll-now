@@ -43,7 +43,7 @@ You can post your event to the [discussion board](https://www.meetup.com/Cloud-N
 
 If you want to have your paid-for event emailed out to the group, we ask for a small donation towards running costs. Email cheryl@cloudnativelon.com for more.
 
-#### What are payment options?
+#### How can we pay?
 
 [Read about payment options.](https://www.oicheryl.com/cloudnativelondon/pay/)
 
