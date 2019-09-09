@@ -51,13 +51,20 @@ baseurl: "/"
 paginate: 10
 paginate_path: "blog/page:num"
 
-# Travis build info
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
 username:             bongoeadgc6
 repo:                 bongoeadgc6.github.io
 branch:               release
 
 # Jekyll source / destination
 source:               .
+relative_source:      ../release
 destination:          _site
 #
 # !! You don't need to change any of the configuration flags below !!
