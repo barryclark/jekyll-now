@@ -15,7 +15,7 @@ Cloud Native London was back again for our September 2019 meetup. Check out the 
 
 As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [Twistlock](https://www.twistlock.com/) and [xMatters](https://www.xmatters.com/), for making this all possible!
 
-First Josh spoke about using Open Source Software to operate the Conde Nast global cloud platform, then we had a discussion on running community projects on Kubernetes. Check out the full videos of their talks below!
+First Josh spoke about using Open Source Software to operate the Conde Nast global cloud platform, then we had David talking about the Telegraf project, and finally Andy to share how machine learning can help with deployment pipelines. Check out the full videos of their talks below!
 
 ![Josh Michielsen](https://pbs.twimg.com/media/EDpP6H7XUAAYSOm?format=jpg)
 
