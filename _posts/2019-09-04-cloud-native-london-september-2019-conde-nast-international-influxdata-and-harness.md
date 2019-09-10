@@ -13,7 +13,7 @@ tags:
 
 Cloud Native London was back again for our September 2019 meetup. Check out the summary below!
 
-As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [Twistlock](https://www.twistlock.com/), [xMatters](https://www.xmatters.com/), for making this all possible!
+As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [Twistlock](https://www.twistlock.com/) and [xMatters](https://www.xmatters.com/), for making this all possible!
 
 First Josh spoke about using Open Source Software to operate the Conde Nast global cloud platform, then we had a discussion on running community projects on Kubernetes. Check out the full videos of their talks below!
 
