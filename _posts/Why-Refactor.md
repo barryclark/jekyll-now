@@ -35,6 +35,8 @@ Instead of adding more process/protocol/structure to manage the growing complexi
 
 Good modules don't depend on / aren't dependend on by other code in the system. A team can build a new feature by building a new module, without needing to edit other code in the system or wait for another team to complete a subcomponent. Teams don't have to coordinate their work. A team doesn't have to worry about guarding their code against modifications by other people that don't know the consequences of their changes. Good modules can be owned entirely by one team, without interfering with other teams' work.
 
+[Llewellyn's Open/Closed strategy can be useful here.](http://jay.bazuzi.com/LOSOCS/)
+
 All of the above applies to equally to both modules and microservices. Good microservices can be owned, deployed, monitored, maintained entirely within a team. See http://jay.bazuzi.com/Thoughts-on-Microservices/
 
 * After a defect refactor to address the hazard. (Safeguarding / #BugsZero)
