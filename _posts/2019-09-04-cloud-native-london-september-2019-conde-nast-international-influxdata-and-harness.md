@@ -3,7 +3,6 @@ layout: post
 title: "Cloud Native London, September 2019: Condé Nast, InfluxData and Harness"
 description: "Read the roundup from Condé Nast, InfluxData and Harness at the Cloud Native London meetup in September 2019, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 image: /images/2019-09-04-cloud-native-london-september-2019-conde-nast-international-influxdata-and-harness.jpg
-published: false
 tags:
   - Photos
   - Video
