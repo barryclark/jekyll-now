@@ -1,0 +1,26 @@
+---
+layout: page
+permalink: /foodpost/
+---
+
+<div class="posts">
+    <p>
+        For a really long time, I had been trying to do this. You would be shocked if I say that there is no one in this planet that can say
+        "I don't like eating". So I am person who usually doesn't eat meat. I know its sad and I am missing out on a lot but trust me when I say this that 
+        there is a like a lot to explore on the vegetarian side. It will take me a lifetime to explore all possible dishes but I hope to cover atleast half way 
+        till I die. 
+        This is my attempt to consolidate all the recepies I cook and mark them as done on my check list.
+    </p>    
+  {% for post in site.foodposts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>

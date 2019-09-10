@@ -13,9 +13,9 @@ Check out my [resume]({{ site.url }}/assets/KnowMe.pdf).
 
 ### More Information
 
-A good programmer naturally reuses code, therefore I preferred to write Code templates that can be extend for future use. The extensibility,thus increases efficiency and help me utilize the time for more challenging tasks.
-Kindly look through my exciting <a href="{{ site.baseurl }}/project">work</a>.
-
+In my free time , other than being a data enthusiast, I am a big foodie. I try out various restuarants and try to recreate versatile dishes
+from different sources. Cooking delicious food kinda makes it satisfying while enjoying the taste. 
+Kindly look through my exciting <a href="{{ site.baseurl }}/foodpost">attempts at cooking </a>.
 
 ### Contact me
 

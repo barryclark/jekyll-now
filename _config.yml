@@ -93,6 +93,8 @@ plugins:
 collections:
   projects:
     output: true
+  foodposts:
+    output: true
     
 # Exclude these files from your production _site
 exclude:
