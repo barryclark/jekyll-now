@@ -44,7 +44,7 @@ Last up was Andrew Page from Harness, who described [Automating Deployment Pipel
 
 ## Cloud Native London October
 
-The next meetup is on Tuesday 1st October, and joining us are speakers from Conde Nast International, InfluxData, and Harness. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/261120894/) Don’t forget to sign up directly with CodeNode as we get closer to the date!
+The next meetup is on Tuesday 1st October, and joining us are speakers from WSO2, Condé Nast and Intel. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/261120894/) Don’t forget to sign up directly with CodeNode as we get closer to the date!
 
 See you next month!
 
