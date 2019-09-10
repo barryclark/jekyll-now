@@ -21,7 +21,6 @@ First Josh spoke about using Open Source Software to operate the Conde Nast glob
 
 Kicking off our evening, Josh Michielsen shared Condé Nast's story on [Utilising OSS to Operate a Centralised, Globally Distributed Cloud Platform](https://skillsmatter.com/skillscasts/14461-cloud-native-september).
 
-Takeaway:
 * Condé Nast is over 100 years old, and has successfully transformed its business to meet the challenges of the digital revolution, and Open Source has been an integral part of that.
 * I hope that my talk can serve as an example to enterprises that OSS can be successfully utilised to operate and accelerate cloud native applications and technologies.
 * Open source software is a key part of a successful cloud native strategy, and not all software has to come with a support contract.
@@ -30,9 +29,9 @@ Takeaway:
 
 Our second speaker was David McKay from InfluxData describing [Cloud Native Telegraf](https://skillsmatter.com/skillscasts/14462-cloud-native-telegraf).
 
-1. What is Telegraf, how do I run it, and how can I customize it.
-2. How to use Telegraf to monitor your Kubernetes cluster and cloud native applications
-3. How to use Telegraf with Prometheus
+* What is Telegraf, how do I run it, and how can I customize it.
+* How to use Telegraf to monitor your Kubernetes cluster and cloud native applications
+* How to use Telegraf with Prometheus
 
 ![Andrew Page](https://pbs.twimg.com/media/EDo-BHVWwAUYTeb?format=jpg)
 
