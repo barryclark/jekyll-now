@@ -1,2 +1,6 @@
-category: Dev
-tags: [web, jekyll]
+---
+layout: post
+title: Post Template
+category: Template
+tags: [template]
+---
