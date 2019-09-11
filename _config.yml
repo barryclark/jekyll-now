@@ -64,10 +64,10 @@ travis:
     repo:                 bongoeadgc6.github.io
     branch:               release
 
-# Jekyll source / destination
-source:               .
-relative_source:      ../release
-destination:          _site
+    # Jekyll source / destination
+    source:               .
+    relative_source:      ../release
+    destination:          _site
 #
 # !! You don't need to change any of the configuration flags below !!
 #
