@@ -7,6 +7,7 @@ bigger:
 category: treballs
 tags: [art digital, wacom, tableta, dibuix, sondelvent, cartells, disseny]
 img: "images/22marzo.jpg"
+posting: true
 excerpt_separator: <!--more-->
 ---
 
