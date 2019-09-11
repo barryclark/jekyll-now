@@ -1,7 +1,3 @@
-	{% if page.posting %}
-	 <link rel="prerender" href="{{ page.next.url }}">
-	 <link rel="prerender" href="{{ page.previous.url }}">
-	{% endif %}		
 	<meta name="distribution" content="global"/>
 	<meta name="keywords" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} Badalona, pagines web originals, Barcelona, diseny gràfic, matte painting" />
 	<meta name="description" content="{{ site.description }}" />
@@ -53,6 +49,8 @@
 	{% if page.img %}<meta name="twitter:image:src" content="https://isardmiralles.com/{{ post.img }}">{% endif %}
 	{% if page.img %}<meta property="og:image" content="https://isardmiralles.com/{{ post.img }}" />{% endif %}		
     {% if page.posting %}
+    <link rel="prerender" href="{{ page.next.url }}">
+	<link rel="prerender" href="{{ page.previous.url }}">
     <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% endif %}">
     <meta name="description" content="{{ page.excerpt| normalize_whitespace | strip_html }}" />
     <meta itemprop="description" content="{{ page.excerpt| normalize_whitespace | strip_html }}">
