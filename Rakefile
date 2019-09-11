@@ -19,7 +19,7 @@ REPO = CONFIG["travis"]["repo"] || "#{USERNAME}.github.io"
 # Project: master -> gh-pages
 # Name of source branch for user/organization defaults to "source"
 if REPO == "#{USERNAME}.github.io"
-  SOURCE_BRANCH = CONFIG['branch'] || "source"
+  SOURCE_BRANCH = CONFIG['travis']['branch'] || "source"
   DESTINATION_BRANCH = "master"
 else
   SOURCE_BRANCH = "master"
@@ -88,8 +88,8 @@ def parameterize(string, sep = '-')
 end
 
 def check_destination
-  unless Dir.exist? CONFIG["destination"]
-    sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
+  unless Dir.exist? CONFIG['travis']["destination"]
+    sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{CONFIG['travis']["destination"]}"
   end
 end
 
@@ -209,14 +209,14 @@ namespace :site do
     check_destination
 
     sh "git checkout #{SOURCE_BRANCH}"
-    Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
+    Dir.chdir(CONFIG['travis']["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
 
     # Generate the site
     sh "bundle exec jekyll build"
 
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
-    Dir.chdir(CONFIG["destination"]) do
+    Dir.chdir(CONFIG['travis']["destination"]) do
       sh "git add --all ."
       sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
       sh "git push --quiet origin #{DESTINATION_BRANCH}"
