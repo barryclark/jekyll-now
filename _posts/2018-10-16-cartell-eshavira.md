@@ -7,6 +7,7 @@ bigger:
 category: treballs
 tags: [art digital, wacom, tableta, dibuix, eshavira, cartells, disseny]
 img: "images/eshavira.jpg"
+posting: true
 excerpt_separator: <!--more-->
 ---
 
