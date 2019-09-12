@@ -11,7 +11,6 @@ branches:
   only:
     - master
     - release
-    - develop
 
 env:
   global:
