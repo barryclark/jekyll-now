@@ -89,7 +89,7 @@ end
 
 def check_destination
   unless Dir.exist? CONFIG['travis']["destination"]
-    sh "git clone https://#{USERNAME}:#{ENV['GH_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{CONFIG['travis']["destination"]}"
+    sh "git clone https://#{USERNAME}:#{ENV['GITHUB_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{CONFIG['travis']["destination"]}"
   end
 end
 
@@ -219,7 +219,7 @@ namespace :site do
     Dir.chdir(CONFIG['travis']["destination"]) do
       sh "git add --all ."
       sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
-      sh "git remote add https://#{USERNAME}:#{ENV['GH_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{DESTINATION_BRANCH}"
+      sh "git remote add https://#{USERNAME}:#{ENV['GITHUB_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{DESTINATION_BRANCH}"
       sh "git push --quiet origin #{DESTINATION_BRANCH}"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
