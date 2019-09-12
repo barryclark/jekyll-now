@@ -36,7 +36,7 @@ Here are the results of the cluster analysis in the form of a dendrogram.  Short
 
 The top words for the clusters often provide convenient cluster names or clearly show shared treatments or outcomes as key commonalities. For some, like ‘Minimal Intervention’, clusters have formed that we might not have expected, but these are often the most exciting as they provide information we would not have found otherwise. 
 Using text mining we’ve been able to determine what makes documents unique, and explore relationships between them.  What other possibilities are thereexist for text mining in clinical trials research? 
-That’s what we’ll touch on next time when we scratch the surface of some of the applications for text mining in clinical trials researchin Part 2.
+That’s what we’ll touch on next time when we scratch the surface of some of the applications for text mining in clinical trials research in Part 2.
 
 The following R packages were used in this post:
 - tidyverse
