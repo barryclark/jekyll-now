@@ -60,10 +60,9 @@ paginate_path: "blog/page:num"
 # Branch defaults to "source" for USERNAME.github.io
 travis:
     username:             bongoeadgc6
-    email:                bongoeadgc6
+    email:                travis-bot@travis-ci.org
     repo:                 bongoeadgc6.github.io
     branch:               release
-
     # Jekyll source / destination
     relative_source:      ../release/
     destination:          ../_site/
