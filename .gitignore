@@ -8,4 +8,4 @@ _site
 Gemfile.lock
 node_modules
 package.json
-*.bak
+*.bak*
