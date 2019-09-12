@@ -65,7 +65,7 @@ travis:
     branch:               release
     # Jekyll source / destination
     source:               .
-    destination:          ../master/
+    destination:          ../gh-pages/
     relative_source:      ../release/
 #username:             bongoeadgc6
 #email:                travis-bot@travis-ci.org
