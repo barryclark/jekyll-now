@@ -6,7 +6,7 @@ rvm:
 #   - chmod +x ./build_scripts/cibuild
 
 install: gem install jekyll html-proofer
-script: jekyll build && htmlproofer ./_site
+script: jekyll build --trace && htmlproofer ./_site
 
 branches:
   only:
