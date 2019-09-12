@@ -1,0 +1,31 @@
+language: ruby
+rvm:
+  - 2.6.3
+
+# before_script:
+#   - chmod +x ./build_scripts/cibuild
+
+install: gem install jekyll html-proofer
+script: jekyll build && htmlproofer ./_site
+
+branches:
+  only:
+    - master
+    - release
+    - develop
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+addons:
+  apt:
+    packages:
+      - libcurl4-openssl-dev
+
+sudo: false
+
+cache: bundler
+
+notifications:
+  email: false
