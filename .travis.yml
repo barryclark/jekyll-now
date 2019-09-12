@@ -1,33 +1,19 @@
 language: ruby
-
+cache: bundler
 rvm:
-    #- 2.2.7
-    #- 2.3.4
+  - 2.2.7
+  - 2.3.4
   - 2.4.1
+matrix:
+  include:
+  allow_failures:
+    - rvm: 2.3.4
+    - rvm: 2.4.1
+  fast_finish: true
 install:
-  # Install binary pandoc from Rstudio
-  # To use Pandoc, uncomment the following
-  # - export PATH="$HOME/pandoc:$PATH"
-  # - mkdir $HOME/pandoc
-  # - curl -O https://s3.amazonaws.com/rstudio-buildtools/pandoc-1.12.3.zip
-  # - unzip -j pandoc-1.12.3.zip pandoc-1.12.3/linux/debian/x86_64/pandoc
-  #     -d $HOME/pandoc
-  # - chmod +x $HOME/pandoc/pandoc
-  # - pandoc --version
-
-  # Install Jekyll and dependencies
-  - bundle install
-
-script: bundle exec rake site:deploy --quiet
-
-#deploy:
-#  provider: pages
-#  local-dir: ./site
-#  target-branch: master
-#  email: deploy@travis-ci.org
-#  name: Deployment Bot
-#  skip-cleanup: true
-#  github-token: $GITHUB_TOKEN
-#  keep-history: true
-#  on:
-#    branch: release
+  - travis_retry bundle install
+before_script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --only-4xx --assume-extension --check-favicon --check-html --allow-hash-href
+script:
+  - bundle exec rake site:deploy --quiet
