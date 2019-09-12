@@ -2,11 +2,10 @@ language: ruby
 rvm:
   - 2.6.3
 
-# before_script:
-#   - chmod +x ./build_scripts/cibuild
+before_script:
+  - chmod +x ./build_scripts/cibuild
 
-install: gem install jekyll html-proofer
-script: jekyll build --trace && htmlproofer ./_site --disable-external
+script: ./build_scripts/cibuild
 
 branches:
   only:
