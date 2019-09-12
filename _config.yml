@@ -66,6 +66,13 @@ travis:
     # Jekyll source / destination
     relative_source:      source/
     destination:          destination/
+username:             bongoeadgc6
+email:                travis-bot@travis-ci.org
+repo:                 bongoeadgc6.github.io
+branch:               release
+# Jekyll source / destination
+relative_source:      source/
+destination:          destination/
 #
 # !! You don't need to change any of the configuration flags below !!
 #
