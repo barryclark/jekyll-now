@@ -64,8 +64,9 @@ travis:
     repo:                 bongoeadgc6.github.io
     branch:               release
     # Jekyll source / destination
-    relative_source:      ../bongoeadgc6.github.io/
-    destination:          ../bongoeadgc6.github.io/
+    source:               .
+    #../bongoeadgc6.github.io/
+    destination:          _site
 #username:             bongoeadgc6
 #email:                travis-bot@travis-ci.org
 #repo:                 bongoeadgc6.github.io
