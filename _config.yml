@@ -67,7 +67,7 @@ travis:
     # Jekyll source / destination
     source:               .
     relative_source:      ../release
-    destination:          _site
+    destination:          ./_site
 #
 # !! You don't need to change any of the configuration flags below !!
 #
