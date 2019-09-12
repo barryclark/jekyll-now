@@ -13,7 +13,6 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/style.min.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/fases.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
 	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
@@ -44,9 +43,6 @@
 	
   	{% if page.parallax %}
 	<img class="preload" src="/img/home.jpg" width="2010" height="1920" alt="imatge de fons a l'alba">
-	<img class="preload" src="/img/homes-sun.jpg" width="2010" height="1920" alt="imatge de fons de dia">
-	<img class="preload" src="/img/homes-blue.jpg" width="2010" height="1920" alt="imatge de fondo vespre">
-	<img class="preload" src="/img/homes-night.jpg" width="2010" height="1920" alt="imatge de fondo de nit">
 	<img class="preload" src="/img/imac.jpg" width="1920" height="1920" alt="iMac amb exemple de pàgina web">
 	<img class="preload" src="/img/golden.jpg" width="1920" height="1280" alt="textura blanca i daurada">
   	{% endif %}
@@ -68,11 +64,6 @@
 		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
 		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
 		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden>
-		<!-- Theme inputs (invisibles) -->		
-		<input type="radio" id="theme-aurora" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-meridianus" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-vesperum" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-nox" name="theme" aria-hidden="true" hidden> 
 	</div>
 
 		
@@ -86,25 +77,11 @@
 		================================================== -->	
     {% include partials/dialog.html %}  
 
-		<!-- Out of page
-		================================================== -->
-		<!-- Fixed navigation -->		
-		<div class="ktr-button-sun-bubble anm-scaleUpDown delay-300">
-			<input id="bubble" name="bubble" type="checkbox" hidden>
-			<span>
-				<em><label class="th-nox" for="theme-nox" data-title="Nit"></label></em>
-				<em><label class="th-vesperum" for="theme-vesperum" data-title="Vespre"></label></em>
-				<em><label class="th-meridianus" for="theme-meridianus" data-title="Cènit"></label></em>
-				<em><label class="th-aurora" for="theme-aurora" data-title="Alba"></label></em>
-			</span>
-			<em><label class="th-switcher" for="bubble" title="Themes"><b id="sun-phase"><img src="/hipertextos/cursors/sun-morning.gif" alt="Alba"></b></label></em>
-		</div>	
 
     <!-- Scripts
     ================================================== -->
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
-  	<script src="{{ site.baseurl }}/hipertextos/js/fases.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/aos.js"></script>
 	<script>
