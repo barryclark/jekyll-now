@@ -1,7 +1,7 @@
 /* by Isard Miralles  ADDING EXTRA to Landing page - CSS */
 /* ------------------------------------------------------------ Resets */
 
-.cover.landing {background:var(--color-soft-black)!important;background-image: none!important; }
+.cover.landing {background:var(--color-black)!important;background-image: none!important; }
 .cover {padding-top:36px;height:100%!important;}
 #web-oferta {}
 .prices {font-weight:300;font-size:3.1em;line-height:1.5em;background:rgba(242,242,242,1);border:thin solid #fff;}
