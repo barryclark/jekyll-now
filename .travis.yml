@@ -16,7 +16,7 @@ before_script:
   - ls
     #- bundle exec htmlproofer . --only-4xx --assume-extension --check-favicon --check-html --allow-hash-href
 script:
-  - bundle exec rake site:deploy --quiet
+  - bundle exec rake site:deploy # --quiet
 
 env:
   global:
