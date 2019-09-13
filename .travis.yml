@@ -15,6 +15,7 @@ before_script:
   - pwd
   - ls
   - ls ..
+  - ls ../gh-pages
     #- bundle exec htmlproofer . --only-4xx --assume-extension --check-favicon --check-html --allow-hash-href
 script:
   - bundle exec rake site:deploy # --quiet
