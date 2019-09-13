@@ -6,7 +6,6 @@ rvm:
 matrix:
   include:
   allow_failures:
-    - rvm: 2.3.4
     - rvm: 2.4.1
   fast_finish: true
 install:
