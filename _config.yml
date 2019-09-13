@@ -42,6 +42,7 @@ google_analytics: UA-147134547-1
 # Used for Sitemap.xml and your RSS feed
 url: http://www.haguest.com/
 
+
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
