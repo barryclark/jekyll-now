@@ -43,7 +43,7 @@ a {
 }
 
 .nav-btn:hover {
-  box-shadow: 1px 4px 8px #aaaaaa !important;
+  box-shadow: 1px 4px 8px #8A05BE22 !important;
 }
 
 .increase-hover {
@@ -57,27 +57,28 @@ a {
 }
 
 .nav-btn-default {
-  color: #FF7043 !important;
+  /* color: #8A05BE !important; */
 }
 
 .nav-btn-default:hover {
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
+  color: #8A05BE !important;
 }
 
 .nav-btn-candidate {
   color: white !important;
-  background-color: #FF7043 !important;
+  background-color: #8A05BE !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
-  box-shadow: 1px 4px 8px #aaaaaa !important;
+  box-shadow: 1px 2px 4px #aaaaaa !important;
 }
 
 .nav-btn-company {
-  color: white !important;
-  background-color: #2196F3 !important;
+  color: #8A05BE !important;
+  /* background-color: #8A05BE !important; */
   margin-left: 5px !important;
   margin-right: 5px !important;
-  box-shadow: 1px 4px 8px #aaaaaa !important;
+  box-shadow: 0px 2px 4px #25252533 !important;
 }
 
 .header-message {
@@ -94,7 +95,7 @@ a {
   padding: 30px 64px;
   border: none;
   border-radius: 64px;
-  color: #FF7043;
+  color: #222222;
   transition: .3s;
   font-weight: 700;
 }
@@ -113,7 +114,7 @@ a {
 
 .header-icon {
   font-family: Gidolinya, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #F57C00;
+  background-color: #8A05BE;
   color: white;
   text-align: center;
   width: 130px;
@@ -186,7 +187,7 @@ a {
 }
 
 .section-five button {
-    background: #FF7043;
+    background: #8A05BE;
     font-size: 18px;
     padding: 16px 32px;
     border-radius: 64px;
@@ -214,7 +215,7 @@ a {
 .section .btn-learn-more {
   padding: 14px 0px; 
   cursor: pointer;
-  background-color: #FF7043;
+  background-color: #8A05BE;
   border-radius: 0px 0px 5px 5px;
 }
 
