@@ -78,7 +78,6 @@
 	<meta property="article:tag" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} " />
 	<meta property="fb:admins" content="Isard-Miralles-261219727225263" />
     {% else %}
-	<meta property="og:type" content="website"/>	
     <meta itemprop="name" content="{{ page.title }} {{ site.name }}">
     <meta name="description" content="{{ site.description }}" />
     <meta itemprop="description" content="{{ site.description }}">
@@ -94,9 +93,9 @@
 	<!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
 	<meta name="twitter:image" content="https://isardmiralles.com/hipertextos/brand/cover.png">
 	<meta name="twitter:image:src" content="https://isardmiralles.com/hipertextos/brand/cover.png">
-	<!-- Open Graph data Nooooo!!! -->
+	<!-- Open Graph data -->
 	<meta property="og:title" content="{{ site.name }}" />
-	<meta property="og:type" content="article" />
+	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
 	<meta property="og:image" content="https://isardmiralles.com/hipertextos/brand/cover.png" />
 	<meta property="og:site_name" content="https://isardmiralles.com/" />
