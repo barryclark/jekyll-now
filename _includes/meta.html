@@ -49,7 +49,6 @@
 	<meta name="geo.position" content="41.4470282;2.2413973" />
 	<meta name="ICBM" content="41.4470282;2.2413973" />
 
-	<meta property="og:type" content="website"/>	
 	{% if page.img %}<meta name="twitter:image:src" content="https://isardmiralles.com/{{ post.img }}">{% endif %}
 	{% if page.img %}<meta property="og:image" content="https://isardmiralles.com/{{ post.img }}" />{% endif %}		
     {% if page.posting %}
@@ -79,6 +78,7 @@
 	<meta property="article:tag" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} " />
 	<meta property="fb:admins" content="Isard-Miralles-261219727225263" />
     {% else %}
+	<meta property="og:type" content="website"/>	
     <meta itemprop="name" content="{{ page.title }} {{ site.name }}">
     <meta name="description" content="{{ site.description }}" />
     <meta itemprop="description" content="{{ site.description }}">
