@@ -3,6 +3,7 @@
 
 .cover.landing {background:var(--color-black)!important;background-image: none!important; }
 .cover {padding-top:36px;height:100%!important;}
+#webpro img {min-width:100%;}
 #web-oferta {}
 .prices {font-weight:300;font-size:3.1em;line-height:1.5em;background:rgba(242,242,242,1);border:thin solid #fff;}
 .prices:after {content:'€';right:0;bottom:0;font-size:.5em;color:var(--color-grey);}
