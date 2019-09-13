@@ -60,12 +60,11 @@ paginate_path: "blog/page:num"
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 username:             bongoeadgc6
-email:                travis-bot@travis-ci.org
 repo:                 bongoeadgc6.github.io
 branch:               release
 # Jekyll source / destination
 source:               .
-destination:          ../master/
+destination:          ../gh-pages/
 relative_source:      ../release/
 #
 # !! You don't need to change any of the configuration flags below !!
