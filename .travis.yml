@@ -20,6 +20,6 @@ script:
 
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-    - GIT_NAME = "Travis CI"
-    - GIT_EMAIL = "deploy@travis-ci.org"
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true 
+    - GIT_NAME=Travis CI
+    - GIT_EMAIL=deploy@travis-ci.org
