@@ -1,17 +1,11 @@
 ---
 layout: page
-title: Thanks for supporting Cloud Native London!
-description: "Cloud Native London sponsor on boarding"
+title: Thank you and welcome!
+description: "Information for new Cloud Native London sponsors"
 ---
 
-If you are a first time sponsor, please copy the following into an email and complete:
+After you submit this form, you'll receive confirmation from the organisers within a few days.
 
-> **Company:**  
-> **One line blurb:**  
-> **Event month(s):**  
+<iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSec4gQdjdTc2VVXQTCxRsAjW0QROxG3-uoMjrT-D9XOCXhTzg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-Attach a company logo, and send to cheryljhung@gmail.com with subject "New sponsor information".
-
-Check the [FAQ](/cloudnativelondon/faq) if you want to bring swag or a banner.
-
-We look forward to seeing you at the meetup!
+Contact cheryl@cloudnativelon.com with any issues.
