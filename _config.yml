@@ -59,15 +59,6 @@ paginate_path: "blog/page:num"
 # username defaults to ENV['GIT_NAME'] used by Travis
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
-travis:
-    username:             bongoeadgc6
-    email:                travis-bot@travis-ci.org
-    repo:                 bongoeadgc6.github.io
-    branch:               release
-    # Jekyll source / destination
-    source:               .
-    destination:          ../master/
-    relative_source:      ../release/
 username:             bongoeadgc6
 email:                travis-bot@travis-ci.org
 repo:                 bongoeadgc6.github.io
