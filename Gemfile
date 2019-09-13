@@ -1,6 +1,6 @@
-source "http://production.cf.rubygems.org/"
+source "http://rubygems.org/"
 
-gem 'github-pages', '>=104', group: :jekyll_plugins
+gem 'github-pages', group: :jekyll_plugins
 gem "rake", "~> 10.1.1"
 gem 'html-proofer'
 
