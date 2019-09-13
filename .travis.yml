@@ -12,7 +12,7 @@ install:
   - travis_retry bundle install
 before_script:
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --only-4xx --assume-extension --check-favicon --check-html --allow-hash-href
+  - bundle exec htmlproofer ./release --only-4xx --assume-extension --check-favicon --check-html --allow-hash-href
 script:
   - bundle exec rake site:deploy --quiet
 
