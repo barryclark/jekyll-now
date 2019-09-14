@@ -200,17 +200,9 @@ hr {
   }
 }
 
-.about-logos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.about-logos a {
-  margin: 10px;
-  max-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+.about-image {
+  float: right;
+  margin: 2rem;
 }
 
 .products {

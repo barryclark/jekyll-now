@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CNCF Telecom User Group and Cloud Native Network Functions Testbed"
+title: "CNCF Telecom User Group and CNF Testbed"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, introduces the Telecom User Group at KubeCon CloudNativeCon, Barcelona."
 location: Barcelona, Spain
 feature_image: https://i.ytimg.com/vi/zEIr1mq-81E/maxresdefault.jpg
