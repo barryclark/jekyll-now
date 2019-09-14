@@ -1,9 +1,18 @@
-<h3>
-  <a href="{{ include.post.url }}">
-  	{% if include.index %}
-  		<span class="post-list-index">{{ include.index }}.  </span>
-  	{% endif %}
-    {{ include.post.title }}
-    <span class="small">{{ include.post.date | date: "%B %-d, %Y" }}</span>
-  </a>
-</h3>
+
+  <div class="list-entry">
+      <div class="list-media">
+        {% if include.post.feature_image %}
+          <a href="{{ include.post.url }}"><img src="{{ include.post.feature_image }}"></a>
+        {% elsif include.post.image %}
+          <a href="{{ include.post.url }}"><img src="{{ include.post.image }}"></a>
+        {% endif %}
+      </div>
+
+      <span class="post-date">
+        {{ post.date | date: "%B %-d, %Y" }}
+      </span>
+
+      <a href="{{ include.post.url }}" class="list-entry-title">
+        {{ include.post.title }}
+      </a>
+</div>

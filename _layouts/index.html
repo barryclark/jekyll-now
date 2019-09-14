@@ -2,57 +2,22 @@
 layout: page
 ---
 
-<div class="hero">
+<article class="hero posts box">
   <div class="hero-media">
   <img src="/images/kubeconeu.jpg" alt="Cheryl Hung, Director of CNCF" class="hero-image">
   </div>
   <div class="hero-content-text">
     <div class="hero-text padded">
       <h2>Cheryl Hung</h2>
-      <p>Cheryl Hung is the Director of Ecosystem at the Cloud Native Computing Foundation. She is a software engineer, public speaker and tech executive.<p>
+      <p>Cheryl Hung is the Cloud Native Computing Foundation's Director of Ecosystem. She is a software engineer, public speaker and tech executive.<p>
       <div class="social"> {% include social-icons.html %}</div>
     </div>
   </div>
-</div>
-
-<!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
-<!-- With added pipe to handle lack of sort_natural -->
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}|{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-<!-- site_tags: {{ site_tags }} -->
-{% assign tag_words = site_tags | split:',' | sort %}
-<!-- tag_words: {{ tag_words }} -->
-
-  <div class="tags-list">
-    {% for tag_pair in tag_words %}
-    {% assign tag = tag_pair | split:'|' | last %}
-    {% if page.tags %}
-      {% unless page.tags contains tag %}
-        {% continue %}
-      {% endunless %}
-    {% endif %}
-    <a href="#{{ tag | slugify }}" class="tag-link">
-      <span class="tag-name">{{ tag }}</span>
-      <span class="tag-count">{{ site.tags[tag] | size }}</span>
-    </a>
-    {% endfor %}
-  </div>
-
-
-  <hr/>
-
-  <div class="posts-by-tag">
-    {% for tag_pair in tag_words %}
-    {% assign tag = tag_pair | split:'|' | last %}
-    <div id="{{ tag | slugify }}" class="posts-for-tag">
-      <h1>{{ tag }}</h1>
-      <div class="posts-list">
-        {% for post in site.tags[tag] %}
-	        {% include post-list-entry.html post=post %}
-        {% endfor %}
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
+  <a class="divLink" href="/about">link</a>
+</article>
 
 {{ content }}
+
+<div class="text-center">
+<h1><a href="/archive">View Archive ></a></h1>
+</div>

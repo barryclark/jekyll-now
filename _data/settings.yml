@@ -9,7 +9,6 @@ google-ID: 'UA-101991886-1'
 menu:
 - {name: 'Cloud Native London', path: 'cloudnativelondon', url: ''}
 - {name: 'Events', path: 'events', url: ''}
-- {name: 'About', path: 'about', url: ''}
 - {name: 'Search', path: 'search', url: ''}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
@@ -64,7 +63,7 @@ related_posts:
   # post_filter: favourite
 
   # Maximum number of related posts to show below each post.
-  count: 3
+  count: 2
 
   # Whether the content of the post_navigation should be excluded from the
   # related posts.

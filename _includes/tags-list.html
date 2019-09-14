@@ -1,0 +1,25 @@
+<!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
+<!-- With added pipe to handle lack of sort_natural -->
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}|{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+<!-- site_tags: {{ site_tags }} -->
+{% assign tag_words = site_tags | split:',' | sort %}
+<!-- tag_words: {{ tag_words }} -->
+
+<div class="tags-list">
+  {% for tag_pair in tag_words %}
+    {% assign tag = tag_pair | split:'|' | last %}
+    {% if page.tags %}
+      {% unless page.tags contains tag %}
+        {% continue %}
+      {% endunless %}
+    {% endif %}
+    <a href="/archive/{{ tag | slugify }}" class="tag-link">
+      <span class="tag-name">{{ tag }}</span>
+      <span class="tag-count">{{ site.tags[tag] | size }}</span>
+    </a>
+  {% endfor %}
+
+  {% if page.select_tag %}
+    <a href="/archive" class="tag-link reset-link">Reset</a>
+  {% endif %}
+</div>

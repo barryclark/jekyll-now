@@ -7,10 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2019
 
-September 4: Cloud Native London
-
-September 10: Workshop on research and technical development of energy efficiency in cloud computing, Brussels
-
 September 23 - 25: Open Networking Summit EU, Antwerp
 
 October 2 - 3:  OpenInfraDays Nordics, Stockholm

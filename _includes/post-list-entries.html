@@ -1,0 +1,13 @@
+{% if page.select_tag %}
+  <h1>{{page.select_tag}}</h1>
+  <div>
+    {% for post in site.tags[page.select_tag] %}
+      {% include post-list-entry.html post=post %}
+    {% endfor %}
+  </div>
+{% else %}
+  <h1>Archive</h1>
+  {% for post in site.posts %}
+    {% include post-list-entry.html post=post %}
+  {% endfor %}
+{% endif %}

@@ -9,9 +9,7 @@ layout: default
 {% endfor %}
 
 <span class="post-date">
-  {{ site.data.settings.post_date_prefix }}
   {{ page.date | date: "%B %-d, %Y" }}
-  {% include post-tags.html %}
 </span>
 
 <h1>

@@ -133,6 +133,22 @@ a.divLink {
     /*workaround to make clickable in IE */
 }
 
+.tags-list {
+  margin-bottom: 3rem;
+}
+
+.list-entry {
+  display: inline-block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.list-media {
+  float: left;
+  width: 200px;
+  margin-right: 1rem;
+}
+
 h1, h2, h3 {
   font-weight: normal;
 }
@@ -196,6 +212,10 @@ hr {
   text-align: center;
 }
 
+.reset-link {
+  color: $link-hover-color;
+}
+
 button {
     font-size: 17px;
     line-height: 1.47059;
@@ -237,9 +257,13 @@ button {
 }
 
 .thumbnail-container {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 blockquote {
-    border-color: $light-content-color;
+  border-color: $light-content-color;
+}
+
+.list-entry-title {
+  text-decoration: none;
 }
