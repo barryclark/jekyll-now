@@ -4,6 +4,8 @@ title: Choose payment method
 description: "Pay Cloud Native London by bank transfer, direct debit, credit or debit card."
 ---
 
+After payment, you'll confirm which months your company is sponsoring.
+
 ## 1. Direct debit
 
 Monthly sponsors usually pay through a direct debit.

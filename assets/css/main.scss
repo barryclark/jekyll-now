@@ -67,17 +67,33 @@ nav.menu-content a {
 
 .hero {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-flow: row wrap;
+  align-items: stretch;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin: 0 -0.5rem 4rem;
 }
 
-.hero-item {
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
+.hero-media {
+  flex: 1 1 60%;
+  min-width: 400px;
+  align-self: center;
+  margin: 0 0.5rem;
+}
+
+.hero-image {
+  object-fit: contain;
+}
+
+.hero-content-text {
+  display: flex;
+  flex: 1;
+  min-width: 250px;
+  margin: 0 0.5rem;
+}
+
+.hero-text {
+  flex: 1;
+  align-self: center;
 }
 
 .social {
@@ -205,6 +221,16 @@ button {
 }
 
 @import "lagrange";
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1068px) {
+  .container {width: 90vw;}
+}
 
 .masthead {
   margin-bottom: 3rem;
