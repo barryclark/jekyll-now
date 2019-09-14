@@ -2,6 +2,7 @@
 layout: post
 title: "Cloud Native London, August 2019: Cloudability and JFrog"
 description: "Read the roundup from Cloudability and JFrog at the Cloud Native London meetup in August 2019, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
+location: London, UK
 image: /images/2019-08-07-cloud-native-london-august-2019-cloudability-and-jfrog.jpg
 tags:
   - Photos

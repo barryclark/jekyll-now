@@ -1,23 +1,17 @@
 <article class="posts box">
-  {% include post-metadata.html page=post %}
-
-  {% for category in post.categories limit: 1 %}
-    <span class="post-date post-category">{{navigation_category_page.title | default: navigation_category}}:</span>
-  {% endfor %}
-
   {% if include.post.feature_image %}
-  <div class="thumbnail-container">
-    <a href="{{ include.post.url }}"><img src="{{ include.post.feature_image }}"></a>
+  <div class="thumbnail-container middle">
+    <img class="crop" src="{{ include.post.feature_image }}">
   </div>
   {% elsif include.post.image %}
-  <div class="thumbnail-container">
-    <a href="{{ include.post.url }}"><img src="{{ include.post.image }}"></a>
+  <div class="thumbnail-container middle">
+    <img class="crop" src="{{ include.post.image }}">
   </div>
   {% endif %}
   <div class="padded">
-    <h2>
+    <h3>
       {{ include.post.title }}
-    </h2>
+    </h3>
     {% include post-summary-metadata.html post=post %}
   </div>
   <a class="divLink" href="{{ include.post.url }}">link</a>

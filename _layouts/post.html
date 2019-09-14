@@ -8,9 +8,7 @@ layout: default
   <span class="post-date post-category">{{navigation_category_page.title | default: navigation_category}}:</span>
 {% endfor %}
 
-<span class="post-date">
-  {{ page.date | date: "%B %-d, %Y" }}
-</span>
+{% include post-summary-metadata.html post=page %}
 
 <h1>
   {{ page.title }}

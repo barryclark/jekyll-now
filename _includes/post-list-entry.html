@@ -8,9 +8,7 @@
         {% endif %}
       </div>
 
-      <span class="post-date">
-        {{ post.date | date: "%B %-d, %Y" }}
-      </span>
+      {% include post-summary-metadata.html post=post %}
 
       <a href="{{ include.post.url }}" class="list-entry-title">
         {{ include.post.title }}

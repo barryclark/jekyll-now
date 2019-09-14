@@ -2,6 +2,7 @@
 layout: post
 title: "Crossing the chasm - Cloud Native London, January 2019"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, talks about how Kubernetes and cloud native have gone mainstream at Cloud Native London."
+location: London, UK
 feature_image: /images/2019-01-08-crossing-the-chasm.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/2YonCoGkpW1AwN
 tags:

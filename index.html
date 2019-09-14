@@ -2,6 +2,16 @@
 layout: index
 ---
 
+<div class="landingtiles">
+
 {% for post in paginator.posts %}
+  <div class="landingtile">
   {% include post-summary.html post=post %}
+  </div>
 {% endfor %}
+
+</div>
+
+<div class="text-center">
+<h1><a href="/archive">View Archive ></a></h1>
+</div>

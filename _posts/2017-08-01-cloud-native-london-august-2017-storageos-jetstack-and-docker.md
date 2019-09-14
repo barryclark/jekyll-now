@@ -2,6 +2,7 @@
 layout: post
 title: "Cloud Native London, August 2017: StorageOS, Jetstack and Docker"
 description: "Read the roundup from StorageOS, Jetstack and Docker at Cloud Native London, hosted by Cheryl Hung, Developer advocate at StorageOS."
+location: London, UK
 image: /images/CloudNativeLondonAugust.jpg
 tags:
   - Photos

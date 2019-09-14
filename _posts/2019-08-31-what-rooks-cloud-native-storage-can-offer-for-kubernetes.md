@@ -2,6 +2,7 @@
 layout: post
 title: "What Rook’s Cloud Native Storage Can Offer for Kubernetes - The New Stack"
 description: "Cheryl Hung, Director of Ecosystem at CNCF looks at a demo of Rook with Patrick Donnelly of Red Hat."
+location: Shanghai, China
 feature_image: https://cdn.thenewstack.io/media/2019/08/a160c903-rook-demo.jpg
 video: https://www.youtube.com/embed/JnTyZm5oOEw
 tags:

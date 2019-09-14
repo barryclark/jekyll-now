@@ -2,6 +2,7 @@
 layout: post
 title: "Eight principles of Cloud Native Storage - CloudNative conference"
 description: "Cheryl Hung, Developer Advocate at StorageOS, describes a framework for cloud native storage."
+location: London, UK
 feature_image: /images/2017-09-27-Eight-principles-of-cloud-native-storage.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/v2rQ6VcFjFfrsY
 tags:

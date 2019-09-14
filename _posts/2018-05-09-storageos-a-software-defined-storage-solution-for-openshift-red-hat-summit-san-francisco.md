@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "StorageOS: A Software Defined Storage Solution for OpenShift - Red Hat Summit, San Francisco"
+title: "StorageOS: A Software Defined Storage Solution for OpenShift - Red Hat Summit"
 description: "Cheryl Hung, Product Manager at StorageOS, explains how StorageOS works with OpenShift"
+location: San Francisco, USA
 feature_image: https://pbs.twimg.com/media/Dc3BTNeVMAAT-uZ.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/CefWi0uwCl9paV
 tags:

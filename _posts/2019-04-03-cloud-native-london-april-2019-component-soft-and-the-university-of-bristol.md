@@ -2,6 +2,7 @@
 layout: post
 title: "Cloud Native London, April 2019: Component Soft and the University of Bristol"
 description: "Read the roundup from Component Soft and the University of Bristol at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
+location: London, UK
 image: /images/2019-04-03-cloud-native-london-april-2019-component-soft-and-the-university-of-bristol.jpg
 tags:
   - Photos

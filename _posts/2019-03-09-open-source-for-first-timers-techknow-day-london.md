@@ -2,6 +2,7 @@
 layout: post
 title: "Open Source for First Timers - TECH(K)NOW Day, London"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source at TECH(K)NOW Day London."
+location: London, UK
 feature_image: /images/2019-03-09-open-source.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/eRghzkguUfRVnc
 tags:

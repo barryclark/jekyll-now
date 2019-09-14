@@ -2,6 +2,7 @@
 layout: post
 title: "Cloud Native London, September 2018: Financial Times, Armakuni and Sysdig"
 description: "Read the roundup from Financial Times, Armakuni and Sysdig at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
+location: London, UK
 image: https://pbs.twimg.com/media/DmRan-WX4AITHT7.jpg
 tags:
   - "2018"

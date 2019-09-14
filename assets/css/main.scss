@@ -9,7 +9,7 @@ $light-content-color: #456d93 !default;
 $lighter-content-color: #9bb6d0 !default;
 $lightest-content-color: rgba(250,250,250,0.98) !default;
 $background-color: white; /* #f2f2f2;*/
-$content-width: 65% !default;
+$content-width: 75% !default;
 $masthead-title-color: $lightest-content-color !default;
 $masthead-subtitle-color: $masthead-title-color !default;
 $link-hover-color: $light-content-color !default;
@@ -30,6 +30,18 @@ $horizontal-rule-color: $lighter-content-color;
 
 .padded {
     padding: 0.75rem;
+}
+
+.top {
+  vertical-align: top;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+.crop {
+  object-fit: contain;
 }
 
 .masthead {
@@ -100,8 +112,23 @@ nav.menu-content a {
   font-size: 1.8rem;
 }
 
-article.post-container {
-    background: white;
+.landingtiles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.landingtile {
+  flex: 1 0 45%;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  height: 100%;
+}
+
+article.posts {
+  margin-bottom: 0.25rem;
 }
 
 article.box {
@@ -242,10 +269,8 @@ button {
 
 @import "lagrange";
 
-
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 1068px) {
@@ -258,6 +283,7 @@ button {
 
 .thumbnail-container {
   margin-bottom: 0px;
+  height: 200px;
 }
 
 blockquote {

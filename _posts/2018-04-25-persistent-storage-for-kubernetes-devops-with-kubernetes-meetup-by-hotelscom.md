@@ -2,6 +2,7 @@
 layout: post
 title: "Persistent storage for Kubernetes - DevOps with Kubernetes Meetup by Hotels.com"
 description: "Cheryl Hung, Product Manager at StorageOS, talks about persistent storage for Kubernetes"
+location: London, UK
 feature_image: /images/2018-04-25-hotelscom.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/dN6N4lqVDW0yPS
 tags:

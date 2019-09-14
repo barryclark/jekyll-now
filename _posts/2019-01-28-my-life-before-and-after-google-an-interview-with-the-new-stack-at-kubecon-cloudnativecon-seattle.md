@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "My Life Before and After Google - An interview with The New Stack at KubeCon+CloudNativeCon Seattle"
+title: "My Life Before and After Google - Interview with The New Stack at KubeCon + CloudNativeCon NA"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, tells her story from Google to the Cloud Native Computing Foundation with The New Stack."
+location: Seattle, USA
 feature_image: "https://cdn.thenewstack.io/media/2019/01/d42eeaba-cheryl_hung.jpg"
 video: https://www.youtube.com/embed/AZzJkjGNOdY
 tags:

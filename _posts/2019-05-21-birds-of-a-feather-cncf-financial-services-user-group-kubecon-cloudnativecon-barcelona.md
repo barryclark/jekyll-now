@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Birds of a Feather, CNCF Financial Services User Group - KubeCon CloudNativeCon Barcelona"
+title: "Birds of a Feather, CNCF Financial Services User Group"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, describes the history and mission of the CNCF Financial Services User Group at KubeCon CloudNativeCon."
+location: Barcelona, Spain
 feature_image: /images/2019-05-21-bof-fsug.jpg
 slides: "//www.slideshare.net/slideshow/embed_code/key/g2Nr5r0ioHqg4V"
 tags:

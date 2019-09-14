@@ -2,6 +2,7 @@
 layout: post
 title: "Persistent storage with Kubernetes in production - Kubernetes London"
 description: "Cheryl Hung, Product Manager at StorageOS, explains how to evaluate storage for Kubernetes."
+location: London, UK
 image: "/images/k8s-1.jpg"
 slides: //www.slideshare.net/slideshow/embed_code/key/axa0to9qRjaeAg
 tags:

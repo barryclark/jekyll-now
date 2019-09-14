@@ -2,6 +2,7 @@
 layout: post
 title: "There's no such thing as a 'stateless' architecture - ContainerSched conference"
 description: "Cheryl Hung, Product Manager at StorageOS, describes stateful architectures with containers at ContainerSched"
+location: London, UK
 feature_image: /images/2017-09-28-no-such-thing-stateless.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/17VEKs3GDLEw6Y
 tags:

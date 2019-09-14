@@ -2,6 +2,7 @@
 layout: post
 title: "What's the future of cloud and container native storage - Microservices conference"
 description: "Cheryl Hung, Product Manager at StorageOS, discusses the future of storage with Kubernetes and cloud native."
+location: London, UK
 image: /images/2017-11-06-cloud-native-storage.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/szpHx4LEOyfQ8A
 tags:
