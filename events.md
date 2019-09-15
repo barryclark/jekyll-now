@@ -26,7 +26,6 @@ October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 
 October 31 - November 1: MIT Technology Review Leadership Summit, Singapore
 * **Keynote: The Power of Transforming Systems**
-* **Technologies for Disaster Relief**
 
 November 6: Cloud Native London
 
