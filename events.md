@@ -5,6 +5,8 @@ permalink: /events/
 description: "Cheryl Hung's upcoming talks at global conferences and events."
 ---
 
+I'm available for paid speaking engagements. Please contact me at chung @ linuxfoundation.org.
+
 ### 2019
 
 September 23 - 25: Open Networking Summit EU, Antwerp
