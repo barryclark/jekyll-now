@@ -2,7 +2,7 @@
 layout: post
 title: My First Post
 ---
-# simple blog post created while I learned how to set this all up
+## A simple blog post created while I learned how to set this all up
 
 * This
 * is
