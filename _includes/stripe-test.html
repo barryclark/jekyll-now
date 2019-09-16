@@ -3,7 +3,12 @@
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button id="checkout-button-sku_FbsNED5mU2Onot" role="link">
-  Make card payment - TEST
+  Pay 1 month (TEST)
+</button>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button id="checkout-button-sku_Fp3Z0o5WZO8Lmu" role="link">
+  Pay 3 months (TEST)
 </button>
 
 <div id="error-message"></div>
@@ -17,6 +22,35 @@
     // them to Checkout.
     stripe.redirectToCheckout({
       items: [{sku: 'sku_FbsNED5mU2Onot', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://www.oicheryl.com/cloudnativelondon/success',
+      cancelUrl: 'https://www.oicheryl.com/cloudnativelondon/pay',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
+
+<script>
+  var stripe = Stripe('pk_test_UdxvSn4lx17grmpJi0RNXWcb00Pej398Ov');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_Fp3Z0o5WZO8Lmu');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_Fp3Z0o5WZO8Lmu', quantity: 1}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after

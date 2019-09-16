@@ -27,7 +27,7 @@ Invoices are sent on the 15th of the month before each event.
 <button onclick="location.href='/cloudnativelondon/success'" type="button">
          Request invoice</button>
 
-## 3. Credit / debit card
+## 3. Make card payment
 
 {% if jekyll.environment == "production" %}
 {% include stripe.html %}
