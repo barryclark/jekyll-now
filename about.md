@@ -6,11 +6,14 @@ about: true
 
 ---
 
-###### Il·lustrador, dissenyador i músic de Barcelona
+###### Il·lustrador | disseny Gràfic | Edició Web | Músic | tècnic de So
 
-Vaig estudiar Arts Aplicades, il·lustració, dibuix de model, pintura, i posteriorment música moderna al Taller de Músics de Barcelona.
+Vaig estudiar Arts Aplicades, il·lustració, dibuix de model i pintura al Pau Gargallo de Badalona.
+Música moderna a l'escola de Música de Badalona i al Taller de Músics de Barcelona.
 
-Actualment compagino la feina de creatiu gràfic amb la de músic i tècnic de So.
+
+Actualment compagino la feina de *creatiu gràfic* amb la de *Músic Baterísta* i *tècnic de So*.
+
 
 
 He treballat en:
