@@ -192,11 +192,12 @@ em small #go-up {background: transparent ;border:thin solid rgba(100,100,100,.2)
 em small #go-up:hover {background: rgba(0, 0, 0, .3);}
 
 /* Footer fixed */
-main {margin-bottom: 242px;z-index: 1;overflow:hidden;background-color: var(--color-white);box-shadow: 0 75px 60px rgba(0, 0, 0, .32);}
+main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--color-white);box-shadow: 0 75px 60px rgba(0, 0, 0, .32);}
 #page-footer {position: fixed;box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);bottom: 0px;z-index: 0;width: 100%;max-height: 362px !important;}
 #page-footer #follows a {font-weight:400;color:var(--color-hardgrey);
     text-decoration:none!important;font-size:1.1em!important;line-height:.1em;}
 #page-footer #follows a b {font-weight:200;letter-spacing: -.05em;}
+#page-footer #g-text {font-size:.75em;color:var(--color-hardgrey); }
 #autoria {font-size: 16px;border-top:thin solid #333;padding-top:9px;}
 #autoria b {font-weight: normal;padding-right:15px;}
 #autoria a {color:var(--color-hard-grey);}
@@ -352,9 +353,9 @@ main {margin-bottom: 242px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 @media (max-width: 1024px) {
         #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 105% auto;background-position: fixed !important;}
-		#web-music {background-image: url("/img/m-music.jpg")!important;)
+    #web-music {background-image: url("/img/m-music.jpg")!important;}
 		#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
-		.medias#page-header {background-image: url("/img/m-portfoli.jpg");
+    .medias#page-header {background-image: url("/img/m-portfoli.jpg");}
 		div.masked {background-image: url("/img/m-golden.jpg");
 }
 @media (max-width: 800px) {
