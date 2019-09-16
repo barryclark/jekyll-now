@@ -17,6 +17,7 @@ img.apps {border-radius:27px;max-width:153px;}
 .cover h2 {letter-spacing: -0.001em;line-height: 1.2em;font-weight: normal ;font-size: 1em !important;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
+h2.fat {font-size:3em!important;font-weight: bold!important;}
 #page-main.darkmode {background: var(--color-white);}
 #page-main.darkmode em a {background: #111;}
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;}
@@ -27,7 +28,7 @@ img.apps {border-radius:27px;max-width:153px;}
 #web-grafics h4 {margin-bottom:6px;}
 #web-grafics p {margin-bottom:12px;padding-left:48px;}
 #web-oferta h2, #web-branding h2, #web-grafics h2, #web-music h2 {font-weight: lighter ;letter-spacing: -0.045em;margin-bottom:23px;line-height:1em;font-size:1.4em;}
-#web-oferta h1, #blured h1 {color:var(--color-black);}
+#web-oferta h2, #blured h1 {color:var(--color-black);}
 #web-branding h1 {color:var(--color-white);}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .0012em;text-align: center;color: var(--color-grey);}
 #web-grafics {color: var(--color-red);}
