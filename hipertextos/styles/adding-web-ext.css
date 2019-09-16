@@ -3,8 +3,9 @@
 
 .cover.landing {background:var(--color-black)!important;background-image: none!important; }
 .cover {padding-top:36px;height:100%!important;}
-#webpro img {min-width:100%;}
-#web-oferta {}
+h2 img.tarifes {width:100%;height:100%!important;}
+#covers {padding:16px 45px 0 45px;background-color: black; margin-bottom:-4em;}
+#web-landing { }
 .prices {font-weight:300;font-size:3.1em;line-height:1.5em;background:rgba(242,242,242,1);border:thin solid #fff;}
 .prices:after {content:'€';right:0;bottom:0;font-size:.5em;color:var(--color-grey);}
 #tarifes h2, #tarifes h3 {text-align:center;}
@@ -26,8 +27,10 @@ h5.title {font-weight:200;color:var(--color-grey);letter-spacing: -0.02em; line-
 @media (max-width: 1600px) {
 }
 @media (max-width: 1250px) {
+    #covers {padding:6px 5px 0 5px;background-color: black; margin-bottom:-4.2em;}
 }
 @media (max-width: 1242px) {
+    #covers {padding:0px;background-color: black; margin-bottom:-4.2em;}
 }
 @media (max-width: 768px) {
 }
