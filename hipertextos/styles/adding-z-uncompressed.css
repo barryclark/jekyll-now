@@ -349,7 +349,9 @@ main {margin-bottom: 242px;z-index: 1;overflow:hidden;background-color: var(--co
     img.front-responsive {width: 320px;margin-top: 60px;}
     #glassed {padding:26px;}
 }
-
+@media (max-width: 1024px) {
+        #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 105% auto;background-position: fixed !important;}
+}
 @media (max-width: 800px) {
     #glass-front {background-size: 120% auto;background-position: fixed !important;}
     #web-oferta {background-size: auto 150%;background-position: fixed !important;}
@@ -399,7 +401,6 @@ main {margin-bottom: 242px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 @media (max-width: 540px) {
 	#fases {display:none!important;visibility: hidden!important}
-    #page-header.cover {background-image: url("/img/home_b.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 105% auto;background-position: fixed !important;}
     #fronters {margin:0px;min-width:70%;}
     #blured {margin: 0px;min-width:100%;}
     .note svg {max-width:64px;}
@@ -416,4 +417,5 @@ main {margin-bottom: 242px;z-index: 1;overflow:hidden;background-color: var(--co
     #covers article h4{padding:0px;margin:0px;font-size:1.1em;line-height: 0.69em}
     #covers article h5 small {display:none;}
     #icons a {width: 18%;padding: 8px;}
+    #page-header.cover {background-image:url(/img/texture/asfalt.png)!important;background-size:466px 349px!important;background-repeat:repeat!important;}
 }
