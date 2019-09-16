@@ -351,6 +351,10 @@ main {margin-bottom: 242px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 @media (max-width: 1024px) {
         #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 105% auto;background-position: fixed !important;}
+		#web-music {background-image: url("/img/m-music.jpg")!important;)
+		#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
+		.medias#page-header {background-image: url("/img/m-portfoli.jpg");
+		div.masked {background-image: url("/img/m-golden.jpg");
 }
 @media (max-width: 800px) {
     #glass-front {background-size: 120% auto;background-position: fixed !important;}
