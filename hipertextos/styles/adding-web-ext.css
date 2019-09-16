@@ -30,7 +30,7 @@ h5.title {font-weight:200;color:var(--color-grey);letter-spacing: -0.02em; line-
     #covers {padding:6px 5px 0 5px;background-color: black; margin-bottom:-4.2em;}
 }
 @media (max-width: 1242px) {
-    #covers {padding:0px;background-color: black; margin-bottom:-4.2em;}
+    #covers {display:none;}
 }
 @media (max-width: 768px) {
 }
