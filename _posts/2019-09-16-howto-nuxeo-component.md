@@ -7,9 +7,6 @@ img_url: /images/2019-09-16-building-component.png
 img_credits: Photo by <a href="https://unsplash.com/@randyfath">Randy Fath on Unsplash</a>
 ---
 
-Building Nuxeo Component (an opinionated way)
-=============================================
-
 The Nuxeo Platform was designed from the beginning to be a Service Oriented Platform. We embraced [SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture) from the beginning and that's one of the reason why it's so easy to do calls like `Framework.getService(MyService.class)` from every part of the code in Nuxeo.
 
 We definitely love doing pluggable services, and when we want to introduce a new feature, our DNA tells us: what extension point and what service can we provide? Throughout the years, even the runtime part of the platform has evolved and it's now even easier to implement a new component.
@@ -17,7 +14,7 @@ We definitely love doing pluggable services, and when we want to introduce a new
 In this article, I will expose how I now build Nuxeo components and what pattern I like to use and why. This is my own way to do it in September 2019. It is always evolving, so perhaps in two years I will call it crap. You've been warned!
 
 Someone Needs Access Tokens
----------------------------
+===========================
 
 To illustrate how we can create a component, we will take the example of a service providing OAuth2 Tokens for the client credentials flow. It's quite simple and just requires the IDP url, a `clientId`, a `clientSecret` and a scope. We want to be able to call our service like this in the platform:
 
@@ -90,7 +87,8 @@ public class AccessTokenProviderTest {
 
 Now that we have a test, we can start working on making it pass.
 
-# A Component Can Give Tokens!
+A Component Can Give Tokens!
+============================
 
 For the moment, our test doesn't even compile! To fix that, we can create the corresponding interface and veryfiy that our test is failing. That's a first step: low code is trendy, but low code is not no code and Nuxeo is not magic, we'll have to code more!
 
@@ -160,7 +158,8 @@ public class OAuth2Component extends DefaultComponent {
 with a very naive and lazy implementation of `ClientCredentialsAccessTokenProvider`, our test can become green. We've implemented our first component! Now we have to make it pluggable so that our token may be configurable.
 
 
-# The OAuth2 Component Becomes Configurable
+The OAuth2 Component Becomes Configurable
+=========================================
 
 As we said earlier, our `AccessTokenProvider` has to be configurable, with an Url, some client credentials and a scope. The configuration for that component could look like a contribution like this:
 
@@ -267,10 +266,13 @@ public byte[] getToken(String idpId) throws OAuth2Exception {
 
 
 
-# Let's Refactor!
+Let's Refactor!
+===============
 
 
-## Extract the dependencies
+Extract the dependencies
+------------------------
+
 The first problem that we can see is that the `ClientCredentialsAccessTokenProvider` doesn't clearly expres the dependencies to the other services. The reason is that various calls to `Framework.getService(EventService.class)` make the dependencies difficult to identify and also more difficult to test. We will move the `EventService` as a field of our object and intialize it with the help of the `Builder` pattern: it will allow to initalize our service more easily in a test. The initialization to the default value can be conditioned to a call at `Framework.isInitialized()`:
 
 ```java
@@ -355,7 +357,8 @@ public class ClientCredentialsAccessTokenProviderTest {
 
 If everything had been packed in one single class (the component/service all in one object), it would have been a bit harder to test and less obvious because of the difficulties to identify dependencies.
 
-## Simplify Our Component
+Simplify Our Component
+----------------------
 
 Looking back at our component object, there is a pattern that we often see in Nuxeo: a lazy instanciation of an object:
 
@@ -413,7 +416,8 @@ Our component is now only 17 lines long! It still supports the registration of e
   * to some utility classes
   * to the real implementation of the service
 
-# Conclusion
+Conclusion
+==========
 
 Thru this how-to we've seen how to create a Nuxeo component and also that new Nuxeo LTS 2019 allows to create more concise Nuxe Runtime Components. Having to write less code allows you to write less bugs too!
 
@@ -421,7 +425,8 @@ The pattern of extracting the implementation of the interface from the component
 
 The code of the example is available on Github. It features a real implementation of the OAuth2 client credentials flow that allows to see how to thoroughly test its implementation with an external web service.
 
-# References
+References
+==========
 
  * Code of the component: [https://github.com/dmetzler/nuxeo-oauth-client-credentials](https://github.com/dmetzler/nuxeo-oauth-client-credentials)
  * Nuxeo: [https://github.com/nuxeo/nuxeo](https://github.com/nuxeo/nuxeo)
