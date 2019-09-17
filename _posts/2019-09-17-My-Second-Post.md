@@ -10,6 +10,8 @@ Today we did the same drill questions again. Here are two questions that I was n
 2. Split a string into an array
 
 ### Git & command Line
+A common issue I had when I dealt with command line was forgetting the commands. Tim shared a trick by recording commands before closing the window.
+> ```history > ..\history.text(save it in the parent directory)
 
 ### Java Tag: text response
 1.a string variable with multiple methods: `String input.newLine().trim().length() + "" (empty string)`
