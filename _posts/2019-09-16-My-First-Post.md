@@ -3,8 +3,9 @@ layout: post
 title: My First Post
 ---
 ## Learning Journal for September 16th
-### Git
-* 
+### Git & command Line
+1. windows: Type *powershell* in searching bar to open the terminal
+1. use *alt+tab* to switch the windows
 ### Java Lesson 1
 ### Java Drill
 ### Trust 101
