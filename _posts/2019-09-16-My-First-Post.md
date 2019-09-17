@@ -2,7 +2,12 @@
 layout: post
 title: My First Post
 ---
-## A simple blog post created while I learned how to set this all up
+## Learning Journal for September 16th
+### Git
+* 
+### Java Lesson 1
+### Java Drill
+### Trust 101
 
 * This
 * is
