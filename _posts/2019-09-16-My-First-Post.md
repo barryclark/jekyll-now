@@ -37,15 +37,14 @@ title: My First Post
     > public class main {}
 
 1. We learned about how to create strings today: 
- ```public class main {
+ >  ```public class main {
         public static void main(String [] args) 
             {
             
             }
-        }
- ```
-
-3. create a variable waiting for the users' input:
+        }```
+        
+1. create a variable waiting for the users' input:
 ![Java 101](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/20190916-tag.PNG)
 * `sout + tab` will expand as ***System.out.println()***
 * explanation of the nextline: [w3school:nextline()](https://www.w3schools.com/java/java_user_input.asp)
