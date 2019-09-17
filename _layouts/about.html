@@ -37,22 +37,23 @@
 		</header>
 		<main id="page-main">
 			<div>
+			<div itemscope itemtype="http://schema.org/Person">
 				<section class="thumb-9 anm-moveFromBottomFade delay-200">
 					<h1 class="anm-scaleUpCenter delay-400">
 					<img src="https://avatars0.githubusercontent.com/u/9498876?s=400&u=aee7e89c69bf3dee9903bc85ec6aa33985148325&v=4" id="avatar" class="anm-scaleUp delay-400" rel="Avatar de Isard Miralles">
-					Isard Miralles</h1>
+					<span itemprop="name">Isard Miralles </span></h1>
 					{{ content }}
 					<br>
-						<h4 class="anm-scaleUp delay-400"><a href="mailto:isardmt@gmail.com">isardmt@gmail.com</a></h4>
+						<h4 class="anm-scaleUp delay-400"><a href="mailto:isardmt@gmail.com" itemprop="email">isardmt@gmail.com</a></h4>
 					<strong>
-						<em class="anm-scaleUp delay-600"><a href="tel:+34 {{ site.phone }}"><i class="icon-mobile"></i>658973617</a></em>
+						<span itemprop="telephone"><em class="anm-scaleUp delay-600"><a href="tel:+34 {{ site.phone }}"><i class="icon-mobile"></i>658973617</a></em></span>
 						<em class="anm-scaleUp delay-700"><a href="https://www.facebook.com/{{ site.footer-links.facebook }}" target="blank"><i class="icon-facebook"></i> Isard Miralles</a></em>
 						<em class="anm-scaleUp delay-800"><a href="https://www.twitter.com/{{ site.footer-links.twitter }}" target="blank"><i class="icon-twitter"></i> @isardmt</a></em>
 					</strong>
 					<br>
 				</section>
 				<aside class="thumb-3 anm-moveFromRightFade delay-1000">
-					<img src="{{ site.baseurl }}/hipertextos/brand/portrait.jpg" class="foto" rel="Isard Miralles">
+					<img src="{{ site.baseurl }}/hipertextos/brand/portrait.jpg" itemprop="image" class="foto" rel="Foto de Isard Miralles">
 					<figure>
 						<p>Últims treballs</p>
 						<em><a href="https://pascualyfuriodiabetes.com" target="blank" alt="Visitar pascualyfuriodiabetes.com"><i class="icon-cloud-upload"></i>CareSens Dual</a></em><br>
@@ -67,6 +68,7 @@
 					</figure>
 				</aside>
 				<hr>									
+			</div>
 			</div>
 			{% include partials/credits.html %}
     		{% include partials/coffee.html %}   		

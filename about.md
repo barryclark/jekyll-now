@@ -6,15 +6,14 @@ about: true
 
 ---
 
-###### Il·lustrador | disseny Gràfic | Edició Web | Músic | tècnic de So
+###### <span itemprop="jobTitle">Il·lustrador | disseny Gràfic | Edició Web | Músic | tècnic de So</span>
 
 Vaig estudiar Arts Aplicades, il·lustració, dibuix de model i pintura al Pau Gargallo de Badalona.
 Música moderna a l'escola de Música de Badalona i al Taller de Músics de Barcelona.
-
-
+<br>
 Actualment compagino la feina de *creatiu gràfic* amb la de *Músic Baterísta* i *tècnic de So*.
 
-
+<br>
 
 He treballat en:
 
