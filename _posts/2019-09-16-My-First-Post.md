@@ -9,8 +9,8 @@ title: My First Post
 1. Git commands in terminal
   1. use `cb`to check out a branch that doesn't exist ***cb (branchName)***
   1. two loops
-    > primary loop: git add. => git commit -m "<comment>" => write codes
-    > sharing loop: git push origin => git pull-rebase 
+    * primary loop: git add. => git commit -m "<comment>" => write codes
+    * sharing loop: git push origin => git pull-rebase 
 ### Java Lesson 1
 ### Java Drill
 ### Trust 101
