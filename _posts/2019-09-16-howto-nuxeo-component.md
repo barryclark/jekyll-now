@@ -7,9 +7,9 @@ img_url: /images/2019-09-16-building-component.png
 img_credits: Photo by <a href="https://unsplash.com/@randyfath">Randy Fath on Unsplash</a>
 ---
 
-The Nuxeo Platform was designed from the beginning to be a Service Oriented Platform. We embraced [SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture) from the beginning and that's one of the reason why it's so easy to do calls like `Framework.getService(MyService.class)` from every part of the code in Nuxeo.
+The Nuxeo Platform was designed from the beginning to be a Service Oriented Platform. We embraced [SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture) from the beginning and that's one of the reasons why it's so easy to do calls like `Framework.getService(MyService.class)` from every part of the code in Nuxeo.
 
-We definitely love doing pluggable services, and when we want to introduce a new feature, our DNA tells us: what extension point and what service can we provide? Throughout the years, even the runtime part of the platform has evolved and it's now even easier to implement a new component.
+We definitely love doing pluggable services, and when we want to introduce a new feature, our DNA asks us: what extension point and what service can we provide? Throughout the years, even the runtime part of the platform has evolved and it's now even easier to implement a new component.
 
 In this article, I will expose how I now build Nuxeo components and what pattern I like to use and why. This is my own way to do it in September 2019. It is always evolving, so perhaps in two years I will call it crap. You've been warned!
 
@@ -63,9 +63,9 @@ and our first test:
      info You can start editing code or you can continue with calling another generator (nuxeo bootstrap [<generator>..])
 ```
 
-The Nuxeo CLI bootstraps a test for us and then is already using the Nuxeo Test Framework. We will just remove the line where it injects the `CoreSession` because we don't need it (hence the `None` answered to the *Using Feature* question).
+The Nuxeo CLI bootstraps a test for us and is already using the Nuxeo Test Framework. We will just remove the line where it injects the `CoreSession` because we don't need it (hence the `None` answered to the *Using Feature* question).
 
-For the moment the content of thet test will be super simple, and will just verify the assertion that we exposed:
+For the moment the content of the test will be super simple, and will just verify the assertion that we exposed:
 
 ```java
 @RunWith(FeaturesRunner.class)
@@ -90,9 +90,9 @@ Now that we have a test, we can start working on making it pass.
 A Component Can Give Tokens!
 ============================
 
-For the moment, our test doesn't even compile! To fix that, we can create the corresponding interface and veryfiy that our test is failing. That's a first step: low code is trendy, but low code is not no code and Nuxeo is not magic, we'll have to code more!
+For the moment, our test doesn't even compile! To fix that, we can create the corresponding interface and veryfy that our test is failing. That's a first step: low code is trendy, but low code is not no code and Nuxeo is not magic, we'll have to code more!
 
-This will be the start of our bundle. The test express exactly what we want from a consumer standpoint. Now, for the `Framework.getService()` call to work, Nuxeo asks us to define a component whose responsibility will be to *provide* this *service*. A component in Nuxeo is at first nothing but a simple XML file that defines the component name, its implementation (optional) and its capabilities:
+This will be the start of our bundle. The test expresses exactly what we want from a consumer standpoint. Now, for the `Framework.getService()` call to work, Nuxeo asks us to define a component whose responsibility will be to *provide* this *service*. A component in Nuxeo is at first nothing but a simple XML file that defines the component name, its implementation (optional) and its capabilities:
 
 ```xml
 <component name="org.nuxeo.oauth2.OAuth2Component"
@@ -108,10 +108,10 @@ This will be the start of our bundle. The test express exactly what we want from
 </component>
 ```
 
-  1. The implementation class of our component. It is optional as our component may just be a generic component that contribute to others. That's the case of all single contribution in Nuxeo.
+  1. The implementation class of our component. It is optional as our component may just be a generic component that contribute to others. That's the case of all single contributions in Nuxeo.
   2. The service that this component provides.
 
-If we want that component to be deployed, we have to append it to the list of component that are deployed in our bundle. We can do that by editing the `MANIFEST.MF` file of our bundle, located in `src/main/resources/META-INF`:
+If we want that component to be deployed, we have to append it to the list of components that are deployed in our bundle. We can do that by editing the `MANIFEST.MF` file of our bundle, located in `src/main/resources/META-INF`:
 
 ```
 Bundle-ActivationPolicy: lazy
@@ -126,9 +126,9 @@ Nuxeo-Component: OSGI-INF/oauth-token-component.xml
 
 ```
 
-If we try to execute our test again, it will fail with an error that tells that our component cannot be cast to `AccessTokenProvider`. One way to quickly fix this is to actually make our component implement the interface. The component could then implement the needed method and we would be done.
+If we try to execute our test again, it will fail with an error that says that our component cannot be cast to `AccessTokenProvider`. One way to quickly fix this is to actually make our component implement the interface. The component could then implement the needed method and we would be done.
 
-However the SRP principle tells us to ask ourselves what is the responsibility of the component: to provide a service, not to implement it! That's a big difference and that's why we can override the `getAdapter()` method to provide an alternate implementation than `return this;`. Our component becomes this:
+However the SRP principle tells us to ask ourselves: "What is the responsibility of the component?" To provide a service, not to implement it! That's a big difference and that's why we can override the `getAdapter()` method to provide an alternate implementation than `return this;`. Our component becomes this:
 
 ```java
 public class OAuth2Component extends DefaultComponent {
@@ -178,7 +178,7 @@ As we said earlier, our `AccessTokenProvider` has to be configurable, with an Ur
 </component>
 ```
 
-We will add this contribution in the `src/test/resources` folder of our project and update the test to deploy that contribution component to our test by adding `@Deploy("org.nuxeo.oauth2.nuxeo-oauth-client-credentials:oauth2-contrib.xml")` to our test deployment list. We also have to write a test to verify the configuration. As our current implementation returns a dumb token for every request, we will write a test that ensure that I get an `Exception` when I point to a non existent IDP configuration:
+We will add this contribution in the `src/test/resources` folder of our project and update the test to deploy that contribution component to our test by adding `@Deploy("org.nuxeo.oauth2.nuxeo-oauth-client-credentials:oauth2-contrib.xml")` to our test deployment list. We also have to write a test to verify the configuration. As our current implementation returns a dumb token for every request, we will write a test that ensure that I get an `Exception` when I point to a non-existent IDP configuration:
 
 ```java
 @Test(expected = OAuth2Exception.class)
@@ -205,9 +205,9 @@ It means that our `OAuth2Component` doesn't have the `idp` extension point. To f
 </extension-point>
 ```
 
-It tells the framework that the component accepts some `IdpDescriptor` on its `idp` extension point. The `IdpDescriptor` has still to be created to fulfill the definition. The `XMap` library allows to to map an XML document onto a Java Object.
+It tells the framework that the component accepts some `IdpDescriptor` on its `idp` extension point. The `IdpDescriptor` has still to be created to fulfill the definition. The `XMap` library allows to map an XML document onto a Java Object.
 
-Since Nuxeo 10.3, implementing the `Descriptor` interface for descriptor allow them to be automatically register them into the `DefaultComponent` registry and refer to it, without having to implements the usual `registerContribution` method. The list of descriptor registered for one component and an extension point name can be fetched using the `DefaultComponent#getDescriptors()` method.
+Since Nuxeo 10.3, implementing the `Descriptor` interface for descriptor allows them to be automatically registered into the `DefaultComponent` registry and refer to it, without having to implements the usual `registerContribution` method. The list of descriptors registered for one component and an extension point name can be fetched using the `DefaultComponent#getDescriptors()` method.
 
 Given the fact that descriptors are automatically registered, the component's code becomes:
 
@@ -250,7 +250,7 @@ public byte[] getToken(String idpId) throws OAuth2Exception {
 }
 ```
 
-With this implementation, our test then turns green. The `AccessTokenProvider` has now a dependency on the list of `IdpDescriptor` that is managed by the `OAuth2Component`. For the sake of the experience we will launch an `Event` with the `EventService` in order to add a dependency on another service. This is indeed a very  common pattern in Nuxeo to call a service from another service, and will help us in the next section to demonstrate some refactoring.
+With this implementation, our test then turns green. The `AccessTokenProvider` now has a dependency on the list of `IdpDescriptor` that is managed by the `OAuth2Component`. For the sake of the experience we will launch an `Event` with the `EventService` in order to add a dependency on another service. This is indeed a very  common pattern in Nuxeo, to call a service from another service, and will help us in the next section to demonstrate some refactoring.
 
 ```java
 @Override
@@ -273,7 +273,7 @@ Let's Refactor!
 Extract the dependencies
 ------------------------
 
-The first problem that we can see is that the `ClientCredentialsAccessTokenProvider` doesn't clearly expres the dependencies to the other services. The reason is that various calls to `Framework.getService(EventService.class)` make the dependencies difficult to identify and also more difficult to test. We will move the `EventService` as a field of our object and intialize it with the help of the `Builder` pattern: it will allow to initalize our service more easily in a test. The initialization to the default value can be conditioned to a call at `Framework.isInitialized()`:
+The first problem that we can see is that the `ClientCredentialsAccessTokenProvider` doesn't clearly express the dependencies to the other services. The reason is that various calls to `Framework.getService(EventService.class)` make the dependencies difficult to identify and also more difficult to test. We will move the `EventService` as a field of our object and intialize it with the help of the `Builder` pattern: it will allow to initalize our service more easily in a test. The initialization to the default value can be conditioned to a call at `Framework.isInitialized()`:
 
 ```java
 public static class Builder {
@@ -303,7 +303,7 @@ public static class Builder {
 }
 ```
 
-The `ClientCredentialsAccessTokenProvider` is then not responsible for its initilization which allows to build out a complete object in a unit test and mocking the dependencies that we are not interested in. Our object becomes simpler and doesn't call `Framework.getService()` directly anymore:
+The `ClientCredentialsAccessTokenProvider` is then not responsible for its initialization which allows us to build out a complete object in a unit test mocking the dependencies that we are not interested in. Our object becomes simpler and doesn't call `Framework.getService()` directly anymore:
 
 ```java
 public class ClientCredentialsAccessTokenProvider implements AccessTokenProvider {
@@ -325,7 +325,7 @@ public class ClientCredentialsAccessTokenProvider implements AccessTokenProvider
 	...
 ```
 
-The difference may be very subtle, but it makes a whole difference. Now we are able to inject a mock in place of the `eventService` and verify the interaction of our service with its dependency. When the dependency is hard and/or long to setup in an integration test, you usually do not test it thoroughly enough. Here is how we can do:
+The difference may be very subtle, but it makes a whole difference. Now we are able to inject a mock in place of the `eventService` and verify the interaction of our service with its dependency. When the dependency is hard and/or long to setup in an integration test, you usually do not test it thoroughly enough. Here is how we can do it:
 
 ```java
 @RunWith(MockitoJUnitRunner.class)
@@ -360,7 +360,7 @@ If everything had been packed in one single class (the component/service all in 
 Simplify Our Component
 ----------------------
 
-Looking back at our component object, there is a pattern that we often see in Nuxeo: a lazy instanciation of an object:
+Looking back at our component object, there is a pattern that we often see in Nuxeo: a lazy instantiation of an object:
 
 ```java
 if(instance == null) {
@@ -368,7 +368,7 @@ if(instance == null) {
 }
 return instance;
 ```
-That pattern is used here only once, but as soon as our component will have several services to provide, we may have more that one and we will have to repeat that pattern. Instead of repeating the pattern by copy pasting, we can extract it with the [flightweight pattern](https://en.wikipedia.org/wiki/Flyweight_pattern). To explain it, let's look at the test we can write for it:
+That pattern is used here only once, but as soon as our component will has several services to provide, we may have more than one and we will have to repeat that pattern. Instead of repeating the pattern by copy pasting, we can extract it with the [flightweight pattern](https://en.wikipedia.org/wiki/Flyweight_pattern). To explain it, let's look at the test we can write for it:
 
 ```java
 LazyProvider<Dummy> lp = new LazyProvider<>(callable);          (1)
@@ -386,7 +386,7 @@ verify(callable, times(1)).call();                             (2)
 It's basically a wrapper around a callable that keeps the instance in its internal state:
 
   1. The `LazyProvider` is supposed to provide a `Dummy` interface using a `callable` to build it.
-  2. We can verify that calling twice our `LazyProvider` only instanciate once our `Dummy` Object.
+  2. We can verify that calling our `LazyProvider` twice only instanciate one of our `Dummy` Object.
 
 Let's apply this to our component and look at the difference:
 
@@ -410,7 +410,7 @@ public class OAuth2Component extends DefaultComponent {
 }
 ```
 
-Our component is now only 17 lines long! It still supports the registration of extension points and accepts contribution to build our `AccessTokenProvider` service. I like defining the responsibilities of a given object: here the responsiblity of our component is only to know how to instanciate the implementation of the service it provides. Everything else was extracted :
+Our component is now only 17 lines long! It still supports the registration of extension points and accepts contribution to build our `AccessTokenProvider` service. I like defining the responsibilities of a given object: here the responsibility of our component is only to know how to instantiate the implementation of the service it provides. Everything else was extracted:
 
   * to the Nuxeo Runtime by using the default registry mechanism (new feature of Nuxeo LTS 2019)
   * to some utility classes
@@ -419,9 +419,9 @@ Our component is now only 17 lines long! It still supports the registration of e
 Conclusion
 ==========
 
-Thru this how-to we've seen how to create a Nuxeo component and also that new Nuxeo LTS 2019 allows to create more concise Nuxe Runtime Components. Having to write less code allows you to write less bugs too!
+Through this how-to, we've seen how to create a Nuxeo component and also that the new Nuxeo LTS 2019 allows to create more concise Nuxeo Runtime Components. Having to write less code allows you to write less bugs too!
 
-The pattern of extracting the implementation of the interface from the component allows to test it in a more efficient manner. In our example, we relied only on one service, but if our component talks to dozen of different Nuxeo services, setting them up takes time and effort. By mocking those service, we can test the interactions more easily without having to test the implementation.
+The pattern of extracting the implementation of the interface from the component allows us to test it in a more efficient manner. In our example, we relied only on one service, but if our component talks to dozens of different Nuxeo services, setting them up takes time and effort. By mocking those service, we can test the interactions more easily without having to test the implementation.
 
 The code of the example is available on Github. It features a real implementation of the OAuth2 client credentials flow that allows to see how to thoroughly test its implementation with an external web service.
 
