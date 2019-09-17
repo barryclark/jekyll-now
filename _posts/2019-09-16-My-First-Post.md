@@ -17,10 +17,22 @@ title: My First Post
     > git push origin <=> git pull-rebase 
     
 ### Java Lesson 1
-* The IDE (integrated development environment): ***IntelliJ IDEA ***
-* is
-* cool
+* The IDE (integrated development environment): ***IntelliJ IDEA***
+
+* short cuts in *IntelliJ* 
+    1. `psvm` stands for public static void main
+    1. hold `ctrl tab` for longer, it will display all available tabs
+    1. press `ctrl tab`, it will show currently open tabs
+    1. Each file is suggested to have a ***group id*** and an ***artificial id***
+        > ex. 20190916(group id).foo(artificial id)
+        
+* to make life easier: click ***File*** => find ***Setting*** => turn on ***Auto importing***
+
+* create a variable waiting for the users' input:
+![Java 101](images/20190916-tag.PNG)
+
 ### Java Drill
+
 ### Trust 101
 
 
