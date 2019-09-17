@@ -188,11 +188,12 @@ a.web-img :hover {background:var(--color-hardgrey);color:var(--color-softgrey);}
 
 /* Go UP button */
 
-em small #go-up {background: transparent ;border:thin solid rgba(100,100,100,.2)!important;padding: 12px;border-radius: 50%;margin-bottom:-21px;}
+em small #go-up {background: transparent ;border:thin solid rgba(100,100,100,.2)!important;padding: 12px;border-radius: 50%;margin-bottom:-15px;}
 em small #go-up:hover {background: rgba(0, 0, 0, .3);}
 
 /* Directories - Qweb */
-#directories {text-align:center!important;background-color: var(--color-grey) }
+#directories {text-align:center!important;background-color: var(--color-softgrey);height:86px; }
+#directories div {margin-left:40.6%;}
 
 /* Footer fixed */
 main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--color-white);box-shadow: 0 75px 60px rgba(0, 0, 0, .32);}
@@ -205,6 +206,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 #autoria b {font-weight: normal;padding-right:15px;}
 #autoria a {color:var(--color-hard-grey);}
 #page-footer #autoria a {font-weight: bold;letter-spacing: -0.02em}
+#icons a {margin-bottom:-12px!important;}
 
 .text-slider {
 		display: block;
@@ -353,13 +355,15 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #deep em a {font-size: 1.8em !important;line-height: 1.2em;}
     img.front-responsive {width: 320px;margin-top: 60px;}
     #glassed {padding:26px;}
+    #directories div {margin-left:39.4%;}
 }
 @media (max-width: 1024px) {
         #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 105% auto;background-position: fixed !important;}
     #web-music {background-image: url("/img/m-music.jpg")!important;}
 		#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
     .medias#page-header {background-image: url("/img/m-portfoli.jpg");}
-		div.masked {background-image: url("/img/m-golden.jpg");
+    div.masked {background-image: url("/img/m-golden.jpg");}
+    #directories div {margin-left:38.6%;}
 }
 @media (max-width: 800px) {
     #glass-front {background-size: 120% auto;background-position: fixed !important;}
@@ -407,6 +411,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #glassed {padding:32px;}
     #page {margin-bottom:-90px;}
     #autoria b {padding:0px 60px 0px 60px;}
+    #directories div {margin-left:37.5%;}
 }
 @media (max-width: 540px) {
 	#fases {display:none!important;visibility: hidden!important}
@@ -425,6 +430,12 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #covers article .cover-icon {padding:9px;margin:0px;}
     #covers article h4{padding:0px;margin:0px;font-size:1.1em;line-height: 0.69em}
     #covers article h5 small {display:none;}
-    #icons a {width: 18%;padding: 8px;}
+    #icons a {width: 18%;padding: 15px;}
+    #page-footer {max-height: 362px !important;}
     #page-header.cover {background-image:url(/img/texture/asfalt.png)!important;background-size:466px 349px!important;background-repeat:repeat!important;}
+    #directories div {margin-left:30%;}
+    #g-text {font-size: .69em!important;line-height:1.3em;}
+    #autoria {font-size: .5em!important;line-height:1.2em;}
+    #autoria a {font-size: 1.2em!important;padding:4px!important;}
+    #autoria b {padding:0px;}
 }
