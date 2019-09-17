@@ -5,7 +5,6 @@ description: "Cheryl Hung, Director of Ecosystem at CNCF, participating in a hac
 location: Geneva, Switzerland
 feature_image: /images/2019-06-04-callforcode4.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/qbafNpIuVfjWaI
-video: https://www.youtube.com/watch?v=XLScicofGeo
 tags:
   - Photos
   - Slides
@@ -13,6 +12,8 @@ tags:
   - "2019"
 redirect_from: /callforcode/
 ---
+
+
 
 I was invited to Geneva, Switzerland to take part in a hackathon with the United Nations Human Rights Office. We produced a Call for Code Solution Starter on [Humanitarian Protection in Times of Disaster](https://developer.ibm.com/callforcode/starters/human/)
 
