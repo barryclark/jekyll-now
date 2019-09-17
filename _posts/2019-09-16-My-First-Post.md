@@ -50,12 +50,8 @@ title: My First Post
 * explanation of the nextline: [w3school:nextline()](https://www.w3schools.com/java/java_user_input.asp)
 
 ### Java Drill
-1. ```protected String[] Split_A_String_Into_An_Array(String input, char divider) {return input.split(String.valueOf(divider))} ```
-1. ```protected String Join_An_Array_Into_A_String(String[] input, String divider){return divider.join(input)}```
-1.(?) ```protected String Join_An_Array_Into_A_String(String[] input, String divider) {
-       return divider.join(String.valueOf(input)) }```
-1. (?) ```protected boolean returnTrueIfAStartsWithB(String a, String b) {
-        return a.startsWith(b);}```
+* ```protected String[] Split_A_String_Into_An_Array(String input, char divider) {return input.split(String.valueOf(divider))} ```
+
 ### Trust 101
 * At this point, I think I am trusted because I will communicate and clarify the expectations.
 
