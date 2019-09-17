@@ -27,7 +27,7 @@ October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 * **CNCF Keynote**
 
 October 31 - November 1: MIT Technology Review Leadership Summit, Singapore
-* **Keynote: The Power of Transforming Systems**
+* [**Keynote: The Power of Transforming Systems**](http://forms.technologyreview.com/leadership-summit/)
 
 November 6: [Cloud Native London](https://www.meetup.com/Cloud-Native-London/events/263169231/)
 
