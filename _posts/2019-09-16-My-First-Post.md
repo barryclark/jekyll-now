@@ -21,15 +21,19 @@ title: My First Post
 
 * short cuts in *IntelliJ* 
     1. `psvm` stands for public static void main
+    
     1. hold `ctrl tab` for longer, it will display all available tabs
+    
     1. press `ctrl tab`, it will show currently open tabs
+    
     1. Each file is suggested to have a ***group id*** and an ***artificial id***
         > ex. 20190916(group id).foo(artificial id)
+    1. `alt + tab` solves most of problems in IntelliJ 
         
 * to make life easier: click ***File*** => find ***Setting*** => turn on ***Auto importing***
 
 * create a variable waiting for the users' input:
-![Java 101!](EmilyStacy-droid.github.io/images/20190916-tag.PNG)
+![Java 101](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/20190916-tag.PNG)
 
 ### Java Drill
 
