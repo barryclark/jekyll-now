@@ -32,12 +32,12 @@ title: My First Post
         
 * to make life easier: click ***File*** => find ***Setting*** => turn on ***Auto importing***
 
-*basic Java codes I learned today:
+* basic Java codes I learned today:
 1. Each programming starts with a ***class*** Everything in a specific class only happens in that class
     > public class main {}
 
-1. We learned about how to create strings today: ```public class main {public static void main(String [] args) {}
-}```
+1. We learned about how to create strings today: 
+ >```public class main {public static void main(String [] args) {}}```
 
 * create a variable waiting for the users' input:
 ![Java 101](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/20190916-tag.PNG)
