@@ -5,10 +5,14 @@ title: My First Post
 ## Learning Journal for September 16th
 ### Git & command Line
 1. windows: Type ***powershell*** in searching bar to open the terminal
+
 1. use ***alt+tab*** to switch the windows
-1. Git commands in terminal: use `cb`to check out a branch that doesn't exist ***cb (branchName)***
+
+1. Git commands in terminal: use `cb` to check out a branch that doesn't exist `cb <branchName>`
+
 1. Git loops: primary loop
     > git add. <=> git commit -m "<comment>" <=> write codes
+
 1. Git loops: sharing loop
     > git push origin <=> git pull-rebase 
     
