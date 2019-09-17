@@ -57,7 +57,7 @@ title: My First Post
 1. (?) ```protected boolean returnTrueIfAStartsWithB(String a, String b) {
         return a.startsWith(b);}```
 ### Trust 101
-
+* At this point, I think I am trusted because I will communicate and clarify the expectations.
 
 
 
