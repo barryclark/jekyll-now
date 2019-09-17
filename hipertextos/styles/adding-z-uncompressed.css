@@ -408,10 +408,11 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #deep img.dialog-svg {min-width: 20px;height: 70px;margin-left: 3px;float: left;}
     #deep em a {font-size: 1.2em !important;line-height: 2.2em;}
     img.front-responsive {width: 300px;}
-    #glassed {padding:32px;}
     #page {margin-bottom:-90px;}
     #autoria b {padding:0px 60px 0px 60px;}
     #directories div {margin-left:37.5%;}
+	#glassed p {font-size:.75em;line-height:1.5em; -webkit-column-count: 1;-moz-column-count: 1;column-count: 1;  }
+    #glassed {padding:12px;}
 }
 @media (max-width: 540px) {
 	#fases {display:none!important;visibility: hidden!important}
