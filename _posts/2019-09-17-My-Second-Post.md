@@ -5,8 +5,8 @@ title: My Second Post
 ## Learning Journal for September 17th
 
 ### Java Drill
-Today we did the same drill questions again. Here are two questions that I am not very familiar with:
-1. Join an array into a string
+Today we did the same drill questions again. Here are two questions that I was not very familiar with:
+1. Join an array into a string=> this [link](https://www.javatpoint.com/java-string-join) helped. I didn't get the 2nd method in this example(delimiter + elements)
 2. Split a string into an array
 
 ### Git & command Line
