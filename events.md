@@ -15,7 +15,7 @@ October 2 - 3:  OpenInfraDays Nordics, Stockholm
 * [**Keynote**](https://openinfranordics.com/program/)
 
 October 8:  Cloud Native Revolution, Philadelphia
-* [**Keynote: Cloud native past, present and future**](https://www.comcastlabsconnect.com/cloud-native-revolution-2019)
+* [**Keynote: Cloud native past, present and future**](https://www.comcastlabsconnect.com/2019-cloud-native-revolution-schedule/2019/10/8/cloud-native-past-present-and-future-by-cheryl-hung-of-cloud-native-computing-foundation)
 
 October 19 - 20:  OggCamp, Manchester
 * [**Stopping Brexit with data science**](https://oggcamp.org/speakers/)
