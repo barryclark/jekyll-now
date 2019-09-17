@@ -45,7 +45,7 @@ title: My First Post
         }
  ```
 
-1. create a variable waiting for the users' input:
+3. create a variable waiting for the users' input:
 ![Java 101](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/20190916-tag.PNG)
 * `sout + tab` will expand as ***System.out.println()***
 * explanation of the nextline: [w3school:nextline()](https://www.w3schools.com/java/java_user_input.asp)
