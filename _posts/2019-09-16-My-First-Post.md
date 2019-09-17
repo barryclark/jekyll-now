@@ -8,16 +8,18 @@ title: My First Post
 1. use ***alt+tab*** to switch the windows
 1. Git commands in terminal: use `cb`to check out a branch that doesn't exist ***cb (branchName)***
 1. Git loops: primary loop
-    > git add. => git commit -m "<comment>" => write codes
+    > git add. <=> git commit -m "<comment>" <=> write codes
 1. Git loops: sharing loop
-    > git push origin => git pull-rebase 
+    > git push origin <=> git pull-rebase 
+    
 ### Java Lesson 1
+* The IDE (integrated development environment): ***IntelliJ IDEA ***
+* is
+* cool
 ### Java Drill
 ### Trust 101
 
-* This
-* is
-* cool
+
 
 1. I wish
 1. I could
