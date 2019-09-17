@@ -12,16 +12,16 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/style.min.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
-	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/aos.css" />
-    {% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />{% endif %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/hipertextos/styles/style.min.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+	{% if page.comments %}<link rel="stylesheet" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/hipertextos/styles/aos.css" />
+    {% if page.comments %}<link rel="stylesheet" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />{% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
   	{% if page.parallax %}<script src="{{ site.baseurl }}/hipertextos/js/jquery-latest.js"></script>
-  	<script type="text/javascript">
+  	<script>
   		$(document).ready(function(){
 
 			$(window).scroll(function(){
@@ -91,7 +91,7 @@
 		});
 	</script>
   	{% if page.comments %}<script src="{{ site.baseurl }}/hipertextos/js/lightbox.min.js"></script>
-	<script type="text/javascript">
+	<script>
   		$(document).ready(function() {
     		$("[href]").each(function() {
     		    if (this.href == window.location.href) {
@@ -100,7 +100,7 @@
     		});
 		});
   	</script>{% endif %}
-	<script type="text/javascript">
+	<script>
 	$(window).load(function() {
 		$('#preloader').fadeOut('slow');
 		$('body').css({'overflow':'visible'});
