@@ -37,7 +37,12 @@ title: My First Post
     > public class main {}
 
 1. We learned about how to create strings today: 
- >```public class main {public static void main(String [] args) {}}```
+ >```public class main {
+        public static void main(String [] args) 
+            {
+            
+            }
+        }```
 
 * create a variable waiting for the users' input:
 ![Java 101](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/20190916-tag.PNG)
@@ -45,8 +50,12 @@ title: My First Post
 * explanation of the nextline: [w3school:nextline()](https://www.w3schools.com/java/java_user_input.asp)
 
 ### Java Drill
-1. 
-
+1. ```protected String[] Split_A_String_Into_An_Array(String input, char divider) {return input.split(String.valueOf(divider))} ```
+1. ```protected String Join_An_Array_Into_A_String(String[] input, String divider){return divider.join(input)}```
+1.(?) ```protected String Join_An_Array_Into_A_String(String[] input, String divider) {
+       return divider.join(String.valueOf(input)) }```
+1. (?) ```protected boolean returnTrueIfAStartsWithB(String a, String b) {
+        return a.startsWith(b);}```
 ### Trust 101
 
 
