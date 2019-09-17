@@ -32,7 +32,7 @@ title: My First Post
         
 * to make life easier: click ***File*** => find ***Setting*** => turn on ***Auto importing***
 
-*basic Java code I learned today:
+*basic Java codes I learned today:
 1. Each programming starts with a ***class*** Everything in a specific class only happens in that class
     > public class main {}
 
@@ -41,16 +41,16 @@ title: My First Post
 
 * create a variable waiting for the users' input:
 ![Java 101](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/20190916-tag.PNG)
+* `sout + tab` will expand as ***System.out.println()***
+* explanation of the nextline: [w3school:nextline()](https://www.w3schools.com/java/java_user_input.asp)
 
 ### Java Drill
+1. 
 
 ### Trust 101
 
 
 
-1. I wish
-1. I could
-1. Use `System.out.println("Hello world")`
 
 
-## but I can't.
+
