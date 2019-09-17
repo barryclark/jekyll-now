@@ -29,7 +29,7 @@ title: My First Post
 * to make life easier: click ***File*** => find ***Setting*** => turn on ***Auto importing***
 
 * create a variable waiting for the users' input:
-![Java 101](EmilyStacy-droid.github.io/images/20190916-tag.PNG)
+![Java 101!](EmilyStacy-droid.github.io/images/20190916-tag.PNG)
 
 ### Java Drill
 
