@@ -32,6 +32,36 @@ a=10 | b=20 | a > b
 True | False | ?
 False | False  | ?
 
+* less than <
+
+a=10 | b=20 | a < b
+--- | --- | ---
+*True* | True | True
+*False* | True | ?
+True | False | ?
+False | False  | ?
+
+* greater than or equal to>=
+
+a=10 | b=20 | a >= b
+--- | --- | ---
+*True* | True | False
+*False* | True | ?
+True | False | ?
+False | False  | ?
+
+* less than or equal to <=
+
+a=10 | b=20 | a <= b
+--- | --- | ---
+*True* | True | True
+*False* | True | ?
+True | False | ?
+False | False  | ?
+
+Reference:
+[Tutorial Points](https://www.tutorialspoint.com/Java-Boolean-operators)
+
 ### Binary Operator
 * Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
 
@@ -48,21 +78,21 @@ a=3 |  | >>digit
 * unsigned right shift operator: shift the bit to the right and put 0 to the void left. The leftmost is set as 0
 
 a=3 |  | >>>digit
---- | --- | a>>>1
-*0011* |  | *0001(1)*
+--- | --- | ---
+*0011* | a>>>1  | *0001(1)*
 
 
 * left shift operator: shift the bit to the left and fills 0 on the voids left
 *
 a=5 |  | <<digit
---- | --- | a<<2
-*0000 0101* |  | *0001 0100(20)* (why is it 20?)
+--- | --- | ---
+*0000 0101* |  a<<2  | *0001 0100(20)* (why is it 20?)
 
 * unsigned left shift operator: the logic is the same as left shift operator
 
 a=5 |  | <<digit
---- | --- | a<<1
-*0000 0101* |  | *0001 1010(10)* 
+--- | --- | ---
+*0000 0101* | a<<1 | *0001 1010(10)* 
 
 
 
