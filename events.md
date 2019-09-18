@@ -23,6 +23,9 @@ October 19 - 20:  OggCamp, Manchester
 October 22 - 23:  Automotive Grade Linux All Member Meeting, Monte Carlo
 * **CNCF Keynote**
 
+October 25: Accenture Technology Architecture Workshop, St Charles, IL
+* **Keynote: Cloud native past, present and future**
+
 October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 * **CNCF Keynote**
 
