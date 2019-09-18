@@ -64,12 +64,42 @@ Reference:
 
 * Logical implication: FALSE if the first is true and the 2nd is false, vice versa (if a then b)
 
-a=10 | b=20 | a => b
+a | b | a => b
 --- | --- | ---
 *True* | True | True
 *False* | True | True
 True | False | False
 False | False  | True
+
+* Logical equality: TRUE if a EQ b
+a | b | a <-> b
+--- | --- | ---
+*True* | True | True
+*False* | True | False
+True | False | False
+False | False  | True
+
+* exclusive disjunction: TRUE if a!EQb
+
+a | b | a XOR b
+--- | --- | ---
+*True* | True | False
+*False* | True | True
+True | False | True
+False | False  | False
+
+
+* Logical NAND: FALSE if both are true
+
+a | b | a XOR b
+--- | --- | ---
+*True* | True | False
+*False* | True | True
+True | False | True
+False | False  | True
+
+Reference:
+[wiki truth table](https://en.wikipedia.org/wiki/Truth_table)found by Zach M.
 
 ### Bitwise and Bitshift Operator
 * Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
