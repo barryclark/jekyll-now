@@ -12,12 +12,9 @@ a | b | a ==b
 *True* | True | True
 *False* | True | False
 True | False | False
+False | False  | True
 
-a | b | a ==b
-true | true | true
-false | true  |false
-true | false | false
-false | false  | true
+
 
 ### Binary Operator
 * Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
