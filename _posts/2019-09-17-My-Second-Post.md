@@ -1,8 +1,7 @@
 ---
 layout: post
-title: My Second Post
+title: Learning Journal for September 17th
 ---
-## Learning Journal for September 17th
 
 ### Boolean Operator
 * equal to ==
