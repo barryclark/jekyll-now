@@ -9,7 +9,8 @@ title: My Second Post
 
 a | b | a ==b
 --- | --- | ---
-*T* | T | T
+*True* | True | True
+*False* | True | False
 
 a | b | a ==b
 true | true | true
