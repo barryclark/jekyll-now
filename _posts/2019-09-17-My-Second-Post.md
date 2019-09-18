@@ -72,6 +72,7 @@ True | False | False
 False | False  | True
 
 * Logical equality: TRUE if a EQ b
+
 a | b | a EQ b
 --- | --- | ---
 *True* | True | True
