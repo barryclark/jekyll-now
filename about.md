@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Colin is a Software Engineer with varied experience over many
+problem domains.
+
+He writes whatever comes into his head, sometimes in the third person.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This blog is hosted by github pages.  In the unlikely event that it
+becomes fabulously popular, then more effort might be put in to host
+it somewhere "properly".
 
-### Contact me
+Check out https://github.com/barryclark/jekyll-now if you want to host
+a blog in a similar fashion.
 
-[email@domain.com](mailto:email@domain.com)
