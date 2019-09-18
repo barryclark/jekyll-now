@@ -1,8 +1,7 @@
 ---
 layout: post
-title: My First Post
+title: Learning Journal for September 16th
 ---
-## Learning Journal for September 16th
 ### Git & command Line
 1. windows: Type ***powershell*** in searching bar to open the terminal
 
