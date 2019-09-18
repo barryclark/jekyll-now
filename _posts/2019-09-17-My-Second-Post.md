@@ -7,6 +7,10 @@ title: My Second Post
 ### Boolean Operator
 * equal to ==
 
+a=3 |  | ~a
+--- | --- | ---
+*0011* |  | *1100(12)*
+
 a | b | a ==b
 true | true | true
 false | true  |false
