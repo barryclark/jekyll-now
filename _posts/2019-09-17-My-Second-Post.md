@@ -8,7 +8,7 @@ title: My Second Post
 * equal to ==
 
 a | b | a ==b
-T | T | T
+--- | --- | ---
 *0011* |  | *1100(12)*
 
 a | b | a ==b
