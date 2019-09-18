@@ -4,12 +4,51 @@ title: My Second Post
 ---
 ## Learning Journal for September 17th
 
+### Boolean Operator
+*equal to ==
+a | b | a == b
+true |true  | true
+false | true  |false
+true | false | false
+false | false  | true
+
+
 ### Binary Operator
-*Bitwise Compliment: makes 0/1 to 1/0
+* Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
 
 a=3 |  | ~a
 --- | --- | ---
 *0011* |  | *1100(12)*
+
+* signed right shift operator: shift the bit to the right and put 0 to the void left
+
+a=3 |  | >>digit
+--- | --- | a>>1
+*0011* |  | *0001(1)*
+
+* unsigned right shift operator: shift the bit to the right and put 0 to the void left. The leftmost is set as 0
+
+a=3 |  | >>>digit
+--- | --- | a>>>1
+*0011* |  | *0001(1)*
+
+
+* left shift operator: shift the bit to the left and fills 0 on the voids left
+*
+a=5 |  | <<digit
+--- | --- | a<<2
+*0000 0101* |  | *0001 0100(20)* (why is it 20?)
+
+* unsigned left shift operator: the logic is the same as left shift operator
+
+a=5 |  | <<digit
+--- | --- | a<<1
+*0000 0101* |  | *0001 1010(10)* 
+
+
+
+Reference:
+[geeksForgeeks](https://www.geeksforgeeks.org/bitwise-operators-in-java/)
 
 ### Java Drill
 Today we did the same drill questions again. Here are two questions that I was not very familiar with:
