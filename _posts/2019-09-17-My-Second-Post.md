@@ -9,8 +9,8 @@ title: My Second Post
 
 
 ---
-| a=3 | ~a |
-| 0011| 1100(12) |
+a=3 : ~a 
+0011: 1100(12) 
 ---
 
 ### Java Drill
