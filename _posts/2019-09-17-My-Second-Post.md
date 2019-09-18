@@ -91,7 +91,7 @@ False | False  | False
 
 * Logical NAND: FALSE if both are true
 
-a | b | a XOR b
+a | b | a NAND  b
 --- | --- | ---
 *True* | True | False
 *False* | True | True
@@ -99,7 +99,7 @@ True | False | True
 False | False  | True
 
 Reference:
-[wiki truth table](https://en.wikipedia.org/wiki/Truth_table)found by Zach M.
+[wiki truth table](https://en.wikipedia.org/wiki/Truth_table) -found by Zach M.
 
 ### Bitwise and Bitshift Operator
 * Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
