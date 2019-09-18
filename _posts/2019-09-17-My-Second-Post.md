@@ -14,6 +14,15 @@ a | b | a ==b
 True | False | False
 False | False  | True
 
+* not equal to !=
+
+a | b | a ==b
+--- | --- | ---
+*True* | True | False
+*False* | True | True
+True | False | True
+False | False  | False
+
 
 
 ### Binary Operator
