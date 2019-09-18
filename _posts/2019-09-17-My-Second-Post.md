@@ -62,7 +62,9 @@ False | False  | ?
 Reference:
 [Tutorial Points](https://www.tutorialspoint.com/Java-Boolean-operators)
 
-### Binary Operator
+
+
+### Bitwise and Bitshift Operator
 * Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
 
 a=3 |  | ~a
