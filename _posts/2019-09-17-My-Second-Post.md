@@ -5,7 +5,7 @@ title: My Second Post
 ## Learning Journal for September 17th
 
 ### Boolean Operator
-*equal to ==
+* equal to ==
 
 a | b | a ==b
 true | true | true
