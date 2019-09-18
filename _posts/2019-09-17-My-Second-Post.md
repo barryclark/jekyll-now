@@ -11,6 +11,7 @@ a | b | a ==b
 --- | --- | ---
 *True* | True | True
 *False* | True | False
+True | False | False
 
 a | b | a ==b
 true | true | true
