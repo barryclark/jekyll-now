@@ -8,3 +8,6 @@ title: Learning Journal for September 18th
 
 ### Java
 1. This article talks about the basic concepts and terms in Java (https://www.geeksforgeeks.org/classes-objects-java/)
+1. Today we learned about four important concepts in Java: *casting*, *properties(methods)*, *class*, and *visibility*
+1. encapsulate: wrapping up data under a single unit
+1. polymorphism: literally it means "many shapes", which refers to the capability of Java to transform data into different classes of java.lang.Object
