@@ -6,12 +6,12 @@ title: My Second Post
 
 ### Boolean Operator
 *equal to ==
-a | b | a == b
-true |true  | true
+
+a | b | a ==b
+true | true | true
 false | true  |false
 true | false | false
 false | false  | true
-
 
 ### Binary Operator
 * Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
