@@ -5,7 +5,9 @@ title: My Second Post
 ## Learning Journal for September 17th
 
 ### Binary Operator
-* Bitwise Compliment: makes 0/1 to 1/0
+*Bitwise Compliment: makes 0/1 to 1/0
+
+
 | --- | ----------- |
 | a=3 | ~a |
 | 0011| 1100(12) |
