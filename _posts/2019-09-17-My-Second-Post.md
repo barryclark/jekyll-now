@@ -62,7 +62,14 @@ False | False  | ?
 Reference:
 [Tutorial Points](https://www.tutorialspoint.com/Java-Boolean-operators)
 
+* Logical implication: FALSE if the first is true and the 2nd is false, vice versa (if a then b)
 
+a=10 | b=20 | a => b
+--- | --- | ---
+*True* | True | True
+*False* | True | True
+True | False | False
+False | False  | True
 
 ### Bitwise and Bitshift Operator
 * Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
