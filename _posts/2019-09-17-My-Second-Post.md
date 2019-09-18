@@ -7,8 +7,8 @@ title: My Second Post
 ### Binary Operator
 *Bitwise Compliment: makes 0/1 to 1/0
 
-|a=3 | ~a 
-|0011| 1100(12) 
+| a=3   | ~a 
+| 0011  | 1100(12) 
 
 ### Java Drill
 Today we did the same drill questions again. Here are two questions that I was not very familiar with:
