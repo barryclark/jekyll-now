@@ -16,14 +16,21 @@ False | False  | True
 
 * not equal to !=
 
-a | b | a ==b
+a | b | a !=b
 --- | --- | ---
 *True* | True | False
 *False* | True | True
 True | False | True
 False | False  | False
 
+* greater than >
 
+a=10 | b=20 | a > b
+--- | --- | ---
+*True* | True | False
+*False* | True | ?
+True | False | ?
+False | False  | ?
 
 ### Binary Operator
 * Bitwise Compliment: makes 0 to 1 and 1 to 0, vice versa
@@ -35,8 +42,8 @@ a=3 |  | ~a
 * signed right shift operator: shift the bit to the right and put 0 to the void left
 
 a=3 |  | >>digit
---- | --- | a>>1
-*0011* |  | *0001(1)*
+--- | --- | ---
+*0011* | a>>1  | *0001(1)*
 
 * unsigned right shift operator: shift the bit to the right and put 0 to the void left. The leftmost is set as 0
 
