@@ -9,7 +9,7 @@ title: My Second Post
 
 a | b | a ==b
 --- | --- | ---
-*0011* |  | *1100(12)*
+*T* | T | T
 
 a | b | a ==b
 true | true | true
