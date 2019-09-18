@@ -7,7 +7,7 @@ title: My Second Post
 ### Boolean Operator
 * equal to ==
 
-a=3 |  | ~a
+a | b | a ==b
 --- | --- | ---
 *0011* |  | *1100(12)*
 
