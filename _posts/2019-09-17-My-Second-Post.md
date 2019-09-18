@@ -8,8 +8,8 @@ title: My Second Post
 *Bitwise Compliment: makes 0/1 to 1/0
 
 ---
-| a=3   | ~a 
-| 0011  | 1100(12) 
+| a=3 | ~a |
+| 0011| 1100(12) |
 ---
 
 ### Java Drill
