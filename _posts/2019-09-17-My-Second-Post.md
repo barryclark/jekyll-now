@@ -99,6 +99,42 @@ a | b | a NAND  b
 True | False | True
 False | False  | True
 
+* Logical NOR: FALSE if both are not false
+
+a | b | a NOR  b
+--- | --- | ---
+*True* | True | False
+*False* | True | False
+True | False | False
+False | False  | True
+
+* Logical Conjunction: AND 
+
+a | b | a AND  b
+--- | --- | ---
+*True* | True | True
+*False* | True | False
+True | False | False
+False | False  | False
+
+* Logical disjunction: OR 
+
+a | b | a OR  b
+--- | --- | ---
+*True* | True | True
+*False* | True | True
+True | False | True
+False | False  | False
+
+* Logical Contradiction: all FALSE 
+
+a | b | a F  b
+--- | --- | ---
+*True* | True | False
+*False* | True | False
+True | False | False
+False | False  | False
+
 Reference:
 [wiki truth table](https://en.wikipedia.org/wiki/Truth_table) -found by Zach M.
 
