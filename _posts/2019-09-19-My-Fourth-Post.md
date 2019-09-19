@@ -8,7 +8,7 @@ title: Learning Journal for September 19th
                               | Quadralateral
                               | Rectangle
                               | Square
-In Java, a class is a "prototype" or "blueprint" for the objects under it. 
+In Java, a class is a "prototype" or "blueprint" for the objects under it. A parent class should have some properties and methods ***that are common to all objects***, while objects have some behaviors. In this case, the definition of Quadralateral is ***a four-side figure***, and this definition seems to apply to rectangle and square. If we move down to rectangle, the definition of rectangle is "a plane figure with four straight sides and four right angles, especially one with unequal adjacent sides, in contrast to a square." The property ***with unequal adjacent sides*** does not apply to square. If we think rectangle and square in a venn diagram, rectangle includes square. However, if we think rectangle and square as class and object in Java, one property of rectangle does not apply to square.  
 
 Reference:[class and object](https://www.geeksforgeeks.org/classes-objects-java/#targetText=Classes%20and%20Objects%20in%20Java,around%20the%20real%20life%20entities.&targetText=A%20class%20is%20a%20user,all%20objects%20of%20one%20type.)
 
