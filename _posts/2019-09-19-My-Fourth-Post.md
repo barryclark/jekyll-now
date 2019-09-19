@@ -3,6 +3,7 @@ layout: post
 title: Learning Journal for September 19th
 ---
 ### Homework: Find out why  the following  is a bad example
+Reference:[Liskov square] (https://www.infoworld.com/article/2971271/exploring-the-liskov-substitution-principle.html#targetText=A%20classic%20example%20of%20violation,width%20and%20height%20are%20equal.&targetText=The%20Rectangle%20class%20contains%20two%20data%20members%20%2D%2D%20width%20and%20height.)
 
                           --- | --- 
                               | Quadralateral
