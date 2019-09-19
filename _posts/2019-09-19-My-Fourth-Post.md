@@ -16,3 +16,4 @@ Reference:[class and object](https://www.geeksforgeeks.org/classes-objects-java/
 Today we learned how to check the content with commit and branches. Check 20190919.txt in source to review.
 
 ### Java
+We practiced using instances and methods for our ***tag*** project. 
