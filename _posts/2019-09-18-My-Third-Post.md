@@ -3,6 +3,12 @@ layout: post
 title: Learning Journal for September 18th
 ---
 
+### Homework: Find out two to three items from the kitchen and try to make classes for them
+
+I saw my cat licking water the faucet in the kitchen, so the faucet is a water supply tool, so is the refrige water dispenser. The water from these two tools all from water pipe, so I supposed both faucet and water dispenser can be categorized as part of ***water supply devices***. The water supply devices along with gas supply devices can be categorized under the ***residential energy supply system***.
+
+I used a spoon to scoop a sauce. Spoons, forks, chopsticks, etc. are all ***eating utensils***, and these eating utensils along with other items such as spatulas and knives can all be called ***kitchen utensils***. The kitchen utensils(some tools people can use by hand in a house) and other tools like kitchen appliances (which need electricity) can be classified as ***kitchen essentials*** or kitchen toolkits.
+
 ### Git
 *The Git Parable* is a good article to understand how Git works (https://tom.preston-werner.com/2009/05/19/the-git-parable.html). The video (https://www.youtube.com/watch?v=1ffBJ4sVUb4) is long but will help me to understand Git faster.
 
