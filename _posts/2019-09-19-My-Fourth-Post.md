@@ -8,3 +8,7 @@ title: Learning Journal for September 19th
                               | Quadralateral
                               | Rectangle
                               | Square
+### Git
+Today we learned how to check the content with commit and branches. Check 20190919.txt in source to review.
+
+### Java
