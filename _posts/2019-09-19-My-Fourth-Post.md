@@ -25,23 +25,27 @@ In object-oriented language, however, the base class objects have their own prop
 
 2. class Rectangle {  
 
-  int height;***independent from width***  
+      int height;***independent from width***  
 
 
-  int width; ***independent from height***    
+      int width; ***independent from height***    
 
 
-  return height * width;    
+      return height * width;    
 
 
 }  
 
 
-3. class Square {
-int height;
-ini width; ***width and height cannot be adjusted***
-return height * width;
-}
+3. class Square {  
+
+      int height;  
+      
+      ini width; ***width and height cannot be adjusted***  
+      
+      return height * width;  
+      
+}  
 
 Since in square height also decides width, it violates the independent relationship between height and width in class Rectangle. That is why the relationship between rectangle and square does not work in the object-oriented language world. In this class, both Rectangle and Square classes can use class Quadralateral as a base class, but class Rectangle cannot be the base class for class Square.
 
