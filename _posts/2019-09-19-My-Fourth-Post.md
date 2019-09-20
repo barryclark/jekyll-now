@@ -14,11 +14,11 @@ In object-oriented language, however, the base class objects have their own prop
 
 1. class Quadralateral {  
 
-  int height  
+   &lt;p&gt;int height  
   
-  int width  
+   &lt;p&gt;int width  
   
-  return height * width (set the return value) 
+   &lt;p&gt;return height * width (set the return value) 
   
 }  
 
