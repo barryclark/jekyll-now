@@ -18,7 +18,7 @@ In object-oriented language, however, the base class objects have their own prop
   
        int width  
   
-       return height * width (set the return value) 
+       return height * width; (set the return value) 
   
 }  
 
