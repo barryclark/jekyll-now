@@ -13,9 +13,9 @@ In Geometry, this relationship works. The definition of Quadralateral is ***a fo
 In object-oriented language, however, the base class objects have their own properties, and the extended class objects that were derived from the base objects need to follow the Liskov Substitution Principle: the extended classes ***CANNOT*** change the behavior (or properties in this case) of the base case. Based on the relationship, Quadralateral is the base class for rectangle and square, and rectangle is the base case for square. The following is the properties:
 
 1. class Quadralateral {
-int height;
-int width;
-return height * width (set the return value)
+  int height
+  int width
+  return height * width (set the return value)
 }
 
 2. class Rectangle {
