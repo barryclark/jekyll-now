@@ -25,7 +25,7 @@ library(drlib)
 #################################################
 #   Set working directory
 #################################################
-setwd("I:/SHARE/DEPARTMENTS/Graphics/Experiments/protocol_mining/JACI/prog")
+setwd("./prog")
 
 #################################################
 #    Load data
@@ -86,7 +86,7 @@ library(corrplot)
 #################################################
 #   Set working directory
 #################################################
-setwd("I:/SHARE/DEPARTMENTS/Graphics/Experiments/protocol_mining/JACI/prog")
+setwd("./prog")
 
 #################################################
 #    Load data
@@ -145,7 +145,7 @@ library(qgraph)
 #################################################
 #   Set working directory
 #################################################
-setwd("I:/SHARE/DEPARTMENTS/Graphics/Experiments/protocol_mining/JACI/prog")
+setwd("./prog")
 
 #################################################
 #    Load data
@@ -190,10 +190,10 @@ library(RColorBrewer)
 #################################################
 #   Set working directory
 #################################################
-setwd("I:/SHARE/DEPARTMENTS/Graphics/Experiments/protocol_mining/JACI/prog")
+setwd("./prog")
 
 #################################################
-#    Bring data
+#    Load data
 #################################################
 dp <- readRDS("../data/icac_protocols.Rds")
 
@@ -245,10 +245,10 @@ library(drlib)
 #################################################
 #   Set working directory
 #################################################
-setwd("I:/SHARE/DEPARTMENTS/Graphics/Experiments/protocol_mining/JACI/prog")
+setwd("./prog")
 
 #################################################
-#    Bring data
+#    Load data
 #################################################
 dp <- readRDS("../data/cluster_tfidf.Rds")
 
