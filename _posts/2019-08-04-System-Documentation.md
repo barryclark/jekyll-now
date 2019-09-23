@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Documenting systems: Some options
+title: Documenting systems - Some options
 excerpt_separator: <!--more-->
 tags: [system design, documentation]
 ---
