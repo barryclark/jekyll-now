@@ -291,7 +291,7 @@ Using text mining we’ve been able to determine what makes documents unique, an
 That’s what we’ll touch on next time when we scratch the surface of some of the applications for text mining in clinical trials research in Part 2.
 ## Additional Info and References
 
-Incase you haven't noticed, the code for each graphic is provided beneath it. The protocols that served as data for this blog post, however, cannot be shared. Here's a code snippet from our data derivation process that'll give you an idea of what we did: <details><summary>Data Derivation Code</summary>
+In case you haven't noticed, the code for each graphic is provided beneath it. The protocols that served as data for this blog post, however, cannot be shared. Here's a code snippet from our data derivation process that'll give you an idea of what we did: <details><summary>Data Derivation Code</summary>
   
 ### Code for generating tf-idf matrix
 <p>
