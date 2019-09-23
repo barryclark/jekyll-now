@@ -10,7 +10,7 @@ We began by selecting a set of 15 protocols from studies within the Inner City A
 
 ## Top 12 Meaningful Words by Study
 <img src="{{ site.baseurl }}/images/Top-12-Meaningful-Words-By-Study-Cropped.png"/>
-<details><summary>Code for Graphic</summary>
+<details><summary>Graphic Code</summary>
 <p>
 
 ```R
@@ -71,7 +71,7 @@ Using this metric as our base, we can apply another common text mining technique
 
 ## Heatmap of Cosine Similarity between Study Protocols
 <img src="{{ site.baseurl }}/images/Heatmap-of-Cosine-Similarity-between-Study-Protocols.png"/>
-<details><summary>Code for Graphic</summary>
+<details><summary>Graphic Code</summary>
 <p>
 
 ```R
@@ -131,7 +131,7 @@ However, there may be some nuances in the relationships that are hard to see. Le
 
 ## Network of Cosine Similarity between Study Protocols
 <img src="{{ site.baseurl }}/images/Network-of-Cosine-Similarity-between-Study-Protocols.png"/>
-<details><summary>Code for Graphic</summary>
+<details><summary>Graphic Code</summary>
 <p>
 
 ```R
@@ -173,7 +173,7 @@ That’s much better. Our findings from the heat map are confirmed: the immunoth
 
 ## Study Protocol Clusters
 <img src="{{ site.baseurl }}/images/Study-Protocol-Clusters.png"/>
-<details><summary>Code for Graphic</summary>
+<details><summary>Graphic Code</summary>
 <p>
 
 ```R
@@ -227,7 +227,7 @@ Here are the results of the cluster analysis in the form of a dendrogram.  Short
 
 ## Top TF-IDF words by Cluster
 <img src="{{ site.baseurl }}/images/Top-TF-IDF-words-By-Cluster.png"/>
-<details><summary>Code for Graphic</summary>
+<details><summary>Graphic Code</summary>
 <p>
 
 ```R
