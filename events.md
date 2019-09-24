@@ -20,8 +20,8 @@ October 8:  Cloud Native Revolution, Philadelphia
 October 19 - 20:  OggCamp, Manchester
 * [**Stopping Brexit with data science**](https://oggcamp.org/speakers/)
 
-October 22 - 23:  Automotive Grade Linux All Member Meeting, Monte Carlo
-* **CNCF Keynote**
+October 23:  Mobile World Congress, Los Angeles
+* [**Panel: The Disaggregation of Wireless**]
 
 October 25: Accenture Technology Architecture Workshop, St Charles, IL
 * **Keynote: Cloud native past, present and future**
