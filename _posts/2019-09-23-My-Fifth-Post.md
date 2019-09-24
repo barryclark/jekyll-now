@@ -45,3 +45,12 @@ vertical right: critique product-***finding inadequencies of a finished product*
 ## technology-facing product critiques
 1. finding security problems, performance problems, bugs that occur under load, usability problems
 2. if necessary, finding specialists in these fields
+
+### Java: Game
+I have been asking about the structure questions of our Jag project, so I think it is time to iterate it.
+
+We have two main packages: main and test, main for the commands, and the test for testing (following the Red-Green-Refactor loop).
+
+In ***Main***
+We have a folder Commands and other files under org.improving.tag > java.
+
