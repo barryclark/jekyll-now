@@ -21,7 +21,7 @@ October 19 - 20:  OggCamp, Manchester
 * [**Stopping Brexit with data science**](https://oggcamp.org/speakers/)
 
 October 23:  Mobile World Congress, Los Angeles
-* [**Panel: The Disaggregation of Wireless**]
+* **Panel: The Disaggregation of Wireless**
 
 October 25: Accenture Technology Architecture Workshop, St Charles, IL
 * **Keynote: Cloud native past, present and future**
@@ -31,6 +31,8 @@ October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 
 October 31 - November 1: MIT Technology Review Leadership Summit, Singapore
 * [**Keynote: The Power of Transforming Systems**](http://forms.technologyreview.com/leadership-summit/)
+
+November 4-5: [LF Energy Summit](https://events.linuxfoundation.org/events/lfenergysummit2019/program/), Paris
 
 November 6: [Cloud Native London](https://www.meetup.com/Cloud-Native-London/events/263169231/)
 
