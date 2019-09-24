@@ -12,6 +12,12 @@ header:
   image: ''
 ---
 
+__*NOTE (2019-09-24): This post pertains to version 0.56 of the `rdd` package. The problems described in this post have been corrected in version 0.57 of the package, which was posted to CRAN on 2016-03-14.*__
+
+```{r, include = FALSE}
+install.packages("https://cran.r-project.org/src/contrib/Archive/rdd/rdd_0.56.tar.gz", repo = NULL)
+```
+
 The [`rdd` package](https://cran.r-project.org/web/packages/rdd/) in R provides a set of methods for analysis of regression discontinuity designs (RDDs), including methods to estimate marginal average treatment effects by local linear regression. I was working with the package recently and obtained some rather counter-intuitive treatment effect estimates in a sharp RDD model. After digging around a bit, I found that my perplexing results were the result of a subtle issue of model specification. Namely, in models with additional covariates (beyond just the running variable, treatment indicator, and interaction), the main estimation function in `rdd` uses a specification in which covariates are always interacted with the treatment indicator. In this post, I'll demonstrate the issue and comment on potential work-arounds. 
 
 ### A simulated example
