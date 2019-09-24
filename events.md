@@ -34,9 +34,7 @@ October 31 - November 1: MIT Technology Review Leadership Summit, Singapore
 
 November 4-5: [LF Energy Summit](https://events.linuxfoundation.org/events/lfenergysummit2019/program/), Paris
 
-November 6: [Cloud Native London](https://www.meetup.com/Cloud-Native-London/events/263169231/)
-
-November 4-7: O'Reilly Software Architecture, Berlin
+November 5-8: O'Reilly Software Architecture, Berlin
 * [**Keynote**](https://conferences.oreilly.com/software-architecture/sa-eu/public/schedule/detail/80425)
 
 November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
