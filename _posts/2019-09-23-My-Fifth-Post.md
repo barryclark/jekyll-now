@@ -54,6 +54,12 @@ We have two main packages: main and test, main for the commands, and the test fo
 In ***Main***
 We have a folder Commands and other files under org.improving.tag > java.
 
-To follow DIP(Dependencies Inversion Principle:depending upon abstractions, not concretions), the abstract class BaseEmoteCommand ***implements*** the interface Command and ***takes care of*** the conditions for the input and displaytext.
+To follow DIP(Dependencies Inversion Principle:depending upon abstractions, not concretions), the abstract class BaseEmoteCommand ***implements*** the interface Command and ***takes care of*** the conditions for the input and displaytext. To print out the instructions in the system, another class ConsoleInputOutput is created and implements the ***inputoutput*** interface.
+
+To test the commands, we also create a test folder and used the same interface ***inputoutput*** and make a class ***TestInputOutput***. This class is used as a stimulator to examine the codes.
+
+We have also used more complicated concepts like creating ***the player*** class to record the names of different players, and used the ***build the world*** method to create multiple locations and exits. In testing, we also learn how to use Mochito to mock a class with the ***spy*** method. This was our first time to see the application of decorator.
+
+### Design pattern
 
 
