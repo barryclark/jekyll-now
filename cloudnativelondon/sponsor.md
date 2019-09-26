@@ -20,7 +20,7 @@ Company sizes range from startups to large enterprises, with fintech particularl
 
 Each sponsor contributes £600 (no VAT) per event.
 
-<button onclick="location.href='/cloudnativelondon/pay'" type="button">
+<button onclick="location.href='/cloudnativelondon/sponsorship'" type="button">
          Sponsor event(s)</button>
 
 ## Frequently asked questions
