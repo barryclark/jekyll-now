@@ -17,4 +17,4 @@ Prior to the CNCF, I was a software engineer at Google London and New York. I've
 
 I earned a Masters in Computer Science from the University of Cambridge, King's College.
 
-I am available for paid speaking opportunities. Please contact me at chung at linuxfoundation.org
+I am available for paid speaking opportunities, advisory and board roles. Please contact me at chung at linuxfoundation.org
