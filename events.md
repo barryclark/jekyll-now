@@ -20,6 +20,7 @@ October 19 - 20:  OggCamp, Manchester
 
 October 23:  Mobile World Congress, Los Angeles
 * **Panel: The Disaggregation of Wireless**
+* [**5G Roundtable: GSMA & Open Source Projects**](https://www.gsma.com/futurenetworks/events-and-webinars/5g-roundtable-mwc19-los-angeles/)
 
 October 25: Accenture Technology Architecture Workshop, St Charles, IL
 * **Keynote: Cloud native past, present and future**
