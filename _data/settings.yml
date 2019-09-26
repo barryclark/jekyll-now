@@ -9,7 +9,7 @@ google-ID: 'UA-101991886-1'
 menu:
 - {name: 'Cloud Native London', path: 'cloudnativelondon', url: ''}
 - {name: 'Events', path: 'events', url: ''}
-- {name: 'Search', path: 'search', url: ''}
+- {name: 'Contact', path: 'about', url: ''}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
