@@ -55,7 +55,7 @@ We work with one recruitment agency at a time, so we won't add more until furthe
 
 #### Can we share our event with your group?
 
-If you want to share a commercial event with the group, we ask for a donation towards running costs. Email cheryl@cloudnativelon.com for more.
+[Promote your events and offers](/cloudnativelondon/share)
 
 #### What if I have further questions?
 
