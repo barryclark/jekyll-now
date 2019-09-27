@@ -23,7 +23,7 @@ title: Learning Journal for September 27th
  > \<City> “Plano”</City>\
  > \<State> “TX”</State>\
  > \<Zip>75024 </Zip>\
- > \</Person>\
+ > \</Person>
 
 ## JSON 
 >\{
