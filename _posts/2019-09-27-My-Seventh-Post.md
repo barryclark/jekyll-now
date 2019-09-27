@@ -15,7 +15,7 @@ title: Learning Journal for September 27th
 
 
 ## XML
- > <Person>
+ > \<Person>\
  > <FirstName> “Tim” </FirstName>
  > <LastName> “Rayburn” </LastName>
 <AdressLine1> “5445\s Legacy\s Drive” </AddressLine1>
