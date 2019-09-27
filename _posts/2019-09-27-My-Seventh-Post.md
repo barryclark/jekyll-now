@@ -4,15 +4,16 @@ title: Learning Journal for September 27th
 ---
 ### Homework: Rewrite the following data in XML and JSON
 
----
-•	First Name : Tim 
-•	Last Name : Rayburn 
-•	Address Line 1 : 5445 Legacy Drive 
-•	Address Line 2 : Suite 100 
-•	City : Plano 
-•	State : TX 
-•	Zip : 75024 
----
+
+#	First Name : Tim 
+#	Last Name : Rayburn 
+#	Address Line 1 : 5445 Legacy Drive 
+#	Address Line 2 : Suite 100 
+#	City : Plano 
+#	State : TX 
+#	Zip : 75024  
+
+
 *** XML
 <Person>
 <FirstName> “Tim” </FirstName>
