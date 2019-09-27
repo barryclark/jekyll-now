@@ -2,7 +2,7 @@
 layout: post
 title: Learning Journal for September 27th
 ---
-### Homework: Rewrite the following data in XML and JSON 
+# Homework: Rewrite the following data in XML and JSON 
 
 
 1.	First Name : Tim 
@@ -14,7 +14,7 @@ title: Learning Journal for September 27th
 1.	Zip : 75024  
 
 
-# XML
+### XML
  > \<Person>\
  > \<FirstName> “Tim” </FirstName>\
  > \<LastName> “Rayburn” </LastName>\
@@ -25,7 +25,7 @@ title: Learning Journal for September 27th
  > \<Zip>75024 </Zip>\
  > \</Person>
 
-# JSON 
+### JSON 
 >\{
 “FirstName” : “Tim”,\
 “LastName” : “Rayburn”,\
