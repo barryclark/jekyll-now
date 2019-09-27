@@ -27,7 +27,7 @@ title: Learning Journal for September 27th
 
 ## JSON 
 >\{
-“FirstName” : “Tim”,
+\“FirstName” : “Tim”,\
 “LastName” : “Rayburn”,
 “Address Line1” : “5445 Legacy Drive”,
 “Address Line2” : “Suite 100”,
