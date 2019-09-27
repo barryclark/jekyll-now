@@ -14,10 +14,10 @@ title: Learning Journal for September 27th
 1.	Zip : 75024  
 
 
-*** XML
-# <Person>
-# <FirstName> “Tim” </FirstName>
-<LastName> “Rayburn” </LastName>
+## XML
+* <Person>
+  * <FirstName> “Tim” </FirstName>
+  * <LastName> “Rayburn” </LastName>
 <AdressLine1> “5445\s Legacy\s Drive” </AddressLine1>
 <AdressLine2> “Suite\s ” 100 </AddressLine2>
 <City> “Plano”</City>
@@ -25,7 +25,7 @@ title: Learning Journal for September 27th
 <Zip>75024 </Zip>
 </Person>
 
-*** JSON 
+## JSON 
 {
 “FirstName” : “Tim”,
 “LastName” : “Rayburn”,
