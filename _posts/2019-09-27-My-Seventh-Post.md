@@ -27,11 +27,11 @@ title: Learning Journal for September 27th
 
 ## JSON 
 >\{
-\“FirstName” : “Tim”,\
-“LastName” : “Rayburn”,
-“Address Line1” : “5445 Legacy Drive”,
-“Address Line2” : “Suite 100”,
-“City”: “Plano”,
-“State”: “TX”,
-“Zip”: 75024
+“FirstName” : “Tim”,\
+“LastName” : “Rayburn”,\
+“Address Line1” : “5445 Legacy Drive”,\
+“Address Line2” : “Suite 100”,\
+“City”: “Plano”,\
+“State”: “TX”,\
+“Zip”: 75024\
 }\
