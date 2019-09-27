@@ -2,16 +2,16 @@
 layout: post
 title: Learning Journal for September 27th
 ---
-### Homework: Rewrite the following data in XML and JSON
+### Homework: Rewrite the following data in XML and JSON 
 
 
-#	First Name : Tim 
-#	Last Name : Rayburn 
-#	Address Line 1 : 5445 Legacy Drive 
-#	Address Line 2 : Suite 100 
-#	City : Plano 
-#	State : TX 
-#	Zip : 75024  
+1	First Name : Tim 
+1	Last Name : Rayburn 
+1	Address Line 1 : 5445 Legacy Drive 
+1	Address Line 2 : Suite 100 
+1	City : Plano 
+1	State : TX 
+1	Zip : 75024  
 
 
 *** XML
