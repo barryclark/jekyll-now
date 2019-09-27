@@ -16,17 +16,17 @@ title: Learning Journal for September 27th
 
 ## XML
  > \<Person>\
- > <FirstName> “Tim” </FirstName>
- > <LastName> “Rayburn” </LastName>
-<AdressLine1> “5445\s Legacy\s Drive” </AddressLine1>
-<AdressLine2> “Suite\s ” 100 </AddressLine2>
-<City> “Plano”</City>
-<State> “TX”</State>
-<Zip>75024 </Zip>
-</Person>
+ > \<FirstName> “Tim” </FirstName>\
+ > \<LastName> “Rayburn” </LastName>\
+ > \<AdressLine1> “5445\s Legacy\s Drive” </AddressLine1>\
+ > \<AdressLine2> “Suite\s ” 100 </AddressLine2>\
+ > \<City> “Plano”</City>\
+ > \<State> “TX”</State>\
+ > \<Zip>75024 </Zip>\
+ > \</Person>\
 
 ## JSON 
-{
+>\{
 “FirstName” : “Tim”,
 “LastName” : “Rayburn”,
 “Address Line1” : “5445 Legacy Drive”,
@@ -34,4 +34,4 @@ title: Learning Journal for September 27th
 “City”: “Plano”,
 “State”: “TX”,
 “Zip”: 75024
-}
+}\
