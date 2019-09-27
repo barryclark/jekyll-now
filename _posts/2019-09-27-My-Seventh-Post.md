@@ -34,4 +34,4 @@ title: Learning Journal for September 27th
 “City”: “Plano”,\
 “State”: “TX”,\
 “Zip”: 75024\
-}\
+}
