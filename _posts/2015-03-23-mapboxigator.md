@@ -2,7 +2,7 @@
 layout:     post
 title:      Mapboxigator
 date:       2015-03-23 15:31:19
-author:     Jacob Tomlinson
+active:     No
 summary:    Carte Noire is a dark blog theme for Jekyll focusing on a clear reading experience.
 category: Personal project
 thumbnail:  heart
@@ -13,16 +13,40 @@ tags:
  - Navigation
 ---
 
-Welcome to Carte Noire.
 
-Carte Noire began as a new theme for [my personal blog][1], but has now taken
-on a life of its own as a free theme for Jekyll.
+<!---
+Description and background of project / task
+-->
 
-The theme has been designed with simplicity and readability in mind. It makes
-use of third party services such as Disqus ad AddThis to ensure the blog has
-all the features you would expect from a dynamic application such as Wordpress
-but with the hosting and maintenance simplicity of Jekyll.
 
-Please use/copy/share Carte Noire!
+<!---
+Images / videos (if applicable)
+-->
 
-[1]: http://www.jacobtomlinson.co.uk/
+
+
+<!---
+Goals / roles
+-->
+
+
+
+<!---
+Challenges
+-->
+
+
+
+<!---
+Outcome
+-->
+
+
+
+<!---
+<p>
+  <a class="chip read-more" target="_blank" href="">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 14.25H3.75V3.75H9V2.25H3.75C2.9175 2.25 2.25 2.925 2.25 3.75V14.25C2.25 15.075 2.9175 15.75 3.75 15.75H14.25C15.075 15.75 15.75 15.075 15.75 14.25V9H14.25V14.25ZM10.5 2.25V3.75H13.1925L5.82 11.1225L6.8775 12.18L14.25 4.8075V7.5H15.75V2.25H10.5Z" fill="#dab827"></path></svg> Read more
+  </a>
+</p>
+-->

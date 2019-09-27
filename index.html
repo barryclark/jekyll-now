@@ -1,6 +1,6 @@
 ---
 layout: default
-make-smaller-titles: true
+make-smaller-titles: false
 ---
 
 
@@ -31,9 +31,16 @@ make-smaller-titles: true
               <ul>
                   {% assign work_posts = site.posts | where: "category", "Work project" %}
                   {% for post in work_posts limit: site.work_post_limit %}
+                  {% if post.active %}
+                    {% assign date = post.date | date: '%Y' %}
+                    {% assign date_str = "(" | append: date | append: " - present)" %}
+                  {% else %}
+                    {% assign date = post.date | date: '%Y' %}
+                    {% assign date_str = "(" | append: date | append: ")" %}
+                  {% endif %}
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small>{{ post.date | date: "%Y" }}</small><br>
+                          <small>{{ date_str }}</small><br>
                           <small>{{ post.tags | join: "|" }}</small>
                       </li>
                   {% endfor %}
@@ -51,9 +58,16 @@ make-smaller-titles: true
               <ul>
                   {% assign personal_posts = site.posts | where: "category", "Personal project" %}
                   {% for post in personal_posts limit: site.personal_post_limit %}
+                  {% if post.active %}
+                    {% assign date = post.date | date: '%Y' %}
+                    {% assign date_str = "(" | append: date | append: " - present)" %}
+                  {% else %}
+                    {% assign date = post.date | date: '%Y' %}
+                    {% assign date_str = "(" | append: date | append: ")" %}
+                  {% endif %}
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small>{{ post.date | date: "%Y" }}</small><br>
+                          <small>{{ date_str }}</small><br>
                           <small>{{ post.tags | join: "|" }}</small>
                       </li>
                   {% endfor %}

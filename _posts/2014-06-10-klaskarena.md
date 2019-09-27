@@ -2,6 +2,7 @@
 layout:     post
 title:      Klaskarena
 date:       2014-06-10 12:31:19
+active:     No
 summary:    See what the different elements looks like.
 category: Personal project
 thumbnail: cogs
@@ -12,94 +13,40 @@ tags:
  - Google Firebase
 ---
 
-**Note** - This article is a derivative of ["See pixyll in action"][1], taken from the lovely jekyll theme [pixyll][4].
 
-All links are easy to [locate and discern](#), yet don't detract from the harmony
-of a paragraph. The _same_ goes for italics and __bold__ elements. Even the the strikeout
-works if <del>for some reason you need to update your post</del>. For consistency's sake,
-<ins>The same goes for insertions</ins>, of course.
-
-### Code, with syntax highlighting
-
-Code blocks use the [peppermint][2] theme.
-
-{% highlight ruby %}
-class Awesome < ActiveRecord::Base
-  include EvenMoreAwesome
-
-  validates_presence_of :something
-  validates :email, email_format: true
-
-  def initialize(email, name = nil)
-    self.email = email
-    self.name = name
-  end
-end
-{% endhighlight %}
-
-```html
-<!DOCTYPE html>
-<title>Title</title>
-
-<style>body {width: 500px;}</style>
-
-<script type="application/javascript">
-  function $init() {return true;}
-</script>
-
-<body>
-  <p checked class="title" id='title'>Title</p>
-  <!-- here goes the rest of the page -->
-</body>
-```
-
-# Headings!
-
-They're responsive, and well-proportioned (in `padding`, `line-height`, `margin`, and `font-size`).
-
-##### They draw the perfect amount of attention
-
-This allows your content to have the proper informational and contextual hierarchy. Yay.
-
-### There are lists, too
-
-  * Apples
-  * Oranges
-  * Potatoes
-  * Milk
-
-  1. Mow the lawn
-  2. Feed the dog
-  3. Dance
-
-### Images look great, too
-
-![Thumper](https://i.imgur.com/DMCHDqF.jpg)
+<!---
+Description and background of project / task
+-->
 
 
-### Stylish blockquotes included
-
-You can use the markdown quote syntax, `>` for simple quotes.
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis porta mauris.
-
-### LaTeX support
-
-The default math delimiters are \$\$. Hence `$$ E = m \cdot c^2 $$` yields $$ E = m \cdot c^2 $$
-
-And here's something more fancy:
-
-$$ \zeta(s) = \frac{1}{\Gamma(s)} \int \limits_0^\infty x^{s-1} \sum_{n=1}^\infty e^{-nx} \mathrm{d}x = \frac{1}{\Gamma(s)} \int \limits_0^\infty \frac{x^{s-1}}{e^x - 1} \mathrm{d}x $$
+<!---
+Images / videos (if applicable)
+-->
 
 
-### There's more being added all the time
 
-Checkout the [Github repository][3] to request,
-or add, features.
+<!---
+Goals / roles
+-->
 
-Happy writing.
 
-[1]: http://pixyll.com/jekyll/pixyll/2014/06/10/see-pixyll-in-action/
-[2]: https://noahfrederick.com/log/lion-terminal-theme-peppermint/
-[3]: https://github.com/jacobtomlinson/carte-noire
-[4]: http://pixyll.com/
+
+<!---
+Challenges
+-->
+
+
+
+<!---
+Outcome
+-->
+
+
+
+<!---
+<p>
+  <a class="chip read-more" target="_blank" href="">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 14.25H3.75V3.75H9V2.25H3.75C2.9175 2.25 2.25 2.925 2.25 3.75V14.25C2.25 15.075 2.9175 15.75 3.75 15.75H14.25C15.075 15.75 15.75 15.075 15.75 14.25V9H14.25V14.25ZM10.5 2.25V3.75H13.1925L5.82 11.1225L6.8775 12.18L14.25 4.8075V7.5H15.75V2.25H10.5Z" fill="#dab827"></path></svg> Read more
+  </a>
+</p>
+-->

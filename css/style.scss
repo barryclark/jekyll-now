@@ -16,20 +16,58 @@ $instagram:      #cd486b;
 $reddit:         #cee3f8;
 $rss:            #eea33a;
 
-$darker:         #21211E;
-$dark:           #2D2D29;
-$medium:         #3B3B35;
-$light-medium:   #969696;
-$dark-blue:      #215A6D;
-$light-blue:     #3CA2A2;
+// $darker:         #21211E;
+// $dark:           #2D2D29;
+// $medium:         #3B3B35;
+// $light-medium:   #969696;
+// $dark-blue:      #215A6D;
+// $light-blue:     #3CA2A2;
+// $green:          #92C7A3;
+// $light:          #DFECE6;
+// $white:          #FFFFFF;
+// $dark-purple:    #300030;
+// $medium-purple:  #480048;
+// $regular-purple: #601848;
+// $red:            #C04848;
+// $orange:         #F07241;
+
+/* https://wpamelia.com/wp-content/uploads/2018/11/kaiten.png
+/* https://wpamelia.com/wp-content/uploads/2018/11/Kanban-powered-visual-management-system-@-Kaiten.jpg */
+$darker:         #171717; // code block
+$dark:           #21211E; // bg
+$medium:         #262623; // bg block
+$light-medium:   #969696; // subtitles
+$dividers:       #547a82; // dividers
+
+$dark-blue:      #dab827; // hovered hyperlinks
+$light-blue:     #3eaca8; // hyperlinks, title, headers, dividers
+
 $green:          #92C7A3;
 $light:          #DFECE6;
-$white:          #FFFFFF;
+$white:          #fdfefd; // main text
 $dark-purple:    #300030;
 $medium-purple:  #480048;
 $regular-purple: #601848;
 $red:            #C04848;
 $orange:         #F07241;
+
+
+
+
+$cod-gray: #171717;
+$san-juan-blue: #375369;
+$dawn-gray: #a19f95;
+$saltpan: #fdfefd;
+
+$night-shadz-red: #962752;
+$froly-red: #f26e6b;
+
+$salomie-tan: #fdd387;
+$golden-grass: #dab827;
+
+$studio-purple: #7b47ba;
+$turquoise: #29e5af;
+
 
 /* Responsive sizes */
 $screen-sm-min: 768px;
@@ -135,7 +173,7 @@ ul {
 	padding-right: 30px;
 	margin-top: 20px;
 	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
-	border-bottom: 5px solid $light-blue;
+	border-bottom: 5px solid $dividers;
 }
 
 #my-menu {
@@ -221,6 +259,53 @@ ul {
 	}
 }
 
+$typography-font-weight-values: (
+  regular: 400,
+  medium: 500,
+  bold: 700
+) !default;
+
+@mixin body2 {
+	font-size: 1.35rem; // 14sp
+	line-height: 1.25rem; // 20sp
+	font-weight: map-get($typography-font-weight-values, regular);
+	letter-spacing: typography-get-letter-spacing(.25, .875);
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+
+.chip {
+	@include body2;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-radius: 32px;
+	color: $white;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	height: 32px;
+	margin-right: 8px;
+	overflow: hidden;
+	padding: 0 16px 0 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	&.read-more {
+		border: 1px solid $white;
+
+		svg {
+			margin-right: 8px;
+			min-height: 18px;
+			min-width: 18px;
+		}
+	}
+
+	&:hover {
+		background-color: rgba(255,255,255,.08);
+	}
+}
+
 /* Index */
 
 .index {
@@ -252,7 +337,7 @@ ul {
 	}
 
 	.content-panel:nth-of-type(1) {
-		border-bottom: 10px solid $light-blue;
+		border-bottom: 10px solid $dividers;
 	}
 
 	.author-header {

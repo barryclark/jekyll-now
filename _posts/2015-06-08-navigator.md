@@ -2,9 +2,10 @@
 layout:     post
 title:      Navigator for ArcGIS
 date:       2015-06-08 12:32:18
+active:     Yes
 summary:    Using thumbnails in your Carte Noire articles.
 category: Work project
-thumbnail: jekyll
+thumbnail: navigator
 tags:
   - Product
   - ArcGIS
@@ -12,50 +13,40 @@ tags:
   - Android
 ---
 
-Carte Noire is designed to start each article with an all-white image as a
-thumbnail. These are created by adding a `thumbnail` parameter to the article's
-[YAML frontmatter][1]. This thumbnail parameter is processed in one of two ways,
-images specified in `_data/thumbnails.yml` or using [Font Awesome][2].
 
-## Images
+<!---
+Description and background of project / task
+-->
 
-To use your own custom images as a thumbnail you must upload them to a web available
-location (I use [Imgur][3]) and then you need to add the url to `_data/thumbnail.yml`
-with an associated keyword.
 
-```
-jekyll: "http://i.imgur.com/aRQcGSi.png"
-```
+<!---
+Images / videos (if applicable)
+-->
 
-You then add a `thumbnail` option to the article's frontmatter and provide the keyword
-for that thumbnail.
 
-```
-thumbnail: jekyll
-```
 
-This allows you to re-use thumbnails across multiple articles without having to
-specify the url each time.
+<!---
+Goals / roles
+-->
 
-## Font Awesome
 
-If jekyll can't find a corresponding image in your `thumbnail.yml` file then it
-will assume you want to use a Font Awesome icon instead. You can find the full
-list of Font Awesome icons [here][4].
 
-So for example if your article is about android and you want to use the [android icon][5]
-from font awesome you can just specify the following in your frontmatter.
+<!---
+Challenges
+-->
 
-```
-thumbnail: android
-```
 
-Then in the future if you decide you want to use your own android icon you can just
-add it to `_data/thumbnails.yml` which will override it for all articles using
-the android thumbnail.
 
-[1]: http://jekyllrb.com/docs/frontmatter/
-[2]: http://fortawesome.github.io/Font-Awesome/
-[3]: http://imgur.com/
-[4]: http://fortawesome.github.io/Font-Awesome/icons/
-[5]: http://fortawesome.github.io/Font-Awesome/icon/android/
+<!---
+Outcome
+-->
+
+
+
+<!---
+<p>
+  <a class="chip read-more" target="_blank" href="">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 14.25H3.75V3.75H9V2.25H3.75C2.9175 2.25 2.25 2.925 2.25 3.75V14.25C2.25 15.075 2.9175 15.75 3.75 15.75H14.25C15.075 15.75 15.75 15.075 15.75 14.25V9H14.25V14.25ZM10.5 2.25V3.75H13.1925L5.82 11.1225L6.8775 12.18L14.25 4.8075V7.5H15.75V2.25H10.5Z" fill="#dab827"></path></svg> Read more
+  </a>
+</p>
+-->
