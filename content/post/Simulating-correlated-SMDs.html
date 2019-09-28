@@ -1,0 +1,257 @@
+---
+title: 'Simulating correlated standardized mean differences for meta-analysis'
+author: James
+date: '2019-09-30'
+slug: Simulating-correlated-SMDs
+bibliography: [meta-references.bib]
+link-citations: true
+categories: []
+tags:
+  - effect sizes
+  - meta-analysis
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+
+
+<p>As I’ve discussed in <a href="/Sometimes-aggregating-effect-sizes-is-fine">previous posts</a>, meta-analyses in psychology, education, and other areas often include studies that contribute multiple, statistically dependent effect size estimates.
+I’m interested in methods for meta-analyzing and meta-regressing effect sizes from data structures like this, and studying this sort of thing often entails conducting Monte Carlo simulations.
+Monte Carlo simulations involve generating artificial data—in this case, a set of studies, each of which has one or more dependent effect size estimates—that follows a certain distributional model, applying different analytic methods to the artificial data, and then repeating the process a bunch of times.
+Because we know the true parameters that govern the data-generating process, we can evaluate the performance of the analytic methods in terms of bias, accuracy, hypothesis test calibration and power, confidence interval coverage, and the like.</p>
+<p>In this post, I’ll discuss two alternative methods to simulate meta-analytic datasets that include studies with multiple, dependent effect size estimates: simulating individual participant-level data or simulating summary statistics. I’ll focus on the case of the standardized mean difference (SMD) because it is so common in meta-analyses of intervention studies. For simplicity, I’ll assume that the effect sizes all come from simple, two-group comparisons (without any covariate adjustment or anything like that) and that the individual observations are multi-variate normally distributed within each group. Our goal will be to simulate a set of <span class="math inline">\(K\)</span> studies, where study <span class="math inline">\(k\)</span> is based on measuring <span class="math inline">\(J_k\)</span> outcomes on a sample of <span class="math inline">\(N_k\)</span> participants, all for <span class="math inline">\(k = 1,...,K\)</span>.
+Let <span class="math inline">\(\boldsymbol\delta_k = (\delta_{1k} \cdots \delta_{J_k k})&#39;\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vector of true standardized mean differences for study <span class="math inline">\(k\)</span>.
+I’ll assume that we know these true effect size parameters for all <span class="math inline">\(K\)</span> studies, so that I can avoid committing to any particular form of random effects model.</p>
+<div id="simulating-individual-participant-level-data" class="section level1">
+<h1>Simulating individual participant-level data</h1>
+<p>The most direct way to simulate this sort of effect size data is to generate outcome data for every artificial participant in every artificial study. Let <span class="math inline">\(\mathbf{Y}_{ik}^T\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vector of outcomes for treatment group participant <span class="math inline">\(i\)</span> in study <span class="math inline">\(k\)</span>, and let <span class="math inline">\(\mathbf{Y}_{ik}^C\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vector outcomes for control group participant <span class="math inline">\(i\)</span> in study <span class="math inline">\(k\)</span>, for <span class="math inline">\(i=1,...,N_k / 2\)</span> and <span class="math inline">\(k = 1,...,K\)</span>. Assuming multi-variate normality of the outcomes, we can generate these outcome vectors as
+<span class="math display">\[
+\mathbf{Y}_{ik}^T \sim N\left(\boldsymbol\delta_k, \boldsymbol\Psi_k\right) \qquad \text{and}\qquad \mathbf{Y}_{ik}^C \sim N\left(\mathbf{0}, \boldsymbol\Psi_k\right),
+\]</span>
+where <span class="math inline">\(\boldsymbol\Psi_k\)</span> is the population correlation matrix of the outcomes in study <span class="math inline">\(k\)</span>.
+Note that I am setting the mean outcomes of the control group participants to zero and also specifying that the outcomes all have unit variance within each group.
+After simulating data based on these distributions, the effect size estimates for each outcome can be calculated directly, following standard formulas.</p>
+<p>Here’s what this approach looks like in code.
+It is helpful to simplify things by focusing on simulating just a single study with multiple, correlated effect sizes.
+Focusing first on just the input parameters, a function might look like the following:</p>
+<pre class="r"><code>r_SMDs_raw &lt;- function(delta, J, N, Psi) {
+  # stuff
+  return(ES_data)  
+}</code></pre>
+<p>In the above function skeleton, <code>delta</code> would be the true effect size parameter <span class="math inline">\(\boldsymbol\delta_k\)</span>, <code>J</code> would be the number of effect sizes to generate <span class="math inline">\((J_k)\)</span>, <code>N</code> is the total number of participants <span class="math inline">\((N_k)\)</span>, and <code>Psi</code> is a matrix of correlations between the outcomes <span class="math inline">\((\Psi_k)\)</span>.
+From these parameters, we’ll generate raw data, calculate effect size estimates and standard errors, and return the results in a little dataset.</p>
+<p>To make the function a little bit easier to use, I’m going overload the <code>Psi</code> argument so that it can be a single number, indicating a common correlation between the outcomes. Thus, instead of having to feed in a <span class="math inline">\(J_k \times J_k\)</span> matrix, you can specify a single correlation <span class="math inline">\(r_k\)</span>, and the function will assume that all of the outcomes are equicorrelated. In code, the logic is:</p>
+<pre class="r"><code>if (!is.matrix(Psi)) Psi &lt;- Psi + diag(1 - Psi, nrow = J)</code></pre>
+<p>Here’s the function with the innards:</p>
+<pre class="r"><code>r_SMDs_raw &lt;- function(delta, J, N, Psi) {
+
+  require(mvtnorm) # for simulating multi-variate normal data
+  
+  # create Psi matrix assuming equicorrelation
+  if (!is.matrix(Psi)) Psi &lt;- Psi + diag(1 - Psi, nrow = J)
+  
+  # generate control group summary statistics
+  Y_C &lt;- rmvnorm(n = N / 2, mean = rep(0, J), sigma = Psi)
+  ybar_C &lt;- colMeans(Y_C)
+  sd_C &lt;- apply(Y_C, 2, sd)
+  
+  # generate treatment group summary statistics
+  delta &lt;- rep(delta, length.out = J)
+  Y_T &lt;- rmvnorm(n = N / 2, mean = delta, sigma = Psi)
+  ybar_T &lt;- colMeans(Y_T)
+  sd_T &lt;- apply(Y_T, 2, sd)
+
+  # calculate Cohen&#39;s d
+  sd_pool &lt;- sqrt((sd_C^2 + sd_T^2) / 2)
+  ES &lt;- (ybar_T - ybar_C) / sd_pool
+  
+  # calculate SE of d
+  SE &lt;- sqrt(4 / N + ES^2 / (2 * (N - 2)))
+
+  data.frame(ES = ES, SE = SE, N = N)
+
+}</code></pre>
+<p>In action:</p>
+<pre class="r"><code>delta &lt;- rnorm(4, mean = 0.2, sd = 0.1)
+r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = 0.6)</code></pre>
+<pre><code>## Loading required package: mvtnorm</code></pre>
+<pre><code>##           ES        SE  N
+## 1 -0.2960515 0.3180460 40
+## 2 -0.2439310 0.3174633 40
+## 3  0.2779238 0.3178307 40
+## 4  0.1717264 0.3168407 40</code></pre>
+<p>Or if you’d rather specify the full <span class="math inline">\(\Psi_k\)</span> matrix yourself:</p>
+<pre class="r"><code>Psi_k &lt;- 0.6 + diag(0.4, nrow = 4)
+Psi_k</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]  1.0  0.6  0.6  0.6
+## [2,]  0.6  1.0  0.6  0.6
+## [3,]  0.6  0.6  1.0  0.6
+## [4,]  0.6  0.6  0.6  1.0</code></pre>
+<pre class="r"><code>r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = Psi_k)</code></pre>
+<pre><code>##            ES        SE  N
+## 1 -0.06458857 0.3163145 40
+## 2  0.47227053 0.3208344 40
+## 3  0.28121751 0.3178688 40
+## 4  0.63740505 0.3245703 40</code></pre>
+<div id="exercises" class="section level2">
+<h2>Exercises</h2>
+<p>The function above is serviceable but quite basic. I can think of several additional features that one might like to have for use in research simulations, but I’m feeling both cheeky and lazy at the moment, so I’ll leave them for you, dear reader. Here are some suggested exercises:</p>
+<ol style="list-style-type: decimal">
+<li><p>Add an argument to the function, <code>Hedges_g = TRUE</code>, which controls where the simulated effect size is Hedges’ <span class="math inline">\(g\)</span> or Cohen’s <span class="math inline">\(d\)</span>. If it is Hedges’ g, make sure that the standard error is corrected too.</p></li>
+<li><p>Add an argument to the function, <code>p_val = TRUE</code>, which allows the user to control whether or not to return <span class="math inline">\(p\)</span>-values from the test of mean differences for each outcome. Note that the p-values should be for a test of the <em>raw</em> mean differences between groups, rather than a test of the effect size <span class="math inline">\(\delta_{jk} = 0\)</span>.</p></li>
+<li><p>Add an argument to the function, <code>corr_mat = FALSE</code>, which controls whether the function returns just the simulated effect sizes and SEs or both the simulated effect sizes and the full sampling variance-covariance matrix of the effect sizes. See <a href="/correlations-between-SMDs">here</a> for the relevant formulas.</p></li>
+</ol>
+</div>
+</div>
+<div id="simulating-summary-statistics" class="section level1">
+<h1>Simulating summary statistics</h1>
+<p>Another approach to simulating SMDs is to sample from the distribution of the <em>summary statistics</em> used in calculating the effect size. This approach should simplify the code, at the cost of having to use a bit of distribution theory. Let <span class="math inline">\(\mathbf{\bar{y}}_{Tk}\)</span> and <span class="math inline">\(\mathbf{\bar{y}}_{Ck}\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vectors of sample means for the treatment and control groups, respectively. Let <span class="math inline">\(\mathbf{S}_k\)</span> be the <span class="math inline">\(J_k \times J_k\)</span> sample covariance matrix of the outcomes, pooled across the treatment and control groups. Again assuming multi-variate normality, and following the same notation as above:
+<span class="math display">\[
+\mathbf{\bar{y}}_{Ck} \sim N\left(\mathbf{0}, \frac{2}{N_k} \boldsymbol\Psi_k\right), \qquad \mathbf{\bar{y}}_{Tk} \sim N\left(\boldsymbol\delta_k, \frac{2}{N_k} \boldsymbol\Psi_k\right),
+\]</span>
+and
+<span class="math display">\[
+\left(\mathbf{\bar{y}}_{Tk} - \mathbf{\bar{y}}_{Ck}\right) \sim N\left(\boldsymbol\delta_k, \frac{4}{N_k} \boldsymbol\Psi_k\right).
+\]</span>
+This shows how we could directly simulate the numerator of the standardized mean difference.</p>
+<p>A <a href="/distribution-of-sample-variances">further bit of distribution theory</a> says that the pooled sample covariance matrix follows a multiple of a <a href="https://en.wikipedia.org/wiki/Wishart_distribution">Wishart distribution</a> with <span class="math inline">\(N_k - 2\)</span> degrees of freedom and scale matrix <span class="math inline">\(\Psi_k\)</span>:
+<span class="math display">\[
+(N_k - 2) \mathbf{S}_k \sim Wishart\left(N_k - 2, \Psi_k \right).
+\]</span>
+Thus, to simulate the denominators of the SMD estimates, we can simulate a single Wishart matrix, pull out the diagonal entries, divide by <span class="math inline">\(N_k - 2\)</span>, and take the square root. In all, we draw a single <span class="math inline">\(J_k \times 1\)</span> observation from a multi-variate normal distribution and a single <span class="math inline">\(J_k \times J_k\)</span> observation from a Wishart distribution. In contrast, the raw data approach requires simulating <span class="math inline">\(N_k\)</span> observations from a multi-variate normal distribution, then calculating <span class="math inline">\(4 J_k\)</span> summary statistics (M and SD for each group on each outcome).</p>
+<div id="exercises-1" class="section level2">
+<h2>Exercises</h2>
+<p>Once again, I’ll leave it to you, dear reader, to do the fun programming bits:</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Create a modified version of the function <code>r_SMDs_raw</code> that simulates summary statistics instead of raw data (Call it <code>r_SMDs_stats</code>).</li>
+<li>Use the <code>microbenchmark</code> package (or your preferred benchmarking tool) to compare the computational efficiency of both versions of the function.</li>
+<li>Check your work! Verify that both versions of the function generate the same distributions if the same parameters are used as input.</li>
+</ol>
+</div>
+</div>
+<div id="which-approach-is-better" class="section level1">
+<h1>Which approach is better?</h1>
+<p>Like many things in research, there’s no clearly superior method here. The advantage of the summary statistics approach is computational efficiency. It should generally be faster than the raw data approach, and if you need to generate 10,000 meta-analysis each with 80 studies in them, the computational savings might add up. On the other hand, computational efficiency isn’t everything.</p>
+<p>I see two potential advantages of the raw data approach. First is interpretability: simulating raw data is likely easier to understand. It feels tangible and familiar, harkening back to those bygone days we spent learning ANOVA, whereas the summary statistics approach requires a bit of distribution theory to follow (bookmark this blog post!). Second is extensibility: it is relatively straightforward to extend the approach to use other distributional models for the raw dat (perhaps you want to look at outcomes that follow a <a href="https://en.wikipedia.org/wiki/Multivariate_t-distribution">multi-variate <span class="math inline">\(t\)</span> distribution</a>?) or more complicated estimators of the SMD (difference-in-differences? covariate-adjusted? cluster-randomized trial?). To use the summary statistics approach in more complicated scenarios, you’d have to work out the sampling distributions for yourself, or locate the right reference.</p>
+<p>Of course, there’s also no need to choose between these two approaches. As I’m trying to hint at in Exercise 6, it’s actually useful to write both. Then, you can use the (potentially slower) raw data version to verify that the summary statistics version is correct.</p>
+</div>
+<div id="simulating-full-meta-analyses" class="section level1">
+<h1>Simulating full meta-analyses</h1>
+<p>So far we’ve got a data-generating function that simulates a single study’s worth of effect size estimates. To study meta-analytic methods, we’ll need to build out the function to simulate multiple studies. To do so, I think it’s useful to use the technique of <a href="https://r4ds.had.co.nz/iteration.html">mapping</a>, as implemented in the <code>purrr</code> package’s <code>map_*</code> functions. The idea here is to first generate a “menu” of study-specific parameters for each of <span class="math inline">\(K\)</span> studies, then apply the <code>r_SMDs</code> function to each parameter set.</p>
+<p>Let’s consider how to do this for a simple random effects model, where the true effect size parameter is constant within each study (i.e., <span class="math inline">\(\boldsymbol\delta_k = (\delta_k \cdots \delta_k)&#39;\)</span>), and in a model without covariates. We’ll need to generate a true effect for each study, along with a sample size, an outcome dimension, and a correlation between outcomes. For the true effects, I’ll assume that
+<span class="math display">\[
+\delta_k \sim N(\mu, \tau^2),
+\]</span>
+<span class="math display">\[
+J_k \sim 2 + Poisson(3),
+\]</span>
+<span class="math display">\[
+N_k \sim 20 + 2 \times Poisson(10),
+\]</span>
+and
+<span class="math display">\[
+r_k \sim Beta\left(\rho \nu, (1 - \rho)\nu\right),
+\]</span>
+where <span class="math inline">\(\rho = \text{E}(r_k)\)</span> and <span class="math inline">\(\nu &gt; 0\)</span> controls the variability of <span class="math inline">\(r_k\)</span> across studies, with smaller <span class="math inline">\(\nu\)</span> corresponding to more variable correlations.
+Specifically, <span class="math inline">\(\text{Var}(r_k) = \rho (1 - \rho) / (1 + \nu)\)</span>.
+These distributions are just made up, without any particular justification.</p>
+<p>Here’s what these distributional models look like in R code:</p>
+<pre class="r"><code>K &lt;- 6
+mu &lt;- 0.2
+tau &lt;- 0.05
+J_mean &lt;- 5
+N_mean &lt;- 45
+rho &lt;- 0.6
+nu &lt;- 39
+
+study_data &lt;- 
+  data.frame(
+    delta = rnorm(K, mean = mu, sd = tau),
+    J = 2 + rpois(K, J_mean - 2),
+    N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+    Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+  )
+
+study_data</code></pre>
+<pre><code>##       delta J  N       Psi
+## 1 0.2581013 4 40 0.5457823
+## 2 0.1912174 6 32 0.4589329
+## 3 0.2664125 7 48 0.3954755
+## 4 0.1684659 3 36 0.6845993
+## 5 0.2589207 4 48 0.6697237
+## 6 0.2396979 3 46 0.6506294</code></pre>
+<p>Once we have the “menu” of study-level characteristics, it’s just a matter of mapping the parameters to the data-generating function. One way to do this is with <code>pmap_df</code>:</p>
+<pre class="r"><code>library(purrr)
+meta_data &lt;- pmap_df(study_data, r_SMDs_raw, .id = &quot;study&quot;)
+meta_data</code></pre>
+<pre><code>##    study           ES        SE  N
+## 1      1  0.156741371 0.3167385 40
+## 2      1  0.086516161 0.3163835 40
+## 3      1  0.053019123 0.3162862 40
+## 4      1 -0.112094674 0.3164891 40
+## 5      2  0.102577728 0.3538013 32
+## 6      2 -0.091716884 0.3537516 32
+## 7      2 -0.060551787 0.3536398 32
+## 8      2  0.129074498 0.3539459 32
+## 9      2 -0.267171753 0.3552319 32
+## 10     2 -0.112299229 0.3538505 32
+## 11     3  0.292530629 0.2902817 48
+## 12     3  0.183802809 0.2893105 48
+## 13     3  0.252136555 0.2898695 48
+## 14     3  0.026407757 0.2886883 48
+## 15     3  0.267397469 0.2900181 48
+## 16     3  0.143286971 0.2890614 48
+## 17     3 -0.002602295 0.2886753 48
+## 18     4  0.261106036 0.3348338 36
+## 19     4  0.383321038 0.3365589 36
+## 20     4  0.749096865 0.3454899 36
+## 21     5 -0.039451231 0.2887044 48
+## 22     5  0.012724076 0.2886782 48
+## 23     5 -0.302363091 0.2903912 48
+## 24     5  0.191668553 0.2893659 48
+## 25     6  0.005766782 0.2948846 46
+## 26     6  0.231605916 0.2959157 46
+## 27     6  0.038441488 0.2949124 46</code></pre>
+<pre class="r"><code>table(meta_data$study)</code></pre>
+<pre><code>## 
+## 1 2 3 4 5 6 
+## 4 6 7 3 4 3</code></pre>
+<p>Putting it all together into a function, we have</p>
+<pre class="r"><code>r_meta &lt;- function(K, mu, tau, J_mean, N_mean, rho, nu) {
+  require(purrr)
+  
+  study_data &lt;- 
+    data.frame(
+      delta = rnorm(K, mean = mu, sd = tau),
+      J = 2 + rpois(K, J_mean - 2),
+      N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+      Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+    )
+  
+  pmap_df(study_data, r_SMDs_raw, .id = &quot;study&quot;)
+}</code></pre>
+<div id="exercises-2" class="section level2">
+<h2>Exercises</h2>
+<ol start="7" style="list-style-type: decimal">
+<li><p>Modify <code>r_meta</code> so that it uses <code>r_SMDs_stats</code>.</p></li>
+<li><p>Add options to <code>r_meta</code> for <code>Hedges_g</code>, <code>p_val = TRUE</code>, and <code>corr_mat = FALSE</code> and ensure that these get passed along to the <code>r_SMDs</code> function.</p></li>
+<li><p>One way to check that the <code>r_meta</code> function is working properly is to generate a very large meta-analytic dataset, then to verify that the generated distributions align with expectations. Here’s a very large meta-analytic dataset:</p>
+<pre class="r"><code>meta_data &lt;- 
+  r_meta(100000, mu = 0.2, tau = 0.05, 
+         J_mean = 5, N_mean = 40, 
+         rho = 0.6, nu = 39)</code></pre>
+<p>Compare the distribution of the simulated dataset against what you would expect to get based on the input parameters.</p></li>
+<li><p>Modify the <code>r_meta</code> function so that <span class="math inline">\(J_k\)</span> and <span class="math inline">\(N_k\)</span> are correlated, according to
+<span class="math display">\[
+\begin{align}
+J_k &amp;\sim 2 + Poisson(\mu_J - 2) \\
+N_k &amp;\sim 20 + 2 \times Poisson\left(\frac{1}{2}(\mu_N - 20) + \alpha (J_k - \mu_J) \right)
+\end{align}
+\]</span>
+for user-specified values of <span class="math inline">\(\mu_J\)</span> (the average number of outcomes per study), <span class="math inline">\(\mu_N\)</span> (the average total sample size per study), and <span class="math inline">\(\alpha\)</span>, which controls the degree of dependence between <span class="math inline">\(J_k\)</span> and <span class="math inline">\(N_k\)</span>.</p></li>
+</ol>
+</div>
+</div>
