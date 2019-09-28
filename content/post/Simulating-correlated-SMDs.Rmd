@@ -1,7 +1,7 @@
 ---
 title: 'Simulating correlated standardized mean differences for meta-analysis'
 author: James
-date: '2019-09-27'
+date: '2019-09-30'
 slug: Simulating-correlated-SMDs
 bibliography: [meta-references.bib]
 link-citations: true
@@ -9,6 +9,9 @@ categories: []
 tags:
   - effect sizes
   - meta-analysis
+  - simulation
+  - programming
+  - distribution theory
 header:
   caption: ''
   image: ''
