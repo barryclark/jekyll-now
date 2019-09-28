@@ -430,11 +430,11 @@ $(document).ready(function () {
 <pre class="r"><code>delta &lt;- rnorm(4, mean = 0.2, sd = 0.1)
 r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = 0.6)</code></pre>
 <pre><code>## Loading required package: mvtnorm</code></pre>
-<pre><code>##           ES        SE  N
-## 1  0.2960678 0.3180462 40
-## 2 -0.1906226 0.3169828 40
-## 3  0.1174332 0.3165145 40
-## 4  0.3121749 0.3182488 40</code></pre>
+<pre><code>##          ES        SE  N
+## 1 0.3245071 0.3184110 40
+## 2 0.3655427 0.3189956 40
+## 3 0.3229828 0.3183906 40
+## 4 0.2736013 0.3177813 40</code></pre>
 <p>Or if you’d rather specify the full <span class="math inline">\(\Psi_k\)</span> matrix yourself:</p>
 <pre class="r"><code>Psi_k &lt;- 0.6 + diag(0.4, nrow = 4)
 Psi_k</code></pre>
@@ -444,11 +444,11 @@ Psi_k</code></pre>
 ## [3,]  0.6  0.6  1.0  0.6
 ## [4,]  0.6  0.6  0.6  1.0</code></pre>
 <pre class="r"><code>r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = Psi_k)</code></pre>
-<pre><code>##          ES        SE  N
-## 1 0.9938848 0.3361509 40
-## 2 0.1645266 0.3167904 40
-## 3 0.2305409 0.3173316 40
-## 4 0.5069030 0.3215290 40</code></pre>
+<pre><code>##            ES        SE  N
+## 1  0.25258994 0.3175524 40
+## 2  0.28395406 0.3179008 40
+## 3  0.57935643 0.3231354 40
+## 4 -0.01535469 0.3162327 40</code></pre>
 <div id="exercises" class="section level2">
 <h2>Exercises</h2>
 <p>The function above is serviceable but quite basic. I can think of several additional features that one might like to have for use in research simulations, but I’m feeling both cheeky and lazy at the moment, so I’ll leave them for you, dear reader. Here are some suggested exercises:</p>
@@ -515,43 +515,54 @@ study_data &lt;-
   )
 
 study_data</code></pre>
-<pre><code>##       delta J  N       Psi
-## 1 0.1987523 3 46 0.5746622
-## 2 0.2140649 5 50 0.5470727
-## 3 0.2012227 4 48 0.6266796
-## 4 0.2008530 3 46 0.5743726
-## 5 0.2294582 3 42 0.5415640
-## 6 0.1930945 3 44 0.5049920</code></pre>
+<pre><code>##        delta J  N       Psi
+## 1 0.14433778 5 42 0.5091340
+## 2 0.23014723 5 42 0.5345596
+## 3 0.19286604 5 30 0.7333311
+## 4 0.06405133 8 50 0.4553884
+## 5 0.17813339 6 40 0.6244533
+## 6 0.13926096 3 48 0.6312443</code></pre>
 <p>Once we have the “menu” of study-level characteristics, it’s just a matter of mapping the parameters to the data-generating function. One way to do this is with <code>pmap_df</code>:</p>
 <pre class="r"><code>library(purrr)
 meta_data &lt;- pmap_df(study_data, r_SMDs_raw, .id = &quot;study&quot;)
 meta_data</code></pre>
-<pre><code>##    study          ES        SE  N
-## 1      1 -0.06215962 0.2949584 46
-## 2      1 -0.09330241 0.2950516 46
-## 3      1  0.47818672 0.2992573 46
-## 4      2 -0.27166913 0.2841985 50
-## 5      2 -0.31849408 0.2847045 50
-## 6      2 -0.33895993 0.2849505 50
-## 7      2 -0.23010052 0.2838160 50
-## 8      2 -0.08715351 0.2829825 50
-## 9      3  0.08724622 0.2888184 48
-## 10     3  0.33177792 0.2907401 48
-## 11     3 -0.08950127 0.2888259 48
-## 12     3  0.38327191 0.2914276 48
-## 13     4  0.43547351 0.2985155 46
-## 14     4  0.15851343 0.2953677 46
-## 15     4  0.28338912 0.2964273 46
-## 16     5  0.12678228 0.3089321 42
-## 17     5  0.26096064 0.3099828 42
-## 18     5  0.02109034 0.3086157 42
-## 19     6  0.06826576 0.3016033 44
-## 20     6 -0.09010931 0.3016716 44
-## 21     6  0.26679491 0.3029133 44</code></pre>
+<pre><code>##    study            ES        SE  N
+## 1      1  0.4486163142 0.3126560 42
+## 2      1  0.2795964077 0.3101859 42
+## 3      1  0.5629933798 0.3149605 42
+## 4      1  0.1971641509 0.3093930 42
+## 5      1  0.2331535286 0.3097057 42
+## 6      2  0.4621466784 0.3129023 42
+## 7      2  0.2521485416 0.3098916 42
+## 8      2  0.2184494441 0.3095716 42
+## 9      2  0.2203181084 0.3095882 42
+## 10     2  0.3137845009 0.3105944 42
+## 11     3  0.2670697095 0.3668883 30
+## 12     3  0.0723692957 0.3652764 30
+## 13     3  0.4383558489 0.3698171 30
+## 14     3  0.3408369365 0.3679780 30
+## 15     3  0.0858831288 0.3653287 30
+## 16     4 -0.2110827102 0.2836620 50
+## 17     4 -0.1021109466 0.2830346 50
+## 18     4 -0.7157460888 0.2921239 50
+## 19     4 -0.5160088409 0.2877040 50
+## 20     4 -0.1565482312 0.2832936 50
+## 21     4 -0.6227555938 0.2898963 50
+## 22     4  0.0005071704 0.2828427 50
+## 23     4 -0.1725756208 0.2833906 50
+## 24     5  0.2040274619 0.3170926 40
+## 25     5  0.1267420398 0.3165618 40
+## 26     5  0.2119879467 0.3171613 40
+## 27     5 -0.0768189202 0.3163505 40
+## 28     5  0.1505426644 0.3166989 40
+## 29     5  0.0877533144 0.3163879 40
+## 30     6  0.3077742937 0.2904530 48
+## 31     6 -0.0101146103 0.2886771 48
+## 32     6 -0.0064462652 0.2886759 48</code></pre>
 <pre class="r"><code>table(meta_data$study)</code></pre>
 <pre><code>## 
 ## 1 2 3 4 5 6 
-## 3 5 4 3 3 3</code></pre>
+## 5 5 5 8 6 3</code></pre>
 <p>Putting it all together into a function, we have</p>
 <pre class="r"><code>r_meta &lt;- function(K, mu, tau, J_mean, N_mean, rho, nu) {
   require(purrr)
@@ -584,6 +595,14 @@ N_k &amp;\sim 20 + 2 \times Poisson\left(\frac{1}{2}(\mu_N - 20) + \alpha (J_k -
 \end{align}
 \]</span> for user-specified values of <span class="math inline">\(\mu_J\)</span> (the average number of outcomes per study), <span class="math inline">\(\mu_N\)</span> (the average total sample size per study), and <span class="math inline">\(\alpha\)</span>, which controls the degree of dependence between <span class="math inline">\(J_k\)</span> and <span class="math inline">\(N_k\)</span>.</p></li>
 </ol>
+</div>
+<div id="a-challenge" class="section level2">
+<h2>A challenge</h2>
+<p>The meta-analytic model that we’re using here is quite simple—simplistic, even—and for some simulation studies, something more complex might be needed. For example, we might need to generate data from a model that includes within-study random effects, as in: <span class="math display">\[
+\delta_{jk} = \mu + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2).
+\]</span> Even more complex would be to simulate from a multi-level meta-regression model <span class="math display">\[
+\delta_{jk} = \mathbf{x}_{jk} \boldsymbol\beta + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2),
+\]</span> where <span class="math inline">\(\mathbf{x}_{jk}\)</span> is a <span class="math inline">\(1 \times p\)</span> row-vector of covariates describing outcome <span class="math inline">\(j\)</span> in study <span class="math inline">\(k\)</span> and <span class="math inline">\(\boldsymbol\beta\)</span> is a <span class="math inline">\(p \times 1\)</span> vector of meta-regression coefficients. In past work, I’ve done this by writing a data-generating function that takes a fixed design matrix <span class="math inline">\(\mathbf{X} = \left(\mathbf{x}_{11}&#39; \cdots \mathbf{x}_{J_K K}&#39;\right)&#39;\)</span> as an input argument, along with <span class="math inline">\(\boldsymbol\beta\)</span>. The design matrix would also include an identifier for each unique study. There are surely better (simpler, easier to follow) ways to implement the multi-level meta-regression model. I’ll once again leave it to you to work out an approach.</p>
 </div>
 </div>
 

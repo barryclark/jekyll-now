@@ -228,3 +228,15 @@ N_k &\sim 20 + 2 \times Poisson\left(\frac{1}{2}(\mu_N - 20) + \alpha (J_k - \mu
 \end{align}
 $$
     for user-specified values of $\mu_J$ (the average number of outcomes per study), $\mu_N$ (the average total sample size per study), and $\alpha$, which controls the degree of dependence between $J_k$ and $N_k$.
+    
+## A challenge
+
+The meta-analytic model that we're using here is quite simple---simplistic, even---and for some simulation studies, something more complex might be needed. For example, we might need to generate data from a model that includes within-study random effects, as in:
+$$
+\delta_{jk} = \mu + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2).
+$$
+Even more complex would be to simulate from a multi-level meta-regression model
+$$
+\delta_{jk} = \mathbf{x}_{jk} \boldsymbol\beta + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2),
+$$
+where $\mathbf{x}_{jk}$ is a $1 \times p$ row-vector of covariates describing outcome $j$ in study $k$ and $\boldsymbol\beta$ is a $p \times 1$ vector of meta-regression coefficients. In past work, I've done this by writing a data-generating function that takes a fixed design matrix $\mathbf{X} = \left(\mathbf{x}_{11}' \cdots \mathbf{x}_{J_K K}'\right)'$ as an input argument, along with $\boldsymbol\beta$. The design matrix would also include an identifier for each unique study. There are surely better (simpler, easier to follow) ways to implement the multi-level meta-regression model. I'll once again leave it to you to work out an approach.
