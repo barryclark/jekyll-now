@@ -5,7 +5,7 @@ date:       2015-06-08 12:32:18
 active:     Yes
 summary:    Using thumbnails in your Carte Noire articles.
 category: Work project
-thumbnail: navigator
+thumbnail: 
 tags:
   - Product
   - ArcGIS

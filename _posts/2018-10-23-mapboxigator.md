@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      Mapboxigator
-date:       2015-03-23 15:31:19
+date:       2018-10-23 15:31:19
 active:     No
 summary:    Carte Noire is a dark blog theme for Jekyll focusing on a clear reading experience.
 category: Personal project
-thumbnail:  heart
+thumbnail:  
 tags:
  - iOS
  - Swift
@@ -17,7 +17,6 @@ tags:
 <!---
 Description and background of project / task
 -->
-
 
 <!---
 Images / videos (if applicable)

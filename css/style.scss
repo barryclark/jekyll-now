@@ -50,7 +50,7 @@ $medium-purple:  #480048;
 $regular-purple: #601848;
 $red:            #C04848;
 $orange:         #F07241;
-
+$color--text-on-base: rgba(0,0,0,.7);
 
 
 
@@ -303,6 +303,48 @@ $typography-font-weight-values: (
 
 	&:hover {
 		background-color: rgba(255,255,255,.08);
+	}
+}
+
+@mixin headline5 {
+	font-size: 1.5rem; // 24sp
+	line-height: 2rem; // 32sp
+	font-weight: map-get($typography-font-weight-values, regular);
+	letter-spacing: normal;
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+
+.container__image {
+	margin-bottom: 64px;
+	padding: 16px 16px 0;
+	position: relative;
+
+	img {
+		display: block;
+		max-width: -webkit-max-content;
+		max-width: -moz-max-content;
+		max-width: max-content;
+		width: 100%;
+	}
+
+	.header {
+		bottom: 0;
+		margin-bottom: 0;
+		position: absolute;
+
+		.title,
+		.subtitle {
+			background-color: #FFF;
+			color: $color--text-on-base;
+			margin: 0;
+			padding: 0 8px;
+		}
+
+		.title {
+			@include headline5;
+			display: inline-block;
+		}
 	}
 }
 

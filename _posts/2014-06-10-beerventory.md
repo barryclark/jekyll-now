@@ -4,7 +4,7 @@ title:      Beerventory
 date:       2014-06-10 12:31:19
 summary:    See what the different elements looks like.
 category: Personal project
-thumbnail: cogs
+thumbnail: 
 tags:
  - iOS
  - Swift

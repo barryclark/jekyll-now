@@ -5,7 +5,7 @@ date:       2014-06-10 12:31:19
 active:     No
 summary:    See what the different elements looks like.
 category: Personal project
-thumbnail: cogs
+thumbnail: 
 tags:
  - iOS
  - Swift
@@ -13,40 +13,35 @@ tags:
  - Google Firebase
 ---
 
-
-<!---
-Description and background of project / task
--->
-
-
-<!---
-Images / videos (if applicable)
--->
-
-
-
-<!---
-Goals / roles
--->
-
-
-
-<!---
-Challenges
--->
-
-
-
-<!---
-Outcome
--->
-
-
-
-<!---
 <p>
-  <a class="chip read-more" target="_blank" href="">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 14.25H3.75V3.75H9V2.25H3.75C2.9175 2.25 2.25 2.925 2.25 3.75V14.25C2.25 15.075 2.9175 15.75 3.75 15.75H14.25C15.075 15.75 15.75 15.075 15.75 14.25V9H14.25V14.25ZM10.5 2.25V3.75H13.1925L5.82 11.1225L6.8775 12.18L14.25 4.8075V7.5H15.75V2.25H10.5Z" fill="#dab827"></path></svg> Read more
+  <a class="chip read-more" target="_blank" href="https://github.com/JoelWhitney/klask">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 14.25H3.75V3.75H9V2.25H3.75C2.9175 2.25 2.25 2.925 2.25 3.75V14.25C2.25 15.075 2.9175 15.75 3.75 15.75H14.25C15.075 15.75 15.75 15.075 15.75 14.25V9H14.25V14.25ZM10.5 2.25V3.75H13.1925L5.82 11.1225L6.8775 12.18L14.25 4.8075V7.5H15.75V2.25H10.5Z" fill="#dab827"></path></svg> View on GitHub
   </a>
 </p>
--->
+
+## Overview
+
+Klask is a table-top game akin to air hockey that we play in the office at Esri. The goal is simple: hit the ball in the opponent’s goal using a piece on the table controlled by magnets under the table. We play a lot of Klask in the office and had no way to keep track of our wins and losses. We needed the ability to report games and keep track of player statistics over time.
+
+![klask]("https://joelwhitney.github.io/images/klask_tabletop.jpg")
+
+## Solution
+
+The solution was to create mobile application that could help us keep track. Since most of our coworkers are iOS users, Justin and I created an iOS app to help the office keep standings. Justin helped me with the design and I did the development work. There were a handful of Android users in the office, so a couple of my colleagues (Aaron and Dawit) built a similar Progressive Web App so they could partake.
+
+
+<div class="container__image">
+<table style="width:100%" text-align="center">
+  <tr>
+  <td><img src="https://joelwhitney.github.io/images/klask-1.png"></td>
+    <td><img src="https://joelwhitney.github.io/images/klask-2.png"></td>
+    <td><img src="https://joelwhitney.github.io/images/klask-3.png"></td>
+    <td><img src="https://joelwhitney.github.io/images/klask-4.png"></td>
+    <td><img src="https://joelwhitney.github.io/images/klask-5.png"></td>
+  </tr>
+</table>
+</div>
+
+<!-- ## Retrospective
+
+This was a great  -->
