@@ -8,10 +8,13 @@ You are welcome to share relevant events and offers with the Cloud Native London
 
 To help cover running costs, we ask for a donation of £100.
 
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
 {% if jekyll.environment == "production" %}
 {% include stripe-donate.html %}
 {% else %}
 {% include stripe-donate-test.html %}
 {% endif %}
 
-Once received, we will follow up to confirm.
+Once received, we will follow up to confirm your offer to share.

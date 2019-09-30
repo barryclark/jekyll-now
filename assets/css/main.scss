@@ -241,15 +241,12 @@ button {
     font-weight: 400;
     letter-spacing: -.022em;
     font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    background-color: #0070c9;
-    background: linear-gradient(#42a1ec,#0070c9);
-    border-color: #07c;
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
     color: white;
     cursor: pointer;
-    display: inline-block;
+    display: inline;
     min-width: 30px;
     padding-left: 15px;
     padding-right: 15px;
@@ -257,6 +254,18 @@ button {
     padding-bottom: 4px;
     text-align: center;
     white-space: nowrap;
+}
+
+button.stripe {
+  background-color: #0070c9;
+  background: linear-gradient(#42a1ec,#0070c9);
+  border-color: #07c;
+}
+
+button.gocardless {
+  background-color: #009973;
+  background: linear-gradient(#3cd686, #009973);
+  border-color: #00a846;
 }
 
 @import "lagrange";

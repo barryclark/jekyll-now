@@ -1,17 +1,19 @@
-<button class="stripe" id="checkout-button-sku_Ft4pViL0XBDlaL" role="link">
-  Donate
+<button class="stripe" id="checkout-button-plan_Fsklw6wcV2JNAW" role="link">
+  Credit card (TEST)
 </button>
+
+<div id="error-message"></div>
 
 <script>
 (function() {
-  var stripe = Stripe('pk_live_gRovPiGzsmDnzUPZlDt4mR6U00q124AvQ7');
+  var stripe = Stripe('pk_test_UdxvSn4lx17grmpJi0RNXWcb00Pej398Ov');
 
-  var checkoutButton = document.getElementById('checkout-button-sku_Ft4pViL0XBDlaL');
+  var checkoutButton = document.getElementById('checkout-button-plan_Fsklw6wcV2JNAW');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_Ft4pViL0XBDlaL', quantity: 1}],
+      items: [{plan: 'plan_Fsklw6wcV2JNAW', quantity: 1}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
@@ -19,7 +21,7 @@
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
       successUrl: 'https://www.oicheryl.com/cloudnativelondon/success',
-      cancelUrl: 'https://www.oicheryl.com/cloudnativelondon/promote',
+      cancelUrl: 'https://www.oicheryl.com/cloudnativelondon/canceled',
     })
     .then(function (result) {
       if (result.error) {

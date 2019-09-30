@@ -1,13 +1,8 @@
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button id="checkout-button-plan_FskXiPL7dHz7vb" role="link">
-  Set up monthly sponsorship
-</button>
-
 <button id="checkout-button-sku_FcKSyxgCZkGGfx" role="link">
-  Sponsor 1 month
+  One month
+</button><button id="checkout-button-sku_Fp3WSvzUlJPkqv" role="link">
+  Three months
 </button>
 
 <div id="error-message"></div>
@@ -68,35 +63,4 @@
       }
     });
   });
-</script>
-
-<script>
-(function() {
-  var stripe = Stripe('pk_live_gRovPiGzsmDnzUPZlDt4mR6U00q124AvQ7');
-
-  var checkoutButton = document.getElementById('checkout-button-plan_FskXiPL7dHz7vb');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{plan: 'plan_FskXiPL7dHz7vb', quantity: 1}],
-
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://www.oicheryl.com/cloudnativelondon/success',
-      cancelUrl: 'https://www.oicheryl.com/cloudnativelondon/sponsor',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
 </script>
