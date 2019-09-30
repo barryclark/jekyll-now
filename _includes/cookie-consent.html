@@ -1,0 +1,82 @@
+<style>
+    #cookie-notice {
+        padding: 7px 15px;
+        display: none;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #222;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #cookie-notice a {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    #cookie-notice span {
+        text-align: center
+    }
+
+    @media (max-width: 767px) {
+        #cookie-notice span {
+            display: block;
+            padding-top: 3px;
+            margin-bottom: 13px
+        }
+
+        #cookie-notice a {
+            position: relative;
+            bottom: 4px
+        }
+    }
+</style>
+<div id="cookie-notice">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+        <span>We use cookies to analyze site traffic.
+            By clicking "Approve" on this banner, or by using our site, you consent to the use of cookies, unless you
+            disable them. Click "How to Manage" for help on how to disable cookies.</span><a id="cookie-notice-accept"
+            class="btn btn-primary btn-sm">Approve</a>&nbsp;<a href="/privacy/manage-cookies/"
+            class="btn btn-primary btn-sm">How to Manage</a>
+    </div>
+    
+</div>
+<script>
+    function createCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name, "", -1);
+    }
+
+    if (readCookie('cookie-notice-dismissed') == 'true') {
+        {% include ga.js %}
+
+    } else {
+        $('#cookie-notice').show();
+    }
+    $('#cookie-notice-accept').click(function () {
+        createCookie('cookie-notice-dismissed', 'true', 365);
+        $('#cookie-notice').hide();
+        location.reload();
+    });
+
+</script>

@@ -6,12 +6,12 @@ navigation_weight: 5
 permalink: /impressum/
 ---
 
-Holger Reinhardt
+Raul Firu
 (verantwortlich i.S.d. § 55 Abs. 2 RStV)
 
 ### Anschrift:
 
-Haufe-Lexware GmbH & Co. KG
+Haufe-Lexware Services GmbH & Co. KG
 
 Ein Unternehmen der Haufe Gruppe
 
