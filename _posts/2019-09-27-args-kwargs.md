@@ -2,11 +2,11 @@
 layout: post
 title: Args and Kwargs in python functions
 comments: true
-description: "Interpreting a ML model's performance "
-tags: "machine learning, confusion matrix, accuracy, f1_score"
+description: "Using the flexible functions arguments in pyhton. "
+tags: "args, kwargs, python, function"
 ---
 
-#### What is Machine Learning? 
+#### Python function 
 
 
   
