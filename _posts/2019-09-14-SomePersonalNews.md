@@ -15,10 +15,12 @@ Despite being detailless, my last tweet made it clear that things weren’t good
 On my way to the airport where I was supposed to take a flight to San Francisco for Code One, I got a call, she wasn’t doing well! I postponed my trip to SF and went back home as quickly as possible. I spare you the details but she is now OK and on her way to recovery (kid’s resilience is amazing!). I postponed my trip to Code One but then realised that it was the wrong thing to do; simply canceling my trip was the right thing do. Code One is for me the most important week in the year but being 9000KM away from her wouldn’t have helped her to recover so quickly. Sure, it sucks to miss Code One but I will be able to catch-up the technical content online at some point, discuss with community members during other conferences, chat with my US colleagues over Slack, etc. At the end, being with my family during bad (and good) times is more important than anything else!
 
 
-What stroke me is that many people from the Java community reached to me, through public and private channels, to ask what was going on and to send me wishes! But that’s not all, several people whished _*my daughter*_ a speedy recovery! I mean some people who I interact with at Java conferences were *able to guess from my detailless tweet that it wasn’t me but my daughter who had a health issue!*. Simply amazing and heartwarming!
+What stroke me is that many people from the Java community reached to me, through public and private channels, to ask what was going on and to send me wishes! But that’s not all, several people whished _*my daughter*_ a speedy recovery! I mean some people who I interact with at Java conferences were _*able to guess from my detailless tweet that it wasn’t me but my daughter who had a health issue!*_. Simply amazing and heartwarming!
 
 
 And last but not certainly least, my colleagues. When I told them about our issue, all the reactions were _“Oh no! I hope she will recover quickly. What can I do? Be with her and forget everything else!”_. In short, I work in a great team with amazing peoples!
+
+
 In our field, we sometimes tend to focus too much on the technology but issues like the one we just faced show that we are also surrounded by great humans. Unfortunately the technology sometimes tends to overshadow this. During tough time, it is heartwarming and recomforting to witness such empathy!
 
 Thank you all! And enjoy Code One!
