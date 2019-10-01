@@ -86,10 +86,10 @@ But this is a hackathon and we can get away with
 
 The initial code of our Python template matching (slightly adapted from the [example above][4]) looks like this
 
-<details><summary>OpenCV template matching with 4 templates</summary>
-<p>
+*OpenCV template matching with 4 templates*
 
 ```python
+
 import cv2 as cv
 import numpy as np
 
@@ -129,9 +129,6 @@ if __name__ == "__main__":
     process_image()
 ```
 
-</p>
-</details> 
-
 This renders the 4 templates onto the image and counts how many desks we have detected.  
 We start with an initial threshold of `0.5`. 
 
@@ -169,10 +166,10 @@ We actually need to ignore the area of the last matched template so as to detect
 
 Continuing this [StackOverflow-driven-development][12] approach, the code changes slightly 
 
-<details><summary>Improved OpenCV template matching code</summary>
-<p>
+*Improved OpenCV template matching code*
 
 ```python
+
 import cv2 as cv
 import numpy as np
 
@@ -212,9 +209,7 @@ def search_template(floor_image_rgb, floor_image_gray, template_name, color):
 if __name__ == "__main__":
     process_image()
 ```
-
-</p>
-</details> 
+ 
 
 We have now added a mask which we update each time we find a match.  
 This "blacks out" that area, making sure we do not have multiple matches close to each other.
@@ -239,9 +234,9 @@ Much better!
 We can play around with the value of the threshold and/or the creation of the mask.  
 But this is a hackathon, so we can pause here. 
 
-## Image map
+## Image maps
 
-![Another type of map](../images/desk-reservation-1/waldemar-brandt-aHZF4sz0YNw-unsplash.jpg.png)
+![Another type of map](../images/desk-reservation-1/waldemar-brandt-aHZF4sz0YNw-unsplash.jpg)
 > Photo by Waldemar Brandt on Unsplash
 
 The reason we are detecting the desks is not just to highlight them on the floor plan image.
