@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building wealth: Some life lessons
+title: Building wealth - Some life lessons
 excerpt_separator: <!--more-->
 tags: [wealth, life, personal development]
 ---
