@@ -15,7 +15,8 @@ Lambda expressions basically are ***functional programming***, which means they 
 There are a few of methods for functional interfaces:
 1. run
 
->@FunctionalInterface 
+
+@FunctionalInterface 
 
 public interface Runnable  
 
@@ -44,9 +45,17 @@ public Predicate
    public boolean test(T  t);
  }
  
+ 
  4.  Binary Operator
  
  public interface BinaryOperator 
 {
      public T apply(T x, T y);
 }    
+
+5. function 
+
+public interface Function 
+{
+   public R apply(T t);
+}
