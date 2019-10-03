@@ -16,7 +16,7 @@ There are a few of methods for functional interfaces:
 1.
 
 >@FunctionalInterface
->public interface Runnable 
->{
->   public abstract void run();
->}
+\public interface Runnable 
+\{
+\   public abstract void run();
+\}
