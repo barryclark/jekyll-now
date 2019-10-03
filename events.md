@@ -7,8 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2019
 
-September 23 - 25: Open Networking Summit EU, Antwerp
-
 October 2 - 3:  OpenInfraDays Nordics, Stockholm
 * [**Keynote**](https://openinfranordics.com/program/)
 
