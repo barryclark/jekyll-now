@@ -13,7 +13,7 @@ Lambda expressions basically are ***functional programming***, which means they 
 ## The functional interfaces for Lambda
 
 There are a few of methods for functional interfaces:
-1.
+1. run
 
 >@FunctionalInterface 
 
@@ -23,3 +23,30 @@ public interface Runnable
 
    public abstract void run();
 }
+
+2. Create new thread
+
+class Test 
+{ 
+  public static void main(String args[]) 
+  { 
+  
+    // lambda expression to create the object 
+    new Thread(()-> 
+       {System.out.println("New thread created");}).start(); 
+  } 
+} 
+
+3. predicate
+
+public Predicate
+{
+   public boolean test(T  t);
+ }
+ 
+ 4.  Binary Operator
+ 
+ public interface BinaryOperator 
+{
+     public T apply(T x, T y);
+}    
