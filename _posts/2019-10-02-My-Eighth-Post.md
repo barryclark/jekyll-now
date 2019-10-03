@@ -11,17 +11,17 @@ title: Learning Journal for October 2nd
   >///more codes///
   >}
   
-  >\public Pizza build(){
-  > \Pizza pizza = new pizza();
-  > \pizza.cheeze = cheeze...\
+  >\ public Pizza build(){
+  > \ Pizza pizza = new pizza();
+  > \ pizza.cheeze = cheeze...\
   >///more codes///
   >\ public Builder withCheese(String  cheese) {\
-  >\this.cheese = cheese;\
-  >\return this}\
-  >\void Temp(){\
-  >\Pizza cheesePizza = newPizza.Builder();\
-  >\pizza cheese = cheese;
-  >\return pizza;}\
+  >\ this.cheese = cheese;\
+  >\ return this}\
+  >\ void Temp(){\
+  >\ Pizza cheesePizza = newPizza.Builder();\
+  >\ pizza cheese = cheese;
+  >\ return pizza;}\
  Basically, builder is like putting all components together to make a similar projects, like making cars that come with different functions.
 ## Information Expert
 It corresponds to the single responsible principle. A code block should only do one thing.
