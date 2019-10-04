@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Leadership in the Open Source Community"
+title: "Leadership in the Open Source Community: TheNewStack podcast"
 description: "Watch the discussion with CNCF Director of Ecosystem Cheryl Hung, Microsoft Director of Open Source Initiatives Ashley McNamara, Aqua Security Technology Evangelist Liz Rice, and Two Sigma Engineer Leah Petersen."
 location: Barcelona, Spain
 feature_image: https://cdn.thenewstack.io/media/2019/07/069bc85f-kubecon-comms.jpg
 video: https://www.youtube.com/embed/vYxkJX2H4Ls
 tags:
   - Video
+  - Podcast
   - "2019"
 ---
 
