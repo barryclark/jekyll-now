@@ -4,6 +4,9 @@
 - slug: automation
   name: Automation
 
+- slug: aws
+  name: AWS
+
 - slug: bots
   name: Bots
 
