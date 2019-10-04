@@ -62,122 +62,122 @@ public interface Function
 
 (The following is copied from Zach's blog. Thanks Zach!)
 
-BiPredicate<T,U>
+1 BiPredicate<T,U>
 Represents a predicate (boolean-valued function) of two arguments.
 
-BooleanSupplier
+1 BooleanSupplier
 Represents a supplier of boolean-valued results.
 
-Consumer
+1 Consumer
 Represents an operation that accepts a single input argument and returns no result.
 
-DoubleBinaryOperator
+1 DoubleBinaryOperator
 Represents an operation upon two double-valued operands and producing a double-valued result.
 
-DoubleConsumer
+1 DoubleConsumer
 Represents an operation that accepts a single double-valued argument and returns no result.
 
-DoubleFunction
+1 DoubleFunction
 Represents a function that accepts a double-valued argument and produces a result.
 
-DoublePredicate
+1 DoublePredicate
 Represents a predicate (boolean-valued function) of one double-valued argument.
 
-DoubleSupplier
+1 DoubleSupplier
 Represents a supplier of double-valued results.
 
-DoubleToIntFunction
+1 DoubleToIntFunction
 Represents a function that accepts a double-valued argument and produces an int-valued result.
 
-DoubleToLongFunction
+1 DoubleToLongFunction
 Represents a function that accepts a double-valued argument and produces a long-valued result.
 
-DoubleUnaryOperator
+1 DoubleUnaryOperator
 Represents an operation on a single double-valued operand that produces a double-valued result.
 
-Function<T,R>
+1 Function<T,R>
 Represents a function that accepts one argument and produces a result.
 
-IntBinaryOperator
+1 IntBinaryOperator
 Represents an operation upon two int-valued operands and producing an int-valued result.
 
-IntConsumer
+1 IntConsumer
 Represents an operation that accepts a single int-valued argument and returns no result.
 
-IntFunction
+1 IntFunction
 Represents a function that accepts an int-valued argument and produces a result.
 
-IntPredicate
+1 IntPredicate
 Represents a predicate (boolean-valued function) of one int-valued argument.
 
-IntSupplier
+1 IntSupplier
 Represents a supplier of int-valued results.
 
-IntToDoubleFunction
+1 IntToDoubleFunction
 Represents a function that accepts an int-valued argument and produces a double-valued result.
 
-IntToLongFunction
+1 IntToLongFunction
 Represents a function that accepts an int-valued argument and produces a long-valued result.
 
-IntUnaryOperator
+1 IntUnaryOperator
 Represents an operation on a single int-valued operand that produces an int-valued result.
 
-LongBinaryOperator
+1 LongBinaryOperator
 Represents an operation upon two long-valued operands and producing a long-valued result.
 
-LongConsumer
+1 LongConsumer
 Represents an operation that accepts a single long-valued argument and returns no result.
 
-LongFunction
+1 LongFunction
 Represents a function that accepts a long-valued argument and produces a result.
 
-LongPredicate
+1 LongPredicate
 Represents a predicate (boolean-valued function) of one long-valued argument.
 
-LongSupplier
+1 LongSupplier
 Represents a supplier of long-valued results.
 
-LongToDoubleFunction
+1 LongToDoubleFunction
 Represents a function that accepts a long-valued argument and produces a double-valued result.
 
-LongToIntFunction
+1 LongToIntFunction
 Represents a function that accepts a long-valued argument and produces an int-valued result.
 
-LongUnaryOperator
+1 LongUnaryOperator
 Represents an operation on a single long-valued operand that produces a long-valued result.
 
-ObjDoubleConsumer
+1 ObjDoubleConsumer
 Represents an operation that accepts an object-valued and a double-valued argument, and returns no result.
 
-ObjIntConsumer
+1 ObjIntConsumer
 Represents an operation that accepts an object-valued and a int-valued argument, and returns no result.
 
-ObjLongConsumer
+1 ObjLongConsumer
 Represents an operation that accepts an object-valued and a long-valued argument, and returns no result.
 
-Predicate
+1 Predicate
 Represents a predicate (boolean-valued function) of one argument.
 
-Supplier
+1 Supplier
 Represents a supplier of results.
 
-ToDoubleBiFunction<T,U>
+1 ToDoubleBiFunction<T,U>
 Represents a function that accepts two arguments and produces a double-valued result.
 
-ToDoubleFunction
+1 ToDoubleFunction
 Represents a function that produces a double-valued result.
 
-ToIntBiFunction<T,U>
+1 ToIntBiFunction<T,U>
 Represents a function that accepts two arguments and produces an int-valued result.
 
-ToIntFunction
+1 ToIntFunction
 Represents a function that produces an int-valued result.
 
-ToLongBiFunction<T,U>
+1 ToLongBiFunction<T,U>
 Represents a function that accepts two arguments and produces a long-valued result.
 
-ToLongFunction
+1 ToLongFunction
 Represents a function that produces a long-valued result.
 
-UnaryOperator
+1 UnaryOperator
 Represents an operation on a single operand that produces a result of the same type as its operand.
