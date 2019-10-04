@@ -7,6 +7,7 @@ feature_image: https://cdn.thenewstack.io/media/2019/07/069bc85f-kubecon-comms.j
 video: https://www.youtube.com/embed/vYxkJX2H4Ls
 tags:
   - Video
+  - Podcast
   - "2019"
 ---
 
