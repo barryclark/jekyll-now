@@ -62,85 +62,85 @@ public interface Function
 
 (The following is copied from Zach's blog. Thanks Zach!)
 
-1 BiPredicate<T,U>
+6.  BiPredicate<T,U>
 Represents a predicate (boolean-valued function) of two arguments.
 
-1 BooleanSupplier
+7. BooleanSupplier
 Represents a supplier of boolean-valued results.
 
-1 Consumer
+8. Consumer
 Represents an operation that accepts a single input argument and returns no result.
 
-1 DoubleBinaryOperator
+9. DoubleBinaryOperator
 Represents an operation upon two double-valued operands and producing a double-valued result.
 
-1 DoubleConsumer
+10. DoubleConsumer
 Represents an operation that accepts a single double-valued argument and returns no result.
 
-1 DoubleFunction
+11. DoubleFunction
 Represents a function that accepts a double-valued argument and produces a result.
 
-1 DoublePredicate
+12. DoublePredicate
 Represents a predicate (boolean-valued function) of one double-valued argument.
 
-1 DoubleSupplier
+13. DoubleSupplier
 Represents a supplier of double-valued results.
 
-1 DoubleToIntFunction
+14. DoubleToIntFunction
 Represents a function that accepts a double-valued argument and produces an int-valued result.
 
-1 DoubleToLongFunction
+15. DoubleToLongFunction
 Represents a function that accepts a double-valued argument and produces a long-valued result.
 
-1 DoubleUnaryOperator
+16. DoubleUnaryOperator
 Represents an operation on a single double-valued operand that produces a double-valued result.
 
-1 Function<T,R>
+17. Function<T,R>
 Represents a function that accepts one argument and produces a result.
 
-1 IntBinaryOperator
+18. IntBinaryOperator
 Represents an operation upon two int-valued operands and producing an int-valued result.
 
-1 IntConsumer
+19. IntConsumer
 Represents an operation that accepts a single int-valued argument and returns no result.
 
-1 IntFunction
+20. IntFunction
 Represents a function that accepts an int-valued argument and produces a result.
 
-1 IntPredicate
+21. IntPredicate
 Represents a predicate (boolean-valued function) of one int-valued argument.
 
-1 IntSupplier
+22.IntSupplier
 Represents a supplier of int-valued results.
 
-1 IntToDoubleFunction
+23. IntToDoubleFunction
 Represents a function that accepts an int-valued argument and produces a double-valued result.
 
-1 IntToLongFunction
+24. IntToLongFunction
 Represents a function that accepts an int-valued argument and produces a long-valued result.
 
-1 IntUnaryOperator
+25 IntUnaryOperator
 Represents an operation on a single int-valued operand that produces an int-valued result.
 
-1 LongBinaryOperator
+26. LongBinaryOperator
 Represents an operation upon two long-valued operands and producing a long-valued result.
 
-1 LongConsumer
+27. LongConsumer
 Represents an operation that accepts a single long-valued argument and returns no result.
 
-1 LongFunction
+28. LongFunction
 Represents a function that accepts a long-valued argument and produces a result.
 
-1 LongPredicate
+29. LongPredicate
 Represents a predicate (boolean-valued function) of one long-valued argument.
 
-1 LongSupplier
+30. LongSupplier
 Represents a supplier of long-valued results.
 
-1 LongToDoubleFunction
+31. LongToDoubleFunction
 Represents a function that accepts a long-valued argument and produces a double-valued result.
 
-1 LongToIntFunction
+32. LongToIntFunction
 Represents a function that accepts a long-valued argument and produces an int-valued result.
 
 1 LongUnaryOperator
