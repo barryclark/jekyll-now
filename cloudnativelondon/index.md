@@ -5,8 +5,7 @@ description: "Request to speak at or sponsor Cloud Native London."
 ---
 
 <a href="https://www.meetup.com/Cloud-Native-London/"><img src="/assets/cloudnativelon.png"></a>
-<h2 class="text-center">The largest cloud native meetup worldwide </h2>
-<div class="text-center">Cloud Native London is dedicated to building a strong, open, diverse developer community around the Cloud Native platform and technologies in London. It runs on the first Wednesday of every month and has 200-300 attendees each month.</div>
+<div class="text-center">The largest cloud native meetup worldwide, Cloud Native London is a strong, open, diverse developer community around the Cloud Native platform and technologies in London. We run meetups on the first Wednesday of every month, with 200-300 attendees.</div>
 
 <p>
 
@@ -18,6 +17,6 @@ description: "Request to speak at or sponsor Cloud Native London."
 
 {% include product.html title="Promote" subtitle="Share your events and offers" image="product-images/promote.png" url="/cloudnativelondon/promote" %}
 
-{% include product.html title="Read" subtitle="Catch up on past meetups" image="product-images/read-cloud-native-london.jpg" url="/archive/meetup" %}
+{% include product.html title="Catch up" subtitle="Find past talks and events" image="product-images/read-cloud-native-london.jpg" url="/archive/meetup" %}
 
 </div>

@@ -7,11 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2019
 
-September 23 - 25: Open Networking Summit EU, Antwerp
-
-October 2 - 3:  OpenInfraDays Nordics, Stockholm
-* [**Keynote**](https://openinfranordics.com/program/)
-
 October 8:  Cloud Native Revolution, Philadelphia
 * [**Keynote: Cloud native past, present and future**](https://www.comcastlabsconnect.com/2019-cloud-native-revolution-schedule/2019/10/8/cloud-native-past-present-and-future-by-cheryl-hung-of-cloud-native-computing-foundation)
 
