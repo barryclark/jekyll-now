@@ -8,6 +8,7 @@ video: https://www.youtube.com/embed/vYxkJX2H4Ls
 tags:
   - Video
   - Podcast
+  - Article
   - "2019"
 ---
 
