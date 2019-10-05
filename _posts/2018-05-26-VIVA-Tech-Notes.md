@@ -1,16 +1,13 @@
 ---
 layout: post
 title: VivaTech 2018 Notes & Thoughts
+header-image: /images/IMG_20180524_174152.jpg
+header-alt: Welcome to VIVA Tech 2018
 ---
-![VIVATech 2018](/images/IMG_20180524_174152.jpg)
-# Intro
-VivaTech, an annual technology &amp; innovation conference in its third year, is billed as _"the world’s rendezvous for startups and leaders to celebrate innovation"_. Held in Paris, this week it attracted 80000 attendees, 8000 European startups and dozens of large players in technology across Europe. It also featured talks from Facebook’s Mark Zuckerberg, Microsoft's Satya Nadella, and IBM's Ginni Rometty amongst many, many more.
-
+VivaTech, an annual technology &amp; innovation conference in its third year, is billed as _"the world’s rendezvous for startups and leaders to celebrate innovation"_. Held in Paris, this week it attracted 80000 attendees, 8000 European startups and dozens of large players in technology across Europe. It also featured talks from Facebook’s Mark Zuckerberg, Microsoft's Satya Nadella, and IBM's Ginni Rometty amongst many, many more. 
 I decided to attend VivaTech to explore the wide range of industries and technologies on display. As I am graduating next year, the event gave me an opportunity to look into possible career paths as well as gain an insight into the direction that the industry is moving as a whole. Although VivaTech was more business-oriented, it also featured talks and workshops by senior engineers in the field. This mix allowed me to gain both a high-level overview of upcoming technologies, but also a more detailed insight into the lives and work of people those in these areas.
 
 VivaTech covered topics ranging from Artificial Intelligence, Blockchain, IoT, and Quantum Computing. It also looked at many themes including Mobility, Smart Cities, Travel, African Tech scene, Startups, Future Tech, Digital Transformation, and Tech for Good. Unfortunately I was not able to see every talk I had planned to, but I'd like to summarise what I picked up from a handful of the talks below.
-
-___
 
 # Day One Talks
 I almost feel like I tried to do this conference on hard-mode; before attending I had packed my day with back-to-back talks. I should have known better since it's inevitable that things will run behind — which of course they did. I attended as much as I could over the two days, and below I've written my notes up and takeaways from some of my favorite talks.

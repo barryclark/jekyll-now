@@ -1,12 +1,11 @@
 ---
 layout: post
 title: A Trip To Brighton - FFConf 2018
+header-image: /images/MVIMG_20181108_092030.jpg
+header-alt: My lanyard
 ---
-![My lanyard](/images/MVIMG_20181108_092030.jpg "My lanyard")
-
-I absolutely love the journey to Brighton. I set off early in the morning from Dundee and around 8 hours later after some beautiful scenes down the East Coast Main Line, through London and then onto the Brighton mainline, I arrive at a very cosy Airbnb.
-
-Above all, the thing I enjoy most is the atmosphere of the city. When you leave the station, you're met with a bunch of food trucks and stalls, it's a busy place but not a rushed place. It's got a creative flair which results in all kinds of utility boxes having artwork across them providing a great feel to the city. While there I couldn't help but think that Dundee is to Edinburgh as Brighton is to London.
+<!-- ![My lanyard](/images/MVIMG_20181108_092030.jpg "My lanyard") -->
+I absolutely love the journey to Brighton. I set off early in the morning from Dundee and around 8 hours later after some beautiful scenes down the East Coast Main Line, through London and then onto the Brighton mainline, I arrive at a very cosy Airbnb. Above all, the thing I enjoy most is the atmosphere of the city. When you leave the station, you're met with a bunch of food trucks and stalls, it's a busy place but not a rushed place. It's got a creative flair which results in all kinds of utility boxes having artwork across them providing a great feel to the city. While there I couldn't help but think that Dundee is to Edinburgh as Brighton is to London.
 
 ![A slide from Charlie Owen's 'Dear Developer, the Web Isn't About You' talk](/images/MVIMG_20181108_151732.jpg "A slide from Charlie Owen's 'Dear Developer, the Web Isn't About You' talk")
 

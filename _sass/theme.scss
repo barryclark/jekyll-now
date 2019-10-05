@@ -97,7 +97,6 @@ header {
 //
 .container {
 	margin:0 150px;
-	max-width: 720px;
 
 	div.highlighter-rouge {
 		right: 150px;
@@ -111,6 +110,9 @@ header {
 		div.highlight {
 			padding: 30px 15px;
 		}
+		.posts aside{
+			display: none;
+		}
 	}
 
 	@media screen and (max-width: $tabWidth) and (min-width: $mobileWidth){
@@ -121,8 +123,10 @@ header {
 		div.highlight {
 			padding: 30px 40px;
 		}
+		.posts aside{
+			display: none;
+		}
 	}
-
 	@media screen and (max-width: $desktopWidth) and (min-width: $tabWidth){
 		margin:0 80px;
 		div.highlighter-rouge {
@@ -130,6 +134,9 @@ header {
 		}
 		div.highlight {
 			padding: 30px 80px;
+		}
+		.posts aside{
+			display: none;
 		}
 	}
 
@@ -186,19 +193,30 @@ header {
 	}
 }
 
-.posts {
-	list-style-type: none;
+section.posts {
 	padding: 0;
-	>li {
+	>article {
+		display: flex;
 		margin-bottom: 30px;
 		padding-bottom: 20px;
 		&:not(:last-child) {
 			border-bottom: 1px solid $lightGray;
 		}
+		>.content{
+			flex-grow: 3;
+		}
+		>aside{
+			flex-grow: 1;
+			margin-left: 50px;
+
+			>img{
+				max-width: 500px;
+			}
+		}
 	}
 }
 
-.posts, .post-container {
+section.posts, .post-container {
 	margin-top: 40px;
 }
 

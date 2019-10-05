@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Organising Dundee University's Hackathon
+header-image: /images/IMG_3139.JPG
+header-alt: Gavin Henderson and I during Quackathon
 ---
 
 Just over a week ago, we held the closing ceremony for Quackathon 2017. This was the end of what was months of planning and continuously jumping hurdles. The most important thing to make this happen was having a good team. There are 5 committee members for Dundee University's Computing Society and the five of us relied on each other to complete our own areas. It's also worth noting it's not easy planning a major event from scratch while juggling other responsibilities like our courses, jobs and others.
