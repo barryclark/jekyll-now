@@ -19,7 +19,7 @@ texture:
   tagline: Graudate Software Engineer
   date_format: "%b %-d, %Y"
   style: purple
-  showNav: false
+  showNav: true
   showPicker: false
   analytics_id: '116379295'
 
