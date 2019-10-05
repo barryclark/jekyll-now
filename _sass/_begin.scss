@@ -1,0 +1,30 @@
+$minSupportedWidth: 320px;
+$maxSupportedWidth: 1280px;
+
+$mobileWidth: 540px;
+$tabWidth: 768px;
+$desktopWidth: 1024px;
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+//
+// Fluid Typography
+//
+@mixin fluidType($min, $max ) {
+	font-size: $min;
+
+	@media screen and (min-width: $minSupportedWidth) {
+		// 960 = 1280-320
+		font-size: calc(#{$min} + #{($max - $min)/1px} * ((100vw - 320px) / 960));
+	}
+
+	@media screen and (min-width: $maxSupportedWidth) {
+		font-size: $max;
+	}
+}

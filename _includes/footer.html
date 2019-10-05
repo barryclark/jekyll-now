@@ -1,0 +1,29 @@
+{%- if site.texture.analytics_id -%}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.texture.analytics_id }}"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', '{{ site.texture.analytics_id }}');
+</script>
+{%- endif -%}
+
+{%- if site.texture.showPicker -%}
+<div id="texture-picker">
+	<div style="display:flex;justify-content: space-between">
+		<p>Select Texture</p>
+		<p><a id="hidePicker" href="#">Hide</a></p>
+	</div>
+	<div class="texture-colors">
+		<div id="black"></div>
+		<div id="blue"></div>	
+		<div id="red"></div>	
+		<div id="purple"></div>		
+		<div id="green"></div>
+	</div>
+	<p class="info">You can use the <b>showPicker</b> property in _config.yml to hide this picker permanently.</p>
+	<p class="info">You can use the <b>texture</b> property in _config.yml to apply a texture permanently.</p>
+</div>
+<script src="{{ "/assets/js/picker.js" | relative_url }}"></script>
+{%- endif -%}
