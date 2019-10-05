@@ -12,7 +12,7 @@ layout: page
 				<a class="post-link" href="{{ post.url | relative_url }}">
 					<h2 class="post-title">{{ post.title | escape }}</h2>
 				</a>
-				<div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
+				<div class="post-date"><i class="icon-calendar" aria-hidden="true"></i>{{ post.date | date: date_format }}</div>
 			</div>
 			<div class="post">
 				{%- if site.show_excerpts -%}
