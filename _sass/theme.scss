@@ -54,7 +54,6 @@ h4 {
 }
 
 header {
-	// background-size: cover;
 	padding: 120px 0;
 	color: #fff;
 	overflow: hidden;
@@ -64,6 +63,10 @@ header {
 	}
 	h1 {
 		margin: 0;
+	}
+
+	@media screen and  (max-width: $desktopWidth) {
+		padding: 50px 0;
 	}
 
 	.social {
@@ -96,7 +99,8 @@ header {
 // Basic Container Class
 //
 .container {
-	margin:0 150px;
+	margin:0 auto;
+	max-width: $maxSupportedWidth;
 
 	div.highlighter-rouge {
 		right: 150px;
@@ -151,13 +155,17 @@ header {
 	}
 }
 
-.post-title {
-	color: #222;
-	transition: color .3s ease;
-	margin: .1em 0;
-	&:hover {
-		color: $gray;
-		border-bottom: 0;
+.post-link{
+	flex-basis: 100%;
+
+	>.post-title {
+		color: #222;
+		transition: color .3s ease;
+		margin: .1em 0;
+		&:hover {
+			color: $gray;
+			border-bottom: 0;
+		}
 	}
 }
 
@@ -224,6 +232,7 @@ section.posts, .post-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	a:hover {
 		border-bottom: none;
 	}
