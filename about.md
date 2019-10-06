@@ -10,16 +10,16 @@ We hold machine learning workshops, provide quarter/year-long project opportunit
 
 ### Officers
 - Megha Ilango (President)
-- Sharvani Jha (Vice-President)
-- Rohan Varma
-- Henry Yang
-- Parth Ingle
-- Megha Ilango
-- Aaron Phillip
-- Sriram Duraisamy
-- Anjali Pemmaraju 
-- Keshav Prasanna 
-- Sharvani Jha 
+- Aaron Philip (Workshops Director)
+- Keshav Prasanna (Projects Director)
+- Sharvani Jha (Outreach Director)
+- Harsh Chobisa
+- Ben Limpanukorn
+- Varun Sivashankar
+- Vaishnavi Tipireddy
+- Bryan Chiang
+- John Dang
+- Arjun Subramonian
 
 ### A few of our past events
 
@@ -37,4 +37,6 @@ We hold machine learning workshops, provide quarter/year-long project opportunit
 
 ### Contact
 
-Get in touch with [ACM](http://uclaacm.com). Join our [ACM AI Facebook Group](https://www.facebook.com/groups/uclaacmai/)
+Email us at ucla.acm.ai@gmail.com
+Join our [ACM AI Facebook Group](https://www.facebook.com/groups/uclaacmai/)
+Get in touch with [ACM](http://uclaacm.com).
