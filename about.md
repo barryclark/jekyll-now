@@ -9,8 +9,8 @@ UCLA ACM AI is focused on creating and developing a community of UCLA students w
 We hold machine learning workshops, provide quarter/year-long project opportunities, and coordinate with professors and grad students to give tech talks.
 
 ### Officers
-- Adit Deshpande (President)
-- Lawrence Chen (Vice-President)
+- Megha Ilango (President)
+- Sharvani Jha (Vice-President)
 - Rohan Varma
 - Henry Yang
 - Parth Ingle
