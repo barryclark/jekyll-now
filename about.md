@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-UCLA ACM AI is focused on creating and developing a community of UCLA students who are interested in artificial intelligence and machine learning. 
+ACM AI is the largest AI-related organization at UCLA, and is one of the committees of UCLA ACM. Our mission is to create and develop a community of students who are interested in artificial intelligence and machine learning at UCLA and beyond.
 
-We hold machine learning workshops, provide quarter/year-long project opportunities, and coordinate with professors and grad students to give tech talks.
+We have three main subcommittees: workshops, projects, and outreach. Each of these provide opportunities for students with various skill levels and interests to get involved with our organization!
 
 ### Officers
 - Megha Ilango (President)
