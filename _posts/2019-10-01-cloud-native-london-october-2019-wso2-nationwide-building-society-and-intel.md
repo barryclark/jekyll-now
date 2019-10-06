@@ -4,7 +4,6 @@ title: "Cloud Native London October 2019: WSO2, Nationwide Building Society and 
 description: "Read the roundup from WSO2, Nationwide Building Society and Intel at the Cloud Native London meetup in October 2019, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
 image: /images/2019-10-01-cloud-native-london-october-2019-wso2-nationwide-building-society-and-intel.jpg
-published: no
 tags:
   - Photos
   - Video
@@ -28,7 +27,9 @@ First up, Paul described how to [Build, run and manage composite apps on Kuberne
 
 Next up, Marc Cluet gave an entertaining talk on [Your Kernel and You - How cgroups make containers possible](https://skillsmatter.com/skillscasts/14629-your-kernel-and-you-how-cgroups-make-containers-possible).
 
-*
+* Cgroups build on top of namespaces
+* Cgroups v1 still most used, can be composable
+* Cgroups v2 just released 3 years ago, still maturing
 
 ![Anurag Ranjan](https://pbs.twimg.com/media/EF0PIGfWwAEFLQQ?format=jpg)
 
@@ -45,7 +46,7 @@ Free! [Redis Day London](http://bit.ly/redisdaylondoncncf) (CodeNode, Nov 12th) 
 
 ## Cloud Native London November
 
-The next meetup is on Monday 4th November, when we'll welcome speakers from StorageOS, and Pusher. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/263169231/)
+The next meetup is on Monday 4th November, when we'll welcome speakers from StorageOS, Oracle and Pusher. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/263169231/)
 
 See you next month!
 
