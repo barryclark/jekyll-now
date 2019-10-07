@@ -4,6 +4,7 @@ title: "Infrastructure matters - Keynote at Open Source Summit"
 description: "Read why infrastructure matters from Cheryl Hung, CNCF Director of Ecosystem."
 location: San Diego, USA
 image: https://pbs.twimg.com/media/ECln0OsUwAAOmXb?format=jpg&name=small
+video: https://www.youtube.com/embed/a077MQNV1pI
 slides: "//www.slideshare.net/slideshow/embed_code/key/mCK4LlhLM1zsxf"
 tags:
   - Slides
