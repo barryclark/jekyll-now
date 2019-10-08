@@ -9,7 +9,9 @@ editor_email: christoph.eckerle@haufe-lexware.com, frank.enders@haufe-lexware.co
 header-img: "images/new/Exportiert_35.jpg"
 ---
 
-# "Slay the monolith!" - Workshop Summary: "Designing Microservices with Sam Newman" – Some Thoughts about the _Why_, _What_ and _How_ when it comes to Microservices
+# "Slay the monolith!"
+
+Workshop Summary: "Designing Microservices with Sam Newman". Some Thoughts about the _Why_, _What_ and _How_ when it comes to Microservices
 
 ## Intro
 
