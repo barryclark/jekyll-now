@@ -1,0 +1,4 @@
+/* fix misalignment of LinkedIn share button */
+.IN-widget {
+    vertical-align: top!important;
+}
