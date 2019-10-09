@@ -17,7 +17,7 @@ header-img: "images/new/Exportiert_47.jpg"
 
 ## Introduction
 
-If you ever tried your hand on a machine learning project, then you have most likely spent a significant amount of time on experiments: First you need to establish a baseline that you can improve on. Then -- based on experience, intuition, and stubbornness -- you test many approaches, implementation variants, and hyperparameters until you hopefully reach a satisfactory result.
+If you ever tried working on a machine learning project, then you have most likely spent a significant amount of time on experiments: First you need to establish a baseline that you can improve on. Then -- based on experience, intuition, and stubbornness -- you test many approaches, implementation variants, and hyperparameters until you hopefully reach a satisfactory result.
 
 That's what we were facing in a project that looks into the application of machine learning and other natural language processing techniques to more conveniently serve our customers' information needs in Haufe's content products. (Once we've left the prototyping phase, it will certainly be worthwhile to report on both this project's specific challenges and our findings!)
 
