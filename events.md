@@ -7,12 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2019
 
-October 8:  Cloud Native Revolution, Philadelphia
-* [**Keynote: Cloud native past, present and future**](https://www.comcastlabsconnect.com/2019-cloud-native-revolution-schedule/2019/10/8/cloud-native-past-present-and-future-by-cheryl-hung-of-cloud-native-computing-foundation)
-
-October 19 - 20:  OggCamp, Manchester
-* [**Stopping Brexit with data science**](https://oggcamp.org/speakers/)
-
 October 23:  Mobile World Congress, Los Angeles
 * **Panel: The Disaggregation of Wireless**
 * [**5G Roundtable: GSMA & Open Source Projects**](https://www.gsma.com/futurenetworks/events-and-webinars/5g-roundtable-mwc19-los-angeles/)
