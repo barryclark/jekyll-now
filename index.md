@@ -58,6 +58,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Expedia](http://www.expedia.com/Checkout/BitcoinTermsAndConditions) και στην Ελλάδα
 - [Περιοδικό Fortune](https://subscription.timeinc.com/storefront/site/fo-20for1999ccar1214bc.html)
 - [Wikipedia](https://wikimediafoundation.org/wiki/Ways_to_Give#bitcoin), για δωρεές
+- [UNICEF](https://www.unicef.org/press-releases/unicef-launches-cryptocurrency-fund)
 
 ### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin στην Ελλάδα;
 
@@ -307,7 +308,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2019-09-03
+Τελευταία ενημέρωση: 2019-10-11
 
 <!-- <div class="posts">
   {% for post in site.posts %}
