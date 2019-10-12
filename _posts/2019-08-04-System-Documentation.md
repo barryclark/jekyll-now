@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Documenting systems: Some options
+title: Documenting systems: Some thoughts
 excerpt_separator: <!--more-->
 tags: [system design, documentation]
 ---
@@ -79,9 +79,14 @@ Deep-linking and creating references to modules and classes, becomes increasingl
 
 * How much to document?  
 I personally view system documentation a little bit like the sea: readily accessible to everyone.   
-Everyone should be able to dip their toes in and appreciate <sub>Aww! How poetic!</sub>. Just as the sea, docs must be accessible, transparent and
-accessible. Up to a depth.  
+Everyone should be able to dip their toes in and appreciate <sub>Aww! How poetic!</sub>. Just as the sea, docs must be 
+accessible, transparent and accessible. Up to a depth.  
 After that, it is only for experts, most possibly using different tooling than everyone else. 
+
+* Opinions?  
+Creating documentation is inherently a collaborative effort.  
+It is impossible to fit everything in a person's head without error.  
+The tooling and process should facilitate and encourage collaborative editing.
 
 ## How?
 
@@ -149,16 +154,18 @@ After many attempts in the past, I have settled on the dissection of a complex s
 #### Themes
 
 Any non-trivial system and organization is composed of too many components, services and interactions between them.
-Trying to capture them all in a single diagram would result in something impossible to track.
+Trying to capture them all in a single diagram would result in something impossible to create, let alone track.
 
-For this reason, it makes sense to split the organization "ecosystem" in easier to understand chunks.  
-It makes sense to make that split along the rough lines of [themes][18] or [sagas][19].  
+For this reason, it makes sense to split the organization "ecosystem" in easier-to-understand chunks.  
+That split can be done along the rough lines of [themes][18] or [sagas][19].  
 
 One of our basic principles is to make the documentation accessible to everyone.  
-Attempting to draw delineation lines along IT systems will not make sense to everyone.  
+Attempting to draw delineation lines along IT systems limits the intended audience off the bat.    
 What is "BigData store" supposed to mean to a customer support person?  
+
 On the contrary, drawing the lines along discreet customer value functions or business principles, is something 
-understandable by anyone in the organization. "Customer onboarding" means pretty much the same thing to everyone.
+understandable by anyone in the organization.  
+"Customer onboarding" means pretty much the same thing to everyone.
 
 #### Drilling down 
 
@@ -179,34 +186,53 @@ Next level of abstraction, Containers live inside systems.
 They are something into which code "runs" or data "lives" (Kubernetes cluster, Postgres DB, HTML 5 app, AWS S3 buckets,...).  
 This is where the "logical" architecture intersects with the "physical".  
 Containers can be marked/annotated with the characteristics of the actual deployment (2 node cluster, 
-some.domain.com, 6 worker pool,...).
+some.domain.com, 6 worker pool,...). 
 * **Components**  
 According to C4, Components are  
 > a grouping of related functionality encapsulated behind a well-defined interface, which runs inside a container  
 
 Not much to add to that!
-* **Classes**  
+* ...and **Classes**  
 The last level of detail should need no further introduction.
 
 It is becoming clear how in the above framework, we can go as deep or as shallow as we want for our system description.  
 Moreover, at any level, we can utilize all the elements provided by our chosen representation language (e.g. UML).  
-Anyone in the organization would be able to follow a Context diagram or a Sequence diagram referring to Systems. 
 
-### Documenting the story 
+Anyone in the organization would be able to follow a Context diagram or a Sequence diagram referring to Systems.  
+Architects and DevOps engineers can easily converse over a Container-level diagram.  
+Senior engineers can discuss and plan over a Components-level diagram.  
+Developers can peruse to their heart's content Classes-level diagrams. 
 
+## Where? 
 
+We have established some principles and frameworks to guide us while compiling and maintaining our system's docs.  
+Next question is "where do we do that?".  
 
-#### Visio and MS Word
+### Visio and MS Word
 
-#### Google docs
+This is the approach most "distant" from the code.  
+I only include it here as a counter-example. 
+ 
+Though both Word and Visio are feature-rich, they lead to a number of problems 
 
-#### Confluence 
+* Poor collaboration
+Mail exchange
 
-#### Markdown
+* Context switching
+Negative connotations for engineers, associated with non-productive work
 
-#### ...and AsciiFlow
+* [Visio effect][24]
+Plethora of options can detract even the most focused author
 
-#### ...and mermaidJS
+### Google docs
+
+### Confluence 
+
+### Markdown
+
+### ...and AsciiFlow
+
+### ...and mermaidJS
 
 https://mermaidjs.github.io/mermaid-live-editor
 
@@ -219,22 +245,15 @@ https://mermaidjs.github.io/mermaid-live-editor
     CHART DEFINITION GOES HERE
 </div>
 
-#### ...and LucidChart
-
-#### ...and  
-
-## And the winner is...
-
+### ...and LucidChart
 
 
 ## Parting thought
 
-![Sailing away](../images/building-wealth/farid-askerov-235058-unsplash.jpg)
-> Photo by Farid Askerov on Unsplash
+![Bridges](../images/system-documentation/volodymyr-hotsyk-rH5XguI87RY-unsplash.jpg)
+> Photo by Volodymyr Hotsyk on Unsplash
 
-Our financial well-being should be something we take as seriously as our physical and mental health.  
-Without me pretending to be an expert on it, I hope this presentation will make you see things under 
-a different light. 
+ 
 
 *Many thanks to [Georges Haidar][20] for introducing me to the C4 Model*
 
@@ -262,3 +281,4 @@ a different light.
    [21]: https://en.wikipedia.org/wiki/Deployment_diagram
    [22]: https://en.wikipedia.org/wiki/Sequence_diagram
    [23]: https://c4model.com/
+   [24]: https://whatis.techtarget.com/definition/gold-plating
