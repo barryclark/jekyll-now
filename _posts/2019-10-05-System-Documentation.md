@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Documenting systems: Some thoughts
+title: Documenting systems - Some thoughts
 excerpt_separator: <!--more-->
-tags: [system design, documentation]
+tags: [system design, documentation, c4 model]
 ---
 
 ## Systems, systems, everywhere! 
@@ -29,25 +29,26 @@ Here are some ideas of mine on the subject after a few years in the trenches.
 > Photo by Kaleidico on Unsplash
 
 The paragon of modern IT organisations is continuous delivery. The product/service needs to evolve non-stop, requiring 
-constant shifting in growth, nimbleness and agility.  
+constant improvements in scale, nimbleness and agility.  
 Technology (and software in particular) has a huge deflationary impact and [not only in the economy][8]. When you can 
-achieve more with less resources (think smaller teams, SaaS, cloud services acting as force multipliers,...) documentation
-is sub-consciously associated with [stasis][9].
+achieve more with less resources (think smaller teams, SaaS, cloud services,... all acting as force multipliers), 
+pausing to document is sub-consciously associated with [stasis][9].
 
 Anyone in the IT industry can produce anecdotal evidence of the almost natural dislike of documentation. Something 
 possibly rooted in the [sufficiently smart engineer][2] fallacy.  
-Why not take it a few steps further and assert that [the code is self-documenting][4]? 
+Take it one step further and it is easy to assert that [the code is self-documenting][4]. 
 
 I would humbly argue that the above assertions are missing a critical aspect of reality: [staff turnover][1].  
-The last few decades of [secular low yields][10] have seen [a torrent of funds][3] chasing the next unicorns. 
 
-In this world, talent (i.e. human capital) is the one and only capital that counts.  
-The same forces which are driving for exponential growth are the same ones causing churn of a company's top-hitters.  
+The last few decades of [secular low yields][10] have seen [a torrent of funds][3] chasing the next unicorns. 
+In this world, the one and only capital that counts is talent (i.e. human capital).  
+The same forces which are fueling exponential growth <sub> by providing abundant capital</sub>, are the same ones causing 
+churn of a company's top-hitters <sub>since other companies are also flush with cash</sub>.  
 Talent is a rare and sought-after "commodity"! 
 
-Unless the company is one of the few with a talent-attracting brand (think Google), for everyone else the result is a 
+Unless your company is one of the few with a talent-attracting brand (think Google), the result is a 
 revolving door of new team member onboarding.   
-If documentation is not up-to-date, the result is board sessions to describe the past and present from memory.
+If documentation is not up-to-date, the result is white-board sessions to describe the past and present; usually from memory.
 Past assumptions and critical details are almost always missed.
 
 A well-run organisation owes it to itself to capture and pass on the accumulated collective intelligence and experience.  
@@ -63,7 +64,7 @@ Here are some things to consider:
 
 * Code moves fast.  
 Engineers are conditioned to utilize modern source control systems and deploy in a [CI/CD][11] environment.  
-The documentagtion tooling and environment must support this and be compatible. 
+The documentation tooling and environment must support this and be compatible. 
 
 * Use as similar toolset as possible.  
 This is a corollary of the above.  
@@ -79,7 +80,7 @@ Deep-linking and creating references to modules and classes, becomes increasingl
 
 * How much to document?  
 I personally view system documentation a little bit like the sea: readily accessible to everyone.   
-Everyone should be able to dip their toes in and appreciate <sub>Aww! How poetic!</sub>. Just as the sea, docs must be 
+Everyone should be able to dip their toes in and appreciate <sub>Awww! How poetic!</sub>. Just as the sea, docs must be 
 accessible, transparent and accessible. Up to a depth.  
 After that, it is only for experts, most possibly using different tooling than everyone else. 
 
@@ -108,24 +109,25 @@ The benefits and suggestions on the structure of this approach are [pretty][6] [
 
 Each ADR clearly and briefly answers 4 questions
 * What problem / issue had to be addressed
-* What was the chosen solution / system
+* Which was the chosen solution / system
 * When was the decision taken / implemented
 * Why it was chosen i.e. what restrictions/requirements/assumptions weighed in on the decision  
 
-The list of ADRs acts as a date-sorted index and entry-point to all the relevant deep-dive and analysis documents 
-created at the time.  
+The list of ADRs acts as a date-sorted index and entry-point to all the relevant deep-dive and analysis 
+documents/JIRAs/post-its/etc created at the time. (Hopefully, you are archiving them somewhere).  
 If a new joiner has a WTF moment with any part of the system, the ADR will provide all the answers on the trade-offs 
 and rationale.
 
 If any of the parameters of the problem space have changed since then, or the assumptions no longer hold true, then it 
-is perhaps time for a change.    
+is perhaps time for a change. 
 
 ### Telling the story of now
 
 ![Stories](../images/system-documentation/clem-onojeghuo-x7CDil50KKY-unsplash.jpg)
 > Photo by Clem Onojeghuo on Unsplash
 
-Describing the current state is a little bit more involved.  
+Describing the current state is a little bit more involved. 
+ 
 The system itself can be of any size.  
 How do you describe the current system state of a small does-only-one-thing-very-well startup?  
 Is it the same approach as one would take to document a cloud CRM provider?  
@@ -133,18 +135,19 @@ Is the CRM provider the same as, say, a bank?
 
 Unfortunately there is not one size to fit all.  
 What has worked well in past settings, will not necessarily work in the new environment.  
-A failure to recognize this, will almost certainly lead to poor and/or hard-to-maintain documentation.   
+A failure to recognize this will almost certainly lead to poor and/or hard-to-maintain documentation.   
 
-'But haven't [UML][15] and other [similar notations][16] been invented to guide us in this?' one might ask.  
+'But haven't [UML][15] and other [similar notations][16] been invented to guide us in this?' one might ask.
+
 I would humbly disagree. 
 
-As their name suggests, these are *languages*. Whereas a system design description is essentially a *story*, it should 
-have a flow to be digestible.  
+As their name suggests, these are *languages*.  
+Whereas a system design description is essentially a *story*, it should have a flow to be digestible.  
 In fiction and story-telling there are [literary frameworks][17] to guide us, each one with its own rules.   
-Same way we should look for some higher level system design frameworks. These can guide us in telling the system design 
-"story" in a meaningful way.
+In a similar vein, we should look for some higher level system design frameworks.  
+These can guide us in telling the system design "story" in a meaningful way.
 
-After many attempts in the past, I have settled on the dissection of a complex system along 2 axis:  
+After many attempts in the past, I have settled on the dissection of a complex system along 2 axes:  
 * themes and
 * level of detail   
 
@@ -159,8 +162,8 @@ Trying to capture them all in a single diagram would result in something impossi
 For this reason, it makes sense to split the organization "ecosystem" in easier-to-understand chunks.  
 That split can be done along the rough lines of [themes][18] or [sagas][19].  
 
-One of our basic principles is to make the documentation accessible to everyone.  
-Attempting to draw delineation lines along IT systems limits the intended audience off the bat.    
+Remember that one of our basic principles is to make the documentation accessible to everyone.  
+Attempting to draw delineation lines along IT systems will not make sense to everybody.  
 What is "BigData store" supposed to mean to a customer support person?  
 
 On the contrary, drawing the lines along discreet customer value functions or business principles, is something 
@@ -195,7 +198,7 @@ Not much to add to that!
 * ...and **Classes**  
 The last level of detail should need no further introduction.
 
-It is becoming clear how in the above framework, we can go as deep or as shallow as we want for our system description.  
+It is becoming clear how in the above framework, we can go as deep or remain as shallow as we want for our system description.  
 Moreover, at any level, we can utilize all the elements provided by our chosen representation language (e.g. UML).  
 
 Anyone in the organization would be able to follow a Context diagram or a Sequence diagram referring to Systems.  
@@ -253,7 +256,6 @@ https://mermaidjs.github.io/mermaid-live-editor
 ![Bridges](../images/system-documentation/volodymyr-hotsyk-rH5XguI87RY-unsplash.jpg)
 > Photo by Volodymyr Hotsyk on Unsplash
 
- 
 
 *Many thanks to [Georges Haidar][20] for introducing me to the C4 Model*
 
