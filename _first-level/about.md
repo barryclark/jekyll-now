@@ -14,6 +14,7 @@ I currently am the Treasurer at [ACM@USC](https://acm.cse.sc.edu).
 I enjoy working in mainly Java, and Python, but I also enjoy ReasonML, Erlang, C++, all very much. Esoteric projects are a major interest for me as well.
 
 Awards:
+* 2019 USC@ACM Fall Codeathon 145/146/240/350 Coordinator and Problem Writer
 * 2019 USC@ACM Spring Codeathon 240: 1st Place
 * 2019 USC@ACM Spring Codeathon 350: 4th Place
 * 2019 USC@ACM Spring Codeathon 145/146: Problem Writer
