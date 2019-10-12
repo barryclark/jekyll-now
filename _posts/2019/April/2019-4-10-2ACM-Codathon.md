@@ -76,9 +76,9 @@ So if we're given a board of
 001
 ```
 It corresponds to the board  
-![Input Board](../images/qboard/input.png "Input Board"){:height="200px" width="200px"}.  
+![Input Board]({{ site.url }}/images/qboard/input.png "Input Board"){:height="200px" width="200px"}.  
 The question is what is the minimum number of steps to get to this board,  
-![Output Board](../images/qboard/output.png "Output Board"){:height="200px" width="200px" align="center"}.  
+![Output Board]({{ site.url }}/images/qboard/output.png "Output Board"){:height="200px" width="200px" align="center"}.  
 Which square do we start with? This is the key question, we want to start with a square such that, we never have to change it again. This works for the bottom right square. Once we check it, and flip accordingly, we can go in either the up or left directions. This is because now we never need to return to that corner. So the same logic holds for the next square. Once we either flip it, or ignore it, we can never undo our progress for that particular square. However every time we flip a square, we need to go back and flip all the previous squares. Which is why this is $$O(n^4)$$. This particular problem has a minimum number of flips as 4.
 
 
