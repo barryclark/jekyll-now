@@ -58,8 +58,8 @@ Time: Friday 10/18 6:00 - 8:00 pm
 Location: Geology 4660
 
 Applications for projects and outreach teams are also live!  
-To join one of our project teams, fill out the application at: https://tinyurl.com/aiappsfall19  
-To join our outreach team, fill out this application: https://tinyurl.com/aioutreachappsfall19  
+To join one of our project teams, fill out [this application](https://tinyurl.com/aiappsfall19).  
+To join our outreach team, fill out [this application](https://tinyurl.com/aioutreachappsfall19).  
 
 Deadline to apply is **10/14/19 at 11:59 PM**
 
