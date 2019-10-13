@@ -16,7 +16,7 @@ To break this down:
 - {BETA REDUCTION} is the transitive and reflexive closure of beta reduction. To break that down more
   - For transitive closure, imagine you had a relation R that meant "can fly to". So New York R Los Angeles would mean you can fly directly from New York to Los Angeles. The transitive closure of this operation would mean something like "can fly to by taking one or more flights". So for example, Los Angeles -> New York -> Amsterdam would be a valid statement.
   - Beta reduction, written as {BETA REDUCTION} (note the single arrowhead instead of the two above), means {BETA REDUCTION EXPLANATION}
-- {M : sigma} can be read as "M proves {sigma}". Alternatively, you could also read it as "M is a term of type {sigma}"
+- {M : sigma} can be read as "M proves {sigma}". Alternatively, you could also read it as "M is a term of type {sigma}" (The fact that you can read it either way is itself extremely intresting and an important correspondence)
 
 ### Interpretation
 
