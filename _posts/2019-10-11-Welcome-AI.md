@@ -63,6 +63,6 @@ To join our outreach team, fill out [this application](https://tinyurl.com/aiout
 
 Deadline to apply is **10/14/19 at 11:59 PM**
 
-Join the [Facebook group](https://www.facebook.com/groups/uclaacmai/) or [mailing list](https://tinyurl.com/acmaimailinglist)for more updates on our events! We're excited to have you join us this year :)
+Join the [Facebook group](https://www.facebook.com/groups/uclaacmai/) or [mailing list](https://tinyurl.com/acmaimailinglist) for more updates on our events! We're excited to have you join us this year :)
 
 
