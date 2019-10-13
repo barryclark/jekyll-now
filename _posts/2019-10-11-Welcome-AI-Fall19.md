@@ -49,11 +49,11 @@ At our Fall General Meeting on Monday, October 7, we introduced ourselves and ou
 You can view the meeting's slides [here](https://tinyurl.com/acmai-fall2019).
 
 We're launching our Beginner and Advanced Track Workshops for this quarter on the following days:  
-*Intro to Machine Learning: Beginner Track Workshop #1*  
+[*Intro to Machine Learning: Beginner Track Workshop #1*](https://www.facebook.com/events/1706684689475198/)  
 Time: Thursday 10/17 6:00 - 8:00 pm  
 Location: Covel 227
 
-*Intro to Machine Learning: Advanced Track Workshop #1*  
+[*Intro to Machine Learning: Advanced Track Workshop #1*](https://www.facebook.com/events/539113006917721/)  
 Time: Friday 10/18 6:00 - 8:00 pm  
 Location: Geology 4660
 
