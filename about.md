@@ -12,3 +12,11 @@ I hope you enjoying reading my blogs.
 ### Contact me
 
 [subhadeep1024@gmail.com](subhadeep1024:@gmail.com)
+
+<script src="https://utteranc.es/client.js"
+        repo="subhadeep1024/subhadeep1024.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
