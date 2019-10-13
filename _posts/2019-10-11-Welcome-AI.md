@@ -27,15 +27,15 @@ Regardless of whether you view AI as an ultimately beneficial or detrimental tec
 
 ## What do we do?
 
-**Workshops**
+**Workshops** . 
 As part of the workshops initiative, we host introductory machine learning workshops where we teach concepts through presentations, coding exercises, and interactive activities. We have both beginner and advanced track workshops to cater to students who have no experience and also those who have some prior ML knowledge.
 Workshops Officers: Aaron Philip (Director), Harsh Chobisa, Ben Limpanukorn, Varun Sivashankar, Vaishnavi Tipireddy
 
-**Projects**
+**Projects** . 
 We have two project teams this quarter. Project teams are for those who have machine learning experience already and are looking to expand their skills through practical applications.
 Projects Officers: Keshav Prasanna (Director), Bryan Chiang, John Dang
 
-**Outreach**
+**Outreach** . 
 We are partnering with ACM TeachLA this quarter to host introductory machine learning workshops for students at a Los Angeles high school! We also hold one-off events to spread interest in AI to those outside our organization.
 Outreach Officers: Sharvani Jha (Director), Arjun Subramonian
 
@@ -57,7 +57,7 @@ Location: Covel 227
 Time: Friday 10/18 6:00 - 8:00 pm . 
 Location: Geology 4660
 
-Applications for projects and outreach teams are also live!  
+Applications for projects and outreach teams are also live! . 
 To join one of our project teams, fill out the application at: https://tinyurl.com/aiappsfall19 . 
 To join our outreach team, fill out this application: https://tinyurl.com/aioutreachappsfall19 . 
 
