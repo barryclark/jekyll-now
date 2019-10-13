@@ -26,6 +26,8 @@ To break this down:
 
 So basically this is saying that given a certain environment (![gamma](https://latex.codecogs.com/gif.latex?%5CGamma)), we know that some term M has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma); and we also know that M eventually reduces to N - given those two conditions, we can also conclude that in the same environment, N must also have type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma).
 
+In a practical setting, this means that if you write a program where a function takes an `integer` argument, and you mutate that int several times, like adding and subtracting from it, or modifying it with another helper function, you're still going to end up with an int, and none of those intermediate operations should throw type mismatch errors. In a language like python, which doesn't type-check ahead of runtime, you can run into this exact issue. But in a typed, statically compiled language like Java, the compiler will error and force you to fix this mistake before it can even finish compiling.  
+
 ## The Proof
 
 We use induction on ![beta trans reduction](https://latex.codecogs.com/gif.latex?%5Ctwoheadrightarrow_%5Cbeta). 
@@ -50,3 +52,5 @@ Assuming it holds for {M trans reduces N}, show that it holds for {M' reduces to
 
 We showed in the base case that if M' has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) then M must also have type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma). Given our assumption - if ![m trans reduces n](https://latex.codecogs.com/gif.latex?M%20%5Ctwoheadrightarrow_%5Cbeta%20N) and M has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) then N has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) as well - then N must have the same type as M'. 
 
+## The End
+So that's it. Unfortunately, there are probably some explanations missing, particularly surrounding our notation and its underlying rules. For more information, you can google for "sequent calculus"
