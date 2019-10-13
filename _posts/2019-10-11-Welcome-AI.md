@@ -23,20 +23,20 @@ You probably encounter AI in your daily life as well; it powers voice assistants
 
 ![AICompanies](/images/fall2019gm/ai-companies.png)
 
-Regardless of whether you view AI as an ultimately beneficial or detrimental technology, it will impact virtually every industry in the future. We think learning about it can only be an advantage in whatever field you pursue, and that's why we offer opportunities for those of various experience levels to gain artificial and machine learning knowledge both at and beyond UCLA.
+Regardless of whether you view AI as an ultimately beneficial or detrimental technology, it will impact virtually every industry in the future. We think learning about it can only be an advantage in whatever field you pursue, and that's why we offer opportunities for students of various experience levels to gain artificial intelligence and machine learning knowledge both at and beyond UCLA.
 
 ## What do we do?
 
 **Workshops**  
-As part of the workshops initiative, we host introductory machine learning workshops where we teach concepts through presentations, coding exercises, and interactive activities. We have both beginner and advanced track workshops to cater to students who have no experience and also those who have some prior ML knowledge.
+As part of the workshops initiative, we host introductory machine learning workshops where we teach concepts through presentations, coding exercises, and interactive activities. We have both beginner and advanced track workshops to cater to students who have no experience and also those who have some prior ML knowledge.  
 Workshops Officers: Aaron Philip (Director), Harsh Chobisa, Ben Limpanukorn, Varun Sivashankar, Vaishnavi Tipireddy
 
 **Projects**  
-We have two project teams this quarter. Project teams are for those who have machine learning experience already and are looking to expand their skills through practical applications.
+The goal of our project teams is to provide an avenue for members to practice and improve their ML skills via an applied project. They are aimed at those who have some machine learning experience already, and are looking to expand their practical knowledge. We have two project teams for this quarter.
 Projects Officers: Keshav Prasanna (Director), Bryan Chiang, John Dang
 
 **Outreach**  
-We are partnering with ACM TeachLA this quarter to host introductory machine learning workshops for students at a Los Angeles high school! We also hold one-off events to spread interest in AI to those outside our organization.
+We are partnering with ACM TeachLA this quarter to host introductory machine learning workshops for students at a Los Angeles high school! We also hold one-off events to spread interest in AI to those outside our organization.  
 Outreach Officers: Sharvani Jha (Director), Arjun Subramonian
 
 ## Upcoming Events
@@ -53,7 +53,7 @@ We're launching our Beginner and Advanced Track Workshops for this quarter on th
 Time: Thursday 10/17 6:00 - 8:00 pm  
 Location: Covel 227
 
-*Intro to Machine Learning: Advanced Track Workshop #1*
+*Intro to Machine Learning: Advanced Track Workshop #1*  
 Time: Friday 10/18 6:00 - 8:00 pm  
 Location: Geology 4660
 
