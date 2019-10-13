@@ -48,5 +48,5 @@ Now we have ![generation lemma result](https://latex.codecogs.com/gif.latex?%5CG
 ### General case
 Assuming it holds for {M trans reduces N}, show that it holds for {M' reduces to M, trans reduces to N}
 
-We showed in the base case that if M' has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) then M must also have type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma). Given our assumption - if https://latex.codecogs.com/gif.latex?M%20%5Ctwoheadrightarrow_%5Cbeta%20N and M has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) then N has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) as well - then N must have the same type as M'. 
+We showed in the base case that if M' has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) then M must also have type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma). Given our assumption - if ![m trans reduces n](https://latex.codecogs.com/gif.latex?M%20%5Ctwoheadrightarrow_%5Cbeta%20N) and M has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) then N has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) as well - then N must have the same type as M'. 
 
