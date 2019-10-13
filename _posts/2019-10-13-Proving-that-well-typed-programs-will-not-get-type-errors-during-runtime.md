@@ -12,11 +12,13 @@ Theorem: ![theorem](https://latex.codecogs.com/gif.latex?%5Ctextup%7BIf%20%7D%5C
 ### Notation
 
 To break this down: 
+- ![gamma](https://latex.codecogs.com/gif.latex?%5CGamma) is an environment. Formally that means it's a finite set of pairs of the form {x:T} where x is a (lambda) variable and T is a type. Informally, you can think of this like a scope/environment in a program.
 - ![vdash](https://latex.codecogs.com/gif.latex?%5Cvdash) is sometimes called a "turnstile". ![gamma turnstile m](https://latex.codecogs.com/gif.latex?%5CGamma%20%5Cvdash%20M) would be read as "M is derived from ![gamma](https://latex.codecogs.com/gif.latex?%5CGamma)". 
+- ![m : sigma](https://latex.codecogs.com/gif.latex?M%20%3A%20%5Csigma) can be read as "M proves ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma)". Alternatively, you could also read it as "M is a term of type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma)" (The fact that you can read it either way is itself extremely intresting and an important correspondence)
 - ![beta trans reduction](https://latex.codecogs.com/gif.latex?%5Ctwoheadrightarrow_%5Cbeta) is the transitive and reflexive closure of beta reduction. To break that down more
   - For transitive closure, imagine you had a relation R that meant "can fly to". So New York R Los Angeles would mean you can fly directly from New York to Los Angeles. The transitive closure of this operation would mean something like "can fly to by taking one or more flights". So for example, Los Angeles -> New York -> Amsterdam would be a valid statement.
   - Beta reduction, written as ![beta reduction](https://latex.codecogs.com/gif.latex?%5Crightarrow_%5Cbeta) (note the single arrowhead instead of the two above), means {BETA REDUCTION EXPLANATION}
-- ![m : sigma](https://latex.codecogs.com/gif.latex?M%20%3A%20%5Csigma) can be read as "M proves ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma)". Alternatively, you could also read it as "M is a term of type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma)" (The fact that you can read it either way is itself extremely intresting and an important correspondence)
+
 
 ### Interpretation
 
