@@ -12,19 +12,19 @@ Theorem: ![theorem](https://latex.codecogs.com/gif.latex?%5Ctextup%7BIf%20%7D%5C
 ### Notation
 
 To break this down: 
-- {TURNSTILE} is sometimes called a "turnstile". {GAMMA TURNSTILE M} would be read as "M is derived from {GAMMA}". 
-- {BETA REDUCTION} is the transitive and reflexive closure of beta reduction. To break that down more
+- ![vdash](https://latex.codecogs.com/gif.latex?%5Cvdash) is sometimes called a "turnstile". ![gamma turnstile m](https://latex.codecogs.com/gif.latex?%5CGamma%20%5Cvdash%20M) would be read as "M is derived from ![gamma](https://latex.codecogs.com/gif.latex?%5CGamma)". 
+- ![beta trans reduction](https://latex.codecogs.com/gif.latex?%5Ctwoheadrightarrow_%5Cbeta) is the transitive and reflexive closure of beta reduction. To break that down more
   - For transitive closure, imagine you had a relation R that meant "can fly to". So New York R Los Angeles would mean you can fly directly from New York to Los Angeles. The transitive closure of this operation would mean something like "can fly to by taking one or more flights". So for example, Los Angeles -> New York -> Amsterdam would be a valid statement.
-  - Beta reduction, written as {BETA REDUCTION} (note the single arrowhead instead of the two above), means {BETA REDUCTION EXPLANATION}
-- {M : sigma} can be read as "M proves {sigma}". Alternatively, you could also read it as "M is a term of type {sigma}" (The fact that you can read it either way is itself extremely intresting and an important correspondence)
+  - Beta reduction, written as ![beta reduction](https://latex.codecogs.com/gif.latex?%5Crightarrow_%5Cbeta) (note the single arrowhead instead of the two above), means {BETA REDUCTION EXPLANATION}
+- ![m : sigma](https://latex.codecogs.com/gif.latex?M%20%3A%20%5Csigma) can be read as "M proves ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma)". Alternatively, you could also read it as "M is a term of type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma)" (The fact that you can read it either way is itself extremely intresting and an important correspondence)
 
 ### Interpretation
 
-So basically this is saying that given a certain environment ({GAMMA}), we know that some term M has type {sigma}; and we also know that M eventually reduces to N - given those two conditions, we can also conclude that in the same environment, N must also have type {sigma}.
+So basically this is saying that given a certain environment (![gamma](https://latex.codecogs.com/gif.latex?%5CGamma)), we know that some term M has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma); and we also know that M eventually reduces to N - given those two conditions, we can also conclude that in the same environment, N must also have type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma).
 
 ## The Proof
 
-We use induction on {BETA REDUCTION}. 
+We use induction on ![beta trans reduction](https://latex.codecogs.com/gif.latex?%5Ctwoheadrightarrow_%5Cbeta). 
 
 Base case: ![base case](https://latex.codecogs.com/gif.latex?M%20%3D%20%28%5Clambda%20x%20P%29Q%20%5Ctextup%20%7B%20and%20%7D%20N%20%3D%20P%5Bx%3A%3DQ%5D)
 
