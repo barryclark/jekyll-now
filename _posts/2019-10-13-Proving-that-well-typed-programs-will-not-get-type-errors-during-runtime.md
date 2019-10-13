@@ -17,7 +17,9 @@ To break this down:
 - ![m : sigma](https://latex.codecogs.com/gif.latex?M%20%3A%20%5Csigma) can be read as "M proves ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma)". Alternatively, you could also read it as "M is a term of type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma)" (The fact that you can read it either way is itself extremely intresting and an important correspondence)
 - ![beta trans reduction](https://latex.codecogs.com/gif.latex?%5Ctwoheadrightarrow_%5Cbeta) is the transitive and reflexive closure of beta reduction. To break that down more
   - For transitive closure, imagine you had a relation R that meant "can fly to". So New York R Los Angeles would mean you can fly directly from New York to Los Angeles. The transitive closure of this operation would mean something like "can fly to by taking one or more flights". So for example, Los Angeles -> New York -> Amsterdam would be a valid statement.
-  - Beta reduction, written as ![beta reduction](https://latex.codecogs.com/gif.latex?%5Crightarrow_%5Cbeta) (note the single arrowhead instead of the two above), means {BETA REDUCTION EXPLANATION}
+  - Beta reduction, written as ![beta reduction](https://latex.codecogs.com/gif.latex?%5Crightarrow_%5Cbeta) (note the single arrowhead instead of the two above), satisfies the relation ![beta reduction equation](https://latex.codecogs.com/gif.latex?%28%5Clambda%20x%20P%29Q%20%5Crightarrow_%5Cbeta%20P%5Bx%3A%3DQ%5D). 
+    - ![lambda application](https://latex.codecogs.com/gif.latex?%28%5Clambda%20x%20P%29Q) is a concept from lambda calculus. If you're not familiar, basically ![lambda function](https://latex.codecogs.com/gif.latex?%28%5Clambda%20x%20P%29) is a function that takes a single variable x as input, and returns P as output. This function is then applied to Q. P and Q can be arbitrary values. 
+    - ![substitution](https://latex.codecogs.com/gif.latex?P%5Bx%3A%3DQ%5D) is substitution. This means for every instance of a variable "x" in P (which might be a program or a function), replace it with Q
 
 
 ### Interpretation
