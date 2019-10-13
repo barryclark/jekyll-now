@@ -1,6 +1,6 @@
 ---
 layout: post
-author: megha
+author: Megha Ilango
 title: Welcome to ACM AI!
 ---
 It's October, which means attending your first classes, making new friends, and of course, finding what to get involved with on campus! A warm welcome from UCLA ACM AI to all of our freshmen, transfers, and returning students; we just wanted to take a moment to introduce our organization.
@@ -27,7 +27,6 @@ Regardless of whether you view AI as an ultimately beneficial or detrimental tec
 
 ## What do we do?
 
-
 **Workshops**
 As part of the workshops initiative, we host introductory machine learning workshops where we teach concepts through presentations, coding exercises, and interactive activities. We have both beginner and advanced track workshops to cater to students who have no experience and also those who have some prior ML knowledge.
 Workshops Officers: Aaron Philip (Director), Harsh Chobisa, Ben Limpanukorn, Varun Sivashankar, Vaishnavi Tipireddy
@@ -49,21 +48,18 @@ At our Fall General Meeting on Monday, October 7, we introduced ourselves and ou
 
 You can view the meeting's slides [here](https://tinyurl.com/acmai-fall2019).
 
-We're launching our Beginner and Advanced Track Workshops for this quarter on the following days:
-
-Intro to Machine Learning: Beginner Track Workshop #1
-Time: Thursday 10/17 6:00 - 8:00 pm
+We're launching our Beginner and Advanced Track Workshops for this quarter on the following days: . 
+*Intro to Machine Learning: Beginner Track Workshop #1* . 
+Time: Thursday 10/17 6:00 - 8:00 pm . 
 Location: Covel 227
 
-Intro to Machine Learning: Advanced Track Workshop #1
-Time: Friday 10/18 6:00 - 8:00 pm
+*Intro to Machine Learning: Advanced Track Workshop #1* . 
+Time: Friday 10/18 6:00 - 8:00 pm . 
 Location: Geology 4660
 
-Applications for projects and outreach teams are also live!
-
-To join one of our project teams, fill out the application at: https://tinyurl.com/aiappsfall19
-
-To join our outreach team, fill out this application: https://tinyurl.com/aioutreachappsfall19
+Applications for projects and outreach teams are also live!  
+To join one of our project teams, fill out the application at: https://tinyurl.com/aiappsfall19 . 
+To join our outreach team, fill out this application: https://tinyurl.com/aioutreachappsfall19 . 
 
 Deadline to apply is **10/14/19 at 11:59 PM**
 
