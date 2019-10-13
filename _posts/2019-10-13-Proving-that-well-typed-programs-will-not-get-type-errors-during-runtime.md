@@ -33,7 +33,7 @@ We use induction on ![beta trans reduction](https://latex.codecogs.com/gif.latex
 ### Base case
 ![base case](https://latex.codecogs.com/gif.latex?M%20%3D%20%28%5Clambda%20x%20P%29Q%20%5Ctextup%20%7B%20and%20%7D%20N%20%3D%20P%5Bx%3A%3DQ%5D)
 
-M is the result of applying a function {\xP} to a term Q. Since M has type {sigma}, then {\xP} must have type {tau -> sigma} (where tau is an arbitrary type) and Q must have type {tau}. 
+M is the result of applying a function ![lambda x p](https://latex.codecogs.com/gif.latex?%28%5Clambda%20x%20P%29) to a term Q. Since M has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma), then ![lambda x p](https://latex.codecogs.com/gif.latex?%28%5Clambda%20x%20P%29) must have type https://latex.codecogs.com/gif.latex?%5Ctau%20%5Crightarrow%20%5Csigma (where tau is an arbitrary type) and Q must have type ![tau](https://latex.codecogs.com/gif.latex?%5Ctau). 
 
 Generally, "x must have type ![tau](https://latex.codecogs.com/gif.latex?%5Ctau) (in environment ![gamma](https://latex.codecogs.com/gif.latex?%5CGamma))" can be written as ![gamma x tau](https://latex.codecogs.com/gif.latex?%5CGamma%20%5Cvdash%20x%20%3A%20%5Ctau).
 
@@ -48,5 +48,5 @@ Now we have ![generation lemma result](https://latex.codecogs.com/gif.latex?%5CG
 ### General case
 Assuming it holds for {M trans reduces N}, show that it holds for {M' reduces to M, trans reduces to N}
 
-We showed in the base case that if M' has type {sigma} then M must also have type {sigma}. Given our assumption - if M {trans reduces} N and M has type {sigma} then N has type {sigma} as well - then N must have the same type as M'. 
+We showed in the base case that if M' has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) then M must also have type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma). Given our assumption - if https://latex.codecogs.com/gif.latex?M%20%5Ctwoheadrightarrow_%5Cbeta%20N and M has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) then N has type ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma) as well - then N must have the same type as M'. 
 
