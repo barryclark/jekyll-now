@@ -5,7 +5,7 @@ title: Proving that well-typed programs will not get type errors during runtime
 
 I came across this theorem recently, and thought that it's an interesting result. The proof itself isn't particularly flashy, but I think the result is relevant to every prorammer's daily life and that's pretty cool. My hope is to explain it enough that a programmer with basic logic experience can understand the proof. I'll explain notation along the way.
 
-Theorem: https://latex.codecogs.com/gif.latex?%5Ctextup%7BIf%20%7D%5CGamma%20%5Cvdash%20M%20%3A%20%5Csigma%20%5Ctextup%7B%20and%20%7D%20M%20%5Ctwoheadrightarrow_%5Cbeta%20N%20%5Ctextup%20%7B%20then%20%7D%20%5CGamma%20%5Cvdash%20N%20%3A%20%5Csigma
+Theorem: ![theorem]https://latex.codecogs.com/gif.latex?%5Ctextup%7BIf%20%7D%5CGamma%20%5Cvdash%20M%20%3A%20%5Csigma%20%5Ctextup%7B%20and%20%7D%20M%20%5Ctwoheadrightarrow_%5Cbeta%20N%20%5Ctextup%20%7B%20then%20%7D%20%5CGamma%20%5Cvdash%20N%20%3A%20%5Csigma
 
 To break this down: 
 - {TURNSTILE} is sometimes called a "turnstile". {GAMMA TURNSTILE M} would be read as "M is derived from {GAMMA}". 
