@@ -17,7 +17,7 @@ vs.
 
 > *"I think we should be very careful about artificial intelligence. If I had to guess at what our biggest existential threat is, it’s probably that.” -Elon Musk, CEO of Tesla*
 
-Despite their opposing views on the subject, both of their companies use AI in their everyday technologies. Google uses AI to rank search results, target advertising, and to understand human language in its voice assistants; Tesla uses it to analyze data from its cars to develop new autonomous capabilities.
+Despite their opposing views on the subject, both Musk's and Brin's companies use AI in their everyday technologies. Google uses AI to rank search results, target advertising, and to understand human language in its voice assistants; Tesla uses it to analyze data from its cars to develop new autonomous capabilities.
 
 You probably encounter AI in your daily life as well; it powers voice assistants like Siri and Cortana, tailors the personalized content you browse through on Facebook and Netflix, and is behind the face filters on Snapchat.
 
