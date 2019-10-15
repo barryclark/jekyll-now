@@ -17,7 +17,10 @@ October 25: Accenture Technology Architecture Workshop, St Charles, IL
 October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
 * **CNCF Keynote**
 
-October 31 - November 1: MIT Technology Review Leadership Summit, Singapore
+October 31: Singapore Ministry of Defence - Defence Science & Technology Agency's Innovation Day, Singapore
+* **Panel**
+
+November 1: MIT Technology Review Leadership Summit, Singapore
 * [**Keynote: The Power of Transforming Systems**](http://forms.technologyreview.com/leadership-summit/)
 
 November 4-5: [LF Energy Summit](https://events.linuxfoundation.org/events/lfenergysummit2019/program/), Paris
