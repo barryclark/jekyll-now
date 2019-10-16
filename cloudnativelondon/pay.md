@@ -9,7 +9,7 @@ description: "Pay Cloud Native London by bank transfer, direct debit, credit or 
 
 ### Set up monthly sponsorship
 
-Direct debit has much lower transaction fees, so we appreciate you choosing direct debit if possible.
+Direct debit has much lower transaction fees, so we appreciate you choosing direct debit if you are based in the UK, EU, Sweden, Denmark, Australia, New Zealand, or Canada.
 
 <button class="gocardless" onclick="location.href='https://pay.gocardless.com/AL00022PZ8R1ZJ'" type="button">Direct debit</button> {% if jekyll.environment == "production" %}
 {% include stripe-monthly.html %}
