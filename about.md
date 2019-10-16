@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am currently working as a lead software developer at Nelen & Schuurmans, primarily on the Python backend of [Lizard](https://demo.lizard.net), a data platform for the physical environment.
 
-### More Information
+My background is a mix of different branches of science: I started out with chemistry and went via physics to software development. Especially during my PhD ([thesis](http://caspervdwel.nl/thesis.pdf)) I focused on data analysis, tracking colloidal particles in 3D microscopic images on lipid membranes.
 
-A place to include any other types of information that you'd like to include about yourself.
+Open source projects I am actively contributing to:
+- [dask-geomodeling](https://dask-geomodeling.readthedocs.org)
+- [PIMS](http://soft-matter.github.io/pims)
+- [PyGEOS](https://pygeos.readthedocs.org)
+- [trackpy](http://soft-matter.github.io/trackpy)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[caspervdw@gmail.com](mailto:caspervdw@gmail.com)
