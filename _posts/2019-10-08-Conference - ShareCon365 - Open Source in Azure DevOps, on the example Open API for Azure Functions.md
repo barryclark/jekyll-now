@@ -23,7 +23,7 @@ tags:
   - Flow
 ---
 
-<iframe src="https://www.slideshare.net/janusznowak/slideshelf" width="760px" height="570px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/co9ftuWXpQnEce?startSlide=3" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/janusznowak/20191008-share-con365-2019-open-source-in-azure-devops-on-the-example-open-api-for-azure-functions-janusz-nowak" title="2019.10.08 share con365 2019 open source in azure devops, on the example open api for azure functions janusz nowak" target="_blank">2019.10.08 share con365 2019 open source in azure devops, on the example open api for azure functions janusz nowak</a> </strong> from <strong><a href="//www.slideshare.net/janusznowak" target="_blank">Janusz Nowak</a></strong> </div>
 
 Links:
  - http://www.sharecon365.pl
