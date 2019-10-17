@@ -1,5 +1,5 @@
 ---
-title: Presentation from DevOps Offstie - Continues Integration and Continuous Delivery with Azure DevOps - Deploy Anything to Anywhere with Azure DevOps
+title: Presentation from DevOps Offsite - Continues Integration and Continuous Delivery with Azure DevOps - Deploy Anything to Anywhere with Azure DevOps
 author: Janusz Nowak
 layout: post
 categories:
