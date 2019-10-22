@@ -38,6 +38,10 @@ November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
 
 December 2 - 6: AWS re:Invent, Las Vegas
 
+December 9 - 10: Kubernetes Forums, Seoul
+
+December 11 - 14: Kubernetes Forums, Sydney
+
 ### 2020
 
 March 31 - April 2: KubeCon + CloudNativeCon Europe, Amsterdam
