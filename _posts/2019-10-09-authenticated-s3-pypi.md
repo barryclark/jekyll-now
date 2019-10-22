@@ -5,7 +5,7 @@ subtitle: Serverless hosting of private Python packages in AWS S3 buckets
 category: dev
 tags: [aws, development, serverless]
 author: Christoph Ludwig
-author_email: christoph.ludwig@haufe-lexeware.com
+author_email: christoph.ludwig@haufe-lexware.com
 header-img: "images/new/Exportiert_47.jpg"
 ---
 
