@@ -36,7 +36,7 @@ Video from my presentation on virtual conference [https://dotnetconf.pl](https:/
 Many thanks for [organizers](https://dotnetconf.pl/Contact) for new interesting experience and making this event this year:
  - [Paweł Łukasik](https://twitter.com/pawel_lukasik)
  - [Grzegorz Kotfis](https://twitter.com/gkotfis)
- - [Szymon Warda][https://twitter.com/maklipsa]
+ - [Szymon Warda](https://twitter.com/maklipsa)
  - [Paweł Klimczyk](https://twitter.com/pwlklm)
  - [Konrad Kokosa](https://twitter.com/konradkokosa)
 
