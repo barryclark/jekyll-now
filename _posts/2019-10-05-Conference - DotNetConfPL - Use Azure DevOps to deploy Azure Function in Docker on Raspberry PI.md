@@ -33,14 +33,16 @@ Video from my presentation on virtual conference [https://dotnetconf.pl](https:/
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yPjF4MZjCl8?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Many thanks for [https://dotnetconf.pl/Contact](organizers) for new interesting experience and making this event this year:
- - [https://twitter.com/pawel_lukasik](Paweł Łukasik)
- - [https://twitter.com/gkotfis](Grzegorz Kotfis)
- - [https://twitter.com/maklipsa](Szymon Warda)
- - [https://twitter.com/pwlklm](Paweł Klimczyk)
- - [https://twitter.com/konradkokosa](Konrad Kokosa)
+Many thanks for [organizers](https://dotnetconf.pl/Contact) for new interesting experience and making this event this year:
+ - [Paweł Łukasik](https://twitter.com/pawel_lukasik)
+ - [Grzegorz Kotfis](https://twitter.com/gkotfis)
+ - [Szymon Warda][https://twitter.com/maklipsa]
+ - [Paweł Klimczyk](https://twitter.com/pwlklm)
+ - [Konrad Kokosa](https://twitter.com/konradkokosa)
 
 Links:
- - [https://dotnetconf.pl](Link to virtual conference https://dotnetconf.pl)
- - [https://www.youtube.com/channel/UCs3oPPpRdETQTsxVF-Wvqbg/featured](Link to virtual conference youtube channel of https://dotnetconf.pl)
- - [https://github.com/janusznowak/Janono.UseAzureDevOpstodeployAzureFunctioninDockeronRaspberryPI](Used code on Github)
+ - [Link to virtual conference https://dotnetconf.pl](https://dotnetconf.pl)
+ - [Link to virtual conference youtube channel of https://dotnetconf.pl](https://www.youtube.com/channel/UCs3oPPpRdETQTsxVF-Wvqbg/featured)
+ - [Used code on Github](https://github.com/janusznowak/Janono.UseAzureDevOpstodeployAzureFunctioninDockeronRaspberryPI)
+ - [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
+ - [Docker hub with created image](https://cloud.docker.com/u/janono/repository/docker/janono/azurefunctionlinuxrpi4)
