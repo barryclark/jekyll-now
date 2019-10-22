@@ -4,17 +4,19 @@ title: Javascript UI Frameworks - React
 ---
 
 ## Overview
+
 Javascript UI frameworks like React and Angular have changed the way that development teams approach Web application development.
 
 These modern tools further diminish the role of server-side HTML generation and HTTP form processing in favour of manipulating the DOM within the browser and calling out to server-side REST services.
 
 In many ways, they can be seen as the next evolution in Web application development, from interspersed HTML and Javascript (often JQuery) making REST calls to more complete frameworks offering templating, routing.
 
-Techniques to allow the use of new Javascript language features on the browser-side (where support for new language features lags by several years) such as polyfills and transpilation have been developed and there’s been an explosion of tooling as a transition Node.js has gradually become more prominent in the development of client-side Javascript development. 
+Techniques to allow the use of new Javascript language features on the browser-side (where support for new language features lags by several years) such as polyfills and transpilation have been developed and there’s been an explosion of tooling as a transition Node.js has gradually become more prominent in the development of client-side Javascript development.
 
 So we got together to talk about how this impacts modern software development practice.
 
 ## React and Angular are two popular UI frameworks, but what’s the difference?
+
 DC: They are different beasts, Angular is a full MVC framework, and React is just a view layer with an ecosystem around it that will give you everything, but you can take bits as you want, so it's effectively like how we view microservices. You take little bits in and out. React is the extreme view of that, Angular is the more monolithic view.
 
 CA: React is nice way for developers not to have to interact with DOM directly. Angular gives you that, and a whole slew of everything else you could possibly need under the sun, and a sink. If all you need is that your DOM manipulation is too complex, React helps you to solve that by giving you a good set of conventions, a good set of technologies, lots of support. Adopting Angular is more of a case of rewriting your whole app in the Angular way.
@@ -234,6 +236,7 @@ DC: Using Webpack, you can split your javascript file out into separate chunks b
 CA: When teams are used to it, it's fast, but to start with you're going to be copying and pasting from StackOverflow a lot. [laughter]
 
 ## People
+
 DC: Denis Craig
 CA: Craig Andrews
 AH: Adrian Hesketh
