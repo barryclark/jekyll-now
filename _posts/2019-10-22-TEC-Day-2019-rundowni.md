@@ -6,7 +6,7 @@ category: dev
 tags: [devops, culture]
 author: Scott Speights
 author_email: scott.speights@haufe-lexware.com
-header-img: "images/TECDay-2019/EC_KeyVis-2019.jpg"
+header-img: "images/TECDay-2019/TEC_KeyVis-2019.jpg"
 ---
 
 
@@ -18,16 +18,16 @@ On 26.9 we had our fifth developer day at the Haufe Group - aka TEC Day : TEC Da
 ![Happy TEC Campers](../images/TECDay-2019/TECCampers.jpg)
 
 
-What started as a sharp focus on mastering the technologies we needed to implement microservice architectures: containers, API Gateway, infrastructure as code is now fuller-blown and addresses technology, culture, and structure. This year we concentrated on new technologies like machine learning, leveraging managed cloud services, exploring serverless architectures. But also, how to tranfer this knowledge to develpment teams that are growing by 100% every six months, what kinds of thinking must be combined to build successful products, and what sort of mindset is needed to work as a full stack developer. Here's what happened.
+What started as a sharp focus on mastering the technologies we needed to implement microservice architectures: containers, API Gateway, infrastructure as code, now addresses the entire spectrum of dev culture - technology, culture, and structure. Yes, we concentrated on new technologies like machine learning, leveraging managed cloud services, exploring serverless architectures, and more, but we also took a look at how to tranfer this knowledge to development teams that are growing by 100% every six months, what kinds of thinking must be combined to build successful products, and what sort of mindset is needed to work as a full stack developer. Here's what happened.
 
 ## The Talks
 
-This year’s keynote speaker Patrick Kua – was perfectly suited to address the full gamut of topics. In his talk, he outlined the N26 approach to building products: how the berlin-based bank addresses the needs of their customers, their business, and selects technology to build products that add real value for their customers. 
+This year’s keynote speaker Patrick Kua – was perfectly suited to address the full gamut of topics. In his talk, he outlined the N26 approach to building products: how the berlin-based bank addresses the needs of their customers, their business, and selects technology to build products that add real value for the 3,500,000 people, who bank with them. 
 
 ![The Kua](../images/TECDay-2019/KuaTalkBlog.jpg)
 
 
-Holger Reinhardt returned to present the serverless-powered SaaS product that he developed for the last 9 months for Adello, building a cloud-native, microservices application that can meet the micro-trading-like performance needs of the fast-paced advertising industry. 
+Holger Reinhardt returned to present the serverless-powered SaaS product that he developed over the last 9 months for Adello, building a cloud-native, microservices application that can meet the micro-trading-like performance needs of the fast-paced advertising industry. 
 
 After Holger was done it was time to break for lunch, and when we returned it was time to start with the breakout sessions.
 
@@ -42,7 +42,7 @@ Raul Geana - Presented [his work on how the mission 4 product team is learning t
 
 Oliver Wana - CTO of the Haufe Group newcomer - Haufe Advisory - introduced his company and presented what Haufe Advisory is doing to stay productive while onboarding new developers at hypergrowth pace. 
 
-Nils Rhode - Gave one of his two awesome presentations about why he and his team decided on Fargate as the managed container service for the Haufe-umantis digital heads product.
+Nils Rhode - Gave the first of his two awesome presentations about why he and his team decided on Fargate as the managed container service for the Haufe-umantis digital heads product.
 
 Andreas Plaul and the AWS Framework Team - Defined our AWS Cloud compliance framework further by telling the story of why they decided on such a framework and the current status.
 
