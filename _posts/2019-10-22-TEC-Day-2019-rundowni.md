@@ -15,7 +15,7 @@ header-img: "images/TECDay-2019/TEC_KeyVis-2019.jpg"
 
 On 26.9 we had our fifth developer day at the Haufe Group - aka TEC Day : TEC Day #5 made it clear how technology has evolved over the years here at Haufe. Technologies that we prioritize are always subject to change because technology moves fast. But this year, other topics like, what is important to us and what’s not, and the right way to structure ourselves to build software and products, entered into the conversation. TEC Day has become the bellwether for the state of technology at Haufe Group.  
 
-![Happy TEC Campers](../images/TECDay-2019/TECCampers.jpg)
+![Happy TEC Campers](../images/TECDay-2019/TECCampers.JPG)
 
 
 What started as a sharp focus on mastering the technologies we needed to implement microservice architectures: containers, API Gateway, infrastructure as code, now addresses the entire spectrum of dev culture - technology, culture, and structure. Yes, we concentrated on new technologies like machine learning, leveraging managed cloud services, exploring serverless architectures, and more, but we also took a look at how to tranfer this knowledge to development teams that are growing by 100% every six months, what kinds of thinking must be combined to build successful products, and what sort of mindset is needed to work as a full stack developer. Here's what happened.
