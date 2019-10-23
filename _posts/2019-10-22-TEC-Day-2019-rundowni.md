@@ -46,14 +46,14 @@ Nils Rhode - Gave the first of his two awesome presentations about why he and hi
 
 Andreas Plaul and the AWS Framework Team - Defined our AWS Cloud compliance framework further by telling the story of why they decided on such a framework and the current status.
 
-![AP](../images/TECDay-2019/Framework.jpg)
+![AP](../images/TECDay-2019/Framework.JPG)
 
 
 Nils Rhode (again!) - Gave his second talk on the decision to use Flutter framework for the next release of the Haufe Instant Feedback mobile app.
 
 Bogdan Cimpoesu - Delivered his manifesto on [being a Full Stack Developer](https://www.youtube.com/watch?v=5MzdbiPaZxc) complete with advice ranging from how to approach tackling full stack development tasks to technology stacks that support lean, full-stack development. 
 
-![BC](../images/TECDay-2019/Bogdan.jpg)
+![BC](../images/TECDay-2019/Bogdan.JPG)
 
 
 Martin Danielsson - Talked about how adopting a MERN stack and microservices architecture helped his team to shorten feature branches, and, how with feature flags, they implement, test, and adopt new features for his team’s product at high-velocity. 
@@ -64,9 +64,9 @@ Jerzy Kott - Rolled out the Haufe Group's production-ready Data Lake touching on
 
 Finally, Raul closed it out with his thoughts on where technology is going for the Haufe Group – changes how we do technical reviews, more support for DevOps and lots of technologies to look at like GraphML, gRPC, and many more. 
 
-![Fraul](../images/TECDay-2019/Fraul.jpg)
+![Fraul](../images/TECDay-2019/Fraul.JPG)
 
 Looks like we have our work cut out for us until we get to TEC Day 2020, but that's ok because more and more,
 
-![Tech Matters](../images/TECDay-2019/TechnologyMatters.jpg)
+![Tech Matters](../images/TECDay-2019/TechnologyMatters.JPG)
 
