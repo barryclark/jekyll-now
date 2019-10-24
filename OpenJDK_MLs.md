@@ -8,29 +8,31 @@ redirect_from:
   - /mls/
 ---
 
-[discuss](https://mail.openjdk.java.net/mailman/listinfo/discuss)
+[discuss](https://mail.openjdk.java.net/pipermail//discuss)
 
 [jdk-dev](https://mail.openjdk.java.net/pipermail/jdk-dev/)
 
 [adoption-discuss](https://mail.openjdk.java.net/pipermail/adoption-discuss/)
 
-[jdk-updates-dev](https://mail.openjdk.java.net/mailman/listinfo/jdk-updates-dev)
+[jdk-updates-dev](https://mail.openjdk.java.net/pipermail/jdk-updates-dev)
 
 [jdk8u-dev](https://mail.openjdk.java.net/pipermail/jdk8u-dev/)
 
-[Vulnerability](https://mail.openjdk.java.net/mailman/listinfo/vuln-announce)
+[Vulnerability](https://mail.openjdk.java.net/pipermail/vuln-announce)
 
 [panama-dev](https://mail.openjdk.java.net/pipermail/panama-dev/)
 
-[loom-dev](https://mail.openjdk.java.net/mailman/listinfo/loom-dev)
+[loom-dev](https://mail.openjdk.java.net/pipermail//loom-dev)
 
-[Skara](https://mail.openjdk.java.net/mailman/listinfo/skara-dev)
+[Skara](https://mail.openjdk.java.net/pipermail/skara-dev)
 
-[Valhala](https://mail.openjdk.java.net/pipermail/valhalla-dev/2019-October/thread.html)
+[Valhala](https://mail.openjdk.java.net/pipermail/valhalla-dev/)
 
 [amber-dev](https://mail.openjdk.java.net/pipermail/amber-dev/)
 
 [announce](https://mail.openjdk.java.net/pipermail/announce/)
+
+[openjfx-dev](https://mail.openjdk.java.net/pipermail/openjfx-dev)
 
 [compiler-dev](https://mail.openjdk.java.net/pipermail/compiler-dev/)
 
@@ -52,7 +54,7 @@ redirect_from:
 
 [javadoc-dev](https://mail.openjdk.java.net/pipermail/javadoc-dev/)
 
-[jmc-dev](https://mail.openjdk.java.net/pipermail/jmc-dev/2019-October/thread.html)
+[jmc-dev](https://mail.openjdk.java.net/pipermail/jmc-dev/)
 
 [lanai-dev](https://mail.openjdk.java.net/pipermail/lanai-dev/)
 
@@ -66,7 +68,6 @@ redirect_from:
 
 [net-dev](https://mail.openjdk.java.net/pipermail/net-dev/)
 
-[openjfx-dev](https://mail.openjdk.java.net/mailman/listinfo/openjfx-dev)
 
 
 
