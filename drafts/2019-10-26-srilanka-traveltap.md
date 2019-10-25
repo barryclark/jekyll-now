@@ -5,11 +5,13 @@ author: Amy Quinton, Daniel Newman
 description: Finding clean drinking water in Sri Lanka, without single-use disposable plastic bottles 
 ---
 
-Have you always assumed that if it is not safe to drink the tap water then you need to rely on bottled water? In our experience that is not always the case. There are often better, less wasteful alternatives. 
+*Written by Amy Quinton and Daniel Newman*
 
-For longer term or regular travellers the best option is to have your own water purifier bottle or system like a steri-pen so you are always covered. But if you don’t have one, never fear.
+Have you always assumed that if it's not safe to drink the tap water while traveling, then you must rely on purchasing single-use bottled water? Well luckily for you, we have discovered that is not always the case! There are often far better, (and less wasteful) alternatives. 
 
-In Sri Lanka we discovered there are many water re-fill stations where you can fill-up, rather than purchasing bottled water all the time. Below are four popular tourist destinations where you will find refill stations. These are just a few examples that we visited and no doubt there are many more options around the country. If you know of any let me know and I can add them to the list. 
+For longer term or regular travellers we've found that the best option is to have your own water purifier bottle or system like a steri-pen so you are always covered. Our fav all-in-one solution for this is the [“Travel Tap” water purifying systems][1] which you can get from Amazon. But if you don’t have one, never fear.
+
+In Sri Lanka we discovered there are many water re-fill stations where you can fill-up with clean fresh water, rather than purchasing bottled. Below are four popular tourist destinations where you will find refill stations. These are just a few examples that we visited and no doubt there are many more options around the country. If you know of any let me know and I can add them to the list. 
 
 ## Arugambay 
 
@@ -61,12 +63,13 @@ For example, if you already have clean water supply for the kitchen, why not for
 
 But a conscious effort is needed to move away from the single-use plastic habit we have all developed.
 
+:potable_water:
+
 ##Getting the message out
 
 Would you find it useful if Trip Advisor, Booking.com, Google Reviews, AirBNB and so on listed "water re-fill station" as a facility provided by the accomodation or restaurant?
 
-
- 
+[1]: https://www.amazon.co.uk/Travel-Spout-800ml-filter-bottle/dp/B006RGLHOY
 
  
 
