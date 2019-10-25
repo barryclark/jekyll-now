@@ -1,4 +1,9 @@
-#Drink safe water in Sri Lanka without leaving a plastic bottle trail
+---
+layout: post
+title: Drink safe water in Sri Lanka without leaving a plastic bottle trail
+author: Amy Quinton, Daniel Newman
+description: Finding clean drinking water in Sri Lanka, without single-use disposable plastic bottles 
+---
 
 Have you always assumed that if it is not safe to drink the tap water then you need to rely on bottled water? In our experience that is not always the case. There are often better, less wasteful alternatives. 
 
