@@ -10,7 +10,7 @@ tags:
   - "2019"
 ---
 
-* The success of cloud native is changing the norms and expectations to be open source by default.
+* The success of cloud native is changing expectations. Now open source is the default.
 
 * Kubernetes is fast becoming the defacto standard and innovation is moving to topics like service mesh.
 
