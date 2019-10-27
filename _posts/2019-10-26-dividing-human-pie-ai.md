@@ -35,7 +35,7 @@ During a morning break I asked all of the participants to rate themselves in ter
 
 ![The Google form that I asked the participants to complete]({{ "/images/2019-10-26-form.png"}})
 
-I wrote a little [Python app](https://github.com/mcmont/mldemos/tree/master/human-pie-divider) into which I fed the responses in a CSV file. The app is only 100 lines and uses the [_scikit-learn_](https://scikit-learn.org/) library's [_k_-means clustering algorithm](https://scikit-learn.org/stable/modules/clustering.html#k-means) to assign the responses into two groups.
+I wrote a little [Python app](https://github.com/mcmont/mldemos/tree/master/human-pie-divider) into which I fed the responses in a CSV file. The app is only 100 lines of code and uses the [_scikit-learn_](https://scikit-learn.org/) library's [_k_-means clustering algorithm](https://scikit-learn.org/stable/modules/clustering.html#k-means) to assign the responses into two groups.
 
 _k_-means is a relatively simple unsupervised learning algorithm that can be used to group similar data points together. 
 
