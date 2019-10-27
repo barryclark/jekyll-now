@@ -307,29 +307,120 @@ This may sound nuanced, but the more mixed content one has to present (graphics,
 restrictive the print-oriented format starts becoming
 
 On the other hand, Confluence is sort of a [one trick pony][27] geared towards text and graphics
-Any other type of information (sheets, slides,...) and one has to integrate/use other tools
+Any other type of information (sheets, slides,...) and one has to integrate with other tools
 
 ### Markdown
 
+[Markdown][28] has become almost the de-facto method of documenting code 
+with its ubiquitous support in all modern source control servers
 
+Its simple syntax makes it very easy to compose with only a keyboard
+making it a natural fit for developers 
+
+In terms of "distance from the codebase" 
+this is definitely the closest one 
+making it ideal for component documentation
+and updating/committing alongside the code itself
+keeping the "freshness" factor high
+
+Since it renders in HTML, it can take advantage of the entire screen estate
+to display mixed content 
 
 ### ...and AsciiFlow
 
+With the exception of Visio, 
+one thing we have not addressed so far is 
+how to visually represent our systems' layout 
+
+If indeed "a picture is a thousand words", 
+then a good representative diagram of our system would save us a whole lot of typing
+   
+The most straight-forward way to create a diagram is [AsciiFlow][30]
+
+This is a simple web-based designer which generates [ASCII-based][29] diagrams 
+See a simple example embedded below
+
+```
++-------+            +--------+
+|       |  A line    | A box  |
+| Some  +------------+ here   |
+| text  |            |        |
++---+---+            +--------+
+    |
+    |
+    |                +-----------------+
+    |  An arrow      |                 |
+    +--------------->+ ...and a longer |
+       some text     | one!            |
+                     +-----------------+
+```
+
+It is extremely simple to use and as long as the text rendering system
+supports [monospaced][31] characters then everything displays fine
+
+The downside of being character-based is that diagrams cannot be scaled 
+relative to text
+This means that large diagrams cannot display well in a page-oriented medium (Word, GDocs)
+
 ### ...and mermaidJS
 
-https://mermaidjs.github.io/mermaid-live-editor
+Another way of creating diagrams without going too far from the keyboard 
+is [mermaidJS][32] 
 
-//cdn.jsdelivr.net/npm/mermaid@8.2.1/dist/mermaid.min.js
+Mermaid is a great Javascript-based tool to create and embed diagrams
+Its description language is really simple 
+One can create good-looking diagrams fairly quickly
 
+It offers renderers to generate SVG as a build time tool 
+But its true power lies in the fact that it can generate live, embeddable
+diagrams for HTML-based mediums (e.g. Markdown) 
+
+For example, see the following embedded diagram
+
+<script src="//cdn.jsdelivr.net/npm/mermaid@8.2.1/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<div class="mermaid">
+graph TD
+A[Blog Post] -->|Get idea| B(Start writing)
+B --> C{Structure}
+C -->|One| D[fa:fa-book Prologue]
+C -->|Two| E[Main text]
+C -->|Three| F[fa:fa-clock Epilogue]
+</div>
+
+> An example embedded mermaidJS diagram
+
+This has been generated using the following code in this blog post's Markdown
+
+```html
 <script src="mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 
 <div class="mermaid">
-    CHART DEFINITION GOES HERE
+graph TD
+A[Blog Post] -->|Get idea| B(Start writing)
+B --> C{Structure}
+C -->|One| D[fa:fa-book Prologue]
+C -->|Two| E[Main text]
+C -->|Three| F[fa:fa-clock Epilogue]
 </div>
+```
+
+mermaidJS is an evolving project, adding support for different types of diagrams
+so may have some wrinkles here and there
+
+It also lacks a comprehensive user guide for all different diagram types
+So you will regularly find yourself trying out things in the [live editor][33]
 
 ### ...and LucidChart
 
+<div style="width: 480px; height: 360px; margin: 10px; position: relative;">
+    <iframe 
+        allowfullscreen frameborder="0" style="width:480px; height:360px" 
+        src="https://www.lucidchart.com/documents/embeddedchart/ce860c53-0bc1-4d7f-a4ff-ef2511000511" id="X.L4jCWw-dCu">
+    </iframe>
+</div>
 
 ## Parting thought
 
@@ -367,3 +458,9 @@ https://mermaidjs.github.io/mermaid-live-editor
    [25]: https://medium.com/swlh/avoiding-the-wtf-moment-685ca73080cb
    [26]: https://github.com/npryce/adr-tools
    [27]: https://dictionary.cambridge.org/dictionary/english/one-trick-pony
+   [28]: https://en.wikipedia.org/wiki/Markdown
+   [29]: https://en.wikipedia.org/wiki/ASCII_art
+   [30]: http://asciiflow.com/
+   [31]: https://en.wikipedia.org/wiki/Monospaced_font
+   [32]: https://mermaidjs.github.io/
+   [33]: https://mermaidjs.github.io/mermaid-live-editor
