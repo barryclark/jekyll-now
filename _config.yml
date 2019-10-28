@@ -6,7 +6,7 @@
 name: Jack O'Hara
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Software Engineer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: JackOHara
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/jack-o-hara-394066b8/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:

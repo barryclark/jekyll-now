@@ -7,31 +7,37 @@
 
 @import "reset";
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
 /**************/
-
+$body-font-family: 'Open Sans';
+$header-font-family: 'Roboto';
 html {
   font-size: 100%;
 }
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 16px/1.4 $body-font-family;
   color: $darkGray;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $header-font-family;
   color: $darkerGray;
   font-weight: bold;
 
@@ -151,7 +157,6 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
 }
 
 .masthead {
@@ -194,8 +199,8 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
+  font-family: $header-font-family;
+  font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -213,7 +218,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $header-font-family;
   font-size: 18px;
 
   @include mobile {
@@ -227,7 +232,7 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 1px;
 
     @include mobile {
@@ -237,9 +242,9 @@ nav {
   }
 }
 
-//
-// .main
-//
+#main {
+  flex: 1;
+}
 
 .posts > .post {
   padding-bottom: 2em;
