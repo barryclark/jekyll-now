@@ -4,12 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Software Engineer!
-
-### M
-
-A place to include any other types of information that you'd like to include about yourself.test
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I'm currently a Software Engineer working at Bazaarvoice, Belfast. I'm a CS graduate of Ulster University. I'm not sure what direction this site is going to go, it will probably veer strongly in the technical direction. For now this it. 
