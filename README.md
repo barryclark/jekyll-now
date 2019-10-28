@@ -50,6 +50,12 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 ## Local Development
 
+The easiest way to bring up a local development copy of the site is to use the `itzg/jekyll-github-pages` Docker image:
+
+```docker run -it -p 4000:4000 -v $(pwd):/site itzg/jekyll-github-pages```
+
+You can then connect to the local dev server on `http://localhost:4000`.
+
 ### Ubuntu 18.04 brain-dead step 1
 
 ```
