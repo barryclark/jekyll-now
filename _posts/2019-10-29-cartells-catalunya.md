@@ -6,7 +6,7 @@ comments: true
 bigger:
 category: Recursos
 tags: [descargar plantilles, plantilles per a cartells 1 d'octubre, cdr, photoshop, independencia de catalunya, tsunami democratic, open source, proces, dibuix, recursos, gratis]
-img: "images/octubre/post1oct.jpg"
+img: "images/octubre/post1octweb.jpg"
 posting: true
 excerpt_separator: <!--more-->
 ---
@@ -26,20 +26,20 @@ Salut i República!
 ### Enllaços Directes
 
 
-<a href="{{ site.baseurl }}/images/octubre/post1oct.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/octubre/post1oct.jpg"></a>
+<a href="{{ site.baseurl }}/images/octubre/post1octweb.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/octubre/post1octweb.jpg"></a>
 
 ###### 1-OCT
 Ni Oblit, ni perdó
 
 <strong><em><a href="{{ site.baseurl }}/images/octubre/post1oct.zip" title="Baixar en .ZIP" target="_blank"><i class="icon-cloud-download"></i>Per imprimir</a></em>
-<em><a href="{{ site.baseurl }}/images/octubre/post1oct.jpg" title="Baixar per a web" target="_blank"><i class="icon-cloud-download"></i>Per a internet</a></em></strong>
+<em><a href="{{ site.baseurl }}/images/octubre/post1octweb.jpg" title="Baixar per a web" target="_blank"><i class="icon-cloud-download"></i>Per a internet</a></em></strong>
 
 ---
 <a href="{{ site.baseurl }}/images/octubre/unsolpoble1web.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/octubre/unsolpoble1web.jpg"></a>
 
 ###### Som un Sol Poble 1
 
-<strong><em><a href="{{ site.baseurl }}/images/octubre/unsolpoble1web.zip" title="Baixar en .ZIP" target="_blank"><i class="icon-cloud-download"></i>Per imprimir</a></em>
+<strong><em><a href="{{ site.baseurl }}/images/octubre/unsolpoble1.zip" title="Baixar en .ZIP" target="_blank"><i class="icon-cloud-download"></i>Per imprimir</a></em>
 <em><a href="{{ site.baseurl }}/images/octubre/unsolpoble1web.jpg" title="Baixar per a web" target="_blank"><i class="icon-cloud-download"></i>Per a internet</a></em></strong>
 
 ---
@@ -47,7 +47,7 @@ Ni Oblit, ni perdó
 
 ###### Som un Sol Poble 2
 
-<strong><em><a href="{{ site.baseurl }}/images/octubre/unsolpoble2web.zip" title="Baixar en .ZIP" target="_blank"><i class="icon-cloud-download"></i>Per imprimir</a></em>
+<strong><em><a href="{{ site.baseurl }}/images/octubre/unsolpoble2.zip" title="Baixar en .ZIP" target="_blank"><i class="icon-cloud-download"></i>Per imprimir</a></em>
 <em><a href="{{ site.baseurl }}/images/octubre/unsolpoble2web.jpg" title="Baixar per a web" target="_blank"><i class="icon-cloud-download"></i>Per a internet</a></em></strong>
 
 ---
@@ -55,7 +55,7 @@ Ni Oblit, ni perdó
 
 ###### Som un Sol Poble 3
 
-<strong><em><a href="{{ site.baseurl }}/images/octubre/unsolpoble3web.zip" title="Baixar en .ZIP" target="_blank"><i class="icon-cloud-download"></i>Per imprimir</a></em>
+<strong><em><a href="{{ site.baseurl }}/images/octubre/unsolpoble3.zip" title="Baixar en .ZIP" target="_blank"><i class="icon-cloud-download"></i>Per imprimir</a></em>
 <em><a href="{{ site.baseurl }}/images/octubre/unsolpoble3web.jpg" title="Baixar per a web" target="_blank"><i class="icon-cloud-download"></i>Per a internet</a></em></strong>
 
 ---
