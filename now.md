@@ -15,7 +15,7 @@ Recently finished working with Cambridge-based Telensa, building a front-end for
 
 Was lucky enough to visit Gdansk-based colleagues on this project which was a fantasic learning and team-building experience. 
 
-checkCurrently experiencing something of a departure from my normal front-end work by making a utility in Node to parse a JSON schema into ES6.
+Currently experiencing something of a departure from my normal front-end work by making a utility in Node to parse a JSON schema into ES6.
 
 Now involved in the early-stages of a complex discovery for improving our development processes. 
 It's exposing me to new aspects of software development outside of front-end which initially makes me feel out of place, but am taking it as an opportunity to build my resilience, and a great chance to learn more across an application.
