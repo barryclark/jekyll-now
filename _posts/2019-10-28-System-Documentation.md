@@ -19,7 +19,7 @@ That is the only way to stay ahead of the competition. Deliver X% more than your
 
 One aspect which is almost always an after-thought is that of documenting the systems and their interactions.   
 
-Here are some ideas of mine on the subject after a few years in the trenches. 
+Here are some ideas of mine on the subject, after a few years in the trenches. 
     
 <!--more-->
 
@@ -242,103 +242,84 @@ Not much more to say here...
 
 ### Google docs
 
-Collaboration 
+Google Docs is an interesting option for enterprise documentation.
 
-tooling in terms of text styling and authoring
-gets job done 
-without being too much of a distraction
+Being primarily geared towards collaboration, it allows any number of concurrent editors.  
+A team can be performing simultaneous in-place edits and comments, suggested edits and assign to-do tasks.  
+The product gives an out-of-the-box history of edits with the ability to rollback in time. 
 
-Good collaboration support
-allowing any number of editors
-suggested edits  
-in-place comments and assigned to-do tasks
-history of edits with ability to rollback
+The editor is quite straight-forward in terms of text authoring and authoring.  
+It offers all the options one might want ot get the job done, without being too much of a distraction (i.e. steer you
+towards gold-plating). 
 
-Tight integration with the rest of the Google suite 
-esp if using mail and identity services 
-docs are automatically embedded in mails
+Being a Google product, it offers tight integration with the rest of the Google suite, especially if your company's 
+back-end is based on [Google Enterprise][34].
 
-The GSuite product is geared towards ease-of-use, making it trivial to create new documents
-However this creates 2 problems, both faces of the same coin 
+It is easy to notice that the GSuite product is geared towards ease-of-use, making it trivial to create new documents.  
+However this creates 2 problems, both faces of the same coin. 
 
-* Accessibility of information
-Retrieving information from an archive of documents
-is another thing completely  
-All documents in the user's personal Google drive
-so takes additional steps (and team discipline) to move them to a shared structure 
-And then there is the question of the folder structure itself
-Google's search and machine learning functionality is meant to ease the location of important documents
-The result is a mixed result of immediate hits for the 95th percentile of searches 
-and quite some time spent looking for the remaining 5% 
+* **Accessibility of information**  
+All documents start their life in the user's personal Google drive, so it takes additional steps (and team discipline) 
+to move them to a shared structure.  
+And as with all things shared, there is the question of the folder structure itself.  
+How should it be organized? Per team? Per system? Otherwise?  
+Retrieving information from an archive of Google docs is another challenge.  
+Google's search and machine learning functionality is meant to ease the location of *important* documents.  
+This results in a mix of immediate "hits" for the 95th percentile of searches and quite some time spent looking for 
+the remaining 5%.  
 
-* Privacy of information
-This is the opposite extreme
-Making a mistake in the sharing settings makes a document 
-accessible to anyone on the internet
-In the corporate Google offering this is less of an issue
-but requires careful locking down from the admins and discipline on the part of the users
-Being an internet-first offering means mistakes in GSuite are immediately visible
+* **Privacy of information**  
+Being an internet-first offering, means that mistakes in GSuite are immediately visible.  
+Anyone who has edited a Google doc, quickly finds out that making a mistake in the sharing settings makes the document 
+accessible to anyone on the internet.  
+In the enterprise Google offering this is less of an issue, but requires careful locking down from the admins and 
+discipline from the users.  
 
 ### Confluence 
 
-Similar functionality to Google docs
-Latest version offers similar collaboration support 
-with in-place comments and to-do tasks
+Confluence is the undisputed leader in enterprise information capture.  
+Its latest version offers very similar collaboration support as Google docs, with in-place comments, assignable 
+task items, etc.  
 
-Confluence being a wiki encourages (if not imposes) a hierarchical ordering 
- of pages and information 
- This is the opposite of GDocs; in Confluence page start their in their intended location from the 1st minute
- rather than being moved from the personal space
+Confluence, being a wiki, encourages (if not imposes) a hierarchical ordering of pages and information.  
+In this regard, this is the opposite of Google docs. In Confluence, pages start their life in their intended location 
+from the 1st minute, rather than being moved from the personal space. 
 
-this can be a blessing and a curse 
+As mentioned in Google docs, having a shared "folder" structure can be a blessing and a curse.   
+Should pages be ordered by team? Project? Some other business domain?   
+Sometimes this upfront decision-making causes the feeling of over-analysis.  
+On the other hand, anyone who has accessed Confluence used for a few man-years, has surely encountered a messy structure, 
+feeling like it needs a good cleanup.    
+When it comes to hierarchical organization of information, not everyone understands it the same. 
 
-Should pages be ordered by team?
-Project?
-Some other business domain? 
-Sometimes this upfront decision-making causes the feeling of over-analysis
-On the other hand anyone who has used Confluence for over a year 
-has surely encountered a messy project structure 
-which feels like it needs a good cleanup  
-There is the concept of hierarchy but not everyone quite understands it the same
+A key difference between Confluence and Google docs or MS Word is the presentation of information.  
+Confluence is HTML-/browser-based, while MS Word and GDocs are page-/print-oriented.  
+This may sound nuanced, but the more mixed content one has to present (graphics, code snippets,...), the more restrictive 
+the print-oriented format starts becoming. 
 
-A key difference between Confluence and GDocs/MS Word is the presentation of information
-Confluence is HTML-/browser-based while MS Word and GDocs are page-/print-oriented
-This may sound nuanced, but the more mixed content one has to present (graphics, code snippets,...) the more 
-restrictive the print-oriented format starts becoming
-
-On the other hand, Confluence is sort of a [one trick pony][27] geared towards text and graphics
-Any other type of information (sheets, slides,...) and one has to integrate with other tools
+On the other hand, Confluence is sort of a [one trick pony][27], geared towards editing text and embedding graphics.  
+Any other type of information (sheets, slides,...) and one has to integrate with other tools.  
 
 ### Markdown
 
-[Markdown][28] has become almost the de-facto method of documenting code 
-with its ubiquitous support in all modern source control servers
+[Markdown][28] has become almost the de-facto method of documenting code, with its ubiquitous support in all modern 
+source control servers.  
+Its simple syntax makes it very easy to compose with only a keyboard, making it a natural fit for developers.  
 
-Its simple syntax makes it very easy to compose with only a keyboard
-making it a natural fit for developers 
+In terms of "distance from the codebase", Markdown is definitely the closest one.   
+This makes it ideal for component documentation, updating/committing Markdown READMEs alongside the code itself.  
+This keeps the documentation "freshness" factor high. 
 
-In terms of "distance from the codebase" 
-this is definitely the closest one 
-making it ideal for component documentation
-and updating/committing alongside the code itself
-keeping the "freshness" factor high
-
-Since it renders in HTML, it can take advantage of the entire screen estate
-to display mixed content 
+Like Confluence, Markdown renders in HTML, so it can take advantage of the entire screen estate to display mixed content.  
 
 ### ...and AsciiFlow
 
-With the exception of Visio, 
-one thing we have not addressed so far is 
-how to visually represent our systems' layout 
-
-If indeed "a picture is a thousand words", 
-then a good representative diagram of our system would save us a whole lot of typing
+With the exception of Visio, one thing we have not addressed so far is how to visually represent our systems' setup.  
+If "a picture is a thousand words", then a good representative diagram of our system will save us a whole lot of typing. 
    
-The most straight-forward way to create a diagram is [AsciiFlow][30]
-
-This is a simple web-based designer which generates [ASCII-based][29] diagrams 
-See a simple example embedded below
+The most straight-forward, no-frills way to create a diagram is [AsciiFlow][30].  
+This is a simple web-based designer which generates [ASCII-based][29] diagrams.   
+See a simple example embedded below.
 
 ```
 +-------+            +--------+
@@ -355,25 +336,23 @@ See a simple example embedded below
                      +-----------------+
 ```
 
-It is extremely simple to use and as long as the text rendering system
-supports [monospaced][31] characters then everything displays fine
+AsciiFlow is extremely simple to use and as long as the text rendering platform supports [monospaced][31] characters, 
+then everything displays fine. 
 
-The downside of being character-based is that diagrams cannot be scaled 
-relative to text
-This means that large diagrams cannot display well in a page-oriented medium (Word, GDocs)
+The downside of being character-based is that diagrams cannot be scaled relative to text.  
+This means that large diagrams cannot display well in a page-oriented medium (Word, Google docs), potentially 
+stretching out of the page margins. 
 
 ### ...and mermaidJS
 
-Another way of creating diagrams without going too far from the keyboard 
-is [mermaidJS][32] 
+Another way of creating diagrams without going too far from the keyboard is [mermaidJS][32].  
 
-Mermaid is a great Javascript-based tool to create and embed diagrams
-Its description language is really simple 
-One can create good-looking diagrams fairly quickly
+Mermaid is a great Javascript-based tool to create and embed diagrams.  
+Its description language is really simple andoOne can create good-looking diagrams fairly quickly. 
 
-It offers renderers to generate SVG as a build time tool 
-But its true power lies in the fact that it can generate live, embeddable
-diagrams for HTML-based mediums (e.g. Markdown) 
+It offers command-line renderers to generate SVG/PNG/PDF.   
+However its true power lies in the fact that it can generate live, embeddable diagrams for HTML-based mediums (e.g. 
+Markdown).  
 
 For example, see the following embedded diagram
 
@@ -391,7 +370,9 @@ C -->|Three| F[fa:fa-clock Epilogue]
 
 > An example embedded mermaidJS diagram
 
-This has been generated using the following code in this blog post's Markdown
+This has been generated using the following embedded code in this blog post's Markdown.  
+The browser loads the library which locates and parses mermaid's descriptive language.  
+Simples!
 
 ```html
 <script src="mermaid.min.js"></script>
@@ -407,11 +388,10 @@ C -->|Three| F[fa:fa-clock Epilogue]
 </div>
 ```
 
-mermaidJS is an evolving project, adding support for different types of diagrams
-so may have some wrinkles here and there
-
-It also lacks a comprehensive user guide for all different diagram types
-So you will regularly find yourself trying out things in the [live editor][33]
+MermaidJS is an evolving project, adding support for different types of diagrams.  
+One can easily find some wrinkles here and there. 
+It also lacks a comprehensive user guide for all different diagram types and features offered by its language.  
+So you will regularly find yourself trying out things in the [live editor][33].
 
 ### ...and LucidChart
 
@@ -464,3 +444,4 @@ So you will regularly find yourself trying out things in the [live editor][33]
    [31]: https://en.wikipedia.org/wiki/Monospaced_font
    [32]: https://mermaidjs.github.io/
    [33]: https://mermaidjs.github.io/mermaid-live-editor
+   [34]: https://gsuite.google.com/enterprise/
