@@ -6,7 +6,7 @@ comments: true
 bigger:
 category: Recursos
 tags: [descargar plantilles, plantilles per a cartells 1 d'octubre, cdr, photoshop, independencia de catalunya, tsunami democratic, open source, proces, dibuix, recursos, gratis]
-img: "images/post1octweb.jpg"
+img: "images/octubre/post1octweb.jpg"
 posting: true
 excerpt_separator: <!--more-->
 ---
@@ -26,7 +26,7 @@ Salut i República!
 ### Enllaços Directes
 
 
-<a href="{{ site.baseurl }}/images/post1octweb.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/post1octweb.jpg"></a>
+<a href="{{ site.baseurl }}/images/octubre/post1octweb.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/octubre/post1octweb.jpg"></a>
 
 ###### 1-OCT
 Ni Oblit, ni perdó
