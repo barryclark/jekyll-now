@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weeknotes &#35;0 - DVSA Design System workshop
+title: Weeknotes - DVSA Design System workshop
 tags: weeknotes, kainos, team, birmingham, consulting
 category: work
 img: design-system-dvsa-2019.jpg
