@@ -15,7 +15,10 @@ Recently finished working with Cambridge-based Telensa, building a front-end for
 
 Was lucky enough to visit Gdansk-based colleagues on this project which was a fantasic learning and team-building experience. 
 
-Now involved in the early-stages of a complex discovery for improving development processes. It's exposing me to new aspects of software development outside of front-end which initially makes me feel out of place, but am taking it as an opportunity to build my resilience, and a great chance to learn more across an application.
+checkCurrently experiencing something of a departure from my normal front-end work by making a utility in Node to parse a JSON schema into ES6.
+
+Now involved in the early-stages of a complex discovery for improving our development processes. 
+It's exposing me to new aspects of software development outside of front-end which initially makes me feel out of place, but am taking it as an opportunity to build my resilience, and a great chance to learn more across an application.
 
 ### Local Tech Events
 Attended [Notts Agile](https://www.meetup.com/NottAgile/) this month where we learned about building effective teams and healthy, safe development cultures. [Tweet >](https://twitter.com/MartinoNotts/status/1187136543833636865)
