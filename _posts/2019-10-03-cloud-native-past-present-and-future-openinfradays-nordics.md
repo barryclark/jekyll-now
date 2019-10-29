@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud native: Past, present and future, Keynote OpenInfraDays Nordics"
+title: "Cloud native: Past, present and future, Keynote at OpenInfraDays Nordics"
 description: "Read about the past, present and future of cloud native from Cheryl Hung, CNCF Director of Ecosystem."
 location: Stockholm, Sweden
 image: https://pbs.twimg.com/media/EF8nhuEWwAEILAV?format=jpg&name=medium

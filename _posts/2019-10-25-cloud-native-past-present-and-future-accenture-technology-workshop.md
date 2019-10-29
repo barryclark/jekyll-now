@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native Past, Present and Future: Accenture Technology Workshop keynote"
+title: "Cloud Native Past, Present and Future: Keynote at Accenture Technology Workshop"
 description: "See the slides about how cloud native is changing the norms from Cheryl Hung, CNCF Director of Ecosystem."
 location: Chicago, USA
 feature_image: /images/2019-10-25-cloud-native-past-present-and-future-accenture-technology-workshop.jpg
