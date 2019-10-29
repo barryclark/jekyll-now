@@ -32,7 +32,6 @@ November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
 * Panel at Cloud Native Storage Day
 * [**Lightning Talk: Want to Donate a Project to the CNCF? Here's How**](https://sched.co/UafB)
 * [**CNCF Keynote**](https://kccncna19.sched.com/event/UdPH/keynote-cheryl-hung-director-of-ecosystem-cloud-native-computing-foundation)
-* **CNCF Financial Services User Group**
 * **CNCF Research User Group**
 * **CNCF Telecoms User Group**
 
