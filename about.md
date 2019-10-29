@@ -6,24 +6,35 @@ permalink: /about/
 pic: martin-dm.jpg
 ---
 
-I'm a Front-end web developer from Nottingham. Advocate of standards, simplicity, and performance.
+I'm a Front-end Engineer from Nottingham. Passionate about the front-end; building applications that matter and taking ownership of performance, and the whole user experience.
 
-[hello@martindm.uk](mailto:hello@martindm.uk)
+You can message me on [hello@martindm.uk](mailto:hello@martindm.uk)
+
+Check out what I'm *currently* working on at my [Now](/now) page!
 
 ## What I do
-I'm experienced with all stages of web project delivery from specification, UX reviews, digital prototyping to responsive front-end builds and Javascript functionality.
+Currently Senior Front-end Engineer with Digital Services consultancy [@KainosSoftware](Kainos) working alongside a team of brilliant Developers and UX Designers.
 
-Working with: HTML, CSS/SASS, Object Oriented Javascript, jQuery, PHP, npm, NodeJS and command line tools.
+I love working and learning in agile, motivated teams who take ownership and pride in their work. Lover of philosophy and constant personal and technical development - I'm forever the student, and enjoy environments that allow me to acheive flow and Deep Work.
 
-Passionate about the front-end and usability, I also have experience working with a Microsoft stack including Visual Studio and C# MVC environments, particularly Umbraco. I have been fortunate enough to work with talented colleagues, building solutions for clients as Post Office, Royal Mail, Pizza Hut and Argos.
+### Past projects with Kainos...
 
-### Typical tools
-Our tools come and go, and so I like to have [proper understanding of the principles](https://medium.com/@martindimartinomarriott/as-developers-we-are-often-compelled-either-by-a-driving-curiosity-or-from-the-indifferent-b9430a76b3d1#.vz3xinux2) which underpin them foremost. If we can be great here, we can get to grips with any tool. Right now, I'm mostly using:
+#### Telensa
+Working with Kainos Gdansk and Cambridge-based Telensa's [Urban Data Project](https://urbandataproject.org) to deliver the front-end and a design system for the new *City Data Guardian* platform. Built an Angular-based data-visualisation application to demonstrate the business value of environmental data from the platform.
 
-Visual Studio, AWS, Wordpress, NodeJS, Gulp, Sourcetree, Wordpress, Umbraco and Jekyll.
+#### DVSA
+Working with [DVSA Digital](https://dvsadigital.blog.gov.uk/) to improving and maintain the MOT Service used by thousands of mechanics every day.
+
+#### NI Water
+Full re-brand of the website along with mobile optimisation and UX review of the customer dashboard.
+
+I have been fortunate enough in previous roles to work and learn alongside talented colleagues, building web interfaces for Post Office, Royal Mail, Pizza Hut, Argos and others.
+
+### Technology
+My core tools and experience are with semantic HTML, CSS/SASS, Javascript (Es6), Express, Angular, Webpack, Node and command line tools.
 
 ### What else?
-When not code mongering I'm usually [running around somewhere](https://www.strava.com/athletes/2986152/), [shredding the trails on my bike](https://www.instagram.com/martino_notts/), or doing Krav Maga. I love an open, communicative environment and making new connections with great designers and developers. Lover of philosophy and constant personal and technical development - we're forever students!
+When not code mongering I'm usually [running around somewhere](https://www.strava.com/athletes/2986152/), [hitting the trails on my bike](https://www.instagram.com/martino_notts/), or bouldering.
 
 ### Contact me
 [hello@martindm.uk](mailto:hello@martindm.uk)
