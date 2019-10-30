@@ -393,7 +393,37 @@ One can easily find some wrinkles here and there.
 It also lacks a comprehensive user guide for all different diagram types and features offered by its language.  
 So you will regularly find yourself trying out things in the [live editor][33].
 
+However the visual result with only a few lines of mermaid markup is definitely impressive. 
+
 ### ...and LucidChart
+
+One of the most complete online offerings
+for almost any type of design is [LucidChart][35] 
+
+Works in a freemium model 
+and offers a rich feature set 
+from different diagram types 
+to editing and styling capabilities
+
+almost on par with Visio in terms of features
+with the accompanying danger of gold-plating
+
+It has 2 killer features 
+
+Collaboration support
+
+multiple editors can concurrently modify 
+the same diagram 
+adding comments as they go along
+
+Sharing 
+
+Lucidcharts can be shared live 
+on most content publishing platforms 
+either via an add-on (MS Word, Google docs, Confluence)
+or directly as an embedded `iframe` (Markdown)
+
+For example see an embedded diagram below
 
 <div style="width: 480px; height: 360px; margin: 10px; position: relative;">
     <iframe 
@@ -401,6 +431,9 @@ So you will regularly find yourself trying out things in the [live editor][33].
         src="https://www.lucidchart.com/documents/embeddedchart/ce860c53-0bc1-4d7f-a4ff-ef2511000511" id="X.L4jCWw-dCu">
     </iframe>
 </div>
+
+These features help a lot 
+to 
 
 ## Parting thought
 
@@ -445,3 +478,4 @@ So you will regularly find yourself trying out things in the [live editor][33].
    [32]: https://mermaidjs.github.io/
    [33]: https://mermaidjs.github.io/mermaid-live-editor
    [34]: https://gsuite.google.com/enterprise/
+   [35]: https://www.lucidchart.com/documents
