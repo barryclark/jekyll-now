@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "What does the CNCF actually do? - Cloud Native and Kubernetes Oslo"
-feature_image: https://pbs.twimg.com/media/DYq0Mf8WkAIYQJV.jpg
+image: https://pbs.twimg.com/media/DYq0Mf8WkAIYQJV.jpg
+hide_image: true
 location: Oslo, Norway
 description: "Cheryl Hung, Product Manager at StorageOS, talks about her role as CNCF Ambassador at Cloud Native and Kubernetes Oslo."
 slides: //www.slideshare.net/slideshow/embed_code/key/lfaikDBecv7c6T

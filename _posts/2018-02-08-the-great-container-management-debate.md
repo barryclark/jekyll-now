@@ -3,7 +3,8 @@ layout: post
 title: "The Great Container Management Debate"
 description: "Cheryl Hung, Product Manager at StorageOS, moderates a panel on competing container orchestration systems."
 location: London, UK
-feature_image: /images/2018-2-8-pic1.jpg
+image: /images/2018-2-8-pic1.jpg
+hide_image: true
 video: https://www.youtube.com/embed/MkHZgJseOkU
 tags:
   - Video

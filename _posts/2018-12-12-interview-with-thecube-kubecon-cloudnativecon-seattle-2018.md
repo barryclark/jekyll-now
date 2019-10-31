@@ -3,7 +3,8 @@ layout: post
 title: "Interview with theCube - KubeCon+CloudNativeCon Seattle 2018"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, discusses the cloud native end user community on theCube."
 location: Seattle, USA
-feature_image: https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2019/01/IMG_2933-1-768x512.jpg
+image: https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2019/01/IMG_2933-1-768x512.jpg
+hide_image: true
 video: https://www.youtube.com/embed/3vcfxbZwOFI
 tags:
   - Video

@@ -1,9 +1,7 @@
 
   <div class="list-entry">
       <div class="list-media">
-        {% if include.post.feature_image %}
-          <a href="{{ include.post.url }}"><img src="{{ include.post.feature_image }}"></a>
-        {% elsif include.post.image %}
+        {% if include.post.image %}
           <a href="{{ include.post.url }}"><img src="{{ include.post.image }}"></a>
         {% endif %}
       </div>

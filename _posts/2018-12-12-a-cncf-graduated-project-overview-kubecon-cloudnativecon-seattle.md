@@ -3,7 +3,8 @@ layout: post
 title: "A CNCF Graduated Project Overview - KubeCon + CloudNativeCon NA"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, chats with Matt Klein of Envoy about what graduation means for CNCF projects on The New Stack."
 location: Seattle, USA
-feature_image: https://i.ytimg.com/vi/uK6Fobid0pI/hqdefault.jpg
+image: https://i.ytimg.com/vi/uK6Fobid0pI/hqdefault.jpg
+hide_image: true
 video: https://www.youtube.com/embed/uK6Fobid0pI?start=20
 tags:
   - Video

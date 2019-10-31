@@ -3,7 +3,8 @@ layout: post
 title: "Introduction to the CNCF, Cloud Native Manchester"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, describes the mission and structure of the Cloud Native Computing Foundation and how to get involved at Cloud Native Manchester."
 location: Manchester, UK
-feature_image: /images/2019-05-08-introduction-to-cncf.jpg
+image: /images/2019-05-08-introduction-to-cncf.jpg
+hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/3L20UXN0a4KZwQ
 tags:
   - Photos

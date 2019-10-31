@@ -3,7 +3,8 @@ layout: post
 title: "Interview with theCube - KubeCon + CloudNativeCon Europe"
 description: "Cheryl Hung, Product Manager at StorageOS, talks about storage and being a community leader with theCube"
 location: Copenhagen, Denmark
-feature_image: https://i.ytimg.com/vi/PQ3qfO90x7s/hqdefault.jpg
+image: https://i.ytimg.com/vi/PQ3qfO90x7s/hqdefault.jpg
+hide_image: true
 video: https://www.youtube.com/embed/PQ3qfO90x7s
 tags:
   - Video

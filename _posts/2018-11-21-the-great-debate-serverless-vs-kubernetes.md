@@ -3,7 +3,8 @@ layout: post
 title: "The Great Debate: Serverless vs Kubernetes"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, moderates a debate on serverless vs Kubernetes."
 location: London, UK
-feature_image: http://d24wuq6o951i2g.cloudfront.net/img/events/id/316/3167061/assets/16c.The-Great-Serverless-vs-Kubernetes-Debate-5.jpg
+image: http://d24wuq6o951i2g.cloudfront.net/img/events/id/316/3167061/assets/16c.The-Great-Serverless-vs-Kubernetes-Debate-5.jpg
+hide_image: true
 video: https://www.youtube.com/embed/_eSh4ZIVAQ0
 tags:
   - Video

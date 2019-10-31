@@ -3,7 +3,8 @@ layout: post
 title: "Introduction to container storage - Day of Cloud Native, Oslo"
 description: "Cheryl Hung, Product Manager at StorageOS, explains the challenges of container storage at Day of Cloud Native"
 location: Oslo, Norway
-feature_image: https://pbs.twimg.com/media/DYu0gPOVAAEEvl6.jpg
+image: https://pbs.twimg.com/media/DYu0gPOVAAEEvl6.jpg
+hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/7Fv5HSgSvaVG0X
 tags:
   - Slides

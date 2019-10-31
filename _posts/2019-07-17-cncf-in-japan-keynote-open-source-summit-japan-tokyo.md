@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Cloud Native Computing Foundation in Japan, Keynote at Open Source Summit Japan"
+title: "CNCF in Japan, Keynote at Open Source Summit Japan"
 description: "Read an overview of cloud native in Japan from Cheryl Hung, CNCF Director of Ecosystem."
-feature_image: https://pbs.twimg.com/media/D_pIrz3UYAAHMqj.jpg
+image: https://pbs.twimg.com/media/D_pIrz3UYAAHMqj.jpg
+hide_image: true
 slides: "//www.slideshare.net/slideshow/embed_code/key/EpECuPBWyMvT5g"
 location: Tokyo, Japan
 tags:

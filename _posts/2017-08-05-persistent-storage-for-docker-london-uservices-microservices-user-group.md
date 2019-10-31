@@ -3,7 +3,8 @@ layout: post
 title: "Persistent storage for Docker - London μServices (Microservices) User Group"
 description: "Cheryl Hung, Developer Advocate at StorageOS, talks about persistent storage for containers at the Microservices User Group."
 location: London, UK
-feature_image: /images/2017-08-05-persistent-storage-docker.jpg
+image: /images/2017-08-05-persistent-storage-docker.jpg
+hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/ttApnJweS2hD4S
 tags:
   - Video

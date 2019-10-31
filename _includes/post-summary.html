@@ -1,9 +1,5 @@
 <article class="posts box">
-  {% if include.post.feature_image %}
-  <div class="thumbnail-container middle">
-    <img class="crop" src="{{ include.post.feature_image }}">
-  </div>
-  {% elsif include.post.image %}
+  {% if include.post.image %}
   <div class="thumbnail-container middle">
     <img class="crop" src="{{ include.post.image }}">
   </div>
