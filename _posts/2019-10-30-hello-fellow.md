@@ -9,7 +9,7 @@ author_email: holger.reinhardt@haufe-lexware.com
 header-img: "images/bg-post.alt.jpg"
 ---
 
-In the beginning of October 2019 I re-joined the [Haufe,Group](https://haufegroup.com) in the role of a Technical Fellow. Needless to say, there were a lot of questions why - as former CTO of Haufe - I would come back and work in the team of my successor [Raul Firu](https://www.linkedin.com/in/raul-firu-3a35121/). And what exactly that role of Technical Fellow would be about.
+In the beginning of October 2019 I re-joined the [Haufe.Group](https://haufegroup.com) in the role of a Technical Fellow. Needless to say, there were a lot of questions why - as former CTO of Haufe - I would come back and work in the team of my successor [Raul Firu](https://www.linkedin.com/in/raul-firu-3a35121/). And what exactly that role of Technical Fellow would be about.
 
 Looking back I think both Raul and I never quite gave up the thought that one day we would have a chance to work together and build awesome products (again). So when the chance presented itself, it was the question how, not if we would want to work together again. The starting point of our discussion about a possible role was the very inspirational [blog post from Patrick Kua](https://www.thekua.com/atwork/2019/03/goodbye-cto-hello-chief-scientist/) titled 'Goodbye CTO, Hello Chief Scientist' (from which I shamelessly stole the title of my blog post).
 
