@@ -9,6 +9,7 @@ tags: [descargar plantilles, plantilles per a cartells 1 d'octubre, cdr, photosh
 img: "images/octubre/post1octweb.jpg"
 posting: true
 excerpt_separator: <!--more-->
+
 ---
 
 Aquí us deixo 5 Dissenys/plantilles per a qualsevol particular, CDR o entitat que ho necessiti.
@@ -67,5 +68,17 @@ Ni Oblit, ni perdó
 <em><a href="{{ site.baseurl }}/images/octubre/unsolpoble4web.jpg" title="Baixar per a web" target="_blank"><i class="icon-cloud-download"></i>Per a internet</a></em></strong>
 
 ---
+<a href="{{ site.baseurl }}/images/octubre/unsolpoble5web.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/octubre/unsolpoble5web.jpg"></a>
 
+###### Som un Sol Poble 5
 
+<strong><em><a href="{{ site.baseurl }}/images/octubre/unsolpoble5web.zip" title="Baixar en .ZIP" target="_blank"><i class="icon-cloud-download"></i>Per imprimir</a></em>
+<em><a href="{{ site.baseurl }}/images/octubre/unsolpoble5web.jpg" title="Baixar per a web" target="_blank"><i class="icon-cloud-download"></i>Per a internet</a></em></strong>
+
+---
+
+### Si ho necessites, pots descarregar els .psd (documents de Photoshop per capes) amb aquests enllaços:
+
+<em><a href="https://www.dropbox.com/s/8hddhfx770ylf59/post1oct.psd.zip?dl=0">Descarregar post1oct.psd.zip (10,5 MB)</a></em> 
+<em><a href="https://www.dropbox.com/s/t2k9eolgjqxqxzc/unsolpoble.psd.zip?dl=0">Descarregar unsolpoble.psd.zip (14,5 MB)</a></em> 
+<em><a href="https://www.dropbox.com/s/e60iueawy4iwkg7/unsolpoble5.psd.zip?dl=0">Descarregar unsolpoble5.psd.zip (711 KB)</a></em> 
