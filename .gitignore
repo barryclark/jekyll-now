@@ -3,6 +3,7 @@ _site
 .jekyll*
 .bundle
 .sass-cache
+.vscode
 node_modules
 package.json
 Gemfile.lock
