@@ -5,7 +5,7 @@ subtitle: Serverless hosting of private Python packages in AWS S3 buckets
 category: dev
 tags: [aws, development, serverless]
 author: Christoph Ludwig
-author_email: christoph.ludwig@haufe-lexeware.com
+author_email: christoph.ludwig@haufe-lexware.com
 header-img: "images/new/Exportiert_47.jpg"
 ---
 
@@ -17,7 +17,7 @@ header-img: "images/new/Exportiert_47.jpg"
 
 ## Introduction
 
-If you ever tried your hand on a machine learning project, then you have most likely spent a significant amount of time on experiments: First you need to establish a baseline that you can improve on. Then -- based on experience, intuition, and stubbornness -- you test many approaches, implementation variants, and hyperparameters until you hopefully reach a satisfactory result.
+If you ever tried working on a machine learning project, then you have most likely spent a significant amount of time on experiments: First you need to establish a baseline that you can improve on. Then -- based on experience, intuition, and stubbornness -- you test many approaches, implementation variants, and hyperparameters until you hopefully reach a satisfactory result.
 
 That's what we were facing in a project that looks into the application of machine learning and other natural language processing techniques to more conveniently serve our customers' information needs in Haufe's content products. (Once we've left the prototyping phase, it will certainly be worthwhile to report on both this project's specific challenges and our findings!)
 
@@ -128,7 +128,7 @@ Whether the extra flexibility is worth the additional complexity of the resultin
 
 [^pipAuth]: pip offers a CLI option `--client-cert` for specifying a private key and an X.509 certificate as client credentials. There is no such CLI option for basic authentication credentials; the pip user needs to either encode the credentials into the configured repository URL or store them in the user's [netrc(5)](http://manpages.ubuntu.com/manpages/bionic/en/man5/netrc.5.html) file.
 
-[^regionalLambdaDeployments]: CloudFront is a global AWS service and, for the sake of small response latencies, it will automatically deploy and instantiate the Lambda@Edge functions in whatever CloudFront edge location the respective client request is handled. In our original use case it is unlikely there will be requests in more than one edge location; and if there are, we won't worry about a bit of extra latency. Nevertheless, this explains some of the restrictions CloudFront puts on Lambda@Edge functions.
+[^regionalLambdaDeployments]: CloudFront is a global AWS service. For the sake of small response latencies, it will automatically deploy and instantiate the Lambda@Edge functions in whatever CloudFront edge location the respective client request is handled. In our original use case it is unlikely there will be requests in more than one edge location; and if there are, we won't worry about a bit of extra latency. Nevertheless, this explains some of the restrictions CloudFront puts on Lambda@Edge functions.
 
 [^bucketNameCaching]: Looking up the S3 bucket name from the CloudFront distribution configuration eats into the very tight time budget CloudFront allots to Lambda@Edge function invocations. But this needs to be done only once for every instance of this function; the bucket name won't change and can be cached by the lambda function instance.
 
