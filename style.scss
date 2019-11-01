@@ -14,12 +14,14 @@
 /**************/
 
 html {
-  font-size: 100%;
+  font-family: Open Sans, sans-serif;
+  color: rgba(#000, .87);
+  line-height: 1.5;
+  font-size: calc(1em + .25vw);
 }
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
