@@ -21,8 +21,8 @@ html {
 }
 
 body {
-	background: $white;
-  color: $darkGray;
+  margin: 2rem;
+  overflow-x: hidden;
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: Oswald, sans-serif;
   color: $darkerGray;
   font-weight: bold;
 
