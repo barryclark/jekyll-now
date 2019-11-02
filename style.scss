@@ -116,7 +116,6 @@ img {
 }
 
 .date {
-  font-weight: bold;
   color: $gray;
 }
 
@@ -266,6 +265,7 @@ nav {
   }
 
   .read-more {
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 15px;
   }
