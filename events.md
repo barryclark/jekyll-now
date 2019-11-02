@@ -7,21 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2019
 
-October 23:  Mobile World Congress, Los Angeles
-* [**Panel: The Disaggregation of Wireless**](https://www.mwclosangeles.com/session/panel-the-disaggregation-of-wireless/)
-
-October 25: Accenture Technology Architecture Workshop, St Charles, IL
-* **Keynote: Cloud native past, present and future**
-
-October 28 - 30:  Open Source Summit + Embedded Linux Conference Europe, Lyon
-* **CNCF Keynote**
-
-October 31: Singapore Ministry of Defence - Defence Science & Technology Agency's Innovation Day, Singapore
-* **Panel**
-
-November 1: MIT Technology Review Leadership Summit, Singapore
-* [**Keynote: The Power of Transforming Systems**](http://forms.technologyreview.com/leadership-summit/)
-
 November 4-5: [LF Energy Summit](https://events.linuxfoundation.org/events/lfenergysummit2019/program/), Paris
 
 November 5-8: O'Reilly Software Architecture, Berlin
