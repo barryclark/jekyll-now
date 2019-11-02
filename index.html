@@ -11,10 +11,10 @@ layout: default
       <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | truncatewords:40 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Lire la suite</a>
     </article>
   {% endfor %}
 </div>
