@@ -6,7 +6,7 @@
 name: Jack O'Hara
 
 # Short bio or description (displayed in the header)
-description: Software Engineer
+description: Belfast based Software Engineer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/me.jpeg
@@ -22,7 +22,8 @@ footer-links:
   flickr:
   github: JackOHara
   instagram:
-  linkedin: https://www.linkedin.com/in/jack-o-hara-394066b8/
+  linkedin: jack-o-hara-394066b8
+  soundcloud: j0hara
   email: jackohara789@gmail.com
   pinterest:
   rss: # just type anything here for a working RSS icon
