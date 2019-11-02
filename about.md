@@ -22,5 +22,7 @@ Quand je ne code pas, j'adore partir en vadrouille avec mon vélo pour une balad
 
 [contact@lorianebuffet.eu](mailto:contact@lorianebuffet.eu)
 
+### Crédits
 
-*Photo de profil by Diana Parkhouse on Unsplash*
+- Thème : [Jekyll Now](https://github.com/barryclark/jekyll-now)
+- Photo de profil : Diana Parkhouse on Unsplash
