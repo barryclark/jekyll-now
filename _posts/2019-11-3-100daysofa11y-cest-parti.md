@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Le challenge 100daysofa11y
+title: Le challenge #100daysofa11y
 ---
 
 En créant ce blog, j'avais un premier objectif en tête : me lancer comme défi de me former sur l'accessibilité numérique (un sujet qui me tient à coeur) et poster ici le résultat.
 
 Cette idée n'est pas nouvelle puisqu'en novembre 2018 [Amy Carney](https://twitter.com/click2carney) avait elle-même lancé son blog [100 Days of A11y](https://100daysofa11y.com/) dans lequel elle consignait quotidiennement ses notes et découvertes dans l'apprentissage de l'accessibilité. J'ai adoré cette idée et j'ai donc décidé de me lancer le même objectif à travers ce blog. 
 
-Il s'agit donc de : 
+## Règles du challenge 
 - passer 1 à 2h par jour à lire et faire des recherches sur l'accessibilité numérique
 - poster chaque jour pendant 100 jours le résultat de ces recherches
 - lister ces résultats en deux parties : ce que j'ai fait et ce que j'ai appris
 
+## Précisions sur le challenge
 Outre les aspects théoriques et légaux de l'accessibilité, je me pencherai notamment sur son application au coeur de mon métier, l'intégration web. Il y aura donc du texte, du code, des définitions, des exercices pratiques et plein d'autres choses encore.
 
 Je tacherai de donner systématiquement les références des livres ou sites utilisés au cours de ce challenge.
