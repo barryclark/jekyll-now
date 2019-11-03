@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Le challenge #100daysofa11y
+title: Le challenge `#`100daysofa11y
 ---
 
 En créant ce blog, j'avais un premier objectif en tête : me lancer comme défi de me former sur l'accessibilité numérique (un sujet qui me tient à coeur) et poster ici le résultat.
