@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native Computing and Open Source: MIT Technology Review Leadership Summit"
 description: "Read about why organisations should engage with the cloud native community from Cheryl Hung, CNCF Director of Ecosystem."
 location: Singapore
-image: /images/2019-11-1-cloud-native-computing-and-open-source-keynote-at-mit-technology-review-leadership-summit.jpg
+image: https://media.licdn.com/dms/image/C5122AQFPqUaH398Cmg/feedshare-shrink_800/0?e=1575504000&v=beta&t=LwGw5YVao01Dq_VO3DYck7ymF050VhLRFsGRY4Czk_Q
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/oV1PFk39Q1EA3W
 tags:
