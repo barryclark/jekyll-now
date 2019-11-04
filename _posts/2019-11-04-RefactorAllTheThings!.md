@@ -48,9 +48,9 @@ Every defect (and every near miss) indicates a hazard. Use the defect as a learn
 Over time the defect rate drops steadily until you go from measuring "number of defects this week" to "number of features shipped since last defect".
 
 See:
-- (arlobelshee.com/safeguarding-culture-is-a-process/)[http://arlobelshee.com/safeguarding-culture-is-a-process/]
-- (jay.bazuzi.com/Safeguarding/)[http://jay.bazuzi.com/Safeguarding/]
-- (llewellynfalco.blogspot.com/2018/12/safeguarding-step-by-step-guide.html)[https://llewellynfalco.blogspot.com/2018/12/safeguarding-step-by-step-guide.html]
+- [Safeguarding – Culture is a Process, not a Single Change](http://arlobelshee.com/safeguarding-culture-is-a-process/)
+- [Safeguarding](http://jay.bazuzi.com/Safeguarding/)
+- [Safeguarding: A step-by-step guide](https://llewellynfalco.blogspot.com/2018/12/safeguarding-step-by-step-guide.html)
 
 # Scaling and independence
 
@@ -62,7 +62,7 @@ Good modules don't depend on / aren't depended on by other code in the system. A
 
 [Llewellyn's Open/Closed strategy can be useful here.](http://jay.bazuzi.com/LOSOCS/)
 
-All of the above applies to equally to both modules and microservices. Good microservices can be developed, deployed, monitored, and maintained entirely within a team. See (jay.bazuzi.com/Thoughts-on-Microservices/)[http://jay.bazuzi.com/Thoughts-on-Microservices/]
+All of the above applies to equally to both modules and microservices. Good microservices can be developed, deployed, monitored, and maintained entirely within a team. See [Thoughts On Microservices](http://jay.bazuzi.com/Thoughts-on-Microservices/).
 
 # User stories should fit in sprints
 
