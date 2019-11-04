@@ -48,9 +48,9 @@ Every defect (and every near miss) indicates a hazard. Use the defect as a learn
 Over time the defect rate drops steadily until you go from measuring "number of defects this week" to "number of features shipped since last defect".
 
 See:
-- http://arlobelshee.com/safeguarding-culture-is-a-process/
-- http://jay.bazuzi.com/Safeguarding/
-- https://llewellynfalco.blogspot.com/2018/12/safeguarding-step-by-step-guide.html
+- [http://arlobelshee.com/safeguarding-culture-is-a-process/]
+- [http://jay.bazuzi.com/Safeguarding/]
+- [https://llewellynfalco.blogspot.com/2018/12/safeguarding-step-by-step-guide.html]
 
 # Scaling and independence
 
@@ -62,7 +62,7 @@ Good modules don't depend on / aren't depended on by other code in the system. A
 
 [Llewellyn's Open/Closed strategy can be useful here.](http://jay.bazuzi.com/LOSOCS/)
 
-All of the above applies to equally to both modules and microservices. Good microservices can be developed, deployed, monitored, and maintained entirely within a team. See http://jay.bazuzi.com/Thoughts-on-Microservices/
+All of the above applies to equally to both modules and microservices. Good microservices can be developed, deployed, monitored, and maintained entirely within a team. See [http://jay.bazuzi.com/Thoughts-on-Microservices/]
 
 # User stories should fit in sprints
 
