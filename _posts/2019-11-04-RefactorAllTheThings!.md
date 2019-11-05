@@ -5,7 +5,7 @@ title: Refactor all the Things!
 
 As I've practiced refactoring over the years, I continue to find new ways to solve problems better with refactoring. This is why refactoring is such a big deal to me.
 
-What are some of the problems we can solve with refactoring?
+What are some of the problems we can solve with refactoring? This is hard to talk about because many of these problems aren't generally recognized as solvable / we don't know what the solutions would look like. So here goes...
 
 # Reading
 
@@ -25,9 +25,7 @@ We want tests that give us confidence that the whole system works, not just the 
 
 Most people think that only unit tests can meet the first requirements, and that only acceptance tests can meet second requirements. They're right, which is why Acceptance Microtests are ideal - they have all of these characteristics.
 
-Acceptance Microtests are only possible in well-factored code, so you'll need to refactor your way there.
-
-Arlo Belshee calls this Test-by-Refactoring.
+Acceptance Microtests are only possible in well-factored code, so you'll need to refactor your way there. Arlo Belshee calls this Test-by-Refactoring.
 
 # Easy to change
 
