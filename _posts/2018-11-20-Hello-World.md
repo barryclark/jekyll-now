@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Hello World
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 ### Say Whattttt?! Hello to the Internet World!!
 

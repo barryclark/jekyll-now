@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: The Game Changer
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 
 Hello Internet World!

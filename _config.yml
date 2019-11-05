@@ -88,6 +88,7 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-twitter-plugin #twitter plugin
+  - jekyll-paginate-v2 #Pagination
 
 
 collections:
@@ -103,3 +104,21 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+# Produces a cleaner folder structure when using categories
+permalink: /:year/:month/:title.html
+
+autopages:
+
+  # Site-wide kill switch, disable here and it doesn't run at all 
+  enabled: False

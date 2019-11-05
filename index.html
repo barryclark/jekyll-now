@@ -1,13 +1,14 @@
 ---
 layout: default
+pagination: 
+  enabled: true
 ---
-
 <div class="posts left column-8 fullscreen-on-palm">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
+
     <article class="post left column-8 fullscreen-on-palm">
-
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       <div class="entry">
         {{ post.excerpt }}
       </div>
@@ -18,6 +19,22 @@ layout: default
 </div>
 {% include side-bar.html %}
 <div class="clearfix"></div>
+
+
+{% if paginator.total_pages > 1 %}
+  <ul class="pager">
+      {% if paginator.previous_page %}
+      <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+      </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+      </li>
+      {% endif %}
+  </ul>
+{% endif %}
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Image Classification
+title: Image Classification Part 1
 categories: [ Tensorflow-Keras, Convolution Neural Net, Deep Learning]
 crosspost_to_medium: false
 ---
