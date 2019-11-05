@@ -70,7 +70,7 @@ User Stories should be [INVEST](https://www.agilealliance.org/glossary/invest/).
 
 If you have a Product Owner, they should be able to pick a few stories to work on next. If your user stories are too big to do that, you probably need thin vertical slicing.
 
-But in some organizations the problem isn't the size of the idea, it's the developer friction that makes even tiny ideas expensive to implement. If developers are spending most of their time reading inscrutable code, waiting for the build, rerunning flaky tests, etc., then slicing more thinly won't help.
+But in some projects the problem isn't the size of the idea, it's the developer friction that makes even tiny ideas expensive to implement. If developers are spending most of their time reading inscrutable code, waiting for the build, rerunning flaky tests, etc., then slicing more thinly won't help.
 
 If we can't slice a User Story we like to less than 1/4 of a sprint, refactor for a timebox to address the friction that stands in the way.
 
