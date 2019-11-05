@@ -287,11 +287,16 @@ table {
 	border: 1px solid $darkGray;
 	thead {
 		background-color: $lightGray;
+		th {
+			border: 1px solid $darkGray;
+			padding: 10px 0;
+		}
 	}
 	tr {
 		border: 1px solid $darkGray;
 	}
 	td {
+		border: 1px solid $darkGray;
 		padding: 5px;
 	}
 }
