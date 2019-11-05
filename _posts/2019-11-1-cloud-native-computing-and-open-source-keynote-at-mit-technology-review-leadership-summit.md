@@ -15,3 +15,5 @@ tags:
 * Kubernetes is one of the largest open source projects and communities today, with more than 35,000 contributors from 2000+ companies.
 
 * Organizations will need to understand how to engage with open source communities, for example through an [open source office](https://todogroup.org/guides/).
+
+![Cheryl Hung at MIT Technology Review Leadership Summit, Singapore](/images/2019-11-1-cloud-native-computing-and-open-source-keynote-at-mit-technology-review-leadership-summit.jpeg)
