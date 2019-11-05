@@ -10,7 +10,7 @@ expand on that a bit.
 
 ## The Awful No Good Very Bad Social Network
 
-I probably don't need to repeat all the bad stuff that that Facebook has been responsible for but my short list includes:
+I probably don't need to repeat all the bad stuff that Facebook has been responsible for, but my short list includes:
 * heavily influencing US elections ([and denying it](https://www.nytimes.com/2018/11/14/technology/facebook-data-russia-election-racism.html)),
 * [causing riots in Myanmar](https://www.wired.com/story/how-facebooks-rise-fueled-chaos-and-confusion-in-myanmar/),
 * [leaking massive amounts of data](https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election),
