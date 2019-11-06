@@ -7,8 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2019
 
-November 4-5: [LF Energy Summit](https://events.linuxfoundation.org/events/lfenergysummit2019/program/), Paris
-
 November 5-8: O'Reilly Software Architecture, Berlin
 * [**Keynote**](https://conferences.oreilly.com/software-architecture/sa-eu/public/schedule/detail/80425)
 
