@@ -5,7 +5,7 @@ title: Refactor all the Things!
 
 As I've practiced refactoring over the years, I continue to find new ways to solve problems better with refactoring. This is why refactoring is such a big deal to me.
 
-What are some of the problems we can solve with refactoring? This is hard to talk about because many of these problems aren't generally recognized as solvable / we don't know what the solutions would look like. So here goes...
+What are some of the problems we can solve with refactoring? This is hard to talk about because many of these problems aren't generally recognized as solvable / we don't know what the solutions would look like, so the idea that we would refactor to fix them is a hard to comprehend. Each of these is a whole 'nother article / book / course, but for now I'll hit summarize.
 
 # Reading
 
@@ -13,7 +13,7 @@ Before you can work effectively in any code, you must read it. Legacy code is ge
 
 Rename to make code trustworthy to readers. Break up overlong functions that overwhelm comprehension, without introducing the "now I have to look in two places" problem. Merge fragmented code.
 
-These tiny investments pay back immediately by making you more productive right away.
+These kinds of refactorings are easy, cheap, safe, and reversable. These tiny investments pay back immediately by making you more productive right away. Readability is a prerequisite to all the other work you might want to do in code. You should totally be doing this right now.
 
 Arlo Belshee calls this [Read-by-Refactoring](https://insightloop.digdeeproots.com/dl/train-the-trainer-rbr-insight-loop.pdf).
 
@@ -23,7 +23,7 @@ We want tests that are super fast and completely reliable. When a bug is introdu
 
 We want tests that give us confidence that the whole system works, not just the parts. Tests should verify what actually matters to users. Tests shouldn't break when we only change implementation details. They should be written in a way that makes sense to domain experts.
 
-Most people think that only unit tests can meet the first requirements, and that only acceptance tests can meet second requirements. They're right, which is why Acceptance Microtests are ideal - they have all of these characteristics.
+Most people think that only unit tests can meet the former, and that only acceptance tests can meet the latter. They're right, which is why Acceptance Microtests are ideal - they have all of these characteristics. See https://twitter.com/jaybazuzi/status/1192090776676601856
 
 Acceptance Microtests are only possible in well-factored code, so you'll need to refactor your way there. Arlo Belshee calls this Test-by-Refactoring.
 
@@ -70,5 +70,11 @@ If you have a Product Owner, they should be able to pick a few stories to work o
 
 But in some projects the problem isn't the size of the idea, it's the developer friction that makes even tiny ideas expensive to implement. If developers are spending most of their time reading inscrutable code, waiting for the build, rerunning flaky tests, etc., then slicing more thinly won't help.
 
-If we can't slice a User Story to less than 1/4 of a sprint, the Product Owner allocates the next sprint for refactoring to address the friction that is slowing the team down.
+If we can't slice a User Story to less than 1/4 of a sprint, the Product Owner allocates the next sprint for refactoring to address the friction that is slowing the team down. Note that this is PO-driven because a PO needs it to be able to do their job effectively.
+
+# Refactoring is good
+
+I feel like I need something here to tie everything together, but it's not coming to me. I like that refactoring is safer than editing, that my commit history is easier to understand, that I can integrate continuously, etc. Finding ways to apply refactoring to more problems means I get more of these benefits.
+
+If you consistently use refactoring in your work, superficially it may look like you're "not getting any work done" most of the time. Have a conversation about this early to help people understand what to expect.
 
