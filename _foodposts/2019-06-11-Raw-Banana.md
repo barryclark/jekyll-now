@@ -4,7 +4,8 @@ comments: true
 title: Raw-Banana-Stir-Fry
 crosspost_to_medium: false
 ---
-### Helloooo to all the crazy foodies out there!!!
+### Helloooo Again Foodies!!! 
+Don't be disheartened by the title, I promise its worth it.
 
 If you are a foodie like me, trying out various dishes and recepies, plus a "vegetarian" you know that Raw banana is a mild replacement for
 potatoes.So today's dish is [Raw-Banana-Stir-Fry](https://www.vegrecipesofindia.com/raw-banana-stir-fry-recipe/).
