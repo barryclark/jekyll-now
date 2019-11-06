@@ -3,7 +3,7 @@ layout: post
 title: "The New Norms of Cloud Native: Keynote, O'Reilly Software Architecture"
 description: "Understand how the CNCF and the cloud native community work together from Cheryl Hung, CNCF Director of Ecosystem."
 location: Berlin, Germany
-image: /images/2019-11-6-the-new-norms-of-cloud-native-keynote-oreilly-software-architecture.jpg
+image: https://pbs.twimg.com/media/EIsQVicWsAAlUv_?format=jpg&name=4096x4096
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/AeHCnLlt5U0Qnc
 tags:
@@ -17,7 +17,7 @@ tags:
 
 * When donating a project to the CNCF, the goal is to show relevance, adoption and a healthy community.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cloud native amazing topic by <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> at <a href="https://twitter.com/hashtag/OReillySACon?src=hash&amp;ref_src=twsrc%5Etfw">#OReillySACon</a> <a href="https://t.co/pzdLDGmtwS">pic.twitter.com/pzdLDGmtwS</a></p>&mdash; Jesús Estévez (@jecaestevez) <a href="https://twitter.com/jecaestevez/status/1192064510737211393?ref_src=twsrc%5Etfw">November 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Cloud native amazing topic by <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> at <a href="https://twitter.com/hashtag/OReillySACon?src=hash&amp;ref_src=twsrc%5Etfw">#OReillySACon</a> <a href="https://t.co/pzdLDGmtwS">pic.twitter.com/pzdLDGmtwS</a></p>&mdash; Jesús Estévez (@jecaestevez) <a href="https://twitter.com/jecaestevez/status/1192064510737211393?ref_src=twsrc%5Etfw">November 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Rocking the <a href="https://twitter.com/hashtag/OReillySACon?src=hash&amp;ref_src=twsrc%5Etfw">#OReillySACon</a> keynote stage with <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a>, and getting a tour of the <a href="https://twitter.com/CloudNativeFdn?ref_src=twsrc%5Etfw">@CloudNativeFdn</a><br><br>The CNCF provides a neutral home for tech, and supports the running of projects <a href="https://t.co/GL9DATsZDd">pic.twitter.com/GL9DATsZDd</a></p>&mdash; Daniel Bryant (@danielbryantuk) <a href="https://twitter.com/danielbryantuk/status/1192064378893479936?ref_src=twsrc%5Etfw">November 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
