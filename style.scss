@@ -14,13 +14,15 @@
 /**************/
 
 html {
-  font-size: 100%;
+  font-family: Open Sans, sans-serif;
+  color: rgba(#000, .87);
+  line-height: 1.5;
+  font-size: calc(1em + .25vw);
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  margin: 2rem;
+  overflow-x: hidden;
 }
 
 .container {
@@ -31,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: Oswald, sans-serif;
   color: $darkerGray;
   font-weight: bold;
 
