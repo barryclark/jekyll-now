@@ -11,7 +11,7 @@ I currently work as a Software Engineer Intern at NineFX Inc, where I have been 
 
 I currently am the Treasurer at [ACM@USC](https://acm.cse.sc.edu).
 
-I enjoy working in mainly Java, and Python, but I also enjoy ReasonML, Erlang, C++, all very much. Esoteric projects are a major interest for me as well.
+I really enjoy writing Ocaml, Haskell, Python, C++, and Java, in that order, but esoteric projects are not only a major interest for me, but pretty much all I do.
 
 Awards:
 * 2019 USC@ACM Fall Codeathon 145/146/240/350 Coordinator and Problem Writer
