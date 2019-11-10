@@ -21,6 +21,6 @@ HP COMPUTERS ARE RACIST
 Al día de hoy esta tecnología a avanzado mucho desde sus inicios y esta full integrada a nuestras vidas. No [no voy](https://www.welivesecurity.com/la-es/2015/08/27/tecnologia-de-reconocimiento-facial/) a [hacer un post](https://medium.com/@spot_blog/una-breve-historia-del-reconocimiento-facial-vision-blog-5a76fdfe4865) latero con la historia del reconocimiento facial, ya mucha gente lo ha hecho, pero si una leve explicación de como funciona esta técnologia y como burlarla, solo porque me da una razón para escribir y usar gifs, una de mis 3 cosas favoritas.
 
 ## ¿Cómo funciona?
-![MATHS!]()
+![MATHS!](images/uploads/facemath.png)
 
 ## Soy invisible!
