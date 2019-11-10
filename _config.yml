@@ -27,6 +27,16 @@ collections:
     travels:
         output: true
         
+defaults:
+  - scope:
+      path: " "
+      type: "posts"
+    values:
+      layout: "post"
+      title: " "
+      titledesc: " "
+      featured: " "
+        
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
