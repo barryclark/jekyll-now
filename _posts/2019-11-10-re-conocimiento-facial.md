@@ -8,13 +8,15 @@ feature: https://media.giphy.com/media/rQG7d0Tzau6wo/source.gif
 
 ## Nos estan mirando
 
-**disclaimer:** *este post probalbmente tenga un montón de información ñoña, **jargon** y **mumbo jumbo**, pero el conocimiento es lo necesario para poder entender y **burlar** algunas cosas.*
+**disclaimer:** *este post probablemente tenga un montón de información ñoña, **jargon** y **mumbo jumbo**, pero el conocimiento es lo necesario para poder entender y **burlar** algunas cosas.*
 
 A estas alturas del partido todos sabemos que es el reconocimiento facial, lo hemos visto en series, películas, usado en nuestras cámaras e incluso usado para desbloquear nuestro teléfono. *¿Me dices que mi teléfono reconoce mi cara o que la detecta?*
 
 ## ¿Detección o Reconocimiento? 
 
-Si, no es lo mismo, pero una fundamental para la otra. Lo que hace nuestra cámara al momento de sacar una foto es **detectar** un rostro, esto significa que busca formas reconocibles de una cara, ojos, nariz, boca, y todo ese espacio engativo en tu rostro por el exceso de pizzas de la semana pasada. Una vez que se ha detectado una cara empieza el proceso de **reconocimiento**, les suena común, obvio es lo que hacemos siempre para detectar a nuestros amigos cuando nos dicen *voy llegando*. Al fin del día los algoritmos son las versiones matematizadas de los procesos que hacemo día a día, la habilidad de reconocer y ver rostros es algo que como humanos llevamos <s>años</s> siglos haciendo, si también estoy pensando en esa tostada que me comí en la mañana que tenía la cara de <s>Karol Dance</s> Kike Morandé (chúpalo).
+Si, no es lo mismo, pero una fundamental para la otra. Lo que hace nuestra cámara al momento de sacar una foto es **detectar** un rostro, esto significa que busca **patrones reconocibles** como ojos, nariz, boca, y todo ese espacio negativo en tu rostro *por el exceso de pizzas de la semana pasada*, mediante costrastes y una serie de pruebas en una especie de arbol de desiciones, en la que se van buscando estos rasgos en rectangulos de zonas definidas, este algoritmo es conocido como [**Algoritmo Viola Jones**](https://www.youtube.com/watch?v=uEJ71VlUmMQ) y es tan efectivo que se sigue usando por sobre usar **Deep Learning** o **Machine Learning**.
+
+ Una vez que se ha detectado una cara empieza el proceso de **reconocimiento**, les suena común, obvio es lo que hacemos siempre para detectar a nuestros amigos cuando nos dicen *voy llegando*. Al fin del día los algoritmos son las versiones *matematizadas* de los procesos que hacemos día a día, la habilidad de reconocer y ver rostros es algo que como humanos llevamos <s>años</s> siglos haciendo, si también estoy pensando en esa tostada que me comí en la mañana que tenía la cara de <s>Karol Dance</s> Kike Morandé (chúpalo).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t4DT3tQqgRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -22,7 +24,9 @@ Si, no es lo mismo, pero una fundamental para la otra. Lo que hace nuestra cáma
 
 HP COMPUTERS ARE RACIST
 
-Al día de hoy esta tecnología a avanzado mucho desde sus inicios y esta full integrada a nuestras vidas. No, [no voy](https://www.welivesecurity.com/la-es/2015/08/27/tecnologia-de-reconocimiento-facial/) a [hacer un post](https://medium.com/@spot_blog/una-breve-historia-del-reconocimiento-facial-vision-blog-5a76fdfe4865) latero con la historia del reconocimiento facial, ya mucha gente lo ha hecho, pero si una leve explicación de como funciona esta técnologia y como burlarla, solo porque me da una razón para escribir y usar gifs, dos de mis 3 cosas favoritas.
+Al día de hoy esta tecnología a avanzado mucho desde sus inicios y esta full integrada a nuestras vidas. No, [no voy](https://www.welivesecurity.com/la-es/2015/08/27/tecnologia-de-reconocimiento-facial/) a [hacer un post](https://medium.com/@spot_blog/una-breve-historia-del-reconocimiento-facial-vision-blog-5a76fdfe4865) latero con la historia del reconocimiento facial, ya mucha gente lo ha hecho, pero si una leve explicación de como funciona esta técnologia y como burlarla, solo porque me da una razón para escribir y usar gifs, 2 de mis 3 cosas favoritas.
+
+
 
 **Aprendizaje** Si no pueden detectar tu cara no la pueden reconocer (obvio) y los gifs son bkns.
 
@@ -39,7 +43,7 @@ Cada cara tiene rasgos distintivos, digamos que parte de nuestro cerebro ha esta
 </figcaption>
 </figure>
 
-El software de reconocimiento facial reconoce estos rasgos, al igual que nosotros, solo que de una manera mucho más si, lo adivinaste, **Matemáticas** esa cosa que juraste nunca mas usar después de cuarto medio y que **pensaste que era inútil**, hasta que te toco calcular el sueldo bruto, el líquido y el porcentaje de la isapre y otros robos con *fancy names*. El software reconoce ciertas carácteristicas como:
+El software de reconocimiento facial reconoce estos rasgos, al igual que nosotros, solo que de una manera mucho más... si, lo adivinaste, **Matemáticas** esa cosa que juraste nunca mas usar después de cuarto medio y que **pensaste que era inútil**, hasta que te toco calcular el sueldo bruto, el líquido y el porcentaje de la isapre y otros robos con *fancy names*. El software reconoce ciertas carácteristicas como:
 
 - Distancia entre los **ojos**.
 - Ancho de la **nariz**.
@@ -49,17 +53,17 @@ El software de reconocimiento facial reconoce estos rasgos, al igual que nosotro
 
 Y un largo etcetéra, entre 60 a 80, rasgos faciales, lo se, estas pensando en ese filtro de **instagram** tan chistoso que hace que te veas como **Felipito** o te pone una **corona de flores**, eso es detección facial, lo que hace es "detectar una cara" no "detectar **tu** cara" (reconocimiento). 
 
-Estas distancias son transformadas en una formula matemática y si hay una base de datos, **las hay**, se hace una comparación y pum, te cachamos compadre.
+Estas distancias son transformadas en una formula matemática y, si hay una base de datos, **las hay**, se hace una comparación y pum, según el poder de las matématicas, no es primera vez que pasas por este aeropuerto.
 
-Cuando digo que hay base de datos no es para volverse loco, facebook tiene una base de datos muy grande, y cada vez que etiquetan a un amigo o un amigo los etiqueta ayudan a esa base de datos a crecer y obtener mas presición, si, nosotros mismos hemos estado entrenando y mejorando estos algoritmos.
+Cuando digo que hay **bases de datos** no es para volverse loco, pero, [Facebook tiene una base de datos muy grande](https://www.theguardian.com/technology/2019/aug/09/facebook-facial-recognition-lawsuit-can-proceed-us-court), y cada vez que etiquetan a un amigo o un amigo los etiqueta ayudan a esa base de datos a crecer y obtener mas presición, si, nosotros mismos hemos estado entrenando y mejorando estos algoritmos.
 
 ### El futuro es TRI-DI
 
-Actualmente la moda, es el 3D, en vez de usar imágenes 2D se usan modelos 3D de la superficie de la cara, principalmente es como funciona **FaceId de Apple**, esta es la parte donde pelo el cable ya que es básicamente una **Xbox Kinect** en miniatura que usa cientos de *mini lasers* para generar un modelo 3D de tu rostro lo cual es mucho mas preciso.
+Actualmente la moda, es el 3D, en vez de usar imágenes 2D se usan modelos 3D de la superficie de la cara, principalmente es como funciona **FaceId de Apple**, esta es la parte donde pelo el cable ya que es básicamente una **Xbox Kinect** en miniatura que usa cientos de *mini lasers* para generar un modelo 3D de tu rostro lo cual es mucho más preciso y *wow la wea bkn*.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g4m6StzUcOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-El reconocimiento facial con 3D, támbien se puede hacer a base de videos y funciona a tráves del analisis cuadro por cuadro de las facciones, básicamente es un analisis 2D muchas veces. 
+El **reconocimiento facial con 3D**, támbien se puede hacer a base de videos y funciona a tráves del analisis cuadro por cuadro de las facciones, básicamente es un analisis 2D muchas veces. 
 
 Ambos sistemas funcionan a base de contrastes y bueno detección de ciertas carácteristicas faciales, y **podría haber ahorrado todo lo anterior solo diciendo que el reconocimiento facial funciona a base de contrastes**, pero me gusta dar un poco mas de detalles, lo cual nos lleva a la parte divertida.
 
