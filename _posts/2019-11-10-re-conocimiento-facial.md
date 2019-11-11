@@ -126,3 +126,4 @@ https://us.norton.com/internetsecurity-iot-how-facial-recognition-software-works
 https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/facial-recognition.htm
 https://www.theatlantic.com/technology/archive/2014/07/makeup/374929/
 https://www.popsci.com/read/anti-facial-recognition-makeup
+https://www.technadu.com/how-to-avoid-facial-recognition-in-public/29462/
