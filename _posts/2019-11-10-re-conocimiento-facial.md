@@ -73,9 +73,52 @@ TIN FOIL HAT ALWAYS DO THE JOB.
 </figcaption>
 </figure>
 
-Y sabemos básicamente como funcionan la detección facial y el reconocimiento facial, como no somos un grupo de hackers que puede destruir las bases de datos de caras en el mundo, solo podemos apelar a evitar que detecten nuestras caras.
+Y sabemos básicamente como funcionan la detección facial y el reconocimiento facial, como no somos un grupo de hackers que puede destruir las bases de datos de caras en el mundo, solo podemos apelar a evitar que detecten nuestras caras. 
+
+#### Survivor Starter Kit
+
+##### Usa un gorro y lentes de sol.
+
+<figure class="figimg">
+   <img src="https://media.giphy.com/media/U8MnmuVDpK264/source.gif" alt="error 404">
+<figcaption>
+"no puedo detectar humanos, all systems fails".
+</figcaption>
+</figure>
+
+Además de evitar que esos **malignos robots te detecten** va justo adhoc con la temporada veraniega, si cambias los **lentes de sol** por antiparras, además de no ser detectado y capear el sol puedes **proteger tus ojos**.
+
+##### Vuelve a tus raices EMO
+
+<figure class="figimg">
+   <img src="https://media.giphy.com/media/Tj7m9HrHaPmQE/source.gif" alt="">
+<figcaption>
+"weona volvió MCR"
+"no y RATM?".
+</figcaption>
+</figure>
+
+Si, **si vuelves a tu peinado emo** lograras tapar parte de tu cara y hacer que sea mas dificil de reconocer, **+10 stealth**, **+5 depression**, **+4 MCR**, **-15 mobility**. Además [MCR vuelve](https://www.distractify.com/p/is-my-chemical-romance-back-together) y que mejor momento de volver a tus raíces.
+
+##### Maquillaje
+
+<figure class="figimg">
+   <img src="https://pbs.twimg.com/media/DhDrCwdVAAAwvEW?format=jpg&name=medium" alt="INSANE CLOWN POSE">
+<figcaption>
+Miracles!.
+</figcaption>
+</figure>
+
+Así es usa maquillaje, pero con patrones que redefinan parte de tu cara, como es la mandíbula, las cejas, el puente de la nariz o usar el infalible [Juggalo](https://twitter.com/tahkion/status/1013304616958607360?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1013304616958607360&ref_url=https%3A%2F%2Fconsequenceofsound.net%2F2019%2F07%2Fjuggalo-makeup-facial-recognition%2F) de [Insane Clown pose](https://www.youtube.com/watch?v=8GyVx28R9-s) siempre puedes ser un poco mas expresiv@ y llevarlo al [siguiente nivel](https://cvdazzle.com/).
+
+#### Survivor Profesional Kit
+
+r5
+
 
 *bibliografia*
 
 https://us.norton.com/internetsecurity-iot-how-facial-recognition-software-works.html
 https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/facial-recognition.htm
+https://www.theatlantic.com/technology/archive/2014/07/makeup/374929/
+https://www.popsci.com/read/anti-facial-recognition-makeup
