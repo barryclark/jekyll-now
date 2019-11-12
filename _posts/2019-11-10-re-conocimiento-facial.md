@@ -117,13 +117,35 @@ Así es usa maquillaje, pero con patrones que redefinan parte de tu cara, como e
 
 #### Survivor Profesional Kit
 
-r5
+##### Ropa o accesorios con NIR LEDS
 
+<figure class="figimg">
+   <img src="https://www.survivopedia.com/wp-content/uploads/2016/04/goggles.jpg" alt="snapchat lens pro">
+<figcaption>
+google glass volvío.
+</figcaption>
+</figure>
+
+Les dije esto es PRO, estamos hablando de lentes con luces Near Infra Red, que sobrecargan los censores de luz de las cámaras digitales, creando imágenes imposibles de usar para Reconocimiento Facial.
+
+##### Ropa retro-reflectante
+
+<figure class="figimg">
+   <img src="https://www.survivopedia.com/wp-content/uploads/2016/04/android1.jpg" alt="snapchat lens basic">
+<figcaption>
+DAT STYLE.
+</figcaption>
+</figure>
+
+Si, vestirte como chaqueta amarilla servirá y además podras hacer que se confundan, ojo con los 🍆.
 
 *bibliografia*
 
-https://us.norton.com/internetsecurity-iot-how-facial-recognition-software-works.html
-https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/facial-recognition.htm
-https://www.theatlantic.com/technology/archive/2014/07/makeup/374929/
-https://www.popsci.com/read/anti-facial-recognition-makeup
-https://www.technadu.com/how-to-avoid-facial-recognition-in-public/29462/
+- [How Facial recognition software works](https://us.norton.com/internetsecurity-iot-how-facial-recognition-software-works.html)
+- [Facial Recognition](https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/facial-recognition.htm)
+- [6 ways to defeat facial recognition](https://www.survivopedia.com/6-ways-to-defeat-facial-recognition/)
+- [Anti-Surveillance Camouflage for Your Face](https://www.theatlantic.com/technology/archive/2014/07/makeup/374929/)
+- [Anti-facial recognition-makeup](https://www.popsci.com/read/anti-facial-recognition-makeup)
+- [How to avoid facial recognition in public](https://www.technadu.com/how-to-avoid-facial-recognition-in-public/29462/)
+- [Detecting Faces (Viola Jones Algortihm)](https://www.youtube.com/watch?v=uEJ71VlUmMQ&)
+- [How Face ID works... Probably](https://www.youtube.com/watch?v=mwTaISbA87A&)
