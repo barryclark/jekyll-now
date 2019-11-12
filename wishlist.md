@@ -35,3 +35,4 @@ If you are wanting to get stuff for us, but are wondering where to send it, you 
   - [Pikachu hat](https://www.pokemoncenter.com/clothing/caps--hats--beanies-s0102-0003-0000/pikachu-silhouette-sync-9fifty-baseball-cap-by-new-era-%28one-size-adult%29-741-02039)
 - [Output Platform desk (or $$ towards)](https://output.com/products/platform)
 - Gift certificates to: [Converse](https://www.converse.com/c/gift-cards), [Nintendo](https://www.nintendo.com/giftcards), or [Amazon](https://www.amazon.com/gift-cards/b?ie=UTF8&node=2238192011)
+- [AirPods Pro](https://www.apple.com/shop/product/MWP22AM/A/airpods-pro)
