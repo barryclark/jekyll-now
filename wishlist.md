@@ -19,7 +19,7 @@ If you are wanting to get stuff for us, but are wondering where to send it, you 
 - [Gift certificate, crystals, or jewelry from KIN](https://kindsm.com/)
 - [Smartwool socks](https://amzn.to/2qK54Q8)
 - [Gift certificate or plants from Art Terrarium](https://artterrarium.com/)
-- Coach: [Long Wallet (in green)](https://www.coachoutlet.com/coach-long-wallet/F73156IMVIR.html) or [Penny Crossbody(in red)](https://www.coachoutlet.com/coach-penny-crossbody/F87768.html)
+- Coach: [Long Wallet (in green)](https://www.coachoutlet.com/coach-long-wallet/F73156IMVIR.html) or [Penny Crossbody (in red)](https://www.coachoutlet.com/coach-penny-crossbody/F87768.html)
   - Will need to sign up for their member access to see prices
 
 ### Nic's List
