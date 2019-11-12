@@ -1,0 +1,135 @@
+I"�6<p>You have a dataset. How do you plot this dataset into a website? Well guess what, here again Python can do all of that. From opening the dataset to creating a webpage including the interactive plot you did, there is nothing Python cannot do!</p>
+
+<p>This tutorial/example will go through all the steps required to go from the dataset to inserting your dynamic plot in a webpage. We will be plotting the bikeways in San Francisco over the city’s streets. The questions this example answers are:</p>
+<ul>
+  <li>How do you open and plot a geospatial database ? We will use GeoPandas to open a shapefile db (.shp).</li>
+  <li>How do you make this plot interact with the user ? We will use Bokeh to create the interactive plot.</li>
+  <li>How do you create a webpage including this plot ? We will use Flask to do so.</li>
+</ul>
+
+<p>A lot of tutorials show how to do each of these parts independently. The goal of this tutorial is to include all of them into one example on the Bike Lanes network in San Francisco. The Python code used can be found in this <a href="https://github.com/YannFra/Website-Flask-Bokeh-Geopandas">GitHub</a> and the explanations in this <a href="https://yannfra.github.io/Creating-Website-Flask-Bokeh-GeoPandas/">tutorial</a>. Please contact me if you encounter any issue.</p>
+
+<p>Python libraries used in this tutorial: <a href="https://docs.bokeh.org/en/latest/">Bokeh</a>,<a href="https://www.fullstackpython.com/flask.html">Flask</a>, and <a href="http://geopandas.org">GeoPandas</a></p>
+
+<p>Our example will be on the bike network in San Francisco. Where are the bike lanes in San Francisco ? Is there enough of them to commute in bike ? We will create a plot that superimposes the bike lanes network to the street network in San Francisco. Then we will allow the user to zoom this plot and to hide/show the desired networks.</p>
+
+<p>This work was possible thanks to :</p>
+<ul>
+  <li><a href="https://datasf.org">DataSF</a> that has a lot of Open Access datasets. We used the one they give on the <a href="https://data.sfgov.org/Transportation/SFMTA-Bikeway-Network/ygmz-vaxd">bike lanes in San Francisco</a>.</li>
+  <li><a href="https://www.data.gov">Data.gov</a> that also has a lot of open Access datasets. We used the one they give on the <a href="https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile">streets in San Francisco</a></li>
+</ul>
+
+<h2 id="3-how-to-put-a-bokeh-plot-into-a-website">3. How to put a Bokeh plot into a website?</h2>
+
+<p>We have a running plot in Bokeh. Dynamic or static, complex or simple, it does not matter the process will be the same. It does not even need to be a Bokeh plot. However, before making a website, given that you have many options, you first need to evaluate your needs.</p>
+<ol>
+  <li>You can create a webpage with only your plot. If you go into the “templates” folder, you will find all the dynamic plots we have created saved with a HTML format file extension.
+    <ul>
+      <li>Your plot will be standing alone</li>
+      <li>Your website will not run in Python</li>
+      <li>You just need in your current website to make a redirection to the plot when you want your reader to read it.</li>
+    </ul>
+  </li>
+  <li>You can create a webpage where your plot is surrounded by text and other plots. We will be using Flask to do this.
+    <ul>
+      <li>Flask is very simple to set up</li>
+      <li>Your website will use Python</li>
+      <li>You can set up an authentication system (flask-login)</li>
+    </ul>
+  </li>
+</ol>
+
+<p>In the previous section, we already saw how to save the dynamic plot as an HTML file. Therefore, we are now only going to work on point 2. Let’s s use Flask. I hope you will be as amazed as I was to notice how easy it is to make a website with Flask.</p>
+
+<p>How does Flask work ? You still need an HTML page. However Flask is going to convert for you the plot into HTML and JS. One additional interest of Flask is that you can develop your website with Python but also with HTML, CSS and JS. It is pretty convenient for designing the website. Here is the <a href="https://www.freecodecamp.org/news/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492/">link</a> of a simple tutorial made by Flask developers.</p>
+
+<p>We are going to create :</p>
+<ul>
+  <li><code class="highlighter-rouge">app.py</code> that will have the python script inserting our plot</li>
+  <li><code class="highlighter-rouge">base.html</code> in the templates repository that will contain our website.</li>
+</ul>
+
+<p>You can also see the desired structure in the <a href="https://github.com/YannFra/Website-Flask-Bokeh-Geopandas">project GitHub</a>.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://www.w3schools.com/w3css/4/w3.css"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"{{url_for('static', filename='css/main.css')}}"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.1.0.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"{{ url_for('static', filename='js/main.js')}}"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	{{ js_resources | safe}}
+	{{ css_resources | safe}}
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+{{ script | safe }}
+{{ div | safe }}
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>What you see in brackets is what Flask is going to give to the HTML file to display the plot.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+
+<span class="c1">#Application that is running the website
+</span><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+<span class="o">@</span><span class="n">app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">"/"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    
+    <span class="c1">#Downloading the datasets
+</span>    <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="n">gpd</span>
+    
+    <span class="n">db_bike_path</span><span class="o">=</span><span class="s">"data/geo_export_0ff3043a-1833-476b-afe0-779dfa091ebd.shp"</span>
+    <span class="n">db_bike</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">db_bike_path</span><span class="p">)</span>
+    
+    <span class="n">db_roads_path</span><span class="o">=</span><span class="s">"data/tl_2017_06075_roads.shp"</span>
+    <span class="n">db_roads</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">db_roads_path</span><span class="p">)</span>
+    
+    
+    <span class="c1">#Plotting the bike lanes and the streets
+</span>    <span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span>
+    <span class="kn">from</span> <span class="nn">bokeh.models</span> <span class="kn">import</span> <span class="n">GeoJSONDataSource</span>
+    <span class="kn">from</span> <span class="nn">bokeh.embed</span> <span class="kn">import</span> <span class="n">components</span>
+    <span class="kn">from</span> <span class="nn">bokeh.resources</span> <span class="kn">import</span> <span class="n">INLINE</span>
+    <span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">render_template</span>
+
+    <span class="n">SF</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">aspect_scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">match_aspect</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    
+    <span class="n">db_roads_json</span><span class="o">=</span><span class="n">GeoJSONDataSource</span><span class="p">(</span><span class="n">geojson</span> <span class="o">=</span> <span class="n">db_roads</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
+    <span class="n">SF</span><span class="o">.</span><span class="n">multi_line</span><span class="p">(</span><span class="s">'xs'</span><span class="p">,</span> <span class="s">'ys'</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="n">db_roads_json</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s">"gray"</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">legend</span><span class="o">=</span><span class="s">"All streets"</span><span class="p">)</span>
+    
+    <span class="n">db_bike_json</span><span class="o">=</span><span class="n">GeoJSONDataSource</span><span class="p">(</span><span class="n">geojson</span> <span class="o">=</span> <span class="n">db_bike</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
+    <span class="n">SF</span><span class="o">.</span><span class="n">multi_line</span><span class="p">(</span><span class="s">'xs'</span><span class="p">,</span> <span class="s">'ys'</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="n">db_bike_json</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s">"red"</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span><span class="n">legend</span><span class="o">=</span><span class="s">"Bike Lanes"</span><span class="p">)</span>
+    
+    <span class="n">SF</span><span class="o">.</span><span class="n">legend</span><span class="o">.</span><span class="n">click_policy</span><span class="o">=</span><span class="s">"hide"</span>
+    
+    
+    <span class="c1">#Convert the plot into HTML and JS that can be read by base.html
+</span>    <span class="n">script_plot</span><span class="p">,</span><span class="n">div_plot</span><span class="o">=</span><span class="n">components</span><span class="p">(</span><span class="n">SF</span> <span class="p">,</span><span class="n">INLINE</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'plot.html'</span><span class="p">,</span>
+                       <span class="n">script</span><span class="o">=</span><span class="n">script_plot</span><span class="p">,</span>
+                       <span class="n">div</span><span class="o">=</span><span class="n">div_plot</span><span class="p">,</span>
+                       <span class="n">js_resources</span><span class="o">=</span><span class="n">INLINE</span><span class="o">.</span><span class="n">render_js</span><span class="p">(),</span>
+                       <span class="n">css_resources</span><span class="o">=</span><span class="n">INLINE</span><span class="o">.</span><span class="n">render_css</span><span class="p">())</span>
+
+
+<span class="c1">#Make the website work when we run this python file
+</span><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s">'0.0.0.0'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></code></pre></figure>
+
+<p>With his method, your website is now running in local. It might be enough for your need. In case it is not, here are two different tutorials to make your website global:</p>
+<ul>
+  <li><a href="https://www.freecodecamp.org/news/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492/">Here</a> is the tutorial done by Flask developer to make a website and then upload it to the cloud using <a href="https://cloud.google.com/appengine/">Google App Engine</a>.</li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04">Here</a> is a great tutorial done by Digital Ocean helping you put on the cloud your website on <a href="https://aws.amazon.com">AWS</a>.</li>
+</ul>
+
+<p>Unless you have a special reason I would recommend following Flask developers tutorial to upload your website to the cloud. It will be much simpler.</p>
+
+<p>Hope this tutorial was helpful and will help your personal projects !</p>
+
+:ET
