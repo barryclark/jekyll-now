@@ -8,6 +8,8 @@ redirect_from:
   - /mls/
 ---
 
+[gb-discuss](https://mail.openjdk.java.net/pipermail/gb-discuss/) 
+
 [discuss](https://mail.openjdk.java.net/pipermail//discuss)
 
 [jdk-dev](https://mail.openjdk.java.net/pipermail/jdk-dev/)
@@ -32,11 +34,9 @@ redirect_from:
 
 [announce](https://mail.openjdk.java.net/pipermail/announce/)
 
-[openjfx-dev](https://mail.openjdk.java.net/pipermail/openjfx-dev)
-
 [compiler-dev](https://mail.openjdk.java.net/pipermail/compiler-dev/)
 
-[portola-dev](https://mail.openjdk.java.net/pipermail/portola-dev/)
+[openjfx-dev](https://mail.openjdk.java.net/pipermail/openjfx-dev)
 
 [hotspot-dev](https://mail.openjdk.java.net/pipermail/hotspot-dev/)
 
@@ -45,6 +45,10 @@ redirect_from:
 [hotspot-jfr-dev](https://mail.openjdk.java.net/pipermail/hotspot-jfr-dev)
 
 [serviceability-dev](https://mail.openjdk.java.net/pipermail/serviceability-dev/)
+
+[portola-dev](https://mail.openjdk.java.net/pipermail/portola-dev/)
+
+[net-dev](https://mail.openjdk.java.net/pipermail/net-dev/)
 
 [build-dev](https://mail.openjdk.java.net/pipermail/build-dev/)
 
@@ -60,13 +64,10 @@ redirect_from:
 
 [distro-pkg-dev](https://mail.openjdk.java.net/pipermail/distro-pkg-dev/)
 
-[gb-discuss](https://mail.openjdk.java.net/pipermail/gb-discuss/) 
-
-[Metroipolis Java on Java](https://mail.openjdk.java.net/pipermail/metropolis-dev/)
+[Metropolis Java on Java](https://mail.openjdk.java.net/pipermail/metropolis-dev/)
 
 [mobile-dev](https://mail.openjdk.java.net/pipermail/mobile-dev/)
 
-[net-dev](https://mail.openjdk.java.net/pipermail/net-dev/)
 
 
 
