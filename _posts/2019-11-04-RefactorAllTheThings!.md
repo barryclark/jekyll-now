@@ -5,7 +5,7 @@ title: Refactor all the Things!
 
 As I've practiced refactoring over the years, I continue to find new ways to solve problems better with refactoring. This is why refactoring is such a big deal to me.
 
-What are some of the problems we can solve with refactoring? This is hard to talk about because many of these problems aren't generally recognized as solvable / we don't know what the solutions would look like, so the idea that we would refactor to fix them is a hard to comprehend. Each of these is a whole 'nother article / book / course, but for now I'll hit summarize.
+What are some of the problems we can solve with refactoring? This is hard to talk about because many of these problems aren't generally recognized as solvable / we don't know what the solutions would look like, so the idea that we would refactor to fix them is a hard to comprehend. Each of these is a whole 'nother article / book / course, but for now I'll summarize.
 
 ## Reading
 
