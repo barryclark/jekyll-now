@@ -7,7 +7,7 @@ As I've practiced refactoring over the years, I continue to find new ways to sol
 
 What are some of the problems we can solve with refactoring? This is hard to talk about because many of these problems aren't generally recognized as solvable / we don't know what the solutions would look like, so the idea that we would refactor to fix them is a hard to comprehend. Each of these is a whole 'nother article / book / course, but for now I'll hit summarize.
 
-# Reading
+## Reading
 
 Before you can work effectively in any code, you must read it. Legacy code is generally difficult to read. Identifier names are misleading. Functions are overlong.
 
@@ -17,7 +17,7 @@ These kinds of refactorings are easy, cheap, safe, and reversable. These tiny in
 
 Arlo Belshee calls this [Read-by-Refactoring](https://insightloop.digdeeproots.com/dl/train-the-trainer-rbr-insight-loop.pdf).
 
-# Testing
+## Testing
 
 We want tests that are super fast and completely reliable. When a bug is introduced, it should only fail one test, not a bunch of unrelated tests. The problem should be immediately obvious from the failure.
 
@@ -27,7 +27,7 @@ Most people think that only unit tests can meet the former, and that only accept
 
 Acceptance Microtests are only possible in well-factored code, so you'll need to refactor your way there. Arlo Belshee calls this Test-by-Refactoring.
 
-# Easy to change
+## Easy to change
 
 One way to add a feature to code is to understand the design of the system, then figure out how to make your new feature fit into that design.
 
@@ -35,7 +35,7 @@ Another way is to ask "what design would make this feature easy to implement?", 
 
 When extending the behavior in a new direction, we should not need to worry about or update all the existing features.
 
-# Safe
+## Safe
 
 Skilled, careful, conscientious, well-intentioned developers still write defects. That's because our code is unsafe.
 
@@ -50,7 +50,7 @@ See:
 - [Safeguarding](http://jay.bazuzi.com/Safeguarding/)
 - [Safeguarding: A step-by-step guide](https://llewellynfalco.blogspot.com/2018/12/safeguarding-step-by-step-guide.html)
 
-# Scaling and independence
+## Scaling and independence
 
 Many large projects suffer from "scale" problems like slow builds, shotgun surgery, code review latency, too much or too little code ownership.
 
@@ -62,7 +62,7 @@ Good modules don't depend on / aren't depended on by other code in the system. A
 
 All of the above applies to equally to both modules and microservices. Good microservices can be developed, deployed, monitored, and maintained entirely within a team. See [Thoughts On Microservices](http://jay.bazuzi.com/Thoughts-on-Microservices/).
 
-# User stories should fit in sprints
+## User stories should fit in sprints
 
 User Stories should be [INVEST](https://www.agilealliance.org/glossary/invest/).
 
