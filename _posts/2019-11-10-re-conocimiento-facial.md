@@ -8,15 +8,19 @@ feature: https://media.giphy.com/media/rQG7d0Tzau6wo/source.gif
 
 ## Nos estan mirando
 
+---
+
 **disclaimer:** *este post probablemente tenga un montón de información ñoña, **jargon** y **mumbo jumbo**, pero el conocimiento es lo necesario para poder entender y **burlar** algunas cosas.*
 
-A estas alturas del partido todos sabemos que es el reconocimiento facial, lo hemos visto en series, películas, usado en nuestras cámaras e incluso usado para desbloquear nuestro teléfono. *¿Me dices que mi teléfono reconoce mi cara o que la detecta?*
+---
+
+A estas alturas del partido todos sabemos que es el reconocimiento facial, lo hemos visto en series, películas, usado en nuestras cámaras e incluso usado para desbloquear nuestro teléfono. *¿Me dices que mi teléfono reconoce mi cara o que la detecta?* ah! muy buena pregunta.
 
 ## ¿Detección o Reconocimiento? 
 
-Si, no es lo mismo, pero una fundamental para la otra. Lo que hace nuestra cámara al momento de sacar una foto es **detectar** un rostro, esto significa que busca **patrones reconocibles** como ojos, nariz, boca, y todo ese espacio negativo en tu rostro *por el exceso de pizzas de la semana pasada*, mediante costrastes y una serie de pruebas en una especie de arbol de desiciones, en la que se van buscando estos rasgos en rectangulos de zonas definidas, este algoritmo es conocido como [**Algoritmo Viola Jones**](https://www.youtube.com/watch?v=uEJ71VlUmMQ) y es tan efectivo que se sigue usando por sobre usar **Deep Learning** o **Machine Learning**.
+**Si**, **no** es lo mismo, pero una es fundamental para la otra. Lo que hace nuestra cámara al momento de sacar una foto es **detectar** un rostro, esto significa que busca **patrones reconocibles** como ojos, nariz, boca en todo ese espacio negativo en tu rostro *por el exceso de pizzas de la semana pasada*, mediante una serie de pruebas, en una especie de arbol de desiciones, en la que se van buscando estos rasgos en rectangulos de zonas definidas, hasta decir, si, esta es una cara. Este proceso es un algoritmo conocido como 📼[Algoritmo Viola Jones](https://www.youtube.com/watch?v=uEJ71VlUmMQ) y es tan efectivo que se sigue usando por sobre usar **Deep Learning** o **Machine Learning** o alguna otra **Cosa Learning**.
 
- Una vez que se ha detectado una cara empieza el proceso de **reconocimiento**, les suena común, obvio es lo que hacemos siempre para detectar a nuestros amigos cuando nos dicen *voy llegando*. Al fin del día los algoritmos son las versiones *matematizadas* de los procesos que hacemos día a día, la habilidad de reconocer y ver rostros es algo que como humanos llevamos <s>años</s> siglos haciendo, si también estoy pensando en esa tostada que me comí en la mañana que tenía la cara de <s>Karol Dance</s> Kike Morandé (chúpalo).
+ Una vez que se ha detectado una cara empieza el proceso de **reconocimiento**, les suena común, obvio es lo que hacemos siempre para reconocer a nuestros amigos cuando nos dicen *voy llegando*. Al fin del día los algoritmos son las versiones *matematizadas* de los procesos que hacemos día a día, la habilidad de reconocer y ver rostros es algo que como humanos llevamos <s>años</s> siglos haciendo, si también estoy pensando en esa tostada que me comí en la mañana que tenía la cara de <s>Karol Dance</s> Kike Morandé (chúpalo).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t4DT3tQqgRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -59,13 +63,13 @@ Cuando digo que hay **bases de datos** no es para volverse loco, pero, [Facebook
 
 ### El futuro es TRI-DI
 
-Actualmente la moda, es el 3D, en vez de usar imágenes 2D se usan modelos 3D de la superficie de la cara, principalmente es como funciona **FaceId de Apple**, esta es la parte donde pelo el cable ya que es básicamente una **Xbox Kinect** en miniatura que usa cientos de *mini lasers* para generar un modelo 3D de tu rostro lo cual es mucho más preciso y *wow la wea bkn*.
+Actualmente la moda, es el 3D, en vez de usar imágenes 2D se usan modelos 3D de la superficie de la cara, principalmente es como funciona **FaceId de Apple**, esta es la parte donde pelo el cable ya que es básicamente una 📼[Xbox Kinect](https://www.youtube.com/watch?v=uq9SEJxZiUg) en miniatura que usa cientos de *mini lasers* para generar un modelo 3D de tu rostro lo cual es mucho más preciso y *wow la wea bkn*.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g4m6StzUcOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-El **reconocimiento facial con 3D**, támbien se puede hacer a base de videos y funciona a tráves del analisis cuadro por cuadro de las facciones, básicamente es un analisis 2D muchas veces. 
+El **reconocimiento facial con 3D**, támbien se puede hacer a base de videos y funciona a tráves del analísis cuadro por cuadro de las facciones, básicamente es un analisis 2D muchas veces. 
 
-Ambos sistemas funcionan a base de contrastes y bueno detección de ciertas carácteristicas faciales, y **podría haber ahorrado todo lo anterior solo diciendo que el reconocimiento facial funciona a base de contrastes**, pero me gusta dar un poco mas de detalles, lo cual nos lleva a la parte divertida.
+Ambos sistemas funcionan a base de contrastes y bueno detección de ciertas carácteristicas faciales, **podría haber ahorrado todo lo anterior solo diciendo que el reconocimiento facial funciona a base de contrastes**, pero me gusta dar un poco más de detalles, lo cual nos lleva a la parte divertida.
 
 
 ## ¿Me ves? ya no! 👀
@@ -113,7 +117,7 @@ Miracles!.
 </figcaption>
 </figure>
 
-Así es usa maquillaje, pero con patrones que redefinan parte de tu cara, como es la mandíbula, las cejas, el puente de la nariz o usar el infalible [Juggalo](https://twitter.com/tahkion/status/1013304616958607360?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1013304616958607360&ref_url=https%3A%2F%2Fconsequenceofsound.net%2F2019%2F07%2Fjuggalo-makeup-facial-recognition%2F) de [Insane Clown pose](https://www.youtube.com/watch?v=8GyVx28R9-s) siempre puedes ser un poco mas expresiv@ y llevarlo al [siguiente nivel](https://cvdazzle.com/).
+Así es usa maquillaje, pero con patrones que redefinan parte de tu cara, como es la mandíbula, las cejas, el puente de la nariz o usar el infalible [Juggalo](https://twitter.com/tahkion/status/1013304616958607360?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1013304616958607360&ref_url=https%3A%2F%2Fconsequenceofsound.net%2F2019%2F07%2Fjuggalo-makeup-facial-recognition%2F) de 📼[Insane Clown pose](https://www.youtube.com/watch?v=8GyVx28R9-s) siempre puedes ser un poco mas expresiv@ y llevarlo al [siguiente nivel](https://cvdazzle.com/).
 
 #### Survivor Profesional Kit
 
@@ -126,7 +130,7 @@ google glass volvío.
 </figcaption>
 </figure>
 
-Les dije esto es PRO, estamos hablando de lentes con luces Near Infra Red, que sobrecargan los censores de luz de las cámaras digitales, creando imágenes imposibles de usar para Reconocimiento Facial.
+Les dije esto es **PRO**, estamos hablando de lentes con luces **Near Infra Red**, que sobrecargan los censores de luz de las cámaras digitales, creando imágenes imposibles de usar para Reconocimiento Facial.
 
 ##### Ropa retro-reflectante
 
@@ -137,9 +141,13 @@ DAT STYLE.
 </figcaption>
 </figure>
 
-Si, vestirte como chaqueta amarilla servirá y además podras hacer que se confundan, ojo con los 🍆.
+No, no es una excusa para vestirse de chaqueta amarilla, pero si para usar unos lentes **ridículos**, pero altamente efectivos, funciona de la misma manera que las **tecno-antiparras** sobre cargando los sensores de luz.
 
-*bibliografia*
+Hay otros métodos como usar detectores de cámaras y otros artilugios dignos de <s>James Bond</s> Snake y que van mas de la onda de evadir en vez de burlar, onda muy paranoia *me leí todos los libros de [Mitnick](https://www.youtube.com/watch?v=K-96JmC2AkE)*.
+
+Ahora les dejo la <s>discografía</s> **Bibliografía** y marcados con una pizza los articulos o videos interesantes.
+
+### Bibliografía
 
 - [How Facial recognition software works](https://us.norton.com/internetsecurity-iot-how-facial-recognition-software-works.html)
 - [Facial Recognition](https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/facial-recognition.htm)
@@ -147,5 +155,13 @@ Si, vestirte como chaqueta amarilla servirá y además podras hacer que se confu
 - [Anti-Surveillance Camouflage for Your Face](https://www.theatlantic.com/technology/archive/2014/07/makeup/374929/)
 - [Anti-facial recognition-makeup](https://www.popsci.com/read/anti-facial-recognition-makeup)
 - [How to avoid facial recognition in public](https://www.technadu.com/how-to-avoid-facial-recognition-in-public/29462/)
-- [Detecting Faces (Viola Jones Algortihm)](https://www.youtube.com/watch?v=uEJ71VlUmMQ&)
-- [How Face ID works... Probably](https://www.youtube.com/watch?v=mwTaISbA87A&)
+- 🍕📼[Detecting Faces (Viola Jones Algortihm)](https://www.youtube.com/watch?v=uEJ71VlUmMQ&)
+- 📼[How Face ID works... Probably](https://www.youtube.com/watch?v=mwTaISbA87A&)
+- 🍕[How your brain recognize all those faces](https://www.smithsonianmag.com/science-nature/how-does-your-brain-recognize-faces-180963583/)
+- [Why do we see faces in objects](https://www.bbc.com/future/article/20140730-why-do-we-see-faces-in-objects)
+- 📼[How the kinect depth sensor works in 2 minutes](https://www.youtube.com/watch?v=uq9SEJxZiUg)
+- 📼[12.1 What is the Kinect? - Kinect and Processing tutorial](https://www.youtube.com/watch?v=QmVNgdapJJM)
+
+La sección de comentarios queda abierta para que dejen su odio, digan todas las tildes que no use y esas cosas clásicas del internet.
+
+*siempre pienso en que debería tener alguna especie de despedida a lo truman show*
