@@ -79,6 +79,6 @@ Ni Oblit, ni perdó
 
 ### Si ho necessites, pots descarregar els .psd (documents de Photoshop per capes) amb aquests enllaços:
 
-<em><a href="https://www.dropbox.com/s/8hddhfx770ylf59/post1oct.psd.zip?dl=0" title="Baixar arxiu psd per capes" target="_blank">Descarregar post1oct.psd.zip (10,5 MB)</a></em> 
-<em><a href="https://www.dropbox.com/s/t2k9eolgjqxqxzc/unsolpoble.psd.zip?dl=0" title="Baixar arxiu psd per capes" target="_blank">Descarregar unsolpoble.psd.zip (14,5 MB)</a></em> 
-<em><a href="https://www.dropbox.com/s/e60iueawy4iwkg7/unsolpoble5.psd.zip?dl=0" title="Baixar arxiu psd per capes" target="_blank">Descarregar unsolpoble5.psd.zip (711 KB)</a></em> 
+<em><a href="https://www.dropbox.com/s/8hddhfx770ylf59/post1oct.psd.zip?dl=1" title="Baixar arxiu psd per capes" target="_blank">Descarregar post1oct.psd.zip (10,5 MB)</a></em> 
+<em><a href="https://www.dropbox.com/s/t2k9eolgjqxqxzc/unsolpoble.psd.zip?dl=1" title="Baixar arxiu psd per capes" target="_blank">Descarregar unsolpoble.psd.zip (14,5 MB)</a></em> 
+<em><a href="https://www.dropbox.com/s/e60iueawy4iwkg7/unsolpoble5.psd.zip?dl=1" title="Baixar arxiu psd per capes" target="_blank">Descarregar unsolpoble5.psd.zip (711 KB)</a></em> 
