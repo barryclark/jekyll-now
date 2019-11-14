@@ -62,102 +62,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 ### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin στην Ελλάδα;
 
-- Στα εξής Bitcoin ATM:
-
-<table>
-    <tr>
-        <td><strong>Περιοχή</strong></td>    
-        <td><strong>Διεύθυνση</strong></td>
-        <td><strong>Επικοινωνία</strong></td>
-    </tr>
-    <tr>
-        <td>Αχαρνές, Αττική</td>    
-        <td><a href="https://goo.gl/maps/HxSWFsnH5kR2" rel="nofollow">Βιβλιοπωλείο Ορίζοντες, Θηβαίου Ιωάννου 20, Αχαρνές 13671</a></td>
-        <td> </td>
-    </tr>
-    <tr>
-        <td>Αχαρνές, Αττική</td>
-        <td><a href="https://goo.gl/maps/gKL1bEheaQ32" rel="nofollow">Πρατήριο καυσίμων Aegean, Δεκελείας 94, Αχαρνές 13671</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Αθήνα</td>
-        <td><a href="https://goo.gl/maps/bdipXzwYhHU2" rel="nofollow">Δημητρακοπούλου 84, Κουκάκι, Αθήνα 11741</a></td>
-        <td>+30 6998499499 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Αθήνα</td>
-        <td><a href="https://goo.gl/maps/BUVquX7zwWL2" rel="nofollow">Πειραιώς 68, Αθήνα 10436</a></td>
-        <td>+30 6998499499 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Πειραιάς</td>
-        <td><a href="https://goo.gl/maps/hCCcRJWHTLx" rel="nofollow">Σαχτούρη 56, Πειραιάς 18537</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Γλυφάδα, Αττική</td>
-        <td><a href="https://goo.gl/maps/VwQbWgmdcbk" rel="nofollow">Εμπορικό κέντρο DAMA, Γεννηματά 59-61, Γλυφάδα 16562</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Βριλήσσια, Αττική</td>
-        <td><a href="https://goo.gl/maps/vcPqykfBvCx" rel="nofollow">Γυμναστήριο New Yorkers Fitness Club, 25ης Μαρτίου 15Α, Βριλήσσια 15235</a></td>
-        <td>+30 6944225521 <a href="https://www.facebook.com/groupbtcgreece/" rel="nofollow">GroupBTC Greece</a></td>
-    </tr>
-    <tr>
-        <td>Αγία Παρασκευή, Αττική</td>
-        <td><a href="https://goo.gl/maps/rJmzphtnPj62" rel="nofollow">Σολωμου 22, Αγία Παρασκευή 15341</a> 24ωρη πρόσβαση</td>
-        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Θεσσαλονίκη</td>
-        <td><a href="https://goo.gl/maps/G8WhqZoNpKo" rel="nofollow">Αναγεννήσεως 7, Θεσσαλονίκη 54627</a></td>
-        <td>+30 6941412894 <a href="http://thesscash.gr" rel="nofollow">Thess Cash</a> (a Bcash Greece ATM)</td>
-    </tr>
-    <tr>
-        <td>Ηράκλειο</td>
-        <td><a href="https://goo.gl/maps/d84PexJUYzC2" rel="nofollow">Καλοκαιρινού 64, Ηράκλειο 71201, Κρήτη</a></td>
-        <td>+30 6998499499 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Μύκονος</td>
-        <td><a href="https://goo.gl/maps/qWNWUbEVzd42" rel="nofollow">Wine bar restaurant Vinos, Καλογερά 4, Μύκονος 84600</a></td>
-        <td>+30 6940262025 <a href="https://www.winebarvinos.com" rel="nofollow">Vinos Bitcoin ATM</a> (a GroupBTC ATM)</td>
-    </tr>
-    <tr>
-        <td>Μύκονος</td>
-        <td><a href="https://goo.gl/maps/3r5JHyvzuJM2" rel="nofollow">Εμπορικό κέντρο MyMall, Μύκονος</a> 24ωρη πρόσβαση</td>
-        <td>+30 6998499499 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Λάρισα</td>
-        <td><a href="https://goo.gl/maps/LDGupm9kXQ42" rel="nofollow">Ιάσονος 20, Λάρισα 41223</a></td>
-        <td>+30 6975609542 <a href="http://www.bitcoinspot.gr" rel="nofollow">Bitcoin Spot</a> (a Bcash Greece ATM)</td>
-    </tr>
-    <tr>
-        <td>Καλαμάτα</td>
-        <td><a href="https://goo.gl/maps/b7QLuFkTT512" rel="nofollow">Νικηταρά 3, Καλαμάτα 24100</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Πάτρα</td>
-        <td><a href="https://goo.gl/maps/tDcGDb5hxoD2" rel="nofollow">Αγίου Ανδρέου 1, Πάτρα 26223</a></td>
-        <td>+30 6987812000 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>
-    <tr>
-        <td>Καστοριά</td>
-        <td><a href="https://goo.gl/maps/QoxJMHP6UPK2" rel="nofollow">Μητροπόλεως 2, Καστοριά 52100</a></td>
-        <td>+30 6941412894 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>    
-    <tr>
-        <td>Ιωάννινα</td>
-        <td><a href="https://goo.gl/maps/Sh7Wbv1ExQR2" rel="nofollow">Ανεξαρτησίας 75, Ιωάννινα 45444</a></td>
-        <td>+30 6941412894 <a href="https://bcash.gr" rel="nofollow">Bcash Greece</a></td>
-    </tr>    
-</table>
-
-Η Bcash Greece έχει ετοιμάσει [βίντεο με οδηγίες χρήσης των Bitcoin ATM της](https://www.youtube.com/channel/UCo4WSs5gFgp9RgvR2f-1okg/videos).
+- Στα 60+ Bitcoin ATM που εμφανίζει ο χάρτης της [Coin ATM Radar](https://coinatmradar.com/country/83/bitcoin-atm-greece/). Τα περισσότερα από αυτά ανήκουν στην [Bcash Greece](https://bcash.eu/gr/) ([δείτε τα βίντεο με οδηγίες χρήσης](https://www.youtube.com/channel/UCo4WSs5gFgp9RgvR2f-1okg/videos)) και στην [iQ CashNow](https://www.iqcashnow.com/?lang=el).
 
 - Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτήν τη στιγμή επιτρέπεται έμβασμα στο εξωτερικό μέχρι €4000 το δίμηνο χωρίς δικαιολογητικά. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
 - Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες. <strike>Ένα ανταλλακτήριο που δέχεται Ελληνικές κάρτες είναι το Coinbase και χρεώνει 3,99%. Το Coinbase κάνει δεκτές μόνο κάρτες στις οποίες έχει ενεργοποιηθεί ο μηχανισμός 3D Secure για ασφαλείς συναλλαγές στο Internet. Για τις κάρτες Visa αυτός ο μηχανισμός είναι γνωστός ως Verified by Visa και για τις κάρτες MasterCard είναι γνωστός ως MasterCard SecureCode. Κάρτες που πρόσφατα (2017) έγιναν δεκτές στο Coinbase είναι χρεωστικές κάρτες της Alpha Bank και της Eurobank. Η Τράπεζα Πειραιώς δεν υποστηρίζει πλέον 3D Secure στις κάρτες της.</strike>
@@ -308,7 +213,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2019-10-29
+Τελευταία ενημέρωση: 2019-11-15
 
 <!-- <div class="posts">
   {% for post in site.posts %}
