@@ -18,9 +18,9 @@ A estas alturas del partido todos sabemos que es el reconocimiento facial, lo he
 
 ## ¿Detección o Reconocimiento? 
 
-**Si**, **no** es lo mismo, pero una es fundamental para la otra. Lo que hace nuestra cámara al momento de sacar una foto es **detectar** un rostro, esto significa que busca **patrones reconocibles** como ojos, nariz, boca en todo ese espacio negativo en tu rostro *por el exceso de pizzas de la semana pasada*, mediante una serie de pruebas, en una especie de arbol de desiciones, en la que se van buscando estos rasgos en rectangulos de zonas definidas, hasta decir, si, esta es una cara. Este proceso es un algoritmo conocido como 📼[Algoritmo Viola Jones](https://www.youtube.com/watch?v=uEJ71VlUmMQ) y es tan efectivo que se sigue usando por sobre usar **Deep Learning** o **Machine Learning** o alguna otra **Cosa Learning**.
+**Si**, **no** es lo mismo, pero una es fundamental para la otra. Lo que hace nuestra cámara al momento de sacar una foto es **detectar** un rostro, esto significa que busca **patrones reconocibles** como ojos, nariz, boca en todo ese espacio negativo en tu rostro, mediante una serie de pruebas, en una especie de arbol de desiciones, en la que se van buscando estos patrones en rectangulos de zonas definidas, hasta decir, si, esta es una cara. Este proceso es un algoritmo conocido como 📼[Algoritmo Viola Jones](https://www.youtube.com/watch?v=uEJ71VlUmMQ) y es tan efectivo que se sigue usando por sobre usar **Deep Learning** o **Machine Learning** o alguna otra **Cosa Learning**.
 
- Una vez que se ha detectado una cara empieza el proceso de **reconocimiento**, les suena común, obvio es lo que hacemos siempre para reconocer a nuestros amigos cuando nos dicen *voy llegando*. Al fin del día los algoritmos son las versiones *matematizadas* de los procesos que hacemos día a día, la habilidad de reconocer y ver rostros es algo que como humanos llevamos <s>años</s> siglos haciendo, si también estoy pensando en esa tostada que me comí en la mañana que tenía la cara de <s>Karol Dance</s> Kike Morandé (chúpalo).
+ Una vez que se ha detectado una cara empieza el proceso de **reconocimiento**, les suena común, obvio es lo que hacemos siempre para reconocer a nuestros amigos. Al fin del día los algoritmos son las versiones *matematizadas* de los procesos que hacemos día a día, la habilidad de reconocer y ver rostros es algo que como humanos llevamos <s>años</s> siglos haciendo, como esa tostada que me comí en la mañana que tenía la cara de <s>Karol Dance</s> Kike Morandé (chúpalo).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t4DT3tQqgRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -28,7 +28,7 @@ A estas alturas del partido todos sabemos que es el reconocimiento facial, lo he
 
 HP COMPUTERS ARE RACIST
 
-Al día de hoy esta tecnología a avanzado mucho desde sus inicios y esta full integrada a nuestras vidas. No, [no voy](https://www.welivesecurity.com/la-es/2015/08/27/tecnologia-de-reconocimiento-facial/) a [hacer un post](https://medium.com/@spot_blog/una-breve-historia-del-reconocimiento-facial-vision-blog-5a76fdfe4865) latero con la historia del reconocimiento facial, ya mucha gente lo ha hecho, pero si una leve explicación de como funciona esta técnologia y como burlarla, solo porque me da una razón para escribir y usar gifs, 2 de mis 3 cosas favoritas.
+Al día de hoy esta tecnología a avanzado mucho desde sus inicios y esta full integrada a nuestras vidas. No, [no voy](https://www.welivesecurity.com/la-es/2015/08/27/tecnologia-de-reconocimiento-facial/) a [hacer un post](https://medium.com/@spot_blog/una-breve-historia-del-reconocimiento-facial-vision-blog-5a76fdfe4865) latero con la historia del reconocimiento facial, ya mucha gente lo ha hecho, pero si una leve explicación de como funciona esta técnologia y como burlarla, solo porque me da una razón para escribir y usar gifs, **2** de mis **3** cosas favoritas.
 
 
 
