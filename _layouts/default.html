@@ -30,7 +30,7 @@
             <ul class="main-nav">
               {% if page.layout == "default" %}
               <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="{{ site.baseurl }}/">Blog</a>
+                <a class="main-nav__link" href="{{ site.baseurl }}/" title="{{ page.title }}, page active">Blog</a>
               </li>
               {% else %}
                 <li class="main-nav__item">
@@ -39,7 +39,7 @@
               {% endif %}
               {% if page.layout == "page" && page.title == "A propos"  %}
               <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="{{ site.baseurl }}/about">A propos</a>
+                <a class="main-nav__link" href="{{ site.baseurl }}/about" title="{{ page.title }}, page active">A propos</a>
               </li>
               {% else %}
               <li class="main-nav__item">
