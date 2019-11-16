@@ -160,6 +160,17 @@ img {
   @include mobile {
     text-align: center;
   }
+  
+  &__nav {
+    float: right;
+    margin-top: 23px; // @TODO: Vertically middle align
+	  
+    @include mobile {
+      float: none;
+      margin-top: 9px;
+      display: block;
+    }
+  }
 }
 
 .site-avatar {
@@ -209,29 +220,28 @@ img {
   }
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
+main-nav {
+  list-style: none;
+  
+  &__item {
+    display: inline-block;
     margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
+    
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+    }
+  }
+
+  &__link {
+    color: $darkGray;
+    font-family: $helveticaNeue;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+	  
+    @include mobile {
+     color: $blue;
+     font-size: 16px;
     }
   }
 }
