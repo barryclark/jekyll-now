@@ -28,7 +28,7 @@
 
           <nav class="masthead__nav" role="navigation">
             <ul class="main-nav">
-              {% if page.layout == "post" %}
+              {% if page.layout == "post" || page.layout == "default" %}
               <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link" href="{{ site.baseurl }}/">Blog</a>
               </li>
@@ -38,8 +38,8 @@
                 </li>
               {% endif %}
               {% if page.layout == "page" && page.title == "A propos"  %}
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active" href="{{ site.baseurl }}/about">A propos</a>
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link" href="{{ site.baseurl }}/about">A propos</a>
               </li>
               {% else %}
               <li class="main-nav__item">
