@@ -232,6 +232,10 @@ img {
     @include mobile {
       margin: 0 10px;
     }
+	  
+    &--active {
+      border-bottom: 2px solid $blue;
+    }
   }
 
   &__link {
