@@ -6,28 +6,21 @@ permalink: /about/
 
 ![Me](https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/master/images/meimage.jpg)
 
-I am a 23 year old Statistics student currently residing in Cape Town, South Africa. 
-I believe that our generation's struggle is a power struggle, a decolonial struggle, working to undo complex systems of oppression which dictate nearly every aspect of our lives. 
-As a cis-gendered, middle-class, white, heterosexual man, I was not required to engage on the intersections between my privilege and others' oppression until adulthood.
-That paradigm can no longer exist, and must be systematically disrupted.
-All oppressions must fall.
+I am a techno-optimist in my late twenties currently residing in Malmö, Sweden. 
+I am a , and am passionate about Privacy, Artificial Intelligence, Mathematical Statistics, Data Visualization and Data Journalism. 
+I currently work as a Data Scientist at a small healthtech startup, and look forward to working towards a technological future that supports empathy, equality, democracy, and innovation.
 
-This blog will not be an attempt to define decolonization or to educate readers in post-colonial theory, intersectionality, or white supremacy.
-Such topics require reading, discussion and introspection and would detract too much from the main point of writing about Statistics.
-As a first resource, a reading list curated by [decolonization.org](http://decolonization.org/index.php/des) is available [here](https://decolonization.wordpress.com/decolonization-readings/) (especially check out the online resources near the bottom). 
-Also, an archive of discussions and writings from the #RhodesMustFall Campaign at the University of Cape Town is available [here](http://www.jwtc.org.za/the_salon/volume_9.htm) and contains some of the foremost thinking on decolonization in a Southern African context.
+However, I realize that my optimistic vision of the future can seem naive given the surveillance capitalistic reality of modern day Silicon valley.
+Similarly, as a cis-gendered, middle-class, white, heterosexual man, I was not required to engage on the intersections between my privilege and others' oppression until adulthood.
 
-Over the past years studying Statistics, I have noticed that the discipline seems to think itself immune from engaging on these types inclusivity issues because as a science it is "objective." 
-In fact, the history of Statistics is far from ethically neutral. 
-Similarly, Statistical techniques and algorithms are currently being used in equally dubious ways, perhaps because users are not taught to think critically about their position in the world, or the history of the problems they are trying to solve.
-This blog is an attempt to fill a gap in the decolonization discussion, as it relates to Statistical Sciences.
+Now, having spent many hours discussing these facts and educating myself about our deeply unjust and unequal world, I also believe that technology and data can and will play an integral in righting these generations of wrongs.
+I see our generation's struggle as a power struggle, working to undo complex systems of oppression, inequality and unsustainable practices which dominate nearly every aspect of our lives.
 
-### More Information
-
-I am currently finishing my Honours degree in Statistical Sciences at the University of Cape Town. 
-I am passionate about Mathematical Statistics, Data Visualization and Data Journalism.
-Link to my [CV](https://Njoselson.github.io/pdfs/cv.pdf).
+I know my optimistic vision will not be realized without conscious work and reflection by people inside and outside the tech industry. 
+This blog is a collection of my thoughts and self-education research on these topics, both for myself and anyone who wants to participate and learn.
 
 ### Contact me
 
-Please get in touch either over email, facebook or twitter via the links at the bottom.
+Please get in touch either over email, via the link at the bottom.
+
+Link to my [CV](https://Njoselson.github.io/pdfs/cv.pdf).
