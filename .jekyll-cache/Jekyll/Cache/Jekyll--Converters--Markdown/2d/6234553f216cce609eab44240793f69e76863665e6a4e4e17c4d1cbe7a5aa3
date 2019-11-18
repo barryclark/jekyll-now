@@ -1,0 +1,92 @@
+I"<p>On continue à coder et tester une navigation accessible sur ce blog.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>refactoriser le header pour avoir un code plus maintenable et lisible</li>
+  <li>transformer le mixin “mobile” en mixin “desktop” pour coder mobile first</li>
+  <li>ajouter un lien d’accès rapide au contenu</li>
+  <li>tester le rendu du fil d’ariane, du menu et du lien d’accès rapide sur Talkback et Voiceover</li>
+</ul>
+
+<h2 id="aperçu-du-code">Aperçu du code</h2>
+<h3 id="lien-daccès-rapide-au-contenu">Lien d’accès rapide au contenu</h3>
+<p>Voici un aperçu du code ajouté pour afficher un lien d’accès rapide au contenu.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;header role="banner" class="header"&gt;
+  &lt;div class="header__info"&gt;
+    &lt;a class="skip-link" href="#content"&gt;Aller au contenu&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;nav class="header__nav" role="navigation"&gt;...&lt;/nav&gt;
+  &lt;/header&gt;
+</code></pre></div></div>
+
+<p>Ainsi que l’ancre vers laquelle ce lien renvoie :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;main id="main" role="main" class="container"&gt;
+  &lt;a id="content" tabindex="-1"&gt;&lt;/a&gt;
+&lt;/main&gt;
+</code></pre></div></div>
+
+<p>J’ai ensuite stylisé le lien de manière à ne le rendre visible qu’à la prise de focus, par défaut il est masqué.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.skip-link {
+  background: #fff;
+  color: $blue;
+  display: inline-block;
+  font-size: 12px;
+  left: -99999px;
+  position: absolute;
+  top: 5px;
+  z-index: 100;
+
+  &amp;:focus {
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include desktop {
+      left: 0;
+      transform: none;
+    }
+  }
+}
+</code></pre></div></div>
+
+<p>Je me suis basée sur la notice d’Accedeweb, <a href="https://www.accede-web.com/notices/html-css-javascript/12-navigation-clavier/12-2-liens-evitement/">Mettre en place des liens d’évitement</a>, pour créer le code.</p>
+
+<h3 id="modification-du-fil-dariane">Modification du fil d’Ariane</h3>
+<p>J’ai modifié le symbole &gt; avec le code HTML correspondant <code class="highlighter-rouge">&amp;gt;</code> et ajouté l’attribut <code class="highlighter-rouge">aria-current="page"</code> pour indiquer à l’utilisateur.rice la page courante.</p>
+
+<h2 id="tests">Tests</h2>
+<h3 id="avec-voiceover">Avec Voiceover</h3>
+<p><em>Test effectué sur un Iphone 5c, version IOS 10.3.3 avec Safari 10</em></p>
+
+<ul>
+  <li>
+    <p>le lien d’accès rapide est bien détecté et vocalisé pour accéder directement au contenu principal. Il apparait visuellement lorsqu’on navigue en balayant à droite.</p>
+  </li>
+  <li>
+    <p>les items du menu de navigation principal sont bien détectés comme des liens et le <code class="highlighter-rouge">title</code> indiquant la page active est vocalisé</p>
+  </li>
+  <li>
+    <p>dans le fil d’ariane, le symbole &gt; est vocalisé avec “supérieur à” et la page active indiquée normalement par l’attribut <code class="highlighter-rouge">aria-current</code> n’est pas détectée</p>
+  </li>
+</ul>
+
+<h3 id="avec-talkback">Avec Talkback</h3>
+<p><em>Test effectué sur un téléphone Androïd, version Androïd 8.1.0 avec Firefox 68.2.1</em></p>
+
+<ul>
+  <li>
+    <p>le lien d’accès rapide est bien détecté et vocalisé pour accéder directement au contenu principal mais contrairement à VoiceOver il n’apparaît pas visuellement. Il semble également que ce lien ne soit détecté qu’une fois au chargement de la page, il est impossible de retomber dessus en naviguant dans la page. L’ancre implémentée dans la balise <code class="highlighter-rouge">&lt;main&gt;</code> est vocalisée par “Lien”, ce qui n’est pas le cas dans Voiceover.</p>
+  </li>
+  <li>
+    <p>les items du menu de navigation principal ne sont pas signalés comme des liens et le <code class="highlighter-rouge">title</code> indiquant la page active n’est pas vocalisé</p>
+  </li>
+  <li>
+    <p>dans le fil d’ariane, le symbole &gt; est vocalisé avec “chevron droit” et la page active indiquée normalement par l’attribut <code class="highlighter-rouge">aria-current</code> n’est pas détectée.</p>
+  </li>
+</ul>
+
+<p>##</p>
+:ET
