@@ -1,0 +1,73 @@
+I".<p>Appréhender le cadre réglementaire de l’accessibilité : les normes internationales</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire les <a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/fr">Principes d’accessibilité du W3C</a></li>
+  <li>relire le chapitre “Standards et méthodes d’évaluation de l’accessibilité” extrait de Qualité Web - La référence des professionnels du web</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+
+<h3 id="les-standards-du-w3c">Les standards du W3C</h3>
+<p>Le W3C (World Wide Web Consortium) est un organisme international qui développe des standards pour le Web, généralement sous la forme de spécifications techniques. Il comporte différentes branches :</p>
+<ul>
+  <li>internationalisation</li>
+  <li>mobile web initiative</li>
+  <li>web architecture</li>
+  <li>… on peut retrouver les différentes branches et leurs missions <a href="https://www.w3c.fr/a-propos-du-w3c-france/la-mission-du-w3c/">sur cette page</a></li>
+</ul>
+
+<p><strong>La branche dédiée à l’accessibilité se nomme WAI : Web Accessibility Initiative</strong>. Cette branche a produit plusieurs standards dédiés à différents composants :</p>
+<ul>
+  <li>Recommandations d’accessibilité des contenus web (WCAG)</li>
+  <li>Recommandations d’accessibilité des agents utilisateurs (UAAG)</li>
+  <li>Recommandations d’accessibilité des outils de production de contenu (ATAG)</li>
+  <li>Spécifications pour les applications internet riches accessibles (WAI-ARIA)</li>
+</ul>
+
+<p>Les <strong>contenus web</strong> correspondent à tout ce qui compose un site web (texte, images, formulaires, code, script…).</p>
+
+<p>Les <strong>agents utilisateurs</strong> sont les logiciels que l’on utilise pour accéder aux contenus web (navigateurs de bureau, navigateurs mobile, plug-ins, technologies d’assistance…).</p>
+
+<p>Les <strong>outils de production de contenu</strong> font référence aux logiciels et services qui permettent de produire des contenus web (éditeurs de code, CMS…).</p>
+
+<p>Les <strong>composants d’interface riches</strong> se sont largement développés au cours des dernières années pour permettre toujours plus d’interactivité avec l’utilisateur (carrousels, calendriers, diaporamas…). Ils reposent sur d’autres technologies web que le HTML, par exemple l’Ajax ou le Javascript. Le standard ARIA vise à rendre ces composants accessibles.</p>
+
+<h3 id="les-4-principes-des-wcag">Les 4 principes des WCAG</h3>
+
+<p>Les WCAG 2.1 (publiées le 5 juin 2018) comportent <strong>12 directives principales</strong> déclinées selon 4 principes fondamentaux :</p>
+<ul>
+  <li>des contenus <strong>perceptibles</strong></li>
+  <li>des contenus <strong>utilisables</strong></li>
+  <li>des contenus <strong>compréhensibles</strong></li>
+  <li>des contenus <strong>robustes</strong></li>
+</ul>
+
+<p>Chacune des 12 directives se décomposent en un ou plusieurs “critères de succes”  de niveau A, AA ou AAA. Ce sont ces niveaux qui permettent d’évaluer l’accessibilité d’un site.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Niveau</th>
+      <th>Objectif</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>Niveau d’accessibilité minimal pouvant s’appliquer à toutes les ressources web</td>
+    </tr>
+    <tr>
+      <td>AA</td>
+      <td>Niveau d’accessibilité pouvant s’appliquer à toutes les ressources web</td>
+    </tr>
+    <tr>
+      <td>AAA</td>
+      <td>Niveau d’accessibilité ne s’appliquant pas à toute les ressources web</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Note : il n’est pas recommandé de se fixer le niveau AAA comme objectif à l’échelle de sites entiers car il n’est pas possible de satisfaire à tous les critères de succès du niveau AAA pour certains contenus.</em></p>
+
+:ET

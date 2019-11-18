@@ -1,0 +1,50 @@
+I"�<p>Tenter de définir l’accessibilité numérique et de déterminer à qui elle peut bénéficier.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’<a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/fr#what">Introduction à l’accessibilité web du W3C</a></li>
+  <li>lire l’article <a href="https://developer.mozilla.org/fr/docs/Apprendre/a11y/What_is_accessibility">Qu’est-ce que l’accessibilité ?</a> de Mozilla</li>
+  <li>regarder la vidéo <a href="https://www.youtube.com/watch?v=3f31oufqFSM">Web Accessibility Perspectives</a></li>
+  <li>lire <a href="https://www.w3.org/WAI/people-use-web/user-stories/fr">des histoires d’utilisateurs du web sur le site du W3C</a></li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+
+<h3 id="quest-ce-que-laccessibilité-web-">Qu’est-ce que l’accessibilité web ?</h3>
+<p>Selon la définition du W3C :</p>
+<blockquote>
+  <p>L’accessibilité du web signifie que les sites web, les outils et les technologies sont conçus et développés de façon à ce que les personnes handicapées puissent les utiliser.</p>
+</blockquote>
+
+<p>Cette utilisation implique de pouvoir :</p>
+<ul>
+  <li>percevoir</li>
+  <li>comprendre</li>
+  <li>naviguer</li>
+  <li>interagir</li>
+  <li>contribuer</li>
+</ul>
+
+<p><strong>L’accessibilité du web concerne tous les handicaps qui affectent l’accès au Web</strong>, ce qui inclut les handicaps visuels, auditifs, physiques, de parole, cognitifs et neurologiques.</p>
+
+<h3 id="laccessibilité-pour-qui-">L’accessibilité, pour qui ?</h3>
+
+<p>L’accessibilité numérique est nécessaire pour certaines personnes mais <strong>elle est utile à tous et à toutes</strong>. Rendre son site accessible, c’est en effet d’abord adopter des bonnes pratiques et respecter des standards qui profiteront à tous.</p>
+
+<ul>
+  <li>le balisage sémantique est très utiles pour les lecteurs d’écran mais est également plus rapide à charger (utile pour les connexions lentes par exemple) et permet un meilleur référencement (un SEO optimisé améliore l’audience d’un site).</li>
+  <li>le sous-titrage vidéo est indispensable pour les personnes sourdes ou malentendantes mais très utile aussi pour des personnes regardant des vidéos dans des environnements bruyants.</li>
+  <li>construire des pages cohérentes - la navigation, l’en-tête, le pied de page et le contenu principal se trouvent toujours aux mêmes endroits - facilitent l’utilisation d’un site et limite la frustration de l’utilisateur.</li>
+</ul>
+
+<p>L’accessibilité numérique se met donc en oeuvre sur l’ensemble d’un site ou d’une application et <strong>concerne toutes les étapes de la création du projet</strong>. Il s’agit donc de prévoir en amont son implémentation :</p>
+<ul>
+  <li>avoir un budget dédié</li>
+  <li>indiquer le niveau d’exigence dans le cahier des charges</li>
+  <li>former les acteurs du projet
+L’accessibilité n’est pas un patch que l’on rajoute juste avant le lancement du projet, elle doit être intégrée dès la phase de conception, puis de design et développement technique.
+Des tests d’accessibilité doivent être réalisés et ce le plus tôt possible, au moyen de tests automatisés ou avec des groupes d’utilisateurs.</li>
+</ul>
+
+<p>L’accessibilité numérique est encadrée par des normes internationales et soumise à obligation légale dans certains pays.</p>
+:ET
