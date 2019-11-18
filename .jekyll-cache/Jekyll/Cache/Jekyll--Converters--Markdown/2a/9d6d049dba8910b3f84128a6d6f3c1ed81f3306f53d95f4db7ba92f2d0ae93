@@ -1,0 +1,145 @@
+I"�<p>On continue à coder et tester une navigation accessible sur ce blog.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>refactoriser le header pour avoir un code plus maintenable et lisible</li>
+  <li>transformer le mixin “mobile” en mixin “desktop” pour coder mobile first</li>
+  <li>ajouter un lien d’accès rapide au contenu</li>
+  <li>tester le rendu du fil d’ariane, du menu et du lien d’accès rapide sur Talkback et Voiceover</li>
+</ul>
+
+<h2 id="aperçu-du-code">Aperçu du code</h2>
+<p>Voici un aperçu du code ajouté pour afficher un lien d’accès rapide au contenu.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;header role="banner" class="header"&gt;
+  &lt;div class="header__info"&gt;
+    &lt;a class="skip-link" href="#content"&gt;Aller au contenu&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;nav class="header__nav" role="navigation"&gt;...&lt;/nav&gt;
+  &lt;/header&gt;
+</code></pre></div></div>
+
+<p>Ainsi que l’ancre vers laquelle ce lien renvoie :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;main id="main" role="main" class="container"&gt;
+  &lt;a id="content" tabindex="-1"&gt;&lt;/a&gt;
+  &lt;article class="post"&gt;
+  &lt;header&gt;
+    &lt;p class="breadcrumbs"&gt;
+      Vous êtes à : &lt;a href="/"&gt;Blog&lt;/a&gt; &amp;gt;
+      &lt;span aria-current="page"&gt;Jour 13 - Implémenter une navigation accessible (partie 1)&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;h1&gt;Jour 13 - Implémenter une navigation accessible (partie 1)&lt;/h1&gt;
+  &lt;/header&gt;
+
+  &lt;div class="entry"&gt;
+    &lt;p&gt;Après la théorie sur la navigation accessible, place à la pratique.&lt;/p&gt;
+
+&lt;h2 id="ce-que-jai-fait-"&gt;Ce que j’ai fait :&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;modifier le markup existant de la navigation&lt;/li&gt;
+  &lt;li&gt;ajouter un fil d’ariane&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="aperçu-du-code"&gt;Aperçu du code&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Pour rappel, j’utilise actuellement un template tout prêt, &lt;a href="https://github.com/barryclark/jekyll-now"&gt;jekyll-now&lt;/a&gt;, permettant de publier sur github. Au cours de ces 100 jours, je vais me servir de template comme un petit laboratoire destiné à tester ce que j’apprends sur l’accessibilité.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Le code initial de la navigation se présentait ainsi :&lt;/p&gt;
+
+&lt;div class="highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&amp;lt;nav role="navigation"&amp;gt;
+  &amp;lt;a href="/"&amp;gt;Blog&amp;lt;/a&amp;gt;
+  &amp;lt;a href="/about"&amp;gt;A propos&amp;lt;/a&amp;gt;
+&amp;lt;/nav&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Après modification, voici le nouveau code :&lt;/p&gt;
+
+&lt;div class="highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&amp;lt;nav class="masthead__nav" role="navigation"&amp;gt;
+  &amp;lt;ul class="main-nav"&amp;gt;
+    
+      &amp;lt;li class="main-nav__item"&amp;gt;
+        &amp;lt;a class="main-nav__link" href="/"&amp;gt;Blog&amp;lt;/a&amp;gt;
+      &amp;lt;/li&amp;gt;
+    
+    
+    &amp;lt;li class="main-nav__item"&amp;gt;
+      &amp;lt;a class="main-nav__link" href="/about"&amp;gt;A propos&amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+    
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/nav&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Les modifications incluent :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;l’ajout des balises &lt;code class="highlighter-rouge"&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/code&gt; pour structurer la navigation sous forme de liste&lt;/li&gt;
+  &lt;li&gt;l’ajout de conditions générant une class CSS et une balise title pour indiquer la page en cours de consultation&lt;/li&gt;
+  &lt;li&gt;l’emploi de la syntaxe &lt;a href="http://getbem.com/"&gt;BEM (Block Element Modifier)&lt;/a&gt; pour nommer les class CSS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J’ai également ajouté un fil d’ariane sur header de chaque article. En effet, l’item “Blog” du menu n’étant actif que lorsque l’on se trouve sur la page listant tous les articles du blog, j’ai choisi d’ajouter un fil d’ariane pour donner une indication de localisation supplémentaire lorsque l’on se trouve sur un article.&lt;/p&gt;
+
+&lt;div class="highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&amp;lt;header&amp;gt;
+  &amp;lt;p class="breadcrumbs"&amp;gt;
+    Vous êtes à : &amp;lt;a href="/"&amp;gt;Blog&amp;lt;/a&amp;gt; &amp;gt; Jour 13 - Implémenter une navigation accessible (partie 1)
+  &amp;lt;/p&amp;gt;
+  &amp;lt;h1&amp;gt;Jour 13 - Implémenter une navigation accessible (partie 1)&amp;lt;/h1&amp;gt;
+&amp;lt;/header&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id="a-faire"&gt;A faire&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;ajouter des liens d’évitement&lt;/li&gt;
+  &lt;li&gt;tester avec un lecteur d’écran&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+  
+  &lt;footer&gt;
+    &lt;div class="date"&gt;
+      Ecrit le November 16, 2019
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+&lt;/article&gt;
+
+&lt;/main&gt;
+</code></pre></div></div>
+
+<p>J’ai ensuite stylisé le lien de manière à ne le rendre visible qu’à la prise de focus, par défaut il est masqué.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.skip-link {
+  background: #fff;
+  color: $blue;
+  display: inline-block;
+  font-size: 12px;
+  left: -99999px;
+  position: absolute;
+  top: 5px;
+  z-index: 100;
+
+  &amp;:focus {
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include desktop {
+      left: 0;
+      transform: none;
+    }
+  }
+}
+</code></pre></div></div>
+
+<p>Je me suis basée sur la notice d’Accedeweb, <a href="https://www.accede-web.com/notices/html-css-javascript/12-navigation-clavier/12-2-liens-evitement/">Mettre en place des liens d’évitement</a> pour créer le code.</p>
+
+<h2 id="tests">Tests</h2>
+<ul>
+  <li>
+    <p>modification du symbole &gt; avec le code HTML correspondant <code class="highlighter-rouge">&amp;gt;</code> car Talkback vocalisait “Plus grand que”. L’utilisation du code HTML vocalise “Chevron droit”, ce que je trouvais plus logique et compréhensible.</p>
+  </li>
+  <li>
+    <p>j’ai ajouté l’attribut <code class="highlighter-rouge">aria-current="page"</code> sur le fil d’Ariane pour indiquer à l’utilisateur.rice la page active, mais il n’est malheureusement pas supporté par Talkback.</p>
+  </li>
+</ul>
+:ET
