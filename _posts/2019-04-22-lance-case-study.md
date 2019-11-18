@@ -32,6 +32,6 @@ The backend pipeline consists of AWS Lambda functions written in Golang and sits
 
 We made use of AWS developer tools such as CodeCommit, CodeBuild, CodeDeploy and CodePipeline. This allowed us to host our entire infrastructure and code within the same environment, reducing the need to configure across different hosting platforms.
 
-###Results and Benefits
+### Results and Benefits
 
 The new platform was launched in March 2019 and gives Lance the flexibility to amend and update their new digital tax risk offering whenever required. We helped Lance build and scale their business and gave them limitless opportunities to grow with a dynamic new platform. Additionally, the serverless platform ensures that at small scale, the costs are very small for the client.
