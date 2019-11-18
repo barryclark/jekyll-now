@@ -253,6 +253,20 @@ img {
   }
 }
 
+.skip-link {
+   display: inline-block;
+   color: $blue;
+   background: #fff;
+   padding: 5px;
+   position: absolute;
+   left: -99999px;
+   z-index: 100;
+   
+   &:focus {
+     left: 0;
+}
+}
+
 //
 // .main
 //
