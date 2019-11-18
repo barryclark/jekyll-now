@@ -17,7 +17,7 @@ I have a couple cases at work where I generate reports that fit nicely into data
 
 This allows you to pass in a string of dataframe column names with some operators and generate the Excel-style formula string.
 
-As a bonus I started to implement something to handle the Excel builtins like SUM() where you have a set of comma separated arguments. Super buggy but that's half the fun of 'owning' a package I think.
+As a bonus I started to implement something to handle the Excel built-ins like SUM() where you have a set of comma separated arguments. Super buggy but that's half the fun of 'owning' a package I think.
 
 Anywho, check it out!
 

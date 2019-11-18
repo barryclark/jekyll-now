@@ -11,13 +11,13 @@ We'll do this in Python for readability and speed in writing, not speed in execu
 
 ### Planning the Script
 
-Before you get to coding, think about what you want to do. 
+Before you get to coding, think about what you want to do.
 
 First we'll generate a list of possible characters to test, then generate each combination of those characters. Two functions should do the trick.
 
 Eventually we could add command line arguments but I just needed this for one file, so feel free to extend this as you see fit.
 
-### Generating the Characters 
+### Generating the Characters
 
 For this first function we'll take a list of parameters and return the list of characters they represent. We could just take a master list and loop through all of the possible characters but if you have an idea of what the password is you can knock a couple loops off the process.
 
@@ -103,7 +103,7 @@ Full code:
 ```python
 import pikepdf
 from datetime import datetime
-import itertools 
+import itertools
 
 def pdf_unlocker(fname, params):
     chars = get_char_list(params)
@@ -129,7 +129,7 @@ def get_char_list(params):
         chars += special_chars
 
     return chars
-        
+
 def break_pdf(fname, chars):
     print(f'Starting at {datetime.now()}')
     for size in itertools.count(1):

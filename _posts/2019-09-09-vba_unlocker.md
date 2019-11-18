@@ -110,7 +110,7 @@ The ZipFile class has a method called ```namelist()``` which generates a list of
 
 Now the fun part of the script. Since the **vbaProject.bin** file can be read in as a byte string, you can decode it to print it out and modify the contents like a normal Python string.
 
-First, define a new function to modfiy the values:
+First, define a new function to modify the values:
 
 ```python
 def replace_val(s, key, new_val):

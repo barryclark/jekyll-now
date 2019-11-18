@@ -10,21 +10,18 @@ My entire career has revolved around manufacturing; I've made things ranging fro
 
 I've recently started making videos for Real Python, you can check out my profile [here](https://realpython.com/team/jtatusko/)!
 
-Python, SQL, VBA. 
+Python, SQL, VBA.
 
 <br>
 
 <hr style="width:30%; margin-left:0;">
 
-
-
-Located in Sterling, VA
+Located in Leesburg, VA
 
 [tatuskojc@gmail.com](mailto:tatuskojc@gmail.com)
 
 <br>
 <br>
 <hr>
-
 
 *Hosted on GitHub, Powered by Jekyll, Forked from jekyll-now by barryclark*
