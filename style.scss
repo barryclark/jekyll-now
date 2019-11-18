@@ -241,15 +241,15 @@ img {
   }
 
   &__link {
-    color: $darkGray;
+    color: $blue;
     font-family: $helveticaNeue;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include desktop {
-      color: $blue;
-      font-size: 16px;
+      color: $darkGray;
+      font-size: 18px;
     }
   }
 }
