@@ -1,12 +1,13 @@
 ---
 layout: page
-title: OpenJDK Mailing Lists - subset!
+title: OpenJDK Mailing Lists
 permalink: /ml/
 redirect_from:
   - /ML/
   - /MLs/
   - /mls/
 ---
+[All](http://mail.openjdk.java.net/mailman/listinfo)
 
 [gb-discuss](https://mail.openjdk.java.net/pipermail/gb-discuss/) 
 
@@ -17,6 +18,8 @@ redirect_from:
 [adoption-discuss](https://mail.openjdk.java.net/pipermail/adoption-discuss/)
 
 [jdk-updates-dev](https://mail.openjdk.java.net/pipermail/jdk-updates-dev)
+
+[core-libs-dev](https://mail.openjdk.java.net/pipermail/core-libs-dev/)
 
 [jdk8u-dev](https://mail.openjdk.java.net/pipermail/jdk8u-dev/)
 
