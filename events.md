@@ -7,8 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2019
 
-November 5-8: O'Reilly Software Architecture, Berlin
-* [**Keynote**](https://conferences.oreilly.com/software-architecture/sa-eu/public/schedule/detail/80425)
 
 November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
 * End User Panel at the Kubernetes Contributor Summit
