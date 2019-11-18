@@ -1,0 +1,61 @@
+I"�
+<p>Après la théorie sur la navigation accessible, place à la pratique.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>modifier le markup existant de la navigation</li>
+  <li>ajouter un fil d’ariane</li>
+</ul>
+
+<h2 id="aperçu-du-code">Aperçu du code</h2>
+<p><em>Pour rappel, j’utilise actuellement un template tout prêt, <a href="https://github.com/barryclark/jekyll-now">jekyll-now</a>, permettant de publier sur github. Au cours de ces 100 jours, je vais me servir de template comme un petit laboratoire destiné à tester ce que j’apprends sur l’accessibilité.</em></p>
+
+<p>Le code initial de la navigation se présentait ainsi :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;nav role="navigation"&gt;
+  &lt;a href="/"&gt;Blog&lt;/a&gt;
+  &lt;a href="/about"&gt;A propos&lt;/a&gt;
+&lt;/nav&gt;
+</code></pre></div></div>
+
+<p>Après modification, voici le nouveau code :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;nav class="masthead__nav" role="navigation"&gt;
+  &lt;ul class="main-nav"&gt;
+    
+      &lt;li class="main-nav__item"&gt;
+        &lt;a class="main-nav__link" href="/"&gt;Blog&lt;/a&gt;
+      &lt;/li&gt;
+    
+    
+    &lt;li class="main-nav__item"&gt;
+      &lt;a class="main-nav__link" href="/about"&gt;A propos&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre></div></div>
+<p>Les modifications incluent :</p>
+<ul>
+  <li>l’ajout des balises <code class="highlighter-rouge">&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code> pour structurer la navigation sous forme de liste</li>
+  <li>l’ajout de conditions générant une class CSS et une balise title pour indiquer la page en cours de consultation</li>
+  <li>l’emploi de la syntaxe <a href="http://getbem.com/">BEM (Block Element Modifier)</a> pour nommer les class CSS</li>
+</ul>
+
+<p>J’ai également ajouté un fil d’ariane sur header de chaque article. En effet, l’item “Blog” du menu n’étant actif que lorsque l’on se trouve sur la page listant tous les articles du blog, j’ai choisi d’ajouter un fil d’ariane pour donner une indication de localisation supplémentaire lorsque l’on se trouve sur un article.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;header&gt;
+  &lt;p class="breadcrumbs"&gt;
+    Vous êtes à : &lt;a href="/"&gt;Blog&lt;/a&gt; &gt; Jour 13 - Implémenter une navigation accessible (partie 1)
+  &lt;/p&gt;
+  &lt;h1&gt;Jour 13 - Implémenter une navigation accessible (partie 1)&lt;/h1&gt;
+&lt;/header&gt;
+</code></pre></div></div>
+
+<h2 id="a-faire">A faire</h2>
+<ul>
+  <li>ajouter des liens d’évitement</li>
+  <li>tester avec un lecteur d’écran</li>
+</ul>
+
+:ET

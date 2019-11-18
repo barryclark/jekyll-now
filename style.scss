@@ -35,12 +35,12 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
 
-  line-height: 1.7;
+  line-height: 1.4;
   margin: 1em 0 15px;
   padding: 0;
 
-  @include mobile {
-    line-height: 1.4;
+  @include desktop {
+    line-height: 1.7;
   }
 }
 
@@ -141,49 +141,49 @@ img {
     clear: both;
 }
 
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
+// LAYOUT / SECTIONS
 
-//
-// .masthead
-//
+// Header
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-  padding-top: 20px;
-}
-
-.masthead {
-  padding: 20px 0;
+.header {
   border-bottom: 1px solid $lightGray;
+  margin: 0 auto 50px;
+  max-width: $wrapper;
+  position: relative; // to position skip-link
+  text-align: center;
 
-  @include mobile {
-    text-align: center;
+  @include desktop {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
   }
-  
+
+  &__info {
+    padding: 20px 0;
+  }
+
   &__nav {
-    float: right;
-    margin-top: 23px; // @TODO: Vertically middle align
-	  
-    @include mobile {
-      float: none;
-      margin-top: 9px;
-      display: block;
+    margin-top: 10px;
+
+    @include desktop {
+      margin-top: 0;
     }
   }
 }
 
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+// Site avatar and info
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+.site-avatar {
+  display: block;
+  height: 70px;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 70px;
+
+  @include desktop {
+    display: inline-block;
+    margin: 15px;
   }
 
   img {
@@ -192,48 +192,49 @@ img {
 }
 
 .site-info {
-  float: left;
+  margin: 0 auto;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+  @include desktop {
+    display: inline-block;
+    vertical-align: middle;
   }
-}
 
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
+  &__name {
+    margin: 0;
+    color: $darkGray;
+    cursor: pointer;
+    font-family: $helveticaNeue;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
 
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
+  &__description {
+    color: $gray;
+    font-size: 16px;
     margin: 3px 0;
+
+    @include desktop {
+      margin: -5px 0 0 0;
+    }
   }
 }
+
+// Site nav
 
 .main-nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   &__item {
     display: inline-block;
     margin-left: 20px;
-    
-    @include mobile {
+
+    @include desktop {
       margin: 0 10px;
     }
-	  
+
     &--active {
       border-bottom: 2px solid $blue;
     }
@@ -245,31 +246,39 @@ img {
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 1px;
-	  
-    @include mobile {
-     color: $blue;
-     font-size: 16px;
+
+    @include desktop {
+      color: $blue;
+      font-size: 16px;
     }
   }
 }
 
+// Skip link
+
 .skip-link {
-   display: inline-block;
-   color: $blue;
-   font-size: 12px;
-   background: #fff;
-   padding: 5px;
-   position: absolute;
-   left: -99999px;
-   z-index: 100;
-   
-   &:focus {
-     left: 0;
-}
+  background: #fff;
+  color: $blue;
+  display: inline-block;
+  font-size: 12px;
+  left: -99999px;
+  position: absolute;
+  top: 5px;
+  z-index: 100;
+
+  &:focus {
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include desktop {
+      left: 0;
+      transform: none;
+    }
+  }
 }
 
 //
-// .main
+// Main content
 //
 
 .breadcrumbs {

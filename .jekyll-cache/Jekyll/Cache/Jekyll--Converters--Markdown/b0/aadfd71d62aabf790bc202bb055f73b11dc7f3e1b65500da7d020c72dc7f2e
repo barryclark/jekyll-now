@@ -1,0 +1,58 @@
+I"�<p>Appréhender le cadre réglementaire de l’accessibilité : les normes françaises</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire les articles “Loi accessibilité numérique : où en est-on ?” <a href="https://koena.net/loi-accessibilite-numerique/">Partie 1</a> et <a href="https://koena.net/loi-accessibilite-numerique-2/">Partie 2</a> de Koena</li>
+  <li>lire <a href="https://www.numerique.gouv.fr/espace-presse/accessibilite-numerique-publication-quatrieme-version-du-rgaa/">l’article de la DINUM relatif à la publication de la quatrième version du RGAA</a></li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+
+<h3 id="les-méthodes-dapplication-des-wcag">Les méthodes d’application des WCAG</h3>
+<p>Les directives des WCAG sont conçues comme des spécifications abstraites, indépendantes des technologies auxquelles elles s’appliquent.</p>
+
+<p><em>Exemple : Tout contenu non textuel doit aussi être disponible en texte.</em></p>
+
+<p>Il s’agit donc pour les images de posséder une alternative écrite. Cette règle s’applique tout aussi bien à des images d’un document au format PDF que sur un site web. Pour pouvoir appliquer cette règle générique, il est donc nécessaire de disposer d’une méthodologie technique expliquant comment mettre en oeuvre la directive pour chaque technologie employée.</p>
+
+<p><em>Exemple : L’attribut alt en HTML permet de fournir une alternative textuelle à une image.</em></p>
+
+<p>C’est pourquoi ont été développées des méthodes d’application à l’échelle nationale ou à une échelle géographique plus large :</p>
+<ul>
+  <li>en France, le RGAA, <strong>Référentiel Général d’Amélioration de l’Accessibilité</strong> (anciennement Référentiel Général d’Accessibilité des Administrations) est un référentiel public mis en oeuvre depuis 2009 par la DINSIC, dorénavant nommée <a href="https://www.numerique.gouv.fr/">DINUM</a></li>
+  <li><strong>Accessiweb</strong> (France) et <strong>Anysurfer</strong> (Belgique) sont des référentiels produits par des organismes privés</li>
+  <li>la <strong>“Méthodologie unifiée d’évaluation de l’accessibilité du web”</strong> (UWEM) est un référentiel européen</li>
+</ul>
+
+<p>La déclinaison au niveau national s’explique par le fait qu’il était nécessaire de transposer un standard international (les WCAG) sous une forme compatible avec les règles de droit public.</p>
+
+<p>Le <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">RGAA v4</a> traduit en français les directives du WCAG et définit une méthodologie pour vérifier la conformité des applications web à ces différents critères.</p>
+
+<h3 id="quelques-dates-clés">Quelques dates clés</h3>
+
+<ul>
+  <li>
+    <p>11 février 2005, <strong>la loi égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées</strong> via l’article 47 impose aux services publics en ligne d’être accessibles aux personnes handicapées, tous handicaps confondus. Cette obligation concerne les services de l’État, des collectivités territoriales et des établissements publics qui en dépendent.</p>
+  </li>
+  <li>
+    <p>2009, la loi de 2005 entre enfin en application par décret, la première version du RGAA est publiée.</p>
+  </li>
+  <li>
+    <p>9 octobre 2016, <strong>la loi pour une République numérique</strong> étend l’obligation d’accessibilité numérique aux entreprises publiques, à certaines entreprises privées (si elles dépassent un certain chiffre d’affaires) et aux organismes délégataires d’une mission de service public. Cette loi oblige également les structures concernées à publier une déclaration de conformité, ainsi qu’un schéma pluriannuel sur 3 ans. En cas de manquement à l’obligation de publication, une amende est prévue, plafonnée à 5000€.</p>
+  </li>
+  <li>
+    <p>26 octobre 2016, <strong>la directive européenne pour l’accessibilité des sites et des applications mobiles du secteur public</strong> fait du niveau double A des WCAG 2.0 le standard minimum pour toute l’Europe.</p>
+  </li>
+</ul>
+
+<p><em>Le calendrier législatif ayant abouti à la sortie quasi concomitante de la loi française et de la loi européenne, il fallait mettre en conformité les textes législatifs français avec les exigences européennes.</em></p>
+
+<ul>
+  <li>
+    <p>7 septembre 2018, <strong>la mise à jour de l’article 47 de la loi de 2005</strong> étend l’obligation d’accessibilité aux personnes morales de droit privé à but non lucratif ayant une mission d’intérêt général et proposant des services essentiels au public ou des services pour les personnes handicapées. Tous les supports numériques sont concernés (sites internet, intranet, extranet, applications mobiles, progiciels, mobilier urbain numérique). Les usagers doivent pouvoir facilement signaler les manquements aux règles d’accessibilité. Les structures concernées risquent jusqu’à 25 000€ d’amende si aucune publication n’est faite.</p>
+  </li>
+  <li>
+    <p>24 juillet 2019, <strong>le décret de la loi accessibilité numérique publiée le 7 septembre 2018</strong> entre en vigueur. Le plafond de 25 000€ d’amende est abaissé à 20 000€.</p>
+  </li>
+</ul>
+:ET

@@ -3,6 +3,9 @@
 // VARIABLES
 //
 
+// Layout
+$wrapper: 740px;
+
 // Colors
 $blue: #4183C4;
 
@@ -20,8 +23,8 @@ $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
+@mixin desktop {
+  @media screen and (min-width: 640px) {
     @content;
   }
 }
