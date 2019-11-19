@@ -8,14 +8,14 @@ title: Blog
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      
+
       <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
 
       <div class="entry">
         {{ post.excerpt | truncatewords:40 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Lire la suite</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" aria-label="Lire la suite de l'article : {{ post.title }}" class="read-more">Lire la suite</a>
     </article>
   {% endfor %}
 </div>

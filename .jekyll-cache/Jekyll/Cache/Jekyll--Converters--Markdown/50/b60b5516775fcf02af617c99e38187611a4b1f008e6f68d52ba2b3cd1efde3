@@ -1,0 +1,40 @@
+I"�	<p>On s’intéresse à l’une des fonctionnalités de base du web, les liens.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>emprunter un Iphone pour réaliser ses tests avec VoiceOver</li>
+  <li>refactoriser le header pour avoir un code plus maintenable et lisible</li>
+  <li>transformer le mixin “mobile” en mixin “desktop” pour coder mobile first</li>
+  <li>ajouter un lien d’accès rapide au contenu</li>
+  <li>tester le rendu du fil d’ariane, du menu et du lien d’accès rapide sur Talkback et Voiceover</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="liens-versus-bouton">Liens versus Bouton</h3>
+<p>Il s’agit d’un rappel mais qu’il n’est pas inutile d’avoir en tête :</p>
+<ul>
+  <li><strong>un lien permet de naviguer</strong>, d’une page à l’autre ou au sein d’une même page</li>
+  <li><strong>un bouton déclenche une action</strong> comme soumettre des informations ou afficher l’élément suivant dans un carrousel</li>
+</ul>
+
+<h3 id="liens-explicites-versus-liens-non-explicites">Liens explicites versus liens non explicites</h3>
+<p>Un lien explicite a un intitulé qui permet à lui seule de comprendre sa destination ou sa fonction :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="https://disic.github.io/guide-integrateur/"&gt;Guide de l'intégrateur RGAA 3&lt;/a&gt;
+</code></pre></div></div>
+
+<p>Les liens “Lire la suite”, “En savoir plus” ou “Cliquer ici” sont en revanche considérés comme non explicites.</p>
+
+<h3 id="compléter-les-liens-non-explicites">Compléter les liens non explicites</h3>
+<p>On peut rendre un lien explicite grâce à l’attribut <code class="highlighter-rouge">aria-label</code> ou grâce à l’attribut <code class="highlighter-rouge">title</code>.</p>
+
+<p>L’attribut choisi doit être ajouté dans la balise <code class="highlighter-rouge">&lt;a&gt;</code> et renseigné sur le modèle : intitulé du lien + informations complémentaires.</p>
+
+<p>Par exemple sur ce blog, les liens “Lire la suite” de chaque article ne sont pas suffisamment explicites :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="" class="read-more"&gt;Lire la suite&lt;/a&gt;
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="" aria-label="Lire la suite de l'article : " class="read-more"&gt;Lire la suite&lt;/a&gt;
+</code></pre></div></div>
+:ET
