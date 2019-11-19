@@ -3,7 +3,7 @@ layout: post
 title: "Presenting the CNCF End User Awards (China) to DiDi"
 description: "Cheryl Hung, Director of Ecosystem at the CNCF, presents the CNCF End User Awards China 2019 to DiDi."
 location: Shanghai, China
-image: /images/2019-06-24-end-user-awards-kubecon-cloudnativecon-shanghai.jpg
+image: https://mmbiz.qpic.cn/mmbiz_jpg/GpkQxibjhkJyFee9mp3CQIJDARRtBEoDzf1fvgJWliajnhiclGPwaVibIm7icHKtYdtUf6UFf7U3Gm8Ho2I12PlAZXQ/640?wx_fmt=jpeg
 hide_image: true
 video: https://www.youtube.com/embed/eZd0ksRPw0k
 slides: //www.slideshare.net/slideshow/embed_code/key/aoEmaKbbGg1h8u
