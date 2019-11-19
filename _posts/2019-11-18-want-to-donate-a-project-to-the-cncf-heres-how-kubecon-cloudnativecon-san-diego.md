@@ -15,4 +15,4 @@ tags:
 
 * The nine members of the Technical Oversight Committee vote on whether to accept a new project.
 
-* [The Github project board](https://github.com/cncf/toc/projects/4) lists upcoming projects.
+* [The Github project board](https://github.com/cncf/toc/projects/4) lists upcoming projects. If you're interested in volunteering, check out the [CNCF SIGs](https://github.com/cncf/toc/tree/master/sigs).
