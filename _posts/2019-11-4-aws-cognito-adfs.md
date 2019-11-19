@@ -124,6 +124,17 @@ So, fields that are stored in AD are mapped via the Relying Party claim rules to
 {:.center}
 ![]( /images/aws-cognito-adfs/cognito_claim_mapping.png){:style="width:100%"}
 
+For the lazy ones among us, here is a copy&paste friendly table
+
+| SAML Attribute | User Pool Attribute |
+|----------------|---------------------|
+|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn|Profile|
+|http://schemas.xmlsoap.org/claims/CommonName|Preffered User Name|
+|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname|Given Name|
+|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname|Family Name|
+|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress|Email|
+
+
 And after that all that is left is to enable this external IdP for one or more of your App clients and your users will be able to authenticate against the external IdP and get a JWT token issued by Cognito containing the claims you have previously configured to be received from ADFS and mapped to Cognito attributes.
 
 {:.center}
