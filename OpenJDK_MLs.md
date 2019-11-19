@@ -9,11 +9,11 @@ redirect_from:
 ---
 [All](http://mail.openjdk.java.net/mailman/listinfo)
 
+[jdk-dev](https://mail.openjdk.java.net/pipermail/jdk-dev/)
+
 [gb-discuss](https://mail.openjdk.java.net/pipermail/gb-discuss/) 
 
 [discuss](https://mail.openjdk.java.net/pipermail//discuss)
-
-[jdk-dev](https://mail.openjdk.java.net/pipermail/jdk-dev/)
 
 [adoption-discuss](https://mail.openjdk.java.net/pipermail/adoption-discuss/)
 
