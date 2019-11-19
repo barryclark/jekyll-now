@@ -126,8 +126,9 @@ So, fields that are stored in AD are mapped via the Relying Party claim rules to
 
 For the lazy ones among us, here is a copy&paste friendly table
 
+{:.table .table-striped}
 | SAML Attribute | User Pool Attribute |
-|----------------|---------------------|
+|:----------------|:---------------------:|
 |http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn|Profile|
 |http://schemas.xmlsoap.org/claims/CommonName|Preffered User Name|
 |http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname|Given Name|
