@@ -104,13 +104,15 @@ And you can set this in the RP Properties under the Endpoints tab as seen in the
 
 Once you have defined all the claim mappings on ADFS's side, it is time to connect the dots on Amazon's side.
 
-First thing, you need to retrieve the SAML Federation metadata of ADFS. This is readily available at a well know URL:
+First thing, you need to retrieve the SAML Federation metadata of your ADFS. This is readily available at a well know URL:
 
 ```sh
 https://<adfs_url>/federationmetadata/2007-06/federationmetadata.xml
 ```
 
-Download this file and use it to configure a SAML Identity Provider (IdP) in your Cognito User Pool. You can also provide the URL directly, although I'm not sure how often Cognito refreshes the metadata information, if at all, so when your external partner updates an SSL certificate used for signing SAML requests for instance, you might need to manually trigger a refresh on Cognito's side anyway.
+Download this file and use it to configure a SAML Identity Provider (IdP) in your Cognito User Pool.
+
+The **even better** alternative, if the metadata URL is public you can also provide the URL directly. This is better because Cognito refreshes the metadata every 6 hours or before the metadata expires so you don't have to manually refresh the metadata xml every time the ADFS's SSL certificates expire or any other change occurs on the ADFS side that would impact the federation auth.
 
 {:.center}
 ![]( /images/aws-cognito-adfs/cognito_saml_idp.png){:style="width:90%"}
@@ -121,6 +123,18 @@ So, fields that are stored in AD are mapped via the Relying Party claim rules to
 
 {:.center}
 ![]( /images/aws-cognito-adfs/cognito_claim_mapping.png){:style="width:100%"}
+
+For the lazy ones among us, here is a copy&paste friendly table
+
+{:.table .table-striped}
+| SAML Attribute | User Pool Attribute |
+|:----------------|:---------------------:|
+|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn|Profile|
+|http://schemas.xmlsoap.org/claims/CommonName|Preffered User Name|
+|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname|Given Name|
+|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname|Family Name|
+|http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress|Email|
+
 
 And after that all that is left is to enable this external IdP for one or more of your App clients and your users will be able to authenticate against the external IdP and get a JWT token issued by Cognito containing the claims you have previously configured to be received from ADFS and mapped to Cognito attributes.
 
