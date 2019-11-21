@@ -1,0 +1,121 @@
+I"�%<p>Gros travail sur la mise en accessibilité des liens sur le blog.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>modifier le code du blog pour avoir des liens accessibles et en conformité avec les recommandations Opquast</li>
+</ul>
+
+<h2 id="aperçu-du-code">Aperçu du code</h2>
+<h3 id="les-hyperliens-de-même-nature-ont-des-couleurs-des-formes-et-des-comportements-identiques-sur-toutes-les-pages">Les hyperliens de même nature ont des couleurs, des formes et des comportements identiques sur toutes les pages</h3>
+<p>Tous les liens présents dans mes articles sont de couleur bleu par défaut. Les liens du menu de navigation, du header et des titres d’article ont des couleurs spécifiques à leur fonction.</p>
+
+<h3 id="le-survol-ou-lactivation-des-hyperliens-ne-modifie-pas-la-mise-en-page">Le survol ou l’activation des hyperliens ne modifie pas la mise en page</h3>
+<p>Les liens par défaut sont soulignés au survol, les autres liens changent de couleur. C’est une mise en forme simple mais efficace.</p>
+
+<h3 id="des-styles-différents-pour-les-liens-visités-et-non-visités">Des styles différents pour les liens visités et non visités</h3>
+<p>J’ai choisi de changer la couleur des liens visités pour qu’ils soient violet. Il s’agit de la couleur par défaut des liens visités, donc c’est potentiellement un comportement avec lequel les internautes sont familiers.</p>
+
+<h3 id="la-langue-principale-de-la-page-cible-dun-hyperlien-est-identifiable-lorsquelle-diffère-de-celle-de-la-page-dorigine">La langue principale de la page cible d’un hyperlien est identifiable lorsqu’elle diffère de celle de la page d’origine</h3>
+<p>Pour les liens pointant vers une page en anglais par exemple, j’ai ajouté des attributs spécifiques :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- l'emploi de la syntaxe &lt;a href="http://getbem.com/" lang="en" hreflang="en"&gt;BEM (Block Element Modifier)&lt;/a&gt; pour nommer les class CSS
+</code></pre></div></div>
+
+<p>L’attribut <code class="highlighter-rouge">lang="en"</code> signale aux lecteurs d’écran que le contenu du lien est dans une langue différente de la langue principale, ici l’anglais. L’attribut <code class="highlighter-rouge">hreflang="en"</code> indique que la page cible du lien est en anglais.</p>
+
+<p>L’attribut <code class="highlighter-rouge">lang</code> doit être utilisé pour tous les mots différents de la langue principale signalée dans la balise <code class="highlighter-rouge">html</code>.</p>
+
+<h3 id="le-libellé-de-chaque-hyperlien-décrit-sa-fonction-ou-la-nature-du-contenu-vers-lequel-il-pointe">Le libellé de chaque hyperlien décrit sa fonction ou la nature du contenu vers lequel il pointe</h3>
+<p>J’ai dû reprendre un à un tous les liens insérés dans chacun de mes articles depuis le lancement de ce blog (heureusement pour moi je n’en suis qu’au jour 16 et pas au jour 99).</p>
+
+<p>Je n’ai pas touché aux liens dont je jugeais l’intitulé suffisamment explicite.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- lire les &lt;a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/fr"&gt;Principes d'accessibilité du W3C&lt;/a&gt;
+</code></pre></div></div>
+
+<p>J’ai ajouté un <code class="highlighter-rouge">aria-label</code> sur les liens qui me paraissaient moins évidents à comprendre uniquement via l’intitulé.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>je vous propose un retour d'expérience d'&lt;a href="https://twitter.com/eaboaf_" aria-label="Compte Twitter d'Emanuelle Aboaf"&gt;Emmanuelle Aboaf&lt;/a&gt;
+</code></pre></div></div>
+
+<p>Certains liens m’ont vraiment interrogé sur la manière de compléter l’intitulé, puisque nous sommes censés - dans la mesure du possible - reprendre dans l’attribut <code class="highlighter-rouge">aria-label</code> une partie de l’intitulé du lien. Ce problème s’est notamment posé avec les deux liens présents dans <a href="/lancement-blog/">mon premier article<a>. En faisant des tests, il est apparu que pour que l’intégralité du texte soit lue, je devais procéder ainsi :</a></a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>il paraît que &lt;a href="https://vimeo.com/142169449" aria-label="nous sommes toutes et tous légitimes : Conférence en vidéo de Marie Guillaumet sur Viméo"&gt;nous sommes toutes et tous légitimes&lt;/a&gt;
+</code></pre></div></div>
+
+<p>La répétition de l’intitué dans le <code class="highlighter-rouge">aria-label</code> est donc nécessaire car seul le contenu du <code class="highlighter-rouge">aria-label</code> est lu par les lecteurs d’écran.</p>
+
+<h3 id="les-hyperliens-internes-et-externes-sont-différenciés">Les hyperliens internes et externes sont différenciés</h3>
+<p>Voilà sûrement la partie qui m’a posé le plus de problèmes. L’idée est d’avertir clairement l’internaute du fait qu’il va quitter le site qu’il est en train de visiter. Je souhaitais une solution qui permette de remplir plusieurs objectifs :</p>
+<ul>
+  <li>la différentiation doit être visible pour tous les internautes, qu’ils utilisent un lecteur d’écran ou non</li>
+  <li>je ne souhaitais pas ajouter une mention “lien externe” directement dans l’intitulé. Il s’agit effectivement de la solution la plus claire et la plus simple, mais je la trouve un peu trop verbeuse.</li>
+  <li>je voulais que la mise en forme appliquée aux liens visités s’applique également aux liens externes visités</li>
+  <li>je voulais une solution pas trop compliquée à implémenter sur les liens déjà existants</li>
+</ul>
+
+<p>J’ai donc choisi la solution suivante :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="https://www.24joursdeweb.fr/2013/attribut-title-avec-moderation/"&gt;l'article de Romy Duhem-Verdière : L'attribut title : à consommer avec modération
+
+&lt;span class="sr-only"&gt;(lien externe)&lt;/span&gt;
+
+&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"&gt;&lt;path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"/&gt;&lt;path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"/&gt;&lt;path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+</code></pre></div></div>
+
+<p>J’ai choisi d’utiliser un <abbr title="Scalable Vector Graphic">SVG</abbr> car la pseudo-class <code class="highlighter-rouge">:visited</code> ne tolère que peu de propriétés de style, donc <span lang="en">fill</span> et <span lang="en">stroke</span> (voir à ce sujet <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited#Styling_restrictions" hreflang="en">l’article de Mozilla<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>).</p>
+
+<p>Le code suivant me permet donc de changer la couleur du SVG en fonction de l’état du lien, visité ou non :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a {
+  color: #3673B0;
+  cursor: pointer;
+  text-decoration: none;
+
+  svg {
+    margin-left: 3px;
+
+    path#stroke-ext {
+      stroke: #3673B0;
+    }
+
+    path#fill-ext {
+      fill: #3673B0;
+    }
+  }
+
+  &amp;:visited {
+    color: #800080;
+
+    svg {
+      path#stroke-ext {
+        stroke: #800080;
+      }
+
+      path#fill-ext {
+        fill: #800080;
+      }
+    }
+  }
+}
+</code></pre></div></div>
+
+<p>Ce SVG étant porteur de sens, je lui ai ajouté un attrbut <code class="highlighter-rouge">aria-hidden="true"</code> pour qu’il ne soit pas lu par les lecteurs d’écran, et j’ai ajouté un <code class="highlighter-rouge">&lt;span class="sr-only"&gt;(lien externe)&lt;/span&gt;</code> contenant un texte de remplacement permettant de rendre explicite l’icone SVG. La class <code class="highlighter-rouge">sr-only</code> rend la balise invisible mais toujours lisible par des lecteurs d’écran.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+</code></pre></div></div>
+
+<p>J’ai encapsulé le code spécifique à un lien externe dans un fichier <span lang="en">include</span>, ce qui me permet de n’avoir à ajouter qu’un simple <code class="highlighter-rouge">include external-icon.html</code> pour tous les liens externes.</p>
+
+<p>Il aurait été possible de passer par une police d’icones et de générer ensuite l’icone via un <code class="highlighter-rouge">&lt;span&gt;</code> et un pseudo-element <code class="highlighter-rouge">:after</code>, mais étant donné que je ne prévoyais d’utiliser qu’un seul icone, je ne voyais pas l’intérêt de télécharger une police entière.</p>
+
+<p>Que pensez-vous de cette solution ? N’hésitez pas à donner votre avis !</p>
+:ET
