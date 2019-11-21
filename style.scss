@@ -288,13 +288,6 @@ nav {
   float: right;
   margin-top: 12px;
   font-size: 18px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 10px auto;
-    font-size: 16px;
-  }
 }
 
 //
