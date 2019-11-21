@@ -286,15 +286,13 @@ nav {
 
 .pagination {
   float: right;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 12px;
   font-size: 18px;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
-    margin-bottom: 9px;
     display: block;
+    margin: 10px auto;
     font-size: 16px;
   }
 }
