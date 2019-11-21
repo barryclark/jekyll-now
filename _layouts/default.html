@@ -53,18 +53,17 @@
       </nav>
     </header>
 
-    <main id="main" role="main" class="container">
+    <main id="main" role="main" class="main">
       <a id="content" tabindex="-1"></a>
       {{ content }}
     </main>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+    <footer class="footer">
+      <div class="footer__inner">
+        {% include svg-icons.html %}
       </div>
-    </div>
+    </footer>
+
 
     {% include analytics.html %}
   </body>

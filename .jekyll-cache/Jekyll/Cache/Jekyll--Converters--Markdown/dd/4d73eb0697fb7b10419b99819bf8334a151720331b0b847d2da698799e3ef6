@@ -1,0 +1,50 @@
+I"�<p>On s’intéresse à l’une des fonctionnalités de base du web, les liens.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>modifier le code du blog pour avoir des liens accessibles et en conformité avec les recommandations Opquast</li>
+</ul>
+
+<h2 id="aperçu-du-code">Aperçu du code</h2>
+<h3 id="les-hyperliens-de-même-nature-ont-des-couleurs-des-formes-et-des-comportements-identiques-sur-toutes-les-pages">Les hyperliens de même nature ont des couleurs, des formes et des comportements identiques sur toutes les pages</h3>
+<p>Tous les liens présents dans mes articles sont de couleur bleu par défaut. Les liens du menu de navigation, du header et des titres d’article ont des couleurs spécifiques à leur fonction.</p>
+
+<h3 id="le-survol-ou-lactivation-des-hyperliens-ne-modifie-pas-la-mise-en-page">Le survol ou l’activation des hyperliens ne modifie pas la mise en page</h3>
+<p>Les liens par défaut sont soulignés au survol, les autres liens changent de couleur. C’est une mise en forme simple mais efficace.</p>
+
+<h3 id="des-styles-différents-pour-les-liens-visités-et-non-visités">Des styles différents pour les liens visités et non visités</h3>
+<p>J’ai choisi de changer la couleur des liens visités pour qu’ils soient violet. Il s’agit de la couleur par défaut des liens visités, donc c’est potentiellement un comportement avec lequel les utilisateurs et utilisatrices sont familiers.</p>
+
+<h3 id="la-langue-principale-de-la-page-cible-dun-hyperlien-est-identifiable-lorsquelle-diffère-de-celle-de-la-page-dorigine">La langue principale de la page cible d’un hyperlien est identifiable lorsqu’elle diffère de celle de la page d’origine</h3>
+<p>Pour les liens pointant vers une page en anglais par exemple, j’ai ajouté des attributs spécifiques :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- l'emploi de la syntaxe &lt;a href="http://getbem.com/" lang="en" hreflang="en"&gt;BEM (Block Element Modifier)&lt;/a&gt; pour nommer les class CSS
+</code></pre></div></div>
+
+<p>L’attribut <code class="highlighter-rouge">lang="en"</code> signale aux lecteurs d’écran que le contenu du lien est dans une langue différente de la langue principale, ici l’anglais. L’attribut <code class="highlighter-rouge">hreflang="en"</code> indique que la page cible du lien est en anglais.</p>
+
+<p>L’attribut <code class="highlighter-rouge">lang</code> doit être utilisé pour tous les mots différents de la langue principale signalée dans la balise <code class="highlighter-rouge">html</code>.</p>
+
+<h3 id="le-libellé-de-chaque-hyperlien-décrit-sa-fonction-ou-la-nature-du-contenu-vers-lequel-il-pointe">Le libellé de chaque hyperlien décrit sa fonction ou la nature du contenu vers lequel il pointe</h3>
+<p>J’ai dû reprendre un à un tous les liens insérés dans chacun de mes articles depuis le lancement de ce blog (heureusement pour moi je n’en suis qu’au jour 16 et pas au jour 99).</p>
+
+<p>Je n’ai pas touché aux liens dont je jugeais l’intitulé suffisamment explicite.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- lire les &lt;a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/fr"&gt;Principes d'accessibilité du W3C&lt;/a&gt;
+</code></pre></div></div>
+
+<p>J’ai ajouté un <code class="highlighter-rouge">aria-label</code> sur les liens qui me paraissaient moins évidents à comprendre uniquement via l’intitulé.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>je vous propose un retour d'expérience d'&lt;a href="https://twitter.com/eaboaf_" aria-label="Compte Twitter d'Emanuelle Aboaf"&gt;Emmanuelle Aboaf&lt;/a&gt;
+</code></pre></div></div>
+
+<p>Certains liens m’ont vraiment interrogé sur la manière de compléter l’intitulé, puisque nous sommes censés - dans la mesure du possible - reprendre dans l’attribut <code class="highlighter-rouge">aria-label</code> une partie de l’intitulé du lien. Ce problème s’est notamment posé avec les deux liens présents dans <a href="/lancement-blog/">mon premier article<a>.</a></a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>il paraît que &lt;a href="https://vimeo.com/142169449" aria-label="Conférence en vidéo de Marie Guillaumet sur Viméo"&gt;nous sommes toutes et tous légitimes&lt;/a&gt;
+</code></pre></div></div>
+
+<h3 id="les-hyperliens-internes-et-externes-sont-différenciés">Les hyperliens internes et externes sont différenciés</h3>
+<p>pas envie d’utiliser lien externe dans l’intitulé car trop verbeux, pas envie d’ajouter une mention lisible uniquement par les lecteurs d’écran car utile à tout le mone (moi avec clicdroit)</p>
+
+<p>Cf jour 4</p>
+:ET

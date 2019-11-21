@@ -1,0 +1,76 @@
+I"<p>Découvrir les technologies d’assistance et se familiariser avec certaines d’entre elles.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>regarder la vidéo de <a href="https://twitter.com/i/broadcasts/1djGXpegzwBGZ">Démonstration d’accessibilité par Jamshid Kohandel (DINSIC)<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+  <li>lire la page du W3C <a href="https://www.w3.org/WAI/people-use-web/tools-techniques/fr">Outils et techniques pour interagir avec le web<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+  <li>installer <a href="https://support.google.com/accessibility/android/topic/3529932?hl=fr&amp;ref_topic=9078845">l’application Talkback<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> sur mon portable</li>
+  <li>suivre et mettre en pratique les 3 premières leçons du didacticiel Talkback</li>
+  <li>installer l’extension Firefox <a href="https://addons.mozilla.org/fr/firefox/addon/i-dont-care-about-cookies/" lang="en">I don’t care about cookies<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+
+<h3 id="aides-techniques">Aides techniques</h3>
+<p>Il existe de nombreux outils et techniques pour permettre à chacun et chacune de <strong>percevoir, comprendre, naviguer, interagir et contribuer</strong> au web.</p>
+
+<p>On peut distinguer :</p>
+<ul>
+  <li>les technologies d’assistance</li>
+  <li>les stratégies d’adaptation</li>
+</ul>
+
+<p>Les technologies d’assistance sont des logiciels et matériels utilisés par des personnes en situation de handicap pour améliorer leurs interactions avec le Web. Il s’agit par exemple des lecteurs d’écran qui vocalisent les pages web pour les personnes qui ne peuvent pas lire le texte, des loupes d’écran, des logiciels de reconnaissance vocale, des contacteurs…</p>
+
+<p>Les stratégies d’adaptation sont des techniques pour améliorer l’interaction des utilisateurs avec le Web, telles que le grossissement de caractères, la réduction de la vitesse du pointeur de souris, l’affichage des sous-titres ou encore le blocage de popups.</p>
+
+<p><strong>Ces aides techniques ne sont pas des outils magiques</strong> capables de rendre instantanément accessible une application ou un site. Pour fonctionner de manière optimale, le site doit être initialement pensé et conçu de façon accessible. <strong>Ces outils ne doivent donc jamais dispenser de rendre un site accessible aux personnes handicapées.</strong></p>
+
+<h3 id="prise-en-main-de-lecteurs-décran--orca-et-talkback">Prise en main de lecteurs d’écran : Orca et Talkback</h3>
+<p>Afin d’en apprendre plus et de me familiariser avec certains outils, j’ai activé Orca et Talkback, lecteurs d’écran respectifs de mon ordinateur (sous Linux) et de mon téléphone portable (sous Android).</p>
+
+<p>Je n’ai malheureusement pas pu prendre en main Orca à cause d’un problème technique qui désactive totalement le son lorsque le lecteur d’écran est actif (je cherche actuellement comment résoudre le problème).</p>
+
+<p>En revanche j’ai pu utiliser Talkback sur mon téléphone et bien que j’ai déjà assisté à des démonstrations de son utilisation par des personnes malvoyantes, il m’a fallu 15 bonnes minutes pour assimiler les gestes de bases pour simplement se déplacer dans l’interface du téléphone et sélectionner des éléments.</p>
+
+<p>J’ai récapitulé dans le tableau ci-dessous les principaux gestes que j’ai appris.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gestes</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Appuyer 2 fois</td>
+      <td>Activer un élément</td>
+    </tr>
+    <tr>
+      <td>Balayer vers la droite</td>
+      <td>Explorer vers la droite et en bas</td>
+    </tr>
+    <tr>
+      <td>Balayer vers la gauche</td>
+      <td>Explorer vers la gauche et en haut</td>
+    </tr>
+    <tr>
+      <td>Balayer à droite puis à gauche dans un même mouvement</td>
+      <td>Faire défiler vers l’avant</td>
+    </tr>
+    <tr>
+      <td>Balayer à gauche puis à droite dans un même mouvement</td>
+      <td>Faire défiler vers l’arrière</td>
+    </tr>
+    <tr>
+      <td>Balayer vers le bas puis à droite dans un même mouvement</td>
+      <td>Ouvre le menu contextuel général</td>
+    </tr>
+    <tr>
+      <td>Balayer vers le haut puis à droite dans un même mouvement</td>
+      <td>Ouvre le menu local</td>
+    </tr>
+  </tbody>
+</table>
+:ET

@@ -1,0 +1,79 @@
+I"�<p>On s’intéresse à l’une des fonctionnalités de base du web, les liens.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire les notices Accedeweb relatives aux liens</li>
+  <li>lire les recommandations du RGAA relatives aux liens</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="liens-versus-bouton">Liens versus Bouton</h3>
+<p>Il s’agit d’un rappel mais qu’il n’est pas inutile d’avoir en tête :</p>
+<ul>
+  <li><strong>un lien permet de naviguer</strong>, d’une page à l’autre ou au sein d’une même page</li>
+  <li><strong>un bouton déclenche une action</strong> comme soumettre des informations ou afficher l’élément suivant dans un carrousel</li>
+</ul>
+
+<h3 id="liens-explicites-versus-liens-non-explicites">Liens explicites versus liens non explicites</h3>
+<p>Un lien explicite a un intitulé qui permet à lui seule de comprendre sa destination ou sa fonction :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="https://disic.github.io/guide-integrateur/"&gt;Guide de l'intégrateur RGAA 3&lt;/a&gt;
+</code></pre></div></div>
+
+<p>Les liens “Lire la suite”, “En savoir plus” ou “Cliquer ici” sont en revanche considérés comme non explicites.</p>
+
+<h3 id="compléter-les-liens-non-explicites">Compléter les liens non explicites</h3>
+<p>On peut rendre un lien explicite grâce à l’attribut <code class="highlighter-rouge">aria-label</code> ou grâce à l’attribut <code class="highlighter-rouge">title</code>.</p>
+
+<p>L’attribut choisi doit être ajouté dans la balise <code class="highlighter-rouge">&lt;a&gt;</code> et renseigné sur le modèle : <strong>intitulé du lien + informations complémentaires</strong>.</p>
+
+<p>Par exemple sur ce blog, les liens “Lire la suite” de chaque article ne sont pas suffisamment explicites :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="" class="read-more"&gt;Lire la suite&lt;/a&gt;
+</code></pre></div></div>
+
+<p>On complète donc ainsi le lien :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="" aria-label="Lire la suite de l'article : Titre de l'article" class="read-more"&gt;Lire la suite&lt;/a&gt;
+</code></pre></div></div>
+
+<p>Ce qui est interprété ainsi par le navigateur :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="/100daysofa11y-day15/" aria-label="Lire la suite de l'article : Jour 15 - Des liens accessibles" class="read-more"&gt;Lire la suite&lt;/a&gt;
+</code></pre></div></div>
+
+<p><strong>Les liens explicites dont l’intitulé suffit à comprendre sa destination ne doivent pas être complétés par des attributs <code class="highlighter-rouge">title</code> ou <code class="highlighter-rouge">aria-label</code>.</strong></p>
+
+<p>D’autre part, le contenu de l’attribut n’est pas conforme si :</p>
+<ul>
+  <li>il est identique à l’intitulé de lien</li>
+  <li>il est vide</li>
+  <li>il ne reprend pas au moins le contenu de l’intitulé du lien</li>
+</ul>
+
+<h4 id="title-versus-aria-label">Title versus aria-label</h4>
+<p>L’attribut <code class="highlighter-rouge">title</code> n’est pas restitué de façon uniforme par les lecteurs d’écran et n’est  pas interprété sur les terminaux tactiles (mobiles, tablettes) qui constituent aujourd’hui la majorité des internautes (lire à ce sujet <a href="https://www.24joursdeweb.fr/2013/attribut-title-avec-moderation/">l’article de Romy Duhem-Verdière : L’attribut title : à consommer avec modération</a><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12"></svg></p>
+<path fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z" />
+
+<path d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd" />
+
+<path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd" />
+
+<p>&lt;/svg&gt;
+<span class="sr-only">(lien externe)</span>).</p>
+
+<p>D’autre part, il n’est pas possible de modifier l’affichage de l’attribut <code class="highlighter-rouge">title</code> : les changement de couleurs, de police ou taille de caractères ne sont pas appliquées sur les contenus de cet attribut. Une solution alternative pourrait consister à ajouter une infobulle personnalisée à la place.</p>
+
+<h3 id="liens-images">Liens images</h3>
+<p>Lorsqu’un lien est composé uniquement d’une image, c’est l’alternative de cette image qui constitue son intitulé : l’alternative est utilisée pour indiquer la destination du lien.</p>
+
+<p>Exemple sur ce site avec mon avatar situé dans le header de chaque page et renvoyant vers l’accueil :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="/" class="site-avatar"&gt;
+  &lt;img src="https://avatars.githubusercontent.com/elbuffeto" alt="Accueil" /&gt;
+&lt;/a&gt;
+</code></pre></div></div>
+
+<h3 id="recommandations-opquast">Recommandations Opquast</h3>
+<p>Plusieurs bonnes pratiques Opquast sont également intéressantes à prendre en compte, parmi lesquelles les hyperliens internes et externes sont différenciés, le survol ou l’activation des hyperliens ne modifie pas la mise en page. Vous pouvez <a href="https://checklists.opquast.com/fr/qualiteweb/?focus=lien">retrouver ces bonnes pratiques sur la page dédiée<span class="ext"></span><span class="sr-only">(lien externe)</span></a>.</p>
+:ET

@@ -1,0 +1,22 @@
+I"m<p>On s’intéresse à l’une des fonctionnalités de base du web, les liens.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire les notices Accedeweb relatives aux liens</li>
+  <li>lire les recommandations du RGAA relatives aux liens</li>
+</ul>
+
+<h2 id="aperçu-du-code">Aperçu du code</h2>
+<h3 id="des-styles-différents-pour-les-liens-visités-et-non-visités">Des styles différents pour les liens visités et non visités</h3>
+<p>color purple par défaut</p>
+
+<p>Le survol ou l’activation des hyperliens ne modifie pas la mise en page. : soulignement actif</p>
+
+<p>Les hyperliens de même nature ont des couleurs, des formes et des comportements identiques sur toutes les pages. : lien bleu avec soulignement au survol. Comportement spécifique pour la navigation et le titre du site.</p>
+
+<p>Le libellé de chaque hyperlien décrit sa fonction ou la nature du contenu vers lequel il pointe. Cf premier article. Contexte aide à comprendre.</p>
+
+<p>Les hyperliens internes et externes sont différenciés. pas envie d’utiliser lien externe dans l’intitulé car trop verbeux, pas envie d’ajouter une mention lisible uniquement par les lecteurs d’écran car utile à tout le mone (moi avec clicdroit)</p>
+
+<p>La langue principale de la page cible d’un hyperlien est identifiable lorsqu’elle diffère de celle de la page d’origine. Cf jour 4</p>
+:ET
