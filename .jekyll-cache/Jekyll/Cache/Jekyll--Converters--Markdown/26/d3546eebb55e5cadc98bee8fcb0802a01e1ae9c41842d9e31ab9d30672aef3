@@ -1,0 +1,74 @@
+I"<p>Comment structurer une page HTML pour garantir son accessibilité.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>parcourir les différents outils présentés ci-dessous</li>
+  <li>vérifier que les différents points de structuration énoncés sont respectés pour ce blog</li>
+  <li>apporter une correction lorsque les recommandations de structuration ne sont pas respectées</li>
+</ul>
+
+<h2 id="outils-indispensables-à-destination-de-lintégrateurice-web-">Outils indispensables à destination de l’intégrateur.ice web :</h2>
+
+<ul>
+  <li><a href="https://www.accede-web.com/notices/html-css-javascript/">Notices d’accessibilité Accedeweb HTML, CSS et JAvascript<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+  <li><a href="https://disic.github.io/guide-integrateur/">Guide de l’intégrateur RGAA3<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> <em>Attention : se base sur le RGAA 3, et non la version 4</em></li>
+  <li><a href="https://validator.w3.org/">L’outil en ligne de validation du W3C<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+  <li>le <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode/criteres/#contenu">RGAA 4<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+</ul>
+
+<h2 id="ce-que-jai-appris-">Ce que j’ai appris :</h2>
+<ul>
+  <li>
+    <p>le document HTML doit débuter par <strong>une déclaration de doctype</strong></p>
+  </li>
+  <li>
+    <p>la langue principale de la page est renseignée avec l’attribut <em>lang</em> : <code class="highlighter-rouge"><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span></code></p>
+  </li>
+  <li>
+    <p>renseigner un <em>title</em> précis sur chaque page, par exemple sour la forme <code class="highlighter-rouge">&lt;title&gt;[Nom de la page courante] | [Nom du site]&lt;/title&gt;</code></p>
+  </li>
+  <li>
+    <p>l’écriture des balises HTML doit suivre la logique de l’ordre de lecture de la page</p>
+  </li>
+  <li>
+    <p>la validation du code par l’outil en ligne du W3C permet de s’assurer d’un rendu homogène entre tous les navigateurs.
+<em>Note : le RGAA ne demande pas un code valide à 100%, par exemple la présence d’esperluettes dans les URL n’est pas considéré comme une erreur d’accessibilité.</em></p>
+  </li>
+  <li>identifier les éléments principaux de la page avec les landmarks ARIA correspondant et les balises HTML5 correspondantes (si appliquable) :
+    <ul>
+      <li>zone d’entête principale : <code class="highlighter-rouge">&lt;header role="banner"&gt;</code></li>
+      <li>moteur de recherche : <code class="highlighter-rouge">role="search"</code></li>
+      <li>zone de contenu principale : <code class="highlighter-rouge">&lt;main role="main"&gt;</code></li>
+      <li>informations relatives au site et à son auteur : <code class="highlighter-rouge">&lt;footer role="contentinfo"&gt;</code></li>
+      <li>menus de navigation principaux et secondaires : <code class="highlighter-rouge">&lt;nav role="navigation"&gt;</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>la position des éléments principaux de la page est cohérente d’une page à l’autre du site</p>
+  </li>
+  <li>
+    <p>structurer l’information grâce à une hiérarchie de titres logique via l’utlisation de balises <code class="highlighter-rouge">&lt;hn&gt;</code> ou à défaut un <code class="highlighter-rouge">role="heading" aria-level="1"</code></p>
+
+    <p><strong>Attention !</strong></p>
+  </li>
+  <li>On peut trouver plusieurs balises header (pour l’entête du site mais aussi d’articles à l’intérieur du site), mais le <code class="highlighter-rouge">role="banner</code> doit être unique dans la page.</li>
+  <li>La balise main et le <code class="highlighter-rouge">role="main"</code> sont uniques dans la page.</li>
+  <li>On peut trouver plusieurs balises footer (pour le pied de page du site mais aussi d’articles à l’intérieur du site), mais le <code class="highlighter-rouge">role="contentinfo"</code> doit être unique dans la page.</li>
+  <li>On peut trouver plusieurs balises nav (il peut y avoir une navigation principale et une navigation secondaire, comme un fil d’ariane) et plusieurs <code class="highlighter-rouge">role="navigation"</code></li>
+  <li>Le <code class="highlighter-rouge">role="search"</code> est unique dans la page.</li>
+</ul>
+
+<h2 id="mise-en-application-sur-ce-blog">Mise en application sur ce blog</h2>
+
+<ul>
+  <li>ajout de l’attribut <em>lang</em> à la balise &lt;html&gt;</li>
+  <li>ajout des rôles <em>header</em>, <em>navigation</em> et de la balise &lt;main&gt; dans la structure générale de la page</li>
+  <li>ajout de section &lt;header&gt; et &lt;footer&gt; dans la structure d’un article de blog</li>
+  <li>suppression de la balise obsolète <code class="highlighter-rouge">&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</code></li>
+</ul>
+
+<p><em>Note :</em></p>
+<ul>
+  <li>Le fait de doubler l’information en utilisant la balise HTML5 et le rôle ARIA correspondant résulte d’un avertissement lors du passage au validateur du W3C, mais est demandé explicitement par le RGAA (Critère 12.6).</li>
+</ul>
+:ET

@@ -5,8 +5,9 @@
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
+@import 'normalize';
+@import 'variables';
+@import 'accessibility';
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -23,20 +24,13 @@ body {
   color: $darkGray;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.4;
-  margin: 1em 0 15px;
+  margin: 1.8em 0 10px;
   padding: 0;
 
   @include desktop {
@@ -66,15 +60,6 @@ h4 {
 
 p {
   margin: 15px 0;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
 }
 
 ul, ol {
@@ -141,10 +126,47 @@ img {
     clear: both;
 }
 
+// Links
+a {
+  color: $blue;
+  cursor: pointer;
+  text-decoration: none;
+
+  svg {
+    margin-left: 3px;
+
+    path#stroke-ext {
+      stroke: $blue;
+    }
+
+    path#fill-ext {
+      fill: $blue;
+    }
+  }
+
+  &:visited {
+    color: #800080;
+
+    svg {
+      path#stroke-ext {
+        stroke: #800080;
+      }
+
+      path#fill-ext {
+        fill: #800080;
+      }
+    }
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
 // LAYOUT / SECTIONS
 
 // Header
-
 .header {
   border-bottom: 1px solid $lightGray;
   margin: 0 auto 50px;
@@ -173,13 +195,16 @@ img {
 }
 
 // Site avatar and info
-
 .site-avatar {
   display: block;
   height: 70px;
   margin: 0 auto;
   vertical-align: middle;
   width: 70px;
+
+  &:hover, &:active {
+    text-decoration: none;
+  }
 
   @include desktop {
     display: inline-block;
@@ -200,13 +225,23 @@ img {
   }
 
   &__name {
-    margin: 0;
     color: $darkGray;
-    cursor: pointer;
     font-family: $helveticaNeue;
-    font-weight: 300;
     font-size: 28px;
+    font-weight: 300;
     letter-spacing: 1px;
+    margin: 0;
+
+    a {
+      &:visited {
+        color: inherit;
+      }
+
+      &:hover, &:active {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
   }
 
   &__description {
@@ -221,7 +256,6 @@ img {
 }
 
 // Site nav
-
 .main-nav {
   list-style: none;
   margin: 0;
@@ -241,21 +275,28 @@ img {
   }
 
   &__link {
-    color: $blue;
+    color: $darkGray;
     font-family: $helveticaNeue;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
 
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover, &:active {
+      color: $blue;
+      text-decoration: none;
+    }
+
     @include desktop {
-      color: $darkGray;
       font-size: 18px;
     }
   }
 }
 
 // Skip link
-
 .skip-link {
   background: #fff;
   color: $blue;
@@ -277,26 +318,54 @@ img {
   }
 }
 
-//
 // Main content
-//
+.main {
+  margin: 0 auto;
+  max-width: $wrapper;
+  padding: 0 10px;
+}
+
+.posts {
+  & > .post-item:not(:last-child) {
+    border-bottom: 1px solid $lightGray;
+    padding-bottom: 2em;
+  }
+}
+
+.post-item {
+  &__title {
+    a {
+      &:visited {
+        color: inherit;
+      }
+
+      &:hover,
+      &:active {
+        color: $blue;
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  &__more {
+    color: $blue;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
 
 .breadcrumbs {
   font-size: 12px;
   margin: 0;
 }
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
 .post {
+  &__footer {
+    padding: 20px 0;
+  }
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -309,25 +378,22 @@ img {
   .comments {
     margin-top: 10px;
   }
+}
 
-  .read-more {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 15px;
+.footer {
+  background-color: $lightGray;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+
+  &__inner {
+    margin: 0 auto;
+    max-width: $wrapper;
   }
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-}
-
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
 
 table {
 	border: 1px solid $darkGray;

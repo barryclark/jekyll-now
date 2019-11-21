@@ -1,0 +1,36 @@
+I"^
+<p>Continuer à utiliser Talkback sur mon téléphone et pour naviguer sur le web.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>ajouter un raccourci pour activer/désactiver Talkback</li>
+  <li>finir le didacticiel de prise en main Talkback pour saisir et modifier du texte</li>
+  <li>tester les <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#Screenreaders">pages “bonnes et mauvaises élèves” en matière d’accessibilité (en anglais)</a> depuis le site de Mozilla (section <span lang="en">“Screenreader testing”</span>)</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<p>Je me suis vraiment débattue pour faire des choses qui me paraissent habituellement naturelles, telles qu’ouvrir une page web, saisir une adresse ou parcourir une page. Il faut bien sûr un peu de temps pour prendre véritablement Talkback en main et quand bien même cela me permet d’imaginer un peu mieux comment des utilisateurs ou utilisatrices naviguent sur le web, cela ne reste qu’une mise en situation très approximative : <strong>je ne pourrai jamais me mettre à la place d’un utilisateur ou d’une utilisatrice en situation de handicap</strong>.</p>
+
+<p>Mais <strong>prendre en main ces aides techniques</strong> ou <strong>assister à des démonstrations de leur utilisation permet de mieux prendre en compte les besoins des personnes en situation de handicap</strong> et les difficultés auxquelles elles sont confrontées.</p>
+
+<p>Enfin, en parcourant avec un lecteur d’écran les pages <a href="https://mdn.github.io/learning-area/accessibility/html/good-semantics.html" lang="en" hreflang="en">good-semantics</a>/<a href="https://mdn.github.io/learning-area/accessibility/html/bad-semantics.html" lang="en" hreflang="en">bad-semantics</a> ou encore <a href="https://mdn.github.io/learning-area/accessibility/html/good-form.html" lang="en" hreflang="en">good-form</a>/&lt;a href=”https://mdn.github.io/learning-area/accessibility/html/bad-form.html” lang=”en”hreflang=”en” &gt;bad-form&lt;/a&gt; de Mozilla, on prend bien conscience en tant que développeur de l’importance de notre rôle à jouer pour rendre le web plus accessible.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gestes</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Balayer vers le haut puis à gauche dans un même mouvement</td>
+      <td>Retour à l’accueil</td>
+    </tr>
+    <tr>
+      <td>Glisser son doigt puis relâcher au caractère désiré</td>
+      <td>Sélectionner un caractère</td>
+    </tr>
+  </tbody>
+</table>
+:ET

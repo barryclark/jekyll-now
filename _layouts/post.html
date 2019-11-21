@@ -3,19 +3,19 @@ layout: default
 ---
 
 <article class="post">
-  <header>
+  <header class="post__header">
     <p class="breadcrumbs">
       Vous êtes à : <a href="/">Blog</a> &gt;
       <span aria-current="page">{{ page.title }}</span>
     </p>
-    <h1>{{ page.title }}</h1>
+    <h1 class="post__title">{{ page.title }}</h1>
   </header>
 
-  <div class="entry">
+  <div class="post__content">
     {{ content }}
   </div>
-  
-  <footer>
+
+  <footer class="post__footer">
     <div class="date">
       Ecrit le {{ page.date | date: "%B %e, %Y" }}
     </div>

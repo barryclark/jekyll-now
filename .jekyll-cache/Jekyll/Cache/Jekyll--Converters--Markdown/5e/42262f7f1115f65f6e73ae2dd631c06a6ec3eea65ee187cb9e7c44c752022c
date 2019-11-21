@@ -1,0 +1,59 @@
+I"�<p>Avant de se plonger au coeur du sujet - l’accessibilité numérique -, rappeler les définitions et différences entre les notions de déficience, incapacité et handicap.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>relire la première partie du chapitre “Qualité web et accessibilité” du livre Qualité Web - La référence des professionnels</li>
+  <li>regarder la <a href="https://www.youtube.com/watch?v=p8w60RPo7t4">publicité vidéo de l’Association Nationale pour le Logement des personnes Handicapées</a></li>
+  <li>chercher des chiffres clés sur le handicap</li>
+</ul>
+
+<h2 id="ce-que-jai-appris-">Ce que j’ai appris :</h2>
+<h3 id="déficience">Déficience</h3>
+<p>La <strong>déficience</strong> désigne des altérations corporelles ou dysfonctionnement des diverses parties du corps.</p>
+<ul>
+  <li>Les déficiences peuvent être sensorielles (cécité, surdité…), cognitives (déficiences mentales) ou motrices (bras cassé, tétraplégie…).</li>
+  <li>Une même personne peut souffrir de plusieurs déficiences.</li>
+  <li>Les déficiences peuvent être visibles ou non.</li>
+  <li>Les déficiences peuvent être permanentes ou temporaires.</li>
+</ul>
+
+<p>Exemple : <em>un AVC peut engendrer une paralysie de la jambe et du bras droits.</em></p>
+
+<h3 id="incapacité">Incapacité</h3>
+<p>Ces déficiences peuvent conduire à des <strong>incapacités</strong>, c’est-à-dire des impossibilités pour la personne déficiente de faire certaines actions d’une façon normale ou dans les limites considérées comme normales pour un être humain.</p>
+
+<p>Exemple : <em>la paralysie engendrée par l’AVC rend la marche compliquée, voire impossible.</em></p>
+
+<h3 id="handicap">Handicap</h3>
+<p>Le <strong>handicap</strong> se définit quant à lui comme la perte ou la restriction pour un individu de participer à la vie de la collectivité à égalité avec les autres.</p>
+
+<p>Selon la loi française, le handicap est :</p>
+<blockquote>
+  <p>la limitation d’activité ou de restriction de participation à la vie en société subie dans son environnement par une personne en raison d’une altération substantielle, durable ou définitive d’une ou plusieurs fonctions physiques, sensorielles, mentales, cognitives ou psychiques d’un polyhandicap ou d’un trouble de santé invalidant.</p>
+</blockquote>
+
+<p>Exemple : <em>du fait de la paralysie provoquée par l’AVC et donc de la difficulté à se déplacer, il est compliqué d’aller faire ses courses.</em></p>
+
+<ul>
+  <li>Le handicap est directement lié à un contexte. Exemple : <em>Certaines personnes déficientes auditives seront handicapées sans appareillage pour communiquer par téléphone, mais ne seront pas handicapées si elles savent lire et peuvent communiquer par courrier électronique ou SMS.</em></li>
+  <li>Certaines personnes peuvent aussi se retrouver en situation de handicap sans souffrir de déficience. Exemple : <em>une personne connectée dans une zone en bas débit se retrouve dans l’incapacité d’accomplir des formalités en ligne à égalité avec les autres.</em></li>
+</ul>
+
+<p>On distingue 5 types de handicap :</p>
+<ul>
+  <li>handicap mental</li>
+  <li>handicap moteur</li>
+  <li>handicap visuel</li>
+  <li>handicap auditif</li>
+  <li>handicap psychique</li>
+</ul>
+
+<h3 id="chiffres-clés">Chiffres clés</h3>
+
+<ul>
+  <li>785 millions de personnes - soit <strong>15,6% de la population mondiale</strong> - âgées de 15 ans et plus vivent avec un handicap selon <a href="https://apps.who.int/iris/bitstream/handle/10665/70671/WHO_NMH_VIP_11.02_fre.pdf;jsessionid=141FE9AE213D88C487A5BDAAC9B4ECD6?sequence=1">le rapport mondial sur le handicap</a></li>
+  <li>9,6 millions de personnes handicapées - soit <strong>24% de la population active</strong> - sont recensées en France en 2007 selon <a href="https://www.insee.fr/fr/statistiques/1373648?sommaire=1373710">une enquête réalisée par l’INSEE</a></li>
+  <li>1,7 millions de personnes - soit <strong>2,9 % de la population française</strong> - seraient déficientes visuelles selon <a href="https://drees.solidarites-sante.gouv.fr/IMG/pdf/handicapvisuel.pdf">l’enquête HID réalisée par l’INSEE en 1988 et 1999-2000</a></li>
+  <li>7,5 millions de personnes - soit <strong>11,2% de la population française</strong> - auraient des déficiences auditives selon <a href="https://drees.solidarites-sante.gouv.fr/IMG/pdf/dt131-etudes_et_recherches.pdf">l’étude quantitative sur le handicap auditif menée par la DREES en 2014</a></li>
+</ul>
+:ET

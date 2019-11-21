@@ -1,0 +1,97 @@
+I"�7<p>Aujourd’hui il s’agit d’un billet un peu spécial. Hier, j’ai eu la chance d’assister à l’Opquast Day, une journée entière consacrée à l’écosystème Opquast, les bonnes pratiques et la qualité web.
+Petit tour d’horizon de cet événement entre échanges enrichissants, témoignages de professionnels du web, accessibilité et buffet à volonté !</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>échanger avec d’autres professionnels sur notre métier et tout ce que s’y rattache</li>
+  <li>participer aux ateliers pour le lancement de la V4 des bonnes pratiques Opquast</li>
+</ul>
+
+<h2 id="opquast-késako">Opquast, késako ?</h2>
+<p>Nous commençons cette journée par une présentation générale d’Opquast, un rappel pour de nombreuses personnes présentes – vétérans et certifiés de longue date -, une découverte pour les quelques néophytes venus se renseigner et en apprendre plus.</p>
+
+<h3 id="risques-et-industrialisation">Risques et industrialisation</h3>
+<p>Pour Elie Sloïm, fondateur d’Opquast, le 25 mai 2018 est une date clé dans l’écosystème web : il s’agit de la mise en application officielle du Référentiel Général européen sur la Protection des Données personnelles (RGPD). Les entreprises doivent donc se mettre en conformité avec la loi, sous peine d’être exposées à des sanctions.
+Au cours des dernières années, les entreprises ont ainsi pris conscience que leurs activités sur le web pouvaient engendrer des risques importants et les métiers du web commencent à être perçus comme des métiers à risque. Cette prise de conscience s’étend au-delà de la protection des données personnelles : l’accessibilité web, la cyber-sécurité et l’éco-conception deviennent des préoccupations essentielles. On peut tirer deux points importants de cette constatation :</p>
+<ul>
+  <li><strong>les activités web sont de plus en plus prises au sérieux</strong></li>
+  <li><strong>il faut un pilotage global des risques</strong>, une concertation commune pour travailler à une amélioration globale</li>
+</ul>
+
+<h3 id="dès-lors-quil-y-a-des-risques-lassurance-qualité-arrive">Dès lors qu’il y a des risques, l’assurance qualité arrive</h3>
+<p>En 2001, Elie Sloïm et Eric Gateau imaginent un modèle qui résume les attentes des utilisateurs finaux et capable de synthétiser les enjeux des sites internet et services en ligne : <strong>le modèle VPTCS</strong>.</p>
+
+<ul>
+  <li><strong>Visibilité</strong> : être rencontré par ses utilisateurs potentiels</li>
+  <li><strong>Perception</strong> : être utilisable et correctement perçu par ses utilisateurs</li>
+  <li><strong>Technique</strong> : fonctionner correctement</li>
+  <li><strong>Contenus</strong> : délivrer de l’information de qualité</li>
+  <li><strong>Services</strong> : proposer, accompagner, générer la réalisation de services de qualité</li>
+</ul>
+
+<p>Ce modèle transversal général constitue la base d’un socle de connaissances, déclinable ensuite en bonnes pratiques qualité plus précises.</p>
+
+<h3 id="un-ensemble-de-bonnes-pratiques">Un ensemble de bonnes pratiques</h3>
+<p>Nous regardons rarement au-delà de notre écran, notre souris et notre clavier. Pourtant c’est là que se cachent de nombreux utilisateurs.rices que nous connaissons mal : des personnes disposant d’une connexion bas débit, des personnes en situation de handicap, âgées, ne parlant pas notre langue, surfant sur leur téléphone mobile… En tant que professionnels du web, nous nous devons de prendre en compte ces utilisateurs.rices et comprendre leur usage du web.</p>
+
+<p>A chaque nouveau projet web, nous devons disposer d’un « bagage de départ » en matière de bonnes pratiques, permettant de tenir compte de ces différents utilisateurs, contextes, profils et expériences. C’est l’objectif des <a href="https://checklists.opquast.com/fr/qualiteweb/">226 règles du référentiel Opquast pour la qualité web<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>. Ces bonnes pratiques constituent une base, à partir de laquelle on peut ensuite se spécialer dans différentes branches de la qualité telles que l’accessibilité, l’ergonomie, le SEO…</p>
+
+<p>Pour pouvoir être recevable, une bonne pratique doit :</p>
+<ul>
+  <li>être vérifiable en ligne</li>
+  <li>avoir une valeur ajoutée pour les utilisateur.rices</li>
+  <li>être valable au niveau international et ne pas faire référence à une législation nationale</li>
+  <li>être consensuelle</li>
+  <li>ne pas faire référence à une valeur numérique</li>
+  <li>ne pas faire référence à une solution technique</li>
+</ul>
+
+<p><a href="https://www.opquast.com/certification/">La certification Opquast, maîtrise de la qualité en projet web<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> s’adresse à tous les professionnels du web. Elle atteste de la capacité à maîtriser des risques qualité au sein d’un projet web et de communiquer efficacement à chaque étape de celui-ci avec les différents métiers impliqués.</p>
+
+<p>Je ne peux que vous recommander de la passer : d’une part cette certification vous permettra de valoriser vos compétences et d’attester de votre niveau de professionnalisme, d’autre part vous apprendrez énormément et deviendrez meilleur.e dans votre travail.</p>
+
+<h2 id="rétrospective-2019">Rétrospective 2019</h2>
+<p>Elie Sloïm poursuit avec une rétrospective de l’année 2019 qui fut particulièrement riche :</p>
+<ul>
+  <li>des conférences et meetups : ParisWeb, Kontinuum, Dev in Rodez…</li>
+  <li>des articles de presse et des retours de certifiés publiés tout au long de l’année à l’image de l’article <a href="https://biig.fr/nous-sommes-inventifs/biigbox/opquast-objectif-qualite?utm_source=Social&amp;utm_medium=LinkedIn&amp;utm_content=opquast_26juin2019">Opquast, objectif qualité<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de François Thibaud, intégrateur chez Biig</li>
+  <li>une newsletter publiée chaque mois</li>
+  <li><a href="https://www.drupal.org/project/opquast_checklist">un plugin drupal<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> et <a href="https://fr.wordpress.org/plugins/quality-checklist-opquast/">un plugin wordpress<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> pour faciliter la vérification et la mise en oeuvre des bonnes pratiques</li>
+  <li><a href="https://directory.opquast.com/fr/certifies/">un moteur de recherche des certifiés<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+  <li>de nombreuses formations délivrées aux quatre coins de la France</li>
+  <li>de nouveaux partenaires</li>
+</ul>
+
+<h2 id="opquast-une-formation-accessible-">Opquast, une formation accessible ?</h2>
+<p>Pour ne pas perdre de vue l’accessibilité qui est au coeur de ce challenge #100daysofa11y, je vous propose un retour d’expérience d’<a href="https://twitter.com/eaboaf_" aria-label="Compte Twitter d'Emanuelle Aboaf">Emmanuelle Aboaf<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, développeuse sourde, et <a href="https://twitter.com/pierrereynaud" aria-label="Compte Twitter de Pierre Raynaud">Pierre Raynaud<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, non voyant, au sujet de l’accessibilité numérique de la plateforme de certification.</p>
+
+<p>Emanuelle Aboaf :</p>
+
+<blockquote>
+  <p>J’avais des a priori avant de m’inscrire car je ne savais pas si c’était accessible. J’ai contacté Elie et son équipe qui m’ont dit que tout était accessible, que les vidéos étaient sous-titrées et qu’il y avait aussi des transcriptions. J’ai pu préparer et passer la certification sans problèmes et sans contraintes. Il manquait des sous titres sur une ou deux vidéos, je l’ai signalé et le problème a été réglé rapidement.</p>
+</blockquote>
+
+<blockquote>
+  <p>Je voulais trouver des solutions pour me former et obtenir de nouvelles compétences. J’ai passé la certification d’Access42, puis celle d’Opquast. Il y a peu de formations accessibles aujourd’hui, c’est à nous de demander si c’est possible ou pas de les suivre. Il n’existe pas de catalogues de formations accessibles. Pour les formations en présentiel on a besoin d’interprètes, ça demande un coût supplémentaire. Ca peut engendrer des frustrations du côté de l’entreprise qui doit payer plus cher, et de mon côté car je ne peux pas y assister.</p>
+</blockquote>
+
+<p>Pierre Raynaud :</p>
+
+<blockquote>
+  <p>L’accessibilité commence à intéresser enfin les acteurs du numérique. La certification m’a passionné et j’ai pris énormément de plaisir à la suivre car je contrôlais à 100 % mon cursus de formation. On s’est tellement habitué à l’inaccessibilité qu’on oublie ce qui est accessible. Il y avait des petits défauts sur la plateforme, notamment au niveau de la fluidité : oui il y a des choses accessibles mais est-ce qu’on peut les faire rapidement ? J’ai fait des retours et ils ont été écoutés.</p>
+</blockquote>
+
+<blockquote>
+  <p>On va demander si la formation est accessible mais il faut être plus précis car aujourd’hui on met tout et n’importe quoi derrière le mot accessible. Il faut poser des questions précises pour avoir des réponses précises : y’a-t-il des sous titres pour les vidéos ? Est-ce adapté aux lecteurs d’écran ?
+Les personnes à mobilité réduites sont le premier public de ces formations à distance. Quelqu’un de mobile peut se déplacer pour assister à des formations, moi je ne peux pas. On n’est pas dans du gadget, ou du « faire plaisir » on est dans l’urgence.</p>
+</blockquote>
+
+<p>Le mot de la fin a été donné par Laurent Denis, expert accessibilité et formateur chez Temesis :</p>
+
+<blockquote>
+  <p>L’accessibilité de nos contenus de formation n’est pas optimale, elle ne le sera peut être jamais mais nous tentons de l’améliorer constamment. Avec Pierre, j’ai eu énormément d’éléments très utiles pour fluidifier l’interface d’examen. En 90min on ne peut pas être ralenti, même si on a un tiers temps, c’est inacceptable. C’est en faisant que je me suis aperçu que techniquement, c’était bien mais qu’on pouvait toujours améliorer notre interface.</p>
+</blockquote>
+
+<h2 id="lancement-de-la-version-4-des-bonnes-pratiques">Lancement de la version 4 des bonnes pratiques</h2>
+<p>La deuxième partie de la journée a été consacrée au lancement des travaux de conception de la quatrième version du référentiel Opquast. Entre remise en question des bonnes pratiques actuelles, ajout de nouvelles, reformulation et recommandations, nous avons beaucoup discuté. J’ai trouvé ça extrêmement intéressant et c’est un véritable plaisir d’avoir des échanges aussi poussés sur ce qui est notre travail au quotidien.</p>
+:ET

@@ -5,17 +5,17 @@ title: Blog
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+    <article class="post-item">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1 class="post-item__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+      <span class="post-item__date date">{{ post.date | date: "%B %e, %Y" }}</span>
 
-      <div class="entry">
+      <div class="post_item__excerpt">
         {{ post.excerpt | truncatewords:40 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" aria-label="Lire la suite de l'article : {{ post.title }}" class="read-more">Lire la suite</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" aria-label="Lire la suite de l'article : {{ post.title }}" class="post-item__more">Lire la suite</a>
     </article>
   {% endfor %}
 </div>
