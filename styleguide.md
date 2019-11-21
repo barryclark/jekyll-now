@@ -8,24 +8,46 @@ This is a style guide for NicLake.me.
 
 Here is some standard text. *This is some emphasized text.* **Here is some bold text.** ***Here is some bolded & emphasized text.***
 
-<h1>This is an example of a H1 header.</h1>
+# This is an example of a H1 header.
 
-<h2>This is an example of a H2 header.</h2>
+## This is an example of a H2 header.
 
-<h3>This is an example of a H3 header.</h3>
+### This is an example of a H3 header.
 
-<h4>This is an example of a H4 header.</h4>
+#### This is an example of a H4 header.
 
-<h5>This is an example of a H5 header.</h5>
+##### This is an example of a H5 header.
 
-<h6>This is an example of a H6 header.</h6>
+###### This is an example of a H6 header.
 
-<ul>
-	<li>Example of an unordered list.</li>
-	<li>Another line.</li>
-</ul>
+* Example of an unordered list.
+* Another line.
 
-<ol>
-	<ol>Example of an ordered list.</ol>
-	<ol>Another line.</ol>
-</ol>
+1. Example of an ordered list.
+2. Another line.
+
+[Here is an example link](google.com), and [here is an example link w/ organized links][orglink].
+
+If you want to have some inline code, `google.com` works well.
+
+For a code block:
+
+```
+if (long block)
+	use (this)
+endif
+```
+
+Table example:
+
+| Standard align | Left Align | Center Align | Right Align |
+|---|:--|:-:|--:|
+| Sample of a standard align cell | Sample of a left align cell | Sample of a center align cell | Sample of a right align cell |
+
+Images can be put in like this:
+
+![altText][imgLink]
+
+
+[orglink]: yahoo.com
+[imgLink]: http://niclake.me/favicon.ico
