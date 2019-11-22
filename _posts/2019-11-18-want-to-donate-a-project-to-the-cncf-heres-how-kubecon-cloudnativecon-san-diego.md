@@ -6,6 +6,7 @@ location: San Diego, USA
 image: /images/2019-11-18-want-to-donate-a-project-to-the-cncf-heres-how-kubecon-cloudnativecon-san-diego.jpg
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/3jaPXOh9ihl9Rs
+video: https://www.youtube.com/embed/WS0OcCUt4io
 tags:
   - Slides
   - "2019"
