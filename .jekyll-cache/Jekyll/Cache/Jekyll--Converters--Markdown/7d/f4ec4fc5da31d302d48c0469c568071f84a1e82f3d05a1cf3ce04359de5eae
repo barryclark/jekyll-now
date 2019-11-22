@@ -1,0 +1,72 @@
+I"h<p>Mettre en pratique les différents points précédemment abordés sur un composant spécifique.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>modifier le code du blog pour afficher les liens de mes différents réseaux sociaux</li>
+</ul>
+
+<h2 id="aperçu-du-code">Aperçu du code</h2>
+<h3 id="analyse-du-code-existant-et-problèmes-soulevés">Analyse du code existant et problèmes soulevés</h3>
+<p>Le code initial du footer se présente ainsi :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;footer class="footer"&gt;
+  &lt;div class="footer__inner"&gt;
+    &lt;a href="https://github.com/elbuffeto"&gt;
+      &lt;i class="svg-icon github"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+
+    &lt;a href="https://www.linkedin.com/in/lorianebuffet"&gt;
+      &lt;i class="svg-icon linkedin"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+
+    &lt;a href="https://www.twitter.com/elbuffeto"&gt;
+      &lt;i class="svg-icon twitter"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre></div></div>
+
+<p>Les icônes représentant les réseaux sociaux sont affichés dans la balise <code class="highlighter-rouge">&lt;i&gt;&lt;/i&gt;</code>, en CSS via la propriété <code class="highlighter-rouge">background-image</code>.</p>
+
+<p>Ce code pose plusieurs problèmes :</p>
+
+<ul>
+  <li>
+    <p>en naviguant sur le blog avec <span lang="en">Talkback</span>, la seule information remontée par le lecteur d’écran au clic sur ces icônes est “lien”. L’utilisateur n’a donc aucune idée de la page vers laquelle ces liens mènent.</p>
+  </li>
+  <li>
+    <p>les icônes sont porteuses de sens - car elles représentent les logos des réseaux sociaux et donnent donc une indication sur la destination des liens - mais elles sont affichées via du CSS en image de fond, sans alternative textuelle. La désactivation des styles entraîne donc une perte d’information.</p>
+  </li>
+  <li>la balise <code class="highlighter-rouge">&lt;i&gt;&lt;/i&gt;</code> a une valeur sémantique bien précise qui ne me semble pas pertinente pour afficher une icône. Selon la documentation de Mozilla :
+    <blockquote>
+      <p>L’élément HTML <i> représente un morceau de texte qui se différencie du texte principal. Cela peut par exemple être le cas pour des termes techniques, des phrases dans une langue étrangère ou encore l’expression des pensées d’un personnage.</i></p>
+    </blockquote>
+  </li>
+  <li>les différents liens se présentent sous forme de liste, il serait donc intéressant de les baliser comme tel, dans un souci de sémantique et d’accessibilité.</li>
+</ul>
+
+<h3 id="refonte-du-code-existant">Refonte du code existant</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="footer__inner"&gt;
+  &lt;ul class="footer__list social-links"&gt;
+    &lt;li class="social-links__item"&gt;
+      &lt;a href="https://github.com/elbuffeto"&gt;
+        &lt;img src="../images/socials/github.svg" alt="Compte github de Loriane Buffet" class="social-links__icon"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li class="social-links__item"&gt;
+      &lt;a href="https://www.linkedin.com/in/lorianebuffet"&gt;
+        &lt;img src="../images/socials/linkedin.svg" alt="Compte linkedin de Loriane Buffet" class="social-links__icon"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li class="social-links__item"&gt;
+      &lt;a href="https://www.twitter.com/elbuffeto"&gt;
+        &lt;img src="../images/socials/twitter.svg" alt="Compte twitter de Loriane Buffet" class="social-links__icon"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+:ET

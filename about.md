@@ -26,3 +26,4 @@ Quand je ne code pas, j'adore partir en vadrouille avec mon vélo pour une balad
 
 - Thème : <a href="https://github.com/barryclark/jekyll-now">Jekyll Now{% include external-icon.html %}</a>
 - Photo de profil : Diana Parkhouse on Unsplash
+- Icônes des réseaux sociaux : Projet <a href="https://simpleicons.org/" lang="en" hreflang="en">Simple Icons{% include external-icon.html %}</a> 

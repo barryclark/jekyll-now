@@ -380,6 +380,8 @@ a {
   }
 }
 
+
+// Footer
 .footer {
   background-color: $lightGray;
   border-bottom: 1px solid #ddd;
@@ -391,6 +393,29 @@ a {
   &__inner {
     margin: 0 auto;
     max-width: $wrapper;
+  }
+
+  &__list {
+
+  }
+}
+
+.social-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  &__icon {
+    height: 35px;
+    width: 35px;
   }
 }
 
