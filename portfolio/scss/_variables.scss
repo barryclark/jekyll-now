@@ -1,0 +1,27 @@
+$dark-grey: #333;
+$light-grey: #e0e0e0 ;
+$white: #ffffff;
+$yellow:#FEBC37;
+$pink:#D83751;
+$sky:#2EB5FB;
+$grey:#3C4145;
+$black:#000;
+$bg-head:$yellow;
+
+
+@mixin mobile {
+  @media screen and (max-width: 529px) {
+    @content;
+  }
+}
+// Mobile tablet
+@mixin tablet {
+    @media only screen and (min-width: 530px) and (max-width: 949px) {
+        @content;
+    }
+}
+@mixin mobile-small-land{
+    @media only screen and (max-width: 529px) and (orientation: landscape){
+        @content;
+    }
+}
