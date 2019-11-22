@@ -19,8 +19,10 @@ November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
 December 2 - 6: AWS re:Invent, Las Vegas
 
 December 9 - 10: Kubernetes Forums, Seoul
+* **Keynote - Cloud Native, Past, Present and Future**
 
 December 11 - 14: Kubernetes Forums, Sydney
+* **Keynote - Cloud Native, Past, Present and Future**
 
 ### 2020
 
