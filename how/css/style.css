@@ -477,9 +477,13 @@ li p {
   margin-left: 32px;
   line-height: 1.3em; }
 
+strong {
+  font-weight: bold; }
+
 .desc {
   line-height: 1.5;
-  color: #3C4145; }
+  color: #3C4145;
+  margin-top: 16px; }
   .desc a {
     background: #2EB5FB;
     padding: 2px 8px;
@@ -494,12 +498,6 @@ li p {
   font-family: Shnobel;
   font-size: 18px;
   padding: 8px; }
-
-strong {
-  font-weight: bold;
-  background: #D83751;
-  padding: 1px 8px;
-  color: #ffffff; }
 
 body {
   font-family: 'Inter'; }
@@ -645,11 +643,6 @@ header {
     z-index: 3;
     font-weight: 900;
     text-shadow: 1px 1px 35px rgba(0, 100, 100, 0.1); }
-  header a:hover {
-    letter-spacing: 5px;
-    background: #000;
-    -webkit-animation: shadow-glitch .3s ease-in-out;
-    animation: shadow-glitch .3s ease-in-out; }
   header .glitch {
     -ms-grid-row: 4;
     grid-row-start: 4;
@@ -726,56 +719,3 @@ header {
       display: inline-block;
       width: 100%;
       margin-bottom: 48px; }
-
-.tools {
-  -ms-grid-column: 4;
-  grid-column-start: 4;
-  -ms-grid-column-span: 1;
-  grid-column-end: 5; }
-  .tools h2 {
-    text-align: right;
-    float: right; }
-  .tools h5.fun {
-    text-align: right;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 48px; }
-  .tools .this-tool {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 5fr;
-    grid-template-columns: 1fr 5fr;
-    -ms-grid-rows: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 016px;
-    margin-bottom: 24px; }
-    .tools .this-tool svg {
-      stroke-linecap: round;
-      stroke-linejoin: round; }
-    .tools .this-tool .icon {
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 2;
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 1;
-      grid-area: 1 / 1 / 3 / 2;
-      -ms-grid-row-align: center;
-      align-self: center;
-      -ms-grid-column-align: center;
-      justify-self: center;
-      width: 80px;
-      height: 80px; }
-    .tools .this-tool .title {
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 1;
-      -ms-grid-column: 2;
-      -ms-grid-column-span: 1;
-      grid-area: 1 / 2 / 2 / 3;
-      text-align: left;
-      margin-bottom: 0px; }
-    .tools .this-tool p.desc {
-      -ms-grid-row: 2;
-      -ms-grid-row-span: 1;
-      -ms-grid-column: 2;
-      -ms-grid-column-span: 1;
-      grid-area: 2 / 2 / 3 / 3; }
