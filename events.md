@@ -7,15 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2019
 
-
-November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
-* End User Panel at the Kubernetes Contributor Summit
-* Panel at Cloud Native Storage Day
-* [**Lightning Talk: Want to Donate a Project to the CNCF? Here's How**](https://sched.co/UafB)
-* [**CNCF Keynote**](https://kccncna19.sched.com/event/UdPH/keynote-cheryl-hung-director-of-ecosystem-cloud-native-computing-foundation)
-* **CNCF Research User Group**
-* **CNCF Telecoms User Group**
-
 December 2 - 6: AWS re:Invent, Las Vegas
 
 December 9 - 10: Kubernetes Forums, Seoul
