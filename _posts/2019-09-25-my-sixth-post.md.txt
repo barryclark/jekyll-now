@@ -1,5 +1,5 @@
 ---
-layout: post
+Category: post
 title: Learning Journal for September 25th
 ---
 ### Homework: The observer pattern in Java
