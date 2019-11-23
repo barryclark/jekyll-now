@@ -1,5 +1,5 @@
 ---
-layout: post
+Category: post
 title: Learning Journal for September 27th
 ---
 # Homework: Rewrite the following data in XML and JSON 
