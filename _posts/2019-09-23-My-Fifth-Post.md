@@ -60,6 +60,5 @@ To test the commands, we also create a test folder and used the same interface *
 
 We have also used more complicated concepts like creating ***the player*** class to record the names of different players, and used the ***build the world*** method to create multiple locations and exits. In testing, we also learn how to use Mochito to mock a class with the ***spy*** method. This was our first time to see the application of decorator.
 
-### Design pattern
 
 
