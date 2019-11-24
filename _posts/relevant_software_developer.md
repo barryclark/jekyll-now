@@ -31,9 +31,9 @@ In my opinion, it's a way of life that can be practiced in a lot of different wa
 After a bit of philosophy let's get down to the specifics (you check out my personal resources at the end of the post):
 
 * **General curiosity** - My grandfather always said to me "when someone is helping you, always watch over their shoulders", which I construed as always ask "why?", do not let potential knowledge pass you by:
-- Always explore when given a task to do, look to your right and look to your left for different solutions and possibilities.
-- Pay attention, participate in (actively or just listening) colleagues discussions about work ("shop talk").
-- Make the most of code reviews given by you or to you and learn from them.
+** Always explore when given a task to do, look to your right and look to your left for different solutions and possibilities.
+** Pay attention, participate in (actively or just listening) colleagues discussions about work ("shop talk").
+** Make the most of code reviews given by you or to you and learn from them.
 * **Share knowledge, *always and with everyone*** - In the course of a discussion, during a code review, by giving a talk or any other way.
 
     You may surprise yourself that you're wrong sometimes (What!? NO!), or out of date in certain topics. Even if you're correct in a discussion, it will give you practice in conveying ideas (a very important skill), and potentially a better understanding of the discussed subjects. Use the time that others had spent in exploring those topics, you can benefit a lot from learning how other people approached some subjects/issues and what they had learned.
