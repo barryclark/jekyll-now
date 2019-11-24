@@ -7,7 +7,6 @@ image: /images/2017-09-28-cloudnative.jpg
 tags:
   - Photos
   - "2017"
-  - Featured
 redirect_from: /CloudNativeContainerSched/
 ---
 
