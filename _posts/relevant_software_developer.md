@@ -31,6 +31,7 @@ In my opinion, it's a way of life that can be practiced in a lot of different wa
 After a bit of philosophy let's get down to the specifics (you check out my personal resources at the end of the post):
 
 * **General curiosity** - My grandfather always said to me "when someone is helping you, always watch over their shoulders", which I construed as always ask "why?", do not let potential knowledge pass you by:
+
 ** Always explore when given a task to do, look to your right and look to your left for different solutions and possibilities.
 ** Pay attention, participate in (actively or just listening) colleagues discussions about work ("shop talk").
 ** Make the most of code reviews given by you or to you and learn from them.
