@@ -21,6 +21,57 @@ title: Learning Journal for Spring  FrameWork and MYSQL
 
      https://www.youtube.com/watch?v=Eqi-hYX50MI
 
-{developers only configure the objects. They do not have control to the objects; objects are controlled by the Spring Framework}
+* developers only configure the objects. They do not have control to the objects; objects are controlled by the Spring Framework
+
 5. Open-source and no vender lock-in
+
+Example: Configuration
+
+(1)Set up a Spring Configuration class
+```
+package org.improving.drill;//add the packiage
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ComponentScan;
+
+@Configuration
+//package is required
+@ComponentScan("org.improving")
+
+public class SpringConfiguration {
+
+}
+
+
+```
+(2)Set up the scanning in Main class
+
+```
+package org.improving.drill;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
+
+@Component
+public class Drill {
+    private final ConsoleInputOutput io;
+    private final List<Command> commands;
+
+    public Drill(ConsoleInputOutput io, List<Command> commands) {
+        this.io = io;
+        this.commands = commands;
+    }
+
+    public static void main (String [] args) {
+        var context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
+        var drill = context.getBean(Drill.class);
+        drill.run();
+    }
+
+
+
+```
 
