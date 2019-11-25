@@ -151,6 +151,8 @@ First of all, REST does not define a standard message exchange format. You can b
 	* The service result should be Cacheable. HTTP cache, for example.
 	* Service should assume a Layered architecture. Client should not assume direct connection to server - it might be getting info 
 	from a middle layer - cache.
+
+
 ***Question: The relationship between api: Json Views, SimpleAPIController, client:BookClient etc. and Intercepters:Book & Book Repository***	
 
 Example:
