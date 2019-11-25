@@ -103,6 +103,15 @@ Interceptors working with the HandlerMapping on the framework must implement the
 3.	How can services/ applications talk to each other?
 ***They should be standard formats so that they can be used with varied kind of platforms. JSON and XML are quite popular Data Exchange formats.***
 
+4. REST vs SOAP are not really comparable. REST is an architectural style. SOAP is a message exchange format.
+
+5.The differences among making HTTP requests:
+
+	* REST is built over simple HTTP protocol. SOAP services are more complex to implement and more complex to consume.
+	* REST has better performance and scalability. REST reads can be cached, SOAP based reads cannot be cached.
+	* REST permits many different data formats (JSON is the most popular choice) where as SOAP only permits XML.
+	*SOAP services have well defined structure and interface (WSDL) and has a set of well defined standards (WS-Security, WS-  	 AtomicTransaction and WS-ReliableMessaging). Documentation standards with REST are evolving(We will use Swagger in this course).
+
 #### SOAP ####
 SOAP was earlier an abbreviation for Simple Object Access Protocol. In SOAP, the request and response are in XML format. However, not all types of XML are valid SOAP Requests.
 
