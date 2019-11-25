@@ -50,3 +50,25 @@ OR
     }
 
 ```
+2.Use Intercepters to handle the exception
+```
+@ExceptionHandler (TeapotException.class)
+@ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
+    public String exceptionHandler(Model model, TeapotException t){
+    model.addAttribute("errorMessage", t.getMessage());
+    return "error";
+
+}
+
+
+```
+And then override the message with a specific class
+```
+@ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
+public class TeapotException extends RuntimeException {
+public TeapotException(){
+    super("I am a teapot!"); //set up a message
+}
+
+```
+
