@@ -1,0 +1,36 @@
+I"�<p>Pour conclure sur les liens avec les nouvelles fenêtres ou non.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://knowbility.org/blog/2019/links-opening-new-windows-no-warning/" lang="en">How to Stop Opening Links in New Windows without Warning<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+
+<p>###Ouvrir une nouvelle fenêtre sans avertir l’utilisateur :
+Vieille habitude = liens du même site dans la même fenêtre et liens vers un autre site dans une nouvelle fenêtre.</p>
+
+<p>Argument le plus souvent avancé dans le marketing : il faut garder les visiteurs sur notre site.</p>
+
+<p>Argument entendu aussi : pratique habituelle auquelle tous les utilisateurs sont habitués.</p>
+
+<p>###Conséquences :
+On ne peut plus utiliser le bouton back.</p>
+
+<p>Comportement qui peut être innatendu pour des personnes non familières du web.</p>
+
+<p>Ainsi, un utilisateur naviguant uniquement à l’aide de la touche tabulation va devoir effectuer des manipulations supplémentaires pour fermer et revenir à la fenêtre d’origine.</p>
+
+<p>Les utilisateurs ayant des troubles de l’attention peuvent également être désorientés par les ouvertures de nouvelles fenêtres, surtout si elles ne sont pas de leur fait (ouverture sans action de l’utilisateur).</p>
+
+<p>On force le comportement naturel du navigateur et on impose ce choix à l’utilisateur.</p>
+
+<h3 id="solutions">Solutions</h3>
+<p>Laisser l’utilisateur décider. Préférence de chacun. Clic droit “nouvelle fenêtre ou onglet” choisi par l’utilisateur.</p>
+
+<p>Si ces arguments ne convainquent pas les autres personnes avec lesquelle vous travaillez :</p>
+<ul>
+  <li>écrire en toutes lettre dans l’intitulé du lien : nouvelle fenêtre.</li>
+</ul>
+
+:ET
