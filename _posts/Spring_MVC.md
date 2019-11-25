@@ -12,7 +12,7 @@ title: Learning Journal for Spring  MVC keywords
 Model–View–Controller (usually known as MVC) is a software design pattern commonly used for developing user interfaces which divides the related program logic into three interconnected elements. This is done to separate internal representations of information from the ways information is presented to and accepted from the user. Following the MVC architectural pattern decouples these major components allowing for code reuse and parallel development.
 
 1.Model
-The central component of the pattern. It is the application's dynamic data structure, independent of the user interface.[5] It directly manages the data, logic and rules of the application.
+The central component of the pattern. It is the application's dynamic data structure, independent of the user interface. It directly manages the data, logic and rules of the application.
 
 2.View
 Any representation of information such as a chart, diagram or table. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.
@@ -71,4 +71,17 @@ public TeapotException(){
 }
 
 ```
+OR setting a general error message
+
+```
+@ExceptionHandler (Exception.class)
+@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+
+public String exceptionHandler(Model model, Exception e){
+    model.addAttribute("errorMessage", e.getMessage());
+    return "error";
+}
+
+```
+***Question: Does this handler need to be inserted into HTML pages? It looks like model is independent from the UI. If so, what are the error messages for?***
 
