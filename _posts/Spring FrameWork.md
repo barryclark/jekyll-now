@@ -72,3 +72,11 @@ public class Drill {
 
 ```
 Other classes in this bean need to have ***@component*** on top
+
+***What do the following terms mean in Spring Framework? (1) constructor injection (2) setter injection (3) interface injection Spring Framework only supports (1) and (2). Is it talking about the dependencies as classes or external libraries?
+
+#### SpringFrameWork IoC containers
+
+Bean Factory                                 | Application Context
+-------------                                | -------------
+instantiate beans whenever asked by clients  | built on top of the bean factory interface; extra functionality
