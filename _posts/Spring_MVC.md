@@ -145,11 +145,79 @@ The *HomeworkTag* class will define more attributes accordingly.
 First of all, REST does not define a standard message exchange format. You can build REST services with both XML and JSON. However, JSON is a more popular format with REST. Key abstraction in REST is a Resource. There is no restriction on what can be a resource. 
 
 * Restful Service Constraints
-•	Client - Server : There should be a service producer and a service consumer.
-•	The interface (URL) is uniform and exposing resources. Interface uses nouns (not actions)
-•	The service is stateless. Even if the service is called 10 times, the result must be the same.
-•	The service result should be Cacheable. HTTP cache, for example.
-•	Service should assume a Layered architecture. Client should not assume direct connection to server - it might be getting info from a middle layer - cache.
+	* Client - Server : There should be a service producer and a service consumer.
+	* The interface (URL) is uniform and exposing resources. Interface uses nouns (not actions)
+	* The service is stateless. Even if the service is called 10 times, the result must be the same.
+	* The service result should be Cacheable. HTTP cache, for example.
+	* Service should assume a Layered architecture. Client should not assume direct connection to server - it might be getting info 
+	from a middle layer - cache.
+***Question: The relationship between api: Json Views, SimpleAPIController, client:BookClient etc. and Intercepters:Book & Book Repository***	
+
+Example:
+```
+package com.improving.bootcamp.api;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
+import com.improving.bootcamp.Book;
+import com.improving.bootcamp.BookRepository;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+@RestController
+@RequestMapping("/api")
+public class SimpleAPIController {
+
+    private final BookRepository bookRepository;
+
+    public SimpleAPIController(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+
+    @JsonView(JsonViews.SummaryView.class)
+    @GetMapping("/books")
+    public List<Book> books(){
+        return bookRepository.getBooks();
+
+    }
+
+    @JsonView(JsonViews.DetailsView.class)
+    @GetMapping("/book/{id}")
+
+    public Book book (@PathVariable int id){
+        return bookRepository.getBook(id);
+    }
+
+    @PutMapping("/book")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Book addBook(@RequestBody Book book) {
+        bookRepository.add(book);
+        return book;
+    }
+
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+
+    public ResponseEntity<?> errorHandler(MethodArgumentNotValidException e) {
+        Map<String, String> errors = new HashMap<>();
+
+        e.getBindingResult().getFieldErrors().forEach(fieldError->
+                errors.put(fieldError.getField(), fieldError.getDefaultMessage())
+                );
+
+        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
+    }
+
+}
+
+
+```
 
 * The maturity model:
 Richardson Maturity Model
