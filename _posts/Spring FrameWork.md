@@ -75,4 +75,4 @@ public class Drill {
 
 
 ```
-Other classes in this bean need to have *** @component *** on top
+Other classes in this bean need to have ***@component*** on top
