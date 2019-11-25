@@ -105,7 +105,7 @@ Interceptors working with the HandlerMapping on the framework must implement the
 
 4. REST vs SOAP are not really comparable. REST is an architectural style. SOAP is a message exchange format.
 
-5.The differences among making HTTP requests:
+5. The differences among making HTTP requests:
 
 	* REST is built over simple HTTP protocol. SOAP services are more complex to implement and more complex to consume.
 	* REST has better performance and scalability. REST reads can be cached, SOAP based reads cannot be cached.
@@ -115,6 +115,31 @@ Interceptors working with the HandlerMapping on the framework must implement the
 #### SOAP ####
 SOAP was earlier an abbreviation for Simple Object Access Protocol. In SOAP, the request and response are in XML format. However, not all types of XML are valid SOAP Requests.
 
+Example:
+```
+<?xml version = "1.0" encoding = "ISO-8859-1" ?>
+
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>homework</short-name>
+    <uri>http://tomcat.apache.org/homework-taglib</uri>
+    <description>Say hello</description>
+
+    <tag>
+        <name>homework</name>
+        <tag-class>com.improving.bootcamp.HomeworkTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+```
+The *HomeworkTag* class will define more attributes accordingly.
 
 #### RESTFUL ####
 First of all, REST does not define a standard message exchange format. You can build REST services with both XML and JSON. However, JSON is a more popular format with REST. Key abstraction in REST is a Resource. There is no restriction on what can be a resource. 
