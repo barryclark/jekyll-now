@@ -96,18 +96,18 @@ Interceptors working with the HandlerMapping on the framework must implement the
   * postHandle() – called after the handler is executed
   * afterCompletion() – called after the complete request has finished and view was generated
   
-   #### REST v.s. SOAP API ####
+#### REST v.s. SOAP API ####
 *Content from https://www.springboottutorial.com/introduction-to-web-services-with-soap-and-rest*
 1.	If a page can only show the end users the information, it is not a web service, but a *web application*
 2.	The definition of WEB SERVICE: ***Software system designed to support interoperable machine-to-machine interaction over a network***
 3.	How can services/ applications talk to each other?
 ***They should be standard formats so that they can be used with varied kind of platforms. JSON and XML are quite popular Data Exchange formats.***
 
-####SOAP####
+#### SOAP ####
 SOAP was earlier an abbreviation for Simple Object Access Protocol. In SOAP, the request and response are in XML format. However, not all types of XML are valid SOAP Requests.
 
 
-####RESTFUL####
+#### RESTFUL ####
 First of all, REST does not define a standard message exchange format. You can build REST services with both XML and JSON. However, JSON is a more popular format with REST. Key abstraction in REST is a Resource. There is no restriction on what can be a resource. 
 
 * Restful Service Constraints
@@ -119,11 +119,12 @@ First of all, REST does not define a standard message exchange format. You can b
 
 * The maturity model:
 Richardson Maturity Model
+
 Richardson Maturity Model defines the maturity level of a Restful Web Service. Following are the different levels and their characteristics.
-•	Level 0 : Expose SOAP web services in REST style. Expose action based services (http://server/getPosts, http://server/deletePosts, http://server/doThis, http://server/doThat etc) using REST.
-•	Level 1 : Expose Resources with proper URI’s (using nouns). Ex: http://server/accounts, http://server/accounts/10. However, HTTP Methods are not used.
-•	Level 2 : Resources use proper URI’s + HTTP Methods. For example, to update an account, you do a PUT to . The create an account, you do a POST to . Uri’s look like posts/1/comments/5 and accounts/1/friends/1.
-•	Level 3 : HATEOAS (Hypermedia as the engine of application state). You will tell not only about the information being requested but also about the next possible actions that the service consumer can do. When requesting information about a facebook user, a REST service can return user details along with information about how to get his recent posts, how to get his recent comments and how to retrieve his friend’s list.
+1. Level 0 : Expose SOAP web services in REST style. Expose action based services (http://server/getPosts, http://server/deletePosts, http://server/doThis, http://server/doThat etc) using REST.
+2. Level 1 : Expose Resources with proper URI’s (using nouns). Ex: http://server/accounts, http://server/accounts/10. However, HTTP Methods are not used.
+3. Level 2 : Resources use proper URI’s + HTTP Methods. For example, to update an account, you do a PUT to . The create an account, you do a POST to . Uri’s look like posts/1/comments/5 and accounts/1/friends/1.
+4. Level 3 : HATEOAS (Hypermedia as the engine of application state). You will tell not only about the information being requested but also about the next possible actions that the service consumer can do. When requesting information about a facebook user, a REST service can return user details along with information about how to get his recent posts, how to get his recent comments and how to retrieve his friend’s list.
 
 
 
