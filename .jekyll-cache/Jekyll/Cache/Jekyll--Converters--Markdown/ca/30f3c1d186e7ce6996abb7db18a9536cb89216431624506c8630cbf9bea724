@@ -1,0 +1,50 @@
+I"<p>Pour conclure sur les liens avec les nouvelles fenêtres ou non.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://knowbility.org/blog/2019/links-opening-new-windows-no-warning/" lang="en">How to Stop Opening Links in New Windows without Warning<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+  <li>lire l’article <a href="http://romy.tetue.net/liens-ouvrant-une-nouvelle-fenetre?lang=fr">Liens ouvrant une nouvelle fenêtre<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Romy Duhem-Verdière.</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="lien-externe--nouvelle-fenêtre">Lien externe = nouvelle fenêtre</h3>
+<p>En tant que développeurs.euses, nous avons tous eu à ajouter des liens sur les sites que nous codons et quasi systématiquement il nous est demandé, dans le cas de liens externes, de faire en sorte que ces liens s’ouvrent dans une nouvelle fenêtre ou un nouvel onglet.</p>
+
+<p>Les raisons généralement invoquées pour justifier ce choix sont :</p>
+<ul>
+  <li>“je veux garder mes utilisateurs”</li>
+  <li>“les utilisateurs sont habitués à ce comportement”</li>
+  <li>“tout le monde le fait”, d’ailleurs Google lui même fait cela lorsque l’on fait une recherche d’image et que l’on veut accéder à l’image source.</li>
+  <li>“je préfère ce mode de navigation”</li>
+</ul>
+
+<h3 id="quelle-conséquences-">Quelle conséquences ?</h3>
+<p>A ce stade, il est de notre devoir de professionnels et professionnelles du web d’argumenter contre ce choix, d’abord en rejetant les raisons précédemment invoquées :</p>
+
+<h4 id="je-veux-garder-mes-utilisateurs">“Je veux garder mes utilisateurs”</h4>
+<p>On ne le dira jamais assez mais ce sont <a href="https://www.opquast.com/glossaire/contenus/">les contenus qui donnent de la vraie valeur ajoutée à votre site<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, et ce sont ces contenus qui donneront aux utilisateurs l’envie de revenir. Si vous comptez uniquement sur les liens ouverts dans de nouvelles pages pour garder vos utilisateurs c’est qu’il faut donc s’interroger sur la pertinence et l’utilité de vos contenus. D’autre part, l’abus de ce type de pratique qui vise à “piéger” l’internaute pour le garder à tout prix peut avoir un effet contre productif et lui déplaire au point de ne plus avoir envie de revenir sur votre site (lire à ce sujet l’article de Bellami <a href="http://www.bellami.fr/pourquoi-ouvrir-un-lien-dans-une-nouvelle-fenetre">Pourquoi ouvrir un lien dans une nouvelle fenêtre ?<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>).</p>
+
+<h4 id="les-utilisateurs-sont-habitués-à-ce-comportement">“Les utilisateurs sont habitués à ce comportement”</h4>
+<p>Non, tous les utilisateurs et utilisatrices du web n’ont pas pris cette habitude, ils ou elles peuvent même se sentir perdus à l’apparition de nouvelles fenêtres ou onglets qu’il n’ont pas sollicités. A titre d’exemple, je donne des cours d’informatique débutant et j’ai vu à plusieurs reprises mes élèves cliquer frénétiquement sur un lien, ouvert dans un nouvel onglet mais qu’ils n’avaient pas remarqué. 23% des français ne sont pas à l’aise avec le numérique et parmi eux 7% trouve que la navigation est difficile (source : <a href="https://speakerdeck.com/webetcaetera/exclusion-numerique-et-societe-digitalisee-les-enjeux-pour-le-design-dinterface-et-de-service?slide=2" aria-label="Diaporama de la conférence Exclusion numérique et société digitalisée, les enjeux pour le design d’interface et de service">Conférence “Exclusion numérique et société « digitalisée », les enjeux pour le design d’interface et de service”<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Véronique Lapierre)</p>
+
+<p>On ne peut plus utiliser le bouton back.</p>
+
+<p>Comportement qui peut être innatendu pour des personnes non familières du web.</p>
+
+<p>Ainsi, un utilisateur naviguant uniquement à l’aide de la touche tabulation va devoir effectuer des manipulations supplémentaires pour fermer et revenir à la fenêtre d’origine.</p>
+
+<p>Les utilisateurs ayant des troubles de l’attention peuvent également être désorientés par les ouvertures de nouvelles fenêtres, surtout si elles ne sont pas de leur fait (ouverture sans action de l’utilisateur).</p>
+
+<p>On force le comportement naturel du navigateur et on impose ce choix à l’utilisateur.</p>
+
+<h3 id="solutions">Solutions</h3>
+<p>Laisser l’utilisateur décider. Préférence de chacun. Clic droit “nouvelle fenêtre ou onglet” choisi par l’utilisateur.</p>
+
+<p>Si ces arguments ne convainquent pas les autres personnes avec lesquelle vous travaillez :</p>
+<ul>
+  <li>écrire en toutes lettre dans l’intitulé du lien : nouvelle fenêtre.</li>
+  <li>préciser dans le title (limites de cet attribut abordées précédemment) soit dans aria-label</li>
+  <li>soit à l’aide d’un pictogramme (ne pas confondre avec celui d’un lien externe)</li>
+</ul>
+
+:ET
