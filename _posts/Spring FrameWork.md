@@ -161,5 +161,5 @@ public class JPAConfiguration {
 | -------------                            | -------------       |	-------------  
 | Annotate classes at presentation layers  | service layer level |  persistence layer(database repository)
 
-#### Spring Framework Layers
+#### Spring Framework Layers (from Edureca! https://www.youtube.com/watch?v=210tVT2uPvI)
 ![Architecture Layers](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/SpringFrameWork-2.PNG)
