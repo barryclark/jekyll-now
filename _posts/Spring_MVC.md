@@ -25,3 +25,28 @@ Accepts input and converts it to ***commands for the model or view***. The view 
 * The javax.servlet and javax.servlet.http packages represent interfaces and classes for servlet api.
 * The *** javax.servlet *** package contains many interfaces and classes that are used by the servlet or web container. These are not specific to any protocol.
 * The *** javax.servlet.http *** package contains interfaces and classes that are responsible for http requests only.
+
+        
+### Concepts in Spring MVC ###
+
+#### Exception Handler ####
+
+1.Set a route for exceptions under *Controller*
+
+```
+	@GetMapping("/teapot")
+public String teapot(){
+    throw new TeapotException();
+}
+
+
+```
+
+OR
+```
+@GetMapping("/bad")
+    public String badRequest(){
+        throw new RuntimeException("Something went wrong");
+    }
+
+```
