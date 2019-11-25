@@ -26,6 +26,7 @@ Accepts input and converts it to ***commands for the model or view***. The view 
 * The *** javax.servlet *** package contains many interfaces and classes that are used by the servlet or web container. These are not specific to any protocol.
 * The *** javax.servlet.http *** package contains interfaces and classes that are responsible for http requests only.
 
+### Question: Is the information about Servlet enough? ###
         
 ### Concepts in Spring MVC ###
 
