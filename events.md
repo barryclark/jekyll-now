@@ -19,4 +19,6 @@ December 11 - 14: Kubernetes Forums, Sydney
 
 March 31 - April 2: KubeCon + CloudNativeCon Europe, Amsterdam
 
+July 28 - 30: KubeCon + CloudNativeCon China, Shanghai
+
 November 18 - 20: KubeCon + CloudNativeCon North America, Boston
