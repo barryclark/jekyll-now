@@ -153,3 +153,11 @@ public class JPAConfiguration {
 
 
 ```
+
+#### Different annotations ####
+@Component: General stereotype and can be used across application
+
+| @Controller                              | @Service            |   @Repository  
+| -------------                            | -------------       |	-------------  
+| Annotate classes at presentation layers  | service layer level |  persistence layer(database repository)
+
