@@ -26,7 +26,7 @@ Accepts input and converts it to ***commands for the model or view***. The view 
 * The *** javax.servlet *** package contains many interfaces and classes that are used by the servlet or web container. These are not specific to any protocol.
 * The *** javax.servlet.http *** package contains interfaces and classes that are responsible for http requests only.
 
-### Question: Is the information about Servlet enough? ###
+*** Question: Is the information about Servlet enough? ***
         
 ### Concepts in Spring MVC ###
 
@@ -230,6 +230,18 @@ Richardson Maturity Model defines the maturity level of a Restful Web Service. F
 2. Level 1 : Expose Resources with proper URI’s (using nouns). Ex: http://server/accounts, http://server/accounts/10. However, HTTP Methods are not used.
 3. Level 2 : Resources use proper URI’s + HTTP Methods. For example, to update an account, you do a PUT to . The create an account, you do a POST to . Uri’s look like posts/1/comments/5 and accounts/1/friends/1.
 4. Level 3 : HATEOAS (Hypermedia as the engine of application state). You will tell not only about the information being requested but also about the next possible actions that the service consumer can do. When requesting information about a facebook user, a REST service can return user details along with information about how to get his recent posts, how to get his recent comments and how to retrieve his friend’s list.
+
+#### OAuth ####
+#### Servlet ####
+#### JSP and Tags in JSP ####
+Legacy 
+####  Authentication (knowing who you are) v.s. Authorization (what people can do) ####
+
+#### Blocking v.s. Unblocking ####
+
+The term, “reactive,” refers to programming models that are built around reacting to change — network components reacting to I/O events, UI controllers reacting to mouse events, and others. In that sense, non-blocking is reactive, because, instead of being blocked, we are now in the mode of reacting to notifications as operations complete or data becomes available.
+There is also another important mechanism that we on the Spring team associate with “reactive” and that is non-blocking back pressure. In synchronous, imperative code, blocking calls serve as a natural form of back pressure that forces the caller to wait. In non-blocking code, it becomes important to control the rate of events so that a fast producer does not overwhelm its destination.
+
 
 
 
