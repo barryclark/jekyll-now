@@ -88,10 +88,10 @@ public String exceptionHandler(Model model, Exception e){
 #### Intercepter ####
 Definition from the website resources:
 Interceptors working with the HandlerMapping on the framework must implement the HandlerInterceptor interface.
-*In order to use HandlerIntercpetor, dependencies like below is required
+* In order to use HandlerIntercpetor, dependencies like below is required
    *'org.springframework.boot:spring-boot-starter-web'
 
-*This interface contains three main methods:
+* This interface contains three main methods:
   * prehandle() – called before the actual handler is executed, but the view is not generated yet
   * postHandle() – called after the handler is executed
   * afterCompletion() – called after the complete request has finished and view was generated
