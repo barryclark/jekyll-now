@@ -18,13 +18,13 @@ title: Learning Journal for Spring  FrameWork and MYSQL
  * every property should have public getters and 
   setters
   
-4.dependency injection  and inversion of control 
+ 4. dependency injection  and inversion of control 
 
      https://www.youtube.com/watch?v=Eqi-hYX50MI
 
 * developers only configure the objects. They do not have control to the objects; objects are controlled by the Spring Framework
 
-5. Open-source and no vender lock-in
+ 5. Open-source and no vender lock-in
 
 Example: Configuration
 
@@ -75,4 +75,4 @@ public class Drill {
 
 
 ```
-
+Other classes in this bean will not be run unless there is an @component on top
