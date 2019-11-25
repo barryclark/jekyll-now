@@ -17,6 +17,7 @@ title: Learning Journal for Spring  FrameWork and MYSQL
      (optional)
  * every property should have public getters and 
   setters
+  
 4.dependency injection  and inversion of control 
 
      https://www.youtube.com/watch?v=Eqi-hYX50MI
