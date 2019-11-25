@@ -44,3 +44,8 @@ Maybe next time you are asked to make such tradeoff, answer 'It Depends' and thi
 Feedback from [@mamund](https://twitter.com/mamund):
 
 This choice between "all-in" on a platform and mix and match your own also has a maturity element. When you first begin, let other make choices for you while you focus on what's important. As you grow more adept, start to see patterns and "blocks" of functionality in the system (big picture) where you can make changes (add my own monitoring tools, etc.) and, finally, when you are well-versed in the way the system behaves, you can better afford to take on added complexity of choice and flexibility. So in addition there is a maturity-over-time dimension affecting your trade-off.
+
+---
+From [@patkua](https://twitter.com/patkua) in his latest [email newletter](http://levelup.thekua.com)
+
+He references two articles which are expressing the need for systems thinking much better than I ever can do: [Russel Ackoff: A Lifetime of System Thinking](https://thesystemsthinker.com/a-lifetime-of-systems-thinking/) and [Will Larsen's: Notes on Evolutionary Architecture](https://lethain.com//building-evolutionary-architectures/)
