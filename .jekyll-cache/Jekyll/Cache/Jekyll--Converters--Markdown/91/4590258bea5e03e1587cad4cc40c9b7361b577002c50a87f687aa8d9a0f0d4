@@ -1,0 +1,49 @@
+I"�<p>Petit compte-rendu de ma journée passée avec l’équipe Tanaguru pour travailler sur l’audit d’accessibilité.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>transformer une boîte de céréales en produit marketing de rêve pour promouvoir Tanaguru</li>
+  <li>couvrir un mur entier de post-it où se retrouvaient pêle-mêle les termes “checklist”, “validation”, “évaluation”, “pictogrammes”, “infobulles”…</li>
+  <li>échanger avec des experts et expertes accessibilité sur leur métier et la façon dont ils et elles auditent des sites</li>
+  <li>gagner un super <a href="https://www.cyberspace.builders/stickers/human-division">sticker “Expert Accessibilité” créé par Julien Dubedout<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+</ul>
+
+<h2 id="tanaguru-engine-loutil-daudit-daccessibilité">Tanaguru Engine, l’outil d’audit d’accessibilité</h2>
+<p>Pour celles et ceux qui ne connaissent pas, Tanaguru Engine est un produit open-source permettant d’auditer et de vérifier le niveau d’accessibilité d’un site, d’une page ou d’un processus en ligne. Il suffit de rentrer l’URL d’une ou plusieurs pages pour obtenir un compte rendu détaillant les critères d’accessibilité. Il est possibles de trier ensuite ces critères par thématique (images, tableaux, contenu…) ou statut (validés, invalidés, pré-qualifiés…). Ce logiciel étant open-source, seule la version SaaS est payante.</p>
+
+<p>Tanaguru propose également un web extension à rajouter dans votre navigateur, et un outil de contrôle d’accessibilité des couleurs appelé Tanaguru Contrast Finder. Vous pouvez trouver ces outils <a href="https://www.tanaguru.com/fr/solutions-open-source-tanaguru/">sur la page dédiée<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg><a>.</a></a></p>
+
+<p>Dans l’optique d’une refonte de Tanaguru Engine, l’objectif de cette journée était double :</p>
+<ul>
+  <li>récolter les besoins des utilisateurs et utilisatrices</li>
+  <li>améliorer l’interface existante et proposer de nouvelles fonctionnalités</li>
+</ul>
+
+<p>Je n’avais personnellement jamais utilisé Tanaguru Engine avant cette journée, même si je connaissais Tanaguru et son rôle dans le paysage de l’accessibilité web français. J’ai décidé de participer à cette journée pour plusieurs raisons :</p>
+<ul>
+  <li>avant tout par curiosité, pour en apprendre plus sur Tanaguru Engine et l’audit d’accessibilité de manière générale.</li>
+  <li>pour rencontrer et discuter avec des acteurs de l’accessibilité et des gens intéressés par le sujet</li>
+  <li>pour me mettre “de l’autre côté” : en tant que développeuse, il m’arrive régulièrement d’utiliser des outils de tests automatiques sur les sites que je crée et je trouvais donc intéressant d’en apprendre plus sur la façon dont ces outils sont conçus.</li>
+</ul>
+
+<p>Je ne détaillerai pas ici le contenu des ateliers qui était très spécifique et centré sur Tanaguru Engine, mais les différents brainstormings de la journée ont permis de mettre en évidence plusieurs questions et problématiques plus larges :</p>
+<ul>
+  <li>à qui sont destinés les outils d’audit d’accessibilité ? Au plus de monde possible ou à des experts ?</li>
+  <li>doit-on établir des niveaux d’exigence inférieurs aux critères AA pour atteindre un premier niveau facile d’accessibilité ?</li>
+  <li>comment rendre le processus d’audit moins fastidieux ?</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="les-différents-types-daudits">Les différents types d’audits</h3>
+<p>Les audits les plus faciles à mettre en oeuvre sont <strong>les audits automatisés</strong> : il s’agit de tests sur des critères vérifiables par des logiciels, par exemple “Toutes les images doivent posséder un attribut “alt”” ou encore “La hiérarchie des titres suit un ordre logique”. Les tests automatisés permettent de traiter environ 30% de la totalité des critères d’accessibilité.</p>
+
+<p>Ces tests automatiques, s’ils consitutent une aider précieuse et un gain de temps certain, ne permettent pas de traiter l’ensemble des critères. Certains nécessitent une analyse plus poussée et doivent faire l’objet <strong>d’audits manuels</strong>, réalisés par un être humain. Par exemple, une machine peut détecter si une image possède un attribut <code class="highlighter-rouge">alt</code> mais elle ne peut juger de sa pertinence. Cette vérification requière une validation humaine.</p>
+
+<p>Enfin il existe <strong>des audits de scénario</strong> permettant de contrôler plusieurs états d’une même page et des parcours utilisateurs, par exemple le parcours d’achat sur un site e-commerce.</p>
+
+<h3 id="les-chiens-guides">Les chiens guides</h3>
+<p>Sujet pour le coup éloigné du web mais bien au coeur de l’accessibilité. Cette journée a été l’occasion d’échanger avec Isabelle Ravet, experte accessibilité au sein de l’<abbr title="Institut national de la statistique et des études économiques">INSEE</abbr>, non-voyante qui était accompagnée de son chien guide, Newok.</p>
+
+<p>Newok a été formé au sein de l’école de chiens guides pour aveugles et malvoyants de Paris.
+Le délai d’attente pour obtenir un chien guide est relativement long : plus de deux ans se sont écoulés entre le moment où Isabelle a fait sa demande et sa rencontre avec Newok. Les chiens guides comme Newok, destinés aux aveugles et malvoyants, connaissent une dizaine de mots qu’ils associent à une action précise. Les chiens d’assistance, éduqués pour aider les personnes atteintes d’un handicap moteur, mais aussi psychiatrique ou mental, reconnaissent plus d’une cinquantaine de mots. Si ces chiens sont remis gratuitement à leur maître, leur formation a un coût élevé, la plupart du temps financé par don privé ou subventions d’Etat.</p>
+:ET
