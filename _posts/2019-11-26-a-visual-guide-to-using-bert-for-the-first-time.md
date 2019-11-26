@@ -94,7 +94,7 @@ Under the hood, the model is actually made up of two model.
   <br />
 </div>
 
-If you've read my previous post, [Illustrated BERT](), this vector is the result of the first position (which receives the [CLS] token as input).
+If you've read my previous post, [Illustrated BERT](/illustrated-bert/), this vector is the result of the first position (which receives the [CLS] token as input).
 
 ## Model Training
 While we'll be using two models, we will only train the logistic regression model. For DistillBERT, we'll use a model that's already pre-trained and has a grasp on the English language. This model, however is neither trained not fine-tuned to do sentence classification. We get some sentence classification capability, however, from the general objectives BERT is trained on. This is especially the case with BERT's output for the first position (associated with the [CLS] token). I believe that's due to BERT's second training object -- Next sentence classification. That objective seemingly trains the model to encapsulate a sentence-wide sense to the output at the first position. The [transformers](https://github.com/huggingface/transformers) library provides us with an implementation of DistilBERT as well as pretrained versions of the model.
@@ -142,7 +142,7 @@ Let's try to classify the sentence “a visually stunning rumination on love”.
   <br />
 </div>
 
-The third step the tokenizer does is to replace each token with its id from the embedding table which is a component we get with the trained model. Read [The Illustrated Word2vec]() for a background on word embeddings.
+The third step the tokenizer does is to replace each token with its id from the embedding table which is a component we get with the trained model. Read [The Illustrated Word2vec](/illustrated-word2vec/) for a background on word embeddings.
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/distilBERT/bert-distilbert-tokenization-2-token-ids.png"/>
@@ -155,7 +155,7 @@ tokenizer.encode("a visually stunning rumination on love", add_special_tokens=Tr
 
 Our input sentence is now the proper shape to be passed to DistilBERT.
 
-If you've read [Illustrated BERT](), this step can also be visualized in this manner:
+If you've read [Illustrated BERT](/illustrated-bert/), this step can also be visualized in this manner:
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/distilBERT/bert-distilbert-input-tokenization.png"/>
@@ -190,7 +190,7 @@ The training is what we'll discuss in the next section, along with the code of t
 
 
 ## The Code
-In this section we'll highlight the code to train this sentence classification model. A notebook containing all this code is available on [colab]() and [github]().
+In this section we'll highlight the code to train this sentence classification model. A notebook containing all this code is available on [colab](https://colab.research.google.com/github/jalammar/jalammar.github.io/blob/master/notebooks/bert/A_Visual_Notebook_to_Using_BERT_for_the_First_Time.ipynb) and [github](https://github.com/jalammar/jalammar.github.io/blob/master/notebooks/bert/A_Visual_Notebook_to_Using_BERT_for_the_First_Time.ipynb).
 
 Let's start by importing the tools of the trade
 
