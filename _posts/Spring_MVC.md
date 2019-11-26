@@ -113,6 +113,8 @@ Interceptors working with the HandlerMapping on the framework must implement the
 	* REST permits many different data formats (JSON is the most popular choice) where as SOAP only permits XML.
 	*SOAP services have well defined structure and interface (WSDL) and has a set of well defined standards (WS-Security, WS-  	 AtomicTransaction and WS-ReliableMessaging). Documentation standards with REST are evolving(We will use Swagger in this course).
 
+***Example to compare REST & SOAP API : https://raygun.com/blog/soap-vs-rest-vs-json/***
+
 #### SOAP ####
 SOAP was earlier an abbreviation for Simple Object Access Protocol. In SOAP, the request and response are in XML format. However, not all types of XML are valid SOAP Requests.
 
