@@ -8,7 +8,8 @@ title: A Visual Intro to NumPy and Data Representation
 <a href="https://news.ycombinator.com/item?id=20282985" class="hn-link">Hacker News (366 points, 21 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/c5nc89/p_a_visual_intro_to_numpy_and_data_representation/" class="">Reddit r/MachineLearning (256 points, 18 comments)</a>
 </span>
 <br />
-<span class="discussion">Translations: <a href="https://note.mu/sayajewels/n/n95edaedb0fc5">Japanese</a></span>
+<span class="discussion">Translations: <a href="http://www.junphy.com/wordpress/index.php/2019/10/24/visual-numpy/">Chinese 1</a>, <a href="https://github.com/kevingo/blog/blob/master/ML/visual-numpy.md">Chinese 2</a>, <a href="https://note.mu/sayajewels/n/n95edaedb0fc5">Japanese</a></span>
+
 
 
 <div class="img-div-any-width" markdown="0">
@@ -19,7 +20,7 @@ title: A Visual Intro to NumPy and Data Representation
 The [NumPy](https://www.numpy.org/) package is the workhorse of data analysis, machine learning, and scientific computing in the python ecosystem. It vastly simplifies manipulating and crunching vectors and matrices. Some of python's leading package rely on NumPy as a fundamental piece of their infrastructure (examples include scikit-learn, SciPy, pandas, and tensorflow). Beyond the ability to slice and dice numeric data, mastering numpy will give you an edge when dealing and debugging with advanced usecases in these libraries.
 
 
-In this post, we'll look at some of the main ways to use NumPy and how it can represent different types of data (tables, images, text...etc) before we an serve them to machine learning models.
+In this post, we'll look at some of the main ways to use NumPy and how it can represent different types of data (tables, images, text...etc) before we can serve them to machine learning models.
 
 <!--more-->
 
@@ -76,7 +77,7 @@ And it's not only addition that we can do this way:
 
 <br />
 
-There are often cases when we want carry out an operation between an array and a single number (we can also call this an operation between a vector and a scalar). Say, for example, our array represents distance in miles and we want to convert it to kilometers. We simply say ```data * 1.6```:
+There are often cases when we want to carry out an operation between an array and a single number (we can also call this an operation between a vector and a scalar). Say, for example, our array represents distance in miles, and we want to convert it to kilometers. We simply say ```data * 1.6```:
 
 
 <div class="img-div-any-width" markdown="0">
