@@ -1,0 +1,79 @@
+I"s1<p>Petit compte-rendu de ma journée passée avec l’équipe Tanaguru pour travailler sur l’audit d’accessibilité</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>participer à l’atelier organisé par Tanaguru</li>
+  <li>échanger avec des experts et expertes accessibilité sur leur métier et la façon dont ils et elles auditent des sites</li>
+  <li>gagner un super <a href="https://www.cyberspace.builders/stickers/human-division">sticker “Expert Accessibilité” créé par Julien Dubedout<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="lien-externe--nouvelle-fenêtre">Lien externe = nouvelle fenêtre</h3>
+<p>En tant que développeurs.euses, nous avons tous eu à ajouter des liens sur les sites que nous codons et quasi systématiquement il nous est demandé, dans le cas de liens externes, de faire en sorte que ces liens s’ouvrent dans une nouvelle fenêtre ou un nouvel onglet. Ceci peut être aisément réalisé grâce à l’ajout de l’attribut <code class="highlighter-rouge">target="_blank"</code> sur la balise de lien. Par exemple :</p>
+
+<p><code class="highlighter-rouge">&lt;a href="page.html" target="_blank"&gt;Lien&lt;/a&gt;.</code></p>
+
+<p>Les raisons généralement invoquées pour justifier ce choix sont :</p>
+<ul>
+  <li>“je veux garder mes utilisateurs”</li>
+  <li>“les utilisateurs sont habitués à ce comportement”</li>
+  <li>“tout le monde le fait”, d’ailleurs Google lui même fait cela lorsque l’on fait une recherche d’image et que l’on veut accéder à l’image source.</li>
+  <li>“je préfère ce mode de navigation”</li>
+</ul>
+
+<h3 id="quelle-conséquences-">Quelle conséquences ?</h3>
+<p>A ce stade, il est de notre devoir de professionnels et professionnelles du web d’argumenter contre ce choix, d’abord en rejetant les raisons précédemment invoquées :</p>
+
+<h4 id="je-veux-garder-mes-utilisateurs">“Je veux garder mes utilisateurs”</h4>
+<p>On ne le dira jamais assez mais ce sont <a href="https://www.opquast.com/glossaire/contenus/">les contenus qui donnent de la vraie valeur ajoutée à votre site<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, et <strong>ce sont ces contenus qui donneront aux internautes l’envie de revenir</strong>. Si vous comptez uniquement sur les liens ouverts dans de nouvelles pages pour garder vos internautes c’est qu’il faut donc s’interroger sur la pertinence et l’utilité de vos contenus.</p>
+
+<p>D’autre part, forcer le comportement naturel du navigateur pour <strong>imposer ce choix à l’internaute revient à le priver de sa liberté de choisir</strong>. L’abus de ce type de pratique qui vise à “piéger” l’internaute pour le garder à tout prix peut avoir un effet contre productif et lui déplaire au point de ne plus avoir envie de revenir sur votre site (lire à ce sujet l’article de Bellami <a href="http://www.bellami.fr/pourquoi-ouvrir-un-lien-dans-une-nouvelle-fenetre">Pourquoi ouvrir un lien dans une nouvelle fenêtre ?<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>).</p>
+
+<p>Enfin, <strong>ouvrir une nouvelle fenêtre revient à rompre l’historique de navigation</strong> et rend l’utilisation du bouton “Retour” impossible. L’internaute se retrouve alors à devoir chercher votre site parmi tous ses onglets quand un simple clic sur le bouton “Retour” lui permettrait d’y revenir facilement.</p>
+
+<h4 id="les-utilisateurs-sont-habitués-à-ce-comportement">“Les utilisateurs sont habitués à ce comportement”</h4>
+<p>Non, tous les utilisateurs et utilisatrices du web n’ont pas pris cette habitude, <strong>ils ou elles peuvent même se sentir perdus</strong> à l’apparition de nouvelles fenêtres ou onglets qu’ils ou elles n’ont pas sollicités. A titre d’exemple, je donne des cours d’informatique débutant et j’ai vu à plusieurs reprises mes élèves cliquer frénétiquement sur un lien ouvert dans un nouvel onglet mais qu’ils n’avaient pas remarqué. Les utilisateurs ayant des troubles de l’attention peuvent également être désorientés et se sentir perdus, voire angoissés, face à de multiples fenêtres ouvertes sans action de leur part.</p>
+
+<p><strong>Tout le monde n’est pas naturellement à l’aise avec le web</strong> et tout le monde n’utilise pas quotidiennement internet : 23% des français ne sont pas à l’aise avec le numérique et parmi eux 7% trouve que la navigation est difficile (source : <a href="https://speakerdeck.com/webetcaetera/exclusion-numerique-et-societe-digitalisee-les-enjeux-pour-le-design-dinterface-et-de-service?slide=2" aria-label="Diaporama de la conférence Exclusion numérique et société digitalisée, les enjeux pour le design d’interface et de service">Conférence “Exclusion numérique et société « digitalisée », les enjeux pour le design d’interface et de service”<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Véronique Lapierre).</p>
+
+<h4 id="tout-le-monde-le-fait">“Tout le monde le fait”</h4>
+<p><strong>Ce n’est pas parce qu’une mauvaise habitude est prise qu’il faut l’imiter</strong>. Pendant longtemps, l’habitude était de structurer des pages web entières avec des tableaux pour des raisons de commodité (certes Flexbox et Grid étaient encore loin) alors qu’ils n’étaient nullement adaptés à ce type de besoin. Ce n’est pas parce que tout le monde fait quelque chose que c’est une bonne pratique.</p>
+
+<h4 id="je-préfère-ce-mode-de-navigation">“Je préfère ce mode de navigation”</h4>
+<p><strong>Vous n’êtes pas tous les internautes et vos préférences ne sont pas celles des autres</strong>. Nous avons chacun notre propre façon d’utiliser le web. Derrière notre écran et le site que nous avons codé se cache une infinité d’utilisateurs et utilisatrices : des personnes non familières du web, des personnes âgés, des personnes en situation de handicap, des internautes utilisant uniquement leur téléphone portable… Par exemple, les utilisateurs naviguant à l’aide de leur clavier et notamment de la touche tabulation devront effectuer des manipulations supplémentaires pour fermer et revenir à la fenêtre d’origine. Préjuger des modes de navigation des internautes en se basant sur sa seule expérience revient à faire abstraction de leur diversité.</p>
+
+<h3 id="quelles-solutions-">Quelles solutions ?</h3>
+<p>Cela étant dit, quelles solutions adopter au moment d’intégrer ces fameux liens externes sur votre site ?</p>
+
+<h4 id="laisser-le-choix">Laisser le choix</h4>
+<p><strong>Laisser vos utilisateurs choisir</strong>, donnez leur la possibilité de naviguer comme ils le souhaitent. Un imple clic droit permet de choisir si le nouveau lien doit apparaître dans la même fenêtre, dans un nouvel onglet ou dans une nouvelle fenêtre. Si vous respectez leur choix, vos internautes seront moins frustrés.</p>
+
+<h4 id="prévenir-à-minima">Prévenir à minima</h4>
+<p>Si à ce stade vous n’avez pas réussi à convaincre vos collègues que forcer l’ouverture d’une nouvelle fenêtre était une mauvaise idée, voici les solutions à adopter pour prévenir l’utilisateur.</p>
+
+<p><strong>Prévenir en toute lettre dans l’intitulé du lien de l’ouverture d’une nouvelle fenêtre</strong>. Il s’agit de la solution la plus simple à mettre en oeuvre et la plus accessible. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="/course.html" target="_blank"&gt;S'inscrire à une course (nouvelle fenêtre)&lt;/a&gt;
+</code></pre></div></div>
+
+<p><strong>Ajouter une mention du type “nouvelle fenêtre” dans un attribut <code class="highlighter-rouge">aria-label</code></strong>. Par exemple :</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="conference.html" target="_blank" aria-label="Diaporama de la conférence (nouvelle fenêtre)"&gt;
+   Diaporama de la conférence
+&lt;/a&gt;
+</code></pre></div></div>
+<p>Il est également conforme d’utiliser l’attribut <code class="highlighter-rouge">title</code>, néanmoins comme nous l’avons vu dans un précédent <a href="/100daysofa11y-day15">article sur les liens accessibles</a>, sa restitution et son interprétation étant limitées il est conseillé de l’utiliser en dernier recours.</p>
+
+<p><strong>Accompagner le lien d’un pictogramme</strong>, complété par une alternative textuelle. Par exemple :</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="/course.html" target="_blank"&gt;
+   S'inscrire à une course
+   &lt;img src="picto.png" alt="(nouvelle fenêtre)" /&gt;
+&lt;/a&gt;
+</code></pre></div></div>
+<p>Pour le choix de l’icône, je vous conseille de jeter un oeil à cet article <a href="https://designnotes.blog.gov.uk/2016/11/28/removing-the-external-link-icon-from-gov-uk/" lang="en" hreflang="en">Removing the external link icon from GOV.UK<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>. L’icône de lien externe est en effet souvent confondue avec l’icône de lien s’ouvrant dans une nouvelle fenêtre et peut donc porter à confusion. L’utilisation d’un pictogramme seul pour signaler l’ouverture d’une nouvelle fenêtre n’est donc pas nécessairement compris par les internautes.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>Pour ma part, j’ai fait le choix sur ce site de ne pas provoquer l’ouverture de nouvelle fenêtre. Un pictogramme accompagné d’une alternative textuelle prévient l’internaute qu’il s’apprête à consulter un lien externe et c’est à lui de décider de quelle manière il souhaite le consulter.</p>
+
+<h4 id="aller-plus-loin">Aller plus loin</h4>
+<p>Il est aussi possible de signaler les nouvelles fenêtre par la création d’infobulles simulées en ARIA (voir à ce sujet la <a href="https://www.accede-web.com/notices/interface-riche/infobulles-simulees-en-aria/">notice AccedeWeb<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>)</p>
+:ET
