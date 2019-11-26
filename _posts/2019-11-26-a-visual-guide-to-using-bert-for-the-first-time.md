@@ -370,3 +370,6 @@ Dive right into [the notebook](https://github.com/jalammar/jalammar.github.io/bl
 
 
 And that's it! That's a good first contact with BERT. The next step would be to head over to the documentation and try your hand at [fine-tuning](https://huggingface.co/transformers/examples.html#glue). You can also go back and switch from distilBERT to BERT and see how that works.
+
+Thanks to [Clément Delangue](https://twitter.com/ClementDelangue), [Victor Sanh
+](https://twitter.com/SanhEstPasMoi), and the Huggingface team for providing feedback to earlier versions of this tutorial.
