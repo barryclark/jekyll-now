@@ -26,7 +26,7 @@ Accepts input and converts it to ***commands for the model or view***. The view 
 * The *** javax.servlet *** package contains many interfaces and classes that are used by the servlet or web container. These are not specific to any protocol.
 * The *** javax.servlet.http *** package contains interfaces and classes that are responsible for http requests only.
 
-*** Question: Is the information about Servlet enough? ***
+Think of ***Spring MVC Servlet*** as a host kind of like a server. It does not do as much as a server such as processing data, but it saves the context (like singleton objecs/beans) and host the section of Http requests. Examples of servlet tools include ***tomcat and thymeleaf***.
         
 ### Concepts in Spring MVC ###
 
