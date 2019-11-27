@@ -84,7 +84,7 @@ public String exceptionHandler(Model model, Exception e){
 }
 
 ```
-***Question: Does this handler need to be inserted into HTML pages? It looks like model is independent from the UI. If so, what are the error messages for?***
+***The messages in Exceptional Handlers should only be seen when exceptions happen. They should not be inserted into views.***
 
 #### Intercepter ####
 Definition from the website resources:
@@ -142,7 +142,7 @@ Example:
             <rtexprvalue>true</rtexprvalue>
         </attribute>
 ```
-The *HomeworkTag* class will define more attributes accordingly.
+***this is not a SOAP example. The <tag> </tag> part looks like a WSDL.But it is not a SOAP***
 
 #### RESTFUL ####
 First of all, REST does not define a standard message exchange format. You can build REST services with both XML and JSON. However, JSON is a more popular format with REST. Key abstraction in REST is a Resource. There is no restriction on what can be a resource. 
@@ -156,7 +156,8 @@ First of all, REST does not define a standard message exchange format. You can b
 	from a middle layer - cache.
 
 
-***Question: The relationship between api: Json Views, SimpleAPIController, client:BookClient etc. and Intercepters:Book & Book Repository***	
+***Using "getting books" as an example***
+![Books api] (https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5296.JPG)
 
 Example:
 ```
