@@ -163,3 +163,6 @@ public class JPAConfiguration {
 
 #### Spring Framework Layers (from Edureca! https://www.youtube.com/watch?v=210tVT2uPvI)
 ![Architecture Layers](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/SpringFrameWork-2.PNG)
+
+#### Spring JDBC or Hibernate ####
+Hibernate has higher popularity, but Spring JDBC provides a less complex solution
