@@ -157,7 +157,7 @@ First of all, REST does not define a standard message exchange format. You can b
 
 
 ***Using "getting books" as an example***
-![Books api] (https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5296.JPG)
+![Books api](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5296.JPG)
 
 Example:
 ```
