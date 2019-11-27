@@ -1,0 +1,82 @@
+I"�'<p>Après avoir passé du temps à explorer les liens et la navigation, je me concentre sur l’accessibilité des contenus rédigés en ligne. Premier focus sur les abréviations.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://fvsch.com/html-abbr//">Comment utiliser abbr en HTML?<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Florens Verschelde</li>
+  <li>lire la <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/abbr">notice sur l’élément abbr<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="vocabulaire">Vocabulaire</h3>
+<p>La langue française distingue trois notions proches et imbriquées :</p>
+<ul>
+  <li>les abréviations</li>
+  <li>les sigles</li>
+  <li>les acronymes</li>
+</ul>
+
+<p><strong>Une abréviation est le raccourcissement d’un mot ou d’un groupe de mots</strong>. L’abréviation consiste donc toujours en une suppression de lettre, plus ou moins importante. Exemple : <em>etc</em> pour <em>et cætera</em>.</p>
+
+<p><strong>Un sigle est l’abréviation d’un terme qui n’en garde que les initiales</strong>. Ces lettres sont écrites en majuscule et épelées, parfois suivies d’un point. Exemple : <em>J.O.</em> pour les <em>Jeux Olympiques</em>, <em>TVA</em> pour <em>Taxe sur la Valeur Ajoutée</em>.</p>
+
+<p><strong>Un acronyme est un sigle dont l’enchaînement des lettres se lit comme un mot simple</strong>, sans être épelé. Parfois ces acronymes deviennent des noms communs : <em>ONU</em> pour <em>Organisation des Nations Unies</em>, <em>sida</em> pour <em>syndrome d’immunodéficience acquise</em>.</p>
+
+<p>Donc si l’on résume, un acronyme est un type de sigle qui est lui même un type d’abréviation. Quand je parlerai d’abréviation dans cet article, je me réferrerai donc à ces trois termes à la fois.</p>
+
+<h3 id="code-et-abréviation">Code et abréviation</h3>
+<p>On peut utiliser l’élément <code class="highlighter-rouge">&lt;abbr&gt;</code> pour désigner sémantiquement une abréviation. Son attribut <code class="highlighter-rouge">title</code> permet également de fournir de manière optionnelle la signification de l’abréviation. On peut donc écrire :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Je code régulièrement en &lt;abbr&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Il y a assez peu d’intérêt à utiliser la balise seule sans attribut car elle ne fournira pas d’information à l’internaute ou au navigateur. En revanche, <code class="highlighter-rouge">&lt;abbr&gt;</code> peut être utile lorsque l’on souhaite identifier spécifiquement les abréviations pour les manipuler en script ou les mettre en forme avec des feuilles de style.</p>
+
+<p>On peut aussi écrire :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Je code régulièrement en &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Le <code class="highlighter-rouge">title</code> s’affichera au passage de la souris sur le mot <abbr title="HyperText Markup Language">HTML</abbr>, comme c’est le cas dans cette phrase.</p>
+
+<p><em>Note</em> : certains termes sont plus utilisés sous leur forme abrégée que complètes, il n’est alors pas recommandé de renseigner leur forme déployée. Par exemple : SNCF, SMS. Bien sûr cela dépend également du contexte et du public auquel l’on s’adresse.</p>
+
+<h3 id="accessibilité-et-abréviation">Accessibilité et abréviation</h3>
+<p>Les abréviations sont traitées ainsi dans les WCAG :</p>
+<blockquote>
+  <p>3.1.4 Abréviations : un mécanisme est disponible pour identifier la forme complète ou la signification d’une abréviation. (Niveau AAA)</p>
+</blockquote>
+
+<p>S’agissant d’un critère de niveau AAA il n’est plus présent dans le RGAA 4, le niveau de conformité demandé étant le AA. Vous n’êtes donc pas tenu légalement de mettre en place une solution accessible pour expliciter les abréviations que vous employez. Cependant, prendre cette habitude est une bonne pratique pour tous vos lecteurs et lectrices qui se sentiront moins perdus face à des abréviations dont le sens leur échappe.</p>
+
+<p>Quelles solutions peuvent alors être mises en place ?</p>
+
+<h4 id="expliciter-directement-dans-le-texte">Expliciter directement dans le texte</h4>
+<p>Comme souvent en accessibilité, les méthodes les plus simples sont les plus efficaces. A la première occurrence d’une abréviation dans une page, on peut ainsi écrire directement sa forme complète. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Pour l'Institut national de la statistique et des études économiques (INSEE), le mois de novembre devient aussi important que décembre pour la vente à distance.&lt;p&gt;
+</code></pre></div></div>
+
+<p>Dans le reste de la page, l’abréviation INSEE pourra être utilisée seule.</p>
+
+<h4 id="utiliser-une-balise-abbr-possédant-un-attribut-title">Utiliser une balise <code class="highlighter-rouge">&lt;abbr&gt;</code> possédant un attribut <code class="highlighter-rouge">title</code></h4>
+<p>Comme nous l’avons vu précédemment, cette technique permet d’afficher la signification de l’abréviation au survol de la souris. Mais comme nous l’avons déjà évoqué dans de précédents articles, le contenu de l’attribut <code class="highlighter-rouge">title</code> n’est pas restitué par tous les lecteurs d’écran. Cela dépend du lecteur d’écran, de sa version ou des réglages de l’utilisateur (voir à ce sujet <a href="http://list.accessiweb.org/pipermail/liste_gta_list.accessiweb.org/2017-January/010253.html">la discussion sur Accessiweb<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>). A titre d’exemple, sur ce blog, où je balise généralement mes abréviations avec un élément <code class="highlighter-rouge">&lt;abbr&gt;</code> et un attribut <code class="highlighter-rouge">title</code>, le contenu de ce dernier n’est restitué ni par Talkback, ni par VoiceOver.</p>
+
+<p>D’autre part, l’attribut <code class="highlighter-rouge">title</code> n’est pas exploitable sur les terminaux tactiles, tels que les téléphones portables, et certains internautes ne connaissent même pas la possibilité d’afficher la signification au survol.</p>
+
+<h4 id="implémenter-un-lien-vers-une-page-ou-un-emplacement-dans-la-page">Implémenter un lien vers une page ou un emplacement dans la page</h4>
+<p>L’abréviation peut être intégrée dans un élément <code class="highlighter-rouge">&lt;a&gt;</code> qui pointe vers une autre page (ou vers un emplacement dans la même page) qui donne accès à la signification détaillée. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;La &lt;a href="https://fr.wikipedia.org/wiki/Web_Accessibility_Initiative" lang="en"&gt;WAI&lt;/a&gt; du W3C fut lancée en avril 1997.&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Le fait de recourir à un lien permet également de profiter de l’attribut <code class="highlighter-rouge">title</code>, mais son utilisation présente les mêmes problèmes que ceux cités précédemment avec la balise <code class="highlighter-rouge">&lt;abbr&gt;</code>. On pourrait donc plutôt se servir de l’attribut <code class="highlighter-rouge">aria-label</code>. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;La &lt;a href="https://fr.wikipedia.org/wiki/Web_Accessibility_Initiative" lang="en" aria-label="WAI : Web Accessibility Initiative"&gt;WAI&lt;/a&gt; du W3C fut lancée en avril 1997.&lt;/p&gt;
+</code></pre></div></div>
+
+<h4 id="mettre-en-place-un-glossaire">Mettre en place un glossaire</h4>
+<p>Un glossaire présent dans le site permet d’expliciter chaque abréviation.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>J’utilise personnellement énormément la balise <code class="highlighter-rouge">&lt;abbr&gt;</code>et son attribut <code class="highlighter-rouge">title</code>, particulièrement dans ce blog où les abréviations sont nombreuses. Ecrire cet article m’a permis de prendre conscience que la portée de cet élément est limité et que ce n’est pas forcément la meilleure manière de faire. Je vais désormais faire attention à expliciter systématiquement directement dans le texte la première occurrence d’une abréviation. Je me pose en revanche la question de garder ou non la balise <code class="highlighter-rouge">&lt;abbr&gt;</code> et son attribut <code class="highlighter-rouge">title</code> pour les autres occurrences de la page.</p>
+:ET
