@@ -11,7 +11,7 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
 
 ---
 layout: post
-title: You're up and running!
+title: my first blog!
 ---
 
 try to post my blog
