@@ -170,7 +170,7 @@ Hibernate has higher popularity, but Spring JDBC provides a less complex solutio
 Spring JPA stands for Java Persistence API. It needs a provider like Hybernate that can implements the JPA. ***Spring Data JPA is merely a spring-centric wrapper that offers springy semantics and features that wrap a JPA provider of which Hibernate is one implementation***
 (*https://stackoverflow.com/questions/42470060/spring-data-jdbc-spring-data-jpa-vs-hibernate/42473065*)
 
-*Hibernate Example* (sample codes from Youtube Hibernate videos)
+*Spring JPA with Hibernate Example* (sample codes from https://www.youtube.com/watch?v=YywLS8XdxLQ)
 1. Create a "META-INF" directory and under it create a persistence.xml file. ***Names need to be 100% match***
 2. Create a JPAUAuthority class
 ```
