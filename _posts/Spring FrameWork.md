@@ -164,11 +164,14 @@ public class JPAConfiguration {
 #### Spring Framework Layers (from Edureca! https://www.youtube.com/watch?v=210tVT2uPvI)
 ![Architecture Layers](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/SpringFrameWork-2.PNG)
 
-#### Spring JDBC or Hibernate ####
-Hibernate has higher popularity, but Spring JDBC provides a less complex solution
+#### Spring JDBC or Hibernate ? What is Spring JPA ? ####
+Hibernate has higher popularity, but Spring JDBC provides a less complex solution.
+
+Spring JPA stands for Java Persistence API. It needs a provider like Hybernate that can implements the JPA. ***Spring Data JPA is merely a spring-centric wrapper that offers springy semantics and features that wrap a JPA provider of which Hibernate is one implementation***
+(*https://stackoverflow.com/questions/42470060/spring-data-jdbc-spring-data-jpa-vs-hibernate/42473065*)
 
 *Hibernate Example* (sample codes from Youtube Hibernate videos)
-1. Create a "META-INF" directory and under it create a persistence.xml file ***Names need to be 100% match***
+1. Create a "META-INF" directory and under it create a persistence.xml file. ***Names need to be 100% match***
 2. Create a JPAUAuthority class
 ```
 package org.improving.springPractice;
