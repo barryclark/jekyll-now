@@ -166,3 +166,101 @@ public class JPAConfiguration {
 
 #### Spring JDBC or Hibernate ####
 Hibernate has higher popularity, but Spring JDBC provides a less complex solution
+
+*Hibernate Example* (sample codes from Youtube Hibernate videos)
+1. Create a "META-INF" directory and under it create a persistence.xml file ***Names need to be 100% match***
+2. Create a JPAUAuthority class
+```
+package org.improving.springPractice;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class JPAUAuthority {
+    private static final EntityManagerFactory emFactory;
+
+    static {
+        emFactory = Persistence.createEntityManagerFactory("org.improving");
+    }
+    public static EntityManager getEntityManager() {
+        return emFactory.createEntityManager();
+    }
+    public static void close() {
+        emFactory.close();
+    }
+
+}
+```
+3. Create a repository to save data passing back and forth with MySQL. In this case "Alien class"
+```
+@Entity
+@Table(name="Alien")
+public class Alien {
+    @Id
+    private int aid;
+    private String aidName;
+    private String tech;
+
+    public int getAid() {
+        return aid;
+    }
+
+    public void setAid(int aid) {
+        this.aid = aid;
+    }
+
+    public String getAidName() {
+        return aidName;
+    }
+
+    public void setAidName(String aidName) {
+        this.aidName = aidName;
+    }
+
+    public String getTech() {
+        return tech;
+    }
+
+    public void setTech(String tech) {
+        this.tech = tech;
+    }
+
+    @Override
+    public String toString() {
+        return "Alien [aid = " + aid + ", aname= " + aidName + " tech = " + tech + "]";
+    }
+}
+
+
+```
+4. In App class create or modify data
+```
+package org.improving.springPractice;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import java.util.List;
+
+public class App {
+    public static void main(String[] args) {
+
+        Alien a = new Alien();
+        a.setAidName("John");
+        a.setTech("Ops");
+        EntityManager emf = JPAUAuthority.getEntityManager();
+        emf.getTransaction().begin();
+        //List<Alien> alien = emf.createQuery("select al from alien al").getResultList();
+        emf.persist(a);
+        emf.getTransaction().commit();
+        Alien id4 = emf.find(Alien.class, 4);
+        System.out.println(id4);
+
+    }
+
+
+
+}
+
+```
