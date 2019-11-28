@@ -52,7 +52,7 @@ Statistics showed that the Find a Store webpage was the most popular, but feedba
 
 To improve usability, we made sure this was fully mobile-optimised; that it delivered all the information customers needed and increased the accuracy of the opening times for all 780 stores, through clever use of automation and Google integration. 
 
->&quot;Infinity Works drive to understand customer needs centrally, the ability of the team on the ground to execute this and push to deliver is fantastic. I wouldn&apos;t hesitate to recommend them to any business.&quot;
+>&quot;Infinity Works&apos; drive to understand customer needs centrally, the ability of the team on the ground to execute this and push to deliver is fantastic. I wouldn&apos;t hesitate to recommend them to any business.&quot;
 
 _-- Ollie Gower, product manager at Well_
 
