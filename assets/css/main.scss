@@ -28,6 +28,10 @@ $horizontal-rule-color: $lighter-content-color;
 .w3-theme-d4 {color:#fff !important; background-color:#1b2b3a !important}
 .w3-theme-d5 {color:#fff !important; background-color:#172431 !important}
 
+body {
+  margin: 0;
+}
+
 .padded {
     padding: 0.75rem;
 }
