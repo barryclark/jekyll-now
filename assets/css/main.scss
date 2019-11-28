@@ -82,14 +82,13 @@ nav.menu-content a {
   flex-flow: row wrap;
   align-items: stretch;
   justify-content: center;
-  margin: 0 -0.5rem 4rem;
+  margin: 0 0.5rem 4rem;
 }
 
 .hero-media {
   flex: 1 1 60%;
   min-width: 400px;
   align-self: center;
-  margin: 0 0.5rem;
 }
 
 .hero-image {
@@ -100,7 +99,7 @@ nav.menu-content a {
   display: flex;
   flex: 1;
   min-width: 250px;
-  margin: 0 0.5rem;
+  margin: 1.5rem;
 }
 
 .hero-text {
@@ -125,6 +124,7 @@ nav.menu-content a {
   margin-right: auto;
   padding: 0.5rem;
   height: 100%;
+  height: 400px;
 }
 
 article.posts {
