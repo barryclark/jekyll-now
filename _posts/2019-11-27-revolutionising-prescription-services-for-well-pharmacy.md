@@ -25,10 +25,10 @@ We worked closely with their digital team, helping them navigate the potential a
 >They haven&apos;t just helped to engineer a product, they&apos;ve been involved since the project began. They didn&apos;t just give us support on engineering but also directed us through complex decisions, created a great team culture and guided us through the common errors new projects can fall into.
 &quot;
 
-_-- Olly Gower, product manager at Well_
+_-- Ollie Gower, product manager at Well_
 
 
-### The outcom
+### The outcome
 
 Our teams decided on two projects to focus on: the first was building a digital prescription service, with a focus on an easy-to-use design, and the second was making improvements to the website store finder function.
 
@@ -52,9 +52,9 @@ Statistics showed that the Find a Store webpage was the most popular, but feedba
 
 To improve usability, we made sure this was fully mobile-optimised; that it delivered all the information customers needed and increased the accuracy of the opening times for all 780 stores, through clever use of automation and Google integration. 
 
->&quot;Infinity Works&apos; drive to understand customer needs centrally, the ability of the team on the ground to execute this and push to deliver is fantastic. I wouldn&apos;t hesitate to recommend them to any business.>&quot;
+>&quot;Infinity Works drive to understand customer needs centrally, the ability of the team on the ground to execute this and push to deliver is fantastic. I wouldn&apos;t hesitate to recommend them to any business.&quot;
 
-_-- Olly Gower, product manager at Well_
+_-- Ollie Gower, product manager at Well_
 
 ### Business results 
 
