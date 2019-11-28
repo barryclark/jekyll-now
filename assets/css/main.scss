@@ -46,6 +46,7 @@ body {
 
 .crop {
   object-fit: contain;
+  border-radius: 0;
 }
 
 .masthead {
@@ -90,7 +91,7 @@ nav.menu-content a {
 }
 
 .hero-media {
-  flex: 1 1 60%;
+  flex: 1 1 30%;
   min-width: 400px;
   align-self: center;
 }
