@@ -1,0 +1,51 @@
+I"�<p>On continue à explorer l’accessibilité des contenus rédigés en ligne avec les titres de section.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://fvsch.com/html-abbr//">Comment utiliser abbr en HTML?<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Florens Verschelde</li>
+  <li>lire la <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/abbr">notice sur l’élément abbr<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="structurer-le-contenu-des-pages-à-laide-de-titres">Structurer le contenu des pages à l’aide de titres</h3>
+<p>Le Référention Général d’Amélioration de l’Accessibilité (RGAA) pose le critère suivant :</p>
+
+<blockquote>
+  <p>Critère 9.1. Dans chaque page web, l’information est-elle structurée par l’utilisation appropriée de titres ?</p>
+</blockquote>
+
+<p>Les éléments suivants doivent être testés :</p>
+<ul>
+  <li>le contenu des titres est pertinent</li>
+  <li>la hiérarchie des titres doit être logique</li>
+  <li>les titres sont matérialisés à l’aide d’une balise <code class="highlighter-rouge">&lt;hn&gt;</code> ou d’une balise possédant un role ARIA <code class="highlighter-rouge">role="heading"</code> associé à un attribut <code class="highlighter-rouge">aria-level</code>.</li>
+</ul>
+
+<p>Concrètement cela signifie que sur chaque page, <strong>les contenus doivent être structurés avec des balises de titres</strong> allant de <code class="highlighter-rouge">&lt;h1&gt;</code> jusqu’à <code class="highlighter-rouge">&lt;h6&gt;</code>.</p>
+
+<p><strong>Il ne doit pas y avoir de saut dans la hiérarchie des titres</strong> : on ne passe pas directement d’un titre <code class="highlighter-rouge">&lt;h2&gt;</code> à un titre <code class="highlighter-rouge">&lt;h4&gt;</code>.</p>
+
+<p><strong>Tous les titres nécessaires à l’architecture de l’information doivent être présents</strong> afin de proposer un plan clair de la page.</p>
+
+<p>Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h1&gt;Accueil – Mon site CV&lt;/h1&gt;
+    &lt;h2&gt;Mon portfolio&lt;/h2&gt;
+    &lt;h2&gt;A propos de moi&lt;/h2&gt;
+        &lt;h3&gt;Ma formation&lt;/h3&gt;
+        &lt;h3&gt;Mon expérience&lt;/h3&gt;
+</code></pre></div></div>
+
+<h3 id="remarques">Remarques</h3>
+<p>On peut utiliser plusieurs <code class="highlighter-rouge">&lt;h1&gt;</code> dans une même page. Le site d’Atalan donne notamment dans un article <a href="https://blog.atalan.fr/discussions-seo-et-hierarchie-de-titres-h1-h2/">[Discussions] – SEO et hiérarchie de titres &lt;h1&gt;, &lt;h2&gt;…<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> un exemple de situation où l’emploi de plusieurs <code class="highlighter-rouge">&lt;h1&gt;</code> est nécessaire. <a href="https://www.seomix.fr/author/daniel-roch/">L’étude de Daniel Roche<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, expert en référencement, montre que l’utilisation de plusieurs <code class="highlighter-rouge">&lt;h1&gt;</code> par page ne pénalise nullement le positionnement d’un site dans les moteurs de recherche.</p>
+
+<h3 id="bénéfices">Bénéfices</h3>
+<p><strong>Pour tous les utilisateurs</strong> : mieux visualiser la structure de la page et identifier rapidement le contenu recherché.</p>
+
+<p><strong>Pour les utilisateurs déficients visuels, déficients cognitifs ou ayant des difficultés de lecture</strong> : naviguer plus facilement et accéder rapidement au contenu.</p>
+
+<p><strong>Bonus</strong> : améliorer le référencement du site en indiquant aux moteurs de recherche les informations les plus importantes que comportent la page.</p>
+
+<h3 id="outils">Outils</h3>
+<p><a href="https://addons.mozilla.org/fr/firefox/addon/headingsmap/">L’extension HeadingsMap de Firefox<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> permet de générer le plan d’une page en indiquant les niveaux de titres et leur imbriquation. On peut ainsi rapidement visualiser la cohérence de la hiérarchie des titres. Je l’ai personnellement installée sur mon navigateur et je m’en sers régulièrement.</p>
+:ET
