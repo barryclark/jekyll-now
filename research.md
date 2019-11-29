@@ -1,0 +1,14 @@
+---
+layout: page
+title: Research project
+permalink: /research_project/
+---
+# My PhD research project
+[Human African trypanosomiasis](https://www.who.int/news-room/fact-sheets/detail/trypanosomiasis-human-african-(sleeping-sickness)) (HAT), also known as Sleeping Sickness, is caused by either one of two protozoan parasites transmitted by the bite of the tsetse fly. Contraction of the Gambian form of the disease (caused by *Trypanosoma brucei gambiense*) will result in death in a few years if the disease remains untreated, however, disease diagnosis and treatment is complex. With under 3,000 annual cases, HAT has been slated for elimination by 2020 through the WHO Roadmap. Alongside such targets comes the increasing recognition that tackling HAT and animal African trypanosomiasis requires the identification and elimination of transmission hotspots. With the number of cases waning there is an increased drive to concentrate control and intervention efforts in remaining disease foci. 
+
+Before effective control strategies can be implemented, however, there is a need to categorise areas of high remaining disease prevalence and risk. As the number of cases decreases, control efforts should become more targeted, informed by a fine-scale knowledge of risk areas. **This project aims to develop statistical methods to help elucidate spatial hotspots of HAT prevalence.** By collating information on tsetse fly occurrence and abundance, HAT prevalence, and remotely sensed satellite data, I plan to produce spatial predictions of disease prevalence. Model predictions will be validated by in-field sampling of vector and disease presence in areas predicted to be at risk, or in areas for which data is currently lacking. Once validated, the predicted surface will be used to inform fine scale intervention implementation. Spatially and temporal referenced data on species (tsetse) and case occurrence will be obtained from national partners and through existing collaborations. This secondary data will form the backbone of my initial models. Environmental correlates will be constructed from remotely sensed satellite imagery (secondary data), through image classification techniques. Such correlates will be used to inform geostatistical models predicting vector and disease distribution. To validate model predictions, I will contribute toward primary data collection via in-field vector and disease prevalence surveys. The spatial positioning of these surveys will be informed by initial model estimates, with an aim to generate data in areas of high model uncertainty.
+
+### Related publications
+(empty)
+### Related blog posts
+(empty)

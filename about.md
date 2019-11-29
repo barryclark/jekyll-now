@@ -8,7 +8,7 @@ I am currently a MRC Doctoral Training Partnership candidate studying at the Liv
 
 Prior to starting my MRC DTP, I worked within the Spatial Ecology and Epidemiology Group (SEEG) at the University of Oxford, led by Professor Simon Hay. 
 
-My DTP research aims to produce high spatial resolution maps of neglected tropical diseases, with a focus on human African trypanosomiasis (HAT). My primary supervisor at LSTM is [Professor Steve Torr](https://www.lstmed.ac.uk/about/people/professor-stephen-torr), a world expert on the behaviour, ecology and control of disease vectors. My secondary supervisor, based at Lancaster University, is [Dr Michelle Stanton](http://chicas.lancaster-university.uk/people/stanton.html) whose expertise include spatial statistics, GIS, and satellite imagery processing.
+My DTP research aims to produce high spatial resolution maps of neglected tropical diseases, with a focus on human African trypanosomiasis (HAT). My primary supervisor at LSTM is [Professor Steve Torr](https://www.lstmed.ac.uk/about/people/professor-stephen-torr), a world expert on the behaviour, ecology and control of disease vectors. My secondary supervisor, based at Lancaster University, is [Dr Michelle Stanton](http://chicas.lancaster-university.uk/people/stanton.html) whose expertise include spatial statistics, GIS, and satellite imagery processing. More information on my research project can be obtained via my "Research project" page.
 
 ### Education and Training: 
 **2021:** *Liverpool School of Tropical Medicine, Liverpool, UK*
@@ -50,11 +50,13 @@ American Society of Tropical Medicine and Hygiene (2018 – present)
 
 
 ### Oral and poster presentations:
+##### Updated November 2019
+
+"Assessing the impact of climate change on sleeping sickness in Zimbabwe using a geospatial model of tsetse population dynamics" *American Society of Tropical Medicine and Hygiene 68th Annual Meeting, Maryland, 20th November – 24th November 2019.* **Oral Presentation (session 61).**
+
 World Health Organisation: Achieving NTD Control, Elimination and Eradication Targets Post-2020, Modelling Perspectives and Priorities. *Geneva, 15-16th April 2019.* **Oral Presentation.**
 
 "Spatial analysis of transport networks in northern Uganda for guiding vector control activities for sleeping sickness." *American Society of Tropical Medicine and Hygiene 67th Annual Meeting, New Orleans, 28th October – 1st November 2018.* **Oral Presentation (session 170).**
-
-"Spatial analysis of transport networks in northern Uganda for guiding vector control activities for sleeping sickness." *American Society of Tropical Medicine and Hygiene 67th Annual Meeting, New Orleans, 28th October – 1st November 2018.* **Poster.**
 
 "Global mapping of vulnerability to snakebite." *Snakebite – From Science to Society conference, Leiden, 22nd June 2018.* **Oral Presentation.**
 
