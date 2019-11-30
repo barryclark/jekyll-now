@@ -1,0 +1,66 @@
+I" <p>Comment gérer les langues de manière accessible dans une page web ?</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire la page <a href="https://www.w3.org/International/questions/qa-html-language-declarations.fr">Déclarer la langue en HTML</a> du <span lang="en">World Wide Web Consortium</span> (W3C)</li>
+  <li>lire la notice <a href="https://www.accede-web.com/notices/html-css-javascript/3-langues/3-1-attribut-lang-balise-html/">Renseigner la langue principale de la page<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Accedeweb</li>
+  <li>lire la notice <a href="https://www.accede-web.com/notices/html-css-javascript/3-langues/3-2-attribut-lang-changements-de-langue/">Utiliser l’attribut lang pour signaler les changements de langue<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Accedeweb</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="indiquer-la-langue-principale-de-la-page">Indiquer la langue principale de la page</h3>
+<p>Pour déclarer la langue par défaut d’une page web, il faut toujours utiliser un attribut <code class="highlighter-rouge">lang</code> sur la balise <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>. Cette langue sera héritée par tous les autres éléments. Par exemple, pour une page en français :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>L’attribut <code class="highlighter-rouge">lang</code> est renseigné par un code de deux (parfois trois) lettres :</p>
+<ul>
+  <li><em>fr</em> pour le français</li>
+  <li><em>en</em> pour l’anglais</li>
+  <li><em>es</em> pour l’espagnol</li>
+</ul>
+
+<p>Les valeurs permises sont disponibles sur <a href="http://www.loc.gov/standards/iso639-2/php/French_list.php" hreflang="en">cette page listant les différents codes standards<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+
+<h3 id="signaler-les-changements-de-langue">Signaler les changements de langue</h3>
+<h4 id="directement-dans-le-contenu">Directement dans le contenu</h4>
+<p>Il peut arriver qu’un site contienne des mots dans une langue différente de la langue principale déclarée dans la balise <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>. Dans ce cas, afin de permettre aux technologies d’assistance de les vocaliser correctement, ils doivent être signalés avec l’attribut <code class="highlighter-rouge">lang</code>. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h2 lang="en"&gt;Web Content Accessibility Guidelines&lt;/h2&gt;
+</code></pre></div></div>
+
+<p>Si aucune balise n’encadre directement l’élément concerné par le changement de langue, il est alors nécessaire d’ajouter une balise <code class="highlighter-rouge">&lt;span&gt;</code> ou <code class="highlighter-rouge">&lt;div&gt;</code> et de renseigner son attribut <code class="highlighter-rouge">lang</code>. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;J'ai installé l'extension &lt;span lang="en"&gt;I don't care about cookies&lt;/span&gt; sur mon navigateur.&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Le changement de langue n’a pas à être déclaré pour :</p>
+<ul>
+  <li>des noms propres</li>
+  <li>des mots d’origine étrangère intégrés couramment dans la langue principale, comme par exemple <em>parking</em> ou <em>podcast</em></li>
+</ul>
+
+<h4 id="dans-des-attributs">Dans des attributs</h4>
+<p>Les changements de langue concernent tous les contenus, y compris les valeurs de certains attributs comme <code class="highlighter-rouge">title</code> ou <code class="highlighter-rouge">alt</code>. Il n’est pas possible d’indiquer des changements de langue directement dans un attribut, dans ce cas le changement de langue est indiqué sur l’élément qui contient l’attribut. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img src="/share.jpg" lang="en" alt="Share" /&gt;
+</code></pre></div></div>
+
+<p><strong>Il peut arriver que le contenu d’un élément et son attribut soient rédigés dans des langues différentes</strong>. C’est par exemple le cas lorsqu’un site propose différentes langues. Le site du W3C en donne un exemple dans son article <a href="https://www.w3.org/International/questions/qa-html-language-declarations.fr#contentvsattribute">Que faire si le contenu d’un élément et son attribut sont dans des langues différentes ?<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+
+<p>Le texte du lien montre la langue de la page cible, en utilisant la langue de la page cible (ici l’espagnol), mais un attribut <code class="highlighter-rouge">title</code> associé donne une information dans la langue de la page actuelle (ici le français) :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span title="Version espagnole"&gt;&lt;a lang="es" href="qa-html-language-declarations.es"&gt;Español&lt;/a&gt;&lt;/span&gt;
+</code></pre></div></div>
+
+<p>Enfin <strong>lorsque l’attribut contient plusieurs passages de texte dans des langues différentes, il n’est pas possible de les indiquer</strong> et le critère d’accessibilité devient donc non applicable.</p>
+
+<h3 id="indiquer-la-langue-dun-lien">Indiquer la langue d’un lien</h3>
+<p>Lorsqu’une page contient un lien vers une autre page, rédigée dans une langue différente de la langue sur le site en cours, il est possible de l’indiquer grâce à l’attribut <code class="highlighter-rouge">hreflang</code>. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Retrouvez les bonnes pratiques sur le &lt;a href="http://www.w3.org" hreflang="en"&gt;site du W3C (en anglais)&lt;/a&gt;.&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Sur mon téléphone, Talkback ne vocalise pas l’attribut <code class="highlighter-rouge">hreflang</code> mais peut-être une indication est-elle fournie par d’autres lecteurs d’écran ? A tester.</p>
+:ET
