@@ -1,0 +1,25 @@
+I"�<p>Comment gérer les langues de manière accessible dans une page web ?</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://a11y-guidelines.orange.com/web/inc-dev-titre-rubriques.html">Donner des titres aux rubriques<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> issu des <span lang="en">guidelines</span> accessibilité d’Orange</li>
+  <li>lire la <a href="https://www.accede-web.com/notices/html-css-javascript/1-structure/1-8-hierarchie-titres-logique-h1-h6/">notice “Mettre en place une hiérarchie de titres logique et exhaustive avec les balises &lt;h1&gt; à &lt;h6&gt;“<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Accedeweb</li>
+  <li>lire la page <a href="https://blog.atalan.fr/discussions-seo-et-hierarchie-de-titres-h1-h2/">Discussions – SEO et hiérarchie de titres<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> sur le blog d’Atalan</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="indiquer-la-langue-principale-de-la-page">Indiquer la langue principale de la page</h3>
+<p>Pour déclarer la langue par défaut d’une page web, il faut toujours utiliser un attribut <code class="highlighter-rouge">lang</code> sur la balise <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>. Cette langue sera héritée par tous les autres éléments. Par exemple, pour une page en français :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>L’attribut <code class="highlighter-rouge">lang</code> est renseigné par un code de deux (parfois trois) lettres :</p>
+<ul>
+  <li><em>fr</em> pour le français</li>
+  <li><em>en</em> pour l’anglais</li>
+  <li><em>es</em> pour l’espagnol</li>
+</ul>
+
+<p>Les valeurs permises sont disponibles sur <a href="http://www.loc.gov/standards/iso639-2/php/French_list.php" hreflang="en">cette page listant les différents codes existants<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+:ET
