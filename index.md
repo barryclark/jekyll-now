@@ -9,6 +9,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
 - [Πώς μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin στην Ελλάδα;](#buybitcoin)
 - [Που μπορώ να μάθω περισσότερα για το Bitcoin;](#bitcoin.org)
+- [Ποια βιβλία να διαβάσω για το Bitcoin;](#books)
 - [Σε τι διαφέρει το Bitcoin από μετρητά, από χρήματα στην τράπεζα, από το χρυσό;](#compare)
 - [Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;](#wallet)
 - [Αναζητώ ένα πορτοφόλι Bitcoin που να λειτουργεί στα Ελληνικά](#greekwallet)
@@ -74,6 +75,14 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 ### <a name="bitcoin.org"></a>Που μπορώ να μάθω περισσότερα για το Bitcoin;
 
 Η επίσημη σελίδα ενημέρωσης για το Bitcoin είναι το [bitcoin.org](https://bitcoin.org). Η σελίδα [Bitcoin Resources του Jameson Lopp](https://lopp.net/bitcoin.html) είναι επίσης πολύ χρήσιμη.
+
+### <a name="books"></a>Ποια βιβλία να διαβάσω για το Bitcoin;
+
+- Μικρό, εισαγωγικό, μη-τεχνικό βιβλίο: [The Little Bitcoin Book](https://littlebitcoinbook.com)
+- Μη-τεχνικό βιβλίο για την ιστορία του Bitcoin: [Digital Gold](https://www.harpercollins.com/9780062572066/digital-gold/)
+- Μη-τεχνικά βιβλία για τη χρησιμότητα του Bitcoin: [The Internet of Money](https://theinternetofmoney.info)
+- Τεχνικό βιβλίο για το Bitcoin: [Mastering Bitcoin](https://bitcoinbook.info)
+- [Άλλα βιβλία](https://www.lopp.net/bitcoin-information/books.html)
 
 ### <a name="compare"></a>Σε τι διαφέρει το Bitcoin από μετρητά, από καταθέσεις στην τράπεζα, από το χρυσό και τις πιστωτικές κάρτες;
 
