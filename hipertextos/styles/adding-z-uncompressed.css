@@ -381,7 +381,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #logotips.thumb-10 {margin:0px;min-width:100%;}
     #logotips .thumb-3 img {border-radius:12px;margin:0px;}
     div.masked {left:46%;opacity:.12!important;}
-    .cover#page-header {padding-top: 50px;}
+    .cover#page-header {padding-top: 32px;}
     .cover#page-header h1 {line-height: 0.8em;font-size: 21px ;}
     .cover#page-header h2 {line-height: 1.2em;font-size: 19px ;}
     #covers article h4 {font-size: 26px;line-height: 1.3em;}
@@ -417,6 +417,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 	#glassed p {font-size:.75em;line-height:1.5em; -webkit-column-count: 1;-moz-column-count: 1;column-count: 1;  }
     #glassed {padding:12px;}
     #brander {margin-left:10%;min-width:80%;}
+    .cover-links h4 {font-weight: lighter ; font-size: .95em!important;letter-spacing: 0.03em!important}
 }
 @media (max-width: 540px) {
 	#fases {display:none!important;visibility: hidden!important}
