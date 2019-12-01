@@ -643,6 +643,15 @@ header {
     z-index: 3;
     font-weight: 900;
     text-shadow: 1px 1px 35px rgba(0, 100, 100, 0.1); }
+  header .predator {
+    -ms-grid-column: 5;
+    grid-column-start: 5;
+    -ms-grid-column-span: 1;
+    grid-column-end: 6;
+    -ms-grid-row: 5;
+    grid-row-start: 5;
+    -ms-grid-row-span: 1;
+    grid-row-end: 6; }
   header .glitch {
     -ms-grid-row: 4;
     grid-row-start: 4;
@@ -719,3 +728,14 @@ header {
       display: inline-block;
       width: 100%;
       margin-bottom: 48px; }
+  .how .skills-list li:first-child {
+    margin-top: 8px; }
+  .how .skills-list li {
+    margin-bottom: 10px;
+    margin-left: 24px; }
+  .how .skills-list a {
+    background: #2EB5FB;
+    padding: 2px 8px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 2px; }
