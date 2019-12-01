@@ -654,7 +654,21 @@ header {
     grid-row-end: 6;
     -ms-grid-row-align: center;
     align-self: center;
-    margin-left: 32px; }
+    -ms-grid-column-align: center;
+    justify-self: center; }
+  header .sketch {
+    -ms-grid-column: 3;
+    grid-column-start: 3;
+    -ms-grid-column-span: 1;
+    grid-column-end: 4;
+    -ms-grid-row: 5;
+    grid-row-start: 5;
+    -ms-grid-row-span: 1;
+    grid-row-end: 6;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -ms-grid-column-align: center;
+    justify-self: center; }
   header .glitch {
     -ms-grid-row: 4;
     grid-row-start: 4;
