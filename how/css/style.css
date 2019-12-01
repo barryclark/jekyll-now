@@ -651,7 +651,10 @@ header {
     -ms-grid-row: 5;
     grid-row-start: 5;
     -ms-grid-row-span: 1;
-    grid-row-end: 6; }
+    grid-row-end: 6;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-left: 32px; }
   header .glitch {
     -ms-grid-row: 4;
     grid-row-start: 4;
