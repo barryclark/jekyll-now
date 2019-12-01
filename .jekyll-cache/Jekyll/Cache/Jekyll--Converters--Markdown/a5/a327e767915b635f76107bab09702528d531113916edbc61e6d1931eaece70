@@ -1,0 +1,51 @@
+I"�<p>Gérer les citations avec les éléments appropriés.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="http://romy.tetue.net/des-citations-bien-balisees?lang=fr">Des citations bien balisées<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Romy Duhem-Verdière</li>
+  <li>lire la référence <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/q">q : l’élément de citation en incise<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+  <li>lire la référence <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/blockquote">blockquote : l’élément de bloc de citation<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+  <li>lire la référence <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/cite">cite : l’élément de citation<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="baliser-les-citations-en-ligne">Baliser les citations en ligne</h3>
+<p>On utilise l’élément <code class="highlighter-rouge">&lt;q&gt;</code> pour baliser une citation en incise, c’est à dire <strong>une citation généralement courte, insérée directement dans un texte et qui ne nécessite pas de saut de paragraphe</strong>. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Tim Berners-Lee a dit :
+  &lt;q lang="en"&gt;The Web does not just connect machines, it connects people.&lt;/q&gt;
+&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Le navigateur matérialise ensuite cette citation avec des guillemets, il est donc inutile de les ajouter à la main.</p>
+
+<h3 id="baliser-les-blocs-de-citations">Baliser les blocs de citations</h3>
+<p>L’élément <code class="highlighter-rouge">blockquote</code> est utilisé pour baliser <strong>une citation longue, de un ou plusieurs paragraphes</strong>. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;blockquote&gt;
+&lt;p&gt;Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée... Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie... je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi...&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre></div></div>
+
+<p>L’apparence de la citation dépend du rendu du navigateur. Sur ce blog, la citation est matérialisée par une bordure grise à gauche et un texte en italique de couleur grise et de grande taille. L’ajout de guillemets, si souhaité, doit cette fois être effectué manuellement.</p>
+
+<h3 id="compléter-les-élements-de-citation">Compléter les élements de citation</h3>
+<h4 id="lattribut-cite">L’attribut <code class="highlighter-rouge">cite</code></h4>
+<p>Il est possible de compléter les balises <code class="highlighter-rouge">&lt;q&gt;</code> et <code class="highlighter-rouge">&lt;blockquote</code> avec un attribut <code class="highlighter-rouge">cite</code>. Il s’agit d’une <strong>URL qui désigne la source du document ou du message cité</strong>. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Tim Berners-Lee a dit :
+  &lt;q lang="en" cite="https://quotepark.com/fr/auteurs/tim-berners-lee/"&gt;The Web does not just connect machines, it connects people.&lt;/q&gt;
+&lt;/p&gt;
+</code></pre></div></div>
+
+<h4 id="lélément-cite">L’élément <code class="highlighter-rouge">&lt;cite&gt;</code></h4>
+<p>A ne pas confondre avec l’attribut <code class="highlighter-rouge">cite</code> vu précédemment.</p>
+
+<p>La balise <code class="highlighter-rouge">&lt;cite&gt;</code> est utilisée pour donner <strong>le titre d’une oeuvre</strong>. L’oeuvre en question peut être un livre, un film, un poème, un jeu, une exposition… Vous pouvez retrouver d’autres exemples d’oeuvres sur la référence <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/cite">cite : l’élément de citation<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;blockquote cite="https://fr.wikiquote.org/wiki/Ast%C3%A9rix_%26_Ob%C3%A9lix_:_Mission_Cl%C3%A9op%C3%A2tre"&gt;
+    &lt;p&gt;Et le mec, il lui dit c'est le phare à "On", parce qu'il s'appelle "On", le mec... Le mec, il s'appelle "On", et "On" il a un phare, c'est son appartenance. Il lui dit c'est le phare à "On" !... Le mec ! Il s'appelle "On" ! Il lui dit c'est son phare ! Et bah le Pharaon ! Qui est comme le chef de nous !&lt;/p&gt;
+    &lt;footer&gt;—Numérobis, &lt;cite&gt;Astérix &amp; Obélix : Mission Cléopâtre&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+</code></pre></div></div>
+:ET
