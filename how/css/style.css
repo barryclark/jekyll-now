@@ -97,8 +97,8 @@ html {
 .glitch {
   position: relative;
   width: var(--glitch-width);
-  max-width: 680px;
-  max-height: 750px;
+  max-width: 670px;
+  max-height: 700px;
   height: var(--glitch-height);
   overflow: hidden;
   margin: 0 auto; }
@@ -108,8 +108,8 @@ html {
   top: 0;
   left: 0;
   width: calc(95% + var(--gap-horizontal) * 2);
-  height: calc(100% + var(--gap-vertical) * 2);
-  background: url(../img/vats.png) no-repeat 50% 0;
+  height: calc(95% + var(--gap-vertical) * 2);
+  background: url(../img/pizza.png) no-repeat 50% 0;
   background-color: var(--blend-color-1);
   background-size: cover;
   -webkit-transform: translate3d(0, 0, 0);
