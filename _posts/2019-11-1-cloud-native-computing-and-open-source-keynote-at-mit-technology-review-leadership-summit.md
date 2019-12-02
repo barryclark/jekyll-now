@@ -38,3 +38,5 @@ tags:
 ![](/images/2019-11-1-cloud-native-computing-and-open-source-keynote-at-mit-technology-review-leadership-summit-10.jpg)
 
 ![Cheryl Hung at MIT Technology Review Leadership Summit, Singapore](/images/2019-11-1-cloud-native-computing-and-open-source-keynote-at-mit-technology-review-leadership-summit.jpeg)
+
+Photo credit: MIT Technology Review Leadership Summit co-hosted in partnership with IBM
