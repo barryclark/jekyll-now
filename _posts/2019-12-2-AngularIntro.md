@@ -9,4 +9,10 @@ title: Learning Journal for Angular Intro
 
 ## Angular Module
 
+### Component
+
+### Directive
+
+### Pipes 
+
 ## Angular Decorator
