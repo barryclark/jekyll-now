@@ -1,0 +1,62 @@
+I""<p>Gérer l’insertion de tableaux de mise en forme dans une page.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://openweb.eu.org/articles/problemes_tableaux/">Les problèmes de la mise en page par tableaux<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Openweb</li>
+  <li>lire l’article <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML/Tableaux">Les tableaux en HTML<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+  <li>
+    <p>lire l’article’ <a href="https://disic.github.io/guide-integrateur/4-tableaux.html">Tableaux<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du Guide de l’intégrateur</p>
+  </li>
+  <li>lire la référence <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/iframe">iframe<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+  <li>lire l’article <a href="https://a11y-guidelines.orange.com/web/exemples/iframes-techniques/index.html">Masquer les iframe techniques de manière accessible<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Orange</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="les-tableaux-de-mise-en-forme-tu-nutiliseras-pas">Les tableaux de mise en forme tu n’utiliseras pas</h3>
+<p>La première recommandation en terme de bonnes pratiques et d’accessibilité est tout simplement de <strong>ne pas utiliser de tableaux de mise en forme</strong>. Aux débuts du web, quand Flexbox, Grid ou même les spécifications <span lang="en">Cascading Style Sheets</span> (CSS) de positionnement n’existaient pas, la mise en page était un vrai défi pour les développeur·se·s. Les tableaux se sont alors révélés être les éléments les mieux adaptés pour réaliser des positionnements et mise en page complexes.</p>
+
+<p>Aujourd’hui, les techniques CSS sont suffisamment développées et supportées par tous les navigateurs pour ne plus avoir à recourir à cette pratique. D’autre part, les tableaux de mise en forme posent de nombreux problèmes qu’Openweb détaille dans son article <a href="https://openweb.eu.org/articles/problemes_tableaux/">Les problèmes de la mise en page par tableaux<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> :</p>
+<ul>
+  <li><strong>ils sont plus longs à s’afficher</strong> et consomment plus de ressources</li>
+  <li><strong>ils sont difficilement maintenables</strong> et complexes à modifier</li>
+  <li><strong>ils alourdissent le poids des pages</strong> car ils impliquent d’utiliser beaucoup de balises pour peu de contenu</li>
+  <li><strong>leur adaptation aux différentes tailles d’écran est complexe</strong> car les tableaux sont dimensionnés en fonction de leur contenu par défaut</li>
+</ul>
+
+<p>D’autre part, <strong>les tableaux de mise en forme posent des problèmes d’accessibilité</strong>. Les technologies d’assistance vont vocaliser le contenu du tableau ligne par ligne, ce qui ne correspond pas forcément au rendu visuel de la mise en page. Le contenu de la page en devient donc complètement illisible et est source de confusion pour les personnes non-voyantes.</p>
+
+<p><strong>Pour autant, tableaux de mise en forme et accessibilité ne sont pas forcément incompatibles</strong>. Et il peut arriver que vous ayez à maintenir en ligne des pages anciennes utilisant ce procédé. Nous allons donc voir comment rendre ce type de tableaux accessibles.</p>
+
+<h3 id="ajouter-un-rolepresentation">Ajouter un <code class="highlighter-rouge">role="presentation"</code></h3>
+<p>Les tableaux de mise en forme doivent être signalés par l’ajout d’un <code class="highlighter-rouge">role="presentation"</code> sur la balise <code class="highlighter-rouge">&lt;table&gt;</code>. Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;table role="presentation"&gt;[…]&lt;/table&gt;
+</code></pre></div></div>
+
+<p>Le <code class="highlighter-rouge">role="presentation"</code> annule la valeur sémantique native du tableau. Un lecteur d’écran ne restituera donc pas un tableau mais uniquement son contenu, comme s’il était du simple texte. Par ailleurs les fonctionnalités de navigation spécifiques aux tableaux (par exemple, flèche droite pour aller à la cellule suivante) ne seront plus actives.</p>
+
+<h3 id="ne-pas-utiliser-de-balises-ou-dattributs-propres-aux-tableaux-de-données">Ne pas utiliser de balises ou d’attributs propres aux tableaux de données</h3>
+<p>Un tableau de mise en forme ne doit pas posséder de balises ou d’attributs propres aux tableaux de données. Les balises et attributs suivants sont donc à proscrire dans un tableau de mise en forme :</p>
+<ul>
+  <li>les balises <code class="highlighter-rouge">&lt;caption&gt;</code>, <code class="highlighter-rouge">&lt;th&gt;</code>, <code class="highlighter-rouge">&lt;thead&gt;</code>, <code class="highlighter-rouge">&lt;tfoot&gt;</code> et <code class="highlighter-rouge">&lt;colgroup&gt;</code></li>
+  <li>les balises ayant un attribut <code class="highlighter-rouge">role="rowheader"</code> ou <code class="highlighter-rouge">role="columnheader"</code></li>
+  <li>les attributs <code class="highlighter-rouge">scope</code>, <code class="highlighter-rouge">headers</code> et <code class="highlighter-rouge">axis</code></li>
+</ul>
+
+<p>La structure globale d’un tableau de mise en forme doit donc ressembler à ceci :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;table role="presentation"&gt;
+ &lt;tr&gt;
+  &lt;td&gt;[contenu]&lt;/td&gt;
+  &lt;td&gt;[contenu]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;[contenu]&lt;/td&gt;
+  &lt;td&gt;[contenu]&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre></div></div>
+
+<h3 id="veiller-à-une-restitution-correcte-en-cas-de-linéarisation-du-tableau">Veiller à une restitution correcte en cas de linéarisation du tableau</h3>
+<p>Comme nous l’avons évoqué plus haut, les technologies d’assistance restituent de manière linéaire le contenu d’un tableau, c’est-à-dire ligne par ligne. Le contenu du tableau est donc lu cellule après cellule, de gauche à droite et ligne après ligne.</p>
+:ET
