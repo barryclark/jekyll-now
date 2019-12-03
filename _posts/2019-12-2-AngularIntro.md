@@ -84,7 +84,7 @@ export class AppModule {}
 ## Angular Module
 
 ### Component
-
+![Component decorator](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG_5316.JPG)
 ### Directive
 1. An extensions of HTML that modify elements and/or extend their behavior *repeating* *show/hide* and *dynamic attribute assignment*
 2.One of the 3 types of View Classes
@@ -98,6 +98,7 @@ export class AppModule {}
 ```
 (https://www.youtube.com/watch?v=23o0evRtrFI)
 
+3. ****Ngfor*** is also a commone one
 
 ### Pipes 
 
