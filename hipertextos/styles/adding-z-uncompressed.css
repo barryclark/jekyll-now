@@ -4,6 +4,7 @@
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll,
 #web-credits, #page-header, #post-header, #post-share, #date {text-align: center;}
 header {z-index: 1 !Important;}
+#lighting {text-shadow:0 0 12px #fff;font-weight;normal; font-size:1.15em;letter-spacing: .02em!important;padding-bottom:3em;}
 .lines {background: rgba(69, 69, 69, .12) !important;height: 2px;}
 main.darkmode {margin-top:-10px;padding-top: 0px !important;border: none;}
 main {border:none!important;padding-bottom: 0 !important;}
