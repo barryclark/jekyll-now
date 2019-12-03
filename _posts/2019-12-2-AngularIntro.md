@@ -57,7 +57,8 @@ let sq = new polygons.Square();
 
 ```
 
-## Angular Data Example
+## Angular Key Elements
+1. Home.ts(usually App.ts) => Almost all logic will be listed here
 
 ## Angular Module
 
