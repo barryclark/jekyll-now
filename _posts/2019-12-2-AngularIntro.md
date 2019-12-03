@@ -88,7 +88,15 @@ export class AppModule {}
 ### Directive
 1. An extensions of HTML that modify elements and/or extend their behavior *repeating* *show/hide* and *dynamic attribute assignment*
 2.One of the 3 types of View Classes
+```
+<dig *ngif = "clicked">
+	<h3> {{boat.name}} </h3>
+	<img [src] = "boat.img" width="200px"/>
+	<p> Built in {{boat.year}} </p>
+</div>
 
+```
+(https://www.youtube.com/watch?v=23o0evRtrFI)
 
 
 ### Pipes 
