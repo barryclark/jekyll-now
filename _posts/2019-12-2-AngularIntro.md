@@ -164,3 +164,7 @@ export class PipesExampleComponent implements OnInit {
 ## Angular Decorator
 https://docs.angularjs.org/guide/decorators
 ## Angular Services
+1. All classes that ***encapsulate business logic not related to presentation***
+2. Made available to view classes and other services via dependency injection
+3. Do not belong to a module
+4. Example: @Injectable
