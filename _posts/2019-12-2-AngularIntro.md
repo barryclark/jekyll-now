@@ -58,7 +58,8 @@ let sq = new polygons.Square();
 ```
 
 ## Angular Key Elements
-1. Home.ts(usually App.ts) => Almost all logic will be listed here
+1. Home.ts(usually App.ts) => Almost all logic will be listed here, including the ***@decorators***. The decorators allows us to ***bind typescript to the HTML template*** ex. creating a disabled button
+2. 
 
 ## Angular Module
 
