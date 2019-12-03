@@ -62,6 +62,24 @@ let sq = new polygons.Square();
 
 2. ***Interpolation***: In the html file the dynamic file is interpolated this way (an example): <h1> {{message}} </h1>. The value of the message is assigned in the ts file 
 
+3. ***Modularity*** with Ngmodules, browswer modules, Http modules, forms modules, etc.
+
+```
+// imports
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+
+// @NgModule decorator with its metadata
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
 ## Angular Module
 
 ### Component
