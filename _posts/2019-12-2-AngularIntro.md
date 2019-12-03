@@ -44,6 +44,18 @@ class CardProcessor {
   5.Namespace: ***Internal modules*** usually only for creating modules for legacy codes
   ![Namespace intro] (https://www.youtube.com/watch?v=4Onwa-Putv4)
 ![Angular structure](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG_5314.JPG)
+```
+namespace Shapes {
+    export namespace Polygons {
+        export class Triangle { }
+        export class Square { }
+    }
+}
+
+import polygons = Shapes.Polygons;
+let sq = new polygons.Square();
+
+```
 
 ## Angular Data Example
 
