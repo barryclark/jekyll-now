@@ -41,7 +41,8 @@ class CardProcessor {
   ```
   4. Other concepts similar to Java including interfaces, Enums and Generics
   
-  5.Namespace
+  5.Namespace: ***Internal modules*** usually only for creating modules for legacy codes
+  ![Namespace intro] (https://www.youtube.com/watch?v=4Onwa-Putv4)
 ![Angular structure](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG_5314.JPG)
 
 ## Angular Data Example
