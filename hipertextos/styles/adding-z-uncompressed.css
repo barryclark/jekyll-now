@@ -13,7 +13,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 #page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 .cover {	-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 img.apps {border-radius:27px;max-width:153px;}
-.cover img {width: 80px;margin-bottom: 2.0em;}
+.cover img {width: 80px;margin-bottom: 1.4em;}
 .cover h2 {letter-spacing: -0.001em;line-height: 1.2em;font-weight: normal ;font-size: 1em !important;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
 #coffee h2 {margin: 0;}
@@ -96,8 +96,8 @@ hr.lifting {margin: 0px;height: 1px;}
 
 /* Covers */
 #glass-front a {color: var(--color-grey);text-decoration: none;margin: 0px;}
-#glass-front .cover-links {padding-top: 16px;margin-top: 0px;padding-bottom: 32px;display: block;}
-#glass-front .cover-icon {max-width: 100%;height: auto;opacity:0.3;}
+#glass-front .cover-links {padding-top: 16px;margin-top: 0px;padding-bottom: 39px;display: block;}
+#glass-front .cover-icon {max-width: 100%;height: auto;opacity:0.5;}
 #glass-front a:hover {opacity:1;}
 #glass-front a:hover, #covers .cover-links a:hover {color: var(--color-white);}
 #glass-front a h4:hover {color: var(--color-white);}
