@@ -59,7 +59,8 @@ let sq = new polygons.Square();
 
 ## Angular Key Elements
 1. Home.ts(usually App.ts) => Almost all logic will be listed here, including the ***@decorators***. The decorators allows us to ***bind typescript to the HTML template*** ex. creating a disabled button
-2. 
+
+2. ***Interpolation***: In the html file the dynamic file is interpolated this way (an example): <h1> {{message}} </h1>. The value of the message is assigned in the ts file 
 
 ## Angular Module
 
