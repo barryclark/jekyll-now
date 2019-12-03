@@ -16,7 +16,6 @@ img.apps {border-radius:27px;max-width:153px;}
 .cover img {width: 80px;margin-bottom: 1.4em;}
 .cover h2 {letter-spacing: -0.001em;line-height: 1.2em;font-weight: normal ;font-size: 1em !important;}
 .cover h1 {letter-spacing: -0.03em;line-height: .8em;font-size: 2.69em;font-weight: lighter}
-#page-header p.textlighting {font-weight;normal; font-size:21px!important;letter-spacing: .02em!important;padding-bottom:3.2em;text-shadow:0 0 12px #fff;}
 #coffee h2 {margin: 0;}
 h2.fat {font-size:3em!important;font-weight: bold!important;}
 #page-main.darkmode {background: var(--color-white);}
@@ -81,6 +80,7 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 #follows #icons a {width:55px;height:55px;padding-top:12px;margin:0 1% 0 1%;}
 #follows #icons a:hover {}
 figure em a {border: none;border-bottom;line-height: 0.2em;padding: 12px 4px;}
+#page-header.cover p.textlighting {font-weight;normal; font-size:21px!important;letter-spacing: .02em!important;padding-bottom:3.2em;text-shadow:0 0 12px #fff;}
 
 /* Portfolio Nav */
 #page-nav {border: none;color: var(--color-hardgrey);}
