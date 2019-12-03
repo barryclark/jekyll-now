@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+My name is Shaun Dixon and by day I am a Test Engineer.  By night (and sometimes part of the day) I am a budding security tester. 
 
-### More Information
+I have always had an interest in security especially around web applications.  But taking the leap from "interest" to actual actions only happened recently. 
 
-A place to include any other types of information that you'd like to include about yourself.
+I am constantly learning new things every day and I am hoping one day to make a career out of this or to at least be able to do more within my current job.  In the meantime I am just enjoying my new hobby and learning new skills. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[shaundixonuk@gmail.com](mailto:shaundixonuk@gmail.com)
