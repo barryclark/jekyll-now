@@ -81,9 +81,15 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 4.directves (see below)
+
+5.Databinding: synchronize between ***model and view layers***  *Interpolation is a way of data biding*
+	(1) Expressions
+	(2) property binding
+	(3) event binding
+	(4)two-way binding
 ## Angular Key structure
 
-###NgModules
+### NgModules
 ![NgModules decorator](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG_5313.JPG)
 
 ### Component
@@ -104,7 +110,26 @@ export class AppModule {}
 3. ****Ngfor*** is also a commone one
 
 ### Pipes 
+HTML extensions that manipulates or formats data for display
 
+For example(https://www.intertech.com/Blog/angular-tutorial-working-with-angular-pipes/)
+
+***In Component***
+```
+export class PipesExampleComponent implements OnInit {
+  todaysDate: Date;
+  constructor() {
+    this.todaysDate = new Date();
+  }
+  ngOnInit() {
+  }
+}
+```
+***In template***
+```
+<h6>Today's Date Raw: {{todaysDate}}</h6>
+<h6>Today's Date Default: {{todaysDate | date}}</h6>
+```
 ## Angular Decorator
 
 ## Angular Services
