@@ -60,7 +60,7 @@ let sq = new polygons.Square();
 ## Angular Key Elements
 1. Home.ts(usually App.ts) => Almost all logic will be listed here, including the ***@decorators***. The decorators allows us to ***bind typescript to the HTML template*** ex. creating a disabled button
 
-2. ***Interpolation***: In the html file the dynamic file is interpolated this way (an example): <h1> {{message}} </h1>. The value of the message is assigned in the ts file 
+2. ***Interpolation***: In the html file the dynamic file is interpolated this way (an example): <p> {{message}} </p>. The value of the message is assigned in the ts file 
 
 3. ***Modularity*** with Ngmodules, browswer modules, Http modules, forms modules, etc.
 
@@ -80,11 +80,16 @@ import { AppComponent } from './app.component';
 })
 export class AppModule {}
 ```
+4.directves (see below)
 ## Angular Module
 
 ### Component
 
 ### Directive
+1. An extensions of HTML that modify elements and/or extend their behavior *repeating* *show/hide* and *dynamic attribute assignment*
+2.One of the 3 types of View Classes
+
+
 
 ### Pipes 
 
