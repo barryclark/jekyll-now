@@ -87,6 +87,37 @@ export class AppModule {}
 	(2) property binding
 	(3) event binding
 	(4)two-way binding
+	
+6. Modules vs. Components
+
+* Angular Component
+
+A component is one of the basic building blocks of an Angular app. An app can have more than one component. In a normal app, ***a component contains an HTML view page class file, a class file that controls the behaviour of the HTML page and the CSS/scss file to style your HTML view***. A component can be created using @Component decorator that is part of @angular/core module.
+
+```
+import { Component } from '@angular/core';
+and to create a component
+
+@Component({selector: 'greet', template: 'Hello {{name}}!'})
+class Greet {
+  name: string = 'World';
+}
+To create a component or angular app here is the tutorial
+```
+* Angular Module
+
+An angular module is ***set of angular basic building blocks like component, directives, services etc.*** An app can have more than one module. Modules basically group the related components, services together so that you can have chunks of functionality which can then run independently
+
+A module can be created using @NgModule decorator.
+```
+@NgModule({
+  imports:      [ BrowserModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
 ## Angular Key structure
 
 ### NgModules
@@ -131,5 +162,5 @@ export class PipesExampleComponent implements OnInit {
 <h6>Today's Date Default: {{todaysDate | date}}</h6>
 ```
 ## Angular Decorator
-
+https://docs.angularjs.org/guide/decorators
 ## Angular Services
