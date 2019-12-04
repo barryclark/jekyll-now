@@ -1,6 +1,6 @@
 ---
 Category: post
-title: Learning Journal for Angular: Http Services
+title: Learning Journal for Angular Http
 ---
 
 ## Angular Http Module
