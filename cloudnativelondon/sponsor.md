@@ -43,7 +43,7 @@ You can display a banner inside the room, just bring it on the evening. Please s
 
 > [Address TBC]
 
-If you need a table on the evening, email [email TBC].
+If you need a table on the evening, email Simon.Perry2@sainsburys.co.uk.
 
 #### Can we sponsor as a recruitment agency?
 
