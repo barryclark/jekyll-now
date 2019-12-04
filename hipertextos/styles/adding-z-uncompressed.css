@@ -351,10 +351,10 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 
 @media (max-width: 1242px) {
-    #page-header.cover {height:60vh;}
-    .cover#page-header {padding-top: 150px;}
-    .cover#page-header h1 {line-height: 1.0em;font-size: 26px ;}
-    .cover#page-header h2 {line-height: 1.2em;font-size: 18px ;}
+    #page-header.cover {height:80vh;}
+    .cover#page-header {padding-top: 69px;}
+    .cover#page-header h1 {line-height: 1em;font-size: 23px ;}
+    .cover#page-header h2 {line-height: 1.2em;font-size: 16px ;}
     img.dialog-svg {width: 140px;height: 100px;}
     #deep img.dialog-svg {max-width: 40px;height: 60px;margin-left: 12px;float: left;}
     #deep em a {font-size: 1.8em !important;line-height: 1.2em;}
@@ -362,7 +362,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #directories div {margin-left:39.4%;}
 }
 @media (max-width: 1024px) {
-    #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 105% auto;background-position: fixed !important;}
+    #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 36px;height:69vh;background-size: 100% auto;background-position: fixed !important;}
     #web-music {background-image: url("/img/m-music.jpg")!important;}
 	#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
 	#glassed {background-image: url("/img/m-imacblur.jpg")!important;}
@@ -384,8 +384,8 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #logotips .thumb-3 img {border-radius:12px;margin:0px;}
     div.masked {left:46%;opacity:.12!important;}
     #page-header.cover {padding-top: 36px;height:72vh;}
-    .cover#page-header h1 {line-height: 0.8em;font-size: 21px ;}
-    .cover#page-header h2 {line-height: 1.2em;font-size: 19px ;}
+    .cover#page-header h1 {line-height: 1em;font-size: 32px ;}
+    .cover#page-header h2 {line-height: 1.1em;font-size: 15px ;}
     #covers article h4 {font-size: 26px;line-height: 1.3em;}
     #covers article h5 {font-size: 23px;}
     #covers .cover-justify p {font-size: 12px !important;letter-spacing: 0.005em;line-height: 2.1em;}
@@ -421,7 +421,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover-links h4 {font-weight: lighter ; font-size: .95em!important;letter-spacing: 0.03em!important}
 }
 @media (max-width: 768px) {
-    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 105% auto;background-position: fixed !important;}
+    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 30px;height:72vh;background-size: 100% auto;background-position: fixed !important;}
     #web-music {background-image: url("/img/z-music.jpg")!important;}
 	#web-oferta {background-image: url("/img/z-imac.jpg")!important;}
 	#glassed {background-image: url("/img/z-imacblur.jpg")!important;}
@@ -452,4 +452,10 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #autoria a {font-size: 1.2em!important;padding:4px!important;}
     #autoria b {padding:0px;}
     #brander {margin-left:0px;min-width:100%;}
+}
+@media (max-width: 320px) {
+    #page-header.cover {height:80vh;}
+    .cover#page-header {padding-top: 33px;}
+    .cover#page-header h1 {line-height: 1em;font-size: 36px ;}
+    .cover#page-header {line-height: 1.2em;font-size: 21px ;}
 }
