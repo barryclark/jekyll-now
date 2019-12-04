@@ -245,7 +245,16 @@ key 3: focus on testing form validation and services
 ![adding else after tests](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5339.JPG)
 
 ### Case 2: Cart Service
+Key4: follow the syntax!
+![newSyntax](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5341.JPG)
 
+Key 5: If doing tests for asynchronous function, it is helpful to set up a time-out to make sure the function is returned after invoked
+![setTimeOut](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5343.JPG)
+
+![iscreated](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5344.JPG)
+
+Key 6: Check isValid
+![isValid](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5345.JPG)
 
 
 
