@@ -367,6 +367,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
         #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 90px;height:48vh;background-size: 105% auto;background-position: fixed !important;}
     #web-music {background-image: url("/img/m-music.jpg")!important;}
 		#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
+		#glassed {background-image: url("/img/m-imacblur.jpg")!important;}
     .medias#page-header {background-image: url("/img/m-portfoli.jpg");}
     div.masked {background-image: url("/img/m-golden.jpg");}
     #directories div {margin-left:38.6%;}
