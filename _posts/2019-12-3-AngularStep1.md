@@ -176,4 +176,58 @@ p.s. .invalid(is not valid) and pristine(not modified) are all AngularJS validat
 
 ## Angular Router
 
+### Set up routing module
+
+while creating a new project, Angular CLI will ask if angular routing is necessary. The answer is YES if routers will be used 
+
+In this case, the app-routing.module.ts set up the logic 
+
+```
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [{
+  path: 'accounts',
+  //import router from the children listed in accounts.module
+  loadChildren: () => import('./accounts/accounts.module')
+    .then(data => data.AccountsModule)
+},
+{ path: '', redirectTo: 'accounts', pathMatch: 'full' }];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+### router outlet
+In the app.html use the router outlet
+
+***
+<a routerLink="accounts/list">List</a>
+<router-outlet></router-outlet>
+***
+
+### paths
+In this case, the logic is from accounts.module, so it created another angular routing here
+```
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import * as components from './components';
+
+const routes: Routes = [
+  { path: '', redirectTo: 'list', pathMatch: 'full' },
+  { path: 'list', component: components.AccountListComponent },
+  { path: ':accountId', component: components.AccountEditorComponent },
+  { path: '**', component: components.NotFoundComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class AccountsRoutingModule { }
+```
 ## Angular Unit Test
