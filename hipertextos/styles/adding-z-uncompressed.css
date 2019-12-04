@@ -33,7 +33,7 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #web-branding h1 {color:var(--color-white);}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .0012em;text-align: center;color: var(--color-grey);}
 #web-grafics {color: var(--color-red);}
-#web-oferta #fronters {max-width: 45%;margin-right: 35%;}
+#web-oferta #fronters {max-width: 100%;}
 .animeonscroll img {padding:8px;max-width:30%;}
 #web-music {background-image: url("/img/music.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;}
 #web-branding {background: rgba(20,20,20,1);border: none;letter-spacing: .06em;overflow: hidden;text-align: center;}
