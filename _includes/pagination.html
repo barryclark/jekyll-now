@@ -1,0 +1,35 @@
+
+<nav class="pagination">
+  {% if paginator.previous_page %}
+
+    {% if paginator.previous_page == 1 %}
+      <a href="/">Prev</a>
+    {% else %}
+      <a href="/page{{ paginator.previous_page }}">Prev</a>
+    {% endif %}
+
+  {% else %}
+    <span class="disabled">Prev</span>
+  {% endif %}
+
+  {% if paginator.page == 1 %}
+    <span class="active">1</span>
+  {% else %}
+    <a href="/">1</a>
+  {% endif %}
+
+  {% for count in (2..paginator.total_pages) %}
+
+    {% if count == paginator.page %}
+      <span class="active">{{ count }}</span>
+    {% else %}
+      <a href="/page{{ count }}">{{ count }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}">Next</a>
+  {% else %}
+    <span class="disabled">Next</span>
+  {% endif %}
+</nav> <!-- End Section Pagination -->

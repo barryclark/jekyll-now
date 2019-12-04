@@ -1,0 +1,23 @@
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
+	<meta name="description" content="{{ page.description }}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="{{ "/assets/img/favicon/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+	<link rel="apple-touch-icon" href="{{ "/assets/img/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/img/favicon/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/img/favicon/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#d25469">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#d25469">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#d25469">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="{{ "/assets/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+	<!-- Styles -->
+	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+</head>

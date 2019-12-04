@@ -1,0 +1,49 @@
+// - - - - - - - - - - Newsletter Styles - - - - - - - - - - //
+
+.newsletter
+  padding: 2rem 0
+  text-align: center
+  color: $white
+  .newsletter_title
+    text-transform: uppercase
+    font-size: 2.1rem
+    margin: 0 0 1rem
+  form
+    width: 700px
+    max-width: 90%
+    margin: 0 auto
+    label
+      display: block
+      font-size: 1.35rem
+      font-weight: 400
+    .newsletter_box
+      padding: 2rem 0
+      position: relative
+    .email_input
+      width: 100%
+      padding: 1.35rem 3rem
+      border-radius: 2.5rem
+      background-color: $dark_light
+      color: $color_gray
+      border: none
+      outline: none
+    .subscribe_btn
+      width: 170px
+      padding: 1.35rem
+      color: $white
+      font-size: 0.9rem
+      text-align: center
+      text-transform: uppercase
+      background-color: $highlight
+      cursor: pointer
+      border-radius: 2.5rem
+      border: none
+      outline: none
+      position: absolute
+      top: 33px
+      right: 0
+      transition: background .35s ease-in-out
+      &:hover
+        background-color: rgba($highlight, 0.75)
+      &:active
+        background-color: rgba($highlight, 0.50)

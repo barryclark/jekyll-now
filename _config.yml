@@ -1,85 +1,54 @@
-#
-# This file contains configuration flags to customize your site
-#
+logo: T4T # add logo name
+title: Tips4Trips
+description: > # this means to ignore newlines until "baseurl:"
+  Consigli da viaggiatori, per viaggiatori
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Name of your site (displayed in the header)
-name: Tips4Trips
-# Short bio or description (displayed in the header)
-description: Consigli e gadget da viaggiatori per viaggiatori
+# Banner settings
+video: home.mp4 # add banner video. Add your video file to the folder video
+banner-title: Tips4Trips # add banner title
+banner-desc: Consigli da viaggiatori, per viaggiatori # add banner description
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# Author settings
+author-pic: face.jpg # your photo
+author-name: # your name
+about-author: # about author
+email: your-email@domain.com # your email
+phone: (496)-169-6557 # your pnone number
+website: https://dwayne.example.com # you website
 
-#
-# Flags below are optional
-#
+# Social link
+google_url:    # add url link
+twitter_url:   # add url link
+instagram_url: # add url link
+pinterest_url: # add url link
+dribbble_url:  # add url link
+facebook_url:  # add url link
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: 
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+# Disqus
+discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
 
+# Newsletter
+mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
+# Tracker
+analytics:
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+# Paginate
+paginate: 12
+paginate_path: /page:num/
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
+# Build settings
+markdown: kramdown
+plugins_dir:
+  - jekyll-paginate
+  - jekyll-sitemap
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-paginate
+  - jekyll-sitemap
 
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

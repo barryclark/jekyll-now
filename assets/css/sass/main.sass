@@ -1,0 +1,114 @@
+@import 'tools/normalize'
+@import 'tools/animate'
+@import 'syntax'
+@import 'variables'
+
+// - - - - - - - - - - Main Styles - - - - - - - - - - //
+
+*, *::after, *::before
+  box-sizing: border-box
+
+body
+  font-family: "Lato", sans-serif
+  -webkit-font-smoothing: antialiased
+  background-color: $dark_gray
+  margin: 0
+
+p
+  font-size: 1.1rem
+  line-height: 1.75rem
+  margin: 0 0 1.75rem
+  color: $text_color
+  font-weight: 400
+
+blockquote
+  font-size: 1.2rem
+  font-style: italic
+  border-left: 3px solid $border_red
+  padding-left: 2rem
+  margin: 0 0 1.75rem
+  color: $dark_light
+  p
+    color: $dark_light
+    font-size: 1.2rem
+
+::-webkit-input-placeholder
+  color: $white
+
+::-moz-placeholder
+  color: $white
+
+input[type=email], input[type=text], input[type=tel], textarea
+  border: none
+  border-radius: 0.3rem
+  outline: none
+
+
+cite
+  color: lighten($color_gray, 15%)
+
+.wrapper
+  width: 1440px
+  max-width: 90%
+  margin: 0 auto
+
+.button_back
+  color: $white
+  font-size: 1.1rem
+  text-decoration: none
+  font-style: italic
+  display: inline-block
+  margin: 0.7rem 1rem
+  padding-left: 0.5rem
+  font-weight: 700
+  &:hover
+    text-decoration: underline
+
+.cf::before, .cf::after
+  content: ""
+  display: table
+
+.cf::after
+  clear: both
+
+// - - - - - - - - - - Header Styles - - - - - - - - - - //
+@import 'parts/header'
+
+// - - - - - - - - - - Banner Styles - - - - - - - - - - //
+@import 'parts/banner'
+
+// - - - - - - - - - - Cards Styles - - - - - - - - - - //
+@import 'parts/cards'
+
+// - - - - - - - - - - Newsletter Styles - - - - - - - - - - //
+@import 'parts/newsletter'
+
+// - - - - - - - - - - Pagination Styles - - - - - - - - - - //
+@import 'parts/pagination'
+
+// - - - - - - - - - - Arrow Top Styles - - - - - - - - - - //
+@import 'parts/arrow_top'
+
+// - - - - - - - - - - Comment Area Styles - - - - - - - - - - //
+@import 'parts/comment_area'
+
+// - - - - - - - - - - Footer Styles - - - - - - - - - - //
+@import 'parts/footer'
+
+// - - - - - - - - - - Post Styles - - - - - - - - - - //
+@import 'post'
+
+// - - - - - - - - - - Tags Styles - - - - - - - - - - //
+@import 'tags'
+
+// - - - - - - - - - - About Styles - - - - - - - - - - //
+@import 'about'
+
+// - - - - - - - - - - Contact Styles - - - - - - - - - - //
+@import 'contact'
+
+// - - - - - - - - - - Smooth Animate Styles - - - - - - - - - - //
+@import 'smooth'
+
+// - - - - - - - - - - Media Styles - - - - - - - - - - //
+@import 'media'

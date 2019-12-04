@@ -1,0 +1,47 @@
+#tags
+  background-color: $white
+  padding: 2rem 1rem 4rem
+  width: 960px
+  max-width: 90%
+  margin: 7rem auto 7rem
+  h1
+    text-align: center
+    margin: 2rem 0 3rem
+    color: $dark_gray
+  .tags
+    padding: 0
+    margin-bottom: 3rem
+    list-style: none
+    li
+      float: left
+      margin: 0 0.5rem 0.5rem 0
+      border: 1px solid $highlight
+      border-radius: 0.5rem
+      background-color: $highlight_lighten
+      box-shadow: 0 2px 0 $highlight
+      transition: all .35s
+      &:hover
+        background-color: rgba($highlight, 0.75)
+    a
+      display: inline-block
+      text-decoration: none
+      padding: 0.4rem 0.8rem
+      color: $white
+      &:active
+        transform: translateY(1px)
+
+  .tag_list
+    a
+      color: $highlight
+      &:hover
+        color: rgba($highlight, 0.75)
+
+  .back_to_home
+    text-align: center
+    margin-top: 4rem
+    a
+      text-decoration: none
+      font-size: 1.2rem
+      color: $dark_gray
+      &:hover
+        text-decoration: underline

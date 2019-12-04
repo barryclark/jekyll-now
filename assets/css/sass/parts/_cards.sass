@@ -1,0 +1,41 @@
+// - - - - - - - - - - Cards Styles - - - - - - - - - - //
+
+.chapters
+  padding: 2rem 0
+  .chapter
+    position: relative
+    float: left
+    width: 32.333%
+    margin: 0 0.5% 1% 0.5%
+    overflow: hidden
+    transition: transform 0.4s
+    a
+      text-decoration: none
+    img
+      width: 100%
+      vertical-align: middle
+      transition: all 0.4s
+      &:hover
+        transform: scale(1.5)
+
+  .chapter_inner
+    position: absolute
+    left: 2.5%
+    bottom: 10%
+    .chapter_number, .chapter_title
+      color: $white
+    .chapter_number
+      font-size: 0.9rem
+      text-transform: uppercase
+      margin: 0 0 1rem 0
+      &::after
+        content: ""
+        display: block
+        width: 40px
+        margin-top: 0.3rem
+        border-top: 3px solid $border_red
+
+    .chapter_title
+      font-size: 1.75rem
+      font-weight: 400
+      margin: 0 0 0.5rem 0

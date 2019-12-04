@@ -1,0 +1,150 @@
+// - - - - - - - - - - Post Styles - - - - - - - - - - //
+
+.post_wrapper, .entry_content
+  max-width: 900px
+  padding: 0 1.85rem
+  margin: 0 auto
+
+.post_content
+  width: 960px
+  max-width: 90%
+  margin: 7rem auto 7rem
+
+.post
+  background-color: $white
+  margin-bottom: 1.5rem
+  header
+    position: relative
+    overflow: hidden
+    margin-bottom: 3rem
+    img
+      width: 100%
+      max-height: 500px
+      vertical-align: middle
+    .post_description
+      position: absolute
+      left: 0
+      bottom: 0
+    .post_meta
+      display: inline-block
+      text-transform: uppercase
+      padding: 0.5rem 1rem
+      font-size: 1.1rem
+      margin: 0
+      color: $white
+      background-color: rgba($highlight_lighten, .4)
+    .post_title
+      padding: 1rem
+      font-size: 2rem
+      margin: 0
+      background-color: rgba($highlight, .4)
+      color: $white
+
+  .entry_content
+    padding-bottom: 2rem
+
+.post_footer
+  padding: 2rem 0
+  background-color: $white
+  border-top: 2px solid $color_gray
+  span
+    text-transform: uppercase
+    font-size: 0.8rem
+    color: $text_color
+  a
+    text-decoration: none
+    margin-left: 0.1rem
+    margin-bottom: 0.3rem
+    padding: 0.5rem 1rem
+    color: $color_gray
+    background-color: $white_gray
+    display: inline-block
+    transition: all .35s ease-in-out
+    &:hover
+      background-color: $highlight_lighten
+      color: $white
+  .post_share
+    float: left
+    a
+      font-size: 0.9rem
+  .post_tag
+    float: right
+    a
+      font-size: 0.7rem
+      text-transform: uppercase
+      line-height: 1rem
+      display: inline-block
+
+.author
+  padding: 2rem 0
+  margin-bottom: 1.5rem
+  background-color: $white
+  .author_image
+    float: left
+    display: inline-block
+    border-radius: 50%
+    width: 100px
+    height: 100px
+    overflow: hidden
+    margin-right: 2rem
+    img
+      width: 100%
+  .author_info
+    padding-left: 8rem
+    .author_title
+      font-size: 1.5rem
+      margin-top: 0
+      color: $dark_gray
+      &::before,
+      &::after
+        content: " — "
+  .author_social
+    span
+      display: inline-block
+      color: #667085
+      padding-right: 0.5rem
+      margin: 0 0.5rem 0.5rem 0
+      border-right: 1px solid #667085
+      font-size: 0.8rem
+      letter-spacing: 1px
+      &:last-child
+        border-right: none
+      a
+        color: #667085
+        text-decoration: none
+        &:hover
+          opacity: .9
+
+.recent_box
+  background-color: $white
+  padding: 2rem 0
+  margin-bottom: 1.5rem
+  .recent_title
+    font-size: 1.5rem
+    text-align: center
+    margin: 0 0 1.75rem
+  .recent_list
+    .recent_item
+      position: relative
+      display: inline-block
+      width: 31%
+      margin-left: 1.5%
+      margin-bottom: 1.5%      
+      height: 180px
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      &:hover
+        opacity: .9
+      span
+        position: absolute
+        bottom: 10%
+        left: 2.5%
+        color: white
+        font-size: 1rem
+    .recent_item_post_1
+      background-image: url(../images/canyon.jpg)
+    .recent_item_post_2
+      background-image: url(../images/malaysia.jpg)
+    .recent_item_post_3
+      background-image: url(../images/sweden.jpg)

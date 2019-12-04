@@ -1,0 +1,39 @@
+// - - - - - - - - - - Smooth Animate Styles - - - - - - - - - - //
+
+#banner,
+.main_header,
+.page-content,
+.post_content,
+.about,
+.contact
+  animation-duration: 0.7s
+  animation-fill-mode: both
+  animation-name: fadeInDown
+
+#banner, 
+.main_header
+  animation-delay: 0.5s
+
+.page-content,
+.post_content,
+.about,
+.contact
+  animation-delay: 0.75s
+
+@-webkit-keyframes fadeInDown 
+  from 
+    opacity: 0
+    transform: translateY(-20px)
+  
+  to 
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes fadeInDown
+  from
+    opacity: 0
+    transform: translateY(-20px)
+
+  to
+    opacity: 1
+    transform: translateY(0)

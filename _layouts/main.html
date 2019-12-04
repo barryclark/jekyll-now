@@ -1,0 +1,19 @@
+---
+layout: default
+---
+  {% include header.html %}
+
+  {% include banner.html %}
+
+  <main class="page-content" aria-label="Content">
+  <section class="chapters cf">
+      <div class="wrapper flex-row">
+      {{ content }}
+      </div>
+  </section>
+  </main>
+  {% include newsletter.html %}
+
+  {% include pagination.html %}
+
+  {% include footer.html %}
