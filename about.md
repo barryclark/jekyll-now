@@ -4,12 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+*Tips4Trips* nasce come un progetto aperto a tutti, con un contenuto variegato di consigli, gadget e posti da visitare, elaborati da esperienza diretta degli autori.
