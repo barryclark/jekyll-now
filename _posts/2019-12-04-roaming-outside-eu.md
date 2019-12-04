@@ -3,7 +3,7 @@ layout: post
 title: Roaming fuori dall'UE
 ---
 
-![Copertina](../images/2019_12_04_header.png)
+![Copertina](../images/2019_12_04_header.jpg)
 
 Da diverso tempo, il roaming all'interno dell'Unione Europea è una realtà assodata, e in diversi paesi è possibile ottenere una quantità decente di traffico dati in 4G senza spendere troppo. Oggigiorno, [la maggior parte della popolazione europea comunica basandosi su piattaforme come WhatsApp e Telegram](https://www.messengerpeople.com/global-messenger-usage-statistics/), senza contare le mappe e altre app che possono tornare utili quando si viaggia.
 
