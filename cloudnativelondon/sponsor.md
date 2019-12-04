@@ -15,7 +15,7 @@ Company sizes range from startups to large enterprises, with fintech particularl
 
 * A 30 second introduction at the beginning of the event by your representative (or Cheryl or other host.)
 * Your logo and company information in emails to group members, blog posts and tweets
-* You are welcome to [send a speaker](/cloudnativelondon/speak), but please no direct sales pitches. Due to high demand, the next available speaking slot is mid-2020.
+* You are welcome to [send a speaker](/cloudnativelondon/speak), but please no sales pitches. Due to high demand, the next available speaking slot is end of 2020.
 * Sponsors who commit for at least twelve months are listed on [https://www.meetup.com/Cloud-Native-London​](https://www.meetup.com/Cloud-Native-London).
 
 Each sponsor contributes £600 (no VAT) per event.
@@ -41,13 +41,9 @@ As pizza and beer are more than any individual contribution, we order catering o
 
 You can display a banner inside the room, just bring it on the evening. Please ship swag to this address 1-2 weeks in advance:
 
-> Skills Matter  
-> For Cloud Native London c/o Bridey Chase  
-> CodeNode  
-> 10 South Place  
-> London EC2M 7EB  
+> [Address TBC]
 
-If you need a table on the evening, email community@skillsmatter.com.
+If you need a table on the evening, email [email TBC].
 
 #### Can we sponsor as a recruitment agency?
 
