@@ -23,6 +23,7 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;}
 #glassed {text-align:justify; color:var(--color-hardgrey) ;background: linear-gradient(to right, rgba(220,220,220,.75), rgba(255,255,255,.96));padding:32px 25% 32px 25%;margin-bottom:-15px!important;}
 #glassed p {font-size:.95em;line-height:1.4em; -webkit-column-count: 2;-moz-column-count: 2;column-count: 2;  }
+#web-oferta h2, #web-oferta h3, #web-oferta h5 {color: var(--color-white)!important }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;}
 #web-grafics h1 { margin-bottom:38px;line-height:.85em; }
 #web-grafics h4 {margin-bottom:6px;}
@@ -44,7 +45,7 @@ img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #web-branding img.note {background: rgba(20,20,20,.1);}
 #logotips article {padding: 23px;}
 #fronters-brand .cover-justify svg {min-width: 72px;}
-#web-oferta { background:var(--color-softgrey);image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;}
+#web-oferta { background:var(--color-black);image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;}
 #web-oferta .note {width: 260px;}
 #fronters img.htmlcss {max-width: 300px;}
 .text-center {text-align: center;}
