@@ -82,7 +82,8 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 #follows #icons a {width:55px;height:55px;padding-top:12px;margin:0 1% 0 1%;}
 #follows #icons a:hover {}
 figure em a {border: none;border-bottom;line-height: 0.2em;padding: 12px 4px;}
-#textlighting {font-size:23px!important;letter-spacing: .02em!important;padding-bottom:2.1em;text-shadow:0 0 12px #fff;}
+#textlighting {font-size:23px!important;letter-spacing: .03em!important;padding-bottom:2.1em;
+    text-shadow:0 0 2px rgba(255,255,255,.7), 0 0 8px rgba(255,255,255,.5),  0 0 32px rgba(255,255,255,.5) !important;}
 
 /* Portfolio Nav */
 #page-nav {border: none;color: var(--color-hardgrey);}
@@ -353,7 +354,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 @media (max-width: 1242px) {
     #page-header.cover {height:80vh;}
     .cover#page-header {padding-top: 69px;}
-    .cover#page-header h1 {line-height: 1em;font-size: 23px ;}
+    .cover#page-header h1 {line-height: 1em;font-size: 45px ;font-weight: normal ;}
     .cover#page-header h2 {line-height: 1.2em;font-size: 16px ;}
     img.dialog-svg {width: 140px;height: 100px;}
     #deep img.dialog-svg {max-width: 40px;height: 60px;margin-left: 12px;float: left;}
