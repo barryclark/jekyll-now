@@ -231,3 +231,8 @@ const routes: Routes = [
 export class AccountsRoutingModule { }
 ```
 ## Angular Unit Test
+
+### Case 1: Using reverse as an example
+
+Key 1: Use a function and replace the parameters if the tests are getting redundant
+![reverse test](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5335.JPG)
