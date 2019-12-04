@@ -421,12 +421,15 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover-links h4 {font-weight: lighter ; font-size: .95em!important;letter-spacing: 0.03em!important}
 }
 @media (max-width: 768px) {
-    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 30px;height:72vh;background-size: 100% auto;background-position: fixed !important;}
-    #web-music {background-image: url("/img/z-music.jpg")!important;}
-	#web-oferta {background-image: url("/img/z-imac.jpg")!important;}
-	#glassed {background-image: url("/img/z-imacblur.jpg")!important;}
-	#fases {display:none!important;visibility: hidden!important}
+    #glass-front a.cover-links:after {display:none;visibility: hidden;}
+    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;padding-top: 30px;height:72vh;background-size: 100% auto;background-position: fixed !important;}
+    #web-music {background-image: url("/img/z-music.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;}
+	#web-oferta {background-image: url("/img/z-imac.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 180% auto !important;}
+	#glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 180% auto !important;;}
+    #web-body h5 {font-size:.9em;}
+    #fases {display:none!important;visibility: hidden!important}
     #fronters {margin:0px;min-width:70%;}
+    #fronters h2 {font-size:2.6em!important;}
     #blured {margin: 0px;min-width:100%;}
     .note svg {max-width:64px;}
     #web-music .note {max-width:64px!important;}
@@ -445,7 +448,6 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #page-footer {max-height: 362px !important;}
     #page-header.cover {}
     #glassed {background-size: 100% auto;background-position: fixed !important;}
-    #web-oferta {background-size: 100% auto;background-position: fixed !important;}
     #directories div {margin-left:30%;}
     #g-text {font-size: .69em!important;line-height:1.3em;}
     #autoria {font-size: .5em!important;line-height:1.2em;}
@@ -454,6 +456,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #brander {margin-left:0px;min-width:100%;}
 }
 @media (max-width: 320px) {
+    #fronters h2 {font-size:2em!important;}
     #page-header.cover {height:80vh;}
     .cover#page-header {padding-top: 33px;}
     .cover#page-header h1 {line-height: 1em;font-size: 36px ;}
