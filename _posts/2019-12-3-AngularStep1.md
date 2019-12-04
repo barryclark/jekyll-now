@@ -236,3 +236,16 @@ export class AccountsRoutingModule { }
 
 Key 1: Use a function and replace the parameters if the tests are getting redundant
 ![reverse test](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5335.JPG)
+
+Key 2: Follow Red-Green-Refactor principle
+
+![better test](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5338.JPG)
+
+key 3: focus on testing form validation and services
+![adding else after tests](https://github.com/EmilyStacy-droid/EmilyStacy-droid.github.io/blob/master/images/IMG-5339.JPG)
+
+### Case 2: Cart Service
+
+
+
+
