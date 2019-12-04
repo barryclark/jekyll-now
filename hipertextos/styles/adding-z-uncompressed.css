@@ -21,9 +21,9 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #page-main.darkmode {background: var(--color-white);}
 #page-main.darkmode em a {background: #111;}
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;}
-#glassed {text-align:justify; color:var(--color-grey) ;background: linear-gradient(to bottom right, rgba(0,0,0,.25), rgba(0,0,0,1));padding:32px 25% 32px 25%;margin:-15px!important;}
+#glassed {text-align:justify; color:var(--color-white) ;background: linear-gradient(to bottom right, rgba(0,0,0,.25), rgba(0,0,0,1));padding:32px 25% 32px 25%;margin:-15px!important;}
 #glassed p {font-size:.86em;line-height:1.3em; -webkit-column-count: 2;-moz-column-count: 2;column-count: 2;  }
-#glassed h5 {font-size:1.05em;line-height:1.3em;font-weight: normal; }
+#web-body h5 {font-size:1.1em;line-height:1.4em; }
 #web-oferta h2, #web-oferta h3, #web-oferta h5 {color: var(--color-white)!important }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;}
 #web-grafics h1 { margin-bottom:38px;line-height:.85em; }
