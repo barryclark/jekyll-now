@@ -68,7 +68,7 @@ Finally another parent got the data by calling ***the service***
 ```
 
 ## Angular Form Tags and Form Module
-Without Angular Tags, the bootstrap form won't work.
+Without Angular directive (the only directive we have learned!) Tags, the bootstrap ***form*** won't work.
 
 In order to create a form in Angular, follow the steps:
 
@@ -153,7 +153,7 @@ cancel() {
 
 ```
 
-Step 3: In the targe ***.html*** file use a tag(decorator?) to bind the data
+Step 3: In the targe ***.html*** file use a ***DIRECTIVE tag [formGroup]*** (directs the info from the form to the component .ts) to bind the data
 
 ```
 <form [formGroup]="accountForm" (ngSubmit)="save()">
