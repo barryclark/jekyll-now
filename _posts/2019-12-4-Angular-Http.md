@@ -51,13 +51,21 @@ import { environment } from '../../environments/environment';
 
 export class AccountsService {
 
-//use the environment.ts file to protect confidential data. It is a good place to post userName and baseURL. The production needs to be false! 
+//use the environment.ts file to protect confidential data. 
+
+It is a good place to post userName and baseURL.
+
+The production needs to be false! //
 
   private baseUrl = environment.baseUrl;
 
   constructor(private httpClient: HttpClient) { }
   
-  //When httpRequest is made, the returning subject is a general json object. If we have a class for the object, like Account. It will cause an error and we cannot use the methods. The best way is to set up an interface Iaccount that is a POJO and let it return the interface object 
+  //When httpRequest is made, the returning subject is a general json object. 
+  
+  If we have a class for the object, like Account. It will cause an error and we cannot use the methods.
+  
+  The best way is to set up an interface Iaccount that is a POJO and let it return the interface object //
 
   getAll(): Promise<Account[]> {
     return this.httpClient.get<IAccount[]>(`${this.baseUrl}/directory/accounts`)
@@ -138,7 +146,7 @@ export class AccountListComponent implements OnInit {
 }
 ```
 
- (1) Note 1: In TypeScript, interfaces is NOT a type, but a representation of an object. The interface describes the response. It DOES   NOT  create a JS class for users. It just validates the ID and the properties. The object that is receiving has a SHAPE. This concept is extremely important and helpful while doing the ***get,post,update methods***
+ Note 1: In TypeScript, interfaces is NOT a type, but a representation of an object. The interface describes the response. It DOES   NOT  create a JS class for users. It just validates the ID and the properties. The object that is receiving has a SHAPE. This concept is extremely important and helpful while doing the ***get,post,update methods***
  
 In JavaScript, it won’t be a problem. The returning object can be converted to JS class easily.
 
@@ -189,3 +197,8 @@ export class Account implements IAccount {
 
 
 ## Angular Promises v.s. Observable
+https://www.youtube.com/watch?v=JFx3amVu1Yg
+
+## Angular Intercepter
+
+## Angular Testing HTTP Requests
