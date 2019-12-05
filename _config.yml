@@ -12,12 +12,12 @@ banner-title: Tips4Trips # add banner title
 banner-desc: Consigli da viaggiatori, per viaggiatori # add banner description
 
 # Author settings
-author-pic: face.jpg # your photo
-author-name: # your name
+author-pic: # author photo
+author-name: # author name
 about-author: # about author
-email: your-email@domain.com # your email
-phone: (496)-169-6557 # your pnone number
-website: https://dwayne.example.com # you website
+email: # your email
+phone: # your pnone number
+website: # you website
 
 # Social link
 google_url:    # add url link

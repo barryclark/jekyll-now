@@ -1,0 +1,25 @@
+roberto:
+  name:           Roberto Orgiu
+  avatar:         avatar_roberto.png
+  bio:            "Roberto è uno sviluppatore Android che viaggia molto. Gli piace scattare fotografie e visitare posti nuovi."
+  # Twitter nick for use in Twitter cards and follow button.
+  # If no twitter in this config, the twitter follow button will be removed
+  twitter: _tiwiz 
+  social:
+    - title: "twitter"
+      url: "https://twitter.com/_tiwiz"
+    - title: "instagram"
+      url: "https://www.instagram.com/tiwiz"
+
+daniele:
+  name:           Daniele Bonaldo
+  avatar:         avatar_daniele.jpg
+  bio:            "Daniele è un appassionato di tecnologia che ama viaggiare, sia per lavoro che per piacere, esplorando nuovi luoghi e portando sempre con sè la fidata macchina fotografica."
+  twitter: danybony_
+  social:
+    - title: "twitter"
+      url: "https://twitter.com/danybony_"
+    - title: "instagram"
+      url: "https://www.instagram.com/danybony_"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UC7aX2_JvrhZ2Xw30KniSMpg"

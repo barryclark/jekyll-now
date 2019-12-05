@@ -3,6 +3,7 @@ layout: post
 title: "Roaming fuori dall'UE"
 img: 2019_12_04_header.jpg
 date: 2019-12-04 17:30:00 +0100
+author: roberto
 tag: [Travel, Internet, Roaming]
 ---
 
