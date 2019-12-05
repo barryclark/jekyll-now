@@ -7,7 +7,7 @@ header {z-index: 1 !Important;}
 .lines {background: rgba(69, 69, 69, .12) !important;height: 2px;}
 main.darkmode {margin-top:-10px;padding-top: 0px !important;border: none;}
 main {border:none!important;padding-bottom: 0 !important;}
-.parallax {background-position:bottom!important; -webkit-transition: all .0s ease;-moz-transition: all .0s ease;-ms-transition: all .0s ease;-o-transition: all .0s ease;transition: all .0s ease;}
+.parallax {background-position:center; -webkit-transition: all .0s ease;-moz-transition: all .0s ease;-ms-transition: all .0s ease;-o-transition: all .0s ease;transition: all .0s ease;}
 body {text-align: justify;-moz-hyphens: none;-ms-hyphens: none;-webkit-hyphens: none;-o-hyphens: none;hyphens: none;word-wrap: none;}
 p, ul {font-size: 18px;line-height: 27px;}
 #page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
@@ -422,7 +422,6 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover-links h4 {font-weight: lighter ; font-size: .95em!important;letter-spacing: 0.03em!important}
 }
 @media (max-width: 768px) {
-    #coffe em u label {margin:0px!important;}
     #glass-front a.cover-links:after {display:none;visibility: hidden;}
     #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;padding-top: 30px;height:72vh;background-size: 100% auto;background-position: fixed !important;}
     #web-music {background-image: url("/img/z-music.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;}
@@ -455,6 +454,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #autoria a {font-size: 1.2em!important;padding:4px!important;}
     #autoria b {padding:0px;}
     #brander {margin-left:0px;min-width:100%;}
+    #coffe em u label {margin:0px!important;}
 }
 @media (max-width: 320px) {
     #web-grafics h3 {margin-top:-30px;font-size:.92em;}
