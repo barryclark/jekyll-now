@@ -199,6 +199,27 @@ export class Account implements IAccount {
 ## Angular Promises v.s. Observable
 https://www.youtube.com/watch?v=JFx3amVu1Yg
 
+Promise                                  | Observable
+-----------------------------------------| -------------
+NOT lazy(load without  "then")           | lazy (only happen when subscribed)
+canNOT be cancelled                      | Can be cancelled
+
 ## Angular Intercepter
 
+The basic introduction about Angular intercepter: https://angular.io/api/common/http/HttpInterceptor
+
+In this case using HttpIntercepter to save the header so that we don’t need to have headers for authorization while getting or posting
+
+
+
 ## Angular Testing HTTP Requests
+
+1. describe vs. fdescribe: ***fdescribe*** let ***npm test*** only run this one test
+
+
+2. While testing https, always set up the request in ***after each*** to make sure the call will happen and the data can be resolved (or rejected). The benefits: (1)we only send the request ONCE (2) to avoid that the result is ALWAYS true
+
+ 
+3. We are creating the FAKEHTTPService class with hard coding data, not the real class
+
+
