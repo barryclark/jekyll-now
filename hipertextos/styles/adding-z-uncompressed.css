@@ -24,6 +24,7 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #glassed {text-align:justify; color:var(--color-white) ;background-position: center; padding:32px 25% 32px 25%;margin:-15px!important;}
 #glassed p {color:rgba(180,180,180,.6) ;font-size:.8em; line-height:1.4em; -webkit-column-count: 2;-moz-column-count: 2;column-count: 2;  }
 #web-body h5 {font-size:19px!important;line-height:1.3em!important;font-weight: normal }
+#web-body {padding-bottom:0px!important;}
 #web-oferta h2, #web-oferta h3, #web-oferta h5 {color: var(--color-white)!important }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;}
 #web-oferta #fronters h5 {line-height: .9em;font-size:1.5em;}
