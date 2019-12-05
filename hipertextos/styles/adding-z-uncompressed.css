@@ -21,7 +21,7 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #page-main.darkmode {background: var(--color-white);}
 #page-main.darkmode em a {background: #111;}
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;}
-#glassed {text-align:justify; color:var(--color-white) ;background-position: top; padding:32px 25% 32px 25%;margin:-15px!important;}
+#glassed {text-align:justify; color:var(--color-white) ;z-index:2!important;background-position: top; padding:32px 25% 32px 25%;margin:-15px!important;}
 #glassed p {font-size:.86em;line-height:1.3em; -webkit-column-count: 2;-moz-column-count: 2;column-count: 2;  }
 #web-body h5 {font-size:1.1em;line-height:1.4em; }
 #web-oferta h2, #web-oferta h3, #web-oferta h5 {color: var(--color-white)!important }
@@ -336,6 +336,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #covers .cover-justify p {font-size: 16px !important;letter-spacing: 0.001em;max-width: 80%;margin-left: 10%;}
     #covers article p em {font-size: 18px !important;letter-spacing: 0.001em;}
     .thumb-5, .thumb-6 {width: 100%;}
+    #web-grafics .thumb-6 {width: 70%;margin-left:14.5%;}
     #brander.thumb-6 {width:50%;}
     img.dialog-svg {width: 340px;height: 100px;}
     #deep img.dialog-svg {max-width: 120px;height: 150px;margin-left: 12px;float: left;}
@@ -367,6 +368,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     .medias#page-header {background-image: url("/img/m-portfoli.jpg");}
     div.masked {background-image: url("/img/m-golden.jpg");}
     #directories div {margin-left:38.6%;}
+    #web-grafics .thumb-6 {width: 100%;margin-left:0px;}
 }
 @media (max-width: 800px) {
     #glass-front {background-size: 100% auto;background-position: fixed !important;}
@@ -378,6 +380,9 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #fronters h5 {font-size:1.1em;margin:0px;}
     #web-branding em a, #web-grafics em a,
     #web-music em a {display:none;}
+    #web-grafics h3 {margin-top:-30px;font-size:1.4em;}
+    #web-grafics p {font-size:.9em!important;padding-bottom:3em;}
+    #web-grafics p b {font-size:1.1em!important;}
     #logotips.thumb-10 {margin:0px;min-width:100%;}
     #logotips .thumb-3 img {border-radius:12px;margin:0px;}
     #page-header.cover {padding-top: 36px;height:72vh;}
@@ -424,7 +429,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 	#web-oferta {background-image: url("/img/z-imac.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 180% auto !important;}
 	#glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 180% auto !important;;}
     #web-body h5 {font-size:.9em;}
-    #fases {display:none!important;visibility: hidden!important}
+    #web-grafics h3 {margin-top:-30px;font-size:1.2em;}
     #fronters {margin:0px;min-width:70%;}
     #fronters h2 {font-size:2.6em!important;}
     #blured {margin: 0px;min-width:100%;}
@@ -452,6 +457,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #brander {margin-left:0px;min-width:100%;}
 }
 @media (max-width: 320px) {
+    #web-grafics h3 {margin-top:-30px;font-size:.92em;}
     #fronters h2 {font-size:2em!important;}
     #page-header.cover {height:80vh;}
     .cover#page-header {padding-top: 33px;}
