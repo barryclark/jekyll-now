@@ -1,0 +1,78 @@
+I""<p>Gérer l’insertion de tableaux de données dans une page.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire les <a href="https://www.accede-web.com/notices/html-css-javascript/9-tableaux/">notices relatives aux tableaux<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire l’article <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML/Tableaux">Les tableaux en HTML<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+  <li>lire l’article <a href="https://disic.github.io/guide-integrateur/4-tableaux.html">Tableaux<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du Guide de l’intégrateur</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="tableaux-de-données-simple-et-tableaux-de-données-complexe">Tableaux de données simple et tableaux de données complexe</h3>
+<p>Le glossaire du Référentiel Général d’Amélioration de l’Accessibilité (RGAA) donne les définitions suivantes :</p>
+
+<blockquote>
+  <p>Un tableau de données est une structure introduite par une balise &lt;table&gt; ou lorsqu’il est correctement restitué par les technologies d’assistance par une balise pourvue d’un attribut WAI-ARIA role=”table”. Cette balise permet de structurer des informations en lignes et en colonnes via des cellules de données et des cellules d’en-têtes.</p>
+</blockquote>
+
+<blockquote>
+  <p>Lorsqu’un tableau de données contient des en-têtes qui ne sont pas répartis uniquement sur la première ligne et/ou la première colonne de la grille ou dont la portée n’est pas valable pour l’ensemble de la colonne ou de la ligne, on parle de tableau de données complexe.</p>
+</blockquote>
+
+<p><strong>Un tableau de données présentent donc des informations structurées en lignes et en colonnes</strong>. Les cellules de données contiennent direcement les informations du tableau. Les cellules d’en-têtes débutent une ligne ou une colonne et définissent le type de données que contiennent la ligne ou la colonne.</p>
+
+<p><strong>Un tableau de données simple est un tableau dans lequel les cellules d’entêtes sont associées à l’intégralité des cellules de données d’une ligne ou d’une colonne.</strong></p>
+
+<p><strong>Un tableau de données complexe est un tableau dans lequel les cellules d’entêtes ne sont pas associées à l’intégralité des cellules de données d’une ligne ou d’une colonne.</strong></p>
+
+<p>Un exemple de tableau de données simple où les en-têtes “Prénom” et “Nom” s’appliquent bien à l’intégralité de leurs colonnes respectives :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prénom</th>
+      <th>Nom</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jack</td>
+      <td>O'Neill</td>
+    </tr>
+    <tr>
+      <td>Daniel</td>
+      <td>Jackson</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Un exemple de tableau de données complexe où</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th colspan="2">Animals</th>
+    </tr>
+    <tr>
+      <th colspan="2">Hippopotamus</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Horse</th>
+      <td>Mare</td>
+    </tr>
+    <tr>
+      <td>Stallion</td>
+    </tr>
+    <tr>
+      <th colspan="2">Crocodile</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Chicken</th>
+      <td>Hen</td>
+    </tr>
+    <tr>
+      <td>Rooster</td>
+    </tr>
+  </tbody>
+</table>
+:ET

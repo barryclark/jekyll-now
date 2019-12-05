@@ -1,0 +1,148 @@
+I"�#<p>Gérer l’insertion de tableaux de données dans une page.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire les <a href="https://www.accede-web.com/notices/html-css-javascript/9-tableaux/">notices relatives aux tableaux<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire l’article <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML/Tableaux">Les tableaux en HTML<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla</li>
+  <li>lire l’article <a href="https://disic.github.io/guide-integrateur/4-tableaux.html">Tableaux<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du Guide de l’intégrateur</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="tableaux-de-données-simple-et-tableaux-de-données-complexe">Tableaux de données simple et tableaux de données complexe</h3>
+<p>Le glossaire du Référentiel Général d’Amélioration de l’Accessibilité (RGAA) donne les définitions suivantes :</p>
+
+<blockquote>
+  <p>Un tableau de données est une structure introduite par une balise &lt;table&gt; ou lorsqu’il est correctement restitué par les technologies d’assistance par une balise pourvue d’un attribut WAI-ARIA role=”table”. Cette balise permet de structurer des informations en lignes et en colonnes via des cellules de données et des cellules d’en-têtes.</p>
+</blockquote>
+
+<blockquote>
+  <p>Lorsqu’un tableau de données contient des en-têtes qui ne sont pas répartis uniquement sur la première ligne et/ou la première colonne de la grille ou dont la portée n’est pas valable pour l’ensemble de la colonne ou de la ligne, on parle de tableau de données complexe.</p>
+</blockquote>
+
+<p><strong>Un tableau de données présentent donc des informations structurées en lignes et en colonnes</strong>. Les cellules de données contiennent direcement les informations du tableau. Les cellules d’en-têtes débutent une ligne ou une colonne et définissent le type de données que contiennent la ligne ou la colonne.</p>
+
+<p><strong>Un tableau de données simple est un tableau dans lequel les cellules d’entêtes sont associées à l’intégralité des cellules de données d’une ligne ou d’une colonne.</strong></p>
+
+<p><strong>Un tableau de données complexe est un tableau dans lequel les cellules d’entêtes ne sont pas associées à l’intégralité des cellules de données d’une ligne ou d’une colonne.</strong></p>
+
+<p>Un exemple de tableau de données simple où les en-têtes s’appliquent bien à l’intégralité de leurs colonnes respectives (<em>note de l’autrice : pour les besoins de la démonstration, cet exemple de tableau n’est volontairement pas accessible à ce stade</em>) :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Équipements</th>
+      <th>Nombre de lignes</th>
+      <th>Pourcentage du total de lignes</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Rampe d'accès</td>
+    <td>260</td>
+    <td>70,46 %</td>
+  </tr>
+  <tr>
+    <td>Annonce sonore</td>
+    <td>318</td>
+    <td>86,17 %</td>
+  </tr>
+</table>
+
+<p>Un exemple de tableau de données complexe avec des en-têtes et des cellules de données fusionnées (<em>note de l’autrice : pour les besoins de la démonstration, cet exemple de tableau n’est volontairement pas accessible à ce stade</em>) :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Malvoyants</th>
+      <th colspan="2">Aveugles</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
+      <th>Obstacles contrastés</th>
+      <th>Portes contrastées</th>
+      <th>Obstacles détectables à la canne</th>
+      <th>Guidage en braille</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>73</td>
+    <td>65</td>
+    <td>103</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td colspan="2" headers="malvoyant">138</td>
+    <td colspan="2" headers="aveugle">103</td>
+  </tr>
+</table>
+
+<p>Maintenant que avons bien défini ce qu’était un tableau de données simple et un tableau de données complexe, nous allons voir comment les rendre accessibles.</p>
+
+<h3 id="recommandations-daccessibilité-communes-aux-tableaux-simples-et-complexes">Recommandations d’accessibilité communes aux tableaux simples et complexes</h3>
+<ul>
+  <li>un titre définit de façon claire et concise leur contenu : ce titre doit être balisé prioritairment avec l’élément <code class="highlighter-rouge">&lt;caption&gt;</code>.</li>
+  <li>si des cellules d’en-têtes sont présentes, elles doivent être balisées avec l’élément <code class="highlighter-rouge">&lt;th&gt;</code></li>
+</ul>
+
+<h3 id="recommandations-daccessibilité-spécifiques-aux-tableaux-simples">Recommandations d’accessibilité spécifiques aux tableaux simples</h3>
+<p>Pour associer les cellules de données aux cellules d’en-têtes, l’attribut <code class="highlighter-rouge">scope</code> doit être utilisé sur les balises <code class="highlighter-rouge">&lt;th&gt;</code>. Il permet d’indiquer aux technologies d’assistance s’il s’agit d’une en-tête de ligne ou de colonne.</p>
+<ul>
+  <li>s’il s’agit d’une en-tête de colonne, on indiquera <code class="highlighter-rouge">scope="col"</code></li>
+  <li>s’il s’agit d’une en-tête de ligne, on indiquera : <code class="highlighter-rouge">scope="row"</code></li>
+</ul>
+
+<p>Voici le code de notre exemple de tableau de données simple reprenant cette fois les recommandations d’accessibilité :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;table&gt;
+  &lt;caption&gt;Accessibilité des lignes du réseau de surface RATP&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Équipements&lt;/th&gt;
+      &lt;th scope="col"&gt;Nombre de lignes&lt;/th&gt;
+      &lt;th scope="col"&gt;Pourcentage du total de lignes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Rampe d'accès&lt;/td&gt;
+    &lt;td&gt;260&lt;/td&gt;
+    &lt;td&gt;70,46 %&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Annonce sonore&lt;/td&gt;
+    &lt;td&gt;318&lt;/td&gt;
+    &lt;td&gt;86,17 %&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre></div></div>
+
+<p>Ce qui donne une fois implémenté directement dans la page :</p>
+
+<table>
+  <caption>Accessibilité des lignes du réseau de surface RATP</caption>
+  <thead>
+    <tr>
+      <th scope="col">Équipements</th>
+      <th scope="col">Nombre de lignes</th>
+      <th scope="col">Pourcentage du total de lignes</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Rampe d'accès</td>
+    <td>260</td>
+    <td>70,46 %</td>
+  </tr>
+  <tr>
+    <td>Annonce sonore</td>
+    <td>318</td>
+    <td>86,17 %</td>
+  </tr>
+</table>
+
+<h3 id="recommandations-daccessibilité-spécifiques-aux-tableaux-complexes">Recommandations d’accessibilité spécifiques aux tableaux complexes</h3>
+<p>Nous l’avons vu, les tableaux de données complexes comportent des en-têtes</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;caption&gt;Nombre de gares et points d'arrêts TER, en fonction du type de handicap et du type de dispositif par handicap&lt;/caption&gt;
+</code></pre></div></div>
+
+<p><em>Note de l’autrice : les exemples de tableaux utilisés dans cet article sont tirés du <a href="https://disic.github.io/guide-integrateur/4-tableaux.html">Guide de l’intégrateur, section relative aux tableaux<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</em></p>
+:ET
