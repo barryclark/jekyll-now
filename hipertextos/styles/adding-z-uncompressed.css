@@ -104,7 +104,7 @@ hr.lifting {margin: 0px;height: 1px;}
 #glass-front .cover-icon {max-width: 100%;height: auto;opacity:0.5;}
 #glass-front a:hover {opacity:1;}
 #glass-front a:hover, #covers .cover-links a:hover {color: var(--color-white);}
-#glass-front a h4:hover {color: var(--color-white);}
+#glass-front a h5:hover {color: var(--color-white);}
 #glass-front a.cover-links:after {content: '\25B6';opacity: 0.06;position: absolute;margin-left: -15px;bottom: 16px;padding-right: 6px;-o-transform: rotate(90deg);-ms-transform: rotate(90deg);-moz-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);}
 #glass-front a:hover:after {content: '\25B6';opacity: 100;    position: absolute;bottom: 6px;text-align: center;}
 #glass-front .cover-icon img {width: 72px;opacity:0.6; margin: 0px;}
