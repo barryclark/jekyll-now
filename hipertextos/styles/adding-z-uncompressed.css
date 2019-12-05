@@ -22,8 +22,8 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #page-main.darkmode em a {background: #111;}
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;}
 #glassed {text-align:justify; color:var(--color-white) ;background-position: center; padding:32px 25% 32px 25%;margin:-15px!important;}
-#glassed p {font-size:.86em;line-height:1.3em; -webkit-column-count: 2;-moz-column-count: 2;column-count: 2;  }
-#web-body h5 {font-size:18px!important;line-height:1.3em!important;font-weight: normal }
+#glassed p {color:var(--color-softgrey) ;font-size:.8em; line-height:1.4em; -webkit-column-count: 2;-moz-column-count: 2;column-count: 2;  }
+#web-body h5 {font-size:19px!important;line-height:1.3em!important;font-weight: normal }
 #web-oferta h2, #web-oferta h3, #web-oferta h5 {color: var(--color-white)!important }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;}
 #web-oferta #fronters h5 {line-height: .9em;font-size:1.5em;}
@@ -332,10 +332,9 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #coffee .pushed-5 {margin-left: 39% !important;}
     #covers {text-rendering: optimizeLegibility;}
     #covers article h4 {font-size: 23px;margin-bottom: 6px;    }
-    #covers article h5 {font-size: 21px;margin: 0px;    }
     #covers .cover-justify p {font-size: 16px !important;letter-spacing: 0.001em;max-width: 80%;margin-left: 10%;}
     #covers article p em {font-size: 18px !important;letter-spacing: 0.001em;}
-    .thumb-5, .thumb-6 {width: 100%;}
+    .thumb-5 {width: 100%;}
     #web-grafics .thumb-6 {width: 70%;margin-left:14.5%;}
     #brander.thumb-6 {width:50%;}
     img.dialog-svg {width: 340px;height: 100px;}
@@ -346,7 +345,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     aside.thumb-3 a {font-size: 18px;}
     aside.thumb-3 a svg {width: 23px;}
     aside.thumb-3 p {margin: 1em 0 1em 0;border-bottom: thin solid #eee;}
-    #cover-front {margin:0px;}
+    
 }
 
 @media (max-width: 1242px) {
@@ -357,7 +356,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #deep img.dialog-svg {max-width: 40px;height: 60px;margin-left: 12px;float: left;}
     #deep em a {font-size: 1.8em !important;line-height: 1.2em;}
     img.front-responsive {width: 320px;margin-top: 60px;}
-    #directories div {margin-left:39.4%;}
+    #directories div {margin-left:39.4%;}   
 }
 @media (max-width: 1024px) {
     #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 36px;height:69vh;background-size: 100% auto;background-position: fixed !important;}
@@ -368,6 +367,8 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     div.masked {background-image: url("/img/m-golden.jpg");}
     #directories div {margin-left:38.6%;}
     #web-grafics .thumb-6 {width: 100%;margin-left:0px;}
+    #covers article h5 {font-size: 21px;margin: 0px;}
+    #cover-front {margin-left:10%;width:80%;}    
 }
 @media (max-width: 800px) {
     #glass-front {background-size: 100% auto;background-position: fixed !important;}
@@ -425,7 +426,9 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #web-music {background-image: url("/img/z-music.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;}
 	#web-oferta {background-image: url("/img/z-imac.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 100% 120% !important;}
 	#glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 100% 120% !important;;}
-    #web-body h5 {font-size:.9em;}
+	#web-body h5 {font-size:16px!important;line-height:1.5em!important;font-weight: normal }
+    #web-body {width:79%; margin-left:10.5%;}
+    #glassed p {font-size: .75em}
     #web-grafics h3 {margin-top:-30px;font-size:1.2em;}
     #fronters {margin:0px;min-width:70%;}
     #fronters h2 {font-size:2.6em!important;}
@@ -439,9 +442,10 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #fronters-music h4 small {font-size:13px; letter-spacing: -0.02em}
     #web-grafics p {font-size: 12px;}
     #covers article {width: 25%;height:160px;}
-    #covers article .cover-icon {padding:9px;margin:0px;}
+    #covers article .cover-icon {padding:2px;margin:0px;}
     #covers article h4{padding:0px;margin:0px;font-size:1.1em;line-height: 0.69em}
-    #covers article h5 small {display:none;}
+    #covers article h5 {font-size: 21px;margin: 0px;}
+    #cover-front {margin-left:0px;width:100%;}
     #icons a {width: 18%;padding: 17px;}
     #page-footer {max-height: 362px !important;}
     #page-header.cover {}
@@ -457,8 +461,12 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 @media (max-width: 320px) {
     #web-grafics h3 {margin-top:-30px;font-size:.92em;}
     #fronters h2 {font-size:2em!important;}
-    #page-header.cover {height:80vh;}
+    #page-header.cover {height:550px;}
     .cover#page-header {padding-top: 33px;}
     .cover#page-header h1 {line-height: 1em;font-size: 36px ;}
     .cover#page-header {line-height: 1.2em;font-size: 21px ;}
+    #covers article .cover-icon {padding:7px;}
+    #glass-front  {height:150px!important;overflow:hidden ;}
+    #glass-front a {padding:0px!important;}
+    #glass-front hr {margin: 12px;height: 1px;}
 }
