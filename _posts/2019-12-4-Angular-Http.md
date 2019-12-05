@@ -194,6 +194,8 @@ export class Account implements IAccount {
   }
 }
 ```
+if interested: compare HTTP requests in Angular and React
+https://blog.bitsrc.io/making-https-request-in-react-3a2777700c5d
 
 
 ## Angular Promises v.s. Observable
@@ -210,7 +212,34 @@ The basic introduction about Angular intercepter: https://angular.io/api/common/
 
 In this case using HttpIntercepter to save the header so that we don’t need to have headers for authorization while getting or posting
 
+Here is the auth.intercepter.ts file
+```
+import { Injectable } from '@angular/core';
+import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from '@angular/common/http';
 
+import { Observable } from 'rxjs';
+
+import { environment } from '../../environments/environment';
+
+@Injectable()
+export class AuthInterceptor implements HttpInterceptor {
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    if (!this.shouldAddAuthorizationHeaders(req)) {
+      return next.handle(req);
+    }
+
+    return next.handle(req.clone({
+      setHeaders: {
+        Authorization: environment.username
+      }
+    }));
+  }
+
+  private shouldAddAuthorizationHeaders(req: HttpRequest<any>): boolean {
+    return true;
+  }
+}
+```
 
 ## Angular Testing HTTP Requests
 
@@ -220,6 +249,209 @@ In this case using HttpIntercepter to save the header so that we don’t need to
 2. While testing https, always set up the request in ***after each*** to make sure the call will happen and the data can be resolved (or rejected). The benefits: (1)we only send the request ONCE (2) to avoid that the result is ALWAYS true
 
  
-3. We are creating the FAKEHTTPService class with hard coding data, not the real class
+3. We are creating the FAKEHTTPService class in ***fake-accounts.service.js*** with hard coding data for the test class, not the real class
 
+```
+import { Injectable } from '@angular/core';
+import { Account } from '../models';
 
+export class FakeAccountsService {
+  private accounts: Account[] = [
+    new Account({
+      id: 1,
+      name: 'Skyler',
+      email: 'skyler.tweedie@improving.com',
+      isEmployee: true,
+      departmentId: 0,
+      phoneNumbers: []
+    }),
+    new Account({
+      id: 2,
+      name: 'Skyler',
+      email: 'skyler.tweedie@improving.com',
+      isEmployee: true,
+      departmentId: 0,
+      phoneNumbers: []
+    }),
+    new Account({
+      id: 3,
+      name: 'Skyler',
+      email: 'skyler.tweedie@improving.com',
+      isEmployee: true,
+      departmentId: 0,
+      phoneNumbers: []
+    })
+  ];
+
+  getAll(): Promise<Account[]> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(this.accounts);
+      }, 1000);
+      // reject(new Error('Some error'))
+    });
+  }
+
+  get(id: number): Promise<Account> {
+    return new Promise((resolve, reject) => {
+      for (let ii = 0, len = this.accounts.length; ii < len; ii++) {
+        if (this.accounts[ii].id === id) {
+
+          setTimeout(() => {
+            resolve(this.accounts[ii]);
+          }, 5000);
+
+          return;
+        }
+      }
+
+      // return Promise.reject(new Error('Account could not be found'));
+      resolve(null);
+    });
+  }
+
+  create(account: Account): Promise<Account> {
+    account.id = this.accounts.length + 1;
+    this.accounts.push(account);
+
+    return Promise.resolve(account);
+  }
+
+  update(account: Account): Promise<Account> {
+    return Promise.resolve(account);
+  }
+
+  delete(account: Account): Promise<void> {
+    return Promise.resolve();
+  }
+}
+
+```
+
+Here are the tests
+```
+import { TestBed, inject } from '@angular/core/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+
+import { AccountsService } from './accounts.service';
+import { IAccount } from '../models';
+import { environment } from '../../environments/environment';
+
+describe('AccountsService', () => {
+  let accountsService: AccountsService;
+  let httpTestingController: HttpTestingController;
+
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [HttpClientTestingModule]
+  }));
+
+  beforeEach(inject(
+    [AccountsService, HttpTestingController],
+    (_accountsService_: AccountsService, _httpTestingController_: HttpTestingController) => {
+    accountsService = _accountsService_;
+    httpTestingController = _httpTestingController_;
+  }));
+
+  afterEach(() => {
+    httpTestingController.verify();
+  });
+
+  describe('getAll', () => {
+    it('should send request to directory/accounts', done => {
+
+      const fakeAccounts: IAccount[] = [{
+        id: 1,
+        name: 'Fake Person',
+        email: 'fake.email@something.com',
+        isEmployee: true,
+        departmentId: null,
+        phoneNumbers: [],
+      }, {
+        id: 2,
+        name: 'Fake Person',
+        email: 'fake.email@something.com',
+        isEmployee: true,
+        departmentId: null,
+        phoneNumbers: [],
+      }];
+
+      accountsService.getAll()
+        .then(accounts => {
+          expect(accounts.length).toEqual(2);
+          done();
+        })
+        .catch(error => done.fail(error));
+
+      httpTestingController
+        .expectOne(`${environment.baseUrl}/directory/accounts`)
+        .flush(fakeAccounts);
+    });
+
+    it('should throw error when request fails', done => {
+      accountsService.getAll()
+        .then(accounts => {
+          done.fail('request should have thrown error');
+        })
+        .catch(error => {
+          done();
+        });
+
+      httpTestingController
+        .expectOne(`${environment.baseUrl}/directory/accounts`)
+        .error(null);
+    });
+  });
+
+  describe('get', () => {
+    it('should send request to directory/accounts/:accountId', done => {
+
+      const fakeAccount: IAccount = {
+        id: 1,
+        name: 'Fake Person',
+        email: 'fake.email@something.com',
+        isEmployee: true,
+        departmentId: null,
+        phoneNumbers: [],
+      };
+
+      accountsService.get(fakeAccount.id)
+        .then(account => {
+          expect(account.id).toEqual(fakeAccount.id);
+          done();
+        })
+        .catch(error => done.fail(error));
+
+      httpTestingController
+        .expectOne(`${environment.baseUrl}/directory/accounts/${fakeAccount.id}`)
+        .flush(fakeAccount);
+    });
+
+    it('should throw error when request fails', done => {
+      accountsService.get(123)
+        .then(accounts => {
+          done.fail('request should have thrown error');
+        })
+        .catch(error => {
+          done();
+        });
+
+      httpTestingController
+        .expectOne(`${environment.baseUrl}/directory/accounts/123`)
+        .error(null);
+    });
+
+    it('should return null without making request with invalid account id', done => {
+      accountsService.get(-1)
+        .then(account => {
+          expect(account).toBeNull();
+          done();
+        })
+        .catch(error => done.fail(error));
+
+      httpTestingController
+        .expectNone(`${environment.baseUrl}/directory/accounts/-1`);
+    });
+  });
+});
+
+```
