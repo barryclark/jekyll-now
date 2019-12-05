@@ -28,14 +28,13 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;}
 #web-oferta #fronters h5 {line-height: .9em;font-size:1.5em;}
 #web-grafics h1 { margin-bottom:38px;line-height:.85em; }
-#web-grafics h4 {margin-bottom:6px;}
-#web-grafics p {margin-bottom:12px;padding-left:48px;}
+#web-grafics h4 {margin-bottom:12px;}
+#web-grafics p {margin-bottom:12px;padding:3px;}
 #web-oferta h2, #web-branding h2, #web-grafics h2, #web-music h2 {font-weight: lighter ;letter-spacing: -0.045em;margin-bottom:23px;line-height:1em;font-size:1.4em;}
 #web-oferta h2, #blured h1 {color:var(--color-black);}
 #web-branding h1 {color:var(--color-white);}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .0012em;text-align: center;color: var(--color-grey);}
 #web-grafics {color: var(--color-red);}
-#web-grafics p {padding:6px 7px 12px 7px;text-align:justify;}
 #web-oferta #fronters {max-width: 100%;}
 .animeonscroll img {padding:8px;max-width:30%;}
 #web-music {background-image: url("/img/music.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;}
