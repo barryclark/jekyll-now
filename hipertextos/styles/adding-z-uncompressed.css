@@ -22,7 +22,7 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #page-main.darkmode em a {background: #111;}
 #ilu-process {max-height: 100%;overflow: hidden;padding-bottom: 6px;padding-top: 6px;}
 #glassed {text-align:justify; color:var(--color-white) ;background-position: center; padding:32px 25% 32px 25%;margin:-15px!important;}
-#glassed p {color:var(--color-softgrey) ;font-size:.8em; line-height:1.4em; -webkit-column-count: 2;-moz-column-count: 2;column-count: 2;  }
+#glassed p {color:rgba(180,180,180,.6) ;font-size:.8em; line-height:1.4em; -webkit-column-count: 2;-moz-column-count: 2;column-count: 2;  }
 #web-body h5 {font-size:19px!important;line-height:1.3em!important;font-weight: normal }
 #web-oferta h2, #web-oferta h3, #web-oferta h5 {color: var(--color-white)!important }
 #web-oferta h1, #web-branding h1, #web-grafics h1, #web-music h1 {letter-spacing: -0.032em;margin-bottom:10px;line-height:1.2em;}
@@ -424,8 +424,8 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #glass-front a.cover-links:after {display:none;visibility: hidden;}
     #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;padding-top: 30px;height:72vh;background-size: 100% auto;background-position: fixed !important;}
     #web-music {background-image: url("/img/z-music.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;}
-	#web-oferta {background-image: url("/img/z-imac.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 100% 100% !important;}
-	#glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 100% 100% !important;;}
+	#web-oferta {background-image: url("/img/z-imac.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 105% auto !important;}
+	#glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 105% auto !important;;}
 	#web-body h5 {font-size:16px!important;line-height:1.5em!important;font-weight: normal }
     #web-body {width:79%; margin-left:10.5%;}
     #glassed p {font-size: .75em}
