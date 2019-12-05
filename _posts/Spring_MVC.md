@@ -249,5 +249,7 @@ The term, “reactive,” refers to programming models that are built around rea
 There is also another important mechanism that we on the Spring team associate with “reactive” and that is non-blocking back pressure. In synchronous, imperative code, blocking calls serve as a natural form of back pressure that forces the caller to wait. In non-blocking code, it becomes important to control the rate of events so that a fast producer does not overwhelm its destination.
 
 
-
+#### Rest Controller v.s. Simple Controller
+In short, rest controller is for creating a JSON body. simple controller needs a view
+https://www.journaldev.com/21515/spring-controller-spring-mvc-controller
 
