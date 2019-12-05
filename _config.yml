@@ -28,7 +28,7 @@ dribbble_url:  # add url link
 facebook_url:  # add url link
 
 # Disqus
-discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+discus_identifier: tips4trips # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
 
 # Newsletter
 mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
@@ -37,7 +37,7 @@ mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.
 analytics:
 
 # Paginate
-paginate: 12
+paginate: 20
 paginate_path: /page:num/
 
 # Build settings
