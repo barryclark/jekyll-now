@@ -35,6 +35,7 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #web-branding h1 {color:var(--color-white);}
 #web-oferta, #web-branding, #web-grafics, #web-music {letter-spacing: .0012em;text-align: center;color: var(--color-grey);}
 #web-grafics {color: var(--color-red);}
+#web-grafics p {padding:6px 7px 12px 7px;text-align:justify;}
 #web-oferta #fronters {max-width: 100%;}
 .animeonscroll img {padding:8px;max-width:30%;}
 #web-music {background-image: url("/img/music.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;}
@@ -43,8 +44,6 @@ h2.fat {font-size:3em!important;font-weight: bold!important;}
 #brander h5 {font-weight:lighter ;font-size:1.5em;letter-spacing: 0.012em}
 img.note {max-width:72px;border:thin solid rgba(120,120,120,.5);}
 #web-music img.note {border:thin solid rgba(220,220,220,.75);}
-#web-grafics img.note {background: var(--color-red);}
-#web-branding img.note {background: rgba(20,20,20,.1);}
 #logotips article {padding: 23px;}
 #fronters-brand .cover-justify svg {min-width: 72px;}
 #web-oferta, #glassed { background:var(--color-black);image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border: none;}
@@ -125,7 +124,7 @@ hr.lifting {margin: 0px;height: 1px;}
 #brander {}
 #fronters-music svg {max-width: 72px;margin: 16px 0px 18px 0px;}
 .next-top {max-width: 72px;max-height: 72px;border-radius: 50%;border: none;background: var(--color-hardgrey) !important;}
-div.masked {-webkit-mask-image: url("/hipertextos/images/audit.png") ;width: 480px;height: 480px;margin-top: -30px;background-image: url("/img/golden.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;z-index: -10;position: absolute;left: 12%;}
+div.masked {-webkit-mask-image: url("/hipertextos/images/audit.png") ;width: 480px;height: 480px;margin-top: -120px;background-image: url("/img/golden.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;z-index: -10;position: absolute;left: -3%;}
 
 /* Dialog */
 #dialog .icon-cog svg {max-width: 32px !important;margin-left:42px;}
