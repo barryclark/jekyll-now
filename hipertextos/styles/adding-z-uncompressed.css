@@ -100,16 +100,16 @@ hr.lifting {margin: 0px;height: 1px;}
 
 /* Covers */
 #glass-front a {color: var(--color-grey);text-decoration: none;margin: 0px;}
-#glass-front .cover-links {padding-top: 16px;margin-top: 0px;padding-bottom: 12px;display: block;}
-#glass-front .cover-icon {max-width: 64px;height: auto;opacity:0.5;}
+#glass-front .cover-links {padding-top: 32px;margin-top: 0px;padding-bottom: 12px;display: block;}
+#glass-front .cover-icon {max-width: 45px;height: auto;}
 #glass-front .cover-links :hover {opacity:1!important;}
 #glass-front a h5:hover {color: var(--color-white);}
 #glass-front .cover-icon img {width: 72px;opacity:0.6; margin: 0px;}
 #glass-front article, #covers article {border: 0;}
 #page #covers article {text-shadow: 1px 1px 3px rgba(0, 0, 0, .12);}
-#glass-front h5 {line-height: .1em;font-size:26px;margin-top:-20px;}
+#glass-front h5 {line-height: .1em;font-size:30px;}
 #glass-front h4 {margin: 0px;font-size:1.6em;line-height: 1em;letter-spacing: -0.01em;}
-#glass-front img {width: 72px;margin-bottom:6px;}
+#glass-front img {width: 72px;padding:1px;}
 #fronters h5 {margin-bottom: 16px!important;}
 #fronters h1 {line-height:1em;}
 #fronters p {margin: 0px;min-width: 100%;}
@@ -124,7 +124,7 @@ hr.lifting {margin: 0px;height: 1px;}
 #brander {}
 #fronters-music svg {max-width: 72px;margin: 16px 0px 18px 0px;}
 .next-top {max-width: 72px;max-height: 72px;border-radius: 50%;border: none;background: var(--color-hardgrey) !important;}
-div.masked {-webkit-mask-image: url("/hipertextos/svg/chinese.png") ;width: 480px;height: 480px;margin-top: -30px;background-image: url("/img/golden.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;z-index: -10;position: absolute;left: 12%;}
+div.masked {-webkit-mask-image: url("/hipertextos/images/audit.png") ;width: 480px;height: 480px;margin-top: -30px;background-image: url("/img/golden.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;z-index: -10;position: absolute;left: 12%;}
 
 /* Dialog */
 #dialog .icon-cog svg {max-width: 32px !important;margin-left:42px;}
