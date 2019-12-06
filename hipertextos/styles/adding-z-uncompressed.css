@@ -323,10 +323,19 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 	80% { opacity: 0; }
 	100% { opacity: 0; }
 }
-@media only screen and (orientation: landscape) {
-    #page-header.cover {padding-top: 12px!important;}
+@media only screen and (orientation: landscape) and (max-width: 1024px) {
+    #page-header.cover {padding-top: 32px!important;}
     .cover img {width: 36px !important;margin-bottom: 12px!important;}
     #web-oferta, #glassed {background-position: center!important}
+    #directories div {margin-left:36.5%!important;}  
+}
+@media only screen and (orientation: landscape) and (max-width: 568px) {
+    #page-header.cover {padding-top: 12px!important;}
+    .cover#page-header h1 {line-height: .25em!important;font-size: 23px!important;}
+    .cover#page-header h2 {line-height: .5em!important;font-size: 15px !important;}
+    #textlighting {margin-bottom:0px;}
+    #coffee p {margin-left:25%!important;max-width:50%;}
+    #directories div {margin-left:35%!important;}  
 }
 @media (max-width: 1366px) {
     #page-header.cover {padding-top: 69px;height:69vh!important;}
@@ -351,7 +360,6 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     aside.thumb-3 a {font-size: 18px;}
     aside.thumb-3 a svg {width: 23px;}
     aside.thumb-3 p {margin: 1em 0 1em 0;border-bottom: thin solid #eee;}
-    
 }
 
 @media (max-width: 1242px) {
