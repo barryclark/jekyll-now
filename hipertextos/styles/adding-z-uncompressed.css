@@ -427,11 +427,12 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 @media (max-width: 768px) {
     #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;background-size: cover fixed;background-repeat: no-repeat;
-        padding-top: 36px;height:60vh;background-size: 100% auto;background-position: fixed !important;}
+        padding-top: 36px;height:54vh;background-size: 100% auto;background-position: fixed !important;}
 	#textlighting {font-size:15px!important;line-height:1.5em;padding-bottom:12px;}
     .cover#page-header h1 {line-height: 1em;font-size: 27px ;}
     .cover#page-header h2 {line-height: 1em;font-size: 12px !important;}
     #glass-front a.cover-links:after {display:none;visibility: hidden;}
+    #glass-front .cover-links {padding-top: 32px;margin-top: 0px;padding-bottom: 12px;}
     #web-music {background-image: url("/img/z-music.jpg")!important;}
 	#web-oferta {background-image: url("/img/z-imac.jpg")!important;}
 	#glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;}
@@ -470,7 +471,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #coffe em u label {margin:0px!important;}
 }
 @media (max-width: 320px) {
-    #page-header.cover {padding-top: 12px;height:60vh!important;}
+    #page-header.cover {padding-top: 12px;height:54vh!important;}
     .cover img {width: 42px;margin-bottom: .75em;}
     .cover#page-header h1 {line-height: .5em!important;font-size: 21px !important;}
     .cover#page-header h2 {line-height: .75em;font-size: 12px !important;}
