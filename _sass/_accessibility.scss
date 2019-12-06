@@ -12,3 +12,10 @@
   width: 1px !important;
   white-space: nowrap !important;
 }
+
+// To prevent screen reader to restitute src attribute
+img {
+  &:not([alt]) {
+    border: 5px solid $error;
+  }
+}
