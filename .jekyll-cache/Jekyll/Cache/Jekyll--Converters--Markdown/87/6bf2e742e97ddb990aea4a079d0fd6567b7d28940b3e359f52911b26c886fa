@@ -1,0 +1,105 @@
+I"6<p>Comment renseigner au mieux l’internaute sur un fichier qu’il ou elle s’apprête à télécharger.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://blog.atalan.fr/indication-du-format-des-fichiers-a-telecharger-et-accessibilite/">Indication du format des fichiers à télécharger et accessibilité<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Atalan</li>
+  <li>lire la notice <a href="https://www.accede-web.com/notices/html-css-javascript/5-liens-boutons/5-4-poids-format-fichiers-lien-bouton/">Intégrer le poids et le format des fichiers dans chaque lien et bouton permettant de les télécharger<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de AcceDe Web</li>
+  <li>lire l’article <a href="https://disic.github.io/guide-integrateur/3-contenus.html#telechargements">Fichiers en téléchargement<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du Guide de l’intégrateur</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="format-poids-et-langue-dun-fichier-à-télécharger--quelle-obligation-légale-">Format, poids et langue d’un fichier à télécharger : quelle obligation légale ?</h3>
+<p>Le terme de “fichier à télécharger” désigne <strong>tout type de fichiers</strong> : documents bureautiques, fichiers audio et vidéo, images, fichiers compressés.</p>
+
+<p>Le Référentiel Général d’Amélioration de l’Accessibilité (RGAA) préconisait dans sa version 3 d’indiquer le format, le poids et la langue (si elle différait de la langue principale du document) d’un fichier. Cependant cette recommandation a disparu de la version 4 du RGAA.</p>
+
+<p>Les <a href="https://numerique.gouv.fr/publications/rgaa-accessibilite/notes-revision/#contenu">notes sur la révision du RGAA<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> confirment en effet la suppression de ce critère d’accessibilité par la justification suivante :</p>
+
+<blockquote>
+  <p>Absence d’élément dans les WCAG permettant de considérer que l’absence d’indication de format, poids ou langue des fichiers en téléchargement est un motif de non conformité.</p>
+</blockquote>
+
+<p>Il n’est donc plus nécessaire, pour être en conformité avec le RGAA, d’indiquer le format, le poids et la langue d’un fichier à télécharger. S’il n’y a plus d’obligation légale, plusieurs raisons justifient de maintenir cette bonne pratique.</p>
+
+<h3 id="des-indications-utiles">Des indications utiles</h3>
+<p>Si les <span lang="en">Web Content Accessibility Guidelines</span> (WCAG) ne recommandent pas spécifiquement d’indiquer le format, le poids et la langue d’un fichier à télécharger, elles indiquent en revanche qu’un lien doit être suffisamment explicite afin d’aider les internautes à comprendre sa fonction et à décider s’ils veulent le suivre. Connaître le poids, le format et la langue d’un fichier que l’on s’apprête à télécharger peut donc être très utile.</p>
+
+<p>Cela permet tout d’abord de <strong>signaler à l’internaute qu’il ne s’agit pas d’un lien classique</strong> menant vers une autre page, mais d’un fichier à télécharger.</p>
+
+<p>Par ailleurs connaître le format ou la langue (si elle diffère de la langue principale de la page) à l’avance <strong>évite à un internaute de télécharger inutilement un fichier</strong> s’il ne possède pas le logiciel adéquat pour l’ouvrir, ou s’il ne connaît pas la langue dans laquelle il est rédigé.</p>
+
+<p>Il est également utile de <strong>connaître le poids d’un fichier dans le cas d’une connexion internet bas débit ou mobile</strong>. Les internautes dans cette situation pourront donc choisir de différer le téléchargement du fichier.</p>
+
+<p>Enfin, <strong>les personnes utilisant un lecteur d’écran seront moins désorientées</strong> et pourront mieux anticiper une interruption de navigation si elles disposent de ces informations.</p>
+
+<p>Le référentiel de bonnes pratiques Opquast recommande également de faire figurer ces informations :</p>
+<ul>
+  <li><a href="https://checklists.opquast.com/fr/qualiteweb/le-format-des-fichiers-proposes-en-telechargement-est-indique">Le format des fichiers proposés en téléchargement est indiqué<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+  <li><a href="https://checklists.opquast.com/fr/qualiteweb/la-taille-des-fichiers-internes-proposes-en-telechargement-est-indiquee">La taille des fichiers internes proposés en téléchargement est indiquée<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+  <li><a href="https://checklists.opquast.com/fr/qualiteweb/la-langue-des-fichiers-en-telechargement-est-precisee-lorsquelle-differe-de-celle-de-la-page-dorigine">La langue des fichiers en téléchargement est précisée lorsqu’elle diffère de celle de la page d’origine<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+</ul>
+
+<h3 id="les-limites-de-ces-indications">Les limites de ces indications</h3>
+<p>Il peut arriver que des fichiers soient générés à la volée avant d’être téléchargé, par exemple le résultat d’un questionnaire ou d’une recherche. Dans ce cas, le poids exact ne peut être connu à l’avance et il est admis de donner un poids approximatif ou maximal. Par exemple : <code class="highlighter-rouge">environ 2,5 Mo</code>.</p>
+
+<p>Quand des liens pointent vers des documents externes au site, sur lequels vous n’avez pas la main, il peut arriver que leur poids ou format change sans que vous en soyez averti. Des informations erronées ne sont certes pas optimales mais elles avertiront à minima l’internaute qu’il s’agit d’un fichier à télécharger et non d’un lien classique. Autrement dit, mieux vaut ça que pas d’information du tout, et une vérification ponctuelle sur ces fichiers externes peut permettre de mettre ces informations à jour.</p>
+
+<h3 id="techniques-pour-indiquer-le-format-le-poids-et-la-langue">Techniques pour indiquer le format, le poids et la langue</h3>
+<p>Il existe plusieurs techniques permettant de faire figurer ces indication. Atalan, dans son article <a href="https://blog.atalan.fr/indication-du-format-des-fichiers-a-telecharger-et-accessibilite/">Indication du format des fichiers à télécharger et accessibilité<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, en détaille plusieurs :</p>
+
+<ul>
+  <li><strong>dans l’intitulé du lien, sous forme de texte</strong> : comme toujours il s’agit de la méthode la plus simple à mettre en oeuvre et la plus efficace</li>
+  <li><strong>dans l’attribut <code class="highlighter-rouge">title</code> du lien</strong> : mais comme vous commencez à le savoir si vous suivez régulièrement ce blog, l’attribut <code class="highlighter-rouge">title</code> n’est pas restitué par tous les lecteurs d’écran, n’est pas accessible sur les terminaux tactiles et n’est disponible qu’au survol de la souris</li>
+  <li><strong>via du texte caché en <span lang="en">Cascading Style Sheets</span> (CSS)</strong> : mais l’information ne sera transmise que lorsque les CSS seront désactivés ou aux personnes aveugles ou mal-voyantes se servant d’un lecteur d’écran</li>
+</ul>
+
+<p>Je vous invite vivement à lire l’article d’Atalan sur le sujet pour connaître toutes les informations relatives aux différentes techniques.</p>
+
+<p>Pour ma part, je vais vous présenter la méthode que je privilégie, sur mes sites personnels notamment : des indications fournies directement dans l’intitulé du lien et stylées différemment du nom du fichier.</p>
+
+<p>Le code <span lang="en">Hypertext Markup Language</span> (HTML) est le suivant :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="#" class="link"&gt;
+  Nom du fichier à télécharger&lt;span class="link__info"&gt; (PDF, 2,5 Mo)&lt;/span&gt;
+&lt;/a&gt;
+</code></pre></div></div>
+
+<p>Les indications de poids et de format doivent bien être intégrées à l’intérieur de la balise <code class="highlighter-rouge">&lt;a&gt;</code>, d’une part pour qu’elles se trouvent dans la zone de clic du lien, d’autre part pour être plus facilement atteignable par les lecteurs d’écran.</p>
+
+<p>Voici les styles CSS associés au code HTML :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$background: #fff;
+$text: #1c2a43;
+$link: #f22613;
+
+.link {
+  color: $link;
+  border-bottom-color: $link;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-size: 1em;
+  text-decoration: none;
+  transition: border-bottom .2s ease-in-out;
+
+  &amp;:hover,
+  &amp;:active {
+    border-bottom-color: $background;
+  }
+
+  &amp;__info {
+    border-bottom-color: $background;
+    color: $text;
+    font-size: .8em;
+    border-bottom-style: inherit;
+    border-bottom-width: inherit;
+  }
+}
+</code></pre></div></div>
+
+<p>Vous pouvez consulter ce même code et son résultat sur <a href="https://codepen.io/lolovelo/pen/gObpqQW">ce lien CodePen<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+
+<p>Les informations de poids et de formats encapsulées dans un <code class="highlighter-rouge">&lt;span&gt;</code> sont de taille plus petite et de couleur différente du lien. Le soulignement par défaut du lien est supprimé et simulé grâce à la propriété <code class="highlighter-rouge">border-bottom</code>. Le <code class="highlighter-rouge">&lt;span&gt;</code> intégré dans le lien possède lui aussi bordure inférieure, de la même couleur que fond de la page et superposé à la bordure du lien, ce qui permet de le masquer. Au survol - de l’intitulé ou des indications de format et de poids), la bordure inférieure du lien disparaît.</p>
+
+<p>L’espace ajouté à l’intérieur du <code class="highlighter-rouge">&lt;span&gt;</code>, juste avant l’ouverture de la parenthèse, est nécessaire pour interrompre la bordure inférieure de l’intitulé du lien au même niveau que le dernier caractère de l’intitulé.</p>
+
+:ET
