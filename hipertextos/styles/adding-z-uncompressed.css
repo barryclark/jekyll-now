@@ -425,8 +425,8 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #glass-front a.cover-links:after {display:none;visibility: hidden;}
     #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;padding-top: 30px;height:72vh;background-size: 100% auto;background-position: fixed !important;}
     #web-music {background-image: url("/img/z-music.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;}
-	##web-oferta {background-image: url("/img/z-imac.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 768px 1440px auto ;}
-	##glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;background-size: 768px 1440px  auto ;}
+	##web-oferta {background-image: url("/img/z-imac.jpg")!important;background-position: fixed;z-index: 1;background-size: cover fixed;background-repeat: no-repeat;}
+	##glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;}
 	#web-body h5 {font-size:16px!important;line-height:1.5em!important;font-weight: normal }
     #web-body {width:79%; margin-left:10.5%;}
     #glassed p {font-size: .75em}
