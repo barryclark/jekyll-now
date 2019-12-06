@@ -385,8 +385,8 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #logotips.thumb-10 {margin:0px;min-width:100%;}
     #logotips .thumb-3 img {border-radius:12px;margin:0px;}
     #page-header.cover {padding-top: 36px;height:72vh;}
-    .cover#page-header h1 {line-height: 1em;font-size: 32px ;}
-    .cover#page-header h2 {line-height: 1.1em;font-size: 15px ;}
+    .cover#page-header h1 {line-height: .5em;font-size: 36px ;}
+    .cover#page-header h2 {line-height: .75em;font-size: 15px !important;}
     #covers article h4 {font-size: 26px;line-height: 1.3em;}
     #covers article h5 {font-size: 23px;}
     #covers .cover-justify p {font-size: 12px !important;letter-spacing: 0.005em;line-height: 2.1em;}
@@ -422,19 +422,23 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover-links h4 {font-weight: lighter ; font-size: .95em!important;letter-spacing: 0.03em!important}
 }
 @media (max-width: 768px) {
+    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;background-size: cover fixed;background-repeat: no-repeat;
+        padding-top: 36px;height:60vh;background-size: 100% auto;background-position: fixed !important;}
+	#textlighting {font-size:15px!important;line-height:1.5em;padding-bottom:12px;}
+    .cover#page-header h1 {line-height: 1em;font-size: 27px ;}
+    .cover#page-header h2 {line-height: 1em;font-size: 12px !important;}
     #glass-front a.cover-links:after {display:none;visibility: hidden;}
-    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;background-size: cover fixed;background-repeat: no-repeat;padding-top: 30px;height:72vh;background-size: 100% auto;background-position: fixed !important;}
-    #web-music {background-image: url("/img/z-music.jpg")!important;background-position: fixed;background-size: cover fixed;background-repeat: no-repeat;}
-	#web-oferta {background-image: url("/img/z-imac.jpg")!important;background-position:  fixed;background-size: cover fixed;background-repeat: no-repeat;}
-	#glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;background-position: fixed;background-size: cover fixed;background-repeat: no-repeat;}
-	#web-body h5 {font-size:16px!important;line-height:1.5em!important;font-weight: normal }
+    #web-music {background-image: url("/img/z-music.jpg")!important;}
+	#web-oferta {background-image: url("/img/z-imac.jpg")!important;}
+	#glassed {padding:1.1em; background-image: url("/img/z-imacblur.jpg")!important;}
+    #glassed p {font-size: .65em;line-height: 1.2em}
+	#web-body h5 {font-size:14px!important;line-height:1.3em!important;text-align:center ;font-weight: normal;letter-spacing: 0.018em; }
     #web-body {width:99%; margin-left:.5%;}
-    #glassed p {font-size: .75em}
     #web-grafics h3 {margin-top:-30px;font-size:1.2em;}
     #fronters {margin:0px;min-width:70%;}
     #fronters h2 {font-size:1.9em!important;}
-    #fronters h5 {font-size:1em!important;}
-
+    #fronters hr {height:12px;}
+    #fronters h5 {font-size:.8em!important;font-weight: normal; letter-spacing: .032em}
     #blured {margin: 0px;min-width:100%;}
     .note svg {max-width:64px;}
     #web-music .note {max-width:64px!important;}
@@ -462,13 +466,13 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #coffe em u label {margin:0px!important;}
 }
 @media (max-width: 320px) {
+    #page-header.cover {padding-top: 12px;height:60vh!important;}
+    .cover img {width: 42px;margin-bottom: .75em;}
+    .cover#page-header h1 {line-height: .5em!important;font-size: 21px !important;}
+    .cover#page-header h2 {line-height: .75em;font-size: 12px !important;}
     #web-grafics h3 {margin-top:-30px;font-size:.92em;}
     #fronters h2 {font-size:2em!important;}
-    #page-header.cover {height:550px;}
-    .cover#page-header {padding-top: 33px;}
-    .cover#page-header h1 {line-height: 1em;font-size: 36px ;}
-    .cover#page-header {line-height: 1.2em;font-size: 21px ;}
-    #covers article .cover-icon {padding:7px;}
+    #covers article .cover-icon {padding:4px;}
     #glass-front  {height:150px!important;overflow:hidden ;}
     #glass-front a {padding:0px!important;}
     #glass-front hr {margin: 12px;height: 1px;}
