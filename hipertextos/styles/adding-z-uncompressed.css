@@ -372,21 +372,25 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #cover-front {margin-left:10%;width:80%;}    
 }
 @media (max-width: 800px) {
-    #glass-front {background-size: 100% auto;background-position: fixed !important;}
+    #page-header.cover {padding-top: 36px;height:72vh;}
+    #textlighting {font-size:16px!important;line-height:1.6em;padding-bottom:15px;}
+    .cover img {width: 60px;margin-bottom: 1.8em;}
+    .cover#page-header h1 {line-height: .5em;font-size: 38px;}
+    .cover#page-header h2 {line-height: .75em;font-size: 17px !important;}
+    #glass-front .cover-links {padding-top: 0px;margin-top: 0px;padding-bottom: 12px;}
+    #glass-front hr {height:0px;margin:0px;}
     #web-oferta {background-size: 100%;background-position: fixed !important;}
     #web-oferta h2 {margin-bottom:0px;}
-    #fronters h1 {font-size:2em;margin:0px;}
+	#web-body h5 {font-size:16px!important;line-height:1.3em!important;text-align:center ;font-weight: normal; }
+    #fronters h2 {font-size:2.1em!important;margin:0px;}
     #fronters h3 {font-size:1.2em;margin:0px;}
-    #fronters h5 {font-size:1.1em;margin:0px;}
+    #fronters h5 {font-size:1.1em!important;margin:0px;font-weight: normal ;}
     #web-branding em a, #web-grafics em a, #web-music em a {display:none;}
     #web-grafics h3 {margin-top:-30px;font-size:1.4em;}
     #web-grafics p {font-size:.9em!important;padding-bottom:3em;}
     #web-grafics p b {font-size:1.1em!important;}
     #logotips.thumb-10 {margin:0px;min-width:100%;}
     #logotips .thumb-3 img {border-radius:12px;margin:0px;}
-    #page-header.cover {padding-top: 36px;height:72vh;}
-    .cover#page-header h1 {line-height: .5em;font-size: 36px ;}
-    .cover#page-header h2 {line-height: .75em;font-size: 15px !important;}
     #covers article h4 {font-size: 26px;line-height: 1.3em;}
     #covers article h5 {font-size: 23px;}
     #covers .cover-justify p {font-size: 12px !important;letter-spacing: 0.005em;line-height: 2.1em;}
@@ -417,7 +421,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #page {margin-bottom:-90px;}
     #autoria b {padding:0px 60px 0px 60px;}
     #directories div {margin-left:37.5%;}
-	#glassed p {font-size:.75em;line-height:1.5em; -webkit-column-count: 1;-moz-column-count: 1;column-count: 1;  }
+	#glassed p {font-size:.7em;line-height:1.2em; -webkit-column-count: 1;-moz-column-count: 1;column-count: 1;  }
     #brander {margin-left:10%;min-width:80%;}
     .cover-links h4 {font-weight: lighter ; font-size: .95em!important;letter-spacing: 0.03em!important}
 }
