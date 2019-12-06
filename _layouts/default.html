@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			$(window).scroll(function(){
 				var barra = $(window).scrollTop();
-				var posicion = barra * 0.30;
+				var posicion = barra * 0.20;
 
 			$('.parallax').css({
 				'background-position': '0 -' + posicion + 'px'
@@ -50,9 +50,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</style>
 	
   	{% if page.parallax %}
-	<img class="preload" src="/img/home.jpg" width="2010" height="1920" alt="imatge de fons a l'alba">
-	<img class="preload" src="/img/imac.jpg" width="1920" height="1920" alt="iMac amb exemple de pàgina web">
-	<img class="preload" src="/img/golden.jpg" width="1920" height="1280" alt="textura blanca i daurada">
+	<img class="preload" src="/img/home.jpg" width="2010" height="1280" alt="imatge futurista a tot color">
+	<img class="preload" src="/img/imac.jpg" width="1920" height="2100" alt="edició web professional">
+	<img class="preload" src="/img/imacblur.jpg" width="1920" height="2100" alt="edició web desenfocat">
+	<img class="preload" src="/img/music.jpg" width="1920" height="2880" alt="imatge amb saxo i bateria">
   	{% endif %}
 
   </head>
