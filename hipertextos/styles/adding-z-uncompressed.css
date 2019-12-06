@@ -426,8 +426,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover-links h4 {font-weight: lighter ; font-size: .95em!important;letter-spacing: 0.03em!important}
 }
 @media (max-width: 768px) {
-    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;background-size: cover fixed;background-repeat: no-repeat;
-        padding-top: 36px;height:54vh;background-size: 100% auto;background-position: fixed !important;}
+    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;background-size: cover fixed;background-repeat: no-repeat;padding-top: 36px;height:54vh;background-size: 100% auto;background-position: fixed !important;}
 	#textlighting {font-size:15px!important;line-height:1.5em;padding-bottom:12px;}
     .cover#page-header h1 {line-height: 1em;font-size: 27px ;}
     .cover#page-header h2 {line-height: 1em;font-size: 12px !important;}
