@@ -30,6 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   	{% if page.parallax %}<script src="{{ site.baseurl }}/hipertextos/js/jquery-latest.js"></script>
   	<script>
+  	if ($(window).width() > 768) {
   		$(document).ready(function(){
 
 			$(window).scroll(function(){
@@ -42,6 +43,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			});
 
 		});
+	} else {
+		  		$(document).ready(function(){
+
+			$(window).scroll(function(){
+				var barra = $(window).scrollTop();
+				var posicion = barra * 0.15;
+
+			$('.parallax').css({
+				'background-position': '0 -' + posicion + 'px'
+				});
+			});
+
+		});
+	 }
   	</script>
   	{% endif %}
     {% include favicons.html %}
