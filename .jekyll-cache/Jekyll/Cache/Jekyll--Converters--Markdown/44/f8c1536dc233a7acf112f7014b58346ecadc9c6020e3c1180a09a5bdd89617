@@ -1,0 +1,62 @@
+I"� <p>Comment rendre des images accessibles ? Premier article qui traite de la nécessité des alternatives textuelles et de la différence entre image décorative et image porteuse d’information.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://www.lelutinduweb.fr/alternatives-textuelles-attribut-alt/">Le vaste monde des alternatives textuelles : l’attribut alt<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Julie Moynat</li>
+  <li>lire la notice <a href="https://www.accede-web.com/notices/editoriale/4-images/">Images<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire l’article <a href="https://axesslab.com/alt-texts/" lang="en" hreflang="en">Alt-texts: The Ultimate Guide<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="images-informatives">Images informatives</h3>
+<p>Les images porteuses d’information sont nécessaires à la compréhension du contenu qui les entoure. En conséquence :</p>
+<ul>
+  <li>
+    <p>ces images ne doivent pas être affichées via du <span lang="en">Cascading Style Sheets</span> (CSS) mais en dur dans le code avec la balise <code class="highlighter-rouge">&lt;img /&gt;</code> pour éviter une perte d’information en cas de désactivation des styles</p>
+  </li>
+  <li>
+    <p>l’alternative de ces images doit être renseignée (sauf si l’information sur l’image est présente également à proximité de celle-ci en texte brut, il n’est pas nécessaire de renseigner son attribut <code class="highlighter-rouge">alt</code>)</p>
+  </li>
+</ul>
+
+<p><strong>L’alternative doit reprendre une information équivalente à celle véhiculée par l’image</strong>, afin de ne pas léser les utilisateurs et utilisatrices qui ne peuvent la voir.</p>
+
+<p>Voici quelques recommandations, tirées de l’article <a href="https://axesslab.com/alt-texts/" lang="en" hreflang="en">Alt-texts: The Ultimate Guide<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>. Elle sont à prendre en considération lors de la rédaction d’une alternative textuelle :</p>
+<ul>
+  <li>
+    <p>il est inutile de commencer l’alternative par <code class="highlighter-rouge">alt="Image..."</code>, car cette information sera déjà annoncée par les technologies d’assistance à la lecture de la balise <code class="highlighter-rouge">&lt;img /&gt;</code></p>
+  </li>
+  <li>
+    <p>l’alternative doit être claire et courte : Accessiweb, <a href="https://www.accessiweb.org/index.php/glossaire_referentiel_2.2.html#lettreA">dans son glossaire<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, recommande une longueur maximum de 80 caractères. Cette recommandation est également faite par Opquast dans sa checklist sur le référencement avec la bonne pratique <a href="https://checklists.opquast.com/en/seo/la-longueur-des-alternatives-textuelles-est-inferieure-ou-egale-a-80-caracteres">La longueur des alternatives textuelles est inférieure ou égale à 80 caractères<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a></p>
+  </li>
+  <li>
+    <p>il s’agit de décrire ce que vous voyez sur l’image, par exemple <code class="highlighter-rouge">alt="Groupe de personnes attendant l'arrivée du train"</code> : ajouter le nom du photographe n’est pas nécessaire, et écrire une suite de mots clés destinés au référencement est inapproprié</p>
+  </li>
+  <li>
+    <p>la description dépend du contexte dans lequel l’image se trouve : une même image, dans un contexte différent, aura une alternative textuelle différente</p>
+  </li>
+  <li>
+    <p>vous pouvez terminer votre alternative par un point, ce qui permettra au lecteur d’écran de marquer une pause, rendant ainsi l’expérience de lecture plus agréable</p>
+  </li>
+</ul>
+
+<p>Ces recommandations sont valables dans le cas d’images porteuses d’information relativement simples. Pour les images plus complexes, comportant beaucoup d’information et nécessitant une alternative plus détaillée, une autre méthode doit être employée.</p>
+
+<h3 id="images-informatives-complexes">Images informatives complexes</h3>
+<p>Prenons l’exemple de l’article de Koena, <a href="https://koena.net/rgaa-4-1-derive-administrative/">RGAA 4.1 : vers une dérive administrative de la conformité ?<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>. Cet article comporte une image informative complexe sur l’organisation des règles d’accessibilité web. Une description via un attribut <code class="highlighter-rouge">alt</code> n’est donc pas suffisante. Pour ce type d’image, il faut donc :</p>
+<ul>
+  <li>
+    <p>renseigner son attribut <code class="highlighter-rouge">alt</code> avec une brève description de la fonction de l’image et une mention indiquant où trouver sa description détaillée</p>
+  </li>
+  <li>
+    <p>une description détaillée disponible à proximité de l’image ou sur une autre page</p>
+  </li>
+</ul>
+
+<p>Reprenons l’exemple de l’article de Koena. L’image comporte l’alternative suivante :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alt="Pyramide WCAG 2.1 avec principes, règles, critères et techniques. Description détaillée ci-dessous."
+</code></pre></div></div>
+
+<p>Une description complète et détaillée de l’image est ensuite fournie dans le corps-même de l’article.</p>
+:ET
