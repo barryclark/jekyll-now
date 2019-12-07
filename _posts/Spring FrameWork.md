@@ -81,7 +81,7 @@ Bean Factory                                 | Application Context
 -------------                                | -------------
 instantiate beans whenever asked by clients  | built on top of the bean factory interface; extra functionality
 
-Example of Bean Factory:
+Example of Bean Factory (these are required to build up ***Spring JPA implemented by Hibernate***:
 ```
 package org.improving.tag;
 import java.util.Properties;
