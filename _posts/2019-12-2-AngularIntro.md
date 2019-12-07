@@ -57,28 +57,103 @@ let sq = new polygons.Square();
 
 ```
 
+5. common commands:
+
+	1. create a new module:
+	```
+	 ng generate module ***file name(ex.)accounts*** --routing
+	```
+
+	2. create a new component:
+	```
+	ng generate component ***file name (ex.)accounts***/components/account-list --lint-fix --skip-import
+	```
+	
+	3. initiate Angular cli (https://cli.angular.io/)
+	
+		```
+		(install) npm install -g @angular/cli
+		
+		ng new ***file Name***
+		
+		cd ***file name***
+		
+		ng serve (perferred npm start -- --port no.)
+		```
+	4. ***GIT INGORE*** (https://github.com/angular/angular-cli/blob/master/.gitignore)
+	
+		```
+			# Outputs
+			bazel-*
+			test-project-host-*
+			dist/
+			dist-schema/
+
+			# IDEs
+			jsconfig.json
+
+			# Intellij IDEA/WebStorm
+			# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+			.idea/inspectionProfiles/
+			.idea/**/compiler.xml
+			.idea/**/encodings.xml
+			.idea/**/workspace.xml
+			.idea/**/tasks.xml
+			.idea/**/usage.statistics.xml
+			.idea/**/dictionaries
+			.idea/**/shelf
+
+			# Also ignore code styles because .editorconfig is used instead.
+			.idea/codeStyles/
+
+			# VSCode
+			# https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
+			.vscode/
+			!.vscode/settings.json
+			!.vscode/tasks.json
+			!.vscode/launch.json
+			!.vscode/extensions.json
+			**/*.code-workspace
+
+			# Typings file.
+			typings/
+
+			# Misc
+			coverage/
+			node_modules/
+			tmp/
+			npm-debug.log*
+			yarn-error.log*
+			.ng_pkg_build/
+
+			# Mac OSX Finder files.
+			**/.DS_Store
+			.DS_Store
+		```
+		
 ## Angular Key Concepts
+
 1. Home.ts(usually App.ts) => Almost all logic will be listed here, including the ***@decorators***. The decorators allows us to ***bind typescript to the HTML template*** ex. creating a disabled button
 
 2. ***Interpolation***: In the html file the dynamic file is interpolated this way (an example): <p> {{message}} </p>. The value of the message is assigned in the ts file 
 
 3. ***Modularity*** with Ngmodules, browswer modules, Http modules, forms modules, etc.
 
-```
-// imports
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+	```
+	// imports
+	import { BrowserModule } from '@angular/platform-browser';
+	import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+	import { AppComponent } from './app.component';
 
-// @NgModule decorator with its metadata
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}
+	// @NgModule decorator with its metadata
+		@NgModule({
+		declarations: [AppComponent],
+		imports: [BrowserModule],
+		providers: [],
+		bootstrap: [AppComponent]
+		})
+		export class AppModule {}
 ```
 4.directves (see below)
 
