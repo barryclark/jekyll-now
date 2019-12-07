@@ -207,6 +207,10 @@ Optional<Movie> getAllById(@PathVariable Integer id){
 
 ## Spring JPA Doc.
 
+1. A good easy intro about what ***Spring JPA*** is and commonly-used interfaces
+https://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-introduction/
+
+2.
 
 
 ## Spring MVC Doc.
