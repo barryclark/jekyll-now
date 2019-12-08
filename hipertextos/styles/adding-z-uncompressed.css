@@ -123,6 +123,8 @@ hr.lifting {margin: 0px;height: 1px;}
 #fronters-brand .goldentarget { max-width:600px;width:100%; }
 #fronters-brand article a {margin: 0px !important;padding: 0px !important;}
 #brander {}
+#brander h5 {font-size:1.15em;border-radius:60px;border:thin solid rgba(80,80,80,.25);padding:12px 16px 12px 16px;}
+#brander p {text-align:justify;font-size: 1.02em}
 #fronters-music svg {max-width: 72px;margin: 16px 0px 18px 0px;}
 .next-top {max-width: 72px;max-height: 72px;border-radius: 50%;border: none;background: var(--color-hardgrey) !important;}
 div.masked {-webkit-mask-image: url("/hipertextos/brand/logo256.png") ;
