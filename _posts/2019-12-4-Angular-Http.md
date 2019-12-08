@@ -3,6 +3,10 @@ Category: post
 title: Learning Journal for Angular Http
 ---
 
+## Angular sample project (in Chinese)
+1.https://angular.cn/start (including directives and event emitter)
+
+
 ## Angular Http Module
 
 ### Angular Way
