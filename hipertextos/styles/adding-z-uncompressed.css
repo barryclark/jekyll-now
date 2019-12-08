@@ -125,7 +125,8 @@ hr.lifting {margin: 0px;height: 1px;}
 #brander {}
 #fronters-music svg {max-width: 72px;margin: 16px 0px 18px 0px;}
 .next-top {max-width: 72px;max-height: 72px;border-radius: 50%;border: none;background: var(--color-hardgrey) !important;}
-div.masked {-webkit-mask-image: url("/hipertextos/brand/logo256.png") ;width: 256px;height: 256px; background-image: url("/img/blog.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
+div.masked {-webkit-mask-image: url("/hipertextos/brand/logo256.png") ;
+display: inline-block;width: 256px;height: 256px; background-image: url("/img/blog.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
 
 /* Dialog */
 #dialog .icon-cog svg {max-width: 32px !important;margin-left:42px;}
