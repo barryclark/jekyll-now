@@ -4,16 +4,15 @@
 #page-header.serveis-header {background-image: url("/img/serveis.jpg");	background-position: top center;
 	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
 	border:none;color: #fff;overflow: hidden;
-	text-align: center;padding-top:0px;height: 48vh;
+	text-align: center;padding-top:0px;height: 38vh;
 }
 #page-header h2 {font-size:3em;line-height:1em;margin:0px!important;}
-#page-header div {height:42px;}
 #page-header div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
 
-#page-header h2 {font-size:3em;padding-top:69px;font-weight: 400;letter-spacing: none;}
-#page-header h5 {padding-bottom:60px;font-weight: 200;}
+#page-header h2 {font-size:3em;padding-top:120px;font-weight: 400;letter-spacing: none;}
+#page-header h5 {padding-bottom:160px;font-weight: 200;}
 #page-header #serveis-pre h2 {font-size:2em;line-height:1.2em;padding-top:0px;font-weight: 200;letter-spacing: 0.012em;}
 
 #page-nav {background-color:var(--color-white)!important;height:79px;overflow:hidden;}
@@ -23,7 +22,8 @@
 
 /* Serveis (triptic) */
 #serveis-tab {text-align: center;}
-#serveis-tab img {padding:12px;max-width:96px;}
+#serveis-tab img {width:64px;padding-top:48px;}
+#serveis-tab p {padding-top:0px;font-size:15px;}
 
 /* Serveis */
 h3.head-section {color:var(--color-hardgrey) ;font-size:1.6em;font-weight:lighter ;line-height: 1.1em;margin-bottom:0px;}
