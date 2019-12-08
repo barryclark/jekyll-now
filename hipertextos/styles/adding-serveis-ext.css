@@ -4,9 +4,9 @@
 #page-header.serveis-header {background-image: url("/img/serveis.jpg");	background-position: top center;
 	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
 	border:none;color: #fff;overflow: hidden;
-	text-align: center;height: 42vh;
+	text-align: center;padding-top:0px;height: 48vh;
 }
-#page-header div h2 {font-size:3.2em;line-height:1.2em;margin-bottom:0px;}
+#page-header div h2 {font-size:3em;line-height:1em;margin:0px!important;}
 #page-header div {height:42px;}
 #page-header div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
@@ -14,6 +14,7 @@
 
 #page-header h2 {font-size:2.9em;padding-top:120px;font-weight: 400;letter-spacing: none;}
 #page-header h5 {padding-top:150px;font-weight: 200;}
+#page-header #serveis-pre h2 {font-size:2em;line-height:.75em;padding-top:32px;font-weight: 400;letter-spacing: none;}
 
 #page-nav {background-color:var(--color-white)!important;height:79px;overflow:hidden;}
 #page-nav a {text-decoration:none;}
@@ -25,9 +26,7 @@ h3.head-section {color:var(--color-hardgrey) ;font-size:1.6em;font-weight:lighte
 h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1.6em;}
 #section-music h3.head-section {color:rgba(190,245,255,1) ;}
 #section-music h4.head-section small {color:rgba(190,245,255,1) }
-#serveis-pre {text-align:center;box-shadow:inset 0 90px 80px #eee;
-    padding:80px 0 69px 0;margin:0 0 12px 0;}
-#serveis-pre h2 {margin-bottom:6px;}
+#serveis-pre {text-align:center;}
 #serveis-pre h4 {text-align:right;margin-right:21%;}
 #section-web {text-align:justify;background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,.9), rgba(235,235,235,1));}
 #section-web h2 {line-height:.96em;}
