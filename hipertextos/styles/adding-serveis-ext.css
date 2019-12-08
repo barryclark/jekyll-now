@@ -115,7 +115,11 @@ img.big-icon {width:52px; }
     #resumed-print.pushed-6 {margin-left:0;}
 }
 @media (max-width: 1242px) {
-	#resumed-web .thumb-4 { min-width:100%;}
+    #serveis-tab .thumb-6 {width:100%;margin-left:0px;}
+    #serveis-pre h2 {font-size: 1.5em;margin-bottom:0px;}
+    #serveis-pre h4 small {letter-spacing: -0.01em!important}
+    
+    #resumed-web .thumb-4 { min-width:100%;}
     #web-top .thumb-3 { min-width:90%;margin-bottom:2.5em;}
     #web-top .thumb-1 {margin-left:0px;min-width:10%;}
     #web-top .thumb-1 img {max-width:128px!important;}
@@ -130,6 +134,10 @@ img.big-icon {width:52px; }
     h1.head-full {font-size:4.5em!important;}
 }
 @media (max-width: 768px) {
+    #serveis-tab img {width:46px;padding-top:36px;}
+	#serveis-tab p {padding-top:0px;font-size:12px;letter-spacing: -0.02em}
+    #serveis-pre h2 {font-size: .8em;margin-bottom:0px;}
+    #serveis-pre h4 small {letter-spacing: -0.01em!important}
     #section-web, #section-brand, #section-paint, #section-music {line-height:.6em;}
     #browser-ios.thumb {display:none;visibility:hidden;}
     #section-web .cell-x1 {	width: 20%;}
