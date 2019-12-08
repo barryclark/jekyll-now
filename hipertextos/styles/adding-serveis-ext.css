@@ -21,6 +21,10 @@
 #page-nav a:hover {color:var(--color-black);}
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
+/* Serveis (triptic) */
+#serveis-tab {text-align: center;}
+#serveis-tab img {padding:12px;max-width:96px;}
+
 /* Serveis */
 h3.head-section {color:var(--color-hardgrey) ;font-size:1.6em;font-weight:lighter ;line-height: 1.1em;margin-bottom:0px;}
 h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1.6em;}
