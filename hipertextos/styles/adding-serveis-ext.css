@@ -13,7 +13,7 @@
 
 #page-header h2 {font-size:3em;padding-top:120px;font-weight: 400;letter-spacing: none;}
 #page-header h5 {padding-bottom:160px;font-weight: 200;}
-#page-header #serveis-pre h2 {font-size:2em;line-height:1.2em;padding-top:0px;font-weight: 200;letter-spacing: 0.012em;}
+#serveis-pre h2 {font-size:2em;line-height:1.2em;padding-top:0px;font-weight: 200;letter-spacing: 0.012em;}
 
 #page-nav {background-color:var(--color-white)!important;height:79px;overflow:hidden;}
 #page-nav a {text-decoration:none;}
