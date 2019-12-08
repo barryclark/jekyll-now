@@ -3,7 +3,7 @@
 
 #page-header.serveis-header {background-image: url("/img/serveis.jpg");	background-position: top center;
 	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
-	border:none;color: #fff;overflow: hidden;
+	border:none;color: #fff;overflow: hidden;letter-spacing: 0.012em;
 	text-align: center;padding-top:0px;height: 38vh;
 }
 #page-header h2 {font-size:3em;line-height:1em;margin:0px!important;}
@@ -13,7 +13,6 @@
 
 #page-header h2 {font-size:3em;padding-top:120px;font-weight: 400;letter-spacing: none;}
 #page-header h5 {padding-bottom:160px;font-weight: 200;}
-#serveis-pre h2 {font-size:2em;line-height:1.2em;padding-top:0px;font-weight: 200;letter-spacing: 0.012em;}
 
 #page-nav {background-color:var(--color-white)!important;height:79px;overflow:hidden;}
 #page-nav a {text-decoration:none;}
@@ -30,16 +29,10 @@ h3.head-section {color:var(--color-hardgrey) ;font-size:1.6em;font-weight:lighte
 h4.head-section small {color:var(--color-hardgrey) ;font-size:15px;line-height:1.6em;}
 #section-music h3.head-section {color:rgba(190,245,255,1) ;}
 #section-music h4.head-section small {color:rgba(190,245,255,1) }
-#serveis-pre {text-align:center;}
-#serveis-pre h4 {text-align:right;margin-right:21%;}
-#section-web {text-align:justify;background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,.9), rgba(235,235,235,1));}
-#section-web h2 {line-height:.96em;}
-#section-web h5 {line-height:1.3em;font-weight: normal;}
-#resumed-web h3 {margin-bottom:1em;line-height:1.1em;margin-top:-10px;letter-spacing: -0.012em;}
-#resumed-web h3 small {letter-spacing: -0.002em;}
-#resumed-web h2 small {line-height:.9em;padding:3px;margin-top:-10px;letter-spacing: -0.012em;}
-#resumed-web .thumb-3 {border-right:thin solid rgba(190,190,190,1);padding-top:0px;}
-#resumed-web .thumb-4 { padding-top:12px;}
+#serveis-pre, #serveis-pre h4 {text-align:center;}
+#serveis-pre h2 {font-size:2em;line-height:1.2em;padding-top:0px;font-weight: 200;letter-spacing: 0.012em;}
+#section-web {padding-top:32px;padding-bottom:32px; text-align:justify;
+    background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1), rgba(250,240,255,.6), rgba(206,240,250,1));}
 
 #browser-ios {padding:12px 0 28px 0;line-height:2.6em;
     text-align:center;}
