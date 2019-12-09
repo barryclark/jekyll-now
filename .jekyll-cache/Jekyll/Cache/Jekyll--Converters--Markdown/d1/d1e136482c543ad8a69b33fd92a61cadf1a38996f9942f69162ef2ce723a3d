@@ -1,0 +1,24 @@
+I"�<p>Intégrer des <span lang="en">Scalable Vector Graphics</span> (SVG) de manière accessible.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://access42.net/svg-accessible?lang=fr">SVG : comment bien faire ?<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Access42</li>
+  <li>lire la notice <a href="https://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-2-svg-images-vectorielles/">Gérer l’alternative des SVG<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire l’article <a href="https://www.lelutinduweb.fr/alternatives-textuelles-balise-title/">Le vaste monde des alternatives textuelles : la balise <title> et les images SVG<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg>&lt;/a&gt; de Julie Moynat</title></a></li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="svg-décoratifs">SVG décoratifs</h3>
+<p>Dans le cas d’un SVG décoratif, celui-ci doit être ignoré par les technologies d’assistance. Pour ce faire, le SVG doit être intégré de la manière suivante :</p>
+<ul>
+  <li>
+    <p>ajouter un attribut <code class="highlighter-rouge">aria-hidden="true"</code> pour que les lecteurs d’écran ne restituent pas le SVG</p>
+  </li>
+  <li>
+    <p>ajouter un attribut <code class="highlighter-rouge">focusable="false"</code> pour empêcher le SVG de recevoir le focus clavier sous Internet Explorer</p>
+  </li>
+  <li>
+    <p>s’assurer que la balise <code class="highlighter-rouge">&lt;svg&gt;</code> ou un de ses enfants ({<g>}, {<path>}...) ne possède aucune balise `<title>` ou `<desc>` et aucun attribut `title`, `aria-label`, `aria-labelledby` ou `aria-describedby`</desc></title></path></g></p>
+  </li>
+</ul>
+:ET
