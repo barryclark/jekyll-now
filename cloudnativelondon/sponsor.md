@@ -41,7 +41,11 @@ As pizza and beer are more than any individual contribution, we order catering o
 
 You can display a banner inside the room, just bring it on the evening. Please ship swag to this address 1-2 weeks in advance:
 
-> [Address TBC]
+> Sainsbury's Courier Desk
+> c/o Simon Perry, Cloud Native London
+> 60 Fetter Lane
+> Holborn
+> London EC4A 1AA  
 
 If you need a table on the evening, email Simon.Perry2@sainsburys.co.uk.
 
