@@ -6,6 +6,10 @@ title: Learning Journal for Angular Http
 ## Angular sample project (in Chinese)
 1.https://angular.cn/start (including directives and event emitter)
 
+2.https://angular.cn/start/routing (routing)
+
+3.https://angular.cn/start/data (cart service)
+
 
 ## Angular Http Module
 
