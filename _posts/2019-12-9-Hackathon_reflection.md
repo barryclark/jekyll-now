@@ -8,6 +8,7 @@ title: Hackathon Review
 2. ctrl b (hide and show the side bar)
 3. ctrl c or exit (stop the running ng or react project)
 4. ctrl v (close the terminal)
+5. Name all classes in Augular with captilized letter and instance with camel case
 
 ## Good library
 1. material UI
