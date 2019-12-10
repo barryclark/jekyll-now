@@ -210,12 +210,12 @@ Optional<Movie> getAllById(@PathVariable Integer id){
 1. A good easy intro about what ***Spring JPA*** is and commonly-used interfaces
 https://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-introduction/
 
-2.
-
 
 ## Spring MVC Doc.
 
 ## Q & A
 1.obtain the post data :https://stackoverflow.com/questions/2494774/how-to-explicitly-obtain-post-data-in-spring-mvc
+
 2. connecting JPA and MVC https://www.baeldung.com/spring-boot-angular-web
+
 3. deleting a row https://www.baeldung.com/spring-data-jpa-delete
