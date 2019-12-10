@@ -17,6 +17,10 @@ December 11 - 14: Kubernetes Forums, Sydney
 
 ### 2020
 
+February 27: Cloud Native Prague, Czech Republic
+
+March 5: #21digital, Cologne, Germany
+
 March 31 - April 2: KubeCon + CloudNativeCon Europe, Amsterdam
 
 July 28 - 30: KubeCon + CloudNativeCon China, Shanghai
