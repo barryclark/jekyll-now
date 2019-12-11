@@ -10,6 +10,7 @@ video: https://www.youtube.com/embed/_GxkZ4S43oY
 tags:
   - Slides
   - "2019"
+  - Video
 ---
 
 * Large container deployments are increasingly common, with 19% of respondents to the 2019 CNCF survey running more than 5000 containers.
