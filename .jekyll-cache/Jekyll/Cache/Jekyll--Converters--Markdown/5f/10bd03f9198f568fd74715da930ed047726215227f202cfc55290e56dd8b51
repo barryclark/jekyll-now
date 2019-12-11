@@ -1,0 +1,52 @@
+I"[<p>Comment intégrer des <span lang="en">Graphics Interchange Format</span> (GIF) accessibles ?</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire la notice <a href="https://disic.github.io/guide-integrateur/9-images.html">Images<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du Guide de l’intégrateur</li>
+  <li>parcourir <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode/criteres/#topic1">les critères et tests relatifs aux images<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du Référentiel Général d’Amélioration de l’Accessibilité 4</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="gif-gif-everywhere">GIF, GIF everywhere</h3>
+<p>Les GIF sont un élément incontournable du web : ils fleurissent sur les réseaux sociaux ou les articles de blog, dans certains cas ils constituent même le contenu principal du site (qui ne connaît pas <a href="https://lesjoiesducode.fr/">Les Joies du code<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, illustrant le quotidien des développeurs informatiques ?). On les trouve aussi dans les logiciels de messagerie instantanée comme Slack ou WhatsApp. Bref, vous avez forcément déjà dû en croiser.</p>
+
+<p>Il s’agit d’un moyen d’expression à part entière, permettant d’émettre un avis, d’exprimer un sentiment ou de renforcer un propos grâce à une image en rapport avec le sujet évoqué. Ces images sont généralement décalées pour susciter l’amusement, tirées de films, séries, émissions populaires ou vidéos amateurs, voire même d’archives historiques, comme l’explique Le Monde dans son article <a href="https://www.lemonde.fr/big-browser/article/2016/10/17/bienvenue-dans-l-ere-du-gif-historique_5015111_4832693.html">Bienvenue dans l’ère du GIF historique<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+
+<p>Sur le plan technique, il s’agit avant tout d’un format d’image numérique permettant de stocker plusieurs images dans un fichier afin de créer des diaporamas ou des animations, généralement en boucle.</p>
+
+<h3 id="impacts-sur-les-utilisateurs-et-utilisatrices">Impacts sur les utilisateurs et utilisatrices</h3>
+<p>Les GIF animés peuvent poser plusieurs problèmes d’accessibilité :</p>
+<ul>
+  <li>
+    <p>dans le cas où le GIF est porteur d’information, <strong>les internautes mal-voyants ou aveugles doivent eux aussi être pris en compte et avoir accès à une alternative textuelle</strong>.</p>
+  </li>
+  <li>
+    <p><strong>il s’agit de contenus en mouvement ou clignotants, ce qui peut poser un sérieux problème pour les personnes souffrant de troubles de l’attention, de troubles vestibulaires, d’épilepsie ou même d’anxiété</strong>. Il peut en effet être très difficile de se concentrer sur le contenu d’un article par exemple, lorsque des animations se jouent au même moment quelques lignes au-dessus. En 2012, Twitter choisissait d’ailleurs de ne plus supporter les images de profil au format GIF animé, arguant qu’ils <q>détournent l’attention des utilisateurs, qui ne se focalisent plus les tweets</q> (source : <a href="https://www.journaldugeek.com/2012/09/21/twitter-fini-avatars-animes/">Twitter : fini les avatars animés<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>)</p>
+  </li>
+</ul>
+
+<h3 id="recommandations-daccessibilité">Recommandations d’accessibilité</h3>
+<p>Plusieurs critères du Référentiel Général d’Amélioration de l’Accessibilité (RGAA) donnent des directives sur la manière d’intégrer des GIF pour les rendre accessibles :</p>
+
+<ul>
+  <li>
+    <p>Critère 1.1 : Chaque image porteuse d’information a-t-elle une alternative textuelle ?</p>
+  </li>
+  <li>
+    <p>Critère 13.8 : Dans chaque page web, chaque contenu en mouvement ou clignotant est-il contrôlable par l’utilisateur ?</p>
+    <ul>
+      <li>la durée du mouvement doit être inférieure ou égale à 5 secondes ;</li>
+      <li>ou alors l’utilisateur doit pouvoir arrêter et relancer le mouvement ;</li>
+      <li>ou alors l’utilisateur doit pouvoir afficher et masquer le contenu en mouvement ;</li>
+      <li>ou alors l’utilisateur doit pouvoir afficher la totalité de l’information sans le mouvement.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>En résumé, il s’agit donc de fournir un alternative textuelle (grâce à l’attribut <code class="highlighter-rouge">alt</code> notamment, comme nous l’avons vu dans les précédents articles), et un moyen pour l’internaut de contrôler l’animation</strong>.</p>
+
+<p><strong>Si l’animation du GIF est inférieure ou égale à 5 secondes, il n’y a donc rien à faire</strong> (en dehors de fournir une alternative textuelle si nécessaire). <strong>En revanche, que le GIF ait une fonction informative ou purement décorative, si son animation est supérieure à 5 secondes, des mécanismes de contrôle doivent être mis en place</strong> afin de mettre en pause, masquer ou bien le remplacer par une alternative statique.</p>
+
+<h2 id="plusieurs-solutions-sont-donc-possibles-">Plusieurs solutions sont donc possibles :</h2>
+
+:ET
