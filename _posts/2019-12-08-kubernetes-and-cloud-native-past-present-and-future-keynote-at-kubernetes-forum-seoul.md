@@ -6,7 +6,7 @@ location: Seoul, South Korea
 image: /images/2019-12-08-kubernetes-and-cloud-native-past-present-and-future-keynote-at-kubernetes-forum-seoul.jpg
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/3cwvifkpYjUB9a
-video:
+video: https://www.youtube.com/embed/_GxkZ4S43oY
 tags:
   - Slides
   - "2019"
