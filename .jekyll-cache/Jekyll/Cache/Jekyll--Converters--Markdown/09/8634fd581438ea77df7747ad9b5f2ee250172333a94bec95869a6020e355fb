@@ -1,0 +1,109 @@
+I"T#<p>En complément de ma série sur les images accessibles : gérer l’accessibilité des images intégrées via <code class="highlighter-rouge">&lt;object&gt;</code>, <code class="highlighter-rouge">&lt;canvas&gt;</code> et <code class="highlighter-rouge">&lt;embed&gt;</code>.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://access42.net/N-enterrons-pas-trop-vite-les-polices-icones-icon-fonts?lang=fr">N’enterrons pas trop vite les polices-icônes (icon fonts) !<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Access42</li>
+  <li>lire la notice <a href="https://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-1-polices-icones-icon-fonts/">Gérer l’alternative des polices d’icônes (Icon Fonts)<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire l’article <a href="https://www.lelutinduweb.fr/alternatives-textuelles-balise-title/">Le vaste monde des alternatives textuelles : la balise <code class="highlighter-rouge">&lt;title&gt;</code> et les images SVG<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Julie Moynat</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="définitions-et-usages">Définitions et usages</h3>
+<ul>
+  <li>
+    <p>la balise <code class="highlighter-rouge">&lt;object&gt;</code> permet d’inclure du contenu multimédia dans une page, tels que des images, des fichiers, des vidéos… Vous pouvez trouver plus d’informations sur <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/object">la page Mozilla dédiée à cette balise<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+  </li>
+  <li>
+    <p>la balise <code class="highlighter-rouge">&lt;canvas&gt;</code> permet de dessiner des graphiques à la volée, via des scripts (en Javascript ou WebGL par exemple). La balise <code class="highlighter-rouge">&lt;canvas&gt;</code> est le conteneur dans lequel sont générés les graphiques. Vous pouvez trouver plus d’informations sur <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/canvas">la page Mozilla dédiée à cette balise<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+  </li>
+  <li>
+    <p>la balise <code class="highlighter-rouge">&lt;embed&gt;</code> définit un conteneur pour une application externe ou un contenu interactif (c’est à dire un plug-in). Elle permet d’intégrer à une page web tout type d’objets (image, vidéo, audio, programme..). Vous pouvez trouver plus d’informations sur <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/embed">la page Mozilla dédiée à cette balise<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+  </li>
+</ul>
+
+<h3 id="images-décoratives">Images décoratives</h3>
+<p>Dans le cas d’images décoratives, qui ne comportent pas d’intitulé visible, les lecteurs d’écran ne doivent pas les restituer. Pour ce faire, il faut :</p>
+<ul>
+  <li>
+    <p>ajouter un attribut <code class="highlighter-rouge">aria-hidden="true"</code> sur les balises <code class="highlighter-rouge">&lt;object&gt;</code>, <code class="highlighter-rouge">&lt;canvas&gt;</code> et <code class="highlighter-rouge">&lt;embed&gt;</code>.</p>
+  </li>
+  <li>
+    <p>s’assurer que les balises <code class="highlighter-rouge">&lt;object&gt;</code>, <code class="highlighter-rouge">&lt;canvas&gt;</code> et <code class="highlighter-rouge">&lt;embed&gt;</code> ou un de leurs enfants ne possède  aucun attribut aria-label, aria-labelledby ou aria-describedby</p>
+  </li>
+  <li>
+    <p>s’assurer qu’il n’y a aucun texte faisant office d’alternative textuelle entre <code class="highlighter-rouge">&lt;object&gt;</code> et <code class="highlighter-rouge">&lt;/object&gt;</code> et entre <code class="highlighter-rouge">&lt;canvas&gt;</code> et <code class="highlighter-rouge">&lt;/canvas&gt;</code> (l’élément <code class="highlighter-rouge">&lt;embed&gt;</code> n’est pas concerné car il est vide)</p>
+  </li>
+</ul>
+
+<p>Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- Object --&gt;
+&lt;object
+  aria-hidden="true"
+  type="application/pdf"
+  data="In-CC0.pdf"
+  width="250"
+  height="200"&gt;
+&lt;/object&gt;
+
+&lt;!-- Canvas --&gt;
+&lt;canvas
+  aria-hidden="true"
+  id="canvas"
+  width="300"
+  height="300"&gt;
+&lt;/canvas&gt;
+
+&lt;!-- Embed --&gt;
+&lt;embed
+  aria-hidden="true"
+  type="video/webm"
+  src="flower.mp4"
+  width="250"
+  height="200"&gt;
+</code></pre></div></div>
+
+<h3 id="images-informatives">Images informatives</h3>
+<p>Si les images sont porteuses de sens, il faut fournir une alternative textuelle. Il est alors possible de labelliser directement l’image ou alors de mettre en place une alternative complémentaire.</p>
+
+<h4 id="labelliser-les-images">Labelliser les images</h4>
+<ul>
+  <li>
+    <p>ajouter un attribut <code class="highlighter-rouge">aria-label</code> qui contient une alternative pertinente de l’image</p>
+  </li>
+  <li>
+    <p>ajouter un attribut <code class="highlighter-rouge">aria-labelledby</code> qui référence un passage de texte pertinent</p>
+  </li>
+</ul>
+
+<p>Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;canvas
+  aria-label="Alternative textuelle"
+  id="canvas"
+  width="300"
+  height="300"&gt;
+&lt;/canvas&gt;
+</code></pre></div></div>
+
+<h4 id="mettre-en-place-une-alternative-complémentaire">Mettre en place une alternative complémentaire</h4>
+<ul>
+  <li>pour <code class="highlighter-rouge">&lt;canvas&gt;</code>, il est possible d’insérer directement un texte entre les balises ouvrante et fermante. Ce texte sera alors considéré comme l’alternative textuelle (il n’est pas possible de procéder ainsi pour la balise <code class="highlighter-rouge">&lt;object&gt;</code> et la balise <code class="highlighter-rouge">&lt;embed&gt;</code> est vide)</li>
+</ul>
+
+<p>Par exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;canvas id="canvas" width="300" height="300"&gt;
+  Texte de l'alternative textuelle
+&lt;/canvas&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>il est possible de donner accès à une alternative textuelle via un lien adjacent situé à proximité de l’image</p>
+  </li>
+  <li>
+    <p>il est possible de prévoir un mécanisme permettant à l’utilisateur de remplacer l’image par un texte alternatif (ou par une autre image possédant une alternative textuelle)</p>
+  </li>
+</ul>
+:ET
