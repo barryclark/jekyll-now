@@ -1,0 +1,46 @@
+I"7<p>Comment intégrer des polices d’icônes accessibles ?</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://access42.net/concilier-design-accessibilite?lang=fr">Concilier design et accessibilité<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Marie Guillaumet</li>
+  <li>lire l’article <a href="https://medium.com/@sheribyrnehaber/accessibility-and-motion-484bd322e77d" lang="en" hreflang="en">Accessibility and motion<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Sheri Byrne-Haber</li>
+  <li>lire les recommandations <a href="https://www.bbc.co.uk/gel/guidelines/how-to-make-accessible-animated-images#when-should-you-use-an-animated-image-" lang="en" hreflang="en">How to make accessible animated images<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de la <span lang="en">British Broadcasting Corporation</span> (BBC)</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="définition">Définition</h3>
+<p><strong>Les polices d’icônes sont des polices d’écriture</strong> sauf qu’en lieu et place des caractères, elles utilisent des glyphes représentant les icônes que l’on souhaite utiliser. Chaque glyphe possède un caractère Unicode correspondant permettant d’afficher l’icône. L’une des polices d’icônes les plus populaires et les plus utilisées est <a href="https://fontawesome.com/?from=io" lang="en" hreflang="en">Font Awesome</a>. Voici un exemple de code pour afficher une icône grâce à une police :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- En HTML --&gt;
+&lt;span class="mon-icon"&gt;&lt;/span&gt;
+
+&lt;!-- En CSS --&gt;
+.mon-icon:before {
+  content: "\F052";
+}
+</code></pre></div></div>
+
+<h3 id="rendre-une-police-dicônes-accessible">Rendre une police d’icônes accessible</h3>
+<p>Quelle que soit la nature de l’icône - qu’elle soit décorative ou porteuse de sens - il faut systématiquement lui ajouter un attribut <code class="highlighter-rouge">aria-hidden="true"</code> afin d’être ignorée par les lecteurs d’écran.</p>
+
+<p>De nombreuses polices d’icônes utilisent par ailleurs la balise <code class="highlighter-rouge">&lt;i&gt;</code> pour intégrer les icônes, cependant une balise <code class="highlighter-rouge">&lt;span&gt;</code> semble plus appropriée car elle ne porte aucune valeur sémantique (contrairement à la balise <code class="highlighter-rouge">&lt;i&gt;</code> qui <q>représente un morceau de texte qui se différencie du texte principal. Cela peut par exemple être le cas pour des termes techniques, des phrases dans une langue étrangère ou encore l’expression des pensées d’un personnage.<q></q> - <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/i">La balise <code class="highlighter-rouge">&lt;i&gt;</code> sur Mozilla</a>).</q></p>
+
+<h4 id="icône-décorative">Icône décorative</h4>
+<p>Si l’icône est purement décorative, il n’y a rien à faire de plus que ces deux recommandations.</p>
+
+<p>Voici un exemple d’intégration d’icône décorative :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="icon icon-tree" aria-hidden="true"&gt;&lt;/span&gt;
+</code></pre></div></div>
+
+<h4 id="icône-informative">Icône informative</h4>
+<p>En revanche, si l’icône est porteuse de sens, il est nécessaire d’ajouter quelques éléments :</p>
+<ul>
+  <li>
+    <p>une balise <code class="highlighter-rouge">&lt;span&gt;</code> contenant une alternative textuelle permettant d’expliciter l’icône (qui sera ignorée par les lecteurs d’écran grâce à l’attribut <code class="highlighter-rouge">aria-hidden="true"</code>)</p>
+  </li>
+  <li>
+    <p>des styles permettant de masquer visuellement cette alternative textuelle tout en la laissant accessible aux lecteurs d’écran</p>
+  </li>
+</ul>
+:ET
