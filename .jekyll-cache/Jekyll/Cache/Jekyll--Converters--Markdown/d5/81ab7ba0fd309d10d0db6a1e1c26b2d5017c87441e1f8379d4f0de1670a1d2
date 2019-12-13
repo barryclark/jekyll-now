@@ -1,0 +1,36 @@
+I"<p>CAPTCHAs et accessibilité font-ils bon ménage ?</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://www.w3.org/TR/turingtest/" lang="en" hreflang="en">Inaccessibility of CAPTCHA<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du World Wide Web Consortium (W3C)</li>
+  <li>lire l’article <a href="https://a11y-guidelines.orange.com/web/captcha.html">Les CAPTCHAs et l’accessibilité<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Orange</li>
+  <li>lire la notice <a href="https://www.alsacreations.com/tuto/lire/1547-police-font-icone-vectorielle-webdesign.html">Prévoir une alternative pour chaque CAPTCHA uniquement visuel ou sonore<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="différents-types-de-captcha">Différents types de CAPTCHA</h3>
+<p>CAPTCHA est l’acronyme de <span lang="en">“Completely Automated Public Turing-test to tell Computers and Humans Apart”</span>, qui signifie en français “Test de Turing public complètement automatisé pour différencier les humains des ordinateurs”. Nommé en mémoire de l’informaticien Alan Turing, <strong>ce type de test vise à différencier un utilisateur d’un programme informatique pour sécuriser les contenus d’un site internet</strong>, au moment d’un achat ou pour poster des commentaires par exemple.</p>
+
+<p>Il existe différents types de CAPTCHA :</p>
+<ul>
+  <li>
+    <p><strong>les CAPTCHAs visuels</strong> : il s’agit de déchiffrer un ensemble de caractères déformés et pixellisés.
+Par exemple :</p>
+
+    <p><img src="../images/posts/captcha-visuel.jpg" alt="Capture d'écran d'un CAPTCHA visuel" /></p>
+  </li>
+  <li>
+    <p><strong>les CAPTCHAs sonores</strong> : il s’agit de retranscrire un message sonore distordu</p>
+  </li>
+  <li>
+    <p><strong>le “No CAPTCHA” de Google</strong> : il s’agit d’une simple case à cocher et en arrière plan la résolution de l’écran, le déplacement du pointeur de la souris ou le temps de saisie sont analysés pour s’assurer que c’est bien un humain derrière l’écran</p>
+
+    <p><img src="../images/posts/nocaptcha-google.jpg" alt="Capture d'écran du No CAPTCHA de Google" width="320px" /></p>
+  </li>
+</ul>
+
+<h3 id="impacts-sur-les-utilisateurs">Impacts sur les utilisateurs</h3>
+<p>Les CAPTCHAs posent des difficultés à tous les utilisateurs et à toutes les utilisatrices. Ils sont source de frustration car plusieurs tentatives sont souvent nécessaires pour trouver la bonne réponse.</p>
+
+<p>Pour des personnes mal-voyantes, aveugles ou dyslexiques, l’utilisation de CAPTCHA visuel est même rédhibitoire. Un utilisateur ou une utilisatrice aveugle sera dans l’incapacité in fine de rédiger des commentaires ou de finaliser un achat.</p>
+:ET
