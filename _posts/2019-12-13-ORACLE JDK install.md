@@ -60,4 +60,4 @@ FILEID : 구글 드라이브에 업로드한 파일의 ID값
 ```
 
 위 명령어에 FILENAME과 FILEID를 적절히 입력해주고 명령어를 입력하면<br>
-편하게, 아주 편하게 orcle JDK Binary source를 얻을 수 있다.
+편하게, 아주 편하게 oracle JDK Binary source를 얻을 수 있다.
