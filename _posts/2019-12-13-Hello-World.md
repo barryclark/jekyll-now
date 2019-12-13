@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First Post!
+category: blog
 author: junseo.park
 ---
 

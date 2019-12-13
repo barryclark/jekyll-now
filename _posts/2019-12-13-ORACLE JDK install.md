@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 구글 드라이브로 우회해서 oracle jdk 파일 받기
+category: blog
 author: junseo.park
 ---
 
