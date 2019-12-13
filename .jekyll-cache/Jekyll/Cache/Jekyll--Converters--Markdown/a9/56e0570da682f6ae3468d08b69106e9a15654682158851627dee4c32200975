@@ -1,0 +1,91 @@
+I"X%<p>CAPTCHAs et accessibilité font-ils bon ménage ?</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://www.w3.org/TR/turingtest/" lang="en" hreflang="en">Inaccessibility of CAPTCHA<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du World Wide Web Consortium (W3C)</li>
+  <li>lire l’article <a href="https://a11y-guidelines.orange.com/web/captcha.html">Les CAPTCHAs et l’accessibilité<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Orange</li>
+  <li>lire la notice <a href="https://www.alsacreations.com/tuto/lire/1547-police-font-icone-vectorielle-webdesign.html">Prévoir une alternative pour chaque CAPTCHA uniquement visuel ou sonore<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire le témoignage <a href="http://webzine.okeenea.com/serie-noire-pour-une-canne-blanche-les-captchas/">Série noire pour une canne blanche : les CAPTCHAs</a> sur le webzine OKEENEA</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="différents-types-de-captcha">Différents types de CAPTCHA</h3>
+<p>CAPTCHA est l’acronyme de <span lang="en">“Completely Automated Public Turing-test to tell Computers and Humans Apart”</span>, qui signifie en français “Test de Turing public complètement automatisé pour différencier les humains des ordinateurs”. Nommé en mémoire de l’informaticien Alan Turing, <strong>ce type de test vise à différencier un utilisateur d’un programme informatique pour sécuriser les contenus d’un site internet</strong>, au moment d’un achat ou pour poster des commentaires par exemple.</p>
+
+<p>Il existe différents types de CAPTCHAs :</p>
+<ul>
+  <li>
+    <p><strong>les CAPTCHAs visuels</strong> : il s’agit de déchiffrer un ensemble de caractères déformés et pixellisés.
+Par exemple :</p>
+
+    <p><img src="../images/posts/captcha-visuel.jpg" alt="Capture d'écran d'un CAPTCHA visuel" /></p>
+
+    <p>D’autres CAPTCHAs visuels s’appuient sur la reconnaissance d’images, par exemple reconnaître une voiture dans une série de photographies différentes.</p>
+  </li>
+  <li>
+    <p><strong>les CAPTCHAs sonores</strong> : il s’agit de retranscrire un message sonore distordu</p>
+  </li>
+  <li>
+    <p><strong>le “No CAPTCHA” de Google</strong> : il s’agit d’une simple case à cocher tandis qu’en arrière plan la résolution de l’écran, le déplacement du pointeur de la souris ou le temps de saisie sont analysés pour s’assurer qu’il s’agit bien d’un humain derrière l’écran.</p>
+
+    <p><img src="../images/posts/nocaptcha-google.jpg" alt="Capture d'écran du No CAPTCHA de Google" width="320px" /></p>
+  </li>
+</ul>
+
+<h3 id="impacts-sur-les-utilisateurs">Impacts sur les utilisateurs</h3>
+<p>Les CAPTCHAs posent des difficultés à tous les utilisateurs et à toutes les utilisatrices. Ils sont source de frustration car plusieurs tentatives sont souvent nécessaires pour trouver la bonne réponse. A titre personnel, il m’est arrivé de devoir faire 5 ou 6 tentatives avant de réussir à passer un CAPTCHA visuel, tant la lecture des caractères était compliquée.</p>
+
+<p>Pour des personnes mal-voyantes, aveugles ou dyslexiques, l’utilisation de CAPTCHA visuel est même rédhibitoire. Un utilisateur ou une utilisatrice aveugle sera dans l’incapacité in fine de rédiger des commentaires ou de finaliser un achat, car il n’est pas envisageable de proposer une alternative textuelle, laquelle constituerait une bénédiction pour les robots.</p>
+
+<p>Les CAPTCHAs sonores posent les mêmes soucis car leur message déformé rend la compréhension très difficile.</p>
+
+<p>Quant au “No CAPTCHA” de Google, bien que plus performant il pose encore certaines problèmes. Les programmes d’analyse du déplacement de la souris ou du temps de saisie en arrière plan confondent souvent humain et robot lorsqu’un internaute navigue avec son clavier ou un lecteur d’écran. Et en cas de doute, c’est un CAPTCHA visuel classique qui est alors proposé.</p>
+
+<p>Enfin, alors que l’intégration de CAPTCHAs dans un site est souvent justifiée pour renforcer la sécurité, il semblerait que ces derniers soient loin d’être infaillibles :</p>
+<ul>
+  <li>
+    <p>les programmes informatiques actuels et d’intelligence artificielle sont désormais suffisamment performants pour déchiffrer un message déformant ou déterminer si une photographie contient un objet précis. <a href="https://security.googleblog.com/2014/12/are-you-robot-introducing-no-captcha.html" hreflang="en">Un article de Google<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> précise ainsi qu’une intelligence artificielle peut résoudre les tests visuels les plus difficiles avec 99,8% de réussite, soit plus qu’un utilisateur humain.</p>
+  </li>
+  <li>
+    <p>il est possible de rémunérer à l’heure des décodeurs de CAPTCHA pour vérifier plusieurs centaines de tests visuels ou sonores</p>
+  </li>
+</ul>
+
+<h3 id="quelles-solutions-">Quelles solutions ?</h3>
+<p>Il faut a minima <strong>prévoir des solutions d’alternative d’accès aux CAPTCHAs</strong> :</p>
+
+<ul>
+  <li>
+    <p><strong>proposer à la fois un CAPTCHA sonore <u>et</u> un CAPTCHA visuel</strong> pour parer aux déficiences visuelles ou auditives.</p>
+  </li>
+  <li>
+    <p><strong>proposer un moyen de contact, par téléphone ou e-mail</strong> permettant de réaliser différemment l’opération souhaitée.</p>
+  </li>
+  <li>
+    <p><strong>proposer des tests logiques tels que des opérations mathématiques ou des questions simples</strong>, appelés CAPTCHAs textuels. Par exemple : “Combien font deux plus deux ? “ ou “Quelle est la couleur du cheval blanc d’Henri IV ?”.</p>
+  </li>
+</ul>
+
+<p>Prévoir une solution facile de rafraîchissement comme préconisé par AcceDe Web ou avoir la possibilité d’écouter un CAPTCHA sonore à volonté <a href="https://checklists.opquast.com/fr/qualiteweb/les-captchas-audio-peuvent-etre-reecoutes-a-volonte">comme le recommande Opquast</a> sont également de bonnes pratiques à intégrer.</p>
+
+<h3 id="les-limites-de-ces-solutions">Les limites de ces solutions</h3>
+<p>Mais dans les faits, ces solutions ne sont pas optimales : afin de déjouer les robots spammeurs, les CAPTCHAs, qu’ils soient sonores ou visuels, sont de plus en plus compliqués à déchiffrer, et ne sont pas accessibles par définition. Leur utilisation peut donc sérieusement pénaliser un site.</p>
+
+<p>L’alternative de contact par e-mail ou téléphone est beaucoup plus fiable, mais lourde à mettre en place et impose à l’internaute de communiquer des données personnelles.</p>
+
+<p>Les tests logiques, quant à eux, se doivent rester très simples sous peine de pénaliser les internautes souffrant de troubles cognitifs.</p>
+
+<p>En conclusion, <strong>entre les problèmes d’accessibilité et leur efficacité limitée en matière de sécurité, la meilleure recommandation serait donc de se passer de CAPTCHAs</strong>. Il existe également des alternatives ayant peu d’impacts sur les internautes et moins contraignantes :</p>
+
+<ul>
+  <li>
+    <p><strong>des outils tels que HoneyPot et Time measuring proposent des solutions transparentes pour l’internaute pour détecter les robots spammeurs</strong>. HoneyPot ajoute un champ masqué à l’écran dans le formulaire invisible pour un internaute humain et Time measuring mesure le temps mis pour remplir un formulaire : si le champ invisible est rempli ou si le temps mesuré est trop rapide, alors il s’agit très probablement d’un robot.</p>
+  </li>
+  <li>
+    <p><strong>mettre en place des logiciels anti-SPAM</strong> en examinant les données envoyées et les adresses IP des robots malveillants.</p>
+  </li>
+  <li>
+    <p><strong>envoyer une confirmation par email</strong></p>
+  </li>
+</ul>
+:ET
