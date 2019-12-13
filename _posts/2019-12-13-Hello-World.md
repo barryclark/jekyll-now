@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First Post!
+author: junseo.park
 ---
 
 Hi! Welcome to My Github Blog Site.
