@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dactrtr.rocks
+Token: 27327ca3df53f91d06baa25da1fb5abf35971f8683b48bbfaf3572d1e6eba804
