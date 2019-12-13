@@ -8,6 +8,7 @@ permalink: /portfolio
     {% if post.category == "portfolio" %}
       <article class="post">
         <h1><a href="{{ site.baseurl }}{{ post.url }}" style="color:#32859e;">{{ post.title }}</a></h1>
+        {{ post.subtitle }}
       </article>
     {% endif %}
   {% endfor %}
