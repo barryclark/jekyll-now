@@ -3,11 +3,11 @@ layout: default
 permalink: portfolio
 ---
 
-<div class="porfolioes">
-  {% for porfolio in site.porfolio %}
-    <article class="porfolio">
+<div class="portfolioes">
+  {% for portfolio in site.portfolio %}
+    <article class="portfolio">
 
-      <h1><a href="{{ site.baseurl }}{{ porfolio.url }}" style="color:#32859e;">{{ porfolio.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ portfolio.url }}" style="color:#32859e;">{{ portfolio.title }}</a></h1>
 
     </article>
   {% endfor %}
