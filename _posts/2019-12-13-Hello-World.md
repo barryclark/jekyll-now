@@ -3,6 +3,7 @@ layout: post
 title: First Post!
 category: blog
 author: junseo.park
+subtitle: test page
 ---
 
 Hi! Welcome to My Github Blog Site.

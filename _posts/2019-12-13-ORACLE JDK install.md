@@ -3,6 +3,7 @@ layout: post
 title: 구글 드라이브로 우회해서 oracle jdk 파일 받기
 category: blog
 author: junseo.park
+subtitle: wget으로 oracle JDK를 쉽게 받아보자
 ---
 
 아직은 Open JDK보다 Oracle JDK가 더 필요하다보니<br>
