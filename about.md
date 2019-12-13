@@ -7,11 +7,13 @@ permalink: /about
 
 ## Technical Ability
 - **Programming Language Skill**
-    - C++     : ■■■■■■■□□□
-    - java    : ■■■■■□□□□□
-    - python  : ■■■■□□□□□□
+    - C++ㅤㅤ : ■■■■■■■□□□
+    - javaㅤㅤ: ■■■■■□□□□□
+    - pythonㅤ: ■■■■□□□□□□
     - node.js : ■■■■■■□□□□
-    - scala   : ■■□□□□□□□□
+    - scalaㅤ : ■■□□□□□□□□
+
+<br>
 
 - **Development Toolkit**
     - ELK Stack (ElasticSearch | Logstash | Kibana)
@@ -20,9 +22,13 @@ permalink: /about
     - Database (MYSQL, MongoDB, DynamoDB, Redis)
     - Dev-Ops (Azkaban, Ansible)
 
+<br>
+
 - **Communication Languages**
     - English : TOEIC SPEAKING lv.6
     - Japanese : Basic Communications
+
+<br>
 
 ## Own Value
 1. **꿈이 있는 개발자**
