@@ -44,12 +44,12 @@ linux wget으로 google drive에 access하는 것? **[EASY]**
 4. 3번의 FILEID 위치의 해시값을 기억하자. 뒤에 쓰일 FILEID 값이다.
 5. wget으로 해당 파일을 원하는 linux server에 다운로드 한다
 
-<pre>
+```
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O FILENAME && rm -rf /tmp/cookies.txt
 
 FILENAME : 다운받을 파일의 이름을 임의로 정해주면 된다
 FILEID : 구글 드라이브에 업로드한 파일의 ID값
-</pre>
+```
 
 위 명령어에 FILENAME과 FILEID를 적절히 입력해주고 명령어를 입력하면<br>
 편하게, 아주 편하게 orcle JDK Binary source를 얻을 수 있다.

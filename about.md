@@ -4,12 +4,26 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+## Value
+1. **꿈을 갖고 살자**
+    - 목표가 없는 개발자는 그 자리에 서서 굳어버릴 뿐이라 생각합니다.<br>항상 성장하기를 꿈꾸고 새로운 목표를 향해 도전하는 개발자로 살고 싶습니다.
 
-### More Information
+2. **사람들을 행복하게 하는 개발자가 되자**
+    - SW 개발자도 결국은 서비스업이라는 생각을 합니다.<br>내가 만든 프로그램들이 사용자들에게 더욱 편한 삶을 제공할 수 있도록<br>노력하는 개발자입니다.
 
-A place to include any other types of information that you'd like to include about yourself.
+3. **의미없는 데이터 없고 목적없는 서비스 없다.**
+    - 사소한 데이터라도 그 안에서 의미있는 정보가 나올 수 있다고 믿습니다.<br>모든 SW서비스는 개발되어야 하는 이유가 있다고 믿습니다.<br>이를 실천하는 개발자가 될 수 있다고 믿습니다.
 
-### Contact me
+## Career Introdution
+| year | Description |
+|:----|----:|
+| 1994.03 | 출생 |
+| 2013.03 | Ajou Univ. 미디어학과 입학 |
+| 2015.03 ~ 2016.12 | 대한민국 육군 제 12사단 복무 |
+| 2017.03 | 소프트웨어공학과 복수전공 |
+| 2019.04 ~ 2019.07 | Naver Corp. Search&Clova 근무 |
+| 2019.07 ~ 2019.08 | (주)매그니스 서버개발 근무 |
 
-[email@domain.com](mailto:email@domain.com)
+
+## Contact me
+qwt0326@gmail.com
