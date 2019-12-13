@@ -28,7 +28,7 @@ year                    Description<br>
 2017.03                 소프트웨어공학과 복수전공<br>
 2019.04 ~ 2019.07   Naver Corp. Search&Clova 근무<br>
 2019.07 ~ 2019.08   (주)매그니스 서버개발 근무<br>
-<pre>
+</pre>
 
 
 ## Contact me
