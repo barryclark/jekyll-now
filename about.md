@@ -22,10 +22,10 @@ permalink: /about/
 ## Career Introdution
 <pre>
 year                Description<br>
-1994.03 ㅤㅤㅤㅤㅤ   출생<br>
-2013.03 ㅤㅤㅤㅤㅤ   Ajou Univ. 미디어학과 입학<br>
+1994.03ㅤㅤㅤㅤㅤ   출생<br>
+2013.03ㅤㅤㅤㅤㅤ   Ajou Univ. 미디어학과 입학<br>
 2015.03 ~ 2016.12   대한민국 육군 제 12사단 복무<br>
-2017.03 ㅤㅤㅤㅤㅤ   소프트웨어공학과 복수전공<br>
+2017.03ㅤㅤㅤㅤㅤ   소프트웨어공학과 복수전공<br>
 2019.04 ~ 2019.07   Naver Corp. Search&Clova 근무<br>
 2019.07 ~ 2019.08   (주)매그니스 서버개발 근무<br>
 </pre>
