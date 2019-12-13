@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="porfolioes">
+  {% for porfolio in site.porfolio %}
+    <article class="porfolio">
+
+      <h1><a href="{{ site.baseurl }}{{ porfolio.url }}" style="color:#32859e;">{{ porfolio.title }}</a></h1>
+
+    </article>
+  {% endfor %}
+</div>
