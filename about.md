@@ -8,10 +8,10 @@ permalink: /about
 ## Technical Ability
 - **Programming Language Skill**
     - C++ㅤㅤ : ■■■■■■■□□□
-    - javaㅤㅤ: ■■■■■□□□□□
+    - javaㅤㅤ : ■■■■■□□□□□
     - pythonㅤ: ■■■■□□□□□□
-    - node.js : ■■■■■■□□□□
-    - scalaㅤ : ■■□□□□□□□□
+    - node.jsㅤ: ■■■■■■□□□□
+    - scalaㅤㅤ: ■■□□□□□□□□
 
 <br>
 
