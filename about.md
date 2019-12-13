@@ -16,11 +16,11 @@ permalink: /about
 <br>
 
 - **Development Toolkit**
-    - ELK Stack (ElasticSearch | Logstash | Kibana)
+    - ELK Stack (ElasticSearch, Logstash, Kibana)
     - Hadoop / Spark
     - Message Queue (Kafka, RabbitMQ)
     - Database (MYSQL, MongoDB, DynamoDB, Redis)
-    - Dev-Ops (Azkaban, Ansible)
+    - Dev-Ops (Azkaban, Ansible, Linux admin)
 
 <br>
 
