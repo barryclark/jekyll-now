@@ -5,6 +5,25 @@ author: junseo.park
 permalink: /about
 ---
 
+## Technical Ability
+- **Programming Language Skill**
+    - C++     : ■■■■■■■□□□
+    - java    : ■■■■■□□□□□
+    - python  : ■■■■□□□□□□
+    - node.js : ■■■■■■□□□□
+    - scala   : ■■□□□□□□□□
+
+- **Development Toolkit**
+    - ELK Stack (ElasticSearch | Logstash | Kibana)
+    - Hadoop / Spark
+    - Message Queue (Kafka, RabbitMQ)
+    - Database (MYSQL, MongoDB, DynamoDB, Redis)
+    - Dev-Ops (Azkaban, Ansible)
+
+- **Communication Languages**
+    - English : TOEIC SPEAKING lv.6
+    - Japanese : Basic Communications
+
 ## Own Value
 1. **꿈이 있는 개발자**
 
