@@ -6,10 +6,11 @@ location: Sydney, Australia
 image: https://pbs.twimg.com/media/ELij-pDU0AABV7o?format=jpg&name=medium
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/NrjqI56fj0sQ31
-video:
+video: https://www.youtube.com/embed/7ywioqNvyc4
 tags:
   - Slides
   - "2019"
+  - Video
 ---
 
 * Increased release automation is paying off, with 55% of respondents to the 2019 CNCF survey releasing daily or weekly.
