@@ -1,0 +1,33 @@
+I"<p>CAPTCHAs et accessibilité font-ils bon ménage ?</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://www.w3.org/TR/turingtest/" lang="en" hreflang="en">Inaccessibility of CAPTCHA<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du World Wide Web Consortium (W3C)</li>
+  <li>lire l’article <a href="https://a11y-guidelines.orange.com/web/captcha.html">Les CAPTCHAs et l’accessibilité<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Orange</li>
+  <li>lire la notice <a href="https://www.alsacreations.com/tuto/lire/1547-police-font-icone-vectorielle-webdesign.html">Prévoir une alternative pour chaque CAPTCHA uniquement visuel ou sonore<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire le témoignage <a href="http://webzine.okeenea.com/serie-noire-pour-une-canne-blanche-les-captchas/">Série noire pour une canne blanche : les CAPTCHAs</a> sur le webzine OKEENEA</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<h3 id="couleur-constraste-et-accessibilité">Couleur, constraste et accessibilité</h3>
+<p>Dans la conception d’un site internet, le choix des couleurs, et plus globalement d’une charte graphique, est une étape importante. Ce choix est d’autant plus important que <strong>tout le monde ne distingue pas les couleurs de la même façon</strong>.</p>
+
+<p>Dans cet article, nous nous intéressons au critère 3.2 du Référentiel Général d’Amélioration de l’Accessibilité (RGAA) :</p>
+
+<blockquote>
+  <p>Dans chaque page web, le contraste entre la couleur du texte et la couleur de son arrière-plan est-il suffisamment élevé (hors cas particuliers) ?</p>
+</blockquote>
+
+<p>En effet, afin d’améliorer la lisibilité des contenus, <strong>les contrastes doivent être suffisants entre la couleur du texte et la couleur du fond</strong>. Les personnes impactées par des défauts d’accessibilité sur les contrastes sont :</p>
+<ul>
+  <li>
+    <p>les personnes malvoyantes (âgées ou non)</p>
+  </li>
+  <li>
+    <p>les personnes souffrant de daltonisme</p>
+  </li>
+  <li>
+    <p>les personnes se trouvant dans un environnement où la perception des couleurs et des contrastes est rendue difficile : comme la consultation d’un site sur mobile au soleil, ou sur un rétroprojecteur</p>
+  </li>
+</ul>
+:ET
