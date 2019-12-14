@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Navigating the Cloud Native Community for End Users"
+title: "Navigating the Cloud Native Community for End Users - KubeCon CloudNativeCon EU"
 description: "Watch Cheryl Hung's talk about how and why the CNCF supports the end user community."
 location: Barcelona, Spain
 image: https://i.ytimg.com/vi/6HVxJ_65L2c/maxresdefault.jpg

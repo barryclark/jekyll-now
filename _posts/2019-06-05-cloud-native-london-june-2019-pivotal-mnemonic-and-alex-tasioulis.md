@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London, June 2019: Pivotal, mnemonic and Alex Tasioulis"
+title: "Cloud Native London, June 2019 - Pivotal, mnemonic and Alex Tasioulis"
 description: "Read the roundup from Pivotal, mnemonic and Alex Tasioulis at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
 image: https://pbs.twimg.com/media/D8UUO6qUIAAXWSN.jpg

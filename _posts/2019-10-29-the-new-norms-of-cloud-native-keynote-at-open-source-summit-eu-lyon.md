@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The New Norms of Cloud Native: Keynote at Open Source Summit EU"
+title: "The New Norms of Cloud Native - Keynote at Open Source Summit EU"
 description: "Read about how cloud native is setting new expectations for open source from Cheryl Hung, CNCF Director of Ecosystem."
 location: Lyon, France
 video: https://www.youtube.com/embed/ZLPqlGDi9FQ
@@ -9,7 +9,7 @@ hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/mld3PvNhcNpsJ8
 tags:
   - Slides
-  - "2019" 
+  - "2019"
   - Video
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The New Norms of Cloud Native: Keynote, O'Reilly Software Architecture"
+title: "The New Norms of Cloud Native - Keynote, O'Reilly Software Architecture"
 description: "Understand how the CNCF and the cloud native community work together from Cheryl Hung, CNCF Director of Ecosystem."
 location: Berlin, Germany
 image: /images/2019-11-6-the-new-norms-of-cloud-native-keynote-oreilly-software-architecture.jpg

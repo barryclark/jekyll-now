@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CNCF in Japan, Keynote at Open Source Summit Japan"
+title: "CNCF in Japan - Keynote at Open Source Summit Japan"
 description: "Read an overview of cloud native in Japan from Cheryl Hung, CNCF Director of Ecosystem."
 image: /images/2019-07-17-cncf-in-japan-keynote-open-source-summit-japan-tokyo.jpg
 hide_image: true

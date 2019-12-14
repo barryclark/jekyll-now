@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London, October 2017: Monzo and linkerd"
+title: "Cloud Native London, October 2017 - Monzo and linkerd"
 description: "Read the roundup from Attest and Monzo at Cloud Native London, hosted by Cheryl Hung, Developer advocate at StorageOS."
 location: London, UK
 image: /images/2017-10-03-cnl.jpg

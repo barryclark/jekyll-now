@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CNCF End User Partner Summit: KubeCon CloudNativeCon NA"
+title: "CNCF End User Partner Summit - KubeCon CloudNativeCon NA"
 description: "The role and responsibilities of the CNCF End User Community from Cheryl Hung, CNCF Director of Ecosystem."
 location: San Diego, USA
 image: /images/2019-11-18-end-user-partner-summit-kubecon-cloudnativecon-san-diego.jpg

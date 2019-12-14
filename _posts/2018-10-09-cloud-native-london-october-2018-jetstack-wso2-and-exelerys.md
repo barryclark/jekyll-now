@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London, October 2018: Jetstack, WSO2 and Exelerys"
+title: "Cloud Native London, October 2018 - Jetstack, WSO2 and Exelerys"
 description: "Read the roundup from Jetstack, WSO2 and Exelerys at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
 image: https://pbs.twimg.com/media/DpFfBRuXgAEII1q.jpg

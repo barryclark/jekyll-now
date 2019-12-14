@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London, July 2019: Suade Labs, SUSE, and Dynatrace"
+title: "Cloud Native London, July 2019 - Suade Labs, SUSE, and Dynatrace"
 description: "Read the roundup from Suade Labs, SUSE and Dynatrace at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
 image: https://pbs.twimg.com/media/D-kf3WoWwAA2xwT.jpg

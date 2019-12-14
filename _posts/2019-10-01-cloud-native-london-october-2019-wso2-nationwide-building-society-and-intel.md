@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London October 2019: WSO2, Nationwide Building Society and Intel"
+title: "Cloud Native London October 2019 - WSO2, Nationwide Building Society and Intel"
 description: "Read the roundup from WSO2, Nationwide Building Society and Intel at the Cloud Native London meetup in October 2019, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
 image: /images/2019-10-01-cloud-native-london-october-2019-wso2-nationwide-building-society-and-intel.jpg

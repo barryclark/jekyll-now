@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kubernetes and Cloud Native: Past, Present and Future, Keynote at Kubernetes Forum Sydney"
+title: "Kubernetes and Cloud Native: Past, Present and Future - Keynote at Kubernetes Forum Sydney"
 description: "Read about cloud native trends in 2019 from Cheryl Hung, CNCF Director of Ecosystem."
 location: Sydney, Australia
 image: https://pbs.twimg.com/media/ELij-pDU0AABV7o?format=jpg&name=medium
