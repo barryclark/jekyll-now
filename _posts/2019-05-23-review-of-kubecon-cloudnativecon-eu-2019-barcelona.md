@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reviewing KubeCon + CloudNativeCon Europe 2019, Barcelona"
+title: "Review - KubeCon + CloudNativeCon Europe 2019, Barcelona"
 location: Barcelona, Spain
 description: "Cheryl Hung, Director of Ecosystem at CNCF, at KubeCon CloudNativeCon Barcelona."
 image: https://pbs.twimg.com/media/D7Euo3jW4AAro7k?format=jpg&name=large
