@@ -19,3 +19,11 @@ tags:
 * Check out the new [CNCF Job Board](jobs.cncf.io) for cloud native job opportunities.
 
 * Bring KubeCon CloudNativeCon home with you with global [Kubernetes Community Days](kubernetescommunitydays.org).
+
+![](/images/2019-11-19-cncf-updates-kubecon-cloudnativecon-san-diego-1.jpg)
+
+![](/images/2019-11-19-cncf-updates-kubecon-cloudnativecon-san-diego-2.jpg)
+
+![](/images/2019-11-19-cncf-updates-kubecon-cloudnativecon-san-diego-3.jpg)
+
+![](/images/2019-11-19-cncf-updates-kubecon-cloudnativecon-san-diego-4.jpg)
