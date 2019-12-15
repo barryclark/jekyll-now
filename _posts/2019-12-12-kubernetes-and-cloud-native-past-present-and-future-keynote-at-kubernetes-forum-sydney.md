@@ -6,6 +6,7 @@ location: Sydney, Australia
 image: https://pbs.twimg.com/media/ELij-pDU0AABV7o?format=jpg&name=medium
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/NrjqI56fj0sQ31
+twitter_moment: https://twitter.com/i/moments/1199864165923356672
 video: https://www.youtube.com/embed/7ywioqNvyc4
 tags:
   - Slides
@@ -18,5 +19,3 @@ tags:
 * Large container deployments are increasingly common, with 19% of respondents running more than 5000 containers.
 
 * The top challenge when deploying containers is cultural changes with the development team, followed by security, complexity and lack of training.
-
-<a class="twitter-moment" href="https://twitter.com/i/moments/1199864165923356672?ref_src=twsrc%5Etfw">Keynote at Kubernetes Forum Sydney</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

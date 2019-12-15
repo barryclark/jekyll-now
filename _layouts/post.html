@@ -36,6 +36,10 @@ layout: default
 
 <p>
 
+{% if page.twitter_moment %}
+  <a class="twitter-moment" href="{{ page.twitter_moment }}">Cheryl Hung at {{ page.title }}</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% endif %}
+
 {% if page.slides %}
   <div class="slides-wrapper">
     <iframe src="{{ page.slides }}" frameborder="0" allowfullscreen></iframe>
