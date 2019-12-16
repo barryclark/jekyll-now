@@ -1,0 +1,65 @@
+I"�!<p>Comment utiliser la couleur pour véhiculer de l’information ?</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<ul>
+  <li>lire l’article <a href="https://disic.github.io/guide-integrateur/11-agrandissement-des-caracteres.html">Agrandissement des caractères<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du Guide de l’intégrateur</li>
+  <li>lire l’article <a href="https://a11y-guidelines.orange.com/web/exemples/zoom/index.html">Gestion de l’agrandissement des caractères<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Orange</li>
+  <li>lire les notices <a href="https://www.accede-web.com/notices/html-css-javascript/11-zoom-taille-texte/">Zoom et taille de texte<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire la notice <a href="https://www.accede-web.com/notices/html-css-javascript/11-zoom-taille-texte/11-1-tailles-relatives-font-size/">Utiliser uniquement des tailles relatives (em, %, small, etc.) pour les polices de caractères<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<p>Le RGAA (Référentiel Général d’Amélioration de l’Accessibilité) pose le critère suivant :</p>
+
+<blockquote>
+  <p>Critère 10.4. Dans chaque page web, le texte reste-t-il lisible lorsque la taille des caractères est augmentée jusqu’à 200%, au moins (hors cas particuliers) ?</p>
+</blockquote>
+
+<p>De nombreux utilisateurs et utilisatrices doivent en effet agrandir le texte lorsqu’ils ou elles consultent un site internet : les personnes âges, les personnes malvoyantes ou même certaines personnes qui ont besoin de lunettes mais qui n’en portent pas au moment où elles consultent le site.</p>
+
+<p>Ce critère d’accessibilité sous-entend trois points :</p>
+<ul>
+  <li>qu’aucune taille minimale de caractères n’est imposée</li>
+  <li>que la taille du texte, et seulement du texte, peut être modifiée en fonction des préférences de l’internaute</li>
+  <li>que le texte doit rester lisible même lorsque sa taille est doublée</li>
+</ul>
+
+<h3 id="pas-de-taille-minimale-requise">Pas de taille minimale requise</h3>
+<p>Si aucune taille minimale des caractères n’est requise afin d’être conforme aux règles d’accessibilité, il n’en reste pas moins fortement conseillé d’utiliser des tailles relativement grandes pour que le contenu puisse être lu aisément par tout le monde. Aucune valeur explicite n’est demandée mais si vous voyez vos utilisateurs et utilisatrices se pencher à moins de deux centimères de leur écran, c’est qu’il y a sans doute un problème.</p>
+
+<h3 id="la-taille-du-texte-est-modifiable">La taille du texte est modifiable</h3>
+<h4 id="zoom-navigateur-uniquement-sur-le-texte">Zoom navigateur uniquement sur le texte</h4>
+<p>On parle ici de modifier uniquement la taille du texte et pas de la page dans son ensemble. Le zoom par défaut du navigateur permet d’agrandir la totalité de la page : texte mais aussi images, espacement entre les différentes zones de la page… Cette fonctionnalité peut se révéler pratique dans certains cas mais elle n’est pas optimale : à un certain point de zoom, une barre de défilement horizontale apparaît rendant la lecture difficile.</p>
+
+<p>Un zoom sur la taille de texte uniquement, et non pas l’ensemble de la page, évite ce genre d’écueils et emploie uniquement une barre de défilement verticale.</p>
+
+<p>Dans Firefox par exemple, il est possible d’agrandir uniquement le texte :</p>
+<ol>
+  <li>Sur la barre d’outils supérieure, cliquez sur “Affichage”, puis sur “Zoom”</li>
+  <li>Sélectionnez “Zoom” texte seulement. Les commandes ne modifient alors que la taille du texte, pas celle des images.</li>
+</ol>
+
+<p>Je vous invite à consulter la page <a href="https://support.mozilla.org/fr/kb/taille-police-zoom-augmenter-taille-pages#w_modifier-seulement-la-taille-du-texte">Taille de police et zoom – augmenter la taille des pages web<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> de Mozilla pour avoir plus de détails. Et si comme moi, votre barre de menus a disparu de Firefox, n’hésitez pas à consulter l’article <a href="https://support.mozilla.org/fr/kb/ou-sont-menus-fichier-edition-affichage#w_afficher-de-nouveau-la-barre-de-menus">Qu’est-il arrivé aux menus Fichier, Édition et Affichage ?<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>.</p>
+
+<h4 id="utiliser-des-unités-relatives">Utiliser des unités relatives</h4>
+<p>Pour que la taille de texte soit modifiable, celle-ci doit être exprimée en unités relatives. Les unités suivantes sont permises :</p>
+<ul>
+  <li>em, rem</li>
+  <li>%</li>
+  <li>vw, vh (unités relatives à la taille du viewport) ;</li>
+  <li><code class="highlighter-rouge">x-small</code>, <code class="highlighter-rouge">small</code>, <code class="highlighter-rouge">large</code>… (mots clés).</li>
+</ul>
+
+<p>Petit focus pour celles et ceux qui ne connaissent pas ou peu les mots clés (comme c’est mon cas) : <code class="highlighter-rouge">xx-small</code>, <code class="highlighter-rouge">x-small</code>, <code class="highlighter-rouge">small</code>, <code class="highlighter-rouge">medium</code>, <code class="highlighter-rouge">large</code>, <code class="highlighter-rouge">x-large</code>, <code class="highlighter-rouge">xx-large</code> renvoient à des valeurs absolues basées sur la taille par défaut de l’utilisateur qui vaut medium. Les mots-clés <code class="highlighter-rouge">larger</code> et <code class="highlighter-rouge">smaller</code> quant à eux permettent d’avoir une taille de caractères plus grande (<code class="highlighter-rouge">larger</code>) ou plus petite (<code class="highlighter-rouge">smaller</code>) que celle de l’élément parent.</p>
+
+<p>Les unités fixes en revanche sont interdites :</p>
+<ul>
+  <li>px (pixel)</li>
+  <li>pt (point)</li>
+  <li>cm (centimètres)</li>
+</ul>
+
+<p>A noter que les styles d’impression (type de média print) ne sont pas concernés par cette recommandation.</p>
+
+<h4 id="garantir-la-lisibilité-des-contenus">Garantir la lisibilité des contenus</h4>
+:ET

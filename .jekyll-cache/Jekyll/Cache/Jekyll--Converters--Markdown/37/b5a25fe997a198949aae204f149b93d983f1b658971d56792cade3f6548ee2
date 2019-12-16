@@ -1,4 +1,4 @@
-I"�<p>Focus sur les couleurs, les contrastes et l’accessibilité.</p>
+I"�<p>Comment utiliser la couleur pour véhiculer de l’information ?</p>
 
 <h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
 <ul>
@@ -9,34 +9,18 @@
 </ul>
 
 <h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
-<h3 id="linformation-ne-doit-pas-être-délivrée-uniquement-par-la-couleur">L’information ne doit pas être délivrée uniquement par la couleur</h3>
-<p>Le Référentiel Général d’Amélioration de l’Accessibilité (RGAA) donne le critère suivant :</p>
+<h3 id="zoom-de-la-taille-de-texte-uniquement">Zoom de la taille de texte uniquement</h3>
+<p>Le RGAA (Référentiel Général d’Amélioration de l’Accessibilité) pose le critère suivant :</p>
 
 <blockquote>
-  <p>Critère 3.1. Dans chaque page web, l’information ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée ?</p>
+  <p>Critère 10.4. Dans chaque page web, le texte reste-t-il lisible lorsque la taille des caractères est augmentée jusqu’à 200%, au moins (hors cas particuliers) ?</p>
 </blockquote>
 
-<p>Concrètement, <strong>on ne doit pas utiliser la couleur comme seul moyen visuel de véhiculer une information, d’indiquer une action, de solliciter une réponse ou de distinguer un élément visuel</strong>.</p>
-
-<p>Les personnes impactées par le non-respect de cette règle sont :</p>
+<p>Ce critère sous-entend trois points :</p>
 <ul>
-  <li>les personnes aveugles et mal-voyantes</li>
-  <li>les personnes âgées qui ont du mal à distinguer les couleurs</li>
-  <li>les personnes utilisant des écrans en texte seul, en couleurs limitées ou monochromes</li>
+  <li>qu’aucune taille minimum de caractères n’est imposée</li>
+  <li>que la taille du texte peut être modifiée en fonction des préférences du l’internaute</li>
+  <li>que le texte doit rester lisible même lorsque sa taille est doublée</li>
 </ul>
-
-<p>Il peut en résulter <strong>une perte d’information</strong> mais également <strong>l’impossibilité d’utiliser certaines fonctionnalités</strong>. Par exemple :</p>
-<ul>
-  <li>
-    <p>dans un formulaire, les champs comportant une erreur sont signalés uniquement par une bordure rouge</p>
-  </li>
-  <li>
-    <p>dans une graphique, les éléments sont différenciés les uns des autres uniquement par la couleur</p>
-  </li>
-</ul>
-
-<p>Un test simple consiste à imaginer les éléments concernés en noir et blanc afin de vérifier que l’ensemble des informations reste compréhensible.</p>
-
-<p>La notice d’AcceDe Web, <a href="https://www.accede-web.com/notices/graphique/3-couleurs/3-2-comprehension-information-absence-de-couleurs/">Assurer la compréhension de l’information même en l’absence de couleur<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>, donne plusieurs exemples à faire et de pas faire, pour mieux comprendre ce critère.</p>
 
 :ET
