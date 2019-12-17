@@ -1,5 +1,5 @@
 ---
-title: Nagranie wideo z mojej prezentacji "Azure DevOps – o co w tym wszystkim chodzi?" ze spotkania społeczności [Koduj w Płocku](https://www.kodujwplocku.pl/).
+title: Azure DevOps – o co w tym wszystkim chodzi?
 author: Janusz Nowak
 layout: post
 categories:
