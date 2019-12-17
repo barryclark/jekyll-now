@@ -1,0 +1,41 @@
+I"�<p>On met en pratique la théorie sur l’agrandissement des caractères.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<h3 id="ajout-dunités-relatives">Ajout d’unités relatives</h3>
+<p>La feuille de styles par défaut du blog comportait des unités en pixels et quelques tailles en <code class="highlighter-rouge">em</code> par-ci par-là. J’ai choisi d’utiliser l’unité relative <code class="highlighter-rouge">rem</code> sur l’ensemble du blog. Pourquoi du <code class="highlighter-rouge">rem</code> et pas du <code class="highlighter-rouge">em</code> ? La principale raison est que j’ai l’habitude d’utiliser cette unité et que je la trouve plus facile à manier car il n’y a pas de question d’héritage à gérer. Mais je ne suis pas anti <code class="highlighter-rouge">em</code> pour autant, je compte bien d’ailleurs utiliser cette unité dans un de mes projets futurs pour mieux me familiariser avec.</p>
+
+<p>J’ai choisi de simplifier le calcul de conversion des <code class="highlighter-rouge">px</code> en <code class="highlighter-rouge">rem</code> en ajoutant la propriété suivante :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>html {
+  font-size: 62.5%; // to facilitate calculations, assuming that the base size is 16px
+  font-size: calc(1em * 0.625);  // IE9-IE11 math fixing
+}
+</code></pre></div></div>
+
+<p>En partant de l’idée que la taille par défaut d’un navigateur est de 16px, 62.5% de ces 16px donnent 10px à l’affichage. Les calculs sont donc grandement facilités :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p {
+  font-size: 1.8rm /* taille équivalente à 18px */
+}
+</code></pre></div></div>
+
+<p>La taille de base d’un navigateur peut ne pas être systématiquement de 16px ou bien l’internaute peut avoir modifier ses préférences pour avoir une taille de base de 24px. Mais cela ne pose pas vraiment de problème puisque dans tous les cas l’ensemble s’adaptera de manière fluide tout en respectant les préférences de l’internaute.</p>
+
+<p>Quant à la ligne <code class="highlighter-rouge">font-size: calc(1em * 0.625);</code>, elle permet de corriger une erreur d’arrondi dans Internet Explorer pour qui une font-size définie à 62.5%  ne vaut pas 10px mais… 9.93px.</p>
+
+<ul>
+  <li>lire l’article <a href="https://disic.github.io/guide-integrateur/11-agrandissement-des-caracteres.html">Agrandissement des caractères<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> du Guide de l’intégrateur</li>
+  <li>lire l’article <a href="https://a11y-guidelines.orange.com/web/exemples/zoom/index.html">Gestion de l’agrandissement des caractères<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’Orange</li>
+  <li>lire les notices <a href="https://www.accede-web.com/notices/html-css-javascript/11-zoom-taille-texte/">Zoom et taille de texte<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+  <li>lire la notice <a href="https://www.accede-web.com/notices/html-css-javascript/11-zoom-taille-texte/11-1-tailles-relatives-font-size/">Utiliser uniquement des tailles relatives (em, %, small, etc.) pour les polices de caractères<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> d’AcceDe Web</li>
+</ul>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+
+<ul>
+  <li>changement en unités relatives avec rem pour les font-sizes mais aussi les espacements</li>
+  <li>line-height sans unités</li>
+  <li>vérification que conteneur max-width ne tronque rien</li>
+  <li>test avec zoom text et zoom graphique</li>
+</ul>
+:ET

@@ -4,7 +4,7 @@
 //
 
 // Layout
-$wrapper: 740px;
+$wrapper: 74rem;
 
 // Colors
 $blue: #3673B0;
@@ -20,12 +20,12 @@ $white: #fff;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$helveticaNeue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
 @mixin desktop {
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 40rem) {
     @content;
   }
 }

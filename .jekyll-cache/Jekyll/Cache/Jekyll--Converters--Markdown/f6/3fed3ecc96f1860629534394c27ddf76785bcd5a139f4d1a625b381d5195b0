@@ -1,0 +1,37 @@
+I"5<p>On met en pratique la théorie sur l’agrandissement des caractères.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<h3 id="ajout-dunités-relatives">Ajout d’unités relatives</h3>
+<p>La feuille de styles par défaut du blog comportait des unités en pixels et quelques tailles en <code class="highlighter-rouge">em</code> par-ci par-là. J’ai choisi d’utiliser l’unité relative <code class="highlighter-rouge">rem</code> sur l’ensemble du blog. Pourquoi du <code class="highlighter-rouge">rem</code> et pas du <code class="highlighter-rouge">em</code> ? La principale raison est que j’ai l’habitude d’utiliser cette unité et que je la trouve plus facile à manier car il n’y a pas de question d’héritage à gérer. Mais je ne suis pas anti <code class="highlighter-rouge">em</code> pour autant, je compte bien d’ailleurs utiliser cette unité dans un de mes projets futurs pour mieux me familiariser avec.</p>
+
+<p>J’ai choisi de simplifier le calcul de conversion des <code class="highlighter-rouge">px</code> en <code class="highlighter-rouge">rem</code> en ajoutant la propriété suivante :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>html {
+  font-size: 62.5%; // to facilitate calculations, assuming that the base size is 16px
+  font-size: calc(1em * 0.625);  // IE9-IE11 math fixing
+}
+</code></pre></div></div>
+
+<p>En partant de l’idée que la taille par défaut d’un navigateur est de 16px, 62.5% de ces 16px donnent 10px à l’affichage. Les calculs sont donc grandement facilités :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p {
+  font-size: 1.8rm /* taille équivalente à 18px */
+}
+</code></pre></div></div>
+
+<p>La taille de base d’un navigateur peut ne pas être systématiquement de 16px ou bien l’internaute peut avoir modifier ses préférences pour avoir une taille de base de 24px. Mais cela ne pose pas vraiment de problème puisque dans tous les cas l’ensemble s’adaptera de manière fluide tout en respectant les préférences de l’internaute.</p>
+
+<p>Quant à la ligne <code class="highlighter-rouge">font-size: calc(1em * 0.625);</code>, elle permet de corriger une erreur d’arrondi dans Internet Explorer pour qui une font-size définie à 62.5%  ne vaut pas 10px mais… 9.93px.</p>
+
+<p>J’ai appliqué l’unité <code class="highlighter-rouge">rem</code> sur l’ensemble des tailles de caractères, mais également sur les <code class="highlighter-rouge">margin</code> et <code class="highlighter-rouge">padding</code>, afin que l’agrandissement des caractères et des espacements soit harmonieux.</p>
+
+<p>J’ai également vérifié que les propriétés <code class="highlighter-rouge">line-height</code> ne comportaient pas d’unités.</p>
+
+<p>Enfin, la taille du conteneur principal du blog est définie avec une largeur maximale de 740px de la manière suivante : <code class="highlighter-rouge">max-width: 74rem;</code>. Je me suis donc assurée que l’agrandissement global et uniquement du texte ne posait pas de souci avec cette propriété.</p>
+
+<h3 id="tests-avec-le-zoom-du-navigateur">Tests avec le zoom du navigateur</h3>
+<p>L’agrandissement à 200%, uniquement du texte, ne pose pas de problème particulier. Le contenu reste lisible. Idem pour le test avec le zoom graphique.</p>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<p>Un rappel très important et intéressant : <strong>les media-queries sont basées sur les préférences utilisateur, et non pas l’élément <code class="highlighter-rouge">html</code></strong>.</p>
+:ET

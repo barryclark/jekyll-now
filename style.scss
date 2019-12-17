@@ -15,20 +15,27 @@
 /**************/
 
 html {
-  font-size: 100%;
+  font-size: 62.5%; // to facilitate calculations, assuming that the base size is 16px
+  font-size: calc(1em * 0.625);  // IE9-IE11 math fixing
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+	background-color: $white;
   color: $darkGray;
+  font-family: $helvetica;
+  font-size: 1.8rem;
+  line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $darkerGray;
+  font-family: $helveticaNeue;
   font-weight: bold;
-
   line-height: 1.4;
   margin: 1.8em 0 10px;
   padding: 0;
@@ -39,32 +46,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 3rem;
+
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 18px;
   color: $gray;
+  font-size: 1.8rem;
 }
 
 p {
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+ul,
+ol {
+  margin: 1.5rem 0;
+  padding-left: 3rem;
 }
 
 ul {
@@ -75,19 +84,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -106,24 +121,25 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
+  background-color: $lightGray;
   color: $black;
-  background: $lightGray;
 }
+
 ::selection {
-  color: $black;
   background: $lightGray;
+  color: $black;
 }
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
 }
 
-.clearfix:after {
-    clear: both;
+.clearfix::after {
+  clear: both;
 }
 
 // Links
@@ -133,7 +149,7 @@ a {
   text-decoration: none;
 
   svg {
-    margin-left: 3px;
+    margin-left: .3rem;
 
     path#stroke-ext {
       stroke: $blue;
@@ -169,7 +185,7 @@ a {
 // Header
 .header {
   border-bottom: 1px solid $lightGray;
-  margin: 0 auto 50px;
+  margin: 0 auto 5rem;
   max-width: $wrapper;
   position: relative; // to position skip-link
   text-align: center;
@@ -182,11 +198,11 @@ a {
   }
 
   &__info {
-    padding: 20px 0;
+    padding: 2rem 0;
   }
 
   &__nav {
-    margin-top: 10px;
+    margin-top: 1rem;
 
     @include desktop {
       margin-top: 0;
@@ -197,10 +213,10 @@ a {
 // Site avatar and info
 .site-avatar {
   display: block;
-  height: 70px;
+  height: 7rem;
   margin: 0 auto;
   vertical-align: middle;
-  width: 70px;
+  width: 7rem;
 
   &:hover, &:active {
     text-decoration: none;
@@ -208,7 +224,7 @@ a {
 
   @include desktop {
     display: inline-block;
-    margin: 15px;
+    margin: 1.5rem;
   }
 
   img {
@@ -227,9 +243,9 @@ a {
   &__name {
     color: $darkGray;
     font-family: $helveticaNeue;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     margin: 0;
 
     a {
@@ -246,11 +262,11 @@ a {
 
   &__description {
     color: $gray;
-    font-size: 16px;
-    margin: 3px 0;
+    font-size: 1.6rem;
+    margin: .3rem 0;
 
     @include desktop {
-      margin: -5px 0 0 0;
+      margin: -.5rem 0  0;
     }
   }
 }
@@ -263,10 +279,13 @@ a {
 
   &__item {
     display: inline-block;
-    margin-left: 20px;
+
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
 
     @include desktop {
-      margin: 0 10px;
+      margin: 0 1rem;
     }
 
     &--active {
@@ -277,9 +296,9 @@ a {
   &__link {
     color: $darkGray;
     font-family: $helveticaNeue;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
 
     &:visited {
       color: inherit;
@@ -291,7 +310,7 @@ a {
     }
 
     @include desktop {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   }
 }
@@ -301,10 +320,10 @@ a {
   background: #fff;
   color: $blue;
   display: inline-block;
-  font-size: 12px;
+  font-size: 1.2rem;
   left: -99999px;
   position: absolute;
-  top: 5px;
+  top: .5rem;
   z-index: 100;
 
   &:focus {
@@ -322,13 +341,13 @@ a {
 .main {
   margin: 0 auto;
   max-width: $wrapper;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 .posts {
   & > .post-item:not(:last-child) {
     border-bottom: 1px solid $lightGray;
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
   }
 }
 
@@ -350,33 +369,33 @@ a {
 
   &__more {
     color: $blue;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
   }
 }
 
 .breadcrumbs {
-  font-size: 12px;
+  font-size: 1.2rem;
   margin: 0;
 }
 
 .post {
   &__footer {
-    padding: 20px 0;
+    padding: 2rem 0;
   }
 
   blockquote {
-    margin: 1.8em .8em;
+    margin: 1.8rem .8rem;
     border-left: 2px solid $gray;
-    padding: 0.1em 1em;
+    padding: 1rem 0 1rem 2rem;
     color: $gray;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-style: italic;
   }
 
   .comments {
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 }
 
@@ -386,8 +405,8 @@ a {
   background-color: $lightGray;
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
-  margin-top: 50px;
-  padding: 20px 0;
+  margin-top: 5rem;
+  padding: 2rem 0;
   text-align: center;
 
   &__inner {
@@ -409,13 +428,13 @@ a {
     display: inline-block;
 
     &:not(:last-child) {
-      margin-right: 8px;
+      margin-right: .8rem;
     }
   }
 
   &__icon {
-    height: 35px;
-    width: 35px;
+    height: 3.5rem;
+    width: 3.5rem;
   }
 }
 
@@ -426,7 +445,7 @@ table {
 		background-color: $lightGray;
 		th {
 			border: 1px solid $darkGray;
-			padding: 10px 0;
+			padding: 1rem 0;
 		}
 	}
 	tr {
@@ -434,7 +453,7 @@ table {
 	}
 	td {
 		border: 1px solid $darkGray;
-		padding: 5px;
+		padding: .5rem;
 	}
 }
 

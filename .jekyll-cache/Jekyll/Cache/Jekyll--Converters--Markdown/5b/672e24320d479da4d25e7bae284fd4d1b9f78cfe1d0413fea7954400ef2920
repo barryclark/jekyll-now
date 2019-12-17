@@ -1,0 +1,49 @@
+I"�<p>On met en pratique la théorie sur l’agrandissement des caractères.</p>
+
+<h2 id="ce-que-jai-fait-">Ce que j’ai fait :</h2>
+<h3 id="ajout-dunités-relatives">Ajout d’unités relatives</h3>
+<p>La feuille de styles par défaut du blog comportait des unités en pixels et quelques tailles en <code class="highlighter-rouge">em</code> par-ci par-là. J’ai choisi d’utiliser l’unité relative <code class="highlighter-rouge">rem</code> sur l’ensemble du blog. Pourquoi du <code class="highlighter-rouge">rem</code> et pas du <code class="highlighter-rouge">em</code> ? La principale raison est que j’ai l’habitude d’utiliser cette unité et que je la trouve plus facile à manier car il n’y a pas de question d’héritage à gérer. Mais je ne suis pas anti <code class="highlighter-rouge">em</code> pour autant, je compte bien d’ailleurs utiliser cette unité dans un de mes projets futurs pour mieux me familiariser avec.</p>
+
+<p>J’ai choisi de simplifier le calcul de conversion des <code class="highlighter-rouge">px</code> en <code class="highlighter-rouge">rem</code> en ajoutant la propriété suivante :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>html {
+  font-size: 62.5%; // to facilitate calculations, assuming that the base size is 16px
+  font-size: calc(1em * 0.625);  // IE9-IE11 math fixing
+}
+</code></pre></div></div>
+
+<p>En partant de l’idée que la taille par défaut d’un navigateur est de 16px, 62.5% de ces 16px donnent 10px à l’affichage. Les calculs sont donc grandement facilités :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p {
+  font-size: 1.8rm /* taille équivalente à 18px */
+}
+</code></pre></div></div>
+
+<p>La taille de base d’un navigateur peut ne pas être systématiquement de 16px ou bien l’internaute peut avoir modifier ses préférences pour avoir une taille de base de 24px. Mais cela ne pose pas vraiment de problème puisque dans tous les cas l’ensemble s’adaptera de manière fluide tout en respectant les préférences de l’internaute.</p>
+
+<p>Quant à la ligne <code class="highlighter-rouge">font-size: calc(1em * 0.625);</code>, elle permet de corriger une erreur d’arrondi dans Internet Explorer pour qui une font-size définie à 62.5%  ne vaut pas 10px mais… 9.93px.</p>
+
+<p>J’ai appliqué l’unité <code class="highlighter-rouge">rem</code> sur l’ensemble des tailles de caractères, mais également sur les <code class="highlighter-rouge">margin</code> et <code class="highlighter-rouge">padding</code>, afin que l’agrandissement des caractères et des espacements soit harmonieux.</p>
+
+<p>J’ai également vérifié que les propriétés <code class="highlighter-rouge">line-height</code> ne comportaient pas d’unités.</p>
+
+<p>Enfin, la taille du conteneur principal du blog est définie avec une largeur maximale de 740px de la manière suivante : <code class="highlighter-rouge">max-width: 74rem;</code>. Je me suis donc assurée que l’agrandissement global et uniquement du texte ne posait pas de souci avec cette propriété.</p>
+
+<h3 id="tests-avec-le-zoom-du-navigateur">Tests avec le zoom du navigateur</h3>
+<p>L’agrandissement à 200%, uniquement du texte, ne pose pas de problème particulier. Le contenu reste lisible. Idem pour le test avec le zoom graphique.</p>
+
+<h2 id="ce-que-jai-appris">Ce que j’ai appris</h2>
+<p>Un rappel très important et intéressant : <strong>les media-queries sont basées sur les préférences utilisateur, et non pas l’élément <code class="highlighter-rouge">html</code></strong>. <a href="http://codepen.io/nico3333fr/pen/KzYvGb/">Sur le Codepen suivant<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> (tiré de l’excellent article de Nicolas Hoffmann, <a href="https://www.nicolas-hoffmann.net/source/1693-Les-media-queries-et-les-preferences-utilisateurs.html">Les media-queries et les préférences utilisateurs<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a>), vous pouvez constater le comportement strictement identique du media-query, qu’il y ait un reset de 62.5% dans l’élément <code class="highlighter-rouge">html</code> ou non.</p>
+
+<p>Cela signifie donc que pour mon media-query précédemment défini avec un <code class="highlighter-rouge">min-width: 640px</code>, l’équivalent en <code class="highlighter-rouge">rem</code> sera non pas <code class="highlighter-rouge">min-width: 64rem</code> mais <code class="highlighter-rouge">min-width: 40rem</code>. Il faut en effet bien penser à diviser la taille par 16px, soit la taille de référence choisie pour nos calculs. Autrement dit, on aura bien :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@mixin desktop {
+  @media screen and (min-width: 40rem) {
+    // 640px / 16 = 40rem
+    @content;
+  }
+}
+</code></pre></div></div>
+
+<p>Dans son article en date de mai 2016 et mis à jour en mars 2018, Nicolas Hoffmann évoque plusieurs problèmes de support des <code class="highlighter-rouge">rem</code> dans les medias-queries, notamment sur Firefox et Safari qui ne déclenchent pas le breakpoint au bon moment. Le problème a depuis été résolu sur Firefox et cela semble également être le cas sur Safari puisque <a href="https://caniuse.com/#search=rem" lang="en" hreflang="en">le site Can I Use<span class="sr-only">(lien externe)</span><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="12" height="12" aria-hidden="true"><path id="stroke-ext" fill="#fff" stroke="#06c" d="M1.5 4.5h6v6h-6z"></path><path id="fill-ext" d="M4 2.5l1 1 .25.75-2.5 2.25L5.5 9.25l2.25-2.5.75.25 1 1L11 6.5V1H5.5L4 2.5z" fill="#06f" fill-rule="evenodd"></path><path d="M6 2h4v4l-.5.75-1.25-2-3 3.25L4 6.75l3.25-3-2-1.25L6 2z" fill="#fff" fill-rule="evenodd"></path></svg></a> annonce un support total de l’unité <code class="highlighter-rouge">rem</code> et ne signale un souci de compatibilité avec les medias-queries que pour les versions iOS 5.0 et 5.1.</p>
+:ET
