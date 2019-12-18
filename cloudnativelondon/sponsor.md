@@ -39,7 +39,7 @@ As pizza and beer are more than any individual contribution, we order catering o
 
 #### Can we bring swag and a banner?
 
-You can display a banner inside the room, just bring it on the evening. Please ship swag to this address 1-2 weeks in advance:
+You can display a banner inside the room, just bring it on the evening. Please ship swag to this address a week in advance and let us know when to expect arrival:
 
 > Sainsbury's Courier Desk  
 > c/o Simon Perry, Cloud Native London  
