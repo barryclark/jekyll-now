@@ -5,11 +5,6 @@ permalink: /events/
 description: "Cheryl Hung's upcoming talks at global conferences and events."
 ---
 
-### 2019
-
-December 11 - 14: [Kubernetes Forums Sydney](https://events19.linuxfoundation.org/events/kubernetes-forum-sydney-2019/)
-* **Keynote - Cloud Native, Past, Present and Future**
-
 ### 2020
 
 January 30: [Sustain 2020](https://opencollective.com/sustainoss/events/sustain-2020-5874aeeb), Brussels 
