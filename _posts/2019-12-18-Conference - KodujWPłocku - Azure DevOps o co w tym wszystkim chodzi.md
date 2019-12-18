@@ -4,6 +4,7 @@ author: Janusz Nowak
 layout: post
 categories:
   - Azure DevOps
+image: /wp-content/uploads/2019/12/Koduj_w_Płocku_2019_12.png
 tags:
   - ALM
   - Azure Artifacts
