@@ -30,7 +30,7 @@ Nagranie wideo z mojej prezentacji "Azure DevOps – o co w tym wszystkim chodzi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eY46HS6dwpk?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Duże podziękowania dla [orgnzatorów]https://www.kodujwplocku.pl/) za zorganizowanie spotkania dla społeczności.
+Duże podziękowania dla [orgnzatorów](https://www.kodujwplocku.pl/) za zorganizowanie spotkania dla społeczności.
  - [Michał Szafrański](https://www.facebook.com/people/Micha%C5%82-Szafra%C5%84ski/1837997061)
 
 Links: 
