@@ -9,6 +9,8 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 January 30: [Sustain 2020](https://opencollective.com/sustainoss/events/sustain-2020-5874aeeb), Brussels 
 
+February 24-27: [MWC](https://www.mwcbarcelona.com/), Barcelona
+
 February 27: [Cloud Native Prague](https://www.meetup.com/Cloud-Native-Prague/), Czech Republic
 
 March 5: #21digital, Cologne, Germany
