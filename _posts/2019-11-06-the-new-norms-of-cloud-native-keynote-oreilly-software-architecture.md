@@ -5,6 +5,7 @@ description: "Understand how the CNCF and the cloud native community work togeth
 location: Berlin, Germany
 image: /images/2019-11-6-the-new-norms-of-cloud-native-keynote-oreilly-software-architecture.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/AeHCnLlt5U0Qnc
+video: https://www.youtube.com/embed/5F33v0Q2yik
 twitter_moment: https://twitter.com/i/moments/1206098745953112070
 tags:
   - Slides
