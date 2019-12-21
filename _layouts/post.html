@@ -18,36 +18,47 @@ layout: default
 
 <hr>
 
-{% if page.image and page.hide_image != true %}
-  <img src="{{ page.image }}"><p>
-{% endif %}
-
 {% if page.video %}
   <div class="video-wrapper">
       <iframe src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
   </div>
-{% endif %}
-
-{% if site.data.settings.post_navigation.postion contains 'top' %}
-  {% include post-navigation.html %}
-{% endif %}
-
-{{ content }}
-
-<p>
-
-{% if page.twitter_moment %}
-  <a class="twitter-moment" href="{{ page.twitter_moment }}">Cheryl Hung at {{ page.title }}</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-{% endif %}
-
-{% if page.slides %}
+{% elsif page.slides %}
   <div class="slides-wrapper">
     <iframe src="{{ page.slides }}" frameborder="0" allowfullscreen></iframe>
   </div>
+{% elsif page.image and page.hide_image != true %}
+  <img src="{{ page.image }}"><p>
 {% endif %}
 
-{% if page.hacker_news %}
-  <p><a href="{{ page.hacker_news }}" class="fa-hackernews">{{ site.data.settings.hacker_news_prompt }}</a></p>
+<p>
+
+{% comment %}
+  Use tab controls for pages with slides (ie not meetup pages)
+{% endcomment %}
+
+{% if page.slides %}
+
+<div class="hidden" id="foo__source1" markdown="0">
+  {{ content }}
+</div>
+
+<div class="hidden" id="foo__source2" markdown="0">
+  <div class="slides-wrapper">
+    <iframe src="{{ page.slides }}" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+{% include tabcontrol.html bodyclass="fullborder" tabs=page.tabs id="foo" %}
+
+{% else %}
+
+{{ content }}
+
+{% endif %}
+
+
+{% if page.twitter_moment %}
+  <a class="twitter-moment" href="{{ page.twitter_moment }}">Cheryl Hung at {{ page.title }}</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 {% endif %}
 
 <hr>

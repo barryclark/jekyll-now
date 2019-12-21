@@ -27,9 +27,30 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+  <script>
+    // https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/
+    $(document).ready(function() {
+
+      $('div.tabcontrol.body').each(function() {
+          $(this).html($('#' + $(this).data('defaultsource')).html());
+      });
+
+      // handle click on tabs
+      $('li.tabcontrol.tab').click(function() {
+          $('#' + $(this).data('target')).html( $('#' + $(this).data('source')).html());
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+      });
+    });
+
+  </script>
+
+
   <!-- Google Analytics -->
   {% include google-analytics.html %}
-  
+
   <!-- Use Jekyll SEO plugin -->
   {% seo title=false %}
 

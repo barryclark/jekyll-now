@@ -50,6 +50,24 @@ url: https://www.oicheryl.com
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      tabs:
+          tab1:
+              name: foo
+              title: Summary
+              source: source1
+              active: 1
+          tab2:
+              name: foo
+              title: Slides
+              source: source2
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
