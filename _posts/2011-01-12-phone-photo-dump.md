@@ -1,0 +1,66 @@
+---
+id: 611
+title: Phone photo dump
+date: 2011-01-12T05:05:07+00:00
+author: happyseizure
+layout: post
+guid: http://happyseizure.wordpress.com/?p=611
+permalink: /2011/01/phone-photo-dump/
+categories:
+  - Miscellaneous
+---
+A bunch from my phone I had forgotten about.
+
+<div style="width: 394px" class="wp-caption aligncenter">
+  <a href="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/26102010041.jpg"><img class="  " title="orlando" src="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/26102010041.jpg" alt="" width="384" height="288" /></a>
+  
+  <p class="wp-caption-text">
+    Some upside-down place in Orlando
+  </p>
+</div>
+
+<div style="width: 394px" class="wp-caption aligncenter">
+  <a href="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/30102010048.jpg"><img title="Fest" src="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/30102010048.jpg" alt="" width="384" height="288" /></a>
+  
+  <p class="wp-caption-text">
+    Mel and Gaby
+  </p>
+</div>
+
+<p style="text-align:center;">
+  &nbsp;
+</p>
+
+<div style="width: 394px" class="wp-caption aligncenter">
+  <a href="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/30102010050.jpg"><img class="  " title="PBR" src="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/30102010050.jpg" alt="" width="384" height="288" /></a>
+  
+  <p class="wp-caption-text">
+    PBR. All class.
+  </p>
+</div>
+
+<div style="width: 394px" class="wp-caption aligncenter">
+  <a href="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/30102010051.jpg"><img class="   " title="Strike ANywhere" src="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/30102010051.jpg" alt="" width="384" height="288" /></a>
+  
+  <p class="wp-caption-text">
+    Strike Anywhere acoustic
+  </p>
+</div>
+
+<div style="width: 370px" class="wp-caption aligncenter">
+  <a href="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/31102010058.jpg"><img class=" " title="bender" src="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/31102010058.jpg" alt="" width="360" height="480" /></a>
+  
+  <p class="wp-caption-text">
+    Guy dressed as Bender from Futurama for Halloween
+  </p>
+</div>
+
+<div style="width: 394px" class="wp-caption aligncenter">
+  <a href="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/05122010063.jpg"><img class="  " title="fridge" src="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/05122010063.jpg" alt="" width="384" height="288" /></a>
+  
+  <p class="wp-caption-text">
+    My work fridge
+  </p>
+</div>
+
+[<img class="aligncenter" title="snow" src="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/17122010065.jpg" alt="" width="384" height="288" />](http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/17122010065.jpg)

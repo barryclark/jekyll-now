@@ -1,0 +1,22 @@
+---
+id: 598
+title: I scored some crack
+date: 2011-01-05T06:37:54+00:00
+author: happyseizure
+layout: post
+guid: http://happyseizure.wordpress.com/?p=598
+permalink: /2011/01/i-scored-some-crack/
+categories:
+  - Miscellaneous
+---
+<p style="text-align:center;">
+  <a href="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/IMG_3829.jpg"><img class="aligncenter" title="snowboard crack" src="http://img.photobucket.com/albums/v236/mikezero/north%20america%202010%20and%20beyond/IMG_3829.jpg" alt="" width="480" height="360" /></a>
+</p>
+
+> <p style="text-align:left;">
+>   Repair Shop Guy: Oooh that&#8217;s not good.<br /> Me: So what exactly does that mean?<br /> RSG:  Well, if I were you, I&#8217;d take it back to where I got it&#8230;
+> </p>
+
+<p style="text-align:left;">
+  I got in contact with Burton and I can apparently send it off to Quebec to get inspected for a warranty claim. I already miss riding my baby. Sad panda.
+</p>
