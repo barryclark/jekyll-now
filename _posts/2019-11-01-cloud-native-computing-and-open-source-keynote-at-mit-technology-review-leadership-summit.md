@@ -5,6 +5,7 @@ description: "Read about why organisations should engage with the cloud native c
 location: Singapore
 image: /images/2019-11-1-cloud-native-computing-and-open-source-keynote-at-mit-technology-review-leadership-summit-3.jpg
 hide_image: true
+video: https://www.youtube.com/embed/IB0sVawjM68
 slides: //www.slideshare.net/slideshow/embed_code/key/oV1PFk39Q1EA3W
 tags:
   - Slides

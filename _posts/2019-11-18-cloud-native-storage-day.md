@@ -11,9 +11,9 @@ tags:
   - "2019"
 ---
 
-During this panel, I discussed operational challenges of cloud native storage at Cloud Native Storage Day, a Day Zero event at KubeCon CloudNativeCon San Diego.
+During this panel, I discuss operational challenges of cloud native storage at Cloud Native Storage Day, a Day Zero event at KubeCon CloudNativeCon San Diego.
 
-The four panellists are
+The three panellists are
 * Michael Courcy, Sophra Steria
 * Anand Ozarkar, Equinix
 * Vybava Ramadoss, Microsoft
