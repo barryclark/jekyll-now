@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Curriculum
-permalink: /pages/curriculum/toc
+title: Study
+permalink: /pages/study/toc
 ---
 
 
-{% for item in site.data.curriculum.toc %}
+{% for item in site.data.study.toc %}
 <h3>{{ item.title }}</h3>
 <ul>
 {% for entry in item.subfolderitems %}
