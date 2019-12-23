@@ -15,6 +15,11 @@ Do check it out , it has an elaborate explanation of each step. I followed each 
 It's a very low effort dish and if you are bachelor/bachelorette it is something you would wanna include in your easy to make
 dish. So go ahead,try out the recepie link and let me know how it goes.
 
+{% google_photos https://photos.app.goo.gl/SmQxyUvL39dgtUXj6  1200 %}
+
+{% google_photos https://photos.app.goo.gl/kbWWcSDPc151e4va6 1200 %}
+
+
 Thank to you, @dasanna!! Keep doing the awesome work you do!
 
 Don't Stay Hungry,Keep Cooking!!
