@@ -16,48 +16,52 @@
   </head>
 
   <body>
-    <div style="width:100%; height:auto;">
-      <div style="float:left; width:70%;height:auto;">
-        <div class="wrapper-masthead">
-          <div class="container">
-            <header class="masthead clearfix">
-              <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <!-- all content division -->
+    <div style="width:100%; height:100%">
 
-              <div class="site-info">
-                <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                <p class="site-description">{{ site.description }}</p>
-              </div>
+      {% comment %} header division with nav {% endcomment %}
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-              <nav>
-                <a href="{{ site.baseurl }}/">Blog</a>
-                <a href="{{ site.baseurl }}/about">About</a>
-                <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
-              </nav>
-            </header>
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+
+            <nav>
+              <a href="{{ site.baseurl }}/">Blog</a>
+              <a href="{{ site.baseurl }}/about">About</a>
+              <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
+            </nav>
+          </header>
+        </div>
+      </div>
+
+      {% comment %} contents and aside for category nav {% endcomment %}
+      <div style="width:100%; height:auto;">
+        <div style="float:left; width:70%;height:auto;">
+          <div id="main" role="main" class="container">
+            {{ content }}
           </div>
         </div>
-
-        <div id="main" role="main" class="container">
-          {{ content }}
+        
+        <div style="float:right; width:30%;height:auto;">
+          <hr style="width:100%; border:solid 2px gray">
         </div>
       </div>
 
-      <div style="float:right; width:30%;height:auto;">
-        <hr style="width:100%; border:solid 2px gray">
-      </div>
-
-      
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+      {% comment %} footer {% endcomment %}
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            {% include svg-icons.html %}
+          </footer>
+        </div>
       </div>
     </div>
     
-
     {% include analytics.html %}
   </body>
 </html>
