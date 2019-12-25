@@ -11,7 +11,7 @@ permalink: /about
     - javaㅤㅤ : ■■■■■□□□□□
     - pythonㅤ: ■■■■□□□□□□
     - node.jsㅤ: ■■■■■■□□□□
-    - scalaㅤ  : ■■□□□□□□□□
+    - scalaㅤㅤ: ■■□□□□□□□□
 
 <br>
 
