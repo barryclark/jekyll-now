@@ -3,7 +3,7 @@ layout: post
 title: "Want to donate a project to the CNCF? Here's how - KubeCon CloudNativeCon NA"
 description: "How projects are chosen to enter the CNCF from Cheryl Hung, CNCF Director of Ecosystem."
 location: San Diego, USA
-image: /images/2019-11-18-want-to-donate-a-project-to-the-cncf-heres-how-kubecon-cloudnativecon-san-diego.jpg
+image: https://pbs.twimg.com/media/EJs4CVXVUAAh64o?format=jpg&name=medium
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/3jaPXOh9ihl9Rs
 twitter_moment: https://twitter.com/i/moments/1206097901371322369

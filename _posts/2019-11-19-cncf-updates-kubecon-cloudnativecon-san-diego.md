@@ -3,7 +3,7 @@ layout: post
 title: "CNCF Updates - Keynote, KubeCon CloudNativeCon San Diego"
 description: "Read about the latest CNCF updates from Cheryl Hung, CNCF Director of Ecosystem."
 location: San Diego, USA
-image: /images/2019-11-19-cncf-updates-kubecon-cloudnativecon-san-diego.jpg
+image: https://pbs.twimg.com/media/EJwO-3iUcAArWVL?format=jpg&name=large
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/p5Iphu2fBUD1eJ
 twitter_moment: https://twitter.com/i/moments/1197292262222229504

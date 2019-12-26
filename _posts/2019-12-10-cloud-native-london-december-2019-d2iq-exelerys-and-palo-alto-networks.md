@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Cloud Native London December 2019 - D2iQ, EXELERYS and Palo Alto Networks"
-description: "Read the roundup from D2iQ, EXELERYS and Palo Alto Networks at the Cloud Native London meetup in December 2019l."
+description: "Read the roundup from D2iQ, EXELERYS and Palo Alto Networks at the Cloud Native London meetup in December 2019."
 location: London, UK
 image: /images/IMG_20191210_195229.jpg
+video: https://www.youtube.com/embed/KauKPpej0Ug
 tags:
   - Photos
   - Video

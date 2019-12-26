@@ -63,7 +63,7 @@ related_posts:
   # post_filter: favourite
 
   # Maximum number of related posts to show below each post.
-  count: 2
+  count: 3
 
   # Whether the content of the post_navigation should be excluded from the
   # related posts.
