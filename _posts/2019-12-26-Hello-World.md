@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Post #1
+title: P1
 ---
 
 Hello and wëlcum to my blog.
