@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kubernetes and Cloud Native: Past, Present and Future - Keynote at Kubernetes Forum Seoul"
+title: "Kubernetes and Cloud Native: Past, Present and Future - Keynote, K8s Forum Seoul"
 description: "Read about cloud native trends in 2019 from Cheryl Hung, CNCF Director of Ecosystem."
 location: Seoul, South Korea
 image: /images/2019-12-08-kubernetes-and-cloud-native-past-present-and-future-keynote-at-kubernetes-forum-seoul-2.jpg

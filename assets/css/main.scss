@@ -3,7 +3,7 @@
 # only main files contain this front matter, not partials.
 ---
 
-$darkest-content-color: rgba(45,45,45,0.98);
+$darkest-content-color: rgb(51,51,51);
 $darker-content-color: #203344 !default;
 $light-content-color: #456d93 !default;
 $lighter-content-color: #9bb6d0 !default;
@@ -135,6 +135,7 @@ nav.menu-content a {
 
 article.posts {
   margin-bottom: 0.25rem;
+  background-color: white;
 }
 
 article.box {
@@ -293,6 +294,12 @@ button.gocardless {
   .container {width: 90vw;}
 }
 
+section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 692px;
+}
+
 .masthead {
   margin-bottom: 3rem;
 }
@@ -331,7 +338,7 @@ ul.tabcontrol.tabs li.tab {
     border-bottom: none;
     box-sizing: border-box;
     height: 24px;
-    background: white;
+    background: $background-color;
     margin-right: 2px;
     font-family: $body-font-family !important;
     font-size: 10pt !important;

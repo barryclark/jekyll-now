@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<section>
+
 {% include post-metadata.html page=page %}
 
 {% for category in page.categories limit: 1 %}
@@ -75,3 +77,5 @@ layout: default
   {% include disqus.html %}
 {% endif %}
 </footer>
+
+</section>
