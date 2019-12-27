@@ -12,9 +12,9 @@ tags:
   - "2019"
 ---
 
-For our Xmas meetup, Cloud Native London December started off with some delicious food (hope you enjoyed the Lebanese this year!), followed by three great talks. [Catch up on the talks and video of the whole evening here](https://drive.google.com/open?id=1jxA2X0pFS0pmtHUnsZvnCcJhdHR_X6MV)!
+For our Xmas meetup, Cloud Native London December started off with some delicious food (hope you enjoyed the Lebanese this year!), followed by three great talks. Our fantastic speakers for the evening were Matt Jarvis from D2iQ, Jesus Escolar from EXELERYS and Ashley Ward from Palo Alto Networks.
 
-Our fantastic speakers for the evening were Matt Jarvis from D2iQ, Jesus Escolar from EXELERYS and Ashley Ward from Palo Alto Networks. Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com), [Palo Alto Networks](https://www.paloaltonetworks.com/) and [OVH](https://www.ovh.co.uk).
+Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com), [Palo Alto Networks](https://www.paloaltonetworks.com/) and [OVH](https://www.ovh.co.uk).
 
 
 ![Matt Jarvis](https://pbs.twimg.com/media/ELcuTfKW4AEAch-?format=jpg)
