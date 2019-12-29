@@ -47,6 +47,9 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
+# In other words, if you are using a user repository, then 
+# simply have a baseurl with an empty string i.e. "" is what you will 
+# want to do. 
 baseurl: ""
 
 #
