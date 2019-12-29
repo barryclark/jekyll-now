@@ -6,7 +6,7 @@ permalink: /pages/study/zen/gateless-case2/
 
 # Case \#2: Paichang's Fox
 
-Traduction: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/search?q=robert+aitken+gateless+barrier).
+Translation: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/search?q=robert+aitken+gateless+barrier).
 
 > ### The Case
 >
@@ -39,23 +39,56 @@ Traduction: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/s
 > Not evading, not falling--  
 > a thousand mistakes, ten thousand mistakes.
 
+## Notes
+
+Case 2 of Gateless Barrier is also Case 8 of Book of Serenity, and Case 102 of Dogen's Shinji Shobogenzo.
+
+_"Such a person does not evade the law of cause and effect"_ is elsewhere rendered as:
+- _"The law of cause and effect cannot be obscured."_ (Yamada Roshi, The Gateless Gate, 19XX)
+- _"He is not blind to cause and effect."_ (Thomas Cleary, Book of Serenity, Case 8, 19XX)
+
+Book of Serenity Case 8 has some comments/notes/interjections following the case. Here's two:
+- [commenting _"The old man was enlightened at these words"_]: _"Fox drool is still there."_
+- _"For five hundred lives he couldn't do a thing - If he had known what would happen today, he'd regret not being careful to begin with."_
+
+# Readings
+
+When I read cases, I tend to take notes, usually thoughts that are prompted by reading the text, or coming later remembering the text, or even just unprompted but related.  
+In the following, I organized my notes in "reads": I related the notes to the aspect of the text that prompted them, and organized them in topics.
+
 ## A read about being wrong all the time
 
-> Paichang asked him, "__Who are you__, standing here before me?"  
+> One day, however, he remained behind. Paichang __asked him__,
+
+(Hu ho...)
+
+> "__Who are you__, standing here before me?"  
 
 (Don't reply!)
 
-> The old man __replied__ [...]
+> The old man __replied__, "I am not a human being...
 
 (Oh no, you did!)
 
+> The old man replied, "__I__ am not a human being...
+
+(starting with "I", not a great start for an answer)
+
 Old Paichang's very act of replying indicates he is indeed the object of the law of cause and effect. Does old Paichang still thinks of himself as a self?
 
-> One day __a monk asked me__, 'Does an enlightened person fall under the law of cause and effect or not?' I __replied__, 'Such a person does not fall under the law of cause and effect.'
+> One day __a monk asked me__, 'Does an enlightened person fall under the law of cause and effect or not?' ...
+
+Don't tell me you replied to that?
+
+> ... __I replied__ ...
+
+Oh no, you did it again!
+
+Someone asking you a question does not mean you have to answer.
+
+> 'Such a person does not fall under the law of cause and effect.'
 
 A wrong question leads to a wrong answer.
-
-It's not because someone asks you a question that you have to answer.
 
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
 
@@ -67,7 +100,7 @@ It seems better to just not answer anything at all.
 
 > After the meal, Paichang led the monks to the foot of a rock on the far side of the mountain. And there, with his staff, he poked out the body of a dead fox. He then performed the ceremony of cremation.
 
-A ceremony is maybe the best answer to the question asked to both Paichangs. Ritual and art, is that the answer?
+Maybe, a ceremony is the best answer to the question asked to both Paichangs. Ritual and art, is that the answer?
 
 ## A read about doctrines
 
@@ -77,7 +110,7 @@ I bet the other side of __this__ mountain is facing north.
 
 > After the meal, Paichang led the monks to the foot of a rock __on the far side of the mountain__. And there, with his staff, he poked out the body of a dead fox. He then __performed the ceremony of cremation__.
 
-Old Paichang does not belong to the same side of the mountain, still he deserves to receive cremation owed to a priest.
+Old Paichang does not belong to the same side of the mountain, still he deserves to receive the ritual owed to a priest.
 
 > "In the far distant past, in the time of Kasyapa Buddha, I was head priest at this mountain. One day a monk asked me, 'Does an enlightened person fall under the law of cause and effect or not?' I replied, '__Such a person does not fall under the law of cause and effect.__' With this I was __reborn five hundred times__ as a fox. Please say a turning word for me and release me from the body of a fox."
 >
@@ -97,15 +130,20 @@ There is a contradiction in the view of old Paichang. The law of cause and effec
 >
 > Paichang said, "Just step here closer, and I'll tell you." Huang-po went up to Paichang and __slapped him in the face__.
 
-Sounds like we want Paichang to be true when he says _"such a person does not evade"_ karmic law. But it seems that he is as wrong as Old Paichang. Sudden enlightenment is not more true, as a view, than gradual. Because of that, Paichang gets a slap in the face.
+We want Paichang to be true when he says _"such a person does not evade"_ karmic law. That should be the right answer, according to this account, right? But he is as wrong as Old Paichang. Sudden enlightenment is not more true, as a view, than gradual. Because of that, Paichang gets a slap in the face.
 
-If I can become pragamatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. So sudden enlightenment is maybe less wrong than gradual enlightenment. Still, Huang-po's slap suggest __none of those answers are actually true__.
+If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. So sudden enlightenment is maybe less wrong than gradual enlightenment. Still, Huang-po's slap suggest __none of those answers are actually right__.
 
-Gradual = Sudden + Karma ?  
-Gradual is actually Sudden, with the Self believing there was a gradual process at play.  
-Sudden says the law cannot be obscured, evaded, which brings us back to wonder when we'll exit it, back to Gradual.
+Gradual.E = Sudden.E + Karma ?  
+Gradual.E is actually Sudden.E, with the Self believing there was a gradual process at play. You get enlightened suddenly, but your view makes you think you had to wait such a long time for it to happen.  
+Sudden.E says the law cannot be obscured, evaded, which brings us back to wonder when we'll exit it, back to Gradual.E.
 
-## A read about turning
+_Karma_ is the law of cause and effect, and it also is the phenomena it governs. The law and the objects of the law are "one". A single cause/effect relationship is "one with" the continuum.  
+Like an instant in a duration.  
+Like a ware in the ocean.  
+There is no "way out" of karmic law, because there's no "in". You can't obscure it.
+
+## A read about change
 
 > "Not falling under the law of cause and effect." Why should __this__ prompt five hundred lives as a fox? "Not evading the law of cause and effect." Why should __this__ prompt a return a human life? If you have the single eye of realization, you will appreciate how old Paichang lived five hundred lives as a fox as lives of grace.
 
@@ -113,7 +151,13 @@ What has old Paichang done to receive this fruit and live five hundred lives as 
 
 > Once when Paichang gave a series of talks, a certain old man was always there listening together with the monks. When they left, he would leave too. __One day__, however, __he remained behind.__
 
-What happened that day? What came to be? What was different about that day? What emerged so that, __this__ particular day, old Paichang went to the master?
+What happened that day? What came to be? What was different about that day? What emerged so that __this__ day old Paichang went to the master?
+
+> The old man replied, "I am not a human being. __In the far distant past__, in the time of Kasyapa Buddha, __I was___ head priest at this mountain.
+
+The "I" changes every day. Every instant there's a new "I" emerging and an old "I" ceasing. It is the radical impermanence of the Self, dispersed in interdependency.  
+_"In the far distant past ... I was ..."_ - there's nothing much left really from the "I" that was, that far in the past. It's already been dispersed, ceased, renewed, every instant since then.  
+What is the "I" that old Paichang claim to have been? If there's nothing left from it, who was reborn five hundred times?
 
 > "Please say a __turning point__ for me [...] Hearing this, the old man __immediately was enlightened__."
 
@@ -121,7 +165,7 @@ Actually, nothing changed.
 
 > Making his bows he said, "I am released from the body of a fox."
 
-No you're not. Like an addendum [BoS case 123] puts it: _"fox drool is still there"_.
+No you're not. _"Fox drool is still there."_
 
 Before and after the turning point are the same. Old Paichang was enlightened but there was __no evasion__, __because__ an enlightened person _"does **not** evade the law of cause and effect"_.
 
@@ -131,10 +175,14 @@ But still, __something__ must have turned, but __what__ ? __What__ could be _"re
 
 > Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
 
-The ritual is requested by old Pichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect. There is still work to be done, and a law to obey.
+The ritual is requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect. Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured.
 
 > "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
 
 There are two truths that co-exist: _karma_ and _anatta_. On one side, _karma_ and its cage of responsibility for our past actions. On the other, _anatta_ and the release of _karma_ because its basis is non-existent. One can navigate their way by playing on those two truths, one day feeling free from non-self, one day brought back to responsibility. But one should not play with these two truths, use them when they are convenient. One should respect both, acknowledge them both.
 
 Is the ritual of cremation the way to respect both truths? Is it the function, the end of Zen practice and liturgy to pay respect to both truths?
+
+## Unsorted notes
+
+- Enlightenment itself is impermanent?
