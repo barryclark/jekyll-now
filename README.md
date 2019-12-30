@@ -1,1 +1,1 @@
-## Martin's git-hosted Jekyll build
+## Martin's github pages site built on Jekyll
