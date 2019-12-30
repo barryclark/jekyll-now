@@ -8,20 +8,49 @@ $grey:#3C4145;
 $black:#000;
 $bg-head:$yellow;
 
-
-@mixin mobile {
-  @media screen and (max-width: 529px) {
+// Mobile tablet
+// @mixin mobile {
+//   @media screen and (max-width: 640px) {
+//     @content;
+//   }
+// }
+// @mixin mobile-small-land{
+//     @media only screen and (max-width: 768px) and (orientation: landscape){
+//         @content;
+//     }
+// }
+// @mixin tablet-portrait {
+//   @media only screen and (min-width: 992px) and (max-width: 949px) {
+//       @content;
+//   }
+// }
+// @mixin tablet-landscape {
+//   @media only screen and (min-width: 1200px) and (max-width: 1024px) and (orientation: landscape){
+//       @content;
+//   }
+// }
+@mixin mobile-portrait {
+  @media screen and (min-width:320px) and (orientation: portrait){
     @content;
   }
 }
-// Mobile tablet
-@mixin tablet {
-    @media only screen and (min-width: 530px) and (max-width: 949px) {
-        @content;
-    }
+@mixin mobile-landscape{
+  @media screen and (min-width:768px){
+    @content;
+  }
 }
-@mixin mobile-small-land{
-    @media only screen and (max-width: 529px) and (orientation: landscape){
-        @content;
-    }
+@mixin tablet-portrait{
+  @media screen and (min-width:768px) and (orientation: portrait){
+    @content;
+  }
+}
+@mixin tablet-landscape {
+  @media screen and (min-width:1024px){
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width:1280px){
+    @content;
+  }
 }

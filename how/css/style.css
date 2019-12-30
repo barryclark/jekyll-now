@@ -513,6 +513,12 @@ body {
   margin-right: 16px;
   margin-top: 4px; }
 
+.subtitle {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 3;
+  grid-column-end: 5; }
+
 @-webkit-keyframes shadow-glitch {
   0% {
     text-shadow: 10px 10px 1px #FEBC37; }
@@ -643,6 +649,12 @@ header {
     z-index: 3;
     font-weight: 900;
     text-shadow: 1px 1px 35px rgba(0, 100, 100, 0.1); }
+    @media screen and (min-width: 1024px) {
+      header a {
+        -ms-grid-column: 2;
+        grid-column-start: 2;
+        -ms-grid-column-span: 5;
+        grid-column-end: 7; } }
   header .predator {
     -ms-grid-column: 5;
     grid-column-start: 5;
@@ -656,6 +668,10 @@ header {
     align-self: center;
     -ms-grid-column-align: center;
     justify-self: center; }
+    @media screen and (min-width: 1024px) {
+      header .predator {
+        width: 130%;
+        height: auto; } }
   header .sketch {
     -ms-grid-column: 3;
     grid-column-start: 3;
@@ -669,6 +685,10 @@ header {
     align-self: center;
     -ms-grid-column-align: center;
     justify-self: center; }
+    @media screen and (min-width: 1024px) {
+      header .sketch {
+        width: 130%;
+        height: auto; } }
   header .glitch {
     -ms-grid-row: 4;
     grid-row-start: 4;
@@ -685,9 +705,16 @@ header {
     display: block;
     height: 100%;
     width: 100%; }
-    @media screen and (max-width: 529px) {
+    @media screen and (min-width: 320px) and (orientation: portrait) {
       header .glitch {
-        width: 80%; } }
+        background: #fff; } }
+    @media screen and (min-width: 1024px) {
+      header .glitch {
+        width: 82%;
+        height: 88%; } }
+    @media screen and (min-width: 768px) and (orientation: portrait) {
+      header .glitch {
+        background: #ff0000; } }
 
 .who {
   display: -ms-grid;
@@ -710,15 +737,17 @@ header {
     grid-row-start: 2;
     -ms-grid-row-align: center;
     align-self: center; }
-    .who .who-is h2 {
-      width: 60%; }
-    .who .who-is h5.fun {
-      text-align: right;
-      display: inline-block;
-      text-align: right;
-      width: 100%;
-      margin-top: 0px;
-      margin-bottom: 50px; }
+  .who h2 {
+    width: 30%; }
+    @media screen and (min-width: 1024px) {
+      .who h2 {
+        width: 40%; } }
+  .who h5.fun {
+    text-align: right;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    margin-top: 0px; }
 
 .how {
   display: -ms-grid;
@@ -736,15 +765,15 @@ header {
     grid-column-start: 2;
     -ms-grid-column-span: 1;
     grid-column-end: 3; }
-    .how .skills h2 {
-      text-align: left;
-      float: left;
-      width: 35%; }
-    .how .skills h5.fun {
-      text-align: left;
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 48px; }
+  .how h2 {
+    text-align: left;
+    float: left;
+    width: 35%; }
+  .how h5.fun {
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 48px; }
   .how .skills-list li:first-child {
     margin-top: 8px; }
   .how .skills-list li {
