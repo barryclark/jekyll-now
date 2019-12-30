@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quotes from Zen Patriarchs
+permalink: /pages/study/zen/quotes/
+---
+
+# Work in progress
+
 [1] The Zen Teaching of BodhiDharma, translated by Red Pine, 1987
 
 > " _This mind is the Buddha_ says the same thing. Beyond this mind you'll never find another Buddha. To search for enlightenment or nirvana beyond this mind is impossible. The reality of your own self-nature, the absence of cause and effect, is what's meant by mind. Your mind is nirvana. You might think you can find a Buddha or enlightenment somewhere beyond the mind, but such a place doesn't exist." - Bloodstream Sermon, [1], p9
