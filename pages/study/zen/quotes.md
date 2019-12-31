@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Quotes from Zen Patriarchs
 permalink: /pages/study/zen/quotes/
 ---
