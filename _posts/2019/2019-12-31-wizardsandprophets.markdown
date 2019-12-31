@@ -4,6 +4,8 @@ title: "On wizardry and Prophecy"
 date: "2019-12-31 14:51:56 +0100"
 ---
 
+![Photo by Tim Huyghe on Unsplash.](../../images/2019_wiz/tim-huyghe-erOQ8wcVgQ4-unsplash.jpg)
+
 2019 was yet again a year marked by the inaction in dealing with our environmental challenges. I am lucky to live in a country where, save for some notable exceptions, climate change denial is not rampant. What is intriguing to me is *how* people approach climate change, drought, overpopulation, and other environmental problems. This post is a short reflection on Charles Mann's book [*The Wizard and the Prophet*](https://www.goodreads.com/book/show/34959327-the-wizard-and-the-prophet?ac=1&from_search=true&qid=R0HMz76kWF&rank=1).
 
 *Prophets* feel obliged to warn us that we have to change our behavior to avoid global catastrophes. It is a *personal* call to action: reduce your ecological footprint, have fewer children, and eat less meat. We can trace its origins to [William Volgt](https://en.wikipedia.org/wiki/William_Vogt) whos book 'Road to Survival' laid the foundation of the modern ecological movement. In essence, the reasoning follows Malthus' observation that the earth's carrying capacity can not sustain every increasing population. As a species, we need to reduce our impact, or we are not going to last. Greta Thunberg is one of the modern-day prophets.
