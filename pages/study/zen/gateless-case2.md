@@ -4,8 +4,6 @@ title: Case 2 : Paichang's Fox
 permalink: /pages/study/zen/gateless-case2/
 ---
 
-# Case \#2: Paichang's Fox
-
 Translation: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/search?q=robert+aitken+gateless+barrier).
 
 > ### The Case

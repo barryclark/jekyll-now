@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: page
 title: Quotes from Zen Patriarchs
 permalink: /pages/study/zen/quotes/
 ---
 
-# Work in progress
+**Work in progress**
 
 [1] The Zen Teaching of BodhiDharma, translated by Red Pine, 1987
 
