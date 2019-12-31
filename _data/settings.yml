@@ -9,6 +9,7 @@ google-ID: 'UA-101991886-1'
 menu:
 - {name: 'Cloud Native London', path: 'cloudnativelondon', url: ''}
 - {name: 'Events', path: 'events', url: ''}
+- {name: 'Archive', path: 'archive', url: ''}
 - {name: 'About', path: 'about', url: ''}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
@@ -17,7 +18,7 @@ social:
 - {icon: 'twitter', link: 'https://twitter.com/oicheryl'}
 - {icon: 'linkedin', link: 'http://www.linkedin.com/in/cheryljhung/'}
 # - {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
-# - {icon: 'rss-square', link: '/feed.xml'}
+- {icon: 'rss-square', link: '/feed.xml'}
 # - {icon: 'rss-square', link: '/rss-feed.xml'}
 
 # Customize site text
