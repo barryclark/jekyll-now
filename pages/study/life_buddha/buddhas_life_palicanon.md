@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Life of the Buddha as described by Suttas from the Pali Canon
 permalink: /pages/study/life_buddha/pali_canon/
 ---
