@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Case 2 : Paichang's Fox
 permalink: /pages/study/zen/gateless-case2/
 ---
