@@ -111,7 +111,7 @@ The ritual is requested by old Paichang, __because__ he understands that an enli
 
 > "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
 
-There are two truths that co-exist: _karma_ and _anatta_. On one side, _karma_ and its cage of responsibility for our past actions. On the other, _anatta_ and the release of _karma_ because its basis is non-existent. One can navigate their way by playing on those two truths, one day feeling free from non-self, one day brought back to responsibility. But one should not play with these two truths, use them when they are convenient. One should respect both, acknowledge them both.
+There are two truths that co-exist: _karma_ and _anatta_. On one side, _karma_ and its cage of responsibility for our past actions. On the other, _anatta_ and the release of _karma_ because its basis is non-existent. One can navigate their way by playing on those two truths, one day feeling free from non-self, one day brought back to responsibility. But one should not play with these two truths, one should not use them when they are convenient. One should respect both, acknowledge them both.
 
 Is the ritual of cremation the way to respect both truths? Is it the function, the end of Zen practice and liturgy to pay respect to both truths?
 
@@ -133,7 +133,7 @@ Old Paichang does not belong to the same side of the mountain, still he deserves
 >
 > Hearing this, the old man __immediately was enlightened__. Making his bows he said, "I am released from the body of a fox."
 
-It sounds quite ironic that, old Paichang has the view of gradual enlightenment, and because of that, is reborn five hundred times as a fox. The irony is that he had to be reborn that many times to one day become enlightened... after hearing the view of sudden enlightenment. That must be a karmic joke.
+It sounds quite ironic that, old Paichang has the view of gradual enlightenment, and __because of that__, he is reborn five hundred times as a fox. The irony is that he had to be reborn that many times to one day become enlightened... after hearing the view of sudden enlightenment. That must be a karmic joke.
 
 The view of gradual enlightenment __is__ wrong, but it __became__ right so that old Paichang could realize his error. That's how I would say I _"appreciate how old Paichang lived five hundred lives as a fox as lives of grace."_
 
@@ -158,11 +158,15 @@ Like an instant in a duration.
 Like a wave in the ocean.  
 There is no "way out" of karmic law, because there's no "in". You can't obscure it.
 
-## A read about change
+## A read about cause and effects
 
 > "Not falling under the law of cause and effect." Why should __this__ prompt five hundred lives as a fox? "Not evading the law of cause and effect." Why should __this__ prompt a return a human life? If you have the single eye of realization, you will appreciate how old Paichang lived five hundred lives as a fox as lives of grace.
 
 What has old Paichang done to receive this fruit and live five hundred lives as a fox? What has he done to be released from it today? Why should __this__ prompt five hundred lives as a fox?
+
+> __When they left, he would leave too__. __One day, however__, he remained behind.
+
+He was going with the stream. There, the stream meets a boulder, causing the water to stop for a moment.
 
 > Once when Paichang gave a series of talks, a certain old man was always there listening together with the monks. When they left, he would leave too. __One day__, however, __he remained behind.__
 
@@ -182,10 +186,15 @@ Actually, nothing changed.
 
 No you're not. _"Fox drool is still there."_
 
-Before and after the turning point are the same. Old Paichang was enlightened but there was __no evasion__, __because__ an enlightened person _"does **not** evade the law of cause and effect"_.
+Before and after the turning point are the same. Old Paichang was enlightened but there was __no evasion__, precisely __because__ an enlightened person _"does **not** evade the law of cause and effect"_.
 
 But still, __something__ must have turned, but __what__ ? __What__ could be _"released from the body of the fox"_ ?
 
 ## Unsorted notes
 
-- Enlightenment itself is impermanent?
+Enlightenment itself is impermanent?
+
+> Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given the right answer __each time__ he was asked a question -- __what would have happened then__?"
+
+How many times does one have to answer that question?  
+The answer is not the issue here, the answer did not cause old Paichang to be reborn five hundred times as a fox. There is no relationship between that cause and that effect?
