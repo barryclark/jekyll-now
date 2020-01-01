@@ -21,7 +21,7 @@ matikas:
     - name: "the untaught ordinary person"
       qualities:
         - "who has no regard for noble ones and is unskilled and undisciplined in their Dhamma"
-        - "who has no regard for true men and is unskilled and undisciplined in their Dhamma"
+        - "who has no regard for true women and men and is unskilled and undisciplined in their Dhamma"
       perception:
         present:
           singular: "perceives"
