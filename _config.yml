@@ -297,6 +297,9 @@ collections:
   english:
     output: true
     permalink: /:collection/:path/
+  cpp:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -377,6 +380,15 @@ defaults:
   - scope:
       path: ""
       type: english
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
+  # _c++
+  - scope:
+      path: ""
+      type: cpp
     values:
       layout: single
       author_profile: true
