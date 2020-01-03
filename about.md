@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-[Minecraft](https://www.minecraft.net/) is more than just a beautiful video-game. It can be used as an educational tool as well. This site contains step-by-step lesson plans for teaching high-school students a wide range of computer science topics using Minecraft. The topics currently covered are listed below.
+[Minecraft](https://www.minecraft.net/) is more than just a beautiful video-game. It can be used as an educational tool as well. This site contains step-by-step lesson plans for teaching high-school students a wide range of computer science topics using Minecraft. This allows students to apply and experiment with concepts in an open-ended, hands-on environment. The topics currently covered are listed below.
 
 ### Topics
 
