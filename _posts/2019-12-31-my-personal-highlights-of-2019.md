@@ -33,7 +33,7 @@ My most viewed talk was [Want to donate a project to the CNCF? Here's how](/2019
     <iframe src="https://www.youtube.com/embed/WS0OcCUt4io" frameborder="0" allowfullscreen></iframe>
 </div>
 
-This year I've been learning Mandarin Chinese. I presented the CNCF End User Awards in Shanghai to Didi using  Mandarin:
+This year I've been learning Mandarin Chinese. I presented the [CNCF End User Awards](/2019/06/24/presenting-the-cncf-end-user-awards-kubecon-cloudnativecon-shanghai/) in Shanghai to Didi using  Mandarin ([click here for the English transcript](/2019/06/24/presenting-the-cncf-end-user-awards-kubecon-cloudnativecon-shanghai/)):
 
 <div class="video-wrapper">
     <iframe src="https://www.youtube.com/embed/vkhk3jDQn2E" frameborder="0" allowfullscreen></iframe>

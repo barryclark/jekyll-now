@@ -5,7 +5,7 @@ description: "Cheryl Hung, Director of Ecosystem at the CNCF, presents the CNCF 
 location: Shanghai, China
 image: https://mmbiz.qpic.cn/mmbiz_jpg/GpkQxibjhkJyFee9mp3CQIJDARRtBEoDzf1fvgJWliajnhiclGPwaVibIm7icHKtYdtUf6UFf7U3Gm8Ho2I12PlAZXQ/640?wx_fmt=jpeg
 hide_image: true
-video: https://www.youtube.com/embed/eZd0ksRPw0k
+video: https://www.youtube.com/embed/vkhk3jDQn2E
 slides: //www.slideshare.net/slideshow/embed_code/key/aoEmaKbbGg1h8u
 tags:
   - Slides
@@ -14,6 +14,14 @@ tags:
 ---
 
 At KubeCon CloudNativeCon Shanghai, I presented the End User Award 2019 to DiDi. I also chose to do this in Mandarin, which I've been learning for about eight months.
+
+> Hi everyone, I’m Cheryl Hung, the Director of Ecosystem at the CNCF. We created the End User Awards to recognize the value that end users contribute to the cloud native ecosystem.  The CNCF End User Community covers retail, finance, academia, and more.
+>
+> Last year, the End User Community chose Bloomberg and JD.com to receive the End User Award. Based on their usage, impact and contributions, I’m very pleased to announce that the winner of the End User Award 2019 is DiDi! Many congratulations! We’re impressed by DiDi’s continued commitment to the community.
+>
+> Please welcome 王蕴博, who will say a few words on behalf of DiDi.
+> 
+> Thanks, congratulations again!
 
 Although I'm obviously not a native speaker (my parents are from Hong Kong), people told me afterwards it was clear and understandable, and that they appreciated the effort. I was very happy!
 
