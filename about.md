@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Minecraft is more than just a beautiful game. It can be used as an educational tool as well. This site contains step-by-step lesson plans for teaching high-school students a wide range of computer science topics.
+Minecraft is more than just a beautiful video-game. It can be used as an educational tool as well. This site contains step-by-step lesson plans for teaching high-school students a wide range of computer science topics using Minecraft. The topics currently covered are listed below.
 
 ### Topics
 
