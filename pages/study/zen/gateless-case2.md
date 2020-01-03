@@ -57,6 +57,8 @@ Book of Serenity Case 8 has some comments/notes/interjections following the case
 When I read cases, I tend to take notes: some thoughts that are prompted by reading the text, or coming later remembering the text, or even just unprompted but related.  
 In the following, I organized my notes in "reads": I related the notes to the aspect of the text that prompted them, and organized them in topics.
 
+**IMPORTANT** - Those are __not solutions__ to the case, they are not answers, __nor savant comments__. Many of these notes are open questions opening other inquiries into the case. These notes are just related thoughts, an account of my way to "process" this case, to support others' own processes.
+
 ## A read about being wrong all the time
 
 > One day, however, he remained behind. Paichang __asked him__,
@@ -107,7 +109,7 @@ Maybe, a ceremony is the best answer to the question asked to both Paichangs. Ri
 
 > Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
 
-The ritual is requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect. Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured.
+Is the ritual requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect? Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured.
 
 > "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
 
@@ -143,9 +145,9 @@ There is a contradiction in the view of old Paichang. The law of cause and effec
 >
 > Paichang said, "Just step here closer, and I'll tell you." Huang-po went up to Paichang and __slapped him in the face__.
 
-We want Paichang to be true when he says _"such a person does not evade"_ karmic law. That should be the right answer, according to this account, right? But he is as wrong as Old Paichang. Sudden enlightenment is not more true, as a view, than gradual. Because of that, Paichang gets a slap in the face.
+We want Paichang to be true when he says _"such a person does not evade"_ karmic law. That should be the good answer to the question, according to this account, right? But he seems as wrong as Old Paichang. Because of that, Paichang gets a slap in the face.
 
-If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. So sudden enlightenment is maybe "less wrong" than gradual enlightenment. Still, Huang-po's slap suggest __none of those answers are actually right__.
+Sudden enlightenment is not more true, as a view, than gradual. If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. So sudden enlightenment is maybe "less wrong" than gradual enlightenment. Still, Huang-po's slap suggests that __none of those answers are actually right__.
 
 Gradual.E = Sudden.E + Karma ?  
 Gradual.E is actually Sudden.E, with the Self believing there was a gradual process at play. You get enlightened suddenly, but your view makes you think you had to wait such a long time for it to happen.  
@@ -175,8 +177,9 @@ What happened that day? What came to be? What was different about that day? What
 > The old man replied, "I am not a human being. __In the far distant past__, in the time of Kasyapa Buddha, __I was___ head priest at this mountain.
 
 The "I" changes every day. Every instant there's a new "I" emerging and an old "I" ceasing. It is the radical impermanence of the Self, dispersed in Indra's Net.  
-_"In the far distant past ... I was ..."_ - that far in the past, there's nothing much left really from the "I" that wasthat far in the past. It's already been dispersed, ceased, renewed, every instant since then.  
-What is the "I" that old Paichang claim to have been? If there's nothing left from it, who was reborn five hundred times?
+_"In the far distant past ... __I was__ ..."_ - this is so far in the past, how could there be anything left from the "I" that __was__.  
+It has already been dispersed, ceased, renewed, every instant between then and now. A radical change for every instant, not just for a second but for centuries.  
+There's nothing left really. So what is the "I" that old Paichang now claims he __was__ back then? If there's nothing left from it, __who__ was reborn five hundred times?
 
 > "Please say a __turning point__ for me [...] Hearing this, the old man __immediately was enlightened__."
 
