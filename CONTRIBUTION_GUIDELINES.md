@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Contribution Guidelines
 permalink: /CONTRIBUTION_GUIDELINES/
 ---
 ### Hello
