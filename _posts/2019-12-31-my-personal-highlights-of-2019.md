@@ -33,10 +33,10 @@ My most viewed talk was [Want to donate a project to the CNCF? Here's how](/2019
     <iframe src="https://www.youtube.com/embed/WS0OcCUt4io" frameborder="0" allowfullscreen></iframe>
 </div>
 
-My favourite interview was discussing [Leadership in Open Source](/2019/05/22/leadership-in-the-open-source-community-kubecon-cloudnativecon-barcelona/) with Ashley McNamara, Liz Rice and Leah Petersen, hosted by TheNewStack:
+This year I've been learning Mandarin Chinese. I presented the CNCF End User Awards in Shanghai to Didi using  Mandarin:
 
 <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/THiaZ9dQBss" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/vkhk3jDQn2E" frameborder="0" allowfullscreen></iframe>
 </div>
 
 The Cloud Native London meetup is still incredibly popular. Over 500 registered for [July](/2019/07/03/cloud-native-london-july-2019-Suade-Labs-SUSE-and-Dynatrace/), making it the largest meetup of the year:
