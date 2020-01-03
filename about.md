@@ -15,7 +15,7 @@ Minecraft is more than just a beautiful game. It can be used as an educational t
 
 ### Contribution
 
-This is an open source project where any individuals can contribute. If you would like to add a lesson or improve an existing lesson, check out the project on [github](https://github.com/thegerrit/MinecraftLessons). Don't forget to look at the [Contribution Guidelines]({{ site.baseurl }}/CONTRIBUTION_GUIDELINES.md).
+This is an open source project where any individuals can contribute. If you would like to add a lesson or improve an existing lesson, check out the project on [Github](https://github.com/thegerrit/MinecraftLessons). Don't forget to look at the [Contribution Guidelines]({{ site.baseurl }}/CONTRIBUTION_GUIDELINES).
 
 ### Contact me
 
