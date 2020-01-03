@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Head-first into koan practice for beginners
-permalink: /pages/study/zen/intro_to_koans/
+permalink: /pages/study/zen/intro-to-koans/
 ---
 
 **Learning Objectives**:

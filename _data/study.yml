@@ -5,6 +5,8 @@ toc:
         url: /pages/study/life_buddha/pali_canon
   - title: Zen
     subfolderitems:
+      - page: Intro to Koans
+        url: /pages/study/zen/intro-to-koans
       - page: Gateless Gate - Case 2
         url: /pages/study/zen/gateless-case2
       - page: Quotes from Zen Patriarchs
