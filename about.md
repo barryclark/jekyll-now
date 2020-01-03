@@ -4,13 +4,13 @@ title: About
 permalink: /about/
 ---
 
-[Minecraft](https://www.minecraft.net/) is more than just a beautiful video-game. It can be used as an educational tool as well. This site contains step-by-step lesson plans for teaching high-school students a wide range of computer science topics using Minecraft. This allows students to apply and experiment with concepts in an open-ended, hands-on environment. The topics currently covered are listed below.
+[Minecraft](https://www.minecraft.net/) is more than just a beautiful video-game. It can be used as an educational tool as well. This site contains step-by-step lesson plans for teaching high-school students a wide range of Computer Science topics using Minecraft. This allows students to apply and experiment with concepts in an open-ended, hands-on environment. The topics currently covered are listed below.
 
 ### Topics
 
 1. Binary Numbers
 2. Logic Gates
-3. Mathematical operations on binary Numbers (addition, subtraction, multiplication, division, etc...)
+3. Mathematical operations on binary numbers (addition, subtraction, multiplication, division, etc...)
 4. Information storage
 
 ### Contribution
