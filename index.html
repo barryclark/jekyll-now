@@ -3,7 +3,12 @@ layout: default
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css"/>
 <div class="table_of_contents">
-  <span> Table of contents </span>
+  <h2> Table of contents </h2>
+  {% for post in site.posts %}
+    <span>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </span>
+  {% endfor %}
 </div>
 <!--<div class="posts">
   {% for post in site.posts %}
