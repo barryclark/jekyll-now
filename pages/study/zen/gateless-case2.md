@@ -55,33 +55,35 @@ Book of Serenity Case 8 has some comments/notes/interjections following the case
 # Readings
 
 When I read cases, I tend to take notes: some thoughts that are prompted by reading the text, or coming later remembering the text, or even just unprompted but related.  
-In the following, I organized my notes in "reads": I related the notes to the aspect of the text that prompted them, and organized them in topics.
+In the following, I arranged my notes in "reads": I related the notes to the aspect of the text that prompted them, and organized them in topics.
 
-**IMPORTANT** - Those are __not solutions__ to the case, they are not answers, __nor savant comments__. Many of these notes are open questions opening other inquiries into the case. These notes are just related thoughts, an account of my way to "process" this case, to support others' own processes.
+These notes offer an account of my way to "process" this case, in order to support others' own processes. Indeed, I tried to keep only the investigative side of my nodes, getting rid of my own thoughts to keep only the prompts, the nudges, the questions. I offer those hoping they can be useful prompts for your own investigation.
 
 ## A read about being wrong all the time
 
 > One day, however, he remained behind. Paichang __asked him__,
 
-(Hu ho...)
+Hu ho...
 
 > "__Who are you__, standing here before me?"  
 
-(Don't reply!)
+Don't reply!
 
 > The old man __replied__, "I am not a human being...
 
-(Oh no, you did!)
+Oh no, you did!
+
+What does this reply indicate? The old man indeed seems to be the object of the law of cause and effect.
 
 > The old man replied, "__I__ am not a human being...
 
-(starting with "I", not a great start for an answer)
+Starting with "I", not a great start for an answer.
 
-Old Paichang's very act of replying indicates he is indeed the object of the law of cause and effect. Does old Paichang still thinks of himself as a self?
+Would he answer __this__ question if he was enlightened?
 
 > One day __a monk asked me__, 'Does an enlightened person fall under the law of cause and effect or not?' ...
 
-Don't tell me you replied to that?
+Hu ho... don't tell me you replied to that one too?
 
 > ... __I replied__ ...
 
@@ -103,21 +105,27 @@ It seems better to just not answer anything at all.
 
 > After the meal, Paichang led the monks to the foot of a rock on the far side of the mountain. And there, with his staff, he poked out the body of a dead fox. He then performed the ceremony of cremation.
 
-Maybe, a ceremony is the best answer to the question asked to both Paichangs. Ritual and art, is that the answer?
+Ritual and liturgy, is that the answer?
 
 ## A read about the ritual
 
 > Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
 
+Why does old Paichang request a funeral?
+
 Is the ritual requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect? Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured.
 
 > "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
 
-There are two truths that co-exist: _karma_ and _anatta_. On one side, _karma_ and its cage of responsibility for our past actions. On the other, _anatta_ and the release of _karma_ because its basis is non-existent. One can navigate their way by playing on those two truths, one day feeling free from non-self, one day brought back to responsibility. But one should not play with these two truths, one should not use them when they are convenient. One should respect both, acknowledge them both.
+Why would there be anything to do with the fox's body? What does it __do__? What does it changes?
+
+There are two truths that co-exist while being orthogonal to one another: _karma_ and _anatta_. On one side, _karma_ and its cage of responsibility for our past actions. On the other, _anatta_ and the release of _karma_ because its basis is non-existent. One can navigate their way by playing on those two truths, one day feeling free from non-self, one day brought back to responsibility. But one should not play with these two truths, one should not use them when they are convenient. One should respect both, acknowledge them both.
 
 Is the ritual of cremation the way to respect both truths? Is it the function, the end of Zen practice and liturgy to pay respect to both truths?
 
 ## A read about doctrines
+
+_Note: it is useful to have read the Sutra of Hui-neng for this read, and to know the distinction between the schools of Hui-neng and Shen-hsiu._
 
 > Making his bows he said, "I am released from the body of a fox. The body is __on the other side of this mountain__.
 
@@ -135,11 +143,7 @@ Old Paichang does not belong to the same side of the mountain, still he deserves
 >
 > Hearing this, the old man __immediately was enlightened__. Making his bows he said, "I am released from the body of a fox."
 
-It sounds quite ironic that, old Paichang has the view of gradual enlightenment, and __because of that__, he is reborn five hundred times as a fox. The irony is that he had to be reborn that many times to one day become enlightened... after hearing the view of sudden enlightenment. That must be a karmic joke.
-
-The view of gradual enlightenment __is__ wrong, but it __became__ right so that old Paichang could realize his error. That's how I would say I _"appreciate how old Paichang lived five hundred lives as a fox as lives of grace."_
-
-There is a contradiction in the view of old Paichang. The law of cause and effect is what sustains the view of gradual enlightenment. But the gradual view nullifies the law of cause and effect after enlightenment, when the ultimate fruit comes. How could the law be considered true at some point, and nullified at another?
+It sounds quite ironic that, old Paichang has the view of gradual enlightenment, and __because of that__, he is reborn five hundred times as a fox. The irony is that he had to be reborn that many times to one day become enlightened... after hearing the view of sudden enlightenment. The view of gradual enlightenment __became right__ so that old Paichang could realize it is __wrong__. That must be a karmic joke.
 
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
 >
@@ -162,17 +166,21 @@ There is no "way out" of karmic law, because there's no "in". You can't obscure 
 
 ## A read about cause and effects
 
-> "Not falling under the law of cause and effect." Why should __this__ prompt five hundred lives as a fox? "Not evading the law of cause and effect." Why should __this__ prompt a return a human life? If you have the single eye of realization, you will appreciate how old Paichang lived five hundred lives as a fox as lives of grace.
-
-What has old Paichang done to receive this fruit and live five hundred lives as a fox? What has he done to be released from it today? Why should __this__ prompt five hundred lives as a fox?
-
-> __When they left, he would leave too__. __One day, however__, he remained behind.
-
-He was going with the stream. There, the stream meets a boulder, causing the water to stop for a moment.
-
 > Once when Paichang gave a series of talks, a certain old man was always there listening together with the monks. When they left, he would leave too. __One day__, however, __he remained behind.__
 
 What happened that day? What came to be? What was different about that day? What emerged so that __this__ day old Paichang went to the master?
+
+> __When they left, he would leave too__.
+
+He was going with the stream.
+
+> __One day, however__, he remained behind.
+
+There the stream meets a boulder, causing the water to stop for a moment.
+
+> "Not falling under the law of cause and effect." Why should __this__ prompt five hundred lives as a fox? "Not evading the law of cause and effect." Why should __this__ prompt a return a human life? If you have the single eye of realization, you will appreciate how old Paichang lived five hundred lives as a fox as lives of grace.
+
+What has old Paichang done to receive this fruit and live five hundred lives as a fox? What has he done to be released from it today? Why should __this__ prompt five hundred lives as a fox?
 
 > The old man replied, "I am not a human being. __In the far distant past__, in the time of Kasyapa Buddha, __I was___ head priest at this mountain.
 
@@ -182,8 +190,6 @@ It has already been dispersed, ceased, renewed, every instant between then and n
 There's nothing left really. So what is the "I" that old Paichang now claims he __was__ back then? If there's nothing left from it, __who__ was reborn five hundred times?
 
 > "Please say a __turning point__ for me [...] Hearing this, the old man __immediately was enlightened__."
-
-Actually, nothing changed.
 
 > Making his bows he said, "I am released from the body of a fox."
 
