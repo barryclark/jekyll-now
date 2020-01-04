@@ -49,7 +49,7 @@ _"Such a person does not evade the law of cause and effect"_ is elsewhere render
 - _"Don't ignore cause and effect"_ (Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005)
 
 Book of Serenity Case 8 has some comments/notes/interjections following the case. Here's two:
-- [commenting _"The old man was enlightened at these words"_]: _"Fox drool is still there."_
+- _"The old man was enlightened at these words - Fox drool is still there."_
 - _"For five hundred lives he couldn't do a thing - If he had known what would happen today, he'd regret not being careful to begin with."_
 
 # Readings
