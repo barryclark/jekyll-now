@@ -57,7 +57,9 @@ Book of Serenity Case 8 has some comments/notes/interjections following the case
 When I read cases, I tend to take notes: some thoughts that are prompted by reading the text, or coming later remembering the text, or even just unprompted but related.  
 In the following, I arranged my notes in "reads": I related the notes to the aspect of the text that prompted them, and organized them in topics.
 
-These notes offer an account of my way to "process" this case, in order to support others' own processes. Indeed, I tried to keep only the investigative side of my nodes, getting rid of my own thoughts to keep only the prompts, the nudges, the questions. I offer those hoping they can be useful prompts for your own investigation. **It has to be your own** (see [introduction](intro-to-koans)).
+These notes offer an account of my way to "process" this case, in order to support others' own processes. Indeed, I tried to keep **only the investigative side** of my nodes, getting rid of my own thoughts to keep only the prompts, the nudges, the questions. I offer those hoping they can be **useful prompts for your own investigation**.
+
+Remember, the investigation **has to be your own** (see [introduction](../intro-to-koans)).
 
 ## A read about being wrong all the time
 
