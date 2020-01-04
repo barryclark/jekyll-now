@@ -83,6 +83,8 @@ matikas:
     - "appropriating"
 ---
 
+> This Sutra is not part of any canon, nor does it pretends to be a "true" Sutra. This is obviously a free and creative adaptation of MN1 and MN63, SN 15.3, SN 22.9. It is also programmatically generated, and if you're into [matikas](https://en.wikipedia.org/wiki/Dhammasa%E1%B9%85ga%E1%B9%87%C4%AB), you should check out the [code behind it](https://raw.githubusercontent.com/datayana/datayana.github.io/master/pages/datayana_sutras/Sutra-on-Original-Buddhism.md).
+
 Thus have I heard.  
 On one occasion the Blessed One was living at the Saddle Mountain State park, near Portland, Oregon, with a large group of Bhikkhunis and Bhikkhus and non-binary Bhikkhux.
 
@@ -167,7 +169,3 @@ About this is was said:
   Buddhism is not two, not one.
 
 That is what the Blessed One said. Elated, the bhikkhux and Scott delighted in the Blessed One's statement. And while this discourse was being spoken, the minds of the bhikkhux were liberated from the taints by non-clinging. Scott's mind started clinging to non-clinging.
-
-## Commentary
-
-This is obviously a free and creative adaptation of MN1 and MN63, SN 15.3, SN 22.9
