@@ -8,7 +8,7 @@ I didn't get to finish before my flight back unfortunately, but I got pretty clo
 
 I went to Greenlight Surf Supply for all the material. My dad luckily has pretty much
 every tool I would need for the process. In addition to the materials, I picked up
-one of Greenlight's "rail runners" for shaping the outline and rails. I found this to be 
+one of Greenlight's [rail runners](https://greenlightsurfsupply.com/collections/surfboard-shaping-supplies/products/rail-runner-surfboard-shaping-tool-pvc-plastic?aaa_affiliate_id=QDNtCDg4gKi-QgyE2HSgcfMVSa3kztHkrFpqFIUmZpg) for shaping the outline and rails. I found this to be 
 super helpful and would definitely recommend it to anyone that isn't already using a planer.
 
 Greenlight was super helpful. The guys talked to me and my dad for over an hour just giving us 
@@ -51,6 +51,7 @@ otherwise you'll end up with a smaller template
   * The paper was textured and the texture definitely showed up in the lamination, and I'm a bit worried about delam now because of it
   * I also think the paper might've added some slight discoloration
   * Overall, I'd recommend not doing what I did
+* On both my top and bottom lams, I messed up the notches on the nose and tail and ended up with sizable wrinkles that just ended up giving me grief when sanding. I'd focus on getting these right (but I also found it hard to find good youtube videos for this)
 * I used a random orbit sander for sanding down the laps. Maybe I would've wanted something more precise, but I definitely would not want to do that manually with a sanding block
 * I used red sandpaper, and some of the color ended up on the second lap in a few spots. I hit them with more sanding it dulled to a neutral off-white
 * I didn't appreciate how clean things are supposed to be for the hotcoat. Really take the time to clean the board, brush, and bucket
