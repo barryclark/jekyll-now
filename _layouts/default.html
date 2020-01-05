@@ -40,18 +40,18 @@
       </div>
 
       <!-- contents and aside for category nav -->
-      <div style="width:100%; height:auto; padding:5px 30px;">
-        <div style="float:left; width:15%; height:auto">
-
+      <div id="content-container">
+        <div style="flex-grow:15">
+          <hr style="width:100%; border:solid 2px white">
         </div>
 
-        <div style="float:center; width:70%;height:auto;">
+        <div style="flex-grow:70">
           <div id="main" role="main" class="container">
             {{ content }}
           </div>
         </div>
         
-        <div style="float:right; width:15%; height:auto;">
+        <div style="flex-grow:15">
           <hr style="width:100%; border:solid 2px gray">
         </div>
       </div>

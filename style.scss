@@ -25,7 +25,6 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   max-width: 800px;
   padding: 0 10px;
   width: 100%;
@@ -158,7 +157,8 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-
+  width:80%;
+  
   @include mobile {
     text-align: center;
   }
@@ -179,6 +179,15 @@ img {
   img {
     border-radius: 5px;
   }
+}
+
+#content-container {
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items: stretch;
+  padding:5px 30px;
 }
 
 .site-info {
