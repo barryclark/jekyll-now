@@ -192,7 +192,7 @@ img {
   align-items: stretch;
   padding:5px 100px;
 
-  @include mobile {
+  @include semiMobile {
     height:100%;
     width:100%;
     text-align: center;
@@ -262,6 +262,24 @@ nav {
 //
 // .main
 //
+
+#flexCenter {
+  flex-grow:50;
+  margin:0px 50px;
+
+  @include semiMobile {
+    margin:0px;
+  }
+}
+
+#flexRight {
+  flex-grow:25;
+  min-width:max-content;
+
+  @include semiMobile {
+    margin:0px 20px;
+  }
+}
 
 .posts > .post {
   padding-bottom: 2em;
