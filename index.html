@@ -2,15 +2,14 @@
 layout: default
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css"/>
-<div class="posts">
+<!--<div class="posts">
   <h2> Table of contents </h2>
   {% for post in site.posts %}
-    <span>
+
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </span>
   {% endfor %}
-</div>
-<!--<div class="posts">
+</div>-->
+<div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
@@ -23,4 +22,4 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-</div>-->
+</div>
