@@ -3,7 +3,7 @@ layout: post
 title: I (almost) built a surfboard - some tips
 ---
 
-![Deck of board](https://raw.githubusercontent.com/purpleladydragons/purpleladydragons.github.io/master/images/mini-simmons-building/deck.jpg)
+![Deck of board](https://raw.githubusercontent.com/purpleladydragons/purpleladydragons.github.io/master/images/mini-simmons-building/deck.jpg | width=300)
 ![Bottom of board](https://raw.githubusercontent.com/purpleladydragons/purpleladydragons.github.io/master/images/mini-simmons-building/bottom.jpg)
 
 I visited home for the holidays, and during that time I started making a surfboard.
