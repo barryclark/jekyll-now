@@ -17,6 +17,8 @@ February 27: [Cloud Native Prague](https://www.meetup.com/Cloud-Native-Prague/),
 
 March 4-7: #21digital, Cologne, Germany
 
+March 10 – 12, [The Linux Foundation Member Summit](https://events.linuxfoundation.org/lf-member-summit/), Lake Tahoe, California
+
 March 31 - April 2: [KubeCon + CloudNativeCon Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/), Amsterdam
 
 July 28 - 30: [KubeCon + CloudNativeCon + Open Source Summit China](https://www.linuxfoundation.org/calendar/kubecon-cloudnativecon-open-source-summit-china/), Shanghai
