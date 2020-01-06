@@ -1,18 +1,19 @@
 ---
 layout: default
+title: CV
+permalink: /
 ---
+<link rel="stylesheet" href="./assets/w3.css">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<div class="w3-container w3-teal">
+  <h1>My Header</h1>
+</div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+<div class="w3-container">
+  <p>A car is a wheeled, self-powered motor vehicle used for transportation.</p>
+</div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div class="w3-container w3-teal">
+  <p>My Footer</p>
 </div>
