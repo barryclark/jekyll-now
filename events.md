@@ -15,7 +15,7 @@ February 24-27: [MWC](https://www.mwcbarcelona.com/), Barcelona
 
 February 27: [Cloud Native Prague](https://www.meetup.com/Cloud-Native-Prague/), Czech Republic
 
-March 4-5: #21digital, Cologne, Germany
+March 4-7: #21digital, Cologne, Germany
 
 March 31 - April 2: [KubeCon + CloudNativeCon Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/), Amsterdam
 
