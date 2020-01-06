@@ -4,10 +4,10 @@ title: I (almost) built a surfboard - some tips
 ---
 
 I visited home for the holidays, and during that time I started making a surfboard.
-I didn't get to finish before my flight back unfortunately, but I got pretty close.
+I didn't get to finish before my flight back unfortunately, but I got pretty close. I need to apply a second hotcoat to fix up some contamination, and I need to install the plugs. But I think I learned a good deal and want to share some tips here.
 
 I went to Greenlight Surf Supply for all the material. My dad luckily has pretty much
-every tool I would need for the process. In addition to the materials, I picked up
+every tool I would need for the process (power tools mostly just for building the stands, a random orbit sander for sanding the laps, levels and l-squares). In addition to the materials, I picked up
 one of Greenlight's [rail runners](https://greenlightsurfsupply.com/collections/surfboard-shaping-supplies/products/rail-runner-surfboard-shaping-tool-pvc-plastic?aaa_affiliate_id=QDNtCDg4gKi-QgyE2HSgcfMVSa3kztHkrFpqFIUmZpg) for shaping the outline and rails. I found this to be 
 super helpful and would definitely recommend it to anyone that isn't already using a planer.
 
@@ -26,7 +26,7 @@ to decide which is the best way
 like several old posts got corrupted and lost their images, so no diagrams makes it tough, and so many posts are inscrutable and just sometimes incoherent
 3. there were a few things I encountered on-the-fly that I wouldn't have thought to worry about before, and that I didn't see in my online browsing
 
-So I tried to collect a few things that I didn't find easily online into a more coherent set of notes.
+So I tried to collect a few things that I didn't find easily online into a more coherent set of notes. This post is definitely not meant to be a remotely comprehensive set of knowledge, but just trying to fill what I saw as gaps in the info easily available online.
 
 ## Field Notes
 
