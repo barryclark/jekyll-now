@@ -3,8 +3,8 @@ layout: post
 title: I (almost) built a surfboard - some tips
 ---
 
-<img src="https://raw.githubusercontent.com/purpleladydragons/purpleladydragons.github.io/master/images/mini-simmons-building/deck.jpg" width="300"/>
-![Bottom of board](https://raw.githubusercontent.com/purpleladydragons/purpleladydragons.github.io/master/images/mini-simmons-building/bottom.jpg)
+<img src="https://raw.githubusercontent.com/purpleladydragons/purpleladydragons.github.io/master/images/mini-simmons-building/deck.jpg" width="340"/>
+<img src="https://raw.githubusercontent.com/purpleladydragons/purpleladydragons.github.io/master/images/mini-simmons-building/bottom.jpg" width="340"/>
 
 I visited home for the holidays, and during that time I started making a surfboard.
 I didn't get to finish before my flight back unfortunately, but I got pretty close. I need to apply a second hotcoat to fix up some contamination, and I need to install the plugs. But I think I learned a good deal and want to share some tips here.
