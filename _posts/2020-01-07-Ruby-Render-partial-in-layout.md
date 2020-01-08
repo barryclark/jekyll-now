@@ -21,7 +21,7 @@ template = %(
 ERB.new(template).result
 ```
 will render:
-[raw html tag]
+<script
 <!DOCTYPE html>
     <html>
       <body>
@@ -30,7 +30,7 @@ will render:
 
       </body>
     </html>
-[raw html tag]
+>
 ```ruby
 require 'erb'
 template = %( <!DOCTYPE html> <html> <body> <%= yield %> </body> </html> )
