@@ -1,0 +1,17 @@
+{% if site.anchorjs %}
+<script type="text/javascript">
+  {% include anchor.min.js %}
+  new AnchorJS({
+    placement: 'left',
+    truncate: 32,
+    visible: 'hover',
+  }).add('h2');
+
+  new AnchorJS({
+    icon: '¶',
+    placement: 'left',
+    truncate: 32,
+    visible: 'hover',
+  }).add('p');
+</script>
+{% endif %}

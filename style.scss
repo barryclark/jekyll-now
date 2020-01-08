@@ -246,9 +246,9 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
-.posts > .post:last-child {
+.posts > .archive-link {
+  margin: 1em 0 15px;
   padding-bottom: 1em;
-  border-bottom: none;
 }
 
 .post {
@@ -257,7 +257,6 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
     font-style: italic;
   }
 
@@ -283,7 +282,49 @@ footer {
   text-align: center;
 }
 
+.float-left {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: -20%;
+  margin-right: 2em;
+  max-width: 300px;
+  float: left;
+}
+
+.float-right {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: -20%;
+  max-width: 300px;
+  float: right;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+  @include mobile {
+    padding-bottom: 150%;  // aspect ratio
+  }
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  @include mobile {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+@import "tags";

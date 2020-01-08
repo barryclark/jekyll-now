@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% assign lastmonth = '' %}
+
+<div class="posts">
+  {% for post in site.posts %}
+
+    {% assign thismonth = post.date | date: "%B %Y" %}
+    {% if lastmonth != thismonth %}
+      {% unless lastmonth == '' %} </ul> {% endunless %}
+      <h2>
+        {{ thismonth }}
+      </h2>
+      <ul>
+      {% assign lastmonth = thismonth %}
+    {% endif %}
+
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }} ({{ post.date | date: "%Y-%m-%d" }})</a>
+      {% for post_tag in post.tags | sort %}
+        <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ post_tag | slugify: 'pretty' | uri_escape }}" class="post-tag">{{ post_tag | slugify: 'pretty' | escape }}</a>
+      {% endfor %}
+    </li>
+  {% endfor %}
+  {% unless lastmonth == '' %} </ul> {% endunless %}
+</div>

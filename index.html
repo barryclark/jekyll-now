@@ -3,16 +3,28 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:20 %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1 class="post-title-above-tags">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | markdownify }}</a>
+      </h1>
+
+      <div>
+        {% for tag in post.tags %}
+          <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify: 'pretty' | uri_escape }}" class="post-tag">{{ tag | slugify: 'pretty' }}</a>
+        {% endfor %}
+      </div>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | rstrip | append: ' ...' | markdownify }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+
+  <article class="archive-link">
+    Older posts are available <a href="{{ site.baseurl }}/archive">in the archive</a>.
+  </article>
 </div>

@@ -3,14 +3,20 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title | markdownify }}</a></h1>
 
   <div class="entry">
     {{ content }}
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Posted {{ page.date | date: "%Y-%m-%d" }}
+  </div>
+
+  <div>
+    {% for tag in page.tags | sort %}
+      <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify: 'pretty' | url_encode }}" class="post-tag">{{ tag | slugify: 'pretty' | escape }}</a>
+    {% endfor %}
   </div>
 
   {% include disqus.html %}

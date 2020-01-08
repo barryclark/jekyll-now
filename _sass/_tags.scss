@@ -1,0 +1,22 @@
+.post-title-above-tags {
+  margin-bottom: 0;
+}
+
+.post-tag {
+  display: inline-block;
+  background: rgba(blue, 0.10);
+  padding: 0 .5rem;
+  border-radius: 4px;
+  color: blue;
+  font-size: 70%;
+  &:before {
+    content: "\f02b";
+    font-family: FontAwesome;
+    padding-right: .4em;
+  }
+  &:hover {
+    text-decoration: none;
+    background: lightblue;
+    color: white;
+  }
+}
