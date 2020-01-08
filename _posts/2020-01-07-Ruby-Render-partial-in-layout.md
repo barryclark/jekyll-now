@@ -17,11 +17,11 @@ template = %(
       </body>
     </html>
 )
-# define an object avec use the method '.result'
+# define an object ERB.new(template) avec use the method .result
 ERB.new(template).result
 ```
 will render:
-<script
+<script>
 <!DOCTYPE html>
     <html>
       <body>
@@ -30,7 +30,7 @@ will render:
 
       </body>
     </html>
->
+</script>
 
 ```ruby
 require 'erb'
