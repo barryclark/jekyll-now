@@ -25,8 +25,10 @@ File.open("my_layout.html", "w") { |file| file.puts layout}
 %x[ open -a 'Google Chrome' app.html ]
 ```
 renders:
+<p>
 <%= yield %>
-      
+<p>
+  
 A step further: insert a partial into the yield
 
 ```ruby
