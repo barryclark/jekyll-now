@@ -53,10 +53,21 @@ end
 obj = ERB.new(template)
 
 name = "ERB from yield"
-messages = [ "Ligne 3", "Ligne 4" ]
+messages = [ "Ligne 1", "Ligne 2" ]
 
 view = obj.result(set_binding {set_partial.call(name, messages)})
 
 File.open("my_app.html", "w") { |file| file.puts view}
 %x[ open -a 'Google Chrome' app.html ]
 ```
+will render:
+<!DOCTYPE html>
+    <html>
+      <body>
+        <h1>Hello ERB from yield </h1>
+        <ul>
+          <li>Ligne 1</li>
+          <li>Ligne 2</li>
+        </ul>)
+      </body>
+    </html
