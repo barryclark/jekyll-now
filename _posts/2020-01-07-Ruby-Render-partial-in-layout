@@ -39,7 +39,6 @@ messages = [ "Ligne 3", "Ligne 4" ]
 
 view = obj.result(set_binding {set_partial.call(name, messages)})
 
-puts view
-File.open("app.html", "w") { |file| file.puts view}
+File.open("my_app.html", "w") { |file| file.puts view}
 %x[ open -a 'Google Chrome' app.html ]
 ```
