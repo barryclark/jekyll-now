@@ -69,10 +69,10 @@ File.open("my_app.html", "w") { |file| file.puts view}
 will render:
 
     
-        <h1>Hello ERB from yield </h1>
+        <h1> Hello ERB from yield </h1>
         
         <ul>
-          <li>Ligne 1</li>
-          <li>Ligne 2</li>
+          <li> Ligne 1 </li>
+          <li> Ligne 2 </li>
         </ul>
       
