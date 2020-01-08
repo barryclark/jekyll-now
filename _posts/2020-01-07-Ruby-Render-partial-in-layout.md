@@ -66,11 +66,11 @@ messages = [ "Ligne 1", "Ligne 2" ]
 
 # the online to get the result:
 
-view = obj.result(set_binding {set_partial.call(name, messages)})
+view = obj.result( set_binding { set_partial.call( name, messages ) } )
 
 # save this in a file and render it with Google Chrome
 
-File.open("my_app.html", "w") { |file| file.puts view}
+File.open("my_app.html", "w") { |file| file.puts view }
 %x[ open -a 'Google Chrome' app.html ]
 ```
 will open the browser and render:
