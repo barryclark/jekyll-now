@@ -30,6 +30,7 @@ will render:
       </body>
     </html>
 
+A step further: insert a partial into the yield
 
 ```ruby
 require 'erb'
@@ -48,8 +49,11 @@ partial = %(
 # define a lambda with params 'name','messages' and let 'binding' pass them to '.result'
 # on the object 'ERB.new(partial)
 
-set_partial = ->(nom,messages) { ERB.new(partial).result(binding) }
+set_partial = ->(name,messages) { ERB.new(partial).result(binding) }
 
+# this lambda will by called by 'set_partial.call(my_name, my_messages)'
+
+# we define a method with binding to bind the bloc 'set_partial.call'
 def set_binding
   binding
 end
@@ -60,7 +64,11 @@ obj = ERB.new(template)
 name = "ERB from yield"
 messages = [ "Ligne 1", "Ligne 2" ]
 
+# the online to get the result:
+
 view = obj.result(set_binding {set_partial.call(name, messages)})
+
+# save this in a file and render it with Google Chrome
 
 File.open("my_app.html", "w") { |file| file.puts view}
 %x[ open -a 'Google Chrome' app.html ]
