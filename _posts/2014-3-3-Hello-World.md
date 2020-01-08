@@ -1,10 +1,37 @@
 ---
 layout: post
-title: You're up and running!
+title: How to run a shell command  from a Ruby  file
 ---
+Inside my test.rb Ruby code file, if I want to render the file example.html on Chrome, then I add this line:
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+%x[ open -a 'Google Chrome' example.html ]
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Example: say my Ruby code file is test_erb.rb where:
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+require "erb"
+
+string_layout = %(
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+    </head>
+    <body>
+      <h1>Hello <%= name %></h1>
+      <ul>
+        <% messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </body>
+  </html>)
+
+name = "mon premier ERB"
+messages = [ "Ligne 1", "Ligne 2" ]
+
+obj = ERB.new(string_layout)
+
+html_string=obj.result(binding)
+
+File.open("layout.html", "w") { |file| file.puts html_string}
+%x[ open -a 'Google Chrome' layout.html ]
