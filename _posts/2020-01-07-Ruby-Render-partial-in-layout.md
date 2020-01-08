@@ -21,7 +21,7 @@ ERB.new(template).result
 ```
 will render:
 
-          <%= yield %>
+<%= yield %>
       
 A step further: insert a partial into the yield
 
@@ -73,4 +73,3 @@ will render:
   <li> Ligne 1 </li>
   <li> Ligne 2 </li>
 </ul>
-<h2> ok </h2>
