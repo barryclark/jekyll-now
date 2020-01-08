@@ -5,10 +5,10 @@ title: Ruby - Search API and use unknow number of params
 
 
 
-We define a method that fetches data on github's API  with some parameters. Params are:
-- usernames defined as `String`, and `#{username}`will by passed as a param for the API search
-- data-types defined as `Symbol`, and will be used as keys    to retrieve the value of the hash returned by the query.
-We have an unknow number of params so we pass `*vars` (could be `*anything`). We separate the strings from the symbols (which are the data-types of the API), and query Github's API for each username, and then extract the data-types values. 
+We define a method that fetches data on github's API  with unknown number of parameters. These are:
+- usernames defined as `String`, so `#{username}`will by passed as a param for the API search
+- data-types defined as `Symbol`, and will be used as keys to retrieve the value of the hash returned by the query.
+We have an unknow number of params so we use `*vars` (could be `*anything`). We separate the strings from the symbols (which are the data-types of the API), and query Github's API for each username, and then extract the data-types values. 
 
 ```ruby
 require 'json'
@@ -31,7 +31,7 @@ def get_github(*vars)
   profiles
 end
 ```
-For example, wer can run:
+For example, we can run:
 ```ruby
 get_github('ssaunier', 'cveneziani', :name, :id, :location)
 ```
