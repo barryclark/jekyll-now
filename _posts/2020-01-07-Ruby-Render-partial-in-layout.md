@@ -22,10 +22,10 @@ layout = ERB.new(template).result
 Then save this into a file and render it with Google Chrome or Firefox by
 ```ruby
 File.open("my_layout.html", "w") { |file| file.puts layout}
-%x[ open -a 'Google Chrome' app.html ]
+%x[ open -a 'Google Chrome' my_layout.html ]
 # or 'Firefox'
 ```
-renders:
+opens the browser to render:
 <p>
     <%= yield %>
 <p>
@@ -73,7 +73,7 @@ view = obj.result(set_binding {set_partial.call(name, messages)})
 File.open("my_app.html", "w") { |file| file.puts view}
 %x[ open -a 'Google Chrome' app.html ]
 ```
-will render:
+will open the browser and render:
     
 <h1> Hello ERB from yield </h1>
 <ul>
