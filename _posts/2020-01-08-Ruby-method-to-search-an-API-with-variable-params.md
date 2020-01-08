@@ -1,7 +1,8 @@
 ---
-published: false
+layout: post
+title: Ruby - Search API and use unknow number of params
 ---
-## A New Post
+
 
 
 We define a method that fetches data on github's API  with some parameters. Params are:
