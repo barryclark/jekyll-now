@@ -7,13 +7,12 @@ title: Ruby - How to render partial in an .erb layout
 ```ruby
 require 'erb'
 
+# define a string:
 template = %(
   <!DOCTYPE html>
     <html>
       <body>
-
           <%= yield %>
-
       </body>
     </html>
 )
@@ -34,17 +33,21 @@ will render:
 
 ```ruby
 require 'erb'
+
 template = %( <!DOCTYPE html> <html> <body> <%= yield %> </body> </html> )
 
+# define the partial you want to pass to 'yield' as the string:
 partial = %(
-    <h1>Hello <%= nom %> </h1>
+    <h1>Hello <%= name %> </h1>
       <ul>
         <% messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>)
 
-# define a lambda with 'nom','messages' as params, and let 'binding' pass them to '.result' on the object 'ERB.new(template'
+# define a lambda with params 'name','messages' and let 'binding' pass them to '.result'
+# on the object 'ERB.new(partial)
+
 set_partial = ->(nom,messages) { ERB.new(partial).result(binding) }
 
 def set_binding
@@ -63,7 +66,7 @@ File.open("my_app.html", "w") { |file| file.puts view}
 %x[ open -a 'Google Chrome' app.html ]
 ```
 will render:
-<!DOCTYPE html>
+
     <html>
       <body>
         <h1>Hello ERB from yield </h1>
