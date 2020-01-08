@@ -3,11 +3,13 @@ layout: post
 title: How to run a shell command  from a Ruby  file
 ---
 Inside my test.rb Ruby code file, if I want to render the file example.html on Chrome, then I add this line:
+```ruby
 
 %x[ open -a 'Google Chrome' example.html ]
+```
 
 Example: say my Ruby code file is test_erb.rb where:
-
+```ruby
 require "erb"
 
 string_layout = %(
@@ -35,3 +37,4 @@ html_string=obj.result(binding)
 
 File.open("layout.html", "w") { |file| file.puts html_string}
 %x[ open -a 'Google Chrome' layout.html ]
+```
