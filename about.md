@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Starting web development and Data Science.
+Starting web development and Data Science. Msc INPG, MBA ESSEC, Fullstack Le Wagon
 
 ### More Information
 
 Ruby, Rails, Javascript, Postgres, GraphQL, Vue.js, ReactJS, Python, API
-INPG, ESSEC, Le Wagon
+
 
 
 ### Contact me
