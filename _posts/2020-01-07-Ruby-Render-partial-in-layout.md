@@ -17,10 +17,14 @@ template = %(
     </html>
 )
 # define an object ERB.new(template) avec use the method .result
-ERB.new(template).result
+layout = ERB.new(template).result
 ```
-will render:
-
+Then save this into a file and render it with Google Chrome by
+```ruby
+File.open("my_layout.html", "w") { |file| file.puts layout}
+%x[ open -a 'Google Chrome' app.html ]
+```
+renders:
 <%= yield %>
       
 A step further: insert a partial into the yield
