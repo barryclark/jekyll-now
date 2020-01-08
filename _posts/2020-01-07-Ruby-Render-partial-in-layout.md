@@ -31,7 +31,7 @@ The browser opens and renders:
     <%= yield %>
 <p>
   
-##A step further:
+## A step further:
 Insert a partial into the yield
 
 ```ruby
