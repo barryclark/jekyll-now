@@ -5,11 +5,7 @@ title: Ruby - How to render partial in an .erb layout
 ---
 
 ## First setp:
-Play with the layout and the object:
-```ruby
-require 'erb'
-```
-define a string:
+`require    'erb' and define the template:
 ```ruby
 template = %(
   <!DOCTYPE html>
@@ -20,7 +16,7 @@ template = %(
     </html>
 )
 ```
-and define an object `ERB.new(template)` and use the method `.result`
+and define an object `ERB.new(template)` and use the method `.result` (of  class `String`)
 
 ```ruby
 layout = ERB.new(template).result
