@@ -1,3 +1,4 @@
+layout: post
 title: Ruby - How to run save a string  into  file
 ---
 If I want to save the string 'html_string' into a file named 'layout.html', then:
