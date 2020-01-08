@@ -21,15 +21,8 @@ ERB.new(template).result
 ```
 will render:
 
-
-    <html>
-      <body>
-
           <%= yield %>
-
-      </body>
-    </html>
-
+      
 A step further: insert a partial into the yield
 
 ```ruby
@@ -75,14 +68,10 @@ File.open("my_app.html", "w") { |file| file.puts view}
 ```
 will render:
 
-    <html>
-      <body>
+    
         <h1>Hello ERB from yield </h1>
         <ul>
           <li>Ligne 1</li>
           <li>Ligne 2</li>
         </ul>)
-      </body>
-    </html
-
-<h1> That's all </h1>
+      
