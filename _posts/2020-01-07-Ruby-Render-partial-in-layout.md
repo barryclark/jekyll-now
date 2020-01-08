@@ -21,7 +21,7 @@ template = %(
 ERB.new(template).result
 ```
 will render:
-<
+<script
 <!DOCTYPE html>
     <html>
       <body>
