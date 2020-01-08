@@ -2,6 +2,7 @@
 layout: post
 
 title: Ruby - How to render partial in an .erb layout
+---
 
 ```ruby
 template = %(
