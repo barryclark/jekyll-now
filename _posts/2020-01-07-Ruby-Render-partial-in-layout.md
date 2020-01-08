@@ -33,11 +33,11 @@ template = %( <!DOCTYPE html> <html> <body> <%= yield %> </body> </html> )
 # define the partial you want to pass to 'yield' as the string:
 partial = %(
     <h1>Hello <%= name %> </h1>
-      <ul>
-        <% messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>)
+    <ul>
+      <% messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
 
 # define a lambda with params 'name','messages' and let 'binding' pass them to '.result'
 # on the object 'ERB.new(partial)
@@ -73,5 +73,5 @@ will render:
         <ul>
           <li>Ligne 1</li>
           <li>Ligne 2</li>
-        </ul>)
+        </ul>
       
