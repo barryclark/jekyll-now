@@ -15,9 +15,16 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+//$helvetica: Helvetica, Arial, sans-serif;
+//$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$georgia: Georgia, serif;
+
+//Font stacks new
+//see:http://sebrink.de/Google-Webfonts-for-my-Jekyll/
+$SansSerif: 'Open Sans', sans-serif;
+$SmallCaps: 'Vollkorn SC', serif;
+$Serif: 'Vollkorn', serif;
+$Monospace: 'Source Code Pro', monospace;
 
 // Mobile breakpoints
 @mixin mobile {

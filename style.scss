@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $Serif;
   color: $darkGray;
 }
 
@@ -30,10 +30,16 @@ body {
   width: 100%;
 }
 
+code {
+  font-family: $Monospace;
+  font-size: 0.8em;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $SmallCaps;
   color: $darkerGray;
-  font-weight: bold;
+  font-weight: normal;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -194,7 +200,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $SmallCaps;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +219,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $SmallCaps;
   font-size: 18px;
 
   @include mobile {
