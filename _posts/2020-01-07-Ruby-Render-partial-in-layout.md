@@ -23,7 +23,7 @@ layout = ERB.new(template).result
 ```
 Then save this into a file and render it with Google Chrome or Firefox by
 ```ruby
-File.open("my_layout.html", "w") { |file| file.puts layout}
+File.open("my_layout.html", "w") { |file| file.puts layout }
 %x[ open -a 'Google Chrome' my_layout.html ]
 ```
 The browser opens and renders:
