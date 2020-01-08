@@ -67,12 +67,10 @@ File.open("my_app.html", "w") { |file| file.puts view}
 %x[ open -a 'Google Chrome' app.html ]
 ```
 will render:
-
     
-        <h1> Hello ERB from yield </h1>
-        
-        <ul>
-          <li> Ligne 1 </li>
-          <li> Ligne 2 </li>
-        </ul>
-      
+<h1> Hello ERB from yield </h1>
+<ul>
+  <li> Ligne 1 </li>
+  <li> Ligne 2 </li>
+</ul>
+<h2> ok </h2>
