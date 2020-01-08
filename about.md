@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Starting web development and Data Science.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Ruby, Rails, Javascript, Postgres, GraphQL, Vue.js, ReactJS, Python, API
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:nevendrean@yahoo.fr)
