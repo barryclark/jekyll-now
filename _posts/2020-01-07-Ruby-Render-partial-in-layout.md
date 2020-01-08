@@ -5,7 +5,7 @@ title: Ruby - How to render partial in an .erb layout
 ---
 
 ## First setp:
-`require    'erb' and define the template:
+`require 'erb'` and define the template:
 ```ruby
 template = %(
   <!DOCTYPE html>
