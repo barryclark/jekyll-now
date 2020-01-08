@@ -4,6 +4,8 @@ layout: post
 title: Ruby - How to render partial in an .erb layout
 ---
 
+## First setp:
+Play with the layout and the object:
 ```ruby
 require 'erb'
 ```
@@ -33,7 +35,8 @@ The browser opens and renders:
     <%= yield %>
 <p>
   
-A step further: insert a partial into the yield
+##A step further:
+Insert a partial into the yield
 
 ```ruby
 require 'erb'
