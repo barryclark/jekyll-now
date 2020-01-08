@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to run a shell command  from a Ruby  file
+title: Ruby - How to run a shell command  from a Ruby  file
 ---
 Inside my test.rb Ruby code file, if I want to render the file example.html on Chrome, then I add this line:
 ```ruby
