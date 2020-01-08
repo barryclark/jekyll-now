@@ -70,6 +70,7 @@ will render:
 
     
         <h1>Hello ERB from yield </h1>
+        
         <ul>
           <li>Ligne 1</li>
           <li>Ligne 2</li>
