@@ -1,3 +1,4 @@
+---
 layout: post
 title: Ruby - How to run save a string  into  file
 ---
