@@ -17,7 +17,7 @@ The side effect that I was seeing was that there was a dependency failure being 
 
 Something like this.
 
-![](../images/2018-11-12/TableStorage409.png)
+![](../images/2018-11-12/TableStorage409.PNG)
 
 The first option to solve this is to remove the call to ```CreateIfNotExists``` if you can be sure that the table will exist.
 
