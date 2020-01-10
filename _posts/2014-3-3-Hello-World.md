@@ -1,10 +1,8 @@
 ---
 layout: post
-title: You're up and running!
+title: The Possible Start of New Beginnings
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+I've setup this site using [Jekyll Now](https://github.com/barryclark/jekyll-now) and I'm hopeful it might be where I transfer my exising [blog](http://ben.hamilton.id.au/) to.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+It would mean an export of those posts from WordPress into markdown files, and the use of [custom domains on GitHub](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages).
