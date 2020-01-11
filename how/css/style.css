@@ -489,7 +489,8 @@ strong {
     padding: 2px 8px;
     text-decoration: none;
     color: #ffffff;
-    border-radius: 2px; }
+    border-radius: 2px;
+    font-weight: bold; }
   .desc a:hover {
     background: #333;
     color: #2EB5FB; }
