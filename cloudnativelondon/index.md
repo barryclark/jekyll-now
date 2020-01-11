@@ -11,7 +11,7 @@ description: "Request to speak at or sponsor Cloud Native London."
 
 <div class="products">
 
-{% include product.html title="Speak" subtitle="Next available slots in mid-2020" image="product-images/speak-at-cloud-native-london.jpg" url="/cloudnativelondon/speak" %}
+{% include product.html title="Speak" subtitle="Next available slots in early 2021" image="product-images/speak-at-cloud-native-london.jpg" url="/cloudnativelondon/speak" %}
 
 {% include product.html title="Sponsor" subtitle="Introduce yourself at our monthly events" image="product-images/sponsor-cloud-native-london.jpg" url="/cloudnativelondon/sponsor" %}
 
