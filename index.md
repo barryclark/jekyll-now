@@ -189,7 +189,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 ### <a name="scams"></a>Τι πρέπει να προσέχω όταν αγοράζω ή επενδύω σε κρυπτονομίσματα;
 
-- Ένα κρυπτονόμισμα που δεν εμφανίζεται [στη λίστα αυτή](http://www.coincap.io) μπορεί να είναι ύποπτο.
+- Ένα κρυπτονόμισμα που δεν εμφανίζεται [στη λίστα αυτή](https://coinmarketcap.com) μπορεί να είναι ύποπτο.
 - Ένα κρυπτονόμισμα που παρουσιάζει τον εαυτό του ως επενδυτική ευκαιρία είναι σίγουρα ύποπτο.
 - Ένα κρυπτονόμισμα ή επενδυτικό σχήμα που υπόσχεται εξωπραγματικές αποδόσεις, όπως να διπλασιάσει τα χρήματά σας σε 2 μήνες, είναι απάτη.
 - Ένα κρυπτονόμισμα που μπορείτε να το αγοράσετε για €1 σήμερα και «εγγυημένα» θα μπορέσετε να το πουλήσετε ή να το ανταλλάξετε για €10 αργότερα είναι σίγουρα απάτη.
@@ -197,7 +197,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Πολλές από τις «επενδυτικές ευκαιρίες» σε cloud mining είναι απάτες. Σκεφτείτε, αν κάποιοι έχουν εξοπλισμό που μπορεί να κάνει επικερδές mining σε κρυπτονομίσματα, γιατί να τον νοικιάσουν σε εσάς;
 - Ένα ανταλλακτήριο που πουλάει ένα κρυπτονόμισμα σε πολύ χαμηλή τιμή (π.χ. πουλάει Bitcoin στη μισή τιμή σε σχέση με άλλα ανταλλακτήρια) είναι απάτη.
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), Yellow Trading Coin (YTC), S-coin/Coinspace, BitClub, Cryptonex/Bitcoin Revolution. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
-- Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
+- Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/](http://www.badbitcoin.org/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
 ### <a name="electricitycost"></a> Έχω οικιακό τιμολόγιο €0,10/KWh της ΔΕΗ, μπορώ να κάνω mining κρυπτονομισμάτων;
 
