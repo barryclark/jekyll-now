@@ -121,9 +121,9 @@ and is tagged as {vehicle:car, vehicle:truck, outdoor:traffic light, person:pers
 
 To obtain the word2vec of the description documents, we perform weighted average of top 15 words in the documents, ranked by their TFIDF scores. The weights for the weighted averaging are the TFIDF scores. Similarly, We did the same with the tags, taking top 5 words for the weighted averaging.
 
-As sanity check, we check the cosine similarity between this description TFIDF-weighted word2vec and the embedding strategy of the image information in 3.2. The median cosine similarity is about 0.47 (figure 2). The median cosine similarity between the description TFIDF-weighted word2vec and the tag TFIDF-weighted word2vec is 0.69 (figure 3).
+As sanity check, we check the cosine similarity between this description TFIDF-weighted word2vec and the embedding strategy of the image information in 3.2. The median cosine similarity is about 0.47 (figure 2). The median cosine similarity between the description TFIDF-weighted word2vec and the tag TFIDF-weighted word2vec is 0.71 (figure 3).
 
-![Figure 3.1]({{ site.baseurl }}/images/sim_TFODF_resnet.png "similarity between the resnet and TFIDF-weighted fastText.")
+![Figure 3.1]({{ site.baseurl }}/images/sim_TFIDF_resnet.png "similarity between the resnet and TFIDF-weighted fastText.")
 <p align="center">
     <font size="2"><b>Figure 3.1.</b> similarity between the resnet and TFIDF-weighted fastText.</font>
 </p>
@@ -179,14 +179,14 @@ First of the figures below shows the 5 sentences and the image it gets right the
     <font size="2"><b>Figure 7.</b> images retrieved at rank 0.</font>
 </p>
 
-And this is the query that is not retrieved.
+This is the example where the correct image is not within top 20 results.
 
 ![Figure 8]({{ site.baseurl }}/images/too_similar_to_recall.png "example 1 of mis-identification.")
 <p align="center">
     <font size="2"><b>Figure 8.</b>example 1 of mis-identification</font>
 </p>
 
-And the correct image looks like this.
+And the correct image is shown here.
 
 ![Figure 9]({{ site.baseurl }}/images/correct_image3.jpg "the correct image not retrieved 1.")
 <p align="center">
@@ -197,7 +197,7 @@ In this case, we can say that all the images are too similar. One curious point 
 
 Another sort of problem that I see is that the description can be quite complicated. For example, this query is not retrieved. 
 
-![Figure 10]({{ site.baseurl }}/images/too_complex_to_recall.png "example 2 of mis-identification.")
+![Figure 10]({{ site.baseurl }}/images/image_too_complex_to_recall.png "example 2 of mis-identification.")
 <p align="center">
     <font size="2"><b>Figure 10.</b>example 2 of mis-identification</font>
 </p>
