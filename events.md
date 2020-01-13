@@ -21,7 +21,7 @@ March 10 – 12, [The Linux Foundation Member Summit](https://events.linuxfounda
 
 March 31 - April 2: [KubeCon + CloudNativeCon Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/), Amsterdam
 
-June 11: [Judging OpenUK Awards](https://openuk.uk/), London
+June 11: Judging and presenting the [OpenUK Awards](https://openuk.uk/), London
 
 July 28 - 30: [KubeCon + CloudNativeCon + Open Source Summit China](https://www.linuxfoundation.org/calendar/kubecon-cloudnativecon-open-source-summit-china/), Shanghai
 
