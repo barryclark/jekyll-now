@@ -7,7 +7,7 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2020
 
-January 30: Keynote at Rackspace Cloud Native Takeover Day, London 
+January 16: Keynote at Rackspace Cloud Native Takeover Day, London 
 
 January 30: [Sustain 2020](https://opencollective.com/sustainoss/events/sustain-2020-5874aeeb), Brussels 
 
