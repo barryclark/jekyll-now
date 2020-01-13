@@ -4,12 +4,20 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Ben Hamilton implements, configures and customises CRM (Contact Relationship Management) and Collaboration tools (wiki/ticket management, chat, version control and testing).
 
-### More Information
+He has helped many clients streamline their processes and workflow, all of which has improved their bottom line.
 
-A place to include any other types of information that you'd like to include about yourself.
+Having been in the Information Technology industry since 1995 he has a wealth of experience that he brings to bear on the day to day issues he assists clients with.
 
-### Contact me
+Currently employed at [Evolution Marketing Services](http://evolutionmarketing.com.au/) you’ll find his professional details at [linkedin.com/in/benhamilton](http://www.linkedin.com/in/benhamilton).
 
-[email@domain.com](mailto:email@domain.com)
+His current focus is working with SugarCRM and products in it's ecosystem.
+
+He's also worked (or is working with) with Act!, Alfresco, MYOB, Viztopia, the Atlassian suite (JIRA, Confluence, HipChat, Bamboo, HipChat), Xero, Git, Act-on, MailChimp, WordPress, Python and much more.
+
+This website (the one you’re reading right now) is him learning out loud.
+
+A [list of Ben's tools of choice](http://ben.hamilton.id.au/tools).
+
+You can email Ben at his firstname AT hamilton.id.au.
