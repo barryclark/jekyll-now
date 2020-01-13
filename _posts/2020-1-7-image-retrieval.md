@@ -114,7 +114,7 @@ After initial attempt using only TFIDF (see figure 5), we found that many words 
 
 ![Figure 2]({{ site.baseurl }}/images/truck_with_man.jpg "image of a man walks behind an ice cream truck.")
 <p align="center">
-    <font size="2"><b>Figure 2.</b> image of "a man walks behind an ice cream truck.</font>
+    <font size="2"><b>Figure 2.</b> image of "a man walks behind an ice cream truck".</font>
 </p>
 
 and is tagged as {vehicle:car, vehicle:truck, outdoor:traffic light, person:person}. Note that the tag does not contain the word "man" but instead use the word "person". If we have ample amount of data, the regression should be able to detect correlation between the word "man" and the word "person", however, we decided that to push this task a little further, we perform word embedding using fastText the top words from TFIDF to vector representations. This should allow the synonym words to be embedded as close points in high dimensional vector space. For example, we measure the distance using cosine-similarity. The cosine similarity between "man" and "woman" is 0.77;"man" and "person" is 0.56;"woman" and "person" is 0.56; "man" and "truck" is 0.29; and "truck" and "person" is 0.14.
@@ -190,7 +190,7 @@ And the correct image is shown here.
 
 ![Figure 9]({{ site.baseurl }}/images/correct_image3.jpg "the correct image not retrieved 1.")
 <p align="center">
-    <font size="2"><b>Figure 9.</b> the correct image not retrieved 1</font>
+    <font size="2"><b>Figure 9.</b> image of "A small kitchen with low ceiling".</font>
 </p>
 
 In this case, we can say that all the images are too similar. One curious point is that the incorrect images contain a person/people in them, while the description does not mention people and the correct image does not contain people in it. The mis-identification happens because the TFIDF probably up-weigh the word "kitchen" but down-weigh "person". And as a result, the algorithm picks out the images with kitchen, while ignoring the facts whether they have persons in the images. One future improvement is to develop further an algorithm that can discriminate images based on objects not found in the images and not mentioned in the text.
@@ -199,14 +199,14 @@ Another sort of problem that I see is that the description can be quite complica
 
 ![Figure 10]({{ site.baseurl }}/images/image_too_complex_to_recall.png "example 2 of mis-identification.")
 <p align="center">
-    <font size="2"><b>Figure 10.</b>example 2 of mis-identification</font>
+    <font size="2"><b>Figure 10.</b> example 2 of mis-identification</font>
 </p>
 
 And the correct image looks like this.
 
 ![Figure 11]({{ site.baseurl }}/images/correct_image4.jpg "correct images not retrieved 2.")
 <p align="center">
-    <font size="2"><b>Figure 11.</b> the correct image not retrieved 2</font>
+    <font size="2"><b>Figure 11.</b> image of "A car driving through a tunnel under building".</font>
 </p>
 What we see here is that there might still be information in the text at a level higher than word level (such as at the sentence level). Moreover, the ImageNet dataset only classify objects, and not actions (i.e. the results are all nouns, and not verbs). This can be what are missing in our algorithms and should be investigated in the future.
 
