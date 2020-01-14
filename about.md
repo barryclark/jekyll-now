@@ -8,7 +8,7 @@ Hello, my name is Francisco Sanchez
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am a software engineer currently working on a PHP code base, with experience also on Java and other C based languages. I enjoy doing what I do :)
 
 ### Contact me
 
