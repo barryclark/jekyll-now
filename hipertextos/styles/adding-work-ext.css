@@ -1,7 +1,7 @@
 /* by Isard Miralles  ADDING EXTRA to Serveis - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.serveis-header {background-color:rgba(90,90,90,1);
+#page-header.serveis-header {background-color:rgba(33,33,33,1);
 	border:none;color: #fff;overflow: hidden;letter-spacing: 0.012em;
 	text-align: center;padding-top:0px;;height: 12vh;
 }
@@ -20,7 +20,7 @@
 
 /* Serveis (triptic) */
 #serveis-tab {text-align: center;}
-#serveis-tab img {width:64px;padding-top:48px;}
+#serveis-tab img {width:48px;padding-top:2px;}
 #serveis-tab p {padding-top:0px;font-size:15px;}
 .cell {max-width:5.5%;}
 
@@ -115,6 +115,7 @@ img.big-icon {width:52px; }
     #resumed-print.pushed-6 {margin-left:0;}
 }
 @media (max-width: 1242px) {
+    .cell {max-width:11%;}
     #serveis-tab .thumb-6 {width:100%;margin-left:0px;}
     #serveis-pre h2 {font-size: 1.5em;margin-bottom:0px;}
     #serveis-pre h4 small {letter-spacing: -0.01em!important}
