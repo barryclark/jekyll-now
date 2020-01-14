@@ -1,0 +1,780 @@
+--- !ruby/object:Comment
+post_id: '1'
+post_title: Crises conceal opportunities
+author_name: Nathanael
+author_email: nathanael@dynamicwebhosting.com.au
+author_url: http://www.poppaporkys.com/crackle.html
+content: "Lisa: Look on the bright side, Dad.  Did you know that the Chinese use the
+  same word for \"crisis\" as they do for \"opportunity\"?\r\n\r\nHomer: Yes!  Cris-atunity.\r\n\r\n(I
+  did it, for I Am The Anti-blog.)"
+created_at: 2007-09-20 03:50:02.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '6'
+post_title: Email size limts in Exchange
+author_name: mick allen
+author_email: michael.allen@rlf.co.uk
+author_url: http://www.rlf.co.uk
+content: i set ours to 20000kb but when people try to send me a 15.6mb file it gets
+  bounced back.  is there somewhere else on the server where a lower limit is overriding
+  the system manager settings?
+created_at: 2008-05-08 11:13:55.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '6'
+post_title: Email size limts in Exchange
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Not that I'm aware of.\r\n\r\nHowever a number of other things can impact
+  here, are you using any SPAM filtering software or service? Either locally on the
+  exchange server (i.e. Mail Marshal) or out in the 'cloud' (i.e. Trend IMHS)?"
+created_at: 2008-05-08 21:06:28.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '8'
+post_title: What are MX Records?
+author_name: KEN E.
+author_email: ken@motormartkenya.com
+author_url: http://www.motormartkenya.com
+content: Thanx, this is helpful, but which IP should the MX record point to? the mail
+  servers internal address or the clients external router address?
+created_at: 2008-01-28 05:30:37.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '8'
+post_title: What are MX Records?
+author_name: admin
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Ken, the MX record should point to the clients external IP address (use
+  <a href=\"http://whatismyip.org/\" rel=\"nofollow\">http://whatismyip.org/</a> to
+  find this) - Making sure it is a STATIC IP, not a dynamically assigned IP address.\r\n\r\nThe
+  clients external router should then pass any port 25 requests though to the internal
+  IP address of the mail server.\r\n\r\nHope that helps ;-)\r\nBen."
+created_at: 2008-01-28 05:58:54.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '8'
+post_title: What are MX Records?
+author_name: Gerry McHugh
+author_email: gerrym@capitalgroup.org.uk
+author_url: http://www.capitalgroup.org.uk
+content: thanks for this,I am havoning ongoing problems with web hosting providers
+  being unable or unwilling to point the mx record to my new fixed IP address
+created_at: 2008-03-08 05:37:15.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '8'
+post_title: What are MX Records?
+author_name: admin
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: 'Gerry, if your having trouble, two tools that may be of help are: <a href="http://www.mxtoolbox.com/index.aspx"
+  rel="nofollow">MX Toolbox</a> and <a href="http://www.mob.net/~ted/tools/index.html"
+  rel="nofollow">Ted''s Homemade web tools</a>.'
+created_at: 2008-03-08 11:44:07.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '11'
+post_title: Downgrade Vista to XP?
+author_name: Stephen Hamilton
+author_email: stephen@hamilton.id.au
+author_url: http://topicalhuman.com
+content: Windows Vista = Windows Millennium Edition V.2
+created_at: 2007-09-27 07:22:21.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '14'
+post_title: What is VDI?
+author_name: Stephen Hamilton
+author_email: stephen@hamilton.id.au
+author_url: http://topicalhuman.com
+content: Is there meant to be a link here?
+created_at: 2007-12-06 05:55:33.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '14'
+post_title: What is VDI?
+author_name: admin
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: 'Yup. Sorry, here you go: <a href="http://alsolorzano.com/blogs/tips__tricks/archive/2007/11/21/state-of-the-union-what-is-going-on-with-vdi-virtual-desktop-infrastructure.aspx"
+  rel="nofollow">Link  to the article here</a>.'
+created_at: 2007-12-06 09:27:01.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '14'
+post_title: What is VDI?
+author_name: MIKE
+author_email: michael.lindsay@ins.com
+author_url: ''
+content: No article via link. Can you send doc to email address. Thanks
+created_at: 2008-01-30 05:17:04.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '14'
+post_title: What is VDI?
+author_name: admin
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: I'd love to, but I didn't write the document... the link is working again.
+  Read it while you can.
+created_at: 2008-02-03 07:32:23.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '14'
+post_title: What is VDI?
+author_name: chethanv
+author_email: chethanv458@yahoo.co.uk
+author_url: ''
+content: "Can you send doc to email address\r\nThanks"
+created_at: 2008-09-10 05:38:50.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '14'
+post_title: What is VDI?
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: ";-) nope. Sorry, but I didn't write it. I read it, I commented on it, follow
+  the link. Unfortunately if the link doesn't work, I can't help you."
+created_at: 2008-09-15 11:37:56.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '19'
+post_title: More GRUB editing
+author_name: Stephen Hamilton
+author_email: stephen@hamilton.id.au
+author_url: ''
+content: Any idea if this works on an imac? I'm using bootcamp for Mac OS and Win
+  XP, but I'd love to add one of the flavours of linux to the mix.
+created_at: 2008-02-19 09:26:45.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '19'
+post_title: More GRUB editing
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au
+content: Honestly I don't know as I've not played with the Mac enough. But a quick
+  <a href="http://www.google.com/search?&amp;q=grub+mac" rel="nofollow">google</a>
+  turned up this link about <a href="http://fedoraproject.org/wiki/FedoraOnMactel"
+  rel="nofollow">fedora on a Mac</a> - so GRUB on a Mac is not unheard of.
+created_at: 2008-02-19 13:33:21.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '21'
+post_title: The key to "True Fans"
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Just to add some more to this, reading Lee's post <a href=\"http://leehopkins.net/2008/03/06/word-of-mouth-is-still-the-key-to-influence/\"
+  rel=\"nofollow\">Word of mouth is still the key to influence</a> adds more twist
+  to this topic, as in who you identify as the the Artist and who is the True Fan.\r\n\r\nSome
+  times newer thoughts are really worthwhile remixes of older thoughts."
+created_at: 2008-03-08 12:26:18.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '26'
+post_title: What version of SQL Server is running?
+author_name: SQL 2005 Versions &#8212; ben.hamilton.id.au
+author_email: ''
+author_url: http://ben.hamilton.id.au/sql/sql-2005-versions
+content: "[...] determining SQL versions [...]"
+created_at: 2008-10-22 06:13:01.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '31'
+post_title: 'How to: shortcut to Network Connection for Vista'
+author_name: Alex
+author_email: AlexPatrascu@gmail.com
+author_url: ''
+content: 'I''ve found a video tutorial for this: http://hackyourwindows.com/How-to-create-a-direct-link-to-Network-Connections-94.html'
+created_at: 2009-04-13 16:37:14.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '31'
+post_title: 'How to: shortcut to Network Connection for Vista'
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: Thanks Alex.
+created_at: 2009-04-13 21:09:09.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '34'
+post_title: 'OT: Mount Barney hike photo'
+author_name: Stephen Hamilton
+author_email: stephen@hamilton.id.au
+author_url: http://www.topicalhuman.com
+content: looks cool!
+created_at: 2008-08-26 06:30:48.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '52'
+post_title: Resurrecting Terminal Server
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: Just realised that I didn't note that this server was some 1200km away, so
+  it was all remotely done.
+created_at: 2008-09-16 08:19:33.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '52'
+post_title: Resurrecting Terminal Server
+author_name: Gary
+author_email: Gary@DeltaTechInc.com
+author_url: ''
+content: Very similar symptoms to our server (which started about the same time as
+  this post!), except that we still can't log onto it.  There's no Explorer entry
+  under Image File Execution, so we're still looking for possible solutions.
+created_at: 2008-10-22 15:38:15.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '52'
+post_title: Resurrecting Terminal Server
+author_name: ronad
+author_email: ronald.bottenberg@nl.fujitsu.com
+author_url: ''
+content: "same problem with windows server 2008 core, happend after adding machine
+  to domain.\r\nabove reg key was not the solution still looking"
+created_at: 2008-11-02 19:25:56.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '52'
+post_title: Resurrecting Terminal Server
+author_name: Fede
+author_email: fedesmith3@hotmail.com
+author_url: ''
+content: "Did you find the solution to this?\r\nThanks!"
+created_at: 2009-03-20 14:03:07.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '52'
+post_title: Resurrecting Terminal Server
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Other than the entry for <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows
+  NT\\CurrentVersion\\Image File Execution Options\\Explorer</code> ?? \n\nNo, no
+  other solution found."
+created_at: 2009-03-30 00:54:44.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '69'
+post_title: All aboard!
+author_name: Col Beardmore
+author_email: Col@TradeBoost.com.au
+author_url: ''
+content: "Hi Ben,\r\n\r\nI too have just taken the 'Train' out of Dolphin, it was
+  hard to find a space on board the crowded train\r\n\r\nSome good folks left behind
+  at Dolphin as we both start the next part of life's journey.\r\n\r\nGood luck"
+created_at: 2008-10-02 02:35:44.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '69'
+post_title: All aboard!
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: ";-) the train I'm on is picking up steam, and the route is scenic!"
+created_at: 2008-10-26 23:14:15.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '99'
+post_title: SQL 2005 Versions
+author_name: What version of SQL Server is running? &#8212; ben.hamilton.id.au
+author_email: ''
+author_url: http://ben.hamilton.id.au/microsoft/what-version-of-sql-server-is-running
+content: "[...] how to tell the difference between versions of Microsoft SQL [...]"
+created_at: 2008-10-22 06:16:26.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '99'
+post_title: SQL 2005 Versions
+author_name: What version of SQL (revisited) &#8212; ben.hamilton.id.au
+author_email: ''
+author_url: http://ben.hamilton.id.au/general/what-version-of-sql-revisited
+content: "[...] posted previously on how to find out what version of SQL is running,
+  but this newer KB link above adds SQL 2008 [...]"
+created_at: 2009-06-22 03:14:06.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '103'
+post_title: Why LinkedIn and not Facebook
+author_name: Danny Bu
+author_email: dannybu@gmail.com
+author_url: http://www.affluentpauper.com
+content: The purpose of Facebook is to market the masses.  It's value is intrinsic
+  to the fact that there are so many people in it providing personal data that can
+  be used for mass marketing purposes or community engagement.  If your sole interest
+  for social networking is business related and you have no interest in mass marketing
+  then you do not need to be on Facebook.
+created_at: 2008-12-11 03:26:50.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '103'
+post_title: Why LinkedIn and not Facebook
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: Yup, horses for courses. Facebook DOES have use, however its use is different
+  to LinkedIn, for me at least.
+created_at: 2008-12-11 03:49:55.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '132'
+post_title: Become a blogger
+author_name: Danny Bu
+author_email: dannybu@gmail.com
+author_url: http://www.affluentpauper.com
+content: Hey.  Do you provide e-mail subscriptions on your blog?  Can I have access
+  to your forum?
+created_at: 2008-12-11 03:23:55.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '132'
+post_title: Become a blogger
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Not as yet, I will have email subscriptions available soon (within next
+  week or so).\r\n\r\nRe the Becomeablobber forums, you need to signup, see the link
+  in the article above (or <a href=\"http://www.becomeablogger.com/go.php?offer=benham&pid=3&u=http://www.becomeablogger.com/roadmap\"
+  rel=\"nofollow\">go here</a> - once you've done that you can also access the PRIVATE
+  BECOME A BLOGGER forums run by Yaro & Gideon."
+created_at: 2008-12-11 03:48:05.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '143'
+post_title: Security on crackberries
+author_name: Danny Bu
+author_email: dannybu@gmail.com
+author_url: http://www.mushygoo.com
+content: Curious.  Are there any applications out there that could potentially restore
+  deleted blackberry data?  If so that would need to be a consideration in the entire
+  security on handhelds debate.
+created_at: 2009-01-15 16:19:12.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '143'
+post_title: Security on crackberries
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Danny, I'm sure there would be. But once again, the level of knowledge and
+  access to resources is greater than the general public (or thief) has.\r\n\r\nTo
+  protect against the DETERMINED and TARGETING thief is very very difficult as the
+  perpetrator  only has to find one way in.\r\n\r\nWith features such as the one in
+  HHC (above) it greatly reduces the risk you are exposed to. If you leave your BB
+  in a taxi, at the airport, falls out of your pocket, someone pickpockets you - then
+  this protects you in these cases. \r\n\r\nIf someone is specifically targeting you
+  and your company - then it is a question of how many resources they have and how
+  badly they want your data."
+created_at: 2009-01-15 21:11:20.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '147'
+post_title: Looking ahead
+author_name: AWM
+author_email: vacfp81@yahoo.com
+author_url: http://www.abundantwealthmastery.com
+content: "It's never too late to learn to appreciate yourself and see the unrecognized
+  potentials that one possessed.\r\n\r\nThere are professional coaches that are willing
+  to help out in reinventing oneself and bring out the best in you."
+created_at: 2009-03-20 05:46:47.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '147'
+post_title: Looking ahead
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: True, I've utilised the services of a coach on occasion. Very helpful.
+created_at: 2009-03-20 05:59:45.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '158'
+post_title: Should you use a twitter auto DM?
+author_name: Lee
+author_email: Lee@LeeHopkins.com
+author_url: http://LeeHopkins.net
+content: "I use the following auto dm:\r\n\r\n\"Thanks for following me &lt;&gt;.
+  I blog at LeeHopkins.net on business communication issues.\""
+created_at: 2009-02-25 04:41:59.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '158'
+post_title: Should you use a twitter auto DM?
+author_name: Urban Interns
+author_email: urbaninterns@gmail.com
+author_url: http://www.urbaninterns.com
+content: Ben, I like your comments on auto DM and would like to emulate what you do
+  but I can't figure out how to set up an auto DM!  Can you tell me how to do it?  Thanks!
+created_at: 2009-04-01 17:44:39.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '158'
+post_title: Should you use a twitter auto DM?
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: Hi, there are a number of third party products that do this, one is <a href="http://www.tweetlater.com/"
+  rel="nofollow">tweetlater.com</a>.
+created_at: 2009-04-02 09:29:12.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '158'
+post_title: Should you use a twitter auto DM?
+author_name: DJ Technasty
+author_email: djtech@djtechnasty.com
+author_url: http://www.djtechnasty.com/minimix
+content: Your point is valid, but this also depends on what your followers interests
+  are and what your links appear to indicate on the DM. I like to auto DM new followers
+  with links to my latest mega mix (a direct link to high quality mp3), and a link
+  to a seperate mp3 page also loaded with new direct link high qual mp3s that our
+  service promotes. I also include a link to our upload page. That's a Thanks followed
+  by 3 links and i've never had an issue. Of course i'm not giving them any adverts
+  or trying to sell anything. Now if they decide to select a different link on our
+  navigation bar they will find out more on our various services. It seems that the
+  younger tweeters in the music bizz or fans of the bizz appreciate the grind and
+  like getting access to the music. I get tweets all day thanking me for these links.
+created_at: 2009-04-12 20:44:56.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '173'
+post_title: Social media workshops
+author_name: Stephen Hamilton
+author_email: stephen@hamilton.id.au
+author_url: http://stephenhamilton.wordpress.com
+content: Congratulations - it sounds like it went well. It will be interesting to
+  see if any of the students take the initative and link with you through LinkedIn
+  or elsewhere.
+created_at: 2009-06-16 23:08:32.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '173'
+post_title: Social media workshops
+author_name: Gillian Kelly, Personal Branding Expert
+author_email: jill@careeredge.com.au
+author_url: http://www.careeredge.com.au
+content: Isn't it great to see a school that supports its students to proactively
+  manage their career before they leave school!  In the new world of work visibility
+  is just as important as ability, but your online reputation has to be managed carefully
+  and strategically. I'm sure after all the fantastic tips you gave them yesterday
+  they will be well ahead of many of their peers in this regard already.
+created_at: 2009-06-16 23:19:10.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '173'
+post_title: Social media workshops
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://www.ben.hamilton.id.au
+content: It did go well - and one of the students has already signed up to twitter
+  and connected. See where it goes.
+created_at: 2009-06-17 00:31:07.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '173'
+post_title: Social media workshops
+author_name: Jye Sawtell-Rickson, BBC Student
+author_email: jyesawtellrickson@gmail.com
+author_url: ''
+content: I'm trying to get LinkedIn working! Problem is i can't seem to verify my
+  email address! :S But i shall keep trying!
+created_at: 2009-06-17 07:26:51.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '173'
+post_title: Social media workshops
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Jye, normally once you give LinkedIn your email address they will send you
+  an email with a confirmation link.\r\nWhen you get that email, click the link, that
+  should do the trick.\r\nIs that happening? \r\nAlso rather than give any details
+  away here in this comment thread, email me at ben AT hamilton.id.au and I'll help
+  you out."
+created_at: 2009-06-17 08:37:45.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '225'
+post_title: 'How to: discover open files on Microsoft Server'
+author_name: Raahul
+author_email: raahul@evolutionmarketing.com.au
+author_url: ''
+content: Thanks for that. Lifesaver at the moment.
+created_at: 2010-07-22 06:22:39.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '235'
+post_title: Setting up WriteMonkey on WordPress
+author_name: Annabel Candy, Get In the Hot Spot
+author_email: annabelcandy@gmail.com
+author_url: http://www.getinthehotspot.com/
+content: "<p>It sounds great but worried about the set up time. Please tell, how long
+  did it take? Writing's not the problem for me but distractions are so this sounds
+  like a great solution. Thanks for sharing it with us:)</p>\n"
+created_at: 2010-08-07 03:30:38.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '235'
+post_title: Setting up WriteMonkey on WordPress
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "<p>Hi Annabel, \n it took me about 30min to do it all. However, it will
+  only take less than 5min to download and run WriteMonkey. I'd suggest you do that
+  first, make sure it works the way you want to work. If if does (and it did for me)
+  then install the firefox addon, then if you want to write your pieces using the
+  Markdown markup, then take the extra step.</p>\n\n<p>Start with step one, and progress
+  from there.</p>\n\n<p>Look forward to hearing your thoughts and experiance in getting
+  it up and going.</p>\n"
+created_at: 2010-08-07 03:48:10.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '235'
+post_title: Setting up WriteMonkey on WordPress
+author_name: Stephen Hamilton
+author_email: stephen@hamilton.id.au
+author_url: http://mettlepress.com.au
+content: "<p>Sounds interesting, Ben. I've looked at the screenshots on the WriteMonkey
+  website, but I'm not sure I totally get it yet...I might just have to try installing
+  it and giving it a go.</p>\n"
+created_at: 2010-08-09 11:01:14.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '235'
+post_title: Setting up WriteMonkey on WordPress
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: |
+  <p>The primary benefit I'm getting from using WriteMonkey is that my screen is clear. No task bar, nothing. Pressing and holding the F3 key let's me 'peek' at what's behind, and F11 makes it a regular window. But fullscreen is where the love is.</p>
+
+  <p>Also, to make it more readable, I'm using the Consolas font at 15 points in Silver on an almost, but not quite, black background.</p>
+
+  <p>Loving it.</p>
+created_at: 2010-08-09 11:51:41.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '284'
+post_title: Is using XP Unlimted legal?
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: |
+  <p>Just found this forum post as well, and I quote:</p>
+
+  <blockquote>They call it XPUnlimited as a trick to fool buyers into buying something that they cannot use. The legal issues are normally skillfully passed on to the end user so that the software company is not actually the one breaking the law but the person installing the software</blockquote>
+
+  <p>Source: <a href="http://community.spiceworks.com/topic/105659?page=1#entry-467861" rel="nofollow">community.spiceworks.com</a></p>
+created_at: 2010-09-09 05:56:44.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '356'
+post_title: Who should pay for Microsoft SQL installations that go wrong?
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "I've now got it working and the following is the distilled version of how,
+  hope it helps any others struggling with this:\r\n\r\n1. The support staff in Sage
+  Business Solutions Melbourne (bless 'em) gave me a pointer that if \"Microsoft .NET
+  Framework 4 Client Profile\" is installed it gives troubles. Therefore they suggested
+  uninstalling it prior to commending an SQL 2008 install. I don't know why or what
+  but this was step 1. Note that just doing this still gave me a failed SQL install.
+  I'd love to know more about the 'why' here. I'd also like to have been informed
+  earlier instead of after me jumping up and down and making phone calls. But that's
+  a topic for another day. For now I'm very happy with their suggestion as it does
+  appear to have contributed to a successful install, which is GOAL NUMBER ONE.\r\n\r\n
+  \r\n\r\n2. During the install you get the option to set which account the SQL Server
+  Database Engine uses, instead of setting to NT AUTHORITY\\SYSTEM as per <a href=\"http://kb.sagesoftwareonline.com/cgi-bin/sagesoftwareonline.cfg/php/enduser/std_adp.php?p_faqid=26994\"
+  rel=\"nofollow\">Sage KB26994</a>, leave it as the default. After the installation
+  is complete you then go to services.msc and change it to Local System then.\r\n\r\n3.
+  As per <a href=\"http://support.microsoft.com/kb/955666\" rel=\"nofollow\">Microsoft
+  KB955666</a> you can't use a 'number' or 'pound' (#) sign in the path name. Now
+  I did NOT have a pound sign in the path, but there was a space in one of the folder
+  names and a 'plus' sign (+). So taking to heart Microsofts admonition, I copied
+  the installer to a folder C:\\SQL2008ExpR2\\*.* and ran it from there.\r\n\r\nFollows
+  is a list of the various errors I've seen during this process:\r\n\r\n\"MsiGetProductInfo
+  failed to retrieve ProductVersion for package with Product Code = '{4AB6A079-178B-4144-B21F-4D1AE71666A2}'.
+  Error code: 1608.. \" See <a href=\"http://www.christopherkane.com/post/2009/07/16/MsiGetProductInfo-failed-to-retrieve-ProductVersion-for-package-with-Product-Code-3d-7bA43BF6A5-D5F0-4AAA-BF41-65995063EC447d-Error-code-1608.aspx\"
+  rel=\"nofollow\">here</a> and <a href=\"https://blogs.msdn.com/b/sqlserverfaq/archive/2009/06/13/upgrade-from-sql-2005-to-sql-2008-might-fail-with-msigetproductinfo-error.aspx\"
+  rel=\"nofollow\">here</a>.\r\n\r\n\"Wait on the Database Engine recovery handle
+  failed. Check the SQL Server error log for potential causes.\" See <a href=\"http://support.microsoft.com/kb/960781\"
+  rel=\"nofollow\">here</a>.\r\n\r\n\"Error: 15209, Severity: 16, State: 1. An error
+  occurred during encryption.\" See <a href=\"http://support.microsoft.com/kb/920114\"
+  rel=\"nofollow\">here</a>.\r\n\r\nAttempting to open registry subkey Software\\Microsoft\\PCHealth\\ErrorReporting\\DW\\Inst​alled\r\nAttempting
+  to get registry value DW0200\r\nSubmitted 1 of 1 failures to the Watson data repository\r\nRefer
+  <a href=\"http://social.msdn.microsoft.com/Forums/en/sqlsetupandupgrade/thread/3e27323c-632d-4205-9e5f-63bb30f8236f\"
+  rel=\"nofollow\">here</a>, <a href=\"https://blogs.msdn.com/b/psssql/archive/2008/08/11/sql-server-2008-visual-studio-2008-sp1-and-net-framework-3-5-sp1-explained.aspx\"
+  rel=\"nofollow\">here</a> and <a href=\"http://support.microsoft.com/kb/955666\"
+  rel=\"nofollow\">here</a>.\r\n\r\nHope this helps someone short cut the time to
+  resolve their SQL install.\r\n\r\nBen."
+created_at: 2011-02-02 00:15:43.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '371'
+post_title: Games at Work
+author_name: Stephen Hamilton
+author_email: stephen@mettlepress.com.au
+author_url: http://mettlepress.com.au
+content: "Fascinating.\r\n\r\nI've heard of this kind of thing before, but it is obvious
+  the tools are available to make this kind of implementation of game psychology into
+  everyday business, a reality.\r\n\r\nAll it takes is a bit of creativity, which
+  is the fun part anyway! :) I'll be chatting to a couple of colleagues about this
+  later."
+created_at: 2011-04-04 05:03:24.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '375'
+post_title: Why Share Your Knowledge?
+author_name: Mitch Joel - Twist Image
+author_email: mitch@twistimage.com
+author_url: http://www.twistimage.com/blog
+content: Contrary view? I'd say my view is exactly in-line with yours. What you're
+  leaving out is strategy. My strategy (similar to the people you mention) is to to
+  establish myself and my company (Twist Image) as a recognized authority. I am not
+  attempting to monetize my content in a direct fashion (like the traditional media
+  outlets). My Blog post the other day was about them and their strategy to charge
+  for valuable content (and the perspective given by one of the world's leading media
+  players). It was not about people like you and me. In fact, if you read the first
+  chapter of my book (which you would have to pay for) or even dig deeper into my
+  Blog (which is free), you'll note that my agency business and all of the amazing
+  opportunities that have come from that have roots in the Blog and how it has helped
+  establish my name and that of my agency by sharing with people our thoughts on new
+  media.
+created_at: 2011-04-06 10:19:26.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '375'
+post_title: Why Share Your Knowledge?
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Mitch, you're right, your post is about what Sir Martin Sorrell said about
+  media outlets.\r\n\r\nAs far as media companies surviving, I agree they either need
+  to charge for content. Or adapt in some other way. I don't believe that getting
+  a goverment subsidy is an acceptable business model, ok for a short term, unforeseeable
+  event, but not as an ongoing business model.\r\n\r\nAggregating content is worthless
+  without thoughtful curation. That is, unless a deliberate bias is introduced people
+  won't be interested. To use my example above, people won't stick at a site that
+  aggregates content about anything to do with skateboards. But the site that aggregates
+  content about skateboards and curates that list so that it's bias is toward reducing
+  pollution, that will appeal to that niche, better again is curation that add's commentary,
+  thought provoking asides or shows application/use of the information.\r\n\r\nI believe
+  the media industry is undergoing an 'adapt or die' phase now. How it turns out is
+  anyones guess. Perhaps Sorrell can foretell that future than we can. But either
+  way, as you point out, we're not in the 'media' business, and sharing our knowledge
+  is essential if we're going to prove to our prospective and existing clients that
+  we know how to do our thing well.\r\n\r\nBen."
+created_at: 2011-04-06 12:38:59.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '375'
+post_title: Why Share Your Knowledge?
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "In a message to me, <a href=\"http://twitter.com/karolinecumming/\" rel=\"nofollow\">@karolinecumming</a>
+  raises a question that I'll answer here in the comments:\r\n\r\nThe question (paraphrased)
+  is: If a persons <strong>skills or products</strong> are their value, they can share
+  (give away) knowledge for free. But if <strong>advice</strong> is their product
+  how can they not charge for it?\r\n\r\nTo answer that, take the example of Mitch
+  above, he gives away knowledge on his blog <a href=\"http://www.twistimage.com/blog/\"
+  rel=\"nofollow\">Twist Image</a>, makes money from his book <a href=\"http://www.twistimage.com/book\"
+  rel=\"nofollow\">Six Pixels of Separation</a> and consulting fees. \r\n\r\nOthers
+  do the same, like David Allen (famous for <a href=\"http://www.davidco.com/\" rel=\"nofollow\">Getting
+  Things Done</a>) who gives away knowledge via twitter, his blog and podcast. He
+  makes money by selling other products, books, seminars, kits etc.\r\n\r\nI've heard
+  it said \"that if content is king, context is god\" (link?). Sharing knowledge is
+  the content. Just because you've shared it, doesn't mean the reciever 'gets' the
+  context, the application to them. They may get a glimpse, but they'll pay for you
+  to explain the context, explain and show how it applies to them so that they can
+  benefit from it."
+created_at: 2011-04-06 12:59:54.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '375'
+post_title: Why Share Your Knowledge?
+author_name: Karoline Cumming
+author_email: karoline@clearidentity.com.au
+author_url: http://www.clearidentity.com.au
+content: "Thanks Ben for fielding my question :)  and providing a great answer - you
+  are right, there are many people out there who balance giving out *knowledge* (content)
+  for free, while making money for their *skill* (context) in other ways.\r\n\r\nI
+  think a key for me that you mentioned in the reply to Mitch is niche. Even though
+  you were talking about media and aggregating content, I think that does apply to
+  business owners (particularly micro/sme)... there is so much competition in every
+  industry, and now that the likes of social media, blogging etc have made the world
+  so much smaller the competition is even more fierce.  \r\n\r\nBy finding context
+  in our own niche, we can find ways to become needed by that niche (and therefore
+  have value they're willing to pay you for).  I see many business owners trying to
+  spread their net too wide, hoping to catch anything and everything and not being
+  specific enough to be truly deemed an expert. People will only pay for what has
+  value specifically to them (that goes for both on- and off-line). \r\n\r\nSo Ben,
+  I totally agree that knowledge given for free helps to establish the level of skill
+  you hold (and that can't be a bad thing?). Your skill - whether it's advice, ability,
+  product, service etc - then needs to be set in a valuable context to be able to
+  sell it.  It seems to me that in business, value is determined by your niche, rather
+  than the wider audience.\r\n\r\nThanks for helping me see this more clearly - you've
+  helped me clarify my point of view on this subject!! :)"
+created_at: 2011-04-07 01:42:23.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '375'
+post_title: Why Share Your Knowledge?
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: Karoline, glad I've been able to help :).
+created_at: 2011-04-07 02:55:18.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '375'
+post_title: Why Share Your Knowledge?
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "<a href=\"http://twitter.com/catmatson\" rel=\"nofollow\">@catmatson</a>
+  chimes in with a blog/video post \"<a href=\"http://alito.com.au/index.php?pageid=37\"
+  rel=\"nofollow\">Free or for a Fee? The *Content* debate</a>\".\r\n\r\nGreat thoughts
+  as she answers this with her opinion on the subject."
+created_at: 2011-04-07 05:27:39.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '902'
+post_title: 'Team Evolution Marketing! These are the guys that implement and fix Act!
+  & SugarCRM for you. #blog'
+author_name: Ben Hamilton
+author_email: ben@hamilton.id.au
+author_url: http://ben.hamilton.id.au/
+content: "Left to right, Damon, Jared, Ben.\r\n\r\nThis post was also a test of an
+  <a href=\"https://ifttt.com/\" rel=\"nofollow\">IFTTT</a> recipe to automatically
+  post any <a href=\"http://instagram.com/p/gFKWfSHbdc/\" rel=\"nofollow\">Instagram
+  photos</a> I take that are tagged with #blog here to my blog. It worked :)"
+created_at: 2013-10-30 06:36:56.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '1276'
+post_title: Numbering tasks in OmniFocus 2 for Mac OS X
+author_name: ben.hamilton.id.au | Faster Numbering of OmniFocus Tasks
+author_email: ''
+author_url: http://ben.hamilton.id.au/productivity/faster-numbering-of-omnifocus-tasks
+content: "[&#8230;] wrote up how I&#8217;m numbering tasks in OmniFocus, but I&#8217;ve
+  now modified the Keyboard Maestro recipe so it&#8217;s just a touch [&#8230;]"
+created_at: 2014-07-23 07:05:52.000000000 +00:00
+
+--- !ruby/object:Comment
+post_id: '1284'
+post_title: Faster Numbering of OmniFocus Tasks
+author_name: ben.hamilton.id.au | Numbering tasks in OmniFocus 2 for Mac OS X
+author_email: ''
+author_url: http://ben.hamilton.id.au/how-to/numbering-tasks-in-omnifocus-2-for-mac-os-x
+content: "[&#8230;] Here is a screenshot of the Keyboard Maestro recipe (edit: I&#8217;ve
+  since modified this recipe to be a little faster) [&#8230;]"
+created_at: 2014-07-23 07:07:29.000000000 +00:00
+
