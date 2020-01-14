@@ -15,6 +15,6 @@ make sure those are accurate with the data from the guys at
 [Keep Your Daydream](http://www.keepyourdaydream.com/payload/) I wrote a simple online calculator.
 
 Is it open source? Well of course it is, but even better, you can access it 
-from your phone or computer. [https://frsanchez.github.io/TowingCapacity/]
+from your phone or computer. [Link](https://frsanchez.github.io/TowingCapacity/)
 
 Hopefully it works for a lot of people and please leave a comment here if you use it.
