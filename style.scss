@@ -278,6 +278,47 @@ nav {
   background-color: $lightGray;
 }
 
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.form-control {
+  padding: .375rem .75rem;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group-prepend {
+  margin-right: -1px;
+  margin-bottom: 0;
+  align-items: center;
+  padding: .375rem .75rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 12rem;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
