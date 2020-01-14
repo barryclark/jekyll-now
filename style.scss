@@ -285,72 +285,13 @@ nav {
   align-items: stretch;
   width: 100%;
 }
-.form-control {
-  padding: .375rem .75rem;
-  align-items: center;
-  margin-bottom: 0;
-  font-size: 1.2rem;
-  width: 7rem;
-  text-align: right;
-  font-weight: 400;
-  line-height: 1.5;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.input-group-prepend {
-  margin-right: -1px;
-  margin-bottom: 0;
-  align-items: center;
-  padding: .375rem .75rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  width: 12rem;
-  color: #495057;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.alert {
-  position: relative;
-  padding: .25rem 1.25rem;
-  margin-bottom: .2rem;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-}
-
-.alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
-}
-
-.input-group-suffix {
-  margin-left: -1px;
-  margin-bottom: 0;
-  padding: .375rem .75rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  width: 12rem;
-  color: #495057;
-}
 
 footer {
   padding: 20px 0;
   text-align: center;
 }
 
+@import "forms-alerts";
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
