@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![sunrise]({{ site.baseurl }}/images/Sunrise.JPG "Sunrise in Lake Stevens")
+
 Hello, my name is Francisco Sanchez
 
 ### More Information
