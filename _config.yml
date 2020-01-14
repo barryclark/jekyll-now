@@ -9,7 +9,7 @@ name: Francisco Sanchez
 description: Head Developer of Sanchez Parra labs
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://2.gravatar.com/avatar/24f17dde76c0de96a928f808d4a3b096?s=400&d=mm
+avatar: https://2.gravatar.com/avatar/24f17dde76c0de96a928f808d4a3b096?s=70
 
 #
 # Flags below are optional
@@ -28,7 +28,7 @@ footer-links:
   rss: # just type anything here for a working RSS icon
   twitter: tng2000
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: channel/UCpHil4mvqwh1ZKL3KEX6A9w 
+  youtube: channel/UCpHil4mvqwh1ZKL3KEX6A9w
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
