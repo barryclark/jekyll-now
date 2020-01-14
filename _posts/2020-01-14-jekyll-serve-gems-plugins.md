@@ -11,6 +11,8 @@ Configuration file: /Users/ben/git/benhamilton.github.io/_config.yml
        Deprecation: The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.
 </code></pre>
 
+<!--more-->
+
 To fix it, the `_config.yml` file needed the following:
 
 <pre><code>
