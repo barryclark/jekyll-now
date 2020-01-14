@@ -5,7 +5,7 @@
 	border:none;color: #000;overflow: hidden;letter-spacing: 0.012em;
 	text-align: center;padding-top:30px;
 }
-#page-header h1 {font-size:4em;line-height:.1em;margin-top:1.3em;font-weight:600;letter-spacing: -0.02em}
+#page-header h1 {font-size:4em;line-height:.1em;margin-top:1em;font-weight:600;letter-spacing: -0.02em}
 #page-header h2 {font-size:1.6em;font-weight: 200;letter-spacing: none;}
 #page-header h5 {font-weight: 200;font-size:1.1em;}
 
@@ -13,12 +13,13 @@
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
 
-#page-nav.nav-scroll {padding-top:10px;height:110px;border-bottom:thin solid #eee;}
-#page-nav.nav-scroll a {font-weight:normal ;letter-spacing: 0.01em}
+#page-nav.nav-scroll {padding-top:18px;padding-bottom:18px;border-bottom:thin solid #eee;heght:5em;}
+#page-nav.nav-scroll a {font-weight:normal ;line-height:1.6em;letter-spacing: 0.01em}
+#page-nav.nav-scroll img {min-width:48px;height:48px;}
 
-#page-nav {background-color:var(--color-white)!important;height:79px;overflow:hidden;}
+#page-nav {background-color:var(--color-white)!important;overflow:hidden;}
 #page-nav a {text-decoration:none;}
-#page-nav a:hover {color:var(--color-black);}
+#page-nav a:hover {color:var(--color-hard-grey);opacity:.69;border:thin solid #fff!important;background:transparent!important;}
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
 /* Serveis (triptic) */
