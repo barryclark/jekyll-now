@@ -9,57 +9,26 @@ icon: calc-200.png
 </script>
 
 ## Vehicle data
-<div class='input-group'>
-<span class="input-group-prepend">Curb Weight:</span><input class="form-control" type="text" placeholder="Curb Weight in pounds" id="curbWeight" aria-describedby="curbWeightHelp"><span class="input-group-suffix">lbs</span>
-</div>
 
+{% for towing in site.data.towing.vehicle %}
 <div class='input-group'>
-<span class="input-group-prepend">GVWR: </span><input class="form-control" type="text" placeholder="GVWR" id="gvwr" aria-describedby="gcvwrHelp"><span class="input-group-suffix">lbs</span>
+<span class="input-group-prepend">{{towing.label}}:</span><input class="form-control" type="text" placeholder="{{towing.description}}" id="{{towing.id}}" aria-describedby="curbWeightHelp"><span class="input-group-suffix">lbs</span>
 </div>
-
-<div class='input-group'>
-<span class="input-group-prepend">GCVWR: </span><input class="form-control" type="text" placeholder="GCVWR" id="gcvwr" aria-describedby="payloadHelp"><span class="input-group-suffix">lbs</span>
-</div>
-
-<div class='input-group'>
-<span class="input-group-prepend">Payload: </span><input class="form-control" type="text" placeholder="Payload" id="payload" aria-describedby="payloadHelp"><span class="input-group-suffix">lbs</span>
-</div>
-
-<div class='input-group'>
-<span class="input-group-prepend">Towing Capacity: </span><input class="form-control" type="text" placeholder="Towing Capacity" id="towingCapacity" aria-describedby="towingCapacityHelp"><span class="input-group-suffix">lbs</span>
-</div>
+{% endfor %}
 
 ## Estimated Payload (in the vehicle)
+{% for towing in site.data.towing.payload %}
 <div class='input-group'>
-<span class="input-group-prepend">Passengers:</span><input class="form-control" type="text" placeholder="Passengers in pounds" id="passengers" aria-describedby="passengersHelp">
-<span class="input-group-suffix">lbs</span>
+<span class="input-group-prepend">{{towing.label}}:</span><input class="form-control" type="text" placeholder="{{towing.description}}" id="{{towing.id}}" aria-describedby="curbWeightHelp"><span class="input-group-suffix">lbs</span>
 </div>
-
-<div class='input-group'>
-<span class="input-group-prepend">Cargo:</span><input class="form-control" type="text" placeholder="Payload" id="cargo" aria-describedby="cargoHelp">
-<span class="input-group-suffix">lbs</span>
-</div>
-
-<div class='input-group'>
-<span class="input-group-prepend">Total Payload:</span><input class="form-control" type="text" placeholder="0" id="totalPayload" aria-describedby="payload" disabled>
-<span class="input-group-suffix">lbs</span>
-</div>
+{% endfor %}
 
 ## Travel Trailer data
+{% for towing in site.data.towing.trailer %}
 <div class='input-group'>
-<span class="input-group-prepend">UVW:</span><input class="form-control" type="text" placeholder="UVW" id="tt_uvw" aria-describedby="uvwHelp">
-<span class="input-group-suffix">lbs</span>
+<span class="input-group-prepend">{{towing.label}}:</span><input class="form-control" type="text" placeholder="{{towing.description}}" id="{{towing.id}}" aria-describedby="curbWeightHelp"><span class="input-group-suffix">lbs</span>
 </div>
-
-<div class='input-group'>
-<span class="input-group-prepend">GVWR:</span><input class="form-control" type="text" placeholder="GVWR" id="tt_gvwr" aria-describedby="ttGwvrHelp">
-<span class="input-group-suffix">lbs</span>
-</div>
-
-<div class='input-group'>
-<span class="input-group-prepend">Hitch Weight:</span><input class="form-control" type="text" placeholder="Hitch Weight" id="tt_hitch" aria-describedby="ttHitchHelp">
-<span class="input-group-suffix">lbs</span>
-</div>
+{% endfor %}
 
 # Results
 <div class="alert alert-danger payload-alert" role="alert">
