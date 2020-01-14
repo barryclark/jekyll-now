@@ -22,6 +22,7 @@
 #serveis-tab {text-align: center;}
 #serveis-tab img {width:64px;padding-top:48px;}
 #serveis-tab p {padding-top:0px;font-size:15px;}
+.cell {max-width:5.5%;}
 
 /* Serveis */
 h3.head-section {color:var(--color-hardgrey) ;font-size:1.6em;font-weight:lighter ;line-height: 1.1em;margin-bottom:0px;}
