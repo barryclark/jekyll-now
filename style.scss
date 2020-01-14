@@ -290,6 +290,8 @@ nav {
   align-items: center;
   margin-bottom: 0;
   font-size: 1.2rem;
+  width: 7rem;
+  text-align: right;
   font-weight: 400;
   line-height: 1.5;
   background-color: #fff;
@@ -317,6 +319,31 @@ nav {
   border-radius: .25rem;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.alert {
+  position: relative;
+  padding: .25rem 1.25rem;
+  margin-bottom: .2rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.input-group-suffix {
+  margin-left: -1px;
+  margin-bottom: 0;
+  padding: .375rem .75rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 12rem;
+  color: #495057;
 }
 
 footer {
