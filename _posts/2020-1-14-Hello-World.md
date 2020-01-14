@@ -2,7 +2,7 @@
 layout: post
 title: First post!
 ---
-![my pond]({{ site.baseurl }}/images/poindfountain.png "my pond")
+![my pond]({{ site.baseurl }}/images/pondfountain.png "my pond")
 
 This is the first post on my new blog. I’m just getting this new blog going, so stay tuned for more. Subscribe below to get notified when I post new updates.
 
