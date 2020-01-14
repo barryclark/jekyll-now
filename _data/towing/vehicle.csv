@@ -1,0 +1,6 @@
+label,id,description
+Curb Weight,curbWeight,Curb Weight in pounds
+GVWR,gvwr,GVWR
+GCVWR,gcvwr,GCVWR
+Payload,payload,Payload
+Towing Capacity,towingCapacity,Towing Capacity

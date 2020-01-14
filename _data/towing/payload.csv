@@ -1,0 +1,4 @@
+label,id,description
+Passengers,passengers,Passengers in pounds
+Cargo,cargo,Cargo capacity
+Total Payload,totalPayload,Total Payload

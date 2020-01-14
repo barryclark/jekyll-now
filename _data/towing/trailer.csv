@@ -1,0 +1,4 @@
+label,id,description
+UVW,tt_uvw,Unloaded Vehicle Weight
+GVWR,tt_gvwr,Gross Vehicle Weight
+Hitch Weight,tt_hitch,Hitch Weight
