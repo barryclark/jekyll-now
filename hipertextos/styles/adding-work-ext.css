@@ -1,18 +1,17 @@
 /* by Isard Miralles  ADDING EXTRA to Serveis - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.serveis-header {background-image: url("/img/serveis.jpg");	background-position: top center;
-	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+#page-header.serveis-header {background-color:rgba(90,90,90,1);
 	border:none;color: #fff;overflow: hidden;letter-spacing: 0.012em;
-	text-align: center;padding-top:0px;height: 38vh;
+	text-align: center;padding-top:0px;;height: 12vh;
 }
-#page-header h2 {font-size:3em;line-height:1em;margin:0px!important;}
+#page-header h2 {font-size:2em;line-height:1em;margin:0px!important;}
 #page-header div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
 
-#page-header h2 {font-size:3em;padding-top:120px;font-weight: 400;letter-spacing: none;}
-#page-header h5 {padding-bottom:160px;font-weight: 200;}
+#page-header h2 {font-size:1.8em;padding-top:16px;font-weight: 200;letter-spacing: none;}
+#page-header h5 {font-weight: 200;font-size:1.1em;}
 
 #page-nav {background-color:var(--color-white)!important;height:79px;overflow:hidden;}
 #page-nav a {text-decoration:none;}
