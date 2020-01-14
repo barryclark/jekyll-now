@@ -14,27 +14,24 @@ title: 'constexpr Functions: Fundamentals and Application to Hashing'
 
 My primary motivation is to learn more about template metaprogramming and programming at compile time in general. As a pet project I aim to implement hash functions that work at compile time as well as runtime which gives me the opportunity to explore `constexpr` in C++ 11 and beyond.
 
-As the first hash function I chose the simple [djb2 hash function](http://www.cse.yorku.ca/~oz/hash.html) in the XOR variant. It is a very simple algorithm, which nevertheless has some [practical uses](https://github.com/hashcat/hashcat/issues/1925). Let us have a look at the C implementation:
-
-
+As the first hash function I chose the [djb2 hash function](http://www.cse.yorku.ca/~oz/hash.html). It is a very simple algorithm, which nevertheless has some [practical uses](https://github.com/hashcat/hashcat/issues/1925). Let us have a look at the C implementation:
 
 ```C
 unsigned long hash(unsigned char *str)
 {
-unsigned long hash = 5381;
-int c;
-while (c = *str++)
-{
-hash = (33*hash) ^ c; 
-}
-
-return hash; 
+	unsigned long hash = 5381;
+	int c;
+	while (c = *str++)
+	{
+		hash = (33*hash) ^ c; 
+	}
+	return hash; 
 }
 ```
 
-The function takes a C-style string, loops over all its elements until it reaches the zero-terminator, performes the hashing calculation and returns a hash. Nothing too crazy there except from some magical constants (5381 and 33). As a little sidenote: I have used the bitwise xor variant here and also written `hash=(33 * hash)^c` instead of the often cited `hash = ((hash << 5) + hash)` which is just the same thing but less readable. I trust my compiler to optimize the expression.
+The function takes a C-style string, loops over all its elements until it reaches the zero-terminator, performes the hashing calculation and returns a hash. Nothing too crazy there except from some magical constants (5381 and 33). As a little sidenote: I have used the bitwise xor variant here and also written `hash=(33 * hash)^c` instead of the often cited `hash = (((hash << 5) + hash)^c` which is just the same thing but less readable. I trust my compiler to optimize the expression.
 
-Let us see how we can transform it into a `constexpr` function that we can execute at compile time or at runtime first in C++ 17 and later on in C++ 11.
+Let us see how we can transform it into a `constexpr` function that can be executed at compile time or at runtime first in C++ 17 and later on in C++ 11.
 
 # Creating a C++ 17 constexpr djb2 Hash Function
 
@@ -74,7 +71,7 @@ The first problem is easily solved by using `boost::string_view` from the boost/
 unsigned long constexpr djb2_xor(const std::string_view & str);
 ```
 
-The second problem is more interesting, because the thibgs a `constexpr` function body is allowed to contain is so limited that I can [cite](https://en.cppreference.com/w/cpp/language/constexpr) it here in its entirety:
+The second problem is more interesting, because the things a `constexpr` function body is allowed to contain are very few. So few, in fact, that I can [cite](https://en.cppreference.com/w/cpp/language/constexpr) them here entirely:
 
 > the function body must be either deleted or defaulted or contain only the following: 
 > * null statements (plain semicolons)
@@ -84,9 +81,9 @@ The second problem is more interesting, because the thibgs a `constexpr` functio
 > * using directives 
 > * exactly one return statement
 
-That is not a lot we can do. But we will see that restrictions can also be a good thing. They force us to program in a way that e.g. functional programming enthusiasts will consider superior.
+We will see that restrictions can also be a good thing. Here, they force us to program in a way that functional programming enthusiasts will consider superior.
 
-So with all those restrictions we can see that `for` loops are out of the question. That means we have to implement the function recursively. Looking at the way the function works it is not hard to see how to implement it recursively. There is, however, one thing that we should always try to do: implementing functions as *tail-recursive*. This gives any decent compiler the chance to [optimize](https://en.m.wikipedia.org/wiki/Tail_call) the code and avoid the dreaded stack overflow. For this we have to have the function call itself (or return a value) as the last piece action of the function. If we tried to multiply to return value of the recursively called function by a factor that would not be tail-recursive because that multiplication would be the last operation in the function.
+So with all those restrictions we can see that `for` loops are out of the question. That means we have to implement the function recursively. Looking at the way the function works it is not hard to see how to do that. There is, however, one important thing when it comes to recursion: implementing functions as *tail-recursive*. This gives any decent compiler the chance to [optimize](https://en.m.wikipedia.org/wiki/Tail_call) the code and avoid the dreaded stack overflow. For this we have to have the function call itself (or return a value) as the last piece action of the function. If we tried to multiply to return value of the recursively called function by a factor that would not be tail-recursive because that multiplication would be the last operation in the function.
 
 ## Tail-Recursive Implementation
 We first need to create a helper implementation that loops through the characters of the string. So we need at least the string and the current position as function arguments. This would be enough if we did not want the function to be tail-recursive. But to make it tail-recursive we need one more argument and that is the hash value from the previous iteration. So the signature for the helper function is:
