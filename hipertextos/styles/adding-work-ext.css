@@ -23,9 +23,9 @@
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
 /* Serveis EDICIÓ WEB */
-#apple-center {margin-top:-15px!important;}
-#apple-center img {padding-left:12%;}
-
+#apple-center {margin-top:-45px!important;text-align: center ;}
+#apple-center img {padding:3%;}
+#apple-center h3 {font-size:1.5em;font-weight: 500; line-height: .75em; margin-bottom:12px;}
 
 /* Serveis (triptic) */
 #serveis-tab {text-align: center;}
