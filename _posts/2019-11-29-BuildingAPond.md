@@ -2,7 +2,7 @@
 layout: post
 title: Building a backyard pond
 ---
-Having a nice water feature in the backyard is always nice, but there are
+Having a water feature in the backyard is always nice, but there are
 some steps to maintain the feature that come along with any installation.
 If properly cared for the feature can last for years and give a nice touch
 to your house.
