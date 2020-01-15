@@ -6,7 +6,7 @@
 	text-align: center;padding-top:30px;
 }
 #page-header h1 {font-size:3.6em;line-height:.69em;margin-top:1em;font-weight:600;letter-spacing: -0.06em}
-#page-header h2 {font-size:1.2em;line-height:1em;font-weight: 400;letter-spacing: none;}
+#page-header h2 {font-size:1.2em;line-height:1em;margin:0px;font-weight: 400;letter-spacing: none;}
 #page-header h5 {font-weight: 200;font-size:1.1em;}
 
 #page-header div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
@@ -21,6 +21,11 @@
 #page-nav a {text-decoration:none;}
 #page-nav a:hover {color:var(--color-hard-grey);opacity:.69;border:thin solid #fff!important;background:transparent!important;}
 .list-unlisted li {	list-style: none;padding-left: 0;}
+
+/* Serveis EDICIÓ WEB */
+#apple-center {}
+#apple-center img {padding-left:12%;}
+
 
 /* Serveis (triptic) */
 #serveis-tab {text-align: center;}
