@@ -23,7 +23,7 @@
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
 /* Serveis EDICIÓ WEB */
-#apple-center {}
+#apple-center {margin-top:-15px!important;}
 #apple-center img {padding-left:12%;}
 
 
