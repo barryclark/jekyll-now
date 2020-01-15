@@ -10,6 +10,8 @@ description: "Request to speak at or sponsor Cloud Native London."
 <p>
 
 <div class="products">
+  
+{% include product.html title="Attend" subtitle="First Wednesday of each month" image="https://pbs.twimg.com/media/ENyKLL9X0AE9vLH?format=jpg&name=medium" url="https://www.meetup.com/Cloud-Native-London/" %}
 
 {% include product.html title="Speak" subtitle="Next available slots in early 2021" image="product-images/speak-at-cloud-native-london.jpg" url="/cloudnativelondon/speak" %}
 
