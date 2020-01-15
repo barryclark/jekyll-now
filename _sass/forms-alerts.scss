@@ -60,3 +60,19 @@
   width: 12rem;
   color: #495057;
 }
+
+.data-table {
+  width: 100%;
+  display: table;
+}
+
+.data-row {
+  display: table-row;
+}
+.data-entry {
+  display: table-cell;
+}
+
+.results {
+  display: table-cell;
+}

@@ -1,4 +1,4 @@
 label,id,description
-Passengers,passengers,Passengers in pounds
-Cargo,cargo,Cargo capacity
-Total Payload,totalPayload,Total Payload
+Passengers Weight,passengers,Passengers Weigth
+Cargo Weight,cargo,Cargo carried in your vehicle (not including the hitch)
+Total Payload,totalPayload,

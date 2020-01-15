@@ -1,6 +1,6 @@
 label,id,description
-Curb Weight,curbWeight,Curb Weight in pounds
-GVWR,gvwr,GVWR
-GCVWR,gcvwr,GCVWR
-Payload,payload,Payload
-Towing Capacity,towingCapacity,Towing Capacity
+Curb Weight,curbWeight,The weight of the vehicle without occupants, cargo or baggage.
+GVWR,gvwr,Gross Vehicle Weight Rating is is the maximum operating weight of a vehicle as specified by the manufacturer including fuel, accessories, driver, passengers and cargo
+GCVWR,gcvwr,Gross Vehicle Weight Rating is the he maximum weight of a loaded vehicle and its attached loaded trailer
+Payload,payload,Payload is the carrying capacity of the vehicle. It is the GVWR minus the curb weight
+Towing Capacity,towingCapacity,Is the maximum allowable weight that a vehicle can tow. Towing capacity is specified by the v­ehicle manufacturer and can usually be found in the owner’s manual

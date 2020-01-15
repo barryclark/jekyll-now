@@ -1,4 +1,4 @@
 label,id,description
-UVW,tt_uvw,Unloaded Vehicle Weight
-GVWR,tt_gvwr,Gross Vehicle Weight
-Hitch Weight,tt_hitch,Hitch Weight
+UVW,tt_uvw,Unloaded Vehicle Weight: is the weight of a trailer as manufactured at the factory. It does  not  include cargo, water, propane, or dealer-installed accessories.
+GVWR,tt_gvwr,Gross Vehicle Weight Rating is the amount of weight a trailer is rated to carry.
+Hitch Weight,tt_hitch,The amount of weight a travel trailer’s tongue places on the hitch it is mounted to.  

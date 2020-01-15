@@ -1,0 +1,4 @@
+label,id,alert
+Available Payload,availablePayload,Your payload exceeds your vehicle's limit
+New GVW,newgvw,Your Gross Vehicle Weight is exceeded
+New GCVW,newgcvw,Your Gross Combined Vehicle Weight is exceeded

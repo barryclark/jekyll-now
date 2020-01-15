@@ -36,7 +36,7 @@ $(document).ready(function() {
     var newgcvw = (data.tt_gvwr - data.tt_hitch) + newgvw;
 
     if (availablePayload < 0) {
-      $('.payload-alert').show();
+      $('.availablePayload-alert').show();
     }
     if (data.gvwr > 0 && newgvw > data.gvwr) {
       $('.newgvw-alert').show();
@@ -83,4 +83,5 @@ $(document).ready(function() {
   });
 
   loadCookies();
+  $( document ).tooltip();
 });
