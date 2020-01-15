@@ -38,10 +38,10 @@ $(document).ready(function() {
     if (availablePayload < 0) {
       $('.payload-alert').show();
     }
-    if (newgvw > data.gvwr) {
+    if (data.gvwr > 0 && newgvw > data.gvwr) {
       $('.newgvw-alert').show();
     }
-    if (newgcvw > data.gcvwr) {
+    if (data.gcvwr > 0 && newgcvw > data.gcvwr) {
       $('.newgcvw-alert').show();
     }
 
