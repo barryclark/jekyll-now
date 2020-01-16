@@ -24,9 +24,15 @@
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
 /* Serveis EDICIÓ WEB */
-#apple-center {margin-top:-45px!important;}
+#apple-center {margin-top:-15px!important;}
 #apple-center img {padding-right:0%;}
 #apple-center h3 {font-size:1.5em;font-weight: 500; line-height: .75em; margin-bottom:12px;}
+.pad-top {padding-top:120px;}
+.pad-top h2 {font-weight: 600;letter-spacing: -0.04em}
+.pad-top em a {color:var(--color-white) ;background-color:var(--color-link) ;padding:6px 15px 6px 15px;border-radius: 42px 42px 42px 42px;}
+.pad-top em a:hover {text-decoration: none;color:var(--color-link) ;background-color:#fff;}
+.pad-top i a {font-style: normal ;}
+
 
 /* Serveis (triptic) */
 #serveis-tab {text-align: center;}
