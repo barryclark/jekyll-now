@@ -23,6 +23,9 @@
 #page-nav a:hover {color:var(--color-hard-grey);opacity:.69;border:thin solid #fff!important;background:transparent!important;}
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
+#chi {text-align: center;}
+#chi img{max-width:12%;}
+
 /* Serveis section NEW!! */
 #colmns .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
 #colmns h4 {text-align: center !important}
