@@ -23,12 +23,12 @@
 #page-nav a:hover {color:var(--color-hard-grey);opacity:.69;border:thin solid #fff!important;background:transparent!important;}
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
+/* Serveis section NEW!! */
 # colmns.thumb-6 {min-width:100%!important;margin:0px!important;}
 #colmns .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
 #colmns h4 {text-align: center !important}
 #colmns p {letter-spacing: -0.03em; padding:0 6px 0 6px;font-size:17px;}
 
-/* Serveis EDICIÓ WEB */
 #apple-center {margin-top:-15px!important;}
 #apple-center img {padding-right:0%;}
 .pad-top {padding-top:120px;}
@@ -39,7 +39,7 @@
 .pad-top i a:hover {text-decoration: underline;}
 .pad-top i {font-weight: 400;color: var(--color-link);font-style:normal!important;}
 .pad-top h3  {font-size:1.5em;font-weight:500;line-height: 1.3em; margin-bottom:12px;letter-spacing: -0.032em}
-
+.inversed {text-align: right;}
 
 /* Serveis (triptic) */
 #serveis-tab {text-align: center;}
