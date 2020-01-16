@@ -33,6 +33,12 @@
 #colmns-1 h4 {text-align: left !important}
 #colmns-1 p {letter-spacing: -0.03em; padding:0 6px 0 6px;font-size:17px;}
 
+#shop {background-color:#eee ;}
+#shop .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
+#shop h4 {text-align: center !important}
+#shop p {letter-spacing: -0.03em; padding:0 6px 0 6px;font-size:17px;}
+
+
 #apple-center {margin-top:-15px!important;}
 #apple-center img {padding-right:0%;}
 .pad-top {padding-top:120px;}
