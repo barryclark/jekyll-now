@@ -30,7 +30,9 @@
 .pad-top h2 {font-weight: 600;letter-spacing: -0.04em;margin-bottom:1px;}
 .pad-top em a {font-size:18px;font-weight: lighter ; color:var(--color-white) ;background-color:var(--color-link) ;padding:4px 15px 4px 15px;border-radius: 50px 50px 50px 50px;letter-spacing: 0.012em}
 .pad-top em a:hover {text-decoration: none;color:var(--color-link) ;background-color:#fff;}
-.pad-top i a {font-style: normal ;line-height: 2.7em}
+.pad-top i a {font-style: normal ;line-height: 2.7em;text-decoration: none;letter-spacing: -0.02em}
+.pad-top i a:hover {text-decoration: underline;}
+.pad-top i {font-weight: 400;color: var(--color-link);font-style:normal!important;}
 .pad-top h3  {font-size:1.5em;font-weight:500;line-height: 1.3em; margin-bottom:12px;letter-spacing: -0.032em}
 
 
