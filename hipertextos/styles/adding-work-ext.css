@@ -28,10 +28,10 @@
 #apple-center img {padding-right:0%;}
 .pad-top {padding-top:120px;}
 .pad-top h2 {font-weight: 600;letter-spacing: -0.04em;margin-bottom:1px;}
-.pad-top em a {color:var(--color-white) ;background-color:var(--color-link) ;padding:6px 15px 6px 15px;border-radius: 42px 42px 42px 42px;}
+.pad-top em a {font-size:18px;font-weight: lighter ; color:var(--color-white) ;background-color:var(--color-link) ;padding:4px 15px 4px 15px;border-radius: 50px 50px 50px 50px;letter-spacing: 0.012em}
 .pad-top em a:hover {text-decoration: none;color:var(--color-link) ;background-color:#fff;}
-.pad-top i a {font-style: normal ;}
-.pad-top h3  {font-size:1.5em;font-weight:500;line-height: 1.2em; margin-bottom:12px;letter-spacing: -0.032em}
+.pad-top i a {font-style: normal ;line-height: 2.7em}
+.pad-top h3  {font-size:1.5em;font-weight:500;line-height: 1.3em; margin-bottom:12px;letter-spacing: -0.032em}
 
 
 /* Serveis (triptic) */
