@@ -6,7 +6,6 @@ location: London, UK
 image: /images/2020-01-16-kubernetes-and-containers-for-non-techies-rackspace-cloud-native-takeover-day.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/mn6OcmYZeijbCe
 twitter_moment:
-published: false
 tags:
   - Slides
   - "2020"
