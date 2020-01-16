@@ -34,7 +34,7 @@
 #colmns-1 p {letter-spacing: -0.03em; padding:0 6px 0 6px;font-size:17px;}
 
 
-#shop {background-color:#eee ;}
+#shop {background:linear-gradient(rgba(255,255,255,1),rgba(180,140,200,1))!important;min-height:300px;border:none;}
 #shop .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
 #shop h4 {text-align: center !important}
 #shop p {letter-spacing: -0.03em; padding:0 6px 0 6px;font-size:17px;}
