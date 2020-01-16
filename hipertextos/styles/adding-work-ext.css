@@ -24,8 +24,9 @@
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
 # colmns.thumb-6 {min-width:100%!important;margin:0px!important;}
-#colmns img {padding-left:25%;padding-right:25%;max-width:80%;}
+#colmns .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
 #colmns h4 {text-align: center !important}
+#colmns p {letter-spacing: -0.03em; padding:0 6px 0 6px;font-size:17px;}
 
 /* Serveis EDICIÓ WEB */
 #apple-center {margin-top:-15px!important;}
