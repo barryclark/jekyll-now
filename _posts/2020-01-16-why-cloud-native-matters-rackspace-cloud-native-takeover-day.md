@@ -16,3 +16,5 @@ tags:
 * Users expect continual innovation and perfect performance, which is driving changes in infrastructure.
 
 * The hardest thing to change is culture, whether that's introducing DevOps, women in tech or corporate open source.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited to go speak to several hundred Rackers about why cloud native matters! <a href="https://t.co/4Vg6npctbo">pic.twitter.com/4Vg6npctbo</a></p>&mdash; Cheryl Hung (@oicheryl) <a href="https://twitter.com/oicheryl/status/1217723774499463168?ref_src=twsrc%5Etfw">January 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
