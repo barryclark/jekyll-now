@@ -12,11 +12,13 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <script data-ad-client="ca-pub-8521880323242125" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=410676122476369&autoLogAppEvents=1"></script>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -28,8 +30,12 @@
           </div>
 
           <nav>
+            {% unless page.index %}
             <a href="{{ site.baseurl }}/">Blog</a>
+            {% endunless %}
+            {% unless page.calc %}
             <a href="{{ site.baseurl }}/calculator">Calc</a>
+            {% endunless %}
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>

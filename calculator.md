@@ -3,6 +3,7 @@ layout: jspage
 title: Towing Capacity Calculator
 permalink: /calculator/
 icon: calc-200.png
+calc: true
 ---
 
 <script src="{{ site.baseurl }}/js/towing.js">
