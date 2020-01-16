@@ -2,7 +2,7 @@
 /* ------------------------------------------------------------ Resets */
 
 #page-header.work-header {background-color:#fff!important;
-	border:none;color: #000;overflow: hidden;letter-spacing: 0.012em;
+	border:none!important;color: #000;overflow: hidden;letter-spacing: 0.012em;
 	text-align: center;padding-top:30px;
 }
 #page-header h1 {font-size:3.6em;line-height:.69em;margin-top:1em;font-weight:600;letter-spacing: -0.06em}
@@ -13,18 +13,19 @@
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
 
-#page-nav.nav-scroll {padding-top:18px;padding-bottom:18px;border-bottom:thin solid #eee;heght:5em;}
-#page-nav.nav-scroll a {font-weight:normal ;line-height:1.6em;letter-spacing: 0.01em}
-#page-nav.nav-scroll img {min-width:48px;height:48px;}
+#page-nav.nav-scroll {padding-top:16px;padding-bottom:16px;border-bottom:thin solid #eee;heght:5em;}
+#page-nav.nav-scroll a {font-weight:normal ;font-size:14px;line-height:1.7em;letter-spacing: -0.03em}
+#page-nav.nav-scroll img {min-width:45px;height:45px;}
 
 #page-nav {background-color:var(--color-white)!important;overflow:hidden;}
+#page-nav div a {padding-left:0px;padding-right:0px;}
 #page-nav a {text-decoration:none;}
 #page-nav a:hover {color:var(--color-hard-grey);opacity:.69;border:thin solid #fff!important;background:transparent!important;}
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
 /* Serveis EDICIÓ WEB */
-#apple-center {margin-top:-45px!important;text-align: center ;}
-#apple-center img {padding:3%;}
+#apple-center {margin-top:-45px!important;}
+#apple-center img {padding-right:0%;}
 #apple-center h3 {font-size:1.5em;font-weight: 500; line-height: .75em; margin-bottom:12px;}
 
 /* Serveis (triptic) */
