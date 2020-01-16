@@ -23,6 +23,10 @@
 #page-nav a:hover {color:var(--color-hard-grey);opacity:.69;border:thin solid #fff!important;background:transparent!important;}
 .list-unlisted li {	list-style: none;padding-left: 0;}
 
+# colmns.thumb-6 {min-width:100%!important;margin:0px!important;}
+#colmns img {padding-left:25%;padding-right:25%;max-width:80%;}
+#colmns h4 {text-align: center !important}
+
 /* Serveis EDICIÓ WEB */
 #apple-center {margin-top:-15px!important;}
 #apple-center img {padding-right:0%;}
