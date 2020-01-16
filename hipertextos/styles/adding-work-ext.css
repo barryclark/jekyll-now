@@ -31,8 +31,7 @@
 .pad-top em a {color:var(--color-white) ;background-color:var(--color-link) ;padding:6px 15px 6px 15px;border-radius: 42px 42px 42px 42px;}
 .pad-top em a:hover {text-decoration: none;color:var(--color-link) ;background-color:#fff;}
 .pad-top i a {font-style: normal ;}
-
-.pad-top h3  {line-height: 1em; margin-bottom:12px;}
+.pad-top h3  {font-size:1.5em;font-weight:500;line-height: 1.2em; margin-bottom:12px;letter-spacing: -0.032em}
 
 
 /* Serveis (triptic) */
