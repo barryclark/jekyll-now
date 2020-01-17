@@ -20,9 +20,10 @@ I particularly like the one line weather report
 
 `finger o:brisbane@graph.no`
 
-![graph.no](http://ben.hamilton.id.au/cms/wp-content/uploads/2016/02/graph.no_.png)
+![graph.no](/images/graph.no_.png)
 
 To get more info on how to use this, run this from your command line:
 
-
 `finger @graph.no`
+
+:)

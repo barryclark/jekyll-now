@@ -13,4 +13,4 @@ categories:
 Every user of a database is responsible for 'gardening' the database, removing the 'weeds', watering and maintaining it. Otherwise this sort of thing occurs.
 [Dad gets OfficeMax mail addressed 'Daughter Killed In Car Crash'](http://www.chicagotribune.com/business/chi-officemax-mail-grieving-father-20140119,0,4072560.story)
 
-[![](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/la-na-nn-officemax-mail-20140119-001.jpeg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/la-na-nn-officemax-mail-20140119-001.jpeg)
+![](/images/la-na-nn-officemax-mail-20140119-001.jpeg)

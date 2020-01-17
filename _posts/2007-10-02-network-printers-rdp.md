@@ -13,7 +13,7 @@ categories:
 - RDP
 ---
 
-![IP Printer in a local RDP session](/images/IP.printer.in.local.RDP.jpg)Setting up a remote user today, who has a network printer on their local network which they want available to the RDP session (over VPN).
+Setting up a remote user today, who has a network printer on their local network which they want available to the RDP session (over VPN).
 
 RDP doesn't by default redirect non COM/LPT/USB ports - i.e. an IP port.
 

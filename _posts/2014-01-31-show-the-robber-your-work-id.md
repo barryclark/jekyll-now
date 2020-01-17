@@ -9,6 +9,6 @@ categories:
 - Image
 ---
 
-[![](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/robber_badge.jpg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/robber_badge.jpg)
+![](/images/robber_badge.jpg)
 
 I was just sent a link to this ([source](http://hustwindmaple.files.wordpress.com/2011/04/untitled.jpg)). Funny :).

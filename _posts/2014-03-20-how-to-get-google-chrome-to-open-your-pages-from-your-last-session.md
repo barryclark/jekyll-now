@@ -23,4 +23,4 @@ This loads the Settings page. Then check the 
  setting. Close the tab. You're done. :)
 
 
-[![Google Chrome On Startup Continue Where I Left Off](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/03/GoogleChromeOnStartupContinueWhereILeftOff.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/03/GoogleChromeOnStartupContinueWhereILeftOff.png)
+![Google Chrome On Startup Continue Where I Left Off](/images/GoogleChromeOnStartupContinueWhereILeftOff.png)

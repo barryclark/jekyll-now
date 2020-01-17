@@ -9,7 +9,7 @@ categories:
 - Productivity
 ---
 
-![http://www.flickr.com/photos/archeon/2884431258/](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/05/20130506-214546.jpg)
+![http://www.flickr.com/photos/archeon/2884431258/](/images/20130506-214546.jpg)
 It is without a doubt important to have goals. Every day, without even thinking about it, we have goals. Get up at the right time. Get to work on time. Have lunch.
 
 Then there are the bigger goals. Learn that new skill. Finish that project. Spend more time with those important to us.

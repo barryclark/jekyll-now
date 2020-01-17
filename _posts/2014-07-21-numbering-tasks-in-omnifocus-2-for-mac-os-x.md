@@ -12,7 +12,7 @@ categories:
 - Shell
 ---
 
-I'm using OmniFocus 2 on my MacBook Pro and wanting to 'number' tasks because at the end of each week, I print a PDF of the tasks completed and outstanding for a particular client. Task numbers make it much easier for the client to reconcile the work I've done with the lists they use.
+I'm using OmniFocus 2 on my MacBook Pro and wanting to 'number' tasks because at the end of each week, I print a PDF of the tasks completed and outstanding for a particular client. Task numbers make it much easier for the client to reconcile the work I've done with the lists they use.<!--more-->
 
 The problem is that OmniFocus doesn't have a 'task number' function.
 
@@ -23,20 +23,14 @@ In a nutshell I use the shell script to get a variable from a text file (which i
 
 The shell script itself is quite basic, any improvements you can suggest, please do.
 
-
-
-
 Here is a screenshot of the Keyboard Maestro recipe (edit:
-[I've since modified this recipe to be a little faster](http://ben.hamilton.id.au/productivity/faster-numbering-of-omnifocus-tasks))
+[I've since modified this recipe to be a little faster](/productivity/faster-numbering-of-omnifocus-tasks))
 
-[caption id="attachment_1277" align="aligncenter" width="600"]
-[![Keyboard Maestro recipe to increment task number](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/07/Screenshot-2014-07-21-10.39.28-600px.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/07/Screenshot-2014-07-21-10.39.28-600px.png) Get last task number, increment it, save it.[/caption]
+![Keyboard Maestro recipe to increment task number](/images/Screenshot-2014-07-21-10.39.28-600px.png) Get last task number, increment it, save it.
 
-This relies on you having a text file named
-
-last_task_number.txt
-in your home folder.
+This relies on you having a text file named `last_task_number.txt` in your home folder.
 
 The format of this file is just a single line of text as follows:
-
+```
 TaskNumber=0
+```

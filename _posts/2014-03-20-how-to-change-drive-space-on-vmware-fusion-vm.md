@@ -13,6 +13,5 @@ categories:
 On occasion you'll want to change the size of a Virtual Machines hard disk drive. I'm using VMware Fusion, and to do this, you enter the Settings of that VM and under the Hard Disk option you'll be able to change the drive size.
 
 
-[![VMware Fusion Settings Hard Disk](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/03/VMwareFusionSettingsHardDisk.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/03/VMwareFusionSettingsHardDisk.png)
-
+![VMware Fusion Settings Hard Disk](/images/VMwareFusionSettingsHardDisk.png)
 Note that you can't make changes if the VM has snapshots of it.

@@ -18,7 +18,7 @@ I commute to work every day on my motorcycle, it’s a 52 kilometre trip each wa
 I was talking with the folks over at MobileZap, who said I should try out a [Olixar Universal Bike Phone Mount](http://www.mobilezap.com.au/47964-olixar-universal-bike-phone-mount.htm) on the bike. So for the last month I’ve been quite happily riding around, able to see the screen with an easy glance. An added side benefit is that when I’ve received a phone call, I can see who it is and decide if I’ll pull over and talk or not. Previously I’d just ignore all phone calls whilst riding.
 
 
-[![photo of the Olixar bike phone mount](http://ben.hamilton.id.au/cms/wp-content/uploads/2015/12/olixar-universal-bike-mount-suzuki-bandit-1250.jpg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2015/12/olixar-universal-bike-mount-suzuki-bandit-1250.jpg)
+![photo of the Olixar bike phone mount](/images/olixar-universal-bike-mount-suzuki-bandit-1250.jpg)
 
 The holder itself I thought looked a bit flimsy, however it has held up really well while I’ve ridden through both really hot days (34°C) and heavy rain.
 

@@ -11,7 +11,7 @@ categories:
 
 Summary: when inputing text on an iPad or iPhone do a double space to finish a sentence. It will transform into a full stop followed by a space.
 
-[![20130619-215517.jpg](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/06/20130619-215517.jpg)](http://www.flickr.com/photos/14666612@N06/5994282629/in/photolist-a8Ggov-96oyKz-7pLEQV-esXg5y-9tjVHe-dF6cPs-dD9yG1-dNSt7Z-94sxbp-ajTfBR-6i7qAL-dKfFLC-7yMvri-bWCSRS-bWCRmJ-81ZJ26-5dVxtz-dGXWRg-8Y6Viw-7VN7yG-9Df3TD-91t6N5-9D7UVa-8RgfFi-dRsLkh-aDwJwT-aDwJin-8oisqq-dq2Du3-dq2Doj-dq2Dm3-dq2twX-84PVky-eBR6fo-dwMTxu-apf8CS-bujMgQ-9wH2h4-bsGWcZ-8Hgrez-aBVX3X-aBYB2U-aBYB3f-aBYB39-aBYB2Y-aBYB3b-aBYB35-b1X7rg-9rA56w)
+[![20130619-215517.jpg](/images/20130619-215517.jpg)](http://www.flickr.com/photos/14666612@N06/5994282629/in/photolist-a8Ggov-96oyKz-7pLEQV-esXg5y-9tjVHe-dF6cPs-dD9yG1-dNSt7Z-94sxbp-ajTfBR-6i7qAL-dKfFLC-7yMvri-bWCSRS-bWCRmJ-81ZJ26-5dVxtz-dGXWRg-8Y6Viw-7VN7yG-9Df3TD-91t6N5-9D7UVa-8RgfFi-dRsLkh-aDwJwT-aDwJin-8oisqq-dq2Du3-dq2Doj-dq2Dm3-dq2twX-84PVky-eBR6fo-dwMTxu-apf8CS-bujMgQ-9wH2h4-bsGWcZ-8Hgrez-aBVX3X-aBYB2U-aBYB3f-aBYB39-aBYB2Y-aBYB3b-aBYB35-b1X7rg-9rA56w)
 
 I've had an interest in all things 'productivity' related for some time, but over the last few years its become a stronger driving force. When I took on my current full-time position implementing and troubleshooting ACT! In 2008, I became far more aware of why a number of businesses I'd worked with previously had not been as profitable as they could have been. They didn't have an efficient system to deal with the management of staff calendars, meetings, todo's and opportunities.
 

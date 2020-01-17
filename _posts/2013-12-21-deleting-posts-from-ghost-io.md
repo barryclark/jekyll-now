@@ -14,6 +14,6 @@ Not wanting to have duplicate content in two places I wasn't looking forward to 
 
 In essence, it loops the required mouse clicks to delete a post.
 
-[![Recipe to delete Ghost.io posts](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/12/Screenshot-2013-12-21-09.06.06-277x300.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/12/Screenshot-2013-12-21-09.06.06.png)
+[![Recipe to delete Ghost.io posts](/images/Screenshot-2013-12-21-09.06.06-277x300.png)](/images/Screenshot-2013-12-21-09.06.06.png)
 
 *Recipe to delete Ghost.io posts*

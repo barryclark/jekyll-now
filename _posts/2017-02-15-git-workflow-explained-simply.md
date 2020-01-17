@@ -17,7 +17,7 @@ We keep the a Git repository in the cloud, typically in [Bitbucket](https://bitb
 
 Each developer then keeps a local copy of the repository. The developer can then create a new feature branch to work on an issue. More than one developer can work on a project at a time, and multiple branches can co-exist at the same time. This allows for more concurrent effort to be deployed.
 
-![Show git master branch, feature branch and merge](https://ben.hamilton.id.au/cms/wp-content/uploads/2017/02/git-branches-1.png) Show git master branch, feature branch and merge
+![Show git master branch, feature branch and merge](/images/git-branches-1.png) Show git master branch, feature branch and merge
 
 (This image from the git-guide linked below)
 

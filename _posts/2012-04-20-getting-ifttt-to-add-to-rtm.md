@@ -14,8 +14,7 @@ categories:
 
 If that headline made sense to you, then you're in the right place :)
 
-[caption id="attachment_784" align="alignright" width="300" caption="The ifttt recipe"]
-[![ifttt recipe for adding a task to Remember The Milk](http://ben.hamilton.id.au/cms/wp-content/uploads/2012/04/IFTTT_RTM.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2012/04/IFTTT_RTM.png)[/caption]
+![ifttt recipe for adding a task to Remember The Milk](/images/IFTTT_RTM.png)]
 
 The problem I had is that
 [ifttt](http://ifttt.com/) doesn't by default integrate with

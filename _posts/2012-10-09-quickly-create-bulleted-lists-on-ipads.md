@@ -23,4 +23,4 @@ I've found a quicker way to make them happen, here it is:
 
 Now when I type two comma's followed by a space, it'll replace that with a star followed by a space. Great easy bulleted lists in emails.
 
-[![20121009-144655.jpg](http://ben.hamilton.id.au/cms/wp-content/uploads/2012/10/20121009-144655.jpg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2012/10/20121009-144655.jpg)
+![20121009-144655.jpg](/images/20121009-144655.jpg)

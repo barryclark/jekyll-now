@@ -12,4 +12,4 @@ categories:
 I've just loaded WordPress for iOS onto my phone, and this is the obligatory test post.
 
 
-[![20130418-211029.jpg](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/04/20130418-211029.jpg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/04/20130418-211029.jpg)
+![20130418-211029.jpg](/images/20130418-211029.jpg)

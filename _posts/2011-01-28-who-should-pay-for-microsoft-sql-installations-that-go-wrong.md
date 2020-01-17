@@ -10,7 +10,7 @@ categories:
 - SQL
 ---
 
-[![ah, SQL humor](http://ben.hamilton.id.au/cms/wp-content/uploads/2011/01/Leverage_the_NoSQL_boom-211x300.jpg)](http://geekandpoke.typepad.com/geekandpoke/2011/01/nosql.html)The day is almost over, so I'll fill you in on some of what occurred today, [as it relates directly to this post by Mike at GLComputing](http://blog.glcomputing.com.au/2011/01/how-should-act-resellersvars-deal-with.html). This was originally written as a comment to his post and kinda grew, so I'm posting it here in full.
+[![ah, SQL humor](/images/Leverage_the_NoSQL_boom-211x300.jpg)](http://geekandpoke.typepad.com/geekandpoke/2011/01/nosql.html)The day is almost over, so I'll fill you in on some of what occurred today, [as it relates directly to this post by Mike at GLComputing](http://blog.glcomputing.com.au/2011/01/how-should-act-resellersvars-deal-with.html). This was originally written as a comment to his post and kinda grew, so I'm posting it here in full.
 
 SQL 2008 Express R2 has finally let me install a default SQLEXPRESS instance but I still can't get a custom instance of ACT7 working. Who should be paying for the time it's taking me to work out this issue?
 

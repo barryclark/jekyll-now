@@ -17,7 +17,7 @@ age_c (note: this can be of field type Integer or Decimal) and then using this f
 floor(divide(subtract(daysUntil(today()),daysUntil($birthdate)),365.242))
 
 
-[![small_4956707000](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/10/small_4956707000.jpg)](http://www.flickr.com/photos/fouquier/4956707000/)If you use a Decimal field type you can remove the 
+[![small_4956707000](/images/small_4956707000.jpg)](http://www.flickr.com/photos/fouquier/4956707000/)If you use a Decimal field type you can remove the 
 floor() portion of the formula so that it doesn't round it down. This means you will see just how old they are to a decimal point. Personally I tend to prefer just knowing that they are 21 or 42 rather than 21.45 or 42.01.
 
 photo credit:

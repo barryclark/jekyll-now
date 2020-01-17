@@ -9,4 +9,4 @@ categories:
 - TechSupport
 ---
 
-![Known Issues](http://www.savagechickens.com/wp-content/uploads/chickentechtherapy.jpg)[Known Issues Cartoon | Savage Chickens - Cartoons on Sticky Notes by Doug Savage](http://www.savagechickens.com/2011/10/known-issues.html).
+![Known Issues](/images/chickentechtherapy.jpg)[Known Issues Cartoon | Savage Chickens - Cartoons on Sticky Notes by Doug Savage](http://www.savagechickens.com/2011/10/known-issues.html).

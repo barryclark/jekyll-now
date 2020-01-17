@@ -9,7 +9,7 @@ categories:
 
 I've bought the book [**Atomic Habits**](https://www.amazon.com/Atomic-Habits-Proven-Build-Break-ebook/dp/B01N5AX61W/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) and written a short review of it.
 
-[![Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](https://images.gr-assets.com/books/1535115320m/40121378.jpg)](https://www.goodreads.com/book/show/40121378-atomic-habits)<br />[Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](https://www.goodreads.com/book/show/40121378-atomic-habits) by [James Clear](https://www.goodreads.com/author/show/7327369.James_Clear)<!--more-->
+[![Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/images/40121378.jpg)](https://www.goodreads.com/book/show/40121378-atomic-habits)<br />[Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](https://www.goodreads.com/book/show/40121378-atomic-habits) by [James Clear](https://www.goodreads.com/author/show/7327369.James_Clear)<!--more-->
 
 For me, there have been two items in "Atomic Habits" that have immediately made a difference in my life.
 

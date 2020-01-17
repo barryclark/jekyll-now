@@ -14,8 +14,6 @@ I often get given Microsoft Excel files to import them into a database. Normally
 
 On my MacBook this is now an easy task because I've setup a 'Service' with Automator. In Finder I simply select the files I want converted, right click, select Services and select Convert Excel to csv files. Job done. Heaps quicker than doing them one at a time.
 
-[caption id="attachment_1011" align="aligncenter" width="300"]
-[![Screenshot of Convert Excel files to csv service in Automator](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/Screenshot-2014-01-22-09.09.44-300x69.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/Screenshot-2014-01-22-09.09.44.png) Screenshot of Convert Excel files to csv service in Automator[/caption]
+[![Screenshot of Convert Excel files to csv service in Automator](/images/Screenshot-2014-01-22-09.09.44-300x69.png)](/images/Screenshot-2014-01-22-09.09.44.png)
 
-[caption id="attachment_1012" align="aligncenter" width="298"]
-[![Screenshot showing service in use](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/Screenshot-2014-01-22-09.18.49-298x300.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/Screenshot-2014-01-22-09.18.49.png) Screenshot showing service in use[/caption]
+[![Screenshot showing service in use](/images/Screenshot-2014-01-22-09.18.49-298x300.png)](/images/Screenshot-2014-01-22-09.18.49.png)

@@ -12,7 +12,7 @@ categories:
 I'm using 
 [GeekTool](http://projects.tynsoe.org/en/geektool/) to display some key time zones on my wallpaper, which happens to include world map.
 
-[![Desktop with Geeklets to show time zone info](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/02/Desktop-300x189.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/02/Desktop.png)
+[![Desktop with Geeklets to show time zone info](/images/Desktop-300x189.png)](/images/Desktop.png)
 The key to this is to add Shell Geeklets using a command similar to this:
 
 

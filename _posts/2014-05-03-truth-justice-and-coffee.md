@@ -12,7 +12,7 @@ We all want to achieve. We want the truth, we want justice. But above all, we wa
 [clicking here to order yours](http://teespring.com/truthjusticecoffee).
 <!--more-->
 
-[![Get your tshirt now. Order today. There are no free steak knives.](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/05/truth-justice-coffee-teespring-267x300.png)](http://teespring.com/truthjusticecoffee)
+[![Get your tshirt now. Order today. There are no free steak knives.](/images/truth-justice-coffee-teespring-267x300.png)](http://teespring.com/truthjusticecoffee)
 
 Get your tshirt now. Order today. There are no free steak knives, only the deep satisfying feeling that comes from knowing you've helped.
 

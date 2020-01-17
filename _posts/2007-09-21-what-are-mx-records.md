@@ -17,7 +17,7 @@ MX Records, or Mail eXchange Records, is simply a line of text in a file on a DN
 What it does however is VERY important. It tells other peoples mail servers where to deliver email they are sending to you.
 
 
-![DNS MX Record](http://ben.hamilton.id.au/images/DNS.MX.Record.jpg)The first MX record (indicated by a lower number, in this example, 10 mail.domain.com.au) is known as the primary MX record. This is where email servers will try to send email first. If it fails, then it will try subsequent MX records (in this example, 20 mail.domain.com.au).
+![DNS MX Record](/images/DNS.MX.Record.jpg)The first MX record (indicated by a lower number, in this example, 10 mail.domain.com.au) is known as the primary MX record. This is where email servers will try to send email first. If it fails, then it will try subsequent MX records (in this example, 20 mail.domain.com.au).
 
 If your email server is hosted onsite on MS Small Business Server 2003 and you change ISP, you will have a new STATIC IP address assigned. Given that your MX record will be pointing to the old IP address, you won't be getting any email arrive.
 

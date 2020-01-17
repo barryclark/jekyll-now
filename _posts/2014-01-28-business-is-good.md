@@ -9,7 +9,6 @@ categories:
 - Link
 ---
 
-[![](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/chickengraphs.jpg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/chickengraphs.jpg)
+![](/images/chickengraphs.jpg)
 
-Source:
-[Savage Chickens](http://www.savagechickens.com/2014/01/business-looks-good.html).
+Source: [Savage Chickens](http://www.savagechickens.com/2014/01/business-looks-good.html).

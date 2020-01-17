@@ -13,7 +13,7 @@ Summary: create keyboard shortcuts on your iPad to make it quicker write notes a
 
 **Settings**  | **General** | **Keyboard**  | **Shortcuts**
 
-[![20130620-055459.jpg](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/06/20130620-055459.jpg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/06/20130620-055459.jpg)
+![20130620-055459.jpg](/images/20130620-055459.jpg)
 
 I first got an iPad about 10 months ago and the keyboard is nowhere as quick to type on as ergonomic keyboard for my workstation. What does however make typing on the iPad faster are some common shortcuts. For example, when I type "zfyi" it offers to expand that to "saw this, thought it might be something you find of interest... ". Simply pressing the space bar when that popup suggestion occurs will replace the original text with the suggested text. Pressing the small "x" will let you continue with the text you typed.
 

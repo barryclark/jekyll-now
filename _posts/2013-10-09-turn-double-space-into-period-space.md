@@ -10,7 +10,7 @@ categories:
 - TextExpander
 ---
 
-[![thumbn_9080100066](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/10/thumbn_9080100066.jpg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2013/10/thumbn_9080100066.jpg)One of the 'little' things on iOS that I truly have come to love is this: when you type 'two spaces', it auto replaces that with a 'period and a space'. For example '  ' becomes '. '
+![thumbn_9080100066](/images/thumbn_9080100066.jpg)One of the 'little' things on iOS that I truly have come to love is this: when you type 'two spaces', it auto replaces that with a 'period and a space'. For example '  ' becomes '. '
 
 This is especially useful on iOS devices because to get to the period (aka full stop) you need to change which keyboard you're viewing, and this little, helpful item means it is so much quicker to type a message or email on iOS. Love it.
 

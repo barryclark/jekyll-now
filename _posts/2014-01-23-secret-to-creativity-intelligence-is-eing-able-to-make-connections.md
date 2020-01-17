@@ -11,5 +11,6 @@ categories:
 
 [The secret to creativity, intelligence and scientific thinking: Being able to make connections](http://blog.bufferapp.com/connections-in-the-brain-understanding-creativity-and-intelligenceconnections).
 
-[![](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/knoweldge.jpg)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/01/knoweldge.jpg)
+![](/images/knoweldge.jpg)
+
 [Picture source](https://twitter.com/gapingvoid/statuses/423952995240648704).

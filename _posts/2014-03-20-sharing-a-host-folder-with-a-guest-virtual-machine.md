@@ -23,8 +23,6 @@ With your virtual machine running, click on the
 
 Your local "Downloads" folder will now be available to your virtual machine.
 
+![VMware Fusion Settings | Sharing](/images/VMwareFusionSettingsSharing.png)
 
-[![VMware Fusion Settings | Sharing](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/03/VMwareFusionSettingsSharing.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/03/VMwareFusionSettingsSharing.png)
-
-
-[![SharedFolders On](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/03/VMwareFusionSettingsSharingSharedFoldersOn.png)](http://ben.hamilton.id.au/cms/wp-content/uploads/2014/03/VMwareFusionSettingsSharingSharedFoldersOn.png)
+![SharedFolders On](/images/VMwareFusionSettingsSharingSharedFoldersOn.png)
