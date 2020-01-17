@@ -73,7 +73,7 @@ of our neighbors to feed the fish once a day.
 
 The filter requires regular maintenance, every 2-3 months cleaning and changing the carbon filters. And so far after 1 and a half years we had to change the light bulb for a new one.  And that is pretty much all the maintenance.
 
-### Products suggested from above text
+### Products suggested from text above
 <center>
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=frsanchezgith-20&marketplace=amazon&region=US&placement=B001F9UNV6&asins=B001F9UNV6&linkId=83aa6e5bd7c6f9ba75f515075f0bc7a3&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
 </iframe>
