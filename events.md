@@ -7,8 +7,6 @@ description: "Cheryl Hung's upcoming talks at global conferences and events."
 
 ### 2020
 
-January 16: Keynote at Rackspace Cloud Native Takeover Day, London 
-
 January 30: [Sustain 2020](https://opencollective.com/sustainoss/events/sustain-2020-5874aeeb), Brussels 
 
 February 1-2: [FOSDEM 2020](https://fosdem.org/2020/), Brussels
@@ -23,8 +21,20 @@ March 10 – 12, [The Linux Foundation Member Summit](https://events.linuxfounda
 
 March 31 - April 2: [KubeCon + CloudNativeCon Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/), Amsterdam
 
+April 27 - 30: [Red Hat Summit](https://www.redhat.com/en/summit), San Francisco
+
+May 19 - 21: [Microsoft Build](https://www.microsoft.com/en-us/build), Seattle
+
 June 11: Judging and presenting the [OpenUK Awards](https://openuk.uk/), London
 
 July 28 - 30: [KubeCon + CloudNativeCon + Open Source Summit China](https://www.linuxfoundation.org/calendar/kubecon-cloudnativecon-open-source-summit-china/), Shanghai
 
+September 2 - 4: [Kubernetes Community Days London](http://kubernetesdays.london/), London
+
+September 15 - 16: [Open Source Summit Japan](https://events.linuxfoundation.org/open-source-summit-japan/), Tokyo
+
+October 26 - 28: [Open Source Summit Europe](https://events.linuxfoundation.org/open-source-summit-europe/), Dublin
+
 November 18 - 20: [KubeCon + CloudNativeCon North America](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/), Boston
+
+November 30 - December 4: [AWS Re:Invent](https://reinvent.awsevents.com/), Las Vegas
