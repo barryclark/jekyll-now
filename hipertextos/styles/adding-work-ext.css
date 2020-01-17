@@ -26,7 +26,7 @@
 #chi {text-align: center;}
 #chi img{max-width:12%;}
 .section-black {color:#fff;background-color:var(--color-black);}
-
+.section-black em a:hover {color:var(--color-white)!important ;border-color:var(--color-white)!important;background-color:#000!important;}
 /* Serveis section NEW!! */
 #colmns .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
 #colmns h4 {text-align: center !important}
@@ -49,7 +49,7 @@
 #apple-center img {padding-right:0%;}
 .pad-top {padding-top:120px;}
 .pad-top h2 {font-weight: 600;letter-spacing: -0.04em;margin-bottom:1px;}
-#apple-center em a {font-size:18px;font-weight: lighter ; color:var(--color-white) ;background-color:var(--color-link) ;padding:4px 15px 4px 15px;border-radius: 50px 50px 50px 50px;letter-spacing: 0.012em}
+#apple-center em a {font-size:18px;font-weight: lighter ; color:var(--color-white) ;background-color:var(--color-link) ;border-color:var(--color-link) ;padding:4px 15px 4px 15px;border-radius: 50px 50px 50px 50px;letter-spacing: 0.012em}
 #apple-center em a:hover {text-decoration: none;color:var(--color-link) ;background-color:#fff;}
 #apple-center i a {font-style: normal ;line-height: 2.7em;text-decoration: none;letter-spacing: -0.02em}
 #apple-center i a:hover {text-decoration: underline;}
