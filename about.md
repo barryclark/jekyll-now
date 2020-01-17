@@ -15,6 +15,8 @@ I currently work as a transportation engineer in Austin, Texas.
 Charlie Henry
 
 [charlie@modalshift.co](mailto:charlie@modalshift.co)
-[instragram](www.instagram.com/charlie_henry___/)
-[twitter](https://twitter.com/ShiftModal)
+
+[Instragram](www.instagram.com/charlie_henry___/)
+
+[Twitter](https://twitter.com/ShiftModal)
 
