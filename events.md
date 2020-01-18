@@ -14,6 +14,7 @@ February 1-2: [FOSDEM 2020](https://fosdem.org/2020/), Brussels
 February 24-26: [MWC](https://www.mwcbarcelona.com/), Barcelona
 
 February 27: [Cloud Native Prague](https://www.meetup.com/Cloud-Native-Prague/), Czech Republic
+* Talk
 
 March 4-7: #21digital, Cologne, Germany
 
@@ -25,11 +26,13 @@ April 27 - 30: [Red Hat Summit](https://www.redhat.com/en/summit), San Francisco
 
 May 19 - 21: [Microsoft Build](https://www.microsoft.com/en-us/build), Seattle
 
-June 11: Judging and presenting the [OpenUK Awards](https://openuk.uk/), London
+June 11: [OpenUK Awards](https://openuk.uk/), London
+* Judge and presenter
 
 July 28 - 30: [KubeCon + CloudNativeCon + Open Source Summit China](https://www.linuxfoundation.org/calendar/kubecon-cloudnativecon-open-source-summit-china/), Shanghai
 
 September 2 - 4: [Kubernetes Community Days London](http://kubernetesdays.london/), London
+* Chair
 
 September 15 - 16: [Open Source Summit Japan](https://events.linuxfoundation.org/open-source-summit-japan/), Tokyo
 
