@@ -1,11 +1,11 @@
 /* by Isard Miralles  ADDING EXTRA to Serveis - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.serveis-header {background-image: url("/img/serveis.jpg");	background-position: top center;
-	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+#page-header.serveis-header {background:linear-gradient(rgba(54,54,54,1),rgba(85,72,85,1));
 	border:none;color: #fff;overflow: hidden;letter-spacing: 0.012em;
-	text-align: center;padding-top:0px;height: 38vh;
+	text-align: center;padding-top:0px;height: 27vh;
 }
+#site-nav {box-shadow: none!important;border-bottom:thin solid rgba(58,58,58,1);}
 #page-header h2 {font-size:3em;line-height:1em;margin:0px!important;}
 #page-header div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
