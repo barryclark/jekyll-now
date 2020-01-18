@@ -31,7 +31,7 @@
 #chi {text-align: center;}
 #chi img{max-width:12%;}
 .section-black {color:#fff;background-color:var(--color-black);}
-.section-black.grey {text-align: right; color:#000;background-color:var(--color-grey);}
+.section-black.grey {text-align: right; color:#000;background-color:#ea6460;}
 .section-black em a:hover {color:var(--color-white)!important ;border-color:var(--color-white)!important;background-color:#000!important;}
 
 /* Serveis section NEW!! */
