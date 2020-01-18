@@ -84,7 +84,11 @@
 	<div class="page works" id="page">
   	{% include partials/navigation/nav-serveis.html %}
   	{% include partials/navigation/nav-work.html %}
-	{% include partials/header-work.html %}
+  	{% if page.blured %}
+		{% include partials/header-work-blur.html %}
+	{% else %}
+		{% include partials/header-work.html %}
+	{% endif %}
   	<main id="page-main" class="worker">
 	      {{ content }}
     {% include partials/coffee.html %}   		
