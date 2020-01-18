@@ -5,11 +5,11 @@
 	border:none!important;color: #000;overflow: hidden;letter-spacing: 0.012em;
 	text-align: center;padding-top:30px;
 }
-#page-header.blured {color:var(--color-white);}
+#page-header.blured {}
 #page-header h1 {font-size:3.6em;line-height:.69em;margin-top:1em;font-weight:600;letter-spacing: -0.06em}
 #page-header h2 {font-size:1.2em;line-height:1em;margin:0px;font-weight: 400;letter-spacing: none;}
 #page-header h5 {font-weight: 200;font-size:1.1em;}
-#apple-center.parallax {margin-top:-29px!important;}
+#apple-center.parallax {margin-top:-30px!important;}
 #apple-center.parallax,
 #page-header.blured {background: var(--color-black);
     background-position: top center; background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none}
