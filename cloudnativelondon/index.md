@@ -10,14 +10,14 @@ description: "Request to speak at or sponsor Cloud Native London."
 <p>
 
 <div class="products">
-  
+
 {% include product.html title="Attend" subtitle="First Wednesday of each month" image="https://pbs.twimg.com/media/ENyKLL9X0AE9vLH?format=jpg&name=medium" url="https://www.meetup.com/Cloud-Native-London/" %}
 
 {% include product.html title="Speak" subtitle="Next available slots in early 2021" image="product-images/speak-at-cloud-native-london.jpg" url="/cloudnativelondon/speak" %}
 
 {% include product.html title="Sponsor" subtitle="Introduce yourself at our monthly events" image="product-images/sponsor-cloud-native-london.jpg" url="/cloudnativelondon/sponsor" %}
 
-{% include product.html title="Chat" subtitle="Join the Slack channel" image="product-images/chat-cloud-native-london.jpg" url="/cloudnativelondon/slack" %}
+{% include product.html title="Chat" subtitle="Join the Slack channel" image="product-images/chat-cloud-native-london.jpg" url="/cnl-slack" %}
 
 {% include product.html title="Catch up" subtitle="Find past talks and events" image="product-images/read-cloud-native-london.jpg" url="/archive/meetup" %}
 
