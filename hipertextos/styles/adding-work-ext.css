@@ -5,13 +5,15 @@
 	border:none!important;color: #000;overflow: hidden;letter-spacing: 0.012em;
 	text-align: center;padding-top:30px;
 }
+#page-header.blured {color:var(--color-white);}
 #page-header h1 {font-size:3.6em;line-height:.69em;margin-top:1em;font-weight:600;letter-spacing: -0.06em}
 #page-header h2 {font-size:1.2em;line-height:1em;margin:0px;font-weight: 400;letter-spacing: none;}
 #page-header h5 {font-weight: 200;font-size:1.1em;}
 
-#apple-center.parallax {background: var(--color-black);
+#apple-center.parallax,
+#page-header.blured {margin-top:-30px!important;background: var(--color-black);
     background-position: top center; background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none}
-
+#page-header.blured {}
 #page-header div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
@@ -30,6 +32,7 @@
 #chi img{max-width:12%;}
 .section-black {color:#fff;background-color:var(--color-black);}
 .section-black em a:hover {color:var(--color-white)!important ;border-color:var(--color-white)!important;background-color:#000!important;}
+
 /* Serveis section NEW!! */
 #colmns .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
 #colmns h4 {text-align: center !important}
