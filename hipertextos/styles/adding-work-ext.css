@@ -35,6 +35,7 @@
 .section-black.grey {text-align: right; color:#000;background:linear-gradient(#ea6460, #ea6080)!important;}
 .icon {padding:2%;margin-top:30%;max-width:256px!important;}
 .icon-left, .icon-right {text-align: center !important;}
+h4.slimmer {font-weight:400;line-height:2.1em ; border:3px solid currentcolor;max-width:40%;margin-left:30%;}
 
 /* Serveis section NEW!! */
 #colmns .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
