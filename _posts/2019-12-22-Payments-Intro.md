@@ -132,16 +132,20 @@ Each of these pipes is equipped with one or more "meters" to measure the flow ea
 * pipes are the ways of facilitating the transfer of currency between accounts and banks.  
 These are called [payment][20] or settlement systems 
 * meters are the facilities to keep track of what is moved where and by whom
-At their heart these are [double-entry ledgers][21]
+At their heart these are [double-entry ledgers][21] recording in which direction money moves and who owes what to whom
 
 There are 2 differences of the global payments system from the mental model of "barrels of liquid" 
 
 * is that currency (the liquid) does not physically "move" down the pipes from one account/bank to the other<sup>[5](#footnote_5)</sup>
 What actually travel are messages of various [types][22] which result in the ledgers (the meters) recording new transactions 
 and balances 
-in other words, value in the banking world is purely virtual and electronic 
-* 
+in other words, value in the modern banking world is purely virtual and electronic 
+* different outer-most barrels (central banks) contain different types of liquid which do not mix 
+Yet when currency moves across borders it is the equivalent of water turning into oil<sup>[6](#footnote_6)</sup>
+This is a "happy" corollary of modern-day "money" being electronic.
+In the olden days of gold-backed currencies, central banks would ultimately settle their balances by [gold shipments][27]
 
+Back to the modern banking system 
 putting everything together in one nice and complex diagram 
 
 ![Banking infrastructure](../images/payments/payments-banks.png)
@@ -153,9 +157,98 @@ let's see how things interact with a few examples
 
 ![Intrabank payment](../images/payments/intrabank-payment.png)
 
+Let's start with the simplest case of a payment within the same bank (let's call it GreenBank or GB for short)
+from account A to account B
+In this case the pipe connecting the 2 accounts are GB's internal systems 
+
+If GB ir an older, larger bank, offering more products and most importantly more [customer channels][28] 
+thenpayments would probably "settle" overnight as part of large batch operation
+i.e. an intrabank transfer is considered final only after the nightly batch has processed 
+every transaction across all channels 
+This means that there is a small possibility of the payment being reversed when the system 
+attempts to settle it 
+If B is a newer bank with newer IT systems and fewer channels (e.g. [neobanks][29]) 
+intrabank payment settlement is real-time, i.e. when it's gone from account A, it's gone. 
+The transaction is recorded and tracked in GB's transaction ledger 
+in the case of overnight settlement as "tentative" first and "settled/cleared" when the batch completes 
+in real-time systems the ledger only contains one entry as it settles immediately    
+
+An interesting special case of intrabank payments is that of [e-money providers][30]
+
+![E-money](../images/payments/payments-emoney.png)
+
+Let's call our fictitious e-money provider CarrotMoney, or CM for short
+Each CM customer sees their own digital wallet (usually a mobile app) with its own balance
+
+However looking "behind the scenes" you can see that there is usually a single bank account backing the whole company
+This "client money" bank account is held at a "sponsor bank" and contains the money of all of CM's customers 
+together in one lump sum
+The only thing that allows CM to know that from, say, the $150 in the client money account 
+$100 belong to customer 1 (Bob) and $50 to customer 2 (Alice) is its own internal ledger
+In our scenario if Bob decides to send $20 to Alice 
+their balances on their CM wallets will change and the CM ledger updated
+However from the sponsor bank's PoV nothing will have changed: the CM bank account as a whole will still hold $150
+the bank had no transaction to record.
+
+Keeping customer money within their own institutional boundary (a.k.a. "ecosystem")  
+is a big driver for e-money providers 
+(i.e. within their own client money account)
+which is why it is a breeze to make payments to other customers of the same e-money provider
+CM users get the impression that money moves around when paying other CM users 
+but looking from the outside in, the overall balance of the CM client money bank account does not change
+Even if Bob and Alice make thousands of payments to each other, from CarrotMoney's point-of-view it is still the same amount 
+in the client account (and depending on how CM's business model works, this amount can be [assets under management][31])  
+It is only when CM customers send money to a non-CM account that money truly leaves the CM client account
+and the sponsor bank records a transaction in its ledger    
+
 ### Interbank payment
 
+In the case when a payment needs to go from one bank to another  
+i.e. cross institutional boundaries we need a third party to act as the trusted intermediary: the central bank 
+
 ![Interbank payment](../images/payments/interbank-payment.png)
+
+Let's consider the case when account A of GreenBank (GB) wants to make a payment of £50 to account D of PurpleBank (PB)
+A number of things need to happen:
+1. GB needs to make sure that A has at least £50 as available balance
+2. GB then needs to debit £50 from A
+3. GB needs to somehow send the money to PB, and
+4. PB needs to credit £50 to D
+
+From these steps number 3 is the hardest as the 2 institutions need to trust each other 
+GB cannot realistically send the money in a bag to PB
+it also cannot "communicate" the money electronically; how can GB's recipient banks know that it actually has the £50?
+
+The answer comes via one or more secure messaging networks (diagram lines numbered 1 and 2) facilitated and guaranteed 
+by the central bank (in black)<sup>[7](#footnote_7)</sup>
+
+What (roughly) happens is along the following lines
+* GB and PB participate in a [payment system/scheme][32], by depositing an amount of money in their account in the 
+central bank
+* When A instructs a £50 payment to D, GB checks the balance of A.
+* If A's balance can cover the payment, GB sends a message to PB that "£50 are on their way"
+* If a modern scheme, PB credits £50 to D as soon as it receives the message.
+* At regular intervals, the central bank gathers all payment messages exchanged between the participating banks, tallies 
+them up and [nets off][33] the amounts
+Outstanding differences are settled by moving money between the banks' accounts held at the central bank. 
+At the end of the day, the banks top up that central "stash" if needed and it's all over again the next day 
+
+In this scenario there are 3 ledgers in 3 different institutions which need to be updated: GB, PB and the central bank
+
+Some countries have multiple electronic interbank payment schemes (e.g. in the UK [Faster Payments][34], [Bacs][35], [CHAPS][36],... , 
+ in Greece [DIAS][37] and [IRIS][38] etc)
+
+Newer schemes (e.g. Faster Payments) are message-based and payments arrive in the creditor's account in a matter of minutes
+Older schemes (e.g. Bacs) are file-based. Instead of messages, all participating banks gather the day's payments in files 
+and send them to the central authority for processing and settlement.
+Each payment scheme is geared towards a different segment of the payments space e.g. Faster Payments for smaller value 
+transfers, CHAPS for higher value, IRIS offers defining payee by mobile phone rather than IBAN etc  
+
+Unlike intrabank payments, the only cost of which is running the bank's systems, the payment schemes usually have a cost per 
+payment 
+to cover the expenses of running the scheme
+In well-functioning banking eco-systems this cost, especially for small-value transactions, is sometimes absorbed by the banks (e.g. Faster Payments in the UK)
+Otherwise this is passed on to the customer, sometimes with sprinkle on top<sup>[8](#footnote_8)</sup>
 
 ### International payment - Central bank clearing
 
@@ -241,6 +334,14 @@ be using the [won][19] as a medium of exchange. Their government's credibility i
 to them. How much value would *you* put on a won banknote and why?
 5. <a name="footnote_5"></a>If we make a payment from Japan to the U.S. at no point in time will anyone put yen bank notes
 (or anything else) in a box and send them over the ocean to complete the transaction. 
+6. <a name="footnote_6"></a>One side makes a note "I owe that country X billions" and writes those billions off its 
+central bank balance sheet (the equivalent of "burning money"). The other side makes a note "that country owes me X billions"
+and adds those in its central bank's balance sheet (the equivalent of "printing money"). It is slightly more complex than
+this, but you get the idea. 
+7. <a name="footnote_7"></a>This is a slight over-simplification. In practice the trusted third-party is an institution managing the payment 
+scheme. This institution is setup and sponsored by the central bank.
+8. <a name="footnote_8"></a>It is funny how IRIS was initially advertised as [free to use][41] for bank customers, yet Greek 
+banks [end up][39] [charging][40] regardless. 
 
 
   [1]: https://en.wikipedia.org/wiki/Payment
@@ -269,3 +370,18 @@ to them. How much value would *you* put on a won banknote and why?
   [24]: https://www.investopedia.com/articles/personal-finance/050515/how-swift-system-works.asp
   [25]: https://en.wikipedia.org/wiki/Know_your_customer
   [26]: https://www.investopedia.com/terms/a/aml.asp
+  [27]: https://www.gold.org/about-gold/history-of-gold/the-gold-standard
+  [28]: https://howbankswork.com/banking-framework/channels/
+  [29]: https://en.wikipedia.org/wiki/Neobank
+  [30]: https://www.fca.org.uk/firms/payment-services-regulations-e-money-regulations
+  [31]: https://www.investopedia.com/terms/a/aum.asp
+  [32]: http://www.accesstopaymentsystems.co.uk/introduction-payment-systems-and-schemes
+  [33]: https://www.kantox.com/en/glossary/payment-netting-2/
+  [34]: http://www.fasterpayments.org.uk/
+  [35]: https://www.bacs.co.uk/Pages/Home.aspx
+  [36]: https://www.bankofengland.co.uk/payment-and-settlement/chaps
+  [37]: https://www.dias.com.gr/?lang=En
+  [38]: https://www.europeanpaymentscouncil.eu/news-insights/insight/greeces-steady-progress-towards-cashless-society
+  [39]: https://www.alpha.gr/-/media/alphagr/pdf-files/diafora-sunodeutika-pdf/xrisima-eggrafa/oroi-sunallagon-promithies-loipa-eksoda.pdf
+  [40]: https://www.eurobank.gr/-/media/eurobank/rates/timologio-trapezikon-ergasion.pdf
+  [41]: https://www.asfalisinet.gr/%CE%B7-online-%CF%85%CF%80%CE%B7%CF%81%CE%B5%CF%83%CE%AF%CE%B1-%CF%80%CE%BB%CE%B7%CF%81%CF%89%CE%BC%CF%8E%CE%BD-iris-%CF%87%CF%89%CF%81%CE%AF%CF%82-iban-%CE%BA%CE%B1%CE%B9-%CF%87%CF%81%CE%B5%CF%8E/
