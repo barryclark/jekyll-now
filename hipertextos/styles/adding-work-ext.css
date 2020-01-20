@@ -37,6 +37,11 @@
 .icon-left, .icon-right {text-align: center !important;}
 h4.slimmer {font-weight:400;line-height:2.1em ; border:3px solid currentcolor;max-width:40%;margin-left:30%;}
 
+.words {padding-top:69px;color:var(--color-hardgrey) ;background:linear-gradient(rgba(252,251,251,1),rgba(225,230,230,1));border:thin solid #eee; text-align: center;}
+.words h3 {font-weight: lighter;font-size: 1.5em;margin-bottom: 6px;}
+.words h4 {font-weight: normal;font-size: 1em;line-height: 2.1em}
+
+
 /* Serveis section NEW!! */
 #colmns .icones {margin-left:33.3333333333%;max-width:33.3333333333%;margin-top:32px;margin-bottom:18px;}
 #colmns h4 {text-align: center !important}
