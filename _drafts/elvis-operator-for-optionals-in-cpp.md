@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: c++11 c++17 constexpr functional-programming
+tags: c++ null-conditional template-metaprogramming functional-programming
 #categories: []
 date: 2020-01-14 00:00:00
 #excerpt: ''
@@ -10,27 +10,33 @@ date: 2020-01-14 00:00:00
 title: 'A conditional pipe operator for `std::optional`' 
 ---
 
-In C++ `std::optional<T>` is a great way to represent a value that could be of type `T` or nothing. However, it is somewhat clumsy to work with optional types because you need to call member functions to gain access to their underlying value. Inspired by the C# Elvis Operator (also [null-conditional operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)) I implemented a pipe operator that allows us to chain optional expressions in a more expressive fashion. The case of an optional being `nullopt` is handled implicitly.
+In C++, `std::optional<T>` is a great way to represent a value that could hold a value of type `T` or nothing. However, it is somewhat clumsy to work with optional types when you want to chain operations on them, because you have to account for the `nullopt` case. Inspired by the C# Elvis operator (also [null-conditional operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)) I set out to implement a pipe operator that allows us to chain optional expressions in a more expressive fashion. The case of an optional being `nullopt` is handled implicitly.
 
 #  The Null-Conditional Operator in C#
-Actually there is two such operators in C# but I am only concerned by the null-conditional member access operator `?.`. From the Microsoft Docs:
+There are two null-conditional operators in C# but I am only concerned by the null-conditional member access operator `?.` which is also referred to as the Elvis operator. From the Microsoft Docs:
 
 > Available in C# 6 and later, a null-conditional operator applies a member access, `?.`, or element access, `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns null.
 
 This allows for a rather neat syntax where we can write code like this, e.g. for two `String` objects
 ```c#
-String str2 = str1?.ToUpper();
+String str2 = str1?.Insert(0, "preamble:")?.ToUpper();
 ```
-In that case `str2` will contain the upper case version of str1 or `null` if str1 is `null`. Expressions like this can be chained, of course. This is where the real power of the null-condional operator comes into play, because it allows for more expressive code without the need to check for `null` before each function call. Using template metaprogramming techniques we can implement our own operator in C++ that does very similar things conceptually.
+In that case `str2` will contain the upper case version of str1 with "PREAMBLE:" prepended, or `null` if str1 is `null`. The chaining of expressions is where the real power of the null-condional operator comes into play: it allows for more expressive code without the need to check for `null` before each function call. Using template metaprogramming techniques we can implement our own operator in C++ that does very similar things conceptually. Lets figure out how it should behave given different possible arguments.
 
 # Defining the Intended Behaviour in C++
+I will use `%` as the operator in C++. It takes a `t` of type `T` and applies a function to it. The C++ of the example above might look like this:
+```c++
+//std::optional<std::string> str1 = ... (given elsewhere)
+std::optional<std::string> str2 = str1 % insert_at_begin("preamble:") % to_upper;
+```
+Where insert_at_begin and to_upper are functions that are defined appropriately. Lets have a look on the different functions that the operator can encounter.
 
 Since I want to have my C++ implementation be a useful tool for functional programming, it is quite natural to talk about applying functions to optionals. I can think of these types of functions we want to apply to an object `opt` of type `std::optional<T>`. I will use $f$, $g$ for a function and `T`, `U` for C++ types, which are not `void`.
 1. $f_1: $ `T` $\rightarrow$ `U`
 2. $f_2: $ `T` $\rightarrow$ `void`
-3. $f_4: $ `std::optional<T>` $\rightarrow$ `std::optional<U>`
-4. $f_5: $ `std::optional<T>` $\rightarrow$ `void`
-5. $f_3: $ `std::optional<T>` $\rightarrow$ `U`, where `U` is not an optional type.
+3. $f_3: $ `std::optional<T>` $\rightarrow$ `std::optional<U>`
+4. $f_4: $ `std::optional<T>` $\rightarrow$ `void`
+5. $f_5: $ `std::optional<T>` $\rightarrow$ `U`, where `U` is not an optional type.
 
 There are two main types of functions: functions taking a `T` and those taking an `std::optional<T>`. We will discuss the intended behaviour separately. 
 
@@ -51,7 +57,7 @@ endif
 }
 
 ```
-The function signature of the optional operator in this case is thus: $op($`std::optional<T>`$,f_1)\rightarrow$`std::optional<U>`.
+The function signature of the optional operator in this case is thus: $op: ($`std::optional<T>`$,f_1)\rightarrow$`std::optional<U>`.
 
 Here I have just decided that I want to use `%` as the chaining null-conditional operator in C++. So far so good. We can do pretty much the same implementation for functions of type $f_2$: Apply the (effectful) function only if the optional has a value. However, what do we return? We could return `void`, but I would like to be able to chain the operator and returning `void` would break this chain. So I would like to implement the operator like this (pseudocode):
 
@@ -67,13 +73,22 @@ return f(t)
 }
 
 ```
-The function signature of the optional operator in this case is thus: $op($`std::optional<T>`$,f_2)\rightarrow$`std::optional<T>`. Functions of type $f_2$ are purely effectful functions and should not modify its argument, because that would get us into all kinds of trouble in the implementation. More on that later. A possible function of type $f_2$ would be to print its argument to the console.
+The function signature of the optional operator in this case is thus: $op: ($`std::optional<T>`$,f_2)\rightarrow$`std::optional<T>`. Functions of type $f_2$ are purely effectful functions and should not modify its argument, because that would get us into all kinds of trouble in the implementation. More on that later. A possible function of type $f_2$ would be to print its argument to the console.
 
 ## Functions Taking Optionals
-For functions taking optionals, the behaviour of the operator should be different, because whoever designed the functions intended them to work on optionals.  For cases 3,4 we can pretty much take the corresponding implementations from above. The difference is that the functions are always applied to the operand even if it is `nullopt`. The function signatures should be FUNCTION SIGNATURES HERE!!!!!!!!!!!!
+For functions taking optionals, the behaviour of the operator should be different, because whoever designed the functions intended them to work on optionals.  For cases 3,4 we can pretty much take the corresponding implementations from above. The difference is that the functions are always applied to the operand even if it is `nullopt`. The respective signatures are: $op: ($`std::optional<T>`$,f_3)\rightarrow$`std::optional<U>` and $op: ($`std::optional<T>`$,f_4)\rightarrow$`std::optional<T>`.
 
-The only case that requires some thought is number 5. Here the implementor expects an optional and guarantees a return value that is not an optional. There are also several ways to handle this. I am going to stay consistens 
+The only case that requires some thought is number 5. Here the implementor expects an optional and guarantees a return value that is not an optional. There are also several ways to handle this. In the `void` return case I opted for a solution that was chainable and returns an optional and I am going to to the same here. This is why I will wrap the return value in an optional type so that the signature of the operator becomes $op: ($`std::optional<T>`$,f_5)\rightarrow$`std::optional<U>`.
+
+## Summary
+This is a quick summary of the function signatures of the C++ null-conditional operator `%` we developed above:
+
+1. $op($`std::optional<T>`$,f_1)\rightarrow$`std::optional<U>`
+2. $op($`std::optional<T>`$,f_2)\rightarrow$`std::optional<T>`
+3. $op: ($`std::optional<T>`$,f_3)\rightarrow$`std::optional<U>`
+4. $op: ($`std::optional<T>`$,f_4)\rightarrow$`std::optional<T>`
+5. $op: ($`std::optional<T>`$,f_5)\rightarrow$`std::optional<U>`
 
 # To Be Continued
 
-I will write a post on the implementation in the next part. The function body of this operator is trivial but the tricky part of the implementation is getting the metaprogramming right.
+I will write a post on the implementation in the next part and link to it here when its done. The function body of this operator is trivial but the tricky part of the implementation is getting the metaprogramming right.
