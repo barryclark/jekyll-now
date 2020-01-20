@@ -11,9 +11,11 @@ tags:
   - "2020"
 ---
 
-For our first meetup of 2020, Cloud Native London January kicked off the year with three fantastic speakers. The full video of the whole evening will be uploaded shortly.
+For our first meetup of 2020, Cloud Native London January kicked off the year with three fantastic speakers:  Chris Milsted from VMWare, Hussein Badakhchani from Ziglu, and Viktor Petersson from WoTT. Check out their takeaways here!
 
-Our speakers for the evening were Chris Milsted from VMWare, Hussein Badakhchani from Ziglu, and Viktor Petersson from WoTT. Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com) and [Palo Alto Networks](https://www.paloaltonetworks.com/).
+Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com) and [Palo Alto Networks](https://www.paloaltonetworks.com/).
+
+*The full video of the whole evening will be added soon!*
 
 ![Chris Milsted](https://pbs.twimg.com/media/ENyC1WrWkAYeWtu?format=jpg)
 
@@ -27,7 +29,7 @@ Check out his slides [here](https://github.com/chris-milsted/CloudNativeLondonJa
 
 ![Hussein Badakhchani](https://pbs.twimg.com/media/ENyNZmmWoAYvFBk?format=jpg)
 
-Next up, Hussein from Ziglu discussed Building a Crypto Bank in the Cloud. He concluded that: 
+Next up, Hussein from Ziglu discussed Building a Crypto Bank in the Cloud. He concluded that:
 
 * Finding the right people is the biggest single factor in determining success.
 * Taking risks is unavoidable so take the risks that offer the biggest upside and smallest downside.
