@@ -39,9 +39,9 @@ h4.slimmer {font-weight:400;line-height:2.1em ; border:3px solid currentcolor;ma
 
 .words {background-position:top center;background-attachment:fixed;
     background-size:cover;background-repeat:no-repeat;border:none;overflow:hidden;
-    text-align:center;}
+    color:var(--color-hardgrey);}
 .words h3 {font-weight: lighter;font-size: 1.5em;margin-bottom: 6px;
-	text-shadow:0 2px 2px #000;}
+	text-shadow:0 2px 2px #000;text-align:center;}
 .words h4 {font-weight: normal;font-size: 1.05em;line-height: 1.8em}
 
 #web-oferta {min-height:300px;padding-top:18px;}
