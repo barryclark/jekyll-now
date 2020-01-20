@@ -37,9 +37,9 @@
 .icon-left, .icon-right {text-align: center !important;}
 h4.slimmer {font-weight:400;line-height:2.1em ; border:3px solid currentcolor;max-width:40%;margin-left:30%;}
 
-.words {padding-top:69px;color:var(--color-hardgrey);
-    background:linear-gradient(rgba(42,42,42,1),#000);
-    border:thin solid #000; text-align: center;}
+.words {background-position:top center;background-attachment:fixed;
+    background-size:cover;background-repeat:no-repeat;border:none;overflow:hidden;
+    text-align:center;}
 .words h3 {font-weight: lighter;font-size: 1.5em;margin-bottom: 6px;
 	text-shadow:0 2px 2px #000;}
 .words h4 {font-weight: normal;font-size: 1.05em;line-height: 1.8em}
