@@ -2,7 +2,7 @@
 layout: post
 title: "An intro to payments: Value, liabilities and networks"
 excerpt_separator: <!--more-->
-tags: [payments, networks, cryptocurrencies]
+tags: [payments, networks, banking, cryptocurrencies]
 ---
 
 ## Please, take my money! 
@@ -44,7 +44,7 @@ Yet another term: currency. We [have][3]
 Slightly cyclical definition 
 but becomes clear that the transfer of value in a payment is *facilitated* by a currency (a.k.a. money)
 In other words, exchanging "money" is not a goal in itself 
-rather it simply helps in the process, provided that both parties recognize money as value<sup>[1](#footnote_1)</sup>
+rather it simply helps in the process, provided that both parties recognize money as value.<sup>[1](#footnote_1)</sup>
 
 ### In the olden days...
 
@@ -54,7 +54,7 @@ rather it simply helps in the process, provided that both parties recognize mone
 Once upon a time 
 transactions and payments would take place in person
 starting in the pre-historic times with [barter][4] 
-mankind quickly had to move to a separate form of money<sup>[2](#footnote_2)</sup> 
+mankind quickly had to move to a separate form of money.<sup>[2](#footnote_2)</sup> 
  
 The role of money was eventually filled in by precious metals: gold and silver
 Precious metals (gold and at a lesser extent silver) [possess a lot][7] of very [interesting properties][6] which make 
@@ -69,8 +69,8 @@ This is not as easy as it sounds, especially in ancient times with an armed band
 and their logical next step [paper money][10] 
 
 introduced 2 new concepts:
-* an alternative medium for the transfer of value in space (in this case paper)
-This acts in lieu of the "real thing"<sup>[3](#footnote_3)</sup>
+* an alternative medium for the transfer of value in 3d space (in this case paper)
+This acts in lieu of the "real thing".<sup>[3](#footnote_3)</sup>
 * a trusted third party facilitating the flow of value
 The trust component being that the third party (merchant, Knight Templar, emperor, central bank) will make good on the promise 
 to deliver the gold, as "written" on the piece of paper
@@ -106,7 +106,8 @@ It is the accepted medium of exchange (many times the only [de jure][17] medium)
 
 In the modern era, until 1971, the world currency system was underpinned by [precious metals][18] 
 
-From that point on modern currencies (a.k.a fiat money) are only backed by the credibility of their issuing authority<sup>[4](#footnote_4)</sup>
+From that point on modern currencies (a.k.a fiat money) are only backed by the credibility of their issuing 
+authority.<sup>[4](#footnote_4)</sup>
 (government or central bank) 
 In much simpler words currency is a promise, 
 it is someone else's liability to make good on this promise
@@ -136,12 +137,12 @@ At their heart these are [double-entry ledgers][21] recording in which direction
 
 There are 2 differences of the global payments system from the mental model of "barrels of liquid" 
 
-* is that currency (the liquid) does not physically "move" down the pipes from one account/bank to the other<sup>[5](#footnote_5)</sup>
+* is that currency (the liquid) does not physically "move" down the pipes from one account/bank to the other.<sup>[5](#footnote_5)</sup>
 What actually travel are messages of various [types][22] which result in the ledgers (the meters) recording new transactions 
 and balances 
 in other words, value in the modern banking world is purely virtual and electronic 
 * different outer-most barrels (central banks) contain different types of liquid which do not mix 
-Yet when currency moves across borders it is the equivalent of water turning into oil<sup>[6](#footnote_6)</sup>
+Yet when currency moves across borders it is the equivalent of water turning into oil.<sup>[6](#footnote_6)</sup>
 This is a "happy" corollary of modern-day "money" being electronic.
 In the olden days of gold-backed currencies, central banks would ultimately settle their balances by [gold shipments][27]
 
@@ -220,7 +221,7 @@ GB cannot realistically send the money in a bag to PB
 it also cannot "communicate" the money electronically; how can GB's recipient banks know that it actually has the £50?
 
 The answer comes via one or more secure messaging networks (diagram lines numbered 1 and 2) facilitated and guaranteed 
-by the central bank (in black)<sup>[7](#footnote_7)</sup>
+by the central bank (in black).<sup>[7](#footnote_7)</sup>
 
 What (roughly) happens is along the following lines
 * GB and PB participate in a [payment system/scheme][32], by depositing an amount of money in their account in the 
@@ -244,15 +245,24 @@ and send them to the central authority for processing and settlement.
 Each payment scheme is geared towards a different segment of the payments space e.g. Faster Payments for smaller value 
 transfers, CHAPS for higher value, IRIS offers defining payee by mobile phone rather than IBAN etc  
 
+Because of the capital requirement to have a capital buffer in the central bank 
+not all banks can or want to be direct participants in a payment scheme (e.g. [UK Faster Payments participants][42]) 
+other banks need to have a sponsor bank which propvides the guarantee for them
+
 Unlike intrabank payments, the only cost of which is running the bank's systems, the payment schemes usually have a cost per 
 payment 
 to cover the expenses of running the scheme
 In well-functioning banking eco-systems this cost, especially for small-value transactions, is sometimes absorbed by the banks (e.g. Faster Payments in the UK)
-Otherwise this is passed on to the customer, sometimes with sprinkle on top<sup>[8](#footnote_8)</sup>
+Otherwise this is passed on to the customer, sometimes with sprinkle on top.<sup>[8](#footnote_8)</sup>
 
 ### International payment - Central bank clearing
 
+When money needs to move between countries   
+payments involve more steps
+
 ![International payment - Central bank](../images/payments/international-payment-cb.png)
+
+
 
 ### International payment - Nostro/vostro
 
@@ -277,6 +287,13 @@ requiring different levels of detail (e.g. account owner name, address, etc)
  
 the more data points required as input the highwer the possibility for mistakes in account numbers 
 surprisingly large number of manual processing and corrections
+
+currency markets vs dependency on dollar 
+as reserve currency 
+
+swift payment system 
+depends on dollar flows/banks
+weaponized for sanctions
 
 ## Payment rails 
 
@@ -385,3 +402,4 @@ banks [end up][39] [charging][40] regardless.
   [39]: https://www.alpha.gr/-/media/alphagr/pdf-files/diafora-sunodeutika-pdf/xrisima-eggrafa/oroi-sunallagon-promithies-loipa-eksoda.pdf
   [40]: https://www.eurobank.gr/-/media/eurobank/rates/timologio-trapezikon-ergasion.pdf
   [41]: https://www.asfalisinet.gr/%CE%B7-online-%CF%85%CF%80%CE%B7%CF%81%CE%B5%CF%83%CE%AF%CE%B1-%CF%80%CE%BB%CE%B7%CF%81%CF%89%CE%BC%CF%8E%CE%BD-iris-%CF%87%CF%89%CF%81%CE%AF%CF%82-iban-%CE%BA%CE%B1%CE%B9-%CF%87%CF%81%CE%B5%CF%8E/
+  [42]: http://www.fasterpayments.org.uk/directly-connected-participants
