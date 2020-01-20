@@ -54,7 +54,7 @@ unsigned long constexpr djb2_xor(const std::string_view & str)
 ```
 I have replaced the while loop by a range-based for loop because this is C++ and not C, after all. However, in essence the function body is identical to the original C code. This function can now be used with compile time constant expressions or run time expressions and will produce the exact same result.
 
-And that is the story if you use C++ 17. If either you are into functional programming then keep reading.
+And that is the story if you use C++ 17. If you are into functional programming then keep reading.
 
 # Going Functional and Moving Towards C++ 11
 
