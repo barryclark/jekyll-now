@@ -10,7 +10,9 @@ date: 2020-01-14 00:00:00
 title: 'A conditional pipe operator for `std::optional`' 
 ---
 
-In C++, `std::optional<T>` is a great way to represent a value that could hold a value of type `T` or nothing. However, it is somewhat clumsy to work with optional types when you want to chain operations on them, because you have to account for the `nullopt` case. Inspired by the C# Elvis operator (also [null-conditional operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)) I set out to implement a pipe operator that allows us to chain optional expressions in a more expressive fashion. The case of an optional being `nullopt` is handled implicitly.
+In C++, `std::optional<T>` is a great way to represent a value that could hold a value of type `T` or nothing. However, it is somewhat clumsy to work with optional types when you want to chain operations on them, because you have to account for the `nullopt` case.
+
+Inspired by the C# Elvis operator (also [null-conditional operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)) I set out to implement a pipe operator that allows us to chain optional expressions in a more expressive fashion. The case of an optional being `nullopt` is handled implicitly.
 
 #  The Null-Conditional Operator in C#
 There are two null-conditional operators in C# but I am only concerned by the null-conditional member access operator `?.` which is also referred to as the Elvis operator. From the Microsoft Docs:
@@ -21,17 +23,20 @@ This allows for a rather neat syntax where we can write code like this, e.g. for
 ```c#
 String str2 = str1?.Insert(0, "preamble:")?.ToUpper();
 ```
-In that case `str2` will contain the upper case version of str1 with "PREAMBLE:" prepended, or `null` if str1 is `null`. The chaining of expressions is where the real power of the null-condional operator comes into play: it allows for more expressive code without the need to check for `null` before each function call. Using template metaprogramming techniques we can implement our own operator in C++ that does very similar things conceptually. Lets figure out how it should behave given different possible arguments.
+In that case `str2` will contain the upper case version of str1 with "PREAMBLE:" prepended, or `null` if str1 is `null`. The ability to chain expressions is where the real power of the null-condional operator comes into play: it allows for more expressive code without the need to check for `null` before each function call.
+
+Using template metaprogramming techniques we can implement our own operator in C++ that does very similar things conceptually. I want the oprator to apply functions to optionals. The class `std::optional` represents nullable types in C++ in a way that is in line with the ideas of functional programming. 
 
 # Defining the Intended Behaviour in C++
-I will use `%` as the operator in C++. It takes a `t` of type `T` and applies a function to it. The C++ of the example above might look like this:
+I will use `%` as the operator in C++. It takes an `opt` of type `std.:optional<T>` and applies a function to it. The C++ of the example above might look like this:
 ```c++
 //std::optional<std::string> str1 = ... (given elsewhere)
 std::optional<std::string> str2 = str1 % insert_at_begin("preamble:") % to_upper;
 ```
-Where insert_at_begin and to_upper are functions that are defined appropriately. Lets have a look on the different functions that the operator can encounter.
+Where `insert_at_begin` and `to_upper` are functions that are defined appropriately. Lets have a look at the different kinds of functions that the operator can encounter.
 
-Since I want to have my C++ implementation be a useful tool for functional programming, it is quite natural to talk about applying functions to optionals. I can think of these types of functions we want to apply to an object `opt` of type `std::optional<T>`. I will use $f$, $g$ for a function and `T`, `U` for C++ types, which are not `void`.
+Since I want to have my C++ implementation be a tool for functional programming, it is natural to talk about applying functions to optionals in a math-y way. As a notation I use $f$ for a type of function, and `T`, `U` for C++ types, which are not `void`.  I can think of these types of functions we want to apply to an object `opt` of type `std::optional<T>`:
+
 1. $f_1: $ `T` $\rightarrow$ `U`
 2. $f_2: $ `T` $\rightarrow$ `void`
 3. $f_3: $ `std::optional<T>` $\rightarrow$ `std::optional<U>`
@@ -41,7 +46,7 @@ Since I want to have my C++ implementation be a useful tool for functional progr
 There are two main types of functions: functions taking a `T` and those taking an `std::optional<T>`. We will discuss the intended behaviour separately. 
 
 ## Functions Taking `T`
-The functions $f_1$ and $f_2$ know nothing of optionals. They might be implemented to work on type `T`,  `const T&`, `T&`, or `T&&`, but they have no way of dealing with optional input arguments. So this is what we have to implement. This is true even if the return value is of optional type.
+The functions $f_1$ and $f_2$ know nothing of optionals. They might be implemented to work on type `T`,  `(const) T&`, or `T&&`, but they have no way of dealing with optional *input arguments*. So this is what we have to implement. This is true even if the *return value* is of optional type.
  
 Let us denote the operator by $op$, which is itself a function which takes two parameters. Those two parameters are an optional and one of the function types defined above. The first case the easiest but it is instructive to think about it briefly: What do we want to happen when we apply function $f_1: $ `T` $\rightarrow$ `U` to an `std::optional<T>` using the C++ null-conditional operator? Well, in C# the operator just returns the result of the function or `null` if the object was `null` to begin with. We can do an analogous  thing in C++: we always return an `std::optional<U>` instead of a `U`. The return value is `nullopt` if the input value was `nullopt` and otherwise is such that the wrapped value is $u = f($`t`$)$ where `t` is the input argument of type `T`. The pseudocode looks like this:
 
