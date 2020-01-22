@@ -11,7 +11,7 @@
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
 
-#page-header h2 {font-size:3em;padding-top:120px;font-weight: 400;letter-spacing: none;}
+#page-header h2 {font-size:3em;padding-top:42px;font-weight: 400;letter-spacing: none;}
 #page-header h5 {padding-bottom:160px;font-weight: 200;}
 
 #page-nav {background-color:var(--color-white)!important;height:79px;overflow:hidden;}
