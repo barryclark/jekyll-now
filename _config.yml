@@ -1,7 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
-
+encoding: UTF-8
 # Name of your site (displayed in the header)
 name: Steven Bug
 
