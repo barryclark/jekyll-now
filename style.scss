@@ -32,7 +32,7 @@ body {
 
 code {
   font-family: $Monospace;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 
@@ -54,20 +54,24 @@ h1 {
   font-size: 30px;
   a {
     color: inherit;
+    text-decoration: none;
   }
 }
 
 h2 {
   font-size: 24px;
+  text-decoration: none;
 }
 
 h3 {
   font-size: 20px;
+  text-decoration: none;
 }
 
 h4 {
   font-size: 18px;
   color: $gray;
+  text-decoration: none;
 }
 
 p {
@@ -75,11 +79,11 @@ p {
 }
 
 a {
-  color: $black;
+  color: $darkGray;
   text-decoration: underline;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $darkRed;
     text-decoration: underline;
   }
 }
