@@ -4,6 +4,7 @@ title: "Cloud Native London January 2020: VMWare, Ziglu, and WoTT"
 description: "Read the roundup from VMWare, Ziglu, and WoTT at the Cloud Native London meetup in January, hosted by Cheryl Hung, Director of Ecosystem at the Cloud Native Computing Foundation."
 location: London, UK
 image: https://pbs.twimg.com/media/ENyKLL9X0AE9vLH?format=jpg&name=4096x4096
+video: https://www.youtube.com/embed/BNnP4AmMdQE
 tags:
   - Photos
   - Video
@@ -15,7 +16,6 @@ For our first meetup of 2020, Cloud Native London January kicked off the year wi
 
 Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com) and [Palo Alto Networks](https://www.paloaltonetworks.com/).
 
-*The full video of the whole evening will be added soon!*
 
 ![Chris Milsted](https://pbs.twimg.com/media/ENyC1WrWkAYeWtu?format=jpg)
 
