@@ -4,7 +4,7 @@ title: "Cloud Native London January 2020: VMWare, Ziglu, and WoTT"
 description: "Read the roundup from VMWare, Ziglu, and WoTT at the Cloud Native London meetup in January, hosted by Cheryl Hung, Director of Ecosystem at the Cloud Native Computing Foundation."
 location: London, UK
 image: https://pbs.twimg.com/media/ENyKLL9X0AE9vLH?format=jpg&name=4096x4096
-video: https://www.youtube.com/embed/BNnP4AmMdQE
+video: https://www.youtube.com/embed/24YCgJbv2ms
 tags:
   - Photos
   - Video
@@ -35,8 +35,9 @@ Next up, Hussein from Ziglu discussed Building a Crypto Bank in the Cloud. He co
 * Taking risks is unavoidable so take the risks that offer the biggest upside and smallest downside.
 * Make informed decisions
 
-
-![Viktor Petersson](https://pbs.twimg.com/media/ENyU6LnXkAEMtKQ?format=jpg)
+<div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/BNnP4AmMdQE" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Finally, Viktor from WoTT rounded off our evening by introducing us to The DevSecOps Iceberg. He left us with these takeaways:
 
