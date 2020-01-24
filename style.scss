@@ -213,11 +213,12 @@ img {
 }
 
 .mainContentContainer:before {
-  content: '';
+  content: ' ';
   display : table;
 }
 
 .mainContentContainer:after {
+  content: ' ';
   clear: both;
 }
 
