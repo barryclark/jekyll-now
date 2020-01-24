@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 id: 150618
 title: 'Optimizar Raspberry PI para desarrollo'
 date: 2018-06-15T00:00:00+00:00
@@ -33,35 +33,27 @@ sudo /etc/init.d/dphys-swapfile start
 ## Modo Turbo
 Cambiar en el archivo config.txt:
 
-force_turbo=1 #Voids Warranty!
-boot_delay=1 #helps to avoid sdcard corruption when force_turbo is enabled.
+force_turbo=1 # Esta opcion fuerza el modo turbo. Activar este modo puede eliminar tu garantia.
+boot_delay=1 # Es necesario activar cuando se activa el modo turbo, para evitar corrupcion de la tarjeta SDCARD.
 
-More speed? Raspberry Pi 3 Overclock – 1.35GHz
+Los parametros a continuacion son para Overcloclear una RPI3 a 1.35GHZ
 arm_freq=1350
 core_freq=500
 over_voltage=4
 disable_splash=1
-//#force_turbo=1 #Voids Warranty! (uncomment to avoid CPU scaling down to 600Mhz)
-//#boot_delay=1 #helps to avoid sdcard corruption when force_turbo is enabled.
-//#sdram_freq=500 #uncomment to test. Works only with some boards.
 
-
-## Ajustes de memoria compartida
-eg. Web server, wireless access point, firewall, weather station, etc
+## Ajustes de memoria compartida para cuando tu RPI corre en sin UI
 gpu_mem=16
 
-or for GUI usage, eg. OpenELEC, Raspbmc, RetroPie, XFCE, etc.
+Para cuando corre en UI, es mejor optimizar la memoria de la siguiente forma
 gpu_mem=320
 
 
-## Instalacion de GUI (Desde Debian Stretch Lite)
+## Instalacion de GUI (desde Debian Stretch Lite)
 sudo apt-get update
 sudo apt full-upgrade -y
-
-### Instalando el GUI
 sudo apt-get install -y raspberrypi-ui-mods rpi-chromium-mods
 sudo reboot
-
 sudo apt-get install lightdm
 raspi-config > "Boot option"->"Desktop / CLI"->"Desktop autologin"
 
@@ -69,11 +61,12 @@ raspi-config > "Boot option"->"Desktop / CLI"->"Desktop autologin"
 #### startx
 sudo apt-get install --no-install-recommends xinit
 
-#### chromium-mods
+#### Algunos cambios adicionales para mejorar el performance
+Optimizar chromium
 sudo apt-get install -y rpi-chromium-mods
 sudo apt-get install -y python-sense-emu python3-sense-emu
 
-#### Browser
+Instalar Midori
 sudo apt install midori
 
 ## Otros interesantes
