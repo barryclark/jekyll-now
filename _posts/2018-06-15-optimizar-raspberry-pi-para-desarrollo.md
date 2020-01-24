@@ -1,7 +1,7 @@
 ---
 published: true
 id: 150618
-title: 'Optimizar Raspberry PI para Desktop'
+title: 'Optimizar RPI para Desktop'
 date: 2018-06-15T00:00:00+00:00
 author: ovalenzuela
 layout: post
