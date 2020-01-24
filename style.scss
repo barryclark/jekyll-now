@@ -29,6 +29,7 @@ body {
   padding: 0 10px;
   width: 100%;
   align-content: center;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,9 +41,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 15px;
   padding: 0;
 
-  @include mobile {
+  @include semiMobile {
     line-height: 1.4;
     font-size: 13px;
+  }
+
+  @include mobile {
+    line-height: 1.0;
+    font-size: 10px;
   }
 }
 
