@@ -197,6 +197,7 @@ img {
   height:100%;
   width:950px;
   margin: 20px auto 60px;
+  overflow: hidden;
 
   @include semiMobile {
     height:100%;
