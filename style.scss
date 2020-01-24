@@ -200,6 +200,10 @@ img {
     padding:5px 15px;
   }
 
+  @include mobile {
+    font-size: 90%;
+  }
+
 }
 
 .site-info {
@@ -265,7 +269,7 @@ nav {
 
 #flexCenter {
   flex-grow:50;
-  margin:0px 50px;
+  margin:0px 140px;
 
   @include semiMobile {
     margin:0px;
