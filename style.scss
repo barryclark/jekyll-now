@@ -25,6 +25,7 @@ body {
 }
 
 .container {
+  display: inline-block;
   max-width: 800px;
   padding: 0 10px;
   width: 100%;
@@ -325,7 +326,7 @@ nav {
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
   clear: both;
-  align-content: center;
+  text-align: center;
 }
 
 footer {
