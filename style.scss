@@ -28,7 +28,6 @@ body {
   max-width: 800px;
   padding: 0 10px;
   width: 100%;
-  align-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -326,6 +325,7 @@ nav {
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
   clear: both;
+  align-content: center;
 }
 
 footer {
