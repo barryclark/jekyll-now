@@ -208,7 +208,8 @@ img {
   }
 
   @include mobile {
-    font-size: 89%;
+    text-align: center;
+    font-size: 90%;
   }
 
 }
@@ -287,18 +288,22 @@ nav {
 #flexCenter {
   float: left;
   margin:0px 80px;
-  width: 700px;
+  width: 690px;
+  margin : 0px 10px 0px 0px;
+
   @include semiMobile {
     margin:0px;
+    display: contents;
   }
 }
 
 #flexRight {
   float: right;
-  min-width:max-content;
   width: 240;
+
   @include semiMobile {
     margin:0px 20px;
+    display: none;
   }
 }
 
