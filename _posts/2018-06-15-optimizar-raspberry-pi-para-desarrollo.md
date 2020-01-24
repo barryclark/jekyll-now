@@ -6,7 +6,7 @@ date: 2018-06-15T00:00:00+00:00
 author: ovalenzuela
 layout: post
 guid: http://ovalenzuela.com/?p=090517
-permalink: /2018/06/optimizar-raspberry-pi-para-desarrollo.md
+permalink: /2018/06/optimizar-raspberry-pi-para-desarrollo.html
 categories:
   - General
   - Noticias Destacadas
