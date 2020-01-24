@@ -59,7 +59,7 @@ At this moment, the next step was to let the filter run for a few days before in
 When visiting the pet store we didn't really have any high expectations, therefore we purchased
 a dozen of comet gold fish like for 35 cents each. They were tiny - about half an inch. Also with the filter we
 started an amazon subscription for [fish food](https://www.amazon.com/gp/product/B00176IK5S/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00176IK5S&linkCode=as2&tag=frsanchezgith-20&linkId=0c0f40c1e5634f153d7b88109e65f11b), again after a recommendation from the pet store, but
-the price at amazon is just so much better and the subscription quite convenient.
+the price at amazon is just so much better and the subscription quite convenient. If you didn't know, Amazon offers a "Subscribe & Save" option in several of their products, which for me works like a charm sending me the needed fish food every quarter and at the same time it reduces the price even more!
 
 And that was it! The finished product is shown below:
 ![pond with fish]({{ site.baseurl }}/images/pondtop.jpg "pond with fish")
