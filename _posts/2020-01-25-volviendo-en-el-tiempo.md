@@ -6,7 +6,7 @@ date: 2020-01-25T00:00:00+00:00
 author: ovalenzuela
 layout: post
 guid: http://ovalenzuela.com/?p=012520
-permalink: /2020/01/volviendo-en-el-tiempo.md
+permalink: /2020/01/volviendo-en-el-tiempo.html
 categories:
   - General
   - Opinión
