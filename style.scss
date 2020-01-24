@@ -193,7 +193,7 @@ img {
   }
 }
 
-#mainContentContainer {
+.mainContentContainer {
   height:100%;
   width:950px;
   margin: 20px auto 60px;
@@ -210,6 +210,15 @@ img {
     font-size: 85%;
   }
 
+}
+
+.mainContentContainer:before {
+  content: '';
+  display : table;
+}
+
+.mainContentContainer:after {
+  clear: both;
 }
 
 .site-info {
