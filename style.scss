@@ -56,6 +56,10 @@ h1 {
   a {
     color: inherit;
   }
+
+  @include semiMobile {
+    font-size : 85%;
+  }
 }
 
 h2 {
@@ -192,21 +196,18 @@ img {
 #mainContentContainer {
   height:100%;
   width:950px;
-  display:flex;
-  flex-direction:row;
-  align-items: stretch;
-  padding:5px 100px;
+  margin: 20px auto 60px;
 
   @include semiMobile {
     height:100%;
     width:100%;
     text-align: center;
-    flex-direction: column-reverse;
     padding:5px 15px;
+    font-size: 90%;
   }
 
   @include mobile {
-    font-size: 90%;
+    font-size: 85%;
   }
 
 }
@@ -273,18 +274,18 @@ nav {
 //
 
 #flexCenter {
-  flex-grow:50;
-  margin:0px 140px;
-
+  float: left;
+  margin:0px 80px;
+  width: 700px;
   @include semiMobile {
     margin:0px;
   }
 }
 
 #flexRight {
-  flex-grow:25;
+  float: right;
   min-width:max-content;
-
+  width: 240;
   @include semiMobile {
     margin:0px 20px;
   }
