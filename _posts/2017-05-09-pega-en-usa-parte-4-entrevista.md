@@ -88,17 +88,34 @@ pero la mayoria de las empresas ofrecen otros montos adicionales al sueldo que e
 Total paquete: 160K + 120 RSU
 
 #### Visa
-#### Condiciones
 
+El tema de visa varia muchisimo dependendiendo del pais de nacionalidad y nacimiento (si, cosas diferentes). Para chilenos existe un tipo de visa especial llamado H1B-1, que es una visa de trabajo temporal, usualmente dura 18 meses (dependiendo del permiso de trabajo y otros factores). Sin embargo el modelo en que funciona depende exclusivamente en como se ha configurado la solicitud. Por suerte, si trabajas para una de las top empresas, usualmente estas empresas tienen abogados de inmigracion que se encargan del papeleo.
+No te preocupes, simplemente prepara dar documentacion que respalde todo los items declarados en tu curriculum y sigue el proceso con el abogado asignado.
 
 ## Preparando la entrevista
+
+La preparacion de tu entrevista va a variar mucho en base al tipo de trabajo. El foco de la entrevista entre un program manager es completamente diferente a la preparacion para un desarrollador. Sin embargo existen algunas bases que son comun y partire con aquellos puntos que casi todos fallan.
+Por cierto, no existe evaluacion psicologica, esta practica latinoamericana muy famosa en Chile, en USA es considerado ridiculo hasta ilegal, asi que no te preocupes que no te tocara dibujar un hombre bajo la lluvia.
+
 ### Averigua de que trata el puesto
+
+Cada vez que postulas, en la descripcion del puesto existen palabras y detalles claves que te serviran para entender de que trata el puesto. Ellos pediran cosas que intentaran luego medir, por tanto es importantisimo tomarse el tiempo de identificar los puntos clave que buscan.
+
 ### Practica tu spanglish
+
+Se entiende que en los paises latinoamericanos el Ingles es casi una especie de Tabu, casi nadie habla ingles. Practicar es importante, la mejor forma de practicar es viajando. Si tienes la chance de viajar por unas semanas, es lo ideal, sino, intenta buscar un meetup o similar donde puedas practicar. El ingles de "libro" o que te ensenan en los institutos solo servira un 15% de lo que realmente uses. Ir a USA y comprar una hamburgesa por ti solo, tiene mayor impacto en el "tipo" de ingles que se usa.
+
 ### Libros que DEBES leer
-### Sitios webs que debes visitar
+
+Existen algunos libros que yo llamaria obligatorios, el primero y mas importante es "The Google Resume". Este libro (que esta en ingles) que describe en detalles el proceso de entrevista y da recomendaciones claves en como pensar, analizar, y estudiar para la entrevista. Este libro sirve para todo tipo de roles.
+
+Para program manager, un buen libro sera el "Cracking the PM interview" y algun libro que hable sobre estimaciones (metodologias y matematica basica). Usualmente es importante para poder responder preguntas tales como "dime cuantos enchufes electricos hay en la ciudad de Nueva York", y si, hay una forma de responder.
+
+Para desarrolladores, un buen repazo usando "Cracking the code Interview", practicando en letcode o similar. Al menos debes saber de algoritmos de ordenamiento, estructura de datos (filas, colas, etc. y operaciones), optimizacion, etc.
+
 ### Investiga tu target
-### Practica tu Jedi-coding-skills
-### Consigue un mentor
+
+Cuando tengas tu entrevista agendada, pide el nombre de los entrevistadores. Esto te permitira buscar el perfil en Linkedin y averiguar sobre sus previos trabajos, projectos, afines. Sera un buen base para abrir la conversacion y te permitira guiar tus respuestas.
 
 ## Durante la entrevista
 ### Nervios
