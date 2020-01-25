@@ -202,12 +202,10 @@ img {
   @include semiMobile {
     height:100%;
     width:100%;
-    text-align: center;
     padding:5px 15px;
   }
 
   @include mobile {
-    text-align: center;
     font-size: 95%;
   }
 
