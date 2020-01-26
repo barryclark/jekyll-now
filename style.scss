@@ -337,6 +337,10 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+
+  @include semiMobile {
+    text-align: center;
+  }
 }
 
 .posts > .post:last-child {
@@ -361,10 +365,6 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
-  }
-
-  @include semiMobile {
-    text-align: center;
   }
 }
 
