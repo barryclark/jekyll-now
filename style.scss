@@ -362,6 +362,10 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+
+  @include semiMobile {
+    text-align: center;
+  }
 }
 
 .wrapper-footer {
