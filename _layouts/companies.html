@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
+    {% include bootstrap.html %}
+
     <!-- Fonts -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
@@ -23,260 +25,516 @@
     {% include analytics.html %}
 
 </head>
-
 <body>
-<div class="container--fluid clearfix">
-    <header class="header--company">
+    {% include company_navigation.html %}
 
-        <div class="header--company__left-side">
-            <button class="header--company__hamburger"><i class="fa fa-bars"></i></button>
-            <a href="{{ site.url }}/"><img src="{{ site.baseurl }}/assets/svg/logo--dark.svg" class="header--company__logo"/></a>
-        </div>
-
-        <nav class="header--company__navigation">
-            {% include navigation.html company=true %}
-        </nav>
-
-    </header>
-</div>
-
-<section class="container--fluid company__section--1" id="a-empreguei">
-    <div class="company__section--1__image">
-        <img src="{{ site.baseurl }}/assets/img/header-bg--companies.jpg"/>
-    </div>
-
-    <div class="container clearfix">
-        <div class="company__section--1__text">
-            <h1>O jeito Empreguei de contratar o <span class="text-color--yellow--200">melhor </span>talento</h1>
-
-            <!--<ul>-->
-            <!--<li>Publique de forma inteligente sua vaga em 1 minuto</li>-->
-            <!--<li>Visualize na hora os 5% melhores talentos para você</li>-->
-            <!--<li>Entreviste na plataforma quantos você quiser</li>-->
-            <!--<li>Tudo digital, online e sem currículos por e-mail</li>-->
-            <!--</ul>-->
-
-            <a href="{{ site.url }}/login/empresa">
-                <button>Publicar Vaga Agora!</button>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="container clearfix company__section--2">
-    <h1><span class="text-color--blue--500">+2.000</span> Empresas eliminaram o currículo com a <span class="text-color--blue--500">Empreguei</span></h1>
-
-    <div class="company__section--2__client-list">
-        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/bioage.png" /></div>
-        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/ford.png"/></div>
-        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/renault.png"/></div>
-        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/oppacart.png"/></div>
-        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/heineken.png"/></div>
-        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/even.png"/></div>
-        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/benjamin.png"/></div>
-        <div class="company__section--2__client-list__client"><img src="{{ site.baseurl }}/assets/img/lopes.png"/></div>
-    </div>
-</section>
-
-<section class="container--fluid company__section--3">
-    <div class="container clearfix">
-        <div class="company__section--3__text">
-            <h1>Por que criamos a Empreguei</h1>
-
-            <div class="company__section--3__text__line">
-                <div class="company__section--3__text__line__icon">
-                    <img src="{{ site.baseurl }}/assets/svg/pie-chart.svg" />
-                </div>
-                <div>
-                    Você sabia que, em média, 2 a cada 5 colaboradores da sua empresa são "Millennials"?
-                </div>
-            </div>
-            <div class="company__section--3__text__line">
-                <div class="company__section--3__text__line__icon">
-                    <img src="{{ site.baseurl }}/assets/svg/profit.svg" />
-                </div>
-                <div>
-                    Você sabia que, nos próximos 2 anos, 3 a cada 5 colaboradores serão "Millennials"?
-                </div>
-            </div>
-            <div class="company__section--3__text__line">
-                <div class="company__section--3__text__line__icon">
-                    <img src="{{ site.baseurl }}/assets/svg/innovation.svg" />
-                </div>
-                <div>
-                    A Empreguei prepara você e sua empresa para aproveitar ao maximo o potencial e as qualidades dessa galera!
-                </div>
+    <div class="content-body">
+        <!-- header -->
+        <div style="background-color: #8A05BEAA;" class="position-relative cta-header">
+            <!-- image background header -->
+            <div class="left-sidebar">
+                <h2>Habilidades valem muito mais que experiências</h2>
+                <div style="height: 4px; background-color: rgb(255, 112, 67); margin-top: 24px;"></div>
+                <p> Nossa plataforma foi desenhada para oferecer candidatos por 
+                    <span style="color: rgb(255, 112, 67);">habilidades e competências</span>
+                     ao invés de experiências </p>
             </div>
 
-        </div>
+            <div class="right-side">
+                <img src="{{ site.url }}/assets/img/business-meeting.jpg" alt="Header Image" id="header-image">
+                <img src="./../assets/img/outlier-old.jpeg" alt="Header Image" class="image-overlay">
 
-        <div class="company__section--3__image">
-            <img src="{{ site.baseurl }}/assets/img/millenials.png" />
-        </div>
-    </div>
-</section>
-
-<section class="container clearfix company__section--4" id="como-funciona">
-    <h1>Como Funciona</h1>
-
-    <div class="company__section--4__feature">
-        <img src="{{ site.baseurl }}/assets/svg/location.svg" />
-
-        <p>Publique sua vaga e local de trabalho</p>
-    </div>
-
-    <div class="company__section--4__feature">
-        <img src="{{ site.baseurl }}/assets/svg/discount.svg" />
-
-        <p>Veja os 5% melhores talentos</p>
-    </div>
-
-    <div class="company__section--4__feature">
-        <img src="{{ site.baseurl }}/assets/svg/chat-bubbles.svg" />
-
-        <p>Entreviste na plataforma quantos quiser</p>
-    </div>
-
-    <div class="company__section--4__feature">
-        <img src="{{ site.baseurl }}/assets/svg/chart.svg" />
-
-        <p>Contrate em tempo recorde</p>
-    </div>
-</section>
-
-<!--<section class="container&#45;&#45;fluid company__section&#45;&#45;5">-->
-<!--<div class="container clearfix">-->
-<!--<div class="company__section&#45;&#45;5__text">-->
-<!--<p>Veja como o Thiago, diretor de uma rede de franquias, está recrutando seus talentos com o jeito Empreguei!</p>-->
-
-<!--<a href="{{ site.url}}/login/empresa">-->
-<!--<button>Publicar Vaga</button>-->
-<!--</a>-->
-<!--</div>-->
-
-<!--<div class="company__section&#45;&#45;5__video">-->
-<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/74HhDbDWpvw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-<!--</div>-->
-<!--</div>-->
-<!--</section>-->
-
-<section class="container clearfix company__section--6" id="precos">
-
-    <h1>Preços</h1>
-
-    <div class="company__section--6__plans">
-
-        <div class="company__section--6__plans__plan">
-            <div class="company__section--6__plans__plan__name">de <del>R$ 99,00</del> por</div>
-            <div class="company__section--6__plans__plan__only">Só</div>
-            <div class="company__section--6__plans__plan__price">R$ 49,90</div>
-            <div class="company__section--6__plans__plan__description">2 vagas Por Mes</div>
-            <div class="company__section--6__plans__plan__features">
-                <li class="item">5% melhores talentos pra você</li>
-                <li class="item">Todos em até 5km da vaga</li>
-                <li class="item">Converse em tempo real com eles</li>
-                <li class="item">Todos eles com foto</li>
-                <li class="item">Acesso instantâneo à base compatível</li>
-            </div>
-            <a href="{{ site.url }}/register/companies">
-                <button>Publicar Vaga Agora!</button>
-            </a>
-        </div>
-
-        <div class="company__section--6__plans__advantages">
-            <h1>Ganhos Imediatos</h1>
-
-            <div class="advantage">
-                <div>
-                    <img src="{{ site.baseurl }}/assets/svg/bicycle--illustration.svg"/>
+                <div class="container-button">
+                    <button 
+                        onclick="window.location.href = 'https://empreguei.com/login/empresa';"
+                        class="text-uppercase m-2 increase-hover shadow">
+                            ABRIR VAGA GRÁTIS
+                    </button>
                 </div>
-
-                <h2>
-                    Economize R$ 3600,00 se o candidato for a pé ou de bike para o trabalho!
-                </h2>
-            </div>
-
-            <div class="advantage">
-                <div>
-                    <img src="{{ site.baseurl }}/assets/svg/teamwork--illustration.svg"/>
-                </div>
-
-                <h2>
-                    Reduza 70% de sua rotatividade e tenha um time de talentos unidos
-                </h2>
-            </div>
-
-            <div class="advantage">
-                <div>
-                    <img src="{{ site.baseurl }}/assets/svg/engagement--illustration.svg"/>
-                </div>
-
-                <h2>Colaboradores são muito mais produtivos e engajados quando residem próximo do trabalho</h2>
-            </div>
-
-            <div class="advantage">
-                <div>
-                    <img src="{{ site.baseurl }}/assets/svg/money--illustration.svg"/>
-                </div>
-
-                <h2>Tudo isso pelo valor de 1.5% de um salário mínimo e nenhum custo extra!</h2>
             </div>
         </div>
 
-    </div>
-
-    <div class="company__section--6__offer">
-        <h2>OFERTA ESPECIAL!</h2>
-        <h3>Por APENAS R$ 299,00 Receba também</h3>
-        <p>Treinamento + Mapeamento Cultural + Desenho dos Processos Online</p>
-    </div>
-</section>
-
-<section class="container--fluid company__section--7" id="midia">
-    <div class="container clearfix">
-        <h1>Na Mídia</h1>
-
-        <div class="company__section--7__news">
-
-            <div class="company__section--7__news__new">
-                <img src="{{ site.baseurl }}/assets/img/endeavor.png" />
-
-                <a href="https://endeavor.org.br/empreendedores-endeavor/marcio-furtado/"><button>Leia Mais</button></a>
+        <!-- testimony -->
+        <div class="container pt-5" id="testmony">
+            <div class="pt-5 pb-5">
+                <h2 class="text-center section-title"> Depoimentos </h2>
             </div>
+            <div class="testimony-body">
+                <div class="row">
 
-            <div class="company__section--7__news__new">
-                <img src="{{ site.baseurl }}/assets/img/exame.png" />
+                    <div class="mt-4 col-md-6" style="min-height: 240px">
+                        <div class="p-4 shadow h-100 rounded increase-hover">
+                            <div class="d-flex align-content-between flex-wrap h-100">
+                                <div>
+                                    <div class="row justify-content-center p-1 m-0 p-0"
+                                        style="color: rgb(247, 234, 65); font-size: 20px;">
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                    </div>
 
-                <a href="https://exame.abril.com.br/pme/conheca-o-tinder-que-faz-voce-dar-match-com-vagas-de-emprego/"><button>Leia Mais</button></a>
+                                    <div class="d-flex align-content-between flex-wrap mt-4">
+                                        <p class="font-italic text-center" style="font-size: 20px;">
+                                            "Uma das minhas maiores vantagens competitivas é tomar decisões corretas em
+                                            tempo recorde. Para isso sem
+                                            sistemas
+                                            de informação e tecnologia você fica refém da sorte. Por isso a plataforma
+                                            de inteligência artifical da
+                                            Empreguei é nossa única fonte de candidatos talentosos há 2 anos."</p>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <span class="text-secondary mt-2"> Maria Clara Parsekian, Gerente Nacional de Talentos
+                                    da EETU Alimentos </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 col-md-6" style="min-height: 240px">
+                        <div class="p-4 shadow h-100 rounded increase-hover">
+                            <div class="d-flex align-content-between flex-wrap h-100">
+                                <div>
+                                    <div class="row justify-content-center p-1 m-0 p-0"
+                                        style="color: rgb(247, 234, 65); font-size: 20px;">
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                    </div>
+
+                                    <div class="d-flex align-content-between flex-wrap mt-4">
+                                        <p class="font-italic text-center" style="font-size: 20px;">
+                                            "Ter a certeza de que eu estou contratando um talento testado e aprovado
+                                            para minha empresa me
+                                            faz cada
+                                            vez mais
+                                            fiel aos candidatos que a Empreguei me indica."
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <span class="text-secondary"> Bruno Jacobina, Fundador Nacional Transportes </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 col-md-6" style="min-height: 240px">
+                        <div class="p-4 shadow h-100 rounded increase-hover">
+                            <div class="d-flex align-content-between flex-wrap h-100">
+                                <div>
+                                    <div class="row justify-content-center p-1 m-0 p-0"
+                                        style="color: rgb(247, 234, 65); font-size: 20px;">
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                    </div>
+
+                                    <div class="d-flex align-content-between flex-wrap mt-4">
+                                        <p class="font-italic text-center" style="font-size: 20px;">
+                                            "Enxergar cada candidato além do currículo em texto foi um avanço que
+                                            permitiu nossa empresa
+                                            conseguir
+                                            diferenciar os candidatos de fato talentosos daqueles especialistas em
+                                            elaborar um bom CV."
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <span class="text-secondary mt-4"> Mario Schioppa, Diretor Oppa Cart </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 col-md-6" style="min-height: 240px">
+                        <div class="p-4 shadow h-100 rounded increase-hover">
+                            <div class="d-flex align-content-between flex-wrap h-100">
+                                <div>
+                                    <div class="row justify-content-center p-1 m-0 p-0"
+                                        style="color: rgb(247, 234, 65); font-size: 20px;">
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                        <i class="fas fa-star ml-1 mr-1"></i>
+                                    </div>
+
+                                    <div class="d-flex align-content-between flex-wrap mt-4">
+                                        <p class="font-italic text-center" style="font-size: 20px;">
+                                            "A Empreguei me permitiu criar testes online específicos para cada vaga que
+                                            tenho e os candidatos fazem pelo próprio aplicativo sem precisar vir no meu
+                                            escritório."
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <span class="text-secondary mt-4"> Alexandra Zanatta, Gerente TRZ Consultores </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="company__section--7__news__new">
-                <img src="{{ site.baseurl }}/assets/img/globo-news.png" />
-
-                <a href="http://g1.globo.com/globo-news/conta-corrente/videos/t/todos-os-videos/v/dicas-para-pais-e-filhos-que-desejam-empreender-juntos/5232406/"><button>Leia Mais</button></a>
-            </div>
-
-            <div class="company__section--7__news__new">
-                <img src="{{ site.baseurl }}/assets/img/valor.png" />
-
-                <a href="http://www.valor.com.br/empresas/3830136/nivel-de-internacionalizacao-ainda-e-baixo"><button>Leia Mais</button></a>
-            </div>
-
         </div>
+
+        <!-- companies -->
+        <div class="container pt-5">
+            <div class="pt-5 pb-5">
+                <h2 class="text-center section-title"> Mais de 2.000 Empresas
+                    eliminaram o currículo com a Empreguei </h2>
+            </div>
+            <div class="p-4 justify-content-center mb-3">
+
+                <div class="row m-0 justify-content-center">
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="{{ site.url }}/assets/img/bioage.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="{{ site.url }}/assets/img/ford.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="{{ site.url }}/assets/img/renault.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="{{ site.url }}/assets/img/oppacart.png" width="120" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-0 justify-content-center">
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="{{ site.url }}/assets/img/heineken.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="{{ site.url }}/assets/img/even.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="{{ site.url }}/assets/img/benjamin.png" width="120" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto mt-2 mb-2 increase-hover">
+                        <div class="rounded-circle shadow d-flex align-items-center justify-content-center"
+                            style="width: 190px; height: 190px;">
+                            <img src="{{ site.url }}/assets/img/lopes.png" width="120" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END companies -->
+
+        <!-- how its works -->
+        <div class="container-fluid pt-5" id="howItsWork" style="background-color: #fefefe;">
+
+            <h2 class="section-title pt-5 pb-5">Como Funciona</h2>
+            <div class="how-works">
+                <div class="image-profile">  
+                    <img src="./../assets/img/marcio.jpg" alt="Marcio Furtado" />
+                    <span class="author" >Marcio Furtado, especialista em gestão de Talentos pela Stanford University, empreendedor Endeavor desde 2012 e fundador da Empreguei.</span>
+                </div>
+                <div class="message">
+                    <p>"Se você veio aqui procurar CVs de candidatos com experiências anteriores em algum cargo ou atividade como sempre procurou nos últimos anos nos diversos sites de vagas, sinto muito, mas não somos a plataforma certa pra você!</p>
+    
+                    <p>E também entendo que se você procurar igual sempre procurou não vai adiantar nada mudar do site. Será mais do mesmo e você incorrerá no mesmo erro de contratação, treinamento, frustração e demissão.</p>
+    
+                    <p>Por que?</p>
+    
+                    <p>Porque o perfil dos candidatos mudou no Brasil nos últimos 3 anos e as tarefas a serem realizadas nas empresas também mudaram muito nesse período.</p>
+    
+                    <p>As empresas hoje preferem candidatos que sejam adaptáveis, flexíveis e criativos do que aqueles que sempre falam: “fazia assim na minha empresa anterior”, pois sua rotatividade diminui em 40%, não possuem vícios e são mais dedicados a aprender novas tarefas!"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- info -->
+        <div class="info">
+            <div class="background">
+                <img src="./../assets/img/geny.jpeg" alt="info background"/>
+            </div>
+            <div class="words">
+                <p>Só a Empreguei destaca pra você os candidatos com as características abaixo em seu DNA</p>
+                <img src="./../assets/img/words.png" alt="info words" />
+            </div>
+        </div>
+
+        <!-- areas -->
+        <div class="container justify-content-center pt-5" id="areas">
+            <h2 class="section-title pt-5 pb-5">+50.000 Candidatos nas Mais Diversas Áreas</h2>
+            <div class="row m-0 justify-content-center section section-6 text-center pl-1 pr-1 pb-5">
+
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item increase-hover">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/payment-method.png" alt="Comercial" width="75" height="75">
+                    </div>
+                    <a>
+                        <div class="w-100 btn-learn-more" style="cursor: default;">
+                            <span class="f-default">Comercial</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item increase-hover">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/investment.png" alt="Financeiro" width="75" height="75">
+                    </div>
+                    <a>
+                        <div class="w-100 btn-learn-more" style="cursor: default;">
+                            <span class="f-default">Financeiro</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item increase-hover">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/conversation.png" alt="Atendimento ao Cliente" width="75" height="75">
+                    </div>
+                    <a>
+                        <div class="w-100 btn-learn-more" style="cursor: default;">
+                            <span class="f-default">Atendimento ao Cliente</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item increase-hover">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/monitor.png" alt="Administrativo" width="75" height="75">
+                    </div>
+                    <a>
+                        <div class="w-100 btn-learn-more" style="cursor: default;">
+                            <span class="f-default">Administrativo</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item increase-hover">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/data.png" alt="Tecnologia" width="75" height="75">
+                    </div>
+                    <a>
+                        <div class="w-100 btn-learn-more" style="cursor: default;">
+                            <span class="f-default">Tecnologia</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item increase-hover">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/digital-marketing.png" alt="Marketing" width="75" height="75">
+                    </div>
+                    <a>
+                        <div class="w-100 btn-learn-more" style="cursor: default;">
+                            <span class="f-default">Marketing</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item increase-hover">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/food.png" alt="Hotelaria" width="75" height="75">
+                    </div>
+                    <a>
+                        <div class="w-100 btn-learn-more" style="cursor: default;">
+                            <span class="f-default">Hotelaria</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item increase-hover">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/shopping-cart.png" alt="Varejo" width="75" height="75">
+                    </div>
+                    <a>
+                        <div class="w-100 btn-learn-more" style="cursor: default;">
+                            <span class="f-default">Varejo</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Na Mídia -->
+        <div class="section section-6 text-center pl-1 pr-1 pb-5 pt-5" id="mídia" style="background-color: #fefefe;">
+            <h2 class="section-title pt-5 pb-5"> Na Mídia</h2>
+            <div class="m-0 row justify-content-center">
+
+                <!-- Endeavor -->
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/endeavor.png" alt="Endeavor">
+                    </div>
+
+                    <a target="_blank" href="https://endeavor.org.br/empreendedores-endeavor/marcio-furtado/">
+                        <div class="w-100 btn-learn-more">
+                            <span>Leia Mais</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Exame -->
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/exame.png" alt="Exame">
+                    </div>
+
+                    <a target="_blank"
+                        href="https://exame.abril.com.br/pme/conheca-o-tinder-que-faz-voce-dar-match-com-vagas-de-emprego/">
+                        <div class="w-100 btn-learn-more">
+                            <span>Leia Mais</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Globo News -->
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/globo-news.png" alt="Globo News">
+                    </div>
+
+                    <a target="_blank"
+                        href="http://g1.globo.com/globo-news/conta-corrente/videos/t/todos-os-videos/v/dicas-para-pais-e-filhos-que-desejam-empreender-juntos/5232406/">
+                        <div class="w-100 btn-learn-more">
+                            <span>Leia Mais</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Valor -->
+                <div class="col-auto shadow rounded p-0 m-1 m-md-3 midia-item">
+                    <div class="p-3 align-items-center d-flex">
+                        <img src="{{ site.url }}/assets/img/valor.png" alt="Valor">
+                    </div>
+
+                    <a target="_blank"
+                        href="http://www.valor.com.br/empresas/3830136/nivel-de-internacionalizacao-ainda-e-baixo">
+                        <div class="w-100 btn-learn-more">
+                            <span>Leia Mais</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="section footer border-top pt-3 pb-3 f-default">
+            <div class="container">
+                <div class="row m-0 justify-content-center mt-2">
+                    <div class="col-md-4 text-center">
+                        <h2>Mapa</h2>
+                        <p><a href="#testmony">Depoimentos</a></p>
+                        <p><a href="#howItsWork" class="link">Como funciona</a></p>
+                        <p><a href="#midia">Mídia</a></p>
+                        <p><a href="index.html">Quero Trabalhar</a></p>
+                    </div>
+
+                    <div class="col-md-4 text-center justify-content-center mt-2">
+                        <h2>
+                            <a target="_blank" href="https://empreguei.com/blog"
+                                style="text-decoration: none; color: #252525;">
+                                Blog
+                            </a>
+                        </h2>
+
+                        <div class="row p-2 justify-content-center">
+                            <a target="_blank" href="mailto:atendimento@empreguei.com" class="col-auto p-1">
+                                <div style="background-color: #222222; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fas fa-envelope" style="color: white;"></i>
+                                </div>
+                            </a>
+
+                            <a target="_blank" href="https://www.facebook.com/empreguei" class="col-auto p-1">
+                                <div style="background-color: #4267b2; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fab fa-facebook-f" style="color: white;"></i>
+                                </div>
+                            </a>
+                            <a target="_blank" href="https://github.com/empreguei" class="col-auto p-1">
+                                <div style="background-color: #333333; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fab fa-github" style="color: white;"></i>
+                                </div>
+                            </a>
+
+                            <a target="_blank" href="https://youtube.com/channel/UC1peiEtI5BSPEfAY-tqUH4A"
+                                class="col-auto p-1">
+                                <div style="background-color: red; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fab fa-youtube" style="color: white;"></i>
+                                </div>
+                            </a>
+
+                            <a target="_blank" href="https://instagram.com/empreguei" class="col-auto p-1">
+                                <div style="background-color: #333333; height: 44px; width: 44px;"
+                                    class="d-flex justify-content-center align-items-center rounded-circle shadow">
+                                    <i class="fab fa-instagram" style="color: white;"></i>
+                                </div>
+                            </a>
+
+                            <div class="col-12">
+                                <a target="_blank"
+                                    href="https://play.google.com/store/apps/details?id=com.hatchr.jobn&hl=pt-PT&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                                    <img alt="Disponível no Google Play" width="180"
+                                        src="https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-2 text-center justify-content-center">
+                        <h2>® 2017 Empreguei</h2>
+                        <p>empreguei.com é uma empresa apoiada pela</p>
+                        <div>
+                            <img src="{{ site.url }}/assets/img/endeavor.png" alt="Endeavor" width="200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
-</section>
-
-{% include footer.html company=false %}
-
-<script>
-
-    $('.header--company__hamburger').click(function(){
-        $('.header--company nav').slideToggle(100);
-    });
-
-
-</script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        $(document).ready(function () {
+            $('body').scrollspy({ target: ".navbar", offset: 250 });
+        });
+    </script>
 </body>
 </html>
