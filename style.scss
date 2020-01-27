@@ -196,7 +196,7 @@ table {
 //
 
 .wrapper-masthead {
-  background-image: url("images/top-view-white-office-desk-table.jpg");
+  background-color: "006b8b";
   margin-bottom: 50px;
   text-align: -webkit-center;
   height: 352px;
@@ -206,6 +206,7 @@ table {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
   width:80%;
+  opacity: 0.6;
   
   @include mobile {
     text-align: center;
