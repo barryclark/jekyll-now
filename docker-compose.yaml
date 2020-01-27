@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+    dev-blog:
+        volumes:
+            - .:/srv/jekyll
+        ports:
+            - 4000:4000 
+        image: jekyll/jekyll:pages 
+        command: jekyll serve --future
