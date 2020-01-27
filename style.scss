@@ -29,7 +29,10 @@ body {
   max-width: 800px;
   padding: 0 10px;
   width: 100%;
-  margin: 0px auto 10px;
+
+  @include semiMobile {
+    margin: 0px auto 10px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
