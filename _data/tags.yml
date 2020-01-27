@@ -64,6 +64,9 @@
 - slug: kubernetes
   name: Kubernetes
 
+- slug: ml
+  name: Machine Learning
+
 - slug: microservice
   name: Microservice
 
@@ -90,3 +93,4 @@
 
 - slug: ux
   name: UX
+  
