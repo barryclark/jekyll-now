@@ -207,6 +207,7 @@ table {
   border-bottom: 1px solid $lightGray;
   width:80%;
   opacity: 0.6;
+  color: white;
   
   @include mobile {
     text-align: center;
@@ -280,7 +281,7 @@ table {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #bfbfbf;
   font-size: 16px;
 
   @include mobile {
