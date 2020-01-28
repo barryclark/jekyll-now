@@ -753,11 +753,11 @@ header {
 .how {
   display: -ms-grid;
   display: grid;
-  height: 80vh;
+  height: auto;
   -ms-grid-columns: 1fr 5fr 32px 5fr 1fr;
   grid-template-columns: 1fr 5fr 32px 5fr 1fr;
-  -ms-grid-rows: 0.5fr 9fr 0.5fr;
-  grid-template-rows: 0.5fr 9fr 0.5fr;
+  -ms-grid-rows: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end; }
@@ -786,3 +786,140 @@ header {
     text-decoration: none;
     color: #ffffff;
     border-radius: 2px; }
+
+.what {
+  display: -ms-grid;
+  display: grid;
+  height: 90vh;
+  -ms-grid-columns: 2fr 5fr 32px 3fr 2fr 1fr;
+  grid-template-columns: 2fr 5fr 32px 3fr 2fr 1fr;
+  -ms-grid-rows: 32px 2fr 1fr 32px 16fr;
+  grid-template-rows: 32px 2fr 1fr 32px 16fr; }
+  .what .subtitle {
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span: 4;
+    grid-column-end: 6;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+    -ms-grid-row-span: 2;
+    grid-row-end: 4; }
+    .what .subtitle h1 {
+      -ms-grid-row: 2;
+      grid-row-start: 2;
+      -ms-grid-row-span: 1;
+      grid-row-end: 3;
+      margin: auto;
+      color: #333;
+      padding-top: 20px;
+      width: 300px; }
+    .what .subtitle h1::after {
+      content: " ";
+      width: 50%;
+      background: #FEBC37;
+      height: 20px;
+      display: block;
+      overflow: hidden;
+      margin-top: -15px;
+      margin-left: 20%; }
+    .what .subtitle .fun {
+      -ms-grid-row: 3;
+      grid-row-start: 3;
+      -ms-grid-row-span: 1;
+      grid-row-end: 4;
+      margin: auto;
+      width: auto;
+      text-align: center; }
+  .what .projects {
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 5;
+    grid-row-start: 5; }
+    .what .projects li.briefcase {
+      -ms-grid-column: 2;
+      grid-column-start: 2;
+      -ms-grid-column-span: 3;
+      grid-column-end: 5;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 32px 8px 3fr 1fr 1fr;
+      grid-template-columns: 32px 8px 3fr 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr 1fr 1.5fr 4fr 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1.5fr 4fr 2fr 1fr 1fr; }
+      .what .projects li.briefcase .p-name {
+        -ms-grid-column: 3;
+        grid-column-start: 3;
+        -ms-grid-column-span: 2;
+        grid-column-end: 5; }
+      .what .projects li.briefcase .c-name {
+        float: right;
+        -ms-grid-column: 4;
+        grid-column-start: 4;
+        -ms-grid-column-span: 4;
+        grid-column-end: 8;
+        -ms-grid-row: 4;
+        grid-row-start: 4;
+        -ms-grid-row-span: 1;
+        grid-row-end: 5;
+        height: 100%;
+        width: 100%;
+        display: -ms-grid;
+        display: grid;
+        text-align: right;
+        font-size: 24px;
+        z-index: 2; }
+      .what .projects li.briefcase .sub-line {
+        -ms-grid-column: 4;
+        grid-column-start: 4;
+        -ms-grid-column-span: 4;
+        grid-column-end: 8;
+        -ms-grid-row: 4;
+        grid-row-start: 4;
+        -ms-grid-row-span: 1;
+        grid-row-end: 5;
+        width: 60%;
+        background: #FEBC37;
+        height: 20px;
+        display: block;
+        overflow: hidden;
+        margin-left: 20%;
+        float: right;
+        -ms-grid-column-align: right;
+        justify-self: right;
+        margin-top: 15px;
+        z-index: 1; }
+      .what .projects li.briefcase img {
+        width: auto;
+        height: 100%;
+        -ms-grid-column: 3;
+        grid-column-start: 3;
+        -ms-grid-column-span: 2;
+        grid-column-end: 5;
+        -ms-grid-row: 2;
+        grid-row-start: 2;
+        -ms-grid-row-span: 6;
+        grid-row-end: 8;
+        -webkit-box-shadow: rgba(144, 115, 150, 0.3) 0px 4px 27px;
+        box-shadow: rgba(144, 115, 150, 0.3) 0px 4px 27px;
+        z-index: 0; }
+      .what .projects li.briefcase .description {
+        -ms-grid-column: 4;
+        grid-column-start: 4;
+        -ms-grid-column-span: 4;
+        grid-column-end: 8;
+        -ms-grid-row: 5;
+        grid-row-start: 5;
+        -ms-grid-row-span: 1;
+        grid-row-end: 6;
+        -ms-grid-column-align: right;
+        justify-self: right;
+        width: 90%;
+        height: 100%;
+        background: #ffffff;
+        padding: 8px;
+        padding-top: 24px;
+        -webkit-box-shadow: rgba(144, 115, 150, 0.3) 0px 4px 27px;
+        box-shadow: rgba(144, 115, 150, 0.3) 0px 4px 27px;
+        z-index: 2; }
