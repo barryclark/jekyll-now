@@ -271,7 +271,7 @@ table {
 
 .site-name {
   margin: 0;
-  color: #cccccc;
+  color: #ffffff;
   cursor: pointer;
   font-family: "맑은고딕", "Malgun Gothic", serif;
   font-weight: 300;
@@ -295,6 +295,7 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
+  color: #ffffff;
 
   @include mobile {
     float: none;
