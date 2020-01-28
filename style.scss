@@ -207,6 +207,7 @@ table {
   border-bottom: 1px solid $lightGray;
   width:80%;
   opacity: 0.6;
+  color: white;
   
   @include mobile {
     text-align: center;
@@ -270,17 +271,28 @@ table {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #ffffff;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-family: "맑은고딕", "Malgun Gothic", serif;
+  font-weight: 750;
+  font-size: 30px;
   letter-spacing: 1px;
+
+  @include semiMobile {
+    font-weight: 580;
+    font-size: 25px;
+  }
+
+  @include mobile {
+    font-weight: 400;
+    font-size: 20px;
+  }
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #bfbfbf;
+  font-family: "맑은고딕", "Malgun Gothic", serif;
   font-size: 16px;
 
   @include mobile {
@@ -293,6 +305,7 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
+  color: #ffffff;
 
   @include mobile {
     float: none;
@@ -303,14 +316,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #ffffff;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: #3BB5FF;
     }
   }
 }
@@ -333,7 +346,7 @@ nav {
 
 #flexRight {
   float: right;
-  width: 240;
+  width: 240px;
 
   @include semiMobile {
     margin:0px 20px;
