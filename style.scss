@@ -32,6 +32,10 @@ body {
   @include semiMobile {
     margin: 0px auto 10px;
   }
+
+  @include mobile {
+    display: inline-block;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -382,6 +386,14 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+  }
+
+  @include semiMobile {
+    font-size: 95%;
+  }
+
+  @include mobile {
+    font-size: 87%;
   }
 }
 
