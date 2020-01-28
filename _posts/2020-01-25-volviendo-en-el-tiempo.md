@@ -1,11 +1,11 @@
 ---
 published: true
-id: 250120
+id: 280120
 title: Volviendo en el tiempo
-date: {}
+date: 2020-01-28T04:52:00+00:00
 author: ovalenzuela
 layout: post
-guid: 'http://ovalenzuela.com/?p=012520'
+guid: 'http://ovalenzuela.com/?p=012820'
 permalink: /2020/01/volviendo-en-el-tiempo.html
 categories:
   - General
