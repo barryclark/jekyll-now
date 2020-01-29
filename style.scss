@@ -203,6 +203,12 @@ table {
   margin-bottom: 50px;
   text-align: -webkit-center;
   height: 352px;
+
+  @include semiMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .masthead {
