@@ -21,6 +21,8 @@ redirect_from:
 
 [core-libs-dev](https://mail.openjdk.java.net/pipermail/core-libs-dev/)
 
+[zgc-dev](https://mail.openjdk.java.net/pipermail/zgc-dev/)
+
 [jdk8u-dev](https://mail.openjdk.java.net/pipermail/jdk8u-dev/)
 
 [Vulnerability](https://mail.openjdk.java.net/pipermail/vuln-announce)
