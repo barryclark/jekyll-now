@@ -28,6 +28,7 @@ body {
   max-width: 800px;
   padding: 0 10px;
   width: 100%;
+  margin: 0px auto;
 
   @include semiMobile {
     margin: 0px auto 10px;
