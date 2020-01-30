@@ -281,26 +281,26 @@ table {
   margin: 0;
   color: #ffffff;
   cursor: pointer;
-  font-family: "맑은고딕", "Malgun Gothic", serif;
-  font-weight: 750;
-  font-size: 30px;
+  font-family: "HY견고딕", serif;
+  font-weight: 800;
+  font-size: 40px;
   letter-spacing: 1px;
 
   @include semiMobile {
     font-weight: 580;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   @include mobile {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: #bfbfbf;
-  font-family: "맑은고딕", "Malgun Gothic", serif;
+  font-family: "HY견고딕", serif;
   font-size: 16px;
 
   @include mobile {
