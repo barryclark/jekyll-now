@@ -84,7 +84,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 a {
@@ -386,10 +386,12 @@ nav {
     font-style: italic;
 
     @include semiMobile {
+      margin: 1.6em .6em;
       font-size: 18px;
     }
 
     @include mobile {
+      margin: 1.4em .4em;
       font-size: 14px;
     }
   }
