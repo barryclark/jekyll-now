@@ -384,6 +384,14 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+
+    @include semiMobile {
+      font-size: 18px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   .comments {
