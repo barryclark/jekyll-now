@@ -29,7 +29,7 @@ Y bueno, he comenzado a coleccionar estas pequeñas maravillas, aprendiendo como
 
 Como la memoria es corta, voy a publicar una pequeña reseña y detalles de cada una de las piezas que tengo, y para comenzar voy a hablar de uno de mis favoritos, el Rolex Oysterdate 6694.
 
-![Rolex Oysterdate 6694]({{site.baseurl}}/http://ovalenzuela.com/images/2020/2020-02-02-rolex-oysterdate-precision.jpg)
+![Rolex Oysterdate 6694](http://ovalenzuela.com/images/2020/2020-02-02-rolex-oysterdate-precision.jpg)
 
 
 ## Descripción Técnica
@@ -38,4 +38,4 @@ El Rolex Oysterdate 6694, es una pequeña antigua maravilla que viene en un "cas
 
 Un tema interesante, es que esta serie de Rolex nunca fue certificada como Cronómetro, por eso se le apoda "precision".
 
-![Rolex Oysterdate 6694  - Movement]({{site.baseurl}}/http://ovalenzuela.com/images/2020/2020-02-02-rolex-oysterdate-precision-2.png)
+![Rolex Oysterdate 6694  - Movement](http://ovalenzuela.com/images/2020/2020-02-02-rolex-oysterdate-precision-2.png)
