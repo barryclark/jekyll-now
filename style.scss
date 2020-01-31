@@ -295,6 +295,50 @@ footer {
   text-align: center;
 }
 
+canvas {
+  background: #f5f0e6;
+}
+
+.slider {
+  float: left;
+  clear: left;
+  width: 300px;
+  margin: 10px;
+}
+
+.spiro {
+  height: 700px;
+}
+
+.handle {
+  width: 2em;
+  height: 1.6em;
+  top: 50%;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 0.7em;
+}
+
+#red, #green, #blue, #outerRadius, #innerRadius, #ratio {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+}
+#swatch {
+  width: 120px;
+  height: 100px;
+  margin-top: 18px;
+  margin-left: 350px;
+  background-image: none;
+}
+#red .ui-slider-range { background: #ef2929; }
+#red .ui-slider-handle { border-color: #ef2929; }
+#green .ui-slider-range { background: #8ae234; }
+#green .ui-slider-handle { border-color: #8ae234; }
+#blue .ui-slider-range { background: #729fcf; }
+#blue .ui-slider-handle { border-color: #729fcf; }
+
 @import "forms-alerts";
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

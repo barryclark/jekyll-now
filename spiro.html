@@ -1,0 +1,41 @@
+---
+layout: jspage
+index: false
+title: Spirograph
+permalink: /spiro/
+---
+
+<div class="spiro">
+<div>
+<canvas id="myCanvas" width="940" height="500" >
+</canvas >
+</div>
+<table ><tr><td>
+
+<div id="outerRadius">
+  <div class="handle ui-slider-handle " id='handle1'></div>
+</div>
+<div id="innerRadius">
+  <div class="handle ui-slider-handle " id='handle2'></div>
+</div>
+<div id="ratio">
+  <div class="handle ui-slider-handle " id='handle3'></div>
+</div>
+</td>
+<td>
+<div id="red"></div>
+<div id="green"></div>
+<div id="blue"></div>
+
+<div id="swatch" class="ui-widget-content ui-corner-all"></div>
+
+
+</td>
+</tr>
+</table>
+<button class="ui-button ui-widget ui-corner-all" id='draw'>Draw!</button>
+<button class="ui-button ui-widget ui-corner-all" id='clear'>Clear</button>
+<button class="ui-button ui-widget ui-corner-all" id='undo'>Undo</button>
+
+<script src="{{ site.baseurl }}/js/spirograph.js"></script>
+</div>
