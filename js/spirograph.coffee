@@ -11,7 +11,6 @@ class Stroke
   constructor: (@centerX, @centerY, @radius1, @radius2, @ratio, @color) ->
 
 
-
 queue = [];
 canvas = document.getElementById('myCanvas');
 context = canvas.getContext('2d');
@@ -20,16 +19,9 @@ handle2 = $( "#handle2" );
 handle3 = $( "#handle3" );
 hex = "";
 
-(queue.push new Stroke 1,1,10,10,1,"FFFFFF") for num in [10..1]
-console.log(queue);
-#
-# i for i in [1..10]
-#   queue.push i#new Stroke 1,1,10,10,1,"FFFFFF" ;
-
-
 drawSpirograph = (context, cx, cy, radius1, radius2, ratio, color) ->
   context.beginPath();
-  context.moveTo(cx + radius1 + radius2, cy);
+  context.moveTo cx + radius1 + radius2, cy;
 
   # Draw segments from theta = 0 to theta = 2PI
   for theta in [Math.PI *2..0] by -0.01
@@ -44,15 +36,18 @@ drawSpirograph = (context, cx, cy, radius1, radius2, ratio, color) ->
 
 draw  = ->
   #// Get drawing context
-  r1 = $("#outerRadius").slider("value");
-  r2 = $("#innerRadius").slider("value");
-  ratio = $("#ratio").slider("value");
+  r1 = $ "#outerRadius"
+  .slider "value"
+  r2 = $ "#innerRadius"
+  .slider "value"
+  ratio = $ "#ratio"
+  .slider "value"
   cx = canvas.width / 2;
   cy = canvas.height / 2;
 
   # Draw spirograph
-  drawSpirograph(context, cx, cy, r1, r2, ratio, hex);
-  queue.push( new Stroke(cx, cy, r1, r2, ratio, hex));
+  drawSpirograph context, cx, cy, r1, r2, ratio, hex;
+  queue.push new Stroke cx, cy, r1, r2, ratio, hex;
   0
 
 clear = ->
@@ -78,13 +73,20 @@ hexFromRGB = (r, g, b) ->
   .toUpperCase()
 
 refreshSwatch = ->
-  red = $( "#red" ).slider "value"
-  green = $( "#green" ).slider "value"
-  blue = $( "#blue" ).slider "value"
+  red = $ "#red"
+  .slider "value"
+  green = $ "#green"
+  .slider "value"
+  blue = $ "#blue"
+  .slider "value"
   hex = hexFromRGB red, green, blue
   $("#swatch")
   .css "background-color", "#" + hex
   0
+
+dlCanvas = ->
+  dt = canvas.toDataURL 'image/png'
+  this.href = dt
 
 $ "#outerRadius"
 .slider
@@ -132,14 +134,21 @@ $ "#green"
 $ "#blue"
 .slider "value", 60
 
-$("button#draw").click (event)->
-  event.preventDefault();
-  draw();
+$ "button#draw"
+.click (event)->
+  event.preventDefault()
+  draw()
 
-$("button#clear").click (event)->
-  event.preventDefault();
-  clear();
+$ "button#clear"
+.click (event)->
+  event.preventDefault()
+  clear()
 
-$("button#undo").click (event)->
-  event.preventDefault();
-  undo();
+$ "button#undo"
+.click (event)->
+  event.preventDefault()
+  undo()
+
+document
+  .getElementById "dl"
+  .addEventListener('click', dlCanvas, false);
