@@ -29,9 +29,13 @@ Y bueno, he comenzado a coleccionar estas pequeñas maravillas, aprendiendo como
 
 Como la memoria es corta, voy a publicar una pequeña reseña y detalles de cada una de las piezas que tengo, y para comenzar voy a hablar de uno de mis favoritos, el Rolex Oysterdate 6694.
 
+![Rolex Oysterdate 6694]({{site.baseurl}}/http://ovalenzuela.com/images/2020/2020-02-02-rolex-oysterdate-precision.jpg)
+
 
 ## Descripción Técnica
 
 El Rolex Oysterdate 6694, es una pequeña antigua maravilla que viene en un "case" de 34mm sin considerar la corona y 38mm con corona. El reloj que es parte de mí colección, fue fabricado en Suiza en 1957, el movimiento (maquinaria) requiere que se le de cuerda manualmente y tiene una única complicación que sirve para dar la fecha. El "case" es de color dorado y tiene terminaciones de oro de 14K. No es de los más TOP, pero me encanta la forma redonda, el acentuado dorado y el dial color Ivory.
 
 Un tema interesante, es que esta serie de Rolex nunca fue certificada como Cronómetro, por eso se le apoda "precision".
+
+![Rolex Oysterdate 6694  - Movement]({{site.baseurl}}/http://ovalenzuela.com/images/2020/2020-02-02-rolex-oysterdate-precision-2.png)
