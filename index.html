@@ -1,42 +1,64 @@
 <html>
-    <head>
-        <title>Hideout Graph | Escape From Tarkov Fan Site</title>
-    </head>
-    <body>
-        <div class="container">
-            <div id="header">
-                <img src="img/title.png" />
-                <p>
-                    I made this graph to help understand how to upgrade the hideout in Escape From Tarkov.
-                    While there are lots of great guides on what gear to save, I really wanted to see a 
-                    top-down view to understand it better. I hope you find it as interesting as I did!
-                </p>
-                <p>
-                    Created by <a href="https://twitter.com/RiotXeno">ya boy Brad</a>. Questions, corrections, complaints? 
-                    Drop me a line: <a href="https://www.reddit.com/user/xenocidebrm/">u/xenocidebrm</a> on Reddit.
-                </p>
-            </div>
-        </div>
-        <div class="container">
-                <div id="hideout-network"></div>
-                <div id="hideout-infobox">
-                    <div id="node-info">
-                        <p>
-                            Try clicking on a hideout node to see its requirements!
-                        </p>
-                    </div>
-                    <div id="infobox-footer">
-                        <span>Also check out the <a href="https://escapefromtarkov.gamepedia.com/Hideout">community wiki</a>.</span>
-                    </div>
-                </div>
-        </div>
+  <head>
+    <title>Hideout Graph | Escape From Tarkov Fan Site</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-132380414-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        <!-- my scripts and styles -->
-        <script src="vis-network.min.js"></script>
-        <script src="hideout-vis.js"></script>
-        <link rel="stylesheet" href="vis-network.min.css" />
-        <link rel="stylesheet" href="hideout-vis.css" />
-        <!-- Thanks for the font in the title: https://forum.escapefromtarkov.com/topic/2000-font-escape-from-tarkov/ -->
-        <!-- Please excuse the artisinal, hand-crafted icons. I don't have assets, so I had to take screenshots of my game. -->
-    </body>
+      gtag("config", "UA-132380414-3");
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <img src="img/title.png" />
+        <p>
+          I made this graph to help understand how to upgrade the hideout in
+          Escape From Tarkov. While there are lots of great guides on what gear
+          to save, I really wanted to see a top-down view to understand it
+          better. I hope you find it as interesting as I did!
+        </p>
+        <p>
+          Created by <a href="https://twitter.com/RiotXeno">ya boy Brad</a>.
+          Questions, corrections, complaints? Drop me a line:
+          <a href="https://www.reddit.com/user/xenocidebrm/">u/xenocidebrm</a>
+          on Reddit.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div id="hideout-network"></div>
+      <div id="hideout-infobox">
+        <div id="node-info">
+          <p>
+            Try clicking on a hideout node to see its requirements!
+          </p>
+        </div>
+        <div id="infobox-footer">
+          <span
+            >Also check out the
+            <a href="https://escapefromtarkov.gamepedia.com/Hideout"
+              >community wiki</a
+            >.</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- my scripts and styles -->
+    <script src="vis-network.min.js"></script>
+    <script src="hideout-vis.js"></script>
+    <link rel="stylesheet" href="vis-network.min.css" />
+    <link rel="stylesheet" href="hideout-vis.css" />
+    <!-- Thanks for the font in the title: https://forum.escapefromtarkov.com/topic/2000-font-escape-from-tarkov/ -->
+    <!-- Please excuse the artisinal, hand-crafted icons. I don't have assets, so I had to take screenshots of my game. -->
+  </body>
 </html>
