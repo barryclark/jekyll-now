@@ -1,7 +1,7 @@
 ---
 published: true
 id: 5712
-title: Reloj Rolex Oysterdate Precision (6694)
+title: Rolex Oysterdate Precision (6694)
 date: 2020-01-31T00:00:00.000Z
 author: ovalenzuela
 layout: post
