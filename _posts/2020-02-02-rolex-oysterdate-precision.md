@@ -17,7 +17,7 @@ tags:
 ---
 Siempre me ha gustado estar cerca de todo lo que sea tecnología, pero recientemente he comenzado a ver que los paradigmas tecnológicos ya no se rompen tan drásticamente y seguido como antes, o quizás sea que ya no nos "sorprendemos" tanto como antes.
 
-Piénsalo por un momento, con por ejemplo los teléfonos celulares: Se lanzan todos los anos con más memoria, más CPU, mejor cámara, y alguna que otra cosa rara como intentos fallidos de pantallas plegables. Con todo, pero finalmente no es más que el mismo concepto de celular. Y lo mismo pasa con todo, relojes, laptops, tablets, lavadoras, e incluso autos.
+Piénsalo por un momento, con por ejemplo los teléfonos celulares: Se lanzan todos los años con más memoria, más CPU, mejor cámara, y alguna que otra cosa rara como intentos fallidos de pantallas plegables. Con todo, pero finalmente no es más que el mismo concepto de celular. Y lo mismo pasa con todo, relojes, laptops, tablets, lavadoras, e incluso autos.
 
 Y si, entiendo que saltar de un paradigma donde usábamos un disquete a uno nuevo donde usamos servicios en la "nube" es importante, pero nada de eso se traduce en algo "tangible", algo que pueda decir "Wow!".
 
