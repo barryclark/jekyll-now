@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a data scientist or a machine learning engineer who loves all the techniques around "Big Data". I am passionate about coding and always embracing the open source community.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am super basketball fan and Lebron James is my favorite basketball player.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dingyunxing@gmail.com](mailto:dingyunxing@gmail.com)
