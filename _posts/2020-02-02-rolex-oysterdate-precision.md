@@ -1,12 +1,12 @@
 ---
-published: false
-id: 8336
+published: true
+id: 5712
 title: Reloj Rolex Oysterdate Precision (6694)
-date: {}
+date: 2020-01-31T00:00:00.000Z
 author: ovalenzuela
 layout: post
-guid: 'http://ovalenzuela.com/?p=020220'
-permalink: /2020/02/rolex-oysterdate-precision.html
+guid: 'http://ovalenzuela.com/?p=013120'
+permalink: /2020/01/rolex-oysterdate-precision.html
 categories:
   - General
   - Opinión
