@@ -1,0 +1,54 @@
+#hideout-network {
+  background-color: #0e0e0e;
+  height: 100%;
+  width: 100%;
+  flex-grow: 3;
+}
+
+#header {
+  color: lightgrey;
+}
+
+#hideout-infobox {
+  background-color: #0e0e0e;
+  border: 1px solid #c2b7a3;
+  width: 15%;
+  color: lightgrey;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#node-info {
+  min-height: 70%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#infobox-footer {
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  height: 30%;
+}
+
+#infobox-footer span {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #0e0e0e;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #9a8866;
+  background: none;
+}
