@@ -7,8 +7,6 @@ description: "Cheryl Hung's upcoming conferences and events."
 
 ### 2020
 
-January 30: [Sustain 2020](https://opencollective.com/sustainoss/events/sustain-2020-5874aeeb), Brussels 
-
 February 1-2: [FOSDEM 2020](https://fosdem.org/2020/), Brussels
 
 February 24-26: [MWC](https://www.mwcbarcelona.com/), Barcelona
@@ -40,7 +38,7 @@ September 2 - 4: [Kubernetes Community Days London](http://kubernetesdays.london
 
 September 15 - 16: [Open Source Summit Japan](https://events.linuxfoundation.org/open-source-summit-japan/), Tokyo
 
-September 29 - 30: [Open Networking & Edge Summit EU](https://events.linuxfoundation.org/open-networking-edge-summit-europe/), Antwerp
+September 28 - October 2: [Grace Hopper](https://ghc.anitab.org/2020-attend/), Orlando, Florida
 
 October 26 - 28: [Open Source Summit Europe](https://events.linuxfoundation.org/open-source-summit-europe/), Dublin
 
