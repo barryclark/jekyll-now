@@ -1180,7 +1180,7 @@ function formatRequirements(requirementsObject) {
     if (requirementsObject.items && requirementsObject.items.length > 0) {
         output += "<ul>"
         requirementsObject.items.forEach((item) => {
-            var wikiFormattedText = item.replace(/[0-9,]+/, "").trim().replace(/\W/g, "_")
+            var wikiFormattedText = item.replace(/[0-9,]+/, "").trim().replace(/\W/g, "_") // remove quantities and use _
             var itemLinkHtml = '<a href="https://escapefromtarkov.gamepedia.com/' + wikiFormattedText + '">' + item + '</a>'
             output += "<li>" + itemLinkHtml + "</li>"
         })
@@ -1192,7 +1192,9 @@ function formatRequirements(requirementsObject) {
     if (requirementsObject.loyalty && requirementsObject.loyalty.length > 0) {
         output += "<ul>"
         requirementsObject.loyalty.forEach((vendor) => {
-            output += "<li>" + vendor + "</li>"
+          var wikiFormattedText = vendor.trim().split(" ")[0] // pulls out the "Prapor" in "Prapor LL2"
+          var vendorLinkHtml = '<a href="https://escapefromtarkov.gamepedia.com/' + wikiFormattedText + '">' + vendor + '</a>'  
+          output += "<li>" + vendorLinkHtml + "</li>"
         })
         output += "</ul>"
     } else {
@@ -1202,7 +1204,9 @@ function formatRequirements(requirementsObject) {
     if (requirementsObject.skills && requirementsObject.skills.length > 0) {
         output += "<ul>"
         requirementsObject.skills.forEach((skill) => {
-            output += "<li>" + skill + "</li>"
+          var wikiFormattedText = skill.replace(/[0-9,]+/, "").trim().replace(/\W/g, "_") // Skills should not have spaces
+          var skillLinkHtml = '<a href="https://escapefromtarkov.gamepedia.com/' + wikiFormattedText + '">' + skill + '</a>'  
+          output += "<li>" + skillLinkHtml + "</li>"
         })
         output += "</ul>"
     } else {
