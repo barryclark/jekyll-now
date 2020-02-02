@@ -1152,7 +1152,10 @@ var options = {
         shakeTowards: "roots",
         nodeSpacing: 350
       }
-  }
+  },
+  autoResize: true,
+  height: "800px",
+  width: "1024px"
 };
 
 var network = new vis.Network(container, data, options);
