@@ -12,21 +12,23 @@ class Stroke
 
 
 queue = [];
-canvas = document.getElementById('myCanvas');
-context = canvas.getContext('2d');
-handle1 = $( "#handle1" );
-handle2 = $( "#handle2" );
-handle3 = $( "#handle3" );
+canvas = document.getElementById 'myCanvas'
+context = canvas.getContext '2d'
+imgData = context.getImageData 0,0, canvas.width, canvas.height
+handle1 = $ "#handle1"
+handle2 = $ "#handle2"
+handle3 = $ "#handle3"
 hex = "";
 
-drawSpirograph = (context, cx, cy, radius1, radius2, ratio, color) ->
+spiro = (context, cx, cy, inR, r, ratio, color = "000000", cycles = 2) ->
   context.beginPath();
-  context.moveTo cx + radius1 + radius2, cy;
+  context.moveTo cx + inR + r, cy;
 
   # Draw segments from theta = 0 to theta = 2PI
-  for theta in [Math.PI *2..0] by -0.01
-    x = cx + radius1 * Math.cos(theta) + radius2 * Math.cos(theta * ratio);
-    y = cy + radius1 * Math.sin(theta) + radius2 * Math.sin(theta * ratio);
+  total = Math.PI * cycles
+  for th in [total..0] by -0.01
+    x = cx + inR * Math.cos(th) + r * Math.cos(th * ratio);
+    y = cy + inR * Math.sin(th) + r * Math.sin(th * ratio);
     context.lineTo(x, y);
 
   # Apply stroke
@@ -34,7 +36,7 @@ drawSpirograph = (context, cx, cy, radius1, radius2, ratio, color) ->
   context.stroke();
   0
 
-draw  = ->
+draw = (stamp, color) ->
   #// Get drawing context
   r1 = $ "#outerRadius"
   .slider "value"
@@ -46,12 +48,15 @@ draw  = ->
   cy = canvas.height / 2;
 
   # Draw spirograph
-  drawSpirograph context, cx, cy, r1, r2, ratio, hex;
-  queue.push new Stroke cx, cy, r1, r2, ratio, hex;
+  spiro context, cx, cy, r1, r2, ratio, color
+  if stamp
+    queue.push new Stroke cx, cy, r1, r2, ratio, hex
+    imgData = context.getImageData 0,0, canvas.width, canvas.height
   0
 
 clear = ->
   context.clearRect 0, 0, canvas.width, canvas.height;
+  imgData = context.getImageData 0,0, canvas.width, canvas.height
   queue = [];
   0
 
@@ -59,7 +64,8 @@ undo = ->
   context.clearRect 0, 0, canvas.width, canvas.height
   queue.pop()
   for s in queue
-    drawSpirograph context, s.centerX, s.centerY, s.radius1, s.radius2, s.ratio, s.color
+    spiro context, s.centerX, s.centerY, s.radius1, s.radius2, s.ratio, s.color
+  imgData = context.getImageData 0,0, canvas.width, canvas.height
   0
 hexFromRGB = (r, g, b) ->
   hex = [
@@ -85,6 +91,7 @@ refreshSwatch = ->
   0
 
 dlCanvas = ->
+  context.putImageData imgData, 0, 0
   dt = canvas.toDataURL 'image/png'
   this.href = dt
 
@@ -137,7 +144,7 @@ $ "#blue"
 $ "button#draw"
 .click (event)->
   event.preventDefault()
-  draw()
+  draw true, hex
 
 $ "button#clear"
 .click (event)->
@@ -151,4 +158,16 @@ $ "button#undo"
 
 document
   .getElementById "dl"
-  .addEventListener('click', dlCanvas, false);
+  .addEventListener 'click', dlCanvas, false
+
+counter = 0
+
+setInterval () ->
+  context.putImageData imgData, 0, 0
+  switch counter
+    when counter = 0 then color = "808080"
+    when counter = 1 then color = "404040"
+    when counter = 2 then color = "808080"
+  draw false, color
+  counter = 1 - counter
+, 200
