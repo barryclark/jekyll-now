@@ -1,0 +1,54 @@
+---
+layout: post
+index: false
+title: Spirograph
+permalink: /spiro/
+jquery: true
+---
+
+This is a small javascript program that simulates a spirograph based
+on the mathematical formulas described in
+<a href="http://www.mathematische-basteleien.de/spirographs.htm">Mathematische Basteleien</a>
+The implementation is done with html canvas and javascript 
+
+<div class="spiro">
+<div>
+<canvas id="myCanvas" width="600" height="500" >
+</canvas >
+</div>
+<table ><tr><td>
+
+  <div id="outerRadius">
+    <label for="handle1">R</label>
+    <div class="handle ui-slider-handle " id='handle1'></div>
+  </div>
+  <div id="innerRadius">
+    <label for="handle2">r</label>
+    <div class="handle ui-slider-handle " id='handle2'></div>
+  </div>
+  <div id="ratio">
+    <label for="handle3">cycles</label>
+    <div class="handle ui-slider-handle " id='handle3'></div>
+  </div>
+  </td>
+  <td>
+  <div id="red"></div>
+  <div id="green"></div>
+  <div id="blue"></div>
+
+  <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+
+  </td>
+  </tr>
+</table>
+<div>
+  <button class="ui-button ui-widget ui-corner-all" id='draw'>Draw!</button>
+  <button class="ui-button ui-widget ui-corner-all" id='clear'>Clear</button>
+  <button class="ui-button ui-widget ui-corner-all" id='undo'>Undo</button>
+</div>
+
+<a id="dl" download="spirograph.png">Click to download the mage</a>
+
+<script src="{{ site.baseurl }}/js/spirograph.js"></script>
+</div>
+<hr/>
