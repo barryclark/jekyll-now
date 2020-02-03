@@ -322,8 +322,14 @@ canvas {
 #red, #green, #blue, #outerRadius, #innerRadius, #ratio {
     float: left;
     clear: left;
-    width: 300px;
+    width: 255px;
     margin: 15px;
+    margin-left: 50px;
+}
+
+label {
+  margin-left: -55px;
+  text-align: right;
 }
 #swatch {
   width: 120px;
