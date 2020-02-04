@@ -10,7 +10,7 @@ description: "Cheryl Hung's upcoming conferences and events."
 February 24-26: [MWC](https://www.mwcbarcelona.com/), Barcelona
 
 February 27: [Cloud Native Prague](https://www.meetup.com/Cloud-Native-Prague/), Czech Republic
-* Talk
+* *Patterns and challenges of cloud native adoption*
 
 March 4-7: #21digital, Cologne, Germany
 
