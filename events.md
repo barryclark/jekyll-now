@@ -7,8 +7,6 @@ description: "Cheryl Hung's upcoming conferences and events."
 
 ### 2020
 
-February 1-2: [FOSDEM 2020](https://fosdem.org/2020/), Brussels
-
 February 24-26: [MWC](https://www.mwcbarcelona.com/), Barcelona
 
 February 27: [Cloud Native Prague](https://www.meetup.com/Cloud-Native-Prague/), Czech Republic
