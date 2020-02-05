@@ -51,3 +51,5 @@ jquery: true
 </div>
 </div>
 </div>
+<hr/>
+*Disclaimer: It is your responsibility to check all numbers and data for accurate information. This is not a replacement for your auto and trailer manufacturer's data. We can't take any responsibility for any wrongly introduced data. The information provided is for entertainment only.*
