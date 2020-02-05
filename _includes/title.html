@@ -1,2 +1,11 @@
-<h1>{% if page.icon %}<img class="site-avatar" src="/images/{{ page.icon }}" />{% endif %}
-  {{ page.title }}</h1>
+<h1>
+{% if page.banner %}
+  <div class="page-banner">
+  <img src="/images/{{ page.banner }}" />
+  </div>
+{% else %}
+  {% if page.icon %}
+  <img class="site-avatar" src="/images/{{ page.icon }}" />
+  {% endif %}
+{% endif %}
+</h1>

@@ -184,6 +184,18 @@ img {
   }
 }
 
+.page-banner {
+  align-items: center;
+  width: 600px;
+  height: 420px;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    top: -10px;
+  }
+}
+
 .site-info {
   float: left;
 

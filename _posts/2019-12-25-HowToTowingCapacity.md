@@ -1,11 +1,14 @@
 ---
 layout: post
 title: How to calculate your vehicle's towing capacity
+banner: towing-banner.png
 icon: calc-200.png
 ---
 As we decided to get a travel trailer,
 we quickly discovered that a towing capacity
 stated in the manual of my car is not actually even remotely the only value needed to safely tow a trailer.
+
+
 
 ![hitch]({{ site.baseurl }}/images/hitch.png )
 The result has to do with the relationship between the payload capacity – or cargo capacity - of the vehicle,
