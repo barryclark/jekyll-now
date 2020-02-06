@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 id: 20624
 title: Reloj Rolex Oyster Precision (6426)
-date: {}
+date: 2020-02-06T00:00:00.000Z
 author: ovalenzuela
 layout: post
-guid: 'http://ovalenzuela.com/?p=050220'
+guid: 'http://ovalenzuela.com/?p=20624'
 permalink: /2020/02/rolex-oyster-precision.html
 categories:
   - General
