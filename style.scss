@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $lightGray;
+	background: $white;
   font: 18px/1.4 $candara;
   color: $darkerGray;
 }
@@ -157,11 +157,18 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-size: cover;
+  background-image: url(/images/banner.png);
+  background-position: center center;
+  min-height: 240px;
+
+  a {
+    color: $gray;
+  }
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $gray;
 
   @include mobile {
     text-align: center;
@@ -187,7 +194,7 @@ img {
 
 .page-banner {
   align-items: center;
-  width: 600px;
+  // width: 600px;
   height: 420px;
   overflow: hidden;
 
@@ -209,18 +216,18 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $gray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 18px;
 
   @include mobile {
     margin: 3px 0;
@@ -231,7 +238,8 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 300;
 
   @include mobile {
     float: none;
@@ -244,7 +252,7 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
 
     @include mobile {
