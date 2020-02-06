@@ -8,8 +8,8 @@ google-ID: 'UA-101991886-1'
 
 menu:
 - {name: 'Cloud Native London', path: 'cloudnativelondon', url: ''}
+- {name: 'Kubernetes Community Days London', path: '', url: 'https://kubernetesdays.london/'}
 - {name: 'Events', path: 'events', url: ''}
-- {name: 'Archive', path: 'archive', url: ''}
 - {name: 'About', path: 'about', url: ''}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
