@@ -15,20 +15,8 @@ tags:
   - reloj
   - rolex
 ---
-Imagina una situación donde estas a full en estrés, un dia de locos y por unos minutos logras encerrarte en un cuarto, ya sea un baño para "hacer lo tuyo" o una oficina, para disfrutar del silencio y tranquilidad. Derrepente, escuchas un pequeño reloj, no es el comun "tic tac" que te volvería loco, sino un "tag" seco, metálico, rítmico, que te fuerza a sincronizar tu respiración, alejas tu pensamiento del estrés y te vuelves a la fascinación que genera ese pequeño corazón de metal y rubíes.
+Imagina una situación donde estas a FULL en estrés, un día de locos y por unos minutos logras encerrarte en un cuarto, ya sea un baño para "hacer lo tuyo" o alguna oficina aislada, para disfrutar de un momento de silencio y tranquilidad. Y entonces, escuchas un pequeño reloj, no es el "tic tac" común que te volvería loco, sino un "tag" seco, metálico, rítmico, que te fuerza a sincronizar tu respiración, alejas tu pensamiento del estrés y te vuelves a la fascinación que genera ese pequeño corazón de metal y diminutos rubíes.
 
-Esa es una buena descripción de lo que me pasa cuando uso mi antiguo Rolex 6426, un modelo algo similar a my oysterdate, pero que no tiene las complicaciones relacionadas con la fecha.
+Esa es una buena descripción de lo que me pasa cuando uso mi antiguo Rolex 6426, un modelo algo similar a my Oysterdate, pero que no tiene complicaciones. Es una maravilla de 34mm (sin corona), sujeta en una pulsera de 19mm, con movimiento mecánico que requiere cuerda (manual) que late desde 1968.
 
-
-
-Primero que todo, no doy soporte. Si decides seguir las instrucciones que escribo a continuacion es tu problema.
-Esto es solo una recoleccion de ideas y tips que he ido encontrando en Internet.
-
-## Aumentar la memoria SWAP
-
-### Opcion 1:
-sudo dphys-swapfile setup
-
-### Opcion 2:
-sudo /etc/init.d/dphys-swapfile stop
-sudo /etc/init.d/dphys-swapfile start
+El dial es color plata (metálico) y dado su antigüedad despliega algo de "patina", una película café causada por la oxidación que le dan un toque de autenticidad y "vintage".
