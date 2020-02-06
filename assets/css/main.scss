@@ -59,8 +59,12 @@ body {
 
 .masthead-title {
     margin: auto;
-    padding: 0 22px;
+    padding: 0;
+    width: 70%;
 }
+
+@media (max-width: 1068px) { .masthead-title { width: 90vw; } }
+
 
 .site-logo {
     display: inline;
@@ -74,7 +78,7 @@ body {
 
 .menu {
     float: right;
-    padding-left: 4rem;
+    padding-left: 8rem;
 }
 
 nav.menu-content a {
