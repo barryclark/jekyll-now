@@ -1,7 +1,7 @@
 ---
 published: true
 id: 20624
-title: Reloj Rolex Oyster Precision (6426)
+title: Rolex Oyster Precision (6426)
 date: 2020-02-06T00:00:00.000Z
 author: ovalenzuela
 layout: post
