@@ -1146,6 +1146,10 @@ var options = {
   manipulation: {
     enabled: false
   },
+  // physics: {
+  //   stabilization: false,
+  //   wind: { x: 0, y: 0 }
+  // },
   layout: {
     hierarchical: {
         sortMethod: "directed",
@@ -1225,3 +1229,17 @@ network.on("click", function(params) {
         infoBox.innerHTML = infoBoxHtml
     }
   });
+
+network.once("beforeDrawing", function() {
+  network.focus("Sec3", {
+    scale: 3
+  });
+});
+network.once("afterDrawing", function() {
+  network.fit({
+    animation: {
+      duration: 600,
+      easingFunction: "linear"
+    }
+  });
+});
