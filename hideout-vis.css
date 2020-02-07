@@ -6,6 +6,15 @@
 
 #header {
   display: flex;
+  flex-grow: 3;
+}
+
+#menu {
+  padding: 10px;
+  align-self: flex-end;
+  flex-grow: 1;
+  margin-bottom: 25px;
+  border: 1px solid #c2b7a3
 }
 
 #hideout-network {

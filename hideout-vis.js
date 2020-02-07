@@ -8,8 +8,20 @@ var imgRoot = "./img/";
 
 var infoBox = document.getElementById("node-info");
 
+var checkbox = document.getElementById("shouldShowAllAncestors");
+checkbox.addEventListener('change', (event) => {
+  if (event.target.checked) {
+    return;
+  } else {
+    unHoverNodesAndEdges();
+    network.redraw();
+  }
+});
+
 // hover effects
 var hoverChosenNode = function(values, id, selected, hovering) {
+  var node = network.body.nodes[id];
+  console.log(values);
   values.shadow = true;
   values.shadowColor = "#ff0000";
   values.shadowX = 0;
@@ -1073,18 +1085,37 @@ var options = {
 
 var network = new vis.Network(container, data, options);
 
-// get all the ancestors of the node (so we can highlight, etc)
-// function getAllChildNodesAndEdges(nodeId) {
-//     var parent = network.body.nodes[nodeId];
-//     var parentId = parent.id;
-//     parent.edges.forEach(edge => {
-//         if (edge.toId == parentId) {
+function shouldShowAllAncestors() {
+  var checkbox = document.getElementById("shouldShowAllAncestors");
+  return checkbox.checked;
+}
 
-//         }
-//         return
-//     });
-//     return parent;
-// }
+// get all the ancestors of the node (so we can highlight, etc)
+function hoverAllAncestors(nodeId) {
+    var parent = network.body.nodes[nodeId];
+    var parentId = parent.id;
+    parent.edges.forEach(edge => {
+        if (edge.toId == parentId) {
+          // we have the edge and the from node, so highlight them
+          var child = edge.from;
+          edge.hover = true;
+          child.hover = true;
+          // do this recursively
+          return hoverAllAncestors(child.id);
+        }
+    });
+    return parent;
+}
+
+// remove the hover state from everything
+function unHoverNodesAndEdges() {
+  for (const nodeId in network.body.nodes) {
+    network.body.nodes[nodeId].hover = false;
+  };
+  for (const edgeId in network.body.edges) {
+    network.body.edges[edgeId].hover = false;
+  };
+}
 
 // Format the non-station requirements into HTML
 function formatRequirements(requirementsObject) {
@@ -1154,7 +1185,12 @@ network.on("click", function(params) {
   if (params.nodes && params.nodes.length > 0) {
     var selectedNodeId = params.nodes[0];
     var node = network.body.nodes[selectedNodeId];
-    console.log(node);
+    if (shouldShowAllAncestors()) {
+      // un-hover all other nodes, or we'll just light everything up
+      unHoverNodesAndEdges();
+      // highlight all ancestor nodes recursively
+      hoverAllAncestors(node.id);
+    }
     var infoBoxHtml = "<h2>" + node.options.title + "</h2>";
     infoBoxHtml += "\n" + formatRequirements(node.options.requirements);
     infoBox.innerHTML = infoBoxHtml;
@@ -1163,7 +1199,7 @@ network.on("click", function(params) {
 
 // Since scaling isn't working on Chrome, in place of a fixed size
 network.once("beforeDrawing", () => {
-  container.style.height = "90vh";
+  container.style.height = "85vh";
 });
 
 // brief animation to show off interactivity
