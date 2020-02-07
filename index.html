@@ -1,65 +1,97 @@
 <html>
-  <head>
-    <title>Hideout Graph | Escape From Tarkov Fan Site</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-132380414-3"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-132380414-3");
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <div id="header">
-        <img src="img/title.png" />
+<head>
+  <title>Escape From Tarkov Hideout Guide | eft-graph.com</title>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=%27+i+dl;f.parentNode.insertBefore(j,f)';
+    })(window, document, 'script', 'dataLayer', 'GTM-TDQFFPT');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132380414-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-132380414-3");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Wondering how to upgrade the hideout in Escape From Tarkov? The game is hard enough already - so I simplified it." />
+  <meta name="keywords" content="escapefromtarkov,hideout,upgrades" />
+  <meta name="author" content="/u/xenocidebrm" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="header">
+      <img src="img/title.png" alt="Escape From Tarkov Hideout Guide logo" />
+      <p>
+        Click around to visualize the different things required to upgrade
+        your Hideout in Escape from Tarkov. Curious about
+        <a href="#" onclick="toggleRoadmap()">the roadmap?</a>
+        <br />
+        Created by <a href="https://twitter.com/RiotXeno">ya boy Brad</a>.
+        Can also find me as 
+        <a href="https://www.reddit.com/user/xenocidebrm/">/u/xenocidebrm</a>
+        on Reddit.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div id="roadmap">
+      <p>
+        These are the possible features we're adding to the site. If you have
+        comments, please feel free to let me know!
+      </p>
+      <ul>
+        <li>[Minor effort] Translations: Spanish & Russian</li>
+        <li>[Medium effort] Mobile formatting</li>
+        <li>[Minor effort] Higher quality icons ;_;</li>
+        <li>[Minor effort] "Show all requirements" mode</li>
+        <li>[Major effort] Save your progress</li>
+        <li>[Minor effort] "Requires" in red, "enables" in green</li>
+        <li>[Ongoing] Fix data issues & keep updated</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div id="hideout-network"></div>
+    <div id="hideout-infobox">
+      <div id="node-info">
         <p>
-          I made this graph to help understand how to upgrade the hideout in
-          Escape From Tarkov. Turns out this looks like garbage on mobile, so
-          I'm working on that.
-        </p>
-        <p>
-          Created by <a href="https://twitter.com/RiotXeno">ya boy Brad</a>.
-          Questions, corrections, complaints? Drop me a line:
-          <a href="https://www.reddit.com/user/xenocidebrm/">u/xenocidebrm</a>
-          on Reddit.
+          Try tapping around - it's interactive!
         </p>
       </div>
-    </div>
-    <div class="container">
-      <div id="hideout-network"></div>
-      <div id="hideout-infobox">
-        <div id="node-info">
-          <p>
-            Try tapping around - it's interactive!
-          </p>
-        </div>
-        <div id="infobox-footer">
-          <span>
-            <a
-              class="dbox-donation-button"
-              style="background: #9a8866;color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 13px 17px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;box-shadow: 0 1px 0 0 #1f5a89;text-shadow: 0 1px rgba(0, 0, 0, 0.3);"
-              href="https://donorbox.org/support-eft-graph-development?default_interval=o"
-              >Donate</a
-            ></span
-          >
-        </div>
+      <div id="infobox-footer">
+        <span>
+          <a class="dbox-donation-button"
+            style="background: #9a8866;color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 13px 17px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;box-shadow: 0 1px 0 0 #1f5a89;text-shadow: 0 1px rgba(0, 0, 0, 0.3);"
+            href="https://donorbox.org/support-eft-graph-development?default_interval=o">Support me</a></span>
       </div>
     </div>
+  </div>
 
-    <!-- my scripts and styles -->
-    <script src="vis-network.min.js"></script>
-    <script src="hideout-vis.js"></script>
-    <link rel="stylesheet" href="vis-network.min.css" />
-    <link rel="stylesheet" href="hideout-vis.css" />
-    <!-- Thanks for the font in the title: https://forum.escapefromtarkov.com/topic/2000-font-escape-from-tarkov/ -->
-    <!-- Please excuse the artisinal, hand-crafted icons. I don't have assets, so I had to take screenshots of my game. -->
-  </body>
+  <!-- my scripts and styles -->
+  <script src="vis-network.min.js"></script>
+  <script src="hideout-vis.js"></script>
+  <link rel="stylesheet" href="vis-network.min.css" />
+  <link rel="stylesheet" href="hideout-vis.css" />
+  <!-- Thanks for the font in the title: https://forum.escapefromtarkov.com/topic/2000-font-escape-from-tarkov/ -->
+  <!-- Please excuse the artisinal, hand-crafted icons. I don't have assets, so I had to take screenshots of my game. -->
+</body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDQFFPT" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 </html>

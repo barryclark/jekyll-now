@@ -1,40 +1,45 @@
+#roadmap {
+  display: none;
+  border: 1px solid #c2b7a3;
+  padding: 10px;
+}
+
+#header {
+  display: flex;
+}
+
 #hideout-network {
   background-color: #0e0e0e;
   height: 100%;
   width: 100%;
   flex-grow: 3;
+  display: flex;
 }
 
-#header {
-  color: lightgrey;
+.vis-network {
+  flex-grow: 1;
+  flex-basis: 75%;
 }
 
 #hideout-infobox {
   background-color: #0e0e0e;
   border: 1px solid #c2b7a3;
   width: 15%;
-  color: lightgrey;
   padding: 10px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 #node-info {
-  min-height: 70%;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  align-self: flex-start;
+  flex-basis: 90%;
 }
 
 #infobox-footer {
-  margin-top: 0;
-  padding-top: 0;
-  position: relative;
-  height: 30%;
-}
-
-#infobox-footer span {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
+  flex-basis: 10%;
+  align-self: flex-end;
 }
 
 .container {
@@ -45,6 +50,7 @@
 body {
   background-color: #0e0e0e;
   font-family: sans-serif;
+  color: lightgrey;
 }
 
 a {

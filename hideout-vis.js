@@ -10,20 +10,20 @@ var infoBox = document.getElementById("node-info");
 
 // hover effects
 var hoverChosenNode = function(values, id, selected, hovering) {
-    values.shadow = true;
-    values.shadowColor = "#ff0000";
-    values.shadowX = 0;
-    values.shadowY = 0;
-    values.shadowSize = 20;
+  values.shadow = true;
+  values.shadowColor = "#ff0000";
+  values.shadowX = 0;
+  values.shadowY = 0;
+  values.shadowSize = 20;
 };
 var hoverChosenEdge = function(values, id, selected, hovering) {
-    values.color = "#ff0000";
-    values.opacity = 1.0;
-    values.dashes = false;
-    values.shadowX = 0;
-    values.shadowY = 0;
-    values.shadow = true;
-    values.shadowColor = "#ff0000"
+  values.color = "#ff0000";
+  values.opacity = 1.0;
+  values.dashes = false;
+  values.shadowX = 0;
+  values.shadowY = 0;
+  values.shadow = true;
+  values.shadowColor = "#ff0000";
 };
 
 var jsonData = {
@@ -35,8 +35,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "air-filtration-unit.png",
       requirements: {
-          items: ["10,000 Dollars"],
-          loyalty: ["Skier LL3"]
+        items: ["10,000 Dollars"],
+        loyalty: ["Skier LL3"]
       }
     },
     {
@@ -46,12 +46,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "bitcoin-farm.png",
       requirements: {
-          items: [
-              "10 CPU fan",
-              "5 Power supply unit",
-              "5 Powercord",
-              "1 Electric drill"
-            ]
+        items: [
+          "10 CPU fan",
+          "5 Power supply unit",
+          "5 Powercord",
+          "1 Electric drill"
+        ]
       }
     },
     {
@@ -61,12 +61,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "bitcoin-farm.png",
       requirements: {
-          items: [
-              "15 CPU fan",
-              "5 Power supply unit",
-              "5 printed circuit board",
-              "2 Phase control relay"
-          ]
+        items: [
+          "15 CPU fan",
+          "5 Power supply unit",
+          "5 printed circuit board",
+          "2 Phase control relay"
+        ]
       }
     },
     {
@@ -76,12 +76,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "bitcoin-farm.png",
       requirements: {
-          items: [
-              "25 CPU fan",
-              "10 Silicone tube",
-              "1 Electric motor",
-              "2 Pressure gauge"
-          ]
+        items: [
+          "25 CPU fan",
+          "10 Silicone tube",
+          "1 Electric motor",
+          "2 Pressure gauge"
+        ]
       }
     },
     {
@@ -91,12 +91,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "booze-generator.png",
       requirements: {
-          items: [
-              "4 Silicone tube",
-              "2 Analog thermometer",
-              "2 Pressure gauge",
-              "5 Corrugated hose"
-          ]
+        items: [
+          "4 Silicone tube",
+          "2 Analog thermometer",
+          "2 Pressure gauge",
+          "5 Corrugated hose"
+        ]
       }
     },
     {
@@ -107,9 +107,7 @@ var jsonData = {
       image: imgRoot + "generator.png",
       y: -50,
       requirements: {
-          items: [
-              "₽100,000 Roubles"
-          ]
+        items: ["₽100,000 Roubles"]
       }
     },
     {
@@ -119,11 +117,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "generator.png",
       requirements: {
-          items: [
-              "5 Phase control relay",
-              "1 Electric motor",
-              "15 Wires"
-          ]
+        items: ["5 Phase control relay", "1 Electric motor", "15 Wires"]
       }
     },
     {
@@ -133,13 +127,13 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "generator.png",
       requirements: {
-          items: [
-            "6 Phase control relay",
-            "2 Electric motor",
-            "5 Spark plug",
-            "5 Power supply unit"
-          ],
-          loyalty: ["Mechanic LL3"]
+        items: [
+          "6 Phase control relay",
+          "2 Electric motor",
+          "5 Spark plug",
+          "5 Power supply unit"
+        ],
+        loyalty: ["Mechanic LL3"]
       }
     },
     {
@@ -149,9 +143,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "heating.png",
       requirements: {
-          items: [
-              "₽25,000 Roubles"
-          ]
+        items: ["₽25,000 Roubles"]
       }
     },
     {
@@ -161,10 +153,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "heating.png",
       requirements: {
-          items: [
-              "₽50,000 Roubles"
-          ],
-          skills: ["Endurance 2"]
+        items: ["₽50,000 Roubles"],
+        skills: ["Endurance 2"]
       }
     },
     {
@@ -174,11 +164,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "heating.png",
       requirements: {
-          items: [
-              "8 Radiator helix",
-              "8 Wires"
-          ],
-          loyalty: ["Ragman LL2"]
+        items: ["8 Radiator helix", "8 Wires"],
+        loyalty: ["Ragman LL2"]
       }
     },
     {
@@ -188,7 +175,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "illumination.png",
       requirements: {
-          items: ["10,000 Roubles"]
+        items: ["10,000 Roubles"]
       }
     },
     {
@@ -198,7 +185,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "illumination.png",
       requirements: {
-          items: ["14 Light bulb", "5 Wires"]
+        items: ["14 Light bulb", "5 Wires"]
       }
     },
     {
@@ -208,11 +195,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "illumination.png",
       requirements: {
-          items: [
-              "50,000 Roubles",
-              "7 Capacitors"
-          ],
-          loyalty: ["Mechanic LL2"]
+        items: ["50,000 Roubles", "7 Capacitors"],
+        loyalty: ["Mechanic LL2"]
       }
     },
     {
@@ -222,7 +206,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "intelligence-center.png",
       requirements: {
-          items: ["1 Folder with intelligence"]
+        items: ["1 Folder with intelligence"]
       }
     },
     {
@@ -232,14 +216,14 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "intelligence-center.png",
       requirements: {
-          items: [
-              "3 Folder with intelligence",
-              "3 Secure flash drive",
-              "4 Powercord",
-              "4 Damaged hard drive"
-          ],
-          loyalty: ["Mechanic LL2"],
-          skills: ["Attention 3"]
+        items: [
+          "3 Folder with intelligence",
+          "3 Secure flash drive",
+          "4 Powercord",
+          "4 Damaged hard drive"
+        ],
+        loyalty: ["Mechanic LL2"],
+        skills: ["Attention 3"]
       }
     },
     {
@@ -249,13 +233,13 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "intelligence-center.png",
       requirements: {
-          items: [
-              "2 Military COFDM",
-              "2 VPX Flash storage module",
-              "3 Gas analyzer",
-              "4 Military cable"
-          ],
-          loyalty: ["Prapor LL3"]
+        items: [
+          "2 Military COFDM",
+          "2 VPX Flash storage module",
+          "3 Gas analyzer",
+          "4 Military cable"
+        ],
+        loyalty: ["Prapor LL3"]
       }
     },
     {
@@ -265,7 +249,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "lavatory.png",
       requirements: {
-          items: ["2,000 Roubles"]
+        items: ["2,000 Roubles"]
       }
     },
     {
@@ -275,11 +259,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "lavatory.png",
       requirements: {
-          items: [
-              "3 Corrugated hoses",
-              "5 A pack of screws",
-              "1 Electric drill"
-          ]
+        items: ["3 Corrugated hoses", "5 A pack of screws", "1 Electric drill"]
       }
     },
     {
@@ -289,12 +269,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "lavatory.png",
       requirements: {
-          items: [
-              "6 Corrugated hoses",
-              "2 Pressure gauge",
-              "1 A set of tools",
-              "3 Xenomorph sealing foam"
-          ]
+        items: [
+          "6 Corrugated hoses",
+          "2 Pressure gauge",
+          "1 A set of tools",
+          "3 Xenomorph sealing foam"
+        ]
       }
     },
     {
@@ -304,8 +284,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "library.png",
       requirements: {
-          items: ["400,000 Roubles"],
-          skills: ["Memory 8"]
+        items: ["400,000 Roubles"],
+        skills: ["Memory 8"]
       }
     },
     {
@@ -315,7 +295,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "medstation.png",
       requirements: {
-          items: ["25,000 Roubles"]
+        items: ["25,000 Roubles"]
       }
     },
     {
@@ -325,13 +305,9 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "medstation.png",
       requirements: {
-          items: [
-              "50,000 Roubles",
-              "1 Medical bloodset",
-              "3 Saline solution"
-          ],
-          loyalty: ["Therapist LL2"],
-          skills: ["Health 2"]
+        items: ["50,000 Roubles", "1 Medical bloodset", "3 Saline solution"],
+        loyalty: ["Therapist LL2"],
+        skills: ["Health 2"]
       }
     },
     {
@@ -341,16 +317,9 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "medstation.png",
       requirements: {
-          items: [
-              "150,000 Roubles",
-              "5 Saline solution",
-              "1 LEDX"
-          ],
-          loyalty: [
-              "Therapist LL3",
-              "Skier LL2"
-          ],
-          skills: ["Vitality 3"]
+        items: ["150,000 Roubles", "5 Saline solution", "1 LEDX"],
+        loyalty: ["Therapist LL3", "Skier LL2"],
+        skills: ["Vitality 3"]
       }
     },
     {
@@ -360,10 +329,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "nutrition-unit.png",
       requirements: {
-          items: [
-              "25,000 Roubles",
-              "2 Phase control relay"
-          ]
+        items: ["25,000 Roubles", "2 Phase control relay"]
       }
     },
     {
@@ -373,13 +339,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "nutrition-unit.png",
       requirements: {
-          items: [
-              "4 Wrench",
-              "2 Corrugated hose",
-              "2 Heat-exchange alkali",
-              "1 Phase control relay"
-          ],
-
+        items: [
+          "4 Wrench",
+          "2 Corrugated hose",
+          "2 Heat-exchange alkali",
+          "1 Phase control relay"
+        ]
       }
     },
     {
@@ -389,12 +354,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "nutrition-unit.png",
       requirements: {
-          items: [
-              "125,000 Roubles",
-              "3 Coffee Majaica",
-              "3 Sodium bicarbonate"
-          ],
-          skills: ["Metabolism 3"]
+        items: ["125,000 Roubles", "3 Coffee Majaica", "3 Sodium bicarbonate"],
+        skills: ["Metabolism 3"]
       }
     },
     {
@@ -404,7 +365,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "rest-space.png",
       requirements: {
-          items: ["10,000 Roubles"]
+        items: ["10,000 Roubles"]
       }
     },
     {
@@ -414,8 +375,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "rest-space.png",
       requirements: {
-          items: ["35,000 Roubles"],
-          loyalty: ["Ragman LL2"]
+        items: ["35,000 Roubles"],
+        loyalty: ["Ragman LL2"]
       }
     },
     {
@@ -425,13 +386,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "rest-space.png",
       requirements: {
-          items: [
-              "3,000 Dollars",
-              "4 Powercord",
-              "5 Capacitor",
-              "7 Wires"
-          ],
-          loyalty: ["Skier LL3"]
+        items: ["3,000 Dollars", "4 Powercord", "5 Capacitor", "7 Wires"],
+        loyalty: ["Skier LL3"]
       }
     },
     {
@@ -441,12 +397,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "scav-case.png",
       requirements: {
-          items: [
-              "2 Bronze lion",
-              "2 Gold skull ring",
-              "6 Golden neck chain",
-              "3 Roler"
-          ]
+        items: [
+          "2 Bronze lion",
+          "2 Gold skull ring",
+          "6 Golden neck chain",
+          "3 Roler"
+        ]
       }
     },
     {
@@ -456,7 +412,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "security.png",
       requirements: {
-          items: ["20,000 Roubles"]
+        items: ["20,000 Roubles"]
       }
     },
     {
@@ -466,8 +422,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "security.png",
       requirements: {
-          items: ["45,000 Roubles"],
-          skills: ["Endurance 2"]
+        items: ["45,000 Roubles"],
+        skills: ["Endurance 2"]
       }
     },
     {
@@ -477,13 +433,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "security.png",
       requirements: {
-          items: [
-              "2 Working LCD",
-              "4 Wires",
-              "8 NIXXOR lens",
-              "1 SSD drive"
-          ],
-          loyalty: ["Mechanic LL2"]
+        items: ["2 Working LCD", "4 Wires", "8 NIXXOR lens", "1 SSD drive"],
+        loyalty: ["Mechanic LL2"]
       }
     },
     {
@@ -493,12 +444,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "shooting-range.png",
       requirements: {
-          items: [
-              "4 A pack of nails",
-              "5 Screw nut",
-              "5 Bolts",
-              "3 Duct tape"
-          ]
+        items: ["4 A pack of nails", "5 Screw nut", "5 Bolts", "3 Duct tape"]
       }
     },
     {
@@ -508,13 +454,13 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "solar-power.png",
       requirements: {
-          items: [
-              "15,000 Euros",
-              "4 Military cable",
-              "2 Phased array element",
-              "4 Military power filter"
-          ],
-          loyalty: ["Peacekeeper LL4"]
+        items: [
+          "15,000 Euros",
+          "4 Military cable",
+          "2 Phased array element",
+          "4 Military power filter"
+        ],
+        loyalty: ["Peacekeeper LL4"]
       }
     },
     {
@@ -531,12 +477,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "stash.png",
       requirements: {
-          items: [
-              "3,500,000 Roubles",
-              "1 Handdrill",
-              "7 A pack of screws",
-              "4 WD-40 100ml"
-          ]
+        items: [
+          "3,500,000 Roubles",
+          "1 Handdrill",
+          "7 A pack of screws",
+          "4 WD-40 100ml"
+        ]
       }
     },
     {
@@ -546,15 +492,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "stash.png",
       requirements: {
-          items: [
-              "8,500,000 Rubles",
-              "2 Electric drill",
-              "8 A pack of screws"
-          ],
-          loyalty: [
-              "Prapor LL3",
-              "Ragman LL3"
-          ]
+        items: ["8,500,000 Rubles", "2 Electric drill", "8 A pack of screws"],
+        loyalty: ["Prapor LL3", "Ragman LL3"]
       }
     },
     {
@@ -564,13 +503,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "stash.png",
       requirements: {
-          items: [
-              "150,000 Euros"
-          ],
-          loyalty: [
-              "Peacekeeper LL3",
-              "Ragman LL4"
-          ]
+        items: ["150,000 Euros"],
+        loyalty: ["Peacekeeper LL3", "Ragman LL4"]
       }
     },
     {
@@ -580,7 +514,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "vents.png",
       requirements: {
-          items: ["25,000 Roubles"]
+        items: ["25,000 Roubles"]
       }
     },
     {
@@ -590,10 +524,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "vents.png",
       requirements: {
-          items: [
-              "1 Electric motor",
-              "1 Car battery"
-          ]
+        items: ["1 Electric motor", "1 Car battery"]
       }
     },
     {
@@ -603,13 +534,13 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "vents.png",
       requirements: {
-          items: [
-              "2 Electric motor",
-              "8 Wires",
-              "3 Printed circuit board",
-              "3 Car battery"
-          ],
-          skills: ["Strength 3"]
+        items: [
+          "2 Electric motor",
+          "8 Wires",
+          "3 Printed circuit board",
+          "3 Car battery"
+        ],
+        skills: ["Strength 3"]
       }
     },
     {
@@ -619,12 +550,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "water-collector.png",
       requirements: {
-          items: [
-              "4 Corrugated hose",
-              "5 Bolts",
-              "5 Screw nut",
-              "3 Duct tape"
-          ]
+        items: ["4 Corrugated hose", "5 Bolts", "5 Screw nut", "3 Duct tape"]
       }
     },
     {
@@ -634,13 +560,9 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "water-collector.png",
       requirements: {
-          items: [
-              "6 Corrugated hose",
-              "2 Electric motor",
-              "2 A set of tools"
-          ],
-          loyalty: ["Jaeger LL2"],
-          skills: ["Attention 3"]
+        items: ["6 Corrugated hose", "2 Electric motor", "2 A set of tools"],
+        loyalty: ["Jaeger LL2"],
+        skills: ["Attention 3"]
       }
     },
     {
@@ -650,12 +572,12 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "water-collector.png",
       requirements: {
-          items: [
-              "125,000 Roubles",
-              "2 Elite pliers",
-              "5 Shustrilo sealing foam"
-          ],
-          loyalty: ["Jaeger LL3"]
+        items: [
+          "125,000 Roubles",
+          "2 Elite pliers",
+          "5 Shustrilo sealing foam"
+        ],
+        loyalty: ["Jaeger LL3"]
       }
     },
     {
@@ -665,11 +587,7 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "workbench.png",
       requirements: {
-          items: [
-              "2 Screw nuts",
-              "2 Bolts",
-              "1 Leatherman multitool"
-          ]
+        items: ["2 Screw nuts", "2 Bolts", "1 Leatherman multitool"]
       }
     },
     {
@@ -679,12 +597,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "workbench.png",
       requirements: {
-          items: [
-              "3 A set of tools",
-              "2 Electric drill",
-              "6 Bolts"
-          ],
-          loyalty: ["Mechanic LL2"]
+        items: ["3 A set of tools", "2 Electric drill", "6 Bolts"],
+        loyalty: ["Mechanic LL2"]
       }
     },
     {
@@ -694,12 +608,8 @@ var jsonData = {
       shape: "circularImage",
       image: imgRoot + "workbench.png",
       requirements: {
-          items: [
-              "195,000 Roubles",
-              "2 Elite pliers",
-              "1 FireKlean gun lube"
-          ],
-          loyalty: ["Mechanic LL3"]
+        items: ["195,000 Roubles", "2 Elite pliers", "1 FireKlean gun lube"],
+        loyalty: ["Mechanic LL3"]
       }
     }
   ],
@@ -742,6 +652,11 @@ var jsonData = {
     {
       from: "Sta2",
       to: "Sta3",
+      arrows: "to"
+    },
+    {
+      from: "Sta3",
+      to: "Sta4",
       arrows: "to"
     },
     {
@@ -1120,46 +1035,40 @@ var data = {
 };
 
 var options = {
-  interaction: { 
-      hover: true,
-      navigationButtons: false,
-      keyboard: true
+  interaction: {
+    hover: true,
+    navigationButtons: false,
+    keyboard: true
   },
   nodes: {
-      borderWidth: 2,
-      color: {
-          border: colorGold,
-          background: colorBlack
-      },
-      font: { color: "#eeeeee" },
-      chosen: { node: hoverChosenNode }
+    borderWidth: 2,
+    color: {
+      border: colorGold,
+      background: colorBlack
+    },
+    font: { color: "#eeeeee" },
+    chosen: { node: hoverChosenNode }
   },
   edges: {
     color: {
-        color: colorGold,
-        opacity: 0.33
+      color: colorGold,
+      opacity: 0.33
     },
     width: 1,
     chosen: { edge: hoverChosenEdge },
-    smooth: { enabled: true },
+    smooth: { enabled: true }
   },
   manipulation: {
     enabled: false
   },
-  // physics: {
-  //   stabilization: false,
-  //   wind: { x: 0, y: 0 }
-  // },
   layout: {
     hierarchical: {
-        sortMethod: "directed",
-        shakeTowards: "roots",
-        nodeSpacing: 350
-      }
+      sortMethod: "directed",
+      shakeTowards: "roots",
+      nodeSpacing: 350
+    }
   },
-  autoResize: true,
-  height: "800px",
-  width: "1024px"
+  autoResize: true
 };
 
 var network = new vis.Network(container, data, options);
@@ -1170,76 +1079,110 @@ var network = new vis.Network(container, data, options);
 //     var parentId = parent.id;
 //     parent.edges.forEach(edge => {
 //         if (edge.toId == parentId) {
-            
+
 //         }
-//         return 
+//         return
 //     });
 //     return parent;
 // }
 
 // Format the non-station requirements into HTML
 function formatRequirements(requirementsObject) {
-    var output = "<div>"
-    output += "<h3>Items</h3>"
-    if (requirementsObject.items && requirementsObject.items.length > 0) {
-        output += "<ul>"
-        requirementsObject.items.forEach((item) => {
-            var wikiFormattedText = item.replace(/[0-9,]+/, "").trim().replace(/\W/g, "_") // remove quantities and use _
-            var itemLinkHtml = '<a href="https://escapefromtarkov.gamepedia.com/' + wikiFormattedText + '">' + item + '</a>'
-            output += "<li>" + itemLinkHtml + "</li>"
-        })
-        output += "</ul>"
-    } else {
-        output += "<p>No item requirements!</p>"
-    }
-    output += "<h3>Loyalty</h3>"
-    if (requirementsObject.loyalty && requirementsObject.loyalty.length > 0) {
-        output += "<ul>"
-        requirementsObject.loyalty.forEach((vendor) => {
-          var wikiFormattedText = vendor.trim().split(" ")[0] // pulls out the "Prapor" in "Prapor LL2"
-          var vendorLinkHtml = '<a href="https://escapefromtarkov.gamepedia.com/' + wikiFormattedText + '">' + vendor + '</a>'  
-          output += "<li>" + vendorLinkHtml + "</li>"
-        })
-        output += "</ul>"
-    } else {
-        output += "<p>No vendor loyalty requirements!</p>"
-    }
-    output += "<h3>Skills</h3>"
-    if (requirementsObject.skills && requirementsObject.skills.length > 0) {
-        output += "<ul>"
-        requirementsObject.skills.forEach((skill) => {
-          var wikiFormattedText = skill.replace(/[0-9,]+/, "").trim().replace(/\W/g, "_") // Skills should not have spaces
-          var skillLinkHtml = '<a href="https://escapefromtarkov.gamepedia.com/' + wikiFormattedText + '">' + skill + '</a>'  
-          output += "<li>" + skillLinkHtml + "</li>"
-        })
-        output += "</ul>"
-    } else {
-        output += "<p>No skill requirements!</p>"
-    }
-    return output + "</div>"
+  var output = "<div>";
+  output += "<h3>Items</h3>";
+  if (requirementsObject.items && requirementsObject.items.length > 0) {
+    output += "<ul>";
+    requirementsObject.items.forEach(item => {
+      var wikiFormattedText = item
+        .replace(/[0-9,]+/, "")
+        .trim()
+        .replace(/\W/g, "_"); // remove quantities and use _
+      var itemLinkHtml =
+        '<a href="https://escapefromtarkov.gamepedia.com/' +
+        wikiFormattedText +
+        '">' +
+        item +
+        "</a>";
+      output += "<li>" + itemLinkHtml + "</li>";
+    });
+    output += "</ul>";
+  } else {
+    output += "<p>No item requirements!</p>";
+  }
+  output += "<h3>Loyalty</h3>";
+  if (requirementsObject.loyalty && requirementsObject.loyalty.length > 0) {
+    output += "<ul>";
+    requirementsObject.loyalty.forEach(vendor => {
+      var wikiFormattedText = vendor.trim().split(" ")[0]; // pulls out the "Prapor" in "Prapor LL2"
+      var vendorLinkHtml =
+        '<a href="https://escapefromtarkov.gamepedia.com/' +
+        wikiFormattedText +
+        '">' +
+        vendor +
+        "</a>";
+      output += "<li>" + vendorLinkHtml + "</li>";
+    });
+    output += "</ul>";
+  } else {
+    output += "<p>No vendor loyalty requirements!</p>";
+  }
+  output += "<h3>Skills</h3>";
+  if (requirementsObject.skills && requirementsObject.skills.length > 0) {
+    output += "<ul>";
+    requirementsObject.skills.forEach(skill => {
+      var wikiFormattedText = skill
+        .replace(/[0-9,]+/, "")
+        .trim()
+        .replace(/\W/g, "_"); // Skills should not have spaces
+      var skillLinkHtml =
+        '<a href="https://escapefromtarkov.gamepedia.com/' +
+        wikiFormattedText +
+        '">' +
+        skill +
+        "</a>";
+      output += "<li>" + skillLinkHtml + "</li>";
+    });
+    output += "</ul>";
+  } else {
+    output += "<p>No skill requirements!</p>";
+  }
+  return output + "</div>";
 }
 
+// highlight on click
 network.on("click", function(params) {
-    if (params.nodes && params.nodes.length > 0) {
-        var selectedNodeId = params.nodes[0];
-        var node = network.body.nodes[selectedNodeId];
-        console.log(node);
-        var infoBoxHtml = "<h2>" + node.options.title + "</h2>"
-        infoBoxHtml += "\n" + formatRequirements(node.options.requirements)
-        infoBox.innerHTML = infoBoxHtml
-    }
-  });
-
-network.once("beforeDrawing", function() {
-  network.focus("Sec3", {
-    scale: 3
-  });
+  if (params.nodes && params.nodes.length > 0) {
+    var selectedNodeId = params.nodes[0];
+    var node = network.body.nodes[selectedNodeId];
+    console.log(node);
+    var infoBoxHtml = "<h2>" + node.options.title + "</h2>";
+    infoBoxHtml += "\n" + formatRequirements(node.options.requirements);
+    infoBox.innerHTML = infoBoxHtml;
+  }
 });
+
+// Since scaling isn't working on Chrome, in place of a fixed size
+network.once("beforeDrawing", () => {
+  container.style.height = "90vh";
+});
+
+// brief animation to show off interactivity
 network.once("afterDrawing", function() {
   network.fit({
     animation: {
-      duration: 600,
+      duration: 300,
       easingFunction: "linear"
     }
   });
 });
+
+// show or hide the roadmap
+function toggleRoadmap() {
+  var rm = document.getElementById("roadmap");
+  console.log(rm.style.display);
+  if (!rm.style.display || rm.style.display === "none") {
+    rm.style.display = "table";
+  } else {
+    rm.style.display = "none";
+  }
+}
