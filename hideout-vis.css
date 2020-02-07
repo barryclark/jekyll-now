@@ -4,6 +4,10 @@
   padding: 10px;
 }
 
+.done {
+  text-decoration: line-through;
+}
+
 #header {
   display: flex;
   flex-grow: 3;
