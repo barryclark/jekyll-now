@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jekyll
+title: [DEV]jekyll
 category: blog
 author: junseo.park
 subtitle: jekyll 개념과 구성요소
