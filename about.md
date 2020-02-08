@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Avid birder, husband and father of four - I also enjoy playing ultimate, coding, reading, and learning.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+[eBird Profile](https://ebird.org/profile/NTQ2NjU4)
+
+President Monticello Bird Club [website](https://www.monticellobirdclub.org/)
 
 ### Contact me
 
