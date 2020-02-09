@@ -15,7 +15,11 @@ I am not sure exactly what the hawks were doing but given that large birds are a
 whether this was either a territorial dispute, or perhaps something related to courtship. I'll keep an eye for a nest in this area in the next few
 months.
 
-I also like recording the bird sounds and this post is to give a brief introduction of how I do this. There are many other articles describing how to do this such as at the [Macaulay Library](https://www.macaulaylibrary.org/how-to/audio-recording-gear/) but I will focus on some simple ways to get some ok recordinds.
+I also like recording the bird sounds and this post is to give a brief introduction of how I do this. There are many other articles describing how to do this such as at the [Macaulay Library](https://www.macaulaylibrary.org/how-to/audio-recording-gear/) but I will focus on some simple ways to get some ok recordings.
+
+## Ethics
+
+It is my view that playing bird sounds in the field has a potential to disturb birds. Therefore, unless performing a bird survey where the method includes judicious and approved use of playing bird sounds, I do not use it. 
 
 ## Recording devices
 
