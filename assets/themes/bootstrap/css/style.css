@@ -1,0 +1,228 @@
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+
+.navbar .nav {
+  float: right; }
+
+/* posts index */
+.post > h3.title {
+  position: relative;
+  padding-top: 10px; }
+
+.post > h3.title span.date {
+  position: absolute;
+  right: 0;
+  font-size: 0.9em; }
+
+.post > .more {
+  margin: 10px 0;
+  text-align: left; }
+
+/* post-full */
+.post-full .date {
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+/* tag_box */
+.tag_box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+
+.tag_box li {
+  line-height: 28px; }
+
+.tag_box li i {
+  margin-right: 5px;
+}
+
+.tag_box.inline li {
+  float: left; }
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color: #555;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed #cccccc; }
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.tag_box a:hover {
+  background-color: #e5e5e5; }
+
+.tag_box a.active {
+  background: #57A957;
+  border: 1px solid #4c964d;
+  color: #FFF; }
+
+
+/* following css should be seperated out from this file */
+/* nav anchor */
+.navbar .navbar-header {
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.navbar .navbar-nav>li>a {
+}
+
+i.glyphicon {
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    -o-transform:scale(0.9);
+    top: 3px;
+}
+
+/* Abstract in post */
+div.content > blockquote {
+    font-family: sans-serif;
+    color: #444444;
+    background-color: wheat; 
+}
+
+div.content > blockquote p {
+  font-size: 1em;
+}
+
+div.content > blockquote p code {
+  font-size: 1em;
+  color: #444444;
+  background-color: wheat;
+}
+
+code {
+  color: #333333;
+  background-color: #F5F5F5;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+/* Chinese contents */
+div.content .post-content.lang.zh-cn {
+    border-top: 2px solid lightgray;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+/* contents, h1, h2, h3 */
+.content .page-header {
+    margin-bottom: 10px;
+}
+
+.page-header > h1 {
+    font-family: Georgia, Times, "Times New Roman", "Liberation Serif", serif;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.content .date {
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", "Liberation Serif", serif;
+}
+
+.post-full {
+    font-family: "Lucida Grande","Lucida Sans Unicode","DejaVu Sans",Lucida,Arial,Helvetica,sans-serif;
+    font-size: 1.1em;
+}
+
+.post-full h2 {
+    font-size: 1.5em;
+}
+
+.row-fluid h2 {
+    font-size: 1.5em;
+}
+
+.post-full h3 {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.row-fluid h3 {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.gist {
+    font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+.post-full .post-content.lang.zh-cn  {
+    font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+    font-size: 1.1em;
+}
+
+/* Summary in index.md */
+div.summary-title {
+    font-size: 1.4em;
+    font-weight: bold; 
+}
+
+div.summary-time {
+    font-size: 1.1em;
+    font-style: italic; 
+}
+
+div.summary-content h1#section {
+    display: none;
+}
+
+div.summary-content blockquote {
+    font-size: 1.2em;
+    margin-top: 0.7em;
+}
+
+div.summary-content blockquote .footnote {
+    display: none;
+}
+
+div.summary-content a span.read-more {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Table */
+div.content table:not(.lines) {
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+div.content table:not(.lines) th {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.content table:not(.lines) td {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.content table:not(.lines) tr:nth-child(2n) {
+    background-color: #E5E5E5;
+}
+
+div.row table:not(.lines) td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+div.row table:not(.lines) tr:nth-child(2n) {
+    background-color: #E5E5E5;
+}

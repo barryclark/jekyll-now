@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
+I am final year Computer Science Undergraduate who loves solving problems 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[isaurabhk27@gmail.com](mailto:isaurabhk27@gmail.com)

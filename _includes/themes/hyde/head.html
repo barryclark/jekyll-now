@@ -1,0 +1,35 @@
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% else %}
+      {{ site.tagline}} &middot; The Blog by {{ site.author.name }}
+    {% endif %}
+  </title>
+ {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/css/poole.css">
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/css/syntax.css">
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/css/hyde.css">
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface"> -->
+  <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/style.css">
+  <!--[if lt IE 9]>
+  <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
+  <![endif]-->
+
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="{{ BASE_PATH }}/assets/img/incognito_t.ico">
+
+</head>

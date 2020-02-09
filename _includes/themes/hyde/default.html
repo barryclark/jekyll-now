@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include themes/hyde/head.html %}
+
+  <body>
+
+    {% if page.categories contains 'slides' %}
+      <div class="content">
+        {{ content }}
+      </div>
+    {% else %}
+
+      {% include themes/hyde/sidebar.html %}
+
+      <div class="content container">
+        {{ content }}
+      </div>
+    {% endif %}
+
+    <script src="{{ BASE_PATH }}/assets/jquery/jquery.min.js"></script>
+
+  </body>
+</html>
