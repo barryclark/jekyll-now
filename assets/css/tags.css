@@ -1,0 +1,83 @@
+/*
+https://github.com/kelsin/kelsin.github.io/tree/master/css
+*/
+section.tags #tags {
+font-size:.7em;
+margin-top:40px;
+position:relative;
+}
+
+section.tags #tags .tag {
+-webkit-column-break-inside:avoid;
+page-break-inside:avoid;
+break-inside:avoid;
+margin-bottom:2em;
+float:left;
+width:220px;
+}
+
+section.tags #tags .tag h3 {
+padding:5px 10px;
+}
+
+section.tags #tags .tag ul {
+list-style:none;
+background-color:#f6f6f6;
+border-radius:3px;
+padding:5px;
+}
+
+section.tags #tags .tag ul li {
+border-bottom:1px solid #ececec;
+padding:5px;
+}
+
+section.tags #tags .tag ul li a {
+color:#586e75;
+}
+
+section.tags #tags .tag ul li:first-child {
+padding-top:0;
+}
+
+section.tags #tags .tag ul li:last-child {
+margin-bottom:0;
+border-bottom:none;
+padding-bottom:0;
+}
+
+section.tags #cloud {
+text-align:justify;
+line-height:2em;
+}
+
+section.tags #cloud .small {
+font-size:.6em;
+}
+
+section.tags .anchor {
+display:block;
+position:relative;
+top:-90px;
+visibility:hidden;
+}
+
+h2,section.tags #cloud .huge {
+font-size:1.8em;
+}
+
+h3,section.posts h1,.post .body h1 {
+font-size:1.6em;
+}
+
+h4,section.tags #cloud .large,.post .body h2 {
+font-size:1.4em;
+}
+
+ul.tag_box.inline {
+  padding-left: 0px;
+}
+
+span.force-mono-font.small {
+  font-size: 0.7em;
+}

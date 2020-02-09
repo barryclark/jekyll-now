@@ -1,0 +1,39 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        {{ site.title }}
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == HOME_PATH %} active{% endif %}" href="{{ HOME_PATH }}">Home</a>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if "navigation" == node.group %}
+              <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
+                href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+    <span class="sidebar-nav-item">
+      <span class="force-mono-font">&copy;</span> {{ site.time | date: '%Y' }} &middot;
+      <a href="{{ site.author.github }}">{{ site.author.name }}</a> &middot;
+      <a href="{{ BASE_PATH }}/about">About</a>
+    </span>
+    <span class="sidebar-nav-item">
+      <span class="force-mono-font">&#9825;</span> Themed by <a href="http://hyde.getpoole.com/">Hyde</a> &middot;
+      <a href="/credits">Credits</a>
+    </span>
+  </div>
+</div>

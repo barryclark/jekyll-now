@@ -1,0 +1,13 @@
+---
+theme :
+  name : hyde
+---
+{% include JB/setup %}
+{% include themes/hyde/default.html %}
+
+<!--mathjax should be included in if-else-->
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="{{ BASE_PATH }}/assets/katex/katex.min.css" />
+<link rel="stylesheet" href="{{ BASE_PATH }}/assets/katex/render.css" />
+<script src="{{ BASE_PATH }}/assets/katex/katex.min.js" type='text/javascript'></script>
+<script async src="{{ BASE_PATH }}/assets/katex/render.js"></script>
