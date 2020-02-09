@@ -15,7 +15,7 @@ I am not sure exactly what the hawks were doing but given that large birds are a
 whether this was either a territorial dispute, or perhaps something related to courtship. I'll keep an eye for a nest in this area in the next few
 months.
 
-I also like recording the bird sounds and this post is to give a brief introduction of how I do this.
+I also like recording the bird sounds and this post is to give a brief introduction of how I do this. There are many other articles describing how to do this such as at the [Macaulay Library](https://www.macaulaylibrary.org/how-to/audio-recording-gear/) but I will focus on some simple ways to get some ok recordinds.
 
 ## Recording devices
 
@@ -25,12 +25,12 @@ I use both my smart phone, for example to record those hawks, and a built-to-pur
 
 Recording with a smartphone works well. Here are some advantages
 
-* Usually one has their smartphone with them!
-* The user interface is probably going to be easier
+* Usually, I have my smartphone with with me! One 
+* The user interface is probably going to be easier than anything built for recording.
 * Its easy to add notes about the recording with the cellphone.
 
 I just use the built in microphone, but one can add external microphones.
-One does need a sound recording app.
+One does need a sound recording app. I use an Android phone and the app I use is called [RecForge II](https://play.google.com/store/apps/details?id=dje073.android.modernrecforge&hl=en_US) but there are many other recording apps that will work for you for Android phones and Apple ones.
 
 ### A build-to-purpose recording device
 
@@ -38,3 +38,53 @@ There are many out there ranging from less than $100 (such as mine) to $,000s.
 
 * The recording quality can be better
 * You can save your smartphone battery or use it for something else
+* If not using an external mic, it is easier to slip a windscreen over this than a cellphone.
+
+I have a [Zoom H1N](https://www.zoom-na.com/products/field-video-recording/field-recording/zoom-h1n-handy-recorder) which is a very basic recorder but I like it for a few reasons, especially its cost, but also its portability. It fits easily in a pocket - even with the windscreen on. ![windscreen](https://images-na.ssl-images-amazon.com/images/I/71Y3H2PRclL._AC_SL1500_.jpg)
+
+### In the field
+
+Using either recording device, record the bird of interest. Also create an ebird list so that you can add your recordings to it later. When I am recording, I usally like to say what I am recording at the beginning so that when I get home and process the files, it is easier to remember. I might say "Recording three red-tailed hawks."
+
+### When you get home
+
+The recordings you made may be quite good without doing anything else but usually there is some work to do.
+
+* Often there is background noise. Road noise, airplanes, etc are pervasive.
+* There might be part of the recording you want to cut out, such as when your birding partner asks what you are doing!
+
+So you need to edit the files. Luckily there are lots of ways to do this.
+
+I use [Audacity](https://www.audacityteam.org/) which is a free audio editor available on most operating systems (such as Windows, Apple, Linux). There are audio editors on smart phones, and one can do some editing on the recording device. But a computer is easier.
+
+First you will need to get the files. When I use my smartphone, I just email them to myself and then save the files onto my computer. If I use my zoom H1N, I plug it into a USB port and download the files that way.
+
+#### Working in audacity
+
+Load the file, at firs it will show up as a plot of time vs. amplitude (loudness). This is a good way to start as you can see where there was sounds recorded. The bigger bars are where there are louder noise. In this view, for example I cut out the part where I said "Recording three Red-Tailed Hawks." Sometimes there are exteraneous sounds at the beginning where I start and stop the recording. I cut those out too. ![amplitude](https://manual.audacityteam.org/m/images/4/46/selected_audio_for_tour_guide.png)
+
+Next change the view to spectogram. A spectrogram view plots time vs. frequency. Higher pitch sounds show at the top of the y axis, and lower at the botton, ![spectogram](https://manual.audacityteam.org/m/images/6/65/a_small_spectral_selection.png)
+
+#### Effects
+Now you will make use of the "effects" from the effects menu:
+
+* High Pass Filter
+* Low Pass Filter
+* Normalize
+
+###### Using the High Pass Filter
+
+###### Using the Low Pass Filter
+
+###### Using Normalize
+
+#### Save the file
+
+### Add to eBird
+
+## Thanks
+
+I hope this was useful to you!
+
+
+
