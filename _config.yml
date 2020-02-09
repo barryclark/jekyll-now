@@ -54,6 +54,8 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
+ASSET_PATH : /assets/themes/hyde
+
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
@@ -95,5 +97,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
-theme: jekyll-theme-hacker

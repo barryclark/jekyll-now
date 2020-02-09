@@ -34,7 +34,6 @@
       <ul class="tag_box inline">
         <li><i class="icon-folder-open glyphicon glyphicon-folder-open"></i></li>
         {% assign categories_list = page.categories %}
-        {% include JB/categories_list %}
       </ul>
     {% endunless %}
 
@@ -42,7 +41,6 @@
       <ul class="tag_box inline">
         <li><i class="icon-tags glyphicon glyphicon-tags"></i></li>
         {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
       </ul>
     {% endunless %}
 
@@ -54,7 +52,6 @@
       {% else %}
         <li class="prev disabled"><a>&larr; Previous</a></li>
       {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
       {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
       {% else %}
@@ -62,7 +59,6 @@
       {% endif %}
     </ul>
     <hr>
-    {% include JB/comments %}
   </div>
 </div>
 {% endif %}
