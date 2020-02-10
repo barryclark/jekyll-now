@@ -2,7 +2,7 @@
 layout: post
 title: "An intro to payments: Value, liabilities and networks - Part 2"
 excerpt_separator: <!--more-->
-tags: [payments, networks, banking, cryptocurrencies]
+tags: [payments, networks, banking, direct debit, card payments]
 ---
 
 ## Going international 
@@ -10,12 +10,12 @@ tags: [payments, networks, banking, cryptocurrencies]
 ![On the rails](../images/payments/jk-gJhev0YgUcE-unsplash.jpg)
 > Photo by JK on Unsplash
 
- In the [previous installment][1] of this series, I talked about the history behind payment systems and described how 
- domestic payments work.  
+In the [previous installment][1] of this series, I talked about the history behind payment systems and described how 
+domestic payments work.  
 
- In this post I will cover 
- * cross-border "traditional" payments
- * pull payments (a.k.a. direct debit)
+In this post I will cover 
+ * cross-border payments
+ * pull payments 
  * and discuss some of their pros and cons 
     
 <!--more-->
@@ -23,7 +23,7 @@ tags: [payments, networks, banking, cryptocurrencies]
 Take a look around you.  
 Try to count how many items **only** originate from your country alone. Chances are you have not managed to count many.
  
-With international trade so prevalent, money crossing borders is crucial to keep our world connected
+With international trade so prevalent, money crossing borders is crucial to keep our world connected.
 But how does water turn into oil? <sup>[1](#footnote_1)</sup>
 
 ### International payments - Nostro/vostro
@@ -32,8 +32,8 @@ The oldest form of cross-border payment mechanism is via [correspondent banking]
 
 ![International payment - Nostro_vostro](../images/payments/international-payment-nv.png)
 
-In this model (line 4) PurpleBank (on the right) has a correspondency relationship with RedBank (on the left). 
-What this means is that RedBank holds a bank account under its name in PurpleBank.
+In this model (line 4) PurpleBank (on the right) has a correspondency relationship with RedBank (on the left). What this 
+means is that RedBank holds a bank account under its name in PurpleBank.
 
 When PurpleBank customer D wants to send money to RedBank customer E, what she does is deposit the equivalent amount to 
 RedBank's own account inside PurpleBank. This deposit has a reference that the amount is intended for E.
@@ -45,42 +45,37 @@ Notice that in the above scenario, there was no cross-border transfer of value o
 The remote account (owned by RedBank, held in PurpleBank) is part of RedBank's assets, even though it is in a far away 
 place. <sup>[3](#footnote_3)</sup>
 
-This setup is the money equivalent of a teleportation gate. It is the legal agreements, the way [balance sheets work][8] 
-and ledgers on both sides of the correspondency which make this possible.   
+This setup is the money equivalent of a teleportation gate; money appears on the other side almost magically. It is the 
+legal agreements, the way [balance sheets work][8] and ledgers on both sides of the correspondency which make this possible.   
 
-Correspondency banking used to be the **only** way cross-border payments happened back in the day, but now it almost 
+Correspondency banking used to be the **only** way cross-border payments happened back in the day, but now it is almost 
 obscure and little known. So much so that it was used as a window for [insiders to bypass][6] the [2015 Greek capital controls][6]
-with almost noone realising (all credits go to the [original source][5]).
+with almost no-one realising (all credits go to the [original source][5]).
 
 There are 2 issues with using nostro/vostro accounts at a large scale.  
 * They were much easier to setup and implement as a bilateral agreement when world currencies were on [fixed exchange rates][9]. 
-In the modern world, currencies fluctuate momentarily which makes it harder to track the value of transactions. 
+In the modern world, currencies fluctuate momentarily, which makes it harder to track the value of transactions. 
 * There is always [counter-party risk][10] from the side of the nostro holder (in the above example RedBank). <sup>[4](#footnote_4)</sup>  
 This was demonstrated in a great way in 1974 with the [Herstatt Bank][11] bankruptcy.
 
 ### International payments - FX markets & Central clearing
 
 Addressing the above 2 aspects we have  
-* Fluctuating currencies
-currencies traded in pairs 
-spot price determined in [FX markets][13]
-since these are primarily bilateral [OTC][14] trades 
-international money movements between 2 banks 
-involve the purchase of the equivalent amount of foreign currency from an FX market broker  
+* **Fluctuating currencies**  
+Currencies post gold-standard are traded in pairs, i.e. their price is determined against another one. Their "spot price" 
+is determined in [FX markets][13]. FX markets is a very broad term to describe effectively bilateral [OTC][14] trades,
+between big international banks and brokers. And by "OTC trade" we mean the purchase of the equivalent amount of foreign 
+currency X, paid in local currency Y.  
+* **Risk**  
+As with all other financial transactions, using a [clearing house][15] as a guarantor reduces counter-party risk.
 
-* Risk 
-as with all other financial transactions 
-using a [clearing house][15] as a guarantor 
-reduces counter-party risk
-
-Putting this back in our diagram we have line 4.
+Putting the above back in our diagram, we have line 3.
 
 ![International payment - Facilitator](../images/payments/international-payment-cb.png)
 
-The fundamental difference between line 3 (nostro/vostro) and 4 (central clearing and facilitation) is not so much that 
-it has some 3rd party facilitating the international movement of funds. 
-It is **when** the payment will be considered [settled][16] as opposed to netted off or held as a liability from the other bank
-(which is the case with nostro/vostro).
+The fundamental difference between line 4 (nostro/vostro) and 3 (central clearing and facilitation) is not so much that 
+it has some 3rd parties facilitating the international movement of funds. It is **when** the payment will be considered 
+[settled][16] as opposed to netted off or held as a liability from the other bank (which is the case with nostro/vostro).
 
 Let's take an extreme example of efficiency, EU's [TARGET2][17] settlement system.  
 In TARGET2 all transactions are cross-border but they have the benefit of a single currency. This makes the underlying 
@@ -91,12 +86,12 @@ flows being international means they are usually [unbalanced][21]. <sup>[5](#foo
 This results in the receiving country's central bank lending the sending country's from the excess of the money it has 
 just received. This permanent state of [cross-border imbalance][40], fuelled by trade, is the subject of much discussion.    
   
-The general case of cross-currency payments does not have the slick operation of TARGET2.  
-The mechanisms employed are more complex as there are 3 hurdles to overcome.
+In the general case, cross-currency payments do not have the slick operation of TARGET2. The mechanisms employed are 
+more complex as there are 3 hurdles to overcome.
 
 **Currency conversions**  
 As discussed previously, large global [market makers][22] buy big sums of foreign currency and then re-sell that "down 
-the food chain" to brokers and smaller banks for a fee. So, in the process of any cross-border payment there will be a 
+the food chain" to brokers and smaller banks for a fee. So, in the process of any cross-border payment, there will be a 
 transaction to convert currency by using the "FX markets". 
 
 **Counter-party risk**  
@@ -125,71 +120,80 @@ However, unlike in IP where routers just forward packets, in SWIFT
 
 It is worth pausing for a minute and discussing these options. 
 
-Nostro/vostro is the simplest form of cross-border financial plumbing 
-but it is also the single "lego block" used to build the complex infrastructure called SWIFT
-and its younger EU cousin [SEPA][33]
+Nostro/vostro is the oldest and simplest form of cross-border financial plumbing. It is also the single "lego block" 
+used to build the complex SWIFT infrastructure and its younger EU cousin [SEPA][33].
 
-Desite the apparent elegance of international payments, there are a number of issues affecting them 
-to varying degrees
+Despite the apparent elegance of SWIFT, SEPA and TARGET2 payment networks, there are a number of issues affecting them 
+to a varying degree.
 
 ### Reliability 
 
-The farther away in "financial proximity" the more unreliable the payment execution is
-Timings vary wildly
-https://fexco.com/fexco/news/how-long-international-bank-transfers-take/
+The farther away in "financial proximity" the more unreliable the payment execution is. Timings of a cross-border payment
+(i.e. when funds will actually land on the recipient account) can [vary wildly][41]. 
 
-This is down to 2 reasons
+This is down to 2 main reasons  
 
-****
-payments are primarily "push"
-the payer sends money to the payee
-the payer's responsibility to give the receiver account "coordinates" (i.e. bank account number) correctly
+**Disparate legislation**  
+Payments are effectively "push" actions: the payer sends money to the payee. It is the payer's responsibility to give 
+the receiving account "coordinates" (i.e. bank account number) correctly.  
+Jurisdictions and banks around the world treat international payments differently, due to [KYC][25], [AML][26] and 
+IT system design. They require different levels of detail (e.g. account owner name, address, etc) and may have have 
+various quirks in their system implementation (e.g. truncate long strings, punctuation marks,...).  
 
-banks around the world treat international payments differently 
-due to [KYC][25], [AML][26] and systems' design 
-requiring different levels of detail (e.g. account owner name, address, etc) 
-
-the more data points required as input the higher the possibility for mistakes in account numbers 
-surprisingly large number of manual processing and corrections
-
-This affects SWIFT musch more than SEPA, due to the latter 
-taking advantage of enforced common standards in the European zone
+The more data points required as input, the higher the possibility for mistakes in processing a payment instruction. 
+Especially so, considering how many different banks the instruction must "hop through" on its way. It should not come as 
+a surprise that banks around the world employ armies of people tasked solely with manually checking, correcting and 
+processing international payments.  
+This affects SWIFT musch more than SEPA, due to the latter taking advantage of enforced common standards in the Eurozone.
 
 **System processing**  
-[credit and debit messages][23] between banks are almost instant
-even [around the world][24]  
-but processing them is slow 
-settlements are at end of day
-the more hops further away the slower the settlements
-delays due to timezones and business day cut-off times
+SWIFT [credit and debit messages][23] between banks are almost instant, [around the world][24]. But actually processing 
+them is slow.   
+Most banking systems are batch processes, taking place at the end of the day. Their day!  
+The more correspondent banking hops the payment has to go through, the slower the eventual receiver [value date][42]. 
+Timezones, bank holidays and business day cut-off times are all working against you. 
 
 ### Trust 
 
+This should not be here, because it should be taken as a given. But surprisingly it is not.  
+International transfers are based on an "arm's length" relationship, with clearing houses used to reduce risk and 
+establish trust. It is the more integrated network, TARGET2, which suffers from a growing lack of trust. 
 
-Surprisingly 
-Target2 not trusted
-https://www.telegraph.co.uk/business/2019/06/04/german-bundesbank-comes-clean-euro-default-risks-italys-parallel/
-https://www.handelsblatt.com/today/finance/target2-when-is-a-trillion-euro-not-a-trillion-euro/23582376.html?ticket=ST-567213-S69wymscfit5pWXBKtad-ap4
+As mentioned previously, TARGET2 facilitates intra-EU payments by allowing EU member central banks to lend each other. 
+This means that the consequent surpluses and deficits are balance sheet records; Germany's assets are Italy's, Spain's 
+etc liabilities. This has resulted in a [trillion][43] euro domino tower; a unilateral exit from the Euro by the 
+[southern debitors][44] would be, well... interesting, to say the least!  
+The northern European banking system would be lucky to survive. This mounting risk is causing a lot of untold headaches. 
 
 ### Geopolitics
 
 The world is turning multi-polar.  
-Whether it is [China-US-EU][34] or some [other][35] [combination][36] is of little importance. 
-
-What is important to note is the disproportionate dominance of a single country and its currency (US dollar) in the 
-global financial system.  
+Whether it is [China-US-EU][34] or some [other][35] [combination][36] is of little importance. What is important to 
+note is the disproportionate dominance of a single country and its currency (US dollar) in the global payments system.  
 Just a cursory glance at the actual [topology][37] of the [SWIFT network][38] is enough to prove that it is global in name only. 
 95% of the network coverage goes through US financial institutions. 
-This makes it laughably easy for the US to [weaponize][39] its currency and for the world to comply. 
-
-This is a strategic threat which cannot be overstated.
+This makes it laughably easy for the US to [weaponize][39] its infrastructure and for the world to immediately comply. <sup>[6](#footnote_6)</sup>
+This is a strategic threat which countries around the world are waking up to.
 
 ## Pull payments
 
 ![Pull it out](../images/payments/gray-industrial-machine-during-golden-hour-162568.jpg)
 > Photo by Pixabay on Pexels
 
+So far we spoke about push payments 
+where the payer sends the payee money (e.g. bec ause there is an outstanding invoice to pay)
+
+there are 2 scenarios where this model is not sufficient  
+* recurring payments, e.g. for subscriptions or repayments 
+you don't want to be chasing people to pay
+* [point of sale][46] purchases
+when you are in the supermarket and not carrying cash, you cannot drop your shopping and go to the bank to transfer the 
+amount  
+
 ### Direct Debit
+
+![Direct debit payments](../images/payments/payments-dd.png)
+
  
 ### Cards 
 
@@ -253,6 +257,9 @@ So, all is zero in the end.
 4. <a name="footnote_4"></a>If PurpleBank proves to be dodgy and its deposits evaporate, then RedBank's asset (their 
 account in PurpleBank) is worth nil and has to be written off.  
 5. <a name="footnote_5"></a>For example, the Spanish buying more German cars than the Germans [jamon iberico][20]. 
+6. <a name="footnote_6"></a>Being placed under sanctions goes beyond financial transactions. Any part of the [US 
+infrastructure][45] from SWIFT message processing to mail servers etc is blocked for entities considered adversaries. 
+And this can increasingly be anyone.
 
 
 
@@ -296,3 +303,9 @@ account in PurpleBank) is worth nil and has to be written off.
   [38]: https://www.swiftinstitute.org/wp-content/uploads/2014/09/SWIFT-Institute-Working-Paper-No.-2012-006-Network-Analysis-of-Global-Payment-Flows_v5-FINAL.pdf
   [39]: https://www.ft.com/content/8f16f8aa-e104-11e8-8e70-5e22a430c1ad
   [40]: https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2076.en.pdf
+  [41]: https://fexco.com/fexco/news/how-long-international-bank-transfers-take/
+  [42]: https://en.wikipedia.org/wiki/Value_date
+  [43]: https://www.handelsblatt.com/today/finance/target2-when-is-a-trillion-euro-not-a-trillion-euro/23582376.html?ticket=ST-567213-S69wymscfit5pWXBKtad-ap4
+  [44]: https://www.telegraph.co.uk/business/2019/06/04/german-bundesbank-comes-clean-euro-default-risks-italys-parallel/
+  [45]: https://www.congress.gov/bill/116th-congress/senate-bill/482/text
+  [46]: https://en.wikipedia.org/wiki/Point_of_sale
