@@ -1,15 +1,7 @@
 ---
 ---
 
-class Stroke
-  centerX: 0
-  centerY: 0
-  radius1: 0
-  radius1: 0
-  ratio: 0
-  color: ""
-  constructor: (@centerX, @centerY, @radius1, @radius2, @ratio, @color) ->
-
+{% include js/stroke.coffee %}
 
 queue = [];
 canvas = document.getElementById 'myCanvas'
@@ -19,22 +11,6 @@ handle1 = $ "#handle1"
 handle2 = $ "#handle2"
 handle3 = $ "#handle3"
 hex = "";
-
-spiro = (context, cx, cy, inR, r, ratio, color = "000000", cycles = 2) ->
-  context.beginPath();
-  context.moveTo cx + inR + r, cy;
-
-  # Draw segments from theta = 0 to theta = 2PI
-  total = Math.PI * cycles
-  for th in [total..0] by -0.01
-    x = cx + inR * Math.cos(th) + r * Math.cos(th * ratio);
-    y = cy + inR * Math.sin(th) + r * Math.sin(th * ratio);
-    context.lineTo(x, y);
-
-  # Apply stroke
-  context.strokeStyle = "#" + color;
-  context.stroke();
-  0
 
 draw = (stamp, color) ->
   #// Get drawing context
@@ -48,9 +24,10 @@ draw = (stamp, color) ->
   cy = canvas.height / 2;
 
   # Draw spirograph
-  spiro context, cx, cy, r1, r2, ratio, color
+  s1 = new Stroke cx, cy, r1, r2, ratio, hex
+  s1.draw context, color
   if stamp
-    queue.push new Stroke cx, cy, r1, r2, ratio, hex
+    queue.push s1
     imgData = context.getImageData 0,0, canvas.width, canvas.height
   0
 
@@ -64,9 +41,10 @@ undo = ->
   context.clearRect 0, 0, canvas.width, canvas.height
   queue.pop()
   for s in queue
-    spiro context, s.centerX, s.centerY, s.radius1, s.radius2, s.ratio, s.color
+    s.draw context
   imgData = context.getImageData 0,0, canvas.width, canvas.height
   0
+  
 hexFromRGB = (r, g, b) ->
   hex = [
     r.toString 16
