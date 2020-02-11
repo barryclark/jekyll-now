@@ -18,7 +18,7 @@ Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](h
 
 ## Kubernetes Community Days London
 
-Join us for the first ever Kubernetes Community Days London on 3-4 September 2020 at the Emmanuel Centre, Westminster. If you’d like to attend, speak, sponsor or volunteer, register your interest at [kubernetesdays.london](kubernetesdays.london). For more info, check out [these slides](https://docs.google.com/presentation/d/1g5CDcDho-omR4Vu9NH1p2KPVPdN5KhPVivlPMbDsHso/edit#slide=id.p).
+Join us for the first ever [Kubernetes Community Days London on 3-4 September 2020](https://docs.google.com/presentation/d/1g5CDcDho-omR4Vu9NH1p2KPVPdN5KhPVivlPMbDsHso/edit#slide=id.p)! [Register your interest now](http://kubernetesdays.london) to attend, speak, sponsor or volunteer.
 
 ![Byron Allen](https://pbs.twimg.com/media/EQCNYKnX4AAhqOT?format=jpg)
 
