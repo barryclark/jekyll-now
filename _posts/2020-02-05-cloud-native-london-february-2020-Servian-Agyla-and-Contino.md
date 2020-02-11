@@ -12,9 +12,13 @@ tags:
   - "2020"
 ---
 
-For our February 2020 meetup, Cloud Native London kicked off the evening with three fantastic speakers: Byron Allen from Servian, Ines Cheikhrouhou from Agyla, and Jai Campbell from Contino. Catch up on their takeaways below.
+For our February 2020 meetup, Cloud Native London unveiled the details of the Kubernetes Community Days London 2020, then hosted three fantastic speakers: Byron Allen from Servian, Ines Cheikhrouhou from Agyla, and Jai Campbell from Contino. Catch up on their takeaways below.
 
 Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com) and [Palo Alto Networks](https://www.paloaltonetworks.com/).
+
+## Kubernetes Community Days London
+
+Join us for the first ever Kubernetes Community Days London on 3-4 September 2020 at the Emmanuel Centre, Westminster. If you’d like to attend, speak, sponsor or volunteer, register your interest at [kubernetesdays.london](kubernetesdays.london). For more info, check out [these slides](https://docs.google.com/presentation/d/1g5CDcDho-omR4Vu9NH1p2KPVPdN5KhPVivlPMbDsHso/edit#slide=id.p).
 
 ![Byron Allen](https://pbs.twimg.com/media/EQCNYKnX4AAhqOT?format=jpg)
 
@@ -39,10 +43,6 @@ Finally,  Jai Campbell from Contino rounded off our evening with My Journey into
 * A description of the SRE core principles moving onto new skills that needed to be acquired to make the transition from a sysadmin to a site reliability engineer.
 * The challenges and successes that came with making the choice to move 100% into Cloud and SRE and how the tools of the CNCF ecosystem became my best friends.
 * Advice and information on where to start your own personal journey into SRE with links to subject matter books,  an SRE curated Github repository and an open invitation to join a London based SRE community.
-
-## Kubernetes Community Days London
-
-Join us for the first ever Kubernetes Community Days London on 3-4 September 2020 at the Emmanuel Centre, Westminster. If you’d like to attend, speak, sponsor or volunteer, register your interest at [kubernetesdays.london](kubernetesdays.london). For more info, check out [these slides](https://docs.google.com/presentation/d/1g5CDcDho-omR4Vu9NH1p2KPVPdN5KhPVivlPMbDsHso/edit#slide=id.p).
 
 ## Cloud Native London March
 
