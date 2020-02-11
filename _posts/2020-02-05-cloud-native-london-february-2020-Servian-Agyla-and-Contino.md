@@ -40,6 +40,10 @@ Finally,  Jai Campbell from Contino rounded off our evening with My Journey into
 * The challenges and successes that came with making the choice to move 100% into Cloud and SRE and how the tools of the CNCF ecosystem became my best friends.
 * Advice and information on where to start your own personal journey into SRE with links to subject matter books,  an SRE curated Github repository and an open invitation to join a London based SRE community.
 
+## Kubernetes Community Days London
+
+Join us for the first ever Kubernetes Community Days London on 3-4 September 2020 at the Emmanuel Centre, Westminster. If you’d like to attend, speak, sponsor or volunteer, register your interest at [kubernetesdays.london](kubernetesdays.london). For more info, check out [these slides](https://docs.google.com/presentation/d/1g5CDcDho-omR4Vu9NH1p2KPVPdN5KhPVivlPMbDsHso/edit#slide=id.p).
+
 ## Cloud Native London March
 
 Join us at the next meetup on Wednesday 4th March, when we'll be joined by speakers from  World Wide Technology, Accenture, and VMWare. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/264726873/)
