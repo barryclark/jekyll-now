@@ -4,7 +4,7 @@ title: "Cloud Native London February 2020: Servian, Agyla, and Contino"
 description: "Check out the roundup of talks from Servian, Agyla, and Contino at the Cloud Native London meetup in February, hosted by Cheryl Hung, Director of Ecosystem at the Cloud Native Computing Foundation."
 location: London, UK
 image: https://pbs.twimg.com/media/EQChsAzWkAI7R3F?format=jpg
-video: https://www.youtube.com/watch?v=gxd8h9ddnxQ
+video: https://www.youtube.com/embed/gxd8h9ddnxQ
 tags:
   - Photos
   - Video
