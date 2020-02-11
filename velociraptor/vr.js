@@ -10,11 +10,11 @@ String.prototype.format = String.prototype.f = function() {
 
 $(function() {
 
-  var rw = $('.raptor').width();
-  console.log("rw: {0}".format(rw));
   var solve1 = function() {
     $('.human').css('left', "0px");
     $('.results').text("");
+    var rw = $('.raptor').width();
+    console.log("rw " + rw);
     var xh = 0; //location of human
     var vh = 0; //starting velocity of human
     var vv = 0; //starting velocity of velociraptor
@@ -22,12 +22,10 @@ $(function() {
     var dt = 0.1 //time step 100 ms which is the timerinterval
 
     var xv = 0 - parseInt( $('.xv').val() );
-    var av = parseInt( $('.av').val() ); //acceleration of velociraptor 
-    var ah = parseInt( $('.ah').val() ); //accel of human 
+    var av = parseInt( $('.av').val() ); //acceleration of velociraptor
+    var ah = parseInt( $('.ah').val() ); //accel of human
     var vhmax = parseInt( $('.vhmax').val() ); //max velocity of human
     var vvmax = parseInt( $('.vvmax').val() ); //maximum velocity of the velociraptor
-
-    console.log("xv: {0}".format(xv));
 
     var loop = function() {
 
@@ -65,10 +63,10 @@ $(function() {
       $('.results').append( "{0}: Raptor: distance {1}m, speed: {2} m/s  Human speed: {3}\n".format(t.toFixed(2), (xh - xv).toFixed(2), vv.toFixed(2), vh.toFixed(2))  );
       $('.time-result').val( "{0}s".format(t.toFixed(3)) );
 
-      $('.human').css('left', '{0}px'.format( ((xh * 10) + 500).toFixed(0)));
+      $('.human').css ('left', '{0}px'.format( ((xh * 10) + 480 ).toFixed(0)));
       $('.raptor').css('left', '{0}px'.format(((xv * 10) + 500 - rw).toFixed(0)));
 
-      if (xv <= xh) {
+      if (xv < xh) {
         setTimeout( loop, 100);
       } else {
         $('#start-button').show();
