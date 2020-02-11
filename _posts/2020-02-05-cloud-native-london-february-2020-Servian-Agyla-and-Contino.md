@@ -12,13 +12,13 @@ tags:
   - "2020"
 ---
 
-For our February 2020 meetup, Cloud Native London unveiled the details of the Kubernetes Community Days London 2020, then hosted three fantastic speakers: Byron Allen from Servian, Ines Cheikhrouhou from Agyla, and Jai Campbell from Contino. Catch up on their takeaways below.
+For our February 2020 meetup, Cloud Native London unveiled the details of the [Kubernetes Community Days London 2020](https://docs.google.com/presentation/d/1g5CDcDho-omR4Vu9NH1p2KPVPdN5KhPVivlPMbDsHso/edit#slide=id.p), then hosted three fantastic speakers: Byron Allen from Servian, Ines Cheikhrouhou from Agyla, and Jai Campbell from Contino. Catch up on their takeaways below.
 
 Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com) and [Palo Alto Networks](https://www.paloaltonetworks.com/).
 
 ## Kubernetes Community Days London
 
-Join us for the first ever [Kubernetes Community Days London on 3-4 September 2020](https://docs.google.com/presentation/d/1g5CDcDho-omR4Vu9NH1p2KPVPdN5KhPVivlPMbDsHso/edit#slide=id.p)! [Register your interest now](http://kubernetesdays.london) to attend, speak, sponsor or volunteer.
+Join us for the first ever Kubernetes Community Days London on 3-4 September 2020! [Register your interest now](http://kubernetesdays.london) to attend, speak, sponsor or volunteer.
 
 ![Byron Allen](https://pbs.twimg.com/media/EQCNYKnX4AAhqOT?format=jpg)
 
