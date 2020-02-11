@@ -1,0 +1,26 @@
+.raptor {
+    position: absolute;
+    left: 50px;
+    top: 70px;
+}
+
+.human {
+    position: absolute;
+    left: 500px;
+    top: 60px;
+}
+
+.field {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.form-control {
+    text-align: right;
+}
+
+
+.results textarea {
+    width: 400px;
+    height: 400px;
+}

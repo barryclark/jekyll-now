@@ -1,0 +1,84 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="vr.css" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <ttile>Velociraptor</ttile>
+</head>
+<body>
+    <div>
+        <img src="/images/field.png">
+        <div class="human-div">
+            <img src="/images/human.png" class="human">
+        </div>
+        <div class="raptor-div">
+            <img src="/images/raptor.png" class="raptor">
+        </div>
+        </div>
+        </img>
+    </div>
+    <div class="graph">
+    </div>
+    <hr/>
+    <div class="row">
+        <form class="form-horizontal col-md-4">
+         <div class="form-group">
+            <label for="xv" class="col-sm-6 control-label">Raptor initial distance: </label>
+            <div class="col-sm-3 input-group">
+                <input type="text" class="xv form-control" value="40">
+                <div class="input-group-addon">m</div>
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="av" class="col-sm-6 control-label">Raptor acceleration: </label>
+            <div class="col-sm-3 input-group">
+                <input type="text" class="av form-control" value="4">
+                <div class="input-group-addon">m/s<sup>2</sup></div>
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="ah" class="col-sm-6 control-label">Human acceleration: </label>
+            <div class="col-sm-3 input-group">
+                <input type="text" class="ah form-control" value="3">
+                <div class="input-group-addon">m/s<sup>2</sup></div>
+            </div>
+         </div>
+         <div class="form-group">
+             <label for="vvmax" class="col-sm-6 control-label">Max raptor velocity: </label>
+             <div class="col-sm-3 input-group">
+                <input type="text" class="vvmax form-control" value="25">
+                <div class="input-group-addon">m/s</div>
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="vhmax" class="col-sm-6 control-label">Max human velocity: </label>
+            <div class="col-sm-3 input-group">
+                <input type="text" class="vhmax form-control" value="6">
+                <div class="input-group-addon">m/s</div>
+            </div>
+        </div>
+         <div class="form-group">
+            <label for="start" class="col-sm-6 control-label"></label>
+            <div class="col-sm-3 input-group">
+                <input type="button" text="start" value="start" id="start-button" >
+            </div>
+        </div>
+         <div class="form-group">
+            <label for="vhmax" class="col-sm-6 control-label">Time: </label>
+            <div class="col-sm-3 input-group">
+                <input type="text" class="vhmax form-control time-result" value="0" disabled>
+                <div class="input-group-addon">s</div>
+            </div>
+        </div>
+        </form>
+        <div class="col-md-6">
+            RESULTS:
+            <textarea class="results" rows="20" cols="100"></textarea>
+        </div>
+    </div>
+
+<hr>
+Developed by <a href="https://github.com/FrSanchez">Francisco Sanchez</a>
+    <script src="vr.js"></script>
+
+</body>
