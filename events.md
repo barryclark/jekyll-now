@@ -7,12 +7,11 @@ description: "Cheryl Hung's upcoming conferences and events."
 
 ### 2020
 
-February 24-26: [MWC](https://www.mwcbarcelona.com/), Barcelona
-
 February 27: [Cloud Native Prague](https://www.meetup.com/Cloud-Native-Prague/), Czech Republic
 * *Patterns and challenges of cloud native adoption*
 
 March 4-7: #21digital, Cologne, Germany
+* *Ecosystem lead*
 
 March 10 – 12: [The Linux Foundation Member Summit](https://events.linuxfoundation.org/lf-member-summit/), Lake Tahoe, California
 
