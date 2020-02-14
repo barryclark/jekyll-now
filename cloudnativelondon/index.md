@@ -26,7 +26,7 @@ description: "Request to speak at or sponsor Cloud Native London."
 
 {% include product.html title="Chat" subtitle="Join 200+ others on the Slack channel" image="product-images/chat-cloud-native-london.jpg" url="/cnl-slack" %}
 
-{% include product.html title="Catch up" subtitle="Find past talks and events" image="product-images/read-cloud-native-london.jpg" url="/archive/meetup" %}
+{% include product.html title="Catch up" subtitle="Watch videos from past events" image="product-images/read-cloud-native-london.jpg" url="/archive/meetup" %}
 
 {% include product.html title="Promote" subtitle="Share your events and offers" image="product-images/promote.png" url="/cloudnativelondon/promote" %}
 
