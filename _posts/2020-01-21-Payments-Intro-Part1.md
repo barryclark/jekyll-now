@@ -43,7 +43,7 @@ Hmm. Yet another term: currency. We [have][3]
 The above turns out to be a slightly cyclical definition.   
 However it becomes clear that the transfer of value in a payment is *facilitated* by a currency (a.k.a. money). 
 In other words, money "changing hands" is not a goal in itself. Rather it simply helps in the process of a transaction, 
-provided that both parties in the transaction recognize money as a trade/store of value.<sup>[1](#footnote_1)</sup>
+provided that both parties in the transaction recognize money as a trade/store of value. <sup>[1](#footnote_1)</sup>
 
 ### In the olden days...
 
@@ -52,7 +52,7 @@ provided that both parties in the transaction recognize money as a trade/store o
 
 Once upon a time, transactions and payments would take place only in person.  
 Starting in the pre-historic times with [barter][4], mankind quickly had to move to something more handy and attuned 
-to different types of transactions, some form of money.<sup>[2](#footnote_2)</sup> 
+to different types of transactions, some form of money. <sup>[2](#footnote_2)</sup> 
  
 This role was eventually filled in by precious metals: gold and silver. Precious metals [possess a lot][7] of very 
 [interesting properties][6] which make them a great fit as an economic medium. That is definitely true for gold and to a
@@ -72,7 +72,7 @@ One solution to that was [merchant][8] and [Templar Knight][9] promisory notes. 
 The logical next step of this innovation was [paper money][10], issued by a central authority.  
 Both promisory notes and paper money, introduced 2 new concepts:  
 * An alternative medium for the transfer of value in 3d space (in this case paper).  
-This acts in lieu of the "real thing".<sup>[3](#footnote_3)</sup>
+This acts in lieu of the "real thing". <sup>[3](#footnote_3)</sup>
 * A trusted third party facilitating the flow of value.  
 The trust component being that the third party (merchant, Knight Templar, emperor, central bank) will eventually make 
 good on the promise to deliver the gold, as "written" on the piece of paper.
@@ -108,7 +108,7 @@ medium of exchange).
 
 In the modern era, until 1971, the world currency system was underpinned by [precious metals][18].  
 From that point on, modern currencies (a.k.a fiat money) are only backed by the credibility of their issuing 
-authority (government and/or central bank).<sup>[4](#footnote_4)</sup>
+authority (government and/or central bank). <sup>[4](#footnote_4)</sup>
 
 In much simpler words modern currencies are a promise (or, if you prefer, a promise of a promise). It is someone else's 
 liability to make good on this promise, if the currency is to have any value.
@@ -118,6 +118,7 @@ So, to wrap this section up
 > Currency is not necessarily money.
 
 ## Back to payments
+<a name="mental_model"></a>
 
 ![Pipes](../images/payments/child-sipping-from-pipe-graffiti-2103127.jpg)
 > Photo by Shukhrat Umarov on Pexels
@@ -140,12 +141,12 @@ These are called [payment][20] or settlement systems.
 At their heart these are [double-entry ledgers][21], recording in which direction money moves and who owes what to whom.
 
 There are 2 differences of the global payments system from the mental model of "barrels of liquid".  
-* Currency (the liquid) does not physically "move" down the pipes from one account/bank to the other.<sup>[5](#footnote_5)</sup>
+* Currency (the liquid) does not physically "move" down the pipes from one account/bank to the other. <sup>[5](#footnote_5)</sup>
 What actually travel are messages of various [types][22], which result in the ledgers (the meters) recording new transactions 
 and updating balances. In other words, value in today's payments world is purely virtual and electronic. 
 * The different liquids (just like currencies) are, well... different and do not mix.   
 Yet when currency moves across borders, it is the equivalent of water turning into oil. This is a happy corollary of 
-modern-day "money" being electronic.<sup>[6](#footnote_6)</sup>  
+modern-day "money" being electronic. <sup>[6](#footnote_6)</sup>  
 In the olden days of gold-backed currencies, central banks would ultimately settle their balances by [gold shipments][27].
 
 Now that we mastered the simple mental model, let's jump right into a nice and complex diagram of the modern banking 
@@ -199,7 +200,7 @@ outside of the CM "boundary" that the sponsor bank will have to process the paym
 something in its ledger. 
 
 Keeping customer money within their own institutional boundary (a.k.a. "ecosystem") is a big driver for e-money providers.   
-This is one of the key reasons why it is a breeze to make payments to other customers of the same e-money provider.<sup>[7](#footnote_7)</sup>
+This is one of the key reasons why it is a breeze to make payments to other customers of the same e-money provider. <sup>[7](#footnote_7)</sup>
 CM users may get the impression that money moves around when paying other CM users. However, even if Bob and Alice make 
 thousands of payments to each other, from CarrotMoney's point-of-view it is still the same overall amount sitting in the 
 client account.  
@@ -227,7 +228,7 @@ in a bag to PB. The questions then are
 "spamming" money around (a.k.a. as the [double-spend problem][43])?
 
 The answer comes via one or more secure messaging networks (diagram lines numbered 1 and 2) facilitated and guaranteed 
-by the central bank (over-arching institution, in black).<sup>[8](#footnote_8)</sup>
+by the central bank (over-arching institution, in black). <sup>[8](#footnote_8)</sup>
 
 What (roughly) happens is along the following lines
 * GB and PB participate in a [payment system/scheme][32], by depositing an amount of money in their account held at the 
@@ -265,12 +266,12 @@ The different payment schemes have developed organically over time to cater for 
 Because of the fundamental requirement to have a capital buffer in the central bank, not all banks can or want to be 
 direct participants in a payment scheme (e.g. the few current [UK Faster Payments participants][42] out of the hundreds 
 of banks, building societies and e-money providers). Therefore any institution wanting to partake in a payment scheme, 
-needs to have a sponsor bank, which essentially provides the plumbing and guarantee for them.<sup>[9](#footnote_9)</sup>
+needs to have a sponsor bank, which essentially provides the plumbing and guarantee for them. <sup>[9](#footnote_9)</sup>
 
 Unlike intrabank payments, the only cost of which is running the bank's systems, the payment schemes usually have a cost per 
 payment to cover the expenses of running the scheme. In well-functioning banking eco-systems this cost, especially for 
 small-value transactions, is sometimes absorbed by the banks (e.g. Faster Payments in the UK).  
-Otherwise this is passed on to the customer, sometimes with sprinkle on top.<sup>[10](#footnote_10)</sup>
+Otherwise this is passed on to the customer, sometimes with sprinkle on top. <sup>[10](#footnote_10)</sup>
 
 
 ## In our next episode...
@@ -279,9 +280,8 @@ Otherwise this is passed on to the customer, sometimes with sprinkle on top.<sup
 > Photo by Nicholas Githiri from Pexels
 
 In the next installment, we will examine  
-* pull instead of push payments,
-* how international payments work, and
-* the role of the modern "payment rails", such as cards and remittance services 
+* pull instead of push payments, namely direct debit and card payments, and
+* how international payments work 
 
 ## Footnotes
 
