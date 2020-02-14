@@ -7,6 +7,7 @@ disqus:
 google-ID: 'UA-101991886-1'
 
 menu:
+- {name: 'KCD London', path: '', url: 'kubernetescommunitydays.org/events/2020-london/'}
 - {name: 'Cloud Native London', path: 'cloudnativelondon', url: ''}
 - {name: 'Events', path: 'events', url: ''}
 - {name: 'About', path: 'about', url: ''}
