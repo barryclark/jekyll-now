@@ -10,18 +10,18 @@ tags: [payments, networks, banking, direct debit, card payments]
 ![On the rails](../images/payments/jk-gJhev0YgUcE-unsplash.jpg)
 > Photo by JK on Unsplash
 
-In the [previous installment][1] of this series, I talked about the history behind payment systems and described how 
-domestic payments work.  
+*In the [previous installment][1] of this series, I talked about the history behind payment systems and described how 
+domestic payments work.*  
 
-In this post I will cover 
- * cross-border payments
- * pull payments 
- * and discuss some of their pros and cons 
+*In this post I will cover* 
+ * *cross-border payments*
+ * *pull payments, and* 
+ * *discuss some of their pros and cons.* 
     
 <!--more-->
 
 Take a look around you.  
-Try to count how many items **only** originate from your country alone. Chances are you have not managed to count many.
+Try to count how many items are **not** imported. Chances are you have not managed to count many.
  
 With international trade so prevalent, money crossing borders is crucial to keep our world connected.
 But how does water turn into oil? <sup>[1](#footnote_1)</sup>
@@ -49,8 +49,8 @@ This setup is the money equivalent of a teleportation gate; money appears on the
 legal agreements, the way [balance sheets work][8] and ledgers on both sides of the correspondency which make this possible.   
 
 Correspondency banking used to be the **only** way cross-border payments happened back in the day, but now it is almost 
-obscure and little known. So much so that it was used as a window for [insiders to bypass][6] the [2015 Greek capital controls][6]
-with almost no-one realising (all credits go to the [original source][5]).
+obscure and little known, "buried" under additional layers of payments systems. So much so that it was used as a window 
+for [insiders to bypass][6] the [2015 Greek capital controls][6] with almost no-one realising (all credits go to the [original source][5]).
 
 There are 2 issues with using nostro/vostro accounts at a large scale.  
 * They were much easier to setup and implement as a bilateral agreement when world currencies were on [fixed exchange rates][9]. 
@@ -62,7 +62,7 @@ This was demonstrated in a great way in 1974 with the [Herstatt Bank][11] bankru
 
 Addressing the above 2 aspects we have  
 * **Fluctuating currencies**  
-Currencies post gold-standard are traded in pairs, i.e. their price is determined against another one. Their "spot price" 
+Currencies post gold-standard are traded in pairs, i.e. their price is determined against each other. Their "spot price" 
 is determined in [FX markets][13]. FX markets is a very broad term to describe effectively bilateral [OTC][14] trades,
 between big international banks and brokers. And by "OTC trade" we mean the purchase of the equivalent amount of foreign 
 currency X, paid in local currency Y.  
@@ -84,7 +84,7 @@ which holds the virtual central pool of money and EU central banks play the role
 The core aim is to replenish the outstanding balances by [the end of the day][19] and keep the system whole. However, the 
 flows being international means they are usually [unbalanced][21]. <sup>[5](#footnote_5)</sup>   
 This results in the receiving country's central bank lending the sending country's from the excess of the money it has 
-just received. This permanent state of [cross-border imbalance][40], fuelled by trade, is the subject of much discussion.    
+just received <sup>[13](#footnote_13)</sup>. This permanent state of [cross-border imbalance][40], fuelled by trade, is the subject of much discussion.    
   
 In the general case, cross-currency payments do not have the slick operation of TARGET2. The mechanisms employed are 
 more complex as there are 3 hurdles to overcome.
@@ -137,31 +137,33 @@ This is down to 2 main reasons
 Payments are effectively "push" actions: the payer sends money to the payee. It is the payer's responsibility to give 
 the receiving account "coordinates" (i.e. bank account number) correctly.  
 Jurisdictions and banks around the world treat international payments differently, due to [KYC][25], [AML][26] and 
-IT system design. They require different levels of detail (e.g. account owner name, address, etc) and may have have 
+IT system design. They require different levels of detail (e.g. account owner name, address, etc) and may have 
 various quirks in their system implementation (e.g. truncate long strings, punctuation marks,...).  
 
 The more data points required as input, the higher the possibility for mistakes in processing a payment instruction. 
-Especially so, considering how many different banks the instruction must "hop through" on its way. It should not come as 
+Especially considering how many different banks the instruction must "hop through" on its way. It should not come as 
 a surprise that banks around the world employ armies of people tasked solely with manually checking, correcting and 
 processing international payments.  
-This affects SWIFT musch more than SEPA, due to the latter taking advantage of enforced common standards in the Eurozone.
+This affects SWIFT much more than SEPA, due to the latter taking advantage of enforced common standards across the 
+Eurozone.
 
 **System processing**  
 SWIFT [credit and debit messages][23] between banks are almost instant, [around the world][24]. But actually processing 
 them is slow.   
 Most banking systems are batch processes, taking place at the end of the day. Their day!  
 The more correspondent banking hops the payment has to go through, the slower the eventual receiver [value date][42]. 
-Timezones, bank holidays and business day cut-off times are all working against you. 
+Timezones, bank holidays and business day cut-off times are all working against the payee getting her money. 
 
 ### Trust 
 
-This should not be seen as an issue, because it should be taken as a given. But surprisingly it is not.  
+This should not be seen as an issue, because it should be taken as a given. But surprisingly it is (an issue) because it
+is not (taken as a given).  
 International transfers are based on an "arm's length" relationship, with clearing houses used to reduce risk and 
 establish trust. It is the more integrated network, TARGET2, which suffers from a growing lack of trust. 
 
-As mentioned previously, TARGET2 facilitates intra-EU payments by allowing EU member central banks to lend each other. 
-This means that the consequent surpluses and deficits are balance sheet records; Germany's assets are Italy's, Spain's 
-etc liabilities. This has resulted in a [trillion][43] euro domino tower; a unilateral exit from the Euro by the 
+As mentioned previously, TARGET2 facilitates intra-EU payments by allowing EU member central banks to effectively lend 
+each other. This means that the consequent surpluses and deficits are balance sheet records; Germany's assets are Italy's, Spain's 
+etc liabilities. This has resulted in a [trillion][43] euro domino tower; a unilateral exit from the Euro by any of the 
 [southern debitors][44] would be, well... interesting, to say the least!  
 The northern European banking system would be lucky to survive. 
 
@@ -172,9 +174,9 @@ This mounting risk is causing a lot of untold headaches and might one day cause 
 The world is turning multi-polar. 
 
 Whether it is [China-US-EU][34] or some [other][35] [combination][36] is of little importance. What is important to 
-note is the disproportionate dominance of a single country and its currency (US dollar) in the global payments system.  
-Just a cursory glance at the actual [topology][37] of the [SWIFT network][38] is enough to prove that it is global in name only. 
-95% of the network coverage goes through US financial institutions.  
+note is the disproportionate dominance of a single currency (US dollar) in the global payments system.  
+Just a cursory glance at the actual [topology][37] of the [SWIFT network][38] is enough to prove that SWIFT is global in name only. 
+95% of the network's routing goes through US financial institutions.  
 This makes it laughably easy for the US to [weaponize][39] its infrastructure and for the world to immediately comply. <sup>[6](#footnote_6)</sup>
 An EU attempt to keep the Iran nuclear deal [alive][54] (and override US sanctions), resulted in something more [like a barter 
 system][53] than a payments network.
@@ -186,15 +188,13 @@ US dominance is a strategic threat which countries and corporations around the w
 ![Pull it out](../images/payments/gray-industrial-machine-during-golden-hour-162568.jpg)
 > Photo by Pixabay on Pexels
 
-So far we spoke about push payments 
-where the payer sends the payee money (e.g. bec ause there is an outstanding invoice to pay)
+So far we spoke about push payments, where the payer sends the payee money (e.g. because there is an outstanding invoice to pay).
 
-there are 2 scenarios where this model is not sufficient  
-* recurring payments, e.g. for subscriptions or repayments 
-you don't want to be chasing people to pay
-* [point of sale][46] purchases
-when you are in the supermarket and not carrying cash, you cannot drop your shopping and go to the bank to transfer the 
-amount  
+There are 2 scenarios where this model is not sufficient  
+* Recurring payments, e.g. for subscriptions or repayments. You just want to get paid based on a contract, rather than 
+chasing people to send you the payment.
+* [Point of sale][46] purchases. When you are in the supermarket and not carrying cash, you cannot drop your shopping 
+and go to the bank to transfer the amount to the shop-keeper.  
 
 ### Direct Debit
 
@@ -203,7 +203,7 @@ According to the [Wikipedia definition][47] definition a direct debit is
 > the payer must have advised the bank that he or she has authorized the payee to directly draw the funds
 
 Direct debit (or with any other name it is known around the world) is an *automated variable recurring payment* 
-mechanism and network. It is already been around for [60 years][48].  
+mechanism and network. It has been around for [60 years][48] already.  
 It needs 2 basic things to operate:  
 * the account numbers of both parties (payer and payee), and
 * the payer's authorisation (a.k.a. [mandate][49])   
@@ -216,10 +216,12 @@ Let's say that customer C with an account in PurpleBank (left) started going to 
 GreenBank). A wants to start charging C an amount monthly.  
 For this reason, A asks C to setup a mandate with C's PurpleBank. <sup>[7](#footnote_7)</sup> Once this is setup, on the 
 pre-agreed intervals (e.g. every 15th of the month), C's direct debit processor submits a debit instruction to the 
-scheme.  
-This is grouped together in batch files and submitted to the central scheme (e.g. Bacs in the UK) for processing, along 
+scheme. 
+
+This is grouped together in batch files and submitted to the central scheme (e.g. [Bacs][73] in the UK) for processing, along 
 with all other payments. As already discussed in [part 1][1], the payment scheme has a central pool of money from all 
-participating banks.  
+participating banks. 
+
 Unlike push payments, in this case C's account will be credited immediately by using money from the central pot. 
 Meanwhile the scheme will claim (debit) the money from A's account to make up for the difference. In case something went
 wrong with A's debit (e.g. not enough funds, mandate no longer valid), the scheme will take the money back from C.  
@@ -228,14 +230,15 @@ This latent, eventual settlement is a basic difference between direct debits and
 In order to improve the experience for the payee (receive owed money as soon as possible, to assist with cashflow), most 
 direct debit schemes inverse the order of actions. <sup>[8](#footnote_8)</sup> In the rare case where there is a late 
 failure (e.g. account closed, owner deceased, mandate incorrect,...), money will appear and consequently disappear from 
-the payee's account.  
+the payee's account (because the collection failed and the payout needs to be reversed). 
+
 It is interesting to note here that to set up a mandate all one needs is a correct owner name and account number. This 
 can lead to some interesting [cases of id theft][50] with legacy, paper- or telephony-based processors. A new wave of 
-online direct debit processors add [automated identity checks][51] in the process to tackle this ingrained feature. <sup>[9](#footnote_9)</sup>  
+online direct debit processors add [automated identity checks][51] in the process to tackle this ingrained inefficiency. <sup>[9](#footnote_9)</sup>  
  
 ### Cards 
 
-The plastic card, [debit][64] or its older sister [credit][65] have been around since the '50s.
+The plastic card, [debit][64] or its older sister [credit][65], has been around since the '50s.
 
 It attempts to solve the following problem
 > How do you perform a financial transaction at point of sale without exchanging cash or bank account details?  
@@ -270,14 +273,14 @@ taking a bite off the cake.
 * Noone provides liquidity and the merchant has to wait.  
 In this case the PP submits the payment instructions for a direct transfer from C to M.  
 
-The underlying money transfer mechanisms (pipe 5) are the exact same ones described in the previous sections (domestic 
+The underlying money transfer mechanisms (pipe 5) are the exact same ones described so far (domestic 
 and international). There is no magic or alternative way of transferring value in the case of cards.  
-From that lens the card network is a huge "traffic controller" or middle-man. It uses the card number and merchant id 
-as virtual addresses to locate the bank accounts of both and "get them in touch". 
+From that lens the card network is a huge "traffic controller", a trusted middle-man. It uses the card number and merchant 
+identifier as virtual addresses to locate the bank accounts of both and "get them in touch". 
 
 It is also interesting to note the presence of a Payment Processor, in addition to the card network.  
 This is because the card network is strictly [b2b][56]; maintaining a network of thousands of banks is enough work. The 
-Issuer bank handles the relationship with the card holders. The Payment Processors <sup>[11](#footnote_11)</sup> handle 
+Issuer bank handles the relationship with the card holder. The Payment Processors <sup>[11](#footnote_11)</sup> handle 
 the relationship with the Merchant.  
 
 The main benefit of card networks is their ubiquity.  
@@ -295,7 +298,7 @@ to [Worldpay][63]. Friction can be a huge loss of revenue, especially for online
 
 ### ...and mobile
 
-In the previous diagram you may have noticed a small mobile next to the customer.  
+In the previous diagram you may have noticed a small mobile device next to the customer.  
 We cannot talk about pull payments, without covering mobile wallets (e.g. [ApplePay][66], [GooglePay][67], 
 [Samsung Pay][68],...). 
 
@@ -305,19 +308,19 @@ The actual card details (number, name, expiry date,...) are initially turned int
 specification][69]. This happens by communicating them once to Apple <sup>[12](#footnote_12)</sup>, getting the token back
 and storing on the mobile phones' secure wallet.  
 Whenever the phone is near a POS reader, the wallet is unlocked using the PIN/thumb/etc. The tokenized card is used to 
-sign the transaction (amount, merchant,...) and, via the reader, is sent for verification.  
-It is routed to Apple's servers where the token is verified to represent a card. After that it is processed like a 
-normal card payment. 
+sign the transaction (amount, merchant,...) which, via the reader, is sent for verification.  
+It is routed to Apple's servers where the token is verified to indeed represent a card. After that the request is 
+processed like a normal card payment. 
 
 In this context Apple is taking partly the role of the payment processor, facilitating the transaction routing. For this
-it is taking a percentage of the payment (0.15% in the US for Apple).  
+it is taking a percentage off the payment (0.15% in the US for Apple).  
 With mobile phone usage and wireless micro-payments [exploding worldwide][70], this is a very lucrative revenue stream, 
-increasing the [CLV][71] by orders of magnitude.
+increasing the [CLV][71] of mobile phone owners by orders of magnitude.
 
-As mentioned previously, complexity comes at a price.  
-With Apple / Google / etc becoming a trusted intermediary, mobile payments are [more open to fraud][72] than plain card 
-usage at the moment. That is because the thumbprint or PIN at the point of sale, only proves device ownership, not card 
-ownership. 
+Again, complexity comes at a price.  
+With Apple / Google / etc becoming a trusted intermediary in the payment chain, mobile payments are [more open to fraud][72] 
+than plain card usage, at least for now. That is because the thumbprint or PIN at the point of sale, only proves device 
+ownership, not card ownership. Any stolen card can be added to the device and consequently used.
 
 ## Stay tuned... 
 
@@ -329,11 +332,9 @@ In the next and final installment, we will go over
 * the emerging role of crypto-currencies into the "payments mix", and
 * wrap up with some parting thoughts.
 
-Until then, don't forget to spend! :-)
-
 ## Footnotes
 
-1. <a name="footnote_1></a>To use an analogy from [part 1][1].
+1. <a name="footnote_1"></a>To use an analogy from [part 1][1].
 2. <a name="footnote_2"></a>In the olden days, banks would send a telegraphic message and later Telex.  
 In the modern day, for all that we know, RedBank may be employing a person to just press [Ctr+F5][7] 
 all day, to see new credits in their nostro account. 
@@ -352,12 +353,13 @@ in PurpleBank every X days and deposit it in her account in GreenBank".
 In direct debit, it is first credit (to the payee) and then debit (from the payer), or at the very least these 2 happening 
 almost in parallel. 
 9. <a name="footnote_9"></a>Full disclosure: I am an employee of GoCardless, an online direct debit provider, at the 
-time of writing this article. 
+time of writing this blog post. 
 10. <a name="footnote_10"></a>Debit and credit cards have no practical difference in this discussion.
 11. <a name="footnote_11"></a>This used to be exclusively the remit of the Acquiring banks. But as technology and terminals 
 started becoming more advanced, it becomes harder and harder for "generalists" (as the banks are) to compete. Hence the 
 rise of dedicated processors. 
 12. <a name="footnote_12"></a>When mentioning 'Apple' in this section, I refer to Apple, Google, Samsung,... 
+13. <a name="footnote_13"></a>Hard to make sense, I know! I had to re-read that myself... :-/
 
 
 
@@ -433,3 +435,4 @@ rise of dedicated processors.
   [70]: https://www.statista.com/topics/4322/apple-pay/
   [71]: https://en.wikipedia.org/wiki/Customer_lifetime_value
   [72]: https://www.forbes.com/sites/thomasbrewster/2019/03/27/millions-are-being-lost-to-apple-pay-fraudwill-apple-card-come-to-the-rescue/#134e0c10622f
+  [73]: https://en.wikipedia.org/wiki/BACS#Direct_Debit
