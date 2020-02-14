@@ -280,9 +280,8 @@ Otherwise this is passed on to the customer, sometimes with sprinkle on top. <su
 > Photo by Nicholas Githiri from Pexels
 
 In the next installment, we will examine  
-* pull instead of push payments,
-* how international payments work, and
-* the role of the modern "payment rails", such as cards and remittance services 
+* pull instead of push payments, namely direct debit and card payments, and
+* how international payments work 
 
 ## Footnotes
 

@@ -155,7 +155,7 @@ Timezones, bank holidays and business day cut-off times are all working against 
 
 ### Trust 
 
-This should not be here, because it should be taken as a given. But surprisingly it is not.  
+This should not be seen as an issue, because it should be taken as a given. But surprisingly it is not.  
 International transfers are based on an "arm's length" relationship, with clearing houses used to reduce risk and 
 establish trust. It is the more integrated network, TARGET2, which suffers from a growing lack of trust. 
 
@@ -163,17 +163,23 @@ As mentioned previously, TARGET2 facilitates intra-EU payments by allowing EU me
 This means that the consequent surpluses and deficits are balance sheet records; Germany's assets are Italy's, Spain's 
 etc liabilities. This has resulted in a [trillion][43] euro domino tower; a unilateral exit from the Euro by the 
 [southern debitors][44] would be, well... interesting, to say the least!  
-The northern European banking system would be lucky to survive. This mounting risk is causing a lot of untold headaches. 
+The northern European banking system would be lucky to survive. 
+
+This mounting risk is causing a lot of untold headaches and might one day cause an EU-wide [Mexican stand-off][52]. 
 
 ### Geopolitics
 
-The world is turning multi-polar.  
+The world is turning multi-polar. 
+
 Whether it is [China-US-EU][34] or some [other][35] [combination][36] is of little importance. What is important to 
 note is the disproportionate dominance of a single country and its currency (US dollar) in the global payments system.  
 Just a cursory glance at the actual [topology][37] of the [SWIFT network][38] is enough to prove that it is global in name only. 
-95% of the network coverage goes through US financial institutions. 
+95% of the network coverage goes through US financial institutions.  
 This makes it laughably easy for the US to [weaponize][39] its infrastructure and for the world to immediately comply. <sup>[6](#footnote_6)</sup>
-This is a strategic threat which countries around the world are waking up to.
+An EU attempt to keep the Iran nuclear deal [alive][54] (and override US sanctions), resulted in something more [like a barter 
+system][53] than a payments network.
+
+US dominance is a strategic threat which countries and corporations around the world are only now waking up to.
 
 ## Pull payments
 
@@ -192,58 +198,138 @@ amount
 
 ### Direct Debit
 
+According to the [Wikipedia definition][47] definition a direct debit is  
+> a financial transaction in which one person (or company) withdraws funds from another person's bank account...
+> the payer must have advised the bank that he or she has authorized the payee to directly draw the funds
+
+Direct debit (or with any other name it is known around the world) is an *automated variable recurring payment* 
+mechanism and network. It is already been around for [60 years][48].  
+It needs 2 basic things to operate:  
+* the account numbers of both parties (payer and payee), and
+* the payer's authorisation (a.k.a. [mandate][49])   
+
+Putting this in our usual diagram, we have something very similar to normal payments. 
+
 ![Direct debit payments](../images/payments/payments-dd.png)
 
+Let's say that customer C with an account in PurpleBank (left) started going to the gym owned by merchant A (account in 
+GreenBank). A wants to start charging C an amount monthly.  
+For this reason, A asks C to setup a mandate with C's PurpleBank. <sup>[7](#footnote_7)</sup> Once this is setup, on the 
+pre-agreed intervals (e.g. every 15th of the month), C's direct debit processor submits a debit instruction to the 
+scheme.  
+This is grouped together in batch files and submitted to the central scheme (e.g. Bacs in the UK) for processing, along 
+with all other payments. As already discussed in [part 1][1], the payment scheme has a central pool of money from all 
+participating banks.  
+Unlike push payments, in this case C's account will be credited immediately by using money from the central pot. 
+Meanwhile the scheme will claim (debit) the money from A's account to make up for the difference. In case something went
+wrong with A's debit (e.g. not enough funds, mandate no longer valid), the scheme will take the money back from C.  
+
+This latent, eventual settlement is a basic difference between direct debits and push payments.  
+In order to improve the experience for the payee (receive owed money as soon as possible, to assist with cashflow), most 
+direct debit schemes inverse the order of actions. <sup>[8](#footnote_8)</sup> In the rare case where there is a late 
+failure (e.g. account closed, owner deceased, mandate incorrect,...), money will appear and consequently disappear from 
+the payee's account.  
+It is interesting to note here that to set up a mandate all one needs is a correct owner name and account number. This 
+can lead to some interesting [cases of id theft][50] with legacy, paper- or telephony-based processors. A new wave of 
+online direct debit processors add [automated identity checks][51] in the process to tackle this ingrained feature. <sup>[9](#footnote_9)</sup>  
  
 ### Cards 
 
+The plastic card, [debit][64] or its older sister [credit][65] have been around since the '50s.
+
+It attempts to solve the following problem
+> How do you perform a financial transaction at point of sale without exchanging cash or bank account details?  
+
+The answer is... you guessed it! by introducing additional trusted third parties.
+
 ![Card payments](../images/payments/payments-card.png)
 
-Special case is mobile payment processors
-like GooglePay and ApplePay
+When paying with a card <sup>[10](#footnote_10)</sup>, there are 4 tiers of processing that take place. Let's take the 
+case of a customer using her [chip & pin][55] card at a merchant's [POS terminal][46].  
 
+* After the customer enters her PIN and completes the cardholder verification step, the terminal sends the transaction's 
+details (amount, card number, merchant id) to the Payment Processor (PP), to whom the terminal belongs (arrow 1).
+* After some basic checks, the Payment Processor immediately forwards the transaction to the Card Network (CN) (arrow 2). 
+* The CN maps the card number to the bank in which the customer has her account C (a.k.a. Issuer bank). It immediately 
+forwards the transaction to the Issuer (arrow 3).
+* The Issuer checks all kinds of things: Is the account open? Does it have enough limit to cover the transaction? Are 
+there are blocks for the transaction (e.g. fraud alerts)? etc  
+If all is ok, the confirmation travels all the way back to the terminal and gives the customer the happy beep!
 
+This is where it ends for the customer. But not yet for the merchant; she needs to receive the funds.  
+Depending on how things are setup, M can receive the funds the same day or many days later, with all the involved parties 
+taking a bite off the cake.  
+* The PP may be able to front the payment (a.k.a. provide cashflow). In this case  
+  * funds are transferred from the PP's bank account to M at the end of the day,
+  * PP submits the batched payment instructions for the day to the CN, asking to receive the equivalent amount, and
+  * the CN forwards the files to the bank for the amount to be sent to to the PP  
+* The merchant's bank (a.k.a. Acquirer bank) may be providing cashflow. In this case  
+  * the CN notifies the Acquirer of a successful confirmation (arrow 4),
+  * the Acquirer pays the merchant's account M from their own funds, and
+  * the PP submits payment files instructing the transfer from the Issuer bank (C) to the Acquirer 
+* Noone provides liquidity and the merchant has to wait.  
+In this case the PP submits the payment instructions for a direct transfer from C to M.  
 
+The underlying money transfer mechanisms (pipe 5) are the exact same ones described in the previous sections (domestic 
+and international). There is no magic or alternative way of transferring value in the case of cards.  
+From that lens the card network is a huge "traffic controller" or middle-man. It uses the card number and merchant id 
+as virtual addresses to locate the bank accounts of both and "get them in touch". 
 
-## Payment rails 
+It is also interesting to note the presence of a Payment Processor, in addition to the card network.  
+This is because the card network is strictly [b2b][56]; maintaining a network of thousands of banks is enough work. The 
+Issuer bank handles the relationship with the card holders. The Payment Processors <sup>[11](#footnote_11)</sup> handle 
+the relationship with the Merchant.  
 
-### OpenBanking
+The main benefit of card networks is their ubiquity.  
+Visa alone has a network of over [14,000 banks][57] and billions of cards issued.
 
-TBTF
+However, complexity and abstraction come at a price.  
+There are 2 main drawbacks to card usage.  
+* Fraud  
+There are tens of millions [stolen card details][58] online. With the card doubling as a direct pointer to the bank 
+account, it used to be [very easy][59] to perform online fraud. This is slowly tackled by introducing [2FA][59] in the
+online checkout process (e.g. [Verified by Visa][60]). 
+* Failure rates  
+The additional middlemen and network hops result in some [pretty][61] [dire][62] failure rates; up to 15% (!!) according 
+to [Worldpay][63]. Friction can be a huge loss of revenue, especially for online merchants. 
 
+### ...and mobile
 
-### Paypal
+In the previous diagram you may have noticed a small mobile next to the customer.  
+We cannot talk about pull payments, without covering mobile wallets (e.g. [ApplePay][66], [GooglePay][67], 
+[Samsung Pay][68],...). 
 
-### M-Pesa
+Mobile payments are layered on top of the credit card networks.  
 
-![Mobile payments](../images/payments/payments-mobilemoney.png)
+The actual card details (number, name, expiry date,...) are initially turned into a secure token, following the [EMVCo 
+specification][69]. This happens by communicating them once to Apple <sup>[12](#footnote_12)</sup>, getting the token back
+and storing on the mobile phones' secure wallet.  
+Whenever the phone is near a POS reader, the wallet is unlocked using the PIN/thumb/etc. The tokenized card is used to 
+sign the transaction (amount, merchant,...) and, via the reader, is sent for verification.  
+It is routed to Apple's servers where the token is verified to represent a card. After that it is processed like a 
+normal card payment. 
 
+In this context Apple is taking partly the role of the payment processor, facilitating the transaction routing. For this
+it is taking a percentage of the payment (0.15% in the US for Apple).  
+With mobile phone usage and wireless micro-payments [exploding worldwide][70], this is a very lucrative revenue stream, 
+increasing the [CLV][71] by orders of magnitude.
 
-### Remittance services
+As mentioned previously, complexity comes at a price.  
+With Apple / Google / etc becoming a trusted intermediary, mobile payments are [more open to fraud][72] than plain card 
+usage at the moment. That is because the thumbprint or PIN at the point of sale, only proves device ownership, not card 
+ownership. 
 
-![Remittance payments](../images/payments/payments-remittance.png)
+## Stay tuned... 
 
-https://en.wikipedia.org/wiki/Hawala
+![Stay tuned](../images/payments/flat-screen-television-1201996.jpg)
+> Photo by JESHOOTS.com from Pexels
 
-## ...and the future
+In the next and final installment, we will go over  
+* some modern "payment rails" developed in the last decade, 
+* the emerging role of crypto-currencies into the "payments mix", and
+* wrap up with some parting thoughts.
 
-### Digital IOUs
-
-![IOU payments](../images/payments/payments-iou.png)
-
-### Libra
-
-![Libra payments](../images/payments/payments-libra.png)
-
-### Government cryptocurrencies
-
-![Government crypto payments](../images/payments/payments-gov-crypto.png)
-
-### Proof-of-work money 
-
-![Crypto payments](../images/payments/payments-crypto.png)
-
-
+Until then, don't forget to spend! :-)
 
 ## Footnotes
 
@@ -260,6 +346,18 @@ account in PurpleBank) is worth nil and has to be written off.
 6. <a name="footnote_6"></a>Being placed under sanctions goes beyond financial transactions. Any part of the [US 
 infrastructure][45] from SWIFT message processing to mail servers etc is blocked for entities considered adversaries. 
 And this can increasingly be anyone.
+7. <a name="footnote_7"></a>The mandate is the equivalent of C declaring "Please allow A to take (debit) from my account 
+in PurpleBank every X days and deposit it in her account in GreenBank". 
+8. <a name="footnote_8"></a>In a "normal" push payment it is first debit (from the payer) and then credit (to the payee).  
+In direct debit, it is first credit (to the payee) and then debit (from the payer), or at the very least these 2 happening 
+almost in parallel. 
+9. <a name="footnote_9"></a>Full disclosure: I am an employee of GoCardless, an online direct debit provider, at the 
+time of writing this article. 
+10. <a name="footnote_10"></a>Debit and credit cards have no practical difference in this discussion.
+11. <a name="footnote_11"></a>This used to be exclusively the remit of the Acquiring banks. But as technology and terminals 
+started becoming more advanced, it becomes harder and harder for "generalists" (as the banks are) to compete. Hence the 
+rise of dedicated processors. 
+12. <a name="footnote_12"></a>When mentioning 'Apple' in this section, I refer to Apple, Google, Samsung,... 
 
 
 
@@ -309,3 +407,29 @@ And this can increasingly be anyone.
   [44]: https://www.telegraph.co.uk/business/2019/06/04/german-bundesbank-comes-clean-euro-default-risks-italys-parallel/
   [45]: https://www.congress.gov/bill/116th-congress/senate-bill/482/text
   [46]: https://en.wikipedia.org/wiki/Point_of_sale
+  [47]: https://en.wikipedia.org/wiki/Direct_debit
+  [48]: https://www.youtube.com/watch?v=HLpIbRLi_x4
+  [49]: https://gocardless.com/direct-debit/mandates/
+  [50]: https://www.theguardian.com/money/2008/jan/07/personalfinancenews.scamsandfraud
+  [51]: https://gocardless.com/guides/posts/direct-debit-in-the-digital-age/
+  [52]: https://en.wikipedia.org/wiki/Mexican_standoff
+  [53]: https://www.gtreview.com/news/mena/analysis-will-europes-new-iran-payment-mechanism-work/
+  [54]: https://en.wikipedia.org/wiki/United_States_withdrawal_from_the_Joint_Comprehensive_Plan_of_Action
+  [55]: https://en.wikipedia.org/wiki/EMV
+  [56]: https://en.wikipedia.org/wiki/Business-to-business
+  [57]: https://usa.visa.com/dam/VCOM/download/corporate/media/visa-fact-sheet-Jun2015.pdf
+  [58]: https://blog.cybersixgill.com/23million_stolen_cc_blog
+  [59]: https://en.wikipedia.org/wiki/Multi-factor_authentication
+  [60]: https://www.visa.co.uk/pay-with-visa/featured-technologies/verified-by-visa.html
+  [61]: https://www.spreedly.com/blog/credit-card-vs-debit-card-decline-rates-processing-fees
+  [62]: https://blog.recurly.com/benchmarking-minimizing-credit-card-transaction-decline-rates
+  [63]: https://www.worldpay.com/en-us/insights-hub/article/3-ways-to-drive-higher-approval-rates-in-online-payments
+  [64]: https://en.wikipedia.org/wiki/Debit_card
+  [65]: https://en.wikipedia.org/wiki/Credit_card
+  [66]: https://en.wikipedia.org/wiki/Apple_Pay
+  [67]: https://en.wikipedia.org/wiki/Google_Pay
+  [68]: https://en.wikipedia.org/wiki/Samsung_Pay
+  [69]: https://www.emvco.com/emv-technologies/payment-tokenisation/
+  [70]: https://www.statista.com/topics/4322/apple-pay/
+  [71]: https://en.wikipedia.org/wiki/Customer_lifetime_value
+  [72]: https://www.forbes.com/sites/thomasbrewster/2019/03/27/millions-are-being-lost-to-apple-pay-fraudwill-apple-card-come-to-the-rescue/#134e0c10622f
