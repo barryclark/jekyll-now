@@ -19,5 +19,9 @@ layout: default
     {% endfor %}
   </div>
 
-  {% include disqus.html %}
+  <div>
+    {% if page.comments_id %}
+      {% include comments.html %}
+    {% endif %}
+  </div>
 </article>
