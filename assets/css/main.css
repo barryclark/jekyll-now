@@ -1536,3 +1536,67 @@ canvas {
 #green .ui-slider-handle { border-color: #8ae234; }
 #blue .ui-slider-range { background: #729fcf; }
 #blue .ui-slider-handle { border-color: #729fcf; }
+
+.grid-container {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  padding: 2px 0;
+}
+
+.grid-container .grid-label {
+  text-align: right;
+}
+
+.grid-alert {
+  grid-column: 1 / 3;
+}
+
+.grid-container .grid-input {
+  text-align: left;
+}
+
+.form-control {
+  padding: .375rem .75rem;
+  align-items: center;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.alert {
+  position: relative;
+  padding: .25rem 1.25rem;
+  margin-bottom: .2rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.input-group-suffix {
+  margin-left: -1px;
+  margin-bottom: 0;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 12rem;
+  color: #495057;
+}
