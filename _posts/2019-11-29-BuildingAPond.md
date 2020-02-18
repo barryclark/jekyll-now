@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building a backyard pond
+img: pondfountain.jpg
 ---
 Having a water feature in the backyard is always nice, but there are
 some steps to maintain the feature that come along with any installation.

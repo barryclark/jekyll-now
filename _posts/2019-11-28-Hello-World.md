@@ -1,8 +1,9 @@
 ---
 layout: post
 title: First post!
+img: sunrise.jpg
 ---
-![my pond]({{ site.baseurl }}/images/pondfountain.jpg "my pond")
+![my pond]({{ site.baseurl }}/assets/img/pondfountain.jpg "my pond")
 
 This is the first post on my new blog. I’m just getting this new blog going, so stay tuned for more.
 

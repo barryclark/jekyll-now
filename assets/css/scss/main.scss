@@ -1,0 +1,149 @@
+@import 'normalize';
+@import 'syntax';
+@import 'variables';
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $body-color;
+  background-color: #fbfbfb;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+img + em {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+blockquote {
+  border-left: 5px solid #000;
+  padding-left: 1.1rem;
+  margin-left: 1rem;
+  font-style: italic;
+  color: #ada8a8;
+}
+
+pre {
+  padding: 1rem 2rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+
+  code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
+
+table {
+  border: 1px solid #aaa;
+  background-color: #eee;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table td, table.blueTable th {
+  border: 1px solid #aaa;
+  padding: 3px 2px;
+}
+table tbody td {
+  font-size: 13px;
+}
+table tr:nth-child(even) {
+  background: #adbecc;
+}
+table thead {
+  background: #a9c4d1;
+  background: linear-gradient(to bottom, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
+  border-bottom: 1px solid #8c8c8c;
+}
+table thead th {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border-left: 1px solid #d0e4f5;
+}
+table thead th:first-child {
+  border-left: none;
+}
+
+table tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background: #d0e4f5;
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444;
+}
+table tfoot td {
+  font-size: 14px;
+}
+
+.wrapper {
+  max-width: 1250px;
+  position: relative;
+}
+
+.post, .article-page {
+  background-color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: $white;
+}
+
+::selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: $white;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
+@import 'parts/home-page';
+
+/* - - - - - - - - - - Post Page Styles - - - - - - - - - - */
+@import 'parts/post-page';
+
+/* - - - - - - - - - - Tag Styles - - - - - - - - - - */
+@import 'parts/tag';
+
+/* - - - - - - - - - - Media Styles - - - - - - - - - - */
+@import 'media';

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: About
 permalink: /about/
 ---
@@ -20,4 +20,4 @@ It may still be out there. [Google Sites](https://sites.google.com/view/splabs/t
 
 [sanchezparralabs@outlook.com](mailto:sanchezparralabs@outlook.com)
 
-![sunrise]({{ site.baseurl }}/images/Sunrise.JPG "Sunrise in Lake Stevens")
+![sunrise]({{ site.baseurl }}/assets/img/sunrise.jpg "Sunrise in Lake Stevens")

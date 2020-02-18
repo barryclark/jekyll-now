@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Towing Capacity Calculator
 permalink: /calculator/
 icon: calc-200.png
@@ -7,7 +7,7 @@ calc: true
 jquery: true
 ---
 
-<script src="{{ site.baseurl }}/js/towing.js">
+<script src="{{ site.baseurl }}/assets/js/towing.js">
 </script>
 
 **This data is not sent or stored in our servers**
