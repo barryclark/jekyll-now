@@ -978,21 +978,6 @@ table tfoot td {
   color: #333030;
 }
 
-.about  p::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 10;
-  display: block;
-  width: 7px;
-  height: 7px;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-  background-color: #515151;
-}
 
 .about .author-name {
   font-family: 'PT Serif', serif;
