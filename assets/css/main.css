@@ -1589,3 +1589,27 @@ canvas {
   width: 12rem;
   color: #495057;
 }
+
+
+nav {
+  float: none;
+  margin-top: 10px;
+  /* @include mobile {
+    float: none;
+    display: block;
+    font-size: 16px;
+  } */
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px;
+
+    /* @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    } */
+  }

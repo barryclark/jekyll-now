@@ -90,4 +90,11 @@ $( function() {
         }
     }
   );
+
+  // Check for the various File API support.
+  if (window.File && window.FileReader && window.FileList && window.Blob) {
+    // write your code here!
+  } else {
+    alert("Your browser is too old to support HTML5 File's API.");
+  }
 } );

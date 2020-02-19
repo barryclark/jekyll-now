@@ -51,6 +51,11 @@
     }
 }
 
+
+  nav a {
+    display: inline;
+  }
+
   .content-box {
     padding: 20px 10px;
     display: flex;
@@ -88,6 +93,10 @@
           font-size: 21px;
         }
       }
+    }
+
+    nav a {
+      display: inline;
     }
   }
 }
