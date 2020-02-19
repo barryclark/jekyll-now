@@ -569,7 +569,7 @@ function formatRequirements(requirementsObject) {
     output += "<h3>Loyalty</h3>";
   }
   if (locale = "ru-RU") {
-    output += "<h3>лояльность</h3>";
+    output += "<h3>Лояльность</h3>";
   }
   if (requirementsObject.loyalty && requirementsObject.loyalty.length > 0) {
     output += "<ul>";
