@@ -22,6 +22,9 @@ social-pinterest: franciscodsanch
 # Disqus
 discus-identifier:  # add your discus identifier
 
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
 # Tracker
 analytics: # Google Analytics
 

@@ -1,3 +1,5 @@
+---
+---
 @import 'normalize';
 @import 'syntax';
 @import 'variables';
@@ -135,6 +137,147 @@ table tfoot td {
 .clearfix::after {
   clear: both;
 }
+
+nav {
+  float: none;
+  margin-top: 10px;
+  /* @include mobile {
+    float: none;
+    display: block;
+    font-size: 16px;
+
+  } */
+
+ a {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px;
+
+    /* @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    } */
+  }
+}
+
+
+canvas {
+  background: #f5f0e6;
+}
+
+.slider {
+  float: left;
+  clear: left;
+  width: 300px;
+  margin: 10px;
+}
+
+.spiro {
+  height: 700px;
+}
+
+.handle {
+  width: 2em;
+  height: 1.6em;
+  top: 50%;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 0.7em;
+}
+
+#red, #green, #blue, #outerRadius, #innerRadius, #ratio {
+    float: left;
+    clear: left;
+    width: 255px;
+    margin: 15px;
+    margin-left: 50px;
+}
+
+#swatch {
+  width: 120px;
+  height: 100px;
+  margin-top: 18px;
+  margin-left: 350px;
+  background-image: none;
+}
+#red .ui-slider-range { background: #ef2929; }
+#red .ui-slider-handle { border-color: #ef2929; }
+#green .ui-slider-range { background: #8ae234; }
+#green .ui-slider-handle { border-color: #8ae234; }
+#blue .ui-slider-range { background: #729fcf; }
+#blue .ui-slider-handle { border-color: #729fcf; }
+
+
+.grid-container {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  padding: 2px 0;
+}
+
+.grid-container .grid-label {
+  text-align: right;
+}
+
+.grid-alert {
+  grid-column: 1 / 3;
+}
+
+.grid-container .grid-input {
+  text-align: left;
+}
+
+.grid-text p {
+  margin: 0;
+}
+
+.form-control {
+  padding: .375rem .75rem;
+  align-items: center;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.alert {
+  position: relative;
+  padding: .25rem 1.25rem;
+  margin-bottom: .2rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.input-group-suffix {
+  margin-left: -1px;
+  margin-bottom: 0;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 12rem;
+  color: #495057;
+}
+
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 @import 'parts/home-page';
 
