@@ -6,7 +6,7 @@ $( function() {
   outputNamesToDiv = function(divName, names) {
     $.each( names, function(i, val) {
       var txt = $("<p></p>").text(val);
-      $(divName).prepend(txt);
+      $(divName).append(txt);
     });
   }
 
@@ -29,10 +29,9 @@ $( function() {
 
   order = function() {
    var names = readNames();
-   console.log(names);
    $('#ordered').html('');
    $('#random').html('');
-   outputNamesToDiv("#ordered", names);
+   outputNamesToDiv("#ordered", names.sort());
    outputNamesToDiv("#random", randomize(names))
   }
 
@@ -45,12 +44,16 @@ $( function() {
       reader.addEventListener("load", function () {
           var fileText = reader.result;
           $('#names').text(fileText);
+          order();
       }, false);
       reader.readAsText(file);
     }
   }
 
-  document.getElementById("order").addEventListener('click', order, false);
+  $("#order").click( function( event ) {
+      event.preventDefault();
+      order();
+    } );
   $('#names').on(
     'dragover',
     function(e) {

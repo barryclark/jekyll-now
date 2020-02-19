@@ -1547,6 +1547,10 @@ canvas {
   text-align: left;
 }
 
+.grid-text p {
+  margin: 0;
+}
+
 .form-control {
   padding: .375rem .75rem;
   align-items: center;

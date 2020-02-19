@@ -8,7 +8,12 @@
   <div class="wrapper">
     {{ content }}
   </div>
-  
+
   {% include analytics.html %}
+
+  {% if page.script %}
+  <script src="{{site.baseurl}}/assets/js/{{page.script}}"></script>
+  {% endif %}
+
 </body>
 </html>
