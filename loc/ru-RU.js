@@ -4,8 +4,8 @@ var imgRoot = "./img/";
 var stations_ru_RU = [
     {
         id: "AFU1",
-        label: "Air Filtering Unit",
-        title: "Air Filtering Unit",
+        label: "Воздушный фильтратор",
+        title: "Воздушный фильтратор",
         shape: "circularImage",
         image: imgRoot + "air-filtration-unit.png",
         requirements: {
@@ -15,8 +15,8 @@ var stations_ru_RU = [
     },
     {
         id: "BF1",
-        label: "Level 1",
-        title: "Bitcoin Farm 1",
+        label: "Уровень 1",
+        title: "Биткоин ферма 1",
         shape: "circularImage",
         image: imgRoot + "bitcoin-farm.png",
         requirements: {
@@ -30,8 +30,8 @@ var stations_ru_RU = [
     },
     {
         id: "BF2",
-        label: "Level 2",
-        title: "Bitcoin Farm 2",
+        label: "Уровень 2",
+        title: "Биткоин ферма 2",
         shape: "circularImage",
         image: imgRoot + "bitcoin-farm.png",
         requirements: {
@@ -45,8 +45,8 @@ var stations_ru_RU = [
     },
     {
         id: "BF3",
-        label: "Level 3",
-        title: "Bitcoin Farm 3",
+        label: "Уровень 3",
+        title: "Биткоин ферма 3",
         shape: "circularImage",
         image: imgRoot + "bitcoin-farm.png",
         requirements: {
@@ -60,8 +60,8 @@ var stations_ru_RU = [
     },
     {
         id: "BG1",
-        label: "Level 1",
-        title: "Booze Generator",
+        label: "Уровень 1",
+        title: "Самогонный аппарат",
         shape: "circularImage",
         image: imgRoot + "booze-generator.png",
         requirements: {
@@ -75,8 +75,8 @@ var stations_ru_RU = [
     },
     {
         id: "G1",
-        label: "Level 1",
-        title: "Generator 1",
+        label: "Уровень 1",
+        title: "Генератор 1",
         shape: "circularImage",
         image: imgRoot + "generator.png",
         y: -50,
@@ -86,8 +86,8 @@ var stations_ru_RU = [
     },
     {
         id: "G2",
-        label: "Level 2",
-        title: "Generator 2",
+        label: "Уровень 2",
+        title: "Генератор 2",
         shape: "circularImage",
         image: imgRoot + "generator.png",
         requirements: {
@@ -100,8 +100,8 @@ var stations_ru_RU = [
     },
     {
         id: "G3",
-        label: "Level 3",
-        title: "Generator 3",
+        label: "Уровень 3",
+        title: "Генератор 3",
         shape: "circularImage",
         image: imgRoot + "generator.png",
         requirements: {
@@ -116,8 +116,8 @@ var stations_ru_RU = [
     },
     {
         id: "H1",
-        label: "Level 1",
-        title: "Heater 1",
+        label: "Уровень 1",
+        title: "Обогрев 1",
         shape: "circularImage",
         image: imgRoot + "heating.png",
         requirements: {
@@ -126,8 +126,8 @@ var stations_ru_RU = [
     },
     {
         id: "H2",
-        label: "Level 2",
-        title: "Heating 2",
+        label: "Уровень 2",
+        title: "Обогрев 2",
         shape: "circularImage",
         image: imgRoot + "heating.png",
         requirements: {
@@ -137,8 +137,8 @@ var stations_ru_RU = [
     },
     {
         id: "H3",
-        label: "Level 3",
-        title: "Heating 3",
+        label: "Уровень 3",
+        title: "Обогрев 3",
         shape: "circularImage",
         image: imgRoot + "heating.png",
         requirements: {
@@ -151,8 +151,8 @@ var stations_ru_RU = [
     },
     {
         id: "I1",
-        label: "Level 1",
-        title: "Illumination 1",
+        label: "Уровень 1",
+        title: "Освещение 1",
         shape: "circularImage",
         image: imgRoot + "illumination.png",
         requirements: {
@@ -161,8 +161,8 @@ var stations_ru_RU = [
     },
     {
         id: "I2",
-        label: "Level 2",
-        title: "Illumination 2",
+        label: "Уровень 2",
+        title: "Освещение 2",
         shape: "circularImage",
         image: imgRoot + "illumination.png",
         requirements: {
@@ -174,8 +174,8 @@ var stations_ru_RU = [
     },
     {
         id: "I3",
-        label: "Level 3",
-        title: "Illumination 3",
+        label: "Уровень 3",
+        title: "Освещение 3",
         shape: "circularImage",
         image: imgRoot + "illumination.png",
         requirements: {
@@ -188,8 +188,8 @@ var stations_ru_RU = [
     },
     {
         id: "IC1",
-        label: "Level 1",
-        title: "Intel Center 1",
+        label: "Уровень 1",
+        title: "Разведцентр 1",
         shape: "circularImage",
         image: imgRoot + "intelligence-center.png",
         requirements: {
@@ -198,8 +198,8 @@ var stations_ru_RU = [
     },
     {
         id: "IC2",
-        label: "Level 2",
-        title: "Intel Center 2",
+        label: "Уровень 2",
+        title: "Разведцентр 2",
         shape: "circularImage",
         image: imgRoot + "intelligence-center.png",
         requirements: {
@@ -215,8 +215,8 @@ var stations_ru_RU = [
     },
     {
         id: "IC3",
-        label: "Level 3",
-        title: "Intel Center 3",
+        label: "Уровень 3",
+        title: "Разведцентр 3",
         shape: "circularImage",
         image: imgRoot + "intelligence-center.png",
         requirements: {
@@ -231,8 +231,8 @@ var stations_ru_RU = [
     },
     {
         id: "L1",
-        label: "Level 1",
-        title: "Lavatory 1",
+        label: "Уровень 1",
+        title: "Санузел 1",
         shape: "circularImage",
         image: imgRoot + "lavatory.png",
         requirements: {
@@ -241,8 +241,8 @@ var stations_ru_RU = [
     },
     {
         id: "L2",
-        label: "Level 2",
-        title: "Lavatory 2",
+        label: "Уровень 2",
+        title: "Санузел 2",
         shape: "circularImage",
         image: imgRoot + "lavatory.png",
         requirements: {
@@ -255,8 +255,8 @@ var stations_ru_RU = [
     },
     {
         id: "L3",
-        label: "Level 3",
-        title: "Lavatory 3",
+        label: "Уровень 3",
+        title: "Санузел 3",
         shape: "circularImage",
         image: imgRoot + "lavatory.png",
         requirements: {
@@ -270,8 +270,8 @@ var stations_ru_RU = [
     },
     {
         id: "LIB1",
-        label: "Library",
-        title: "Library",
+        label: "Библиотека",
+        title: "Библиотека",
         shape: "circularImage",
         image: imgRoot + "library.png",
         requirements: {
@@ -281,8 +281,8 @@ var stations_ru_RU = [
     },
     {
         id: "M1",
-        label: "Level 1",
-        title: "Medstation 1",
+        label: "Уровень 1",
+        title: "Медблок 1",
         shape: "circularImage",
         image: imgRoot + "medstation.png",
         requirements: {
@@ -291,8 +291,8 @@ var stations_ru_RU = [
     },
     {
         id: "M2",
-        label: "Level 2",
-        title: "Medstation 2",
+        label: "Уровень 2",
+        title: "Медблок 2",
         shape: "circularImage",
         image: imgRoot + "medstation.png",
         requirements: {
@@ -307,8 +307,8 @@ var stations_ru_RU = [
     },
     {
         id: "M3",
-        label: "Level 3",
-        title: "Medstation 3",
+        label: "Уровень 3",
+        title: "Медблок 3",
         shape: "circularImage",
         image: imgRoot + "medstation.png",
         requirements: {
@@ -326,8 +326,8 @@ var stations_ru_RU = [
     },
     {
         id: "NU1",
-        label: "Level 1",
-        title: "Nutrition Unit 1",
+        label: "Уровень 1",
+        title: "Пищеблок 1",
         shape: "circularImage",
         image: imgRoot + "nutrition-unit.png",
         requirements: {
@@ -339,8 +339,8 @@ var stations_ru_RU = [
     },
     {
         id: "NU2",
-        label: "Level 2",
-        title: "Nutrition Unit 2",
+        label: "Уровень 2",
+        title: "Пищеблок 2",
         shape: "circularImage",
         image: imgRoot + "nutrition-unit.png",
         requirements: {
@@ -354,8 +354,8 @@ var stations_ru_RU = [
     },
     {
         id: "NU3",
-        label: "Level 3",
-        title: "Nutrition Unit 3",
+        label: "Уровень 3",
+        title: "Пищеблок 3",
         shape: "circularImage",
         image: imgRoot + "nutrition-unit.png",
         requirements: {
@@ -369,8 +369,8 @@ var stations_ru_RU = [
     },
     {
         id: "RS1",
-        label: "Level 1",
-        title: "Rest Space 1",
+        label: "Уровень 1",
+        title: "Зона отдыха 1",
         shape: "circularImage",
         image: imgRoot + "rest-space.png",
         requirements: {
@@ -379,8 +379,8 @@ var stations_ru_RU = [
     },
     {
         id: "RS2",
-        label: "Level 2",
-        title: "Rest Space 2",
+        label: "Уровень 2",
+        title: "Зона отдыха 2",
         shape: "circularImage",
         image: imgRoot + "rest-space.png",
         requirements: {
@@ -390,8 +390,8 @@ var stations_ru_RU = [
     },
     {
         id: "RS3",
-        label: "Level 3",
-        title: "Rest Space 3",
+        label: "Уровень 3",
+        title: "Зона отдыха 3",
         shape: "circularImage",
         image: imgRoot + "rest-space.png",
         requirements: {
@@ -406,8 +406,8 @@ var stations_ru_RU = [
     },
     {
         id: "SC1",
-        label: "Scav Case",
-        title: "Scav Case",
+        label: "Ящик диких",
+        title: "Ящик диких",
         shape: "circularImage",
         image: imgRoot + "scav-case.png",
         requirements: {
@@ -421,8 +421,8 @@ var stations_ru_RU = [
     },
     {
         id: "Sec1",
-        label: "Level 1",
-        title: "Security 1",
+        label: "Уровень 1",
+        title: "Безопасность 1",
         shape: "circularImage",
         image: imgRoot + "security.png",
         requirements: {
@@ -431,8 +431,8 @@ var stations_ru_RU = [
     },
     {
         id: "Sec2",
-        label: "Level 2",
-        title: "Security 2",
+        label: "Уровень 2",
+        title: "Безопасность 2",
         shape: "circularImage",
         image: imgRoot + "security.png",
         requirements: {
@@ -442,8 +442,8 @@ var stations_ru_RU = [
     },
     {
         id: "Sec3",
-        label: "Level 3",
-        title: "Security 3",
+        label: "Уровень 3",
+        title: "Безопасность 3",
         shape: "circularImage",
         image: imgRoot + "security.png",
         requirements: {
@@ -459,7 +459,7 @@ var stations_ru_RU = [
     {
         id: "SR1",
         label: "Range",
-        title: "Shooting Range",
+        title: "Тир",
         shape: "circularImage",
         image: imgRoot + "shooting-range.png",
         requirements: {
@@ -473,8 +473,8 @@ var stations_ru_RU = [
     },
     {
         id: "SP1",
-        label: "Solar Power",
-        title: "Solar Power",
+        label: "Солнечная батарея",
+        title: "Солнечная батарея",
         shape: "circularImage",
         image: imgRoot + "solar-power.png",
         requirements: {
@@ -489,15 +489,16 @@ var stations_ru_RU = [
     },
     {
         id: "Sta1",
-        label: "Level 1",
-        title: "Stash 1",
+        label: "Уровень 1",
+        title: "Склад 1",
         shape: "circularImage",
-        image: imgRoot + "stash.png"
+        image: imgRoot + "stash.png",
+        requirements: {}
     },
     {
         id: "Sta2",
-        label: "Level 2",
-        title: "Stash 2",
+        label: "Уровень 2",
+        title: "Склад 2",
         shape: "circularImage",
         image: imgRoot + "stash.png",
         requirements: {
@@ -511,8 +512,8 @@ var stations_ru_RU = [
     },
     {
         id: "Sta3",
-        label: "Level 3",
-        title: "Stash 3",
+        label: "Уровень 3",
+        title: "Склад 3",
         shape: "circularImage",
         image: imgRoot + "stash.png",
         requirements: {
@@ -529,8 +530,8 @@ var stations_ru_RU = [
     },
     {
         id: "Sta4",
-        label: "Level 4",
-        title: "Stash 4",
+        label: "Уровень 4",
+        title: "Склад 4",
         shape: "circularImage",
         image: imgRoot + "stash.png",
         requirements: {
@@ -543,8 +544,8 @@ var stations_ru_RU = [
     },
     {
         id: "V1",
-        label: "Level 1",
-        title: "Vents 1",
+        label: "Уровень 1",
+        title: "Вентиляция 1",
         shape: "circularImage",
         image: imgRoot + "vents.png",
         requirements: {
@@ -553,8 +554,8 @@ var stations_ru_RU = [
     },
     {
         id: "V2",
-        label: "Level 2",
-        title: "Vents 2",
+        label: "Уровень 2",
+        title: "Вентиляция 2",
         shape: "circularImage",
         image: imgRoot + "vents.png",
         requirements: {
@@ -566,8 +567,8 @@ var stations_ru_RU = [
     },
     {
         id: "V3",
-        label: "Level 3",
-        title: "Vents 3",
+        label: "Уровень 3",
+        title: "Вентиляция 3",
         shape: "circularImage",
         image: imgRoot + "vents.png",
         requirements: {
@@ -582,8 +583,8 @@ var stations_ru_RU = [
     },
     {
         id: "WC1",
-        label: "Level 1",
-        title: "Water Collector 1",
+        label: "Уровень 1",
+        title: "Водосборник 1",
         shape: "circularImage",
         image: imgRoot + "water-collector.png",
         requirements: {
@@ -597,8 +598,8 @@ var stations_ru_RU = [
     },
     {
         id: "WC2",
-        label: "Level 2",
-        title: "Water Collector 2",
+        label: "Уровень 2",
+        title: "Водосборник 2",
         shape: "circularImage",
         image: imgRoot + "water-collector.png",
         requirements: {
@@ -613,8 +614,8 @@ var stations_ru_RU = [
     },
     {
         id: "WC3",
-        label: "Level 3",
-        title: "Water Collector 3",
+        label: "Уровень 3",
+        title: "Водосборник 3",
         shape: "circularImage",
         image: imgRoot + "water-collector.png",
         requirements: {
@@ -628,8 +629,8 @@ var stations_ru_RU = [
     },
     {
         id: "W1",
-        label: "Level 1",
-        title: "Workbench 1",
+        label: "Уровень 1",
+        title: "Верстак 1",
         shape: "circularImage",
         image: imgRoot + "workbench.png",
         requirements: {
@@ -642,8 +643,8 @@ var stations_ru_RU = [
     },
     {
         id: "W2",
-        label: "Level 2",
-        title: "Workbench 2",
+        label: "Уровень 2",
+        title: "Верстак 2",
         shape: "circularImage",
         image: imgRoot + "workbench.png",
         requirements: {
@@ -657,8 +658,8 @@ var stations_ru_RU = [
     },
     {
         id: "W3",
-        label: "Level 3",
-        title: "Workbench 3",
+        label: "Уровень 3",
+        title: "Верстак 3",
         shape: "circularImage",
         image: imgRoot + "workbench.png",
         requirements: {

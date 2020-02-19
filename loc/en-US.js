@@ -492,7 +492,8 @@ var stations_en_US = [
         label: "Level 1",
         title: "Stash 1",
         shape: "circularImage",
-        image: imgRoot + "stash.png"
+        image: imgRoot + "stash.png",
+        requirements: {}
     },
     {
         id: "Sta2",

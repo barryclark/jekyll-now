@@ -641,15 +641,19 @@ function toggleRoadmap() {
 function switchToEn() {
   console.log("Switching to English!");
   var newNodes = new vis.DataSet(stations_en_US);
-  network.nodes = newNodes;
-  network.body.emitter.emit('_dataChanged');
-  network.redraw();
+  var newData = {
+    nodes: newNodes,
+    edges: edges
+  };
+  network.setData(newData);
 }
 
 function switchToRu() {
   console.log("Switching to Russian!");
   var newNodes = new vis.DataSet(stations_ru_RU);
-  network.nodes = newNodes;
-  network.body.emitter.emit('_dataChanged');
-  network.redraw();
+  var newData = {
+    nodes: newNodes,
+    edges: edges
+  };
+  network.setData(newData);
 }
