@@ -6,7 +6,9 @@ $( function() {
   outputNamesToDiv = function(divName, names) {
     $.each( names, function(i, val) {
       var txt = $("<p></p>").text(val);
-      $(divName).append(txt);
+      if (txt.length > 0) {
+        $(divName).append(txt);
+      }
     });
   }
 
@@ -43,17 +45,26 @@ $( function() {
       var reader = new FileReader();
       reader.addEventListener("load", function () {
           var fileText = reader.result;
-          $('#names').text(fileText);
+          $('#names').val(fileText);
           order();
       }, false);
       reader.readAsText(file);
     }
   }
 
-  $("#order").click( function( event ) {
-      event.preventDefault();
+  $("#order").click( function( e ) {
+      e.preventDefault();
       order();
     } );
+  $('#names').change( function(e) {
+    e.preventDefault();
+    order();
+  });
+  $('#names').on('paste', function(e) {
+    setTimeout(function() {
+      order();
+    }, 0);
+  });
   $('#names').on(
     'dragover',
     function(e) {
