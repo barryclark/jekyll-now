@@ -458,7 +458,7 @@ var stations_ru_RU = [
     },
     {
         id: "SR1",
-        label: "Range",
+        label: "Тир",
         title: "Тир",
         shape: "circularImage",
         image: imgRoot + "shooting-range.png",
