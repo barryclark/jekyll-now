@@ -11,12 +11,13 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Francisco Sanchez # add your name
 author-img: avatar.jpg # add your photo
-about-author: I am a full stack developer. Always learning and always improving. 
+about-author: I am a full stack developer. Always learning and always improving.
 social-twitter: tng2000 # add your Twitter handle
 social-facebook: TimesFacts # add your Facebook handle
 social-github: frsanchez # add your Github handle
 social-linkedin: franciscodsanchez # add your Linkedin handle
 social-email: sanchezparralabs@outlook.com # add your Email address
+social-pinterest: franciscodsanch
 
 # Disqus
 discus-identifier:  # add your discus identifier
