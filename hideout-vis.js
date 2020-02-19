@@ -3,6 +3,9 @@ var colorGold = "#C2B7A3";
 var colorBlack = "#0e0e0e";
 var colorDarkTan = "#181714";
 
+var locale = "ru-RU";
+var wikiBaseUrl = "https://escapefromtarkov-ru.gamepedia.com/";
+
 var infoBox = document.getElementById("node-info");
 
 var checkbox = document.getElementById("shouldShowAllAncestors");
@@ -527,8 +530,14 @@ function unHoverNodesAndEdges() {
 
 // Format the non-station requirements into HTML
 function formatRequirements(requirementsObject) {
+  // TODO: clean this the fuck up
   var output = "<div>";
-  output += "<h3>Items</h3>";
+  if (locale == "en-US") {
+    output += "<h3>Items</h3>";
+  }
+  if (locale = "ru-RU") {
+    output += "<h3>Предметы</h3>";
+  }
   if (requirementsObject.items && requirementsObject.items.length > 0) {
     output += "<ul>";
     requirementsObject.items.forEach(itemArray => {
@@ -538,9 +547,9 @@ function formatRequirements(requirementsObject) {
       var wikiFormattedText = item
         .replace(/[0-9,]+/, "")
         .trim()
-        .replace(/\W/g, "_"); // remove quantities and use _
+        .replace(/\s/g, "_"); // remove quantities and use _
       var itemLinkHtml =
-        '<a href="https://escapefromtarkov.gamepedia.com/' +
+        '<a href="' + wikiBaseUrl +
         wikiFormattedText +
         '">' +
         item +
@@ -549,9 +558,19 @@ function formatRequirements(requirementsObject) {
     });
     output += "</ul>";
   } else {
-    output += "<p>No item requirements!</p>";
+    if (locale == "en-US") {
+      output += "<p>No item requirements!</p>";
+    }
+    if (locale = "ru-RU") {
+      output += "<p>Нет требований к товару!</p>";
+    }
   }
-  output += "<h3>Loyalty</h3>";
+  if (locale == "en-US") {
+    output += "<h3>Loyalty</h3>";
+  }
+  if (locale = "ru-RU") {
+    output += "<h3>лояльность</h3>";
+  }
   if (requirementsObject.loyalty && requirementsObject.loyalty.length > 0) {
     output += "<ul>";
     requirementsObject.loyalty.forEach(vendorArray => {
@@ -559,7 +578,7 @@ function formatRequirements(requirementsObject) {
       var vendorLevel = vendorArray[1];
       var wikiFormattedText = vendor.trim().split(" ")[0]; // pulls out the "Prapor" in "Prapor LL2"
       var vendorLinkHtml =
-        '<a href="https://escapefromtarkov.gamepedia.com/' +
+        '<a href="' + wikiBaseUrl +
         wikiFormattedText +
         '">' +
         vendor +
@@ -568,9 +587,19 @@ function formatRequirements(requirementsObject) {
     });
     output += "</ul>";
   } else {
-    output += "<p>No vendor loyalty requirements!</p>";
+    if (locale == "en-US") {
+      output += "<p>No vendor loyalty requirements!</p>";
+    }
+    if (locale = "ru-RU") {
+      output += "<p>Нет требований лояльности к продавцу!</p>";
+    }
   }
-  output += "<h3>Skills</h3>";
+  if (locale == "en-US") {
+    output += "<h3>Skills</h3>";
+  }
+  if (locale = "ru-RU") {
+    output += "<h3>Умение</h3>";
+  }
   if (requirementsObject.skills && requirementsObject.skills.length > 0) {
     output += "<ul>";
     requirementsObject.skills.forEach(skillArray => {
@@ -579,9 +608,9 @@ function formatRequirements(requirementsObject) {
       var wikiFormattedText = skill
         .replace(/[0-9,]+/, "")
         .trim()
-        .replace(/\W/g, "_"); // Skills should not have spaces
+        .replace(/\s/g, "_"); // Skills should not have spaces
       var skillLinkHtml =
-        '<a href="https://escapefromtarkov.gamepedia.com/' +
+        '<a href="' + wikiBaseUrl +
         wikiFormattedText +
         '">' +
         skill +
@@ -590,7 +619,12 @@ function formatRequirements(requirementsObject) {
     });
     output += "</ul>";
   } else {
-    output += "<p>No skill requirements!</p>";
+    if (locale == "en-US") {
+      output += "<p>No skill requirements!</p>";
+    }
+    if (locale = "ru-RU") {
+      output += "<p>Нет требований к навыкам!</p>";
+    }
   }
   return output + "</div>";
 }
@@ -640,6 +674,8 @@ function toggleRoadmap() {
 
 function switchToEn() {
   console.log("Switching to English!");
+  locale = "en-US";
+  wikiBaseUrl = "https://escapefromtarkov.gamepedia.com/";
   var newNodes = new vis.DataSet(stations_en_US);
   var newData = {
     nodes: newNodes,
@@ -650,6 +686,8 @@ function switchToEn() {
 
 function switchToRu() {
   console.log("Switching to Russian!");
+  locale = "ru-RU";
+  wikiBaseUrl = "https://escapefromtarkov-ru.gamepedia.com/";
   var newNodes = new vis.DataSet(stations_ru_RU);
   var newData = {
     nodes: newNodes,
