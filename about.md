@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Physisics parioned by complexity and data science
-$ \sum_{\forall i}{x_i^{2}} $
+$$ \sum_{\forall i}{x_i^{2}} $$
 ### More Information
 
 1. Bachelor degreein Physics Universidad Nacional
