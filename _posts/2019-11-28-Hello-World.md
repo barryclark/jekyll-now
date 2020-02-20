@@ -2,6 +2,8 @@
 layout: post
 title: First post!
 img: sunrise.jpg
+fig-caption: First Post!
+fig-color: white
 ---
 ![my pond]({{ site.baseurl }}/assets/img/pondfountain.jpg "my pond")
 

@@ -3,6 +3,7 @@ layout: post
 title: How to calculate your vehicle's towing capacity
 banner: towing-banner.png
 img: towing.png
+fig-color: white
 ---
 As we decided to get a travel trailer,
 we quickly discovered that a towing capacity

@@ -31,20 +31,25 @@
   }
   figcaption {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    padding-left: 20px;
-    color: rgba(255, 255, 255, 0.7);
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 10px;
+    top: 30px;
+    right: 50px;
+    padding-left: 0;
+    color: rgba(4, 4, 4, 0.9);
+    text-shadow: 0 5px 5px rgba(245, 245, 245, 0.7);
+    font-weight: 400;
+    font-size: 3em;
   }
+  .white {
+      color: rgba(255, 255, 255, 1);
+      text-shadow: 0 5px 5px rgba(4, 4, 4, 0.7);
+  }
+
   .page-image {
     width: 100%;
     height: 100%;
   }
 }
+
 
 .page-footer {
   display: flex;
