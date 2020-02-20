@@ -9,14 +9,14 @@ url: "https://frsanchez.github.io/" # the base hostname & protocol for your site
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Francisco Sanchez # add your name
-author-img: avatar.jpg # add your photo
+author: Francisco Sanchez
+author-img: avatar.jpg
 about-author: I am a full stack developer. Always learning and always improving.
-social-twitter: tng2000 # add your Twitter handle
-social-facebook: TimesFacts # add your Facebook handle
-social-github: frsanchez # add your Github handle
-social-linkedin: franciscodsanchez # add your Linkedin handle
-social-email: sanchezparralabs@outlook.com # add your Email address
+social-twitter: tng2000
+social-facebook: TimesFacts
+social-github: frsanchez
+social-linkedin: franciscodsanchez
+social-email: sanchezparralabs@outlook.com
 social-pinterest: franciscodsanch
 
 # Disqus
@@ -26,7 +26,7 @@ sass:
   style: :compressed # You might prefer to minify using :compressed
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-156236534-1 # Google Analytics
 
 # Build Settings
 markdown: kramdown
