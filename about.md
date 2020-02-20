@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Physisics parioned by complexity and data science
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+1. Bachelor degreein Physics Universidad Nacional
+1. Master degree in sciences Physics Universidad de los Andes
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:lamahechag@gmail.com)
