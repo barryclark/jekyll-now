@@ -1,2 +1,5 @@
 <!-- Main Js -->
+{% if page.script %}
+<script src="{{site.baseurl}}/assets/js/{{page.script}}"></script>
+{% endif %}
 <script src="{{site.baseurl}}/assets/js/main.js"></script>

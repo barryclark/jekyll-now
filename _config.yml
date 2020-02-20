@@ -31,10 +31,10 @@ analytics: UA-156236534-1 # Google Analytics
 # Build Settings
 markdown: kramdown
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
-  - jekyll-feed 
 
 paginate: 8
 paginate_path: "/page/:num"

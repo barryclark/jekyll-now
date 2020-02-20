@@ -11,9 +11,6 @@
 
   {% include analytics.html %}
 
-  {% if page.script %}
-  <script src="{{site.baseurl}}/assets/js/{{page.script}}"></script>
-  {% endif %}
-
+  {% include javascripts.html %}
 </body>
 </html>
