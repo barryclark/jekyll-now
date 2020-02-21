@@ -50,7 +50,7 @@ legal agreements, the way [balance sheets work][8] and ledgers on both sides of 
 
 Correspondency banking used to be the **only** way cross-border payments happened back in the day, but now it is almost 
 obscure and little known, "buried" under additional layers of payments systems. So much so that it was used as a window 
-for [insiders to bypass][6] the [2015 Greek capital controls][6] with almost no-one realising (all credits go to the [original source][5]).
+for [insiders to bypass][6] the [2015 Greek capital controls][78] with almost no-one realising (all credits go to the [original source][5]).
 
 There are 2 issues with using nostro/vostro accounts at a large scale.  
 * They were much easier to setup and implement as a bilateral agreement when world currencies were on [fixed exchange rates][9]. 
@@ -368,7 +368,7 @@ rise of dedicated processors.
   [3]: https://www.investopedia.com/terms/c/correspondent-bank.asp
   [4]: https://en.wikipedia.org/wiki/Nostro_and_vostro_accounts
   [5]: https://www.techiechan.com/?p=2529
-  [6]: ../images/Greel_Bank_Decision.pdf
+  [6]: ../images/Greek_Bank_Decision.pdf
   [7]: https://www.wikihow.com/Force-Refresh-in-Your-Internet-Browser
   [8]: https://www.guru99.com/assets-and-liabilities.html
   [9]: https://en.wikipedia.org/wiki/Gold_standard
@@ -436,3 +436,4 @@ rise of dedicated processors.
   [71]: https://en.wikipedia.org/wiki/Customer_lifetime_value
   [72]: https://www.forbes.com/sites/thomasbrewster/2019/03/27/millions-are-being-lost-to-apple-pay-fraudwill-apple-card-come-to-the-rescue/#134e0c10622f
   [73]: https://en.wikipedia.org/wiki/BACS#Direct_Debit
+  [78]: https://en.wikipedia.org/wiki/Capital_controls_in_Greece
