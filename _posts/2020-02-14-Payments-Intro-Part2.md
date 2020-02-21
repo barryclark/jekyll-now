@@ -368,7 +368,7 @@ rise of dedicated processors.
   [3]: https://www.investopedia.com/terms/c/correspondent-bank.asp
   [4]: https://en.wikipedia.org/wiki/Nostro_and_vostro_accounts
   [5]: https://www.techiechan.com/?p=2529
-  [6]: ../images/Greek_Bank_Decision.pdf
+  [6]: ../images/payments/Greek_Bank_Decision.pdf
   [7]: https://www.wikihow.com/Force-Refresh-in-Your-Internet-Browser
   [8]: https://www.guru99.com/assets-and-liabilities.html
   [9]: https://en.wikipedia.org/wiki/Gold_standard
