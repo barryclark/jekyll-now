@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+    <article class="post">
+      
+      {% capture url_to_use %}{{ post.url" }}{% endcapture %}
+      {% if post.redirect_url %}
+        {% capture url_to_use %}{{ post.redirect_url" }}{% endcapture %}
+      {% endif %}
+      
+      <h1><a href="{{ site.baseurl }}{{ url_to_use }}">{{ post.title }}</a></h1>
+      <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+      <div class="entry">
+         {{ post.excerpt | add: '...'}}<!-- span style="display: inline">…</span-->
+      </div>
+      <a href="{{ site.baseurl }}{{ url_to_use }}" class="read-more">Read More</a>
+     </article>
+  {% endfor %}  
+</div>
+
+<!-- Pagination links -->
+<br/>
+<div class="pagination" style="text-align: center;">
+  <div style="color:#eee;padding-bottom: .6em;">~</div>
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">⇦</a>
+  {% else %}
+    <span class="previous" style="color:#eee">⇦</span>
+  {% endif %}
+  <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">⇨</a>
+  {% else %}
+    <span class="next" style="color:#eee">⇨</span>
+  {% endif %}
+</div>
