@@ -44,7 +44,6 @@ Git Commandline
 * [Hub](https://github.com/github/hub) - hub is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier. That allows something cool like 'goto' command (='hub browse') from a git repo, that will open the browser on that repo in the current branch
 * [Macro for git commands guide](https://githowto.com/aliases) - Setting terminal macros for git commands, if for simplifying complex git commands or easy to remember commands.
 * [Setting up git graph](http://think-like-a-git.net/sections/graphs-and-git/visualizing-your-git-repository.html) - A command line option to show a git repo history graph.
-* [Extension to working with github](https://github.com/github/hub) - A command line that supplies command line access to all GitHub interface.
 
 Python
 ------
