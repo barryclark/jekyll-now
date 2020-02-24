@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stripping debug information from jlink runtime images
-excerpt: jlink also comes with some additonal plugins, some of which will help to additionaly reduce the size of the produced custom runtime image...
+excerpt: jlink comes with additonal plugins, some of which will help to additionaly reduce the size of the produced custom runtime image...
 ---
 
 <p align="center">
