@@ -30,7 +30,7 @@ E.g. `jlink --module-path mlib --strip-debug --add-modules com.greetings --outpu
 
 * `—-strip-native-debug-symbols` : strips out the native debug symbols.
 
-To remove native debug symbols, the `strip-debug plugin relies on the native Linux [`objcopy`](https://web.mit.edu/gnu/doc/html/binutils_4.html) utility. If it is not installed (ex. on Alpine Linux) or installed in a non-standard location, you will get the following exception:
+To remove native debug symbols, the `strip-debug` plugin relies on the native Linux [`objcopy`](https://web.mit.edu/gnu/doc/html/binutils_4.html) utility. If it is not installed (ex. on Alpine Linux) or installed in a non-standard location, you will get the following exception:
 
 ```
 java.io.IOException: Cannot run program “objcopy”: error=2, No such file or directory
