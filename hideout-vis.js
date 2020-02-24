@@ -3,13 +3,18 @@ var colorGold = "#C2B7A3";
 var colorBlack = "#0e0e0e";
 var colorDarkTan = "#181714";
 
+// Defaults
 var locale = "ru-RU";
 var wikiBaseUrl = "https://escapefromtarkov-ru.gamepedia.com/";
 
-var infoBox = document.getElementById("node-info");
+// Elements to mess with
+var infoBoxTitle = document.getElementById("infoBoxTitle");
+var infoBoxContent = document.getElementById("infoBoxContent");
+var ancestorCheckbox = document.getElementById("shouldShowAllAncestors");
+var container = document.getElementById("hideout-network");
 
-var checkbox = document.getElementById("shouldShowAllAncestors");
-checkbox.addEventListener("change", event => {
+
+ancestorCheckbox.addEventListener("change", event => {
   if (event.target.checked) {
     return;
   } else {
@@ -20,8 +25,6 @@ checkbox.addEventListener("change", event => {
 
 // hover effects
 var hoverChosenNode = function(values, id, selected, hovering) {
-  var node = network.body.nodes[id];
-  console.log(values);
   values.shadow = true;
   values.shadowColor = "#ff0000";
   values.shadowX = 0;
@@ -451,7 +454,6 @@ var combined = directUpgrades.concat(stationRequirements);
 var edges = new vis.DataSet(combined);
 
 // create a network
-var container = document.getElementById("hideout-network");
 var data = {
   nodes: nodes,
   edges: edges
@@ -497,8 +499,7 @@ var options = {
 var network = new vis.Network(container, data, options);
 
 function shouldShowAllAncestors() {
-  var checkbox = document.getElementById("shouldShowAllAncestors");
-  return checkbox.checked;
+  return ancestorCheckbox.checked;
 }
 
 // get all the ancestors of the node (so we can highlight, etc)
@@ -535,11 +536,10 @@ function formatRequirements(requirementsObject) {
   if (locale == "en-US") {
     output += "<h3>Items</h3>";
   }
-  if (locale = "ru-RU") {
+  if (locale == "ru-RU") {
     output += "<h3>Предметы</h3>";
   }
   if (requirementsObject.items && requirementsObject.items.length > 0) {
-    output += "<ul>";
     requirementsObject.items.forEach(itemArray => {
       // itemArray is an array, where the first item is an amount and the 2nd is an item name
       var amount = itemArray[0];
@@ -554,25 +554,24 @@ function formatRequirements(requirementsObject) {
         '">' +
         item +
         "</a>";
-      output += "<li>" + amount + " " + itemLinkHtml + "</li>";
+      output += "<h4>" + amount + " " + itemLinkHtml + "</h4>";
     });
-    output += "</ul>";
   } else {
     if (locale == "en-US") {
-      output += "<p>No item requirements!</p>";
+      output += "<h4>No item requirements!</h4>";
     }
-    if (locale = "ru-RU") {
-      output += "<p>Нет требований к товару!</p>";
+    if (locale == "ru-RU") {
+      output += "<h4>Нет требований к товару!</h4>";
     }
   }
+  output += "<br/>"
   if (locale == "en-US") {
     output += "<h3>Loyalty</h3>";
   }
-  if (locale = "ru-RU") {
+  if (locale == "ru-RU") {
     output += "<h3>Лояльность</h3>";
   }
   if (requirementsObject.loyalty && requirementsObject.loyalty.length > 0) {
-    output += "<ul>";
     requirementsObject.loyalty.forEach(vendorArray => {
       var vendor = vendorArray[0];
       var vendorLevel = vendorArray[1];
@@ -583,25 +582,24 @@ function formatRequirements(requirementsObject) {
         '">' +
         vendor +
         "</a>";
-      output += "<li>" + vendorLinkHtml + " " + vendorLevel + "</li>";
+      output += "<h4>" + vendorLinkHtml + " " + vendorLevel + "</h4>";
     });
-    output += "</ul>";
   } else {
     if (locale == "en-US") {
-      output += "<p>No vendor loyalty requirements!</p>";
+      output += "<h4>No vendor loyalty requirements!</h4>";
     }
-    if (locale = "ru-RU") {
-      output += "<p>Нет требований лояльности к продавцу!</p>";
+    if (locale == "ru-RU") {
+      output += "<h4>Нет требований лояльности к продавцу!</h4>";
     }
   }
+  output += "<br/>"
   if (locale == "en-US") {
     output += "<h3>Skills</h3>";
   }
-  if (locale = "ru-RU") {
+  if (locale == "ru-RU") {
     output += "<h3>Умение</h3>";
   }
   if (requirementsObject.skills && requirementsObject.skills.length > 0) {
-    output += "<ul>";
     requirementsObject.skills.forEach(skillArray => {
       var skill = skillArray[0];
       var skillLevel = skillArray[1];
@@ -615,15 +613,14 @@ function formatRequirements(requirementsObject) {
         '">' +
         skill +
         "</a>";
-      output += "<li>" + skillLinkHtml + " " + skillLevel + "</li>";
+      output += "<h4>" + skillLinkHtml + " " + skillLevel + "</h4>";
     });
-    output += "</ul>";
   } else {
     if (locale == "en-US") {
-      output += "<p>No skill requirements!</p>";
+      output += "<h4>No skill requirements!</h4>";
     }
-    if (locale = "ru-RU") {
-      output += "<p>Нет требований к навыкам!</p>";
+    if (locale == "ru-RU") {
+      output += "<h4>Нет требований к навыкам!</h4>";
     }
   }
   return output + "</div>";
@@ -640,9 +637,8 @@ network.on("click", function(params) {
       // highlight all ancestor nodes recursively
       hoverAllAncestors(node.id);
     }
-    var infoBoxHtml = "<h2>" + node.options.title + "</h2>";
-    infoBoxHtml += "\n" + formatRequirements(node.options.requirements);
-    infoBox.innerHTML = infoBoxHtml;
+    infoBoxTitle.innerHTML = node.options.title;
+    infoBoxContent.innerHTML = formatRequirements(node.options.requirements);
   }
 });
 
@@ -651,20 +647,9 @@ network.once("beforeDrawing", () => {
   container.style.height = "85vh";
 });
 
-// brief animation to show off interactivity
-network.once("afterDrawing", function() {
-  network.fit({
-    animation: {
-      duration: 300,
-      easingFunction: "linear"
-    }
-  });
-});
-
 // show or hide the roadmap
 function toggleRoadmap() {
   var rm = document.getElementById("roadmap");
-  console.log(rm.style.display);
   if (!rm.style.display || rm.style.display === "none") {
     rm.style.display = "table";
   } else {
@@ -682,6 +667,8 @@ function switchToEn() {
     edges: edges
   };
   network.setData(newData);
+  infoBoxTitle.innerHTML = "Hideout Graph";
+  infoBoxContent.innerHTML = "<h3>Scroll to zoom, click to activate nodes.</h3>";
 }
 
 function switchToRu() {
@@ -694,4 +681,6 @@ function switchToRu() {
     edges: edges
   };
   network.setData(newData);
+  infoBoxTitle.innerHTML = "укрытие диаграмма";
+  infoBoxContent.innerHTML = "<h3>диаграмма интерактивный, попробуйте!</h3>";
 }
