@@ -36,7 +36,7 @@ To remove native debug symbols, the `strip-debug` plugin relies on the native Li
 java.io.IOException: Cannot run program “objcopy”: error=2, No such file or directory
 ```
 
-You can solve that by specifying the path of `objcopy` :
+You can solve that by specifying the path of `objcopy`:
 
 ```
 jlink … --strip-native-debug-symbols objcopy=/usr/bin/objcopy …
