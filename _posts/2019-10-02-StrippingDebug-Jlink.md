@@ -1,5 +1,3 @@
-2019-10-02-StrippingDebug-Jlink.md
-
 ---
 layout: post
 title: Stripping debug information from jlink runtime images
