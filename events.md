@@ -24,7 +24,7 @@ April 27 - 30: [Red Hat Summit](https://www.redhat.com/en/summit), San Francisco
 May 19 - 21: [Microsoft Build](https://www.microsoft.com/en-us/build), Seattle
 
 June 11: [OpenUK Awards](https://openuk.uk/), London
-* Judge and presenter
+* Judge
 
 June 21 - 25: [ISC (International Supercomputing)](https://www.isc-hpc.com/), Frankfurt
 
