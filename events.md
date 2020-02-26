@@ -33,6 +33,9 @@ July 28 - 30: [KubeCon + CloudNativeCon + Open Source Summit China](https://www.
 September 2 - 4: [Kubernetes Community Days London](http://kubernetesdays.london/), London
 * Chair
 
+September 10: [Swiss Cloud Native Day](https://cloudnativeday.ch/), Bern
+* Keynote
+
 September 15 - 16: [Open Source Summit Japan](https://events.linuxfoundation.org/open-source-summit-japan/), Tokyo
 
 September 28 - October 2: [Grace Hopper](https://ghc.anitab.org/2020-attend/), Orlando, Florida
