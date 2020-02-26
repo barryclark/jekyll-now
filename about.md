@@ -6,9 +6,9 @@ description: "Cheryl Hung's photo, biography and contact details"
 
 <img src="/images/headshot.jpeg" alt="Cheryl Hung, Director of CNCF" class="about-image"/>
 
-Cheryl Hung is Director of Ecosystem at the Cloud Native Computing Foundation, where she drives adoption of cloud native infrastructure. The CNCF hosts open source projects including Kubernetes, Prometheus and Envoy as a non-profit under the Linux Foundation
+Cheryl Hung is Director of Ecosystem at the Cloud Native Computing Foundation, where she drives adoption of cloud native infrastructure. The CNCF hosts open source projects including Kubernetes, Prometheus and Envoy as a non-profit under the Linux Foundation.
 
-She founded the 5000+ strong [Cloud Native London meetup](https://www.oicheryl.com/cloudnativelondon/) and as well as the upcoming [Kubernetes Community Days London](https://kubernetescommunitydays.org/events/2020-london/). She holds a Masters in Computer Science from the University of Cambridge, King's College, and previously built Google Maps as a backend software engineer.
+She founded the [Cloud Native London meetup](https://www.oicheryl.com/cloudnativelondon/) and as well as creating the upcoming [Kubernetes Community Days London](https://kubernetescommunitydays.org/events/2020-london/). She holds a Masters in Computer Science from the University of Cambridge, King's College, and previously built Google Maps as a backend software engineer.
 
 # Contact
 
