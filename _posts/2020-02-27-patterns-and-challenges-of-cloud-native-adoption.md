@@ -11,8 +11,6 @@ tags:
   - "2020"
 ---
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/viZ6X0cokQ2ps9" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/CherylHung4/patterns-and-challenges-of-cloud-native-adoption-229331961" title="Patterns and challenges of cloud native adoption" target="_blank">Patterns and challenges of cloud native adoption</a> </strong> from <strong><a href="https://www.slideshare.net/CherylHung4" target="_blank">Cheryl Hung</a></strong> </div>
-
 I had a great time at Cloud Native Prague, live polling the audience and comparing how Prague is adopting cloud native with the CNCF Survey 2019.
 
 * As cloud native becomes mainstream, deployments are getting larger across a range of metrics - number of containers, machines and clusters.
