@@ -18,7 +18,7 @@ Company sizes range from startups to large enterprises, with fintech particularl
 * You are welcome to [send a speaker](/cloudnativelondon/speak), but please no sales pitches. Due to high demand, the next available speaking slot is end of 2020.
 * Sponsors who commit for at least twelve months are listed on [https://www.meetup.com/Cloud-Native-London​](https://www.meetup.com/Cloud-Native-London).
 
-Each sponsor contributes £600 (no VAT) per event.
+Each sponsor contributes £600 (no VAT) per event. From March 16th 2020 onwards, invoices will include VAT for a total of £720 per event.
 
 <button onclick="location.href='/cloudnativelondon/sponsorship'" type="button">
          Sponsor event(s)</button>
