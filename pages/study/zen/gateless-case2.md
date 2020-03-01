@@ -71,15 +71,15 @@ Hu ho...
 
 Don't reply!
 
-> The old man __replied__, "I am not a human being...
+> The old man __replied__...
 
 Oh no, you did!
 
-What does this reply indicate? The old man indeed seems to be the object of the law of cause and effect.
-
-> The old man replied, "__I__ am not a human being...
+> __I__ am not a human being...
 
 Starting with "I", not a great start for an answer.
+
+What does this reply indicate? The old man indeed seems to be the object of the law of cause and effect.
 
 Would he answer __this__ question if he was enlightened?
 
@@ -105,11 +105,10 @@ That's a trap!
 
 It seems better to just not answer anything at all.
 
-> After the meal, Paichang led the monks to the foot of a rock on the far side of the mountain. And there, with his staff, he poked out the body of a dead fox. He then performed the ceremony of cremation.
-
-Ritual and liturgy, is that the answer?
 
 ## A read about the ritual
+
+Ritual and liturgy, is that the answer to the question?
 
 > Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
 
@@ -145,7 +144,7 @@ Old Paichang does not belong to the same side of the mountain, still he deserves
 >
 > Hearing this, the old man __immediately was enlightened__. Making his bows he said, "I am released from the body of a fox."
 
-It sounds quite ironic that, old Paichang has the view of gradual enlightenment, and __because of that__, he is reborn five hundred times as a fox. The irony is that he had to be reborn that many times to one day become enlightened... after hearing the view of sudden enlightenment. The view of gradual enlightenment __became right__ so that old Paichang could realize it is __wrong__. That must be a karmic joke.
+It sounds quite ironic that, old Paichang has the view of gradual enlightenment, and (seemingly) __because of that__, he is reborn five hundred times as a fox. The irony is that he had to be reborn that many times to one day become enlightened... after hearing the view of sudden enlightenment. The view of gradual enlightenment __became right__ so that old Paichang could realize it is __wrong__. That must be a karmic joke.
 
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
 >
