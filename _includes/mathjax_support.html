@@ -11,6 +11,9 @@ MathJax.Hub.Config({
     processEscapes: true,
   }
 });
+CommonHTML: {
+  scale: 85
+}
 MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
 	  alert("Math Processing Error: "+message[1]);
 	});
