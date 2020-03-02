@@ -30,8 +30,10 @@ body {
   width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    font-family: "Nanum Myeongjo", ;
+}
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Times New Roman";
   color: $darkGray;
   font-weight: bold;
 
