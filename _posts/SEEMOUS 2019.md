@@ -1,0 +1,72 @@
+---
+layout: post
+title: SEEMOUS 2019
+---
+
+
+
+## SEEMOUS 2019
+
+### P1
+
+$[0,1]$의 값을 갖는 무한 실수열 $\{x_{n}\}$이 다음 조건을 만족하면 $\{x_{n}\}$을 *Devin sequence*라고 한다.
+$$
+\lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^{n}f(x_{i}) = \int_{0}^{1} f(x)dx
+$$
+이 때, $\{x_{n}\}$이 *Devin sequence*가 될 필요충분조건은
+$$
+\forall k \ge 0 \quad \lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^{n}x_{i}^{k} = \frac{1}{k+1}
+$$
+인 것임을 보여라.
+
+#### Solution sketch
+
+$\implies$는 자명.
+
+$\impliedby$는 Weierstrass.
+
+
+
+### P2
+
+$A_{1}, A_{2}, \cdots, A_{m} \in \mathfrak{M}_{n,n}(\mathbb{R})$에 대하여 다음을 만족하는 $\{\varepsilon_{i}\} \in \{-1,1\}^{m}$이 존재함을 보여라.
+$$
+\text{tr}\left[ \left(\sum_{i=1}^{n} \varepsilon_{i}A_{i}\right)^{2} \right] \ge \text{tr}[A_{1}^{2}] + \cdots + \text{tr}[A_{m}^{2}]
+$$
+
+#### Solution
+
+가능한 모든 $\varepsilon_{i}$값에 대해서 좌변을 모두 더하면 $2^{n}\left( \text{tr}(A_{1}^{2}) + \cdots +\text{tr}(A_{n}^{2}) \right)$가 되는 것을 확인할 수 있다. 당연히 평균 이상인 값이 존재하므로 OK. $\square$
+
+### P3
+
+$A, B \in \mathfrak{M}_{n,n}(\mathbb{C})$에 대해 $B^{2} = B$가 성립한다. 이 때 $\text{rank}(AB-BA) \le \text{rank}(AB + BA)$가 성립함을 보여라.
+
+#### Solution
+
+$\ker (B) = V$, $\ker(I-B) = W$라고 하면 $F^{n} = V \oplus W$가 성립한다.  따라서 $A = P + Q$ ($P \in \mathcal{L}(F^{n},V)$, $Q \in \mathcal{L}(F^{n},W)$ 꼴로 나타내자. 즉, $BP = 0, BQ = Q$가 된다.
+
+이 때 임의의 $x \in F^{n}$은 $x = v + w$ ($v \in V, w \in W$)로 나타낼 수 있으므로
+$$
+(AB-BA)(v+w) = Aw-Q(v+w) = Pw - Qv
+$$
+위 식에 의해 $\text{im}(AB-BA) = P(W) \oplus Q(V)$가 된다. 마찬가지로 $\text{im}(AB + BA)= (P+2Q)(W) \oplus Q(V)$가 된다. rank를 비교하기 위해서는 두 space의 dimension을 비교하면 된다.
+
+$P(\mathcal{W})$가 $P(W)$의 기저가 되는 $\mathcal{W} = \{w_{1},\cdots,w_{l}\} \subset W$, 마찬가지로 $Q(\mathcal{V})$가  $Q(V)$의 기저가 되는 $\mathcal{V}=\{v_{1},\cdots,v_{m}\} \subset V$가 존재한다. 이 때, $\{(P+2Q)(w_{1}), \cdots, (P+2Q)(w_{l}), Q(v_{1}), \cdots, Q(v_{m})\}$이 linearly independent임을 보이자. 만약 실수 $c_{1}, \cdots, c_{l}, d_{1}, \cdots, d_{m}$에 대해
+
+ $\sum_{i=1}^{l} c_{i}(P+2Q)(w_{i}) + \sum_{i=1}^{m}d_{i}Q(v_{i})=0$이라고 하자. 양변에 $I-B$를 곱하면 $\sum_{i=1}^{l}c_{i}P(w_{i}) = 0$에서 $c_{i} = 0$이다. 따라서 $\sum_{i=1}^{m} d_{i}Q(v_{i}) = 0$의 양변에 $B$를 곱하면 $d_{i}=0$이 유도되어 증명 끝. $\square$
+
+### P4
+
+(a) $n \ge 1$에 대해 $\int_{0}^{1} x^{n-1}\ln x dx$를 계산하라.
+
+(b) 다음의 값을 계산하라.
+$$
+\sum_{n=1}^{\infty} \sum_{k=n+1}^{\infty} \frac{(-1)^{k+1}}{(k+1)^{2}}
+$$
+
+#### Solution sketch
+
+(a)의 답은 $-\frac{1}{n^2}$.
+
+(b)는 몇 가지 검증되지 않은 과정을 거치면 $\ln 2$라는 답을 얻을 수 있다.
