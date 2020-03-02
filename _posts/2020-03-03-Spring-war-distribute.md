@@ -60,4 +60,4 @@ resource에서 필요한 파일들을 잊지않고 포함시켜라 라는 의미
 
 프로젝트 규모가 커질 경우 개발기와 운영기를 나누어 properties를 관리하곤 하는데, 이 때 이 위치에서 dev와 real을 나눌 수 있다.
 
-![war-build.png]({{ site.baseurl }}/images/war-build.PNG)
+![war-resources.png]({{ site.baseurl }}/images/war-resources.PNG)
