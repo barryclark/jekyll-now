@@ -11,9 +11,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    {% if page.use_math %}
+    <!-- Use MathJax syntax regardless of page type-->
     {% include mathjax_support.html %}
-    {% endif %}
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
