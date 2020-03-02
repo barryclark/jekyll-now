@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+## TAMREF Yun
 
-### More Information
+[My Tistory Blog](https://tamref.com)
 
-A place to include any other types of information that you'd like to include about yourself.
+### Affiliation
+
+- Dept. of Chemistry, College of Natural Sciecne, Seoul National University (2019.3-Present)
+- Seoul Science High School (2016.3-2019.2)
+- [Team Woodencompass](https://facebook.com/teamwoodencompass)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[tamref.yun [at sign goes here] snu.ac.kr](mailto:tamref.yun@snu.ac.kr)
