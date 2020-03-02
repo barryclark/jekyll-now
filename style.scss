@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 24px;//orig 30px
   a {
     color: inherit;
     text-decoration: none;
@@ -59,17 +59,17 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;//orig 24px
   text-decoration: none;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;//orig 20px
   text-decoration: none;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 18px;//orit 18px
   color: $gray;
   text-decoration: none;
 }
