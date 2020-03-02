@@ -44,13 +44,14 @@ java project packaging에는 크게 2가지 방법이 존재한다.
 간단히, java 파일을 모아두는 압축이 jar, jar를 포함, 웹 구성에 필요한 자원들까지 한데 모은 것이 war라 생각하면 된다.
 
 이를 결정할 수 있도록 도와주는 부분이다.
-![war-packaging.png]({{ site.baseurl }}/images/war-packaging.png)
+
+![war-packaging.png]({{ site.baseurl }}/images/war-packaging.PNG)
 
 
 ### 둘째. build 태그에 적절한 plugin을 넣어주는 것이 필요하다.
 pom.xml을 공부하면서 가장 까다로웠던 부분이다. 내가 이 프로젝트를 빌드하기 위해 어떤 plugin을 써야하며, 어떤 provided를 주어야 하며, configuration으로 어떤 종류가 있는지 알 수가 없었다. (영어를 능숙했다면 maven 문서들을 술술 읽었겠지만 나는 무리야...)
 
-![war-build.png]({{ site.baseurl }}/images/war-build.png)
+![war-build.png]({{ site.baseurl }}/images/war-build.PNG)
 
 
 ### 셋째. Resource 파일 위치를 명시하라
@@ -58,4 +59,5 @@ resource에서 필요한 파일들을 잊지않고 포함시켜라 라는 의미
 필자의 경우, 여기에 myBatis config와 mapper를 넣어놓고 있기 때문에 넣었다.
 
 프로젝트 규모가 커질 경우 개발기와 운영기를 나누어 properties를 관리하곤 하는데, 이 때 이 위치에서 dev와 real을 나눌 수 있다.
-![war-build.png]({{ site.baseurl }}/images/war-build.png)
+
+![war-build.png]({{ site.baseurl }}/images/war-build.PNG)
