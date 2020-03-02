@@ -105,11 +105,6 @@ public:
   //with all players at zero steps
   game_state(int n);
 
-  //NEW: create new game from vector of steps
-  //note that _steps is taken by rvalue and moved;
-  game_state(std::vector<int> && _steps) : steps(std::move(_steps))
-  {/*check that steps has legal values*/}
-
   //NEW: l-value ref qualifier
   game_state add_steps(int player_index, int steps) const &;
 
@@ -131,9 +126,51 @@ const int game_state::MAX_STEPS = 20;
 Let's have a look at what has changed. The constructors are self explanatory, so let's focus on the interesting bits.
 
 #### Member Variables and Getters
-The member variable is mutable and has a `const`-qualified getter method now. There is still no setter method.
+The member variable is mutable and has a `const`-qualified getter method now. There is still no setter method. So from the *outside* this member behaves as if immutable.
 
 #### L-Value and R-Value Overloads for State Transitions
-HIER WEITER: erst lvalue overload which works on lvalues (and lvalue references) nud erklären, dass analog wie oben ein neuer vector angelegt werden kann und dann IN DIE KLASSE GEMOVED wird. Das ist aber konzeptionell nicht anders als oben.
+I have declared two overloads of the `add_steps` function, which are distiguished by their [ref-qualifiers](https://en.cppreference.com/w/cpp/language/member_functions#ref-qualified_member_functions). You can read up on ref-qualifiers [here](https://akrzemi1.wordpress.com/2014/06/02/ref-qualifiers/). In short, the `&` qualified function works on lvalues and the `&&` qualified method on rvalue instances of the class.
 
-DANN den RVALUE OVERLOAD WELCHER DEN VECTOR SELBST IN DIE NEUE KLASSE MOVED UND DANN verändert und die neue klasse zurückgibt. ODER SOLLTE MAN DEN VECTOR DER KLASSE SELBER VERÄNDERN UND *this zurückgeben?? -> stackoverflow
+##### Lvalue and Rvalue Semantics
+To differentiate rvalues and lvalues we can follow Scott Meyers advice in [Effective Modern C++](https://www.oreilly.com/library/view/effective-modern-c/9781491908419/):
+> A useful heuristic to determine whether an expressin is an lvalue is to ask if you can take its address. If you can, it typically is. If you can't it's usually an rvalue.
+
+So let's say we have the following code:
+
+```c++
+game_state game;
+game_state game2 = game.add_steps(0,6);
+```
+Here we know `game` is an lvalue because we can take its adress. So the call to `add_steps` operates on an lvalue. The temporary object returned from this function call is an rvalue. We cannot take its address. Although we initialize the lvalue `game2` with the result of the function call, it is important to note that the right hand side of the `=` sign is an rvalue. Now consider this:
+
+```c++
+game_state game;
+game_state game2 = game.add_steps(0,6).add_steps(1,4);
+```
+So we know now that the second call of `add_steps` operates on an rvalue. To the user of the class it looks all the same, but we as implementors can take advantage of the call to the rvalue qualified method by avoiding unneccessary copies.
+
+##### Implementations
+The implementation for lvalues should not look suprising:
+
+```c++
+game_state add_steps(int player_index, int steps) const &
+{
+  game_state next_game(*this);
+  next_game.data.at(player_index) += steps;
+  return next_game;
+}
+```
+
+So we create a copy of the game by calling the copy constructor which is implicitly defined for this class. Then we mutate the data of the copy and return the copy. Only we as implementors can mutate the data of the class because the fields are declared private. The rvalue overload can look like this:
+
+```c++
+game_state add_steps(int player_index, int steps) &&
+{
+  data.at(player_index) += steps;
+  return std::move(*this);
+}
+```
+Here we mutate the objects own data and return a copy of the object that was constructed using the *move constructor*. Hence the call to `std::move` before returning `*this`. The move constructor avoids an unneccessary copy of a vector for temporary objects. If we had declared the member vector `const` then we could not have moved from it.
+
+# Conclusion and Further Reading
+We have seen how to implement immutability in C++ two different ways. The first way of using public `const` members has the advantage of simplicity. One caveat is that we have to implement a constructor taking all member fields for initialization. The second way was providing an immutable interface that takes advantage of move semantics. The added complexity might increase performance. However, not all types have cheap move operations. For further reading I heartily recommend [Functional Programming in C++](https://www.manning.com/books/functional-programming-in-c-plus-plus) where the author presents immutable data structures for more sophisticated use cases.
