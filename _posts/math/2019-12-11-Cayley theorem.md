@@ -83,7 +83,7 @@ $$f(x) = x$$인 점들이 root가 되는 Rooted forest와의 bijection. 끝.
 
 트리 $$T$$의 Prufer sequence (Prufer code)는 $$T$$를 완전히 결정하는 길이 $$n-2$$의 수열로, 다음 시행을 $$n-2$$번 수행하여 얻어진다; 
 
-> 번호가 가장 작은 leaf를 제거하고, 그 유일한 이웃을 적는다] 
+> 번호가 가장 작은 leaf를 제거하고, 그 유일한 이웃을 적는다
 
 
 
