@@ -73,7 +73,9 @@ Rooted forest에 새로운 정점 $$n+1$$을 추가하고, 모든 root를 $$n+1$
 
 
 
-##### Proof. $$f(x) = x$$인 점들이 root가 되는 Rooted forest와의 bijection. 끝.
+##### Proof. 
+
+$$f(x) = x$$인 점들이 root가 되는 Rooted forest와의 bijection. 끝.
 
 
 
