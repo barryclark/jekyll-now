@@ -68,7 +68,7 @@ kramdown:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
   lsi: false
-  excerpt_separator: <!--more-->
+  excerpt_separator: "\n\n"
   incremental: false
 
 # Set the Sass partials directory, as we're using @imports
