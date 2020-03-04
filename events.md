@@ -14,8 +14,6 @@ March 10 – 12: [The Linux Foundation Member Summit](https://events.linuxfounda
 
 March 23 - 27: [SUSECon](https://www.susecon.com/), Dublin, Ireland
 
-March 31 - April 2: [KubeCon + CloudNativeCon Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/), Amsterdam
-
 April 27 - 30: [Red Hat Summit](https://www.redhat.com/en/summit), San Francisco
 
 May 19 - 21: [Microsoft Build](https://www.microsoft.com/en-us/build), Seattle
