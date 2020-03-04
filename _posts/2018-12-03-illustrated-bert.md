@@ -58,7 +58,7 @@ Other examples for such a use-case include:
   * Input: sentence. Output: "Claim" or "Not Claim"
   * More ambitious/futuristic example:
      * Input: Claim sentence. Output: "True" or "False"
-  * [Full Fact](https://fullfact.org/) is an organization building automatic fact-checking tools for the benefit of the public. Part of their pipeline is a classifier that reads news articles and detects claims (classifies text as either "claim" or "not claim") which can later be fact-checked (by humans now, by with ML later, hopefully).
+  * [Full Fact](https://fullfact.org/) is an organization building automatic fact-checking tools for the benefit of the public. Part of their pipeline is a classifier that reads news articles and detects claims (classifies text as either "claim" or "not claim") which can later be fact-checked (by humans now, with ML later, hopefully).
   * Video: [Sentence embeddings for automated factchecking - Lev Konstantinovskiy](https://www.youtube.com/watch?v=ddf0lgPCoSo).
 
 
