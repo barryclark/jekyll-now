@@ -43,7 +43,7 @@ webapps라는 Directory에 war 파일을 복사해놓자.
 위 캡처는 conf Directory에 있는 server.xml 설정파일 중 일부를 가져온 것이다.
 하단에 Context 태그 2개를 볼 수 있는데, 첫번째 태그는 ~base에 있는 application 1을 "/~"라는 path를 root로 삼아 보여주겠다 라는의미를 가지고 있다. 보통 war 파일을 생성하면 해당 war 파일의 프로젝트 명과 버전이 이름으로 되는데 이를 그대로 사용하게 되면 
 
-![tomcat_url.png]({{ site.baseurl }}/images/tomcat_url.PNG)
+![tomcat-url.png]({{ site.baseurl }}/images/tomcat-url.PNG)
 
 위 캡처처럼 주소가 난잡해지게 된다.
 
