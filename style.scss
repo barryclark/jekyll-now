@@ -200,15 +200,20 @@ table {
 //
 
 .wrapper-masthead {
-  background-image: url("images/mytable.jpg");
+  background-image: url("images/mytable_full.jpg");
   margin-bottom: 50px;
   text-align: -webkit-center;
   height: 352px;
 
   @include semiMobile {
+    background-image: url("images/gf_semiMobile.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @include mobile {
+    background-image: url("images/mytable_mobile.jpg");
   }
 }
 
