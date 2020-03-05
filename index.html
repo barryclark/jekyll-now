@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
     {% if post.category == "blog" %}
       <article class="post">
-        <h1><a href="{{ site.baseurl }}{{ post.url }}" style="color:#32859e;">{{ post.title }}</a></h1>
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
         {{ post.subtitle }}
       </article>
     {% endif %}
