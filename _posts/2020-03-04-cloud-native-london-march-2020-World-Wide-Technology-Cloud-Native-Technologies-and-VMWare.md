@@ -18,9 +18,9 @@ Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](h
 ## Kubernetes Community Days London
 
 Join us for the first ever Kubernetes Community Days London on 3-4 September 2020 at the Emmanuel Centre, Westminster. For more info, [check out the website](https://kubernetescommunitydays.org/events/2020-london/).
-The CFP has just launched, [apply to speak at KCD London](https://kubernetescommunitydays.org/events/2020-london/speakers/)! If you’d like to attend, sponsor or volunteer, register your interest at [kubernetesdays.london](kubernetesdays.london). 
+The CFP has just launched, [apply to speak at KCD London](https://kubernetescommunitydays.org/events/2020-london/speakers/)! If you’d like to attend, sponsor or volunteer, register your interest at [kubernetesdays.london](kubernetesdays.london).
 
-![Richard Simon](images/Richard Simon.jpg)
+![Richard Simon](/images/RichardSimon.jpg)
 
 First up, Richard Simon from World Wide Technology told us about the Cloud State Of Play. His takeaways are that:
 
@@ -28,9 +28,9 @@ First up, Richard Simon from World Wide Technology told us about the Cloud State
 * Organisations that are looking to migrate or have migrated will benefit from a Cloud Performance and Hosting Candidacy, to optimise their cloud footprint, as well as identifying the low-hanging fruit workloads.
 * Selecting a partner that is impartial and will take an organisation's requirements from idea to outcome - not just offer recommendations - is a key differentiator, when selecting a cloud partner for your journey.
 
-![Pradeep Bhadani](images/Pradeep Bhadani.jpg)
+![Pradeep Bhadani](/images/PradeepBhadani.jpg)
 
-Next up, Pradeep Bhadani from Cloud Native Technologies talked about how to Build and Test GCP Infrastructure using Terraform Modules. He concluded that: 
+Next up, Pradeep Bhadani from Cloud Native Technologies talked about how to Build and Test GCP Infrastructure using Terraform Modules. He concluded that:
 
 * Terraform is an open source, very powerful tool to implement Infrastructure as Code.
 * Terraform modules can really help to build infrastructure in quickly and in repeatable fashion.
@@ -38,7 +38,7 @@ Next up, Pradeep Bhadani from Cloud Native Technologies talked about how to Buil
 
 Check out [his slides](https://www.slideshare.net/PradeepBhadani1/build-and-test-gcp-infrastructure-using-terraform-module-229687787).
 
-![Naadir Jeewa](images/Naadir Jeewa.jpg)
+![Naadir Jeewa](/images/NaadirJeewa.jpg)
 
 Finally,  Naadir Jeewa from VMWare closed out our evening by describing “Declarative cluster management using Kubernetes all the way down” - The why and how of Kubernetes Cluster API. He summed it up with these takeaways:
 
