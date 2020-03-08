@@ -200,6 +200,16 @@ Before and after the turning point are the same. Old Paichang was enlightened bu
 
 But still, __something__ must have turned, but __what__ ? __What__ could be _"released from the body of the fox"_ ?
 
+# Dogen's slap
+
+At this point in my exploration, I read Dogen's commentary on this case. This is the chapter of the Shobogenzo titles "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\].
+
+Here's a couple of excerpts I took right in the face:
+
+> If being reduced to the state of a wild fox was the inevitable consequence of answering a trainee’s question inaccurately, then how many thousands of myriad times would the Rinzais and Tokusans of more recent times, along with their disciples, have been reduced to being wild foxes as a consequence? And apart from them, senior monks who have made mistakes over the past two or three hundred years would certainly have become innumerable foxes.
+
+> If you were to say, “When someone who was a bystander spoke a triggering phrase concerning causality, that freed another from the mind of a wild fox,” well, the great earth with its mountains and rivers has already been giving forth innumerable triggering expressions concerning causality and is continually doing so. But even so, the old man had not yet dropped off the mind of a wild fox in the past, and he only dropped it off due to the later Abbot’s triggering words concerning causality.
+
 ## Unsorted notes
 
 Enlightenment itself is impermanent?
@@ -207,4 +217,23 @@ Enlightenment itself is impermanent?
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given the right answer __each time__ he was asked a question -- __what would have happened then__?"
 
 How many times does one have to answer that question?  
-The answer is not the issue here, the answer did not cause old Paichang to be reborn five hundred times as a fox. There is no relationship between that cause and that effect?
+The answer is not the issue here, the answer did not cause old Paichang to be reborn five hundred times as a fox. There is no relationship between that cause and that effect.
+
+## Composing an answer?
+
+After spending a couple of months practicing with this koan, I was suggested to focus on the question. I started composing answers trying to capture all those glimpses of understanding I had. Still not satisfied with any of those, probably never will be.
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- Watch your steps if you don't want to fall.
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- _Unshakable is the liberation of my mind. This is my last birth. Now there is no more renewed existence._ \[[SN 56.11](https://suttacentral.net/sn56.11/en/bodhi)\]
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- When the ox walks into the mud, the mud sticks to his feet.
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- The gravel hits the bamboo, the gravel hits the floor, two hits, one sound.
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- A waterfall is just a river cut in half.
