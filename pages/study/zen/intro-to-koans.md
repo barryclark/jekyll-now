@@ -16,6 +16,20 @@ permalink: /pages/study/zen/intro-to-koans/
 
 Note: this is still work in progress!
 
+## How to start?
+
+Here's a couple of thoughts to start practicing with Koans.
+
+1. Read the short article on [How to Practice Zen Koans](https://www.lionsroar.com/how-to-practice-zen-koans/) by John Tarrant
+
+2. Read this page, relate the quotes and notes to one another, compare with John Tarrant's approach, identify what's the point of the practice for you.
+
+3. Talk about it with a Zen teacher in your Sangha, or a fellow practitioner.
+
+4. Pick a collection to start with, like the _Mumonkan_ which is easy to access.
+
+5. Just do it, see how it goes, raise your concerns during [Dokusan](https://www.lionsroar.com/dharma-dictionary-dokusan/).
+
 ## List of well-known koan collections
 
 - _Hekiganroku_: the [Blue Cliff Record](https://en.wikipedia.org/wiki/Blue_Cliff_Record), a collection of koans originally compiled in Song China in 1125, and then expanded into its present form by Chan master [Yuanwu Keqin](https://en.wikipedia.org/wiki/Yuanwu_Keqin) (1063–1135).
@@ -72,7 +86,7 @@ Note: this is still work in progress!
 > 1. Do not calculate according to your imagination;
 > 2. Let not your attention be drawn where the master raises his eyebrows or twinkles his eyes;
 > 3. Do not try to extract meaning from the way the koan is worded;
-> 4. Do not try to demnonstrate on the words;
+> 4. Do not try to demonstrate on the words;
 > 5. Do not think that the sense of the koan is to be grasped where it is held out as an object of thought;
 > 6. Do not take Zen for a state of mere passivity;
 > 7. Do not judge the koan with the dualistic standard of yu (asti) and wu (nasti);
