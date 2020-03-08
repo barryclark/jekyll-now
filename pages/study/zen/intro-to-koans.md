@@ -6,16 +6,22 @@ permalink: /pages/study/zen/intro-to-koans/
 
 **Learning Objectives**:  
 - Define what are koans
-- Describe the different ways to practice with koans
+- Explore the different ways to practice with koans
 - Provide some guidance to start
 
 **Reading Material**:  
 - [How to Practice Zen Koans](https://www.lionsroar.com/how-to-practice-zen-koans/) by John Tarrant
 
-**Motivations** - This is an attempt to **introduce beginners** to the study of koans. I am a beginner myself (still and always), so I have tried to find my way through the literature, and with recommendations from a Zen [Roshi](https://en.wikipedia.org/wiki/R%C5%8Dshi). Here are a few **excerpts and notes** that could help you start.
+**Motivations** - This is an attempt to **introduce beginners** to the study of koans. I am a beginner myself (still and always). I have tried to find my way through the literature, and took recommendations from a Zen [Roshi](https://en.wikipedia.org/wiki/R%C5%8Dshi). Here are a few **excerpts and notes** I could find from literature, that could help you start.
 
 Note: this is still work in progress!
 
+## List of well-known koan collections
+
+- _Hekiganroku_: the [Blue Cliff Record](https://en.wikipedia.org/wiki/Blue_Cliff_Record), a collection of koans originally compiled in Song China in 1125, and then expanded into its present form by Chan master [Yuanwu Keqin](https://en.wikipedia.org/wiki/Yuanwu_Keqin) (1063–1135).
+- _Mumonkan_: the [Gateless Barries](https://en.wikipedia.org/wiki/The_Gateless_Barrier) (or Gateless Gate), a collection of 48 koans compiled in the early 13th century by the Chinese Zen master [Wumen Huikai](https://en.wikipedia.org/wiki/Wumen_Huikai) (1183–1260)
+- _Shōyōroku_: the [Book of Serenity](https://en.wikipedia.org/wiki/Book_of_Equanimity) (or Book of Equanimity), comprises a collection of 100 koans written by the Chan Buddhist master [Hongzhi Zhengjue](https://en.wikipedia.org/wiki/Hongzhi_Zhengjue) (1091–1157), together with commentaries by [Wansong Xingxiu](https://en.wikipedia.org/wiki/Wansong_Xingxiu) (1166–1246)
+- _Shinjoshobogenzo_: Dogen's [Treasury of the True Dharma Eye](https://en.wikipedia.org/wiki/Shinji_Sh%C5%8Db%C5%8Dgenz%C5%8D), 300 cases compiled by the founder of the Soto School of Zen [Eihei Dogen](https://en.wikipedia.org/wiki/D%C5%8Dgen) between 1223-1227
 
 ## What are koans?
 
@@ -29,21 +35,21 @@ Note: this is still work in progress!
 
 ## How to approach koans?
 
-> [Composing a koan, in addition to the case, commentaries, capping verses, footnotes...] finally there is kyogai, the way in which a koan affects your consciousness - in other words, the effect it has on your life. This is ultimately where it counts. Because no matter how many hundreds of koans you pass through, if they do not change the way you relate to the rest of the world, then the are nothing but intellectual exercises. [...] Koan introspection is not about gaining information; it is about transforming your life. - ([Loori, 1990](#loori2005))
+> [Beyond the components of a koan, in addition to the case, commentaries, capping verses, footnotes...] finally there is _kyogai_, the way in which a koan affects your consciousness - in other words, the effect it has on your life. This is ultimately where it counts. Because no matter how many hundreds of koans you pass through, if they do not change the way you relate to the rest of the world, then the are nothing but intellectual exercises. [...] Koan introspection is not about gaining information; it is about transforming your life. - ([Loori, 1990](#loori2005))
 
 > Koans are not riddles or puzzles whose trick is in their clever and obscure wording. They are the clearest possible expression of perennial facts which students grasp with focused medication and guidance. - ([Aitken, 1990](#aitken1990))
 
-> Logically, all these pointers have no sense, they are beyond rational treatment. We can say that the pointers have no earthly use as they do not give us any clue from which we can start our inference. [...] A slap on the face, a shaking one by the shoulder, or an utterance will most assuredly d the work of pointing when the Zen consciousness has attained a certain stage of maturity. - ([Suzuki, 1962](#suzuki1962)), ch IV.3
+> Such themes are pursued with a keen, inquiring spirit, and the process of resolving them may take a long time, many years in some cases. Finally, the student gains a degree of understanding and is ready for subsequent koans to amplify, clarify and deepen the original insight. - ([Aitken, 1990](#aitken1990))
+
+> Logically, all these pointers have no sense, they are beyond rational treatment. We can say that the pointers have no earthly use as they do not give us any clue from which we can start our inference. [...] A slap on the face, a shaking one by the shoulder, or an utterance will most assuredly the work of pointing when the Zen consciousness has attained a certain stage of maturity. - ([Suzuki, 1962](#suzuki1962)), ch IV.3
 
 > [Koans support] an awakening to a profound experience of being by way of an encounter with concrete reality. - ([Dumoulin, 1979](#dumoulin1979))
 
-> Such themes are pursued with a keen, inquiring spirit, and the process of resolving them may take a long time, many years in some cases. Finally, the student gains a degree of understanding and is ready for subsequent koans to amplify, clarify and deepen the original insight. - ([Aitken, 1990](#aitken1990))
-
 > Seeing into a koan requires the embodiment of a certain state of consciousness rather than an abstraction of intellectual understanding. It is this direct "seeing into" that the teacher looks for and tests to determine the clarity of the student's understanding. And it is this direct understanding that is a the heart of realization - not the intellectualization of an idea. - ([Loori, 1990](#loori2005))
 
-> "In answering this one ought not to cogitate on the meaning of the phrase, nor try to get away from it; do not reason about it, nor altogether abandon reasoning; respons just as you are aksed and without deliberation, just as a a bell rings when it is struck, just as a man answers when he is called by name. If there were no seeking, no pondering, no contriving as to how to get at the meaning of the phrase, whatever it may be, there would be no answering - hence no awakening." - ([Suzuki, 1962](#suzuki1962)), ch III.5
+> "In answering this, one ought not to cogitate on the meaning of the phrase, nor try to get away from it; do not reason about it, nor altogether abandon reasoning; respond just as you are asked and without deliberation, just as a bell rings when it is struck, just as a man answers when he is called by name. If there were no seeking, no pondering, no contriving as to how to get at the meaning of the phrase, whatever it may be, there would be no answering - hence no awakening." - ([Suzuki, 1962](#suzuki1962)), ch III.5
 
-> On examination we at one notice that there is no room in the koan to insert an intellectual interpretation. The knife is not sharp enough to cut the koan open and see what are its contents. For a koan is not a logical proposition but the expression of a certain mental state resulting from the Zen discipline. (Suzuki, 1962), ch IV.3
+> On examination we at once notice that there is no room in the koan to insert an intellectual interpretation. The knife is not sharp enough to cut the koan open and see what are its contents. For a koan is not a logical proposition but the expression of a certain mental state resulting from the Zen discipline. (Suzuki, 1962), ch IV.3
 > The truth itself is beyond all description, as is affirmed by an ancient sage, but it is by words that the truth is manifested. - ([Suzuki, 1962](#suzuki1962)), ch IV.3
 
 ## Practicing with koans
@@ -54,13 +60,13 @@ Note: this is still work in progress!
 
 > [One koan] was given to the disciple, who was to solve it by concentrating and devoting all [their] attention to it until - as the Zen saying goes - [their] bite gave way, meaning that [they] gave up rational thinking and made head-way into the suprarational realm of enlightenment. - ([Dumoulin, 1979](#dumoulin1979))
 
-> The practitioner, concentrating on the koan literally day and night, enters a hyperalert state in which he is aware of one thing only: the koan. This concentration gives rise to a search - at first for the solution of the koan. Utilizing all his intellectual powers, as he naturally would, the practitioner exerts himself with all his might, but to no avail. The illogical nature of the koan resits logical solution. He then enters into a state of helplessness and runs up against the same wall again and again, like someone locked in a small room. He searches for a way out, and yet the door is open - not where is intellect is aimed, however, for the wall does not give in. To see the opening, a one-hundred-and-eighty-degree turnabout is necessary, in the direction of another, novel dimension. - ([Dumoulin, 1979](#dumoulin1979))
+> The practitioner, concentrating on the koan literally day and night, enters a hyperalert state in which he is aware of one thing only: the koan. This concentration gives rise to a search - at first for the solution of the koan. Utilizing all his intellectual powers, as he naturally would, the practitioner exerts himself with all his might, but to no avail. The illogical nature of the koan resists logical solution. He then enters into a state of helplessness and runs up against the same wall again and again, like someone locked in a small room. He searches for a way out, and yet the door is open - not where is intellect is aimed, however, for the wall does not give in. To see the opening, a one-hundred-and-eighty-degree turnabout is necessary, in the direction of another, novel dimension. - ([Dumoulin, 1979](#dumoulin1979))
 
 > The koans themselves contain suggestions for summarizing their content in one clue word (Japanese: _jakugo_). This treatment is also popular among Zen masters. One condenses the entire koan into a word and then concentrates on it. He carries this word around with him and constantly turns it over in his mind. Zen literature compares this process to a ball of fire that one tosses about in his mouth, wanting to spit it out but unable to do so. The word might be continually repeated, murmured, or exclaimed vigorously. - ([Dumoulin, 1979](#dumoulin1979))
 
 ## Dos and Donts
 
-work in progress
+### Don't: Tai-in list of 10 "do not"
 
 > Tai-in cautions his koan students on the following ten points:
 > 1. Do not calculate according to your imagination;
@@ -81,6 +87,8 @@ work in progress
 > [Commenting on a specific koan] Yuanwu continues by deriding practitioners who conclude that Yunyan's response must have been wrong, while Daowu's was right, explaining that these kinds of practitioners are people who get caught up in words and phrases and have not yet realized the truth. He then advises his students to cut off emotional defilements and conceptual thinking and to become naked, free, and unbounded, since this is the only way to understand the truth about Great Compassion. - ([Loori, 1990](#loori2005))
 
 ### Do: use multiple perspectives
+
+(Something I was advised to do, and I personally use frequently, to much benefit. I stimulate my reading of the koan by prompting a change in the perspective of the narrative. I use the list of questions below to interrogate the koan and dive into its multiple ~~meanings~~ sources of insight.)
 
 Change of perspective
 - What if you were each participant?
