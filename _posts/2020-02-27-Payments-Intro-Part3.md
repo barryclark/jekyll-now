@@ -20,7 +20,9 @@ described how domestic and international payments work.*
     
 <!--more-->
 
-### Mobile money  
+### E-money
+
+#### M-Pesa  
 
 Mobile money (or [M-Pesa][3] as is widely known from its initial Kenyan incarnation) is the answer to the question  
 > How do you provide digital financial services to third world populations, where the only technological device 
@@ -60,9 +62,30 @@ almost unnecessary. It took years for the West to achieve a [similar level][13] 
 
 Despite their importance and the huge commissions made, telcos were very lightly regulated in most countries until 
 recently. Concepts like [segregation of funds][14] are only now [being addressed][15], with telcos held to the same 
-standard as banks are. 
+standard as banks have been. 
 
-#### E-money
+#### Super apps
+
+[Super apps][17] is a relatively recent term, describing mobile apps developed in East and South East Asia. They are 
+worth mentioning here, due to their rapid growth.
+
+Not originally conceived as payment rails, they have moved into payments and financial services in recent years. After that
+they quickly grew to rival banks in terms of transaction volume. Some examples are [WeChat][20] and [Alipay][21] <sup>[2](#footnote_2)</sup> 
+in China, [PayTM][23] in India and [GoJek][22] in Singapore/Indonesia.
+
+The underlying mechanics of this payment rail are pretty much identical to those of M-Pesa.  
+App users can fund their account with a variety of means: from a normal debit/credit card to the [ojek][25] driver [becoming
+an agent on wheels][24]. The payment system is a general ledger running inside the company's domain, tracking transfers 
+of value between users. The demographic and economic tailwinds of the region have enabled them to grow into massive 
+user bases and now rapidly expanding into all kinds of financial services, beyond payments (lending, credit scores,...).  
+Especially in the case of China (a prime example of [command economy][26]), WeChat and Alipay have become deeply integrated
+with the [state apparatus][27], offering unique insights for the [social credit score][28] system.
+ 
+M-Pesa was created because of the lack of a viable alternative for payments in its home countries and keeps on growing 
+on the back of that. Super apps started with a killer core feature <sup>[3](#footnote_3)</sup> and are now growing on 
+the back of innovation and the irresistible power of the [network effect][18]. 
+
+#### Paypal and friends
 
 Based on e-mail
 trusted third party 
@@ -70,11 +93,9 @@ trusted third party
 to facilitate e-commerce 
 careful UX and web integration in the early internet days  
 
-WeChat and Alipay are similar 
-size
-Banking services, lending
-China is command-and-control capitalism (link) 
-these financial services are deeply integrated with the state apparatus
+Adding layers of efficiency on top of an inefficient core
+Once core becomes more efficient race to the top in terms of innovation and race to the bottom in terms of 
+price for consumer and margins for company
 
 ### OpenBanking
 
@@ -277,6 +298,9 @@ In the next and final installment, we will go over
 ## Footnotes
 
 1. <a name="footnote_1"></a>E.g. [half of Kenya's GDP][12] is processed through mobile payments.
+2. <a name="footnote_2"></a>AliPay is the payment rail originating from the B2B platform [Alibaba][19]. It is a bit of a 
+stretch, but I am including it here nevertheless.
+3. <a name="footnote_3"></a>E.g. chatting in WeChat, ride hailing in GoJek. A.k.a. as the [thin end of the wedge][16] strategy.
 
 
   [1]: https://sgerogia.github.io/Payments-Intro-Part1/
@@ -294,3 +318,16 @@ In the next and final installment, we will go over
   [13]: https://www.theguardian.com/money/2016/sep/10/contactless-cards-wave-pay-oyster-london-use
   [14]: https://www.handbook.fca.org.uk/handbook/CASS/7/13.html
   [15]: https://drive.google.com/open?id=1fp3MZ5GL1OQm55aapuEsK73jCzvBRnl9
+  [16]: https://www.businessinsider.com/the-thin-edge-of-the-wedge-strategy-2011-1?r=US&IR=T
+  [17]: https://www.ft.com/content/0788d906-1a7b-11ea-97df-cc63de1d73f4
+  [18]: https://en.wikipedia.org/wiki/Network_effect
+  [19]: https://www.alibaba.com/
+  [20]: https://www.wechat.com/en
+  [21]: https://global.alipay.com/index.htm
+  [22]: https://www.gojek.com/
+  [23]: https://paytm.com/
+  [24]: https://customers.twilio.com/1601/go-jek/
+  [25]: https://en.wiktionary.org/wiki/ojek
+  [26]: https://www.thestar.com.my/business/business-news/2017/09/23/chinas-command-economy
+  [27]: https://www.bbc.co.uk/news/blogs-china-blog-48552907
+  [28]: https://en.wikipedia.org/wiki/Social_Credit_System
