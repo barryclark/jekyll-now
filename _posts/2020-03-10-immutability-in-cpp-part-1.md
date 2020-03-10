@@ -2,13 +2,13 @@
 layout: post
 tags: functional-programming immutability c++11
 #categories: []
-date: 2020-03-07
+date: 2020-03-10
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Immutability in C++: Immutable Members'
-#comments_id: 2
+title: 'Immutability in C++ (1/2): Immutable Members'
+comments_id: 3
 ---
 
 In an attempt to increase my functional programming skills in C++, I went full functional when writing a simulation for a childrens game. Trying to implement a game state using the paradigms of functional programming presents some interesting challenges. In this post I will explore the concept of *immutability* and how we can implement it in C++ for all kinds of stateful objects.
@@ -35,7 +35,7 @@ int f(int & x)
 }
 ```
 
-Invoking `f(x)` on an integer `x` will return the value of `x+1`, but it will change the value of `x` in the process. To make matters worse: lets assume we only knew the signature of the function from a header and the documentation for `f` states: "*calculates the next integer value for x*". Depending on the implementation it could change the value of `x` or not. A signature `T f(T&)` should always make us suspicious and most programmers would hopefully use `T f(const T &)` or `T f(T)`. In other languages however, [like Java](https://stackoverflow.com/questions/41361252/const-function-arguments-in-java), objects are always passed by a non-const reference.
+Invoking `f(x)` on an integer `x` will return the value of `x+1`, but it will change the value of `x` in the process. To make matters worse: lets assume we only knew the signature of the function from a header and the documentation for `f` states: "*calculates the next integer value for x*". Depending on the implementation it could change the value of `x` or not. Naturally, a signature `T f(T&)` should always make us suspicious and most programmers would hopefully use `T f(const T &)` or `T f(T)`. In other languages however, [like Java](https://stackoverflow.com/questions/41361252/const-function-arguments-in-java), objects are always passed by a non-const reference.
 
 So although this example is silly and contrived, it illustrates some of the danger of mutability: it makes code harder to reason about.
 
@@ -50,7 +50,7 @@ public:
 
   game_state(std::array<int,2> _steps = {0,0});
 
-  game_state add_steps(int player_index, int steps) const;
+  game_state add_steps(int player_index, int amount) const;
 
   std::optional<int> get_winner_index() const;
 
@@ -77,13 +77,13 @@ std::cout
 The usual object-oriented signature of the `add_steps` function would be  `void add_steps(int, int)`. The method would manipulate a private member variable. Here we cannot do that, so we have to return a new object.
 
 ```c++
-game_state game_state::add_steps(int player_index, int steps) const
+game_state game_state::add_steps(int player_index, int amount) const
 {
   //add some guards against illegal input
   //e.g. negative steps
 
   auto new_steps = steps;
-  new_steps.at(player_index) += steps;
+  new_steps.at(player_index) += amount;
 
   return game_state(new_steps);
 }

@@ -2,18 +2,18 @@
 layout: post
 tags: functional-programming immutability c++11
 #categories: []
-date: 2020-03-08
+date: 2020-03-31
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Immutability in C++: Immutable Interfaces'
-#comments_id: 2
+title: 'Immutability in C++ (2/2): Immutability through Interfaces'
+comments_id: 4
 ---
-In the last article we looked at creating immutable objects in C++ using immutable member variables. Here we will look at immutable interfaces that let us take advantage of move semantics.
+In the last article we looked at creating immutable objects in C++ using immutable member variables. Here we will look at immutability through interfaces that let us take advantage of move semantics.
 
 # Immutable interfaces
-Assume we had a movable data structure inside our game state class. Maybe we replaced the array with a `std::vector` to set the number of players dynamically. Now that we have a `std::vector` instead of an array, we could take advantage of move semantics. As explained at the end of the previous article that means that we cannot make this data member `const` because that prevents us from moving from it. So we have to take a different approach and make the interface immutable instead of the member variable itself:
+Assume we had a movable data structure inside our game state class. Maybe we replaced the array with a `std::vector` to set the number of players dynamically. Now that we have a `std::vector` instead of an array, we could take advantage of move semantics. As explained at the end of the previous article that means that we cannot make this data member `const` because that prevents us from moving from it. So we have to take a different approach and implement an interface that provides immutability to an outside user of the class:
 
 ```c++
 class game_state
@@ -26,10 +26,10 @@ public:
   game_state(int n);
 
   //NEW: l-value ref qualifier
-  game_state add_steps(int player, int steps) const &;
+  game_state add_steps(int player, int amount) const &;
 
   //NEW: r-value ref qualifier
-  game_state add_steps(int player, int steps) &&;
+  game_state add_steps(int player, int amount) &&;
 
   std::optional<int> get_winner_index() const;
 
@@ -52,7 +52,7 @@ The member variable is mutable and has a `const`-qualified getter method now. Th
 I have declared two overloads of the `add_steps` function, which differ by their [ref-qualifiers](https://en.cppreference.com/w/cpp/language/member_functions#ref-qualified_member_functions). You can read more on ref-qualifiers [here](https://akrzemi1.wordpress.com/2014/06/02/ref-qualifiers/). In short, the `&`-qualified function works on lvalues and the `&&`-qualified method on rvalue instances of the class.
 
 ### Lvalue and Rvalue Semantics
-To differentiate rvalues and lvalues we can follow Scott Meyers advice in [Effective Modern C++](https://www.oreilly.com/library/view/effective-modern-c/9781491908419/):
+As a quick recap that helps us to differentiate rvalues and lvalues we follow Scott Meyers advice in [Effective Modern C++](https://www.oreilly.com/library/view/effective-modern-c/9781491908419/):
 
 > A useful heuristic to determine whether an expression is an lvalue is to ask if you can take its address. If you can, it typically is. If you can't it's usually an rvalue.
 
@@ -95,7 +95,7 @@ game_state game_state::add_steps(int player_index, int amount) &&
   return std::move(*this);
 }
 ```
-Here we mutate the objects own data and return a copy of the object which is *move constructed*. The move constructor will also be implicitly defined. Hence we need the call to `std::move` before returning `*this`. The move constructor avoids an unneccessary copy of a vector for temporary objects. If we had declared the member vector `const` then we could not have moved from it.
+Here we mutate the objects own data and return a copy of the object which is *move constructed*. This is why we need the call to `std::move` before returning `*this`. The move constructor is implicitly defined for us. The move constructor avoids an unneccessary copy of a vector for temporary objects. If we had declared the member vector `const` then we could not have moved from it.
 
 # Conclusions and Further Reading
-We have seen how to implement immutability in C++ two different ways. The first way of using public `const` members has the advantage of simplicity. One caveat is that we have to implement a constructor taking all member fields for initialization. The second way is to provide an immutable interface that takes advantage of move semantics. The added complexity might lead to a performance increase. However, not all types have cheap move operations. For further reading I heartily recommend [Functional Programming in C++](https://www.manning.com/books/functional-programming-in-c-plus-plus) where the author presents immutable data structures for more sophisticated use cases.
+We have seen how to implement immutability in C++ two different ways. The first way of using public `const` members has the advantage of simplicity. One caveat is that we have to implement a constructor taking all member fields for initialization. The second way is to provide an interface that enforces immutability and takes advantage of move semantics. The added complexity might lead to a performance increase. However, not all types have cheap move operations. For further reading I heartily recommend [Functional Programming in C++](https://www.manning.com/books/functional-programming-in-c-plus-plus) where the author presents immutable data structures for more sophisticated use cases.
