@@ -11,7 +11,7 @@ tags:
   - "2020"
 ---
 
-Our March 2020 Cloud Native London meetup kicked off with more details of the Kubernetes Community Days London 2020, then we had three great speakers: Richard Simon from World Wide Technology, Pradeep Bhadani from Cloud Native Technologies, and Naadir Jeewa from VMWare. Check out their takeaways below. The video recording will be added shortly.
+Our March 2020 Cloud Native London meetup kicked off with more details of the Kubernetes Community Days London 2020, then we had three great speakers: Richard Simon from World Wide Technology, Pradeep Bhadani from Cloud Native Technologies, and Naadir Jeewa from VMWare. Check out their takeaways and video below. 
 
 Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), and [D2iQ](https://d2iq.com).
 
