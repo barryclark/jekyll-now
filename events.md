@@ -16,8 +16,6 @@ June 11: [OpenUK Awards](https://openuk.uk/), London
 
 June 21 - 25: [ISC (International Supercomputing)](https://www.isc-hpc.com/), Frankfurt
 
-July 28 - 30: [KubeCon + CloudNativeCon + Open Source Summit China](https://www.linuxfoundation.org/calendar/kubecon-cloudnativecon-open-source-summit-china/), Shanghai
-
 September 2 - 4: [Kubernetes Community Days London](http://kubernetesdays.london/), London
 * Chair
 
