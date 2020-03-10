@@ -7,12 +7,7 @@ description: "Cheryl Hung's upcoming conferences and events."
 
 ### 2020
 
-March 4-7: #21digital, Cologne, Germany
-* *Ecosystem lead*
-
 March 10 – 12: [The Linux Foundation Member Summit](https://events.linuxfoundation.org/lf-member-summit/), Lake Tahoe, California
-
-March 23 - 27: [SUSECon](https://www.susecon.com/), Dublin, Ireland
 
 May 19 - 21: [Microsoft Build](https://www.microsoft.com/en-us/build), Seattle
 
