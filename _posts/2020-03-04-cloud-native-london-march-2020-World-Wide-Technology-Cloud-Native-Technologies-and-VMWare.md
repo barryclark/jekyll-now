@@ -20,7 +20,7 @@ Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](h
 Join us for the first ever Kubernetes Community Days London on 3-4 September 2020 at the Emmanuel Centre, Westminster. For more info, [check out the website](https://kubernetescommunitydays.org/events/2020-london/).
 The CFP has just launched, [apply to speak at KCD London](https://kubernetescommunitydays.org/events/2020-london/speakers/)! If you’d like to attend, sponsor or volunteer, register your interest at [kubernetesdays.london](kubernetesdays.london).
 
-![Richard Simon](/images/RichardSimon.jpg)
+![Richard Simon](/images/RichardSimon2.jpg)
 
 First up, Richard Simon from World Wide Technology told us about the [Cloud State Of Play](https://youtu.be/c5j4wbRvXIk?t=590). His takeaways are that:
 
@@ -38,7 +38,7 @@ Next up, Pradeep Bhadani from Cloud Native Technologies talked about how to [Bui
 
 Check out [his slides](https://www.slideshare.net/PradeepBhadani1/build-and-test-gcp-infrastructure-using-terraform-module-229687787).
 
-![Naadir Jeewa](/images/NaadirJeewa.jpg)
+![Naadir Jeewa](/images/NaadirJeewa2.jpg)
 
 Finally,  Naadir Jeewa from VMWare closed out our evening by describing [“Declarative cluster management using Kubernetes all the way down” - The why and how of Kubernetes Cluster API](https://youtu.be/EdtcsKkUS80). He summed it up with these takeaways:
 
