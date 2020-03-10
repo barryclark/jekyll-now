@@ -22,7 +22,7 @@ The CFP has just launched, [apply to speak at KCD London](https://kubernetescomm
 
 ![Richard Simon](/images/RichardSimon.jpg)
 
-First up, Richard Simon from World Wide Technology told us about the [Cloud State Of Play](https://youtu.be/c5j4wbRvXIk). His takeaways are that:
+First up, Richard Simon from World Wide Technology told us about the [Cloud State Of Play](https://youtu.be/c5j4wbRvXIk?t=590). His takeaways are that:
 
 * Organisations that have moved or are considering moving workloads to the cloud, need to conduct a Cloud Readiness Assessment, to understand their position and ability to deliver successful migrations.
 * Organisations that are looking to migrate or have migrated will benefit from a Cloud Performance and Hosting Candidacy, to optimise their cloud footprint, as well as identifying the low-hanging fruit workloads.
