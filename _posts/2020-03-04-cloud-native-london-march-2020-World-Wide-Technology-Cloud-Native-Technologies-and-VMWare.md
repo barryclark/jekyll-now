@@ -22,7 +22,7 @@ The CFP has just launched, [apply to speak at KCD London](https://kubernetescomm
 
 ![Richard Simon](/images/RichardSimon.jpg)
 
-First up, Richard Simon from World Wide Technology told us about the Cloud State Of Play. His takeaways are that:
+First up, Richard Simon from World Wide Technology told us about the [Cloud State Of Play](https://youtu.be/c5j4wbRvXIk). His takeaways are that:
 
 * Organisations that have moved or are considering moving workloads to the cloud, need to conduct a Cloud Readiness Assessment, to understand their position and ability to deliver successful migrations.
 * Organisations that are looking to migrate or have migrated will benefit from a Cloud Performance and Hosting Candidacy, to optimise their cloud footprint, as well as identifying the low-hanging fruit workloads.
@@ -30,7 +30,7 @@ First up, Richard Simon from World Wide Technology told us about the Cloud State
 
 ![Pradeep Bhadani](/images/PradeepBhadani.jpg)
 
-Next up, Pradeep Bhadani from Cloud Native Technologies talked about how to Build and Test GCP Infrastructure using Terraform Modules. He concluded that:
+Next up, Pradeep Bhadani from Cloud Native Technologies talked about how to [Build and Test GCP Infrastructure using Terraform Modules](https://youtu.be/c5j4wbRvXIk?t=2898). He concluded that:
 
 * Terraform is an open source, very powerful tool to implement Infrastructure as Code.
 * Terraform modules can really help to build infrastructure in quickly and in repeatable fashion.
@@ -40,7 +40,7 @@ Check out [his slides](https://www.slideshare.net/PradeepBhadani1/build-and-test
 
 ![Naadir Jeewa](/images/NaadirJeewa.jpg)
 
-Finally,  Naadir Jeewa from VMWare closed out our evening by describing “Declarative cluster management using Kubernetes all the way down” - The why and how of Kubernetes Cluster API. He summed it up with these takeaways:
+Finally,  Naadir Jeewa from VMWare closed out our evening by describing [“Declarative cluster management using Kubernetes all the way down” - The why and how of Kubernetes Cluster API](https://youtu.be/EdtcsKkUS80). He summed it up with these takeaways:
 
 * Cluster API aims to be the canonical way to deploy and manage Kubernetes clusters across any type of infrastructure using Kubernetes itself, enabling self-service multi-cluster management
 * When writing controllers to manage other distributed systems, making sure your controllers are idempotent and reentrant is key to correctness
