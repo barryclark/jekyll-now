@@ -4,6 +4,7 @@ title: "Cloud Native London March 2020: World Wide Technology, Cloud Native Tech
 description: "Check out the roundup of talks from World Wide Technology, Cloud Native Technologies, and VMWare at the Cloud Native London meetup in March, hosted by Dominique Top, .Developer Relations & Community Manager, Babylon Health"
 location: London, UK
 image: https://pbs.twimg.com/media/ESSa8RFWoAEek7z?format=jpg
+video: https://www.youtube.com/embed/c5j4wbRvXIk
 tags:
   - Photos
   - Video
@@ -38,7 +39,9 @@ Next up, Pradeep Bhadani from Cloud Native Technologies talked about how to [Bui
 
 Check out [his slides](https://www.slideshare.net/PradeepBhadani1/build-and-test-gcp-infrastructure-using-terraform-module-229687787).
 
-![Naadir Jeewa](/images/NaadirJeewa2.jpg)
+<div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/EdtcsKkUS80" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Finally,  Naadir Jeewa from VMWare closed out our evening by describing [“Declarative cluster management using Kubernetes all the way down” - The why and how of Kubernetes Cluster API](https://youtu.be/EdtcsKkUS80). He summed it up with these takeaways:
 
