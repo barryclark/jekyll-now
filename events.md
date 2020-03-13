@@ -7,10 +7,6 @@ description: "Cheryl Hung's upcoming conferences and events."
 
 ### 2020
 
-March 10 – 12: [The Linux Foundation Member Summit](https://events.linuxfoundation.org/lf-member-summit/), Lake Tahoe, California
-
-May 19 - 21: [Microsoft Build](https://www.microsoft.com/en-us/build), Seattle
-
 June 11: [OpenUK Awards](https://openuk.uk/), London
 * Judge
 
