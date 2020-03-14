@@ -6,9 +6,11 @@ I'm not trying to do day trading, but I would like to be relatively up to date o
 I also don't feel like paying for a service to do this. Are there free services that would send me daily quote info for
 several stocks for free? Probably, but I thought it'd be fun to write it myself.
 
-In short, I used a Python wrapper around [Finnhub](https://finnhub.io/) to get daily quote info. I specified
-the stocks I'm interested in tracking and price limits for them. I made a gmail account to send relevant alerts to
-my personal gmail account. I set it up on a daily schedule by putting it in launchd on my laptop.
+So I automated the process:
+  - get daily quote info from [Finnhub](https://finnhub.io/)
+  - set limit prices on several stocks I'm interested in
+  - send me an email if any limits are exceeded
+  - automatically repeat every day by scheduling it to run daily with launchd
 
 Note:
 
