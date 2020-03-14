@@ -4,10 +4,6 @@ div.highlight {
     border-radius: 5px;
 }
 
-pre.highlight {
-    padding: 5px;
-}
-
 .highlight table td { padding: 5px; }
 .highlight table pre {
     margin: 0;
@@ -218,5 +214,6 @@ pre.highlight {
   color: #bbbbbb;
 }
 .highlight {
+  padding: 5px;
   background-color: #f8f8f8;
 }
