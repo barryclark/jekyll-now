@@ -32,7 +32,7 @@ so I'm satisfied with just getting the OHLC prices per day.
 
 Given that, it's super simple to get the info I wanted:
 
-```python3
+```python
 from finnhub import client as Finnhub
 
 client = Finnhub.Client(api_key="{API KEY}")
@@ -43,7 +43,7 @@ quote = client.quote(symbol='MSFT')
 ### Specifying stocks and limits
 To specify the stocks I want to watch and what their limits should be, I put that info in a simple map:
 
-```python3
+```python
 alert_values = {
     'MSFT': {
         'low': 140,
@@ -73,7 +73,7 @@ After you create the account, you can allow less-secure apps [here](https://myac
 
 To configure the email in your code:
 
-```python3
+```python
 alerts = determine_alerts_from_finnhub()
 
 sent_from = 'Stock Watcher'
@@ -101,7 +101,7 @@ gmail_password = 'your password'
 
 And then to send the email:
 
-```python3
+```python
 import smtplib
 
 try:
