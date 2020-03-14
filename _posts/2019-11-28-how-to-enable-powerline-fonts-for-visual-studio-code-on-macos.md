@@ -1,11 +1,16 @@
 ---
 layout: post
 title: How to Enable Powerline Fonts for Visual Studio Code on MacOS
+tags: visual studio code
+updated: 2020-03-14
 ---
-If you have Oh My Zsh installed. You may be using themes like `Agnoster`. These themes require special fonts to render the command line propmpt properly in the Visual Studio Code terminal. To configure Visual Studio Code to render the prompt properly follow below.
+If you have Oh My Zsh installed, you may be using themes like `Agnoster`. These themes require special fonts to render the command line prompt correctly in the Visual Studio Code (VS Code) terminal. To configure VS Code follow below.
 
-Open Visual Studio Code. Press CMD+p and type `settings.json`. You'll open the json configuration file to Visual Studio Code. Edit the file to use the power line font you want to use. `...` denotes other settings already in the file. For example: 
-
+## Steps
+1. Open VS Code.
+2. Press `CMD+p` and type `settings.json`.
+3. Open the json configuration file to VS Code.
+4. Edit the file to use the power line font you want to use. For example,
 ```javascript
 {
     ...,
@@ -13,5 +18,7 @@ Open Visual Studio Code. Press CMD+p and type `settings.json`. You'll open the j
     ...
 }
 ```
+5. Save the `settings.json` file.
+6. Close your VS Code terminal and open a new one.
 
-Save the `settings.json` file. Close your terminal and open a new one. The fonts should now render properly.
+The fonts will now render correctly!
