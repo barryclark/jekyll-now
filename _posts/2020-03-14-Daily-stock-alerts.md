@@ -1,5 +1,3 @@
-## Overview and purpose
-
 With the recent market volatility due to COVID-19, I found myself checking stocks too often.
 Whether it's smart or not to be checking frequently during volatile times, it's definitely a pain to google
 individual tickers each day and see what's happening.
