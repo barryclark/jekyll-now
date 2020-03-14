@@ -1,11 +1,11 @@
-.highlight {
+div.highlight {
     border: 1px solid #e5e5e5;
     overflow-x: scroll;
     border-radius: 5px;
 }
 
 .highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
+.highlight table pre { margin: 0; padding: 5px; }
 .highlight .cm {
   color: #999988;
   font-style: italic;
