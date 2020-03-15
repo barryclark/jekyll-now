@@ -193,29 +193,120 @@ Will consider Ripple
 Although stellar is practically the same thing
 https://www.fxempire.com/education/article/ripple-vs-stellar-will-there-be-only-one-winner-521999
 
+The public Ripple network has all the components to be an all-in-one drop-in blockchain replacement for  
+* global nostro-vostro accounts, 
+* FX markets, and  
+* the [SWIFT network][35] built on top of them.
+By extension a private Ripple network (i.e. a network deployed from source code) can perform all the functionality 
+that a Hawala network would
+
+The fundamental concept underlying Ripple is that of liability and debt, a.k.a. an [IOU][29].
+We mentioned in [part 1][1] that paper money came from [Kinghts Templar and merchant promissory notes][30] 
+all of which were forms of debt 
+since mutual debt cancels out <sup>[4](#footnote_4)</sup> everyone could be performing financial transactions 
+simply by oweing each other value, without money actually changing hands
+
+This is what is actually happening in the real world 
+as the modern day equivalent of the Florentine merchant notes are cross-border nostro-vostro accounts 
+ 
+There are 2 missing ingredients in the equation: 
+* what type of debt do you trust?  
+Like in the real world, in Ripple you can have many issued [currencies][31], i.e. debt denominated in those currencies
+As a participant, you can choose which currencies to trust
+* Whose debt do you trust? 
+i.e. who do you think issues promissory notes which they will make whole? 
+Ripple solves this by introducing the concept of [trust lines][32] between [accounts][33]
+
+Let's see how it works in a practical example.  
+Sender wants to makes a cross-currency payment to Receiver.
+
 ![IOU payments](../images/payments/payments-iou.png)
 
+1. The Sender has a Ripple account, which needs to be funded.  
+To do so, the Sender uses a [gateway][34] she trusts to convert her Euro fiat into "Ripple EUR" IOUs. She does so by 
+funding the gateway's collateral bank account (G1). 
+2. The gateway sees the deposit in the bank account, creates the equivalent amount of IOUs and funds the Sender's 
+account. The Sender has a trust line with the gateway, i.e. she trusts the issued IOUs.
+3. The Sender makes a payment to the Receiver.  
+The Sender and the Receiver do *not* need to be directly connected by a trust line. Instead, the Ripple network finds a 
+[path of trust lines][39] connecting the two. This is the same way that SWIFT finds a path of nostro-vostro accounts to 
+facilitate international payments. The transaction is then propagated through <sup>[5](#footnote_5)</sup> the connected 
+accounts until it reaches the Recipient. In Ripple-speak the transaction "[ripples][36]" through the network of accounts,
+with all balance adjustments recorded in Ripple's [distributed ledger][38].  
+When the transaction is a cross-currency one, Ripple provides a singular [decentralized exchange][37] where interested 
+parties can transparently submit bids/asks on currency pairs. Ripple/XRP (i.e. the crypto-currency) exists as an 
+intermediate "reserve currency", to facilitate exchanges between "exotic" pairs. <sup>[6](#footnote_6)</sup>  
+In our example, the payment has resulted into a conversion from "Ripple EUR" to "Ripple GBP". 
+4. Once the Receiver has received the payment of "Ripple GBP", she can choose to take this to the issuing gateway 
+<sup>[7](#footnote_7)</sup> and convert it to "real" GBP. Once the right-hand gateway receives the "Ripple GBP", it 
+"burns" it and takes it out of circulation <sup>[8](#footnote_8)</sup>. 
+5. The money is then transferred out of the gateway's collateral account (G2) to the Recipient. 
 
+Ripple is an on-ramp off-ramp system
+and solves many problems of the international payment networks [we have discussed][2]
+quite elegantly through the use of the blockchain 
+there are some questions on its [consensus algorithm][41] resilience
+effectively a distributed trust machine  
 
-Entry point is an issuing gateway
-https://xrpl.org/become-an-xrp-ledger-gateway.html
+All of the above are in theory.  
+In practice the public Ripple network's design suffers from a few core flaws, inherent and acquired
 
-Trust lines are issued IOUs 
-https://xrpl.org/issued-currencies-overview.html
+**Monetary imbalance**  
+At the core is the monetary imbalance in the public network's design 
+gateway IOUs are the equivalent of [stablecoins][40], their value is pegged to real-world currencies and are created/burnt 
+on an one-in-one-out basis
+but XRP itself is arbitrarily priced and not pegged to (or backed by) anything 
+Therefore the central "reserve currency" of the network draws its value solely by the network itself
+Not very reassuring in an unwinding scenario  
 
-XRP is a bridge currency
+**Centralization of funds**
+Highly centralised as over 50% of XRP 
+is controlled by a single entity
+Criticism on the lack of auditing transparency 
+https://www.forbes.com/sites/jasonbloomberg/2019/03/01/is-ripple-a-scam/#5dd363a179a4
 
+**Centralization of control** 
+public network nodes are a closed set 
+has a say on which entities can join the network as gateways
+This is part-and-parcel of Ripple's strategy to partner with existing financial institutions 
+but is an anathema to the rest of the libertarian crypto community 
 
-Deflationary
-https://xrpl.org/reserves.html
-https://xrpl.org/transaction-cost.html
+The other contender in this space, [Stellar][42], is essentially a fork of Ripple 
+Its main difference to Ripple is that it tries to avoid the centralisation of funds by 
+a [distribution schedule][43] 
 
-Lumens are inflationary
+Based on the above one might think that these projects offer little value
+However this could not be further from the truth 
+Though the economics and [incentives][44] of the public networks may be open for debate
+both technologies allow financial organisations with a cross-border foot-print 
+to effectively create a robust payments network in a single sweep  
+
+### Stablecoins
+
+These are crypto-currencies 
+maintaining a 1-1 value parity with a real-world currency, usually the US dollar
+
+This is achieved in one of two ways
+* backed by real-world asset  
+E.g. USDT, USDC
+Issued by an entity equivalent to the on-ramp gateway of Ripple
+receives currency in its bank account and issues digital currency units
+as long as the market believes that all digital coins have a real-world equivalent 
+market remains stable
+
+* Backed by digital collateral  
+E.g. DAI, 
+Users deposit other crypto assets (e.g. Bitcoin, Ethereum,...) and receive newly minted stablecoins
+Since the digital collateral has itself a fluctuating price
+This class of stablecoins achieves a virtual peg to a real-world currency by an elegant set of market incentives  
+
+At their core 
+stablecoins are on-ramp/off-ramp systems
+either implicitly or explicitly (in the case of DAI)
 
 ### Libra
 
-Only mentioning it here as a contrast
-without going into its technical details
+Libra combines some of the concepts mentioned above  
 
 Libra is an asset-backed digital currency
 
@@ -240,8 +331,11 @@ Blockchain nodes are the trusted ones of the Libra members
 If the above looks very familiar, it's because, well... it is!
 
 At its core Libra is **not** a currency 
-it digital IOU, a token
+it can be considered at once a digital IOU, a token
+as well as an asset-backed stablecoin, backed by a basket of currencies
+
 steps 1 and 2 are the on-ramp (link) to the platform
+This is the on-ramp, where the IOU/stablecoin is issued 
 what is missing on the other side is the off-ramp, where Libra would be converted to GBP
 
 But this is intentionally missing 
@@ -260,10 +354,6 @@ But it had to be a revolutionary global currency!
 Taking away the only thing that makes a government a government
 Revolutions don't start with press statements
 
-### Proof-of-work money 
-
-![Crypto payments](../images/payments/payments-crypto.png)
-
 ### Government cryptocurrencies
 
 ![Government crypto payments](../images/payments/payments-gov-crypto.png)
@@ -280,15 +370,22 @@ direct taxation
 
 role of banks?
 multi-sig wallet providers?
+Oracles in a Corda network?
 pointless to maintain channels
 
 event equivalent to asteroid strike
 before and after
 
-## Stay tuned... 
 
-![Stay tuned](../images/payments/flat-screen-television-1201996.jpg)
-> Photo by JESHOOTS.com from Pexels
+
+### Proof-of-work money 
+
+![Crypto payments](../images/payments/payments-crypto.png)
+
+## Some racing thoughts 
+
+![Run, Forrest! Run!](../images/payments/san-fermin-pamplona-navarra-LJrszMj1RJc-unsplash.jpg)
+> Photo by San Fermin Pamplona - Navarra on Unsplash
 
 In the next and final installment, we will go over  
 * some modern "payment rails" developed in the last decade, 
@@ -301,6 +398,15 @@ In the next and final installment, we will go over
 2. <a name="footnote_2"></a>AliPay is the payment rail originating from the B2B platform [Alibaba][19]. It is a bit of a 
 stretch, but I am including it here nevertheless.
 3. <a name="footnote_3"></a>E.g. chatting in WeChat, ride hailing in GoJek. A.k.a. as the [thin end of the wedge][16] strategy.
+4. <a name="footnote_4"></a>If I owe you 10 and you owe me 10, we owe each other nothing.
+5. <a name="footnote_5"></a>Sender says to Joe "Pass £10 on to Recipient and I owe you". Joe says to Jane "Here is the £10
+that I owed you, pass it on, please". Jane says to Jack "Here are £10 for Recipient, add it to my debt". Jack finally
+says to Recipient "Here is £10 from Sender, you now owe me". This is better visualized and explained [here][36].
+6. <a name="footnote_6"></a>This is the same role that the US dollar plays in the real-world FX markets and cross-border 
+payments.
+7. <a name="footnote_7"></a>Just as "Ripple EUR" was issued by the left-hand gateway, "Ripple GBP" has been issued by another 
+gateway. This is what is converted in the Ripple exchange: one type of IOU for another. It is not "magic'ed up". 
+8. <a name="footnote_8"></a>Same way you rip a debt certificate once the debt has been paid off.
 
 
   [1]: https://sgerogia.github.io/Payments-Intro-Part1/
@@ -331,3 +437,19 @@ stretch, but I am including it here nevertheless.
   [26]: https://www.thestar.com.my/business/business-news/2017/09/23/chinas-command-economy
   [27]: https://www.bbc.co.uk/news/blogs-china-blog-48552907
   [28]: https://en.wikipedia.org/wiki/Social_Credit_System
+  [29]: https://en.wikipedia.org/wiki/IOU
+  [30]: https://goldsilver.com/blog/the-people-who-invented-banking-the-knights-templar/
+  [31]: https://xrpl.org/issued-currencies-overview.html
+  [32]: https://xrpl.org/trust-lines-and-issuing.html
+  [33]: https://xrpl.org/accounts.html
+  [34]: https://xrpl.org/become-an-xrp-ledger-gateway.html
+  [35]: https://en.wikipedia.org/wiki/Society_for_Worldwide_Interbank_Financial_Telecommunication
+  [36]: https://xrpl.org/rippling.html
+  [37]: https://xrpl.org/decentralized-exchange.html
+  [38]: https://xrpl.org/consensus.html
+  [39]: https://xrpl.org/paths.html
+  [40]: https://en.wikipedia.org/wiki/Stablecoin
+  [41]: https://blockgeeks.com/guides/ripple-vs-stellar-ultimate-comparison-guide/#2_Ripple_vs_Stellar_Consensus_Algorithm
+  [42]: https://www.stellar.org/developers/guides/get-started/index.html
+  [43]: https://www.stellar.org/foundation/mandate#ecosystem-support
+  [44]: https://en.wikipedia.org/wiki/Incentive
