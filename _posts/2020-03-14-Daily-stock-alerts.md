@@ -1,12 +1,11 @@
-With the recent market volatility due to COVID-19, I found myself checking stocks too often.
-Whether it's smart or not to be checking frequently during volatile times, it's definitely a pain to google
-individual tickers each day and see what's happening.
+- market volatility due to coronavirus
+- checking stocks manually too often
+- don't want to get sucked into daytrading either
+- but want daily updates on egregious movements
 
-I'm not trying to do day trading, but I would like to be relatively up to date on daily movements for the time being.
-I also don't feel like paying for a service to do this. Are there free services that would send me daily quote info for
-several stocks for free? Probably, but I thought it'd be fun to write it myself.
-
-So I automated the process:
+The market's been volatile recently because of the COVID-19 pandemic.
+I've been checking individual stocks manually each day for large movements.
+I don't want to daytrade, but I do want to have a general feel for what the market's doing each day. But checking manually is annoying and also not healthy, so I automated the process:
   - get daily quote info from [Finnhub](https://finnhub.io/)
   - set limit prices on several stocks I'm interested in
   - send me an email if any limits are exceeded
