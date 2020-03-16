@@ -2,7 +2,7 @@
 layout: post
 title: "Patterns and challenges of cloud native adoption - Cloud Native Prague"
 description: "Read about how and why cloud native is being adopted is changing from Cheryl Hung, CNCF Director of Ecosystem."
-location: London, UK
+location: Prague, Czech Republic
 image: /images/2020-02-27-cherylhung-1.JPG
 slides: //www.slideshare.net/slideshow/embed_code/key/viZ6X0cokQ2ps9
 twitter_moment:
