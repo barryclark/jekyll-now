@@ -1,8 +1,3 @@
-- market volatility due to coronavirus
-- checking stocks manually too often
-- don't want to get sucked into daytrading either
-- but want daily updates on egregious movements
-
 The market's been volatile recently because of the COVID-19 pandemic.
 I've been checking individual stocks manually each day for large movements.
 I don't want to daytrade, but I do want to have a general feel for what the market's doing each day. But checking manually is annoying and also not healthy, so I automated the process:
