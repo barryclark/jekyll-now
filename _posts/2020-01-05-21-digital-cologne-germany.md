@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ecosystem lead at #21 Digital, Cologne Germany"
+title: "#21 Digital, Cologne Germany"
 description: "Photos from #21 Digital in Cologne, Germany."
 location: Cologne, Germany
 image: /images/2020-01-05-21-digital-cologne-germany-Cheryl-Hung-5.jpg
