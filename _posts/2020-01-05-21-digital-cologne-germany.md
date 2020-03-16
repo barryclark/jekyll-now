@@ -23,4 +23,4 @@ I was invited to be the ecosystem lead at [#21 Digital](https://www.21digital.ev
 
 ![Cheryl Hung](/images/2020-01-05-21-digital-cologne-germany-Cheryl-Hung-6.jpg)
 
-Photo credit to Christoph Niemann.
+Photo credit to [Christoph Niemann](https://christoph-niemann.de/).
