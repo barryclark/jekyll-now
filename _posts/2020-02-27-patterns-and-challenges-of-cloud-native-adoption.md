@@ -5,9 +5,12 @@ description: "Read about how and why cloud native is being adopted is changing f
 location: Prague, Czech Republic
 image: /images/2020-02-27-cherylhung-1.JPG
 slides: //www.slideshare.net/slideshow/embed_code/key/viZ6X0cokQ2ps9
+video: https://www.youtube.com/embed/JRrpuwt5S-A
 twitter_moment:
 tags:
   - Slides
+  - Video
+  - Photos
   - "2020"
 ---
 
