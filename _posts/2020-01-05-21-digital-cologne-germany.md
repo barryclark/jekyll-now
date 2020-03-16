@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "#21 Digital, Cologne Germany"
-description: "Photos from #21 Digital in Cologne, Germany."
+description: "Photos of Cheryl Hung at #21 Digital in Cologne, Germany."
 location: Cologne, Germany
 image: /images/2020-01-05-21-digital-cologne-germany-Cheryl-Hung-5.jpg
 tags:
@@ -22,3 +22,5 @@ I was invited to be the ecosystem lead at [#21 Digital](https://www.21digital.ev
 ![Cheryl Hung](/images/2020-01-05-21-digital-cologne-germany-Cheryl-Hung-5.jpg)
 
 ![Cheryl Hung](/images/2020-01-05-21-digital-cologne-germany-Cheryl-Hung-6.jpg)
+
+Photo credit to [Christoph Niemann](christoph-niemann.de).
