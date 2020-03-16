@@ -4,7 +4,7 @@ title: Disclaimer
 permalink: /disclaimer/
 ---
 
-Last updated: March 15, 2020
+Last updated: *15 March 2020*
 
 Interpretation and Definitions  
 ==============================
@@ -134,4 +134,3 @@ Contact Us
 If you have any questions about this Disclaimer, You can contact Us:
 
   * By email: calibre.sync.help@gmail.com
-
