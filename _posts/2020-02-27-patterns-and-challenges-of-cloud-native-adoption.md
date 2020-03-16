@@ -26,6 +26,6 @@ Takeaways from my talk / discussion:
 
 * Top challenges with cloud native are cultural changes, security and complexity.
 
-Use KCEU20MU15 to get 15% off [KubeCon Amsterdam](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/register/), and sign up to stay updated about my latest project, [Kubernetes Community Days London](https://kubernetesdays.london).
+Video credit to Revology.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cloud Native Meetup #8 is on! <a href="https://t.co/alF5OnJqwU">pic.twitter.com/alF5OnJqwU</a></p>&mdash; Cloud Native Prague (@CloudNativePrg) <a href="https://twitter.com/CloudNativePrg/status/1233078429823700992?ref_src=twsrc%5Etfw">February 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
