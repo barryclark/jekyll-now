@@ -5,7 +5,6 @@ permalink: /now/
 ---
 
 - Right now, working remotely from a kitchen table in Brisbane Australia. See what I'm using to do that on the [tools](/tools) page.
-
 - Spend my time working between [Brisbane Australia](https://g.page/brisbane-technology-park?share) and [Port Vila, Vanuatu](https://goo.gl/maps/fZ1pYCu9v2MvsPY68) and elsewhere
 - Senior Consultant/Solution Architect for [Evolution Marketing Services](http://evolutionmarketing.com.au/) helping clients with CRM and Marketing Automation using Agile methods. SugarCRM, Sugar Market, Act-on, MailChimp, Act!, JIRA, Confluence, Git/GitHub and [more](http://ben.hamilton.id.au/tools)
 - Using Python more frequently as a *software multi-tool*
