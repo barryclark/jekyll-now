@@ -86,3 +86,11 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# Yaml defaults for post front matter
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "post"
