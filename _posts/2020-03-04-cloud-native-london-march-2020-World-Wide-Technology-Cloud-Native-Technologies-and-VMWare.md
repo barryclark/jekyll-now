@@ -12,7 +12,7 @@ tags:
   - "2020"
 ---
 
-Our March 2020 Cloud Native London meetup kicked off with more details of the Kubernetes Community Days London 2020, then we had three great speakers: Richard Simon from World Wide Technology, Pradeep Bhadani from Cloud Native Technologies, and Naadir Jeewa from VMWare. Check out their takeaways and video below. 
+Our March 2020 Cloud Native London meetup kicked off with more details of the Kubernetes Community Days London 2020, then we had three great speakers: Richard Simon from World Wide Technology, Pradeep Bhadani from Cloud Native Technologies, and Naadir Jeewa from VMWare. Check out their takeaways and video below.
 
 Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), and [D2iQ](https://d2iq.com).
 
@@ -21,7 +21,7 @@ Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](h
 Join us for the first ever Kubernetes Community Days London on 3-4 September 2020 at the Emmanuel Centre, Westminster. For more info, [check out the website](https://kubernetescommunitydays.org/events/2020-london/).
 The CFP has just launched, [apply to speak at KCD London](https://kubernetescommunitydays.org/events/2020-london/speakers/)! If you’d like to attend, sponsor or volunteer, register your interest at [kubernetesdays.london](kubernetesdays.london).
 
-![Richard Simon](/images/RichardSimon2.jpg)
+![Richard Simon](/images/2020-03-04-cloud-native-london-march-2020-World-Wide-Technology-Cloud-Native-Technologies-and-VMWare-RichardSimon.jpg)
 
 First up, Richard Simon from World Wide Technology told us about the [Cloud State Of Play](https://youtu.be/c5j4wbRvXIk?t=590). His takeaways are that:
 
@@ -29,7 +29,7 @@ First up, Richard Simon from World Wide Technology told us about the [Cloud Stat
 * Organisations that are looking to migrate or have migrated will benefit from a Cloud Performance and Hosting Candidacy, to optimise their cloud footprint, as well as identifying the low-hanging fruit workloads.
 * Selecting a partner that is impartial and will take an organisation's requirements from idea to outcome - not just offer recommendations - is a key differentiator, when selecting a cloud partner for your journey.
 
-![Pradeep Bhadani](/images/PradeepBhadani.jpg)
+![Pradeep Bhadani](/images/2020-03-04-cloud-native-london-march-2020-World-Wide-Technology-Cloud-Native-Technologies-and-VMWare-PradeepBhadani.jpg)
 
 Next up, Pradeep Bhadani from Cloud Native Technologies talked about how to [Build and Test GCP Infrastructure using Terraform Modules](https://youtu.be/c5j4wbRvXIk?t=2898). He concluded that:
 
