@@ -9,9 +9,9 @@ Here are three very specific uses of Extract Method on a function that takes an 
 
 ## Context
 
-The first lines of the function pull some values out of the object. The rest of the function does not access the large object again.
+The first lines of the function pull some values out of the large passed-in object. The rest of the function does not access the large object again.
 
-This isn't very common but it's the easist to apply when this context does appear.
+This context isn't very common but this refactoring is the easist of the trio.
 
 ## How to do it
 
