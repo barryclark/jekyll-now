@@ -21,11 +21,11 @@ The new function gets the same name as the old function (it's an overload), sinc
 
 ## Advanced
 
-Sometimes at the end of the method, the result of a method gets packaged into a large object to be returned. Sometimes you can leave that behind in the same way.
+Sometimes at the end of the method, the result of a method gets packaged into a large object to be returned. Sometimes you can leave that result-packing behind in the same way.
 
 Inspect callers; some will be happier calling the new overload.
 
-Consider whether a subset of parameters relate to each other in a way that would make sense as a new object (Extract Parameter Object) and whether this method actually belongs on that object.
+Consider whether a subset of parameters relate to each other in a way that would make sense as a new object (Extract Parameter Object) and whether this new method actually belongs on that new object.
 
 # Replace Supplier with Supplies
 
@@ -47,7 +47,7 @@ Similar to Replace Supplier with Thunks, but you can't be sure that retrieved va
 
 ## How to do it
 
-Wrap each troublesome statement/expression in an immediately-executed lambda. For example in C++ `some_expression()` becomes `[&]{ return some_expression() }()`. Then Extract Local Variable on this expression. Then reorder statements and Extract Method.
+Wrap each troublesome statement/expression in an immediately-executed lambda. For example in C++ `some_expression()` becomes `[&]{ return some_expression() }()`. Then Extract Local Variable on this lambda. Then reorder statements and Extract Method.
 
 It's OK to name the new function with an `_Impl` suffix and keep it `private`, if you don't think it's a natural API to be exposing from this object. Consider both options.
 
