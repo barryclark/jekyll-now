@@ -1,9 +1,16 @@
 ---
 layout: post
 title: Photos
----
-![Image description](/images/img1.jpg)
 
+![Image description](/images/img1.jpg)
+![Image description](/images/img2.jpg)
+![Image description](/images/img3.jpg)
+![Image description](/images/img4.jpg)
+![Image description](/images/img5.jpg)
+![Image description](/images/img6.jpg)
+
+photos
+---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
