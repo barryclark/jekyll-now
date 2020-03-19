@@ -99,13 +99,21 @@ price for consumer and margins for company
 
 ### OpenBanking
 
+[OpenBanking][65] is a broad term which refers to   
+> The use of open APIs that enable third-party developers to build applications and services around the financial 
+> institution.
 
+It took its name from the UK regulator's initiative. UK decided in 2016 to [front-run][66] the upcoming pan-European 
+[PSD2 directive][67], itself coming into full effect in September 2019. The term has now become global and describes 
+open financial APIs, offered by banks.  
 
-Originates from PSD2 directive
+At its core OpenBanking enables bank customers to perform all their banking tasks through a third party's application   
+Focusing on payments 
+it is a layer above the existing payment mechanisms
+Let's see how it works 
 
-walled garden of banks and data
+![OpenBanking payments](../images/payments/payments-ob.png)
 
-TBTF
 
 disintermediate banks 
 and commoditize them 
@@ -570,3 +578,6 @@ the world of [smart contracts][54] it is almost trivial to implement.
   [62]: https://en.wikipedia.org/wiki/Systemically_important_financial_institution
   [63]: https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event
   [64]: https://www.nhm.ac.uk/discover/why-are-birds-the-only-surviving-dinosaurs.html
+  [65]: https://en.wikipedia.org/wiki/Open_banking
+  [66]: https://www.openbanking.org.uk/wp-content/uploads/OB_MediaPDF_FINAL.pdf
+  [67]: https://en.wikipedia.org/wiki/Payment_Services_Directive#Revised_Directive_on_Payment_Services_(PSD2)
