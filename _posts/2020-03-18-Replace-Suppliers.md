@@ -43,7 +43,7 @@ Be sure to verify that reordering these statements doesn't change behavior, for 
 
 ## Context
 
-Similar to Replace Supplier with Thunks, but you can't be sure that retrieved values aren't changing, or the function is calling a setter or other state-modifying code.
+Similar to Replace Supplier with Supplies, but you can't be sure that retrieved values aren't changing, or the function is calling a setter or other state-modifying code.
 
 ## How to do it
 
