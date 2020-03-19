@@ -246,7 +246,6 @@ Ripple is an on-ramp off-ramp system
 and solves many problems of the international payment networks [we have discussed][2]
 quite elegantly through the use of the blockchain 
 there are some questions on its [consensus algorithm][41] resilience
-effectively a distributed trust machine  
 
 All of the above are in theory.  
 In practice the public Ripple network's design suffers from a few core flaws, inherent and acquired
@@ -419,26 +418,60 @@ The current virulent outbreak and consequent recession / depression will only ha
 
 In these articles ([part 1][1], [[part 2][2]) we saw how the transfer of value 
 has evolved over millenia 
-from a simple hand-in-hand transaction to national payment networks 
+from a simple hand-in-hand transaction in the olden days to national payment networks, mobile money
 and complex global banking systems and value routes
 
-The emerging pattern as we were describing these systems 
+As we were describing these systems there were a couple of emerging common patterns which emerged
+
+The existing payment systems' fundamental shortcoming is that of trust
+Just as in person-to-person transactions, in the insitutional payment space trust can only be effectively established on
+a bilateral basis 
+sometimes with a "neutral" trusted third party for additional guarantees   
+This trusted third party is usually [de jure][51], an institution enshrined in law or international agreements
+ 
 is that additional networks and payment rails 
 are layered on top of existing systems 
 debit/credit cards cannot operate without an underlying bank account and payment network
 SWIFT cross-border payments cannot operate without the underlying complex web of nostro-vostro accounts
-The existing inefficiencies are not covering their short-falls and inefficiencies with a layer of technology 
+The old systems' inefficiencies are merely papered over with a layer of technology 
+and usually another trusted third party, this time an unofficial and [de facto][52] one
 
+These patterns have been addressed both at once with the introduction of blockchain
+Blockchain is effectively an automated [distributed trust machine][53]  
+and allows multiple unrelated parties to transact 
 
-This layering     
+This is self-evident in the simplicity of proof-of-work payments 
+compared to the layers and layers of complexity of the current systems
 
-role of banks?
-multi-sig wallet providers?
-Oracles in a Corda network?
-pointless to maintain channels
+Every possible monetary policy has been modelled and exists now in the wild 
+from fixed supply, to fixed inflation, to deflation to asset-backed and everything in between
+This [Cambrian explosion][55] is a stark contrast to the current fiat monetary system's [stagnation][56]  
 
-event equivalent to asteroid strike
-before and after
+So in my eyes a "regime change" in the global payments and monetary system was very likely, replacing fiat with a 
+crypto-based system (central and/or decentralized) 
+The current Covid19 outbreak is making it inevitable 
+
+The only remaining question in my head then is "what would be the role of today's banks in this new landscape"?
+Would they continue being the pillars of the system? 
+Or would they shrink beyond recognition?
+Even without the current debt crisis <sup>[14](#footnote_14)</sup> the current trend was for banking to be democratized, 
+to be dispersed across the economy with thousands of companies becoming banks in all but name
+
+In a crypto world, what would even be the role of banks?
+Would they be only providing KYC and simply be custodians of wallet holder personal information?
+
+Would they be one of the [m-of-n custodians][57] in a [multisig][58] government crypto-currency wallet? 
+Would they be the trusted [node operators][59] and [notaries][60] in a Corda-like network?
+Would they only offer [custodian services][61], essentially only hold some private keys in their vaults? 
+
+Whatever the end state of the world 
+I cannot see how banks will not shrink to a tiny fraction of their current size and importance 
+In a fully crypto world maintaining alternative channels <sup>[15](#footnote_15)</sup> and being [systemically important][62] 
+is beyond pointless 
+
+The evolution of the global payment systems 
+will probably be an [extinction event][63] for the majority of the current financial system
+What will remain after, will be [hardly reminiscent][64] of what was there before
 
 
 ## Footnotes
@@ -468,7 +501,9 @@ your work's result (i.e. your salary) will be taxed multiple times, every time t
 you have not taken a noticeable pay rise in forever, TVs and blenders are becoming better and cheaper and, yet, houses, 
 gold coins and Netflix shares become ridiculously unaffordable.
 13. <a name="footnote_13"></a>I.e. use it or lose it. It may sound impossible to create in the current regime, but in 
-the world of smart contracts it is almost trivial to implement.
+the world of [smart contracts][54] it is almost trivial to implement.
+14. <a name="footnote_14"></a>Or maybe because of it. 
+15. <a name="footnote_15"></a>Branches, ATMs, mobile banking, telephony, cheque processing,...
 
 
   [1]: https://sgerogia.github.io/Payments-Intro-Part1/
@@ -521,3 +556,17 @@ the world of smart contracts it is almost trivial to implement.
   [48]: https://en.wikipedia.org/wiki/Seisachtheia
   [49]: https://en.wikipedia.org/wiki/Panopticon
   [50]: https://en.wikipedia.org/wiki/Overton_window
+  [51]: https://en.wikipedia.org/wiki/De_jure
+  [52]: https://en.wikipedia.org/wiki/De_facto
+  [53]: https://www.economist.com/leaders/2015/10/31/the-trust-machine
+  [54]: https://en.wikipedia.org/wiki/Smart_contract
+  [55]: https://en.wikipedia.org/wiki/Cambrian_explosion
+  [56]: https://www.cnbc.com/2019/06/28/central-banks-have-run-out-of-ammunition-says-oecd-angel-gurria.html
+  [57]: https://trybe.one/crypto-idea-collective-custody-platform/
+  [58]: https://en.bitcoin.it/wiki/Multisignature
+  [59]: https://docs.corda.net/key-concepts-node.html
+  [60]: https://docs.corda.net/key-concepts-notaries.html
+  [61]: https://en.wikipedia.org/wiki/Custodian_bank
+  [62]: https://en.wikipedia.org/wiki/Systemically_important_financial_institution
+  [63]: https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event
+  [64]: https://www.nhm.ac.uk/discover/why-are-birds-the-only-surviving-dinosaurs.html
