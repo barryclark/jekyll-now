@@ -40,7 +40,7 @@ In neural machine translation, a sequence is a series of words, processed one af
 
 Under the hood, the model is composed of an <span class="encoder">encoder</span> and a <span class="decoder">decoder</span>.
 
-The <span class="encoder">encoder</span> processes each item in the input sequence, it compiles the information it captures into a vector (called the <span class="context">context</span>). After processing the entire input sequence, the <span class="encoder">encoder</span> send the <span class="context">context</span>  over to the <span class="decoder">decoder</span>, which begins producing the output sequence item by item.
+The <span class="encoder">encoder</span> processes each item in the input sequence, it compiles the information it captures into a vector (called the <span class="context">context</span>). After processing the entire input sequence, the <span class="encoder">encoder</span> sends the <span class="context">context</span>  over to the <span class="decoder">decoder</span>, which begins producing the output sequence item by item.
 
 <video width="100%" height="auto" loop autoplay  controls>
   <source src="/images/seq2seq_3.mp4" type="video/mp4">
