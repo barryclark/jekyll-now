@@ -106,24 +106,6 @@ That's a trap!
 It seems better to just not answer anything at all.
 
 
-## A read about the ritual
-
-Ritual and liturgy, is that the answer to the question?
-
-> Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
-
-Why does old Paichang request a funeral?
-
-Is the ritual requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect? Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured.
-
-> "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
-
-Why would there be anything to do with the fox's body? What does it __do__? What does it changes?
-
-There are two truths that co-exist while being orthogonal to one another: _karma_ and _anatta_. On one side, _karma_ and its cage of responsibility for our past actions. On the other, _anatta_ and the release of _karma_ because its basis is non-existent. One can navigate their way by playing on those two truths, one day feeling free from non-self, one day brought back to responsibility. But one should not play with these two truths, one should not use them when they are convenient. One should respect both, acknowledge them both.
-
-Is the ritual of cremation the way to respect both truths? Is it the function, the end of Zen practice and liturgy to pay respect to both truths?
-
 ## A read about doctrines
 
 _Note: it is useful to have read the Sutra of Hui-neng for this read, and to know the distinction between the schools of Hui-neng and Shen-hsiu._
@@ -152,18 +134,29 @@ It sounds quite ironic that, old Paichang has the view of gradual enlightenment,
 
 We want Paichang to be true when he says _"such a person does not evade"_ karmic law. That should be the good answer to the question, according to this account, right? But he seems as wrong as Old Paichang. Because of that, Paichang gets a slap in the face.
 
-Sudden enlightenment is not more true, as a view, than gradual. If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. So sudden enlightenment is maybe "less wrong" than gradual enlightenment. Still, Huang-po's slap suggests that __none of those answers are actually right__.
+So, Sudden enlightenment is not more true, as a view, than gradual?
 
-Gradual.E = Sudden.E + Karma ?  
-Gradual.E is actually Sudden.E, with the Self believing there was a gradual process at play. You get enlightened suddenly, but your view makes you think you had to wait such a long time for it to happen.  
-Sudden.E says the law cannot be obscured, evaded, which brings us back to wonder when we'll exit it, back to Gradual.E.
+If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. Could sudden enlightenment be "less wrong" than gradual enlightenment?
+
+Still, Huang-po's slap suggests that none of those answers are actually right.
 
 (Dogen would probably point out that it's an answer made of words, or that it's one view distinct from others, so it's a wrong view. He says _"If you fall into the words and ideas [...] you too will be a fox spirit"_, in comments of case 102)
 
-_Karma_ is the law of cause and effect, and it also is the phenomena it governs. The law and the objects of the law are "one". A single cause/effect relationship is "one with" the continuum.  
-Like an instant in a duration.  
-Like a wave in the ocean.  
-There is no "way out" of karmic law, because there's no "in". You can't obscure it.
+
+## A read about the ritual
+
+Ritual and liturgy, is that the answer to the question? Is the ritual of cremation the way to find your way between the two answers? Is it the function, the end of Zen practice and liturgy to pay respect to both answers?
+
+> Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
+
+Why does old Paichang request a funeral?
+
+Is the ritual requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect? Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured.
+
+> "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
+
+Why would there be anything to do with the fox's body? What does it __do__? What does it changes?
+
 
 ## A read about cause and effects
 
@@ -211,7 +204,7 @@ The answer is not the issue here, the answer did not cause old Paichang to be re
 
 ## Dogen's slap
 
-At this point in my exploration, after a couple of months, I read Dogen's commentary on this case. This is the chapter of the Shobogenzo titles "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\].
+At this point in my exploration, after a couple of months, I read Dogen's commentary on this case. It is the chapter of the Shobogenzo titled "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\].
 
 Here's some excerpts I took right in the face:
 
