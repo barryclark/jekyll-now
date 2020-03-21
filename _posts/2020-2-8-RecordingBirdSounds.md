@@ -61,34 +61,4 @@ So you need to edit the files. Luckily there are lots of ways to do this.
 
 I use [Audacity](https://www.audacityteam.org/) which is a free audio editor available on most operating systems (such as Windows, Apple, Linux). There are audio editors on smart phones, and one can do some editing on the recording device. But a computer is easier.
 
-First you will need to get the files. When I use my smartphone, I just email them to myself and then save the files onto my computer. If I use my zoom H1N, I plug it into a USB port and download the files that way.
-
-#### Working in audacity
-
-Load the file, at firs it will show up as a plot of time vs. amplitude (loudness). This is a good way to start as you can see where there was sounds recorded. The bigger bars are where there are louder noise. In this view, for example I cut out the part where I said "Recording three Red-Tailed Hawks." Sometimes there are exteraneous sounds at the beginning where I start and stop the recording. I cut those out too. ![amplitude](https://manual.audacityteam.org/m/images/4/46/selected_audio_for_tour_guide.png)
-
-Next change the view to spectogram. A spectrogram view plots time vs. frequency. Higher pitch sounds show at the top of the y axis, and lower at the botton, ![spectogram](https://manual.audacityteam.org/m/images/6/65/a_small_spectral_selection.png)
-
-#### Effects
-Now you will make use of the "effects" from the effects menu:
-
-* High Pass Filter
-* Low Pass Filter
-* Normalize
-
-###### Using the High Pass Filter
-
-###### Using the Low Pass Filter
-
-###### Using Normalize
-
-#### Save the file
-
-### Add to eBird
-
-## Thanks
-
-I hope this was useful to you!
-
-
-
+I'll cover that in another post.
