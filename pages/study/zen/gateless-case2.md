@@ -219,6 +219,14 @@ Here's some excerpts I took right in the face:
 
 > If you were to say, “When someone who was a bystander spoke a triggering phrase concerning causality, that freed another from the mind of a wild fox,” well, the great earth with its mountains and rivers has already been giving forth innumerable triggering expressions concerning causality and is continually doing so. But even so, the old man had not yet dropped off the mind of a wild fox in the past, and he only dropped it off due to the later Abbot’s triggering words concerning causality.
 
+> In the old man’s remark, “I was reduced to being reborn as a wild fox for five hundred lives,” what is it that was reborn and what was that reduced to? At the very moment when he was reborn as a wild fox, what form did his previous universe now take on? How is the phrase ‘not being subject to causality’ related to his being reborn five hundred times? And where did the pelt that was now lying beneath a rock on the other side of the mountain come from?
+
+Some notes:
+- How could someone dare to judge old and new Paichang's answer as right or wrong?  
+- How could there be any causal relationship between old Paichang answering the question and his being reborn as a fox?
+- How could there be any causal relationship between Paichang answer the question and old Paichang being enlightened?
+- How can a single answer be a turning point?  
+
 
 ## Composing an answer?
 
@@ -238,3 +246,8 @@ After Dogen's slap, I was suggested to focus on the question. I started composin
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- A waterfall is just a river cut in half.
+
+Maybe this one is ok:
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- I sure do.
