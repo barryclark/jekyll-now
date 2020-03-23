@@ -13,10 +13,11 @@ tags: [payments, networks, payment rails, cryptocurrencies, bitcoin, libra, remi
 *In the previous 2 instalments ([1][1], [2][2]) of this series, I talked about the history behind payment systems and 
 described how domestic and international payments work.*  
 
-*In this post I will cover* 
- * *modern payment "rails"*
+*In this post I will*  
+ * *cover modern payment "rails",*
  * *blockchain-based systems, and* 
- * *close the "trilogy" with some parting thoughts.* 
+ * *close the "trilogy" with some parting thoughts on the future and how the unfolding [Covid-19][78] pandemic will 
+ accelerate the evolution of the payment systems.* 
     
 <!--more-->
 
@@ -29,7 +30,7 @@ Mobile money (or [M-Pesa][3] as is widely known from its initial Kenyan incarnat
 > available is an [indestructible brick phone][5]?
 
 It seems that the populations had already found the answer themselves: [swapping of airtime][4].  
-M-Pesa was just the glossy version of an existing unofficial practice.
+M-Pesa is just the glossy version of an existing unofficial practice.
 
 ![Mobile payments](../images/payments/payments-mobilemoney.png)
 
@@ -37,22 +38,22 @@ Let's see how it works in principle.
 
 1. The Sender wants to top up her mobile money account balance.  
 She sends the equivalent amount to the Telco's bank account (V).
-2. The Telco is notified that a new deposit was made and increases her balance.
-3. The Sender can now make a payment using M-Pesa's mechanisms (e.g. an [STK][8] application with secure SMS) to the 
-Receiver. 
-4. The transaction is recorded on the Telco's ledger and the account balances are adjusted.
+2. The Telco is notified that a new deposit was made and increases the Sender's mobile money balance.
+3. The Sender can now make a payment using M-Pesa's mechanisms to the Receiver (e.g. using an [STK][8] application with 
+secure SMS). 
+4. The transaction is recorded on the Telco's ledger and the account balances between Sender and Receiver are adjusted.
 
 The Receiver can use the balance for a mobile payment in the ecosystem or convert the amount into "real world" 
-money and paid to her account (lines 5, 6).  
+money, which is then paid to her account (lines 5, 6).  
 
 From its inception, M-Pesa was meant to be an [on-ramp][7] / [off-ramp][6] system, parallel to the "real" 
 financial world. In practice, even to this day, the off-ramping (5, 6) is rarely, if ever, exercised. This is a 
-combination of the plain lack of bank accounts and the [exorbitant withdrawal costs][9], up to 20%.  
+combination of the plain lack of bank accounts in developing markets and the [exorbitant withdrawal costs][9], up to 20%.  
 This last statement reveals a gross simplification of the above diagram: the vast majority of on- / off-ramping 
 does not happen through bank accounts. It takes place through a vast network of [street agents][10], who convert 
 cash into mobile money, taking a commission.  
 Street agents are the equivalent of a bank's brick-and-mortar network. The extremely low [capex][11] 
-to setup an agency, gave telcos an advantage of quick scale. 
+to setup an agency gave telcos an advantage of quick scale. 
 
 Since everything happens within one IT system (the telco's servers), transfer and settlement is instant. This is 
 combined with the mobile phone's PIN, providing a rudimentary layer of security.    
@@ -69,15 +70,16 @@ standard as banks have been.
 [Super apps][17] is a relatively recent term, describing mobile apps developed in East and South East Asia. They are 
 worth mentioning here, due to their rapid growth.
 
-Not originally conceived as payment rails, they have moved into payments and financial services in recent years. After that
-they quickly grew to rival banks in terms of transaction volume. Some examples are [WeChat][20] and [Alipay][21] <sup>[2](#footnote_2)</sup> 
+Not originally conceived as payment rails, they have moved into payments and financial services in recent years. They then
+quickly grew to rival banks in terms of transaction volume. Some examples are [WeChat][20] and [Alipay][21] <sup>[2](#footnote_2)</sup> 
 in China, [PayTM][23] in India and [GoJek][22] in Singapore/Indonesia.
 
 The underlying mechanics of this payment rail are pretty much identical to those of M-Pesa.  
 App users can fund their account with a variety of means: from a normal debit/credit card to the [ojek][25] driver [becoming
 an agent on wheels][24]. The payment system is a general ledger running inside the company's domain, tracking transfers 
-of value between users. The demographic and economic tailwinds of the region have enabled them to grow into massive 
-user bases and now rapidly expanding into all kinds of financial services, beyond payments (lending, credit scores,...).  
+of value between users.  
+The demographic and economic tailwinds of the region have enabled them to grow into massive user bases and are now 
+rapidly expanding into all kinds of financial services, beyond payments (lending, credit scores,...).  
 Especially in the case of China (a prime example of [command economy][26]), WeChat and Alipay have become deeply integrated
 with the [state apparatus][27], offering unique insights for the [social credit score][28] system.
  
@@ -85,17 +87,28 @@ M-Pesa was created because of the lack of a viable alternative for payments in i
 on the back of that. Super apps started with a killer core feature <sup>[3](#footnote_3)</sup> and are now growing on 
 the back of innovation and the irresistible power of the [network effect][18]. 
 
-#### Paypal and friends
+#### Paypal
 
-Based on e-mail
-trusted third party 
+The wave of internet e-money providers like [Paypal][79] started in the early '00s
+to facilitate online commerce 
+with proper UX and web integration in the early internet days  
+These providers grew along with the growth of the internet 
+millions of users and merchants have accounts creating an established user base 
+ 
+At its core Paypal is also an on-ramp/off-ramp system
+since all transactions between Paytpal holders take place within the company's ledger 
+settlement and payout is instant
 
-to facilitate e-commerce 
-careful UX and web integration in the early internet days  
+This was a great value proposition in the early days as 
+the US retail banking system is [notoriously inefficient][83] 
+and online card fraud was rampant    
 
-Adding layers of efficiency on top of an inefficient core
-Once core becomes more efficient race to the top in terms of innovation and race to the bottom in terms of 
-price for consumer and margins for company
+Paypal provided a trusted third party 
+with an internet-friendly e-mail based identity  
+
+However as the undelrying "plumbing" improves 
+the value proposition in terms of payments processing is reduced 
+Paypal ends up being another middleman
 
 ### OpenBanking
 
@@ -104,126 +117,137 @@ price for consumer and margins for company
 > institution.
 
 It took its name from the UK regulator's initiative. UK decided in 2016 to [front-run][66] the upcoming pan-European 
-[PSD2 directive][67], itself coming into full effect in September 2019. The term has now become global and describes 
-open financial APIs, offered by banks.  
+[PSD2 directive][67], which was coming into full effect in September 2019. The name OpenBanking has now become almost 
+global and describes open financial APIs, offered by banks.  
+> In this section I will be using the terms OpenBanking and PSD2 interchangeably.
 
-At its core OpenBanking enables bank customers to perform all their banking tasks through a third party's application   
-Focusing on payments 
-it is a layer above the existing payment mechanisms
-Let's see how it works 
+At its core OpenBanking enables bank customers to perform all their banking tasks through a third party's application.     
+Though it provides access to data as well as payment, I will be focusing on payments in this section. 
+
+Let's see how it works.  
 
 ![OpenBanking payments](../images/payments/payments-ob.png)
 
+1. A Customer registers with the application of a [PSP][68].  
+Practically any app could be a PSP; from a mobile-only personal finance assistance (e.g. [Plum][69]) to a payments 
+processing platform (e.g. [Adyen][70]).
+2. The Customer wants to initiate a payment from her account (C) in PinkBank to another account (A), using the PSP.  
+The PSP's app calls PinkBank's standardized [OpenBanking APIs][71]. 
+3. Following the standardized OpenBanking [customer consent flow][72], the Customer agrees that the PSP initiates the 
+payment (to the given Receiver account and for the given amount) on her (the Customer's) behalf. The consent is stored 
+in PinkBank's systems.
+4. The PSP then instructs PinkBank to initiate the payment.  
+Depending on the payment's type (domestic, international,...) one of the exiasting, underlying payment schemes is used.   
 
-disintermediate banks 
-and commoditize them 
-
-UK ingeniously front-runned the roll-out of PSD2 in Europe
-
-billion $$ gamble which paid off
-https://www.finextra.com/newsarticle/35199/uk-fintech-scene-sees-record-investment-in-2019
-https://www.consultancy.uk/news/22152/uk-fintech-investment-doubles-to-2-billion
-
-
+From the above it becomes clear that OpenBanking is not a new "payment rail" as such.  
+Rather it is a technological layer on top of the existing banking infrastructure, opening access to a number of new 
+companies (the PSPs). This aims to disintermediate the customer from the bank (by introducing additional "smart apps"). 
+This will eventually lead to the [commoditization][73] of the banking institutions.
 
 ### Remittance services
 
-We saw in part 2 how complex (and more often than not complicated) international payments are 
+We saw in [part 2][2] how complex (and more often than not complicated) international payments are.
 
-What if there was a magic way of sending value cross-border without anything actually crossing borders?
-Sounds weird?
-This is where remittance services come in
+What if there was a magic way of sending value cross-border without anything actually crossing borders?  
+Sounds weird? This is where remittance services come in.  
+A practical example will help understand their modus operandi. 
 
 ![Remittance payments](../images/payments/payments-remittance.png)
 
-The magic happening behind the scenes is netting off of flows
-https://www.kantox.com/en/glossary/payment-netting-2/
+The Sender having an account in RedBank in the Eurozone, wants to send money to the Receiver. The Receiver has an 
+account in PinkBank in the UK.
 
-In practice this works like this 
-Sender having an account in RedBank in the Eurozone wants to send money to the Receiver 
-having an account in PinkBank in the UK
-1. Sender logs in to Remittance Service (RS) and enters her desired trade. Say, convert €100 to GBP and send to the 
-Receiver's GBP account
-RS gets the current spot price (link?) and provides the details of its Euro bank account (R1)
-The transaction for now is still pending in RS's ledger
-Sender has an alloted amount of time to send the funds, or the transaction is voided
-2. The Sender makes the transfer (1)
-This is usually a local transfer using the mechanisms described in part 1 (link?) 
-3. RS gets a notification that the amount has been deposited in its R1 account
-The transaction is marked as "funded" 
-4. RS then instructs its GBP account (R2) to pay out the GBP equivalent, at the rate that the Sender agreed.
-5. Again using a local payment mechanism (e.g. Faster Payments in the UK), Receiver gets the money
-The transaction is then marked as completed in RS's ledger and the books are balanced
+1. Sender logs in to Remittance Service (RS) and enters her desired trade.  
+Say, send £100 to the Receiver's GBP account. RS gets the current [spot price][84] and provides the 
+details of its Euro bank account (R1). The transaction for now is still pending in RS's ledger. Let's say that the spot 
+price means that Sender will "pay" €110. 
+Sender has an alloted amount of time to send the funds, or the transaction is voided.
+2. The Sender makes the transfer (1).  
+This is usually a local transfer using the mechanisms described in [part 1][1]. 
+3. RS gets a notification that the amount has been deposited in its R1 account.  
+The transaction is marked as "funded".
+4. RS then instructs its GBP account (R2) to pay out the £100.  
+5. Again using a local payment mechanism (e.g. Faster Payments in the UK), Receiver gets the money.  
+The transaction is then marked as completed in RS's ledger and the books are balanced.
  
-Let's pause here and unwrap the phrase "the books are balanced" 
-In step 2 RS's account R1 received €100, so RS's assets increased by €100
-By sending out the equivalent amount in GBP in step 5
-overall RS no longer owns the €100
-By nominally "securing" the FX rate at the moment of transfer, the books are balanced
+Let's pause here and unwrap the phrase "the books are balanced".  
+In step 2, RS's account R1 received €110, so RS's assets increased by €110. By sending out the equivalent amount in GBP 
+in step 5 (i.e. £100), RS no longer owns the €110. Or better own the *value represented by €110*.  By nominally "securing" 
+the FX rate at the moment of transfer (€110 for £100)  
+* R1 is up by €110, 
+* R2 is down by £100, and
+* the books are balanced.
 
-This setup greatly accelerates cross-border transactions 
-as there is no need for SWIFT messages or nostro/vostro movements
-only requirement is that R2 has the required cash buffer to service the payouts  
+This is called [netting off][85] of flows.  
+This setup greatly accelerates cross-border transactions, as there is no need for expensive SWIFT messages or slow 
+nostro/vostro movements. The only requirement is that account R2 has the required cash buffer to service the payouts in
+that currency.   
 
-The importance of the FX rate comes into play when we have the reverse flow 
-Let's say that Receiver wants to return the received amount
-The steps are followed in the reverse order and the balances in the 2 accounts (R1, R2) change accordingly
+The importance of the FX rate comes into play when we have the reverse flow.   
+Let's say that 5 days later Receiver realizes this was a mistake and she wants to return the received £100. 
+The steps are followed in the reverse order. Meanwhile, Brexit has happened and GBP has lost its value relative to the 
+Euro. So now when RS gets the new spot price £100 now buys €100.  
+At the end of the second payment  
+* R2 is up by £100, 
+* R1 is down by €100, and
+* the books are again balanced.
 
-This is the power of netting off flows
-RS takes a fee out of each transaction as an FX merchant would, 
-but actually moves a fraction of the transacted amounts 
-This fraction is dependent on the https://en.wikipedia.org/wiki/Balance_of_payments between the 2 currencies
-If the flows between Euro and GBP are balanced over time, then the balances of R1 and R2 will find an equilibrium  
-If we imagine that there is an imbalance of 5% more payments Euro-to-GBP than GBP-to-Euro, then R1 will be needing a 
-periodic 5% topup 
-Depending on the size of the short-fall this can be covered in any number of ways
-* a periodic international payment from R2 to R1 to re-balance the books (line 5)
-the FX fees paid by RS will be for a fraction of the fees it has collected for the total flows
-* interest accrued on R1, or
-* local borrowing (if the cost of capital is really-really cheap)
-In short, the more balanced a currency pair, the more profitable for the RS
+RS's books are balanced, even though it was left with €10 in the end in its R1 account!  
+This is the power of netting off flows.  
+RS takes a fee out of each transaction as an FX merchant would, but actually moves a fraction of the transacted amounts. 
+The fraction actual;ly moved as a "real" cross-border payment is dependent on the [balance of payments][86] between the 
+2 currencies. If the flows between Euro and GBP are balanced over time, then the balances of R1 and R2 will find an 
+equilibrium. If we imagine that there is an imbalance of 5% more payments Euro-to-GBP than GBP-to-Euro, then R1 will be 
+needing a periodic 5% topup.
+ 
+Depending on the size of the short-fall this can be covered in any number of ways.  
+* A periodic international payment from R2 to R1 to re-balance the books (line 5).  
+The FX fees paid by RS will be for a fraction of the fees it has collected for the total flows.
+* Interest accrued on R1, or
+* Local borrowing (if the [cost of debt][87] in that market is really-really cheap).
 
-Some currency pairs are more imbalanced than others 
-This is especially the case in the remittances market 
-where emigrants send money back home (e.g. from USD to Mexican Pesos) 
-This is one of the reasons why, past a certain size, all remittance providers try to expand into the 
-business payments market to balance their flows
-e.g. countries with high emigration are net importers, i.e. a lot of money leaving the country as business payments  
+In short, the more balanced a currency pair, the more profitable for the RS.
 
-The myriad of Hawala agents of old would be proud 
-https://en.wikipedia.org/wiki/Hawala
+Some currency pairs are more imbalanced than others.  
+This is especially the case in the personal remittances market, where emigrants send money back home (e.g. from USD to 
+Mexican Pesos). This is one of the reasons why, past a certain size, all remittance providers try to expand into the 
+business payments market to balance their flows.  
+Business and trade are in general more balanced. For example, countries with high emigration are usually net importers. 
+So the money entering the country as remittances, leave it soon after to buy cars and electronics.   
+
+This elaborate setup is nothing more than the digitization of the ancient [Hawala networks][88].  
 
 ## ...and the future
 
 ### Digital IOUs
 
-Will consider Ripple 
-Although stellar is practically the same thing
-https://www.fxempire.com/education/article/ripple-vs-stellar-will-there-be-only-one-winner-521999
+The world of [cross-border payments][2] is so complex and inefficient that it should be expected to have a blockchain-based 
+solution: digital IOUs.  
+> In this section I will only discuss [Ripple][89]. The alternative [Stellar][90] network has [very little differences][91].  
+> Its main difference to Ripple is that it tries to avoid the centralisation of funds by a [distribution schedule][43]. 
 
 The public Ripple network has all the components to be an all-in-one drop-in blockchain replacement for  
 * global nostro-vostro accounts, 
 * FX markets, and  
 * the [SWIFT network][35] built on top of them.
-By extension a private Ripple network (i.e. a network deployed from source code) can perform all the functionality 
-that a Hawala network would
+By extension, a private Ripple network (i.e. a network deployed from source code) is effectively a Hawala network 
+out of the box.
 
-The fundamental concept underlying Ripple is that of liability and debt, a.k.a. an [IOU][29].
-We mentioned in [part 1][1] that paper money came from [Kinghts Templar and merchant promissory notes][30] 
-all of which were forms of debt 
-since mutual debt cancels out <sup>[4](#footnote_4)</sup> everyone could be performing financial transactions 
-simply by oweing each other value, without money actually changing hands
-
-This is what is actually happening in the real world 
-as the modern day equivalent of the Florentine merchant notes are cross-border nostro-vostro accounts 
+The fundamental concept underlying Ripple is that of liability and debt, a.k.a. an [IOU][29].  
+We mentioned in [part 1][1] that paper money came from [Kinghts Templar and merchant promissory notes][30], all of which 
+were forms of debt. Since mutual debt "cancels out" <sup>[4](#footnote_4)</sup> everyone could be (and are indeed) 
+performing financial transactions, simply by owing each other value, without money actually changing hands.  
+This is what is actually happening in the real world. The modern day equivalent of the medieval Italian traders' networks 
+are cross-border nostro-vostro accounts. 
  
-There are 2 missing ingredients in the equation: 
-* what type of debt do you trust?  
-Like in the real world, in Ripple you can have many issued [currencies][31], i.e. debt denominated in those currencies
-As a participant, you can choose which currencies to trust
-* Whose debt do you trust? 
-i.e. who do you think issues promissory notes which they will make whole? 
-Ripple solves this by introducing the concept of [trust lines][32] between [accounts][33]
+There are 2 missing ingredients in the equation:  
+* **What type of debt do you trust?**  
+Like in the real world, in Ripple you can have many different types of issued ["paper"][92] (called Ripple [currencies][31]). 
+This is debt denominated in those currencies. However, a Ripple currency can represent anything of value, not just USD 
+and GBP. As a participant, you can choose which "currencies" to trust.
+* **Whose debt do you trust?**   
+As in real life, you do not trust everyone's promises. Which network participants do you think issue "paper" which they 
+will make whole? Ripple solves this by introducing the concept of [trust lines][32] between [accounts][33].
 
 Let's see how it works in a practical example.  
 Sender wants to makes a cross-currency payment to Receiver.
@@ -233,12 +257,13 @@ Sender wants to makes a cross-currency payment to Receiver.
 1. The Sender has a Ripple account, which needs to be funded.  
 To do so, the Sender uses a [gateway][34] she trusts to convert her Euro fiat into "Ripple EUR" IOUs. She does so by 
 funding the gateway's collateral bank account (G1). 
-2. The gateway sees the deposit in the bank account, creates the equivalent amount of IOUs and funds the Sender's 
-account. The Sender has a trust line with the gateway, i.e. she trusts the issued IOUs.
+2. The gateway sees the deposit in the bank account, creates the equivalent amount of "Ripple EUR" IOUs and funds the 
+Sender's account. The Sender has a trust line with the gateway, i.e. she trusts the issued IOUs.
 3. The Sender makes a payment to the Receiver.  
 The Sender and the Receiver do *not* need to be directly connected by a trust line. Instead, the Ripple network finds a 
 [path of trust lines][39] connecting the two. This is the same way that SWIFT finds a path of nostro-vostro accounts to 
-facilitate international payments. The transaction is then propagated through <sup>[5](#footnote_5)</sup> the connected 
+facilitate international payments.  
+The transaction is then propagated through <sup>[5](#footnote_5)</sup> the connected 
 accounts until it reaches the Recipient. In Ripple-speak the transaction "[ripples][36]" through the network of accounts,
 with all balance adjustments recorded in Ripple's [distributed ledger][38].  
 When the transaction is a cross-currency one, Ripple provides a singular [decentralized exchange][37] where interested 
@@ -250,43 +275,36 @@ In our example, the payment has resulted into a conversion from "Ripple EUR" to 
 "burns" it and takes it out of circulation <sup>[8](#footnote_8)</sup>. 
 5. The money is then transferred out of the gateway's collateral account (G2) to the Recipient. 
 
-Ripple is an on-ramp off-ramp system
-and solves many problems of the international payment networks [we have discussed][2]
-quite elegantly through the use of the blockchain 
-there are some questions on its [consensus algorithm][41] resilience
-
-All of the above are in theory.  
-In practice the public Ripple network's design suffers from a few core flaws, inherent and acquired
+From this example, it is clear that Ripple is an on-ramp / off-ramp system.  
+It solves many problems of the international payment networks [we have discussed][2] quite elegantly through the use of 
+the blockchain. 
+ 
+In addition to some questions on its [consensus algorithm][41] resilience, there a few more issues with the public 
+Ripple network's design, both inherent and acquired.
 
 **Monetary imbalance**  
-At the core is the monetary imbalance in the public network's design 
-gateway IOUs are the equivalent of [stablecoins][40], their value is pegged to real-world currencies and are created/burnt 
-on an one-in-one-out basis
-but XRP itself is arbitrarily priced and not pegged to (or backed by) anything 
-Therefore the central "reserve currency" of the network draws its value solely by the network itself
-Not very reassuring in an unwinding scenario  
+At the core, is the "monetary imbalance" in the public network's design.   
+Gateway IOUs are the equivalent of [stablecoins][40] (see next section), their value pegged to real-world currencies. 
+They are created/burnt on an one-in-one-out basis. XRP itself however is arbitrarily priced in the open market and not 
+pegged to (or backed by) anything. Quite probably the designers aimed for the central "reserve currency" of the network 
+to reach an equilibrium with the global money markets' demand. It would then draw its value solely by the utility of 
+the network itself.  
+However, this "backed by trust" label alone would not be very reassuring in an black swan / unwinding scenario (like the 
+[one we are currently in][78]).
 
-**Centralization of funds**
-Highly centralised as over 50% of XRP 
-is controlled by a single entity
-Criticism on the lack of auditing transparency 
-https://www.forbes.com/sites/jasonbloomberg/2019/03/01/is-ripple-a-scam/#5dd363a179a4
+**Centralization of funds**  
+The XRP crypto-currency is highly centralised, with over 50% of tokens in circulation [controlled by a single entity][93]. 
+This level of control along with criticism on [lack of auditing transparency][94], gives cause for concern.
 
-**Centralization of control** 
-public network nodes are a closed set 
-has a say on which entities can join the network as gateways
-This is part-and-parcel of Ripple's strategy to partner with existing financial institutions 
-but is an anathema to the rest of the libertarian crypto community 
+**Centralization of control**  
+Ripple network's nodes are a closed set. Ripple Labs has a say on which entities can join the network as gateways and
+may have [undue control over the entire network][95]. This is an intentional decision and part of Ripple's strategy to 
+partner with existing financial institutions. This level of control however is anathema to the rest of the crypto community.  
 
-The other contender in this space, [Stellar][42], is essentially a fork of Ripple 
-Its main difference to Ripple is that it tries to avoid the centralisation of funds by 
-a [distribution schedule][43] 
-
-Based on the above one might think that these projects offer little value
-However this could not be further from the truth 
-Though the economics and [incentives][44] of the public networks may be open for debate
-both technologies allow financial organisations with a cross-border foot-print 
-to effectively create a robust payments network in a single sweep  
+Based on the above one might think that these projects offer little value.  
+However this could not be further from the truth. Though the economics and [incentives][44] of their public networks may 
+be open for debate, both technologies allow financial organisations with a cross-border foot-print to effectively create 
+a robust payments network in a single sweep.  
 
 ### Stablecoins
 
@@ -417,7 +435,32 @@ The current virulent outbreak and consequent recession / depression will only ha
 
 ### Proof-of-work money 
 
+The last in the series is also the simplest one
+proof-of-work cryptocurrencies 
+
 ![Crypto payments](../images/payments/payments-crypto.png)
+
+Sing the transaction and send 
+system agrees on correct blockchain 
+immutably recorded on ledger 
+
+There are on-ramps in the form of exchanges (e.g. Coinfloor, Shapeshift)
+but these are only utility mechanisms 
+to onboard from existing fiat world 
+
+otherwise proof of work are created inside the system 
+as reward for [capital and operational expenditure][15] 
+to [mine][16] them
+
+this value is locked inside the system behind the hashing wall 
+
+
+From that aspect, the major [proof of work][13] [cryptocurrencies][14] can also be considered a digital approximation 
+of money. This is due to the ever-increasing  required to .
+
+Bearer asset  
+equivalent to hand in hand transaction
+
 
 ## Some racing thoughts 
 
@@ -444,6 +487,13 @@ SWIFT cross-border payments cannot operate without the underlying complex web of
 The old systems' inefficiencies are merely papered over with a layer of technology 
 and usually another trusted third party, this time an unofficial and [de facto][52] one
 
+Adding layers of efficiency on top of an inefficient core
+Once core becomes more efficient race to the top in terms of innovation and race to the bottom in terms of 
+price for consumer and margins for company
+This is reflected in [Visa's rise to the top][80] and its valuation 
+the global footprint and apparent uniformity of underlying plumbing 
+network effect 
+
 These patterns have been addressed both at once with the introduction of blockchain
 Blockchain is effectively an automated [distributed trust machine][53]  
 and allows multiple unrelated parties to transact 
@@ -457,9 +507,11 @@ This [Cambrian explosion][55] is a stark contrast to the current fiat monetary s
 
 So in my eyes a "regime change" in the global payments and monetary system was very likely, replacing fiat with a 
 crypto-based system (central and/or decentralized) 
-The current Covid19 outbreak is making it inevitable 
+The current Covid-19 outbreak, the massive [helicopter money][74] and proposed [pre-paid debit card][77] packages which 
+have started and the upcoming [debt][75] 
+and [retirement][76] crises are making this inevitable 
 
-The only remaining question in my head then is "what would be the role of today's banks in this new landscape"?
+The only remaining question in my head then is "what would be the role of today's banks and payment processors in this new landscape"?
 Would they continue being the pillars of the system? 
 Or would they shrink beyond recognition?
 Even without the current debt crisis <sup>[14](#footnote_14)</sup> the current trend was for banking to be democratized, 
@@ -467,17 +519,21 @@ to be dispersed across the economy with thousands of companies becoming banks in
 
 In a crypto world, what would even be the role of banks?
 Would they be only providing KYC and simply be custodians of wallet holder personal information?
-
 Would they be one of the [m-of-n custodians][57] in a [multisig][58] government crypto-currency wallet? 
 Would they be the trusted [node operators][59] and [notaries][60] in a Corda-like network?
 Would they only offer [custodian services][61], essentially only hold some private keys in their vaults? 
+How can they justify their importance as lenders when current [DeFi][82] systems are operating through great volatility 
+and with a tiny fraction of operating costs?
+
+What about payment processors 
 
 Whatever the end state of the world 
-I cannot see how banks will not shrink to a tiny fraction of their current size and importance 
+seems almost certain that the current [shrinking trajectory][81] of retail banks will only accelerate 
+to a tiny fraction of their current size and importance 
 In a fully crypto world maintaining alternative channels <sup>[15](#footnote_15)</sup> and being [systemically important][62] 
 is beyond pointless 
 
-The evolution of the global payment systems 
+The upcoming evolution of the global payment systems 
 will probably be an [extinction event][63] for the majority of the current financial system
 What will remain after, will be [hardly reminiscent][64] of what was there before
 
@@ -581,3 +637,31 @@ the world of [smart contracts][54] it is almost trivial to implement.
   [65]: https://en.wikipedia.org/wiki/Open_banking
   [66]: https://www.openbanking.org.uk/wp-content/uploads/OB_MediaPDF_FINAL.pdf
   [67]: https://en.wikipedia.org/wiki/Payment_Services_Directive#Revised_Directive_on_Payment_Services_(PSD2)
+  [68]: https://en.wikipedia.org/wiki/Payment_service_provider
+  [69]: https://withplum.com/
+  [70]: https://www.adyen.com/
+  [71]: https://openbanking.atlassian.net/wiki/spaces/DZ/pages/23922689/ARCHIVE+-+Specifications
+  [72]: https://www.openbanking.org.uk/wp-content/uploads/Customer-Experience-Guidelines-V1-1.pdf
+  [73]: https://www.investopedia.com/terms/c/commoditize.asp
+  [74]: https://www.theguardian.com/uk-news/2020/mar/20/government-pay-wages-jobs-coronavirus-rishi-sunak
+  [75]: https://www.theguardian.com/business/2020/jan/08/world-bank-global-debt-crisis-borrowing-build-up
+  [76]: https://www.forbes.com/sites/greatspeculations/2019/03/20/the-retirement-crisis-is-much-worse-than-you-think/#5dc61f223949
+  [77]: https://tlaib.house.gov/sites/tlaib.house.gov/files/Automatic%20Boost%20to%20Communities%20Act%20.pdf
+  [78]: https://en.wikipedia.org/wiki/Coronavirus_disease_2019
+  [79]: https://en.wikipedia.org/wiki/PayPal#Early_history
+  [80]: https://www.economist.com/business/2020/03/19/how-visa-became-the-top-dog-in-global-finance
+  [81]: https://www.pwc.com/gx/en/banking-capital-markets/events/assets/pwc-that-shrinking-feeling.pdf
+  [82]: https://blog.coinbase.com/a-beginners-guide-to-decentralized-finance-defi-574c68ff43c4
+  [83]: https://www.marketplace.org/2014/02/17/why-our-banking-system-so-far-behind/
+  [84]: https://www.investopedia.com/terms/forex/f/forex-spot-rate.asp
+  [85]: https://www.kantox.com/en/glossary/payment-netting-2/
+  [86]: https://en.wikipedia.org/wiki/Balance_of_payments
+  [87]: https://www.investopedia.com/terms/c/costofdebt.asp
+  [88]: https://en.wikipedia.org/wiki/Hawala
+  [89]: https://ripple.com/
+  [90]: https://www.stellar.org/
+  [91]: https://www.fxempire.com/education/article/ripple-vs-stellar-will-there-be-only-one-winner-521999
+  [92]: https://www.investopedia.com/terms/n/note.asp
+  [93]: https://hackernoon.com/a-brief-look-into-ripple-xrp-banks-pre-mines-and-lawsuits-qcn63au2
+  [94]: https://www.forbes.com/sites/jasonbloomberg/2019/03/01/is-ripple-a-scam/#5dd363a179a4
+  [95]: https://bitcoinist.com/not-decentralized-ripple-freezes-1m-user-funds/
