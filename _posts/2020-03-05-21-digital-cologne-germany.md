@@ -4,6 +4,7 @@ title: "#21 Digital, Cologne Germany"
 description: "Photos of Cheryl Hung at #21 Digital in Cologne, Germany."
 location: Cologne, Germany
 image: /images/2020-03-05-21-digital-cologne-germany-Cheryl-Hung-5.jpg
+video: https://www.youtube.com/embed/f02PVL62ebI
 tags:
   - Photos
   - "2020"
