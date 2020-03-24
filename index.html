@@ -30,7 +30,7 @@ make-smaller-titles: false
 
               <ul>
                   {% assign work_posts = site.posts | where: "category", "Work project" %}
-                  {% for post in work_posts limit: site.work_post_limit %}
+                  {% for post in work_posts limit: 5 %}
                   {% if post.active %}
                     {% assign date = post.date | date: '%Y' %}
                     {% assign date_str = "(" | append: date | append: " - present)" %}
@@ -39,9 +39,14 @@ make-smaller-titles: false
                     {% assign date_str = "(" | append: date | append: ")" %}
                   {% endif %}
                       <li>
-                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small>{{ date_str }}</small><br>
-                          <small>{{ post.tags | join: "|" }}</small>
+                          <a href="{{ post.url | prepend: site.baseurl }}">
+                            <div>
+                              {{ post.title }}
+                              <date>{{ date_str }}</date><br>
+                              <summary>{{ post.summary }}</summary>
+                              <small>{{ post.tags | join: "|" }}</small>
+                            </div>
+                          </a>
                       </li>
                   {% endfor %}
                   <li>
@@ -57,7 +62,7 @@ make-smaller-titles: false
 
               <ul>
                   {% assign personal_posts = site.posts | where: "category", "Personal project" %}
-                  {% for post in personal_posts limit: site.personal_post_limit %}
+                  {% for post in personal_posts limit: 8 %}
                   {% if post.active %}
                     {% assign date = post.date | date: '%Y' %}
                     {% assign date_str = "(" | append: date | append: " - present)" %}
@@ -66,9 +71,14 @@ make-smaller-titles: false
                     {% assign date_str = "(" | append: date | append: ")" %}
                   {% endif %}
                       <li>
-                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small>{{ date_str }}</small><br>
-                          <small>{{ post.tags | join: "|" }}</small>
+                          <a href="{{ post.url | prepend: site.baseurl }}">
+                            <div>
+                              {{ post.title }}
+                              <date>{{ date_str }}</date><br>
+                              <summary>{{ post.summary }}</summary>
+                              <small>{{ post.tags | join: "|" }}</small>
+                            </div>
+                          </a>
                       </li>
                   {% endfor %}
                   <li>

@@ -1,16 +1,17 @@
 ---
 layout:     post
-title:      URLer
-date:       2014-06-08 12:32:18
-active:     No
-summary:    Transform your plain text into static websites and blogs. Simple, static, and blog-aware.
+title:      Navigator for ArcGIS
+date:       2016-06-09 12:32:18
+active:     Yes
+summary:    Using thumbnails in your Carte Noire articles.
 category: Work project
-thumbnail: 
+thumbnail:
+color: orange
 tags:
- - Tool
- - macOS
- - iOS
- - Swift
+  - Product
+  - ArcGIS
+  - iOS
+  - Android
 ---
 
 

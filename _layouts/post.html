@@ -41,16 +41,25 @@ layout: default
             {% endif %}
           </span>
           {% endif %}
-          on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
-          {% if page.categories != empty %} under {% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
+          {% if post.active %}
+            {% assign date = page.date | date: '%Y' %}
+            {% assign date_str = "(" | append: date | append: " - present)" %}
+          {% else %}
+            {% assign date = page.date | date: '%Y' %}
+            {% assign date_str = "(" | append: date | append: ")" %}
+          {% endif %}
+          <span itemprop="datePublished">{{ date_str }}</span>
+          <div class="details">
+            <small>{{ page.tags | join: "|" }}</small>
+          </div>
         </i></small>
       </div>
 
-      <div class="read-time">
+      <!-- <div class="read-time">
         <small>
           {{ minutes }} minute read
         </small>
-      </div>
+      </div> -->
 
       <div class="content-panel content">
 
@@ -102,7 +111,7 @@ layout: default
 
       </div>
 
-      {% if site.twitter_username and site.disqus_account %}
+      <!-- {% if site.twitter_username and site.disqus_account %}
       <div class="content-panel feedback">
         I <i class="fa fa-heart"></i> feedback.<br />
         Let me know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> or leave a comment below!
@@ -126,7 +135,7 @@ layout: default
           <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         </div>
       </div>
-      {% endif %}
+      {% endif %} -->
 
       {% if site.related_posts.length > 0 %}
       <div class="content-panel related clearfix">
@@ -172,7 +181,7 @@ layout: default
 
 </div>
 
-{% if site.disqus_account %}
+<!-- {% if site.disqus_account %}
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 function disqus_config() { this.experiment.enable_scroll_container = true; }
@@ -184,4 +193,4 @@ var disqus_shortname = "{{ site.disqus_account }}"; // required: replace example
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
 </script>
-{% endif %}
+{% endif %} -->

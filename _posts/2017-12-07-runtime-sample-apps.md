@@ -7,6 +7,7 @@ summary:    Transform your plain text into static websites and blogs. Simple, st
 category: Work project
 thumbnail: tools
 tags:
+- Tool
 - UWP
 - C#
 - iOS

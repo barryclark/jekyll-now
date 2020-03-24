@@ -4,14 +4,14 @@ email: whitney.joel.b@gmail.com
 description: "Personal blog"
 baseurl: ""
 url: "https://joelwhitney.github.io"
-title_description: "GIS software, spatial data anyalytics, and location intelligence at <a href=https://esri.com>esri</a>.  Develop software for iOS, macOS, and Python in my spare time."
+title_description: "Software product engineering at <a href=https://esri.com>esri</a>.  My passions include hockey, craft beer, geospatial technology, data and software development. I'm enjoy building things, I'm better at breaking them."
 title_image: "https://www.gravatar.com/avatar/3c1f1234d97343cd8e5766a73ed65d4a?s=500&d=mm"
 google_analytics: ""
-disqus_account: joelwhitney
+#disqus_account: joelwhitney
 github_repository:
 addthis_id:
-post_limit: 5
-work_post_limit: 5
+personal_post_limit: 1
+work_post_limit: 6
 
 # Social usernames/URLs
 twitter_username:
@@ -38,3 +38,6 @@ permalink: pretty
 exclude: [vendor]
 
 highlighter: rouge
+
+colors:
+  orange:    '#fab125'

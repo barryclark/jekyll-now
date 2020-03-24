@@ -1,16 +1,16 @@
 ---
 layout:     post
 title:      Klaskarena
-date:       2014-06-10 12:31:19
+date:       2018-01-22 12:31:19
 active:     No
-summary:    See what the different elements looks like.
-category: Personal project
-thumbnail: 
+summary:    App to track standings for Klask games played in the office.
+category:   Personal project
+thumbnail:
 tags:
  - iOS
  - Swift
- - Klask standings
  - Google Firebase
+ - Google Sign-In
 ---
 
 <p>
@@ -23,7 +23,7 @@ tags:
 
 Klask is a table-top game akin to air hockey that we play in the office at Esri. The goal is simple: hit the ball in the opponent’s goal using a piece on the table controlled by magnets under the table. We play a lot of Klask in the office and had no way to keep track of our wins and losses. We needed the ability to report games and keep track of player statistics over time.
 
-![klask]("https://joelwhitney.github.io/images/klask_tabletop.jpg")
+![klask](https://joelwhitney.github.io/images/klask_tabletop.jpg)
 
 ## Solution
 
@@ -31,11 +31,12 @@ The solution was to create mobile application that could help us keep track. Sin
 
 
 <div class="container__image">
-<table style="width:100%" text-align="center">
+<table border="0" style="width:100%" text-align="center">
   <tr>
-  <td><img src="https://joelwhitney.github.io/images/klask-1.png"></td>
     <td><img src="https://joelwhitney.github.io/images/klask-2.png"></td>
     <td><img src="https://joelwhitney.github.io/images/klask-3.png"></td>
+  </tr>
+  <tr>
     <td><img src="https://joelwhitney.github.io/images/klask-4.png"></td>
     <td><img src="https://joelwhitney.github.io/images/klask-5.png"></td>
   </tr>
