@@ -3,7 +3,7 @@ layout:     post
 title:      Argus for Roku
 date:       2019-09-27 12:32:18
 active:     Yes
-summary:    Bridging the gap between native iOS and Roku apps
+summary:    Reverse engineered YouTube / Netflix casting feature to bridge the gap between an iOS and Roku app
 category: Personal project
 thumbnail:
 tags:

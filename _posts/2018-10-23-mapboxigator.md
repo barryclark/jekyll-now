@@ -3,7 +3,7 @@ layout:     post
 title:      Mapboxigator
 date:       2018-10-23 15:31:19
 active:     No
-summary:    Carte Noire is a dark blog theme for Jekyll focusing on a clear reading experience.
+summary:    Navigation app for iOS built using Mapbox Maps / Navigation SDK to compare against Navigator for ArcGIS
 category: Personal project
 thumbnail:  
 tags:

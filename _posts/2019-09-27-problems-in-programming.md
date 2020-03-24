@@ -3,9 +3,9 @@ layout:     post
 title:      Problems in programming
 date:       2019-09-27 12:32:18
 active:     Yes
-summary:    Solving simple problems with elegant solutions in different languages.
+summary:    Solving simple problems with elegant solutions in different languages
 category: Personal project
-thumbnail: 
+thumbnail:
 tags:
 - Swift
 - Python

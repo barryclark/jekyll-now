@@ -3,7 +3,7 @@ layout:     post
 title:      Klaskarena
 date:       2018-01-22 12:31:19
 active:     No
-summary:    App to track standings for Klask games played in the office.
+summary:    Track standings for Klask games played in the office with an iOS and Progressive Web App
 category:   Personal project
 thumbnail:
 tags:
@@ -23,7 +23,7 @@ tags:
 
 Klask is a table-top game akin to air hockey that we play in the office at Esri. The goal is simple: hit the ball in the opponent’s goal using a piece on the table controlled by magnets under the table. We play a lot of Klask in the office and had no way to keep track of our wins and losses. We needed the ability to report games and keep track of player statistics over time.
 
-![klask](https://joelwhitney.github.io/images/klask_tabletop.jpg)
+![klask](https://i.imgur.com/InWjZeG.jpg)
 
 ## Solution
 
@@ -33,12 +33,12 @@ The solution was to create mobile application that could help us keep track. Sin
 <div class="container__image">
 <table border="0" style="width:100%" text-align="center">
   <tr>
-    <td><img src="https://joelwhitney.github.io/images/klask-2.png"></td>
-    <td><img src="https://joelwhitney.github.io/images/klask-3.png"></td>
+    <td><img src="https://i.imgur.com/4lG8Iay.png"></td>
+    <td><img src="https://i.imgur.com/OtjUJcg.png"></td>
   </tr>
   <tr>
-    <td><img src="https://joelwhitney.github.io/images/klask-4.png"></td>
-    <td><img src="https://joelwhitney.github.io/images/klask-5.png"></td>
+    <td><img src="https://i.imgur.com/HlbYzMT.png"></td>
+    <td><img src="https://i.imgur.com/fY5qgcR.png"></td>
   </tr>
 </table>
 </div>

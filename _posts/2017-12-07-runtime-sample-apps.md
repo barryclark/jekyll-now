@@ -3,11 +3,11 @@ layout:     post
 title:      Runtime sample apps
 date:       2015-06-08 12:32:18
 active:     Yes
-summary:    Transform your plain text into static websites and blogs. Simple, static, and blog-aware.
+summary:    Development tool used for creating reproducible sample apps across iOS, Android, and UWP that exhibit bugs / discrete functionality in the ArcGIS Runtime SDK
 category: Work project
 thumbnail: tools
 tags:
-- Tool
+- Development Tool
 - UWP
 - C#
 - iOS

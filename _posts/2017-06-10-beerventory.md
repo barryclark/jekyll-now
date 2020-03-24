@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      Beerventory
-date:       2014-06-10 12:31:19
-summary:    See what the different elements looks like.
+date:       2017-06-10 12:31:19
+summary:    Unnecessarily track my personal inventory of craft beer in an iOS app
 category: Personal project
-thumbnail: 
+thumbnail:
 tags:
  - iOS
  - Swift
