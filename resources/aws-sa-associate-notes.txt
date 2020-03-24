@@ -1,0 +1,806 @@
+﻿AWS Solutions Architect - Associate
+These are the notes I used to pass the SA exam. Outside of this the best resource by far was Jon Bonso’s exam practice and his AWS cheat sheets. Something not in this that came up heavily in my exam was VPC peering and Direct Connect.
+Resources
+* ACloudGuru FAQ
+   * Really good read.
+   * https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KSS5nf3pekHgwDEuNnF/new_here__read_this_through!
+* Brilliant notes that a lot of this has come from
+   * https://arnaudj.github.io/mooc-aws-certified-solutions-architect-associate-2019-notes/
+* Good notes that focus more on the why use XYZ.
+   * https://github.com/Siujoeng-Lau/AWS-CSA-Notes-2019/
+* Exam tips
+   * https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KSDNs4nfg5ikp6yBN9l/exam_feedback
+S3 (Simple Storage Service)
+What is S3?
+* Object based storage
+* Objects are stored in buckets
+* Objects can range in size from a minimum of 0 bytes to a maximum of 5 TB (if uploading more than 5GB, must use multi-part upload)
+* No storage limit
+* S3 is a universal namespace, the name must be unique globally.
+   * S3 sample URL: https://s3-eu-west-1.amazonaws.com/yourbucket
+* S3 bucket naming conventions (no uppercase, no underscore, 3-63 characters long, not an IP, must start with lowercase letter or number)
+* When you UPLOAD an object to S3 you get a HTTP 200 OK code in response.
+* S3 can send notifications on changes to SQS, SNS, Lambda
+Data Consistency
+* If you PUT a new object then GET the object, S3 will have read-after-write consistency.
+* Overwriting and deletes are scenarios where S3 has eventual consistency
+   * If you GET a new object that doesn’t exist S3 returns 404. Then PUT that object, and GET it again, S3 may return 404.
+   * If you PUT an object. Then overwrite that object with another PUT. Then GET the object, it may return the first object.
+*  S3 by default is spread across multiple AZ’s
+Components
+* An S3 bucket has these 
+* An object in S3 consists of:
+   * Key (name of the object)
+   * Value (data)
+   * Version ID (Used for versoning)
+   * Metadata (list of text key / value pairs - system or user metadata)
+   * Subresources
+      * Access Control List (who can access the object)
+      * Torrent
+S3 Storage Classes
+S3 Storage Classes can be configured at the object level.
+* S3 Standard
+   * 99.99% available, 99.999999999% durable (11 9’s), designed to sustain loss of 2 facilities concurrently 
+* S3 IA (Infrequently Accessed)
+   * Cheaper than standard. Used for data that is accessed less often. Cheaper storage fees, but higher retrieval fees. 99.9% available
+* S3 One Zone IA
+   * Cheaper than IA. Only stored in one AZ. 99.5% available. Same durability.
+   * S3 One Zone-IA is not designed to withstand the loss of availability or total destruction of an Availability Zone (e.g. earthquake wiping out an AZ).
+   * All of the storage classes except for ONEZONE_IA are designed to be resilient to simultaneous complete data loss in a single Availability Zone and partial loss in another Availability Zone.
+   * One Zone-IA storage class replicates data within a single AZ. AWS recommends using this storage class for object replicas when setting cross-region replication.
+* S3 Intelligent Tiering
+   * Designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead. 99.9% available. Monthly monitoring and automation fee per object applies.
+* Glacier 
+   * Cheapest, used for archiving data. 
+   * Retrieval options
+      * Expedited: Costly, 1-5 minutes.
+      * Standard: Default, 3-5 hours.
+      * Bulk: Cheapest, 5-12 hours
+* https://aws.amazon.com/s3/storage-classes/
+  
+
+S3 Versioning
+* Enabled at bucket level
+* Stores all versions of an object (even if you delete an object)
+* Once enabled, versioning cannot be disabled, only suspended
+* Objects already on a bucket before it is enabled will have null version
+* Once you delete a file inside a versioned bucket, you don't delete the file, you simply add a Delete Marker (this basically creates a new version of the object). If you delete the version with the delete marker you will basically restore the object. If you want to permanently delete the object, you have to delete all the versions of the object.
+* Integrates with Lifecycle rules
+* It is best practice to version your buckets
+   * Protect against unintended deletes (ability to restore a version)
+   * Easy roll back to previous versions
+S3 Lifecycle Management
+* Actions that can be done:
+   * Can permanently delete objects after N days
+   * Can archive objects to Glacier after 30 days
+   * Can transfer objects to S3 IA after 30 days
+* Can be used with versioning
+* Can be applied to current and previous versions
+S3 Security
+* All newly created buckets are private by default
+* User based security
+   * IAM policies - which API calls should be allowed for a specific user from IAM console
+* Resource based security
+   * Bucket policies - bucket wide rules from the S3 console - allows cross account
+   * Object Access Control List (ACL) - finer grain
+   * Bucket Access Control List (ACL) - less common
+* Buckets can be configured to create access logs that are stored in other S3 buckets
+* API calls can be logged in AWS CloudTrail 
+* MFA can be required in versioned buckets to delete objects
+* Signed URLs: URLs that are valid only for a limited time
+S3 Encryption
+* In Transit
+   * SSL/TLS (Encryption in flight)
+      * HTTP and HTTPS is available to use, although HTTPS is recommended.
+* At Rest
+   * Server Side
+      * S3 Managed Keys SSE-S3 (server side encryption - S3)
+      * AWS Key Management Service, Managed Keys SSE-KMS
+         * Provides user control, audit trail and control of the rotation policy for the encryption keys
+      * Server Side Encryption with Customer Provided Keys SSE-C
+   * Client Side Encryption
+
+
+S3 Static Website Hosting
+* Serverless
+* Cheap, scales automatically
+* Static only, no compute
+* The name of the bucket must be the same as the domain or subdomain name.
+* You can enable CORS on a bucket to allow other sites to get the files from the bucket
+   * If you request data from another S3 bucket, you need to enable CORS
+   * Cross Origin Resource Sharing allows you to limit the number of websites that can request your files in S3 (and limit your costs)
+* You can redirect requests to another domain at bucket level. In the Amazon S3 console, configure a redirect to the new domain in the 'Redirect requests: Target bucket or domain' box within the 'Static website hosting' section under the Properties tab of the relevant bucket.
+Dualstack
+* Support for IPV4 and IPV6
+* Read up on this more
+S3 Cross Region Replication
+* To use this, versioning must be enabled on both the source and destination buckets (must use unique regions)
+* Files already in existing bucket are not replicated automatically, all new and updated files are replicated automatically
+* You can’t replicate multiple buckets / can’t do daisy chain replication
+* CRR replicates every object-level upload that you make directly to your source bucket. The metadata and ACLs associated with the object are also part of the replication
+* How does deleting work with cross region replication?
+S3 Charges
+* Storage
+* Requests (retrieval)
+* Storage Management Pricing (tags)
+* Data Transfer Pricing (cross-region replication)
+* Transfer Acceleration - fast transfers over long distances using CloudFront
+* Data transferred into S3 is generally free of $/GB charges. Data transfer into S3 from the Internet doesn't incur any costs.
+* The data transfer OUT from Amazon S3 normally attracts a $/GB cost, except transfers to CloudFront are currently free.
+
+
+
+
+Storage Gateway
+* File Gateway - flat files, directly on S3
+* Volume Gateway
+   * Stored Volumes - Entire dataset stored on site, asynchronously backed up to S3, stores data as EBS snapshots in S3
+   * Cached Volumes - Entire dataset stored in S3, most recent data stored on-site
+   * Gateway Virtual Tape Library (VTL) - Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veeam, etc.
+* Network requirements: Port 443, 80 (activation only) , 3260 (iSCSI targets), UPD53 (dns)
+* Good read on storage gateway https://github.com/NigelEarle/AWS-CSA-Notes-2018/tree/master/Object-Storage-and-CDN-S3-Glacier-Cloudfront/Storage-Gateway
+
+
+CloudFront for S3
+* An Edge Location is a location where content will be cached
+* Origin - Origin of all files the the CDN will distribute
+* Distributions (name given to CDN which consists of collection of Edge Locations)
+   * Web Distributions - typically used for websites
+   * RTMP Distributions - media streaming/flash files (Real-Time Messaging Protocol)
+* Edge locations are not just read only, you can write to them too
+   * This is S3 Transfer Acceleration. 
+* Objects are cached for life of TTL (default is 24 hours)
+* You are charged to clear cached objects
+AWS Snowball
+* Import or export to S3 using physical means
+* Snowball
+   * 80TB, no compute
+* Snowball Edge
+   * 100TB, has compute
+* Snowmobile
+   * 100PB, semi-truck, only available in USA
+Increasing performance in S3
+* If the workload is mainly GET requests, integrate Cloudfront with S3.
+* If the workload is mainly PUT requests, use S3 transfer acceleration.
+* Until 2018 there was a hard limit on S3 puts of 100 PUTs per second. To achieve this care needed to be taken with the structure of the name Key to ensure parallel processing. As of July 2018 the limit was raised to 3500 and the need for the Key design was basically eliminated.
+S3 reading
+* https://github.com/SkullTech/aws-solutions-architect-associate-notes#s3
+* Difference between block based and object based storage
+* Read over the FAQ. If time to kill then whitepaper as well.
+* Is s3 free to transfer within a region? It does cost to transfer between regions
+* For each section read FAQ, and possibly whitepaper tOo. Add to notes. 
+IAM - Identity Access Management
+IAM makes it easy to provide multiple users secure access to your AWS resources. 
+* Manage IAM users and their access: You can create users in AWS's identity management system, assign users individual security credentials (such as access keys, passwords, multi-factor authentication devices), or request temporary security credentials to provide users access to AWS services and resources. You can specify permissions to control which operations a user can perform.
+* Manage access for federated users: You can request security credentials with configurable expirations for users who you manage in your corporate directory, allowing you to provide your employees and applications secure access to resources in your AWS account without creating an IAM user account for them. You specify the permissions for these security credentials to control which operations a user can perform.
+Components of IAM
+User
+* The end user.
+Groups
+* A collection of users. Each user in the group will inherit the permissions of the group. A user can belong to multiple groups. Groups can’t belong to groups.
+Policies
+* Policies are made up of documents called Policy documents (in JSON format). These documents give permissions as to what a User/Role/Group is able to do (they can be applied directly to Users, Roles and Groups). 
+Roles
+* Roles can be assigned to Users, Groups and AWS resources (like an EC2 instance).
+* Policies can be applied to a role.  
+* Think of IAM Roles as capabilities (e.g. "can create Lambda function", "can upload to S3"). Roles can be applied to groups. They can not be a member of a group. 
+* If a role has not been in use for a very long time, it's best to delete it and its associated permissions as a security measure. However, you must make sure that there are no EC2 instances running with the role you are about to delete. Removing a role from a running EC2 instance linked to it will break any applications running on the instance.
+Features and YSK of IAM
+* IAM is globally available and not specific to region.
+* New users are assigned and Access Key ID and Secret Key when first created. Keys are not the same as passwords. Keys are only generated once and must be regenerated if lost. 
+* It can provide temporary access for users/devices and services where necessary.
+* A role can be assigned to a federated user who signs in by using an external identity provider (e.g Facebook, Google) instead of IAM. AWS uses details passed by the identity provider to determine which role is mapped to the federated user.
+   * Users from outside of AWS are called federated users. 
+* Users do not have any permissions initially upon account creation.
+* Supports PCI DSS compliance (Payment Card Industry Data Security Standard).
+* No charge for IAM usage.
+* For structuring users in a hierarchical way, you can organize users and groups under paths, similar to object paths in Amazon S3—for example /mycompany/division/project/joe.
+Best Practices
+* One IAM User per person.
+* One IAM Role per Application.
+* Never write IAM credentials in your code.
+* Never use the ROOT account except for initial setup.
+   * The root account is the account created during setup of the AWS account, it has administrator privileges.
+   * Always set up MFA on the root account.
+* The Root account cannot be denied access to resources by Policy.
+* You should keep a copy of the MFA URL or QR code when you set up the Root account MFA
+* Give users the minimal amount of permissions to perform their job.
+* Password rotation policies should be implemented.
+When should I use an IAM user, IAM group, or IAM role?
+* An IAM user has permanent long-term credentials and is used to directly interact with AWS services. An IAM group is primarily a management convenience to manage the same set of permissions for a set of IAM users. An IAM role is an IAM entity with permissions to make AWS service requests. IAM roles cannot make direct requests to AWS services; they are meant to be assumed by authorized entities, such as IAM users, applications, or AWS services such as EC2. Use IAM roles to delegate access within or between AWS accounts.
+Policy Types
+These aren’t required for the Solutions Architect Associate exam, but they’re good to be aware of.
+Identity-based policies
+* Attach managed and inline policies to IAM identities (users, groups to which users belong, or roles). Identity-based policies grant permissions to an identity.
+Resource-based policies
+* Attach inline policies to resources. The most common examples of resource-based policies are Amazon S3 bucket policies and IAM role trust policies.
+Permissions boundaries
+* Use a managed policy as the permissions boundary for an IAM entity (user or role). That policy defines the maximum permissions that the identity-based policies can grant to an entity, but does not grant permissions. 
+Organizations SCPs
+* Use an AWS Organizations service control policy (SCP) to define the maximum permissions for account members of an organization or organizational unit (OU). SCPs limit permissions that identity-based policies or resource-based policies grant to entities (users or roles) within the account, but do not grant permissions.
+Access control lists (ACLs)
+* Use ACLs to control which principals in other accounts can access the resource to which the ACL is attached. ACLs are similar to resource-based policies, although they are the only policy type that does not use the JSON policy document structure. ACLs are cross-account permissions policies that grant permissions to the specified principal entity. ACLs cannot grant permissions to entities within the same account.
+Session policies
+* Pass advanced session policies when you use the AWS CLI or AWS API to assume a role or a federated user. Session policies limit the permissions that the role or user's identity-based policies grant to the session. Session policies limit permissions for a created session, but do not grant permissions.
+IAM reading
+* https://aws.amazon.com/iam/faqs/
+   * At IAM role management
+* Maybe draw a good diagram showing relationships in IAM
+EC2
+EC2 (Elastic Compute Cloud) provides secure, resizable compute capacity in the cloud.
+EC2 Options
+On Demand
+You pay for computing capacity by per hour or per second depending on which instances you run. 
+* It gives users the flexibility of EC2 without any up-front payment or long-term commitment. 
+* Useful for short term, spiky, or unpredictable workloads that cannot be interrupted. Useful for applications being developed or tested on EC2 for the first time.
+Reserved Instances
+Provide a significant discount of up to 75% compared to On-Demand pricing and provides a capacity reservation when used in a specific Availability Zone. You have to enter a contract (typically 1-3 years).
+* Standard reserved instances: up to -75% vs on demand.
+* Convertible reserved instances: up to -54% vs on demand. Can be exchanged for another RI of equal/higher value.
+* Scheduled reserved instances: pay capacity on a daily/weekly/monthly basis, with a specified start time and duration, even if not used. 
+Spot Instances
+up to -90% vs on demand. Useful for fault-tolerant, time flexible workloads requiring low price at possibly large capacity.
+* If you terminate an instance you will pay for the complete hour, if Amazon terminates your instance then you will not pay for the complete hour. 
+* Amazon may interrupt/cancel your spot instance for the following reasons:
+   * Price: The Spot price is greater than your maximum price.
+   * Capacity: If there are not enough unused EC2 instances to meet the demand for Spot Instances, Amazon EC2 interrupts Spot Instances. 
+   * Constraints: If your request includes a constraint such as a launch group or an Availability Zone group, these Spot Instances are terminated as a group when the constraint can no longer be met.
+Dedicated Hosts
+DH’s provide a physical server fully dedicated for your use. They integrate with AWS License Manager which helps you manage software licenses, including Microsoft Windows Server and Microsoft SQL Server licenses. You can save money on licensing costs with DH and they can help meet corporate compliance requirements that may not support multi-tenant virtualization.
+Working with EC2
+* Termination protection is turned off by default.
+* The EBS root volume by default is deleted at termination.
+* EBS root volume of default Amazon’s AMI can now be encrypted at creation.
+   * If created unencrypted, it can be done after.
+   * Additional volumes can be encrypted.
+EC2 Instance Types
+
+
+General Purpose
+	t, m
+	Compute Optimized
+	c
+	Memory Optimized (RDS)
+	r, x, z
+	Storage Optimized (BigData and some RDS)
+	d, h, i
+	Accelerated Computing (GPU)
+	f, g, p
+	
+
+EC2 Storage
+EBS
+EBS provides virtual block storage volumes for EC2 instances. Each volume is replicated within its availability zone to protect you from component failure, offering high availability and durability. The data from an EBS volume snapshot is durable because EBS snapshots are stored on Amazon S3-Standard.
+  
+
+EBS Volume Types
+SSD
+SSD are good for random access.
+* General Purpose SSD (GP2): General purpose SSD volume that balances price and performance. 3 IOPS per GB, up to 10k IOPS.
+* Provisioned IOPS SSD (io1): Designed for IO intensive workloads, use it if you need more than 10k IOPS. Typically used for databases.
+HDD (Magnetic)
+Are great for sequential access (processing log files, big data workflows).
+* Throughput Optimized HDD (st1): Magnetic disk, this can’t be a boot volume (root volume). Designed for Big Data and Data Warehouses
+* Cold HDD (sc1): Lower cost storage, designed for file servers, can’t be a boot volume.
+* Magnetic (standard): Lowest cost per gigabyte of all EBS. It’s bootable and it’s from the previous storage generation. Useful for workloads where data is infrequently accessed.
+Working with EC2 and EBS
+* Instances and Volumes MUST be in the same AZ
+* Snapshots exist on S3.
+* Snapshots are a point in time copies of Volumes.
+* Snapshots are incremental (only differences are saved)
+* Snapshot of root volumes require the instance to be stopped.
+* You can’t delete a snapshot of an EBS volume that is used as the root device of a registered AMI.
+* You can change EBS volumes size and type on the fly.
+* To move an EC2 volume from one AZ/Region to another, take a snap or an image of it, then you can copy them to the new AZ/Region.
+EBS encryption
+* To encrypt an existing EBS root volume: take a snapshot, make an encrypted copy of the snapshot. Now create a new encrypted AMI from the encrypted snapshot. Run the new AMI.
+* Snapshots of encrypted volumes are encrypted automatically
+* Volumes restored from an encrypted snapshot will be encrypted as well
+* You can share snapshots only if they are not encrypted, these snapshots can be made public.
+RAID Arrays using EBS
+You can create RAID arrays within AWS EC2 boxes using EBS volumes.
+* The RAID available in AWS is only software. You can create snapshots of your RAID arrays.
+* Two available types of RAID
+   * RAID 0 – splits (“stripes”) data evenly across two or more disks. When I/O performance is more important than fault tolerance; for example, as in a heavily used database (where data replication is already set up separately).
+   * RAID 1 – consists of an exact copy (or mirror) of a set of data on two or more disks. When fault tolerance is more important than I/O performance; for example, as in a critical application. With RAID 1 you get more data durability in addition to the replication features of the AWS cloud.
+   * RAID 5 and RAID 6 are not recommended for EBS because the parity write operations of these RAID modes consume some of the IOPS available to your volumes. Depending on the configuration of your RAID array, these RAID modes provide 20-30% fewer usable IOPS than a RAID 0 configuration. Increased cost is a factor with these RAID modes as well; when using identical volume sizes and speeds, a 2-volume RAID 0 array can outperform a 4-volume RAID 6 array that costs twice as much.
+AMI Types
+EBS: Amazon EBS provides durable, block-level storage volumes that you can attach to a running instance
+* EBS takes less time to provision.
+* EBS volumes can be kept once the instance is terminated.
+Instance Store / Ephemeral storage: This storage is located on disks that are physically attached to the host computer
+* Instance Store Volumes can’t be stopped, if the host fails, you lose data.
+* You can reboot the instance without losing data.
+* You can not detach Instance Store Volumes.
+* Instance store volumes cannot be kept once the instance is terminated
+Security Groups
+A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
+* All Inbound traffic is Blocked by Default.
+* All Outbound traffic is Blocked by Default.
+* All security groups changes are applied immediately.
+* Security groups are stateful. For example, if you allow the request to come in, automatically responses can go out even if you don’t have anything on the outbound section of your security group.
+* You can specify only allow rules, not deny rules.
+* You cannot block specific IP addresses using security groups, instead use Network Access Control Lists.
+* An EC2 instance can be assigned multiple security groups
+CloudWatch with EC2
+The metrics CloudWatch will track by default on EC2 instances are: CPU related, Disk related, Network related and Status check related. 
+* Standard monitoring is will track metrics every 5 minutes and detailed monitoring is every 1 minute. 
+* Alarms can be set to notify when a specific threshold is hit. Events can be used to perform actions when state changes happen in your AWS resources. 
+* Logs can be aggregated in a single place to better troubleshoot. Remember that you need to install an agent on the EC2 instance.
+* CloudWatch (for monitoring resources) IS NOT the same as CloudTrail (for auditing, AWS CloudTrail records AWS Management Console actions and API calls).
+
+
+IAM Roles with EC2
+* Roles allow you to avoid storing credentials inside EC2 instances in order to communicate with other AWS services. This is a common exam question scenario. 
+* Roles can be assigned after an EC2 instance it has been provisioned.
+* Roles are universal, you can use them in any region.
+EC2 Instance Metadata
+When on your instance you can easily retrieve instance metadata using requests like this: 
+
+
+* curl http://169.254.169.254/latest/meta-data/
+   * Returns available metadata keys
+* curl http://169.254.169.254/latest/meta-data/ami-id
+   * Returns the value of the metadata key
+Launch configurations
+A launch configuration is an instance configuration template that an Auto Scaling group uses to launch EC2 instances. You can only specify one launch configuration for an Auto Scaling group at a time, and you can't modify a launch configuration after you've created it.
+Auto Scaling Groups
+* An Autoscaling group contains a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management.
+* Whenever you create an Auto Scaling group, you must specify a launch configuration, a launch template, or an EC2 instance. 
+* Auto Scaling group will automatically spread evenly on the number of instances across the AZ you selected. So 3 AZ with 3 as group size, means 1 box in each AZ.
+Placement Groups
+You can launch or start instances in a placement group, which determines how instances are placed on the underlying hardware. When you create a placement group, you specify one of the following strategies for the group:
+* Cluster: cluster instances into a single Availability Zone. Useful for low network low-latency & high throughput.
+* Spread: spread instances across underlying hardware. Can span multiple Availability Zones. Good for when you have individual critical EC2 instances
+* Partition – spread instances across logical partitions, ensuring that instances in one partition do not share underlying hardware with instances in other partitions. Can span multiple Availability Zones. Good for big data operations that perform replicated workloads as it reduces the likelihood of correlated failures.
+YSK for Placement Groups
+* AWS recommends homogenous (the same type like only t2.micro) instances for clustered placement group.
+* Only specific types of instances can be launched in a placement group (Compute, memory, storage… optimized).
+* You can’t merge placement groups.
+* You can’t move an existing instance into a placement group.
+* The name you specify for a placement group must be unique within your AWS account.
+* If the exam refers to placement groups, without mentioning which type, it’s most probably talking about the Cluster ones since those are the old ones.
+* A cluster placement group can't span multiple Availability Zones
+* A spread placement group cannot use dedicated instances or dedicated hosts.
+EFS (Elastic File System)
+Amazon EFS provides scalable file storage for use with Amazon EC2. You can create an EFS file system and configure your instances to mount the file system. With EFS, storage capacity shrinks and grows automatically as you add or remove files, so your application will have the storage they demand.
+* Supports NFSv4.
+* You only pay for the storage you use.
+* Scale up to petabytes.
+* Can support thousands of concurrent connections.
+* Data is stored across multiple AZ’s.
+* Read after write consistency.
+* Can be mounted on more than 1 instance concurrently
+* You need to make sure that the EC2 instance is associated with the same security group of the EFS volume.
+* You can assign permissions at the file level and at the folder level.
+Lambda
+This should have its own section? An entire section for serverless I think.
+AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. Lambda is based on triggers. AWS lambda supports C#, Node.js, Python, Java, Go, Ruby and Powershell.
+
+
+Ways to use Lamda
+* Event-driven based: Lambda runs your code based on events, e.g. new file on S3 or a new alarm on cloudwatch.
+* Compute-service based: Lambda runs your code based on HTTP requests using an API Gateway or API calls made using AWS SDKs.
+Lambda pricing
+* First 1M requests per month are free. $0.20 per 1M requests thereafter
+* Duration: You are charged for the amount of memory you allocate on your functions. First 400,000 GB-seconds per month, up to 3.2M seconds of computing time, are free.
+* Your functions can’t go over 5 minutes in run-time.
+
+
+
+
+
+
+
+
+EC2 reading
+* https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html
+* Reasons why Amazon might terminate your instance
+   * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-interruptions.html
+Databases
+RDS (Relational Database Service)
+Available RDS include MySQL, PostgreSQL, Oracle, Aurora, MariaDB and SQL Server. The two key features of RDS are Multi-AZ for disaster recovery and read replicas for increasing performance. Maintenance/upgrade of the RDS host is Amazon’s responsibility. RDS runs on VMs, you can not SSH into these systems. RDS is not serverless (except Aurora Serverless).
+* You cannot combine Read Replicas with Multi-AZ deployments for the MariaDB database engine. Only PostgreSQL, Aurora and Oracle database engines are supported.
+* Amazon RDS doesn’t support read replicas for Oracle version 11
+* SQL Server does not support read replicas 
+RDS Automated Backups
+Automated backups allow you to recover your database to any point in time within a “retention period.” The retention period can be between one and 35 days. It will take a full daily snapshot and will also store transaction logs throughout the day. It’s enabled by default and the data is stored in S3 and you get free storage space equal to the size of your database. While backing up data, you may experience elevated latency. The automated backups are deleted if the database is deleted. Database snapshots are triggered manually. They remain after a database is deleted.
+
+
+When you restore a backup or a snapshot, the restored version of the database will be in a new RDS instance, with a new DNS name. You can encrypt your RDS DB instances and snapshots at rest. Encryption is done by AWS Key Management Service.
+Multi-AZ RDS
+* Multi-AZ allows you to have an exact copy of your production database in another availability zone. It is for disaster recovery, not for scaling.
+* Auto failover occurs to the standby upon DB maintenance, DB failure, AZ failure.
+* Only the database engine on primary instance is active.
+* Will always span two Availability Zones within a single Region.
+* Replication is handled for you by AWS.
+RDS Read Replicas
+For read-heavy database workloads. The read replica operates as a DB instance that allows only read-only connections. 
+* For scaling not for disaster recovery: all read replicas are accessible.
+* Replica can be in a different AZ or region.
+* Must have backups enabled.
+* You can have up to 5 read replicas for a database..
+* Each replica has its own DNS name.
+* Replicas can be promoted to master
+* You can enable encryption on your replica even if your master is not encryption enabled.
+RDS Aurora
+Aurora is a closed source DB engine, driver-compatible with MySQL and PostgreSQL. Has better performance (tailored for their cloud hardware): 5x faster than MySQL, 3x faster than PostgreSQL. Aurora is fully managed by RDS, which automates time-consuming administration tasks like hardware provisioning, database setup, patching, and backups.
+
+
+It delivers high performance and availability with up to 15 low-latency read replicas, point-in-time recovery (snapshot), continuous backup to Amazon S3, and replication across three Availability Zones (AZs).
+Scaling
+* Auto scales in 10GB increments up to 64TB
+* Compute resources can scale up to 32vCPUs and 244GB of Memory.
+Data copies
+* 6 copies total: data is in 3 AZ, with 2 copies per AZ
+* Automated backups enabled by default
+* Snapshots (manual) can be shared with other AWS accounts
+* Handles the loss of up two copies of data without affecting database write capability.
+* Handles the loss of up three copies of data without affecting database read capability.
+Replicas
+* Aurora Replicas: Separate aurora replicas (up to 15 replicas).
+* MySQL Read replicas: (up to 5 replicas).
+* Failover: Aurora replicas can be promoted to master
+
+
+Aurora Serverless is an on-demand, auto-scaling configuration that will scale capacity up or down based on an application's needs.
+DynamoDB
+DynamoDB is a key-value and document database (NoSQL) that delivers single-digit millisecond performance at any scale. It’s fully managed.
+* Uses SSD storage.
+* Spread across 3 geographically distinct data centres.
+* Eventual consistent reads (Default): Consistency across all copies of data is usually reached within a second. Repeating a read after a short time should return the updated data.
+* Strongly consistent reads: A strongly consistent read returns that reflects all writes that received a successful response prior to the read.
+* It’s scalable.
+* Writes in DynamoDB can be very expensive.
+
+
+Redshift
+Reshift is a fast, scalable data warehouse. It is simple and cost-effective for analyzing data. It is for OLAP.
+Redshift stores data by column. By storing data in columns rather than rows, the database can more precisely access the data it needs to answer a query rather than scanning and discarding unwanted data in rows. Query performance is increased for certain workloads. Columnar data stores can be compressed much more than row-based data.
+
+
+Single-Node Redshift
+* Up to 160Gb of RAM in one node.
+Multi-Node Redshift
+* Leader node: Manages clients and distributes queries while compute nodes store data and execute queries (up to 128 computer nodes max).
+Pricing
+   * You are charged for the total number of hours you run across all your compute nodes.
+   * You are charged for backups.
+   * You are also charged for data transfer within a VPC.
+Security
+* Encrypted in transit using SSL. Encrypted at rest using AES-256 encryption. By default redshift takes care of key management.
+Availability
+* It’s only available in 1 AZ currently however you can store snapshots to different zones.
+Backups
+* Enabled by default with a one day retention period.
+* Maximum retention of 35 days.
+* Three copies of the data: 2 on compute nodes (original, replica), 1 on S3 (which can be in another region for data redundancy).
+
+
+Elasticache
+ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by applying to retrieve information from a fast, managed, in-memory cache.
+Types of Elasticache
+* ElastiCache supports two engines: Redis (Multi-AZ, has snapshots) and Memcached (multithreaded). 
+
+
+
+
+Databases reading
+
+
+Applications
+SQS
+SQS is a fully managed queuing service. A queue acts as a buffer between the component producing and saving data, and the component receiving the data for processing. 
+* Retention of messages between 1 minute to 14 days (default is 4 days).
+* Supports short and long polling.
+   * Long polling is a way to retrieve messages from SQS queues. It won’t return until a message arrives in the queue, or the long poll timeout. 
+* Max message size is 256KB
+* Visibility timeout is the amount of time that the message is invisible in the SQS queue after a reader picks up that message. Visibility timeout is max 12 hours
+* The default queue type guarantees a message will be delivered at least once but not exactly once, and receiving messages in the exact order they are sent is not guaranteed.
+* FIFO queue type guarantees order is maintained and messages are delivered once exactly.
+* What about SQS redundancy for messages?
+* Read about SQS FIFO message groups
+SWF
+Simple Workflow Service is a tool to help coordinate , track and audit multi-step multi-machine jobs.
+* Used to develop workflows (e.g. delivering a book from the AMZ warehouse)
+* SWF vs SQS
+   * The retention limit is 1 year for workflows (SWF) vs 14 days for messages in SQS.
+   * Task oriented API vs message oriented API
+   * Only once assignment and no duplication.
+SWF actors
+* SWF workflow starters: initiate a workflow (ex: new e-commerce order)
+* SWF Decider: control the flow of tasks in a workflow execution
+* SWF Workers: carry out the tasks
+SNS
+Simple Notification Service is a push based messaging service. It can push messages out to a large number of subscribers, including serverless functions, queues and HTTP/S webhooks. It can also be used to send mass notification to end users using SMS, email and smartphone push notifications. 
+* You can configure EC2 Auto Scaling to send an SNS notification whenever your Auto Scaling group scales. if you configure your Auto Scaling group to use the EC2_INSTANCE_TERMINATE notification type, and your Auto Scaling group terminates an instance, it sends an email notification that contains the details of the terminated instance, such as the instance ID and the reason that the instance was terminated.
+* SNS stores copies of the messages on multiple AZs.
+
+
+Elastic Transcoder
+It is a media transcoding service that is used to convert (or “transcode”) media files from their source format into versions that will playback on devices like smartphones, tablets and PCs.
+
+
+API Gateway
+It is a fully managed service that allows developers to easily create, publish, maintain, monitor and secure API’s at an scale. 
+* Expose HTTPS endpoints to define a RESTful API.
+* Serverlessly connect to services like Lambda or DynamoDB.
+* Can send each API endpoint to a different target.
+* Scales automatically.
+* API Keys can be used to control usage.
+* Can throttle requests to prevent attacks.
+* Caching can be used to reduce the number of calls made to your endpoint and improve latency.
+* Request logging can be stored to CloudWatch.
+
+
+
+
+Kinesis
+Streaming Data is data that is generated continuously by thousands of data sources, which send in the data records simultaneously, and in small sizes, such as stock prices, game data, social network data, iOT sensor data.
+* Kinesis streams: It consists of shards, where each stream is saved and stored for 24h, up to 7 days. You can have multiple shards on each stream. A consumer then reads from the shards and processes the data.
+* Kinesis Firehose: It doesn’t have shards and their built-in persistence. So data will not be kept and has to be processed immediately with lambda or stored in S3 for example.
+   * It can stream data to Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, and Splunk.
+* Kinesis Analytics: It allows you to analyze the data that exists in Kinesis Firehose of streams.
+Cognito - Web Identity Federation
+Web Identity Federation lets you give your users access to AWS resources after they have successfully authenticated with a web-based identity provider like Facebook or Google.
+* User pool is used based, handles: registration, authentication, account recovery.
+* Login with Facebook Account. Facebook sends a token to the user pool. User pool grants JWT Tokens to a user.
+* The user uses the JWT Token to access the identity pool. The identity pool grants an AWS credentials to the user.
+* The user uses the AWS credentials to access AWS resources such as S3 buckets.
+Applications reading
+* SQS FAQ
+   * https://aws.amazon.com/sqs/faqs/
+* Understand Kinesis further, watch video/read FAQ
+
+
+
+
+Route 53
+DNS is used to convert human friendly domain names into IP addresses. 
+Route 53 supports 13 different DNS record types including; AAAA, CNAME and SPF. Route 53 does not support DNSSEC (other than during domain registration) and therefore any DNSSEC related records, such as DNSKEY, are also not supported.
+Alias Records
+Alias records are used to map resource record sets in your hosted zone to Elastic Load Balancers, CloudFront distributions, or S3 buckets that are configured as websites. Divergent from CNAME records. 
+* Always choose to use Alias over CNAME where possible. Alias records can be used to route to AWS resources, CNAME can’t.
+* ELBs don’t have pre-defined IPv4 addresses; you resolve to them using a DNS name.
+* You can buy domain names directly with AWS within 3 days to register.
+
+
+Routing Policies
+Simple routing policy: Use for a single resource that performs a given function for your domain. You can have 1 record with multiple addresses.
+Weighted routing policy: Use to route traffic to multiple resources in proportions that you specify. You can send 40% of the traffic on one IP and 60% to another IP.
+Latency routing policy: Use when you have resources in multiple AWS Regions and you want to route traffic to the region that provides the best latency.
+Failover routing policy: Use when you want to configure active-passive failover. You need to create a health check before.
+Geolocation routing policy: Use when you want to route traffic based on the location of your users.
+Multivalue answer routing policy: Use when you want Route 53 to respond to DNS queries with up to eight healthy records selected at random.
+Geoproximity routing policy: Use when you want to route traffic based on the location of your resources and, optionally, shift traffic from resources in one location to resources in another.
+
+
+IPv4 vs IPv6
+* IPv4 is a 32-Bit IP Address.
+* IPv6 is 128 Bit IP Address and was created to fulfil the need for more Internet addresses.
+Exam tips
+ELBs are to be resolved via DNS: they don’t have a pre-defined IP address
+Always choose Alias over CNAME
+Route 53 reading
+* CNAME vs ALIAS, when to use
+   * https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html
+* Explanation of A, CNAME and Alias records
+   * https://support.dnsimple.com/articles/differences-between-a-cname-alias-url/
+
+
+VPC
+A virtual private cloud (VPC) is a virtual network dedicated to your AWS account. When you create a VPC you get a default route table, network access control list (NACL) and a default security group.
+
+
+Security groups (SG) control inbound and outbound traffic for your instances (SG = Firewall for EC2 Instances)
+
+
+NACLs control inbound and outbound traffic for your subnets (NACL = Firewall for Subnets)
+
+
+Subnets
+A subnet is a range of IP addresses in your VPC, where you can place groups of isolated resources. If a subnet's traffic is routed to an internet gateway, the subnet is known as a public subnet. If a subnet doesn't have a route to the internet gateway, the subnet is known as a private subnet. If a subnet doesn't have a route to the internet gateway, but has its traffic routed to a virtual private gateway for a Site-to-Site VPN connection, the subnet is known as a VPN only subnet. A subnet has 1 route table and 1 NACL. All subnets link to the main route table of the VPC. New NACL denies all in and out. New security group allows all out, denies all in.
+The minimum size of a subnet is a /28 (or 14 IP addresses.)
+Route Table
+A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed. It controls where network traffic is directed (traffic towards destination CIDR is directed to target AWS element). 
+* Every Route Table contains a Local route for communication within the VPC over IPv4 (destination=vpcCIDRhere to target=’local’)
+* It can enable internet access via a route destination=’0.0.0.0/0’ to target=’igw-xyzabcd’ (igw: Internet Gateway)
+* Route selected: the most specific one matching (ex: /32 chosen before /24)
+Security Groups
+A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
+When you launch an instance in a VPC, you can assign up to five security groups to the instance. Security groups act at the instance level, not the subnet level. Therefore, each instance in a subnet in your VPC can be assigned to a different set of security groups. If you don't specify a security group, the instance is automatically assigned to the default security group for the VPC. 
+For each security group, you add rules that control the inbound traffic to instances, and a separate set of rules that control the outbound traffic. You might set up network ACLs with rules similar to your security groups in order to add an additional layer of security to your VPC.
+
+
+* You can specify allow rules, but not deny rules.
+* You can specify separate rules for inbound and outbound traffic.
+* A different security group can be specified as an allow inbound rule. 
+* When you create a security group, it has no inbound rules. Therefore, no inbound traffic originating from another host to your instance is allowed until you add inbound rules to the security group.
+* Security groups are stateful - if you send a request from your instance, the response traffic for that request is allowed to flow in regardless of inbound security group rules. Responses to allowed inbound traffic are allowed to flow out, regardless of outbound rules.
+* Instances associated with a security group can't talk to each other unless you add rules allowing the traffic.
+* By default, a security group includes an outbound rule that allows all outbound traffic. You can remove the rule and add outbound rules that allow specific outbound traffic only.
+* Security groups evaluate all rules before deciding whether to allow traffic
+* Security groups per Region : 2500 (default limit)  
+* Security Groups per Network Interface (EC2 Instance) : 5 (default limit), 16 (the maximum per request)  
+* Inbound or Outbound rules per Security Group : 60 (default limit). You can have 60 inbound and 60 outbound rules per security group (making a total of 120 rules)
+Network Access Control List
+A network access control list (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. You might set up network ACLs with rules similar to your security groups in order to add an additional layer of security to your VPC.
+* You can create a custom network ACL and associate it with a subnet. By default, each custom network ACL denies all inbound and outbound traffic until you add rules.
+* Security groups operate at the instance level whereas NACL operates at the subnet level. NACL’s supports allow rules and deny rules.
+* They are stateless: return traffic must be explicitly allowed by rules. They process rules in number order.
+* You can associate a network ACL with multiple subnets. However, a subnet can be associated with only one network ACL at a time. Each subnet in your VPC must be associated with a network ACL. 
+* If you have to block specific IP addresses, use network ACL not Security Groups.
+Elastic Network Interfaces
+You can attach a network interface to an instance, detach it, then attach it to another instance. You cannot detach a primary network interface from an instance. You can create and attach additional network interfaces. 
+When you launch an instance, an IP address is assigned to the primary network interface (eth0) that's created. The public IPv4 address is assigned from Amazon's pool of public IPv4 addresses. Different instance types can have a different number of ENI’s attached to them. An ENI can have multiple IP addresses. If one of your instances serving a particular function fails, its network interface can be attached to a replacement.
+VPC Diagrams
+These are to be understood fully.
+ 
+        Traffic is controlled using security groups and network ACLs
+       
+
+
+
+  
+
+Enabling Internet Access
+To enable access to or from the internet for instances in a VPC subnet, you must do the following:
+* Attach an internet gateway to your VPC.
+* Ensure that your subnet's route table points to the internet gateway.
+* Ensure that instances in your subnet have a globally unique IP address (public IPv4 address, Elastic IP address, or IPv6 address).
+* Ensure that your network access control and security group rules allow the relevant traffic to flow to and from your instance.
+NAT Gateway
+You can use a network address translation (NAT) gateway to enable instances in a private subnet to connect to the internet or other AWS services, but prevent the internet from initiating a connection with those instances. NATs allow instances with no public IPs to access the internet. NAT instances are behind a security group. Private instances must have a route to reach the NAT instance. Redundant within an AZ. 5Gbps to 45Gbps. Managed (patching). Not linked to a security group; no need to disable Source/Destination Checks. Auto public IP assignment.
+
+
+
+
+
+
+VPC Flow Logs
+Flow logs enables you to capture information about the IP traffic going to and from network interfaces in your VPC. Flow log data can be published to Amazon CloudWatch Logs and Amazon S3. You can create a flow log for a VPC, a subnet, or a network interface. If you create a flow log for a subnet or VPC, each network interface in that subnet or VPC is monitored.
+Elastic Load Balancers
+Types
+Application Load Balancers are used for load balancing of HTTP and HTTPS traffic. They operate at Layer 7 and are application-aware. You can create advanced request routing, sending requests to specific web servers.
+
+
+Network Load Balancers are used for load balancing of TCP traffic where extreme performance is required. Operating at the connection level (Layer 4), Network LB are capable of handling millions of requests per second. They are expensive.
+
+
+Classic Load Balancers are legacy ELB. You can load balance HTTP/HTTPS applications and use Layer 7-specific features, such as X-Forwarded and sticky sessions. You can also use strict Layer 4 load balancing for applications that rely purely on TCP protocol. Classic Load Balancer is intended for applications that were built within the EC2-Classic network. They are cheap. An ELB-Classic Load Balancer in an EC2-Classic (Legacy, nonVPC) environment it can have an associated IPv4, IPv6, and dualstack (both IPv4 and IPv6) DNS name, and supports IPv6 on the External/public interface. However inside a VPC IPv6 is not supported on the external or internal interface(s). The Listener can be set up to distribute 'Apache Derby Network Server'(1527) connections.
+
+
+YSK ELB
+* Instances monitored by ELB are reported as InService or OutofService.
+* Health Checks check the instance health by talking to it.
+* LBs have their own DNS name. You are never given an IP address.
+* Targets can be IP addresses and lambdas.
+* Use Application Load Balancer for Layer 7 and Network Load Balancer for Layer 4 
+
+
+Sticky Sessions
+Classic Load Balancers route each request independently to the EC2 instance with the smallest load. Sticky sessions are supported for Classic Load Balancers and they allow you to bind a user’s session to a specific EC2 instance. This ensures that all requests from the user during the session are sent to the same instance. You can enable sticky sessions for Application Load Balancers as well, but the traffic will be sent to target groups.
+Cross Zone Load Balancing
+By default, load balancer can’t send traffic across AZs. However, you could enable cross zone load balancing to solve that problem.
+Path Patterns
+You can create a listener with rules to forward requests based on the URL path. This is known as path-based routing. For example, you can route regular requests to one EC2, and image compression requests to another EC2.
+HA Architecture
+* Use multiple AZs and multiple regions wherever you can.
+* Know the difference between multi-az and read replicas for RDS.
+* Know the difference between scaling out (add more instances) and scaling up (increase the resource for instance).
+* Consider the cost element.
+* Know the different S3 storage classes.
+
+
+
+
+
+
+
+
+
+
+Other
+* Transitive peering is unsupported (with A-B-C, then A-C not possible, needs A-B, A-C, etc).
+* CIDR: Classless Inter-Domain Routing.
+* You can add subnets in a Local Zone, which is an AWS infrastructure deployment that places compute, storage, database, and other select services closer to your end users. A Local Zone enables your end users to run applications that require single-digit millisecond latencies.
+* Use Nat Gateways over Nat Instances.
+* Design tip: Remember that ELB needs at least two public AZ’s, so when designing your network, remember to create at least two public subnets in two AZ
+Further reading
+* VPC FAQ
+* https://aws.amazon.com/elasticloadbalancing/faqs/
+Well Architected Framework
+Operation excellence is the ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures. There are three best practice areas.
+* Prepare - AWS Config
+* Operate - Cloudwatch
+* Evolve - Elasticsearch service
+Cloudformation is the key service used to achieve this. 
+
+
+Security is the ability to protect information, systems and assets while delivering business value through risk assessments and mitigation strategies. There are five best practice areas.
+* IAM - IAM, MFA, AWS Organisations
+* Detective controls - Cloudtrail, Config, GuardDuty
+* Infrastructure Protection- VPC, Cloudfront with AWS Shield, AWS WAF
+* Data Protection - ELB, EBS, S3, RDS encryption, KMS, AWS Macie
+* Incident Response - IAM, Cloudwatch Events
+IAM is the key service that helps deliver this
+
+
+Reliability is the ability of a system to recover from infra/service disruptions, dynamically aquire computing resources to meet demand, and mitigate disruptions such transient network issues and misconfigurations.
+* Foundations - IAM, VPC, Trusted Advisor, Shield
+* Change Management - Cloudwatch, Config, Autoscaling 
+* Failure Management - S3 KMS, Glacier, Cloudwatch
+Cloudwatch is the key service here
+
+
+
+
+Exam Tips
+Big Data
+Kinesis
+If in the exam you got a question which is talking about consuming social media feeds, or a way to consume big data into the cloud, chances are they are talking about Kinesis.
+Redshift
+If in the question they use languages like business intelligence, or applying business intelligence to big data think about Redshift.
+Elastic MapReduce
+If in the questions they refer to big data processing, think about Elastic Mapreduce.
+
+
+EC2
+EBS
+* EBS backed volumes are persistent (data is kept after instance termination).
+* Instance Store backed volumes are not persistent (ephemeral).
+* EBS Volumes can be detached and reattached to other EC2 instances.
+* Instance store volume cannot be detached and reattached to other instances - they exist only for the life of that instance.
+* EBS volumes can be stopped; data will persist.
+* Instance store volumes cannot be stopped - if you stop them, data will be lost.
+* EBS Backed = Store Data for Long term.
+* Instance Store = You should not use it for long-term data storage.
+
+
+OpsWorks
+If you have a question that is talking about chef, or recipes or cookbooks, think about OpsWorks. OpsWorks is a configuration management service that provides managed instances of Chef and Puppet that allow you to use code to automate the configurations of your servers.
+
+
+SWF Actors
+Workflow Starter: An application that can initiate a workflow.
+Decider: Control the flow of activity tasks in a workflow execution.
+Activity Workers: Carry out activity tasks
+
+
+AWS Organizations
+Using AWS Organizations, you can manage multiple AWS accounts at once. With organizations, you can create groups of accounts, then apply policies to those groups.
+What organizations allow you to do
+* Centrally manage policies across multiple AWS accounts.
+* Control access to AWS services. Service Control Policies (SCPs) have priority over policies on the account.
+* Automate AWS account creation and management.
+* Consolidate billing across multiple AWS accounts.
+Other notes for Organizations
+* Consolidating billing allows you to get volume discounts on all your accounts.
+* Unused reserved instances for EC2 are applied across the group.
+* CloudTrail is on a per account and per region basis but can be aggregated into a single bucket in the paying account.
+* You can have 20 linked accounts only.
+Cross-Account Access
+Many AWS customers use separate AWS accounts for their development and production resources. This separation allows them to cleanly separate different types of resources and can also provide some security benefits.
+
+
+EC2 Instance Types
+IOPS, latency, and throughput are essential metrics for measuring storage performance. 
+Other YSK
+* In AWS Server Migration Service the maximum number of volumes that can be attached to a VMs during a SMS migration job is 22 virtual volumes.
+* Amazon EC2 throttles traffic on port 25 of all EC2 instances by default, but you can request for this throttle to be removed. Or you can have your application use a different port.
+* In Lambda you should include all layers every time you update the layer configuration.
+* RDS Read Replicas are not available for Microsoft SQL.
+* Throughput Optimized disk is backed by standard hard drives (non-SSD), and will therefore give worse performance that General Purpose as these are SSD backed
+* CloudWatch log data consists of files, which means that S3 is the most suitable storage service for this application.
+* Amazon Elasticsearch Service is used for streaming CloudWatch log data instead of storing it.
+* It is an AWS best practice to create a dedicated S3 bucket specifically for storing your CloudWatch Logs.
+* The information you capture about the IP traffic going in and out of your network interface can be published either in an S3 bucket or as a CloudWatch log. VPC Flow Logs enables the recording of the information in the first place, but not used to publish the data.
+* CPU options are available only during instance launch, so multi-threading cannot be disabled once the instance is launched.
+* With the Resource Groups tool, you use a single page to view and manage your resources. 
+* You cannot sell convertible instances on the reserved instance marketplace
+* Business and Enterprise Support plans include email access to the AWS Support team, the company specifically expressed interest in business-hours email support from Cloud Support Associates. The Developer Support plan fulfils this need, and it is ultimately more cost-effective than either the Business or Enterprise option. Read page on this?
+* Reserved instances are not physical instances, but rather a billing discount applied to the use of on-demand instances in the account you own. Reserved instances do not renew automatically; when they expire, you can continue using the EC2 instance without interruption, but you are charged on-demand rates.
+* Amazon S3 Object Lock can be used to prevent an object in the bucket from being overwritten or deleted for a fixed time or indefinitely. It also helps to meet regulatory requirements that require WORM (Write Once Read Many) storage. The Object Locks can be enabled only for new buckets. This enables versioning automatically. The object lock once enabled cannot be disabled. Before you can lock any objects, you have to configure a bucket to use Amazon S3 Object Lock. To do this, you specify when you create the bucket that you want to enable Amazon S3 Object Lock. After you configure a bucket for Amazon S3 Object Lock, you can lock objects in that bucket using retention periods, legal holds, or both.
+* AWS Trusted Advisor is for optimizing the cloud environment. AWS CloudWatch monitors applications and can direct you to issues with them, it does not fix errors. Amazon Inspector is a security assessor. AWS X-Ray helps to optimize the performance of applications by identifying and fixing their issues.
+* Use DirectConnect over VPN for connections that require speeds greater than 1 Gbps.
+* The main use case for RAID 1 is to provide mirroring, redundancy and fault tolerance. For RAID 0 it is to provide faster read and write operations.
