@@ -308,130 +308,118 @@ a robust payments network in a single sweep.
 
 ### Stablecoins
 
-These are crypto-currencies 
-maintaining a 1-1 value parity with a real-world currency, usually the US dollar
+Stablecoins are an interesting class of crypto-currencies, designed to maintain a stable value parity with another asset 
+(e.g. one-to-one with a real-world currency, like the US dollar). 
 
-This is achieved in one of two ways
-* backed by real-world asset  
-E.g. USDT, USDC
-Issued by an entity equivalent to the on-ramp gateway of Ripple
-receives currency in its bank account and issues digital currency units
-as long as the market believes that all digital coins have a real-world equivalent 
-market remains stable
+This is achieved in one of two ways.
 
-* Backed by digital collateral  
-E.g. DAI, 
-Users deposit other crypto assets (e.g. Bitcoin, Ethereum,...) and receive newly minted stablecoins
-Since the digital collateral has itself a fluctuating price
-This class of stablecoins achieves a virtual peg to a real-world currency by an elegant set of market incentives  
+* **Backed by real-world asset** (e.g. [USDT][96], [USDC][97],...)  
+These are issued by an entity functioning in a way similar to the on-ramp gateways of Ripple. It receives currency in 
+its bank accounts by users and issues the equivalent amounts of digital currency units. As with any IOU, their price 
+has no reason to fluctuate, as long as the market believes that all digital coins have a [real-world equivalent][98].  
 
-At their core stablecoins are on-ramp/off-ramp systems
-either implicitly or explicitly (in the case of DAI)
-Their utility has been in offering a stable unit of account in the super-volatile crypto-currency space 
+* **Backed by digital collateral** (e.g. [DAI][99],...)  
+These stablecoins are minted when users deposit other crypto assets (e.g. Bitcoin, Ethereum,...) to a [smart contract][54]. 
+Since the digital collateral has itself a fluctuating price, this class of stablecoins achieves a virtual peg by an 
+elegant [set of market incentives][100].   
+
+At their core, stablecoins are on-ramp/off-ramp systems.  
+Their main use case so far has been to facilitate electronic crypto-asset trading, offering a stable digital unit of 
+account in a super-volatile asset class.  
+This stability combined with the benefits of the blockchain gives them a great potential to become a global medium of 
+exchange. This has not gone [unnoticed][101]. 
 
 ### Libra
 
-Libra combines some of the concepts mentioned above to offer a blockchain based payment network.
+[Libra][102] is, according to its website   
+> A simple global currency and financial infrastructure that empowers billions of people. 
+
+In practice, it combines some of the concepts mentioned in the previous sections to offer a blockchain-based payment network.
 
 ![Libra payments](../images/payments/payments-libra.png)
 
-Let's quickly examine how Libra works (making a lot of simplifications for brevity, where Facebook is the Libra foundation yada yada)
-A Sender wants to send an amount of €100 to the Receiver via Libra 
-both of them have the Calibra wallet installed
+Let's quickly examine how Libra works as a payment mechanism, making some simplifications for brevity. I will also not
+touch upon its smart contract functionality, as it is out of scope.  
+A Sender wants to send an amount of €100 to the Receiver. Both of them have [Calibra][103] or another compatible wallet 
+installed. 
 
-1. Sender needs to fund her wallet with the Libra equivalent of €100
-For this reason she sends €100 to Facebook's bank account F <sup>[9](#footnote_9)</sup> 
-2. Facebook is notified of the amount 
-and **creates** the equivalent amount in Libra
-and funds Sender's wallet 
-This is what asset-backed means: tokens are created on the fly, as and when the backing bank account (or asset store) receives
-an asset
-3. Sender can then use the Calibra wallet to issue a blockchain payment
-Blockchain nodes are the trusted ones of the Libra members
-4. ...and a few seconds later the Receiver sees her Libra balance increasing 
+1. Sender needs to fund her wallet with the Libra equivalent of €100.  
+For this reason she sends €100 to Libra gateway's bank account (F) <sup>[9](#footnote_9)</sup> 
+2. The Libra gateway is notified of the amount and creates the equivalent amount in Libra. It then funds the Sender's 
+wallet.  
+3. Sender can then use the Calibra wallet to issue a blockchain payment.  
+The payment is sent to the network, the blockchain nodes of which are run by the [partners][104]. 
+4. ...and a few seconds later the Receiver sees her Libra balance increasing.
 
-If the above looks very familiar, it's because, well... it is!
+If the above looks very familiar, it's because it is!  
+At its core Libra is not a currency. It is a fusion between an IOU and an asset-based stablecoin. The novelty here is 
+that it is backed by a basket of currencies, reducing [currency risk][105].  
+Steps 1 and 2 are the on-ramp to the platform. What is missing on the other side of this diagram is the off-ramp, where 
+Libra would be converted to GBP. 
 
-At its core Libra is **not** a currency 
-it can be considered at once a digital IOU, a token
-as well as an asset-based stablecoin, backed by a basket of currencies
+The on-/off-ramp is described in the [reserve policy][106] as "a network of authorized resellers".  
+We have seen previously in monopolistic digital currencies, like M-Pesa, how there are off-ramp penalties to discourage asset
+flight. The project's vision has been that of a global currency, bank the unbanked etc. Facebook's user base guarantees 
+that the currency will have the required network effect from day 1. Users would not feel the need of the off-ramp. Perhaps 
+an "exit tax" might be another nudge to stay. 
 
-steps 1 and 2 are the on-ramp (link) to the platform d 
-what is missing on the other side of this diagram is the off-ramp, where Libra would be converted to GBP
+The technical merits of the system have been eclipsed by the aggressive marketing blitz and the [subsequent][107] [regulatory][108] 
+backlash. A global stable currency, takes away the [only thing][45] that makes a government, well... a government. At a 
+time of geopolitical tensions, even before the Covid-19 [black swan][109].  
+Why not baptize it as a remittance service, a digital IOU,... something fairly conspicuous, [woke-ish][110] and under 
+the radar? Facebook already had the partnerships in place to make it a de facto global payments network overnight. 
 
-But this is missing intentionally 
-because the intention has been from the start to become a one-way digital currency  
-The project's marketing has been that of a global currency, bank the unbanked and all that nice stuff
-Facebook's user base guarantee that the currency would have the network effect from day 1 
-so that users would rarely need the off-ramp
-
-I honestly do not know the future 
-but I strongly believe that at some point Libra is going to become a case study for Silicon Valley's
-endemic delusion of grandeur and detachment from reality
-
-Why not baptize it as a remittance service, a digital IOU, helping African 
-micro-businesses to trade internationally,... something fairly conspicuous, woke-ish and under the radar.
-Facebook already had the partnerships in place to make it a silent success and de facto global 
-payments network overnight
-
-But it had to be a revolutionary global currency!
-Taking away the [only thing][45] that makes a government a government
-Revolutions don't start with press statements
+I honestly do not know the future, but I think Libra ticks many boxes to become a case study for Silicon Valley's 
+detachment from the "real world" and how it works.
 
 ### Government cryptocurrencies
 
-Last few years increasing interest in the replacement of fiat currencies with central-bank issued
-crypto-currencies  
+The last few years have seen an increasing interest in the replacement of fiat currencies with central-bank issued
+crypto-currencies. 
 
 ![Government crypto payments](../images/payments/payments-gov-crypto.png)
 
-The underlying payment mechanism in such a case would be extremely simple  
-* The Sender has a crypto-wallet on her device, possibly facilitated by a bank
-She issues a payment to the central bank's network of nodes
-This network will almost certainly be non-public with either the compute capacity owned entirely by the central bank
-or with the national retail banks all offering hash power to form a network
+The underlying payment mechanism in such a case would be extremely simple.    
+* The Sender has a crypto-wallet on her device, possibly provided/facilitated by a bank.  
+She issues a payment to the network of trusted nodes. This network will almost certainly be non-public with the compute 
+capacity owned entirely by the central bank or with the national retail banks all offering [hash power][111].
 * The payment will probably be attached to a block in a way similar to how existing blockchains operate and confirmed 
-by the network
-* At which point the Receiver's wallet has received the amount 
-and the transaction has been immutably recorded in the network's distributed ledger  
+by the network. 
+* At this point the Receiver's wallet has received the amount.   
+The transaction has been immutably recorded in the network's distributed ledger.  
 
-One might wonder "payments are pretty much electronic now, why bother with the crypto stuff"?
-The answer is definitely [above my paygrade][46] but I will offer my limited understanding
+One might wonder "payments are pretty much electronic now, why bother with the crypto stuff"? The answer is definitely 
+[above my paygrade][46] but I will offer my limited understanding. 
 
-Transactions might already be electronic, but not 100%.  
-There are also stores of value outside of the "system", with cash and precious metals/stones being the prime examples
-It is not by co-incidence that capital controls immediately restrict access to cash 
-and that all countries impose limits on the amount of valuables one may export <sup>[10](#footnote_10)</sup>
+Transactions are increasingly electronic, but [not 100%][112].  
+There are also stores of value outside of the "system", with cash and precious metals/stones being the prime examples. 
+It is not by co-incidence that  
+* [capital controls][113] immediately restrict access to cash, and 
+* all countries impose limits on the amount of valuables one may export. <sup>[10](#footnote_10)</sup>
+
 India's [2016 demonetisation][47] was a huge social experiment, observed with very keen interest from central bankers
 around the world.
 
-Fiscal policy (a.k.a. taxation) becomes almost trivial
-Hard to believe but taxes are fairly new in human history 
-However states now have an insatiable appetite for revenue <sup>[11](#footnote_11)</sup>
-Having all transactions visible in real-time and recorded immutably forever has a very-very particular allure
-Why wait for the end of the quarter or the fiscal year to see if tax reduction has boosted business when you can see it 
-the next minute?
-Why reduce taxes for all businesses when you can see that the economic slow-down is from a few crypto-addresses
-in the Barcelona area? Just reduce taxes for them 
-Not to mention the amount of information revealed by such a [panopticon][49] payments network.
+In an insitutionalized crypto-currency environment [fiscal policy][114] becomes almost trivial. Taxes are [not new 
+in human history][115] and states have an ever-growing appetite for revenue. <sup>[11](#footnote_11)</sup>
+Having all transactions visible in real-time and recorded immutably forever has a very-very particular allure. <sup>[12](#footnote_12)</sup>  
   
 In the same vein, the elimination of cash and intermediaries (a.k.a. banks) opens up endless creative possibilities in 
-the area of monetary policy. 
+the area of monetary policy.  
 Why fight with ever-lower interest rates and bother with QE and trickle-down economics, when you have seen it cannot 
-create real inflation? <sup>[12](#footnote_12)</sup>
-Why not send an airdrop (a.k.a. helicopter money) straight into people's crypto-addresses? Why not make it more 
-interesting and force velocity of money by making them auto-burn every few days? <sup>[13](#footnote_13)</sup>
+create real inflation? <sup>[13](#footnote_13)</sup> Why not send an [airdrop][116] (a.k.a. [helicopter money][117]) 
+straight into people's crypto-addresses?  
+Why not make it more interesting and force [velocity of money][118] by making them auto-burn every few days? <sup>[14](#footnote_14)</sup>
 Why worry about the debt crisis when you can have centrally controlled and auto-adjusted debt margins and [jubilees][48]? 
 
-It is common knowledge that the current system is well overdue for a reset
-due to exceeding monetization
-going from a banking crisis to an unfolding debt crisis
-The current coronavirus pandemic is merely the needle to pop the balloon  
+It is common knowledge that the current system is well overdue for a reset due to excessive [monetization][119]. In less 
+than 12 years it has gone from a [banking crisis][120] to an unfolding [debt crisis][121]. 
+The current [Covid-19 pandemic][78] is merely the needle to pop the balloon. 
 
-The government and central banks' answer to the previous crisis 
-is more control 
-MMT approaches have entered the [Overton window][50] of economical orthodoxy and will be deployed in the next few years
-The current virulent outbreak and consequent recession / depression will only hasten their arrival  
+The government and central banks' answer to the previous crisis was more control.   
+[MMT approaches][122] have well entered the [Overton window][50] of economical orthodoxy and will be deployed in the 
+next few years. The current virulent outbreak and consequent recession / depression will only hasten their arrival.  
+Government crypto-currencies are the perfect tool to deploy such policies.
 
 ### Proof-of-work money 
 
@@ -514,7 +502,7 @@ and [retirement][76] crises are making this inevitable
 The only remaining question in my head then is "what would be the role of today's banks and payment processors in this new landscape"?
 Would they continue being the pillars of the system? 
 Or would they shrink beyond recognition?
-Even without the current debt crisis <sup>[14](#footnote_14)</sup> the current trend was for banking to be democratized, 
+Even without the current debt crisis <sup>[15](#footnote_15)</sup> the current trend was for banking to be democratized, 
 to be dispersed across the economy with thousands of companies becoming banks in all but name
 
 In a crypto world, what would even be the role of banks?
@@ -530,7 +518,7 @@ What about payment processors
 Whatever the end state of the world 
 seems almost certain that the current [shrinking trajectory][81] of retail banks will only accelerate 
 to a tiny fraction of their current size and importance 
-In a fully crypto world maintaining alternative channels <sup>[15](#footnote_15)</sup> and being [systemically important][62] 
+In a fully crypto world maintaining alternative channels <sup>[16](#footnote_16)</sup> and being [systemically important][62] 
 is beyond pointless 
 
 The upcoming evolution of the global payment systems 
@@ -553,21 +541,27 @@ payments.
 7. <a name="footnote_7"></a>Just as "Ripple EUR" was issued by the left-hand gateway, "Ripple GBP" has been issued by another 
 gateway. This is what is converted in the Ripple exchange: one type of IOU for another. It is not "magic'ed up". 
 8. <a name="footnote_8"></a>Same way you rip a debt certificate once the debt has been paid off.
-9. <a name="footnote_9"></a>Here I am over-simplifying as in real-life the payment would be facilitated via card, OpenBanking 
-or some other mobile-friendly way.
+9. <a name="footnote_9"></a>Here I am over-simplifying in multiple ways. Yes, Libra is a foundation, not controlled by 
+Facebook. Also in real-life the payment would be facilitated via card, OpenBanking or some other mobile-friendly way. 
+And according to the stated [reserve policy][106], purchase of Libra would be via a network of resellers.
 10. <a name="footnote_10"></a>Yes, illegal activity is also a concern, but it is the central bank's balance sheet that 
 counts. Imagine the Argentinas and Greeces of the world if their citizens could take their assets' worth into gold to a 
 more stable place.  
 11. <a name="footnote_11"></a>Say your unit of labour gives you £10. You are taxed at source with £3. Then you buy a 
 T-shirt and pay VAT. Then you put the remainder towards a house and pay stamp duty, etc. Even though you worked once, 
 your work's result (i.e. your salary) will be taxed multiple times, every time that a fraction of it changes hands.
-12. <a name="footnote_12"></a>The only inflation QE and negative yields have caused are in asset prices. In simple words:
-you have not taken a noticeable pay rise in forever, TVs and blenders are becoming better and cheaper and, yet, houses, 
+12. <a name="footnote_12"></a>Why wait for the end of the quarter or the fiscal year to see if tax reduction has boosted 
+business when you can see it the next minute?  
+Why reduce taxes for all businesses when you can see that the economic slow-down is from a few crypto-addresses in the 
+Barcelona area? Just reduce taxes for them.  
+Not to mention the amount of information revealed by such a [panopticon][49] payments network.
+13. <a name="footnote_13"></a>The only inflation QE and negative yields have caused are in asset prices. In simple words:
+you have not had a noticeable pay rise in forever, TVs and blenders are becoming better and cheaper and, yet, houses, 
 gold coins and Netflix shares become ridiculously unaffordable.
-13. <a name="footnote_13"></a>I.e. use it or lose it. It may sound impossible to create in the current regime, but in 
+14. <a name="footnote_14"></a>I.e. use it or lose it. It may sound impossible to create in the current regime, but in 
 the world of [smart contracts][54] it is almost trivial to implement.
-14. <a name="footnote_14"></a>Or maybe because of it. 
-15. <a name="footnote_15"></a>Branches, ATMs, mobile banking, telephony, cheque processing,...
+15. <a name="footnote_15"></a>Or maybe because of it. 
+16. <a name="footnote_16"></a>Branches, ATMs, mobile banking, telephony, cheque processing,...
 
 
   [1]: https://sgerogia.github.io/Payments-Intro-Part1/
@@ -665,3 +659,30 @@ the world of [smart contracts][54] it is almost trivial to implement.
   [93]: https://hackernoon.com/a-brief-look-into-ripple-xrp-banks-pre-mines-and-lawsuits-qcn63au2
   [94]: https://www.forbes.com/sites/jasonbloomberg/2019/03/01/is-ripple-a-scam/#5dd363a179a4
   [95]: https://bitcoinist.com/not-decentralized-ripple-freezes-1m-user-funds/
+  [96]: https://tether.to/
+  [97]: https://www.coinbase.com/usdc
+  [98]: https://ftalphaville.ft.com/2019/10/07/1570455386000/Tether-slammed-as--part-fraud--part-pump-and-dump--and-part-money-laundering--/
+  [99]: https://makerdao.com/en/
+  [100]: https://makerdao.com/en/whitepaper#abstract
+  [101]: https://www.jpmorgan.com/global/news/digital-coin-payments
+  [102]: https://libra.org/en-US/
+  [103]: https://www.calibra.com/
+  [104]: https://libra.org/en-US/partners/
+  [105]: https://investinganswers.com/dictionary/c/currency-risk
+  [106]: https://libra.org/en-US/about-currency-reserve/#the_reserve
+  [107]: https://observer.com/2019/08/facebook-libra-cryptocurrency-regulator-backlash-europe/
+  [108]: https://www.wsj.com/articles/facebook-wanted-to-create-a-new-currency-it-wasnt-ready-for-the-backlash-11571242795
+  [109]: https://en.wikipedia.org/wiki/Black_swan_theory
+  [110]: https://www.merriam-webster.com/dictionary/woke
+  [111]: https://coinrivet.com/guides/what-is-cryptocurrency-mining/what-is-hash-rate/
+  [112]: https://www.oecd.org/going-digital/unlocking-the-potential-of-e-commerce.pdf
+  [113]: https://en.wikipedia.org/wiki/Capital_control
+  [114]: https://en.wikipedia.org/wiki/Fiscal_policy
+  [115]: https://en.wikipedia.org/wiki/Tax
+  [116]: https://en.wikipedia.org/wiki/Airdrop_(cryptocurrency)
+  [117]: https://en.wikipedia.org/wiki/Helicopter_money
+  [118]: https://www.investopedia.com/terms/v/velocity.asp
+  [119]: https://www.investopedia.com/terms/m/monetize.asp
+  [120]: https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%9308
+  [121]: https://www.ft.com/content/27cf0690-5c9d-11ea-b0ab-339c2307bcd4
+  [122]: https://en.wikipedia.org/wiki/Modern_Monetary_Theory
