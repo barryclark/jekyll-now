@@ -13,10 +13,10 @@ Follow steps to move your calibre library to Google Drive™, Microsoft OneDrive
 
 - Open Calibre e-book manager on your Laptop/PC/MacOS
 - Select ***Switch/create library...*** from the calibre menu
-- Select an empty folder on your Cloud Drive in ***New Location*** dropdown
+- Select an empty folder in your Cloud Drive in ***New Location*** dropdown
 - Select ***Move current library*** to new location. Press OK
-- Wait for cloud sync to complete
-- Calibre Sync can automatic discover those libraries in your Cloud Drive.
+- Wait for cloud sync to complete (very important)
+- Calibre Sync can automatic discover the library in your Cloud Drive.
 
 # [Features](#features)
 - Switch between libraries across multiple accounts
@@ -67,9 +67,25 @@ No. Calibre Sync is **not a reader** app. There are already many beautifully fun
 
 There is currently no support for downloading multiple books at once because the intent of the application is to browse your library but download books only on demand when you need them. The device storage is constrained. Keeping all your books on device defeats the purpose of cloud integration. This is what we feel; though if there are enough demands for such a feature, we might go ahead with the implementation.
 
+## How can I use multiple Dropbox accounts?
+
+Logout from the current Dropbox account using 'Sign Out' at top right, then log in with other account.
+
 ## SD card support?
 
 Not yet! That is still under development.
+
+## Other Cloud storage service
+
+Amazon Cloud Drive is in the roadmap.
+
+## Should I worry that my desktop Calibre libraries are corrupted by this app
+
+No. Calibre Sync only perform READ-ONLY operation.
+
+## I moved my library to different location (still in Cloud Drive), what should I do?
+
+Please delete the current library in Calibre Sync and add directory back again.
 
 ## Have a suggestion?
 
