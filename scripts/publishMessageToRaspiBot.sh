@@ -6,8 +6,7 @@ then
   exit 1
 fi
 
-CHAT_ID=<CHAT_ID>
-API_KEY=<BOT_TOKEN>
+source /home/$USER/.tg_keys
 
 MESSAGE=${1// /+}
 URL="https://api.telegram.org/bot$API_KEY/sendMessage?chat_id=$CHAT_ID&text=$MESSAGE&parse_mode=Markdown"
