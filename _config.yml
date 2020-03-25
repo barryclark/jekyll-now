@@ -6,7 +6,7 @@
 name: Rocky
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Blog 博客
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -18,17 +18,11 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: 17054785777
+  email: 1218374083@qq.com
   QQ: 1218374083
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  github: Rockycucin/rockycucin.github.io
+  wechat: doudou17054785777
+  bilibili: https://space.bilibili.com/521323978
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
