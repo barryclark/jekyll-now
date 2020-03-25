@@ -24,8 +24,8 @@ grep grouper.TezSplitGrouper syslog_dag_<app_number>
 
 Each of the settings above manipulates the way initial task parallelism works. `max-size` and `min-size` together set an upper and lower bound on how much data should be split by and sent off to each mapper. `tez.am.grouping.split-waves` multiplies the number of mappers that to use with the chosen split. If `split-count` is set, `max-size` and `min-size` are ignored and Tez launches `split-count` number of mappers initially.
 
-Initial task parallelism details are on the Tez Apache (https://cwiki.apache.org/confluence/display/TEZ/How+initial+task+parallelism+works)[wiki].
-The source code to initial task parallelism is available on (https://github.com/apache/tez/blob/master/tez-mapreduce/src/main/java/org/apache/tez/mapreduce/grouper/TezSplitGrouper.java)[Git]
+Initial task parallelism details are on the Tez Apache [wiki](https://cwiki.apache.org/confluence/display/TEZ/How+initial+task+parallelism+works).
+The source code to initial task parallelism is available on [Git](https://github.com/apache/tez/blob/master/tez-mapreduce/src/main/java/org/apache/tez/mapreduce/grouper/TezSplitGrouper.java)
 
 ## Controlling the Number of Reducers in Apache Hive on Tez
 Below are the parameters shared by Map Reduce and Tez that control the number of reducers:
