@@ -148,7 +148,7 @@ ul {
 	}
 }
 
-.menu-button {
+.back-button {
 	color: $white;
 	font-size: 24px;
 	position: fixed;
@@ -427,56 +427,6 @@ $typography-font-weight-values: (
 		font-size: 2em;
 	}
 
-	// .posts {
-	// 	text-align: center;
-	// 	font-size: 20px;
-	//
-	// 	h2 {
-	// 		margin-bottom: 30px;
-	// 		color: #e3ddbc;
-	// 		font-size: 26px;
-	// 	}
-	//
-	// 	ul {
-	//
-	// 		padding: 0px;
-	//
-	// 		li {
-	// 			margin-bottom: 20px;
-	// 			font-size: 24px;
-	//
-	// 			a:hover {
-	// 				color: $light-medium;
-	// 			}
-	//
-	// 			small {
-	// 				font-size: 14px;
-	// 				margin-top: -10px;
-	// 				padding-top: 0px;
-	// 				color: $light-medium;
-	// 			}
-	//
-	// 		}
-	//
-	// 		li:nth-last-of-type(1) {
-	//
-	// 			small {
-	// 				font-size: 16px;
-	// 			}
-	//
-	// 		}
-	// 	}
-	//
-	// 	a, a:active {
-	// 		color: $white;
-	// 		white-space: nowrap;
-	// 	}
-	//
-	// 	a:hover {
-	// 		color: $light-blue;
-	// 	}
-	// }
-
 	.posts {
 		font-size: 16px;
 
@@ -491,9 +441,9 @@ $typography-font-weight-values: (
 			padding: 0px;
 
 			li {
-				margin-bottom: 5px;
+				margin-bottom: 8px;
 				font-size: 18px;
-				padding: 5px;
+				padding: 8px;
 
 				a {
 					margin: 0px;

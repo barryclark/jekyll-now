@@ -4,7 +4,7 @@ title:      Runtime sample apps
 date:       2015-06-08 12:32:18
 active:     Yes
 summary:    Development tool used for creating reproducible sample apps across iOS, Android, and UWP that exhibit bugs / discrete functionality in the ArcGIS Runtime SDK
-category: Work project
+category: Work side project
 thumbnail: tools
 tags:
 - Development Tool

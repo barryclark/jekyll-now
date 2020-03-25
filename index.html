@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 make-smaller-titles: false
 ---
 
@@ -26,11 +26,11 @@ make-smaller-titles: false
 
             <div class="posts">
 
-              <h2>Work projects</h2>
+              <h2>Work projects (Esri products)</h2>
 
               <ul>
-                  {% assign work_posts = site.posts | where: "category", "Work project" %}
-                  {% for post in work_posts limit: 5 %}
+                  {% assign work_posts = site.posts | where: "category", "Work main project" %}
+                  {% for post in work_posts %}
                   {% if post.active %}
                     {% assign date = post.date | date: '%Y' %}
                     {% assign date_str = "(" | append: date | append: " - present)" %}
@@ -49,9 +49,35 @@ make-smaller-titles: false
                           </a>
                       </li>
                   {% endfor %}
-                  <li>
-                      <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
-                  </li>
+              </ul>
+
+            </div>
+
+            <div class="posts">
+
+              <h2>Work projects (Development tools)</h2>
+
+              <ul>
+                  {% assign work_posts = site.posts | where: "category", "Work side project" %}
+                  {% for post in work_posts %}
+                  {% if post.active %}
+                    {% assign date = post.date | date: '%Y' %}
+                    {% assign date_str = "(" | append: date | append: " - present)" %}
+                  {% else %}
+                    {% assign date = post.date | date: '%Y' %}
+                    {% assign date_str = "(" | append: date | append: ")" %}
+                  {% endif %}
+                      <li>
+                          <a href="{{ post.url | prepend: site.baseurl }}">
+                            <div>
+                              {{ post.title }}
+                              <date>{{ date_str }}</date><br>
+                              <summary>{{ post.summary }}</summary>
+                              <small>{{ post.tags | join: "|" }}</small>
+                            </div>
+                          </a>
+                      </li>
+                  {% endfor %}
               </ul>
 
             </div>

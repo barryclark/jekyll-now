@@ -1,16 +1,17 @@
 ---
 layout:     post
-title:      URLer
-date:       2016-06-08 12:32:18
+title:      Integrator
+date:       2020-02-20 12:32:18
 active:     No
-summary:    Development tools for generating / scanning QR codes with embedded Esri fields apps links
+summary:    Demo showing how app linking can be used to provide a seamless integration between an iOS app and Esri field apps
 category: Work side project
 thumbnail:
 tags:
- - Development Tool
- - macOS
+ - Presentation tool
+ - App linking
  - iOS
  - Swift
+ - Swift UI
 ---
 
 
@@ -37,8 +38,8 @@ Images / videos (if applicable)
 <div class="container__image">
 <table border="0" style="width:100%" text-align="center">
   <tr>
-    <td><img src="https://i.imgur.com/Ldw0IBI.jpg"></td>
-    <td><img src="https://i.imgur.com/P1R2olF.png"></td>
+    <td><img src="https://i.imgur.com/RIDTz3E.jpg"></td>
+    <td><img src="https://i.imgur.com/EvaFwR8.jpg"></td>
   </tr>
 </table>
 </div>
