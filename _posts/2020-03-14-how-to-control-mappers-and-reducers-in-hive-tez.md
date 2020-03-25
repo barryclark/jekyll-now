@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Control Mappers and Reducers in Apache Hive on Tez
-tags: hive, tez, apache, big data
+tags: hive, tez, apache
 last_updated: 2020-03-04
 ---
 Tez is an application framework built on Hadoop Yarn that can execute complex Directed Acyclic Graphs (DAGs) of general data processing tasks. Consider it a more flexible and powerful successor of the MapReduce framework on Hadoop.

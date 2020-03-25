@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hive Partitioning Best Practices
-tags: hive, tez, apache, big data
+tags: hive, tez, apache
 last_updated: 2020-03-16
 ---
 I/O operations are the most significant performance bottleneck when running Hive queries. One way to improve performance is by reducing the amount of data that needs to read. By default, Hive queries use the entire hive table, which translates to reading every file associated with the Hive table. However, when you need to scan a small amount of data using a filter, the behavior of reading the whole table is unnecessary and causes a lot of overhead. Hive partitioning enables Hive to access only the necessary amount of data in Hive Tables. Partitioning organizes raw data into a set of new directories, one directory for each partition defined by the user.

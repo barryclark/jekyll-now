@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hive YARN Memory Settings Best Practices
-tags: hive, tez, apache, big data
+tags: hive, tez, apache
 last_updated: 2020-03-16
 ---
 Setting memory usage is simple but very important. If configured incorrectly, jobs fail or run inefficiently.
