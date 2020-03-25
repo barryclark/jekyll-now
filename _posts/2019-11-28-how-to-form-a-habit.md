@@ -17,7 +17,7 @@ Why is it so hard? Because it's all about emotions and expectations. We hold hig
 Let's change it up. Let's lower our expectations. Let's remove them altogether. While we're at it, let's also shed our assumptions. Now, let's only do one thing, value trying. Try first, and worry about the rest later.
 
 ## The 4 Steps to Forming a Habit
-1. Cue - Set a location, time, and note how you feel at the moment.
+1. Cue - Set a location, time, and note how you feel at the moment
 2. Routine - Actively focus and have a plan on how to focus
 3. Reward - Make sense of satisfaction and congratulate yourself in some way
 4. Repeat - Believe that you can do the task again, then do it again
