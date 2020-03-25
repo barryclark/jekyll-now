@@ -34,7 +34,7 @@ The example below is how a partitioned table stores data if it's partitioned by 
 Partitioning on columns with only a few values can cause few partitions reducing the effectiveness of partitioning.
 
 ### Do Not Over Partition
-Creating a partition on a column with a  unique value causes multiple partitions that can put a lot of stress on the cluster NameNodew that has to handle a large number of directories
+Creating a partition on a column with a  unique value causes multiple partitions that can put a lot of stress on the cluster NameNode that has to handle a large number of directories
 
 ### Avoid Data Skew
 Choose your partitioning key wisely so that all partitions are even size. Otherwise, performance varies tremendously. The hard truth is sometimes it is unavoidable, and you choose to partition as a way to isolate data as well.
@@ -61,7 +61,7 @@ When you already sharded data into appropriate directories, you can add each par
 INSERT OVERWITE TABLE
 PARTITION (YEAR = '1987')
 SELECT * FROM
-weather
+weather_not_partitioned_by_year
 WHERE weather.year = '1987'
 
 ALTER TABLE weather_partitioned_by_year ADD PARTIION (year='1987')
@@ -74,14 +74,14 @@ Hive can create partitions automatically for you. All you have to do is insert d
 SET hive.exec.dynamic.partition = true;
 SET hive.exec.dynamic.parititon.mode = nonstrict;
 INSERT INTO TABLE weather_partitioned_by_year
-PARTITION (YEAR )
+PARTITION (YEAR)
 SELECT
 *
 FROM
-weather;
+weather_not_partitioned_by_year;
 ```
 To mitigate many files in many partitions, use the `DISTRIBUTE BY` clause.
 
 ### More Information
-For more on partitioned tables take a look at the wiki(https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-PartitionedTables)[wiki]
+For more on partitioned tables take a look at the [wiki](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-PartitionedTables)
 
