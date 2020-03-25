@@ -36,4 +36,4 @@ The how is explained by the code. The what and why are not entirely apparent fro
 Then use git show or git diff or git log -p.
 
 Happy coding!
-(https://git-scm.com/book/en/v2)[progit]
+[progit](https://git-scm.com/book/en/v2)
