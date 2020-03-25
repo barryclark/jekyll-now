@@ -84,3 +84,17 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+include: [".well-known"]
+
+defaults:
+  - scope:
+      path: ".well-known/"
+    values:
+      image: false
+
+webrick:
+  headers:
+    Content-Type: application/json
+    Content-type: application/json
+    content-type: application/json
