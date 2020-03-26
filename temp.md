@@ -95,9 +95,9 @@ also make sure that `BUILD_SHARED_LIBS` is set to `ON`.
 
 ---
 
-💡 Given that building OpenCV takes time, anywhere between 15 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …, it's a good idea to first do a minimal build to check that eveything is OK.
+💡 Building OpenCV takes time, anywhere between 15 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
 
-Disabling the entries below will reduce the build from ~50 minutes to ~9 minutes! Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need some additional modules to unleash the power of OpenCV.
+Disabling the entries below will reduce the build time from ~50 minutes to ~9 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules to unleash the power of OpenCV.
 
  * BUILD_IPP_IW
 
@@ -147,10 +147,9 @@ Disabling the entries below will reduce the build from ~50 minutes to ~9 minutes
 
  * VIDEOIO_ENABLE_STRICT_PLUGIN_CHECK
 
-
 ---
 
-The following OpenCV modules are the bare minimum to use OpenCV and the Java bindings.
+The following OpenCV modules are the bare minimum to use OpenCV from Java.
 
 * `BUILD_opencv_core`
 
@@ -160,18 +159,15 @@ The following OpenCV modules are the bare minimum to use OpenCV and the Java bin
 
 * `BUILD_opencv_java_bindings_gen`
 
-Once you are done, just press "G" to generate the Makefile.
+Once you are your have configured the entries, just press "G" to generate the Makefile.
 
 ### Build OpenCV
 
 ```cmake --build build/``` or ```make --directory=build/```
 
-
-### Tests
-
-To use OpenCV from Java, you need the `build/bin/opencv-430.jar` jar and the native libs located in `build/lib`.
+To use OpenCV from Java, you need the `build/bin/opencv-430.jar` jar and the native libraries located in `build/lib`.
  
-The following [Test](https://gist.github.com/delabassee/1ba380e1f32d20f2c518b1e6c6b080eb) class converts a picture from the default BGR colorspace to gray.
+The basic [Test](https://gist.github.com/delabassee/1ba380e1f32d20f2c518b1e6c6b080eb) class converts a picture from the default BGR colorspace to gray.
 
 ```
 javac -cp build/bin/opencv-430.jar Test.java
