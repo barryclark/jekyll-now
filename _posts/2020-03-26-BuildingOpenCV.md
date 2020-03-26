@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Building OpenCV 4.2+ with Java Support
+title:  Building OpenCV 4 with Java Support
 excerpt: The following 'how-to' explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS…
 ---
 
