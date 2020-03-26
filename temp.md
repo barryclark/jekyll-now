@@ -111,7 +111,7 @@ Once you are done, just press "G" to generate the Makefile.
 
 ### Build OpenCV
 
-```cmake --build build/` or `make --directory=build/``` 
+```cmake --build build/``` or ```make --directory=build/```
 
 
 ### Tests
