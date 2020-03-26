@@ -6,7 +6,7 @@ excerpt: The following 'how-to' explains how to build the latest version of Open
 
 [OpenCV](https://opencv.org) is a powerfull Computer Vision open source library mainly written in C++. Today, the most common way to use OpenCV from Java is to use its Java bindings. Technically those Java bindings rely on JNI. 
 
-Project [Panama](https://openjdk.java.net/projects/panama/)'s goal is to improve and enrich the connections between the JVM and well-defined “foreign”, i.e. non-Java APIs. Right now Panama is in development and its current focus is on C APIs but it is expected that C++ support will be added. It will be worthwhile to revisit this to use Panama's APIs and tools instead of the traditional JNI approach.
+[Project Panama](https://openjdk.java.net/projects/panama/)'s goal is to improve and enrich the connections between the JVM and well-defined “foreign”, i.e. non-Java APIs. Right now Panama is in development and its current focus is on C APIs but it is expected that C++ support will be added. It will be worthwhile to revisit this to use Panama's APIs and tools instead of the traditional JNI approach.
 
 <p align="center">
 <img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpg" width="85%"/>
