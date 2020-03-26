@@ -6,9 +6,9 @@ excerpt: The following 'how-to' explains how to build the latest version of Open
 
 [OpenCV](https://opencv.org), a powerfull Computer Vision open source library, is written in C++. The most common way today to use OpenCV from Java is to use its JNI bindings. 
 
-	<p align="center">
-	<img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpeg" width="75%"/>
-	</p>
+<p align="center">
+<img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpeg" width="75%"/>
+</p>
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
 
