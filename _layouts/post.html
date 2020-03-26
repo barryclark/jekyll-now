@@ -2,11 +2,19 @@
 layout: default
 ---
 
-{% if page.minutes %}
+<!-- {% if page.minutes %}
   {% assign minutes = page.minutes %}
 {% else %}
   {% assign minutes = content | number_of_words | divided_by: 180 %}
   {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
+{% endif %} -->
+
+{% if post.active %}
+  {% assign date = page.date | date: '%Y' %}
+  {% assign date_str = "(" | append: date | append: " - present)" %}
+{% else %}
+  {% assign date = page.date | date: '%Y' %}
+  {% assign date_str = "(" | append: date | append: ")" %}
 {% endif %}
 
 <div class="container-fluid single">
@@ -23,36 +31,17 @@ layout: default
       </div>
       {% endif %}
 
-      <h2 class="header" itemprop="name">{{ page.title }}</h2>
-
       <div class="author">
-        <small><i>
-          {% if page.author %}
-          by
-          <span itemprop="author">
-            {% if site.google_plus_link %}
-              <a rel="author" href="{{ site.google_plus_link }}">
-            {% endif %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">{{ page.author }}</span>
-            </span>
-            {% if site.google_plus_link %}
-              </a>
-            {% endif %}
-          </span>
-          {% endif %}
-          {% if post.active %}
-            {% assign date = page.date | date: '%Y' %}
-            {% assign date_str = "(" | append: date | append: " - present)" %}
-          {% else %}
-            {% assign date = page.date | date: '%Y' %}
-            {% assign date_str = "(" | append: date | append: ")" %}
-          {% endif %}
-          <span itemprop="datePublished">{{ date_str }}</span>
-          <div class="details">
-            <small>{{ page.tags | join: "|" }}</small>
-          </div>
-        </i></small>
+        <h2 class="header">{{ page.title }}</h2>
+        {% if page.tags and page.tags.size > 0 %}
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+             &nbsp;{{ page.tags | join: ', ' }}
+          </small>
+        </div>
+        {% endif %}
+        <!-- <date>{{ date_str }}</date><br> -->
       </div>
 
       <!-- <div class="read-time">
@@ -97,15 +86,6 @@ layout: default
         <div class="share">
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
           <div class="addthis_sharing_toolbox"></div>
-        </div>
-        {% endif %}
-
-        {% if page.tags and page.tags.size > 0 %}
-        <div class="tags">
-          <small>
-          <i class="fa fa-tags"></i>
-            {{ page.tags | join: ', ' }}
-          </small>
         </div>
         {% endif %}
 
