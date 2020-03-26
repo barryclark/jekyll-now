@@ -125,7 +125,7 @@ javac -cp build/bin/opencv-430.jar Test.java
 java -Djava.library.path=build/lib/ -cp build/bin/opencv-430.jar Test
 ```
  
-```
+```java
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
