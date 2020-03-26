@@ -10,13 +10,14 @@ OpenCV offers 'official' distributions for [Windows, iOS and Android](https://op
 
 The following 'how-to' explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The latest Java version, 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8. The approach should be pretty similar for producing Windows builds.
 
-Building OpenCV and the Java binding process is straight forward but time consuming. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (g++, ld, make, ...) and a Java toolchain (JDK and a recent version Apache Ant). 
+Building OpenCV and the Java binding process is straight forward but time consuming. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, ...) and a Java toolchain (JDK and a recent version Apache Ant). 
 
 ### Install the native C++ toolchain
 
 Unless you are using a stripped down Linux distribution, most of the native tools are probably already available (ex. `ld`, `nm`, `objcopy`, `objdump`, `make`, etc.). On a fresh Ubuntu 18.04, I only had to install `g++` and `cmake`. Optionally and given that there are  over 300 options to build OpenCV, using a configuration frontend such as `ccmake` or `cmake-gui` can be helpful. Note that Python is also required for the build phase.
 
-```sudo apt install g++
+```
+sudo apt install g++
 sudo apt install cmake
 sudo apt install cmake-curses-gui
 ``` 
@@ -25,7 +26,8 @@ sudo apt install cmake-curses-gui
 
 Install the JDK...
 
-```wget https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
+```
+wget https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
 gzip -d openjdk-14_linux-x64_bin.tar.gz
 sudo mkdir /usr/lib/jvm
 sudo cp -r jdk-14/ /usr/lib/jvm/
@@ -34,18 +36,22 @@ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk-14
 ```
 ... and Apache Ant.
 
-```sudo snap install ant --classic```
+```
+sudo snap install ant --classic
+```
 
 ### Configure the build
 
-```mkdir workspace;cd workspace
+```
+mkdir workspace;cd workspace
 git clone https://github.com/opencv/opencv.git
 mkdir build
 ```
 
 Create the build files using `ccmake` and pointing it to the OpenCV codebase directory and to the newly created build directory.
 
-```ccmake -S opencv/ -B build/
+```
+ccmake -S opencv/ -B build/
 ```
 
 Alternatively, you can use `cmake-gui` which offers a GUI. And simillarly, you should specify the OpenCV codebase location and the directory where it should be build.
@@ -54,35 +60,35 @@ Both `ccmake` and `cmake-gui` works the same way. You first need to hit "C" (con
 
 Most of settings should be fine by default. The following entries should be configured for Java support.
 
-`JAVA_AWT_INCLUDE_PATH`
+* `JAVA_AWT_INCLUDE_PATH`
 
- :wavy_dash: Linux `/usr/lib/jvm/jdk-14/include/`
+↪ Linux `/usr/lib/jvm/jdk-14/include/`
 
- :wavy_dash: macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/include/`
+↪ macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/include/`
 
-`JAVA_AWT_LIBRARY`
+* `JAVA_AWT_LIBRARY`
 
- :wavy_dash: Linux `/usr/lib/jvm/jdk-14/lib/libjawt.so`
+↪ Linux `/usr/lib/jvm/jdk-14/lib/libjawt.so`
 
- :wavy_dash: macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/lib/libawt.dylib`
+↪ macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/lib/libawt.dylib`
 
-`JAVA_INCLUDE_PATH`
+* `JAVA_INCLUDE_PATH`
 
- :wavy_dash: Linux `/usr/lib/jvm/jdk-14/include/`
+↪ Linux `/usr/lib/jvm/jdk-14/include/`
 
- :wavy_dash: macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/include/`
+↪ macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/include/`
 
-`JAVA_INCLUDE_PATH2`
+* `JAVA_INCLUDE_PATH2`
 
- :wavy_dash: Linux `/usr/lib/jvm/jdk-14/include/linux/`
+↪ Linux `/usr/lib/jvm/jdk-14/include/linux/`
 
- :wavy_dash: macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/include/darwin/`
+↪ macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/include/darwin/`
 
-`JAVA_JVM_LIBRARY`
+* `JAVA_JVM_LIBRARY`
 
- :wavy_dash: Linux `/usr/lib/jvm/jdk-14/lib/server/libjvm.so`
+↪ Linux `/usr/lib/jvm/jdk-14/lib/server/libjvm.so`
 
- :wavy_dash: macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/lib/server/libjvm.dylib`
+↪ macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/lib/server/libjvm.dylib`
 
 also make sure that `BUILD_SHARED_LIBS` is set to `ON`. 
 
@@ -98,7 +104,7 @@ The following OpenCV modules are the bare minimum to use OpenCV and the Java bin
 
 * `BUILD_opencv_java_bindings_gen`
 
-You can unselect all others `BUILD_opencv_` entries and selectevely re-enable them later if you need those features. And realistically, you will need additional modules to unleash OpenCV.
+You can unselect all others `BUILD_opencv_*` entries and selectevely re-enable them later if you need those features. And realistically, you will need additional modules to unleash OpenCV.
 
 Once you are done, just press "G" to generate the Makefile.
 
