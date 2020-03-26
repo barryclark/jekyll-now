@@ -10,7 +10,7 @@ OpenCV offers 'official' distributions for [Windows, iOS and Android](https://op
 
 The following 'how-to' explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The latest Java version, 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8. The approach should be pretty similar for producing Windows builds.
 
-Building OpenCV and the Java binding process is straight forward but time consuming. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, ...) and a Java toolchain (JDK and a recent version Apache Ant). 
+Building OpenCV and the Java binding process is straight forward but time consuming. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain (JDK and a recent version Apache Ant). 
 
 ### Install the native C++ toolchain
 
@@ -24,7 +24,7 @@ sudo apt install cmake-curses-gui
 
 ### Install the Java toolchain
 
-Install the JDK...
+Install the JDK …
 
 ```
 wget https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
@@ -34,7 +34,7 @@ sudo cp -r jdk-14/ /usr/lib/jvm/
 sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk-14/bin/java" 1
 sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk-14/bin/javac" 1
 ```
-... and Apache Ant.
+… and Apache Ant.
 
 ```
 sudo snap install ant --classic
@@ -104,7 +104,7 @@ The following OpenCV modules are the bare minimum to use OpenCV and the Java bin
 
 * `BUILD_opencv_java_bindings_gen`
 
-You can unselect all others `BUILD_opencv_*` entries and selectevely re-enable them later if you need those features. And realistically, you will need additional modules to unleash OpenCV.
+You can unselect all others `BUILD_opencv_*` entries and selectevely re-enable them later if you need those features. And realistically, you will need additional modules to unleash the power of OpenCV.
 
 Once you are done, just press "G" to generate the Makefile.
 
