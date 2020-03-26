@@ -93,7 +93,13 @@ Most of settings should be fine by default. The following entries should be conf
 
 also make sure that `BUILD_SHARED_LIBS` is set to `ON`. 
 
+---
+
 💡 Given that building OpenCV takes time, anywhere between 15 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …, it's a good idea to first do a minimal build to check that eveything is OK.
+
+You can unselect all others `BUILD_opencv_*` entries and selectevely re-enable them later if you need those features. And realistically, you will need additional modules to unleash the power of OpenCV.
+
+---
 
 The following OpenCV modules are the bare minimum to use OpenCV and the Java bindings.
 
@@ -104,8 +110,6 @@ The following OpenCV modules are the bare minimum to use OpenCV and the Java bin
 * `BUILD_opencv_imgproc`
 
 * `BUILD_opencv_java_bindings_gen`
-
-You can unselect all others `BUILD_opencv_*` entries and selectevely re-enable them later if you need those features. And realistically, you will need additional modules to unleash the power of OpenCV.
 
 Once you are done, just press "G" to generate the Makefile.
 
