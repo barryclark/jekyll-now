@@ -7,7 +7,7 @@ excerpt: The following 'how-to' explains how to build the latest version of Open
 [OpenCV](https://opencv.org), a powerfull Computer Vision open source library, is written in C++. The most common way today to use OpenCV from Java is to use its JNI bindings. 
 
 <p align="center">
-<img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpg" width="75%"/>
+<img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpg" width="80%"/>
 </p>
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
@@ -99,7 +99,7 @@ also make sure that `BUILD_SHARED_LIBS` is set to `ON`.
 
 ---
 
-💡 Building OpenCV takes time, anywhere between 15 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
+💡 Building OpenCV takes time, anywhere between 5 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
 
 Disabling the entries below will reduce the build time from ~50 minutes to ~9 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules to unleash the power of OpenCV.
 
