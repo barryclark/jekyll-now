@@ -1,20 +1,20 @@
 ---
 layout: post
-title:  Building OpenCV 4.2+ with Java Support
+title:  Building OpenCV 4 with Java Support
 excerpt: The following 'how-to' explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS…
 ---
 
-[OpenCV](https://opencv.org), a powerfull Computer Vision open source library, is written in C++. The most common way today to use OpenCV from Java is to use its JNI bindings. 
+[OpenCV](https://opencv.org) is a powerfull Computer Vision open source library mainly written in C++. Today, the most common way to use OpenCV from Java is to use its JNI bindings. 
 
 <p align="center">
-<img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpeg" width="75%"/>
+<img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpg" width="85%"/>
 </p>
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
 
-The following 'how-to' explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3.xx!). The approach should be pretty similar for producing Windows builds, just make sure to adapt the various paths (JDK, compilers, etc.) accordingly.
+The following _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3). So I am using the latest and greatest OpenCV and Java versions but this should work using different versions. Producing builds on Windows is just a matter of properly installing and configuring the native toolchain, and configure the respective Java paths.
 
-Building OpenCV and the Java binding process is straight forward but time consuming. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain (JDK and a recent version Apache Ant). 
+Building OpenCV and the Java binding process is straight forward but takes time. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain, i.e. a JDK and a recent version of Apache Ant. 
 
 ### Install the native C++ toolchain
 
@@ -99,7 +99,7 @@ also make sure that `BUILD_SHARED_LIBS` is set to `ON`.
 
 ---
 
-💡 Building OpenCV takes time, anywhere between 15 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
+💡 Building OpenCV takes time, anywhere between 5 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
 
 Disabling the entries below will reduce the build time from ~50 minutes to ~9 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules to unleash the power of OpenCV.
 
