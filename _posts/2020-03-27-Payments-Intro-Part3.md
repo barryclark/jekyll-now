@@ -87,28 +87,22 @@ M-Pesa was created because of the lack of a viable alternative for payments in i
 on the back of that. Super apps started with a killer core feature <sup>[3](#footnote_3)</sup> and are now growing on 
 the back of innovation and the irresistible power of the [network effect][18]. 
 
-#### Paypal
+#### Paypal & friends
 
-The wave of internet e-money providers like [Paypal][79] started in the early '00s
-to facilitate online commerce 
-with proper UX and web integration in the early internet days  
-These providers grew along with the growth of the internet 
-millions of users and merchants have accounts creating an established user base 
+The wave of internet e-money providers like [Paypal][79] started in the early '00s to facilitate transactions in the 
+growing online commerce sector.  
+Focusing on UX and web integration, they grew along with the growth of the internet. Paypal, through its affiliation with
+[eBay][136], focused early on the online commerce sector, establishing a user base of millions of merchants and users. 
  
-At its core Paypal is also an on-ramp/off-ramp system
-since all transactions between Paytpal holders take place within the company's ledger 
-settlement and payout is instant
+Paypal is also an on-ramp/off-ramp system.  
+Since all transactions between Paypal holders take place within the company's ledger, settlement (and credit to the 
+merchant's account) is instant. This was a great value proposition in the early days as the US retail banking system is 
+[notoriously inefficient][83] and online card fraud was rampant.  
+Paypal provided a trusted third party, which would guarantee customer payments until they cleared from the bank, with an 
+internet-friendly e-mail based identity.   
 
-This was a great value proposition in the early days as 
-the US retail banking system is [notoriously inefficient][83] 
-and online card fraud was rampant    
-
-Paypal provided a trusted third party 
-with an internet-friendly e-mail based identity  
-
-However as the undelrying "plumbing" improves 
-the value proposition in terms of payments processing is reduced 
-Paypal ends up being another middleman
+As the underlying "plumbing" improves and the e-money and payment processing space get [crowded][137], the initial value 
+proposition is reduced. Paypal ends up being [another middleman][138] among many.
 
 ### OpenBanking
 
@@ -369,8 +363,9 @@ time of geopolitical tensions, even before the Covid-19 [black swan][109].
 Why not baptize it as a remittance service, a digital IOU,... something fairly conspicuous, [woke-ish][110] and under 
 the radar? Facebook already had the partnerships in place to make it a de facto global payments network overnight. 
 
-I honestly do not know the future, but I think Libra ticks many boxes to become a case study for Silicon Valley's 
-detachment from the "real world" and how it works.
+I honestly do not know what the future of this project is.  
+But I think Libra ticks many boxes to become a case study for Silicon Valley's detachment from the "real world" and how 
+it works.
 
 ### Government cryptocurrencies
 
@@ -445,7 +440,9 @@ From that aspect, the major PoW cryptocurrencies are the best digital equivalent
 Their increasing hashrate and fixed supply / scarcity make them true assets, without an underlying claim or trusted 
 third party.  
 
-They are the purest digital equivalent of in-person transactions, but on a global scale.
+They are the purest digital equivalent of in-person transactions, but for a global scale.  
+Though PoW currencies by themselves [may not be THE answer][135], they may be the core underpinning of a new payments 
+infrastructure (backing collateral, akin to digital gold).
 
 ## Some racing thoughts 
 
@@ -456,7 +453,7 @@ In these 3 articles ([part 1][1], [[part 2][2]) we saw how the transfer of value
 From a simple hand-in-hand transaction in the olden days, to national payment networks, mobile money, complex global 
 banking systems and "value routes".
 
-As we were going through these systems, you may have noticed a couple of common patterns emerging.
+As we were describing these systems, you may have noticed a couple of common patterns emerging.
 
 **Trust**  
 The existing payment systems' fundamental shortcoming is that of trust.  
@@ -508,17 +505,18 @@ Would they only offer [custodian services][61], essentially only hold some priva
 How can they justify their importance as lenders when current [DeFi][82] systems are operating through great volatility 
 and with a tiny fraction of operating costs?
 
-Same questions and more apply to payment processors.  
+The same questions and more apply to payment processors.  
 
-Whatever the end state of the world 
-seems almost certain that the current [shrinking trajectory][81] of retail banks will only accelerate 
-to a tiny fraction of their current size and importance 
-In a fully crypto world maintaining alternative channels <sup>[16](#footnote_16)</sup> and being [systemically important][62] 
-is beyond pointless 
+The next state of the payments world is inevitably going to be based on the blockchain.  
+This can be the fiat equivalent of government crypto-currencies or asset-backed "tokens" (e.g. moving to back to the 
+[gold standard][133] or to a new [Bitcoin standard][134]). In any case it seems almost certain that the current 
+[shrinking trajectory][81] of retail banks will only accelerate. Banks and financial institutions in general will likely 
+end up as a tiny fraction of their current size and importance. In a fully crypto world maintaining alternative channels 
+<sup>[16](#footnote_16)</sup> and being [systemically important][62] is beyond pointless.  
 
-The upcoming evolution of the global payment systems 
-will probably be an [extinction event][63] for the majority of the current financial system
-What will remain after, will be [hardly reminiscent][64] of what was there before
+The upcoming evolution of the global payment networks will probably be an [extinction event][63] for the majority of 
+the current financial system.  
+What will remain after, will be [hardly reminiscent][64] of what was there before.
 
 
 ## Footnotes
@@ -692,3 +690,9 @@ the world of [smart contracts][54] it is almost trivial to implement.
   [130]: https://en.wikipedia.org/wiki/The_Chase_of_the_Golden_Meteor
   [131]: https://www.gold.org/about-gold/gold-supply/gold-mining/how-much-gold
   [132]: https://www.pwc.com/gx/en/financial-services/assets/pdf/technology2020-and-beyond.pdf
+  [133]: https://en.wikipedia.org/wiki/Gold_standard
+  [134]: https://www.goodreads.com/en/book/show/36448501-the-bitcoin-standard
+  [135]: https://en.wikipedia.org/wiki/Bitcoin_scalability_problem
+  [136]: https://www.cnet.com/news/ebay-picks-up-paypal-for-1-5-billion/
+  [137]: https://medium.com/@harish_6956/top-competitors-of-paypal-799c0703767
+  [138]: https://www.bbc.co.uk/news/business-42905465
