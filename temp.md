@@ -4,7 +4,7 @@ title:  Compiling OpenCV 4.2+ with Java Support
 ---
 
 
-OpenCV, a powerfull Computer Vision open source library, is written in C++ ; it can be used from Java using its JNI bindings. 
+[OpenCV](https://opencv.org), a powerfull Computer Vision open source library, is written in C++ ; it can be used from Java using its JNI bindings. 
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
 
@@ -111,9 +111,10 @@ Once you are done, just press "G" to generate the Makefile.
 
 To use OpenCV from Java, you need the `build/bin/opencv-430.jar` jar and the native libs located in `build/lib`.
  
-The following Test class converts a picture from the default BGR colorspace to gray.
+The following [Test](https://gist.github.com/delabassee/1ba380e1f32d20f2c518b1e6c6b080eb) class converts a picture from the default BGR colorspace to gray.
 
-```javac -cp build/bin/opencv-430.jar Test.java
+```
+javac -cp build/bin/opencv-430.jar Test.java
 java -Djava.library.path=build/lib/ -cp build/bin/opencv-430.jar Test
 ```
  
