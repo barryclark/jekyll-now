@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Compiling OpenCV 4.2+ with Java Support
+title:  Building OpenCV 4.2+ with Java Support
 ---
 
 
-[OpenCV](https://opencv.org), a powerfull Computer Vision open source library, is written in C++ ; it can be used from Java using its JNI bindings. 
+[OpenCV](https://opencv.org), a powerfull Computer Vision open source library, is written in C++. The most common way today to use OpenCV from Java is to use its JNI bindings. 
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
 
