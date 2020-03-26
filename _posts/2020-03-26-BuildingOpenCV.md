@@ -14,7 +14,7 @@ OpenCV offers 'official' distributions for [Windows, iOS and Android](https://op
 
 The following _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3). So I am using the latest and greatest OpenCV and Java versions but this should work using different versions. Producing builds on Windows is just a matter of properly installing and configuring the native toolchain, and configure the respective Java paths.
 
-Building OpenCV and the Java binding process is straight forward but takes time. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain (JDK and a recent Apache Ant version). 
+Building OpenCV and the Java binding process is straight forward but takes time. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain, i.e. a JDK and a recent version of Apache Ant. 
 
 ### Install the native C++ toolchain
 
