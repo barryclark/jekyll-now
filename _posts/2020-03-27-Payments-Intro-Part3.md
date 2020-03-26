@@ -48,7 +48,7 @@ money, which is then paid to her account (lines 5, 6).
 
 From its inception, M-Pesa was meant to be an [on-ramp][7] / [off-ramp][6] system, parallel to the "real" 
 financial world. In practice, even to this day, the off-ramping (5, 6) is rarely, if ever, exercised. This is a 
-combination of the plain lack of bank accounts in developing markets and the [exorbitant withdrawal costs][9], up to 20%.  
+combination of the plain lack of bank accounts in developing markets and the [exorbitant withdrawal costs][9].  
 This last statement reveals a gross simplification of the above diagram: the vast majority of on- / off-ramping 
 does not happen through bank accounts. It takes place through a vast network of [street agents][10], who convert 
 cash into mobile money, taking a commission.  
@@ -75,7 +75,7 @@ quickly grew to rival banks in terms of transaction volume. Some examples are [W
 in China, [PayTM][23] in India and [GoJek][22] in Singapore/Indonesia.
 
 The underlying mechanics of this payment rail are pretty much identical to those of M-Pesa.  
-App users can fund their account with a variety of means: from a normal debit/credit card to the [ojek][25] driver [becoming
+App users can fund their account with a variety of means: from a normal debit/credit card all the way to the [ojek][25] driver [becoming
 an agent on wheels][24]. The payment system is a general ledger running inside the company's domain, tracking transfers 
 of value between users.  
 The demographic and economic tailwinds of the region have enabled them to grow into massive user bases and are now 
@@ -110,15 +110,14 @@ proposition is reduced. Paypal ends up being [another middleman][138] among many
 > The use of open APIs that enable third-party developers to build applications and services around the financial 
 > institution.
 
-It took its name from the UK regulator's initiative. UK decided in 2016 to [front-run][66] the upcoming pan-European 
-[PSD2 directive][67], which was coming into full effect in September 2019. The name OpenBanking has now become almost 
+The UK regulator decided in 2016 to [front-run][66] the upcoming pan-European 
+[PSD2 directive][67], which was coming into full effect in September 2019. The name of the UK initiative, OpenBanking, has now become almost 
 global and describes open financial APIs, offered by banks.  
-> In this section I will be using the terms OpenBanking and PSD2 interchangeably.
 
 At its core OpenBanking enables bank customers to perform all their banking tasks through a third party's application.     
-Though it provides access to data as well as payment, I will be focusing on payments in this section. 
+Though it provides access to data as well as payments, I will be focusing on the latter in this section. 
 
-Let's see how it works.  
+The following diagram gives an overview of how it works.  
 
 ![OpenBanking payments](../images/payments/payments-ob.png)
 
@@ -131,18 +130,20 @@ The PSP's app calls PinkBank's standardized [OpenBanking APIs][71].
 payment (to the given Receiver account and for the given amount) on her (the Customer's) behalf. The consent is stored 
 in PinkBank's systems.
 4. The PSP then instructs PinkBank to initiate the payment.  
-Depending on the payment's type (domestic, international,...) one of the exiasting, underlying payment schemes is used.   
+Depending on the payment's type (domestic, international,...) one of the existing, underlying payment schemes is used.   
 
 From the above it becomes clear that OpenBanking is not a new "payment rail" as such.  
 Rather it is a technological layer on top of the existing banking infrastructure, opening access to a number of new 
-companies (the PSPs). This aims to disintermediate the customer from the bank (by introducing additional "smart apps"). 
-This will eventually lead to the [commoditization][73] of the banking institutions.
+companies (the PSPs). Though the aim is for better customer service and control, the result is disintermediating the 
+customer from the bank (by introducing additional "smart apps").  
+This will eventually lead to the [commoditization][73] of the banking institutions (in a way similar to how Booking 
+and Airbnb have commoditized the hospitality sector).
 
 ### Remittance services
 
 We saw in [part 2][2] how complex (and more often than not complicated) international payments are.
 
-What if there was a magic way of sending value cross-border without anything actually crossing borders?  
+What if there was a magic way of sending value cross-border *without anything actually crossing borders*?  
 Sounds weird? This is where remittance services come in.  
 A practical example will help understand their modus operandi. 
 
@@ -156,18 +157,19 @@ Say, send £100 to the Receiver's GBP account. RS gets the current [spot price][
 details of its Euro bank account (R1). The transaction for now is still pending in RS's ledger. Let's say that the spot 
 price means that Sender will "pay" €110. 
 Sender has an alloted amount of time to send the funds, or the transaction is voided.
-2. The Sender makes the transfer (1).  
+2. The Sender makes the transfer (2).  
 This is usually a local transfer using the mechanisms described in [part 1][1]. 
 3. RS gets a notification that the amount has been deposited in its R1 account.  
 The transaction is marked as "funded".
 4. RS then instructs its GBP account (R2) to pay out the £100.  
 5. Again using a local payment mechanism (e.g. Faster Payments in the UK), Receiver gets the money.  
-The transaction is then marked as completed in RS's ledger and the books are balanced.
+The transaction is then marked as completed in RS's ledger and the books are balanced. Notice how the Receiver got paid
+**without** an international money transfer. 
  
 Let's pause here and unwrap the phrase "the books are balanced".  
 In step 2, RS's account R1 received €110, so RS's assets increased by €110. By sending out the equivalent amount in GBP 
 in step 5 (i.e. £100), RS no longer owns the €110. Or better own the *value represented by €110*.  By nominally "securing" 
-the FX rate at the moment of transfer (€110 for £100)  
+the FX rate at the moment of transfer (€110 for £100):  
 * R1 is up by €110, 
 * R2 is down by £100, and
 * the books are balanced.
@@ -180,24 +182,25 @@ that currency.
 The importance of the FX rate comes into play when we have the reverse flow.   
 Let's say that 5 days later Receiver realizes this was a mistake and she wants to return the received £100. 
 The steps are followed in the reverse order. Meanwhile, Brexit has happened and GBP has lost its value relative to the 
-Euro. So now when RS gets the new spot price £100 now buys €100.  
-At the end of the second payment  
+Euro. So now when RS gets the new spot price, £100 now buys €100.  
+At the end of the second payment:  
 * R2 is up by £100, 
 * R1 is down by €100, and
 * the books are again balanced.
 
 RS's books are balanced, even though it was left with €10 in the end in its R1 account!  
-This is the power of netting off flows.  
+In this simplistic example, the currency flows resulted in an effective [price arbitrage][139]. In real life, the multitude 
+of daily movements in both directions would dilute this effect.  
 RS takes a fee out of each transaction as an FX merchant would, but actually moves a fraction of the transacted amounts. 
-The fraction actual;ly moved as a "real" cross-border payment is dependent on the [balance of payments][86] between the 
+The fraction actually moved as a "real" cross-border payment is dependent on the [balance of payments][86] between the 
 2 currencies. If the flows between Euro and GBP are balanced over time, then the balances of R1 and R2 will find an 
-equilibrium. If we imagine that there is an imbalance of 5% more payments Euro-to-GBP than GBP-to-Euro, then R1 will be 
-needing a periodic 5% topup.
+equilibrium and RS will not need to move money between them. If we imagine that there is an imbalance of 5% more payments 
+Euro-to-GBP than GBP-to-Euro, then R1 will be needing a periodic 5% topup.
  
 Depending on the size of the short-fall this can be covered in any number of ways.  
 * A periodic international payment from R2 to R1 to re-balance the books (line 5).  
 The FX fees paid by RS will be for a fraction of the fees it has collected for the total flows.
-* Interest accrued on R1, or
+* Interest accrued on R1 (if local regulation allows RS to profit from effectively customer assets), or
 * Local borrowing (if the [cost of debt][87] in that market is really-really cheap).
 
 In short, the more balanced a currency pair, the more profitable for the RS.
@@ -205,7 +208,7 @@ In short, the more balanced a currency pair, the more profitable for the RS.
 Some currency pairs are more imbalanced than others.  
 This is especially the case in the personal remittances market, where emigrants send money back home (e.g. from USD to 
 Mexican Pesos). This is one of the reasons why, past a certain size, all remittance providers try to expand into the 
-business payments market to balance their flows.  
+business payments market: to balance their flows.  
 Business and trade are in general more balanced. For example, countries with high emigration are usually net importers. 
 So the money entering the country as remittances, leave it soon after to buy cars and electronics.   
 
@@ -224,6 +227,7 @@ The public Ripple network has all the components to be an all-in-one drop-in blo
 * global nostro-vostro accounts, 
 * FX markets, and  
 * the [SWIFT network][35] built on top of them.
+
 By extension, a private Ripple network (i.e. a network deployed from source code) is effectively a Hawala network 
 out of the box.
 
@@ -277,9 +281,9 @@ In addition to some questions on its [consensus algorithm][41] resilience, there
 Ripple network's design, both inherent and acquired.
 
 **Monetary imbalance**  
-At the core, is the "monetary imbalance" in the public network's design.   
+At its core, there is a "monetary imbalance" in the public network's design.   
 Gateway IOUs are the equivalent of [stablecoins][40] (see next section), their value pegged to real-world currencies. 
-They are created/burnt on an one-in-one-out basis. XRP itself however is arbitrarily priced in the open market and not 
+They are created/burnt on an one-in-one-out basis. XRP itself is arbitrarily priced in the open market and not 
 pegged to (or backed by) anything. Quite probably the designers aimed for the central "reserve currency" of the network 
 to reach an equilibrium with the global money markets' demand. It would then draw its value solely by the utility of 
 the network itself.  
@@ -295,10 +299,10 @@ Ripple network's nodes are a closed set. Ripple Labs has a say on which entities
 may have [undue control over the entire network][95]. This is an intentional decision and part of Ripple's strategy to 
 partner with existing financial institutions. This level of control however is anathema to the rest of the crypto community.  
 
-Based on the above one might think that these projects offer little value.  
-However this could not be further from the truth. Though the economics and [incentives][44] of their public networks may 
-be open for debate, both technologies allow financial organisations with a cross-border foot-print to effectively create 
-a robust payments network in a single sweep.  
+Based on the above one might think that digital IOU projects offer little value.  
+This could not be further from the truth. Though the economics and [incentives][44] of their public networks may 
+be open for debate, both technologies allow financial organisations with a cross-border foot-print (i.e. the Hawalas of
+the modern age) to effectively create a robust payments network in a single sweep.  
 
 ### Stablecoins
 
@@ -317,7 +321,7 @@ These stablecoins are minted when users deposit other crypto assets (e.g. Bitcoi
 Since the digital collateral has itself a fluctuating price, this class of stablecoins achieves a virtual peg by an 
 elegant [set of market incentives][100].   
 
-At their core, stablecoins are on-ramp/off-ramp systems.  
+At their core, stablecoins are also on-ramp/off-ramp systems.  
 Their main use case so far has been to facilitate electronic crypto-asset trading, offering a stable digital unit of 
 account in a super-volatile asset class.  
 This stability combined with the benefits of the blockchain gives them a great potential to become a global medium of 
@@ -346,7 +350,7 @@ The payment is sent to the network, the blockchain nodes of which are run by the
 4. ...and a few seconds later the Receiver sees her Libra balance increasing.
 
 If the above looks very familiar, it's because it is!  
-At its core Libra is not a currency. It is a fusion between an IOU and an asset-based stablecoin. The novelty here is 
+At its core Libra is not a currency. It is a fusion between an IOU and an asset-backed stablecoin. The novelty here is 
 that it is backed by a basket of currencies, reducing [currency risk][105].  
 Steps 1 and 2 are the on-ramp to the platform. What is missing on the other side of this diagram is the off-ramp, where 
 Libra would be converted to GBP. 
@@ -357,9 +361,9 @@ flight. The project's vision has been that of a global currency, bank the unbank
 that the currency will have the required network effect from day 1. Users would not feel the need of the off-ramp. Perhaps 
 an "exit tax" might be another nudge to stay. 
 
-The technical merits of the system have been eclipsed by the aggressive marketing blitz and the [subsequent][107] [regulatory][108] 
-backlash. A global stable currency, takes away the [only thing][45] that makes a government, well... a government. At a 
-time of geopolitical tensions, even before the Covid-19 [black swan][109].  
+The technical merits of the system have been eclipsed by the aggressive marketing blitz focusing on *global currency* and 
+the [subsequent][107] [regulatory][108] backlash. A global stable currency, takes away the [only thing][45] that makes a government, well... a government. All this
+at a time of geopolitical tensions, even before the Covid-19 [black swan][109], this was not the right message.  
 Why not baptize it as a remittance service, a digital IOU,... something fairly conspicuous, [woke-ish][110] and under 
 the radar? Facebook already had the partnerships in place to make it a de facto global payments network overnight. 
 
@@ -375,10 +379,10 @@ crypto-currencies.
 ![Government crypto payments](../images/payments/payments-gov-crypto.png)
 
 The underlying payment mechanism in such a case would be extremely simple.    
-* The Sender has a crypto-wallet on her device, possibly provided/facilitated by a bank.  
+* The Sender has a crypto-wallet on her device, possibly provided/facilitated by a commercial bank.  
 She issues a payment to the network of trusted nodes. This network will almost certainly be non-public with the compute 
 capacity owned entirely by the central bank or with the national retail banks all offering [hash power][111].
-* The payment will probably be attached to a block in a way similar to how existing blockchains operate and confirmed 
+* The payment is attached to a block in a way similar to how existing blockchains operate and confirmed 
 by the network. 
 * At this point the Receiver's wallet has received the amount.   
 The transaction has been immutably recorded in the network's distributed ledger.  
@@ -401,10 +405,10 @@ Having all transactions visible in real-time and recorded immutably forever has 
   
 In the same vein, the elimination of cash and intermediaries (a.k.a. banks) opens up endless creative possibilities in 
 the area of monetary policy.  
-Why fight with ever-lower interest rates and bother with QE and trickle-down economics, when you have seen it cannot 
+Why fight with ever-lower interest rates and bother with [QE][141] and [trickle-down economics][140], when you have seen it cannot 
 create real inflation? <sup>[13](#footnote_13)</sup> Why not send an [airdrop][116] (a.k.a. [helicopter money][117]) 
 straight into people's crypto-addresses?  
-Why not make it more interesting and force [velocity of money][118] by making them auto-burn every few days? <sup>[14](#footnote_14)</sup>
+Why not make it more interesting and force [velocity of money][118] by making this newly acquired crypto-money auto-burn every few days? <sup>[14](#footnote_14)</sup>
 Why worry about the debt crisis when you can have centrally controlled and auto-adjusted debt margins and [jubilees][48]? 
 
 It is common knowledge that the current system is well overdue for a reset due to excessive [monetization][119]. In less 
@@ -426,8 +430,8 @@ The Sender signs a payment with her private key and sends it off to the public n
 The [miners][125] reach a [consensus][124] on the validity of the transaction and it is immutably recorded on the shared 
 ledger. Value has been transferred to the Receiver.
 
-There are on- and off-ramps in the form of [exchanges][126], but these are purely utility mechanisms.  
-They facilitate onboarding from the existing fiat world, but are not critical the same way an on-ramp gateway is. Unlike 
+There are on- and off-ramps in the form of [exchanges][126], but these are purely utility mechanisms. They facilitate 
+onboarding from the existing fiat world, but are not critical the same way an on-ramp Ripple gateway is. Unlike 
 Libra/stablecoins/etc, PoW money is not created at the gateway. It exists in and of itself, created as reward for 
 [capital and operational expenditure][127] to mine it. This value is "locked" inside the system, behind the ["hashing wall"][128]. 
 
@@ -437,8 +441,8 @@ to dig out more. Unless a gold meteorite [lands on Earth][130], that spent capit
 making it irreplaceable and valuable.
 
 From that aspect, the major PoW cryptocurrencies are the best digital equivalent of money, as I described it in [part 1][1].  
-Their increasing hashrate and fixed supply / scarcity make them true assets, without an underlying claim or trusted 
-third party.  
+Those with a high network hashrate and fixed supply / scarcity become true assets. True assets meaning that they have value 
+without an underlying claim to "something" or the need for a trusted third party.  
 
 They are the purest digital equivalent of in-person transactions, but for a global scale.  
 Though PoW currencies by themselves [may not be THE answer][135], they may be the core underpinning of a new payments 
@@ -449,7 +453,7 @@ infrastructure (backing collateral, akin to digital gold).
 ![Run, Forrest! Run!](../images/payments/san-fermin-pamplona-navarra-LJrszMj1RJc-unsplash.jpg)
 > Photo by San Fermin Pamplona - Navarra on Unsplash
 
-In these 3 articles ([part 1][1], [[part 2][2]) we saw how the transfer of value has evolved over millenia.   
+In these 3 articles ([part 1][1], [part 2][2]) we saw how the transfer of value has evolved over millenia.   
 From a simple hand-in-hand transaction in the olden days, to national payment networks, mobile money, complex global 
 banking systems and "value routes".
 
@@ -459,7 +463,7 @@ As we were describing these systems, you may have noticed a couple of common pat
 The existing payment systems' fundamental shortcoming is that of trust.  
 In the digital payment space, trust can only be effectively established on a bilateral basis. This is how 
 nostro/vostro accounts came about. If that is not enough, then a "neutral", trusted third party is needed for additional 
-guarantees and oversight. This trusted third party is usually [de jure][51], enshrined in law or international agreements.   
+guarantees and oversight. This third party is usually [de jure][51], enshrined in law or international agreements.   
 However, this is not very different from person-to-person transactions. A problem of the small scale has been replicated
 on a larger one. 
 
@@ -469,54 +473,54 @@ constructs.
 Debit/credit cards cannot operate without an underlying bank account and payment network. SWIFT cross-border payments 
 cannot operate without the underlying complex web of nostro-vostro accounts.  
 The old systems' inefficiencies are merely papered over with a layer of technology and cash buffers as collateral. These 
-facilities are provided by yet another third party, which becomes trusted. This third party is [de facto][52], imposed 
+facilities are provided by yet another third party (the payment provider), which becomes trusted. This third party is [de facto][52], imposed 
 by market forces.
 
 These issues have been addressed both at once with the introduction of blockchain.  
 Blockchain is effectively an automated, [distributed trust machine][53], allowing multiple unrelated parties to transact.
 This is self-evident in the simplicity of PoW payments, compared to the layers and layers of complexity of the current 
-systems.
-Every possible monetary policy has been modelled and exists now in the crypto-currency space: from fixed supply, to 
-fixed inflation, to deflation to asset-backed and everything in between. This [Cambrian explosion][55] is a stark 
+systems.  
+In addition, every possible monetary policy has been modelled and exists now in the crypto-currency space: from fixed supply, to 
+fixed inflation, to deflation, to asset-backed and everything in between. This [Cambrian explosion][55] is a stark 
 contrast to the current fiat monetary system's [stagnation][56] in the face of uncertainty.  
 
-Until recently, in my eyes, a "regime change" in the global payments and monetary system was very likely. This would 
+Until recently, a "regime change" in the global payments and monetary system was very likely. This would 
 probably involve replacing fiat with a crypto-based system (almost certainly government controlled, almost unlikely 
 decentralized).   
 The current Covid-19 outbreak, along with  
 * the massive [stimulus packages][74], 
-* proposed [helicopter money][77] arrangements which have started, and 
+* [helicopter money][77] arrangements which have started, and 
 * the upcoming [debt][75] and [retirement][76] crises 
 
 are making this inevitable. 
 
 The only remaining question in my head then is *what would be the role of today's banks and payment processors in this 
 new landscape?*  
-Would they continue being the pillars of the system, being used to distribute the newly minted cash? Or would they shrink 
+Would they continue as the pillars of the system, being used to distribute the newly minted cash? Or would they shrink 
 beyond recognition? Even without the current debt crisis <sup>[15](#footnote_15)</sup> the current trend was for banking 
 to be "democratized".  
 Banking services have been dispersing across the economy with [100s of companies][132] becoming banks in all but name. 
 
 In a fully crypto world, what would even be the role of banks?  
 Would they be only providing KYC and simply be custodians of wallet holder personal information?  
-Could they become one of the [m-of-n custodians][57] in a [multisig][58] government crypto-currency wallet?   
+Could they become one of the [m-of-n custodians][57] in a [multisig][58] government crypto-currency wallet, essentially 
+only holdινγ some private keys in their vaults??   
 Would they be the trusted [node operators][59] and [notaries][60] in a Corda-like network?  
-Would they only offer [custodian services][61], essentially only hold some private keys in their vaults?   
 How can they justify their importance as lenders when current [DeFi][82] systems are operating through great volatility 
 and with a tiny fraction of operating costs?
 
-The same questions and more apply to payment processors.  
+The same questions (and more!) apply to payment processors.  
 
 The next state of the payments world is inevitably going to be based on the blockchain.  
-This can be the fiat equivalent of government crypto-currencies or asset-backed "tokens" (e.g. moving to back to the 
+This can be the crypto equivalent of government fiat currencies or asset-backed "tokens" (e.g. moving to back to the 
 [gold standard][133] or to a new [Bitcoin standard][134]). In any case it seems almost certain that the current 
 [shrinking trajectory][81] of retail banks will only accelerate. Banks and financial institutions in general will likely 
-end up as a tiny fraction of their current size and importance. In a fully crypto world maintaining alternative channels 
-<sup>[16](#footnote_16)</sup> and being [systemically important][62] is beyond pointless.  
+end up as a tiny fraction of their current size and importance. In a blockchain world of digital identities maintaining 
+alternative channels <sup>[16](#footnote_16)</sup> and being [systemically important][62] is beyond pointless.  
 
 The upcoming evolution of the global payment networks will probably be an [extinction event][63] for the majority of 
 the current financial system.  
-What will remain after, will be [hardly reminiscent][64] of what was there before.
+What will remain after will be [hardly reminiscent][64] of what was there before.
 
 
 ## Footnotes
@@ -540,7 +544,7 @@ And according to the stated [reserve policy][106], purchase of Libra would be vi
 10. <a name="footnote_10"></a>Yes, illegal activity is also a concern, but it is the central bank's balance sheet that 
 counts. Imagine the Argentinas and Greeces of the world if their citizens could take their assets' worth into gold to a 
 more stable place.  
-11. <a name="footnote_11"></a>Say your unit of labour gives you £10. You are taxed at source with £3. Then you buy a 
+11. <a name="footnote_11"></a>Say your unit of labour gives you £10. You are taxed at source with, say, £3. Then you buy a 
 T-shirt and pay VAT. Then you put the remainder towards a house and pay stamp duty, etc. Even though you worked once, 
 your work's result (i.e. your salary) will be taxed multiple times, every time that a fraction of it changes hands.
 12. <a name="footnote_12"></a>Why wait for the end of the quarter or the fiscal year to see if tax reduction has boosted 
@@ -555,7 +559,6 @@ gold coins and Netflix shares become ridiculously unaffordable.
 the world of [smart contracts][54] it is almost trivial to implement.
 15. <a name="footnote_15"></a>Or maybe because of it. 
 16. <a name="footnote_16"></a>Branches, ATMs, mobile banking, telephony, cheque processing,...
-17. <a name="footnote_17"></a>
 
 
   [1]: https://sgerogia.github.io/Payments-Intro-Part1/
@@ -572,7 +575,7 @@ the world of [smart contracts][54] it is almost trivial to implement.
   [12]: https://www.paymentscardsandmobile.com/mobile-money-transactions-half-of-kenyas-gdp/
   [13]: https://www.theguardian.com/money/2016/sep/10/contactless-cards-wave-pay-oyster-london-use
   [14]: https://www.handbook.fca.org.uk/handbook/CASS/7/13.html
-  [15]: https://drive.google.com/open?id=1fp3MZ5GL1OQm55aapuEsK73jCzvBRnl9
+  [15]: https://parliamentwatch.ug/wp-content/uploads/2019/11/National-Payment-Systems-Bill-2019.pdf
   [16]: https://www.businessinsider.com/the-thin-edge-of-the-wedge-strategy-2011-1?r=US&IR=T
   [17]: https://www.ft.com/content/0788d906-1a7b-11ea-97df-cc63de1d73f4
   [18]: https://en.wikipedia.org/wiki/Network_effect
@@ -696,3 +699,6 @@ the world of [smart contracts][54] it is almost trivial to implement.
   [136]: https://www.cnet.com/news/ebay-picks-up-paypal-for-1-5-billion/
   [137]: https://medium.com/@harish_6956/top-competitors-of-paypal-799c0703767
   [138]: https://www.bbc.co.uk/news/business-42905465
+  [139]: https://www.investopedia.com/terms/a/arbitrage.asp
+  [140]: https://en.wikipedia.org/wiki/Trickle-down_economics
+  [141]: https://en.wikipedia.org/wiki/Quantitative_easing
