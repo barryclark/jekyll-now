@@ -8,19 +8,20 @@ title:  Compiling OpenCV 4.2+ with Java Support
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
 
-The following 'how-to' explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The latest Java version, 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8. The approach should be pretty similar for producing Windows builds.
+The following 'how-to' explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3.xx!). The approach should be pretty similar for producing Windows builds, just make sure to adapt the various paths (JDK, compilers, etc.) accordingly.
 
 Building OpenCV and the Java binding process is straight forward but time consuming. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain (JDK and a recent version Apache Ant). 
 
 ### Install the native C++ toolchain
 
-Unless you are using a stripped down Linux distribution, most of the native tools are probably already available (ex. `ld`, `nm`, `objcopy`, `objdump`, `make`, etc.). On a fresh Ubuntu 18.04, I only had to install `g++` and `cmake`. Optionally and given that there are  over 300 options to build OpenCV, using a configuration frontend such as `ccmake` or `cmake-gui` can be helpful. Note that Python is also required for the build phase.
+Unless you are using a stripped down Linux distribution, most of the native tools are probably already available (ex. `ld`, `nm`, `objcopy`, `objdump`, `make`, etc.). On a fresh Ubuntu, I only had to install `g++` and `cmake`. Optionally and given that there are over 300 options to build OpenCV, using a configuration front-end such as `ccmake` or `cmake-gui` can be helpful. Note that Python is also required for the build phase.
 
 ```
 sudo apt install g++
 sudo apt install cmake
 sudo apt install cmake-curses-gui
 ``` 
+On macOS, you will need to have XCode installed.
 
 ### Install the Java toolchain
 
