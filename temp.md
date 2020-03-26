@@ -97,7 +97,56 @@ also make sure that `BUILD_SHARED_LIBS` is set to `ON`.
 
 💡 Given that building OpenCV takes time, anywhere between 15 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …, it's a good idea to first do a minimal build to check that eveything is OK.
 
-You can unselect all others `BUILD_opencv_*` entries and selectevely re-enable them later if you need those features. And realistically, you will need additional modules to unleash the power of OpenCV.
+Disabling the entries below will reduce the build from ~50 minutes to ~9 minutes! Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need some additional modules to unleash the power of OpenCV.
+
+ * BUILD_IPP_IW
+
+ * BUILD_ITT
+
+ * BUILD_OPENEXR
+ 
+ * BUILD_PERF_TESTS
+
+ * BUILD_TESTS
+
+ * BUILD_TIFF
+
+ * BUILD_WEBP
+
+ * BUILD_opencv_calib3d
+
+ * BUILD_opencv_dnn
+
+ * BUILD_opencv_features2d
+
+ * BUILD_opencv_flann
+
+ * BUILD_opencv_gapi
+
+ * BUILD_opencv_highgui
+
+ * BUILD_opencv_ml
+
+ * BUILD_opencv_objdetect
+
+ * BUILD_opencv_photo
+
+ * BUILD_opencv_python_bindings_generator
+
+ * BUILD_opencv_python_tests
+
+ * BUILD_opencv_stitching
+
+ * BUILD_opencv_ts
+
+ * BUILD_opencv_video
+
+ * BUILD_opencv_videoio
+
+ * VIDEOIO_ENABLE_PLUGINS
+
+ * VIDEOIO_ENABLE_STRICT_PLUGIN_CHECK
+
 
 ---
 
