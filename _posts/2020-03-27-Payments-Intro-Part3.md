@@ -416,104 +416,99 @@ It is common knowledge that the current system is well overdue for a reset due t
 than 12 years it has gone from a [banking crisis][120] to an unfolding [debt crisis][121]. 
 The current [Covid-19 pandemic][78] is merely the needle to pop the balloon. 
 
-The government and central banks' answer to the previous crisis was more control.   
+The government and central banks' answer to the previous crisis was more control.  
 [MMT approaches][122] have well entered the [Overton window][50] of economical orthodoxy and will be deployed in the 
 next few years. The current virulent outbreak and consequent recession / depression will only hasten their arrival.  
 Government crypto-currencies are the perfect tool to deploy such policies.
 
 ### Proof-of-work money 
 
-The last in the series is also the simplest one
-proof-of-work cryptocurrencies 
+The last payment mechanism in the series is also the simplest one: [proof-of-work][123] (PoW) money.  
 
 ![Crypto payments](../images/payments/payments-crypto.png)
 
-Sing the transaction and send 
-system agrees on correct blockchain 
-immutably recorded on ledger 
+The Sender signs a payment with her private key and sends it off to the public network.  
+The [miners][125] reach a [consensus][124] on the validity of the transaction and it is immutably recorded on the shared 
+ledger. Value has been transferred to the Receiver.
 
-There are on-ramps in the form of exchanges (e.g. Coinfloor, Shapeshift)
-but these are only utility mechanisms 
-to onboard from existing fiat world 
+There are on- and off-ramps in the form of [exchanges][126], but these are purely utility mechanisms.  
+They facilitate onboarding from the existing fiat world, but are not critical the same way an on-ramp gateway is. Unlike 
+Libra/stablecoins/etc, PoW money is not created at the gateway. It exists in and of itself, created as reward for 
+[capital and operational expenditure][127] to mine it. This value is "locked" inside the system, behind the ["hashing wall"][128]. 
 
-otherwise proof of work are created inside the system 
-as reward for [capital and operational expenditure][15] 
-to [mine][16] them
+The best approximation is that of physical precious metals mining.  
+All the gold that was easy to mine has been found and [exists above ground][131]. It now becomes [increasingly expensive][129] 
+to dig out more. Unless a gold meteorite [lands on Earth][130], that spent capital remains "locked" inside each ounce, 
+making it irreplaceable and valuable.
 
-this value is locked inside the system behind the hashing wall 
+From that aspect, the major PoW cryptocurrencies are the best digital equivalent of money, as I described it in [part 1][1].  
+Their increasing hashrate and fixed supply / scarcity make them true assets, without an underlying claim or trusted 
+third party.  
 
-
-From that aspect, the major [proof of work][13] [cryptocurrencies][14] can also be considered a digital approximation 
-of money. This is due to the ever-increasing  required to .
-
-Bearer asset  
-equivalent to hand in hand transaction
-
+They are the purest digital equivalent of in-person transactions, but on a global scale.
 
 ## Some racing thoughts 
 
 ![Run, Forrest! Run!](../images/payments/san-fermin-pamplona-navarra-LJrszMj1RJc-unsplash.jpg)
 > Photo by San Fermin Pamplona - Navarra on Unsplash
 
-In these articles ([part 1][1], [[part 2][2]) we saw how the transfer of value 
-has evolved over millenia 
-from a simple hand-in-hand transaction in the olden days to national payment networks, mobile money
-and complex global banking systems and value routes
+In these 3 articles ([part 1][1], [[part 2][2]) we saw how the transfer of value has evolved over millenia.   
+From a simple hand-in-hand transaction in the olden days, to national payment networks, mobile money, complex global 
+banking systems and "value routes".
 
-As we were describing these systems there were a couple of emerging common patterns which emerged
+As we were going through these systems, you may have noticed a couple of common patterns emerging.
 
-The existing payment systems' fundamental shortcoming is that of trust
-Just as in person-to-person transactions, in the insitutional payment space trust can only be effectively established on
-a bilateral basis 
-sometimes with a "neutral" trusted third party for additional guarantees   
-This trusted third party is usually [de jure][51], an institution enshrined in law or international agreements
- 
-is that additional networks and payment rails 
-are layered on top of existing systems 
-debit/credit cards cannot operate without an underlying bank account and payment network
-SWIFT cross-border payments cannot operate without the underlying complex web of nostro-vostro accounts
-The old systems' inefficiencies are merely papered over with a layer of technology 
-and usually another trusted third party, this time an unofficial and [de facto][52] one
+**Trust**  
+The existing payment systems' fundamental shortcoming is that of trust.  
+In the digital payment space, trust can only be effectively established on a bilateral basis. This is how 
+nostro/vostro accounts came about. If that is not enough, then a "neutral", trusted third party is needed for additional 
+guarantees and oversight. This trusted third party is usually [de jure][51], enshrined in law or international agreements.   
+However, this is not very different from person-to-person transactions. A problem of the small scale has been replicated
+on a larger one. 
 
-Adding layers of efficiency on top of an inefficient core
-Once core becomes more efficient race to the top in terms of innovation and race to the bottom in terms of 
-price for consumer and margins for company
-This is reflected in [Visa's rise to the top][80] and its valuation 
-the global footprint and apparent uniformity of underlying plumbing 
-network effect 
+**Layering**   
+The second pattern is that of additional layers. Newer networks and payment rails are layered on top of existing 
+constructs.    
+Debit/credit cards cannot operate without an underlying bank account and payment network. SWIFT cross-border payments 
+cannot operate without the underlying complex web of nostro-vostro accounts.  
+The old systems' inefficiencies are merely papered over with a layer of technology and cash buffers as collateral. These 
+facilities are provided by yet another third party, which becomes trusted. This third party is [de facto][52], imposed 
+by market forces.
 
-These patterns have been addressed both at once with the introduction of blockchain
-Blockchain is effectively an automated [distributed trust machine][53]  
-and allows multiple unrelated parties to transact 
+These issues have been addressed both at once with the introduction of blockchain.  
+Blockchain is effectively an automated, [distributed trust machine][53], allowing multiple unrelated parties to transact.
+This is self-evident in the simplicity of PoW payments, compared to the layers and layers of complexity of the current 
+systems.
+Every possible monetary policy has been modelled and exists now in the crypto-currency space: from fixed supply, to 
+fixed inflation, to deflation to asset-backed and everything in between. This [Cambrian explosion][55] is a stark 
+contrast to the current fiat monetary system's [stagnation][56] in the face of uncertainty.  
 
-This is self-evident in the simplicity of proof-of-work payments 
-compared to the layers and layers of complexity of the current systems
+Until recently, in my eyes, a "regime change" in the global payments and monetary system was very likely. This would 
+probably involve replacing fiat with a crypto-based system (almost certainly government controlled, almost unlikely 
+decentralized).   
+The current Covid-19 outbreak, along with  
+* the massive [stimulus packages][74], 
+* proposed [helicopter money][77] arrangements which have started, and 
+* the upcoming [debt][75] and [retirement][76] crises 
 
-Every possible monetary policy has been modelled and exists now in the wild 
-from fixed supply, to fixed inflation, to deflation to asset-backed and everything in between
-This [Cambrian explosion][55] is a stark contrast to the current fiat monetary system's [stagnation][56]  
+are making this inevitable. 
 
-So in my eyes a "regime change" in the global payments and monetary system was very likely, replacing fiat with a 
-crypto-based system (central and/or decentralized) 
-The current Covid-19 outbreak, the massive [helicopter money][74] and proposed [pre-paid debit card][77] packages which 
-have started and the upcoming [debt][75] 
-and [retirement][76] crises are making this inevitable 
+The only remaining question in my head then is *what would be the role of today's banks and payment processors in this 
+new landscape?*  
+Would they continue being the pillars of the system, being used to distribute the newly minted cash? Or would they shrink 
+beyond recognition? Even without the current debt crisis <sup>[15](#footnote_15)</sup> the current trend was for banking 
+to be "democratized".  
+Banking services have been dispersing across the economy with [100s of companies][132] becoming banks in all but name. 
 
-The only remaining question in my head then is "what would be the role of today's banks and payment processors in this new landscape"?
-Would they continue being the pillars of the system? 
-Or would they shrink beyond recognition?
-Even without the current debt crisis <sup>[15](#footnote_15)</sup> the current trend was for banking to be democratized, 
-to be dispersed across the economy with thousands of companies becoming banks in all but name
-
-In a crypto world, what would even be the role of banks?
-Would they be only providing KYC and simply be custodians of wallet holder personal information?
-Would they be one of the [m-of-n custodians][57] in a [multisig][58] government crypto-currency wallet? 
-Would they be the trusted [node operators][59] and [notaries][60] in a Corda-like network?
-Would they only offer [custodian services][61], essentially only hold some private keys in their vaults? 
+In a fully crypto world, what would even be the role of banks?  
+Would they be only providing KYC and simply be custodians of wallet holder personal information?  
+Could they become one of the [m-of-n custodians][57] in a [multisig][58] government crypto-currency wallet?   
+Would they be the trusted [node operators][59] and [notaries][60] in a Corda-like network?  
+Would they only offer [custodian services][61], essentially only hold some private keys in their vaults?   
 How can they justify their importance as lenders when current [DeFi][82] systems are operating through great volatility 
 and with a tiny fraction of operating costs?
 
-What about payment processors 
+Same questions and more apply to payment processors.  
 
 Whatever the end state of the world 
 seems almost certain that the current [shrinking trajectory][81] of retail banks will only accelerate 
@@ -562,6 +557,7 @@ gold coins and Netflix shares become ridiculously unaffordable.
 the world of [smart contracts][54] it is almost trivial to implement.
 15. <a name="footnote_15"></a>Or maybe because of it. 
 16. <a name="footnote_16"></a>Branches, ATMs, mobile banking, telephony, cheque processing,...
+17. <a name="footnote_17"></a>
 
 
   [1]: https://sgerogia.github.io/Payments-Intro-Part1/
@@ -640,7 +636,7 @@ the world of [smart contracts][54] it is almost trivial to implement.
   [74]: https://www.theguardian.com/uk-news/2020/mar/20/government-pay-wages-jobs-coronavirus-rishi-sunak
   [75]: https://www.theguardian.com/business/2020/jan/08/world-bank-global-debt-crisis-borrowing-build-up
   [76]: https://www.forbes.com/sites/greatspeculations/2019/03/20/the-retirement-crisis-is-much-worse-than-you-think/#5dc61f223949
-  [77]: https://tlaib.house.gov/sites/tlaib.house.gov/files/Automatic%20Boost%20to%20Communities%20Act%20.pdf
+  [77]: https://fortune.com/2020/03/25/coronavirus-stimulus-bill-how-will-us-pay-trillion-dollar-coin/
   [78]: https://en.wikipedia.org/wiki/Coronavirus_disease_2019
   [79]: https://en.wikipedia.org/wiki/PayPal#Early_history
   [80]: https://www.economist.com/business/2020/03/19/how-visa-became-the-top-dog-in-global-finance
@@ -686,3 +682,13 @@ the world of [smart contracts][54] it is almost trivial to implement.
   [120]: https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%9308
   [121]: https://www.ft.com/content/27cf0690-5c9d-11ea-b0ab-339c2307bcd4
   [122]: https://en.wikipedia.org/wiki/Modern_Monetary_Theory
+  [123]: https://cointelegraph.com/explained/proof-of-work-explained
+  [124]: https://cryptoresearch.report/crypto-research/consensus-mechanisms/
+  [125]: https://www.investopedia.com/tech/how-does-bitcoin-mining-work/
+  [126]: https://www.investopedia.com/tech/190-cryptocurrency-exchanges-so-how-choose/
+  [127]: https://www.buybitcoinworldwide.com/mining/#how-to-mine
+  [128]: https://www.investopedia.com/terms/h/hash.asp
+  [129]: https://marketrealist.com/2018/11/what-did-it-cost-gold-miners-to-dig-out-an-ounce-of-gold/
+  [130]: https://en.wikipedia.org/wiki/The_Chase_of_the_Golden_Meteor
+  [131]: https://www.gold.org/about-gold/gold-supply/gold-mining/how-much-gold
+  [132]: https://www.pwc.com/gx/en/financial-services/assets/pdf/technology2020-and-beyond.pdf
