@@ -12,7 +12,7 @@ excerpt: The following 'how-to' explains how to build the latest version of Open
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
 
-The following _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3). So I am using the latest and greatest OpenCV and Java versions but this should work using different versions. Producing builds on Windows is just a matter of properly installing and configuring the native toolchain, and configure the respective Java paths.
+This _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3). So I am using the latest and greatest OpenCV and Java versions but this should work using different versions. Producing builds on Windows is just a matter of properly installing and configuring the native toolchain, and configure the respective Java paths.
 
 Building OpenCV and the Java binding process is straight forward but takes time. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain, i.e. a JDK and a recent version of Apache Ant. 
 
@@ -95,13 +95,11 @@ Most of settings should be fine by default. The following entries should be conf
 
 ↪ macOS `/Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home/lib/server/libjvm.dylib`
 
-also make sure that `BUILD_SHARED_LIBS` is set to `ON`. 
-
 ---
 
 💡 Building OpenCV takes time, anywhere between 5 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
 
-Disabling the entries below will reduce the build time from ~50 minutes to ~9 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules to unleash the power of OpenCV.
+Disabling the entries below will reduce the build time from ~50 minutes to ~6 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules to unleash the power of OpenCV.
 
  * BUILD_IPP_IW
 
