@@ -126,7 +126,7 @@ The following [Test](https://gist.github.com/delabassee/1ba380e1f32d20f2c518b1e6
 
 ```
 javac -cp build/bin/opencv-430.jar Test.java
-java -Djava.library.path=build/lib/ -cp build/bin/opencv-430.jar Test
+java -Djava.library.path=build/lib/ -cp build/bin/opencv-430.jar:. Test
 ```
  
 ```java
