@@ -4,9 +4,7 @@ title:  Building OpenCV 4 with Java Support
 excerpt: The following 'how-to' explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS…
 ---
 
-[OpenCV](https://opencv.org) is a powerfull Computer Vision open source library written mainly in C++. Today, the most common way to use OpenCV from Java is to use its Java bindings. Technically, those bindings rely on the traditional JNI approach. 
-
-[Project Panama](https://openjdk.java.net/projects/panama/)'s goal is to improve and enrich the connections between the JVM and well-defined “foreign”, i.e. non-Java APIs. Panama is under active development, its current focus is on C but C++ support should be added later. It will then be worthwhile to revisit this and to switch to use Panama's approach instead of the old JNI approach.
+[OpenCV](https://opencv.org) is a powerfull Computer Vision open source library written mainly in C++. Today, the most common way to use OpenCV from Java is to use its Java bindings. Technically, those Java bindings rely on the traditional JNI approach.
 
 <p align="center">
 <img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpg" width="85%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
@@ -14,7 +12,13 @@ excerpt: The following 'how-to' explains how to build the latest version of Open
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
 
-This _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with its Java bindings on Linux and macOS. The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3). So I am using the latest and greatest OpenCV and Java versions but this should work using different versions. Producing builds on Windows is just a matter of properly installing and configuring the native toolchain, and configure the respective Java paths.
+This _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with its Java JNI bindings on Linux and macOS. The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3). The latest and greatest OpenCV and Java versions are used but this obviously work using different versions. Producing builds on Windows is just a matter of properly installing and configuring the native toolchain, and configure the respective Java paths.
+
+---
+
+[Panama](https://openjdk.java.net/projects/panama/) is an OpenJDK project whose goal is to improve and enrich the connections between the JVM and well-defined “foreign”, i.e. non-Java APIs. Panama is under active development, its current focus is on C but C++ support should be added later. It will then be worthwhile to revisit this and to switch to use Panama's approach instead of the old JNI approach.
+
+---
 
 Building OpenCV and the Java binding process is straight forward but takes time. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain, i.e. a JDK and a recent version of Apache Ant. 
 
