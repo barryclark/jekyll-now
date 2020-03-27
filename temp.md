@@ -201,7 +201,7 @@ public class Test {
 
         var srcImage = Imgcodecs.imread("duke.png");
         Imgproc.cvtColor(srcImage, srcImage, Imgproc.COLOR_BGR2GRAY);
-        Imgcodecs.imwrite("grey_duke.png", srcImage);
+        Imgcodecs.imwrite("duke.png", srcImage);
 
         var width = srcImage.cols();
         var height = srcImage.rows();
