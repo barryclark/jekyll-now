@@ -105,7 +105,7 @@ Most of settings should be fine by default. The following entries should be conf
 
 💡 Building OpenCV takes time, anywhere between 5 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
 
-Disabling the entries below will reduce the build time from ~50 minutes to ~6 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules to unleash the power of OpenCV.
+To reduce the build time, disable to the following entries:
 
  * BUILD_IPP_IW
 
@@ -154,6 +154,10 @@ Disabling the entries below will reduce the build time from ~50 minutes to ~6 mi
  * VIDEOIO_ENABLE_PLUGINS
 
  * VIDEOIO_ENABLE_STRICT_PLUGIN_CHECK
+ 
+Our sample uses PNG support so make sure to keep `WITH_PNG` enabled and unselect all others `WIDTH_*` entries. 
+
+Disabling those features will reduce the build time from ~50 minutes to ~5 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules and features to unleash the power of OpenCV!
 
 ---
 
@@ -164,6 +168,10 @@ The following OpenCV modules are the bare minimum to use OpenCV from Java.
 * `BUILD_opencv_imgcodecs`
 
 * `BUILD_opencv_imgproc`
+
+* `BUILD_JAVA`
+
+* `BUILD_opencv_java`
 
 * `BUILD_opencv_java_bindings_gen`
 
