@@ -105,7 +105,7 @@ Most of settings should be fine by default. The following entries should be conf
 
 💡 Building OpenCV takes time, anywhere between 5 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
 
-To reduce the build time, disable to the following entries:
+To reduce the build time, disable the following entries:
 
  * `BUILD_IPP_IW`
 
