@@ -9,7 +9,7 @@ excerpt: The following 'how-to' explains how to build the latest version of Open
 [Project Panama](https://openjdk.java.net/projects/panama/)'s goal is to improve and enrich the connections between the JVM and well-defined “foreign”, i.e. non-Java APIs. Panama is under active development, its current focus is on C but C++ support should be added later. It will then be worthwhile to revisit this and to switch to use Panama's approach instead of the old JNI approach.
 
 <p align="center">
-<img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpg" width="85%"/>
+<img alt="Photo by Kalea Jerielle" src="https://delabassee.com/images/blog/eye.jpg" width="85%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
 </p>
 
 OpenCV offers 'official' distributions for [Windows, iOS and Android](https://opencv.org/releases/) but none for Linux and macOS. In addition, it's not even clear if the Windows distribution includes the Java bindings.
