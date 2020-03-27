@@ -1,80 +1,64 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
-name: Stelios Gerogiannakis
-
-# Short bio or description (displayed in the header)
-description: Indoors enthusiast, Unicorn jockey, Eternal student
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars1.githubusercontent.com/u/1963182?v=3&amp;u=442fb0fc1e4ec19c8fa95a32c75e2a2bcfb5d84b&amp;s=140
-
-# File encoding
-encoding: utf-8
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: sgerogia@gmail.com
-  facebook:
-  flickr:
-  github: sgerogia
-  instagram:
-  linkedin: sgerogia
-  pinterest:
-  rss: rss # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter:
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus: sgerogia
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-64259307-1
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: http://sgerogia.github.io
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-markdown: kramdown
-highlighter: rouge
+# Site
+name: "Stelios Gerogiannakis"
+title: "Stelios' Blog"
+description: "Indoors enthusiast, Unicorn jockey, Eternal student"
+logo: 'assets/icon/favicon-96x96.png'
+favicon: 'assets/icon/favicon-96x96.png'
+baseurl:
+google_analytics: ' UA-64259307-1'
+disqus: 'sgerogia'
+mailchimp-list: # 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
 permalink: /:title/
 
-# The release of Jekyll Now that you're using
-version: v1.1.0
+# Authors
+authors:
+  stelios:
+    name: Stelios Gerogiannakis
+    display_name: Stelios
+    avatar: 'assets/images/stelios.jpg'
+    # gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: sgerogia@gmail.com
+    web: https://sgerogia.github.io
+    twitter: # https://twitter.com/wowthemesnet
+    description: "Life-long learner, happy father, trying to do some software engineering on the side."
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
-# Exclude these files from your production _site
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - CNAME
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, CNAME, sgerogia.github.io.iml]

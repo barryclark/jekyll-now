@@ -1,8 +1,12 @@
 ---
 layout: post
-title: Disk Capacity planning (A short story) 
-excerpt_separator: <!--more-->
-tags: [capacity planning]
+title:  "Disk Capacity planning (A short story)"
+author: stelios
+tags: [software, capacity planning]
+categories: [System design, Architecture]
+featured: 
+description: "This blog post gives a short story on the importance of capacity planning."
+image: assets/images/capacity-planning/joanna-kosinska-4qujjbj3srs-unsplash.jpg
 ---
 
 One very important (but more-often-than-not forgotten) aspect of building and deploying any new system is [capacity planning][1].
@@ -19,11 +23,10 @@ A few hours spent a priori doing a paper or Excel exercise can save orders of ma
 A good way to consider capacity planning is like a baby growth chart.
 If you have not seen one, it looks something like this
 
-![Baby growth chart]({{ site.baseurl }}/images/capacity-planning/growth-chart.png)
+![Baby growth chart](../assets/images/capacity-planning/growth-chart.png)
 
 In other words, based on some "realistic guesstimations" (see what I did there?) you are projecting a low- and high-watermark 
 for the future. 
-<!--more-->
 
 This exercise will allow you to do 2 things:
 
@@ -45,7 +48,7 @@ Oh, yes! and keep old 3' and 15' measurements somewhere in order to re-visit the
 
 A nice repetition of keywords in the requirements: small, small, simple.
 Yeap, that's what I thought
-![Simples]({{ site.baseurl }}/images/capacity-planning/simples.jpg)
+![Simples](../assets/images/capacity-planning/simples.jpg)
 
 So let's see some basic figures
 
@@ -69,7 +72,7 @@ Excel is our friend here.
 3 years on, the system would have to be accepting, processing in a couple of hours and storing perpetually **17 million new rows per day** and **864 Mb** of new data.
 The database would need to store over **2 billion** additional rows per year with an additional disk footprint of **300 Gb** 
 
-![WHAT?]({{ site.baseurl }}/images/capacity-planning/what.jpg)
+![WHAT?](../assets/images/capacity-planning/what.jpg)
 
 Remember, this is 2007. 
 BigData is an unknown term, Hadoop has only just span out of Nutch (so not even alpha), storage and hosting is *friggin' expensive* (Amazon web services were at their infancy still).

@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Importing multiple tables using Sqoop 
-excerpt_separator: <!--more-->
-tags: [sqoop, hadoop, utilities]
+title: "Importing multiple tables using Sqoop"
+author: stelios
+tags: [software, hadoop, sqoop, utilities]
+categories: [Big Data]
+featured: 
+description: "A simple utility bash script for one-time database table imports using Apache Sqoop."
+image: assets/images/import-tables-sqoop/low-angle-photography-of-orange-excavator-under-white-clouds-1078884.jpg
 ---
-
-We are using Sqoop as a first step in a complex ETL process. 
 
 [Sqoop][1] is a great command-line tool and does what it says on the tin.
 However when it comes to importing a large number of different tables, the different options and combinations can become a hindrance.  
 
 You have the option of configuring and executing your job through [Apache Oozie][2].
 
-However, you may hit a point where you 
-
+However, you may hit a point where you  
 * either do not want to introduce yet-another-system in your toolset, or
 * you really need to go down into the fine-grained details of Sqoop options for that weird legacy table.
 
 Through trial-and-error I have concluded to a relatively simple Bash script, which goes through a list of CSV list of tables.
-<!--more-->
 
 ## How it works
 
