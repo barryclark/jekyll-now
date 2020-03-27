@@ -183,12 +183,7 @@ Once you are your have configured the entries, just press "G" to generate the Ma
 
 To use OpenCV from Java, you need the `build/bin/opencv-430.jar` jar and the native libraries located in `build/lib`.
  
-This basic [Test](https://gist.github.com/delabassee/1ba380e1f32d20f2c518b1e6c6b080eb) class converts a picture from the default BGR colorspace to gray. And now, you can re-enable the OpenCV features that you plan to use and produce a new build.
-
-```
-javac -cp build/bin/opencv-430.jar Test.java
-java -Djava.library.path=build/lib/ -cp build/bin/opencv-430.jar:. Test
-```
+This basic [Test](https://gist.github.com/delabassee/1ba380e1f32d20f2c518b1e6c6b080eb) class converts a picture from the default BGR colorspace to gray. 
  
 ```java
 import org.opencv.core.*;
@@ -216,7 +211,15 @@ public class Test {
 }
 ```
 
+Run it…
+
+```
+javac -cp build/bin/opencv-430.jar Test.java
+java -Djava.library.path=build/lib/ -cp build/bin/opencv-430.jar:. Test
+```
+
 <p align="center">
 <img alt="screenshot" src="https://delabassee.com/images/blog/opencv-duke.png" width="80%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
 </p>
 
+And now, you can re-enable the OpenCV features that you plan to use and produce a new build…
