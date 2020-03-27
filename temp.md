@@ -219,7 +219,7 @@ java -Djava.library.path=build/lib/ -cp build/bin/opencv-430.jar:. Test
 ```
 
 <p align="center">
-<img alt="screenshot" src="https://delabassee.com/images/blog/opencv-duke.png" />
+<img alt="screenshot" src="https://delabassee.com/images/blog/opencv-duke.png" width="90%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
 </p>
 
 And now, you can re-enable the OpenCV features that you plan to use, and produce a new build…
