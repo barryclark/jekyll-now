@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Amazon Connect: A work from home call center"
+title: "Amazon Connect: A work from home call centre"
 author: blongden
 ---
 
