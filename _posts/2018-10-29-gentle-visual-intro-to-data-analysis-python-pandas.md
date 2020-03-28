@@ -92,4 +92,4 @@ You can get started playing with Pandas in your browser right now through this b
 Want to learn more? Be sure to check out the <a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">10 Minutes to pandas</a> tutorial in the official Pandas docs. Thanks to <a href="https://twitter.com/datapythonista">Marc Garcia</a> for initiating the thoughts for these visualizations and continuing to improve the pandas documentation.
 
 ## Your feedback is appreciated!
-Did you find this tutorial helpful? Any suggestions for improvement? Please let me know (<a href="https://twitter.com/jalammar">@jalammar</a>) know on Twitter. Thanks!
+Did you find this tutorial helpful? Any suggestions for improvement? Please let me know (<a href="https://twitter.com/JayAlammar">@JayAlammar</a>) know on Twitter. Thanks!

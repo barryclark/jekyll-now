@@ -393,7 +393,7 @@ max( 0,        <span id="relu-formula-input" class="mord mathit"><span class="re
 
 
 ## Closing
-This post has been parked for more than a year. I had attempted to visualize a deeper network after this point, but that never materialized. I hope you enjoyed it. Let me know on [@jalammar on Twitter](https://twitter.com/jalammar) if you have any feedback. 
+This post has been parked for more than a year. I had attempted to visualize a deeper network after this point, but that never materialized. I hope you enjoyed it. Let me know on [@JayAlammar on Twitter](https://twitter.com/JayAlammar) if you have any feedback. 
 
 
 

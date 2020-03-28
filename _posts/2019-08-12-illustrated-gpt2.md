@@ -709,7 +709,7 @@ This concludes our journey into the GPT2, and our exploration of its parent mode
 ## Acknowledgements
 Thanks to [Lukasz Kaiser](https://twitter.com/lukaszkaiser), [Mathias Müller](https://www.cl.uzh.ch/de/people/team/compling/mmueller.html), [Peter J. Liu](https://twitter.com/peterjliu), [Ryan Sepassi](https://twitter.com/rsepassi) and [Mohammad Saleh](https://www.linkedin.com/in/mohammad-saleh-39614224/) for feedback on earlier versions of this post.
 
-Comments or corrections? Please tweet me at [@jalammar](https://twitter.com/jalammar)
+Comments or corrections? Please tweet me at [@JayAlammar](https://twitter.com/JayAlammar)
 
 <!--
 ### Just Add Memory

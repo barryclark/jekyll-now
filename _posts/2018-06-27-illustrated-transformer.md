@@ -492,4 +492,4 @@ Follow-up works:
 ## Acknowledgements
 Thanks to <a href="https://twitter.com/ilblackdragon">Illia Polosukhin</a>, <a href="http://jakob.uszkoreit.net/">Jakob Uszkoreit</a>, <a href="https://www.linkedin.com/in/llion-jones-9ab3064b">Llion Jones </a>, <a href="https://ai.google/research/people/LukaszKaiser">Lukasz Kaiser</a>, <a href="https://twitter.com/nikiparmar09">Niki Parmar</a>, and <a href="https://dblp.org/pers/hd/s/Shazeer:Noam">Noam Shazeer</a> for providing feedback on earlier versions of this post.
 
-Please hit me up on <a href="https://twitter.com/jalammar">Twitter</a> for any corrections or feedback.
+Please hit me up on <a href="https://twitter.com/JayAlammar">Twitter</a> for any corrections or feedback.

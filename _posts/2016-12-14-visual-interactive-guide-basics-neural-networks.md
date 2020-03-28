@@ -607,7 +607,7 @@ Great learning resources include:
 ## Acknowledgements
 Thanks to [Yasmine Alfouzan](https://www.linkedin.com/in/yasmine-alfouzan-b05ba317), [Ammar Alammar](https://twitter.com/a3ammar), [Khalid Alnuaim](https://www.linkedin.com/in/khalidalnuaim), [Fahad Alhazmi](https://twitter.com/fahd09), [Mazen Melibari](https://www.linkedin.com/in/mkhdev), and [Hadeel Al-Negheimish](https://www.linkedin.com/in/hadeel-al-negheimish-4a73abb3) for their assistance in reviewing previous versions of this post.
 
-Please contact me on [Twitter](https://twitter.com/jalammar) with any corrections or feedback.
+Please contact me on [Twitter](https://twitter.com/JayAlammar) with any corrections or feedback.
 
 <script type="text/javascript" src="/js/nnVizUtils.js"></script>
 <!-- Visualizations 1 Weight & bias, and 2 Gradient Descent -->

@@ -213,4 +213,4 @@ Check out the trailer of the [NLP Nanodegree Program](https://www.udacity.com/co
 
 I've also created a few lessons as a part of Udacity's [Machine Learning Nanodegree Program](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t). The lessons I've created cover Unsupervised Learning, as well as a jupyter notebook on movie recommendations using collaborative filtering.
 
-I'd love any feedback you may have. Please reach me at [@jalammmar](https://twitter.com/jalammar).
+I'd love any feedback you may have. Please reach me at [@JayAlammmar](https://twitter.com/JayAlammar).

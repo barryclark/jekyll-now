@@ -726,7 +726,7 @@ The number of negative samples is another factor of the training process. The or
 “If it falls outside your yardsticks, then you are engaged with intelligence, not with automation”  ~God Emperor of Dune
 </blockquote>
 
-I hope that you now have a sense for word embeddings and the word2vec algorithm. I also hope that now when you read a paper mentioning "skip gram with negative sampling" (SGNS) (like the recommendation system papers at the top), that you have a better sense for these concepts. As always, all feedback is appreciated <a href="https://twitter.com/jalammar">@jalammar</a>.
+I hope that you now have a sense for word embeddings and the word2vec algorithm. I also hope that now when you read a paper mentioning "skip gram with negative sampling" (SGNS) (like the recommendation system papers at the top), that you have a better sense for these concepts. As always, all feedback is appreciated <a href="https://twitter.com/JayAlammar">@JayAlammar</a>.
 
 # References & Further Readings
 * [Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) [pdf]
