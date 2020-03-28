@@ -1,14 +1,18 @@
 ---
 layout: post
-title: Hiring a Great Technical Team (Part 3/3)
-excerpt_separator: <!--more-->
+title: "Hiring a Great Technical Team (Part 3/3)"
+author: stelios
 tags: [hiring, team creation, job description, candidate search]
+categories: [Engineering, Leadership, Hiring]
+featured: 
+description: "People are THE most important element in any company. This series of articles discusses some approaches and techniques in finding great people."
+image: assets/images/hiring-team/christina-wocintechchat-com-vzfgh3RAPzM-unsplash.jpg
 ---
 
-## Keeping track of candidates
-
-So you have built a nice hiring pipeline: the job description is on point, recruiters are out there bringing in relevant, filtered CVs, you have the questions and 
+You have built a nice hiring pipeline: the job description is on point, recruiters are out there bringing in relevant, filtered CVs, you have the questions and 
 checks to get a good assessment of incoming candidates. 
+
+## Keeping track of candidates
 
 So you are there, right?
 
@@ -36,7 +40,6 @@ Or at times, without even that, just hands in the pockets, and trying to figure 
 
 No!
 Prepare, prepare, prepare!
-<!--more-->
 
 Being confident in your interviewing and "interrogation" skills is one thing; for sure you will have plenty of time to 
 judge the candidate's character.   

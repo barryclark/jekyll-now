@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Hiring a Great Technical Team (Part 1/3)
-excerpt_separator: <!--more-->
+title: "Hiring a Great Technical Team (Part 1/3)"
+author: stelios
 tags: [hiring, team creation, job description, candidate search]
+categories: [Engineering, Leadership, Hiring]
+featured: 
+description: "People are THE most important element in any company. This series of articles discusses some approaches and techniques in finding great people."
+image: assets/images/hiring-team/husna-miskandar-FC4z3l4sUYc-unsplash.jpg
 ---
-
-## Prologue 
 
 You know the 3 most important factors for success in any company, right? 
 
@@ -25,7 +27,6 @@ The stress here is on **good**.
 And unfortunately the difference between bad, average and good is [exponential][3].
 So, finding the right people can **not** be treated as a side-job.
 It is the most important function and you, as team/tech lead, should treat it as so.
-<!--more-->
 
 You may be lucky enough to be already working in a [leading tech company][4]. 
 In this case you are very fortunate, as after [years of excellence][6], hiring the "creme de la creme", 

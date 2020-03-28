@@ -2,10 +2,10 @@
 layout: post
 title: "Using Vagrant for Enterprise Provisioning (A practical example)"
 author: stelios
-tags: [software, vagrant, visrtualbox, tutorials]
+tags: [software, vagrant, virtualbox, tutorials]
 categories: [DevOps]
 featured: 
-description: ""
+description: "Vagrant is a great abstraction layer over your stack. This post suggests an approach on structuring your Vagrantfiles for an organisation with multiple teams."
 image: assets/images/vagrant-enterprise/allie-smith-8hQUCIoXf8o-unsplash.jpg
 ---
 
