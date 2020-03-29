@@ -23,8 +23,9 @@ Aiken H
 ---
 
 Working on Deep Learning | CV <br>
-理想遥远，现实寒酸，以勤为径，与君共勉
+理想遥远，现实寒酸，以勤为径，与君共勉 <br>
 
+日常爱好：单机游戏、音乐  
 
 ### Contact me
 
