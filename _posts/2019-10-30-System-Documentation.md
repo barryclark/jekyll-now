@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Documenting systems - Some thoughts
-excerpt_separator: <!--more-->
+title: "Documenting systems - Some thoughts"
+author: stelios
 tags: [system design, documentation, c4 model]
+categories: [System Design, Architecture]
+featured: 
+description: "Almost every business is a software business. Documenting technology and systems becomes very important. This post provides some ideas and tool suggestions."
+image: assets/images/system-documentation/martin-adams-a_PDPUPuNZ8-unsplash.jpg
 ---
 
-## Systems, systems, everywhere! 
-
-![Yet another system](../images/system-documentation/martin-adams-a_PDPUPuNZ8-unsplash.jpg)
-> Photo by Martin Adams on Unsplash
-
 Other than the neighborhood bakery and garage, pretty much every modern-day organisation worth its salt is a technology 
-company.
- 
+company. 
 As [software is eating the world][5] at an increasing pace, focus is on delivery and pushing features out the door.  
 That is the only way to stay ahead of the competition. Deliver X% more than your rivals each day/year and through the 
 [compounding interest effect][7] of features and efficiency you will win.
@@ -21,11 +19,9 @@ One aspect which is almost always an after-thought is that of documenting the sy
 
 Here are some ideas of mine on the subject, after a few years in the trenches. 
     
-<!--more-->
-
 ## Why?
 
-![Here we go again!](../images/system-documentation/kaleidico-7lryofJ0H9s-unsplash.jpg)
+![Here we go again!](../assets/images/system-documentation/kaleidico-7lryofJ0H9s-unsplash.jpg)
 > Photo by Kaleidico on Unsplash
 
 The paragon of modern IT organisations is continuous delivery. The product/service needs to evolve non-stop, requiring 
@@ -97,7 +93,7 @@ Given the above, successfully documenting a system needs to capture 2 things:
 
 ### The course so far 
 
-![Map and compass](../images/system-documentation/thomas-thompson-9Ags1vGk07c-unsplash.jpg)
+![Map and compass](../assets/images/system-documentation/thomas-thompson-9Ags1vGk07c-unsplash.jpg)
 > Photo by Thomas Thompson on Unsplash
 
 Addressing the first need is by answering the question "why is X designed like this and not like that?".  
@@ -129,7 +125,7 @@ Therefore being discoverable, consistent and in sequence is important.
 
 ### Telling the story of now
 
-![Stories](../images/system-documentation/clem-onojeghuo-x7CDil50KKY-unsplash.jpg)
+![Stories](../assets/images/system-documentation/clem-onojeghuo-x7CDil50KKY-unsplash.jpg)
 > Photo by Clem Onojeghuo on Unsplash
 
 Describing the current state is a little bit more involved. 
@@ -157,7 +153,7 @@ After many attempts in the past, I have settled on the dissection of a complex s
 * themes and
 * level of detail   
 
-![System dissection](../images/system-documentation/system-detail.png)
+![System dissection](../assets/images/system-documentation/system-detail.png)
 > System breakdown
 
 #### Themes
@@ -397,31 +393,20 @@ However the visual result with only a few lines of mermaid markup is definitely 
 
 ### ...and LucidChart
 
-One of the most complete online offerings
-for almost any type of design is [LucidChart][35] 
+One of the most complete online offerings for almost any type of design is [LucidChart][35]. 
 
-Works in a freemium model 
-and offers a rich feature set 
-from different diagram types 
-to editing and styling capabilities
+LucidChart Works in a freemium model and offers a rich feature set, from different diagram types
+to editing and styling capabilities. 
+It is almost on par with Visio in terms of features. This brings with it the accompanying danger of gold-plating.
 
-almost on par with Visio in terms of features
-with the accompanying danger of gold-plating
+It has 2 killer features:
 
-It has 2 killer features 
+**Collaboration support**  
+Multiple editors can concurrently modify the same diagram, adding comments as they go along.
 
-Collaboration support
-
-multiple editors can concurrently modify 
-the same diagram 
-adding comments as they go along
-
-Sharing 
-
-Lucidcharts can be shared live 
-on most content publishing platforms 
-either via an add-on (MS Word, Google docs, Confluence)
-or directly as an embedded `iframe` (Markdown)
+**Sharing**   
+Lucidcharts can be shared live on most content publishing platforms.   
+This is either via an add-on (MS Word, Google docs, Confluence) or directly as an embedded `iframe` (Markdown).
 
 For example see an embedded diagram below
 
@@ -432,13 +417,17 @@ For example see an embedded diagram below
     </iframe>
 </div>
 
-These features help a lot 
-to 
+LucidChart's online-first offering gives an interesting combination of features to complement system documentation on
+most content platforms. 
 
 ## Parting thought
 
-![Bridges](../images/system-documentation/volodymyr-hotsyk-rH5XguI87RY-unsplash.jpg)
+![Bridges](../assets/images/system-documentation/volodymyr-hotsyk-rH5XguI87RY-unsplash.jpg)
 > Photo by Volodymyr Hotsyk on Unsplash
+
+With software systems becoming more complicated and software teams more distributed, it is becoming very important to 
+properly document things.  
+Hopefully this post has given you some ideas in that aspect.  
 
 
 *Many thanks to [Georges Haidar][20] for introducing me to the C4 Model*

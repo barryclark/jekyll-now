@@ -1,14 +1,19 @@
 ---
 layout: post
 title: "An intro to payments: Value, liabilities and networks - Part 2"
-excerpt_separator: <!--more-->
-tags: [payments, networks, banking, direct debit, card payments]
+author: stelios
+tags: [payment networks, banking, direct debit, card payments]
+categories: [Payments, Fintec]
+featured: true
+description: ""
+image: assets/images/payments/jk-gJhev0YgUcE-unsplash.jpg
 ---
 
-## Going international 
-
-![On the rails](../images/payments/jk-gJhev0YgUcE-unsplash.jpg)
-> Photo by JK on Unsplash
+Take a look around you.  
+Try to count how many items are **not** imported. Chances are you have not managed to count many.
+ 
+With international trade so prevalent, money crossing borders is crucial to keep our world connected.
+But how does water turn into oil? <sup>[1](#footnote_1)</sup>
 
 *In the [previous installment][1] of this series, I talked about the history behind payment systems and described how 
 domestic payments work.*  
@@ -17,20 +22,12 @@ domestic payments work.*
  * *cross-border payments*
  * *pull payments, and* 
  * *discuss some of their pros and cons.* 
-    
-<!--more-->
-
-Take a look around you.  
-Try to count how many items are **not** imported. Chances are you have not managed to count many.
- 
-With international trade so prevalent, money crossing borders is crucial to keep our world connected.
-But how does water turn into oil? <sup>[1](#footnote_1)</sup>
 
 ### International payments - Nostro/vostro
 
 The oldest form of cross-border payment mechanism is via [correspondent banking][3] (a.k.a. [nostro/vostro][4] accounts).
 
-![International payment - Nostro_vostro](../images/payments/international-payment-nv.png)
+![International payment - Nostro_vostro](../assets/images/payments/international-payment-nv.png)
 
 In this model (line 4) PurpleBank (on the right) has a correspondency relationship with RedBank (on the left). What this 
 means is that RedBank holds a bank account under its name in PurpleBank.
@@ -71,7 +68,7 @@ As with all other financial transactions, using a [clearing house][15] as a guar
 
 Putting the above back in our diagram, we have line 3.
 
-![International payment - Facilitator](../images/payments/international-payment-cb.png)
+![International payment - Facilitator](../assets/images/payments/international-payment-cb.png)
 
 The fundamental difference between line 4 (nostro/vostro) and 3 (central clearing and facilitation) is not so much that 
 it has some 3rd parties facilitating the international movement of funds. It is **when** the payment will be considered 
@@ -115,7 +112,7 @@ However, unlike in IP where routers just forward packets, in SWIFT
 
 ### A brief pause
 
-![Pause for breath](../images/payments/wade-austin-ellis-sf0qE4XehbI-unsplash.jpg)
+![Pause for breath](../assets/images/payments/wade-austin-ellis-sf0qE4XehbI-unsplash.jpg)
 > Photo by Wade Austin Ellis on Unsplash
 
 It is worth pausing for a minute and discussing these options. 
@@ -185,7 +182,7 @@ US dominance is a strategic threat which countries and corporations around the w
 
 ## Pull payments
 
-![Pull it out](../images/payments/gray-industrial-machine-during-golden-hour-162568.jpg)
+![Pull it out](../assets/images/payments/gray-industrial-machine-during-golden-hour-162568.jpg)
 > Photo by Pixabay on Pexels
 
 So far we spoke about push payments, where the payer sends the payee money (e.g. because there is an outstanding invoice to pay).
@@ -210,7 +207,7 @@ It needs 2 basic things to operate:
 
 Putting this in our usual diagram, we have something very similar to normal payments. 
 
-![Direct debit payments](../images/payments/payments-dd.png)
+![Direct debit payments](../assets/images/payments/payments-dd.png)
 
 Let's say that customer C with an account in PurpleBank (left) started going to the gym owned by merchant A (account in 
 GreenBank). A wants to start charging C an amount monthly.  
@@ -245,7 +242,7 @@ It attempts to solve the following problem
 
 The answer is... you guessed it! by introducing additional trusted third parties.
 
-![Card payments](../images/payments/payments-card.png)
+![Card payments](../assets/images/payments/payments-card.png)
 
 When paying with a card <sup>[10](#footnote_10)</sup>, there are 4 tiers of processing that take place. Let's take the 
 case of a customer using her [chip & pin][55] card at a merchant's [POS terminal][46].  
@@ -324,7 +321,7 @@ ownership, not card ownership. Any stolen card can be added to the device and co
 
 ## Stay tuned... 
 
-![Stay tuned](../images/payments/flat-screen-television-1201996.jpg)
+![Stay tuned](../assets/images/payments/flat-screen-television-1201996.jpg)
 > Photo by JESHOOTS.com from Pexels
 
 In the next and final installment, we will go over  

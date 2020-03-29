@@ -3,7 +3,7 @@ layout: post
 title: "Disk capacity planning for Neo4J"
 author: stelios
 tags: [software, capacity planning, neo4j, utilities]
-categories: [System design, Architecture]
+categories: [System Design, Architecture]
 featured: 
 description: "Neo4J is a great graph database, able to store billions of nodes and relationships. This post provides an approach and ready-to-use Excel model to calculate how much space it will take on disk"
 image: assets/images/capacity-planning/markus-spiske-5yEiCUynJ9w-unsplash.jpg

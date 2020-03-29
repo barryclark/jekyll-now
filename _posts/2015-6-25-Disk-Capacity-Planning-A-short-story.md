@@ -3,7 +3,7 @@ layout: post
 title:  "Disk Capacity planning (A short story)"
 author: stelios
 tags: [software, capacity planning]
-categories: [System design, Architecture]
+categories: [System Design, Architecture]
 featured: 
 description: "This blog post gives a short story on the importance of capacity planning."
 image: assets/images/capacity-planning/joanna-kosinska-4qujjbj3srs-unsplash.jpg
