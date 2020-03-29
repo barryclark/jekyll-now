@@ -1,29 +1,25 @@
 ---
 layout: post
-title: Postgres Index stats and Query Optimization
-excerpt_separator: <!--more-->
+title: "Postgres Index stats and Query Optimization"
+author: stelios
 tags: [database, postgres, indexes, optimization]
+categories: [Databases, Software Development]
+featured: 
+description: "PostgreSQL is an extremely performant database. This post focuses on how to make the best out of it using the pg_stat_user_indexes view."
+image: assets/images/postgres-indexes-queries/database-design.jpg
 ---
 
-## Postgres 
-
-![Database](../images/postgres-indexes-queries/database-design.jpg)
-> Photo by Campaign Creators on Unsplash
-
 [PostgreSQL][1] is an extremely performant database.   
-
 We are using it heavily and to great effect in my current place of work.
-
-However the internal design choices of Postres mean that you may be faced [with performance degradation 
+However the internal design choices of Postgres mean that you may be faced [with performance degradation 
 if not careful][2]. 
 
 From an application developer's point-of-view there is an easily accessible treasure trove 
 of optimisation hints: the [pg_stat_user_indexes][3] view. 
-<!--more-->
 
 ## Some background info
 
-![Information](../images/postgres-indexes-queries/tourist-information.jpg)
+![Information](../assets/images/postgres-indexes-queries/tourist-information.jpg)
 > Photo by Laurentiu Morariu on Unsplash
 
 Postgres stores database rows on disk as a whole "thing", called 'tuple'.  
@@ -85,7 +81,7 @@ Even if 'purple' is unknown and the query returns 0 rows, the counter will still
 
 ## Forensics 
 
-![Investigation](../images/postgres-indexes-queries/helloquence-61189-unsplash.jpg)
+![Investigation](../assets/images/postgres-indexes-queries/helloquence-61189-unsplash.jpg)
 > Photo by Helloquence on Unsplash     
 
 The true power of `pg_stat_user_indexes` lies when you examine how it changes over time. If your application has a 
@@ -118,7 +114,7 @@ Some time later
 
 ### 1. Unused index
 
-![Abandoned](../images/postgres-indexes-queries/v2osk-188240-unsplash.jpg)
+![Abandoned](../assets/images/postgres-indexes-queries/v2osk-188240-unsplash.jpg)
 > Photo by v2osk on Unsplash
 
 Indexes do not come for free.  
@@ -140,7 +136,7 @@ will reveal this and allow you to confidently remove the index.
 
 ### 2. Too broad index 
 
-![Too big](../images/postgres-indexes-queries/sutirta-budiman-560115-unsplash.jpg)
+![Too big](../assets/images/postgres-indexes-queries/sutirta-budiman-560115-unsplash.jpg)
 > Photo by sutirta budiman on Unsplash
 
 Looking to [Wikipedia][9] for the definition of an index
@@ -182,7 +178,7 @@ size will show you if you have a potential problem in your hands.
 
 ### 3. Abused index
 
-![On fire](../images/postgres-indexes-queries/raquel-raclette-264225-unsplash.jpg)
+![On fire](../assets/images/postgres-indexes-queries/raquel-raclette-264225-unsplash.jpg)
 > Photo by raquel raclette on Unsplash
 
 Sometimes you may have an index, optimized and well-functioning per se, 
@@ -206,7 +202,7 @@ vs size of tables vs user load) will help you focus your efforts.
 
 ### 4. Well-functioning index (probably)
 
-![Fast cheetah](../images/postgres-indexes-queries/deven-wesolowski-1096651-unsplash.jpg)
+![Fast cheetah](../assets/images/postgres-indexes-queries/deven-wesolowski-1096651-unsplash.jpg)
 > Photo by Deven Wesolowski on Unsplash        
 
 To contrast a bit with the above, let's look at the primary key index `apples_pkey`.  
@@ -222,7 +218,7 @@ be the first place to look.
 
 ## Parting thought
 
-![Doctor](../images/postgres-indexes-queries/arvin-chingcuangco-1337417-unsplash.jpg)
+![Doctor](../assets/images/postgres-indexes-queries/arvin-chingcuangco-1337417-unsplash.jpg)
 > Photo by Arvin Chingcuangco on Unsplash
 
 You may have noticed that I have not written a single word about the underlying 

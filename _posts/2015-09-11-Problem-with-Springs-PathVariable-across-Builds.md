@@ -1,15 +1,18 @@
 ---
 layout: post
-title: Problem with Spring's @PathVariable across builds
-excerpt_separator: <!--more-->
-tags: [spring, web development]
+title: "Problem with Spring's @PathVariable across builds"
+author: stelios
+tags: [software, spring, java, debugging]
+categories: [Software Development]
+featured: 
+description: "Debugging an issue with Spring's PathVariable annotations."
+image: assets/images/spring-path-variable/coding-computer-data-depth-of-field-577585.jpg
 ---
 
 Some colleagues had a very strange problem today: their Spring REST endpoints would work fine when hitting a SNAPSHOT release.
 
 They would fail though, when trying to test against a release.
-The error was something like
-
+The error was something like  
 > java.lang.IllegalStateException: No parameter name specified for argument of type [java.lang.String], and no parameter name information found in class file either.
 
 The failing method was something like 
@@ -23,7 +26,6 @@ The failing method was something like
 ```
 
 But why??
-<!--more-->
 
 The name of the argument matches the path variable, a nice little feature of Spring. 
 

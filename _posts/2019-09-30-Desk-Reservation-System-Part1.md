@@ -1,29 +1,25 @@
 ---
 layout: post
-title: Desk reservation system with OpenCV and Spring - Part 1
-excerpt_separator: <!--more-->
-tags: [opencv, spring, kotlin, hackathon]
+title: "Desk reservation system with OpenCV and Spring - Part 1"
+author: stelios
+tags: [software, opencv, spring, kotlin, hackathon]
+categories: [Software Development]
+featured: 
+description: "A utility script on how to mine Slack for important ChatOps messages."
+image: assets/images/desk-reservation-1/hackathon.jpeg
 ---
 
-## Shall we hack something together? 
-
-![Hackathon](../images/desk-reservation-1/hackathon.jpeg)
-> Photo by Jeremy Philemon on Unsplash
-
 A fast-growing company has all kinds of good problems.  
-
 One of them (admittedly the smallest) is the frequent question of new-joiners:  "where does everyone sit in this new office?".  
 
 Luckily, regular [hackathons][1] give the opportunity to address all the issues (big or small) stacking up.
 
 This post will show a slightly expanded version of a desk reservation prototype we worked on during that day, using 
-some simple image processing and a Java [Spring][2] back-end.
-
-<!--more-->
+some simple image processing and a Kotlin [Spring][2] back-end.
 
 ## Problem statement
 
-![New office](../images/desk-reservation-1/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg)
+![New office](../assets/images/desk-reservation-1/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg)
 > Photo by Shridhar Gupta on Unsplash
 
 My current company is expanding rapidly, changing into bigger offices.   
@@ -56,14 +52,14 @@ which desks are available for the day. As the company keeps expanding, we will n
 
 ## Desk detection
 
-![Let's begin!](../images/desk-reservation-1/kobu-agency-67L18R4tW_w-unsplash.jpg)
+![Let's begin!](../assets/images/desk-reservation-1/kobu-agency-67L18R4tW_w-unsplash.jpg)
 > Photo by Kobu Agency on Unsplash
 
 First problem to solve is how to best digitize the layout of the office(s). 
 
 The image below shows an example of how the floor layout looks like.
 
-![Floor layout](../images/desk-reservation-1/floor.png)
+![Floor layout](../assets/images/desk-reservation-1/floor.png)
 > Semi-realistic floor layout 
 
 Can we easily use the floor plan image as is?  
@@ -78,8 +74,8 @@ But this is a hackathon and we can get away with
 * building on a [basic example][4] of template matching and 
 * extracting the templates ourselves with a little bit of select-copy-paste from the big image
 
-![A desk template](../images/desk-reservation-1/desk_1.png)
-![Another desk template](../images/desk-reservation-1/desk_2.png)
+![A desk template](../assets/images/desk-reservation-1/desk_1.png)
+![Another desk template](../assets/images/desk-reservation-1/desk_2.png)
 > Examples of desk templates
 
 ### Initial run
@@ -145,7 +141,7 @@ Almost 2,500 desks?!
 
 The `floor_output.png` image looks like this
 
-![Initial template matching](../images/desk-reservation-1/floor_output_1.png)
+![Initial template matching](../assets/images/desk-reservation-1/floor_output_1.png)
 > Initial template matching 
 
 The thickness of the lines gives an indication of what is happening.  
@@ -153,7 +149,7 @@ Our matcher is matching the same desks (give or take a few pixels) over and over
 
 Let's increase threshold to `0.9`. 
 
-![2nd attempt template matching](../images/desk-reservation-1/floor_output_2.png)
+![2nd attempt template matching](../assets/images/desk-reservation-1/floor_output_2.png)
 > Template matching 2nd attempt 
 
 Now half the desks have not been matched. 
@@ -225,7 +221,7 @@ Found 40 desks, color (100, 0, 255)
 
 And the output is
 
-![3rd attempt template matching](../images/desk-reservation-1/floor_output_3.png)
+![3rd attempt template matching](../assets/images/desk-reservation-1/floor_output_3.png)
 > Template matching 3rd attempt 
 
 166 matched desks, compared to the 148 actual.  
@@ -236,7 +232,7 @@ But this is a hackathon, so we can pause here.
 
 ## Image maps
 
-![Another type of map](../images/desk-reservation-1/waldemar-brandt-aHZF4sz0YNw-unsplash.jpg)
+![Another type of map](../assets/images/desk-reservation-1/waldemar-brandt-aHZF4sz0YNw-unsplash.jpg)
 > Photo by Waldemar Brandt on Unsplash
 
 The reason we are detecting the desks is not just to highlight them on the floor plan image.

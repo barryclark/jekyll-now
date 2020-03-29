@@ -1,14 +1,13 @@
 ---
 layout: post
 title: "An intro to payments: Value, liabilities and networks - Part 1"
-excerpt_separator: <!--more-->
-tags: [payments, networks, payment rails, banking, cryptocurrencies]
+author: stelios
+tags: [payments networks, payment rails, banking, cryptocurrencies, blockchain]
+categories: [Payments, Fintec]
+featured: true
+description: ""
+image: assets/images/payments/chris-karidis-QXW1YEMhq_4-unsplash.jpg
 ---
-
-## Please, take my money! 
-
-![Relaxing in the sun](../images/payments/chris-karidis-QXW1YEMhq_4-unsplash.jpg)
-> Photo by Chris Karidis on Unsplash
 
 You are on holiday in another country. You want to buy a coffee.    
 You get your card out, swipe or type your pin and presto! 
@@ -20,13 +19,11 @@ The simple action described above requires levels upon levels of financial struc
 This series of 3 posts will attempt to give a high level intro on the history, the "what", the "how" and, when possible, 
 the "why" of modern payment systems.
     
-<!--more-->
-
 ## Can I has payment?
 
 ### Some definitions
 
-![Ka-ching](../images/payments/silver-and-gold-coins-128867.jpg)
+![Ka-ching](../assets/images/payments/silver-and-gold-coins-128867.jpg)
 > Photo by Pixabay on Pexels
 
 Let's start with the very basics: what is a payment?  
@@ -47,7 +44,7 @@ provided that both parties in the transaction recognize money as a trade/store o
 
 ### In the olden days...
 
-![Buy and sell](../images/payments/jordan-rowland-WtllOYrN70E-unsplash.jpg)
+![Buy and sell](../assets/images/payments/jordan-rowland-WtllOYrN70E-unsplash.jpg)
 > Photo by Jordan Rowland on Unsplash
 
 Once upon a time, transactions and payments would take place only in person.  
@@ -79,7 +76,7 @@ good on the promise to deliver the gold, as "written" on the piece of paper.
 
 ## Money vs. Currency
 
-![...makes the world go round](../images/payments/christine-roy-ir5MHI6rPg0-unsplash.jpg)
+![...makes the world go round](../assets/images/payments/christine-roy-ir5MHI6rPg0-unsplash.jpg)
 
 Going back in time and introducing these basic principles, allows us to examine today with a clearer lens and under a 
 much brighter light. 
@@ -120,7 +117,7 @@ So, to wrap this section up
 ## Back to payments
 <a name="mental_model"></a>
 
-![Pipes](../images/payments/child-sipping-from-pipe-graffiti-2103127.jpg)
+![Pipes](../assets/images/payments/child-sipping-from-pipe-graffiti-2103127.jpg)
 > Photo by Shukhrat Umarov on Pexels
 
 If one was to depict the global system of payments in a layman way, it would look a lot like a sequence of "barrels" 
@@ -152,14 +149,14 @@ In the olden days of gold-backed currencies, central banks would ultimately sett
 Now that we mastered the simple mental model, let's jump right into a nice and complex diagram of the modern banking 
 system.  
 
-![Banking infrastructure](../images/payments/payments-banks.png)
+![Banking infrastructure](../assets/images/payments/payments-banks.png)
 
 Great, heh!?  
 Instead of explaining all lines and boxes, let's see how things interact with a few examples.
 
 ### Intrabank payment
 
-![Intrabank payment](../images/payments/intrabank-payment.png)
+![Intrabank payment](../assets/images/payments/intrabank-payment.png)
 
 Let's start with the simplest case: a payment from account A to account B, within the same bank. 
 Let's call this bank GreenBank, or GB for short.
@@ -180,7 +177,7 @@ In real-time systems the ledger only contains the settled entries.
 
 An interesting special case of intrabank payments is that of [e-money providers][30].
 
-![E-money](../images/payments/payments-emoney.png)
+![E-money](../assets/images/payments/payments-emoney.png)
 
 Let's call one of our fictitious e-money provider in this diagram CarrotMoney, or CM for short.
 
@@ -212,7 +209,7 @@ generating revenue for CM (e.g. accrued interest).
 In the case when a payment needs to go from one bank to another, i.e. across institutional boundaries, we need a 
 third-party to act as the trusted intermediary: the central bank. 
 
-![Interbank payment](../images/payments/interbank-payment.png)
+![Interbank payment](../assets/images/payments/interbank-payment.png)
 
 Let's consider the case when account A of GreenBank (GB) wants to make a payment of £50 to account D of PurpleBank (PB).  
 A number of things need to happen:  
@@ -276,7 +273,7 @@ Otherwise this is passed on to the customer, sometimes with sprinkle on top. <su
 
 ## In our next episode...
 
-![Stay tuned](../images/payments/person-holding-volume-knob-1345630.jpg)
+![Stay tuned](../assets/images/payments/person-holding-volume-knob-1345630.jpg)
 > Photo by Nicholas Githiri from Pexels
 
 In the next installment, we will examine  

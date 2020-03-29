@@ -1,8 +1,12 @@
 ---
 layout: post
-title: Using Vagrant for Enterprise Provisioning (A practical example)
-excerpt_separator: <!--more-->
-tags: [vagrant, virtualbox, tutorials]
+title: "Using Vagrant for Enterprise Provisioning (A practical example)"
+author: stelios
+tags: [software, vagrant, virtualbox, tutorials]
+categories: [DevOps]
+featured: 
+description: "Vagrant is a great abstraction layer over your stack. This post suggests an approach on structuring your Vagrantfiles for an organisation with multiple teams."
+image: assets/images/vagrant-enterprise/allie-smith-8hQUCIoXf8o-unsplash.jpg
 ---
 
 Vagrant is a great abstraction layer over your stack.
@@ -23,7 +27,6 @@ These may have grown organically, but they usually end up being copied from proj
 How can you provide the benefits of environment-as-code, while avoiding copy-paste hell?  
 
 Hopefully this post will provide an answer.
-<!--more-->
 
 ## Some requirements
 

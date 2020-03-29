@@ -1,28 +1,27 @@
 ---
 layout: post
-title: Disk capacity planning for Neo4J 
-excerpt_separator: <!--more-->
-tags: [neo4j, capacity planning, utilities]
+title: "Disk capacity planning for Neo4J"
+author: stelios
+tags: [software, capacity planning, neo4j, utilities]
+categories: [System Design, Architecture]
+featured: 
+description: "Neo4J is a great graph database, able to store billions of nodes and relationships. This post provides an approach and ready-to-use Excel model to calculate how much space it will take on disk"
+image: assets/images/capacity-planning/markus-spiske-5yEiCUynJ9w-unsplash.jpg
 ---
 
-Neo4J is a great graph database, with some really cool features. 
-The [Cypher query language][1] and its [traversal API][2] offer some interesting possibilities for various use cases.
-For example, storing build artifacts and their dependencies. 
-
-It can store [billions of nodes and relationships][3], which is great, but brings up an interesting question: how much space will it take on disk?
-<!--more-->
+Neo4J is a [multi-featured][1] [graph][2] database, able to store [billions of items][3]. 
+This brings up an interesting question: *how much space will it take on disk?*
 
 ## Background
 
-A Neo4J database is composed of (or better, stores) the following discreet data items on disk
-
+A Neo4J database is composed of (or better, stores) the following discreet data items on disk  
 * nodes
 * relationships
 * properties string values are stored separately in 128 byte chunks
 * Lucene indexes over properties
 * other stuff: house-keeping files, logs,...
 
-I will ignore the size of all other stuff and just focus on how the data itself affects disk consumption  
+I will ignore the size of all other stuff and just focus on how the data itself affects disk consumption.  
 
 It is important to note than in a cluster setup **all nodes** contain a complete copy of the data.
 
@@ -209,7 +208,7 @@ I hope you find it useful.
    [5]: http://neo4j.com/docs/stable/configuration-caches.html
    [6]: https://lucidworks.com/blog/estimating-memory-and-storage-for-lucenesolr/
    [7]: http://neo4j.com/docs/stable/
-   [8]: {{ site.baseurl }}/images/capacity-planning/example_model.png
-   [9]: {{ site.baseurl }}/images/capacity-planning/capacity-planning-excel.png
-   [10]: {{ site.baseurl }}/resources/capacity-planning/example-neo4j-capacity-planning.xls
-   [11]: {{ site.baseurl }}/images/capacity-planning/vb_macro.png
+   [8]: ../assets/images/capacity-planning/example_model.png
+   [9]: ../assets/images/capacity-planning/capacity-planning-excel.png
+   [10]: ../assets/resources/capacity-planning/example-neo4j-capacity-planning.xls
+   [11]: ../assets/images/capacity-planning/vb_macro.png

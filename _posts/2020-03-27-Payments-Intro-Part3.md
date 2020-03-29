@@ -1,17 +1,13 @@
 ---
 layout: post
 title: "An intro to payments: Value, liabilities and networks - Part 3"
-excerpt_separator: <!--more-->
+author: stelios
 tags: [payments, networks, payment rails, cryptocurrencies, bitcoin, libra, remittances]
+categories: [Payments, Fintec, Blockchain]
+featured: true
+description: ""
+image: assets/images/payments/christian-holzinger-ellaVGqPgww-unsplash.jpg
 ---
-
-## On the rails 
-
-![On the rails](../images/payments/christian-holzinger-ellaVGqPgww-unsplash.jpg)
-> Photo by Christian Holzinger on Unsplash
-
-*In the previous 2 instalments ([1][1], [2][2]) of this series, I talked about the history behind payment systems and 
-described how domestic and international payments work.*  
 
 *In this post I will*  
  * *cover modern payment "rails",*
@@ -19,7 +15,8 @@ described how domestic and international payments work.*
  * *close the "trilogy" with some parting thoughts on the future and how the unfolding [Covid-19][78] pandemic will 
  accelerate the evolution of the payment systems.* 
     
-<!--more-->
+*In the previous 2 instalments ([1][1], [2][2]) of this series, I talked about the history behind payment systems and 
+described how domestic and international payments work.*  
 
 ### E-money
 
@@ -32,7 +29,7 @@ Mobile money (or [M-Pesa][3] as is widely known from its initial Kenyan incarnat
 It seems that the populations had already found the answer themselves: [swapping of airtime][4].  
 M-Pesa is just the glossy version of an existing unofficial practice.
 
-![Mobile payments](../images/payments/payments-mobilemoney.png)
+![Mobile payments](../assets/images/payments/payments-mobilemoney.png)
 
 Let's see how it works in principle.
 
@@ -119,7 +116,7 @@ Though it provides access to data as well as payments, I will be focusing on the
 
 The following diagram gives an overview of how it works.  
 
-![OpenBanking payments](../images/payments/payments-ob.png)
+![OpenBanking payments](../assets/images/payments/payments-ob.png)
 
 1. A Customer registers with the application of a [PSP][68].  
 Practically any app could be a PSP; from a mobile-only personal finance assistance (e.g. [Plum][69]) to a payments 
@@ -147,7 +144,7 @@ What if there was a magic way of sending value cross-border *without anything ac
 Sounds weird? This is where remittance services come in.  
 A practical example will help understand their modus operandi. 
 
-![Remittance payments](../images/payments/payments-remittance.png)
+![Remittance payments](../assets/images/payments/payments-remittance.png)
 
 The Sender having an account in RedBank in the Eurozone, wants to send money to the Receiver. The Receiver has an 
 account in PinkBank in the UK.
@@ -250,7 +247,7 @@ will make whole? Ripple solves this by introducing the concept of [trust lines][
 Let's see how it works in a practical example.  
 Sender wants to makes a cross-currency payment to Receiver.
 
-![IOU payments](../images/payments/payments-iou.png)
+![IOU payments](../assets/images/payments/payments-iou.png)
 
 1. The Sender has a Ripple account, which needs to be funded.  
 To do so, the Sender uses a [gateway][34] she trusts to convert her Euro fiat into "Ripple EUR" IOUs. She does so by 
@@ -334,7 +331,7 @@ exchange. This has not gone [unnoticed][101].
 
 In practice, it combines some of the concepts mentioned in the previous sections to offer a blockchain-based payment network.
 
-![Libra payments](../images/payments/payments-libra.png)
+![Libra payments](../assets/images/payments/payments-libra.png)
 
 Let's quickly examine how Libra works as a payment mechanism, making some simplifications for brevity. I will also not
 touch upon its smart contract functionality, as it is out of scope.  
@@ -376,7 +373,7 @@ it works.
 The last few years have seen an increasing interest in the replacement of fiat currencies with central-bank issued
 crypto-currencies. 
 
-![Government crypto payments](../images/payments/payments-gov-crypto.png)
+![Government crypto payments](../assets/images/payments/payments-gov-crypto.png)
 
 The underlying payment mechanism in such a case would be extremely simple.    
 * The Sender has a crypto-wallet on her device, possibly provided/facilitated by a commercial bank.  
@@ -424,7 +421,7 @@ Government crypto-currencies are the perfect tool to deploy such policies.
 
 The last payment mechanism in the series is also the simplest one: [proof-of-work][123] (PoW) money.  
 
-![Crypto payments](../images/payments/payments-crypto.png)
+![Crypto payments](../assets/images/payments/payments-crypto.png)
 
 The Sender signs a payment with her private key and sends it off to the public network.  
 The [miners][125] reach a [consensus][124] on the validity of the transaction and it is immutably recorded on the shared 
@@ -450,7 +447,7 @@ infrastructure (backing collateral, akin to digital gold).
 
 ## Some racing thoughts 
 
-![Run, Forrest! Run!](../images/payments/san-fermin-pamplona-navarra-LJrszMj1RJc-unsplash.jpg)
+![Run, Forrest! Run!](../assets/images/payments/san-fermin-pamplona-navarra-LJrszMj1RJc-unsplash.jpg)
 > Photo by San Fermin Pamplona - Navarra on Unsplash
 
 In these 3 articles ([part 1][1], [part 2][2]) we saw how the transfer of value has evolved over millenia.   

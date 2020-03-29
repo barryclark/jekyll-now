@@ -1,21 +1,19 @@
 ---
 layout: post
-title: What does my smartphone really do?
-excerpt_separator: <!--more-->
+title: "What does my smartphone really do?"
+author: stelios
 tags: [smartphone, network, wireshark]
+categories: [Network, Smartphones]
+featured: 
+description: "A post on how to setup Wireshark for mobile phone traffic monitoring."
+image: assets/images/wireshark-mobile/fikri-rasyid-689579-unsplash.jpg
 ---
 
-## This little silver box
-
-![Smartphone](../images/wireshark-mobile/fikri-rasyid-689579-unsplash.jpg)
-> Photo by Fikri Rasyid on Unsplash
-
 What is your phone really doing?  
-
 More specifically, what are the apps installed on your phone really doing?  
-Do they just sit there? Do they constantly send data to thir servers? 
-Do you even know what is sending data where and how often?
+Do they just sit there? Do they constantly send data to their servers? 
 
+Do you even know what is sending data where and how often?
 
 I had to answer this question recently for a little pet project. 
 
@@ -25,11 +23,10 @@ tinker with its internals (I still need it during the day).
 So? How do I do it?
 
 Enter [Wireshark][1]. 
-<!--more-->
 
 ## Jaws
 
-![Shark](../images/wireshark-mobile/david-clode-451037-unsplash.jpg)
+![Shark](../assets/images/wireshark-mobile/david-clode-451037-unsplash.jpg)
 > Photo by David Clode on Unsplash
 
 Wireshark is a communication packet analysis tool. It has been around for 20 
@@ -44,7 +41,7 @@ You have installed Wireshark on your computer and you are thinking...
 
 ## And now what?
 
-![Observe](../images/wireshark-mobile/franck-v-1294760-unsplash.jpg)
+![Observe](../assets/images/wireshark-mobile/franck-v-1294760-unsplash.jpg)
 > Photo by Franck V. on Unsplash
 
 There are 2 ways to capture your mobile phone's traffic.<sup>2 that 
@@ -61,7 +58,7 @@ Let's see them in more detail.
 
 ### Capture wifi traffic
 
-![Wifi](../images/wireshark-mobile/bernard-hermant-667645-unsplash.jpg)
+![Wifi](../assets/images/wireshark-mobile/bernard-hermant-667645-unsplash.jpg)
 > Photo by Bernard Hermant on Unsplash
 
 To put it in very simplistic words, wireless network is just radio; anyone 
@@ -84,23 +81,23 @@ Your settings and UI may differ slightly.*
 
 **What is my laptop's IP?**
 
-![Wireless settings](../images/wireshark-mobile/wifi/0-my-ip-1.png)  
+![Wireless settings](../assets/images/wireshark-mobile/wifi/0-my-ip-1.png)  
 In the settings screen of your wireless adaptor, select your wifi.
 
-![Wireless IP](../images/wireshark-mobile/wifi/0-my-ip-2.png)  
+![Wireless IP](../assets/images/wireshark-mobile/wifi/0-my-ip-2.png)  
 Then note down your own IP. You will need this later on.
 
 **What is my phone's IP?**
 
-![Phone wireless settings](../images/wireshark-mobile/wifi/0-mobile-1.png)  
+![Phone wireless settings](../assets/images/wireshark-mobile/wifi/0-mobile-1.png)  
 In the wireless networks of your phone's settings screen , select your wifi.
 
-![Wireless IP](../images/wireshark-mobile/wifi/0-mobile-2.png)  
+![Wireless IP](../assets/images/wireshark-mobile/wifi/0-mobile-2.png)  
 Then note down your phone's IP. You will need this later on.
 
 **Launch Wireshark**
 
-![Wireshark initial screen](../images/wireshark-mobile/wifi/1-capture-wifi.png)  
+![Wireshark initial screen](../assets/images/wireshark-mobile/wifi/1-capture-wifi.png)  
 Launching Wireshark, you will see   
 1. A list of all potential sources of traffic
 1. If they are currently active or not
@@ -110,16 +107,16 @@ Launching Wireshark, you will see
 
 Before we start we will need to fine-tune things a bit.  
 
-![Settings](../images/wireshark-mobile/wifi/2-source-settings-1.png)  
+![Settings](../assets/images/wireshark-mobile/wifi/2-source-settings-1.png)  
 Select your wireless source and click the settings button
 
-![More settings](../images/wireshark-mobile/wifi/2-source-settings-2.png)  
+![More settings](../assets/images/wireshark-mobile/wifi/2-source-settings-2.png)  
 In the `Input` tab  
 1. Select `802.11 plus radiotap`
 1. `Promiscuous` mode, i.e. capture all traffic flying around
 1. ...and be in `Monitor` mode
 
-![Even more settings](../images/wireshark-mobile/wifi/2-source-settings-3.png)  
+![Even more settings](../assets/images/wireshark-mobile/wifi/2-source-settings-3.png)  
 In the `Options` tab  
 * `Resolve MAC addresses`: As Wireshark encounters network traffic identifying 
 hardware it starts remembering and showing the names of devices
@@ -130,13 +127,13 @@ host names (www.foobar.com), rather than IPs (2.1.1.234)
 
 There is one last thing to capturing wifi traffic: being able to decrypt it. 
 
-![Wifi settings](../images/wireshark-mobile/wifi/3-ieee-settings.png)  
+![Wifi settings](../assets/images/wireshark-mobile/wifi/3-ieee-settings.png)  
 Go to the `Preferences` menu  
 1. In the `Protocols` list, find `IEEE 802.11`
 1. Select `Yes - with IV` (you may need a different setting for your machine!)
 1. (Only if your wifi has a password) `Enable deryption` and click `Edit`
 
-![Wifi password](../images/wireshark-mobile/wifi/3-ieee-pwd.png)  
+![Wifi password](../assets/images/wireshark-mobile/wifi/3-ieee-pwd.png)  
 Select `WEP` (really old) or `WPA` (most likely), according to your wifi's settings.  
 The format of typing the wifi password is `password:wifiName`, e.g. 'superman3:Netgear-3e45'.  
 This way you can have settings for more than one wireless network. 
@@ -145,7 +142,7 @@ This way you can have settings for more than one wireless network.
 
 Double-click the Wireless adapter from the list to start capturing traffic.
 
-![Traffic](../images/wireshark-mobile/wifi/4-capture-all.png)  
+![Traffic](../assets/images/wireshark-mobile/wifi/4-capture-all.png)  
 1. The top-left buttons allow you to start/stop/restart capture
 1. Each packet has an identified source and destination
 1. ...according to its recognized protocol. This will help you identify 
@@ -157,13 +154,13 @@ devices), you will need to filter information.
 
 **Ignore 802.11 management packets**
 
-![IP traffic](../images/wireshark-mobile/wifi/4-ip-only.png)  
+![IP traffic](../assets/images/wireshark-mobile/wifi/4-ip-only.png)  
 You can focus only on IP packets by filtering for that protocol.  
 Wireshark has a [query language and thousands of fields to filter on][3]. 
 
 **Ignore my laptop's traffic**   
 
-![Not my traffic](../images/wireshark-mobile/wifi/4-without-my-ip.png)  
+![Not my traffic](../assets/images/wireshark-mobile/wifi/4-without-my-ip.png)  
 You can further filter by ignoring your own machine's traffic (from and to).  
 Or you can just filter for the traffic from/to your mobile phone.  
 These are the IPs we noted down earlier. 
@@ -185,7 +182,7 @@ switch off/on again.
 
 ### PC as gateway
 
-![Gateway](../images/wireshark-mobile/parth-vyas-705755-unsplash.jpg)
+![Gateway](../assets/images/wireshark-mobile/parth-vyas-705755-unsplash.jpg)
 > Photo by Parth Vyas on Unsplash
 
 The above is too much work.  
@@ -200,32 +197,32 @@ In plain English, share your laptop's internet connection with your phone
 
 After enabling your laptop's Bluetooth connection...
 
-![Settings screen](../images/wireshark-mobile/gateway/0-net-share-1.png)  
+![Settings screen](../assets/images/wireshark-mobile/gateway/0-net-share-1.png)  
 In your Settings dialog, find the `Sharing` section.  
 
-![Sharing](../images/wireshark-mobile/gateway/0-net-share-2.png)  
+![Sharing](../assets/images/wireshark-mobile/gateway/0-net-share-2.png)  
 Select `Internet sharing` from `Bluetooth` (or another combination which 
 would work for you).  
 
 **Connect from phone**
 
-![Data off](../images/wireshark-mobile/gateway/1-data-off.png)  
+![Data off](../assets/images/wireshark-mobile/gateway/1-data-off.png)  
 On your phone, switch off all connections, including mobile data.  
 Leave only Blueetooth on.
 
-![Connect to laptop](../images/wireshark-mobile/gateway/1-btooth-connect.png)  
+![Connect to laptop](../assets/images/wireshark-mobile/gateway/1-btooth-connect.png)  
 Connect to your laptop.  
 
 **...and profit!**
 
-![Capture](../images/wireshark-mobile/gateway/2-capture.png)  
+![Capture](../assets/images/wireshark-mobile/gateway/2-capture.png)  
 You can immediately see traffic from/to your phone.  
 
 You can now start filtering/dissecting for what you are looking for.   
 
 ## Parting thought
 
-![Looking at me?](../images/wireshark-mobile/maria-teneva-1343355-unsplash.jpg)
+![Looking at me?](../assets/images/wireshark-mobile/maria-teneva-1343355-unsplash.jpg)
 > Photo by Maria Teneva on Unsplash
 
 For many of us, our phones may be worth much-much more than their monetary 
