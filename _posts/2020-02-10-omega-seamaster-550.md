@@ -20,7 +20,7 @@ Probablemente muchos coleccionistas estaran de acuerdo conmigo que uno de los pr
 
 ![Omega Seamaster 550](http://ovalenzuela.com/images/2020/2020-02-10-omega-seamaster-550.jpg)
 
-Creo que el Seamaster 550 fue uno de los primeros. Con un precio al alcance de la mano, consegui un Royal Blue 550 calibre 354 circa 1952, el cual fue repintado. El reloj venia en buena condicion mecanica, y quizas el repintado no fue del todo muy profesional, pero sus detalles le dan "un cache" unico. 
+Creo que el Seamaster 550 fue uno de los primeros. Con un precio al alcance de la mano, consegui un Royal Blue 550 calibre 354 circa 1952, el cual fue repintado. El reloj venia en buena condicion mecanica, y aunque el repintado no fue del todo muy profesional, creo que sus detalles le dan "un toque" unico que lo convierte en uno de mis favoritos.
 
 ![Omega Seamaster 550  - Movement](http://ovalenzuela.com/images/2020/2020-02-10-omega-seamaster-550-2.jpg)
 
