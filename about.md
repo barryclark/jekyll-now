@@ -6,8 +6,8 @@ permalink: /about/
 
 Aiken H
 
-本科： 西安交通大学(XJTU)
-硕士： 西安交通大学(XJTU)，系统所，天地网实验室
+本科： 西安交通大学(XJTU) <br>
+硕士： 西安交通大学(XJTU)，系统所，天地网实验室 <br>
 
 --- 
 
