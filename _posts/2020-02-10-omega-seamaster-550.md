@@ -6,7 +6,7 @@ date: 2020-03-28T00:00:00.000Z
 author: ovalenzuela
 layout: post
 guid: 'http://ovalenzuela.com/?p=100220'
-permalink: /2020/02/omega-seamaster-550.html
+permalink: /2020/03/omega-seamaster-550.html
 categories:
   - General
   - Opinión
