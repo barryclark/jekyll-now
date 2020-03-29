@@ -5,7 +5,7 @@ author: stelios
 tags: [payments networks, payment rails, banking, cryptocurrencies, blockchain]
 categories: [Payments, Fintec]
 featured: true
-description: ""
+description: "A series of pasts describing the past, present and future of payment networks: from ancient promissory notes, to the SWIFT network to upcoming blockchain-based networks."
 image: assets/images/payments/chris-karidis-QXW1YEMhq_4-unsplash.jpg
 ---
 

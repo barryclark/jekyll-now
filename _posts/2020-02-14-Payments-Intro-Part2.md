@@ -5,7 +5,7 @@ author: stelios
 tags: [payment networks, banking, direct debit, card payments]
 categories: [Payments, Fintec]
 featured: true
-description: ""
+description: "A series of pasts describing the past, present and future of payment networks: from ancient promissory notes, to the SWIFT network to upcoming blockchain-based networks."
 image: assets/images/payments/jk-gJhev0YgUcE-unsplash.jpg
 ---
 
