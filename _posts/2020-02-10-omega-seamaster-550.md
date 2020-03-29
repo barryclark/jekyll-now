@@ -1,8 +1,8 @@
 ---
 published: true
 id: 100220
-title: 'Reloj Omega Seamaster Royal Blue (550 cal:354)'
-date: 2020-03-28T00:00:00.000Z
+title: Omega Seamaster Royal Blue (550)
+date: {}
 author: ovalenzuela
 layout: post
 guid: 'http://ovalenzuela.com/?p=100220'
