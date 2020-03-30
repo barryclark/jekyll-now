@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 【DEV】Linux Tomcat에 Spring을 올려보자(2)
-category: blog
+title: 【LINUX】Linux Tomcat에 Spring을 올려보자(2)
+subject: blog
+category: linux
 author: junseo.park
 subtitle: Spring war 파일로 배포하기 - tomcat 설정은 이렇게
 ---

@@ -5,7 +5,7 @@ permalink: /portfolio
 
 <div class="posts">
   {% for post in site.posts %}
-    {% if post.category == "portfolio" %}
+    {% if post.subject == "portfolio" %}
       <article class="post">
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
         {{ post.subtitle }}

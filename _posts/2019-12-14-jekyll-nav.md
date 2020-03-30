@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 【DEV】jekyll
-category: blog
+title: 【STUDY】jekyll
+subject: blog
+category: study
 author: junseo.park
 subtitle: jekyll 개념과 구성요소
 ---
