@@ -1,10 +1,11 @@
 ---
 title: MIMUW TechTalk - Azure DevOps - Deploy Anything Anywhere
 author: Janusz Nowak
-layout: post
+header:
+  teaser: /wp-content/uploads/2020/03/MIMUW-TechTalk-2020-03-05_01.jpg
+permalink: /Conference-MIMUW-TechTalk-Azure-DevOps-Deploy-Anything-Anywhere/
 categories:
   - Azure DevOps
-image: /wp-content/uploads/2020/03/MIMUW-TechTalk-2020-03-05_01.jpg
 tags:
   - ALM
   - Azure Artifacts
@@ -23,11 +24,10 @@ tags:
   - Tech Talk
   - MIMUW
 
-  
 ---
 
 
-Duże podziękowania dla [orgnzatorów](https://www.facebook.com/mimuw) za zorganizowanie spotkania dla społeczności.
+Duże podziękowania dla [organizatorów](https://www.facebook.com/mimuw) za zorganizowanie spotkania dla społeczności.
  - [Samorząd Studentów MIMUW](https://www.facebook.com/mimuw)
  - [Wydział Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego](https://www.mimuw.edu.pl/)
  - [P&G](https://pg.com) 

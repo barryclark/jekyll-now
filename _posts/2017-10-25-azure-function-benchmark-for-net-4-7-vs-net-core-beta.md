@@ -3,14 +3,15 @@ id: 238
 title: Azure Function benchmark for .Net 4.7 vs .Net Core beta
 date: 2017-10-25T18:45:00+02:00
 author: Janusz Nowak
-layout: post
+
 guid: http://blog.janono.pl/?p=238
 permalink: /2017/10/azure-function-benchmark-for-net-4-7-vs-net-core-beta/
 ftf_open_type:
   - video.tv_show
 disable_open_graph:
   - ""
-image: /wp-content/uploads/2017/10/fun-bench.jpg
+header:
+  teaser: /wp-content/uploads/2017/10/fun-bench.jpg
 categories:
   - .Net
   - .Net Core
