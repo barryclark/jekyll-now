@@ -118,7 +118,7 @@ tag_archive:
 comments:
   provider: "disqus"
   disqus:
-    shortname: "jnowwwak"
+    shortname: "janono"
  
 analytics:
   provider: "google"
