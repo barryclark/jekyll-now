@@ -30,7 +30,8 @@ locale: "en"
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+#theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
