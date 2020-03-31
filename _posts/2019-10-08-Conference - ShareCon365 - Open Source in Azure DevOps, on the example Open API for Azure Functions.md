@@ -1,7 +1,10 @@
 ---
 title: Presentation from ShareCon365 - Open Source in Azure DevOps, on the example Open API for Azure Functions
 author: Janusz Nowak
-layout: post
+header:
+  teaser: /wp-content/uploads/2019/10/sharecon365_2019.jfif
+
+permalink: /Conference-ShareCon365-Open-Source-in-Azure-DevOps,-on-the-example-Open-API-for-Azure-Functions/
 categories:
   - Azure DevOps
   - Open Source

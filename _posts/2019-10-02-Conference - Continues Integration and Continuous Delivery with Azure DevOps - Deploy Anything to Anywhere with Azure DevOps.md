@@ -1,7 +1,10 @@
 ---
 title: Presentation from DevOps Offsite - Continues Integration and Continuous Delivery with Azure DevOps - Deploy Anything to Anywhere with Azure DevOps
 author: Janusz Nowak
-layout: post
+header:
+  teaser: /wp-content/uploads/2019-10-Presentation from DevOps Offsite - Continues Integration and Continuous Delivery.png
+
+permalink: /Conference-Continues-Integration-and-Continuous-Delivery-with-Azure-DevOps-Deploy-Anything-to-Anywhere-with-Azure-DevOps/
 categories:
   - Azure DevOps
   - Open Source

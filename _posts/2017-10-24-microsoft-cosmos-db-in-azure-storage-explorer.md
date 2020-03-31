@@ -3,10 +3,11 @@ id: 231
 title: Microsoft Cosmos DB in Azure Storage Explorer
 date: 2017-10-24T09:35:11+02:00
 author: Janusz Nowak
-layout: post
+
 guid: http://blog.janono.pl/?p=231
 permalink: /2017/10/microsoft-cosmos-db-in-azure-storage-explorer/
-image: /wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer.png
+header:
+  teaser: /wp-content/uploads/2017/10/Microsoft-Cosmos-DB-in-Azure-Storage-Explorer.png
 categories:
   - News
 tags:

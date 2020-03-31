@@ -3,10 +3,11 @@ id: 74
 title: Vm in VM in VM VMnception
 date: 2017-07-17T19:09:16+02:00
 author: Janusz Nowak
-layout: post
+
 guid: https://blogjanono.azurewebsites.net/?p=74
 permalink: /2017/07/vm-in-vm-in-vm-vmnception/
-image: /wp-content/uploads/2017/07/88616c64-c513-44ac-8259-c201e1798106.png
+header:
+  teaser: /wp-content/uploads/2017/07/88616c64-c513-44ac-8259-c201e1798106.png
 categories:
   - Uncategorized
 tags:

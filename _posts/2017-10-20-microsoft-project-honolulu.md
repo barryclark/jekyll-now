@@ -3,10 +3,11 @@ id: 182
 title: Microsoft Project Honolulu
 date: 2017-10-20T15:55:14+02:00
 author: Janusz Nowak
-layout: post
+
 guid: http://blog.janono.pl/?p=182
 permalink: /2017/10/microsoft-project-honolulu/
-image: /wp-content/uploads/2017/10/honolulu-architecture.png
+header:
+  teaser: /wp-content/uploads/2017/10/honolulu-architecture.png
 categories:
   - News
 tags:

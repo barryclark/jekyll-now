@@ -3,10 +3,11 @@ id: 58
 title: MSBuildTour 2017 Warsaw
 date: 2017-06-19T18:44:32+02:00
 author: Janusz Nowak
-layout: post
+
 guid: https://blogjanono.azurewebsites.net/?p=58
 permalink: /2017/06/msbuildtour-2017-warsaw/
-image: /wp-content/uploads/2017/07/DCqlrOcXYAI-M5M.jpg
+header:
+  teaser: /wp-content/uploads/2017/07/DCqlrOcXYAI-M5M.jpg
 categories:
   - Event
 tags:

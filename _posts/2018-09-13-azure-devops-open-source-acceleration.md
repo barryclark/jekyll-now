@@ -3,10 +3,11 @@ id: 316
 title: Azure DevOps Open Source Acceleration :)
 date: 2018-09-13T09:32:51+02:00
 author: Janusz Nowak
-layout: post
+
 guid: http://blog.janono.pl/?p=316
 permalink: /2018/09/azure-devops-open-source-acceleration/
-image: /wp-content/uploads/2018/09/index-hero.jpg
+header:
+  teaser: /wp-content/uploads/2018/09/index-hero.jpg
 categories:
   - Azure DevOps
   - Open Source

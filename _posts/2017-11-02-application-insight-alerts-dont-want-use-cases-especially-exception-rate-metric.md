@@ -3,10 +3,11 @@ id: 275
 title: 'Application Insight Alerts, why You don&#8217;t want to use them in some cases, especially &#8220;exception rate&#8221; metric.'
 date: 2017-11-02T17:36:41+02:00
 author: Janusz Nowak
-layout: post
+
 guid: http://blog.janono.pl/?p=275
 permalink: /2017/11/application-insight-alerts-dont-want-use-cases-especially-exception-rate-metric/
-image: /wp-content/uploads/2017/11/2017-11-02-11_38_34-Metrics-Explorer-Microsoft-Azure.png
+header:
+  teaser: /wp-content/uploads/2017/11/2017-11-02-11_38_34-Metrics-Explorer-Microsoft-Azure.png
 categories:
   - Application Insights
 tags:

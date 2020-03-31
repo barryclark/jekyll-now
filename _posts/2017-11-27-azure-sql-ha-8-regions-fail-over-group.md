@@ -3,10 +3,11 @@ id: 285
 title: Create free High Availability Azure Sql Db in 8 regions with fail-over group using arm template.
 date: 2017-11-27T21:53:49+02:00
 author: Janusz Nowak
-layout: post
+
 guid: http://blog.janono.pl/?p=285
 permalink: /2017/11/azure-sql-ha-8-regions-fail-over-group/
-image: /wp-content/uploads/2017/11/2017-11-09-17_15_52-Geo-Replication-Microsoft-Azure.png
+header:
+  teaser: /wp-content/uploads/2017/11/2017-11-09-17_15_52-Geo-Replication-Microsoft-Azure.png
 categories:
   - Azure Sql
 tags:
