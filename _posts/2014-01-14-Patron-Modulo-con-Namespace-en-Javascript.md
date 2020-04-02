@@ -60,8 +60,17 @@ Para utilizar nuestro patrón módulo con namespace en javascript, primero tenem
 Después tenemos que  incluir nuestro módulo en una función autoejecutable que recibe como parámetro el namespace. 
 Por último pasamos nuestro namespace como parámetro de la función autoejecutable. 
 ```javascript 
-var GammingNamespace = {}; (function (ns) { use strict; //Constructor var SimpleGameModule = function () { //Código del módulo }; //Publicamos el módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {})); 
-                                           ``` 
+var GammingNamespace = {}; 
+(function (ns) { 
+  use strict; 
+  //Constructor 
+  var SimpleGameModule = function () { 
+    //Código del módulo 
+  }; 
+  //Publicamos el módulo en el namespace 
+  ns.SimpleGameModule = SimpleGameModule; 
+}(window.GammingNamespace || {})); 
+``` 
 En el caso de que nuestro Namespace no esté declarado, el módulo dará un error. 
 Como medida de seguridad  pasamos "{}" y así nuestro código seguirá funcionando. 
 Ahora nuestro módulo no es visible desde el contexto global: solo está disponible dentro del Namespaces "GammingNamespace". 
@@ -73,7 +82,17 @@ var objGame = new GammingNamespace.SimpleGameModule();
 
 Los atributos privados tenemos que declararlos en el constructor de nuestro módulo, dentro del objeto _this._ 
 ```javascript 
-var GammingNamespace = {}; (function (ns) { use strict; //Constructor var SimpleGameModule = function () { //Atributos de la instancia this.score; }; //Publicamos nuestro módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {}));
+var GammingNamespace = {}; 
+(function (ns) { 
+  use strict; 
+  //Constructor 
+  var SimpleGameModule = function () { 
+    //Atributos de la instancia 
+    this.score; 
+  }; 
+  //Publicamos nuestro módulo en el namespace 
+  ns.SimpleGameModule = SimpleGameModule; 
+}(window.GammingNamespace || {}));
 ``` 
 Estos atributos solo serán visibles dentro del módulo. 
 Si ejecutáramos el módulo e intentamos acceder a alguno de los atributos, recibiríamos un "undefined": 
@@ -85,24 +104,66 @@ objGame.score;
 ## **¿Cómo declaramos métodos privadas?**
 
 ```javascript 
-var GammingNamespace = {}; (function (ns) { use strict; //Constructor var SimpleGameModule = function () { //Atributos de la instancia this.score; _InitializeGame.call(this); }; //Funciones privadas var _InitializeGame = function () { this.score = 0; }; //Publicamos nuestro módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {}));
+var GammingNamespace = {}; 
+(function (ns) { 
+  use strict; 
+  //Constructor
+  var SimpleGameModule = function () { 
+    //Atributos de la instancia 
+    this.score; _InitializeGame.call(this); 
+  }; 
+  //Funciones privadas 
+  var _InitializeGame = function () { 
+    this.score = 0; 
+  }; 
+  //Publicamos nuestro módulo en el namespace 
+  ns.SimpleGameModule = SimpleGameModule; 
+}(window.GammingNamespace || {}));
 ```
 
 ## **¿Cómo declaramos métodos y atributos públicos?**
 
 Para crear métodos o atributos públicos tenemos que encapsularlos dentro de la propiedad [prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Prototype-based_programming "Prototype style programming") de nuestro módulo: 
 ```javascript 
-var GammingNamespace = {}; (function (ns) { use strict; //Constructor var SimpleGameModule = function () { //Atributos de la instancia this.score; _InitializeGame.call(this); }; //Funciones privadas var _InitializeGame = function () { this.score = 0; }; //Funciones públicas SimpleGameModule.prototype = { AddScore : function (point) { this.score += point; }, GetScore : function () { return "Tu puntuación es: " + this.score; } } //Publicamos nuestro módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {}));
-``` 
+var GammingNamespace = {}; 
+(function (ns) {
+  use strict; 
+  //Constructor 
+  var SimpleGameModule = function () { 
+    //Atributos de la instancia 
+    this.score; _InitializeGame.call(this); }; 
+  //Funciones privadas 
+  var _InitializeGame = function () {
+    this.score = 0; 
+  }; 
+  //Funciones públicas 
+  SimpleGameModule.prototype = { 
+    AddScore : function (point) { 
+      this.score += point; 
+    }, 
+    GetScore : function () { 
+      return "Tu puntuación es: " + this.score; 
+    } 
+  } 
+  //Publicamos nuestro módulo en el namespace 
+  ns.SimpleGameModule = SimpleGameModule; 
+}(window.GammingNamespace || {}));
+```
 Encapsulamos todos los métodos públicos sobrescribiendo el atributo _prototype_ para optimizar el "minificado" del fichero. 
 Como la palabra _prototype_ es reservada del lenguaje, si creáramos cada método publico individualmente en el _prototype,_ no podríamos "minificar" esas líneas. 
 Si tenemos muchos métodos públicos estaremos perdiendo ratio de compresión. 
 ```javascript  
-//Public Prototype GammingNamespace.prototype.AddScore: function (points) { this.score += points } GammingNamespace.prototype.GetScore: function () { return this.score; } 
+//Public 
+Prototype GammingNamespace.prototype.AddScore: function (points) { 
+  this.score += points 
+} 
+GammingNamespace.prototype.GetScore: function () { 
+  return this.score; 
+} 
 ```
 Si vamos a utilizar herencia para nuestro módulo tenemos que declarar cada método individualmente en el _prototype._ Esto lo explicaremos en el post dedicado a la herencia en javascript.
 
-## **¿****Cómo trabajo con el patrón módulo con namespace en Javascript?**
+## **¿Cómo trabajo con el patrón módulo con namespace en Javascript?**
 
 Solo tenemos que crear una instancia de nuestro módulo y utilizar sus métodos públicos: 
 ```javascript 
@@ -119,7 +180,31 @@ Una buena práctica para encapsular totalmente nuestros módulos es pasar estos 
 Dentro de nuestro módulo guardaremos una copia de estos objectos. 
 De esta forma solo utilizaremos objectos internos del módulo y ganaremos algo de rendimiento, porque cada vez que queramos acceder a "jQuery" o al objecto "window" lo haremos en nuestra copia local y no tendremos que acceder al contexto global del navegador. 
 ```javascript 
-var GammingNamespace = {}; (function (ns, jQuery, window) { use strict; var _$ = jQuery; var _window = window; //Constructor var SimpleGameModule = function () { //Atributos de la instancia this.score; _InitializeGame.call(this); }; //Funciones privadas var _InitializeGame = function () { this.score = 0; }; //Funciones públicas SimpleGameModule.prototype = { AddScore : function (point) { this.score += point; }, GetScore : function () { return "Tu puntuación es: " + this.score; } } //Publicamos nuestro módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {}, window, jQuery)); 
+var GammingNamespace = {}; 
+(function (ns, jQuery, window) { 
+  use strict; 
+  var _$ = jQuery; 
+  var _window = window; 
+  //Constructor 
+  var SimpleGameModule = function () { 
+    //Atributos de la instancia 
+    this.score; _InitializeGame.call(this); 
+  };
+  //Funciones privadas 
+  var _InitializeGame = function () { 
+    this.score = 0; 
+  }; //Funciones públicas 
+  SimpleGameModule.prototype = { 
+    AddScore : function (point) { 
+      this.score += point; 
+    },
+    GetScore : function () {
+      return "Tu puntuación es: " + this.score;
+    } 
+  } 
+  //Publicamos nuestro módulo en el namespace 
+  ns.SimpleGameModule = SimpleGameModule;
+}(window.GammingNamespace || {}, window, jQuery)); 
 ```
 
 ## **Ventajas de este patrón**
