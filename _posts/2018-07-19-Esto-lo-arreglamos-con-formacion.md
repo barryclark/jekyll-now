@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Patrón Módulo con Namespace en Javascript
+title: Esto lo arreglamos con formación
 categories:
   - Buenas Prácticas
   - Motivación
