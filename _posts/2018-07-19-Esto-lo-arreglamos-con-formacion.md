@@ -1,5 +1,12 @@
 ---
-published: false
+layout: post
+title: Patrón Módulo con Namespace en Javascript
+categories:
+  - Buenas Prácticas
+  - Motivación
+tags:
+  - motivación
+published: true
 ---
 
 > El que aprende y aprende y no practica lo que sabe, es como  el que ara y ara y no siembra  - Platón-
