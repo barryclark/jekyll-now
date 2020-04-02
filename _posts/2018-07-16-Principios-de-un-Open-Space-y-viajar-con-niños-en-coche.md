@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Patrón Módulo con Namespace en Javascript
+title: Principios de un Open Space y viajar con niños en coche
 categories:
   - Agile
   - Crianza
