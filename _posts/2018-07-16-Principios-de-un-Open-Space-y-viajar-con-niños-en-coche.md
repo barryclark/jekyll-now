@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Patrón Módulo con Namespace en Javascript
