@@ -1,8 +1,13 @@
 ---
 layout: post
-title:  "Patrón Módulo con Namespace en Javascript"
-categories: [Buenas Prácticas, javascript, Patrones de Diseño]
-tags: [javascript]
+title: Patrón Módulo con Namespace en Javascript
+categories:
+  - Buenas Prácticas
+  - javascript
+  - Patrones de Diseño
+tags:
+  - javascript
+published: true
 ---
 
 ## Introducción
@@ -25,26 +30,57 @@ En lenguajes orientados a objetos como Java y .Net podemos implementar módulos 
 ## **¿Cómo declaramos un módulo en Javascript?**
 
 Para crear un módulo necesitamos definirlo como una función: 
-[code language="javascript"] 
+```javascript 
 var SimpleGameModule = function () { //Código del módulo }; 
-[/code] 
+``` 
 
 Para crear una instancia de nuestro nuevo módulo solo tenemos que ejecutar:
-[code language="javascript"] 
-var objGame = new SimpleGameModule(); [/code]  
-Si no queremos crear instancias de nuestro módulo y queremos tenerlo disponible desde el inicio,  tenemos que declararlo como una [función autoejecutable](http://www.etnassoft.com/2011/03/14/funciones-autoejecutables-en-javascript/ "Funciones autoejecutables"). Fijaros en "()" después de la llave de cierre del módulo: eso hace que cuando el intérprete de Javascript lea la función, directamente la ejecute. [code language="javascript"] var SimpleGameModule = (function(){ //Código del módul })(); [/code]
+```javascript 
+var objGame = new SimpleGameModule();
+```
+
+Si no queremos crear instancias de nuestro módulo y queremos tenerlo disponible desde el inicio,  tenemos que declararlo como una [función autoejecutable](http://www.etnassoft.com/2011/03/14/funciones-autoejecutables-en-javascript/ "Funciones autoejecutables"). 
+Fijaros en "()" después de la llave de cierre del módulo: eso hace que cuando el intérprete de Javascript lea la función, directamente la ejecute. 
+```javascript 
+var SimpleGameModule = (function(){ //Código del módul })(); 
+```
  
 ## ** ¿Cómo crear un Namespace?**
 
-Cuando nuestras aplicaciones crezcan tendremos muchos módulos que necesitaremos organizar. Los Namespaces nos ayudan organizar nuestros módulo en grupos funcionales. Declarar un módulo en javascript es tan sencillo como crear una variable: [code language="javascript"] var GammingNamespace = {}; [/code]
+Cuando nuestras aplicaciones crezcan tendremos muchos módulos que necesitaremos organizar.
+Los Namespaces nos ayudan organizar nuestros módulo en grupos funcionales.
+Declarar un módulo en javascript es tan sencillo como crear una variable: 
+```javascript  
+var GammingNamespace = {};
+```
 
 ## **¿Cómo añadir nuestro módulo al Namespace?**
 
-Para utilizar nuestro patrón módulo con namespace en javascript, primero tenemos que declarar nuestro namespace. Después tenemos que  incluir nuestro módulo en una función autoejecutable que recibe como parámetro el namespace. Por último pasamos nuestro namespace como parámetro de la función autoejecutable. [code language="javascript"] var GammingNamespace = {}; (function (ns) { use strict; //Constructor var SimpleGameModule = function () { //Código del módulo }; //Publicamos el módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {})); [/code] En el caso de que nuestro Namespace no esté declarado, el módulo dará un error. Como medida de seguridad  pasamos "{}" y así nuestro código seguirá funcionando. Ahora nuestro módulo no es visible desde el contexto global: solo está disponible dentro del Namespaces "GammingNamespace". [code language="javascript"] var objGame = new GammingNamespace.SimpleGameModule(); [/code]
+Para utilizar nuestro patrón módulo con namespace en javascript, primero tenemos que declarar nuestro namespace. 
+Después tenemos que  incluir nuestro módulo en una función autoejecutable que recibe como parámetro el namespace. 
+Por último pasamos nuestro namespace como parámetro de la función autoejecutable. 
+```javascript 
+var GammingNamespace = {}; (function (ns) { use strict; //Constructor var SimpleGameModule = function () { //Código del módulo }; //Publicamos el módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {})); 
+                                           ``` 
+En el caso de que nuestro Namespace no esté declarado, el módulo dará un error. 
+Como medida de seguridad  pasamos "{}" y así nuestro código seguirá funcionando. 
+Ahora nuestro módulo no es visible desde el contexto global: solo está disponible dentro del Namespaces "GammingNamespace". 
+```javascript 
+var objGame = new GammingNamespace.SimpleGameModule();
+```
 
 ## **¿Cómo declaramos atributos privados en nuestro módulo?**
 
-Los atributos privados tenemos que declararlos en el constructor de nuestro módulo, dentro del objeto _this. _ [code language="javascript"] var GammingNamespace = {}; (function (ns) { use strict; //Constructor var SimpleGameModule = function () { //Atributos de la instancia this.score; }; //Publicamos nuestro módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {})); [/code] Estos atributos solo serán visibles dentro del módulo. Si ejecutáramos el módulo e intentamos acceder a alguno de los atributos, recibiríamos un "undefined": [code language="javascript"] var objGame = new GammingNamespace.SimpleGameModule(); objGame.score [/code]
+Los atributos privados tenemos que declararlos en el constructor de nuestro módulo, dentro del objeto _this._ 
+```javascript 
+var GammingNamespace = {}; (function (ns) { use strict; //Constructor var SimpleGameModule = function () { //Atributos de la instancia this.score; }; //Publicamos nuestro módulo en el namespace ns.SimpleGameModule = SimpleGameModule; }(window.GammingNamespace || {}));
+``` 
+Estos atributos solo serán visibles dentro del módulo. 
+Si ejecutáramos el módulo e intentamos acceder a alguno de los atributos, recibiríamos un "undefined": 
+```javascript 
+var objGame = new GammingNamespace.SimpleGameModule(); 
+objGame.score;
+```
 
 ## **¿Cómo declaramos métodos privadas?**
 
