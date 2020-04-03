@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 layout: post
 title: Mi workshop de presencial a online
 categories:
@@ -13,7 +10,8 @@ tags:
   - remote working
   - online vs offline
 published: true
---
+---
+
 > En la vida, unas veces se gana, otras se aprende. - Anonimo -
 
 Durante el confinamineto por COVID-19 tuvimos que dar en remoto un workshop que estaba pensaso para hacerlo presencial.
