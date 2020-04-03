@@ -17,7 +17,7 @@ published: true
 Durante el confinamineto por COVID-19 tuvimos que dar en remoto un workshop que estaba pensaso para hacerlo presencial.  
 Te explico un poco las cosas que adaptamos para que el workshop funcionara.
 
-El día antes de hacer el workshop hubo este meetup de Agile Spain: “Cómo pasar una formación presencial a virtual y que salga algo potente”
+El día antes de hacer el workshop hubo este meetup de Agile Spain: “Cómo pasar una formación presencial a virtual y que salga algo potente”.   
 Te puede dar ideas: 
 [https://www.youtube.com/watch?v=0KPOdm6vyFs](https://www.youtube.com/watch?v=0KPOdm6vyFs)
 
