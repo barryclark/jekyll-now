@@ -28,5 +28,5 @@ Te explico lo que yo cambié en el nuestro.
 - Necesitas una dinámica online para que la gente se conozca un poco y pierda la vergüenza de estar con otra gente que quizás no conozcan (Yo tenía la suerte que nos conocíamos más o menos todos)
 - Yo les puse un juego online y cada persona que entraba se ponía a jugar,si quería. Luego comentamos cómo había ido, si le gustan los videojuegos, etc… Algo para romper el hielo. 
 - Yo puse esto:
-![Game.png]({{ site.baseurl }}/images/Game.png)
+![Game.png]({{ site.baseurl }}/images/2020-03-20-Mi-workshop-de-presencial-a-online/Game.png)
 
