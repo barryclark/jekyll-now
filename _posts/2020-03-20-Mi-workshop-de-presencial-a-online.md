@@ -26,5 +26,7 @@ Te explico lo que yo cambié en el nuestro.
 - Habrá gente que se conectará antes de tiempo y gente que se conectará 5 minutos después de la hora…. Ten preparado algo para la gente que llega pronto. Si no, pueden estar 10 minutos mirando a la cámara y empezar la sesión desenchufados.
 - Necesitas una dinámica online para que la gente se conozca un poco y pierda la vergüenza de estar con otra gente que quizás no conozcan (Yo tenía la suerte que nos conocíamos más o menos todos)
 - Yo les puse un juego online y cada persona que entraba se ponía a jugar,si quería. Luego comentamos cómo había ido, si le gustan los videojuegos, etc… Algo para romper el hielo. 
+- Yo puse esto:
+![Game.png]({{ site.baseurl }}/images/Game.png)
 
 
