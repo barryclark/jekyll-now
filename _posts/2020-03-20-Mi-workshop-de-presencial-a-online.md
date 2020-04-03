@@ -52,4 +52,16 @@ Te explico lo que yo cambié en el nuestro.
 - No nos funcionó el link de la pizarra compartida y una parte que la gente no entendía, con un dibujo hubiera sido muy sencillo (Ten preparada otra pizarra ).   
 - Cuando alguien se pierde, ten preparado el código para dárselo en caso de ser necesario, sino retrasará a todo el grupo y no podrás ponerte a su lado a ayudarle mientras los otros avanzan.  
 
+## Herramientas que usamos y problemas que nos dieron:
+- El chat de Hangout para no interrumpir continuamente: 
+    - El chat de Hangout no es persistente, cada vez que recargas la página lo pierdes….
+- Una pizarra blanca compartida por sí tenemos que dibujar: https://whiteboardfox.com/1476328-9573-0179	
+    - Falló la web justo cuando lo necesitábamos, para la próxima probaré con https://jamboard.google.com/ y tendré 2 pizarras por si acaso.
+
+
+- Para el feedback, ROTI, y otras cosas, monté  3 tableros con Mentimeter: (se pasan arrastrando el dedo hacia la izquierda)
+    - Link para ver los feedbacks, ROTI, etc..: [https://www.mentimeter.com/s/69a19380d0fbcb28fcaa101c5ad1b9d8/3342658372c6](https://www.mentimeter.com/s/69a19380d0fbcb28fcaa101c5ad1b9d8/3342658372c6)
+    - Link para los asistentes para contestar: [https://www.menti.com/cazfn7yzfh](https://www.menti.com/cazfn7yzfh)
+    - O entrar en [https://menti.com](https://menti.com) y usa el código: XX XX XX
+
 
