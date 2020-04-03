@@ -1,5 +1,28 @@
 <h1>Rocky</h1>
-<a href="/blog.html">Blog</a>
-<a href="/about.html"></a>
-<h1>继续请按下面的键：</h1>
-<a href="/blog.html">继续</a>
+<a href="/index.html">Blog</a>
+<a href="/about.html">About</a>
+<a href="/index.html">刷新</a>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">查看全部 READ MORE</a>
+    </article>
+  {% endfor %}
+</div>
+<div class="ui segment" href="http://github.com/Rockycuxin/">
+  <button class="ui button">
+    go to github
+  </button>
+</div>
+<div class="qm_mailme">
+  <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=6ZuGioKQx46DqY_GkYSIgIXHioaE" style="text-decoration:none;">
+  <img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"></a>
+</div>
