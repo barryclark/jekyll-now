@@ -45,4 +45,11 @@ Te explico lo que yo cambié en el nuestro.
 - Hacer las pausas típicas de desayuno/comida, pero dar la opción de cada 30-40 minutos hacer 5 minutos de pausa (en mi caso querían ir al baño y no decían nada hasta que desaparecen, o tenían algo que hacer un momento en casa y estaban aguantando hasta la pausa, pero estaban pensando en lo que tenían que hacer…..)  
 - Cuando he hecho este taller presencial, la diapositiva suele ser una imágen un titular o 1 frase y yo explico mis cosas. Para la online cambié el formato y tenía la diapositiva con el título o frase y otra con el contenido.  
 - Por ejemplo: La diapositiva oculta, en el taller presencial no existe. En Online las pongo todas visibles y mientras explico pueden seguir el hilo leyendo la diapositiva.  
+![DiapositivasOcultas.png]({{ site.baseurl }}/images/2020-03-20-Mi-workshop-de-presencial-a-online/DiapositivasOcultas.png)   
+
+## Momentos de incertidumbre:
+- Cuando hagas pausas y la gente se vaya…. ¿Volverán? ¿Y si faltan 2? ¿Sigo? ¿Espero?..... En mi caso solo se cayó 1…. Y fueron puntuale todas las pausas.  
+- No nos funcionó el link de la pizarra compartida y una parte que la gente no entendía, con un dibujo hubiera sido muy sencillo (Ten preparada otra pizarra ).   
+- Cuando alguien se pierde, ten preparado el código para dárselo en caso de ser necesario, sino retrasará a todo el grupo y no podrás ponerte a su lado a ayudarle mientras los otros avanzan.  
+
 
