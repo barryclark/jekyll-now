@@ -11,7 +11,7 @@ tags:
   - online vs offline
 published: true
 --
-> En la vida, unas veces se gana, otras se aprende.  
+> En la vida, unas veces se gana, otras se aprende. - Anonimo -
 
 Durante el confinamineto por COVID-19 tuvimos que dar en remoto un taller que estaba pensaso para hacerlo presencial.
 Te explico un poco las cosas que adaptamos para que el taller funcionara.
