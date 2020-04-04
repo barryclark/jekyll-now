@@ -44,7 +44,7 @@ Case 2 of Gateless Barrier is also:
 - Case 102 of Dogen's Shinji Shobogenzo.
 
 _"Such a person does not evade the law of cause and effect"_ is elsewhere rendered as:
-- _"The law of cause and effect cannot be obscured."_ (Koun Yamada Roshi, The Gateless Gate, 19XX)
+- _"The law of cause and effect cannot be obscured."_ (Koun Yamada Roshi, The Gateless Gate, 1979)
 - _"He is not blind to cause and effect."_ (Thomas Cleary, Book of Serenity, Case 8, 2005)
 - _"Don't ignore cause and effect"_ (Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005)
 
@@ -54,8 +54,8 @@ Book of Serenity Case 8 has some comments/notes/interjections following the case
 
 # Readings
 
-When I read cases, I tend to take notes: some thoughts that are prompted by reading the text, or coming later remembering the text, or even just unprompted but related.  
-In the following, I arranged my notes in "reads": I related the notes to the aspect of the text that prompted them, and organized them in topics.
+When I read cases, I tend to take notes: some thoughts that are prompted by reading the text, or coming later remembering the text, or just unprompted.  
+In the following, I arranged my notes in "reads": I related the notes to an aspect of the text, and organized them in topics.
 
 These notes offer an account of my way to "process" this case, in order to support others' own processes. Indeed, I tried to keep **only the investigative side** of my notes, getting rid of my own thoughts to keep only the prompts, the nudges, the questions. I offer those hoping they can be **useful prompts for your own investigation**.
 
