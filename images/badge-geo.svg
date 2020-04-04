@@ -9,14 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="35.377453mm"
-   height="34.873817mm"
-   viewBox="0 0 35.377453 34.873817"
+   width="35mm"
+   height="35mm"
+   viewBox="0 0 35 35"
    version="1.1"
    id="svg8"
-   inkscape:export-filename="/home/georgios/dev/blog/images/badge-geo2.png"
-   inkscape:export-xdpi="367.81168"
-   inkscape:export-ydpi="367.81168"
+   inkscape:export-filename="/home/georgios/dev/blog/images/badge-geo.-196x196.png"
+   inkscape:export-xdpi="142.24001"
+   inkscape:export-ydpi="142.24001"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="badge-geo.svg">
   <defs
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="37.48313"
-     inkscape:cy="-4.7066728"
+     inkscape:zoom="2.1221291"
+     inkscape:cx="-12.205507"
+     inkscape:cy="19.266434"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -43,10 +43,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1280"
-     inkscape:window-height="987"
-     inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-width="1680"
+     inkscape:window-height="936"
+     inkscape:window-x="1280"
+     inkscape:window-y="27"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -70,7 +70,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-106.70477,-95.53235)">
+     transform="translate(-106.70477,-95.406167)">
     <g
        id="g819"
        transform="matrix(0.26458333,0,0,0.26458333,55.001584,2.2568138)">
