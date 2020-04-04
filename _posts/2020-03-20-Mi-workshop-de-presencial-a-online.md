@@ -76,6 +76,6 @@ Te explico lo que yo cambié en el nuestro.
 - Para el feedback, ROTI, y otras cosas, monté 3 tableros con Mentimeter: (a cada tablero se pasan arrastrando el dedo hacia la izquierda)
     - Link para ver los feedbacks, ROTI, etc..: [https://www.mentimeter.com/s/69a19380d0fbcb28fcaa101c5ad1b9d8/3342658372c6](https://www.mentimeter.com/s/69a19380d0fbcb28fcaa101c5ad1b9d8/3342658372c6)
     - Link para los asistentes para contestar: [https://www.menti.com/cazfn7yzfh](https://www.menti.com/cazfn7yzfh)
-    - O entrar en [https://menti.com](https://menti.com) y usa el código: XX XX XX
+    - O entrar en [https://menti.com](https://menti.com) y usa el código: XX XX XX  
 
-
+Espero que os sea de ayuda!  
