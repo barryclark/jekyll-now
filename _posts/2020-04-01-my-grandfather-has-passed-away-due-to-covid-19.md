@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "My grandfather has passed away due to COVID-19"
+title: "My grandfather has passed away due to COVID-19 Updated: My Uncle has also passed."
 description: "My grandfather passes away due to COVID-19, and taking bereavement leave"
 location: London UK
 image: https://nickandcheryl2018.files.wordpress.com/2019/04/sun-3-speeches-54-of-133.jpg?w=1750&h=
 tags:
   - "2020"
 ---
+
+*Updated 6 April: My Uncle has also passed away. See below for more.*
 
 My grandfather, Jack Pang, has passed away due to COVID-19. My family are devastated and I will be off work for a few days.
 
@@ -21,3 +23,11 @@ Last week he was diagnosed with COVID-19, having already been in hospital for a 
 [![Granddad receiving tea in the tea ceremony during my wedding in 2018](https://nickandcheryl2018.files.wordpress.com/2019/04/sun-3-speeches-55-of-133.jpg?w=1750&h=)](https://johnson-hung.com/)
 
 *Granddad receiving tea in the tea ceremony during my [wedding in 2018](https://johnson-hung.com/).*
+
+Monday 6 April:
+
+Sadly my Uncle passed away four days later. He was staying with my grandmother, and had not responded to phone calls and messages for a few days. My mother went to check on them and found him dead in his bed. The timing suggests coronavirus although we will likely never know.
+
+![](/images/2020-04-01-my-grandfather-has-passed-away-due-to-covid-19.jpeg)
+
+My great grandmother and grandparents in the middle and my mother, aunts and uncle standing. (1960s)
