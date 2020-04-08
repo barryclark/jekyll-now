@@ -1,5 +1,5 @@
-# [http://rockycuxin.github.io/about](About)
-# [http://rockycuxin.github.io/](Blog)
+# [About](http://rockycuxin.github.io/about)
+# [Blog](http://rockycuxin.github.io/)
 ## mail邮箱：
 [mailto:1218374083@qq.com](1218374083@qq.com)
 ## QQ:
