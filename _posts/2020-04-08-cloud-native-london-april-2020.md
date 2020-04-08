@@ -27,7 +27,7 @@ Cloud Native London is holding our very first [virtual meetup]({% link _posts/20
 * 8:30pm Next Generation Platform Architecture (Andrei Cioaca, Capgemini)
 * 9:00pm Wrap up
 
-As always, we are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), and [D2iQ](https://d2iq.com) for your ongoing support and sponsorship.
+As always, we are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Pusher](https://pusher.com/), [Humio](https://humio.com/), [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com) and [Palo Alto Networks](https://www.paloaltonetworks.com/), for your ongoing support and sponsorship.
 
 See you in a few hours!
 
