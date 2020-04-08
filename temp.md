@@ -191,21 +191,30 @@ import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 
 public class Test {
-    public static void main(String[] args) {
+   public static void main(String[] args) {
 
-        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+   System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+   String info = "Java " + System.getProperty("java.version") + " "
+         + Core.NATIVE_LIBRARY_NAME + Core.VERSION_STATUS;
+   System.out.println(info);
 
-        String info = "Java " + System.getProperty("java.version") + " "
-                + Core.NATIVE_LIBRARY_NAME + Core.VERSION_STATUS;
-        System.out.println(info);
+   var srcImage = Imgcodecs.imread("duke.png", Imgcodecs.IMREAD_UNCHANGED);
 
-        var srcImage = Imgcodecs.imread("duke.png");
-        Imgproc.cvtColor(srcImage, srcImage, Imgproc.COLOR_BGR2GRAY);
-        Imgcodecs.imwrite("duke.png", srcImage);
+   List<Mat> channels = new ArrayList<>();
+   Core.split(srcImage, channels);
+   var chAlpha = channels.get(3); // 4th channel = Alpha
 
-        var width = srcImage.cols();
-        var height = srcImage.rows();
-        System.out.println("Image size : " + width + " X " + height + " pixels.");
+   Imgproc.cvtColor(srcImage, srcImage, Imgproc.COLOR_BGRA2GRAY);
+
+   List<Mat> greyChannel = new ArrayList<>();
+   Core.split(srcImage, greyChannel);
+   var chGray = greyChannel.get(0);
+
+   Mat grayDuke = new Mat();
+   var listMat = Arrays.asList(chGray, chGray, chGray, chAlpha); // 3 channels + Alpha
+   Core.merge(listMat, grayDuke);
+
+   Imgcodecs.imwrite("duke_gray.png", grayDuke);
 
     }
 }
