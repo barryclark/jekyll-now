@@ -23,6 +23,8 @@ In this series of two articles I will
 
 As this is an evolving ecosystem, I will be using a fusion of OpenBanking and PSD2 terminology. 
 
+<div id="psd2-content-container" markdown="1">
+
 ## PSD2 
 
 From an end-user standpoint, PSD2 can be (simplistically) summarised in the following sentence  
@@ -46,7 +48,7 @@ The remaining of the technical choices and concepts have evolved, taking into ac
 matching the [spirit][18] (if not the exact letter) of the law.  
 
 The following diagram describes the PSD2 ecosystem, the key elements and their interactions from a high level.  
-It will auto-scroll on most browsers, as I am making references to it throughout the text below.*
+*It will auto-scroll on most browsers, as I am making references to it throughout the text below.*
 
 <div style="position: -webkit-sticky; position: sticky; top: 0;">
 <img
@@ -131,12 +133,12 @@ mechanism for the Customer to revoke the Consent at any time prior to expiration
 ### ASPSP 
 
 In PSD2-speak a bank has the ceremonial title Account Servicing Payment Services Provider.  
-The reason is that PSD2 covers a wider range of deposit-holding organisations, like [building societies][26] in the UK.
+The reason is that PSD2 covers not just banks but a wider range of deposit-holding organisations, like 
+[building societies][26] in the UK.
 
-The ASPSPs are responsible for implementing and enforcing the majority of the OpenBanking features.  
-These are listed below.
+The ASPSPs are responsible for implementing and enforcing the 3 key OpenBanking features.  
 
-#### APIs
+#### 1. APIs
 
 ##### Specification
 
@@ -173,52 +175,58 @@ In this case, the TPP fills in a form in the ASPSP's API portal, uploading their
 This approach follows the [OpenID Connect Dynamic Client Registration][38] specification. The TPP creates a signed 
 [software statement assertion][39], containing both the TPP's information as well as the QSEAL.
 
-Behind the scenes both approaches achieve the same thing: creating a [client entry][40] in the authorisation server's database,
-with the QSEAL as credentials.  
+Behind the scenes both approaches achieve the same thing: creating a [client entry][40] for the TPP's Application in 
+the authorisation server's database, with the QSEAL as client credentials.  
 
 ##### Alternative channels 
 
-Worth noting that
-If an API was not available of the APIs performance is not up to scratch (e.g. consecutive downtime/unavailability of 
-more than 30 secs)
-ASPSP has to provide fallback mechanism 
-fallback being direct access to their existing customer-facing interface <sup>[2](#footnote_2)</sup>
-https://medium.com/@touchtech/eba-publishes-guidelines-on-psd2-fallback-mechanism-9923575a45fc
+It is worth noting that PSD2 explicitly mandates that ASPSPs make a dedicated TPP channel, *not discriminating in terms 
+of performance and availability* compared to their other channels (mobile, eBanking,...).  
+ 
+What this means [in practice][41] is that the new APIs need to have  
+* the same uptime as mobile/eBanking, 
+* the same performance/throughput, and 
+* (as a stop-gap) no unplanned downtime of more than 30 consecutive secs
 
-Creation of a new API with a whole new security profile 
-is not a small undertaking 
-especially for small medium banks 
-there is a growing marketplace of providers for PSD2 API compliance solutions
-a bolt-on platform of APIs to connect to existing legacy systems
+The onus is on the ASPSPs to continuously prove that they meet this criteria.  
+If they do not, then they will need to provide a "fallback mechanism". This fallback can be anything, from a complete 
+separate API stack to modifying their existing customer-facing interface for programmatice access by TPPs. <sup>[3](#footnote_3)</sup>
 
-#### Security 
+The creation of a new API with a complex new security profile is not a small undertaking, especially for small and 
+medium banks.   
+This has led to a growing marketplace of providers for PSD2 API compliance solutions. These are "bolt-on" platforms exposing 
+OpenBanking-compatible APIs to the outside world. Under the hood they can be configured to connect to existing legacy 
+bank systems.
 
-##### QSEAL / QWAC 
+#### 2. Security 
 
-In addition, the overall security and trust is established by 2 key pairs:
+The OpenBanking API security is built on top of the [Financial API][3] and [Open ID Connect][4] specifications.  
+In both cases it has opted for the highest security options, namely  
+* [MA-TLS][43] for communication, and 
+* [JWT signatures][42] for API client identification.  
 
-Transport layer (a.k.a. QWAC)
-This is for MA-TLS communication between TPP and bank.
-This is issued by the [OBIE’s Certification Authority][6], one per TPP (legal entity). 
-A [revocation][7] of this certificate signals to all the banks “the TPP has lost its license“.
+These are made possible by using a pair of...
 
-Application layer (a.k.a. QSEAL)
-This is used for signing exchanged JWTs.
-This can be a key-pair issued by any CA (even a self-signed one) and uploaded to the OB directory. There is one QSEAL per Application.
-OBIE publishes all the public keys in its JWKS endpoint. 
-Example [showing OBIE’s][8] itself public keys (has security warning). 
+##### QSEAL and QWAC 
 
-Qualified Website Authentication Certificates (QWACs) provide a method to authenticate ‘Internet Entity
-Identity’ and encrypt communications in order to provide confidentiality. QWACs are used with specific
-protocols at the Transport Layer and are not designed to be used at the Application Layer.
-• Qualified Electronic Seal Certificates (QSEALCs) are not designed to be used for ‘Internet Entity Identity’
-or confidentiality at the Transport Layer for Transport Layer Security (TLS) or Mutual Authentication/
-Transport Layer Security (MA/TLS). However, a QSEALC can be used at the Application Layer, with the
-messages being passed between communicating parties to prove origin, authenticity, and integrity that
-the data comes from the party that it is meant to. Additionally, due to the nature of QSEALC and EBA RTS
-for SCA/CSC Under PSD2 requirements needing information about the ‘Legal Persons Owner’ of that
-certificate, it can be used to establish the PSD2 ‘Financial Entity Identity’ (as opposed to the ‘Internet
-Entity Identity’ in the QWAC).
+These acronyms come from the [eIDAS][17] regulation.  
+* **QWAC**  
+Qualified Website Authentication Certificates (QWACs) are intended for 'Internet Entity Identity' authentication and 
+encryption. They are meant to be used at the [Transport Layer][44]. In OpenBanking they are used in MA-TLS communication
+between the TPP and the bank.
+* **QSEAL**  
+Qualified Electronic Seal Certificates (QSEALCs) are to be used at the [Application Layer][44]. They are used to "stamp" 
+communication to prove origin, authenticity and integrity. In OpenBanking they are used for JWT signatures.
+
+QWACs and QSEALs are issued by QTSPs, signed by the QTSPs Certification Authority. The certificates contains 
+[specific fields][45] allowing the bank to identify the TPP legal entity.  
+In the digital domain, the presence of valid certificates is legal proof that  
+* the call to the bank's APIs comes from a TPP
+* ...who is properly regulated (its regulator id being in the certificate), and
+* ...which has undergone checks by the QTSP.
+
+Conversely, a call with [expired/revoked certificates][7] is a signal that “the TPP has lost its license“.  
+Which makes it critical that the banks perform...
 
 ##### Certificate validation 
 
@@ -227,17 +235,22 @@ CA revocation lists in LB
 
 https://ec.europa.eu/tools/lotl/eu-lotl.xml
 
-##### Customer approval
+This is issued by the [OBIE’s Certification Authority][6], one per TPP (legal entity). 
+A [revocation][7] of this certificate signals to all the banks “the TPP has lost its license“.
+
+Example [showing OBIE’s][8] itself public keys (has security warning). 
+
+#### 3. Customer consent
 
 FAPI and OIDC specifications
-The OpenBanking technical specification is using the Consent to build on top of the [FAPI][3] and [OIDC][4] specifications.
+The OpenBanking technical specification is using the Consent to .
 In particular, it is using the [Hybrid Flow][5] with the intentId being the unique Consent identifier.  
 
 Visualizing the flow from a customer’s point-of-view will make things clearer.
 
 This [document][10] has mockups describing guideline happy and unhappy paths for various interaction scenarios (web, mobile, token-based identification,…).
 
-### Regulator
+### Regulators and passporting
 
 EU-specific concern 
 Check when passporting 
@@ -265,7 +278,9 @@ https://docs.sandbox.konsentus-dev.com/api-reference/regulatory-checking.html#ov
 These are mechanical turk operations 
 with an army of people checking regulator websites and updating databases for the APIs to work
 
-### Around the world 
+</div>
+
+## Around the world 
 
 Europe has trail-blazed with the legal framework and the technology definitions choices and concepts are replicated around the world
 
@@ -276,9 +291,20 @@ https://consumerdatastandardsaustralia.github.io/standards/#client-authenticatio
 Japan
 https://www.zenginkyo.or.jp/fileadmin/res/news/news290713_3.pdf
 
-
 All countries around the world
 https://www.openbankingexpo.com/wp-content/uploads/2019/09/ndgit-Open-Banking-APIs-worldwide-Whitepaper.pdf
+
+## Some parting thoughts 
+
+![Walled garden](../assets/images/openbanking/annie-spratt-4U9azPdkLOA-unsplash.jpg)
+> Photo by Annie Spratt on Unsplash
+
+Customer own info but not just that 
+
+Banks like all businesses had created Walled gardens 
+Disintermediation between 
+TBTF
+
 
 ## In the next episode
 
@@ -337,3 +363,8 @@ take PSD2 API implementation seriously.
   [38]: https://openid.net/specs/openid-connect-registration-1_0.html
   [39]: https://ldapwiki.com/wiki/OAuth%202.0%20Software%20Statement
   [40]: https://connect2id.com/products/server/docs/guides/client-registration
+  [41]: https://medium.com/@touchtech/eba-publishes-guidelines-on-psd2-fallback-mechanism-9923575a45fc
+  [42]: https://openid.net/specs/draft-jones-json-web-signature-04.html
+  [43]: https://en.wikipedia.org/wiki/Mutual_authentication
+  [44]: https://en.wikipedia.org/wiki/OSI_model
+  [45]: https://en.wikipedia.org/wiki/Qualified_website_authentication_certificate
