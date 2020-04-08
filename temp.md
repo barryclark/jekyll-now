@@ -189,32 +189,30 @@ This basic [Test](https://gist.github.com/delabassee/1ba380e1f32d20f2c518b1e6c6b
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
+...
 
 public class Test {
-   public static void main(String[] args) {
+  public static void main(String[] args) {
 
-   System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-   String info = "Java " + System.getProperty("java.version") + " "
-         + Core.NATIVE_LIBRARY_NAME + Core.VERSION_STATUS;
-   System.out.println(info);
+    System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
-   var srcImage = Imgcodecs.imread("duke.png", Imgcodecs.IMREAD_UNCHANGED);
+    var srcImage = Imgcodecs.imread("duke.png", Imgcodecs.IMREAD_UNCHANGED);
 
-   List<Mat> channels = new ArrayList<>();
-   Core.split(srcImage, channels);
-   var chAlpha = channels.get(3); // 4th channel = Alpha
+    List<Mat> channels = new ArrayList<>();
+    Core.split(srcImage, channels);
+    var chAlpha = channels.get(3); // 4th channel = Alpha
 
-   Imgproc.cvtColor(srcImage, srcImage, Imgproc.COLOR_BGRA2GRAY);
+    Imgproc.cvtColor(srcImage, srcImage, Imgproc.COLOR_BGRA2GRAY);
 
-   List<Mat> greyChannel = new ArrayList<>();
-   Core.split(srcImage, greyChannel);
-   var chGray = greyChannel.get(0);
+    List<Mat> greyChannel = new ArrayList<>();
+    Core.split(srcImage, greyChannel);
+    var chGray = greyChannel.get(0);
 
-   Mat grayDuke = new Mat();
-   var listMat = Arrays.asList(chGray, chGray, chGray, chAlpha); // 3 channels + Alpha
-   Core.merge(listMat, grayDuke);
+    Mat grayDuke = new Mat();
+    var listMat = Arrays.asList(chGray, chGray, chGray, chAlpha); // 3 channels + Alpha
+    Core.merge(listMat, grayDuke);
 
-   Imgcodecs.imwrite("duke_gray.png", grayDuke);
+    Imgcodecs.imwrite("duke_gray.png", grayDuke);
 
     }
 }
