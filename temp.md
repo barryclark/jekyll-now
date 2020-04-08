@@ -155,7 +155,7 @@ To reduce the build time, disable the following entries:
 
  * `VIDEOIO_ENABLE_STRICT_PLUGIN_CHECK`
  
-Our sample uses PNG support so make sure to keep `WITH_PNG` enabled and unselect all others `WIDTH_*` entries. 
+The sample below uses PNG so make sure to keep `WITH_PNG` enabled and unselect all others `WIDTH_*` entries. 
 
 Disabling those features will reduce the build time from ~50 minutes to ~5 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules and features (dnn, features2d, objdetect, …) to unleash the power of OpenCV!
 
