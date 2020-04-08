@@ -39,7 +39,7 @@ On macOS, you will need to have XCode installed.
 
 ### Install the Java toolchain
 
-Install the JDK …
+Install the JDK, e.g. on Linux...
 
 ```
 wget https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
@@ -63,17 +63,17 @@ git clone https://github.com/opencv/opencv.git
 mkdir build
 ```
 
-Create the build files using `ccmake` and pointing it to the OpenCV codebase directory and to the newly created build directory.
+Using `ccmake`, create the build files and point it to the OpenCV codebase directory and to the newly created build directory.
 
 ```
 ccmake -S opencv/ -B build/
 ```
 
-Alternatively, you can use `cmake-gui` which offers a GUI. And simillarly, you should specify the OpenCV codebase location and the directory where it should be build.
+Alternatively, you can use `cmake-gui` which offers a GUI. Simillarly, you should specify the OpenCV codebase location and the directory where it should be build.
 
-Both `ccmake` and `cmake-gui` works the same way. You first need to hit "C" (configure) to scan your envorinoment, this will scan your environment and configure related entries (ex. compilers location, JDK location, supported hardware extensions, …). Then and if required, you can manually configure some entries, just make sure to press "T" to toggle the advanced mode. Once done, you should press "G" to generate the Makfile.
+Both `ccmake` and `cmake-gui` works the same way. You first need to hit "C" (configure) to scan your envorinoment, this will scan your environment and configure related entries (ex. compilers location, Java paths, supported hardware extensions, …). Then and if required, you can manually configure some entries, just make sure to press "T" to toggle the advanced mode. Once done, you should press "G" to generate the Makfile.
 
-Most of settings should be fine by default but if you have simply unpacked OpenJDK, `cmake` will not find the related paths so make sure they are correctly configured. 
+Most of settings should be fine by default but if you have simply unpacked the JDK, `cmake` will not find the related paths so make sure they are correctly configured. 
 
 * `JAVA_AWT_INCLUDE_PATH`
 
