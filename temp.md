@@ -14,7 +14,7 @@ OpenCV offers 'official' distributions for [Windows, iOS and Android](https://op
 
 This _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with its Java JNI bindings on Linux and macOS. 
 
-❕A follow-up article will detail how to use OpenCV with the Java Module System, ex. how to package ['OpenCV modules'](https://docs.opencv.org/master/) as Java Modules, how to use `jmod`, `jlink` and `jpackage`, etc.
+❕A follow-up article will detail how to use OpenCV with the Java Module System, ex. how to package ['OpenCV modules'](https://docs.opencv.org/master/) as Java Modules, how to use `jmod` and `jlink`, etc.
 
 The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3). The latest and greatest OpenCV and Java versions are used but this obviously work using different versions. Producing builds on Windows is just a matter of properly installing and configuring the native toolchain, and configure the respective Java paths.
 
@@ -73,7 +73,7 @@ Alternatively, you can use `cmake-gui` which offers a GUI. And simillarly, you s
 
 Both `ccmake` and `cmake-gui` works the same way. You first need to hit "C" (configure) to scan your envorinoment, this will scan your environment and configure related entries (ex. compilers location, JDK location, supported hardware extensions, …). Then and if required, you can manually configure some entries, just make sure to press "T" to toggle the advanced mode. Once done, you should press "G" to generate the Makfile.
 
-Most of settings should be fine by default. The following entries should be configured for Java support.
+Most of settings should be fine by default but if you have simply unpacked OpenJDK, `cmake` will not find the related paths so make sure they are correctly configured. 
 
 * `JAVA_AWT_INCLUDE_PATH`
 
@@ -107,7 +107,7 @@ Most of settings should be fine by default. The following entries should be conf
 
 ---
 
-💡 Building OpenCV takes time, anywhere between 5 minutes and +60 minutes depending on your configuration, the selected OpenCV modules, …; so it's a good idea to first do a minimal build to check that eveything is OK.
+💡 Building OpenCV takes time, anywhere between 5 minutes and +60 minutes depending on your configuration, the selected OpenCV modules and options, …; so it's a good idea to first do a minimal build to check that eveything is OK.
 
 To reduce the build time, disable the following entries:
 
@@ -159,9 +159,9 @@ To reduce the build time, disable the following entries:
 
  * `VIDEOIO_ENABLE_STRICT_PLUGIN_CHECK`
  
-The sample below uses PNG so make sure to keep `WITH_PNG` enabled and unselect all others `WIDTH_*` entries. 
+The sample below uses OpenCV's PNG suport so make sure to keep `WITH_PNG` enabled and unselect all others `WIDTH_*` entries. 
 
-Disabling those features will reduce the build time from ~50 minutes to ~5 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules and features (dnn, features2d, objdetect, …) to unleash the power of OpenCV!
+Disabling those options will reduce the build time from ~50 minutes to ~5 minutes (YMMV!). Once your build process is OK, you can selectevely re-enable the features you plan to use. And realistically, you will need additional modules and features (dnn, features2d, objdetect, …) to unleash the power of OpenCV!
 
 ---
 
