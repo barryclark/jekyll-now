@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Rocky's Blog</title>
+<link rel="stylesheet" src="/semantic.css/">
 </head>
  <body>
    <script>
@@ -12,8 +13,14 @@
      alert('wow,原来你 '+age+' 岁了，你的名字好好听，叫 '+name)
      </script>
 <h1>Rocky's Blog</h1>
-  <h1><a href="http://rockycuxin.github.io/about">About</a></h1>
-  <h1><a href="http://rockycuxin.github.io/">Blog</a></h1>
+  <div class="about&blog">
+   <button class="ui button" href="http://rockycuxin.github.io/about">
+  About
+</button>
+<div class="ui button" tabindex="0" href="http://rockycuxin.github.io/">
+  Blog
+</div>
+   </div>
 <div class="posts">
   <h1>post</h1>
    <a href="http://rockycuxin.github.io/pst">Read More</a>
@@ -46,7 +53,9 @@
          <h1>MacBook Pro回来了.</h1>
 <a href="http://rockycuxin.github.io/我换电脑啦！">Read More</a>
           <h1>武汉开城喽！能去看樱花喽！</h1>
-<a href="http://rockycuxin.github.io/0点武汉开城！">Read More</a>
+<button class="ui button" href="http://rockycuxin.github.io/0点武汉开城！">
+  Read More
+</button>
 </div>
 <div class="ui segment" href="http://github.com/Rockycuxin/">
   <button class="ui button">
