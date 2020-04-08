@@ -16,15 +16,15 @@ This _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with i
 
 ---
 
-[Panama](https://openjdk.java.net/projects/panama/) is an OpenJDK project whose goal is to improve and enrich the connections between the JVM and well-defined “foreign”, i.e. non-Java APIs. Panama is under active development, its current focus is on C but C++ support should be added later. It will then be worthwhile to revisit this and to switch to use Panama's approach instead of the old JNI approach.
+[Panama](https://openjdk.java.net/projects/panama/) is an OpenJDK project whose goal is to improve and enrich the connections between the JVM and well-defined “foreign”, i.e. non-Java APIs. Panama is under active development, its current focus is on C but C++ support should be added later. It will then be worthwhile to revisit this and use Panama's approach instead of the old JNI approach.
 
 ---
 
-Building OpenCV and the Java binding process is straight forward but takes time. The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain, i.e. a JDK and a recent version of Apache Ant. 
+Building OpenCV and its Java bindings is straight forward but it takes time! The bulk of the time is spent in building natively OpenCV for the target platform, then the Java bindings will be built for that same platform. To do this, we need a native C++ toolchain (`g++`, `ld`, `make`, …) and a Java toolchain, i.e. a JDK and a recent version of Apache Ant. 
 
 ### Install the native C++ toolchain
 
-Unless you are using a stripped down Linux distribution, most of the native tools are probably already available (ex. `ld`, `nm`, `objcopy`, `objdump`, `make`, etc.). On a fresh Ubuntu, I only had to install `g++` and `cmake`. Optionally and given that there are over 300 options to build OpenCV, using a configuration front-end such as `ccmake` or `cmake-gui` can be helpful. Note that Python is also required for the build phase.
+Unless you are using a stripped down Linux distribution, most of the native tools are probably already installed (ex. `ld`, `nm`, `objcopy`, `objdump`, `make`, etc.). On a fresh Ubuntu, I only had to install `g++` and `cmake`. Optionally and given that there are over 300 options to build OpenCV, using a configuration front-end such as `ccmake` or `cmake-gui` can be helpful. Note that Python is also required for the build phase.
 
 ```
 sudo apt install g++
