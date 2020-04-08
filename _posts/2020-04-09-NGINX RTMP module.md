@@ -4,7 +4,7 @@ title: 【STREAMING】nginx rtmp module API 해석 및 분석
 subject: blog
 category: streaming
 author: junseo.park
-subtitle: Dynamic Adaptive Streaming over HTTP
+subtitle: nginx-rtmp-module API 한글로 정리해보자
 ---
 
 ## RTMP API 정리
