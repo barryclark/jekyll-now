@@ -14,11 +14,7 @@ OpenCV offers 'official' distributions for [Windows, iOS and Android](https://op
 
 This _'how-to'_ explains how to build the latest version of OpenCV (4.2+) with its Java JNI bindings on Linux and macOS. 
 
----
-
 ❕A follow-up article will detail how to use OpenCV with the Java Module System, ex. how to package ['OpenCV modules'](https://docs.opencv.org/master/) as Java Modules, how to use `jmod`, `jlink` and `jpackage`.
-
----
 
 The [latest Java version](https://jdk.java.net), 14 at the time of writing, is used as all the OpenCV Java material seems to be stuck on Java 8 (and OpenCV 3). The latest and greatest OpenCV and Java versions are used but this obviously work using different versions. Producing builds on Windows is just a matter of properly installing and configuring the native toolchain, and configure the respective Java paths.
 
