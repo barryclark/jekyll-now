@@ -87,7 +87,7 @@ exclude:
 # Paginate
 paginate: 8
 
-category_list: [spring, linux, sql, game, tip, study, algorithm]
+category_list: [spring, linux, sql, game, tip, study, algorithm, streaming]
 
 markdown: redcarpet
 redcarpet:
