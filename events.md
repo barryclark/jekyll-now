@@ -7,9 +7,6 @@ description: "Cheryl Hung's upcoming conferences and events."
 
 ### 2020
 
-June 11: [OpenUK Awards](https://openuk.uk/), London
-* Judge
-
 June 21 - 25: [ISC (International Supercomputing)](https://www.isc-hpc.com/), Frankfurt
 
 September 2 - 4: [Kubernetes Community Days London](http://kubernetesdays.london/), London
@@ -21,6 +18,9 @@ September 10: [Swiss Cloud Native Day](https://cloudnativeday.ch/), Bern
 September 15 - 16: [Open Source Summit Japan](https://events.linuxfoundation.org/open-source-summit-japan/), Tokyo
 
 September 28 - October 2: [Grace Hopper](https://ghc.anitab.org/2020-attend/), Orlando, Florida
+
+October 20: [OpenUK Awards](https://openuk.uk/), London
+* Judge
 
 October 26 - 28: [Open Source Summit Europe](https://events.linuxfoundation.org/open-source-summit-europe/), Dublin
 
