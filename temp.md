@@ -71,7 +71,7 @@ ccmake -S opencv/ -B build/
 
 Alternatively, you can use `cmake-gui` which offers a GUI. Simillarly, you should specify the OpenCV codebase location and the directory where it should be build.
 
-Both `ccmake` and `cmake-gui` works the same way. You first need to hit "C" (configure) to scan your envorinoment, this will scan your environment and configure related entries (ex. compilers location, Java paths, supported hardware extensions, …). Then and if required, you can manually configure some entries, just make sure to press "T" to toggle the advanced mode. Once done, you should press "G" to generate the Makfile.
+Both `ccmake` and `cmake-gui` works the same way. You first need to hit <kbd>C</kbd> (configure) to scan your envorinoment, this will scan your environment and configure related entries (ex. compilers location, Java paths, supported hardware extensions, …). Then and if required, you can manually configure some entries, just make sure to press "T" to toggle the advanced mode. Once done, you should press "G" to generate the Makfile.
 
 Most of settings should be fine by default but if you have simply unpacked the JDK, `cmake` will not find the related paths so make sure they are correctly configured. 
 
