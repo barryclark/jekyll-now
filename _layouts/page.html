@@ -1,12 +1,55 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+	</head>
+	<body class="is-loading">
 
-<article class="page">
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-  <h1>{{ page.title }}</h1>
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
 
-  <div class="entry">
-    {{ content }}
-  </div>
-</article>
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+					<!-- Post -->
+					<section class="post">
+						<p>{{content}}</p>
+					</section>
+
+					<!-- Footer -->
+						<footer>
+              <ul class="actions">
+								<li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
+              </ul>
+						</footer>
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>

@@ -1,0 +1,158 @@
+///
+/// Massively by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Main */
+
+	#main {
+		background-color: _palette(bg);
+		position: relative;
+		margin: 0 auto;
+		width: calc(100% - #{_size(padding) * 2});
+		max-width: _size(wrapper);
+		z-index: 2;
+
+		> * {
+			@include padding((_size(padding) * 2), (_size(padding) * 2));
+			border-top: solid 2px _palette(border);
+			margin: 0;
+
+			&:first-child {
+				border-top: 0;
+			}
+		}
+
+		> footer {
+			text-align: center;
+		}
+
+		> .post {
+			@include padding((_size(padding) * 4), (_size(padding) * 4));
+
+			header {
+				&.major {
+					> .date {
+						margin-top: -2rem;
+					}
+
+					> h1, h2 {
+						font-size: 4rem;
+						line-height: 1.1;
+						margin: 0 0 _size(element-margin) 0;
+					}
+				}
+			}
+
+			&.featured {
+				text-align: center;
+			}
+
+			@include breakpoint(large) {
+				@include padding((_size(padding) * 3), (_size(padding) * 2));
+			}
+
+			@include breakpoint(small) {
+				@include padding((_size(padding) * 2), (_size(padding) * 1));
+
+				header {
+					&.major {
+						> .date {
+							margin-top: -1rem;
+							margin-bottom: _size(element-margin);
+						}
+
+						> h1, h2 {
+							font-size: 2.5rem;
+							line-height: 1.2;
+							margin: 0 0 (_size(element-margin) * 0.75) 0;
+						}
+					}
+				}
+			}
+		}
+
+		> .posts {
+			@include flexgrid((
+				columns:			2,
+				gutters:			(_size(padding) * 4),
+				horizontal-align:	center,
+				vertical-align:		flex-start,
+				flush:				false
+			));
+			width: 100%;
+			padding: 0;
+
+			> article {
+				border-color: _palette(border);
+				border-left-width: 2px;
+				border-style: solid;
+				border-top-width: 2px;
+				text-align: center;
+
+				> :last-child {
+					margin-bottom: 0;
+				}
+
+				&:nth-child(2n - 1) {
+					border-left-width: 0;
+				}
+
+				&:nth-child(-n + 2) {
+					border-top-width: 0;
+				}
+			}
+
+			@include breakpoint(medium) {
+				@include flexgrid-resize((
+					columns:			2,
+					gutters:			(_size(padding) * 2.5),
+					flush:				false
+				));
+			}
+
+			@include breakpoint(small) {
+				@include flexgrid-resize((
+					columns:			1,
+					gutters:			(_size(padding) * 2),
+					prev-columns:		2,
+					flush:				false
+				));
+
+				> article {
+					&:nth-child(2n - 1) {
+						border-left-width: 2px;
+					}
+
+					&:nth-child(-n + 2) {
+						border-top-width: 2px;
+					}
+
+					&:nth-child(n) {
+						border-left-width: 0;
+					}
+
+					&:nth-child(-n + 1) {
+						border-top-width: 0;
+					}
+
+					.image {
+						max-width: 25rem;
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+			}
+		}
+
+		@include breakpoint(small) {
+			> * {
+				@include padding((_size(padding) * 1), (_size(padding) * 1));
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			width: 100%;
+		}
+	}

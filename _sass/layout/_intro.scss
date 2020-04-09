@@ -1,0 +1,115 @@
+///
+/// Massively by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Intro */
+
+	#intro {
+		@include color-typography(invert);
+		@include color-button(invert);
+		@include padding(_size(padding) * 4, _size(padding) * 2);
+		@include vendor('align-items', 'center');
+		@include vendor('display', 'flex');
+		@include vendor('flex-direction', 'column');
+		@include vendor('justify-content', 'flex-end');
+		@include vendor('transition', (
+			'opacity 1s ease',
+			'transform 1s ease'
+		));
+		position: relative;
+		cursor: default;
+		text-align: center;
+		z-index: 1;
+		min-height: 100vh;
+
+		h1 {
+			font-size: 5rem;
+			line-height: 1;
+		}
+
+		p {
+			font-size: 1.25rem;
+			font-style: italic;
+			margin-top: -0.25rem;
+			text-align: center;
+		}
+
+		& + #header {
+			margin-top: -20rem;
+
+			.logo {
+				@include vendor('transform', 'translateY(2rem)');
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+
+		&.hidden {
+			@include vendor('pointer-events', 'none');
+			@include vendor('transform', 'translateY(2rem)');
+			@include vendor('transition', (
+				'opacity 0.5s ease',
+				'transform 0.5s ease',
+				'visibility 0.5s'
+			));
+			opacity: 0;
+			visibility: hidden;
+
+			& + #header {
+				.logo {
+					@include vendor('transform', 'translateY(0)');
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		body.is-loading & {
+			@include vendor('transform', 'translateY(2rem)');
+			opacity: 0;
+
+			&:not(.hidden) {
+				& + #header + #nav {
+					@include vendor('transform', 'translateY(4rem)');
+					opacity: 0;
+				}
+			}
+		}
+
+		@include breakpoint(medium) {
+			@include padding(_size(padding) * 2, _size(padding) * 2);
+			min-height: 90vh;
+
+			p {
+				br {
+					display: none;
+				}
+			}
+
+			& + #header {
+				margin-top: -14rem;
+			}
+		}
+
+		@include breakpoint(small) {
+			@include padding(_size(padding) * 1.5, _size(padding) * 1);
+			min-height: 80vh;
+
+			h1 {
+				font-size: 3.25rem;
+				line-height: 1.1;
+				margin-bottom: _size(element-margin) * 0.5;
+			}
+
+			p {
+				font-size: 1rem;
+				margin-top: 0rem;
+			}
+
+			.actions {
+				display: none;
+			}
+		}
+	}

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+						
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+          <article class="post featured">
+            <header class="major">
+              <h2><a href="#">Importance of Blogs</a></h2>
+              <p>Blogs are really pretty awesome things. For one, they are a means to continually provide fresh,
+                dynamic content to your users. Also, they help your site get indexed and build authority as they are essential for SEO!
+							</p>
+            </header>
+						<p>
+							Content fulfills the general population seeing your website and it likewise fulfills web indexes! Having solid content
+							influences your advertising to work a hell of a great deal simpler. Along these lines, the greatest bit of the promoting riddle is there. It's vital to thoroughly consider this technique before starting another crusade. This makes the whole content and advertising process more streamlined and will in the end enable your message to achieve your clients in a more effective manner. You ought not think little of the significance of giving yourself room. Having squirm room takes into consideration steady changes to your methodology en route.
+						<p>
+						</p>
+							At that point, rather than pushing something superfluous to your users, you can give them something that will stick.
+							You'll give them something they can identify with and be slanted to share with their companions and associates. Perhaps they'll even be slanted to work with you later on!
+							Having an advancement technique that is excessively unbending isn't astute on the grounds that there is no space for solid spontaneous creation. Having the capacity to change your advertising procedure will prompt more deals and arrangements.
+						</p>
+
+          </article>
+					<!-- Post -->
+					<section class="posts">
+						{% for post in site.posts %}
+						{% assign mod3 = forloop.index | modulo: 3 %}
+							<article>
+								<header>
+									<span class="date">{{ post.date | date_to_string }}</span>
+									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+								</header>
+								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+								<p>{{ post.excerpt }}</p>
+								<ul class="actions">
+									<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+								</ul>
+							</article>
+							{% if mod3 == 0 %}
+							<article>
+								<header>
+									<h2><a href="#">Sponsored</a></h2>
+								</header>
+
+							</article>
+							{% endif %}
+						{% endfor %}
+
+					</section>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>

@@ -1,0 +1,110 @@
+///
+/// Massively by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Pagination */
+
+	.pagination {
+		@include vendor('display', 'inline-flex');
+		@include vendor('user-select', 'none');
+		cursor: default;
+		list-style: none;
+		margin: 0 0 _size(element-margin) 2px;
+		padding: 0;
+
+		a, span {
+			@include vendor('transition', (
+				'background-color #{_duration(transition)} ease-in-out',
+				'border-color #{_duration(transition)} ease-in-out',
+				'box-shadow #{_duration(transition)} ease-in-out',
+				'color #{_duration(transition)} ease-in-out'
+			));
+			border: solid 2px;
+			display: inline-block;
+			font-family: _font(family-heading);
+			font-size: 0.8rem;
+			font-weight: _font(weight-heading);
+			height: _size(element-height);
+			letter-spacing: 0.075em;
+			letter-spacing: _font(letter-spacing-heading);
+			line-height: calc(#{_size(element-height)} - 4px);
+			margin-left: -2px;
+			min-width: _size(element-height);
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.next, .previous {
+			@include icon;
+			padding: 0 1.75rem;
+
+			&:before {
+				display: inline-block;
+				color: inherit !important;
+			}
+		}
+
+		.previous {
+			&:before {
+				content: '\f104';
+				margin-right: (0.75em / 0.8);
+			}
+		}
+
+		.next {
+			&:before {
+				content: '\f105';
+				float: right;
+				margin-left: (0.75em / 0.8);
+			}
+		}
+
+		@include breakpoint(medium) {
+			a, span {
+				font-size: 0.9rem;
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			.page, .extra {
+				display: none;
+			}
+		}
+	}
+
+	@mixin color-pagination($p: null) {
+		.pagination {
+			a, span {
+				border-color: _palette($p, border);
+			}
+
+			a {
+				color: _palette($p, fg-bold) !important;
+
+				&:hover {
+					color: _palette($p, accent) !important;
+					border-color: _palette($p, accent);
+					z-index: 1;
+
+					& + a,
+					& + span {
+						border-left-color: _palette($p, accent);
+					}
+				}
+
+				&.active {
+					background-color: _palette($p, border);
+				}
+			}
+
+			span {
+				color: _palette($p, border);
+			}
+		}
+	}
+
+	@include color-pagination;

@@ -1,0 +1,64 @@
+///
+/// Massively by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Wrapper */
+
+	#wrapper {
+		@include vendor('transition', 'opacity #{_duration(menu)} ease');
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+
+		> .bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color:		_palette(wrapper-bg);
+			background-image:		url('../../images/overlay.png'),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	url($background_image);
+			background-size:		auto,								auto,														100% auto;
+			background-position:	center,								center,														top center;
+			background-repeat:		repeat,								no-repeat,													no-repeat;
+			background-attachment:	scroll,								scroll,														scroll;
+			z-index: -1;
+
+			&.fixed {
+				position: fixed;
+				width: 100vw;
+				height: 100vh;
+			}
+		}
+
+		&.fade-in {
+			&:before {
+				@include vendor('pointer-events', 'none');
+				@include vendor('transition', 'opacity 1s ease-in-out');
+				@include vendor('transition-delay', '0.75s');
+				background: _palette(invert, bg);
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				opacity: 0;
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+
+			body.is-loading & {
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+
+		@include orientation(portrait) {
+			> .bg {
+				background-size:	auto,								auto,														auto 175%;
+			}
+		}
+	}

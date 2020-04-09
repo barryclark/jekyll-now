@@ -1,0 +1,85 @@
+///
+/// Massively by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Nav */
+
+	#nav {
+		@include color-list(invert);
+		@include color-typography(invert);
+		@include vendor('display', 'flex');
+		@include vendor('transition', (
+			'transform 1s ease',
+			'opacity 1s ease'
+		));
+		background: rgba(255,255,255,0.175);
+		height: 4rem;
+		line-height: 4rem;
+		margin: -4rem auto 0 auto;
+		overflow: hidden;
+		padding: 0 2rem 0 0;
+		position: relative;
+		width: calc(100% - #{_size(padding) * 2});
+		max-width: _size(wrapper);
+		z-index: 2;
+
+		ul {
+			&.links {
+				@include vendor('display', 'flex');
+				@include vendor('flex-grow', '1');
+				@include vendor('flex-shrink', '1');
+				font-family: _font(family-heading);
+				font-weight: _font(weight-heading);
+				letter-spacing: 0.075em;
+				list-style: none;
+				margin-bottom: 0;
+				padding-left: 0;
+				text-transform: uppercase;
+
+				li {
+					display: block;
+					padding-left: 0;
+
+					a {
+						@include vendor('transition', (
+							'background-color #{_duration(transition)} ease-in-out',
+							'color #{_duration(transition)} ease-in-out'
+						));
+						display: block;
+						font-size: 0.8rem;
+						outline: none;
+						padding: 0 2rem;
+
+						&:hover {
+							color: inherit !important;
+							background-color: transparentize(_palette(invert, fg), 0.9);
+						}
+					}
+
+					&.active {
+						background-color: _palette(invert, fg);
+
+						a {
+							color: _palette(invert, bg);
+
+							&:hover {
+								color: _palette(invert, accent) !important;
+							}
+						}
+					}
+				}
+			}
+
+			&.icons {
+				@include vendor('flex-grow', '0');
+				@include vendor('flex-shrink', '0');
+				margin-bottom: 0;
+			}
+		}
+
+		@include breakpoint(medium) {
+			display: none;
+		}
+	}
