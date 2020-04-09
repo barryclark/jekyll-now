@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London April 2020: RVU, Alcide, and Capgemini"
 description: "Check out talks from RVU, Alcide, and Capgemini at the Cloud Native London meetup April 2020, hosted by Cheryl Hung, Director of Ecosystem at CNCF"
 location: London, UK
-image: https://secure.meetupstatic.com/photos/event/e/9/4/6/600_489119718.jpeg
+image: /images/2020-04-08-cloud-native-london-april-2020.png
 video: https://www.youtube.com/embed/4ZSqjoFzxHI
 tags:
   - Photos
