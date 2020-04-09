@@ -12,7 +12,7 @@ tags:
   - "2020"
 ---
 
-Cloud Native London held our very first virtual meetup! Several hundred joined on Zoom and YouTube from across London, the UK and the world, including 55% first timers:
+Cloud Native London held our very first virtual meetup! Several hundred joined on Zoom and YouTube from across the world, including 54% first timers:
 
 ![](/images/2020-04-08-cloud-native-london-april-2020.jpg)!
 
