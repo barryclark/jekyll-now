@@ -225,20 +225,103 @@ In the digital domain, the presence of valid certificates is legal proof that
 * ...who is properly regulated (its regulator id being in the certificate), and
 * ...which has undergone checks by the QTSP.
 
-Conversely, a call with [expired/revoked certificates][7] is a signal that “the TPP has lost its license“.  
+As a consequence, for any ASPSP receiving an API call with and [expired/revoked TPP certificate][7] is a signal that 
+“the TPP has lost its license or is otherwise unfit for financial transactions“. 
+
 Which makes it critical that the banks perform...
 
 ##### Certificate validation 
 
-MA-TLS 
-CA revocation lists in LB
+During the [MA-TLS handshake][46] of a PSD2 API call (arrow 3), the bank receives the TPP's QWAC.  
+It then needs to answer 3 questions:  
+* Is this a syntactically correct TPP eIDAS certificate, i.e. according to the spec?
+* Is this certificate issued by a trusted QTSP, i.e. has the TPP been properly vetted?
+* Is this certificate still valid and not revoked, i.e. is the TPP still authorized to make PSD2 calls?
 
-https://ec.europa.eu/tools/lotl/eu-lotl.xml
+**Syntax check**  
+The certificate's field values must correspond to the prescribed [ETSI standard][47].
 
-This is issued by the [OBIE’s Certification Authority][6], one per TPP (legal entity). 
-A [revocation][7] of this certificate signals to all the banks “the TPP has lost its license“.
+**QTSP check**  
+The European Commission publishes a machine-readable top-level ["List of Trusted Lists"][48] (LOTL).  
+This is an [ETSI TS 119 612 XML document][49], acting as an index to the list of trusted QTSPs, published by each member 
+state. For example, in the excerpt below, you can see the location of the Austrian list of QTSPs.  
+```xml
+...
+<OtherTSLPointer>
+  <ServiceDigitalIdentities>...</ServiceDigitalIdentities>
+  <TSLLocation>https://www.signatur.rtr.at/currenttl.xml</TSLLocation>
+  <AdditionalInformation>...</AdditionalInformation>
+</OtherTSLPointer>
+...
+```
+Downloading the Austrian list we have, among others  
+* the update schedule of the list itself (`ListIssueDateTime`, `NextUpdate`)
+* the different QTSPs (`TrustServiceProvider`), each one having...
+* their CA X509 certificates and subject names,
+* what types of eIDAS certificates this CA can issue (e.g. `CA/QC` means QWAC/QSEAL), 
+* if this CA is currently active (e.g. this one is `granted`, i.e. active), and  
+* when the current status started (in this case, when it was activated and started issuing eIDAS certificates)  
 
-Example [showing OBIE’s][8] itself public keys (has security warning). 
+```xml
+...
+<SchemeOperatorName>
+  <Name xml:lang="en">Rundfunk und Telekom Regulierungs-GmbH</Name>
+  <Name xml:lang="de">Rundfunk und Telekom Regulierungs-GmbH</Name>
+</SchemeOperatorName>
+...
+<ListIssueDateTime>2020-01-09T01:00:00Z</ListIssueDateTime>
+<NextUpdate>
+  <dateTime>2020-07-09T00:00:00Z</dateTime>
+</NextUpdate>
+...
+<TrustServiceProviderList>
+  <TrustServiceProvider>
+    <TSPInformation>
+      <TSPName>
+        <Name xml:lang="en">
+        A-Trust Gesellschaft für Sicherheitssysteme im elektronischen Datenverkehr GmbH
+        </Name>
+      </TSPName>
+...
+    </TSPInformation>
+    <TSPServices>
+      <TSPService>
+        <ServiceInformation>
+          <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
+          <ServiceDigitalIdentity>
+            <DigitalId>
+              <X509Certificate>
+              MIIE0TCCA7mgAwIBAgICApMwDQYJKoZIhvcNAQEFBQAwgc8xCzAJBgNVBAYTAkFUMYGLMIG...==
+              </X509Certificate>
+            </DigitalId>
+            <DigitalId>
+              <X509SubjectName>
+              CN=TrustSign-Sig-01, OU=TrustSign-Sig-01, O=A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH, C=AT
+              </X509SubjectName>
+            </DigitalId>
+          </ServiceDigitalIdentity>
+          <ServiceStatus>
+          http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted
+          </ServiceStatus>
+          <StatusStartingTime>2017-10-04T22:00:00Z</StatusStartingTime>
+...
+```
+
+**Validation check**  
+Since this example QTSP (A-Trust) is a trusted one, all European banks need to accept eIDAS certificates issued by it.
+This means being able to perform an MA-TLS handshake and accept the TPP client certificate.  
+For this to happen securely, the bank needs to add the above `X509Certificate` value to the whitelist of it network device 
+handling TLS (for example, the load balancer).  
+Considering that the LOTL contains entries for 10s if not 100s of QTSPs and is updated almost daily, the bank needs to  
+* download and parse it at least once a day (example [parser][50]), and
+* update their network device with the whitelisted QTSP CA certificates.
+
+Anyone who has done even the slightest network configuration knows this is NOT a trivial task.
+
+A similar concern extends to validating TPP JWT signatures with QSEALs.  
+For signature validation, in the UK ecosystem, the OBIE is providing a central [JWKS][51] endpoint (example [entry][8]).
+However, in the general case of PSD2, the bank has no central reference for QSEALs, hence it requires the TPP to upload 
+them to the API portal in advance.
 
 #### 3. Customer consent
 
@@ -299,12 +382,26 @@ https://www.openbankingexpo.com/wp-content/uploads/2019/09/ndgit-Open-Banking-AP
 ![Walled garden](../assets/images/openbanking/annie-spratt-4U9azPdkLOA-unsplash.jpg)
 > Photo by Annie Spratt on Unsplash
 
-Customer own info but not just that 
+Main motivation was to put 
+Customer own info 
+Banks like all businesses had created Walled gardens
+tearing down the walls and allowing customers to 
+access their financial information through other players would increase competition 
 
-Banks like all businesses had created Walled gardens 
+Not just that
 Disintermediation between 
-TBTF
+2008 banking crisis highlighted the danger of TBTF
 
+There is no an even larger debt and currency crisis unravelling
+will inevitably cause a regime change in the West's monetary system (and by extension payment networks)
+
+OpenBanking APIs have proven in practice how any entity can safely 
+become a participant in a national and transnational payment system
+
+As OpenBanking leaves the [trough of disillusionment][52] 
+regulators around the world will discover how this flexible framework 
+will give them the flexibility, if they want, to completely disintermediate the banks and port 
+the whole ecosystem to something "new", whatever that might be
 
 ## In the next episode
 
@@ -368,3 +465,10 @@ take PSD2 API implementation seriously.
   [43]: https://en.wikipedia.org/wiki/Mutual_authentication
   [44]: https://en.wikipedia.org/wiki/OSI_model
   [45]: https://en.wikipedia.org/wiki/Qualified_website_authentication_certificate
+  [46]: https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/
+  [47]: https://www.cryptomathic.com/news-events/blog/eidas-qualified-certificates-supporting-psd2-etsi-ts-119-495
+  [48]: https://ec.europa.eu/tools/lotl/eu-lotl.xml
+  [49]: https://ec.europa.eu/transparency/regexpert/index.cfm?do=groupDetail.groupDetailDoc&id=9979&no=4
+  [50]: https://github.com/esig/dss/tree/master/specs-trusted-list
+  [51]: https://auth0.com/docs/tokens/concepts/jwks
+  [52]: https://en.wikipedia.org/wiki/Hype_cycle
