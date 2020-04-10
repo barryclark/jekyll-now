@@ -17,7 +17,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email: 1218374083@qq.com
+  email: rocky.dr@foxmail.com
   QQ: 1218374083
   github: Rockycuxin
   wechat: Rocky8671pin
@@ -51,5 +51,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README.md
+  - README.html
   - CNAME
