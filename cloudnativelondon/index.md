@@ -10,7 +10,7 @@ description: "Request to speak at or sponsor Cloud Native London."
 <div class="hero-content-text">
   <div class="hero-text">
     <h3>One of the largest and most active developer communities in London.</h3>
-
+    
     I host meetups on the first Wednesday of every month for 200-300 attendees, with speakers booked through 2020.
   </div>
 </div>
@@ -20,9 +20,9 @@ description: "Request to speak at or sponsor Cloud Native London."
 
 {% include product.html title="Speak" subtitle="Next available slots in early 2021" image="product-images/speak-at-cloud-native-london.jpg" url="/cloudnativelondon/speak" %}
 
-{% include product.html title="Sponsor" subtitle="Introduce yourself at our monthly events" image="product-images/sponsor-cloud-native-london.png" url="/cloudnativelondon/sponsor" %}
+{% include product.html title="Sponsor" subtitle="Introduce your company and tools" image="product-images/sponsor-cloud-native-london.png" url="/cloudnativelondon/sponsor" %}
 
-{% include product.html title="Chat" subtitle="Join 200+ on the Slack channel" image="product-images/chat-cloud-native-london.jpg" url="/cnl-slack" %}
+{% include product.html title="Chat" subtitle="Meet other London developers" image="product-images/chat-cloud-native-london.jpg" url="/cnl-slack" %}
 
 {% include product.html title="Catch up" subtitle="Watch videos from past events" image="product-images/read-cloud-native-london.jpg" url="/archive/meetup" %}
 

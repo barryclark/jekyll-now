@@ -131,7 +131,7 @@ nav.menu-content a {
   flex-wrap: wrap;
   align-items: center;
   margin-top: $wide;
-  padding-top: $wide;
+  padding-top: $narrow;
 }
 
 .landingtile {
@@ -140,7 +140,7 @@ nav.menu-content a {
   margin-left: auto;
   margin-right: $narrow;
   margin-bottom: $narrow;
-  min-height: 38vh;
+  min-height: 41vh;
 }
 
 article.posts {
@@ -204,7 +204,7 @@ h1, h2, h3 {
 
 h3 {
   margin-top: $narrow;
-  margin-bottom: 0px;
+  margin-bottom: $narrow;
 }
 
 hr {
@@ -229,22 +229,32 @@ hr {
 
 .about-image {
   float: right;
-  margin: 2rem;
+  margin: $narrow;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: $wide;
+  padding-top: $narrow;
 }
 
 .product {
-  margin: 10px;
-  max-width: 400px;
+  flex: 1 0 15%;
+  min-width: 320px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: $narrow;
+  margin-bottom: $narrow;
+  min-height: 38vh;
   text-align: center;
   background-color: $lightest-content-color;
+
+  /*
+  width: 400px;
+  margin-right: $narrow;
+  margin-bottom: $narrow;
+  */
 }
 
 .form {
@@ -314,6 +324,7 @@ button.zoom {
 .container {
   margin: 0 auto;
   max-width: 1068px;
+  padding-top: $wide;
 }
 
 @media (max-width: 1068px) {
@@ -327,7 +338,7 @@ section {
 }
 
 .masthead {
-  margin-bottom: $wide;
+  margin-bottom: 0px;
 }
 
 .thumbnail-container {

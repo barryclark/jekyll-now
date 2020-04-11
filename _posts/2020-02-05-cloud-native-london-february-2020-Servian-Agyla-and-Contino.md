@@ -30,7 +30,7 @@ First up, Byron Allen from Servian told us about The Cheesy Analogy of MLflow an
 
 ![Ines Cheikhrouhou](https://pbs.twimg.com/media/EQCV_fOX0AAVIPN?format=jpg)
 
-Next up, Ines Cheikhrouhou from Agyla described Cloud native disaster recovery in Cloud (starting at [42:07](https://youtu.be/gxd8h9ddnxQ?t=2527)). She concluded that: 
+Next up, Ines Cheikhrouhou from Agyla described Cloud native disaster recovery in Cloud (starting at [42:07](https://youtu.be/gxd8h9ddnxQ?t=2527)). She concluded that:
 
 * There a lot of things to look after before planning for disaster recovery such as how your application is deployed and your architecture. (containers)
 * Planning steps to follow such as organizing for DR and deciding on some keys. (communication, backup plan, RPO and RTO)

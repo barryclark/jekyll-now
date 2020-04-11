@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London March 2020: WWT, Cloud Native Technologies, and VMWare"
+title: "Cloud Native London March 2020: WWT, Cloud Native Technologies and VMWare"
 description: "Check out the roundup of talks from World Wide Technology, Cloud Native Technologies, and VMWare at the Cloud Native London meetup in March, hosted by Dominique Top, .Developer Relations & Community Manager, Babylon Health"
 location: London, UK
 image: https://pbs.twimg.com/media/ESSa8RFWoAEek7z?format=jpg

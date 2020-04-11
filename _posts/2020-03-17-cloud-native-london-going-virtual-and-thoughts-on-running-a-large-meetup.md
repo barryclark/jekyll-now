@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London is going virtual, and how to run a large meetup"
+title: "Cloud Native London goes virtual, and how to run large meetups"
 description: "Read about the changes for Cloud Native London in light of the coronavirus"
 location: London, UK
 image: https://secure.meetupstatic.com/photos/event/e/9/4/6/600_489119718.jpeg
