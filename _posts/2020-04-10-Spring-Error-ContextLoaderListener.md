@@ -9,9 +9,9 @@ subtitle: STS는 도대체 왜 ContextLoaderListener가 왜 없다고 할까?
 
 Git에서 새로운 Spring Webapp을 가져와 Spring Tool Suites에 올리고 Tomcat으로 띄우려고 하면 이상하게 Exception Error가 뜨는 경우가 있다.
 
-```
+<pre>
 java.lang.ClassNotFoundException: org.springframework.web.context.ContextLoaderListener
-```
+</pre>
 이 문구와 함께 에러가 주루룩 뜨면서 Webapp이 띄워지지 않는다.
 
 명확한 요구사항 없이 ContextLoaderListener가 없다고만 떠서 어떻게 수정해야 할 지 막막해서 코드들을 일일히 뜯어보는데, 그래도 이상한 점을 찾을 수 없었다.
