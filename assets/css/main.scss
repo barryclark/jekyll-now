@@ -135,12 +135,12 @@ nav.menu-content a {
 }
 
 .landingtile {
-  flex: 1 0 45%;
+  flex: 1 0 15%;
   min-width: 320px;
   margin-left: auto;
-  margin-right: $wide;
-  margin-bottom: $wide;
-  height: 40vh;
+  margin-right: $narrow;
+  margin-bottom: $narrow;
+  height: 38vh;
 }
 
 article.posts {
