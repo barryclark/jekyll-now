@@ -1,4 +1,3 @@
-
 <div class="list-entry box">
     <div class="list-media">
       {% if include.post.image %}
@@ -8,12 +7,5 @@
 
     {% include post-summary-metadata.html post=post %}
     <span class="list-text">{{ include.post.title }}</span>
-
-    <!--
-    <a href="{{ include.post.url }}" class="list-entry-title">
-      {{ include.post.title }}
-    </a>
-    -->
-
     <a class="divLink" href="{{ include.post.url }}">link</a>
 </div>

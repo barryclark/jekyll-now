@@ -16,6 +16,8 @@ $link-hover-color: $light-content-color !default;
 $heading-font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 $body-font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 $horizontal-rule-color: $lighter-content-color;
+$narrow: 1.23vh;
+$wide: 1.99vh;
 
 .w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
@@ -33,7 +35,8 @@ body {
 }
 
 .padded {
-    padding: 0.75rem;
+  padding: $narrow;
+
 }
 
 .top {
@@ -73,19 +76,20 @@ body {
 }
 
 .site-title {
-    padding-left: 1rem;
+    padding-left: $narrow;
     vertical-align: text-bottom;
 }
 
 .menu {
     float: right;
     padding-left: 8rem;
+    margin-right: $wide;
 }
 
 nav.menu-content a {
-    color: $lightest-content-color;
-    padding-left: 1.5rem;
-    padding-right: 0px;
+  color: $lightest-content-color;
+  padding-left: $narrow;
+  padding-right: 0px;
 }
 
 .hero {
@@ -93,7 +97,7 @@ nav.menu-content a {
   flex-flow: row wrap;
   align-items: stretch;
   justify-content: center;
-  margin: 0 0.5rem 2rem;
+  margin-right: $wide;
 }
 
 .hero-media {
@@ -126,16 +130,17 @@ nav.menu-content a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: $wide;
+  padding-top: $wide;
 }
 
 .landingtile {
   flex: 1 0 45%;
   min-width: 320px;
   margin-left: auto;
-  margin-right: auto;
-  padding: 0.5rem;
-  height: 100%;
-  height: 400px;
+  margin-right: $wide;
+  margin-bottom: $wide;
+  height: 40vh;
 }
 
 article.posts {
@@ -179,13 +184,14 @@ a.divLink {
 .list-entry {
   display: inline-block;
   width: 100%;
-  margin: 1rem 0;
+  margin-bottom: $narrow;
 }
 
 .list-media {
   float: left;
   width: 170px;
-  margin-right: 1rem;
+  margin-right: $narrow;
+  max-height: 20vh;
 }
 
 .list-media-img {
@@ -199,6 +205,11 @@ a.divLink {
 
 h1, h2, h3 {
   font-weight: normal;
+}
+
+h3 {
+  margin-top: $narrow;
+  margin-bottom: 0px;
 }
 
 hr {
@@ -298,6 +309,11 @@ button.zoom {
   border-color: #F8F8F8;
 }
 
+.related {
+  margin-left: $narrow;
+  margin-right: $narrow;
+}
+
 @import "lagrange";
 
 .container {
@@ -316,13 +332,20 @@ section {
 }
 
 .masthead {
-  margin-bottom: 2rem;
+  margin-bottom: $wide;
 }
 
 .thumbnail-container {
+  margin-top: 0px;
   margin-bottom: 0px;
   height: 200px;
   border-radius: 0;
+}
+
+.thumbnail-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 blockquote {

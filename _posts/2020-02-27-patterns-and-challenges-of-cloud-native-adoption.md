@@ -14,9 +14,9 @@ tags:
   - "2020"
 ---
 
-![](/images/2020-02-27-cherylhung.gif)
-
 I had a great time at Cloud Native Prague, live polling the audience and comparing how Prague is adopting cloud native with the CNCF Survey 2019. As it was the first anniversary, the organizers even invited me to blow out a candle on a cake!
+
+![](/images/2020-02-27-cherylhung.gif)
 
 Takeaways from my talk / discussion:
 
