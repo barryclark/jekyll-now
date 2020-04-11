@@ -190,17 +190,13 @@ a.divLink {
 .list-media {
   float: left;
   width: 170px;
-  margin-right: $narrow;
+  margin-right: $wide;
   max-height: 20vh;
 }
 
 .list-media-img {
   border-radius: 0;
   object-fit: cover;
-}
-
-.list-text {
-  vertical-align: middle;
 }
 
 h1, h2, h3 {

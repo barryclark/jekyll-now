@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My grandfather has passed away due to COVID-19, and my uncle four days after"
+title: "My grandfather passes away due to COVID-19, and my uncle four days after"
 description: "My grandfather passes away due to COVID-19, and taking bereavement leave"
 location: London UK
 image: https://nickandcheryl2018.files.wordpress.com/2019/04/sun-3-speeches-54-of-133.jpg?w=1750&h=

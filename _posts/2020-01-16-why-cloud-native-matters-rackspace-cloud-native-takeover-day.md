@@ -9,7 +9,6 @@ twitter_moment:
 tags:
   - Slides
   - "2020"
-  - Featured
 ---
 
 * People use cloud native because 1) it works (not to be underestimated!) 2) a 77k-strong community which moves faster than any individual company 3) neutral home.
