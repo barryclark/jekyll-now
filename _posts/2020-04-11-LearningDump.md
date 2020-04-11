@@ -5,8 +5,6 @@ title: Welcome to Learning Dump!
 
 Hi there,
 
-This is the first post of this blog **Learning Dump**.
-
 This is a repository of learned lessons during my software development process.
 
 Software development is a continuous learning process. No matter how many years you've been a programmer, every project carries a huge amount of knowledge to be acquired. Not just because of new technologies, also the requirements can take you to explore new edges of your _mastered_ technologies.
