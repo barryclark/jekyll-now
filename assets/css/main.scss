@@ -140,7 +140,7 @@ nav.menu-content a {
   margin-left: auto;
   margin-right: $narrow;
   margin-bottom: $narrow;
-  height: 38vh;
+  min-height: 38vh;
 }
 
 article.posts {
@@ -190,7 +190,7 @@ a.divLink {
 .list-media {
   float: left;
   width: 170px;
-  margin-right: $wide;
+  margin-right: $narrow;
   max-height: 20vh;
 }
 
