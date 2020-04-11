@@ -184,14 +184,13 @@ a.divLink {
 .list-entry {
   display: inline-block;
   width: 100%;
-  margin-bottom: $narrow;
+  margin-bottom: $wide;
 }
 
 .list-media {
   float: left;
   width: 170px;
   margin-right: $narrow;
-  max-height: 20vh;
 }
 
 .list-media-img {
