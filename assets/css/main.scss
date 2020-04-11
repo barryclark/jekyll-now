@@ -58,9 +58,10 @@ body {
 }
 
 .masthead-title {
-    margin: auto;
-    padding: 0;
-    width: 70%;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  max-width: 1068px;
 }
 
 @media (max-width: 1068px) { .masthead-title { width: 90vw; } }
@@ -142,11 +143,11 @@ article.posts {
   background-color: white;
 }
 
-article.box {
+.box {
     position: relative;
 }
 
-article.box:hover {
+.box:hover {
     cursor: hand;
     cursor: pointer;
     opacity: .8;
@@ -183,14 +184,17 @@ a.divLink {
 
 .list-media {
   float: left;
-  width: 200px;
+  width: 170px;
   margin-right: 1rem;
 }
 
 .list-media-img {
   border-radius: 0;
-  max-width: 100%;
-  height: auto;
+  object-fit: cover;
+}
+
+.list-text {
+  vertical-align: middle;
 }
 
 h1, h2, h3 {
@@ -298,6 +302,7 @@ button.zoom {
 
 .container {
   margin: 0 auto;
+  max-width: 1068px;
 }
 
 @media (max-width: 1068px) {
@@ -311,7 +316,7 @@ section {
 }
 
 .masthead {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .thumbnail-container {

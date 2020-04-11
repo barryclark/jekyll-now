@@ -1,0 +1,8 @@
+<div class="related">
+  <h2 class="posts-list-header">Most popular</h2>
+  <div class="posts-list">
+    {% for featured_post in site.tags.Featured %}
+      {% include post-list-entry.html post=featured_post %}
+    {% endfor %}
+  </div>
+</div>

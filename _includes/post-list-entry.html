@@ -1,14 +1,19 @@
 
-  <div class="list-entry">
-      <div class="list-media">
-        {% if include.post.image %}
-          <a href="{{ include.post.url }}"><img class="list-media-img" src="{{ include.post.image }}"></a>
-        {% endif %}
-      </div>
+<div class="list-entry box">
+    <div class="list-media">
+      {% if include.post.image %}
+        <a href="{{ include.post.url }}"><img class="list-media-img" src="{{ include.post.image }}"></a>
+      {% endif %}
+    </div>
 
-      {% include post-summary-metadata.html post=post %}
+    {% include post-summary-metadata.html post=post %}
+    <span class="list-text">{{ include.post.title }}</span>
 
-      <a href="{{ include.post.url }}" class="list-entry-title">
-        {{ include.post.title }}
-      </a>
+    <!--
+    <a href="{{ include.post.url }}" class="list-entry-title">
+      {{ include.post.title }}
+    </a>
+    -->
+
+    <a class="divLink" href="{{ include.post.url }}">link</a>
 </div>

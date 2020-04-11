@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2.66 Million - Keynote at KubeCon + CloudNativeCon Europe"
+title: "2.66 Million - Keynote at KubeCon + CloudNativeCon Barcelona"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, keynotes about growing the cloud native community from 2.6 million contributions to 10 million and beyond at KubeCon CloudNativeCon."
 location: Barcelona, Spain
 image: https://pbs.twimg.com/media/D7EtUl6WwAMmuDc.jpg

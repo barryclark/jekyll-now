@@ -11,7 +11,6 @@ tags:
   - Video
   - Slides
   - "2017"
-  - Featured
 redirect_from: /persistent-storage-with-k8s-austin/
 ---
 

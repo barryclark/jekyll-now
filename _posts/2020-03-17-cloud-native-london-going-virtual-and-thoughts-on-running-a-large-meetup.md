@@ -8,6 +8,7 @@ tags:
   - Article
   - Meetup
   - "2020"
+  - Featured
 ---
 
 Due to COVID-19, [Cloud Native London](https://www.meetup.com/Cloud-Native-London) is becoming a virtual meetup for a few months. These are my reflections on building and running a large (5300 person) meetup.

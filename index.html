@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<article class="hero box">
+<article class="hero">
   <div class="hero-media">
   <img src="/images/kubeconeu.jpg" alt="Cheryl Hung, Director of CNCF" class="hero-image">
   </div>
@@ -13,7 +13,6 @@ layout: page
       Based in London, she is a software engineer, public speaker and tech executive.
     </div>
   </div>
-  <a class="divLink" href="/about">link</a>
 </article>
 
 <div class="landingtiles">
@@ -25,6 +24,8 @@ layout: page
 {% endfor %}
 
 </div>
+
+{% include most-popular.html %}
 
 <div class="text-center">
 <h1><a href="/archive">View Archive ></a></h1>

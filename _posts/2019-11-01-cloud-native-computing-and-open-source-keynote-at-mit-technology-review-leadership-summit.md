@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native Computing and Open Source - MIT Technology Review Leadership Summit"
+title: "Cloud Native Computing and Open Source - MIT Technology Review Leadership Summit, Singapore"
 description: "Read about why organisations should engage with the cloud native community from Cheryl Hung, CNCF Director of Ecosystem."
 location: Singapore
 image: /images/2019-11-1-cloud-native-computing-and-open-source-keynote-at-mit-technology-review-leadership-summit-9.jpg
@@ -10,6 +10,8 @@ slides: //www.slideshare.net/slideshow/embed_code/key/oV1PFk39Q1EA3W
 tags:
   - Slides
   - "2019"
+  - Video
+  - Featured
 ---
 
 * Containers, Kubernetes and cloud native are the building blocks behind modern distributed systems - scalable, resilient, and observable.

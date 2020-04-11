@@ -9,7 +9,6 @@ video: https://www.youtube.com/embed/PQ3qfO90x7s
 tags:
   - Video
   - "2018"
-  - Featured
 redirect_from: /thecube/
 ---
 

@@ -8,7 +8,6 @@ hide_image: true
 tags:
   - Photos
   - "2019"
-  - Featured
 redirect_from: /kubecon-barcelona/
 ---
 
