@@ -20,8 +20,8 @@
 .glitch {
 	position: relative;
 	width: var(--glitch-width);
-  	max-width: 670px;
-  	max-height: 700px;
+  	max-width: 740px;
+  	max-height: 750px;
 	height: var(--glitch-height);
 	overflow: hidden;
 	margin: 0 auto;
@@ -33,7 +33,7 @@
 	left: 0;
 	width: calc(95% + var(--gap-horizontal) * 2);
   	height: calc(95% + var(--gap-vertical) * 2);
-	background: url(../img/pizza.png) no-repeat 50% 0;
+	background: url(../img/pizza-logo.png) no-repeat 50% 0;
   	background-color: var(--blend-color-1);
   	background-size: cover;
 	transform: translate3d(0,0,0);
