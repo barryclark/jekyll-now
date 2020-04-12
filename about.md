@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi, I'm Łukasz Żukowski
 
-![_config.yml]({{ site.baseurl }}/images/me.jpg){width="360px"}
+![_config.yml]({{ site.baseurl }}/images/me.jpg)
 
 ### Contact me
 
