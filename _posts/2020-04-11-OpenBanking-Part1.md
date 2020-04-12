@@ -14,7 +14,7 @@ It took its name from the UK regulator's [2016 initiative][11] to front-run the 
 into full effect in September 2019.  
 The successful implementation and roll-out of OpenBanking in the UK has resulted in  
 * the name "OpenBanking" becoming almost global, and 
-* the UK becoming the pre-Covid [de facto hub][13] for open APIs and fintech innovation.
+* the UK becoming the [de facto hub][13] for open APIs and fintech innovation (at least pre-Covid19).
 
 In this series of two articles I will 
 * give a high-level introduction to the key PSD2 and OpenBanking concepts,
@@ -27,24 +27,24 @@ As this is an evolving ecosystem, I will be using a fusion of OpenBanking and PS
 
 ## PSD2 
 
-From an end-user standpoint, PSD2 can be (simplistically) summarised in the following sentence  
+From an end-user standpoint, PSD2 can be (very simplistically) summarised in the following sentence  
 > Offer functional and security parity between a bank’s [channels][14] and its public APIs.
 
 Or  
-> A bank customer must be able to securely do through an API all things she can do through its other channels.
+> A bank customer must be able to securely do through an API all things she can do through the bank's other channels.
 
-PSD2 is a "meaty" combination of legal text and technical standards to set out the requirements for secure access to 
-their accounts by bank customers.  
+PSD2 is a "meaty" combination of legal text and technical standards to set out the requirements for secure access by bank 
+customers to their accounts.  
 More specifically, it is composed of  
 * The [Payment Services Directive 2][15] which sets out the legal framework and requirements for access to bank customer
-accounts by Third Part Providers (TPPs).
-* The European Banking Authority [technical standards for customer authentication and communications][16] (RTS) in PSD2.
+accounts by Third Party Providers (TPPs).
+* The European Banking Authority [technical standards for customer authentication and communications][16] (a.k.a. EBA RTS) in PSD2.
 * The [Electronic Identification Regulation][17] (eIDAS) which sets out the details on the operation of Trust Service 
 Providers (TSPs, more on this below).
 
-PSD2 by its nature (law and technical standards) answers the "why" (legal framework, ownership of data) and "how" 
+PSD2 by its nature (law and technical standards) answers the "why" (legal framework, ownership of data) and the broad "how" 
 (public/private cryptography, identification and security).  
-The remaining of the technical choices and concepts have evolved, taking into account industry best practice and 
+The rest of the technical choices and concepts have evolved organically, taking into account industry best practice, while 
 matching the [spirit][18] (if not the exact letter) of the law.  
 
 The following diagram describes the PSD2 ecosystem, the key elements and their interactions from a high level.  
@@ -75,16 +75,17 @@ Becoming [‘Qualified’][21] means that they have
 > be used to create qualified electronic signatures
  
 The eIDAS legislation wanted to prevent the EU security market from being controlled by [foreign entities][22].  
-For this reason, it lays out in detail the assessment and practices to be followed across all EU Member States. This will
+For this reason, it lays out in detail the assessment and practices to be followed by QTSPs across all EU Member States. This will
 result in interoperability and commercial-grade security across the European trust infrastructure.
 
-The list of each country's QTSPs are published and regularly updated in a [common top-level directory][23] (List of Trusted List,
+The list of each country's QTSPs are published and regularly updated in a [common top-level directory][23] (List of Trusted Lists,
 LOTL)
 
 ![LOTL](../assets/images/openbanking/lotl.png)
 
-Each QTSP publishes their active top-level [public key certificates][24] as well as what functionality they are meant for
-(MA-TLS, e-signatures, timestamping,...). This list is open for inspection and consumption by anyone.
+The lists are published by each country's regulator. Each QTSP entry contains their active top-level [public key certificates][24] 
+as well as what functionality they are meant for (MA-TLS, e-signatures, timestamping,...). This list is open for 
+inspection and consumption by anyone. More on the LOTL below.
 
 ### TPP
 
@@ -98,7 +99,7 @@ regulator (e.g. the Central Bank in Greece, FCA in the UK,...).
 
 To participate in the PSD2 ecosystem and start calling banking APIs, a TPP contacts a QTSP (arrow 1) to issue 2 cryptographic 
 certificates, a QWAC and a QSEAL. More on them below.  
-The QTSP performs a number of background checks on the TPP before issuing the certificates and charges a price (if a 
+The QTSP performs a number of background checks on the TPP before issuing the certificates and charges a price (if the QTSP is a  
 commercial entity).  
 These certificates are used as the identifier of the TPP's Application. A TPP (legal entity) can have many different 
 Applications (i.e. brands) it is operating. <sup>[1](#footnote_1)</sup> In this case it is a best practice to issue 
@@ -114,11 +115,11 @@ Since OBIE is essentially an independent public entity, it has been offering its
 At the core of PSD2 & OpenBanking is the concept of Consent; the permission of the Customer (PSU) for her account to be accessed
 by a TPP.
 
-In simple words, an OpenBanking Consent is the equivalent of a notarized "contract".  
+In layman terms, an OpenBanking Consent is the equivalent of a notarized "contract".  
 This contract is between the Customer and the TPP. The bank becomes the trusted 3rd party, safeguarding the interests of
 both Customer and TPP (akin to a notary).
 
-If an OpenBanking account access Consent was in text, it would read something like  
+If an OpenBanking "Account Access" Consent was a document, it would read something like  
 > I (Customer) authorize TPP XYZ to access my account 123 and read items A, B and C. 
 > This authorization is valid until date DD/MM/YYYY.
 
@@ -128,15 +129,16 @@ If the Consent does not already exist, its capture flow is the first thing which
  
 The Consent is stored in the bank’s systems.  
 Every time the TPP makes a call on behalf of the Customer, it references the Consent as "proof". The bank provides a 
-mechanism for the Customer to revoke the Consent at any time prior to expiration.
+mechanism for the Customer to revoke the Consent at any time prior to expiration. This "breaks the contract" and prevents 
+the TPP from any further calls on behalf of the the Customer.
 
 ### ASPSP 
 
-In PSD2-speak a bank has the ceremonial title Account Servicing Payment Services Provider.  
-The reason is that PSD2 covers not just banks but a wider range of deposit-holding organisations, like 
-[building societies][26] in the UK.
+In PSD2-speak a bank has the ceremonial title Account Servicing Payment Services Provider (ASPSP).  
+The reason they did not go for the term "bank" is that PSD2 covers not just banks but a wider range of deposit-holding 
+organisations, like [building societies][26] in the UK.
 
-The ASPSPs are responsible for implementing and enforcing the 3 key OpenBanking features.  
+The ASPSPs are responsible for implementing and enforcing the 3 key OpenBanking features: APIs, Security and Consent Capture.  
 
 #### 1. APIs
 
@@ -149,12 +151,13 @@ This needs to happen by the date of the law [coming into effect][27]. However th
 In UK the API specification and roll-out has been centrally [co-ordinated by the OBIE][28].  
 By signing up to the UK's OpenBanking scheme, all participating banks are required to  
 * provide a uniform set of APIs according to the [given specifications][29], and 
-* most importantly, follow a uniform API version lifecycle and [operational standards][30]  
+* (most importantly) follow a uniform API version lifecycle and [operational standards][30]  
 
-This allows for a consistent and smooth integrator experience as all UK APIs are almost identical.  
-Minor/optional differences are [documented][31] and the whole of the UK ecosystem is advancing in "lock-step".
+This allows for a consistent and smooth integrator experience as all UK bank API implementations are practically identical.  
+Minor/optional differences are [documented][31] and the whole of the UK ecosystem is advancing from version to version 
+in "lock-step".
 
-This is in contrast to the rest of ASPSPs in Europe, where each bank is free to implement its own API specification.  
+This is in contrast to the rest of the ASPSPs in Europe, where each bank is free to implement its own API specification.  
 Unlike the prescriptive OBIE mandate, the PSD2 technical specifications are very permissive. This results in a sea of 
 nuances and differences from [bank][32] to [bank][33].  
 
@@ -183,14 +186,14 @@ the authorisation server's database, with the QSEAL as client credentials.
 It is worth noting that PSD2 explicitly mandates that ASPSPs make a dedicated TPP channel, *not discriminating in terms 
 of performance and availability* compared to their other channels (mobile, eBanking,...).  
  
-What this means [in practice][41] is that the new APIs need to have  
+[In practice][41] this means that the new APIs need to have  
 * the same uptime as the bank's mobile/eBanking channels, 
 * the same performance/throughput, and 
 * (as a stop-gap) no unplanned downtime of more than 30 consecutive seconds.
 
 The onus is on the ASPSPs to continuously prove that they meet this criteria.  
-If they do not, then they will need to provide a "fallback mechanism". This fallback can be anything, from a complete 
-separate API stack to modifying their existing customer-facing interface for programmatice access by TPPs. <sup>[3](#footnote_3)</sup>
+If they do not, then they will need to provide a "fallback mechanism". This fallback can be anything, from a  
+separate API stack to modifying their existing customer-facing interface for programmatic access by TPPs. <sup>[3](#footnote_3)</sup>
 
 The creation of a new API with a complex new security profile is not a small undertaking, especially for small and 
 medium banks.   
@@ -215,18 +218,18 @@ Qualified Website Authentication Certificates (QWACs) are intended for 'Internet
 encryption. They are meant to be used at the [Transport Layer][44]. In OpenBanking they are used in MA-TLS communication
 between the TPP and the bank.
 * **QSEAL**  
-Qualified Electronic Seal Certificates (QSEALCs) are to be used at the [Application Layer][44]. They are used to "stamp" 
-communication to prove origin, authenticity and integrity. In OpenBanking they are used for JWT signatures.
+Qualified Electronic Seal Certificates (QSEALs) are to be used at the [Application Layer][44]. They are used to "stamp" 
+communication in order to prove origin, authenticity and integrity. In OpenBanking they are used for JWT signatures.
 
-QWACs and QSEALs are issued by QTSPs, signed by the QTSPs Certification Authority. The certificates contains 
+QWACs and QSEALs are issued by QTSPs, signed by the QTSPs Certification Authority certificate. The QWAC/QSEAL contains 
 [specific fields][45] allowing the bank to identify the TPP legal entity.  
 In the digital domain, the presence of valid certificates is legal proof that  
 * the call to the bank's APIs comes from a TPP
 * ...who is properly regulated (its regulator id being in the certificate), and
 * ...which has undergone checks by the QTSP.
 
-As a consequence, for any ASPSP receiving an API call with and [expired/revoked TPP certificate][7] is a signal that 
-“the TPP has lost its license or is otherwise unfit for financial transactions“. 
+As a consequence, for any ASPSP receiving an API call with an [expired/revoked TPP certificate][7] it is a signal that 
+"the TPP has lost its license or is otherwise unfit for financial transactions". 
 
 Which makes it critical that the banks perform...
 
@@ -244,7 +247,7 @@ The certificate's field values must correspond to the prescribed [ETSI standard]
 **QTSP check**  
 The European Commission publishes a machine-readable top-level ["List of Trusted Lists"][48] (LOTL).  
 This is an [ETSI TS 119 612 XML document][49], acting as an index to the list of trusted QTSPs, published by each member 
-state. For example, in the excerpt below, you can see the location of the Austrian list of QTSPs.  
+state. For example, in the excerpt below, you can see the URL location of the Austrian list of QTSPs.  
 ```xml
 ...
 <OtherTSLPointer>
@@ -275,62 +278,65 @@ Downloading the Austrian list we have, among others
 </NextUpdate>
 ...
 <TrustServiceProviderList>
-  <TrustServiceProvider>
-    <TSPInformation>
-      <TSPName>
-        <Name xml:lang="en">
-        A-Trust Gesellschaft für Sicherheitssysteme im elektronischen Datenverkehr GmbH
-        </Name>
-      </TSPName>
+<TrustServiceProvider>
+<TSPInformation>
+<TSPName>
+  <Name xml:lang="en">
+  A-Trust Gesellschaft für Sicherheitssysteme im elektronischen Datenverkehr GmbH
+  </Name>
+</TSPName>
 ...
-    </TSPInformation>
-    <TSPServices>
-      <TSPService>
-        <ServiceInformation>
-          <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
-          <ServiceDigitalIdentity>
-            <DigitalId>
-              <X509Certificate>
-              MIIE0TCCA7mgAwIBAgICApMwDQYJKoZIhvcNAQEFBQAwgc8xCzAJBgNVBAYTAkFUMYGLMIG...==
-              </X509Certificate>
-            </DigitalId>
-            <DigitalId>
-              <X509SubjectName>
-              CN=TrustSign-Sig-01, OU=TrustSign-Sig-01, O=A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH, C=AT
-              </X509SubjectName>
-            </DigitalId>
-          </ServiceDigitalIdentity>
-          <ServiceStatus>
-          http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted
-          </ServiceStatus>
-          <StatusStartingTime>2017-10-04T22:00:00Z</StatusStartingTime>
+</TSPInformation>
+<TSPServices>
+<TSPService>
+<ServiceInformation>
+<ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
+<ServiceDigitalIdentity>
+<DigitalId>
+  <X509Certificate>
+  MIIE0TCCA7mgAwIBAgICApMwDQYJKoZIhvcNAQEFBQAwgc8xCzAJBgNVBAYTAkFUMYGLMIG...==
+  </X509Certificate>
+</DigitalId>
+<DigitalId>
+  <X509SubjectName>
+  CN=TrustSign-Sig-01, OU=TrustSign-Sig-01, O=A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH, C=AT
+  </X509SubjectName>
+</DigitalId>
+</ServiceDigitalIdentity>
+<ServiceStatus>
+http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted
+</ServiceStatus>
+<StatusStartingTime>2017-10-04T22:00:00Z</StatusStartingTime>
 ...
 ```
 
 **Validation check**  
-The QTSP of the above XML fragment (A-Trust) is a trusted one; all European banks need to accept eIDAS certificates issued by it.
+The company A-Trust, the QTSP in the above XML fragment, is a trusted one; all European ASPSPs must accept eIDAS certificates issued by it.
 This means being able to perform an MA-TLS handshake and accept the TPP client certificate.  
-For this to happen securely, the bank needs to add the above `X509Certificate` value to the whitelist of it network device 
-handling TLS (for example, the load balancer).  
-Considering that the LOTL contains entries for 10s if not 100s of QTSPs and is updated almost daily, the bank needs to  
-* download and parse it at least once a day (example [parser][50]), and
-* update their network device with the whitelisted QTSP CA certificates, and
+For this to happen securely, the bank needs to add the above `X509Certificate` value to the whitelist of its network device 
+handling TLS (usually the external load balancer).  
+
+Considering that the LOTL contains entries for 10s if not 100s of QTSPs from around Europe and is updated almost daily, 
+the bank needs to  
+* download and parse it at least once a day (example [parser][50]),
+* update their network device(s) with the whitelisted QTSP CA certificates, and
 * (most importantly) upon receiving a QWAC, reach out to the issuing QTSP's [Certificate Revocation List][53] or 
-[OCSP endpoint][54] to verify that it is still valid (arrow 4).
+[OCSP endpoint][54] to verify that the QWAC is still valid (arrow 4).
 
 All of this is **NOT** a trivial task to configure, operate **AND** keep performant.
 
 The same concern extends to validating TPP JWT signatures with QSEALs.  
-In the UK ecosystem, the OBIE is providing a central [JWKS][51] endpoint providing the TPP public keys for signature 
-validation (example [entry][8]). However this is a convenience and not a standard approach.   
+In the UK ecosystem, the OBIE is providing a central [JWKS][51] endpoint listing the TPP public keys for signature 
+validation (example [entry][8]). However this is a convenience and not a standard approach across the EU.   
 In the general case of PSD2, the bank has no central reference for the public key of QSEALs, hence it requires the TPP to upload 
 them to the API portal in advance.
 
 #### 3. Customer consent
 
-As mentioned previously, the first thing that happens is capturing the Customer's Consent to share her data with the TPP.  
+As mentioned previously, the first thing that happens when a TPP calls a bank, is capturing the Customer's Consent to 
+share her data with the TPP.  
 The OpenBanking technical specification solves this by implementing a [Hybrid Flow][5] based on OpenID Connect. In this 
-the `intentId` is the unique Consent identifier.  
+implementation, the `intentId` is the unique Consent identifier.  
 
 Visualizing the flow from a customer’s point-of-view (e.g. to initiate a payment) will make things clearer.
 
@@ -341,7 +347,7 @@ Visualizing the flow from a customer’s point-of-view (e.g. to initiate a payme
 screen with the payment that will be initiated (red dot 1, 2)
 * It then redirects the Customer to the bank's OpenBanking endpoints to capture the Consent (blue 3).  
 Behind the scenes, the TPP's application has already initiated the Hybrid Flow, by making API calls. These calls inform 
-the bank that "Please create a Consent for a payment £31.94. A Customer is coming your way to confirm it".
+the bank that "Please create a Consent for a payment of £31.94. A Customer is coming your way to confirm it".
 * The bank displays its standard login screen to the Customer (red 4).  
 This is where the bank gets to know who the TPP's customer really is. In this example it also captures the explicit 
 Customer's Consent for the transaction (red 6).
@@ -364,12 +370,12 @@ EU banks, upon receiving an API call from a TPP licensed in another country <sup
 TPP is passported for the bank's country of operations (arrow 5).  
 
 This is where it gets interesting. There is no machine-readable standard for reporting this information.  
-Regulators are free to provide this information as they wish, resulting ins a mish-mash. Here are some examples from 
-[Austria][56], [Hungary][57], [Latvia][58] and [Greece][59]. 
-There is an [EBA register of TPPs][60] which also exists in [machine-readable form][61] but this is a convenience only;
+Regulators are free to provide this information as they wish, resulting in a mish-mash. Here are some examples from 
+[Austria][56], [Hungary][57], [Latvia][58] and [Greece][59].  
+There is an [EBA register of TPPs][60] which also exists in [machine-readable form][61], but this is a convenience only;
 it has no guarantee of accuracy or legal standing.  
 The only real way for a bank to be covered for regulatory risk <sup>[6](#footnote_6)</sup> is to either write custom 
-[screen-scraping][64] code for the regulator websites or have people checking their websites every day.
+[screen-scraping][64] code for all the regulator websites or have people checking their websites every day.
 
 This information gap has given rise to an interesting business model: "regulatory service" API providers, like [Preta][62] and [Konsentus][63].  
 Behind the scenes this type of providers do exactly that: they either have custom screen-scraping code or simply [mechanical turk][65] 
@@ -380,7 +386,7 @@ timely and accurate.
 
 ## Around the world 
 
-Europe has literally created the domain of financial APIs.  
+With PSD2 Europe has literally created the domain of financial APIs.  
 It has trail-blazed the legal framework, the main concepts and the key technology choices. These have been (and continue 
 to be) replicated around the world.  
 For example, see in [Japan][66] or the [Australian][67] [technical choices][68].
@@ -394,16 +400,16 @@ This [very interesting report][69] sums up in the best way the progress of OpenB
 
 [PSD2's][70] and [OpenBanking's][71] main motivations were to  
 * foster innovation in the financial sector, and
-* put customer in control of their own financial information. 
+* put customers in control of their own financial information. 
 
 As is natural with businesses of all kinds, retail banks had created [walled gardens][72]. Tearing down the walls and 
-allowing customers to access their financial information through other players would increase competition. 
+allowing customers to access their financial information through other players would naturally increase competition. 
 
 However, it is not just that.  
 The main motivation for this re-think was the [financial crisis of 2008][73]. A large number of [banks in Europe][74] had 
 to be bailed out as they posed a [systemic risk][75]. PSD2 / OpenBanking is a way of [disintermediating][76] the banks 
 out through technology. Additional providers will be able to create value-added services, allowing customers to move 
-funds around without realising.  
+funds around almost without realising.  
 Banks would be slowly [commoditized][77] through market forces and fewer of them would be "too big to fail".  
 
 That was in theory.  
@@ -428,7 +434,7 @@ Whatever that might be.
 The second and final article will be a technical one.  
 I will go through the simple steps to  
 * access an OpenBanking sandbox
-* create some test data and
+* create some test data,
 * experiment making calls,
 * while explaining all the security and configuration options along the way. 
 
@@ -439,7 +445,7 @@ Amazon is the TPP (legal entity) and has a number of separate Applications: Amaz
 2. <a name="footnote_2"></a>To be precise, PSD2 requires "dedicated channels" to be accessible by TPPs, without being more 
 prescriptive. It was after the industry consultation phase that the EBA RTS steered towards the creation of APIs.   
 3. <a name="footnote_3"></a>This would mean very expensive modifications to existing code, originally created for a 
-different purpose (manual use by a single customer). This negative incentive was enough to force all European ASPSPs to 
+different purpose (manual use by a single customer). This counter-incentive was enough to force the majority of European ASPSPs to 
 take PSD2 API implementation seriously.  
 4. <a name="footnote_4"></a>A small detail of passporting is that it is explicit per country, not EU-wide. So a Greek TPP
 may have a passport for Germany and France only, if that is what they applied for. In that case they would not be able 
