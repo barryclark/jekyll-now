@@ -1,0 +1,76 @@
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Date','Brazil','Chile','Peru'],
+        ["Feb 25",1,0,0],
+        ["Feb 26",1,0,0],
+        ["Feb 27",1,0,0],
+        ["Feb 28",1,0,0],
+        ["Feb 29",2,0,0],
+        ["Mar 1",2,0,0],
+        ["Mar 2",2,0,0],
+        ["Mar 3",2,1,0],
+        ["Mar 4",3,3,0],
+        ["Mar 5",8,4,0],
+        ["Mar 6",13,5,1],
+        ["Mar 7",13,5,1],
+        ["Mar 8",25,10,7],
+        ["Mar 9",25,13,9],
+        ["Mar 10",34,17,11],
+        ["Mar 11",52,23,17],
+        ["Mar 12",77,33,22],
+        ["Mar 13",98,43,38],
+        ["Mar 14",121,61,43],
+        ["Mar 15",200,75,71],
+        ["Mar 16",234,156,86],
+        ["Mar 17",291,201,117],
+        ["Mar 18",428,238,145],
+        ["Mar 19",621,342,234],
+        ["Mar 20",904,434,263],
+        ["Mar 21",1128,537,318],
+        ["Mar 22",1546,632,363],
+        ["Mar 23",1891,746,395],
+        ["Mar 24",2201,922,416],
+        ["Mar 25",2433,1142,558],
+        ["Mar 26",2915,1306,580],
+        ["Mar 27",3417,1610,635],
+        ["Mar 28",3904,1909,671],
+        ["Mar 29",4256,2139,852],
+        ["Mar 30",4579,2449,950],
+        ["Mar 31",5717,2738,1065],
+        ["Apr 1",6836,3031,1323],
+        ["Apr 2",7910,3404,1414],
+        ["Apr 3",9056,3737,1595],
+        ["Apr 4",10278,4161,1746],
+        ["Apr 5",11130,4471,2281],
+        ["Apr 6",12056,4815,2561],
+        ["Apr 7",13717,5116,2954],
+        ["Apr 8",15927,5546,4342],
+        ["Apr 9",17857,5972,5256],
+        ["Apr 10",19638,6501,5897],
+        ["Apr 11",20727,6927,6848],
+        ["Apr 12",21042,"7,213",7519]
+        ]);
+
+      var options = {
+        title: 'COVID-19: Casos Confirmados',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="curve_chart" style="width: 100%; height: 100%"></div>
+</body>
+</html>
