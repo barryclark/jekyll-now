@@ -4,11 +4,9 @@ title: About
 permalink: /about/
 ---
 
+Hi, I'm Łukasz Żukowski
+
 ![_config.yml]({{ site.baseurl }}/images/me.jpg)
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
