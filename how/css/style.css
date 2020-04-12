@@ -107,8 +107,8 @@ html {
 .glitch {
   position: relative;
   width: var(--glitch-width);
-  max-width: 740px;
-  max-height: 750px;
+  max-width: 670px;
+  max-height: 700px;
   height: var(--glitch-height);
   overflow: hidden;
   margin: 0 auto;
@@ -120,7 +120,7 @@ html {
   left: 0;
   width: calc(95% + var(--gap-horizontal) * 2);
   height: calc(95% + var(--gap-vertical) * 2);
-  background: url(../img/pizza-logo.png) no-repeat 50% 0;
+  background: url(../img/pizza.png) no-repeat 50% 0;
   background-color: var(--blend-color-1);
   background-size: cover;
   -webkit-transform: translate3d(0, 0, 0);
@@ -736,7 +736,7 @@ header .container {
   -ms-grid-row-span: 6;
   grid-row-end: 7;
   width: 100%;
-  background: #D83751;
+  background: #FEBC37;
 }
 header .title {
   -ms-grid-row: 2;
@@ -1608,7 +1608,6 @@ header .glitch {
   -webkit-box-shadow: rgba(144, 115, 150, 0.3) 0px 4px 27px;
           box-shadow: rgba(144, 115, 150, 0.3) 0px 4px 27px;
   z-index: 2;
-  border-radius: 4px;
 }
 .what .projects li.briefcase .cross {
   -ms-grid-column: 2;
