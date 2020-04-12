@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: mikhajlov-oleg@github.io
 
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
@@ -23,10 +23,10 @@ footer-links:
   flickr:
   github: barryclark/jekyll-now
   instagram:
-  linkedin:
+  linkedin: mikhajlovoleg
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: OMikhajlov
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -84,3 +84,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+theme: jekyll-theme-architect
