@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My personal highlights of 2019"
+title: "My personal highlights and favourite moments of 2019"
 description: "2019 personal highlights and favourite moments from Cheryl Hung, Director of Ecosystem at CNCF"
 location: London, UK
 image: /images/2019-11-19-cncf-updates-kubecon-cloudnativecon-san-diego-2.jpg
