@@ -6,7 +6,7 @@
 name: Luke on Python
 
 # Short bio or description (displayed in the header)
-description: 
+description: Thoughts and notes on Python programming
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://github.com/lzukowski/lzukowski.github.io/raw/master/images/logo.png
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: lzukowski/lzukowski.github.io
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/%C5%82ukasz-%C5%BCukowski-084b347/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
