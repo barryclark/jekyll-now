@@ -338,7 +338,8 @@ section {
 }
 
 .masthead {
-  margin-bottom: 0px;
+  margin-bottom: $wide;
+  padding-bottom: $wide;
 }
 
 .thumbnail-container {
