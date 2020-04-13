@@ -32,3 +32,4 @@ Package.onUse(function(api) {
   ], 'client');
 
 });
+problem('lalala')
