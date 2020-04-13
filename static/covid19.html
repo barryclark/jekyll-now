@@ -1,5 +1,7 @@
 <html>
 <head>
+	<meta charset="utf-8">
+	<title>COVID-19 en Perú</title>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
     google.charts.load('current', {'packages':['corechart']});
@@ -7,7 +9,7 @@
 
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ['Date','Brazil','Chile','Peru'],
+        ['Date','Brazil','Chile','Perú'],
         ["Feb 25",1,0,0],
         ["Feb 26",1,0,0],
         ["Feb 27",1,0,0],
@@ -55,14 +57,20 @@
         ["Apr 9",17857,5972,5256],
         ["Apr 10",19638,6501,5897],
         ["Apr 11",20727,6927,6848],
-        ["Apr 12",21042,"7,213",7519]
+        ["Apr 12",21042,7213,7519]
         ]);
 
       var options = {
         title: 'COVID-19: Casos Confirmados',
         curveType: 'function',
         legend: { position: 'bottom' },
-        colors: ['#f39c12','#2980b9','#e74c3c'],
+        series: {
+            0: { lineWidth: 3 },
+            1: { lineWidth: 2 },
+            2: { lineWidth: 4 },
+          },
+        colors: ['#ced6e0','#dfe4ea','#ff6b81'],
+        pointSize: 0,
       };
 
       var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -70,6 +78,14 @@
       chart.draw(data, options);
     }
   </script>
+  <style type="text/css">
+  	head, body {
+  		padding: 0;
+  		margin: 0;
+  		width: 100vw;
+  		height: 100vh;
+  	}
+  </style>
 </head>
 <body>
   <div id="curve_chart" style="width: 80vh; height: 100vh; display: block; margin: 0 auto;"></div>
