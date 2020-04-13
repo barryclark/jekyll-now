@@ -11,6 +11,7 @@ tags:
   - Video
   - Slides
   - "2017"
+  - Featured
 redirect_from: /persistent-storage-with-k8s-austin/
 ---
 
@@ -32,3 +33,5 @@ Resource links:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Really great overview of persistent storage requirements, particularly in terms of <a href="https://twitter.com/hashtag/performance?src=hash&amp;ref_src=twsrc%5Etfw">#performance</a> considerations, with <a href="https://twitter.com/hashtag/Kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#Kubernetes</a> in production by <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a>. App Data the big hitter, but all points potentially lead to latency! <a href="https://t.co/I1AUaLkjYc">https://t.co/I1AUaLkjYc</a> <a href="https://t.co/QacYWFj3aJ">pic.twitter.com/QacYWFj3aJ</a></p>&mdash; BuildBetterTogether (@paulsbruce) <a href="https://twitter.com/paulsbruce/status/1090638430529339394?ref_src=twsrc%5Etfw">January 30, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#kubernetes</a> - just listened to a great presentation by <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a><br> .. a few years old but still a good primer on storage as I delve into Storage v. Network Cache. Treat your storage like cattle, not pets. <a href="https://twitter.com/hashtag/k8s4life?src=hash&amp;ref_src=twsrc%5Etfw">#k8s4life</a> <a href="https://twitter.com/hashtag/k8s?src=hash&amp;ref_src=twsrc%5Etfw">#k8s</a> <a href="https://t.co/RM1KgXF8EA">https://t.co/RM1KgXF8EA</a> <a href="https://t.co/NP4jXPkeNj">pic.twitter.com/NP4jXPkeNj</a></p>&mdash; Rippul (@RippulCorp) <a href="https://twitter.com/RippulCorp/status/1249443168506064897?ref_src=twsrc%5Etfw">April 12, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
