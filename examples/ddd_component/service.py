@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from functools import singledispatchmethod
-from typing import List, Callable
+from typing import List, Callable, Optional
 
 from returns.result import safe
 
@@ -37,7 +37,7 @@ class CommandHandler:
 
     @safe
     @singledispatchmethod
-    def handle(self, command: Command) -> Event:
+    def handle(self, command: Command) -> Optional[Event]:
         uow: UnitOfWork = self._repository.get(command.uow_id)
 
         event: Event = app_event(self._handle(command, uow), command)
