@@ -36,7 +36,8 @@ class CommandHandler:
             self._listeners.remove(listener)
 
     @safe
-    def handle(self, command: Command) -> Event:
+    @singledispatchmethod
+    def handle(self, command: Command) -> Optional[Event]:
         uow: UnitOfWork = self._repository.get(command.uow_id)
 
         event: Event = app_event(self._handle(command, uow), command)
@@ -45,6 +46,13 @@ class CommandHandler:
 
         self._repository.save(uow)
         return event
+
+    @safe
+    @handle.register(Create)
+    def create(self, command: Create) -> Event:
+        uow = UnitOfWork.create()
+        self._repository.save(uow)
+        return Created(command.command_id, uow.id)
 
     @singledispatchmethod
     def _handle(self, c: Command, u: UnitOfWork) -> UnitOfWork.Event:
