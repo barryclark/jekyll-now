@@ -5,11 +5,9 @@ categories: [ddd]
 tags: [python, ddd, component, code architecture]
 ---
 Draft of a post in answer to a StackOverflow
-<a href="https://stackoverflow.com/questions/
-59776634/ddd-with-python-did-i-get-it-right">
+<a href="https://stackoverflow.com/questions/59776634/ddd-with-python-did-i-get-it-right">
 question</a>. You can find code used in this example
-<a href="{{ site.github.repository_url }}
-/tree/master/examples/ddd_component">here</a>.
+<a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component">here</a>.
 
 # Commands
 {% highlight python %}
@@ -19,8 +17,7 @@ class Create(Command):
     timestamp: datetime = field(default_factory=datetime.utcnow)
 {% endhighlight %}
 
-<a href="{{ site.github.repository_url }}
-/tree/master/examples/ddd_component/command.py">command.py</a>
+<a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component/commands.py">commands.py</a>
 
 # Application service
 {% highlight python %}
@@ -57,8 +54,7 @@ class CommandHandler:
     def _(self, command: UpdateValue, uow: UnitOfWork) -> UnitOfWork.Event:
         return uow.update(command.value)
 {% endhighlight %}
-<a href="{{ site.github.repository_url }}
-/tree/master/examples/ddd_component/service.py">service.py</a>
+<a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component/service.py">service.py</a>
 
 # Aggregate
 {% highlight python %}
@@ -95,8 +91,7 @@ class UnitOfWork:
         self.dto.value = value
         return self.Updated()
 {% endhighlight %}
-<a href="{{ site.github.repository_url }}
-/tree/master/examples/ddd_component/uow.py">uow.py</a>
+<a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component/uow.py">uow.py</a>
 
 
 # Repository
@@ -136,5 +131,4 @@ UnitOfWorkMapper = mapper(
     column_prefix='_db_column_',
 )
 {% endhighlight %}
-<a href="{{ site.github.repository_url }}
-/tree/master/examples/ddd_component/repository.py">repository.py</a>
+<a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component/repository.py">repository.py</a>
