@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My structure for DDD component
-categories: [blog, ddd, python]
+categories: [ddd]
 tags: [python, ddd, component, code architecture]
 ---
 Draft of a post in answer to a StackOverflow
