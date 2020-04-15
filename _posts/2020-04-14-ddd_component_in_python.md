@@ -1,10 +1,10 @@
 ---
 layout: post
 title: My structure for DDD component
-categories: [ddd]
-tags: [python, ddd, component, code architecture]
+categories: [ddd, stackoverflow]
+tags: [python, ddd, component, code architecture, stackoverflow]
 ---
-Draft of a post in answer to a StackOverflow
+Post in answer to a StackOverflow
 <a href="https://stackoverflow.com/questions/59776634/ddd-with-python-did-i-get-it-right">
 question</a>. You can find code used in this example
 <a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component">here</a>.
@@ -30,6 +30,20 @@ class Create(Command):
     timestamp: datetime = field(default_factory=datetime.utcnow)
 {% endhighlight %}
 <a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component/commands.py">commands.py</a>
+
+# Component Events
+Our component emits events when an internal state changes. Like commands, it's also DTO but they describe message to the system about important domain events. Our component doesn't know who will listen and react to these events and actually should not care. That's a big difference between commands and events. Our DDD component should be self-sufficient so we should not send commands to other components. If it is maybe its process manager, not DDD component.
+
+There should be related command_id (and application event can have other correlation ids like user_id or session_id).
+
+{% highlight python %}
+@dataclass
+class Updated(Event):
+    command_id: CommandID
+    event_id: EventID = field(default_factory=uuid1)
+    timestamp: datetime = field(default_factory=datetime.utcnow)
+{% endhighlight %}
+<a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component/events.py">events.py</a>
 
 # Application service
 This is a facade for our component. It's a starting point cause all our BDD tests will be base on Facade API and all communication with our component is going through the facade.
@@ -87,6 +101,10 @@ class CommandHandler:
 <a href="{{ site.github.repository_url }}/tree/master/examples/ddd_component/service.py">service.py</a>
 
 # Aggregate
+Aggregate (or Unit Of Work) is the Core component of DDD architecture. All business logic should be placed here. No dependencies on IO or other resources. Generally, this object provides only behaviors without exposing internal data so it's hard to persist without accessing private data. That's why for persistence I use DTO object that is handled by the repository.
+
+This object only changes it's internal state and is emitting events (not commands to other objects). This rule is one of check when you are deciding if you want to use DDD component or other architecture (like process manager).
+
 {% highlight python %}
 UnitOfWorkID = NewType('UnitOfWorkID', UUID)
 
@@ -125,6 +143,8 @@ class UnitOfWork:
 
 
 # Repository
+The persistence of aggregate is the responsibility of a repository. Also to create a reliable DDD component repository should also care about a transaction and sending application events. A good practice is to save aggregate DTO and events in one transaction to the same DB. Then send events by async workers. With this approach, your events would be sent at least 1 time. If you aim to have a solution with not guaranteed events sending you can send it directly like for example. Then you will have a solution with sending events max 1 time.
+
 {% highlight python %}
 class ORMRepository(Repository):
     def __init__(self, session: Session):
@@ -141,6 +161,8 @@ class ORMRepository(Repository):
         self._session.add(uow.dto)
         self._session.flush()
 {% endhighlight %}
+
+For DTO I like to separate tables from DTO. So in case of SQLalchemy I choose mappers over declarative mode. Then DTO is pure python and all ORM magic is in the repository module. Also, mappers give you many tools to manipulate how you map DTO. You don't need all columns or you can present data in different forms then you have in tables.
 
 {% highlight python %}
 entities_t = Table = Table(
