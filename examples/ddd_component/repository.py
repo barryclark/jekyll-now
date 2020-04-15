@@ -8,7 +8,7 @@ from .uow import UnitOfWorkDTO, UnitOfWork
 
 meta = MetaData()
 
-entities_t = Table = Table(
+entities_t: Table = Table(
     'entities',
     meta,
     Column('id', Integer, primary_key=True, autoincrement=True),
