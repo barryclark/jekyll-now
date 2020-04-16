@@ -8,7 +8,6 @@ description: "Cheryl Hung's upcoming conferences and events."
 ### 2020
 
 April 16:
-* 9AM BST: **How cloud native is adopted and what's coming next**, [All The Talks](https://www.allthetalks.org/)
 * 9:40PM BST: **The State of Cloud Native Software, Service Mesh, Serverless and More**, [Destination: Decentralization](https://konghq.com/events/destination-decentralization/)
 
 
