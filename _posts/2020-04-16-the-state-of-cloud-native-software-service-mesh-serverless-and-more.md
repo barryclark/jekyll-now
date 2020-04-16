@@ -12,6 +12,10 @@ tags:
 
 My second virtual talk of the day (!) is an overview of cloud native and Kubernetes in 2019, including how Slack is handling the huge surge in demand using cloud native infrastructure.
 
+Thank you everyone for taking part in the live polls! Folks from all over the world joined:
+
+![](/images/2020-04-16-2-where-are-you-now.png)
+
 References:
 
 * [The impact of the coronavirus outbreak on Slack](https://twitter.com/stewart/status/1243000487365861376)
