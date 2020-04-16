@@ -7,12 +7,6 @@ description: "Cheryl Hung's upcoming conferences and events."
 
 ### 2020
 
-April 16:
-* 9:40PM BST: **The State of Cloud Native Software, Service Mesh, Serverless and More**, [Destination: Decentralization](https://konghq.com/events/destination-decentralization/)
-
-
-June 21 - 25: [ISC (International Supercomputing)](https://www.isc-hpc.com/), Frankfurt
-
 September 2 - 4: [Kubernetes Community Days London](http://kubernetesdays.london/), London
 * Chair
 
