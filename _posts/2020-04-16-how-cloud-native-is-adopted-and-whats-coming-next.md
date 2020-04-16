@@ -13,6 +13,15 @@ tags:
 
 I'm speaking at the All The Talks virtual event to fundraise for the Covid-19 outbreak, plus how Slack is handling the huge surge in demand using cloud native infrastructure.
 
+Thank you to the partipants for joining in the live poll and for sharing about you and how you run cloud native.
+
+* People joined from Europe, Australia and New Zealand
+* Just over 50% were backend developers and SRE/DevOps engineers.
+* 60% are running containers in production, and of those running Kubernetes, all run 20 or fewer clusters.
+* The biggest challenges are the learning curve and adoption across the team, which mirrors the 2019 CNCF Survey.
+* 50% are evaluating service meshes, 21% have no plans to use a service mesh.
+* 36% run stateful applications in production.
+
 References:
 
 * [The impact of the coronavirus outbreak on Slack](https://twitter.com/stewart/status/1243000487365861376)
