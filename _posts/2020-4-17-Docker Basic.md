@@ -5,19 +5,17 @@ title: Docker Basic
 
 ###### 03 Docker镜像
 ```shell
-# docker version    //docker版本
-# docker search tutorial    //寻找tutorial镜像
-# docker pull zhangsan/tutorial     //下载镜像全名
-# docker run zhangsan/tutorial echo "hello world"   //直接使用镜像输出内容
-# docker run zhangsan/tutorial apt-get install -y ping  //在镜像中安装ping命令，在容器的可写层做操作
-# docker ps -l    //得到images的key值
-# docker commit xxx zhangsan/ping    //提交key值
-# docker run zhangsan/ping ping www.google.com
-# docker inspect xxx    //查看镜像json
-# docker pull zhangsan/ping     //上传镜像
+$ docker version    //docker版本
+$ docker search tutorial    //寻找tutorial镜像
+$ docker pull zhangsan/tutorial     //下载镜像全名
+$ docker run zhangsan/tutorial echo "hello world"   //直接使用镜像输出内容
+$ docker run zhangsan/tutorial apt-get install -y ping  //在镜像中安装ping命令，在容器的可写层做操作
+$ docker ps -l    //得到images的key值
+$ docker commit xxx zhangsan/ping    //提交key值
+$ docker run zhangsan/ping ping www.google.com
+$ docker inspect xxx    //查看镜像json
+$ docker pull zhangsan/ping     //上传镜像
 ```
-
-
 * * *
 
 
