@@ -1,6 +1,6 @@
 ---
-layout:post
-title:Docker Basic
+layout: post
+title: Docker Basic
 ---
 
 #### 03 Docker镜像
