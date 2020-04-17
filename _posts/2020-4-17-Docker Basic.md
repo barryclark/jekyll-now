@@ -3,8 +3,8 @@ layout: post
 title: Docker Basic
 ---
 
-#### 03 Docker镜像
-```c
+###### 03 Docker镜像
+```shell
 # docker version    //docker版本
 # docker search tutorial    //寻找tutorial镜像
 # docker pull zhangsan/tutorial     //下载镜像全名
@@ -15,14 +15,13 @@ title: Docker Basic
 # docker run zhangsan/ping ping www.google.com
 # docker inspect xxx    //查看镜像json
 # docker pull zhangsan/ping     //上传镜像
-
 ```
 
 
 * * *
 
 
-#### 04 Docker Docker 容器相关技术简介
+###### 04 Docker Docker 容器相关技术简介
 ###### Docker依赖的Linux内核特性
 - NameSpace 命名空间
 
@@ -41,14 +40,9 @@ title: Docker Basic
        Cgroup是control group，又称为控制组，它主要是做资源控制。原理是将一组进程放在放在一个控制组里，通过给这个控制组分配指定的可用资源，达到控制这一组进程可用资源的目的。
        
        Cgroup主要是用作资源的限制，常见的有cpu、内存、blkio等
-       
-
-
-
-
 * * *
 
-#### 07 Ubuntu Docker 在 Ubuntu 中安装 Docker
+###### 07 Ubuntu Docker 在 Ubuntu 中安装 Docker
 
 
 >Docker版本分为两个：**Docker Community Edition (CE)** 和 **Docker Enterprise Edition (EE)**。Docker CE社区版本适合个人用户使用。Ubuntu18.04下安装Docker CE有如下几种主要方法。
@@ -59,7 +53,7 @@ title: Docker Basic
 
 
 * * *
-#### 12 Docker容器的基本操作
+###### 12 Docker容器的基本操作
 启动容器：
 ```shell
 $ docker run ubuntu echo 'hello world!!!'
@@ -127,7 +121,7 @@ centos01
 
 * * *
 
-#### 13 后台运行容器（守护式）
+###### 13 后台运行容器（守护式）
 >能够长期运行
 >没有交互式会话
 >适合运行应用程序和服务
@@ -186,7 +180,7 @@ $ docker kill centos03    //直接停止
 
 * * *
 
-#### 14 在容器中部署静态网站
+###### 14 在容器中部署静态网站
 >网站服务通过80端口提供服务，端口映射。
 >-P，--publish-all=true|false 默认为false，所有端口进行映射
 ```shell
@@ -214,7 +208,7 @@ $ docker run -p 0.0.0.0:8080:80 -it ubuntu /bin/bash
 
 
 * * *
-##### 创建网站步骤：
+###### 创建网站步骤：
 >创建映射80端口的交互式容器
 >安装Nginx
 >安装问吧编辑器vim
@@ -306,5 +300,5 @@ $ curl 172.17.0.2
 $ docker exec web nginx
 ```
 
->`重点：`
->当我们stop容器，然后start后，docker的IP地址和端口都会改变！
+###### 重点：
+当我们stop容器，然后start后，docker的IP地址和端口都会改变！
