@@ -10,7 +10,7 @@ title: Docker Image
 >层叠的制度文件系统
 >联合加载（union mount）
 
-![67a02dbd5cdfe8c8426b8050525f1af4.png](en-resource://database/1540:1)
+![image-title-here](C:\Project\【技术研究】各领域\边缘云\2020 learning\k8s\docker读写机制.png){:class="img-responsive"}
 
 >Docker信息：
 ```
