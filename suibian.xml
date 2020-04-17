@@ -1,0 +1,9 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>GitHub</ShortName>
+  <Description>Search GitHub</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://github.com/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://github.com/search?q={searchTerms}&amp;ref=opensearch"/>
+  <moz:SearchForm>https://github.com/search</moz:SearchForm>
+</OpenSearchDescription>
