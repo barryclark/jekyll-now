@@ -14,7 +14,7 @@ $ docker ps -l    //得到images的key值
 $ docker commit xxx zhangsan/ping    //提交key值
 $ docker run zhangsan/ping ping www.google.com
 $ docker inspect xxx    //查看镜像json
-$ docker pull zhangsan/ping     //上传镜像
+$ docker push zhangsan/ping     //上传镜像
 ```
 * * *
 
