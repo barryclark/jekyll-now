@@ -76,7 +76,7 @@ can be found in chapter 4.2 I2C Address in the datasheet and has the hex value 0
 2. The master sends a register address of the slave on to the bus. For example there
 might be a register that contains an 8 bit value describing the sensitivity of our
 touch points or a register that if written 0xFF into might cause a recalibration of
-the chip etc.)
+the chip etc.
 3. The master sends the data it wants to write into the register
 
 ### Reading data with I2C
@@ -123,8 +123,9 @@ Some readers might wonder why we are using the `extern crate` syntax for
 our application what to do once the panic! macro is called (or we unwrap an Err, etc.)
 as this behaviour is not defined when writing a `no_std` program per default, hence we
 just need to tell Rust that we include this crate in our program but not actually use it.
-Semihosting being a mechanism that can be used to communicate between an embedded
-chip and an attached debugger.
+This sepcific panic implementation will (as the name says) use semihosting,
+a mechanism that can be used to communicate between an embedded
+chip and an attached debugger, to print out the stack trace.
 
 Of course all these dependencies aren't inside our Cargo.toml yet so let's quickly add them
 ```toml
@@ -227,7 +228,7 @@ let mut i2c = I2c::i2c1(dp.I2C1, (scl, sda), 400.khz(), clocks, &mut rcc.apb1r1)
 ```
 However this line is gonna fail us with a huge error of
 ```
-rror[E0277]: the trait bound `stm32l4xx_hal::gpio::gpiob::PB10<stm32l4xx_hal::gpio::Alternate<stm32l4xx_hal::gpio::AF4, stm32l4xx_hal::gpio::Output<stm32l4xx_hal::gpio::OpenDrain>>>: stm32l4xx_hal::i2c::SclPin<s
+error[E0277]: the trait bound `stm32l4xx_hal::gpio::gpiob::PB10<stm32l4xx_hal::gpio::Alternate<stm32l4xx_hal::gpio::AF4, stm32l4xx_hal::gpio::Output<stm32l4xx_hal::gpio::OpenDrain>>>: stm32l4xx_hal::i2c::SclPin<s
 tm32l4::stm32l4x2::I2C1>` is not satisfied
   --> examples/read_id.rs:29:19
    |
@@ -302,7 +303,7 @@ A simple `cargo install cargo-flash` is enough to acquire everything we need her
 the only thing we got do then is `cargo flash --chip=STM32L452 --example read_id --gdb --reset-halt`
 in order to tell cargo flash that we are flashing a STM32L452 chip and want it to put
 our example called read_id there. The --gdb --reset-halt arguments will then make it
-reset the chip to the beginning of our program, halt it there and then launch a so called
+reset the chip to the beginning of our program, halt it there and launch a so called
 GDB server on our machine which allows us to speak with the chip through a remote GDB
 connection (GDB in case you don't know being the GNU general debugger).
 
