@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeannette Barrientos | James E. Pustejovsky</title>
+    <link>/authors/jeannette-barrientos/</link>
+      <atom:link href="/authors/jeannette-barrientos/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jeannette Barrientos</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 18 Jul 2013 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Jeannette Barrientos</title>
+      <link>/authors/jeannette-barrientos/</link>
+    </image>
+    
+    <item>
+      <title>A d-statistic for single-case designs that is equivalent to the usual between-groups d-statistics</title>
+      <link>/publication/between-groups-d-statistic/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 -0500</pubDate>
+      <guid>/publication/between-groups-d-statistic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

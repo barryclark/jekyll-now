@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>simulation | James E. Pustejovsky</title>
+    <link>/tags/simulation/</link>
+      <atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+    <description>simulation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>simulation</title>
+      <link>/tags/simulation/</link>
+    </image>
+    
+    <item>
+      <title>Simulating correlated standardized mean differences for meta-analysis</title>
+      <link>/simulating-correlated-smds/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/simulating-correlated-smds/</guid>
+      <description>
+
+
+&lt;p&gt;As I’ve discussed in &lt;a href=&#34;/Sometimes-aggregating-effect-sizes-is-fine&#34;&gt;previous posts&lt;/a&gt;, meta-analyses in psychology, education, and other areas often include studies that contribute multiple, statistically dependent effect size estimates.
+I’m interested in methods for meta-analyzing and meta-regressing effect sizes from data structures like this, and studying this sort of thing often entails conducting Monte Carlo simulations.
+Monte Carlo simulations involve generating artificial data—in this case, a set of studies, each of which has one or more dependent effect size estimates—that follows a certain distributional model, applying different analytic methods to the artificial data, and then repeating the process a bunch of times.
+Because we know the true parameters that govern the data-generating process, we can evaluate the performance of the analytic methods in terms of bias, accuracy, hypothesis test calibration and power, confidence interval coverage, and the like.&lt;/p&gt;
+&lt;p&gt;In this post, I’ll discuss two alternative methods to simulate meta-analytic datasets that include studies with multiple, dependent effect size estimates: simulating individual participant-level data or simulating summary statistics. I’ll focus on the case of the standardized mean difference (SMD) because it is so common in meta-analyses of intervention studies. For simplicity, I’ll assume that the effect sizes all come from simple, two-group comparisons (without any covariate adjustment or anything like that) and that the individual observations are multi-variate normally distributed within each group. Our goal will be to simulate a set of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, where study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; is based on measuring &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; outcomes on a sample of &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; participants, all for &lt;span class=&#34;math inline&#34;&gt;\(k = 1,...,K\)&lt;/span&gt;.
+Let &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k = (\delta_{1k} \cdots \delta_{J_k k})&amp;#39;\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector of true standardized mean differences for study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;.
+I’ll assume that we know these true effect size parameters for all &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, so that I can avoid committing to any particular form of random effects model.&lt;/p&gt;
+&lt;div id=&#34;simulating-individual-participant-level-data&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating individual participant-level data&lt;/h1&gt;
+&lt;p&gt;The most direct way to simulate this sort of effect size data is to generate outcome data for every artificial participant in every artificial study. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{Y}_{ik}^T\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector of outcomes for treatment group participant &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, and let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{Y}_{ik}^C\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector outcomes for control group participant &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, for &lt;span class=&#34;math inline&#34;&gt;\(i=1,...,N_k / 2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k = 1,...,K\)&lt;/span&gt;. Assuming multi-variate normality of the outcomes, we can generate these outcome vectors as
+&lt;span class=&#34;math display&#34;&gt;\[
+\mathbf{Y}_{ik}^T \sim N\left(\boldsymbol\delta_k, \boldsymbol\Psi_k\right) \qquad \text{and}\qquad \mathbf{Y}_{ik}^C \sim N\left(\mathbf{0}, \boldsymbol\Psi_k\right),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\Psi_k\)&lt;/span&gt; is the population correlation matrix of the outcomes in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;.
+Note that I am setting the mean outcomes of the control group participants to zero and also specifying that the outcomes all have unit variance within each group.
+After simulating data based on these distributions, the effect size estimates for each outcome can be calculated directly, following standard formulas.&lt;/p&gt;
+&lt;p&gt;Here’s what this approach looks like in code.
+It is helpful to simplify things by focusing on simulating just a single study with multiple, correlated effect sizes.
+Focusing first on just the input parameters, a function might look like the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw &amp;lt;- function(delta, J, N, Psi) {
+  # stuff
+  return(ES_data)  
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above function skeleton, &lt;code&gt;delta&lt;/code&gt; would be the true effect size parameter &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k\)&lt;/span&gt;, &lt;code&gt;J&lt;/code&gt; would be the number of effect sizes to generate &lt;span class=&#34;math inline&#34;&gt;\((J_k)\)&lt;/span&gt;, &lt;code&gt;N&lt;/code&gt; is the total number of participants &lt;span class=&#34;math inline&#34;&gt;\((N_k)\)&lt;/span&gt;, and &lt;code&gt;Psi&lt;/code&gt; is a matrix of correlations between the outcomes &lt;span class=&#34;math inline&#34;&gt;\((\Psi_k)\)&lt;/span&gt;.
+From these parameters, we’ll generate raw data, calculate effect size estimates and standard errors, and return the results in a little dataset.&lt;/p&gt;
+&lt;p&gt;To make the function a little bit easier to use, I’m going overload the &lt;code&gt;Psi&lt;/code&gt; argument so that it can be a single number, indicating a common correlation between the outcomes. Thus, instead of having to feed in a &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; matrix, you can specify a single correlation &lt;span class=&#34;math inline&#34;&gt;\(r_k\)&lt;/span&gt;, and the function will assume that all of the outcomes are equicorrelated. In code, the logic is:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;if (!is.matrix(Psi)) Psi &amp;lt;- Psi + diag(1 - Psi, nrow = J)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s the function with the innards:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw &amp;lt;- function(delta, J, N, Psi) {
+
+  require(mvtnorm) # for simulating multi-variate normal data
+  
+  # create Psi matrix assuming equicorrelation
+  if (!is.matrix(Psi)) Psi &amp;lt;- Psi + diag(1 - Psi, nrow = J)
+  
+  # generate control group summary statistics
+  Y_C &amp;lt;- rmvnorm(n = N / 2, mean = rep(0, J), sigma = Psi)
+  ybar_C &amp;lt;- colMeans(Y_C)
+  sd_C &amp;lt;- apply(Y_C, 2, sd)
+  
+  # generate treatment group summary statistics
+  delta &amp;lt;- rep(delta, length.out = J)
+  Y_T &amp;lt;- rmvnorm(n = N / 2, mean = delta, sigma = Psi)
+  ybar_T &amp;lt;- colMeans(Y_T)
+  sd_T &amp;lt;- apply(Y_T, 2, sd)
+
+  # calculate Cohen&amp;#39;s d
+  sd_pool &amp;lt;- sqrt((sd_C^2 + sd_T^2) / 2)
+  ES &amp;lt;- (ybar_T - ybar_C) / sd_pool
+  
+  # calculate SE of d
+  SE &amp;lt;- sqrt(4 / N + ES^2 / (2 * (N - 2)))
+
+  data.frame(ES = ES, SE = SE, N = N)
+
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In action:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;delta &amp;lt;- rnorm(4, mean = 0.2, sd = 0.1)
+r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = 0.6)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: mvtnorm&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           ES        SE  N
+## 1  0.2258267 0.3172870 40
+## 2  0.2904284 0.3179778 40
+## 3  0.2944114 0.3180259 40
+## 4 -0.2015085 0.3170714 40&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or if you’d rather specify the full &lt;span class=&#34;math inline&#34;&gt;\(\Psi_k\)&lt;/span&gt; matrix yourself:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Psi_k &amp;lt;- 0.6 + diag(0.4, nrow = 4)
+Psi_k&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4]
+## [1,]  1.0  0.6  0.6  0.6
+## [2,]  0.6  1.0  0.6  0.6
+## [3,]  0.6  0.6  1.0  0.6
+## [4,]  0.6  0.6  0.6  1.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = Psi_k)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          ES        SE  N
+## 1 0.4136328 0.3197674 40
+## 2 0.6730080 0.3255146 40
+## 3 0.5825111 0.3232100 40
+## 4 0.4974262 0.3213342 40&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;exercises&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;The function above is serviceable but quite basic. I can think of several additional features that one might like to have for use in research simulations, but I’m feeling both cheeky and lazy at the moment, so I’ll leave them for you, dear reader. Here are some suggested exercises:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;Hedges_g = TRUE&lt;/code&gt;, which controls where the simulated effect size is Hedges’ &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt; or Cohen’s &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;. If it is Hedges’ g, make sure that the standard error is corrected too.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;p_val = TRUE&lt;/code&gt;, which allows the user to control whether or not to return &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-values from the test of mean differences for each outcome. Note that the p-values should be for a test of the &lt;em&gt;raw&lt;/em&gt; mean differences between groups, rather than a test of the effect size &lt;span class=&#34;math inline&#34;&gt;\(\delta_{jk} = 0\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;corr_mat = FALSE&lt;/code&gt;, which controls whether the function returns just the simulated effect sizes and SEs or both the simulated effect sizes and the full sampling variance-covariance matrix of the effect sizes. See &lt;a href=&#34;/correlations-between-SMDs&#34;&gt;here&lt;/a&gt; for the relevant formulas.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulating-summary-statistics&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating summary statistics&lt;/h1&gt;
+&lt;p&gt;Another approach to simulating SMDs is to sample from the distribution of the &lt;em&gt;summary statistics&lt;/em&gt; used in calculating the effect size. This approach should simplify the code, at the cost of having to use a bit of distribution theory. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\bar{y}}_{Tk}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\bar{y}}_{Ck}\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vectors of sample means for the treatment and control groups, respectively. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{S}_k\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; sample covariance matrix of the outcomes, pooled across the treatment and control groups. Again assuming multi-variate normality, and following the same notation as above:
+&lt;span class=&#34;math display&#34;&gt;\[
+\mathbf{\bar{y}}_{Ck} \sim N\left(\mathbf{0}, \frac{2}{N_k} \boldsymbol\Psi_k\right), \qquad \mathbf{\bar{y}}_{Tk} \sim N\left(\boldsymbol\delta_k, \frac{2}{N_k} \boldsymbol\Psi_k\right),
+\]&lt;/span&gt;
+and
+&lt;span class=&#34;math display&#34;&gt;\[
+\left(\mathbf{\bar{y}}_{Tk} - \mathbf{\bar{y}}_{Ck}\right) \sim N\left(\boldsymbol\delta_k, \frac{4}{N_k} \boldsymbol\Psi_k\right).
+\]&lt;/span&gt;
+This shows how we could directly simulate the numerator of the standardized mean difference.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;/distribution-of-sample-variances&#34;&gt;further bit of distribution theory&lt;/a&gt; says that the pooled sample covariance matrix follows a multiple of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Wishart_distribution&#34;&gt;Wishart distribution&lt;/a&gt; with &lt;span class=&#34;math inline&#34;&gt;\(N_k - 2\)&lt;/span&gt; degrees of freedom and scale matrix &lt;span class=&#34;math inline&#34;&gt;\(\Psi_k\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+(N_k - 2) \mathbf{S}_k \sim Wishart\left(N_k - 2, \Psi_k \right).
+\]&lt;/span&gt;
+Thus, to simulate the denominators of the SMD estimates, we can simulate a single Wishart matrix, pull out the diagonal entries, divide by &lt;span class=&#34;math inline&#34;&gt;\(N_k - 2\)&lt;/span&gt;, and take the square root. In all, we draw a single &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; observation from a multi-variate normal distribution and a single &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; observation from a Wishart distribution. In contrast, the raw data approach requires simulating &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; observations from a multi-variate normal distribution, then calculating &lt;span class=&#34;math inline&#34;&gt;\(4 J_k\)&lt;/span&gt; summary statistics (M and SD for each group on each outcome).&lt;/p&gt;
+&lt;div id=&#34;exercises-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;Once again, I’ll leave it to you, dear reader, to do the fun programming bits:&lt;/p&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Create a modified version of the function &lt;code&gt;r_SMDs_raw&lt;/code&gt; that simulates summary statistics instead of raw data (Call it &lt;code&gt;r_SMDs_stats&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;microbenchmark&lt;/code&gt; package (or your preferred benchmarking tool) to compare the computational efficiency of both versions of the function.&lt;/li&gt;
+&lt;li&gt;Check your work! Verify that both versions of the function generate the same distributions if the same parameters are used as input.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;which-approach-is-better&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Which approach is better?&lt;/h1&gt;
+&lt;p&gt;Like many things in research, there’s no clearly superior method here. The advantage of the summary statistics approach is computational efficiency. It should generally be faster than the raw data approach, and if you need to generate 10,000 meta-analysis each with 80 studies in them, the computational savings might add up. On the other hand, computational efficiency isn’t everything.&lt;/p&gt;
+&lt;p&gt;I see two potential advantages of the raw data approach. First is interpretability: simulating raw data is likely easier to understand. It feels tangible and familiar, harkening back to those bygone days we spent learning ANOVA, whereas the summary statistics approach requires a bit of distribution theory to follow (bookmark this blog post!). Second is extensibility: it is relatively straightforward to extend the approach to use other distributional models for the raw dat (perhaps you want to look at outcomes that follow a &lt;a href=&#34;https://en.wikipedia.org/wiki/Multivariate_t-distribution&#34;&gt;multi-variate &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; distribution&lt;/a&gt;?) or more complicated estimators of the SMD (difference-in-differences? covariate-adjusted? cluster-randomized trial?). To use the summary statistics approach in more complicated scenarios, you’d have to work out the sampling distributions for yourself, or locate the right reference.&lt;/p&gt;
+&lt;p&gt;Of course, there’s also no need to choose between these two approaches. As I’m trying to hint at in Exercise 6, it’s actually useful to write both. Then, you can use the (potentially slower) raw data version to verify that the summary statistics version is correct.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulating-full-meta-analyses&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating full meta-analyses&lt;/h1&gt;
+&lt;p&gt;So far we’ve got a data-generating function that simulates a single study’s worth of effect size estimates. To study meta-analytic methods, we’ll need to build out the function to simulate multiple studies. To do so, I think it’s useful to use the technique of &lt;a href=&#34;https://r4ds.had.co.nz/iteration.html&#34;&gt;mapping&lt;/a&gt;, as implemented in the &lt;code&gt;purrr&lt;/code&gt; package’s &lt;code&gt;map_*&lt;/code&gt; functions. The idea here is to first generate a “menu” of study-specific parameters for each of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, then apply the &lt;code&gt;r_SMDs&lt;/code&gt; function to each parameter set.&lt;/p&gt;
+&lt;p&gt;Let’s consider how to do this for a simple random effects model, where the true effect size parameter is constant within each study (i.e., &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k = (\delta_k \cdots \delta_k)&amp;#39;\)&lt;/span&gt;), and in a model without covariates. We’ll need to generate a true effect for each study, along with a sample size, an outcome dimension, and a correlation between outcomes. For the true effects, I’ll assume that
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_k \sim N(\mu, \tau^2),
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+J_k \sim 2 + Poisson(3),
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+N_k \sim 20 + 2 \times Poisson(10),
+\]&lt;/span&gt;
+and
+&lt;span class=&#34;math display&#34;&gt;\[
+r_k \sim Beta\left(\rho \nu, (1 - \rho)\nu\right),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\rho = \text{E}(r_k)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu &amp;gt; 0\)&lt;/span&gt; controls the variability of &lt;span class=&#34;math inline&#34;&gt;\(r_k\)&lt;/span&gt; across studies, with smaller &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt; corresponding to more variable correlations.
+Specifically, &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(r_k) = \rho (1 - \rho) / (1 + \nu)\)&lt;/span&gt;.
+These distributions are just made up, without any particular justification.&lt;/p&gt;
+&lt;p&gt;Here’s what these distributional models look like in R code:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;K &amp;lt;- 6
+mu &amp;lt;- 0.2
+tau &amp;lt;- 0.05
+J_mean &amp;lt;- 5
+N_mean &amp;lt;- 45
+rho &amp;lt;- 0.6
+nu &amp;lt;- 39
+
+study_data &amp;lt;- 
+  data.frame(
+    delta = rnorm(K, mean = mu, sd = tau),
+    J = 2 + rpois(K, J_mean - 2),
+    N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+    Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+  )
+
+study_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       delta J  N       Psi
+## 1 0.1894240 9 50 0.5112511
+## 2 0.1523343 3 44 0.6584239
+## 3 0.2478227 5 38 0.5442388
+## 4 0.1530779 5 46 0.5338198
+## 5 0.2557257 6 48 0.6635501
+## 6 0.3111021 3 34 0.7598409&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once we have the “menu” of study-level characteristics, it’s just a matter of mapping the parameters to the data-generating function. One way to do this is with &lt;code&gt;pmap_df&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(purrr)
+meta_data &amp;lt;- pmap_df(study_data, r_SMDs_raw, .id = &amp;quot;study&amp;quot;)
+meta_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    study            ES        SE  N
+## 1      1  0.0838982347 0.2829723 50
+## 2      1  0.3131093912 0.2846423 50
+## 3      1  0.2032941211 0.2836027 50
+## 4      1  0.1462363557 0.2832362 50
+## 5      1 -0.0841477323 0.2829731 50
+## 6      1  0.0008988422 0.2828427 50
+## 7      1  0.1703249176 0.2833764 50
+## 8      1 -0.1645178447 0.2833407 50
+## 9      1  0.0527563306 0.2828940 50
+## 10     2  0.4031344135 0.3047028 44
+## 11     2  0.3437062486 0.3038346 44
+## 12     2  0.2525668139 0.3027681 44
+## 13     3  0.8555648807 0.3397495 38
+## 14     3  0.3502132641 0.3270575 38
+## 15     3  0.1662112740 0.3250336 38
+## 16     3  0.7294206056 0.3356379 38
+## 17     3  0.3447478812 0.3269769 38
+## 18     4  0.3773615530 0.2976151 46
+## 19     4  0.4328885816 0.2984727 46
+## 20     4  0.2244493715 0.2958530 46
+## 21     4  0.3393561858 0.2970946 46
+## 22     4  0.5140631756 0.2999325 46
+## 23     5  0.0717846618 0.2887721 48
+## 24     5  0.3179642994 0.2905723 48
+## 25     5  0.3444123920 0.2908998 48
+## 26     5  0.5411105342 0.2941359 48
+## 27     5  0.2431480980 0.2897860 48
+## 28     5  0.1627009191 0.2891731 48
+## 29     6  0.2959281618 0.3449861 34
+## 30     6 -0.1153519889 0.3433001 34
+## 31     6  0.5503107844 0.3498270 34&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(meta_data$study)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## 1 2 3 4 5 6 
+## 9 3 5 5 6 3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Putting it all together into a function, we have&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_meta &amp;lt;- function(K, mu, tau, J_mean, N_mean, rho, nu) {
+  require(purrr)
+  
+  study_data &amp;lt;- 
+    data.frame(
+      delta = rnorm(K, mean = mu, sd = tau),
+      J = 2 + rpois(K, J_mean - 2),
+      N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+      Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+    )
+  
+  pmap_df(study_data, r_SMDs_raw, .id = &amp;quot;study&amp;quot;)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;exercises-2&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Modify &lt;code&gt;r_meta&lt;/code&gt; so that it uses &lt;code&gt;r_SMDs_stats&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add options to &lt;code&gt;r_meta&lt;/code&gt; for &lt;code&gt;Hedges_g&lt;/code&gt;, &lt;code&gt;p_val = TRUE&lt;/code&gt;, and &lt;code&gt;corr_mat = FALSE&lt;/code&gt; and ensure that these get passed along to the &lt;code&gt;r_SMDs&lt;/code&gt; function.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;One way to check that the &lt;code&gt;r_meta&lt;/code&gt; function is working properly is to generate a very large meta-analytic dataset, then to verify that the generated distributions align with expectations. Here’s a very large meta-analytic dataset:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;meta_data &amp;lt;- 
+  r_meta(100000, mu = 0.2, tau = 0.05, 
+         J_mean = 5, N_mean = 40, 
+         rho = 0.6, nu = 39)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Compare the distribution of the simulated dataset against what you would expect to get based on the input parameters.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Modify the &lt;code&gt;r_meta&lt;/code&gt; function so that &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; are correlated, according to
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{align}
+J_k &amp;amp;\sim 2 + Poisson(\mu_J - 2) \\
+N_k &amp;amp;\sim 20 + 2 \times Poisson\left(\frac{1}{2}(\mu_N - 20) + \alpha (J_k - \mu_J) \right)
+\end{align}
+\]&lt;/span&gt;
+for user-specified values of &lt;span class=&#34;math inline&#34;&gt;\(\mu_J\)&lt;/span&gt; (the average number of outcomes per study), &lt;span class=&#34;math inline&#34;&gt;\(\mu_N\)&lt;/span&gt; (the average total sample size per study), and &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;, which controls the degree of dependence between &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a-challenge&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A challenge&lt;/h2&gt;
+&lt;p&gt;The meta-analytic model that we’re using here is quite simple—simplistic, even—and for some simulation studies, something more complex might be needed. For example, we might need to generate data from a model that includes within-study random effects, as in:
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_{jk} = \mu + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2).
+\]&lt;/span&gt;
+Even more complex would be to simulate from a multi-level meta-regression model
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_{jk} = \mathbf{x}_{jk} \boldsymbol\beta + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_{jk}\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(1 \times p\)&lt;/span&gt; row-vector of covariates describing outcome &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\beta\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(p \times 1\)&lt;/span&gt; vector of meta-regression coefficients. In past work, I’ve done this by writing a data-generating function that takes a fixed design matrix &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{X} = \left(\mathbf{x}_{11}&amp;#39; \cdots \mathbf{x}_{J_K K}&amp;#39;\right)&amp;#39;\)&lt;/span&gt; as an input argument, along with &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\beta\)&lt;/span&gt;. The design matrix would also include an identifier for each unique study. There are surely better (simpler, easier to follow) ways to implement the multi-level meta-regression model. I’ll once again leave it to you to work out an approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Easily simulate thousands of single-case designs</title>
+      <link>/easily-simulate-thousands-of-single-case-designs/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/easily-simulate-thousands-of-single-case-designs/</guid>
+      <description>
+
+
+&lt;p&gt;Earlier this month, I taught at the &lt;a href=&#34;https://scdinstitute2018.com/&#34;&gt;Summer Research Training Institute on Single-Case Intervention Design and Analysis workshop&lt;/a&gt;, sponsored by the Institute of Education Sciences’ National Center for Special Education Research.
+While I was there, I shared &lt;a href=&#34;https://jepusto.shinyapps.io/ARPsimulator/&#34;&gt;a web-app for simulating data from a single-case design&lt;/a&gt;.
+This is a tool that I put together a couple of years ago as part of my &lt;a href=&#34;/software/arpobservation/&#34;&gt;ARPobservation R package&lt;/a&gt;, but haven’t ever really publicized or done anything formal with.
+It provides an easy way to simulate “mock” data from a single-case design where the dependent variable is measured using systematic direct observation of behavior.
+The simulated data can be viewed in the form of a graph or downloaded as a csv file.
+And it’s quite fast—simulating 1000’s of mock single-case designs takes only a few seconds.
+The tool also provides a visualization of the distribution of effect size estimates that you could anticipate observing in a single-case design, given a set of assumptions about how the dependent variable is measured and how it changes in response to treatment.&lt;/p&gt;
+&lt;div id=&#34;demo&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Demo&lt;/h1&gt;
+&lt;p&gt;Here’s an example of the sort of data that the tool generates and the assumptions it asks you to make.
+Say that you’re interested in evaluating the effect of a Social Stories intervention on the behavior of a child with autism spectrum disorder, and that you plan to use a treatment reversal design.
+Your primary dependent variable is inappropriate play behavior, measured using frequency counts over ten minute observation sessions.&lt;br /&gt;
+The initial baseline and treatment phases will be 7 sessions long.
+At baseline, the child engages in inappropriate play at a rate of about 0.8 per minute.
+You anticipate that the intervention could reduce inappropriate play by as much as 90% from baseline.
+Enter all of these details and assumptions into the simulator, and it will generate a graph like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-A.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Hit the “Simulate!” button again and you might get something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-B.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Or one of these:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-C.png&#34; /&gt;
+&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-A.png&#34; /&gt;
+&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-A.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-D.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-E.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;All of the above graphs were generated from the same hypothetical model—the variation in the clarity and strength of the functional relation is due to random error alone.
+The simulator can also produce graphs that show multiple realizations of the data-generating process. Here’s one with five replications:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-5.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;And here’s the same figure, but with trend lines added:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-trend.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The trend lines represent the overall average level of the dependent variable during each session, across infinitely replications of the study.
+The variability around the trend line provides a sense of the extent of random error in the measurements of the dependent variable.&lt;/p&gt;
+&lt;p&gt;I think it’s a rather interesting exercise to try and draw inferences based on visual inspection of randomly generated graphs like this—particularly because it forces you to grapple with random measurement error in a way that using only real data (or only hand-drawn mock data) doesn’t allow.
+It seems like it could really help a visual analyst to calibrate their interpretations of single-case graphs with visually apparent time trends, outliers, etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;use-cases&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Use cases&lt;/h1&gt;
+&lt;p&gt;So far, this tool is really only a toy—something that I’ve puttered with off and on for a while, but never developed or applied for any substantive purpose.
+However, it occurs to me that it (or something similar to it) might have a number of purposes related to planning single-case studies, studying the process of visual inspection, or training single-case researchers.&lt;/p&gt;
+&lt;p&gt;When I originally put the tool together, the leading case I imagined was to use the tool to help researchers make principled decisions about how to measure dependent variables in single-case designs.
+By using the tool to simulate hypothetical single-case studies, a researcher would be able to experiment with different measurement strategies—such as using partial interval recording instead of continuous duration recording, using shorter or longer observation sessions, or using short or longer baseline phases—before collecting data on real-life behavior in the field.
+I’m not sure if this is something that well-trained single-case researchers would actually find helpful, but it seems like it might help a novice (like me!) to temper one’s expectations or to move towards a more reliable measurement system.&lt;/p&gt;
+&lt;p&gt;There’s been quite a bit of research examining the reliability and error rates of inferences based on visual inspection (see &lt;a href=&#34;http://dx.doi.org/10.1037/14376-004&#34;&gt;Chapter 4 of Kratochwill &amp;amp; Levin, 2014&lt;/a&gt; for a review of some of this literature).
+Some of this work has compared the inferences drawn by novices versus experts or by un-aided visual inspection versus visual inspection supplemented with graphical guides (like trend lines).
+But there are many other factors that could be investigated too, such as phase lengths (this could help to better justify the WWC single-case design standards around minimum phase lengths), use of different measurement systems, or use of different design elements on single-case graphs (can we get some color on these graphs, folks?!? And stop plotting 14 different dependent variables on the same graph?!?).
+The simulator would be an easy way to generate the stimuli one would need to do this sort of work.&lt;/p&gt;
+&lt;p&gt;A closely related use-case is to generate stimuli for training researchers to do systematic visual inspection.
+Some of the SCD Institute instructors (including Tom Kratochwill, Rob Horner, Joel Levin, along with some of their other colleagues) have developed the website &lt;a href=&#34;http://www.singlecase.org&#34;&gt;www.singlecase.org&lt;/a&gt; with a bunch of exercises meant to help researchers develop and test their visual analysis skills.
+It looks to me like the site uses simulated data (though I’m not entirely sure).
+The ARPsimulator tool could be used to do something similar, but based on a data-generating process that captures many of the features of systematic direct observation data.
+This might let researchers test their skills under more challenging and ambiguous, yet plausible, conditions, similar to what they will encounter when collecting real data in the field.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;future-directions&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Future directions&lt;/h1&gt;
+&lt;p&gt;A number of future directions for this project have crossed my mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Currently, the outcome data are simulated as independent across observation sessions (given the true time trend). It wouldn’t be too hard to add a further option to generate auto-correlated data, although this would further increase the complexity of the model. Perhaps there would be a way to add this as an “advanced” option that would be concealed unless the user asks for it (i.e., “Are you Really Sure you want to go down this rabbit hole?”). So far, I have avoided adding these features because I’m not sure what reasonable defaults would be.&lt;/li&gt;
+&lt;li&gt;Joel Levin, John Ferron, and some of the other SCD Institute instructors are big proponents of incorporating randomization procedures into the design of single-case studies, at least when circumstances allow. Currently, the ARPsimulator generates data based on a fixed, pre-specified design, such as an ABAB design with 6 sessions per phase or a multiple baseline design with 25 sessions total and intervention start-times of 8, 14, and 20. It wouldn’t be too hard to incorporate randomized phase-changes into the simulator. This might make a nice, contained project for a student who wants to learn more about randomization designs.&lt;/li&gt;
+&lt;li&gt;Along similar lines, John Ferron has &lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.3200/JEXE.75.1.66-81&#34;&gt;developed&lt;/a&gt; and &lt;a href=&#34;https://doi.org/10.1002/jaba.410&#34;&gt;evaluated&lt;/a&gt; masked visual analysis procedures, which blend randomization and traditional response-guided approaches to designing single-case studies. It would take a bit more work, but it would be pretty nifty to incorporate these designs into ARPsimulator too.&lt;/li&gt;
+&lt;li&gt;Currently, the model behind ARPsimulator asks the user to specify a fixed baseline level of behavior, and this level of behavior is used for every simulated case—even in designs involving multiple cases. A more realistic (albeit more complicated) data-generating model would allow for between-case variation in the baseline level of behavior.&lt;/li&gt;
+&lt;li&gt;Perhaps the most important outstanding question about the premise of this work is just how well the alternating renewal process model captures the features of real single-case data. Validating the model against empirical data from single-case studies would allow use to assess whether it is really a realistic approach to simulation, at least for certain classes of behavior. Another product of such an investigation would be to develop realistic default assumptions for the model’s parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the moment I have no plans to implement any of these unless there’s a reasonably focused need (sadly, I don’t have time to putter and putz to the same extent that I used to).
+If you, dear reader, would be interested in helping to pursue any of these directions, or if you have other, better ideas for how to make use of this tool, I would love to hear from you.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simulation studies in R (Fall, 2016 version)</title>
+      <link>/simulation-studies-in-r-2016/</link>
+      <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/simulation-studies-in-r-2016/</guid>
+      <description>
+
+
+&lt;p&gt;In today’s Quant Methods colloquium, I gave an introduction to the logic and purposes of Monte Carlo simulation studies, with examples written in R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/files/Simulations-in-R-2016.html&#34;&gt;Here are the slides&lt;/a&gt; from my presentation.&lt;/li&gt;
+&lt;li&gt;You can find the code that generates the slides &lt;a href=&#34;https://gist.github.com/jepusto/bf6cdb6e393f54470ba4d016199c6eb8&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Here is my &lt;a href=&#34;/Designing-simulation-studies-using-R&#34;&gt;presentation on the same topic&lt;/a&gt; from a couple of years ago.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://varianceexplained.org/r/beta_binomial_baseball/&#34;&gt;David Robinson’s blog&lt;/a&gt; has a much more in-depth discussion of beta-binomial regression.&lt;/li&gt;
+&lt;li&gt;The data I used is from &lt;a href=&#34;http://www.seanlahman.com/baseball-database.html&#34;&gt;Lahman’s baseball database&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update: parallel R on the TACC</title>
+      <link>/parallel-r-on-tacc-update/</link>
+      <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/parallel-r-on-tacc-update/</guid>
+      <description>
+
+
+&lt;p&gt;I have learned from &lt;a href=&#34;https://www.tacc.utexas.edu/staff/yaakoub-el-khamra&#34;&gt;Mr. Yaakoub El Khamra&lt;/a&gt; that he and the good folks at TACC have made some modifications to TACC’s custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. &lt;a href=&#34;/parallel-R-on-TACC&#34;&gt;My earlier post&lt;/a&gt; has been updated to reflect the modifications. The main changes are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The version of MVAPICH2 has changed to 2.0b&lt;/li&gt;
+&lt;li&gt;Changes to the Rmpi and snow packages necessitate using the latest version of R (Warm Puppy, 3.0.3). This version is available in the &lt;code&gt;Rstats&lt;/code&gt; module.&lt;/li&gt;
+&lt;li&gt;For improved reproducibility, I modified the R code so that the simulation driver function uses a seed value.&lt;/li&gt;
+&lt;li&gt;I had to switch from &lt;code&gt;maply&lt;/code&gt; to &lt;code&gt;mdply&lt;/code&gt; as a result of (3).&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Running R in parallel on the TACC</title>
+      <link>/parallel-r-on-tacc/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>/parallel-r-on-tacc/</guid>
+      <description>
+
+
+&lt;p&gt;UPDATE (4/8/2014): I have learned from &lt;a href=&#34;https://www.tacc.utexas.edu/staff/yaakoub-el-khamra&#34;&gt;Mr. Yaakoub El Khamra&lt;/a&gt; that he and the good folks at TACC have made some modifications to TACC’s custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. This post &lt;a href=&#34;/parallel-R-on-TACC-update&#34;&gt;has been updated&lt;/a&gt; to reflect the modifications.&lt;/p&gt;
+&lt;p&gt;I’ve started to use the Texas Advanced Computing Cluster to run statistical simulations in R. It takes a little bit of time to get up and running, but once you do it is an amazing tool. To get started, you’ll need&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;An account on the &lt;a href=&#34;https://www.tacc.utexas.edu/&#34;&gt;TACC&lt;/a&gt; and an allocation of computing time.&lt;/li&gt;
+&lt;li&gt;An ssh client like &lt;a href=&#34;http://www.chiark.greenend.org.uk/~sgtatham/putty/&#34;&gt;PUTTY&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Some R code that can be adapted to run in parallel.&lt;/li&gt;
+&lt;li&gt;A SLURM script that tells the server (called Stampede) how to run the R.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;the-r-script&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The R script&lt;/h3&gt;
+&lt;p&gt;I’ve been running my simulations using a combination of several packages that provide very high-level functionality for parallel computing, namely &lt;code&gt;foreach&lt;/code&gt;, &lt;code&gt;doSNOW&lt;/code&gt;, and the &lt;code&gt;maply&lt;/code&gt; function in &lt;code&gt;plyr&lt;/code&gt;. All of this runs on top of an &lt;code&gt;Rmpi&lt;/code&gt; implementation developed by the folks at TACC (&lt;a href=&#34;https://portal.tacc.utexas.edu/documents/13601/901835/Parallel_R_Final.pdf/&#34;&gt;more details here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;/Designing-simulation-studies-using-R/&#34;&gt;an earlier post&lt;/a&gt;, I shared code for running a very simple simulation of the Behrens-Fisher problem. Here’s &lt;a href=&#34;https://gist.github.com/jepusto/8059893&#34;&gt;adapted code&lt;/a&gt; for running the same simulation on Stampede. The main difference is that there are a few extra lines of code to set up a cluster, seed a random number generator, and pass necessary objects (saved in &lt;code&gt;source_func&lt;/code&gt;) to the nodes of the cluster:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(Rmpi)
+library(snow)
+library(foreach)
+library(iterators)
+library(doSNOW)
+library(plyr)
+
+# set up parallel processing
+cluster &amp;lt;- getMPIcluster()
+registerDoSNOW(cluster)
+
+# export source functions
+clusterExport(cluster, source_func)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once it is all set up, running the code is just a matter of turning on the parallel option in &lt;code&gt;mdply&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BFresults &amp;lt;- mdply(parms, .fun = run_sim, .drop=FALSE, .parallel=TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I fully admit that my method of passing source functions is rather kludgy. One alternative would be to save all of the source functions in a separate file (say, &lt;code&gt;source_functions.R&lt;/code&gt;), then &lt;code&gt;source&lt;/code&gt; the file at the beginning of the simulation script:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rm(list=ls())
+source(&amp;quot;source_functions.R&amp;quot;)
+print(source_func &amp;lt;- ls())&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Another, more elegant alternative would be to put all of your source functions in a little package (say, &lt;code&gt;BehrensFisher&lt;/code&gt;), install the package, and then pass the package in the &lt;code&gt;maply&lt;/code&gt; call:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BFresults &amp;lt;- mdply(parms, .fun = run_sim, .drop=FALSE, .parallel=TRUE, .paropts = list(.packages=&amp;quot;BehrensFisher&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Of course, developing a package involves a bit more work on the front end.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-slurm-script&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The SLURM script&lt;/h3&gt;
+&lt;p&gt;Suppose that you’ve got your R code saved in a file called &lt;code&gt;Behrens_Fisher.R&lt;/code&gt;. Here’s an example of a SLURM script that runs the R script after configuring an Rmpi cluster:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;#!/bin/bash
+#SBATCH -J Behrens          # Job name
+#SBATCH -o Behrens.o%j      # Name of stdout output file (%j expands to jobId)
+#SBATCH -e Behrens.o%j      # Name of stderr output file(%j expands to jobId)
+#SBATCH -n 32               # Total number of mpi tasks requested
+#SBATCH -p normal           # Submit to the &amp;#39;normal&amp;#39; or &amp;#39;development&amp;#39; queue
+#SBATCH -t 0:20:00          # Run time (hh:mm:ss)
+#SBATCH -A A-yourproject    # Allocation name to charge job against
+#SBATCH --mail-user=you@email.address # specify email address for notifications
+#SBATCH --mail-type=begin   # email when job begins
+#SBATCH --mail-type=end     # email when job ends
+
+# load R module
+module load Rstats           
+
+# call R code from RMPISNOW
+ibrun RMPISNOW &amp;lt; Behrens_Fisher.R &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The file should be saved in a plain text file called something like &lt;code&gt;run_BF.slurm&lt;/code&gt;. The file has to use ANSI encoding and Unix-type end-of-line encoding; &lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;Notepad++&lt;/a&gt; is a text editor that can create files in this format.&lt;/p&gt;
+&lt;p&gt;Note that for full efficiency, the &lt;code&gt;-n&lt;/code&gt; option should be a multiple of 16 because their are 16 cores per compute node. Further details about SBATCH options can be found &lt;a href=&#34;https://portal.tacc.utexas.edu/user-guides/stampede#running-slurm-jobcontrol&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;running-on-stampede&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Running on Stampede&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://portal.tacc.utexas.edu/user-guides/stampede#access&#34;&gt;Follow these directions&lt;/a&gt; to log in to the Stampede server. Here’s the &lt;a href=&#34;https://portal.tacc.utexas.edu/user-guides/stampede&#34;&gt;User Guide&lt;/a&gt; for Stampede. The first thing you’ll need to do is ensure that you’ve got the proper version of MVAPICH loaded. To do that, type&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;module swap intel intel/14.0.1.106
+module setdefault&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The second line sets this as the default, so you won’t need to do this step again.&lt;/p&gt;
+&lt;p&gt;Second, you’ll need to install whatever R packages you’ll need to run your code. To do that, type the following at the &lt;code&gt;login4$&lt;/code&gt; prompt:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;login4$module load Rstats
+login4$R&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will start an interactive R session. From the R prompt, use &lt;code&gt;install.packages&lt;/code&gt; to download and install, e.g.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;plyr&amp;quot;,&amp;quot;reshape&amp;quot;,&amp;quot;doSNOW&amp;quot;,&amp;quot;foreach&amp;quot;,&amp;quot;iterators&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The packages will be installed in a local library. Now type &lt;code&gt;q()&lt;/code&gt; to quit R.&lt;/p&gt;
+&lt;p&gt;Next, make a new directory for your project:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;login4$mkdir project_name
+login4$cd project_name&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Upload your files to the directory (using &lt;a href=&#34;http://the.earth.li/~sgtatham/putty/0.63/htmldoc/Chapter6.html&#34;&gt;psftp&lt;/a&gt;, for instance). Check that your R script is properly configured by viewing it in Vim.&lt;/p&gt;
+&lt;p&gt;Finally, submit your job by typing&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;login4$sbatch run_BF.slurm&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or whatever your SLURM script is called. To check the status of the submitted job, type &lt;code&gt;showq -u&lt;/code&gt; followed by your TACC user name (more details &lt;a href=&#34;https://portal.tacc.utexas.edu/user-guides/stampede#running-slurm-jobcontrol-squeue&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;further-thoughts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Further thoughts&lt;/h3&gt;
+&lt;p&gt;TACC accounts come with a limited number of computing hours, so you should be careful to write efficient code. Before you even start worrying about running on TACC, you should profile your code and try to find ways to speed up the computations. (Some simple improvements in my Behrens-Fisher code would make it run MUCH faster.) Once you’ve done what you can in terms of efficiency, you should do some small test runs on Stampede. For example, you could try running only a few iterations for each combination of factors, and/or running only some of the combinations rather than the full factorial design. Based on the run-time for these jobs, you’ll then be able to estimate how long the full code would take. If it’s acceptable (and within your allocation), then go ahead and &lt;code&gt;sbatch&lt;/code&gt; the full job. If it’s not, you might reconsider the number of factor levels in your design or the number of iterations you need. I might have more comments about those some other time.&lt;/p&gt;
+&lt;p&gt;Comments? Suggestions? Corrections? Drop a comment.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Designing simulation studies using R</title>
+      <link>/designing-simulation-studies-using-r/</link>
+      <pubDate>Fri, 06 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>/designing-simulation-studies-using-r/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;/files/Designing-simulation-studies-using-R.pdf&#34;&gt;Here are the slides&lt;/a&gt; from my presentation at this afternoon’s Quant. Methods brown bag. I gave a very quick introduction to using R for conducting simulation studies. I hope it was enough to get people intrigued about the possibilities of using R in their own work.&lt;/p&gt;
+&lt;p&gt;The second half of the presentation sketched out a quick-and-dirty simulation of the &lt;a href=&#34;http://en.wikipedia.org/wiki/Behrens%E2%80%93Fisher_problem&#34;&gt;Behrens-Fisher problem&lt;/a&gt;, or more specifically the coverage rates of 95% confidence intervals using Welch’s degrees of freedom approximation, given independent samples with unequal variances. Here is &lt;a href=&#34;https://gist.github.com/jepusto/7686463&#34;&gt;the complete code&lt;/a&gt;. As I mentioned in the talk, there’s lots of room for improvement. The main point that I was trying to illustrate is that simulations have five distinct pieces:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;a data generating model,&lt;/li&gt;
+&lt;li&gt;an estimation procedure,&lt;/li&gt;
+&lt;li&gt;performance criteria,&lt;/li&gt;
+&lt;li&gt;an experimental design (parameter values and sample dimensions), and&lt;/li&gt;
+&lt;li&gt;analysis and results.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It is useful to write simulation code that reflects the structure, so that it is easy for you (or other people) to read, revise, extend, or re-run it. And then post it on your blog.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

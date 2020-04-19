@@ -1,0 +1,1258 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James E. Pustejovsky">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In a previous post, I provided some code to do robust variance estimation with metafor and sandwich.Here’s another example, replicating some more of the calculations from Tanner-Smith &amp; Tipton (2013).">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/robust-meta-analysis-2/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/robust-meta-analysis-2/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@jepusto">
+  <meta property="twitter:creator" content="@jepusto">
+  
+  <meta property="og:site_name" content="James E. Pustejovsky">
+  <meta property="og:url" content="/robust-meta-analysis-2/">
+  <meta property="og:title" content="Another meta-sandwich | James E. Pustejovsky">
+  <meta property="og:description" content="In a previous post, I provided some code to do robust variance estimation with metafor and sandwich.Here’s another example, replicating some more of the calculations from Tanner-Smith &amp; Tipton (2013)."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2014-04-23T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2014-04-23T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/robust-meta-analysis-2/"
+  },
+  "headline": "Another meta-sandwich",
+  
+  "datePublished": "2014-04-23T00:00:00Z",
+  "dateModified": "2014-04-23T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "James E. Pustejovsky"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "University of Texas at Austin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "In a previous post, I provided some code to do robust variance estimation with metafor and sandwich.\rHere’s another example, replicating some more of the calculations from Tanner-Smith \u0026amp; Tipton (2013)."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Another meta-sandwich | James E. Pustejovsky</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Presentations</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#software"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/Pustejovsky-CV.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Topics</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Another meta-sandwich</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/authors/admin/">James E. Pustejovsky</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2014-04-23
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p>In <a href="/Robust-meta-analysis-1/">a previous post</a>, I provided some code to do robust variance estimation with <code>metafor</code> and <code>sandwich</code>.
+Here’s another example, replicating some more of the calculations from <a href="http://doi.org/10.1002/jrsm.1091">Tanner-Smith &amp; Tipton (2013)</a>.
+(<a href="https://gist.github.com/jepusto/11147304">See here</a> for the complete code.)</p>
+<p>As a starting point, here are the results produced by the <code>robumeta</code> package:</p>
+<pre class="r"><code>library(grid)
+library(robumeta)
+
+data(corrdat)
+rho &lt;- 0.8
+
+HTJ &lt;- robu(effectsize ~ males + college + binge,
+            data = corrdat, 
+            modelweights = &quot;CORR&quot;, rho = rho,
+            studynum = studyid,
+            var.eff.size = var, small = FALSE)
+HTJ</code></pre>
+<pre><code>## RVE: Correlated Effects Model  
+## 
+## Model: effectsize ~ males + college + binge 
+## 
+## Number of studies = 39 
+## Number of outcomes = 172 (min = 1 , mean = 4.41 , median = 4 , max = 18 )
+## Rho = 0.8 
+## I.sq = 75.08352 
+## Tau.sq = 0.1557714 
+## 
+##                Estimate  StdErr t-value dfs P(|t|&gt;) 95% CI.L 95% CI.U Sig
+## 1 X.Intercept.  0.31936 0.27784   1.149  35   0.258  -0.2447  0.88340    
+## 2        males -0.00331 0.00376  -0.882  35   0.384  -0.0109  0.00431    
+## 3      college  0.41226 0.18685   2.206  35   0.034   0.0329  0.79159  **
+## 4        binge  0.13774 0.12586   1.094  35   0.281  -0.1178  0.39326    
+## ---
+## Signif. codes: &lt; .01 *** &lt; .05 ** &lt; .10 *
+## ---</code></pre>
+<p>To exactly re-produce the results with <code>metafor</code>, I’ll need to use the weights proposed by HTJ. In their approach to the correlated effects case, effect size <span class="math inline">\(i\)</span> from study <span class="math inline">\(j\)</span> receives weight equal to <span class="math inline">\(\left[\left(v_{\cdot j} + \hat\tau^2\right)(1 + (k_j - 1) \rho)\right]^{-1}\)</span>, where <span class="math inline">\(v_{\cdot j}\)</span> is the average sampling variance of the effect sizes from study <span class="math inline">\(j\)</span>, <span class="math inline">\(\hat\tau^2\)</span> is an estimate of the between-study variance, <span class="math inline">\(k_j\)</span> is the number of correlated effects in study <span class="math inline">\(j\)</span>, and <span class="math inline">\(\rho\)</span> is a user-specified value of the intra-study correlation. However, it appears that <code>robumeta</code> actually uses a slightly different set weights, which are equivalent to taking <span class="math inline">\(\rho = 1\)</span>. I calculate the latter weights, fit the model in <code>metafor</code>, and output the robust standard errors and <span class="math inline">\(t\)</span>-tests:</p>
+<pre class="r"><code>devtools::source_gist(id = &quot;11144005&quot;, filename = &quot;metafor-sandwich.R&quot;)
+
+corrdat &lt;- within(corrdat, {
+  var_mean &lt;- tapply(var, studyid, mean)[studyid]
+  k &lt;- table(studyid)[studyid]
+  var_HTJ &lt;- as.numeric(k * (var_mean + as.numeric(HTJ$mod_info$tau.sq)))
+})
+
+meta1 &lt;- rma.mv(effectsize ~ males + college + binge, 
+                V = var_HTJ, 
+                data = corrdat, method = &quot;FE&quot;)
+meta1$cluster &lt;- corrdat$studyid
+RobustResults(meta1)</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##           Estimate Std. Error t value Pr(&gt;|t|)  
+## intrcpt  0.3193586  0.2778360  1.1494  0.25816  
+## males   -0.0033143  0.0037573 -0.8821  0.38374  
+## college  0.4122631  0.1868489  2.2064  0.03401 *
+## binge    0.1377393  0.1258637  1.0944  0.28127  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>One could specify a similar (though not exactly identical model) in <code>metafor</code> as follows. In the HTJ approach, <span class="math inline">\(\rho\)</span> represents the total correlation induced by both the within-study sampling error and intra-study correlation in true effects. In contrast, the <code>metafor</code> approach would take <span class="math inline">\(\rho\)</span> to be correlation due to within-study sampling error alone. I’ll first need to create a block-diagonal covariance matrix given a user-specified value of <span class="math inline">\(\rho\)</span>.</p>
+<pre class="r"><code>library(Matrix)
+equicorr &lt;- function(x, rho) {
+  corr &lt;- rho + (1 - rho) * diag(nrow = length(x))
+  tcrossprod(x) * corr 
+} 
+covMat &lt;- as.matrix(bdiag(with(corrdat, tapply(var_mean, studyid, equicorr, rho = 0.8, simplify = FALSE))))</code></pre>
+<p>Passing this block-diagonal covariance matrix to <code>rma.mv</code>, I now estimate the model</p>
+<p><span class="math display">\[T_{ij} = \mathbf{X}_{ij} \beta + \nu_i + e_{ij},\]</span></p>
+<p>where <span class="math inline">\(Var(\nu_i) = \sigma^2\)</span>, <span class="math inline">\(Var(e_{ij}) = v_{ij}\)</span>, and <span class="math inline">\(Cor(e_{ij}, e_{ik}) = \rho\)</span>. Note that <span class="math inline">\(\sigma^2\)</span> is now estimated via REML.</p>
+<pre class="r"><code>meta2 &lt;- rma.mv(yi = effectsize ~ males + college + binge, 
+                V = covMat, random = ~ 1 | studyid, 
+                data = corrdat,
+                method = &quot;REML&quot;)
+c(sigma.sq = meta2$sigma2)</code></pre>
+<pre><code>##  sigma.sq 
+## 0.2477825</code></pre>
+<p>The between-study heterogeneity estimate is considerably larger than the moment estimate from <code>robumeta</code>. Together with the difference in weighting, this leads to some changes in the coefficient estimates and their estimated precision:</p>
+<pre class="r"><code>RobustResults(meta2)</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##           Estimate Std. Error t value Pr(&gt;|t|)   
+## intrcpt -0.8907096  0.4148219 -2.1472 0.038783 * 
+## males    0.0163074  0.0055805  2.9222 0.006052 **
+## college  0.3180139  0.2273396  1.3988 0.170658   
+## binge   -0.0984026  0.0897269 -1.0967 0.280265   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>It is important to keep in mind that the estimate of between-study heterogeneity depends on the posited model for the covariance structure, including the assumed value of <span class="math inline">\(\rho\)</span>. HTJ recommend conducting sensitivity analysis across a range of values for the within-study effect correlation. Re-calculating the value of <span class="math inline">\(\sigma^2\)</span> for <span class="math inline">\(\rho\)</span> between 0.0 and 0.9 yields the following:</p>
+<pre class="r"><code>sigma2 &lt;- function(rho) {
+  covMat &lt;- as.matrix(bdiag(with(corrdat, tapply(var_mean, studyid, equicorr, rho = rho, simplify = FALSE))))
+  rma.mv(yi = effectsize ~ males + college + binge, 
+                  V = covMat, random = ~ 1 | studyid, 
+                  data = corrdat,
+                  method = &quot;REML&quot;)$sigma2
+}
+rho_sens &lt;- seq(0,0.9,0.1)
+sigma2_sens &lt;- sapply(rho_sens, sigma2)
+cbind(rho = rho_sens, sigma2 = round(sigma2_sens, 4))</code></pre>
+<pre><code>##       rho sigma2
+##  [1,] 0.0 0.2519
+##  [2,] 0.1 0.2513
+##  [3,] 0.2 0.2507
+##  [4,] 0.3 0.2502
+##  [5,] 0.4 0.2497
+##  [6,] 0.5 0.2492
+##  [7,] 0.6 0.2487
+##  [8,] 0.7 0.2482
+##  [9,] 0.8 0.2478
+## [10,] 0.9 0.2474</code></pre>
+<p>The between-study heterogeneity is quite insensitive to the assumed value of <span class="math inline">\(\rho\)</span>.</p>
+<p>The difference between the results based on <code>metafor</code> versus on <code>robumeta</code> appears to be due to the subtle difference in the weighting approach: <code>metafor</code> uses block-diagonal weights that contain off-diagonal terms for effects drawn from a common study, whereas <code>robumeta</code> uses entirely diagonal weights.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/meta-analysis/">meta-analysis</a>
+  
+  <a class="badge badge-light" href="/tags/sandwiches/">sandwiches</a>
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/robust-meta-analysis-2/&amp;text=Another%20meta-sandwich" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/robust-meta-analysis-2/&amp;t=Another%20meta-sandwich" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Another%20meta-sandwich&amp;body=/robust-meta-analysis-2/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/robust-meta-analysis-2/&amp;title=Another%20meta-sandwich" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Another%20meta-sandwich%20/robust-meta-analysis-2/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/robust-meta-analysis-2/&amp;title=Another%20meta-sandwich" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu5c52b2b2df652bbfa34fe5ba8e97c2ca_630045_270x270_fill_q90_lanczos_center.jpg" alt="James E. Pustejovsky">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">James E. Pustejovsky</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pusto@austin.utexas.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=vrPDTgsAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/robust-meta-analysis-1/">A meta-sandwich</a></li>
+      
+      <li><a href="/sped-pro-sem/">Special Education Pro-Sem</a></li>
+      
+      <li><a href="/parallel-r-on-tacc-update/">Update: parallel R on the TACC</a></li>
+      
+      <li><a href="/parallel-r-on-tacc/">Running R in parallel on the TACC</a></li>
+      
+      <li><a href="/designing-simulation-studies-using-r/">Designing simulation studies using R</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

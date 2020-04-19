@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>distribution theory | James E. Pustejovsky</title>
+    <link>/tags/distribution-theory/</link>
+      <atom:link href="/tags/distribution-theory/index.xml" rel="self" type="application/rss+xml" />
+    <description>distribution theory</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>distribution theory</title>
+      <link>/tags/distribution-theory/</link>
+    </image>
+    
+    <item>
+      <title>Simulating correlated standardized mean differences for meta-analysis</title>
+      <link>/simulating-correlated-smds/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/simulating-correlated-smds/</guid>
+      <description>
+
+
+&lt;p&gt;As I’ve discussed in &lt;a href=&#34;/Sometimes-aggregating-effect-sizes-is-fine&#34;&gt;previous posts&lt;/a&gt;, meta-analyses in psychology, education, and other areas often include studies that contribute multiple, statistically dependent effect size estimates.
+I’m interested in methods for meta-analyzing and meta-regressing effect sizes from data structures like this, and studying this sort of thing often entails conducting Monte Carlo simulations.
+Monte Carlo simulations involve generating artificial data—in this case, a set of studies, each of which has one or more dependent effect size estimates—that follows a certain distributional model, applying different analytic methods to the artificial data, and then repeating the process a bunch of times.
+Because we know the true parameters that govern the data-generating process, we can evaluate the performance of the analytic methods in terms of bias, accuracy, hypothesis test calibration and power, confidence interval coverage, and the like.&lt;/p&gt;
+&lt;p&gt;In this post, I’ll discuss two alternative methods to simulate meta-analytic datasets that include studies with multiple, dependent effect size estimates: simulating individual participant-level data or simulating summary statistics. I’ll focus on the case of the standardized mean difference (SMD) because it is so common in meta-analyses of intervention studies. For simplicity, I’ll assume that the effect sizes all come from simple, two-group comparisons (without any covariate adjustment or anything like that) and that the individual observations are multi-variate normally distributed within each group. Our goal will be to simulate a set of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, where study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; is based on measuring &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; outcomes on a sample of &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; participants, all for &lt;span class=&#34;math inline&#34;&gt;\(k = 1,...,K\)&lt;/span&gt;.
+Let &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k = (\delta_{1k} \cdots \delta_{J_k k})&amp;#39;\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector of true standardized mean differences for study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;.
+I’ll assume that we know these true effect size parameters for all &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, so that I can avoid committing to any particular form of random effects model.&lt;/p&gt;
+&lt;div id=&#34;simulating-individual-participant-level-data&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating individual participant-level data&lt;/h1&gt;
+&lt;p&gt;The most direct way to simulate this sort of effect size data is to generate outcome data for every artificial participant in every artificial study. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{Y}_{ik}^T\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector of outcomes for treatment group participant &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, and let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{Y}_{ik}^C\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector outcomes for control group participant &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, for &lt;span class=&#34;math inline&#34;&gt;\(i=1,...,N_k / 2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k = 1,...,K\)&lt;/span&gt;. Assuming multi-variate normality of the outcomes, we can generate these outcome vectors as
+&lt;span class=&#34;math display&#34;&gt;\[
+\mathbf{Y}_{ik}^T \sim N\left(\boldsymbol\delta_k, \boldsymbol\Psi_k\right) \qquad \text{and}\qquad \mathbf{Y}_{ik}^C \sim N\left(\mathbf{0}, \boldsymbol\Psi_k\right),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\Psi_k\)&lt;/span&gt; is the population correlation matrix of the outcomes in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;.
+Note that I am setting the mean outcomes of the control group participants to zero and also specifying that the outcomes all have unit variance within each group.
+After simulating data based on these distributions, the effect size estimates for each outcome can be calculated directly, following standard formulas.&lt;/p&gt;
+&lt;p&gt;Here’s what this approach looks like in code.
+It is helpful to simplify things by focusing on simulating just a single study with multiple, correlated effect sizes.
+Focusing first on just the input parameters, a function might look like the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw &amp;lt;- function(delta, J, N, Psi) {
+  # stuff
+  return(ES_data)  
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above function skeleton, &lt;code&gt;delta&lt;/code&gt; would be the true effect size parameter &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k\)&lt;/span&gt;, &lt;code&gt;J&lt;/code&gt; would be the number of effect sizes to generate &lt;span class=&#34;math inline&#34;&gt;\((J_k)\)&lt;/span&gt;, &lt;code&gt;N&lt;/code&gt; is the total number of participants &lt;span class=&#34;math inline&#34;&gt;\((N_k)\)&lt;/span&gt;, and &lt;code&gt;Psi&lt;/code&gt; is a matrix of correlations between the outcomes &lt;span class=&#34;math inline&#34;&gt;\((\Psi_k)\)&lt;/span&gt;.
+From these parameters, we’ll generate raw data, calculate effect size estimates and standard errors, and return the results in a little dataset.&lt;/p&gt;
+&lt;p&gt;To make the function a little bit easier to use, I’m going overload the &lt;code&gt;Psi&lt;/code&gt; argument so that it can be a single number, indicating a common correlation between the outcomes. Thus, instead of having to feed in a &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; matrix, you can specify a single correlation &lt;span class=&#34;math inline&#34;&gt;\(r_k\)&lt;/span&gt;, and the function will assume that all of the outcomes are equicorrelated. In code, the logic is:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;if (!is.matrix(Psi)) Psi &amp;lt;- Psi + diag(1 - Psi, nrow = J)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s the function with the innards:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw &amp;lt;- function(delta, J, N, Psi) {
+
+  require(mvtnorm) # for simulating multi-variate normal data
+  
+  # create Psi matrix assuming equicorrelation
+  if (!is.matrix(Psi)) Psi &amp;lt;- Psi + diag(1 - Psi, nrow = J)
+  
+  # generate control group summary statistics
+  Y_C &amp;lt;- rmvnorm(n = N / 2, mean = rep(0, J), sigma = Psi)
+  ybar_C &amp;lt;- colMeans(Y_C)
+  sd_C &amp;lt;- apply(Y_C, 2, sd)
+  
+  # generate treatment group summary statistics
+  delta &amp;lt;- rep(delta, length.out = J)
+  Y_T &amp;lt;- rmvnorm(n = N / 2, mean = delta, sigma = Psi)
+  ybar_T &amp;lt;- colMeans(Y_T)
+  sd_T &amp;lt;- apply(Y_T, 2, sd)
+
+  # calculate Cohen&amp;#39;s d
+  sd_pool &amp;lt;- sqrt((sd_C^2 + sd_T^2) / 2)
+  ES &amp;lt;- (ybar_T - ybar_C) / sd_pool
+  
+  # calculate SE of d
+  SE &amp;lt;- sqrt(4 / N + ES^2 / (2 * (N - 2)))
+
+  data.frame(ES = ES, SE = SE, N = N)
+
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In action:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;delta &amp;lt;- rnorm(4, mean = 0.2, sd = 0.1)
+r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = 0.6)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: mvtnorm&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           ES        SE  N
+## 1  0.2258267 0.3172870 40
+## 2  0.2904284 0.3179778 40
+## 3  0.2944114 0.3180259 40
+## 4 -0.2015085 0.3170714 40&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or if you’d rather specify the full &lt;span class=&#34;math inline&#34;&gt;\(\Psi_k\)&lt;/span&gt; matrix yourself:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Psi_k &amp;lt;- 0.6 + diag(0.4, nrow = 4)
+Psi_k&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4]
+## [1,]  1.0  0.6  0.6  0.6
+## [2,]  0.6  1.0  0.6  0.6
+## [3,]  0.6  0.6  1.0  0.6
+## [4,]  0.6  0.6  0.6  1.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = Psi_k)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          ES        SE  N
+## 1 0.4136328 0.3197674 40
+## 2 0.6730080 0.3255146 40
+## 3 0.5825111 0.3232100 40
+## 4 0.4974262 0.3213342 40&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;exercises&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;The function above is serviceable but quite basic. I can think of several additional features that one might like to have for use in research simulations, but I’m feeling both cheeky and lazy at the moment, so I’ll leave them for you, dear reader. Here are some suggested exercises:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;Hedges_g = TRUE&lt;/code&gt;, which controls where the simulated effect size is Hedges’ &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt; or Cohen’s &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;. If it is Hedges’ g, make sure that the standard error is corrected too.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;p_val = TRUE&lt;/code&gt;, which allows the user to control whether or not to return &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-values from the test of mean differences for each outcome. Note that the p-values should be for a test of the &lt;em&gt;raw&lt;/em&gt; mean differences between groups, rather than a test of the effect size &lt;span class=&#34;math inline&#34;&gt;\(\delta_{jk} = 0\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;corr_mat = FALSE&lt;/code&gt;, which controls whether the function returns just the simulated effect sizes and SEs or both the simulated effect sizes and the full sampling variance-covariance matrix of the effect sizes. See &lt;a href=&#34;/correlations-between-SMDs&#34;&gt;here&lt;/a&gt; for the relevant formulas.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulating-summary-statistics&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating summary statistics&lt;/h1&gt;
+&lt;p&gt;Another approach to simulating SMDs is to sample from the distribution of the &lt;em&gt;summary statistics&lt;/em&gt; used in calculating the effect size. This approach should simplify the code, at the cost of having to use a bit of distribution theory. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\bar{y}}_{Tk}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\bar{y}}_{Ck}\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vectors of sample means for the treatment and control groups, respectively. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{S}_k\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; sample covariance matrix of the outcomes, pooled across the treatment and control groups. Again assuming multi-variate normality, and following the same notation as above:
+&lt;span class=&#34;math display&#34;&gt;\[
+\mathbf{\bar{y}}_{Ck} \sim N\left(\mathbf{0}, \frac{2}{N_k} \boldsymbol\Psi_k\right), \qquad \mathbf{\bar{y}}_{Tk} \sim N\left(\boldsymbol\delta_k, \frac{2}{N_k} \boldsymbol\Psi_k\right),
+\]&lt;/span&gt;
+and
+&lt;span class=&#34;math display&#34;&gt;\[
+\left(\mathbf{\bar{y}}_{Tk} - \mathbf{\bar{y}}_{Ck}\right) \sim N\left(\boldsymbol\delta_k, \frac{4}{N_k} \boldsymbol\Psi_k\right).
+\]&lt;/span&gt;
+This shows how we could directly simulate the numerator of the standardized mean difference.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;/distribution-of-sample-variances&#34;&gt;further bit of distribution theory&lt;/a&gt; says that the pooled sample covariance matrix follows a multiple of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Wishart_distribution&#34;&gt;Wishart distribution&lt;/a&gt; with &lt;span class=&#34;math inline&#34;&gt;\(N_k - 2\)&lt;/span&gt; degrees of freedom and scale matrix &lt;span class=&#34;math inline&#34;&gt;\(\Psi_k\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+(N_k - 2) \mathbf{S}_k \sim Wishart\left(N_k - 2, \Psi_k \right).
+\]&lt;/span&gt;
+Thus, to simulate the denominators of the SMD estimates, we can simulate a single Wishart matrix, pull out the diagonal entries, divide by &lt;span class=&#34;math inline&#34;&gt;\(N_k - 2\)&lt;/span&gt;, and take the square root. In all, we draw a single &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; observation from a multi-variate normal distribution and a single &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; observation from a Wishart distribution. In contrast, the raw data approach requires simulating &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; observations from a multi-variate normal distribution, then calculating &lt;span class=&#34;math inline&#34;&gt;\(4 J_k\)&lt;/span&gt; summary statistics (M and SD for each group on each outcome).&lt;/p&gt;
+&lt;div id=&#34;exercises-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;Once again, I’ll leave it to you, dear reader, to do the fun programming bits:&lt;/p&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Create a modified version of the function &lt;code&gt;r_SMDs_raw&lt;/code&gt; that simulates summary statistics instead of raw data (Call it &lt;code&gt;r_SMDs_stats&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;microbenchmark&lt;/code&gt; package (or your preferred benchmarking tool) to compare the computational efficiency of both versions of the function.&lt;/li&gt;
+&lt;li&gt;Check your work! Verify that both versions of the function generate the same distributions if the same parameters are used as input.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;which-approach-is-better&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Which approach is better?&lt;/h1&gt;
+&lt;p&gt;Like many things in research, there’s no clearly superior method here. The advantage of the summary statistics approach is computational efficiency. It should generally be faster than the raw data approach, and if you need to generate 10,000 meta-analysis each with 80 studies in them, the computational savings might add up. On the other hand, computational efficiency isn’t everything.&lt;/p&gt;
+&lt;p&gt;I see two potential advantages of the raw data approach. First is interpretability: simulating raw data is likely easier to understand. It feels tangible and familiar, harkening back to those bygone days we spent learning ANOVA, whereas the summary statistics approach requires a bit of distribution theory to follow (bookmark this blog post!). Second is extensibility: it is relatively straightforward to extend the approach to use other distributional models for the raw dat (perhaps you want to look at outcomes that follow a &lt;a href=&#34;https://en.wikipedia.org/wiki/Multivariate_t-distribution&#34;&gt;multi-variate &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; distribution&lt;/a&gt;?) or more complicated estimators of the SMD (difference-in-differences? covariate-adjusted? cluster-randomized trial?). To use the summary statistics approach in more complicated scenarios, you’d have to work out the sampling distributions for yourself, or locate the right reference.&lt;/p&gt;
+&lt;p&gt;Of course, there’s also no need to choose between these two approaches. As I’m trying to hint at in Exercise 6, it’s actually useful to write both. Then, you can use the (potentially slower) raw data version to verify that the summary statistics version is correct.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulating-full-meta-analyses&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating full meta-analyses&lt;/h1&gt;
+&lt;p&gt;So far we’ve got a data-generating function that simulates a single study’s worth of effect size estimates. To study meta-analytic methods, we’ll need to build out the function to simulate multiple studies. To do so, I think it’s useful to use the technique of &lt;a href=&#34;https://r4ds.had.co.nz/iteration.html&#34;&gt;mapping&lt;/a&gt;, as implemented in the &lt;code&gt;purrr&lt;/code&gt; package’s &lt;code&gt;map_*&lt;/code&gt; functions. The idea here is to first generate a “menu” of study-specific parameters for each of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, then apply the &lt;code&gt;r_SMDs&lt;/code&gt; function to each parameter set.&lt;/p&gt;
+&lt;p&gt;Let’s consider how to do this for a simple random effects model, where the true effect size parameter is constant within each study (i.e., &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k = (\delta_k \cdots \delta_k)&amp;#39;\)&lt;/span&gt;), and in a model without covariates. We’ll need to generate a true effect for each study, along with a sample size, an outcome dimension, and a correlation between outcomes. For the true effects, I’ll assume that
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_k \sim N(\mu, \tau^2),
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+J_k \sim 2 + Poisson(3),
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+N_k \sim 20 + 2 \times Poisson(10),
+\]&lt;/span&gt;
+and
+&lt;span class=&#34;math display&#34;&gt;\[
+r_k \sim Beta\left(\rho \nu, (1 - \rho)\nu\right),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\rho = \text{E}(r_k)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu &amp;gt; 0\)&lt;/span&gt; controls the variability of &lt;span class=&#34;math inline&#34;&gt;\(r_k\)&lt;/span&gt; across studies, with smaller &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt; corresponding to more variable correlations.
+Specifically, &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(r_k) = \rho (1 - \rho) / (1 + \nu)\)&lt;/span&gt;.
+These distributions are just made up, without any particular justification.&lt;/p&gt;
+&lt;p&gt;Here’s what these distributional models look like in R code:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;K &amp;lt;- 6
+mu &amp;lt;- 0.2
+tau &amp;lt;- 0.05
+J_mean &amp;lt;- 5
+N_mean &amp;lt;- 45
+rho &amp;lt;- 0.6
+nu &amp;lt;- 39
+
+study_data &amp;lt;- 
+  data.frame(
+    delta = rnorm(K, mean = mu, sd = tau),
+    J = 2 + rpois(K, J_mean - 2),
+    N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+    Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+  )
+
+study_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       delta J  N       Psi
+## 1 0.1894240 9 50 0.5112511
+## 2 0.1523343 3 44 0.6584239
+## 3 0.2478227 5 38 0.5442388
+## 4 0.1530779 5 46 0.5338198
+## 5 0.2557257 6 48 0.6635501
+## 6 0.3111021 3 34 0.7598409&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once we have the “menu” of study-level characteristics, it’s just a matter of mapping the parameters to the data-generating function. One way to do this is with &lt;code&gt;pmap_df&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(purrr)
+meta_data &amp;lt;- pmap_df(study_data, r_SMDs_raw, .id = &amp;quot;study&amp;quot;)
+meta_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    study            ES        SE  N
+## 1      1  0.0838982347 0.2829723 50
+## 2      1  0.3131093912 0.2846423 50
+## 3      1  0.2032941211 0.2836027 50
+## 4      1  0.1462363557 0.2832362 50
+## 5      1 -0.0841477323 0.2829731 50
+## 6      1  0.0008988422 0.2828427 50
+## 7      1  0.1703249176 0.2833764 50
+## 8      1 -0.1645178447 0.2833407 50
+## 9      1  0.0527563306 0.2828940 50
+## 10     2  0.4031344135 0.3047028 44
+## 11     2  0.3437062486 0.3038346 44
+## 12     2  0.2525668139 0.3027681 44
+## 13     3  0.8555648807 0.3397495 38
+## 14     3  0.3502132641 0.3270575 38
+## 15     3  0.1662112740 0.3250336 38
+## 16     3  0.7294206056 0.3356379 38
+## 17     3  0.3447478812 0.3269769 38
+## 18     4  0.3773615530 0.2976151 46
+## 19     4  0.4328885816 0.2984727 46
+## 20     4  0.2244493715 0.2958530 46
+## 21     4  0.3393561858 0.2970946 46
+## 22     4  0.5140631756 0.2999325 46
+## 23     5  0.0717846618 0.2887721 48
+## 24     5  0.3179642994 0.2905723 48
+## 25     5  0.3444123920 0.2908998 48
+## 26     5  0.5411105342 0.2941359 48
+## 27     5  0.2431480980 0.2897860 48
+## 28     5  0.1627009191 0.2891731 48
+## 29     6  0.2959281618 0.3449861 34
+## 30     6 -0.1153519889 0.3433001 34
+## 31     6  0.5503107844 0.3498270 34&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(meta_data$study)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## 1 2 3 4 5 6 
+## 9 3 5 5 6 3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Putting it all together into a function, we have&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_meta &amp;lt;- function(K, mu, tau, J_mean, N_mean, rho, nu) {
+  require(purrr)
+  
+  study_data &amp;lt;- 
+    data.frame(
+      delta = rnorm(K, mean = mu, sd = tau),
+      J = 2 + rpois(K, J_mean - 2),
+      N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+      Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+    )
+  
+  pmap_df(study_data, r_SMDs_raw, .id = &amp;quot;study&amp;quot;)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;exercises-2&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Modify &lt;code&gt;r_meta&lt;/code&gt; so that it uses &lt;code&gt;r_SMDs_stats&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add options to &lt;code&gt;r_meta&lt;/code&gt; for &lt;code&gt;Hedges_g&lt;/code&gt;, &lt;code&gt;p_val = TRUE&lt;/code&gt;, and &lt;code&gt;corr_mat = FALSE&lt;/code&gt; and ensure that these get passed along to the &lt;code&gt;r_SMDs&lt;/code&gt; function.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;One way to check that the &lt;code&gt;r_meta&lt;/code&gt; function is working properly is to generate a very large meta-analytic dataset, then to verify that the generated distributions align with expectations. Here’s a very large meta-analytic dataset:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;meta_data &amp;lt;- 
+  r_meta(100000, mu = 0.2, tau = 0.05, 
+         J_mean = 5, N_mean = 40, 
+         rho = 0.6, nu = 39)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Compare the distribution of the simulated dataset against what you would expect to get based on the input parameters.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Modify the &lt;code&gt;r_meta&lt;/code&gt; function so that &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; are correlated, according to
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{align}
+J_k &amp;amp;\sim 2 + Poisson(\mu_J - 2) \\
+N_k &amp;amp;\sim 20 + 2 \times Poisson\left(\frac{1}{2}(\mu_N - 20) + \alpha (J_k - \mu_J) \right)
+\end{align}
+\]&lt;/span&gt;
+for user-specified values of &lt;span class=&#34;math inline&#34;&gt;\(\mu_J\)&lt;/span&gt; (the average number of outcomes per study), &lt;span class=&#34;math inline&#34;&gt;\(\mu_N\)&lt;/span&gt; (the average total sample size per study), and &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;, which controls the degree of dependence between &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a-challenge&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A challenge&lt;/h2&gt;
+&lt;p&gt;The meta-analytic model that we’re using here is quite simple—simplistic, even—and for some simulation studies, something more complex might be needed. For example, we might need to generate data from a model that includes within-study random effects, as in:
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_{jk} = \mu + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2).
+\]&lt;/span&gt;
+Even more complex would be to simulate from a multi-level meta-regression model
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_{jk} = \mathbf{x}_{jk} \boldsymbol\beta + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_{jk}\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(1 \times p\)&lt;/span&gt; row-vector of covariates describing outcome &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\beta\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(p \times 1\)&lt;/span&gt; vector of meta-regression coefficients. In past work, I’ve done this by writing a data-generating function that takes a fixed design matrix &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{X} = \left(\mathbf{x}_{11}&amp;#39; \cdots \mathbf{x}_{J_K K}&amp;#39;\right)&amp;#39;\)&lt;/span&gt; as an input argument, along with &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\beta\)&lt;/span&gt;. The design matrix would also include an identifier for each unique study. There are surely better (simpler, easier to follow) ways to implement the multi-level meta-regression model. I’ll once again leave it to you to work out an approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sampling variance of Pearson r in a two-level design</title>
+      <link>/variance-of-r-in-two-level-design/</link>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/variance-of-r-in-two-level-design/</guid>
+      <description>
+
+
+&lt;p&gt;Consider Pearson’s correlation coefficient, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;, calculated from two variables &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; with population correlation &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt;. If one calculates &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; from a simple random sample of &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; observations, then its sampling variance will be approximately&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}(r) \approx \frac{1}{N}\left(1 - \rho^2\right)^2.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; will actually be a weighted average of within-cluster and between-cluster correlations (see Snijders &amp;amp; Bosker, 2012). Intuitively, I would expect that the sampling variance of the between-cluster correlation will be a function of the number of clusters (regardless of the number of observations per cluster), so the variance of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; from a multi-stage sample would not necessarily be the same as that from a simple random sample. What is the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; in this design?&lt;/p&gt;
+&lt;p&gt;Let me be more precise here by formalizing the sampling process. Suppose that we have a sample with &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; clusters, &lt;span class=&#34;math inline&#34;&gt;\(n_j\)&lt;/span&gt; observations in cluster &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, and total sample size &lt;span class=&#34;math inline&#34;&gt;\(N = \sum_{j=1}^m n_j\)&lt;/span&gt;. Assume that&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+X_{ij} &amp;amp;= \mu_x + v^x_j + e^x_{ij} \\
+Y_{ij} &amp;amp;= \mu_y + v^y_j + e^y_{ij},
+\end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;for &lt;span class=&#34;math inline&#34;&gt;\(i=1,...,n_j\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(j=1,...,m\)&lt;/span&gt;, where&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+\left[\begin{array}{c} v^x_j \\ v^y_j \end{array}\right] &amp;amp;\sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\omega_x^2 &amp;amp; \phi \omega_x \omega_y \\ \phi \omega_x \omega_y &amp;amp; \omega_y^2\end{array}\right]\right) \\ 
+\left[\begin{array}{c} e^x_{ij} \\ e^y_{ij} \end{array}\right] &amp;amp;\sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\sigma_x^2 &amp;amp; \rho \sigma_x \sigma_y \\ \rho \sigma_x \sigma_y &amp;amp; \sigma_y^2\end{array}\right]\right)
+\end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and the error terms are mutually independent unless otherwise noted. The raw Pearson’s &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is calculated using the total sums of squares and cross-products:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+r = \frac{SS_{xy}}{\sqrt{SS_{xx} SS_{yy}}},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+SS_{xx} &amp;amp;= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{\bar{x}}\right)^2, \qquad \bar{\bar{x}} = \frac{1}{N} \sum_{j=1}^m \sum_{i=1}^{n_j} X_{ij} \\
+SS_{xy} &amp;amp;= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(Y_{ij} - \bar{\bar{y}}\right)^2, \qquad \bar{\bar{y}} = \frac{1}{N} \sum_{j=1}^m \sum_{i=1}^{n_j} Y_{ij} \\
+SS_{xy} &amp;amp;= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{\bar{x}}\right) \left(Y_{ij} - \bar{\bar{y}}\right).
+\end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;div id=&#34;common-correlation-and-icc&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Common correlation and ICC&lt;/h3&gt;
+&lt;p&gt;The distribution of the total correlation seems to be pretty complicated. So far, I’ve been able to obtain the variance of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; for a special case that makes some further, fairly restrictive assumptions. Specifically, assume that the correlation is constant across the two levels, so that &lt;span class=&#34;math inline&#34;&gt;\(\phi = \rho\)&lt;/span&gt;, and that the intra-class correlation of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is the same as that of &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;. Let &lt;span class=&#34;math inline&#34;&gt;\(k = \omega_x^2 / \sigma_x^2 = \omega_y^2 / \sigma_y^2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\psi = k / (k + 1) = \omega_x^2 / (\omega_x^2 + \sigma_x^2)\)&lt;/span&gt;. Then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}(r) \approx \frac{(1 - \rho^2)^2}{\tilde{N}},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{N} = \frac{N[g_1 k + 1]^2}{g_2 k^2 + 2 g_1 k + 1} \approx \frac{N}{1 + (g_2 - g_1^2)\psi^2},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;with &lt;span class=&#34;math inline&#34;&gt;\(\displaystyle{g_1 = 1 - \frac{1}{N^2}\sum_{j=1}^m n_j^2}\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\displaystyle{g_2 = \frac{1}{N}\sum_{j=1}^m n_j^2 - \frac{2}{N^2}\sum_{j=1}^m n_j^3 + \frac{1}{N^3} \left(\sum_{j=1}^m n_j^2 \right)^2}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;If the clusters are all of equal size &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;, then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{N} = \frac{nm[k(m - 1) / m + 1]^2}{k^2 n (m - 1)/m + 2 k (m - 1) / m + 1} \approx \frac{N}{1 + (n - 1) \psi^2},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The right-hand expression is a further approximation that will be very close to right so long as &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; is not too too small.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;z-transformation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Z-transformation&lt;/h3&gt;
+&lt;p&gt;Under the (restrictive) assumptions of common correlation and equal ICCs, Fisher’s z transformation is variance-stabilizing (as it is under simple random sampling), so it seems reasonable to use&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}\left(z(r)\right) \approx \frac{1}{\tilde{N} - 3}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;design-effect&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Design effect&lt;/h3&gt;
+&lt;p&gt;The design effect (&lt;span class=&#34;math inline&#34;&gt;\(DEF\)&lt;/span&gt;) is the ratio of the actual sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; to the sampling variance in a simple random sample of the same size. For the special case that I’ve described,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+DEF = \frac{N}{\tilde{N}} = 1 + (g_2 - g_1^2) \psi^2,
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;or with equal cluster-sizes, &lt;span class=&#34;math inline&#34;&gt;\(DEF = 1 + (n - 1)\psi^2\)&lt;/span&gt;. These expressions make it clear that the design effect for the correlation is &lt;em&gt;not&lt;/em&gt; equivalent to the well-known design effect for means or mean differences in cluster-randomized designs, which is &lt;span class=&#34;math inline&#34;&gt;\(1 + (n - 1)\psi\)&lt;/span&gt;. We need to take the &lt;em&gt;square&lt;/em&gt; of the ICC here, which will make the design effect for &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; &lt;em&gt;smaller&lt;/em&gt; than the design effect for a mean (or difference in means) based on the same sample.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-special-cases&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Other special cases&lt;/h3&gt;
+&lt;p&gt;There are some further special cases that are not to hard to work out and could be useful as rough approximations at least. One is if the within-cluster correlation is zero &lt;span class=&#34;math inline&#34;&gt;\((\rho = 0)\)&lt;/span&gt; and we’re interested in the between-cluster correlation &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;. Then the total correlation can be corrected for what is essentially measurement error using formulas from &lt;a href=&#34;https://www.amazon.com/Methods-Meta-Analysis-Correcting-Research-Findings/dp/141290479X&#34;&gt;Hunter and Schmidt (2004)&lt;/a&gt;. A further specialization is if &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a cluster-level measure, so that &lt;span class=&#34;math inline&#34;&gt;\(\sigma_x^2 = 0\)&lt;/span&gt;. I’ll consider these in a later post, perhaps.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The multivariate delta method</title>
+      <link>/multivariate-delta-method/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/multivariate-delta-method/</guid>
+      <description>
+
+
+&lt;p&gt;The delta method is surely one of the most useful techniques in classical statistical theory. It’s perhaps a bit odd to put it this way, but I would say that the delta method is something like the precursor to the bootstrap, in terms of its utility and broad range of applications—both are “first-line” tools for solving statistical problems. There are many good references on the delta-method, ranging from &lt;a href=&#34;https://en.wikipedia.org/wiki/Delta_method&#34;&gt;the Wikipedia page&lt;/a&gt; to a short introduction in &lt;em&gt;The American Statistician&lt;/em&gt; (&lt;a href=&#34;https://doi.org/10.1080%2F00031305.1992.10475842&#34;&gt;Oehlert, 1992&lt;/a&gt;). Many statistical theory textbooks also include a longer or shorter discussion of the method (e.g., Stuart &amp;amp; Ord, 1996; Casella &amp;amp; Berger, 2002).&lt;/p&gt;
+&lt;p&gt;I use the delta method all the time in my work, especially to derive approximations to the sampling variance of some estimator (or covariance between two estimators). Here I’ll give one formulation of the multivariate delta method that I find particularly useful for this purpose. (This is nothing at all original. I’m only posting it on the off chance that others might find my crib notes helpful—and by “others” I mostly mean myself in six months…)&lt;/p&gt;
+&lt;div id=&#34;multi-variate-delta-method-covariances&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Multi-variate delta method covariances&lt;/h3&gt;
+&lt;p&gt;Suppose that we have a &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-dimensional vector of statistics &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T} = \left(T_1,...,T_p \right)\)&lt;/span&gt; that converge in distribution to the parameter vector &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\theta = \left(\theta_1,...,\theta_p\right)\)&lt;/span&gt; and have asymptotic covariance matrix &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\Sigma / n\)&lt;/span&gt;, i.e.,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\sqrt{n} \left(\mathbf{T} - \boldsymbol\theta\right) \stackrel{D}{\rightarrow} N\left( \mathbf{0}, \boldsymbol\Sigma \right).
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now consider two functions &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt;, both of which take vectors as inputs, return scalar quantities, and don’t have funky (discontinuous) derivatives. The asymptotic covariance between &lt;span class=&#34;math inline&#34;&gt;\(f(\mathbf{T})\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(g(\mathbf{T})\)&lt;/span&gt; is then approximately&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Cov} \left(f(\mathbf{T}), g(\mathbf{T}) \right) \approx \frac{1}{n} \sum_{j=1}^p \sum_{k=1}^p  \frac{\partial f}{ \partial \theta_j}\frac{\partial g}{ \partial \theta_k}\sigma_{jk}, 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{jk}\)&lt;/span&gt; is the entry in row &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; and column &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; of the matrix &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\Sigma\)&lt;/span&gt;. If the entries of &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T}\)&lt;/span&gt; are asymptotically uncorrelated , then this simplifies to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Cov} \left(f(\mathbf{T}), g(\mathbf{T}) \right) \approx \frac{1}{n} \sum_{j=1}^p \frac{\partial f}{ \partial \theta_j}\frac{\partial g}{ \partial \theta_j} \sigma_{jj}. 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If we are interested in the variance of a single statistic, then the above formulas simplify further to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var} \left(f(\mathbf{T})\right) \approx \frac{1}{n} \sum_{j=1}^p \sum_{k=1}^p  \frac{\partial f}{ \partial \theta_j}\frac{\partial f}{ \partial \theta_k}\sigma_{jk} 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var} \left(f(\mathbf{T}) \right) \approx \frac{1}{n}\sum_{j=1}^p \left(\frac{\partial f}{ \partial \theta_j}\right)^2 \sigma_{jj}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;in the case of uncorrelated &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, if we are dealing with a univariate transformation &lt;span class=&#34;math inline&#34;&gt;\(f(\theta)\)&lt;/span&gt;, then of course the above simplifies even further to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}\left(f(T)\right) = \left(\frac{\partial f}{\partial \theta}\right)^2 \text{Var}(T)
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pearsons-r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Pearson’s &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;These formulas are useful for all sorts of things. For example, they can be used to derive the sampling variance of Pearson’s correlation coefficient. Suppose we have a simple random sample of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; observations from a multivariate normal distribution with mean 0 and variance-covariance matrix &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\Phi = \left[\begin{array}{cc}\phi_{xx} &amp;amp; \phi_{xy} \\ \phi_{xy} &amp;amp; \phi_{yy} \end{array}\right]\)&lt;/span&gt;. Pearson’s correlation is calculated as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+r = \frac{s_{xy}}{\sqrt{s_{xx} s_{yy}}},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(s_{xx}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(s_{yy}\)&lt;/span&gt; are sample variances and &lt;span class=&#34;math inline&#34;&gt;\(s_{xy}\)&lt;/span&gt; is the sample covariance. These sample variances and covariances are unbiased estimates of &lt;span class=&#34;math inline&#34;&gt;\(\phi_{xx}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\phi_{yy}\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\phi_{xy}\)&lt;/span&gt;, respectively. So in terms of the above notation, we have &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T} = \left(s_{xx}, s_{yy}, s_{xy}\right)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\theta = \left(\phi_{xx}, \phi_{yy}, \phi_{xy}\right)\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\rho = \phi_{xy} / \sqrt{\phi_{xx} \phi_{yy}}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;From &lt;a href=&#34;/distribution-of-sample-variances&#34;&gt;a previous post&lt;/a&gt;, we can work out the variance-covariance matrix of &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}\left(\sqrt{n - 1} \left[\begin{array}{c} s_{xx} \\ s_{yy} \\ s_{xy}\end{array}\right]\right) = \boldsymbol\Sigma = \left[\begin{array}{ccc} 2 \phi_{xx}^2 &amp;amp; &amp;amp; \\ 2 \phi_{xy}^2 &amp;amp; 2 \phi_{yy}^2 &amp;amp; \\ 2 \phi_{xy} \phi_{xx} &amp;amp; 2 \phi_{xy} \phi_{yy} &amp;amp; \phi_{xy}^2 + \phi_{xx} \phi_{yy}\end{array}\right].
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The last piece is to find the derivatives of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; with respect to &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+\frac{\partial r}{\partial \phi_{xy}} &amp;amp;= \phi_{xx}^{-1/2} \phi_{yy}^{-1/2} \\
+\frac{\partial r}{\partial \phi_{xx}} &amp;amp;= -\frac{1}{2} \phi_{xy} \phi_{xx}^{-3/2} \phi_{yy}^{-1/2} \\
+\frac{\partial r}{\partial \phi_{yy}} &amp;amp;= -\frac{1}{2} \phi_{xy} \phi_{xx}^{-1/2} \phi_{yy}^{-3/2}
+\end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Putting the pieces together, we have&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+(n - 1) \text{Var}(r) &amp;amp;\approx \sigma_{11} \left(\frac{\partial r}{\partial \phi_{xy}}\right)^2 + \sigma_{22} \left(\frac{\partial r}{ \partial \phi_{xx}}\right)^2 + \sigma_{33} \left(\frac{\partial r}{ \partial \phi_{yy}}\right)^2 \\
+&amp;amp; \qquad \qquad + 2 \sigma_{12} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{xx}} + 2 \sigma_{13} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{yy}}+ 2 \sigma_{23} \frac{\partial r}{\partial \phi_{xx}}\frac{\partial r}{\partial \phi_{yy}} \\
+&amp;amp;= \frac{\phi_{xy}^2 + \phi_{xx} \phi_{yy}}{\phi_{xx} \phi_{yy}} + \frac{\phi_{xy}^2\phi_{xx}^2}{2 \phi_{xx}^3 \phi_{yy}} + \frac{\phi_{xy}^2\phi_{yy}^2}{2 \phi_{xx} \phi_{yy}^3} \\
+&amp;amp; \qquad \qquad - \frac{2\phi_{xy} \phi_{xx}}{\phi_{xx}^2 \phi_{yy}} - \frac{2\phi_{xy} \phi_{yy}}{\phi_{xx} \phi_{yy}^2} + \frac{\phi_{xy}^4}{\phi_{xx}^2 \phi_{yy}^2} \\
+&amp;amp;= 1 - 2\frac{\phi_{xy}^2}{\phi_{xx} \phi_{yy}} + \frac{\phi_{xy}^4}{\phi_{xx}^2 \phi_{yy}^2} \\
+&amp;amp;= \left(1 - \rho^2\right)^2.
+\end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fishers-z-transformation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Fisher’s &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt;-transformation&lt;/h3&gt;
+&lt;p&gt;Meta-analysts will be very familiar with Fisher’s &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt;-transformation of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;, given by &lt;span class=&#34;math inline&#34;&gt;\(z(\rho) = \frac{1}{2} \log\left(\frac{1 + \rho}{1 - \rho}\right)\)&lt;/span&gt;.
+Fisher’s &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; is the variance-stabilizing (and also normalizing) transformation of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;, meaning that &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}\left(z(r)\right)\)&lt;/span&gt; is approximately a constant function of sample size, not depending on the degree of correlation &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt;. We can see this using another application of the delta method:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\frac{\partial z}{\partial \rho} = \frac{1}{1 - \rho^2}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Thus,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}\left(z(r)\right) \approx \frac{1}{(1 - \rho^2)^2} \times \text{Var}(r) = \frac{1}{n - 1}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The variance of &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; is usually given as &lt;span class=&#34;math inline&#34;&gt;\(1 / (n - 3)\)&lt;/span&gt;, which is even closer to exact. Here we’ve obtained the variance of &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; using two applications of the delta-method. Because of &lt;a href=&#34;https://en.wikipedia.org/wiki/Chain_rule&#34;&gt;the chain rule&lt;/a&gt;, we’d have ended up with the same result if we’d gone straight from the sample variances and covariances, using the multivariate delta method and the derivatives of &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; with respect to &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\theta\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;covariances-between-correlations&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Covariances between correlations&lt;/h3&gt;
+&lt;p&gt;These same techniques can be used to work out expressions for the covariances between correlations estimated on the same sample. For instance, suppose you’ve measured four variables, &lt;span class=&#34;math inline&#34;&gt;\(W\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;, on a simple random sample of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; observations. What is &lt;span class=&#34;math inline&#34;&gt;\(\text{Cov}(r_{xy}, r_{xz})\)&lt;/span&gt;? What is &lt;span class=&#34;math inline&#34;&gt;\(\text{Cov}(r_{wx}, r_{yz})\)&lt;/span&gt;? I’ll leave the derivations for you to work out. See &lt;a href=&#34;http://dx.doi.org/10.1037//0033-2909.87.2.245&#34;&gt;Steiger (1980)&lt;/a&gt; for solutions.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alternative formulas for the standardized mean difference</title>
+      <link>/alternative-formulas-for-the-smd/</link>
+      <pubDate>Fri, 03 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/alternative-formulas-for-the-smd/</guid>
+      <description>
+
+
+&lt;p&gt;The standardized mean difference (SMD) is surely one of the best known and most widely used effect size metrics used in meta-analysis. In generic terms, the SMD parameter is defined as the difference in population means between two groups (often this difference represents the effect of some intervention), scaled by the population standard deviation of the outcome metric. Estimates of the SMD can be obtained from a wide variety of experimental designs, ranging from simple, completely randomized designs, to repeated measures designs, to cluster-randomized trials.&lt;/p&gt;
+&lt;p&gt;There’s some nuance involved in figuring out how to calculate estimates of the SMD from each design, mostly to do with exactly what sort of standard deviation to use in the denominator of the effect size. I’ll leave that discussion for another day. Here, I’d like to look at the question of how to estimate the sampling variance of the SMD. An estimate of the sampling variance is needed in order to meta-analyze a collection of effect sizes, and so getting the variance calculations right is an important (and sometimes time consuming) part of any meta-analysis project. However, the standard textbook treatments of effect size calculations cover this question only for a limited number of simple cases. I’d like to suggest a different, more general way of thinking about it, which provides a way to estimate the SMD and its variance in some non-standard cases (and also leads to slight differences from conventional formulas for the standard ones). All of this will be old hat for seasoned synthesists, but I hope it might be useful for students and researchers just getting started with meta-analysis.&lt;/p&gt;
+&lt;p&gt;To start, let me review (regurgitate?) the standard presentation.&lt;/p&gt;
+&lt;div id=&#34;smd-from-a-simple-independent-groups-design&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;SMD from a simple, independent groups design&lt;/h3&gt;
+&lt;p&gt;Textbook presentations of the SMD estimator almost always start by introducing the estimator in the context of a &lt;strong&gt;simple, independent groups design&lt;/strong&gt;. Call the groups T and C, the sample sizes &lt;span class=&#34;math inline&#34;&gt;\(n_T\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(n_C\)&lt;/span&gt;, the sample means &lt;span class=&#34;math inline&#34;&gt;\(\bar{y}_T\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\bar{y}_C\)&lt;/span&gt;, and the sample variances &lt;span class=&#34;math inline&#34;&gt;\(s_T^2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(s_C^2\)&lt;/span&gt;. A basic moment estimator of the SMD is then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+d = \frac{\bar{y}_T - \bar{y}_C}{s_p}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(s_p^2 = \frac{\left(n_T - 1\right)s_T^2 + \left(n_C - 1\right) s_C^2}{n_T + n_C - 2}\)&lt;/span&gt; is a pooled estimator of the population variance. The standard estimator for the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+V_d = \frac{n_T + n_C}{n_T n_C} + \frac{d^2}{2\left(n_T + n_C - 2\right)},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;or some slight variant thereof. This estimator is based on a delta-method approximation for the asymptotic variance of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;It is well known that &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; has a small sample bias that depends on sample sizes. Letting&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+J(x) = 1 - \frac{3}{4x - 1},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;the bias-corrected estimator is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+g = J\left(n_T + n_C - 2\right) \times d,
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and is often referred to as Hedges’ &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt; because it was proposed in &lt;a href=&#34;http://doi.org/10.3102/10769986006002107&#34;&gt;Hedges (1981)&lt;/a&gt;. Some meta-analysts use &lt;span class=&#34;math inline&#34;&gt;\(V_d\)&lt;/span&gt;, but with &lt;span class=&#34;math inline&#34;&gt;\(d^2\)&lt;/span&gt; replaced by &lt;span class=&#34;math inline&#34;&gt;\(g^2\)&lt;/span&gt;, as an estimator of the large-sample variance of &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt;; others use&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+V_g = J^2\left(n_T + n_C - 2\right) \left(\frac{n_T + n_C}{n_T n_C} + \frac{g^2}{2\left(n_T + n_C - 2\right)}\right).
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://doi.org/10.3102/1076998606298034&#34;&gt;Viechtbauer (2007)&lt;/a&gt; provides further details on variance estimation and confidence intervals for the SMD in this case.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a-general-formula-for-g-and-its-sampling-variance&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A general formula for &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt; and its sampling variance&lt;/h3&gt;
+&lt;p&gt;The above formulas are certainly useful, but in practice meta-analyses often include studies that use other, more complex designs.
+Good textbook presentations also cover computation of &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt; and its variance for some other cases (e.g., Borenstein, 2009, also covers one-group pre/post designs and analysis of covariance). Less careful presentations only cover the simple, independent groups design and thus may inadvertently leave the impression that the variance estimator &lt;span class=&#34;math inline&#34;&gt;\(V_d\)&lt;/span&gt; given above applies in general. With other types of studies, &lt;span class=&#34;math inline&#34;&gt;\(V_d\)&lt;/span&gt; can be a wildly biased estimator of the actual sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;, because it is derived under the assumption that the numerator of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; is estimated as the difference in means of two simple random samples. In some designs (e.g., ANCOVA designs, randomized block designs, repeated measures designs), the treatment effect estimate will be much more precise than this; in other designs (e.g., cluster-randomized trials), it will be less precise.&lt;/p&gt;
+&lt;p&gt;Here’s what I think is a more useful way to think about the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;. Let’s suppose that we have an unbiased estimator for the difference in means that goes into the numerator of the SMD. Call this estimator &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt;, its sampling variance &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(b)\)&lt;/span&gt;, and its standard error &lt;span class=&#34;math inline&#34;&gt;\(se_{b}\)&lt;/span&gt;. Also suppose that we have an unbiased (or reasonably close-to-unbiased) estimator of the population variance of the outcome, the square root of which goes into the denominator of the SMD. Call this estimator &lt;span class=&#34;math inline&#34;&gt;\(S^2\)&lt;/span&gt;, with expectation &lt;span class=&#34;math inline&#34;&gt;\(\text{E}\left(S^2\right) = \sigma^2\)&lt;/span&gt; and sampling variance &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(S^2)\)&lt;/span&gt;. Finally, suppose that &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(S^2\)&lt;/span&gt; are independent (which will often be a pretty reasonable assumption). A delta-method approximation for the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(d = b / S\)&lt;/span&gt; is then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}\left(d\right) \approx \frac{\text{Var}(b)}{\sigma^2} + \frac{\delta^2}{2 \nu},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\nu = 2 \left[\text{E}\left(S^2\right)\right]^2 / \text{Var}\left(S^2\right)\)&lt;/span&gt;. Plugging in sample estimates of the relevant parameters provides a reasonable estimator for the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+V_d = \left(\frac{se_b}{S}\right)^2 + \frac{d^2}{2 \nu}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This estimator has two parts. The first part involves &lt;span class=&#34;math inline&#34;&gt;\(se_b / S\)&lt;/span&gt;, which is just the standard error of &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt;, but re-scaled into standard deviation units; this part captures the variability in &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; from its numerator. This scaled standard error can be calculated directly if an article reports &lt;span class=&#34;math inline&#34;&gt;\(se_b\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The second part of &lt;span class=&#34;math inline&#34;&gt;\(V_d\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(d^2 / (2 \nu)\)&lt;/span&gt;, which captures the variability in &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; due to its denominator. More precise estimates of &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; will have larger degrees of freedom, so that the second part will be smaller. For some designs, the degrees of freedom &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt; depend only on sample sizes, and thus can be calculated exactly. For some other designs, &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt; must be estimated.&lt;/p&gt;
+&lt;p&gt;The same degrees of freedom can also be used in the small-sample correction for the bias of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;, as given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+g = J(\nu) \times d.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This small-sample correction is based on a Satterthwaite-type approximation to the distribution of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Here’s another way to express the variance estimator for &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+V_d = d^2 \left(\frac{1}{t^2} + \frac{1}{2 \nu}\right),
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; is the test statistic corresponding to the hypothesis test for no difference between groups. I’ve never seen that formula in print before, but it could be convenient if an article reports the &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; statistic (or &lt;span class=&#34;math inline&#34;&gt;\(F = t^2\)&lt;/span&gt; statistic).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;non-standard-estimators-of-d&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Non-standard estimators of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;The advantage of this formulation of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(V_d\)&lt;/span&gt; is that it can be applied in quite a wide variety of circumstances, including cases that aren’t usually covered in textbook treatments. Rather than having to use separate formulas for every combination of design and analytic approach under the sun, the same formulas apply throughout. What changes are the components of the formulas: the scaled standard error &lt;span class=&#34;math inline&#34;&gt;\(se_b / S\)&lt;/span&gt; and the degrees of freedom &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt;. The general formulation also makes it easier to swap in different estimates of &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt;—i.e., if you estimate the numerator a different way but keep the denominator the same, you’ll need a new scaled standard error but can still use the same degrees of freedom. A bunch of examples:&lt;/p&gt;
+&lt;div id=&#34;independent-groups-with-different-variances&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Independent groups with different variances&lt;/h4&gt;
+&lt;p&gt;Suppose that we’re looking at two independent groups but do not want to assume that their variances are the same. In this case, it would make sense to standardize the difference in means by the control group standard deviation (without pooling), so that &lt;span class=&#34;math inline&#34;&gt;\(d = \left(\bar{y}_T - \bar{y}_C\right) / s_C\)&lt;/span&gt;. Since &lt;span class=&#34;math inline&#34;&gt;\(s_C^2\)&lt;/span&gt; has &lt;span class=&#34;math inline&#34;&gt;\(\nu = n_C - 1\)&lt;/span&gt; degrees of freedom, the small-sample bias correction will then need to be &lt;span class=&#34;math inline&#34;&gt;\(J(n_C - 1)\)&lt;/span&gt;. The scaled standard error will be&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\frac{se_b}{s_C} = \sqrt{\frac{s_T^2}{s_C^2 n_T} + \frac{1}{n_C}}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is then everything that we need to calculate &lt;span class=&#34;math inline&#34;&gt;\(V_d\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(V_g\)&lt;/span&gt;, etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;multiple-independent-groups&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Multiple independent groups&lt;/h4&gt;
+&lt;p&gt;Suppose that the study involves &lt;span class=&#34;math inline&#34;&gt;\(K - 1\)&lt;/span&gt; treatment groups, 1 control group, and &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; total participants. If the meta-analysis will include SMDs comparing &lt;em&gt;each&lt;/em&gt; treatment group to the control group, it would make sense to pool the sample variance across all &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; groups rather than just the pair of groups, so that a common estimate of scale is used across all the effect sizes. The pooled standard deviation is then calculated as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+s_p^2 = \frac{1}{N - K} \sum_{k=0}^K (n_k - 1) s_k^2.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For a comparison between treatment group &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; and the control group, we would then use&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+d = \frac{\bar{y}_k - \bar{y}_C}{s_p}, \qquad \nu = N - K, \qquad \frac{se_b}{s_p} = \sqrt{\frac{1}{n_C} + \frac{1}{n_k}},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(n_k\)&lt;/span&gt; is the sample size for treatment group &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; (cf. Gleser &amp;amp; Olkin, 2009).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;single-group-pre-test-post-test-design&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Single group, pre-test post-test design&lt;/h4&gt;
+&lt;p&gt;Suppose that a study involves taking pre-test and post-test measurements on a single group of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; participants. Borenstein (2009) recommends calculating the standardized mean difference for this study as the difference in means between the post-test and pre-test, scaled by the pooled (across pre- and post-test measurements) standard deviation. With obvious notation:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+d = \frac{\bar{y}_{post} - \bar{y}_{pre}}{s_p}, \qquad \text{where} \qquad s_p^2 = \frac{1}{2}\left(s_{pre}^2 + s_{post}^2\right).
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In this design,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\frac{se_b}{s_p} = \frac{2(1 - r)}{n},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the sample correlation between the pre- and post-tests. The remaining question is what to use for &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt;. Borenstein (2009) uses &lt;span class=&#34;math inline&#34;&gt;\(\nu = n - 1\)&lt;/span&gt;. My previous post &lt;a href=&#34;/distribution-of-sample-variances/&#34;&gt;on the sampling covariance of sample variances&lt;/a&gt; gave the result that &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(s_p^2) = \sigma^4 (1 + \rho^2) / (n - 1)\)&lt;/span&gt;, which would instead suggest using&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\nu = \frac{2 (n - 1)}{1 + r^2}. 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This formula will tend to give slightly larger degrees of freedom, but probably won’t be that discrepant from Borenstein’s approach except in quite small samples. It would be interesting to investigate which approach is better in small samples (i.e., leading to less biased estimates of the SMD and more accurate estimates of sampling variance, and by how much), although its possible than neither is all that good because the variance estimator itself is based on a large-sample approximation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-group-pre-test-post-test-design-ancova-estimation&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Two group, pre-test post-test design: ANCOVA estimation&lt;/h4&gt;
+&lt;p&gt;Suppose that a study involves taking pre-test and post-test measurements on two groups of participants, with sample sizes &lt;span class=&#34;math inline&#34;&gt;\(n_T\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(n_C\)&lt;/span&gt; respectively. One way to analyze this design is via ANCOVA using the pre-test measure as the covariate, so that the treatment effect estimate is the difference in adjusted post-test means. In this design, the scaled standard error will be approximately&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\frac{se_b}{S} = \frac{(n_C + n_T)(1 - r^2)}{n_C n_T},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the pooled, within-group sample correlation between the pre-test and the post-test measures (this approximation assumes that the pre-test SMD between groups is relatively small). Alternately, if &lt;span class=&#34;math inline&#34;&gt;\(se_b\)&lt;/span&gt; is provided then the scaled standard error could be calculated directly.&lt;/p&gt;
+&lt;p&gt;Borenstein (2009) suggests calculating &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; as the difference in adjusted means, scaled by the pooled sample variances on the post-test measures. The post-test pooled sample variance will have the same degrees of freedom as in the two-sample t-test case: &lt;span class=&#34;math inline&#34;&gt;\(\nu = n_C + n_T - 2\)&lt;/span&gt;. (Borenstein instead uses &lt;span class=&#34;math inline&#34;&gt;\(\nu = n_C + n_T - 2 - q\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(q\)&lt;/span&gt; is the number of covariates in the analysis, but this won’t usually make much difference unless the total sample size is quite small.)&lt;/p&gt;
+&lt;p&gt;Scaling by the pooled post-test sample variance isn’t the only reasonable way to estimate the SMD though. If the covariate is a true pre-test, then why not scale by the pooled pre-test sample variance instead? To do so, you would need to calculate &lt;span class=&#34;math inline&#34;&gt;\(se_b / S\)&lt;/span&gt; directly and use &lt;span class=&#34;math inline&#34;&gt;\(\nu = n_C + n_T - 2\)&lt;/span&gt;. If it is reasonable to assume that the pre- and post-test population variances are equal, then another alternative would be to pool across the pre-test &lt;em&gt;and&lt;/em&gt; post-test sample variances in each group. Using this approach, you would again need to calculate &lt;span class=&#34;math inline&#34;&gt;\(se_b / S\)&lt;/span&gt; directly and then use &lt;span class=&#34;math inline&#34;&gt;\(\nu = 2(n_C + n_T - 2) / (1 + r^2)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-group-pre-test-post-test-design-repeated-measures-estimation&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Two group, pre-test post-test design: repeated measures estimation&lt;/h4&gt;
+&lt;p&gt;Another way to analyze the data from the same type of study design is to use repeated measures ANOVA. I’ve recently encountered a number of studies that use this approach (here’s a recent example from &lt;a href=&#34;http://dx.doi.org/10.1371/journal.pone.0154075&#34;&gt;a highly publicized study in PLOS ONE&lt;/a&gt;—see Table 2). The studies I’ve seen typically report the sample means and variances in each group and at each time point, from which the difference in change scores can be calculated. Let &lt;span class=&#34;math inline&#34;&gt;\(\bar{y}_{gt}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(s_{gt}^2\)&lt;/span&gt; denote the sample mean and sample variance in group &lt;span class=&#34;math inline&#34;&gt;\(g = T, C\)&lt;/span&gt; at time &lt;span class=&#34;math inline&#34;&gt;\(t = 0, 1\)&lt;/span&gt;. The numerator of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; would then be calculated as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+b = \left(\bar{y}_{T1} - \bar{y}_{T0}\right) - \left(\bar{y}_{C1} - \bar{y}_{C0}\right),
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;which has sampling variance &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(b) = 2(1 - \rho)\sigma^2\left(n_C + n_T \right) / (n_C n_T)\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt; is the correlation between the pre-test and the post-test measures. Thus, the scaled standard error is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\frac{se_b}{S} = \frac{2(1 - r)(n_C + n_T)}{n_C n_T}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;As with ANCOVA, there are several potential options for calculating the denominator of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Using the pooled sample variances on the post-test measures, with &lt;span class=&#34;math inline&#34;&gt;\(\nu = n_C + n_T - 2\)&lt;/span&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Using the pooled sample variances on the pre-test measures, with &lt;span class=&#34;math inline&#34;&gt;\(\nu = n_C + n_T - 2\)&lt;/span&gt;; or&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Using the pooled sample variances at both time points and in both groups, i.e.,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+  S^2 = \frac{(n_C - 1)(s_{C0}^2 + s_{C1}^2) + (n_T - 1)(s_{T0}^2 + s_{T1}^2)}{2(n_C + n_T - 2)},
+  \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;with &lt;span class=&#34;math inline&#34;&gt;\(\nu = 2(n_C + n_T - 2) / (1 + r^2)\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The range of approaches to scaling is the same as for ANCOVA. This makes sense because both analyses are based on data from the same study design, so the parameter of interest should be the same (i.e., the target parameter should not change based on the analytic method). Note that all of these approaches are a bit different than the effect size estimator proposed by &lt;a href=&#34;http://doi.org/10.1037//1082-989X.7.1.105&#34;&gt;Morris and DeShon (2002)&lt;/a&gt; for the two-group, pre-post design; their approach does not fit into my framework because it involves taking a difference between standardized effect sizes (and therefore involves two separate estimates of scale, rather than just one).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;randomized-trial-with-longitudinal-follow-up&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Randomized trial with longitudinal follow-up&lt;/h4&gt;
+&lt;p&gt;Many independent-groups designs—especially randomized trials in field settings—involve repeated, longitudinal follow-up assessments. An increasingly common approach to analysis of such data is through hierarchical linear models, which can be used to account for the dependence structure among measurements taken on the same individual. In this setting, &lt;a href=&#34;http://doi.org/10.1037/a0014699&#34;&gt;Feingold (2009)&lt;/a&gt; proposes that the SMD be calculated as the model-based estimate of the treatment effect at the final follow-up time, scaled by the within-groups variance of the outcome at that time point. Let &lt;span class=&#34;math inline&#34;&gt;\(\hat\beta_1\)&lt;/span&gt; denote the estimated difference in slopes (change per unit time) between groups in a linear growth model, &lt;span class=&#34;math inline&#34;&gt;\(F\)&lt;/span&gt; denote the duration of the study, and &lt;span class=&#34;math inline&#34;&gt;\(s_{pF}^2\)&lt;/span&gt; denote the pooled sample variance of the outcome at the final time point. For this model, Feingold (2009) proposes to calculate the standardized mean difference as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+d = \frac{F \hat\beta_1}{s_{pF}}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In a later paper, &lt;a href=&#34;http://doi.org/10.1037/a0037721&#34;&gt;Feingold (2015)&lt;/a&gt; proposes that the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; be estimated as &lt;span class=&#34;math inline&#34;&gt;\(F \times se_{\hat\beta_1} / s_{pF}\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(se_{\hat\beta_1}\)&lt;/span&gt; is the standard error of the estimated slope. My framework suggests that a better estimate of the sampling variance, which accounts for the uncertainty of the scale estimate, would be to use&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+V_d = \left(\frac{F \times se_{\hat\beta_1}}{s_{pF}}\right)^2 + \frac{d^2}{2 \nu},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;with &lt;span class=&#34;math inline&#34;&gt;\(\nu = n_T + n_C - 2\)&lt;/span&gt;. The same &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt; could be used to bias-correct the effect size estimate.&lt;/p&gt;
+&lt;p&gt;If estimates of the variance components of the HLM are reported, one could use them to construct a model-based estimate of the scale parameter in the denominator of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;. I explored this approach in a paper that uses HLM to model single-case designs, which are a certain type of longitudinal experiment that typically involve a very small number of participants (&lt;a href=&#34;http://doi.org/10.3102/1076998614547577&#34;&gt;Pustejovsky, Hedges, &amp;amp; Shadish, 2014&lt;/a&gt;). Estimates of the scale parameter can usually be written as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+S_{model}^2 = \mathbf{r}&amp;#39;\boldsymbol\omega,
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\omega\)&lt;/span&gt; is a vector of all the variance components in the model and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{r}\)&lt;/span&gt; is a vector of weights that depend on the model specification and length of follow-up. This estimate of scale will usually be more precise than &lt;span class=&#34;math inline&#34;&gt;\(s_{pF}^2\)&lt;/span&gt; because it makes use of all of the data (and modeling assumptions). However, it can be challenging to determine appropriate degrees of freedom for &lt;span class=&#34;math inline&#34;&gt;\(S_{model}^2\)&lt;/span&gt;. For single-case designs, I used estimates of &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(\boldsymbol\omega)\)&lt;/span&gt; based on the inverse of the expected information matrix—call the estimate &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{V}_{\boldsymbol\omega}\)&lt;/span&gt;—in which case&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\nu = \frac{2 S_{model}^4}{\mathbf{r}&amp;#39; \mathbf{V}_{\boldsymbol\omega} \mathbf{r}}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;However, most published articles will not provide estimates of the sampling variances of the variance components—in fact, a lot of software for estimating HLMs does not even provide these. It would be useful to work out some reasonable approximations for the degrees of freedom in these models—approximations that can be calculated based on the information that’s typically available—and to investigate the extent to which there’s any practical benefit to using &lt;span class=&#34;math inline&#34;&gt;\(S_{model}^2\)&lt;/span&gt; over &lt;span class=&#34;math inline&#34;&gt;\(s_{pF}^2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cluster-randomized-trials&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Cluster-randomized trials&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://doi.org/10.3102/1076998606298043&#34;&gt;Hedges (2007)&lt;/a&gt; addresses estimation of standardized mean differences for cluster-randomized trials, in which the units of measurement are nested within higher-level clusters that comprise the units of randomization. Such designs involve two variance components (within- and between-cluster variance), and thus there are three potential approaches to scaling the treatment effect: standardize by the total variance (i.e., the sum of the within- and between-cluster components), standardize by the within-cluster variance, or standardize by the between-cluster variance. Furthermore, some of the effect sizes can be estimated in several different ways, each with a different sampling variance. &lt;a href=&#34;http://doi.org/10.3102/1076998606298043&#34;&gt;Hedges (2007)&lt;/a&gt; gives sampling variance estimates for each estimator of each effect size, but they all follow the same general formula as given above. (The appendix of the article actually gives the same formula as above, but using a more abstract formulation.)&lt;/p&gt;
+&lt;p&gt;For example, suppose the target SMD parameter uses the total variance and that we have data from a two-level, two-arm cluster randomized trial with &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; clusters, &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; observations per cluster, and total sample sizes in each arm of &lt;span class=&#34;math inline&#34;&gt;\(N_T\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_C\)&lt;/span&gt;, respectively. Let &lt;span class=&#34;math inline&#34;&gt;\(\tau^2\)&lt;/span&gt; be the between-cluster variance, &lt;span class=&#34;math inline&#34;&gt;\(\sigma^2\)&lt;/span&gt; be the within-cluster variance, and &lt;span class=&#34;math inline&#34;&gt;\(\rho = \tau^2 / (\tau^2 + \sigma^2)\)&lt;/span&gt;. The target parameter is &lt;span class=&#34;math inline&#34;&gt;\(\delta = \left(\mu_T - \mu_C\right) / \left(\tau^2 + \sigma^2\right)\)&lt;/span&gt;. The article assumes that the treatment effect will be estimated by the difference in grand means, &lt;span class=&#34;math inline&#34;&gt;\(\bar{\bar{y}}_T - \bar{\bar{y}}_C\)&lt;/span&gt;. Letting &lt;span class=&#34;math inline&#34;&gt;\(S_B^2\)&lt;/span&gt; be the pooled sample variance of the cluster means within each arm and &lt;span class=&#34;math inline&#34;&gt;\(S_W^2\)&lt;/span&gt; be the pooled within-cluster sample variance, the total variance is estimated as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+S_{total}^2 = S_B^2 + \frac{n - 1}{n} S_W^2. 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;An estimate of the SMD is then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+d = \left(\bar{\bar{y}}_T - \bar{\bar{y}}_C \right) / \sqrt{S_{total}^2}. 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The scaled standard error of &lt;span class=&#34;math inline&#34;&gt;\(\bar{\bar{y}}_T - \bar{\bar{y}}_C\)&lt;/span&gt; is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+se_b = \left(\frac{N_C + N_T}{N_C N_T}\right)\left[1 + (n - 1)\rho\right].
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The appendix of the article demonstrates that &lt;span class=&#34;math inline&#34;&gt;\(\text{E}\left(S_{total}^2\right) = \tau^2 + \sigma^2\)&lt;/span&gt; and&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}\left( S_{total}^2 \right) = \frac{2}{n^2}\left(\frac{(n \tau^2 + \sigma^2)^2}{M - 2} + \frac{(n - 1)^2 \sigma^4}{N_C + N_T - M}\right),
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;by which it follows that&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\nu = \frac{n^2 M (M - 2)}{M[(n - 1)\rho + 1]^2 + (M - 2)(n - 1)(1 - \rho)^2}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituting &lt;span class=&#34;math inline&#34;&gt;\(se_b / S_{total}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt; into the formula for &lt;span class=&#34;math inline&#34;&gt;\(V_d\)&lt;/span&gt; gives the same as Expression (14) in the article.&lt;/p&gt;
+&lt;p&gt;A limitation of &lt;a href=&#34;http://doi.org/10.3102/1076998606298043&#34;&gt;Hedges (2007)&lt;/a&gt; is that it only covers the case where the treatment effect is estimated by the difference in grand means (although it does cover the case of unequal cluster sizes, which gets quite messy). In practice, every cluster-randomized trial I’ve ever seen uses baseline covariates to adjust the mean difference (often based on a hierarchical linear model) and improve the precision of the treatment effect estimate. The SMD estimate should also be based on this covariate-adjustment estimate, scaled by the total variance &lt;em&gt;without adjusting for the covariate&lt;/em&gt;. An advantage of the general formulation given above is that its clear how to estimate the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;. I would guess that it will often be possible to calculate the scaled standard error directly, given the standard error of the covariate-adjusted treatment effect estimate. And since &lt;span class=&#34;math inline&#34;&gt;\(S_{total}\)&lt;/span&gt; would be estimated just as before, its degrees of freedom remain the same.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://doi.org/10.3102/1076998610376617&#34;&gt;Hedges (2011)&lt;/a&gt; discusses estimation of SMDs in three-level cluster-randomized trials—an even more complicated case. However, the general approach is the same; all that’s needed are the scaled standard error and the degrees of freedom &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt; of whatever combination of variance components go into the denominator of the effect size. In both the two-level and three-level cases, the degrees of freedom get quite complicated in unbalanced samples and are probably not calculable from the information that is usually provided in an article. Hedges (2007, 2011) comments on a couple of cases where more tractable approximations can be used, although it seems like there might be room for further investigation here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;closing-thoughts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Closing thoughts&lt;/h3&gt;
+&lt;p&gt;I think this framework is useful in that it unifies a large number of cases that have been treated separately, and can also be applied (more-or-less immediately) to &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; estimators that haven’t been widely considered before, such as the &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; that involves scaling by the pooled pre-and-post, treatment-and-control sample variance. I hope it also illustrates that, while the point estimator &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; can be applied across a large number of study designs, the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; depends on the details of the design and estimation methods. The same is true for other families of effect sizes as well. For example, in other work I’ve demonstrated that the sampling variance of the correlation coefficient depends on the design from which the correlations are estimated (&lt;a href=&#34;http://doi.org/10.1037/a0033788&#34;&gt;Pustejovsky, 2014&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;If you have read this far, I’d love to get your feedback about whether you think this is a useful way to organize the calculations of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; estimators. Is this helpful? Or nothing you didn’t already know? Or still more complicated than it should be? Leave a comment!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;Borenstein, M. (2009). Effect sizes for continuous data. In H. M. Cooper, L. V Hedges, &amp;amp; J. C. Valentine (Eds.), The Handbook of Research Synthesis and Meta-Analysis (pp. 221–236). New York, NY: Russell Sage Foundation.&lt;/p&gt;
+&lt;p&gt;Feingold, A. (2009). Effect sizes for growth-modeling analysis for controlled clinical trials in the same metric as for classical analysis. Psychological Methods, 14(1), 43–53. &lt;a href=&#34;doi:10.1037/a0014699&#34; class=&#34;uri&#34;&gt;doi:10.1037/a0014699&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Feingold, A. (2015). Confidence interval estimation for standardized effect sizes in multilevel and latent growth modeling. Journal of Consulting and Clinical Psychology, 83(1), 157–168. &lt;a href=&#34;doi:10.1037/a0037721&#34; class=&#34;uri&#34;&gt;doi:10.1037/a0037721&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Gleser, L. J., &amp;amp; Olkin, I. (2009). Stochastically dependent effect sizes. In H. Cooper, L. V. Hedges, &amp;amp; J. C. Valentine (Eds.), The Handbook of Research Synthesis and Meta-Analysis (2nd ed., pp. 357–376). New York, NY: Russell Sage Foundation.&lt;/p&gt;
+&lt;p&gt;Hedges, L. V. (2007). Effect sizes in cluster-randomized designs. Journal of Educational and Behavioral Statistics, 32(4), 341–370. &lt;a href=&#34;doi:10.3102/1076998606298043&#34; class=&#34;uri&#34;&gt;doi:10.3102/1076998606298043&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hedges, L. V. (2011). Effect sizes in three-level cluster-randomized experiments. Journal of Educational and Behavioral Statistics, 36(3), 346–380. &lt;a href=&#34;doi:10.3102/1076998610376617&#34; class=&#34;uri&#34;&gt;doi:10.3102/1076998610376617&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Morris, S. B., &amp;amp; DeShon, R. P. (2002). Combining effect size estimates in meta-analysis with repeated measures and independent-groups designs. Psychological Methods, 7(1), 105–125. &lt;a href=&#34;doi:10.1037//1082-989X.7.1.105&#34; class=&#34;uri&#34;&gt;doi:10.1037//1082-989X.7.1.105&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pustejovsky, J. E. (2014). Converting from d to r to z when the design uses extreme groups, dichotomization, or experimental control. Psychological Methods, 19(1), 92–112. &lt;a href=&#34;doi:10.1037/a0033788&#34; class=&#34;uri&#34;&gt;doi:10.1037/a0033788&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pustejovsky, J. E., Hedges, L. V, &amp;amp; Shadish, W. R. (2014). Design-comparable effect sizes in multiple baseline designs: A general modeling framework. Journal of Educational and Behavioral Statistics, 39(5), 368–393. &lt;a href=&#34;doi:10.3102/1076998614547577&#34; class=&#34;uri&#34;&gt;doi:10.3102/1076998614547577&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Viechtbauer, W. (2007). Approximate confidence intervals for standardized effect sizes in the two-independent and two-dependent samples design. Journal of Educational and Behavioral Statistics, 32(1), 39–60. &lt;a href=&#34;doi:10.3102/1076998606298034&#34; class=&#34;uri&#34;&gt;doi:10.3102/1076998606298034&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The sampling distribution of sample variances</title>
+      <link>/distribution-of-sample-variances/</link>
+      <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/distribution-of-sample-variances/</guid>
+      <description>
+
+
+&lt;p&gt;A colleague and her students asked me the other day whether I knew of a citation that gives the covariance between the sample variances of two outcomes from a common sample. This sort of question comes up in meta-analysis problems occasionally. I didn’t know of a convenient reference that directly answers the question, but I was able to suggest some references that would help (listed below). While the students work on deriving it, I’ll provide the answer here so that they can check their work.&lt;/p&gt;
+&lt;p&gt;Suppose that we have a sample of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; observations &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{y}_1,...,\mathbf{y}_n\)&lt;/span&gt; from a &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-dimensional multivariate normal distribution with mean &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\mu\)&lt;/span&gt; and covariance &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\Sigma = \left[\sigma_{jk}\right]_{j,k=1,...,p}\)&lt;/span&gt;. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\bar{y}}\)&lt;/span&gt; denote the (multivariate) sample mean, with entries &lt;span class=&#34;math inline&#34;&gt;\(\bar{y}_1,...,\bar{y}_p\)&lt;/span&gt;. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{S}\)&lt;/span&gt; denote the sample covariance matrix, with entries &lt;span class=&#34;math inline&#34;&gt;\(\left[s_{jk}\right]_{j,k=1,...,p}\)&lt;/span&gt; where&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+s_{jk} = \frac{1}{n - 1}\sum_{i=1}^n (y_{ij} - \bar{y}_j)(y_{ik} - \bar{y}_k).
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Then &lt;span class=&#34;math inline&#34;&gt;\((n - 1)\mathbf{S}\)&lt;/span&gt; follows a Wishart distribution with &lt;span class=&#34;math inline&#34;&gt;\(n - 1\)&lt;/span&gt; degrees of freedom and scale matrix &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\Sigma\)&lt;/span&gt; (Searle, 2006, p. 352; Muirhead, 1982, p. 86; or any textbook on multivariate analysis).&lt;/p&gt;
+&lt;p&gt;The sampling covariance between two sample covariances, say &lt;span class=&#34;math inline&#34;&gt;\(s_{jk}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(s_{lm}\)&lt;/span&gt;, can then be derived from the properties of the Wishart distribution. Expressions for this are available in Searle (2006) or Muirhead (1982). The former is a bit hard to parse because it uses the &lt;span class=&#34;math inline&#34;&gt;\(\text{vec}\)&lt;/span&gt; and Kronecker product operators; Muirhead (1982, p. 90) gives the following simple expression:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Cov}\left(s_{jk}, s_{lm}\right) = \frac{\sigma_{jl}\sigma_{km} + \sigma_{jm}\sigma_{kl}}{n - 1}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For sample variances, this reduces to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Cov}\left(s_j^2, s_l^2\right) = \frac{2\sigma_{jl}^2}{n - 1}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The formula also reduces to the well-known result that the sampling variance of the sample variance is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}\left(s_j^2\right) = \frac{2 \sigma_{jj}^2}{n - 1}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;One application of this bit of distribution theory is to find the sampling variance of an average of sample variances. Suppose that we have a bivariate normal distribution where both measures have the same variance &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{11} = \sigma_{22} = \sigma^2\)&lt;/span&gt; and correlation &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt;. One estimate of this common variance is to take the simple average of the sample variances, &lt;span class=&#34;math inline&#34;&gt;\(s_{\bullet}^2 = \left(s_1^2 + s_2^2\right) / 2\)&lt;/span&gt;. Then using the above:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+\text{Var}\left(s_{\bullet}^2\right) &amp;amp;= \frac{1}{4}\left[\text{Var}\left(s_1^2\right) + \text{Var}\left(s_2^2\right) + 2\text{Cov}\left(s_1^2, s_2^2\right) \right] \\
+&amp;amp;= \frac{\sigma^4 \left(1 + \rho^2\right)}{n - 1}.
+\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To see that this is correct, consider the extreme cases. If the two measures are perfectly correlated, then averaging the sample variances has no benefit because &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}\left(s_{\bullet}^2\right) = \text{Var}\left(s_1^2\right) = \text{Var}\left(s_2^2\right)\)&lt;/span&gt;. If they are exactly uncorrelated, then averaging the sample variances is equivalent to pooling the sample variance from two independent samples.&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;Muirhead, R. J. (1982). Aspects of Multivariate Statistical Theory. New York, NY: John Wiley &amp;amp; Sons.&lt;/p&gt;
+&lt;p&gt;Searle, S. R. (2006). Matrix Algebra Useful for Statistics. Hoboken, NJ: John Wiley &amp;amp; Sons.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

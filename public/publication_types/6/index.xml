@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 | James E. Pustejovsky</title>
+    <link>/publication_types/6/</link>
+      <atom:link href="/publication_types/6/index.xml" rel="self" type="application/rss+xml" />
+    <description>6</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0600</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>6</title>
+      <link>/publication_types/6/</link>
+    </image>
+    
+    <item>
+      <title>Research synthesis and meta-analysis of single-case designs</title>
+      <link>/publication/meta-analysis-of-scd/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0600</pubDate>
+      <guid>/publication/meta-analysis-of-scd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing single-case designs: d, G, hierarchical models, Bayesian estimators, generalized additive models, and the hopes and fears of researchers about analyses</title>
+      <link>/publication/analyzing-scd-hopes-and-fears/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 -0500</pubDate>
+      <guid>/publication/analyzing-scd-hopes-and-fears/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

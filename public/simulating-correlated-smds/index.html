@@ -1,0 +1,1405 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James E. Pustejovsky">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="As I’ve discussed in previous posts, meta-analyses in psychology, education, and other areas often include studies that contribute multiple, statistically dependent effect size estimates.I’m interested in methods for meta-analyzing and meta-regressing effect sizes from data structures like this, and studying this sort of thing often entails conducting Monte Carlo simulations.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/simulating-correlated-smds/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/simulating-correlated-smds/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@jepusto">
+  <meta property="twitter:creator" content="@jepusto">
+  
+  <meta property="og:site_name" content="James E. Pustejovsky">
+  <meta property="og:url" content="/simulating-correlated-smds/">
+  <meta property="og:title" content="Simulating correlated standardized mean differences for meta-analysis | James E. Pustejovsky">
+  <meta property="og:description" content="As I’ve discussed in previous posts, meta-analyses in psychology, education, and other areas often include studies that contribute multiple, statistically dependent effect size estimates.I’m interested in methods for meta-analyzing and meta-regressing effect sizes from data structures like this, and studying this sort of thing often entails conducting Monte Carlo simulations."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-09-30T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-09-30T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/simulating-correlated-smds/"
+  },
+  "headline": "Simulating correlated standardized mean differences for meta-analysis",
+  
+  "datePublished": "2019-09-30T00:00:00Z",
+  "dateModified": "2019-09-30T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "James E. Pustejovsky"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "University of Texas at Austin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "As I’ve discussed in previous posts, meta-analyses in psychology, education, and other areas often include studies that contribute multiple, statistically dependent effect size estimates.\rI’m interested in methods for meta-analyzing and meta-regressing effect sizes from data structures like this, and studying this sort of thing often entails conducting Monte Carlo simulations."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Simulating correlated standardized mean differences for meta-analysis | James E. Pustejovsky</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Presentations</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#software"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/Pustejovsky-CV.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Topics</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Simulating correlated standardized mean differences for meta-analysis</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/authors/admin/">James E. Pustejovsky</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2019-09-30
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p>As I’ve discussed in <a href="/Sometimes-aggregating-effect-sizes-is-fine">previous posts</a>, meta-analyses in psychology, education, and other areas often include studies that contribute multiple, statistically dependent effect size estimates.
+I’m interested in methods for meta-analyzing and meta-regressing effect sizes from data structures like this, and studying this sort of thing often entails conducting Monte Carlo simulations.
+Monte Carlo simulations involve generating artificial data—in this case, a set of studies, each of which has one or more dependent effect size estimates—that follows a certain distributional model, applying different analytic methods to the artificial data, and then repeating the process a bunch of times.
+Because we know the true parameters that govern the data-generating process, we can evaluate the performance of the analytic methods in terms of bias, accuracy, hypothesis test calibration and power, confidence interval coverage, and the like.</p>
+<p>In this post, I’ll discuss two alternative methods to simulate meta-analytic datasets that include studies with multiple, dependent effect size estimates: simulating individual participant-level data or simulating summary statistics. I’ll focus on the case of the standardized mean difference (SMD) because it is so common in meta-analyses of intervention studies. For simplicity, I’ll assume that the effect sizes all come from simple, two-group comparisons (without any covariate adjustment or anything like that) and that the individual observations are multi-variate normally distributed within each group. Our goal will be to simulate a set of <span class="math inline">\(K\)</span> studies, where study <span class="math inline">\(k\)</span> is based on measuring <span class="math inline">\(J_k\)</span> outcomes on a sample of <span class="math inline">\(N_k\)</span> participants, all for <span class="math inline">\(k = 1,...,K\)</span>.
+Let <span class="math inline">\(\boldsymbol\delta_k = (\delta_{1k} \cdots \delta_{J_k k})&#39;\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vector of true standardized mean differences for study <span class="math inline">\(k\)</span>.
+I’ll assume that we know these true effect size parameters for all <span class="math inline">\(K\)</span> studies, so that I can avoid committing to any particular form of random effects model.</p>
+<div id="simulating-individual-participant-level-data" class="section level1">
+<h1>Simulating individual participant-level data</h1>
+<p>The most direct way to simulate this sort of effect size data is to generate outcome data for every artificial participant in every artificial study. Let <span class="math inline">\(\mathbf{Y}_{ik}^T\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vector of outcomes for treatment group participant <span class="math inline">\(i\)</span> in study <span class="math inline">\(k\)</span>, and let <span class="math inline">\(\mathbf{Y}_{ik}^C\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vector outcomes for control group participant <span class="math inline">\(i\)</span> in study <span class="math inline">\(k\)</span>, for <span class="math inline">\(i=1,...,N_k / 2\)</span> and <span class="math inline">\(k = 1,...,K\)</span>. Assuming multi-variate normality of the outcomes, we can generate these outcome vectors as
+<span class="math display">\[
+\mathbf{Y}_{ik}^T \sim N\left(\boldsymbol\delta_k, \boldsymbol\Psi_k\right) \qquad \text{and}\qquad \mathbf{Y}_{ik}^C \sim N\left(\mathbf{0}, \boldsymbol\Psi_k\right),
+\]</span>
+where <span class="math inline">\(\boldsymbol\Psi_k\)</span> is the population correlation matrix of the outcomes in study <span class="math inline">\(k\)</span>.
+Note that I am setting the mean outcomes of the control group participants to zero and also specifying that the outcomes all have unit variance within each group.
+After simulating data based on these distributions, the effect size estimates for each outcome can be calculated directly, following standard formulas.</p>
+<p>Here’s what this approach looks like in code.
+It is helpful to simplify things by focusing on simulating just a single study with multiple, correlated effect sizes.
+Focusing first on just the input parameters, a function might look like the following:</p>
+<pre class="r"><code>r_SMDs_raw &lt;- function(delta, J, N, Psi) {
+  # stuff
+  return(ES_data)  
+}</code></pre>
+<p>In the above function skeleton, <code>delta</code> would be the true effect size parameter <span class="math inline">\(\boldsymbol\delta_k\)</span>, <code>J</code> would be the number of effect sizes to generate <span class="math inline">\((J_k)\)</span>, <code>N</code> is the total number of participants <span class="math inline">\((N_k)\)</span>, and <code>Psi</code> is a matrix of correlations between the outcomes <span class="math inline">\((\Psi_k)\)</span>.
+From these parameters, we’ll generate raw data, calculate effect size estimates and standard errors, and return the results in a little dataset.</p>
+<p>To make the function a little bit easier to use, I’m going overload the <code>Psi</code> argument so that it can be a single number, indicating a common correlation between the outcomes. Thus, instead of having to feed in a <span class="math inline">\(J_k \times J_k\)</span> matrix, you can specify a single correlation <span class="math inline">\(r_k\)</span>, and the function will assume that all of the outcomes are equicorrelated. In code, the logic is:</p>
+<pre class="r"><code>if (!is.matrix(Psi)) Psi &lt;- Psi + diag(1 - Psi, nrow = J)</code></pre>
+<p>Here’s the function with the innards:</p>
+<pre class="r"><code>r_SMDs_raw &lt;- function(delta, J, N, Psi) {
+
+  require(mvtnorm) # for simulating multi-variate normal data
+  
+  # create Psi matrix assuming equicorrelation
+  if (!is.matrix(Psi)) Psi &lt;- Psi + diag(1 - Psi, nrow = J)
+  
+  # generate control group summary statistics
+  Y_C &lt;- rmvnorm(n = N / 2, mean = rep(0, J), sigma = Psi)
+  ybar_C &lt;- colMeans(Y_C)
+  sd_C &lt;- apply(Y_C, 2, sd)
+  
+  # generate treatment group summary statistics
+  delta &lt;- rep(delta, length.out = J)
+  Y_T &lt;- rmvnorm(n = N / 2, mean = delta, sigma = Psi)
+  ybar_T &lt;- colMeans(Y_T)
+  sd_T &lt;- apply(Y_T, 2, sd)
+
+  # calculate Cohen&#39;s d
+  sd_pool &lt;- sqrt((sd_C^2 + sd_T^2) / 2)
+  ES &lt;- (ybar_T - ybar_C) / sd_pool
+  
+  # calculate SE of d
+  SE &lt;- sqrt(4 / N + ES^2 / (2 * (N - 2)))
+
+  data.frame(ES = ES, SE = SE, N = N)
+
+}</code></pre>
+<p>In action:</p>
+<pre class="r"><code>delta &lt;- rnorm(4, mean = 0.2, sd = 0.1)
+r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = 0.6)</code></pre>
+<pre><code>## Loading required package: mvtnorm</code></pre>
+<pre><code>##           ES        SE  N
+## 1  0.2258267 0.3172870 40
+## 2  0.2904284 0.3179778 40
+## 3  0.2944114 0.3180259 40
+## 4 -0.2015085 0.3170714 40</code></pre>
+<p>Or if you’d rather specify the full <span class="math inline">\(\Psi_k\)</span> matrix yourself:</p>
+<pre class="r"><code>Psi_k &lt;- 0.6 + diag(0.4, nrow = 4)
+Psi_k</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]  1.0  0.6  0.6  0.6
+## [2,]  0.6  1.0  0.6  0.6
+## [3,]  0.6  0.6  1.0  0.6
+## [4,]  0.6  0.6  0.6  1.0</code></pre>
+<pre class="r"><code>r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = Psi_k)</code></pre>
+<pre><code>##          ES        SE  N
+## 1 0.4136328 0.3197674 40
+## 2 0.6730080 0.3255146 40
+## 3 0.5825111 0.3232100 40
+## 4 0.4974262 0.3213342 40</code></pre>
+<div id="exercises" class="section level2">
+<h2>Exercises</h2>
+<p>The function above is serviceable but quite basic. I can think of several additional features that one might like to have for use in research simulations, but I’m feeling both cheeky and lazy at the moment, so I’ll leave them for you, dear reader. Here are some suggested exercises:</p>
+<ol style="list-style-type: decimal">
+<li><p>Add an argument to the function, <code>Hedges_g = TRUE</code>, which controls where the simulated effect size is Hedges’ <span class="math inline">\(g\)</span> or Cohen’s <span class="math inline">\(d\)</span>. If it is Hedges’ g, make sure that the standard error is corrected too.</p></li>
+<li><p>Add an argument to the function, <code>p_val = TRUE</code>, which allows the user to control whether or not to return <span class="math inline">\(p\)</span>-values from the test of mean differences for each outcome. Note that the p-values should be for a test of the <em>raw</em> mean differences between groups, rather than a test of the effect size <span class="math inline">\(\delta_{jk} = 0\)</span>.</p></li>
+<li><p>Add an argument to the function, <code>corr_mat = FALSE</code>, which controls whether the function returns just the simulated effect sizes and SEs or both the simulated effect sizes and the full sampling variance-covariance matrix of the effect sizes. See <a href="/correlations-between-SMDs">here</a> for the relevant formulas.</p></li>
+</ol>
+</div>
+</div>
+<div id="simulating-summary-statistics" class="section level1">
+<h1>Simulating summary statistics</h1>
+<p>Another approach to simulating SMDs is to sample from the distribution of the <em>summary statistics</em> used in calculating the effect size. This approach should simplify the code, at the cost of having to use a bit of distribution theory. Let <span class="math inline">\(\mathbf{\bar{y}}_{Tk}\)</span> and <span class="math inline">\(\mathbf{\bar{y}}_{Ck}\)</span> be the <span class="math inline">\(J_k \times 1\)</span> vectors of sample means for the treatment and control groups, respectively. Let <span class="math inline">\(\mathbf{S}_k\)</span> be the <span class="math inline">\(J_k \times J_k\)</span> sample covariance matrix of the outcomes, pooled across the treatment and control groups. Again assuming multi-variate normality, and following the same notation as above:
+<span class="math display">\[
+\mathbf{\bar{y}}_{Ck} \sim N\left(\mathbf{0}, \frac{2}{N_k} \boldsymbol\Psi_k\right), \qquad \mathbf{\bar{y}}_{Tk} \sim N\left(\boldsymbol\delta_k, \frac{2}{N_k} \boldsymbol\Psi_k\right),
+\]</span>
+and
+<span class="math display">\[
+\left(\mathbf{\bar{y}}_{Tk} - \mathbf{\bar{y}}_{Ck}\right) \sim N\left(\boldsymbol\delta_k, \frac{4}{N_k} \boldsymbol\Psi_k\right).
+\]</span>
+This shows how we could directly simulate the numerator of the standardized mean difference.</p>
+<p>A <a href="/distribution-of-sample-variances">further bit of distribution theory</a> says that the pooled sample covariance matrix follows a multiple of a <a href="https://en.wikipedia.org/wiki/Wishart_distribution">Wishart distribution</a> with <span class="math inline">\(N_k - 2\)</span> degrees of freedom and scale matrix <span class="math inline">\(\Psi_k\)</span>:
+<span class="math display">\[
+(N_k - 2) \mathbf{S}_k \sim Wishart\left(N_k - 2, \Psi_k \right).
+\]</span>
+Thus, to simulate the denominators of the SMD estimates, we can simulate a single Wishart matrix, pull out the diagonal entries, divide by <span class="math inline">\(N_k - 2\)</span>, and take the square root. In all, we draw a single <span class="math inline">\(J_k \times 1\)</span> observation from a multi-variate normal distribution and a single <span class="math inline">\(J_k \times J_k\)</span> observation from a Wishart distribution. In contrast, the raw data approach requires simulating <span class="math inline">\(N_k\)</span> observations from a multi-variate normal distribution, then calculating <span class="math inline">\(4 J_k\)</span> summary statistics (M and SD for each group on each outcome).</p>
+<div id="exercises-1" class="section level2">
+<h2>Exercises</h2>
+<p>Once again, I’ll leave it to you, dear reader, to do the fun programming bits:</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Create a modified version of the function <code>r_SMDs_raw</code> that simulates summary statistics instead of raw data (Call it <code>r_SMDs_stats</code>).</li>
+<li>Use the <code>microbenchmark</code> package (or your preferred benchmarking tool) to compare the computational efficiency of both versions of the function.</li>
+<li>Check your work! Verify that both versions of the function generate the same distributions if the same parameters are used as input.</li>
+</ol>
+</div>
+</div>
+<div id="which-approach-is-better" class="section level1">
+<h1>Which approach is better?</h1>
+<p>Like many things in research, there’s no clearly superior method here. The advantage of the summary statistics approach is computational efficiency. It should generally be faster than the raw data approach, and if you need to generate 10,000 meta-analysis each with 80 studies in them, the computational savings might add up. On the other hand, computational efficiency isn’t everything.</p>
+<p>I see two potential advantages of the raw data approach. First is interpretability: simulating raw data is likely easier to understand. It feels tangible and familiar, harkening back to those bygone days we spent learning ANOVA, whereas the summary statistics approach requires a bit of distribution theory to follow (bookmark this blog post!). Second is extensibility: it is relatively straightforward to extend the approach to use other distributional models for the raw dat (perhaps you want to look at outcomes that follow a <a href="https://en.wikipedia.org/wiki/Multivariate_t-distribution">multi-variate <span class="math inline">\(t\)</span> distribution</a>?) or more complicated estimators of the SMD (difference-in-differences? covariate-adjusted? cluster-randomized trial?). To use the summary statistics approach in more complicated scenarios, you’d have to work out the sampling distributions for yourself, or locate the right reference.</p>
+<p>Of course, there’s also no need to choose between these two approaches. As I’m trying to hint at in Exercise 6, it’s actually useful to write both. Then, you can use the (potentially slower) raw data version to verify that the summary statistics version is correct.</p>
+</div>
+<div id="simulating-full-meta-analyses" class="section level1">
+<h1>Simulating full meta-analyses</h1>
+<p>So far we’ve got a data-generating function that simulates a single study’s worth of effect size estimates. To study meta-analytic methods, we’ll need to build out the function to simulate multiple studies. To do so, I think it’s useful to use the technique of <a href="https://r4ds.had.co.nz/iteration.html">mapping</a>, as implemented in the <code>purrr</code> package’s <code>map_*</code> functions. The idea here is to first generate a “menu” of study-specific parameters for each of <span class="math inline">\(K\)</span> studies, then apply the <code>r_SMDs</code> function to each parameter set.</p>
+<p>Let’s consider how to do this for a simple random effects model, where the true effect size parameter is constant within each study (i.e., <span class="math inline">\(\boldsymbol\delta_k = (\delta_k \cdots \delta_k)&#39;\)</span>), and in a model without covariates. We’ll need to generate a true effect for each study, along with a sample size, an outcome dimension, and a correlation between outcomes. For the true effects, I’ll assume that
+<span class="math display">\[
+\delta_k \sim N(\mu, \tau^2),
+\]</span>
+<span class="math display">\[
+J_k \sim 2 + Poisson(3),
+\]</span>
+<span class="math display">\[
+N_k \sim 20 + 2 \times Poisson(10),
+\]</span>
+and
+<span class="math display">\[
+r_k \sim Beta\left(\rho \nu, (1 - \rho)\nu\right),
+\]</span>
+where <span class="math inline">\(\rho = \text{E}(r_k)\)</span> and <span class="math inline">\(\nu &gt; 0\)</span> controls the variability of <span class="math inline">\(r_k\)</span> across studies, with smaller <span class="math inline">\(\nu\)</span> corresponding to more variable correlations.
+Specifically, <span class="math inline">\(\text{Var}(r_k) = \rho (1 - \rho) / (1 + \nu)\)</span>.
+These distributions are just made up, without any particular justification.</p>
+<p>Here’s what these distributional models look like in R code:</p>
+<pre class="r"><code>K &lt;- 6
+mu &lt;- 0.2
+tau &lt;- 0.05
+J_mean &lt;- 5
+N_mean &lt;- 45
+rho &lt;- 0.6
+nu &lt;- 39
+
+study_data &lt;- 
+  data.frame(
+    delta = rnorm(K, mean = mu, sd = tau),
+    J = 2 + rpois(K, J_mean - 2),
+    N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+    Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+  )
+
+study_data</code></pre>
+<pre><code>##       delta J  N       Psi
+## 1 0.1894240 9 50 0.5112511
+## 2 0.1523343 3 44 0.6584239
+## 3 0.2478227 5 38 0.5442388
+## 4 0.1530779 5 46 0.5338198
+## 5 0.2557257 6 48 0.6635501
+## 6 0.3111021 3 34 0.7598409</code></pre>
+<p>Once we have the “menu” of study-level characteristics, it’s just a matter of mapping the parameters to the data-generating function. One way to do this is with <code>pmap_df</code>:</p>
+<pre class="r"><code>library(purrr)
+meta_data &lt;- pmap_df(study_data, r_SMDs_raw, .id = &quot;study&quot;)
+meta_data</code></pre>
+<pre><code>##    study            ES        SE  N
+## 1      1  0.0838982347 0.2829723 50
+## 2      1  0.3131093912 0.2846423 50
+## 3      1  0.2032941211 0.2836027 50
+## 4      1  0.1462363557 0.2832362 50
+## 5      1 -0.0841477323 0.2829731 50
+## 6      1  0.0008988422 0.2828427 50
+## 7      1  0.1703249176 0.2833764 50
+## 8      1 -0.1645178447 0.2833407 50
+## 9      1  0.0527563306 0.2828940 50
+## 10     2  0.4031344135 0.3047028 44
+## 11     2  0.3437062486 0.3038346 44
+## 12     2  0.2525668139 0.3027681 44
+## 13     3  0.8555648807 0.3397495 38
+## 14     3  0.3502132641 0.3270575 38
+## 15     3  0.1662112740 0.3250336 38
+## 16     3  0.7294206056 0.3356379 38
+## 17     3  0.3447478812 0.3269769 38
+## 18     4  0.3773615530 0.2976151 46
+## 19     4  0.4328885816 0.2984727 46
+## 20     4  0.2244493715 0.2958530 46
+## 21     4  0.3393561858 0.2970946 46
+## 22     4  0.5140631756 0.2999325 46
+## 23     5  0.0717846618 0.2887721 48
+## 24     5  0.3179642994 0.2905723 48
+## 25     5  0.3444123920 0.2908998 48
+## 26     5  0.5411105342 0.2941359 48
+## 27     5  0.2431480980 0.2897860 48
+## 28     5  0.1627009191 0.2891731 48
+## 29     6  0.2959281618 0.3449861 34
+## 30     6 -0.1153519889 0.3433001 34
+## 31     6  0.5503107844 0.3498270 34</code></pre>
+<pre class="r"><code>table(meta_data$study)</code></pre>
+<pre><code>## 
+## 1 2 3 4 5 6 
+## 9 3 5 5 6 3</code></pre>
+<p>Putting it all together into a function, we have</p>
+<pre class="r"><code>r_meta &lt;- function(K, mu, tau, J_mean, N_mean, rho, nu) {
+  require(purrr)
+  
+  study_data &lt;- 
+    data.frame(
+      delta = rnorm(K, mean = mu, sd = tau),
+      J = 2 + rpois(K, J_mean - 2),
+      N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+      Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+    )
+  
+  pmap_df(study_data, r_SMDs_raw, .id = &quot;study&quot;)
+}</code></pre>
+<div id="exercises-2" class="section level2">
+<h2>Exercises</h2>
+<ol start="7" style="list-style-type: decimal">
+<li><p>Modify <code>r_meta</code> so that it uses <code>r_SMDs_stats</code>.</p></li>
+<li><p>Add options to <code>r_meta</code> for <code>Hedges_g</code>, <code>p_val = TRUE</code>, and <code>corr_mat = FALSE</code> and ensure that these get passed along to the <code>r_SMDs</code> function.</p></li>
+<li><p>One way to check that the <code>r_meta</code> function is working properly is to generate a very large meta-analytic dataset, then to verify that the generated distributions align with expectations. Here’s a very large meta-analytic dataset:</p>
+<pre class="r"><code>meta_data &lt;- 
+  r_meta(100000, mu = 0.2, tau = 0.05, 
+         J_mean = 5, N_mean = 40, 
+         rho = 0.6, nu = 39)</code></pre>
+<p>Compare the distribution of the simulated dataset against what you would expect to get based on the input parameters.</p></li>
+<li><p>Modify the <code>r_meta</code> function so that <span class="math inline">\(J_k\)</span> and <span class="math inline">\(N_k\)</span> are correlated, according to
+<span class="math display">\[
+\begin{align}
+J_k &amp;\sim 2 + Poisson(\mu_J - 2) \\
+N_k &amp;\sim 20 + 2 \times Poisson\left(\frac{1}{2}(\mu_N - 20) + \alpha (J_k - \mu_J) \right)
+\end{align}
+\]</span>
+for user-specified values of <span class="math inline">\(\mu_J\)</span> (the average number of outcomes per study), <span class="math inline">\(\mu_N\)</span> (the average total sample size per study), and <span class="math inline">\(\alpha\)</span>, which controls the degree of dependence between <span class="math inline">\(J_k\)</span> and <span class="math inline">\(N_k\)</span>.</p></li>
+</ol>
+</div>
+<div id="a-challenge" class="section level2">
+<h2>A challenge</h2>
+<p>The meta-analytic model that we’re using here is quite simple—simplistic, even—and for some simulation studies, something more complex might be needed. For example, we might need to generate data from a model that includes within-study random effects, as in:
+<span class="math display">\[
+\delta_{jk} = \mu + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2).
+\]</span>
+Even more complex would be to simulate from a multi-level meta-regression model
+<span class="math display">\[
+\delta_{jk} = \mathbf{x}_{jk} \boldsymbol\beta + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2),
+\]</span>
+where <span class="math inline">\(\mathbf{x}_{jk}\)</span> is a <span class="math inline">\(1 \times p\)</span> row-vector of covariates describing outcome <span class="math inline">\(j\)</span> in study <span class="math inline">\(k\)</span> and <span class="math inline">\(\boldsymbol\beta\)</span> is a <span class="math inline">\(p \times 1\)</span> vector of meta-regression coefficients. In past work, I’ve done this by writing a data-generating function that takes a fixed design matrix <span class="math inline">\(\mathbf{X} = \left(\mathbf{x}_{11}&#39; \cdots \mathbf{x}_{J_K K}&#39;\right)&#39;\)</span> as an input argument, along with <span class="math inline">\(\boldsymbol\beta\)</span>. The design matrix would also include an identifier for each unique study. There are surely better (simpler, easier to follow) ways to implement the multi-level meta-regression model. I’ll once again leave it to you to work out an approach.</p>
+</div>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/effect-sizes/">effect sizes</a>
+  
+  <a class="badge badge-light" href="/tags/meta-analysis/">meta-analysis</a>
+  
+  <a class="badge badge-light" href="/tags/simulation/">simulation</a>
+  
+  <a class="badge badge-light" href="/tags/programming/">programming</a>
+  
+  <a class="badge badge-light" href="/tags/distribution-theory/">distribution theory</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/simulating-correlated-smds/&amp;text=Simulating%20correlated%20standardized%20mean%20differences%20for%20meta-analysis" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/simulating-correlated-smds/&amp;t=Simulating%20correlated%20standardized%20mean%20differences%20for%20meta-analysis" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Simulating%20correlated%20standardized%20mean%20differences%20for%20meta-analysis&amp;body=/simulating-correlated-smds/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/simulating-correlated-smds/&amp;title=Simulating%20correlated%20standardized%20mean%20differences%20for%20meta-analysis" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Simulating%20correlated%20standardized%20mean%20differences%20for%20meta-analysis%20/simulating-correlated-smds/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/simulating-correlated-smds/&amp;title=Simulating%20correlated%20standardized%20mean%20differences%20for%20meta-analysis" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu5c52b2b2df652bbfa34fe5ba8e97c2ca_630045_270x270_fill_q90_lanczos_center.jpg" alt="James E. Pustejovsky">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">James E. Pustejovsky</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pusto@austin.utexas.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=vrPDTgsAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/variance-of-r-in-two-level-design/">Sampling variance of Pearson r in a two-level design</a></li>
+      
+      <li><a href="/alternative-formulas-for-the-smd/">Alternative formulas for the standardized mean difference</a></li>
+      
+      <li><a href="/sometimes-aggregating-effect-sizes-is-fine/">Sometimes, aggregating effect sizes is fine</a></li>
+      
+      <li><a href="/converting-odds-ratios-to-standardized-mean-differences/">Converting from odds ratios to standardized mean differences: What to do with logistic regression coefficients?</a></li>
+      
+      <li><a href="/package-downloads/">CRAN downloads of my packages</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

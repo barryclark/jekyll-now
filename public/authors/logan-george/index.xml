@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logan George | James E. Pustejovsky</title>
+    <link>/authors/logan-george/</link>
+      <atom:link href="/authors/logan-george/index.xml" rel="self" type="application/rss+xml" />
+    <description>Logan George</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 10 Aug 2015 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Logan George</title>
+      <link>/authors/logan-george/</link>
+    </image>
+    
+    <item>
+      <title>A meta-analytic approach to examine the relationship between religion/spirituality and mental health in cancer</title>
+      <link>/publication/religion-spirituality-mental-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 -0500</pubDate>
+      <guid>/publication/religion-spirituality-mental-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A meta-analytic review of religious or spiritual involvement and social health among cancer patients</title>
+      <link>/publication/religion-spirituality-social-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 -0500</pubDate>
+      <guid>/publication/religion-spirituality-social-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Religion, spirituality, and physical health in cancer patients: A meta-analysis</title>
+      <link>/publication/religion-spirituality-physical-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 -0500</pubDate>
+      <guid>/publication/religion-spirituality-physical-health/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

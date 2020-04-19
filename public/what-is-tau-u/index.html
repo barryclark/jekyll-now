@@ -1,0 +1,1240 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James E. Pustejovsky">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Parker, Vannest, Davis, and Sauber (2011) proposed the Tau-U index—actually several indices, rather—as effect size measures for single-case designs. The original paper describes several different indices that involve corrections for trend during the baseline phase, treatment phase, both phases, or neither phase.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/what-is-tau-u/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/what-is-tau-u/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@jepusto">
+  <meta property="twitter:creator" content="@jepusto">
+  
+  <meta property="og:site_name" content="James E. Pustejovsky">
+  <meta property="og:url" content="/what-is-tau-u/">
+  <meta property="og:title" content="What is Tau-U? | James E. Pustejovsky">
+  <meta property="og:description" content="Parker, Vannest, Davis, and Sauber (2011) proposed the Tau-U index—actually several indices, rather—as effect size measures for single-case designs. The original paper describes several different indices that involve corrections for trend during the baseline phase, treatment phase, both phases, or neither phase."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2016-11-03T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2016-11-03T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/what-is-tau-u/"
+  },
+  "headline": "What is Tau-U?",
+  
+  "datePublished": "2016-11-03T00:00:00Z",
+  "dateModified": "2016-11-03T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "James E. Pustejovsky"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "University of Texas at Austin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Parker, Vannest, Davis, and Sauber (2011) proposed the Tau-U index—actually several indices, rather—as effect size measures for single-case designs. The original paper describes several different indices that involve corrections for trend during the baseline phase, treatment phase, both phases, or neither phase."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>What is Tau-U? | James E. Pustejovsky</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Presentations</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#software"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/Pustejovsky-CV.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Topics</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>What is Tau-U?</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/authors/admin/">James E. Pustejovsky</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2016-11-03
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p><a href="http://dx.doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, and Sauber (2011)</a> proposed the Tau-U index—actually several indices, rather—as effect size measures for single-case designs. The original paper describes several different indices that involve corrections for trend during the baseline phase, treatment phase, both phases, or neither phase. Without correcting for trends in either phase, the index is equal to the Mann-Whitney <span class="math inline">\(U\)</span> statistic calculated by comparing every pair of observations containing one point from each phase, scaled by the total number of such pairs. This version, which I’ll call just “Tau”, is simply a <a href="/NAP-SEs-and-CIs">linear re-scaling of the NAP statistic</a> to the range [-1,1].</p>
+<p>To correct for baseline trend, the original paper proposes to calculate Kendall’s rank correlation (<span class="math inline">\(\tau_A\)</span>) between the phase A outcome data and the session numbers and use the result to make an adjustment to Tau. The other analyses presented in the original paper (incorporating adjustments for time trends during the treatment phase) are not presented in subsequent review papers, nor are they implemented in <a href="http://singlecaseresearch.org/calculators">the web-calculator</a> created by the authors, and so I won’t discuss them further here. Instead, in this post I will examine the calculation of the version of Tau-U that incorporates a baseline trend correction. This version seems to be the most widely applied in practice (likely due to the availability of the web-calculator) and is presented in several review papers by the same authors. It turns out though, that the definition of the index has shifted from the original paper to subsequent presentations.</p>
+<p>To make this concrete, let me first define a couple of things. Suppose that we have data from the baseline and treatment phases for a single case, where the baseline phase has <span class="math inline">\(m\)</span> observations and treatment phase has <span class="math inline">\(n\)</span> observations. Let <span class="math inline">\(y^A_1,...,y^A_m\)</span> denote the baseline phase data and <span class="math inline">\(y^B_1,...,y^B_n\)</span> denote the treatment phase data. Let <span class="math inline">\(S_P\)</span> denote Kendall’s S statistic calculated for the comparison between phases and <span class="math inline">\(S_A\)</span> denote Kendall’s S statistic calculated on the baseline trend. More precisely,</p>
+<p><span class="math display">\[
+\begin{aligned}
+S_P &amp;= \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j &gt; y^A_i\right) - I\left(y^B_j &lt; y^A_i\right)\right] \\
+S_A &amp;= \sum_{i=1}^{m - 1} \sum_{j = i + 1}^m \left[I\left(y^A_j &gt; y^A_i\right) - I\left(y^A_j &lt; y^A_i\right)\right].
+\end{aligned}
+\]</span></p>
+<p>Note that <span class="math inline">\(S_P\)</span> is calculated from <span class="math inline">\(m \times n\)</span> pairs of observations, and Tau (without trend correction) is equal to <span class="math inline">\(\text{Tau} = S_P / (m n)\)</span>. Furthermore, <span class="math inline">\(S_A\)</span> is calculated from <span class="math inline">\(m (m - 1) / 2\)</span> pairs of observations and Kendall’s rank correlation coefficient for the baseline phase observations is <span class="math inline">\(t_A = S_A / [m (m - 1) / 2]\)</span>.</p>
+<div id="the-original-version" class="section level2">
+<h2>The original version</h2>
+<p>In the original paper, the authors explain that values of Tau-U can be calculated by adding or substracting values of <span class="math inline">\(\tau\)</span>, weighted by the corresponding number of pairs. Thus, Tau-U would be calculated as</p>
+<p><span class="math display">\[
+\text{Tau-U} = \frac{S_P - S_A}{mn + m(m - 1) / 2} = \frac{2n}{2n + m - 1} \text{Tau} - \frac{m - 1}{2n + m - 1} t_A.
+\]</span></p>
+<p>Both <span class="math inline">\(\text{Tau}\)</span> and <span class="math inline">\(t_A\)</span> have range [-1,1], and so Tau-U has the same range. This version of Tau-U can be calculated using <a href="https://manolov.shinyapps.io/Overlap/">this web app by Rumen Manolov</a>, which is based on <a href="https://dl.dropboxusercontent.com/u/2842869/Tau_U.R">this R code by Kevin Tarlow</a>. (The app and the R script also provide the other variants of Tau-U described in <a href="http://dx.doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, and Sauber (2011)</a>.)</p>
+</div>
+<div id="the-revised-version" class="section level2">
+<h2>The revised (?) version</h2>
+<p><a href="http://dx.doi.org/10.1177/0145445511399147">Parker, Vannest, and Davis (2011)</a> reviewed nine different non-overlap indices for use with data from single-case designs, including Tau-U. Rather than describing all four variations from the original paper, the authors define the index as follows:</p>
+<blockquote>
+<p>Tau-U (Parker et al., in press) extends [Tau] to control for undesirable positive baseline trend (monotonic trend). Monotonic trend is the upward progression of data points in any configuration, whether linear, curvilinear, or even in a mixed pattern of “fits and starts” (p. 11).</p>
+</blockquote>
+<p>In this and subsequent review articles, Tau-U seems to refer exclusively to the variant involving comparison between phases A and B, with an adjustment for phase A trend. That seems a sensible enough choice, which could have been due to space limitations, guidance from the journal editor, or further refinement of the methods (i.e., recognizing which of the variants would be most useful in application). However, the presentation of Tau-U in this article involved more than a change in emphasis—the definition of the index also changed. Following the notation above, Tau-U was now defined as</p>
+<p><span class="math display">\[
+\text{Tau-U} = \frac{S_P - S_A}{mn} = \text{Tau} - \frac{m - 1}{2n} t_A.
+\]</span></p>
+<p>The logical range of this version of the index is from <span class="math inline">\(-(2n + m - 1) / (2n)\)</span> to <span class="math inline">\((2n + m - 1) / (2n)\)</span>.</p>
+<p>This is the version of Tau-U implemented in the <a href="http://singlecaseresearch.org/calculators">singlecaseresearch.org</a> web calculator. It is also the version described in a later chapter by the same authors (<a href="http://dx.doi.org/10.1037/14376-005">Parker, Vannest, &amp; Davis, 2014</a>) and a review article by <a href="http://dx.doi.org/10.1111/1467-8578.12091">Rakap (2015)</a>. <a href="/Tau-U">My previous post about Tau-U</a> also presented this version of the index and noted that its magnitude is sensitive to the lengths of the baseline and treatment phases, which makes it rather difficult to interpret the Tau-U index as a measure of treatment effect magnitude.</p>
+</div>
+<div id="comparison" class="section level2">
+<h2>Comparison</h2>
+<p>Here is an R function for calculating the original or revised versions of Tau-U:</p>
+<pre class="r"><code>Tau_U &lt;- function(A_data, B_data, version = &quot;revised&quot;) {
+    m &lt;- length(A_data)
+    n &lt;- length(B_data)
+    Q_A &lt;- sapply(A_data, function(j) (j &gt; A_data) - (j &lt; A_data))
+    Q_P &lt;- sapply(B_data, function(j) (j &gt; A_data) - (j &lt; A_data))
+    
+    if (version==&quot;original&quot;) {
+      (sum(Q_P) - sum(Q_A[upper.tri(Q_A)])) / (m * n + m * (m - 1) / 2)
+    } else {
+      (sum(Q_P) - sum(Q_A[upper.tri(Q_A)])) / (m * n)
+    }
+}</code></pre>
+<p>The papers I’ve mentioned above all provide examples of the calculation of Tau-U. The following table reports the data from each of these examples (<a href="http://dx.doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, and Sauber, 2011a</a>; <a href="http://dx.doi.org/10.1177/0145445511399147">Parker, Vannest, and Davis, 2011b</a>; <a href="http://dx.doi.org/10.1037/14376-005">Parker, Vannest, &amp; Davis, 2014</a>), along with the value of Tau-U based on the original and revised formulas. The differences in magnitude are non-trivial.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Source</th>
+<th align="left">Phase A data</th>
+<th align="left">Phase B data</th>
+<th align="right">original</th>
+<th align="right">revised</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2011a, Figure 2</td>
+<td align="left">2, 3, 5, 3</td>
+<td align="left">4, 5, 5, 7, 6</td>
+<td align="right">0.5000000</td>
+<td align="right">0.6500000</td>
+</tr>
+<tr class="even">
+<td align="left">2011b, Figure 1</td>
+<td align="left">20, 20, 26, 25, 22, 23</td>
+<td align="left">28, 25, 24, 27, 30, 30, 29</td>
+<td align="right">0.5438596</td>
+<td align="right">0.7380952</td>
+</tr>
+<tr class="odd">
+<td align="left">2011b, Table 1</td>
+<td align="left">3, 3, 4, 5</td>
+<td align="left">4, 5, 6, 7, 7</td>
+<td align="right">0.4230769</td>
+<td align="right">0.5500000</td>
+</tr>
+<tr class="even">
+<td align="left">2014, Figure 4.1</td>
+<td align="left">22, 21, 23, 23, 23, 22</td>
+<td align="left">24, 22, 23, 23, 24, 26, 25</td>
+<td align="right">0.4385965</td>
+<td align="right">0.5952381</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="implications" class="section level2">
+<h2>Implications</h2>
+<p>Rather than one effect size index called “Tau-U”, there are instead two different definitions, which can lead to quite different values of the index. Given this, researchers who apply Tau-U should endeavor to <strong>be clear and unambiguous about which version of the index they use</strong>. This can be done by stating exactly which software routine, web-app, or formula was used in making the calculations. If the calculations are done using a computer script, then the script should be made available (e.g., through the <a href="https://osf.io/">Open Science Framework</a>) so that other researchers can replicate the calculations.</p>
+<p>Furthermore, researchers need to <strong>be careful about applying interpretive guidelines for Tau-U</strong>, since those guidelines will not apply uniformly across the different versions of the index.</p>
+<p>Finally, I would recommend that any researchers who conduct a meta-analysis of single-case research <strong>make available the raw data used for effect size calculations</strong>, so that other researchers can scrutinize, replicate, and extend their analyses. The whole enterprise of research synthesis rests on the availability of data from primary studies (at least in summary form). It seems to me that meta-analysts thus have a duty to make the data that they assemble and organize readily accessible for others to use. Particularly in the context of meta-analysis of single-case research—where new methods are developing rapidly and there is not currently consensus around best practices—it seems especially appropriate and prudent to make one’s data available for future re-analysis.</p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/effect-sizes/">effect sizes</a>
+  
+  <a class="badge badge-light" href="/tags/single-case-research/">single-case research</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/what-is-tau-u/&amp;text=What%20is%20Tau-U?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/what-is-tau-u/&amp;t=What%20is%20Tau-U?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=What%20is%20Tau-U?&amp;body=/what-is-tau-u/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/what-is-tau-u/&amp;title=What%20is%20Tau-U?" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=What%20is%20Tau-U?%20/what-is-tau-u/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/what-is-tau-u/&amp;title=What%20is%20Tau-U?" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu5c52b2b2df652bbfa34fe5ba8e97c2ca_630045_270x270_fill_q90_lanczos_center.jpg" alt="James E. Pustejovsky">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">James E. Pustejovsky</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pusto@austin.utexas.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=vrPDTgsAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/scd-effect-size-sensitivities/">New working paper: Procedural sensitivities of SCD effect sizes</a></li>
+      
+      <li><a href="/tau-u/">Tau-U</a></li>
+      
+      <li><a href="/nap-ses-and-cis/">Standard errors and confidence intervals for NAP</a></li>
+      
+      <li><a href="/sped-pro-sem-again/">Special Education Pro-Sem</a></li>
+      
+      <li><a href="/design-comparable-effect-sizes-in-multiple-baseline-designs/">New article: Design-comparable effect sizes in multiple baseline designs: A general modeling framework</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

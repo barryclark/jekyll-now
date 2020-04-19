@@ -1,0 +1,1350 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James E. Pustejovsky">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A colleague recently asked me about how to apply cluster-robust hypothesis tests and confidence intervals, as calculated with the clubSandwich package, when dealing with multiply imputed datasets.Standard methods (i.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/mi-with-clubsandwich/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/mi-with-clubsandwich/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@jepusto">
+  <meta property="twitter:creator" content="@jepusto">
+  
+  <meta property="og:site_name" content="James E. Pustejovsky">
+  <meta property="og:url" content="/mi-with-clubsandwich/">
+  <meta property="og:title" content="Pooling clubSandwich results across multiple imputations | James E. Pustejovsky">
+  <meta property="og:description" content="A colleague recently asked me about how to apply cluster-robust hypothesis tests and confidence intervals, as calculated with the clubSandwich package, when dealing with multiply imputed datasets.Standard methods (i."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2017-09-27T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2017-09-27T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/mi-with-clubsandwich/"
+  },
+  "headline": "Pooling clubSandwich results across multiple imputations",
+  
+  "datePublished": "2017-09-27T00:00:00Z",
+  "dateModified": "2017-09-27T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "James E. Pustejovsky"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "University of Texas at Austin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "A colleague recently asked me about how to apply cluster-robust hypothesis tests and confidence intervals, as calculated with the clubSandwich package, when dealing with multiply imputed datasets.\rStandard methods (i."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Pooling clubSandwich results across multiple imputations | James E. Pustejovsky</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Presentations</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#software"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/Pustejovsky-CV.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Topics</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Pooling clubSandwich results across multiple imputations</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/authors/admin/">James E. Pustejovsky</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2017-09-27
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p>A colleague recently asked me about how to apply cluster-robust hypothesis tests and confidence intervals, as calculated with the <a href="https://CRAN.R-project.org/package=clubSandwich">clubSandwich package</a>, when dealing with multiply imputed datasets.
+Standard methods (i.e., Rubin’s rules) for pooling estimates from multiple imputed datasets are developed under the assumption that the full-data estimates are approximately normally distributed. However, this might not be reasonable when working with test statistics based on cluster-robust variance estimators, which can be imprecise when the number of clusters is small or the design matrix of predictors is unbalanced in certain ways. <a href="https://doi.org/10.1093/biomet/86.4.948">Barnard and Rubin (1999)</a> proposed a small-sample correction for tests and confidence intervals based on multiple imputed datasets. In this post, I’ll show how to implement their technique using the output of <code>clubSandwich</code>, with multiple imputations generated using the <a href="https://cran.r-project.org/package=mice"><code>mice</code> package</a>.</p>
+<div id="setup" class="section level3">
+<h3>Setup</h3>
+<p>To begin, let me create missingness in a dataset containing multiple clusters of observations:</p>
+<pre class="r"><code>library(mlmRev)
+library(mice)
+library(dplyr)
+
+data(bdf)
+
+bdf &lt;- bdf %&gt;%
+  select(schoolNR, IQ.verb, IQ.perf, sex, ses, langPRET, aritPRET, aritPOST) %&gt;%
+  mutate(
+    schoolNR = factor(schoolNR),
+    sex = as.numeric(sex)
+    ) %&gt;%
+  filter(as.numeric(schoolNR) &lt;= 30) %&gt;%
+  droplevels()
+
+bdf_missing &lt;- 
+  bdf %&gt;% 
+  select(-schoolNR) %&gt;%
+  ampute(run = TRUE)
+
+bdf_missing &lt;- 
+  bdf_missing$amp %&gt;%
+  mutate(schoolNR = bdf$schoolNR)
+
+summary(bdf_missing)</code></pre>
+<pre><code>##     IQ.verb         IQ.perf            sex             ses       
+##  Min.   : 4.00   Min.   : 5.333   Min.   :1.000   Min.   :10.00  
+##  1st Qu.:10.50   1st Qu.: 9.333   1st Qu.:1.000   1st Qu.:20.00  
+##  Median :11.50   Median :10.667   Median :1.000   Median :27.50  
+##  Mean   :11.68   Mean   :10.737   Mean   :1.472   Mean   :28.51  
+##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:37.00  
+##  Max.   :18.00   Max.   :16.667   Max.   :2.000   Max.   :50.00  
+##  NA&#39;s   :36      NA&#39;s   :42       NA&#39;s   :40      NA&#39;s   :37     
+##     langPRET        aritPRET       aritPOST        schoolNR  
+##  Min.   :15.00   Min.   : 1.0   Min.   : 2.00   40     : 35  
+##  1st Qu.:29.00   1st Qu.: 9.0   1st Qu.:12.00   54     : 31  
+##  Median :34.00   Median :11.0   Median :18.00   55     : 30  
+##  Mean   :33.79   Mean   :11.6   Mean   :17.74   38     : 28  
+##  3rd Qu.:39.00   3rd Qu.:14.0   3rd Qu.:23.00   1      : 25  
+##  Max.   :48.00   Max.   :20.0   Max.   :30.00   18     : 24  
+##  NA&#39;s   :38      NA&#39;s   :41     NA&#39;s   :34      (Other):354</code></pre>
+<p>Now I’ll use <code>mice</code> to create 10 multiply imputed datasets:</p>
+<pre class="r"><code>Impute_bdf &lt;- mice(bdf_missing, m=10, meth=&quot;norm.nob&quot;, seed=24)</code></pre>
+<p>Am I imputing while ignoring the hierarchical structure of the data? Yes, yes I am. Is this is a good way to do imputation? Probably not. But this is a quick and dirty example, so we’re going to have to live with it.</p>
+</div>
+<div id="model" class="section level3">
+<h3>Model</h3>
+<p>Suppose that the goal of our analysis is to estimate the coefficients of the following regression model:</p>
+<p><span class="math display">\[
+\text{aritPOST}_{ij} = \beta_0 + \beta_1 \text{aritPRET}_{ij} + \beta_2 \text{langPRET}_{ij} + \beta_3 \text{sex}_{ij} + \beta_4 \text{SES}_{ij} + e_{ij},
+\]</span></p>
+<p>where <span class="math inline">\(i\)</span> indexes students and <span class="math inline">\(j\)</span> indexes schools, and where we allow for the possibility that errors from the same cluster are correlated in an unspecified way. With complete data, we could estimate the model by ordinary least squares and then use <code>clubSandwich</code> to get standard errors that are robust to within-cluster dependence and heteroskedasticity. The code for this is as follows:</p>
+<pre class="r"><code>library(clubSandwich)</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;clubSandwich&#39;:
+##   method    from    
+##   bread.mlm sandwich</code></pre>
+<pre class="r"><code>lm_full &lt;- lm(aritPOST ~ aritPRET + langPRET + sex + ses, data = bdf)
+coef_test(lm_full, cluster = bdf$schoolNR, vcov = &quot;CR2&quot;)</code></pre>
+<pre><code>##         Coef. Estimate     SE t-stat d.f. p-val (Satt) Sig.
+## 1 (Intercept)  -2.1921 1.3484 -1.626 22.9       0.1177     
+## 2    aritPRET   1.0053 0.0833 12.069 23.4       &lt;0.001  ***
+## 3    langPRET   0.2758 0.0294  9.371 24.1       &lt;0.001  ***
+## 4         sex  -1.2040 0.4706 -2.559 23.8       0.0173    *
+## 5         ses   0.0233 0.0266  0.876 20.5       0.3909</code></pre>
+<p>If cluster dependence were no concern, we could simply use the model-based standard errors and test statistics. The <code>mice</code> package provides functions that will fit the model to each imputed dataset and then combine them by Rubin’s rules. The code is simply:</p>
+<pre class="r"><code>with(data = Impute_bdf, 
+     lm(aritPOST ~ aritPRET + langPRET + sex + ses)
+     ) %&gt;%
+  pool() %&gt;%
+  summary()</code></pre>
+<pre><code>##          term    estimate  std.error statistic       df      p.value
+## 1 (Intercept) -2.42499046 1.16841662 -2.075450 274.2334 3.887690e-02
+## 2    aritPRET  1.02683271 0.07243974 14.174992 293.2843 0.000000e+00
+## 3    langPRET  0.26639282 0.03990097  6.676349 159.7092 3.840734e-10
+## 4         sex -0.93604664 0.43011186 -2.176287 194.3333 3.073991e-02
+## 5         ses  0.02030141 0.02015597  1.007216 292.2173 3.146644e-01</code></pre>
+<p>However, this approach ignores the possibility of correlation in the errors of units in the same cluster, which is clearly a concern in this dataset:</p>
+<pre class="r"><code># ratio of CRVE to conventional variance estimates
+diag(vcovCR(lm_full, cluster = bdf$schoolNR, type = &quot;CR2&quot;)) / 
+  diag(vcov(lm_full))</code></pre>
+<pre><code>## (Intercept)    aritPRET    langPRET         sex         ses 
+##   1.5296837   1.5493134   0.6938735   1.4567650   2.0053186</code></pre>
+<p>So we need a way to pool results based on the cluster-robust variance estimators, while also accounting for the relatively small number of clusters in this dataset.</p>
+</div>
+<div id="barnard-rubin-1999" class="section level3">
+<h3>Barnard &amp; Rubin (1999)</h3>
+<p><a href="https://doi.org/10.1093/biomet/86.4.948">Barnard and Rubin (1999)</a> proposed a small-sample correction for tests and confidence intervals based on multiple imputed datasets that seems to work in this context. Rather than using large-sample normal approximations for inference, they derive an approximate degrees-of-freedom that combines uncertainty in the standard errors calculated from each imputed dataset with between-imputation uncertainty. The method is as follows.</p>
+<p>Suppose that we have <span class="math inline">\(m\)</span> imputed datasets. Let <span class="math inline">\(\hat\beta_{(j)}\)</span> be the estimated regression coefficient from imputed dataset <span class="math inline">\(j\)</span>, with (in this case cluster-robust) sampling variance estimate <span class="math inline">\(V_{(j)}\)</span>. Further, let <span class="math inline">\(\eta_{(j)}\)</span> be the degrees of freedom corresponding to <span class="math inline">\(V_{(j)}\)</span>. To combine these estimates, calculate the averages across multiply imputed datasets:</p>
+<p><span class="math display">\[
+\bar\beta = \frac{1}{m}\sum_{j=1}^m \hat\beta_{(j)}, \qquad \bar{V} = \frac{1}{m}\sum_{j=1}^m V_{(j)}, \qquad \bar\eta = \frac{1}{m}\sum_{j=1}^m \eta_{(j)}.
+\]</span></p>
+<p>Also calculate the between-imputation variance</p>
+<p><span class="math display">\[
+B = \frac{1}{m - 1} \sum_{j=1}^m \left(\hat\beta_{(j)} - \bar\beta\right)^2
+\]</span></p>
+<p>And then combine the between- and within- variance estimates using Rubin’s rules:</p>
+<p><span class="math display">\[
+V_{total} = \bar{V} + \frac{m + 1}{m} B.
+\]</span></p>
+<p>The degrees of freedom associated with <span class="math inline">\(V_{total}\)</span> modify the estimated complete-data degrees of freedom <span class="math inline">\(\bar\eta\)</span> using quantities that depend on the fraction of missing information in a coefficient. The fraction of missing information is given by</p>
+<p><span class="math display">\[
+\hat\gamma_m = \frac{(m+1)B}{m V_{total}}
+\]</span></p>
+<p>The degrees of freedom are then given by</p>
+<p><span class="math display">\[
+\nu_{total} = \left(\frac{1}{\nu_m} + \frac{1}{\nu_{obs}}\right)^{-1},
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\nu_m = \frac{(m - 1)}{\hat\gamma_m^2}, \quad \text{and} \quad \nu_{obs} = \frac{\bar\eta (\bar\eta + 1) (1 - \hat\gamma)}{\bar\eta + 3}.
+\]</span></p>
+<p>Hypothesis tests and confidence intervals are based on the approximation</p>
+<p><span class="math display">\[
+\frac{\bar\beta - \beta_0}{\sqrt{V_{total}}} \ \stackrel{\cdot}{\sim} \ t(\nu_{total})
+\]</span></p>
+</div>
+<div id="implementation" class="section level3">
+<h3>Implementation</h3>
+<p>Here is how to carry out these calculations using the results of <code>clubSandwich::coef_test</code> and a bit of <code>dplyr</code>:</p>
+<pre class="r"><code># fit results with clubSandwich standard errors
+
+models_robust &lt;- with(data = Impute_bdf, 
+                      lm(aritPOST ~ aritPRET + langPRET + sex + ses) %&gt;% 
+                         coef_test(cluster=bdf$schoolNR, vcov=&quot;CR2&quot;)
+                      ) 
+
+
+# pool results with clubSandwich standard errors
+
+robust_pooled &lt;- 
+  models_robust$analyses %&gt;%
+  
+  # add coefficient names as a column
+  lapply(function(x) {
+    x$coef &lt;- row.names(x)
+    x
+  }) %&gt;%
+  bind_rows() %&gt;%
+  as.data.frame() %&gt;%
+  
+  # summarize by coefficient
+  group_by(coef) %&gt;%
+  summarise(
+    m = n(),
+    B = var(beta),
+    beta_bar = mean(beta),
+    V_bar = mean(SE^2),
+    eta_bar = mean(df)
+  ) %&gt;%
+  
+  mutate(
+    
+    # calculate intermediate quantities to get df
+    V_total = V_bar + B * (m + 1) / m,
+    gamma = ((m + 1) / m) * B / V_total,
+    df_m = (m - 1) / gamma^2,
+    df_obs = eta_bar * (eta_bar + 1) * (1 - gamma) / (eta_bar + 3),
+    df = 1 / (1 / df_m + 1 / df_obs),
+    
+    # calculate summary quantities for output
+    se = sqrt(V_total),
+    t = beta_bar / se,
+    p_val = 2 * pt(abs(t), df = df, lower.tail = FALSE),
+    crit = qt(0.975, df = df),
+    lo95 = beta_bar - se * crit,
+    hi95 = beta_bar + se * crit
+  )
+
+robust_pooled %&gt;%
+  select(coef, est = beta_bar, se, t, df, p_val, lo95, hi95, gamma) %&gt;%
+  mutate_at(vars(est:gamma), round, 3)</code></pre>
+<pre><code>## # A tibble: 5 x 9
+##   coef           est    se      t    df p_val   lo95  hi95 gamma
+##   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 (Intercept) -2.42  1.38  -1.75   19.3 0.095 -5.32  0.467 0.082
+## 2 aritPRET     1.03  0.095 10.9    18.8 0      0.829 1.23  0.062
+## 3 langPRET     0.266 0.036  7.35   15.4 0      0.189 0.343 0.227
+## 4 ses          0.02  0.03   0.671  17.2 0.511 -0.043 0.084 0.047
+## 5 sex         -0.936 0.481 -1.94   18.2 0.067 -1.95  0.075 0.128</code></pre>
+<p>It is instructive to compare the calculated <code>df</code> to <code>eta_bar</code> and <code>df_m</code>:</p>
+<pre class="r"><code>robust_pooled %&gt;%
+  select(coef, df, df_m, eta_bar) %&gt;%
+  mutate_at(vars(df, df_m, eta_bar), round, 1)</code></pre>
+<pre><code>## # A tibble: 5 x 4
+##   coef           df  df_m eta_bar
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1 (Intercept)  19.3 1333.    23.1
+## 2 aritPRET     18.8 2315.    22  
+## 3 langPRET     15.4  175.    23.7
+## 4 ses          17.2 3994.    19.9
+## 5 sex          18.2  549.    23.3</code></pre>
+<p>Here, <code>eta_bar</code> is the average of the complete data degrees of freedom, and it can be seen that the total degrees of freedom are somewhat less than the average complete-data degrees of freedom. This is by construction. Further <code>df_m</code> is the conventional degrees of freedom used in multiple-imputation, which assume that the complete-data estimates are normally distributed, and in this example they are way far off.</p>
+</div>
+<div id="further-thoughts" class="section level3">
+<h3>Further thoughts</h3>
+<p>How well does this method perform in practice? I’m not entirely sure—I’m just trusting that Barnard and Rubin’s approximation is sound and would work in this setting (I mean, they’re smart people!). Are there other, better approaches? Totally possible. I have done zero literature review beyond the Barnard and Rubin paper. In any case, exploring the performance of this method (and any other alternatives) seems like it would make for a very nice student project.</p>
+<p>There’s also the issue of how to do tests of multi-dimensional constraints (i.e., F-tests). The <code>clubSandwich</code> package implements Wald-type tests for multi-dimensional constraints, using a small-sample correction that we developed (<a href="http://journals.sagepub.com/doi/abs/10.3102/1076998615606099">Tipton &amp; Pustejovsky, 2015</a>; <a href="http://www.tandfonline.com/doi/full/10.1080/07350015.2016.1247004">Pustejovsky &amp; Tipton, 2016</a>). But it would take some further thought to figure out how to handle multiply imputed data with this type of test…</p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/missing-data/">missing data</a>
+  
+  <a class="badge badge-light" href="/tags/sandwiches/">sandwiches</a>
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/mi-with-clubsandwich/&amp;text=Pooling%20clubSandwich%20results%20across%20multiple%20imputations" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/mi-with-clubsandwich/&amp;t=Pooling%20clubSandwich%20results%20across%20multiple%20imputations" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Pooling%20clubSandwich%20results%20across%20multiple%20imputations&amp;body=/mi-with-clubsandwich/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/mi-with-clubsandwich/&amp;title=Pooling%20clubSandwich%20results%20across%20multiple%20imputations" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Pooling%20clubSandwich%20results%20across%20multiple%20imputations%20/mi-with-clubsandwich/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/mi-with-clubsandwich/&amp;title=Pooling%20clubSandwich%20results%20across%20multiple%20imputations" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu5c52b2b2df652bbfa34fe5ba8e97c2ca_630045_270x270_fill_q90_lanczos_center.jpg" alt="James E. Pustejovsky">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">James E. Pustejovsky</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pusto@austin.utexas.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=vrPDTgsAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/imputing-covariance-matrices-for-multi-variate-meta-analysis/">Imputing covariance matrices for meta-analysis of correlated effects</a></li>
+      
+      <li><a href="/clubsandwich-for-crve-fe/">Clustered standard errors and hypothesis tests in fixed effects models</a></li>
+      
+      <li><a href="/clubsandwich-for-rve-meta-analysis/">The clubSandwich package for meta-analysis with RVE</a></li>
+      
+      <li><a href="/robust-meta-analysis-3/">Meta-sandwich with extra mustard</a></li>
+      
+      <li><a href="/robust-meta-analysis-2/">Another meta-sandwich</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>econometrics | James E. Pustejovsky</title>
+    <link>/tags/econometrics/</link>
+      <atom:link href="/tags/econometrics/index.xml" rel="self" type="application/rss+xml" />
+    <description>econometrics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>econometrics</title>
+      <link>/tags/econometrics/</link>
+    </image>
+    
+    <item>
+      <title>A handmade clubSandwich for multi-site trials</title>
+      <link>/clustered-and-interacted/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/clustered-and-interacted/</guid>
+      <description>
+
+
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+data(STAR, package = &amp;quot;AER&amp;quot;)
+
+STAR_urban &amp;lt;-
+  STAR %&amp;gt;%
+  filter(
+    # limit to urban/inner city schools
+    schoolk %in% c(&amp;quot;urban&amp;quot;,&amp;quot;inner-city&amp;quot;),
+    # limit to complete outcome data
+    !is.na(readk), !is.na(mathk)
+  ) %&amp;gt;%
+  droplevels() %&amp;gt;%
+  # collapse control conditions
+  mutate(
+    stark = fct_collapse(stark, regular = c(&amp;quot;regular&amp;quot;,&amp;quot;regular+aide&amp;quot;))
+  ) %&amp;gt;%
+  # calculate inverse-propensity weight
+  group_by(schoolidk) %&amp;gt;%
+  mutate(
+    n = n(),
+    nT = sum(stark==&amp;quot;small&amp;quot;),
+    wt = ifelse(stark==&amp;quot;small&amp;quot;, n / nT, n / (n - nT))
+  ) %&amp;gt;%
+  select(schoolidk, stark, readk, mathk, wt)
+
+STAR_summary &amp;lt;- 
+  STAR_urban %&amp;gt;%
+  count(schoolidk)
+
+STAR_urban %&amp;gt;%
+  group_by(schoolidk, stark) %&amp;gt;%
+  summarise(
+    n = n(),
+    wt = sum(wt)
+  ) %&amp;gt;%
+  mutate(n = sum(n)) %&amp;gt;%
+  spread(stark, wt)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 23 x 4
+## # Groups:   schoolidk [23]
+##    schoolidk     n regular small
+##    &amp;lt;fct&amp;gt;     &amp;lt;int&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+##  1 2            52      52    52
+##  2 9           120     120   120
+##  3 10           51      51    51
+##  4 14           34      34    34
+##  5 15           55      55    55
+##  6 16          105     105   105
+##  7 18           79      79    79
+##  8 19           99      99    99
+##  9 22          129     129   129
+## 10 26           49      49    49
+## # ... with 13 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After these exclusions, the data include a total of 1810 students from 23 schools, ranging in size from 34 to 134 students.&lt;/p&gt;
+&lt;p&gt;For starters, let’s get the average impacts using a seeming unrelated regression specification, with both conventional and clubSandwich standard errors.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;STAR_wt &amp;lt;- lm(cbind(readk, mathk) ~ 0 + schoolidk + stark, weights = wt, data = STAR_urban)
+
+# conventional SEs
+CR0 &amp;lt;- 
+  coef_test(STAR_wt, vcov = &amp;quot;CR0&amp;quot;, 
+            cluster = STAR_urban$schoolidk, 
+            test = &amp;quot;z&amp;quot;,
+            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
+CR0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 readk:starksmall     6.21 3.13   1.98    0.0473    *
+## 2 mathk:starksmall    12.47 5.58   2.23    0.0254    *&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# clubSandwich SEs
+CR2 &amp;lt;- 
+  coef_test(STAR_wt, vcov = &amp;quot;CR2&amp;quot;, 
+            cluster = STAR_urban$schoolidk, 
+            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
+
+CR2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 readk:starksmall     6.21 2.70    2.3   19       0.0332    *
+## 2 mathk:starksmall    12.47 4.79    2.6   19       0.0174    *&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I’ll do it “by hand”—or rather, with a bit of &lt;code&gt;dplyr&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# summary statistics by site
+
+school_summaries &amp;lt;- 
+  STAR_urban %&amp;gt;%
+  group_by(schoolidk, stark) %&amp;gt;%
+  summarise(
+    # means by arm and site
+    readk = mean(readk),
+    mathk = mean(mathk),
+    n_arm = n()
+  ) %&amp;gt;%
+  summarise(
+    # impact estimates by site
+    readk = diff(readk),
+    mathk = diff(mathk),
+    n = sum(n_arm),
+    p = n_arm[stark==&amp;quot;small&amp;quot;] / n
+  ) %&amp;gt;%
+  mutate(
+    w = n
+  )
+
+# overall impacts
+
+school_summaries %&amp;gt;%
+  gather(&amp;quot;subject&amp;quot;,&amp;quot;impact_j&amp;quot;, readk, mathk) %&amp;gt;%
+  group_by(subject) %&amp;gt;%
+  summarise(
+    impact = weighted.mean(impact_j, w = w),
+    SE_CR0 = sqrt(sum(w^2 * (impact_j - impact)^2) / sum(w)^2),
+    SE_CR2 = sqrt(sum(w^2 * (impact_j - impact)^2 / (1 - w / sum(w))) / sum(w)^2),
+    df_CR2 = 1 / (sum(w^2 / (sum(w) - w)^2) - 
+                    2 * sum(w^3 / (sum(w) - w)^2) / sum(w) + 
+                    sum(w^2 / (sum(w) - w))^2 / sum(w)^2)
+  ) %&amp;gt;%
+  knitr::kable(digits = 2)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;subject&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;impact&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;SE_CR0&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;SE_CR2&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;df_CR2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;mathk&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12.47&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.58&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.76&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.07&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;readk&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.21&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.23&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.07&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The CR0 and CR2 standard errors match the results from &lt;code&gt;coef_test&lt;/code&gt;, as do the Satterthwaite degrees of freedom. Note that the degrees of freedom are equal to 19 in this case, a bit less than &lt;span class=&#34;math inline&#34;&gt;\(J - 1 = 22\)&lt;/span&gt; due to variation in the weight assigned to each school.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A handmade clubSandwich for multi-site trials</title>
+      <link>/handmade-clubsandwich/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/handmade-clubsandwich/</guid>
+      <description>
+
+
+&lt;p&gt;I’m just back from the &lt;a href=&#34;https://sree.org/conferences/2019s&#34;&gt;Society for Research on Educational Effectiveness&lt;/a&gt; meetings, where I presented work on small-sample corrections for cluster-robust variance estimators in two-stage least squares models, which I’ve implemented in the &lt;a href=&#34;/software/clubSandwich/&#34;&gt;&lt;code&gt;clubSandwich&lt;/code&gt;&lt;/a&gt; R package. &lt;a href=&#34;/files/SREE-2019-2SLS-CRVE.html&#34;&gt;Here’s my presentation&lt;/a&gt;. So I had “clubSandwich” estimators on the brain when a colleague asked me about whether the methods were implemented in SAS.&lt;/p&gt;
+&lt;p&gt;The short answer is “no.”&lt;/p&gt;
+&lt;p&gt;The moderately longer answer is “not unless we can find funding to pay someone who knows how to program properly in SAS.” However, for the specific model that my colleague was interested in, it turns out that the small-sample corrections implemented in clubSandwich can be expressed in closed form, and they’re simple enough that they could easily be hand-calculated. I’ll sketch out the calculations in the remainder of this post.&lt;/p&gt;
+&lt;div id=&#34;a-multi-site-trial&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A multi-site trial&lt;/h2&gt;
+&lt;p&gt;Consider a multi-site trial conducted across &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; sites, which we take as a sample from a larger super-population of sites. Each site consists of &lt;span class=&#34;math inline&#34;&gt;\(n_j\)&lt;/span&gt; units, of which &lt;span class=&#34;math inline&#34;&gt;\(p_j n_j\)&lt;/span&gt; are randomized to treatment and the remainder &lt;span class=&#34;math inline&#34;&gt;\((1 - p_j) n_j\)&lt;/span&gt; are randomized to control. For each unit &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in each site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, we have an outcome &lt;span class=&#34;math inline&#34;&gt;\(y_{ij}\)&lt;/span&gt; and a treatment indicator &lt;span class=&#34;math inline&#34;&gt;\(t_{ij}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A conventional approach to estimating the overall average impact in this setting is to use a model with a treatment indicator and fixed effects for each site:
+&lt;span class=&#34;math display&#34;&gt;\[
+y_{ij} = \beta_j + \delta t_{ij} + e_{ij}
+\]&lt;/span&gt;
+and then to cluster the standard errors by site. Clustering by site makes sense here if (and only if) we’re interested in generalizing to the super-population of sites.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta_j\)&lt;/span&gt; denote the impact estimate from site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, calculated as the difference in means between treated and untreated units at site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+\hat\delta_j = \frac{1}{n_j p_j} \left(\sum_{i=1}^{n_j} t_{ij} y_{ij}\right) - \frac{1}{n_j (1 - p_j)} \left(\sum_{i=1}^{n_j} (1 - t_{ij}) y_{ij}\right).
+\]&lt;/span&gt;
+for &lt;span class=&#34;math inline&#34;&gt;\(j = 1,..,J\)&lt;/span&gt;. The overall impact estimate here is a precision-weighted average of the site-specific impacts:
+&lt;span class=&#34;math display&#34;&gt;\[
+\hat\delta = \frac{1}{W} \sum_{j=1}^J w_j \hat\delta_j,
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(w_j = n_j p_j (1 - p_j)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(W = \sum_j w_j\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sandwich-estimators&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Sandwich estimators&lt;/h2&gt;
+&lt;p&gt;The conventional clustered variance estimator (or sandwich estimator) for &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta\)&lt;/span&gt; is a simple function of the (weighted) sample variance of the site-specific effects. It can be calculated directly as:
+&lt;span class=&#34;math display&#34;&gt;\[
+V^{CR0} = \frac{1}{W^2} \sum_{j=1}^J w_j^2 \left(\hat\delta_j - \hat\delta\right)^2.
+\]&lt;/span&gt;
+Under a conventional random effects model for the &lt;span class=&#34;math inline&#34;&gt;\(\delta_j\)&lt;/span&gt;s, this estimator has a downward bias in finite samples.&lt;/p&gt;
+&lt;p&gt;The clubSandwich variance estimator here uses an estimator for the sample variance of site-specific effects that is unbiased under a certain working model. It is only slightly more complicated to calculate:
+&lt;span class=&#34;math display&#34;&gt;\[
+V^{CR2} = \frac{1}{W^2} \sum_{j=1}^J \frac{w_j^2 \left(\hat\delta_j - \hat\delta\right)^2}{1 - w_j / W}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The other difference between conventional methods and the clubSandwich approach is in the reference distribution used to calculate hypothesis tests and confidence intervals. The conventional approach uses a standard normal reference distribution (i.e., a z-test) that is asymptotically justified. The clubSandwich approach uses a &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; reference distribution, with degrees of freedom estimated using a Satterthwaite approximation. In the present context, the degrees of freedom are a little bit ugly but still not hard to calculate:
+&lt;span class=&#34;math display&#34;&gt;\[
+df = \left[\sum_{j=1}^J \frac{w_j^2}{(W - w_j)^2} - \frac{2}{W}\sum_{j=1}^J \frac{w_j^3}{(W - w_j)^2} + \frac{1}{W^2} \left(\sum_{j=1}^J \frac{w_j^2}{W - w_j} \right)^2 \right]^{-1}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In the special case that all sites are of the same size and use a constant treatment allocation, the weights become equal. The clubSandwich variance estimator then reduces to
+&lt;span class=&#34;math display&#34;&gt;\[
+V^{CR2} = \frac{S_\delta^2}{J} \qquad \text{where} \qquad S_\delta^2 = \frac{1}{J - 1}\sum_{j=1}^J \left(\hat\delta_j - \hat\delta\right)^2,
+\]&lt;/span&gt;
+and the degrees of freedom reduce to simply &lt;span class=&#34;math inline&#34;&gt;\(df = J - 1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tennessee-star&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tennessee STAR&lt;/h2&gt;
+&lt;p&gt;Here is a worked example of the calculations (using R of course, because my SAS programming skills atrophied years ago). I’ll use data from the famous Tennessee STAR class size experiment, which was a multi-site trial in which students were randomized to small or regular-sized kindergarten classes within each of several dozen schools. To make the small-sample issues more pronounced, I’ll limit the sample to urban schools and look at impacts of small class-size on reading and math scores at the end of kindergarten. STAR was actually a three-arm trial—the third arm being a regular-sized class but with an additional teacher aide. For simplicity (and following convention), I’ll collapse the teacher-aide condition and the regular-sized class condition into a single arm and also limit the sample to students with complete outcome data on both tests.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+data(STAR, package = &amp;quot;AER&amp;quot;)
+
+STAR_urban &amp;lt;-
+  STAR %&amp;gt;%
+  filter(
+    # limit to urban/inner city schools
+    schoolk %in% c(&amp;quot;urban&amp;quot;,&amp;quot;inner-city&amp;quot;),
+    # limit to complete outcome data
+    !is.na(readk), !is.na(mathk)
+  ) %&amp;gt;%
+  droplevels() %&amp;gt;%
+  # collapse control conditions
+  mutate(stark = fct_collapse(stark, regular = c(&amp;quot;regular&amp;quot;,&amp;quot;regular+aide&amp;quot;))) %&amp;gt;%
+  select(schoolidk, stark, readk, mathk)
+
+STAR_summary &amp;lt;- 
+  STAR_urban %&amp;gt;%
+  count(schoolidk)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After these exclusions, the data include a total of 1810 students from 23 schools, ranging in size from 34 to 134 students.&lt;/p&gt;
+&lt;p&gt;For starters, let’s get the average impacts using a seeming unrelated regression specification, with both conventional and clubSandwich standard errors.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;STAR_fit &amp;lt;- lm(cbind(readk, mathk) ~ 0 + schoolidk + stark, data = STAR_urban)
+
+# conventional SEs
+CR0 &amp;lt;- 
+  coef_test(STAR_fit, vcov = &amp;quot;CR0&amp;quot;, 
+            cluster = STAR_urban$schoolidk, 
+            test = &amp;quot;z&amp;quot;,
+            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
+
+CR0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 readk:starksmall     6.16 2.73   2.25    0.0241    *
+## 2 mathk:starksmall    12.13 4.79   2.53    0.0113    *&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# clubSandwich SEs
+CR2 &amp;lt;- 
+  coef_test(STAR_fit, vcov = &amp;quot;CR2&amp;quot;, 
+            cluster = STAR_urban$schoolidk, 
+            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
+
+CR2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 readk:starksmall     6.16 2.81   2.19   19       0.0409    *
+## 2 mathk:starksmall    12.13 4.92   2.47   19       0.0234    *&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I’ll do it “by hand”—or rather, with a bit of &lt;code&gt;dplyr&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# summary statistics by site
+
+school_summaries &amp;lt;- 
+  STAR_urban %&amp;gt;%
+  group_by(schoolidk, stark) %&amp;gt;%
+  summarise(
+    # means by arm and site
+    readk = mean(readk),
+    mathk = mean(mathk),
+    n_arm = n()
+  ) %&amp;gt;%
+  summarise(
+    # impact estimates by site
+    readk = diff(readk),
+    mathk = diff(mathk),
+    n = sum(n_arm),
+    p = n_arm[stark==&amp;quot;small&amp;quot;] / n
+  ) %&amp;gt;%
+  mutate(w = n * p * (1 - p))
+
+# overall impacts
+
+school_summaries %&amp;gt;%
+  gather(&amp;quot;subject&amp;quot;,&amp;quot;impact_j&amp;quot;, readk, mathk) %&amp;gt;%
+  group_by(subject) %&amp;gt;%
+  summarise(
+    impact = weighted.mean(impact_j, w = w),
+    SE_CR0 = sqrt(sum(w^2 * (impact_j - impact)^2) / sum(w)^2),
+    SE_CR2 = sqrt(sum(w^2 * (impact_j - impact)^2 / (1 - w / sum(w))) / sum(w)^2),
+    df_CR2 = 1 / (sum(w^2 / (sum(w) - w)^2) - 
+                    2 * sum(w^3 / (sum(w) - w)^2) / sum(w) + 
+                    sum(w^2 / (sum(w) - w))^2 / sum(w)^2)
+  ) %&amp;gt;%
+  knitr::kable(digits = 2)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;subject&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;impact&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;SE_CR0&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;SE_CR2&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;df_CR2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;mathk&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12.13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.79&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.92&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;readk&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.73&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.81&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The CR0 and CR2 standard errors match the results from &lt;code&gt;coef_test&lt;/code&gt;, as do the Satterthwaite degrees of freedom. Note that the degrees of freedom are equal to 19 in this case, a bit less than &lt;span class=&#34;math inline&#34;&gt;\(J - 1 = 22\)&lt;/span&gt; due to variation in the weight assigned to each school.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-weights&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other weights&lt;/h2&gt;
+&lt;p&gt;Some analysts might not like the approach of using precision-weighted average of the site-specific impacts, as I’ve examined here. Instead, one might choose to weight the site-specific effects by the site-specific sample sizes, or to use some sort of random effects weighting that allows for random heterogeneity across sites. The formulas given above for conventional and clubSandwich clustered variance estimators apply directly to other weighting schemes too. Just substitute your favorite weights in place of &lt;span class=&#34;math inline&#34;&gt;\(w_j\)&lt;/span&gt;. When doing so, the clubSandwich estimator will be exactly unbiased under the assumption that your preferred weighting scheme corresponds to inverse-variance weighting, and the Satterthwaite degrees of freedom approximation will be derived under the same model.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Effective sample size aggregation</title>
+      <link>/effective-sample-size-aggregation/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/effective-sample-size-aggregation/</guid>
+      <description>
+
+
+&lt;p&gt;In settings with independent observations, sample size is one way to quickly characterize the precision of an estimate. But what if your estimate is based on &lt;em&gt;weighted&lt;/em&gt; data, where each observation doesn’t necessarily contribute to equally to the estimate? Here, one useful way to gauge the precision of an estimate is the &lt;em&gt;effective sample size&lt;/em&gt; or ESS. Suppose that we have &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; independent observations &lt;span class=&#34;math inline&#34;&gt;\(Y_1,...,Y_N\)&lt;/span&gt; drawn from a population with standard deviation &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;, and that observation &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; receives weight &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt;. We take the weighted sample mean
+&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{y} = \frac{1}{W} \sum_{i=1}^N w_i Y_i, \qquad \text{where} \qquad W = \sum_{i=1}^N w_i.
+\]&lt;/span&gt;
+with sampling variance
+&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}(\tilde{y}) = \frac{\sigma^2}{W^2} \sum_{i=1}^N w_i^2.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The ESS is the number of observations from an equally weighted sample that would yield the same level of precision as the weighted sample mean. In an equally weighted sample of size &lt;span class=&#34;math inline&#34;&gt;\(\tilde{N}\)&lt;/span&gt;, the variance would be simply &lt;span class=&#34;math inline&#34;&gt;\(\sigma^2 / \tilde{N}\)&lt;/span&gt;, and so ESS is the value of &lt;span class=&#34;math inline&#34;&gt;\(\tilde{N}\)&lt;/span&gt; that solves
+&lt;span class=&#34;math display&#34;&gt;\[
+\frac{\sigma^2}{\tilde{N}} = \frac{\sigma^2}{W^2} \sum_{i=1}^N w_i^2.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Re-arranging, the ESS is thus defined as
+&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{N} = \frac{W^2}{\sum_{i=1}^N w_i^2}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The ESS is reported in several packages for propensity score weighting, including &lt;a href=&#34;https://CRAN.R-project.org/package=twang&#34;&gt;twang&lt;/a&gt; and &lt;a href=&#34;https://CRAN.R-project.org/package=optweight&#34;&gt;optweight&lt;/a&gt;. In the propensity score context, ESS is a useful measure for comparing different sets of estimated propensity weights, in that weights (or propensity score models/matching methods) that have a larger ESS will yield a more precise estimate of a treatment effect. Given two sets of weights that achieve equivalent degrees of balance, the weights with larger ESS are thus preferable. Methods introduced by &lt;a href=&#34;https://doi.org/10.1080/01621459.2015.1023805&#34;&gt;Zubizarreta (2015)&lt;/a&gt;—and implemented in the &lt;a href=&#34;https://CRAN.R-project.org/package=optweight&#34;&gt;optweight&lt;/a&gt; package—take this logic a step further by using ESS as an objective function to be minimized, subject to specified balancing constraints.&lt;/p&gt;
+&lt;div id=&#34;multi-site-effective-sample-size&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Multi-site effective sample size&lt;/h1&gt;
+&lt;p&gt;Two of my recent projects have involved applying propensity score weighting methods in multi-site settings, where we are interested in estimating site-specific treatment effects as well as an overall aggregate effect. It is straight-forward to calculate an ESS for each site, but how then should we aggregate the ESS across sites to characterize the precision of the overall estimate? Several times now, I have found myself having to re-derive the aggregated ESS, and so I am going to work through it here now so as to save future-me (and perhaps you, dear reader) some time.&lt;/p&gt;
+&lt;p&gt;Suppose that we have &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; sites, &lt;span class=&#34;math inline&#34;&gt;\(n_j\)&lt;/span&gt; observations from site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(j = 1,...,J\)&lt;/span&gt;, and total sample size &lt;span class=&#34;math inline&#34;&gt;\(N = \sum_{j=1}^J n_j\)&lt;/span&gt;. Observation &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; from site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; has outcome &lt;span class=&#34;math inline&#34;&gt;\(Y_{ij}\)&lt;/span&gt; and weight &lt;span class=&#34;math inline&#34;&gt;\(w_{ij}\)&lt;/span&gt;. The site-specific weighted average at site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; is then
+&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{y}_j = \frac{1}{W_j} \sum_{i=1}^{n_j} w_{ij} Y_{ij}, \qquad \text{where} \qquad W_j = \sum_{i=1}^{n_j} w_{ij}
+\]&lt;/span&gt;
+and the overall average is
+&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{y} = \frac{1}{N} \sum_{j=1}^J n_j \ \tilde{y}_j = \frac{1}{N} \sum_{j=1}^J \sum_{i=1}^{n_j} \frac{n_j w_{ij}}{W_j} Y_{ij}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For calculating the overall average, observation &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; from unit &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; contributes weight &lt;span class=&#34;math inline&#34;&gt;\(u_{ij} = n_j w_{ij} / W_j\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Using these unit-specific weights, the effective sample size for the overall average is
+&lt;span class=&#34;math display&#34;&gt;\[
+ESS = \frac{N^2}{\sum_{j=1}^J \sum_{i=1}^{n_j} u_{ij}^2}.
+\]&lt;/span&gt;
+We can also define a site-specific ESS for site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+ESS_j = \frac{W_j^2}{\sum_{i=1}^{n_j} w_{ij}^2}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Using the decomposition of the weights as &lt;span class=&#34;math inline&#34;&gt;\(u_{ij} = n_j w_{ij} / W_j\)&lt;/span&gt;, the overall ESS can be written as
+&lt;span class=&#34;math display&#34;&gt;\[
+ESS = \frac{N^2}{\sum_{j=1}^J n_j^2 \left(\sum_{i=1}^{n_j} w_{ij}^2 / W_j^2\right)}.
+\]&lt;/span&gt;
+Noting that the term in the parentheses of the denominator is equivalent to &lt;span class=&#34;math inline&#34;&gt;\(1 / ESS_j\)&lt;/span&gt;, the overall ESS can therefore be written in terms of the site-specific ESSs and sample sizes:
+&lt;span class=&#34;math display&#34;&gt;\[
+ESS = \frac{N^2}{\sum_{j=1}^J n_j^2 / ESS_j}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There you go. Future me will thank me for this!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Estimating average effects in regression discontinuities with covariate interactions</title>
+      <link>/rdd-interactions-again/</link>
+      <pubDate>Wed, 27 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/rdd-interactions-again/</guid>
+      <description>
+
+
+&lt;p&gt;Regression discontinuity designs (RDDs) are now a widely used tool for program evaluation in economics and many other fields. RDDs occur in situations where some treatment/program of interest is assigned on the basis of a numerical score (called the running variable), all units scoring above a certain threshold receiving treatment and all units scoring at or below the threshold having treatment withheld (or vice versa, with treatment assigned to units scoring below the threshold). This mechanism provides a way to identify the &lt;strong&gt;marginal average treatment effect&lt;/strong&gt; (MATE): the average effect of treatment assignment for units on the cusp of the threshold.&lt;/p&gt;
+&lt;p&gt;RDDs are appealing for a couple of reasons. First and foremost, RDD-like mechanism occurs all over the place, since providing treatment on the basis of a numerical measure of need/eligibility is a natural way to allocate resources. Furthermore, analysis of the designs is straight-forward, as it involves nothing more complicated than a linear regression model, estimated using (weighted or un-weighted) least squares, and which can be represented graphically using a simple scatterplot. Things get a little bit more complicated if you are trying to account for imperfect compliance with treatment assignment—as in the “fuzzy” RDD—but for the moment let me focus on “sharp” RDDs.&lt;/p&gt;
+&lt;p&gt;The simplest approach to estimating the MATE is to use a local linear regression in the neighborhood of the threshold, with the outcome regressed on the running variable, treatment indicator, and their interaction. However, in practice it is quite common to also include additional covariates in the local linear regression. If the covariates are also interacted with the treatment indicator, there is no longer a single regression coefficient corresponding to the treatment effect. In my &lt;a href=&#34;/rdd-interactions&#34;&gt;last post&lt;/a&gt;, I suggested a “centering trick” for estimating the MATE based on a model that included covariate-by-treatment interactions. In this post, I’ll explain the reasoning behind this proposal.&lt;/p&gt;
+&lt;div id=&#34;gday-mate&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;G’day, MATE&lt;/h3&gt;
+&lt;p&gt;I think it’s helpful to start by thinking about the definition of the MATE in non-parametric terms. Let &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt; be the running variable, assumed to be centered at the threshold; &lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt; be an indicator for treatment assignment, with &lt;span class=&#34;math inline&#34;&gt;\(T = I(R &amp;gt; 0)\)&lt;/span&gt;; and &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; be a covariate, which may be vector-valued. Denote the potential outcomes as &lt;span class=&#34;math inline&#34;&gt;\(Y^0\)&lt;/span&gt; (a unit’s outcome if not assigned to treatment) and &lt;span class=&#34;math inline&#34;&gt;\(Y^1\)&lt;/span&gt; (a unit’s outcome if assigned to treatment), so that the observed outcome is &lt;span class=&#34;math inline&#34;&gt;\(Y = Y^0 (1 - T) + Y^1 T\)&lt;/span&gt;. Now consider the potential response surfaces&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}\mu_0(x, r) &amp;amp;= \text{E}\left(\left.Y^0 \right|X = x, R = r\right) \\ \mu_1(x, r) &amp;amp;= \text{E}\left(\left.Y^1 \right|X = x, R = r\right).\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In an RDD, the average treatment effect at a given point &lt;span class=&#34;math inline&#34;&gt;\((x, r)\)&lt;/span&gt; on the response surface is not generally identified by conditioning because one of the potential outcomes will &lt;em&gt;never&lt;/em&gt; be observed: if &lt;span class=&#34;math inline&#34;&gt;\(r &amp;lt; 0\)&lt;/span&gt; then &lt;span class=&#34;math inline&#34;&gt;\(\text{Pr}( T = 0 \vert X = x, R = r) = 1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\text{Pr}( T = 1 \vert X = x, R = r) = 0\)&lt;/span&gt; (and vice versa for &lt;span class=&#34;math inline&#34;&gt;\(r &amp;gt; 0\)&lt;/span&gt;). However, the treatment effect for the subpopulation where &lt;span class=&#34;math inline&#34;&gt;\(R = 0\)&lt;/span&gt; can be identified under the assumption that the potential response surfaces are continuous in a neighborhood of the threshold. Thus the MATE, which can be written as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+\delta_M &amp;amp;= \text{E}\left(\left. Y^1 - Y^0 \right| R = 0\right) \\
+&amp;amp;= \text{E}\left[\mu_1(X, 0) - \mu_0(X,0)\right].
+\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;regression-estimation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Regression estimation&lt;/h3&gt;
+&lt;p&gt;Now assume that we have a simple random sample &lt;span class=&#34;math inline&#34;&gt;\(\left(y_i,r_i,t_i, x_i\right)_{i=1}^n\)&lt;/span&gt; of units and that each unit has a weight &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; defined based on some measure of distance from the threshold. We can use these data to estimate the response surfaces (somehow…more on that in a minute) on each side of the cut-off, with &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_0(x, r)\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(r &amp;lt; 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_1(x, r)\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(r &amp;gt; 0\)&lt;/span&gt;. If we then use the sample distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; in the neighborhood of &lt;span class=&#34;math inline&#34;&gt;\(R = 0\)&lt;/span&gt; in place of the conditional density &lt;span class=&#34;math inline&#34;&gt;\(d\left(X = x \vert R = 0\right)\)&lt;/span&gt;, we can estimate the MATE as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat\delta_M = \frac{1}{W} \sum_{i=1}^n w_i \left[\hat\mu_1(x_i, 0) - \hat\mu_0(x_i, 0)\right],\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(W = \sum_{i=1}^n w_i\)&lt;/span&gt;. This is a regression estimator for &lt;span class=&#34;math inline&#34;&gt;\(\delta_M\)&lt;/span&gt;. It could be non-, semi-, or fully parametric depending on the technique used to estimate the response surfaces. Note that this estimator is a little bit different than the regression estimator that would be used in the context of an observational study (see, e.g., &lt;a href=&#34;http://psycnet.apa.org/doi/10.1037/a0014268&#34;&gt;Shafer &amp;amp; Kang, 2008&lt;/a&gt;). In that context, one would use &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_j(x_i, r_i)\)&lt;/span&gt; rather than &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_j(x_i, 0)\)&lt;/span&gt;, but in an RDD doing so would involve extrapolating beyond the cutpoint (i.e., using &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_1(x_i, r_i)\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(r_i &amp;lt; 0\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;Now suppose that we again use a linear regression in some neighborhood of the cut-point to estimate the response surfaces. For the (weighted) sample in the neighborhood of the cut-point, we assume that&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mu_{t_i}(x_i, r_i) = \beta_0 + \beta_1 r_i + \beta_2 t_i + \beta_3 r_i t_i + \beta_4 x_i + \beta_5 x_i t_i.\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituting this into the formula for &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta_M\)&lt;/span&gt; leads to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}\hat\delta_M &amp;amp;= \frac{1}{W} \sum_{i=1}^n w_i \left[\hat\beta_2 + \hat\beta_5 x_i \right] \\
+&amp;amp;= \hat\beta_2 + \hat\beta_5 \sum_{i=1}^n \frac{w_i x_i}{W}.\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, the centering trick involves nothing more than re-centering the covariate so that &lt;span class=&#34;math inline&#34;&gt;\(\sum_{i=1}^n w_i x_i = 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta_M = \hat\beta_2\)&lt;/span&gt;. Of course, one could just use the non-parametric form of the regression estimator, but the centering trick is useful because it comes along with an easy-to-calculate standard error (since it is just a regression coefficient estimate).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;multiple-covariates&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Multiple covariates&lt;/h3&gt;
+&lt;p&gt;All of this works out in the exact same way if you have interactions between the treatment and multiple covariates. However, there are a few tricky cases that are worth noting. If you include interactions between the treatment indicator and a polynomial function of the treatment, each term of the polynomial has to be centered. For example, if you want to control for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(x^2\)&lt;/span&gt;, and their interactions with treatment, you will need to calculate&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\tilde{x}_{1i} = x_i - \frac{1}{W} \sum_{i=1}^n w_i x_i, \qquad \tilde{x}_{2i} = x_i^2 - \frac{1}{W} \sum_{i=1}^n w_i x_i^2\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and then use these re-centered covariates in the regression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mu_{t_i}(x_i, r_i) = \beta_0 + \beta_1 r_i + \beta_2 t_i + \beta_3 r_i t_i + \beta_4 \tilde{x}_{1i} + \beta_5 \tilde{x}_{2i} + \beta_6 \tilde{x}_{1i} t_i + \beta_7 \tilde{x}_{2i} t_i.\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The same principle will also hold if you want to include higher-order interactions between covariates and the treatment: calculate the interaction term first, then re-center it. There’s one exception though. If you want to include an interaction between a covariate &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, the &lt;em&gt;running variable&lt;/em&gt;, and the treatment indicator (who knows…you might aspire to do this some day…), then all you need to do is center &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;. In particular, you should &lt;em&gt;not&lt;/em&gt; calculate the interaction &lt;span class=&#34;math inline&#34;&gt;\(x_i r_i\)&lt;/span&gt; and then re-center it (doing so could pull the average away from the threshold of &lt;span class=&#34;math inline&#34;&gt;\(R = 0\)&lt;/span&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-mates&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R, MATEs!&lt;/h3&gt;
+&lt;p&gt;Here’s some R code that implements the centering trick for the simulated example from my last post:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(sandwich)
+library(lmtest)
+library(rdd)
+
+# simulate an RDD
+set.seed(20160124)
+simulate_RDD &amp;lt;- function(n = 2000, R = rnorm(n, mean = qnorm(.2))) {
+  n &amp;lt;- length(R)
+  T &amp;lt;- as.integer(R &amp;gt; 0)
+  X1 &amp;lt;- 10 + 0.6 * (R - qnorm(.2)) + rnorm(n, sd = sqrt(1 - 0.6^2))
+  X2 &amp;lt;- sample(LETTERS[1:4], n, replace = TRUE, prob = c(0.2, 0.3, 0.35, 0.15))
+  Y0 &amp;lt;- 0.4 * R + 0.1 * (X1 - 10) + c(A = 0, B = 0.30, C = 0.40, D = 0.55)[X2] + rnorm(n, sd = 0.9)
+  Y1 &amp;lt;- 0.35 + 0.3 * R + 0.18 * (X1 - 10) + c(A = -0.50, B = 0.30, C = 0.20, D = 0.60)[X2] + rnorm(n, sd = 0.9)
+  Y &amp;lt;- (1 - T) * Y0 + T * Y1
+  data.frame(R, T, X1, X2, Y0, Y1, Y)
+}
+RD_data &amp;lt;- simulate_RDD(n = 2000)
+
+# calculate kernel weights
+bw &amp;lt;- with(RD_data, IKbandwidth(R, Y, cutpoint = 0))
+RD_data$w &amp;lt;- kernelwts(RD_data$R, center = 0, bw = bw)
+
+# center the covariates
+X_mat &amp;lt;- model.matrix(~ 0 + X2 + X1, data = RD_data)
+X_cent &amp;lt;- as.data.frame(apply(X_mat, 2, function(x) x - weighted.mean(x, w = RD_data$w)))
+RD_data_aug &amp;lt;- cbind(X_cent, subset(RD_data, select = c(-X1, -X2)))
+cov_names &amp;lt;- paste(names(X_cent)[-1], collapse = &amp;quot; + &amp;quot;)
+
+# calculate the MATE using RDestimate
+RD_form &amp;lt;- paste(&amp;quot;Y ~ R |&amp;quot;, cov_names)
+summary(RDestimate(as.formula(RD_form), data = RD_data_aug))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+## RDestimate(formula = as.formula(RD_form), data = RD_data_aug)
+## 
+## Type:
+## sharp 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&amp;gt;|z|) 
+## LATE       1.0894     1177          0.2981    0.10659     2.797    0.0051559
+## Half-BW    0.5447      611          0.2117    0.14846     1.426    0.1539482
+## Double-BW  2.1787     1832          0.2734    0.08305     3.292    0.0009949
+##               
+## LATE       ** 
+## Half-BW       
+## Double-BW  ***
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1
+## 
+## F-statistics:
+##            F      Num. DoF  Denom. DoF  p
+## LATE       23.30  11        1165        0
+## Half-BW    10.97  11         599        0
+## Double-BW  47.41  11        1820        0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# or using lm
+lm_form &amp;lt;- paste(&amp;quot;Y ~ R + T + R:T + T*(&amp;quot;, cov_names,&amp;quot;)&amp;quot;)
+lm_fit &amp;lt;- lm(as.formula(lm_form), weights = w, data = subset(RD_data_aug, w &amp;gt; 0))
+coeftest(lm_fit, vcov. = vcovHC(lm_fit, type = &amp;quot;HC1&amp;quot;))[&amp;quot;T&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    Estimate  Std. Error     t value    Pr(&amp;gt;|t|) 
+## 0.298142798 0.106588790 2.797130893 0.005240719&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;comments&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Comments&lt;/h3&gt;
+&lt;p&gt;I’ve shown that the “centering trick” is just a way to express a certain regression estimator for the marginal average treatment effect in an RDD. Having suggested that this is a good idea, I should also note a few points that might bear further investigation.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;My regression estimator uses the sample distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; in the neighborhood of the threshold as an estimate of &lt;span class=&#34;math inline&#34;&gt;\(d(X = x \vert R = 0)\)&lt;/span&gt;. This seems reasonable, but I wonder whether there might be a better approach to estimating this conditional density.&lt;/li&gt;
+&lt;li&gt;As far as I understand, the current best practice for defining the “neighborhood” of the threshold is to use weights based on a triangular kernel and an “optimal” bandwidth proposed by &lt;a href=&#34;http://doi.org/10.1093/restud/rdr043&#34;&gt;Imbens and Kalyanaraman (2012)&lt;/a&gt;. The optimal bandwidth is derived for the simple RDD model with no covariates, though the authors comment that inclusion of additional covariates should not greatly affect the result unless the covariates are strongly correlated with the outcome, conditional on the running variable. However, what if interest centers on the covariate-by-treatment interaction itself, rather than just the MATE? It is not clear that the bandwidth is optimal for estimation/inference on the interaction term.&lt;/li&gt;
+&lt;li&gt;So far I’ve considered the MATE identified by a sharp RDD, in which we examine the effects of treatment assignment, regardless of whether units assigned to treatment actually received/participated in it. In fuzzy RDDs, the target parameter is the average effect of treatment receipt for those on the threshold of eligibility and who comply with the assignment rule. The effect is estimated using two-stage least squares, taking treatment assignment as an instrument for treatment receipt. I’m not entirely sure how the regression estimator approach would work in this instrumental variables setting.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Regression discontinuities with covariate interactions in the rdd package</title>
+      <link>/rdd-interactions/</link>
+      <pubDate>Mon, 25 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/rdd-interactions/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE (2019-09-24): This post pertains to version 0.56 of the &lt;code&gt;rdd&lt;/code&gt; package. The problems described in this post have been corrected in version 0.57 of the package, which was posted to CRAN on 2016-03-14.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://cran.r-project.org/web/packages/rdd/&#34;&gt;&lt;code&gt;rdd&lt;/code&gt; package&lt;/a&gt; in R provides a set of methods for analysis of regression discontinuity designs (RDDs), including methods to estimate marginal average treatment effects by local linear regression. I was working with the package recently and obtained some rather counter-intuitive treatment effect estimates in a sharp RDD model. After digging around a bit, I found that my perplexing results were the result of a subtle issue of model specification. Namely, in models with additional covariates (beyond just the running variable, treatment indicator, and interaction), the main estimation function in &lt;code&gt;rdd&lt;/code&gt; uses a specification in which covariates are always interacted with the treatment indicator. In this post, I’ll demonstrate the issue and comment on potential work-arounds.&lt;/p&gt;
+&lt;div id=&#34;a-simulated-example&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A simulated example&lt;/h3&gt;
+&lt;p&gt;To make things more concrete, here’s a hypothetical RDD. I’ll use &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt; to denote the running variable, with the threshold set at zero; &lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt; for the treatment indicator; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; for the outcome. &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt; is a continuous covariate that is correlated with &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt; is a categorical covariate with four levels that is independent of &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;. In order to illustrate the issue with covariate-by-treatment interactions, I use a model in which the effect of the treatment varies with &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(20160124)
+
+simulate_RDD &amp;lt;- function(n = 2000, R = rnorm(n, mean = qnorm(.2))) {
+  n &amp;lt;- length(R)
+  T &amp;lt;- as.integer(R &amp;gt; 0)
+  X1 &amp;lt;- 10 + 0.6 * (R - qnorm(.2)) + rnorm(n, sd = sqrt(1 - 0.6^2))
+  X2 &amp;lt;- sample(LETTERS[1:4], n, replace = TRUE, prob = c(0.2, 0.3, 0.35, 0.15))
+  Y0 &amp;lt;- 0.4 * R + 0.1 * (X1 - 10) + c(A = 0, B = 0.30, C = 0.40, D = 0.55)[X2] + rnorm(n, sd = 0.9)
+  Y1 &amp;lt;- 0.35 + 0.3 * R + 0.18 * (X1 - 10) + c(A = -0.50, B = 0.30, C = 0.20, D = 0.60)[X2] + rnorm(n, sd = 0.9)
+  Y &amp;lt;- (1 - T) * Y0 + T * Y1
+  data.frame(R, T, X1, X2, Y0, Y1, Y)
+}
+
+RD_data &amp;lt;- simulate_RDD(n = 2000)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simple-rdd-analysis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Simple RDD analysis&lt;/h3&gt;
+&lt;p&gt;The main estimand in a sharp RDD is the marginal average treatment effect (MATE)—that is, the average effect of treatment assignment for units right at/near the threshold of eligibility. Even though I simulated a treatment response surface that depends on the covariates &lt;span class=&#34;math inline&#34;&gt;\(X_1,X_2\)&lt;/span&gt;, it is not necessary to control for them in order to identify the MATE. Rather, it is sufficient to use a local linear regression of the outcome on the running variable, treatment indicator, and their interaction:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \epsilon_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Typically, this regression is estimated using the observations within a certain bandwidth of the threshold, and using weights defined on the basis of some kernel. The default in the &lt;code&gt;rdd&lt;/code&gt; package is to use a triangular edge kernel, with bandwidth chosen using a formula proposed by Imbens and Kalyanaraman. The following code uses &lt;code&gt;rdd&lt;/code&gt; to estimate the MATE without controlling for covariates:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(rdd)
+bw &amp;lt;- with(RD_data, IKbandwidth(R, Y, cutpoint = 0))
+rdd_simple &amp;lt;- RDestimate(Y ~ R, data = RD_data, cutpoint = 0, bw = bw)
+summary(rdd_simple)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+## RDestimate(formula = Y ~ R, data = RD_data, cutpoint = 0, bw = bw)
+## 
+## Type:
+## sharp 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&amp;gt;|z|)    
+## LATE       1.0894     1177          0.3035    0.11323     2.680    0.007355  **
+## Half-BW    0.5447      611          0.2308    0.15471     1.492    0.135722    
+## Double-BW  2.1787     1832          0.2699    0.08968     3.010    0.002613  **
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1
+## 
+## F-statistics:
+##            F       Num. DoF  Denom. DoF  p        
+## LATE        37.73  3         1173        0.000e+00
+## Half-BW     12.64  3          607        1.006e-07
+## Double-BW  104.74  3         1828        0.000e+00&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using a bandwidth of 1.09, the estimated marginal average treatment effect is 0.303. The figure below illustrates the discontinuity:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/rdd-interactions_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rdd-with-covariates&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;RDD with covariates&lt;/h3&gt;
+&lt;p&gt;In practice, it is quite common for analysts to include additional covariates in the model specification. Doing so is not necessary for treatment effect identification, but can be useful for purposes of improving precision. For example, &lt;a href=&#34;http://doi.org/10.3368/jhr.50.1.108&#34;&gt;Cortes, Goodman, and Nomi (2015)&lt;/a&gt; use an RDD to estimate the effects of assigning low-performing 9th graders to double-dose algebra. Their main specifications include controls for student gender, race/ethnicity, free/reduced-price lunch status, etc. In the analysis that I’m working on, the data come from students nested within multiple schools, and so it seems sensible to include fixed effects for each school. There’s a direct analogy here to simple randomized experiments: the basic difference in means provides a randomization-unbiased estimate of the sample average treatment effect, but in practice it can be awfully useful to use an estimate from a model with additional covariates.&lt;/p&gt;
+&lt;p&gt;Returning to my simulated example, the following table reports the estimates generated by &lt;code&gt;RDestimate&lt;/code&gt; when controlling for neither, one, or both covariates.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;RD_est &amp;lt;- function(mod, covariates) {
+  RD_fit &amp;lt;- RDestimate(as.formula(paste(mod, covariates)), 
+                       data = RD_data, cutpoint = 0)
+  with(RD_fit, c(est = est[[1]], se = se[1], p = p[1]))
+}
+
+covariates &amp;lt;- list(&amp;quot;No covariates&amp;quot; = &amp;quot;&amp;quot;,
+                &amp;quot;X1 only&amp;quot; = &amp;quot;| X1&amp;quot;,
+                &amp;quot;X2 only&amp;quot; = &amp;quot;| X2&amp;quot;,
+                &amp;quot;X1 + X2&amp;quot; = &amp;quot;| X1 + X2&amp;quot;)
+
+library(plyr)
+ldply(covariates, RD_est, mod = &amp;quot;Y ~ R&amp;quot;, .id = &amp;quot;Specification&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Specification        est        se           p
+## 1 No covariates  0.3034839 0.1132266 0.007355079
+## 2       X1 only -0.6861864 0.8077039 0.395574210
+## 3       X2 only -0.2269958 0.1626996 0.162960539
+## 4       X1 + X2 -1.2529313 0.7315106 0.086749345&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Despite using identical bandwidths, the estimates are drastically different from each other, with standard errors that are much larger than for the simple estimate without covariates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;whats-going-on&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What’s going on?&lt;/h3&gt;
+&lt;p&gt;It is known that introducing covariates into an RDD analysis should have little effect on the MATE estimate (see, e.g., &lt;a href=&#34;http://doi.org/10.1257/jel.48.2.281&#34;&gt;Lee and Lemieux, 2010&lt;/a&gt;). It is therefore quite perplexing that the estimates in my example (and in the real study I was analyzing) were so sensitive. It turns out that this puzzling behavior arises because, for sharp RDDs only, &lt;code&gt;RDestimate&lt;/code&gt; always interacts the covariate(s) with the treatment indicator. Here is the relevant section of the function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;body(RDestimate)[[39]][[4]][[7]][[3]][[3]]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## if (!is.null(covs)) {
+##     data &amp;lt;- data.frame(Y, Tr, Xl, Xr, covs, w)
+##     form &amp;lt;- as.formula(paste(&amp;quot;Y~Tr+Xl+Xr+&amp;quot;, paste(&amp;quot;Tr*&amp;quot;, names(covs), 
+##         collapse = &amp;quot;+&amp;quot;, sep = &amp;quot;&amp;quot;), sep = &amp;quot;&amp;quot;))
+## } else {
+##     data &amp;lt;- data.frame(Y, Tr, Xl, Xr, w)
+##     form &amp;lt;- as.formula(Y ~ Tr + Xl + Xr)
+## }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For a generic covariate &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, the function uses the specification:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 X_i + \beta_5 X_i T_i + \epsilon_i, \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;while still taking &lt;span class=&#34;math inline&#34;&gt;\(\beta_2\)&lt;/span&gt; to represent the MATE. This is problematic because, as soon as the &lt;span class=&#34;math inline&#34;&gt;\(X_i T_i\)&lt;/span&gt; term is introduced into the model, &lt;span class=&#34;math inline&#34;&gt;\(\beta_2\)&lt;/span&gt; represents the difference between treated and untreated units at the threshold (where &lt;span class=&#34;math inline&#34;&gt;\(R_i = 0\)&lt;/span&gt;) and where &lt;span class=&#34;math inline&#34;&gt;\(X_i = 0\)&lt;/span&gt;. Thus, including the &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt; interaction in the model means that &lt;span class=&#34;math inline&#34;&gt;\(\beta_2\)&lt;/span&gt; is a difference extrapolated &lt;em&gt;way&lt;/em&gt; outside the support of the data, as in the following scatterplot of the outcome versus the covariate &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/rdd-interactions_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;RDestimate&lt;/code&gt; returns as the MATE estimate the difference between the regression lines when &lt;span class=&#34;math inline&#34;&gt;\(X_1 = 0\)&lt;/span&gt;, which in this example is -0.69. Similarly, including the &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt; interaction in the model means that &lt;span class=&#34;math inline&#34;&gt;\(\beta_2\)&lt;/span&gt; will represent the marginal average treatment effect for only one of the categories of &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt;, rather than as some sort of average across all four categories.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-to-do-about-this&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What to do about this&lt;/h3&gt;
+&lt;p&gt;If you’ve been using the &lt;code&gt;rdd&lt;/code&gt; package to analyze your data, I can think of a couple of ways to handle this issue, depending on whether you want to use a model that interacts the covariates with the treatment indicator. Here are some options:&lt;/p&gt;
+&lt;p&gt;First, suppose that you want to estimate a model that does NOT include covariate-by-treatment interactions. The most transparent (and thus probably safest) approach is to do the estimation “by hand,” so to speak. Specifically, Use the &lt;code&gt;rdd&lt;/code&gt; package to get kernel weights, but then estimate the outcome model using plain-old &lt;code&gt;lm&lt;/code&gt;. Here’s an example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(sandwich)
+library(lmtest)
+RD_data$wt &amp;lt;- kernelwts(RD_data$R, center = 0, bw = bw)
+MATE_model &amp;lt;- lm(Y ~ R + T + R * T + X1 + X2, weights = wt, data = subset(RD_data, wt &amp;gt; 0))
+coeftest(MATE_model, vcov. = vcovHC(MATE_model, type = &amp;quot;HC1&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## t test of coefficients:
+## 
+##              Estimate Std. Error t value  Pr(&amp;gt;|t|)    
+## (Intercept) -1.586191   0.374247 -4.2384 2.429e-05 ***
+## R            0.183542   0.136025  1.3493 0.1774938    
+## T            0.292284   0.107689  2.7142 0.0067422 ** 
+## X1           0.130973   0.034704  3.7739 0.0001688 ***
+## X2B          0.474403   0.091835  5.1658 2.813e-07 ***
+## X2C          0.549125   0.084991  6.4610 1.523e-10 ***
+## X2D          0.713331   0.096855  7.3649 3.338e-13 ***
+## R:T          0.283663   0.222801  1.2732 0.2032105    
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default, &lt;code&gt;RDestimate&lt;/code&gt; uses the HC1 variant of heteroskedasticity-robust standard errors. To exactly replicate its behavior, I used &lt;code&gt;coeftest&lt;/code&gt; from the &lt;code&gt;lmtest&lt;/code&gt; package, combined with &lt;code&gt;vcovHC&lt;/code&gt; from the &lt;code&gt;sandwich&lt;/code&gt; package. Note that it is also necessary to estimate the model based on the subset of observations with positive weight (otherwise the sandwich standard errors will misbehave).&lt;/p&gt;
+&lt;p&gt;An alternative to the first approach is to “trick” &lt;code&gt;RDestimate&lt;/code&gt; into using the desired model specification by using 2SLS estimation with &lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt; instrumenting itself. Because the function does not use covariate-by-treatment interactions for “fuzzy” RDDs, you get the correct model specification:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(RDestimate(Y ~ R + T| X1 + X2, data = RD_data, cutpoint = 0))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+## RDestimate(formula = Y ~ R + T | X1 + X2, data = RD_data, cutpoint = 0)
+## 
+## Type:
+## fuzzy 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&amp;gt;|z|)    
+## LATE       1.0894     1177          0.2923    0.10769     2.714    0.006644  **
+## Half-BW    0.5447      611          0.2041    0.14911     1.369    0.171103    
+## Double-BW  2.1787     1832          0.2703    0.08447     3.200    0.001374  **
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1
+## 
+## F-statistics:
+##            F      Num. DoF  Denom. DoF  p        
+## LATE       31.24  7         1169        7.490e-40
+## Half-BW    13.84  7          603        1.110e-16
+## Double-BW  68.36  7         1824        7.919e-88&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The results based on the first bandwidth agree with the results from &lt;code&gt;lm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now, suppose that you DO want to retain the covariate-by-treatment interactions in the model, while also estimating the MATE. To do this, you can use what I call “the centering trick,” which entails centering each covariate at the sample average (in this case, the locally-weighted sample average). For a generic covariate &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, let&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\bar{x} = \frac{\sum_{i=1}^n w_i X_i}{\sum_{i=1}^n w_i},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; is the kernel weight for unit &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;. Then estimate the model&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 \left(X_i - \bar{x}\right) + \beta_5 \left(X_i - \bar{x}\right) T_i + \epsilon_i, \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The coefficient on &lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt; now corresponds to the MATE. Here’s R code that implements this approach:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;covariate_mat &amp;lt;- model.matrix(~ X1 + X2, data = RD_data)[,-1]
+covariate_cent &amp;lt;- apply(covariate_mat, 2, function(x) x - weighted.mean(x, w = RD_data$wt))
+RD_data &amp;lt;- data.frame(subset(RD_data, select = c(R, Y, T)), covariate_cent)
+
+covariates_cent &amp;lt;- list(&amp;quot;No covariates&amp;quot; = &amp;quot;&amp;quot;,
+                &amp;quot;X1 only&amp;quot; = &amp;quot;| X1&amp;quot;,
+                &amp;quot;X2 only&amp;quot; = &amp;quot;| X2B + X2C + X2D&amp;quot;,
+                &amp;quot;X1 + X2&amp;quot; = &amp;quot;| X1 + X2B + X2C + X2D&amp;quot;)
+
+ldply(covariates_cent, RD_est, mod = &amp;quot;Y ~ R&amp;quot;, .id = &amp;quot;Specification&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Specification       est        se           p
+## 1 No covariates 0.3034839 0.1132266 0.007355079
+## 2       X1 only 0.2913246 0.1125398 0.009635680
+## 3       X2 only 0.3107688 0.1071302 0.003721488
+## 4       X1 + X2 0.2981428 0.1065888 0.005155864&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The estimates are now insensitive to the inclusion of the (properly centered) covariates, just as in the no-interactions model. In this example, the standard errors from the model that includes covariate-by-treatment interactions are just ever so slightly smaller than those from the model without interactions.&lt;/p&gt;
+&lt;p&gt;Why does this third approach work? I’ll explain more in a later post…&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Clustered standard errors and hypothesis tests in fixed effects models</title>
+      <link>/clubsandwich-for-crve-fe/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/clubsandwich-for-crve-fe/</guid>
+      <description>
+
+
+&lt;p&gt;I’ve recently been working with my colleague &lt;a href=&#34;http://blogs.cuit.columbia.edu/let2119/&#34;&gt;Beth Tipton&lt;/a&gt; on methods for cluster-robust variance estimation in the context of some common econometric models, focusing in particular on fixed effects models for panel data—or what statisticians would call “longitudinal data” or “repeated measures.” We have a new working paper, which you can &lt;a href=&#34;/files/Pustejovsky-Tipton-201601.pdf&#34;&gt;find here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The importance of using CRVE (i.e., “clustered standard errors”) in panel models is now widely recognized. Less widely recognized, perhaps, is the fact that standard methods for constructing hypothesis tests and confidence intervals based on CRVE can perform quite poorly in when you have only a limited number of independent clusters. What’s worse, it can be hard to determine what counts as a large-enough sample to trust standard CRVE methods, because the finite-sample behavior of the variance estimators and test statistics depends on the configuration of the covariates, not just the total sample size. For example, suppose you have state-level panel data from 50 states across 15 years and are trying to estimate the effect of some policy using difference-in-differences. If only 5 or 6 states have variation in the policy variable over time, then you’re almost certainly in small-sample territory. And the sample size issues can be subtler than this, too, as I’ll show below.&lt;/p&gt;
+&lt;p&gt;One solution to this problem is to use bias-reduced linearization (BRL), which was proposed by Bell and McCaffrey (2002) and has recently begun to receive attention from econometricians (e.g., Cameron &amp;amp; Miller, 2015; Imbens &amp;amp; Kolesar, 2015). The idea of BRL is to correct the bias of standard CRVE based on a working model, and then to use a degrees-of-freedom correction for Wald tests based on the bias-reduced CRVE. That may seem silly (after all, the whole point of CRVE is to avoid making distributional assumptions about the errors in your model), but it turns out that the correction can help quite a bit, even when the working model is wrong. The degrees-of-freedom correction is based on a standard Satterthwaite-type approximation, and also relies on the working model. There’s now quite a bit of evidence (which we review in the working paper) that BRL performs well even in samples with a small number of clusters.&lt;/p&gt;
+&lt;p&gt;In the working paper, we make two contributions to all this:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;One problem with Bell and McCaffrey’s original formulation of BRL is that it does not work in some very common models for panel data, such as state-by-year panels that include fixed effects for each state and each year (Angrist and Pischke, 2009, point out this issue in their chapter on “non-standard standard error issues”). We propose a generalization of BRL that works even in models with arbitrary sets of fixed effects. We also address how to calculate the correction when the regression is fit using the “within” estimator, after absorbing the fixed effects.&lt;/li&gt;
+&lt;li&gt;We propose a method for testing hypotheses that involve multiple parameter constraints (which, in classical linear regression, you would test with an F statistic). The method involves approximating the distribution of the cluster-robust Wald statistic using Hotelling’s T-squared distribution (a multiple of an F distribution), where the denominator degrees of freedom are estimated based on the working model. For one-parameter constraints, the test reduces to a t-test with Satterthwaite degrees of freedom, and so it is a natural extension of the existing BRL methods.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The paper explains all this in greater detail, and also reports a fairly extensive simulation study that we designed to emuluate the types of covariates and study designs encountered in micro-economic applications. We’ve also got &lt;a href=&#34;https://github.com/jepusto/clubSandwich&#34;&gt;an R package&lt;/a&gt; that implements our methods (plus some other variants of CRVE, which I’ll explain some other time) in a fairly streamlined way. Here’s an example of how to use the package to do inference for a fixed effects panel data model.&lt;/p&gt;
+&lt;div id=&#34;effects-of-changing-the-minimum-legal-drinking-age&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Effects of changing the minimum legal drinking age&lt;/h2&gt;
+&lt;p&gt;Carpenter and Dobkin (2011) analyzed the effects of changes in the minimum legal drinking age on rates of motor vehicle fatalies among 18-20 year olds, using state-level panel data from the National Highway Traffic Administration’s Fatal Accident Reporting System. In their new textbook, Angrist and Pischke (2014) developed a stylized example based on Carpenter and Dobkin’s work. I’ll use Angrist and Pischke’s data and follow their analysis, just because their data are &lt;a href=&#34;http://masteringmetrics.com/resources/&#34;&gt;easily available&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The outcome is the incidence of deaths in motor vehicle crashes among 18-20 year-olds (per 100,000 residents), for each state plus the District of Columbia, over the period 1970 to 1983. Tthere were several changes in the minimum legal drinking age during this time period, with variability in the timing of changes across states. Angrist and Pischke (following Carpenter and Dobkin) use a difference-in-differences strategy to estimate the effects of lowering the minimum legal drinking age from 21 to 18. A basic specification is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_{it} = \alpha_i + \beta_t + \gamma r_{it} + \epsilon_{it},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;for &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; = 1,…,51 and &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; = 1970,…,1983. In this model, &lt;span class=&#34;math inline&#34;&gt;\(\alpha_i\)&lt;/span&gt; is a state-specific fixed effect, &lt;span class=&#34;math inline&#34;&gt;\(\beta_t\)&lt;/span&gt; is a year-specific fixed effect, &lt;span class=&#34;math inline&#34;&gt;\(r_{it}\)&lt;/span&gt; is the proportion of 18-20 year-olds in state &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in year &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; who are legally allowed to drink, and &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt; captures the effect of shifting the minimum legal drinking age from 21 to 18. Following Angrist and Pischke’s analysis, I’ll estimate this model both by (unweighted) OLs and by weighted least squares with weights corresponding to population size in a given state and year.&lt;/p&gt;
+&lt;div id=&#34;unweighted-ols&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Unweighted OLS&lt;/h3&gt;
+&lt;p&gt;The following code does some simple data-munging and the estimates the model by OLS:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# get data from Angrist &amp;amp; Pischke&amp;#39;s website
+library(foreign)
+deaths &amp;lt;- read.dta(&amp;quot;http://masteringmetrics.com/wp-content/uploads/2015/01/deaths.dta&amp;quot;, convert.factors=FALSE)
+
+# subset for 18-20 year-olds, deaths in motor vehicle accidents
+MVA_deaths &amp;lt;- subset(deaths, agegr==2 &amp;amp; dtype==2 &amp;amp; year &amp;lt;= 1983, select = c(-dtype, -agegr))
+
+# fit by OLS
+lm_unweighted &amp;lt;- lm(mrate ~ 0 + legal + factor(state) + factor(year), data = MVA_deaths)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;coef_test&lt;/code&gt; function from &lt;code&gt;clubSandwich&lt;/code&gt; can then be used to test the hypothesis that changing the minimum legal drinking age has no effect on motor vehicle deaths in this cohort (i.e., &lt;span class=&#34;math inline&#34;&gt;\(H_0: \gamma = 0\)&lt;/span&gt;). The usual way to test this is to cluster the standard errors by state, calculate the robust Wald statistic, and compare that to a standard normal reference distribution. The code and results are as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# devtools::install_github(&amp;quot;jepusto/clubSandwich&amp;quot;) # install the clubSandwich package
+library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(lm_unweighted, vcov = &amp;quot;CR1&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;z&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal     7.59 2.38   3.19   0.00143   **&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our work argues shows that a better approach would be to use the bias-reduced linearization CRVE, together with Satterthwaite degrees of freedom. In the package, the BRL adjustment is called “CR2” because it is directly analogous to the HC2 correction used in heteroskedasticity-robust variance estimation. When applied to an OLS model estimated by &lt;code&gt;lm&lt;/code&gt;, the default working model is an identity matrix, which amounts to the “working” assumption that the errors are all uncorrelated and homoskedastic. Here’s how to apply this approach in the example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(lm_unweighted, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;Satterthwaite&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal     7.59 2.43   3.12 25.7      0.00442   **&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The Satterthwaite degrees of freedom will be different for each coefficient in the model, and so the &lt;code&gt;coef_test&lt;/code&gt; function reports them right alongside the standard error. In this case, the degrees of freedom are about half of what you might expect, given that there are 51 clusters. The p-value for the CR2+Satterthwaite test is about twice as large as the p-value based on the standard Wald test. But of course, the coefficient is still statistically significant at conventional levels, and so the inference doesn’t change.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unweighted-within-estimation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Unweighted “within” estimation&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;plm&lt;/code&gt; package in R provides another way to estimate the same model. It is convenient because it absorbs the state and year fixed effects before estimating the effect of &lt;code&gt;legal&lt;/code&gt;. The &lt;code&gt;clubSandwich&lt;/code&gt; package works with fitted &lt;code&gt;plm&lt;/code&gt; models too:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(plm)
+plm_unweighted &amp;lt;- plm(mrate ~ legal, data = MVA_deaths, 
+                      effect = &amp;quot;twoways&amp;quot;, index = c(&amp;quot;state&amp;quot;,&amp;quot;year&amp;quot;))
+coef_test(plm_unweighted, vcov = &amp;quot;CR1S&amp;quot;, cluster = &amp;quot;individual&amp;quot;, test = &amp;quot;z&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal     7.59 2.38   3.19   0.00143   **&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(plm_unweighted, vcov = &amp;quot;CR2&amp;quot;, cluster = &amp;quot;individual&amp;quot;, test = &amp;quot;Satterthwaite&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal     7.59 2.43   3.12 25.7      0.00442   **&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For the standard approach, I’ve used the variant of the correction factor implemented in Stata (called &lt;code&gt;CR1S&lt;/code&gt; in the &lt;code&gt;clubSandwich&lt;/code&gt; package), but this makes very little difference in the standard error or the p-value. For the test based on CR2, the degrees of freedom are slightly different than the results based on the fitted &lt;code&gt;lm&lt;/code&gt; model, but the p-values agree to four decimals. The differences in degrees of freedom are due to numerical imprecision in the calculations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;population-weighted-estimation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Population-weighted estimation&lt;/h3&gt;
+&lt;p&gt;The difference between the standard method and the new method are not terribly exciting in the above example. However, things change quite a bit if the model is estimated using population weights. As far as I know, &lt;code&gt;plm&lt;/code&gt; does not handle weighted least squares, and so I go back to fitting in &lt;code&gt;lm&lt;/code&gt; with dummies for all the fixed effects.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;lm_weighted &amp;lt;- lm(mrate ~ 0 + legal + factor(state) + factor(year), 
+                  weights = pop, data = MVA_deaths)
+coef_test(lm_weighted, vcov = &amp;quot;CR1&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;z&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal      7.5 2.16   3.47    &amp;lt;0.001  ***&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(lm_weighted, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;Satterthwaite&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate  SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal      7.5 2.3   3.27 8.65       0.0103    *&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using population weights slightly reduces the point estimate of the effect, while also slightly increasing its precision. If you were following the standard approach, you would probably be happy with the weighted estimates and wouldn’t think about it any further. However, our recommended approach—using the CR2 variance estimator and Satterthwaite correction—produces a p-value that is an order of magnitude larger (though still significant at the conventional 5% level). The degrees of freedom are just 8.6—drastically smaller than would be expected based on the number of clusters.&lt;/p&gt;
+&lt;p&gt;Even with weights, the &lt;code&gt;coef_test&lt;/code&gt; function uses an “independent, homoskedastic” working model as a default for &lt;code&gt;lm&lt;/code&gt; objects. In the present example, the outcome is a standardized rate and so a better assumption might be that the error variances are inversely proportional to population size. The following code uses this alternate working model:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(lm_weighted, vcov = &amp;quot;CR2&amp;quot;, 
+          cluster = MVA_deaths$state, target = 1 / MVA_deaths$pop, 
+          test = &amp;quot;Satterthwaite&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate  SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal      7.5 2.2   3.41   13      0.00467   **&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The new working model leads to slightly smaller standard errors and a couple of additional degrees of freedom, though we remain in small-sample territory.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;robust-hausman-test&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Robust Hausman test&lt;/h3&gt;
+&lt;p&gt;CRVE is also used in specification tests, as in the Hausman-type test for endogeneity of unobserved effects. Suppose that the model includes an additional control for the beer taxation rate in state &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; at time &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;, denoted &lt;span class=&#34;math inline&#34;&gt;\(s_{it}\)&lt;/span&gt;. The (unweighted) fixed effects model is then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_{it} = \alpha_i + \beta_t + \gamma_1 r_{it} + \gamma_2 s_{it} + \epsilon_{it},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and the estimated effects are as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;lm_FE &amp;lt;- lm(mrate ~ 0 + legal + beertaxa + factor(state) + factor(year), data = MVA_deaths)
+coef_test(lm_FE, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;Satterthwaite&amp;quot;)[c(&amp;quot;legal&amp;quot;,&amp;quot;beertaxa&amp;quot;),]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      Coef. Estimate   SE t-stat  d.f. p-val (Satt) Sig.
+## 1    legal     7.59 2.51  3.019 24.58      0.00583   **
+## 2 beertaxa     3.82 5.27  0.725  5.77      0.49663&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the unobserved effects &lt;span class=&#34;math inline&#34;&gt;\(\alpha_1,...,\alpha_{51}\)&lt;/span&gt; are uncorrelated with the regressors, then a more efficient way to estimate &lt;span class=&#34;math inline&#34;&gt;\(\gamma_1,\gamma_2\)&lt;/span&gt; is by weighted least squares, with weights based on a random effects model. However, if the unobserved effects covary with &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{r}_i, \mathbf{s}_i\)&lt;/span&gt;, then the random-effects estimates will be biased.&lt;/p&gt;
+&lt;p&gt;We can test for whether endogeneity is a problem by including group-centered covariates as additional regressors. Let &lt;span class=&#34;math inline&#34;&gt;\(\tilde{r}_{it} = r_{it} - \frac{1}{T}\sum_t r_{it}\)&lt;/span&gt;, with &lt;span class=&#34;math inline&#34;&gt;\(\tilde{s}_{it}\)&lt;/span&gt; defined analogously. Now estimate the regression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_{it} = \beta_t + \gamma_1 r_{it} + \gamma_2 s_{it} + \delta_1 \tilde{r}_{it} + \delta_2 \tilde{s}_{it} + \epsilon_{it},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;which does not include state fixed effects. The parameters &lt;span class=&#34;math inline&#34;&gt;\(\delta_1,\delta_2\)&lt;/span&gt; represent the differences between the random effects and fixed effects estimands of &lt;span class=&#34;math inline&#34;&gt;\(\gamma_1, \gamma_2\)&lt;/span&gt;. If these are both zero, then the random effects estimator is unbiased. Thus, the joint test for &lt;span class=&#34;math inline&#34;&gt;\(H_0: \delta_1 = \delta_2 = 0\)&lt;/span&gt; amounts to a test for non-endogeneity of the unobserved effects.&lt;/p&gt;
+&lt;p&gt;For efficiency, we should estimate this using weighted least squares, but OLS will work too:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;MVA_deaths &amp;lt;- within(MVA_deaths, {
+  legal_cent &amp;lt;- legal - tapply(legal, state, mean)[factor(state)]
+  beer_cent &amp;lt;- beertaxa - tapply(beertaxa, state, mean)[factor(state)]
+})
+
+lm_Hausman &amp;lt;- lm(mrate ~ 0 + legal + beertaxa + legal_cent + beer_cent + factor(year), data = MVA_deaths)
+coef_test(lm_Hausman, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;Satterthwaite&amp;quot;)[1:4,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        Coef. Estimate   SE  t-stat  d.f. p-val (Satt) Sig.
+## 1      legal   -9.180 7.62 -1.2042 24.94       0.2398     
+## 2   beertaxa    3.395 9.40  0.3613  6.44       0.7295     
+## 3 legal_cent   16.768 8.53  1.9665 33.98       0.0575    .
+## 4  beer_cent    0.424 9.25  0.0458  5.86       0.9650&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To conduct a joint test on the centered covariates, we can use the &lt;code&gt;Wald_test&lt;/code&gt; function. The usual way to test this hypothesis would be to use the &lt;code&gt;CR1&lt;/code&gt; variance estimator to calculate the robust Wald statistic, then use a &lt;span class=&#34;math inline&#34;&gt;\(\chi^2_2\)&lt;/span&gt; reference distribution (or equivalently, compare a re-scaled Wald statistic to an &lt;span class=&#34;math inline&#34;&gt;\(F(2,\infty)\)&lt;/span&gt; distribution). The &lt;code&gt;Wald_test&lt;/code&gt; function reports the latter version:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Wald_test(lm_Hausman, constraints = c(&amp;quot;legal_cent&amp;quot;,&amp;quot;beer_cent&amp;quot;), vcov = &amp;quot;CR1&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;chi-sq&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    Test    F d.f.  p.val
+##  chi-sq 2.93  Inf 0.0534&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The test is just shy of significance at the 5% level. If we instead use the &lt;code&gt;CR2&lt;/code&gt; variance estimator and our newly proposed approximate F-test (which is the default in &lt;code&gt;Wald_test&lt;/code&gt;), then we get:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Wald_test(lm_Hausman, constraints = c(&amp;quot;legal_cent&amp;quot;,&amp;quot;beer_cent&amp;quot;), vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  Test    F d.f. p.val
+##   HTZ 2.57 12.4 0.117&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The low degrees of freedom of the test indicate that we’re definitely in small-sample territory and should not trust the asymptotic &lt;span class=&#34;math inline&#34;&gt;\(\chi^2\)&lt;/span&gt; approximation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Angrist, J. D., &amp;amp; Pischke, J.-S. (2009). &lt;em&gt;Mostly harmless econometrics: An empiricist’s companion&lt;/em&gt;. Princeton, NJ: Princeton University Press.&lt;/li&gt;
+&lt;li&gt;Angrist, J. D. and Pischke, J.-S. (2014). &lt;em&gt;Mastering ’metrics: The Path from Cause to Effect&lt;/em&gt;. Princeton, NJ: Princeton University Press.&lt;/li&gt;
+&lt;li&gt;Bell, R. M., &amp;amp; McCaffrey, D. F. (2002). Bias reduction in standard errors for linear regression with multi-stage samples. &lt;em&gt;Survey Methodology, 28&lt;/em&gt;(2), 169-181.&lt;/li&gt;
+&lt;li&gt;Cameron, A. C., &amp;amp; Miller, D. L. (2015). A practitioner’s guide to cluster-robust inference. URL: &lt;a href=&#34;http://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf&#34; class=&#34;uri&#34;&gt;http://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Carpenter, C., &amp;amp; Dobkin, C. (2011). The minimum legal drinking age and public health. &lt;em&gt;Journal of Economic Perspectives, 25&lt;/em&gt;(2), 133-156. &lt;a href=&#34;doi:10.1257/jep.25.2.133&#34; class=&#34;uri&#34;&gt;doi:10.1257/jep.25.2.133&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Imbens, G. W., &amp;amp; Kolesar, M. (2015). Robust standard errors in small samples: Some practical advice. URL: &lt;a href=&#34;https://www.princeton.edu/~mkolesar/papers/small-robust.pdf&#34; class=&#34;uri&#34;&gt;https://www.princeton.edu/~mkolesar/papers/small-robust.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

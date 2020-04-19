@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sandwich | James E. Pustejovsky</title>
+    <link>/tags/sandwich/</link>
+      <atom:link href="/tags/sandwich/index.xml" rel="self" type="application/rss+xml" />
+    <description>sandwich</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>sandwich</title>
+      <link>/tags/sandwich/</link>
+    </image>
+    
+    <item>
+      <title>clubSandwich</title>
+      <link>/software/clubsandwich/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/clubsandwich/</guid>
+      <description>&lt;p&gt;R and Stata packages for calculating cluster-robust variance estimators (i.e., sandwich estimators) with small-sample corrections, including the bias-reduced linearization estimator of 
+&lt;a href=&#34;http://www.statcan.gc.ca/pub/12-001-x/2002002/article/9058-eng.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bell and McCaffrey (2002)&lt;/a&gt; and extensions proposed in 
+&lt;a href=&#34;http://psycnet.apa.org/record/2014-14616-001&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tipton (2015)&lt;/a&gt;, 
+&lt;a href=&#34;/publication/rve-for-meta-regression/&#34;&gt;Tipton and Pustejovsky (2015)&lt;/a&gt;, and 
+&lt;a href=&#34;/publication/rve-in-fixed-effects-models/&#34;&gt;Pustejovsky and Tipton (2016)&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R package 
+&lt;a href=&#34;https://cran.r-project.org/package=clubSandwich&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/clubSandwich&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stata package 
+&lt;a href=&#34;https://ideas.repec.org/c/boc/bocode/s458352.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on the SSC Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/clubSandwich-Stata&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stata source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

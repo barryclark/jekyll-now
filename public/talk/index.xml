@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentations &amp; Posters | James E. Pustejovsky</title>
+    <link>/talk/</link>
+      <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Presentations &amp; Posters</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 22 Jul 2019 13:30:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Presentations &amp; Posters</title>
+      <link>/talk/</link>
+    </image>
+    
+    <item>
+      <title>A generalized excess significance test for selective outcome reporting with dependent effect sizes</title>
+      <link>/talk/srsm-2019-generalized-excess-significance-test/</link>
+      <pubDate>Mon, 22 Jul 2019 13:30:00 +0000</pubDate>
+      <guid>/talk/srsm-2019-generalized-excess-significance-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log response ratio effect sizes: Rationale and methods for single case designs with behavioral outcomes</title>
+      <link>/talk/abai-2019-log-response-ratios/</link>
+      <pubDate>Sun, 26 May 2019 17:00:00 +0000</pubDate>
+      <guid>/talk/abai-2019-log-response-ratios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating meta-analytic methods to detect outcome reporting bias in the presence of dependent effect sizes</title>
+      <link>/talk/aera-2019-orb-dependence/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2019-orb-dependence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An examination of measurement procedures and baseline behavioral outcomes in single-case research</title>
+      <link>/talk/aera-2019-outcome-measurement-procedures/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2019-outcome-measurement-procedures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of response-guided designs on count outcomes in single-case design baselines</title>
+      <link>/talk/aera-2019-response-guided-algorithms/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2019-response-guided-algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small-sample cluster-robust variance estimators for two-stage least squares models</title>
+      <link>/talk/sree-2019-2sls-crve/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/sree-2019-2sls-crve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Combining robust variance estimation with models for dependent effect sizes</title>
+      <link>/talk/utaustin-2018-combining-rve-with-models/</link>
+      <pubDate>Mon, 01 Oct 2018 12:00:00 +0000</pubDate>
+      <guid>/talk/utaustin-2018-combining-rve-with-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Combining robust variance estimation with models for dependent effect sizes</title>
+      <link>/talk/srsm-2018-combining-rve-with-models/</link>
+      <pubDate>Wed, 18 Jul 2018 09:00:00 +0000</pubDate>
+      <guid>/talk/srsm-2018-combining-rve-with-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta-analysis of dependent effects: A review and consolidation of methods</title>
+      <link>/talk/aera-2018-dependent-effects/</link>
+      <pubDate>Sun, 15 Apr 2018 08:15:00 +0000</pubDate>
+      <guid>/talk/aera-2018-dependent-effects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta-analysis of single-case research: A brief and breezy tour</title>
+      <link>/talk/aera-2018-meta-analysis-of-single-case-research/</link>
+      <pubDate>Sun, 15 Apr 2018 08:15:00 +0000</pubDate>
+      <guid>/talk/aera-2018-meta-analysis-of-single-case-research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A gradual effects model for single case designs</title>
+      <link>/talk/ies-2018-gradual-effects-model/</link>
+      <pubDate>Wed, 10 Jan 2018 08:15:00 +0000</pubDate>
+      <guid>/talk/ies-2018-gradual-effects-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Randomization inference for single-case experimental designs</title>
+      <link>/talk/ies-2018-randomization-inference/</link>
+      <pubDate>Wed, 10 Jan 2018 08:15:00 +0000</pubDate>
+      <guid>/talk/ies-2018-randomization-inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heteroskedasticity-robust tests in linear regression: A review and evaluation of small-sample corrections</title>
+      <link>/talk/aera-2017-hc-t-tests/</link>
+      <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2017-hc-t-tests/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A nonlinear intervention analysis model for treatment reversal single-case designs</title>
+      <link>/talk/aera-2017-intervention-analysis/</link>
+      <pubDate>Fri, 28 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2017-intervention-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using response ratios for meta-analyzing single-case designs with behavioral outcomes</title>
+      <link>/talk/aera-2017-response-ratios/</link>
+      <pubDate>Fri, 28 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2017-response-ratios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small sample corrections for use of cluster-robust standard errors in the analysis of school-based experiments</title>
+      <link>/talk/sree-2017-small-sample-corrections/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/sree-2017-small-sample-corrections/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effect sizes for single-case research</title>
+      <link>/talk/ies-2016-single-case-effect-sizes/</link>
+      <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/ies-2016-single-case-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small-sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models</title>
+      <link>/talk/jsm-2016-small-sample-crve/</link>
+      <pubDate>Sun, 31 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/jsm-2016-small-sample-crve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When large samples act small: The importance of small-sample adjustments for cluster-robust inference in impact evaluations</title>
+      <link>/talk/air-2016-when-large-samples-act-small/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/air-2016-when-large-samples-act-small/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When large samples act small: Cluster-robust variance estimation and hypothesis testing with few clusters</title>
+      <link>/talk/prc-2016-when-large-samples-act-small/</link>
+      <pubDate>Fri, 19 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/prc-2016-when-large-samples-act-small/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small-sample adjustments for multiple-contrast hypothesis tests of meta-regressions using robust variance estimation</title>
+      <link>/talk/srsm-2015-small-sample-adjustments/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/srsm-2015-small-sample-adjustments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operational sensitivities of non-overlap effect sizes for single-case experimental designs</title>
+      <link>/talk/aera-2015-operational-sensitivities/</link>
+      <pubDate>Sun, 19 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2015-operational-sensitivities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small-sample adjustments for F-tests using robust variance estimation in meta-regression</title>
+      <link>/talk/aera-2015-small-sample-adjustments/</link>
+      <pubDate>Sat, 18 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2015-small-sample-adjustments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Observation procedures and Markov Chain models for estimating the prevalence and incidence of a state behavior</title>
+      <link>/talk/aera-2015-observation-procedures/</link>
+      <pubDate>Thu, 16 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2015-observation-procedures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression</title>
+      <link>/talk/sree-2015-small-sample-adjustments/</link>
+      <pubDate>Fri, 06 Mar 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/sree-2015-small-sample-adjustments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Four methods of analyzing partial interval recording data, with application to single-case research</title>
+      <link>/talk/aera-2014-four-methods-for-pir/</link>
+      <pubDate>Fri, 04 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2014-four-methods-for-pir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Addressing construct invalidity in partial interval recording data</title>
+      <link>/talk/tuesap-2014-construct-invalidity-of-pir/</link>
+      <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/tuesap-2014-construct-invalidity-of-pir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On internal validity in multiple baseline designs</title>
+      <link>/talk/sree-2014-internal-validity-of-mbd/</link>
+      <pubDate>Thu, 06 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/sree-2014-internal-validity-of-mbd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Some Markov models for direct observation of behavior</title>
+      <link>/talk/nu-stats-2013-markov-models-for-direct-observation/</link>
+      <pubDate>Wed, 29 May 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/nu-stats-2013-markov-models-for-direct-observation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effect sizes and measurement comparability for meta-analysis of single-case research</title>
+      <link>/talk/abai-2013-effect-sizes/</link>
+      <pubDate>Tue, 28 May 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/abai-2013-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Observation procedures and Markov chain models for estimating the prevalence and incidence of a behavior</title>
+      <link>/talk/aera-2013-observation-procedures/</link>
+      <pubDate>Tue, 30 Apr 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/aera-2013-observation-procedures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operationally comparable effect sizes for meta-analysis of single-case research</title>
+      <link>/talk/sree-2013-operationally-comparable-effect-sizes/</link>
+      <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/sree-2013-operationally-comparable-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Some implications of behavioral observation procedures for meta-analysis of single-case research</title>
+      <link>/talk/ut-austin-2012-meta-analysis-of-single-case-research/</link>
+      <pubDate>Wed, 14 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>/talk/ut-austin-2012-meta-analysis-of-single-case-research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Question-order effects in social network name generators</title>
+      <link>/talk/issna-2008-question-order-effects/</link>
+      <pubDate>Wed, 23 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/talk/issna-2008-question-order-effects/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

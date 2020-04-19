@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elizabeth Tipton | James E. Pustejovsky</title>
+    <link>/authors/elizabeth-tipton/</link>
+      <atom:link href="/authors/elizabeth-tipton/index.xml" rel="self" type="application/rss+xml" />
+    <description>Elizabeth Tipton</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 07 Jan 2019 00:00:00 -0600</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Elizabeth Tipton</title>
+      <link>/authors/elizabeth-tipton/</link>
+    </image>
+    
+    <item>
+      <title>Current practices in meta-regression in psychology, education, and medicine</title>
+      <link>/publication/current-practices-in-meta-regression/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 -0600</pubDate>
+      <guid>/publication/current-practices-in-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A history of meta-regression: Technical, conceptual, and practical developments between 1974 and 2018</title>
+      <link>/publication/history-of-meta-regression/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 -0600</pubDate>
+      <guid>/publication/history-of-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models</title>
+      <link>/publication/rve-in-fixed-effects-models/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 -0500</pubDate>
+      <guid>/publication/rve-in-fixed-effects-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression</title>
+      <link>/publication/rve-for-meta-regression/</link>
+      <pubDate>Tue, 15 Dec 2015 00:00:00 -0600</pubDate>
+      <guid>/publication/rve-for-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

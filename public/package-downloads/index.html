@@ -1,0 +1,1412 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James E. Pustejovsky">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I’ve developed, how to understand the extent to which people are using them, how they’re being used, and so on.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/package-downloads/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/package-downloads/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@jepusto">
+  <meta property="twitter:creator" content="@jepusto">
+  
+  <meta property="og:site_name" content="James E. Pustejovsky">
+  <meta property="og:url" content="/package-downloads/">
+  <meta property="og:title" content="CRAN downloads of my packages | James E. Pustejovsky">
+  <meta property="og:description" content="At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I’ve developed, how to understand the extent to which people are using them, how they’re being used, and so on."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-04-09T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-04-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/package-downloads/"
+  },
+  "headline": "CRAN downloads of my packages",
+  
+  "datePublished": "2019-04-09T00:00:00Z",
+  "dateModified": "2019-04-09T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "James E. Pustejovsky"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "University of Texas at Austin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I’ve developed, how to understand the extent to which people are using them, how they’re being used, and so on."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>CRAN downloads of my packages | James E. Pustejovsky</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">James E. Pustejovsky</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Presentations</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#software"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/Pustejovsky-CV.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Topics</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>CRAN downloads of my packages</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/authors/admin/">James E. Pustejovsky</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2019-04-09
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<p>At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I’ve developed, how to understand the extent to which people are using them, how they’re being used, and so on. I’ve had badges on my github repos for a while now:</p>
+<ul>
+<li>clubSandwich: <a href="https://CRAN.R-project.org/package=clubSandwich"><img src = "https://cranlogs.r-pkg.org/badges/last-month/clubSandwich" style="display: inline-block; margin:0;"/></a></li>
+<li>ARPobservation: <a href="https://CRAN.R-project.org/package=ARPobservation"><img src = "https://cranlogs.r-pkg.org/badges/last-month/ARPobservation" style="display: inline-block; margin:0;"/></a></li>
+<li>scdhlm: <a href="https://CRAN.R-project.org/package=scdhlm"><img src = "https://cranlogs.r-pkg.org/badges/last-month/scdhlm" style="display: inline-block; margin:0;"/></a></li>
+<li>SingleCaseES: <a href="https://CRAN.R-project.org/package=SingleCaseES"><img src = "https://cranlogs.r-pkg.org/badges/last-month/SingleCaseES" style="display: inline-block; margin:0;"/></a></li>
+</ul>
+<p>These statistics come from the <a href="https://www.r-pkg.org/">METACRAN</a> site, which makes available data on daily downloads of all packages on CRAN (one of the main repositories for sharing R packages). The downloads are from the RStudio mirror of CRAN, which is only one of many mirrors around the world. Although the data do not represent complete tallies of all package downloads, they are nonetheless the best available source that I’m aware of.</p>
+<p>The thing is, the download numbers are rather hard to interpret. Beyond knowing that somebody out there is at least <em>trying</em> to use the tools I’ve made, it’s pretty hard to gauge whether 300 or 3000 or 3 million downloads a month is a good usage level. In this post, I’ll attempt to put just a little bit of context around these numbers. Emphasis on <em>little bit</em>, as I’m not all that satisfied with what I’ll show below, but at least it’s something beyond four numbers floating in the air.</p>
+<div id="getting-package-download-data" class="section level3">
+<h3>Getting package download data</h3>
+<p>I used the <code>cranlogs</code> package to get daily download counts of all currently available CRAN packages over the period 2018-04-06 through 2019-04-06. I then limited the sample to packages that had been downloaded at least once between 2018-04-06 and 2018-10-05. This had the effect of excluding about 1000 packages that were either only recently added to CRAN or that had been discontinued but were still sitting on CRAN.</p>
+<pre class="r"><code>library(tidyverse)
+library(lubridate)
+library(cranlogs)
+
+to_date &lt;- &quot;2019-04-06&quot;
+from_date &lt;- as.character(as_date(to_date) - duration(1, &quot;year&quot;))
+file_name &lt;- paste0(&quot;CRAN package downloads &quot;, to_date, &quot;.rds&quot;)
+
+pkg_downloads &lt;-
+  available.packages() %&gt;%
+  as_tibble() %&gt;%
+  select(Package, Version) %&gt;%
+  mutate(grp = 1 + trunc((row_number() - 1) / 100)) %&gt;%
+  nest(Package, Version) %&gt;%
+  mutate(downloads = map(.$data, ~ cran_downloads(packages = .$Package, 
+                                                  from = from_date, 
+                                                  to = to_date))) %&gt;%
+  select(-data) %&gt;%
+  unnest()</code></pre>
+<pre class="r"><code>downloaded_last_yr &lt;- 
+  pkg_downloads %&gt;%
+  filter(date &lt;= as_date(as_date(to_date) - duration(6, &quot;months&quot;))) %&gt;%
+  group_by(package) %&gt;%
+  summarise(
+    count = sum(count)
+  ) %&gt;%
+  filter(count &gt; 0) %&gt;%
+  select(package)</code></pre>
+<p>This yielded 12925 packages. For each of these packages, I then calculated the average monthly download rate over the most recent six months, along with where that rate falls as a percentile of all packages in the sample.</p>
+<pre class="r"><code>downloads_past_six &lt;-
+  pkg_downloads %&gt;%
+  filter(date &gt; as_date(as_date(to_date) - duration(6, &quot;months&quot;))) %&gt;%
+  semi_join(downloaded_last_yr, by = &quot;package&quot;) %&gt;%
+  group_by(package) %&gt;%
+  summarise(
+    count = sum(count) / 6
+  ) %&gt;%
+  mutate(
+    package = fct_reorder(factor(package), count),
+    pct_less = cume_dist(count)
+  )</code></pre>
+</div>
+<div id="pustos-packages" class="section level3">
+<h3>Pusto’s packages</h3>
+<p>I have developed four packages that are currently available on CRAN:</p>
+<ul>
+<li>The <code>clubSandwich</code> package provides cluster-robust variance estimators for a variety of different linear models (including meta-regression, hierarchical linear models, panel data models, etc.), as well as (more recently) some instrumental variables models. The package has received some attention in connection with estimating meta-analysis and meta-regression models, and it’s also relevant to applied micro-economics, field experiments, and other fields.</li>
+<li>The <code>scdhlm</code> and <code>SingleCaseES</code> packages provide functions and interactive web apps for calculating various effect sizes for single-case experimental designs. The <code>SingleCaseES</code> package is fairly new and I haven’t yet written any articles that feature it. Both it and <code>scdhlm</code> are relevant in fairly specialized fields where single-case experimental designs are commonly used—and where there is a need to meta-analyze results from such designs—and so I would not expect them to be widely downloaded.</li>
+<li>The <code>ARPobservation</code> package provides tools for simulating behavioral observation data based on an alternating renewal process model. I developed this package for my own dissertation work, and my students and I have used it in some subsequent work. I think of it mostly as a tool for my group’s work on statistical methods for single-case experimental designs, and so would not expect to be widely downloaded or used outside of this area.</li>
+</ul>
+<p>As points of comparison to my contributions, it is perhaps useful to look at two popular packages for conducting meta-analysis, the <code>metafor</code> package and the <code>robumeta</code> package:</p>
+<ul>
+<li>The <code>metafor</code> package, developed by Wolfgang Viechtbauer, has been around for 10 years and includes all sorts of incredible tools for calculating effect sizes, estimating meta-analysis and meta-regression models, investigating fitted models, and representing the results graphically. In contrast, the <code>clubSandwich</code> package is narrower in scope—it just calculates robust standard errors, confidence intervals, etc.—so <code>metafor</code> is not a perfect point of comparison.</li>
+<li>The <code>robumeta</code> package, by Zachary Fisher and Elizabeth Tipton, is a closer match in terms of scope. It is used for estimating meta-regression models with robust variance estimation, using specific methods proposed by Hedges, Tipton, and Johnson (2010).</li>
+</ul>
+<p>I am having a harder time thinking of good comparables for the <code>scdhlm</code>, <code>SingleCaseES</code>, and <code>ARPobservation</code> packages due to their specialized focus. (Ideas? Suggestions? I’m all ears!)</p>
+<p>With that background, here are the average monthly download rates (over the past six months) for each of my four packages, along with <code>metafor</code> and <code>robumeta</code>:</p>
+<pre class="r"><code>library(knitr)
+library(kableExtra)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;kableExtra&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
+## 
+##     group_rows</code></pre>
+<pre class="r"><code>Pusto_pkgs &lt;- c(&quot;ARPobservation&quot;,&quot;scdhlm&quot;,&quot;SingleCaseES&quot;,&quot;clubSandwich&quot;)
+meta_pkgs &lt;- c(&quot;metafor&quot;,&quot;robumeta&quot;)
+
+focal_downloads &lt;- 
+  downloads_past_six %&gt;%
+  filter(package %in% c(Pusto_pkgs, meta_pkgs)) %&gt;%
+  mutate(
+    count = round(count),
+    pct_less = round(100 * pct_less, 1)
+  ) %&gt;%
+  arrange(desc(count))
+
+focal_downloads %&gt;%
+  rename(`Average monthly downloads` = count, 
+         `Percentile of CRAN packages` = pct_less) %&gt;%
+  kable() %&gt;%
+  kable_styling(bootstrap_options = c(&quot;hover&quot;, &quot;condensed&quot;), full_width = FALSE)</code></pre>
+<table class="table table-hover table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+package
+</th>
+<th style="text-align:right;">
+Average monthly downloads
+</th>
+<th style="text-align:right;">
+Percentile of CRAN packages
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+metafor
+</td>
+<td style="text-align:right;">
+7348
+</td>
+<td style="text-align:right;">
+94.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+clubSandwich
+</td>
+<td style="text-align:right;">
+2992
+</td>
+<td style="text-align:right;">
+90.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+robumeta
+</td>
+<td style="text-align:right;">
+2025
+</td>
+<td style="text-align:right;">
+87.9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ARPobservation
+</td>
+<td style="text-align:right;">
+387
+</td>
+<td style="text-align:right;">
+55.5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SingleCaseES
+</td>
+<td style="text-align:right;">
+306
+</td>
+<td style="text-align:right;">
+36.4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+scdhlm
+</td>
+<td style="text-align:right;">
+229
+</td>
+<td style="text-align:right;">
+7.5
+</td>
+</tr>
+</tbody>
+</table>
+<p>Thus, <code>clubSandwich</code> sits in between <code>metafor</code> and <code>robumeta</code>, at the 90th percentile among all active packages on CRAN. The other packages are much less widely downloaded, averaging between 200 and 400 downloads per month. The distribution of monthly download rates is <em>highly</em> skewed, as can be seen in the figure below. About 68% of packages are downloaded 500 times or fewer per month, while only 7% of packages get more than 5000 downloads per month.</p>
+<pre class="r"><code>library(colorspace)
+library(ggrepel)
+
+downloads_sample &lt;- 
+  downloads_past_six %&gt;%
+  arrange(count) %&gt;%
+  mutate(
+    focal = package %in% c(Pusto_pkgs,meta_pkgs),
+    tenth = (row_number(count) %% 10) == 1
+  ) %&gt;%
+  filter(focal | tenth)
+
+focal_pkg_dat &lt;- 
+  downloads_sample %&gt;%
+  filter(focal) %&gt;%
+  mutate(Pusto = if_else(package %in% Pusto_pkgs, &quot;Pusto&quot;,&quot;comparison&quot;))
+
+title_str &lt;- paste(&quot;Average monthly downloads of R packages from&quot;, as_date(as_date(to_date) - duration(6, &quot;months&quot;)),&quot;through&quot;,to_date)
+
+qualitative_hcl(n = 2, h = c(140, -30), c = 90, l = 40, register = &quot;custom-qual&quot;)
+
+ggplot(downloads_sample, aes(x = package, y = count)) +
+  geom_col() + 
+  geom_col(data = focal_pkg_dat, aes(color = Pusto, fill = Pusto), size = 1.5) + 
+  geom_label_repel(
+    data = focal_pkg_dat, aes(color = Pusto, label = package),
+    segment.size = 0.4,
+    segment.color = &quot;grey50&quot;,
+    nudge_y = 0.5,
+    point.padding = 0.3
+  ) + 
+  scale_y_log10(breaks = c(20, 50, 200, 500, 2000, 5000, 20000, 50000, 200000), labels = scales::comma) + 
+  scale_fill_discrete_qualitative(palette = &quot;custom-qual&quot;) + 
+  scale_color_discrete_qualitative(palette = &quot;custom-qual&quot;) + 
+  labs(x = &quot;&quot;, y = &quot;Downloads (per month)&quot;, title = title_str) + 
+  theme(legend.position = &quot;none&quot;, axis.line.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())</code></pre>
+<p><img src="/post/CRAN-package-downloads_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
+</div>
+<div id="downloads-over-time" class="section level3">
+<h3>Downloads over time</h3>
+<p>Here are the weekly download rates for each of my packages over the past two years. (Note that the vertical scales of the graphs differ.)</p>
+<pre class="r"><code>weekly_downloads &lt;- 
+  pkg_downloads %&gt;%
+  mutate(
+    yr = year(date),
+    wk = week(date)
+  ) %&gt;%
+  group_by(package, yr, wk) %&gt;%
+  mutate(
+    date = max(date)
+  ) %&gt;%
+  group_by(package, date) %&gt;%
+  summarise(
+    count = sum(count),
+    days = n()
+  )
+
+weekly_downloads %&gt;%
+  filter(
+    days == 7,
+    package %in% Pusto_pkgs
+  ) %&gt;%
+  ggplot(aes(date, count, color = package)) + 
+  geom_line() + 
+  expand_limits(y = 0) + 
+  facet_wrap(~ package, scales = &quot;free&quot;, ncol = 2) + 
+  theme_minimal() + 
+  labs(x = &quot;&quot;, y = &quot;Downloads (per month)&quot;) + 
+  theme(legend.position = &quot;none&quot;)</code></pre>
+<p><img src="/post/CRAN-package-downloads_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+<p>There are a couple of curious features in these plots. For one, there are big spikes in downloads of <code>ARPobservation</code> and <code>SingleCaseES</code>. The <code>ARPobservation</code> spike was in mid-June of 2018, when I was at the IES Single-Case Design training institute and demonstrated some of the package’s tools. The <code>SingleCaseES</code> spike was in early January, 2019. Perhaps someone was teaching a class in single-case research and demonstrated the package? Or something at the IES PI meeting (January 9-10, 2019)?</p>
+<p>Another interesting pattern is in the download rate of <code>scdhlm</code>, which looks like it increased systematically starting in September, 2018. I wonder if this was the result of someone demonstrating or incorporating use of the package into a course. Lacking details about where the downloads are coming from, it’s hard to do anything but speculate.</p>
+</div>
+<div id="caveats-and-musings" class="section level3">
+<h3>Caveats and musings</h3>
+<p>Clearly, download counts are only a very rough proxy for package usage. In marketing-speak, they might be more like leads than conversion, in that people might be downloading a package only to discover that it’s not good for anything and then never use it to accomplish anything. Downloads are also not one-time events. If they use it in their work, a single person will likely download a package many times, over a span of time as new versions are released, onto multiple machines that they might use, by accident in the process of trying to install some other package, and so on. Downloads of inter-related packages are likely to be highly correlated too, as they will be with release of new major versions of R, which probably makes it a bit tricky to do event studies.</p>
+<p>Ultimately, I don’t know that knowing where my packages stand in terms of download rankings is all that useful. The packages that I’ve developed are all aimed at fairly academic audiences, which means that citations would probably be a better measure of contribution. The problem is, many people don’t know that they should be citing software, or how to do it. As usual, there’s an R function for that. Here’s how to get the citation for <code>clubSandwich</code>:</p>
+<pre class="r"><code>citation(package=&quot;clubSandwich&quot;) %&gt;%
+  print(style = &quot;textVersion&quot;)</code></pre>
+<p>which returns the following:</p>
+<blockquote>
+
+</blockquote>
+<p><code>## Warning in citation(package = "clubSandwich"): no date field in DESCRIPTION file     ## of package 'clubSandwich'</code></p>
+<p>James Pustejovsky (2019). clubSandwich: Cluster-Robust (Sandwich) Variance Estimators with Small-Sample
+Corrections. R package version 0.3.5. <a href="https://github.com/jepusto/clubSandwich" class="uri">https://github.com/jepusto/clubSandwich</a></p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/programming/">programming</a>
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+  <a class="badge badge-light" href="/tags/meta-analysis/">meta-analysis</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/package-downloads/&amp;text=CRAN%20downloads%20of%20my%20packages" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/package-downloads/&amp;t=CRAN%20downloads%20of%20my%20packages" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=CRAN%20downloads%20of%20my%20packages&amp;body=/package-downloads/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/package-downloads/&amp;title=CRAN%20downloads%20of%20my%20packages" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=CRAN%20downloads%20of%20my%20packages%20/package-downloads/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/package-downloads/&amp;title=CRAN%20downloads%20of%20my%20packages" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu5c52b2b2df652bbfa34fe5ba8e97c2ca_630045_270x270_fill_q90_lanczos_center.jpg" alt="James E. Pustejovsky">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">James E. Pustejovsky</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pusto@austin.utexas.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=vrPDTgsAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jepusto" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/imputing-covariance-matrices-for-multi-variate-meta-analysis/">Imputing covariance matrices for meta-analysis of correlated effects</a></li>
+      
+      <li><a href="/bug-in-nlme-with-fixed-sigma/">Bug in nlme::lme with fixed sigma and REML estimation</a></li>
+      
+      <li><a href="/simulation-studies-in-r-2016/">Simulation studies in R (Fall, 2016 version)</a></li>
+      
+      <li><a href="/bug-in-nlme-getvarcov/">Bug in nlme::getVarCov</a></li>
+      
+      <li><a href="/assigning-after-dplyr/">Assigning after dplyr</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

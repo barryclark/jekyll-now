@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hypothesis testing | James E. Pustejovsky</title>
+    <link>/tags/hypothesis-testing/</link>
+      <atom:link href="/tags/hypothesis-testing/index.xml" rel="self" type="application/rss+xml" />
+    <description>hypothesis testing</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>hypothesis testing</title>
+      <link>/tags/hypothesis-testing/</link>
+    </image>
+    
+    <item>
+      <title>Back from the IES PI meeting</title>
+      <link>/back-from-ies-pi-meeting/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/back-from-ies-pi-meeting/</guid>
+      <description>
+
+
+&lt;p&gt;I’m just back from the Institute of Education Sciences’ Principle Investigators conference in Washington D.C. It was an envigorating trip for me, and not only because of the opportunity to catch up with colleagues and friends from across the country. A running theme across several of the keynote addresses was the importance of increasing the transparency and replicability of education research, and it was exciting to hear about promising reforms underway and to talk about how to change the norms of our discipline(s).&lt;/p&gt;
+&lt;p&gt;I contributed to the conference in two ways. First, I gave a presentation on incorporating randomization and randomization inference into single-case designs, as part of a session on innovations in single-case research methods organized by Dr. Wendy Machalicek. You can a static version of &lt;a href=&#34;/files/Randomization-inference-for-SCED-2018-01-10.pdf&#34;&gt;my slides here&lt;/a&gt;; unfortunately the animations don’t work in pdf.&lt;/p&gt;
+&lt;p&gt;Second, I brought &lt;a href=&#34;/files/Gradual-effects-model-poster-IES-2018-01-10.pdf&#34;&gt;a poster&lt;/a&gt; presenting some work from my IES-funded methods grant. Thanks very much to the folks who stopped by to talk during the poster session! Y’all gave me some very helpful feedback about technical aspects of the work and about how to better contextualize it for single case researchers.&lt;/p&gt;
+&lt;p&gt;If you didn’t make it: this project was joint work with Danny Swan, a doctoral student in our Quantitative Methods program. It involved developing a model for estimating effect sizes from single-case designs where the effects of the intervention take time to reach full potency. Rather than assuming that the intervention produces immediate shifts in the level of the outcome, we model the effects using an impulse response function (cribbed from &lt;a href=&#34;http://www.jstor.org/stable/2285379&#34;&gt;an old paper by Box and Tiao&lt;/a&gt;) that leads to non-linear trends in response to the introduction of the intervention. Using an impulse response function also makes it possible to model more complex design patterns, like treatment reversal designs with returns-to-baseline and treatment re-introduction phases, in a very parsimonious way. Check out &lt;a href=&#34;https://osf.io/gaxrv/&#34;&gt;the full paper&lt;/a&gt;, the &lt;a href=&#34;https://github.com/jepusto/SingleCaseES&#34;&gt;accompanying R package&lt;/a&gt;, and Danny’s &lt;a href=&#34;https://jepusto.shinyapps.io/gem-scd/&#34;&gt;interactive web-app&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The siren song of significance</title>
+      <link>/siren-song-of-significance/</link>
+      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/siren-song-of-significance/</guid>
+      <description>
+
+
+&lt;p&gt;How is statistical analysis like the Odyssey? Here’s an analogy that I used in my research methods course last semester to explain the purpose of study pre-registration. If you’ve ever read the Odyssey, you’ll recall the story of the Sirens, the enchanting lady-monsters whose singing lures to certain death any sailor who hears them. (&lt;a href=&#34;https://en.wikipedia.org/wiki/Siren_(mythology)#Odyssey&#34;&gt;See Wikipedia for crib notes.&lt;/a&gt;) On the advise of his witch-friend Circe, Odysseus pulls a stunt so that he can hear the song of the Sirens while still making it safely past. He instructs his crew to plug their ears with beeswax and then lash him to the mast of his boat. As they sail past the Sirens, Odysseus hears the beautiful voices come-hithering and begs his men to free him, but they tie him up tighter until they are all safely out of ear-shot.&lt;/p&gt;
+&lt;p&gt;I think this is a good analogy for the benefits of pre-registering your experiments. Statistical significance testing is an alluring thing. It provides us, as data-analysts, with a way of drawing a definitive conclusion about whatever phenomenon we’re studying—“This effect is non-zero!”—and thus to write compelling articles and get published and get tenure and so on. But we also now know that statistical significance testing is easily abused. Using &lt;a href=&#34;http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf&#34;&gt;flexible data analysis procedures&lt;/a&gt;, it is easy to obtain statistically significant results from &lt;a href=&#34;http://journals.sagepub.com/doi/abs/10.1177/0956797611417632&#34;&gt;totally meaningless data&lt;/a&gt;. And statistical significance is so alluring, why should any scholar believe that you haven’t hacked your way to get there? Is there any way to conduct hypothesis tests and actually believe (and convince others) that you’ve ruled out a null at the end of it?&lt;/p&gt;
+&lt;p&gt;That’s where study pre-registration comes in. Pre-registration involves creating a public record of the exact plans you intend to follow when collecting and analyzing data, &lt;em&gt;in advance&lt;/em&gt; of conducting the study. It is like tying your arms and legs to the mast of your ship as you sail through the straights of data collection and analysis. No matter how tempting it is to control for a couple of other covariates…no matter how much cleaner that log-transformation looks…your pre-registered protocol keeps you tied down, preventing you from throwing yourself overboard into the sea of questionable research practices. And as you come out the other side, you can actually put stock in your findings, having heard the siren song of statistical significance and lived to tell the tale.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

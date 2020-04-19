@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 | James E. Pustejovsky</title>
+    <link>/publication_types/0/</link>
+      <atom:link href="/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
+    <description>0</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 19 Dec 2016 00:00:00 -0600</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>0</title>
+      <link>/publication_types/0/</link>
+    </image>
+    
+    <item>
+      <title>Between-case standardized mean difference effect sizes for single-case designs: A primer and tutorial using the scdhlm web application</title>
+      <link>/publication/bc-smd-primer-and-tutorial/</link>
+      <pubDate>Mon, 19 Dec 2016 00:00:00 -0600</pubDate>
+      <guid>/publication/bc-smd-primer-and-tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operationally comparable effect sizes for meta-analysis of single-case research</title>
+      <link>/publication/operationally-comparable-effect-sizes/</link>
+      <pubDate>Sat, 01 Jun 2013 00:00:00 -0500</pubDate>
+      <guid>/publication/operationally-comparable-effect-sizes/</guid>
+      <description>&lt;p&gt;This thesis studies quantitative methods for summarizing and synthesizing single-case studies, a class of research designs for evaluating the effects of interventions through repeated measurement of individuals. Despite long-standing interest in meta-analytic synthesis of single-case research, there remains a lack of consensus about appropriate methods, even about the most basic question of what effect size metrics are useful and appropriate. I argue that operational comparability, or invariance to heterogeneous operational procedures, is crucial property for an effect size metric. I then consider two problems with operational comparability that arise in single-case research. The first problem is to find effect sizes that can be applied across studies that use different research designs, such as single-case designs and two-group randomized experiments. The second problem is to find effect sizes that can be applied across studies that use varied operations for measuring the same construct. To address each of these problems, I propose structural models that capture essential features of multiple relevant operations (either design-related operations or measurement-related operations). I then use these structural models to precisely define target effect size parameters and to consider identification issues and estimation strategies.&lt;/p&gt;
+&lt;p&gt;Chapter 1 defines operational comparability and situates the concept within the broad methodological concerns of meta-analysis, then reviews relevant features of single-case research and previously proposed effect sizes. Chapter 2 describes an abstract set of modeling criteria for constructing design-comparable effect sizes. Chapters 3 applies the general criteria to the case of standardized mean differences and proposes an effect size estimator based on restricted maximum likelihood. Chapter 4 presents several applications of the proposed models and methods. Chapter 5 proposes measurement-comparability model and defines effect size measures for use in studies of free-operant behavior, one of the most common classes of outcomes in single-case research. Chapter 6 extends the proposed effect size models to incorporate more complex features, including time trends and serial dependence, and studies a method of estimating those models through a combination of marginal quasi-likelihood and Gaussian pseudo-likelihood estimating equations. Chapter 7 collects various further extensions, areas for further research, and concluding thoughts.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

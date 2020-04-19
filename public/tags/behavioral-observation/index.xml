@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>behavioral observation | James E. Pustejovsky</title>
+    <link>/tags/behavioral-observation/</link>
+      <atom:link href="/tags/behavioral-observation/index.xml" rel="self" type="application/rss+xml" />
+    <description>behavioral observation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>behavioral observation</title>
+      <link>/tags/behavioral-observation/</link>
+    </image>
+    
+    <item>
+      <title>Easily simulate thousands of single-case designs</title>
+      <link>/easily-simulate-thousands-of-single-case-designs/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/easily-simulate-thousands-of-single-case-designs/</guid>
+      <description>
+
+
+&lt;p&gt;Earlier this month, I taught at the &lt;a href=&#34;https://scdinstitute2018.com/&#34;&gt;Summer Research Training Institute on Single-Case Intervention Design and Analysis workshop&lt;/a&gt;, sponsored by the Institute of Education Sciences’ National Center for Special Education Research.
+While I was there, I shared &lt;a href=&#34;https://jepusto.shinyapps.io/ARPsimulator/&#34;&gt;a web-app for simulating data from a single-case design&lt;/a&gt;.
+This is a tool that I put together a couple of years ago as part of my &lt;a href=&#34;/software/arpobservation/&#34;&gt;ARPobservation R package&lt;/a&gt;, but haven’t ever really publicized or done anything formal with.
+It provides an easy way to simulate “mock” data from a single-case design where the dependent variable is measured using systematic direct observation of behavior.
+The simulated data can be viewed in the form of a graph or downloaded as a csv file.
+And it’s quite fast—simulating 1000’s of mock single-case designs takes only a few seconds.
+The tool also provides a visualization of the distribution of effect size estimates that you could anticipate observing in a single-case design, given a set of assumptions about how the dependent variable is measured and how it changes in response to treatment.&lt;/p&gt;
+&lt;div id=&#34;demo&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Demo&lt;/h1&gt;
+&lt;p&gt;Here’s an example of the sort of data that the tool generates and the assumptions it asks you to make.
+Say that you’re interested in evaluating the effect of a Social Stories intervention on the behavior of a child with autism spectrum disorder, and that you plan to use a treatment reversal design.
+Your primary dependent variable is inappropriate play behavior, measured using frequency counts over ten minute observation sessions.&lt;br /&gt;
+The initial baseline and treatment phases will be 7 sessions long.
+At baseline, the child engages in inappropriate play at a rate of about 0.8 per minute.
+You anticipate that the intervention could reduce inappropriate play by as much as 90% from baseline.
+Enter all of these details and assumptions into the simulator, and it will generate a graph like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-A.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Hit the “Simulate!” button again and you might get something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-B.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Or one of these:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-C.png&#34; /&gt;
+&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-A.png&#34; /&gt;
+&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-A.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-D.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-E.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;All of the above graphs were generated from the same hypothetical model—the variation in the clarity and strength of the functional relation is due to random error alone.
+The simulator can also produce graphs that show multiple realizations of the data-generating process. Here’s one with five replications:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-5.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;And here’s the same figure, but with trend lines added:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Crozier-Tincani-simulated-data-trend.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The trend lines represent the overall average level of the dependent variable during each session, across infinitely replications of the study.
+The variability around the trend line provides a sense of the extent of random error in the measurements of the dependent variable.&lt;/p&gt;
+&lt;p&gt;I think it’s a rather interesting exercise to try and draw inferences based on visual inspection of randomly generated graphs like this—particularly because it forces you to grapple with random measurement error in a way that using only real data (or only hand-drawn mock data) doesn’t allow.
+It seems like it could really help a visual analyst to calibrate their interpretations of single-case graphs with visually apparent time trends, outliers, etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;use-cases&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Use cases&lt;/h1&gt;
+&lt;p&gt;So far, this tool is really only a toy—something that I’ve puttered with off and on for a while, but never developed or applied for any substantive purpose.
+However, it occurs to me that it (or something similar to it) might have a number of purposes related to planning single-case studies, studying the process of visual inspection, or training single-case researchers.&lt;/p&gt;
+&lt;p&gt;When I originally put the tool together, the leading case I imagined was to use the tool to help researchers make principled decisions about how to measure dependent variables in single-case designs.
+By using the tool to simulate hypothetical single-case studies, a researcher would be able to experiment with different measurement strategies—such as using partial interval recording instead of continuous duration recording, using shorter or longer observation sessions, or using short or longer baseline phases—before collecting data on real-life behavior in the field.
+I’m not sure if this is something that well-trained single-case researchers would actually find helpful, but it seems like it might help a novice (like me!) to temper one’s expectations or to move towards a more reliable measurement system.&lt;/p&gt;
+&lt;p&gt;There’s been quite a bit of research examining the reliability and error rates of inferences based on visual inspection (see &lt;a href=&#34;http://dx.doi.org/10.1037/14376-004&#34;&gt;Chapter 4 of Kratochwill &amp;amp; Levin, 2014&lt;/a&gt; for a review of some of this literature).
+Some of this work has compared the inferences drawn by novices versus experts or by un-aided visual inspection versus visual inspection supplemented with graphical guides (like trend lines).
+But there are many other factors that could be investigated too, such as phase lengths (this could help to better justify the WWC single-case design standards around minimum phase lengths), use of different measurement systems, or use of different design elements on single-case graphs (can we get some color on these graphs, folks?!? And stop plotting 14 different dependent variables on the same graph?!?).
+The simulator would be an easy way to generate the stimuli one would need to do this sort of work.&lt;/p&gt;
+&lt;p&gt;A closely related use-case is to generate stimuli for training researchers to do systematic visual inspection.
+Some of the SCD Institute instructors (including Tom Kratochwill, Rob Horner, Joel Levin, along with some of their other colleagues) have developed the website &lt;a href=&#34;http://www.singlecase.org&#34;&gt;www.singlecase.org&lt;/a&gt; with a bunch of exercises meant to help researchers develop and test their visual analysis skills.
+It looks to me like the site uses simulated data (though I’m not entirely sure).
+The ARPsimulator tool could be used to do something similar, but based on a data-generating process that captures many of the features of systematic direct observation data.
+This might let researchers test their skills under more challenging and ambiguous, yet plausible, conditions, similar to what they will encounter when collecting real data in the field.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;future-directions&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Future directions&lt;/h1&gt;
+&lt;p&gt;A number of future directions for this project have crossed my mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Currently, the outcome data are simulated as independent across observation sessions (given the true time trend). It wouldn’t be too hard to add a further option to generate auto-correlated data, although this would further increase the complexity of the model. Perhaps there would be a way to add this as an “advanced” option that would be concealed unless the user asks for it (i.e., “Are you Really Sure you want to go down this rabbit hole?”). So far, I have avoided adding these features because I’m not sure what reasonable defaults would be.&lt;/li&gt;
+&lt;li&gt;Joel Levin, John Ferron, and some of the other SCD Institute instructors are big proponents of incorporating randomization procedures into the design of single-case studies, at least when circumstances allow. Currently, the ARPsimulator generates data based on a fixed, pre-specified design, such as an ABAB design with 6 sessions per phase or a multiple baseline design with 25 sessions total and intervention start-times of 8, 14, and 20. It wouldn’t be too hard to incorporate randomized phase-changes into the simulator. This might make a nice, contained project for a student who wants to learn more about randomization designs.&lt;/li&gt;
+&lt;li&gt;Along similar lines, John Ferron has &lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.3200/JEXE.75.1.66-81&#34;&gt;developed&lt;/a&gt; and &lt;a href=&#34;https://doi.org/10.1002/jaba.410&#34;&gt;evaluated&lt;/a&gt; masked visual analysis procedures, which blend randomization and traditional response-guided approaches to designing single-case studies. It would take a bit more work, but it would be pretty nifty to incorporate these designs into ARPsimulator too.&lt;/li&gt;
+&lt;li&gt;Currently, the model behind ARPsimulator asks the user to specify a fixed baseline level of behavior, and this level of behavior is used for every simulated case—even in designs involving multiple cases. A more realistic (albeit more complicated) data-generating model would allow for between-case variation in the baseline level of behavior.&lt;/li&gt;
+&lt;li&gt;Perhaps the most important outstanding question about the premise of this work is just how well the alternating renewal process model captures the features of real single-case data. Validating the model against empirical data from single-case studies would allow use to assess whether it is really a realistic approach to simulation, at least for certain classes of behavior. Another product of such an investigation would be to develop realistic default assumptions for the model’s parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the moment I have no plans to implement any of these unless there’s a reasonably focused need (sadly, I don’t have time to putter and putz to the same extent that I used to).
+If you, dear reader, would be interested in helping to pursue any of these directions, or if you have other, better ideas for how to make use of this tool, I would love to hear from you.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ARPobservation</title>
+      <link>/software/arpobservation/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/arpobservation/</guid>
+      <description>&lt;p&gt;An R package for simulating different methods of recording data based on direct observation of behavior, where behavior is modeled by an alternating renewal process.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://cran.r-project.org/package=ARPobservation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/getting-started-with-ARPobservation&#34;&gt;Installation instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/ARPobservation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/ARPsimulator/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ARPsimulator&lt;/a&gt;: An interactive web application for simulating systematic direct observation data based on the alternating renewal process model.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New article: Four methods for analyzing PIR data</title>
+      <link>/four-methods-for-analyzing-pir-data/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      <guid>/four-methods-for-analyzing-pir-data/</guid>
+      <description>
+
+
+&lt;p&gt;My article with Daniel Swan, “Four methods for analyzing partial interval recording data, with application to single-case research” has been accepted for publication in Multivariate Behavioral Research. In an extension of my earlier paper on &lt;a href=&#34;/files/Measurement-comparable-ES.pdf&#34;&gt;measurement-comparable effect sizes&lt;/a&gt; for single-case studies, this article provides some approaches to estimating effect sizes from single-case studies that use partial interval or whole interval recording to measure behavioral outcomes. The full abstract is below. &lt;a href=&#34;/files/4-PIR-methods-MBR.pdf&#34;&gt;Preprint&lt;/a&gt; and &lt;a href=&#34;/files/4-PIR-Methods-Appendix.pdf&#34;&gt;supporting materials&lt;/a&gt; are available. R functions that implement the proposed methods are available in the package &lt;a href=&#34;https://cran.r-project.org/web/packages/ARPobservation/&#34;&gt;ARPobservation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Partial interval recording is a procedure for collecting measurements during direct observation of behavior. It is used in several areas of educational and psychological research, particularly in connection with single-case research. Measurements collected using partial interval recording suffer from construct invalidity because they are not readily interpretable in terms of the underlying characteristics of the behavior. Using an alternating renewal process model for the behavior under observation, we demonstrate that ignoring the construct invalidity of PIR data can produce misleading inferences, such as inferring that an intervention reduces the prevalence of an undesirable behavior when in fact it has the opposite effect. We then propose four different methods for analyzing PIR summary measurements, each of which can be used to draw inferences about interpretable behavioral parameters. We demonstrate the methods by applying them to data from two single-case studies of problem behavior.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New article: Alternating renewal process models for behavioral observation</title>
+      <link>/new-article-alternating-renewal-process-models-for-behavioral-observation/</link>
+      <pubDate>Thu, 16 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/new-article-alternating-renewal-process-models-for-behavioral-observation/</guid>
+      <description>
+
+
+&lt;p&gt;My article with Chris Runyon, titled “Alternating renewal process models for behavioral observation: Simulation methods, software , and validity illustrations” has been published in Behavioral Disorders. The abstract is below. &lt;a href=&#34;/files/Pustejovsky-Runyon-2015.pdf&#34;&gt;Postprint available here&lt;/a&gt;. All of the examples in the paper are available in the R package &lt;a href=&#34;https://cran.r-project.org/web/packages/ARPobservation/&#34;&gt;ARPobservation&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Direct observation recording procedures produce reductive summary measurements of an underlying stream of behavior. Previous methodological studies of these recording procedures have employed simulation methods for generating random behavior streams, many of which amount to special cases of a statistical model known as the alternating renewal process. This paper describes the alternating renewal process model in its general form, demonstrates how it provides an organizing framework for most past simulation research on direct observation procedures, and introduces a freely available software package that implements the model. The software can be used to simulate behavior streams as well as data from many common recording procedures, including continuous recording, momentary time sampling, event counting, and interval recording procedures. Several examples illustrate how the software can be used to study the validity and reliability of direct observation data and to develop measurement strategies during the planning phases of empirical studies.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wanted: PIR data</title>
+      <link>/wanted-pir-data/</link>
+      <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/wanted-pir-data/</guid>
+      <description>
+
+
+&lt;p&gt;Partial interval recording (PIR) is one method for recording data during systematic direct observation of a behavior. While a convenient method, PIR has the key drawback that it &lt;a href=&#34;/PIR-overestimates-prevalence&#34;&gt;systematically over-states&lt;/a&gt; the prevalence of the behavior under observation. When used in single-case research to measure changes in behavior resulting from intervention, the systematic bias in PIR data can lead to deceptive results, such as inferring that an intervention reduces the prevalence of a problem behavior when in fact the opposite is true.&lt;/p&gt;
+&lt;p&gt;With my student Daniel Swan, I am currently working on developing methods for analyzing partial interval recording data that take its systematic bias into account. Some of these methods can be used with session-level summary PIR measurements (i.e., the percentage of intervals with the behavior), which are easily extracted from published single-case graphs. &lt;a href=&#34;/files/4-PIR-methods-AERA-version-20140312.pdf&#34;&gt;See here&lt;/a&gt; for the paper describing these methods.&lt;/p&gt;
+&lt;p&gt;We are now turning our attention to methods that use the finer-grained, interval-by-interval PIR data to obtain better estimates of the prevalence and incidence (frequency per unit time) of the behavior. For instance, if the observer uses 15 s partial interval recording, with 5 s for recording, for a 20 min session, this is a total of 60 intervals, for each of which the presence or absence of the behavior is recorded. The methods we’re working on make use of the full set of 60 ordered data points from the session. The general idea our work is similar to the post-hoc correction techniques proposed by Suen &amp;amp; Ary (1986), but we think we can greatly improve on their proposal.&lt;/p&gt;
+&lt;p&gt;To fully validate the methods we are developing, we need to test them out on real-world data. If you, dear reader, have access to PIR data and would be willing to share it with us, I would love to hear from you. We are looking specifically for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fine-grained (interval-by-interval) PIR data collected in real research contexts, such as single-case studies or observational studies involving students with behavioral disorders, children with autism-spectrum disorders, etc.&lt;/li&gt;
+&lt;li&gt;Alternately, continuously-recorded behavioral observation data (e.g., as collected through MOOSES, the Direct Assessment Tracking Application, or ProCoderDV) that we could then convert into PIR data.&lt;/li&gt;
+&lt;li&gt;Along with either type of behavioral observation data, a brief (or lengthier) description of the participant(s) whose behavior was measured and the context in which the measurements were collected.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can work with data in whatever format you might be willing to provide–whether that means photo-copied, paper observation forms, an Excel workbook, or a bunch of ProCoderDV data files. In return for sharing data, we will share with you the examples that we develop based on the data, which could also provide a basis for further collaboration. If you are interested in seeing your data analyzed and helping to advance this methodological work, please &lt;a href=&#34;/index.html#contact&#34;&gt;contact me&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ARPobservation now on CRAN</title>
+      <link>/arpobservation-now-on-cran/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
+      <guid>/arpobservation-now-on-cran/</guid>
+      <description>
+
+
+&lt;p&gt;Version 1.0 of the &lt;a href=&#34;https://cran.r-project.org/web/packages/ARPobservation/&#34;&gt;ARPobservation package&lt;/a&gt; is now available on the Comprehensive R Archive Network. This makes it &lt;a href=&#34;/getting-started-with-ARPobservation&#34;&gt;even easier to install&lt;/a&gt;. Here’s the package description:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ARPobservation: Tools for simulating different methods of observing behavior based on alternating renewal processes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ARPobservation provides a set of tools for simulating data based on direct observation of behavior. It works by first simulating a behavior stream based on an alternating renewal process, given specified distributions of event durations and interim times. Different procedures for recording data can then be applied to the simulated behavior stream. Currently, functions are provided for the following recording methods: continuous duration recording, event counting, momentary time sampling, partial interval recording, and whole interval recording.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New article: Measurement-comparable effect sizes for single-case studies of free-operant behavior</title>
+      <link>/measurement-comparable-effect-sizes/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>/measurement-comparable-effect-sizes/</guid>
+      <description>
+
+
+&lt;p&gt;My article “Measurement-comparable effect sizes for single-case studies of free-operant behavior” has been accepted at &lt;em&gt;Psychological Methods&lt;/em&gt;. &lt;a href=&#34;/files/Measurement-comparable-ES.pdf&#34;&gt;Postprint&lt;/a&gt; and &lt;a href=&#34;/files/Measuerment-comparable-ES-Appendix.pdf&#34;&gt;supporting materials&lt;/a&gt; are available. Here’s the abstract:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Single-case research comprises a set of designs and methods for evaluating the effects of interventions, practices, or programs on individual cases, through comparison of outcomes measured at different points in time. Although there has long been interest in meta-analytic technique for synthesizing single-case research, there has been little scrutiny of whether proposed effect sizes remain on a directly comparable metric when outcomes are measured using different operational procedures. Much of single-case research focuses on behavioral outcomes in free-operant contexts, which may be measured using a variety of different direct observation procedures. This article describes a suite of effect sizes for quantifying changes in free-operant behavior, motivated by an alternating renewal process model that allows measurement comparability to be established in precise terms. These effect size metrics have the advantage of comporting with how direct observation data are actually collected and summarized. Effect size estimators are proposed that are applicable when the behavior being measured remains stable within a given treatment condition. The methods are illustrated by two examples, including a re-analysis of a systematic review of the effects of choice-making opportunities on problem behavior.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>To what extent does partial interval recording over-estimate prevalence?</title>
+      <link>/pir-overestimates-prevalence/</link>
+      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/pir-overestimates-prevalence/</guid>
+      <description>
+
+
+&lt;p&gt;It is well known that the partial interval recording procedure produces an over-estimate of the prevalence of a behavior. Here I will demonstrate how to use the ARPobservation package to study the extent of this bias. First though, I’ll need to define the terms prevalence and incidence and also take a detour through continuous duration recording.&lt;/p&gt;
+&lt;div id=&#34;prevalence-and-incidence&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Prevalence and incidence&lt;/h2&gt;
+&lt;p&gt;First off, what do I mean by prevalence? In an alternating renewal process, &lt;strong&gt;prevalence&lt;/strong&gt; is the long-run proportion of time that the behavior occurs. I’ll call prevalence &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt; (“phi”). So far, I’ve described alternating renewal processes in terms of their average event duration (which I’ll call &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; or “mu”) and the average interim time (which I’ll call &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; or “lambda”). Prevalence is related to these quantities mathematically as follows:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \phi = \frac{\mu}{\mu + \lambda}. \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So given &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;, we can figure out &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Another characteristic of behavior that can be determined by the average event duration and average interim time is &lt;strong&gt;incidence&lt;/strong&gt;, or the rate of event occurrence per unit of time. I’ll call incidence &lt;span class=&#34;math inline&#34;&gt;\(\zeta\)&lt;/span&gt; (“zeta”). In an alternating renewal process,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \zeta = \frac{1}{\mu + \lambda}. \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This makes intuitive sense, because &lt;span class=&#34;math inline&#34;&gt;\(\mu + \lambda\)&lt;/span&gt; is the average time in between the start of each event, so its inverse should be the average number of times that an event starts per unit of time. (Note that though this is quite intuitive, it’s also very difficult to prove mathematically.) Given &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;, we can figure out &lt;span class=&#34;math inline&#34;&gt;\(\zeta\)&lt;/span&gt;. Conversely, if we know &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\zeta\)&lt;/span&gt;, we can solve for &lt;span class=&#34;math inline&#34;&gt;\(\mu = \phi / \zeta\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\lambda = (1 - \phi) / \zeta\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;continuous-duration-recording&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Continuous duration recording&lt;/h2&gt;
+&lt;p&gt;It can be shown mathematically that, on average, data produced by continuous duration recording (CDR) will be equal to the prevalence of the behavior. In statistical parlance, CDR data produces an &lt;em&gt;unbiased&lt;/em&gt; estimate of prevalence. Since this is a mathematical fact, it’s a good idea to check that the software gives the same result (if it doesn’t, there must be something wrong with the code).&lt;/p&gt;
+&lt;p&gt;In order to simulate behavior streams, the software needs values for the average event duration and average interim time. But I want to think in terms of prevalence and incidence, so I’ll first pick a value for incidence. Say that a new behavioral event starts once per minute on average, so incidence (in events per second) would be &lt;span class=&#34;math inline&#34;&gt;\(\zeta = 1 / 60\)&lt;/span&gt;. I’ll then vary prevalence across the range from zero to one. For each value of prevalence, I’ll generate 10 behavior streams (if you’d like to do more, go ahead!).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ARPobservation)
+set.seed(8)
+zeta &amp;lt;- 1 / 60
+phi &amp;lt;- rep(seq(0.01, 0.99, 0.01), each = 10)
+
+# Now solve for mu and lambda
+mu &amp;lt;- phi / zeta
+lambda &amp;lt;- (1 - phi) / zeta
+
+iterations &amp;lt;- length(phi) # total number of behavior streams to generate&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Two last elements are needed before I can get to the simulating: I need to decide what distributions to use for event durations and interim times, and I need to decide how long the observation session should last. To keep things simple, for the time being I’ll use exponential distributions. I’ll also suppose that we observe for 10 min = 600 s, so that on average we should observe 10 events per session. Now I can simulate a bunch of behavior streams and apply the CDR procedure to them.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BS &amp;lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_exp(), stream_length = 600)
+CDR &amp;lt;- continuous_duration_recording(BS)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To check that the CDR procedure is unbiased, I’ll plot the CDR data versus the true value of prevalence, and run a smoothing line through the cloud of data-points:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+qplot(x = phi, y = CDR, geom = &amp;quot;point&amp;quot;) + geom_smooth(method = &amp;quot;loess&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/CDR_bias-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The blue line is nearly identical to the line &lt;code&gt;y = x&lt;/code&gt;, meaning that the average of CDR data is equal to prevalence. Good news–the software appears to be working correctly!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;partial-interval-recording&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Partial interval recording&lt;/h2&gt;
+&lt;p&gt;Now to partial interval recording (PIR). There are two different ways to think about how PIR data over-estimates prevalence. The conventional statistical approach follows the same logic as above, comparing the average value of PIR data to the true value of prevalence, &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;. Using the same simulated data streams as above, with 15 s intervals and 5 s of rest time after each interval…&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;PIR &amp;lt;- interval_recording(BS, interval_length = 20, rest_length = 5)
+
+qplot(x = phi, y = PIR, geom = &amp;quot;point&amp;quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(method = &amp;quot;loess&amp;quot;, se = FALSE) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &amp;quot;dashed&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/PIR_bias-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The blue line indicates the average value of PIR data across the simulations for a given value of prevalence. The dashed line indicates &lt;code&gt;y = x&lt;/code&gt;, so clearly PIR data over-estimates prevalence.&lt;/p&gt;
+&lt;p&gt;Previous studies in the Applied Behavior Analysis literature have taken a slightly different approach to thinking about over-estimation. Rather than comparing PIR data to the prevalence parameter &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;, PIR data is instead compared to the &lt;em&gt;sample&lt;/em&gt; value of prevalence, which is equivalent to the CDR proportion. Following this logic, I apply the PIR and CDR procedures to the same simulated behavior streams, then plot PIR versus CDR.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;obs_data &amp;lt;- reported_observations(BS, data_types = c(&amp;quot;C&amp;quot;,&amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)
+
+qplot(x = CDR, y = PIR, data = obs_data, geom = &amp;quot;point&amp;quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(method = &amp;quot;loess&amp;quot;, se = FALSE) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &amp;quot;dashed&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/PIR_CDR-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The blue fitted line is slightly different than with the other approach, but the general conclusion is the same: PIR data over-estimates prevalence.&lt;/p&gt;
+&lt;p&gt;But by how much? That’s actually a tricky question to answer, because the extent of the bias depends on a bunch of factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the true prevalence &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;,&lt;/li&gt;
+&lt;li&gt;the true incidence &lt;span class=&#34;math inline&#34;&gt;\(\zeta\)&lt;/span&gt;,&lt;/li&gt;
+&lt;li&gt;the length of the intervals, and&lt;/li&gt;
+&lt;li&gt;the distribution of interim times &lt;code&gt;F_lambda&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Curiously enough, the bias doesn’t depend on the distribution of event durations &lt;code&gt;F_mu&lt;/code&gt;.)&lt;/p&gt;
+&lt;div id=&#34;interval-length&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Interval length&lt;/h4&gt;
+&lt;p&gt;To see that the bias depends on the length of intervals used, I’ll compare 15 s intervals with 5 s rest times versus 25 s intervals with 5 s rest times. For a session of length 600 s, the latter procedure will yield 20 intervals.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;PIR_25 &amp;lt;- interval_recording(BS, interval_length = 30, rest_length = 5)
+obs_data &amp;lt;- cbind(obs_data, PIR_25)
+qplot(x = CDR, y = PIR, data = obs_data, geom = &amp;quot;smooth&amp;quot;, method = &amp;quot;loess&amp;quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(aes(y = PIR_25), method = &amp;quot;loess&amp;quot;, se = FALSE, col = &amp;quot;red&amp;quot;) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &amp;quot;dashed&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
+## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/PIR_length-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The red line indicates that the longer interval time leads to a larger degree of over-estimation. (For clarity, I’ve removed the points in the scatter-plot.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;interim-time-distribution&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Interim time distribution&lt;/h4&gt;
+&lt;p&gt;It isn’t terribly troubling that the bias of PIR data depends on the interval length, because the observer will generally know (and will hopefully report in any write-up of their experiment) the interval length that was used. Much more troubling is the fact that the bias depends on the &lt;em&gt;distribution&lt;/em&gt; of interim times, because this is something that the observer or analyst won’t usually have much information about. To see how this bias works, I’ll compare behavior streams generated using an exponential distribution for the interim times with thos generated using a gamma distribution with shape parameter 3 (this distribution is much less dispersed than the exponential).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BS_exp &amp;lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_exp(), stream_length = 600)
+obs_exp &amp;lt;- reported_observations(BS_exp, data_types = c(&amp;quot;C&amp;quot;,&amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)
+obs_exp$F_lambda &amp;lt;- &amp;quot;Exponential&amp;quot;
+
+BS_gam &amp;lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_gam(shape = 3), stream_length = 600)
+obs_gam &amp;lt;- reported_observations(BS_gam, data_types = c(&amp;quot;C&amp;quot;,&amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)
+obs_gam$F_lambda &amp;lt;- &amp;quot;Gamma(3)&amp;quot;
+
+obs_data &amp;lt;- rbind(obs_exp, obs_gam)
+qplot(x = C, y = P, color = F_lambda, 
+      data = obs_data, geom = &amp;quot;smooth&amp;quot;, method = &amp;quot;loess&amp;quot;, se = FALSE, ylim = c(-0.02, 1.02))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/PIR_interim_dist-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The gamma(3) interim time distribution leads to a slightly larger positive bias.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ARPobservation: Basic use</title>
+      <link>/arpobservation-basic-use/</link>
+      <pubDate>Fri, 25 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/arpobservation-basic-use/</guid>
+      <description>
+
+
+&lt;p&gt;The ARPobservation package provides a set of tools for simulating data generated by different procedures for direct observation of behavior. This is accomplished in two steps. The first step is to simulate a “behavior stream” itself, which is assumed to follow some type of alternating renewal process. The second step is to apply a procedure or “filter,” which turns the simulated behavior stream into the data recorded by a given observation procedure. Each of these steps is illustrated below.&lt;/p&gt;
+&lt;div id=&#34;simulating-behavior-streams&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Simulating behavior streams&lt;/h2&gt;
+&lt;p&gt;Behavior streams are simulated according to an equilibrium alternating renewal process, which involves the following assumptions.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Each instance of a behavior, termed an &lt;em&gt;event&lt;/em&gt;, lasts a random amount of time, drawn from a specified distribution &lt;code&gt;F_mu&lt;/code&gt; with mean &lt;code&gt;mu&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The length of time in between instances of behavior, termed the &lt;em&gt;interim time&lt;/em&gt;, also lasts a random amount of time, drawn from a specified distribution &lt;code&gt;F_lambda&lt;/code&gt; with mean &lt;code&gt;lambda&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;All events and interim times are mutually independent.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The entire process is in equilibrium.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The function &lt;code&gt;r_behavior_stream&lt;/code&gt; generates random behavior streams. As an initial example, suppose that both the events and the interim times are exponentially distributed, that events last on average 10 seconds, and that the average interim time is 30 seconds. Also suppose that the behavior stream is observed for 300 seconds. The following code will simulate a behavior stream with these parameters:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ARPobservation)
+set.seed(8)              # for reproducibility
+
+r_behavior_stream(n = 1, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_exp(), stream_length = 300)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $stream_length
+## [1] 300
+## 
+## $b_streams
+## $b_streams[[1]]
+## $b_streams[[1]]$start_state
+## [1] 0
+## 
+## $b_streams[[1]]$b_stream
+##  [1]  61.46643  67.45959 117.53097 120.56840 175.94950 185.74134 265.04376
+##  [8] 269.42231 276.13827 284.70467 286.36179 290.82906
+## 
+## 
+## 
+## attr(,&amp;quot;class&amp;quot;)
+## [1] &amp;quot;behavior_stream&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function returns an object of class &lt;code&gt;behavior_stream&lt;/code&gt;, which isn’t terribly nice to look at. The first characteristic of the object is &lt;code&gt;stream_length&lt;/code&gt;, which just reports back how long the behavior stream is. The second characteristic is &lt;code&gt;b_streams&lt;/code&gt;, a list containing one or more simulated behavior streams. Each behavior stream is also a list. The first element indicate the initial state of the stream, so &lt;code&gt;start_state =&lt;/code&gt;0 means that the behavior was not occuring when observation began. The second element is a vector of transition times. The first entry in the vector indicates that the first event began at time 61.47; the following entry indicates that the first event ended (and the next interim time began) at time 67.46. Similarly, the second event began at time 117.53 and ended at time 120.57.&lt;/p&gt;
+&lt;p&gt;The argument &lt;code&gt;n&lt;/code&gt; controls the number of simulated behavior streams returned:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_behavior_stream(n = 3, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_exp(), stream_length = 300)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $stream_length
+## [1] 300
+## 
+## $b_streams
+## $b_streams[[1]]
+## $b_streams[[1]]$start_state
+## [1] 1
+## 
+## $b_streams[[1]]$b_stream
+##  [1]   8.480116  34.311542  43.069956  49.912461  50.087867  85.046893
+##  [7] 103.030351 116.377965 117.101992 140.227289 161.762642 180.640609
+## [13] 196.060432 201.493182 212.232970 236.486373 238.432946 276.824019
+## 
+## 
+## $b_streams[[2]]
+## $b_streams[[2]]$start_state
+## [1] 0
+## 
+## $b_streams[[2]]$b_stream
+##  [1]   6.702804  23.820354  26.087981  33.461543  62.786605  74.705604
+##  [7] 163.806646 164.761520 271.270557 283.207882 286.136103 297.587748
+## 
+## 
+## $b_streams[[3]]
+## $b_streams[[3]]$start_state
+## [1] 0
+## 
+## $b_streams[[3]]$b_stream
+##  [1] 196.4605 203.7452 237.9514 245.2451 246.2089 254.6313 256.6439 258.5644
+##  [9] 262.1140 265.3249 283.9702 298.7830
+## 
+## 
+## 
+## attr(,&amp;quot;class&amp;quot;)
+## [1] &amp;quot;behavior_stream&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that now &lt;code&gt;b_streams&lt;/code&gt; is a list with three entries, each of which contains a &lt;code&gt;start_state&lt;/code&gt; and a &lt;code&gt;b_stream&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Most of the time, you won’t need to look at the simulated behavior streams directly. Instead, you’ll just simulate a bunch of streams and store them for later analysis. Let’s store 10 simulated behavior streams in an object called &lt;code&gt;BS10&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BS10 &amp;lt;- r_behavior_stream(n = 10, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_exp(), stream_length = 300)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;applying-observation-procedures&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Applying observation procedures&lt;/h2&gt;
+&lt;p&gt;Several different functions are available to turn the &lt;code&gt;behavior_stream&lt;/code&gt; object into familiar types of behavioral observation data. For example, the &lt;strong&gt;continuous recording procedure&lt;/strong&gt; (CDR) involves summarizing the behavior stream by the overall proportion of observation time during which events occur. This can be accomplished by feeding &lt;code&gt;BS&lt;/code&gt; into the function &lt;code&gt;continuous_duration_recording&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;continuous_duration_recording(BS10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.1680877 0.4426930 0.1290537 0.3506492 0.2372437 0.3568621 0.2897521
+##  [8] 0.2570101 0.1704727 0.2968024&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function returns a vector containing one number per simulated behavior stream. As expected all of the numbers are proportions between 0 and 1.&lt;/p&gt;
+&lt;p&gt;More interesting is to simulate many more behavior streams, apply CDR, and calculate the mean and variance of the results or plot them in a histogram:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BS_lots &amp;lt;- r_behavior_stream(n = 10000, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_exp(), stream_length = 300)
+CDR &amp;lt;- continuous_duration_recording(BS_lots)
+c(mean = mean(CDR), var = var(CDR))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        mean         var 
+## 0.250140703 0.009567949&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hist(CDR)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ARPobservation-basic-use_files/figure-html/CDR_hist-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Another well-known recording procedure is &lt;strong&gt;partial interval recording&lt;/strong&gt; (PIR), which involves dividing the observation session into short intervals, then scoring each interval according to whether or not the behavior occurs at any point during the interval. The function &lt;code&gt;interval_recording&lt;/code&gt; applies partial interval recording (or the closely related procedure of whole interval recording) to a set of simulated behavior streams. Suppose that the observer uses 20 s intervals, back-to-back for 300 s, for a total of 15 intervals. This procedure can be applied to the simulated behavior streams using&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;interval_recording(BS10, interval_length = 20, summarize = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+##  [1,]    1    0    1    0    1    1    0    0    0     1
+##  [2,]    0    0    0    0    1    1    1    1    1     1
+##  [3,]    1    1    1    1    1    1    1    1    1     1
+##  [4,]    0    1    1    0    1    1    0    0    1     1
+##  [5,]    0    1    0    1    0    1    1    0    1     0
+##  [6,]    0    1    0    1    0    1    1    1    0     0
+##  [7,]    0    1    0    1    0    1    1    1    0     0
+##  [8,]    1    1    0    0    1    1    1    1    0     0
+##  [9,]    0    1    0    1    0    1    0    1    0     0
+## [10,]    0    0    1    1    0    1    1    1    1     0
+## [11,]    1    0    0    1    0    1    1    1    0     1
+## [12,]    1    1    1    1    0    1    1    1    1     1
+## [13,]    1    1    0    1    0    1    1    1    0     1
+## [14,]    1    1    1    1    1    1    1    0    1     0
+## [15,]    1    1    1    1    1    1    0    1    0     1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since summarize is set to false, the function returns a 15 by 10 matrix, with one column for each behavior stream. Each column contains one entry for each interval, equal to one if any behavior occured during that interval (and zero otherwise). Typically, PIR data is summarized by calculating the proportion of intervals across the entire observation session. The summary proportion can be calculated automatically by setting the option &lt;code&gt;summarize = TRUE&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;interval_recording(BS10, interval_length = 20, summarize = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.5333333 0.7333333 0.4666667 0.7333333 0.4666667 1.0000000 0.7333333
+##  [8] 0.7333333 0.4666667 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;colMeans(interval_recording(BS10, interval_length = 20, summarize = FALSE)) # compare to summarized results&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.5333333 0.7333333 0.4666667 0.7333333 0.4666667 1.0000000 0.7333333
+##  [8] 0.7333333 0.4666667 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sometimes, the PIR procedure is used with a short amount of time in between each interval, which allows the observer to record data or notes. Typical use might involve 15 s intervals of active observation, each followed by 5 s of rest time. This procedure can be applied using the &lt;code&gt;rest_proportion&lt;/code&gt; option. Since 5 s is 25% of the full interval length, the rest proportion is 0.25.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;interval_recording(BS10, interval_length = 20, rest_length = 5, summarize = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.4000000 0.7333333 0.4000000 0.6000000 0.4666667 0.8666667 0.5333333
+##  [8] 0.6666667 0.4000000 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;strong&gt;whole interval recording&lt;/strong&gt; procedure is implemented using &lt;code&gt;interval_recording&lt;/code&gt; with &lt;code&gt;partial = FALSE&lt;/code&gt;. Two other observation procedures are also available: &lt;strong&gt;momentary time recording&lt;/strong&gt; (a.k.a. momentary time sampling), using the function &lt;code&gt;momentary_time_recording&lt;/code&gt;, and &lt;strong&gt;event counting&lt;/strong&gt;, using &lt;code&gt;event_counting&lt;/code&gt;. See the documentation for these functions for usage and examples.&lt;/p&gt;
+&lt;p&gt;Finally, a convenience function is available to apply multiple observation procedures to the same set of simulated behavior streams. Suppose that you want to compare the data generated by CDR with the data generated by PIR with 15 s active intervals and 5 s rest times. This can be accomplished using&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;reported_observations(BS10, data_types = c(&amp;quot;C&amp;quot;, &amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##            C         P
+## 1  0.1680877 0.4000000
+## 2  0.4426930 0.7333333
+## 3  0.1290537 0.4000000
+## 4  0.3506492 0.6000000
+## 5  0.2372437 0.4666667
+## 6  0.3568621 0.8666667
+## 7  0.2897521 0.5333333
+## 8  0.2570101 0.6666667
+## 9  0.1704727 0.4000000
+## 10 0.2968024 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This function returns a data frame with one column for each procedure and one row for each simulated behavior stream. Say that you also want to include data based on momentary time recording, with 20 s in between each moment. Just add an &lt;code&gt;&#34;M&#34;&lt;/code&gt; to the list of data types to include:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;reported_observations(BS10, data_types = c(&amp;quot;C&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##            C          M         P
+## 1  0.1680877 0.20000000 0.4000000
+## 2  0.4426930 0.46666667 0.7333333
+## 3  0.1290537 0.06666667 0.4000000
+## 4  0.3506492 0.40000000 0.6000000
+## 5  0.2372437 0.26666667 0.4666667
+## 6  0.3568621 0.40000000 0.8666667
+## 7  0.2897521 0.26666667 0.5333333
+## 8  0.2570101 0.20000000 0.6666667
+## 9  0.1704727 0.06666667 0.4000000
+## 10 0.2968024 0.20000000 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started with ARPobservation</title>
+      <link>/getting-started-with-arpobservation/</link>
+      <pubDate>Thu, 24 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/getting-started-with-arpobservation/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;strong&gt;UPDATED 5/29/2014 after posting the package to CRAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Here are step-by-step instructions on how to download and install ARPobservation. For the time being, ARPobservation is available as a pre-compiled binary for Windows. For Mac/Linux, you’ll have to download the source from Github.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.us.r-project.org/&#34;&gt;Download&lt;/a&gt; and install R. R is free, open-source software that is used by many data analysts and statisticians. ARPobservation is a contributed package that runs within R, so you’ll need to get the base software first.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(Optional but recommended) &lt;a href=&#34;http://www.rstudio.com/&#34;&gt;Download&lt;/a&gt; and install RStudio, which is a very nice front-end interface to R.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open R or RStudio and type the following sequence of commands in the console:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;ARPobservation&amp;quot;)
+library(ARPobservation)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You’ll only need to do the above once. Once you’ve got the package installed, type the following in order to access the package within an R session: &lt;code&gt;library(ARPobservation)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To open the package documentation, type &lt;code&gt;package?ARPobservation&lt;/code&gt;. To access the documentation for an individual function in this package, just type &lt;code&gt;?&lt;/code&gt; followed by the name of the function. For instance, one of the main functions in the package is called &lt;code&gt;r_behavior_stream&lt;/code&gt;; to access its documentation, type &lt;code&gt;?r_behavior_stream&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Current projects</title>
+      <link>/current-projects/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>/current-projects/</guid>
+      <description>
+
+
+&lt;p&gt;Interested in working with me? See below for descriptions of several potential projects. If you have interest and abilities that line up with one of these, feel free to contact me.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Review of methods for direct observation of behavior. Several different methods for recording direct observations of behavior are commonly used in single-case research and other areas of psychology; prominent methods include continuous duration recording, momentary time sampling, and partial interval recording. Textbook advice about appropriate use of different methods is conflicting and often ambiguous, and simulation studies evaluating the operating characteristics of different methods also yield mixed results. The goals of this project are to: find and organize the current guidance about direct observation procedures; understand the basis of that guidance (e.g., simulation studies, heuristic models); and relate the guidance to a unifying statistical framework, by translating claims and conclusions into the terms of a parametric model (known as an alternating renewal process). This project would be appropriate either for a quantitative methods student who is interested in learning about direct observation methods for measuring behavior or for a student from school psychology, counseling psychology, or special education who is familiar with direct observation methods and interested in learning about statistical models for the data they generate.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Applications of meta-analysis for single-case studies of free-operant behavior. I have recently proposed a suite of new effect size metrics for quantifying treatment effects in single-case studies of free-operant behavior. The crux of this line of work is that it is important to use effect size metrics that are comparable across different methods of recording direct observation data. This project will involve: reviewing several published systematic reviews that incorporate evidence from single-case studies, in order to determine what measurement procedures were used to collect data, then re-analyzing the data from one or more of these studies, using the newly proposed effect size metrics and methods. This project would be appropriate for a special education student who is familiar with meta-analysis.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Applications of design-comparable effect size measures for longitudinal studies. Co-authors and I have recently proposed a method of estimating effect sizes from single-case studies (or other types of longitudinal designs) that are in the same metric as Cohen’s d-type effect sizes from conventional between-subjects experiments. The goals of this project are to: develop exemplar code that implements effect size calculations in several major statistical packages (including SPSS, SAS, Stata, and R); review the algorithms available in major statistical packages for estimating the uncertainty of variance components (i.e., information matrices); develop further applications and extensions to the proposed effect sizes. This project would be appropriate for a quantitative methods student who is familiar with estimation of hierarchical linear models in SPSS, SAS, and other major statistical software platforms.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Programming information matrices for hierarchical linear modeling. The Fisher information plays a pivotal role in hierarchical linear models, both as an approximate estimates of parameter uncertainty and as a key component of small-sample hypothesis tests such as those of Kenward and Roger (1997,2009). The goals of this project are to: create an R package for constructing analytic information matrices for HLM models estimated with the well-known nlme package; also add functions for the revised Kenward &amp;amp; Roger hypothesis tests; and evaluate the performance of different information matrices (expected, observed, and average) for calculating degrees-of-freedom adjustments in the context of effect size estimation. This project could be appropriate for a quantitative methods student or a statistics student who has strong programming skills and wants to 1) learn more about the statistical guts of HLM estimation and 2) level-up on their R programming by designing a publishable package.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A discrete-time Markov chain model for partial interval recording data. Partial interval recording is a commonly used method for recording direct observations of human behavior. Data generated by this method is problematic because, as typically analyzed, it yields upwardly biased measures of prevalence (the proportion of time that a behavior occurs). This shortcoming can be addressed by modeling the data using a discrete-time Markov chain and using maximum likelihood methods to estimate parameters corresponding directly to prevalence and incidence (the frequency with which new behaviors occur). The goals of this project are to create an R package implementing maximum likelihood estimation (and possibly other methods) for partial interval recording data and evaluate this estimation approach using asymptotic theory and simulation. This project could be appropriate for an advanced quantitative methods student or statistics student who is interested in learning about Markov chain models and who has strong programming skills.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

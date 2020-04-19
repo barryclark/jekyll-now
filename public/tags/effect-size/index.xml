@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>effect size | James E. Pustejovsky</title>
+    <link>/tags/effect-size/</link>
+      <atom:link href="/tags/effect-size/index.xml" rel="self" type="application/rss+xml" />
+    <description>effect size</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>effect size</title>
+      <link>/tags/effect-size/</link>
+    </image>
+    
+    <item>
+      <title>scdhlm</title>
+      <link>/software/scdhlm/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/scdhlm/</guid>
+      <description>&lt;p&gt;An R package implementing several methods of estimating a design-comparable standardized mean difference effect size based on data from a single-case design. Methods include those from Hedges, Pustejovsky, &amp;amp; Shadish (2012, 2013) and Pustejovsky, Hedges, &amp;amp; Shadish (2014).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://CRAN.R-project.org/package=scdhlm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/getting-started-with-scdhlm&#34;&gt;Installation instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/scdhlm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/scdhlm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scdhlm&lt;/a&gt;: An interactive web application for calculating design-comparable standardized mean difference effect sizes.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SingleCaseES</title>
+      <link>/software/singlecasees/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/singlecasees/</guid>
+      <description>&lt;p&gt;An R package for calculating basic effect size indices for single-case designs, including several non-overlap measures and parametric effect size measures, and for estimating the gradual effects model developed by Swan and Pustejovsky (2017).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code and installation instructions on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/SCD-effect-sizes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Single case effect size calculator&lt;/a&gt;: An interactive web application for calculating basic effect size indices.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/gem-scd/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gradual Effect Model calculator&lt;/a&gt;: An interactive web application for estimating effect sizes using the gradual effects model.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

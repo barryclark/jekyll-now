@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Small-sample cluster-robust variance estimators for two-stage least squares models</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="James E. Pustejovsky" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Small-sample cluster-robust variance estimators for two-stage least squares models
+### James E. Pustejovsky
+### March 8, 2019
+
+---
+
+
+
+layout: true
+  
+&lt;div class="my-header"&gt;https://bit.ly/2J10gib&lt;/div&gt;
+
+---
+
+# Randomized trials with non-compliance
+
+- Randomized field trials often encounter __non-compliance__ with treatment assignments.
+
+--
+
+- An initial tension:
+
+    - __Intent-to-Treat__ analysis for the average effects of __*treatment assignment*__
+
+    - __Instrumental variables__ analysis for the __*complier average treatment effect (CATE)*__ 
+    
+--
+
+- __Two-Stage Least Squares__ is standard approach for estimating CATE.
+
+???
+
+- __Intent-to-Treat__ analysis estimates the average effects of __*treatment assignment*__.
+    - Clear internal validity.
+    - But reduced construct validity when assignment `\(\neq\)` treatment received.
+
+- __Instrumental variables__ analysis estimates the __*complier average treatment effect (CATE)*__ (Angrist, Imbens, &amp; Rubin, 1996).
+    - Internal validity requires exclusion restriction, monotonicity assumptions.
+    - Clearer construct validity because of focus on treatment received.
+
+- Note that 2SLS is the only estimation method accepted in the most recent What Works Clearinghouse Standards.
+
+---
+
+# Cluster-robust variance estimation (CRVE)
+
+- Common approach to obtaining standard errors/hypothesis tests/confidence intervals for impact estimates.
+
+- Account for dependence without imposing distributional assumptions.
+
+    - Within-cluster dependence in cluster-randomized trials.
+
+    - Site-level heterogeneity in multi-site trials (Abadie, Athey, Imbens, &amp; Wooldridge, 2017).
+
+--
+
+- Conventional CRVE requires a large number of clusters.
+
+- __Bias-reduced linearization__ CRVE methods (Bell and McCaffrey, 2002) work well in small samples.
+
+    - Weighted least squares linear regression (McCaffrey, Bell, &amp; Botts, 2001)
+    - Generalized estimating equations (McCaffrey &amp; Bell, 2006)
+    - Linear fixed effects models (Pustejovsky &amp; Tipton, 2016)
+    - But not for 2SLS
+
+???
+
+- Understated uncertainty with few clusters.
+    
+---
+
+# Aim
+
+Develop bias-reduced linearization estimators for 2SLS estimators.
+
+--
+
+## Outline
+
+- Review bias-reduced linearization for OLS models
+
+- Explain approach for 2SLS
+
+- Some simulation results
+    
+---
+
+# Ordinary least squares
+
+A linear regression model for data from `\(J\)` clusters:
+
+$$
+\mathbf{y}_j = \mathbf{X}_j \boldsymbol\beta + \mathbf{e}_j
+$$
+
+where `\(\text{Var}\left(\mathbf{e}_j\right) = ???\)`
+
+--
+
+The OLS estimator:
+
+$$
+\hat{\boldsymbol\beta} = \mathbf{B_X} \sum_j\mathbf{X}_j' \mathbf{y}_j \qquad \text{where} \qquad \mathbf{B_X} = \left( \sum_j \mathbf{X}_j' \mathbf{X}_j\right)^{-1}
+$$
+
+--
+
+Conventional CRVE (sandwich estimator) of `\(\text{Var}(\hat{\boldsymbol\beta})\)`:
+
+$$
+\mathbf{V}^{CR0} = \mathbf{B_X}\left(\sum_j \mathbf{X}_j'\mathbf{\hat{e}}_j\mathbf{\hat{e}}_j' \mathbf{X}_j\right)\mathbf{B_X}
+$$
+---
+
+# Bias-reduced linearization
+
+1. Make a "working" assumption that `\(\text{Var}(\mathbf{e}_j) = \boldsymbol\Omega_j\)` for `\(j = 1,...,J\)`.
+
+--
+
+2. Add extra fillings to the sandwich estimator:
+
+  $$
+  \mathbf{V}^{CR2} = \mathbf{B_X}\left(\sum_j \mathbf{X}_j'\color{red}{\mathbf{A}_j}\mathbf{\hat{e}}_j\mathbf{\hat{e}}_j' \color{red}{\mathbf{A}_j'}\mathbf{X}_j\right)\mathbf{B_X}
+  $$
+  where `\(\color{red}{\mathbf{A}_j}\)` are chosen so that 
+  $$
+  \text{E}\left(\mathbf{V}^{CR2}\right) = \text{Var}(\hat{\boldsymbol\beta})
+  $$
+  under the working model.
+
+--
+
+- It turns out that this works __*even when the working model is misspecified*__.
+
+???
+
+It's the Jimmy Johns principle: even if the individual ingredients are not that high quality, you can still get a delicious sandwich.
+
+---
+
+# Two-stage least squares
+
+The model for cluster `\(j = 1,...,J\)`:
+
+$$
+`\begin{align}
+\mathbf{y}_j &amp;= \mathbf{Z}_j \boldsymbol\delta + \mathbf{u}_j \\
+\mathbf{Z}_j &amp;= \mathbf{X}_j \boldsymbol\gamma + \mathbf{v}_j
+\end{align}`
+$$
+
+where
+
+- `\(\mathbf{Z}_j\)` includes endogenous regressor (compliance indicator)
+- `\(\mathbf{X}_j\)` includes the instrument (treatment assignment)
+
+---
+
+# Two-stage least squares estimation
+
+- __First stage__ (appetizer):
+  $$
+  \mathbf{Z}_j = \mathbf{X}_j \boldsymbol\gamma + \mathbf{v}_j
+  $$
+  with fitted values 
+  $$
+  \mathbf{\tilde{Z}}_j = \mathbf{X}_j \hat{\boldsymbol\gamma} = \mathbf{X}_j \mathbf{B_X} \sum_j \mathbf{X}_j' \mathbf{Z}_j
+  $$
+
+--
+
+- __Second stage__ (main course):
+  $$
+  \mathbf{y}_j = \mathbf{\tilde{Z}}_j \boldsymbol\delta + \mathbf{\tilde{u}}_j
+  $$
+  estimated as
+  $$
+  \hat{\boldsymbol\delta} = \mathbf{B_Z} \sum_j \tilde{\mathbf{Z}}_j' \mathbf{y}_j \qquad \text{where} \qquad \mathbf{B_Z} = \left( \sum_j \tilde{\mathbf{Z}}_j' \tilde{\mathbf{Z}}_j\right)^{-1}
+  $$
+
+---
+
+# Bias-reduced linearization for 2SLS
+
+- CRVE with adjustment matrices:
+  $$
+  \mathbf{V}^{CR2} = \mathbf{B_Z}\left(\sum_j \mathbf{\tilde{Z}}_j' \color{red}{\mathbf{A}_j}\mathbf{\hat{u}}_j\mathbf{\hat{u}}_j' \color{red}{\mathbf{A}_j'}\mathbf{\tilde{Z}}_j\right)\mathbf{B_Z}
+  $$
+  where `\(\mathbf{\hat{u}}_j = \mathbf{y}_j - \mathbf{Z}_j \hat{\boldsymbol\delta}\)`.
+
+--
+
+- Proposal: calculate adjustment matrices `\(\color{red}{\mathbf{A}_j}\)` __*based on the second stage only*__, for 
+  $$
+  \mathbf{y}_j = \mathbf{\tilde{Z}}_j \boldsymbol\delta + \mathbf{\tilde{u}}_j,
+  $$
+  under a working model for `\(\mathbf{\tilde{u}}_j\)`.
+  
+---
+
+# Single instrument IV
+
+With a single-dimensional instrument, CATE is a ratio:
+$$
+\delta = \frac{\beta}{\gamma} = \frac{\text{ITT effect}}{\text{Compliance effect}} \qquad \text{and} \qquad \hat\delta = \frac{\hat\beta}{\hat\gamma}
+$$
+--
+
+Delta-method approximation to `\(\text{Var}(\hat\delta)\)`:
+$$
+\text{Var}(\hat\delta) \approx \frac{1}{\gamma^2} \left[\text{Var}(\hat\beta) + \delta^2 \text{Var}(\hat\gamma) - 2 \delta \text{Cov}(\hat\beta, \hat\gamma)\right]
+$$
+2SLS CRVE is equivalent to the delta-method estimator:
+$$
+V(\hat\delta) \approx \frac{1}{\hat\gamma^2} \left[ V(\hat\beta) + \hat\delta^2 V(\hat\gamma) - 2 \hat\delta V(\hat\beta, \hat\gamma) \right]
+$$
+--
+
+Using the proposed adjustment matrices gives __exactly unbiased estimates *of each component*__ in the delta-method approximation, under certain working models for `\((\mathbf{u}_j, \mathbf{v}_j)\)`.
+
+---
+
+
+
+## Simulations: Cluster-randomized trial 
+### Cluster-level non-compliance
+
+&lt;img src="SREE-2019-2SLS-CRVE_files/figure-html/unnamed-chunk-2-1.png" width="100%" /&gt;
+
+---
+
+## Simulations: Multi-site trial 
+### Individual-level non-compliance, single instrument
+
+&lt;img src="SREE-2019-2SLS-CRVE_files/figure-html/unnamed-chunk-3-1.png" width="100%" /&gt;
+
+---
+
+## Simulations: Multi-site trial 
+### Individual-level non-compliance, site-specific instruments
+
+&lt;img src="SREE-2019-2SLS-CRVE_files/figure-html/unnamed-chunk-4-1.png" width="100%" /&gt;
+
+---
+
+# Conclusions
+
+- Methods implemented in __`clubSandwich`__ package for R.
+    - Works with `AER::ivreg`.
+    
+- Use small-sample adjusted CRVE for estimating CATE 
+    - In cluster-randomized trials 
+    - In multi-site trials with strong, single-instrument
+
+- Future work needed on methods for weak instrument/many-instrument settings.
+
+--
+
+### Contact
+
+James E. Pustejovsky 
+
+The University of Texas at Austin
+
+[pusto@austin.utexas.edu](mailto:pusto@austin.utexas.edu)
+
+https://jepusto.com
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

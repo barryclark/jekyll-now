@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sandwiches | James E. Pustejovsky</title>
+    <link>/tags/sandwiches/</link>
+      <atom:link href="/tags/sandwiches/index.xml" rel="self" type="application/rss+xml" />
+    <description>sandwiches</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>sandwiches</title>
+      <link>/tags/sandwiches/</link>
+    </image>
+    
+    <item>
+      <title>A handmade clubSandwich for multi-site trials</title>
+      <link>/clustered-and-interacted/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/clustered-and-interacted/</guid>
+      <description>
+
+
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+data(STAR, package = &amp;quot;AER&amp;quot;)
+
+STAR_urban &amp;lt;-
+  STAR %&amp;gt;%
+  filter(
+    # limit to urban/inner city schools
+    schoolk %in% c(&amp;quot;urban&amp;quot;,&amp;quot;inner-city&amp;quot;),
+    # limit to complete outcome data
+    !is.na(readk), !is.na(mathk)
+  ) %&amp;gt;%
+  droplevels() %&amp;gt;%
+  # collapse control conditions
+  mutate(
+    stark = fct_collapse(stark, regular = c(&amp;quot;regular&amp;quot;,&amp;quot;regular+aide&amp;quot;))
+  ) %&amp;gt;%
+  # calculate inverse-propensity weight
+  group_by(schoolidk) %&amp;gt;%
+  mutate(
+    n = n(),
+    nT = sum(stark==&amp;quot;small&amp;quot;),
+    wt = ifelse(stark==&amp;quot;small&amp;quot;, n / nT, n / (n - nT))
+  ) %&amp;gt;%
+  select(schoolidk, stark, readk, mathk, wt)
+
+STAR_summary &amp;lt;- 
+  STAR_urban %&amp;gt;%
+  count(schoolidk)
+
+STAR_urban %&amp;gt;%
+  group_by(schoolidk, stark) %&amp;gt;%
+  summarise(
+    n = n(),
+    wt = sum(wt)
+  ) %&amp;gt;%
+  mutate(n = sum(n)) %&amp;gt;%
+  spread(stark, wt)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 23 x 4
+## # Groups:   schoolidk [23]
+##    schoolidk     n regular small
+##    &amp;lt;fct&amp;gt;     &amp;lt;int&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+##  1 2            52      52    52
+##  2 9           120     120   120
+##  3 10           51      51    51
+##  4 14           34      34    34
+##  5 15           55      55    55
+##  6 16          105     105   105
+##  7 18           79      79    79
+##  8 19           99      99    99
+##  9 22          129     129   129
+## 10 26           49      49    49
+## # ... with 13 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After these exclusions, the data include a total of 1810 students from 23 schools, ranging in size from 34 to 134 students.&lt;/p&gt;
+&lt;p&gt;For starters, let’s get the average impacts using a seeming unrelated regression specification, with both conventional and clubSandwich standard errors.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;STAR_wt &amp;lt;- lm(cbind(readk, mathk) ~ 0 + schoolidk + stark, weights = wt, data = STAR_urban)
+
+# conventional SEs
+CR0 &amp;lt;- 
+  coef_test(STAR_wt, vcov = &amp;quot;CR0&amp;quot;, 
+            cluster = STAR_urban$schoolidk, 
+            test = &amp;quot;z&amp;quot;,
+            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
+CR0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 readk:starksmall     6.21 3.13   1.98    0.0473    *
+## 2 mathk:starksmall    12.47 5.58   2.23    0.0254    *&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# clubSandwich SEs
+CR2 &amp;lt;- 
+  coef_test(STAR_wt, vcov = &amp;quot;CR2&amp;quot;, 
+            cluster = STAR_urban$schoolidk, 
+            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
+
+CR2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 readk:starksmall     6.21 2.70    2.3   19       0.0332    *
+## 2 mathk:starksmall    12.47 4.79    2.6   19       0.0174    *&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I’ll do it “by hand”—or rather, with a bit of &lt;code&gt;dplyr&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# summary statistics by site
+
+school_summaries &amp;lt;- 
+  STAR_urban %&amp;gt;%
+  group_by(schoolidk, stark) %&amp;gt;%
+  summarise(
+    # means by arm and site
+    readk = mean(readk),
+    mathk = mean(mathk),
+    n_arm = n()
+  ) %&amp;gt;%
+  summarise(
+    # impact estimates by site
+    readk = diff(readk),
+    mathk = diff(mathk),
+    n = sum(n_arm),
+    p = n_arm[stark==&amp;quot;small&amp;quot;] / n
+  ) %&amp;gt;%
+  mutate(
+    w = n
+  )
+
+# overall impacts
+
+school_summaries %&amp;gt;%
+  gather(&amp;quot;subject&amp;quot;,&amp;quot;impact_j&amp;quot;, readk, mathk) %&amp;gt;%
+  group_by(subject) %&amp;gt;%
+  summarise(
+    impact = weighted.mean(impact_j, w = w),
+    SE_CR0 = sqrt(sum(w^2 * (impact_j - impact)^2) / sum(w)^2),
+    SE_CR2 = sqrt(sum(w^2 * (impact_j - impact)^2 / (1 - w / sum(w))) / sum(w)^2),
+    df_CR2 = 1 / (sum(w^2 / (sum(w) - w)^2) - 
+                    2 * sum(w^3 / (sum(w) - w)^2) / sum(w) + 
+                    sum(w^2 / (sum(w) - w))^2 / sum(w)^2)
+  ) %&amp;gt;%
+  knitr::kable(digits = 2)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;subject&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;impact&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;SE_CR0&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;SE_CR2&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;df_CR2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;mathk&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12.47&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.58&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.76&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.07&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;readk&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.21&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.23&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.07&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The CR0 and CR2 standard errors match the results from &lt;code&gt;coef_test&lt;/code&gt;, as do the Satterthwaite degrees of freedom. Note that the degrees of freedom are equal to 19 in this case, a bit less than &lt;span class=&#34;math inline&#34;&gt;\(J - 1 = 22\)&lt;/span&gt; due to variation in the weight assigned to each school.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A handmade clubSandwich for multi-site trials</title>
+      <link>/handmade-clubsandwich/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/handmade-clubsandwich/</guid>
+      <description>
+
+
+&lt;p&gt;I’m just back from the &lt;a href=&#34;https://sree.org/conferences/2019s&#34;&gt;Society for Research on Educational Effectiveness&lt;/a&gt; meetings, where I presented work on small-sample corrections for cluster-robust variance estimators in two-stage least squares models, which I’ve implemented in the &lt;a href=&#34;/software/clubSandwich/&#34;&gt;&lt;code&gt;clubSandwich&lt;/code&gt;&lt;/a&gt; R package. &lt;a href=&#34;/files/SREE-2019-2SLS-CRVE.html&#34;&gt;Here’s my presentation&lt;/a&gt;. So I had “clubSandwich” estimators on the brain when a colleague asked me about whether the methods were implemented in SAS.&lt;/p&gt;
+&lt;p&gt;The short answer is “no.”&lt;/p&gt;
+&lt;p&gt;The moderately longer answer is “not unless we can find funding to pay someone who knows how to program properly in SAS.” However, for the specific model that my colleague was interested in, it turns out that the small-sample corrections implemented in clubSandwich can be expressed in closed form, and they’re simple enough that they could easily be hand-calculated. I’ll sketch out the calculations in the remainder of this post.&lt;/p&gt;
+&lt;div id=&#34;a-multi-site-trial&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A multi-site trial&lt;/h2&gt;
+&lt;p&gt;Consider a multi-site trial conducted across &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; sites, which we take as a sample from a larger super-population of sites. Each site consists of &lt;span class=&#34;math inline&#34;&gt;\(n_j\)&lt;/span&gt; units, of which &lt;span class=&#34;math inline&#34;&gt;\(p_j n_j\)&lt;/span&gt; are randomized to treatment and the remainder &lt;span class=&#34;math inline&#34;&gt;\((1 - p_j) n_j\)&lt;/span&gt; are randomized to control. For each unit &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in each site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, we have an outcome &lt;span class=&#34;math inline&#34;&gt;\(y_{ij}\)&lt;/span&gt; and a treatment indicator &lt;span class=&#34;math inline&#34;&gt;\(t_{ij}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A conventional approach to estimating the overall average impact in this setting is to use a model with a treatment indicator and fixed effects for each site:
+&lt;span class=&#34;math display&#34;&gt;\[
+y_{ij} = \beta_j + \delta t_{ij} + e_{ij}
+\]&lt;/span&gt;
+and then to cluster the standard errors by site. Clustering by site makes sense here if (and only if) we’re interested in generalizing to the super-population of sites.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta_j\)&lt;/span&gt; denote the impact estimate from site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, calculated as the difference in means between treated and untreated units at site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+\hat\delta_j = \frac{1}{n_j p_j} \left(\sum_{i=1}^{n_j} t_{ij} y_{ij}\right) - \frac{1}{n_j (1 - p_j)} \left(\sum_{i=1}^{n_j} (1 - t_{ij}) y_{ij}\right).
+\]&lt;/span&gt;
+for &lt;span class=&#34;math inline&#34;&gt;\(j = 1,..,J\)&lt;/span&gt;. The overall impact estimate here is a precision-weighted average of the site-specific impacts:
+&lt;span class=&#34;math display&#34;&gt;\[
+\hat\delta = \frac{1}{W} \sum_{j=1}^J w_j \hat\delta_j,
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(w_j = n_j p_j (1 - p_j)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(W = \sum_j w_j\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sandwich-estimators&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Sandwich estimators&lt;/h2&gt;
+&lt;p&gt;The conventional clustered variance estimator (or sandwich estimator) for &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta\)&lt;/span&gt; is a simple function of the (weighted) sample variance of the site-specific effects. It can be calculated directly as:
+&lt;span class=&#34;math display&#34;&gt;\[
+V^{CR0} = \frac{1}{W^2} \sum_{j=1}^J w_j^2 \left(\hat\delta_j - \hat\delta\right)^2.
+\]&lt;/span&gt;
+Under a conventional random effects model for the &lt;span class=&#34;math inline&#34;&gt;\(\delta_j\)&lt;/span&gt;s, this estimator has a downward bias in finite samples.&lt;/p&gt;
+&lt;p&gt;The clubSandwich variance estimator here uses an estimator for the sample variance of site-specific effects that is unbiased under a certain working model. It is only slightly more complicated to calculate:
+&lt;span class=&#34;math display&#34;&gt;\[
+V^{CR2} = \frac{1}{W^2} \sum_{j=1}^J \frac{w_j^2 \left(\hat\delta_j - \hat\delta\right)^2}{1 - w_j / W}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The other difference between conventional methods and the clubSandwich approach is in the reference distribution used to calculate hypothesis tests and confidence intervals. The conventional approach uses a standard normal reference distribution (i.e., a z-test) that is asymptotically justified. The clubSandwich approach uses a &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; reference distribution, with degrees of freedom estimated using a Satterthwaite approximation. In the present context, the degrees of freedom are a little bit ugly but still not hard to calculate:
+&lt;span class=&#34;math display&#34;&gt;\[
+df = \left[\sum_{j=1}^J \frac{w_j^2}{(W - w_j)^2} - \frac{2}{W}\sum_{j=1}^J \frac{w_j^3}{(W - w_j)^2} + \frac{1}{W^2} \left(\sum_{j=1}^J \frac{w_j^2}{W - w_j} \right)^2 \right]^{-1}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In the special case that all sites are of the same size and use a constant treatment allocation, the weights become equal. The clubSandwich variance estimator then reduces to
+&lt;span class=&#34;math display&#34;&gt;\[
+V^{CR2} = \frac{S_\delta^2}{J} \qquad \text{where} \qquad S_\delta^2 = \frac{1}{J - 1}\sum_{j=1}^J \left(\hat\delta_j - \hat\delta\right)^2,
+\]&lt;/span&gt;
+and the degrees of freedom reduce to simply &lt;span class=&#34;math inline&#34;&gt;\(df = J - 1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tennessee-star&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tennessee STAR&lt;/h2&gt;
+&lt;p&gt;Here is a worked example of the calculations (using R of course, because my SAS programming skills atrophied years ago). I’ll use data from the famous Tennessee STAR class size experiment, which was a multi-site trial in which students were randomized to small or regular-sized kindergarten classes within each of several dozen schools. To make the small-sample issues more pronounced, I’ll limit the sample to urban schools and look at impacts of small class-size on reading and math scores at the end of kindergarten. STAR was actually a three-arm trial—the third arm being a regular-sized class but with an additional teacher aide. For simplicity (and following convention), I’ll collapse the teacher-aide condition and the regular-sized class condition into a single arm and also limit the sample to students with complete outcome data on both tests.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+data(STAR, package = &amp;quot;AER&amp;quot;)
+
+STAR_urban &amp;lt;-
+  STAR %&amp;gt;%
+  filter(
+    # limit to urban/inner city schools
+    schoolk %in% c(&amp;quot;urban&amp;quot;,&amp;quot;inner-city&amp;quot;),
+    # limit to complete outcome data
+    !is.na(readk), !is.na(mathk)
+  ) %&amp;gt;%
+  droplevels() %&amp;gt;%
+  # collapse control conditions
+  mutate(stark = fct_collapse(stark, regular = c(&amp;quot;regular&amp;quot;,&amp;quot;regular+aide&amp;quot;))) %&amp;gt;%
+  select(schoolidk, stark, readk, mathk)
+
+STAR_summary &amp;lt;- 
+  STAR_urban %&amp;gt;%
+  count(schoolidk)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After these exclusions, the data include a total of 1810 students from 23 schools, ranging in size from 34 to 134 students.&lt;/p&gt;
+&lt;p&gt;For starters, let’s get the average impacts using a seeming unrelated regression specification, with both conventional and clubSandwich standard errors.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;STAR_fit &amp;lt;- lm(cbind(readk, mathk) ~ 0 + schoolidk + stark, data = STAR_urban)
+
+# conventional SEs
+CR0 &amp;lt;- 
+  coef_test(STAR_fit, vcov = &amp;quot;CR0&amp;quot;, 
+            cluster = STAR_urban$schoolidk, 
+            test = &amp;quot;z&amp;quot;,
+            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
+
+CR0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 readk:starksmall     6.16 2.73   2.25    0.0241    *
+## 2 mathk:starksmall    12.13 4.79   2.53    0.0113    *&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# clubSandwich SEs
+CR2 &amp;lt;- 
+  coef_test(STAR_fit, vcov = &amp;quot;CR2&amp;quot;, 
+            cluster = STAR_urban$schoolidk, 
+            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
+
+CR2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 readk:starksmall     6.16 2.81   2.19   19       0.0409    *
+## 2 mathk:starksmall    12.13 4.92   2.47   19       0.0234    *&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I’ll do it “by hand”—or rather, with a bit of &lt;code&gt;dplyr&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# summary statistics by site
+
+school_summaries &amp;lt;- 
+  STAR_urban %&amp;gt;%
+  group_by(schoolidk, stark) %&amp;gt;%
+  summarise(
+    # means by arm and site
+    readk = mean(readk),
+    mathk = mean(mathk),
+    n_arm = n()
+  ) %&amp;gt;%
+  summarise(
+    # impact estimates by site
+    readk = diff(readk),
+    mathk = diff(mathk),
+    n = sum(n_arm),
+    p = n_arm[stark==&amp;quot;small&amp;quot;] / n
+  ) %&amp;gt;%
+  mutate(w = n * p * (1 - p))
+
+# overall impacts
+
+school_summaries %&amp;gt;%
+  gather(&amp;quot;subject&amp;quot;,&amp;quot;impact_j&amp;quot;, readk, mathk) %&amp;gt;%
+  group_by(subject) %&amp;gt;%
+  summarise(
+    impact = weighted.mean(impact_j, w = w),
+    SE_CR0 = sqrt(sum(w^2 * (impact_j - impact)^2) / sum(w)^2),
+    SE_CR2 = sqrt(sum(w^2 * (impact_j - impact)^2 / (1 - w / sum(w))) / sum(w)^2),
+    df_CR2 = 1 / (sum(w^2 / (sum(w) - w)^2) - 
+                    2 * sum(w^3 / (sum(w) - w)^2) / sum(w) + 
+                    sum(w^2 / (sum(w) - w))^2 / sum(w)^2)
+  ) %&amp;gt;%
+  knitr::kable(digits = 2)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;subject&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;impact&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;SE_CR0&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;SE_CR2&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;df_CR2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;mathk&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12.13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.79&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.92&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;readk&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.73&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.81&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The CR0 and CR2 standard errors match the results from &lt;code&gt;coef_test&lt;/code&gt;, as do the Satterthwaite degrees of freedom. Note that the degrees of freedom are equal to 19 in this case, a bit less than &lt;span class=&#34;math inline&#34;&gt;\(J - 1 = 22\)&lt;/span&gt; due to variation in the weight assigned to each school.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-weights&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other weights&lt;/h2&gt;
+&lt;p&gt;Some analysts might not like the approach of using precision-weighted average of the site-specific impacts, as I’ve examined here. Instead, one might choose to weight the site-specific effects by the site-specific sample sizes, or to use some sort of random effects weighting that allows for random heterogeneity across sites. The formulas given above for conventional and clubSandwich clustered variance estimators apply directly to other weighting schemes too. Just substitute your favorite weights in place of &lt;span class=&#34;math inline&#34;&gt;\(w_j\)&lt;/span&gt;. When doing so, the clubSandwich estimator will be exactly unbiased under the assumption that your preferred weighting scheme corresponds to inverse-variance weighting, and the Satterthwaite degrees of freedom approximation will be derived under the same model.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>clubSandwich at the Austin R User Group Meetup</title>
+      <link>/clubsandwich-at-rug/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/clubsandwich-at-rug/</guid>
+      <description>
+
+
+&lt;p&gt;Last night I attended a joint meetup between the &lt;a href=&#34;https://www.meetup.com/Austin-R-User-Group/&#34;&gt;Austin R User Group&lt;/a&gt; and &lt;a href=&#34;https://www.meetup.com/rladies-austin/&#34;&gt;R Ladies Austin&lt;/a&gt;, which was great fun. The evening featured several lightning talks on a range of topics, from breaking into data science to network visualization to starting your own blog. I gave a talk about sandwich standard errors and my &lt;a href=&#34;/software/clubsandwich&#34;&gt;clubSandwich R package&lt;/a&gt;. Here are links to some of the talks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/beeonaposy&#34;&gt;Caitlin Hudon&lt;/a&gt;: &lt;a href=&#34;https://www.slideshare.net/CaitlinGarrett1/getting-plugged-into-data-science-87767332&#34;&gt;Getting Plugged into Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/clairemcwhite&#34;&gt;Claire McWhite&lt;/a&gt;: &lt;a href=&#34;https://speakerdeck.com/clairemcwhite/a-quick-intro-to-networks&#34;&gt;A quick intro to networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/NathanielRaley&#34;&gt;Nathaniel Woodward&lt;/a&gt;: &lt;a href=&#34;http://goo.gl/vJs8kD&#34;&gt;Blogdown Demo!&lt;/a&gt; (link includes his slides and a demo screencast)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/jepusto&#34;&gt;me&lt;/a&gt;: &lt;a href=&#34;/files/clubSandwich.html&#34;&gt;Robust, easy standard errors with the clubSandwich package&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pooling clubSandwich results across multiple imputations</title>
+      <link>/mi-with-clubsandwich/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/mi-with-clubsandwich/</guid>
+      <description>
+
+
+&lt;p&gt;A colleague recently asked me about how to apply cluster-robust hypothesis tests and confidence intervals, as calculated with the &lt;a href=&#34;https://CRAN.R-project.org/package=clubSandwich&#34;&gt;clubSandwich package&lt;/a&gt;, when dealing with multiply imputed datasets.
+Standard methods (i.e., Rubin’s rules) for pooling estimates from multiple imputed datasets are developed under the assumption that the full-data estimates are approximately normally distributed. However, this might not be reasonable when working with test statistics based on cluster-robust variance estimators, which can be imprecise when the number of clusters is small or the design matrix of predictors is unbalanced in certain ways. &lt;a href=&#34;https://doi.org/10.1093/biomet/86.4.948&#34;&gt;Barnard and Rubin (1999)&lt;/a&gt; proposed a small-sample correction for tests and confidence intervals based on multiple imputed datasets. In this post, I’ll show how to implement their technique using the output of &lt;code&gt;clubSandwich&lt;/code&gt;, with multiple imputations generated using the &lt;a href=&#34;https://cran.r-project.org/package=mice&#34;&gt;&lt;code&gt;mice&lt;/code&gt; package&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;setup&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Setup&lt;/h3&gt;
+&lt;p&gt;To begin, let me create missingness in a dataset containing multiple clusters of observations:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(mlmRev)
+library(mice)
+library(dplyr)
+
+data(bdf)
+
+bdf &amp;lt;- bdf %&amp;gt;%
+  select(schoolNR, IQ.verb, IQ.perf, sex, ses, langPRET, aritPRET, aritPOST) %&amp;gt;%
+  mutate(
+    schoolNR = factor(schoolNR),
+    sex = as.numeric(sex)
+    ) %&amp;gt;%
+  filter(as.numeric(schoolNR) &amp;lt;= 30) %&amp;gt;%
+  droplevels()
+
+bdf_missing &amp;lt;- 
+  bdf %&amp;gt;% 
+  select(-schoolNR) %&amp;gt;%
+  ampute(run = TRUE)
+
+bdf_missing &amp;lt;- 
+  bdf_missing$amp %&amp;gt;%
+  mutate(schoolNR = bdf$schoolNR)
+
+summary(bdf_missing)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##     IQ.verb         IQ.perf            sex             ses       
+##  Min.   : 4.00   Min.   : 5.333   Min.   :1.000   Min.   :10.00  
+##  1st Qu.:10.50   1st Qu.: 9.333   1st Qu.:1.000   1st Qu.:20.00  
+##  Median :11.50   Median :10.667   Median :1.000   Median :27.50  
+##  Mean   :11.68   Mean   :10.737   Mean   :1.472   Mean   :28.51  
+##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:37.00  
+##  Max.   :18.00   Max.   :16.667   Max.   :2.000   Max.   :50.00  
+##  NA&amp;#39;s   :36      NA&amp;#39;s   :42       NA&amp;#39;s   :40      NA&amp;#39;s   :37     
+##     langPRET        aritPRET       aritPOST        schoolNR  
+##  Min.   :15.00   Min.   : 1.0   Min.   : 2.00   40     : 35  
+##  1st Qu.:29.00   1st Qu.: 9.0   1st Qu.:12.00   54     : 31  
+##  Median :34.00   Median :11.0   Median :18.00   55     : 30  
+##  Mean   :33.79   Mean   :11.6   Mean   :17.74   38     : 28  
+##  3rd Qu.:39.00   3rd Qu.:14.0   3rd Qu.:23.00   1      : 25  
+##  Max.   :48.00   Max.   :20.0   Max.   :30.00   18     : 24  
+##  NA&amp;#39;s   :38      NA&amp;#39;s   :41     NA&amp;#39;s   :34      (Other):354&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I’ll use &lt;code&gt;mice&lt;/code&gt; to create 10 multiply imputed datasets:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Impute_bdf &amp;lt;- mice(bdf_missing, m=10, meth=&amp;quot;norm.nob&amp;quot;, seed=24)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Am I imputing while ignoring the hierarchical structure of the data? Yes, yes I am. Is this is a good way to do imputation? Probably not. But this is a quick and dirty example, so we’re going to have to live with it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;model&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Model&lt;/h3&gt;
+&lt;p&gt;Suppose that the goal of our analysis is to estimate the coefficients of the following regression model:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{aritPOST}_{ij} = \beta_0 + \beta_1 \text{aritPRET}_{ij} + \beta_2 \text{langPRET}_{ij} + \beta_3 \text{sex}_{ij} + \beta_4 \text{SES}_{ij} + e_{ij},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; indexes students and &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; indexes schools, and where we allow for the possibility that errors from the same cluster are correlated in an unspecified way. With complete data, we could estimate the model by ordinary least squares and then use &lt;code&gt;clubSandwich&lt;/code&gt; to get standard errors that are robust to within-cluster dependence and heteroskedasticity. The code for this is as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;lm_full &amp;lt;- lm(aritPOST ~ aritPRET + langPRET + sex + ses, data = bdf)
+coef_test(lm_full, cluster = bdf$schoolNR, vcov = &amp;quot;CR2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         Coef. Estimate     SE t-stat d.f. p-val (Satt) Sig.
+## 1 (Intercept)  -2.1921 1.3484 -1.626 22.9       0.1177     
+## 2    aritPRET   1.0053 0.0833 12.069 23.4       &amp;lt;0.001  ***
+## 3    langPRET   0.2758 0.0294  9.371 24.1       &amp;lt;0.001  ***
+## 4         sex  -1.2040 0.4706 -2.559 23.8       0.0173    *
+## 5         ses   0.0233 0.0266  0.876 20.5       0.3909&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If cluster dependence were no concern, we could simply use the model-based standard errors and test statistics. The &lt;code&gt;mice&lt;/code&gt; package provides functions that will fit the model to each imputed dataset and then combine them by Rubin’s rules. The code is simply:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;with(data = Impute_bdf, 
+     lm(aritPOST ~ aritPRET + langPRET + sex + ses)
+     ) %&amp;gt;%
+  pool() %&amp;gt;%
+  summary()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          term    estimate  std.error statistic       df      p.value
+## 1 (Intercept) -2.42499046 1.16841662 -2.075450 274.2334 3.887690e-02
+## 2    aritPRET  1.02683271 0.07243974 14.174992 293.2843 0.000000e+00
+## 3    langPRET  0.26639282 0.03990097  6.676349 159.7092 3.840734e-10
+## 4         sex -0.93604664 0.43011186 -2.176287 194.3333 3.073991e-02
+## 5         ses  0.02030141 0.02015597  1.007216 292.2173 3.146644e-01&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, this approach ignores the possibility of correlation in the errors of units in the same cluster, which is clearly a concern in this dataset:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# ratio of CRVE to conventional variance estimates
+diag(vcovCR(lm_full, cluster = bdf$schoolNR, type = &amp;quot;CR2&amp;quot;)) / 
+  diag(vcov(lm_full))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## (Intercept)    aritPRET    langPRET         sex         ses 
+##   1.5296837   1.5493134   0.6938735   1.4567650   2.0053186&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So we need a way to pool results based on the cluster-robust variance estimators, while also accounting for the relatively small number of clusters in this dataset.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;barnard-rubin-1999&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Barnard &amp;amp; Rubin (1999)&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://doi.org/10.1093/biomet/86.4.948&#34;&gt;Barnard and Rubin (1999)&lt;/a&gt; proposed a small-sample correction for tests and confidence intervals based on multiple imputed datasets that seems to work in this context. Rather than using large-sample normal approximations for inference, they derive an approximate degrees-of-freedom that combines uncertainty in the standard errors calculated from each imputed dataset with between-imputation uncertainty. The method is as follows.&lt;/p&gt;
+&lt;p&gt;Suppose that we have &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; imputed datasets. Let &lt;span class=&#34;math inline&#34;&gt;\(\hat\beta_{(j)}\)&lt;/span&gt; be the estimated regression coefficient from imputed dataset &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, with (in this case cluster-robust) sampling variance estimate &lt;span class=&#34;math inline&#34;&gt;\(V_{(j)}\)&lt;/span&gt;. Further, let &lt;span class=&#34;math inline&#34;&gt;\(\eta_{(j)}\)&lt;/span&gt; be the degrees of freedom corresponding to &lt;span class=&#34;math inline&#34;&gt;\(V_{(j)}\)&lt;/span&gt;. To combine these estimates, calculate the averages across multiply imputed datasets:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\bar\beta = \frac{1}{m}\sum_{j=1}^m \hat\beta_{(j)}, \qquad \bar{V} = \frac{1}{m}\sum_{j=1}^m V_{(j)}, \qquad \bar\eta = \frac{1}{m}\sum_{j=1}^m \eta_{(j)}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Also calculate the between-imputation variance&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+B = \frac{1}{m - 1} \sum_{j=1}^m \left(\hat\beta_{(j)} - \bar\beta\right)^2
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And then combine the between- and within- variance estimates using Rubin’s rules:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+V_{total} = \bar{V} + \frac{m + 1}{m} B.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The degrees of freedom associated with &lt;span class=&#34;math inline&#34;&gt;\(V_{total}\)&lt;/span&gt; modify the estimated complete-data degrees of freedom &lt;span class=&#34;math inline&#34;&gt;\(\bar\eta\)&lt;/span&gt; using quantities that depend on the fraction of missing information in a coefficient. The fraction of missing information is given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\hat\gamma_m = \frac{(m+1)B}{m V_{total}}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The degrees of freedom are then given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\nu_{total} = \left(\frac{1}{\nu_m} + \frac{1}{\nu_{obs}}\right)^{-1},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\nu_m = \frac{(m - 1)}{\hat\gamma_m^2}, \quad \text{and} \quad \nu_{obs} = \frac{\bar\eta (\bar\eta + 1) (1 - \hat\gamma)}{\bar\eta + 3}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Hypothesis tests and confidence intervals are based on the approximation&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\frac{\bar\beta - \beta_0}{\sqrt{V_{total}}} \ \stackrel{\cdot}{\sim} \ t(\nu_{total})
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;implementation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;Here is how to carry out these calculations using the results of &lt;code&gt;clubSandwich::coef_test&lt;/code&gt; and a bit of &lt;code&gt;dplyr&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# fit results with clubSandwich standard errors
+
+models_robust &amp;lt;- with(data = Impute_bdf, 
+                      lm(aritPOST ~ aritPRET + langPRET + sex + ses) %&amp;gt;% 
+                         coef_test(cluster=bdf$schoolNR, vcov=&amp;quot;CR2&amp;quot;)
+                      ) 
+
+
+# pool results with clubSandwich standard errors
+
+robust_pooled &amp;lt;- 
+  models_robust$analyses %&amp;gt;%
+  
+  # add coefficient names as a column
+  lapply(function(x) {
+    x$coef &amp;lt;- row.names(x)
+    x
+  }) %&amp;gt;%
+  bind_rows() %&amp;gt;%
+  as.data.frame() %&amp;gt;%
+  
+  # summarize by coefficient
+  group_by(coef) %&amp;gt;%
+  summarise(
+    m = n(),
+    B = var(beta),
+    beta_bar = mean(beta),
+    V_bar = mean(SE^2),
+    eta_bar = mean(df)
+  ) %&amp;gt;%
+  
+  mutate(
+    
+    # calculate intermediate quantities to get df
+    V_total = V_bar + B * (m + 1) / m,
+    gamma = ((m + 1) / m) * B / V_total,
+    df_m = (m - 1) / gamma^2,
+    df_obs = eta_bar * (eta_bar + 1) * (1 - gamma) / (eta_bar + 3),
+    df = 1 / (1 / df_m + 1 / df_obs),
+    
+    # calculate summary quantities for output
+    se = sqrt(V_total),
+    t = beta_bar / se,
+    p_val = 2 * pt(abs(t), df = df, lower.tail = FALSE),
+    crit = qt(0.975, df = df),
+    lo95 = beta_bar - se * crit,
+    hi95 = beta_bar + se * crit
+  )
+
+robust_pooled %&amp;gt;%
+  select(coef, est = beta_bar, se, t, df, p_val, lo95, hi95, gamma) %&amp;gt;%
+  mutate_at(vars(est:gamma), round, 3)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 9
+##   coef           est    se      t    df p_val   lo95  hi95 gamma
+##   &amp;lt;chr&amp;gt;        &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1 (Intercept) -2.42  1.38  -1.75   19.3 0.095 -5.32  0.467 0.082
+## 2 aritPRET     1.03  0.095 10.9    18.8 0      0.829 1.23  0.062
+## 3 langPRET     0.266 0.036  7.35   15.4 0      0.189 0.343 0.227
+## 4 ses          0.02  0.03   0.671  17.2 0.511 -0.043 0.084 0.047
+## 5 sex         -0.936 0.481 -1.94   18.2 0.067 -1.95  0.075 0.128&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It is instructive to compare the calculated &lt;code&gt;df&lt;/code&gt; to &lt;code&gt;eta_bar&lt;/code&gt; and &lt;code&gt;df_m&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;robust_pooled %&amp;gt;%
+  select(coef, df, df_m, eta_bar) %&amp;gt;%
+  mutate_at(vars(df, df_m, eta_bar), round, 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 4
+##   coef           df  df_m eta_bar
+##   &amp;lt;chr&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;
+## 1 (Intercept)  19.3 1333.    23.1
+## 2 aritPRET     18.8 2315.    22  
+## 3 langPRET     15.4  175.    23.7
+## 4 ses          17.2 3994.    19.9
+## 5 sex          18.2  549.    23.3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, &lt;code&gt;eta_bar&lt;/code&gt; is the average of the complete data degrees of freedom, and it can be seen that the total degrees of freedom are somewhat less than the average complete-data degrees of freedom. This is by construction. Further &lt;code&gt;df_m&lt;/code&gt; is the conventional degrees of freedom used in multiple-imputation, which assume that the complete-data estimates are normally distributed, and in this example they are way far off.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;further-thoughts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Further thoughts&lt;/h3&gt;
+&lt;p&gt;How well does this method perform in practice? I’m not entirely sure—I’m just trusting that Barnard and Rubin’s approximation is sound and would work in this setting (I mean, they’re smart people!). Are there other, better approaches? Totally possible. I have done zero literature review beyond the Barnard and Rubin paper. In any case, exploring the performance of this method (and any other alternatives) seems like it would make for a very nice student project.&lt;/p&gt;
+&lt;p&gt;There’s also the issue of how to do tests of multi-dimensional constraints (i.e., F-tests). The &lt;code&gt;clubSandwich&lt;/code&gt; package implements Wald-type tests for multi-dimensional constraints, using a small-sample correction that we developed (&lt;a href=&#34;http://journals.sagepub.com/doi/abs/10.3102/1076998615606099&#34;&gt;Tipton &amp;amp; Pustejovsky, 2015&lt;/a&gt;; &lt;a href=&#34;http://www.tandfonline.com/doi/full/10.1080/07350015.2016.1247004&#34;&gt;Pustejovsky &amp;amp; Tipton, 2016&lt;/a&gt;). But it would take some further thought to figure out how to handle multiply imputed data with this type of test…&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Imputing covariance matrices for meta-analysis of correlated effects</title>
+      <link>/imputing-covariance-matrices-for-multi-variate-meta-analysis/</link>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/imputing-covariance-matrices-for-multi-variate-meta-analysis/</guid>
+      <description>
+
+
+&lt;p&gt;In many systematic reviews, it is common for eligible studies to contribute effect size estimates from not just one, but &lt;em&gt;multiple&lt;/em&gt; relevant outcome measures, for a common sample of participants. If those outcomes are correlated, then &lt;a href=&#34;/Correlations-between-SMDs&#34;&gt;so too will be the effect size estimates&lt;/a&gt;. To estimate the degree of correlation, you would need the sample correlation among the outcomes—information that is woefully uncommon for primary studies to report (and best of luck to you if you try to follow up with author queries). Thus, the meta-analyst is often left in a situation where the sampling &lt;em&gt;variances&lt;/em&gt; of the effect size estimates can be reasonably well approximated, but the sampling &lt;em&gt;covariances&lt;/em&gt; are unknown for some or all studies.&lt;/p&gt;
+&lt;p&gt;Several solutions to this conundrum have been proposed in the meta-analysis methodology literature. One possible strategy is to just impute a correlation based on subject-matter knowledge (or at least feigned expertise), and assume that this correlation is constant across studies. This analysis could be supplemented with sensitivity analyses to examine the extent to which the parameter estimates and inferences are sensitive to alternative assumptions about the inter-correlation of effects within studies. A related strategy, described by &lt;a href=&#34;https://dx.doi.org/10.1002/sim.5679&#34;&gt;Wei and Higgins (2013)&lt;/a&gt;, is to meta-analyze any available correlation estimates and then use the results to impute correlations for any studies with missing correlations.&lt;/p&gt;
+&lt;p&gt;Both of these approaches require the meta-analyst to calculate block-diagonal sampling covariance matrices for the effect size estimates, which can be a bit unwieldy. I often use the impute-the-correlation strategy in my meta-analysis work and have written a helper function to compute covariance matrices, given known sampling variances and imputed correlations for each study. In the interest of not repeating myself, I’ve added the function to the latest version of my clubSandwich package. In this post, I’ll explain the function and demonstrate how to use it for conducting meta-analysis of correlated effect size estimates.&lt;/p&gt;
+&lt;div id=&#34;an-r-function-for-block-diagonal-covariance-matrices&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;An R function for block-diagonal covariance matrices&lt;/h2&gt;
+&lt;p&gt;Here is the function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;impute_covariance_matrix&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## function (vi, cluster, r, return_list = identical(as.factor(cluster), 
+##     sort(as.factor(cluster)))) 
+## {
+##     cluster &amp;lt;- droplevels(as.factor(cluster))
+##     vi_list &amp;lt;- split(vi, cluster)
+##     r_list &amp;lt;- rep_len(r, length(vi_list))
+##     vcov_list &amp;lt;- Map(function(V, rho) (rho + diag(1 - rho, nrow = length(V))) * 
+##         tcrossprod(sqrt(V)), V = vi_list, rho = r_list)
+##     if (return_list) {
+##         return(vcov_list)
+##     }
+##     else {
+##         vcov_mat &amp;lt;- metafor::bldiag(vcov_list)
+##         cluster_index &amp;lt;- order(order(cluster))
+##         return(vcov_mat[cluster_index, cluster_index])
+##     }
+## }
+## &amp;lt;bytecode: 0x0000000018729e88&amp;gt;
+## &amp;lt;environment: namespace:clubSandwich&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function takes three required arguments:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vi&lt;/code&gt; is a vector of sampling variances.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cluster&lt;/code&gt; is a vector identifying the study from which effect size estimates are drawn. Effects with the same value of &lt;code&gt;cluster&lt;/code&gt; will be treated as correlated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;r&lt;/code&gt; is the assumed value(s) of the correlation between effect size estimates from each study. Note that &lt;code&gt;r&lt;/code&gt; can also be a vector with separate values for each study.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is a simple example to demonstrate how the function works. Say that there are just three studies, contributing 2, 3, and 4 effects, respectively. I’ll just make up some values for the effect sizes and variances:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat &amp;lt;- data.frame(study = rep(LETTERS[1:3], 2:4), 
+                  yi = rnorm(9), 
+                  vi = 4:12)
+dat&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   study         yi vi
+## 1     A  0.5839048  4
+## 2     A -0.5168943  5
+## 3     B  0.1946788  6
+## 4     B  1.0894588  7
+## 5     B -0.2251032  8
+## 6     C -1.1907191  9
+## 7     C  1.3966669 10
+## 8     C  1.7493633 11
+## 9     C -1.1837521 12&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I’ll assume that effect size estimates from a given study are correlated at 0.7:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;V_list &amp;lt;- impute_covariance_matrix(vi = dat$vi, cluster = dat$study, r = 0.7)
+V_list&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $A
+##          [,1]     [,2]
+## [1,] 4.000000 3.130495
+## [2,] 3.130495 5.000000
+## 
+## $B
+##          [,1]     [,2]     [,3]
+## [1,] 6.000000 4.536518 4.849742
+## [2,] 4.536518 7.000000 5.238320
+## [3,] 4.849742 5.238320 8.000000
+## 
+## $C
+##          [,1]      [,2]      [,3]      [,4]
+## [1,] 9.000000  6.640783  6.964912  7.274613
+## [2,] 6.640783 10.000000  7.341662  7.668116
+## [3,] 6.964912  7.341662 11.000000  8.042388
+## [4,] 7.274613  7.668116  8.042388 12.000000&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The result is a list of matrices, where each entry corresponds to the variance-covariance matrix of effects from a given study. To see that the results are correct, let’s examine the correlation matrix implied by these correlation matrices:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cov2cor(V_list$A)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2]
+## [1,]  1.0  0.7
+## [2,]  0.7  1.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cov2cor(V_list$B)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3]
+## [1,]  1.0  0.7  0.7
+## [2,]  0.7  1.0  0.7
+## [3,]  0.7  0.7  1.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cov2cor(V_list$C)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4]
+## [1,]  1.0  0.7  0.7  0.7
+## [2,]  0.7  1.0  0.7  0.7
+## [3,]  0.7  0.7  1.0  0.7
+## [4,]  0.7  0.7  0.7  1.0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As requested, effects are assumed to be equi-correlated with r = 0.7.&lt;/p&gt;
+&lt;p&gt;If the data are sorted in order of the cluster IDs, then the list of matrices returned by &lt;code&gt;impute_covariance_matrix()&lt;/code&gt; can be fed directly into the &lt;code&gt;rma.mv&lt;/code&gt; function in metafor (as I demonstrate below). However, if the data are not sorted by &lt;code&gt;cluster&lt;/code&gt;, then feeding in the list of matrices will not work correctly. Instead, the full &lt;span class=&#34;math inline&#34;&gt;\(N \times N\)&lt;/span&gt; variance-covariance matrix (where &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; is the total number of effect size estimates) will need to be calculated so that the rows and columns appear in the correct order. To address this possibility, the function includes an optional argument, &lt;code&gt;return_list&lt;/code&gt;, which determines whether to output a list of matrices (one matrix per study/cluster) or a single matrix corresponding to the full variance-covariance matrix across all studies. By default, &lt;code&gt;return_list&lt;/code&gt; tests for whether the &lt;code&gt;cluster&lt;/code&gt; argument is sorted and returns the appropriate form. The argument can also be set directly by the user.&lt;/p&gt;
+&lt;p&gt;Here’s what happens if we feed in the data in a different order:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat_scramble &amp;lt;- dat[sample(nrow(dat)),]
+dat_scramble&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   study         yi vi
+## 8     C  1.7493633 11
+## 9     C -1.1837521 12
+## 3     B  0.1946788  6
+## 1     A  0.5839048  4
+## 2     A -0.5168943  5
+## 5     B -0.2251032  8
+## 7     C  1.3966669 10
+## 4     B  1.0894588  7
+## 6     C -1.1907191  9&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;V_mat &amp;lt;- round(impute_covariance_matrix(vi = dat_scramble$vi, cluster = dat_scramble$study, r = 0.7), 3)
+V_mat&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         [,1]   [,2]  [,3] [,4] [,5]  [,6]   [,7]  [,8]  [,9]
+##  [1,] 11.000  8.042 0.000 0.00 0.00 0.000  7.342 0.000 6.965
+##  [2,]  8.042 12.000 0.000 0.00 0.00 0.000  7.668 0.000 7.275
+##  [3,]  0.000  0.000 6.000 0.00 0.00 4.850  0.000 4.537 0.000
+##  [4,]  0.000  0.000 0.000 4.00 3.13 0.000  0.000 0.000 0.000
+##  [5,]  0.000  0.000 0.000 3.13 5.00 0.000  0.000 0.000 0.000
+##  [6,]  0.000  0.000 4.850 0.00 0.00 8.000  0.000 5.238 0.000
+##  [7,]  7.342  7.668 0.000 0.00 0.00 0.000 10.000 0.000 6.641
+##  [8,]  0.000  0.000 4.537 0.00 0.00 5.238  0.000 7.000 0.000
+##  [9,]  6.965  7.275 0.000 0.00 0.00 0.000  6.641 0.000 9.000&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To see that this is correct, check that the diagonal entries of &lt;code&gt;V_mat&lt;/code&gt; are the same as &lt;code&gt;vi&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(dat_scramble$vi, diag(V_mat))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;an-example-with-real-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;An example with real data&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://dx.doi.org/10.1037/1082-989X.1.3.227&#34;&gt;Kalaian and Raudenbush (1996)&lt;/a&gt; introduced a multi-variate random effects model, which can be used to perform a joint meta-analysis of studies that contribute effect sizes on distinct, related outcome constructs. They demonstrate the model using data from a synthesis on the effects of SAT coaching, where many studies reported effects on both the math and verbal portions of the SAT. The data are available in the &lt;code&gt;clubSandwich&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr, warn.conflicts=FALSE)
+data(SATcoaching)
+
+# calculate the mean of log of coaching hours
+mean_hrs_ln &amp;lt;- 
+  SATcoaching %&amp;gt;% 
+  group_by(study) %&amp;gt;%
+  summarise(hrs_ln = mean(log(hrs))) %&amp;gt;%
+  summarise(hrs_ln = mean(hrs_ln, na.rm = TRUE))
+
+# clean variables, sort by study ID
+SATcoaching &amp;lt;- 
+  SATcoaching %&amp;gt;%
+  mutate(
+    study = as.factor(study),
+    hrs_ln = log(hrs) - mean_hrs_ln$hrs_ln
+  ) %&amp;gt;%
+  arrange(study, test)
+
+SATcoaching %&amp;gt;%
+  select(study, year, test, d, V, hrs_ln) %&amp;gt;%
+  head(n = 20)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    study year   test     d      V      hrs_ln
+## 1  Alderman &amp;amp; Powers (A) 1980 Verbal  0.22 0.0817 -0.54918009
+## 2  Alderman &amp;amp; Powers (B) 1980 Verbal  0.09 0.0507 -0.19250515
+## 3  Alderman &amp;amp; Powers (C) 1980 Verbal  0.14 0.1045 -0.14371499
+## 4  Alderman &amp;amp; Powers (D) 1980 Verbal  0.14 0.0442 -0.19250515
+## 5  Alderman &amp;amp; Powers (E) 1980 Verbal -0.01 0.0535 -0.70333077
+## 6  Alderman &amp;amp; Powers (F) 1980 Verbal  0.14 0.0557 -0.88565233
+## 7  Alderman &amp;amp; Powers (G) 1980 Verbal  0.18 0.0561 -0.09719497
+## 8  Alderman &amp;amp; Powers (H) 1980 Verbal  0.01 0.1151  1.31157225
+## 9              Burke (A) 1986 Verbal  0.50 0.0825  1.41693276
+## 10             Burke (B) 1986 Verbal  0.74 0.0855  1.41693276
+## 11                Coffin 1987   Math  0.33 0.2534  0.39528152
+## 12                Coffin 1987 Verbal -0.23 0.2517  0.39528152
+## 13            Curran (A) 1988   Math -0.08 0.1065 -0.70333077
+## 14            Curran (A) 1988 Verbal -0.10 0.1066 -0.70333077
+## 15            Curran (B) 1988   Math -0.29 0.1015 -0.70333077
+## 16            Curran (B) 1988 Verbal -0.14 0.1007 -0.70333077
+## 17            Curran (C) 1988   Math -0.34 0.1104 -0.70333077
+## 18            Curran (C) 1988 Verbal -0.16 0.1092 -0.70333077
+## 19            Curran (D) 1988   Math -0.06 0.1089 -0.70333077
+## 20            Curran (D) 1988 Verbal -0.07 0.1089 -0.70333077&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The correlation betwen math and verbal test scores are not available, but it seems reasonable to use a correlation of r = 0.66, as reported in the SAT technical information. To synthesize these effects, I’ll first compute the required variance-covariances:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;V_list &amp;lt;- impute_covariance_matrix(vi = SATcoaching$V, 
+                                   cluster = SATcoaching$study, 
+                                   r = 0.66)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This can then be fed into &lt;code&gt;metafor&lt;/code&gt; to estimate a fixed effect or random effects meta-analysis or meta-regression models:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(metafor, quietly = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading &amp;#39;metafor&amp;#39; package (version 2.1-0). For an overview 
+## and introduction to the package please type: help(metafor).&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# bivariate fixed effect meta-analysis
+MVFE_null &amp;lt;- rma.mv(d ~ 0 + test, V = V_list, data = SATcoaching)
+MVFE_null&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Multivariate Meta-Analysis Model (k = 67; method: REML)
+## 
+## Variance Components: none
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 65) = 72.1630, p-val = 0.2532
+## 
+## Test of Moderators (coefficients 1:2):
+## QM(df = 2) = 19.8687, p-val &amp;lt; .0001
+## 
+## Model Results:
+## 
+##             estimate      se    zval    pval   ci.lb   ci.ub 
+## testMath      0.1316  0.0331  3.9783  &amp;lt;.0001  0.0668  0.1965  *** 
+## testVerbal    0.1215  0.0313  3.8783  0.0001  0.0601  0.1829  *** 
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# bivariate fixed effect meta-regression
+MVFE_hrs &amp;lt;- rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, 
+                   data = SATcoaching)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, data = SATcoaching):
+## Rows with NAs omitted from model fitting.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;MVFE_hrs&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Multivariate Meta-Analysis Model (k = 65; method: REML)
+## 
+## Variance Components: none
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 61) = 67.9575, p-val = 0.2523
+## 
+## Test of Moderators (coefficients 1:4):
+## QM(df = 4) = 23.7181, p-val &amp;lt; .0001
+## 
+## Model Results:
+## 
+##                    estimate      se    zval    pval    ci.lb   ci.ub 
+## testMath             0.0946  0.0402  2.3547  0.0185   0.0159  0.1734   * 
+## testVerbal           0.1119  0.0341  3.2762  0.0011   0.0449  0.1788  ** 
+## testMath:hrs_ln      0.1034  0.0546  1.8946  0.0581  -0.0036  0.2103   . 
+## testVerbal:hrs_ln    0.0601  0.0442  1.3592  0.1741  -0.0266  0.1467     
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# bivariate random effects meta-analysis
+MVRE_null &amp;lt;- rma.mv(d ~ 0 + test, V = V_list, data = SATcoaching, 
+                 random = ~ test | study, struct = &amp;quot;UN&amp;quot;)
+MVRE_null&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Multivariate Meta-Analysis Model (k = 67; method: REML)
+## 
+## Variance Components:
+## 
+## outer factor: study (nlvls = 47)
+## inner factor: test  (nlvls = 2)
+## 
+##             estim    sqrt  k.lvl  fixed   level 
+## tau^2.1    0.0122  0.1102     29     no    Math 
+## tau^2.2    0.0026  0.0507     38     no  Verbal 
+## 
+##         rho.Math  rho.Vrbl    Math  Vrbl 
+## Math           1   -1.0000       -    no 
+## Verbal   -1.0000         1      20     - 
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 65) = 72.1630, p-val = 0.2532
+## 
+## Test of Moderators (coefficients 1:2):
+## QM(df = 2) = 18.1285, p-val = 0.0001
+## 
+## Model Results:
+## 
+##             estimate      se    zval    pval   ci.lb   ci.ub 
+## testMath      0.1379  0.0434  3.1783  0.0015  0.0528  0.2229   ** 
+## testVerbal    0.1168  0.0337  3.4603  0.0005  0.0506  0.1829  *** 
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# bivariate random effects meta-regression
+MVRE_hrs &amp;lt;- rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, 
+                   data = SATcoaching,
+                   random = ~ test | study, struct = &amp;quot;UN&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, data = SATcoaching, :
+## Rows with NAs omitted from model fitting.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;MVRE_hrs&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Multivariate Meta-Analysis Model (k = 65; method: REML)
+## 
+## Variance Components:
+## 
+## outer factor: study (nlvls = 46)
+## inner factor: test  (nlvls = 2)
+## 
+##             estim    sqrt  k.lvl  fixed   level 
+## tau^2.1    0.0152  0.1234     28     no    Math 
+## tau^2.2    0.0014  0.0373     37     no  Verbal 
+## 
+##         rho.Math  rho.Vrbl    Math  Vrbl 
+## Math           1   -1.0000       -    no 
+## Verbal   -1.0000         1      19     - 
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 61) = 67.9575, p-val = 0.2523
+## 
+## Test of Moderators (coefficients 1:4):
+## QM(df = 4) = 23.6459, p-val &amp;lt; .0001
+## 
+## Model Results:
+## 
+##                    estimate      se    zval    pval    ci.lb   ci.ub 
+## testMath             0.0893  0.0507  1.7631  0.0779  -0.0100  0.1887   . 
+## testVerbal           0.1062  0.0357  2.9738  0.0029   0.0362  0.1762  ** 
+## testMath:hrs_ln      0.1694  0.0725  2.3354  0.0195   0.0272  0.3116   * 
+## testVerbal:hrs_ln    0.0490  0.0459  1.0681  0.2855  -0.0409  0.1389     
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The results of fitting this model using restricted maximum likelihood with metafor are actually a bit different from the estimates reported in the original paper, potentially because Kalaian and Raudenbush use a Cholesky decomposition of the sampling covariances, which alters the interpretation of the random effects variance components. The metafor fit is also a bit goofy because the correlation between the random effects for math and verbal scores is very close to -1, although evidently it is not uncommon to obtain such degenerate estimates of the random effects structure.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;robust-variance-estimation.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Robust variance estimation.&lt;/h2&gt;
+&lt;p&gt;Experienced meta-analysts will no doubt point out that a further, alternative analytic strategy to the one described above would be to use robust variance estimation methods (RVE; &lt;a href=&#34;https://dx.doi.org/10.1002/jrsm.5&#34;&gt;Hedges, Tipton, &amp;amp; Johnson&lt;/a&gt;). However, RVE is not so much an alternative strategy as it is a complementary technique, which can be used in combination with any of the models estimated above. Robust standard errors and hypothesis tests can readily be obtained with the &lt;a href=&#34;https://cran.r-project.org/package=clubSandwich&#34;&gt;clubSandwich package&lt;/a&gt;. Here’s how to do it for the random effects meta-regression model:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)
+coef_test(MVRE_hrs, vcov = &amp;quot;CR2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##               Coef. Estimate     SE t-stat  d.f. p-val (Satt) Sig.
+## 1          testMath   0.0893 0.0360   2.48 20.75       0.0218    *
+## 2        testVerbal   0.1062 0.0215   4.94 16.45       &amp;lt;0.001  ***
+## 3   testMath:hrs_ln   0.1694 0.1010   1.68  7.90       0.1325     
+## 4 testVerbal:hrs_ln   0.0490 0.0414   1.18  7.57       0.2725&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;RVE is also available in the &lt;a href=&#34;https://CRAN.R-project.org/package=robumeta&#34;&gt;robumeta R package&lt;/a&gt;, but there are several differences between the implementation there and the method I’ve demonstrated here. From the user’s perspective, an advantage of robumeta is that it does all of the covariance imputation calculations “under the hood,” whereas with metafor the calculations need to be done prior to fitting the model. Beyond this, differences include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;robumeta uses a specific random effects structure that can’t be controlled by the user, whereas metafor can be used to estimate a variety of different random effects structures;&lt;/li&gt;
+&lt;li&gt;robumeta uses a moment estimator for the between-study variance, whereas metafor provides FML or REML estimation;&lt;/li&gt;
+&lt;li&gt;robumeta uses semi-efficient, diagonal weights when fitting the meta-regression, whereas metafor uses weights that are fully efficient (exactly inverse-variance) under the working model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The advantages and disadvantages of these two approaches involve some subtleties that I’ll get into in a future post.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Clustered standard errors and hypothesis tests in fixed effects models</title>
+      <link>/clubsandwich-for-crve-fe/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/clubsandwich-for-crve-fe/</guid>
+      <description>
+
+
+&lt;p&gt;I’ve recently been working with my colleague &lt;a href=&#34;http://blogs.cuit.columbia.edu/let2119/&#34;&gt;Beth Tipton&lt;/a&gt; on methods for cluster-robust variance estimation in the context of some common econometric models, focusing in particular on fixed effects models for panel data—or what statisticians would call “longitudinal data” or “repeated measures.” We have a new working paper, which you can &lt;a href=&#34;/files/Pustejovsky-Tipton-201601.pdf&#34;&gt;find here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The importance of using CRVE (i.e., “clustered standard errors”) in panel models is now widely recognized. Less widely recognized, perhaps, is the fact that standard methods for constructing hypothesis tests and confidence intervals based on CRVE can perform quite poorly in when you have only a limited number of independent clusters. What’s worse, it can be hard to determine what counts as a large-enough sample to trust standard CRVE methods, because the finite-sample behavior of the variance estimators and test statistics depends on the configuration of the covariates, not just the total sample size. For example, suppose you have state-level panel data from 50 states across 15 years and are trying to estimate the effect of some policy using difference-in-differences. If only 5 or 6 states have variation in the policy variable over time, then you’re almost certainly in small-sample territory. And the sample size issues can be subtler than this, too, as I’ll show below.&lt;/p&gt;
+&lt;p&gt;One solution to this problem is to use bias-reduced linearization (BRL), which was proposed by Bell and McCaffrey (2002) and has recently begun to receive attention from econometricians (e.g., Cameron &amp;amp; Miller, 2015; Imbens &amp;amp; Kolesar, 2015). The idea of BRL is to correct the bias of standard CRVE based on a working model, and then to use a degrees-of-freedom correction for Wald tests based on the bias-reduced CRVE. That may seem silly (after all, the whole point of CRVE is to avoid making distributional assumptions about the errors in your model), but it turns out that the correction can help quite a bit, even when the working model is wrong. The degrees-of-freedom correction is based on a standard Satterthwaite-type approximation, and also relies on the working model. There’s now quite a bit of evidence (which we review in the working paper) that BRL performs well even in samples with a small number of clusters.&lt;/p&gt;
+&lt;p&gt;In the working paper, we make two contributions to all this:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;One problem with Bell and McCaffrey’s original formulation of BRL is that it does not work in some very common models for panel data, such as state-by-year panels that include fixed effects for each state and each year (Angrist and Pischke, 2009, point out this issue in their chapter on “non-standard standard error issues”). We propose a generalization of BRL that works even in models with arbitrary sets of fixed effects. We also address how to calculate the correction when the regression is fit using the “within” estimator, after absorbing the fixed effects.&lt;/li&gt;
+&lt;li&gt;We propose a method for testing hypotheses that involve multiple parameter constraints (which, in classical linear regression, you would test with an F statistic). The method involves approximating the distribution of the cluster-robust Wald statistic using Hotelling’s T-squared distribution (a multiple of an F distribution), where the denominator degrees of freedom are estimated based on the working model. For one-parameter constraints, the test reduces to a t-test with Satterthwaite degrees of freedom, and so it is a natural extension of the existing BRL methods.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The paper explains all this in greater detail, and also reports a fairly extensive simulation study that we designed to emuluate the types of covariates and study designs encountered in micro-economic applications. We’ve also got &lt;a href=&#34;https://github.com/jepusto/clubSandwich&#34;&gt;an R package&lt;/a&gt; that implements our methods (plus some other variants of CRVE, which I’ll explain some other time) in a fairly streamlined way. Here’s an example of how to use the package to do inference for a fixed effects panel data model.&lt;/p&gt;
+&lt;div id=&#34;effects-of-changing-the-minimum-legal-drinking-age&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Effects of changing the minimum legal drinking age&lt;/h2&gt;
+&lt;p&gt;Carpenter and Dobkin (2011) analyzed the effects of changes in the minimum legal drinking age on rates of motor vehicle fatalies among 18-20 year olds, using state-level panel data from the National Highway Traffic Administration’s Fatal Accident Reporting System. In their new textbook, Angrist and Pischke (2014) developed a stylized example based on Carpenter and Dobkin’s work. I’ll use Angrist and Pischke’s data and follow their analysis, just because their data are &lt;a href=&#34;http://masteringmetrics.com/resources/&#34;&gt;easily available&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The outcome is the incidence of deaths in motor vehicle crashes among 18-20 year-olds (per 100,000 residents), for each state plus the District of Columbia, over the period 1970 to 1983. Tthere were several changes in the minimum legal drinking age during this time period, with variability in the timing of changes across states. Angrist and Pischke (following Carpenter and Dobkin) use a difference-in-differences strategy to estimate the effects of lowering the minimum legal drinking age from 21 to 18. A basic specification is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_{it} = \alpha_i + \beta_t + \gamma r_{it} + \epsilon_{it},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;for &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; = 1,…,51 and &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; = 1970,…,1983. In this model, &lt;span class=&#34;math inline&#34;&gt;\(\alpha_i\)&lt;/span&gt; is a state-specific fixed effect, &lt;span class=&#34;math inline&#34;&gt;\(\beta_t\)&lt;/span&gt; is a year-specific fixed effect, &lt;span class=&#34;math inline&#34;&gt;\(r_{it}\)&lt;/span&gt; is the proportion of 18-20 year-olds in state &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in year &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; who are legally allowed to drink, and &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt; captures the effect of shifting the minimum legal drinking age from 21 to 18. Following Angrist and Pischke’s analysis, I’ll estimate this model both by (unweighted) OLs and by weighted least squares with weights corresponding to population size in a given state and year.&lt;/p&gt;
+&lt;div id=&#34;unweighted-ols&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Unweighted OLS&lt;/h3&gt;
+&lt;p&gt;The following code does some simple data-munging and the estimates the model by OLS:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# get data from Angrist &amp;amp; Pischke&amp;#39;s website
+library(foreign)
+deaths &amp;lt;- read.dta(&amp;quot;http://masteringmetrics.com/wp-content/uploads/2015/01/deaths.dta&amp;quot;, convert.factors=FALSE)
+
+# subset for 18-20 year-olds, deaths in motor vehicle accidents
+MVA_deaths &amp;lt;- subset(deaths, agegr==2 &amp;amp; dtype==2 &amp;amp; year &amp;lt;= 1983, select = c(-dtype, -agegr))
+
+# fit by OLS
+lm_unweighted &amp;lt;- lm(mrate ~ 0 + legal + factor(state) + factor(year), data = MVA_deaths)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;coef_test&lt;/code&gt; function from &lt;code&gt;clubSandwich&lt;/code&gt; can then be used to test the hypothesis that changing the minimum legal drinking age has no effect on motor vehicle deaths in this cohort (i.e., &lt;span class=&#34;math inline&#34;&gt;\(H_0: \gamma = 0\)&lt;/span&gt;). The usual way to test this is to cluster the standard errors by state, calculate the robust Wald statistic, and compare that to a standard normal reference distribution. The code and results are as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# devtools::install_github(&amp;quot;jepusto/clubSandwich&amp;quot;) # install the clubSandwich package
+library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(lm_unweighted, vcov = &amp;quot;CR1&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;z&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal     7.59 2.38   3.19   0.00143   **&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our work argues shows that a better approach would be to use the bias-reduced linearization CRVE, together with Satterthwaite degrees of freedom. In the package, the BRL adjustment is called “CR2” because it is directly analogous to the HC2 correction used in heteroskedasticity-robust variance estimation. When applied to an OLS model estimated by &lt;code&gt;lm&lt;/code&gt;, the default working model is an identity matrix, which amounts to the “working” assumption that the errors are all uncorrelated and homoskedastic. Here’s how to apply this approach in the example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(lm_unweighted, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;Satterthwaite&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal     7.59 2.43   3.12 25.7      0.00442   **&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The Satterthwaite degrees of freedom will be different for each coefficient in the model, and so the &lt;code&gt;coef_test&lt;/code&gt; function reports them right alongside the standard error. In this case, the degrees of freedom are about half of what you might expect, given that there are 51 clusters. The p-value for the CR2+Satterthwaite test is about twice as large as the p-value based on the standard Wald test. But of course, the coefficient is still statistically significant at conventional levels, and so the inference doesn’t change.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unweighted-within-estimation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Unweighted “within” estimation&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;plm&lt;/code&gt; package in R provides another way to estimate the same model. It is convenient because it absorbs the state and year fixed effects before estimating the effect of &lt;code&gt;legal&lt;/code&gt;. The &lt;code&gt;clubSandwich&lt;/code&gt; package works with fitted &lt;code&gt;plm&lt;/code&gt; models too:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(plm)
+plm_unweighted &amp;lt;- plm(mrate ~ legal, data = MVA_deaths, 
+                      effect = &amp;quot;twoways&amp;quot;, index = c(&amp;quot;state&amp;quot;,&amp;quot;year&amp;quot;))
+coef_test(plm_unweighted, vcov = &amp;quot;CR1S&amp;quot;, cluster = &amp;quot;individual&amp;quot;, test = &amp;quot;z&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal     7.59 2.38   3.19   0.00143   **&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(plm_unweighted, vcov = &amp;quot;CR2&amp;quot;, cluster = &amp;quot;individual&amp;quot;, test = &amp;quot;Satterthwaite&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal     7.59 2.43   3.12 25.7      0.00442   **&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For the standard approach, I’ve used the variant of the correction factor implemented in Stata (called &lt;code&gt;CR1S&lt;/code&gt; in the &lt;code&gt;clubSandwich&lt;/code&gt; package), but this makes very little difference in the standard error or the p-value. For the test based on CR2, the degrees of freedom are slightly different than the results based on the fitted &lt;code&gt;lm&lt;/code&gt; model, but the p-values agree to four decimals. The differences in degrees of freedom are due to numerical imprecision in the calculations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;population-weighted-estimation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Population-weighted estimation&lt;/h3&gt;
+&lt;p&gt;The difference between the standard method and the new method are not terribly exciting in the above example. However, things change quite a bit if the model is estimated using population weights. As far as I know, &lt;code&gt;plm&lt;/code&gt; does not handle weighted least squares, and so I go back to fitting in &lt;code&gt;lm&lt;/code&gt; with dummies for all the fixed effects.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;lm_weighted &amp;lt;- lm(mrate ~ 0 + legal + factor(state) + factor(year), 
+                  weights = pop, data = MVA_deaths)
+coef_test(lm_weighted, vcov = &amp;quot;CR1&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;z&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal      7.5 2.16   3.47    &amp;lt;0.001  ***&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(lm_weighted, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;Satterthwaite&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate  SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal      7.5 2.3   3.27 8.65       0.0103    *&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using population weights slightly reduces the point estimate of the effect, while also slightly increasing its precision. If you were following the standard approach, you would probably be happy with the weighted estimates and wouldn’t think about it any further. However, our recommended approach—using the CR2 variance estimator and Satterthwaite correction—produces a p-value that is an order of magnitude larger (though still significant at the conventional 5% level). The degrees of freedom are just 8.6—drastically smaller than would be expected based on the number of clusters.&lt;/p&gt;
+&lt;p&gt;Even with weights, the &lt;code&gt;coef_test&lt;/code&gt; function uses an “independent, homoskedastic” working model as a default for &lt;code&gt;lm&lt;/code&gt; objects. In the present example, the outcome is a standardized rate and so a better assumption might be that the error variances are inversely proportional to population size. The following code uses this alternate working model:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(lm_weighted, vcov = &amp;quot;CR2&amp;quot;, 
+          cluster = MVA_deaths$state, target = 1 / MVA_deaths$pop, 
+          test = &amp;quot;Satterthwaite&amp;quot;)[&amp;quot;legal&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Coef. Estimate  SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal      7.5 2.2   3.41   13      0.00467   **&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The new working model leads to slightly smaller standard errors and a couple of additional degrees of freedom, though we remain in small-sample territory.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;robust-hausman-test&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Robust Hausman test&lt;/h3&gt;
+&lt;p&gt;CRVE is also used in specification tests, as in the Hausman-type test for endogeneity of unobserved effects. Suppose that the model includes an additional control for the beer taxation rate in state &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; at time &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;, denoted &lt;span class=&#34;math inline&#34;&gt;\(s_{it}\)&lt;/span&gt;. The (unweighted) fixed effects model is then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_{it} = \alpha_i + \beta_t + \gamma_1 r_{it} + \gamma_2 s_{it} + \epsilon_{it},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and the estimated effects are as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;lm_FE &amp;lt;- lm(mrate ~ 0 + legal + beertaxa + factor(state) + factor(year), data = MVA_deaths)
+coef_test(lm_FE, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;Satterthwaite&amp;quot;)[c(&amp;quot;legal&amp;quot;,&amp;quot;beertaxa&amp;quot;),]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      Coef. Estimate   SE t-stat  d.f. p-val (Satt) Sig.
+## 1    legal     7.59 2.51  3.019 24.58      0.00583   **
+## 2 beertaxa     3.82 5.27  0.725  5.77      0.49663&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the unobserved effects &lt;span class=&#34;math inline&#34;&gt;\(\alpha_1,...,\alpha_{51}\)&lt;/span&gt; are uncorrelated with the regressors, then a more efficient way to estimate &lt;span class=&#34;math inline&#34;&gt;\(\gamma_1,\gamma_2\)&lt;/span&gt; is by weighted least squares, with weights based on a random effects model. However, if the unobserved effects covary with &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{r}_i, \mathbf{s}_i\)&lt;/span&gt;, then the random-effects estimates will be biased.&lt;/p&gt;
+&lt;p&gt;We can test for whether endogeneity is a problem by including group-centered covariates as additional regressors. Let &lt;span class=&#34;math inline&#34;&gt;\(\tilde{r}_{it} = r_{it} - \frac{1}{T}\sum_t r_{it}\)&lt;/span&gt;, with &lt;span class=&#34;math inline&#34;&gt;\(\tilde{s}_{it}\)&lt;/span&gt; defined analogously. Now estimate the regression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_{it} = \beta_t + \gamma_1 r_{it} + \gamma_2 s_{it} + \delta_1 \tilde{r}_{it} + \delta_2 \tilde{s}_{it} + \epsilon_{it},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;which does not include state fixed effects. The parameters &lt;span class=&#34;math inline&#34;&gt;\(\delta_1,\delta_2\)&lt;/span&gt; represent the differences between the random effects and fixed effects estimands of &lt;span class=&#34;math inline&#34;&gt;\(\gamma_1, \gamma_2\)&lt;/span&gt;. If these are both zero, then the random effects estimator is unbiased. Thus, the joint test for &lt;span class=&#34;math inline&#34;&gt;\(H_0: \delta_1 = \delta_2 = 0\)&lt;/span&gt; amounts to a test for non-endogeneity of the unobserved effects.&lt;/p&gt;
+&lt;p&gt;For efficiency, we should estimate this using weighted least squares, but OLS will work too:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;MVA_deaths &amp;lt;- within(MVA_deaths, {
+  legal_cent &amp;lt;- legal - tapply(legal, state, mean)[factor(state)]
+  beer_cent &amp;lt;- beertaxa - tapply(beertaxa, state, mean)[factor(state)]
+})
+
+lm_Hausman &amp;lt;- lm(mrate ~ 0 + legal + beertaxa + legal_cent + beer_cent + factor(year), data = MVA_deaths)
+coef_test(lm_Hausman, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;Satterthwaite&amp;quot;)[1:4,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        Coef. Estimate   SE  t-stat  d.f. p-val (Satt) Sig.
+## 1      legal   -9.180 7.62 -1.2042 24.94       0.2398     
+## 2   beertaxa    3.395 9.40  0.3613  6.44       0.7295     
+## 3 legal_cent   16.768 8.53  1.9665 33.98       0.0575    .
+## 4  beer_cent    0.424 9.25  0.0458  5.86       0.9650&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To conduct a joint test on the centered covariates, we can use the &lt;code&gt;Wald_test&lt;/code&gt; function. The usual way to test this hypothesis would be to use the &lt;code&gt;CR1&lt;/code&gt; variance estimator to calculate the robust Wald statistic, then use a &lt;span class=&#34;math inline&#34;&gt;\(\chi^2_2\)&lt;/span&gt; reference distribution (or equivalently, compare a re-scaled Wald statistic to an &lt;span class=&#34;math inline&#34;&gt;\(F(2,\infty)\)&lt;/span&gt; distribution). The &lt;code&gt;Wald_test&lt;/code&gt; function reports the latter version:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Wald_test(lm_Hausman, constraints = c(&amp;quot;legal_cent&amp;quot;,&amp;quot;beer_cent&amp;quot;), vcov = &amp;quot;CR1&amp;quot;, cluster = MVA_deaths$state, test = &amp;quot;chi-sq&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    Test    F d.f.  p.val
+##  chi-sq 2.93  Inf 0.0534&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The test is just shy of significance at the 5% level. If we instead use the &lt;code&gt;CR2&lt;/code&gt; variance estimator and our newly proposed approximate F-test (which is the default in &lt;code&gt;Wald_test&lt;/code&gt;), then we get:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Wald_test(lm_Hausman, constraints = c(&amp;quot;legal_cent&amp;quot;,&amp;quot;beer_cent&amp;quot;), vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  Test    F d.f. p.val
+##   HTZ 2.57 12.4 0.117&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The low degrees of freedom of the test indicate that we’re definitely in small-sample territory and should not trust the asymptotic &lt;span class=&#34;math inline&#34;&gt;\(\chi^2\)&lt;/span&gt; approximation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Angrist, J. D., &amp;amp; Pischke, J.-S. (2009). &lt;em&gt;Mostly harmless econometrics: An empiricist’s companion&lt;/em&gt;. Princeton, NJ: Princeton University Press.&lt;/li&gt;
+&lt;li&gt;Angrist, J. D. and Pischke, J.-S. (2014). &lt;em&gt;Mastering ’metrics: The Path from Cause to Effect&lt;/em&gt;. Princeton, NJ: Princeton University Press.&lt;/li&gt;
+&lt;li&gt;Bell, R. M., &amp;amp; McCaffrey, D. F. (2002). Bias reduction in standard errors for linear regression with multi-stage samples. &lt;em&gt;Survey Methodology, 28&lt;/em&gt;(2), 169-181.&lt;/li&gt;
+&lt;li&gt;Cameron, A. C., &amp;amp; Miller, D. L. (2015). A practitioner’s guide to cluster-robust inference. URL: &lt;a href=&#34;http://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf&#34; class=&#34;uri&#34;&gt;http://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Carpenter, C., &amp;amp; Dobkin, C. (2011). The minimum legal drinking age and public health. &lt;em&gt;Journal of Economic Perspectives, 25&lt;/em&gt;(2), 133-156. &lt;a href=&#34;doi:10.1257/jep.25.2.133&#34; class=&#34;uri&#34;&gt;doi:10.1257/jep.25.2.133&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Imbens, G. W., &amp;amp; Kolesar, M. (2015). Robust standard errors in small samples: Some practical advice. URL: &lt;a href=&#34;https://www.princeton.edu/~mkolesar/papers/small-robust.pdf&#34; class=&#34;uri&#34;&gt;https://www.princeton.edu/~mkolesar/papers/small-robust.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The clubSandwich package for meta-analysis with RVE</title>
+      <link>/clubsandwich-for-rve-meta-analysis/</link>
+      <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>/clubsandwich-for-rve-meta-analysis/</guid>
+      <description>
+
+
+&lt;p&gt;I’ve recently been working on small-sample correction methods for hypothesis tests in linear regression models with cluster-robust variance estimation. My colleague (and grad-schoolmate) Beth Tipton has developed small-sample adjustments for t-tests (of single regression coefficients) in the context of meta-regression models with robust variance estimation, and together we have developed methods for multiple-contrast hypothesis tests. We have an R package (called &lt;code&gt;clubSandwich&lt;/code&gt;) that implements all this stuff, not only for meta-regression models but also for other models and contexts where cluster-robust variance estimation is often used.&lt;/p&gt;
+&lt;p&gt;The alpha-version of the package is currently &lt;a href=&#34;https://github.com/jepusto/clubSandwich&#34;&gt;available on Github&lt;/a&gt;. See the Github README for instructions on how to install it in R. Below I demonstrate how to use the package to get robust variance estimates, t-tests, and F-tests, all with small-sample corrections. The example uses a dataset of effect sizes from a Campbell Collaboration &lt;a href=&#34;http://www.campbellcollaboration.org/lib/project/158/&#34;&gt;systematic review of dropout prevention programs&lt;/a&gt;, conducted by Sandra Jo Wilson and her colleagues.&lt;/p&gt;
+&lt;p&gt;The original analysis included a meta-regression with covariates that capture methodological, participant, and program characteristics. I’ll use a regression specification that is similar to Model III from Wilson et al. (2011), but treat the &lt;code&gt;evaluator_independence&lt;/code&gt; and &lt;code&gt;implementation_quality&lt;/code&gt; variables as categorical rather than interval-level; the original analysis clustered at the level of the sample (some studies reported results from multiple samples), whereas I will cluster at the study level.
+I fit the model two ways, first using the &lt;code&gt;robumeta&lt;/code&gt; package and then using &lt;code&gt;metafor&lt;/code&gt;.&lt;/p&gt;
+&lt;div id=&#34;robumeta-model&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;robumeta model&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;options(width=150)
+library(robumeta)
+library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
+##   method    from    
+##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(dropoutPrevention)
+
+m3_robu &amp;lt;- robu(LOR1 ~ study_design + attrition + group_equivalence + adjusted
+                + outcome + evaluator_independence
+                + male_pct + white_pct + average_age
+                + implementation_quality + program_site + duration + service_hrs, 
+                data = dropoutPrevention, studynum = studyID, var.eff.size = varLOR, 
+                modelweights = &amp;quot;HIER&amp;quot;)
+print(m3_robu)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## RVE: Hierarchical Effects Model with Small-Sample Corrections 
+## 
+## Model: LOR1 ~ study_design + attrition + group_equivalence + adjusted + outcome + evaluator_independence + male_pct + white_pct + average_age + implementation_quality + program_site + duration + service_hrs 
+## 
+## Number of clusters = 152 
+## Number of outcomes = 385 (min = 1 , mean = 2.53 , median = 1 , max = 30 )
+## Omega.sq = 0.24907 
+## Tau.sq = 0.1024663 
+## 
+##                                                 Estimate   StdErr t-value  dfs    P(|t|&amp;gt;) 95% CI.L 95% CI.U Sig
+## 1                                 X.Intercept.  0.016899 0.615399  0.0275 16.9 0.97841541 -1.28228  1.31608    
+## 2          study_designNon.random..non.matched -0.002626 0.185142 -0.0142 40.5 0.98875129 -0.37667  0.37141    
+## 3                       study_designRandomized -0.086872 0.140044 -0.6203 38.6 0.53869676 -0.37024  0.19650    
+## 4                                    attrition  0.118889 0.247228  0.4809 15.5 0.63732597 -0.40666  0.64444    
+## 5                            group_equivalence  0.502463 0.195838  2.5657 28.7 0.01579282  0.10174  0.90318  **
+## 6                        adjustedadjusted.data -0.322480 0.125413 -2.5713 33.8 0.01470796 -0.57741 -0.06755  **
+## 7                              outcomeenrolled  0.097059 0.139842  0.6941 16.5 0.49727848 -0.19862  0.39274    
+## 8                            outcomegraduation  0.147643 0.134938  1.0942 30.2 0.28253825 -0.12786  0.42315    
+## 9                        outcomegraduation.ged  0.258034 0.169134  1.5256 16.3 0.14632629 -0.10006  0.61613    
+## 10 evaluator_independenceIndirect..influential -0.765085 0.399109 -1.9170  6.2 0.10212896 -1.73406  0.20389    
+## 11              evaluator_independencePlanning -0.920874 0.346536 -2.6574  5.6 0.04027061 -1.78381 -0.05794  **
+## 12              evaluator_independenceDelivery -0.916673 0.304303 -3.0124  4.7 0.03212299 -1.71432 -0.11903  **
+## 13                                    male_pct  0.167965 0.181538  0.9252 16.4 0.36824526 -0.21609  0.55202    
+## 14                                   white_pct  0.022915 0.149394  0.1534 21.8 0.87950385 -0.28704  0.33287    
+## 15                                 average_age  0.037102 0.027053  1.3715 21.2 0.18458247 -0.01913  0.09333    
+## 16     implementation_qualityPossible.problems  0.411779 0.128898  3.1946 26.7 0.00358205  0.14714  0.67642 ***
+## 17  implementation_qualityNo.apparent.problems  0.658570 0.123874  5.3164 34.6 0.00000635  0.40699  0.91015 ***
+## 18                           program_sitemixed  0.444384 0.172635  2.5741 28.6 0.01550504  0.09109  0.79768  **
+## 19                program_siteschool.classroom  0.426658 0.159773  2.6704 37.4 0.01115192  0.10303  0.75028  **
+## 20    program_siteschool..outside.of.classroom  0.262517 0.160519  1.6354 30.1 0.11236814 -0.06525  0.59028    
+## 21                                    duration  0.000427 0.000873  0.4895 36.7 0.62736846 -0.00134  0.00220    
+## 22                                 service_hrs -0.003434 0.005012 -0.6852 36.7 0.49752503 -0.01359  0.00672    
+## ---
+## Signif. codes: &amp;lt; .01 *** &amp;lt; .05 ** &amp;lt; .10 *
+## ---
+## Note: If df &amp;lt; 4, do not trust the results&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that &lt;code&gt;robumeta&lt;/code&gt; produces small-sample corrected standard errors and t-tests, and so there is no need to repeat those calculations with &lt;code&gt;clubSandwich&lt;/code&gt;. The &lt;code&gt;evaluator_independence&lt;/code&gt; variable has four levels, and it might be of interest to test whether the average program effects differ by the degree of evaluator independence. The null hypothesis in this case is that the 10th, 11th, and 12th regression coefficients are all equal to zero. A small-sample adjusted F-test for this hypothesis can be obtained as follows.
+(The &lt;code&gt;vcov = &#34;CR2&#34;&lt;/code&gt; option means that the standard errors will be corrected using the bias-reduced linearization method proposed by McCaffrey, Bell, and Botts, 2001.)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Wald_test(m3_robu, constraints = 10:12, vcov = &amp;quot;CR2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  Test    F d.f.  p.val
+##   HTZ 2.78 16.8 0.0732&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default, the &lt;code&gt;Wald_test&lt;/code&gt; function provides an F-type test with degrees of freedom estimated using the approximate Hotelling’s &lt;span class=&#34;math inline&#34;&gt;\(T^2_Z\)&lt;/span&gt; method. The test has less than 17 degrees of freedom, even though there are 152 independent studies in the data, and has a p-value of .07, so not-quite-significant at conventional levels. The low degrees of freedom are a consequence of the fact that one of the levels of &lt;code&gt;evaluator independence&lt;/code&gt; has only a few effect sizes in it:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(dropoutPrevention$evaluator_independence)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##           Independent Indirect, influential              Planning              Delivery 
+##                     6                    33                    43                   303&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;metafor-model&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;metafor model&lt;/h4&gt;
+&lt;p&gt;Our package also works with models fit using the &lt;code&gt;metafor&lt;/code&gt; package. Here I re-fit the same regression specification, but use REML to estimate the variance components (&lt;code&gt;robumeta&lt;/code&gt; uses a method-of-moments estimator) and use a somewhat different weighting scheme than that used in &lt;code&gt;robumeta&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(metafor)
+m3_metafor &amp;lt;- rma.mv(LOR1 ~ study_design + attrition + group_equivalence + adjusted
+                      + outcome + evaluator_independence
+                      + male_pct + white_pct + average_age
+                      + implementation_quality + program_site + duration + service_hrs, 
+                      V = varLOR, random = list(~ 1 | studyID, ~ 1 | studySample),
+                     data = dropoutPrevention)
+summary(m3_metafor)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Multivariate Meta-Analysis Model (k = 385; method: REML)
+## 
+##    logLik   Deviance        AIC        BIC       AICc 
+## -489.0357   978.0714  1026.0714  1119.5371  1029.6217   
+## 
+## Variance Components:
+## 
+##             estim    sqrt  nlvls  fixed       factor 
+## sigma^2.1  0.2274  0.4769    152     no      studyID 
+## sigma^2.2  0.1145  0.3384    317     no  studySample 
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 363) = 1588.4397, p-val &amp;lt; .0001
+## 
+## Test of Moderators (coefficients 2:22):
+## QM(df = 21) = 293.8694, p-val &amp;lt; .0001
+## 
+## Model Results:
+## 
+##                                              estimate      se     zval    pval    ci.lb    ci.ub 
+## intrcpt                                        0.5296  0.7250   0.7304  0.4651  -0.8915   1.9506      
+## study_designNon-random, non-matched           -0.0494  0.1722  -0.2871  0.7741  -0.3870   0.2881      
+## study_designRandomized                         0.0653  0.1628   0.4010  0.6884  -0.2538   0.3843      
+## attrition                                     -0.1366  0.2429  -0.5623  0.5739  -0.6126   0.3395      
+## group_equivalence                              0.4071  0.1573   2.5877  0.0097   0.0988   0.7155   ** 
+## adjustedadjusted data                         -0.3581  0.1532  -2.3371  0.0194  -0.6585  -0.0578    * 
+## outcomeenrolled                               -0.2831  0.0771  -3.6709  0.0002  -0.4343  -0.1320  *** 
+## outcomegraduation                             -0.0913  0.0657  -1.3896  0.1646  -0.2201   0.0375      
+## outcomegraduation/ged                          0.6983  0.0805   8.6750  &amp;lt;.0001   0.5406   0.8561  *** 
+## evaluator_independenceIndirect, influential   -0.7530  0.4949  -1.5214  0.1282  -1.7230   0.2171      
+## evaluator_independencePlanning                -0.7700  0.4869  -1.5814  0.1138  -1.7242   0.1843      
+## evaluator_independenceDelivery                -1.0016  0.4600  -2.1774  0.0294  -1.9033  -0.1000    * 
+## male_pct                                       0.1021  0.1715   0.5951  0.5518  -0.2341   0.4382      
+## white_pct                                      0.1223  0.1804   0.6777  0.4979  -0.2313   0.4758      
+## average_age                                    0.0061  0.0291   0.2091  0.8344  -0.0509   0.0631      
+## implementation_qualityPossible problems        0.4738  0.1609   2.9445  0.0032   0.1584   0.7892   ** 
+## implementation_qualityNo apparent problems     0.6318  0.1471   4.2965  &amp;lt;.0001   0.3436   0.9201  *** 
+## program_sitemixed                              0.3289  0.2413   1.3631  0.1729  -0.1440   0.8019      
+## program_siteschool classroom                   0.2920  0.1736   1.6821  0.0926  -0.0482   0.6321    . 
+## program_siteschool, outside of classroom       0.1616  0.1898   0.8515  0.3945  -0.2104   0.5337      
+## duration                                       0.0013  0.0009   1.3423  0.1795  -0.0006   0.0031      
+## service_hrs                                   -0.0003  0.0047  -0.0654  0.9478  -0.0096   0.0090      
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;metafor&lt;/code&gt; produces model-based standard errors, t-tests, and confidence intervals. The &lt;code&gt;coef_test&lt;/code&gt; function from &lt;code&gt;clubSandwich&lt;/code&gt; will calculate robust standard errors and robust t-tests for each of the coefficients:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef_test(m3_metafor, vcov = &amp;quot;CR2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                                          Coef.  Estimate       SE  t-stat  d.f. p-val (Satt) Sig.
+## 1                                      intrcpt  0.529569 0.724851  0.7306 20.08      0.47347     
+## 2          study_designNon-random, non-matched -0.049434 0.204152 -0.2421 58.42      0.80952     
+## 3                       study_designRandomized  0.065272 0.149146  0.4376 53.17      0.66342     
+## 4                                    attrition -0.136575 0.306429 -0.4457 10.52      0.66485     
+## 5                            group_equivalence  0.407108 0.210917  1.9302 23.10      0.06595    .
+## 6                        adjustedadjusted data -0.358124 0.136132 -2.6307 43.20      0.01176    *
+## 7                              outcomeenrolled -0.283124 0.237199 -1.1936  7.08      0.27108     
+## 8                            outcomegraduation -0.091295 0.091465 -0.9981  9.95      0.34188     
+## 9                        outcomegraduation/ged  0.698328 0.364882  1.9138  8.02      0.09188    .
+## 10 evaluator_independenceIndirect, influential -0.752994 0.447670 -1.6820  6.56      0.13929     
+## 11              evaluator_independencePlanning -0.769968 0.403898 -1.9063  6.10      0.10446     
+## 12              evaluator_independenceDelivery -1.001648 0.355989 -2.8137  4.89      0.03834    *
+## 13                                    male_pct  0.102055 0.148410  0.6877  9.68      0.50782     
+## 14                                   white_pct  0.122255 0.141470  0.8642 16.88      0.39961     
+## 15                                 average_age  0.006084 0.033387  0.1822 15.79      0.85772     
+## 16     implementation_qualityPossible problems  0.473789 0.148660  3.1871 22.44      0.00419   **
+## 17  implementation_qualityNo apparent problems  0.631842 0.138073  4.5761 28.68      &amp;lt; 0.001  ***
+## 18                           program_sitemixed  0.328941 0.196848  1.6710 27.47      0.10607     
+## 19                program_siteschool classroom  0.291952 0.146014  1.9995 42.70      0.05195    .
+## 20    program_siteschool, outside of classroom  0.161640 0.171700  0.9414 29.27      0.35420     
+## 21                                    duration  0.001270 0.000978  1.2988 31.96      0.20332     
+## 22                                 service_hrs -0.000309 0.004828 -0.0641 49.63      0.94915&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that &lt;code&gt;coef_test&lt;/code&gt; assumed that it should cluster based on &lt;code&gt;studyID&lt;/code&gt;, which is the outer-most random effect in the metafor model. This can also be specified explicitly by including the option &lt;code&gt;cluster = dropoutPrevention$studyID&lt;/code&gt; in the call.&lt;/p&gt;
+&lt;p&gt;The F-test for degree of evaluator independence uses the same syntax as before:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Wald_test(m3_metafor, constraints = 10:12, vcov = &amp;quot;CR2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  Test    F d.f.  p.val
+##   HTZ 2.71 18.3 0.0753&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Despite some differences in weighting schemes, the p-value is very close to the result obtained using &lt;code&gt;robumeta&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Meta-sandwich with extra mustard</title>
+      <link>/robust-meta-analysis-3/</link>
+      <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/robust-meta-analysis-3/</guid>
+      <description>
+
+
+&lt;p&gt;In an earlier post about sandwich standard errors for multi-variate meta-analysis, I &lt;a href=&#34;/Robust-meta-analysis-1/&#34;&gt;mentioned&lt;/a&gt; that Beth Tipton has recently proposed small-sample corrections for the covariance estimators and t-tests, based on the bias-reduced linearization approach of &lt;a href=&#34;http://www.amstat.org/sections/SRMS/Proceedings/y2001/Proceed/00264.pdf&#34;&gt;McCaffrey, Bell, and Botts (2001)&lt;/a&gt;.
+You can find her forthcoming paper on the adjustments &lt;a href=&#34;http://dx.doi.org/10.1037/met0000011&#34;&gt;here&lt;/a&gt;.
+My understanding is that these small-sample corrections are important because the uncorrected sandwich estimators can lead to under-statement of uncertainty and inflated type I error rates when a given meta-regression coefficient is estimated from only a small or moderately sized sample of independent studies (or clusters of studies).
+Moreover, it can be difficult to determine exactly when you have a large enough sample to trust the uncorrected sandwiches.&lt;/p&gt;
+&lt;p&gt;I wanted to try out these small-sample corrected sandwich estimators for a meta-analyses project that I’m working on. Beth and one of her students have written an R package called &lt;a href=&#34;http://cran.r-project.org/web/packages/robumeta/index.html&#34;&gt;robumeta&lt;/a&gt; that implements the sandwich covariance estimator and small-sample corrections as described in her paper.
+However, for my project I want to use the &lt;a href=&#34;http://www.metafor-project.org/&#34;&gt;metafor package&lt;/a&gt;, which doesn’t provide these methods.
+I’ve therefore created a set of functions that implement the sandwich covariance estimators and small-sample corrections for models estimated using the &lt;code&gt;rma.mv&lt;/code&gt; function in &lt;code&gt;metafor&lt;/code&gt;.
+Here is &lt;a href=&#34;https://gist.github.com/jepusto/11302318&#34;&gt;the complete code&lt;/a&gt;. Sorry, there’s no further documentation at the moment (beyond the rest of this post).&lt;/p&gt;
+&lt;div id=&#34;consistency-with-robumeta&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Consistency with robumeta&lt;/h3&gt;
+&lt;p&gt;In order to check that the functions are correct, I compared the results generated by &lt;code&gt;robumeta&lt;/code&gt; with the results from &lt;code&gt;metafor&lt;/code&gt; plus my functions. Here’s one example (I looked at a few others as well). First, the robumeta results:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(grid)
+library(robumeta)
+data(hierdat)
+
+robu_hier &amp;lt;- robu(effectsize ~ males + binge,
+            data = hierdat, modelweights = &amp;quot;HIER&amp;quot;,
+            studynum = studyid,
+            var.eff.size = var, small = TRUE)
+robu_hier&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## RVE: Hierarchical Effects Model with Small-Sample Corrections 
+## 
+## Model: effectsize ~ males + binge 
+## 
+## Number of clusters = 15 
+## Number of outcomes = 68 (min = 1 , mean = 4.53 , median = 2 , max = 29 )
+## Omega.sq = 0.1146972 
+## Tau.sq = 0.06797866 
+## 
+##                Estimate  StdErr t-value  dfs P(|t|&amp;gt;) 95% CI.L 95% CI.U Sig
+## 1 X.Intercept.  -0.0989 0.32140  -0.308 1.79 0.79045  -1.6511   1.4533    
+## 2        males   0.0020 0.00441   0.454 1.88 0.69689  -0.0182   0.0222    
+## 3        binge   0.6799 0.12156   5.594 4.18 0.00439   0.3482   1.0117 ***
+## ---
+## Signif. codes: &amp;lt; .01 *** &amp;lt; .05 ** &amp;lt; .10 *
+## ---
+## Note: If df &amp;lt; 4, do not trust the results&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To maintain consistency, I first need to calculate the approximate weights used in &lt;code&gt;robumeta&lt;/code&gt; and then fit the model in &lt;code&gt;metafor&lt;/code&gt; using these fixed weights.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::source_gist(id = &amp;quot;11302318&amp;quot;, filename = &amp;quot;metafor-BRL.R&amp;quot;)
+
+hierdat$var_HTJ &amp;lt;- hierdat$var + as.numeric(robu_hier$mod_info$omega.sq) + as.numeric(robu_hier$mod_info$tau.sq)
+
+meta_hier &amp;lt;- rma.mv(yi = effectsize ~ males + binge, 
+                V = var_HTJ, 
+                data = hierdat, method = &amp;quot;FE&amp;quot;)
+meta_hier$cluster &amp;lt;- hierdat$studyid
+
+RobustResults(meta_hier)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##             Estimate  Std. Error    t value       df    Pr(&amp;gt;|t|)
+## intrcpt -0.098869582 0.321400179 -0.3076214 1.788350 0.790446059
+## males    0.002002043 0.004410552  0.4539212 1.879142 0.696887075
+## binge    0.679929801 0.121556887  5.5935111 4.182783 0.004385654&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The estimated covariance matrices match:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(sandwich(meta_hier, meat.=meatBRL), 
+          robu_hier$VR.r, 
+          check.attributes=FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It can also be verified that the p-values based on the Satterthwaite degrees of freedom agree.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;use-with-metafor&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Use with metafor&lt;/h3&gt;
+&lt;p&gt;Of course, the point of writing functions that work with &lt;code&gt;rma.mv&lt;/code&gt; objects is not to replicate &lt;code&gt;robumeta&lt;/code&gt; results, but to take advantage of &lt;code&gt;metafor&lt;/code&gt;’s flexibility. Rather than estimate the model with &lt;code&gt;robumeta&lt;/code&gt;, typically one would estimate the variance components in &lt;code&gt;metafor&lt;/code&gt; and then calculate the sandwich covariance estimates and small-sample corrections. For instance:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;meta_REML &amp;lt;- rma.mv(yi = effectsize ~ males + binge, 
+                V = var, random = list(~ 1 | esid, ~ 1 | studyid), 
+                data = hierdat,
+                method = &amp;quot;REML&amp;quot;)
+meta_REML&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Multivariate Meta-Analysis Model (k = 68; method: REML)
+## 
+## Variance Components:
+## 
+##             estim    sqrt  nlvls  fixed   factor 
+## sigma^2.1  0.1566  0.3957     68     no     esid 
+## sigma^2.2  0.0000  0.0000     15     no  studyid 
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 65) = 297.0172, p-val &amp;lt; .0001
+## 
+## Test of Moderators (coefficients 2:3):
+## QM(df = 2) = 27.2659, p-val &amp;lt; .0001
+## 
+## Model Results:
+## 
+##          estimate      se     zval    pval    ci.lb   ci.ub 
+## intrcpt   -0.1118  0.2474  -0.4520  0.6513  -0.5966  0.3730      
+## males      0.0022  0.0034   0.6467  0.5178  -0.0044  0.0088      
+## binge      0.6744  0.1313   5.1349  &amp;lt;.0001   0.4170  0.9319  *** 
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;RobustResults(meta_REML)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##             Estimate  Std. Error    t value       df    Pr(&amp;gt;|t|)
+## intrcpt -0.111796564 0.318156355 -0.3513888 1.794988 0.762200367
+## males    0.002173683 0.004380026  0.4962718 1.882842 0.671549040
+## binge    0.674435042 0.121660936  5.5435628 4.167780 0.004585142&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One advantage here is that it’s possible to compare the model-based standard errors to the robust ones. In this instance, the two are fairly similar. However, the degrees of freedom estimated in the robust results indicate that the model-based standard errors (based on normal approximations) may be much too narrow.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;differences-between-robumeta-and-my-implementation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Differences between robumeta and my implementation&lt;/h3&gt;
+&lt;p&gt;There are two important differences between the approach implemented in &lt;code&gt;robumeta&lt;/code&gt; and the approach based on &lt;code&gt;metafor&lt;/code&gt; and the code that I’ve provided. The first is that &lt;code&gt;robumeta&lt;/code&gt; uses moment estimators for the variance components, whereas &lt;code&gt;metafor&lt;/code&gt; uses restricted- or full maximum likelihood. The estimated between-study heterogeneity (and for the hierarchical effects model, the within-study heterogeneity as well) will therefore differ to some degree.&lt;/p&gt;
+&lt;p&gt;The second, and perhaps more crucial, distinction has to do with the choice of weights. Weights are used for two purposes: to estimate the fixed effects and to calculate the small-sample correction. The &lt;code&gt;robumeta&lt;/code&gt; package uses diagonal weights for both purposes. Using diagonal weights in calculating the fixed effects means that the resulting point estimates will be equivalent to those from a weighted ordinary least squares regression:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;WOLS &amp;lt;- lm(effectsize ~ males + binge, data = hierdat, weights = 1 / var_HTJ)
+coef(WOLS)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  (Intercept)        males        binge 
+## -0.098869582  0.002002043  0.679929801&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(coef(WOLS), as.numeric(robu_hier$b.r), check.attributes = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A subtler point is that &lt;code&gt;robumeta&lt;/code&gt; uses the inverse weights for purposes of calculating the small sample-correction. The small sample correction involves choosing a “working” or “target” covariance matrix towards which to adjust the sandwich estimator. If the working covariance model is correct, then the BRL covariance estimator is exactly unbiased. The working matrix is also used to determine the Satterthwaite degrees of freedom. In &lt;code&gt;robumeta&lt;/code&gt;, the working covariance matrix is taken to be inverse of the weights, which is also a diagonal matrix. Thus, the BRL correction amounts to assuming independence among all of the effect sizes. This may sound somewhat counter-intuitive, but some simulation results (reported in Beth’s paper, referenced above) suggest that the resulting estimators perform well even when the working independence assumption is not correct.&lt;/p&gt;
+&lt;p&gt;In contrast to the &lt;code&gt;robumeta&lt;/code&gt; weights, &lt;code&gt;metafor&lt;/code&gt; calculates the fixed effects based on a weighting matrix that is exactly inverse variance for given estimates of the variance components. Typically, the weighting matrix will be block-diagonal but may have off-diagonal entries corresponding to effect sizes drawn from the same study. Furthermore, my implementation of BRL uses the estimated covariance matrix derived from the posited random effects structure; in other words, the working covariance structure is taken to be the same as the model specified in the &lt;code&gt;metafor&lt;/code&gt; call. This seems sensible to me, although I do not have any evidence regarding its performance relative to the alternatives. It is possible that any gains in asymptotic efficiency from using exactly inverse variance weights are outweighed by some sort of instability in small samples. It’s also possible that the performance of the different approaches to weighting might depend on which variance component estimators are used (i.e., MOM vs. REML).&lt;/p&gt;
+&lt;p&gt;Neither implementation that I’ve described above is fully general. Following the generalized estimating equation framework, a fully general implementation would allow the user to specify an arbitrary weight matrix in addition to a working covariance structure. The weighting matrix would be used for purposes of estimating the fixed effects. The working covariance model would be estimated (based on MOM or REML or what-not) and then used for purposes of BRL adjustment. Of course, this fully general formulation may well be more complicated than what most analysts would actually need or use (especially for linear mixed models), except perhaps when dealing with complex survey data.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Another meta-sandwich</title>
+      <link>/robust-meta-analysis-2/</link>
+      <pubDate>Wed, 23 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/robust-meta-analysis-2/</guid>
+      <description>
+
+
+&lt;p&gt;In &lt;a href=&#34;/Robust-meta-analysis-1/&#34;&gt;a previous post&lt;/a&gt;, I provided some code to do robust variance estimation with &lt;code&gt;metafor&lt;/code&gt; and &lt;code&gt;sandwich&lt;/code&gt;.
+Here’s another example, replicating some more of the calculations from &lt;a href=&#34;http://doi.org/10.1002/jrsm.1091&#34;&gt;Tanner-Smith &amp;amp; Tipton (2013)&lt;/a&gt;.
+(&lt;a href=&#34;https://gist.github.com/jepusto/11147304&#34;&gt;See here&lt;/a&gt; for the complete code.)&lt;/p&gt;
+&lt;p&gt;As a starting point, here are the results produced by the &lt;code&gt;robumeta&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(grid)
+library(robumeta)
+
+data(corrdat)
+rho &amp;lt;- 0.8
+
+HTJ &amp;lt;- robu(effectsize ~ males + college + binge,
+            data = corrdat, 
+            modelweights = &amp;quot;CORR&amp;quot;, rho = rho,
+            studynum = studyid,
+            var.eff.size = var, small = FALSE)
+HTJ&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## RVE: Correlated Effects Model  
+## 
+## Model: effectsize ~ males + college + binge 
+## 
+## Number of studies = 39 
+## Number of outcomes = 172 (min = 1 , mean = 4.41 , median = 4 , max = 18 )
+## Rho = 0.8 
+## I.sq = 75.08352 
+## Tau.sq = 0.1557714 
+## 
+##                Estimate  StdErr t-value dfs P(|t|&amp;gt;) 95% CI.L 95% CI.U Sig
+## 1 X.Intercept.  0.31936 0.27784   1.149  35   0.258  -0.2447  0.88340    
+## 2        males -0.00331 0.00376  -0.882  35   0.384  -0.0109  0.00431    
+## 3      college  0.41226 0.18685   2.206  35   0.034   0.0329  0.79159  **
+## 4        binge  0.13774 0.12586   1.094  35   0.281  -0.1178  0.39326    
+## ---
+## Signif. codes: &amp;lt; .01 *** &amp;lt; .05 ** &amp;lt; .10 *
+## ---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To exactly re-produce the results with &lt;code&gt;metafor&lt;/code&gt;, I’ll need to use the weights proposed by HTJ. In their approach to the correlated effects case, effect size &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; from study &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; receives weight equal to &lt;span class=&#34;math inline&#34;&gt;\(\left[\left(v_{\cdot j} + \hat\tau^2\right)(1 + (k_j - 1) \rho)\right]^{-1}\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(v_{\cdot j}\)&lt;/span&gt; is the average sampling variance of the effect sizes from study &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\hat\tau^2\)&lt;/span&gt; is an estimate of the between-study variance, &lt;span class=&#34;math inline&#34;&gt;\(k_j\)&lt;/span&gt; is the number of correlated effects in study &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt; is a user-specified value of the intra-study correlation. However, it appears that &lt;code&gt;robumeta&lt;/code&gt; actually uses a slightly different set weights, which are equivalent to taking &lt;span class=&#34;math inline&#34;&gt;\(\rho = 1\)&lt;/span&gt;. I calculate the latter weights, fit the model in &lt;code&gt;metafor&lt;/code&gt;, and output the robust standard errors and &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-tests:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::source_gist(id = &amp;quot;11144005&amp;quot;, filename = &amp;quot;metafor-sandwich.R&amp;quot;)
+
+corrdat &amp;lt;- within(corrdat, {
+  var_mean &amp;lt;- tapply(var, studyid, mean)[studyid]
+  k &amp;lt;- table(studyid)[studyid]
+  var_HTJ &amp;lt;- as.numeric(k * (var_mean + as.numeric(HTJ$mod_info$tau.sq)))
+})
+
+meta1 &amp;lt;- rma.mv(effectsize ~ males + college + binge, 
+                V = var_HTJ, 
+                data = corrdat, method = &amp;quot;FE&amp;quot;)
+meta1$cluster &amp;lt;- corrdat$studyid
+RobustResults(meta1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## t test of coefficients:
+## 
+##           Estimate Std. Error t value Pr(&amp;gt;|t|)  
+## intrcpt  0.3193586  0.2778360  1.1494  0.25816  
+## males   -0.0033143  0.0037573 -0.8821  0.38374  
+## college  0.4122631  0.1868489  2.2064  0.03401 *
+## binge    0.1377393  0.1258637  1.0944  0.28127  
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One could specify a similar (though not exactly identical model) in &lt;code&gt;metafor&lt;/code&gt; as follows. In the HTJ approach, &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt; represents the total correlation induced by both the within-study sampling error and intra-study correlation in true effects. In contrast, the &lt;code&gt;metafor&lt;/code&gt; approach would take &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt; to be correlation due to within-study sampling error alone. I’ll first need to create a block-diagonal covariance matrix given a user-specified value of &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(Matrix)
+equicorr &amp;lt;- function(x, rho) {
+  corr &amp;lt;- rho + (1 - rho) * diag(nrow = length(x))
+  tcrossprod(x) * corr 
+} 
+covMat &amp;lt;- as.matrix(bdiag(with(corrdat, tapply(var_mean, studyid, equicorr, rho = 0.8, simplify = FALSE))))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Passing this block-diagonal covariance matrix to &lt;code&gt;rma.mv&lt;/code&gt;, I now estimate the model&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[T_{ij} = \mathbf{X}_{ij} \beta + \nu_i + e_{ij},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(Var(\nu_i) = \sigma^2\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(Var(e_{ij}) = v_{ij}\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(Cor(e_{ij}, e_{ik}) = \rho\)&lt;/span&gt;. Note that &lt;span class=&#34;math inline&#34;&gt;\(\sigma^2\)&lt;/span&gt; is now estimated via REML.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;meta2 &amp;lt;- rma.mv(yi = effectsize ~ males + college + binge, 
+                V = covMat, random = ~ 1 | studyid, 
+                data = corrdat,
+                method = &amp;quot;REML&amp;quot;)
+c(sigma.sq = meta2$sigma2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  sigma.sq 
+## 0.2477825&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The between-study heterogeneity estimate is considerably larger than the moment estimate from &lt;code&gt;robumeta&lt;/code&gt;. Together with the difference in weighting, this leads to some changes in the coefficient estimates and their estimated precision:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;RobustResults(meta2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## t test of coefficients:
+## 
+##           Estimate Std. Error t value Pr(&amp;gt;|t|)   
+## intrcpt -0.8907096  0.4148219 -2.1472 0.038783 * 
+## males    0.0163074  0.0055805  2.9222 0.006052 **
+## college  0.3180139  0.2273396  1.3988 0.170658   
+## binge   -0.0984026  0.0897269 -1.0967 0.280265   
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It is important to keep in mind that the estimate of between-study heterogeneity depends on the posited model for the covariance structure, including the assumed value of &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt;. HTJ recommend conducting sensitivity analysis across a range of values for the within-study effect correlation. Re-calculating the value of &lt;span class=&#34;math inline&#34;&gt;\(\sigma^2\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt; between 0.0 and 0.9 yields the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sigma2 &amp;lt;- function(rho) {
+  covMat &amp;lt;- as.matrix(bdiag(with(corrdat, tapply(var_mean, studyid, equicorr, rho = rho, simplify = FALSE))))
+  rma.mv(yi = effectsize ~ males + college + binge, 
+                  V = covMat, random = ~ 1 | studyid, 
+                  data = corrdat,
+                  method = &amp;quot;REML&amp;quot;)$sigma2
+}
+rho_sens &amp;lt;- seq(0,0.9,0.1)
+sigma2_sens &amp;lt;- sapply(rho_sens, sigma2)
+cbind(rho = rho_sens, sigma2 = round(sigma2_sens, 4))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       rho sigma2
+##  [1,] 0.0 0.2519
+##  [2,] 0.1 0.2513
+##  [3,] 0.2 0.2507
+##  [4,] 0.3 0.2502
+##  [5,] 0.4 0.2497
+##  [6,] 0.5 0.2492
+##  [7,] 0.6 0.2487
+##  [8,] 0.7 0.2482
+##  [9,] 0.8 0.2478
+## [10,] 0.9 0.2474&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The between-study heterogeneity is quite insensitive to the assumed value of &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The difference between the results based on &lt;code&gt;metafor&lt;/code&gt; versus on &lt;code&gt;robumeta&lt;/code&gt; appears to be due to the subtle difference in the weighting approach: &lt;code&gt;metafor&lt;/code&gt; uses block-diagonal weights that contain off-diagonal terms for effects drawn from a common study, whereas &lt;code&gt;robumeta&lt;/code&gt; uses entirely diagonal weights.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A meta-sandwich</title>
+      <link>/robust-meta-analysis-1/</link>
+      <pubDate>Mon, 21 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/robust-meta-analysis-1/</guid>
+      <description>
+
+
+&lt;p&gt;A common problem arising in many areas of meta-analysis is how to synthesize a set of effect sizes when the set includes multiple effect size estimates from the same study. It’s often not possible to obtain all of the information you’d need in order to estimate the sampling covariances between those effect sizes, yet without that information, established approaches to modeling dependent effect sizes become inaccurate. &lt;a href=&#34;http://doi.org/10.1002/jrsm.5&#34;&gt;Hedges, Tipton, &amp;amp; Johnson&lt;/a&gt; (2010, HTJ hereafter) proposed the use of cluster-robust standard errors for multi-variate meta-analysis. (These are also called “sandwich” standard errors, which is up there on the list of great and evocative names for statistical procedures.) The great advantage of the sandwich approach is that it permits valid inferences for average effect sizes and meta-regression coefficients even if you don’t have correct covariance estimates (or variance estimates, for that matter).&lt;/p&gt;
+&lt;p&gt;I recently heard from &lt;a href=&#34;http://blogs.cuit.columbia.edu/let2119/&#34;&gt;Beth Tipton&lt;/a&gt; (who’s a graduate-school buddy) that she and her student have written an &lt;a href=&#34;http://cran.r-project.org/web/packages/robumeta/index.html&#34;&gt;R package&lt;/a&gt; implementing the HTJ methods, including moment estimators for the between-study variance components. I want to try out the cluster-robust standard errors for a project I’m working on, but I also need to use REML estimators rather than the moment estimators. It turns out, it’s easy enough to do that by writing a couple of short functions. Here’s how.&lt;/p&gt;
+&lt;p&gt;First, the &lt;a href=&#34;http://cran.r-project.org/web/packages/metafor/index.html&#34;&gt;metafor package&lt;/a&gt; contains a very rich suite of meta-analytic methods, including for multi-variate meta-analysis. The only thing it lacks is sandwich standard errors. However, the &lt;a href=&#34;http://cran.r-project.org/web/packages/sandwich/index.html&#34;&gt;sandwich package&lt;/a&gt; provides an efficient, well-structured framework for calculating all sorts of robust standard errors. All that’s needed are a few functions to make the packages talk to each other. Each of the functions described below takes as input a fitted multi-variate meta-analysis model, which is represented in R by an object of class &lt;code&gt;rma.mv&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First load up the packages:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(metafor)
+library(sandwich)
+library(lmtest)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, I need a &lt;code&gt;bread&lt;/code&gt; method for objects of class &lt;code&gt;rma.mv&lt;/code&gt;, which is a function that returns the &lt;span class=&#34;math inline&#34;&gt;\(p \times p\)&lt;/span&gt; matrix &lt;span class=&#34;math inline&#34;&gt;\(\displaystyle{m \left(\sum_{i=1}^m \mathbf{X}_j&amp;#39; \mathbf{W}_j \mathbf{X}_j\right)^{-1}}\)&lt;/span&gt;. The bread function is straight-forward because it is just a multiple of the model-based covariance matrix, which &lt;code&gt;rma.mv&lt;/code&gt; objects store in the &lt;code&gt;vb&lt;/code&gt; component:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bread.rma.mv &amp;lt;- function(obj) {
+  cluster &amp;lt;- findCluster(obj)
+  length(unique(cluster)) * obj$vb  
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I also need an &lt;code&gt;estfun&lt;/code&gt; method for objects of class &lt;code&gt;rma.mv&lt;/code&gt;, which is a function that returns an &lt;span class=&#34;math inline&#34;&gt;\(m \times p\)&lt;/span&gt; matrix where row &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; is equal to &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{e}_j&amp;#39; \mathbf{W}_j \mathbf{X}_j\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(j = 1,...,m\)&lt;/span&gt;. The necessary pieces for the &lt;code&gt;estfun&lt;/code&gt; method can also be pulled out of the components of &lt;code&gt;rma.mv&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;estfun.rma.mv &amp;lt;- function(obj) {
+  cluster &amp;lt;- droplevels(as.factor(findCluster(obj)))
+  res &amp;lt;- residuals(obj)
+  WX &amp;lt;- chol2inv(chol(obj$M)) %*% obj$X
+  rval &amp;lt;- by(cbind(res, WX), cluster, 
+             function(x) colSums(x[,1] * x[,-1, drop = FALSE]))
+  rval &amp;lt;- matrix(unlist(rval), length(unique(cluster)), obj$p, byrow=TRUE)
+  colnames(rval) &amp;lt;- colnames(obj$X)
+  rval
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The remaining question is how to determine which of the components in the model should be used to define independent clusters. This is a little bit tricky because there are several different methods of specifying random effects in the &lt;code&gt;rma.mv&lt;/code&gt; function. One way involves providing a list of formulas, each containing a factor associated with a unique random effect, such as &lt;code&gt;random = list( ~ 1 | classroom, ~ 1 | school)&lt;/code&gt;. If this method of specifying random effects is used, the &lt;code&gt;rma.mv&lt;/code&gt; object will have the component &lt;code&gt;withS&lt;/code&gt; set to &lt;code&gt;TRUE&lt;/code&gt;, and my approach is to simply take the factor with the smallest number of unique levels. This is perhaps a little bit presumptious, because the &lt;code&gt;withS&lt;/code&gt; method could potentially be used to specify arbitrary random effects, where one level is not strictly nested inside another. However, probably the most common use will involve nested factors, so my assumption seems like a good starting point at least.&lt;/p&gt;
+&lt;p&gt;Another approach to specifying random effects is to use a formula of the form &lt;code&gt;random = inner | outer&lt;/code&gt;, in which case the &lt;code&gt;rma.mv&lt;/code&gt; object will have the component &lt;code&gt;withG&lt;/code&gt; set to &lt;code&gt;TRUE&lt;/code&gt;. Here, it seems reasonable to use the &lt;code&gt;outer&lt;/code&gt; factor for defining clusters. If both the &lt;code&gt;withS&lt;/code&gt; and &lt;code&gt;withG&lt;/code&gt; methods are used together, I’ll assume that the &lt;code&gt;withS&lt;/code&gt; factors contain the outermost level.&lt;/p&gt;
+&lt;p&gt;Finally, if &lt;code&gt;rma.mv&lt;/code&gt; is used to estimate a fixed effects model without any random components, the clustering factor will have to be manually added to the &lt;code&gt;rma.mv&lt;/code&gt; object in a component called &lt;code&gt;cluster&lt;/code&gt;. For example, if you want to cluster on the variable &lt;code&gt;studyID&lt;/code&gt; in the dataframe &lt;code&gt;dat&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rma_fit$cluster &amp;lt;- dat$studyID&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s code that implements these assumptions:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;findCluster &amp;lt;- function(obj) {
+  if (is.null(obj$cluster)) {
+    if (obj$withS) {
+      r &amp;lt;- which.min(obj$s.nlevels)
+      cluster &amp;lt;- obj$mf.r[[r]][[obj$s.names[r]]]
+    } else if (obj$withG) {
+      cluster &amp;lt;- obj$mf.r[[1]][[obj$g.names[2]]]
+    } else {
+        stop(&amp;quot;No clustering variable specified.&amp;quot;)
+    }
+  } else {
+    cluster &amp;lt;- obj$cluster
+  }
+  cluster
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With these three functions, you can then use &lt;code&gt;metafor&lt;/code&gt; to fit a random effects model, &lt;code&gt;sandwich&lt;/code&gt; to calculate the standard errors, and functions like &lt;code&gt;coeftest&lt;/code&gt; from the package &lt;code&gt;lmtest&lt;/code&gt; to run &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-tests. As a little bonus, here’s a function for probably the most common case of how you’d use the sandwich standard errors:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;RobustResults &amp;lt;- function(obj, adjust = TRUE) {
+  cluster &amp;lt;- findCluster(obj)  
+  vcov. &amp;lt;- sandwich(obj, adjust = adjust)
+  df. &amp;lt;- length(unique(cluster)) - obj$p
+  coeftest(obj, vcov. = vcov., df = df.)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/jepusto/11144005&#34;&gt;See here&lt;/a&gt; for a file containing the full code.&lt;/p&gt;
+&lt;div id=&#34;example&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Example&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://doi.org/10.1002/jrsm.1091&#34;&gt;Tanner-Smith &amp;amp; Tipton (2013)&lt;/a&gt; provide an application of the cluster-robust method to a fictional dataset with 68 effect sizes nested within 15 studies. They call this a “hierarchical” dependence example because each effect size estimate is drawn from an independent sample, but dependence is induced because the experiments were all done in the same lab. For comparison purposes, here are the results produced by &lt;code&gt;robumeta&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(grid)
+library(robumeta)
+data(hierdat)
+
+HTJ &amp;lt;- robu(effectsize ~ 1,
+       data = hierdat, modelweights = &amp;quot;HIER&amp;quot;,
+       studynum = studyid,
+       var.eff.size = var, small = FALSE)
+HTJ&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## RVE: Hierarchical Effects Model  
+## 
+## Model: effectsize ~ 1 
+## 
+## Number of clusters = 15 
+## Number of outcomes = 68 (min = 1 , mean = 4.53 , median = 2 , max = 29 )
+## Omega.sq = 0.1560802 
+## Tau.sq = 0.06835547 
+## 
+##                Estimate StdErr t-value dfs  P(|t|&amp;gt;) 95% CI.L 95% CI.U Sig
+## 1 X.Intercept.     0.25 0.0598    4.18  14 0.000925    0.122    0.378 ***
+## ---
+## Signif. codes: &amp;lt; .01 *** &amp;lt; .05 ** &amp;lt; .10 *
+## ---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To exactly re-produce the results with &lt;code&gt;metafor&lt;/code&gt;, I’ll need to use the weights proposed by HTJ. In their approach, effect size &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; from study &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; receives weight equal to &lt;span class=&#34;math inline&#34;&gt;\(\left(v_{ij} + \hat\omega^2 + \hat\tau^2\right)^{-1}\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(v_{ij}\)&lt;/span&gt; is the sampling variance of the effect size, &lt;span class=&#34;math inline&#34;&gt;\(\hat\omega^2\)&lt;/span&gt; is an estimate of the between-sample within-study variance, and &lt;span class=&#34;math inline&#34;&gt;\(\hat\tau^2\)&lt;/span&gt; is an estimate of the between-study variance. After calculating these weights, I fit the model in metafor, calculate the sandwich covariance matrix, and replay the results:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hierdat$var_HTJ &amp;lt;- hierdat$var + HTJ$mod_info$omega.sq + HTJ$mod_info$tau.sq # calculate weights&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in hierdat$var + HTJ$mod_info$omega.sq: Recycling array of length 1 in vector-array arithmetic is deprecated.
+##   Use c() or as.vector() instead.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in hierdat$var + HTJ$mod_info$omega.sq + HTJ$mod_info$tau.sq: Recycling array of length 1 in vector-array arithmetic is deprecated.
+##   Use c() or as.vector() instead.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;meta1 &amp;lt;- rma.mv(yi = effectsize ~ 1, V = var_HTJ, data = hierdat, method = &amp;quot;FE&amp;quot;)
+meta1$cluster &amp;lt;- hierdat$studyid # add clustering variable to the fitted model
+RobustResults(meta1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## t test of coefficients:
+## 
+##         Estimate Std. Error t value  Pr(&amp;gt;|t|)    
+## intrcpt 0.249826   0.059762  4.1803 0.0009253 ***
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The HTJ weights are not the only alternative–one could instead use weights that are exactly inverse variance under the posited model. For effect &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; from study &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, these weights would be closer to &lt;span class=&#34;math inline&#34;&gt;\(\left(v_{ij} + \hat\omega^2 + k_j \hat\tau^2 \right)^{-1}\)&lt;/span&gt;. For &lt;span class=&#34;math inline&#34;&gt;\(\hat\tau^2 &amp;gt; 0\)&lt;/span&gt;, the inverse-variance weights put proportionately less weight on studies containing many effects. These weights can be calculated in &lt;code&gt;metafor&lt;/code&gt; as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;meta2 &amp;lt;- rma.mv(yi = effectsize ~ 1, V = var, 
+                 random = list(~ 1 | esid, ~ 1 | studyid), 
+                 sigma2 = c(HTJ$mod_info$omega.sq, HTJ$mod_info$tau.sq),
+                 data = hierdat)
+RobustResults(meta2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## t test of coefficients:
+## 
+##         Estimate Std. Error t value Pr(&amp;gt;|t|)   
+## intrcpt 0.264422   0.086688  3.0503 0.008645 **
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Curiously, the robust standard error increases under a weighting scheme that is more efficient if the model is correct.&lt;/p&gt;
+&lt;p&gt;Finally, &lt;code&gt;metafor&lt;/code&gt; provides ML and REML estimators for the between-sample and between-study random effects (the HTJ moment estimators are not available though). Here are the results based on REML estimators and the corresponding inverse-variance weights:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;meta3 &amp;lt;- rma.mv(yi = effectsize ~ 1, V = var, 
+                 random = list(~ 1 | esid, ~ 1 | studyid), 
+                 data = hierdat,
+                method = &amp;quot;REML&amp;quot;)
+meta3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Multivariate Meta-Analysis Model (k = 68; method: REML)
+## 
+## Variance Components:
+## 
+##             estim    sqrt  nlvls  fixed   factor 
+## sigma^2.1  0.2263  0.4757     68     no     esid 
+## sigma^2.2  0.0000  0.0000     15     no  studyid 
+## 
+## Test for Heterogeneity:
+## Q(df = 67) = 370.1948, p-val &amp;lt; .0001
+## 
+## Model Results:
+## 
+## estimate      se    zval    pval   ci.lb   ci.ub 
+##   0.2501  0.0661  3.7822  0.0002  0.1205  0.3797  *** 
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;RobustResults(meta3)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## t test of coefficients:
+## 
+##         Estimate Std. Error t value  Pr(&amp;gt;|t|)    
+## intrcpt 0.250071   0.059796  4.1821 0.0009222 ***
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The between-study variance estimate is tiny, particularly when compared to the between-sample within-study estimate. Despite the difference in variance estimates, the average effect size estimate is nearly identical to the estimate based on the HTJ approach.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/jepusto/11143798&#34;&gt;See here&lt;/a&gt; for the full code to reproduce this example.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;notes&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;p&gt;It would be straight-forward to add a few more functions that provide robust standard errors for univariate meta-analysis models as well. All that it would take is to write &lt;code&gt;bread&lt;/code&gt; and &lt;code&gt;estfun&lt;/code&gt; methods for the class &lt;code&gt;rma.uni&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Also, Beth &lt;a href=&#34;https://www.sree.org/conferences/2014s/program/downloads/abstracts/1089.pdf&#34;&gt;has recently proposed&lt;/a&gt;
+small-sample corrections to the cluster-robust estimators, based on the bias-reduced linearization (BRL) approach of &lt;a href=&#34;http://www.amstat.org/sections/SRMS/Proceedings/y2001/Proceed/00264.pdf&#34;&gt;McCaffrey, Bell, &amp;amp; Botts (2001)&lt;/a&gt;. It seems to me that these small-sample corrections could also be implemented using an approach similar to what I’ve done here, by building out the &lt;code&gt;estfun&lt;/code&gt; method to provide BRL results. It would take a little more thought, but actually it would be worth doing–and treating the general case–because BRL seems like it would be useful for all sorts of models besides multi-variate meta-analysis.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

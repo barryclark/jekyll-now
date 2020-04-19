@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>generalized linear model | James E. Pustejovsky</title>
+    <link>/tags/generalized-linear-model/</link>
+      <atom:link href="/tags/generalized-linear-model/index.xml" rel="self" type="application/rss+xml" />
+    <description>generalized linear model</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>generalized linear model</title>
+      <link>/tags/generalized-linear-model/</link>
+    </image>
+    
+    <item>
+      <title>New paper: A gradual effects model for single-case designs</title>
+      <link>/gradual-effects-model-paper/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      <guid>/gradual-effects-model-paper/</guid>
+      <description>
+
+
+&lt;p&gt;I’m very happy to share a new paper, co-authored with my student Danny Swan, “A gradual effects model for single-case designs,” which is now available online at &lt;em&gt;Multivariate Behavioral Research&lt;/em&gt;. You can access the published version &lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/00273171.2018.1466681?journalCode=hmbr20&#34;&gt;at the journal website&lt;/a&gt; (&lt;a href=&#34;https://www.tandfonline.com/eprint/dkVfazwZaxnyaa9MfUjw/full&#34;&gt;click here for free access while supplies last&lt;/a&gt;) or &lt;a href=&#34;https://psyarxiv.com/vh964/&#34;&gt;the pre-print on PsyArxiv&lt;/a&gt; (always free!). Here’s &lt;a href=&#34;/publication/gradual-effects-model&#34;&gt;the abstract&lt;/a&gt; and &lt;a href=&#34;https://osf.io/uzkq6/&#34;&gt;the supplementary materials&lt;/a&gt;. Danny wrote R functions for fitting the model, (available as part of the &lt;a href=&#34;/software/singlecasees/&#34;&gt;SingleCaseES package&lt;/a&gt;) as well as a &lt;a href=&#34;https://jepusto.shinyapps.io/gem-scd/&#34;&gt;slick web interface&lt;/a&gt;, if you prefer to point-and-click.&lt;/p&gt;
+&lt;p&gt;This paper grew out of Danny’s qualifying process (QP), which is the major exam that our doctoral students have to pass before they can begin their dissertation work. For the QP, students work with a faculty advisor to develop an extensive literature review and proposal for an original research project. They produce a written research proposal, then take written and oral exams on their work. For Danny’s QP, he picked up one of the many loose ends in &lt;a href=&#34;/publication/operationally-comparable-effect-sizes&#34;&gt;my dissertation&lt;/a&gt;, studied up on generalized linear models to understand how to express and fit the model, and developed a simulation study evaluating the model. After he successfully passed his QP, we worked together to refine the estimation methods and the simulation design, and then draft a manuscript (much of it cribbed from his QP proposal). I’m very proud and pleased that Danny continued to develop the work and saw it through to a first-authored publication.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

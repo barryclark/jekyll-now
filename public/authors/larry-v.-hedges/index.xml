@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Larry V. Hedges | James E. Pustejovsky</title>
+    <link>/authors/larry-v.-hedges/</link>
+      <atom:link href="/authors/larry-v.-hedges/index.xml" rel="self" type="application/rss+xml" />
+    <description>Larry V. Hedges</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Wed, 01 Oct 2014 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Larry V. Hedges</title>
+      <link>/authors/larry-v.-hedges/</link>
+    </image>
+    
+    <item>
+      <title>Design-comparable effect sizes in multiple baseline designs: A general modeling framework</title>
+      <link>/publication/design-comparable-effect-sizes/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 -0500</pubDate>
+      <guid>/publication/design-comparable-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing single-case designs: d, G, hierarchical models, Bayesian estimators, generalized additive models, and the hopes and fears of researchers about analyses</title>
+      <link>/publication/analyzing-scd-hopes-and-fears/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 -0500</pubDate>
+      <guid>/publication/analyzing-scd-hopes-and-fears/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis and meta-analysis of single-case designs with a standardized mean difference statistic: A primer and applications</title>
+      <link>/publication/bc-smd-primer-and-applications/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 -0500</pubDate>
+      <guid>/publication/bc-smd-primer-and-applications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A standardized mean difference effect size for multiple baseline designs</title>
+      <link>/publication/smd-for-mbd/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 -0500</pubDate>
+      <guid>/publication/smd-for-mbd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A d-statistic for single-case designs that is equivalent to the usual between-groups d-statistics</title>
+      <link>/publication/between-groups-d-statistic/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 -0500</pubDate>
+      <guid>/publication/between-groups-d-statistic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A standardized mean difference effect size for single case designs</title>
+      <link>/publication/smd-for-scd/</link>
+      <pubDate>Tue, 14 Aug 2012 00:00:00 -0500</pubDate>
+      <guid>/publication/smd-for-scd/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

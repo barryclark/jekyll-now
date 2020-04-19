@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teachings | James E. Pustejovsky</title>
+    <link>/teaching/</link>
+      <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teachings</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 11 May 2018 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Teachings</title>
+      <link>/teaching/</link>
+    </image>
+    
+    <item>
+      <title>Causal Inference</title>
+      <link>/teaching/causal-inference/</link>
+      <pubDate>Fri, 11 May 2018 00:00:00 -0500</pubDate>
+      <guid>/teaching/causal-inference/</guid>
+      <description>&lt;p&gt;This course introduces the contemporary statistical approach to addressing questions about the causal effects of programs, policies, or interventions, with a focus on applied data-analysis strategies and interpretation. The course begins with an introduction to the potential outcomes framework for expressing causal quantities, followed by an examination of (idealized) simple and block randomized experiments as prototypes for learning about causal effects. The remainder of the course covers theory and data-analysis strategies for drawing causal inferences from observational studies, in which treatment conditions are not randomly assigned. Analysis techniques such as matching methods, propensity-score methods, and instrumental variables are covered both in theory and in application. Further, advanced topics are covered based on student interest.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP-381C-10930-Causal-Inference-2020S.pdf&#34;&gt;2020 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP-381C-10705-Causal-inference-2017F.pdf&#34;&gt;2017 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP-384-25-Causal-inference-2014F-syllabus.pdf&#34;&gt;2014 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Analysis, Simulation, and Programming in R</title>
+      <link>/teaching/daspir/</link>
+      <pubDate>Fri, 11 May 2018 00:00:00 -0500</pubDate>
+      <guid>/teaching/daspir/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;For a long time I have thought I was a statistician, interested in inferences from the particular to the general. But as I have watched mathematical statistics evolve, I have had cause to wonder and to doubt…. All in all, I have come to feel that my central interest is in data analysis, which I take to include, among other things: procedures for analyzing data, techniques for interpreting the results of such procedures, ways of planning the gathering of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data. [Tukey, J., 1962. The future of data analysis. &lt;em&gt;The Annals of Mathematical Statistics, 33&lt;/em&gt;(1), 1–67.]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This course provides training in using the open-source statistical programming environment called R to accomplish 1) real-world, reproducible data analysis and 2) design and implementation of statistical simulations, which are an important tool for evaluating the performance of statistical estimation and inference procedures. Topics covered include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the logic of R’s primary data structures and how to work with functions&lt;/li&gt;
+&lt;li&gt;tools and best practices for accessing, cleaning, and manipulating data&lt;/li&gt;
+&lt;li&gt;reproducibility as a fundamental tenet of high-quality data analysis&lt;/li&gt;
+&lt;li&gt;data visualization techniques&lt;/li&gt;
+&lt;li&gt;selected statistical models and methods that are useful for data-analysis, including linear regression models and generalized linear models.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Content relevant to designing and implementing Monte Carlo simulation studies is interwoven throughout the course.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP380C-20-10745-Data-Analysis-Simulation-and-Programming-in-R-2019S.pdf&#34;&gt;2019 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP384-10875-Data-Analysis-Simulation-and-Programming-in-R-2017S.pdf&#34;&gt;2017 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP384-10585-Data-Analysis-Simulation-and-Programming-in-R-2015S.pdf&#34;&gt;2015 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Research Design and Methods for Psychology and Education</title>
+      <link>/teaching/research-design/</link>
+      <pubDate>Fri, 11 May 2018 00:00:00 -0500</pubDate>
+      <guid>/teaching/research-design/</guid>
+      <description>&lt;p&gt;This course surveys essential concepts and methods used in quantitative empirical research in the fields of education and psychology, in order to prepare students both to be informed consumers of research and to conduct empirical research of their own. The course is organized around four main themes: measurement, populations and sampling, experimental causal research, and quasi-experimental causal research. On each theme, we read relevant theoretical and methodological literature, discuss empirical research in light of those concepts, and develop research proposals using the methods that we discuss. Throughout, emphasis is on building intuition and heuristics regarding research designs and methods.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP381C-2-10575-Research-Design-2019F.pdf&#34;&gt;2019 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP381C-2-10775-Research-Design-2019S.pdf&#34;&gt;2019 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP381C-2-10540-Research-Design-2018F.pdf&#34;&gt;2018 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP381C-2-10200-Research-Design-2018S.pdf&#34;&gt;2018 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP381C-2-10895-Research-Design-2017S.pdf&#34;&gt;2017 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP381C-2-10770-Research-Design-2016F.pdf&#34;&gt;2016 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP381C-2-10790-Research-Design-2016S.pdf&#34;&gt;2016 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP381C-2-10790-Research-Design-2015F.pdf&#34;&gt;2015 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP384-10594-Research-Design-2015S.pdf&#34;&gt;2015 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP384-10977-Research-Design-2014F.pdf&#34;&gt;2014 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP384-11212-Research-Design-2014S.pdf&#34;&gt;2014 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP384-10615-Research-Design-2013F.pdf&#34;&gt;2013 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Analysis of Experimental Data</title>
+      <link>/teaching/experimental-data/</link>
+      <pubDate>Fri, 11 May 2018 00:00:00 -0500</pubDate>
+      <guid>/teaching/experimental-data/</guid>
+      <description>&lt;p&gt;This course covers the principles and procedures involved in analyzing data from experimental designs. Approaches for analyzing simple (one-way) designs, factorial designs, and repeated measures designs are presented using the analysis of variance (ANOVA) framework. Lectures focus on developing conceptual understanding of the experimental designs and corresponding analytical models and on interpreting the results of analysis procedures. Laboratory sections focus on using statistical software for data analysis.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP380C-6-Statistical-Analysis-of-Experimental-Data-2016S.pdf&#34;&gt;2016 (Spring) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/files/syllabi/EDP380C-6-Statistical-Analysis-of-Experimental-Data-2015F.pdf&#34;&gt;2015 (Fall) Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

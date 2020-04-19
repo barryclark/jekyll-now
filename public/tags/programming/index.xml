@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming | James E. Pustejovsky</title>
+    <link>/tags/programming/</link>
+      <atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <description>programming</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>programming</title>
+      <link>/tags/programming/</link>
+    </image>
+    
+    <item>
+      <title>Simulating correlated standardized mean differences for meta-analysis</title>
+      <link>/simulating-correlated-smds/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/simulating-correlated-smds/</guid>
+      <description>
+
+
+&lt;p&gt;As I’ve discussed in &lt;a href=&#34;/Sometimes-aggregating-effect-sizes-is-fine&#34;&gt;previous posts&lt;/a&gt;, meta-analyses in psychology, education, and other areas often include studies that contribute multiple, statistically dependent effect size estimates.
+I’m interested in methods for meta-analyzing and meta-regressing effect sizes from data structures like this, and studying this sort of thing often entails conducting Monte Carlo simulations.
+Monte Carlo simulations involve generating artificial data—in this case, a set of studies, each of which has one or more dependent effect size estimates—that follows a certain distributional model, applying different analytic methods to the artificial data, and then repeating the process a bunch of times.
+Because we know the true parameters that govern the data-generating process, we can evaluate the performance of the analytic methods in terms of bias, accuracy, hypothesis test calibration and power, confidence interval coverage, and the like.&lt;/p&gt;
+&lt;p&gt;In this post, I’ll discuss two alternative methods to simulate meta-analytic datasets that include studies with multiple, dependent effect size estimates: simulating individual participant-level data or simulating summary statistics. I’ll focus on the case of the standardized mean difference (SMD) because it is so common in meta-analyses of intervention studies. For simplicity, I’ll assume that the effect sizes all come from simple, two-group comparisons (without any covariate adjustment or anything like that) and that the individual observations are multi-variate normally distributed within each group. Our goal will be to simulate a set of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, where study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; is based on measuring &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; outcomes on a sample of &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; participants, all for &lt;span class=&#34;math inline&#34;&gt;\(k = 1,...,K\)&lt;/span&gt;.
+Let &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k = (\delta_{1k} \cdots \delta_{J_k k})&amp;#39;\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector of true standardized mean differences for study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;.
+I’ll assume that we know these true effect size parameters for all &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, so that I can avoid committing to any particular form of random effects model.&lt;/p&gt;
+&lt;div id=&#34;simulating-individual-participant-level-data&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating individual participant-level data&lt;/h1&gt;
+&lt;p&gt;The most direct way to simulate this sort of effect size data is to generate outcome data for every artificial participant in every artificial study. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{Y}_{ik}^T\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector of outcomes for treatment group participant &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, and let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{Y}_{ik}^C\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector outcomes for control group participant &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, for &lt;span class=&#34;math inline&#34;&gt;\(i=1,...,N_k / 2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k = 1,...,K\)&lt;/span&gt;. Assuming multi-variate normality of the outcomes, we can generate these outcome vectors as
+&lt;span class=&#34;math display&#34;&gt;\[
+\mathbf{Y}_{ik}^T \sim N\left(\boldsymbol\delta_k, \boldsymbol\Psi_k\right) \qquad \text{and}\qquad \mathbf{Y}_{ik}^C \sim N\left(\mathbf{0}, \boldsymbol\Psi_k\right),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\Psi_k\)&lt;/span&gt; is the population correlation matrix of the outcomes in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;.
+Note that I am setting the mean outcomes of the control group participants to zero and also specifying that the outcomes all have unit variance within each group.
+After simulating data based on these distributions, the effect size estimates for each outcome can be calculated directly, following standard formulas.&lt;/p&gt;
+&lt;p&gt;Here’s what this approach looks like in code.
+It is helpful to simplify things by focusing on simulating just a single study with multiple, correlated effect sizes.
+Focusing first on just the input parameters, a function might look like the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw &amp;lt;- function(delta, J, N, Psi) {
+  # stuff
+  return(ES_data)  
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above function skeleton, &lt;code&gt;delta&lt;/code&gt; would be the true effect size parameter &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k\)&lt;/span&gt;, &lt;code&gt;J&lt;/code&gt; would be the number of effect sizes to generate &lt;span class=&#34;math inline&#34;&gt;\((J_k)\)&lt;/span&gt;, &lt;code&gt;N&lt;/code&gt; is the total number of participants &lt;span class=&#34;math inline&#34;&gt;\((N_k)\)&lt;/span&gt;, and &lt;code&gt;Psi&lt;/code&gt; is a matrix of correlations between the outcomes &lt;span class=&#34;math inline&#34;&gt;\((\Psi_k)\)&lt;/span&gt;.
+From these parameters, we’ll generate raw data, calculate effect size estimates and standard errors, and return the results in a little dataset.&lt;/p&gt;
+&lt;p&gt;To make the function a little bit easier to use, I’m going overload the &lt;code&gt;Psi&lt;/code&gt; argument so that it can be a single number, indicating a common correlation between the outcomes. Thus, instead of having to feed in a &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; matrix, you can specify a single correlation &lt;span class=&#34;math inline&#34;&gt;\(r_k\)&lt;/span&gt;, and the function will assume that all of the outcomes are equicorrelated. In code, the logic is:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;if (!is.matrix(Psi)) Psi &amp;lt;- Psi + diag(1 - Psi, nrow = J)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s the function with the innards:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw &amp;lt;- function(delta, J, N, Psi) {
+
+  require(mvtnorm) # for simulating multi-variate normal data
+  
+  # create Psi matrix assuming equicorrelation
+  if (!is.matrix(Psi)) Psi &amp;lt;- Psi + diag(1 - Psi, nrow = J)
+  
+  # generate control group summary statistics
+  Y_C &amp;lt;- rmvnorm(n = N / 2, mean = rep(0, J), sigma = Psi)
+  ybar_C &amp;lt;- colMeans(Y_C)
+  sd_C &amp;lt;- apply(Y_C, 2, sd)
+  
+  # generate treatment group summary statistics
+  delta &amp;lt;- rep(delta, length.out = J)
+  Y_T &amp;lt;- rmvnorm(n = N / 2, mean = delta, sigma = Psi)
+  ybar_T &amp;lt;- colMeans(Y_T)
+  sd_T &amp;lt;- apply(Y_T, 2, sd)
+
+  # calculate Cohen&amp;#39;s d
+  sd_pool &amp;lt;- sqrt((sd_C^2 + sd_T^2) / 2)
+  ES &amp;lt;- (ybar_T - ybar_C) / sd_pool
+  
+  # calculate SE of d
+  SE &amp;lt;- sqrt(4 / N + ES^2 / (2 * (N - 2)))
+
+  data.frame(ES = ES, SE = SE, N = N)
+
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In action:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;delta &amp;lt;- rnorm(4, mean = 0.2, sd = 0.1)
+r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = 0.6)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: mvtnorm&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           ES        SE  N
+## 1  0.2258267 0.3172870 40
+## 2  0.2904284 0.3179778 40
+## 3  0.2944114 0.3180259 40
+## 4 -0.2015085 0.3170714 40&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or if you’d rather specify the full &lt;span class=&#34;math inline&#34;&gt;\(\Psi_k\)&lt;/span&gt; matrix yourself:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Psi_k &amp;lt;- 0.6 + diag(0.4, nrow = 4)
+Psi_k&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4]
+## [1,]  1.0  0.6  0.6  0.6
+## [2,]  0.6  1.0  0.6  0.6
+## [3,]  0.6  0.6  1.0  0.6
+## [4,]  0.6  0.6  0.6  1.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = Psi_k)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          ES        SE  N
+## 1 0.4136328 0.3197674 40
+## 2 0.6730080 0.3255146 40
+## 3 0.5825111 0.3232100 40
+## 4 0.4974262 0.3213342 40&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;exercises&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;The function above is serviceable but quite basic. I can think of several additional features that one might like to have for use in research simulations, but I’m feeling both cheeky and lazy at the moment, so I’ll leave them for you, dear reader. Here are some suggested exercises:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;Hedges_g = TRUE&lt;/code&gt;, which controls where the simulated effect size is Hedges’ &lt;span class=&#34;math inline&#34;&gt;\(g\)&lt;/span&gt; or Cohen’s &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;. If it is Hedges’ g, make sure that the standard error is corrected too.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;p_val = TRUE&lt;/code&gt;, which allows the user to control whether or not to return &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-values from the test of mean differences for each outcome. Note that the p-values should be for a test of the &lt;em&gt;raw&lt;/em&gt; mean differences between groups, rather than a test of the effect size &lt;span class=&#34;math inline&#34;&gt;\(\delta_{jk} = 0\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add an argument to the function, &lt;code&gt;corr_mat = FALSE&lt;/code&gt;, which controls whether the function returns just the simulated effect sizes and SEs or both the simulated effect sizes and the full sampling variance-covariance matrix of the effect sizes. See &lt;a href=&#34;/correlations-between-SMDs&#34;&gt;here&lt;/a&gt; for the relevant formulas.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulating-summary-statistics&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating summary statistics&lt;/h1&gt;
+&lt;p&gt;Another approach to simulating SMDs is to sample from the distribution of the &lt;em&gt;summary statistics&lt;/em&gt; used in calculating the effect size. This approach should simplify the code, at the cost of having to use a bit of distribution theory. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\bar{y}}_{Tk}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\bar{y}}_{Ck}\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vectors of sample means for the treatment and control groups, respectively. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{S}_k\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; sample covariance matrix of the outcomes, pooled across the treatment and control groups. Again assuming multi-variate normality, and following the same notation as above:
+&lt;span class=&#34;math display&#34;&gt;\[
+\mathbf{\bar{y}}_{Ck} \sim N\left(\mathbf{0}, \frac{2}{N_k} \boldsymbol\Psi_k\right), \qquad \mathbf{\bar{y}}_{Tk} \sim N\left(\boldsymbol\delta_k, \frac{2}{N_k} \boldsymbol\Psi_k\right),
+\]&lt;/span&gt;
+and
+&lt;span class=&#34;math display&#34;&gt;\[
+\left(\mathbf{\bar{y}}_{Tk} - \mathbf{\bar{y}}_{Ck}\right) \sim N\left(\boldsymbol\delta_k, \frac{4}{N_k} \boldsymbol\Psi_k\right).
+\]&lt;/span&gt;
+This shows how we could directly simulate the numerator of the standardized mean difference.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;/distribution-of-sample-variances&#34;&gt;further bit of distribution theory&lt;/a&gt; says that the pooled sample covariance matrix follows a multiple of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Wishart_distribution&#34;&gt;Wishart distribution&lt;/a&gt; with &lt;span class=&#34;math inline&#34;&gt;\(N_k - 2\)&lt;/span&gt; degrees of freedom and scale matrix &lt;span class=&#34;math inline&#34;&gt;\(\Psi_k\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+(N_k - 2) \mathbf{S}_k \sim Wishart\left(N_k - 2, \Psi_k \right).
+\]&lt;/span&gt;
+Thus, to simulate the denominators of the SMD estimates, we can simulate a single Wishart matrix, pull out the diagonal entries, divide by &lt;span class=&#34;math inline&#34;&gt;\(N_k - 2\)&lt;/span&gt;, and take the square root. In all, we draw a single &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; observation from a multi-variate normal distribution and a single &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; observation from a Wishart distribution. In contrast, the raw data approach requires simulating &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; observations from a multi-variate normal distribution, then calculating &lt;span class=&#34;math inline&#34;&gt;\(4 J_k\)&lt;/span&gt; summary statistics (M and SD for each group on each outcome).&lt;/p&gt;
+&lt;div id=&#34;exercises-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;Once again, I’ll leave it to you, dear reader, to do the fun programming bits:&lt;/p&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Create a modified version of the function &lt;code&gt;r_SMDs_raw&lt;/code&gt; that simulates summary statistics instead of raw data (Call it &lt;code&gt;r_SMDs_stats&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;microbenchmark&lt;/code&gt; package (or your preferred benchmarking tool) to compare the computational efficiency of both versions of the function.&lt;/li&gt;
+&lt;li&gt;Check your work! Verify that both versions of the function generate the same distributions if the same parameters are used as input.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;which-approach-is-better&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Which approach is better?&lt;/h1&gt;
+&lt;p&gt;Like many things in research, there’s no clearly superior method here. The advantage of the summary statistics approach is computational efficiency. It should generally be faster than the raw data approach, and if you need to generate 10,000 meta-analysis each with 80 studies in them, the computational savings might add up. On the other hand, computational efficiency isn’t everything.&lt;/p&gt;
+&lt;p&gt;I see two potential advantages of the raw data approach. First is interpretability: simulating raw data is likely easier to understand. It feels tangible and familiar, harkening back to those bygone days we spent learning ANOVA, whereas the summary statistics approach requires a bit of distribution theory to follow (bookmark this blog post!). Second is extensibility: it is relatively straightforward to extend the approach to use other distributional models for the raw dat (perhaps you want to look at outcomes that follow a &lt;a href=&#34;https://en.wikipedia.org/wiki/Multivariate_t-distribution&#34;&gt;multi-variate &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; distribution&lt;/a&gt;?) or more complicated estimators of the SMD (difference-in-differences? covariate-adjusted? cluster-randomized trial?). To use the summary statistics approach in more complicated scenarios, you’d have to work out the sampling distributions for yourself, or locate the right reference.&lt;/p&gt;
+&lt;p&gt;Of course, there’s also no need to choose between these two approaches. As I’m trying to hint at in Exercise 6, it’s actually useful to write both. Then, you can use the (potentially slower) raw data version to verify that the summary statistics version is correct.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulating-full-meta-analyses&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulating full meta-analyses&lt;/h1&gt;
+&lt;p&gt;So far we’ve got a data-generating function that simulates a single study’s worth of effect size estimates. To study meta-analytic methods, we’ll need to build out the function to simulate multiple studies. To do so, I think it’s useful to use the technique of &lt;a href=&#34;https://r4ds.had.co.nz/iteration.html&#34;&gt;mapping&lt;/a&gt;, as implemented in the &lt;code&gt;purrr&lt;/code&gt; package’s &lt;code&gt;map_*&lt;/code&gt; functions. The idea here is to first generate a “menu” of study-specific parameters for each of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, then apply the &lt;code&gt;r_SMDs&lt;/code&gt; function to each parameter set.&lt;/p&gt;
+&lt;p&gt;Let’s consider how to do this for a simple random effects model, where the true effect size parameter is constant within each study (i.e., &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\delta_k = (\delta_k \cdots \delta_k)&amp;#39;\)&lt;/span&gt;), and in a model without covariates. We’ll need to generate a true effect for each study, along with a sample size, an outcome dimension, and a correlation between outcomes. For the true effects, I’ll assume that
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_k \sim N(\mu, \tau^2),
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+J_k \sim 2 + Poisson(3),
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+N_k \sim 20 + 2 \times Poisson(10),
+\]&lt;/span&gt;
+and
+&lt;span class=&#34;math display&#34;&gt;\[
+r_k \sim Beta\left(\rho \nu, (1 - \rho)\nu\right),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\rho = \text{E}(r_k)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu &amp;gt; 0\)&lt;/span&gt; controls the variability of &lt;span class=&#34;math inline&#34;&gt;\(r_k\)&lt;/span&gt; across studies, with smaller &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt; corresponding to more variable correlations.
+Specifically, &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(r_k) = \rho (1 - \rho) / (1 + \nu)\)&lt;/span&gt;.
+These distributions are just made up, without any particular justification.&lt;/p&gt;
+&lt;p&gt;Here’s what these distributional models look like in R code:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;K &amp;lt;- 6
+mu &amp;lt;- 0.2
+tau &amp;lt;- 0.05
+J_mean &amp;lt;- 5
+N_mean &amp;lt;- 45
+rho &amp;lt;- 0.6
+nu &amp;lt;- 39
+
+study_data &amp;lt;- 
+  data.frame(
+    delta = rnorm(K, mean = mu, sd = tau),
+    J = 2 + rpois(K, J_mean - 2),
+    N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+    Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+  )
+
+study_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       delta J  N       Psi
+## 1 0.1894240 9 50 0.5112511
+## 2 0.1523343 3 44 0.6584239
+## 3 0.2478227 5 38 0.5442388
+## 4 0.1530779 5 46 0.5338198
+## 5 0.2557257 6 48 0.6635501
+## 6 0.3111021 3 34 0.7598409&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once we have the “menu” of study-level characteristics, it’s just a matter of mapping the parameters to the data-generating function. One way to do this is with &lt;code&gt;pmap_df&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(purrr)
+meta_data &amp;lt;- pmap_df(study_data, r_SMDs_raw, .id = &amp;quot;study&amp;quot;)
+meta_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    study            ES        SE  N
+## 1      1  0.0838982347 0.2829723 50
+## 2      1  0.3131093912 0.2846423 50
+## 3      1  0.2032941211 0.2836027 50
+## 4      1  0.1462363557 0.2832362 50
+## 5      1 -0.0841477323 0.2829731 50
+## 6      1  0.0008988422 0.2828427 50
+## 7      1  0.1703249176 0.2833764 50
+## 8      1 -0.1645178447 0.2833407 50
+## 9      1  0.0527563306 0.2828940 50
+## 10     2  0.4031344135 0.3047028 44
+## 11     2  0.3437062486 0.3038346 44
+## 12     2  0.2525668139 0.3027681 44
+## 13     3  0.8555648807 0.3397495 38
+## 14     3  0.3502132641 0.3270575 38
+## 15     3  0.1662112740 0.3250336 38
+## 16     3  0.7294206056 0.3356379 38
+## 17     3  0.3447478812 0.3269769 38
+## 18     4  0.3773615530 0.2976151 46
+## 19     4  0.4328885816 0.2984727 46
+## 20     4  0.2244493715 0.2958530 46
+## 21     4  0.3393561858 0.2970946 46
+## 22     4  0.5140631756 0.2999325 46
+## 23     5  0.0717846618 0.2887721 48
+## 24     5  0.3179642994 0.2905723 48
+## 25     5  0.3444123920 0.2908998 48
+## 26     5  0.5411105342 0.2941359 48
+## 27     5  0.2431480980 0.2897860 48
+## 28     5  0.1627009191 0.2891731 48
+## 29     6  0.2959281618 0.3449861 34
+## 30     6 -0.1153519889 0.3433001 34
+## 31     6  0.5503107844 0.3498270 34&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(meta_data$study)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## 1 2 3 4 5 6 
+## 9 3 5 5 6 3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Putting it all together into a function, we have&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_meta &amp;lt;- function(K, mu, tau, J_mean, N_mean, rho, nu) {
+  require(purrr)
+  
+  study_data &amp;lt;- 
+    data.frame(
+      delta = rnorm(K, mean = mu, sd = tau),
+      J = 2 + rpois(K, J_mean - 2),
+      N = 20 + 2 * rpois(K, (N_mean - 20) / 2),
+      Psi = rbeta(K, rho * nu, (1 - rho) * nu)
+    )
+  
+  pmap_df(study_data, r_SMDs_raw, .id = &amp;quot;study&amp;quot;)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;exercises-2&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercises&lt;/h2&gt;
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Modify &lt;code&gt;r_meta&lt;/code&gt; so that it uses &lt;code&gt;r_SMDs_stats&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add options to &lt;code&gt;r_meta&lt;/code&gt; for &lt;code&gt;Hedges_g&lt;/code&gt;, &lt;code&gt;p_val = TRUE&lt;/code&gt;, and &lt;code&gt;corr_mat = FALSE&lt;/code&gt; and ensure that these get passed along to the &lt;code&gt;r_SMDs&lt;/code&gt; function.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;One way to check that the &lt;code&gt;r_meta&lt;/code&gt; function is working properly is to generate a very large meta-analytic dataset, then to verify that the generated distributions align with expectations. Here’s a very large meta-analytic dataset:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;meta_data &amp;lt;- 
+  r_meta(100000, mu = 0.2, tau = 0.05, 
+         J_mean = 5, N_mean = 40, 
+         rho = 0.6, nu = 39)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Compare the distribution of the simulated dataset against what you would expect to get based on the input parameters.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Modify the &lt;code&gt;r_meta&lt;/code&gt; function so that &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt; are correlated, according to
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{align}
+J_k &amp;amp;\sim 2 + Poisson(\mu_J - 2) \\
+N_k &amp;amp;\sim 20 + 2 \times Poisson\left(\frac{1}{2}(\mu_N - 20) + \alpha (J_k - \mu_J) \right)
+\end{align}
+\]&lt;/span&gt;
+for user-specified values of &lt;span class=&#34;math inline&#34;&gt;\(\mu_J\)&lt;/span&gt; (the average number of outcomes per study), &lt;span class=&#34;math inline&#34;&gt;\(\mu_N\)&lt;/span&gt; (the average total sample size per study), and &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;, which controls the degree of dependence between &lt;span class=&#34;math inline&#34;&gt;\(J_k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_k\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a-challenge&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A challenge&lt;/h2&gt;
+&lt;p&gt;The meta-analytic model that we’re using here is quite simple—simplistic, even—and for some simulation studies, something more complex might be needed. For example, we might need to generate data from a model that includes within-study random effects, as in:
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_{jk} = \mu + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2).
+\]&lt;/span&gt;
+Even more complex would be to simulate from a multi-level meta-regression model
+&lt;span class=&#34;math display&#34;&gt;\[
+\delta_{jk} = \mathbf{x}_{jk} \boldsymbol\beta + u_k + v_{jk}, \quad \text{where}\quad u_k \sim N(0, \tau^2), \quad v_{jk} \sim N(0, \omega^2),
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_{jk}\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(1 \times p\)&lt;/span&gt; row-vector of covariates describing outcome &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\beta\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(p \times 1\)&lt;/span&gt; vector of meta-regression coefficients. In past work, I’ve done this by writing a data-generating function that takes a fixed design matrix &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{X} = \left(\mathbf{x}_{11}&amp;#39; \cdots \mathbf{x}_{J_K K}&amp;#39;\right)&amp;#39;\)&lt;/span&gt; as an input argument, along with &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\beta\)&lt;/span&gt;. The design matrix would also include an identifier for each unique study. There are surely better (simpler, easier to follow) ways to implement the multi-level meta-regression model. I’ll once again leave it to you to work out an approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code folding with blogdown &#43; Academic theme</title>
+      <link>/code-folding-with-blogdown-academic/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/code-folding-with-blogdown-academic/</guid>
+      <description>
+
+
+&lt;p&gt;Rmarkdown documents now have a very nifty &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/html-document.html#code-folding&#34;&gt;code folding option&lt;/a&gt;, which allows the reader of a compiled html document to toggle whether to view or hide code chunks. However, the feature is &lt;a href=&#34;https://github.com/rstudio/blogdown/issues/214&#34;&gt;not supported in blogdown&lt;/a&gt;, the popular Rmarkdown-based website/blog creation package. I recently ran across an implementation of codefolding for blogdown, developed by &lt;a href=&#34;https://statnmap.com/2017-11-13-enable-code-folding-in-bookdown-and-blogdown/&#34;&gt;Sébastien Rochette&lt;/a&gt;. I have been putzing around, trying to get it to work with my blog, which uses the Hugo &lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic theme&lt;/a&gt;—alas, to no avail. To my amazement and good fortune, Sébastien swooped in with &lt;a href=&#34;https://github.com/jepusto/jepusto.com/pull/9&#34;&gt;a pull request&lt;/a&gt; that cleaned up my blundering attempts at implementation. Now all of &lt;a href=&#34;/package-downloads&#34;&gt;my posts&lt;/a&gt; have &lt;a href=&#34;/handmade-clubSandwich&#34;&gt;working&lt;/a&gt; &lt;a href=&#34;/effective-sample-size-aggregation&#34;&gt;code folding&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/mIZ9rPeMKefm0/giphy.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In this post, I’ll lay out how to make Sébastien’s code folding feature work with the Academic theme. To be totally clear, all of the hard bits of this were &lt;a href=&#34;https://statnmap.com/2017-11-13-enable-code-folding-in-bookdown-and-blogdown/&#34;&gt;solved by Sébastien&lt;/a&gt;. I don’t know javascript to save my life, and my only contribution is to write down the instructions in what I hope is a coherent fashion, so that you too can soon be doing the happy code folding dance if you so desire.&lt;/p&gt;
+&lt;div id=&#34;code-folding-with-the-academic-theme&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Code folding with the Academic theme&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;You’ll first need to pull in some javascript assets. Create a folder called &lt;code&gt;js&lt;/code&gt; under the &lt;code&gt;\static&lt;/code&gt; directory of your site. Add the files &lt;code&gt;transition.js&lt;/code&gt;, &lt;code&gt;collapse.js&lt;/code&gt;, and &lt;code&gt;dropdown.js&lt;/code&gt; from &lt;a href=&#34;https://github.com/twbs/bootstrap/tree/v3.3.7/js&#34;&gt;bootstrap&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Also add Sébastien’s codefolding javascript, &lt;a href=&#34;https://github.com/jepusto/jepusto.com/blob/master/static/js/codefolding.js&#34;&gt;&lt;code&gt;codefolding.js&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create a folder called &lt;code&gt;css&lt;/code&gt; under the &lt;code&gt;\static&lt;/code&gt; directory of your site. Add the file &lt;a href=&#34;https://github.com/jepusto/jepusto.com/blob/master/static/css/codefolding.css&#34;&gt;&lt;code&gt;codefolding.css&lt;/code&gt;&lt;/a&gt;. This is the css for the buttons that will appear on your posts.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add the file &lt;a href=&#34;https://github.com/jepusto/jepusto.com/blob/master/layouts/partials/article_footer_js.html&#34;&gt;&lt;code&gt;article_footer_js.html&lt;/code&gt;&lt;/a&gt; to the &lt;code&gt;\layouts\partials&lt;/code&gt; directory of your site.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add the file &lt;a href=&#34;https://github.com/jepusto/jepusto.com/blob/master/layouts/partials/header_maincodefolding.html&#34;&gt;&lt;code&gt;header_maincodefolding.html&lt;/code&gt;&lt;/a&gt; to the &lt;code&gt;\layouts\partials&lt;/code&gt; directory of your site.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you do not already have a file &lt;code&gt;head_custom.html&lt;/code&gt; in the &lt;code&gt;\layouts\partials&lt;/code&gt; directory, create it.. Add the following lines of code to the file:&lt;/p&gt;
+&lt;pre class=&#34;js&#34;&gt;&lt;code&gt;{{ if not .Site.Params.disable_codefolding }}
+  &amp;lt;script src=&amp;quot;{{ &amp;quot;js/collapse.js&amp;quot; | relURL }}&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src=&amp;quot;{{ &amp;quot;js/dropdown.js&amp;quot; | relURL }}&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src=&amp;quot;{{ &amp;quot;js/transition.js&amp;quot; | relURL }}&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+{{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you do not already have a file &lt;code&gt;footer.html&lt;/code&gt; in the &lt;code&gt;\layouts\partials&lt;/code&gt; directory, copy it over from &lt;code&gt;\themes\hugo-academic\layouts\partials&lt;/code&gt;. Add the following lines of code to it, somewhere towards the bottom (see &lt;a href=&#34;https://github.com/jepusto/jepusto.com/blob/master/layouts/partials/footer.html&#34;&gt;my version&lt;/a&gt; for example):&lt;/p&gt;
+&lt;pre class=&#34;js&#34;&gt;&lt;code&gt;&amp;lt;!-- Init code folding --&amp;gt;
+{{ partial &amp;quot;article_footer_js.html&amp;quot; . }}&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you do not already have the file &lt;code&gt;single.html&lt;/code&gt; in the directory &lt;code&gt;\layouts\_default&lt;/code&gt;, copy it over from &lt;code&gt;\themes\hugo-academic\layouts\_default&lt;/code&gt;. Add the following line of code at an appropriate point so that your posts will include the “Show/hide code” button (I put it after the title, before the meta-data; &lt;a href=&#34;https://github.com/jepusto/jepusto.com/blob/master/layouts/_default/single.html&#34;&gt;see here&lt;/a&gt;):&lt;/p&gt;
+&lt;pre class=&#34;js&#34;&gt;&lt;code&gt; {{ partial &amp;quot;header_maincodefolding&amp;quot; . }}&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Modify your &lt;code&gt;config.toml&lt;/code&gt; file (in the base directory of your site) to include the following lines:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Set to true to disable code folding
+disable_codefolding = false
+# Set to &amp;quot;hide&amp;quot; or &amp;quot;show&amp;quot; all codes by default
+codefolding_show = &amp;quot;show&amp;quot;
+# Set to true to exclude the &amp;quot;Show/hide all&amp;quot; button
+codefolding_nobutton = false&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Also edit the &lt;code&gt;custom_css&lt;/code&gt; parameter so that the &lt;code&gt;codefolding.css&lt;/code&gt; file will get loaded:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;custom_css = [&amp;quot;codefolding.css&amp;quot;]&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;using-the-codefolding-parameters&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Using the codefolding parameters&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;config.toml&lt;/code&gt; file now has three parameters that control code folding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;disable_codefolding&lt;/code&gt; controls whether to load the code folding scripts on your site. Set it to &lt;code&gt;true&lt;/code&gt; to disable code folding globally.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;codefolding_show&lt;/code&gt; controls whether code blocks will be shown or hidden by default. If your previous posts have lots of code in them, set the default to &lt;code&gt;show&lt;/code&gt; to minimize changes in the appearance of your site.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;codefolding_nobutton&lt;/code&gt; controls whether the “Show/hide code” button will appear at the top of posts that include code blocks. Set it to &lt;code&gt;true&lt;/code&gt; to disable the button but keep the other code folding functionality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The above parameters are defaults for your entire site. To over-ride the defaults, you can also set the parameters in the YAML header of any post:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set &lt;code&gt;disable_codefolding: true&lt;/code&gt; to turn off code folding for the post.&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;codefolding_show: hide&lt;/code&gt; to hide the code blocks in the post (as in &lt;a href=&#34;\package-downloads&#34;&gt;this post&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;codefolding_nobutton: true&lt;/code&gt; to turn off the “Show/hide code” button at the top of the post (as in the present post).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope these instructions work for you. If not, questions, corrections, and clarifications are welcome. Thanks again to &lt;a href=&#34;https://statnmap.com/&#34;&gt;Sébastien Rochette&lt;/a&gt; for working out this solution and for graciously troubleshooting my attempt at implementation. Happy blogging, y’all!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CRAN downloads of my packages</title>
+      <link>/package-downloads/</link>
+      <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/package-downloads/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;At AERA this past weekend, one of the recurring themes was how software availability (and its usability and default features) influences how people conduct meta-analyses. That got me thinking about the R packages that I’ve developed, how to understand the extent to which people are using them, how they’re being used, and so on. I’ve had badges on my github repos for a while now:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clubSandwich: &lt;a href=&#34;https://CRAN.R-project.org/package=clubSandwich&#34;&gt;&lt;img src = &#34;https://cranlogs.r-pkg.org/badges/last-month/clubSandwich&#34; style=&#34;display: inline-block; margin:0;&#34;/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ARPobservation: &lt;a href=&#34;https://CRAN.R-project.org/package=ARPobservation&#34;&gt;&lt;img src = &#34;https://cranlogs.r-pkg.org/badges/last-month/ARPobservation&#34; style=&#34;display: inline-block; margin:0;&#34;/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;scdhlm: &lt;a href=&#34;https://CRAN.R-project.org/package=scdhlm&#34;&gt;&lt;img src = &#34;https://cranlogs.r-pkg.org/badges/last-month/scdhlm&#34; style=&#34;display: inline-block; margin:0;&#34;/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SingleCaseES: &lt;a href=&#34;https://CRAN.R-project.org/package=SingleCaseES&#34;&gt;&lt;img src = &#34;https://cranlogs.r-pkg.org/badges/last-month/SingleCaseES&#34; style=&#34;display: inline-block; margin:0;&#34;/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These statistics come from the &lt;a href=&#34;https://www.r-pkg.org/&#34;&gt;METACRAN&lt;/a&gt; site, which makes available data on daily downloads of all packages on CRAN (one of the main repositories for sharing R packages). The downloads are from the RStudio mirror of CRAN, which is only one of many mirrors around the world. Although the data do not represent complete tallies of all package downloads, they are nonetheless the best available source that I’m aware of.&lt;/p&gt;
+&lt;p&gt;The thing is, the download numbers are rather hard to interpret. Beyond knowing that somebody out there is at least &lt;em&gt;trying&lt;/em&gt; to use the tools I’ve made, it’s pretty hard to gauge whether 300 or 3000 or 3 million downloads a month is a good usage level. In this post, I’ll attempt to put just a little bit of context around these numbers. Emphasis on &lt;em&gt;little bit&lt;/em&gt;, as I’m not all that satisfied with what I’ll show below, but at least it’s something beyond four numbers floating in the air.&lt;/p&gt;
+&lt;div id=&#34;getting-package-download-data&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Getting package download data&lt;/h3&gt;
+&lt;p&gt;I used the &lt;code&gt;cranlogs&lt;/code&gt; package to get daily download counts of all currently available CRAN packages over the period 2018-04-06 through 2019-04-06. I then limited the sample to packages that had been downloaded at least once between 2018-04-06 and 2018-10-05. This had the effect of excluding about 1000 packages that were either only recently added to CRAN or that had been discontinued but were still sitting on CRAN.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(lubridate)
+library(cranlogs)
+
+to_date &amp;lt;- &amp;quot;2019-04-06&amp;quot;
+from_date &amp;lt;- as.character(as_date(to_date) - duration(1, &amp;quot;year&amp;quot;))
+file_name &amp;lt;- paste0(&amp;quot;CRAN package downloads &amp;quot;, to_date, &amp;quot;.rds&amp;quot;)
+
+pkg_downloads &amp;lt;-
+  available.packages() %&amp;gt;%
+  as_tibble() %&amp;gt;%
+  select(Package, Version) %&amp;gt;%
+  mutate(grp = 1 + trunc((row_number() - 1) / 100)) %&amp;gt;%
+  nest(Package, Version) %&amp;gt;%
+  mutate(downloads = map(.$data, ~ cran_downloads(packages = .$Package, 
+                                                  from = from_date, 
+                                                  to = to_date))) %&amp;gt;%
+  select(-data) %&amp;gt;%
+  unnest()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;downloaded_last_yr &amp;lt;- 
+  pkg_downloads %&amp;gt;%
+  filter(date &amp;lt;= as_date(as_date(to_date) - duration(6, &amp;quot;months&amp;quot;))) %&amp;gt;%
+  group_by(package) %&amp;gt;%
+  summarise(
+    count = sum(count)
+  ) %&amp;gt;%
+  filter(count &amp;gt; 0) %&amp;gt;%
+  select(package)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This yielded 12925 packages. For each of these packages, I then calculated the average monthly download rate over the most recent six months, along with where that rate falls as a percentile of all packages in the sample.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;downloads_past_six &amp;lt;-
+  pkg_downloads %&amp;gt;%
+  filter(date &amp;gt; as_date(as_date(to_date) - duration(6, &amp;quot;months&amp;quot;))) %&amp;gt;%
+  semi_join(downloaded_last_yr, by = &amp;quot;package&amp;quot;) %&amp;gt;%
+  group_by(package) %&amp;gt;%
+  summarise(
+    count = sum(count) / 6
+  ) %&amp;gt;%
+  mutate(
+    package = fct_reorder(factor(package), count),
+    pct_less = cume_dist(count)
+  )&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pustos-packages&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Pusto’s packages&lt;/h3&gt;
+&lt;p&gt;I have developed four packages that are currently available on CRAN:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;clubSandwich&lt;/code&gt; package provides cluster-robust variance estimators for a variety of different linear models (including meta-regression, hierarchical linear models, panel data models, etc.), as well as (more recently) some instrumental variables models. The package has received some attention in connection with estimating meta-analysis and meta-regression models, and it’s also relevant to applied micro-economics, field experiments, and other fields.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;scdhlm&lt;/code&gt; and &lt;code&gt;SingleCaseES&lt;/code&gt; packages provide functions and interactive web apps for calculating various effect sizes for single-case experimental designs. The &lt;code&gt;SingleCaseES&lt;/code&gt; package is fairly new and I haven’t yet written any articles that feature it. Both it and &lt;code&gt;scdhlm&lt;/code&gt; are relevant in fairly specialized fields where single-case experimental designs are commonly used—and where there is a need to meta-analyze results from such designs—and so I would not expect them to be widely downloaded.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;ARPobservation&lt;/code&gt; package provides tools for simulating behavioral observation data based on an alternating renewal process model. I developed this package for my own dissertation work, and my students and I have used it in some subsequent work. I think of it mostly as a tool for my group’s work on statistical methods for single-case experimental designs, and so would not expect to be widely downloaded or used outside of this area.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As points of comparison to my contributions, it is perhaps useful to look at two popular packages for conducting meta-analysis, the &lt;code&gt;metafor&lt;/code&gt; package and the &lt;code&gt;robumeta&lt;/code&gt; package:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;metafor&lt;/code&gt; package, developed by Wolfgang Viechtbauer, has been around for 10 years and includes all sorts of incredible tools for calculating effect sizes, estimating meta-analysis and meta-regression models, investigating fitted models, and representing the results graphically. In contrast, the &lt;code&gt;clubSandwich&lt;/code&gt; package is narrower in scope—it just calculates robust standard errors, confidence intervals, etc.—so &lt;code&gt;metafor&lt;/code&gt; is not a perfect point of comparison.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;robumeta&lt;/code&gt; package, by Zachary Fisher and Elizabeth Tipton, is a closer match in terms of scope. It is used for estimating meta-regression models with robust variance estimation, using specific methods proposed by Hedges, Tipton, and Johnson (2010).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am having a harder time thinking of good comparables for the &lt;code&gt;scdhlm&lt;/code&gt;, &lt;code&gt;SingleCaseES&lt;/code&gt;, and &lt;code&gt;ARPobservation&lt;/code&gt; packages due to their specialized focus. (Ideas? Suggestions? I’m all ears!)&lt;/p&gt;
+&lt;p&gt;With that background, here are the average monthly download rates (over the past six months) for each of my four packages, along with &lt;code&gt;metafor&lt;/code&gt; and &lt;code&gt;robumeta&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(knitr)
+library(kableExtra)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;kableExtra&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:dplyr&amp;#39;:
+## 
+##     group_rows&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Pusto_pkgs &amp;lt;- c(&amp;quot;ARPobservation&amp;quot;,&amp;quot;scdhlm&amp;quot;,&amp;quot;SingleCaseES&amp;quot;,&amp;quot;clubSandwich&amp;quot;)
+meta_pkgs &amp;lt;- c(&amp;quot;metafor&amp;quot;,&amp;quot;robumeta&amp;quot;)
+
+focal_downloads &amp;lt;- 
+  downloads_past_six %&amp;gt;%
+  filter(package %in% c(Pusto_pkgs, meta_pkgs)) %&amp;gt;%
+  mutate(
+    count = round(count),
+    pct_less = round(100 * pct_less, 1)
+  ) %&amp;gt;%
+  arrange(desc(count))
+
+focal_downloads %&amp;gt;%
+  rename(`Average monthly downloads` = count, 
+         `Percentile of CRAN packages` = pct_less) %&amp;gt;%
+  kable() %&amp;gt;%
+  kable_styling(bootstrap_options = c(&amp;quot;hover&amp;quot;, &amp;quot;condensed&amp;quot;), full_width = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;table class=&#34;table table-hover table-condensed&#34; style=&#34;width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+package
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+Average monthly downloads
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+Percentile of CRAN packages
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+metafor
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+7348
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+94.0
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+clubSandwich
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2992
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+90.3
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+robumeta
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2025
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+87.9
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ARPobservation
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+387
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+55.5
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SingleCaseES
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+306
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+36.4
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+scdhlm
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+229
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+7.5
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Thus, &lt;code&gt;clubSandwich&lt;/code&gt; sits in between &lt;code&gt;metafor&lt;/code&gt; and &lt;code&gt;robumeta&lt;/code&gt;, at the 90th percentile among all active packages on CRAN. The other packages are much less widely downloaded, averaging between 200 and 400 downloads per month. The distribution of monthly download rates is &lt;em&gt;highly&lt;/em&gt; skewed, as can be seen in the figure below. About 68% of packages are downloaded 500 times or fewer per month, while only 7% of packages get more than 5000 downloads per month.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(colorspace)
+library(ggrepel)
+
+downloads_sample &amp;lt;- 
+  downloads_past_six %&amp;gt;%
+  arrange(count) %&amp;gt;%
+  mutate(
+    focal = package %in% c(Pusto_pkgs,meta_pkgs),
+    tenth = (row_number(count) %% 10) == 1
+  ) %&amp;gt;%
+  filter(focal | tenth)
+
+focal_pkg_dat &amp;lt;- 
+  downloads_sample %&amp;gt;%
+  filter(focal) %&amp;gt;%
+  mutate(Pusto = if_else(package %in% Pusto_pkgs, &amp;quot;Pusto&amp;quot;,&amp;quot;comparison&amp;quot;))
+
+title_str &amp;lt;- paste(&amp;quot;Average monthly downloads of R packages from&amp;quot;, as_date(as_date(to_date) - duration(6, &amp;quot;months&amp;quot;)),&amp;quot;through&amp;quot;,to_date)
+
+qualitative_hcl(n = 2, h = c(140, -30), c = 90, l = 40, register = &amp;quot;custom-qual&amp;quot;)
+
+ggplot(downloads_sample, aes(x = package, y = count)) +
+  geom_col() + 
+  geom_col(data = focal_pkg_dat, aes(color = Pusto, fill = Pusto), size = 1.5) + 
+  geom_label_repel(
+    data = focal_pkg_dat, aes(color = Pusto, label = package),
+    segment.size = 0.4,
+    segment.color = &amp;quot;grey50&amp;quot;,
+    nudge_y = 0.5,
+    point.padding = 0.3
+  ) + 
+  scale_y_log10(breaks = c(20, 50, 200, 500, 2000, 5000, 20000, 50000, 200000), labels = scales::comma) + 
+  scale_fill_discrete_qualitative(palette = &amp;quot;custom-qual&amp;quot;) + 
+  scale_color_discrete_qualitative(palette = &amp;quot;custom-qual&amp;quot;) + 
+  labs(x = &amp;quot;&amp;quot;, y = &amp;quot;Downloads (per month)&amp;quot;, title = title_str) + 
+  theme(legend.position = &amp;quot;none&amp;quot;, axis.line.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/CRAN-package-downloads_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;downloads-over-time&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Downloads over time&lt;/h3&gt;
+&lt;p&gt;Here are the weekly download rates for each of my packages over the past two years. (Note that the vertical scales of the graphs differ.)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;weekly_downloads &amp;lt;- 
+  pkg_downloads %&amp;gt;%
+  mutate(
+    yr = year(date),
+    wk = week(date)
+  ) %&amp;gt;%
+  group_by(package, yr, wk) %&amp;gt;%
+  mutate(
+    date = max(date)
+  ) %&amp;gt;%
+  group_by(package, date) %&amp;gt;%
+  summarise(
+    count = sum(count),
+    days = n()
+  )
+
+weekly_downloads %&amp;gt;%
+  filter(
+    days == 7,
+    package %in% Pusto_pkgs
+  ) %&amp;gt;%
+  ggplot(aes(date, count, color = package)) + 
+  geom_line() + 
+  expand_limits(y = 0) + 
+  facet_wrap(~ package, scales = &amp;quot;free&amp;quot;, ncol = 2) + 
+  theme_minimal() + 
+  labs(x = &amp;quot;&amp;quot;, y = &amp;quot;Downloads (per month)&amp;quot;) + 
+  theme(legend.position = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/CRAN-package-downloads_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;There are a couple of curious features in these plots. For one, there are big spikes in downloads of &lt;code&gt;ARPobservation&lt;/code&gt; and &lt;code&gt;SingleCaseES&lt;/code&gt;. The &lt;code&gt;ARPobservation&lt;/code&gt; spike was in mid-June of 2018, when I was at the IES Single-Case Design training institute and demonstrated some of the package’s tools. The &lt;code&gt;SingleCaseES&lt;/code&gt; spike was in early January, 2019. Perhaps someone was teaching a class in single-case research and demonstrated the package? Or something at the IES PI meeting (January 9-10, 2019)?&lt;/p&gt;
+&lt;p&gt;Another interesting pattern is in the download rate of &lt;code&gt;scdhlm&lt;/code&gt;, which looks like it increased systematically starting in September, 2018. I wonder if this was the result of someone demonstrating or incorporating use of the package into a course. Lacking details about where the downloads are coming from, it’s hard to do anything but speculate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;caveats-and-musings&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Caveats and musings&lt;/h3&gt;
+&lt;p&gt;Clearly, download counts are only a very rough proxy for package usage. In marketing-speak, they might be more like leads than conversion, in that people might be downloading a package only to discover that it’s not good for anything and then never use it to accomplish anything. Downloads are also not one-time events. If they use it in their work, a single person will likely download a package many times, over a span of time as new versions are released, onto multiple machines that they might use, by accident in the process of trying to install some other package, and so on. Downloads of inter-related packages are likely to be highly correlated too, as they will be with release of new major versions of R, which probably makes it a bit tricky to do event studies.&lt;/p&gt;
+&lt;p&gt;Ultimately, I don’t know that knowing where my packages stand in terms of download rankings is all that useful. The packages that I’ve developed are all aimed at fairly academic audiences, which means that citations would probably be a better measure of contribution. The problem is, many people don’t know that they should be citing software, or how to do it. As usual, there’s an R function for that. Here’s how to get the citation for &lt;code&gt;clubSandwich&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;citation(package=&amp;quot;clubSandwich&amp;quot;) %&amp;gt;%
+  print(style = &amp;quot;textVersion&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;which returns the following:&lt;/p&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;## Warning in citation(package = &#34;clubSandwich&#34;): no date field in DESCRIPTION file     ## of package &#39;clubSandwich&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;James Pustejovsky (2019). clubSandwich: Cluster-Robust (Sandwich) Variance Estimators with Small-Sample
+Corrections. R package version 0.3.5. &lt;a href=&#34;https://github.com/jepusto/clubSandwich&#34; class=&#34;uri&#34;&gt;https://github.com/jepusto/clubSandwich&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bug in nlme::lme with fixed sigma and REML estimation</title>
+      <link>/bug-in-nlme-with-fixed-sigma/</link>
+      <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/bug-in-nlme-with-fixed-sigma/</guid>
+      <description>
+
+
+&lt;p&gt;About one year ago, the &lt;code&gt;nlme&lt;/code&gt; package introduced a feature that allowed the user to specify a fixed value for the residual variance in linear mixed effect models fitted with &lt;code&gt;lme()&lt;/code&gt;. This feature is interesting to me because, when used with the &lt;code&gt;varFixed()&lt;/code&gt; specification for the residual weights, it allows for estimation of a wide variety of meta-analysis models, including basic random effects models, bivariate models for estimating effects by trial arm, and other sorts of multivariate/multi-level random effects models. However, in kicking the tires on this feature, I noticed that the results that it produces are not quite consistent with the results produced by &lt;code&gt;metafor&lt;/code&gt;, which is the main package I use for fitting meta-analytic models.&lt;/p&gt;
+&lt;p&gt;In this post, I document several examples of discrepant estimates between &lt;code&gt;lme()&lt;/code&gt; and &lt;code&gt;rma.mv()&lt;/code&gt;, using standard datasets included in the &lt;code&gt;metafor&lt;/code&gt; package. The main take-aways are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The discrepancies arise only with &lt;code&gt;REML&lt;/code&gt; estimation (not with &lt;code&gt;ML&lt;/code&gt; estimation).&lt;/li&gt;
+&lt;li&gt;The discrepancies are present whether or not the &lt;code&gt;varFixed&lt;/code&gt; specification is used.&lt;/li&gt;
+&lt;li&gt;The discrepancies are mostly small (with minimal impact on the standard errors of the fixed effect estimates), but are larger than I would expect from computational/convergence differences alone.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Another example, based on a different dataset, is documented in &lt;a href=&#34;https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16975&#34;&gt;this bug report&lt;/a&gt;. Wolfgang Viechtbauer, author of the &lt;code&gt;metafor&lt;/code&gt; package, identified this problem with &lt;code&gt;lme&lt;/code&gt; a few months ago already (see his responses in &lt;a href=&#34;https://stat.ethz.ch/pipermail/r-sig-mixed-models/2016q2/024862.html&#34;&gt;this thread&lt;/a&gt; on the R mixed models mailing list) and noted that the issue was localized to REML estimation. My thanks to Wolfgang for providing feedback on this post.&lt;/p&gt;
+&lt;div id=&#34;basic-random-effects-model&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Basic random effects model&lt;/h3&gt;
+&lt;p&gt;This example fits a basic random effects model to the BCG vaccine data, available within &lt;code&gt;metafor&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(metafor)
+library(nlme)
+
+bcg_example &amp;lt;- function(method = &amp;quot;REML&amp;quot;, constant_var = FALSE) {
+  
+  data(dat.bcg)
+  dat &amp;lt;- escalc(measure=&amp;quot;OR&amp;quot;, ai=tpos, bi=tneg, ci=cpos, di=cneg, data=dat.bcg)
+  
+  v_bar &amp;lt;- mean(dat$vi)
+  if (constant_var) dat$vi &amp;lt;- v_bar
+  
+  # random-effects model using rma.uni()
+  LOR_uni_fit &amp;lt;- rma(yi, vi, data=dat, method = method)
+  LOR_uni &amp;lt;- with(LOR_uni_fit, 
+                  data.frame(f = &amp;quot;rma.uni&amp;quot;, 
+                             logLik = logLik(LOR_uni_fit),
+                             est = as.numeric(b), 
+                             se = se, 
+                             tau = sqrt(tau2)))
+  
+  # random-effects model using rma.mv()
+  LOR_mv_fit &amp;lt;- rma.mv(yi, vi, random = ~ 1 | trial, data=dat, method = method)
+  LOR_mv &amp;lt;- with(LOR_mv_fit, 
+                 data.frame(f = &amp;quot;rma.mv&amp;quot;, 
+                            logLik = logLik(LOR_mv_fit),
+                            est = as.numeric(b), 
+                            se = se, 
+                            tau = sqrt(sigma2)))
+  
+  # random-effects model using lme()
+  if (constant_var) {
+    LOR_lme_fit &amp;lt;- lme(yi ~ 1, data = dat, method = method, 
+                       random = ~ 1 | trial,
+                       control = lmeControl(sigma = sqrt(v_bar)))
+    tau &amp;lt;- sqrt(as.numeric(coef(LOR_lme_fit$modelStruct$reStruct, unconstrained = FALSE)) * v_bar) 
+  } else {
+    LOR_lme_fit &amp;lt;- lme(yi ~ 1, data = dat, method = method, 
+                       random = ~ 1 | trial,
+                       weights = varFixed(~ vi),
+                       control = lmeControl(sigma = 1))
+    tau &amp;lt;- sqrt(as.numeric(coef(LOR_lme_fit$modelStruct$reStruct, unconstrained = FALSE)))
+  }
+  LOR_lme &amp;lt;- data.frame(f = &amp;quot;lme&amp;quot;, 
+                        logLik = logLik(LOR_lme_fit),
+                        est = as.numeric(fixef(LOR_lme_fit)), 
+                        se = as.numeric(sqrt(vcov(LOR_lme_fit))), 
+                        tau = tau)
+  
+  rbind(LOR_uni, LOR_mv, LOR_lme)
+  
+}
+
+bcg_example(&amp;quot;REML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         f    logLik        est        se       tau
+## 1 rma.uni -12.57566 -0.7451778 0.1860279 0.5811816
+## 2  rma.mv -12.57566 -0.7451778 0.1860280 0.5811818
+## 3     lme -13.34043 -0.7471979 0.1916902 0.6030524&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_example(&amp;quot;REML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         f    logLik        est        se       tau
+## 1 rma.uni -12.96495 -0.7716272 0.1977007 0.5911451
+## 2  rma.mv -12.96495 -0.7716272 0.1977007 0.5911452
+## 3     lme -15.62846 -0.7716272 0.1899448 0.5571060&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_example(&amp;quot;ML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         f    logLik        est        se       tau
+## 1 rma.uni -13.07276 -0.7419668 0.1779534 0.5499605
+## 2  rma.mv -13.07276 -0.7419669 0.1779534 0.5499608
+## 3     lme -13.07276 -0.7419668 0.1779534 0.5499605&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_example(&amp;quot;ML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         f     logLik        est        se       tau
+## 1 rma.uni -13.525084 -0.7716272 0.1899447 0.5571059
+## 2  rma.mv -13.525084 -0.7716272 0.1899447 0.5571059
+## 3     lme  -2.479133 -0.7716272 0.1899447 0.5571060&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bi-variate-random-effects-model&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bi-variate random effects model&lt;/h3&gt;
+&lt;p&gt;This example fits a bi-variate random effects model, also to the BCG vaccine data:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_bivariate &amp;lt;- function(method = &amp;quot;REML&amp;quot;, constant_var = FALSE) {
+  data(dat.bcg)
+  dat_long &amp;lt;- to.long(measure=&amp;quot;OR&amp;quot;, ai=tpos, bi=tneg, ci=cpos, di=cneg, data=dat.bcg)
+  levels(dat_long$group) &amp;lt;- c(&amp;quot;exp&amp;quot;, &amp;quot;con&amp;quot;)
+  dat_long$group &amp;lt;- relevel(dat_long$group, ref=&amp;quot;con&amp;quot;)
+  dat_long &amp;lt;- escalc(measure=&amp;quot;PLO&amp;quot;, xi=out1, mi=out2, data=dat_long)
+
+  v_bar &amp;lt;- mean(dat_long$vi)
+  
+  if (constant_var) dat_long$vi &amp;lt;- v_bar
+  
+  # bivariate random-effects model using rma.mv()
+  
+  bv_rma_fit &amp;lt;- rma.mv(yi, vi, mods = ~ group, 
+                       random = ~ group | study, 
+                       struct = &amp;quot;UN&amp;quot;, method = method,
+                       data=dat_long)
+  bv_rma &amp;lt;- with(bv_rma_fit, data.frame(f = &amp;quot;rma.mv&amp;quot;,
+                                        logLik = logLik(bv_rma_fit),
+                                        tau1 = sqrt(tau2[1]),
+                                        tau2 = sqrt(tau2[2])))
+  
+  # bivariate random-effects model using lme()
+  if (constant_var) {
+    bv_lme_fit &amp;lt;- lme(yi ~ group, data = dat_long, method = method, 
+                      random = ~ group | study,
+                      control = lmeControl(sigma = sqrt(v_bar)))
+    tau_sq &amp;lt;- colSums(coef(bv_lme_fit$modelStruct$reStruct, unconstrained = FALSE) * matrix(c(1,0,0, 1,2,1), 3, 2)) * v_bar
+    
+  } else {
+    bv_lme_fit &amp;lt;- lme(yi ~ group, data = dat_long, method = method, 
+                      random = ~ group | study,
+                      weights = varFixed(~ vi),
+                      control = lmeControl(sigma = 1))
+    
+    tau_sq &amp;lt;- colSums(coef(bv_lme_fit$modelStruct$reStruct, unconstrained = FALSE) * matrix(c(1,0,0, 1,2,1), 3, 2))
+    
+  }
+  
+  bv_lme &amp;lt;- data.frame(f = &amp;quot;lme&amp;quot;,
+                       logLik = logLik(bv_lme_fit),
+                       tau1 = sqrt(tau_sq[1]),
+                       tau2 = sqrt(tau_sq[2]))
+  
+  rbind(bv_rma, bv_lme)
+  
+}
+
+bcg_bivariate(&amp;quot;REML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik     tau1     tau2
+## 1 rma.mv -31.50167 1.617807 1.244429
+## 2    lme -32.32612 1.631619 1.254437&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_bivariate(&amp;quot;REML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik     tau1     tau2
+## 1 rma.mv -31.09623 1.644897 1.191679
+## 2    lme -37.06035 1.578435 1.142260&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_bivariate(&amp;quot;ML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik     tau1     tau2
+## 1 rma.mv -33.08793 1.551558 1.196399
+## 2    lme -33.08793 1.551558 1.196399&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_bivariate(&amp;quot;ML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f     logLik     tau1    tau2
+## 1 rma.mv -32.647023 1.578434 1.14226
+## 2    lme  -2.237355 1.578434 1.14226&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;three-level-random-effects-model&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Three-level random-effects model&lt;/h3&gt;
+&lt;p&gt;This example fits a three-level random-effects model to the data from Konstantopoulos (2011):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Konstantopoulos &amp;lt;- function(method = &amp;quot;REML&amp;quot;, constant_var = FALSE) {
+  
+  dat &amp;lt;- get(data(dat.konstantopoulos2011))
+  v_bar &amp;lt;- mean(dat$vi)
+  if (constant_var) dat$vi &amp;lt;- v_bar
+  
+  # multilevel random-effects model using rma.mv()
+  ml_rma_fit &amp;lt;- rma.mv(yi, vi, random = ~ 1 | district/school, data=dat, method = method)
+  
+  ml_rma &amp;lt;- with(ml_rma_fit, 
+                 data.frame(f = &amp;quot;rma.mv&amp;quot;, 
+                            logLik = logLik(ml_rma_fit),
+                            est = as.numeric(b), 
+                            se = se, 
+                            tau1 = sqrt(sigma2[1]), 
+                            tau2 = sqrt(sigma2[2])))
+  
+  # multilevel random-effects model using lme()
+  if (constant_var) {
+    ml_lme_fit &amp;lt;- lme(yi ~ 1, data = dat, method = method, 
+                      random = ~ 1 | district / school,
+                      control = lmeControl(sigma = sqrt(v_bar)))
+    tau &amp;lt;- sqrt(as.numeric(coef(ml_lme_fit$modelStruct$reStruct, unconstrained = FALSE)) * v_bar)
+    
+  } else {
+    ml_lme_fit &amp;lt;- lme(yi ~ 1, data = dat, method = method, 
+                      random = ~ 1 | district / school,
+                      weights = varFixed(~ vi),
+                      control = lmeControl(sigma = 1))
+    tau &amp;lt;- sqrt(as.numeric(coef(ml_lme_fit$modelStruct$reStruct, unconstrained = FALSE)))
+    
+  }  
+  ml_lme &amp;lt;- data.frame(f = &amp;quot;lme&amp;quot;,
+                       logLik = logLik(ml_lme_fit),
+                       est = as.numeric(fixef(ml_lme_fit)),
+                       se = as.numeric(sqrt(diag(vcov(ml_lme_fit)))),
+                       tau1 = tau[2],
+                       tau2 = tau[1])
+  
+  rbind(ml_rma, ml_lme)
+  
+}
+
+Konstantopoulos(&amp;quot;REML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f     logLik       est         se      tau1      tau2
+## 1 rma.mv  -7.958724 0.1847132 0.08455592 0.2550724 0.1809324
+## 2    lme -10.716781 0.1841827 0.08641374 0.2605790 0.1884588&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Konstantopoulos(&amp;quot;REML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f     logLik       est         se      tau1      tau2
+## 1 rma.mv  -9.724839 0.1724309 0.08052701 0.2401816 0.1878155
+## 2    lme -16.119274 0.1724309 0.07980479 0.2380275 0.1848778&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Konstantopoulos(&amp;quot;ML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik       est         se      tau1      tau2
+## 1 rma.mv -8.394936 0.1844554 0.08048168 0.2402881 0.1812865
+## 2    lme -8.394936 0.1844554 0.08048168 0.2402881 0.1812865&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Konstantopoulos(&amp;quot;ML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik       est         se      tau1      tau2
+## 1 rma.mv -10.11095 0.1712365 0.07645094 0.2250687 0.1881229
+## 2    lme  90.21692 0.1712365 0.07645093 0.2250687 0.1881228&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simulation studies in R (Fall, 2016 version)</title>
+      <link>/simulation-studies-in-r-2016/</link>
+      <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/simulation-studies-in-r-2016/</guid>
+      <description>
+
+
+&lt;p&gt;In today’s Quant Methods colloquium, I gave an introduction to the logic and purposes of Monte Carlo simulation studies, with examples written in R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/files/Simulations-in-R-2016.html&#34;&gt;Here are the slides&lt;/a&gt; from my presentation.&lt;/li&gt;
+&lt;li&gt;You can find the code that generates the slides &lt;a href=&#34;https://gist.github.com/jepusto/bf6cdb6e393f54470ba4d016199c6eb8&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Here is my &lt;a href=&#34;/Designing-simulation-studies-using-R&#34;&gt;presentation on the same topic&lt;/a&gt; from a couple of years ago.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://varianceexplained.org/r/beta_binomial_baseball/&#34;&gt;David Robinson’s blog&lt;/a&gt; has a much more in-depth discussion of beta-binomial regression.&lt;/li&gt;
+&lt;li&gt;The data I used is from &lt;a href=&#34;http://www.seanlahman.com/baseball-database.html&#34;&gt;Lahman’s baseball database&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bug in nlme::getVarCov</title>
+      <link>/bug-in-nlme-getvarcov/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>/bug-in-nlme-getvarcov/</guid>
+      <description>
+
+
+&lt;p&gt;I have recently been working to ensure that &lt;a href=&#34;https://github.com/jepusto/clubSandwich&#34;&gt;my &lt;code&gt;clubSandwich&lt;/code&gt; package&lt;/a&gt; works correctly on fitted &lt;code&gt;lme&lt;/code&gt; and &lt;code&gt;gls&lt;/code&gt; models from the &lt;code&gt;nlme&lt;/code&gt; package, which is one of the main R packages for fitting hierarchical linear models. In the course of digging around in the guts of &lt;code&gt;nlme&lt;/code&gt;, I noticed a bug in the &lt;code&gt;getVarCov&lt;/code&gt; function. The purpose of the function is to extract the estimated variance-covariance matrix of the errors from a fitted &lt;code&gt;lme&lt;/code&gt; or &lt;code&gt;gls&lt;/code&gt; model.&lt;/p&gt;
+&lt;p&gt;It seems that this function is sensitive to the order in which the input data are sorted. &lt;a href=&#34;https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16744&#34;&gt;This bug report&lt;/a&gt; noted the problem, but unfortunately their proposed fix doesn’t seem to solve the problem. In this post I’ll demonstrate the bug and a solution. (I’m posting this here because the R project’s bug reporting system is currently closed to people who were not registered as of early July, evidently due to some sort of spamming problem.)&lt;/p&gt;
+&lt;div id=&#34;the-issue&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The issue&lt;/h1&gt;
+&lt;p&gt;Here’s a simple demonstration of the problem. I’ll first fit a &lt;code&gt;gls&lt;/code&gt; model with a heteroskedastic variance function and an AR(1) auto-correlation structure (no need to worry about the substance of the specification—we’re just worried about computation here) and then extract the variances for each of the units.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Demonstrate the problem with gls model
+
+library(nlme)
+data(Ovary)
+
+gls_raw &amp;lt;- gls(follicles ~ sin(2*pi*Time) + cos(2*pi*Time), data = Ovary,
+               correlation = corAR1(form = ~ 1 | Mare),
+               weights = varPower())
+
+Mares &amp;lt;- levels(gls_raw$groups)
+V_raw &amp;lt;- lapply(Mares, function(g) getVarCov(gls_raw, individual = g))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I’ll repeat the process using the same data, but sorted in a different order&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Ovary_sorted &amp;lt;- Ovary[with(Ovary, order(Mare, Time)),]
+gls_sorted &amp;lt;- update(gls_raw, data = Ovary_sorted)
+
+V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov(gls_sorted, individual = g))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The variance component estimates are essentially equal:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(gls_raw$modelStruct, gls_sorted$modelStruct)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, the extracted variance-covariance matrices are not:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(V_raw, V_sorted)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Component 1: Mean relative difference: 0.03256&amp;quot;   
+## [2] &amp;quot;Component 3: Mean relative difference: 0.05830791&amp;quot;
+## [3] &amp;quot;Component 4: Mean relative difference: 0.1142209&amp;quot; 
+## [4] &amp;quot;Component 5: Mean relative difference: 0.03619692&amp;quot;
+## [5] &amp;quot;Component 6: Mean relative difference: 0.09260648&amp;quot;
+## [6] &amp;quot;Component 8: Mean relative difference: 0.08650327&amp;quot;
+## [7] &amp;quot;Component 9: Mean relative difference: 0.07627162&amp;quot;
+## [8] &amp;quot;Component 10: Mean relative difference: 0.018103&amp;quot; 
+## [9] &amp;quot;Component 11: Mean relative difference: 0.1020658&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s the code of the relevant function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;nlme:::getVarCov.gls&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## function (obj, individual = 1, ...) 
+## {
+##     S &amp;lt;- corMatrix(obj$modelStruct$corStruct)[[individual]]
+##     if (!is.null(obj$modelStruct$varStruct)) {
+##         ind &amp;lt;- obj$groups == individual
+##         vw &amp;lt;- 1/varWeights(obj$modelStruct$varStruct)[ind]
+##     }
+##     else vw &amp;lt;- rep(1, nrow(S))
+##     vars &amp;lt;- (obj$sigma * vw)^2
+##     result &amp;lt;- t(S * sqrt(vars)) * sqrt(vars)
+##     class(result) &amp;lt;- c(&amp;quot;marginal&amp;quot;, &amp;quot;VarCov&amp;quot;)
+##     attr(result, &amp;quot;group.levels&amp;quot;) &amp;lt;- names(obj$groups)
+##     result
+## }
+## &amp;lt;bytecode: 0x000000001bc24f78&amp;gt;
+## &amp;lt;environment: namespace:nlme&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The issue is in the 4th line of the body. &lt;code&gt;getVarCov.gls&lt;/code&gt; assumes that &lt;code&gt;varWeights(obj$modelStruct$varStruct)&lt;/code&gt; is sorted in the same order as &lt;code&gt;obj$groups&lt;/code&gt;, which is not necessarily true. Instead, &lt;code&gt;varWeights&lt;/code&gt; seem to return the weights sorted according to the grouping variable. For this example, that means that the &lt;code&gt;varWeights&lt;/code&gt; will not depend on the order in which the groups are sorted.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;identical(gls_raw$groups, gls_sorted$groups)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] FALSE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;identical(varWeights(gls_raw$modelStruct$varStruct), 
+          varWeights(gls_sorted$modelStruct$varStruct))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fix-for-nlmegetvarcov.gls&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Fix for &lt;code&gt;nlme:::getVarCov.gls&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;I think this can be solved by either&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;putting the &lt;code&gt;varWeights&lt;/code&gt; back into the same order as the raw data or&lt;/li&gt;
+&lt;li&gt;sorting &lt;code&gt;obj$groups&lt;/code&gt; before identifying the rows corresponding to the specified &lt;code&gt;individual&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here’s a revised function that takes the second approach:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# proposed patch for getVarCov.gls
+
+getVarCov_revised_gls &amp;lt;- function (obj, individual = 1, ...) {
+    S &amp;lt;- corMatrix(obj$modelStruct$corStruct)[[individual]]
+    if (!is.null(obj$modelStruct$varStruct)) {
+        ind &amp;lt;- sort(obj$groups) == individual
+        vw &amp;lt;- 1 / varWeights(obj$modelStruct$varStruct)[ind]
+    }
+    else vw &amp;lt;- rep(1, nrow(S))
+    vars &amp;lt;- (obj$sigma * vw)^2
+    result &amp;lt;- t(S * sqrt(vars)) * sqrt(vars)
+    class(result) &amp;lt;- c(&amp;quot;marginal&amp;quot;, &amp;quot;VarCov&amp;quot;)
+    attr(result, &amp;quot;group.levels&amp;quot;) &amp;lt;- names(obj$groups)
+    result
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Testing that it works correctly:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;V_raw &amp;lt;- lapply(Mares, function(g) getVarCov_revised_gls(gls_raw, individual = g))
+V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov_revised_gls(gls_sorted, individual = g))
+all.equal(V_raw, V_sorted)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fix-for-nlmegetvarcov.lme&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Fix for &lt;code&gt;nlme:::getVarCov.lme&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;The same issue comes up in &lt;code&gt;getVarCov.lme&lt;/code&gt;. Here’s the fix and verification:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# proposed patch for getVarCov.lme
+
+getVarCov_revised_lme &amp;lt;- function (obj, individuals, type = c(&amp;quot;random.effects&amp;quot;, &amp;quot;conditional&amp;quot;, &amp;quot;marginal&amp;quot;), ...) {
+    type &amp;lt;- match.arg(type)
+    if (any(&amp;quot;nlme&amp;quot; == class(obj))) 
+        stop(&amp;quot;not implemented for \&amp;quot;nlme\&amp;quot; objects&amp;quot;)
+    if (length(obj$group) &amp;gt; 1) 
+        stop(&amp;quot;not implemented for multiple levels of nesting&amp;quot;)
+    sigma &amp;lt;- obj$sigma
+    D &amp;lt;- as.matrix(obj$modelStruct$reStruct[[1]]) * sigma^2
+    if (type == &amp;quot;random.effects&amp;quot;) {
+        result &amp;lt;- D
+    }
+    else {
+        result &amp;lt;- list()
+        groups &amp;lt;- sort(obj$groups[[1]])
+        ugroups &amp;lt;- unique(groups)
+        if (missing(individuals)) 
+            individuals &amp;lt;- as.matrix(ugroups)[1, ]
+        if (is.numeric(individuals)) 
+            individuals &amp;lt;- ugroups[individuals]
+        for (individ in individuals) {
+            indx &amp;lt;- which(individ == ugroups)
+            if (!length(indx)) 
+                stop(gettextf(&amp;quot;individual %s was not used in the fit&amp;quot;, 
+                  sQuote(individ)), domain = NA)
+            if (is.na(indx)) 
+                stop(gettextf(&amp;quot;individual %s was not used in the fit&amp;quot;, 
+                  sQuote(individ)), domain = NA)
+            ind &amp;lt;- groups == individ
+            if (!is.null(obj$modelStruct$corStruct)) {
+                V &amp;lt;- corMatrix(obj$modelStruct$corStruct)[[as.character(individ)]]
+            }
+            else V &amp;lt;- diag(sum(ind))
+            if (!is.null(obj$modelStruct$varStruct)) 
+                sds &amp;lt;- 1/varWeights(obj$modelStruct$varStruct)[ind]
+            else sds &amp;lt;- rep(1, sum(ind))
+            sds &amp;lt;- obj$sigma * sds
+            cond.var &amp;lt;- t(V * sds) * sds
+            dimnames(cond.var) &amp;lt;- list(1:nrow(cond.var), 1:ncol(cond.var))
+            if (type == &amp;quot;conditional&amp;quot;) 
+                result[[as.character(individ)]] &amp;lt;- cond.var
+            else {
+                Z &amp;lt;- model.matrix(obj$modelStruct$reStruc, getData(obj))[ind, 
+                  , drop = FALSE]
+                result[[as.character(individ)]] &amp;lt;- cond.var + 
+                  Z %*% D %*% t(Z)
+            }
+        }
+    }
+    class(result) &amp;lt;- c(type, &amp;quot;VarCov&amp;quot;)
+    attr(result, &amp;quot;group.levels&amp;quot;) &amp;lt;- names(obj$groups)
+    result
+}
+
+lme_raw &amp;lt;- lme(follicles ~ sin(2*pi*Time) + cos(2*pi*Time), 
+               random = ~ 1 | Mare,
+               correlation = corExp(form = ~ Time),
+               weights = varPower(),
+               data=Ovary)
+
+lme_sorted &amp;lt;- update(lme_raw, data = Ovary_sorted)
+
+all.equal(lme_raw$modelStruct, lme_sorted$modelStruct)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# current getVarCov
+V_raw &amp;lt;- lapply(Mares, function(g) getVarCov(lme_raw, individual = g, type = &amp;quot;marginal&amp;quot;))
+V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov(lme_sorted, individual = g, type = &amp;quot;marginal&amp;quot;))
+all.equal(V_raw, V_sorted)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Component 1: Component 1: Mean relative difference: 0.003989954&amp;quot; 
+##  [2] &amp;quot;Component 3: Component 1: Mean relative difference: 0.003784181&amp;quot; 
+##  [3] &amp;quot;Component 4: Component 1: Mean relative difference: 0.003028662&amp;quot; 
+##  [4] &amp;quot;Component 5: Component 1: Mean relative difference: 0.0005997944&amp;quot;
+##  [5] &amp;quot;Component 6: Component 1: Mean relative difference: 0.002350456&amp;quot; 
+##  [6] &amp;quot;Component 7: Component 1: Mean relative difference: 0.007103733&amp;quot; 
+##  [7] &amp;quot;Component 8: Component 1: Mean relative difference: 0.001887638&amp;quot; 
+##  [8] &amp;quot;Component 9: Component 1: Mean relative difference: 0.0009601843&amp;quot;
+##  [9] &amp;quot;Component 10: Component 1: Mean relative difference: 0.004748783&amp;quot;
+## [10] &amp;quot;Component 11: Component 1: Mean relative difference: 0.001521097&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# revised getVarCov 
+V_raw &amp;lt;- lapply(Mares, function(g) getVarCov_revised_lme(lme_raw, individual = g, type = &amp;quot;marginal&amp;quot;))
+V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov_revised_lme(lme_sorted, individual = g, type = &amp;quot;marginal&amp;quot;))
+all.equal(V_raw, V_sorted)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;session-info&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Session info&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## R version 3.6.3 (2020-02-29)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 10 x64 (build 17763)
+## 
+## Matrix products: default
+## 
+## locale:
+## [1] LC_COLLATE=English_United States.1252 
+## [2] LC_CTYPE=English_United States.1252   
+## [3] LC_MONETARY=English_United States.1252
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.1252    
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] nlme_3.1-144
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_1.0.4.6    bookdown_0.14   lattice_0.20-38 digest_0.6.25  
+##  [5] grid_3.6.3      magrittr_1.5    evaluate_0.14   blogdown_0.18  
+##  [9] rlang_0.4.5     stringi_1.4.3   rmarkdown_2.1   tools_3.6.3    
+## [13] stringr_1.4.0   xfun_0.12       yaml_2.2.0      compiler_3.6.3 
+## [17] htmltools_0.4.0 knitr_1.28&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assigning after dplyr</title>
+      <link>/assigning-after-dplyr/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      <guid>/assigning-after-dplyr/</guid>
+      <description>
+
+
+&lt;p&gt;Hadley Wickham’s &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;https://github.com/hadley/tidyr&#34;&gt;tidyr&lt;/a&gt; packages completely changed the way I do data manipulation/munging in R. These packages make it possible to write shorter, faster, more legible, easier-to-intepret code to accomplish the sorts of manipulations that you have to do with practically any real-world data analysis. The legibility and interpretability benefits come from&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;using functions that are simple verbs that do exactly what they say (e.g., &lt;code&gt;filter&lt;/code&gt;, &lt;code&gt;summarize&lt;/code&gt;, &lt;code&gt;group_by&lt;/code&gt;) and&lt;/li&gt;
+&lt;li&gt;chaining multiple operations together, through the pipe operator &lt;code&gt;%&amp;gt;%&lt;/code&gt; from the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chaining is particularly nice because it makes the code read like a story. For example, here’s the code to calculate sample means for the baseline covariates in a little experimental dataset I’ve been working with recently:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
+dat &amp;lt;- read.csv(&amp;quot;http://jepusto.com/data/Mineo_2009_data.csv&amp;quot;)
+
+dat %&amp;gt;%
+  group_by(Condition) %&amp;gt;%
+  select(Age, starts_with(&amp;quot;Baseline&amp;quot;)) %&amp;gt;%
+  summarise_each(funs(mean)) -&amp;gt;
+  baseline_means&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: funs() is soft deprecated as of dplyr 0.8.0
+## Please use a list of either functions or lambdas: 
+## 
+##   # Simple named list: 
+##   list(mean = mean, median = median)
+## 
+##   # Auto named with `tibble::lst()`: 
+##   tibble::lst(mean, median)
+## 
+##   # Using lambdas
+##   list(~ mean(., trim = .2), ~ median(., na.rm = TRUE))
+## This warning is displayed once per session.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Each line of the code is a different action: first group the data by &lt;code&gt;Condition&lt;/code&gt;, then select the relevant variables, then summarise each of the variables with its sample mean in each group. The results are stored in a dataset called &lt;code&gt;baseline_means&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;As I’ve gotten familiar with &lt;code&gt;dplyr&lt;/code&gt;, I’ve adopted the style of using the backwards assignment operator (&lt;code&gt;-&amp;gt;&lt;/code&gt;) to store the results of a chain of manipulations. This is perhaps a little bit odd—in all the rest of my code I stick with the forward assignment operator (&lt;code&gt;&amp;lt;-&lt;/code&gt;) with the object name on the left—but the alternative is to break the “flow” of the story, effectively putting the punchline before the end of the joke. Consider:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;baseline_means &amp;lt;- dat %&amp;gt;%
+  group_by(Condition) %&amp;gt;%
+  select(Age, starts_with(&amp;quot;Baseline&amp;quot;)) %&amp;gt;%
+  summarise_each(funs(mean))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Adding missing grouping variables: `Condition`&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That’s just confusing to me. So backward assignment operator it is.&lt;/p&gt;
+&lt;div id=&#34;assigning-as-a-verb&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Assigning as a verb&lt;/h3&gt;
+&lt;p&gt;My only problem with this convention is that, with complicated chains of manipulations, I often find that I need to tweak the order of the verbs in the chain. For example, I might want to summarize &lt;em&gt;all&lt;/em&gt; of the variables, and only then select which ones to store:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat %&amp;gt;%
+  group_by(Condition) %&amp;gt;%
+  summarise_each(funs(mean)) %&amp;gt;%
+  select(Age, starts_with(&amp;quot;Baseline&amp;quot;)) -&amp;gt;
+  baseline_means&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in mean.default(Expressive.Language): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(Expressive.Language): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(Expressive.Language): argument is not numeric or
+## logical: returning NA&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In revising the code, it’s necessary to change the symbols at the end of the second and third steps, which is a minor hassle. It’s possible to do it by very carefully cutting-and-pasting the end of the second step through everything but the &lt;code&gt;-&amp;gt;&lt;/code&gt; after the third step, but that’s a delicate operation, prone to error if you’re programming after hours or after beer. Wouldn’t it be nice if every step in the chain ended with &lt;code&gt;%&amp;gt;%&lt;/code&gt; so that you could move around whole lines of code without worrying about the bit at the end?&lt;/p&gt;
+&lt;p&gt;Here’s one crude way to end each link in the chain with a pipe:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat %&amp;gt;%
+  group_by(Condition) %&amp;gt;%
+  select(Age, starts_with(&amp;quot;Baseline&amp;quot;)) %&amp;gt;%
+  summarise_each(funs(mean)) %&amp;gt;%
+  identity() -&amp;gt; baseline_means&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Adding missing grouping variables: `Condition`&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But this is still pretty ugly—it’s got an extra function call that’s not a verb, and the name of the resulting object is tucked away in the middle of a line. What I need is a verb to take the results of a chain of operations and assign to an object. Base R has a suitable candidate here: the &lt;code&gt;assign&lt;/code&gt; function. How about the following?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat %&amp;gt;%
+  group_by(Condition) %&amp;gt;%
+  select(Age, starts_with(&amp;quot;Baseline&amp;quot;)) %&amp;gt;%
+  summarise_each(funs(mean)) %&amp;gt;%
+  assign(&amp;quot;baseline_means_new&amp;quot;, .)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Adding missing grouping variables: `Condition`&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;exists(&amp;quot;baseline_means_new&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] FALSE&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This doesn’t work because of some subtlety with the environment into which &lt;code&gt;baseline_means_new&lt;/code&gt; is assigned. A brute-force fix would be to specify that the assign should be into the global environment. This will probably work 90%+ of the time, but it’s still not terribly elegant.&lt;/p&gt;
+&lt;p&gt;Here’s a function that searches the call stack to find the most recent invocation of itself that does not involve non-standard evaluation, then assigns to its parent environment:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;put &amp;lt;- function(x, name, where = NULL) {
+  if (is.null(where)) {
+    sys_calls &amp;lt;- sys.calls()
+    put_calls &amp;lt;- grepl(&amp;quot;\\&amp;lt;put\\(&amp;quot;, sys_calls) &amp;amp; !grepl(&amp;quot;\\&amp;lt;put\\(\\.&amp;quot;,sys_calls)
+    where &amp;lt;- sys.frame(max(which(put_calls)) - 1)
+  }
+  assign(name, value = x, pos = where)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here are my quick tests that this function is assigning to the right environment:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;put(dat, &amp;quot;dat1&amp;quot;)
+dat %&amp;gt;% put(&amp;quot;dat2&amp;quot;)
+
+f &amp;lt;- function(dat, name) {
+  put(dat, &amp;quot;dat3&amp;quot;)
+  dat %&amp;gt;% put(&amp;quot;dat4&amp;quot;)
+  put(dat, name)
+  c(exists(&amp;quot;dat3&amp;quot;), exists(&amp;quot;dat4&amp;quot;), exists(name))
+}
+
+f(dat,&amp;quot;dat5&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE TRUE TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;grep(&amp;quot;dat&amp;quot;,ls(), value = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;dat&amp;quot;  &amp;quot;dat1&amp;quot; &amp;quot;dat2&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This appears to work even if you’ve got multiple nested calls to &lt;code&gt;put&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;put(f(dat, &amp;quot;dat6&amp;quot;), &amp;quot;dat7&amp;quot;)
+grep(&amp;quot;dat&amp;quot;,ls(), value = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;dat&amp;quot;  &amp;quot;dat1&amp;quot; &amp;quot;dat2&amp;quot; &amp;quot;dat7&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat7&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE TRUE TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;f(dat, &amp;quot;dat8&amp;quot;) %&amp;gt;% put(&amp;quot;dat9&amp;quot;)
+grep(&amp;quot;dat&amp;quot;,ls(), value = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;dat&amp;quot;  &amp;quot;dat1&amp;quot; &amp;quot;dat2&amp;quot; &amp;quot;dat7&amp;quot; &amp;quot;dat9&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat9&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE TRUE TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;it-works-i-think&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;It works! (I think…)&lt;/h3&gt;
+&lt;p&gt;To be consistent with the style of dplyr, let me also tweak the function to allow &lt;code&gt;name&lt;/code&gt; to be the unquoted object name:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;put &amp;lt;- function(x, name, where = NULL) {
+  name_string &amp;lt;- deparse(substitute(name))
+  if (is.null(where)) {
+    sys_calls &amp;lt;- sys.calls()
+    put_calls &amp;lt;- grepl(&amp;quot;\\&amp;lt;put\\(&amp;quot;, sys_calls) &amp;amp; !grepl(&amp;quot;\\&amp;lt;put\\(\\.&amp;quot;,sys_calls)
+    where &amp;lt;- sys.frame(max(which(put_calls)) - 1)
+  }
+  assign(name_string, value = x, pos = where)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Returning to my original chain of manipulations, here’s how it looks with the new function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat %&amp;gt;%
+  group_by(Condition) %&amp;gt;%
+  select(Age, starts_with(&amp;quot;Baseline&amp;quot;)) %&amp;gt;%
+  summarise_each(funs(mean)) %&amp;gt;%
+  put(baseline_means_new)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Adding missing grouping variables: `Condition`&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;print(baseline_means_new)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 3 x 4
+##   Condition   Age Baseline.Gaze Baseline.Vocalizations
+##   &amp;lt;fct&amp;gt;     &amp;lt;dbl&amp;gt;         &amp;lt;dbl&amp;gt;                  &amp;lt;dbl&amp;gt;
+## 1 OtherVR    122.          91.9                   2.86
+## 2 SelfVid    121.         102.                    1.86
+## 3 SelfVR     139.          95.5                   1.43&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you’ve been following along, let me know what you think of this. Is it a good idea, or is it dangerous? Are there cases where this will break? Can you think of a better name?&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
