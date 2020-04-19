@@ -2,13 +2,13 @@
 layout: post
 tags: bayesian-probability-theorie math games
 #categories: []
-date: 2020-04-25
+date: 2020-04-24
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Baysian Analysis of a Game for Children - Part 2: The Results Are In'
-#comments_id: 3
+title: 'Baysian Analysis of a Game for Children - Part 2: The Results And The Twist'
+#comments_id: 
 ---
 
 These are the results of my foray into Baysian data analysis applied to a childrens game. This post ties the previous posts concerning simple games, probability theory and functional programming together. After recapping the rules of the game I studied I will present winningest strategy, which will surprise nobody, but I will finish with a plot twist.
@@ -48,9 +48,9 @@ I can see four basic strategies from which other strategies could be mixed:
 | Pick Fullest  | Player picks consecutively from the fullest tree(s).                                               |
 
 
-I [wrote a simulation](https://github.com/geo-ant/orchard) to test the strategies. I made a very simplifying assumptions to get to the purest results: All players play the same strategy consistently for the whole duration of the game. The last thing a kid does is play consistent, but I am interested in seeing how the strategies compare concerning their chance of winning.
+I [wrote a simulation](https://github.com/geo-ant/orchard) to test the strategies. I made a simplifying assumption to get to the most basic results: All players play the same strategy consistently for the whole duration of the game. The last thing a kid does is play consistent, but I am interested in seeing how the strategies compare concerning their chance of winning.
 
-# Results
+## Results 
 For a simulated number of $$N=10^7$$ games, the results are as follows. Since the result is binary win/loss, I just need to give the number of wins:
 
 | Strategy      | Number of Wins $$N_W$$ | Win Ratio    |
@@ -59,3 +59,22 @@ For a simulated number of $$N=10^7$$ games, the results are as follows. Since th
 | Pick Favorite | $$5685967$$            | $$56.9\%$$   |
 | Pick Random   | $$6320775$$            | $$63.2\%$$   |
 | Pick Fullest  | $$6842964$$            | $$68.4\%$$   |
+
+The data suggests that the *Pick Fullest* strategy is superior to all other strategies. This is what I assumed since it leads to less turns with fruit colored die rolls going to waste. However, I want to quantify how confident I am in these results given the data.
+
+# Bayesian Analysis
+I am interested in quantifying my knowledge about the chance of winning for each strategy. In [part one of this series](/blog/2020/02/08/bayesian-game-analysis-part1/) we introduced the fundamental formulas and the notation. We are interested in the posterior probability $$P(p\vert N_W,N,S,I)$$ for the chance of winning $$p$$ for each strategy $$S$$ given the data $$N_W$$, $$N$$ and our background knowledge $$I$$. This probability is the prodocut of the prior, the likelihood, and a normalization constant. Let's think about the prior first.
+
+## The Prior Distribution
+The prior reflects my state of knowledge about the chances of winning. My prior knowledge is anecdotal and unsystematic. In light of $$N=10^7$$ experiments the prior is going to have a neglegible influence on the posterior distribution. Thus I just use a uniform prior $$p=const.$$ on the interval $$(0,1)$$ to simplify calculations. If we were operating with less data, then it could pay off to think more carefully about the prior. Questions like: do I really think the prior is independent of strategies? Do I have reasons to believe one strategy is better than the other? Do I honestly think the chances of winning can be close to $$0$$ or $$1$$ given that this is a childrens game? And so on. We could then have a look at [conjugate priors](https://en.wikipedia.org/wiki/Conjugate_prior#Table_of_conjugate_distributions). However, given the amount of data, we'll just leave it at uniform priors.
+
+## Approximating The Likelihood
+
+
+
+
+
+
+
+
+
