@@ -1,6 +1,7 @@
 ---
 title: Tau-U
-author: 'James'
+authors:
+- admin
 date: '2016-03-23'
 slug: Tau-U
 categories: []
@@ -85,7 +86,7 @@ ggplot(TauU_values, aes(n, TauU, color = factor(m))) +
   geom_line() + 
   labs(y = &quot;Expected magnitude of Tau-U&quot;, color = &quot;m&quot;) + 
   theme_bw() + theme(legend.position = &quot;bottom&quot;)</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/unnamed-chunk-1-1.png" width="960" /></p>
+<p><img src="/post/Tau-U_files/figure-html/unnamed-chunk-1-1.png" width="960" /></p>
 <p>In the figure above, each plot corresponds to a different value of the baseline slope (<span class="math inline">\(\beta_1\)</span>, ranging from -0.2 in the top row to 0.2 in the bottom row) and treatment shift (<span class="math inline">\(\beta_2\)</span>, ranging from 0 in the first column to 2 in the last column). Within each plot, the x axis corresponds to treatment phase length and the different lines correspond to different baseline phase lengths. The thing to note is that, when the baseline slope is non-zero, the expected value of Tau-U ranges quite widely within each plot, depending on the values of <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>. For example, when <span class="math inline">\(\beta_2 = 0\)</span> (in the first column), the data follow a simple linear trend with no shift. If the slope of the trend is equal to -0.2 (the first row), then the expected magnitude of Tau-U ranges from -0.8 to 0.3 depending on the phase lengths, which is quite a wide range.</p>
 <p>Generally, the degree of sample size sensitivity depends on the absolute magnitude of the baseline slope, with steeper slopes leading to increased sensitivity. For steeper values of slope, it appears that the degree to which the measure is affected by sample size even swamps the degree to which the measure is sensitive to the magnitude of the treatment effect. Very peculiar.</p>
 </div>

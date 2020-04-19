@@ -1,6 +1,7 @@
 ---
 title: "Bug in nlme::getVarCov"
-author: 'James'
+authors:
+- admin
 date: '2016-08-10'
 slug: bug-in-nlme-getVarCov
 categories: []

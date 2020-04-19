@@ -1,15 +1,13 @@
-{{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
+{{- define "main" -}}
 
-{{ partial "header_image.html" . }}
+{{ partial "page_header.html" . }}
 
-<div class="container">
+<div class="universal-wrapper">
   <div class="row">
-    <div class="col-md-12">
-      <h1>{{ .Title | default (i18n "publications") }}</h1>
+    <div class="col-lg-12">
 
       {{ with .Content }}
-      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      <div class="article-style">{{ . }}</div>
       {{ end }}
 
       {{/* Array of distinct years. */}}
@@ -18,30 +16,36 @@
         {{ $.Scratch.SetInMap "years" $year $year }}
       {{ end }}
 
-      <p>
-        {{ i18n "filter_by_type" }}:
-
-        <select class="pub-filters pubtype-select" data-filter-group="pubtype">
-          <option value="*">{{ i18n "filter_all" }}</option>
-          {{ range $index, $taxonomy := .Site.Taxonomies.publication_types }}
-          <option value=".pubtype-{{ (int $index) }}">
-            {{ index $.Site.Params.publication_types (int $index) }}
-          </option>
-          {{ end }}
-        </select>
-
-        <select class="pub-filters" data-filter-group="year">
-          <option value="*">{{ i18n "filter_all" }}</option>
-          {{ $years_sorted := $.Scratch.GetSortedMapValues "years" }}
-          {{ if $years_sorted }}
-          {{ range $year := sort $years_sorted "" "desc" }}
-          <option value=".year-{{ $year }}">
-            {{ $year }}
-          </option>
-          {{ end }}
-          {{ end }}
-        </select>
-      </p>
+      <div class="form-row mb-4">
+        <div class="col-auto">
+          <input type="search" class="filter-search" placeholder="{{ i18n "search_placeholder" }}" autocapitalize="off"
+          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
+            <option value="*">{{ i18n "publication_type" }}</option>
+            {{ $pub_types := partial "functions/get_pub_types" $ }}
+            {{ range $index, $taxonomy := site.Taxonomies.publication_types }}
+            <option value=".pubtype-{{ (int $index) }}">
+              {{ index $pub_types (int $index) }}
+            </option>
+            {{ end }}
+          </select>
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters form-control form-control-sm" data-filter-group="year">
+            <option value="*">{{ i18n "date" }}</option>
+            {{ $years_sorted := $.Scratch.GetSortedMapValues "years" }}
+            {{ if $years_sorted }}
+            {{ range $year := sort $years_sorted "" "desc" }}
+            <option value=".year-{{ $year }}">
+              {{ $year }}
+            </option>
+            {{ end }}
+            {{ end }}
+          </select>
+        </div>
+      </div>
 
       <div id="container-publications">
         {{ range .Pages.ByDate.Reverse }}
@@ -52,15 +56,15 @@
           {{ $.Scratch.Set "pubtype" 0 }}
         {{ end }}
 
-        <div class="grid-sizer col-md-12 isotope-item pubtype-{{ $.Scratch.Get "pubtype" }} year-{{ .Date.Format "2006" }}">
-          {{ if eq $.Params.list_format 1 }}
-            {{ partial "publication_li_detailed" . }}
-          {{ else if eq $.Params.list_format 2 }}
-            {{ partial "publication_li_apa" . }}
-          {{ else if eq $.Params.list_format 3 }}
-            {{ partial "publication_li_mla" . }}
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-{{ $.Scratch.Get "pubtype" }} year-{{ .Date.Format "2006" }}">
+          {{ if eq $.Params.view 1 }}
+            {{ partial "li_list" . }}
+          {{ else if eq $.Params.view 3 }}
+            {{ partial "li_card" . }}
+          {{ else if eq $.Params.view 4 }}
+            {{ partial "li_citation" . }}
           {{ else }}
-            {{ partial "publication_li_simple" . }}
+            {{ partial "li_compact" . }}
           {{ end }}
         </div>
 
@@ -70,5 +74,5 @@
     </div>
   </div>
 </div>
-{{ partial "footer_container.html" . }}
-{{ partial "footer.html" . }}
+
+{{- end -}}

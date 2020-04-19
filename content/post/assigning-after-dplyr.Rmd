@@ -1,6 +1,7 @@
 ---
 title: Assigning after dplyr
-author: 'James'
+authors:
+- admin
 date: '2016-05-13'
 slug: assigning-after-dplyr
 categories: []
@@ -21,7 +22,7 @@ Chaining is particularly nice because it makes the code read like a story. For e
 
 ```{r, message = FALSE}
 library(dplyr)
-dat <- read.csv("http://jepusto.github.io/data/Mineo_2009_data.csv")
+dat <- read.csv("http://jepusto.com/data/Mineo_2009_data.csv")
 
 dat %>%
   group_by(Condition) %>%

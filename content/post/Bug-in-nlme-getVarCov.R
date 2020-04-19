@@ -11,16 +11,22 @@ gls_raw <- gls(follicles ~ sin(2*pi*Time) + cos(2*pi*Time), data = Ovary,
 Mares <- levels(gls_raw$groups)
 V_raw <- lapply(Mares, function(g) getVarCov(gls_raw, individual = g))
 
+
 Ovary_sorted <- Ovary[with(Ovary, order(Mare, Time)),]
 gls_sorted <- update(gls_raw, data = Ovary_sorted)
 
 V_sorted <- lapply(Mares, function(g) getVarCov(gls_sorted, individual = g))
+
 all.equal(gls_raw$modelStruct, gls_sorted$modelStruct)
+
 all.equal(V_raw, V_sorted)
+
 nlme:::getVarCov.gls
+
 identical(gls_raw$groups, gls_sorted$groups)
 identical(varWeights(gls_raw$modelStruct$varStruct), 
           varWeights(gls_sorted$modelStruct$varStruct))
+
 
 # proposed patch for getVarCov.gls
 
@@ -38,9 +44,11 @@ getVarCov_revised_gls <- function (obj, individual = 1, ...) {
     result
 }
 
+
 V_raw <- lapply(Mares, function(g) getVarCov_revised_gls(gls_raw, individual = g))
 V_sorted <- lapply(Mares, function(g) getVarCov_revised_gls(gls_sorted, individual = g))
 all.equal(V_raw, V_sorted)
+
 
 # proposed patch for getVarCov.lme
 
@@ -117,5 +125,7 @@ V_raw <- lapply(Mares, function(g) getVarCov_revised_lme(lme_raw, individual = g
 V_sorted <- lapply(Mares, function(g) getVarCov_revised_lme(lme_sorted, individual = g, type = "marginal"))
 all.equal(V_raw, V_sorted)
 
+
 sessionInfo()
+
 knitr::purl("Bug-in-nlme-getVarCov.Rmd", documentation=0L)

@@ -1,6 +1,7 @@
 ---
 title: "New article: Design-comparable effect sizes in multiple baseline designs: A general modeling framework"
-author: 'James'
+authors:
+- admin
 date: '2014-07-20'
 slug: design-comparable-effect-sizes-in-multiple-baseline-designs
 categories: []

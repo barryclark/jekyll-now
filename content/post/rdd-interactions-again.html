@@ -1,6 +1,7 @@
 ---
 title: Estimating average effects in regression discontinuities with covariate interactions
-author: 'James'
+authors:
+- admin
 date: '2016-01-27'
 slug: rdd-interactions-again
 categories: []
@@ -89,22 +90,22 @@ summary(RDestimate(as.formula(RD_form), data = RD_data_aug))</code></pre>
 ## sharp 
 ## 
 ## Estimates:
-##            Bandwidth  Observations  Estimate  Std. Error  z value
-## LATE       1.0894     1177          0.2923    0.10769     2.714  
-## Half-BW    0.5447      611          0.2041    0.14911     1.369  
-## Double-BW  2.1787     1832          0.2703    0.08447     3.200  
-##            Pr(&gt;|z|)    
-## LATE       0.006644  **
-## Half-BW    0.171103    
-## Double-BW  0.001374  **
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&gt;|z|) 
+## LATE       1.0894     1177          0.2981    0.10659     2.797    0.0051559
+## Half-BW    0.5447      611          0.2117    0.14846     1.426    0.1539482
+## Double-BW  2.1787     1832          0.2734    0.08305     3.292    0.0009949
+##               
+## LATE       ** 
+## Half-BW       
+## Double-BW  ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## F-statistics:
-##            F      Num. DoF  Denom. DoF  p       
-## LATE       31.24  7         1169        0.00e+00
-## Half-BW    13.84  7          603        2.22e-16
-## Double-BW  68.36  7         1824        0.00e+00</code></pre>
+##            F      Num. DoF  Denom. DoF  p
+## LATE       23.30  11        1165        0
+## Half-BW    10.97  11         599        0
+## Double-BW  47.41  11        1820        0</code></pre>
 <pre class="r"><code># or using lm
 lm_form &lt;- paste(&quot;Y ~ R + T + R:T + T*(&quot;, cov_names,&quot;)&quot;)
 lm_fit &lt;- lm(as.formula(lm_form), weights = w, data = subset(RD_data_aug, w &gt; 0))

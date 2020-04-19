@@ -1,6 +1,7 @@
 ---
 title: Special Education Pro-Sem
-author: 'James'
+authors:
+- admin
 date: '2015-11-24'
 slug: SPED-Pro-Sem-again
 categories: []

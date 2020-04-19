@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "en-us" }}">
+<head>
+  {{ $css := site.Data.assets.css }}
+  {{ $cdn_url_reveal := "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0" }}
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic {{ site.Data.academic.version }}">
+
+  <link rel="manifest" href="{{ "index.webmanifest" | relLangURL }}">
+  <link rel="icon" type="image/png" href="{{(partial "functions/get_icon" 32).RelPermalink}}">
+  <link rel="apple-touch-icon" type="image/png" href="{{(partial "functions/get_icon" 192).RelPermalink}}">
+
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <title>{{ .Title }} | {{ site.Title }}</title>
+
+  <link rel="stylesheet" href="{{ $cdn_url_reveal }}/css/reveal.min.css">
+  {{- $theme := $.Param "slides.theme" | default "black" -}}
+  <link rel="stylesheet" href="{{ $cdn_url_reveal }}/css/theme/{{ $theme }}.min.css">
+
+  {{- $highlight_style := $.Param "slides.highlight_style" | default "dracula" -}}
+  {{ printf "<link rel=\"stylesheet\" href=\"%s\" crossorigin=\"anonymous\">" (printf $css.highlight.url $css.highlight.version $highlight_style) | safeHTML }}
+
+  {{ $css := resources.Get "css/reveal.css" }}
+  {{ $css_custom := resources.Get "css/reveal_custom.css" }}
+  {{ $style := slice $css $css_custom | resources.Concat "css/reveal_custom.css" | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '{{ $cdn_url_reveal }}/css/print/pdf.css' : '{{ $cdn_url_reveal }}/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+</head>
+<body>
+
+  {{ block "main" . }}{{ end }}
+
+  <script src="{{ $cdn_url_reveal }}/js/reveal.min.js"></script>
+
+  <script>
+    window.revealPlugins = { dependencies: [
+      // Interpret Markdown in <section> elements.
+      { src: '{{ $cdn_url_reveal }}/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '{{ $cdn_url_reveal }}/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      // Enable code highlighting.
+      { src: '{{ $cdn_url_reveal }}/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      // Enable zooming.
+      { src: '{{ $cdn_url_reveal }}/plugin/zoom-js/zoom.js', async: true },
+      // Enable math.
+      { src: '{{ $cdn_url_reveal }}/plugin/math/math.js', async: true },
+      // Enable exporting deck to PDF.
+      { src: '{{ $cdn_url_reveal }}/plugin/print-pdf/print-pdf.js', async: true },
+      // Enable speaker notes. Notes plugin must be loaded locally as CDN is missing `notes.html`.
+      { src: '{{ "js/vendor/reveal.js/plugin/notes/notes.js" | relURL }}', async: true }
+    ]};
+
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true };
+    let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
+    Reveal.initialize(revealOptions);
+  </script>
+
+</body>
+</html>

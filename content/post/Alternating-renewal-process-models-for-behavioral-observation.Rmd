@@ -1,6 +1,7 @@
 ---
 title: "New article: Alternating renewal process models for behavioral observation"
-author: 'James'
+authors:
+- admin
 date: '2014-10-16'
 slug: 
 categories: []

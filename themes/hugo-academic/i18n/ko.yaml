@@ -1,100 +1,130 @@
-# Navigation
-
 - id: toggle_navigation
   translation: 네비게이션
-
-# Buttons
-
-- id: btn_details
-  translation: 상세 사항
-
+- id: table_of_contents
+  translation: 차례
+- id: on_this_page
+  translation: 이 페이지
+- id: back_to_top
+  translation: 맨 위로
+- id: related
+  translation: 관련문서
+- id: minute_read
+  translation: 분 읽기
+- id: previous
+  translation: 이전
+- id: next
+  translation: 다음
+- id: figure
+  translation: '그림 %d:'
+- id: btn_preprint
+  translation: 출판 전 논문
 - id: btn_pdf
   translation: PDF
-
+- id: btn_cite
+  translation: 인용
 - id: btn_slides
-  translation: 슬라이드
-
+  translation: 발표자료
 - id: btn_video
   translation: 비디오
-
 - id: btn_code
-  translation: 코드
-
+  translation: 소스코드
 - id: btn_dataset
-  translation: 데이터세트
-
+  translation: 데이터셋
 - id: btn_project
   translation: 프로젝트
-
-# About widget
-
+- id: btn_poster
+  translation: 포스터
+- id: btn_source
+  translation: 원본문서
+- id: btn_copy
+  translation: 복사
+- id: btn_download
+  translation: 다운로드
 - id: interests
   translation: 관심분야
-
 - id: education
-  translation: 교육
-
-# Publications widget
-
-- id: more_publications
-  translation: 논문 더 보기
-
-# Posts widget
-
-- id: continue_reading
-  translation: 글 내용 전체보기
-
+  translation: 학위
+- id: user_profile_latest
+  translation: 최신
+- id: see_certificate
+  translation: 증서 보기
+- id: present
+  translation: 현재
+- id: more_pages
+  translation: 전체 보기
 - id: more_posts
   translation: 포스트 더 보기
-
-# Talks widget
-
 - id: more_talks
-  translation: More Talks
-
-# Publication/Talk details
-
+  translation: 강연 더 보기
+- id: more_publications
+  translation: 논문 더 보기
+- id: contact_name
+  translation: 이름
+- id: contact_email
+  translation: 이메일
+- id: contact_message
+  translation: 메시지
+- id: contact_send
+  translation: 보내기
+- id: book_appointment
+  translation: 일정 약속
 - id: abstract
   translation: 초록
-
 - id: publication
   translation: 발행기관
-
 - id: publication_type
-  translation: 출판 형태
-
+  translation: 출판유형
 - id: date
   translation: 날짜
-
-- id: links
-  translation: 링크
-
+- id: last_updated
+  translation: 마지막 업데이트
 - id: event
   translation: 이벤트
-
 - id: location
   translation: 장소
-
-# Filtering
-
-- id: filter_by_type
-  translation: 종류별로 필터
-
-- id: filter_all
-  translation: 전부
-
-# Project details
-
+- id: pub_uncat
+  translation: 분류되지 않음
+- id: pub_conf
+  translation: 학술 대회 논문
+- id: pub_journal
+  translation: 저널 논문
+- id: pub_preprint
+  translation: 출판 전 논문
+- id: pub_report
+  translation: 보고서
+- id: pub_book
+  translation: 도서
+- id: pub_book_section
+  translation: 책 소개 면
+- id: pub_thesis
+  translation: 졸업 논문
+- id: pub_patent
+  translation: 특허
 - id: open_project_site
-  translation: 프로젝트 사이트로 가기
-
-# Default node titles
-
+  translation: 프로젝트 사이트 열기
 - id: posts
   translation: 포스트
-
 - id: publications
   translation: 논문
-
 - id: talks
   translation: 강연
+- id: projects
+  translation: 프로젝트
+- id: search
+  translation: 검색
+- id: search_placeholder
+  translation: 검색...
+- id: search_results
+  translation: 검색 결과
+- id: search_no_results
+  translation: 검색 결과 없음
+- id: page_not_found
+  translation: 페이지 없음
+- id: 404_recommendations
+  translation: 이 중에 찾는게 있나요?
+- id: cookie_message
+  translation: 이 사이트는 최적화된 사용 경험을 제공하기 위해 쿠키를 사용합니다.
+- id: cookie_dismiss
+  translation: 알겠어!
+- id: cookie_learn
+  translation: 더 알아보기

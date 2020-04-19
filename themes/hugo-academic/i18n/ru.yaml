@@ -1,100 +1,130 @@
-# Navigation
-
 - id: toggle_navigation
   translation: Переключить навигацию
-
-# Buttons
-
-- id: btn_details
-  translation: Подробнее
-
+- id: table_of_contents
+  translation: Содержание
+- id: on_this_page
+  translation: На этой странице
+- id: back_to_top
+  translation: На верх
+- id: related
+  translation: Похожие
+- id: minute_read
+  translation: мин. для прочтения
+- id: previous
+  translation: Предыдущий
+- id: next
+  translation: Следующий
+- id: figure
+  translation: 'Схема № %d:'
+- id: btn_preprint
+  translation: Предварительная печать
 - id: btn_pdf
   translation: PDF
-
+- id: btn_cite
+  translation: Процитировать
 - id: btn_slides
   translation: Слайды
-
 - id: btn_video
   translation: Видео
-
 - id: btn_code
   translation: Код
-
 - id: btn_dataset
   translation: Набор данных
-
 - id: btn_project
   translation: Проект
-
-# About widget
-
+- id: btn_poster
+  translation: Постер
+- id: btn_source
+  translation: Исходный документ
+- id: btn_copy
+  translation: Копия
+- id: btn_download
+  translation: Скачать
 - id: interests
   translation: Интересы
-
 - id: education
   translation: Образование
-
-# Publications widget
-
-- id: more_publications
-  translation: Больше публикаций
-
-# Posts widget
-
-- id: continue_reading
-  translation: Читать далее
-
+- id: user_profile_latest
+  translation: Последние
+- id: see_certificate
+  translation: Посмотреть сертификат
+- id: present
+  translation: Настоящий
+- id: more_pages
+  translation: Посмотреть всё
 - id: more_posts
   translation: Больше статей
-
-# Talks widget
-
 - id: more_talks
   translation: Больше выступлений
-
-# Publication/Talk details
-
+- id: more_publications
+  translation: Больше публикаций
+- id: contact_name
+  translation: Имя
+- id: contact_email
+  translation: адрес электронной почты
+- id: contact_message
+  translation: Сообщение
+- id: contact_send
+  translation: Отправить
+- id: book_appointment
+  translation: Назначить встречу
 - id: abstract
   translation: Аннотация
-
 - id: publication
   translation: Публикация
-
 - id: publication_type
-  translation: Тип
-
+  translation: Тип публикации
 - id: date
   translation: Дата
-
-- id: links
-  translation: Ссылки
-
+- id: last_updated
+  translation: Обновлено
 - id: event
   translation: Событие
-
 - id: location
   translation: Место
-
-# Filtering
-
-- id: filter_by_type
-  translation: Фильтровать по типу
-
-- id: filter_all
-  translation: Все
-
-# Project details
-
+- id: pub_uncat
+  translation: Без категории
+- id: pub_conf
+  translation: Статья для конференции
+- id: pub_journal
+  translation: Статья для журнала
+- id: pub_preprint
+  translation: Предварительная печать
+- id: pub_report
+  translation: Выступление
+- id: pub_book
+  translation: Книга
+- id: pub_book_section
+  translation: Глава книги
+- id: pub_thesis
+  translation: Тезис
+- id: pub_patent
+  translation: Патент
 - id: open_project_site
   translation: Перейти на сайт проекта
-
-# Section titles
-
 - id: posts
   translation: Статьи
-
 - id: publications
   translation: Публикации
-
 - id: talks
   translation: Выступления
+- id: projects
+  translation: Проекты
+- id: search
+  translation: Поиск
+- id: search_placeholder
+  translation: Поиск ...
+- id: search_results
+  translation: результат найден
+- id: search_no_results
+  translation: результат не найден
+- id: page_not_found
+  translation: Страница не найдена
+- id: 404_recommendations
+  translation: Вы наверное искали один из тезисов?
+- id: cookie_message
+  translation: Для комфорной навигации на этом сайте используются куки (cookies).
+- id: cookie_dismiss
+  translation: Понял!
+- id: cookie_learn
+  translation: Узнать больше

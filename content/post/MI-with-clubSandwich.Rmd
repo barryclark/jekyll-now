@@ -1,6 +1,7 @@
 ---
 title: Pooling clubSandwich results across multiple imputations
-author: 'James'
+authors:
+- admin
 date: '2017-09-27'
 slug: MI-with-clubSandwich
 categories: []
@@ -78,9 +79,8 @@ If cluster dependence were no concern, we could simply use the model-based stand
 with(data = Impute_bdf, 
      lm(aritPOST ~ aritPRET + langPRET + sex + ses)
      ) %>%
-  pool(method = "Rubin") %>%
-  summary() %>%
-  round(3)
+  pool() %>%
+  summary()
 ```
 
 However, this approach ignores the possibility of correlation in the errors of units in the same cluster, which is clearly a concern in this dataset:
@@ -214,9 +214,8 @@ with(data = Impute_bdf,
      lm(aritPOST ~ aritPRET + langPRET + sex + ses) %>% 
      robustify()
      ) %>%
-  pool(method = "Rubin") %>%
-  summary() %>%
-  round(3)
+  pool() %>%
+  summary()
 ```
 
 It is instructive to compare the calculated `df` to `eta_bar` and `df_m`: 

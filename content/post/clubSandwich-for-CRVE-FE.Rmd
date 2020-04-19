@@ -1,6 +1,7 @@
 ---
 title: Clustered standard errors and hypothesis tests in fixed effects models
-author: 'James'
+authors:
+- admin
 date: '2016-01-10'
 slug: clubSandwich-for-CRVE-FE
 categories: []

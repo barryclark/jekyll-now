@@ -1,6 +1,7 @@
 ---
 title: The multivariate delta method
-author: 'James'
+authors:
+- admin
 date: '2018-04-11'
 slug: Multivariate-delta-method
 categories: []

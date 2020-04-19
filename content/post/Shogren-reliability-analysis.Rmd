@@ -1,7 +1,8 @@
 ---
 title: "Reliability of UnGraphed single-case data: An example using the Shogren dataset"
 date: '2013-10-23'
-author: 'James'
+authors:
+- admin
 slug: Shogren-reliability-analysis
 categories: []
 tags:
@@ -14,7 +15,7 @@ In one example from my dissertation, I re-analyzed a systematic review by Shogre
 As it turned out, [Wim Van Den Noortgate](http://www.kuleuven.be/wieiswie/en/person/00006844) and [Patrick Onghena](http://www.kuleuven.be/wieiswie/en/person/00015697) followed a similar procedure in analyzing the same systematic review (reported in Van Den Noorgate & Onghena, 2008). Wim and Patrick were kind enough to share their data so that I could calculate the reliability of this data extraction procedure, based on the two independent replications. After some initial data-munging, I arrived at a [clean, merged dataset]({{site.url}}/data/Shogren_data_merged.csv): 
 
 ```{r}
-Shogren <- read.csv("http://jepusto.github.io/data/Shogren_data_merged.csv")
+Shogren <- read.csv("http://jepusto.com/data/Shogren_data_merged.csv")
 head(Shogren)
 ```
 
@@ -88,7 +89,7 @@ Z_inv <- function(x) (exp(2 * x) - 1) / (exp(2 * x) + 1)
 
 The average effect size corresponds to a reliability of `r Z_inv(rma_Z$b)` (95% CI: [`r Z_inv(rma_Z$ci.lb)`,`r Z_inv(rma_Z$ci.ub)`]). The reliabilities are heterogeneous, but because they are all at the extreme of the scale, the heterogeneity has little practical implication: approximating the population of reliabilities by a normal distribution, and based on the RML estimates, `r with(rma_Z, 100 * round(1 - pnorm((Fisher_Z(0.99) - b) / sqrt(tau2)), 2))` percent of reliabilities will be greater than 0.9900. Though one could certainly imagine factors that might explain the variation in reliabilities--the resolution of the image file from which the data were captured, the size of the points used to graph each measurement, the number of outcomes represented on the same graph--it hardly seems worth exploring further because all of the reliabilities are so high. These results are very similar to those reported by Shadish, et al. (2009), who found a median reliability of 0.9993 based on a similar study of 91 single-case graphs.
 
-References
+# References
 
 * Hedges, L. V, Hedberg, E. C., & Kuyper, A. M. (2012). The variance of intraclass correlations in three- and four-level models. Educational and Psychological Measurement. doi:10.1177/0013164412445193
 

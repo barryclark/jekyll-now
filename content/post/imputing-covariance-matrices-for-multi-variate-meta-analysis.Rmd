@@ -1,6 +1,7 @@
 ---
 title: Imputing covariance matrices for meta-analysis of correlated effects
-author: 'James'
+authors:
+- admin
 date: '2017-08-10'
 slug: imputing-covariance-matrices-for-multi-variate-meta-analysis
 categories: []

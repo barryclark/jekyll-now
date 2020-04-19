@@ -1,6 +1,7 @@
 ---
 title: Standard errors and confidence intervals for NAP
-author: 'James'
+authors:
+- admin
 date: '2016-02-28'
 slug: NAP-SEs-and-CIs
 categories: []

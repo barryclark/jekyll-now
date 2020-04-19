@@ -1,32 +1,65 @@
 {{ $ := .root }}
 {{ $page := .page }}
-{{ $header := $page.Params.header }}
+{{ $bg := $page.Params.design.background }}
 
-<section id="{{ $page.File.TranslationBaseName }}" class="hero-overlay" style="
-{{ if $header.overlay_color }}
-background-color: {{ $header.overlay_color | default "transparent" }};
+{{ if $page.Params.hero_media }}
+<div class="row">
+  <div class="col-md-6 order-md-1 text-center text-md-left">
 {{ end }}
-{{ if $header.overlay_img }}
-background-image:
-{{ if $header.overlay_filter }}linear-gradient(rgba(0, 0, 0, {{ $header.overlay_filter }}), rgba(0, 0, 0, {{ $header.overlay_filter }})), {{ end }}
-url('{{ printf "img/%s" $header.overlay_img | absURL}}');
-{{ end }}
-;">
 
-  <div class="container">
-
-    <h1 class="hero-title" itemprop="headline">
+    <h1 class="hero-title">
       {{ with $page.Title }}{{ . | markdownify }}{{ end }}
     </h1>
 
     {{ with $page.Content }}
-    <p class="hero-lead">{{ . | markdownify }}</p>
+    <div class="hero-lead">{{ . }}</div>
     {{ end }}
 
+    {{/* Call-to-action link */}}
     {{ if $page.Params.cta.url }}
-    <p><a href="{{ $page.Params.cta.url }}" class="btn btn-light btn-outline btn-large">{{ $page.Params.cta.label | safeHTML}}</a></p>
+      {{ $pack := or $page.Params.cta.icon_pack "fas" }}
+      {{ $pack_prefix := $pack }}
+      {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+        {{ $pack_prefix = "fa" }}
+      {{ end }}
+      {{ $link := $page.Params.cta.url }}
+      {{ $scheme := (urls.Parse $link).Scheme }}
+      {{ $target := "" }}
+      {{ if not $scheme }}
+        {{ $link = $link | relLangURL }}
+      {{ else if in (slice "http" "https") $scheme }}
+        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+      {{ end }}
+    <p class="cta-btns">
+      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="btn {{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn-lg">{{ if $page.Params.cta.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $page.Params.cta.icon }} pr-1" aria-hidden="true"></i>{{end}}{{ $page.Params.cta.label | markdownify | emojify | safeHTML }}</a>
+
+      {{/* Alternative Call-to-action link */}}
+      {{ if $page.Params.cta_alt.url }}
+        {{ $link := $page.Params.cta_alt.url }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = $link | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="hero-cta-alt pl-4">{{ $page.Params.cta_alt.label | markdownify | emojify | safeHTML }} <i class="fas fa-angle-right"></i></a>
+      {{ end }}
+    </p>
     {{ end }}
 
-  </div>
+    {{/* Call-to-action note */}}
+    {{ with $page.Params.cta_note }}
+    <p class="hero-note text-muted mb-0">
+      {{ .label | markdownify | emojify | safeHTML }}
+    </p>
+    {{ end }}
 
-</section>
+  {{/* Hero image */}}
+  {{ if $page.Params.hero_media }}
+  </div>
+  <div class="col-6 mx-auto col-md-6 order-md-2 hero-media">
+    <img src="{{ printf "img/%s" $page.Params.hero_media | relURL }}" alt="">
+  </div>
+</div>
+{{ end }}

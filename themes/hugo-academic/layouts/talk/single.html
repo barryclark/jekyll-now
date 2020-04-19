@@ -1,99 +1,66 @@
-{{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
-<div class="pub" itemscope itemtype="http://schema.org/Event">
+{{- define "main" -}}
 
-  {{ partial "header_image.html" . }}
+<div class="pub">
+
+  {{ partial "page_header.html" . }}
 
   <div class="article-container">
 
-    <div class="pub-title">
-      <h1 itemprop="name">{{ .Title }}</h1>
-      <span class="pub-authors" itemprop="author">
-        {{ with .Params.authors }}
-        {{ delimit . ", " }}
-        {{ end }}
-      </span>
-      <span class="pull-right">
-        {{ partial "share.html" . }}
-      </span>
-    </div>
-
     {{ if .Params.abstract }}
       <h3>{{ i18n "abstract" }}</h3>
-      <p class="pub-abstract" itemprop="text">{{ .Params.abstract | markdownify }}</p>
+      <p class="pub-abstract">{{ .Params.abstract | markdownify | emojify }}</p>
     {{ else }}
       <br>
     {{ end }}
 
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
         <div class="row">
-          <div class="col-xs-12 col-sm-3 pub-row-heading">{{ i18n "date" }}</div>
-          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            {{ $date := .Params.time_start | default .Date }}
-            {{ (time $date).Format $.Site.Params.date_format }}
-            <div class="talk-time">
-              {{ if $.Site.Params.talks.time }}
-                {{ (time $date).Format ($.Site.Params.time_format | default "3:04 PM") }}
-                {{ with .Params.time_end }}
-                  &mdash; {{ (time .).Format ($.Site.Params.time_format | default "3:04 PM") }}
-                {{ end }}
-              {{ end }}
-            </div>
+          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "date" }}</div>
+          <div class="col-12 col-md-9">
+            {{ partial "functions/get_event_dates" . }}
           </div>
         </div>
       </div>
-      <div class="col-sm-1"></div>
+      <div class="col-md-1"></div>
     </div>
-    <div class="visible-xs space-below"></div>
+    <div class="d-md-none space-below"></div>
 
+    {{ if .Params.event }}
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
         <div class="row">
-          <div class="col-xs-12 col-sm-3 pub-row-heading">{{ i18n "event" }}</div>
-          <div class="col-xs-12 col-sm-9">
+          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "event" }}</div>
+          <div class="col-12 col-md-9">
             {{ with .Params.event_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
             {{ .Params.event | markdownify }}
             {{ if .Params.event_url }}</a>{{ end }}
           </div>
         </div>
       </div>
-      <div class="col-sm-1"></div>
+      <div class="col-md-1"></div>
     </div>
-    <div class="visible-xs space-below"></div>
-
-    {{ with .Params.location }}
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 pub-row-heading">{{ i18n "location" }}</div>
-          <div class="col-xs-12 col-sm-9">{{ . | markdownify }}</div>
-        </div>
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-    <div class="visible-xs space-below"></div>
+    <div class="d-md-none space-below"></div>
     {{ end }}
 
-    {{ if .Params.url_pdf | or .Params.url_slides | or .Params.url_video | or .Params.url_code | or .Params.projects | or .Params.url_custom }}
-    <div class="row" style="padding-top: 10px">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+    {{ if .Params.location }}
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
         <div class="row">
-          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">{{ i18n "links" }}</div>
-          <div class="col-xs-12 col-sm-9">
-
-            {{ partial "talk_links" (dict "content" . "is_list" 0) }}
-
-          </div>
+          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "location" }}</div>
+          <div class="col-12 col-md-9">{{ .Params.location | markdownify }}</div>
+          {{ if .Params.address }}
+            <div class="col-md-3"></div>
+            <div class="col-12 col-md-9">{{partial "functions/get_address" (dict "root" . "address" .Params.address) }}</div>
+          {{end}}
         </div>
       </div>
-      <div class="col-sm-1"></div>
+      <div class="col-md-1"></div>
     </div>
-    <div class="visible-xs space-below"></div>
+    <div class="d-md-none space-below"></div>
     {{ end }}
 
     <div class="space-below"></div>
@@ -102,16 +69,8 @@
       {{ .Content }}
     </div>
 
-    {{ partial "tags.html" . }}
+    {{ partial "page_footer" . }}
 
   </div>
 </div>
-
-{{ if .Site.Params.section_pager }}
-<div class="article-container article-widget">
-  {{ partial "section_pager.html" . }}
-</div>
-{{ end }}
-
-{{ partial "footer_container.html" . }}
-{{ partial "footer.html" . }}
+{{- end -}}

@@ -1,6 +1,7 @@
 ---
 title: Simulation studies in R (Fall, 2016 version)
-author: 'James'
+authors:
+- admin
 date: '2016-09-28'
 slug: Simulation-studies-in-R-2016
 categories: []

@@ -1,6 +1,7 @@
 ---
 title: Standard errors and confidence intervals for NAP
-author: 'James'
+authors:
+- admin
 date: '2016-02-28'
 slug: NAP-SEs-and-CIs
 categories: []
@@ -59,7 +60,7 @@ NAP(yA, yB)</code></pre>
 <p><span class="math display">\[
 \text{SE}_{null} = \sqrt{\frac{m + n + 1}{12 m n}}
 \]</span></p>
-<p>(cf. <a href="http://dx.doi.org/10.1037/1082-989X.6.2.135">Grissom &amp; Kim, 2001, p. 141</a>). However, even the latter formula is not always correct. It is valid only when the observations are all mutually independent and when the treatment phase data are drawn from the same distribution as the baseline phase data—that is, when the treatment has no effect on the outcome. I’ve therefore denoted it as <span class="math inline">\(\text{SE}_{null}\)</span>.</p>
+<p>(cf. <a href="http://dx.doi.org/10.1037/1082-989X.6.2.135">Grissom &amp; Kim, 2001, p. 141</a>). However, even the latter formula is not always correct. It is valid only when the observations are all mutually independent and when the treatment phase data are drawn from the same distribution as the baseline phase data—that is, when the treatment has no effect on the outcome. I’ve therefore denoted it as <span class="math inline">\(\text{SE}_{null}\)</span>.</p>
 <div id="other-standard-error-estimators" class="section level3">
 <h3>Other standard error estimators</h3>
 <p>Because an equivalent effect size measure is used in other contexts like clinical medicine, there has actually been a fair bit of research into better approaches for assessing the uncertainty in NAP. <a href="http://dx.doi.org/10.1148/radiology.143.1.7063747">Hanley and McNeil (1982)</a> proposed an estimator for the sampling variance of NAP that is designed for continuous outcome measures, where exact ties are impossible. Modifying it slightly (and in entirely ad hoc fashion) to account for ties, let</p>
@@ -143,7 +144,7 @@ ggplot(NAP_sim, aes(theta, val, color = sd)) +
   facet_grid(n ~ m, labeller = &quot;label_both&quot;) + 
   geom_line() + 
   theme_bw() + theme(legend.position = &quot;bottom&quot;)</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/unnamed-chunk-2-1.png" width="960" /></p>
+<p><img src="/post/NAP-SEs-and-CIs_files/figure-html/unnamed-chunk-2-1.png" width="960" /></p>
 <p>In the above figure, the actual sampling standard deviation of NAP (in red) and the value of <span class="math inline">\(\text{SE}_{null}\)</span> (in purple) are plotted against the true value of <span class="math inline">\(\theta\)</span>, with separate plots for various combinations of <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>. The expected value of the standard errors <span class="math inline">\(\text{SE}_{HM}\)</span> and <span class="math inline">\(\text{SE}_{New}\)</span> (actually the square root of the expectation of the variance estimators) are depicted in green and blue, respectively. The value of <span class="math inline">\(\text{SE}_{null}\)</span> agrees with the actual standard error when <span class="math inline">\(\delta = 0\)</span>, but the two diverge when there is a positive treatment effect. It appears that <span class="math inline">\(\text{SE}_{HM}\)</span> and <span class="math inline">\(\text{SE}_{New}\)</span> both under-estimate the actual standard error when <span class="math inline">\(m\)</span> or <span class="math inline">\(n\)</span> is equal to 5, and over-estimate for the largest values of <span class="math inline">\(\theta\)</span>. However, both of these estimators offer a marked improvement over <span class="math inline">\(\text{SE}_{null}\)</span>.</p>
 </div>
 </div>
@@ -235,7 +236,7 @@ params %&gt;%
   labs(y = &quot;SE&quot;) + 
   geom_hline(yintercept=.90, linetype=&quot;dashed&quot;) +
   theme_bw() + theme(legend.position = &quot;bottom&quot;)</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/unnamed-chunk-4-1.png" width="960" /></p>
+<p><img src="/post/NAP-SEs-and-CIs_files/figure-html/unnamed-chunk-4-1.png" width="960" /></p>
 <p>The figure above plots the coverage rates of several different confidence intervals for <span class="math inline">\(\theta\)</span>: the naive CI (in blue), the HM Wald CI (red), the Newcombe Wald CI (green), and the Newcombe score CI (purple). The dashed horizontal line is the nominal coverage rate of 90%. It can be seen that the null CI has the correct coverage only when <span class="math inline">\(\theta \leq .6\)</span>; for larger values of <span class="math inline">\(\theta\)</span>, its coverage becomes too conservative (tending towards 100%). The Wald-type CIs have below-nominal coverage rates, which improve as the sample size in each phase increases but remain too liberal even at the largest sample size considered. Finally, Newcombe’s score CI maintains close-to-nominal coverage over a wider range of <span class="math inline">\(\theta\)</span> values. Although these CIs have below-nominal coverage for the smallest sample sizes, they generally have good coverage for <span class="math inline">\(\theta &lt; .9\)</span> and when the sample size in each phase is 10 or more. It is also notable that their coverage rates appear to become more accurate as the sample size in a given group increases, even if the sample size in the other group is fairly small and remains constant.</p>
 </div>
 </div>

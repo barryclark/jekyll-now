@@ -1,6 +1,7 @@
 ---
 title: To what extent does partial interval recording over-estimate prevalence?
-author: 'James'
+authors:
+- admin
 date: '2013-10-26'
 slug: PIR-overestimates-prevalence
 categories: []
@@ -43,7 +44,8 @@ CDR &lt;- continuous_duration_recording(BS)</code></pre>
 <p>To check that the CDR procedure is unbiased, I’ll plot the CDR data versus the true value of prevalence, and run a smoothing line through the cloud of data-points:</p>
 <pre class="r"><code>library(ggplot2)
 qplot(x = phi, y = CDR, geom = &quot;point&quot;) + geom_smooth(method = &quot;loess&quot;)</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/CDR_bias-1.png" width="672" /></p>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/post/PIR-overestimates-prevalence_files/figure-html/CDR_bias-1.png" width="672" /></p>
 <p>The blue line is nearly identical to the line <code>y = x</code>, meaning that the average of CDR data is equal to prevalence. Good news–the software appears to be working correctly!</p>
 </div>
 <div id="partial-interval-recording" class="section level2">
@@ -54,7 +56,8 @@ qplot(x = phi, y = CDR, geom = &quot;point&quot;) + geom_smooth(method = &quot;l
 qplot(x = phi, y = PIR, geom = &quot;point&quot;, ylim = c(-0.02,1.02)) + 
   geom_smooth(method = &quot;loess&quot;, se = FALSE) + 
   geom_abline(intercept = 0, slope = 1, linetype = &quot;dashed&quot;)</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/PIR_bias-1.png" width="672" /></p>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/post/PIR-overestimates-prevalence_files/figure-html/PIR_bias-1.png" width="672" /></p>
 <p>The blue line indicates the average value of PIR data across the simulations for a given value of prevalence. The dashed line indicates <code>y = x</code>, so clearly PIR data over-estimates prevalence.</p>
 <p>Previous studies in the Applied Behavior Analysis literature have taken a slightly different approach to thinking about over-estimation. Rather than comparing PIR data to the prevalence parameter <span class="math inline">\(\phi\)</span>, PIR data is instead compared to the <em>sample</em> value of prevalence, which is equivalent to the CDR proportion. Following this logic, I apply the PIR and CDR procedures to the same simulated behavior streams, then plot PIR versus CDR.</p>
 <pre class="r"><code>obs_data &lt;- reported_observations(BS, data_types = c(&quot;C&quot;,&quot;P&quot;), interval_length = 20, rest_length = 5)
@@ -62,7 +65,8 @@ qplot(x = phi, y = PIR, geom = &quot;point&quot;, ylim = c(-0.02,1.02)) +
 qplot(x = CDR, y = PIR, data = obs_data, geom = &quot;point&quot;, ylim = c(-0.02,1.02)) + 
   geom_smooth(method = &quot;loess&quot;, se = FALSE) + 
   geom_abline(intercept = 0, slope = 1, linetype = &quot;dashed&quot;)</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/PIR_CDR-1.png" width="672" /></p>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/post/PIR-overestimates-prevalence_files/figure-html/PIR_CDR-1.png" width="672" /></p>
 <p>The blue fitted line is slightly different than with the other approach, but the general conclusion is the same: PIR data over-estimates prevalence.</p>
 <p>But by how much? That’s actually a tricky question to answer, because the extent of the bias depends on a bunch of factors:</p>
 <ul>
@@ -80,7 +84,9 @@ obs_data &lt;- cbind(obs_data, PIR_25)
 qplot(x = CDR, y = PIR, data = obs_data, geom = &quot;smooth&quot;, method = &quot;loess&quot;, ylim = c(-0.02,1.02)) + 
   geom_smooth(aes(y = PIR_25), method = &quot;loess&quot;, se = FALSE, col = &quot;red&quot;) + 
   geom_abline(intercept = 0, slope = 1, linetype = &quot;dashed&quot;)</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/PIR_length-1.png" width="672" /></p>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;
+## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/post/PIR-overestimates-prevalence_files/figure-html/PIR_length-1.png" width="672" /></p>
 <p>The red line indicates that the longer interval time leads to a larger degree of over-estimation. (For clarity, I’ve removed the points in the scatter-plot.)</p>
 </div>
 <div id="interim-time-distribution" class="section level4">
@@ -97,7 +103,8 @@ obs_gam$F_lambda &lt;- &quot;Gamma(3)&quot;
 obs_data &lt;- rbind(obs_exp, obs_gam)
 qplot(x = C, y = P, color = F_lambda, 
       data = obs_data, geom = &quot;smooth&quot;, method = &quot;loess&quot;, se = FALSE, ylim = c(-0.02, 1.02))</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/PIR_interim_dist-1.png" width="768" /></p>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/post/PIR-overestimates-prevalence_files/figure-html/PIR_interim_dist-1.png" width="768" /></p>
 <p>The gamma(3) interim time distribution leads to a slightly larger positive bias.</p>
 </div>
 </div>

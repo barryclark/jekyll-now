@@ -1,6 +1,7 @@
 ---
 title: A handmade clubSandwich for multi-site trials
-author: James
+authors:
+- admin
 date: '2019-03-09'
 draft: true
 slug: clustered-and-interacted
@@ -72,6 +73,9 @@ STAR_urban %&gt;%
 <p>After these exclusions, the data include a total of 1810 students from 23 schools, ranging in size from 34 to 134 students.</p>
 <p>For starters, let’s get the average impacts using a seeming unrelated regression specification, with both conventional and clubSandwich standard errors.</p>
 <pre class="r"><code>library(clubSandwich)</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;clubSandwich&#39;:
+##   method    from    
+##   bread.mlm sandwich</code></pre>
 <pre class="r"><code>STAR_wt &lt;- lm(cbind(readk, mathk) ~ 0 + schoolidk + stark, weights = wt, data = STAR_urban)
 
 # conventional SEs
@@ -81,9 +85,9 @@ CR0 &lt;-
             test = &quot;z&quot;,
             coefs = c(&quot;readk:starksmall&quot;,&quot;mathk:starksmall&quot;))
 CR0</code></pre>
-<pre><code>##               Coef Estimate   SE p-val (z) Sig.
-## 1 readk:starksmall     6.21 3.13    0.0473    *
-## 2 mathk:starksmall    12.47 5.58    0.0254    *</code></pre>
+<pre><code>##              Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 readk:starksmall     6.21 3.13   1.98    0.0473    *
+## 2 mathk:starksmall    12.47 5.58   2.23    0.0254    *</code></pre>
 <pre class="r"><code># clubSandwich SEs
 CR2 &lt;- 
   coef_test(STAR_wt, vcov = &quot;CR2&quot;, 
@@ -91,9 +95,9 @@ CR2 &lt;-
             coefs = c(&quot;readk:starksmall&quot;,&quot;mathk:starksmall&quot;))
 
 CR2</code></pre>
-<pre><code>##               Coef Estimate   SE d.f. p-val (Satt) Sig.
-## 1 readk:starksmall     6.21 2.70   19       0.0332    *
-## 2 mathk:starksmall    12.47 4.79   19       0.0174    *</code></pre>
+<pre><code>##              Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 readk:starksmall     6.21 2.70    2.3   19       0.0332    *
+## 2 mathk:starksmall    12.47 4.79    2.6   19       0.0174    *</code></pre>
 <p>Now I’ll do it “by hand”—or rather, with a bit of <code>dplyr</code>:</p>
 <pre class="r"><code># summary statistics by site
 

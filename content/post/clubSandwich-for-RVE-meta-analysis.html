@@ -1,6 +1,7 @@
 ---
 title: The clubSandwich package for meta-analysis with RVE
-author: 'James'
+authors:
+- admin
 date: '2015-07-10'
 slug: clubSandwich-for-RVE-meta-analysis
 categories: []
@@ -17,14 +18,17 @@ header:
 
 <p>I’ve recently been working on small-sample correction methods for hypothesis tests in linear regression models with cluster-robust variance estimation. My colleague (and grad-schoolmate) Beth Tipton has developed small-sample adjustments for t-tests (of single regression coefficients) in the context of meta-regression models with robust variance estimation, and together we have developed methods for multiple-contrast hypothesis tests. We have an R package (called <code>clubSandwich</code>) that implements all this stuff, not only for meta-regression models but also for other models and contexts where cluster-robust variance estimation is often used.</p>
 <p>The alpha-version of the package is currently <a href="https://github.com/jepusto/clubSandwich">available on Github</a>. See the Github README for instructions on how to install it in R. Below I demonstrate how to use the package to get robust variance estimates, t-tests, and F-tests, all with small-sample corrections. The example uses a dataset of effect sizes from a Campbell Collaboration <a href="http://www.campbellcollaboration.org/lib/project/158/">systematic review of dropout prevention programs</a>, conducted by Sandra Jo Wilson and her colleagues.</p>
-<p>The original analysis included a meta-regression with covariates that capture methodological, participant, and program characteristics. I’ll use a regression specification that is similar to Model III from Wilson et al. (2011), but treat the <code>evaluator_independence</code> and <code>implementation_quality</code> variables as categorical rather than interval-level; the original analysis clustered at the level of the sample (some studies reported results from multiple samples), whereas I will cluster at the study level.
+<p>The original analysis included a meta-regression with covariates that capture methodological, participant, and program characteristics. I’ll use a regression specification that is similar to Model III from Wilson et al. (2011), but treat the <code>evaluator_independence</code> and <code>implementation_quality</code> variables as categorical rather than interval-level; the original analysis clustered at the level of the sample (some studies reported results from multiple samples), whereas I will cluster at the study level.
 I fit the model two ways, first using the <code>robumeta</code> package and then using <code>metafor</code>.</p>
 <div id="robumeta-model" class="section level4">
 <h4>robumeta model</h4>
 <pre class="r"><code>options(width=150)
 library(robumeta)
-library(clubSandwich)
-data(dropoutPrevention)
+library(clubSandwich)</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;clubSandwich&#39;:
+##   method    from    
+##   bread.mlm sandwich</code></pre>
+<pre class="r"><code>data(dropoutPrevention)
 
 m3_robu &lt;- robu(LOR1 ~ study_design + attrition + group_equivalence + adjusted
                 + outcome + evaluator_independence
@@ -70,7 +74,7 @@ print(m3_robu)</code></pre>
 ## ---
 ## Note: If df &lt; 4, do not trust the results</code></pre>
 <p>Note that <code>robumeta</code> produces small-sample corrected standard errors and t-tests, and so there is no need to repeat those calculations with <code>clubSandwich</code>. The <code>evaluator_independence</code> variable has four levels, and it might be of interest to test whether the average program effects differ by the degree of evaluator independence. The null hypothesis in this case is that the 10th, 11th, and 12th regression coefficients are all equal to zero. A small-sample adjusted F-test for this hypothesis can be obtained as follows.
-(The <code>vcov = &quot;CR2&quot;</code> option means that the standard errors will be corrected using the bias-reduced linearization method proposed by McCaffrey, Bell, and Botts, 2001.)</p>
+(The <code>vcov = "CR2"</code> option means that the standard errors will be corrected using the bias-reduced linearization method proposed by McCaffrey, Bell, and Botts, 2001.)</p>
 <pre class="r"><code>Wald_test(m3_robu, constraints = 10:12, vcov = &quot;CR2&quot;)</code></pre>
 <pre><code>##  Test    F d.f.  p.val
 ##   HTZ 2.78 16.8 0.0732</code></pre>
@@ -94,74 +98,74 @@ summary(m3_metafor)</code></pre>
 <pre><code>## 
 ## Multivariate Meta-Analysis Model (k = 385; method: REML)
 ## 
-##    logLik   Deviance        AIC        BIC       AICc  
-## -489.0357   978.0714  1026.0714  1119.5371  1029.6217  
+##    logLik   Deviance        AIC        BIC       AICc 
+## -489.0357   978.0714  1026.0714  1119.5371  1029.6217   
 ## 
-## Variance Components: 
+## Variance Components:
 ## 
-##             estim    sqrt  nlvls  fixed       factor
-## sigma^2.1  0.2274  0.4769    152     no      studyID
-## sigma^2.2  0.1145  0.3384    317     no  studySample
+##             estim    sqrt  nlvls  fixed       factor 
+## sigma^2.1  0.2274  0.4769    152     no      studyID 
+## sigma^2.2  0.1145  0.3384    317     no  studySample 
 ## 
-## Test for Residual Heterogeneity: 
+## Test for Residual Heterogeneity:
 ## QE(df = 363) = 1588.4397, p-val &lt; .0001
 ## 
-## Test of Moderators (coefficient(s) 2:22): 
+## Test of Moderators (coefficients 2:22):
 ## QM(df = 21) = 293.8694, p-val &lt; .0001
 ## 
 ## Model Results:
 ## 
-##                                              estimate      se     zval    pval    ci.lb    ci.ub     
-## intrcpt                                        0.5296  0.7250   0.7304  0.4651  -0.8915   1.9506     
-## study_designNon-random, non-matched           -0.0494  0.1722  -0.2871  0.7741  -0.3870   0.2881     
-## study_designRandomized                         0.0653  0.1628   0.4010  0.6884  -0.2538   0.3843     
-## attrition                                     -0.1366  0.2429  -0.5623  0.5739  -0.6126   0.3395     
-## group_equivalence                              0.4071  0.1573   2.5877  0.0097   0.0988   0.7155   **
-## adjustedadjusted data                         -0.3581  0.1532  -2.3371  0.0194  -0.6585  -0.0578    *
-## outcomeenrolled                               -0.2831  0.0771  -3.6709  0.0002  -0.4343  -0.1320  ***
-## outcomegraduation                             -0.0913  0.0657  -1.3896  0.1646  -0.2201   0.0375     
-## outcomegraduation/ged                          0.6983  0.0805   8.6750  &lt;.0001   0.5406   0.8561  ***
-## evaluator_independenceIndirect, influential   -0.7530  0.4949  -1.5214  0.1282  -1.7230   0.2171     
-## evaluator_independencePlanning                -0.7700  0.4869  -1.5814  0.1138  -1.7242   0.1843     
-## evaluator_independenceDelivery                -1.0016  0.4600  -2.1774  0.0294  -1.9033  -0.1000    *
-## male_pct                                       0.1021  0.1715   0.5951  0.5518  -0.2341   0.4382     
-## white_pct                                      0.1223  0.1804   0.6777  0.4979  -0.2313   0.4758     
-## average_age                                    0.0061  0.0291   0.2091  0.8344  -0.0509   0.0631     
-## implementation_qualityPossible problems        0.4738  0.1609   2.9445  0.0032   0.1584   0.7892   **
-## implementation_qualityNo apparent problems     0.6318  0.1471   4.2965  &lt;.0001   0.3436   0.9201  ***
-## program_sitemixed                              0.3289  0.2413   1.3631  0.1729  -0.1440   0.8019     
-## program_siteschool classroom                   0.2920  0.1736   1.6821  0.0926  -0.0482   0.6321    .
-## program_siteschool, outside of classroom       0.1616  0.1898   0.8515  0.3945  -0.2104   0.5337     
-## duration                                       0.0013  0.0009   1.3423  0.1795  -0.0006   0.0031     
-## service_hrs                                   -0.0003  0.0047  -0.0654  0.9478  -0.0096   0.0090     
+##                                              estimate      se     zval    pval    ci.lb    ci.ub 
+## intrcpt                                        0.5296  0.7250   0.7304  0.4651  -0.8915   1.9506      
+## study_designNon-random, non-matched           -0.0494  0.1722  -0.2871  0.7741  -0.3870   0.2881      
+## study_designRandomized                         0.0653  0.1628   0.4010  0.6884  -0.2538   0.3843      
+## attrition                                     -0.1366  0.2429  -0.5623  0.5739  -0.6126   0.3395      
+## group_equivalence                              0.4071  0.1573   2.5877  0.0097   0.0988   0.7155   ** 
+## adjustedadjusted data                         -0.3581  0.1532  -2.3371  0.0194  -0.6585  -0.0578    * 
+## outcomeenrolled                               -0.2831  0.0771  -3.6709  0.0002  -0.4343  -0.1320  *** 
+## outcomegraduation                             -0.0913  0.0657  -1.3896  0.1646  -0.2201   0.0375      
+## outcomegraduation/ged                          0.6983  0.0805   8.6750  &lt;.0001   0.5406   0.8561  *** 
+## evaluator_independenceIndirect, influential   -0.7530  0.4949  -1.5214  0.1282  -1.7230   0.2171      
+## evaluator_independencePlanning                -0.7700  0.4869  -1.5814  0.1138  -1.7242   0.1843      
+## evaluator_independenceDelivery                -1.0016  0.4600  -2.1774  0.0294  -1.9033  -0.1000    * 
+## male_pct                                       0.1021  0.1715   0.5951  0.5518  -0.2341   0.4382      
+## white_pct                                      0.1223  0.1804   0.6777  0.4979  -0.2313   0.4758      
+## average_age                                    0.0061  0.0291   0.2091  0.8344  -0.0509   0.0631      
+## implementation_qualityPossible problems        0.4738  0.1609   2.9445  0.0032   0.1584   0.7892   ** 
+## implementation_qualityNo apparent problems     0.6318  0.1471   4.2965  &lt;.0001   0.3436   0.9201  *** 
+## program_sitemixed                              0.3289  0.2413   1.3631  0.1729  -0.1440   0.8019      
+## program_siteschool classroom                   0.2920  0.1736   1.6821  0.0926  -0.0482   0.6321    . 
+## program_siteschool, outside of classroom       0.1616  0.1898   0.8515  0.3945  -0.2104   0.5337      
+## duration                                       0.0013  0.0009   1.3423  0.1795  -0.0006   0.0031      
+## service_hrs                                   -0.0003  0.0047  -0.0654  0.9478  -0.0096   0.0090      
 ## 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p><code>metafor</code> produces model-based standard errors, t-tests, and confidence intervals. The <code>coef_test</code> function from <code>clubSandwich</code> will calculate robust standard errors and robust t-tests for each of the coefficients:</p>
 <pre class="r"><code>coef_test(m3_metafor, vcov = &quot;CR2&quot;)</code></pre>
-<pre><code>##                                           Coef  Estimate       SE  d.f. p-val (Satt) Sig.
-## 1                                      intrcpt  0.529569 0.724851 20.08      0.47347     
-## 2          study_designNon-random, non-matched -0.049434 0.204152 58.42      0.80952     
-## 3                       study_designRandomized  0.065272 0.149146 53.17      0.66342     
-## 4                                    attrition -0.136575 0.306429 10.52      0.66485     
-## 5                            group_equivalence  0.407108 0.210917 23.10      0.06595    .
-## 6                        adjustedadjusted data -0.358124 0.136132 43.20      0.01176    *
-## 7                              outcomeenrolled -0.283124 0.237199  7.08      0.27108     
-## 8                            outcomegraduation -0.091295 0.091465  9.95      0.34188     
-## 9                        outcomegraduation/ged  0.698328 0.364882  8.02      0.09188    .
-## 10 evaluator_independenceIndirect, influential -0.752994 0.447670  6.56      0.13929     
-## 11              evaluator_independencePlanning -0.769968 0.403898  6.10      0.10446     
-## 12              evaluator_independenceDelivery -1.001648 0.355989  4.89      0.03834    *
-## 13                                    male_pct  0.102055 0.148410  9.68      0.50782     
-## 14                                   white_pct  0.122255 0.141470 16.88      0.39961     
-## 15                                 average_age  0.006084 0.033387 15.79      0.85772     
-## 16     implementation_qualityPossible problems  0.473789 0.148660 22.44      0.00419   **
-## 17  implementation_qualityNo apparent problems  0.631842 0.138073 28.68      &lt; 0.001  ***
-## 18                           program_sitemixed  0.328941 0.196848 27.47      0.10607     
-## 19                program_siteschool classroom  0.291952 0.146014 42.70      0.05195    .
-## 20    program_siteschool, outside of classroom  0.161640 0.171700 29.27      0.35420     
-## 21                                    duration  0.001270 0.000978 31.96      0.20332     
-## 22                                 service_hrs -0.000309 0.004828 49.63      0.94915</code></pre>
+<pre><code>##                                          Coef.  Estimate       SE  t-stat  d.f. p-val (Satt) Sig.
+## 1                                      intrcpt  0.529569 0.724851  0.7306 20.08      0.47347     
+## 2          study_designNon-random, non-matched -0.049434 0.204152 -0.2421 58.42      0.80952     
+## 3                       study_designRandomized  0.065272 0.149146  0.4376 53.17      0.66342     
+## 4                                    attrition -0.136575 0.306429 -0.4457 10.52      0.66485     
+## 5                            group_equivalence  0.407108 0.210917  1.9302 23.10      0.06595    .
+## 6                        adjustedadjusted data -0.358124 0.136132 -2.6307 43.20      0.01176    *
+## 7                              outcomeenrolled -0.283124 0.237199 -1.1936  7.08      0.27108     
+## 8                            outcomegraduation -0.091295 0.091465 -0.9981  9.95      0.34188     
+## 9                        outcomegraduation/ged  0.698328 0.364882  1.9138  8.02      0.09188    .
+## 10 evaluator_independenceIndirect, influential -0.752994 0.447670 -1.6820  6.56      0.13929     
+## 11              evaluator_independencePlanning -0.769968 0.403898 -1.9063  6.10      0.10446     
+## 12              evaluator_independenceDelivery -1.001648 0.355989 -2.8137  4.89      0.03834    *
+## 13                                    male_pct  0.102055 0.148410  0.6877  9.68      0.50782     
+## 14                                   white_pct  0.122255 0.141470  0.8642 16.88      0.39961     
+## 15                                 average_age  0.006084 0.033387  0.1822 15.79      0.85772     
+## 16     implementation_qualityPossible problems  0.473789 0.148660  3.1871 22.44      0.00419   **
+## 17  implementation_qualityNo apparent problems  0.631842 0.138073  4.5761 28.68      &lt; 0.001  ***
+## 18                           program_sitemixed  0.328941 0.196848  1.6710 27.47      0.10607     
+## 19                program_siteschool classroom  0.291952 0.146014  1.9995 42.70      0.05195    .
+## 20    program_siteschool, outside of classroom  0.161640 0.171700  0.9414 29.27      0.35420     
+## 21                                    duration  0.001270 0.000978  1.2988 31.96      0.20332     
+## 22                                 service_hrs -0.000309 0.004828 -0.0641 49.63      0.94915</code></pre>
 <p>Note that <code>coef_test</code> assumed that it should cluster based on <code>studyID</code>, which is the outer-most random effect in the metafor model. This can also be specified explicitly by including the option <code>cluster = dropoutPrevention$studyID</code> in the call.</p>
 <p>The F-test for degree of evaluator independence uses the same syntax as before:</p>
 <pre class="r"><code>Wald_test(m3_metafor, constraints = 10:12, vcov = &quot;CR2&quot;)</code></pre>

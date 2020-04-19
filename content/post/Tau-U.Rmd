@@ -1,6 +1,7 @@
 ---
 title: Tau-U
-author: 'James'
+authors:
+- admin
 date: '2016-03-23'
 slug: Tau-U
 categories: []

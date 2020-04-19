@@ -1,6 +1,7 @@
 ---
 title: Assigning after dplyr
-author: 'James'
+authors:
+- admin
 date: '2016-05-13'
 slug: assigning-after-dplyr
 categories: []
@@ -21,13 +22,25 @@ header:
 </ul>
 <p>Chaining is particularly nice because it makes the code read like a story. For example, here’s the code to calculate sample means for the baseline covariates in a little experimental dataset I’ve been working with recently:</p>
 <pre class="r"><code>library(dplyr)
-dat &lt;- read.csv(&quot;http://jepusto.github.io/data/Mineo_2009_data.csv&quot;)
+dat &lt;- read.csv(&quot;http://jepusto.com/data/Mineo_2009_data.csv&quot;)
 
 dat %&gt;%
   group_by(Condition) %&gt;%
   select(Age, starts_with(&quot;Baseline&quot;)) %&gt;%
   summarise_each(funs(mean)) -&gt;
   baseline_means</code></pre>
+<pre><code>## Warning: funs() is soft deprecated as of dplyr 0.8.0
+## Please use a list of either functions or lambdas: 
+## 
+##   # Simple named list: 
+##   list(mean = mean, median = median)
+## 
+##   # Auto named with `tibble::lst()`: 
+##   tibble::lst(mean, median)
+## 
+##   # Using lambdas
+##   list(~ mean(., trim = .2), ~ median(., na.rm = TRUE))
+## This warning is displayed once per session.</code></pre>
 <p>Each line of the code is a different action: first group the data by <code>Condition</code>, then select the relevant variables, then summarise each of the variables with its sample mean in each group. The results are stored in a dataset called <code>baseline_means</code>.</p>
 <p>As I’ve gotten familiar with <code>dplyr</code>, I’ve adopted the style of using the backwards assignment operator (<code>-&gt;</code>) to store the results of a chain of manipulations. This is perhaps a little bit odd—in all the rest of my code I stick with the forward assignment operator (<code>&lt;-</code>) with the object name on the left—but the alternative is to break the “flow” of the story, effectively putting the punchline before the end of the joke. Consider:</p>
 <pre class="r"><code>baseline_means &lt;- dat %&gt;%
@@ -35,9 +48,6 @@ dat %&gt;%
   select(Age, starts_with(&quot;Baseline&quot;)) %&gt;%
   summarise_each(funs(mean))</code></pre>
 <pre><code>## Adding missing grouping variables: `Condition`</code></pre>
-<pre><code>## `summarise_each()` is deprecated.
-## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
-## To map `funs` over all variables, use `summarise_all()`</code></pre>
 <p>That’s just confusing to me. So backward assignment operator it is.</p>
 <div id="assigning-as-a-verb" class="section level3">
 <h3>Assigning as a verb</h3>
@@ -47,9 +57,6 @@ dat %&gt;%
   summarise_each(funs(mean)) %&gt;%
   select(Age, starts_with(&quot;Baseline&quot;)) -&gt;
   baseline_means</code></pre>
-<pre><code>## `summarise_each()` is deprecated.
-## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
-## To map `funs` over all variables, use `summarise_all()`</code></pre>
 <pre><code>## Warning in mean.default(Expressive.Language): argument is not numeric or
 ## logical: returning NA
 
@@ -66,9 +73,6 @@ dat %&gt;%
   summarise_each(funs(mean)) %&gt;%
   identity() -&gt; baseline_means</code></pre>
 <pre><code>## Adding missing grouping variables: `Condition`</code></pre>
-<pre><code>## `summarise_each()` is deprecated.
-## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
-## To map `funs` over all variables, use `summarise_all()`</code></pre>
 <p>But this is still pretty ugly—it’s got an extra function call that’s not a verb, and the name of the resulting object is tucked away in the middle of a line. What I need is a verb to take the results of a chain of operations and assign to an object. Base R has a suitable candidate here: the <code>assign</code> function. How about the following?</p>
 <pre class="r"><code>dat %&gt;%
   group_by(Condition) %&gt;%
@@ -76,9 +80,6 @@ dat %&gt;%
   summarise_each(funs(mean)) %&gt;%
   assign(&quot;baseline_means_new&quot;, .)</code></pre>
 <pre><code>## Adding missing grouping variables: `Condition`</code></pre>
-<pre><code>## `summarise_each()` is deprecated.
-## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
-## To map `funs` over all variables, use `summarise_all()`</code></pre>
 <pre class="r"><code>exists(&quot;baseline_means_new&quot;)</code></pre>
 <pre><code>## [1] FALSE</code></pre>
 <p>This doesn’t work because of some subtlety with the environment into which <code>baseline_means_new</code> is assigned. A brute-force fix would be to specify that the assign should be into the global environment. This will probably work 90%+ of the time, but it’s still not terribly elegant.</p>
@@ -137,15 +138,12 @@ grep(&quot;dat&quot;,ls(), value = TRUE)</code></pre>
   summarise_each(funs(mean)) %&gt;%
   put(baseline_means_new)</code></pre>
 <pre><code>## Adding missing grouping variables: `Condition`</code></pre>
-<pre><code>## `summarise_each()` is deprecated.
-## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
-## To map `funs` over all variables, use `summarise_all()`</code></pre>
 <pre class="r"><code>print(baseline_means_new)</code></pre>
 <pre><code>## # A tibble: 3 x 4
 ##   Condition   Age Baseline.Gaze Baseline.Vocalizations
 ##   &lt;fct&gt;     &lt;dbl&gt;         &lt;dbl&gt;                  &lt;dbl&gt;
-## 1 OtherVR     122          91.9                   2.86
-## 2 SelfVid     121         102                     1.86
-## 3 SelfVR      139          95.5                   1.43</code></pre>
+## 1 OtherVR    122.          91.9                   2.86
+## 2 SelfVid    121.         102.                    1.86
+## 3 SelfVR     139.          95.5                   1.43</code></pre>
 <p>If you’ve been following along, let me know what you think of this. Is it a good idea, or is it dangerous? Are there cases where this will break? Can you think of a better name?</p>
 </div>

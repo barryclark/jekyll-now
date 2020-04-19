@@ -1,72 +1,68 @@
-{{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
+{{- define "main" -}}
 
-<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+<article class="article article-project">
 
-  {{ partial "header_image.html" . }}
+  {{ partial "page_header.html" . }}
 
   <div class="article-container">
 
-    <div class="pub-title">
-      <h1 itemprop="name">{{ .Title }}</h1>
-      <span class="pub-authors" itemprop="author">&nbsp;</span>
-      <span class="pull-right">
-        {{ partial "share.html" . }}
-      </span>
-    </div>
-
-    {{ with .Params.external_link }}
-    <a class="btn btn-primary btn-outline" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "open_project_site" }}</a>
-    {{ end }}
-
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       {{ .Content }}
     </div>
 
-    {{ partial "tags.html" . }}
+    {{ partial "page_footer" . }}
 
-    {{ $page := . }}
-    {{ $project := .File.TranslationBaseName }}
-    {{ $project_path := printf "%s/%s/" .Section $project }}
+    <div class="project-related-pages content-widget-hr">
+      {{ $page := . }}
+      {{ $project := .File.ContentBaseName }}
 
-    {{ if (.Site.Params.projects.list_children | default true) }}
-      {{ $items := where (where .Site.RegularPages "Type" "publication") ".Params.projects" "intersect" (slice $project) }}
-      {{ $items := $items | union (where (where .Site.RegularPages "Type" "publication") ".Params.url_project" $project_path) }}
-      {{ $pubs_len := len $items }}
-      {{ if ge $pubs_len 1 }}
-        <h2>{{ (i18n "publications") }}</h2>
+      {{ $items := where (where site.RegularPages "Type" "post") ".Params.projects" "intersect" (slice $project) }}
+      {{ $count := len $items }}
+      {{ if ge $count 1 }}
+        <h2>{{ (i18n "posts") }}</h2>
         {{ range $items }}
-          {{ if eq $page.Site.Params.projects.publication_format 1 }}
-            {{ partial "publication_li_detailed" . }}
-          {{ else if eq $page.Site.Params.projects.publication_format 2 }}
-            {{ partial "publication_li_apa" . }}
-          {{ else if eq $page.Site.Params.projects.publication_format 3 }}
-            {{ partial "publication_li_mla" . }}
+          {{ if eq site.Params.projects.post_view 1 }}
+            {{ partial "li_list" . }}
+          {{ else if eq site.Params.projects.post_view 3 }}
+            {{ partial "li_card" . }}
           {{ else }}
-            {{ partial "publication_li_simple" . }}
+            {{ partial "li_compact" . }}
           {{ end }}
         {{ end }}
       {{ end }}
 
-      {{ $items := where (where .Site.RegularPages "Type" "talk") ".Params.projects" "intersect" (slice $project) }}
-      {{ $items := $items | union (where (where .Site.RegularPages "Type" "publication") ".Params.url_project" $project_path) }}
+      {{ $items := where (where site.RegularPages "Type" "publication") ".Params.projects" "intersect" (slice $project) }}
+      {{ $pubs_len := len $items }}
+      {{ if ge $pubs_len 1 }}
+        <h2>{{ (i18n "publications") }}</h2>
+        {{ range $items }}
+          {{ if eq site.Params.projects.publication_view 1 }}
+            {{ partial "li_list" . }}
+          {{ else if eq site.Params.projects.publication_view 3 }}
+            {{ partial "li_card" . }}
+          {{ else if eq site.Params.projects.publication_view 4 }}
+            {{ partial "li_citation" . }}
+          {{ else }}
+            {{ partial "li_compact" . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ $items := where (where site.RegularPages "Type" "talk") ".Params.projects" "intersect" (slice $project) }}
       {{ $talks_len := len $items }}
       {{ if ge $talks_len 1 }}
         <h2>{{ (i18n "talks") }}</h2>
         {{ range $items }}
-          {{ partial "talk_li_simple" . }}
+          {{ if eq site.Params.projects.talk_view 1 }}
+            {{ partial "li_list" . }}
+          {{ else if eq site.Params.projects.talk_view 3 }}
+            {{ partial "li_card" . }}
+          {{ else }}
+            {{ partial "li_compact" . }}
+          {{ end }}
         {{ end }}
       {{ end }}
-    {{ end }}
-
+    </div>
   </div>
 </article>
-
-{{ if .Site.Params.section_pager }}
-<div class="article-container article-widget">
-  {{ partial "section_pager.html" . }}
-</div>
-{{ end }}
-
-{{ partial "footer_container.html" . }}
-{{ partial "footer.html" . }}
+{{- end -}}

@@ -1,6 +1,7 @@
 ---
 title: A handmade clubSandwich for multi-site trials
-author: James
+authors:
+- admin
 date: '2019-03-09'
 slug: handmade-clubSandwich
 categories: []

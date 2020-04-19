@@ -1,6 +1,7 @@
 ---
 title: Regression discontinuities with covariate interactions in the rdd package
-author: 'James'
+authors:
+- admin
 date: '2016-01-25'
 slug: rdd-interactions
 categories: []
@@ -51,14 +52,10 @@ summary(rdd_simple)</code></pre>
 ## sharp 
 ## 
 ## Estimates:
-##            Bandwidth  Observations  Estimate  Std. Error  z value
-## LATE       1.0894     1177          0.3035    0.11323     2.680  
-## Half-BW    0.5447      611          0.2308    0.15471     1.492  
-## Double-BW  2.1787     1832          0.2699    0.08968     3.010  
-##            Pr(&gt;|z|)    
-## LATE       0.007355  **
-## Half-BW    0.135722    
-## Double-BW  0.002613  **
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&gt;|z|)    
+## LATE       1.0894     1177          0.3035    0.11323     2.680    0.007355  **
+## Half-BW    0.5447      611          0.2308    0.15471     1.492    0.135722    
+## Double-BW  2.1787     1832          0.2699    0.08968     3.010    0.002613  **
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
@@ -68,6 +65,7 @@ summary(rdd_simple)</code></pre>
 ## Half-BW     12.64  3          607        1.006e-07
 ## Double-BW  104.74  3         1828        0.000e+00</code></pre>
 <p>Using a bandwidth of 1.09, the estimated marginal average treatment effect is 0.303. The figure below illustrates the discontinuity:</p>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="/post/rdd-interactions_files/figure-html/unnamed-chunk-4-1.png" width="960" /></p>
 </div>
 <div id="rdd-with-covariates" class="section level3">
@@ -109,6 +107,7 @@ ldply(covariates, RD_est, mod = &quot;Y ~ R&quot;, .id = &quot;Specification&quo
 <p>For a generic covariate <span class="math inline">\(X\)</span>, the function uses the specification:</p>
 <p><span class="math display">\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 X_i + \beta_5 X_i T_i + \epsilon_i, \]</span></p>
 <p>while still taking <span class="math inline">\(\beta_2\)</span> to represent the MATE. This is problematic because, as soon as the <span class="math inline">\(X_i T_i\)</span> term is introduced into the model, <span class="math inline">\(\beta_2\)</span> represents the difference between treated and untreated units at the threshold (where <span class="math inline">\(R_i = 0\)</span>) and where <span class="math inline">\(X_i = 0\)</span>. Thus, including the <span class="math inline">\(X_1\)</span> interaction in the model means that <span class="math inline">\(\beta_2\)</span> is a difference extrapolated <em>way</em> outside the support of the data, as in the following scatterplot of the outcome versus the covariate <span class="math inline">\(X_1\)</span>:</p>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="/post/rdd-interactions_files/figure-html/unnamed-chunk-7-1.png" width="960" /></p>
 <p><code>RDestimate</code> returns as the MATE estimate the difference between the regression lines when <span class="math inline">\(X_1 = 0\)</span>, which in this example is -0.69. Similarly, including the <span class="math inline">\(X_2\)</span> interaction in the model means that <span class="math inline">\(\beta_2\)</span> will represent the marginal average treatment effect for only one of the categories of <span class="math inline">\(X_2\)</span>, rather than as some sort of average across all four categories.</p>
 </div>
@@ -146,14 +145,10 @@ coeftest(MATE_model, vcov. = vcovHC(MATE_model, type = &quot;HC1&quot;))</code><
 ## fuzzy 
 ## 
 ## Estimates:
-##            Bandwidth  Observations  Estimate  Std. Error  z value
-## LATE       1.0894     1177          0.2923    0.10769     2.714  
-## Half-BW    0.5447      611          0.2041    0.14911     1.369  
-## Double-BW  2.1787     1832          0.2703    0.08447     3.200  
-##            Pr(&gt;|z|)    
-## LATE       0.006644  **
-## Half-BW    0.171103    
-## Double-BW  0.001374  **
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&gt;|z|)    
+## LATE       1.0894     1177          0.2923    0.10769     2.714    0.006644  **
+## Half-BW    0.5447      611          0.2041    0.14911     1.369    0.171103    
+## Double-BW  2.1787     1832          0.2703    0.08447     3.200    0.001374  **
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 

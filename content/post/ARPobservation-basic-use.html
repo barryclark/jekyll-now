@@ -1,6 +1,7 @@
 ---
 title: "ARPobservation: Basic use"
-author: 'James'
+authors:
+- admin
 date: '2013-10-25'
 slug: ARPobservation-basic-use
 categories: []
@@ -75,8 +76,8 @@ r_behavior_stream(n = 1, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_
 ## [1] 0
 ## 
 ## $b_streams[[3]]$b_stream
-##  [1] 196.4605 203.7452 237.9514 245.2451 246.2089 254.6313 256.6439
-##  [8] 258.5644 262.1140 265.3249 283.9702 298.7830
+##  [1] 196.4605 203.7452 237.9514 245.2451 246.2089 254.6313 256.6439 258.5644
+##  [9] 262.1140 265.3249 283.9702 298.7830
 ## 
 ## 
 ## 
@@ -100,7 +101,7 @@ c(mean = mean(CDR), var = var(CDR))</code></pre>
 <pre><code>##        mean         var 
 ## 0.250140703 0.009567949</code></pre>
 <pre class="r"><code>hist(CDR)</code></pre>
-<p><img src="/.rmarkdown-libs/figure-html4/CDR_hist-1.png" width="672" /></p>
+<p><img src="/post/ARPobservation-basic-use_files/figure-html/CDR_hist-1.png" width="672" /></p>
 <p>Another well-known recording procedure is <strong>partial interval recording</strong> (PIR), which involves dividing the observation session into short intervals, then scoring each interval according to whether or not the behavior occurs at any point during the interval. The function <code>interval_recording</code> applies partial interval recording (or the closely related procedure of whole interval recording) to a set of simulated behavior streams. Suppose that the observer uses 20 s intervals, back-to-back for 300 s, for a total of 15 intervals. This procedure can be applied to the simulated behavior streams using</p>
 <pre class="r"><code>interval_recording(BS10, interval_length = 20, summarize = FALSE)</code></pre>
 <pre><code>##       [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
@@ -144,7 +145,7 @@ c(mean = mean(CDR), var = var(CDR))</code></pre>
 ## 8  0.2570101 0.6666667
 ## 9  0.1704727 0.4000000
 ## 10 0.2968024 0.5333333</code></pre>
-<p>This function returns a data frame with one column for each procedure and one row for each simulated behavior stream. Say that you also want to include data based on momentary time recording, with 20 s in between each moment. Just add an <code>&quot;M&quot;</code> to the list of data types to include:</p>
+<p>This function returns a data frame with one column for each procedure and one row for each simulated behavior stream. Say that you also want to include data based on momentary time recording, with 20 s in between each moment. Just add an <code>"M"</code> to the list of data types to include:</p>
 <pre class="r"><code>reported_observations(BS10, data_types = c(&quot;C&quot;, &quot;M&quot;, &quot;P&quot;), interval_length = 20, rest_length = 5)</code></pre>
 <pre><code>##            C          M         P
 ## 1  0.1680877 0.20000000 0.4000000

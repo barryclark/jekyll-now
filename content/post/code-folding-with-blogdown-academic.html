@@ -1,6 +1,7 @@
 ---
 title: Code folding with blogdown + Academic theme
-author: James
+authors:
+- admin
 date: '2019-04-14'
 slug: code-folding-with-blogdown-academic
 number_sections: true
@@ -21,11 +22,11 @@ header:
 <div id="code-folding-with-the-academic-theme" class="section level2">
 <h2>Code folding with the Academic theme</h2>
 <ol style="list-style-type: decimal">
-<li>You’ll first need to pull in some javascript assets. Create a folder called <code>js</code> under the <code>\static</code> directory of your site. Add the files <code>transition.js</code>, <code>collapse.js</code>, and <code>dropdown.js</code> from <a href="https://github.com/twbs/bootstrap/tree/v3.3.7/js">bootstrap</a>.</li>
-<li>Also add Sébastien’s codefolding javascript, <a href="https://github.com/jepusto/jepusto.com/blob/master/static/js/codefolding.js"><code>codefolding.js</code></a>.</li>
-<li>Create a folder called <code>css</code> under the <code>\static</code> directory of your site. Add the file <a href="https://github.com/jepusto/jepusto.com/blob/master/static/css/codefolding.css"><code>codefolding.css</code></a>. This is the css for the buttons that will appear on your posts.</li>
-<li>Add the file <a href="https://github.com/jepusto/jepusto.com/blob/master/layouts/partials/article_footer_js.html"><code>article_footer_js.html</code></a> to the <code>\layouts\partials</code> directory of your site.</li>
-<li>Add the file <a href="https://github.com/jepusto/jepusto.com/blob/master/layouts/partials/header_maincodefolding.html"><code>header_maincodefolding.html</code></a> to the <code>\layouts\partials</code> directory of your site.</li>
+<li><p>You’ll first need to pull in some javascript assets. Create a folder called <code>js</code> under the <code>\static</code> directory of your site. Add the files <code>transition.js</code>, <code>collapse.js</code>, and <code>dropdown.js</code> from <a href="https://github.com/twbs/bootstrap/tree/v3.3.7/js">bootstrap</a>.</p></li>
+<li><p>Also add Sébastien’s codefolding javascript, <a href="https://github.com/jepusto/jepusto.com/blob/master/static/js/codefolding.js"><code>codefolding.js</code></a>.</p></li>
+<li><p>Create a folder called <code>css</code> under the <code>\static</code> directory of your site. Add the file <a href="https://github.com/jepusto/jepusto.com/blob/master/static/css/codefolding.css"><code>codefolding.css</code></a>. This is the css for the buttons that will appear on your posts.</p></li>
+<li><p>Add the file <a href="https://github.com/jepusto/jepusto.com/blob/master/layouts/partials/article_footer_js.html"><code>article_footer_js.html</code></a> to the <code>\layouts\partials</code> directory of your site.</p></li>
+<li><p>Add the file <a href="https://github.com/jepusto/jepusto.com/blob/master/layouts/partials/header_maincodefolding.html"><code>header_maincodefolding.html</code></a> to the <code>\layouts\partials</code> directory of your site.</p></li>
 <li><p>If you do not already have a file <code>head_custom.html</code> in the <code>\layouts\partials</code> directory, create it.. Add the following lines of code to the file:</p>
 <pre class="js"><code>{{ if not .Site.Params.disable_codefolding }}
   &lt;script src=&quot;{{ &quot;js/collapse.js&quot; | relURL }}&quot;&gt;&lt;/script&gt;

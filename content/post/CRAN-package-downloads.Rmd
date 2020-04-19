@@ -1,6 +1,7 @@
 ---
 title: CRAN downloads of my packages
-author: James
+authors:
+- admin
 date: '2019-04-09'
 slug: package-downloads
 categories: []

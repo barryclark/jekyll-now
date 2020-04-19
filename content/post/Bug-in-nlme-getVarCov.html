@@ -1,6 +1,7 @@
 ---
 title: "Bug in nlme::getVarCov"
-author: 'James'
+authors:
+- admin
 date: '2016-08-10'
 slug: bug-in-nlme-getVarCov
 categories: []
@@ -65,7 +66,7 @@ V_sorted &lt;- lapply(Mares, function(g) getVarCov(gls_sorted, individual = g))<
 ##     attr(result, &quot;group.levels&quot;) &lt;- names(obj$groups)
 ##     result
 ## }
-## &lt;bytecode: 0x000000000b6cff20&gt;
+## &lt;bytecode: 0x000000001bc24f78&gt;
 ## &lt;environment: namespace:nlme&gt;</code></pre>
 <p>The issue is in the 4th line of the body. <code>getVarCov.gls</code> assumes that <code>varWeights(obj$modelStruct$varStruct)</code> is sorted in the same order as <code>obj$groups</code>, which is not necessarily true. Instead, <code>varWeights</code> seem to return the weights sorted according to the grouping variable. For this example, that means that the <code>varWeights</code> will not depend on the order in which the groups are sorted.</p>
 <pre class="r"><code>identical(gls_raw$groups, gls_sorted$groups)</code></pre>
@@ -194,9 +195,9 @@ all.equal(V_raw, V_sorted)</code></pre>
 <div id="session-info" class="section level1">
 <h1>Session info</h1>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.4.4 (2018-03-15)
+<pre><code>## R version 3.6.3 (2020-02-29)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 7 x64 (build 7601) Service Pack 1
+## Running under: Windows 10 x64 (build 17763)
 ## 
 ## Matrix products: default
 ## 
@@ -208,15 +209,15 @@ all.equal(V_raw, V_sorted)</code></pre>
 ## [5] LC_TIME=English_United States.1252    
 ## 
 ## attached base packages:
-## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] nlme_3.1-131.1
+## [1] nlme_3.1-144
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.11    bookdown_0.7    lattice_0.20-35 digest_0.6.15  
-##  [5] rprojroot_1.2   grid_3.4.4      backports_1.1.0 magrittr_1.5   
-##  [9] evaluate_0.10   blogdown_0.6    stringi_1.1.5   rmarkdown_1.8  
-## [13] tools_3.4.4     stringr_1.2.0   xfun_0.1        yaml_2.1.14    
-## [17] compiler_3.4.4  htmltools_0.3.6 knitr_1.17</code></pre>
+##  [1] Rcpp_1.0.4.6    bookdown_0.14   lattice_0.20-38 digest_0.6.25  
+##  [5] grid_3.6.3      magrittr_1.5    evaluate_0.14   blogdown_0.18  
+##  [9] rlang_0.4.5     stringi_1.4.3   rmarkdown_2.1   tools_3.6.3    
+## [13] stringr_1.4.0   xfun_0.12       yaml_2.2.0      compiler_3.6.3 
+## [17] htmltools_0.4.0 knitr_1.28</code></pre>
 </div>

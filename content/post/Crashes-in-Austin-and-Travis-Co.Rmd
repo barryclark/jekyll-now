@@ -1,6 +1,7 @@
 ---
 title: Fatal crashes in Austin/Travis County
-author: 'James'
+authors:
+- admin
 date: '2015-08-20'
 slug:
 categories: []
@@ -23,7 +24,7 @@ library(dplyr)
 library(stringr)
 library(ggplot2)
 
-crash_dat <- read.csv("http://jepusto.github.io/data/Yearly_crash_data_Austin_and_Travis_County.csv")
+crash_dat <- read.csv("http://jepusto.com/data/Yearly_crash_data_Austin_and_Travis_County.csv")
 select(crash_dat, Year, Locale, srce, Fatal_crashes:Incapacitating_injuries, Total_crashes) %>%
   mutate(Fatality_rate = Fatal_crashes / Total_crashes) %>%
   gather("quantity","n", Fatal_crashes:Total_crashes, Fatality_rate) %>%

@@ -1,6 +1,7 @@
 ---
 title: "ARPobservation: Basic use"
-author: 'James'
+authors:
+- admin
 date: '2013-10-25'
 slug: ARPobservation-basic-use
 categories: []

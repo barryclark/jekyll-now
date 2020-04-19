@@ -1,6 +1,7 @@
 ---
 title: "Update: parallel R on the TACC"
-author: 'James'
+authors:
+- admin
 date: '2014-04-08'
 slug: parallel-R-on-TACC-update
 categories: []

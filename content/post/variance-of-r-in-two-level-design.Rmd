@@ -1,6 +1,7 @@
 ---
 title: Sampling variance of Pearson r in a two-level design
-author: 'James'
+authors:
+- admin
 date: '2018-04-19'
 slug: variance-of-r-in-two-level-design
 categories: []

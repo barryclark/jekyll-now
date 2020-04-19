@@ -1,6 +1,7 @@
 ---
 title: The clubSandwich package for meta-analysis with RVE
-author: 'James'
+authors:
+- admin
 date: '2015-07-10'
 slug: clubSandwich-for-RVE-meta-analysis
 categories: []

@@ -1,6 +1,7 @@
 ---
 title: Imputing covariance matrices for meta-analysis of correlated effects
-author: 'James'
+authors:
+- admin
 date: '2017-08-10'
 slug: imputing-covariance-matrices-for-multi-variate-meta-analysis
 categories: []
@@ -21,11 +22,15 @@ header:
 <div id="an-r-function-for-block-diagonal-covariance-matrices" class="section level2">
 <h2>An R function for block-diagonal covariance matrices</h2>
 <p>Here is the function:</p>
-<pre class="r"><code>library(clubSandwich)
-impute_covariance_matrix</code></pre>
+<pre class="r"><code>library(clubSandwich)</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;clubSandwich&#39;:
+##   method    from    
+##   bread.mlm sandwich</code></pre>
+<pre class="r"><code>impute_covariance_matrix</code></pre>
 <pre><code>## function (vi, cluster, r, return_list = identical(as.factor(cluster), 
 ##     sort(as.factor(cluster)))) 
 ## {
+##     cluster &lt;- droplevels(as.factor(cluster))
 ##     vi_list &lt;- split(vi, cluster)
 ##     r_list &lt;- rep_len(r, length(vi_list))
 ##     vcov_list &lt;- Map(function(V, rho) (rho + diag(1 - rho, nrow = length(V))) * 
@@ -39,7 +44,7 @@ impute_covariance_matrix</code></pre>
 ##         return(vcov_mat[cluster_index, cluster_index])
 ##     }
 ## }
-## &lt;bytecode: 0x000000001d632c38&gt;
+## &lt;bytecode: 0x0000000018729e88&gt;
 ## &lt;environment: namespace:clubSandwich&gt;</code></pre>
 <p>The function takes three required arguments:</p>
 <ul>
@@ -52,16 +57,16 @@ impute_covariance_matrix</code></pre>
                   yi = rnorm(9), 
                   vi = 4:12)
 dat</code></pre>
-<pre><code>##   study          yi vi
-## 1     A -0.06129029  4
-## 2     A -1.15331120  5
-## 3     B -1.26685765  6
-## 4     B  0.73074286  7
-## 5     B  0.03833894  8
-## 6     C  0.81607589  9
-## 7     C -1.29714346 10
-## 8     C  0.62134805 11
-## 9     C -0.02952864 12</code></pre>
+<pre><code>##   study         yi vi
+## 1     A  0.5839048  4
+## 2     A -0.5168943  5
+## 3     B  0.1946788  6
+## 4     B  1.0894588  7
+## 5     B -0.2251032  8
+## 6     C -1.1907191  9
+## 7     C  1.3966669 10
+## 8     C  1.7493633 11
+## 9     C -1.1837521 12</code></pre>
 <p>I’ll assume that effect size estimates from a given study are correlated at 0.7:</p>
 <pre class="r"><code>V_list &lt;- impute_covariance_matrix(vi = dat$vi, cluster = dat$study, r = 0.7)
 V_list</code></pre>
@@ -103,28 +108,28 @@ V_list</code></pre>
 <p>Here’s what happens if we feed in the data in a different order:</p>
 <pre class="r"><code>dat_scramble &lt;- dat[sample(nrow(dat)),]
 dat_scramble</code></pre>
-<pre><code>##   study          yi vi
-## 5     B  0.03833894  8
-## 3     B -1.26685765  6
-## 1     A -0.06129029  4
-## 8     C  0.62134805 11
-## 6     C  0.81607589  9
-## 7     C -1.29714346 10
-## 2     A -1.15331120  5
-## 9     C -0.02952864 12
-## 4     B  0.73074286  7</code></pre>
+<pre><code>##   study         yi vi
+## 8     C  1.7493633 11
+## 9     C -1.1837521 12
+## 3     B  0.1946788  6
+## 1     A  0.5839048  4
+## 2     A -0.5168943  5
+## 5     B -0.2251032  8
+## 7     C  1.3966669 10
+## 4     B  1.0894588  7
+## 6     C -1.1907191  9</code></pre>
 <pre class="r"><code>V_mat &lt;- round(impute_covariance_matrix(vi = dat_scramble$vi, cluster = dat_scramble$study, r = 0.7), 3)
 V_mat</code></pre>
-<pre><code>##        [,1]  [,2] [,3]   [,4]  [,5]   [,6] [,7]   [,8]  [,9]
-##  [1,] 8.000 4.850 0.00  0.000 0.000  0.000 0.00  0.000 5.238
-##  [2,] 4.850 6.000 0.00  0.000 0.000  0.000 0.00  0.000 4.537
-##  [3,] 0.000 0.000 4.00  0.000 0.000  0.000 3.13  0.000 0.000
-##  [4,] 0.000 0.000 0.00 11.000 6.965  7.342 0.00  8.042 0.000
-##  [5,] 0.000 0.000 0.00  6.965 9.000  6.641 0.00  7.275 0.000
-##  [6,] 0.000 0.000 0.00  7.342 6.641 10.000 0.00  7.668 0.000
-##  [7,] 0.000 0.000 3.13  0.000 0.000  0.000 5.00  0.000 0.000
-##  [8,] 0.000 0.000 0.00  8.042 7.275  7.668 0.00 12.000 0.000
-##  [9,] 5.238 4.537 0.00  0.000 0.000  0.000 0.00  0.000 7.000</code></pre>
+<pre><code>##         [,1]   [,2]  [,3] [,4] [,5]  [,6]   [,7]  [,8]  [,9]
+##  [1,] 11.000  8.042 0.000 0.00 0.00 0.000  7.342 0.000 6.965
+##  [2,]  8.042 12.000 0.000 0.00 0.00 0.000  7.668 0.000 7.275
+##  [3,]  0.000  0.000 6.000 0.00 0.00 4.850  0.000 4.537 0.000
+##  [4,]  0.000  0.000 0.000 4.00 3.13 0.000  0.000 0.000 0.000
+##  [5,]  0.000  0.000 0.000 3.13 5.00 0.000  0.000 0.000 0.000
+##  [6,]  0.000  0.000 4.850 0.00 0.00 8.000  0.000 5.238 0.000
+##  [7,]  7.342  7.668 0.000 0.00 0.00 0.000 10.000 0.000 6.641
+##  [8,]  0.000  0.000 4.537 0.00 0.00 5.238  0.000 7.000 0.000
+##  [9,]  6.965  7.275 0.000 0.00 0.00 0.000  6.641 0.000 9.000</code></pre>
 <p>To see that this is correct, check that the diagonal entries of <code>V_mat</code> are the same as <code>vi</code>:</p>
 <pre class="r"><code>all.equal(dat_scramble$vi, diag(V_mat))</code></pre>
 <pre><code>## [1] TRUE</code></pre>
@@ -181,7 +186,7 @@ SATcoaching %&gt;%
                                    r = 0.66)</code></pre>
 <p>This can then be fed into <code>metafor</code> to estimate a fixed effect or random effects meta-analysis or meta-regression models:</p>
 <pre class="r"><code>library(metafor, quietly = TRUE)</code></pre>
-<pre><code>## Loading &#39;metafor&#39; package (version 2.0-0). For an overview 
+<pre><code>## Loading &#39;metafor&#39; package (version 2.1-0). For an overview 
 ## and introduction to the package please type: help(metafor).</code></pre>
 <pre class="r"><code># bivariate fixed effect meta-analysis
 MVFE_null &lt;- rma.mv(d ~ 0 + test, V = V_list, data = SATcoaching)
@@ -191,44 +196,44 @@ MVFE_null</code></pre>
 ## 
 ## Variance Components: none
 ## 
-## Test for Residual Heterogeneity: 
+## Test for Residual Heterogeneity:
 ## QE(df = 65) = 72.1630, p-val = 0.2532
 ## 
-## Test of Moderators (coefficient(s) 1:2): 
+## Test of Moderators (coefficients 1:2):
 ## QM(df = 2) = 19.8687, p-val &lt; .0001
 ## 
 ## Model Results:
 ## 
-##             estimate      se    zval    pval   ci.lb   ci.ub     
-## testMath      0.1316  0.0331  3.9783  &lt;.0001  0.0668  0.1965  ***
-## testVerbal    0.1215  0.0313  3.8783  0.0001  0.0601  0.1829  ***
+##             estimate      se    zval    pval   ci.lb   ci.ub 
+## testMath      0.1316  0.0331  3.9783  &lt;.0001  0.0668  0.1965  *** 
+## testVerbal    0.1215  0.0313  3.8783  0.0001  0.0601  0.1829  *** 
 ## 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code># bivariate fixed effect meta-regression
 MVFE_hrs &lt;- rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, 
                    data = SATcoaching)</code></pre>
-<pre><code>## Warning in rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, data =
-## SATcoaching): Rows with NAs omitted from model fitting.</code></pre>
+<pre><code>## Warning in rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, data = SATcoaching):
+## Rows with NAs omitted from model fitting.</code></pre>
 <pre class="r"><code>MVFE_hrs</code></pre>
 <pre><code>## 
 ## Multivariate Meta-Analysis Model (k = 65; method: REML)
 ## 
 ## Variance Components: none
 ## 
-## Test for Residual Heterogeneity: 
+## Test for Residual Heterogeneity:
 ## QE(df = 61) = 67.9575, p-val = 0.2523
 ## 
-## Test of Moderators (coefficient(s) 1:4): 
+## Test of Moderators (coefficients 1:4):
 ## QM(df = 4) = 23.7181, p-val &lt; .0001
 ## 
 ## Model Results:
 ## 
-##                    estimate      se    zval    pval    ci.lb   ci.ub    
-## testMath             0.0946  0.0402  2.3547  0.0185   0.0159  0.1734   *
-## testVerbal           0.1119  0.0341  3.2762  0.0011   0.0449  0.1788  **
-## testMath:hrs_ln      0.1034  0.0546  1.8946  0.0581  -0.0036  0.2103   .
-## testVerbal:hrs_ln    0.0601  0.0442  1.3592  0.1741  -0.0266  0.1467    
+##                    estimate      se    zval    pval    ci.lb   ci.ub 
+## testMath             0.0946  0.0402  2.3547  0.0185   0.0159  0.1734   * 
+## testVerbal           0.1119  0.0341  3.2762  0.0011   0.0449  0.1788  ** 
+## testMath:hrs_ln      0.1034  0.0546  1.8946  0.0581  -0.0036  0.2103   . 
+## testVerbal:hrs_ln    0.0601  0.0442  1.3592  0.1741  -0.0266  0.1467     
 ## 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -239,30 +244,30 @@ MVRE_null</code></pre>
 <pre><code>## 
 ## Multivariate Meta-Analysis Model (k = 67; method: REML)
 ## 
-## Variance Components: 
+## Variance Components:
 ## 
 ## outer factor: study (nlvls = 47)
 ## inner factor: test  (nlvls = 2)
 ## 
-##             estim    sqrt  k.lvl  fixed   level
-## tau^2.1    0.0122  0.1102     29     no    Math
-## tau^2.2    0.0026  0.0507     38     no  Verbal
+##             estim    sqrt  k.lvl  fixed   level 
+## tau^2.1    0.0122  0.1102     29     no    Math 
+## tau^2.2    0.0026  0.0507     38     no  Verbal 
 ## 
-##         rho.Math  rho.Vrbl    Math  Vrbl
-## Math           1   -1.0000       -    no
-## Verbal   -1.0000         1      20     -
+##         rho.Math  rho.Vrbl    Math  Vrbl 
+## Math           1   -1.0000       -    no 
+## Verbal   -1.0000         1      20     - 
 ## 
-## Test for Residual Heterogeneity: 
+## Test for Residual Heterogeneity:
 ## QE(df = 65) = 72.1630, p-val = 0.2532
 ## 
-## Test of Moderators (coefficient(s) 1:2): 
+## Test of Moderators (coefficients 1:2):
 ## QM(df = 2) = 18.1285, p-val = 0.0001
 ## 
 ## Model Results:
 ## 
-##             estimate      se    zval    pval   ci.lb   ci.ub     
-## testMath      0.1379  0.0434  3.1783  0.0015  0.0528  0.2229   **
-## testVerbal    0.1168  0.0337  3.4603  0.0005  0.0506  0.1829  ***
+##             estimate      se    zval    pval   ci.lb   ci.ub 
+## testMath      0.1379  0.0434  3.1783  0.0015  0.0528  0.2229   ** 
+## testVerbal    0.1168  0.0337  3.4603  0.0005  0.0506  0.1829  *** 
 ## 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -270,38 +275,38 @@ MVRE_null</code></pre>
 MVRE_hrs &lt;- rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, 
                    data = SATcoaching,
                    random = ~ test | study, struct = &quot;UN&quot;)</code></pre>
-<pre><code>## Warning in rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, data =
-## SATcoaching, : Rows with NAs omitted from model fitting.</code></pre>
+<pre><code>## Warning in rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list, data = SATcoaching, :
+## Rows with NAs omitted from model fitting.</code></pre>
 <pre class="r"><code>MVRE_hrs</code></pre>
 <pre><code>## 
 ## Multivariate Meta-Analysis Model (k = 65; method: REML)
 ## 
-## Variance Components: 
+## Variance Components:
 ## 
 ## outer factor: study (nlvls = 46)
 ## inner factor: test  (nlvls = 2)
 ## 
-##             estim    sqrt  k.lvl  fixed   level
-## tau^2.1    0.0152  0.1234     28     no    Math
-## tau^2.2    0.0014  0.0373     37     no  Verbal
+##             estim    sqrt  k.lvl  fixed   level 
+## tau^2.1    0.0152  0.1234     28     no    Math 
+## tau^2.2    0.0014  0.0373     37     no  Verbal 
 ## 
-##         rho.Math  rho.Vrbl    Math  Vrbl
-## Math           1   -1.0000       -    no
-## Verbal   -1.0000         1      19     -
+##         rho.Math  rho.Vrbl    Math  Vrbl 
+## Math           1   -1.0000       -    no 
+## Verbal   -1.0000         1      19     - 
 ## 
-## Test for Residual Heterogeneity: 
+## Test for Residual Heterogeneity:
 ## QE(df = 61) = 67.9575, p-val = 0.2523
 ## 
-## Test of Moderators (coefficient(s) 1:4): 
+## Test of Moderators (coefficients 1:4):
 ## QM(df = 4) = 23.6459, p-val &lt; .0001
 ## 
 ## Model Results:
 ## 
-##                    estimate      se    zval    pval    ci.lb   ci.ub    
-## testMath             0.0893  0.0507  1.7631  0.0779  -0.0100  0.1887   .
-## testVerbal           0.1062  0.0357  2.9738  0.0029   0.0362  0.1762  **
-## testMath:hrs_ln      0.1694  0.0725  2.3354  0.0195   0.0272  0.3116   *
-## testVerbal:hrs_ln    0.0490  0.0459  1.0681  0.2855  -0.0409  0.1389    
+##                    estimate      se    zval    pval    ci.lb   ci.ub 
+## testMath             0.0893  0.0507  1.7631  0.0779  -0.0100  0.1887   . 
+## testVerbal           0.1062  0.0357  2.9738  0.0029   0.0362  0.1762  ** 
+## testMath:hrs_ln      0.1694  0.0725  2.3354  0.0195   0.0272  0.3116   * 
+## testVerbal:hrs_ln    0.0490  0.0459  1.0681  0.2855  -0.0409  0.1389     
 ## 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -312,11 +317,11 @@ MVRE_hrs &lt;- rma.mv(d ~ 0 + test + test:hrs_ln, V = V_list,
 <p>Experienced meta-analysts will no doubt point out that a further, alternative analytic strategy to the one described above would be to use robust variance estimation methods (RVE; <a href="https://dx.doi.org/10.1002/jrsm.5">Hedges, Tipton, &amp; Johnson</a>). However, RVE is not so much an alternative strategy as it is a complementary technique, which can be used in combination with any of the models estimated above. Robust standard errors and hypothesis tests can readily be obtained with the <a href="https://cran.r-project.org/package=clubSandwich">clubSandwich package</a>. Here’s how to do it for the random effects meta-regression model:</p>
 <pre class="r"><code>library(clubSandwich)
 coef_test(MVRE_hrs, vcov = &quot;CR2&quot;)</code></pre>
-<pre><code>##                Coef Estimate     SE  d.f. p-val (Satt) Sig.
-## 1          testMath   0.0893 0.0360 20.75       0.0218    *
-## 2        testVerbal   0.1062 0.0215 16.45       &lt;0.001  ***
-## 3   testMath:hrs_ln   0.1694 0.1010  7.90       0.1325     
-## 4 testVerbal:hrs_ln   0.0490 0.0414  7.57       0.2725</code></pre>
+<pre><code>##               Coef. Estimate     SE t-stat  d.f. p-val (Satt) Sig.
+## 1          testMath   0.0893 0.0360   2.48 20.75       0.0218    *
+## 2        testVerbal   0.1062 0.0215   4.94 16.45       &lt;0.001  ***
+## 3   testMath:hrs_ln   0.1694 0.1010   1.68  7.90       0.1325     
+## 4 testVerbal:hrs_ln   0.0490 0.0414   1.18  7.57       0.2725</code></pre>
 <p>RVE is also available in the <a href="https://CRAN.R-project.org/package=robumeta">robumeta R package</a>, but there are several differences between the implementation there and the method I’ve demonstrated here. From the user’s perspective, an advantage of robumeta is that it does all of the covariance imputation calculations “under the hood,” whereas with metafor the calculations need to be done prior to fitting the model. Beyond this, differences include:</p>
 <ul>
 <li>robumeta uses a specific random effects structure that can’t be controlled by the user, whereas metafor can be used to estimate a variety of different random effects structures;</li>

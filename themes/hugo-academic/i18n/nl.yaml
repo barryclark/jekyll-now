@@ -1,100 +1,130 @@
-# Navigation
-
 - id: toggle_navigation
   translation: Navigatiebalk
-
-# Buttons
-
-- id: btn_details
-  translation: Details
-
+- id: table_of_contents
+  translation: Inhoudsopgave
+- id: on_this_page
+  translation: Op deze pagina
+- id: back_to_top
+  translation: Terug naar boven
+- id: related
+  translation: Gerelateerd
+- id: minute_read
+  translation: minuten lezen
+- id: previous
+  translation: Vorige
+- id: next
+  translation: Volgende
+- id: figure
+  translation: 'Figuur %d:'
+- id: btn_preprint
+  translation: Preprint
 - id: btn_pdf
   translation: PDF
-
+- id: btn_cite
+  translation: Citeer
 - id: btn_slides
   translation: Dia's
-
 - id: btn_video
   translation: Video
-
 - id: btn_code
   translation: Code
-
 - id: btn_dataset
   translation: Dataset
-
 - id: btn_project
   translation: Project
-
-# About widget
-
+- id: btn_poster
+  translation: Poster
+- id: btn_source
+  translation: Brondocument
+- id: btn_copy
+  translation: Kopieer
+- id: btn_download
+  translation: Download
 - id: interests
   translation: Interesses
-
 - id: education
   translation: Educatie
-
-# Publications widget
-
-- id: more_publications
-  translation: Meer Publicaties
-
-# Posts widget
-
-- id: continue_reading
-  translation: LEES VERDER
-
+- id: user_profile_latest
+  translation: Nieuwste
+- id: see_certificate
+  translation: Bekijk certificate
+- id: present
+  translation: Present
+- id: more_pages
+  translation: Bekijk alles
 - id: more_posts
   translation: Meer Berichten
-
-# Talks widget
-
 - id: more_talks
   translation: Meer Presentaties
-
-# Publication/Talk details
-
+- id: more_publications
+  translation: Meer Publicaties
+- id: contact_name
+  translation: Naam
+- id: contact_email
+  translation: E-mailadres
+- id: contact_message
+  translation: Bericht
+- id: contact_send
+  translation: Verzend
+- id: book_appointment
+  translation: Maak een afspraak
 - id: abstract
-  translation: Korte inhoud
-
+  translation: Samenvatting
 - id: publication
   translation: Publicatie
-
 - id: publication_type
   translation: Type
-
 - id: date
   translation: Datum
-
-- id: links
-  translation: Links
-
+- id: last_updated
+  translation: Laatst bijgewerkt op
 - id: event
   translation: Evenement
-
 - id: location
   translation: Locatie
-
-# Filtering
-
-- id: filter_by_type
-  translation: Filter op type
-
-- id: filter_all
-  translation: Alles
-
-# Project details
-
+- id: pub_uncat
+  translation: Ongecategoriseerd
+- id: pub_conf
+  translation: Conferentiepaper
+- id: pub_journal
+  translation: Journalartikel
+- id: pub_preprint
+  translation: Preprint
+- id: pub_report
+  translation: Rapport
+- id: pub_book
+  translation: Boek
+- id: pub_book_section
+  translation: Boek sectie
+- id: pub_thesis
+  translation: Proefschrift
+- id: pub_patent
+  translation: Patent
 - id: open_project_site
-  translation: Ga naar Projecten pagina
-
-# Default node titles
-
+  translation: Ga naar Projectenpagina
 - id: posts
   translation: Berichten
-
 - id: publications
   translation: Publicaties
-
 - id: talks
   translation: Presentaties
+- id: projects
+  translation: Projects
+- id: search
+  translation: Search
+- id: search_placeholder
+  translation: Zoeken...
+- id: search_results
+  translation: resultaten gevonden
+- id: search_no_results
+  translation: Geen resultaten gevonden
+- id: page_not_found
+  translation: Pagina niet gevonden
+- id: 404_recommendations
+  translation: Misschien was je op zoek naar een van deze pagina's?
+- id: cookie_message
+  translation: Deze website gebruikt cookies om je de best mogelijke ervaring te bieden.
+- id: cookie_dismiss
+  translation: Accepteer cookies
+- id: cookie_learn
+  translation: Meer informatie

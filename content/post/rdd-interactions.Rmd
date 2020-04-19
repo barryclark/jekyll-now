@@ -1,6 +1,7 @@
 ---
 title: Regression discontinuities with covariate interactions in the rdd package
-author: 'James'
+authors:
+- admin
 date: '2016-01-25'
 slug: rdd-interactions
 categories: []

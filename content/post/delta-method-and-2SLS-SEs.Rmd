@@ -1,6 +1,7 @@
 ---
 title: 2SLS standard errors and the delta-method
-author: 'James'
+authors:
+- admin
 date: '2017-10-07'
 slug: delta-method-and-2SLS-SEs
 categories: []

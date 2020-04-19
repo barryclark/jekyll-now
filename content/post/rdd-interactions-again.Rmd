@@ -1,6 +1,7 @@
 ---
 title: Estimating average effects in regression discontinuities with covariate interactions
-author: 'James'
+authors:
+- admin
 date: '2016-01-27'
 slug: rdd-interactions-again
 categories: []

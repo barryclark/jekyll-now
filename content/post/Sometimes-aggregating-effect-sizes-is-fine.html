@@ -1,6 +1,7 @@
 ---
 title: 'Sometimes, aggregating effect sizes is fine'
-author: James
+authors:
+- admin
 date: '2019-07-02'
 slug: Sometimes-aggregating-effect-sizes-is-fine
 bibliography: [meta-references.bib]
@@ -146,18 +147,19 @@ MV_fit</code></pre>
     males = mean(males),
     college = mean(college)
   ) %&gt;%
-  unnest()
-
-head(corrdat_agg)</code></pre>
+  unnest()</code></pre>
+<pre><code>## Warning: `cols` is now required.
+## Please use `cols = c(es)`</code></pre>
+<pre class="r"><code>head(corrdat_agg)</code></pre>
 <pre><code>## # A tibble: 6 x 5
-##   studyid males college      es    var
-##     &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
-## 1       1  67         0  0.249  0.0239
-## 2       2  81         1 -0.0210 0.0129
-## 3       3  76.2       0  0.726  0.0819
-## 4       4  80         1  0.370  0.0431
-## 5       5  79         0 -0.0911 0.0281
-## 6       6  74         0 -0.416  0.0111</code></pre>
+##   studyid      es    var males college
+##     &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1       1  0.249  0.0239  67         0
+## 2       2 -0.0210 0.0129  81         1
+## 3       3  0.726  0.0819  76.2       0
+## 4       4  0.370  0.0431  80         1
+## 5       5 -0.0911 0.0281  79         0
+## 6       6 -0.416  0.0111  74         0</code></pre>
 <p>And here’s the meta-regression:</p>
 <pre class="r"><code>uni_fit &lt;- rma.uni(es ~ college + males, vi = var, 
                    data = corrdat_agg, method = &quot;REML&quot;)
@@ -350,9 +352,9 @@ microbenchmark(
                  data = corrdat, method = &quot;REML&quot;)
 )</code></pre>
 <pre><code>## Unit: milliseconds
-##   expr       min       lq      mean    median        uq     max neval cld
-##    uni  9.120488 10.50753  13.15923  11.16849  12.89008 114.894   100  a 
-##  multi 82.716460 94.98541 104.82378 102.25160 110.53423 211.937   100   b</code></pre>
+##   expr     min       lq      mean  median       uq      max neval
+##    uni  8.5551  8.90415  9.273009  9.0602  9.37230  12.4637   100
+##  multi 79.0437 82.05060 85.847807 83.5423 85.58925 173.5149   100</code></pre>
 <p>If the aggregation is done in advance, it is <em>way</em> quicker to fit the univariate model. The short-cut would be useful if we needed to estimate <em>lots</em> of multi-variate meta-regressions (as long as the equivalence conditions hold). For example, if we needed to bootstrap the multivariate model, we could pre-compute the aggregated effects and then just bootstrap the much simpler, much quicker univariate model.</p>
 <p>I suspect that the results I’ve presented here can be further generalized, but this will need a bit of further investigation. For one, there are also equivalences between variance estimators: using the CR2 cluster-robust variance estimator for the multivariate model is equivalent to using the HC2 heteroskedasticity-robust variance estimator for the univariate model with aggregated effects.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
 For another, the same sort of equivalence relationships hold even if there are additional random effects in the model, so long as the random effects are at the study level or higher levels of aggregation (e.g., lab effects, where labs are nested within studies).
@@ -401,16 +403,16 @@ V_k = \frac{(J_k - 1)\rho_k + 1}{J} \times S_k^2
 <li id="fn4"><p>Here’s verification with the computational example from above:</p>
 <pre class="r"><code># multivariate CR2
 coef_test(MV_fit, vcov = &quot;CR2&quot;)</code></pre>
-<pre><code>##      Coef Estimate      SE d.f. p-val (Satt) Sig.
-## 1 intrcpt  0.64656 0.17647 11.5      0.00345   **
-## 2 college  0.37027 0.18648 11.9      0.07053    .
-## 3   males -0.00763 0.00287 14.5      0.01826    *</code></pre>
+<pre><code>##     Coef. Estimate      SE t-stat d.f. p-val (Satt) Sig.
+## 1 intrcpt  0.64656 0.17647   3.66 11.5      0.00345   **
+## 2 college  0.37027 0.18648   1.99 11.9      0.07053    .
+## 3   males -0.00763 0.00287  -2.66 14.5      0.01826    *</code></pre>
 <pre class="r"><code># univariate HC2
 coef_test(uni_fit, vcov = &quot;CR2&quot;, cluster = corrdat_agg$studyid)</code></pre>
-<pre><code>##      Coef Estimate      SE d.f. p-val (Satt) Sig.
-## 1 intrcpt  0.64656 0.17622 11.5      0.00342   **
-## 2 college  0.37027 0.18597 11.9      0.06985    .
-## 3   males -0.00763 0.00287 14.5      0.01808    *</code></pre>
+<pre><code>##     Coef. Estimate      SE t-stat d.f. p-val (Satt) Sig.
+## 1 intrcpt  0.64656 0.17622   3.67 11.5      0.00342   **
+## 2 college  0.37027 0.18597   1.99 11.9      0.06985    .
+## 3   males -0.00763 0.00287  -2.66 14.5      0.01808    *</code></pre>
 <a href="#fnref4" class="footnote-back">↩</a></li>
 </ol>
 </div>

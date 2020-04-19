@@ -1,6 +1,7 @@
 ---
 title: Effective sample size aggregation
-author: James
+authors:
+- admin
 date: '2019-01-22'
 slug: effective-sample-size-aggregation
 categories: []

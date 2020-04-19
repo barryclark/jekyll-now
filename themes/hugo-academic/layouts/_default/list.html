@@ -1,40 +1,35 @@
-{{ if .Params.widgets }}
+{{- define "main" -}}
 
-{{ partial "widget_page.html" . }}
-
-{{ else }}
-
-{{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
-
-{{ partial "header_image.html" . }}
+{{ partial "page_header.html" . }}
 
 <div class="universal-wrapper">
-
-  {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
-
   {{ with .Content }}
-  <div class="article-style" itemprop="articleBody">{{ . }}</div>
+  <div class="article-style">{{ . }}</div>
   {{ end }}
 
   {{ $paginator := .Paginate .Data.Pages }}
   {{ range $paginator.Pages }}
-  <div>
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <div class="article-style">
-      {{ if .Params.summary }}
-      {{ printf "%s" .Params.summary | markdownify }}
-      {{ else if .Truncated }}
-      {{ printf "%s" .Summary | markdownify }}
-      {{ end }}
+    {{ $link := .RelPermalink }}
+    {{ $target := "" }}
+    {{ with .Params.external_link }}
+      {{ $link = . }}
+      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+    {{ end }}
+    <div>
+      <h2><a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ .Title }}</a></h2>
+      <div class="article-style">
+        {{ if .Params.summary }}
+          {{ .Params.summary | plainify | emojify }}
+        {{ else if .Params.abstract }}
+          {{ .Params.abstract | plainify | emojify | truncate 250 }}
+        {{ else if .Summary }}
+          {{ .Summary | plainify | emojify }}
+        {{ end }}
+      </div>
     </div>
-  </div>
   {{ end }}
 
   {{ partial "pagination" . }}
-
 </div>
-{{ partial "footer_container.html" . }}
-{{ partial "footer.html" . }}
 
-{{ end }}
+{{- end -}}

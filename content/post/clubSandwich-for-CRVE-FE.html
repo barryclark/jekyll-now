@@ -1,6 +1,7 @@
 ---
 title: Clustered standard errors and hypothesis tests in fixed effects models
-author: 'James'
+authors:
+- admin
 date: '2016-01-10'
 slug: clubSandwich-for-CRVE-FE
 categories: []
@@ -44,14 +45,17 @@ MVA_deaths &lt;- subset(deaths, agegr==2 &amp; dtype==2 &amp; year &lt;= 1983, s
 lm_unweighted &lt;- lm(mrate ~ 0 + legal + factor(state) + factor(year), data = MVA_deaths)</code></pre>
 <p>The <code>coef_test</code> function from <code>clubSandwich</code> can then be used to test the hypothesis that changing the minimum legal drinking age has no effect on motor vehicle deaths in this cohort (i.e., <span class="math inline">\(H_0: \gamma = 0\)</span>). The usual way to test this is to cluster the standard errors by state, calculate the robust Wald statistic, and compare that to a standard normal reference distribution. The code and results are as follows:</p>
 <pre class="r"><code># devtools::install_github(&quot;jepusto/clubSandwich&quot;) # install the clubSandwich package
-library(clubSandwich)
-coef_test(lm_unweighted, vcov = &quot;CR1&quot;, cluster = MVA_deaths$state, test = &quot;z&quot;)[&quot;legal&quot;,]</code></pre>
-<pre><code>##    Coef Estimate   SE p-val (z) Sig.
-## 1 legal     7.59 2.38   0.00143   **</code></pre>
+library(clubSandwich)</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;clubSandwich&#39;:
+##   method    from    
+##   bread.mlm sandwich</code></pre>
+<pre class="r"><code>coef_test(lm_unweighted, vcov = &quot;CR1&quot;, cluster = MVA_deaths$state, test = &quot;z&quot;)[&quot;legal&quot;,]</code></pre>
+<pre><code>##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal     7.59 2.38   3.19   0.00143   **</code></pre>
 <p>Our work argues shows that a better approach would be to use the bias-reduced linearization CRVE, together with Satterthwaite degrees of freedom. In the package, the BRL adjustment is called “CR2” because it is directly analogous to the HC2 correction used in heteroskedasticity-robust variance estimation. When applied to an OLS model estimated by <code>lm</code>, the default working model is an identity matrix, which amounts to the “working” assumption that the errors are all uncorrelated and homoskedastic. Here’s how to apply this approach in the example:</p>
 <pre class="r"><code>coef_test(lm_unweighted, vcov = &quot;CR2&quot;, cluster = MVA_deaths$state, test = &quot;Satterthwaite&quot;)[&quot;legal&quot;,]</code></pre>
-<pre><code>##    Coef Estimate   SE d.f. p-val (Satt) Sig.
-## 1 legal     7.59 2.43 25.7      0.00442   **</code></pre>
+<pre><code>##   Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal     7.59 2.43   3.12 25.7      0.00442   **</code></pre>
 <p>The Satterthwaite degrees of freedom will be different for each coefficient in the model, and so the <code>coef_test</code> function reports them right alongside the standard error. In this case, the degrees of freedom are about half of what you might expect, given that there are 51 clusters. The p-value for the CR2+Satterthwaite test is about twice as large as the p-value based on the standard Wald test. But of course, the coefficient is still statistically significant at conventional levels, and so the inference doesn’t change.</p>
 </div>
 <div id="unweighted-within-estimation" class="section level3">
@@ -61,11 +65,11 @@ coef_test(lm_unweighted, vcov = &quot;CR1&quot;, cluster = MVA_deaths$state, tes
 plm_unweighted &lt;- plm(mrate ~ legal, data = MVA_deaths, 
                       effect = &quot;twoways&quot;, index = c(&quot;state&quot;,&quot;year&quot;))
 coef_test(plm_unweighted, vcov = &quot;CR1S&quot;, cluster = &quot;individual&quot;, test = &quot;z&quot;)</code></pre>
-<pre><code>##    Coef Estimate   SE p-val (z) Sig.
-## 1 legal     7.59 2.38   0.00143   **</code></pre>
+<pre><code>##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal     7.59 2.38   3.19   0.00143   **</code></pre>
 <pre class="r"><code>coef_test(plm_unweighted, vcov = &quot;CR2&quot;, cluster = &quot;individual&quot;, test = &quot;Satterthwaite&quot;)</code></pre>
-<pre><code>##    Coef Estimate   SE d.f. p-val (Satt) Sig.
-## 1 legal     7.59 2.43 25.7      0.00442   **</code></pre>
+<pre><code>##   Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal     7.59 2.43   3.12 25.7      0.00442   **</code></pre>
 <p>For the standard approach, I’ve used the variant of the correction factor implemented in Stata (called <code>CR1S</code> in the <code>clubSandwich</code> package), but this makes very little difference in the standard error or the p-value. For the test based on CR2, the degrees of freedom are slightly different than the results based on the fitted <code>lm</code> model, but the p-values agree to four decimals. The differences in degrees of freedom are due to numerical imprecision in the calculations.</p>
 </div>
 <div id="population-weighted-estimation" class="section level3">
@@ -74,18 +78,18 @@ coef_test(plm_unweighted, vcov = &quot;CR1S&quot;, cluster = &quot;individual&qu
 <pre class="r"><code>lm_weighted &lt;- lm(mrate ~ 0 + legal + factor(state) + factor(year), 
                   weights = pop, data = MVA_deaths)
 coef_test(lm_weighted, vcov = &quot;CR1&quot;, cluster = MVA_deaths$state, test = &quot;z&quot;)[&quot;legal&quot;,]</code></pre>
-<pre><code>##    Coef Estimate   SE p-val (z) Sig.
-## 1 legal      7.5 2.16    &lt;0.001  ***</code></pre>
+<pre><code>##   Coef. Estimate   SE t-stat p-val (z) Sig.
+## 1 legal      7.5 2.16   3.47    &lt;0.001  ***</code></pre>
 <pre class="r"><code>coef_test(lm_weighted, vcov = &quot;CR2&quot;, cluster = MVA_deaths$state, test = &quot;Satterthwaite&quot;)[&quot;legal&quot;,]</code></pre>
-<pre><code>##    Coef Estimate  SE d.f. p-val (Satt) Sig.
-## 1 legal      7.5 2.3 8.65       0.0103    *</code></pre>
+<pre><code>##   Coef. Estimate  SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal      7.5 2.3   3.27 8.65       0.0103    *</code></pre>
 <p>Using population weights slightly reduces the point estimate of the effect, while also slightly increasing its precision. If you were following the standard approach, you would probably be happy with the weighted estimates and wouldn’t think about it any further. However, our recommended approach—using the CR2 variance estimator and Satterthwaite correction—produces a p-value that is an order of magnitude larger (though still significant at the conventional 5% level). The degrees of freedom are just 8.6—drastically smaller than would be expected based on the number of clusters.</p>
 <p>Even with weights, the <code>coef_test</code> function uses an “independent, homoskedastic” working model as a default for <code>lm</code> objects. In the present example, the outcome is a standardized rate and so a better assumption might be that the error variances are inversely proportional to population size. The following code uses this alternate working model:</p>
 <pre class="r"><code>coef_test(lm_weighted, vcov = &quot;CR2&quot;, 
           cluster = MVA_deaths$state, target = 1 / MVA_deaths$pop, 
           test = &quot;Satterthwaite&quot;)[&quot;legal&quot;,]</code></pre>
-<pre><code>##    Coef Estimate  SE d.f. p-val (Satt) Sig.
-## 1 legal      7.5 2.2   13      0.00467   **</code></pre>
+<pre><code>##   Coef. Estimate  SE t-stat d.f. p-val (Satt) Sig.
+## 1 legal      7.5 2.2   3.41   13      0.00467   **</code></pre>
 <p>The new working model leads to slightly smaller standard errors and a couple of additional degrees of freedom, though we remain in small-sample territory.</p>
 </div>
 <div id="robust-hausman-test" class="section level3">
@@ -95,9 +99,9 @@ coef_test(lm_weighted, vcov = &quot;CR1&quot;, cluster = MVA_deaths$state, test 
 <p>and the estimated effects are as follows:</p>
 <pre class="r"><code>lm_FE &lt;- lm(mrate ~ 0 + legal + beertaxa + factor(state) + factor(year), data = MVA_deaths)
 coef_test(lm_FE, vcov = &quot;CR2&quot;, cluster = MVA_deaths$state, test = &quot;Satterthwaite&quot;)[c(&quot;legal&quot;,&quot;beertaxa&quot;),]</code></pre>
-<pre><code>##       Coef Estimate   SE  d.f. p-val (Satt) Sig.
-## 1    legal     7.59 2.51 24.58      0.00583   **
-## 2 beertaxa     3.82 5.27  5.77      0.49663</code></pre>
+<pre><code>##      Coef. Estimate   SE t-stat  d.f. p-val (Satt) Sig.
+## 1    legal     7.59 2.51  3.019 24.58      0.00583   **
+## 2 beertaxa     3.82 5.27  0.725  5.77      0.49663</code></pre>
 <p>If the unobserved effects <span class="math inline">\(\alpha_1,...,\alpha_{51}\)</span> are uncorrelated with the regressors, then a more efficient way to estimate <span class="math inline">\(\gamma_1,\gamma_2\)</span> is by weighted least squares, with weights based on a random effects model. However, if the unobserved effects covary with <span class="math inline">\(\mathbf{r}_i, \mathbf{s}_i\)</span>, then the random-effects estimates will be biased.</p>
 <p>We can test for whether endogeneity is a problem by including group-centered covariates as additional regressors. Let <span class="math inline">\(\tilde{r}_{it} = r_{it} - \frac{1}{T}\sum_t r_{it}\)</span>, with <span class="math inline">\(\tilde{s}_{it}\)</span> defined analogously. Now estimate the regression</p>
 <p><span class="math display">\[y_{it} = \beta_t + \gamma_1 r_{it} + \gamma_2 s_{it} + \delta_1 \tilde{r}_{it} + \delta_2 \tilde{s}_{it} + \epsilon_{it},\]</span></p>
@@ -110,11 +114,11 @@ coef_test(lm_FE, vcov = &quot;CR2&quot;, cluster = MVA_deaths$state, test = &quo
 
 lm_Hausman &lt;- lm(mrate ~ 0 + legal + beertaxa + legal_cent + beer_cent + factor(year), data = MVA_deaths)
 coef_test(lm_Hausman, vcov = &quot;CR2&quot;, cluster = MVA_deaths$state, test = &quot;Satterthwaite&quot;)[1:4,]</code></pre>
-<pre><code>##         Coef Estimate   SE  d.f. p-val (Satt) Sig.
-## 1      legal   -9.180 7.62 24.94       0.2398     
-## 2   beertaxa    3.395 9.40  6.44       0.7295     
-## 3 legal_cent   16.768 8.53 33.98       0.0575    .
-## 4  beer_cent    0.424 9.25  5.86       0.9650</code></pre>
+<pre><code>##        Coef. Estimate   SE  t-stat  d.f. p-val (Satt) Sig.
+## 1      legal   -9.180 7.62 -1.2042 24.94       0.2398     
+## 2   beertaxa    3.395 9.40  0.3613  6.44       0.7295     
+## 3 legal_cent   16.768 8.53  1.9665 33.98       0.0575    .
+## 4  beer_cent    0.424 9.25  0.0458  5.86       0.9650</code></pre>
 <p>To conduct a joint test on the centered covariates, we can use the <code>Wald_test</code> function. The usual way to test this hypothesis would be to use the <code>CR1</code> variance estimator to calculate the robust Wald statistic, then use a <span class="math inline">\(\chi^2_2\)</span> reference distribution (or equivalently, compare a re-scaled Wald statistic to an <span class="math inline">\(F(2,\infty)\)</span> distribution). The <code>Wald_test</code> function reports the latter version:</p>
 <pre class="r"><code>Wald_test(lm_Hausman, constraints = c(&quot;legal_cent&quot;,&quot;beer_cent&quot;), vcov = &quot;CR1&quot;, cluster = MVA_deaths$state, test = &quot;chi-sq&quot;)</code></pre>
 <pre><code>##    Test    F d.f.  p.val

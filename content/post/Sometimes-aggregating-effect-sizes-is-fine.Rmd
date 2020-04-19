@@ -1,6 +1,7 @@
 ---
 title: 'Sometimes, aggregating effect sizes is fine'
-author: James
+authors:
+- admin
 date: '2019-07-02'
 slug: Sometimes-aggregating-effect-sizes-is-fine
 bibliography: [meta-references.bib]

@@ -1,6 +1,7 @@
 ---
 title: "New paper: procedural sensitivities of effect size measures for SCDs"
-author: 'James'
+authors:
+- admin
 date: '2018-01-11'
 slug: procedural-sensitivities-paper
 categories: []
