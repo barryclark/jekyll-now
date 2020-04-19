@@ -3,13 +3,13 @@ layout: post
 title: Writing embedded drivers in Rust isn't that hard! Part 1
 ---
 
-Recently Niklas Cölle, a friend of mine, designed a credit card sized PCB (TODO PCB schematic LINK) with
+Recently Niklas Cölle, a friend of mine, designed a credit card sized PCB ([link](/i2c-driver-schematic.pdf) to the schematic) with
 a small LED matrix, a USB Micro port for power and communication with a PC as
 well as an AT42QT1070 (a touch sensor) chip on it, all controlled by a STM32L4 microcontroller.
 
 While looking into building some small programs to test whether the thing worked,
 I noticed that the AT42QT1070 does actually not yet have a driver in written in
-Rust. Furthermore a quick look at the chip's datasheet (it's only 34 pages
+Rust. Furthermore, a quick look at the chip's datasheet (it's only 34 pages
 long) shows that this chip isn't actually a complex one to implement a
 driver for, so let's dive right into it!
 
@@ -19,16 +19,16 @@ end up confused by some of the syntax and concepts used in this post.
 
 If you do happen to know Rust but have no idea how to use Rust in embedded
 development or no idea about embedded development at all, don't worry I'll try
-to keep the embedded parts as simple as possible here and explain what is
-too complex to understand intuitively. Alternatively you might want to check out
-the [Embedded Rust Book](https://rust-embedded.github.io/book/) which explains
-lots of concepts we will be using and partly explaining here (probably better than I ever could).
+to keep the embedded parts as simple as possible here and explain concepts
+too complex to intuitively understand. Alternatively, you might want to check out
+the [Embedded Rust Book](https://rust-embedded.github.io/book/) which explains a
+lot of the concepts we will be using and partially explaining here (probably better than I ever could).
 
 ## Embedded development with Rust
 Lots of the rust embedded ecosystem evolves around a single crate called
-[embedded-hal](https://github.com/rust-embedded/embedded-hal), it essentially provides a bunch of traits for lots
-of concepts required for embedded development such as the InputPin and OutputPin
-trait for controlling single pins or more complex ones like the traits describing
+[embedded-hal](https://github.com/rust-embedded/embedded-hal), which essentially provides a bunch of traits for lots
+of interfaces common in embedded development, such as the InputPin and OutputPin
+trait for General IO pins or more complex ones like the traits describing
 the I2C (Inter Integrated Circuit) protocol.
 
 There are crates called HALs (Hardware Abstraction Layers) that implement these
@@ -37,9 +37,9 @@ the one we are about to implement) expect to be passed objects that implement
 these traits, so they can for example light up an LED by using the OutputPin trait.
 
 ## Getting started
-What the above tells us is that, at least for now, the only dependency we require
+What this means for us is that, at least for now, the only dependency we require
 is embedded-hal and maybe an implementation of a HAL for the STM32L4 for a little
-example running on our development board in the end. This means our Cargo.toml
+example running on our development board. This means our Cargo.toml
 will end up looking as follows:
 ```toml
 [dependencies]
@@ -70,10 +70,10 @@ or do some research yourself, there are lots of resources about it.
 If the master wants to send data to one of its slaves this is usually done as
 follows:
 
-1. The master sends the slave address on to the bus so in case there are multiple
+1. The master sends the slave address onto the bus so in case there are multiple
 chips on the bus they know who the following message is for (in our case this address
 can be found in chapter 4.2 I2C Address in the datasheet and has the hex value 0x1B)
-2. The master sends a register address of the slave on to the bus. For example there
+2. The master sends a register address of the slave onto the bus. For example there
 might be a register that contains an 8 bit value describing the sensitivity of our
 touch points or a register that if written 0xFF into might cause a recalibration of
 the chip etc.
@@ -82,8 +82,8 @@ the chip etc.
 ### Reading data with I2C
 If the master wants to read data from one of its slaves this is done by
 
-1. The master again sends the slave address on to the bus
-2. The master again sends a register address on to the bus, this time of course
+1. The master again sends the slave address onto the bus
+2. The master again sends a register address onto the bus, this time of course
 the address it wants to read from, e.g. an address that tells us if touch point x
 is touched right now or not.
 3. The slave will respond with the content of the register, which the master has
@@ -123,7 +123,7 @@ Some readers might wonder why we are using the `extern crate` syntax for
 our application what to do once the panic! macro is called (or we unwrap an Err, etc.)
 as this behaviour is not defined when writing a `no_std` program per default, hence we
 just need to tell Rust that we include this crate in our program but not actually use it.
-This sepcific panic implementation will (as the name says) use semihosting,
+This specific panic implementation will (as the name says) use semihosting,
 a mechanism that can be used to communicate between an embedded
 chip and an attached debugger, to print out the stack trace.
 
@@ -134,7 +134,7 @@ stm32l4xx-hal = "0.5.0"
 panic-semihosting = "0.5.3"
 cortex-m-rt = "0.6.12"
 ```
-If we attempt to compile this now stm32l4xx-hal throws an error, luckily though
+If we attempt to compile this now, stm32l4xx-hal throws an error, luckily though
 along with the error we also get the description of what to do in order to fix it
 ```
 error: This crate requires one of the following features enabled: stm32l4x1, stm32l4x2, stm32l4x3, stm32l4x4, stm32l4x5 or stm32l4x6
@@ -221,12 +221,12 @@ We don't have to understand what exactly is happening here as it is again HAL sp
 but it basically configures the pins PB10 and PB11 so we can use them with the I2C
 implementation inside our chip.
 
-The last line we need to take over from them is the one instanciating the I2C object
+The last line we need to take over from them is the one instantiating the I2C object
 ```rs
 // We use 400 khz because it was mentioned like that in the datasheet, see above
 let mut i2c = I2c::i2c1(dp.I2C1, (scl, sda), 400.khz(), clocks, &mut rcc.apb1r1);
 ```
-However this line is gonna fail us with a huge error of
+However this line is going to fail us with a huge error:
 ```
 error[E0277]: the trait bound `stm32l4xx_hal::gpio::gpiob::PB10<stm32l4xx_hal::gpio::Alternate<stm32l4xx_hal::gpio::AF4, stm32l4xx_hal::gpio::Output<stm32l4xx_hal::gpio::OpenDrain>>>: stm32l4xx_hal::i2c::SclPin<s
 tm32l4::stm32l4x2::I2C1>` is not satisfied
@@ -284,7 +284,7 @@ the rightmost bit so we want to shift it by one to the left to make space for
 the read write bit.
 
 ## Test our ID reader
-In order to test this small program we got to flash it on to our microcontroller
+In order to test this small program we have to flash it onto our microcontroller
 and afterwards attach a debugger to it somehow so we can read out the value of
 our buffer variable and thus check wether we got the expected value from our chip.
 
@@ -292,23 +292,23 @@ For both of these we need to attach a so called debug probe to the PCB, a debug
 probe is a piece of hardware that allows us to communicate with our chip and
 for example set breakpoints, read variables etc. all the stuff you'd expect a
 debugger to do for you. As you can see in the schematic of our PCB Niklas added
-few connections we can attach such a probe to (top right the SWD header) Once
+few connections we can attach such a probe to (top right the SWD header). Once
 we got these wired up with our debug probe and our probe connected to our
 computer we have to make our computer communicate with our probe. The default
-go to for this would be a software called `openocd` written in C, however there
+go-to for this would be a software called `openocd` written in C, however there
 is also a Rust equivalent of this software called `probe-rs` which we will be
 using here alongside with its integration into cargo called `cargo-flash`.
 
 A simple `cargo install cargo-flash` is enough to acquire everything we need here,
 the only thing we got do then is `cargo flash --chip=STM32L452 --example read_id --gdb --reset-halt`
 in order to tell cargo flash that we are flashing a STM32L452 chip and want it to put
-our example called read_id there. The --gdb --reset-halt arguments will then make it
+our example called read_id there. The `--gdb --reset-halt` arguments will then make it
 reset the chip to the beginning of our program, halt it there and launch a so called
 GDB server on our machine which allows us to speak with the chip through a remote GDB
 connection (GDB in case you don't know being the GNU general debugger).
 
-After cargo flash is done we fire up our GDB with `gdb target/thumbv7em-none-eabi/debug/examples/read_id`.
-Once inside GDB we can connect to our GDB server, set a breakpoint at the end of
+After cargo flash is done, we fire up our GDB with `gdb target/thumbv7em-none-eabi/debug/examples/read_id`.
+Once inside GDB, we can connect to our GDB server, set a breakpoint at the end of
 our program and continue execution till we hit it
 ```
 (gdb) target remote :1337
@@ -329,5 +329,5 @@ $1 = [46]
 ```
 And as we can see the buffer contains 46 which is 0x2E in hexadecimal, the exact
 value we wanted! This means our chip works properly and everything is set for
-part 2 where we will start reading the rest of the datasheet and implement the
+part 2, where we will start reading the rest of the datasheet and implement the
 actual driver.
