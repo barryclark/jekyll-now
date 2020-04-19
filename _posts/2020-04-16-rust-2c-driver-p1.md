@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing embedded drivers in Rust isn't that hard! Part 1
+title: Writing embedded drivers in Rust isn't that hard. Part 1
 ---
 
 Recently Niklas Cölle, a friend of mine, designed a credit card sized PCB ([link](/i2c-driver-schematic.pdf) to the schematic) with
