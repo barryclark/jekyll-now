@@ -8,6 +8,7 @@ date: 2020-02-08 00:00:00
 #description:
 #permalink:
 title: 'Bayesian Analysis of a Game for Children - Part 1: Fundamentals'
+comments_id: 5
 ---
 
 While playing a boardgame for three-year-olds with my daughter, my mind started to wander. Boardgames for young children give the player very little agency to influence the game, if any. Yet I wondered what the best playing strategy for this particular game was. The game is simple enough that I can start writing a simulation but now I am faced with the problem of how to interpret the data. How confident can I be that one strategy really is better than the other? Deriving these answers from scratch is the topic of this series.
