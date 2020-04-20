@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How cloud native is adopted and what’s coming next - All the Talks"
+title: "How cloud native is adopted and what’s coming next - All the Talks from Snyk"
 description: "Read about how and why cloud native is being adopted from Cheryl Hung, CNCF Director of Ecosystem."
 location: Virtual
 image: /images/2020-04-16-how-cloud-native-is-adopted-and-whats-coming-next.jpg
