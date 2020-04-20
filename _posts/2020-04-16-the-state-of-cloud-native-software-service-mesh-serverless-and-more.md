@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The State of Cloud Native Software - Destination: Decentralization"
+title: "The State of Cloud Native Software - Destination: Decentralization from Kong"
 description: "Read about the state of cloud native and Kubernetes in 2019 from Cheryl Hung, CNCF Director of Ecosystem."
 location: Virtual
 image: /images/2020-04-16-the-state-of-cloud-native-software-service-mesh-serverless-and-more.jpg
