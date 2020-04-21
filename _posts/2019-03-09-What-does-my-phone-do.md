@@ -2,7 +2,7 @@
 layout: post
 title: "What does my smartphone really do?"
 author: stelios
-tags: [smartphone, network, wireshark]
+tags: [smartphone, network, wireshark, hands-on]
 categories: [Network, Smartphones]
 featured: 
 description: "A post on how to setup Wireshark for mobile phone traffic monitoring."

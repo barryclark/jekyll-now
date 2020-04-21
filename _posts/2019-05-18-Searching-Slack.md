@@ -2,7 +2,7 @@
 layout: post
 title: "Slack as a searchable chat-ops sink"
 author: stelios
-tags: [slack, api, chat-ops, data extraction]
+tags: [slack, api, chat-ops, data extraction, hands-on]
 categories: [DevOps, Engineering]
 featured: 
 description: "A utility script on how to mine Slack for important ChatOps messages."

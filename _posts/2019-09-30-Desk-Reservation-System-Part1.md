@@ -2,7 +2,7 @@
 layout: post
 title: "Desk reservation system with OpenCV and Spring - Part 1"
 author: stelios
-tags: [software, opencv, spring, kotlin, hackathon]
+tags: [software, opencv, spring, kotlin, hackathon, hands-on]
 categories: [Software Development]
 featured: 
 description: "A utility script on how to mine Slack for important ChatOps messages."

@@ -2,7 +2,7 @@
 layout: post
 title: "Importing multiple tables using Sqoop"
 author: stelios
-tags: [software, hadoop, sqoop, utilities]
+tags: [software, hadoop, sqoop, utilities, hands-on]
 categories: [Big Data]
 featured: 
 description: "A simple utility bash script for one-time database table imports using Apache Sqoop."
