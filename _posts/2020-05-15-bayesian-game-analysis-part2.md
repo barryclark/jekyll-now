@@ -7,11 +7,11 @@ date: 2020-05-15
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Baysian Analysis of a Game for Children - Part 2: The Results And The Twist'
+title: 'Bayesian Analysis of a Game for Children - Part 2: The Results And The Twist'
 comments_id: 6
 ---
 
-These are the results of my foray into Baysian data analysis applied to a childrens game. This post ties the previous posts concerning simple games, probability theory and functional programming together. After recapping the rules of the particular game I will present winningest strategy, which will surprise nobody, but I will finish with a plot twist.
+These are the results of my foray into Bayesian data analysis applied to a childrens game. This post ties the previous posts concerning simple games, probability theory and functional programming together. After recapping the rules of the particular game I will present winningest strategy, which will surprise nobody, but I will finish with a plot twist.
 
 # Orchard: The Rules of the Game
  <img width="256" alt="Orchard Game" src="/blog/images/orchard/orchard-box.png">
@@ -32,7 +32,7 @@ Four sides of the dice correspond to the colored fruit. One side depicts a raven
 
 The game starts with 40 pieces of fruit and 0 raven cards in the middle. The players lose collectively if the 9<sup>th</sup> raven card is placed in the middle. If the players pick all fruit before the raven is complete, they win. The only time the players have agency is when they roll a fruit basket, because they can choose any two fruit from any trees to pick.
 
-It is an exercise in patience watching my kid perpetually ignore the obvious optimal strategy in favor of *having fun*. That is not how it works! Games should not be fun, they should be rigorously analysed and simulated using overly complex functional programming techniques! Oh... anyways, since the work is done lets see what I did.
+It is an exercise in patience watching my kid perpetually ignore the obvious optimal strategy in favor of *having fun*. That is not how it works! Games should not be fun, they should be rigorously analysed and simulated using overly complex functional programming techniques! Oh... anyways, since the work is done let's see what I did.
 
 ## The Question
 The strategical element of the game is which fruit the player picks when a fruit basket is rolled. So the obvious question becomes: what is the *best* strategy? For now, let's say the best strategy is the one that wins the most. So the question becomes: what is the strategy that produces the highest chance of winning?
@@ -63,7 +63,7 @@ For a simulated number of $$N=10^7$$ games, the results are as follows. Since th
 The data suggests that the *Pick Fullest* strategy is superior to all other strategies. This is what I assumed but I want to know how confident I can be in these results given the data.
 
 # Bayesian Analysis
-I am interested in quantifying my knowledge about the chance of winning for each strategy. In [part one of this series](/blog/2020/02/08/bayesian-game-analysis-part1/) we introduced the fundamental formulas and the notation. We are interested in the posterior probability $$P(p\vert N_W,N,S,I)$$ for the chance of winning $$p$$ for each strategy $$S$$ given the data $$N_W$$, $$N$$ and our background knowledge $$I$$. This probability is the prodocut of the prior, the likelihood, and a normalization constant. Let's think about the prior first.
+I am interested in quantifying my knowledge about the chance of winning for each strategy. In [part one of this series](/blog/2020/02/08/bayesian-game-analysis-part1/) we introduced the fundamental formulas and the notation. We are interested in the posterior probability $$P(p\vert N_W,N,S,I)$$ for the chance of winning $$p$$ for each strategy $$S$$ given the data $$N_W$$, $$N$$ and our background knowledge $$I$$. This probability is the product of the prior, the likelihood, and a normalization constant. Let's think about the prior first.
 
 ## The Prior Distribution
 The prior reflects my state of knowledge about the chances of winning. My prior knowledge is anecdotal and unsystematic. In light of $$N=10^7$$ experiments the prior is going to have a neglegible influence on the posterior distribution. Thus I just use a uniform prior $$p=const.$$ on the interval $$(0,1)$$ to simplify calculations. If we were operating with less data, then it could pay off to think more carefully about the prior. Questions like: do I really think the prior is independent of strategies? Do I have reasons to believe one strategy is better than the other? Do I honestly think the chances of winning can be close to $$0$$ or $$1$$ given that this is a childrens game? And so on. We could then have a look at [conjugate priors](https://en.wikipedia.org/wiki/Conjugate_prior#Table_of_conjugate_distributions). However, given the amount of data, we'll just leave it at uniform priors.
