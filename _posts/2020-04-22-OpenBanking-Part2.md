@@ -12,7 +12,7 @@ image: assets/images/openbanking/nesa-by-makers-IgUR1iX0mqM-unsplash.jpg
 In this blog post I will provide a step-by-step guide on how to interact with OpenBanking APIs, explaining things along the way.  
 
 In the [previous article][1] we went over the key motivations, concepts and interactions in the PSD2/OpenBanking ecosystem. 
-If you have not already, take a few minutes to read it. It explains in depth a number of concepts I touch upon below. 
+If you have not done so already, take a few minutes to read it. It explains in depth a number of concepts I touch upon below. 
 
 Going into the technical details of things, in this post I will cover  
 * how to connect to and setup a realistic OpenBanking sandbox,
@@ -23,11 +23,12 @@ Going into the technical details of things, in this post I will cover
 
 Since calling live OpenBanking APIs is reserved for licensed [TPPs][3], we will need to use a [sandbox][4].  
 I will be using the [RBS Group developer portal][5], specifically the [RBS branded sandbox][6]. <sup>[1](#footnote_1)</sup>
-I will also refer to v.3.1.0 of the OpenBanking APIs. That is the latest version supported by the sandbox as of writing this.
+I will also refer to v.3.1.0 of the OpenBanking APIs throughout this article. That is the latest version supported by 
+the sandbox as of writing this.
 
 Registration to the sandbox is straight-forward, requiring a valid e-mail for verification. 
 
-Before I proceed to the interesting bit, I need to take a few moments and explain some...
+Before I proceed to the interesting bit (calling the APIS), I need to take a few moments and explain some...
  
 ### Basic sandbox concepts
 
@@ -40,27 +41,27 @@ A Team is an isolated wrapper for
 * their transactions, 
   * between them, 
   * to/from anyone, 
-  * past or in the future.
+  * in the past or in the future.
 
 In other words, a Team is a mini-bank.  
-The reason it is called a Team is because you can invite other Dev portal users to collaborate on the data.  
+The reason it is called a Team is because you can invite other sandbox portal users to collaborate on the data.  
 You invite another user by specifying their e-mail. They must have logged in at least once.
 
 Data in a Team (i.e. Transactions and, by consequence, Balances) can be altered by API calls (namely, using the Payments API). 
-The eBanking interface (see below) is read-only and can be used to spot-check the results.
+The eBanking interface (see next sections) is read-only and can be used to spot-check the results.
 
 ![Teams](../assets/images/openbanking/02-teams.png)
 > Teams in the dashboard
 
 ##### Team details
 
+The “Team Information” values will be used when making API calls.  
 ![Team details](../assets/images/openbanking/03-team-details.png)
-> The “Team Information” values will be used when making API calls.
 
 ##### Team data
 
+A Team comes pre-provisioned with some sample data.  
 ![Seed data](../assets/images/openbanking/04-test-data.png)
-> A Team comes pre-provisioned with some sample data.
 
 The Team data is a mix of  
 * RBS-specific concepts and 
@@ -72,17 +73,16 @@ There are 3 types of customers, each one corresponding to an RBS bank “franchi
 * Private  
 A retail banking customer, with personal bank accounts only.  
 Uniquely identified by a customerNumber (10 digits) and/or a cardNumber (16 digits).  
-In real life the `customerNumber` is meant to be the date of birth plus 4 random digits.
 * Business  
 A business banking customer.  
 They belong to a company (`customerId`) and are identified by their `userId`.   
-In real life the company is the actual owner of the account(s).
+In real life the company is the actual owner of the account(s), with the users being the company's employees.
 * Cards Online  
 A business banking customer, given a corporate card. They are identified by a `username`.
 
 All Customers authenticate themselves by a few random digits of their password (6+ alphanumeric characters ) and their 
 pin (4+ digits). This is called partial-pin-partial-password or 4P.   
-All of the auto-created customers have:  
+All of the auto-created customers, when creating a new Team, have as default credentials:  
 * password: 1234567890
 * pin: 12345678
 
@@ -114,7 +114,7 @@ You can download the auto-generated data to get a first idea of the format.
 
 Team data is described in a [YAML][7] file.  
  
-The data can take one of 3 forms. 
+The data can be structured in one of 3 ways. 
 
 **Static**  
 Describe all users, with their accounts, beneficiaries, direct debits,…etc as a static snapshot.  
@@ -124,8 +124,8 @@ This capability allows for
 * breaking up of complex scenarios in multiple files, and 
 * testing in a cycle of (setup data) → API call → (assert result) → (update data) → API call → (assert result) 
 
+Dashboard after multiple data uploads.  
 ![Uploaded data](../assets/images/openbanking/06-data.png)
-> Dashboard after multiple data uploads
 
 **Dynamic**  
 This is an auto-provision of values (users, transactions,…) based on some statistical parameters.  
@@ -149,10 +149,12 @@ The sandbox provides a pseudo-eBanking environment from where to verify the resu
 
 ##### Accounts
 
+After login, you can view all the accounts defined in the Team data.  
 ![Accounts screen](../assets/images/openbanking/09-accounts.png)
 
 ##### Consents
 
+You can also view all the Consents given to Applications.  
 ![Consents](../assets/images/openbanking/10-consents.png)
 
 Revoking a consent allows you to test the API’s (and Application’s) behaviour, when the access token becomes invalid.
@@ -189,7 +191,7 @@ The sandbox gives the option for
 
 **Request authorisation**
 During the OpenBanking [OAuth flow][13] to request an access token, the Application must send a signed JWT in order to 
-identify itself (therefore proving ownership of the signing key). 
+identify itself (therefore proving ownership of the QSEAL). 
 
 The sandbox gives the option for  
 * OpenBanking-like application layer security (signed JWT), or
@@ -271,6 +273,8 @@ curl -k -X POST \
 This will return an access token (APP_ACCESS_TOKEN).
 
 **Create a consent**  
+This will create a consent to view a Customer's account information.  
+See the specific `Permissions` requested.
 ```
 curl -k -X POST \
   https://ob.rbs.useinfinite.io/open-banking/v3.1/aisp/account-access-consents \
@@ -290,9 +294,10 @@ curl -k -X POST \
   "Risk": {}
 }'
 ```  
-This will return the CONSENT_ID.
+This will return the created CONSENT_ID, awaiting approval by the Customer.
 
 **Programmatic approval**  
+As we said, we will go ahead and pretend a Customer logged in and approved the Consent request. (see `authorization_result`).
 ```
 curl --location -X GET -G -k "https://api.rbs.useinfinite.io/authorize" \
    --data-urlencode "client_id=CLIENT_ID" \
@@ -309,6 +314,8 @@ curl --location -X GET -G -k "https://api.rbs.useinfinite.io/authorize" \
 This returns the AUTHORIZATION_CODE.
 
 **Get a resource access token**  
+We can use the authorization code as proof of user acceptance. With it, we can now get an access token to start calling 
+API endpoints.  
 ```
 curl -k -X POST \
   https://ob.rbs.useinfinite.io/token \
@@ -328,7 +335,8 @@ curl -k -X GET \
 
 ### Full-on security flow
 
-These steps are the closest you can get to calling a live OpenBanking API directly.
+After seeing a quick-and-dirty example, let's see something more realistic.  
+The steps below are the closest you can get to calling a live OpenBanking API directly.
 
 #### Certificates
 
@@ -341,7 +349,7 @@ Here we will take a shortcut and
 * auto-generate a [self-signed certificate][25], and 
 * re-use it both as QWAC and QSEAL.
 
-The Bash script in the box below automates the generation of the key pair and certificate. 
+The Bash script in the expanding box below automates the generation of the key pair and certificate. 
 
 <details markdown="1">
   <summary>Click to expand!</summary>
@@ -375,7 +383,7 @@ cat client.key
 
 #### Application
 
-You will need to create a new Application with MA-TLS enabled.  
+You will need to create a new Application in the sandbox with MA-TLS enabled.  
 ![Certificates](../assets/images/openbanking/006-certificates.png)
 
 #### APIs
@@ -460,7 +468,7 @@ For this you will need to assemble and sign a JWT. Use the template in the expan
   "kid": "unknown"
 }
 
---- Body ---
+--- Payload ---
 {
   "max_age": 86400,
   "jti": "SOME_ANTI_REPLAY_UUID",
@@ -493,6 +501,8 @@ For this you will need to assemble and sign a JWT. Use the template in the expan
 }
 ```  
 </details> 
+
+`"kid": "unknown"` is a sandbox "magic" value, since there is no external JWKS endpoint to read the public key from.  
 The placeholders named `SOME_XYZ` are application-specific, for additional security.  
 You can specify a value of your choosing or leave them as-is.
 
@@ -521,7 +531,7 @@ Paste the URL in a browser and complete the consent authorisation.
 
 ![Authorization](../assets/images/openbanking/013-auth.png)
 
-After the successful consent approval the browser will be redirected back to your `REDIRECT_URI` (which 
+After the successful consent approval the browser will be redirected back to your `REDIRECT_URI` (the site of which 
 probably does not exist). What we are interested in, is the `code` URL parameter. 
 
 ![Auth code](../assets/images/openbanking/014-code.png)
@@ -538,7 +548,8 @@ curl -v -G -k \
   -d 'client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&grant_type=authorization_code&code=AUTH_CODE_FROM_URL'
 ```
 
-**Get some actual results**  
+**Call an API endpoint**  
+
 ```
 curl -v -G -k \
   --key ./client.key \
@@ -546,27 +557,38 @@ curl -v -G -k \
   https://ob.rbs.useinfinite.io/open-banking/v3.1/aisp/accounts \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
   -H 'x-fapi-financial-id: 0015800000jfwB4AAI'
-```
+```  
+TA-DAAAA! Well done!  
+You are now fully versed in OpenBanking!
 
 ## Parting thought
 
 ![Crossroads](../assets/images/openbanking/brendan-church-pKeF6Tt3c08-unsplash.jpg)
 > Photo by Brendan Church on Unsplash
- 
-Covid 
-bubbles 
-global monetary system reshaping 
-inevitably go fully digital 
 
-2 primary paradigms 
-* wallet and private key based
-crypto currencies 
+In these 2 articles ([part 1][1]) we went from the original motivation and high level concepts of the OpenBanking and PSD2 APIs 
+to a detailed hands-on walkthrough of interacting with an API.  
 
-* API and message based
-India's UPI 
+The OpenBanking APIs emerged in the aftermath of the [2007-2008 financial crisis][29] as an attempt to open up access to 
+the retail banking sector and the underlying payments infrastructure.  
+Just over 10 years later and we are witnessing a [much-much][30] larger [debt][31] and, eventually, [currency][32] crisis.
+There are many arguments on what should be done and what will eventually happen, but one thing seems inevitable: currencies 
+becoming [digital-only][33]. 
+  
+There are 2 primary avenues that lead in that end state.  
 
-The OpenBanking and PSD2 approach  
-high chance of becoming the de facto interface to the financial system 
+* Crypto-currencies, i.e. digital wallets utilizing public-private cryptography
+* API- and message-based access to the payment infrastructure.  
+OpenBanking/PSD2 falls in this category, with India's [UPI][34] being a [prominent][35], large-scale example. 
+
+These avenues are not mutually exclusive; government crypto-currencies could be kept at the settlement/infrastructure 
+layer. You can find a high-level description of the different future payment networks in my [relevant blog post][36] 
+(full series: parts [1][37], [2][38] and [3][36]) 
+
+In either case, the OpenBanking and PSD2 framework has a very high probability of becoming the de facto interface 
+to the domestic and international payments infrastructure.
+
+Hopefully these two blog posts made this space a little bit less obscure.  
 
 ## Footnotes
 
@@ -601,4 +623,15 @@ high chance of becoming the de facto interface to the financial system
   [26]: https://openbanking.atlassian.net/wiki/spaces/DZ/pages/83919096/Open+Banking+Security+Profile+-+Implementer+s+Draft+v1.1.2#OpenBankingSecurityProfile-Implementer%27sDraftv1.1.2-UKOpenBankingOIDCSecurityProfile
   [27]: https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40#section-3.1
   [28]: https://jwt.io/#debugger-io
+  [29]: https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%9308
+  [30]: https://blogs.imf.org/2020/04/20/a-global-crisis-like-no-other-needs-a-global-response-like-no-other/
+  [31]: https://www.theguardian.com/world/2020/mar/22/urgent-call-to-head-off-new-debt-crisis-in-developing-world
+  [32]: https://ftalphaville.ft.com/2020/03/26/1585218010000/What-makes-this-global-dollar-crunch-different-/
+  [33]: https://www.bis.org/publ/bppdf/bispap107.htm
+  [34]: https://en.wikipedia.org/wiki/Unified_Payments_Interface
+  [35]: https://www.mygov.in/digidhan/pages/pdf/sbi/NPCI%20Unified%20Payment%20Interface.pdf
+  [36]: https://sgerogia.github.io/Payments-Intro-Part3/
+  [37]: https://sgerogia.github.io/Payments-Intro-Part1/
+  [38]: https://sgerogia.github.io/Payments-Intro-Part2/
+  
  
