@@ -242,3 +242,7 @@ After I had all green tests, confiming that both diagonal and straight single li
 
 After I made this test pass, I added some more tests for happy path (find diagonal word, given it exists in a grid, find horizaontal work given it exists in a grid) and at the end I added a test for a sad path (find a word given it does not exist). Fortunaltelly, the last 3 tests were green from the beginning.
 
+
+And as a last thing, a test coverage of the whole solution. I'm pretty satisfied with this coverage (it's really high, but it's because this is a simple and small project), and also this tests saved me some work, by just failing after doing some changes, so i could fix them immiediately.
+
+![](images/test_coverage.png)
