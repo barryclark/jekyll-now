@@ -5,7 +5,7 @@
     <link>/authors/david-rindskopf/</link>
       <atom:link href="/authors/david-rindskopf/index.xml" rel="self" type="application/rss+xml" />
     <description>David Rindskopf</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 18 Jul 2014 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 18 Jul 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>David Rindskopf</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Analyzing single-case designs: d, G, hierarchical models, Bayesian estimators, generalized additive models, and the hopes and fears of researchers about analyses</title>
       <link>/publication/analyzing-scd-hopes-and-fears/</link>
-      <pubDate>Fri, 18 Jul 2014 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
       <guid>/publication/analyzing-scd-hopes-and-fears/</guid>
       <description></description>
     </item>

@@ -3,7 +3,7 @@ title = "A history of meta-regression: Technical, conceptual, and practical deve
 date = 2018-12-27T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Elizabeth Tipton","James E. Pustejovsky", "Hedyeh Ahmadi"]
+authors = ["Elizabeth Tipton", "James E. Pustejovsky", "Hedyeh Ahmadi"]
 
 # Publication type.
 # Legend:

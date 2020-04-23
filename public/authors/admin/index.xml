@@ -687,6 +687,14 @@ coef_test(uni_fit, vcov = &amp;quot;CR2&amp;quot;, cluster = corrdat_agg$studyid
     </item>
     
     <item>
+      <title>Interventions to enhance self-efficacy in cancer patients and survivors: A meta-analysis of randomized controlled trials</title>
+      <link>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Converting from odds ratios to standardized mean differences: What to do with logistic regression coefficients?</title>
       <link>/converting-odds-ratios-to-standardized-mean-differences/</link>
       <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
@@ -752,6 +760,30 @@ SMDs &amp;lt;-
   theme_light()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/Converting-odds-ratios-to-standardized-mean-differences_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Examining the effects of social stories on challenging behavior and prosocial skills in young children: A systematic review and meta-analysis</title>
+      <link>/publication/effects-of-social-stories-on-challenging-behavior-and-prosocial-skills/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/effects-of-social-stories-on-challenging-behavior-and-prosocial-skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effects of psychosocial interventions on meaning and purpose in adults with cancer: A systematic review and meta-analysis</title>
+      <link>/publication/psychosocial-interventions-meaning-and-purpose/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/psychosocial-interventions-meaning-and-purpose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An examination of measurement procedures and characteristics of baseline outcome data in single-case research</title>
+      <link>/publication/measurement-procedures-and-baseline-outcomes/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/measurement-procedures-and-baseline-outcomes/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1091,18 +1123,11 @@ Corrections. R package version 0.3.5. &lt;a href=&#34;https://github.com/jepusto
     </item>
     
     <item>
-      <title>An example preprint / working paper</title>
-      <link>/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures</title>
+      <link>/publication/procedural-sensitivities-of-scd-effect-sizes/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/procedural-sensitivities-of-scd-effect-sizes/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1512,6 +1537,38 @@ ESS = \frac{N^2}{\sum_{j=1}^J n_j^2 / ESS_j}.
     </item>
     
     <item>
+      <title>Current practices in meta-regression in psychology, education, and medicine</title>
+      <link>/publication/current-practices-in-meta-regression/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/current-practices-in-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A history of meta-regression: Technical, conceptual, and practical developments between 1974 and 2018</title>
+      <link>/publication/history-of-meta-regression/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/history-of-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing for funnel plot asymmetry of standardized mean differences</title>
+      <link>/publication/testing-for-funnel-plot-asymmetry-of-smds/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/testing-for-funnel-plot-asymmetry-of-smds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models</title>
+      <link>/publication/rve-in-fixed-effects-models/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/rve-in-fixed-effects-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Easily simulate thousands of single-case designs</title>
       <link>/easily-simulate-thousands-of-single-case-designs/</link>
       <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
@@ -1598,6 +1655,14 @@ If you, dear reader, would be interested in helping to pursue any of these direc
 &lt;p&gt;I’m very happy to share a new paper, co-authored with my student Danny Swan, “A gradual effects model for single-case designs,” which is now available online at &lt;em&gt;Multivariate Behavioral Research&lt;/em&gt;. You can access the published version &lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/00273171.2018.1466681?journalCode=hmbr20&#34;&gt;at the journal website&lt;/a&gt; (&lt;a href=&#34;https://www.tandfonline.com/eprint/dkVfazwZaxnyaa9MfUjw/full&#34;&gt;click here for free access while supplies last&lt;/a&gt;) or &lt;a href=&#34;https://psyarxiv.com/vh964/&#34;&gt;the pre-print on PsyArxiv&lt;/a&gt; (always free!). Here’s &lt;a href=&#34;/publication/gradual-effects-model&#34;&gt;the abstract&lt;/a&gt; and &lt;a href=&#34;https://osf.io/uzkq6/&#34;&gt;the supplementary materials&lt;/a&gt;. Danny wrote R functions for fitting the model, (available as part of the &lt;a href=&#34;/software/singlecasees/&#34;&gt;SingleCaseES package&lt;/a&gt;) as well as a &lt;a href=&#34;https://jepusto.shinyapps.io/gem-scd/&#34;&gt;slick web interface&lt;/a&gt;, if you prefer to point-and-click.&lt;/p&gt;
 &lt;p&gt;This paper grew out of Danny’s qualifying process (QP), which is the major exam that our doctoral students have to pass before they can begin their dissertation work. For the QP, students work with a faculty advisor to develop an extensive literature review and proposal for an original research project. They produce a written research proposal, then take written and oral exams on their work. For Danny’s QP, he picked up one of the many loose ends in &lt;a href=&#34;/publication/operationally-comparable-effect-sizes&#34;&gt;my dissertation&lt;/a&gt;, studied up on generalized linear models to understand how to express and fit the model, and developed a simulation study evaluating the model. After he successfully passed his QP, we worked together to refine the estimation methods and the simulation design, and then draft a manuscript (much of it cribbed from his QP proposal). I’m very proud and pleased that Danny continued to develop the work and saw it through to a first-authored publication.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>A gradual effects model for single-case designs</title>
+      <link>/publication/gradual-effects-model/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/gradual-effects-model/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1807,6 +1872,30 @@ Fisher’s &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; is the var
     </item>
     
     <item>
+      <title>Single-case synthesis tools II: Comparing overlap measures and parametric effect sizes for synthesizing antecedent sensory-based interventions</title>
+      <link>/publication/scd-synthesis-tools-ii/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/scd-synthesis-tools-ii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Single-case synthesis tools I: Evaluating the quality and rigor of research on antecedent sensory-based interventions</title>
+      <link>/publication/scd-synthesis-tools-i/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/scd-synthesis-tools-i/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using response ratios for meta-analyzing single-case designs with behavioral outcomes</title>
+      <link>/publication/using-response-ratios/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/using-response-ratios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>New paper: procedural sensitivities of effect size measures for SCDs</title>
       <link>/procedural-sensitivities-paper/</link>
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
@@ -1856,6 +1945,14 @@ Fisher’s &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; is the var
 &lt;p&gt;Second, I brought &lt;a href=&#34;/files/Gradual-effects-model-poster-IES-2018-01-10.pdf&#34;&gt;a poster&lt;/a&gt; presenting some work from my IES-funded methods grant. Thanks very much to the folks who stopped by to talk during the poster session! Y’all gave me some very helpful feedback about technical aspects of the work and about how to better contextualize it for single case researchers.&lt;/p&gt;
 &lt;p&gt;If you didn’t make it: this project was joint work with Danny Swan, a doctoral student in our Quantitative Methods program. It involved developing a model for estimating effect sizes from single-case designs where the effects of the intervention take time to reach full potency. Rather than assuming that the intervention produces immediate shifts in the level of the outcome, we model the effects using an impulse response function (cribbed from &lt;a href=&#34;http://www.jstor.org/stable/2285379&#34;&gt;an old paper by Box and Tiao&lt;/a&gt;) that leads to non-linear trends in response to the introduction of the intervention. Using an impulse response function also makes it possible to model more complex design patterns, like treatment reversal designs with returns-to-baseline and treatment re-introduction phases, in a very parsimonious way. Check out &lt;a href=&#34;https://osf.io/gaxrv/&#34;&gt;the full paper&lt;/a&gt;, the &lt;a href=&#34;https://github.com/jepusto/SingleCaseES&#34;&gt;accompanying R package&lt;/a&gt;, and Danny’s &lt;a href=&#34;https://jepusto.shinyapps.io/gem-scd/&#34;&gt;interactive web-app&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Introduction to the special issue on single-case systematic reviews and meta-analysis</title>
+      <link>/publication/rase-special-issue-introduction/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/rase-special-issue-introduction/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -2489,6 +2586,22 @@ coef_test(MVRE_hrs, vcov = &amp;quot;CR2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>A meta-analysis of school-based group contingency interventions for students with challenging behavior: An update</title>
+      <link>/publication/school-based-group-contingencies-meta-analysis/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/school-based-group-contingencies-meta-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A meta-analysis of technology-aided instruction and intervention for students with ASD</title>
+      <link>/publication/taii-meta-analysis/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/taii-meta-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The siren song of significance</title>
       <link>/siren-song-of-significance/</link>
       <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
@@ -2670,6 +2783,30 @@ These trends seem mostly to hold for the other sample size distributions I exami
 
 &lt;p&gt;One of the papers that came out of my dissertation work (&lt;a href=&#34;/files/Measurement-comparable-ES.pdf&#34;&gt;Pustejovsky, 2015&lt;/a&gt;) introduced an effect size metric called the &lt;strong&gt;log response ratio&lt;/strong&gt; (or LRR) for use in meta-analysis of single-case research—particularly for single-case studies that measure behavioral outcomes through systematic direct observation. The original paper was pretty technical since it focused mostly on a formal measurement model for behavioral observation data. I’ve just completed a tutorial paper that demonstrates how to use the LRR for meta-analyzing single-case studies with behavioral outcomes. In this paper, I’ve tried to present the methods in as accessible a manner as I could muster, to provide a sort of “user’s guide” for researchers wanting to apply the LRR for their own work. You can find the &lt;a href=&#34;https://osf.io/4fe6u/&#34;&gt;working paper&lt;/a&gt; and &lt;a href=&#34;https://osf.io/c3fe9/&#34;&gt;supplementary materials&lt;/a&gt; (including data and replication code) on the Open Science Framework. I would welcome your feedback and questions about this work!&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Functional assessment-based interventions for students with or at-risk for high incidence disabilities: Field-testing single-case synthesis methods</title>
+      <link>/publication/fabi-meta-analysis/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/fabi-meta-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research synthesis and meta-analysis of single-case designs</title>
+      <link>/publication/meta-analysis-of-scd/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/meta-analysis-of-scd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Between-case standardized mean difference effect sizes for single-case designs: A primer and tutorial using the scdhlm web application</title>
+      <link>/publication/bc-smd-primer-and-tutorial/</link>
+      <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/bc-smd-primer-and-tutorial/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -4458,6 +4595,14 @@ coef_test(lm_Hausman, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state
     </item>
     
     <item>
+      <title>Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression</title>
+      <link>/publication/rve-for-meta-regression/</link>
+      <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/rve-for-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Special Education Pro-Sem</title>
       <link>/sped-pro-sem-again/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
@@ -4522,23 +4667,11 @@ coef_test(lm_Hausman, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state
     </item>
     
     <item>
-      <title>An example journal article</title>
-      <link>/publication/journal-article/</link>
+      <title>Measurement-comparable effect sizes for single-case studies of free-operant behavior</title>
+      <link>/publication/measurement-comparable-effect-sizes/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>/publication/measurement-comparable-effect-sizes/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -4573,6 +4706,22 @@ coef_test(lm_Hausman, vcov = &amp;quot;CR2&amp;quot;, cluster = MVA_deaths$state
 &lt;/ul&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>A meta-analytic approach to examine the relationship between religion/spirituality and mental health in cancer</title>
+      <link>/publication/religion-spirituality-mental-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/religion-spirituality-mental-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A meta-analytic review of religious or spiritual involvement and social health among cancer patients</title>
+      <link>/publication/religion-spirituality-social-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/religion-spirituality-social-health/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -4744,6 +4893,14 @@ summary(m3_metafor)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>Four methods for analyzing partial interval recording data, with application to single-case research</title>
+      <link>/publication/four-methods-for-pir/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/four-methods-for-pir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>New article: Four methods for analyzing PIR data</title>
       <link>/four-methods-for-analyzing-pir-data/</link>
       <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
@@ -4816,6 +4973,14 @@ shine_scd()&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>Design-comparable effect sizes in multiple baseline designs: A general modeling framework</title>
+      <link>/publication/design-comparable-effect-sizes/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/design-comparable-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Wanted: PIR data</title>
       <link>/wanted-pir-data/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
@@ -4837,6 +5002,14 @@ shine_scd()&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>Alternating renewal process models for behavioral observation: Simulation methods and validity implications</title>
+      <link>/publication/arp-for-behavioral-observation/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/arp-for-behavioral-observation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>New article: Design-comparable effect sizes in multiple baseline designs: A general modeling framework</title>
       <link>/design-comparable-effect-sizes-in-multiple-baseline-designs/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
@@ -4847,6 +5020,14 @@ shine_scd()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;My article with Larry Hedges and Will Shadish, titled “Design-comparable effect sizes in multiple baseline designs: A general modeling framework” has been accepted at Journal of Educational and Behavioral Statistics. The abstract is below. Here’s the article at &lt;a href=&#34;http://doi.org/10.3102/1076998614547577&#34;&gt;the journal website&lt;/a&gt;. &lt;a href=&#34;/files/Effect-sizes-in-multiple-baseline-designs-JEBS.pdf&#34;&gt;Postprint&lt;/a&gt; and &lt;a href=&#34;/files/Effect-sizes-in-multiple-baseline-designs-Simulation-results.pdf&#34;&gt;supporting materials&lt;/a&gt; are available. An R package that implements the proposed methods is &lt;a href=&#34;/getting-started-with-scdhlm/&#34;&gt;available here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;In single-case research, the multiple baseline design is a widely used approach for evaluating the effects of interventions on individuals. Multiple baseline designs involve repeated measurement of outcomes over time and the controlled introduction of a treatment at different times for different individuals. This article outlines a general approach for defining effect sizes in multiple baseline designs that are directly comparable to the standardized mean difference from a between-subjects randomized experiment. The target, design-comparable effect size parameter can be estimated using restricted maximum likelihood together with a small-sample correction analogous to Hedges’ g. The approach is demonstrated using hierarchical linear models that include baseline time trends and treatment-by-time interactions. A simulation compares the performance of the proposed estimator to that of an alternative, and an application illustrates the model-fitting process.&lt;/em&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Analyzing single-case designs: d, G, hierarchical models, Bayesian estimators, generalized additive models, and the hopes and fears of researchers about analyses</title>
+      <link>/publication/analyzing-scd-hopes-and-fears/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/analyzing-scd-hopes-and-fears/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -5296,6 +5477,22 @@ small-sample corrections to the cluster-robust estimators, based on the bias-red
 &lt;li&gt;I had to switch from &lt;code&gt;maply&lt;/code&gt; to &lt;code&gt;mdply&lt;/code&gt; as a result of (3).&lt;/li&gt;
 &lt;/ol&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Analysis and meta-analysis of single-case designs with a standardized mean difference statistic: A primer and applications</title>
+      <link>/publication/bc-smd-primer-and-applications/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/bc-smd-primer-and-applications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Converting from d to r to z when the design uses extreme groups, dichotomization, or experimental control</title>
+      <link>/publication/converting-from-d-to-r-to-z/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/converting-from-d-to-r-to-z/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -5826,6 +6023,14 @@ summary(rma_Z &amp;lt;- rma(yi = Z, vi = 1 / df, data = ICC, subset = lowIntAxis
     </item>
     
     <item>
+      <title>A standardized mean difference effect size for multiple baseline designs</title>
+      <link>/publication/smd-for-mbd/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/smd-for-mbd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Current projects</title>
       <link>/current-projects/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
@@ -5845,23 +6050,37 @@ summary(rma_Z &amp;lt;- rma(yi = Z, vi = 1 / df, data = ICC, subset = lowIntAxis
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+      <title>A d-statistic for single-case designs that is equivalent to the usual between-groups d-statistics</title>
+      <link>/publication/between-groups-d-statistic/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/between-groups-d-statistic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operationally comparable effect sizes for meta-analysis of single-case research</title>
+      <link>/publication/operationally-comparable-effect-sizes/</link>
+      <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/operationally-comparable-effect-sizes/</guid>
+      <description>&lt;p&gt;This thesis studies quantitative methods for summarizing and synthesizing single-case studies, a class of research designs for evaluating the effects of interventions through repeated measurement of individuals. Despite long-standing interest in meta-analytic synthesis of single-case research, there remains a lack of consensus about appropriate methods, even about the most basic question of what effect size metrics are useful and appropriate. I argue that operational comparability, or invariance to heterogeneous operational procedures, is crucial property for an effect size metric. I then consider two problems with operational comparability that arise in single-case research. The first problem is to find effect sizes that can be applied across studies that use different research designs, such as single-case designs and two-group randomized experiments. The second problem is to find effect sizes that can be applied across studies that use varied operations for measuring the same construct. To address each of these problems, I propose structural models that capture essential features of multiple relevant operations (either design-related operations or measurement-related operations). I then use these structural models to precisely define target effect size parameters and to consider identification issues and estimation strategies.&lt;/p&gt;
+&lt;p&gt;Chapter 1 defines operational comparability and situates the concept within the broad methodological concerns of meta-analysis, then reviews relevant features of single-case research and previously proposed effect sizes. Chapter 2 describes an abstract set of modeling criteria for constructing design-comparable effect sizes. Chapters 3 applies the general criteria to the case of standardized mean differences and proposes an effect size estimator based on restricted maximum likelihood. Chapter 4 presents several applications of the proposed models and methods. Chapter 5 proposes measurement-comparability model and defines effect size measures for use in studies of free-operant behavior, one of the most common classes of outcomes in single-case research. Chapter 6 extends the proposed effect size models to incorporate more complex features, including time trends and serial dependence, and studies a method of estimating those models through a combination of marginal quasi-likelihood and Gaussian pseudo-likelihood estimating equations. Chapter 7 collects various further extensions, areas for further research, and concluding thoughts.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>A standardized mean difference effect size for single case designs</title>
+      <link>/publication/smd-for-scd/</link>
+      <pubDate>Tue, 14 Aug 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/smd-for-scd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Question-order effects in social network name generators</title>
+      <link>/publication/question-order-effects/</link>
+      <pubDate>Thu, 01 Oct 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/question-order-effects/</guid>
+      <description></description>
     </item>
     
   </channel>

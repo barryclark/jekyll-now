@@ -3,7 +3,7 @@ title = "Current practices in meta-regression in psychology, education, and medi
 date = 2019-01-07T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Elizabeth Tipton","James E. Pustejovsky", "Hedyeh Ahmadi"]
+authors = ["Elizabeth Tipton", "James E. Pustejovsky", "Hedyeh Ahmadi"]
 
 # Publication type.
 # Legend:
