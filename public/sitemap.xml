@@ -73,6 +73,36 @@
   </url>
   
   <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/measurement-procedures-and-baseline-outcomes/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/daniel-m.-swan/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/kyle-w.-english/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/talk/srsm-2019-generalized-excess-significance-test/</loc>
     <lastmod>2019-07-22T13:30:00+00:00</lastmod>
   </url>
@@ -85,11 +115,6 @@
   <url>
     <loc>/sometimes-aggregating-effect-sizes-is-fine/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -109,16 +134,6 @@
   
   <url>
     <loc>/authors/mark-berendsen/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
     <lastmod>2019-06-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -195,26 +210,6 @@
   <url>
     <loc>/authors/kelly-trevino/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/3/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/measurement-procedures-and-baseline-outcomes/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/daniel-m.-swan/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/kyle-w.-english/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -303,6 +298,16 @@
   </url>
   
   <url>
+    <loc>/authors/melissa-a.-rodgers/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/testing-for-funnel-plot-asymmetry-of-smds/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
@@ -335,16 +340,6 @@
   <url>
     <loc>/publication/history-of-meta-regression/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/melissa-a.-rodgers/</loc>
-    <lastmod>2018-11-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/testing-for-funnel-plot-asymmetry-of-smds/</loc>
-    <lastmod>2018-11-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -408,7 +403,7 @@
   </url>
   
   <url>
-    <loc>/authors/hariharan-swaminathanjames-e.-pustejovsky/</loc>
+    <loc>/authors/hariharan-swaminathan/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
   </url>
   

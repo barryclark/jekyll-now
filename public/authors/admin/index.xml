@@ -278,6 +278,14 @@ where &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_{jk}\)&lt;/span&gt; i
     </item>
     
     <item>
+      <title>An examination of measurement procedures and characteristics of baseline outcome data in single-case research</title>
+      <link>/publication/measurement-procedures-and-baseline-outcomes/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/measurement-procedures-and-baseline-outcomes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sometimes, aggregating effect sizes is fine</title>
       <link>/sometimes-aggregating-effect-sizes-is-fine/</link>
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
@@ -775,14 +783,6 @@ SMDs &amp;lt;-
       <link>/publication/psychosocial-interventions-meaning-and-purpose/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       <guid>/publication/psychosocial-interventions-meaning-and-purpose/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>An examination of measurement procedures and characteristics of baseline outcome data in single-case research</title>
-      <link>/publication/measurement-procedures-and-baseline-outcomes/</link>
-      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/measurement-procedures-and-baseline-outcomes/</guid>
       <description></description>
     </item>
     
@@ -1479,6 +1479,14 @@ school_summaries %&amp;gt;%
     </item>
     
     <item>
+      <title>Testing for funnel plot asymmetry of standardized mean differences</title>
+      <link>/publication/testing-for-funnel-plot-asymmetry-of-smds/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/testing-for-funnel-plot-asymmetry-of-smds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Effective sample size aggregation</title>
       <link>/effective-sample-size-aggregation/</link>
       <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
@@ -1549,14 +1557,6 @@ ESS = \frac{N^2}{\sum_{j=1}^J n_j^2 / ESS_j}.
       <link>/publication/history-of-meta-regression/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       <guid>/publication/history-of-meta-regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Testing for funnel plot asymmetry of standardized mean differences</title>
-      <link>/publication/testing-for-funnel-plot-asymmetry-of-smds/</link>
-      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/testing-for-funnel-plot-asymmetry-of-smds/</guid>
       <description></description>
     </item>
     
@@ -1642,6 +1642,14 @@ This might let researchers test their skills under more challenging and ambiguou
 If you, dear reader, would be interested in helping to pursue any of these directions, or if you have other, better ideas for how to make use of this tool, I would love to hear from you.&lt;/p&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Between-case standardized effect size analysis of single case design: Examination of the two methods</title>
+      <link>/publication/bcsmd-examination-of-two-methods/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/bcsmd-examination-of-two-methods/</guid>
+      <description></description>
     </item>
     
     <item>

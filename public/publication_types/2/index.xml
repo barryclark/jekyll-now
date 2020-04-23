@@ -5,12 +5,20 @@
     <link>/publication_types/2/</link>
       <atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>2</title>
       <link>/publication_types/2/</link>
     </image>
+    
+    <item>
+      <title>An examination of measurement procedures and characteristics of baseline outcome data in single-case research</title>
+      <link>/publication/measurement-procedures-and-baseline-outcomes/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/measurement-procedures-and-baseline-outcomes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Interventions to enhance self-efficacy in cancer patients and survivors: A meta-analysis of randomized controlled trials</title>
@@ -45,6 +53,14 @@
     </item>
     
     <item>
+      <title>Testing for funnel plot asymmetry of standardized mean differences</title>
+      <link>/publication/testing-for-funnel-plot-asymmetry-of-smds/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/testing-for-funnel-plot-asymmetry-of-smds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Current practices in meta-regression in psychology, education, and medicine</title>
       <link>/publication/current-practices-in-meta-regression/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
@@ -57,14 +73,6 @@
       <link>/publication/history-of-meta-regression/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       <guid>/publication/history-of-meta-regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Testing for funnel plot asymmetry of standardized mean differences</title>
-      <link>/publication/testing-for-funnel-plot-asymmetry-of-smds/</link>
-      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/testing-for-funnel-plot-asymmetry-of-smds/</guid>
       <description></description>
     </item>
     

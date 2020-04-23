@@ -6,7 +6,8 @@ authors:
 - Samuel L. Odom
 - Erin E. Barton
 - Brian Reichow
-- Hariharan Swaminathan","James E. Pustejovsky
+- Hariharan Swaminathan
+- admin
 publishDate: "2018-06-02T00:00:00"
 title: "Between-case standardized effect size analysis of single case design: Examination of the two methods"
 publication: "_Research in Developmental Disabilities, 79_, 88-96"
