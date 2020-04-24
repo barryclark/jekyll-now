@@ -13,6 +13,9 @@ featured: false
 image: 
 projects: []
 tags: 
+- robust variance estimation
+- panel data
+- fixed effectss
 slides: 
 summary: 
 links:

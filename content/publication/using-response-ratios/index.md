@@ -12,6 +12,12 @@ featured: false
 image: 
 projects: []
 tags: 
+- effect size
+- meta-analysis
+- response ratio
+- robust variance estimation
+- single-case design
+
 slides: 
 summary: 
 links:

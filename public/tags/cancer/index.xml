@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cancer | James E. Pustejovsky</title>
+    <link>/tags/cancer/</link>
+      <atom:link href="/tags/cancer/index.xml" rel="self" type="application/rss+xml" />
+    <description>cancer</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>cancer</title>
+      <link>/tags/cancer/</link>
+    </image>
+    
+    <item>
+      <title>Psychosocial interventions for cancer survivors: A meta-analysis of effects on positive affect</title>
+      <link>/publication/psychosocial-interventions-for-positive-affect/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/psychosocial-interventions-for-positive-affect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interventions to enhance self-efficacy in cancer patients and survivors: A meta-analysis of randomized controlled trials</title>
+      <link>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effects of psychosocial interventions on meaning and purpose in adults with cancer: A systematic review and meta-analysis</title>
+      <link>/publication/psychosocial-interventions-meaning-and-purpose/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/psychosocial-interventions-meaning-and-purpose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A meta-analytic approach to examine the relationship between religion/spirituality and mental health in cancer</title>
+      <link>/publication/religion-spirituality-mental-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/religion-spirituality-mental-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A meta-analytic review of religious or spiritual involvement and social health among cancer patients</title>
+      <link>/publication/religion-spirituality-social-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/religion-spirituality-social-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Religion, spirituality, and physical health in cancer patients: A meta-analysis</title>
+      <link>/publication/religion-spirituality-physical-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/religion-spirituality-physical-health/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

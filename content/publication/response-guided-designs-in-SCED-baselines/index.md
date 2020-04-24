@@ -16,6 +16,9 @@ image:
   focal_point: "Center"
 projects: []
 tags: 
+- single-case design
+- response-guided design
+
 slides: 
 summary: 
 links:

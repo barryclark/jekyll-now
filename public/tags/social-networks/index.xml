@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>social networks | James E. Pustejovsky</title>
+    <link>/tags/social-networks/</link>
+      <atom:link href="/tags/social-networks/index.xml" rel="self" type="application/rss+xml" />
+    <description>social networks</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 01 Oct 2009 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>social networks</title>
+      <link>/tags/social-networks/</link>
+    </image>
+    
+    <item>
+      <title>Question-order effects in social network name generators</title>
+      <link>/publication/question-order-effects/</link>
+      <pubDate>Thu, 01 Oct 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/question-order-effects/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

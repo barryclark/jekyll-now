@@ -17,6 +17,10 @@ featured: false
 image: 
 projects: []
 tags: 
+- single-case design
+- design-comparable SMD
+- effect size
+- hierarchical models
 slides: 
 summary: 
 links:

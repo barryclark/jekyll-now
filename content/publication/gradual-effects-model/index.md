@@ -13,6 +13,10 @@ featured: false
 image: 
 projects: []
 tags: 
+- effect size
+- non-linear model
+- response ratio
+- single-case design
 slides: 
 summary: 
 links:

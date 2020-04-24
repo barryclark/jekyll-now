@@ -12,6 +12,14 @@ featured: false
 image: 
 projects: []
 tags: 
+- alternating renewal process
+- design-comparable SMD
+- effect size
+- hierarchical models
+- response ratio
+- single-case design
+- systematic direct observation
+
 slides: 
 summary: 
 links:

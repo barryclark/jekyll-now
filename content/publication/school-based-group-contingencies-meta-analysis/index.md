@@ -14,6 +14,11 @@ featured: false
 image: 
 projects: []
 tags: 
+- design-comparable SMD
+- meta-analysis
+- single-case design
+- systematic review
+
 slides: 
 summary: 
 links:

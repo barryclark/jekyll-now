@@ -48,13 +48,38 @@
   </url>
   
   <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/response-guided-design/</loc>
+    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/s.-natasha-beretvas/</loc>
+    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/single-case-design/</loc>
+    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/response-guided-designs-in-sced-baselines/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cancer/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,6 +103,21 @@
   </url>
   
   <url>
+    <loc>/tags/meta-analysis/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/positive-affect/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/psycho-social-intervention/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/psychosocial-interventions-for-positive-affect/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
   </url>
@@ -93,6 +133,11 @@
   </url>
   
   <url>
+    <loc>/tags/systematic-review/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/distribution-theory/</loc>
     <lastmod>2019-09-30T00:00:00+00:00</lastmod>
   </url>
@@ -104,11 +149,6 @@
   
   <url>
     <loc>/tags/effect-sizes/</loc>
-    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/meta-analysis/</loc>
     <lastmod>2019-09-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -133,17 +173,17 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/measurement-procedures-and-baseline-outcomes/</loc>
     <lastmod>2019-08-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/kyle-w.-english/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/systematic-direct-observation/</loc>
     <lastmod>2019-08-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -169,6 +209,11 @@
   
   <url>
     <loc>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</loc>
+    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/self-efficacy/</loc>
     <lastmod>2019-06-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -248,17 +293,17 @@
   </url>
   
   <url>
+    <loc>/tags/meaning-and-purpose/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/code-folding-with-blogdown-academic/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/package-downloads/</loc>
-    <lastmod>2019-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
     <lastmod>2019-04-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -278,7 +323,22 @@
   </url>
   
   <url>
+    <loc>/tags/alternating-renewal-process/</loc>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/non-overlap-measure/</loc>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/procedural-sensitivities-of-scd-effect-sizes/</loc>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/response-ratio/</loc>
     <lastmod>2019-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -338,6 +398,11 @@
   </url>
   
   <url>
+    <loc>/tags/publication-bias/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/testing-for-funnel-plot-asymmetry-of-smds/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -373,8 +438,28 @@
   </url>
   
   <url>
+    <loc>/tags/meta-regression/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/history-of-meta-regression/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/fixed-effectss/</loc>
+    <lastmod>2018-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/panel-data/</loc>
+    <lastmod>2018-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/robust-variance-estimation/</loc>
+    <lastmod>2018-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -429,6 +514,11 @@
   
   <url>
     <loc>/authors/brian-reichow/</loc>
+    <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/design-comparable-smd/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -488,6 +578,11 @@
   </url>
   
   <url>
+    <loc>/tags/non-linear-model/</loc>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/clubsandwich-at-rug/</loc>
     <lastmod>2018-04-26T00:00:00+00:00</lastmod>
   </url>
@@ -539,6 +634,11 @@
   
   <url>
     <loc>/authors/kathleen-n.-zimmerman/</loc>
+    <lastmod>2018-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/non-overlap-measures/</loc>
     <lastmod>2018-03-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -655,11 +755,6 @@
   <url>
     <loc>/talk/aera-2017-response-ratios/</loc>
     <lastmod>2017-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/publication-bias/</loc>
-    <lastmod>2017-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -893,6 +988,11 @@
   </url>
   
   <url>
+    <loc>/tags/small-sample/</loc>
+    <lastmod>2015-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/rve-for-meta-regression/</loc>
     <lastmod>2015-12-15T00:00:00+00:00</lastmod>
   </url>
@@ -938,6 +1038,11 @@
   </url>
   
   <url>
+    <loc>/tags/correlation/</loc>
+    <lastmod>2015-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/george-fitchett/</loc>
     <lastmod>2015-08-10T00:00:00+00:00</lastmod>
   </url>
@@ -958,7 +1063,22 @@
   </url>
   
   <url>
+    <loc>/tags/mental-health/</loc>
+    <lastmod>2015-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/physical-health/</loc>
+    <lastmod>2015-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/religion-spirituality-physical-health/</loc>
+    <lastmod>2015-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/social-health/</loc>
     <lastmod>2015-08-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -1024,6 +1144,11 @@
   
   <url>
     <loc>/publication/design-comparable-effect-sizes/</loc>
+    <lastmod>2014-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hierarchical-models/</loc>
     <lastmod>2014-10-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1243,7 +1368,17 @@
   </url>
   
   <url>
+    <loc>/tags/question-order/</loc>
+    <lastmod>2009-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/question-order-effects/</loc>
+    <lastmod>2009-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/social-networks/</loc>
     <lastmod>2009-10-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1254,6 +1389,10 @@
   
   <url>
     <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/religion/spirituality/</loc>
   </url>
   
 </urlset>

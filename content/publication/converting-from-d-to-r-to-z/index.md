@@ -12,6 +12,10 @@ featured: false
 image: 
 projects: []
 tags: 
+- effect size
+- meta-analysis
+- correlation
+
 slides: 
 summary: 
 links:

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>robust variance estimation | James E. Pustejovsky</title>
+    <link>/tags/robust-variance-estimation/</link>
+      <atom:link href="/tags/robust-variance-estimation/index.xml" rel="self" type="application/rss+xml" />
+    <description>robust variance estimation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 02 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>robust variance estimation</title>
+      <link>/tags/robust-variance-estimation/</link>
+    </image>
+    
+    <item>
+      <title>Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models</title>
+      <link>/publication/rve-in-fixed-effects-models/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/rve-in-fixed-effects-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using response ratios for meta-analyzing single-case designs with behavioral outcomes</title>
+      <link>/publication/using-response-ratios/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/using-response-ratios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression</title>
+      <link>/publication/rve-for-meta-regression/</link>
+      <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/rve-for-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

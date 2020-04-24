@@ -13,6 +13,11 @@ featured: false
 image: 
 projects: []
 tags: 
+- meta-analysis
+- meta-regression
+- robust variance estimation
+- small-sample
+
 slides: 
 summary: 
 links:

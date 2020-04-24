@@ -5,12 +5,20 @@
     <link>/tags/meta-analysis/</link>
       <atom:link href="/tags/meta-analysis/index.xml" rel="self" type="application/rss+xml" />
     <description>meta-analysis</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>meta-analysis</title>
       <link>/tags/meta-analysis/</link>
     </image>
+    
+    <item>
+      <title>Psychosocial interventions for cancer survivors: A meta-analysis of effects on positive affect</title>
+      <link>/publication/psychosocial-interventions-for-positive-affect/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/psychosocial-interventions-for-positive-affect/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Simulating correlated standardized mean differences for meta-analysis</title>
@@ -687,6 +695,14 @@ coef_test(uni_fit, vcov = &amp;quot;CR2&amp;quot;, cluster = corrdat_agg$studyid
     </item>
     
     <item>
+      <title>Interventions to enhance self-efficacy in cancer patients and survivors: A meta-analysis of randomized controlled trials</title>
+      <link>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Converting from odds ratios to standardized mean differences: What to do with logistic regression coefficients?</title>
       <link>/converting-odds-ratios-to-standardized-mean-differences/</link>
       <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
@@ -752,6 +768,22 @@ SMDs &amp;lt;-
   theme_light()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/Converting-odds-ratios-to-standardized-mean-differences_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Examining the effects of social stories on challenging behavior and prosocial skills in young children: A systematic review and meta-analysis</title>
+      <link>/publication/effects-of-social-stories-on-challenging-behavior-and-prosocial-skills/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/effects-of-social-stories-on-challenging-behavior-and-prosocial-skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effects of psychosocial interventions on meaning and purpose in adults with cancer: A systematic review and meta-analysis</title>
+      <link>/publication/psychosocial-interventions-meaning-and-purpose/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/psychosocial-interventions-meaning-and-purpose/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1051,6 +1083,30 @@ Corrections. R package version 0.3.5. &lt;a href=&#34;https://github.com/jepusto
     </item>
     
     <item>
+      <title>Testing for funnel plot asymmetry of standardized mean differences</title>
+      <link>/publication/testing-for-funnel-plot-asymmetry-of-smds/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/testing-for-funnel-plot-asymmetry-of-smds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Current practices in meta-regression in psychology, education, and medicine</title>
+      <link>/publication/current-practices-in-meta-regression/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/current-practices-in-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A history of meta-regression: Technical, conceptual, and practical developments between 1974 and 2018</title>
+      <link>/publication/history-of-meta-regression/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/history-of-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sampling variance of Pearson r in a two-level design</title>
       <link>/variance-of-r-in-two-level-design/</link>
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
@@ -1126,6 +1182,22 @@ DEF = \frac{N}{\tilde{N}} = 1 + (g_2 - g_1^2) \psi^2,
 &lt;p&gt;There are some further special cases that are not to hard to work out and could be useful as rough approximations at least. One is if the within-cluster correlation is zero &lt;span class=&#34;math inline&#34;&gt;\((\rho = 0)\)&lt;/span&gt; and we’re interested in the between-cluster correlation &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;. Then the total correlation can be corrected for what is essentially measurement error using formulas from &lt;a href=&#34;https://www.amazon.com/Methods-Meta-Analysis-Correcting-Research-Findings/dp/141290479X&#34;&gt;Hunter and Schmidt (2004)&lt;/a&gt;. A further specialization is if &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a cluster-level measure, so that &lt;span class=&#34;math inline&#34;&gt;\(\sigma_x^2 = 0\)&lt;/span&gt;. I’ll consider these in a later post, perhaps.&lt;/p&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Using response ratios for meta-analyzing single-case designs with behavioral outcomes</title>
+      <link>/publication/using-response-ratios/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/using-response-ratios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to the special issue on single-case systematic reviews and meta-analysis</title>
+      <link>/publication/rase-special-issue-introduction/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/rase-special-issue-introduction/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1454,6 +1526,22 @@ coef_test(MVRE_hrs, vcov = &amp;quot;CR2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>A meta-analysis of school-based group contingency interventions for students with challenging behavior: An update</title>
+      <link>/publication/school-based-group-contingencies-meta-analysis/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/school-based-group-contingencies-meta-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A meta-analysis of technology-aided instruction and intervention for students with ASD</title>
+      <link>/publication/taii-meta-analysis/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/taii-meta-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>You wanna PEESE of d&#39;s?</title>
       <link>/pet-peese-performance/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
@@ -1609,6 +1697,22 @@ These trends seem mostly to hold for the other sample size distributions I exami
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Functional assessment-based interventions for students with or at-risk for high incidence disabilities: Field-testing single-case synthesis methods</title>
+      <link>/publication/fabi-meta-analysis/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/fabi-meta-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research synthesis and meta-analysis of single-case designs</title>
+      <link>/publication/meta-analysis-of-scd/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/meta-analysis-of-scd/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1814,6 +1918,14 @@ se_b = \left(\frac{N_C + N_T}{N_C N_T}\right)\left[1 + (n - 1)\rho\right].
     </item>
     
     <item>
+      <title>Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression</title>
+      <link>/publication/rve-for-meta-regression/</link>
+      <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/rve-for-meta-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Special Education Pro-Sem</title>
       <link>/sped-pro-sem-again/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
@@ -1875,6 +1987,30 @@ se_b = \left(\frac{N_C + N_T}{N_C N_T}\right)\left[1 + (n - 1)\rho\right].
 &lt;/ul&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>A meta-analytic approach to examine the relationship between religion/spirituality and mental health in cancer</title>
+      <link>/publication/religion-spirituality-mental-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/religion-spirituality-mental-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A meta-analytic review of religious or spiritual involvement and social health among cancer patients</title>
+      <link>/publication/religion-spirituality-social-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/religion-spirituality-social-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Religion, spirituality, and physical health in cancer patients: A meta-analysis</title>
+      <link>/publication/religion-spirituality-physical-health/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/religion-spirituality-physical-health/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -2460,6 +2596,14 @@ small-sample corrections to the cluster-robust estimators, based on the bias-red
 
 &lt;p&gt;&lt;a href=&#34;http://www.edb.utexas.edu/education/departments/sped/about/fac_dir/barnes/&#34;&gt;Dr. Marcia Barnes&lt;/a&gt; from the department of Special Education invited me to visit her pro-seminar this afternoon and talk about some of my work on meta-analytic methods for single-case research. Thanks very much to the students for asking such thoughtful and engaging questions. &lt;a href=&#34;/files/Barnes-Pro-Sem-2014-04-10.pdf&#34;&gt;Here are the slides&lt;/a&gt;, which include some additional material that we didn’t get to talk about.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Converting from d to r to z when the design uses extreme groups, dichotomization, or experimental control</title>
+      <link>/publication/converting-from-d-to-r-to-z/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/converting-from-d-to-r-to-z/</guid>
+      <description></description>
     </item>
     
     <item>

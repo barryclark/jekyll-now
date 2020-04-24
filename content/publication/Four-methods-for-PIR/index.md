@@ -13,6 +13,11 @@ featured: false
 image: 
 projects: []
 tags: 
+- alternating renewal process
+- effect size
+- response ratio
+- single-case design
+- systematic direct observation
 slides: 
 summary: 
 links:

@@ -14,6 +14,10 @@ featured: false
 image: 
 projects: []
 tags: 
+- design-comparable SMD
+- effect size
+- single-case design
+
 slides: 
 summary: 
 links:

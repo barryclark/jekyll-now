@@ -17,6 +17,11 @@ featured: false
 image: 
 projects: []
 tags: 
+- psycho-social intervention
+- cancer
+- meta-analysis
+- self-efficacy
+- systematic review
 slides: 
 summary: 
 links:

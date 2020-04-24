@@ -13,6 +13,70 @@
     </image>
     
     <item>
+      <title>Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures</title>
+      <link>/publication/procedural-sensitivities-of-scd-effect-sizes/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/procedural-sensitivities-of-scd-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Between-case standardized effect size analysis of single case design: Examination of the two methods</title>
+      <link>/publication/bcsmd-examination-of-two-methods/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/bcsmd-examination-of-two-methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A gradual effects model for single-case designs</title>
+      <link>/publication/gradual-effects-model/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/gradual-effects-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using response ratios for meta-analyzing single-case designs with behavioral outcomes</title>
+      <link>/publication/using-response-ratios/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/using-response-ratios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to the special issue on single-case systematic reviews and meta-analysis</title>
+      <link>/publication/rase-special-issue-introduction/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/rase-special-issue-introduction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional assessment-based interventions for students with or at-risk for high incidence disabilities: Field-testing single-case synthesis methods</title>
+      <link>/publication/fabi-meta-analysis/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/fabi-meta-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research synthesis and meta-analysis of single-case designs</title>
+      <link>/publication/meta-analysis-of-scd/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/meta-analysis-of-scd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Between-case standardized mean difference effect sizes for single-case designs: A primer and tutorial using the scdhlm web application</title>
+      <link>/publication/bc-smd-primer-and-tutorial/</link>
+      <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/bc-smd-primer-and-tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>scdhlm</title>
       <link>/software/scdhlm/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -46,6 +110,88 @@
 &lt;a href=&#34;https://jepusto.shinyapps.io/gem-scd/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gradual Effect Model calculator&lt;/a&gt;: An interactive web application for estimating effect sizes using the gradual effects model.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Measurement-comparable effect sizes for single-case studies of free-operant behavior</title>
+      <link>/publication/measurement-comparable-effect-sizes/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/measurement-comparable-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Four methods for analyzing partial interval recording data, with application to single-case research</title>
+      <link>/publication/four-methods-for-pir/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/four-methods-for-pir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design-comparable effect sizes in multiple baseline designs: A general modeling framework</title>
+      <link>/publication/design-comparable-effect-sizes/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/design-comparable-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing single-case designs: d, G, hierarchical models, Bayesian estimators, generalized additive models, and the hopes and fears of researchers about analyses</title>
+      <link>/publication/analyzing-scd-hopes-and-fears/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/analyzing-scd-hopes-and-fears/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis and meta-analysis of single-case designs with a standardized mean difference statistic: A primer and applications</title>
+      <link>/publication/bc-smd-primer-and-applications/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/bc-smd-primer-and-applications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Converting from d to r to z when the design uses extreme groups, dichotomization, or experimental control</title>
+      <link>/publication/converting-from-d-to-r-to-z/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/converting-from-d-to-r-to-z/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A standardized mean difference effect size for multiple baseline designs</title>
+      <link>/publication/smd-for-mbd/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/smd-for-mbd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A d-statistic for single-case designs that is equivalent to the usual between-groups d-statistics</title>
+      <link>/publication/between-groups-d-statistic/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/between-groups-d-statistic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operationally comparable effect sizes for meta-analysis of single-case research</title>
+      <link>/publication/operationally-comparable-effect-sizes/</link>
+      <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/operationally-comparable-effect-sizes/</guid>
+      <description>&lt;p&gt;This thesis studies quantitative methods for summarizing and synthesizing single-case studies, a class of research designs for evaluating the effects of interventions through repeated measurement of individuals. Despite long-standing interest in meta-analytic synthesis of single-case research, there remains a lack of consensus about appropriate methods, even about the most basic question of what effect size metrics are useful and appropriate. I argue that operational comparability, or invariance to heterogeneous operational procedures, is crucial property for an effect size metric. I then consider two problems with operational comparability that arise in single-case research. The first problem is to find effect sizes that can be applied across studies that use different research designs, such as single-case designs and two-group randomized experiments. The second problem is to find effect sizes that can be applied across studies that use varied operations for measuring the same construct. To address each of these problems, I propose structural models that capture essential features of multiple relevant operations (either design-related operations or measurement-related operations). I then use these structural models to precisely define target effect size parameters and to consider identification issues and estimation strategies.&lt;/p&gt;
+&lt;p&gt;Chapter 1 defines operational comparability and situates the concept within the broad methodological concerns of meta-analysis, then reviews relevant features of single-case research and previously proposed effect sizes. Chapter 2 describes an abstract set of modeling criteria for constructing design-comparable effect sizes. Chapters 3 applies the general criteria to the case of standardized mean differences and proposes an effect size estimator based on restricted maximum likelihood. Chapter 4 presents several applications of the proposed models and methods. Chapter 5 proposes measurement-comparability model and defines effect size measures for use in studies of free-operant behavior, one of the most common classes of outcomes in single-case research. Chapter 6 extends the proposed effect size models to incorporate more complex features, including time trends and serial dependence, and studies a method of estimating those models through a combination of marginal quasi-likelihood and Gaussian pseudo-likelihood estimating equations. Chapter 7 collects various further extensions, areas for further research, and concluding thoughts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A standardized mean difference effect size for single case designs</title>
+      <link>/publication/smd-for-scd/</link>
+      <pubDate>Tue, 14 Aug 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/smd-for-scd/</guid>
+      <description></description>
     </item>
     
   </channel>

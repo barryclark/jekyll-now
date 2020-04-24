@@ -14,6 +14,10 @@ featured: false
 image: 
 projects: []
 tags: 
+- effect size
+- meta-analysis
+- single-case design
+
 slides: 
 summary: 
 links:

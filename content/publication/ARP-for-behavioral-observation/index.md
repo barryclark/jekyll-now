@@ -13,6 +13,9 @@ featured: false
 image: 
 projects: []
 tags: 
+- single-case design
+- systematic direct observation
+- alternating renewal process
 slides: 
 summary: 
 links:

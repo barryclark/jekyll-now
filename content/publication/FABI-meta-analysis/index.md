@@ -16,6 +16,13 @@ featured: false
 image: 
 projects: []
 tags: 
+- design-comparable SMD
+- effect size
+- meta-analysis
+- response ratio
+- single-case design
+- systematic review
+
 slides: 
 summary: 
 links:
