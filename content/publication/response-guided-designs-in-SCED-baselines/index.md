@@ -24,7 +24,7 @@ summary:
 links:
 - name: Journal
   url: https://doi.org/10.1080/17489539.2020.1739048
-url_preprint: 
+url_preprint: "https://osf.io/zjng8/"
 url_code: "https://osf.io/f8bmu/"
 url_dataset: 
 url_pdf: 
