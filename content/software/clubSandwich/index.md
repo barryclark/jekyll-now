@@ -12,7 +12,10 @@ tags:
 - R
 - Stata
 title: clubSandwich
-url_code: ""
+links:
+- name: CRAN
+  url: https://cran.r-project.org/package=clubSandwich
+url_code: "https://github.com/jepusto/clubSandwich"
 url_pdf: ""
 url_slides: ""
 url_video: ""

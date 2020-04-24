@@ -5,12 +5,28 @@
     <link>/tags/effect-size/</link>
       <atom:link href="/tags/effect-size/index.xml" rel="self" type="application/rss+xml" />
     <description>effect size</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>effect size</title>
       <link>/tags/effect-size/</link>
     </image>
+    
+    <item>
+      <title>lmeInfo</title>
+      <link>/software/lmeinfo/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/software/lmeinfo/</guid>
+      <description>&lt;p&gt;lmeInfo provides analytic derivatives and information matrices for fitted linear mixed effects models and generalized least squares models estimated using &lt;code&gt;nlme::lme()&lt;/code&gt; and &lt;code&gt;nlme::gls()&lt;/code&gt;, respectively. The package includes functions for estimating the sampling variance-covariance of variance component parameters using the inverse Fisher information. The variance components include the parameters of the random effects structure (for lme models), the variance structure, and the correlation structure. The expected and average forms of the Fisher information matrix are used in the calculations, and models estimated by full maximum likelihood or restricted maximum likelihood are supported. The package also includes a function for estimating standardized mean difference effect sizes (
+&lt;a href=&#34;/publication/design-comparable-effect-sizes/&#34;&gt;Pustejovsky et al., 2014&lt;/a&gt;) based on fitted lme or gls models.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R package 
+&lt;a href=&#34;https://cran.r-project.org/package=lmeInfo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/lmeInfo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures</title>
@@ -81,7 +97,10 @@
       <link>/software/scdhlm/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/software/scdhlm/</guid>
-      <description>&lt;p&gt;An R package implementing several methods of estimating a design-comparable standardized mean difference effect size based on data from a single-case design. Methods include those from Hedges, Pustejovsky, &amp;amp; Shadish (2012, 2013) and Pustejovsky, Hedges, &amp;amp; Shadish (2014).&lt;/p&gt;
+      <description>&lt;p&gt;An R package implementing several methods of estimating a design-comparable standardized mean difference effect size based on data from a single-case design. Methods include those from Hedges, Pustejovsky, &amp;amp; Shadish (
+&lt;a href=&#34;/publication/SMD-for-SCD&#34;&gt;2012&lt;/a&gt;, 
+&lt;a href=&#34;/publication/SMD-for-MBD&#34;&gt;2013&lt;/a&gt;) and 
+&lt;a href=&#34;/publication/design-comparable-effect-sizes/&#34;&gt;Pustejovsky, Hedges, &amp;amp; Shadish (2014)&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://CRAN.R-project.org/package=scdhlm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;

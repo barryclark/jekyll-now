@@ -18,6 +18,36 @@
   </url>
   
   <url>
+    <loc>/tags/effect-size/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hierarchical-models/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/lmeinfo/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/admin/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
@@ -48,11 +78,6 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/response-guided-design/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
@@ -64,11 +89,6 @@
   
   <url>
     <loc>/tags/single-case-design/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -139,11 +159,6 @@
   
   <url>
     <loc>/tags/distribution-theory/</loc>
-    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/effect-size/</loc>
     <lastmod>2019-09-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -943,11 +958,6 @@
   </url>
   
   <url>
-    <loc>/software/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/stata/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
@@ -1144,11 +1154,6 @@
   
   <url>
     <loc>/publication/design-comparable-effect-sizes/</loc>
-    <lastmod>2014-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hierarchical-models/</loc>
     <lastmod>2014-10-01T00:00:00+00:00</lastmod>
   </url>
   

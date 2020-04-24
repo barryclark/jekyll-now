@@ -340,7 +340,10 @@ S_A &amp;amp;= \sum_{i=1}^{m - 1} \sum_{j = i + 1}^m \left[I\left(y^A_j &amp;gt;
       <link>/software/scdhlm/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/software/scdhlm/</guid>
-      <description>&lt;p&gt;An R package implementing several methods of estimating a design-comparable standardized mean difference effect size based on data from a single-case design. Methods include those from Hedges, Pustejovsky, &amp;amp; Shadish (2012, 2013) and Pustejovsky, Hedges, &amp;amp; Shadish (2014).&lt;/p&gt;
+      <description>&lt;p&gt;An R package implementing several methods of estimating a design-comparable standardized mean difference effect size based on data from a single-case design. Methods include those from Hedges, Pustejovsky, &amp;amp; Shadish (
+&lt;a href=&#34;/publication/SMD-for-SCD&#34;&gt;2012&lt;/a&gt;, 
+&lt;a href=&#34;/publication/SMD-for-MBD&#34;&gt;2013&lt;/a&gt;) and 
+&lt;a href=&#34;/publication/design-comparable-effect-sizes/&#34;&gt;Pustejovsky, Hedges, &amp;amp; Shadish (2014)&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://CRAN.R-project.org/package=scdhlm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;

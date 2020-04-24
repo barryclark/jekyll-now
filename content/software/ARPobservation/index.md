@@ -10,9 +10,14 @@ image:
 summary: Simulate systematic direct observation data
 tags:
 - behavioral observation
+- alternating renewal process
+- simulation
 - R
 title: ARPobservation
-url_code: ""
+links:
+- name: CRAN
+  url: https://cran.r-project.org/package=ARPobservation
+url_code: "https://github.com/jepusto/ARPobservation"
 url_pdf: ""
 url_slides: ""
 url_video: ""

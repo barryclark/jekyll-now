@@ -373,6 +373,25 @@ If you, dear reader, would be interested in helping to pursue any of these direc
     </item>
     
     <item>
+      <title>ARPobservation</title>
+      <link>/software/arpobservation/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/arpobservation/</guid>
+      <description>&lt;p&gt;An R package for simulating different methods of recording data based on direct observation of behavior, where behavior is modeled by an alternating renewal process.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://cran.r-project.org/package=ARPobservation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/getting-started-with-ARPobservation&#34;&gt;Installation instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/ARPobservation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/ARPsimulator/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ARPsimulator&lt;/a&gt;: An interactive web application for simulating systematic direct observation data based on the alternating renewal process model.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Update: parallel R on the TACC</title>
       <link>/parallel-r-on-tacc-update/</link>
       <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
