@@ -18,6 +18,16 @@
   </url>
   
   <url>
+    <loc>/authors/admin/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/effect-size/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
@@ -29,6 +39,11 @@
   
   <url>
     <loc>/software/lmeinfo/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/man-chen/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,17 +63,22 @@
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+    <loc>/authors/megha-joshi/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/simhelpers/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/simulation/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication_types/2/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -179,11 +199,6 @@
   
   <url>
     <loc>/simulating-correlated-smds/</loc>
-    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/simulation/</loc>
     <lastmod>2019-09-30T00:00:00+00:00</lastmod>
   </url>
   

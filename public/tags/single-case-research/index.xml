@@ -365,6 +365,8 @@ S_A &amp;amp;= \sum_{i=1}^{m - 1} \sum_{j = i + 1}^m \left[I\left(y^A_j &amp;gt;
       <description>&lt;p&gt;An R package for calculating basic effect size indices for single-case designs, including several non-overlap measures and parametric effect size measures, and for estimating the gradual effects model developed by Swan and Pustejovsky (2017).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;a href=&#34;https://CRAN.R-project.org/package=SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
 &lt;a href=&#34;https://github.com/jepusto/SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code and installation instructions on Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://jepusto.shinyapps.io/SCD-effect-sizes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Single case effect size calculator&lt;/a&gt;: An interactive web application for calculating basic effect size indices.&lt;/li&gt;

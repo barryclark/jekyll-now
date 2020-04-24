@@ -29,6 +29,21 @@
     </item>
     
     <item>
+      <title>simhelpers</title>
+      <link>/software/simhelpers/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/software/simhelpers/</guid>
+      <description>&lt;p&gt;Monte Carlo simulations are computer experiments designed to study the performance of statistical methods under known data-generating conditions. The goal of simhelpers is to assist in running such simulation studies. The main tools in the package consist of functions to calculate measures of estimator performance, such as bias, root mean squared error, rejection rates. The functions also calculate the associated Monte Carlo standard errors (MCSE) of the performance measures. The functions use the tidyeval principles, so that they play well with dplyr and fit easily into a &lt;code&gt;%&amp;gt;%&lt;/code&gt;-centric workflow.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://CRAN.R-project.org/package=simhelpers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/meghapsimatrix/simhelpers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code and installation instructions on Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ARPobservation</title>
       <link>/software/arpobservation/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -99,6 +114,8 @@
       <guid>/software/singlecasees/</guid>
       <description>&lt;p&gt;An R package for calculating basic effect size indices for single-case designs, including several non-overlap measures and parametric effect size measures, and for estimating the gradual effects model developed by Swan and Pustejovsky (2017).&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://CRAN.R-project.org/package=SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://github.com/jepusto/SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code and installation instructions on Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;

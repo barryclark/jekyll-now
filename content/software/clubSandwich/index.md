@@ -12,6 +12,8 @@ tags:
 - R
 - Stata
 title: clubSandwich
+authors:
+- admin
 links:
 - name: CRAN
   url: https://cran.r-project.org/package=clubSandwich

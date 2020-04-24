@@ -12,6 +12,8 @@ tags:
 - hierarchical models
 - single-case research
 title: scdhlm
+authors:
+- admin
 links:
 - name: CRAN
   url: https://cran.r-project.org/package=scdhlm

@@ -14,6 +14,8 @@ tags:
 - simulation
 - R
 title: ARPobservation
+authors:
+- admin
 links:
 - name: CRAN
   url: https://cran.r-project.org/package=ARPobservation

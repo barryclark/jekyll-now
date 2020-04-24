@@ -5,12 +5,43 @@
     <link>/authors/admin/</link>
       <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>James E. Pustejovsky</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 26 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/authors/admin/avatar_hu5c52b2b2df652bbfa34fe5ba8e97c2ca_630045_270x270_fill_q90_lanczos_center.jpg</url>
       <title>James E. Pustejovsky</title>
       <link>/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>lmeInfo</title>
+      <link>/software/lmeinfo/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/software/lmeinfo/</guid>
+      <description>&lt;p&gt;lmeInfo provides analytic derivatives and information matrices for fitted linear mixed effects models and generalized least squares models estimated using &lt;code&gt;nlme::lme()&lt;/code&gt; and &lt;code&gt;nlme::gls()&lt;/code&gt;, respectively. The package includes functions for estimating the sampling variance-covariance of variance component parameters using the inverse Fisher information. The variance components include the parameters of the random effects structure (for lme models), the variance structure, and the correlation structure. The expected and average forms of the Fisher information matrix are used in the calculations, and models estimated by full maximum likelihood or restricted maximum likelihood are supported. The package also includes a function for estimating standardized mean difference effect sizes (
+&lt;a href=&#34;/publication/design-comparable-effect-sizes/&#34;&gt;Pustejovsky et al., 2014&lt;/a&gt;) based on fitted lme or gls models.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R package 
+&lt;a href=&#34;https://cran.r-project.org/package=lmeInfo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/lmeInfo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>simhelpers</title>
+      <link>/software/simhelpers/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/software/simhelpers/</guid>
+      <description>&lt;p&gt;Monte Carlo simulations are computer experiments designed to study the performance of statistical methods under known data-generating conditions. The goal of simhelpers is to assist in running such simulation studies. The main tools in the package consist of functions to calculate measures of estimator performance, such as bias, root mean squared error, rejection rates. The functions also calculate the associated Monte Carlo standard errors (MCSE) of the performance measures. The functions use the tidyeval principles, so that they play well with dplyr and fit easily into a &lt;code&gt;%&amp;gt;%&lt;/code&gt;-centric workflow.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://CRAN.R-project.org/package=simhelpers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/meghapsimatrix/simhelpers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code and installation instructions on Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>The impact of response-guided designs on count outcomes in single-case experimental design baselines</title>
@@ -3812,6 +3843,89 @@ grep(&amp;quot;dat&amp;quot;,ls(), value = TRUE)&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;Larger baseline differences tend to make the results more sensitive to how the data are analyzed. As a result, I would be extra thorough in checking the required assumptions for an analysis of covariance—especially linearity and homogeneity of slopes—and would examine whether the treatment effect estimates are sensitive to including a pretest-by-treatment interaction.&lt;/li&gt;
 &lt;li&gt;For future studies, investigate whether it would be possible to block-randomize (e.g., block by low/middle/high scores on the pretest) in order to insure against the possibility of getting big baseline differences.&lt;/li&gt;
 &lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ARPobservation</title>
+      <link>/software/arpobservation/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/arpobservation/</guid>
+      <description>&lt;p&gt;An R package for simulating different methods of recording data based on direct observation of behavior, where behavior is modeled by an alternating renewal process.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://cran.r-project.org/package=ARPobservation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/getting-started-with-ARPobservation&#34;&gt;Installation instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/ARPobservation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/ARPsimulator/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ARPsimulator&lt;/a&gt;: An interactive web application for simulating systematic direct observation data based on the alternating renewal process model.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>clubSandwich</title>
+      <link>/software/clubsandwich/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/clubsandwich/</guid>
+      <description>&lt;p&gt;R and Stata packages for calculating cluster-robust variance estimators (i.e., sandwich estimators) with small-sample corrections, including the bias-reduced linearization estimator of 
+&lt;a href=&#34;http://www.statcan.gc.ca/pub/12-001-x/2002002/article/9058-eng.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bell and McCaffrey (2002)&lt;/a&gt; and extensions proposed in 
+&lt;a href=&#34;http://psycnet.apa.org/record/2014-14616-001&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tipton (2015)&lt;/a&gt;, 
+&lt;a href=&#34;/publication/rve-for-meta-regression/&#34;&gt;Tipton and Pustejovsky (2015)&lt;/a&gt;, and 
+&lt;a href=&#34;/publication/rve-in-fixed-effects-models/&#34;&gt;Pustejovsky and Tipton (2016)&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R package 
+&lt;a href=&#34;https://cran.r-project.org/package=clubSandwich&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/clubSandwich&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stata package 
+&lt;a href=&#34;https://ideas.repec.org/c/boc/bocode/s458352.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on the SSC Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/clubSandwich-Stata&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stata source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>scdhlm</title>
+      <link>/software/scdhlm/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/scdhlm/</guid>
+      <description>&lt;p&gt;An R package implementing several methods of estimating a design-comparable standardized mean difference effect size based on data from a single-case design. Methods include those from Hedges, Pustejovsky, &amp;amp; Shadish (
+&lt;a href=&#34;/publication/SMD-for-SCD&#34;&gt;2012&lt;/a&gt;, 
+&lt;a href=&#34;/publication/SMD-for-MBD&#34;&gt;2013&lt;/a&gt;) and 
+&lt;a href=&#34;/publication/design-comparable-effect-sizes/&#34;&gt;Pustejovsky, Hedges, &amp;amp; Shadish (2014)&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://CRAN.R-project.org/package=scdhlm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/getting-started-with-scdhlm&#34;&gt;Installation instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/scdhlm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/scdhlm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scdhlm&lt;/a&gt;: An interactive web application for calculating design-comparable standardized mean difference effect sizes.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SingleCaseES</title>
+      <link>/software/singlecasees/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/singlecasees/</guid>
+      <description>&lt;p&gt;An R package for calculating basic effect size indices for single-case designs, including several non-overlap measures and parametric effect size measures, and for estimating the gradual effects model developed by Swan and Pustejovsky (2017).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://CRAN.R-project.org/package=SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code and installation instructions on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/SCD-effect-sizes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Single case effect size calculator&lt;/a&gt;: An interactive web application for calculating basic effect size indices.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/gem-scd/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gradual Effect Model calculator&lt;/a&gt;: An interactive web application for estimating effect sizes using the gradual effects model.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

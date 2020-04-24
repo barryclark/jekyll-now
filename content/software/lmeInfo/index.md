@@ -5,15 +5,24 @@ header:
 image: 
   preview_only: true
   focal_point: Smart
+
 summary: Information Matrices for 'lmeStruct' and 'glsStruct' Objects
+
 tags:
 - hierarchical models
 - effect size
 - R
+
 title: lmeInfo
+
+authors:
+- admin
+- Man Chen
+
 links:
 - name: CRAN
   url: https://cran.r-project.org/package=lmeInfo
+
 url_code: "https://github.com/jepusto/lmeInfo"
 url_pdf: ""
 url_slides: ""

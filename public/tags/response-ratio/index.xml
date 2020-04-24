@@ -61,6 +61,25 @@
     </item>
     
     <item>
+      <title>SingleCaseES</title>
+      <link>/software/singlecasees/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/software/singlecasees/</guid>
+      <description>&lt;p&gt;An R package for calculating basic effect size indices for single-case designs, including several non-overlap measures and parametric effect size measures, and for estimating the gradual effects model developed by Swan and Pustejovsky (2017).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://CRAN.R-project.org/package=SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Available on the Comprehensive R Archive Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jepusto/SingleCaseES&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code and installation instructions on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/SCD-effect-sizes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Single case effect size calculator&lt;/a&gt;: An interactive web application for calculating basic effect size indices.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://jepusto.shinyapps.io/gem-scd/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gradual Effect Model calculator&lt;/a&gt;: An interactive web application for estimating effect sizes using the gradual effects model.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Measurement-comparable effect sizes for single-case studies of free-operant behavior</title>
       <link>/publication/measurement-comparable-effect-sizes/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
