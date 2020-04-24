@@ -1,163 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Tiny Tiny RSS : Login</title>
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<script type="text/javascript" charset="utf-8" src="lib/prototype.js?1587271792"></script>
-<script type="text/javascript" charset="utf-8" src="lib/dojo/dojo.js?1587271792"></script>
-<script type="text/javascript" charset="utf-8" src="lib/dojo/tt-rss-layer.js?1587271792"></script>
-<script type="text/javascript" charset="utf-8" src="lib/prototype.js?1587271792"></script>
-<script type="text/javascript" charset="utf-8" src="js/common.js?1587271792"></script>
-<script type="text/javascript" charset="utf-8" src="js/utility.js?1587271792"></script>
-<script type="text/javascript" charset="utf-8" src="errors.php?1587271792&mode=js"></script>
-
-	<style type="text/css">
-		@media (prefers-color-scheme: dark) {
-			body {
-				background : #303030;
-			}
-		}
-
-		body.css_loading * {
-			display : none;
-		}
-	</style>
-
-	<script type="text/javascript">
-		require({cache:{}});
-	</script>
+<link rel="stylesheet" href="/semantic.css">
+<link rel="shortcut icon" href="https://s1.ax1x.com/2020/04/24/JDcFx0.jpg" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <div class="ui secondary menu">
+  <div class="navigation">
+    <a class="active item" href="/">
+      首页
+    </a>
+    <a class="item" href="/topic.html">
+      Topic
+    </a>
+    <a class="item" href="/video-site.html">
+      视频
+    </a>
+  </div>
+    <a class="ui item" href="/login-register.html">
+      注册、登录
+    </a>
+  </div>
 </head>
+<body>
 
-<body class="flat ttrss_utility ttrss_login css_loading">
-
-<script type="text/javascript">
-	const UtilityApp = {
-        previousLogin: "",
-	    init: function() { /* invoked by UtilityJS */
-            require(['dojo/parser', "dojo/ready", 'dijit/form/Button','dijit/form/CheckBox', 'dijit/form/Form',
-                'dijit/form/Select','dijit/form/TextBox','dijit/form/ValidationTextBox'],function(parser, ready){
-                ready(function() {
-					parser.parse();
-
-					dijit.byId("bw_limit").attr("checked", Cookie.get("ttrss_bwlimit") == 'true');
-					dijit.byId("login").focus();
-                });
-            });
-		},
-        fetchProfiles: function() {
-	        const login = dijit.byId("login").attr('value');
-
-	        if (login && login != this.previousLogin) {
-                this.previousLogin = login;
-
-                xhrJson("public.php", {op: "getprofiles", login: login},
-                    (reply) => {
-                        const profile = dijit.byId('profile');
-
-                        profile.removeOption(profile.getOptions());
-
-                        reply.each((p) => {
-                            profile
-                                .attr("disabled", false)
-                                .addOption(p);
-                        });
-                    });
-            }
-	    },
-        gotoRegForm: function() {
-        	window.location.href = "register.php";
-        	return false;
-    	},
-        bwLimitChange: function(elem) {
-        	Cookie.set("ttrss_bwlimit", elem.checked,
-				86400);
-	    }
-    };
-
-
-</script>
-
-
-<div class="container">
-
-	<h1>Authentication</h1>
-	<div class="content">
-		<form action="public.php?return=https%3A%2F%2Frss.bwsl.wang%2F"
-			  dojoType="dijit.form.Form" method="POST">
-
-			<input dojoType="dijit.form.TextBox" style="display : none" name="op" value="login">
-			
-			<fieldset>
-				<label>登陆：</label>
-				<input name="login" id="login" dojoType="dijit.form.TextBox" type="text"
-					   onchange="UtilityApp.fetchProfiles()"
-					   onfocus="UtilityApp.fetchProfiles()"
-					   onblur="UtilityApp.fetchProfiles()"
-					   required="admin" value="" />
-			</fieldset>
-
-			<fieldset>
-				<label>密码：</label>
-
-				<input type="password" name="password" required="123"
-					   dojoType="dijit.form.TextBox"
-					   class="input input-text"
-					   onchange="UtilityApp.fetchProfiles()"
-					   onfocus="UtilityApp.fetchProfiles()"
-					   onblur="UtilityApp.fetchProfiles()"
-					   value=""/>
-			</fieldset>
-							<fieldset class="align-right">
-					<a href="public.php?op=forgotpass">忘记密码</a>
-				</fieldset>
-			
-			<fieldset>
-				<label>偏好：</label>
-
-				<select disabled='disabled' name="profile" id="profile" dojoType='dijit.form.Select'>
-					<option>默认偏好设置</option>
-				</select>
-			</fieldset>
-
-			<fieldset class="narrow">
-				<label> </label>
-
-				<label id="bw_limit_label"><input dojoType="dijit.form.CheckBox" name="bw_limit" id="bw_limit"
-					  type="checkbox" onchange="UtilityApp.bwLimitChange(this)">
-					省流量</label>
-			</fieldset>
-
-			<div dojoType="dijit.Tooltip" connectId="bw_limit_label" position="below" style="display:none">
-				不显示文章中的图片，减少自动刷新。			</div>
-
-			
-				<fieldset class="narrow">
-					<label> </label>
-					<label>
-						<input dojoType="dijit.form.CheckBox" name="remember_me" id="remember_me" type="checkbox">
-						记住我					</label>
-				</fieldset>
-
-			
-			<hr/>
-
-			<fieldset class="align-right">
-				<label> </label>
-
-				<button dojoType="dijit.form.Button" type="submit" class="alt-primary">登录</button>
-
-							</fieldset>
-
-		</form>
-	</div>
-
-	<div class="footer">
-		<a href="https://tt-rss.org/">Tiny Tiny RSS</a>
-		&copy; 2005&ndash;2020 <a href="https://fakecake.org/">Andrew Dolgov</a>
-	</div>
-
-</div>
-
+    <h1>登录</h1>
+    <form action="http://wonderland.run/user/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3>欢迎</h3>
+    <img src="http://wonderland.run/doge.gif">
+    <img src="http://wonderland.run/doge1.png">
+    <img src="http://wonderland.run/doge2.gif">
 </body>
 </html>
