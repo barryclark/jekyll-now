@@ -1,6 +1,6 @@
 +++
 # Projects widget.
-widget = "projects"
+widget = "blank"
 active = true
 date = 2016-04-20T00:00:00
 
@@ -14,11 +14,18 @@ weight = 50
 # Content.
 # Display content from the following folder.
 # For example, `folder = "project"` displays content from `content/project/`.
-folder = "teaching"
+# folder = "teaching"
 
 # View.
 # Customize how projects are displayed.
 # Legend: 0 = list, 1 = cards.
-view = 0
+# view = 1
 
 +++
+
+### At UT Austin
+
+- [Causal Inference](/teaching/Causal-Inference/)
+- [Research Design](/teaching/Research-design/)
+- [Data Analysis, Simulation, & Programming in R](/teaching/DASPiR/)
+- [Statistical Analysis of Experimental Data](/teaching/Experimental-Data/)
