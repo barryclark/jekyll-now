@@ -5,12 +5,38 @@
     <link>/publication_types/2/</link>
       <atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 26 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>2</title>
       <link>/publication_types/2/</link>
     </image>
+    
+    <item>
+      <title>The impact of response-guided designs on count outcomes in single-case experimental design baselines</title>
+      <link>/publication/response-guided-designs-in-sced-baselines/</link>
+      <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/response-guided-designs-in-sced-baselines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psychosocial interventions for cancer survivors: A meta-analysis of effects on positive affect</title>
+      <link>/publication/psychosocial-interventions-for-positive-affect/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/psychosocial-interventions-for-positive-affect/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Positive affect has demonstrated unique benefits in the context of health-related stress and is emerging as an important target for psychosocial interventions. The primary objective of this meta-analysis was to determine whether psychosocial interventions increase positive affect in cancer survivors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We coded 28 randomized controlled trials of psychosocial interventions assessing 2082 cancer survivors from six electronic databases. We calculated 76 effect sizes for positive affect and conducted synthesis using random effects models with robust variance estimation. Tests for moderation included demographic, clinical, and intervention characteristics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Interventions had a modest effect on positive affect (g = 0.35, 95% CI [0.16, 0.54]) with substantial heterogeneity of effects across studies ($\hat\tau^2$ = 0.40; $I^2$ = 78%). Three significant moderators were identified: in-person interventions outperformed remote interventions (P = .046), effects were larger when evaluated against standard of care or wait list control conditions versus attentional, educational, or component controls (P = .009), and trials with survivors of early-stage cancer diagnoses yielded larger effects than those with advanced-stage diagnoses (P = .046). We did not detect differential benefits of psychosocial interventions across samples varying in sex, age, on-treatment versus off-treatment status, or cancer type. Although no conclusive evidence suggested outcome reporting biases (P = .370), effects were smaller in studies with lower risk of bias.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;
+In-person interventions with survivors of early-stage cancers hold promise for enhancing positive affect, but more methodological rigor is needed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Implications for Cancer Survivors&lt;/strong&gt;
+Positive affect strategies can be an explicit target in evidence-based medicine and have a role in patient-centered survivorship care, providing tools to uniquely mobilize human strengths.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>An examination of measurement procedures and characteristics of baseline outcome data in single-case research</title>
