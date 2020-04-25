@@ -162,6 +162,9 @@ sharing = true
 # Link authors to their profile page? (true/false)
 link_authors = true
 
+# Display author card? (true/false)
+profile = false
+
 # Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
 abstract_length = 200
 
