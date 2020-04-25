@@ -15,7 +15,7 @@ projects: []
 tags: 
 - robust variance estimation
 - panel data
-- fixed effectss
+- fixed effects
 slides: 
 summary: 
 links:
