@@ -52,6 +52,14 @@
     </item>
     
     <item>
+      <title>Evaluating meta-analytic methods to detect selective reporting in the presence of dependent effect sizes</title>
+      <link>/publication/selective-reporting-with-dependent-effects/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/selective-reporting-with-dependent-effects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Psychosocial interventions for cancer survivors: A meta-analysis of effects on positive affect</title>
       <link>/publication/psychosocial-interventions-for-positive-affect/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
@@ -746,6 +754,14 @@ coef_test(uni_fit, vcov = &amp;quot;CR2&amp;quot;, cluster = corrdat_agg$studyid
       <link>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       <guid>/publication/interventions-to-enhance-self-efficacy-in-cancer-patients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Systematic review and meta-analysis of stay-play-talk interventions for improving social behaviors of young children</title>
+      <link>/publication/stay-play-talk-meta-analysis/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/stay-play-talk-meta-analysis/</guid>
       <description></description>
     </item>
     

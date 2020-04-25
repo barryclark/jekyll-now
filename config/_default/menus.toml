@@ -4,36 +4,41 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
+  name = "CV"
+  url = "files/Pustejovsky-CV.pdf"
+  weight = 1
+  
+[[main]]
   name = "Posts"
   url = "#posts"
   weight = 2
 
 [[main]]
+  name = "Working papers"
+  url = "#working-papers"
+  weight = 3
+  
+[[main]]
   name = "Publications"
   url = "#publications"
-  weight = 3
+  weight = 4
 
 [[main]]
   name = "Presentations"
   url = "#talks"
-  weight = 4
+  weight = 5
 
 [[main]]
   name = "Software"
   url = "#software"
-  weight = 5
+  weight = 6
 
 
 [[main]]
   name = "Teaching"
   url = "#teaching"
-  weight = 6
-
-[[main]]
-  name = "CV"
-  url = "files/Pustejovsky-CV.pdf"
   weight = 7
-  
+
 [[main]]
   name = "Contact"
   url = "#contact"
