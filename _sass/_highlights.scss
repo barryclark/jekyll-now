@@ -1,3 +1,15 @@
+
+.highlight {
+  padding: 7px 7px 7px 10px;
+  border: 1px solid black;
+  margin: 20px 0 20px 0;
+  overflow: auto;
+}
+
+code {
+  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+}
+
 .highlight pre { background-color: #272822; }
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
