@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Welcome! I’m Abel. I like to think I'm a data inquirer.
 
-### More Information
+This blog is my collection of amusements and thoughts on statistics and data science.
 
-A place to include any other types of information that you'd like to include about yourself.
+Exploring the limits of what can be known from available data and
+providing means for people to reliably act on it is what motivates me.
 
-### Contact me
+I currently work on these issues at [In Loco](www.inloco.com.br).
 
-[email@domain.com](mailto:email@domain.com)
+Feel free to contact me using the links below.
