@@ -30,11 +30,40 @@ nix-shell https://holochain.love
 ```
 Next, initialize your holochain app on the root directory and enter the app directory:
 ```nix
-hc init graphql-holochain
-cd graphql-holochain
+hc init dna
+cd dna
 ```
 Now that we have the holochain project, add a zome that we will be working on!
 ```nix
 hc generate zomes/gql rust-proc
 ```
+Now, get inside the zomes/gql/src/code directory and open it in your preferred source-code editor and open the lib.rs file. <br/><br/>
+we're not gonna change much of the already generated code in order to focus on this blog's topic. The generated code already has a create and read zome call, so let's add the update and delete zome call.
+```rust
+    #[zome_fn("hc_public")]
+    fn get_my_entry(address: Address) -> ZomeApiResult<Option<Entry>> {
+        hdk::get_entry(&address)
+    }
+
++   #[zome_fn("hc_public")]
++   fn udpate_my_entry(
++       entry_address: Address,
++       content: String,
++   ) -> ZomeApiResult<Address> {
++       let mut my_entry: MyEntry = hdk::utils::get_as_type(address.clone())?;
++       my_entry.content = content;
++       hdk::update_entry(my_entry.entry(), &address)
++   }
++
++   #[zome_fn("hc_public")]
++   fn delete_my_entry(entry_address: Address) -> ZomeApiResult<Address> {
++       hdk::remove_entry(&content_address)
++   }
+```
+Now that we have added the corresponding zome calls to our zome, let's compile the dna!
+```nix
+hc package
+```
+Now that we built the holochain side, let's now connect it to the Graphql side!
+
 ### Making queries
