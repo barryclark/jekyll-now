@@ -32,7 +32,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 900px;
+  text-align: justify;
   padding: 0 10px;
   width: 100%;
 }
@@ -315,15 +316,15 @@ footer {
 .post-tag {
   display: inline-block;
   background: rgba($theme-color, 0.15);
-  padding: 0 .5rem;
-  margin-right: .5rem;
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
   border-radius: 4px;
   color: $theme-color;
   font-size: 90%;
   &:before {
     font-family: $font-font-awesome;
     content: "\f02b";
-    padding-right: .5em;
+    padding-right: 0.5em;
   }
   &:hover {
     text-decoration: none;
@@ -334,16 +335,16 @@ footer {
 
 .tags-expo {
   :target:before {
-    content:"";
-    display:block;
-    height:72px; /* fixed header height*/
-    margin:-72px 0 0; /* negative fixed header height */
+    content: "";
+    display: block;
+    height: 72px; /* fixed header height*/
+    margin: -72px 0 0; /* negative fixed header height */
   }
   .tags-expo-list {
     @media (min-width: 38em) {
       font-size: 0.9rem;
       .post-tag {
-        margin: .2em .3em;
+        margin: 0.2em 0.3em;
       }
     }
   }
@@ -356,7 +357,7 @@ footer {
         padding: 0 1rem;
         &:hover {
           list-style-type: disc;
-          padding: 0 .5rem;
+          padding: 0 0.5rem;
         }
       }
     }
