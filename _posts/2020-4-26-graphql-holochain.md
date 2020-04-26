@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to build a GraphQl - Holochain middleware
-tags: graphql frontend
+tags: [graphql, frontend]
 ---
 ## Introduction
 
