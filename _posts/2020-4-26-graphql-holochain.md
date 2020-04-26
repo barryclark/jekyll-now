@@ -24,4 +24,17 @@ We assume that the readers have a basic understanding of Graphql, Apollo Graphql
 
 ### Write the corresponding zome calls on Holochain
 
+Now that we have written the schema and resolver on graphql, let's write the corresponding zome calls we need in order for the the queries and mutation on graphql to work! In the root directory of the project, let's first init a holochain project! Enter the holochain development environment with the command below.
+```nix
+nix-shell https://holochain.love
+```
+Next, initialize your holochain app on the root directory and enter the app directory:
+```nix
+hc init graphql-holochain
+cd graphql-holochain
+```
+Now that we have the holochain project, add a zome that we will be working on!
+```nix
+hc generate zomes/gql rust-proc
+```
 ### Making queries
