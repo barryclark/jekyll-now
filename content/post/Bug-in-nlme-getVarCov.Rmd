@@ -6,8 +6,10 @@ date: '2016-08-10'
 slug: bug-in-nlme-getVarCov
 categories: []
 tags:
-  - R
+  - Rstats
   - programming
+  - hierarchical models
+  - nlme
 header:
   caption: ''
   image: ''

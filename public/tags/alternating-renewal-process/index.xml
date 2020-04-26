@@ -56,11 +56,301 @@
     </item>
     
     <item>
+      <title>New article: Alternating renewal process models for behavioral observation</title>
+      <link>/new-article-alternating-renewal-process-models-for-behavioral-observation/</link>
+      <pubDate>Thu, 16 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/new-article-alternating-renewal-process-models-for-behavioral-observation/</guid>
+      <description>
+
+
+&lt;p&gt;My article with Chris Runyon, titled “Alternating renewal process models for behavioral observation: Simulation methods, software , and validity illustrations” has been published in Behavioral Disorders. The abstract is below. &lt;a href=&#34;/files/Pustejovsky-Runyon-2015.pdf&#34;&gt;Postprint available here&lt;/a&gt;. All of the examples in the paper are available in the R package &lt;a href=&#34;https://cran.r-project.org/web/packages/ARPobservation/&#34;&gt;ARPobservation&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Direct observation recording procedures produce reductive summary measurements of an underlying stream of behavior. Previous methodological studies of these recording procedures have employed simulation methods for generating random behavior streams, many of which amount to special cases of a statistical model known as the alternating renewal process. This paper describes the alternating renewal process model in its general form, demonstrates how it provides an organizing framework for most past simulation research on direct observation procedures, and introduces a freely available software package that implements the model. The software can be used to simulate behavior streams as well as data from many common recording procedures, including continuous recording, momentary time sampling, event counting, and interval recording procedures. Several examples illustrate how the software can be used to study the validity and reliability of direct observation data and to develop measurement strategies during the planning phases of empirical studies.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Alternating renewal process models for behavioral observation: Simulation methods and validity implications</title>
       <link>/publication/arp-for-behavioral-observation/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       <guid>/publication/arp-for-behavioral-observation/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>ARPobservation now on CRAN</title>
+      <link>/arpobservation-now-on-cran/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
+      <guid>/arpobservation-now-on-cran/</guid>
+      <description>
+
+
+&lt;p&gt;Version 1.0 of the &lt;a href=&#34;https://cran.r-project.org/web/packages/ARPobservation/&#34;&gt;ARPobservation package&lt;/a&gt; is now available on the Comprehensive R Archive Network. This makes it &lt;a href=&#34;/getting-started-with-ARPobservation&#34;&gt;even easier to install&lt;/a&gt;. Here’s the package description:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ARPobservation: Tools for simulating different methods of observing behavior based on alternating renewal processes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ARPobservation provides a set of tools for simulating data based on direct observation of behavior. It works by first simulating a behavior stream based on an alternating renewal process, given specified distributions of event durations and interim times. Different procedures for recording data can then be applied to the simulated behavior stream. Currently, functions are provided for the following recording methods: continuous duration recording, event counting, momentary time sampling, partial interval recording, and whole interval recording.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>To what extent does partial interval recording over-estimate prevalence?</title>
+      <link>/pir-overestimates-prevalence/</link>
+      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/pir-overestimates-prevalence/</guid>
+      <description>
+
+
+&lt;p&gt;It is well known that the partial interval recording procedure produces an over-estimate of the prevalence of a behavior. Here I will demonstrate how to use the ARPobservation package to study the extent of this bias. First though, I’ll need to define the terms prevalence and incidence and also take a detour through continuous duration recording.&lt;/p&gt;
+&lt;div id=&#34;prevalence-and-incidence&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Prevalence and incidence&lt;/h2&gt;
+&lt;p&gt;First off, what do I mean by prevalence? In an alternating renewal process, &lt;strong&gt;prevalence&lt;/strong&gt; is the long-run proportion of time that the behavior occurs. I’ll call prevalence &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt; (“phi”). So far, I’ve described alternating renewal processes in terms of their average event duration (which I’ll call &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; or “mu”) and the average interim time (which I’ll call &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; or “lambda”). Prevalence is related to these quantities mathematically as follows:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \phi = \frac{\mu}{\mu + \lambda}. \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So given &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;, we can figure out &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Another characteristic of behavior that can be determined by the average event duration and average interim time is &lt;strong&gt;incidence&lt;/strong&gt;, or the rate of event occurrence per unit of time. I’ll call incidence &lt;span class=&#34;math inline&#34;&gt;\(\zeta\)&lt;/span&gt; (“zeta”). In an alternating renewal process,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \zeta = \frac{1}{\mu + \lambda}. \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This makes intuitive sense, because &lt;span class=&#34;math inline&#34;&gt;\(\mu + \lambda\)&lt;/span&gt; is the average time in between the start of each event, so its inverse should be the average number of times that an event starts per unit of time. (Note that though this is quite intuitive, it’s also very difficult to prove mathematically.) Given &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;, we can figure out &lt;span class=&#34;math inline&#34;&gt;\(\zeta\)&lt;/span&gt;. Conversely, if we know &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\zeta\)&lt;/span&gt;, we can solve for &lt;span class=&#34;math inline&#34;&gt;\(\mu = \phi / \zeta\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\lambda = (1 - \phi) / \zeta\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;continuous-duration-recording&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Continuous duration recording&lt;/h2&gt;
+&lt;p&gt;It can be shown mathematically that, on average, data produced by continuous duration recording (CDR) will be equal to the prevalence of the behavior. In statistical parlance, CDR data produces an &lt;em&gt;unbiased&lt;/em&gt; estimate of prevalence. Since this is a mathematical fact, it’s a good idea to check that the software gives the same result (if it doesn’t, there must be something wrong with the code).&lt;/p&gt;
+&lt;p&gt;In order to simulate behavior streams, the software needs values for the average event duration and average interim time. But I want to think in terms of prevalence and incidence, so I’ll first pick a value for incidence. Say that a new behavioral event starts once per minute on average, so incidence (in events per second) would be &lt;span class=&#34;math inline&#34;&gt;\(\zeta = 1 / 60\)&lt;/span&gt;. I’ll then vary prevalence across the range from zero to one. For each value of prevalence, I’ll generate 10 behavior streams (if you’d like to do more, go ahead!).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ARPobservation)
+set.seed(8)
+zeta &amp;lt;- 1 / 60
+phi &amp;lt;- rep(seq(0.01, 0.99, 0.01), each = 10)
+
+# Now solve for mu and lambda
+mu &amp;lt;- phi / zeta
+lambda &amp;lt;- (1 - phi) / zeta
+
+iterations &amp;lt;- length(phi) # total number of behavior streams to generate&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Two last elements are needed before I can get to the simulating: I need to decide what distributions to use for event durations and interim times, and I need to decide how long the observation session should last. To keep things simple, for the time being I’ll use exponential distributions. I’ll also suppose that we observe for 10 min = 600 s, so that on average we should observe 10 events per session. Now I can simulate a bunch of behavior streams and apply the CDR procedure to them.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BS &amp;lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_exp(), stream_length = 600)
+CDR &amp;lt;- continuous_duration_recording(BS)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To check that the CDR procedure is unbiased, I’ll plot the CDR data versus the true value of prevalence, and run a smoothing line through the cloud of data-points:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+qplot(x = phi, y = CDR, geom = &amp;quot;point&amp;quot;) + geom_smooth(method = &amp;quot;loess&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/CDR_bias-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The blue line is nearly identical to the line &lt;code&gt;y = x&lt;/code&gt;, meaning that the average of CDR data is equal to prevalence. Good news–the software appears to be working correctly!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;partial-interval-recording&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Partial interval recording&lt;/h2&gt;
+&lt;p&gt;Now to partial interval recording (PIR). There are two different ways to think about how PIR data over-estimates prevalence. The conventional statistical approach follows the same logic as above, comparing the average value of PIR data to the true value of prevalence, &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;. Using the same simulated data streams as above, with 15 s intervals and 5 s of rest time after each interval…&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;PIR &amp;lt;- interval_recording(BS, interval_length = 20, rest_length = 5)
+
+qplot(x = phi, y = PIR, geom = &amp;quot;point&amp;quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(method = &amp;quot;loess&amp;quot;, se = FALSE) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &amp;quot;dashed&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/PIR_bias-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The blue line indicates the average value of PIR data across the simulations for a given value of prevalence. The dashed line indicates &lt;code&gt;y = x&lt;/code&gt;, so clearly PIR data over-estimates prevalence.&lt;/p&gt;
+&lt;p&gt;Previous studies in the Applied Behavior Analysis literature have taken a slightly different approach to thinking about over-estimation. Rather than comparing PIR data to the prevalence parameter &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;, PIR data is instead compared to the &lt;em&gt;sample&lt;/em&gt; value of prevalence, which is equivalent to the CDR proportion. Following this logic, I apply the PIR and CDR procedures to the same simulated behavior streams, then plot PIR versus CDR.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;obs_data &amp;lt;- reported_observations(BS, data_types = c(&amp;quot;C&amp;quot;,&amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)
+
+qplot(x = CDR, y = PIR, data = obs_data, geom = &amp;quot;point&amp;quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(method = &amp;quot;loess&amp;quot;, se = FALSE) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &amp;quot;dashed&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/PIR_CDR-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The blue fitted line is slightly different than with the other approach, but the general conclusion is the same: PIR data over-estimates prevalence.&lt;/p&gt;
+&lt;p&gt;But by how much? That’s actually a tricky question to answer, because the extent of the bias depends on a bunch of factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the true prevalence &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;,&lt;/li&gt;
+&lt;li&gt;the true incidence &lt;span class=&#34;math inline&#34;&gt;\(\zeta\)&lt;/span&gt;,&lt;/li&gt;
+&lt;li&gt;the length of the intervals, and&lt;/li&gt;
+&lt;li&gt;the distribution of interim times &lt;code&gt;F_lambda&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Curiously enough, the bias doesn’t depend on the distribution of event durations &lt;code&gt;F_mu&lt;/code&gt;.)&lt;/p&gt;
+&lt;div id=&#34;interval-length&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Interval length&lt;/h4&gt;
+&lt;p&gt;To see that the bias depends on the length of intervals used, I’ll compare 15 s intervals with 5 s rest times versus 25 s intervals with 5 s rest times. For a session of length 600 s, the latter procedure will yield 20 intervals.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;PIR_25 &amp;lt;- interval_recording(BS, interval_length = 30, rest_length = 5)
+obs_data &amp;lt;- cbind(obs_data, PIR_25)
+qplot(x = CDR, y = PIR, data = obs_data, geom = &amp;quot;smooth&amp;quot;, method = &amp;quot;loess&amp;quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(aes(y = PIR_25), method = &amp;quot;loess&amp;quot;, se = FALSE, col = &amp;quot;red&amp;quot;) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &amp;quot;dashed&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
+## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/PIR_length-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The red line indicates that the longer interval time leads to a larger degree of over-estimation. (For clarity, I’ve removed the points in the scatter-plot.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;interim-time-distribution&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Interim time distribution&lt;/h4&gt;
+&lt;p&gt;It isn’t terribly troubling that the bias of PIR data depends on the interval length, because the observer will generally know (and will hopefully report in any write-up of their experiment) the interval length that was used. Much more troubling is the fact that the bias depends on the &lt;em&gt;distribution&lt;/em&gt; of interim times, because this is something that the observer or analyst won’t usually have much information about. To see how this bias works, I’ll compare behavior streams generated using an exponential distribution for the interim times with thos generated using a gamma distribution with shape parameter 3 (this distribution is much less dispersed than the exponential).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BS_exp &amp;lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_exp(), stream_length = 600)
+obs_exp &amp;lt;- reported_observations(BS_exp, data_types = c(&amp;quot;C&amp;quot;,&amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)
+obs_exp$F_lambda &amp;lt;- &amp;quot;Exponential&amp;quot;
+
+BS_gam &amp;lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_gam(shape = 3), stream_length = 600)
+obs_gam &amp;lt;- reported_observations(BS_gam, data_types = c(&amp;quot;C&amp;quot;,&amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)
+obs_gam$F_lambda &amp;lt;- &amp;quot;Gamma(3)&amp;quot;
+
+obs_data &amp;lt;- rbind(obs_exp, obs_gam)
+qplot(x = C, y = P, color = F_lambda, 
+      data = obs_data, geom = &amp;quot;smooth&amp;quot;, method = &amp;quot;loess&amp;quot;, se = FALSE, ylim = c(-0.02, 1.02))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/PIR-overestimates-prevalence_files/figure-html/PIR_interim_dist-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The gamma(3) interim time distribution leads to a slightly larger positive bias.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ARPobservation: Basic use</title>
+      <link>/arpobservation-basic-use/</link>
+      <pubDate>Fri, 25 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/arpobservation-basic-use/</guid>
+      <description>
+
+
+&lt;p&gt;The ARPobservation package provides a set of tools for simulating data generated by different procedures for direct observation of behavior. This is accomplished in two steps. The first step is to simulate a “behavior stream” itself, which is assumed to follow some type of alternating renewal process. The second step is to apply a procedure or “filter,” which turns the simulated behavior stream into the data recorded by a given observation procedure. Each of these steps is illustrated below.&lt;/p&gt;
+&lt;div id=&#34;simulating-behavior-streams&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Simulating behavior streams&lt;/h2&gt;
+&lt;p&gt;Behavior streams are simulated according to an equilibrium alternating renewal process, which involves the following assumptions.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Each instance of a behavior, termed an &lt;em&gt;event&lt;/em&gt;, lasts a random amount of time, drawn from a specified distribution &lt;code&gt;F_mu&lt;/code&gt; with mean &lt;code&gt;mu&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The length of time in between instances of behavior, termed the &lt;em&gt;interim time&lt;/em&gt;, also lasts a random amount of time, drawn from a specified distribution &lt;code&gt;F_lambda&lt;/code&gt; with mean &lt;code&gt;lambda&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;All events and interim times are mutually independent.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The entire process is in equilibrium.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The function &lt;code&gt;r_behavior_stream&lt;/code&gt; generates random behavior streams. As an initial example, suppose that both the events and the interim times are exponentially distributed, that events last on average 10 seconds, and that the average interim time is 30 seconds. Also suppose that the behavior stream is observed for 300 seconds. The following code will simulate a behavior stream with these parameters:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ARPobservation)
+set.seed(8)              # for reproducibility
+
+r_behavior_stream(n = 1, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_exp(), stream_length = 300)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $stream_length
+## [1] 300
+## 
+## $b_streams
+## $b_streams[[1]]
+## $b_streams[[1]]$start_state
+## [1] 0
+## 
+## $b_streams[[1]]$b_stream
+##  [1]  61.46643  67.45959 117.53097 120.56840 175.94950 185.74134 265.04376
+##  [8] 269.42231 276.13827 284.70467 286.36179 290.82906
+## 
+## 
+## 
+## attr(,&amp;quot;class&amp;quot;)
+## [1] &amp;quot;behavior_stream&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function returns an object of class &lt;code&gt;behavior_stream&lt;/code&gt;, which isn’t terribly nice to look at. The first characteristic of the object is &lt;code&gt;stream_length&lt;/code&gt;, which just reports back how long the behavior stream is. The second characteristic is &lt;code&gt;b_streams&lt;/code&gt;, a list containing one or more simulated behavior streams. Each behavior stream is also a list. The first element indicate the initial state of the stream, so &lt;code&gt;start_state =&lt;/code&gt;0 means that the behavior was not occuring when observation began. The second element is a vector of transition times. The first entry in the vector indicates that the first event began at time 61.47; the following entry indicates that the first event ended (and the next interim time began) at time 67.46. Similarly, the second event began at time 117.53 and ended at time 120.57.&lt;/p&gt;
+&lt;p&gt;The argument &lt;code&gt;n&lt;/code&gt; controls the number of simulated behavior streams returned:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_behavior_stream(n = 3, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_exp(), stream_length = 300)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $stream_length
+## [1] 300
+## 
+## $b_streams
+## $b_streams[[1]]
+## $b_streams[[1]]$start_state
+## [1] 1
+## 
+## $b_streams[[1]]$b_stream
+##  [1]   8.480116  34.311542  43.069956  49.912461  50.087867  85.046893
+##  [7] 103.030351 116.377965 117.101992 140.227289 161.762642 180.640609
+## [13] 196.060432 201.493182 212.232970 236.486373 238.432946 276.824019
+## 
+## 
+## $b_streams[[2]]
+## $b_streams[[2]]$start_state
+## [1] 0
+## 
+## $b_streams[[2]]$b_stream
+##  [1]   6.702804  23.820354  26.087981  33.461543  62.786605  74.705604
+##  [7] 163.806646 164.761520 271.270557 283.207882 286.136103 297.587748
+## 
+## 
+## $b_streams[[3]]
+## $b_streams[[3]]$start_state
+## [1] 0
+## 
+## $b_streams[[3]]$b_stream
+##  [1] 196.4605 203.7452 237.9514 245.2451 246.2089 254.6313 256.6439 258.5644
+##  [9] 262.1140 265.3249 283.9702 298.7830
+## 
+## 
+## 
+## attr(,&amp;quot;class&amp;quot;)
+## [1] &amp;quot;behavior_stream&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that now &lt;code&gt;b_streams&lt;/code&gt; is a list with three entries, each of which contains a &lt;code&gt;start_state&lt;/code&gt; and a &lt;code&gt;b_stream&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Most of the time, you won’t need to look at the simulated behavior streams directly. Instead, you’ll just simulate a bunch of streams and store them for later analysis. Let’s store 10 simulated behavior streams in an object called &lt;code&gt;BS10&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BS10 &amp;lt;- r_behavior_stream(n = 10, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_exp(), stream_length = 300)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;applying-observation-procedures&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Applying observation procedures&lt;/h2&gt;
+&lt;p&gt;Several different functions are available to turn the &lt;code&gt;behavior_stream&lt;/code&gt; object into familiar types of behavioral observation data. For example, the &lt;strong&gt;continuous recording procedure&lt;/strong&gt; (CDR) involves summarizing the behavior stream by the overall proportion of observation time during which events occur. This can be accomplished by feeding &lt;code&gt;BS&lt;/code&gt; into the function &lt;code&gt;continuous_duration_recording&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;continuous_duration_recording(BS10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.1680877 0.4426930 0.1290537 0.3506492 0.2372437 0.3568621 0.2897521
+##  [8] 0.2570101 0.1704727 0.2968024&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function returns a vector containing one number per simulated behavior stream. As expected all of the numbers are proportions between 0 and 1.&lt;/p&gt;
+&lt;p&gt;More interesting is to simulate many more behavior streams, apply CDR, and calculate the mean and variance of the results or plot them in a histogram:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BS_lots &amp;lt;- r_behavior_stream(n = 10000, mu = 10, lambda = 30, F_event = F_exp(), F_interim = F_exp(), stream_length = 300)
+CDR &amp;lt;- continuous_duration_recording(BS_lots)
+c(mean = mean(CDR), var = var(CDR))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        mean         var 
+## 0.250140703 0.009567949&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hist(CDR)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ARPobservation-basic-use_files/figure-html/CDR_hist-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Another well-known recording procedure is &lt;strong&gt;partial interval recording&lt;/strong&gt; (PIR), which involves dividing the observation session into short intervals, then scoring each interval according to whether or not the behavior occurs at any point during the interval. The function &lt;code&gt;interval_recording&lt;/code&gt; applies partial interval recording (or the closely related procedure of whole interval recording) to a set of simulated behavior streams. Suppose that the observer uses 20 s intervals, back-to-back for 300 s, for a total of 15 intervals. This procedure can be applied to the simulated behavior streams using&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;interval_recording(BS10, interval_length = 20, summarize = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+##  [1,]    1    0    1    0    1    1    0    0    0     1
+##  [2,]    0    0    0    0    1    1    1    1    1     1
+##  [3,]    1    1    1    1    1    1    1    1    1     1
+##  [4,]    0    1    1    0    1    1    0    0    1     1
+##  [5,]    0    1    0    1    0    1    1    0    1     0
+##  [6,]    0    1    0    1    0    1    1    1    0     0
+##  [7,]    0    1    0    1    0    1    1    1    0     0
+##  [8,]    1    1    0    0    1    1    1    1    0     0
+##  [9,]    0    1    0    1    0    1    0    1    0     0
+## [10,]    0    0    1    1    0    1    1    1    1     0
+## [11,]    1    0    0    1    0    1    1    1    0     1
+## [12,]    1    1    1    1    0    1    1    1    1     1
+## [13,]    1    1    0    1    0    1    1    1    0     1
+## [14,]    1    1    1    1    1    1    1    0    1     0
+## [15,]    1    1    1    1    1    1    0    1    0     1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since summarize is set to false, the function returns a 15 by 10 matrix, with one column for each behavior stream. Each column contains one entry for each interval, equal to one if any behavior occured during that interval (and zero otherwise). Typically, PIR data is summarized by calculating the proportion of intervals across the entire observation session. The summary proportion can be calculated automatically by setting the option &lt;code&gt;summarize = TRUE&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;interval_recording(BS10, interval_length = 20, summarize = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.5333333 0.7333333 0.4666667 0.7333333 0.4666667 1.0000000 0.7333333
+##  [8] 0.7333333 0.4666667 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;colMeans(interval_recording(BS10, interval_length = 20, summarize = FALSE)) # compare to summarized results&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.5333333 0.7333333 0.4666667 0.7333333 0.4666667 1.0000000 0.7333333
+##  [8] 0.7333333 0.4666667 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sometimes, the PIR procedure is used with a short amount of time in between each interval, which allows the observer to record data or notes. Typical use might involve 15 s intervals of active observation, each followed by 5 s of rest time. This procedure can be applied using the &lt;code&gt;rest_proportion&lt;/code&gt; option. Since 5 s is 25% of the full interval length, the rest proportion is 0.25.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;interval_recording(BS10, interval_length = 20, rest_length = 5, summarize = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.4000000 0.7333333 0.4000000 0.6000000 0.4666667 0.8666667 0.5333333
+##  [8] 0.6666667 0.4000000 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;strong&gt;whole interval recording&lt;/strong&gt; procedure is implemented using &lt;code&gt;interval_recording&lt;/code&gt; with &lt;code&gt;partial = FALSE&lt;/code&gt;. Two other observation procedures are also available: &lt;strong&gt;momentary time recording&lt;/strong&gt; (a.k.a. momentary time sampling), using the function &lt;code&gt;momentary_time_recording&lt;/code&gt;, and &lt;strong&gt;event counting&lt;/strong&gt;, using &lt;code&gt;event_counting&lt;/code&gt;. See the documentation for these functions for usage and examples.&lt;/p&gt;
+&lt;p&gt;Finally, a convenience function is available to apply multiple observation procedures to the same set of simulated behavior streams. Suppose that you want to compare the data generated by CDR with the data generated by PIR with 15 s active intervals and 5 s rest times. This can be accomplished using&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;reported_observations(BS10, data_types = c(&amp;quot;C&amp;quot;, &amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##            C         P
+## 1  0.1680877 0.4000000
+## 2  0.4426930 0.7333333
+## 3  0.1290537 0.4000000
+## 4  0.3506492 0.6000000
+## 5  0.2372437 0.4666667
+## 6  0.3568621 0.8666667
+## 7  0.2897521 0.5333333
+## 8  0.2570101 0.6666667
+## 9  0.1704727 0.4000000
+## 10 0.2968024 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This function returns a data frame with one column for each procedure and one row for each simulated behavior stream. Say that you also want to include data based on momentary time recording, with 20 s in between each moment. Just add an &lt;code&gt;&#34;M&#34;&lt;/code&gt; to the list of data types to include:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;reported_observations(BS10, data_types = c(&amp;quot;C&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;P&amp;quot;), interval_length = 20, rest_length = 5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##            C          M         P
+## 1  0.1680877 0.20000000 0.4000000
+## 2  0.4426930 0.46666667 0.7333333
+## 3  0.1290537 0.06666667 0.4000000
+## 4  0.3506492 0.40000000 0.6000000
+## 5  0.2372437 0.26666667 0.4666667
+## 6  0.3568621 0.40000000 0.8666667
+## 7  0.2897521 0.26666667 0.5333333
+## 8  0.2570101 0.20000000 0.6666667
+## 9  0.1704727 0.06666667 0.4000000
+## 10 0.2968024 0.20000000 0.5333333&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>

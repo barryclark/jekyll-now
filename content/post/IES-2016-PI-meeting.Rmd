@@ -6,8 +6,8 @@ date: '2016-12-19'
 slug: IES-2016-PI-meeting
 categories: []
 tags:
-  - single-case research
-  - effect sizes
+  - single-case design
+  - effect size
 header:
   caption: ''
   image: ''

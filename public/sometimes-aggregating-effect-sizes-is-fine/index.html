@@ -1092,8 +1092,8 @@ microbenchmark(
 )</code></pre>
 <pre><code>## Unit: milliseconds
 ##   expr     min       lq      mean  median       uq      max neval
-##    uni  8.5551  8.90415  9.273009  9.0602  9.37230  12.4637   100
-##  multi 79.0437 82.05060 85.847807 83.5423 85.58925 173.5149   100</code></pre>
+##    uni  8.6496  9.04635  9.658892  9.2733  9.71695  13.3316   100
+##  multi 78.4050 82.76230 87.136962 84.4908 86.62210 186.1949   100</code></pre>
 <p>If the aggregation is done in advance, it is <em>way</em> quicker to fit the univariate model. The short-cut would be useful if we needed to estimate <em>lots</em> of multi-variate meta-regressions (as long as the equivalence conditions hold). For example, if we needed to bootstrap the multivariate model, we could pre-compute the aggregated effects and then just bootstrap the much simpler, much quicker univariate model.</p>
 <p>I suspect that the results I’ve presented here can be further generalized, but this will need a bit of further investigation. For one, there are also equivalences between variance estimators: using the CR2 cluster-robust variance estimator for the multivariate model is equivalent to using the HC2 heteroskedasticity-robust variance estimator for the univariate model with aggregated effects.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
 For another, the same sort of equivalence relationships hold even if there are additional random effects in the model, so long as the random effects are at the study level or higher levels of aggregation (e.g., lab effects, where labs are nested within studies).
@@ -1166,9 +1166,11 @@ coef_test(uni_fit, vcov = &quot;CR2&quot;, cluster = corrdat_agg$studyid)</code>
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/effect-sizes/">effect sizes</a>
+  <a class="badge badge-light" href="/tags/effect-size/">effect size</a>
   
   <a class="badge badge-light" href="/tags/meta-analysis/">meta-analysis</a>
+  
+  <a class="badge badge-light" href="/tags/dependent-effect-sizes/">dependent effect sizes</a>
   
 </div>
 
@@ -1308,11 +1310,11 @@ coef_test(uni_fit, vcov = &quot;CR2&quot;, cluster = corrdat_agg$studyid)</code>
       
       <li><a href="/variance-of-r-in-two-level-design/">Sampling variance of Pearson r in a two-level design</a></li>
       
-      <li><a href="/alternative-formulas-for-the-smd/">Alternative formulas for the standardized mean difference</a></li>
+      <li><a href="/using-response-ratios-paper/">New paper: Using response ratios for meta-analyzing SCDs with behavioral outcomes</a></li>
       
-      <li><a href="/sped-pro-sem-again/">Special Education Pro-Sem</a></li>
+      <li><a href="/publication/using-response-ratios/">Using response ratios for meta-analyzing single-case designs with behavioral outcomes</a></li>
       
-      <li><a href="/correlations-between-smds/">Correlations between standardized mean differences</a></li>
+      <li><a href="/publication/rase-special-issue-introduction/">Introduction to the special issue on single-case systematic reviews and meta-analysis</a></li>
       
     </ul>
   </div>

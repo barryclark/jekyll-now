@@ -135,11 +135,11 @@ From these parameters, we’ll generate raw data, calculate effect size estimate
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;delta &amp;lt;- rnorm(4, mean = 0.2, sd = 0.1)
 r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = 0.6)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Loading required package: mvtnorm&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##           ES        SE  N
-## 1  0.2258267 0.3172870 40
-## 2  0.2904284 0.3179778 40
-## 3  0.2944114 0.3180259 40
-## 4 -0.2015085 0.3170714 40&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##            ES        SE  N
+## 1  0.02795295 0.3162440 40
+## 2 -0.37019812 0.3190662 40
+## 3  0.15861202 0.3167507 40
+## 4 -0.29438342 0.3180256 40&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Or if you’d rather specify the full &lt;span class=&#34;math inline&#34;&gt;\(\Psi_k\)&lt;/span&gt; matrix yourself:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Psi_k &amp;lt;- 0.6 + diag(0.4, nrow = 4)
 Psi_k&lt;/code&gt;&lt;/pre&gt;
@@ -149,11 +149,11 @@ Psi_k&lt;/code&gt;&lt;/pre&gt;
 ## [3,]  0.6  0.6  1.0  0.6
 ## [4,]  0.6  0.6  0.6  1.0&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = Psi_k)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##          ES        SE  N
-## 1 0.4136328 0.3197674 40
-## 2 0.6730080 0.3255146 40
-## 3 0.5825111 0.3232100 40
-## 4 0.4974262 0.3213342 40&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##            ES        SE  N
+## 1  0.30796886 0.3181948 40
+## 2  0.24528651 0.3174770 40
+## 3  0.24496926 0.3174738 40
+## 4 -0.03142033 0.3162483 40&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;exercises&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exercises&lt;/h2&gt;
 &lt;p&gt;The function above is serviceable but quite basic. I can think of several additional features that one might like to have for use in research simulations, but I’m feeling both cheeky and lazy at the moment, so I’ll leave them for you, dear reader. Here are some suggested exercises:&lt;/p&gt;
@@ -235,52 +235,49 @@ study_data &amp;lt;-
 
 study_data&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##       delta J  N       Psi
-## 1 0.1894240 9 50 0.5112511
-## 2 0.1523343 3 44 0.6584239
-## 3 0.2478227 5 38 0.5442388
-## 4 0.1530779 5 46 0.5338198
-## 5 0.2557257 6 48 0.6635501
-## 6 0.3111021 3 34 0.7598409&lt;/code&gt;&lt;/pre&gt;
+## 1 0.2164399 7 34 0.5219260
+## 2 0.1695641 4 54 0.5560842
+## 3 0.2023963 5 50 0.5796910
+## 4 0.1786634 3 42 0.5834660
+## 5 0.2328779 3 36 0.4235426
+## 6 0.1554537 6 48 0.5357454&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Once we have the “menu” of study-level characteristics, it’s just a matter of mapping the parameters to the data-generating function. One way to do this is with &lt;code&gt;pmap_df&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(purrr)
 meta_data &amp;lt;- pmap_df(study_data, r_SMDs_raw, .id = &amp;quot;study&amp;quot;)
 meta_data&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    study            ES        SE  N
-## 1      1  0.0838982347 0.2829723 50
-## 2      1  0.3131093912 0.2846423 50
-## 3      1  0.2032941211 0.2836027 50
-## 4      1  0.1462363557 0.2832362 50
-## 5      1 -0.0841477323 0.2829731 50
-## 6      1  0.0008988422 0.2828427 50
-## 7      1  0.1703249176 0.2833764 50
-## 8      1 -0.1645178447 0.2833407 50
-## 9      1  0.0527563306 0.2828940 50
-## 10     2  0.4031344135 0.3047028 44
-## 11     2  0.3437062486 0.3038346 44
-## 12     2  0.2525668139 0.3027681 44
-## 13     3  0.8555648807 0.3397495 38
-## 14     3  0.3502132641 0.3270575 38
-## 15     3  0.1662112740 0.3250336 38
-## 16     3  0.7294206056 0.3356379 38
-## 17     3  0.3447478812 0.3269769 38
-## 18     4  0.3773615530 0.2976151 46
-## 19     4  0.4328885816 0.2984727 46
-## 20     4  0.2244493715 0.2958530 46
-## 21     4  0.3393561858 0.2970946 46
-## 22     4  0.5140631756 0.2999325 46
-## 23     5  0.0717846618 0.2887721 48
-## 24     5  0.3179642994 0.2905723 48
-## 25     5  0.3444123920 0.2908998 48
-## 26     5  0.5411105342 0.2941359 48
-## 27     5  0.2431480980 0.2897860 48
-## 28     5  0.1627009191 0.2891731 48
-## 29     6  0.2959281618 0.3449861 34
-## 30     6 -0.1153519889 0.3433001 34
-## 31     6  0.5503107844 0.3498270 34&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    study          ES        SE  N
+## 1      1  0.13424472 0.3434074 34
+## 2      1  0.61637803 0.3515442 34
+## 3      1  0.89283387 0.3606973 34
+## 4      1  0.62649158 0.3518235 34
+## 5      1  0.43596110 0.3472993 34
+## 6      1  0.62143835 0.3516834 34
+## 7      1  0.60034463 0.3511104 34
+## 8      2 -0.01693615 0.2721706 54
+## 9      2  0.10887688 0.2723748 54
+## 10     2 -0.06254183 0.2722346 54
+## 11     2  0.60622010 0.2785817 54
+## 12     3  0.38220860 0.2855201 50
+## 13     3  0.17922070 0.2834336 50
+## 14     3  0.50984042 0.2875894 50
+## 15     3  0.26371265 0.2841204 50
+## 16     3  0.30662621 0.2845687 50
+## 17     4  0.18850878 0.3093255 42
+## 18     4  0.09359422 0.3087841 42
+## 19     4  0.06258202 0.3086860 42
+## 20     5  0.04903932 0.3333864 36
+## 21     5  0.06668237 0.3334314 36
+## 22     5  0.24701327 0.3346766 36
+## 23     6  0.01605121 0.2886800 48
+## 24     6  0.29727147 0.2903341 48
+## 25     6  0.26241278 0.2899686 48
+## 26     6  0.03451125 0.2886976 48
+## 27     6  0.21825135 0.2895705 48
+## 28     6 -0.01595245 0.2886799 48&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(meta_data$study)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## 1 2 3 4 5 6 
-## 9 3 5 5 6 3&lt;/code&gt;&lt;/pre&gt;
+## 7 4 5 3 3 6&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Putting it all together into a function, we have&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_meta &amp;lt;- function(K, mu, tau, J_mean, N_mean, rho, nu) {
   require(purrr)
@@ -683,8 +680,8 @@ microbenchmark(
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Unit: milliseconds
 ##   expr     min       lq      mean  median       uq      max neval
-##    uni  8.5551  8.90415  9.273009  9.0602  9.37230  12.4637   100
-##  multi 79.0437 82.05060 85.847807 83.5423 85.58925 173.5149   100&lt;/code&gt;&lt;/pre&gt;
+##    uni  8.6496  9.04635  9.658892  9.2733  9.71695  13.3316   100
+##  multi 78.4050 82.76230 87.136962 84.4908 86.62210 186.1949   100&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If the aggregation is done in advance, it is &lt;em&gt;way&lt;/em&gt; quicker to fit the univariate model. The short-cut would be useful if we needed to estimate &lt;em&gt;lots&lt;/em&gt; of multi-variate meta-regressions (as long as the equivalence conditions hold). For example, if we needed to bootstrap the multivariate model, we could pre-compute the aggregated effects and then just bootstrap the much simpler, much quicker univariate model.&lt;/p&gt;
 &lt;p&gt;I suspect that the results I’ve presented here can be further generalized, but this will need a bit of further investigation. For one, there are also equivalences between variance estimators: using the CR2 cluster-robust variance estimator for the multivariate model is equivalent to using the HC2 heteroskedasticity-robust variance estimator for the univariate model with aggregated effects.&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;
 For another, the same sort of equivalence relationships hold even if there are additional random effects in the model, so long as the random effects are at the study level or higher levels of aggregation (e.g., lab effects, where labs are nested within studies).
@@ -798,15 +795,15 @@ simulate_OR_to_SMD &amp;lt;- function(p0, SMD, r, n0, n1) {
 
 simulate_OR_to_SMD(p0 = 0.6, SMD = 0.4, r = 0.7, n0 = 10000, n1 = 10000)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##          type   LOR_est   SMD_est
-## 1    marginal 0.7545969 0.4160311
-## 2 conditional 0.8781614 0.4841558&lt;/code&gt;&lt;/pre&gt;
+## 1    marginal 0.7468089 0.4117373
+## 2 conditional 0.8711806 0.4803070&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## -- Attaching packages ----------------------------------------------------------- tidyverse 1.2.1 --&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Attaching packages ------------------------------------------------------ tidyverse 1.2.1 --&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## v ggplot2 3.3.0     v purrr   0.3.3
 ## v tibble  3.0.0     v dplyr   0.8.3
 ## v tidyr   1.0.0     v stringr 1.4.0
 ## v readr   1.3.1     v forcats 0.4.0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## -- Conflicts -------------------------------------------------------------- tidyverse_conflicts() --
+&lt;pre&gt;&lt;code&gt;## -- Conflicts --------------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;params &amp;lt;- 
@@ -822,7 +819,9 @@ SMDs &amp;lt;-
   mutate(res = pmap(., simulate_OR_to_SMD, n0 = 50000, n1 = 50000)) %&amp;gt;%
   unnest() %&amp;gt;%
   mutate(RB = SMD_est / SMD)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: `cols` is now required.
 ## Please use `cols = c(res)`&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(SMDs, aes(r, RB, color = type)) + 
@@ -2158,19 +2157,19 @@ summary(bdf_missing)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##     IQ.verb         IQ.perf            sex             ses       
 ##  Min.   : 4.00   Min.   : 5.333   Min.   :1.000   Min.   :10.00  
 ##  1st Qu.:10.50   1st Qu.: 9.333   1st Qu.:1.000   1st Qu.:20.00  
-##  Median :11.50   Median :10.667   Median :1.000   Median :27.50  
-##  Mean   :11.68   Mean   :10.737   Mean   :1.472   Mean   :28.51  
-##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:37.00  
+##  Median :11.50   Median :10.667   Median :1.000   Median :27.00  
+##  Mean   :11.72   Mean   :10.733   Mean   :1.462   Mean   :28.58  
+##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:38.00  
 ##  Max.   :18.00   Max.   :16.667   Max.   :2.000   Max.   :50.00  
-##  NA&amp;#39;s   :36      NA&amp;#39;s   :42       NA&amp;#39;s   :40      NA&amp;#39;s   :37     
-##     langPRET        aritPRET       aritPOST        schoolNR  
-##  Min.   :15.00   Min.   : 1.0   Min.   : 2.00   40     : 35  
-##  1st Qu.:29.00   1st Qu.: 9.0   1st Qu.:12.00   54     : 31  
-##  Median :34.00   Median :11.0   Median :18.00   55     : 30  
-##  Mean   :33.79   Mean   :11.6   Mean   :17.74   38     : 28  
-##  3rd Qu.:39.00   3rd Qu.:14.0   3rd Qu.:23.00   1      : 25  
-##  Max.   :48.00   Max.   :20.0   Max.   :30.00   18     : 24  
-##  NA&amp;#39;s   :38      NA&amp;#39;s   :41     NA&amp;#39;s   :34      (Other):354&lt;/code&gt;&lt;/pre&gt;
+##  NA&amp;#39;s   :37      NA&amp;#39;s   :39       NA&amp;#39;s   :40      NA&amp;#39;s   :37     
+##     langPRET        aritPRET        aritPOST        schoolNR  
+##  Min.   :15.00   Min.   : 1.00   Min.   : 2.00   40     : 35  
+##  1st Qu.:30.00   1st Qu.: 9.00   1st Qu.:12.00   54     : 31  
+##  Median :34.00   Median :11.00   Median :18.00   55     : 30  
+##  Mean   :33.87   Mean   :11.64   Mean   :17.57   38     : 28  
+##  3rd Qu.:39.00   3rd Qu.:14.00   3rd Qu.:23.00   1      : 25  
+##  Max.   :48.00   Max.   :20.00   Max.   :30.00   18     : 24  
+##  NA&amp;#39;s   :32      NA&amp;#39;s   :31      NA&amp;#39;s   :36      (Other):354&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now I’ll use &lt;code&gt;mice&lt;/code&gt; to create 10 multiply imputed datasets:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Impute_bdf &amp;lt;- mice(bdf_missing, m=10, meth=&amp;quot;norm.nob&amp;quot;, seed=24)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Am I imputing while ignoring the hierarchical structure of the data? Yes, yes I am. Is this is a good way to do imputation? Probably not. But this is a quick and dirty example, so we’re going to have to live with it.&lt;/p&gt;
@@ -2201,11 +2200,11 @@ coef_test(lm_full, cluster = bdf$schoolNR, vcov = &amp;quot;CR2&amp;quot;)&lt;/c
   pool() %&amp;gt;%
   summary()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##          term    estimate  std.error statistic       df      p.value
-## 1 (Intercept) -2.42499046 1.16841662 -2.075450 274.2334 3.887690e-02
-## 2    aritPRET  1.02683271 0.07243974 14.174992 293.2843 0.000000e+00
-## 3    langPRET  0.26639282 0.03990097  6.676349 159.7092 3.840734e-10
-## 4         sex -0.93604664 0.43011186 -2.176287 194.3333 3.073991e-02
-## 5         ses  0.02030141 0.02015597  1.007216 292.2173 3.146644e-01&lt;/code&gt;&lt;/pre&gt;
+## 1 (Intercept) -2.28650029 1.11111424 -2.057844 417.9634 4.022469e-02
+## 2    aritPRET  0.97135842 0.07152843 13.580033 250.9260 0.000000e+00
+## 3    langPRET  0.27866679 0.03722404  7.486205 308.6377 7.474021e-13
+## 4         sex -1.06494919 0.41317983 -2.577447 272.5258 1.047928e-02
+## 5         ses  0.03220417 0.02142008  1.503457 124.5671 1.352524e-01&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;However, this approach ignores the possibility of correlation in the errors of units in the same cluster, which is clearly a concern in this dataset:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# ratio of CRVE to conventional variance estimates
 diag(vcovCR(lm_full, cluster = bdf$schoolNR, type = &amp;quot;CR2&amp;quot;)) / 
@@ -2302,13 +2301,13 @@ robust_pooled %&amp;gt;%
   select(coef, est = beta_bar, se, t, df, p_val, lo95, hi95, gamma) %&amp;gt;%
   mutate_at(vars(est:gamma), round, 3)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 9
-##   coef           est    se      t    df p_val   lo95  hi95 gamma
-##   &amp;lt;chr&amp;gt;        &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
-## 1 (Intercept) -2.42  1.38  -1.75   19.3 0.095 -5.32  0.467 0.082
-## 2 aritPRET     1.03  0.095 10.9    18.8 0      0.829 1.23  0.062
-## 3 langPRET     0.266 0.036  7.35   15.4 0      0.189 0.343 0.227
-## 4 ses          0.02  0.03   0.671  17.2 0.511 -0.043 0.084 0.047
-## 5 sex         -0.936 0.481 -1.94   18.2 0.067 -1.95  0.075 0.128&lt;/code&gt;&lt;/pre&gt;
+##   coef           est    se     t    df p_val   lo95   hi95 gamma
+##   &amp;lt;chr&amp;gt;        &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1 (Intercept) -2.29  1.34  -1.70  20.4 0.104 -5.08   0.51  0.039
+## 2 aritPRET     0.971 0.092 10.5   19.0 0      0.778  1.16  0.076
+## 3 langPRET     0.279 0.036  7.71  19.5 0      0.203  0.354 0.106
+## 4 ses          0.032 0.03   1.09  16.3 0.292 -0.03   0.095 0.117
+## 5 sex         -1.06  0.472 -2.26  19.6 0.036 -2.05  -0.08  0.089&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;It is instructive to compare the calculated &lt;code&gt;df&lt;/code&gt; to &lt;code&gt;eta_bar&lt;/code&gt; and &lt;code&gt;df_m&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;robust_pooled %&amp;gt;%
   select(coef, df, df_m, eta_bar) %&amp;gt;%
@@ -2316,11 +2315,11 @@ robust_pooled %&amp;gt;%
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 4
 ##   coef           df  df_m eta_bar
 ##   &amp;lt;chr&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;
-## 1 (Intercept)  19.3 1333.    23.1
-## 2 aritPRET     18.8 2315.    22  
-## 3 langPRET     15.4  175.    23.7
-## 4 ses          17.2 3994.    19.9
-## 5 sex          18.2  549.    23.3&lt;/code&gt;&lt;/pre&gt;
+## 1 (Intercept)  20.4 6006.    23  
+## 2 aritPRET     19   1550.    22.5
+## 3 langPRET     19.5  806.    24.1
+## 4 ses          16.3  657.    20.7
+## 5 sex          19.6 1138.    23.7&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here, &lt;code&gt;eta_bar&lt;/code&gt; is the average of the complete data degrees of freedom, and it can be seen that the total degrees of freedom are somewhat less than the average complete-data degrees of freedom. This is by construction. Further &lt;code&gt;df_m&lt;/code&gt; is the conventional degrees of freedom used in multiple-imputation, which assume that the complete-data estimates are normally distributed, and in this example they are way far off.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;further-thoughts&#34; class=&#34;section level3&#34;&gt;
@@ -2367,7 +2366,7 @@ robust_pooled %&amp;gt;%
 ##         return(vcov_mat[cluster_index, cluster_index])
 ##     }
 ## }
-## &amp;lt;bytecode: 0x0000000018729e88&amp;gt;
+## &amp;lt;bytecode: 0x0000000018309e80&amp;gt;
 ## &amp;lt;environment: namespace:clubSandwich&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The function takes three required arguments:&lt;/p&gt;
 &lt;ul&gt;
@@ -2380,16 +2379,16 @@ robust_pooled %&amp;gt;%
                   yi = rnorm(9), 
                   vi = 4:12)
 dat&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##   study         yi vi
-## 1     A  0.5839048  4
-## 2     A -0.5168943  5
-## 3     B  0.1946788  6
-## 4     B  1.0894588  7
-## 5     B -0.2251032  8
-## 6     C -1.1907191  9
-## 7     C  1.3966669 10
-## 8     C  1.7493633 11
-## 9     C -1.1837521 12&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   study          yi vi
+## 1     A -1.33148823  4
+## 2     A -0.02725897  5
+## 3     B -0.70125406  6
+## 4     B -1.71119746  7
+## 5     B -0.70957554  8
+## 6     C -0.40639264  9
+## 7     C -0.13290344 10
+## 8     C -1.10272160 11
+## 9     C -0.38033372 12&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I’ll assume that effect size estimates from a given study are correlated at 0.7:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;V_list &amp;lt;- impute_covariance_matrix(vi = dat$vi, cluster = dat$study, r = 0.7)
 V_list&lt;/code&gt;&lt;/pre&gt;
@@ -2431,28 +2430,28 @@ V_list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s what happens if we feed in the data in a different order:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat_scramble &amp;lt;- dat[sample(nrow(dat)),]
 dat_scramble&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##   study         yi vi
-## 8     C  1.7493633 11
-## 9     C -1.1837521 12
-## 3     B  0.1946788  6
-## 1     A  0.5839048  4
-## 2     A -0.5168943  5
-## 5     B -0.2251032  8
-## 7     C  1.3966669 10
-## 4     B  1.0894588  7
-## 6     C -1.1907191  9&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   study          yi vi
+## 9     C -0.38033372 12
+## 3     B -0.70125406  6
+## 8     C -1.10272160 11
+## 5     B -0.70957554  8
+## 6     C -0.40639264  9
+## 2     A -0.02725897  5
+## 1     A -1.33148823  4
+## 4     B -1.71119746  7
+## 7     C -0.13290344 10&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;V_mat &amp;lt;- round(impute_covariance_matrix(vi = dat_scramble$vi, cluster = dat_scramble$study, r = 0.7), 3)
 V_mat&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##         [,1]   [,2]  [,3] [,4] [,5]  [,6]   [,7]  [,8]  [,9]
-##  [1,] 11.000  8.042 0.000 0.00 0.00 0.000  7.342 0.000 6.965
-##  [2,]  8.042 12.000 0.000 0.00 0.00 0.000  7.668 0.000 7.275
-##  [3,]  0.000  0.000 6.000 0.00 0.00 4.850  0.000 4.537 0.000
-##  [4,]  0.000  0.000 0.000 4.00 3.13 0.000  0.000 0.000 0.000
-##  [5,]  0.000  0.000 0.000 3.13 5.00 0.000  0.000 0.000 0.000
-##  [6,]  0.000  0.000 4.850 0.00 0.00 8.000  0.000 5.238 0.000
-##  [7,]  7.342  7.668 0.000 0.00 0.00 0.000 10.000 0.000 6.641
-##  [8,]  0.000  0.000 4.537 0.00 0.00 5.238  0.000 7.000 0.000
-##  [9,]  6.965  7.275 0.000 0.00 0.00 0.000  6.641 0.000 9.000&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         [,1]  [,2]   [,3]  [,4]  [,5] [,6] [,7]  [,8]   [,9]
+##  [1,] 12.000 0.000  8.042 0.000 7.275 0.00 0.00 0.000  7.668
+##  [2,]  0.000 6.000  0.000 4.850 0.000 0.00 0.00 4.537  0.000
+##  [3,]  8.042 0.000 11.000 0.000 6.965 0.00 0.00 0.000  7.342
+##  [4,]  0.000 4.850  0.000 8.000 0.000 0.00 0.00 5.238  0.000
+##  [5,]  7.275 0.000  6.965 0.000 9.000 0.00 0.00 0.000  6.641
+##  [6,]  0.000 0.000  0.000 0.000 0.000 5.00 3.13 0.000  0.000
+##  [7,]  0.000 0.000  0.000 0.000 0.000 3.13 4.00 0.000  0.000
+##  [8,]  0.000 4.537  0.000 5.238 0.000 0.00 0.00 7.000  0.000
+##  [9,]  7.668 0.000  7.342 0.000 6.641 0.00 0.00 0.000 10.000&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To see that this is correct, check that the diagonal entries of &lt;code&gt;V_mat&lt;/code&gt; are the same as &lt;code&gt;vi&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(dat_scramble$vi, diag(V_mat))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
@@ -3333,7 +3332,7 @@ V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov(gls_sorted, individual = 
 ##     attr(result, &amp;quot;group.levels&amp;quot;) &amp;lt;- names(obj$groups)
 ##     result
 ## }
-## &amp;lt;bytecode: 0x000000001bc24f78&amp;gt;
+## &amp;lt;bytecode: 0x000000001bc39d00&amp;gt;
 ## &amp;lt;environment: namespace:nlme&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The issue is in the 4th line of the body. &lt;code&gt;getVarCov.gls&lt;/code&gt; assumes that &lt;code&gt;varWeights(obj$modelStruct$varStruct)&lt;/code&gt; is sorted in the same order as &lt;code&gt;obj$groups&lt;/code&gt;, which is not necessarily true. Instead, &lt;code&gt;varWeights&lt;/code&gt; seem to return the weights sorted according to the grouping variable. For this example, that means that the &lt;code&gt;varWeights&lt;/code&gt; will not depend on the order in which the groups are sorted.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;identical(gls_raw$groups, gls_sorted$groups)&lt;/code&gt;&lt;/pre&gt;
@@ -5761,27 +5760,6 @@ login4$cd project_name&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;TACC accounts come with a limited number of computing hours, so you should be careful to write efficient code. Before you even start worrying about running on TACC, you should profile your code and try to find ways to speed up the computations. (Some simple improvements in my Behrens-Fisher code would make it run MUCH faster.) Once you’ve done what you can in terms of efficiency, you should do some small test runs on Stampede. For example, you could try running only a few iterations for each combination of factors, and/or running only some of the combinations rather than the full factorial design. Based on the run-time for these jobs, you’ll then be able to estimate how long the full code would take. If it’s acceptable (and within your allocation), then go ahead and &lt;code&gt;sbatch&lt;/code&gt; the full job. If it’s not, you might reconsider the number of factor levels in your design or the number of iterations you need. I might have more comments about those some other time.&lt;/p&gt;
 &lt;p&gt;Comments? Suggestions? Corrections? Drop a comment.&lt;/p&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Designing simulation studies using R</title>
-      <link>/designing-simulation-studies-using-r/</link>
-      <pubDate>Fri, 06 Dec 2013 00:00:00 +0000</pubDate>
-      <guid>/designing-simulation-studies-using-r/</guid>
-      <description>
-
-
-&lt;p&gt;&lt;a href=&#34;/files/Designing-simulation-studies-using-R.pdf&#34;&gt;Here are the slides&lt;/a&gt; from my presentation at this afternoon’s Quant. Methods brown bag. I gave a very quick introduction to using R for conducting simulation studies. I hope it was enough to get people intrigued about the possibilities of using R in their own work.&lt;/p&gt;
-&lt;p&gt;The second half of the presentation sketched out a quick-and-dirty simulation of the &lt;a href=&#34;http://en.wikipedia.org/wiki/Behrens%E2%80%93Fisher_problem&#34;&gt;Behrens-Fisher problem&lt;/a&gt;, or more specifically the coverage rates of 95% confidence intervals using Welch’s degrees of freedom approximation, given independent samples with unequal variances. Here is &lt;a href=&#34;https://gist.github.com/jepusto/7686463&#34;&gt;the complete code&lt;/a&gt;. As I mentioned in the talk, there’s lots of room for improvement. The main point that I was trying to illustrate is that simulations have five distinct pieces:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;a data generating model,&lt;/li&gt;
-&lt;li&gt;an estimation procedure,&lt;/li&gt;
-&lt;li&gt;performance criteria,&lt;/li&gt;
-&lt;li&gt;an experimental design (parameter values and sample dimensions), and&lt;/li&gt;
-&lt;li&gt;analysis and results.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;It is useful to write simulation code that reflects the structure, so that it is easy for you (or other people) to read, revise, extend, or re-run it. And then post it on your blog.&lt;/p&gt;
 </description>
     </item>
     

@@ -9,6 +9,7 @@ header:
 summary: Helper package to assist in running simulation studies
 tags:
 - simulation
+- Rstats
 title: simhelpers
 authors:
 - Megha Joshi

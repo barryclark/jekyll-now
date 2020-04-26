@@ -8,7 +8,8 @@ categories: []
 tags:
   - missing data
   - sandwiches
-  - R
+  - small-sample
+  - Rstats
 header:
   caption: ''
   image: ''
@@ -49,19 +50,19 @@ summary(bdf_missing)</code></pre>
 <pre><code>##     IQ.verb         IQ.perf            sex             ses       
 ##  Min.   : 4.00   Min.   : 5.333   Min.   :1.000   Min.   :10.00  
 ##  1st Qu.:10.50   1st Qu.: 9.333   1st Qu.:1.000   1st Qu.:20.00  
-##  Median :11.50   Median :10.667   Median :1.000   Median :27.50  
-##  Mean   :11.68   Mean   :10.737   Mean   :1.472   Mean   :28.51  
-##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:37.00  
+##  Median :11.50   Median :10.667   Median :1.000   Median :27.00  
+##  Mean   :11.72   Mean   :10.733   Mean   :1.462   Mean   :28.58  
+##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:38.00  
 ##  Max.   :18.00   Max.   :16.667   Max.   :2.000   Max.   :50.00  
-##  NA&#39;s   :36      NA&#39;s   :42       NA&#39;s   :40      NA&#39;s   :37     
-##     langPRET        aritPRET       aritPOST        schoolNR  
-##  Min.   :15.00   Min.   : 1.0   Min.   : 2.00   40     : 35  
-##  1st Qu.:29.00   1st Qu.: 9.0   1st Qu.:12.00   54     : 31  
-##  Median :34.00   Median :11.0   Median :18.00   55     : 30  
-##  Mean   :33.79   Mean   :11.6   Mean   :17.74   38     : 28  
-##  3rd Qu.:39.00   3rd Qu.:14.0   3rd Qu.:23.00   1      : 25  
-##  Max.   :48.00   Max.   :20.0   Max.   :30.00   18     : 24  
-##  NA&#39;s   :38      NA&#39;s   :41     NA&#39;s   :34      (Other):354</code></pre>
+##  NA&#39;s   :37      NA&#39;s   :39       NA&#39;s   :40      NA&#39;s   :37     
+##     langPRET        aritPRET        aritPOST        schoolNR  
+##  Min.   :15.00   Min.   : 1.00   Min.   : 2.00   40     : 35  
+##  1st Qu.:30.00   1st Qu.: 9.00   1st Qu.:12.00   54     : 31  
+##  Median :34.00   Median :11.00   Median :18.00   55     : 30  
+##  Mean   :33.87   Mean   :11.64   Mean   :17.57   38     : 28  
+##  3rd Qu.:39.00   3rd Qu.:14.00   3rd Qu.:23.00   1      : 25  
+##  Max.   :48.00   Max.   :20.00   Max.   :30.00   18     : 24  
+##  NA&#39;s   :32      NA&#39;s   :31      NA&#39;s   :36      (Other):354</code></pre>
 <p>Now I’ll use <code>mice</code> to create 10 multiply imputed datasets:</p>
 <pre class="r"><code>Impute_bdf &lt;- mice(bdf_missing, m=10, meth=&quot;norm.nob&quot;, seed=24)</code></pre>
 <p>Am I imputing while ignoring the hierarchical structure of the data? Yes, yes I am. Is this is a good way to do imputation? Probably not. But this is a quick and dirty example, so we’re going to have to live with it.</p>
@@ -92,11 +93,11 @@ coef_test(lm_full, cluster = bdf$schoolNR, vcov = &quot;CR2&quot;)</code></pre>
   pool() %&gt;%
   summary()</code></pre>
 <pre><code>##          term    estimate  std.error statistic       df      p.value
-## 1 (Intercept) -2.42499046 1.16841662 -2.075450 274.2334 3.887690e-02
-## 2    aritPRET  1.02683271 0.07243974 14.174992 293.2843 0.000000e+00
-## 3    langPRET  0.26639282 0.03990097  6.676349 159.7092 3.840734e-10
-## 4         sex -0.93604664 0.43011186 -2.176287 194.3333 3.073991e-02
-## 5         ses  0.02030141 0.02015597  1.007216 292.2173 3.146644e-01</code></pre>
+## 1 (Intercept) -2.28650029 1.11111424 -2.057844 417.9634 4.022469e-02
+## 2    aritPRET  0.97135842 0.07152843 13.580033 250.9260 0.000000e+00
+## 3    langPRET  0.27866679 0.03722404  7.486205 308.6377 7.474021e-13
+## 4         sex -1.06494919 0.41317983 -2.577447 272.5258 1.047928e-02
+## 5         ses  0.03220417 0.02142008  1.503457 124.5671 1.352524e-01</code></pre>
 <p>However, this approach ignores the possibility of correlation in the errors of units in the same cluster, which is clearly a concern in this dataset:</p>
 <pre class="r"><code># ratio of CRVE to conventional variance estimates
 diag(vcovCR(lm_full, cluster = bdf$schoolNR, type = &quot;CR2&quot;)) / 
@@ -193,13 +194,13 @@ robust_pooled %&gt;%
   select(coef, est = beta_bar, se, t, df, p_val, lo95, hi95, gamma) %&gt;%
   mutate_at(vars(est:gamma), round, 3)</code></pre>
 <pre><code>## # A tibble: 5 x 9
-##   coef           est    se      t    df p_val   lo95  hi95 gamma
-##   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1 (Intercept) -2.42  1.38  -1.75   19.3 0.095 -5.32  0.467 0.082
-## 2 aritPRET     1.03  0.095 10.9    18.8 0      0.829 1.23  0.062
-## 3 langPRET     0.266 0.036  7.35   15.4 0      0.189 0.343 0.227
-## 4 ses          0.02  0.03   0.671  17.2 0.511 -0.043 0.084 0.047
-## 5 sex         -0.936 0.481 -1.94   18.2 0.067 -1.95  0.075 0.128</code></pre>
+##   coef           est    se     t    df p_val   lo95   hi95 gamma
+##   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;
+## 1 (Intercept) -2.29  1.34  -1.70  20.4 0.104 -5.08   0.51  0.039
+## 2 aritPRET     0.971 0.092 10.5   19.0 0      0.778  1.16  0.076
+## 3 langPRET     0.279 0.036  7.71  19.5 0      0.203  0.354 0.106
+## 4 ses          0.032 0.03   1.09  16.3 0.292 -0.03   0.095 0.117
+## 5 sex         -1.06  0.472 -2.26  19.6 0.036 -2.05  -0.08  0.089</code></pre>
 <p>It is instructive to compare the calculated <code>df</code> to <code>eta_bar</code> and <code>df_m</code>:</p>
 <pre class="r"><code>robust_pooled %&gt;%
   select(coef, df, df_m, eta_bar) %&gt;%
@@ -207,11 +208,11 @@ robust_pooled %&gt;%
 <pre><code>## # A tibble: 5 x 4
 ##   coef           df  df_m eta_bar
 ##   &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
-## 1 (Intercept)  19.3 1333.    23.1
-## 2 aritPRET     18.8 2315.    22  
-## 3 langPRET     15.4  175.    23.7
-## 4 ses          17.2 3994.    19.9
-## 5 sex          18.2  549.    23.3</code></pre>
+## 1 (Intercept)  20.4 6006.    23  
+## 2 aritPRET     19   1550.    22.5
+## 3 langPRET     19.5  806.    24.1
+## 4 ses          16.3  657.    20.7
+## 5 sex          19.6 1138.    23.7</code></pre>
 <p>Here, <code>eta_bar</code> is the average of the complete data degrees of freedom, and it can be seen that the total degrees of freedom are somewhat less than the average complete-data degrees of freedom. This is by construction. Further <code>df_m</code> is the conventional degrees of freedom used in multiple-imputation, which assume that the complete-data estimates are normally distributed, and in this example they are way far off.</p>
 </div>
 <div id="further-thoughts" class="section level3">

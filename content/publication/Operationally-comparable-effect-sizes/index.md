@@ -18,7 +18,7 @@ tags:
 - hierarchical models
 - response ratio
 - single-case design
-- systematic direct observation
+- behavioral observation
 
 slides: 
 summary: 

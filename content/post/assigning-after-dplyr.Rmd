@@ -6,7 +6,7 @@ date: '2016-05-13'
 slug: assigning-after-dplyr
 categories: []
 tags:
-  - R
+  - Rstats
   - programming
 header:
   caption: ''

@@ -80,11 +80,11 @@ From these parameters, we’ll generate raw data, calculate effect size estimate
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;delta &amp;lt;- rnorm(4, mean = 0.2, sd = 0.1)
 r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = 0.6)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Loading required package: mvtnorm&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##           ES        SE  N
-## 1  0.2258267 0.3172870 40
-## 2  0.2904284 0.3179778 40
-## 3  0.2944114 0.3180259 40
-## 4 -0.2015085 0.3170714 40&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##            ES        SE  N
+## 1  0.02795295 0.3162440 40
+## 2 -0.37019812 0.3190662 40
+## 3  0.15861202 0.3167507 40
+## 4 -0.29438342 0.3180256 40&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Or if you’d rather specify the full &lt;span class=&#34;math inline&#34;&gt;\(\Psi_k\)&lt;/span&gt; matrix yourself:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Psi_k &amp;lt;- 0.6 + diag(0.4, nrow = 4)
 Psi_k&lt;/code&gt;&lt;/pre&gt;
@@ -94,11 +94,11 @@ Psi_k&lt;/code&gt;&lt;/pre&gt;
 ## [3,]  0.6  0.6  1.0  0.6
 ## [4,]  0.6  0.6  0.6  1.0&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_SMDs_raw(delta = delta, J = 4, N = 40, Psi = Psi_k)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##          ES        SE  N
-## 1 0.4136328 0.3197674 40
-## 2 0.6730080 0.3255146 40
-## 3 0.5825111 0.3232100 40
-## 4 0.4974262 0.3213342 40&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##            ES        SE  N
+## 1  0.30796886 0.3181948 40
+## 2  0.24528651 0.3174770 40
+## 3  0.24496926 0.3174738 40
+## 4 -0.03142033 0.3162483 40&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;exercises&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exercises&lt;/h2&gt;
 &lt;p&gt;The function above is serviceable but quite basic. I can think of several additional features that one might like to have for use in research simulations, but I’m feeling both cheeky and lazy at the moment, so I’ll leave them for you, dear reader. Here are some suggested exercises:&lt;/p&gt;
@@ -180,52 +180,49 @@ study_data &amp;lt;-
 
 study_data&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##       delta J  N       Psi
-## 1 0.1894240 9 50 0.5112511
-## 2 0.1523343 3 44 0.6584239
-## 3 0.2478227 5 38 0.5442388
-## 4 0.1530779 5 46 0.5338198
-## 5 0.2557257 6 48 0.6635501
-## 6 0.3111021 3 34 0.7598409&lt;/code&gt;&lt;/pre&gt;
+## 1 0.2164399 7 34 0.5219260
+## 2 0.1695641 4 54 0.5560842
+## 3 0.2023963 5 50 0.5796910
+## 4 0.1786634 3 42 0.5834660
+## 5 0.2328779 3 36 0.4235426
+## 6 0.1554537 6 48 0.5357454&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Once we have the “menu” of study-level characteristics, it’s just a matter of mapping the parameters to the data-generating function. One way to do this is with &lt;code&gt;pmap_df&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(purrr)
 meta_data &amp;lt;- pmap_df(study_data, r_SMDs_raw, .id = &amp;quot;study&amp;quot;)
 meta_data&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    study            ES        SE  N
-## 1      1  0.0838982347 0.2829723 50
-## 2      1  0.3131093912 0.2846423 50
-## 3      1  0.2032941211 0.2836027 50
-## 4      1  0.1462363557 0.2832362 50
-## 5      1 -0.0841477323 0.2829731 50
-## 6      1  0.0008988422 0.2828427 50
-## 7      1  0.1703249176 0.2833764 50
-## 8      1 -0.1645178447 0.2833407 50
-## 9      1  0.0527563306 0.2828940 50
-## 10     2  0.4031344135 0.3047028 44
-## 11     2  0.3437062486 0.3038346 44
-## 12     2  0.2525668139 0.3027681 44
-## 13     3  0.8555648807 0.3397495 38
-## 14     3  0.3502132641 0.3270575 38
-## 15     3  0.1662112740 0.3250336 38
-## 16     3  0.7294206056 0.3356379 38
-## 17     3  0.3447478812 0.3269769 38
-## 18     4  0.3773615530 0.2976151 46
-## 19     4  0.4328885816 0.2984727 46
-## 20     4  0.2244493715 0.2958530 46
-## 21     4  0.3393561858 0.2970946 46
-## 22     4  0.5140631756 0.2999325 46
-## 23     5  0.0717846618 0.2887721 48
-## 24     5  0.3179642994 0.2905723 48
-## 25     5  0.3444123920 0.2908998 48
-## 26     5  0.5411105342 0.2941359 48
-## 27     5  0.2431480980 0.2897860 48
-## 28     5  0.1627009191 0.2891731 48
-## 29     6  0.2959281618 0.3449861 34
-## 30     6 -0.1153519889 0.3433001 34
-## 31     6  0.5503107844 0.3498270 34&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    study          ES        SE  N
+## 1      1  0.13424472 0.3434074 34
+## 2      1  0.61637803 0.3515442 34
+## 3      1  0.89283387 0.3606973 34
+## 4      1  0.62649158 0.3518235 34
+## 5      1  0.43596110 0.3472993 34
+## 6      1  0.62143835 0.3516834 34
+## 7      1  0.60034463 0.3511104 34
+## 8      2 -0.01693615 0.2721706 54
+## 9      2  0.10887688 0.2723748 54
+## 10     2 -0.06254183 0.2722346 54
+## 11     2  0.60622010 0.2785817 54
+## 12     3  0.38220860 0.2855201 50
+## 13     3  0.17922070 0.2834336 50
+## 14     3  0.50984042 0.2875894 50
+## 15     3  0.26371265 0.2841204 50
+## 16     3  0.30662621 0.2845687 50
+## 17     4  0.18850878 0.3093255 42
+## 18     4  0.09359422 0.3087841 42
+## 19     4  0.06258202 0.3086860 42
+## 20     5  0.04903932 0.3333864 36
+## 21     5  0.06668237 0.3334314 36
+## 22     5  0.24701327 0.3346766 36
+## 23     6  0.01605121 0.2886800 48
+## 24     6  0.29727147 0.2903341 48
+## 25     6  0.26241278 0.2899686 48
+## 26     6  0.03451125 0.2886976 48
+## 27     6  0.21825135 0.2895705 48
+## 28     6 -0.01595245 0.2886799 48&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(meta_data$study)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## 1 2 3 4 5 6 
-## 9 3 5 5 6 3&lt;/code&gt;&lt;/pre&gt;
+## 7 4 5 3 3 6&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Putting it all together into a function, we have&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r_meta &amp;lt;- function(K, mu, tau, J_mean, N_mean, rho, nu) {
   require(purrr)
@@ -917,7 +914,7 @@ V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov(gls_sorted, individual = 
 ##     attr(result, &amp;quot;group.levels&amp;quot;) &amp;lt;- names(obj$groups)
 ##     result
 ## }
-## &amp;lt;bytecode: 0x000000001bc24f78&amp;gt;
+## &amp;lt;bytecode: 0x000000001bc39d00&amp;gt;
 ## &amp;lt;environment: namespace:nlme&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The issue is in the 4th line of the body. &lt;code&gt;getVarCov.gls&lt;/code&gt; assumes that &lt;code&gt;varWeights(obj$modelStruct$varStruct)&lt;/code&gt; is sorted in the same order as &lt;code&gt;obj$groups&lt;/code&gt;, which is not necessarily true. Instead, &lt;code&gt;varWeights&lt;/code&gt; seem to return the weights sorted according to the grouping variable. For this example, that means that the &lt;code&gt;varWeights&lt;/code&gt; will not depend on the order in which the groups are sorted.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;identical(gls_raw$groups, gls_sorted$groups)&lt;/code&gt;&lt;/pre&gt;
@@ -1214,6 +1211,118 @@ grep(&amp;quot;dat&amp;quot;,ls(), value = TRUE)&lt;/code&gt;&lt;/pre&gt;
 ## 2 SelfVid    121.         102.                    1.86
 ## 3 SelfVR     139.          95.5                   1.43&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If you’ve been following along, let me know what you think of this. Is it a good idea, or is it dangerous? Are there cases where this will break? Can you think of a better name?&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update: parallel R on the TACC</title>
+      <link>/parallel-r-on-tacc-update/</link>
+      <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/parallel-r-on-tacc-update/</guid>
+      <description>
+
+
+&lt;p&gt;I have learned from &lt;a href=&#34;https://www.tacc.utexas.edu/staff/yaakoub-el-khamra&#34;&gt;Mr. Yaakoub El Khamra&lt;/a&gt; that he and the good folks at TACC have made some modifications to TACC’s custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. &lt;a href=&#34;/parallel-R-on-TACC&#34;&gt;My earlier post&lt;/a&gt; has been updated to reflect the modifications. The main changes are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The version of MVAPICH2 has changed to 2.0b&lt;/li&gt;
+&lt;li&gt;Changes to the Rmpi and snow packages necessitate using the latest version of R (Warm Puppy, 3.0.3). This version is available in the &lt;code&gt;Rstats&lt;/code&gt; module.&lt;/li&gt;
+&lt;li&gt;For improved reproducibility, I modified the R code so that the simulation driver function uses a seed value.&lt;/li&gt;
+&lt;li&gt;I had to switch from &lt;code&gt;maply&lt;/code&gt; to &lt;code&gt;mdply&lt;/code&gt; as a result of (3).&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Running R in parallel on the TACC</title>
+      <link>/parallel-r-on-tacc/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>/parallel-r-on-tacc/</guid>
+      <description>
+
+
+&lt;p&gt;UPDATE (4/8/2014): I have learned from &lt;a href=&#34;https://www.tacc.utexas.edu/staff/yaakoub-el-khamra&#34;&gt;Mr. Yaakoub El Khamra&lt;/a&gt; that he and the good folks at TACC have made some modifications to TACC’s custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. This post &lt;a href=&#34;/parallel-R-on-TACC-update&#34;&gt;has been updated&lt;/a&gt; to reflect the modifications.&lt;/p&gt;
+&lt;p&gt;I’ve started to use the Texas Advanced Computing Cluster to run statistical simulations in R. It takes a little bit of time to get up and running, but once you do it is an amazing tool. To get started, you’ll need&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;An account on the &lt;a href=&#34;https://www.tacc.utexas.edu/&#34;&gt;TACC&lt;/a&gt; and an allocation of computing time.&lt;/li&gt;
+&lt;li&gt;An ssh client like &lt;a href=&#34;http://www.chiark.greenend.org.uk/~sgtatham/putty/&#34;&gt;PUTTY&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Some R code that can be adapted to run in parallel.&lt;/li&gt;
+&lt;li&gt;A SLURM script that tells the server (called Stampede) how to run the R.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;the-r-script&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The R script&lt;/h3&gt;
+&lt;p&gt;I’ve been running my simulations using a combination of several packages that provide very high-level functionality for parallel computing, namely &lt;code&gt;foreach&lt;/code&gt;, &lt;code&gt;doSNOW&lt;/code&gt;, and the &lt;code&gt;maply&lt;/code&gt; function in &lt;code&gt;plyr&lt;/code&gt;. All of this runs on top of an &lt;code&gt;Rmpi&lt;/code&gt; implementation developed by the folks at TACC (&lt;a href=&#34;https://portal.tacc.utexas.edu/documents/13601/901835/Parallel_R_Final.pdf/&#34;&gt;more details here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;/Designing-simulation-studies-using-R/&#34;&gt;an earlier post&lt;/a&gt;, I shared code for running a very simple simulation of the Behrens-Fisher problem. Here’s &lt;a href=&#34;https://gist.github.com/jepusto/8059893&#34;&gt;adapted code&lt;/a&gt; for running the same simulation on Stampede. The main difference is that there are a few extra lines of code to set up a cluster, seed a random number generator, and pass necessary objects (saved in &lt;code&gt;source_func&lt;/code&gt;) to the nodes of the cluster:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(Rmpi)
+library(snow)
+library(foreach)
+library(iterators)
+library(doSNOW)
+library(plyr)
+
+# set up parallel processing
+cluster &amp;lt;- getMPIcluster()
+registerDoSNOW(cluster)
+
+# export source functions
+clusterExport(cluster, source_func)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once it is all set up, running the code is just a matter of turning on the parallel option in &lt;code&gt;mdply&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BFresults &amp;lt;- mdply(parms, .fun = run_sim, .drop=FALSE, .parallel=TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I fully admit that my method of passing source functions is rather kludgy. One alternative would be to save all of the source functions in a separate file (say, &lt;code&gt;source_functions.R&lt;/code&gt;), then &lt;code&gt;source&lt;/code&gt; the file at the beginning of the simulation script:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rm(list=ls())
+source(&amp;quot;source_functions.R&amp;quot;)
+print(source_func &amp;lt;- ls())&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Another, more elegant alternative would be to put all of your source functions in a little package (say, &lt;code&gt;BehrensFisher&lt;/code&gt;), install the package, and then pass the package in the &lt;code&gt;maply&lt;/code&gt; call:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BFresults &amp;lt;- mdply(parms, .fun = run_sim, .drop=FALSE, .parallel=TRUE, .paropts = list(.packages=&amp;quot;BehrensFisher&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Of course, developing a package involves a bit more work on the front end.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-slurm-script&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The SLURM script&lt;/h3&gt;
+&lt;p&gt;Suppose that you’ve got your R code saved in a file called &lt;code&gt;Behrens_Fisher.R&lt;/code&gt;. Here’s an example of a SLURM script that runs the R script after configuring an Rmpi cluster:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;#!/bin/bash
+#SBATCH -J Behrens          # Job name
+#SBATCH -o Behrens.o%j      # Name of stdout output file (%j expands to jobId)
+#SBATCH -e Behrens.o%j      # Name of stderr output file(%j expands to jobId)
+#SBATCH -n 32               # Total number of mpi tasks requested
+#SBATCH -p normal           # Submit to the &amp;#39;normal&amp;#39; or &amp;#39;development&amp;#39; queue
+#SBATCH -t 0:20:00          # Run time (hh:mm:ss)
+#SBATCH -A A-yourproject    # Allocation name to charge job against
+#SBATCH --mail-user=you@email.address # specify email address for notifications
+#SBATCH --mail-type=begin   # email when job begins
+#SBATCH --mail-type=end     # email when job ends
+
+# load R module
+module load Rstats           
+
+# call R code from RMPISNOW
+ibrun RMPISNOW &amp;lt; Behrens_Fisher.R &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The file should be saved in a plain text file called something like &lt;code&gt;run_BF.slurm&lt;/code&gt;. The file has to use ANSI encoding and Unix-type end-of-line encoding; &lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;Notepad++&lt;/a&gt; is a text editor that can create files in this format.&lt;/p&gt;
+&lt;p&gt;Note that for full efficiency, the &lt;code&gt;-n&lt;/code&gt; option should be a multiple of 16 because their are 16 cores per compute node. Further details about SBATCH options can be found &lt;a href=&#34;https://portal.tacc.utexas.edu/user-guides/stampede#running-slurm-jobcontrol&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;running-on-stampede&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Running on Stampede&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://portal.tacc.utexas.edu/user-guides/stampede#access&#34;&gt;Follow these directions&lt;/a&gt; to log in to the Stampede server. Here’s the &lt;a href=&#34;https://portal.tacc.utexas.edu/user-guides/stampede&#34;&gt;User Guide&lt;/a&gt; for Stampede. The first thing you’ll need to do is ensure that you’ve got the proper version of MVAPICH loaded. To do that, type&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;module swap intel intel/14.0.1.106
+module setdefault&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The second line sets this as the default, so you won’t need to do this step again.&lt;/p&gt;
+&lt;p&gt;Second, you’ll need to install whatever R packages you’ll need to run your code. To do that, type the following at the &lt;code&gt;login4$&lt;/code&gt; prompt:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;login4$module load Rstats
+login4$R&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will start an interactive R session. From the R prompt, use &lt;code&gt;install.packages&lt;/code&gt; to download and install, e.g.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;plyr&amp;quot;,&amp;quot;reshape&amp;quot;,&amp;quot;doSNOW&amp;quot;,&amp;quot;foreach&amp;quot;,&amp;quot;iterators&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The packages will be installed in a local library. Now type &lt;code&gt;q()&lt;/code&gt; to quit R.&lt;/p&gt;
+&lt;p&gt;Next, make a new directory for your project:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;login4$mkdir project_name
+login4$cd project_name&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Upload your files to the directory (using &lt;a href=&#34;http://the.earth.li/~sgtatham/putty/0.63/htmldoc/Chapter6.html&#34;&gt;psftp&lt;/a&gt;, for instance). Check that your R script is properly configured by viewing it in Vim.&lt;/p&gt;
+&lt;p&gt;Finally, submit your job by typing&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;login4$sbatch run_BF.slurm&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or whatever your SLURM script is called. To check the status of the submitted job, type &lt;code&gt;showq -u&lt;/code&gt; followed by your TACC user name (more details &lt;a href=&#34;https://portal.tacc.utexas.edu/user-guides/stampede#running-slurm-jobcontrol-squeue&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;further-thoughts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Further thoughts&lt;/h3&gt;
+&lt;p&gt;TACC accounts come with a limited number of computing hours, so you should be careful to write efficient code. Before you even start worrying about running on TACC, you should profile your code and try to find ways to speed up the computations. (Some simple improvements in my Behrens-Fisher code would make it run MUCH faster.) Once you’ve done what you can in terms of efficiency, you should do some small test runs on Stampede. For example, you could try running only a few iterations for each combination of factors, and/or running only some of the combinations rather than the full factorial design. Based on the run-time for these jobs, you’ll then be able to estimate how long the full code would take. If it’s acceptable (and within your allocation), then go ahead and &lt;code&gt;sbatch&lt;/code&gt; the full job. If it’s not, you might reconsider the number of factor levels in your design or the number of iterations you need. I might have more comments about those some other time.&lt;/p&gt;
+&lt;p&gt;Comments? Suggestions? Corrections? Drop a comment.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

@@ -7,6 +7,8 @@ slug: PIR-overestimates-prevalence
 categories: []
 tags:
   - behavioral observation
+  - simulation
+  - alternating renewal process
 header:
   caption: ''
   image: ''

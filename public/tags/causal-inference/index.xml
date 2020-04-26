@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>causal inference | James E. Pustejovsky</title>
+    <link>/tags/causal-inference/</link>
+      <atom:link href="/tags/causal-inference/index.xml" rel="self" type="application/rss+xml" />
+    <description>causal inference</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>causal inference</title>
+      <link>/tags/causal-inference/</link>
+    </image>
+    
+    <item>
+      <title>Effective sample size aggregation</title>
+      <link>/effective-sample-size-aggregation/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/effective-sample-size-aggregation/</guid>
+      <description>
+
+
+&lt;p&gt;In settings with independent observations, sample size is one way to quickly characterize the precision of an estimate. But what if your estimate is based on &lt;em&gt;weighted&lt;/em&gt; data, where each observation doesn’t necessarily contribute to equally to the estimate? Here, one useful way to gauge the precision of an estimate is the &lt;em&gt;effective sample size&lt;/em&gt; or ESS. Suppose that we have &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; independent observations &lt;span class=&#34;math inline&#34;&gt;\(Y_1,...,Y_N\)&lt;/span&gt; drawn from a population with standard deviation &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;, and that observation &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; receives weight &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt;. We take the weighted sample mean
+&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{y} = \frac{1}{W} \sum_{i=1}^N w_i Y_i, \qquad \text{where} \qquad W = \sum_{i=1}^N w_i.
+\]&lt;/span&gt;
+with sampling variance
+&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}(\tilde{y}) = \frac{\sigma^2}{W^2} \sum_{i=1}^N w_i^2.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The ESS is the number of observations from an equally weighted sample that would yield the same level of precision as the weighted sample mean. In an equally weighted sample of size &lt;span class=&#34;math inline&#34;&gt;\(\tilde{N}\)&lt;/span&gt;, the variance would be simply &lt;span class=&#34;math inline&#34;&gt;\(\sigma^2 / \tilde{N}\)&lt;/span&gt;, and so ESS is the value of &lt;span class=&#34;math inline&#34;&gt;\(\tilde{N}\)&lt;/span&gt; that solves
+&lt;span class=&#34;math display&#34;&gt;\[
+\frac{\sigma^2}{\tilde{N}} = \frac{\sigma^2}{W^2} \sum_{i=1}^N w_i^2.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Re-arranging, the ESS is thus defined as
+&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{N} = \frac{W^2}{\sum_{i=1}^N w_i^2}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The ESS is reported in several packages for propensity score weighting, including &lt;a href=&#34;https://CRAN.R-project.org/package=twang&#34;&gt;twang&lt;/a&gt; and &lt;a href=&#34;https://CRAN.R-project.org/package=optweight&#34;&gt;optweight&lt;/a&gt;. In the propensity score context, ESS is a useful measure for comparing different sets of estimated propensity weights, in that weights (or propensity score models/matching methods) that have a larger ESS will yield a more precise estimate of a treatment effect. Given two sets of weights that achieve equivalent degrees of balance, the weights with larger ESS are thus preferable. Methods introduced by &lt;a href=&#34;https://doi.org/10.1080/01621459.2015.1023805&#34;&gt;Zubizarreta (2015)&lt;/a&gt;—and implemented in the &lt;a href=&#34;https://CRAN.R-project.org/package=optweight&#34;&gt;optweight&lt;/a&gt; package—take this logic a step further by using ESS as an objective function to be minimized, subject to specified balancing constraints.&lt;/p&gt;
+&lt;div id=&#34;multi-site-effective-sample-size&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Multi-site effective sample size&lt;/h1&gt;
+&lt;p&gt;Two of my recent projects have involved applying propensity score weighting methods in multi-site settings, where we are interested in estimating site-specific treatment effects as well as an overall aggregate effect. It is straight-forward to calculate an ESS for each site, but how then should we aggregate the ESS across sites to characterize the precision of the overall estimate? Several times now, I have found myself having to re-derive the aggregated ESS, and so I am going to work through it here now so as to save future-me (and perhaps you, dear reader) some time.&lt;/p&gt;
+&lt;p&gt;Suppose that we have &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; sites, &lt;span class=&#34;math inline&#34;&gt;\(n_j\)&lt;/span&gt; observations from site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(j = 1,...,J\)&lt;/span&gt;, and total sample size &lt;span class=&#34;math inline&#34;&gt;\(N = \sum_{j=1}^J n_j\)&lt;/span&gt;. Observation &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; from site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; has outcome &lt;span class=&#34;math inline&#34;&gt;\(Y_{ij}\)&lt;/span&gt; and weight &lt;span class=&#34;math inline&#34;&gt;\(w_{ij}\)&lt;/span&gt;. The site-specific weighted average at site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; is then
+&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{y}_j = \frac{1}{W_j} \sum_{i=1}^{n_j} w_{ij} Y_{ij}, \qquad \text{where} \qquad W_j = \sum_{i=1}^{n_j} w_{ij}
+\]&lt;/span&gt;
+and the overall average is
+&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{y} = \frac{1}{N} \sum_{j=1}^J n_j \ \tilde{y}_j = \frac{1}{N} \sum_{j=1}^J \sum_{i=1}^{n_j} \frac{n_j w_{ij}}{W_j} Y_{ij}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For calculating the overall average, observation &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; from unit &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; contributes weight &lt;span class=&#34;math inline&#34;&gt;\(u_{ij} = n_j w_{ij} / W_j\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Using these unit-specific weights, the effective sample size for the overall average is
+&lt;span class=&#34;math display&#34;&gt;\[
+ESS = \frac{N^2}{\sum_{j=1}^J \sum_{i=1}^{n_j} u_{ij}^2}.
+\]&lt;/span&gt;
+We can also define a site-specific ESS for site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+ESS_j = \frac{W_j^2}{\sum_{i=1}^{n_j} w_{ij}^2}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Using the decomposition of the weights as &lt;span class=&#34;math inline&#34;&gt;\(u_{ij} = n_j w_{ij} / W_j\)&lt;/span&gt;, the overall ESS can be written as
+&lt;span class=&#34;math display&#34;&gt;\[
+ESS = \frac{N^2}{\sum_{j=1}^J n_j^2 \left(\sum_{i=1}^{n_j} w_{ij}^2 / W_j^2\right)}.
+\]&lt;/span&gt;
+Noting that the term in the parentheses of the denominator is equivalent to &lt;span class=&#34;math inline&#34;&gt;\(1 / ESS_j\)&lt;/span&gt;, the overall ESS can therefore be written in terms of the site-specific ESSs and sample sizes:
+&lt;span class=&#34;math display&#34;&gt;\[
+ESS = \frac{N^2}{\sum_{j=1}^J n_j^2 / ESS_j}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There you go. Future me will thank me for this!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2SLS standard errors and the delta-method</title>
+      <link>/delta-method-and-2sls-ses/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/delta-method-and-2sls-ses/</guid>
+      <description>
+
+
+&lt;p&gt;I just covered instrumental variables in my course on causal inference, and so I have two-stage least squares (2SLS) estimation on the brain. In this post I’ll share something I realized in the course of prepping for class: that standard errors from 2SLS estimation are equivalent to delta method standard errors based on the Wald IV estimator. (I’m no econometrician, so this had never occurred to me before. Perhaps it will be interesting to other non-econometrician readers. And perhaps the econometricians can point me to the relevant page in Wooldridge or Angrist and Pischke or whomever that explains this better than I have.)&lt;/p&gt;
+&lt;p&gt;Let’s consider a system with an outcome &lt;span class=&#34;math inline&#34;&gt;\(y_i\)&lt;/span&gt;, a focal treatment &lt;span class=&#34;math inline&#34;&gt;\(t_i\)&lt;/span&gt; identified by a single instrument &lt;span class=&#34;math inline&#34;&gt;\(z_i\)&lt;/span&gt;, along with a row-vector of exogenous covariates &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_i\)&lt;/span&gt;, all for &lt;span class=&#34;math inline&#34;&gt;\(i = 1,...,n\)&lt;/span&gt;. The usual estimating equations are:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+y_i &amp;amp;= \mathbf{x}_i \delta_0 + t_i \delta_1 + e_i \\
+t_i &amp;amp;= \mathbf{x}_i \alpha_0 + z_i \alpha_1 + u_i.
+\end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;With a single-instrument, the 2SLS estimator of &lt;span class=&#34;math inline&#34;&gt;\(\delta_1\)&lt;/span&gt; is exactly equivalent to the Wald estimator&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\hat\delta_1 = \frac{\hat\beta_1}{\hat\alpha_1},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\hat\alpha_1\)&lt;/span&gt; is the OLS estimator from the first-stage regression of &lt;span class=&#34;math inline&#34;&gt;\(t_i\)&lt;/span&gt; on &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(z_i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat\beta_1\)&lt;/span&gt; is the OLS estimator from the regression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+y_i = \mathbf{x}_i \beta_0 + z_i \beta_1 + v_i.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The delta-method approximation for &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(\hat\delta_1)\)&lt;/span&gt; is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\text{Var}\left(\hat\delta_1\right) \approx \frac{1}{\alpha_1^2}\left[ \text{Var}\left(\hat\beta_1\right) + \delta_1^2 \text{Var}\left(\hat\alpha_1\right) - 2 \delta_1 \text{Cov}\left(\hat\beta_1, \hat\alpha_1\right) \right]. 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituting the estimators in place of parameters, and using heteroskedasticity-consistent (HC0, to be precise) estimators for &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}\left(\hat\beta_1\right)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}\left(\hat\alpha_1\right)\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\text{Cov}\left(\hat\beta_1, \hat\alpha_1\right)\)&lt;/span&gt;, it turns out the feasible delta-method variance estimator is &lt;em&gt;exactly&lt;/em&gt; equivalent to the HC0 variance estimator from 2SLS.&lt;/p&gt;
+&lt;div id=&#34;connecting-delta-method-and-2sls&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Connecting delta-method and 2SLS&lt;/h3&gt;
+&lt;p&gt;To demonstrate this claim, let’s first partial out the covariates, taking &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{y}} = \left[\mathbf{I} - \mathbf{X}\left(\mathbf{X}&amp;#39;\mathbf{X}\right)^{-1}\mathbf{X}&amp;#39;\right]\mathbf{y}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{t}} = \left[\mathbf{I} - \mathbf{X}\left(\mathbf{X}&amp;#39;\mathbf{X}\right)^{-1}\mathbf{X}&amp;#39;\right]\mathbf{t}\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{z}} = \left[\mathbf{I} - \mathbf{X}\left(\mathbf{X}&amp;#39;\mathbf{X}\right)^{-1}\mathbf{X}&amp;#39;\right]\mathbf{z}\)&lt;/span&gt;. The OLS estimators of &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\alpha_1\)&lt;/span&gt; are then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\hat\beta_1 = \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1}\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{y}}, \qquad \text{and} \qquad \hat\alpha_1 = \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1}\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{t}}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The HC0 variance and covariance estimators for these coefficients have the usual sandwich form:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+V^{\beta_1} &amp;amp;= \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1}\left(\sum_{i=1}^n \ddot{z}_i^2 \ddot{v}_i^2\right) \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1} \\
+V^{\alpha_1} &amp;amp;= \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1}\left(\sum_{i=1}^n \ddot{z}_i^2 \ddot{u}_i^2\right) \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1} \\
+V^{\alpha_1\beta_1} &amp;amp;= \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1}\left(\sum_{i=1}^n \ddot{z}_i^2 \ddot{u}_i \ddot{v}_i\right) \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1},
+\end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\ddot{v}_i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\ddot{u}_i\)&lt;/span&gt; are the residuals from the regressions of &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{y}}\)&lt;/span&gt; on &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{z}}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{t}}\)&lt;/span&gt; on &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{z}}\)&lt;/span&gt;, respectively. Combining all these terms, the delta-method variance estimator is then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+V^{\delta_1} = \frac{1}{\hat\alpha_1^2}\left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1}\left[\sum_{i=1}^n \ddot{z}_i^2\left(\ddot{v}_i^2 + \hat\delta_1^2 \ddot{u}_i^2 - 2 \hat\delta_1\ddot{u}_i \ddot{v}_i\right)\right] \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Remember this formula because we’ll return to it shortly.&lt;/p&gt;
+&lt;p&gt;Now consider the 2SLS estimator. To calculate this, we begin by taking the fitted values from the regression of &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{t}}\)&lt;/span&gt; on &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{z}}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\mathbf{\tilde{t}} = \mathbf{\ddot{z}}\left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1}\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{t}} = \mathbf{\ddot{z}} \hat\alpha_1.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We then regress &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\ddot{y}}\)&lt;/span&gt; on &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\tilde{t}}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\hat\delta_1 = \left(\mathbf{\tilde{t}}&amp;#39;\mathbf{\tilde{t}}\right)^{-1} \mathbf{\tilde{t}}&amp;#39; \mathbf{\ddot{y}}.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The HC0 variance estimator corresponding to the 2SLS estimator is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+V^{2SLS} = \left(\mathbf{\tilde{t}}&amp;#39;\mathbf{\tilde{t}}\right)^{-1} \left(\sum_{i=1}^n \tilde{t}_i^2 \tilde{e}_i^2 \right) \left(\mathbf{\tilde{t}}&amp;#39;\mathbf{\tilde{t}}\right)^{-1},
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\tilde{e}_i = \ddot{y}_i - \ddot{t}_i \hat\delta_1\)&lt;/span&gt;. Note that these residuals are calculated based on &lt;span class=&#34;math inline&#34;&gt;\(\ddot{t}_i\)&lt;/span&gt;, the &lt;em&gt;full&lt;/em&gt; treatment variable, not the fitted values &lt;span class=&#34;math inline&#34;&gt;\(\tilde{t}_i\)&lt;/span&gt;. The full treatment variable can be expressed as &lt;span class=&#34;math inline&#34;&gt;\(\ddot{t}_i = \tilde{t}_i + \ddot{u}_i\)&lt;/span&gt;, by which it follows that&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{e}_i = \ddot{y}_i - \tilde{t}_i \hat\delta_1 - \ddot{u}_i \hat\delta_1.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;But &lt;span class=&#34;math inline&#34;&gt;\(\tilde{t}_i \hat\delta_1 = \ddot{z}_i \hat\alpha_1 \hat\delta_1 = \ddot{z}_i \hat\beta_1\)&lt;/span&gt;, and so&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\tilde{e}_i = \ddot{y}_i - \ddot{z}_i \hat\beta_1 - \ddot{u}_i \hat\delta_1 = \ddot{v}_i - \ddot{u}_i \hat\delta_1.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The 2SLS variance estimator is therefore&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+V^{2SLS} &amp;amp;= \left(\mathbf{\tilde{t}}&amp;#39;\mathbf{\tilde{t}}\right)^{-1} \left(\sum_{i=1}^n \tilde{t}_i^2 \tilde{e}_i^2 \right) \left(\mathbf{\tilde{t}}&amp;#39;\mathbf{\tilde{t}}\right)^{-1} \\
+&amp;amp;= \left(\hat\alpha_1^2 \mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1} \left(\sum_{i=1}^n \hat\alpha_1^2 \ddot{z}_i^2 \tilde{e}_i^2 \right) \left(\hat\alpha_1^2 \mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1} \\
+&amp;amp;= \frac{1}{\hat\alpha_1^2}\left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1} \left(\sum_{i=1}^n \ddot{z}_i^2 \tilde{e}_i^2 \right) \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1} \\
+&amp;amp;= \frac{1}{\hat\alpha_1^2}\left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1} \left[\sum_{i=1}^n \ddot{z}_i^2 \left(\ddot{v}_i - \ddot{u}_i \hat\delta_1\right)^2 \right] \left(\mathbf{\ddot{z}}&amp;#39;\mathbf{\ddot{z}}\right)^{-1},
+\end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;which agrees with &lt;span class=&#34;math inline&#34;&gt;\(V^{\delta_1}\)&lt;/span&gt; as given above.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;so-what&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;So what?&lt;/h3&gt;
+&lt;p&gt;If you’ve continued reading this far…I’m slightly amazed…but if you have, you may be wondering why it’s worth knowing about this relationship. The equivalence between the 2SLS variance estimator and the delta method interests me for a couple of reasons.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First is that I had always taken the 2SLS variance estimator as being conditional on &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{t}\)&lt;/span&gt;–that is, not accounting for random variation in the treatment assignment. The delta-method form of the variance makes it crystal clear that this isn’t the case—the variance &lt;em&gt;does&lt;/em&gt; include terms for &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(\hat\alpha_1)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\text{Cov}(\hat\beta_1, \hat\alpha_1)\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;On the other hand, there’s perhaps a sense that equivalence with the 2SLS variance estimator (the more familiar form) validates the delta method variance estimator—that is, we wouldn’t be doing something fundamentally different by using the delta method variance with a Wald estimator. For instance, we might want to estimate &lt;span class=&#34;math inline&#34;&gt;\(\alpha_1\)&lt;/span&gt; and/or &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; by some other means (e.g., by estimating &lt;span class=&#34;math inline&#34;&gt;\(\alpha_1\)&lt;/span&gt; as a marginal effect from a logistic regression or estimating &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; with a multi-level model). It would make good sense in this instance to use the Wald estimator &lt;span class=&#34;math inline&#34;&gt;\(\hat\beta_1 / \hat\alpha_1\)&lt;/span&gt; and to estimate its variance using the delta method form.&lt;/li&gt;
+&lt;li&gt;One last reason I’m interested in this is that writing out the variance estimators will likely help in understanding how to approach small-sample corrections to &lt;span class=&#34;math inline&#34;&gt;\(V^{2SLS}\)&lt;/span&gt;. But I’ll save that for another day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Estimating average effects in regression discontinuities with covariate interactions</title>
+      <link>/rdd-interactions-again/</link>
+      <pubDate>Wed, 27 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/rdd-interactions-again/</guid>
+      <description>
+
+
+&lt;p&gt;Regression discontinuity designs (RDDs) are now a widely used tool for program evaluation in economics and many other fields. RDDs occur in situations where some treatment/program of interest is assigned on the basis of a numerical score (called the running variable), all units scoring above a certain threshold receiving treatment and all units scoring at or below the threshold having treatment withheld (or vice versa, with treatment assigned to units scoring below the threshold). This mechanism provides a way to identify the &lt;strong&gt;marginal average treatment effect&lt;/strong&gt; (MATE): the average effect of treatment assignment for units on the cusp of the threshold.&lt;/p&gt;
+&lt;p&gt;RDDs are appealing for a couple of reasons. First and foremost, RDD-like mechanism occurs all over the place, since providing treatment on the basis of a numerical measure of need/eligibility is a natural way to allocate resources. Furthermore, analysis of the designs is straight-forward, as it involves nothing more complicated than a linear regression model, estimated using (weighted or un-weighted) least squares, and which can be represented graphically using a simple scatterplot. Things get a little bit more complicated if you are trying to account for imperfect compliance with treatment assignment—as in the “fuzzy” RDD—but for the moment let me focus on “sharp” RDDs.&lt;/p&gt;
+&lt;p&gt;The simplest approach to estimating the MATE is to use a local linear regression in the neighborhood of the threshold, with the outcome regressed on the running variable, treatment indicator, and their interaction. However, in practice it is quite common to also include additional covariates in the local linear regression. If the covariates are also interacted with the treatment indicator, there is no longer a single regression coefficient corresponding to the treatment effect. In my &lt;a href=&#34;/rdd-interactions&#34;&gt;last post&lt;/a&gt;, I suggested a “centering trick” for estimating the MATE based on a model that included covariate-by-treatment interactions. In this post, I’ll explain the reasoning behind this proposal.&lt;/p&gt;
+&lt;div id=&#34;gday-mate&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;G’day, MATE&lt;/h3&gt;
+&lt;p&gt;I think it’s helpful to start by thinking about the definition of the MATE in non-parametric terms. Let &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt; be the running variable, assumed to be centered at the threshold; &lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt; be an indicator for treatment assignment, with &lt;span class=&#34;math inline&#34;&gt;\(T = I(R &amp;gt; 0)\)&lt;/span&gt;; and &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; be a covariate, which may be vector-valued. Denote the potential outcomes as &lt;span class=&#34;math inline&#34;&gt;\(Y^0\)&lt;/span&gt; (a unit’s outcome if not assigned to treatment) and &lt;span class=&#34;math inline&#34;&gt;\(Y^1\)&lt;/span&gt; (a unit’s outcome if assigned to treatment), so that the observed outcome is &lt;span class=&#34;math inline&#34;&gt;\(Y = Y^0 (1 - T) + Y^1 T\)&lt;/span&gt;. Now consider the potential response surfaces&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}\mu_0(x, r) &amp;amp;= \text{E}\left(\left.Y^0 \right|X = x, R = r\right) \\ \mu_1(x, r) &amp;amp;= \text{E}\left(\left.Y^1 \right|X = x, R = r\right).\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In an RDD, the average treatment effect at a given point &lt;span class=&#34;math inline&#34;&gt;\((x, r)\)&lt;/span&gt; on the response surface is not generally identified by conditioning because one of the potential outcomes will &lt;em&gt;never&lt;/em&gt; be observed: if &lt;span class=&#34;math inline&#34;&gt;\(r &amp;lt; 0\)&lt;/span&gt; then &lt;span class=&#34;math inline&#34;&gt;\(\text{Pr}( T = 0 \vert X = x, R = r) = 1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\text{Pr}( T = 1 \vert X = x, R = r) = 0\)&lt;/span&gt; (and vice versa for &lt;span class=&#34;math inline&#34;&gt;\(r &amp;gt; 0\)&lt;/span&gt;). However, the treatment effect for the subpopulation where &lt;span class=&#34;math inline&#34;&gt;\(R = 0\)&lt;/span&gt; can be identified under the assumption that the potential response surfaces are continuous in a neighborhood of the threshold. Thus the MATE, which can be written as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+\delta_M &amp;amp;= \text{E}\left(\left. Y^1 - Y^0 \right| R = 0\right) \\
+&amp;amp;= \text{E}\left[\mu_1(X, 0) - \mu_0(X,0)\right].
+\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;regression-estimation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Regression estimation&lt;/h3&gt;
+&lt;p&gt;Now assume that we have a simple random sample &lt;span class=&#34;math inline&#34;&gt;\(\left(y_i,r_i,t_i, x_i\right)_{i=1}^n\)&lt;/span&gt; of units and that each unit has a weight &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; defined based on some measure of distance from the threshold. We can use these data to estimate the response surfaces (somehow…more on that in a minute) on each side of the cut-off, with &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_0(x, r)\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(r &amp;lt; 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_1(x, r)\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(r &amp;gt; 0\)&lt;/span&gt;. If we then use the sample distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; in the neighborhood of &lt;span class=&#34;math inline&#34;&gt;\(R = 0\)&lt;/span&gt; in place of the conditional density &lt;span class=&#34;math inline&#34;&gt;\(d\left(X = x \vert R = 0\right)\)&lt;/span&gt;, we can estimate the MATE as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat\delta_M = \frac{1}{W} \sum_{i=1}^n w_i \left[\hat\mu_1(x_i, 0) - \hat\mu_0(x_i, 0)\right],\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(W = \sum_{i=1}^n w_i\)&lt;/span&gt;. This is a regression estimator for &lt;span class=&#34;math inline&#34;&gt;\(\delta_M\)&lt;/span&gt;. It could be non-, semi-, or fully parametric depending on the technique used to estimate the response surfaces. Note that this estimator is a little bit different than the regression estimator that would be used in the context of an observational study (see, e.g., &lt;a href=&#34;http://psycnet.apa.org/doi/10.1037/a0014268&#34;&gt;Shafer &amp;amp; Kang, 2008&lt;/a&gt;). In that context, one would use &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_j(x_i, r_i)\)&lt;/span&gt; rather than &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_j(x_i, 0)\)&lt;/span&gt;, but in an RDD doing so would involve extrapolating beyond the cutpoint (i.e., using &lt;span class=&#34;math inline&#34;&gt;\(\hat\mu_1(x_i, r_i)\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(r_i &amp;lt; 0\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;Now suppose that we again use a linear regression in some neighborhood of the cut-point to estimate the response surfaces. For the (weighted) sample in the neighborhood of the cut-point, we assume that&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mu_{t_i}(x_i, r_i) = \beta_0 + \beta_1 r_i + \beta_2 t_i + \beta_3 r_i t_i + \beta_4 x_i + \beta_5 x_i t_i.\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituting this into the formula for &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta_M\)&lt;/span&gt; leads to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}\hat\delta_M &amp;amp;= \frac{1}{W} \sum_{i=1}^n w_i \left[\hat\beta_2 + \hat\beta_5 x_i \right] \\
+&amp;amp;= \hat\beta_2 + \hat\beta_5 \sum_{i=1}^n \frac{w_i x_i}{W}.\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, the centering trick involves nothing more than re-centering the covariate so that &lt;span class=&#34;math inline&#34;&gt;\(\sum_{i=1}^n w_i x_i = 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta_M = \hat\beta_2\)&lt;/span&gt;. Of course, one could just use the non-parametric form of the regression estimator, but the centering trick is useful because it comes along with an easy-to-calculate standard error (since it is just a regression coefficient estimate).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;multiple-covariates&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Multiple covariates&lt;/h3&gt;
+&lt;p&gt;All of this works out in the exact same way if you have interactions between the treatment and multiple covariates. However, there are a few tricky cases that are worth noting. If you include interactions between the treatment indicator and a polynomial function of the treatment, each term of the polynomial has to be centered. For example, if you want to control for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(x^2\)&lt;/span&gt;, and their interactions with treatment, you will need to calculate&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\tilde{x}_{1i} = x_i - \frac{1}{W} \sum_{i=1}^n w_i x_i, \qquad \tilde{x}_{2i} = x_i^2 - \frac{1}{W} \sum_{i=1}^n w_i x_i^2\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and then use these re-centered covariates in the regression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mu_{t_i}(x_i, r_i) = \beta_0 + \beta_1 r_i + \beta_2 t_i + \beta_3 r_i t_i + \beta_4 \tilde{x}_{1i} + \beta_5 \tilde{x}_{2i} + \beta_6 \tilde{x}_{1i} t_i + \beta_7 \tilde{x}_{2i} t_i.\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The same principle will also hold if you want to include higher-order interactions between covariates and the treatment: calculate the interaction term first, then re-center it. There’s one exception though. If you want to include an interaction between a covariate &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, the &lt;em&gt;running variable&lt;/em&gt;, and the treatment indicator (who knows…you might aspire to do this some day…), then all you need to do is center &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;. In particular, you should &lt;em&gt;not&lt;/em&gt; calculate the interaction &lt;span class=&#34;math inline&#34;&gt;\(x_i r_i\)&lt;/span&gt; and then re-center it (doing so could pull the average away from the threshold of &lt;span class=&#34;math inline&#34;&gt;\(R = 0\)&lt;/span&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-mates&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R, MATEs!&lt;/h3&gt;
+&lt;p&gt;Here’s some R code that implements the centering trick for the simulated example from my last post:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(sandwich)
+library(lmtest)
+library(rdd)
+
+# simulate an RDD
+set.seed(20160124)
+simulate_RDD &amp;lt;- function(n = 2000, R = rnorm(n, mean = qnorm(.2))) {
+  n &amp;lt;- length(R)
+  T &amp;lt;- as.integer(R &amp;gt; 0)
+  X1 &amp;lt;- 10 + 0.6 * (R - qnorm(.2)) + rnorm(n, sd = sqrt(1 - 0.6^2))
+  X2 &amp;lt;- sample(LETTERS[1:4], n, replace = TRUE, prob = c(0.2, 0.3, 0.35, 0.15))
+  Y0 &amp;lt;- 0.4 * R + 0.1 * (X1 - 10) + c(A = 0, B = 0.30, C = 0.40, D = 0.55)[X2] + rnorm(n, sd = 0.9)
+  Y1 &amp;lt;- 0.35 + 0.3 * R + 0.18 * (X1 - 10) + c(A = -0.50, B = 0.30, C = 0.20, D = 0.60)[X2] + rnorm(n, sd = 0.9)
+  Y &amp;lt;- (1 - T) * Y0 + T * Y1
+  data.frame(R, T, X1, X2, Y0, Y1, Y)
+}
+RD_data &amp;lt;- simulate_RDD(n = 2000)
+
+# calculate kernel weights
+bw &amp;lt;- with(RD_data, IKbandwidth(R, Y, cutpoint = 0))
+RD_data$w &amp;lt;- kernelwts(RD_data$R, center = 0, bw = bw)
+
+# center the covariates
+X_mat &amp;lt;- model.matrix(~ 0 + X2 + X1, data = RD_data)
+X_cent &amp;lt;- as.data.frame(apply(X_mat, 2, function(x) x - weighted.mean(x, w = RD_data$w)))
+RD_data_aug &amp;lt;- cbind(X_cent, subset(RD_data, select = c(-X1, -X2)))
+cov_names &amp;lt;- paste(names(X_cent)[-1], collapse = &amp;quot; + &amp;quot;)
+
+# calculate the MATE using RDestimate
+RD_form &amp;lt;- paste(&amp;quot;Y ~ R |&amp;quot;, cov_names)
+summary(RDestimate(as.formula(RD_form), data = RD_data_aug))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+## RDestimate(formula = as.formula(RD_form), data = RD_data_aug)
+## 
+## Type:
+## sharp 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&amp;gt;|z|) 
+## LATE       1.0894     1177          0.2981    0.10659     2.797    0.0051559
+## Half-BW    0.5447      611          0.2117    0.14846     1.426    0.1539482
+## Double-BW  2.1787     1832          0.2734    0.08305     3.292    0.0009949
+##               
+## LATE       ** 
+## Half-BW       
+## Double-BW  ***
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1
+## 
+## F-statistics:
+##            F      Num. DoF  Denom. DoF  p
+## LATE       23.30  11        1165        0
+## Half-BW    10.97  11         599        0
+## Double-BW  47.41  11        1820        0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# or using lm
+lm_form &amp;lt;- paste(&amp;quot;Y ~ R + T + R:T + T*(&amp;quot;, cov_names,&amp;quot;)&amp;quot;)
+lm_fit &amp;lt;- lm(as.formula(lm_form), weights = w, data = subset(RD_data_aug, w &amp;gt; 0))
+coeftest(lm_fit, vcov. = vcovHC(lm_fit, type = &amp;quot;HC1&amp;quot;))[&amp;quot;T&amp;quot;,]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    Estimate  Std. Error     t value    Pr(&amp;gt;|t|) 
+## 0.298142798 0.106588790 2.797130893 0.005240719&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;comments&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Comments&lt;/h3&gt;
+&lt;p&gt;I’ve shown that the “centering trick” is just a way to express a certain regression estimator for the marginal average treatment effect in an RDD. Having suggested that this is a good idea, I should also note a few points that might bear further investigation.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;My regression estimator uses the sample distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; in the neighborhood of the threshold as an estimate of &lt;span class=&#34;math inline&#34;&gt;\(d(X = x \vert R = 0)\)&lt;/span&gt;. This seems reasonable, but I wonder whether there might be a better approach to estimating this conditional density.&lt;/li&gt;
+&lt;li&gt;As far as I understand, the current best practice for defining the “neighborhood” of the threshold is to use weights based on a triangular kernel and an “optimal” bandwidth proposed by &lt;a href=&#34;http://doi.org/10.1093/restud/rdr043&#34;&gt;Imbens and Kalyanaraman (2012)&lt;/a&gt;. The optimal bandwidth is derived for the simple RDD model with no covariates, though the authors comment that inclusion of additional covariates should not greatly affect the result unless the covariates are strongly correlated with the outcome, conditional on the running variable. However, what if interest centers on the covariate-by-treatment interaction itself, rather than just the MATE? It is not clear that the bandwidth is optimal for estimation/inference on the interaction term.&lt;/li&gt;
+&lt;li&gt;So far I’ve considered the MATE identified by a sharp RDD, in which we examine the effects of treatment assignment, regardless of whether units assigned to treatment actually received/participated in it. In fuzzy RDDs, the target parameter is the average effect of treatment receipt for those on the threshold of eligibility and who comply with the assignment rule. The effect is estimated using two-stage least squares, taking treatment assignment as an instrument for treatment receipt. I’m not entirely sure how the regression estimator approach would work in this instrumental variables setting.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Regression discontinuities with covariate interactions in the rdd package</title>
+      <link>/rdd-interactions/</link>
+      <pubDate>Mon, 25 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/rdd-interactions/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE (2019-09-24): This post pertains to version 0.56 of the &lt;code&gt;rdd&lt;/code&gt; package. The problems described in this post have been corrected in version 0.57 of the package, which was posted to CRAN on 2016-03-14.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://cran.r-project.org/web/packages/rdd/&#34;&gt;&lt;code&gt;rdd&lt;/code&gt; package&lt;/a&gt; in R provides a set of methods for analysis of regression discontinuity designs (RDDs), including methods to estimate marginal average treatment effects by local linear regression. I was working with the package recently and obtained some rather counter-intuitive treatment effect estimates in a sharp RDD model. After digging around a bit, I found that my perplexing results were the result of a subtle issue of model specification. Namely, in models with additional covariates (beyond just the running variable, treatment indicator, and interaction), the main estimation function in &lt;code&gt;rdd&lt;/code&gt; uses a specification in which covariates are always interacted with the treatment indicator. In this post, I’ll demonstrate the issue and comment on potential work-arounds.&lt;/p&gt;
+&lt;div id=&#34;a-simulated-example&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A simulated example&lt;/h3&gt;
+&lt;p&gt;To make things more concrete, here’s a hypothetical RDD. I’ll use &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt; to denote the running variable, with the threshold set at zero; &lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt; for the treatment indicator; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; for the outcome. &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt; is a continuous covariate that is correlated with &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt; is a categorical covariate with four levels that is independent of &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;. In order to illustrate the issue with covariate-by-treatment interactions, I use a model in which the effect of the treatment varies with &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(20160124)
+
+simulate_RDD &amp;lt;- function(n = 2000, R = rnorm(n, mean = qnorm(.2))) {
+  n &amp;lt;- length(R)
+  T &amp;lt;- as.integer(R &amp;gt; 0)
+  X1 &amp;lt;- 10 + 0.6 * (R - qnorm(.2)) + rnorm(n, sd = sqrt(1 - 0.6^2))
+  X2 &amp;lt;- sample(LETTERS[1:4], n, replace = TRUE, prob = c(0.2, 0.3, 0.35, 0.15))
+  Y0 &amp;lt;- 0.4 * R + 0.1 * (X1 - 10) + c(A = 0, B = 0.30, C = 0.40, D = 0.55)[X2] + rnorm(n, sd = 0.9)
+  Y1 &amp;lt;- 0.35 + 0.3 * R + 0.18 * (X1 - 10) + c(A = -0.50, B = 0.30, C = 0.20, D = 0.60)[X2] + rnorm(n, sd = 0.9)
+  Y &amp;lt;- (1 - T) * Y0 + T * Y1
+  data.frame(R, T, X1, X2, Y0, Y1, Y)
+}
+
+RD_data &amp;lt;- simulate_RDD(n = 2000)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simple-rdd-analysis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Simple RDD analysis&lt;/h3&gt;
+&lt;p&gt;The main estimand in a sharp RDD is the marginal average treatment effect (MATE)—that is, the average effect of treatment assignment for units right at/near the threshold of eligibility. Even though I simulated a treatment response surface that depends on the covariates &lt;span class=&#34;math inline&#34;&gt;\(X_1,X_2\)&lt;/span&gt;, it is not necessary to control for them in order to identify the MATE. Rather, it is sufficient to use a local linear regression of the outcome on the running variable, treatment indicator, and their interaction:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \epsilon_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Typically, this regression is estimated using the observations within a certain bandwidth of the threshold, and using weights defined on the basis of some kernel. The default in the &lt;code&gt;rdd&lt;/code&gt; package is to use a triangular edge kernel, with bandwidth chosen using a formula proposed by Imbens and Kalyanaraman. The following code uses &lt;code&gt;rdd&lt;/code&gt; to estimate the MATE without controlling for covariates:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(rdd)
+bw &amp;lt;- with(RD_data, IKbandwidth(R, Y, cutpoint = 0))
+rdd_simple &amp;lt;- RDestimate(Y ~ R, data = RD_data, cutpoint = 0, bw = bw)
+summary(rdd_simple)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+## RDestimate(formula = Y ~ R, data = RD_data, cutpoint = 0, bw = bw)
+## 
+## Type:
+## sharp 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&amp;gt;|z|)    
+## LATE       1.0894     1177          0.3035    0.11323     2.680    0.007355  **
+## Half-BW    0.5447      611          0.2308    0.15471     1.492    0.135722    
+## Double-BW  2.1787     1832          0.2699    0.08968     3.010    0.002613  **
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1
+## 
+## F-statistics:
+##            F       Num. DoF  Denom. DoF  p        
+## LATE        37.73  3         1173        0.000e+00
+## Half-BW     12.64  3          607        1.006e-07
+## Double-BW  104.74  3         1828        0.000e+00&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using a bandwidth of 1.09, the estimated marginal average treatment effect is 0.303. The figure below illustrates the discontinuity:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/rdd-interactions_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rdd-with-covariates&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;RDD with covariates&lt;/h3&gt;
+&lt;p&gt;In practice, it is quite common for analysts to include additional covariates in the model specification. Doing so is not necessary for treatment effect identification, but can be useful for purposes of improving precision. For example, &lt;a href=&#34;http://doi.org/10.3368/jhr.50.1.108&#34;&gt;Cortes, Goodman, and Nomi (2015)&lt;/a&gt; use an RDD to estimate the effects of assigning low-performing 9th graders to double-dose algebra. Their main specifications include controls for student gender, race/ethnicity, free/reduced-price lunch status, etc. In the analysis that I’m working on, the data come from students nested within multiple schools, and so it seems sensible to include fixed effects for each school. There’s a direct analogy here to simple randomized experiments: the basic difference in means provides a randomization-unbiased estimate of the sample average treatment effect, but in practice it can be awfully useful to use an estimate from a model with additional covariates.&lt;/p&gt;
+&lt;p&gt;Returning to my simulated example, the following table reports the estimates generated by &lt;code&gt;RDestimate&lt;/code&gt; when controlling for neither, one, or both covariates.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;RD_est &amp;lt;- function(mod, covariates) {
+  RD_fit &amp;lt;- RDestimate(as.formula(paste(mod, covariates)), 
+                       data = RD_data, cutpoint = 0)
+  with(RD_fit, c(est = est[[1]], se = se[1], p = p[1]))
+}
+
+covariates &amp;lt;- list(&amp;quot;No covariates&amp;quot; = &amp;quot;&amp;quot;,
+                &amp;quot;X1 only&amp;quot; = &amp;quot;| X1&amp;quot;,
+                &amp;quot;X2 only&amp;quot; = &amp;quot;| X2&amp;quot;,
+                &amp;quot;X1 + X2&amp;quot; = &amp;quot;| X1 + X2&amp;quot;)
+
+library(plyr)
+ldply(covariates, RD_est, mod = &amp;quot;Y ~ R&amp;quot;, .id = &amp;quot;Specification&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Specification        est        se           p
+## 1 No covariates  0.3034839 0.1132266 0.007355079
+## 2       X1 only -0.6861864 0.8077039 0.395574210
+## 3       X2 only -0.2269958 0.1626996 0.162960539
+## 4       X1 + X2 -1.2529313 0.7315106 0.086749345&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Despite using identical bandwidths, the estimates are drastically different from each other, with standard errors that are much larger than for the simple estimate without covariates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;whats-going-on&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What’s going on?&lt;/h3&gt;
+&lt;p&gt;It is known that introducing covariates into an RDD analysis should have little effect on the MATE estimate (see, e.g., &lt;a href=&#34;http://doi.org/10.1257/jel.48.2.281&#34;&gt;Lee and Lemieux, 2010&lt;/a&gt;). It is therefore quite perplexing that the estimates in my example (and in the real study I was analyzing) were so sensitive. It turns out that this puzzling behavior arises because, for sharp RDDs only, &lt;code&gt;RDestimate&lt;/code&gt; always interacts the covariate(s) with the treatment indicator. Here is the relevant section of the function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;body(RDestimate)[[39]][[4]][[7]][[3]][[3]]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## if (!is.null(covs)) {
+##     data &amp;lt;- data.frame(Y, Tr, Xl, Xr, covs, w)
+##     form &amp;lt;- as.formula(paste(&amp;quot;Y~Tr+Xl+Xr+&amp;quot;, paste(&amp;quot;Tr*&amp;quot;, names(covs), 
+##         collapse = &amp;quot;+&amp;quot;, sep = &amp;quot;&amp;quot;), sep = &amp;quot;&amp;quot;))
+## } else {
+##     data &amp;lt;- data.frame(Y, Tr, Xl, Xr, w)
+##     form &amp;lt;- as.formula(Y ~ Tr + Xl + Xr)
+## }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For a generic covariate &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, the function uses the specification:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 X_i + \beta_5 X_i T_i + \epsilon_i, \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;while still taking &lt;span class=&#34;math inline&#34;&gt;\(\beta_2\)&lt;/span&gt; to represent the MATE. This is problematic because, as soon as the &lt;span class=&#34;math inline&#34;&gt;\(X_i T_i\)&lt;/span&gt; term is introduced into the model, &lt;span class=&#34;math inline&#34;&gt;\(\beta_2\)&lt;/span&gt; represents the difference between treated and untreated units at the threshold (where &lt;span class=&#34;math inline&#34;&gt;\(R_i = 0\)&lt;/span&gt;) and where &lt;span class=&#34;math inline&#34;&gt;\(X_i = 0\)&lt;/span&gt;. Thus, including the &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt; interaction in the model means that &lt;span class=&#34;math inline&#34;&gt;\(\beta_2\)&lt;/span&gt; is a difference extrapolated &lt;em&gt;way&lt;/em&gt; outside the support of the data, as in the following scatterplot of the outcome versus the covariate &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/rdd-interactions_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;RDestimate&lt;/code&gt; returns as the MATE estimate the difference between the regression lines when &lt;span class=&#34;math inline&#34;&gt;\(X_1 = 0\)&lt;/span&gt;, which in this example is -0.69. Similarly, including the &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt; interaction in the model means that &lt;span class=&#34;math inline&#34;&gt;\(\beta_2\)&lt;/span&gt; will represent the marginal average treatment effect for only one of the categories of &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt;, rather than as some sort of average across all four categories.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-to-do-about-this&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What to do about this&lt;/h3&gt;
+&lt;p&gt;If you’ve been using the &lt;code&gt;rdd&lt;/code&gt; package to analyze your data, I can think of a couple of ways to handle this issue, depending on whether you want to use a model that interacts the covariates with the treatment indicator. Here are some options:&lt;/p&gt;
+&lt;p&gt;First, suppose that you want to estimate a model that does NOT include covariate-by-treatment interactions. The most transparent (and thus probably safest) approach is to do the estimation “by hand,” so to speak. Specifically, Use the &lt;code&gt;rdd&lt;/code&gt; package to get kernel weights, but then estimate the outcome model using plain-old &lt;code&gt;lm&lt;/code&gt;. Here’s an example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(sandwich)
+library(lmtest)
+RD_data$wt &amp;lt;- kernelwts(RD_data$R, center = 0, bw = bw)
+MATE_model &amp;lt;- lm(Y ~ R + T + R * T + X1 + X2, weights = wt, data = subset(RD_data, wt &amp;gt; 0))
+coeftest(MATE_model, vcov. = vcovHC(MATE_model, type = &amp;quot;HC1&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## t test of coefficients:
+## 
+##              Estimate Std. Error t value  Pr(&amp;gt;|t|)    
+## (Intercept) -1.586191   0.374247 -4.2384 2.429e-05 ***
+## R            0.183542   0.136025  1.3493 0.1774938    
+## T            0.292284   0.107689  2.7142 0.0067422 ** 
+## X1           0.130973   0.034704  3.7739 0.0001688 ***
+## X2B          0.474403   0.091835  5.1658 2.813e-07 ***
+## X2C          0.549125   0.084991  6.4610 1.523e-10 ***
+## X2D          0.713331   0.096855  7.3649 3.338e-13 ***
+## R:T          0.283663   0.222801  1.2732 0.2032105    
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default, &lt;code&gt;RDestimate&lt;/code&gt; uses the HC1 variant of heteroskedasticity-robust standard errors. To exactly replicate its behavior, I used &lt;code&gt;coeftest&lt;/code&gt; from the &lt;code&gt;lmtest&lt;/code&gt; package, combined with &lt;code&gt;vcovHC&lt;/code&gt; from the &lt;code&gt;sandwich&lt;/code&gt; package. Note that it is also necessary to estimate the model based on the subset of observations with positive weight (otherwise the sandwich standard errors will misbehave).&lt;/p&gt;
+&lt;p&gt;An alternative to the first approach is to “trick” &lt;code&gt;RDestimate&lt;/code&gt; into using the desired model specification by using 2SLS estimation with &lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt; instrumenting itself. Because the function does not use covariate-by-treatment interactions for “fuzzy” RDDs, you get the correct model specification:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(RDestimate(Y ~ R + T| X1 + X2, data = RD_data, cutpoint = 0))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+## RDestimate(formula = Y ~ R + T | X1 + X2, data = RD_data, cutpoint = 0)
+## 
+## Type:
+## fuzzy 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value  Pr(&amp;gt;|z|)    
+## LATE       1.0894     1177          0.2923    0.10769     2.714    0.006644  **
+## Half-BW    0.5447      611          0.2041    0.14911     1.369    0.171103    
+## Double-BW  2.1787     1832          0.2703    0.08447     3.200    0.001374  **
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1
+## 
+## F-statistics:
+##            F      Num. DoF  Denom. DoF  p        
+## LATE       31.24  7         1169        7.490e-40
+## Half-BW    13.84  7          603        1.110e-16
+## Double-BW  68.36  7         1824        7.919e-88&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The results based on the first bandwidth agree with the results from &lt;code&gt;lm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now, suppose that you DO want to retain the covariate-by-treatment interactions in the model, while also estimating the MATE. To do this, you can use what I call “the centering trick,” which entails centering each covariate at the sample average (in this case, the locally-weighted sample average). For a generic covariate &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, let&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\bar{x} = \frac{\sum_{i=1}^n w_i X_i}{\sum_{i=1}^n w_i},\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(w_i\)&lt;/span&gt; is the kernel weight for unit &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;. Then estimate the model&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 \left(X_i - \bar{x}\right) + \beta_5 \left(X_i - \bar{x}\right) T_i + \epsilon_i, \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The coefficient on &lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt; now corresponds to the MATE. Here’s R code that implements this approach:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;covariate_mat &amp;lt;- model.matrix(~ X1 + X2, data = RD_data)[,-1]
+covariate_cent &amp;lt;- apply(covariate_mat, 2, function(x) x - weighted.mean(x, w = RD_data$wt))
+RD_data &amp;lt;- data.frame(subset(RD_data, select = c(R, Y, T)), covariate_cent)
+
+covariates_cent &amp;lt;- list(&amp;quot;No covariates&amp;quot; = &amp;quot;&amp;quot;,
+                &amp;quot;X1 only&amp;quot; = &amp;quot;| X1&amp;quot;,
+                &amp;quot;X2 only&amp;quot; = &amp;quot;| X2B + X2C + X2D&amp;quot;,
+                &amp;quot;X1 + X2&amp;quot; = &amp;quot;| X1 + X2B + X2C + X2D&amp;quot;)
+
+ldply(covariates_cent, RD_est, mod = &amp;quot;Y ~ R&amp;quot;, .id = &amp;quot;Specification&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Specification       est        se           p
+## 1 No covariates 0.3034839 0.1132266 0.007355079
+## 2       X1 only 0.2913246 0.1125398 0.009635680
+## 3       X2 only 0.3107688 0.1071302 0.003721488
+## 4       X1 + X2 0.2981428 0.1065888 0.005155864&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The estimates are now insensitive to the inclusion of the (properly centered) covariates, just as in the no-interactions model. In this example, the standard errors from the model that includes covariate-by-treatment interactions are just ever so slightly smaller than those from the model without interactions.&lt;/p&gt;
+&lt;p&gt;Why does this third approach work? I’ll explain more in a later post…&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

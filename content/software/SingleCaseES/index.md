@@ -11,7 +11,8 @@ tags:
 - effect size
 - response ratio
 - non-overlap measures
-- single-case research
+- single-case design
+- Rstats
 title: SingleCaseES
 authors:
 - admin

@@ -7,7 +7,7 @@ slug: Four-methods-for-analyzing-PIR-data
 categories: []
 tags:
   - behavioral observation
-  - single-case research
+  - single-case design
 header:
   caption: ''
   image: ''

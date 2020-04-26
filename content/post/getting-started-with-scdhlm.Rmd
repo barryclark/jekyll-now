@@ -6,8 +6,9 @@ date: '2014-10-19'
 slug: getting-started-with-scdhlm
 categories: []
 tags:
-  - single-case research
-  - R
+  - single-case design
+  - design-comparable SMD
+  - Rstats
 header:
   caption: ''
   image: ''

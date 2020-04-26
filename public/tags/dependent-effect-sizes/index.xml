@@ -20,5 +20,414 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Sometimes, aggregating effect sizes is fine</title>
+      <link>/sometimes-aggregating-effect-sizes-is-fine/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/sometimes-aggregating-effect-sizes-is-fine/</guid>
+      <description>
+
+
+&lt;p&gt;In meta-analyses of psychology, education, and other social science research, it is very common that some of the included studies report more than one relevant effect size.
+For example, in a meta-analysis of intervention effects on reading outcomes, some studies may have used multiple measures of reading outcomes (each of which meets inclusion criteria), or may have measured outcomes at multiple follow-up times; some studies might have also investigated more than one version of an intervention, and it might be of interest to include effect sizes comparing each version to the no-intervention control condition;
+and it’s even possible that some studies may have &lt;em&gt;all&lt;/em&gt; of these features, potentially contributing &lt;em&gt;lots&lt;/em&gt; of effect size estimates.&lt;/p&gt;
+&lt;p&gt;These situations create a technical challenge for conducting a meta-analysis.
+Because effect size estimates from the same study are correlated, it’s not usually reasonable to use methods that are premised on each effect size estimate being independent (i.e., univariate methods).
+Instead, the analyst needs to apply methods that take into account the dependencies among estimates coming from the same study.
+It used to be common to use ad hoc approaches for handling dependence, such as averaging the estimates together or selecting one estimate per study and then using univariate methods &lt;span class=&#34;citation&#34;&gt;(cf. Becker &lt;a href=&#34;#ref-Becker2000multivariate&#34; role=&#34;doc-biblioref&#34;&gt;2000&lt;/a&gt;)&lt;/span&gt;.
+More sophisticated, multivariate meta-analysis (MVMA) models that directly account for correlations among the effect size estimates had been developed &lt;span class=&#34;citation&#34;&gt;(Kalaian and Raudenbush &lt;a href=&#34;#ref-Kalaian1996multivariate&#34; role=&#34;doc-biblioref&#34;&gt;1996&lt;/a&gt;)&lt;/span&gt; but were challenging to implement and so rarely used (at least, that’s my impression).
+More recently, techniques such as multi-level meta-analysis &lt;span class=&#34;citation&#34;&gt;(MLMA; Van den Noortgate et al. &lt;a href=&#34;#ref-VandenNoortgate2013threelevel&#34; role=&#34;doc-biblioref&#34;&gt;2013&lt;/a&gt;, &lt;a href=&#34;#ref-VandenNoortgate2015metaanalysis&#34; role=&#34;doc-biblioref&#34;&gt;2015&lt;/a&gt;)&lt;/span&gt; and robust variance estimation &lt;span class=&#34;citation&#34;&gt;(RVE; Hedges, Tipton, and Johnson &lt;a href=&#34;#ref-Hedges2010robust&#34; role=&#34;doc-biblioref&#34;&gt;2010&lt;/a&gt;)&lt;/span&gt; have emerged, which account for dependencies while using all available effect size estimates and still being feasible to implement.
+These new techniques of MLMA and RVE are starting to be more widely adopted in practice, and it is not implausible that they will become the standard approach in psychological and educational meta-analysis within a few years.&lt;/p&gt;
+&lt;p&gt;Given the extent of interest in MLMA and RVE, one might wonder: are the older ad hoc approaches &lt;em&gt;ever&lt;/em&gt; reasonable or appropriate?
+I think that some are, under certain circumstances.
+In this post I’ll highlight one such circumstance, where aggregating effect size estimates is not only reasonable but leads to &lt;em&gt;exactly the same results&lt;/em&gt; as a multivariate model. This occurs when two conditions are met:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;We are not interested in within-study heterogeneity of effects and&lt;/li&gt;
+&lt;li&gt;Any predictors included in the model vary between studies but not within a given study (i.e., effect sizes from the same study all have the same values of the predictors).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In short, if all we care about is understanding between-study variation in effect sizes, then it is fine to aggregate them up to the study level.&lt;/p&gt;
+&lt;div id=&#34;a-model-thats-okay-to-average&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;A model that’s okay to average&lt;/h1&gt;
+&lt;p&gt;To make this argument precise, let me lay out a model where it applies.
+For full generality, I’ll consider a meta-regression model for a collection of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; studies, where study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; contributes &lt;span class=&#34;math inline&#34;&gt;\(J_k \geq 1\)&lt;/span&gt; effect size estimates.
+Let &lt;span class=&#34;math inline&#34;&gt;\(T_{jk}\)&lt;/span&gt; denote effect size estimate &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; in study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, with sampling variance &lt;span class=&#34;math inline&#34;&gt;\(S_{jk}^2\)&lt;/span&gt;.
+Effect size estimates from study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; maybe be correlated at the sampling level, with correlation &lt;span class=&#34;math inline&#34;&gt;\(\rho_{ijk}\)&lt;/span&gt; between effect size estimates &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; from study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;.
+I will assume that the correlations are known, although in practice one might need to just take a guess about the degree of correlation, such as by assuming &lt;span class=&#34;math inline&#34;&gt;\(\rho_{ijk} = 0.7\)&lt;/span&gt; for all pairs of estimates from each included study.
+Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_k\)&lt;/span&gt; be a row vector of predictor variables for study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;.
+Note that the predictors do not have a subscript &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; because I’m assuming here that they are constant within a study.&lt;/p&gt;
+&lt;p&gt;A multivariate meta-regression model for these data might be:
+&lt;span class=&#34;math display&#34;&gt;\[
+T_{jk} = \mathbf{x}_k \boldsymbol\beta + u_k + e_{jk},
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(u_k\)&lt;/span&gt; is a between-study random effect with variance &lt;span class=&#34;math inline&#34;&gt;\(\tau^2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(e_{jk}\)&lt;/span&gt; is the sampling error for effect size &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; from study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, assumed to have known variance &lt;span class=&#34;math inline&#34;&gt;\(S_{jk}^2\)&lt;/span&gt;.
+Errors from the same study are correlated, so &lt;span class=&#34;math inline&#34;&gt;\(\text{Cov}(e_{ik}, e_{jk}) = \rho_{ijk} S_{ik} S_{jk}\)&lt;/span&gt;.
+This is a commonly considered model for dependent effect size estimates.
+In the paper that introduced RVE, &lt;span class=&#34;citation&#34;&gt;Hedges, Tipton, and Johnson (&lt;a href=&#34;#ref-Hedges2010robust&#34; role=&#34;doc-biblioref&#34;&gt;2010&lt;/a&gt;)&lt;/span&gt; termed it the “correlated effects” model (implemented in &lt;code&gt;robumeta&lt;/code&gt; as &lt;code&gt;model = &#34;CORR&#34;&lt;/code&gt;, which is the default).
+Note that it also satisfies the conditions I outlined above: no within-study random effects, predictors that vary only between study.
+We can fit it using the &lt;code&gt;rma.mv()&lt;/code&gt; function in the &lt;code&gt;metafor&lt;/code&gt; package, as I will demonstrate below.&lt;/p&gt;
+&lt;p&gt;An alternative to this multivariate model would be to first average the effects within each study, then fit a univariate random effects model.
+Just how we do the averaging will matter: we’ll need to use inverse-variance weighting.
+Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T}_k\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector of effect size estimates from study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;. Let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{S}_k\)&lt;/span&gt; be the &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; sampling covariance matrix for &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T}_k\)&lt;/span&gt;, and let &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{1}_k\)&lt;/span&gt; be a &lt;span class=&#34;math inline&#34;&gt;\(J_k \times 1\)&lt;/span&gt; vector of 1s. The inverse-variance weighted average of the effects from study k can then be written as
+&lt;span class=&#34;math display&#34;&gt;\[
+\bar{T}_k = V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{T}_k, 
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(V_k = 1 / (\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k)\)&lt;/span&gt;. The quantity &lt;span class=&#34;math inline&#34;&gt;\(V_k\)&lt;/span&gt; is also the sampling variance of &lt;span class=&#34;math inline&#34;&gt;\(\bar{T}_k\)&lt;/span&gt;.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A conventional, univariate random effects model for the averaged effect sizes is
+&lt;span class=&#34;math display&#34;&gt;\[
+\bar{T}_k = \mathbf{x}_k \boldsymbol\beta + u_k + \bar{e}_k, 
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(u_k) = \tau^2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(\bar{e}_k) = V_k\)&lt;/span&gt;.
+This model can be fit using &lt;code&gt;rma.uni&lt;/code&gt; from &lt;code&gt;metafor&lt;/code&gt;.
+In fact, doing so will yield the same estimates of model parameters as fitting the multivariate model—for all intents and purposes, they are equivalent models.
+There are at several different ways to see that this equivalence holds.
+I’ll offer three, from most practical to most theoretical.
+(If you’d rather just take my word that this claim is true, feel free to skip down to the &lt;a href=&#34;#so-what&#34;&gt;last section&lt;/a&gt;, where I comment on implications.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;computational-equivalence&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Computational equivalence&lt;/h1&gt;
+&lt;p&gt;One good way to check the equivalence of the univariate and multivariate models is to apply both to a dataset. I’ll use the data from a stylized example described in &lt;span class=&#34;citation&#34;&gt;Tanner-Smith and Tipton (&lt;a href=&#34;#ref-TannerSmith2013robust&#34; role=&#34;doc-biblioref&#34;&gt;2013&lt;/a&gt;)&lt;/span&gt;, looking at the effects of alcohol abuse interventions on alcohol consumption among adolescents and young adults. (The data are simulated for teaching purposes, so don’t infer anything about real life from the results below!) The data are included in the &lt;code&gt;robumeta&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+
+data(corrdat, package = &amp;quot;robumeta&amp;quot;)
+
+# sort by study
+corrdat &amp;lt;- arrange(corrdat, studyid, esid)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The data consist of 172 effect sizes from 39 studies. Some studies report effects at multiple follow-up times and/or for multiple programs compared to a common control condition, leading to dependent effect size estimates.The data also include variables encoding a variety of sample and study characteristics, such as whether the study was conducted with a college student sample and the gender composition of the sample:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(corrdat)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   esid studyid effectsize        var binge followup males college
+## 1 4006       1  0.2086383 0.03246468     1 51.42857    67       0
+## 2 4016       1  0.2244635 0.03244931     1 51.42857    67       0
+## 3 4026       1  0.3151743 0.03278697     1 51.42857    67       0
+## 4 3513       2  0.2220929 0.01972874     0 17.14286    81       1
+## 5 3514       2 -0.1922628 0.02031393     0 17.14286    86       1
+## 6 3556       2  0.3273109 0.01987042     0 17.14286    81       1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Suppose that we are interested in estimating the differences in average effects by type of sample (college versus adolescent), controlling for the proportion of males in the study. For some reason, there is within-study variation in the percentage of males, so I’ll take the study-level average for this covariate:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;corrdat &amp;lt;-
+  corrdat %&amp;gt;%
+  group_by(studyid) %&amp;gt;%
+  mutate(males = mean(males))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can then fit this model using a multi-variate meta-regression in metafor.&lt;/p&gt;
+&lt;p&gt;In order to estimate the model, we’ll first need to create a variance-covariance matrix for the effect size estimates in each study, which can be accomplished using &lt;code&gt;impute_covariance_matrix&lt;/code&gt; from &lt;code&gt;clubSandwich&lt;/code&gt; (&lt;a href=&#34;/imputing-covariance-matrices-for-multi-variate-meta-analysis/&#34;&gt;further details here&lt;/a&gt;). I’ll assume a correlation of 0.6 between pairs of effect sizes within a given study:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)
+library(metafor)
+
+V_list &amp;lt;- impute_covariance_matrix(vi = corrdat$var, cluster = corrdat$studyid, r = 0.6)
+
+MV_fit &amp;lt;- rma.mv(effectsize ~ college + males, V = V_list, 
+                 random = ~ 1 | studyid,
+                 data = corrdat, method = &amp;quot;REML&amp;quot;)
+MV_fit&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Multivariate Meta-Analysis Model (k = 172; method: REML)
+## 
+## Variance Components:
+## 
+##             estim    sqrt  nlvls  fixed   factor 
+## sigma^2    0.0590  0.2429     39     no  studyid 
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 169) = 815.2448, p-val &amp;lt; .0001
+## 
+## Test of Moderators (coefficients 2:3):
+## QM(df = 2) = 9.9016, p-val = 0.0071
+## 
+## Model Results:
+## 
+##          estimate      se     zval    pval    ci.lb    ci.ub 
+## intrcpt    0.6466  0.2693   2.4007  0.0164   0.1187   1.1744   * 
+## college    0.3703  0.1317   2.8123  0.0049   0.1122   0.6283  ** 
+## males     -0.0076  0.0038  -1.9832  0.0473  -0.0152  -0.0001   * 
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternately, we could aggregate the effects up to the study level and then fit a univariate meta-regression using the same moderators. Here is a function to calculate the aggregated effect size estimates and variances:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;agg_effects &amp;lt;- function(yi, vi, r = 0.6) {
+  corr_mat &amp;lt;- r + diag(1 - r, nrow = length(vi))
+  sd_mat &amp;lt;- tcrossprod(sqrt(vi))
+  V_inv_mat &amp;lt;- chol2inv(chol(sd_mat * corr_mat))
+  V &amp;lt;- 1 / sum(V_inv_mat)
+  data.frame(es = V * sum(yi * V_inv_mat), var = V)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s the data-munging:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;corrdat_agg &amp;lt;-
+  corrdat %&amp;gt;%
+  group_by(studyid) %&amp;gt;%
+  summarise(
+    es = list(agg_effects(yi = effectsize, vi = var, r = 0.6)),
+    males = mean(males),
+    college = mean(college)
+  ) %&amp;gt;%
+  unnest()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: `cols` is now required.
+## Please use `cols = c(es)`&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(corrdat_agg)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 5
+##   studyid      es    var males college
+##     &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;
+## 1       1  0.249  0.0239  67         0
+## 2       2 -0.0210 0.0129  81         1
+## 3       3  0.726  0.0819  76.2       0
+## 4       4  0.370  0.0431  80         1
+## 5       5 -0.0911 0.0281  79         0
+## 6       6 -0.416  0.0111  74         0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And here’s the meta-regression:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;uni_fit &amp;lt;- rma.uni(es ~ college + males, vi = var, 
+                   data = corrdat_agg, method = &amp;quot;REML&amp;quot;)
+uni_fit&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Mixed-Effects Model (k = 39; tau^2 estimator: REML)
+## 
+## tau^2 (estimated amount of residual heterogeneity):     0.0590 (SE = 0.0242)
+## tau (square root of estimated tau^2 value):             0.2429
+## I^2 (residual heterogeneity / unaccounted variability): 61.42%
+## H^2 (unaccounted variability / sampling variability):   2.59
+## R^2 (amount of heterogeneity accounted for):            19.12%
+## 
+## Test for Residual Heterogeneity:
+## QE(df = 36) = 96.7794, p-val &amp;lt; .0001
+## 
+## Test of Moderators (coefficients 2:3):
+## QM(df = 2) = 9.9016, p-val = 0.0071
+## 
+## Model Results:
+## 
+##          estimate      se     zval    pval    ci.lb    ci.ub 
+## intrcpt    0.6466  0.2693   2.4007  0.0164   0.1187   1.1744   * 
+## college    0.3703  0.1317   2.8123  0.0049   0.1122   0.6283  ** 
+## males     -0.0076  0.0038  -1.9832  0.0473  -0.0152  -0.0001   * 
+## 
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The heterogeneity estimates are nearly equal (the difference is due to using numerical optimization):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;MV_fit$sigma2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.0589972&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;uni_fit$tau2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.05899673&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the meta-regression coefficient estimates are identical to six decimal places:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef(MV_fit)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      intrcpt      college        males 
+##  0.646561371  0.370274721 -0.007633517&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coef(uni_fit)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      intrcpt      college        males 
+##  0.646561352  0.370274307 -0.007633519&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(coef(MV_fit), coef(uni_fit))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Mean relative difference: 4.243578e-07&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For this example we arrive at the same results using either multivariate meta-analysis or univariate meta-analysis of aggregated effect size estimates.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; The main limitation of this illustration is generality—how can we be sure that these results aren’t just a quirk of this particular dataset? Would we get the same results for &lt;em&gt;any&lt;/em&gt; dataset?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;from-multivariate-to-univariate-model&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;From multivariate to univariate model&lt;/h1&gt;
+&lt;p&gt;Here’s another, somewhat more general perspective on the relationship between the models: the univariate model can be &lt;em&gt;derived&lt;/em&gt; directly from the multivariate one. Start with the multivariate model in matrix form:
+&lt;span class=&#34;math display&#34;&gt;\[
+\mathbf{T}_k = \mathbf{x}_k \boldsymbol\beta \mathbf{1}_k + u_k \mathbf{1}_k + \mathbf{e}_k,
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{e}_k\)&lt;/span&gt; is the vector of sampling errors for study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, with &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(\mathbf{e}_k) = \mathbf{S}_k\)&lt;/span&gt;. Pre-multiply both sides by &lt;span class=&#34;math inline&#34;&gt;\(V_k \mathbf{1}_k’ \mathbf{S}_k^{-1}\)&lt;/span&gt; to get
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{T}_k &amp;amp;= V_k \left(\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k\right) \mathbf{x}_k \boldsymbol\beta + u_k V_k \left(\mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{1}_k\right) + V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{e}_k \\
+\bar{T}_k &amp;amp;= \mathbf{x}_k \boldsymbol\beta + u_k + \bar{e}_k,
+\end{aligned}
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(\bar{e}_k) = V_k \mathbf{1}_k’ \mathbf{S}_k^{-1} \mathbf{S}_k \mathbf{S}_k^{-1} \mathbf{1}_k V_k = V_k\)&lt;/span&gt;, just as in the univariate model.&lt;/p&gt;
+&lt;p&gt;This demonstrates that the parameters of the two models are the same quantities—that is, both models are estimating the same thing. But that would also hold if we used &lt;em&gt;any&lt;/em&gt; weighted average of &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T}_k\)&lt;/span&gt;—it needn’t be inverse-variance. The only thing that would be different is &lt;span class=&#34;math inline&#34;&gt;\(\text{Var}(\bar{e}_k)\)&lt;/span&gt;. To fully establish the equivalence of the two models, I’ll examine the likelihoods of each model.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;equivalence-of-likelihoods&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Equivalence of likelihoods&lt;/h1&gt;
+&lt;p&gt;Multivariate meta-analysis models are typically estimated by full maximum likelihood (FML) or restricted maximum likelihood methods. FML and RML are also commonly used for univariate meta-analysis. With these methods, estimates are obtained as the parameter values that maximize the log likelihood of the model, given the data (or the restricted likelihood for RML). Therefore, we can establish the exact equivalence of parameter estimates by showing that the log likelihood of the univariate and multivariate models differ by a constant value (so that the location of the maxima are identical).&lt;/p&gt;
+&lt;div id=&#34;full-likelihood&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Full likelihood&lt;/h2&gt;
+&lt;p&gt;For the univariate model, the log-likelihood contribution of study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+l^{U}_k\left(\boldsymbol\beta, \tau^2\right) = -\frac{1}{2} \log\left(\tau^2 + V_k\right) - \frac{1}{2} \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k}.
+\]&lt;/span&gt;
+For the multivariate model, the log-likelihood contribution of study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; is:
+&lt;span class=&#34;math display&#34;&gt;\[
+l^{MV}_k\left(\boldsymbol\beta, \tau^2\right) = -\frac{1}{2} A -\frac{1}{2} B
+\]&lt;/span&gt;
+where
+&lt;span class=&#34;math display&#34;&gt;\[
+A = \log\left|\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right| 
+\]&lt;/span&gt;
+and
+&lt;span class=&#34;math display&#34;&gt;\[
+B = \left(\mathbf{T}_k - \mathbf{x}_k \boldsymbol\beta \mathbf{1}_k\right)&amp;#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right)^{-1} \left(\mathbf{T}_k - \mathbf{x}_k \boldsymbol\beta \mathbf{1}_k\right).
+\]&lt;/span&gt;
+The term &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; can be rearranged as
+&lt;span class=&#34;math display&#34;&gt;\[
+A = \log\left|\left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39;\mathbf{S}_k^{-1} + \mathbf{I}_k\right) \mathbf{S}_k\right|
+\]&lt;/span&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{I}_k\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(J_k \times J_k\)&lt;/span&gt; identity matrix. One of the properties of determinants is that the determinant of a product of two matrices is equal to the product of the determinants. Another is that, for two vectors &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{u}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{v}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\left|\mathbf{I} + \mathbf{u}\mathbf{v}&amp;#39;\right| = 1 + \mathbf{v}&amp;#39;\mathbf{u}\)&lt;/span&gt;. Applying both of these properties, it follows that
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+A &amp;amp;= \log\left|\left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39;\mathbf{S}_k^{-1} + \mathbf{I}_k\right) \mathbf{S}_k\right| \\
+&amp;amp;= \log \left( \left|\mathbf{I}_k + \tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39;\mathbf{S}_k^{-1}\right| \left|\mathbf{S}_k\right|\right) \\
+&amp;amp;= \log \left(1 + \frac{\tau^2}{V_k}\right) + \log \left|\mathbf{S}_k\right| \\
+&amp;amp;= \log(\tau^2 + V_k) - \log(V_k) + \log \left|\mathbf{S}_k\right|.
+\end{aligned}
+\]&lt;/span&gt;
+The &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; term takes a little more work.
+From &lt;a href=&#34;https://en.wikipedia.org/wiki/Sherman%E2%80%93Morrison_formula&#34;&gt;the Sherman-Morrison identity&lt;/a&gt;, we have that:
+&lt;span class=&#34;math display&#34; id=&#34;eq:Sherman&#34;&gt;\[
+\left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right)^{-1} = \mathbf{S}_k^{-1} - \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&amp;#39;\mathbf{S}_k^{-1},
+\tag{1}
+\]&lt;/span&gt;
+by which it follows that
+&lt;span class=&#34;math display&#34; id=&#34;eq:inversevariance&#34;&gt;\[
+\mathbf{1}_k&amp;#39;\left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right)^{-1}\mathbf{1}_k = \frac{1}{\tau^2 + V_k}.
+\tag{2}
+\]&lt;/span&gt;
+Now, rearrange the &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; term to get
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+B &amp;amp;= \left[\mathbf{T}_k - \bar{T}_k \mathbf{1}_k + \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \mathbf{1}_k\right]&amp;#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right)^{-1} \left[\mathbf{T}_k - \bar{T}_k \mathbf{1}_k + \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \mathbf{1}_k\right] \\
+&amp;amp;= B_1 + 2 B_2 + B_3
+\end{aligned}
+\]&lt;/span&gt;
+where
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+B_1 &amp;amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right)^{-1} \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) \\
+B_2 &amp;amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right)^{-1} \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\
+B_3 &amp;amp;= \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \mathbf{1}_k&amp;#39; \left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right)^{-1} \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)
+\end{aligned}
+\]&lt;/span&gt;
+Applying &lt;a href=&#34;#eq:Sherman&#34;&gt;(1)&lt;/a&gt; to &lt;span class=&#34;math inline&#34;&gt;\(B_1\)&lt;/span&gt;,
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+B_1 &amp;amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \left[\mathbf{S}_k^{-1} - \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&amp;#39;\mathbf{S}_k^{-1}\right] \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) \\ 
+&amp;amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) - \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&amp;#39;\mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) \\
+&amp;amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right).
+\end{aligned}
+\]&lt;/span&gt;
+The second term drops out because &lt;span class=&#34;math inline&#34;&gt;\(\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1} \mathbf{1}_k = \bar{T}_k / V_k - \bar{T}_k / V_k = 0\)&lt;/span&gt;. Along similar lines,
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+B_2 &amp;amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \left[\mathbf{S}_k^{-1} - \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&amp;#39;\mathbf{S}_k^{-1}\right] \mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\ 
+&amp;amp;= \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1}\mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) - \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1} \mathbf{1}_k \left(\frac{1}{\tau^2} + \frac{1}{V_k}\right)^{-1} \mathbf{1}_k&amp;#39;\mathbf{S}_k^{-1}\mathbf{1}_k \left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right) \\
+&amp;amp;= 0.
+\end{aligned}
+\]&lt;/span&gt;
+Finally, the third term simplifies using &lt;a href=&#34;#eq:inversevariance&#34;&gt;(2)&lt;/a&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[
+B_3 = \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k}.
+\]&lt;/span&gt;
+Thus, the full &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; term reduces to
+&lt;span class=&#34;math display&#34;&gt;\[
+B = \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) + \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k}
+\]&lt;/span&gt;
+and the multivariate log likelihood contribution is
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+l^{MV}_k\left(\boldsymbol\beta, \tau^2\right) &amp;amp;= -\frac{1}{2} \log(\tau^2 + V_k) + \frac{1}{2} \log(V_k) - \frac{1}{2}\log \left|\mathbf{S}_k\right| - \frac{1}{2} \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right) -\frac{1}{2} \frac{\left(\bar{T}_k - \mathbf{x}_k \boldsymbol\beta\right)^2}{\tau^2 + V_k} \\
+&amp;amp;= l^U_k\left(\boldsymbol\beta, \tau^2\right) + \frac{1}{2} \log(V_k) - \frac{1}{2}\log \left|\mathbf{S}_k\right| - \frac{1}{2} \left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right)&amp;#39; \mathbf{S}_k^{-1}\left(\mathbf{T}_k - \bar{T}_k \mathbf{1}_k\right).
+\end{aligned}
+\]&lt;/span&gt;
+The last three terms depend on the data (&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{T}_k\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{S}_k\)&lt;/span&gt;) but not on the parameters &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol\beta\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(\tau^2\)&lt;/span&gt;. Therefore, the univariate and multivariate likelihoods will be maximized at the same parameter values, i.e., the FML estimators are identical.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;restricted-likelihood&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Restricted likelihood&lt;/h2&gt;
+&lt;p&gt;In practice, it is more common to use RML estimation rather than FML.
+The RML estimators maximize a different objective function that includes the full likelihood, plus an additional term. The RML objective function for the univariate model is
+&lt;span class=&#34;math display&#34;&gt;\[
+\sum_{k=1}^K l^U_k(\boldsymbol\beta, \tau^2) - \frac{1}{2} R^U(\tau^2)
+\]&lt;/span&gt;
+where
+&lt;span class=&#34;math display&#34;&gt;\[
+R^U(\tau^2) = \log \left|\sum_{k=1}^k\frac{\mathbf{x}_k&amp;#39; \mathbf{x}_k}{\tau^2 + V_k} \right|.
+\]&lt;/span&gt;
+For the multivariate model, the RML objective is
+&lt;span class=&#34;math display&#34;&gt;\[
+\sum_{k=1}^K l^{MV}_k(\boldsymbol\beta, \tau^2) - \frac{1}{2} R^{MV}(\tau^2).
+\]&lt;/span&gt;
+where
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+R^{MV}(\tau^2) &amp;amp;= \log \left|\sum_{k=1}^k \mathbf{x}_k&amp;#39;\mathbf{1}_k&amp;#39;\left(\tau^2\mathbf{1}_k\mathbf{1}_k&amp;#39; + \mathbf{S}_k\right)^{-1}\mathbf{1}_k \mathbf{x}_k \right|\\
+&amp;amp;= \log \left|\sum_{k=1}^k\frac{\mathbf{x}_k&amp;#39; \mathbf{x}_k}{\tau^2 + V_k} \right| \\
+&amp;amp;= R^U(\tau^2)
+\end{aligned}
+\]&lt;/span&gt;
+because of &lt;a href=&#34;#eq:inversevariance&#34;&gt;(2)&lt;/a&gt;. Thus, the univariate and multivariate models also have the same RML estimators.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;so-what&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;So what?&lt;/h1&gt;
+&lt;p&gt;Beyond being a good excuse to write a bunch of matrix algebra, why does any of this matter? I think there are two main implications. First, it is useful to recognize the equivalence of these models in order to understand when the multivariate model is &lt;em&gt;necessary&lt;/em&gt;. If both of the conditions that I’ve described hold, then it is entirely acceptable to use aggregation rather than the more complicated multivariate model.&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; Using the simpler univariate model might be desirable in practice because it makes the analysis easier to follow, because it makes it easier to run diagnostics or create illustrations of the results, or because of software limitations. Conversely, if either of the conditions does not hold, then there may be differences between the two approaches and the analyst will need to think carefully about which method better addresses their research questions.&lt;/p&gt;
+&lt;p&gt;A second implication is computational: because it gives the same results, the univariate model could be used as a short-cut for fitting the multivariate model. Compare the differences in computational time:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(microbenchmark)
+microbenchmark(
+  uni = rma.uni(es ~ college + males, vi = var, 
+                data = corrdat_agg, method = &amp;quot;REML&amp;quot;),
+  multi = rma.mv(effectsize ~ college + males, V = V_list, 
+                 random = ~ 1 | studyid,
+                 data = corrdat, method = &amp;quot;REML&amp;quot;)
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Unit: milliseconds
+##   expr     min       lq      mean  median       uq      max neval
+##    uni  8.6496  9.04635  9.658892  9.2733  9.71695  13.3316   100
+##  multi 78.4050 82.76230 87.136962 84.4908 86.62210 186.1949   100&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the aggregation is done in advance, it is &lt;em&gt;way&lt;/em&gt; quicker to fit the univariate model. The short-cut would be useful if we needed to estimate &lt;em&gt;lots&lt;/em&gt; of multi-variate meta-regressions (as long as the equivalence conditions hold). For example, if we needed to bootstrap the multivariate model, we could pre-compute the aggregated effects and then just bootstrap the much simpler, much quicker univariate model.&lt;/p&gt;
+&lt;p&gt;I suspect that the results I’ve presented here can be further generalized, but this will need a bit of further investigation. For one, there are also equivalences between variance estimators: using the CR2 cluster-robust variance estimator for the multivariate model is equivalent to using the HC2 heteroskedasticity-robust variance estimator for the univariate model with aggregated effects.&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;
+For another, the same sort of equivalence relationships hold even if there are additional random effects in the model, so long as the random effects are at the study level or higher levels of aggregation (e.g., lab effects, where labs are nested within studies).
+I’ll leave these generalizations as exercises for a future rainy day.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Becker2000multivariate&#34;&gt;
+&lt;p&gt;Becker, Betsy Jane. 2000. “Multivariate Meta-analysis.” In &lt;em&gt;Handbook of Applied Multivariate Statistics and Mathematical Modeling&lt;/em&gt;, edited by Steven D Brown and Howard E. A. Tinsley, 499–525. San Diego, CA: Academic Press. &lt;a href=&#34;https://doi.org/10.1016/B978-012691360-6/50018-5&#34;&gt;https://doi.org/10.1016/B978-012691360-6/50018-5&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-borenstein2009introduction&#34;&gt;
+&lt;p&gt;Borenstein, Michael, Larry V. Hedges, Julian P T Higgins, and Hannah R Rothstein. 2009. &lt;em&gt;Introduction to Meta-Analysis&lt;/em&gt;. Chichester, UK: John Wiley &amp;amp; Sons, Ltd. &lt;a href=&#34;https://doi.org/10.1002/9780470743386&#34;&gt;https://doi.org/10.1002/9780470743386&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Hedges2010robust&#34;&gt;
+&lt;p&gt;Hedges, Larry V., Elizabeth Tipton, and Matthew C Johnson. 2010. “Robust variance estimation in meta-regression with dependent effect size estimates.” &lt;em&gt;Research Synthesis Methods&lt;/em&gt; 1 (1): 39–65. &lt;a href=&#34;https://doi.org/10.1002/jrsm.5&#34;&gt;https://doi.org/10.1002/jrsm.5&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Kalaian1996multivariate&#34;&gt;
+&lt;p&gt;Kalaian, Hripsime a., and Stephen W Raudenbush. 1996. “A multivariate mixed linear model for meta-analysis.” &lt;em&gt;Psychological Methods&lt;/em&gt; 1 (3): 227–35. &lt;a href=&#34;https://doi.org/10.1037/1082-989X.1.3.227&#34;&gt;https://doi.org/10.1037/1082-989X.1.3.227&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-TannerSmith2013robust&#34;&gt;
+&lt;p&gt;Tanner-Smith, Emily E, and Elizabeth Tipton. 2013. “Robust variance estimation with dependent effect sizes: Practical considerations including a software tutorial in Stata and SPSS.” &lt;em&gt;Research Synthesis Methods&lt;/em&gt; 5 (1): 1–34. &lt;a href=&#34;https://doi.org/10.1002/jrsm.1091&#34;&gt;https://doi.org/10.1002/jrsm.1091&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-VandenNoortgate2013threelevel&#34;&gt;
+&lt;p&gt;Van den Noortgate, Wim, José Antonio López-López, Fulgencio Marín-Martínez, and Julio Sánchez-Meca. 2013. “Three-level meta-analysis of dependent effect sizes.” &lt;em&gt;Behavior Research Methods&lt;/em&gt; 45 (2): 576–94. &lt;a href=&#34;https://doi.org/10.3758/s13428-012-0261-6&#34;&gt;https://doi.org/10.3758/s13428-012-0261-6&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-VandenNoortgate2015metaanalysis&#34;&gt;
+&lt;p&gt;———. 2015. “Meta-analysis of multiple outcomes: a multilevel approach.” &lt;em&gt;Behavior Research Methods&lt;/em&gt; 47 (4): 1274–94. &lt;a href=&#34;https://doi.org/10.3758/s13428-014-0527-2&#34;&gt;https://doi.org/10.3758/s13428-014-0527-2&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;A common special case is that the sampling variances for effect sizes within a given study &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; are &lt;em&gt;all equal&lt;/em&gt;, so that &lt;span class=&#34;math inline&#34;&gt;\(S_{ik} = s_{jk} = S_k\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(i,j = 1,...,J_ik\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k = 1,...,K\)&lt;/span&gt;. We might further posit that there is a constant sampling correlation between every pair of effect sizes within a given study, so that &lt;span class=&#34;math inline&#34;&gt;\(\rho_{ijk} = \rho_k\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(i,j = 1,...,J_ik\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k = 1,...,K\)&lt;/span&gt;. If both of these conditions hold, then the inverse-variance weighted average effect size simplifies to the arithmetic average
+&lt;span class=&#34;math display&#34;&gt;\[
+\bar{T}_k = \frac{1}{J_k} \sum_{j=1}^{J_k} T_{jk}
+\]&lt;/span&gt;
+with sampling variance
+&lt;span class=&#34;math display&#34;&gt;\[
+V_k = \frac{(J_k - 1)\rho_k + 1}{J} \times S_k^2
+\]&lt;/span&gt;
+&lt;span class=&#34;citation&#34;&gt;(cf. Borenstein et al. &lt;a href=&#34;#ref-borenstein2009introduction&#34; role=&#34;doc-biblioref&#34;&gt;2009&lt;/a&gt;, Eq. (24.6), p. 230)&lt;/span&gt;.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;The same thing holds if we use FML rather than RML estimation—try it for yourself and see!&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;As RVE and MLMA become more wide-spread, I could imagine it happening that a meta-analyst who uses aggregation and a univariate model might get push-back from a reviewer, who uncritically recommends using a “more advanced” method to handle dependence. The results in this post provide a way for the meta-analyst to establish that doing so would be unnecessary.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Here’s verification with the computational example from above:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# multivariate CR2
+coef_test(MV_fit, vcov = &amp;quot;CR2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##     Coef. Estimate      SE t-stat d.f. p-val (Satt) Sig.
+## 1 intrcpt  0.64656 0.17647   3.66 11.5      0.00345   **
+## 2 college  0.37027 0.18648   1.99 11.9      0.07053    .
+## 3   males -0.00763 0.00287  -2.66 14.5      0.01826    *&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# univariate HC2
+coef_test(uni_fit, vcov = &amp;quot;CR2&amp;quot;, cluster = corrdat_agg$studyid)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##     Coef. Estimate      SE t-stat d.f. p-val (Satt) Sig.
+## 1 intrcpt  0.64656 0.17622   3.67 11.5      0.00342   **
+## 2 college  0.37027 0.18597   1.99 11.9      0.06985    .
+## 3   males -0.00763 0.00287  -2.66 14.5      0.01808    *&lt;/code&gt;&lt;/pre&gt;
+&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

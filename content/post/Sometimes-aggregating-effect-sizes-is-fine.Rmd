@@ -8,8 +8,9 @@ bibliography: [meta-references.bib]
 link-citations: true
 categories: []
 tags:
-  - effect sizes
+  - effect size
   - meta-analysis
+  - dependent effect sizes
 header:
   caption: ''
   image: ''

@@ -6,8 +6,10 @@ date: '2016-02-28'
 slug: NAP-SEs-and-CIs
 categories: []
 tags:
-  - effect sizes
-  - single-case research
+  - effect size
+  - single-case design
+  - non-overlap measures
+  - distribution theory
 header:
   caption: ''
   image: ''

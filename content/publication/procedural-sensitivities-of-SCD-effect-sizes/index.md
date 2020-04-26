@@ -17,8 +17,8 @@ tags:
 - effect size
 - response ratio
 - single-case design
-- systematic direct observation
-- non-overlap measure
+- behavioral observation
+- non-overlap measures
 slides: 
 summary: 
 links:

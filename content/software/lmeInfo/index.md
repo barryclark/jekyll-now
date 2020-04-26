@@ -11,7 +11,8 @@ summary: Information Matrices for 'lmeStruct' and 'glsStruct' Objects
 tags:
 - hierarchical models
 - effect size
-- R
+- Rstats
+- nlme
 
 title: lmeInfo
 

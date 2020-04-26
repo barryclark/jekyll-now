@@ -48,7 +48,17 @@
   </url>
   
   <url>
+    <loc>/tags/nlme/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/r/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rstats/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -208,11 +218,6 @@
   </url>
   
   <url>
-    <loc>/tags/effect-sizes/</loc>
-    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
     <lastmod>2019-09-30T00:00:00+00:00</lastmod>
   </url>
@@ -228,17 +233,22 @@
   </url>
   
   <url>
+    <loc>/tags/standardized-mean-difference/</loc>
+    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/measurement-procedures-and-baseline-outcomes/</loc>
     <lastmod>2019-08-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/kyle-w.-english/</loc>
+    <loc>/tags/behavioral-observation/</loc>
     <lastmod>2019-08-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/systematic-direct-observation/</loc>
+    <loc>/authors/kyle-w.-english/</loc>
     <lastmod>2019-08-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -308,7 +318,7 @@
   </url>
   
   <url>
-    <loc>/tags/odds-ratios/</loc>
+    <loc>/tags/odds-ratio/</loc>
     <lastmod>2019-05-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -398,7 +408,7 @@
   </url>
   
   <url>
-    <loc>/tags/non-overlap-measure/</loc>
+    <loc>/tags/non-overlap-measures/</loc>
     <lastmod>2019-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -438,7 +448,7 @@
   </url>
   
   <url>
-    <loc>/tags/sandwich/</loc>
+    <loc>/tags/robust-variance-estimation/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -470,6 +480,11 @@
   <url>
     <loc>/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/causal-inference/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -513,11 +528,6 @@
   </url>
   
   <url>
-    <loc>/tags/robust-variance-estimation/</loc>
-    <lastmod>2018-11-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/rve-in-fixed-effects-models/</loc>
     <lastmod>2018-11-02T00:00:00+00:00</lastmod>
   </url>
@@ -548,17 +558,7 @@
   </url>
   
   <url>
-    <loc>/tags/behavioral-observation/</loc>
-    <lastmod>2018-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/easily-simulate-thousands-of-single-case-designs/</loc>
-    <lastmod>2018-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/single-case-research/</loc>
     <lastmod>2018-06-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -643,6 +643,11 @@
   </url>
   
   <url>
+    <loc>/tags/correlation/</loc>
+    <lastmod>2018-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/delta-method/</loc>
     <lastmod>2018-04-19T00:00:00+00:00</lastmod>
   </url>
@@ -684,11 +689,6 @@
   
   <url>
     <loc>/authors/kathleen-n.-zimmerman/</loc>
-    <lastmod>2018-03-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/non-overlap-measures/</loc>
     <lastmod>2018-03-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -759,6 +759,11 @@
   
   <url>
     <loc>/mi-with-clubsandwich/</loc>
+    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/small-sample/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -1023,6 +1028,11 @@
   </url>
   
   <url>
+    <loc>/tags/regression-discontinuity/</loc>
+    <lastmod>2016-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/rdd-interactions/</loc>
     <lastmod>2016-01-25T00:00:00+00:00</lastmod>
   </url>
@@ -1030,11 +1040,6 @@
   <url>
     <loc>/clubsandwich-for-crve-fe/</loc>
     <lastmod>2016-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/small-sample/</loc>
-    <lastmod>2015-12-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1079,11 +1084,6 @@
   
   <url>
     <loc>/authors/alexis-r.-munoz/</loc>
-    <lastmod>2015-08-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/correlation/</loc>
     <lastmod>2015-08-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -1265,6 +1265,11 @@
   <url>
     <loc>/sped-pro-sem/</loc>
     <lastmod>2014-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tacc/</loc>
+    <lastmod>2014-04-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>

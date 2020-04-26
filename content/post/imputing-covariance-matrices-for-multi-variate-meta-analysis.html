@@ -8,7 +8,8 @@ categories: []
 tags:
   - meta-analysis
   - sandwiches
-  - R
+  - robust variance estimation
+  - Rstats
 header:
   caption: ''
   image: ''
@@ -44,7 +45,7 @@ header:
 ##         return(vcov_mat[cluster_index, cluster_index])
 ##     }
 ## }
-## &lt;bytecode: 0x0000000018729e88&gt;
+## &lt;bytecode: 0x0000000018309e80&gt;
 ## &lt;environment: namespace:clubSandwich&gt;</code></pre>
 <p>The function takes three required arguments:</p>
 <ul>
@@ -57,16 +58,16 @@ header:
                   yi = rnorm(9), 
                   vi = 4:12)
 dat</code></pre>
-<pre><code>##   study         yi vi
-## 1     A  0.5839048  4
-## 2     A -0.5168943  5
-## 3     B  0.1946788  6
-## 4     B  1.0894588  7
-## 5     B -0.2251032  8
-## 6     C -1.1907191  9
-## 7     C  1.3966669 10
-## 8     C  1.7493633 11
-## 9     C -1.1837521 12</code></pre>
+<pre><code>##   study          yi vi
+## 1     A -1.33148823  4
+## 2     A -0.02725897  5
+## 3     B -0.70125406  6
+## 4     B -1.71119746  7
+## 5     B -0.70957554  8
+## 6     C -0.40639264  9
+## 7     C -0.13290344 10
+## 8     C -1.10272160 11
+## 9     C -0.38033372 12</code></pre>
 <p>I’ll assume that effect size estimates from a given study are correlated at 0.7:</p>
 <pre class="r"><code>V_list &lt;- impute_covariance_matrix(vi = dat$vi, cluster = dat$study, r = 0.7)
 V_list</code></pre>
@@ -108,28 +109,28 @@ V_list</code></pre>
 <p>Here’s what happens if we feed in the data in a different order:</p>
 <pre class="r"><code>dat_scramble &lt;- dat[sample(nrow(dat)),]
 dat_scramble</code></pre>
-<pre><code>##   study         yi vi
-## 8     C  1.7493633 11
-## 9     C -1.1837521 12
-## 3     B  0.1946788  6
-## 1     A  0.5839048  4
-## 2     A -0.5168943  5
-## 5     B -0.2251032  8
-## 7     C  1.3966669 10
-## 4     B  1.0894588  7
-## 6     C -1.1907191  9</code></pre>
+<pre><code>##   study          yi vi
+## 9     C -0.38033372 12
+## 3     B -0.70125406  6
+## 8     C -1.10272160 11
+## 5     B -0.70957554  8
+## 6     C -0.40639264  9
+## 2     A -0.02725897  5
+## 1     A -1.33148823  4
+## 4     B -1.71119746  7
+## 7     C -0.13290344 10</code></pre>
 <pre class="r"><code>V_mat &lt;- round(impute_covariance_matrix(vi = dat_scramble$vi, cluster = dat_scramble$study, r = 0.7), 3)
 V_mat</code></pre>
-<pre><code>##         [,1]   [,2]  [,3] [,4] [,5]  [,6]   [,7]  [,8]  [,9]
-##  [1,] 11.000  8.042 0.000 0.00 0.00 0.000  7.342 0.000 6.965
-##  [2,]  8.042 12.000 0.000 0.00 0.00 0.000  7.668 0.000 7.275
-##  [3,]  0.000  0.000 6.000 0.00 0.00 4.850  0.000 4.537 0.000
-##  [4,]  0.000  0.000 0.000 4.00 3.13 0.000  0.000 0.000 0.000
-##  [5,]  0.000  0.000 0.000 3.13 5.00 0.000  0.000 0.000 0.000
-##  [6,]  0.000  0.000 4.850 0.00 0.00 8.000  0.000 5.238 0.000
-##  [7,]  7.342  7.668 0.000 0.00 0.00 0.000 10.000 0.000 6.641
-##  [8,]  0.000  0.000 4.537 0.00 0.00 5.238  0.000 7.000 0.000
-##  [9,]  6.965  7.275 0.000 0.00 0.00 0.000  6.641 0.000 9.000</code></pre>
+<pre><code>##         [,1]  [,2]   [,3]  [,4]  [,5] [,6] [,7]  [,8]   [,9]
+##  [1,] 12.000 0.000  8.042 0.000 7.275 0.00 0.00 0.000  7.668
+##  [2,]  0.000 6.000  0.000 4.850 0.000 0.00 0.00 4.537  0.000
+##  [3,]  8.042 0.000 11.000 0.000 6.965 0.00 0.00 0.000  7.342
+##  [4,]  0.000 4.850  0.000 8.000 0.000 0.00 0.00 5.238  0.000
+##  [5,]  7.275 0.000  6.965 0.000 9.000 0.00 0.00 0.000  6.641
+##  [6,]  0.000 0.000  0.000 0.000 0.000 5.00 3.13 0.000  0.000
+##  [7,]  0.000 0.000  0.000 0.000 0.000 3.13 4.00 0.000  0.000
+##  [8,]  0.000 4.537  0.000 5.238 0.000 0.00 0.00 7.000  0.000
+##  [9,]  7.668 0.000  7.342 0.000 6.641 0.00 0.00 0.000 10.000</code></pre>
 <p>To see that this is correct, check that the diagonal entries of <code>V_mat</code> are the same as <code>vi</code>:</p>
 <pre class="r"><code>all.equal(dat_scramble$vi, diag(V_mat))</code></pre>
 <pre><code>## [1] TRUE</code></pre>

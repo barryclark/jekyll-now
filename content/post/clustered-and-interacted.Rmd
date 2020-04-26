@@ -8,9 +8,10 @@ slug: clustered-and-interacted
 categories: []
 tags:
   - sandwiches
+  - robust variance estimation
   - econometrics
   - weighting
-  - instrumental-variables
+  - instrumental variables
 header:
   caption: ''
   image: ''

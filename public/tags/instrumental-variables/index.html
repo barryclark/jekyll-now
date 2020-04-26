@@ -242,7 +242,7 @@
   
   <meta property="og:site_name" content="James E. Pustejovsky">
   <meta property="og:url" content="/tags/instrumental-variables/">
-  <meta property="og:title" content="instrumental-variables | James E. Pustejovsky">
+  <meta property="og:title" content="instrumental variables | James E. Pustejovsky">
   <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
@@ -260,7 +260,7 @@
   
 
 
-  <title>instrumental-variables | James E. Pustejovsky</title>
+  <title>instrumental variables | James E. Pustejovsky</title>
 
 </head>
 
@@ -634,7 +634,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>instrumental-variables</h1>
+  <h1>instrumental variables</h1>
 
   
 
@@ -656,18 +656,6 @@
       <div class="article-style">
         
           library(tidyverse)data(STAR, package = &quot;AER&quot;)STAR_urban &lt;-STAR %&gt;%filter(# limit to urban/inner city schoolsschoolk %in% c(&quot;urban&quot;,&quot;inner-city&quot;),# limit to complete outcome data!is.na(readk), !is.na(mathk)) %&gt;%droplevels() %&gt;%# collapse control conditionsmutate(stark = fct_collapse(stark, regular = c(&quot;regular&quot;,&quot;regular+aide&quot;))) %&gt;%# calculate inverse-propensity weightgroup_by(schoolidk) %&gt;%mutate(n = n(),nT = sum(stark==&quot;small&quot;),wt = ifelse(stark==&quot;small&quot;, n / nT, n / (n - nT))) %&gt;%select(schoolidk, stark, readk, mathk, wt)STAR_summary &lt;- STAR_urban %&gt;%count(schoolidk)STAR_urban %&gt;%group_by(schoolidk, stark) %&gt;%summarise(n = n(),wt = sum(wt)) %&gt;%mutate(n = sum(n)) %&gt;%spread(stark, wt)## # A tibble: 23 x 4## # Groups: schoolidk [23]## schoolidk n regular small## &lt;fct&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;## 1 2 52 52 52## 2 9 120 120 120## 3 10 51 51 51## 4 14 34 34 34## 5 15 55 55 55## 6 16 105 105 105## 7 18 79 79 79## 8 19 99 99 99## 9 22 129 129 129## 10 26 49 49 49## # .
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/handmade-clubsandwich/" >A handmade clubSandwich for multi-site trials</a></h2>
-      <div class="article-style">
-        
-          I’m just back from the Society for Research on Educational Effectiveness meetings, where I presented work on small-sample corrections for cluster-robust variance estimators in two-stage least squares models, which I’ve implemented in the clubSandwich R package.
         
       </div>
     </div>

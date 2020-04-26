@@ -7,8 +7,9 @@ slug: clubSandwich-for-RVE-meta-analysis
 categories: []
 tags:
   - meta-analysis
+  - robust variance estimation
   - sandwiches
-  - R
+  - Rstats
 header:
   caption: ''
   image: ''

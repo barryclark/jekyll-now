@@ -8,11 +8,13 @@ image:
   preview_only: true
   focal_point: Smart
 summary: Simulate systematic direct observation data
+
 tags:
 - behavioral observation
 - alternating renewal process
 - simulation
 - R
+
 title: ARPobservation
 authors:
 - admin

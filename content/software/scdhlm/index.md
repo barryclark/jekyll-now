@@ -10,7 +10,8 @@ tags:
 - design-comparable SMD
 - effect size
 - hierarchical models
-- single-case research
+- single-case design
+- Rstats
 title: scdhlm
 authors:
 - admin

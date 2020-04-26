@@ -782,15 +782,15 @@ simulate_OR_to_SMD &lt;- function(p0, SMD, r, n0, n1) {
 
 simulate_OR_to_SMD(p0 = 0.6, SMD = 0.4, r = 0.7, n0 = 10000, n1 = 10000)</code></pre>
 <pre><code>##          type   LOR_est   SMD_est
-## 1    marginal 0.7545969 0.4160311
-## 2 conditional 0.8781614 0.4841558</code></pre>
+## 1    marginal 0.7468089 0.4117373
+## 2 conditional 0.8711806 0.4803070</code></pre>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages ----------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## -- Attaching packages ------------------------------------------------------ tidyverse 1.2.1 --</code></pre>
 <pre><code>## v ggplot2 3.3.0     v purrr   0.3.3
 ## v tibble  3.0.0     v dplyr   0.8.3
 ## v tidyr   1.0.0     v stringr 1.4.0
 ## v readr   1.3.1     v forcats 0.4.0</code></pre>
-<pre><code>## -- Conflicts -------------------------------------------------------------- tidyverse_conflicts() --
+<pre><code>## -- Conflicts --------------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>params &lt;- 
@@ -806,7 +806,9 @@ SMDs &lt;-
   mutate(res = pmap(., simulate_OR_to_SMD, n0 = 50000, n1 = 50000)) %&gt;%
   unnest() %&gt;%
   mutate(RB = SMD_est / SMD)</code></pre>
-<pre><code>## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred</code></pre>
+<pre><code>## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred</code></pre>
 <pre><code>## Warning: `cols` is now required.
 ## Please use `cols = c(res)`</code></pre>
 <pre class="r"><code>ggplot(SMDs, aes(r, RB, color = type)) + 
@@ -827,9 +829,9 @@ SMDs &lt;-
   
   <a class="badge badge-light" href="/tags/meta-analysis/">meta-analysis</a>
   
-  <a class="badge badge-light" href="/tags/odds-ratios/">odds-ratios</a>
+  <a class="badge badge-light" href="/tags/odds-ratio/">odds ratio</a>
   
-  <a class="badge badge-light" href="/tags/effect-sizes/">effect sizes</a>
+  <a class="badge badge-light" href="/tags/effect-size/">effect size</a>
   
 </div>
 
@@ -967,13 +969,13 @@ SMDs &lt;-
       
       <li><a href="/variance-of-r-in-two-level-design/">Sampling variance of Pearson r in a two-level design</a></li>
       
-      <li><a href="/alternative-formulas-for-the-smd/">Alternative formulas for the standardized mean difference</a></li>
+      <li><a href="/using-response-ratios-paper/">New paper: Using response ratios for meta-analyzing SCDs with behavioral outcomes</a></li>
       
-      <li><a href="/sped-pro-sem-again/">Special Education Pro-Sem</a></li>
+      <li><a href="/publication/using-response-ratios/">Using response ratios for meta-analyzing single-case designs with behavioral outcomes</a></li>
       
-      <li><a href="/correlations-between-smds/">Correlations between standardized mean differences</a></li>
+      <li><a href="/publication/rase-special-issue-introduction/">Introduction to the special issue on single-case systematic reviews and meta-analysis</a></li>
       
-      <li><a href="/sped-pro-sem/">Special Education Pro-Sem</a></li>
+      <li><a href="/using-log-response-ratios/">New working paper: Using log response ratios for meta-analyzing SCDs with behavioral outcomes</a></li>
       
     </ul>
   </div>

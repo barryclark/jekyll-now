@@ -20,7 +20,7 @@ header:
 projects: []
 tags: 
 - single-case design
-- systematic direct observation
+- behavioral observation
 - systematic review
 
 slides: 

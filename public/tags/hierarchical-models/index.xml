@@ -29,6 +29,449 @@
     </item>
     
     <item>
+      <title>Bug in nlme::lme with fixed sigma and REML estimation</title>
+      <link>/bug-in-nlme-with-fixed-sigma/</link>
+      <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/bug-in-nlme-with-fixed-sigma/</guid>
+      <description>
+
+
+&lt;p&gt;About one year ago, the &lt;code&gt;nlme&lt;/code&gt; package introduced a feature that allowed the user to specify a fixed value for the residual variance in linear mixed effect models fitted with &lt;code&gt;lme()&lt;/code&gt;. This feature is interesting to me because, when used with the &lt;code&gt;varFixed()&lt;/code&gt; specification for the residual weights, it allows for estimation of a wide variety of meta-analysis models, including basic random effects models, bivariate models for estimating effects by trial arm, and other sorts of multivariate/multi-level random effects models. However, in kicking the tires on this feature, I noticed that the results that it produces are not quite consistent with the results produced by &lt;code&gt;metafor&lt;/code&gt;, which is the main package I use for fitting meta-analytic models.&lt;/p&gt;
+&lt;p&gt;In this post, I document several examples of discrepant estimates between &lt;code&gt;lme()&lt;/code&gt; and &lt;code&gt;rma.mv()&lt;/code&gt;, using standard datasets included in the &lt;code&gt;metafor&lt;/code&gt; package. The main take-aways are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The discrepancies arise only with &lt;code&gt;REML&lt;/code&gt; estimation (not with &lt;code&gt;ML&lt;/code&gt; estimation).&lt;/li&gt;
+&lt;li&gt;The discrepancies are present whether or not the &lt;code&gt;varFixed&lt;/code&gt; specification is used.&lt;/li&gt;
+&lt;li&gt;The discrepancies are mostly small (with minimal impact on the standard errors of the fixed effect estimates), but are larger than I would expect from computational/convergence differences alone.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Another example, based on a different dataset, is documented in &lt;a href=&#34;https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16975&#34;&gt;this bug report&lt;/a&gt;. Wolfgang Viechtbauer, author of the &lt;code&gt;metafor&lt;/code&gt; package, identified this problem with &lt;code&gt;lme&lt;/code&gt; a few months ago already (see his responses in &lt;a href=&#34;https://stat.ethz.ch/pipermail/r-sig-mixed-models/2016q2/024862.html&#34;&gt;this thread&lt;/a&gt; on the R mixed models mailing list) and noted that the issue was localized to REML estimation. My thanks to Wolfgang for providing feedback on this post.&lt;/p&gt;
+&lt;div id=&#34;basic-random-effects-model&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Basic random effects model&lt;/h3&gt;
+&lt;p&gt;This example fits a basic random effects model to the BCG vaccine data, available within &lt;code&gt;metafor&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(metafor)
+library(nlme)
+
+bcg_example &amp;lt;- function(method = &amp;quot;REML&amp;quot;, constant_var = FALSE) {
+  
+  data(dat.bcg)
+  dat &amp;lt;- escalc(measure=&amp;quot;OR&amp;quot;, ai=tpos, bi=tneg, ci=cpos, di=cneg, data=dat.bcg)
+  
+  v_bar &amp;lt;- mean(dat$vi)
+  if (constant_var) dat$vi &amp;lt;- v_bar
+  
+  # random-effects model using rma.uni()
+  LOR_uni_fit &amp;lt;- rma(yi, vi, data=dat, method = method)
+  LOR_uni &amp;lt;- with(LOR_uni_fit, 
+                  data.frame(f = &amp;quot;rma.uni&amp;quot;, 
+                             logLik = logLik(LOR_uni_fit),
+                             est = as.numeric(b), 
+                             se = se, 
+                             tau = sqrt(tau2)))
+  
+  # random-effects model using rma.mv()
+  LOR_mv_fit &amp;lt;- rma.mv(yi, vi, random = ~ 1 | trial, data=dat, method = method)
+  LOR_mv &amp;lt;- with(LOR_mv_fit, 
+                 data.frame(f = &amp;quot;rma.mv&amp;quot;, 
+                            logLik = logLik(LOR_mv_fit),
+                            est = as.numeric(b), 
+                            se = se, 
+                            tau = sqrt(sigma2)))
+  
+  # random-effects model using lme()
+  if (constant_var) {
+    LOR_lme_fit &amp;lt;- lme(yi ~ 1, data = dat, method = method, 
+                       random = ~ 1 | trial,
+                       control = lmeControl(sigma = sqrt(v_bar)))
+    tau &amp;lt;- sqrt(as.numeric(coef(LOR_lme_fit$modelStruct$reStruct, unconstrained = FALSE)) * v_bar) 
+  } else {
+    LOR_lme_fit &amp;lt;- lme(yi ~ 1, data = dat, method = method, 
+                       random = ~ 1 | trial,
+                       weights = varFixed(~ vi),
+                       control = lmeControl(sigma = 1))
+    tau &amp;lt;- sqrt(as.numeric(coef(LOR_lme_fit$modelStruct$reStruct, unconstrained = FALSE)))
+  }
+  LOR_lme &amp;lt;- data.frame(f = &amp;quot;lme&amp;quot;, 
+                        logLik = logLik(LOR_lme_fit),
+                        est = as.numeric(fixef(LOR_lme_fit)), 
+                        se = as.numeric(sqrt(vcov(LOR_lme_fit))), 
+                        tau = tau)
+  
+  rbind(LOR_uni, LOR_mv, LOR_lme)
+  
+}
+
+bcg_example(&amp;quot;REML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         f    logLik        est        se       tau
+## 1 rma.uni -12.57566 -0.7451778 0.1860279 0.5811816
+## 2  rma.mv -12.57566 -0.7451778 0.1860280 0.5811818
+## 3     lme -13.34043 -0.7471979 0.1916902 0.6030524&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_example(&amp;quot;REML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         f    logLik        est        se       tau
+## 1 rma.uni -12.96495 -0.7716272 0.1977007 0.5911451
+## 2  rma.mv -12.96495 -0.7716272 0.1977007 0.5911452
+## 3     lme -15.62846 -0.7716272 0.1899448 0.5571060&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_example(&amp;quot;ML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         f    logLik        est        se       tau
+## 1 rma.uni -13.07276 -0.7419668 0.1779534 0.5499605
+## 2  rma.mv -13.07276 -0.7419669 0.1779534 0.5499608
+## 3     lme -13.07276 -0.7419668 0.1779534 0.5499605&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_example(&amp;quot;ML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         f     logLik        est        se       tau
+## 1 rma.uni -13.525084 -0.7716272 0.1899447 0.5571059
+## 2  rma.mv -13.525084 -0.7716272 0.1899447 0.5571059
+## 3     lme  -2.479133 -0.7716272 0.1899447 0.5571060&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bi-variate-random-effects-model&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bi-variate random effects model&lt;/h3&gt;
+&lt;p&gt;This example fits a bi-variate random effects model, also to the BCG vaccine data:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_bivariate &amp;lt;- function(method = &amp;quot;REML&amp;quot;, constant_var = FALSE) {
+  data(dat.bcg)
+  dat_long &amp;lt;- to.long(measure=&amp;quot;OR&amp;quot;, ai=tpos, bi=tneg, ci=cpos, di=cneg, data=dat.bcg)
+  levels(dat_long$group) &amp;lt;- c(&amp;quot;exp&amp;quot;, &amp;quot;con&amp;quot;)
+  dat_long$group &amp;lt;- relevel(dat_long$group, ref=&amp;quot;con&amp;quot;)
+  dat_long &amp;lt;- escalc(measure=&amp;quot;PLO&amp;quot;, xi=out1, mi=out2, data=dat_long)
+
+  v_bar &amp;lt;- mean(dat_long$vi)
+  
+  if (constant_var) dat_long$vi &amp;lt;- v_bar
+  
+  # bivariate random-effects model using rma.mv()
+  
+  bv_rma_fit &amp;lt;- rma.mv(yi, vi, mods = ~ group, 
+                       random = ~ group | study, 
+                       struct = &amp;quot;UN&amp;quot;, method = method,
+                       data=dat_long)
+  bv_rma &amp;lt;- with(bv_rma_fit, data.frame(f = &amp;quot;rma.mv&amp;quot;,
+                                        logLik = logLik(bv_rma_fit),
+                                        tau1 = sqrt(tau2[1]),
+                                        tau2 = sqrt(tau2[2])))
+  
+  # bivariate random-effects model using lme()
+  if (constant_var) {
+    bv_lme_fit &amp;lt;- lme(yi ~ group, data = dat_long, method = method, 
+                      random = ~ group | study,
+                      control = lmeControl(sigma = sqrt(v_bar)))
+    tau_sq &amp;lt;- colSums(coef(bv_lme_fit$modelStruct$reStruct, unconstrained = FALSE) * matrix(c(1,0,0, 1,2,1), 3, 2)) * v_bar
+    
+  } else {
+    bv_lme_fit &amp;lt;- lme(yi ~ group, data = dat_long, method = method, 
+                      random = ~ group | study,
+                      weights = varFixed(~ vi),
+                      control = lmeControl(sigma = 1))
+    
+    tau_sq &amp;lt;- colSums(coef(bv_lme_fit$modelStruct$reStruct, unconstrained = FALSE) * matrix(c(1,0,0, 1,2,1), 3, 2))
+    
+  }
+  
+  bv_lme &amp;lt;- data.frame(f = &amp;quot;lme&amp;quot;,
+                       logLik = logLik(bv_lme_fit),
+                       tau1 = sqrt(tau_sq[1]),
+                       tau2 = sqrt(tau_sq[2]))
+  
+  rbind(bv_rma, bv_lme)
+  
+}
+
+bcg_bivariate(&amp;quot;REML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik     tau1     tau2
+## 1 rma.mv -31.50167 1.617807 1.244429
+## 2    lme -32.32612 1.631619 1.254437&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_bivariate(&amp;quot;REML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik     tau1     tau2
+## 1 rma.mv -31.09623 1.644897 1.191679
+## 2    lme -37.06035 1.578435 1.142260&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_bivariate(&amp;quot;ML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik     tau1     tau2
+## 1 rma.mv -33.08793 1.551558 1.196399
+## 2    lme -33.08793 1.551558 1.196399&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bcg_bivariate(&amp;quot;ML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f     logLik     tau1    tau2
+## 1 rma.mv -32.647023 1.578434 1.14226
+## 2    lme  -2.237355 1.578434 1.14226&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;three-level-random-effects-model&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Three-level random-effects model&lt;/h3&gt;
+&lt;p&gt;This example fits a three-level random-effects model to the data from Konstantopoulos (2011):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Konstantopoulos &amp;lt;- function(method = &amp;quot;REML&amp;quot;, constant_var = FALSE) {
+  
+  dat &amp;lt;- get(data(dat.konstantopoulos2011))
+  v_bar &amp;lt;- mean(dat$vi)
+  if (constant_var) dat$vi &amp;lt;- v_bar
+  
+  # multilevel random-effects model using rma.mv()
+  ml_rma_fit &amp;lt;- rma.mv(yi, vi, random = ~ 1 | district/school, data=dat, method = method)
+  
+  ml_rma &amp;lt;- with(ml_rma_fit, 
+                 data.frame(f = &amp;quot;rma.mv&amp;quot;, 
+                            logLik = logLik(ml_rma_fit),
+                            est = as.numeric(b), 
+                            se = se, 
+                            tau1 = sqrt(sigma2[1]), 
+                            tau2 = sqrt(sigma2[2])))
+  
+  # multilevel random-effects model using lme()
+  if (constant_var) {
+    ml_lme_fit &amp;lt;- lme(yi ~ 1, data = dat, method = method, 
+                      random = ~ 1 | district / school,
+                      control = lmeControl(sigma = sqrt(v_bar)))
+    tau &amp;lt;- sqrt(as.numeric(coef(ml_lme_fit$modelStruct$reStruct, unconstrained = FALSE)) * v_bar)
+    
+  } else {
+    ml_lme_fit &amp;lt;- lme(yi ~ 1, data = dat, method = method, 
+                      random = ~ 1 | district / school,
+                      weights = varFixed(~ vi),
+                      control = lmeControl(sigma = 1))
+    tau &amp;lt;- sqrt(as.numeric(coef(ml_lme_fit$modelStruct$reStruct, unconstrained = FALSE)))
+    
+  }  
+  ml_lme &amp;lt;- data.frame(f = &amp;quot;lme&amp;quot;,
+                       logLik = logLik(ml_lme_fit),
+                       est = as.numeric(fixef(ml_lme_fit)),
+                       se = as.numeric(sqrt(diag(vcov(ml_lme_fit)))),
+                       tau1 = tau[2],
+                       tau2 = tau[1])
+  
+  rbind(ml_rma, ml_lme)
+  
+}
+
+Konstantopoulos(&amp;quot;REML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f     logLik       est         se      tau1      tau2
+## 1 rma.mv  -7.958724 0.1847132 0.08455592 0.2550724 0.1809324
+## 2    lme -10.716781 0.1841827 0.08641374 0.2605790 0.1884588&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Konstantopoulos(&amp;quot;REML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f     logLik       est         se      tau1      tau2
+## 1 rma.mv  -9.724839 0.1724309 0.08052701 0.2401816 0.1878155
+## 2    lme -16.119274 0.1724309 0.07980479 0.2380275 0.1848778&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Konstantopoulos(&amp;quot;ML&amp;quot;, constant_var = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik       est         se      tau1      tau2
+## 1 rma.mv -8.394936 0.1844554 0.08048168 0.2402881 0.1812865
+## 2    lme -8.394936 0.1844554 0.08048168 0.2402881 0.1812865&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Konstantopoulos(&amp;quot;ML&amp;quot;, constant_var = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        f    logLik       est         se      tau1      tau2
+## 1 rma.mv -10.11095 0.1712365 0.07645094 0.2250687 0.1881229
+## 2    lme  90.21692 0.1712365 0.07645093 0.2250687 0.1881228&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bug in nlme::getVarCov</title>
+      <link>/bug-in-nlme-getvarcov/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>/bug-in-nlme-getvarcov/</guid>
+      <description>
+
+
+&lt;p&gt;I have recently been working to ensure that &lt;a href=&#34;https://github.com/jepusto/clubSandwich&#34;&gt;my &lt;code&gt;clubSandwich&lt;/code&gt; package&lt;/a&gt; works correctly on fitted &lt;code&gt;lme&lt;/code&gt; and &lt;code&gt;gls&lt;/code&gt; models from the &lt;code&gt;nlme&lt;/code&gt; package, which is one of the main R packages for fitting hierarchical linear models. In the course of digging around in the guts of &lt;code&gt;nlme&lt;/code&gt;, I noticed a bug in the &lt;code&gt;getVarCov&lt;/code&gt; function. The purpose of the function is to extract the estimated variance-covariance matrix of the errors from a fitted &lt;code&gt;lme&lt;/code&gt; or &lt;code&gt;gls&lt;/code&gt; model.&lt;/p&gt;
+&lt;p&gt;It seems that this function is sensitive to the order in which the input data are sorted. &lt;a href=&#34;https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16744&#34;&gt;This bug report&lt;/a&gt; noted the problem, but unfortunately their proposed fix doesn’t seem to solve the problem. In this post I’ll demonstrate the bug and a solution. (I’m posting this here because the R project’s bug reporting system is currently closed to people who were not registered as of early July, evidently due to some sort of spamming problem.)&lt;/p&gt;
+&lt;div id=&#34;the-issue&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The issue&lt;/h1&gt;
+&lt;p&gt;Here’s a simple demonstration of the problem. I’ll first fit a &lt;code&gt;gls&lt;/code&gt; model with a heteroskedastic variance function and an AR(1) auto-correlation structure (no need to worry about the substance of the specification—we’re just worried about computation here) and then extract the variances for each of the units.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Demonstrate the problem with gls model
+
+library(nlme)
+data(Ovary)
+
+gls_raw &amp;lt;- gls(follicles ~ sin(2*pi*Time) + cos(2*pi*Time), data = Ovary,
+               correlation = corAR1(form = ~ 1 | Mare),
+               weights = varPower())
+
+Mares &amp;lt;- levels(gls_raw$groups)
+V_raw &amp;lt;- lapply(Mares, function(g) getVarCov(gls_raw, individual = g))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I’ll repeat the process using the same data, but sorted in a different order&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Ovary_sorted &amp;lt;- Ovary[with(Ovary, order(Mare, Time)),]
+gls_sorted &amp;lt;- update(gls_raw, data = Ovary_sorted)
+
+V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov(gls_sorted, individual = g))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The variance component estimates are essentially equal:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(gls_raw$modelStruct, gls_sorted$modelStruct)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, the extracted variance-covariance matrices are not:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all.equal(V_raw, V_sorted)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Component 1: Mean relative difference: 0.03256&amp;quot;   
+## [2] &amp;quot;Component 3: Mean relative difference: 0.05830791&amp;quot;
+## [3] &amp;quot;Component 4: Mean relative difference: 0.1142209&amp;quot; 
+## [4] &amp;quot;Component 5: Mean relative difference: 0.03619692&amp;quot;
+## [5] &amp;quot;Component 6: Mean relative difference: 0.09260648&amp;quot;
+## [6] &amp;quot;Component 8: Mean relative difference: 0.08650327&amp;quot;
+## [7] &amp;quot;Component 9: Mean relative difference: 0.07627162&amp;quot;
+## [8] &amp;quot;Component 10: Mean relative difference: 0.018103&amp;quot; 
+## [9] &amp;quot;Component 11: Mean relative difference: 0.1020658&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s the code of the relevant function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;nlme:::getVarCov.gls&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## function (obj, individual = 1, ...) 
+## {
+##     S &amp;lt;- corMatrix(obj$modelStruct$corStruct)[[individual]]
+##     if (!is.null(obj$modelStruct$varStruct)) {
+##         ind &amp;lt;- obj$groups == individual
+##         vw &amp;lt;- 1/varWeights(obj$modelStruct$varStruct)[ind]
+##     }
+##     else vw &amp;lt;- rep(1, nrow(S))
+##     vars &amp;lt;- (obj$sigma * vw)^2
+##     result &amp;lt;- t(S * sqrt(vars)) * sqrt(vars)
+##     class(result) &amp;lt;- c(&amp;quot;marginal&amp;quot;, &amp;quot;VarCov&amp;quot;)
+##     attr(result, &amp;quot;group.levels&amp;quot;) &amp;lt;- names(obj$groups)
+##     result
+## }
+## &amp;lt;bytecode: 0x000000001bc39d00&amp;gt;
+## &amp;lt;environment: namespace:nlme&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The issue is in the 4th line of the body. &lt;code&gt;getVarCov.gls&lt;/code&gt; assumes that &lt;code&gt;varWeights(obj$modelStruct$varStruct)&lt;/code&gt; is sorted in the same order as &lt;code&gt;obj$groups&lt;/code&gt;, which is not necessarily true. Instead, &lt;code&gt;varWeights&lt;/code&gt; seem to return the weights sorted according to the grouping variable. For this example, that means that the &lt;code&gt;varWeights&lt;/code&gt; will not depend on the order in which the groups are sorted.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;identical(gls_raw$groups, gls_sorted$groups)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] FALSE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;identical(varWeights(gls_raw$modelStruct$varStruct), 
+          varWeights(gls_sorted$modelStruct$varStruct))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fix-for-nlmegetvarcov.gls&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Fix for &lt;code&gt;nlme:::getVarCov.gls&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;I think this can be solved by either&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;putting the &lt;code&gt;varWeights&lt;/code&gt; back into the same order as the raw data or&lt;/li&gt;
+&lt;li&gt;sorting &lt;code&gt;obj$groups&lt;/code&gt; before identifying the rows corresponding to the specified &lt;code&gt;individual&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here’s a revised function that takes the second approach:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# proposed patch for getVarCov.gls
+
+getVarCov_revised_gls &amp;lt;- function (obj, individual = 1, ...) {
+    S &amp;lt;- corMatrix(obj$modelStruct$corStruct)[[individual]]
+    if (!is.null(obj$modelStruct$varStruct)) {
+        ind &amp;lt;- sort(obj$groups) == individual
+        vw &amp;lt;- 1 / varWeights(obj$modelStruct$varStruct)[ind]
+    }
+    else vw &amp;lt;- rep(1, nrow(S))
+    vars &amp;lt;- (obj$sigma * vw)^2
+    result &amp;lt;- t(S * sqrt(vars)) * sqrt(vars)
+    class(result) &amp;lt;- c(&amp;quot;marginal&amp;quot;, &amp;quot;VarCov&amp;quot;)
+    attr(result, &amp;quot;group.levels&amp;quot;) &amp;lt;- names(obj$groups)
+    result
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Testing that it works correctly:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;V_raw &amp;lt;- lapply(Mares, function(g) getVarCov_revised_gls(gls_raw, individual = g))
+V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov_revised_gls(gls_sorted, individual = g))
+all.equal(V_raw, V_sorted)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fix-for-nlmegetvarcov.lme&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Fix for &lt;code&gt;nlme:::getVarCov.lme&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;The same issue comes up in &lt;code&gt;getVarCov.lme&lt;/code&gt;. Here’s the fix and verification:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# proposed patch for getVarCov.lme
+
+getVarCov_revised_lme &amp;lt;- function (obj, individuals, type = c(&amp;quot;random.effects&amp;quot;, &amp;quot;conditional&amp;quot;, &amp;quot;marginal&amp;quot;), ...) {
+    type &amp;lt;- match.arg(type)
+    if (any(&amp;quot;nlme&amp;quot; == class(obj))) 
+        stop(&amp;quot;not implemented for \&amp;quot;nlme\&amp;quot; objects&amp;quot;)
+    if (length(obj$group) &amp;gt; 1) 
+        stop(&amp;quot;not implemented for multiple levels of nesting&amp;quot;)
+    sigma &amp;lt;- obj$sigma
+    D &amp;lt;- as.matrix(obj$modelStruct$reStruct[[1]]) * sigma^2
+    if (type == &amp;quot;random.effects&amp;quot;) {
+        result &amp;lt;- D
+    }
+    else {
+        result &amp;lt;- list()
+        groups &amp;lt;- sort(obj$groups[[1]])
+        ugroups &amp;lt;- unique(groups)
+        if (missing(individuals)) 
+            individuals &amp;lt;- as.matrix(ugroups)[1, ]
+        if (is.numeric(individuals)) 
+            individuals &amp;lt;- ugroups[individuals]
+        for (individ in individuals) {
+            indx &amp;lt;- which(individ == ugroups)
+            if (!length(indx)) 
+                stop(gettextf(&amp;quot;individual %s was not used in the fit&amp;quot;, 
+                  sQuote(individ)), domain = NA)
+            if (is.na(indx)) 
+                stop(gettextf(&amp;quot;individual %s was not used in the fit&amp;quot;, 
+                  sQuote(individ)), domain = NA)
+            ind &amp;lt;- groups == individ
+            if (!is.null(obj$modelStruct$corStruct)) {
+                V &amp;lt;- corMatrix(obj$modelStruct$corStruct)[[as.character(individ)]]
+            }
+            else V &amp;lt;- diag(sum(ind))
+            if (!is.null(obj$modelStruct$varStruct)) 
+                sds &amp;lt;- 1/varWeights(obj$modelStruct$varStruct)[ind]
+            else sds &amp;lt;- rep(1, sum(ind))
+            sds &amp;lt;- obj$sigma * sds
+            cond.var &amp;lt;- t(V * sds) * sds
+            dimnames(cond.var) &amp;lt;- list(1:nrow(cond.var), 1:ncol(cond.var))
+            if (type == &amp;quot;conditional&amp;quot;) 
+                result[[as.character(individ)]] &amp;lt;- cond.var
+            else {
+                Z &amp;lt;- model.matrix(obj$modelStruct$reStruc, getData(obj))[ind, 
+                  , drop = FALSE]
+                result[[as.character(individ)]] &amp;lt;- cond.var + 
+                  Z %*% D %*% t(Z)
+            }
+        }
+    }
+    class(result) &amp;lt;- c(type, &amp;quot;VarCov&amp;quot;)
+    attr(result, &amp;quot;group.levels&amp;quot;) &amp;lt;- names(obj$groups)
+    result
+}
+
+lme_raw &amp;lt;- lme(follicles ~ sin(2*pi*Time) + cos(2*pi*Time), 
+               random = ~ 1 | Mare,
+               correlation = corExp(form = ~ Time),
+               weights = varPower(),
+               data=Ovary)
+
+lme_sorted &amp;lt;- update(lme_raw, data = Ovary_sorted)
+
+all.equal(lme_raw$modelStruct, lme_sorted$modelStruct)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# current getVarCov
+V_raw &amp;lt;- lapply(Mares, function(g) getVarCov(lme_raw, individual = g, type = &amp;quot;marginal&amp;quot;))
+V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov(lme_sorted, individual = g, type = &amp;quot;marginal&amp;quot;))
+all.equal(V_raw, V_sorted)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Component 1: Component 1: Mean relative difference: 0.003989954&amp;quot; 
+##  [2] &amp;quot;Component 3: Component 1: Mean relative difference: 0.003784181&amp;quot; 
+##  [3] &amp;quot;Component 4: Component 1: Mean relative difference: 0.003028662&amp;quot; 
+##  [4] &amp;quot;Component 5: Component 1: Mean relative difference: 0.0005997944&amp;quot;
+##  [5] &amp;quot;Component 6: Component 1: Mean relative difference: 0.002350456&amp;quot; 
+##  [6] &amp;quot;Component 7: Component 1: Mean relative difference: 0.007103733&amp;quot; 
+##  [7] &amp;quot;Component 8: Component 1: Mean relative difference: 0.001887638&amp;quot; 
+##  [8] &amp;quot;Component 9: Component 1: Mean relative difference: 0.0009601843&amp;quot;
+##  [9] &amp;quot;Component 10: Component 1: Mean relative difference: 0.004748783&amp;quot;
+## [10] &amp;quot;Component 11: Component 1: Mean relative difference: 0.001521097&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# revised getVarCov 
+V_raw &amp;lt;- lapply(Mares, function(g) getVarCov_revised_lme(lme_raw, individual = g, type = &amp;quot;marginal&amp;quot;))
+V_sorted &amp;lt;- lapply(Mares, function(g) getVarCov_revised_lme(lme_sorted, individual = g, type = &amp;quot;marginal&amp;quot;))
+all.equal(V_raw, V_sorted)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;session-info&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Session info&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## R version 3.6.3 (2020-02-29)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 10 x64 (build 17763)
+## 
+## Matrix products: default
+## 
+## locale:
+## [1] LC_COLLATE=English_United States.1252 
+## [2] LC_CTYPE=English_United States.1252   
+## [3] LC_MONETARY=English_United States.1252
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.1252    
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] nlme_3.1-144
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_1.0.4.6    bookdown_0.14   lattice_0.20-38 digest_0.6.25  
+##  [5] grid_3.6.3      magrittr_1.5    evaluate_0.14   blogdown_0.18  
+##  [9] rlang_0.4.5     stringi_1.4.3   rmarkdown_2.1   tools_3.6.3    
+## [13] stringr_1.4.0   xfun_0.12       yaml_2.2.0      compiler_3.6.3 
+## [17] htmltools_0.4.0 knitr_1.28&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>scdhlm</title>
       <link>/software/scdhlm/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -56,6 +499,19 @@
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
       <guid>/publication/design-comparable-effect-sizes/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>New article: Design-comparable effect sizes in multiple baseline designs: A general modeling framework</title>
+      <link>/design-comparable-effect-sizes-in-multiple-baseline-designs/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/design-comparable-effect-sizes-in-multiple-baseline-designs/</guid>
+      <description>
+
+
+&lt;p&gt;My article with Larry Hedges and Will Shadish, titled “Design-comparable effect sizes in multiple baseline designs: A general modeling framework” has been accepted at Journal of Educational and Behavioral Statistics. The abstract is below. Here’s the article at &lt;a href=&#34;http://doi.org/10.3102/1076998614547577&#34;&gt;the journal website&lt;/a&gt;. &lt;a href=&#34;/files/Effect-sizes-in-multiple-baseline-designs-JEBS.pdf&#34;&gt;Postprint&lt;/a&gt; and &lt;a href=&#34;/files/Effect-sizes-in-multiple-baseline-designs-Simulation-results.pdf&#34;&gt;supporting materials&lt;/a&gt; are available. An R package that implements the proposed methods is &lt;a href=&#34;/getting-started-with-scdhlm/&#34;&gt;available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In single-case research, the multiple baseline design is a widely used approach for evaluating the effects of interventions on individuals. Multiple baseline designs involve repeated measurement of outcomes over time and the controlled introduction of a treatment at different times for different individuals. This article outlines a general approach for defining effect sizes in multiple baseline designs that are directly comparable to the standardized mean difference from a between-subjects randomized experiment. The target, design-comparable effect size parameter can be estimated using restricted maximum likelihood together with a small-sample correction analogous to Hedges’ g. The approach is demonstrated using hierarchical linear models that include baseline time trends and treatment-by-time interactions. A simulation compares the performance of the proposed estimator to that of an alternative, and an application illustrates the model-fitting process.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>

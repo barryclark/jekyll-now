@@ -8,7 +8,8 @@ bibliography: [meta-references.bib]
 link-citations: true
 categories: []
 tags:
-  - effect sizes
+  - effect size
+  - standardized mean difference
   - meta-analysis
   - simulation
   - programming

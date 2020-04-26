@@ -7,9 +7,9 @@ slug: handmade-clubSandwich
 categories: []
 tags:
   - sandwiches
+  - robust variance estimation
   - econometrics
   - weighting
-  - instrumental-variables
 header:
   caption: ''
   image: ''

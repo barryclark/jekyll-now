@@ -7,8 +7,9 @@ slug: clubSandwich-for-CRVE-FE
 categories: []
 tags:
   - econometrics
+  - fixed effects
   - sandwiches
-  - R
+  - Rstats
 header:
   caption: ''
   image: ''

@@ -5,12 +5,28 @@
     <link>/tags/behavioral-observation/</link>
       <atom:link href="/tags/behavioral-observation/index.xml" rel="self" type="application/rss+xml" />
     <description>behavioral observation</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>behavioral observation</title>
       <link>/tags/behavioral-observation/</link>
     </image>
+    
+    <item>
+      <title>An examination of measurement procedures and characteristics of baseline outcome data in single-case research</title>
+      <link>/publication/measurement-procedures-and-baseline-outcomes/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/measurement-procedures-and-baseline-outcomes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures</title>
+      <link>/publication/procedural-sensitivities-of-scd-effect-sizes/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/procedural-sensitivities-of-scd-effect-sizes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Easily simulate thousands of single-case designs</title>
@@ -108,6 +124,22 @@ If you, dear reader, would be interested in helping to pursue any of these direc
     </item>
     
     <item>
+      <title>Measurement-comparable effect sizes for single-case studies of free-operant behavior</title>
+      <link>/publication/measurement-comparable-effect-sizes/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/measurement-comparable-effect-sizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Four methods for analyzing partial interval recording data, with application to single-case research</title>
+      <link>/publication/four-methods-for-pir/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/four-methods-for-pir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>New article: Four methods for analyzing PIR data</title>
       <link>/four-methods-for-analyzing-pir-data/</link>
       <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
@@ -154,6 +186,14 @@ If you, dear reader, would be interested in helping to pursue any of these direc
 &lt;/ul&gt;
 &lt;p&gt;We can work with data in whatever format you might be willing to provide–whether that means photo-copied, paper observation forms, an Excel workbook, or a bunch of ProCoderDV data files. In return for sharing data, we will share with you the examples that we develop based on the data, which could also provide a basis for further collaboration. If you are interested in seeing your data analyzed and helping to advance this methodological work, please &lt;a href=&#34;/index.html#contact&#34;&gt;contact me&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Alternating renewal process models for behavioral observation: Simulation methods and validity implications</title>
+      <link>/publication/arp-for-behavioral-observation/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/arp-for-behavioral-observation/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -482,6 +522,16 @@ library(ARPobservation)&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;&lt;p&gt;Programming information matrices for hierarchical linear modeling. The Fisher information plays a pivotal role in hierarchical linear models, both as an approximate estimates of parameter uncertainty and as a key component of small-sample hypothesis tests such as those of Kenward and Roger (1997,2009). The goals of this project are to: create an R package for constructing analytic information matrices for HLM models estimated with the well-known nlme package; also add functions for the revised Kenward &amp;amp; Roger hypothesis tests; and evaluate the performance of different information matrices (expected, observed, and average) for calculating degrees-of-freedom adjustments in the context of effect size estimation. This project could be appropriate for a quantitative methods student or a statistics student who has strong programming skills and wants to 1) learn more about the statistical guts of HLM estimation and 2) level-up on their R programming by designing a publishable package.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;A discrete-time Markov chain model for partial interval recording data. Partial interval recording is a commonly used method for recording direct observations of human behavior. Data generated by this method is problematic because, as typically analyzed, it yields upwardly biased measures of prevalence (the proportion of time that a behavior occurs). This shortcoming can be addressed by modeling the data using a discrete-time Markov chain and using maximum likelihood methods to estimate parameters corresponding directly to prevalence and incidence (the frequency with which new behaviors occur). The goals of this project are to create an R package implementing maximum likelihood estimation (and possibly other methods) for partial interval recording data and evaluate this estimation approach using asymptotic theory and simulation. This project could be appropriate for an advanced quantitative methods student or statistics student who is interested in learning about Markov chain models and who has strong programming skills.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Operationally comparable effect sizes for meta-analysis of single-case research</title>
+      <link>/publication/operationally-comparable-effect-sizes/</link>
+      <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/operationally-comparable-effect-sizes/</guid>
+      <description>&lt;p&gt;This thesis studies quantitative methods for summarizing and synthesizing single-case studies, a class of research designs for evaluating the effects of interventions through repeated measurement of individuals. Despite long-standing interest in meta-analytic synthesis of single-case research, there remains a lack of consensus about appropriate methods, even about the most basic question of what effect size metrics are useful and appropriate. I argue that operational comparability, or invariance to heterogeneous operational procedures, is crucial property for an effect size metric. I then consider two problems with operational comparability that arise in single-case research. The first problem is to find effect sizes that can be applied across studies that use different research designs, such as single-case designs and two-group randomized experiments. The second problem is to find effect sizes that can be applied across studies that use varied operations for measuring the same construct. To address each of these problems, I propose structural models that capture essential features of multiple relevant operations (either design-related operations or measurement-related operations). I then use these structural models to precisely define target effect size parameters and to consider identification issues and estimation strategies.&lt;/p&gt;
+&lt;p&gt;Chapter 1 defines operational comparability and situates the concept within the broad methodological concerns of meta-analysis, then reviews relevant features of single-case research and previously proposed effect sizes. Chapter 2 describes an abstract set of modeling criteria for constructing design-comparable effect sizes. Chapters 3 applies the general criteria to the case of standardized mean differences and proposes an effect size estimator based on restricted maximum likelihood. Chapter 4 presents several applications of the proposed models and methods. Chapter 5 proposes measurement-comparability model and defines effect size measures for use in studies of free-operant behavior, one of the most common classes of outcomes in single-case research. Chapter 6 extends the proposed effect size models to incorporate more complex features, including time trends and serial dependence, and studies a method of estimating those models through a combination of marginal quasi-likelihood and Gaussian pseudo-likelihood estimating equations. Chapter 7 collects various further extensions, areas for further research, and concluding thoughts.&lt;/p&gt;
 </description>
     </item>
     

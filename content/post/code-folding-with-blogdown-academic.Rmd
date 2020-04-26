@@ -9,6 +9,7 @@ codefolding_nobutton: true
 categories: []
 tags:
   - programming
+  - Rstats
 header:
   caption: ''
   image: ''

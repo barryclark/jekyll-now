@@ -246,7 +246,7 @@
   <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2018-11-02T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2019-03-09T00:00:00&#43;00:00">
   
 
   
@@ -652,10 +652,46 @@
     
     
     <div>
+      <h2><a href="/clustered-and-interacted/" >A handmade clubSandwich for multi-site trials</a></h2>
+      <div class="article-style">
+        
+          library(tidyverse)data(STAR, package = &quot;AER&quot;)STAR_urban &lt;-STAR %&gt;%filter(# limit to urban/inner city schoolsschoolk %in% c(&quot;urban&quot;,&quot;inner-city&quot;),# limit to complete outcome data!is.na(readk), !is.na(mathk)) %&gt;%droplevels() %&gt;%# collapse control conditionsmutate(stark = fct_collapse(stark, regular = c(&quot;regular&quot;,&quot;regular+aide&quot;))) %&gt;%# calculate inverse-propensity weightgroup_by(schoolidk) %&gt;%mutate(n = n(),nT = sum(stark==&quot;small&quot;),wt = ifelse(stark==&quot;small&quot;, n / nT, n / (n - nT))) %&gt;%select(schoolidk, stark, readk, mathk, wt)STAR_summary &lt;- STAR_urban %&gt;%count(schoolidk)STAR_urban %&gt;%group_by(schoolidk, stark) %&gt;%summarise(n = n(),wt = sum(wt)) %&gt;%mutate(n = sum(n)) %&gt;%spread(stark, wt)## # A tibble: 23 x 4## # Groups: schoolidk [23]## schoolidk n regular small## &lt;fct&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;## 1 2 52 52 52## 2 9 120 120 120## 3 10 51 51 51## 4 14 34 34 34## 5 15 55 55 55## 6 16 105 105 105## 7 18 79 79 79## 8 19 99 99 99## 9 22 129 129 129## 10 26 49 49 49## # .
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/handmade-clubsandwich/" >A handmade clubSandwich for multi-site trials</a></h2>
+      <div class="article-style">
+        
+          I’m just back from the Society for Research on Educational Effectiveness meetings, where I presented work on small-sample corrections for cluster-robust variance estimators in two-stage least squares models, which I’ve implemented in the clubSandwich R package.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
       <h2><a href="/publication/rve-in-fixed-effects-models/" >Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models</a></h2>
       <div class="article-style">
         
           In panel data models and other regressions with unobserved effects, fixed effects estimation is often paired with cluster-robust variance estimation (CRVE) to account for heteroscedasticity and un-modeled dependence among the errors. Although …
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/clubsandwich-at-rug/" >clubSandwich at the Austin R User Group Meetup</a></h2>
+      <div class="article-style">
+        
+          Last night I attended a joint meetup between the Austin R User Group and R Ladies Austin, which was great fun. The evening featured several lightning talks on a range of topics, from breaking into data science to network visualization to starting your own blog.
         
       </div>
     </div>
@@ -676,6 +712,30 @@
     
     
     <div>
+      <h2><a href="/imputing-covariance-matrices-for-multi-variate-meta-analysis/" >Imputing covariance matrices for meta-analysis of correlated effects</a></h2>
+      <div class="article-style">
+        
+          In many systematic reviews, it is common for eligible studies to contribute effect size estimates from not just one, but multiple relevant outcome measures, for a common sample of participants.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/software/clubsandwich/" >clubSandwich</a></h2>
+      <div class="article-style">
+        
+          Cluster-robust variance estimation
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
       <h2><a href="/publication/rve-for-meta-regression/" >Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression</a></h2>
       <div class="article-style">
         
@@ -684,8 +744,41 @@
       </div>
     </div>
   
+    
+    
+    
+    <div>
+      <h2><a href="/clubsandwich-for-rve-meta-analysis/" >The clubSandwich package for meta-analysis with RVE</a></h2>
+      <div class="article-style">
+        
+          I’ve recently been working on small-sample correction methods for hypothesis tests in linear regression models with cluster-robust variance estimation. My colleague (and grad-schoolmate) Beth Tipton has developed small-sample adjustments for t-tests (of single regression coefficients) in the context of meta-regression models with robust variance estimation, and together we have developed methods for multiple-contrast hypothesis tests.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/robust-meta-analysis-3/" >Meta-sandwich with extra mustard</a></h2>
+      <div class="article-style">
+        
+          In an earlier post about sandwich standard errors for multi-variate meta-analysis, I mentioned that Beth Tipton has recently proposed small-sample corrections for the covariance estimators and t-tests, based on the bias-reduced linearization approach of McCaffrey, Bell, and Botts (2001).
+        
+      </div>
+    </div>
+  
 
   
+<nav>
+  <ul class="pagination justify-content-center">
+    
+    
+    <li class="page-item"><a class="page-link" href="/tags/robust-variance-estimation/page/2/">&raquo;</a></li>
+    
+  </ul>
+</nav>
+
 
 </div>
 

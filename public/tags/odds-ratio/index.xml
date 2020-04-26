@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>odds ratio | James E. Pustejovsky</title>
+    <link>/tags/odds-ratio/</link>
+      <atom:link href="/tags/odds-ratio/index.xml" rel="self" type="application/rss+xml" />
+    <description>odds ratio</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sun, 26 May 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>odds ratio</title>
+      <link>/tags/odds-ratio/</link>
+    </image>
+    
+    <item>
+      <title>Converting from odds ratios to standardized mean differences: What to do with logistic regression coefficients?</title>
+      <link>/converting-odds-ratios-to-standardized-mean-differences/</link>
+      <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
+      <guid>/converting-odds-ratios-to-standardized-mean-differences/</guid>
+      <description>
+
+
+&lt;p&gt;One of the central problems in research synthesis is that studies use a variety of different types of outcome measures to assess a construct. This is the main reason that meta-analysis often uses standardized, scale-free effect sizes (such as standardized mean differences), so that findings from studies that use different measures can be combined and contrasted on a common metric. In syntheses of education research (as well as other fields), a further issue that sometimes arises is that some included studies might report effects on a dichotomous outcome, while others report effects (of the same intervention, say) but using a continuous outcome measure.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;logit &amp;lt;- function(x) log(x) - log(1 - x)
+
+simulate_OR_to_SMD &amp;lt;- function(p0, SMD, r, n0, n1) {
+  
+  # simulate data
+  trt &amp;lt;- c(rep(0, n0), rep(1, n1))
+  Y &amp;lt;- rlogis(n0 + n1, location = logit(p0) + trt * SMD * pi / sqrt(3))
+  X &amp;lt;- r * (Y - trt * SMD) * sqrt(3) / pi + rnorm(n0 + n1, sd = sqrt(1 - r^2))
+  B &amp;lt;- Y &amp;gt; 0
+
+  # calculate LORs
+  logit_fit &amp;lt;- glm(B ~ trt + X, family = &amp;quot;binomial&amp;quot;)
+  LOR_marginal &amp;lt;- as.numeric(diff(logit(tapply(B, trt, mean))))
+  LOR_logit &amp;lt;- coef(logit_fit)[[&amp;quot;trt&amp;quot;]]
+  LORs &amp;lt;- c(LOR_marginal, LOR_logit)
+  
+  # convert to SMDs
+  SMDs &amp;lt;- LORs * sqrt(3) / pi
+  
+  data.frame(type = c(&amp;quot;marginal&amp;quot;,&amp;quot;conditional&amp;quot;), LOR_est = LORs, SMD_est = SMDs)
+} 
+
+simulate_OR_to_SMD(p0 = 0.6, SMD = 0.4, r = 0.7, n0 = 10000, n1 = 10000)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          type   LOR_est   SMD_est
+## 1    marginal 0.7468089 0.4117373
+## 2 conditional 0.8711806 0.4803070&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Attaching packages ------------------------------------------------------ tidyverse 1.2.1 --&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## v ggplot2 3.3.0     v purrr   0.3.3
+## v tibble  3.0.0     v dplyr   0.8.3
+## v tidyr   1.0.0     v stringr 1.4.0
+## v readr   1.3.1     v forcats 0.4.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Conflicts --------------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;params &amp;lt;- 
+  list(
+    p0 = seq(0.2, 0.8, 0.2),
+    SMD = seq(0.2, 0.8, 0.2),
+    r = seq(0, 0.9, 0.1)
+  ) %&amp;gt;%
+  cross_df()
+
+SMDs &amp;lt;- 
+  params %&amp;gt;%
+  mutate(res = pmap(., simulate_OR_to_SMD, n0 = 50000, n1 = 50000)) %&amp;gt;%
+  unnest() %&amp;gt;%
+  mutate(RB = SMD_est / SMD)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: `cols` is now required.
+## Please use `cols = c(res)`&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(SMDs, aes(r, RB, color = type)) + 
+  geom_point() + geom_line() + 
+  facet_grid(SMD ~ p0, labeller = &amp;quot;label_both&amp;quot;) + 
+  theme_light()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Converting-odds-ratios-to-standardized-mean-differences_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

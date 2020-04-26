@@ -808,7 +808,7 @@ V_sorted &lt;- lapply(Mares, function(g) getVarCov(gls_sorted, individual = g))<
 ##     attr(result, &quot;group.levels&quot;) &lt;- names(obj$groups)
 ##     result
 ## }
-## &lt;bytecode: 0x000000001bc24f78&gt;
+## &lt;bytecode: 0x000000001bc39d00&gt;
 ## &lt;environment: namespace:nlme&gt;</code></pre>
 <p>The issue is in the 4th line of the body. <code>getVarCov.gls</code> assumes that <code>varWeights(obj$modelStruct$varStruct)</code> is sorted in the same order as <code>obj$groups</code>, which is not necessarily true. Instead, <code>varWeights</code> seem to return the weights sorted according to the grouping variable. For this example, that means that the <code>varWeights</code> will not depend on the order in which the groups are sorted.</p>
 <pre class="r"><code>identical(gls_raw$groups, gls_sorted$groups)</code></pre>
@@ -974,9 +974,13 @@ all.equal(V_raw, V_sorted)</code></pre>
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/r/">R</a>
+  <a class="badge badge-light" href="/tags/rstats/">Rstats</a>
   
   <a class="badge badge-light" href="/tags/programming/">programming</a>
+  
+  <a class="badge badge-light" href="/tags/hierarchical-models/">hierarchical models</a>
+  
+  <a class="badge badge-light" href="/tags/nlme/">nlme</a>
   
 </div>
 
@@ -1114,13 +1118,13 @@ all.equal(V_raw, V_sorted)</code></pre>
       
       <li><a href="/assigning-after-dplyr/">Assigning after dplyr</a></li>
       
-      <li><a href="/software/arpobservation/">ARPobservation</a></li>
+      <li><a href="/software/scdhlm/">scdhlm</a></li>
       
-      <li><a href="/software/clubsandwich/">clubSandwich</a></li>
+      <li><a href="/parallel-r-on-tacc-update/">Update: parallel R on the TACC</a></li>
       
-      <li><a href="/rdd-interactions-again/">Estimating average effects in regression discontinuities with covariate interactions</a></li>
+      <li><a href="/parallel-r-on-tacc/">Running R in parallel on the TACC</a></li>
       
-      <li><a href="/rdd-interactions/">Regression discontinuities with covariate interactions in the rdd package</a></li>
+      <li><a href="/software/singlecasees/">SingleCaseES</a></li>
       
     </ul>
   </div>

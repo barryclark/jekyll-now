@@ -6,8 +6,10 @@ date: '2016-11-07'
 slug: Bug-in-nlme-with-fixed-sigma
 categories: []
 tags:
-  - R
+  - Rstats
   - programming
+  - hierarchical models
+  - nlme
 header:
   caption: ''
   image: ''

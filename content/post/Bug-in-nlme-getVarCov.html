@@ -6,8 +6,10 @@ date: '2016-08-10'
 slug: bug-in-nlme-getVarCov
 categories: []
 tags:
-  - R
+  - Rstats
   - programming
+  - hierarchical models
+  - nlme
 header:
   caption: ''
   image: ''
@@ -66,7 +68,7 @@ V_sorted &lt;- lapply(Mares, function(g) getVarCov(gls_sorted, individual = g))<
 ##     attr(result, &quot;group.levels&quot;) &lt;- names(obj$groups)
 ##     result
 ## }
-## &lt;bytecode: 0x000000001bc24f78&gt;
+## &lt;bytecode: 0x000000001bc39d00&gt;
 ## &lt;environment: namespace:nlme&gt;</code></pre>
 <p>The issue is in the 4th line of the body. <code>getVarCov.gls</code> assumes that <code>varWeights(obj$modelStruct$varStruct)</code> is sorted in the same order as <code>obj$groups</code>, which is not necessarily true. Instead, <code>varWeights</code> seem to return the weights sorted according to the grouping variable. For this example, that means that the <code>varWeights</code> will not depend on the order in which the groups are sorted.</p>
 <pre class="r"><code>identical(gls_raw$groups, gls_sorted$groups)</code></pre>

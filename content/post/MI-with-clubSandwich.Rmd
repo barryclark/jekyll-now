@@ -8,7 +8,8 @@ categories: []
 tags:
   - missing data
   - sandwiches
-  - R
+  - small-sample
+  - Rstats
 header:
   caption: ''
   image: ''

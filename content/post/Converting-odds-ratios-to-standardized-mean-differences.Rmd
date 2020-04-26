@@ -8,8 +8,8 @@ categories: []
 draft: true
 tags:
   - meta-analysis
-  - odds-ratios
-  - effect sizes
+  - odds ratio
+  - effect size
 header:
   caption: ''
   image: ''

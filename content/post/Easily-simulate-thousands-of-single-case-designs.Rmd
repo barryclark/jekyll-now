@@ -8,7 +8,7 @@ categories: []
 tags:
   - behavioral observation
   - simulation
-  - single-case research
+  - single-case design
 header:
   caption: ''
   image: ''

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hierarchical model | James E. Pustejovsky</title>
+    <link>/tags/hierarchical-model/</link>
+      <atom:link href="/tags/hierarchical-model/index.xml" rel="self" type="application/rss+xml" />
+    <description>hierarchical model</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>hierarchical model</title>
+      <link>/tags/hierarchical-model/</link>
+    </image>
+    
+    <item>
+      <title>New article: Design-comparable effect sizes in multiple baseline designs: A general modeling framework</title>
+      <link>/design-comparable-effect-sizes-in-multiple-baseline-designs/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/design-comparable-effect-sizes-in-multiple-baseline-designs/</guid>
+      <description>
+
+
+&lt;p&gt;My article with Larry Hedges and Will Shadish, titled “Design-comparable effect sizes in multiple baseline designs: A general modeling framework” has been accepted at Journal of Educational and Behavioral Statistics. The abstract is below. Here’s the article at &lt;a href=&#34;http://doi.org/10.3102/1076998614547577&#34;&gt;the journal website&lt;/a&gt;. &lt;a href=&#34;/files/Effect-sizes-in-multiple-baseline-designs-JEBS.pdf&#34;&gt;Postprint&lt;/a&gt; and &lt;a href=&#34;/files/Effect-sizes-in-multiple-baseline-designs-Simulation-results.pdf&#34;&gt;supporting materials&lt;/a&gt; are available. An R package that implements the proposed methods is &lt;a href=&#34;/getting-started-with-scdhlm/&#34;&gt;available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In single-case research, the multiple baseline design is a widely used approach for evaluating the effects of interventions on individuals. Multiple baseline designs involve repeated measurement of outcomes over time and the controlled introduction of a treatment at different times for different individuals. This article outlines a general approach for defining effect sizes in multiple baseline designs that are directly comparable to the standardized mean difference from a between-subjects randomized experiment. The target, design-comparable effect size parameter can be estimated using restricted maximum likelihood together with a small-sample correction analogous to Hedges’ g. The approach is demonstrated using hierarchical linear models that include baseline time trends and treatment-by-time interactions. A simulation compares the performance of the proposed estimator to that of an alternative, and an application illustrates the model-fitting process.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

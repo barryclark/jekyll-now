@@ -8,7 +8,8 @@ categories: []
 tags:
   - meta-analysis
   - sandwiches
-  - R
+  - Rstats
+  - robust variance estimation
 header:
   caption: ''
   image: ''

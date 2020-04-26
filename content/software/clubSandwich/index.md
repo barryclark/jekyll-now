@@ -8,8 +8,9 @@ image:
   focal_point: Smart
 summary: Cluster-robust variance estimation
 tags:
-- sandwich
-- R
+- sandwiches
+- robust variance estimation
+- Rstats
 - Stata
 title: clubSandwich
 authors:

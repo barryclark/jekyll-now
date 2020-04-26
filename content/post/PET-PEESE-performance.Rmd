@@ -8,6 +8,8 @@ categories: []
 tags:
   - meta-analysis
   - publication bias
+  - standardized mean difference
+  - simulation
 header:
   caption: ''
   image: ''

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>instrumental-variables | James E. Pustejovsky</title>
+    <title>instrumental variables | James E. Pustejovsky</title>
     <link>/tags/instrumental-variables/</link>
       <atom:link href="/tags/instrumental-variables/index.xml" rel="self" type="application/rss+xml" />
-    <description>instrumental-variables</description>
+    <description>instrumental variables</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>instrumental-variables</title>
+      <title>instrumental variables</title>
       <link>/tags/instrumental-variables/</link>
     </image>
     
@@ -165,178 +165,6 @@ school_summaries %&amp;gt;%
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The CR0 and CR2 standard errors match the results from &lt;code&gt;coef_test&lt;/code&gt;, as do the Satterthwaite degrees of freedom. Note that the degrees of freedom are equal to 19 in this case, a bit less than &lt;span class=&#34;math inline&#34;&gt;\(J - 1 = 22\)&lt;/span&gt; due to variation in the weight assigned to each school.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A handmade clubSandwich for multi-site trials</title>
-      <link>/handmade-clubsandwich/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/handmade-clubsandwich/</guid>
-      <description>
-
-
-&lt;p&gt;I’m just back from the &lt;a href=&#34;https://sree.org/conferences/2019s&#34;&gt;Society for Research on Educational Effectiveness&lt;/a&gt; meetings, where I presented work on small-sample corrections for cluster-robust variance estimators in two-stage least squares models, which I’ve implemented in the &lt;a href=&#34;/software/clubSandwich/&#34;&gt;&lt;code&gt;clubSandwich&lt;/code&gt;&lt;/a&gt; R package. &lt;a href=&#34;/files/SREE-2019-2SLS-CRVE.html&#34;&gt;Here’s my presentation&lt;/a&gt;. So I had “clubSandwich” estimators on the brain when a colleague asked me about whether the methods were implemented in SAS.&lt;/p&gt;
-&lt;p&gt;The short answer is “no.”&lt;/p&gt;
-&lt;p&gt;The moderately longer answer is “not unless we can find funding to pay someone who knows how to program properly in SAS.” However, for the specific model that my colleague was interested in, it turns out that the small-sample corrections implemented in clubSandwich can be expressed in closed form, and they’re simple enough that they could easily be hand-calculated. I’ll sketch out the calculations in the remainder of this post.&lt;/p&gt;
-&lt;div id=&#34;a-multi-site-trial&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;A multi-site trial&lt;/h2&gt;
-&lt;p&gt;Consider a multi-site trial conducted across &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; sites, which we take as a sample from a larger super-population of sites. Each site consists of &lt;span class=&#34;math inline&#34;&gt;\(n_j\)&lt;/span&gt; units, of which &lt;span class=&#34;math inline&#34;&gt;\(p_j n_j\)&lt;/span&gt; are randomized to treatment and the remainder &lt;span class=&#34;math inline&#34;&gt;\((1 - p_j) n_j\)&lt;/span&gt; are randomized to control. For each unit &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; in each site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, we have an outcome &lt;span class=&#34;math inline&#34;&gt;\(y_{ij}\)&lt;/span&gt; and a treatment indicator &lt;span class=&#34;math inline&#34;&gt;\(t_{ij}\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;A conventional approach to estimating the overall average impact in this setting is to use a model with a treatment indicator and fixed effects for each site:
-&lt;span class=&#34;math display&#34;&gt;\[
-y_{ij} = \beta_j + \delta t_{ij} + e_{ij}
-\]&lt;/span&gt;
-and then to cluster the standard errors by site. Clustering by site makes sense here if (and only if) we’re interested in generalizing to the super-population of sites.&lt;/p&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta_j\)&lt;/span&gt; denote the impact estimate from site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, calculated as the difference in means between treated and untreated units at site &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;:
-&lt;span class=&#34;math display&#34;&gt;\[
-\hat\delta_j = \frac{1}{n_j p_j} \left(\sum_{i=1}^{n_j} t_{ij} y_{ij}\right) - \frac{1}{n_j (1 - p_j)} \left(\sum_{i=1}^{n_j} (1 - t_{ij}) y_{ij}\right).
-\]&lt;/span&gt;
-for &lt;span class=&#34;math inline&#34;&gt;\(j = 1,..,J\)&lt;/span&gt;. The overall impact estimate here is a precision-weighted average of the site-specific impacts:
-&lt;span class=&#34;math display&#34;&gt;\[
-\hat\delta = \frac{1}{W} \sum_{j=1}^J w_j \hat\delta_j,
-\]&lt;/span&gt;
-where &lt;span class=&#34;math inline&#34;&gt;\(w_j = n_j p_j (1 - p_j)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(W = \sum_j w_j\)&lt;/span&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;sandwich-estimators&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Sandwich estimators&lt;/h2&gt;
-&lt;p&gt;The conventional clustered variance estimator (or sandwich estimator) for &lt;span class=&#34;math inline&#34;&gt;\(\hat\delta\)&lt;/span&gt; is a simple function of the (weighted) sample variance of the site-specific effects. It can be calculated directly as:
-&lt;span class=&#34;math display&#34;&gt;\[
-V^{CR0} = \frac{1}{W^2} \sum_{j=1}^J w_j^2 \left(\hat\delta_j - \hat\delta\right)^2.
-\]&lt;/span&gt;
-Under a conventional random effects model for the &lt;span class=&#34;math inline&#34;&gt;\(\delta_j\)&lt;/span&gt;s, this estimator has a downward bias in finite samples.&lt;/p&gt;
-&lt;p&gt;The clubSandwich variance estimator here uses an estimator for the sample variance of site-specific effects that is unbiased under a certain working model. It is only slightly more complicated to calculate:
-&lt;span class=&#34;math display&#34;&gt;\[
-V^{CR2} = \frac{1}{W^2} \sum_{j=1}^J \frac{w_j^2 \left(\hat\delta_j - \hat\delta\right)^2}{1 - w_j / W}.
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The other difference between conventional methods and the clubSandwich approach is in the reference distribution used to calculate hypothesis tests and confidence intervals. The conventional approach uses a standard normal reference distribution (i.e., a z-test) that is asymptotically justified. The clubSandwich approach uses a &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; reference distribution, with degrees of freedom estimated using a Satterthwaite approximation. In the present context, the degrees of freedom are a little bit ugly but still not hard to calculate:
-&lt;span class=&#34;math display&#34;&gt;\[
-df = \left[\sum_{j=1}^J \frac{w_j^2}{(W - w_j)^2} - \frac{2}{W}\sum_{j=1}^J \frac{w_j^3}{(W - w_j)^2} + \frac{1}{W^2} \left(\sum_{j=1}^J \frac{w_j^2}{W - w_j} \right)^2 \right]^{-1}.
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;In the special case that all sites are of the same size and use a constant treatment allocation, the weights become equal. The clubSandwich variance estimator then reduces to
-&lt;span class=&#34;math display&#34;&gt;\[
-V^{CR2} = \frac{S_\delta^2}{J} \qquad \text{where} \qquad S_\delta^2 = \frac{1}{J - 1}\sum_{j=1}^J \left(\hat\delta_j - \hat\delta\right)^2,
-\]&lt;/span&gt;
-and the degrees of freedom reduce to simply &lt;span class=&#34;math inline&#34;&gt;\(df = J - 1\)&lt;/span&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;tennessee-star&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Tennessee STAR&lt;/h2&gt;
-&lt;p&gt;Here is a worked example of the calculations (using R of course, because my SAS programming skills atrophied years ago). I’ll use data from the famous Tennessee STAR class size experiment, which was a multi-site trial in which students were randomized to small or regular-sized kindergarten classes within each of several dozen schools. To make the small-sample issues more pronounced, I’ll limit the sample to urban schools and look at impacts of small class-size on reading and math scores at the end of kindergarten. STAR was actually a three-arm trial—the third arm being a regular-sized class but with an additional teacher aide. For simplicity (and following convention), I’ll collapse the teacher-aide condition and the regular-sized class condition into a single arm and also limit the sample to students with complete outcome data on both tests.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
-data(STAR, package = &amp;quot;AER&amp;quot;)
-
-STAR_urban &amp;lt;-
-  STAR %&amp;gt;%
-  filter(
-    # limit to urban/inner city schools
-    schoolk %in% c(&amp;quot;urban&amp;quot;,&amp;quot;inner-city&amp;quot;),
-    # limit to complete outcome data
-    !is.na(readk), !is.na(mathk)
-  ) %&amp;gt;%
-  droplevels() %&amp;gt;%
-  # collapse control conditions
-  mutate(stark = fct_collapse(stark, regular = c(&amp;quot;regular&amp;quot;,&amp;quot;regular+aide&amp;quot;))) %&amp;gt;%
-  select(schoolidk, stark, readk, mathk)
-
-STAR_summary &amp;lt;- 
-  STAR_urban %&amp;gt;%
-  count(schoolidk)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After these exclusions, the data include a total of 1810 students from 23 schools, ranging in size from 34 to 134 students.&lt;/p&gt;
-&lt;p&gt;For starters, let’s get the average impacts using a seeming unrelated regression specification, with both conventional and clubSandwich standard errors.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(clubSandwich)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;clubSandwich&amp;#39;:
-##   method    from    
-##   bread.mlm sandwich&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;STAR_fit &amp;lt;- lm(cbind(readk, mathk) ~ 0 + schoolidk + stark, data = STAR_urban)
-
-# conventional SEs
-CR0 &amp;lt;- 
-  coef_test(STAR_fit, vcov = &amp;quot;CR0&amp;quot;, 
-            cluster = STAR_urban$schoolidk, 
-            test = &amp;quot;z&amp;quot;,
-            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
-
-CR0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat p-val (z) Sig.
-## 1 readk:starksmall     6.16 2.73   2.25    0.0241    *
-## 2 mathk:starksmall    12.13 4.79   2.53    0.0113    *&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# clubSandwich SEs
-CR2 &amp;lt;- 
-  coef_test(STAR_fit, vcov = &amp;quot;CR2&amp;quot;, 
-            cluster = STAR_urban$schoolidk, 
-            coefs = c(&amp;quot;readk:starksmall&amp;quot;,&amp;quot;mathk:starksmall&amp;quot;))
-
-CR2&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##              Coef. Estimate   SE t-stat d.f. p-val (Satt) Sig.
-## 1 readk:starksmall     6.16 2.81   2.19   19       0.0409    *
-## 2 mathk:starksmall    12.13 4.92   2.47   19       0.0234    *&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now I’ll do it “by hand”—or rather, with a bit of &lt;code&gt;dplyr&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# summary statistics by site
-
-school_summaries &amp;lt;- 
-  STAR_urban %&amp;gt;%
-  group_by(schoolidk, stark) %&amp;gt;%
-  summarise(
-    # means by arm and site
-    readk = mean(readk),
-    mathk = mean(mathk),
-    n_arm = n()
-  ) %&amp;gt;%
-  summarise(
-    # impact estimates by site
-    readk = diff(readk),
-    mathk = diff(mathk),
-    n = sum(n_arm),
-    p = n_arm[stark==&amp;quot;small&amp;quot;] / n
-  ) %&amp;gt;%
-  mutate(w = n * p * (1 - p))
-
-# overall impacts
-
-school_summaries %&amp;gt;%
-  gather(&amp;quot;subject&amp;quot;,&amp;quot;impact_j&amp;quot;, readk, mathk) %&amp;gt;%
-  group_by(subject) %&amp;gt;%
-  summarise(
-    impact = weighted.mean(impact_j, w = w),
-    SE_CR0 = sqrt(sum(w^2 * (impact_j - impact)^2) / sum(w)^2),
-    SE_CR2 = sqrt(sum(w^2 * (impact_j - impact)^2 / (1 - w / sum(w))) / sum(w)^2),
-    df_CR2 = 1 / (sum(w^2 / (sum(w) - w)^2) - 
-                    2 * sum(w^3 / (sum(w) - w)^2) / sum(w) + 
-                    sum(w^2 / (sum(w) - w))^2 / sum(w)^2)
-  ) %&amp;gt;%
-  knitr::kable(digits = 2)&lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;left&#34;&gt;subject&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;impact&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;SE_CR0&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;SE_CR2&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;df_CR2&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;mathk&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;12.13&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;4.79&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;4.92&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;18.99&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;readk&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;6.16&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2.73&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2.81&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;18.99&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;The CR0 and CR2 standard errors match the results from &lt;code&gt;coef_test&lt;/code&gt;, as do the Satterthwaite degrees of freedom. Note that the degrees of freedom are equal to 19 in this case, a bit less than &lt;span class=&#34;math inline&#34;&gt;\(J - 1 = 22\)&lt;/span&gt; due to variation in the weight assigned to each school.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;other-weights&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Other weights&lt;/h2&gt;
-&lt;p&gt;Some analysts might not like the approach of using precision-weighted average of the site-specific impacts, as I’ve examined here. Instead, one might choose to weight the site-specific effects by the site-specific sample sizes, or to use some sort of random effects weighting that allows for random heterogeneity across sites. The formulas given above for conventional and clubSandwich clustered variance estimators apply directly to other weighting schemes too. Just substitute your favorite weights in place of &lt;span class=&#34;math inline&#34;&gt;\(w_j\)&lt;/span&gt;. When doing so, the clubSandwich estimator will be exactly unbiased under the assumption that your preferred weighting scheme corresponds to inverse-variance weighting, and the Satterthwaite degrees of freedom approximation will be derived under the same model.&lt;/p&gt;
-&lt;/div&gt;
 </description>
     </item>
     

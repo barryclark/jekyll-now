@@ -61,6 +61,20 @@
     </item>
     
     <item>
+      <title>New tutorial paper on BC-SMD effect sizes</title>
+      <link>/scdhlm-tutorial/</link>
+      <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/scdhlm-tutorial/</guid>
+      <description>
+
+
+&lt;p&gt;I’m pleased to announce that the &lt;a href=&#34;https://www.campbellcollaboration.org/&#34;&gt;Campbell Collaboration&lt;/a&gt; has just published a new discussion paper that I wrote with my colleagues Jeff Valentine and Emily Tanner-Smith about &lt;a href=&#34;https://campbellcollaboration.org/library/effect-sizes-single-case-designs-campbell-discussion-paper-1.html&#34;&gt;between-case standardized mean difference effect sizes for single-case designs&lt;/a&gt;.
+The paper provides a relatively non-technical introduction to BC-SMD effect sizes and a tutorial on how to use the &lt;a href=&#34;https://jepusto.shinyapps.io/scdhlm/&#34;&gt;scdhlm web-app&lt;/a&gt; for calculating estimates of the BC-SMD for user-provided data.
+If you have any questions or feedback about the app, please feel free to contact me!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>scdhlm</title>
       <link>/software/scdhlm/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -83,11 +97,68 @@
     </item>
     
     <item>
+      <title>Getting started with scdhlm</title>
+      <link>/getting-started-with-scdhlm/</link>
+      <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/getting-started-with-scdhlm/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;strong&gt;UPDATED 10/2/2016 after posting the package to CRAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Here are step-by-step instructions on how to download and install the scdhlm package for R. You’ll need to have a &lt;a href=&#34;http://cran.us.r-project.org/&#34;&gt;copy of R installed&lt;/a&gt;. There are two ways to do the installation: through the Comprehensive R Archive Network (CRAN) or from the source code on Github. I describe each approach in turn.&lt;/p&gt;
+&lt;div id=&#34;option-1-via-cran&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Option 1: Via CRAN&lt;/h3&gt;
+&lt;p&gt;Go via CRAN to install the most recent stable version of the package. Type the following commands at the R prompt:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;scdhlm&amp;quot;)
+library(scdhlm)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;option-2-via-github&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Option 2: Via Github&lt;/h3&gt;
+&lt;p&gt;Go via Github to get the latest development version of the package. For this option, you will first need to install the devtools package:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;devtools&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you have successfully installed this package, type the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(devtools)
+install_github(&amp;quot;jepusto/scdhlm&amp;quot;)
+library(scdhlm)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;further-instructions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Further instructions&lt;/h3&gt;
+&lt;p&gt;You’ll only need to do the installation once. Once you’ve got the package installed, type the following in order to access the package within an R session: &lt;code&gt;library(scdhlm)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To open the package documentation, type &lt;code&gt;package?scdhlm&lt;/code&gt;. To access the documentation for an individual function in this package, just type &lt;code&gt;?&lt;/code&gt; followed by the name of the function. For instance, one of the main functions in the package is called &lt;code&gt;g_REML&lt;/code&gt;; to access its documentation, type &lt;code&gt;?g_REML&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;web-interface-for-calculating-effect-sizes&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;web-interface for calculating effect sizes&lt;/h3&gt;
+&lt;p&gt;The package includes an interactive app (written with &lt;code&gt;shiny&lt;/code&gt;) for calculating design-comparable standardized mean differences. To run this app on your computer, you will first need to &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34;&gt;install RStudio&lt;/a&gt; (if you don’t already have it). Then ensure that you have the &lt;code&gt;shiny&lt;/code&gt;, &lt;code&gt;markdown&lt;/code&gt;, and &lt;code&gt;ggplot2&lt;/code&gt; packages installed by running the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;shiny&amp;quot;)
+install.packages(&amp;quot;markdown&amp;quot;)
+install.packages(&amp;quot;ggplot2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, open the app by typing the following at the prompt within RStudio:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(scdhlm)
+shine_scd()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The app should now open in your web browser.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Design-comparable effect sizes in multiple baseline designs: A general modeling framework</title>
       <link>/publication/design-comparable-effect-sizes/</link>
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
       <guid>/publication/design-comparable-effect-sizes/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>New article: Design-comparable effect sizes in multiple baseline designs: A general modeling framework</title>
+      <link>/design-comparable-effect-sizes-in-multiple-baseline-designs/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/design-comparable-effect-sizes-in-multiple-baseline-designs/</guid>
+      <description>
+
+
+&lt;p&gt;My article with Larry Hedges and Will Shadish, titled “Design-comparable effect sizes in multiple baseline designs: A general modeling framework” has been accepted at Journal of Educational and Behavioral Statistics. The abstract is below. Here’s the article at &lt;a href=&#34;http://doi.org/10.3102/1076998614547577&#34;&gt;the journal website&lt;/a&gt;. &lt;a href=&#34;/files/Effect-sizes-in-multiple-baseline-designs-JEBS.pdf&#34;&gt;Postprint&lt;/a&gt; and &lt;a href=&#34;/files/Effect-sizes-in-multiple-baseline-designs-Simulation-results.pdf&#34;&gt;supporting materials&lt;/a&gt; are available. An R package that implements the proposed methods is &lt;a href=&#34;/getting-started-with-scdhlm/&#34;&gt;available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In single-case research, the multiple baseline design is a widely used approach for evaluating the effects of interventions on individuals. Multiple baseline designs involve repeated measurement of outcomes over time and the controlled introduction of a treatment at different times for different individuals. This article outlines a general approach for defining effect sizes in multiple baseline designs that are directly comparable to the standardized mean difference from a between-subjects randomized experiment. The target, design-comparable effect size parameter can be estimated using restricted maximum likelihood together with a small-sample correction analogous to Hedges’ g. The approach is demonstrated using hierarchical linear models that include baseline time trends and treatment-by-time interactions. A simulation compares the performance of the proposed estimator to that of an alternative, and an application illustrates the model-fitting process.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
