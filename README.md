@@ -1,5 +1,7 @@
 # Holochain Open-Dev Blog
 
+Visit the blog: https://holochain-open-dev.github.io.
+
 This is a small blog intended for holochain developers, from the holochain open-dev community. 
 
 This is not maintained by the holochain core team, but rather experienced hApps developers that want to share best practices with one another.

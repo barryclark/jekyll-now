@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+We are members of the holochain open-source development community. You can reach to us via our [github organization](https://github.com/holochain-open-dev) or mainly in the [Holochain Forum](https://forum.holochain.org).
 
-### More Information
+### Contributors
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+- @guillemcordoba: [Github](https://github.com/guillemcordoba), [Forum](https://forum.holochain.org/u/guillemcordoba/)
