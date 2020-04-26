@@ -11,6 +11,17 @@ description: Holochain developer blog, by and for the holochain community
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/61094618?s=400&u=b3564f8222c4c79d9829aa0ae24ecc552fa91cab&v=4
 
+tag_page: "/tags/"
+
+nav:
+  Blog:
+    - "/"
+    - { Tags: "/tags/" }
+  About:
+    - "/about/"
+  Github Project:
+    - "http://github.com/holochain-open-dev"
+
 #
 # Flags below are optional
 #
@@ -26,11 +37,10 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
-
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -66,7 +76,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: "highlight"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
