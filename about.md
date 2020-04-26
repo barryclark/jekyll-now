@@ -9,3 +9,4 @@ We are members of the holochain open-source development community. You can reach
 ### Contributors
 
 - @guillemcordoba: [Github](https://github.com/guillemcordoba), [Forum](https://forum.holochain.org/u/guillemcordoba/), [Email](mailto:guillem.cordoba@gmail.com)
+- @ronin-of-beyonder (tats): [github](https://github.com/ronin-of-beyonder), [Forum](https://forum.holochain.org/u/tats_sato/activity), [Email](mailto:tatsuya.g.sato@yumeville.com)
