@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implicit vs Explicit links in Holochain
-tags: concepts building-blocks links
+tags: [concepts, building-blocks, links]
 ---
 
 **TLDR**: explicit links use `link_entries(base, target...)` to explicitely define relationships, while with implicit links one entry contains the address of another entry and we don't use any hdk api.
