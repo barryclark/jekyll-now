@@ -49,10 +49,6 @@ url: https://holochain-open-dev.github.io/blog
 baseurl: "/blog"
 
 tag_page: "/tags"
-collections:
-  tags:
-    output: true
-    permalink: tags/:path/
 
 #
 # !! You don't need to change any of the configuration flags below !!
