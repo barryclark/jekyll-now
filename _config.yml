@@ -20,7 +20,6 @@ footer-links:
   dribbble:
   email:
   facebook:
-  discourse: forum.holochain.org
   flickr:
   github: holochain-open-dev/holochain-open-dev.github.io
   instagram:
@@ -48,7 +47,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "/blog"
 
 #
 # !! You don't need to change any of the configuration flags below !!
