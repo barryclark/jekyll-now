@@ -321,6 +321,7 @@ footer {
   color: $theme-color;
   font-size: 90%;
   &:before {
+    font-family: $font-font-awesome;
     content: "\f02b";
     padding-right: .5em;
   }
