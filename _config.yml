@@ -32,7 +32,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: holochain-open-dev/holochain-open-dev.github.io
+  github: holochain-open-dev/blog
   instagram:
   linkedin:
   pinterest:
@@ -51,7 +51,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://holochain-open-dev.github.io/blog
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
