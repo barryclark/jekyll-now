@@ -1,8 +1,15 @@
+---
+layout: post
+title: F# | Word Search Kata Summary
+categories: "FSharp kata"
+---
+
 # Word search kata summary - first real F# kata
 
-Recently I decided to start learning F#. In this blog post I will try to desribe my journey with a first bigger kata made by me. It was supposed to be a small and sumple kata, but I ended up with a much bigger and more complex code than I was expecting. At the beginning I'd like to thank Bizmonger (Scott Nimrod) for helping me with this exercise. Without him I wouldn't be able to do this whole thing. And here's a link to his [twitter](https://twitter.com/Bizmonger). Drop him a follow, he's a really helpful guy :)
+Recently I decided to start learning F#. In this blog post I will try to desribe my journey with a first bigger kata made by me. It was supposed to be a small and simple kata, but I ended up with a much bigger and more complex code than I was expecting. At the beginning I'd like to thank Bizmonger (Scott Nimrod) for helping me with this exercise. Without him I wouldn't be able to do this whole thing. And here's a link to his [twitter](https://twitter.com/Bizmonger), drop him a follow, he's a really helpful guy :)
 
 The whole exercise took me about 20 hours, distibuted over about two weeks.
+Repository with code can be found on my GitHub, [here](https://github.com/pzelmanski/WordSearch2).
 
 ---
 
