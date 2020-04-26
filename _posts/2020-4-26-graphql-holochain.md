@@ -3,11 +3,12 @@ layout: post
 title: How to build a GraphQl - Holochain middleware
 tags: [graphql, frontend]
 ---
-## Introduction
+Welcome to the blog post on How to build a GraphQl - Holochain middleware! In a sense, the primitives and building blocks that holochain offers to us inherently makes data stored in a DHT behave like a graph. In this graph we have nodes (entries) that can be related to one another through links (either [implicit or explicit](/implicit-explicit-links)).
 
-Welcome to the blog post on How to build a GraphQl - Holochain middleware! In a sense, the primitives and building blocks that holochain offers to us inherently makes data stored in a DHT behave like a graph. In this graph we have nodes (entries) that can be related to one another through links (either [implicit or explicit](/implicit-explicit-links)). <br/><br/>
-[Graphql](https://graphql.org/) allows us to retrieve these entries from DHT(and source chain) in a much more natural way. Graphql also allows us to retrieve only the necessary fields we need, and create queries that retrieve entries that are implicitly or expliciltly linked to an entry with few lines of code! Many of Happs (Holochain application) currently in development use Graphql (Particularly [Apollo Graphql](https://www.apollographql.com/)) as a middleware that acts as a pipeline from holochain to the frontend.<br/><br/>
-In this guide, we will be walking you through on how to build a simple graphql queries and mutation with corresponding CRUD functions on holochain side. Lastly, we will connect the two and test if the graphql queries and mutations we made work as intended! We will be using Apollo Graphql for this walkthrough! <br/><br/>
+[Graphql](https://graphql.org/) allows us to retrieve these entries from DHT(and source chain) in a much more natural way. Graphql also allows us to retrieve only the necessary fields we need, and create queries that retrieve entries that are implicitly or expliciltly linked to an entry with few lines of code! Many of Happs (Holochain application) currently in development use Graphql (Particularly [Apollo Graphql](https://www.apollographql.com/)) as a middleware that acts as a pipeline from holochain to the frontend.
+
+In this guide, we will be walking you through on how to build a simple graphql queries and mutation with corresponding CRUD functions on holochain side. Lastly, we will connect the two and test if the graphql queries and mutations we made work as intended! We will be using Apollo Graphql for this walkthrough!
+
 We assume that the readers have a basic understanding of Graphql, Apollo Graphql, and Holochain. If not, you can always check the corresponding documentation to learn more about it and then dive into this post! Below are some of the useful documentation available for graphql and holochain! Make sure as well that you have [installed holochain](https://developer.holochain.org/docs/install/) locally before we get started!
 
 * [Holochain](https://developer.holochain.org/docs/tutorials/coreconcepts/)
@@ -37,7 +38,8 @@ Now that we have the holochain project, add a zome that we will be working on!
 ```nix
 hc generate zomes/gql rust-proc
 ```
-Now, get inside the zomes/gql/src/code directory and open it in your preferred source-code editor and open the lib.rs file. <br/><br/>
+Now, get inside the zomes/gql/src/code directory and open it in your preferred source-code editor and open the lib.rs file.
+
 we're not gonna change much of the already generated code in order to focus on this blog's topic. The generated code already has a create and read zome call, so let's add the update and delete zome call.
 ```rust
     #[zome_fn("hc_public")]
@@ -64,6 +66,6 @@ Now that we have added the corresponding zome calls to our zome, let's compile t
 ```nix
 hc package
 ```
-Now that we built the holochain side, let's now connect it to the Graphql side!
+Now that we built the holochain side, let's now connect it to the Graphql!
 
 ### Making queries
