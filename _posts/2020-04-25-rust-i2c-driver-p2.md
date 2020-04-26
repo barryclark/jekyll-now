@@ -3,14 +3,14 @@ layout: post
 title: Writing embedded drivers in Rust isn't that hard. Part 2
 ---
 
-After we implemented a small program that is able to read the ID field of the AT42QT1070, we will now
+Now that we implemented a small program that is able to read the ID field of the AT42QT1070, we will
 first write a small library that generalizes this implementation to every HAL that provides an I2C
 implementation and then expand upon that implementation with more and more functionality.
 
 ## A simple driver structure
 First off we define a simple `Driver` struct which just contains a generic I2C object as well as
 an `Error` enum that, for now, only has the `I2cError` variant which in turn contains a generic type,
-this is because different HALs do of course return different I2C errors and we wanna be prepared for all of them.
+this is because different HALs do of course return different I2C errors and we want to be prepared for all of them.
 ```rust
 #![no_std]
 use embedded_hal::blocking::i2c::WriteRead;
@@ -24,7 +24,7 @@ pub struct Driver<I2C> {
     i2c: I2C,
 }
 ```
-As our I2C struct is purely generic as of now our implementation will of course have to constrain it
+As our I2C struct is purely generic, as of now our implementation will of course have to constrain it
 to implementing the `WriteRead` trait, this is quite simply done with:
 ```rust
 impl<I2C, I2cError> Driver<I2C>
@@ -66,7 +66,7 @@ fn get_id(&mut self) -> Result<u8, Error<I2cError>> {
      pub const ID_ADDR: u8 = 0;
  }
  ```
- However this piece of code will actually not work out:
+ However this piece of code will actually not work:
  ```
  error[E0277]: the trait bound `Error<I2cError>: core::convert::From<I2cError>` is not satisfied
   --> src/lib.rs:38:70
@@ -85,7 +85,7 @@ impl<E> From<E> for Error<E> {
    }
 }
 ```
-This piece of code will now of course convert every error that we try to return as our `Error` enum
+Of course now this piece of code will convert every error that we try to return as our `Error` enum
 into an `I2cError` variant, that means we have to be careful if we should include more third party
 libraries later as these errors too will be converted into `I2cError`, however as long as we don't do
 that this solution is actually really convenient.
@@ -133,13 +133,13 @@ use bitfield::bitfield;
 bitfield!{
     pub struct Status(u8);
     impl Debug;
-    calibrate, _: 7;
-    overflow, _: 6;
-    touch, _: 0;
+    pub calibrate, _: 7;
+    pub overflow, _: 6;
+    pub touch, _: 0;
 }
 ```
 Now where we got our struct down we can write another simple method that fetches the status for us,
-and puts it into the struct so we can use it to for example find out wether the pads on the PCB have
+and puts it into the struct so we can use it to, for example, find out wether the pads on the PCB have
 been touched yet using the touch bit.
 ```rust
 pub fn get_status(&mut self) -> Result<Status, Error<I2cError>> {
@@ -156,10 +156,10 @@ mod chip {
     pub const STATUS_ADDR: u8 = 2;
 }
 ```
-So everything that's missing now is a routine that performs the calibration write before polling the
+So all that is missing now is a routine that performs the calibration write before polling the
 status register until the calibration is done and we can start reading actual values!
 
-Before we write this implementation though we have to add another constraint on the generic I2C
+Before we write this implementation though, we have to add another constraint on the generic I2C
 parameter as we are only supposed to write a non zero value into the calibrate register but not
 actually read a response, hence our implementation looks as follows:
 ```rust
@@ -190,7 +190,6 @@ mod chip {
     pub const STATUS_ADDR: u8 = 2;
     pub const CALIBRATE_ADDR: u8 = 56;
 }
-
 ```
 ## Read the touch values!
 This is actually surprisingly simple and similar to what we just did before, we just define another
@@ -224,11 +223,11 @@ mod chip {
     pub const CALIBRATE_ADDR: u8 = 56;
 }
 ```
-And...we are already done, quite simple once you got it down for the first time right?
+And...we are already done, quite simple once you got it down for the first time, right?
 
 ## A small example on the stm32l4
-In order to verify our blindly written implementation works we can come up with a simple example for
-the stm32l4 chip from last time. First of we will of course take over the big blob that initializes 
+In order to verify our blindly written implementation works, we can come up with a simple example for
+the stm32l4 chip from last time. First of all, we will, of course, take over the big blob that initializes
 our chip properly from last time:
 ```rust
 #![no_main]
@@ -270,8 +269,8 @@ On top of that we can now just use our driver:
 let mut driver = Driver::new(i2c).unwrap();
 driver.calibrate().unwrap();
 ```
-And now write a simple routine that checks wether the touch bit from the status register has been set
-yet (it indicates that one of the pads has been touched) and if it has read the key status register
+And now write a simple routine that checks wether the touch bit (which indicates that one of the pads has been touched) from the status register has been set
+yet and if it has read the key status register
 in order to find out which pad:
 ```rust
 loop {
@@ -302,11 +301,11 @@ we will be greeted with:
 (gdb) p all_pads
 $1 = [false, true, false, false, false, false, false]
 ```
-Which (according to the schematic) is the exact key I touched \o/.
+Which, according to the schematic, is the exact key we touched \o/.
 
 ## Conclusion
 The chip does have a few more settings such as the AKS groups and a few measurement sensitivity ones,
-however they will just require a few more register writes and thus not exactly add anything new to
+however they will just require a few more register writes and thus don't add anything new conceptually to
 what we learned in this 2 part series, hence I'll just implement them in private and publish the
-crate once I'm done (consider it as an exercise for the reader *wink*) . I hope you learned something reading this little series, if you have any
-feedback etc. for me you can just send it to the mail at the bottom of the web page.
+crate once I'm done (consider it as an exercise for the reader *wink*) . I hope you learned something reading this little series. If you have any
+feedback etc. for me you can just send it to the address at the bottom of the web page.
