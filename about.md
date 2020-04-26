@@ -8,4 +8,4 @@ We are members of the holochain open-source development community. You can reach
 
 ### Contributors
 
-- @guillemcordoba: [Github](https://github.com/guillemcordoba), [Forum](https://forum.holochain.org/u/guillemcordoba/)
+- @guillemcordoba: [Github](https://github.com/guillemcordoba), [Forum](https://forum.holochain.org/u/guillemcordoba/), [Email](mailto:guillem.cordoba@gmail.com)
