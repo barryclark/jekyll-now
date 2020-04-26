@@ -17,6 +17,6 @@ $$
 $$
 
 \begin{align}
-\int_{-\infty}^\infty f(x) dx &= 1 //
+\int_{-\infty}^\infty f(x) dx &= 1 \\
 P(A | S) &= \frac{P(A \cap S)}{P(S)} = \frac{P(S | A) P(A)}{P(S)}
 \end{align}
