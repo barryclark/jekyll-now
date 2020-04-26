@@ -6,7 +6,7 @@ tags: graphql frontend
 
 ## Why GraphQl?
 
-In a sense, the primitives and building blocks that holochain offers to us inherently makes data stored in a DHT behave like a graph. In this graph we have nodes (entries) that can be related to one another through links (either [implicit or explicit]()).
+In a sense, the primitives and building blocks that holochain offers to us inherently makes data stored in a DHT behave like a graph. In this graph we have nodes (entries) that can be related to one another through links (either [implicit or explicit](implicit-explicit-links)).
 
 ## Approach
 
