@@ -2,7 +2,7 @@
 layout: post
 title: How to build a GraphQl - Holochain middleware
 tags: [graphql, frontend]
-author: Tatsuya Sato, Guillem Córdoba 
+author: Tatsuya Sato and Guillem Córdoba 
 ---
 Welcome to the blog post on How to build a GraphQl - Holochain middleware! In a sense, the primitives and building blocks that holochain offers to us inherently makes data stored in a DHT behave like a graph. In this graph we have nodes (entries) that can be related to one another through links (either [implicit or explicit](/implicit-explicit-links)).
 
@@ -22,7 +22,7 @@ When developing integration layers between Apollo Client and holochain there are
 
 * **GraphQl schemas** define the graph of entities available for us to query. They can be thought of like contracts or interfaces between our frontend components and our backend services. Example: 
 
-``` gql
+```
 type Post {
     id: ID!
     content: String!
