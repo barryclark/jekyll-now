@@ -16,6 +16,11 @@ published: true
 Si quieres saber que es pipenv visita: [https://pipenv-es.readthedocs.io/es/latest/](https://pipenv-es.readthedocs.io/es/latest/)  
 
 # Cheatsheet
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
 | Comando | Descripción |
 | --- | ----------- |
 | pipenv install | Crea un nuevo entorno virtual si no existe. Crea un pipfile si no existe |
@@ -34,6 +39,7 @@ Si quieres saber que es pipenv visita: [https://pipenv-es.readthedocs.io/es/late
 | pipenv intall -c . | Descubre los requerimientos dentro de tu código |
 | pipenv --rm | Borra un entorno vitual |
 | pipenv --support | Para obtener la información detalla de pipenv en caso de problemas |
+{: .tablelines}
 
 # Others
 - pipenv carga ficheros .env de forma autómatica
