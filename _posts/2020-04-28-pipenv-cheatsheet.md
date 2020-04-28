@@ -15,6 +15,12 @@ published: true
 # ¿Qué es pipenv?
 Si quieres saber que es pipenv visita: [https://pipenv-es.readthedocs.io/es/latest/](https://pipenv-es.readthedocs.io/es/latest/)  
 
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |
+
 # Cheatsheet
 <style>
 .tablelines table, .tablelines td, .tablelines th {
