@@ -9,6 +9,7 @@ categories: blog
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
+<<<<<<< HEAD
 The easiest way to make your first post is to edit this one. Go into `/_posts/` and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/dvesti/jekyll) on GitHub.
 ```ruby
 def print_hi(name)
@@ -17,3 +18,4 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
+Это - простой путь, чтобы создать Ваше первое Сообщение -The easiest way to make your first post is to edit this one. Go into `/_posts/` and update the Hello World markdown file
