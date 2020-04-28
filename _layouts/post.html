@@ -4,9 +4,9 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-  {% if page.tags %}  
+  {% if page.tags %}
   {% for tag in page.tags %}
-    <a href="{{ site.baseurl }}{{ site.tag_page }}/{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+  <a href="{{ site.baseurl }}{{ site.tag_page }}/{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
   {% endfor %}
   {% endif %}
 
@@ -15,7 +15,7 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Written {% if page.author %}by {{page.author}}{% endif %} on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   {% include disqus.html %}
