@@ -52,7 +52,7 @@ Borra un entorno vitual
 Para obtener la información detalla de pipenv en caso de problemas
 
 
-# Others
+# Otras cosas a tener en cuenta
 - pipenv carga ficheros .env de forma autómatica
 - Si tienes muchos entornos y tienes que hacer activar y saltar entre ellos: https://github.com/gtalarico/pipenv-pipes
 - Alternativa a pipenv -> https://python-poetry.org/
