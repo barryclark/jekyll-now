@@ -5,11 +5,8 @@ tags: [graphql, frontend]
 author: Tatsuya Sato and Guillem Córdoba 
 ---
 Welcome to the blog post on How to build a GraphQl - Holochain middleware! In a sense, the primitives and building blocks that holochain offers to us inherently makes data stored in a DHT behave like a graph. In this graph we have nodes (entries) that can be related to one another through links (either [implicit or explicit](/implicit-explicit-links)).
-
 [Graphql](https://graphql.org/) allows us to retrieve these entries from DHT(and source chain) in a much more natural way. Graphql also allows us to retrieve only the necessary fields we need, and create queries that retrieve entries that are implicitly or expliciltly linked to an entry with few lines of code! Many of Happs (Holochain application) currently in development use Graphql (Particularly [Apollo Graphql](https://www.apollographql.com/)) as a middleware that acts as a pipeline from holochain to the frontend.
-
 In this guide, we will be walking you through on how to build a simple graphql queries and mutation with corresponding CRUD functions on holochain side. Lastly, we will connect the two and test if the graphql queries and mutations we made work as intended! We will be using Apollo Graphql for this walkthrough!
-
 We assume that the readers have a basic understanding of Graphql, Apollo Graphql, and Holochain. If not, you can always check the corresponding documentation to learn more about it and then dive into this post! Below are some of the useful documentation available for graphql and holochain! Make sure as well that you have [installed holochain](https://developer.holochain.org/docs/install/) locally before we get started!
 
 * [Holochain](https://developer.holochain.org/docs/tutorials/coreconcepts/)
@@ -22,13 +19,12 @@ When developing integration layers between Apollo Client and holochain there are
 
 * **GraphQl schemas** define the graph of entities available for us to query. They can be thought of like contracts or interfaces between our frontend components and our backend services. Example: 
 
-```
+``` 
 type Post {
     id: ID!
     content: String!
     author: Author!
 }
-
 type Author {
     id: ID!
     posts: [Post!]!
@@ -59,21 +55,20 @@ You can read more about schemas [here](https://graphql.org/learn/schema/) and ab
 ## Approach
 
 The approach we are going to take here to integrate Apollo Client and holochain **is the main one used by the holochain community and projects**. But, we should warn beforehand that it is **not how the apollo infrastructure is designed to work**. Luckily, all its components and building blocks are very flexible and interoperable, enough for us to benefit from them in the right approach.
-
 Briefly, the approach that the apollo infrastructure (and most GraphQl libraries) take by default is to declare schemas both on the backend and on the frontend, but only write the resolvers in the backend. This makes it possible for the frontend to only do one network request per query, querying all the data available in the graph that the component is interested in. Also, it makes the JS bundle lighter.
-
 The approach we are going to take is a different one: **we'll only write our graphql schemas and resolvers on the frontend side**. From the point of view of the components, the queries will look the same. But those queries will actually get resolved on the browser itself, and our resolvers will be calling holochain zome functions to fetch the appropriate data.
-
 These are some downsides and some upsides with this approach:
 
 ### Cons
-- Our JS bundle size is going to increase: see [this](https://bundlephobia.com/result?p=graphql@15.0.0) and [this](https://bundlephobia.com/result?p=graphql-tools@5.0.0).
-- A little bit of a performance hit: the use of `makeExecutableSchema`, which is normally done on the server is a little bit expensive on app load.
+
+* Our JS bundle size is going to increase: see [this](https://bundlephobia.com/result?p=graphql@15.0.0) and [this](https://bundlephobia.com/result?p=graphql-tools@5.0.0).
+* A little bit of a performance hit: the use of `makeExecutableSchema` , which is normally done on the server is a little bit expensive on app load.
 
 ### Pros:
-- Increase in flexibility, modularity, and reusability: it's much easier to dynamically stitch things together in the frontend side.
-- Our holochain app is going to include no graphql code, so it can be integrated with other frontend stacks.
-- We don't care that much about doing less network requests, since our backend is going to be run in localhost! (Not on holo though).
+
+* Increase in flexibility, modularity, and reusability: it's much easier to dynamically stitch things together in the frontend side.
+* Our holochain app is going to include no graphql code, so it can be integrated with other frontend stacks.
+* We don't care that much about doing less network requests, since our backend is going to be run in localhost! (Not on holo though).
 
 This approach can be though of as somewhat as an experiment (as almost anything done on hololand). When holo comes, it may need some tweaking to do less network requests. But, in any case, in the long-term future you should be able to reuse most of your functionality, at least as far as your schemas and data types go.
 
@@ -81,41 +76,35 @@ This approach can be though of as somewhat as an experiment (as almost anything 
 
 We are going to code a toy example, so that you are able to understand the basic dynamic and then adapt this for your use case. If possible, it's best to always have a cleary defined user stories to work from:
 
-- A user should be able to create a post
-- A user should be able to query all posts
-- A user should be able to query posts for an specific agent
+* A user should be able to create a post
+* A user should be able to query all posts
+* A user should be able to query posts for an specific agent
 
 ### Defining your schema
 
 In general, **defining your schema first can be a very good starting point**: it gives a clear contract between the frontend and the backend layers, and the returning data can be easily mocked. This way, different teams can work parallely on the different parts of your app and still be compatible afterwards.
-
 Here is our schema:
 
-```gql
+``` gql
 type Post {
     id: ID!
     content: String!
     author: Author!
 }
-
 type Author {
     id: ID!
     posts: [Post!]!
 }
-
 type Query {
     allPosts: [Post!]!
 }
-
 type Mutation {
     createPost(content: String!): ID!
 }
 ```
 
-As you can see, the example we have is very simple: we have **two basic types: `Post` and `Author`** (which represents agents). Here, the most important thing is that these two types are **related in a one-to-many relationship**: one post has one author, while one author has many posts. 
-
+As you can see, the example we have is very simple: we have **two basic types: `Post` and `Author` ** (which represents agents). Here, the most important thing is that these two types are **related in a one-to-many relationship**: one post has one author, while one author has many posts. 
 This relationship is very clearly expressed on the schema and **matches exactly what we are going to have in the DHT in form of links**. Given one post, we can navigate to its author, and given an author, we can navigate to all their posts. 
-
 It's important to note that the relationships expressed as requirements in the schema **will affect our holochain data structure**, and how many links we declare in it. In this example, the schema forces the holochain layer to add a link from the author's `agent_id` to every one of their posts: otherwise there would be no way of navigating the graph from one author to all their posts. This also applies to all queries available on the `Query` type. 
 
 ### Write the corresponding zome calls on Holochain
@@ -140,7 +129,6 @@ hc generate zomes/gql rust-proc
 ```
 
 Now, get inside the zomes/gql/src/code directory and open it in your preferred source-code editor and open the lib.rs file.
-
 we're not gonna change much of the already generated code in order to focus on this blog's topic. The generated code already has a create and read zome call, so let's add the update and delete zome call.
 
 ``` rust
@@ -177,5 +165,89 @@ hc package
 Now that we built the holochain side, let's now connect it to the Graphql!
 
 ### Writing your resolvers
+
+As we briefly said, resolvers are little functions that define how a type is resolved in graphql. They are very flexible and can call anything really, even return mocked data. In general, they have these properties:
+
+1. You can define a resolver for any field of any type in your schema. 
+2. The return data of each resolver should match the shape of result type defined in your schema.
+3. If there is no resolver defined for a field of a type, graphql will try to get the field with the same name from the JS object representing said type.
+4. The parameters received by any resolver are: `(parentObject, arguments, context, info)` . The `parentObject` represents the object of the type in which your field is defined.
+
+In our case, in general every resolver we write is going to **make a call to the holochain zome**. Then, it's going to **parse the data in the way that the apollo client expects it** to be, and return it. But, "how many resolvers should I write? And in which fields?", you may be asking. The answer is "depends", but as a general rule of thumb you don't have to write resolvers for those fields that match exactly the name of the same property your entry in holochain has. You essentially do have to write resolvers for everything else.
+Let's write two resolvers as an example: 
+
+* `allPosts` inside the `Query` type:
+
+``` js
+const allPostsResolver = {
+    Query: {
+        async allPosts(parent, args, context) {
+            // Get the callZome function from the context
+            const callZome = context.callZome;
+            // Get all posts addresses
+            const result = await callZome(
+                INSTANCE_NAME,
+                ZOME_NAME,
+                'get_all_posts'
+            )({});
+
+            const postAddresses = result.Ok;
+            // Parallely iterate through the list of addresses to call `get_post` for each address
+            const promises = postAddresses.map(async address => {
+                const post = await callZome(INSTANC_NAME, ZOME_NAME, 'get_post')({
+                    post_address: address
+                });
+                // Really important: prepare the object shape that ApolloClient expects
+                return {
+                    id: address,
+                    ...post
+                };
+            });
+            return Promise.all(promises);
+        }
+    }
+}
+```
+
+Pretty straightforward, right? The strategy that we used is not necessarily the best one: we could think about adding pagination, filtering, or other stuff.
+
+* `posts` inside the `Author` type:
+
+This resolver is specifying how to get all the posts for an author.
+
+``` js
+const authorPosts = {
+    Author: {
+        async posts(parent, args, { callZomme }) {
+            // Get the list of post addresses 
+            const result = await callZome(
+                INSTANCE_NAME,
+                ZOME_NAME,
+                'get_author_posts'
+            )({ agent_id: parent });
+
+            const postAddresses = result.Ok;
+            // Parallely iterate through the list of addresses to call `get_post` for each address
+            const promises = postAddresses.map(async address => {
+                const post = await callZome(INSTANC_NAME, ZOME_NAME, 'get_post')({
+                    post_address: address
+                });
+                // Really important: prepare the object shape that ApolloClient expects
+                return {
+                    id: address,
+                    ...post
+                };
+            });
+            return Promise.all(promises);
+        }
+    }
+};
+```
+
+These have been two basic examples of different patterns you'll most certainly need to use. From this, we recommend practicing with resolvers and how to write them to learn how to integrate your unique use case.
+
+You can see the full list of resolvers for the current example [here](https://github.com/guillemcordoba/holochain-graphql-demo/blob/master/ui/src/graphql/resolvers.js);
+
+### Putting it all together
 
 ### Making queries
