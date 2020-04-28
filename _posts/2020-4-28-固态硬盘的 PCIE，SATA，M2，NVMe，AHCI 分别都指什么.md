@@ -4,7 +4,7 @@ titiel: 固态硬盘的 PCIE，SATA，M2，NVMe，AHCI 分别都指什么？
 ---
 
 ##### M.2 SSD  
-##### SATA  
+##### SATA，两种意思，一种是SATA磁盘接口，它和M.2是并列的，没有交集；另一种是SATA协议，M.2有一些会用到SATA协议，有交集
 ##### PCI-E  
 ##### NVMe
 
