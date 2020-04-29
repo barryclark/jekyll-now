@@ -188,6 +188,21 @@ Let's write three resolvers as an example:
 * `allPosts` inside the `Query` type:
 
 ``` js
+
+/**
+ * Gets the post with the given id and returns it in an apollo client friendly shape 
+ */
+async function getPost(callZome, postId) {
+  const post = await callZome(INSTANCE_NAME, ZOME_NAME, 'get_post')({
+    post_address: postId
+  });
+  // Really important: prepare the object shape that ApolloClient expects
+  return {
+    id: postId,
+    ...post
+  };
+}
+
 const allPostsResolver = {
     Query: {
         async allPosts(parent, args, context) {
@@ -201,16 +216,7 @@ const allPostsResolver = {
             )({});
 
             // Parallely iterate through the list of addresses to call `get_post` for each address
-            const promises = postAddresses.map(async address => {
-                const post = await callZome(INSTANC_NAME, ZOME_NAME, 'get_post')({
-                    post_address: address
-                });
-                // Really important: prepare the object shape that ApolloClient expects
-                return {
-                    id: address,
-                    ...post
-                };
-            });
+            const promises = postAddresses.map(async address => getPost(callZome, address));
             return Promise.all(promises);
         }
     }
@@ -244,16 +250,7 @@ const authorPosts = {
             });
 
             // Parallely iterate through the list of addresses to call `get_post` for each address
-            const promises = postAddresses.map(async address => {
-                const post = await callZome(INSTANC_NAME, ZOME_NAME, 'get_post')({
-                    post_address: address
-                });
-                // Really important: prepare the object shape that ApolloClient expects
-                return {
-                    id: address,
-                    ...post
-                };
-            });
+            const promises = postAddresses.map(async address => getPost(callZome, address));
             return Promise.all(promises);
         }
     }
