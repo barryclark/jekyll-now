@@ -97,6 +97,7 @@ type Author {
 }
 type Query {
     allPosts: [Post!]!
+    post(id: ID!): Post!
 }
 type Mutation {
     createPost(content: String!): ID!
@@ -174,7 +175,8 @@ As we briefly said, resolvers are little functions that define how a type is res
 4. The parameters received by any resolver are: `(parentObject, arguments, context, info)` . The `parentObject` represents the object of the type in which your field is defined.
 
 In our case, in general every resolver we write is going to **make a call to the holochain zome**. Then, it's going to **parse the data in the way that the apollo client expects it** to be, and return it. But, "how many resolvers should I write? And in which fields?", you may be asking. The answer is "depends", but as a general rule of thumb you don't have to write resolvers for those fields that match exactly the name of the same property your entry in holochain has. You essentially do have to write resolvers for everything else.
-Let's write two resolvers as an example: 
+
+Let's write three resolvers as an example: 
 
 * `allPosts` inside the `Query` type:
 
@@ -209,7 +211,9 @@ const allPostsResolver = {
 }
 ```
 
-Pretty straightforward, right? The strategy that we used is not necessarily the best one: we could think about adding pagination, filtering, or other stuff.
+Pretty straightforward, right? The strategy that we used is not necessarily the best one: we could think about adding pagination, filtering, or other stuff. 
+
+The `post` field resolver inside the `Query` type is very similar to this one. In that case, we should get the requested post id from the `args` object and do a single `get_post` call to the holochain zome.
 
 * `posts` inside the `Author` type:
 
@@ -218,13 +222,17 @@ This resolver is specifying how to get all the posts for an author.
 ``` js
 const authorPosts = {
     Author: {
-        async posts(parent, args, { callZomme }) {
+        async posts(parent, args, {
+            callZome
+        }) {
             // Get the list of post addresses 
             const result = await callZome(
                 INSTANCE_NAME,
                 ZOME_NAME,
                 'get_author_posts'
-            )({ agent_id: parent });
+            )({
+                agent_id: parent
+            });
 
             const postAddresses = result.Ok;
             // Parallely iterate through the list of addresses to call `get_post` for each address
@@ -244,9 +252,25 @@ const authorPosts = {
 };
 ```
 
-These have been two basic examples of different patterns you'll most certainly need to use. From this, we recommend practicing with resolvers and how to write them to learn how to integrate your unique use case.
+* `author` inside the `Post` type: 
 
-You can see the full list of resolvers for the current example [here](https://github.com/guillemcordoba/holochain-graphql-demo/blob/master/ui/src/graphql/resolvers.js);
+This resolver is the simplest of all. Our backend posts already have an `author_address` field, but we need to tell apollo that our `author` field has to be resolved from that `author_address` . We don't have to return all the `Author` type here, since the `Author` type resolvers will take care of getting the `agent_id` of the author and querying the right data with it.
+
+``` js
+const postsResolvers = {
+    Post: {
+        author(parent) {
+            return parent.author_address;
+        }
+    }
+}
+```
+
+---
+
+These have been three basic examples of different patterns you'll most certainly need to use. From this, we recommend practicing with resolvers and how to write them to learn how to integrate your unique use case.
+
+You can see the full list of resolvers for the current example [here](https://github.com/guillemcordoba/holochain-graphql-demo/blob/master/ui/src/graphql/resolvers.js); 
 
 ### Putting it all together
 
