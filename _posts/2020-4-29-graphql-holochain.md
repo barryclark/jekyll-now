@@ -114,7 +114,7 @@ type Mutation {
 }
 ```
 
-As you can see, the example we have is very simple: we have **two basic types: `Post` and `Author` ** (which represents agents). Here, the most important thing is that these two types are **related in a one-to-many relationship**: one post has one author, while one author has many posts. 
+As you can see, the example we have is very simple: we have **two basic types: `Post` and `Author`** (which represents agents). Here, the most important thing is that these two types are **related in a one-to-many relationship**: one post has one author, while one author has many posts. 
 
 This relationship is very clearly expressed on the schema and **matches exactly what we are going to have in the DHT in form of links**. Given one post, we can navigate to its author, and given an author, we can navigate to all their posts. 
 
