@@ -133,37 +133,182 @@ cd dna
 ```
 
 Now that we have the holochain project, add a zome that we will be working on!
-
-``` nix
-hc generate zomes/gql rust-proc
+To check the code in its entirety, you can click [here](https://github.com/guillemcordoba/holochain-graphql-demo/blob/master/dna/zomes/blog/code/src/lib.rs) and follow this article together with the already written code!
+```nix
+hc generate zomes/blog rust-proc
 ```
 
-Now, get inside the zomes/gql/src/code directory and open it in your preferred source-code editor and open the lib.rs file.
-we're not gonna change much of the already generated code in order to focus on this blog's topic. The generated code already has a create and read zome call, so let's add the update and delete zome call.
+Let's update the generated code and add a Post entry and its corresponding zome calls!
+First, let's add some necessary modules into our zome.
+```rust
+  use hdk_proc_macros::zome;
++ use hdk::api::AGENT_ADDRESS;
++ use holochain_anchors::anchor;
+```
+As you probably already know, AGENT_ADDRESS is the address of the agent running the conductor and we will use this to link all posts authored by the agent as well as in the author_address field in Post struct. We will also use the holochain_anchors module to link all posts to an anchor we will create. For more information about how to use the holochain_anchor pattern, click [here](https://github.com/holochain/holochain-anchors).
 
-``` rust
-    #[zome_fn("hc_public")]
-    fn get_my_entry(address: Address) -> ZomeApiResult<Option<Entry>> {
-        hdk::get_entry(&address)
-    }
+Oh, and let's not forget to add the github repository of holochain_anchors in our cargo.toml file!
+Open the cargo.toml file located in the zomes/blog/code folder and add the holochain_anchor module like this under the [dependencies].
+```toml
+[dependencies]
++ holochain_anchors = {git="https://github.com/holochain/holochain_anchors",branch = "master" }
+```
+Now, let's change the name of the struct from MyEntry to Post. Let's also add the author_address field and timestamp to avoid hash collisions!
+```rust
+- pub struct MyEntry {
+-     content: String,
+- }
++ pub struct Post {
++     content: String,
++     author_address: Address,
++     timestamp: u64,
++ }
+```
+Next, we will implement some functionality to this Post struct to make our life easier!
+We will add a new() and entry() function. new() will return us a new Post struct and the
+entry() function will return as the Entry type which we can commit to the source chain and DHT.
+```rust
++ impl Post {
++     pub fn new(content: String, author_address: Address, timestamp: u64) -> Self {
++         Post {
++             content,
++             author_address,
++             timestamp,
++         }
++     }
++     pub fn entry(self) -> Entry {
++         Entry::App("post".into(), self.into())
++     }
++ }
+```
+Let's also change the name of the zome module.
+```rust
+- mod my_zome 
++ mod courses
+```
+Next up, let's delete the auto-generated entry definitions and add our own post entry definition and anchor definition to our zome! For anchor definition, we are just following the guide in the holochain-anchor repository so be sure to check them out! Our Post entry will have 2 links. One link is agent->posts so that we can get all the posts created by a certain agent. Another link is anchor->posts and this will allow us to get all the posts created and linked to the anchor we defined!
+```rust
+-    #[entry_def]
+-    fn my_entry_def() -> ValidatingEntryType {
+-        entry!(
+-            name: "my_entry",
+-            description: "this is a same entry defintion",
+-            sharing: Sharing::Public,
+-            validation_package: || {
+-                hdk::ValidationPackageDefinition::Entry
+-            },
+-            validation: | _validation_data: hdk::EntryValidationData<MyEntry>| {
+-                Ok(())
+-            }
+-        )
+-    }
++    #[entry_def]
++    fn post_entry_definition() -> ValidatingEntryType {
++        entry!(
++            name: "post",
++            description: "this is the post entry defintion",
++            sharing: Sharing::Public,
++            validation_package: || {
++                hdk::ValidationPackageDefinition::Entry
++            },
++            validation: | _validation_data: hdk::EntryValidationData<Post>| {
++                Ok(())
++            },
++            links: [
++                from!(
++                    holochain_anchors::ANCHOR_TYPE,
++                    link_type: "anchor->posts",
++                    validation_package: || {
++                        hdk::ValidationPackageDefinition::Entry
++                    },
++                    validation: | _validation_data: hdk::LinkValidationData | {
++                        Ok(())
++                    }
++                ),
++                from!(
++                    "%agent_id",
++                    link_type: "author->posts",
++                    validation_package: || {
++                        hdk::ValidationPackageDefinition::Entry
++                    },
++                    validation: | _validation_data: hdk::LinkValidationData | {
++                        Ok(())
++                    }
++                )
++            ]
++        )
++    }
++    #[entry_def]
++    fn anchor_definition() -> ValidatingEntryType {
++        holochain_anchors::anchor_definition()
++    }
+```
+As you can see, we are linking the post from the anchor(the link definition of anchor is patterned from [here](https://github.com/holochain/holochain-anchors)) and from the agent id.
 
-*   #[zome_fn("hc_public")]
-*   fn udpate_my_entry(
-*       entry_address: Address,
-*       content: String,
-*   ) -> ZomeApiResult<Address> {
-*       let mut my_entry: MyEntry = hdk::utils::get_as_type(address.clone())?;
-*       my_entry.content = content;
-*       hdk::update_entry(my_entry.entry(), &address)
-*   }
+Next, let's remove the auto generated zome calls and add our own necessary zome calls!
+```rust
+-    #[zome_fn("hc_public")]
+-    fn create_my_entry(entry: MyEntry) -> ZomeApiResult<Address> {
+-        let entry = Entry::App("my_entry".into(), entry.into());
+-        let address = hdk::commit_entry(&entry)?;
+-        Ok(address)
+-    }
+-
+-    #[zome_fn("hc_public")]
+-    fn get_my_entry(address: Address) -> ZomeApiResult<Option<Entry>> {
+-        hdk::get_entry(&address)
+-    }
+```
+After removing the auto generated zome calls, let's first add a create_post zome call.
+```rust
++    #[zome_fn("hc_public")]
++    fn create_post(content: String, timestamp: u64) -> ZomeApiResult<Address> {
++        let new_post_entry = Post::new(content, AGENT_ADDRESS.to_string().into(), timestamp).entry();
++        let new_post_address = hdk::commit_entry(&new_post_entry)?;
++        let anchor_address = anchor("post_anchor".into(), "posts".into())?;
++        hdk::link_entries(&anchor_address, &new_post_address, "anchor->posts", "")?;
++        hdk::link_entries(&AGENT_ADDRESS, &new_post_address, "author->posts", "")?;
++        Ok(new_post_address)
++    }
+```
+First, we are creating a new post entry by using the two functions we implmented for the Post struct.
+After we commit the newly created Post entry, we are linking the newly committed post to the anchor and to the agent address of the agent who created this new Post.
 
+Now that we have created a zome call for creating post, let's next create the necessary get calls for our post! We are creating 3 zome calls here. One for getting individual post entry, which takes the address of the post as its argument, another for getting all the posts linked to the anchor, and last a zome call for getting all the posts linked to the agent, which ofcourse will take the address of the agent as its argument!
+```rust
++    #[zome_fn("hc_public")]
++    fn get_post(post_address: Address) -> ZomeApiResult<Post> {
++        hdk::utils::get_as_type(post_address)
++    }
 +
++    #[zome_fn("hc_public")]
++    fn get_all_posts() -> ZomeApiResult<Vec<Address>> {
++        let addresses = hdk::get_links(
++            &anchor("post_anchor".into(), "posts".into())?, 
++            LinkMatch::Exactly("anchor->posts"),
++            LinkMatch::Any
++        )?.addresses();
++        Ok(addresses)
++    }
++
++    #[zome_fn("hc_public")]
++    fn get_author_posts(agent_id: Address) -> ZomeApiResult<Vec<Address>> {
++        let addresses = hdk::get_links(
++            &agent_id, 
++            LinkMatch::Exactly("author->posts"),
++            LinkMatch::Any
++        )?.addresses();
++        Ok(addresses)
++    }
+```
+As you can see, we are calling get_links() on both get_all_posts and get_author_posts with the base address being the anchor we created in create_post zome call and the agent address supplied in the argument of get_author_posts respectively.
 
-*   #[zome_fn("hc_public")]
-*   fn delete_my_entry(entry_address: Address) -> ZomeApiResult<Address> {
-*       hdk::remove_entry(&content_address)
-*   }
-
+Lastly, let's add a zome call for getting the agent address of the agent so that our graphql side can use it whenever needed!
+```rust
++    #[zome_fn("hc_public")]
++    fn get_agent_id() -> ZomeApiResult<Address> {
++        Ok(hdk::AGENT_ADDRESS.clone())
++    }
 ```
 
 Now that we have added the corresponding zome calls to our zome, let's compile the dna!
@@ -172,7 +317,8 @@ Now that we have added the corresponding zome calls to our zome, let's compile t
 hc package
 ```
 
-Now that we built the holochain side, let's now connect it to the Graphql!
+If you see the hash of the dna in your terminal, that means we have successfully compiled the dna!
+Now that we built the holochain side, let's now write the corresponding resolvers in Graphql!
 
 ### Writing your resolvers
 
