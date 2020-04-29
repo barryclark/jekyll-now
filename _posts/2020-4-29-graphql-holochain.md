@@ -284,9 +284,7 @@ Our last step to complete the setup is to pull everything together and initializ
 1. Create the connection to the holochain backend:
 
 ``` js
-import {
-    connect
-} from '@holochain/hc-web-client';
+import { connect } from '@holochain/hc-web-client';
 
 let connection = undefined;
 const HOST_URL = 'ws://localhost:8888';
@@ -336,12 +334,8 @@ As you can see, we are parsing the response just before returning the result, an
 2. Create the final `ApolloLink` from our resolvers and schema:
 
 ``` js
-import {
-    makeExecutableSchema
-} from 'graphql-tools';
-import {
-    SchemaLink
-} from 'apollo-link-schema';
+import { makeExecutableSchema } from 'graphql-tools';
+import { SchemaLink } from 'apollo-link-schema';
 
 export async function createSchemaLink() {
     // Get the callZome connection
@@ -396,9 +390,7 @@ This function can now be called from any different places in your app, and the `
 All right! Finally, we get to use all this infrastructure to develop components much faster. This is a simple example of how to query data from the `ApolloClient` instance:
 
 ``` js
-import {
-    gql
-} from 'apollo-boost';
+import { gql } from 'apollo-boost';
 
 const client = await getClient();
 
