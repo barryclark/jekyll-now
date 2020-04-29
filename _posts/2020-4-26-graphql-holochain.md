@@ -274,4 +274,64 @@ You can see the full list of resolvers for the current example [here](https://gi
 
 ### Putting it all together
 
+Our last step to complete the setup is to pull everything together and initialize the `ApolloClient` instance.
+
+1. Create the connection to the holochain backend:
+
+```js
+let connection = undefined;
+const HOST_URL = 'ws://localhost:8888';
+
+export async function getConnection() {
+  // return connection if already established
+  if (connection) return connection;
+
+  // establish a new websocket connection and expose callZome
+  const { callZome } = await connect({ url: HOST_URL });
+
+  return callZome;
+}
+```
+
+2. Create the final `ApolloLink` from our resolvers and schema:
+
+```js
+export async function createSchemaLink() {
+  // Get the callZome connection
+  const connection = await getConnection();
+
+  // Create an executable schema from the schema and resolvers
+  const schema = makeExecutableSchema({
+    typeDefs,
+    resolvers,
+  });
+
+  // Return a final link with our executable schema and the callZome inside the context
+  return new SchemaLink({ schema, context: { callZome: connection } });
+}
+```
+
+3. Initialize the `ApolloClient` instance:
+
+```js
+let client = undefined;
+
+export async function getClient() {
+  if (client) return client;
+
+  // Create our schema link
+  const link = await createSchemaLink();
+
+  // Initialize the apollo client
+  client = new ApolloClient({
+    cache: new InMemoryCache(),
+    connectToDevTools: true,
+    link
+  });
+  return client;
+}
+```
+
+This function can now be called from any different places in your app, and the `client` instance can be stored anywhere too.
+
 ### Making queries
