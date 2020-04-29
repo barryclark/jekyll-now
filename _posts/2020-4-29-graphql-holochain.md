@@ -141,22 +141,22 @@ To check the code in its entirety, you can click [here](https://github.com/guill
 hc generate zomes/blog rust-proc
 ```
 
-Let's update the generated code and add a Post entry and its corresponding zome calls!
+Let's update the generated code and add a `Post` entry and its corresponding zome calls!
 First, let's add some necessary modules into our zome.
 ```rust
   use hdk_proc_macros::zome;
 + use hdk::api::AGENT_ADDRESS;
 + use holochain_anchors::anchor;
 ```
-As you probably already know, AGENT_ADDRESS is the address of the agent running the conductor and we will use this to link all posts authored by the agent as well as in the author_address field in Post struct. We will also use the holochain_anchors module to link all posts to an anchor we will create. For more information about how to use the holochain_anchor pattern, click [here](https://github.com/holochain/holochain-anchors).
+As you probably already know, `AGENT_ADDRESS` is the address of the agent running the conductor and we will use this to link all posts authored by the agent as well as in the author_address field in `Post` struct. We will also use the `holochain_anchors` module to link all posts to an anchor we will create. For more information about how to use the `holochain_anchor` pattern, click [here](https://github.com/holochain/holochain-anchors).
 
-Oh, and let's not forget to add the github repository of holochain_anchors in our cargo.toml file!
-Open the cargo.toml file located in the zomes/blog/code folder and add the holochain_anchor module like this under the [dependencies].
+Oh, and let's not forget to add the github repository of `holochain_anchors` in our `cargo.toml` file!
+Open the `cargo.toml` file located in the zomes/blog/code folder and add the holochain_anchor module like this under the `[dependencies]`.
 ```toml
 [dependencies]
 + holochain_anchors = {git="https://github.com/holochain/holochain_anchors",branch = "master" }
 ```
-Now, let's change the name of the struct from MyEntry to Post. Let's also add the author_address field and timestamp to avoid hash collisions!
+Now, let's change the name of the struct from `MyEntry` to `Post`. Let's also add the `author_address` field and `timestamp` to avoid hash collisions!
 ```rust
 - pub struct MyEntry {
 -     content: String,
@@ -167,9 +167,9 @@ Now, let's change the name of the struct from MyEntry to Post. Let's also add th
 +     timestamp: u64,
 + }
 ```
-Next, we will implement some functionality to this Post struct to make our life easier!
-We will add a new() and entry() function. new() will return us a new Post struct and the
-entry() function will return as the Entry type which we can commit to the source chain and DHT.
+Next, we will implement some functionality to this `Post` struct to make our life easier!
+We will add a `new()` and `entry()` function. `new()` will return us a new `Post` struct and the
+`entry()` function will return as the `Entry` type which we can commit to the source chain and DHT.
 ```rust
 + impl Post {
 +     pub fn new(content: String, author_address: Address, timestamp: u64) -> Self {
@@ -189,7 +189,7 @@ Let's also change the name of the zome module.
 - mod my_zome 
 + mod courses
 ```
-Next up, let's delete the auto-generated entry definitions and add our own post entry definition and anchor definition to our zome! For anchor definition, we are just following the guide in the holochain-anchor repository so be sure to check them out! Our Post entry will have 2 links. One link is agent->posts so that we can get all the posts created by a certain agent. Another link is anchor->posts and this will allow us to get all the posts created and linked to the anchor we defined!
+Next up, let's delete the auto-generated entry definitions and add our own post entry definition and anchor definition to our zome! For anchor definition, we are just following the guide in the holochain-anchor repository so be sure to check them out! Our `Post` entry will have 2 links. One link is `agent->posts` so that we can get all the posts created by a certain agent. Another link is `anchor->posts` and this will allow us to get all the posts created and linked to the anchor we defined!
 ```rust
 -    #[entry_def]
 -    fn my_entry_def() -> ValidatingEntryType {
@@ -246,7 +246,7 @@ Next up, let's delete the auto-generated entry definitions and add our own post 
 +        holochain_anchors::anchor_definition()
 +    }
 ```
-As you can see, we are linking the post from the anchor(the link definition of anchor is patterned from [here](https://github.com/holochain/holochain-anchors)) and from the agent id.
+As you can see, we are linking the post from the anchor(the link definition of anchor is patterned from [here](https://github.com/holochain/holochain-anchors)) and from the agent address.
 
 Next, let's remove the auto generated zome calls and add our own necessary zome calls!
 ```rust
@@ -262,7 +262,7 @@ Next, let's remove the auto generated zome calls and add our own necessary zome 
 -        hdk::get_entry(&address)
 -    }
 ```
-After removing the auto generated zome calls, let's first add a create_post zome call.
+After removing the auto generated zome calls, let's first add a `create_post` zome call.
 ```rust
 +    #[zome_fn("hc_public")]
 +    fn create_post(content: String, timestamp: u64) -> ZomeApiResult<Address> {
@@ -274,8 +274,8 @@ After removing the auto generated zome calls, let's first add a create_post zome
 +        Ok(new_post_address)
 +    }
 ```
-First, we are creating a new post entry by using the two functions we implmented for the Post struct.
-After we commit the newly created Post entry, we are linking the newly committed post to the anchor and to the agent address of the agent who created this new Post.
+First, we are creating a new post entry by using the two functions we implmented for the `Post` struct.
+After we commit the newly created `Post` entry, we are linking the newly committed post to the anchor and to the agent address of the agent who created this new post.
 
 Now that we have created a zome call for creating post, let's next create the necessary get calls for our post! We are creating 3 zome calls here. One for getting individual post entry, which takes the address of the post as its argument, another for getting all the posts linked to the anchor, and last a zome call for getting all the posts linked to the agent, which ofcourse will take the address of the agent as its argument!
 ```rust
@@ -304,7 +304,7 @@ Now that we have created a zome call for creating post, let's next create the ne
 +        Ok(addresses)
 +    }
 ```
-As you can see, we are calling get_links() on both get_all_posts and get_author_posts with the base address being the anchor we created in create_post zome call and the agent address supplied in the argument of get_author_posts respectively.
+As you can see, we are calling `get_links()` on both `get_all_posts` and `get_author_posts` with the base address being the anchor we created in `create_post` zome call and the agent address supplied in the argument of `get_author_posts` respectively.
 
 Lastly, let's add a zome call for getting the agent address of the agent so that our graphql side can use it whenever needed!
 ```rust
