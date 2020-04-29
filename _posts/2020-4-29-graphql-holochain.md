@@ -181,12 +181,14 @@ Now that we built the holochain side, let's now connect it to the Graphql!
 
 As we briefly said, resolvers are little functions that define how a type is resolved in graphql. They are very flexible and can call anything really, even return mocked data. In general, they have these properties:
 
-1. You can define a resolver for any field of any type in your schema. 
-2. The return data of each resolver should match the shape of result type defined in your schema.
-3. If there is no resolver defined for a field of a type, graphql will try to get the field with the same name from the JS object representing said type.
+1. You can define a **resolver for any field of any type** in your schema. 
+2. The return data of each resolver **should match the shape of result type** defined in your schema.
+3. If there is no resolver defined for a field of a type, **graphql will try to get the field with the same name** from the JS object representing said type.
 4. The parameters received by any resolver are: `(parentObject, arguments, context, info)` . The `parentObject` represents the object of the type in which your field is defined.
 
-In our case, in general every resolver we write is going to **make a call to the holochain zome**. Then, it's going to **parse the data in the way that the apollo client expects it** to be, and return it. But, "how many resolvers should I write? And in which fields?", you may be asking. The answer is "depends", but as a general rule of thumb you don't have to write resolvers for those fields that match exactly the name of the same property your entry in holochain has. You essentially do have to write resolvers for everything else.
+In our case, in general every resolver we write is going to **make a call to the holochain zome**. Then, it's going to **parse the data in the way that the apollo client expects it** to be, and return it. 
+
+But, "how many resolvers should I write? And in which fields?", you may be asking. The answer is "depends", but as a general rule of thumb you don't have to write resolvers for those fields that match exactly the name of the same property your entry in holochain has. You essentially do have to write resolvers for everything else.
 
 Let's write three resolvers as an example: 
 
@@ -308,7 +310,7 @@ export async function getConnection() {
     // define connection and execute callZome function
     connection = (instance, zome, fnName) => async params => {
         console.log(
-`Calling zome function: ${instance}/${zome}/${fnName} with params` ,
+            `Calling zome function: ${instance}/${zome}/${fnName} ` ,
             params
         );
 
@@ -316,7 +318,7 @@ export async function getConnection() {
         const result = await callZome(instance, zome, fnName)(params);
 
         console.log(
-`Zome function ${instance}/${zome}/${fnName} with params returned` ,
+            `Zome function ${instance}/${zome}/${fnName} returned` ,
             result
         );
 
@@ -334,7 +336,7 @@ export async function getConnection() {
 }
 ```
 
-As you can see, we are parsing the response just before returning the result, and we are throwing a JS error from the possible holochain errors that can be returned. This will give us seamless integration with what `ApolloClient` expects.
+As you can see, we are parsing the response just before returning the result, and we are **throwing a JS error from the possible holochain errors** that can be returned. This will give us seamless integration with what `ApolloClient` expects.
 
 2. Create the final `ApolloLink` from our resolvers and schema:
 
@@ -365,10 +367,7 @@ export async function createSchemaLink() {
 3. Initialize the `ApolloClient` instance:
 
 ``` js
-import {
-    ApolloClient,
-    InMemoryCache
-} from 'apollo-boost';
+import { ApolloClient, InMemoryCache } from 'apollo-boost';
 
 let client = undefined;
 
