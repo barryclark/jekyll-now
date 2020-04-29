@@ -228,6 +228,9 @@ This resolver is specifying how to get all the posts for an author.
 ``` js
 const authorPosts = {
     Author: {
+        id(parent) {
+            return parent;
+        },
         async posts(parent, args, {
             callZome
         }) {
@@ -257,6 +260,8 @@ const authorPosts = {
 };
 ```
 
+Note the `id` field resolver: when we are querying the author type, we are going to have the `agent_id` hash, nothing else. So, by returning the parent inside the id resolver, we are telling our `ApolloClient` that an author type can be derived from a single string to an object with fields `id` (which is equal to the parent object) and `posts` which has its own complex resolver.
+
 * `author` inside the `Post` type: 
 
 This resolver is the simplest of all. Our backend posts already have an `author_address` field, but we need to tell apollo that our `author` field has to be resolved from that `author_address` . We don't have to return all the `Author` type here, since the `Author` type resolvers will take care of getting the `agent_id` of the author and querying the right data with it.
@@ -275,7 +280,7 @@ const postsResolvers = {
 
 These have been three basic examples of different patterns you'll most certainly need to use. From this, we recommend practicing with resolvers and how to write them to learn how to integrate your unique use case.
 
-You can see the full list of resolvers for the current example [here](https://github.com/guillemcordoba/holochain-graphql-demo/blob/master/ui/src/graphql/resolvers.js); 
+You can see the full list of resolvers for the current example [here](https://github.com/guillemcordoba/holochain-graphql-demo/blob/master/ui/src/graphql/resolvers.js).
 
 ### Putting it all together
 
