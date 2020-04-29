@@ -9,6 +9,9 @@ title: The Illustrated GPT-2 (Visualizing Transformer Language Models)
 <a href="https://news.ycombinator.com/item?id=20677411" class="hn-link">Hacker News (64 points, 3 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/cp8prq/p_the_illustrated_gpt2_visualizing_transformer/" class="">Reddit r/MachineLearning (219 points, 18 comments)</a>
 </span>
 
+<span class="discussion">Translations: <a href="https://habr.com/ru/post/490842/">Russian</a></span>
+
+
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/gpt2/openAI-GPT-2-3.png"/>

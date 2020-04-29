@@ -4,6 +4,9 @@ published: True
 title: A Visual Guide to Using BERT for the First Time
 ---
 
+
+<span class="discussion">Translations: <a href="https://habr.com/ru/post/498144/">Russian</a></span>
+
 <div class="img-div-any-width" markdown="0">
   <image src="/images/distilBERT/bert-distilbert-sentence-classification.png"/>
   <br />
