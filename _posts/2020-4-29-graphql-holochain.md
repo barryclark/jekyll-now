@@ -6,9 +6,9 @@ author: Tatsuya Sato and Guillem Córdoba
 ---
 Welcome to the blog post on How to build a GraphQl - Holochain middleware! In a sense, the primitives and building blocks that holochain offers to us inherently makes data stored in a DHT behave like a graph. In this graph we have nodes (entries) that can be related to one another through links (either [implicit or explicit](/blog/implicit-explicit-links)).
 
-[Graphql](https://graphql.org/) allows us to retrieve these entries from DHT(and source chain) in a much more natural way. Graphql also allows us to retrieve only the necessary fields we need, and create queries that retrieve entries that are implicitly or expliciltly linked to an entry with few lines of code! Many of Happs (Holochain application) currently in development use Graphql (particularly the [Apollo Graphql](https://www.apollographql.com/) infrastructure) as a middleware that acts as a pipeline from holochain to the frontend.
+[Graphql](https://graphql.org/) allows us to retrieve these entries from the DHT in a much more natural way. Graphql also allows us to retrieve only the necessary fields we need, and create queries that retrieve entries that are implicitly or expliciltly linked to an entry with few lines of code! Many of Happs (Holochain application) currently in development use Graphql (particularly the [Apollo Graphql](https://www.apollographql.com/) infrastructure) as a middleware that acts as a pipeline from holochain to the frontend.
 
-In this guide, we will be walking you through on how to build a simple graphql queries and mutation with corresponding CRUD functions on holochain side. Lastly, we will connect the two and test if the graphql queries and mutations we made work as intended! We will be using Apollo Graphql for this walkthrough!
+In this guide, we will be walking you through on how to build simple graphql queries and mutations with corresponding zome functions on tge holochain side. Lastly, we will connect the two and test if the graphql queries and mutations we made work as intended! We will be using `ApolloClient` for this walkthrough!
 
 We assume that the readers have a basic understanding of Graphql, Apollo Graphql, and Holochain. If not, you can always check the corresponding documentation to learn more about it and then dive into this post! Below are some of the useful documentation available for graphql and holochain! Make sure as well that you have [installed holochain](https://developer.holochain.org/docs/install/) locally before we get started!
 
@@ -92,6 +92,7 @@ Before beginning, we should install all the apollo necessary dependencies that m
 ### Defining your schema
 
 In general, **defining your schema first can be a very good starting point**: it gives a clear contract between the frontend and the backend layers, and the returning data can be easily mocked. This way, different teams can work parallely on the different parts of your app and still be compatible afterwards.
+
 Here is our schema:
 
 ``` gql
@@ -114,7 +115,9 @@ type Mutation {
 ```
 
 As you can see, the example we have is very simple: we have **two basic types: `Post` and `Author` ** (which represents agents). Here, the most important thing is that these two types are **related in a one-to-many relationship**: one post has one author, while one author has many posts. 
+
 This relationship is very clearly expressed on the schema and **matches exactly what we are going to have in the DHT in form of links**. Given one post, we can navigate to its author, and given an author, we can navigate to all their posts. 
+
 It's important to note that the relationships expressed as requirements in the schema **will affect our holochain data structure**, and how many links we declare in it. In this example, the schema forces the holochain layer to add a link from the author's `agent_id` to every one of their posts: otherwise there would be no way of navigating the graph from one author to all their posts. This also applies to all queries available on the `Query` type. 
 
 ### Write the corresponding zome calls on Holochain
