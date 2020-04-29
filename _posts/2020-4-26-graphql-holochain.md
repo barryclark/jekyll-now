@@ -22,7 +22,7 @@ When developing integration layers between Apollo Client and holochain there are
 
 * **GraphQl schemas** define the graph of entities available for us to query. They can be thought of like contracts or interfaces between our frontend components and our backend services. Example: 
 
-``` 
+``` gql
 type Post {
     id: ID!
     content: String!
