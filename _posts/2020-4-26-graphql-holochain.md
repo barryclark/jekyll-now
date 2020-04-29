@@ -481,6 +481,8 @@ To learn more about making queryies and mutations to `ApolloClient` , read [this
 
 This is all! You can find the **code for this guide [here](https://github.com/guillemcordoba/holochain-graphql-demo)**. For a production ready application using this patterns, see the UI side of [Learning Pathways](https://github.com/holochain-devcamp/learning-pathways/tree/master/ui), developed during the holochain devcamp #6.
 
+In a future post, we are going to explore how to deal with **entity updates in our graphql middleware**. Stay tuned!
+
 You can use any JS framework you want on top of `ApolloClient`, which has different integrations with them. In further guides we are going to be looking at how to integrate this with `LitElement`, a powerful but lightweight native web-components library that fits very well with holochain because of the reusability of their components.
 
 If you find some gap/bug in this guide, or want to expand some more ground on similar issues, please contact us in the forum or in the github repo.
