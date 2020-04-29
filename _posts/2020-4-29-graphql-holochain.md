@@ -468,8 +468,6 @@ const result = await client.query({
 });
 ```
 
----
-
 To learn more about making queryies and mutations to `ApolloClient` , read [this](https://www.apollographql.com/docs/react/data/queries/).
 
 ## Conclusion
