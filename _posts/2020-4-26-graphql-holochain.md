@@ -276,8 +276,6 @@ const postsResolvers = {
 }
 ```
 
----
-
 These have been three basic examples of different patterns you'll most certainly need to use. From this, we recommend practicing with resolvers and how to write them to learn how to integrate your unique use case.
 
 You can see the full list of resolvers for the current example [here](https://github.com/guillemcordoba/holochain-graphql-demo/blob/master/ui/src/graphql/resolvers.js).
