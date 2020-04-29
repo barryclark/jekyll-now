@@ -58,7 +58,9 @@ You can read more about schemas [here](https://graphql.org/learn/schema/) and ab
 ## Approach
 
 The approach we are going to take here to integrate Apollo Client and holochain **is the main one used by the holochain community and projects**. But, we should warn beforehand that it is **not how the apollo infrastructure is designed to work**. Luckily, all its components and building blocks are very flexible and interoperable, enough for us to benefit from them in the right approach.
+
 Briefly, the approach that the apollo infrastructure (and most GraphQl libraries) take by default is to declare schemas both on the backend and on the frontend, but only write the resolvers in the backend. This makes it possible for the frontend to only do one network request per query, querying all the data available in the graph that the component is interested in. Also, it makes the JS bundle lighter.
+
 The approach we are going to take is a different one: **we'll only write our graphql schemas and resolvers on the frontend side**. From the point of view of the components, the queries will look the same. But those queries will actually get resolved on the browser itself, and our resolvers will be calling holochain zome functions to fetch the appropriate data.
 These are some downsides and some upsides with this approach:
 
