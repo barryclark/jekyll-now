@@ -80,6 +80,10 @@ We are going to code a toy example, so that you are able to understand the basic
 * A user should be able to query all posts
 * A user should be able to query posts for an specific agent
 
+Before beginning, we should install all the apollo necessary dependencies that make all this work:
+
+`npm install apollo-boost graphql graphql-tool` 
+
 ### Defining your schema
 
 In general, **defining your schema first can be a very good starting point**: it gives a clear contract between the frontend and the backend layers, and the returning data can be easily mocked. This way, different teams can work parallely on the different parts of your app and still be compatible afterwards.
@@ -187,13 +191,12 @@ const allPostsResolver = {
             // Get the callZome function from the context
             const callZome = context.callZome;
             // Get all posts addresses
-            const result = await callZome(
+            const postAddresses = await callZome(
                 INSTANCE_NAME,
                 ZOME_NAME,
                 'get_all_posts'
             )({});
 
-            const postAddresses = result.Ok;
             // Parallely iterate through the list of addresses to call `get_post` for each address
             const promises = postAddresses.map(async address => {
                 const post = await callZome(INSTANC_NAME, ZOME_NAME, 'get_post')({
@@ -226,7 +229,7 @@ const authorPosts = {
             callZome
         }) {
             // Get the list of post addresses 
-            const result = await callZome(
+            const postAddresses = await callZome(
                 INSTANCE_NAME,
                 ZOME_NAME,
                 'get_author_posts'
@@ -234,7 +237,6 @@ const authorPosts = {
                 agent_id: parent
             });
 
-            const postAddresses = result.Ok;
             // Parallely iterate through the list of addresses to call `get_post` for each address
             const promises = postAddresses.map(async address => {
                 const post = await callZome(INSTANC_NAME, ZOME_NAME, 'get_post')({
@@ -278,60 +280,207 @@ Our last step to complete the setup is to pull everything together and initializ
 
 1. Create the connection to the holochain backend:
 
-```js
+``` js
+import {
+    connect
+} from '@holochain/hc-web-client';
+
 let connection = undefined;
 const HOST_URL = 'ws://localhost:8888';
 
 export async function getConnection() {
-  // return connection if already established
-  if (connection) return connection;
+    // return connection if already established
+    if (connection) return connection;
 
-  // establish a new websocket connection and expose callZome
-  const { callZome } = await connect({ url: HOST_URL });
+    // establish a new websocket connection and expose callZome
+    const {
+        callZome
+    } = await connect({
+        url: HOST_URL
+    });
 
-  return callZome;
+    // define connection and execute callZome function
+    connection = (instance, zome, fnName) => async params => {
+        console.log(
+`Calling zome function: ${instance}/${zome}/${fnName} with params` ,
+            params
+        );
+
+        // https://developer.holochain.org/docs/guide/conductor_json_rpc_api/
+        const result = await callZome(instance, zome, fnName)(params);
+
+        console.log(
+`Zome function ${instance}/${zome}/${fnName} with params returned` ,
+            result
+        );
+
+        const parsed = JSON.parse(result);
+
+        if (result.Err) throw new Error(JSON.stringify(result.Err));
+        if (result.SerializationError) {
+            throw new Error(JSON.stringify(result.SerializationError));
+        }
+
+        return parsed.Ok !== undefined ? parsed.Ok : parsed
+    };
+
+    return connection;
 }
 ```
 
+As you can see, we are parsing the response just before returning the result, and we are throwing a JS error from the possible holochain errors that can be returned. This will give us seamless integration with what `ApolloClient` expects.
+
 2. Create the final `ApolloLink` from our resolvers and schema:
 
-```js
+``` js
+import {
+    makeExecutableSchema
+} from 'graphql-tools';
+import {
+    SchemaLink
+} from 'apollo-link-schema';
+
 export async function createSchemaLink() {
-  // Get the callZome connection
-  const connection = await getConnection();
+    // Get the callZome connection
+    const connection = await getConnection();
 
-  // Create an executable schema from the schema and resolvers
-  const schema = makeExecutableSchema({
-    typeDefs,
-    resolvers,
-  });
+    // Create an executable schema from the schema and resolvers
+    const schema = makeExecutableSchema({
+        typeDefs,
+        resolvers,
+    });
 
-  // Return a final link with our executable schema and the callZome inside the context
-  return new SchemaLink({ schema, context: { callZome: connection } });
+    // Return a final link with our executable schema and the callZome inside the context
+    return new SchemaLink({
+        schema,
+        context: {
+            callZome: connection
+        }
+    });
 }
 ```
 
 3. Initialize the `ApolloClient` instance:
 
-```js
+``` js
+import {
+    ApolloClient,
+    InMemoryCache
+} from 'apollo-boost';
+
 let client = undefined;
 
 export async function getClient() {
-  if (client) return client;
+    if (client) return client;
 
-  // Create our schema link
-  const link = await createSchemaLink();
+    // Create our schema link
+    const link = await createSchemaLink();
 
-  // Initialize the apollo client
-  client = new ApolloClient({
-    cache: new InMemoryCache(),
-    connectToDevTools: true,
-    link
-  });
-  return client;
+    // Initialize the apollo client
+    client = new ApolloClient({
+        cache: new InMemoryCache(),
+        connectToDevTools: true,
+        link
+    });
+    return client;
 }
 ```
 
 This function can now be called from any different places in your app, and the `client` instance can be stored anywhere too.
 
 ### Making queries
+
+All right! Finally, we get to use all this infrastructure to develop components much faster. This is a simple example of how to query data from the `ApolloClient` instance:
+
+``` js
+import {
+    gql
+} from 'apollo-boost';
+
+const client = await getClient();
+
+const result = await client.query({
+    query: gql `
+    {
+        allPosts {
+            id
+            content
+            timestamp
+            author {
+                id
+            }
+        }
+    }`
+})
+
+console.log(result.data);
+```
+
+As you can see, in our UI components we have a lot of flexibility to fetch any data available in our entity graph. If suddenly your requirements change and there is new data to be fetched from this component, it just has to expand the query.
+
+Now, how do we create a new post? **State changes are called `Mutations`** in the apollo world. They are very similar to the queries, but most likely will include variable arguments:
+
+``` js
+import { gql } from 'apollo-boost';
+
+const client = await getClient();
+
+const content = 'New post content';
+
+const result = await client.mutate({
+    mutate: gql `
+    {
+        createPost(content: $content) {
+            id
+            content
+            timestamp
+        }
+    }`,
+    variables: {
+        content
+    }
+})
+
+console.log(result.data);
+```
+
+It is a good practice to group the most commonly used queries into their own file, to prevent massive duplication of otherwise exact queries:
+
+- In `queries.js`:
+
+```js
+export const GET_ALL_POSTS = gql` 
+  query GetAllPosts {
+    allPosts {
+      id
+      content
+      timestamp
+      author {
+        id
+      }
+    }
+  }
+`
+```
+
+- In the querying component: 
+
+```js
+import { GET_ALL_POSTS } from './import';
+
+const result = await client.query({
+    query: GET_ALL_POSTS
+});
+```
+
+---
+
+To learn more about making queryies and mutations to `ApolloClient` , read [this](https://www.apollographql.com/docs/react/data/queries/).
+
+## Conclusion
+
+This is all! You can find the **code for this guide [here](https://github.com/guillemcordoba/holochain-graphql-demo)**. For a production ready application using this patterns, see the UI side of [Learning Pathways](https://github.com/holochain-devcamp/learning-pathways/tree/master/ui), developed during the holochain devcamp #6.
+
+You can use any JS framework you want on top of `ApolloClient`, which has different integrations with them. In further guides we are going to be looking at how to integrate this with `LitElement`, a powerful but lightweight native web-components library that fits very well with holochain because of the reusability of their components.
+
+If you find some gap/bug in this guide, or want to expand some more ground on similar issues, please contact us in the forum or in the github repo.
