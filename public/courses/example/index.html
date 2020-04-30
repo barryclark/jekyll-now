@@ -258,6 +258,11 @@
 
 
   
+  <script src="/js/collapse.js"></script>
+  <script src="/js/dropdown.js"></script>
+  <script src="/js/transition.js"></script>
+  <link rel="stylesheet" href="/css/codefolding.css" />
+
 
 
   <title>Overview | James E. Pustejovsky</title>
@@ -788,7 +793,14 @@
   
   
   
-  
+   
+  <script>
+  $(document).ready(function () {
+    window.initializeCodeFolding("show" === "show");
+  });
+  </script>
+  <script src="/js/codefolding.js"></script>
+
 
 
   <p class="powered-by">

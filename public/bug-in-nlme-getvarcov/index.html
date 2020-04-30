@@ -304,6 +304,11 @@
 
 
   
+  <script src="/js/collapse.js"></script>
+  <script src="/js/dropdown.js"></script>
+  <script src="/js/transition.js"></script>
+  <link rel="stylesheet" href="/css/codefolding.css" />
+
 
 
   <title>Bug in nlme::getVarCov | James E. Pustejovsky</title>
@@ -686,6 +691,16 @@
 
   
     
+<div id="code-folding-buttons" class="btn-group pull-right">
+  <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-_extension-text-contrast="">
+    <span>Code</span><span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" style="min-width: 50px;">
+    <li><a id="rmd-show-all-code" href="#">Show all code</a></li>
+    <li><a id="rmd-hide-all-code" href="#">Hide all code</a></li>
+  </ul>
+</div>
+
 
     
 
@@ -1265,7 +1280,14 @@ all.equal(V_raw, V_sorted)</code></pre>
   
   
   
-  
+   
+  <script>
+  $(document).ready(function () {
+    window.initializeCodeFolding("show" === "show");
+  });
+  </script>
+  <script src="/js/codefolding.js"></script>
+
 
 
   <p class="powered-by">

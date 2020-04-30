@@ -304,6 +304,11 @@
 
 
   
+  <script src="/js/collapse.js"></script>
+  <script src="/js/dropdown.js"></script>
+  <script src="/js/transition.js"></script>
+  <link rel="stylesheet" href="/css/codefolding.css" />
+
 
 
   <title>Code folding with blogdown &#43; Academic theme | James E. Pustejovsky</title>
@@ -1104,7 +1109,14 @@ codefolding_nobutton = false</code></pre>
   
   
   
-  
+   
+  <script>
+  $(document).ready(function () {
+    window.initializeCodeFolding("show" === "show");
+  });
+  </script>
+  <script src="/js/codefolding.js"></script>
+
 
 
   <p class="powered-by">

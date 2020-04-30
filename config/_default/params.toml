@@ -73,8 +73,12 @@ privacy_pack = false
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
 edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
 
+############################
+## Code folding
+############################
+
 # Set to true to disable code folding
-disable_codefolding = true
+disable_codefolding = false
 # Set to "hide" or "show" all codes by default
 codefolding_show = "show"
 # Set to true to exclude the "Show/hide all" button
