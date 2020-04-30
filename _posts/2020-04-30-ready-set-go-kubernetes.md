@@ -12,4 +12,4 @@ tags:
 
 And through the magic of livestreaming, check out the video of the panel I just finished! Featuring friends from Google, Red Hat, NetApp, Veeam and independent consulting.
 
-The panel (beginning at 32:32) discusses the challenges and opportunities of adopting Kubernetes. We also discuss persistent storage for containers, a topic very close to my heart from my days as StorageOS DevOps Manager.
+The panel (beginning at 32:16) discusses the challenges and opportunities of adopting Kubernetes. We also discuss persistent storage for containers, a topic very close to my heart from my days as StorageOS DevOps Manager.
