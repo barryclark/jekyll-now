@@ -21,7 +21,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```  
 Это -- простой путь, чтобы создать Ваше первое Сообщение -The easiest way to make your first post is to edit this one. Go into `/_posts/` and update the Hello World markdown file
-```html
+{% highlight html %}
 <nav class="nav nav-primary">
   <ul>
     <li class="tab-conversation active">
@@ -42,4 +42,4 @@ print_hi('Tom')
     </li>
   </ul>
 </nav>
-```
+{% endhighlight %}
