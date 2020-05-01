@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Archive
+title: Thoughts & Takeways Archive
 permalink: /COVID19/archive/
 ---
 
