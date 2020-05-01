@@ -187,7 +187,7 @@ We will add a `new()` and `entry()` function. `new()` will return us a new `Post
 Let's also change the name of the zome module.
 ```rust
 - mod my_zome 
-+ mod courses
++ mod blog
 ```
 Next up, let's delete the auto-generated entry definitions and add our own post entry definition and anchor definition to our zome! For anchor definition, we are just following the guide in the holochain-anchor repository so be sure to check them out! Our `Post` entry will have 2 links. One link is `agent->posts` so that we can get all the posts created by a certain agent. Another link is `anchor->posts` and this will allow us to get all the posts created and linked to the anchor we defined!
 ```rust
