@@ -2,7 +2,7 @@
 layout: post
 tags: bayesian-probability-theory math
 #categories: []
-date: 2020-05-16
+date: 2020-05-31
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
