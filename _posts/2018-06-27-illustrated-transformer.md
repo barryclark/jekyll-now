@@ -441,7 +441,7 @@ How do you compare two probability distributions? We simply subtract one from th
 
 But note that this is an oversimplified example. More realistically, we'll use a sentence longer than one word. For example -- input: "je suis étudiant" and expected output: "i am a student". What this really means, is that we want our model to successively output probability distributions where:
 
- * Each probability distribution is represented by a vector of width vocab_size (6 in our toy example, but more realistically a number like 3,000 or 10,000)
+ * Each probability distribution is represented by a vector of width vocab_size (6 in our toy example, but more realistically a number like 30,000 or 50,000)
  * The first probability distribution has the highest probability at the cell associated with the word "i"
  * The second probability distribution has the highest probability at the cell associated with the word "am"
  * And so on, until the fifth output distribution indicates '```<end of sentence>```' symbol, which also has a cell associated with it from the 10,000 element vocabulary.
@@ -464,7 +464,7 @@ After training the model for enough time on a large enough dataset, we would hop
 </div>
 
 
-Now, because the model produces the outputs one at a time, we can assume that the model is selecting the word with the highest probability from that probability distribution and throwing away the rest. That's one way to do it (called greedy decoding). Another way to do it would be to hold on to, say, the top two words (say, 'I' and 'a' for example), then in the next step, run the model twice: once assuming the first output position was the word 'I', and another time assuming the first output position was the word 'a', and whichever version produced less error considering both positions #1 and #2 is kept. We repeat this for positions #2 and #3...etc. This method is called "beam search", where in our example, beam_size was two (because we compared the results after calculating the beams for positions #1 and #2), and top_beams is also two (since we kept two words). These are both hyperparameters that you can experiment with.
+Now, because the model produces the outputs one at a time, we can assume that the model is selecting the word with the highest probability from that probability distribution and throwing away the rest. That's one way to do it (called greedy decoding). Another way to do it would be to hold on to, say, the top two words (say, 'I' and 'a' for example), then in the next step, run the model twice: once assuming the first output position was the word 'I', and another time assuming the first output position was the word 'a', and whichever version produced less error considering both positions #1 and #2 is kept. We repeat this for positions #2 and #3...etc. This method is called "beam search", where in our example, beam_size was two (meaning that at all times, two partial hypotheses (unfinished translations) are kept in memory), and top_beams is also two (meaning we'll return two translations). These are both hyperparameters that you can experiment with.
 
 
 

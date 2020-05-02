@@ -42,7 +42,7 @@ The most straight-forward way to use BERT is to use it to classify a single piec
 
 To train such a model, you mainly have to train the classifier, with minimal changes happening to the BERT model during the training phase. This training process is called Fine-Tuning, and has roots in <a href="https://arxiv.org/abs/1511.01432">Semi-supervised Sequence Learning</a> and ULMFiT.
 
-For people not versed in the topic, since we're talking about classifiers, then we are in the supervised-learning domain of machine learning. Which would mean we need a labeled dataset to train such a model. For this spam classifier example, the labeled dataset would be a list of email messages and a labele ("spam" or "not spam" for each message).
+For people not versed in the topic, since we're talking about classifiers, then we are in the supervised-learning domain of machine learning. Which would mean we need a labeled dataset to train such a model. For this spam classifier example, the labeled dataset would be a list of email messages and a label ("spam" or "not spam" for each message).
 
 
 <div class="img-div-any-width" markdown="0">
@@ -169,7 +169,7 @@ ELMo gained its language understanding from being trained to predict the next wo
   A step in the pre-training process of ELMo: Given "Let's stick to" as input, predict the next most likely word -- a *language modeling* task. When trained on a large dataset, the model starts to pick up on language patterns. It's unlikely it'll accurately guess the next word in this example. More realistically, after a word such as "hang", it will assign a higher probability to a word like "out" (to spell "hang out") than to "camera".
 </div>
 
-We can see the hidden state of each unrolled-LSTM step peaking out from behind ELMo's head. Those come in handy in the embedding proecss after this pre-training is done.
+We can see the hidden state of each unrolled-LSTM step peaking out from behind ELMo's head. Those come in handy in the embedding process after this pre-training is done.
 
 ELMo actually goes a step further and trains a bi-directional LSTM -- so that its language model doesn't only have a sense of the next word, but also the previous word.
 
