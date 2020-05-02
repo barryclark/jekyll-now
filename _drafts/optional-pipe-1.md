@@ -45,7 +45,8 @@ So now that we have the ingredients together, a first try of our optional chaini
 
 ```c++
 template<typename T, typename F>
-std::optional<std::invoke_result_t<F, T>> operator|(const std::optional<T> & arg, F&& func)
+auto operator|(const std::optional<T> & arg, F&& func)
+-> std::optional<std::invoke_result_t<F, T>>
 {
   if(arg.has_value())
   {
@@ -57,10 +58,15 @@ std::optional<std::invoke_result_t<F, T>> operator|(const std::optional<T> & arg
   }
 }
 ```
-The operator applies returns  ``nullopt`` if the optional argument was empty. If the given optional is not empty, the function is applied to the value and returned as an optional. So the signature of the operator is ``operator|: const std::optional<T> &``$$\rightarrow$$``std::optional<U>``, where ``U`` is the return type of the callable. This operator is already quite useful and it can be chained. However, there is one problem with it.
+The operator applies returns  ``nullopt`` if the optional argument was empty. If the given optional is not empty, the function is applied to the value and returned as an optional. So the signature of the operator is ``operator|: const std::optional<T> &``$$\rightarrow$$``std::optional<U>``, where ``U`` is the return type of the callable. This operator is already quite neat to use and it can also be chained. However, there is (at least) one problem with it. Let's have a look at an example before we get to the issue.
 
-## The Problem
-If the callable ``func`` itself returns a type ``std::optional<V>``, then our operator will return ``std::optional<std::optional<V>>``, which is not what I intended. I rather want to return ``std::optional<V>``.
+## Example Usage
+
+!!!!!!!!!!! BEISPIEL HIER !!!!!!!!!!!!!!!! (Achtung kein void, sondern den &std::string::size code und die square aus dem eclipse
+
+
+# The Issue with the Return Type
+If the callable ``func`` itself returns a type ``std::optional<V>``, then our operator will return ``std::optional<std::optional<V>>``. This is not what I intended, because I rather have the operator return ``std::optional<V>``. So we have to unravel the return type somehow. We will see in the next post how to do this using slightly more advanced template metaprogramming techniques.
 
 # Endnotes
 [^stdfunction]: I could have chosen ``std::function`` to hold the function instead of a template argument. I did try this approach and ran into another set of problems. See e.g. [here](https://stackoverflow.com/questions/36104638/passing-stdfunction-type-which-has-a-templated-return-type).
