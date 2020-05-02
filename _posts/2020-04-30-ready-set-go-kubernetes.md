@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Panel discussion - Ready, Set ... Scale for Kubernetes! by NetApp"
+title: "Panel discussion - Ready, Set ... Scale for Kubernetes!"
 description: "Watch a panel interview on the challenges and opportunities of Kubernetes from April 2020 featuring Cheryl Hung, Director of Ecosystem at CNCF"
 location: Virtual
 image: /images/2020-04-30-ready-set-go-kubernetes.jpg

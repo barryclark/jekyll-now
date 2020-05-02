@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kubernetes and Containers for non-techies - Rackspace Cloud Native Takeover Day"
+title: "Kubernetes and Containers for non-techies - Rackspace Cloud Native Day"
 description: "Read about how cloud native is like booking a flight from Cheryl Hung, CNCF Director of Ecosystem."
 location: London, UK
 image: https://pbs.twimg.com/media/EOaPTfcXkAEw1sw?format=jpg&name=medium
