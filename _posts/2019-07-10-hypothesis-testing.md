@@ -260,7 +260,7 @@ The (actual) FP rate is the expected value of this function:
 
 $$\begin{equation}
 1 \cdot P(\text{p_value} < 5\%) +
-0 \cdot P(\text{p_value} >= 5\%) =
+0 \cdot P(\text{p_value} \geq 5\%) =
 P(\text{p_value} < 5\%).
 \end{equation}$$
 
