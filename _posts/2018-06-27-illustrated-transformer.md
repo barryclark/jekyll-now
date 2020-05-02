@@ -181,7 +181,7 @@ The **third and forth steps** are to divide the scores by 8 (the square root of 
 
 </div>
 
-This softmax score determines how much how much each word will be expressed at this position. Clearly the word at this position will have the highest softmax score, but sometimes it's useful to attend to another word that is relevant to the current word.
+This softmax score determines how much each word will be expressed at this position. Clearly the word at this position will have the highest softmax score, but sometimes it's useful to attend to another word that is relevant to the current word.
 
 <br />
 
