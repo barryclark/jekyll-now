@@ -7,7 +7,7 @@ date: 2020-06-01
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Implementing a Pipe Syntax for Optionals - Part 1'
+title: 'Implementing a Pipe Syntax for Optionals - Part 1: Fundamentals'
 #comments_id: 
 ---
 
@@ -58,17 +58,31 @@ auto operator|(const std::optional<T> & arg, F&& func)
   }
 }
 ```
-The operator applies returns  ``nullopt`` if the optional argument was empty. If the given optional is not empty, the function is applied to the value and returned as an optional. So the signature of the operator is ``operator|: const std::optional<T> &``$$\rightarrow$$``std::optional<U>``, where ``U`` is the return type of the callable. This operator is already quite neat to use and it can also be chained. However, there is (at least) one problem with it. Let's have a look at an example before we get to the issue.
+
+The operator applies returns  ``nullopt`` if the optional argument was empty. If the given optional is not empty, the function is applied to the value and returned as an optional. So the signature of the operator is ``operator|: const std::optional<T> &``$$\rightarrow$$``std::optional<U>``, where ``U`` is the return type of the callable. This operator is already quite neat to use and it can also be chained. Let's look at an example.
 
 ## Example Usage
+In this silly example we are given an optional of type `std::string` that may or may not contain a value. We are (for some reason) interested in the square of the length of the contained string. This is how we can implement it using the pipe operator:
 
-!!!!!!!!!!! BEISPIEL HIER !!!!!!!!!!!!!!!! (Achtung kein void, sondern den &std::string::size code und die square aus dem eclipse
+```c++
+//lambda takes an argument and squares it
+auto square = [](const auto & val){return val*val;};
 
+//optional values of type string
+std::optional<std::string> optstr1 = std::string("Hello");
+std::optional<std::string> optstr2 = std::nullopt;
+//optionals of type size_t:
+auto optsize1  = optstr1 | &std::string::size | square;
+//==> optsize1 will contain value 5*5=25
+auto optsize2 = optstr2 | &std::string::size | square;
+//==> optisize2 will not contain a value
+```
+By chaining first the `std::string::size` member function and then a generic lambda that squares its argument we arrive at the desired result. The result is itself an optional of type `size_t`. It contains a value only if the optional of type string was not empty. The pipe syntax allows for a neat way to chain operations on optional values. It relieves me of the responsibility of checking whether the intermediate results contain values before operating on them. However, there is (at least) one major issue with the implementation. It has to do with the return type.
 
 # The Issue with the Return Type
-If the callable ``func`` itself returns a type ``std::optional<V>``, then our operator will return ``std::optional<std::optional<V>>``. This is not what I intended, because I rather have the operator return ``std::optional<V>``. So we have to unravel the return type somehow. We will see in the next post how to do this using slightly more advanced template metaprogramming techniques.
+The return type of the callable `func` is always wrapped in an optional. This is usually what we want, but it becomes a problem if the return type of `func` is itself an optional. Consider a callable ``func`` which returns ``std::optional<V>``. Our operator will then return a nested optional, namely ``std::optional<std::optional<V>>``. I'd rather have the operator return ``std::optional<V>`` because there is no information to be gained from nesting two optionals. So we have to unravel the return type somehow. In the next post we'll see how to achieve this with more advanced template metaprogramming techniques.
 
 # Endnotes
-[^stdfunction]: I could have chosen ``std::function`` to hold the function instead of a template argument. I did try this approach and ran into another set of problems. See e.g. [here](https://stackoverflow.com/questions/36104638/passing-stdfunction-type-which-has-a-templated-return-type).
+[^stdfunction]: I could have chosen ``std::function`` to hold the function instead of a template argument. I did try this approach but it has it's own set of problems. See e.g. [here](https://stackoverflow.com/questions/36104638/passing-stdfunction-type-which-has-a-templated-return-type).
 
 
