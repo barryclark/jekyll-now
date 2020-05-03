@@ -10,6 +10,9 @@ tags:
   - wsl
 published: true
 ---
+
+> El aprendizaje nunca agota la mente. -Leonardo da Vinci -
+
 # Install python3.8 in Windows 10 WSL2
 
 ## 1. Install python3.8 and venv for create virtual environment
