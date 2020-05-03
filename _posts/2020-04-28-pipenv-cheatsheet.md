@@ -18,17 +18,19 @@ Si quieres saber que es pipenv visita: [https://pipenv-es.readthedocs.io/es/late
 # Cheatsheet
 ## pipenv install
 Crea un nuevo entorno virtual si no existe. Crea un pipfile si no existe
-
+## pipenv install --python /usr/bin/python3 
+Para instalar entorno en Windows WSL2
 ## pipenv shell
 Activa el entorno virtual
-
+## python -m pipenv shell
+Si no funciona las flechas arriba y abajo para recordar comandos
 ## deactivate
 Desactiva el entorno virtual actual
 ## pipenv install <package>
 Instala un paquete 
 ## pipenv install <package> --dev
 Instala un paquete solo para desarrollo
-## pipenv unistall <package>
+## pipenv uninstall <package>
 Desinstala un paquete
 ## pipenv clean
 Desinstala paquetes que no están en el pipfile.lock
@@ -44,7 +46,7 @@ Muestra **potenciales** dependencias sin usar. Cuidado, por ejemplo, en un proye
 Crea un fichero requirements.txt
 ## pipend install -r requirements.txt
 Importa un fichero requirements.txt en el pipfile. Revisa las versiones
-## pipenv intall -c .
+## pipenv install -c .
 Descubre los requerimientos dentro de tu código
 ## pipenv --rm
 Borra un entorno vitual
