@@ -11,7 +11,7 @@ tags:
 published: true
 ---
 
-> El aprendizaje nunca agota la mente. -Leonardo da Vinci -
+> El aprendizaje nunca agota la mente. - Leonardo da Vinci -
 
 You can choose **venv** or **pipenv** 
 
@@ -24,7 +24,7 @@ You can choose **venv** or **pipenv**
 - pipenv install --python=/usr/bin/python3.8
 ### 4. Activate virtual environment
 - pipenv shell
-## 5. (Not recommended very slow open bash) Default Activation for python3.8 in your bash
+### 5. (Not recommended very slow open bash) Default Activation for python3.8 in your bash
 - Edit your .bash_profile and add:  
     pipenv install --python=/usr/bin/python3.8vit 
   
