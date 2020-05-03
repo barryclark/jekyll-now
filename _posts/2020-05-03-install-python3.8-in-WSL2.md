@@ -13,8 +13,6 @@ published: true
 
 > El aprendizaje nunca agota la mente. -Leonardo da Vinci -
 
-# Install python3.8 in Windows 10 WSL2
-
 You can choose **venv** or **pipenv** 
 
 ## If you choose pipenv
