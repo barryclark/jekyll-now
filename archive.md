@@ -4,6 +4,14 @@ title: Thoughts & Takeways Archive
 permalink: /COVID19/archive/
 ---
 
+### May 3rd thoughts & takeways:
+
+* Following the lifting the stay-at-home order for Texas, Friday's traffic volume was 8% higher than the previous Friday. The same trend remains true for Saturday's volumes. This was not significantly different than the trend we've been seeing over the past two weeks.
+
+* Some have wondered if we'll see a "U-shaped" or "V-shaped" recovery from the shutdown. The linear trend following the end of the stay-at-home order bodes well for a Nike swoosh-shaped recovery. If you forecast out this trend line, traffic volumes would recover to the volumes we saw in February around September 1st. 
+
+***
+
 ### May 1st thoughts & takeways:
 
 * The Governor's order to open restaurants and other businesses begins today. Yesterday's volume data was pretty much on par for what we saw last Thursday. Fridays are usually the highest volume day, since daily rush hour traffic combines with people traveling to locations for the weekend or other leisure activities. We'll see how this looks in the data tomorrow morning. I'll be watching the late evening (6-9pm) to see if we're getting higher volumes of people heading out to eat or whatever. 
