@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pipenv cheatsheet
+title: Install python3.8 in Windows 10 WSL2
 categories:
   - buenas prácticas
   - python
