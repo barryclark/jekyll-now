@@ -17,82 +17,110 @@ div.highlight {
   clear: both;
 }
 
+/*
+* Explanations on abbreviations, see:
+* https://gist.github.com/edwardhotchkiss/2005058
+*/
 
 .highlight .err {
   color: #fb4934;
   background-color: #282828;
   font-weight: bold;
 }
+
+/*Comments*/
 .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
   color: #928374;
   font-style: italic;
 }
+/*Comment. Preproc*/
 .highlight .cp {
-  color: #8ec07c;
+  color: #fbf1c7;
+  font-style: italic;
 }
+/*Name.Tag*/
 .highlight .nt {
-  color: #fb4934;
+  color: #fbf1c7;
 }
+/*Operator.Word*/
 .highlight .o, .highlight .ow {
   color: #fbf1c7;
 }
+/*Punctuation*/
 .highlight .p, .highlight .pi {
   color: #fbf1c7;
 }
+/*Generic.Inserted*/
 .highlight .gi {
   color: #b8bb26;
   background-color: #282828;
 }
+/*Generic.Deleted*/
 .highlight .gd {
   color: #fb4934;
   background-color: #282828;
 }
+/*Generic.Heading*/
 .highlight .gh {
   color: #b8bb26;
   font-weight: bold;
 }
+/*Keywords*/
 .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #fb4934;
+  color: #BD2C2C; /*fb4934*/
 }
+/*Keyword.Constant*/
 .highlight .kc {
-  color: #d3869b;
+  color: #BD2C2C;
 }
+/*Keyword.Type*/
 .highlight .kt {
-  color: #fabd2f;
+  color: #BD2C2C;
 }
+/*Keyword.Declaration*/
 .highlight .kd {
-  color: #fe8019;
+  color: #BD2C2C;
 }
+/*Strings*/
 .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #b8bb26;
+  color: #fbf1c7;
   font-style: italic;
 }
+/*String.Interpol*/
 .highlight .si {
-  color: #b8bb26;
+  color: #fbf1c7;
   font-style: italic;
 }
+/*String.Regex*/
 .highlight .sr {
-  color: #b8bb26;
+  color: #fbf1c7;
   font-style: italic;
 }
+/*String.Escape*/
 .highlight .se {
-  color: #fe8019;
+  color: #fbf1c7;
 }
+/*Name.Namespace*/
 .highlight .nn {
-  color: #8ec07c;
+  color: #fbf1c7;
 }
+/*Name.Class*/
 .highlight .nc {
-  color: #8ec07c;
+  color: #fbf1c7;
 }
+/*Name.Constant*/
 .highlight .no {
-  color: #d3869b;
+  color: #fbf1c7;
 }
+/*Name.Attribute*/
 .highlight .na {
-  color: #b8bb26;
+  color: #fbf1c7;
 }
+/*Numbers*/
 .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
-  color: #d3869b;
+  color: #fbf1c7;
 }
+/*String.Symbol*/
 .highlight .ss {
-  color: #83a598;
+  color: #fbf1c7;
 }
