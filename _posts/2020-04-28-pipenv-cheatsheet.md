@@ -19,7 +19,7 @@ Si quieres saber que es pipenv visita: [https://pipenv-es.readthedocs.io/es/late
 ## pipenv install
 Crea un nuevo entorno virtual si no existe. Crea un pipfile si no existe
 ## pipenv install --python /usr/bin/python3 
-Para instalar entorno en Windows WSL2
+Para instalar entorno en Windows WSL2. Si necesitas python 3.8 sigue [aquí](https://nikeyes.github.io/install-python3.8-in-WSL2/)
 ## pipenv shell
 Activa el entorno virtual
 ## python -m pipenv shell
