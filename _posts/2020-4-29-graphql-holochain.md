@@ -122,7 +122,7 @@ It's important to note that the relationships expressed as requirements in the s
 
 ### Write the corresponding zome calls on Holochain
 
-Now that we have written the schema and resolver on graphql, let's write the corresponding zome calls we need in order for the the queries and mutation on graphql to work! In the root directory of the project, let's first init a holochain project! Enter the holochain development environment with the command below.
+Now that we have the schema on graphql, let's write the corresponding zome calls we need in order for the the queries and mutation on graphql to work! In the root directory of the project, let's first init a holochain project! Enter the holochain development environment with the command below.
 
 ``` nix
 nix-shell https://holochain.love
