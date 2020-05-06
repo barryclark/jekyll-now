@@ -17,9 +17,10 @@ You can choose **venv** or **pipenv**
 
 ## If you choose pipenv
 ### 1. Install python3.8 and venv for create virtual environment
-```bash
+{% highlight bash %}
 sudo apt-get install python3.8 pipenv
-```
+{% endhighlight %}
+
 ### 2. Check python3.8 instalation
 ```bash
 python3.8 -V
