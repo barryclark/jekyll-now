@@ -4,6 +4,18 @@ title: Thoughts & Takeways Archive
 permalink: /COVID19/archive/
 ---
 
+### May 6th thoughts & takeways:
+
+* May 3rd & 4th traffic volume and speed data was missing multiple intersections but now seems to be fixed. The volumes on those days were based on the available data on those days as compared to the previous Sunday/Monday. Sunday saw about 4% higher volumes and Monday was 2% less. 
+
+* The recovery trend is still ticking along at the roughly linear pace since the low point of volumes on the first week of April. The Governor's new order will open more businesses on Friday and even more in the coming weeks. 
+
+* Sunday's shared mircomobility trips was the most in a single day since March 19th. Friday's traffic volumes was the highest for a single day since March 18th. 
+
+* I find it *incredibly* satisfying that the traffic incidents are following the same curve as traffic volumes.
+
+***
+
 ### May 3rd thoughts & takeways:
 
 * Following the lifting the stay-at-home order for Texas, Friday's traffic volume was 8% higher than the previous Friday. The same trend remains true for Saturday's volumes. This was not significantly different than the trend we've been seeing over the past two weeks.
