@@ -6,7 +6,7 @@ permalink: /COVID19/archive/
 
 ### May 6th thoughts & takeways:
 
-* May 3rd & 4th traffic volume and speed data was missing multiple intersections but now seems to be fixed. The volumes on those days were based on the available data on those days as compared to the previous Sunday/Monday. Sunday saw about 4% higher volumes and Monday was 2% less. 
+* May 3rd & 4th traffic volume and speed data was missing multiple intersections but now seems to be fixed. The volumes on those days was estimated based on the available data on those days as compared to the previous Sunday/Monday. Sunday saw about 4% higher volumes and Monday was 2% less. 
 
 * The recovery trend is still ticking along at the roughly linear pace since the low point of volumes on the first week of April. The Governor's new order will open more businesses on Friday and even more in the coming weeks. 
 
