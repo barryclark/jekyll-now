@@ -10,9 +10,6 @@ description: "Cheryl Hung's upcoming conferences and events."
 September 2 - 4: [Kubernetes Community Days London](http://kubernetesdays.london/), London
 * Chair
 
-September 10: [Swiss Cloud Native Day](https://cloudnativeday.ch/), Bern
-* Keynote
-
 September 15 - 16: [Open Source Summit Japan](https://events.linuxfoundation.org/open-source-summit-japan/), Tokyo
 
 September 28 - October 2: [Grace Hopper](https://ghc.anitab.org/2020-attend/), Orlando, Florida
@@ -25,3 +22,8 @@ October 26 - 28: [Open Source Summit Europe](https://events.linuxfoundation.org/
 November 18 - 20: [KubeCon + CloudNativeCon North America](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/), Boston
 
 November 30 - December 4: [AWS Re:Invent](https://reinvent.awsevents.com/), Las Vegas
+
+### 2021
+
+September 23: [Swiss Cloud Native Day](https://cloudnativeday.ch/), Bern
+* Keynote
