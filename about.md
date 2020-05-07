@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Some information about Danh Truong!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am a post-doc at UT MD Anderson Cancer Center. I study mesenchymal tissue differentiation as a model for understanding the plasticity of soft tissue sarcomas and osteosarcoma. My favorite book series is the The Expanse but I also love The Lord of the Rings and The Legend of Drizzt series. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dtruong4@mdanderson.org](mailto:dtruong4@mdanderson.org)
