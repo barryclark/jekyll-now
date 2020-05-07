@@ -7,7 +7,7 @@ date: 2020-06-01
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Implementing a Pipe Syntax for Optionals - Part 1: Fundamentals'
+title: 'Implementing a Pipe Syntax for `std::optional` - Part 1: Fundamentals'
 #comments_id: 
 ---
 
