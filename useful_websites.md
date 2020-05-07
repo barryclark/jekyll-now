@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Useful Websites
-permalink: /Useful Websites/
+permalink: /useful_websites/
 ---
 
 Here are some useful websites that I have found in the past
