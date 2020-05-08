@@ -15,7 +15,7 @@ function Login()
     dengluzhuangtai = 'superuser-rocky'
     docment.write('你好啊开发者 Rocky')
   } elif (password == pswd1){
-    dengluzhuangtai = 'suprouser-dad'
+    dengluzhuangtai = 'superuser-dad'
     docment.write()
   } else{
     pass()
