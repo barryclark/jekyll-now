@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>无名轻博客安装程序</title>
+<style>
+body {
+background: #444;
+font-family: "Lucida Sans Unicode", Helvetica, "Microsoft Yahei", "Microsoft JhengHei", STHei, "Meiryo UI";
+height:100%;color:#fff
+}
+a{color:#fff}
+.abt{border: 1px solid #EFEFEF;
+border-radius: 5px;
+padding: 6px;
+cursor: pointer; background: #fff;color:#000}
+.txt{}
+.green{color:#28a745;}
+.red{color:red;}
+.ft{margin-top:80px;}
+</style>
+</head>
+<body>
+<div style="padding:60px 0 0 0;line-height:30px;max-width:750px;margin:0 auto">
+<h1>欢迎使用</h1>
+<p class="txt">无名轻博客是一款基于PHP+Sqlite的简单易用的个人微博系统(miniblog)。致力于为您提供快速、稳定，且在使用上又极其简单、舒适的博客服务。</p>
+<?php
+install();
+function endfoot(){
+     echo '<p class="ft" align="center">Powered by <a href="https://fpx.ink/" target="_blank">无名轻博客</a> V4 ,  Design by <a href="https://www.4jax.net/" target="_blank">www.4jax.net</a></p>';
+     exit('</div></body></html>');      
+}
+function install(){
+$cfg = ROOT_PATH.'app/class/config.php';
+ if(!isset($_GET['install'])){ 
+		  $err = 0;
+		   
+  if(PHP_VERSION>=5.4)
+  {
+   echo '<p class="green">当前PHP版本：'.PHP_VERSION.' [√]</p>';
+  }
+else
+  {
+    echo '<p class="red">PHP版本需要大于5.4当前版本：'.PHP_VERSION.'！[×]</p>';
+    $err++;
+  }
+
+
+  if(is_writable(DB))
+  {
+  echo '<p class="green">数据库可写！[√]</p>';
+  }
+else
+  {
+    echo '<p class="red">'.DB.'数据库不可写！[×]</p>';
+    $err++;
+  }
+  if(extension_loaded("pdo_sqlite")){
+     echo '<p class="green">PDO_SQLITE可用！[√]</p>';
+  }else{
+    echo '<p class="red">PDO_SQLITE数据库不支持！[×]</p>';
+    $err++;
+  }
+if(is_writable($cfg))
+  {
+    echo '<p class="green">配置文件可写！[√]</p>';
+  }
+else
+  {
+	echo '<p class="red">'.$cfg.'配置文件不可写！[×]</p>';
+    $err++;
+}     if($err>0){echo '安装环境/权限不足，无法正常使用';endfoot();}
+		   echo '<a class="abt" href="?install=1">开始安装</a>';
+           endfoot();
+      }
+      $key =  md5(time().'XXGMSG');
+      $p = 'admin'.substr($key,2,4);
+      $db = substr($key,16,12);
+      $key = substr($key,10,6);	  
+	  $f = file_get_contents($cfg);
+	  $ckey = "define('KEY','$key');";
+	  $cdb = "define('DB',ROOT_PATH.'app/db/$db.db');";
+      $f = preg_replace("/define\('KEY','.+?'\);/i",$ckey,$f);
+      $f = preg_replace("/define\('DB',.+?;/i",$cdb,$f);
+	  $f = preg_replace("/\/\*install-start\*\/.+?\/\*install-end\*\//is","define('INSTALL','TRUE');",$f);
+	  rename(DB,ROOT_PATH."app/db/".$db.".db");
+	  $f = file_put_contents($cfg,$f);
+	  $_SESSION[$key.'set'] = array();
+          $_SESSION[$key.'admin'] = 1;	  
+	  $webpss = md5(md5($key.$p));
+	  try{ 
+            $dbh = new PDO('sqlite:'.ROOT_PATH."app/db/".$db.".db");
+            $dbh->exec("update [set] set webpass='{$webpss}' where id=1");
+          }catch (PDOException $e)
+          {
+            exit('<p>数据库连接失败，可能空间不支持pdo_sqlite</p>');
+          }
+          echo '<p>系统初始化完成！管理密码为：'.$p.'</p>' ;
+	  echo '<p><a class="abt" href="?ok">开始使用</a></p>';	   
+	  unlink('app/class/install.txt');
+	  endfoot();   
+} 
+?>
