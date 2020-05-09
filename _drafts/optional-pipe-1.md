@@ -79,12 +79,15 @@ auto optsize1  = optstr1 | &std::string::size | square;
 auto optsize2 = optstr2 | &std::string::size | square;
 //==> optisize2 will not contain a value
 ```
-We arrive at the desired result y chaining the `std::string::size` member function and a generic lambda that squares its argument. The result is itself an optional of type `size_t`. It contains a value only if the initial argument contains a value. The pipe syntax allows for a neat way to chain operations on optional values. It relieves us of the responsibility of checking whether the intermediate results contain values before operating on them. However, there is (at least) one major issue with the implementation. It has to do with the return type.
+We arrive at the desired result y chaining the `std::string::size` member function and a generic lambda that squares its argument. The result is itself an optional of type `size_t`. It contains a value only if the initial argument contains a value. The pipe syntax allows for a neat way to chain operations on optional values. It relieves us of the responsibility of checking whether the intermediate results contain values before operating on them. However, there is (at least) one major issue with the implementation. It has to do with the return type. But before we have a look at that issue, let's turn our attention to another thing. What kind of callables can the operator accept?
+
+## Signatures of the Callables
+In my implementation above, I have accepted the optional argument by `const` reference. That means that the dereference (`*`) operator of the optional will produce a `const` reference, too. Thus, the callable `func` has to accept it's argument either by `const` reference or by value. This relieves me of a lot of headaches, because the content of the given optional cannot be mutated by the callable. So the callable is pretty much forced to return its result by value to perform any kind of useful functionality. This again is very good, because optional references [are ill-formed in C++](https://en.cppreference.com/w/cpp/utility/optional)[^optref]. In summary, the signatures of accepted callables can be `func:const T&`$$\rightarrow$$`U` or `func:T`$$\rightarrow$$`U`.
 
 # The Issue with the Return Type
 The return type of the callable `func` is always wrapped in an optional. This is usually what we want, but it becomes a problem if the return type of `func` is itself an optional. Consider a callable ``func`` which returns ``std::optional<V>``. Our operator will then return a nested optional, namely ``std::optional<std::optional<V>>``. I'd rather have the operator return ``std::optional<V>`` because there is no information to be gained from nesting two optionals. So we have to unravel the return type somehow. In the next post we'll see how to achieve this with bread and butter template metaprogramming techniques.
 
 # Endnotes
 [^stdfunction]: I could have chosen ``std::function`` to hold the function instead of a template argument. I did try this approach but it has it's own set of problems. See e.g. [here](https://stackoverflow.com/questions/36104638/passing-stdfunction-type-which-has-a-templated-return-type).
-
+[^optref]: At least at the time of writing.
 
