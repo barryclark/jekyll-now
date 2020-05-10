@@ -11,7 +11,7 @@ title: 'Bayesian Analysis of a Game for Children - Part 2: The Results And The T
 comments_id: 6
 ---
 
-These are the results of my foray into Bayesian data analysis applied to a childrens game. This post ties the previous posts concerning simple games, probability theory and functional programming together. After recapping the rules of the particular game I will present winningest strategy, which will surprise nobody, but I will finish with a plot twist.
+These are the results of my foray into Bayesian data analysis applied to a childrens game. This post ties the previous posts concerning simple games, probability theory and functional programming together. After recapping the rules of the particular game I will present the winningest strategy, which will surprise nobody. But I will finish with a plot twist.
 
 # Orchard: The Rules of the Game
  <img width="256" alt="Orchard Game" src="/blog/images/orchard/orchard-box.png">
