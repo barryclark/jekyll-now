@@ -7,4 +7,5 @@ _site
 Gemfile
 Gemfile.lock
 node_modules
+.venv
 package.json
