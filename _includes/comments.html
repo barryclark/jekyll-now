@@ -29,14 +29,15 @@ function createCommentEl( response ) {
 	let userAvatar = document.createElement( 'a' );
 	userAvatar.classList.add( 'avatar' );
 	userAvatar.innerHTML =  response.user.login +':';
-	userAvatar.style.fontStyle = "italic"
+	//userAvatar.style.fontStyle = "italic";
 
 	user.appendChild( userAvatar );
 
 	let commentLink = document.createElement( 'a' );
 	commentLink.setAttribute( 'href', response.html_url );
 	commentLink.classList.add( 'comment-url' );
-	commentLink.innerHTML = '#' + response.id + ' - ' + response.created_at;
+	commentLink.innerHTML = '(#' + response.id + ' - ' + response.created_at+')';
+	commentLink.style.fontSize = "small";
 
 	let commentContents = document.createElement( 'div' );
 	commentContents.classList.add( 'comment-content' );
