@@ -82,7 +82,7 @@ sns.distplot(observations, ax=ax)
 # So based on the given data points $x$, you want to estimate the distribution of both the thetas.
 # Gibbs sampling is one type of algorithm that can help you with that.
 #
-# In order to do that, Gibbs sampling will follow these steps:
+# In order to do that, in Gibbs sampling, we will follow these steps:
 #
 # 1. Figure out the conditional distributions $p(\theta_1 | \theta_2, x)$ and $p(\theta_2 | \theta_1, x)$.
 # 1. Pick the initial $\theta_2^{(0)}$.
@@ -91,9 +91,23 @@ sns.distplot(observations, ax=ax)
 #   1. Sample $\theta_1^{(i)} \sim p(\theta_1 | \theta_2^{(i-1)}, x)$.
 #   1. Sample $\theta_2^{(i)} \sim p(\theta_2 | \theta_1^{(i)}, x)$.
 #
-# If you want to know how the algorithm is done, [here](https://kieranrcampbell.github.io/blog/2016/05/15/gibbs-sampling-bayesian-linear-regression.html) is a very easy article to read and follow.
+# If you want to know how the algorithm is done, [here](https://kieranrcampbell.github.io/blog/2016/05/15/gibbs-sampling-bayesian-linear-regression.html) is a great article about Gibbs sampling and its implementation.
 #
 # Now, let's turn to Gibbs sampling with data augmentation.
+# The hardest part in Gibbs sampling is figuring out what the conditional distributions look like.
+# And in some cases, we could not find out what the distributions are.
+# Fortunately, the conditional distributions will be easier to find if we introduce additional variables to condition on.
+# This is exactly what Gibbs sampling with data augmentation does.
+# So instead of figuring out $p(\theta_1 | \theta_2, x)$ or $p(\theta_2 | \theta_1, x)$ directly,
+# we introduce some latent variables $z$ and find the conditional distributions $p(\theta_1 | \theta_2, z, x)$ and $p(\theta_2 | \theta_1, z, x)$ instead.
+# Then, we sample the thetas and $z$ based on the distributions we figured out.
+#
+# OK, I have given you an overview of Gibbs sampling but I bet you are still confused.
+# So why don't we go back to our original data and explain how Gibbs sampling with data augmentation could help us.
+
+# # Step-by-step Guide
+#
+# Let's recall what our data is and what ...
 
 # <!--bibtex
 #
