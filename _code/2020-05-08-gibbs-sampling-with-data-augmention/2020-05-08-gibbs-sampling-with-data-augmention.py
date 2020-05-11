@@ -134,7 +134,7 @@ fig_observations_hist
 # Before figuring out the conditional distributions, we need to specify the prior distributions of the parameters.
 # $$
 # \begin{align*}
-#   \mu_1, \mu_2 &\stackrel{iid}{\sim} p(m, l^{-1}) \\
+#   \mu_1, \mu_2 &\stackrel{iid}{\sim} \mathcal{N}(m, l^{-1}) \\
 #   \pi &\sim Beta(a, b) \\
 #   z|\pi &\sim Bernoulli(\pi) \\
 #   x|\mu, z &\sim \mathcal{N}(\mu, \lambda^{-1}) \\
