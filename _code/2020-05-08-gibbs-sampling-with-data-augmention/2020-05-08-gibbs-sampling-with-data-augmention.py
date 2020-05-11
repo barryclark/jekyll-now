@@ -26,10 +26,18 @@
 # However, with a little twist, we don't know which sample belongs to which sex.
 # To illustrate that, let's create a sample data that will be used later.
 
+# %matplotlib inline
+
+# +
+import matplotlib as mpl
+mpl.rcParams['figure.dpi'] = 100
+# -
+
 # +
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 sns.set()
 np.random.seed(77)
 # -
@@ -63,7 +71,7 @@ for i in range(nb_observations):
                        else female_height_samples[i])
 
 # Visualize what we've got.
-fig, ax = plt.subplots(1, 1, tight_layout=True)
+fig_observations_hist, ax = plt.subplots(1, 1, tight_layout=True)
 sns.distplot(observations, ax=ax)
 # -
 
@@ -107,7 +115,12 @@ sns.distplot(observations, ax=ax)
 
 # # Step-by-step Guide
 #
-# Let's recall what our data is and what ...
+# Let's recall what we have got.
+# We know that we have some number of observations `nb_observations` and what the histogram looks like.
+# Also, we assume that we know the standard deviation of heights.
+
+print(f'#observations: {nb_observations}, height std: {true_height_std} (cm)')
+fig_observations_hist
 
 # <!--bibtex
 #
