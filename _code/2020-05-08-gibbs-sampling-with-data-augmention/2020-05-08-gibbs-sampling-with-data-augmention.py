@@ -122,6 +122,27 @@ sns.distplot(observations, ax=ax)
 print(f'#observations: {nb_observations}, height std: {true_height_std} (cm)')
 fig_observations_hist
 
+# Based on the observations, we want to know the distributions of $\mu_0$ and $\mu_1$,
+# which are the mean value of female and male heights respectively.
+# It is easy to see that individual observation $x$ will follow the distribution $p(x | \mu_0, \mu_1)$.
+#
+# To find the distributions, we will apply Gibbs sampling.
+# However, finding the conditional distributions $p(\mu_0 | \mu_1, x)$ or $p(\mu_1 | \mu_0, x)$ won't be an easy task.
+# Therefore, we'll need data augmentation.
+#
+# Let's introduce an indicator random variable $z \in \{0, 1\}$ indicates whether an observation belongs to male or female.
+# Before figuring out the conditional distributions, we need to specify the prior distributions of the parameters.
+# $$
+# \begin{align*}
+#   \mu_1, \mu_2 &\stackrel{iid}{\sim} p(m, l^{-1}) \\
+#   \pi &\sim Beta(a, b) \\
+#   z|\pi &\sim Bernoulli(\pi) \\
+#   x|\mu, z &\sim \mathcal{N}(\mu, \lambda^{-1}) \\
+# \end{align*}
+# $$
+#
+# with $m, l, a, b$ are hyper parameters and $\lambda = 8$.
+
 # <!--bibtex
 #
 # @misc{gibbs,
@@ -137,3 +158,5 @@ fig_observations_hist
 # }
 #
 # -->
+
+# !pip freeze
