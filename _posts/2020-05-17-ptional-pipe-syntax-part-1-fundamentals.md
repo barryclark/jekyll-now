@@ -2,19 +2,19 @@
 layout: post
 tags: c++ c++17 null-conditional template-metaprogramming functional-programming
 #categories: []
-date: 2020-06-01
+date: 2020-05-17
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
 title: 'Implementing a Pipe Syntax for `std::optional` - Part 1: Fundamentals'
-#comments_id: 
+#comments_id:
 ---
 
-I set out to implement [my high concept null conditional operator](/blog/2020/01/23/null-conditional-operator-for-optionals/) for ``std::optional`` and ended up with something significantly more low concept. Still, I did learn a lot about template metaprogramming and ran into some interesting pitfalls. Let's see what I did in this multi-part series.
+I set out to implement [my high concept null conditional operator](/blog/2020/null-conditional-operator-for-optionals/) for ``std::optional`` and ended up with something significantly more low concept. Still, I did learn a lot about template metaprogramming and ran into some interesting pitfalls. Let's see what I did in this multi-part series.
 
 # The Basics
-If you haven't read my [first post](/blog/2020/01/23/null-conditional-operator-for-optionals/) on the subject it makes sense to do that now. Although we will not accomplish exactly what I set out to do, it makes sense to know where I was heading. Let's first assume we want apply a callable ``F:T``$$\rightarrow$$``U`` to an object of type ``std::optional<T>``. We first assume that ``T`` and ``U`` are not ``void``. We will deal with that case in the later parts of the series.
+If you haven't read my [first post](/blog/2020/null-conditional-operator-for-optionals/) on the subject it makes sense to do that now. Although we will not accomplish exactly what I set out to do, it makes sense to know where I was heading. Let's first assume we want apply a callable ``F:T``$$\rightarrow$$``U`` to an object of type ``std::optional<T>``. We first assume that ``T`` and ``U`` are not ``void``. We will deal with that case in the later parts of the series.
 
 Note that I changed the operator from `%` (modulo) to `|` (pipe) in this post compared to the previous article.
 
@@ -85,9 +85,8 @@ We arrive at the desired result y chaining the `std::string::size` member functi
 In my implementation above, I have accepted the optional argument by `const` reference. That means that the dereference (`*`) operator of the optional will produce a `const` reference, too. Thus, the callable `func` has to accept it's argument either by `const` reference or by value. This relieves me of a lot of headaches, because the content of the given optional cannot be mutated by the callable. So the callable is pretty much forced to return its result by value to perform any kind of useful functionality. This again is very good, because optional references [are ill-formed in C++](https://en.cppreference.com/w/cpp/utility/optional)[^optref]. In summary, the signatures of accepted callables can be `func:const T&`$$\rightarrow$$`U` or `func:T`$$\rightarrow$$`U`.
 
 # The Issue with the Return Type
-The return type of the callable `func` is always wrapped in an optional. This is usually what we want, but it becomes a problem if the return type of `func` is itself an optional. Consider a callable ``func`` which returns ``std::optional<V>``. Our operator will then return a nested optional, namely ``std::optional<std::optional<V>>``. I'd rather have the operator return ``std::optional<V>`` because there is no information to be gained from nesting two optionals. So we have to unravel the return type somehow. In the next post we'll see how to achieve this with bread and butter template metaprogramming techniques.
+The return type of the callable `func` is always wrapped in an optional. This is usually what we want, but it becomes a problem if the return type of `func` is itself an optional. Consider a callable ``func`` which returns ``std::optional<V>``. Our operator will then return a nested optional, namely ``std::optional<std::optional<V>>``. I'd rather have the operator return ``std::optional<V>`` because there is no information to be gained from nesting two optionals. So we have to unravel the return type somehow. In the [next article](/blog/2020/optional-pipe-syntax-part-2-template-metaprogramming/) we'll see how to achieve this using bread and butter template metaprogramming techniques.
 
 # Endnotes
 [^stdfunction]: I could have chosen ``std::function`` to hold the function instead of a template argument. I did try this approach but it has it's own set of problems. See e.g. [here](https://stackoverflow.com/questions/36104638/passing-stdfunction-type-which-has-a-templated-return-type).
 [^optref]: At least at the time of writing.
-

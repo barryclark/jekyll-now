@@ -98,4 +98,4 @@ This is a quick summary of the function signatures of the C++ null-conditional o
 
 # To Be Continued
 
-I will write a post on the implementation in the next part and link to it here when its done. The function body of this operator is trivial but the tricky part of the implementation is getting the metaprogramming right.
+I will write a post on the implementation in the [next part of the series](/blog/2020/optional-pipe-syntax-part-1-fundamentals/). The function body of this operator is trivial but the tricky part of the implementation is getting the metaprogramming right.
