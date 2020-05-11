@@ -1,3 +1,4 @@
+# Blog
 _site
 .DS_Store
 .jekyll
@@ -7,5 +8,16 @@ _site
 Gemfile
 Gemfile.lock
 node_modules
-.venv
 package.json
+
+# Python
+.venv
+
+# Jupyter notebook
+.ipynb_checkpoints
+
+# Intermediate outputs when blogging with Jupyter notebooks
+_code/**/*.ipynb
+_code/**/*_files
+_code/**/*.md
+
