@@ -23,7 +23,7 @@ We are interested in the *posterior probability* of $$p$$ having a certain value
 
 $$P(p \vert k, n, I) \propto P(k\vert p, n, I) \cdot P(p \vert n, I)$$
 
-The propotionality constant is a factor that normalizes the probability to $$1$$ over the whole definition range of $$p$$. For a more in detph explanation with applications to simple games see [here](/blog/2020/02/08/bayesian-game-analysis-part1/).
+The propotionality constant is a factor that normalizes the probability to $$1$$ over the whole definition range of $$p$$. For a more in detph explanation with applications to simple games see [here](/blog/2020/bayesian-game-analysis-part1/).
 
 # Simplifying Assumptions
 Let's say we have a Binomial Distribution with a very large number $$n$$ of trials, say e.g. $$n>10^6$$. This means the functional form of the Binomial Distribution becomes hard to calculate numerically due to large exponents and faculties. So we want to make a couple of simplifying assumptions. Those become part of our background knowledge $$I$$:

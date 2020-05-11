@@ -74,5 +74,5 @@ $$p=\frac{N_W}{N} \text{ , if } P(p \vert S,I)=const.$$
 
 Here have effectively only maximized the likelihood term. This is why our $$p=N_W/N$$ is called the maximum likelihood estimator for the Binomial Distribution.
 
-# To be Continued
-In the next post (which I will link here) we will look at the question: If I have calculated the posterior probability for two different strategies, how sure can I be that one is really better than the other?
+# To Be Continued
+In [part 2 of this series](/blog/2020/bayesian-game-analysis-part2/) I will turn to the actual game I am playing with my kid. I will present the results based on the calculations in today's post (and also [this one over here](/blog/2020/probability-x-greater-y/)).

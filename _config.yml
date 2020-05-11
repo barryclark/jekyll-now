@@ -61,7 +61,7 @@ tag_page: '/tags/'
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:year/:month/:day/:slug/
+permalink: /:year/:slug/
 
 future: true
 
