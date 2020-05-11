@@ -71,7 +71,7 @@ The [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior#Table_of_con
 
 $$P(\mu \vert I) = \frac{b^a}{\Gamma(a)} \mu^{a-1}\exp(-b\mu) \sim \text{Gamma}(a,b),$$
 
-where we use $$a, $$ as the shape and rate parameter of the prior distribution. [Calculating the evidence integral](https://www.wolframalpha.com/input/?i=int%28mu%5E%28K%2Ba-1%29*exp%28%28-N%2Bb%29*mu%29%2Cmu%2C0%2Cinf%29) and plugging it into the posterior leads us to
+where we use $$a, b$$ as the shape and rate parameter of the prior distribution. [Calculating the evidence integral](https://www.wolframalpha.com/input/?i=int%28mu%5E%28K%2Ba-1%29*exp%28%28-N%2Bb%29*mu%29%2Cmu%2C0%2Cinf%29) and plugging it into the posterior leads us to
 
 $$P(\mu \vert K,N,I) = \frac{(N+b)^{K+a}}{\Gamma(K+a)}\mu^{K+a-1}\exp(-(N+b)\mu) \sim \text{Gamma}(K+a,N+b),$$
 
