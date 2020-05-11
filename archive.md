@@ -3,6 +3,15 @@ layout: page
 title: Thoughts & Takeways Archive
 permalink: /COVID19/archive/
 ---
+### May 10th thoughts & takeways:
+
+* The traffic volume recovery rate appears to be slowly increasing. This past week's growth is about 6% which is higher than the previous rate of about 10% per month. 
+
+* It will be interesting to see Mother's Day traffic counts as it'll probably be significantly higher than the previous Sundays, which will have an impact on the moving average. With Memorial Day around the corner as well, who knows what traffic could look like at the end of the month. 
+
+* I'm also curious about what kind of traffic is returning. Is it people commuting to work or people being more willing to do non-essential trips to salons, restaurants, parks, etc? Is it the economy being optimized for the post-Coronavirus world (Uber drivers switching to doordash or something similar)? Expect another post this week where I'll explore this.
+
+***
 
 ### May 6th thoughts & takeways:
 
