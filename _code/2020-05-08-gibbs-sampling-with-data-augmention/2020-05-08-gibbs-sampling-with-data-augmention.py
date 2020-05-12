@@ -167,6 +167,36 @@ fig_observations_hist
 # $$
 
 
+def sample_pi(a, b, z):
+    n_0 = np.sum(z == 0)
+    n_1 = np.sum(z == 1)
+
+    return np.random.beta(a + n_1, b + n_0)
+
+# ## Deriving $p(\mu_0 | \mu_1, \pi, \mathbf{z}, \mathbf{x})$ and $p(\mu_1 | \mu_0, \pi, \mathbf{z}, \mathbf{x})$
+#
+# This is what it looks like.
+
+
+def sample_mu(mu, pi, z, x):
+    return 0
+
+# ## Deriving $p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x})
+#
+# This is what it looks like.
+
+
+def sample_z(mu, pi, x):
+    return 0
+
+# ## Gibbs Sampling
+#
+# This is what it looks like.
+
+
+def gibbs_sampling_with_data_augmentation(x, m, l, a, b, lampda):
+    return
+
 # <!--bibtex
 #
 # @misc{gibbs,
