@@ -78,7 +78,7 @@ struct wrap_return_type<void>
 Since `wrap_return_type_t<void>` is an alias for `wrap_return_type<void>::type` this will lead to a substitution failure[^enableif]. This substitution failure does not lead to a compilation error, but instead removes this particular overload from the set. That is exactly what we want.
 
 # The Pipe Operator with Unravelled Optionals
-For the sake of completeness, let's have a look at the implementation of the pipe operator now. Only one thing has changed compared to the last iteration, which is that the operator does produce nested optionals anymore.
+For the sake of completeness, let's have a look at the implementation of the pipe operator now. Only one thing has changed compared to the last iteration, which is that the operator does not produce nested optionals anymore.
 
 ```c++
 template<typename T, typename F>
