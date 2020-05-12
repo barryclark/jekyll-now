@@ -4,12 +4,13 @@ title: "How cloud native is adopted and what’s coming next - All the Talks"
 description: "Read about how and why cloud native is being adopted from Cheryl Hung, CNCF Director of Ecosystem."
 image: /images/2020-04-16-how-cloud-native-is-adopted-and-whats-coming-next.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/5Bx3ZAajA7hN96
+video: https://www.youtube.com/embed/iBLTWna80Io
 tags:
   - Slides
   - "2020"
 ---
 
-I'm speaking at the All The Talks virtual event to fundraise for the Covid-19 outbreak, plus how Slack is handling the huge surge in demand using cloud native infrastructure.
+I spoke at the All The Talks virtual event to fundraise for the Covid-19 outbreak, plus how Slack is handling the huge surge in demand using cloud native infrastructure.
 
 Thank you to the participants for joining the live poll, and for sharing about you and how you run cloud native.
 
