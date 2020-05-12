@@ -1,8 +1,7 @@
 ---
 layout: page
 title: About
-about_page:  about.md
-#permalink: /about/
+permalink: /about/
 ---
 
 Some information about Danh Truong!
