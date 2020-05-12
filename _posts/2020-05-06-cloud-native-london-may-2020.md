@@ -12,20 +12,26 @@ tags:
   - "2020"
 ---
 
-As our May 2020 Cloud Native London virtual meetup kicked off, attendees joined us on Zoom and YouTube from across the world:
+As our May 2020 Cloud Native London virtual meetup kicked off, hundreds of attendees joined us on Zoom and YouTube from across the world:
 
 ![](/images/CNL_May_2020_locations.PNG)
 
-Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), and [D2iQ](https://d2iq.com).
+Thanks as always to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), and [SUSE](https://www.suse.com).
 
-First up, Grant Schofield from Humio discussed being Stateful in a Stateless Land (starting at [50:29](https://youtu.be/M8HnRvYZ05c?t=3029)). His takeaways are that:
+### Overview
+
+We had three great talks over the course of the evening. First up, Grant Schofield from Humio discussed being Stateful in a Stateless Land (starting at [50:29](https://youtu.be/M8HnRvYZ05c?t=3029)). His takeaways are that:
 
 * Running stateful systems in Kubernetes doesn’t require you use StatfulSets, alternative approaches such deployments may be better for your stateful workload.
 * Understanding the consistency needs of your application and employing other systems, such as Kafka and cloud storage, allows for orchestrating complex workloads in a stateless way.
 * Architecting your applications to take advantage of cloud native principles can allow for more flexible approaches to deploying, managing, and running your applications.
 
 
-Next up, Kevin Chen from Kong told us about Building a Modern Architectures with Service Mesh with Envoy (starting at [1:17:11](https://youtu.be/M8HnRvYZ05c?t=4631)). His takeaways will be posted once available.
+Next up, Kevin Chen from Kong told us about Building a Modern Architectures with Service Mesh with Envoy (starting at [1:17:11](https://youtu.be/M8HnRvYZ05c?t=4631)). He mentioned that:
+
+* Network management is becoming messier as we break apart monolith for microservice.
+* A service mesh is a pattern that can help simplify network management across all services.
+* Kuma is a open-source, open-governance service mesh!
 
 Finally,  Rob de Canha-Knight from SUSE wrapped up our evening by discussing An open source visual user experience for Cloud Native Platforms (starting [2:02:57](https://youtu.be/M8HnRvYZ05c?t=7377)). He summed it up in these points:
 
