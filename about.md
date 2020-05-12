@@ -12,6 +12,6 @@ Cheryl also advises startups on developer-led growth and open source strategy. S
 
 # Contact
 
-I'm available for paid speaking opportunities, advisory and board roles.
+Submit this form to enquire about paid speaking engagements, advisory and board roles.
 
 <script type="text/javascript" src="https://form.jotformeu.com/jsform/92682794245368"></script>
