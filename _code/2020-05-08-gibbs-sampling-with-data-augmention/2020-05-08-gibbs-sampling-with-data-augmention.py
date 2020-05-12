@@ -141,7 +141,31 @@ fig_observations_hist
 # \end{align*}
 # $$
 #
-# with $m, l, a, b$ are hyper parameters and $\lambda = 8$.
+# with $m, l, a, b$ are hyper parameters and $\lambda = \frac{1}{\sigma^2} = \frac{1}{8^2}$.
+#
+# Now, our job is just simply deriving these conditional distributions:
+# $p(\pi | \mu_0, \mu_1, \mathbf{z}, \mathbf{x})$,
+# $p(\mu_0 | \mu_1, \pi, \mathbf{z}, \mathbf{x})$,
+# $p(\mu_1 | \mu_0, \pi, \mathbf{z}, \mathbf{x})$,
+# $p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x})$.
+# Notice that I have changed the normal $x$ and $z$ to bold $\mathbf{x}$ and $\mathbf{z}$.
+# The reason is we don't just observe a single sample, but we observe the whole observations.
+# Therefore, we have to condition on the whole observations, denoted by $\mathbf{x}$ and $\mathbf{z}$.
+# So from now on, I will use $\mathbf{x}$, $\mathbf{z}$ to denote the whole observations,
+# and $x_i$, $z_i$ to denote the $i$th observation.
+
+# ## Deriving $p(\pi | \mu_0, \mu_1, \mathbf{z}, \mathbf{x})$
+#
+# $$
+# \begin{align*}
+#   p(\pi | \mu_0, \mu_1, \mathbf{z}, \mathbf{x})
+#       &= p(\pi | \mathbf{z}) \\
+#       &= Beta(a + n_1, b + n_0) \\
+# \end{align*}
+# \\
+# \text{where } n_k = \sum_{i = 1}^{n} \mathbb{1}(z_i = k) \text{ for } k \in \{0, 1\}
+# $$
+
 
 # <!--bibtex
 #
