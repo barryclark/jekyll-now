@@ -228,13 +228,15 @@ def sample_z(x, mu_0, mu_1, pi, lampda):
 
 # ## Gibbs Sampling
 #
-# This is what it looks like.
+# Implementing Gibbs sampling with data augmentation is actually very easy.
+# You just have to repeatedly sample parameters for a number of iterations.
+# Remember to use previously sampled parameters to update the conditional distribution of the current parameter being sampled.
 
 
 # +
 import pandas as pd
 
-def gibbs_sampling_with_data_augmentation(x, m, l, a, b, lampda, iterations, initial_params):
+def gibbs_sampling_with_data_augmentation(x, iterations, hypers, initial_params):
     pi = initial_params['pi']
     z = np.random.binomial(p=pi, size=len(x), n=1)
     mu_0 = initial_params['mu_0']
@@ -244,23 +246,38 @@ def gibbs_sampling_with_data_augmentation(x, m, l, a, b, lampda, iterations, ini
     trace = np.zeros((iterations, 3))
 
     for i in range(iterations):
-        pi = sample_pi(a, b, z)
-        z = sample_z(x, mu_0, mu_1, pi, lampda)
-        mu_0 = sample_mu_0(mu_1, z, x, m, l, lampda)
-        mu_1 = sample_mu_1(mu_0, z, x, m, l, lampda)
+        pi = sample_pi(hypers['a'], hypers['b'], z)
+        z = sample_z(x, mu_0, mu_1, pi, hypers['lambda'])
+        mu_0 = sample_mu_0(mu_1, z, x,
+                           hypers['m'],
+                           hypers['l'],
+                           hypers['lambda'])
+        mu_1 = sample_mu_1(mu_0, z, x,
+                           hypers['m'],
+                           hypers['l'],
+                           hypers['lambda'])
 
         trace[i] = np.array((mu_0, mu_1, pi))
 
     return pd.DataFrame(trace, columns=['mu_0', 'mu_1', 'pi'])
+# -
+
+# ## Result
+#
+# Applying the Gibbs sampling algorithm above with the following hyper parameters and initial parameters.
 
 
+# +
 initial_params = {'pi': 0.5, 'mu_0': 175, 'mu_1': 175}
+hypers = {'m': 175,
+          'l': 15**-2,
+          'a': 1,
+          'b': 1,
+          'lambda': 8**-2}
 trace = gibbs_sampling_with_data_augmentation(observations,
-                                              m=175, l=1 / (15**2),
-                                              a=1, b=1,
-                                              lampda=1 / (8**2),
                                               iterations=1000,
-                                              initial_params=initial_params)
+                                              initial_params=initial_params,
+                                              hypers=hypers)
 
 # Let's draw some stuffs out.
 fig, [mu_ax, pi_ax] = plt.subplots(2, 1, tight_layout=True, sharex=True)
@@ -281,6 +298,25 @@ pi_ax.set_ylabel('$p$')
 pi_ax.legend()
 # -
 
+# +
+# Throw away some beginning samples.
+trace = trace[200:]
+
+fig, axs = plt.subplots(1, 3, tight_layout=True, figsize=(12, 4.8))
+for (col, ax) in zip(('mu_0', 'mu_1', 'pi'), axs):
+    sns.distplot(trace[col], ax=ax, axlabel=f'$\{col}$ distribution')
+
+trace.describe()
+# -
+
+# From the result above, we can see that $\mu_0$ and $\mu_1$ converge to the true mean that are used to generate the observations.
+# Also, $\pi$ converges to $0.5$ which is the value we used to generate the data points early on.
+#
+# That's it for today.
+# Hopefully, you have learned something new for the day.
+# See you later!
+
+# # References
 # <!--bibtex
 #
 # @misc{gibbs,
@@ -297,4 +333,6 @@ pi_ax.legend()
 #
 # -->
 
+# Environment and Packages
+# !python --version
 # !pip freeze
