@@ -1,3 +1,4 @@
+JUPYTER=jupyter
 JUPYTEXT=jupytext
 NBCONVERT=jupyter nbconvert
 
@@ -16,6 +17,7 @@ md: $(MD_FILE)
 
 %.ipynb: %.py
 	$(JUPYTEXT) --to notebook --execute $<
+	$(JUPYTER) trust $@
 
 clean:
 	rm -r *.ipynb *.md *_files/

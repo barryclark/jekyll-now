@@ -27,13 +27,12 @@
 # To illustrate that, let's create a sample data that will be used later.
 
 # %matplotlib inline
+# %config InlineBackend.figure_formats = ['svg']
 
 # +
 import matplotlib as mpl
 mpl.rcParams['figure.dpi'] = 100
-# -
 
-# +
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
