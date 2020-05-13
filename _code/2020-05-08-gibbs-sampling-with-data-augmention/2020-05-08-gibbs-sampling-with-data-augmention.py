@@ -167,8 +167,8 @@ fig_observations_hist
 #       &\approx p(\mathbf{z} | \pi) p(\pi) \\
 #       &= \prod_{i = 1}^{n} p(z_i | \pi) p(\pi) \text{ (since each } z_i | \pi \text{ is iid with each other)} \\
 #       &= \frac{\pi^{n_1} (1 - \pi)^{n_0} \pi^{a - 1} (1 - \pi)^{b - 1}}{B(a, b)} \\
-#       &= \frac{\pi^{a + n_1 - 1} \pi^{b + n_0 - 1}}{B(a, b)} \\
-#       &\sim Beta(a + n_1, b + n_0) \\
+#       &= \frac{\pi^{a + n_1 - 1} (1 - \pi)^{b + n_0 - 1}}{B(a, b)} \\
+#       &= Beta(a + n_1, b + n_0) \\
 # \end{align*}
 # \\
 # \text{where } n_k = \sum_{i = 1}^{n} \mathbb{1}(z_i = k) \text{ for } k \in \{0, 1\}
@@ -183,19 +183,44 @@ def sample_pi(a, b, z):
 
 # ## Deriving $p(\mu_0 | \mu_1, \pi, \mathbf{z}, \mathbf{x})$ and $p(\mu_1 | \mu_0, \pi, \mathbf{z}, \mathbf{x})$
 #
-# This is what it looks like.
+# TODO
+# $$
+# \begin{align*}
+#   p(\mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z}) &= \mathcal{N}(M_0, L_0^{-1}) \\
+#   p(\mu_1 | \mu_0, \pi, \mathbf{x}, \mathbf{z}) &= \mathcal{N}(M_1, L_1^{-1}) \\
+# \end{align*}
+# $$
 
 
-def sample_mu(mu, pi, z, x):
-    return 0
+def sample_mu(mu, z, x, m, l, lampda, sex):
+    n = np.sum(z == sex)
+
+    L = l + n * lampda
+    M = (l * m + lampda * np.sum(x[z == sex])) / (l + n * lampda)
+    return np.random.normal(M, 1 / L)
 
 # ## Deriving $p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x})
 #
-# This is what it looks like.
+# TODO
+# $$
+# \begin{align*}
+#   p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x}) \approx \prod_{i = 1}^n Bernoulli(\alpha_{i, 1} / (\alpha_{i, 0} + \alpha_{i, 1}))
+# \end{align*}
+# $$
 
 
-def sample_z(mu, pi, x):
-    return 0
+# +
+from scipy.stats import norm
+
+
+def sample_z(x, mu_0, mu_1, pi, lampda):
+    alpha_0 = (1 - pi) * norm.pdf(x, loc=mu_0, scale=1 / lampda)
+    alpha_1 = pi * norm.pdf(x, loc=mu_1, scale=1 / lampda)
+
+    return np.random.binomial(size=len(x),
+                              p=alpha_1 / (alpha_0 + alpha_1),
+                              n=1)
+# -
 
 # ## Gibbs Sampling
 #
