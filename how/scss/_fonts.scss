@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+  html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
@@ -15,20 +15,6 @@ html { font-family: 'Inter', sans-serif; }
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-
-
-// @font-face{
-//   font-family: 'Inter';
-//   src: url('../fonts/Inter-Bold.woff') format('woff');
-//   src: url('../fonts/Inter-Bold.woff2') format('woff2');
-//   font-weight: bold;
-// }
-// @font-face { 
-//   font-family:  'Inter';
-//   src: url('../fonts/Inter-Regular.woff') format('woff');
-//   src: url('../fonts/Inter-Regular.woff2') format('woff2');
-//   font-weight: normal;
-// }
 
 @font-face { 
   font-family:  'SourceSerif';

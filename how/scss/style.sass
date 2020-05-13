@@ -1,0 +1,81 @@
+@import 'variables'
+@import 'reset'
+@import 'glitch'
+@import 'fonts'
+
+.cursor
+  width: 2rem
+  height: 2rem
+  border: 3px solid #000000
+  border-radius: 50%
+  position: absolute
+  transform: translate(-50%, -50%)
+  pointer-events: none
+  background: rgba(0,10,0,0.2)
+  backdrop-filter: blur(10px)
+  z-index: 6
+a
+  cursor: none    
+body 
+  cursor: none
+header
+  position: sticky
+  top: 8px
+  height: 8vh
+  width: 80%
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  padding: 0 3rem
+  justify-content: space-between
+  background: $white
+  margin: auto
+  border-radius: 64px
+  z-index: 2
+  .logo
+    flex: .5
+    svg
+      width: 72px
+      height: 72px
+  .hi-there
+    display: flex
+    flex-direction: column
+    flex: 1
+    justify-content: center
+    // align-items: center
+    h1
+      font-family: $title-font
+      font-size: 24px
+      font-weight: 600
+    h5
+      font-family: $body-font
+      font-size: 12px
+  a.blog
+    font-size: 40px
+    font-family: $title-font
+    text-decoration: none
+    color: $dark-grey
+    font-weight: 800
+    text-transform: uppercase
+    flex: 1
+  nav
+    flex: .5
+    ul.nav-links
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      a
+        text-decoration: none
+        color: $dark-grey
+        font-family: $title-font
+        font-weight: 600
+        flex: 1
+        width: 120px
+        height: 32px
+.hello
+  
+.who
+.how
+.what
+
+    

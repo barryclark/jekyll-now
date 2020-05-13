@@ -8,6 +8,7 @@ _site
 node_modules
 package.json
 _posts/.Ulysses-Group.plist
-
+prepros-6.config
+prepros.config
 README.md
 
