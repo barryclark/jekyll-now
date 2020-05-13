@@ -191,6 +191,8 @@ def sample_pi(a, b, z):
 # \end{align*}
 # $$
 
+# +
+
 
 def sample_mu(mu, z, x, m, l, lampda, sex):
     n = np.sum(z == sex)
@@ -199,7 +201,16 @@ def sample_mu(mu, z, x, m, l, lampda, sex):
     M = (l * m + lampda * np.sum(x[z == sex])) / (l + n * lampda)
     return np.random.normal(M, 1 / L)
 
-# ## Deriving $p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x})
+
+def sample_mu_0(mu_1, z, x, m, l, lampda):
+    return sample_mu(mu_1, z, x, m, l, lampda, sex=0)
+
+
+def sample_mu_1(mu_0, z, x, m, l, lampda):
+    return sample_mu(mu_0, z, x, m, l, lampda, sex=1)
+# -
+
+# ## Deriving $p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x})$
 #
 # TODO
 # $$
