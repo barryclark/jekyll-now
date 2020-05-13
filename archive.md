@@ -3,6 +3,14 @@ layout: page
 title: Thoughts & Takeways Archive
 permalink: /COVID19/archive/
 ---
+### May 13th thoughts & takeways:
+
+* The huge boost in traffic expected on Mother's Day didn't really happen. The volume on Sunday was higher than the previous week but not far from the trend that has been in place over the past two weeks. 
+
+* Yesterday's volume was the lowest for a Tuesday since April 6th. This was caused by the significant rain we got yesterday. This is also shown in the slower speeds & higher number of traffic incidents. 
+
+***
+
 ### May 10th thoughts & takeways:
 
 * The traffic volume recovery rate appears to be slowly increasing. This past week's growth is about 6% which is higher than the previous rate of about 10% per month. 
