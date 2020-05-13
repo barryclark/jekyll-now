@@ -71,7 +71,10 @@ for i in range(nb_observations):
 
 # Visualize what we've got.
 fig_observations_hist, ax = plt.subplots(1, 1, tight_layout=True)
-sns.distplot(observations, ax=ax)
+sns.distplot(observations,
+             ax=ax,
+             axlabel='Heights (cm)')
+ax.set_title('Observations distribution')
 # -
 
 # OK, so the question now becomes: from the observations above, can the distribution of heights for both sex be estimated,
@@ -303,8 +306,9 @@ pi_ax.legend()
 trace = trace[200:]
 
 fig, axs = plt.subplots(1, 3, tight_layout=True, figsize=(12, 4.8))
-for (col, ax) in zip(('mu_0', 'mu_1', 'pi'), axs):
-    sns.distplot(trace[col], ax=ax, axlabel=f'$\{col}$ distribution')
+for (col, ax, xlabel) in zip(('mu_0', 'mu_1', 'pi'), axs, ('cm', 'cm', '$p$')):
+    ax.set_title(f'$\{col}$ distribution')
+    sns.distplot(trace[col], ax=ax, axlabel=xlabel)
 
 trace.describe()
 # -
