@@ -156,11 +156,19 @@ fig_observations_hist
 
 # ## Deriving $p(\pi | \mu_0, \mu_1, \mathbf{z}, \mathbf{x})$
 #
+# Since when $\pi$ conditioning on $\mathbf{z}$ is independent of $\mu_0, \mu_1, \mathbf{x}$,
+# we can derive the conditional distribution of $\pi | \mathbf{z}$ as followed.
+#
 # $$
 # \begin{align*}
 #   p(\pi | \mu_0, \mu_1, \mathbf{z}, \mathbf{x})
 #       &= p(\pi | \mathbf{z}) \\
-#       &= Beta(a + n_1, b + n_0) \\
+#       &= \frac{p(\mathbf{z} | \pi) p(\pi)}{p(\mathbf{z})} \text{ (Bayes's Theorem)} \\
+#       &\approx p(\mathbf{z} | \pi) p(\pi) \\
+#       &= \prod_{i = 1}^{n} p(z_i | \pi) p(\pi) \text{ (since each } z_i | \pi \text{ is iid with each other)} \\
+#       &= \frac{\pi^{n_1} (1 - \pi)^{n_0} \pi^{a - 1} (1 - \pi)^{b - 1}}{B(a, b)} \\
+#       &= \frac{\pi^{a + n_1 - 1} \pi^{b + n_0 - 1}}{B(a, b)} \\
+#       &\sim Beta(a + n_1, b + n_0) \\
 # \end{align*}
 # \\
 # \text{where } n_k = \sum_{i = 1}^{n} \mathbb{1}(z_i = k) \text{ for } k \in \{0, 1\}
