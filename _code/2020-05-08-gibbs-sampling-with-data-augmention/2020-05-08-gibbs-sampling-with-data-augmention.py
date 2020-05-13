@@ -317,21 +317,11 @@ trace.describe()
 # See you later!
 
 # # References
-# <!--bibtex
 #
-# @misc{gibbs,
-#   title = {Gibbs sampling for Bayesian linear regression in Python},
-#   author = {Kieran R Campbell},
-#   url = {https://kieranrcampbell.github.io/blog/2016/05/15/gibbs-sampling-bayesian-linear-regression.html},
-# }
-#
-# @misc{gibbssampling,
-#  title = {Data Augment},
-#  author = {},
-#  url = {http://www2.stat.duke.edu/~rcs46/modern_bayes17/lecturesModernBayes17/lecture-8/08-data-augment.pdf},
-# }
-#
-# -->
+# * Gibbs sampling for Bayesian linear regression in Python by Kieran R Campbell,
+# [link](https://kieranrcampbell.github.io/blog/2016/05/15/gibbs-sampling-bayesian-linear-regression.html).
+# * Module 8: Gibbs Sampling and Data Augmentation by Rebecca C. Steorts,
+# [link](http://www2.stat.duke.edu/~rcs46/modern_bayes17/lecturesModernBayes17/lecture-8/08-data-augment.pdf).
 
 # Environment and Packages
 # !python --version
