@@ -1,18 +1,56 @@
----
-layout: default
----
+<link rel="shortcut icon" href="https://s2.ax1x.com/2019/05/07/EsSjLq.png" />
+<meta charset="UTF-8">
+<script src="/js/style.js"></script>
+<title>Rocky Web</title>
+<link rel="stylesheet" href="/semantic.css">
+<div class="header">
+<div class="ui secondary menu">
+  <div class="navigation">
+    <a class="active item" href="/">
+      首页
+    </a>
+    <a class="item" href="/topic.html">
+      Topic
+    </a>
+    <a class="item" href="/video-site.html">
+      视频
+    </a>
+    <a class="item" href="/资讯.html">
+      资讯
+    </a>
+        <a class="item" href="/fuwu.html">
+      服务
+    </a>
+            <a class="item" href="#massage">
+      最近网站都经历了什么
+    </a>
+                <a class="item" href="#massage">
+      版权和导航
+    </a>
+  </div>
+    <a class="ui item" href="/login-register.html">
+      注册、登录
+    </a>
+</div>
+  </div>
+<div class="ui breadcrumb">
+  <a class="section">首页</a></div>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class="ui star rating" data-rating="5"></div>
+<div class="ui massage" id="massage">
+  <h1>最近网站新闻</h1>
+  <div class="ui visible message">
+    <p>如您想尝试旧版网页，对不起，我们没有任何旧版代码</p>
+  </div>
+</div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div class="ui right floated horizontal list" id="copyright&menu">
+  <div class="disabled item" href="#">© Rocky</div>
+  <a class="item" href="/RockySoft">旗下软件公司</a>
+  <a class="item" href="#massage">信息/新闻</a>
+  <a class="item" href="/about">联系一下吧</a>
+</div>
+<div class="ui horizontal list">
+  <a class="item" href="/about">About Us关于</a>
+  <a class="item" href="/">工作</a>
 </div>

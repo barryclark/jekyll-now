@@ -3,15 +3,9 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
-
+  <h1>带你玩转代码</h1>
+  <a href="/">首页</a>
   <div class="entry">
     {{ content }}
   </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
 </article>
