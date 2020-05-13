@@ -196,7 +196,7 @@ def sample_mu(mu, z, x, m, l, lampda, sex):
 
     L = l + n * lampda
     M = (l * m + lampda * np.sum(x[z == sex])) / (l + n * lampda)
-    return np.random.normal(M, 1 / L)
+    return np.random.normal(M, 1 / np.sqrt(L))
 
 def sample_mu_0(mu_1, z, x, m, l, lampda):
     return sample_mu(mu_1, z, x, m, l, lampda, sex=0)
@@ -219,8 +219,8 @@ def sample_mu_1(mu_0, z, x, m, l, lampda):
 from scipy.stats import norm
 
 def sample_z(x, mu_0, mu_1, pi, lampda):
-    alpha_0 = (1 - pi) * norm.pdf(x, loc=mu_0, scale=1 / lampda)
-    alpha_1 = pi * norm.pdf(x, loc=mu_1, scale=1 / lampda)
+    alpha_0 = (1 - pi) * norm.pdf(x, loc=mu_0, scale=1 / np.sqrt(lampda))
+    alpha_1 = pi * norm.pdf(x, loc=mu_1, scale=1 / np.sqrt(lampda))
 
     return np.random.binomial(size=len(x),
                               p=alpha_1 / (alpha_0 + alpha_1),
@@ -231,8 +231,56 @@ def sample_z(x, mu_0, mu_1, pi, lampda):
 #
 # This is what it looks like.
 
-def gibbs_sampling_with_data_augmentation(x, m, l, a, b, lampda, iterations):
-    return
+
+# +
+import pandas as pd
+
+def gibbs_sampling_with_data_augmentation(x, m, l, a, b, lampda, iterations, initial_params):
+    pi = initial_params['pi']
+    z = np.random.binomial(p=pi, size=len(x), n=1)
+    mu_0 = initial_params['mu_0']
+    mu_1 = initial_params['mu_1']
+
+    # Create trace to store sampling results of (mu_0, mu_1 and pi)
+    trace = np.zeros((iterations, 3))
+
+    for i in range(iterations):
+        pi = sample_pi(a, b, z)
+        z = sample_z(x, mu_0, mu_1, pi, lampda)
+        mu_0 = sample_mu_0(mu_1, z, x, m, l, lampda)
+        mu_1 = sample_mu_1(mu_0, z, x, m, l, lampda)
+
+        trace[i] = np.array((mu_0, mu_1, pi))
+
+    return pd.DataFrame(trace, columns=['mu_0', 'mu_1', 'pi'])
+
+
+initial_params = {'pi': 0.5, 'mu_0': 175, 'mu_1': 175}
+trace = gibbs_sampling_with_data_augmentation(observations,
+                                              m=175, l=1 / (15**2),
+                                              a=1, b=1,
+                                              lampda=1 / (8**2),
+                                              iterations=1000,
+                                              initial_params=initial_params)
+
+# Let's draw some stuffs out.
+fig, [mu_ax, pi_ax] = plt.subplots(2, 1, tight_layout=True, sharex=True)
+iterations = np.arange(len(trace))
+mu_ax.scatter(iterations,
+              trace['mu_0'], c='r', s=1, label='$\mu_0$')
+mu_ax.scatter(iterations,
+              trace['mu_1'], c='g', s=1, label='$\mu_1$')
+
+mu_ax.set_title('$\mu_0$ and $\mu_1$ traceplot')
+mu_ax.set_ylabel('cm')
+mu_ax.legend()
+
+pi_ax.scatter(iterations, trace['pi'], s=1, label='$\pi$')
+pi_ax.set_title('$\pi$ traceplot')
+pi_ax.set_xlabel('Iterations')
+pi_ax.set_ylabel('$p$')
+pi_ax.legend()
+# -
 
 # <!--bibtex
 #
