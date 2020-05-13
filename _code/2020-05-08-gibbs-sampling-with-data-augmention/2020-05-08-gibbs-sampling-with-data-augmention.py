@@ -174,7 +174,6 @@ fig_observations_hist
 # \text{where } n_k = \sum_{i = 1}^{n} \mathbb{1}(z_i = k) \text{ for } k \in \{0, 1\}
 # $$
 
-
 def sample_pi(a, b, z):
     n_0 = np.sum(z == 0)
     n_1 = np.sum(z == 1)
@@ -192,8 +191,6 @@ def sample_pi(a, b, z):
 # $$
 
 # +
-
-
 def sample_mu(mu, z, x, m, l, lampda, sex):
     n = np.sum(z == sex)
 
@@ -201,10 +198,8 @@ def sample_mu(mu, z, x, m, l, lampda, sex):
     M = (l * m + lampda * np.sum(x[z == sex])) / (l + n * lampda)
     return np.random.normal(M, 1 / L)
 
-
 def sample_mu_0(mu_1, z, x, m, l, lampda):
     return sample_mu(mu_1, z, x, m, l, lampda, sex=0)
-
 
 def sample_mu_1(mu_0, z, x, m, l, lampda):
     return sample_mu(mu_0, z, x, m, l, lampda, sex=1)
@@ -223,7 +218,6 @@ def sample_mu_1(mu_0, z, x, m, l, lampda):
 # +
 from scipy.stats import norm
 
-
 def sample_z(x, mu_0, mu_1, pi, lampda):
     alpha_0 = (1 - pi) * norm.pdf(x, loc=mu_0, scale=1 / lampda)
     alpha_1 = pi * norm.pdf(x, loc=mu_1, scale=1 / lampda)
@@ -237,8 +231,7 @@ def sample_z(x, mu_0, mu_1, pi, lampda):
 #
 # This is what it looks like.
 
-
-def gibbs_sampling_with_data_augmentation(x, m, l, a, b, lampda):
+def gibbs_sampling_with_data_augmentation(x, m, l, a, b, lampda, iterations):
     return
 
 # <!--bibtex
