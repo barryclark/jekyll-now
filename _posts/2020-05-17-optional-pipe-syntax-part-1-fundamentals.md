@@ -20,7 +20,7 @@ Note that I changed the operator from `%` (modulo) to `|` (pipe) in this post co
 
 ## Calling Any Callable
 
-Before we get into the pipe operator itself we need to find a unified syntax to call any callable in C++. Surely it can be realised with templates[^stdfunction]. But if we stop to think about how to call any callable using a the same template syntax it gets tricky. Think, for example, how to pass in and call a member function on an object without the ``object.memberfunction()`` syntax. This is where C++17 alleviates us from going into the nitty-gritty details: we can just use [``std::invoke``](https://en.cppreference.com/w/cpp/utility/functional/invoke) in the ``<functional>`` header. Here is how it can be used:
+Before we get into the pipe operator itself we need to find a unified syntax to call any callable in C++. Surely it can be realised with templates[^stdfunction]. But if we stop to think about how to call any callable using the same template syntax it gets tricky. Think, for example, how to pass in and call a member function on an object without the ``object.memberfunction()`` syntax. This is where C++17 alleviates us from going into the nitty-gritty details: we can just use [``std::invoke``](https://en.cppreference.com/w/cpp/utility/functional/invoke) in the ``<functional>`` header. Here is how it can be used:
 
 ```c++
 using std::string;
