@@ -3,19 +3,13 @@
 @import 'glitch'
 @import 'fonts'
 
-.cursor
-  width: 2rem
-  height: 2rem
-  border: 3px solid #000000
-  border-radius: 50%
-  position: absolute
-  transform: translate(-50%, -50%)
-  pointer-events: none
-  background: rgba(0,10,0,0.2)
-  backdrop-filter: blur(10px)
-  z-index: 6
+// Style
+body
+  cursor: none
 a
-  cursor: none    
+  cursor: none
+  transform-origin: 100% 100%
+  color: $dark-grey    
 body 
   cursor: none
 header
@@ -60,22 +54,93 @@ header
     flex: 1
   nav
     flex: .5
+    z-index: 5
     ul.nav-links
       display: flex
       flex-direction: row
       justify-content: space-between
+      width: 300px
       a
         text-decoration: none
-        color: $dark-grey
         font-family: $title-font
         font-weight: 600
         flex: 1
-        width: 120px
+        width: 88px
         height: 32px
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: all 0.2s ease-in
 .hello
   
 .who
 .how
 .what
 
+// FX
+
+.glitch // glitch Text
+  display: block
+  animation-name: glitch-anim-text
+  animation-duration: 2s
+  --gap-horizontal: 12px
+  animation-timing-function: linear
+  animation-iteration-count: infinite
+  animation-delay: .5s
+
+@keyframes glitch-anim-text 
+  0%
+    transform: translate3d(0,0,0) 
+    clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%)
+  2% 
+    clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%)
+  4% 
+    clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%)
+  5% 
+    clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%)
+  6% 
+    clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%)
+  7% 
+    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%)
+  8% 
+    clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%)
+  9% 
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%)
+  9.9% 
+    transform: translate3d(calc(-1 * var(--gap-horizontal)),0,0) 
+  10%, 100% 
+    transform: translate3d(0,0,0) scale3d(1,1,1)
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+	
+
+
+
+
+
+.cursor // custom cursor
+  width: 1.5rem
+  height: 1.5rem
+  border: 3px solid #000000
+  border-radius: 50%
+  position: absolute
+  transform: translate(-50%, -50%)
+  pointer-events: none
+  background: rgba(0,10,0,0.2)
+  backdrop-filter: blur(10px)
+  z-index: 3
+  transition: all 0.1s ease-in
+  transition-property: background, transform, border
+  transform-origin: 100% 100%
+.link-mouse // cursor hover link
+  transform: scale(0.8)
+  background: $yellow
+  border: none
+  opacity: 0.05
+  border-radius: 0px
+.hover-link // hover link
+  color: $white
+  background: $yellow
+  border-radius: 8px
+  width: 100px
+  height: 32px
     

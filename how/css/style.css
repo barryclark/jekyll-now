@@ -539,24 +539,16 @@ html {
   src: url("../fonts/SourceSerifPro-Bold.otf.woff2") format("woff2");
   font-weight: bold;
 }
-.cursor {
-  width: 2rem;
-  height: 2rem;
-  border: 3px solid #000000;
-  border-radius: 50%;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  pointer-events: none;
-  background: rgba(0, 10, 0, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  z-index: 6;
+body {
+  cursor: none;
 }
 
 a {
   cursor: none;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  color: #333;
 }
 
 body {
@@ -634,6 +626,7 @@ header nav {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
+  z-index: 5;
 }
 header nav ul.nav-links {
   display: -webkit-box;
@@ -646,15 +639,180 @@ header nav ul.nav-links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 300px;
 }
 header nav ul.nav-links a {
   text-decoration: none;
-  color: #333;
   font-family: "SourceSerif";
   font-weight: 600;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 120px;
+  width: 88px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.glitch {
+  display: block;
+  -webkit-animation-name: glitch-anim-text;
+          animation-name: glitch-anim-text;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  --gap-horizontal: 12px;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes glitch-anim-text {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+            clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+  }
+  2% {
+    -webkit-clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+            clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+  }
+  4% {
+    -webkit-clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+            clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+  }
+  5% {
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+            clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+  }
+  6% {
+    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+            clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+  }
+  7% {
+    -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+            clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+  }
+  8% {
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+            clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+  }
+  9% {
+    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+            clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  }
+  9.9% {
+    -webkit-transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
+            transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
+  }
+  10%, 100% {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes glitch-anim-text {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+            clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+  }
+  2% {
+    -webkit-clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+            clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+  }
+  4% {
+    -webkit-clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+            clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+  }
+  5% {
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+            clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+  }
+  6% {
+    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+            clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+  }
+  7% {
+    -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+            clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+  }
+  8% {
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+            clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+  }
+  9% {
+    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+            clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  }
+  9.9% {
+    -webkit-transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
+            transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
+  }
+  10%, 100% {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+.cursor {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: rgba(0, 10, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 3;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition-property: background, border, -webkit-transform;
+  transition-property: background, border, -webkit-transform;
+  -o-transition-property: background, transform, border;
+  transition-property: background, transform, border;
+  transition-property: background, transform, border, -webkit-transform;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.link-mouse {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  background: #FEBC37;
+  border: none;
+  opacity: 0.05;
+  border-radius: 0px;
+}
+
+.hover-link {
+  color: #ffffff;
+  background: #FEBC37;
+  border-radius: 8px;
+  width: 100px;
   height: 32px;
 }
