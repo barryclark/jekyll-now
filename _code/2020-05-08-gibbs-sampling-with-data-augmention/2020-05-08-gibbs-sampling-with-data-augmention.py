@@ -187,7 +187,10 @@ def sample_pi(a, b, z):
 # First, we will derive the conditional distribution $p(\mu_0 | \mu_1, \pi, , \mathbf{z}, \mathbf{x})$.
 # The steps for deriving the other conditional distribution will be the same, and it will be a great exercise for you ;).
 #
-# TODO
+# Since we're deriving the distribution of a random variable, we're allowed to remove constants to simplify the calculation.
+# Perhaps a better term is considering these constants as part of normalizing constant, which makes a function become a valid $pdf$.
+# You will see this in action in the following formulas.
+#
 # $$
 # \begin{align*}
 #   p(\mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z})
@@ -195,13 +198,61 @@ def sample_pi(a, b, z):
 #       &= \frac{p(\mathbf{x} | \mu_0, \mu_1, \mathbf{z}) p(\mu_0 | \mu_1, \mathbf{z})}{p(x | \mu_1, \mathbf{z})} \\
 #       &\approx p(\mathbf{x} | \mu_0, \mu_1, \mathbf{z}) p(\mu_0) \\
 #       &= \prod_{i = 1}^n p(x_i | \mu_0, \mu_1, z_i) p(\mu_0) \\
+#       &= \prod_{i = 1}^n (\sqrt{\frac{\lambda}{2\pi}} \exp{(-\frac{\lambda}{2}(x_i - \mu_0)^2)})^{1 - z_i} (\sqrt{\frac{\lambda}{2\pi}} \exp{(-\frac{\lambda}{2}(x_i - \mu_1)^2)})^{z_i} p(\mu_0) \\
 # \end{align*}
 # $$
 #
+# Wow, that is a very long formula.
+# However, the term related to $\mu_1$ is not of our concerns, since we're finding the conditional distribution of $\mu_0$.
+# Therefore, we could safely consider it as normalizing constant and remove it from the equation.
+# So here we continue.
+#
 # $$
 # \begin{align*}
-#   p(\mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z}) &= \mathcal{N}(M_0, L_0^{-1}) \\
-#   p(\mu_1 | \mu_0, \pi, \mathbf{x}, \mathbf{z}) &= \mathcal{N}(M_1, L_1^{-1}) \\
+#   p(\mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z})
+#       &\approx \prod_{i = 1}^n (\exp{(-\frac{\lambda}{2}(x_i - \mu_0)^2)})^{1 - z_i} p(\mu_0) \\
+#       &= \exp{(-\frac{\lambda}{2} \sum_{i \in K} (x_i - \mu_0)^2)} \sqrt{\frac{l}{2\pi}} \exp{(-\frac{l}{2}(\mu_0 - m)^2)} \text{ with } K = \{i | z_i = 0\} \\
+#       &\approx \exp{(-\frac{\lambda}{2} \sum_{i \in K} (x_i - \mu_0)^2 - \frac{l}{2}(\mu_0 - m)^2)} \\
+#       &= \exp{(-\frac{\lambda |K| + l}{2} \mu_0^2 + (\lambda \sum_{i \in K} x_i + ml) \mu_0 - \frac{\lambda}{2} \sum_{i \in K} x_i^2)} \\
+# \end{align*}
+# $$
+#
+# Seems like we have reached the end.
+# But, what does the conditional distribution of $\mu_0$ look like?
+# If we consider a random variable $x \sim \mathcal{N}(\mu, \lambda^{-1})$,
+# its $pdf$ will look like this:
+#
+# $$
+# \begin{align*}
+# p(x)
+#   &= \sqrt{\frac{\lambda}{2\pi}} \exp{(-\frac{\lambda}{2} (x - \mu)^2)} \\
+#   &= \sqrt{\frac{\lambda}{2\pi}} \exp{(-\frac{\lambda}{2} x^2 + \lambda \mu x - \frac{\lambda}{2} \mu^2)} \\
+# \end{align*}
+# $$
+#
+# So, the term associates with $x^2$ is $-\frac{\lambda}{2}$ and the term associates with $x$ is $\lambda \mu$.
+# Applying this to the above equation, we come to that
+# $$
+# \begin{align*}
+#   \mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z} &\sim \mathcal{N} (M_0, L_0^{-1}) \\
+#   \text{ with }
+#       M_0 &= \frac{ml + \lambda \sum_{i \in K} x_i}{\lambda |K| + l}, \\
+#       L_0 &= \lambda |K| + l \\
+# \end{align*}
+# $$
+#
+# Similarly, you can find the other distribution.
+# Finally, we have the two conditional distributions that we're finding will have the following form.
+#
+# $$
+# \begin{align*}
+#   \mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z} &\sim \mathcal{N}(M_0, L_0^{-1}) \\
+#   \mu_1 | \mu_0, \pi, \mathbf{x}, \mathbf{z} &\sim \mathcal{N}(M_1, L_1^{-1}) \\
+#   \text{ with }
+#       n_k &= \sum_{i = 1}^n \mathbb{1}(z_i = k) \\
+#       L_k &= l + n_k \lambda \\
+#       M_k &= \frac{ml + \lambda \sum_{i: z_i = k} x_i}{l + n_k \lambda} \\
+#   \text{ where } k \in \{0, 1\} \\
 # \end{align*}
 # $$
 
