@@ -184,7 +184,20 @@ def sample_pi(a, b, z):
 
 # ## Deriving $p(\mu_0 | \mu_1, \pi, \mathbf{z}, \mathbf{x})$ and $p(\mu_1 | \mu_0, \pi, \mathbf{z}, \mathbf{x})$
 #
+# First, we will derive the conditional distribution $p(\mu_0 | \mu_1, \pi, , \mathbf{z}, \mathbf{x})$.
+# The steps for deriving the other conditional distribution will be the same, and it will be a great exercise for you ;).
+#
 # TODO
+# $$
+# \begin{align*}
+#   p(\mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z})
+#       &= p(\mu_0 | \mu_1, \mathbf{x}, \mathbf{z}) \\
+#       &= \frac{p(\mathbf{x} | \mu_0, \mu_1, \mathbf{z}) p(\mu_0 | \mu_1, \mathbf{z})}{p(x | \mu_1, \mathbf{z})} \\
+#       &\approx p(\mathbf{x} | \mu_0, \mu_1, \mathbf{z}) p(\mu_0) \\
+#       &= \prod_{i = 1}^n p(x_i | \mu_0, \mu_1, z_i) p(\mu_0) \\
+# \end{align*}
+# $$
+#
 # $$
 # \begin{align*}
 #   p(\mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z}) &= \mathcal{N}(M_0, L_0^{-1}) \\
