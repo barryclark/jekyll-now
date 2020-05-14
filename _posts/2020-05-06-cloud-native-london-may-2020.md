@@ -12,7 +12,7 @@ tags:
   - "2020"
 ---
 
-As our May 2020 Cloud Native London virtual meetup kicked off, hundreds of attendees joined us on Zoom and YouTube from across the world:
+As our May 2020 Cloud Native London virtual meetup kicked off, attendees joined across the world, from San Francisco to Taipei!
 
 ![](/images/CNL_May_2020_locations.PNG)
 
