@@ -6,7 +6,7 @@ permalink: /COVID19/archive/
 
 ### May 15th thoughts & takeways:
 
-* The decreasing trend in the traffic volumes is probably misleading on first glance. First of all, the bad weather on Tuesday reduced traffic volumes significantly. Also, it appears that the weather has caused on data issues at (Braker lane/Mopac)[{{site.baseurl}}/images/braker@mopac.PNG]. That location appears to now only be reporting half of the daily traffic. 
+* The decreasing trend in the traffic volumes is probably misleading on first glance. First of all, the bad weather on Tuesday reduced traffic volumes significantly. Also, it appears that the weather has caused on data issues at [Braker lane/Mopac]({{site.baseurl}}/images/braker@mopac.PNG). That location appears to now only be reporting half of the daily traffic. 
 
 * Inclement weather is forecast for tonight, so this weekend I will take inventory of what count locations I will remove from the dataset to get a more representative sample going forward.
 
