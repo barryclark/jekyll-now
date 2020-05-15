@@ -155,6 +155,10 @@ fig_observations_hist
 # Therefore, we have to condition on the whole observations, denoted by $\mathbf{x}$ and $\mathbf{z}$.
 # So from now on, I will use $\mathbf{x}$, $\mathbf{z}$ to denote the whole observations,
 # and $x_i$, $z_i$ to denote the $i$th observation.
+#
+# OK, now we will derive the conditional distributions.
+# Our game plan will be first deriving the conditional distribution,
+# and then show how a sampler based on the distribution be implemented in code.
 
 # ## Deriving $p(\pi | \mu_0, \mu_1, \mathbf{z}, \mathbf{x})$
 #
@@ -175,6 +179,8 @@ fig_observations_hist
 # \\
 # \text{where } n_k = \sum_{i = 1}^{n} \mathbb{1}(z_i = k) \text{ for } k \in \{0, 1\}
 # $$
+#
+# And here is the code to sample $\pi$.
 
 def sample_pi(a, b, z):
     n_0 = np.sum(z == 0)
@@ -211,7 +217,7 @@ def sample_pi(a, b, z):
 # \begin{align*}
 #   p(\mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z})
 #       &\approx \prod_{i = 1}^n (\exp{(-\frac{\lambda}{2}(x_i - \mu_0)^2)})^{1 - z_i} p(\mu_0) \\
-#       &= \exp{(-\frac{\lambda}{2} \sum_{i \in K} (x_i - \mu_0)^2)} \sqrt{\frac{l}{2\pi}} \exp{(-\frac{l}{2}(\mu_0 - m)^2)} \text{ with } K = \{i | z_i = 0\} \\
+#       &= \exp{(-\frac{\lambda}{2} \sum_{i \in K} (x_i - \mu_0)^2)} \sqrt{\frac{l}{2\pi}} \exp{(-\frac{l}{2}(\mu_0 - m)^2)} \text{ with } K = \{i : z_i = 0\} \\
 #       &\approx \exp{(-\frac{\lambda}{2} \sum_{i \in K} (x_i - \mu_0)^2 - \frac{l}{2}(\mu_0 - m)^2)} \\
 #       &= \exp{(-\frac{\lambda |K| + l}{2} \mu_0^2 + (\lambda \sum_{i \in K} x_i + ml) \mu_0 - \frac{\lambda}{2} \sum_{i \in K} x_i^2)} \\
 # \end{align*}
@@ -242,19 +248,11 @@ def sample_pi(a, b, z):
 # $$
 #
 # Similarly, you can find the other distribution.
-# Finally, we have the two conditional distributions that we're finding will have the following form.
-#
-# $$
-# \begin{align*}
-#   \mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z} &\sim \mathcal{N}(M_0, L_0^{-1}) \\
-#   \mu_1 | \mu_0, \pi, \mathbf{x}, \mathbf{z} &\sim \mathcal{N}(M_1, L_1^{-1}) \\
-#   \text{ with }
-#       n_k &= \sum_{i = 1}^n \mathbb{1}(z_i = k) \\
-#       L_k &= l + n_k \lambda \\
-#       M_k &= \frac{ml + \lambda \sum_{i: z_i = k} x_i}{l + n_k \lambda} \\
-#   \text{ where } k \in \{0, 1\} \\
-# \end{align*}
-# $$
+# Conditional distribution of $\mu_1 | \mu_0, \pi, \mathbf{x}, \mathbf{z}$
+# will have similar distribution to that of $\mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z}$,
+# but $K$ will be $K = \{i: z_i = 1\}$.
+
+# So now, let's implement the sampling code based on the conditional distributions.
 
 # +
 def sample_mu(mu, z, x, m, l, lampda, sex):
@@ -273,12 +271,25 @@ def sample_mu_1(mu_0, z, x, m, l, lampda):
 
 # ## Deriving $p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x})$
 #
-# TODO
+# Similarly, we can derive the conditional distribution of $\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x}$
+# using Bayes' theorem and throw away unnecessary constants to simplify the calculation.
+#
 # $$
 # \begin{align*}
-#   p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x}) \approx \prod_{i = 1}^n Bernoulli(\alpha_{i, 1} / (\alpha_{i, 0} + \alpha_{i, 1}))
+#   p(\mathbf{z} | \mu_0, \mu_1, \pi, \mathbf{x})
+#       &= \frac{p(\mathbf{x} | \mu_0, \mu_1, \pi, \mathbf{z}) p(\mathbf{z} | \mu_0, \mu_1, \pi)}{p(\mathbf{x} | \mu_0, \mu_1, \pi)} \\
+#       &\approx p(\mathbf{x} | \mu_0, \mu_1, \pi, \mathbf{z}) p(\mathbf{z} | \mu_0, \mu_1, \pi) \\
+#       &= \prod_{i = 1}^n p(x_i | \mu_0, \mu_1, \pi, z_i) p(z_i | \pi) \\
+#       &= \prod_{i = 1}^n (\mathcal{N}(\mu_0, \lambda^-1))^{1 - z_i} (\mathcal{N}(\mu_1, \lambda^-1))^{z_i} \pi^{z_i} (1 - \pi)^{1 - z_i} \\
+#       &= \prod_{i = 1}^n ((1 - \pi) \mathcal{N}(\mu_0, \lambda^{-1}))^{1 - z_i} (\pi \mathcal{N}(\mu_1, \lambda^{-1}))^{z_i} \\
+#       &= \prod_{i = 1}^n Bernoulli(\frac{\alpha_{i, 1}}{\alpha_{i, 0} + \alpha_{i, 1}}) \\
+#       \text{ with }
+#       \alpha_{i, 1} &= \pi \mathcal{N}(\mu_1, \lambda^{-1}), \\
+#       \alpha_{i, 0} &= (1 - \pi) \mathcal{N}(\mu_0, \lambda^{-1})
 # \end{align*}
 # $$
+#
+# Here is the implementation of the code to sample $\mathbf{z}$ based on the conditional distribution.
 
 
 # +
