@@ -152,6 +152,7 @@ Therefore, we'll need data augmentation.
 
 Let's introduce an indicator random variable $z \in \{0, 1\}$ indicates whether an observation belongs to male or female.
 Before figuring out the conditional distributions, we need to specify the prior distributions of the parameters.
+
 $$
 \begin{align*}
   \mu_1, \mu_2 &\stackrel{iid}{\sim} \mathcal{N}(m, l^{-1}) \\
@@ -259,6 +260,7 @@ $$
 
 So, the term associates with $x^2$ is $-\frac{\lambda}{2}$ and the term associates with $x$ is $\lambda \mu$.
 Applying this to the above equation, we come to that
+
 $$
 \begin{align*}
   \mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z} &\sim \mathcal{N} (M_0, L_0^{-1}) \\
