@@ -99,12 +99,12 @@ Gibbs sampling is one type of algorithm that can help you with that.
 
 In order to do that, in Gibbs sampling, we will follow these steps:
 
-1. Figure out the conditional distributions $p(\theta_1 | \theta_2, x)$ and $p(\theta_2 | \theta_1, x)$.
+1. Figure out the conditional distributions $p(\theta_1 \vert \theta_2, x)$ and $p(\theta_2 \vert \theta_1, x)$.
 1. Pick the initial $\theta_2^{(0)}$.
 1. Loop through a number of iterations:
 
-  1. Sample $\theta_1^{(i)} \sim p(\theta_1 | \theta_2^{(i-1)}, x)$.
-  1. Sample $\theta_2^{(i)} \sim p(\theta_2 | \theta_1^{(i)}, x)$.
+  1. Sample $\theta_1^{(i)} \sim p(\theta_1 \vert \theta_2^{(i-1)}, x)$.
+  1. Sample $\theta_2^{(i)} \sim p(\theta_2 \vert \theta_1^{(i)}, x)$.
 
 If you want to know how the algorithm is done, [here](https://kieranrcampbell.github.io/blog/2016/05/15/gibbs-sampling-bayesian-linear-regression.html) is a great article about Gibbs sampling and its implementation.
 
