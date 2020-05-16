@@ -163,7 +163,7 @@ fig_observations_hist
 # ## Deriving $p(\pi | \mu_0, \mu_1, \mathbf{z}, \mathbf{x})$
 #
 # Since when $\pi$ conditioning on $\mathbf{z}$ is independent of $\mu_0, \mu_1, \mathbf{x}$,
-# we can derive the conditional distribution of $\pi | \mathbf{z}$ as followed.
+# we can derive the conditional distribution of $\pi | \mathbf{z}$ as follows:
 #
 # $$
 # \begin{align*}
@@ -402,6 +402,3 @@ trace.describe()
 # * Module 8: Gibbs Sampling and Data Augmentation by Rebecca C. Steorts,
 # [link](http://www2.stat.duke.edu/~rcs46/modern_bayes17/lecturesModernBayes17/lecture-8/08-data-augment.pdf).
 
-# Environment and Packages
-# !python --version
-# !pip freeze
