@@ -26,5 +26,8 @@ publish: md
 	cp $(MD_FILE) $(POSTS_DIR)
 	cp -r $(MD_ASSETS) $(IMAGES_DIR)
 
+	# Change image paths in the published post.
+	sed -r 's/(!\[.*\]\()([^\)]+\))/\1{{ site.baseUrl }}\/images\/\2/g' -i $(POSTS_DIR)/$(MD_FILE)
+
 include ../../Makefile
 
