@@ -78,7 +78,7 @@ ax.set_title('Observations distribution')
 
 
 
-![svg](2020-05-16-gibbs-sampling-with-data-augmentation_files/2020-05-16-gibbs-sampling-with-data-augmentation_6_1.svg)
+![svg]({{ site.baseurl }}/images/2020-05-16-gibbs-sampling-with-data-augmentation_files/2020-05-16-gibbs-sampling-with-data-augmentation_6_1.svg)
 
 
 OK, so the question now becomes: from the observations above, can the distribution of heights for both sex be estimated,
@@ -137,7 +137,7 @@ fig_observations_hist
 
 
 
-![svg](2020-05-16-gibbs-sampling-with-data-augmentation_files/2020-05-16-gibbs-sampling-with-data-augmentation_10_1.svg)
+![svg]({{ site.baseurl }}/images/2020-05-16-gibbs-sampling-with-data-augmentation_files/2020-05-16-gibbs-sampling-with-data-augmentation_10_1.svg)
 
 
 
@@ -405,7 +405,7 @@ pi_ax.legend()
 
 
 
-![svg](2020-05-16-gibbs-sampling-with-data-augmentation_files/2020-05-16-gibbs-sampling-with-data-augmentation_22_1.svg)
+![svg]({{ site.baseurl }}/images/2020-05-16-gibbs-sampling-with-data-augmentation_files/2020-05-16-gibbs-sampling-with-data-augmentation_22_1.svg)
 
 
 
@@ -503,7 +503,7 @@ trace.describe()
 
 
 
-![svg](2020-05-16-gibbs-sampling-with-data-augmentation_files/2020-05-16-gibbs-sampling-with-data-augmentation_23_1.svg)
+![svg]({{ site.baseurl }}/images/2020-05-16-gibbs-sampling-with-data-augmentation_files/2020-05-16-gibbs-sampling-with-data-augmentation_23_1.svg)
 
 
 From the result above, we can see that $\mu_0$ and $\mu_1$ converge to the true mean that are used to generate the observations.
