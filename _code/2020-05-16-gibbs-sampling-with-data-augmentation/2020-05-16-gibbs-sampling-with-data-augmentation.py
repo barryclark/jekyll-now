@@ -1,6 +1,7 @@
 # ---
 # title: A Note about Gibbs Sampling with Data Augmentation
 # layout: post
+# use_math: true
 # jupyter:
 #   jupytext:
 #     formats: ipynb,py
@@ -94,12 +95,11 @@ ax.set_title('Observations distribution')
 #
 # In order to do that, in Gibbs sampling, we will follow these steps:
 #
-# 1. Figure out the conditional distributions $p(\theta_1 | \theta_2, x)$ and $p(\theta_2 | \theta_1, x)$.
+# 1. Figure out the conditional distributions $p(\theta_1 \vert \theta_2, x)$ and $p(\theta_2 \vert \theta_1, x)$.
 # 1. Pick the initial $\theta_2^{(0)}$.
 # 1. Loop through a number of iterations:
-#
-#   1. Sample $\theta_1^{(i)} \sim p(\theta_1 | \theta_2^{(i-1)}, x)$.
-#   1. Sample $\theta_2^{(i)} \sim p(\theta_2 | \theta_1^{(i)}, x)$.
+#     1. Sample $\theta_1^{(i)} \sim p(\theta_1 \vert \theta_2^{(i-1)}, x)$.
+#     1. Sample $\theta_2^{(i)} \sim p(\theta_2 \vert \theta_1^{(i)}, x)$.
 #
 # If you want to know how the algorithm is done, [here](https://kieranrcampbell.github.io/blog/2016/05/15/gibbs-sampling-bayesian-linear-regression.html) is a great article about Gibbs sampling and its implementation.
 #
@@ -134,6 +134,7 @@ fig_observations_hist
 #
 # Let's introduce an indicator random variable $z \in \{0, 1\}$ indicates whether an observation belongs to male or female.
 # Before figuring out the conditional distributions, we need to specify the prior distributions of the parameters.
+#
 # $$
 # \begin{align*}
 #   \mu_1, \mu_2 &\stackrel{iid}{\sim} \mathcal{N}(m, l^{-1}) \\
@@ -181,6 +182,7 @@ fig_observations_hist
 # $$
 #
 # And here is the code to sample $\pi$.
+
 
 def sample_pi(a, b, z):
     n_0 = np.sum(z == 0)
@@ -238,6 +240,7 @@ def sample_pi(a, b, z):
 #
 # So, the term associates with $x^2$ is $-\frac{\lambda}{2}$ and the term associates with $x$ is $\lambda \mu$.
 # Applying this to the above equation, we come to that
+#
 # $$
 # \begin{align*}
 #   \mu_0 | \mu_1, \pi, \mathbf{x}, \mathbf{z} &\sim \mathcal{N} (M_0, L_0^{-1}) \\
@@ -255,6 +258,8 @@ def sample_pi(a, b, z):
 # So now, let's implement the sampling code based on the conditional distributions.
 
 # +
+
+
 def sample_mu(mu, z, x, m, l, lampda, sex):
     n = np.sum(z == sex)
 
@@ -262,8 +267,10 @@ def sample_mu(mu, z, x, m, l, lampda, sex):
     M = (l * m + lampda * np.sum(x[z == sex])) / (l + n * lampda)
     return np.random.normal(M, 1 / np.sqrt(L))
 
+
 def sample_mu_0(mu_1, z, x, m, l, lampda):
     return sample_mu(mu_1, z, x, m, l, lampda, sex=0)
+
 
 def sample_mu_1(mu_0, z, x, m, l, lampda):
     return sample_mu(mu_0, z, x, m, l, lampda, sex=1)
@@ -295,6 +302,7 @@ def sample_mu_1(mu_0, z, x, m, l, lampda):
 # +
 from scipy.stats import norm
 
+
 def sample_z(x, mu_0, mu_1, pi, lampda):
     alpha_0 = (1 - pi) * norm.pdf(x, loc=mu_0, scale=1 / np.sqrt(lampda))
     alpha_1 = pi * norm.pdf(x, loc=mu_1, scale=1 / np.sqrt(lampda))
@@ -313,6 +321,7 @@ def sample_z(x, mu_0, mu_1, pi, lampda):
 
 # +
 import pandas as pd
+
 
 def gibbs_sampling_with_data_augmentation(x, iterations, hypers, initial_params):
     pi = initial_params['pi']
@@ -401,4 +410,3 @@ trace.describe()
 # [link](https://kieranrcampbell.github.io/blog/2016/05/15/gibbs-sampling-bayesian-linear-regression.html).
 # * Module 8: Gibbs Sampling and Data Augmentation by Rebecca C. Steorts,
 # [link](http://www2.stat.duke.edu/~rcs46/modern_bayes17/lecturesModernBayes17/lecture-8/08-data-augment.pdf).
-
