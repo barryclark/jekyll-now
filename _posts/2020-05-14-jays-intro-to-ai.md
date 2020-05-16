@@ -19,11 +19,17 @@ This first video is a gentle visual introduction to Artificial Intelligence (AI)
 **Contents**
 
 0:28 Why learn about AI?
+
 2:47 What is AI?
+
 3:44 Where machine learning intersects with business
+
 4:02 The simple trick at the heart of it all
+
 4:45 Simple prediction example using machine learning
+
 7:07 The ingredients of prediction: Features, labels, datasets, models, and weights
+
 7:56 Examples of prediction in business that generated over a $trillion
 
 
