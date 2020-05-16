@@ -1,6 +1,7 @@
 ---
 title: A Note about Gibbs Sampling with Data Augmentation
 layout: post
+use_math: true
 ---
 Hello there, my future me. Are you here to revise what Gibbs Sampling with data augmentation is?
 You are in the right place! However, there are still some problems that I haven't figured out.
