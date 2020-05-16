@@ -1,7 +1,7 @@
 {
     "python.formatting.autopep8Args": [
         "--ignore",
-        "E402,E26,E265"
+        "E402,E26,E265,E302"
     ]
 }
 
