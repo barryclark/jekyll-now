@@ -156,7 +156,7 @@ Is the ritual requested by old Paichang, __because__ he understands that an enli
 
 > "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
 
-Why would there be anything to do with the fox's body? What does it __do__? What does it changes?
+Why would there be anything to do with the fox's body? What does it __do__ to cremate it? What does it accomplish?
 
 
 ## A read about cause and effects
@@ -182,7 +182,7 @@ What has old Paichang done to receive this fruit and live five hundred lives as 
 The "I" changes every day. Every instant there's a new "I" emerging and an old "I" ceasing. It is the radical impermanence of the Self, dispersed in Indra's Net.  
 _"In the far distant past ... __I was__ ..."_ - this is so far in the past, how could there be anything left from the "I" that __was__.  
 It has already been dispersed, ceased, renewed, every instant between then and now. A radical change for every instant, not just for a second but for centuries.  
-There's nothing left really. So what is the "I" that old Paichang now claims he __was__ back then? If there's nothing left from it, __who__ was reborn five hundred times?
+If there's nothing left really, what is the "I" that old Paichang now claims he __was__ (a head priest) back then? If there's nothing left from it, __who__ was reborn five hundred times?
 
 > "Please say a __turning point__ for me [...] Hearing this, the old man __immediately was enlightened__."
 
@@ -230,20 +230,23 @@ After Dogen's slap, I was suggested to focus on the question. I started composin
 ### Answers trying to be clever
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
-\- Watch your steps if you don't want to fall.
-
-\- Does an enlightened person fall under the law of cause and effect or not?  
 \- When the ox walks into the mud, the mud sticks to his feet.
 
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- His mind is the entire world.
+
 ### Answers trying to be stupid
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- Who?
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- I sure do.
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
-\- Who?
+\- Watch your steps if you don't want to fall.
 
-### Answering in quotes
+### Answers in quotes
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- _Unshakable is the liberation of my mind. This is my last birth. Now there is no more renewed existence._ \[[SN 56.11](https://suttacentral.net/sn56.11/en/bodhi)\]
