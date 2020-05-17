@@ -226,22 +226,26 @@ Some notes:
 
 After Dogen's slap, I was suggested to focus on the question. I started composing answers trying to capture all those glimpses of understanding I had. Still not satisfied with any of those, probably never will be.
 
+### Answers trying to be clever
+
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- Watch your steps if you don't want to fall.
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- When the ox walks into the mud, the mud sticks to his feet.
+
+### Answers tryingt o be stupid
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- I sure do.
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- Who?
+
+### Answering in quotes
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- _Unshakable is the liberation of my mind. This is my last birth. Now there is no more renewed existence._ \[[SN 56.11](https://suttacentral.net/sn56.11/en/bodhi)\]
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
-\- When the ox walks into the mud, the mud sticks to his feet.
-
-\- Does an enlightened person fall under the law of cause and effect or not?  
-\- The gravel hits the bamboo, the gravel hits the floor, two hits, one sound.
-
-\- Does an enlightened person fall under the law of cause and effect or not?  
-\- A waterfall is just a river cut in half.
-
-Maybe this one is ok:
-
-\- Does an enlightened person fall under the law of cause and effect or not?  
-\- I sure do.
+\- _All dharmas are marked by emptiness; they neither arise nor cease, are neither defiled nor pure, neither increase nor decrease._ \[[Prajñāpāramitāhṛdaya Sūtra](https://en.wikipedia.org/wiki/Heart_Sutra)\]
