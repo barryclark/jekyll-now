@@ -220,6 +220,7 @@ Some notes:
 - How could there be any causality between old Paichang answering the question and his being reborn as a fox?
 - How could there be any causality between Paichang answering the question and old Paichang being enlightened?
 - How can a single answer be a turning point?
+- How does old Paichang even know he was reborn five hundred lives as a fox? How would a fox know anything about his rebirths? Does he know it with the same mind that answered this damning questions?
 - Is this whole case just completely wrong? Essentially wrong, being a text, being a **story** with all those causal relationships pointed out, while there are none in the eye of realization?
 
 
