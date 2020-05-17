@@ -234,7 +234,7 @@ After Dogen's slap, I was suggested to focus on the question. I started composin
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- When the ox walks into the mud, the mud sticks to his feet.
 
-### Answers tryingt o be stupid
+### Answers trying to be stupid
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- I sure do.
