@@ -1,6 +1,7 @@
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".nav-links li a");
 let headtitle = document.querySelector("a.blog");
+let cursorEye = document.querySelector(".eye");
 
 window.addEventListener('mousemove',cursor);
 
@@ -22,7 +23,11 @@ navLinks.forEach(link => {
 
 headtitle.addEventListener('mouseover',() =>{
   headtitle.classList.add('glitch');
+  mouseCursor.classList.add('cursor-eye');
+  cursorEye.classList.add('showEye');
 });
 headtitle.addEventListener('mouseleave',() =>{
   headtitle.classList.remove('glitch');
+  mouseCursor.classList.remove('cursor-eye');
+  cursorEye.classList.remove('showEye');
 });

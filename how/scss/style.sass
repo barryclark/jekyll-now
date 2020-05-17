@@ -51,7 +51,9 @@ header
     color: $dark-grey
     font-weight: 800
     text-transform: uppercase
-    flex: 1
+    flex: 0.5
+    width: 200px
+    background: green
   nav
     flex: .5
     z-index: 5
@@ -131,6 +133,21 @@ header
   transition: all 0.1s ease-in
   transition-property: background, transform, border
   transform-origin: 100% 100%
+  display: flex
+  justify-content: center
+  align-items: center
+.eye
+  background: $dark-grey
+  width: 0.5rem
+  height: 0.5rem
+  border-radius: 1rem
+  animation: move-eye infinite 1s ease
+  opacity: 0
+  .glare
+    background: $white
+    width: 0.3rem
+    height: 0.3rem
+    border-radius: 0.5rem
 .link-mouse // cursor hover link
   transform: scale(0.8)
   background: $yellow
@@ -143,4 +160,16 @@ header
   border-radius: 8px
   width: 100px
   height: 32px
-    
+.cursor-eye
+  background: $white
+  transform: scale(2)
+  border: 3px solid $dark-grey
+.showEye 
+  opacity: 1
+@keyframes move-eye
+  0%
+    transform: translate(4px)
+  50%
+    transform: translate(-4px)
+  100%
+    transform: translate(4px)
