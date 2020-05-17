@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Datayana Sutras
+title: Homebrew Sutras
 permalink: /pages/datayana_sutras/toc
 ---
 
