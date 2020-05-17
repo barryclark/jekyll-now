@@ -4,11 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Discovered Buddhism in 2000, started practicing in 2010. Based in Seattle, practicing in a Soto Zen Sangha.
 
 ### Contact me
 
