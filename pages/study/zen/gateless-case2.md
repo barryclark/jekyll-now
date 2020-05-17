@@ -217,9 +217,10 @@ Here's some excerpts I took right in the face:
 
 Some notes:
 - How could someone dare to judge old and new Paichang's answer as right or wrong?  
-- How could there be any causal relationship between old Paichang answering the question and his being reborn as a fox?
-- How could there be any causal relationship between Paichang answer the question and old Paichang being enlightened?
-- How can a single answer be a turning point?  
+- How could there be any causality between old Paichang answering the question and his being reborn as a fox?
+- How could there be any causality between Paichang answering the question and old Paichang being enlightened?
+- How can a single answer be a turning point?
+- Is this whole case just completely wrong? Essentially wrong, being a text, being a **story** with all those causal relationships pointed out, while there are none in the eye of realization?
 
 
 ## Composing an answer?
