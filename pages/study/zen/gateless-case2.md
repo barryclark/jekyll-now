@@ -226,7 +226,7 @@ Some notes:
 
 ## Composing an answer?
 
-After Dogen's slap, I was suggested to focus on the question. I started composing answers trying to capture all those glimpses of understanding I had. Still not satisfied with any of those, probably never will be.
+After Dogen's slap, I was suggested to focus on the question. I started writing answers that came to be, trying to capture all those glimpses of understanding I had earlier in this process. Still not satisfied with any of those, probably never will be.
 
 ### Answers trying to be clever
 
@@ -234,7 +234,7 @@ After Dogen's slap, I was suggested to focus on the question. I started composin
 \- When the ox walks into the mud, the mud sticks to his feet.
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
-\- His mind is the entire world.
+\- His mind is the entire world, samsara and nirvana, conditioned and free from conditioning.
 
 ### Answers trying to be stupid
 
