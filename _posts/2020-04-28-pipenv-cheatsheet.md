@@ -48,9 +48,9 @@ Crea un fichero requirements.txt
 Importa un fichero requirements.txt en el pipfile. Revisa las versiones
 ## pipenv install -c .
 Descubre los requerimientos dentro de tu código
-## pipenv --rm
+## pipenv --rm  
 Borra un entorno vitual
-## pipenv --support
+## pipenv --support  
 Para obtener la información detalla de pipenv en caso de problemas
 
 
