@@ -4,6 +4,15 @@ title: Thoughts & Takeways Archive
 permalink: /COVID19/archive/
 ---
 
+### May 18th thoughts & takeways:
+
+* Friday night/Saturday morning's inclement weather caused the highest number of reported traffic incidents since the beginning of the lockdown. 
+
+* The two rainstorms had a pretty major affect on the moving average, causing some data issues at some locations as I mentioned in the last update. As comparing to two weeks ago, only Tuesday and Saturday saw much less volume (-6%, and -2% respectively). I'd expect to see this downward curve start to rebound starting today as the forecast for this week is much better and with the 3-day weekend coming up.
+
+
+***
+
 ### May 15th thoughts & takeways:
 
 * The decreasing trend in the traffic volumes is probably misleading on first glance. First of all, the bad weather on Tuesday reduced traffic volumes significantly. Also, it appears that the weather has caused on data issues at [Braker lane/Mopac]({{site.baseurl}}/images/braker@mopac.PNG). That location appears to now only be reporting half of the daily traffic. 
