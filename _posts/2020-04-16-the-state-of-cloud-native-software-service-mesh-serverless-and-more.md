@@ -11,7 +11,7 @@ tags:
 
 My second virtual talk of the day (!) is an overview of cloud native and Kubernetes in 2019, including how Slack is handling the huge surge in demand using cloud native infrastructure.
 
-[Video available here](https://konghq.com/videos/the-state-of-cloud-native-software-service-mesh-serverless-and-more/) (requires sign up)
+[Video available here.](https://konghq.com/videos/the-state-of-cloud-native-software-service-mesh-serverless-and-more/)
 
 Thank you everyone for taking part in the live polls! Folks from all over the world joined:
 
