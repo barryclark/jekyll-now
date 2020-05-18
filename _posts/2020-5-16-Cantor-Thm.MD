@@ -27,19 +27,19 @@ After extracting a couple of examples to Haskell, I was able to produce these th
 An order isomorphism from ![equation](https://latex.codecogs.com/gif.latex?\mathbb{Q}&space;-&space;\lbrace&space;0&space;\rbrace) to ![equation](https://latex.codecogs.com/gif.latex?\mathbb{Q}):
 
 <div class="iframe_container">
-  <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~emarzion/6.embed"></iframe>
+  <iframe width="450" height="400" frameborder="0" scrolling="no" src="//plotly.com/~emarzion/6.embed"></iframe>
 </div>
 
 An order isomorphism from ![equation](https://latex.codecogs.com/gif.latex?\mathbb{Q}&space;\times&space;\mathbb{Q}) to ![equation](https://latex.codecogs.com/gif.latex?\mathbb{Q}):
 
 <div class="iframe_container">
-  <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~emarzion/8.embed"></iframe>
+  <iframe width="450" height="400" frameborder="0" scrolling="no" src="//plotly.com/~emarzion/8.embed"></iframe>
 </div>
 
 An order isomorphism from ![equation](https://latex.codecogs.com/gif.latex?\mathbb{Q}&space;\sqcup&space;\mathbb{Q}) to ![equation](https://latex.codecogs.com/gif.latex?\mathbb{Q}):
 
 <div class="iframe_container">
-  <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~emarzion/11.embed"></iframe>
+  <iframe width="450" height="400" frameborder="0" scrolling="no" src="//plotly.com/~emarzion/11.embed"></iframe>
 </div>
 
 ---
