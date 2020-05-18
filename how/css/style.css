@@ -618,11 +618,10 @@ header a.blog {
   color: #333;
   font-weight: 800;
   text-transform: uppercase;
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   width: 200px;
-  background: green;
 }
 header nav {
   -webkit-box-flex: 0.5;
