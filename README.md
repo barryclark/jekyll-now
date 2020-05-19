@@ -1,6 +1,6 @@
 # Holochain Open-Dev Blog
 
-Visit the blog: https://holochain-open-dev.github.io.
+Visit the blog: https://holochain-open-dev.github.io/blog/
 
 This is a small blog intended for holochain developers, from the holochain open-dev community. 
 
