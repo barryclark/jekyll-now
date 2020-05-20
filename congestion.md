@@ -4,7 +4,7 @@ title: Congestion during COVID-19
 permalink: /COVID19/congestion/
 ---
 
-It's relatively easy to measure volumes and speeds. It's harder to tell from that data if there is congestion at that location. Many companies provide city-wide congestion performance data for a hefty premium. I wanted to see if I could calculate the change in congestion by using public open data. [The city of Austin publishes bluetooth travel time sensor data at a number of locations.](https://data.austintexas.gov/Transportation-and-Mobility/Bluetooth-Travel-Sensors-Traffic-Match-Summary-Rec/v7zg-5jg9). 
+It's relatively easy to measure volumes and speeds. It's harder to tell from that data if there is congestion at that location. Many companies provide city-wide congestion performance data for a hefty premium. I wanted to see if I could calculate the change in congestion by using public open data. [The city of Austin publishes bluetooth travel time sensor data at a number of locations.](https://data.austintexas.gov/Transportation-and-Mobility/Bluetooth-Travel-Sensors-Traffic-Match-Summary-Rec/v7zg-5jg9)
 
 ***
 
@@ -35,6 +35,6 @@ If we group by corridor:
 
 Travel time change by segment:
 
-<iframe width="700" height="800" frameborder="0" scrolling="yes" src="//plotly.com/~charlie2343/72.embed"></iframe>
+<iframe width="700" height="800" frameborder="0" scrolling="yes" src="//plotly.com/~charlie2343/72.embed?link=false"></iframe>
 
 ***
