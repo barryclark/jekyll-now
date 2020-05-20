@@ -4,6 +4,14 @@ title: Thoughts & Takeways Archive
 permalink: /COVID19/archive/
 ---
 
+### May 20th thoughts & takeways:
+
+* Check out the analysis I did below on travel time and congestion in Austin post-COVID. While traffic volumes have decreased around 40-50%, congestion has reduced 94% and travel times have been reduced by 30%.
+
+* Volumes have started to bounce back now that weather has returned to being hot and humid.
+
+***
+
 ### May 18th thoughts & takeways:
 
 * Friday night/Saturday morning's inclement weather caused the highest number of reported traffic incidents since the beginning of the lockdown. 
