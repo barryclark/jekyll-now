@@ -68,7 +68,6 @@ The additional brilliance of VarPro is that it gives us expressions for the deri
 To rewrite problem $$\eqref{3_LSMinimization}$$ using linear algebra we introduce the matrix of function values $$\boldsymbol{\Phi}(\boldsymbol{\alpha}) \in \mathbb{R}^{m \times n}$$:
 
 $$\boldsymbol{\Phi}(\boldsymbol{\alpha}) =  (\Phi_{ik})
-
 = \left(\begin{matrix}
 \phi_1(\boldsymbol{\alpha},t_1) & \dots & \phi_n(\boldsymbol{\alpha},t_1) \\
 \vdots & \ddots & \vdots \\
@@ -76,9 +75,13 @@ $$\boldsymbol{\Phi}(\boldsymbol{\alpha}) =  (\Phi_{ik})
 \phi_1(\boldsymbol{\alpha},t_m) & \dots & \phi_n(\boldsymbol{\alpha},t_m) \\
 \end{matrix}\right),$$
 
-so for the matrix elements we have $$\Phi_{ik} = \phi_k(\boldsymbol{\alpha},t_i)$$. For fitting problems we can usually assume $$m>n$$, which means the matrix has more rows than colums[^matrix_shape_phi]. That means the matrix does *not* have full rank, which will be important later.
+so for the matrix elements we have $$\Phi_{ik} = \phi_k(\boldsymbol{\alpha},t_i)$$. For fitting problems we can assume more observations than model base functions, i.e. $$m>n$$. That means that matrix has more rows than colums[^matrix_shape_phi], which in turn implies that the matrix does *not* have full rank. This fact will be important later.
 
-We can now write $$\boldsymbol{\eta}(\boldsymbol{\alpha},\boldsymbol{c})=\boldsymbol{\Phi}(\boldsymbol{\alpha})\boldsymbol{c}$$, so the linear problem $$\eqref{3_LSMinimization}$$ becomes
+We can now write
+
+$$\boldsymbol{\eta}(\boldsymbol{\alpha},\boldsymbol{c})=\boldsymbol{\Phi}(\boldsymbol{\alpha})\boldsymbol{c},$$
+
+so the linear problem $$\eqref{3_LSMinimization}$$ becomes
 
 $$ \min_{\hat{\boldsymbol{c}} \in \mathbb{R}^n} \lVert{\boldsymbol{y_w}-\boldsymbol{\Phi_w}(\boldsymbol{\alpha})\,\hat{\boldsymbol{c}}}\rVert_2^2 \label{5_LSMinimizationLinAlg} \tag{5},$$
 
@@ -92,23 +95,34 @@ $$\hat{\boldsymbol{c}} = \boldsymbol{\Phi}(\boldsymbol{\alpha})^\dagger \boldsym
 
 using the pseudoinverse $$\boldsymbol{\Phi}(\boldsymbol{\alpha})^\dagger$$ of $$\boldsymbol{\Phi}(\boldsymbol{\alpha})$$. This allows us to rewrite the nonlinear problem by plugging in $$\hat{\boldsymbol{c}}$$ from above
 
-$$ \min_{\boldsymbol{\alpha} \in \mathcal{S}_\alpha} \lVert (\boldsymbol{1}-\boldsymbol{\Phi_w}(\boldsymbol{\alpha})\boldsymbol{\Phi_w}^\dagger(\boldsymbol{\alpha}))\boldsymbol{y_w} \rVert_2^2 \label{6_NonlinProblemMatrix} \tag{6}.$$
+$$ \min_{\boldsymbol{\alpha} \in \mathcal{S}_\alpha} \lVert \boldsymbol{P}(\boldsymbol{\alpha})\boldsymbol{y_w} \rVert_2^2 \label{6_NonlinProblemMatrix} \tag{6},$$
 
-The matrix
+using the matrix
 
 $$\boldsymbol{P}(\boldsymbol{\alpha}) := \boldsymbol{1}-\boldsymbol{\Phi_w}(\boldsymbol{\alpha})\boldsymbol{\Phi_w}^\dagger(\boldsymbol{\alpha})$$
 
-is called the *projection onto the orthogonal complement of the range of* $$\boldsymbol{\Phi_w}$$ and is often written $$\boldsymbol{P}^\perp_{\boldsymbol{\Phi_w}(\boldsymbol{\alpha})}$$ in other publications[^kaufman1975]. Using this matrix we have written the squared sum of residuals as $$R_{WLS}(\boldsymbol{\alpha},\boldsymbol{c}) = \lVert{\boldsymbol{P}(\boldsymbol{\alpha})\boldsymbol{y_w}}\rVert_2^2$$. This is called the *projection functional* and the reason why the method is named *Variable Projection*[^mullen2009].
+which is called the *projection onto the orthogonal complement of the range of* $$\boldsymbol{\Phi_w}$$ and is often written $$\boldsymbol{P}^\perp_{\boldsymbol{\Phi_w}(\boldsymbol{\alpha})}$$ in other publications[^kaufman1975]. Using this matrix we have written the squared sum of residuals as $$R_{WLS}(\boldsymbol{\alpha},\boldsymbol{c}) = \lVert \boldsymbol{y_w}-\boldsymbol{\Phi}(\boldsymbol{\alpha})\hat{\boldsymbol{c}}\rVert_2^2 = \lVert{\boldsymbol{P}(\boldsymbol{\alpha})\boldsymbol{y_w}}\rVert_2^2$$. This is called the *projection functional* and the reason why the method is named *Variable Projection*[^mullen2009].
 
+At this point we are almost halfway there. Our aim is to minimize the projection functional using any (possibly constrained) least squares minimization algorithm. To achieve this we need two things: First we need a way of calculating the projection functional. We calculate it as $$\lVert \boldsymbol{y_w}-\boldsymbol{\Phi}(\boldsymbol{\alpha})\hat{\boldsymbol{c}}\rVert_2^2$$, rather than using the equivalent matrix expression in equation $$\eqref{6_NonlinProblemMatrix}$$. For that we need to calculate $$\hat{\boldsymbol{c}}$$ in a numerically feasible way, which can be achieved by either [QR Decomposition](https://en.wikipedia.org/wiki/QR_decomposition#Rectangular_matrix) or [Singular Value Decomposition (SVD)](http://www.omgwiki.org/hpec/files/hpec-challenge/svd.html) [^qrsvd_fullrank]. I will give these expressions later and now turn to the second thing we might need.
 
+### Analytical Derivatives
 
+It is possible to use derivative-free algorithms to minimize the projection functional[^approxderiv], but we might want to use an algorithm which requires the derivatives. Common implementations of the Levenberg-Marquardt algorithm need the Jacobian matrix $$\boldsymbol{J}(\boldsymbol{\alpha})\in \mathbb{R}^{m \times q}$$ of $$\boldsymbol{\eta}(\boldsymbol{\alpha},\hat{\boldsymbol{c}}(\boldsymbol{\alpha}))$$:
 
+$$\boldsymbol{J}(\boldsymbol{\alpha}) =  (J_{ik})
+= \left(\begin{matrix}
+\frac{\partial}{\partial \alpha_1}\eta(\boldsymbol{\alpha},\hat{\boldsymbol{c}}(\boldsymbol{\alpha}),t_1) & \dots & \frac{\partial}{\partial \alpha_q}\eta(\boldsymbol{\alpha},\hat{\boldsymbol{c}}(\boldsymbol{\alpha}),t_1) \\
+\vdots & \ddots & \vdots \\
+\vdots & \ddots & \vdots \\
+\frac{\partial}{\partial \alpha_1}\eta(\boldsymbol{\alpha},\hat{\boldsymbol{c}}(\boldsymbol{\alpha}),t_m)) & \dots & \frac{\partial}{\partial \alpha_q}\eta(\boldsymbol{\alpha},\hat{\boldsymbol{c}}(\boldsymbol{\alpha}),t_m) \\
+\end{matrix}\right),$$
 
+with matrix entries $$J_{ik} = \frac{\partial}{\partial \alpha_k}\eta(\boldsymbol{\alpha},\hat{\boldsymbol{c}}(\boldsymbol{\alpha}),t_i)$$.
 
 ## !!!!!!!!! SVD AND STUFF!!!!!!!!
 !!!!!!!!!!!!!!!!DAS HIER SPÄTER MACHEN!!!!!!!!!!!!!!!!!
 
-I will follow O'Leary by giving the solution to this problem using [Singular Value Decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition).
+I will follow O'Leary by giving the solution to this problem using Singular Value Decomposition.
 
 
 
@@ -124,3 +138,5 @@ I will follow O'Leary by giving the solution to this problem using [Singular Val
 [^mistake_paper]: In the published version of the paper it is mistakenly stated that $$\hat{\boldsymbol{c}}$$ equals $$\boldsymbol{\Phi}(\boldsymbol{\alpha})^\dagger \boldsymbol{y}$$ instead of $$\boldsymbol{\Phi}(\boldsymbol{\alpha})^\dagger \boldsymbol{y_w}$$. This mistake is corrected in the online manuscript. However the mistake also occurs when the expression for the derivatives are given and is not corrected in either version. In both expressions for $$\boldsymbol{a_k}$$ and $$\boldsymbol{b_k}$$ the symbol $$\boldsymbol{y}$$ needs to be replaced by $$\boldsymbol{Wy}$$. Unless I am completely mistaken, which is always a possibility...
 [^mullen2009]:Mullen, K.M., Stokkum, I.H.M.v.: The variable projection algorithm in time-resolved spectroscopy, microscopy and mass spectrometry applications. *Numer Algor* **51**, 319–340 (2009). [https://doi.org/10.1007/s11075-008-9235-2](https://doi.org/10.1007/s11075-008-9235-2).
 [^kaufman1975]: Kaufman, L.: A variable projection method for solving separable nonlinear least squares problems. *BIT* **15**, 49–57 (1975). [https://doi.org/10.1007/BF01932995](https://doi.org/10.1007/BF01932995)
+[^qrsvd_fullrank]: Since $$\boldsymbol{\Phi_w}(\boldsymbol{\alpha})$$ does not have full rank, we have to use the *reduced* versions of both decompositions.
+[^approxderiv]: Or we could numerically approximate the derivatives.
