@@ -20,7 +20,7 @@ __MD Anderson__ Post Doctoral Fellow (Sarcoma Medical Oncology)
 __Arizona State University__ Biomedical Engineering PhD (advisor: Mehdi Nikkhah). My thesis was titled _Unravelling higher order chromatin organisation through statistical analysis_ and is available through the [Edinburgh Research Archive](https://www.era.lib.ed.ac.uk/handle/1842/22906).
 
 `2012-14`
-__University of Texas at Arlinton__ MSc Biomedical Engineering
+__University of Texas at Arlington & Univesity of Texas Southwestern Medical Center__ MSc Biomedical Engineering
 
 `2009-14`
 __University of Texas at Arlington__ BSc Biology 
