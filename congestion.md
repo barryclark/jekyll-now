@@ -20,7 +20,7 @@ Travel time is more useful when looking at individual segments. Check out the li
 
 Travel time index is defined as the congested travel time divided by the free-flow travel time. A value close to 1 would mean there is no congestion, a value of 3 would mean it would take 3 times as long to complete that trip than if there was no congestion. 
 
-To estimate a free-flow travel time I pulled 2019 weekday 5:00-6:00 AM and 7:30-10:00PM travel times. I assumed that a majority of the data in these ranges would be close to free-flow conditions but also have a suitable amount of samples. Last year saw a travel time index of 1.61, post-lockdown this year was 1.04. This is a 94% drop in congestion as compared to a year ago. 
+To estimate a free-flow travel time I pulled 2019 weekday 5:00-6:00 AM and 7:30-10:00PM travel times. I assumed that a majority of the data in these ranges would be close to free-flow conditions but also have a suitable amount of samples. Last year saw a travel time index of 1.61, post-lockdown this year was 1.04. This is a **94% drop in congestion as compared to a year ago.** 
 
 If we group by corridor:
 
