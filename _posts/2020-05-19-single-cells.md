@@ -15,14 +15,23 @@ Below are some publications, tutorials, and workshops that I found helpful.
 
 - [Current best practices in single‐cell RNA‐seq analysis: a tutorial](https://www.embopress.org/doi/10.15252/msb.20188746) - This is a must read for anyone entering the single-cell space. It details all of the current best practices while providing rationale and many alternate methods. It answered a majority of my questions when the tutorials I previously read did not give a reason as to why such methods were being performed on the data. 
 
+
 ## Tutorials
 
-- [Current best practices in single‐cell RNA‐seq analysis: a tutorial](https://www.embopress.org/doi/10.15252/msb.20188746) - This is a must read for anyone entering the single-cell space. It details all of the current best practices while providing rationale and many alternate methods. It answered a majority of my questions when the tutorials I previously read did not give a reason as to why such methods were being performed on the data. 
+- [Seurat](https://satijalab.org/seurat/vignettes.html)
+
+- [Monocle 3](https://cole-trapnell-lab.github.io/monocle3/docs/introduction/)
+
+- [Scanpy](https://scanpy.readthedocs.io/en/stable/tutorials.html)
+
 
 ## Workshops
 
+- [Orchestrating Single-Cell Analysis with Bioconductor](https://scrnaseq-course.cog.sanger.ac.uk/website/index.html) - This is a very in-depth and comprehensive workshop for single-cell RNA-seq analysis in R using packages from Bioconductor. I have not yet gone through it because I saw it today and it was posted online 2 days ago.
+
 - [ANALYSIS OF SINGLE CELL RNA-SEQ DATA](https://broadinstitute.github.io/2019_scWorkshop/) - This workshop may be a bit outdated now but it runs through the entire workflow of single-cell RNA-seq processing and analysis. I found it incredibly useful as not only does it provide many alternate methods for processing, this workshop also includes the code to run the different packages too. 
 
+- [Analysis of single cell RNA-seq data](https://scrnaseq-course.cog.sanger.ac.uk/website/index.html) - The above workshop and this one may be outdate as well since both were published in 2019. Nonetheless, they still contain useful information including comparisons between different analytical methods, albeit perhaps outdated as well.  
 
 - [Single Cell Genomics Day: A Practical Workshop](https://satijalab.org/scgd/) - Definitely keep an eye on this as it is updated yearly. This is in-person workshop but the presentations are recorded (some of them) and the slides are posted. It is a good place to check out if you are interested in seeing how the latest techniques are being used. 
 
