@@ -30,7 +30,7 @@ VarPro is concerned with fitting model functions $$\eta$$ that can be written as
 
 $$\eta(\boldsymbol{\alpha},\boldsymbol{c},t) = \sum_{j=1}^{n} c_j\phi_j(\boldsymbol{\alpha},t).$$
 
-We group the parameters in vectors $$\boldsymbol{c}=(c_1,...,c_n)^T\in\mathbb{R}^n$$ for the linear parameters, and $$\boldsymbol{\alpha}=(\alpha_1,...,\alpha_q)^T\in\mathcal{S}_\alpha \subseteq \mathbb{R}^q$$ for the nonlinear parameters. In total we have $$n$$ linear parameters and $$q$$ nonlinear parameters. The independent variable of model function $$\eta$$ is $$t$$. It could, for example, represent physical quantities such as time or space. It is important to note that when I use the terms *linear* or *nonlinear* it refers behaviour of the functions $$\eta$$ and $$\phi_j$$ with respect to the parameter vectors $$\boldsymbol{\alpha}$$ and $$\boldsymbol{c}$$ but not the independent variable $$t$$. For the fitting process it is completely irrelevant if the model is linear or nonlinear in $$t$$.
+I will refer to the $$\phi_j$$ as the *model base functions*[^model_base_functions].We group the parameters in vectors $$\boldsymbol{c}=(c_1,...,c_n)^T\in\mathbb{R}^n$$ for the linear parameters, and $$\boldsymbol{\alpha}=(\alpha_1,...,\alpha_q)^T\in\mathcal{S}_\alpha \subseteq \mathbb{R}^q$$ for the nonlinear parameters. In total we have $$n$$ linear parameters and $$q$$ nonlinear parameters. The independent variable of model function $$\eta$$ is $$t$$. It could, for example, represent physical quantities such as time or space. It is important to note that when I use the terms *linear* or *nonlinear* it refers behaviour of the functions $$\eta$$ and $$\phi_j$$ with respect to the parameter vectors $$\boldsymbol{\alpha}$$ and $$\boldsymbol{c}$$ but not the independent variable $$t$$. For the fitting process it is completely irrelevant if the model is linear or nonlinear in $$t$$.
 
 ## The Weighted Least Squares Problem
 We want to fit our model to a vector $$\boldsymbol{y}$$ of observations
@@ -75,7 +75,7 @@ $$\boldsymbol{\Phi}(\boldsymbol{\alpha}) =  (\Phi_{ik})
 \phi_1(\boldsymbol{\alpha},t_m) & \dots & \phi_n(\boldsymbol{\alpha},t_m) \\
 \end{matrix}\right),$$
 
-so for the matrix elements we have $$\Phi_{ik} = \phi_k(\boldsymbol{\alpha},t_i)$$. For fitting problems I assume we have more observations than base model functions, i.e. $$m>n$$. That means that matrix has more rows than colums, which in turn implies that $$\text{rank}\boldsymbol{\Phi_w}(\boldsymbol{\alpha})\leq n$$. The matrix might or might not have full rank[^rank_of_Phi]<sup>,</sup>[^full_rank_Phi]. This fact will be important later, when we need to give an expression for the pseudoinverse.
+so for the matrix elements we have $$\Phi_{ik} = \phi_k(\boldsymbol{\alpha},t_i)$$. For fitting problems I assume we have more observations than model base functions, i.e. $$m>n$$. That means that matrix has more rows than colums, which in turn implies that $$\text{rank}\boldsymbol{\Phi}(\boldsymbol{\alpha})\leq n$$. The matrix might or might not have full rank[^rank_of_Phi]<sup>,</sup>[^full_rank_Phi]. This fact will be important later, when we need to give an expression for the pseudoinverse.
 
 We can now write
 
@@ -89,7 +89,7 @@ where I have absorbed have defined the weighted observations $$\boldsymbol{y_w}$
 
 $$\boldsymbol{y_w} = \boldsymbol{W}\boldsymbol{y} \,\text{ and }\, \boldsymbol{\Phi_w}(\boldsymbol{\alpha}) = \boldsymbol{W} \boldsymbol{\Phi}(\boldsymbol{\alpha}).$$
 
-The solution to problem $$\eqref{5_LSMinimizationLinAlg}$$ is[^mistake_paper]
+Note that $$\text{rank} \boldsymbol{\Phi_w} = \text{rank}\boldsymbol{\Phi_w}$$ because $$\boldsymbol{W}$$ is a diagonal matrix and thus has full rank. The solution to problem $$\eqref{5_LSMinimizationLinAlg}$$ is[^mistake_paper]
 
 $$\hat{\boldsymbol{c}} = \boldsymbol{\Phi_w}(\boldsymbol{\alpha})^\dagger \boldsymbol{y_w},$$
 
@@ -142,13 +142,28 @@ and the *matrix of model function derivatives*
 
 $$\boldsymbol{D_k}(\boldsymbol\alpha) := \frac{\partial \boldsymbol{\Phi_w}}{\partial \alpha_k} (\boldsymbol\alpha),$$
 
-where the derivative is performed element-wise for $$\boldsymbol{\Phi_w}$$. That means the $$(i,j)$$ element of $$\boldsymbol{D_k}$$ is $$\partial/\partial\alpha_k \, w_i \phi_j(\alpha,t_i)$$.
+where the derivative is performed element-wise for $$\boldsymbol{\Phi_w}$$. That means the $$(i,j)$$ element of $$\boldsymbol{D_k}$$ is $$\partial/\partial\alpha_k \, w_i \phi_j(\alpha,t_i)$$. If we want to use Levenberg-Marquardt to find a solution, then it usually suffices to know the Jacobian of $$\eta$$. However, we might want (for some reason) to minimize the weighted residual $$R_{WLS}=\lVert \boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))\rVert_2^2$$ using general purpose minimization algorithms. In this case we can calculate the gradient $$\nabla R_{WLS} = (\partial R_{WLS}/\partial\alpha_1,...,\partial R_{WLS}/\partial\alpha_q)^T$$. The $$k$$-th component is calculated using [the product rule for the dot product](https://math.stackexchange.com/questions/159284/product-rule-for-the-derivative-of-a-dot-product):
 
+$$\begin{eqnarray}
+\frac{\partial}{\partial \alpha_k} R_{WLS} &=& \frac{\partial}{\partial \alpha_k} \lVert \boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))\rVert_2^2 \\
+&=& 2 (\boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))) \cdot \frac{\partial}{\partial \alpha_k} (\boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))) \\
+&=& 2 (\boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))) \cdot (-\frac{\partial}{\partial \alpha_k} \boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))) \\
+&=& -2 (\boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))) \cdot \boldsymbol{j_k} \\
+&=& -2 \boldsymbol{r_w}\cdot \boldsymbol{j_k} \\
+&=& +2 \boldsymbol{r_w}\cdot (\boldsymbol{a_k}+\boldsymbol{b_k})
+\end{eqnarray}$$
 
-## !!!!!!!!! SVD AND STUFF!!!!!!!!
-!!!!!!!!!!!!!!!!DAS HIER SPÄTER MACHEN!!!!!!!!!!!!!!!!!
+where $$\boldsymbol{j_k}$$ is the $$k$$-th column of the Jacobian $$\boldsymbol{J}(\boldsymbol\alpha)$$ and $$\boldsymbol{r_w}$$ is the weighted residual vector as defined above.
 
-I will follow O'Leary by giving the solution to this problem using Singular Value Decomposition.
+## Approximating the Jacobian
+Many authors use the approximation by Kaufman (Kaufman 1975) to greatly reduce the computational burden of calculating Jacobian while still retaining good numerical accuracy. It is given as
+
+$$\boldsymbol{J}(\boldsymbol{\alpha}) \approx -\boldsymbol{A}(\boldsymbol{\alpha}) \Rightarrow \boldsymbol{j_k} \approx - \boldsymbol{a_k}$$
+
+This approximation is widely used and seems to do very well for most applications (O'Leary 2007, Mullen 2009, Warren 2013). We are now only missing one more puzzle piece: we need to have a numerically efficient way of expressing the Jacobian and the weighted residual. For that we need to find an efficient expression for the pseudoinverse of the model function matrix. This is done by either QR Decomposition or SVD, as mentioned above. I will follow O'Leary and use the SVD, although most other implementations use the QR Decomposition (O'Leary 2007 Sima 2007, Mullen 2009, Kaufman 1975, Warren 2013).
+
+## Calculating the Residual and the Derivatives using SVD
+!!!!!!!!!!!!!!!!HIER DIE AUSDRÜCKE MIT SVD EINFÜGEN UND AUF REDUCES SVD EINGEHEN!!!!!!!!!!!!!!!!!
 
 # Literature
 **(Kaufman 1975)** Kaufman, L. "A variable projection method for solving separable nonlinear least squares problems." *BIT* **15**, 49–57 (1975). [https://doi.org/10.1007/BF01932995](https://doi.org/10.1007/BF01932995)
@@ -159,7 +174,7 @@ I will follow O'Leary by giving the solution to this problem using Singular Valu
 
 **(Mullen 2009)** Mullen, K.M., Stokkum, I.H.M.v.: The variable projection algorithm in time-resolved spectroscopy, microscopy and mass spectrometry applications. *Numer Algor* **51**, 319–340 (2009). [https://doi.org/10.1007/s11075-008-9235-2](https://doi.org/10.1007/s11075-008-9235-2).
 
-**(Warren 2013)** Warren, S.C *et al.* "Rapid global fitting of large fluorescence lifetime imaging microscopy datasets." *PloS one** vol. **8,8 e70687**. 5 Aug. 2013, [doi:10.1371/journal.pone.0070687](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0070687).
+**(Warren 2013)** Warren, S.C *et al.* "Rapid global fitting of large fluorescence lifetime imaging microscopy datasets." *PloS one* **8,8 e70687**. 5 Aug. 2013, [doi:10.1371/journal.pone.0070687](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0070687).
 
 # References and Endnotes
 [^golub_pereyra2002]: See [here](https://pdfs.semanticscholar.org/3f20/1634276f9c1c79e421355b4915b69b4aae24.pdf) for a review paper on Variable Projection by Golub and Pereyra in 2002. In there you can also find references to their original work as well as the contributions by Linda Kaufman. There is also [a follow-up by Pereyra](http://vpereyra.com/wp-content/uploads/2019/08/Surveypaper2019.pdf) covering the time from 2002 until 2019.
@@ -170,3 +185,4 @@ I will follow O'Leary by giving the solution to this problem using Singular Valu
 [^mistake_paper]: In the published version of the paper it is mistakenly stated that $$\hat{\boldsymbol{c}}$$ equals $$\boldsymbol{\Phi_w}(\boldsymbol{\alpha})^\dagger \boldsymbol{y}$$ instead of $$\boldsymbol{\Phi_w}(\boldsymbol{\alpha})^\dagger \boldsymbol{y_w}$$. This mistake is corrected in the online manuscript. However the mistake also occurs when the expression for the derivatives are given and is not corrected in either version. In both expressions for $$\boldsymbol{a_k}$$ and $$\boldsymbol{b_k}$$ the symbol $$\boldsymbol{y}$$ needs to be replaced by $$\boldsymbol{y_w}$$. Unless I am completely mistaken, which is always possible...
 [^rank_of_Phi]: For any $$m \times n$$ matrix witn $$n<m$$ the rank is less or equal to $$n$$. The matrix is [considered to have full rank](https://www.cds.caltech.edu/~murray/amwiki/index.php/FAQ:_What_does_it_mean_for_a_non-square_matrix_to_be_full_rank%3F) if its rank equals $$n$$.
 [^full_rank_Phi]: Ideally the function matrix $$\boldsymbol{\Phi}(\boldsymbol{\alpha})$$ should have full rank, since the model is not well designed if the model base functions are linearly dependent. However, there are cases under which that could happen for particular values $$\boldsymbol{\alpha}$$. For example when fitting sums of exponential models with background terms.
+[^model_base_functions]: This name might not always be accurate because the functions don't necessarily have to be linearly independent. However, for a good model they should be. See also the discussions later on the rank of $$\boldsymbol{\Phi}$$.
