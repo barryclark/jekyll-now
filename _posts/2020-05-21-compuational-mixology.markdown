@@ -130,9 +130,9 @@ A word of warning: reading these books might lead to some unintended additional 
 
 If you are the rare person interested in kernels, and how to use them for distributions, you might check the following works:
 
-- Muandet, K., Fukumizu, K., Sriperumbudur, B., & Schölkopf, B. (2017). Kernel mean embedding of distributions: a review and beyond. Foundations and Trends in Machine Learning, 10(1–2), 1–141. Retrieved from https://arxiv.org/pdf/1605.09522.pdf
-- Kanagawa, M., Hennig, P., Sejdinovic, D., & Sriperumbudur, B. K. (2018). Gaussian Processes and kernel methods: a review on connections and equivalences. Retrieved from http://arxiv.org/abs/1807.02582
-- Van Hauwermeiren, D., Stock, M., Beer, T. De, & Nopens, I. (2020). Predicting pharmaceutical particle size distributions using kernel mean embedding. Pharmaceutics 2020, Vol. 12, Page 271, 12(3), 271. https://doi.org/10.3390/PHARMACEUTICS12030271
+- Muandet, K., Fukumizu, K., Sriperumbudur, B., & Schölkopf, B. (2017). [*Kernel mean embedding of distributions: a review and beyond*](https://arxiv.org/pdf/1605.09522.pdf). Foundations and Trends in Machine Learning, 10(1–2), 1–141. Retrieved from
+- Kanagawa, M., Hennig, P., Sejdinovic, D., & Sriperumbudur, B. K. (2018). [*Gaussian Processes and kernel methods: a review on connections and equivalences*](http://arxiv.org/abs/1807.02582).
+- Van Hauwermeiren, D., Stock, M., Beer, T. De, & Nopens, I. (2020). [*Predicting pharmaceutical particle size distributions using kernel mean embedding*](https://doi.org/10.3390/PHARMACEUTICS12030271). Pharmaceutics 2020, Vol. 12, Page 271, 12(3), 271. 
 
 (Yes, I shamelessly added our recent work in using kernels for modeling pharmaceutical distributions.)
 
