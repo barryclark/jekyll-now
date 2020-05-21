@@ -4,6 +4,8 @@ title: "Computational mixology"
 date: "2020-05-21 15:16:58 +0200"
 ---
 
+![Photo by Helena Yankovska on Unsplash](../images/2020_cocktails/helena-yankovska-sJOy9pveFbU-unsplash.jpg)
+
 Since last year I am following a culinary course, with a module on cocktail making. Since classes are presently canceled due to the ongoing pandemic, I have taken a more theoretical approach to the subject. Last week, I presented some ideas and findings on the (data) science of mixology for our department's science café. You can find my slides [here](https://speakerdeck.com/michielstock/a-drunkards-walk-in-the-science-of-cocktails). This post is a novelization of the talk.
 
 # Cocktails and how to model them
@@ -24,7 +26,7 @@ So cocktail recipes are [compositional data](https://en.wikipedia.org/wiki/Compo
 
 # The fundamental law of traditional cocktails
 
-Traditional cocktails are cooled by using plain ice[^nontrad]. They are either stirred, shaken, with or without egg-white, blended, or just served with an ice cube. It is illuminating to look into the thermodynamics of water to understand how ice cools a cocktail.
+Traditional cocktails are cooled by using plain ice[[^nontrad]]. They are either stirred, shaken, with or without egg-white, blended, or just served with an ice cube. It is illuminating to look into the thermodynamics of water to understand how ice cools a cocktail.
 
 [^nontrad]: Non-traditional cocktails are cooled using liquid nitrogen, have hot pokers dipped into them, or involve other flamboyant operations.
 
@@ -44,7 +46,7 @@ Some important conclusions can be drawn from this law:
 
 1. You can standardize cocktails by measuring their temperature. Just mix until they have the required temperature, and you are guaranteed to have the optimal dilution of the ingredients.
 2. The shape of the ice (cubes or crushed) does not matter. Smaller chunks of ice will cool and dilute faster, but you can still attain the same cocktail regardless.
-3. Always use ice to cool, not plastic ice cubes as these cannot melt[^melting] and are hence inefficient cooling agents.
+3. Always use ice to cool, not plastic ice cubes as these cannot melt[[^melting]] and are hence inefficient cooling agents.
 
 [^melting]: If your plastic ice cubes melt in your beverage, I recommend against drinking them.
 
@@ -60,7 +62,7 @@ So the type of mixing has a profound influence on the mixer ratios. Let us take 
 
 # Cocktails in the Hilbert space
 
-Given that there is not a lot of cocktail data but that we expect there to be a nonlinear effect on how the mixers interact, [kernels](https://en.wikipedia.org/wiki/Kernel_method) seem an appropriate tool! Without losing ourselves into the details, kernels are a way to represent data points in a high-dimensional Hilbert space. Think of a mixer, which can be described by alcohol and sugar content, acidity, type (liquor, sweetener, etc.). We can think of a feature map $\phi$ where we perform a nonlinear expansion of all these variables, projecting the mixer in a high-dimensional space. A kernel function is used to implicitly define such space. It represents a dot product in this space.
+Given that there is not a lot of cocktail data but that we expect there to be a nonlinear effect on how the mixers interact, [kernels](https://en.wikipedia.org/wiki/Kernel_method) seem an appropriate tool! Without losing ourselves into the details, kernels are a way to represent data points in a high-dimensional Hilbert space. Think of a mixer, which can be described by alcohol and sugar content, acidity, type (liquor, sweetener, etc.). We can think of a feature map $$\phi$$ where we perform a nonlinear expansion of all these variables, projecting the mixer in a high-dimensional space. A kernel function is used to implicitly define such space. It represents a dot product in this space.
 
 ![Kernel embedding for mixers.](../images/2020_cocktails/kernels.png)
 
@@ -74,9 +76,9 @@ $$
 
 where we have:
 
-- $\mu$: the representation of the cocktail;
-- $\phi(x_i)$: the representation of the $i$th mixer;
-- $\beta_i$: the volume fraction of the $i$th mixer.
+- $$\mu$$: the representation of the cocktail;
+- $$\phi(x_i)$$: the representation of the $$i$$th mixer;
+- $$\beta_i$$: the volume fraction of the $$i$$th mixer.
 
 ![Kernel mean embedding for cocktails.](../images/2020_cocktails/kernels.png)
 
@@ -94,23 +96,23 @@ Can we use the data to design new cocktail recipes? I outline two straightforwar
 
 ## Easy: determining the fractions of a recipe
 
-Suppose you have a recipe with $n$ mixers $x_1,\ldots,x_n$ and you want to determine the volume fractions $\beta$ to obtain a cocktail similar to one of embedding $\mu$. This $\mu$ might be a particular cocktail or an averga over a class. To find the volume fractions, one has to solve the following optimization problem:
+Suppose you have a recipe with $$n$$ mixers $$x_1,\ldots,x_n$$ and you want to determine the volume fractions $$\beta$$ to obtain a cocktail similar to one of embedding $$\mu$$. This $$\mu$$ might be a particular cocktail or an averga over a class. To find the volume fractions, one has to solve the following optimization problem:
 
 $$
 \min_{\beta\in\Delta^{n-1}}||\mu - \sum_{i=1}^n\beta_i \phi(x_i)||^2 - \lambda \cdot H(\beta)\,.
 $$
 
-Here $\Delta^{n-1}$ means the simplex, i.e., all vectors of length $n$ where the elements are nonzero and sum to one. Hence, all valid composition vectors. The first part of the objective is a data-fitting term we have to match. The second part is a regularization term, with $H(\beta) = -\sum_i \beta \log \beta_i$ the information entropy. Good things can come by [using this regularization](https://michielstock.github.io/OptimalTransport/). For example, it will drive the solution to use all mixers, which is desirable. Importantly, the entropic term will make the problem [strongly convex](https://michielstock.github.io/ConvexSummary/). Hence, simple gradient-based methods can be used to find the solution efficiently. So, if you want to tweak a cocktail recipe by, for example, exchanging lime juice by lemon juice, the above optimization problem can help you adjust your recipe!
+Here $$\Delta^{n-1}$$ means the simplex, i.e., all vectors of length $$n$$ where the elements are nonzero and sum to one. Hence, all valid composition vectors. The first part of the objective is a data-fitting term we have to match. The second part is a regularization term, with $$H(\beta) = -\sum_i \beta \log \beta_i$$ the information entropy. Good things can come by [using this regularization](https://michielstock.github.io/OptimalTransport/). For example, it will drive the solution to use all mixers, which is desirable. Importantly, the entropic term will make the problem [strongly convex](https://michielstock.github.io/ConvexSummary/). Hence, simple gradient-based methods can be used to find the solution efficiently. So, if you want to tweak a cocktail recipe by, for example, exchanging lime juice by lemon juice, the above optimization problem can help you adjust your recipe!
 
 ## Hard: designing a recipe from scratch
 
-A slightly different setup: given a liquor cabinet of $N$ mixers $x_1,\ldots,x_n$, select a subset of mixers and find the mixing ratio vector $\beta$ to obtain a cocktail similar to embedding $\mu$. So we first have to select *which* mixers to use before we can determine the volume ratios. I propose the following optimization problem:
+A slightly different setup: given a liquor cabinet of $$N$$ mixers $$x_1,\ldots,x_n$$, select a subset of mixers and find the mixing ratio vector $$\beta$$ to obtain a cocktail similar to embedding $$\mu$$. So we first have to select *which* mixers to use before we can determine the volume ratios. I propose the following optimization problem:
 
 $$
 \min_{\beta\in\Delta^{N-1}}||\mu - \sum_{i=1}^N\beta_i \phi(x_i)||^2 + \lambda \cdot|\beta|_0\,.
 $$
 
-The data-fitting term is the same, but instead of using entropic regularization, we use the zero-norm. This norm will induce sparsity, thus selecting only a subset of the $N$ available mixers. This is quite a different beast compared to the previous problem! It is akin to the [knapsack problem](https://en.wikipedia.org/wiki/Knapsack_problem) and is an NP-hard problem.
+The data-fitting term is the same, but instead of using entropic regularization, we use the zero-norm. This norm will induce sparsity, thus selecting only a subset of the $$N$$ available mixers. This is quite a different beast compared to the previous problem! It is akin to the [knapsack problem](https://en.wikipedia.org/wiki/Knapsack_problem) and is an NP-hard problem.
 
 Conclusion: tweaking a recipe is easy, inventing it is hard!
 
