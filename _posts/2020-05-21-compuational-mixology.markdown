@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Compuational mixology"
-date: "2020-05-21 10:38:14 +0200"
+title: "Computational mixology"
+date: "2020-05-21 15:16:58 +0200"
 ---
 
 Since last year I am following a culinary course, with a module on cocktail making. Since classes are presently canceled due to the ongoing pandemic, I have taken a more theoretical approach to the subject. Last week, I presented some ideas and findings on the (data) science of mixology for our department's science café. You can find my slides [here](https://speakerdeck.com/michielstock/a-drunkards-walk-in-the-science-of-cocktails). This post is a novelization of the talk.
@@ -26,7 +26,7 @@ So cocktail recipes are [compositional data](https://en.wikipedia.org/wiki/Compo
 
 Traditional cocktails are cooled by using plain ice[^nontrad]. They are either stirred, shaken, with or without egg-white, blended, or just served with an ice cube. It is illuminating to look into the thermodynamics of water to understand how ice cools a cocktail.
 
-[^nontrad]: Non-traditional cocktails are cooled using liquid nitrogen, have hot pokers dipped into them, or involve other showy operations.
+[^nontrad]: Non-traditional cocktails are cooled using liquid nitrogen, have hot pokers dipped into them, or involve other flamboyant operations.
 
 ![Heat diagram of water. The melting of ice is the determining factor in the chilling of cocktails.](../images/2020_cocktails/melting.png)
 
