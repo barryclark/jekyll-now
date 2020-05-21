@@ -36,7 +36,7 @@ So, there are three ways how ice can cool the cocktail:
 
 - ice absorbs heat, increasing its temperature, the accounts for **2.03 J/(g·K)**;
 - cold water obtained from molten ice increases its temperature to the cocktail equilibrium temperature, this amounts to **4.1814 J/(g·K)**;
-- ice melts absorbing **333.55 J/g**.
+- ice melts absorbing a whopping **333.55 J/g**.
 
 Clearly, most of the cooling is not due to cold ice becoming warmer ice. Cooling is primarily due to the *melting* of ice! This is even more pronounced when you consider that you typically take ice from the freezer (-18 °C) into an ice bucket, where it rapidly becomes melting ice (0 °C). This motives the **fundamental law of traditional cocktails**:
 
@@ -54,7 +54,7 @@ The fundamental law has significant consequences on how cocktail recipes are des
 
 ![Different ways of mixing a cocktail.](../images/2020_cocktails/mixing.png)
 
-Simple built cocktails are mixed less intensively compared to stirred or shaken cocktails. Blender cocktails are mixed the strongest. More intensive mixing means more cooling and dilution, which again implies a different recipe composition. Dave Arnolds has analyzed 54 well-known cocktails for their alcohol content, acidity, and sugar content.
+Simple built cocktails are mixed less intensively compared to stirred or shaken cocktails. Blender cocktails are mixed the strongest. More intensive mixing means more cooling and dilution, which again implies a different recipe composition. Dave Arnold has analyzed 54 well-known cocktails for their alcohol content, acidity, and sugar content.
 
 ![Balance of well-known cocktails. Image from Liquid Intelligence.](../images/2020_cocktails/balance.png)
 
