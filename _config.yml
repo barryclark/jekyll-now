@@ -9,7 +9,7 @@ name: Pinoy Programmer
 description: Online learning blog for the Pinoy Programmer!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/thepinoyprogrammer/thepinoyprogrammer.github.io/master/images/logo.png
+avatar: /images/logo.png
 
 #
 # Flags below are optional
