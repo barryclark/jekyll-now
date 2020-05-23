@@ -2,9 +2,11 @@ _site
 .DS_Store
 .jekyll
 .jekyll-metadata
+.jekyll-cache
 .bundle
 .sass-cache
 Gemfile
 Gemfile.lock
 node_modules
 package.json
+.vs

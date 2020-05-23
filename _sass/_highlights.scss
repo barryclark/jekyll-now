@@ -1,17 +1,28 @@
-
+/* Visual Studia Dark theme from vscode https://github.com/microsoft/vscode/blob/master/extensions/theme-defaults/themes/dark_vs.json */
 .highlight {
-  background-color: #efefef;
-  padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
-  margin: 20px 0 20px 0;
-  overflow: scroll;
+  background-color: #1E1E1E;
+  font-size: 80%;
+  padding: 0px 0px 0px 0px;
+  border: 0px none #ddd;
+  // -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  // -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  // box-shadow: 3px 3px rgba(0,0,0,0.1);
+  margin: 0px 0 0px 0;
+  overflow: auto;
+}
+
+.lineno {
+  text-align: right;
+  padding: 0px 6px 0px 0px;
+}
+
+// NTR: Double scroll due to both div/pre, so removing overflow from div
+div[class="highlight"] {
+    overflow: hidden;
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family:'Consolas','Courier', monospace;
 }
 
 .highlight .c { color: #586E75 } /* Comment */

@@ -3,16 +3,19 @@
 // VARIABLES
 //
 
+$background: #000;
+
 // Colors
 $blue: #4183C4;
 
 // Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+// INVERTED COLORS, SINCE NAMES FROM BRIGHT THEME
+$black: #fff;
+$darkerGray: #eee;
+$darkGray: #ccc;
+$gray: #aaa;
+$lightGray: #666;
+$white: #111;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
