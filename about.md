@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### About
 
-### More Information
+Pinoy Programmer is an online learning community where people can share their knowledge and experience by doing what they love.
+It is a humbling experience to share knowledge and get in sync with other developers on how to build better software / apps.
 
-A place to include any other types of information that you'd like to include about yourself.
+### About the author
 
-### Contact me
+The author is a Software Engineer based in the Philippines, a father of 3 and an advocate for free software.
+On his free time, he loves to meditate, experience the nature outdoors and write code.
 
-[email@domain.com](mailto:email@domain.com)
+### Want to share? Contact us...
+
+[thepinoyprogrammer@protonmail.com](mailto:thepinoyprogrammer@protonmail.com)
