@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-### About
-
 Pinoy Programmer is an online learning community where people can share their knowledge and experience by doing what they love.
 It is a humbling experience to share knowledge and get in sync with other developers on how to build better software / apps.
 
