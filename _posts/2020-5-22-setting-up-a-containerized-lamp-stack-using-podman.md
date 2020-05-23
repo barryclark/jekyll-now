@@ -93,7 +93,7 @@ Now try visiting `http://localhost:8080` and you should see something like this:
 
 ![screenshot-01](/images/2020-5-22/screenshot-01.jpg)
 
-### STEP 3: Running MySQL 8
+### STEP 4: Running MySQL 8
 
 Enter the following command to run MySQL 8:
 ```bash
@@ -103,7 +103,7 @@ podman run -d --pod my-pod --name mysql -e MYSQL_ROOT_PASSWORD=my-secret-passwor
 *Take note of the password we set above (my-secret-password). We will use this when connecting to our MySQL database.*
 
 
-### STEP 4: Modify `index.php` file
+### STEP 5: Modify `index.php` file
 
 Now we need to modify the `index.php` file we created before to test our MySQL database connection:
 
