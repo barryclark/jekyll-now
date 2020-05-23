@@ -1,4 +1,10 @@
+
+
 /* Visual Studia Dark theme from vscode https://github.com/microsoft/vscode/blob/master/extensions/theme-defaults/themes/dark_vs.json */
+
+$code-foreground: #D4D4D4;
+$code-comment: #6A9955;
+
 .highlight {
   background-color: #1E1E1E;
   font-size: 80%;
@@ -25,7 +31,7 @@ code {
   font-family:'Consolas','Courier', monospace;
 }
 
-.highlight .c { color: #586E75 } /* Comment */
+.highlight .c { color: $code-comment } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
 .highlight .g { color: #93A1A1 } /* Generic */
 .highlight .k { color: #859900 } /* Keyword */
@@ -34,9 +40,9 @@ code {
 .highlight .o { color: #859900 } /* Operator */
 .highlight .x { color: #CB4B16 } /* Other */
 .highlight .p { color: #93A1A1 } /* Punctuation */
-.highlight .cm { color: #586E75 } /* Comment.Multiline */
+.highlight .cm { color: $code-comment } /* Comment.Multiline */
 .highlight .cp { color: #859900 } /* Comment.Preproc */
-.highlight .c1 { color: #586E75 } /* Comment.Single */
+.highlight .c1 { color: $code-comment } /* Comment.Single */
 .highlight .cs { color: #859900 } /* Comment.Special */
 .highlight .gd { color: #2AA198 } /* Generic.Deleted */
 .highlight .ge { color: #93A1A1; font-style: italic } /* Generic.Emph */
