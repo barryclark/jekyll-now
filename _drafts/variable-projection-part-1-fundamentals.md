@@ -172,10 +172,10 @@ $$\begin{eqnarray}
 
 where we have used $$\boldsymbol{P}^T \boldsymbol{P}=\boldsymbol{P} \boldsymbol{P}=\boldsymbol{P}$$ and the fact that [we can write](https://books.google.de/books?id=sMfjDwAAQBAJ&lpg=PA22&dq=scalar%20product%20X*Ay&hl=de&pg=PA22#v=onepage&q&f=false) $$\boldsymbol{x}\cdot \boldsymbol{A} \boldsymbol{y} = \boldsymbol{A}^T\boldsymbol{x}\cdot\boldsymbol{y}$$ for all vectors $$\boldsymbol{x},\boldsymbol{y} \in \mathbb{R^m}$$ and square matrices $$\boldsymbol{A} \in \mathbb{R}^{m\times m}$$. The last expression for the partial derivative is very easy to calculate because it does not require the matrix $$\boldsymbol{P}$$. Now I have all ingredients together to implement VarPro using a linear solver and a general purpose minimizer, which may or may be gradient based.
 
-# Implementing VarPro using General Purpose Nonlinear Minimization
-The usual implementations of VarPro use a least squares minimizer, like Levenberg-Marquardt, to solve the nonlinear problem. In that case we will an expression for the Jacobian using a numerically feasible decomposition of the matrix $$\boldsymbol{\Phi_w}$$. I will give these expressions in the Appendix for completeness, but at this point I want to deviate from the script a little bit. In my implementation I want to use a general purpose algorithm to minimize $$R_{WLS}$$.
+# VarPro using General Purpose Nonlinear Minimization
+The commonly available implementations of VarPro use a least squares minimizer, like Levenberg-Marquardt, to solve the nonlinear problem. In that case we need an expression for the Jacobian using a numerically feasible decomposition of the matrix $$\boldsymbol{\Phi_w}$$. I will give these expressions in the Appendix for completeness, but at this point I want to deviate from the script a little bit. In my implementation I want to use a general purpose algorithm to minimize $$R_{WLS}$$.
 
-For a general purpose minimizer I just need to provide the function to minimize, i.e. $$R_{WLS}$$, and its gradient as functions of $$\boldsymbol\alpha$$. Every decent linear algebra solver will use some form of matrix decomposition to obtain the result $$\boldsymbol{\hat{c}}(\boldsymbol\alpha)$$ for eq. $$\eqref{c_hat_solution}$$. But it does so without me having to deal with the composition directly. That means I can calculate $$R_{WLS}=\lVert\boldsymbol{r_w}\rVert_2^2$$, with $$\boldsymbol{r_w}$$ according to eq. $$\eqref{weighted_residual_vector}$$. Then I can calculate the the gradient using approximation $$\eqref{Kaufman_Approx_Gradient_RWLS}$$. I merely need three things for that: first, the matrix $$\boldsymbol{D_k}(\boldsymbol\alpha)$$, which I can calculate from the model function derivatives. Second, the solution for the coefficient vector $$\boldsymbol{\hat{c}}(\boldsymbol\alpha)$$, which I have already obtained using the solver. Third, I need the vector of weighted residuals $$\boldsymbol{r_w}(\boldsymbol\alpha)$$, which I have already calculated as part of $$R_{WLS}$$. At no point do I have to mess with the matrix decomposition directly. This is very neat, because it allows for a lot of flexibility in the implentation. I can change the linear solver without changing any of the calculations.
+For a general purpose minimizer I just need to provide the function to minimize, i.e. $$R_{WLS}$$, and its gradient as functions of $$\boldsymbol\alpha$$. Every decent linear algebra solver will use some form of matrix decomposition to obtain the result $$\boldsymbol{\hat{c}}(\boldsymbol\alpha)$$ for eq. $$\eqref{c_hat_solution}$$. But it does so without me having to deal with the decomposition directly. That means I can calculate $$R_{WLS}=\lVert\boldsymbol{r_w}\rVert_2^2$$, with $$\boldsymbol{r_w}$$ according to eq. $$\eqref{weighted_residual_vector}$$. Then I can calculate the the gradient using approximation $$\eqref{Kaufman_Approx_Gradient_RWLS}$$. I merely need three things for that: first, the matrix $$\boldsymbol{D_k}(\boldsymbol\alpha)$$, which I can calculate from the model function derivatives. Second, the solution for the coefficient vector $$\boldsymbol{\hat{c}}(\boldsymbol\alpha)$$, which I have already obtained using the solver. Third, I need the vector of weighted residuals $$\boldsymbol{r_w}(\boldsymbol\alpha)$$, which I have already calculated as part of $$R_{WLS}$$. At no point do I have to mess with the matrix decomposition directly. This is very neat, because it allows for a lot of flexibility in the implentation. I can change the linear solver without changing any of the calculations.
 
 This concludes my first article on Variable Projection. In the next part of the series I will go into more detail how this implementation can be used to fit large problems with multiple right hand sides. This is also termed *global analysis* in time resolved microscopy literature (Mullen 2009). There are other ways to achieve this and if you are interested I suggest you also read up on *Partitioned* Variable Projection (Mullen 2009).
 
@@ -190,7 +190,28 @@ This concludes my first article on Variable Projection. In the next part of the 
 
 **(Warren 2013)** Warren, S.C *et al.* "Rapid global fitting of large fluorescence lifetime imaging microscopy datasets." *PloS one* **8,8 e70687**. 5 Aug. 2013, [doi:10.1371/journal.pone.0070687](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0070687).
 
-# References and Endnotes
+# Appendix: Matrix Expressions for the Jacobian
+To express the Jacobian matrix, we need a numerically efficient decomposition of $$\boldsymbol{\Phi_w}$$ to express the pseudoinverse. This is done by either QR Decomposition or SVD, as mentioned above. I will follow O'Leary and use the SVD, although most other implementations use the QR Decomposition (O'Leary 2007 Sima 2007, Mullen 2009, Kaufman 1975, Warren 2013).
+
+For a rectangular matrix $$\boldsymbol{\Phi_w}$$ with *full rank*, we can write $$\boldsymbol{\Phi_w}=(\boldsymbol{\Phi}^T \boldsymbol{\Phi})^{-1} \boldsymbol{\Phi}^T$$, which is [usually a bad idea](https://eigen.tuxfamily.org/dox/group__LeastSquares.html) numerically. Furthermore, if $$\boldsymbol{\Phi_w}$$ does not have full rank, then $$(\boldsymbol{\Phi}^T \boldsymbol{\Phi})^{-1}$$ does not exist and we need a different expression for the pseudoinverse. This can be given in terms of the [*reduced* Singular Value Decomposition](http://www.omgwiki.org/hpec/files/hpec-challenge/svd.html) of $$\boldsymbol{\Phi_w}$$:
+
+$$\boldsymbol{\Phi_w} = \boldsymbol{U}\boldsymbol\Sigma\boldsymbol{V}^T,$$
+
+with $$\boldsymbol{U}\in \mathbb{R}^{m\times \text{rank}\boldsymbol{\Phi_w}}$$, $$\boldsymbol{V}\in \mathbb{R}^{\text{rank}\boldsymbol{\Phi_w} \times \text{rank}\boldsymbol{\Phi_w}}$$ and the diagonal matrix of nonzero eigenvalues $$\boldsymbol\Sigma$$. Note that the matrix $$\boldsymbol{U}$$ is not the square matrix from the *full* Singular
+Value Decomposition. That means it is not unitary, i.e. $$\boldsymbol{U}\boldsymbol{U}^T$$ is not the identity matrix. For the matrix $$\boldsymbol{V}$$, however, we have $$\boldsymbol{I} = \boldsymbol{V}^T\boldsymbol{V}$$. The pseudoinverse of can be expressed as
+
+$$\boldsymbol{\Phi_w}^\dagger = \boldsymbol{V}\boldsymbol\Sigma^{-1}\boldsymbol{U}^T.$$
+
+This implies $$\boldsymbol{P}=\boldsymbol{I}-\boldsymbol{U}\boldsymbol{U}^T$$ and the expressions for the columns $$\boldsymbol{a_k}$$ and $$\boldsymbol{b_k}$$ can be written as
+
+$$\begin{eqnarray}
+\boldsymbol{a_k} &=& \boldsymbol{D_k}\boldsymbol{\hat{c}} - \boldsymbol{U}(\boldsymbol{U}^T(\boldsymbol{D_k}\boldsymbol{\hat{c}})) \\
+\boldsymbol{b_k} &=& \boldsymbol{U}(\boldsymbol{\Sigma^{-1}}(\boldsymbol{V}^T(\boldsymbol{D_k}^T\boldsymbol{r_w})).
+\end{eqnarray}$$
+
+The expressions are grouped in such a way that only matrix vector products need to be calculated (O'Leary 2007).
+
+# Endnotes
 [^golub_pereyra2002]: See [here](https://pdfs.semanticscholar.org/3f20/1634276f9c1c79e421355b4915b69b4aae24.pdf) for a review paper on Variable Projection by Golub and Pereyra in 2002. In there you can also find references to their original work as well as the contributions by Linda Kaufman. There is also [a follow-up by Pereyra](http://vpereyra.com/wp-content/uploads/2019/08/Surveypaper2019.pdf) covering the time from 2002 until 2019.
 [^errors_notation]: Errors are mine of course. I will also use their notation to make it easy to go back and forth from this article and their publication. This is why I am sparing you the references to their publication in the next sections. Assume everything is taken from O'Leary and Rust unless stated otherwise.
 [^nonlinear_base]: These functions could also be linear in their parameters but it makes little sense to have them be linear without good reason. One such reason could be that the parameter space is constrained, because the derivatives presented in here are only true for unconstrained linear parameters.
@@ -200,10 +221,4 @@ This concludes my first article on Variable Projection. In the next part of the 
 [^rank_of_Phi]: For any $$m \times n$$ matrix witn $$n<m$$ the rank is less than or equal to $$n$$. The matrix is [considered to have full rank](https://www.cds.caltech.edu/~murray/amwiki/index.php/FAQ:_What_does_it_mean_for_a_non-square_matrix_to_be_full_rank%3F) if its rank equals $$n$$.
 [^full_rank_Phi]: Ideally the function matrix $$\boldsymbol{\Phi}(\boldsymbol{\alpha})$$ should have full rank, since the model is not well designed if the model base functions are linearly dependent. However, there are cases under which that could happen for particular values $$\boldsymbol{\alpha}$$. For example when fitting sums of exponential models with background terms.
 [^model_base_functions]: This name might not always be accurate because the functions don't necessarily have to be linearly independent. However, for a good model they should be. See also the discussions later on the rank of $$\boldsymbol{\Phi}$$.
-[^derivatives]: Under the condition that we have 
-
-
-# Appendix: Matrix Expressions for the Jacobian using SVD
-!!!!!!!!!!!!!!!!HIER DIE AUSDRÜCKE MIT SVD EINFÜGEN UND AUF REDUCES SVD EINGEHEN!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!HIER DIE AUSDRÜCKE MIT SVD EINFÜGEN UND AUF REDUCES SVD EINGEHEN!!!!!!!!!!!!!!!!!
-We are now only missing one more puzzle piece: we need to have a numerically efficient way of expressing the Jacobian and the weighted residual. For that we need to find an efficient expression for the pseudoinverse of the model function matrix. This is done by either QR Decomposition or SVD, as mentioned above. I will follow O'Leary and use the SVD, although most other implementations use the QR Decomposition (O'Leary 2007 Sima 2007, Mullen 2009, Kaufman 1975, Warren 2013).
+[^derivatives]: Under the condition that we have analytical expressions for the partial derivatives $$\partial/\partial\alpha_k \phi_j(\boldsymbol\alpha,t)$$ of the model base functions.
