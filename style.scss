@@ -35,8 +35,8 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  line-height: 1.4;
+  margin: 0.4em 0 0.2em;
   padding: 0;
 
   @include mobile {
@@ -65,7 +65,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
 a {
@@ -96,6 +96,13 @@ ol ul, ul ol, ul ul, ol ol {
 
 ul ul, ol ul {
   list-style-type: circle;
+}
+
+ul.posts {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+    /*margin-bottom: 2em;*/
 }
 
 em, i {

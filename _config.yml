@@ -4,7 +4,7 @@
 
 # Name of your site (displayed in the header)
 name: nietras
-
+title: nietras
 # Short bio or description (displayed in the header)
 description: .NET, xPUs, performance, programming and machine learning.
 
@@ -25,7 +25,7 @@ footer-links:
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: n # just type anything here for a working RSS icon
   twitter: nietras1
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
