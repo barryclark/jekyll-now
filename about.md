@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Tech enthusiast | C++ | Linux | Design | Software engineering
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am a software developer with a background in development and maintenance of embedded and network related applications. Through this blog I would like to share my notes about all that I have learned in my areas of interest. Happy hacking :)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dayananda.a@gmail.com](mailto:dayananda.a@gmail.com)
