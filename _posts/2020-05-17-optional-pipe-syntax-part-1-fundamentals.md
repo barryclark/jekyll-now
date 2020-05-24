@@ -8,7 +8,7 @@ date: 2020-05-17
 #description:
 #permalink:
 title: 'Implementing a Pipe Syntax for `std::optional` - Part 1: Fundamentals'
-#comments_id:
+comments_id: 9
 ---
 
 I set out to implement [my high concept null conditional operator](/blog/2020/null-conditional-operator-for-optionals/) for ``std::optional`` and ended up with something significantly more low concept. Still, I did learn a lot about template metaprogramming and ran into some interesting pitfalls. Let's see what I did in this multi-part series.

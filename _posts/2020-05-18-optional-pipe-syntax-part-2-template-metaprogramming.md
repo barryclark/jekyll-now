@@ -7,8 +7,8 @@ date: 2020-05-18
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Implementing a Pipe Syntax for `std::optional` - Part 2: Applied Template Metaprogramming '
-#comments_id:
+title: 'Implementing a Pipe Syntax for `std::optional` - Part 2: Applied Template Metaprogramming'
+comments_id: 10
 ---
 
 I've started implementing a pipe syntax to apply callables to optional values in a more expressive fashion [here](/blog/2020/optional-pipe-syntax-part-1-fundamentals/). However, I still needed a way to provide a useful return type if the callable itself returns an optional. I will implement this functionality using Template Metaprogramming.

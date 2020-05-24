@@ -2,13 +2,13 @@
 layout: post
 tags: least-squares image-processing algorithm math varpro
 #categories: []
-date: 2020-05-31
+date: 2020-05-24
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'The Variable Projection Method - Fundamentals of Nonlinear Least Squares Fitting with VarPro '
-#comments_id:
+title: 'The Variable Projection Method - Fundamentals of Nonlinear Least Squares Fitting with VarPro'
+comments_id: 11
 ---
 
 This is the first post in a series on the use of the Variable Projection methhod (VarPro) in digital image processing. The method is interesting because it makes clever use of linear algebra to potentially speed up and increase the robustness of nonlinear least squares fitting. It does so by separating linear from nonlinear parameters. I will recap the method based on the literature and put my own spin on it at the end.
