@@ -111,7 +111,7 @@ At this point we are almost halfway there. Our aim is to minimize the projection
 
 ### Analytical Derivatives
 
-It is possible to use derivative-free algorithms to minimize the projection functional, but we might want to use an algorithm which uses the derivatives. Common implementations of the Levenberg-Marquardt algorithm need the Jacobian matrix $$\boldsymbol{J}(\boldsymbol{\alpha})\in \mathbb{R}^{m \times q}$$ of $$\boldsymbol{\eta}(\boldsymbol{\alpha},\boldsymbol{\hat{c}}(\boldsymbol{\alpha}))$$:
+It is possible to use derivative-free algorithms to minimize the projection functional, but we might want to use an algorithm which takes advantage of the derivatives. Common implementations of the Levenberg-Marquardt algorithm need the Jacobian matrix $$\boldsymbol{J}(\boldsymbol{\alpha})\in \mathbb{R}^{m \times q}$$ of $$\boldsymbol{\eta}(\boldsymbol{\alpha},\boldsymbol{\hat{c}}(\boldsymbol{\alpha}))$$:
 
 $$\boldsymbol{J}(\boldsymbol{\alpha}) =  (J_{ik})
 = \left(\begin{matrix}
@@ -180,7 +180,7 @@ $$\begin{eqnarray}
 
 where we have used $$\boldsymbol{P}^T \boldsymbol{P}=\boldsymbol{P} \boldsymbol{P}=\boldsymbol{P}$$ and the fact that [we can write](https://books.google.de/books?id=sMfjDwAAQBAJ&lpg=PA22&dq=scalar%20product%20X*Ay&hl=de&pg=PA22#v=onepage&q&f=false) $$\boldsymbol{x}\cdot \boldsymbol{A} \boldsymbol{y} = \boldsymbol{A}^T\boldsymbol{x}\cdot\boldsymbol{y}$$ for all vectors $$\boldsymbol{x},\boldsymbol{y} \in \mathbb{R^m}$$ and square matrices $$\boldsymbol{A} \in \mathbb{R}^{m\times m}$$. The last expression for the partial derivative is very easy to calculate because it does not require the matrix $$\boldsymbol{P}$$ explicitly.
 
-Now I have all ingredients together to implement VarPro using a linear solver and a general purpose minimizer, which may or may be gradient based.
+Now I have all ingredients together to implement VarPro using a linear solver and a general purpose minimizer, which can take advantage of the gradient.
 
 # VarPro with General Purpose Nonlinear Minimization
 The commonly available implementations of VarPro use a least squares minimizer, like Levenberg-Marquardt, to solve the nonlinear problem. In that case we need an expression for the Jacobian using a numerically feasible decomposition of the matrix $$\boldsymbol{\Phi_w}$$. I will give these expressions in the Appendix for completeness, but at this point I want to deviate from the script a little bit. In my implementation I want to use a general purpose algorithm to minimize $$R_{WLS}$$.
