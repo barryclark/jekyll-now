@@ -25,8 +25,7 @@ As this is my technical blog, it's probably fitting to point out some aspects of
 بالاضافة إلى مدونتي التقنية هذه، لدي مدونات سابقة متناثرة في الانترنت. احدثها هي [مدونتي في كاراميلا](https://caramel.la/jalammar). بعض كتاباتي السابقة هي:
 
 * [هل تجيد عجن البيانات؟](https://caramel.la/home/B1AeolZ2g/hl-tjyd-ajn-albyanat)
-* [دليل شركات تطوير المواقع وتطبيقات الايفون والاندرويد السعودية](http://www.blogjihad.com/?p=939)
-* [ترجمتي لقصة The Last Question by Isaac Asimov](http://www.blogjihad.com/?p=563)
+* [ترجمتي لقصة The Last Question by Isaac Asimov](https://caramel.la/jalammar/5dju7ji7/alsual-alakhyr)
 
 </div>
 
