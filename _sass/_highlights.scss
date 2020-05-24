@@ -270,7 +270,7 @@ $code_markup_changed: #569cd6;
 .highlight {
   background-color: $code_background_color;
   font-size: 80%;
-  padding: 0px 0px 0px 0px;
+  padding: 8px 0px 8px 0px;
   border: 0px none #ddd;
   // -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
   // -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
@@ -281,11 +281,12 @@ $code_markup_changed: #569cd6;
 
 .lineno {
   text-align: right;
-  padding: 0px 6px 0px 0px;
+  padding: 0px 8px 0px 2px;
 }
 
 // NTR: Double scroll due to both div/pre, so removing overflow from div
 div[class="highlight"] {
+    padding: 0px 0px 0px 0px;
     overflow: hidden;
 }
 
