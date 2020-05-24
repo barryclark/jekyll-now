@@ -146,9 +146,9 @@ and the *matrix of model function derivatives*
 
 $$\boldsymbol{D_k}(\boldsymbol\alpha) := \frac{\partial \boldsymbol{\Phi_w}}{\partial \alpha_k} (\boldsymbol\alpha) =\boldsymbol{W} \frac{\partial \boldsymbol{\Phi}}{\partial \alpha_k} (\boldsymbol\alpha) \in \mathbb{R}^{m\times n},$$
 
-where the derivative is performed element-wise for $$\boldsymbol{\Phi_w}$$. If the weight matrix is diagonal $$\boldsymbol{W}=\text{diag}(w_1,\dots,w_m)$$, then  $$(i,j)$$ element of $$\boldsymbol{D_k}$$ is $$ w_i \frac{\partial\phi_j}{\partial\alpha_k} (\alpha,t_i)$$. If we want to use Levenberg-Marquardt to find a solution, then it is necessary to know the Jacobian of $$\eta$$. However, we might want (for some reason) to minimize the weighted residual $$R_{WLS}=\lVert \boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))\rVert_2^2$$ using a general purpose minimization algorithm. In this case we need to calculate the gradient
+where the derivative is performed element-wise for $$\boldsymbol{\Phi_w}$$. If we want to use Levenberg-Marquardt to find a solution, then it is necessary to know the Jacobian of $$\eta$$. However, we might want (for some reason) to minimize the weighted residual $$R_{WLS}=\lVert \boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))\rVert_2^2$$ using a general purpose minimization algorithm. In this case we need to calculate the gradient
 
-$$\nabla R_{WLS} = (\partial R_{WLS}/\partial\alpha_1,\dots,\partial R_{WLS}/\partial\alpha_q)^T.$$
+$$\nabla R_{WLS}(\boldsymbol\alpha) = \left(\frac{\partial R_{WLS}}{\partial\alpha_1}(\boldsymbol\alpha),\dots,\frac{\partial R_{WLS}}{\partial\alpha_q}(\boldsymbol\alpha)\right)^T.$$
 
 The $$k$$-th component is calculated using [the product rule for the dot product](https://math.stackexchange.com/questions/159284/product-rule-for-the-derivative-of-a-dot-product):
 
