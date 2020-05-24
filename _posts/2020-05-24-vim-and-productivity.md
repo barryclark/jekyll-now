@@ -25,7 +25,7 @@ close the editor
 That's it. I wasn't kidding about underutilization!  
 
 I found this great resource to get the basics through right away. I have based my .vimrc after the recommendations from the below lecture from MIT. I didn't feel the need to repeat the material in the post below here. Please go through the lecture and come back to check out my editor.  
-[mit](https://missing.csail.mit.edu/2020/editors/)  
+[mit-lecture](https://missing.csail.mit.edu/2020/editors/)  
 
 ## My vim configuration  
 I've made my own .vimrc based on my project needs.
@@ -33,7 +33,7 @@ I've made my own .vimrc based on my project needs.
 You will find my current .vimrc in the above branch. I needed source tree file explorer, fuzzy file finder, autocompletion, auto-compile, and a pleasant-looking color scheme. I've been able to supplement these needs with the help of vim plugins. I've shared short video demos of how my editor looks below.  
 
 ## source tree explorer - NerdTree  
-[nt](https://youtu.be/pxrvDFwkuTE)  
+[NerdTree](https://youtu.be/pxrvDFwkuTE)  
 
 ## fuzzy file finder - CtrlP  
 [ctrlp](https://youtu.be/cwJfqCBzUb4)  
