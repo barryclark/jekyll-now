@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Tech enthusiast | C++ | Linux | Design | Software engineering
+Tech enthusiast -|- C++ -|- Linux -|- Design -|- Software engineering
 
 ### More Information
 
