@@ -1,4 +1,7 @@
-# cpp_project_starter  
+---
+layout: post
+title: cpp_project_starter
+---
 
 [cpp_project_starter](https://github.com/dayarthvader/cpp_project_starter)  
 
