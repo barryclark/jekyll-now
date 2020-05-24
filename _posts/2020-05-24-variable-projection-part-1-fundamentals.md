@@ -30,22 +30,22 @@ VarPro is concerned with fitting model functions $$\eta$$ that can be written as
 
 $$\eta(\boldsymbol{\alpha},\boldsymbol{c},t) = \sum_{j=1}^{n} c_j\phi_j(\boldsymbol{\alpha},t).$$
 
-I will refer to the $$\phi_j$$ as the *model base functions*[^model_base_functions]. We group the linear parameters in the vector $$\boldsymbol{c}=(c_1,...,c_n)^T\in\mathbb{R}^n$$ and the nonlinear parameters in $$\boldsymbol{\alpha}=(\alpha_1,...,\alpha_q)^T\in\mathcal{S}_\alpha \subseteq \mathbb{R}^q$$. So we have $$n$$ linear parameters and $$q$$ nonlinear parameters. The independent variable of the model function is $$t$$. It could, for example, represent physical quantities such as time or space. It is important to note that when I use the terms *linear* or *nonlinear* it refers to the behaviour of the function $$\eta$$ with respect to the parameter vectors $$\boldsymbol{\alpha}$$ and $$\boldsymbol{c}$$, but not the independent variable $$t$$. It is completely irrelevant if the model is linear or nonlinear in $$t$$.
+I will refer to the $$\phi_j$$ as the *model base functions*[^model_base_functions]. We group the linear parameters in the vector $$\boldsymbol{c}=(c_1,\dots,c_n)^T\in\mathbb{R}^n$$ and the nonlinear parameters in $$\boldsymbol{\alpha}=(\alpha_1,\dots,\alpha_q)^T\in\mathcal{S}_\alpha \subseteq \mathbb{R}^q$$. So we have $$n$$ linear parameters and $$q$$ nonlinear parameters. The independent variable of the model function is $$t$$. It could, for example, represent physical quantities such as time or space. It is important to note that when I use the terms *linear* or *nonlinear* it refers to the behaviour of the function $$\eta$$ with respect to the parameter vectors $$\boldsymbol{\alpha}$$ and $$\boldsymbol{c}$$, but not the independent variable $$t$$. It is completely irrelevant if the model is linear or nonlinear in $$t$$.
 
 ## Weighted Least Squares
 We want to fit our model to a vector $$\boldsymbol{y}$$ of observations
 
-$$\boldsymbol{y}=(y_1,...,y_m)^T \in \mathbb{R}^m,$$
+$$\boldsymbol{y}=(y_1,\dots,y_m)^T \in \mathbb{R}^m,$$
 
-where $$y_i$$ is the observation at a coordinate $$t_i$$, $$i=1,...,m$$. The total number of observations is $$m$$. Let's write the function values for $$\eta$$ at those coordinates as a vector, too:
+where $$y_i$$ is the observation at a coordinate $$t_i$$, $$i=1,\dots,m$$. The total number of observations is $$m$$. Let's write the function values for $$\eta$$ at those coordinates as a vector, too:
 
-$$\boldsymbol{\eta}(\boldsymbol{\alpha},\boldsymbol{c}) = (\eta(\boldsymbol{\alpha},\boldsymbol{c},t_1),...,\eta(\boldsymbol{\alpha},\boldsymbol{c},t_m))^T \in \mathbb{R}^m.$$
+$$\boldsymbol{\eta}(\boldsymbol{\alpha},\boldsymbol{c}) = (\eta(\boldsymbol{\alpha},\boldsymbol{c},t_1),\dots,\eta(\boldsymbol{\alpha},\boldsymbol{c},t_m))^T \in \mathbb{R}^m.$$
 
 We want to minimize the weighted sum of the squared residuals:
 
 $$R_{WLS}(\boldsymbol{\alpha},\boldsymbol{c}) = \lVert{\boldsymbol{W}(\boldsymbol{y}-\boldsymbol{\eta}(\boldsymbol{\alpha},\boldsymbol{c}))}\rVert_2^2, \label{RWLS}\tag{1}$$
 
-with the *diagonal* weight matrix $$\boldsymbol{W}=\text{diag}(w_1,...,w_m)\in\mathbb{R}^{m \times m }$$. Our minimization problem is formally written as
+with the weight matrix $$\boldsymbol{W}$$. Our minimization problem is formally written as
 
 $$\min_{\boldsymbol{c}\in \mathbb{R}^n, \boldsymbol{\alpha}\in\mathcal{S}_\alpha} R_{WLS}(\boldsymbol{\alpha},\boldsymbol{c}) \Leftrightarrow \min_{\boldsymbol{c}\in \mathbb{R}^n, \boldsymbol{\alpha}\in\mathcal{S}_\alpha} \lVert{\boldsymbol{W}(\boldsymbol{y}-\boldsymbol{\eta}(\boldsymbol{\alpha},\boldsymbol{c}))}\rVert_2^2 \label{FullMinimization}\tag{2}.$$
 
@@ -144,11 +144,11 @@ $$\boldsymbol{r_w}(\boldsymbol\alpha) = \boldsymbol{y_w}-\boldsymbol{\Phi_w}(\bo
 
 and the *matrix of model function derivatives*
 
-$$\boldsymbol{D_k}(\boldsymbol\alpha) := \frac{\partial \boldsymbol{\Phi_w}}{\partial \alpha_k} (\boldsymbol\alpha) \in \mathbb{R}^{m\times n},$$
+$$\boldsymbol{D_k}(\boldsymbol\alpha) := \frac{\partial \boldsymbol{\Phi_w}}{\partial \alpha_k} (\boldsymbol\alpha) =\boldsymbol{W} \frac{\partial \boldsymbol{\Phi}}{\partial \alpha_k} (\boldsymbol\alpha) \in \mathbb{R}^{m\times n},$$
 
-where the derivative is performed element-wise for $$\boldsymbol{\Phi_w}$$. That means the $$(i,j)$$ element of $$\boldsymbol{D_k}$$ is $$ w_i \frac{\partial\phi_j}{\partial\alpha_k} (\alpha,t_i)$$. If we want to use Levenberg-Marquardt to find a solution, then it is necessary to know the Jacobian of $$\eta$$. However, we might want (for some reason) to minimize the weighted residual $$R_{WLS}=\lVert \boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))\rVert_2^2$$ using a general purpose minimization algorithm. In this case we need to calculate the gradient
+where the derivative is performed element-wise for $$\boldsymbol{\Phi_w}$$. If the weight matrix is diagonal $$\boldsymbol{W}=\text{diag}(w_1,\dots,w_m)$$, then  $$(i,j)$$ element of $$\boldsymbol{D_k}$$ is $$ w_i \frac{\partial\phi_j}{\partial\alpha_k} (\alpha,t_i)$$. If we want to use Levenberg-Marquardt to find a solution, then it is necessary to know the Jacobian of $$\eta$$. However, we might want (for some reason) to minimize the weighted residual $$R_{WLS}=\lVert \boldsymbol{y_w}-\boldsymbol\eta(\boldsymbol\alpha,\boldsymbol{\hat{c}}(\boldsymbol\alpha))\rVert_2^2$$ using a general purpose minimization algorithm. In this case we need to calculate the gradient
 
-$$\nabla R_{WLS} = (\partial R_{WLS}/\partial\alpha_1,...,\partial R_{WLS}/\partial\alpha_q)^T.$$
+$$\nabla R_{WLS} = (\partial R_{WLS}/\partial\alpha_1,\dots,\partial R_{WLS}/\partial\alpha_q)^T.$$
 
 The $$k$$-th component is calculated using [the product rule for the dot product](https://math.stackexchange.com/questions/159284/product-rule-for-the-derivative-of-a-dot-product):
 
@@ -227,7 +227,7 @@ The expressions are grouped in such a way that only matrix vector products need 
 [^nonlinear_base]: These functions could also be linear in their parameters but it makes little sense to have them be linear without good reason. One such reason could be that the parameter space is constrained, because the derivatives presented in here are only true for unconstrained linear parameters.
 [^unconstrained]: This is not a principal limitation of the method. But in this post I am only reproducing the expressions for unconstrained fitting of the linear parameters. If the linear parameters were constrained, this would influence the derivatives presented later. See (Sima 2007) for more information.
 [^notation_c_alpha]: In their manuscript, O'Leary and Rust refer to  $$\boldsymbol{\hat{c}}(\boldsymbol{\alpha})$$ as $$\boldsymbol{c}(\boldsymbol{\alpha})$$. I decided to add the hat to emphasize that this is the particular value that solves the linear least squares problem.
-[^mistake_paper]: In the published version of the paper it is mistakenly stated that $$\boldsymbol{\hat{c}}$$ equals $$\boldsymbol{\Phi_w}(\boldsymbol{\alpha})^\dagger \boldsymbol{y}$$ instead of $$\boldsymbol{\Phi_w}(\boldsymbol{\alpha})^\dagger \boldsymbol{y_w}$$. This mistake is corrected in the online manuscript. However the mistake also occurs when the expression for the derivatives are given and is not corrected in either version. In both expressions for $$\boldsymbol{a_k}$$ and $$\boldsymbol{b_k}$$ the symbol $$\boldsymbol{y}$$ needs to be replaced by $$\boldsymbol{y_w}$$. Unless I am completely mistaken, which is always possible...
+[^mistake_paper]: In the published version of the paper it is mistakenly stated that $$\boldsymbol{\hat{c}}$$ equals $$\boldsymbol{\Phi_w}(\boldsymbol{\alpha})^\dagger \boldsymbol{y}$$ instead of $$\boldsymbol{\Phi_w}(\boldsymbol{\alpha})^\dagger \boldsymbol{y_w}$$. This mistake is corrected in the online manuscript. However the mistake also occurs when the expression for the derivatives are given and is not corrected in either version. In both expressions for $$\boldsymbol{a_k}$$ and $$\boldsymbol{b_k}$$ the symbol $$\boldsymbol{y}$$ needs to be replaced by $$\boldsymbol{y_w}$$. Unless I am completely mistaken, which is always possible\dots
 [^rank_of_Phi]: For any $$m \times n$$ matrix witn $$n<m$$ the rank is less than or equal to $$n$$. The matrix is [considered to have full rank](https://www.cds.caltech.edu/~murray/amwiki/index.php/FAQ:_What_does_it_mean_for_a_non-square_matrix_to_be_full_rank%3F) if its rank equals $$n$$.
 [^full_rank_Phi]: Ideally the function matrix $$\boldsymbol{\Phi}(\boldsymbol{\alpha})$$ should have full rank, since the model is not well designed if the model base functions are linearly dependent. However, there are cases under which that could happen for particular values $$\boldsymbol{\alpha}$$. For example when fitting sums of exponential models with background terms.
 [^model_base_functions]: This name might not always be accurate because the functions don't necessarily have to be linearly independent. However, for a good model they should be. See also the discussions later on the rank of $$\boldsymbol{\Phi}$$.
