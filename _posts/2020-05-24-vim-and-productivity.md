@@ -1,4 +1,8 @@
-# vim and productivity  
+---
+layout: post
+title: vim and productivity
+---
+
 You cringed, didn't you? It's certainly given. I won't mind if you did cringe reading the title of this post. This is yet another post on the internet telling people why vim is awesome.  
 In my career as a software developer so far, I've mostly used vim as a code editor. But it was not until recently that I realized that I've been underutilizing it.  
 I, like everybody else, am going through a mid-career crisis right now, asking myself as to where exactly I am headed. A small step in the journey of self-discovery was introspecting my productivity. So there! I rediscovered vim.  
