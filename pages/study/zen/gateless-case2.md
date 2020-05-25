@@ -254,3 +254,6 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- _All dharmas are marked by emptiness; they neither arise nor cease, are neither defiled nor pure, neither increase nor decrease._ \[[Prajñāpāramitāhṛdaya Sūtra](https://en.wikipedia.org/wiki/Heart_Sutra)\]
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- _Sakyamuni Buddha saw the morning star and was enlightened, and he said, "I, and the great earth and beings, simultaneously achieve the Way."_ \[[Denkōroku](https://en.wikipedia.org/wiki/Denkoroku), case 1, Sakyamuni, trad. Francis H. Cook\]
