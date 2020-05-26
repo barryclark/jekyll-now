@@ -13,6 +13,8 @@ tags:
 
 During this panel with The New Stack, I, Carla and John discuss how to apply principles of cloud native security to the enterprise.
 
+Featuring:
+
 * Alex Williams, founder and publisher of The New Stack (host)
 * Cheryl Hung, Director of Ecosystem, Cloud Native Computing Foundation
 * Carla Arend, Senior Program Director, Infrastructure Software, IDC
