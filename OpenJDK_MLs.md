@@ -13,6 +13,8 @@ redirect_from:
 
 [gb-discuss](https://mail.openjdk.java.net/pipermail/gb-discuss/) 
 
+[Dev Guide](https://mail.openjdk.java.net/mailman/listinfo/jdk-dev)
+
 [discuss](https://mail.openjdk.java.net/pipermail//discuss)
 
 [adoption-discuss](https://mail.openjdk.java.net/pipermail/adoption-discuss/)
