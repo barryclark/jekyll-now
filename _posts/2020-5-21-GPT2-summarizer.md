@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Summarize scientific text with GPT2
+title: Summarize COVID-19 literature with GPT2
 ---
 
 <br>
 ![Logos]({{ site.baseurl }}/images/coronavirus.jpg "COVID19")
 <p align="center">
-    <font size="4"> <b> publication on coronavirus is accelerating. </b> </font>
+    <font size="4"> </font>
 </p>
 <br>
 
@@ -47,7 +47,7 @@ First I need a way to create a labeled data out of the text somehow. The work ar
 
 ## text-to-text framework
 
-The idea is that the model maps one input text to output text, hence the name "text-to-text".  This is in contast to other styles that map to class label, label of span, etc. This has been shown beautifully in T5 model by Google. The strategy is that I provide a context to the model to make it recognize the task it will perform. The context I use is a special token that I make "<|summarize|>". The model has to learn that when it sees this token it is asked to generate a summary after this token.
+The idea is that the model maps one input text to output text, hence the name "text-to-text".  This is in contast to other styles that map to class label, label of span, etc. This has been shown beautifully in T5 model by Google. The strategy is that I provide a context to the model to make it recognize the task it will perform. The context I use is a special token that I make "<summarize>". The model has to learn that when it sees this token it is asked to generate a summary after this token.
 
 ## Multi-loss training
 
@@ -76,7 +76,7 @@ The create the training dataset I bundle together 5 tensor objects. Since I use 
 5. the multiple choice answer [1].
 
 <br>
-![Logos]({{ site.baseurl }}/images/training_1.jpg "training")
+![Logos]({{ site.baseurl }}/images/training_1.png "training")
 <p align="center">
     <font size="4"> <b> diagram illustrating training strategy. </b> </font>
 </p>
@@ -87,9 +87,9 @@ The create the training dataset I bundle together 5 tensor objects. Since I use 
 The training of DistilGPT2 is carried out on a Google Colab equiped with 1x NVIDIA Tesla P100GPU. A total of 5 epochs are performed. The training dataset consists of 31246 training samples,each sample has 4 multiple choice options. The validation dataset consists of 3555 samples, eachalso has 4 multiple choices. The training parameters include the learning rate 3e−5, with batch size =1 and gradient accumulation of 5 steps. The linearly decreasing learning rate scheduler is used for every epoch. The training loss of the first epoch is shown in figure below.
 
 <br>
-![Logos]({{ site.baseurl }}/images/training_result_1_epoch.png "training_loss")
+![Logos]({{ site.baseurl }}/images/train_result_1_epoch.png "training_loss")
 <p align="center">
-    <font size="4"> <b> the loss function for the language modeling and multiple choice task in 1 epoch of training. Note that the language model loss is in exponentiated form (so-called the perplexity score). The multiple choise appears to be too easy since the loss drops to zero very quickly. </b> </font>
+    <font size="4"> <b> the loss function for the language modeling and multiple choice task in 1 epoch of training.</b> Note that the language model loss is in exponentiated form (so-called the perplexity score). The multiple choise appears to be too easy since the loss drops to zero very quickly. </font>
 </p>
 <br>
 
@@ -102,7 +102,7 @@ To generate a result, we sample tokens from the output (likelihood distribution)
 ## sample results
 
 <br>
-![Logos]({{ site.baseurl }}/images/summary_1_cropped.jpg "summary")
+![Logos]({{ site.baseurl }}/images/summary_1_cropp.jpg "summary")
 <p align="center">
     <font size="4"> <b> examples of the summary. </b> </font>
 </p>
