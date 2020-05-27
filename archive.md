@@ -4,6 +4,8 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+<iframe width="700" height="300" frameborder="0" scrolling="no" src="//plotly.com/~charlie2343/75.png?autosize=true&link=false"></iframe>
+
 ### May 27th thoughts & takeaways:
 
 * I've changed some of the plots around and changed the intersections I've been looking at for the volume & speed plots. A few were locations stopped reporting data over the course of the past month so those were removed. 
@@ -19,7 +21,7 @@ permalink: /COVID19/archive/
 
 * Last week I was curious what kind of traffic is actually returning to the roads over the past month of so. Is it people returning to work? People feeling cabin sick and heading outside? I pulled the data and grouped by a few analysis periods. From April 5th to May 2nd, weekend traffic was recovering the fastest, and nearly 4x as fast as the AM peak hour.
 
-<iframe width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~charlie2343/75.embed?autosize=true&link=false"></iframe>
+<iframe width="700" height="300" frameborder="0" scrolling="no" src="//plotly.com/~charlie2343/75.embed?autosize=true&link=false"></iframe>
 
 ***
 
