@@ -24,11 +24,18 @@ header
   margin: auto
   border-radius: 64px
   z-index: 2
+  @include mobile-portrait
+    width: 100%
+    margin-top: 24px
+    padding: 0 1rem
   .logo
     flex: .5
     svg
       width: 72px
       height: 72px
+      @include mobile-portrait
+        width: 56px
+        height: 56px
   .hi-there
     display: flex
     flex-direction: column
@@ -51,9 +58,13 @@ header
     text-transform: uppercase
     flex: 1
     width: 200px
+    @include mobile-portrait
+      display: none
   nav
     flex: .5
     z-index: 5
+    @include mobile-portrait
+      display: none
     ul.nav-links
       display: flex
       flex-direction: row
@@ -75,6 +86,10 @@ header
   margin-top: 120px
   grid-template-columns: 15% 1fr 48px 1fr 15%
   grid-template-rows: 16px auto 96px 1fr 16px
+  @include mobile-portrait
+    display: grid
+    grid-template-columns: 8px 1fr 8px
+    // grid-template-rows: 
   .subtitle
     grid-column: 2/3
     grid-row: 2/3

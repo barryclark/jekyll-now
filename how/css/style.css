@@ -570,6 +570,13 @@ header {
   border-radius: 64px;
   z-index: 2;
 }
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  header {
+    width: 100%;
+    margin-top: 24px;
+    padding: 0 1rem;
+  }
+}
 header .logo {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
@@ -578,6 +585,12 @@ header .logo {
 header .logo svg {
   width: 72px;
   height: 72px;
+}
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  header .logo svg {
+    width: 56px;
+    height: 56px;
+  }
 }
 header .hi-there {
   display: -webkit-box;
@@ -615,11 +628,21 @@ header a.blog {
           flex: 1;
   width: 200px;
 }
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  header a.blog {
+    display: none;
+  }
+}
 header nav {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
   z-index: 5;
+}
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  header nav {
+    display: none;
+  }
 }
 header nav ul.nav-links {
   display: -webkit-box;
@@ -790,6 +813,14 @@ header nav ul.nav-links a {
 .who > *:nth-child(25) {
   -ms-grid-row: 5;
   -ms-grid-column: 5;
+}
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  .who {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 8px 1fr 8px;
+    grid-template-columns: 8px 1fr 8px;
+  }
 }
 .who .subtitle {
   -ms-grid-column: 2;
