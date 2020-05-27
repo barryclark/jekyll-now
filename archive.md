@@ -4,6 +4,15 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### May 27th thoughts & takeaways:
+
+* I've changed some of the plots around and changed the intersections I've been looking at for the volume & speed plots. A few were locations stopped reporting data over the course of the past month so those were removed. 
+
+* I've added a plot that compares Austin traffic vs national trends data from Apple. It sounds like the data comes from people requesting directions in Apple maps, which probably would skew from the normal amount during memorial day weekend. It appears that nationally the traffic has already recovered past the January 13th baseline Apple compares to.
+
+
+***
+
 ### May 23rd thoughts & takeaways:
 
 * Monday, Tuesday, Wednesday, Thursday's traffic volumes all were very similar. Yesterday only barely higher than the previous Friday which I thought was strange as it was the beginning of the long weekend and with all of the extra businesses that could open. That being said, it was the 2nd busiest day on Austin's roads since the beginning of the lockdown. 
