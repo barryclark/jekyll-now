@@ -102,7 +102,7 @@ To generate a result, we sample tokens from the output (likelihood distribution)
 ## sample results
 
 <br>
-![Logos]({{ site.baseurl }}/images/summary_1_cropp.jpg "summary")
+![Logos]({{ site.baseurl }}/images/summary_1_crop.jpg "summary")
 <p align="center">
     <font size="4"> <b> examples of the summary. </b> </font>
 </p>
