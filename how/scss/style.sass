@@ -34,8 +34,8 @@ header
       width: 72px
       height: 72px
       @include mobile-portrait
-        width: 56px
-        height: 56px
+        width: 64px
+        height: 64px
   .hi-there
     display: flex
     flex-direction: column
@@ -216,6 +216,8 @@ header
   display: flex
   justify-content: center
   align-items: center
+  @include mobile-portrait
+    display: none
 .eye
   background: $dark-grey
   width: 0.5rem

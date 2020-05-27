@@ -588,8 +588,8 @@ header .logo svg {
 }
 @media screen and (min-width: 320px) and (orientation: portrait) {
   header .logo svg {
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
   }
 }
 header .hi-there {
@@ -1087,6 +1087,11 @@ header nav ul.nav-links a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  .cursor {
+    display: none;
+  }
 }
 
 .eye {
