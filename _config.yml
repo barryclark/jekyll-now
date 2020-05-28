@@ -84,3 +84,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# If you want to show read time on your posts set this to true.
+read_time: false
