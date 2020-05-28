@@ -85,5 +85,5 @@ exclude:
   - README.md
   - CNAME
 
-# If you want to show read time on your posts turn this ON.
+# If you want to show read time on your posts set this to true.
 read_time: false
