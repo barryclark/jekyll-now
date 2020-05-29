@@ -547,6 +547,38 @@ a {
   color: #333;
 }
 
+h2 {
+  font-size: 48px;
+  font-family: "SourceSerif";
+  font-weight: 800;
+  z-index: 1;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+h2:before {
+  content: "";
+  background: #FFAE01;
+  width: 80%;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 56px;
+  z-index: -10;
+}
+
+.fun {
+  font-size: 18px;
+  font-family: "Shnobel";
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  z-index: 1;
+  position: relative;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -830,36 +862,6 @@ header nav ul.nav-links a {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
-.who .subtitle h2 {
-  font-size: 48px;
-  font-family: "SourceSerif";
-  font-weight: 800;
-  z-index: 1;
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-}
-.who .subtitle h2:before {
-  content: "";
-  background: #FFAE01;
-  width: 100%;
-  height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  top: 56px;
-  z-index: -10;
-}
-.who .subtitle .fun {
-  font-size: 18px;
-  font-family: "Shnobel";
-  font-style: normal;
-  font-weight: normal;
-  text-align: right;
-  z-index: 1;
-  position: relative;
-}
 .who .who-is {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -874,6 +876,7 @@ header nav ul.nav-links a {
   margin-top: 24px;
   font-size: 1.2rem;
   line-height: 1.6rem;
+  font-weight: 200;
 }
 .who .who-is .desc strong {
   font-weight: bold;
@@ -943,6 +946,323 @@ header nav ul.nav-links a {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+}
+
+.how {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 60px;
+  -ms-grid-columns: 15% 1fr 8px 1fr 8px 1fr 15%;
+  grid-template-columns: 15% 1fr 8px 1fr 8px 1fr 15%;
+  -ms-grid-rows: 16px auto 8px 470px 16px;
+  grid-template-rows: 16px auto 8px 470px 16px;
+}
+
+.how > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.how > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.how > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.how > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.how > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.how > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+}
+
+.how > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.how > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.how > *:nth-child(9) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.how > *:nth-child(10) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+.how > *:nth-child(11) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+
+.how > *:nth-child(12) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+}
+
+.how > *:nth-child(13) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+}
+
+.how > *:nth-child(14) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+}
+
+.how > *:nth-child(15) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.how > *:nth-child(16) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+
+.how > *:nth-child(17) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.how > *:nth-child(18) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+
+.how > *:nth-child(19) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.how > *:nth-child(20) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+}
+
+.how > *:nth-child(21) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.how > *:nth-child(22) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+
+.how > *:nth-child(23) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+}
+
+.how > *:nth-child(24) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+}
+
+.how > *:nth-child(25) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+}
+
+.how > *:nth-child(26) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
+}
+
+.how > *:nth-child(27) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 6;
+}
+
+.how > *:nth-child(28) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 7;
+}
+
+.how > *:nth-child(29) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.how > *:nth-child(30) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+}
+
+.how > *:nth-child(31) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.how > *:nth-child(32) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+}
+
+.how > *:nth-child(33) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+.how > *:nth-child(34) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 6;
+}
+
+.how > *:nth-child(35) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+.how .subtitle {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.how .subtitle h2 {
+  width: 120px;
+}
+.how .subtitle h2:before {
+  left: 16px;
+}
+.how .subtitle h5 {
+  margin-top: 16px;
+}
+.how .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+.how .skills ul.skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 24px;
+  width: 100%;
+  color: #333;
+}
+.how .skills ul.skill-list li {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  font-family: "Inter var";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.how .skills ul.skill-list li h3.list {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 16px;
+  margin-left: 40px;
+}
+.how .skills ul.skill-list li h3.list:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: block;
+  background: red;
+  top: 26px;
+  position: relative;
+  left: -40px;
+}
+.how .skills ul.skill-list li .img {
+  width: 320px;
+  height: 220px;
+  background: black;
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 8px 0;
+}
+.how .skills ul.skill-list li p.desc {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 16px 0;
+}
+.how .skills ul.skill-list li strong {
+  font-weight: bold;
+}
+.how .skills ul.skill-list li ul.skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8px;
+}
+.how .skills ul.skill-list li ul.skills-list li {
+  padding: 0;
+}
+.how .skills ul.skill-list li ul.skills-list li a {
+  margin: 2px;
+  padding: 4px 8px;
+  background: rgba(255, 174, 1, 0.8);
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 6px;
+  width: auto;
+  display: block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.how .skills ul.skill-list li ul.skills-list li a:hover {
+  color: #000;
 }
 
 .glitch {
