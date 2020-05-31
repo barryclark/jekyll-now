@@ -7,11 +7,11 @@ permalink: /pages/study/zen/quotes/
 **Done:**
 
 * [Bodhidharma](https://en.wikipedia.org/wiki/Bodhidharma), 5th or 6th century, ref: [1] The Zen Teaching of BodhiDharma, translated by Red Pine, 1987
+* [Huineng / Eno](https://en.wikipedia.org/wiki/Huineng), (638–713), ref: [2] The Sutra of Hui-Neng, grand master of Zen, translated by Thomas Cleary, 1998
+* [Huineng / Eno](https://en.wikipedia.org/wiki/Huineng), (638–713), ref: [3] Huineng's Commentary on the Diamond Sutra, translated by Thomas Cleary, 1998 (same book as [2])
 
 **Work in progress:**
 
-* [Huineng / Eno](https://en.wikipedia.org/wiki/Huineng), (638–713), ref: [2] The Sutra of Hui-Neng, grand master of Zen, translated by Thomas Cleary, 1998
-* [Huineng / Eno](https://en.wikipedia.org/wiki/Huineng), (638–713), ref: [3] The Platform Sutra of the Sixth Patriarch, translated by Philip B. Yampolsky, 1996
 * [Huangpo / Obaku](https://en.wikipedia.org/wiki/Huangbo_Xiyun) (?-805), disciple of Baizhang, teacher of Linji, ref: [4] The Zen Teaching of Huang Po on the transmission of mind, translated by John  Blofeld, 1958
 * [Linji / Rinzai](https://en.wikipedia.org/wiki/Linji_Yixuan) (?-866), ref: [5] Three Chan Classics - The Recorded Sayings of Linji, BDK English Tripitaka 74-I, II, III, 1999
 * [Zhaozhou / Joshu](https://en.wikipedia.org/wiki/Zhaozhou_Congshen) (778–897), ref: [6] The Recorded Sayings of Zen Master Joshu, translated by James Green, 1998
@@ -62,3 +62,30 @@ permalink: /pages/study/zen/quotes/
 > "Enlightenment and ignorance are seen by ordinary people as two, while the wise realize their essential nature has no duality. The essentual nature without duality is the true nature. True nature is not diminished in the ordinary and ignorant, nor is it increased in the wise and the holy; it is not deranged in affliction, and it is not quiescent in meditation concentration. It does not come to an end, nor does it endure forever; it does not come or go, and it is not in the middle or the inside or outside. Unborn and unperishing, nature and characteristics as such, permanent and unchanging - this is called the Way." - Huineng [2] p 69
 
 > "Some people who cling to emptiness repudiate the scriptures, simply saying they don't need writings. If they say they don't need writings, then people shouldn't speak either, because speech has the characteristics of writing." - Huineng [2] p 71
+
+> "Our minds inherently have buddha in them; your own inner buddha is the real buddha. If there were no buddha-mind, where would we look for the real buddha? Your own mind is buddha. Do not doubt any more. There is nothing external that can establish anything - it is all the original mind conceiving all sorts of things." - Huineng [2] p 78
+
+> "Those who are not free of egotistic personality are called 'beings.' If you detach from this illness, in reality there are no 'beings' to attain liberation through extinction. There it is said [in the Diamond Sutra] 'When thee is no errant mind, you manifest enlightenment; samsara and nirvana are originally equal.' What liberation through extinction is there?" - Huineng [3], p94
+
+> "If you cultivate practice in accord with the teaching, and there are no subject and object in the mind, this is a good state. If a practitioner has subject and object in mind, this is not called a good state. As long as the sense of subject and object is not extinguished, one will never attain liberation." - Huineng [3], p96
+
+> "Although the blessings of giving away a universe of treasures in charity may be many, there is no benefit in respect to essential nature." - Huineng [3] p103
+
+> "All verbal and literary expressions are like labels, like pointing fingers. Labels and pointers mean shadows and echoes. You obtain a commodity by its label, and you see the moon by way of the pointing finger - the moon is not the finger, the label is not the thing itself. Just get the teaching by way of the sutra - the sutra is not the teaching. The sutra literature is visible to the physical eye, but the teaching is visible to the eye of insight. Without the eye of insight, you just see the literature, not the teaching. If you do not see the teahcing, you do not undertand what Buddha meant. If you do not understand what Buddha meant, then reciting sutras won't produce buddhahood." - Huinent [3] p104
+
+> Commenting on the Diamond Sutra quote: "Subhuti, the truth realized by the Realized One has neither reality nor unreality."  
+> "There is no reality in the sense that the essence of things is empty and silent, with no appearance that can be apprehended. And yet there are countless inhetent potencies within it, which are not hidden when put to use; and so it says there is no unreality either.  
+> You may want to say it is real, yet no defining characteristics can be found; you may want to say it is unreal, yet it functions without interruption. Therefore it cannot be said not to exist, yet cannot be said to exist. It can be nothing, yet is not nothing; no words or metaphors can each it - does this not describe true wisdom alone?" - Huineng [3], p 118
+
+> "The Great Vehicle is a matter of vast knowledge and wisdom, skillfully able to establish all teachings. The Supreme Vehicle is a matter of not seeing defiled things to reject, not seeing pure things to seek, not seeing living beings to liberatre, not seeing nirvana to realize, not entertaining the idea of liberating livng beings, no entertaining the idea of not liberating living beings, not entertaining the idea of not liberating living beings: this is called the Supreme Vehicle, and it is also called all-knowledge. It is also called acceptance of nonorigination, and it is also called great prajna, insight or wisdom." - Huineng [3] p 121
+
+> Commenting on the Diamond Sutra quote: "Therefore the Realized One says that all things are Buddha's teaching, Subhuti, 'all things' are not all things; therefore they are called 'all things'."  
+> "Mentally free from grasping and rejecting anything, and also free from subject and object, he clearly defines all things yet his mind is always empty and silent; therefore he knows all things are Buddha's teachings.  
+> Lest the delided greedily cling to all things as Buddha's teachings, in order to eliminate this disease he says that 'all things' are not all things. There is no subject or object in his mind, which is silent yet ever aware; stability and insight are equally operative, substance and function are one - therefore 'they are called all things'." - Huineng [3] p 127
+
+> "Talking about emptyness all day does not say a single word. [...]  
+> The _Sutra of Vimalakirty_ says, 'Real teaching involves no preaching, no giving orders; listening to the teaching involves no hearing and no grasping.' You realize that myriad things are empty, and all names and words are temporary setups; constructed within inherent emptiness, all the verbal expositions explain that all realities are signless and unfabricated, thus guiding deluded people in such a way as to get them to see their original nature and cultivate and realize unsurpassed enlightenment." - Huineng [3] p 133
+
+> "All beings are originally themselves buddhas; if you say the Realized One liberates beings so they become buddhas, then this is a false statement." - Huineng [3] p 137
+
+> "Those who aspire to enlightenment should see all beings as having buddha-nature, should see all beings as inherently endowed with uncontamined all-knowledge, should believe all beings are originally without afflictions, should believe that the intrinsic nature of all beings is fundamentally without birth or death. Even though they put all knowledge and insight into practice and expediently deal with people and help them, they do not entertain a sense of subject and object." - Huineng [3] p 143
