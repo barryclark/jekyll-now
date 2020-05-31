@@ -283,6 +283,17 @@ footer {
   text-align: center;
 }
 
+table.alternate_color tr:nth-child(odd){
+   background-color: #f6f8fa;
+}
+
+td {
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
