@@ -4,6 +4,16 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### May 31st thoughts & takeaways:
+
+* The past week has been eventful, to say the least. Between severe weather and protests average speeds have fallen sharply. Traffic incidents have increased as well. 
+
+* Traffic volumes increased to a new high water mark on Friday. It was the highest volume in a single day since March 14th, the day after schools were closed.
+
+* Over Memorial Day weekend, shared micromobility daily trip totals broke 1,000 for the first time since March 23rd. 
+
+***
+
 ### May 27th thoughts & takeaways:
 
 * I've changed some of the plots around and changed the intersections I've been looking at for the volume & speed plots. A few were locations stopped reporting data over the course of the past month so those were removed. 
