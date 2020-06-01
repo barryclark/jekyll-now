@@ -57,14 +57,14 @@ I began experimenting with different ways to show the uvi value and its place on
 My goals was to use as fewer elements as possible but without hiding information.
 
 <p>
-	<img src="/static/media/case-studies/Suny-Case-Study/suny-case-study-banner.jpg" class="portrait">
+	<img src="/static/media/case-studies/Suny-Case-Study/early-concepts.jpg" class="landscape">
 </p>
 
 I sensed my early concepts were lacking a cognitive connection  with the idea of solar radiation. And I also wanted the value's severity to influence the UI and to visibly impact it. 
 
 I went back to basics and asked myself: what if I use a single shape reigning over the UI?
 
-Proposal: Using a circle and its radius as a representation of the sun's "intensity"
+Proposal: Using a circle and its radius as a representation of the sun's "intensity".
 
 <p>
 	<img src="/static/media/case-studies/Suny-Case-Study/sun.jpg" class="landscape">
