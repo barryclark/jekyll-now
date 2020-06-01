@@ -57,7 +57,7 @@ I began experimenting with different ways to show the uvi value and its place on
 My goals was to use as fewer elements as possible but without hiding information.
 
 <p>
-	<img src="/static/media/case-studies/Suny/suny-case-study-banner.jpg" class="portrait">
+	<img src="/static/media/case-studies/Suny-Case-Study/suny-case-study-banner.jpg" class="portrait">
 </p>
 
 I sensed my early concepts were lacking a cognitive connection  with the idea of solar radiation. And I also wanted the value's severity to influence the UI and to visibly impact it. 
@@ -67,13 +67,13 @@ I went back to basics and asked myself: what if I use a single shape reigning ov
 Proposal: Using a circle and its radius as a representation of the sun's "intensity"
 
 <p>
-	<img src="/static/media/case-studies/Suny-Case-study/sun.jpg" class="landscape">
+	<img src="/static/media/case-studies/Suny-Case-Study/sun.jpg" class="landscape">
 </p>
 
 Bigger the sun, bigger the risk. And the color ranging from cool to warm.
 
 <p>
-	<img src="/static/media/case-studies/Suny-Case-study/sun-levels.jpg" class="landscape">
+	<img src="/static/media/case-studies/Suny-Case-Study/sun-levels.jpg" class="landscape">
 </p>
 
 <p>
@@ -89,7 +89,7 @@ The app was quite popular on South America and certain regions of Africa. User m
 Where it failed though, was in encouraging users to take appropriate action to protect their skin. People weren't sure what to do (or not do) if a given value were labeled as "Very High" or "Extreme". Should they put more sunscreen or not go out at all? I find Wolfram Alpha to succeed in that regard.
 
 <p>
-	<img src="/static/media/case-studies/Suny/wolfram-alpha.jpg" class="landscape">
+	<img src="/static/media/case-studies/Suny-Case-Study/wolfram-alpha.jpg" class="landscape">
 </p>
 
 I really liked working on the app and being part of the daily routine of people. Doing something beneficial to people's health is always satisfying.
