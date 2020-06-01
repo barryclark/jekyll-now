@@ -162,6 +162,21 @@ article.projectsArticle article h1 {
 	font-size: 1.17vw;
 	text-transform: uppercase;
 	padding-bottom: 1.75vw;
+	display: inline-block;
+}
+
+article.projectsArticle article a {
+	font-family: 'Lora', serif;
+	font-style: italic;
+	color: black;
+	opacity: 0.7;
+	font-size: 1.17vw;
+	margin-left: 0.7vw;
+}
+
+article.projectsArticle article a:hover {
+	text-decoration: underline;
+	opacity: 1;
 }
 
 /* Thumbnails */
