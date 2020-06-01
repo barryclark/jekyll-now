@@ -50,7 +50,7 @@ As a personal project, I worked as the sole UX/UI Designer and Software Engineer
 
 # My process
 
-## Helping makes sense of UV Index scale
+### Helping makes sense of UV Index scale
 
 I began experimenting with different ways to show the uvi value and its place on the scale as a start.
 
