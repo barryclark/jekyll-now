@@ -40,7 +40,7 @@ c_reach = 6000 # number of people in the test group who see the ads and convert
 
 As I said earlier, the model is hierarchical in the sense that the probability that a reached person will convert is contingent on the probability of him/her being reach, which in turn also contingent on him/her being in the test group. The estimate of the *proportional impact*, as well as *its uncertainty*, has to capture this hierarchical dependency. One way to do it is to perform **Bayesian hierarchical modeling.** In Python, this task is implemented in **Pymc3** package.
 
-Esentially, **Pymc3** implements Markov chain Monte-Carlo algorithm. This algorithm is a simulation-based approach in the sense that .... For more information read the appendix.
+Esentially, **Pymc3** implements Markov chain Monte-Carlo (MCMC) algorithm. For more information on the MCMC, read the appendix.
 
 The estimate gives us a distribution of plausible values of the lift. The distribution reflects the uncertainty we have about the lift result, i.e. the degree of belief that the *true lift impact* may falls within the range.
 
