@@ -12,6 +12,8 @@ title: Bayesian regression tutorial with PyMC3
 
 * TOC
 {:toc}
+# H1 header
+## H2 header
 
 # Introduction
 
@@ -703,6 +705,7 @@ To model this, we simulate drawing an event from Bernoulli distribution, where t
 Let's do it with heterogeneity added as interaction term. There are many ways to do this, one can logistic regression and do inverse logit to get a probability (p), and send the probability p to Bernoulli process. Alternatively, we will use a flat beta distribution as a prior to the Bernoulli process.
 
 {% highlight python %}
+
 with pm.Model() as count_heterogenous_model:
   x1 = theano.shared(data['x1'].values)
   x2 = theano.shared(data['x2'].values)
@@ -714,6 +717,7 @@ with pm.Model() as count_heterogenous_model:
   y_hat = pm.Bernoulli('y_hat',p = prob1[x1,x2],observed=y1)
   diff = pm.Deterministic('diff', prob1[:,1] - prob1[:,0])
   trace_count_heterogenous = pm.sample()
+
 {% endhighlight %}
 
 ![Figure 19]({{ site.baseurl }}/images/pymc3tutorial/heterogenous_discrete_binary.png "plate_notation")
