@@ -9,7 +9,7 @@ title: Bayesian regression tutorial with PyMC3
     <font size="4"> </font>
 </p>
 <br>
-
+<br>
 
 # Introduction
 
@@ -724,11 +724,3 @@ with pm.Model() as count_heterogenous_model:
 # Final thoughts
 
 There are still many more tutorial examples that I think would be fun to go over. We still haven't touched on a lot of interesting topics. So this will be my future work on the probabilistic programming tutorial. I plan to include topics such as missing data, survival analysis, ordered categorical variables, basic time series, combining Bayesian statistics with ordinary differential equations, and finally deep probabilistic learning where we combine probabilistic programming with deep learning.
-
-# Citation
-
-[Pymc3 website](https://docs.pymc.io)
-
-
-[Statistical rethinking](https://www.youtube.com/watch?v=4WVelCswXo4&list=PLDcUM9US4XdNM4Edgs7weiyIguLSToZRI)
-a famous intro level class on Bayesian statistics
