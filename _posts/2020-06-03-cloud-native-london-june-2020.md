@@ -12,9 +12,9 @@ tags:
   - "2020"
 ---
 
-Welcome to our June Cloud Native London virtual meetup, join us and your fellow techies from across the world on Zoom and YouTube!
+Cloud Native London kicks off our June meetup at 6:30pm BST! Join on Zoom / YouTube to hear from EXELERYS, DataStax and CloudSkiff.
 
-[Join us on Zoom](https://zoom.us/my/cherylhung) using the password: 'cheryl' from 6:30pm BST or watch live via Youtube. 
+[Join us on Zoom](https://zoom.us/my/cherylhung) using the password: 'cheryl' from 6:30pm BST or watch live via Youtube.
 
 ### Our agenda for 3 June 2020 is (times in BST):
 
