@@ -10,10 +10,6 @@ title: Bayesian regression tutorial with PyMC3
 </p>
 <br>
 
-* TOC
-{:toc}
-# H1 header
-## H2 header
 
 # Introduction
 
