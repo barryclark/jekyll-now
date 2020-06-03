@@ -11,6 +11,8 @@ title: Bayesian regression tutorial with PyMC3
 <br>
 <br>
 
+* TOC
+{:toc}
 # Introduction
 
 This blog post gives a broad overview of probabilistic programming, and how it is implemented in pymc3, a popular package in Python. As a tutorial, we will go over various basic regression techniques. Meanwhile, we will introduce various concepts in Bayesian probability.
@@ -548,20 +550,20 @@ Now one awesome thing that Bayesian analysis can do is to do hierarchical modeli
 
 {% highlight python %}
 with pm.Model() as pooled_categorical_model:
-	x1 = theano.shared(data['x1'].values)
-	x2 = theano.shared(data['x2'].values)
-	y1 = pm.Data('y1',data['y1'].values)
+  x1 = theano.shared(data['x1'].values)
+  x2 = theano.shared(data['x2'].values)
+  y1 = pm.Data('y1',data['y1'].values)
 
-	pooled_x2_mu = pm.Normal('pooled_x2_mu',0,1)
-	pooled_x2_sigma = pm.Exponential('pooled_x2_sigma',lam=1)
+  pooled_x2_mu = pm.Normal('pooled_x2_mu',0,1)
+  pooled_x2_sigma = pm.Exponential('pooled_x2_sigma',lam=1)
 
-	cat_x1 = pm.Normal('cat_x1',0,1,shape=len(data['x1'].unique()))
-	cat_x2 = pm.Normal('cat_x2',pooled_x2_mu,pooled_x2_sigma,shape=len(data['x2'].unique()))
-	sigma = pm.Exponential('error',lam=1)
+  cat_x1 = pm.Normal('cat_x1',0,1,shape=len(data['x1'].unique()))
+  cat_x2 = pm.Normal('cat_x2',pooled_x2_mu,pooled_x2_sigma,shape=len(data['x2'].unique()))
+  sigma = pm.Exponential('error',lam=1)
 
-	mu = cat_x1[x1] + cat_x2[x2]
-	y_hat = pm.Normal('y_hat',mu,sigma,observed=y1)
-	trace_pooled_categorical = pm.sample(500,tune=1500,chains=2, cores=2, target_accept=0.95)
+  mu = cat_x1[x1] + cat_x2[x2]
+  y_hat = pm.Normal('y_hat',mu,sigma,observed=y1)
+  trace_pooled_categorical = pm.sample(500,tune=1500,chains=2, cores=2, target_accept=0.95)
 {% endhighlight %}
 
 Here is what the computational graph looks like.
@@ -601,18 +603,18 @@ First let's try it without heterogeneity. We're estimating the effect of x2 (thi
 
 {% highlight python %}
 with pm.Model() as no_heterogenous_model:
-	x1 = theano.shared(data['x1'].values)
-	x2 = theano.shared(data['x2'].values)
-	y1 = pm.Data('y1',data['y1'].values)
+  x1 = theano.shared(data['x1'].values)
+  x2 = theano.shared(data['x2'].values)
+  y1 = pm.Data('y1',data['y1'].values)
 
-	#alpha = pm.Normal('intercept',0,2)
-	cat_x1 = pm.Normal('cat_x1',0,1,shape=len(data['x1'].unique()))
-	cat_x2 = pm.Normal('cat_x2',0,1,shape=len(data['x2'].unique()))
-	sigma = pm.Exponential('error',lam=1)
+  #alpha = pm.Normal('intercept',0,2)
+  cat_x1 = pm.Normal('cat_x1',0,1,shape=len(data['x1'].unique()))
+  cat_x2 = pm.Normal('cat_x2',0,1,shape=len(data['x2'].unique()))
+  sigma = pm.Exponential('error',lam=1)
 
-	mu = cat_x1[x1] + cat_x2[x2] #+ alpha
-	y_hat = pm.Normal('y_hat',mu,sigma,observed=y1)
-	trace_no_heterogenous = pm.sample(500,tune=1500,chains=2, cores=2, target_accept=0.95)
+  mu = cat_x1[x1] + cat_x2[x2] #+ alpha
+  y_hat = pm.Normal('y_hat',mu,sigma,observed=y1)
+  trace_no_heterogenous = pm.sample(500,tune=1500,chains=2, cores=2, target_accept=0.95)
 {% highlight python %}
 
 ![Figure 16]({{ site.baseurl }}/images/pymc3tutorial/no_heterogenous.png "plate_notation")
@@ -627,35 +629,35 @@ But let's do it again with heterogeneity included in the model.
 
 {% highlight python %}
 with pm.Model() as heterogenous_model:
-	x1 = theano.shared(data['x1'].values)
-	x2 = theano.shared(data['x2'].values)
-	y1 = pm.Data('y1',data['y1'].values) 
+  x1 = theano.shared(data['x1'].values)
+  x2 = theano.shared(data['x2'].values)
+  y1 = pm.Data('y1',data['y1'].values) 
 
 
-	error = pm.Exponential('error',lam=1)
+  error = pm.Exponential('error',lam=1)
 
-	#these blocks of codes create covariance matrix for every x1,x2 pairs
-	# Compute the covariance matrix
-	a_bar = pm.Normal('a_bar', mu=0, sd=2)
-	b_bar = pm.Normal('b_bar', mu=0, sd=2)
-	sigma = pm.Exponential.dist(lam=1)
-	packed_chol = pm.LKJCholeskyCov('chol_cov', eta=2, n=2, sd_dist=sigma)
-	chol = pm.expand_packed_triangular(2, packed_chol, lower=True)
-	cov = theano.tensor.dot(chol, chol.T)
-	# Extract the standard deviations and rho
-	sigma_ab = pm.Deterministic('sigma_ab', tt.sqrt(tt.diag(cov)))
-	corr = theano.tensor.diag(sigma_ab**-1).dot(cov.dot(theano.tensor.diag(sigma_ab**-1)))
-	r = pm.Deterministic('Rho', corr[np.triu_indices(2, k=1)])
+  #these blocks of codes create covariance matrix for every x1,x2 pairs
+  # Compute the covariance matrix
+  a_bar = pm.Normal('a_bar', mu=0, sd=2)
+  b_bar = pm.Normal('b_bar', mu=0, sd=2)
+  sigma = pm.Exponential.dist(lam=1)
+  packed_chol = pm.LKJCholeskyCov('chol_cov', eta=2, n=2, sd_dist=sigma)
+  chol = pm.expand_packed_triangular(2, packed_chol, lower=True)
+  cov = theano.tensor.dot(chol, chol.T)
+  # Extract the standard deviations and rho
+  sigma_ab = pm.Deterministic('sigma_ab', tt.sqrt(tt.diag(cov)))
+  corr = theano.tensor.diag(sigma_ab**-1).dot(cov.dot(theano.tensor.diag(sigma_ab**-1)))
+  r = pm.Deterministic('Rho', corr[np.triu_indices(2, k=1)])
 
 
-	ab_cat = pm.MvNormal('ab_did', mu=[a_bar,b_bar], chol=chol, shape=(len(data['x1'].unique()), 
-	len(data['x2'].unique())))
+  ab_cat = pm.MvNormal('ab_did', mu=[a_bar,b_bar], chol=chol, shape=(len(data['x1'].unique()), 
+  len(data['x2'].unique())))
 
-	# calculate mean of y_hat from the multivariate Normal distribution
-	mu = ab_cat[x1,x2]
-	y_hat = pm.Normal('y_hat',mu,error,observed=y1)
-	trace_heterogenous = pm.sample(500,tune=1500,chains=2, cores=2, target_accept=0.95)
-{% highlight python %}
+  # calculate mean of y_hat from the multivariate Normal distribution
+  mu = ab_cat[x1,x2]
+  y_hat = pm.Normal('y_hat',mu,error,observed=y1)
+  trace_heterogenous = pm.sample(500,tune=1500,chains=2, cores=2, target_accept=0.95)
+{% endhighlight %}
 
 ![Figure 17]({{ site.baseurl }}/images/pymc3tutorial/with_heterogenous.png "plate_notation")
 <p align="center">
