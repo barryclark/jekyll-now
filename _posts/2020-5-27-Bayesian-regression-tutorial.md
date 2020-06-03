@@ -704,17 +704,16 @@ Let's do it with heterogeneity added as interaction term. There are many ways to
 
 {% highlight python %}
 with pm.Model() as count_heterogenous_model:
-	x1 = theano.shared(data['x1'].values)
-	x2 = theano.shared(data['x2'].values)
-	y1 = theano.shared(data['y1'].values) 
+  x1 = theano.shared(data['x1'].values)
+  x2 = theano.shared(data['x2'].values)
+  y1 = theano.shared(data['y1'].values) 
 
-	# prior
-	prob1 = pm.Beta('treatment effect',alpha=1,beta=1,shape=(3,2))
-
-	# likelihood
-	y_hat = pm.Bernoulli('y_hat',p = prob1[x1,x2],observed=y1)
-	diff = pm.Deterministic('diff', prob1[:,1] - prob1[:,0])
-	trace_count_heterogenous = pm.sample()
+  # prior
+  prob1 = pm.Beta('treatment effect',alpha=1,beta=1,shape=(3,2))
+  # likelihood
+  y_hat = pm.Bernoulli('y_hat',p = prob1[x1,x2],observed=y1)
+  diff = pm.Deterministic('diff', prob1[:,1] - prob1[:,0])
+  trace_count_heterogenous = pm.sample()
 {% endhighlight %}
 
 ![Figure 19]({{ site.baseurl }}/images/pymc3tutorial/heterogenous_discrete_binary.png "plate_notation")
@@ -728,7 +727,7 @@ There are still many more tutorial examples that I think would be fun to go over
 
 # Citation
 
-[Pymc3 website](https://docs.pymc.io/)
+[Pymc3 website](https://docs.pymc.io)
 
 
 [Statistical rethinking](https://www.youtube.com/watch?v=4WVelCswXo4&list=PLDcUM9US4XdNM4Edgs7weiyIguLSToZRI)
