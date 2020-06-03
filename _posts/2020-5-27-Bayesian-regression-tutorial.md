@@ -11,7 +11,8 @@ title: Bayesian regression tutorial with PyMC3
 <br>
 <br>
 
-
+* TOC
+{:toc}
 # Introduction
 
 This blog post gives a broad overview of probabilistic programming, and how it is implemented in pymc3, a popular package in Python. As a tutorial, we will go over various basic regression techniques. Meanwhile, we will introduce various concepts in Bayesian probability.
