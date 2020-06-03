@@ -11,8 +11,7 @@ title: Bayesian regression tutorial with PyMC3
 <br>
 <br>
 
-* TOC
-{:toc}
+
 # Introduction
 
 This blog post gives a broad overview of probabilistic programming, and how it is implemented in pymc3, a popular package in Python. As a tutorial, we will go over various basic regression techniques. Meanwhile, we will introduce various concepts in Bayesian probability.
@@ -595,7 +594,7 @@ x1 = np.random.choice(3,size=100)
 x2 = np.random.choice(2,size=100)
 y1 = beta3[x1,x2] + np.random.normal(loc=0, scale=0.1, size=100)# + beta1[x1] + beta2[x2]
 data = pd.DataFrame({'x1': x1,'x2': x2,'y1': y1})
-C
+{% endhighlight %}	
 </p>
 </details>
 
@@ -615,7 +614,7 @@ with pm.Model() as no_heterogenous_model:
   mu = cat_x1[x1] + cat_x2[x2] #+ alpha
   y_hat = pm.Normal('y_hat',mu,sigma,observed=y1)
   trace_no_heterogenous = pm.sample(500,tune=1500,chains=2, cores=2, target_accept=0.95)
-{% highlight python %}
+{% endhighlight %}
 
 ![Figure 16]({{ site.baseurl }}/images/pymc3tutorial/no_heterogenous.png "plate_notation")
 <p align="center">
@@ -703,7 +702,6 @@ To model this, we simulate drawing an event from Bernoulli distribution, where t
 Let's do it with heterogeneity added as interaction term. There are many ways to do this, one can logistic regression and do inverse logit to get a probability (p), and send the probability p to Bernoulli process. Alternatively, we will use a flat beta distribution as a prior to the Bernoulli process.
 
 {% highlight python %}
-
 with pm.Model() as count_heterogenous_model:
   x1 = theano.shared(data['x1'].values)
   x2 = theano.shared(data['x2'].values)
@@ -715,7 +713,6 @@ with pm.Model() as count_heterogenous_model:
   y_hat = pm.Bernoulli('y_hat',p = prob1[x1,x2],observed=y1)
   diff = pm.Deterministic('diff', prob1[:,1] - prob1[:,0])
   trace_count_heterogenous = pm.sample()
-
 {% endhighlight %}
 
 ![Figure 19]({{ site.baseurl }}/images/pymc3tutorial/heterogenous_discrete_binary.png "plate_notation")
