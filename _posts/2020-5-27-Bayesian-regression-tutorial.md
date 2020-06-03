@@ -100,6 +100,27 @@ You might ask "what can you really do in Pymc3?"  So this section is about some 
 
 This tutorial will start off with a data generation from probability distributions. The output of the data generation is an observed data. Then we will write pymc3 codes to do inference and recover the data generating process. During this, we will reason our ways through what models to use, how to capture the data generating process.
 
+<details>
+<summary>
+<i>packages you'd need </i>
+</summary>
+<p>
+{% highlight python %}
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+!pip install arviz==0.6.1
+!pip install pymc3==3.8
+!pip install Theano==1.0.4
+import arviz
+import theano
+import pymc3 as pm
+{% endhighlight %}	
+</p>
+</details>
+
 ## simple linear regression
 
 The key here is that effect (dependent variable) is linearly dependent on independent variables.
