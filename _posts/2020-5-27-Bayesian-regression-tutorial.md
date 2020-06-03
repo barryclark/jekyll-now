@@ -63,7 +63,7 @@ with pm.Model() as example2:
   	trace_2 = pm.sample(2000,cores=4)
 {% endhighlight %}
 
-![Figure 2]({{ site.baseurl }}/images/pymc3tutorial/example2.png "plate_notation")
+![Figure 2]({{ site.baseurl }}/images/pymc3tutorial/example_2.png "plate_notation")
 <p align="center">
     <font size="2"><b>Figure 2.</b> inferring probability of coin toss 8 heads out of 10 trials </font>
 </p>
@@ -262,7 +262,7 @@ with pm.Model() as pipe_confound:
 
 Or if you want to model the causal process how x1 generate x2 and x2 generate y, you can do a chain of bayesian regressions. like this.
 
-![Figure 7]({{ site.baseurl }}/images/pymc3tutorial/graph_the_pipe.pdf "plate_notation")
+![Figure 7]({{ site.baseurl }}/images/pymc3tutorial/graph_the_pipe.png "plate_notation")
 <p align="center">
     <font size="2"><b>Figure 7.</b> a computational graph of the path analysis showing the prior, the data, and the random distribution that generate them </font>
 </p>
@@ -469,7 +469,7 @@ data = pd.DataFrame({'x1':x1,'x2':x2,'z': z,'y': y})
 
 Here is how we can write down the graph. Notice that x2 is a pipe of x1 to y, but x1 also has a direct path to y as well. Moreover, both x1 and y affects z. In this way, z is a collider of x1 and y.
 
-![Figure 13]({{ site.baseurl }}/images/pymc3tutorial/graph_combined_confounds.pdf "plate_notation")
+![Figure 13]({{ site.baseurl }}/images/pymc3tutorial/graph_combined_confounds.png "plate_notation")
 <p align="center">
     <font size="2"><b>Figure 13.</b> a computational graph representing the causal process </font>
 </p>
@@ -568,7 +568,7 @@ with pm.Model() as pooled_categorical_model:
 
 Here is what the computational graph looks like.
 
-![Figure 15]({{ site.baseurl }}/images/pymc3tutorial/graph_pooled_categorical_model.pdf "plate_notation")
+![Figure 15]({{ site.baseurl }}/images/pymc3tutorial/graph_pooled_categorical_model.png "plate_notation")
 <p align="center">
     <font size="2"><b>Figure 15.</b> a computational graph of a hierarchical Bayesian modeling </font>
 </p>
@@ -666,7 +666,7 @@ with pm.Model() as heterogenous_model:
 
 Now you see that the effect of x2 vary among x1 classes. The overall effect is zero because the overall effect among classes cancels out. 
 
-![Figure 18]({{ site.baseurl }}/images/pymc3tutorial/graphh_heterogenous.pdf "plate_notation")
+![Figure 18]({{ site.baseurl }}/images/pymc3tutorial/graph_heterogenous.png "plate_notation")
 <p align="center">
     <font size="2"><b>Figure 18.</b> a computational graph for Bayesian regression with heterogenous effect </font>
 </p>
