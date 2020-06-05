@@ -37,6 +37,8 @@ redirect_from:
 
 [Valhala](https://mail.openjdk.java.net/pipermail/valhalla-dev/)
 
+[amber-experts](https://mail.openjdk.java.net/pipermail/amber-spec-experts/)
+
 [amber-dev](https://mail.openjdk.java.net/pipermail/amber-dev/)
 
 [announce](https://mail.openjdk.java.net/pipermail/announce/)
