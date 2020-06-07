@@ -97,7 +97,7 @@ auto operator|(const std::optional<T> & arg, F&& func)
 ```
 The rest of the implementation can be left unchanged, regardless of whether the callable returns an optional or not.
 
-There is one last thing left to do. We removed this implementation for callables returning `void` from the overload set using SFINAE. Now we have to provide a suitable overload instead. In the next article we will do just that.
+There is one last thing left to do. We removed this implementation for callables returning `void` from the overload set using SFINAE. Now we have to provide a suitable overload instead. In the [next article](/blog/2020/optional-pipe-syntax-part-3/) we will do just that.
 
 # Endnotes
 

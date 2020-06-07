@@ -117,3 +117,6 @@ The last line should be `Length is 400` but `length` captures a reference to a t
 
 # Relation to Functional Programming
 The idea for this operator was inspired by the null conditional operator of C#. Furthermore I was interested in template metaprogramming and functional programming. I have gotten more proficient in both of those disciplines since I had the initial idea, but I am still learning a lot. The other day, I reached Chapter 10 in the excellent [Functional Programming in C++](https://www.manning.com/books/functional-programming-in-c-plus-plus) book by Ivan Čukić. Then I saw that my operator had a close relationship to the concept of a monad, which is often mentionned in the functional programming context. I pretty much implemented a combination of what the author calls the *transform* and *bind* functions for monads. I have just started with monads and I am excited to see how getting deeper into functional programming will shape my understanding of C++ in the future.
+
+# Code
+You can have a look at the code over [at my GitHub repository](https://github.com/geo-ant/funcpp).
