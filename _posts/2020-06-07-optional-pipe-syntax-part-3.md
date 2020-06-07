@@ -7,7 +7,7 @@ date: 2020-06-07
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Implementing a Pipe Syntax for `std::optional` - Part 3: Conditional Compilation'
+title: 'Implementing a Pipe Syntax for `std::optional` - Part 3: Indended Side Effects and Unintended Limitations'
 comments_id: 12
 ---
 
