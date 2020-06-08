@@ -9,14 +9,16 @@ permalink: /pages/study/zen/quotes/
 * [Bodhidharma](https://en.wikipedia.org/wiki/Bodhidharma), 5th or 6th century, ref: [1] The Zen Teaching of BodhiDharma, translated by Red Pine, 1987
 * [Huineng / Eno](https://en.wikipedia.org/wiki/Huineng), (638–713), ref: [2] The Sutra of Hui-Neng, grand master of Zen, translated by Thomas Cleary, 1998
 * [Huineng / Eno](https://en.wikipedia.org/wiki/Huineng), (638–713), ref: [3] Huineng's Commentary on the Diamond Sutra, translated by Thomas Cleary, 1998 (same book as [2])
+* [Huangpo / Obaku](https://en.wikipedia.org/wiki/Huangbo_Xiyun) (?-805), disciple of Baizhang, teacher of Linji, ref: [4] The Zen Teaching of Huang Po on the transmission of mind, translated by John  Blofeld, 1958
 
 **Work in progress:**
 
-* [Huangpo / Obaku](https://en.wikipedia.org/wiki/Huangbo_Xiyun) (?-805), disciple of Baizhang, teacher of Linji, ref: [4] The Zen Teaching of Huang Po on the transmission of mind, translated by John  Blofeld, 1958
 * [Linji / Rinzai](https://en.wikipedia.org/wiki/Linji_Yixuan) (?-866), ref: [5] Three Chan Classics - The Recorded Sayings of Linji, BDK English Tripitaka 74-I, II, III, 1999
 * [Zhaozhou / Joshu](https://en.wikipedia.org/wiki/Zhaozhou_Congshen) (778–897), ref: [6] The Recorded Sayings of Zen Master Joshu, translated by James Green, 1998
 * [Yuanwu Keqin](https://en.wikipedia.org/wiki/Yuanwu_Keqin) (1063–1135), who compiled the Blue Cliff Record, ref: [7] Zen Letters, Teachings of Yuanwu, translated by J.C. Cleary and Thomas Cleary, 1994
 
+
+# Unsorted quotes (work in progress)
 
 > " _This mind is the Buddha_ says the same thing. Beyond this mind you'll never find another Buddha. To search for enlightenment or nirvana beyond this mind is impossible. The reality of your own self-nature, the absence of cause and effect, is what's meant by mind. Your mind is nirvana. You might think you can find a Buddha or enlightenment somewhere beyond the mind, but such a place doesn't exist." - Bodhidharma, Bloodstream Sermon, [1], p9
 
@@ -89,3 +91,36 @@ permalink: /pages/study/zen/quotes/
 > "All beings are originally themselves buddhas; if you say the Realized One liberates beings so they become buddhas, then this is a false statement." - Huineng [3] p 137
 
 > "Those who aspire to enlightenment should see all beings as having buddha-nature, should see all beings as inherently endowed with uncontamined all-knowledge, should believe all beings are originally without afflictions, should believe that the intrinsic nature of all beings is fundamentally without birth or death. Even though they put all knowledge and insight into practice and expediently deal with people and help them, they do not entertain a sense of subject and object." - Huineng [3] p 143
+
+
+> "If you look upon the Buddha as presenting a pure, bright or Enlightened appearance, or upon sentient beings as presenting a foul, dark or mortal-seeming appearance, there conceptions resulting from attachment to form will keep you from supreme knowledge." - Huangpo [4] (The Chun Chou record) p 31
+
+> "The building up of good and evil both involve attachment to form. Those who, being attached to form, do evil, have to undergo various incarnations unnecessarily; while those who, being attached to form, do good, subject themselves to toil and privation equally to no purpose. In either case it is better to achieve sudden self-realization and to grasp the fundamental Dharma." - Huangpo [4] (The Chun Chou record) p24
+
+> "If you students of the Way seek to progress through seeing, hearing, feeling and knowing, when you are deprived of your peceptions, your way to Mind will be cut off and you will find nowhere to enter. Only realize that, thgough real Mind is expressed in there perceptions, it neither forms part of them nor is separate from them. You should not start reasoning from there perceptions, nor allow them to give rise to conceptual thought; yet nor should you seek the Ond Mind apart from them or abandon them in your pursuit of th eDharma. Do not keep them nor abandon them nor dwell in them nor cleave to them. Above, below and around you, all is spontaneously existing, for there is nowhere which is outside the Buddha-Mind" - Huangpo [4] (The Chun Chou record) p36
+
+> [Dharmakaya and the void] "do not differ from each other, nor is there any difference between sentient beings and Buddhas, or between samsara and nirvana, or between delusion and Bodhi. When all such forms are abandoned, there is the Buddha. [...]  
+> This spiritually enlightening nature is without beginnig, as ancient as the Void, subject neither to birth nor to destruction, neither existing nor not existing, neither impure nor pure, neither clamorous nor silent, neither old nor young, occupying no space, having neither inside nor outside, size nor form, colour not sound. It cannot be looked for or sought, compehreneded by wisdom or knowledge, explained in words, contacted materially or reached by meritorious achievement. [...]  
+> You cannot use Mind to see Mind, the Buddha to seek the Buddha, or the Dharma to seek the Dharma. So you students of the Way should immediately refrain from conceptual thought." - Huangpo [4] (The Chun Chou record) pp. 41-42
+
+> "Nothing is born, nothing is destroyed. Away with your dualism, your likes and dislikes. Every single thing is just the One Mind" - Huangpo [4] (The Chun Chou record) p44
+
+> "Regarding this Zen Doctrine of ours, since it was first transmitted, it has never taught that men should seek for learning or form concepts. 'Studying the Way' is just a figure of speech. It is a method of arousing people's interest in the early stages of their development. In fact, the Way is not something which can be studied. Study leads to the retention of concepts and so the Wa is entirely misunderstood." - Huangpo [4] (The Chun Chou record) p55
+
+> "The Way is spiritual truth and was originally without name or title. It was only because people ignorantly sought for it empirically that the Buddhas appeared and taught them to eradicate this method of approach. Fearing that nobody would understand, they selected the name 'Way'. You must not allow this name to lead you into forming a mental concept of a road. So it is said 'When the fish is caught we pay no more attention to the trap.' When body and mind achieve spontaneity, the Way is reached and Mind is understood." - Huangpo [4] (The Chun Chou record) p55
+
+> "The arising and the elimination of illusion are both illusory. Illusion is not something rooted in Reality; it exists because of your dualistic thinking." - Huangpo [4] (The Chun Chou record) p59
+
+> "Enlightenment springs from Mind, regardless of your practice of the six paramitas and the rest. All such practices are merely expedients for handling 'concrete' matters when dealing with the problems of daily life. Even Enlightenment, the Absolute, Reality, Sudden Attainment, the Dharmakaya and all the others down to the Ten States of Progress, the Four Rewards of virtuous and wise living and the State of Holiness and Wisdom are - every one of them - mere concepts for helping us through samrara; they have nothing to do with the real Buddha-Mind." - Huangpo [4] (The Wan Ling record) p69
+
+> "You have always been one with the Buddha, so do not pretend you can attain to this oneness by various practices." - Huangpo [4] (The Wan Ling record) p 79
+
+> "All phenomena are basically without existence, though you cannot now say that they are non-existent. Karma having arisen does not thereby exist; karma destroyed does not thereby cease to exist. Even its root does not exist, for that root is no root." - Huangpo [4] (The Wan Ling record) p106
+
+> "Therefore it is said: 'The perception of a phenomenon is the perception of the Universal Nature, since phenomena and Mind are one and the same.' It is only because you cling to outward forms that you come to 'see', 'hear', 'feel' and 'know' things as individual entities. True perception is beyond your powers so long as you indulge in these." - Huangpo [4] (The Wan Ling record) p 118
+
+# Beautiful quotes
+
+> Talking about the Diamond Sutra, Huineng says: "This one-scroll sutra originally exists in the essential nature of all living beings. People who do not see it themselves just read and recite written letters. If you realize your original mind, you will realize for the first time that this sutra is not in written letters." - Huineng [4] p86
+
+> Pei Hsiu enters Master Huangpo precinct, asking for direction. "But surely there are Zen monks here in this temple, aren't there? -- Yes, replied the monastery administrator, there is one." - The Wan Ling record, anecdotes [4] p100
