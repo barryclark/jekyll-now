@@ -1,5 +1,3 @@
-# Am I a Pragmatic Programmer?
-
 ![a pragmatic tool](../images/pragmatic-programmer.jpg)
 
 This post begins with a warning: **this is a very personal and selfish outcome of a book**. In any sense it is meant to be a summary about it and, if I were you, I would give it a try. There are a lot of great concepts that are great to know and I am leaving them out because I've seen them in other books, my work experience, college, etc. You shouldn't. Only some of them are: Orthogonality, Coupling, DRY, Big O, CI, CD, etc.
