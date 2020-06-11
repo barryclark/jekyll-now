@@ -32,8 +32,8 @@ dfm1.plot()
 dfm2.plot()
 dfm3.plot()
 
-The results could be seen here: https://github.com/MinShiMia/MinShiMia.github.io/blob/master/_posts/2020-06-10-realDonaldTrumpTweetsInfor_Post.pdf.
+The results could be seen here: https://github.com/MinShiMia/MinShiMia.github.io/blob/master/_posts/realDonaldTrumpTweetsInfor.pdf.
 
 
 I also have searched the data in Twitter about China and the U.S. relations, the results are also interesting which could be explored here: 
-_posts/China_US_tweets_infor.pdf.
+https://github.com/MinShiMia/MinShiMia.github.io/blob/master/_posts/China_US_tweets_infor.pdf.
