@@ -33,7 +33,7 @@ dfm2.plot()
 dfm3.plot()
 
 The results are shown in the screenshots below:
-![images1](images/realDonalTrump1.png)
+![images/realDonalTrump1.png](images/realDonalTrump1.png)
 ![images2](images/realDonalTrump2.png)
 ![images3](images/realDonalTrump2.png)
 
@@ -42,7 +42,7 @@ Also, you can [get the PDF](_posts/realDonaldTrumpTweetsInfor.pdf)directly. http
 
 I also have searched the data in Twitter about China and the U.S. relations, the results are also interesting which could be explored here: 
 ![images4](images/ChinaUS1.png)
-![My helpful screenshot](images/ChinaUS2.png)
+![My helpful screenshot](/images/ChinaUS2.png)
 ![My helpful screenshot](images/ChinaUS3.png)
 
 Also, you can [get the PDF](_posts/China_US_tweets_infor.pdf)directly. 
