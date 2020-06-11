@@ -33,7 +33,7 @@ dfm2.plot()
 dfm3.plot()
 
 The results are shown in the screenshots below:
-![images/realDonalTrump1.png](images/realDonalTrump1.png)
+![images/realDonalTrump1.png](https://minshimia.github.io/images/realDonalTrump1.png)
 ![images2](images/realDonalTrump2.png)
 ![images3](images/realDonalTrump2.png)
 
