@@ -10,13 +10,13 @@ The results are shown in the screenshots below:
 ![images2](https://minshimia.github.io/images/realDonaldTrump2.png)
 ![images3](https://minshimia.github.io/images/realDonaldTrump3.png)
 
-Also, you can [get the PDF](https://github.com/MinShiMia/MinShiMia.github.io/blob/master/_posts/realDonaldTrumpTweetsInfor.pdf)directly. 
+Also, you can [get the PDF](https://github.com/MinShiMia/MinShiMia.github.io/blob/master/_posts/realDonaldTrumpTweetsInfor.pdf) directly. 
 
 I also have searched the data in Twitter about China and the U.S. relations, the results are also interesting which could be explored here: 
 ![images4](https://minshimia.github.io/images/ChinaUS1.png)
 ![images5](https://minshimia.github.io/images/ChinaUS2.png)
 ![images6](https://minshimia.github.io/images/ChinaUS3.png)
 
-Also, you can [get the PDF](https://github.com/MinShiMia/MinShiMia.github.io/blob/master/_posts/China_US_tweets_infor.pdf)directly. 
+Also, you can [get the PDF](https://github.com/MinShiMia/MinShiMia.github.io/blob/master/_posts/China_US_tweets_infor.pdf) directly. 
 
 Thanks!
