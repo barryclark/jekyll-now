@@ -8,7 +8,9 @@ I use API method and non-API method to get the data from Twitter. Then I used mu
 I. API Method:(the data is the tweets information of "realDonaldTrump")
 
 The result is as follows:
-![images0](https://github.com/MinShiMia/MinShiMia.github.io/blob/master/images/Rplot01.png)
+![images](https://minshimia.github.io/images/Rplot01.png)
+![images0](https://minshimia.github.io/images/Rplot02.jpeg)
+
 
 II. Non-API Method(the data is about two topics: "realDonaldTrump" and "China-U.S. relations"):
 
