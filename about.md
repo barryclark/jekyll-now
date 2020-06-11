@@ -12,4 +12,4 @@ I have learned programming with R, Stata, and also have a little bit of experien
 
 ### Contact me
 
-[minshimiya@gmail.com]
+[email@domain.com](mailto:minshimiya@gmail.com)
