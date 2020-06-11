@@ -8,7 +8,7 @@ I am Min Shi, a Ph.D. student majoring in political science and interested in pr
 
 ### More Information
 
-I have some programming experience with R, Stata in classes, and Python, Java by myself. I would like to make friends with those who are also beginners in programming. We could accompany each other to learn step by step. 
+I have learned programming with R, Stata, and also have a little bit of experience with Python, Java. I would like to make friends with those who are also beginners in programming. We could accompany each other to learn step by step. 
 
 ### Contact me
 
