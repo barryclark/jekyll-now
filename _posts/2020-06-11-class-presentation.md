@@ -9,7 +9,6 @@ I. API Method:(the data is the tweets information of "realDonaldTrump")
 
 The result is as follows:
 ![images](https://minshimia.github.io/images/Rplot01.png)
-![images0](https://minshimia.github.io/images/Rplot02.jpeg)
 
 
 II. Non-API Method(the data is about two topics: "realDonaldTrump" and "China-U.S. relations"):
