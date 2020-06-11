@@ -4,6 +4,18 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### June 11th thoughts & takeaways:
+
+* Traffic volumes increased by 26% in May, [but there are obvious reasons why this isn't the best way to measure the recovery.](https://twitter.com/aniccia/status/1270799838540517376).
+
+* Another way to show this is that May's daily traffic volumes were 63% of pre-lockdown February. 
+
+* It's not completely clear as to why speeds fell two weeks ago. There was some rainy weather  Wednesday night. Thursday night (5/28) was the beginning of the protests, but I wouldn't expect the protests to have an impact on the speeds at the intersections I look at.
+
+* Black lives matter
+
+***
+
 ### May 31st thoughts & takeaways:
 
 * The past week has been eventful, to say the least. Between severe weather and protests average speeds have fallen sharply. Traffic incidents have increased as well. 
