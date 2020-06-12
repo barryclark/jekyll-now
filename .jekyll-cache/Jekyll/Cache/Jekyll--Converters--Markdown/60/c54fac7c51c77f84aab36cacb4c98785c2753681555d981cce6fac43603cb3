@@ -1,0 +1,35 @@
+I"ç<h2 id="the-gay-berne-potential">The Gay-Berne potential</h2>
+
+<p>This is just trying out some Late\(\chi\) ;</p>
+
+\[\begin{equation}
+U_{ij}^{\mathrm LJ/GB} =
+4 \epsilon_0^{\mathrm LJ/GB}
+[\epsilon^{\mathrm LJ/GB}]^{\mu}
+( {\mathbf {\hat u}}_j , {\mathbf {\hat r}}_{ij} )
+\times  \left[ \left(
+\frac{\sigma_0^{\mathrm LJ/GB}
+}
+{
+r_{ij} -
+\sigma^{\mathrm LJ/GB}
+({\mathbf {\hat{u}}}_j, {\mathbf {\hat{r}}}_{ij} )
++ {\sigma_0}^{\mathrm LJ/GB}
+}
+\right)^{12}
+-
+\left(
+\frac
+{
+\sigma_0^{\mathrm LJ/GB}
+}
+{
+r_{ij} -
+\sigma^{\mathrm LJ/GB}
+({\mathbf {\hat{u}}}_j, {\mathbf {\hat{r}}}_{ij} )
++ {\sigma_0}^{\mathrm LJ/GB}
+}
+\right)^{6}
+\right]
+\end{equation}\]
+:ET
