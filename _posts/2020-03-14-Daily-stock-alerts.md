@@ -190,6 +190,25 @@ If you want to test your file immediately, you can use
 
 to run it immediately. You should be able to see output in your log files.
 
+If you messed up, and you need to edit your plist file, you can use
+
+```console
+/Library/LaunchAgents $ launchctl unload whatever.label.you.chose
+```
+
+to unload the file. Then you can load it again.
+
+If the call to your script is more complicated than just `python script.py`, you can stuff it into a `bash -c` command like so:
+
+```xml
+<key>ProgramArguments</key>
+    <array>
+        <string>bash</string>
+        <string>-c</string>
+        <string>whatever you want. e.g: cd /my/dir && source env/bin/activate && python script.py</string>
+    </array>
+```
+
 ### Next steps
 There's hardly any error-checking in this script at all, so adding some checks would be smart.
 
