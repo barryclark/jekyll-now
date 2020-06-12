@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Be Aware of Your (Container) Surroundings"
-excerpt: "I was invited to write a piece for the '97 Things Every Java Programmer Should Know O'Reilly book. So here's my small contribution…"
+excerpt: "I was invited to write a piece for the '97 Things Every Java Programmer Should Know' O'Reilly book. So here's my small contribution…"
 ---
 
-<i>I was invited to write a piece for the '97 Things Every Java Programmer Should Know O'Reilly book. So here's my small contribution…<i/>
+<i>I was invited to write a piece for the '97 Things Every Java Programmer Should Know' O'Reilly book. So here's my small contribution…<i/>
 
 <br/>
 <p align="center">
