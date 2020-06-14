@@ -1,23 +1,16 @@
----
-layout: post
-title: Trying out some equations
----
+I"Æ<h2 id="the-gay-berne-potential">The Gay-Berne potential</h2>
 
-## The Gay-Berne potential
+<p>This is just trying out some \(\LaTeX\) ;</p>
 
-This is just trying out some $$\LaTeX$$ ;
-
-
-$$
-\begin{equation}
+\[\begin{equation}
 \begin{aligned}
 U_{ij}^{\mathrm LJ/GB} =
-  & 4 \epsilon_0^{\mathrm LJ/GB}
+  &amp; 4 \epsilon_0^{\mathrm LJ/GB}
 [\epsilon^{\mathrm LJ/GB}]^{\mu}
 ( {\mathbf {\hat u}}_j , {\mathbf {\hat r}}_{ij} )
 \times \\
-  & \left[
-    \left(
+  &amp; \left[
+  &amp; \left(
 \frac{\sigma_0^{\mathrm LJ/GB}
 }
 {
@@ -42,5 +35,5 @@ r_{ij} -
 \right)^{6}
 \right]
 \end{aligned}
-\end{equation}
-$$
+\end{equation}\]
+:ET
