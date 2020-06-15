@@ -6,15 +6,14 @@ redirect_from:
   - /draft/
 ---
 
-<br/>
+
 <h3>TL;DR</h3>
 Java 14 brings multiple enhancements related to APIs associated with Java language preview features.
 * It is now impossible to invoke an API associated with a preview feature without using the `--enable-preview` flag at compile and runtime.
 * The javadoc related to associated APIs are now much clearer.
-* Warnings are now also much clearer as they are about preview features being used, and not about the underlying mechanism used.
+* Realted warnings are now also much clearer as they are about preview features being used, not about the underlying mechanism used.
 
 
-<br/>
 <h3>The slightly longer version...</h3>
 This post discusses some useful improvements done in Java 14 around  preview language features, and more specifically improvements done, in Java 14, around APIs that come with preview language features, aka preview feature associated APIs.
 
