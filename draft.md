@@ -7,14 +7,15 @@ redirect_from:
 ---
 
 
-<h3>TL;DR</h3>
+<br/>
+<h2>TL;DR</h2>
 Java 14 brings multiple enhancements related to APIs associated with Java language preview features.
-* It is now impossible to invoke an API associated with a preview feature without using the `--enable-preview` flag at compile and runtime.
+* It is impossible to invoke an API associated with a preview feature without using the `--enable-preview` flag at compile time and at runtime.
 * The javadoc related to associated APIs are now much clearer.
-* Realted warnings are now also much clearer as they are about preview features being used, not about the underlying mechanism used.
+* Related warnings are now also much clearer as they are about preview features being used, not about the underlying mechanism used.
 
-
-<h3>The slightly longer version...</h3>
+<br/>
+<h2>The slightly longer version…</h2>
 This post discusses some useful improvements done in Java 14 around  preview language features, and more specifically improvements done, in Java 14, around APIs that come with preview language features, aka preview feature associated APIs.
 
 <br/>
@@ -30,7 +31,7 @@ For example, Text Blocks is a new Java language feature previewed in Java 13 and
 
 * `String::stripIndent()` used to strip away incidental white space from the text block content
 * `String::translateEscapes()` used to translate escape sequences
-* `String::formatted(Object... args)` simplify value substitution in the text block
+* `String::formatted(Object… args)` simplify value substitution in the text block
 
 <br/>
 Before Java 14, it was technically possible to use an API associated with a preview feature without using the `--enable-preview` flag, the trick was to use the associated API and not the preview feature itself. For example, it was possible to invoke, in Java 13, Text Block's associated `String::stripIndent()` method directly. That was a bit awkward since we were able to use, without any special precaution, a non-permanent non-final API! The javac compiler would simply issue a _"deprecated and marked for removal"_ warning.
@@ -40,7 +41,7 @@ The good news is that this is not possible anymore! In Java 14, javac and HotSpo
 <br/>
 Moreover, one could run into the odd situation of being prompted _"xyz API has been deprecated and marked for removal"_ when that xyz API was, in fact, introduced in that same Java feature release. One could naively ask: why add an API if that same API is considered _"dead on arrival"_?
 
-We need to look under the hood to understand what was going on. Java 12 and Java 13 were using the deprecation mechanism to safeguard associated APIs with preview features. The associated APIs were in fact terminally deprecated at birth, that is, annotated with `@Deprecated(forRemoval=true, since=...)` when they were introduced.
+We need to look under the hood to understand what was going on. Java 12 and Java 13 were using the deprecation mechanism to safeguard associated APIs with preview features. The associated APIs were in fact terminally deprecated at birth, that is, annotated with `@Deprecated(forRemoval=true, since=…)` when they were introduced.
 
 This is now fixed as of Java 14! A specific [annotation](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/jdk/internal/PreviewFeature.java) is now used instead to safeguard preview features, including associated APIs. We will not face that quirk anymore as associated APIs need to be explicitly enabled with the `--enable-preview` flag, even if they are used without using the actual language feature to which they are associated with (ex. Using the `String::stripIndent()` method without using a text block). As a consequence, we will always be prompted with the more informative _"xyz.java uses preview language features"_ warning. 
 
@@ -70,6 +71,6 @@ This is now solved with Java 14+! The javadoc related to associated APIs have be
 <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#stripIndent()">
 	<img alt="Javadocs in Java 14" src="/images/PreviewAPI_JDK14.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
 </a>
-</p>
+</p><br/>
 
 
