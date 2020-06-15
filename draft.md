@@ -59,7 +59,7 @@ Given that APIs associated with preview features, in Java 12 and Java 13, were t
 
 <p align="center">
 <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#stripIndent()">
-	<img alt="javadoc in Java 13" src="/images/PreviewAPI_JDK13.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
+	<img alt="javadoc in Java 13" src="/images/blog/PreviewAPI13.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
 </a>
 </p>
 
@@ -69,7 +69,7 @@ This is now solved with Java 14+! The javadoc related to associated APIs have be
 
 <p align="center">
 <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#stripIndent()">
-	<img alt="Javadocs in Java 14" src="/images/PreviewAPI_JDK14.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
+	<img alt="Javadocs in Java 14" src="/images/blog/PreviewAPI14.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
 </a>
 </p><br/>
 
