@@ -6,15 +6,12 @@ redirect_from:
   - /draft/
 ---
 
-
-<br/>
 <h2>TL;DR</h2>
 Java 14 brings multiple enhancements related to APIs associated with Java language preview features.
 * It is impossible to invoke an API associated with a preview feature without using the `--enable-preview` flag at compile time and at runtime.
 * The javadoc related to associated APIs are now much clearer.
 * Related warnings are now also much clearer as they are about preview features being used, not about the underlying mechanism used.
 
-<br/>
 <h2>The slightly longer version…</h2>
 This post discusses some useful improvements done in Java 14 around  preview language features, and more specifically improvements done, in Java 14, around APIs that come with preview language features, aka preview feature associated APIs.
 
@@ -57,20 +54,25 @@ This is now fixed as of Java 14! A specific [annotation](https://github.com/open
 Given that APIs associated with preview features, in Java 12 and Java 13, were terminally deprecated; the `@Deprecated` annotation was making the javadoc a bit confusing.
 
 
-<p align="center">
-<a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#stripIndent()">
-	<img alt="javadoc in Java 13" src="/images/blog/PreviewAPI13.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
-</a>
-</p>
+
+<div style="text-align: center;">
+	<a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#stripIndent()">
+		<img align="center" alt="javadoc in Java 13" src="/images/blog/PreviewAPI13.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
+	</a>
+	<span style="text-align: center;">Java 13</span>
+</div>
+
 
 <br/>
-
 This is now solved with Java 14+! The javadoc related to associated APIs have been improved via the use a dedicated `@Preview` taglet ([example](https://github.com/openjdk/jdk14u/blob/e23aaedacfdef53d097250c206f5c7f2babdcc7f/src/java.base/share/classes/java/lang/String.java#L2891-L2898)). They are much clearer!
 
-<p align="center">
-<a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#stripIndent()">
-	<img alt="Javadocs in Java 14" src="/images/blog/PreviewAPI14.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
-</a>
-</p><br/>
+<div style="text-align: center;">
+	<a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#stripIndent()">
+		<img alt="Javadocs in Java 14" src="/images/blog/PreviewAPI14.png" width="100%" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);"/>
+	</a>
+	<span style="text-align: center;">Java 14</span>
+</div>
+
+<p style="text-align: center;">~</p>
 
 
