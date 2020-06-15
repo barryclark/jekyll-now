@@ -8,7 +8,7 @@ redirect_from:
 
 <br/>
 <h3>TL;DR</h3>
-Java 14 brings multiple enhancements related to preview features and their associated APIs:
+Java 14 brings multiple enhancements related to APIs associated with Java language preview features.
 * It is now impossible to invoke an API associated with a preview feature without using the `--enable-preview` flag at compile and runtime.
 * The javadoc related to associated APIs are now much clearer.
 * Warnings are now also much clearer as they are about preview features being used, and not about the underlying mechanism used.
