@@ -2,6 +2,8 @@
 layout: page
 title: "Java 14 - Preview Features associated APIs"
 permalink: /draft_previewAPI/
+redirect_from:
+  - /draft/
 ---
 
 <br/>
@@ -46,10 +48,13 @@ This is now fixed as of Java 14! A specific [annotation](https://github.com/open
 <br/>You can observe the old behavior (Java 12 & Java 13) and the new behavior (Java 14+) in the demo below.
 
 <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
+<div style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);">
 <asciinema-player speed="1.6" start-at="7" src="/resources/cast/preview_api.cast" cols="116" rows="32" poster="npt:1:00"></asciinema-player>
+</div>
 <script src="/js/asciinema-player.js"></script>​
 
-Given that APIs associated with preview features, in Java 12 and Java 13, were terminally deprecated; the `@Deprecated` annotation was making the javadoc a bit confusing. 
+
+Given that APIs associated with preview features, in Java 12 and Java 13, were terminally deprecated; the `@Deprecated` annotation was making the javadoc a bit confusing.
 
 
 <p align="center">
@@ -60,7 +65,7 @@ Given that APIs associated with preview features, in Java 12 and Java 13, were t
 
 <br/>
 
-This is now solved with Java 14+, the javadoc related to associated APIs have been improved through the use a dedicated `@Preview` taglet ([example](https://github.com/openjdk/jdk14u/blob/e23aaedacfdef53d097250c206f5c7f2babdcc7f/src/java.base/share/classes/java/lang/String.java#L2891-L2898)).
+This is now solved with Java 14+! The javadoc related to associated APIs have been improved via the use a dedicated `@Preview` taglet ([example](https://github.com/openjdk/jdk14u/blob/e23aaedacfdef53d097250c206f5c7f2babdcc7f/src/java.base/share/classes/java/lang/String.java#L2891-L2898)). They are much clearer!
 
 <p align="center">
 <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#stripIndent()">
