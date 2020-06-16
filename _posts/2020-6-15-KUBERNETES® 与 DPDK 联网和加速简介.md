@@ -1,0 +1,124 @@
+---
+lauout: post
+title: Kubernetes DPDK
+---
+
+## 介绍
+
+Kubernetes 是一个众所周知的便携式、可扩展的开源平台，用于管理容器化工作负载和服务，这既便于声明性配置，又有利于自动化。它有一个规模庞大、快速增长的生态系统。库伯内特服务、支持和工具随处可见。本文重点介绍 Kubernetes 中的网络，简要介绍了 Kubernetes 网络通信，并提到了使用数据平面开发工具包 （DPDK） 加速的两个选项。
+
+库伯内斯内部的网络通信可以分为四个部分，如图 1 所示：
+
+* 吊舱内的容器到容器通信
+* Pod 到 pod 通信
+* 吊舱和服务之间的通信
+* 服务与库伯奈斯环境外部应用程序之间的通信
+
+[![](https://01.org/sites/default/files/resize/users/u71223/k8s-netwk-1-676x500.png)](https://01.org/sites/default/files/users/u71223/k8s-netwk-1.png)
+
+图 1.库伯内斯网络模型
+
+### 波兹内的集装箱到集装箱通信
+
+Kubernetes 为每个 Pod 分配一个 IP 地址，同一个窗格中的所有容器共享窗格的相同网络命名空间，包括 IP 地址和网络端口，这意味着可以通过本地主机和容器端口的地址相互访问它们。网络模型称为_IP 每个 Pod_。请务必注意，网络命名空间是网络接口和路由表的集合，即网络上的两个设备之间的连接以及发送数据包的位置的说明。
+
+<font _mstmutation="1" _msthash="1464801" _msttexthash="4173428571">此模型的实现利用了称为暂停容器的机密容器，并确保启用其命名空间。创建 Pod 时，Kubernetes 首先在节点上创建一个暂停容器，获取相应的 pod 的 IP 地址，并为加入该窗格的所有其他容器设置网络命名空间。称为应用程序容器的 Pod 中的所有其他容器只需在创建网络命名空间时加入它们。之后，它们都在同一网络命名空间中运行。</font>`--net=container:<id>`
+
+使用 Kubernetes 的_IP/Pod_网络模型，允许本地主机网络访问 Pod 中的容器。容器中的容器必须协调才能有效地使用端口，这意味着端口分配上不存在冲突。他们不必担心与其他舱中的容器的端口碰撞。
+
+### 从波到波通信
+
+pod 可以在同一节点上运行，也可以在不同的节点上运行，因此该窗格之间的通信分为两类：同一节点上的 pod 之间的通信以及不同节点上的 pod 之间的通信。
+
+对于同一节点上的 pod 之间的通信，每个 pod 都认为它获得了正常的以太网设备 eth0，并且具有真正的 IP 地址。但是Kubernetes使用虚拟以太网连接vethX来伪造它，每个 Pod实际上都连接到它。连接有两个侧面：在吊舱的一侧 eth0 和节点侧的 vethX。虚拟设备是连接 pod 网络和节点的隧道。网络网桥将两个网络从两个吊舱连接在一起。节点上的每个 Pod 都是网桥的一部分，网桥连接同一节点上的所有 pod。使用此机制对用户透明，同一节点上的不同 pod 可以直接使用 IP 地址进行通信，而不考虑其他发现机制（如 DNS、领事或等）。
+
+[![](https://01.org/sites/default/files/resize/users/u71223/k8s-netwk-2-578x400.png)](https://01.org/sites/default/files/users/u71223/k8s-netwk-2.png)
+
+图 2.同一节点上的 Pod 间通信
+
+如图 2 所示，Pod 1 和 Pod 2 通过 veth 连接到同一网桥。其 IP 地址（IP1 和 IP2）是从网桥的网段动态获取的。此外，在 Pod 1 和 Pod 2 的 Linux® 协议堆栈上，默认路由是网桥的地址。这意味着到非本地地址的所有网络流量在默认情况下发送到网桥，并由网桥直接传输。由于 Pod 1 和 Pod 2 都连接到同一网桥，并且位于同一网段中，因此可以直接进行通信。
+
+对于不同节点上的 pod 之间的通信，pod 的地址与作为默认网关的网段位于同一网段。网桥的网段和节点的NIC卡是两个完全不同的IP网段，不同节点之间的通信只能通过节点的物理NIC卡进行。
+
+另一方面，也可以找到动态分配并隐藏在网桥后面的专用 IP 地址。Kubernetes 记录所有正在运行的 pod 的 IP 分配信息，并将信息保存在蚀刻中，作为服务的终结点，因为这些专用 IP 地址是 Kubernetes 在 pod 之间通信所必需的。此外，规划这些 POD 的 IP 地址也很重要。必须在整个库伯奈斯群集中避免地址冲突。
+
+简而言之，必须满足两个条件来支持不同节点上的 pod 间通信：
+
+* 规划和分配整个 Kubernetes 群集中 Pod 的 IP 地址，而不会发生任何冲突。
+* 为了在 pod 之间通信，Pod 的 IP 地址必须与节点的 IP 地址相关联。
+
+对于第一个条件，需要规划网桥的 IP 地址，以确保在部署 Kubernetes 时，不会与每个节点上网桥的其他 IP 地址发生冲突。对于第二个条件，需要一个机制来了解在源窗格准备发送数据时装载目标窗格 IP 地址的节点。也就是说，在将数据发送到目标节点的 NIC 卡之前，必须找到目标节点的 IP 地址，然后将数据传输到该节点上的网桥。数据到达目标节点后，该节点内的网桥知道如何将数据发送到目标窗格。
+
+[![](https://01.org/sites/default/files/resize/users/u71223/k8s-netwk-3-614x400.png)](https://01.org/sites/default/files/users/u71223/k8s-netwk-3.png)
+
+图 3.不同节点上的 Pod 间通信
+
+如图 3 所示，IP 1 对应于 Pod 1，IP 2 对应于 Pod 2。当 Pod 1 访问 Pod 2 时，它首先从源 Pod Pod 1 eth0 发送数据包，查找并到达目标节点节点 2 eth0。也就是说，在大多数情况下，数据包通过隧道协议（如 vxlan）从节点 1 发送到节点 2，然后发送到 Pod 2。
+
+因此，必须在不同节点上的 pod 之间寻址和通信必须使用节点的 IP 地址实现，并使用将 IP 地址范围映射到群集级别各个节点的表。在实际环境中，除了部署库伯奈斯和 Docker®外，还需要额外的网络配置来实现此目的。在某些情况下，还需要额外的设施或插件，以便吊舱可以透明地相互通信。
+
+### Pod 和服务之间的通信
+
+库伯内斯的吊舱不稳定或持续时间长，它们可以因不同原因被销毁和制造。例如，在垂直缩放或滚动升级过程中，旧窗格将被销毁，并替换为新 pod，这将更改 IP 地址。为了防止前端由于 IP 地址更改而无法访问 Pod 的情况，Kubernetes 引入了_服务_的概念 。
+
+[![](https://01.org/sites/default/files/resize/users/u71223/k8s-netwk-4-580x400.png)](https://01.org/sites/default/files/users/u71223/k8s-netwk-4.png)
+
+图 4.Pod 和服务之间的通信
+
+创建服务时，Kubernetes 会为它分配一个虚拟 IP 地址，该地址在服务的生存期内被修复。访问容器在 Pod 中提供的功能时，不会直接访问 pod 的 IP 地址和端口，而是使用服务的虚拟 IP 地址及其端口。服务将请求转发到窗格。例如，在图 4 中，前端服务后面存在三个 pod。此外，Kubernetes 还通过服务实现负载平衡、服务发现和 DNS 等。
+
+创建服务时，Kubernetes 使用服务的标签选择器查找 pod，并创建与服务同名的终结点。服务的目标端口和 pod 的 IP 地址将保存在该终结点中。更改窗格的 IP 地址后，终结点也会相应地更改。当服务收到新请求时，它能够找到目标地址以通过终结点转发请求。
+
+服务是抽象实体，其 IP 地址是虚拟的。节点上的 kube 代理负责转发请求。
+
+在 Kubernetes v1.0 中，服务是第 4 层的结构，即在开放系统互连 （OSI） 七层网络模型中，IP 上的 TCP/UDP，并且 kube 代理纯粹在用户空间中运行。
+
+在 Kubernetes v1.1 中，入口 API （beta） 被添加为表示第 7 层，即 HTTP 服务。此外，还添加了代理 iptables，它已成为自 Kubernetes v1.2 以来库贝代理操作的默认模式。
+
+在 Kubernetes v1.8.0-beta.0 中，添加了代理 ipvs。因此，目前库贝代理有三种请求转发模式：用户空间、iptables 和 ipv。
+
+1.  <font _mstmutation="1" _msthash="1859364" _msttexthash="10592416588">用户空间<br _mstmutation="1" _istranslated="1">在用户空间模式下，kube-proxy 监控主节点对服务和终结点的添加和删除，主节点是群集管理和调度子节点的主控制单元。创建服务时，节点上的 kube 代理会随机打开服务的端口（称为代理端口），然后建立 iptables 规则。稍后，iptables 完成从代理端口转发到代理端口的流量，然后在端点中选择一个窗格，并将流量从代理端口传输到窗格。当终结点下有多个 pod 时，有两种算法用于选择该窗格。一个是循环方法，这意味着如果一个窗格不响应，则尝试下一个窗格。另一种方法是拾取一个更接近请求的源 IP 地址的 pod。</font>`<the virtual IP of the service, the port>`
+
+1.  <font _mstmutation="1" _msthash="1859365" _msttexthash="13328564301">iptables<br _mstmutation="1" _istranslated="1">在 iptables 模式下，当创建服务时，节点上的 kube-proxy 会建立两个 iptables 规则，一个用于服务将流量传输到后端，另一个用于终结点选择 pod，其中默认情况下选择是随机的。但是，与用户空间模式下的 kube 代理不同，如果最初选择的 pod 未响应，则 iptables 模式下的 kube 代理不会自动重试另一个 pod。因此，使用 iptables 模式需要就绪探测。Kubelet 使用就绪探测来了解容器何时可以开始接受流量。当吊舱内的所有容器准备就绪时，该吊舱将被视为已准备好接受流量。当吊舱未就绪时，它将从服务负载均衡器中删除。因此，就绪探测可用于控制哪些 pod 用作服务的后端。</font>`<the virtual IP of the service, the port>`
+
+1.  ipvs  
+    在 ipvs 模式下，kube-proxy 调用 netlink 接口以创建相应的 ipvs 规则，并定期将 ipvs 规则与服务和终结点同步，以确保 ipvs 状态与预期一致。访问服务时，流量将重定向到其中一个后端窗格。与 iptables 类似，ipvs 还基于网过滤器挂钩功能。但是，区别在于 iptables 使用顺序匹配，而 ipv 使用基于哈希的匹配。当规则的数量较大时，iptables 的匹配持续时间将显著延长。哈希表用作 ipvs 的基础数据结构，匹配在内核空间中工作。这样，匹配持续时间就会变短。这也意味着 ipvs 可以更快地重定向流量，并在同步代理规则时具有更好的性能。此外，ipvs 还提供各种负载平衡算法，例如：循环 （rr）、最小连接 （lc）、目标哈希 （dh）、源哈希 （sh）、最短预期延迟 （sed）、从不排队 （nq） 等。值得注意的是，ipvs 模式要求 ipvs 内核模块在节点上预安装。在 ipv 模式下启动 kube 代理时，kube 代理将验证 ipv 模块是否安装在节点上。如果为负，则 kube 代理使用 iptables 模式。
+
+### 服务与库伯奈斯外部之间的通信
+
+库伯内特提供四种类型的服务：
+
+* 群集 IP：在群集内的 IP 地址上提供服务。只能从群集中访问这种类型的服务。这是库伯内斯的默认类型。
+* <font _mstmutation="1" _msthash="1865318" _msttexthash="1782074983">节点端口：通过 NodeIP 上的静态端口（节点端口）提供外部服务。群集外部可以通过访问 访问 访问访问相应的端口。使用此模式时，将自动创建群集 IP，并且访问节点端口的请求最终将路由到群集IP。</font>`<NodeIP>: <NodePort>`
+* 负载平衡器：使用云服务提供商的负载均衡器在群集外提供服务。使用此模式时，将自动创建 NodePort 和群集IP，群集中的负载均衡器最终将请求路由到节点端口和群集IP。
+* <font _mstmutation="1" _msthash="1866826" _msttexthash="355540276">外部名称：将服务映射到群集中的资源，例如。使用此模式需要 kube-dns 版本 1.7 或更高版本。</font>`foo.bar.example.com`
+
+## 库伯内斯与DPDK的网络通信加速
+
+DPDK 是一组数据平面库和网络接口控制器驱动程序，用于快速数据包处理，目前作为 Linux 基础下的开源项目进行管理*DPDK 为 x86、ARM® 和 PowerPC® 处理器提供了编程框架，并且能够更快地开发高速数据包网络应用程序。
+
+DPDK 绕过 Linux 内核网络堆栈的重层，直接与网络硬件对话。它使用由库和驱动程序组成的核心要素，这些组合称为轮询模式驱动程序 （PMD）。它还使用内存大页面，这意味着需要较少的内存页数，并且翻译旁白缓冲区 （TLB） 丢失次数显著减少。此外，DPDK 需要或利用其他平台技术来避免不必要的开销并提高性能，包括 CPU 固定以进行 CPU 密集型工作负载、非统一内存访问 （NUMA）、数据直接 I/O （DDIO）、一些 IA 新指令和增强的平台感知 （EPA） 功能等。
+
+为了提高 Kubernetes 网络通信的性能，英特尔为容器提出了多种加速解决方案，例如单根 I/O 虚拟化 （SR-IOV） 插件和 virtio 用户，如下图 5 所示。
+
+[![](https://01.org/sites/default/files/resize/users/u71223/k8s-netwk-5-741x425.png)](https://01.org/sites/default/files/users/u71223/k8s-netwk-5.png)
+
+图 5.使用 DPDK 的容器网络加速
+
+virtio 用户是利用 DPDK 的选项。它是 virtio 的前端，能够连接到 vhost 后端，例如用于通信的 DPDK vhost-user。在此示例中，DPDK vhost-user 端口由软件虚拟交换机（如打开 vSwitch®（OVS+）-DPDK 或矢量数据包处理 （VPP））提供。
+
+SR-IOV插件是另一种将SR-IOV应用于库伯内特和容器的替代方案。当容器运行时，通过将虚拟函数 （VF） 添加到容器的网络命名空间，对容器可见 NIC 卡（ 即虚拟 NIC）。有了这一点，VF 驱动程序在用户空间中使用 DPDK，容器的网络性能得到了显著提高。
+
+为了支持更灵活的用户定义的网络模型，Kubernetes 提供了符合容器网络接口 （CNI） 容器网络规范的网络插件接口。为了将 SR-IOV 和 virtio 用户应用于基于 Kubernetes 的容器环境，英特尔为上述两个网络加速选项提供了 SR-IOV CNI 插件和 vhost-user CNI 插件。
+
+## 总结
+
+为了帮助读者了解网络在 Kubernetes 环境中的工作原理，本文引入了 Kubernetes 网络通信，包括 Pod 内的容器到容器通信、pod 到 pod 通信、Pod 和服务之间的通信以及服务与 Kubernetes 外部应用程序之间的通信。它还提到了使用 DPDK 进行加速的两个选项，特别是 SR-IOV 插件和病毒用户。Kubernetes 使用 DPDK 和其他硬件技术实现网络加速对于高度依赖于网络通信的服务和工作负载至关重要，例如，NFV 中的各种容器化网络功能 （CNF）。我们鼓励读者通过下载 SR-IOV CNI 插件、将 Kubernetes pod 直接连接到 SR-IOV 虚拟功能来获取 CNF 的高性能网络，并通过github.com提供反馈来试用。
+
+### 引用
+
+* <font _mstmutation="1" _msthash="1861093" _msttexthash="99715200">为 NFV 白皮书启用库贝内斯的新功能：</font>  
+    [<font _mstmutation="1" _msthash="2085603" _msttexthash="6738849">https://builders.intel.com/docs/networkbuilders/enabling_new_features_in_kubernetes_for_NFV.pdf</font>](https://builders.intel.com/docs/networkbuilders/enabling_new_features_in_kubernetes_for_NFV.pdf)
+* <font _mstmutation="1" _msthash="1861847" _msttexthash="66755273">库伯内斯网络中的服务理念：</font>[<font _mstmutation="1" _msthash="2085551" _msttexthash="3193060">https://kubernetes.io/docs/concepts/services-networking/service/</font>](https://kubernetes.io/docs/concepts/services-networking/service/)
+* <font _mstmutation="1" _msthash="1862601" _msttexthash="39981136">数据平面开发套件：</font>[<font _mstmutation="1" _msthash="2086305" _msttexthash="425139">https://www.dpdk.org/</font>](https://www.dpdk.org/)
+* <font _mstmutation="1" _msthash="1863355" _msttexthash="25159433">SR-IOV CNI 插件：</font>[<font _mstmutation="1" _msthash="2087059" _msttexthash="1006538">https://github.com/intel/sriov-cni</font>](https://github.com/intel/sriov-cni)
