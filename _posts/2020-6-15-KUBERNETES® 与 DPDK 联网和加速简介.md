@@ -66,35 +66,37 @@ Kubernetes的Pod不稳定或持续时间长，它们可以因不同原因被销�
 
 图 4.Pod 和Service之间的通信
 
-创建服务时，Kubernetes 会为它分配一个虚拟 IP 地址，该地址在服务的生存期内被修复。访问容器在 Pod 中提供的功能时，不会直接访问 pod 的 IP 地址和端口，而是使用服务的虚拟 IP 地址及其端口。服务将请求转发到窗格。例如，在图 4 中，前端服务后面存在三个 pod。此外，Kubernetes 还通过服务实现负载平衡、服务发现和 DNS 等。
+创建服务时，Kubernetes 会为它分配一个虚拟 IP 地址，该地址在服务的生命周期内是固定的。访问在 Pod 中的容器提供的功能时，不会直接访问 pod 的 IP 地址和端口，而是使用Service的虚拟 IP 地址及其端口。服务将请求转发到Pod。例如，在图 4 中，前端服务后面存在三个 pod。此外，Kubernetes 还通过服务实现负载平衡、服务发现和 DNS 等。
 
-创建服务时，Kubernetes 使用服务的标签选择器查找 pod，并创建与服务同名的终结点。服务的目标端口和 pod 的 IP 地址将保存在该终结点中。更改窗格的 IP 地址后，终结点也会相应地更改。当服务收到新请求时，它能够找到目标地址以通过终结点转发请求。
+创建Service时，Kubernetes 使用Service的标签选择器查找 pod，并创建与Service同名的endpoint。Service的目标端口和 pod 的 IP 地址将保存在该endpoint中。更改Pod的 IP 地址后，endpoint也会相应地更改。当Pod收到新请求时，它能够找到目标地址以通过endpoint转发请求。
 
-服务是抽象实体，其 IP 地址是虚拟的。节点上的 kube 代理负责转发请求。
+Service是抽象实体，其 IP 地址是虚拟的。节点上的 kube-proxy负责转发请求。
 
-在 Kubernetes v1.0 中，服务是第 4 层的结构，即在开放系统互连 （OSI） 七层网络模型中，IP 上的 TCP/UDP，并且 kube 代理纯粹在用户空间中运行。
+在 Kubernetes v1.0 中，服务是第 4 层的结构，即在开放系统互连 （OSI） 七层网络模型中，IP 上的 TCP/UDP，并且 kube-proxy纯粹在用户空间中运行。
 
-在 Kubernetes v1.1 中，入口 API （beta） 被添加为表示第 7 层，即 HTTP 服务。此外，还添加了代理 iptables，它已成为自 Kubernetes v1.2 以来库贝代理操作的默认模式。
+在 Kubernetes v1.1 中，入口 API （beta） 被添加为表示第 7 层，即 HTTP 服务。此外，还添加了代理 iptables，它已成为自 Kubernetes v1.2 以来Kubernetes操作的默认模式。
 
-在 Kubernetes v1.8.0-beta.0 中，添加了代理 ipvs。因此，目前库贝代理有三种请求转发模式：用户空间、iptables 和 ipv。
+在 Kubernetes v1.8.0-beta.0 中，添加了代理 ipvs。因此，目前库贝代理有三种请求转发模式：NameSpace、iptables 和 ipvs。
 
-1.  <font _mstmutation="1" _msthash="1859364" _msttexthash="10592416588">用户空间<br _mstmutation="1" _istranslated="1">在用户空间模式下，kube-proxy 监控主节点对服务和终结点的添加和删除，主节点是群集管理和调度子节点的主控制单元。创建服务时，节点上的 kube 代理会随机打开服务的端口（称为代理端口），然后建立 iptables 规则。稍后，iptables 完成从代理端口转发到代理端口的流量，然后在端点中选择一个窗格，并将流量从代理端口传输到窗格。当终结点下有多个 pod 时，有两种算法用于选择该窗格。一个是循环方法，这意味着如果一个窗格不响应，则尝试下一个窗格。另一种方法是拾取一个更接近请求的源 IP 地址的 pod。</font>`<the virtual IP of the service, the port>`
+1.  <font _mstmutation="1" _msthash="1859364" _msttexthash="10592416588">NameSpace<br _mstmutation="1" _istranslated="1">
+    在NameSpace模式下，kube-proxy 监控主节点对Service和endpoint的添加和删除，主节点是集群管理和调度子节点的主控制单元。创建Service时，节点上的 kube-proxy会随机打开Service的端口（称为代理端口），然后建立 iptables 规则。稍后，iptables 完成从代理端口转发到代理端口的流量，然后在端点中选择一个Pod，并将流量从代理端口传输到Pod。当endpoint下有多个 pod 时，有两种算法用于选择该Pod。一个是循环方法，这意味着如果一个Pod不响应，则尝试下一个Pod。另一种方法是拾取一个更接近请求的源 IP 地址的 pod。</font>`<the virtual IP of the service, the port>`
 
-1.  <font _mstmutation="1" _msthash="1859365" _msttexthash="13328564301">iptables<br _mstmutation="1" _istranslated="1">在 iptables 模式下，当创建服务时，节点上的 kube-proxy 会建立两个 iptables 规则，一个用于服务将流量传输到后端，另一个用于终结点选择 pod，其中默认情况下选择是随机的。但是，与用户空间模式下的 kube 代理不同，如果最初选择的 pod 未响应，则 iptables 模式下的 kube 代理不会自动重试另一个 pod。因此，使用 iptables 模式需要就绪探测。Kubelet 使用就绪探测来了解容器何时可以开始接受流量。当吊舱内的所有容器准备就绪时，该吊舱将被视为已准备好接受流量。当吊舱未就绪时，它将从服务负载均衡器中删除。因此，就绪探测可用于控制哪些 pod 用作服务的后端。</font>`<the virtual IP of the service, the port>`
+2.  <font _mstmutation="1" _msthash="1859365" _msttexthash="13328564301">iptables<br _mstmutation="1" _istranslated="1">
+    在 iptables 模式下，当创建服务时，节点上的 kube-proxy 会建立两个 iptables 规则，一个用于服务将流量传输到后端，另一个用于终结点选择 pod，其中默认情况下选择是随机的。但是，与用户空间模式下的 kube 代理不同，如果最初选择的 pod 未响应，则 iptables 模式下的 kube 代理不会自动重试另一个 pod。因此，使用 iptables 模式需要就绪探测。Kubelet 使用就绪探测来了解容器何时可以开始接受流量。当吊舱内的所有容器准备就绪时，该吊舱将被视为已准备好接受流量。当吊舱未就绪时，它将从服务负载均衡器中删除。因此，就绪探测可用于控制哪些 pod 用作服务的后端。</font>`<the virtual IP of the service, the port>`
 
-1.  ipvs  
+3.  ipvs  
     在 ipvs 模式下，kube-proxy 调用 netlink 接口以创建相应的 ipvs 规则，并定期将 ipvs 规则与服务和终结点同步，以确保 ipvs 状态与预期一致。访问服务时，流量将重定向到其中一个后端窗格。与 iptables 类似，ipvs 还基于网过滤器挂钩功能。但是，区别在于 iptables 使用顺序匹配，而 ipv 使用基于哈希的匹配。当规则的数量较大时，iptables 的匹配持续时间将显著延长。哈希表用作 ipvs 的基础数据结构，匹配在内核空间中工作。这样，匹配持续时间就会变短。这也意味着 ipvs 可以更快地重定向流量，并在同步代理规则时具有更好的性能。此外，ipvs 还提供各种负载平衡算法，例如：循环 （rr）、最小连接 （lc）、目标哈希 （dh）、源哈希 （sh）、最短预期延迟 （sed）、从不排队 （nq） 等。值得注意的是，ipvs 模式要求 ipvs 内核模块在节点上预安装。在 ipv 模式下启动 kube 代理时，kube 代理将验证 ipv 模块是否安装在节点上。如果为负，则 kube 代理使用 iptables 模式。
 
-### 服务与库伯奈斯外部之间的通信
+### Service与Kubernetes外部之间的通信
 
-库伯内特提供四种类型的服务：
+Kubernetes提供四种类型的服务：
 
-* 群集 IP：在群集内的 IP 地址上提供服务。只能从群集中访问这种类型的服务。这是库伯内斯的默认类型。
-* <font _mstmutation="1" _msthash="1865318" _msttexthash="1782074983">节点端口：通过 NodeIP 上的静态端口（节点端口）提供外部服务。群集外部可以通过访问 访问 访问访问相应的端口。使用此模式时，将自动创建群集 IP，并且访问节点端口的请求最终将路由到群集IP。</font>`<NodeIP>: <NodePort>`
-* 负载平衡器：使用云服务提供商的负载均衡器在群集外提供服务。使用此模式时，将自动创建 NodePort 和群集IP，群集中的负载均衡器最终将请求路由到节点端口和群集IP。
-* <font _mstmutation="1" _msthash="1866826" _msttexthash="355540276">外部名称：将服务映射到群集中的资源，例如。使用此模式需要 kube-dns 版本 1.7 或更高版本。</font>`foo.bar.example.com`
+* Cluster IP：在集群内的 IP 地址上提供服务。只能从群集中访问这种类型的服务。这是Kubernetes的默认类型。
+* <font _mstmutation="1" _msthash="1865318" _msttexthash="1782074983">NodePort：通过 NodeIP 上的静态端口（节点端口）提供外部服务。集群外部可以通过访问相应的端口。使用此模式时，将自动创建群集 IP，并且访问节点端口的请求最终将路由到Cluster IP。</font>`<NodeIP>: <NodePort>`
+* LoadBalancer：使用云服务提供商的负载均衡器在群集外提供服务。使用此模式时，将自动创建 NodePort 和群集IP，群集中的负载均衡器最终将请求路由到节点端口和群集IP。
+* <font _mstmutation="1" _msthash="1866826" _msttexthash="355540276">ExternalName：将服务映射到群集中的资源，例如。使用此模式需要 kube-dns 版本 1.7 或更高版本。</font>`foo.bar.example.com`
 
-## 库伯内斯与DPDK的网络通信加速
+## Kubernetes与DPDK的网络通信加速
 
 DPDK 是一组数据平面库和网络接口控制器驱动程序，用于快速数据包处理，目前作为 Linux 基础下的开源项目进行管理*DPDK 为 x86、ARM® 和 PowerPC® 处理器提供了编程框架，并且能够更快地开发高速数据包网络应用程序。
 
