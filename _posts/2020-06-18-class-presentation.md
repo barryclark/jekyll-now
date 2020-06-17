@@ -1,0 +1,32 @@
+---
+layout: post
+title: Twitter Information Analysis and Visualization II
+---
+
+I use API method and non-API method to get the data from Twitter. Then I used Rstudio to analyze the data and accomplished the visualization. 
+
+I. API Method:(the data is the tweets information of "realDonaldTrump")
+
+The result is as follows:
+![images](https://minshimia.github.io/images/Rplot01.png)
+
+
+II. Non-API Method
+
+1. Data and method to collect the data: The data is gained via python package "GetOldTweets3". It is the historical twitter data about "Trump and
+"China-U.S. Trade War" from Jan. 2017 to June 2020. You could get the data file [here](
+https://raw.githubusercontent.com/MinShiMia/MinShiMia.github.io/master/_posts/Trump-U.S.-China%20trade%20war.csv).
+
+2. The method and code to analyze the data: I used Rstudio and several packages to get the plots for the frequency of tweets, retweets, replies, favorites,
+and mentions. You could find my R code for reference [here](https://github.com/MinShiMia/MinShiMia.github.io/blob/master/_posts/Exercise%202_visualize%20the%20data.R).
+
+
+3. The results are shown below:
+![images1](https://MinShiMia.github.io/images/TwitterFrequencyUSChina.png)
+![images2](https://MinShiMia.github.io/images/TwitterRetweetsUSChina.png)
+![images3](https://MinShiMia.github.io/images/TwitterRepliesUSChina.png)
+![images4](https://MinShiMia.github.io/images/TwitterFavoritesUSChina1.png)
+![images5](https://MinShiMia.github.io/images/TwitterMentionsUSChina1.png)
+
+Also, you can welwecomed to talk with me if you have any questions with my code.
+Thanks!
