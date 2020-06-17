@@ -30,5 +30,5 @@ and mentions. You could find my R code for reference [here](https://github.com/M
 ![images4](https://MinShiMia.github.io/images/TwitterFavoritesUSChina1.png)
 ![images5](https://MinShiMia.github.io/images/TwitterMentionsUSChina1.png)
 
-Also, you can welcomed to talk with me if you have any questions with my code.
+Also, you are welcomed to talk with me if you have any questions with my code.
 Thanks!
