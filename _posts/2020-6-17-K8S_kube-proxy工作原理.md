@@ -1,6 +1,6 @@
 ---
-layout:post
-titile:kube-proxy工作原理
+layout: post
+title: kube-proxy工作原理
 ---
 
 ## kube-proxy & service 必要说明
