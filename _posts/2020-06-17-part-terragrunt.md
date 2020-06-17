@@ -13,8 +13,6 @@ header-img: "images/scaleout-terragrunt/scaling-the-sheer-face.jpg"
 
 ## Part 1: Don`t Repeat Yourself!
 
-[[_TOC_]]
-
 ### Entering the "Scale" Phase of Haufe`s Cloud Journey
 
 The cloud is not new for Haufe. When I started 4 years ago in the company, teams already used Azure or AWS here and there. This "discover to productize" phase is also reflected by the increasing number of "how to" articles for the cloud back at 2015/2016 on this blog, like [how-to-use-Lets-Encrypt-within-Azure](http://work.haufegroup.io/letsencrypt/). After that time, more and more products has started cloud native. And especially during the last one and half year we have reached a new level by entering into the scaling phase for the cloud, how you can see on the [Haufe-Tech-Radar](https://techradar.haufe.io/):
