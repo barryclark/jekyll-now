@@ -1,0 +1,49 @@
+I"ä<p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
+
+<p>Some Code lets see how it looks:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">char_array_buffer</span> <span class="o">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">streambuf</span> <span class="p">{</span>
+<span class="nl">public:</span>
+    <span class="n">char_array_buffer</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">len</span><span class="p">);</span>
+ 
+<span class="nl">private:</span>
+    <span class="n">int_type</span> <span class="n">underflow</span><span class="p">();</span>
+    <span class="n">int_type</span> <span class="n">uflow</span><span class="p">();</span>
+    <span class="n">int_type</span> <span class="n">pbackfail</span><span class="p">(</span><span class="n">int_type</span> <span class="n">ch</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">streamsize</span> <span class="n">showmanyc</span><span class="p">();</span>
+ 
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="k">const</span> <span class="n">begin_</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="k">const</span> <span class="n">end_</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">current_</span><span class="p">;</span>
+<span class="p">};</span>
+ 
+<span class="n">char_array_buffer</span><span class="o">::</span><span class="n">char_array_buffer</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">len</span><span class="p">)</span>
+<span class="o">:</span> <span class="n">begin_</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">end_</span><span class="p">(</span><span class="n">data</span> <span class="o">+</span> <span class="n">len</span><span class="p">),</span> <span class="n">current_</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+ 
+<span class="n">char_array_buffer</span><span class="o">::</span><span class="n">int_type</span> <span class="n">char_array_buffer</span><span class="o">::</span><span class="n">underflow</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">current_</span> <span class="o">==</span> <span class="n">end_</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">traits_type</span><span class="o">::</span><span class="n">eof</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">traits_type</span><span class="o">::</span><span class="n">to_int_type</span><span class="p">(</span><span class="o">*</span><span class="n">current_</span><span class="p">);</span>     <span class="c1">// HERE!</span>
+<span class="p">}</span>
+ 
+<span class="n">char_array_buffer</span><span class="o">::</span><span class="n">int_type</span> <span class="n">char_array_buffer</span><span class="o">::</span><span class="n">uflow</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">current_</span> <span class="o">==</span> <span class="n">end_</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">traits_type</span><span class="o">::</span><span class="n">eof</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">traits_type</span><span class="o">::</span><span class="n">to_int_type</span><span class="p">(</span><span class="o">*</span><span class="n">current_</span><span class="o">++</span><span class="p">);</span>   <span class="c1">// HERE!</span>
+<span class="p">}</span>
+ 
+<span class="n">char_array_buffer</span><span class="o">::</span><span class="n">int_type</span> <span class="n">char_array_buffer</span><span class="o">::</span><span class="n">pbackfail</span><span class="p">(</span><span class="n">int_type</span> <span class="n">ch</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">current_</span> <span class="o">==</span> <span class="n">begin_</span> <span class="o">||</span> <span class="p">(</span><span class="n">ch</span> <span class="o">!=</span> <span class="n">traits_type</span><span class="o">::</span><span class="n">eof</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">ch</span> <span class="o">!=</span> <span class="n">current_</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">traits_type</span><span class="o">::</span><span class="n">eof</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">traits_type</span><span class="o">::</span><span class="n">to_int_type</span><span class="p">(</span><span class="o">*--</span><span class="n">current_</span><span class="p">);</span>   <span class="c1">// HERE!</span>
+<span class="p">}</span>
+ 
+<span class="n">std</span><span class="o">::</span><span class="n">streamsize</span> <span class="n">char_array_buffer</span><span class="o">::</span><span class="n">showmanyc</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">end_</span> <span class="o">-</span> <span class="n">current_</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub.</p>
+:ET
