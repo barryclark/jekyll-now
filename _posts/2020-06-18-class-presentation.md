@@ -7,10 +7,13 @@ I use API method and non-API method to get the data from Twitter. Then I used Rs
 
 I. API Method
 
-1. Data and method to collect the data: I used API key and token from Twitter developer website, and gotten the least information about "realDonaldTrump".
+1. Data and method to collect the data: I used API key and token from Twitter developer website, and gotten the least information about "realDonaldTrump and China".
 
 The plot for time series of tweets frequency is as follows:
-![images](https://minshimia.github.io/images/Rplot01.png)
+![images](https://MinShiMia.github.io/images/Donald%20Trump%20Twitter%20Plot1.png)
+
+The plot for Donald Trump Twitter and China is as follows:
+![images](https://MinShiMia.github.io/images/Donald%20Trump%20Twitter%20Plot2.png)
 
 
 II. Non-API Method
