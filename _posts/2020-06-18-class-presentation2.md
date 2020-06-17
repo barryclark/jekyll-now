@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Twitter Information Analysis and Visualization II -- Class Exercise II
+title: Twitter Information Analysis and Visualization II -- Class Exercise 2
 ---
 
 I use API method and non-API method to get the data from Twitter. Then I used Rstudio to analyze the data and gotten my results which I will share with you below.
