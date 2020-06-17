@@ -3,11 +3,13 @@ layout: post
 title: Twitter Information Analysis and Visualization II
 ---
 
-I use API method and non-API method to get the data from Twitter. Then I used Rstudio to analyze the data and accomplished the visualization. 
+I use API method and non-API method to get the data from Twitter. Then I used Rstudio to analyze the data and gotten my results which I will share with you below.
 
-I. API Method:(the data is the tweets information of "realDonaldTrump")
+I. API Method
 
-The result is as follows:
+1. Data and method to collect the data: I used API key and token from Twitter developer website, and gotten the least information about "realDonaldTrump".
+
+The plot for time series of tweets frequency is as follows:
 ![images](https://minshimia.github.io/images/Rplot01.png)
 
 
