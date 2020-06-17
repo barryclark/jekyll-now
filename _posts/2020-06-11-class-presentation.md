@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Twitter Information Analysis and Visualization
+title: Twitter Information Analysis and Visualization I
 ---
 
 I use API method and non-API method to get the data from Twitter. Then I used multiple software Rstudio and jupyter notebook to analyze the data seperately. 
