@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Java 14 - Preview Features associated APIs"
+title: "Java 14 - Preview Features and their APIs""
 permalink: /draft_previewAPI/
 redirect_from:
   - /draft/
