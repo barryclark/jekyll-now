@@ -13,7 +13,7 @@ Java 14 brings multiple enhancements related to APIs associated with Java langua
 * Related warnings are now also much clearer as they are about preview features being used, not about the underlying mechanism used.
 
 <h2>The slightly longer version…</h2>
-This post discusses some useful improvements done in Java 14 around  preview language features, and more specifically improvements done, in Java 14, around APIs that come with preview language features, aka preview feature associated APIs.
+This post discusses some useful improvements done, in Java 14, around APIs that come with preview language features, aka preview feature associated APIs.
 
 <br/>
 The Preview Feature mechanism is now an essential tool for the development of new Java language features. Here’s a quick recap of the Preview Features properties, for more details see [here](https://blogs.oracle.com/javamagazine/the-role-of-preview-features-in-java-14-java-15-java-16-and-beyond).
