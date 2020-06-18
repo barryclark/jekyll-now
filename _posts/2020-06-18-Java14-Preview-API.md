@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Java 14 - Preview Features and their APIs""
+title: "Java 14 - Preview Features and their APIs"
 ---
 
 <h2>TL;DR</h2>
