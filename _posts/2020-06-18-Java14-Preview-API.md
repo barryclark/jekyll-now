@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Java 14 - Preview Features and their APIs"
+excerpt: "This post discusses some useful improvements done, in Java 14, around APIs that come with preview language features, aka preview feature associated APIs…"
 ---
 
 <h2>TL;DR</h2>
