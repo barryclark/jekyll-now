@@ -19,7 +19,7 @@ This post discusses some useful improvements done in Java 14 around  preview lan
 The Preview Feature mechanism is now an essential tool for the development of new Java language features. Here’s a quick recap of the Preview Features properties, for more details see [here](https://blogs.oracle.com/javamagazine/the-role-of-preview-features-in-java-14-java-15-java-16-and-beyond).
 
 * Preview features are bound to a specific Java feature release. For example, [JEP 368](https://openjdk.java.net/jeps/368) defines the second Text Block preview, and is specific to Java 14. 
-* Preview features are disabled by default to prevent any unintentional use. To use a preview feature, it should be enabled, at compile time and runtime, using the `--enable-preview` HotSpot flag.
+* Preview features are disabled by default to prevent any unintentional use. To use a preview feature, it should be enabled, at compile time and at runtime using the `--enable-preview` flag.
 * Preview features are non-final and non-permanent. They might evolve in later releases. And although it is unlikely, a preview feature might even be removed in a future release.
 * A Java Language feature might have associated APIs, so a 'previewed' Java language feature might also have such associated APIs.
 
