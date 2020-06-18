@@ -8,6 +8,7 @@ While small test programs have existed since the development of programmable com
 main( ) {  
         printf("hello, world\n");  
 }  
+  
 In the above example, the main( ) function defines where the program should start executing. The function body consists of a single statement, a call to the printf function, which stands for "print formatted". This function will cause the program output whatever is passed to it as the parameter, in this case the string hello, world, followed by a newline character.  
 
 The C language version was preceded by Kernighan's own 1972 A Tutorial Introduction to the Language B, where the first known version of the program is found in an example used to illustrate external variables.  
