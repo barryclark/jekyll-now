@@ -4,6 +4,16 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### June 20th thoughts & takeaways:
+
+* Daily traffic volumes have returned now to beyond 75-80% of pre-lockdown volumes. About half way recovered from the low point of 50-60% drop in April. Still largely on track for a late August recovery projection. Congestion will follow and we've already seen some locations in Austin where congestion is returning. 
+
+* Austin is experiencing a lot of growth in cases, hospitalizations. It's not clear if people are traveling less or going back into lockdown but businesses certainly aren't. 
+
+* Daily micromobility trips are now about 15-20% recovered from pre-lockdown numbers. These numbers are very day-of-week dependent. A sizable chunk of weekday trips are UT related, so we may not see these return for a while. 
+
+* Many UT students are seeing that their classes are being moved online. Some students only have one or two in-person classes per week. The effects of this are pretty obvious, but transit is going to be hit hard.
+
 ### June 11th thoughts & takeaways:
 
 * Traffic volumes increased by 26% in May, [but there are obvious reasons why this isn't the best way to measure the recovery.](https://twitter.com/aniccia/status/1270799838540517376).
