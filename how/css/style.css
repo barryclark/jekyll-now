@@ -539,6 +539,10 @@ html {
   src: url("../fonts/SourceSerifPro-Bold.otf.woff2") format("woff2");
   font-weight: bold;
 }
+body {
+  cursor: none;
+}
+
 a {
   cursor: none;
   -webkit-transform-origin: 100% 100%;
