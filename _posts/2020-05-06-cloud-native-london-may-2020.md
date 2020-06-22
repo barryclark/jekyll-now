@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London May 2020: Humio, Kong, and SUSE"
+title: "Cloud Native London May 2020: Talks from Humio, Kong, and SUSE"
 description: "Check out talks from Humio, Kong, and SUSE at the Cloud Native London meetup May 2020, hosted by Cheryl Hung, Director of Ecosystem at CNCF"
 location: London, UK
 image: https://secure.meetupstatic.com/photos/event/e/9/4/6/600_489119718.jpeg
