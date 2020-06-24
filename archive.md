@@ -18,7 +18,7 @@ permalink: /COVID19/archive/
 
 ### June 11th thoughts & takeaways:
 
-* Traffic volumes increased by 26% in May, [but there are obvious reasons why this isn't the best way to measure the recovery.](https://twitter.com/aniccia/status/1270799838540517376).
+* Traffic volumes increased by 26% in May, [but there are obvious reasons why this isn't the best way to measure the recovery.](https://twitter.com/aniccia/status/1270799838540517376)
 
 * Another way to show this is that May's daily traffic volumes were 63% of pre-lockdown February. 
 
