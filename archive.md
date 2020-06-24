@@ -14,6 +14,8 @@ permalink: /COVID19/archive/
 
 * Many UT students are seeing that their classes are being moved online. Some students only have one or two in-person classes per week. The effects of this are pretty obvious, but transit is going to be hit hard.
 
+***
+
 ### June 11th thoughts & takeaways:
 
 * Traffic volumes increased by 26% in May, [but there are obvious reasons why this isn't the best way to measure the recovery.](https://twitter.com/aniccia/status/1270799838540517376).
