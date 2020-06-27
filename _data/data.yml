@@ -132,7 +132,31 @@
   category_gr: Δικηγόρος
   category_en: Lawyer
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
-  location_en: Thessaloniki, Macedonia, Greece  
+  location_en: Thessaloniki, Macedonia, Greece
+
+- company_gr: Φροντίδα
+  company_en: Frontida
+  url: https://www.facebook.com/frontidathessaloniki
+  category_gr: Ορθοπεδικά υποδήματα
+  category_en: Orthopedic shoes
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+  
+- company_gr: Γιωργάκης
+  company_en: Giorgakis
+  url: https://www.facebook.com/giorgakis.book/
+  category_gr: Βιβλιοπωλείο
+  category_en: Bookshop
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
+- company_gr: Ο Μύλος
+  company_en: O Mylos
+  url: 
+  category_gr: Φούρνος, Βασιλέως Γεωργίου 41, Θεσσαλονίκη 54640, τηλ. 2310830560
+  category_en: Bakery, Vasileos Georgiou 41, Thessaloniki 54640, tel. 2310830560
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
 
 - company_gr: Tic Tac
   company_en: Tic Tac
