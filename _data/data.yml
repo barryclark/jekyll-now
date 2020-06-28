@@ -732,7 +732,15 @@
   category_gr: Κινητά τηλέφωνα
   category_en: Mobile phone shop
   location_gr: Άρτα, Ήπειρος, Ελλάδα
-  location_en: Arta, Epirus, Greece  
+  location_en: Arta, Epirus, Greece
+
+- company_gr: Apeiros Chora
+  company_en: Apeiros Chora
+  url: https://apeiroschora.gr/
+  category_gr: Ξενώνας
+  category_en: Guesthouse
+  location_gr: Ζαγόρι, Ήπειρος, Ελλάδα
+  location_en: Zagori, Epirus, Greece 
 
 - company_gr: WebToner
   company_en: WebToner
