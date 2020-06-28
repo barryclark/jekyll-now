@@ -3,7 +3,7 @@ layout: post
 title: "“We’re all mad here”: The State of Cloud Native Software - Software Circus"
 description: "Watch how ThredUp, Adidas and the US Air Force have adopted cloud native, from Cheryl Hung, CNCF Director of Ecosystem."
 image: /images/2020-05-18-were-all-mad-here-the-state-of-cloud-native-software.jpeg
-slides:
+slides: //www.slideshare.net/slideshow/embed_code/key/qOaoujwg6jD0Rj
 video: https://www.youtube.com/embed/7iUx6h2XgDs
 tags:
   - Slides

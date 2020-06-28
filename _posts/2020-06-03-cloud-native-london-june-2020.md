@@ -50,4 +50,3 @@ Our next meetup will be Wednesday 1st July, when we'll be joined by speakers fro
 See you all next month, and stay safe!
 
 Cheryl (@oicheryl)
-
