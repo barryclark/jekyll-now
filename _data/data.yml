@@ -62,6 +62,14 @@
   location_gr: Μαρούσι, Αττική, Ελλάδα
   location_en: Marousi, Attica, Greece
 
+- company_gr: Μάρμαρα Νικολάκη
+  company_en: Nikolaki Marble
+  url: https://www.e-marmara.gr/
+  category_gr: Εμπορία μαρμάρων
+  category_en: Marble shop
+  location_gr: Μαρούσι, Αττική, Ελλάδα
+  location_en: Marousi, Attica, Greece
+
 - company_gr: Design Individuals
   company_en: Design Individuals
   url: http://designindividuals.gr
@@ -333,6 +341,14 @@
   category_en: Zante foodstuff
   location_gr: Αγία Παρασκευή, Αττική, Ελλάδα
   location_en: Agia Paraskevi, Attica, Greece
+  
+- company_gr: Macway
+  company_en: Macway
+  url: https://macway.gr
+  category_gr: Δημιουργία ιστοσελίδων και υποστήριξη υπολογιστών Mac
+  category_en: Web development and Mac computer support
+  location_gr: Δάφνη, Αττική, Ελλάδα
+  location_en: Dafni, Attica, Greece
 
 - company_gr: Innoview
   company_en: Innoview
