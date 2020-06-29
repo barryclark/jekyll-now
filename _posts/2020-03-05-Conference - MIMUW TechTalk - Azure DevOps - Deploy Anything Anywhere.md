@@ -24,15 +24,15 @@ tags:
   - Tech Talk
   - MIMUW
 gallery:
-  - url: unsplash-gallery-image-1.jpg
+  - url: /wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 1.jpg
     image_path: /wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 1.jpg
-    alt: "placeholder image 1"
-  - url: unsplash-gallery-image-2.jpg
+    alt: "MIMUW Tech-Talk 1"
+  - url: /wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 2.jpg
     image_path: /wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 2.jpg
-    alt: "placeholder image 2"
-  - url: unsplash-gallery-image-3.jpg
+    alt: "MIMUW Tech-Talk 2"
+  - url: /wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 3.jpg
     image_path: /wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 3.jpg
-    alt: "placeholder image 3"
+    alt: "MIMUW Tech-Talk 3"
 ---
 
 5 Marca 2020 Roku udało się zorganizować wydarzenie na którym mówiłem o tym czy jest, co umnożliwa DevOps oraz Chmura. Nie obyło się bez bardzo żywych dyskusji z czego beedzo się cieszę. Na wydarzeniu było obenych około 50 osób.
