@@ -4,6 +4,14 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### June 29th thoughts & takeaways:
+
+* The last two weeks have seen decreasing volumes. Last week decreased 6.3%. I guess people are seeing the increasing cases and are deciding to stay home. 
+
+* Sunday's volume was lower than Father's day. With the 3-day weekend coming up, we'll probably see daily volumes continue to drop. 
+
+***
+
 ### June 26th thoughts & takeaways:
 
 * Austin and Texas isn't doing so well on the fight against COVID-19. Volumes have started to dip downward, but it may have been caused by poor weather. Father's day was the lowest daily volume we've seen since the end of May.
@@ -11,6 +19,7 @@ permalink: /COVID19/archive/
 * I've added some new data from TSA checkpoints. The data is updated every couple weeks. It'll be interesting to watch if the Austin share of USA traffic will start to nosedive with the increase in cases.  
 
 ***
+
 ### June 20th thoughts & takeaways:
 
 * Daily traffic volumes have returned now to beyond 75-80% of pre-lockdown volumes. About half way recovered from the low point of 50-60% drop in April. Still largely on track for a late August recovery projection. Congestion will follow and we've already seen some locations in Austin where congestion is returning. 
