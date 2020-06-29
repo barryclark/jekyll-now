@@ -19,15 +19,15 @@ avatar: https://avatars3.githubusercontent.com/u/12322852?s=460&v=4
 footer-links:
   facebook:
   github: oscarvalenzuelab/
-  linkedin: oscarvalenzuela
+  linkedin:
   rss: rss # just type anything here for a working RSS icon
-  twitter: ovalenzuela
+  twitter: alkamodz
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: ovalenzuela
+disqus: 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-50598012-1
