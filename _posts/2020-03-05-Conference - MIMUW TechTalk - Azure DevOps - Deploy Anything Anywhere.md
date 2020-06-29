@@ -37,7 +37,7 @@ gallery:
 
 5 Marca 2020 Roku udało się zorganizować wydarzenie na którym mówiłem o tym czy jest, co umnożliwa DevOps oraz Chmura. Nie obyło się bez bardzo żywych dyskusji z czego beedzo się cieszę. Na wydarzeniu było obenych około 50 osób.
 
-{% include gallery caption="This is a sample gallery with **Markdown support**." %}
+{% include gallery caption="MIMUW TechTalk - Azure DevOps - Deploy Anything Anywhere." %}
 
 Duże podziękowania dla [organizatorów](https://www.facebook.com/mimuw) za zorganizowanie spotkania dla społeczności.
 
