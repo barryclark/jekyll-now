@@ -17,23 +17,25 @@ tags:
   - Open Source
   - vsts
   - Event
-  - Community    
+  - Community
   - DevOps
   - Application lifecycle management
   - Cykl życia aplikacji
   - Tech Talk
   - MIMUW
-
 ---
 
+<img class="" src="/wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 1.jpg"/> 
+<img class="" src="/wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 2.jpg"/> 
+<img class="" src="/wp-content/uploads/2020/03/20.03.05 - MIMUW Tech-Talk 3.jpg"/>
 
 Duże podziękowania dla [organizatorów](https://www.facebook.com/mimuw) za zorganizowanie spotkania dla społeczności.
- - [Samorząd Studentów MIMUW](https://www.facebook.com/mimuw)
- - [Wydział Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego](https://www.mimuw.edu.pl/)
- - [P&G](https://pg.com) 
-  
-Links: 
- - [Link do eventu facebook](https://www.facebook.com/events/182347739713115/) 
- - [Azure DevOps publick project](https://dev.azure.com/jn260223/) 
 
- 
+- [Samorząd Studentów MIMUW](https://www.facebook.com/mimuw)
+- [Wydział Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego](https://www.mimuw.edu.pl/)
+- [P&G](https://pg.com)
+
+Links:
+
+- [Link do eventu facebook](https://www.facebook.com/events/182347739713115/)
+- [Azure DevOps publick project](https://dev.azure.com/jn260223/)
