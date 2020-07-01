@@ -263,6 +263,19 @@ nav {
     font-style: italic;
   }
 
+//Projects
+.project {
+  a {
+    color: $base-color;
+  }
+  time {
+    color: $base-lighten-color;
+    font-size: $small-font-size;
+    font-weight: 300;
+    margin-left: 3px;
+  }
+}	
+
   .comments {
     margin-top: 10px;
   }
