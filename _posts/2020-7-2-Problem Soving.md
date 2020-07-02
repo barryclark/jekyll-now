@@ -2,7 +2,7 @@
 layout: post
 title: Problem Solving!
 ---
-![_config.yml]({{ site.baseurl }}/images/config.png)
+
 
 
 PS/DS (Problem Solving/Data Structures) round, also known as the coding round, is the most popular interview round for software engineering jobs.
@@ -14,6 +14,8 @@ It involves solving 1-3 problems related to problem-solving, data structures and
 In case of remote, the round is usually done over a video conferencing tool (Hangouts / Skype / Zoom) and the coding is done over a shared code editor (Collabedit / HackerRank / Google Docs).
 
 In case of onsite, you’re expected to code on a whiteboard or paper. It is generally ok to let the interviewer know if you prefer one over the other. In a few companies (including Google), you are supposed to code on a laptop.
+
+![_config.yml]({{ site.baseurl }}/images/config.png)
 
 More details at: What is a Problem Solving & Data Structures round?
 
