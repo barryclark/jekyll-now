@@ -15,6 +15,14 @@ avatar: https://pbs.twimg.com/media/EaYsJGpUwAAGb18?format=jpg&name=4096x4096
 # Flags below are optional
 #
 
+navigation: 
+  - name: Blog 
+  - url: / 
+  - name: Projects
+  - url: /project
+  - name: About
+  - url: /about
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   email: amely.su@student.tdsb.on.ca
