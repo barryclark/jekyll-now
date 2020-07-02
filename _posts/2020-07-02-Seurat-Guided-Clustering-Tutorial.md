@@ -1,3 +1,8 @@
+---
+layout: post
+title: Seurat  Guided Clustering Tutorial
+---
+
 While the vignette on the Seurat website already provides good
 instructions, I will be using this to give additional thoughts and
 details that could help beginners to Seurat. In addition, I will provide
@@ -71,20 +76,6 @@ earlier.
 
 ``` r
 library(dplyr)
-```
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 library(Seurat)
 library(patchwork)
 
@@ -156,7 +147,7 @@ Seurat recommends a threshold for filtering for the QC metrics.
 VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 We can take a look and see that the unique counts and feature are
 correlated. In addition, we see that low counts appear to correlate with
@@ -171,7 +162,7 @@ plot2 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "nFeature_RNA"
 plot1 + plot2
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 I find that the density plots provide a better visualization of the
 distributions in case you may have a bimodal distribution.
@@ -187,7 +178,7 @@ RidgePlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol =
 
     ## Picking joint bandwidth of 0.153
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-10-1.png)
 Let’s use an adaptive threshold rather than fixed threshold. This
 provides a more elegant method of detecting the thresholds rather than
 by eye using the graphs. First, we assume that most of the cells are
@@ -203,124 +194,7 @@ for this.
 
 ``` r
 library(scater)
-```
 
-    ## Loading required package: SingleCellExperiment
-
-    ## Loading required package: SummarizedExperiment
-
-    ## Loading required package: GenomicRanges
-
-    ## Loading required package: stats4
-
-    ## Loading required package: BiocGenerics
-
-    ## Loading required package: parallel
-
-    ## 
-    ## Attaching package: 'BiocGenerics'
-
-    ## The following objects are masked from 'package:parallel':
-    ## 
-    ##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
-    ##     clusterExport, clusterMap, parApply, parCapply, parLapply,
-    ##     parLapplyLB, parRapply, parSapply, parSapplyLB
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     combine, intersect, setdiff, union
-
-    ## The following object is masked from 'package:Matrix':
-    ## 
-    ##     which
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     IQR, mad, sd, var, xtabs
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     anyDuplicated, append, as.data.frame, basename, cbind, colnames,
-    ##     dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
-    ##     grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
-    ##     order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
-    ##     rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
-    ##     union, unique, unsplit, which, which.max, which.min
-
-    ## Loading required package: S4Vectors
-
-    ## 
-    ## Attaching package: 'S4Vectors'
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     first, rename
-
-    ## The following object is masked from 'package:Matrix':
-    ## 
-    ##     expand
-
-    ## The following object is masked from 'package:base':
-    ## 
-    ##     expand.grid
-
-    ## Loading required package: IRanges
-
-    ## 
-    ## Attaching package: 'IRanges'
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     collapse, desc, slice
-
-    ## Loading required package: GenomeInfoDb
-
-    ## Loading required package: Biobase
-
-    ## Welcome to Bioconductor
-    ## 
-    ##     Vignettes contain introductory material; view with
-    ##     'browseVignettes()'. To cite Bioconductor, see
-    ##     'citation("Biobase")', and for packages 'citation("pkgname")'.
-
-    ## Loading required package: DelayedArray
-
-    ## Loading required package: matrixStats
-
-    ## 
-    ## Attaching package: 'matrixStats'
-
-    ## The following objects are masked from 'package:Biobase':
-    ## 
-    ##     anyMissing, rowMedians
-
-    ## The following object is masked from 'package:dplyr':
-    ## 
-    ##     count
-
-    ## Loading required package: BiocParallel
-
-    ## 
-    ## Attaching package: 'DelayedArray'
-
-    ## The following objects are masked from 'package:matrixStats':
-    ## 
-    ##     colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     aperm, apply, rowsum
-
-    ## 
-    ## Attaching package: 'SummarizedExperiment'
-
-    ## The following object is masked from 'package:Seurat':
-    ## 
-    ##     Assays
-
-    ## Loading required package: ggplot2
-
-``` r
 qc.nCount_RNA <- isOutlier(pbmc$nCount_RNA, log=TRUE, type="both")
 qc.nFeature_RNA  <- isOutlier(pbmc$nFeature_RNA, log=TRUE, type="both")
 ```
@@ -408,7 +282,7 @@ plot1 + plot2
 
     ## Warning: Transformation introduced infinite values in continuous x-axis
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-17-1.png)
 
 <h1>
 Scaling the data
@@ -464,7 +338,7 @@ We can visualize the first two prinicpal components.
 DimPlot(pbmc, reduction = "pca")
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-20-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-20-1.png)
 
 Let’s inspect the contribution of each of the prinicpal components.
 Typically only the the principal components containing a majority of the
@@ -475,7 +349,7 @@ observing where there is a large drop off in variance.
 ElbowPlot(pbmc)
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-21-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-21-1.png)
 
 It may be difficult to estimate by visualization so you can use the
 second derivative which should find the maximum change in the slope. The
@@ -626,7 +500,7 @@ plot3 <- DimPlot(pbmc, reduction = "pca")
 plot1 +  plot2 + plot3 + plot_layout(nrow = 2)
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-26-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-26-1.png)
 
 We can see that cells are clustered closer toether while also providing
 some global relationship between the clusters within the UMAP embedding.
@@ -709,7 +583,7 @@ We can visualize some of these markers using `VlnPlot`.
 VlnPlot(pbmc, features = c("MS4A1", "CD79A"))
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-29-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-29-1.png)
 
 ``` r
 # you can plot raw counts as well
@@ -735,7 +609,7 @@ DotPlot(pbmc, features = c("MS4A1", "GNLY", "CD3E", "CD14", "FCER1A", "FCGR3A", 
     "CD8A")) + theme(axis.text.x = element_text(angle = 90))
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-32-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-32-1.png)
 
 Another common method of visualization is to generate a heatmap. We can
 use `DoHeatmap` to see the top 10 markers per cluster.
@@ -749,7 +623,7 @@ DoHeatmap(pbmc, features = top10$gene) + NoLegend()
     ## omitted as they were not found in the scale.data slot for the RNA assay: CD8A,
     ## VPREB3, TRAT1, PIK3IP1, PRKCQ-AS1, LEF1, NOSIP, CD3E, CD3D, CCR7, LDHB, RPS3A
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-33-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-33-1.png)
 
 <h2>
 Assigning cell type identity to clusters
@@ -777,7 +651,7 @@ pbmc <- RenameIdents(pbmc, new.cluster.ids)
 DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-34-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-34-1.png)
 
 We can also use annotation packages like `SingleR` to perform automatic
 annotation. You can find more information
@@ -2323,7 +2197,7 @@ plot2 <- DimPlot(pbmc, reduction = "umap", group.by = 'SingleR.Annotations', lab
 plot1 + plot2
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-40-1.png)
+![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-40-1.png)
 
 We can see that the predicted labels and manually anotated labels match
 up pretty well. Your choice of reference data and parameters can be used
