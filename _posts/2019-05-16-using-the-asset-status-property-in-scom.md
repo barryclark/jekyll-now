@@ -7,6 +7,10 @@ title: Using the Asset Status Property in SCOM
 
 When creating groups in [System Center Operations Manager (SCOM)](https://docs.microsoft.com/system-center/scom/welcome), it may be helpful to know what stage of the lifecycle the monitored object is in. SCOM has an **Asset Status** property is used by [System Center Service Manager (SCSM)](https://docs.microsoft.com/system-center/scsm) to manage the status of the object, however this property isn't visible or usable in the SCOM interface with the exception of creating a group.
 
+> ### Caution
+>
+> If the **Asset Status** or **Notes** fields has a value when the agent is deleted, this will leave an orphaned Windows Computer object. To ensure the computer object properly deleted, set the **Asset Status** or **Notes** field to **`$null`** prior to deleting the agent.
+
 ## Asset Status Enum
 
 The asset statuses available to us are stored as an enum called **System.ConfigItem.AssetStatusEnum** in the **System.Library** management pack.
