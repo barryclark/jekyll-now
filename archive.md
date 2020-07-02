@@ -4,6 +4,16 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### July 2nd thoughts & takeaways:
+
+* Much the same trends of decreasing traffic have continued, I've added a new chart to track the weekly % change in traffic. More lockdown measures have been rumored to be implemented after the long weekend.
+
+* Here's a chart showing the change we've seen in type of traffic that is returning. Initially, weekend traffic was recovering much faster than the peak hours. This was probably fueled by good weather and cabin fever. In June this went negative as the weather heated up and the virus spread increased.
+
+<iframe width="700" height="300" frameborder="0" scrolling="no" src="//plotly.com/~charlie2343/89.embed?autosize=true&link=false"></iframe>
+
+***
+
 ### June 29th thoughts & takeaways:
 
 * The last two weeks have seen decreasing volumes. Last week decreased 6.3%. I guess people are seeing the increasing cases and are deciding to stay home. 
