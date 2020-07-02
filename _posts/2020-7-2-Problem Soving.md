@@ -2,6 +2,8 @@
 layout: post
 title: Problem Solving!
 ---
+![_config.yml]({{ site.baseurl }}/images/config.png)
+
 
 PS/DS (Problem Solving/Data Structures) round, also known as the coding round, is the most popular interview round for software engineering jobs.
 
@@ -32,6 +34,4 @@ Other articles you might be interested in:
 How to prepare for technical interviews at companies like Amazon, Flipkart, Google, Microsoft, Swiggy, Uber, etc?
 Machine Coding Round
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
