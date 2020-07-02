@@ -162,7 +162,7 @@ plot2 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "nFeature_RNA"
 plot1 + plot2
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 I find that the density plots provide a better visualization of the
 distributions in case you may have a bimodal distribution.
@@ -178,7 +178,8 @@ RidgePlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol =
 
     ## Picking joint bandwidth of 0.153
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-10-1.png)
+
 Let’s use an adaptive threshold rather than fixed threshold. This
 provides a more elegant method of detecting the thresholds rather than
 by eye using the graphs. First, we assume that most of the cells are
@@ -282,7 +283,7 @@ plot1 + plot2
 
     ## Warning: Transformation introduced infinite values in continuous x-axis
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-17-1.png)
 
 <h1>
 Scaling the data
@@ -338,7 +339,7 @@ We can visualize the first two prinicpal components.
 DimPlot(pbmc, reduction = "pca")
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-20-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-20-1.png)
 
 Let’s inspect the contribution of each of the prinicpal components.
 Typically only the the principal components containing a majority of the
@@ -349,7 +350,7 @@ observing where there is a large drop off in variance.
 ElbowPlot(pbmc)
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-21-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-21-1.png)
 
 It may be difficult to estimate by visualization so you can use the
 second derivative which should find the maximum change in the slope. The
@@ -414,10 +415,8 @@ pbmc <- FindNeighbors(pbmc, dims = 1:10)
     ## Computing SNN
 
 Next, we can apply algorithms to identify “communities” of cells. There
-are two main community detection algorithm,
-Louvain[Louvain](https://perso.uclouvain.be/vincent.blondel/research/louvain.html)
-and the improved version
-Leiden[Leiden](https://www.nature.com/articles/s41598-019-41695-z). We
+are two main community detection algorithm, [Louvain](https://perso.uclouvain.be/vincent.blondel/research/louvain.html)
+and the improved version [Leiden](https://www.nature.com/articles/s41598-019-41695-z). We
 use the default Louvain while controlling the `resolution` parameter to
 adjust the number of clusters.
 
@@ -438,6 +437,7 @@ pbmc <- FindClusters(pbmc, resolution = 0.5)
 <h2>
 Visualization of 2D Embeddsings
 </h2>
+
 The high-dimensional space can be embedded in 2D using either tSNE and
 UMAP to visualize and explore the datasets. These embeddings attempt to
 summarize all of the data using a 2D graph to organize the data to
@@ -500,7 +500,7 @@ plot3 <- DimPlot(pbmc, reduction = "pca")
 plot1 +  plot2 + plot3 + plot_layout(nrow = 2)
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-26-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-26-1.png)
 
 We can see that cells are clustered closer toether while also providing
 some global relationship between the clusters within the UMAP embedding.
@@ -583,7 +583,7 @@ We can visualize some of these markers using `VlnPlot`.
 VlnPlot(pbmc, features = c("MS4A1", "CD79A"))
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-29-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-29-1.png)
 
 ``` r
 # you can plot raw counts as well
@@ -600,7 +600,7 @@ FeaturePlot(pbmc, features = c("MS4A1", "GNLY", "CD3E", "CD14", "FCER1A", "FCGR3
     "CD8A"))
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-31-1.png)
+![]({{ site.baseurl }}/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-31-1.png)
 
 We can generate a dot plot to visualize the markers.
 
@@ -609,7 +609,7 @@ DotPlot(pbmc, features = c("MS4A1", "GNLY", "CD3E", "CD14", "FCER1A", "FCGR3A", 
     "CD8A")) + theme(axis.text.x = element_text(angle = 90))
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-32-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-32-1.png)
 
 Another common method of visualization is to generate a heatmap. We can
 use `DoHeatmap` to see the top 10 markers per cluster.
@@ -623,7 +623,7 @@ DoHeatmap(pbmc, features = top10$gene) + NoLegend()
     ## omitted as they were not found in the scale.data slot for the RNA assay: CD8A,
     ## VPREB3, TRAT1, PIK3IP1, PRKCQ-AS1, LEF1, NOSIP, CD3E, CD3D, CCR7, LDHB, RPS3A
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-33-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-33-1.png)
 
 <h2>
 Assigning cell type identity to clusters
@@ -651,7 +651,7 @@ pbmc <- RenameIdents(pbmc, new.cluster.ids)
 DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-34-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-34-1.png)
 
 We can also use annotation packages like `SingleR` to perform automatic
 annotation. You can find more information
@@ -867,7 +867,7 @@ plot2 <- DimPlot(pbmc, reduction = "umap", group.by = 'SingleR.Annotations', lab
 plot1 + plot2
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-40-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-40-1.png)
 
 We can see that the predicted labels and manually anotated labels match
 up pretty well. Your choice of reference data and parameters can be used
