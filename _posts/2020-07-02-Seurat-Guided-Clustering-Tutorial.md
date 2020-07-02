@@ -147,7 +147,7 @@ Seurat recommends a threshold for filtering for the QC metrics.
 VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 ```
 
-![](images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 We can take a look and see that the unique counts and feature are
 correlated. In addition, we see that low counts appear to correlate with
