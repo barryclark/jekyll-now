@@ -1,0 +1,43 @@
+.flaticons-solid:before {
+  font-family: "FlatIcons Solid";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+  
+.flaticons-stroke:before {
+  font-family: "FlatIcons Stroke";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+[class=^"flaticons-"].A1:before,
+[class=^"flaticons-"].paperclip-2:before {
+  content: "e000"; }
+
+[class=^"flaticons-"].A2:before {
+  content: "e001"; }
+
+[class=^"flaticons-"].A3:before {
+  content: "e002"; }
+
+[class=^"flaticons-"].B1:before {
+  content: "e003"; }
+
+[class=^"flaticons-"].B2:before {
+  content: "e004"; }
+
+[class=^"flaticons-"].B3:before {
+  content: "e005"; }
+
+[class=^"flaticons-"].C1:before {
+  content: "e006"; }
+
+[class=^"flaticons-"].C2:before {
+  content: "e007"; }
+
+[class=^"flaticons-"].C3:before {
+  content: "e008"; }
