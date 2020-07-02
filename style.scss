@@ -273,16 +273,6 @@ nav {
   }
 }
 
-.pagination {
-  font-weight: 300;
-  padding: 2em 0;
-  width: 100%;
-  display: inline-block;
-
-  @include mobile {
-    font-size: $small-font-size;
-  }
-
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
