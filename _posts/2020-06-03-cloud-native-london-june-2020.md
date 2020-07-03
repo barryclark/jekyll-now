@@ -36,7 +36,7 @@ He also linked to the following resources:
 
 His slides can be found [here](/resources/Cedrick_Datastax_DeployingCasssandrak8s.pdf)
 
-Finally,= (following a fantastic bit of unplanned musical entertainment from Khusro Jaleel in the break), we had Stephane Jourdan from CloudSkiff discussing the Key Steps to a Good Quality For Your Infrastructure Code (starting at [1:45:52](https://youtu.be/yX2GoXB70iA?t=6352)). His takeaways are:
+Finally, (following a fantastic bit of unplanned musical entertainment from Khusro Jaleel in the break), we had Stephane Jourdan from CloudSkiff discussing the Key Steps to a Good Quality For Your Infrastructure Code (starting at [1:45:52](https://youtu.be/yX2GoXB70iA?t=6352)). His takeaways are:
 
 * Infrastructure as Code is code. Make sure you apply best practices to ensure good quality.
 * Build solid workflows, manage roles and permissions.
