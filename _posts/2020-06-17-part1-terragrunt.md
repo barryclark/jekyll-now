@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let's Scale!
+title: Let's Scale - Part 1!
 subtitle: Tools which Can Complete your Terraform Workflow
 category: dev
 tags: [devops]
