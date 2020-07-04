@@ -590,7 +590,7 @@ VlnPlot(pbmc, features = c("MS4A1", "CD79A"))
 VlnPlot(pbmc, features = c("NKG7", "PF4"), slot = "counts", log = TRUE)
 ```
 
-![](Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-30-1.png)
+![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-30-1.png)
 
 We can visualize the localization of these markers in a UMAP embedding
 by using `FeaturePlot`.
