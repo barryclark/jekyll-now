@@ -13,11 +13,11 @@ This is a curated collection of R educational materials for learning R. I will a
 
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
 
-- [DATA SCIENCE WITH R](https://robust-tools.djnavarro.net/)
-
 ## Videos
 
 - [R for Biologists](https://www.rforbiologists.org)
+
+- [DATA SCIENCE WITH R](https://robust-tools.djnavarro.net/)
 
 
 
