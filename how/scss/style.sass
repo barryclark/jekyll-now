@@ -9,7 +9,15 @@ body
 a
   cursor: none
   transform-origin: 100% 100%
-  color: $dark-grey  
+  color: $dark-grey 
+.subtitle
+    grid-column: 2/7
+    grid-row: 2/3
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
 h2
   font-size: 48px
   font-family: $title-font
@@ -116,6 +124,10 @@ header
   .subtitle
     grid-column: 2/3
     grid-row: 2/3
+    h2
+      width: 100%
+    h5
+      width: 100%
   .who-is
     grid-column: 2/3
     grid-row: 4/5
@@ -166,20 +178,12 @@ header
   margin-top: 60px
   grid-template-columns: 15% 1fr 8px 1fr 8px 1fr 15%
   grid-template-rows: 16px auto 8px 470px 16px
-  .subtitle
-    grid-column: 2/7
-    grid-row: 2/3
-    width: 100%
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    h2
-      width: 120px
-      &:before
-        left: 16px
-    h5
-      margin-top: 16px
+  h2
+    width: 120px
+    &:before
+      left: 16px
+  h5
+    margin-top: 16px
   .skills
     display: flex
     grid-column: 2/7
@@ -244,6 +248,35 @@ header
               &:hover
                 color: $black
 .what
+  display: grid
+  margin-top: 60px
+  grid-template-columns: 15% 1fr 8px 1fr 8px 1fr 15%
+  grid-template-rows: 16px auto 8px 470px 16px
+  
+  h2
+    &:before
+      width: 98px
+      justify-self: center
+  h5
+  ul.projects
+    grid-column: 1/8
+    grid-row-start: 4
+    color: $white
+    .briefcase
+      background: linear-gradient(0deg, #000000 0%, #252525 100%)
+      border-radius: 40px
+      height: 95vh
+      margin: 32px
+      .p-name
+      .year
+      .p-desc
+      .roles
+        .single
+          .title
+          .desc
+          .roles
+            .single
+
 
 // FX
 
