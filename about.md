@@ -9,6 +9,6 @@ permalink: /about/
 
 Amely Su is feeling very happy at the moment, but isn't the happiest person in the world.
 
-### Contact me
+### Contact Me
 
 [amely.su@student.tdsb.on.ca](mailto:amely.su@student.tdsb.on.ca)
