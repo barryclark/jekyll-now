@@ -17,16 +17,6 @@ avatar: https://raw.githubusercontent.com/ehmsu/ehmsu.github.io/master/images/DD
 # Flags below are optional
 #
 
-navigation: 
-  - name: Blog 
-  - url: / 
-  - name: Projects
-  - url: /project
-  - name: About
-  - url: /about
-
-paginate: 3
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   email: amely.su@student.tdsb.on.ca
