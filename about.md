@@ -14,6 +14,9 @@ I am a post-doc at UT MD Anderson Cancer Center. I study mesenchymal tissue diff
 `2019-` 
 __MD Anderson__ Post Doctoral Fellow (Sarcoma Medical Oncology)
 
+`2014-2018` 
+__Arizona State University__ Graduate Research Associate (School of Biological and Health Systems Engineering)
+
 ## Education
 
 `2014-18`
