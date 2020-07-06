@@ -13,7 +13,7 @@ header-img: "images/scaleout-terragrunt/scaling-the-sheer-face.jpg"
 
 ### Retro
 
-In [part-1](link) we had a short look on Haufe`s cloud journey and how Terragrunt can boost your Terraform modularization by use DRY Terraform code. In the this part of the series, we take a look which tools from the Terraform community could support your daily work to keep your Terraform code [clean](https://www.amazon.de/Clean-Architecture-Robert-Martin-2016-12-10/dp/B01N2GDUQ9), smiliar to keeping your app code clean.
+In [part-1](link) we took a short look on Haufe`s cloud journey and how Terragrunt can boost your Terraform modularization by use DRY Terraform code. In the this part of the series, we take a look which tools from the Terraform community could support your daily work to keep your Terraform code [clean](https://www.amazon.de/Clean-Architecture-Robert-Martin-2016-12-10/dp/B01N2GDUQ9), smiliar to keeping your app code clean.
 
 ### Generate automatically Documentation with Terraform-Doc
 
