@@ -158,10 +158,10 @@ img {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
 
-  @include mobile {
-    text-align: center;
-  }
-}
+//   @include mobile {
+//     text-align: center;
+//   }
+// }
 
 .site-avatar {
   float: left;
@@ -169,10 +169,10 @@ img {
   height: 70px;
   margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+ // @include mobile {
+//    float: none;
+//    display: block;
+//    margin: 0 auto;
   }
 
   img {
@@ -216,11 +216,11 @@ nav {
   font-family: $georgia;
   font-size: 18px;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
+//  @include mobile {
+//    float: none;
+//    margin-top: 9px;
+//    display: block;
+//    font-size: 16px;
   }
 
   a {
@@ -230,9 +230,9 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
 
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
+//    @include mobile {
+//      margin: 0 10px;
+//      color: $blue;
     }
   }
 }
