@@ -28,6 +28,20 @@ __University of Texas at Arlington & Univesity of Texas Southwestern Medical Cen
 `2009-14`
 __University of Texas at Arlington__ BSc Biology 
 
+## Awards
+
+`2018` 
+__Completion Fellowship__ ASU Graduate College
+
+`2017-2018` 
+__ARCS Burton Scholar__ Phoenix Chapter of Achievement Rewards for College Scientists Foundation
+
+`2016-2017` 
+__IFER Graduate Fellowship__ International Foundation for Ethical Research 
+
+`2014-2018` 
+__Dean's Fellow__ ASU Dean's Fellowship
+
 ## Contact me
 
 [dtruong4@mdanderson.org](mailto:dtruong4@mdanderson.org)
