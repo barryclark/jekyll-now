@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Thank you for visiting this site. We are passionate about making the most of life!
 
-### More Information
+## What do you do when life gives you lemons?
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Slice them up and make an infusion, *of course*.
