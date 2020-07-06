@@ -19,7 +19,7 @@ In [part-1](link) we took a short look on Haufe`s cloud journey and how Terragru
 
 **What I get from it?**
 
-[TF-Docs](https://github.com/segmentio/terraform-docs) generates and updates documentation about Terraform modules automatically, for input and output variables. This helps when you decide to split Terraform code ( something you can do with Terragrunt ) into a lot of small composable modules. You can choose between various output formats like markdown text or tables. Therefore you can just add it to your readme.md files in your repository for each module. With that TF-Docs is a consistent shortcut to keep your module documentation up to date on the same place where the code is, without writing it.
+[TF-Docs](https://github.com/segmentio/terraform-docs) generates and updates documentation for Terraform modules automatically, for input and output variables. This helps when you decide to split Terraform code ( something you can do with Terragrunt ) into a lot of small composable modules. You can choose between various output formats like markdown text or tables. Therefore you can just add it to your readme.md files in your repository for each module. With that TF-Docs is a consistent shortcut to keep your module documentation up to date on the same place where the code is, without writing it.
 
 This is how it looks like as a sample markdown table:
 ![TF-Doc Markdown Table](../images/terraform_docs.png){: width="100%"}
