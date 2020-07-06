@@ -18,10 +18,16 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$OpenSans: "Open Sans", Arial, sans-serif;
+$Roboto: "Roboto", Arial, sans-serif
 
 // Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
+// @mixin mobile {
+//   @media screen and (max-width: 640px) {
+//     @content;
+//   }
+// }
+
+// Google Stylesheets
+// <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+// <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"
