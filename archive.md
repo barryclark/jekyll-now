@@ -4,6 +4,20 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### July 6th thoughts & takeaways:
+
+* Over last week, the traffic volume decreased 2.4%. 
+
+* The 4th of July looks more like a regular Sunday and it follows what we saw on Memorial Day. Only about 1% higher than the volume seen on Memorial Day. 
+
+* Since Memorial Day wasn't particularly great for social distancing and staying at home, I'd say this isn't great news for keeping cases down. 
+
+* I've been diving deep into that TSA data because I thought it was an interesting way to compare when cities locked down and how the virus is spreading. Here's a chart showing the relative difference in passengers through TSA checkpoints for a few airports I'm interested in:
+
+![config.yml]({{site.baseurl}}/images/TSA relative.jpg) 
+
+***
+
 ### July 2nd thoughts & takeaways:
 
 * Much the same trends of decreasing traffic have continued, I've added a new chart to track the weekly % change in traffic. More lockdown measures have been rumored to be implemented after the long weekend.
