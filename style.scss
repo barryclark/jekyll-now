@@ -283,10 +283,10 @@ nav {
 // Archive
 .archive {
   a {
-    color: $base-color;
+    color: $darkGray;
   }
   time {
-    color: $base-lighten-color;
+    color: $lightGray;
     font-size: $small-font-size;
     font-weight: 300;
     margin-left: 3px;
@@ -309,4 +309,3 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-@import "open-color";
