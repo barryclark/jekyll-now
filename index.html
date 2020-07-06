@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<div>
+  <h1>Welcome to my website!</h1>
+  <p style="align: left;">I love lemon-infused water!</p>
+</div>
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
@@ -15,10 +20,4 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-</div>
-<div>
-  <body>
-  <h1>Welcome to my website!</h1>
-  <p style="align: left;">I love lemon-infused water!</p>
-  </body>
 </div>
