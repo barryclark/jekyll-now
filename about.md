@@ -33,6 +33,9 @@ __University of Texas at Arlington__ BSc Biology
 `2018` 
 __Completion Fellowship__ ASU Graduate College
 
+`2018` 
+__Graduate College Fellowship__ ASU Graduate College
+
 `2017-2018` 
 __ARCS Burton Scholar__ Phoenix Chapter of Achievement Rewards for College Scientists Foundation
 
