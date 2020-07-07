@@ -539,8 +539,11 @@ html {
   src: url("../fonts/SourceSerifPro-Bold.otf.woff2") format("woff2");
   font-weight: bold;
 }
+/***************/
+/* Hey, don't do this to yourself, this was generated from a Sass file, probably won't be the most beautiful or clean code, anyways in my github is the complete repo with my blog repo, if you want to do it anyways */
+/***************/
 body {
-  cursor: none;
+  background: #fff;
 }
 
 a {
@@ -596,6 +599,18 @@ h2:before {
   z-index: -10;
 }
 
+h3 {
+  font-size: 36px;
+  font-family: "SourceSerif";
+  font-weight: 800;
+  z-index: 1;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: "SourceSerif";
+}
+
 .fun {
   font-size: 18px;
   font-family: "Shnobel";
@@ -607,8 +622,6 @@ h2:before {
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
   top: 8px;
   height: 8vh;
   width: 80%;
@@ -987,8 +1000,8 @@ header nav ul.nav-links a {
   margin-top: 60px;
   -ms-grid-columns: 15% 1fr 8px 1fr 8px 1fr 15%;
   grid-template-columns: 15% 1fr 8px 1fr 8px 1fr 15%;
-  -ms-grid-rows: 16px auto 8px 470px 16px;
-  grid-template-rows: 16px auto 8px 470px 16px;
+  -ms-grid-rows: 16px auto 48px 520px 16px;
+  grid-template-rows: 16px auto 48px 520px 16px;
 }
 
 .how > *:nth-child(1) {
@@ -1227,18 +1240,26 @@ header nav ul.nav-links a {
 }
 .how .skills ul.skill-list li .img {
   width: 320px;
-  height: 220px;
-  background: black;
+  height: 250px;
+  background: white;
   display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin: 8px 0;
+  border: 6px #ffffff solid;
+  border-radius: 24px;
+}
+.how .skills ul.skill-list li svg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .how .skills ul.skill-list li p.desc {
   font-size: 16px;
   font-weight: 200;
   margin: 16px 0;
+  line-height: 18px;
 }
 .how .skills ul.skill-list li strong {
   font-weight: bold;
@@ -1280,8 +1301,8 @@ header nav ul.nav-links a {
   display: -ms-grid;
   display: grid;
   margin-top: 60px;
-  -ms-grid-columns: 15% 1fr 8px 1fr 8px 1fr 15%;
-  grid-template-columns: 15% 1fr 8px 1fr 8px 1fr 15%;
+  -ms-grid-columns: 8px 1fr 8px 1fr 8px 1fr 8px;
+  grid-template-columns: 8px 1fr 8px 1fr 8px 1fr 8px;
   -ms-grid-rows: 16px auto 8px 470px 16px;
   grid-template-rows: 16px auto 8px 470px 16px;
 }
@@ -1466,21 +1487,485 @@ header nav ul.nav-links a {
       justify-self: center;
 }
 .what ul.projects {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1/8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
   -ms-grid-row: 4;
       grid-row-start: 4;
   color: #ffffff;
+  margin-top: 32px;
 }
 .what ul.projects .briefcase {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 32px 0.5fr 1fr 1fr 1fr 32px;
+  grid-template-rows: 32px 0.5fr 1fr 1fr 1fr 32px;
+  -ms-grid-columns: (1fr)[16];
+  grid-template-columns: repeat(16, 1fr);
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#252525));
   background: -o-linear-gradient(bottom, #000000 0%, #252525 100%);
   background: linear-gradient(0deg, #000000 0%, #252525 100%);
   border-radius: 40px;
+  border: 6px solid #F6F3E7;
   height: 95vh;
-  margin: 32px;
+  margin: 32px 0px;
+  -webkit-box-shadow: rgba(144, 115, 150, 0.3) 0px 0px 10px;
+          box-shadow: rgba(144, 115, 150, 0.3) 0px 0px 10px;
 }
+.what ul.projects .briefcase > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.what ul.projects .briefcase > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.what ul.projects .briefcase > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.what ul.projects .briefcase > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+.what ul.projects .briefcase > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.what ul.projects .briefcase > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+}
+.what ul.projects .briefcase > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.what ul.projects .briefcase > *:nth-child(8) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+}
+.what ul.projects .briefcase > *:nth-child(9) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+.what ul.projects .briefcase > *:nth-child(10) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 10;
+}
+.what ul.projects .briefcase > *:nth-child(11) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+}
+.what ul.projects .briefcase > *:nth-child(12) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 12;
+}
+.what ul.projects .briefcase > *:nth-child(13) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 13;
+}
+.what ul.projects .briefcase > *:nth-child(14) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 14;
+}
+.what ul.projects .briefcase > *:nth-child(15) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 15;
+}
+.what ul.projects .briefcase > *:nth-child(16) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 16;
+}
+.what ul.projects .briefcase > *:nth-child(17) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.what ul.projects .briefcase > *:nth-child(18) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.what ul.projects .briefcase > *:nth-child(19) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+.what ul.projects .briefcase > *:nth-child(20) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+.what ul.projects .briefcase > *:nth-child(21) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+}
+.what ul.projects .briefcase > *:nth-child(22) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+}
+.what ul.projects .briefcase > *:nth-child(23) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+}
+.what ul.projects .briefcase > *:nth-child(24) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 8;
+}
+.what ul.projects .briefcase > *:nth-child(25) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 9;
+}
+.what ul.projects .briefcase > *:nth-child(26) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 10;
+}
+.what ul.projects .briefcase > *:nth-child(27) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 11;
+}
+.what ul.projects .briefcase > *:nth-child(28) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 12;
+}
+.what ul.projects .briefcase > *:nth-child(29) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 13;
+}
+.what ul.projects .briefcase > *:nth-child(30) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 14;
+}
+.what ul.projects .briefcase > *:nth-child(31) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 15;
+}
+.what ul.projects .briefcase > *:nth-child(32) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 16;
+}
+.what ul.projects .briefcase > *:nth-child(33) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.what ul.projects .briefcase > *:nth-child(34) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+.what ul.projects .briefcase > *:nth-child(35) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.what ul.projects .briefcase > *:nth-child(36) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+.what ul.projects .briefcase > *:nth-child(37) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.what ul.projects .briefcase > *:nth-child(38) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+}
+.what ul.projects .briefcase > *:nth-child(39) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+.what ul.projects .briefcase > *:nth-child(40) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 8;
+}
+.what ul.projects .briefcase > *:nth-child(41) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+.what ul.projects .briefcase > *:nth-child(42) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 10;
+}
+.what ul.projects .briefcase > *:nth-child(43) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 11;
+}
+.what ul.projects .briefcase > *:nth-child(44) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 12;
+}
+.what ul.projects .briefcase > *:nth-child(45) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 13;
+}
+.what ul.projects .briefcase > *:nth-child(46) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 14;
+}
+.what ul.projects .briefcase > *:nth-child(47) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 15;
+}
+.what ul.projects .briefcase > *:nth-child(48) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 16;
+}
+.what ul.projects .briefcase > *:nth-child(49) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+.what ul.projects .briefcase > *:nth-child(50) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+}
+.what ul.projects .briefcase > *:nth-child(51) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+}
+.what ul.projects .briefcase > *:nth-child(52) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+}
+.what ul.projects .briefcase > *:nth-child(53) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
+}
+.what ul.projects .briefcase > *:nth-child(54) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 6;
+}
+.what ul.projects .briefcase > *:nth-child(55) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 7;
+}
+.what ul.projects .briefcase > *:nth-child(56) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 8;
+}
+.what ul.projects .briefcase > *:nth-child(57) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 9;
+}
+.what ul.projects .briefcase > *:nth-child(58) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 10;
+}
+.what ul.projects .briefcase > *:nth-child(59) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 11;
+}
+.what ul.projects .briefcase > *:nth-child(60) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 12;
+}
+.what ul.projects .briefcase > *:nth-child(61) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 13;
+}
+.what ul.projects .briefcase > *:nth-child(62) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 14;
+}
+.what ul.projects .briefcase > *:nth-child(63) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 15;
+}
+.what ul.projects .briefcase > *:nth-child(64) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 16;
+}
+.what ul.projects .briefcase > *:nth-child(65) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.what ul.projects .briefcase > *:nth-child(66) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+}
+.what ul.projects .briefcase > *:nth-child(67) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.what ul.projects .briefcase > *:nth-child(68) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+}
+.what ul.projects .briefcase > *:nth-child(69) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+.what ul.projects .briefcase > *:nth-child(70) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 6;
+}
+.what ul.projects .briefcase > *:nth-child(71) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+.what ul.projects .briefcase > *:nth-child(72) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 8;
+}
+.what ul.projects .briefcase > *:nth-child(73) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 9;
+}
+.what ul.projects .briefcase > *:nth-child(74) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 10;
+}
+.what ul.projects .briefcase > *:nth-child(75) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 11;
+}
+.what ul.projects .briefcase > *:nth-child(76) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 12;
+}
+.what ul.projects .briefcase > *:nth-child(77) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 13;
+}
+.what ul.projects .briefcase > *:nth-child(78) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 14;
+}
+.what ul.projects .briefcase > *:nth-child(79) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 15;
+}
+.what ul.projects .briefcase > *:nth-child(80) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 16;
+}
+.what ul.projects .briefcase > *:nth-child(81) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+}
+.what ul.projects .briefcase > *:nth-child(82) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+}
+.what ul.projects .briefcase > *:nth-child(83) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+}
+.what ul.projects .briefcase > *:nth-child(84) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+}
+.what ul.projects .briefcase > *:nth-child(85) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 5;
+}
+.what ul.projects .briefcase > *:nth-child(86) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 6;
+}
+.what ul.projects .briefcase > *:nth-child(87) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 7;
+}
+.what ul.projects .briefcase > *:nth-child(88) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 8;
+}
+.what ul.projects .briefcase > *:nth-child(89) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 9;
+}
+.what ul.projects .briefcase > *:nth-child(90) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 10;
+}
+.what ul.projects .briefcase > *:nth-child(91) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 11;
+}
+.what ul.projects .briefcase > *:nth-child(92) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 12;
+}
+.what ul.projects .briefcase > *:nth-child(93) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 13;
+}
+.what ul.projects .briefcase > *:nth-child(94) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 14;
+}
+.what ul.projects .briefcase > *:nth-child(95) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 15;
+}
+.what ul.projects .briefcase > *:nth-child(96) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 16;
+}
+.what ul.projects .briefcase .header {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 13;
+  grid-column: 2/15;
+}
+.what ul.projects .briefcase .header .p-name {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.what ul.projects .briefcase .header .p-name:after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: block;
+  background: url(../img/cross-white.svg);
+  top: -40px;
+  position: relative;
+  left: -48px;
+}
+.what ul.projects .briefcase .header .company {
+  font-weight: 800;
+  margin-top: 16px;
+}
+.what ul.projects .briefcase .header .year {
+  font-family: "SourceSerif";
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 8px;
+}
+.what ul.projects .briefcase .content {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  margin-top: 64px;
+}
+.what ul.projects .briefcase .content .p-desc {
+  font-family: "Inter var";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.what ul.projects .briefcase .content .roles {
+  margin-top: 48px;
+  font-family: "SourceSerif";
+  font-size: 24px;
+  font-weight: 600;
+}
+.what ul.projects .briefcase .content .roles .single {
+  margin-top: 32px;
+  font-family: "Inter var";
+}
+.what ul.projects .briefcase .content .roles .single .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.what ul.projects .briefcase .content .roles .single .desc {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
 .glitch {
   display: block;
   -webkit-animation-name: glitch-anim-text;

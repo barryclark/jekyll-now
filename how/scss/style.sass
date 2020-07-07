@@ -2,10 +2,13 @@
 @import 'reset'
 @import 'glitch'
 @import 'fonts'
-
+/***************/
+/* Hey, don't do this to yourself, this was generated from a Sass file, probably won't be the most beautiful or clean code, anyways in my github is the complete repo with my blog repo, if you want to do it anyways */
+/***************/
 // Style
 body
-  cursor: none
+  // cursor: none
+  background: $background
 a
   cursor: none
   transform-origin: 100% 100%
@@ -34,6 +37,14 @@ h2
     position: relative
     top: 56px
     z-index: -10
+h3 
+  font-size: 36px
+  font-family: $title-font
+  font-weight: 800
+  z-index: 1
+h4
+  font-size: 24px
+  font-family: $title-font
 .fun
   font-size: 18px
   font-family: $accent-font
@@ -43,7 +54,7 @@ h2
   z-index: 1
   position: relative  
 header
-  position: sticky
+  // position: sticky
   top: 8px
   height: 8vh
   width: 80%
@@ -122,15 +133,15 @@ header
     display: grid
     grid-template-columns: 8px 1fr 8px 
   .subtitle
-    grid-column: 2/3
-    grid-row: 2/3
+    grid-column: 2 / 3
+    grid-row: 2 / 3
     h2
       width: 100%
     h5
       width: 100%
   .who-is
-    grid-column: 2/3
-    grid-row: 4/5
+    grid-column: 2 / 3
+    grid-row: 4 / 5
     .desc
       font-family: $body-font
       color: $dark-grey
@@ -177,7 +188,7 @@ header
   display: grid
   margin-top: 60px
   grid-template-columns: 15% 1fr 8px 1fr 8px 1fr 15%
-  grid-template-rows: 16px auto 8px 470px 16px
+  grid-template-rows: 16px auto 48px 520px 16px
   h2
     width: 120px
     &:before
@@ -216,15 +227,20 @@ header
             left: -24px
         .img
           width: 320px
-          height: 220px
-          background: black
+          height: 250px
+          background: white
           display: block
           align-self: center
           margin: 8px 0
+          border: 6px $white solid
+          border-radius: 24px
+        svg
+          align-self: center
         p.desc
           font-size: 16px
           font-weight: 200
           margin: 16px 0
+          line-height: 18px
         strong
           font-weight: bold
         ul.skills-list
@@ -250,32 +266,76 @@ header
 .what
   display: grid
   margin-top: 60px
-  grid-template-columns: 15% 1fr 8px 1fr 8px 1fr 15%
+  grid-template-columns: 8px 1fr 8px 1fr 8px 1fr 8px
   grid-template-rows: 16px auto 8px 470px 16px
-  
   h2
     &:before
       width: 98px
       justify-self: center
-  h5
   ul.projects
-    grid-column: 1/8
+    display: grid
+    grid-column: 2 / 7
     grid-row-start: 4
     color: $white
+    margin-top: 32px
     .briefcase
+      display: grid
+      grid-template-rows: 32px 0.5fr 1fr 1fr 1fr 32px
+      grid-template-columns: repeat(16, 1fr)
       background: linear-gradient(0deg, #000000 0%, #252525 100%)
       border-radius: 40px
+      border: 6px solid #F6F3E7
       height: 95vh
-      margin: 32px
-      .p-name
-      .year
-      .p-desc
-      .roles
-        .single
-          .title
-          .desc
-          .roles
-            .single
+      margin: 32px 0px
+      box-shadow: $shadow
+      .header
+        grid-row: 2 / 3
+        grid-column: 2 / 15
+        .p-name
+          font-size: 48px
+          text-transform: uppercase
+          &:after
+            content:""
+            width: 32px
+            height: 32px
+            display: block
+            background: url(../img/cross-white.svg)
+            top: -40px
+            position: relative
+            left: -48px
+        .company
+          font-weight: 800
+          margin-top: 16px
+        .year
+          font-family: $title-font
+          font-size: 16px
+          font-weight: 800
+          margin-top: 8px
+      .content
+        grid-row: 3 / 6
+        grid-column: 2 / 6
+        margin-top: 64px
+        .p-desc
+          font-family: $body-font
+          font-size: 18px
+          font-weight: 600
+          line-height: 24px
+        .roles
+          margin-top: 48px
+          font-family: $title-font
+          font-size: 24px
+          font-weight: 600
+          .single
+            margin-top: 32px
+            font-family: $body-font
+            .title
+              font-weight: 600
+              font-size: 18px
+            .desc
+              font-size: 16px
+              font-weight: 200
+              line-height: 24px
+              margin-top: 8px
 
 
 // FX
