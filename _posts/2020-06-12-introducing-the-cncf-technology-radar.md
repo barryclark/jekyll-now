@@ -10,6 +10,7 @@ tags:
   - Slides
   - Video
   - "2020"
+  - Featured
 ---
 
 I'm bowled over by the overwhelming interest and positive reactions to my newest initiative, the CNCF Technology Radar! My goal is to make this a valuable resource to the cloud native community, which reflects the reality of end users.
