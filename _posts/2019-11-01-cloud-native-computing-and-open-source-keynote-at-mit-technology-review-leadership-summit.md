@@ -11,6 +11,7 @@ tags:
   - Slides
   - "2019"
   - Video
+  - Featured
 ---
 
 * Containers, Kubernetes and cloud native are the building blocks behind modern distributed systems - scalable, resilient, and observable.
