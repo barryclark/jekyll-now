@@ -47,6 +47,8 @@ redirect_from:
 
 [openjfx-dev](https://mail.openjdk.java.net/pipermail/openjfx-dev)
 
+[hotspot-runtime-dev](https://mail.openjdk.java.net/pipermail/hotspot-runtime-dev/)
+
 [hotspot-dev](https://mail.openjdk.java.net/pipermail/hotspot-dev/)
 
 [hotspot-compiler-dev](https://mail.openjdk.java.net/pipermail/hotspot-compiler-dev/)
