@@ -14,6 +14,8 @@ Here are some useful websites that I have found in the past
 
 [Dave Tang's Blog](https://davetang.org/muse/)
 
+[Tim Stuart](https://timoast.github.io/blog/)
+
   
 ### Repositories
   
