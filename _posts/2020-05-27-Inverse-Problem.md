@@ -64,12 +64,7 @@ $<\alpha_{ext}(\lambda)>$ - средний коэффициент ослабле
 
 \begin{equation}
 \label{eq:AerosolOpticalTickness}
-\begin{aligned}
-\tau(\lambda_1) &= Z_{atm}\int_{r0}^{r1} \frac{dN(r)}{dr} C_{ext}(m, r, \lambda_1) dr,\\
-\tau(\lambda_2) &= Z_{atm}\int_{r0}^{r1} \frac{dN(r)}{dr} C_{ext}(m, r, \lambda_2) dr,\\
-\dots \\
-\tau(\lambda_n) &= Z_{atm}\int_{r0}^{r1} \frac{dN(r)}{dr} C_{ext}(m, r, \lambda_n) dr
-\end{aligned}
+\tau(\lambda_i) &= Z_{atm}\int_{r0}^{r1} \frac{dN(r)}{dr} C_{ext}(m, r, \lambda_i) dr,\\
 \end{equation}
 
 Как показывает практика, эта система уравнений может быть плохо обусловленной: определитель такой матрицы стремится, но не равен нулю, а число обусловленности велико. Это означает, что небольшая неопределенность в измеренных величинах $\tau(\lambda)$ влечет за собой огромную неопределенность в векторе решения $\frac{dN(r)}{dr}$. 
