@@ -13,6 +13,11 @@
 /* BASE RULES */
 /**************/
 
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+
 html {
   font-size: 100%;
 }
