@@ -3,13 +3,14 @@ layout: page
 title: About
 permalink: /about/
 ---
+<!-- 
+### About
+ -->
+I am graduate student who loves to sketch and cook. I am always in to learn new things. Currently I am learning to stay put, haha.
+I am an extreme extrovert and I love talking to new people in weird situations!
 
-Some information about you!
+<hr>
 
-### More Information
+#### Contact
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Email [dhruv@cmi dot ac.in](mailto:dhruv@cmi.ac.in)
