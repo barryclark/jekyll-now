@@ -4,6 +4,16 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### July 11th thoughts & takeaways:
+
+* Not a whole lot changed over the past week, same trends that we've been seeing since the spike in cases began a few weeks ago. US mobility trends from Apple is also seeing a decrease.
+
+* I've added a new section based on some positive feedback I've been receiving on the Google post-covid trip reports. That will be updated monthly, for now.
+
+[Past Thoughts & Takeaways](http://modalshift.co/COVID19/archive/)
+
+***
+
 ### July 6th thoughts & takeaways:
 
 * Over last week, the traffic volume decreased 2.4%. 
