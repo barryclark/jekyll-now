@@ -8,6 +8,7 @@ permalink: /work/
 
 
 ## Publication
+<hr style="border:1px solid gray"> </hr>
 
 * Varieties of Reversible Regular languages<br/>
 Amaldev Manuel, **Dhruv Nevatia**<br/>
@@ -32,11 +33,13 @@ Amaldev Manuel, **Dhruv Nevatia**<br/>
 <br>
 
 ### Past
-
+><strong>Commutative Algebra</strong><br><i>Summer internship 2018 with Prof. R. Sridharan</i><br>
+>>This was a learning internship in which I studied the fundamentals of Commutative algebra from classic texts by Zariski and Samuel as well as Nathan Jacobson on the subject.
 
 <br>
 
 ### Other projects
+
 
 
 
