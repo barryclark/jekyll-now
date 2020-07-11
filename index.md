@@ -10,7 +10,7 @@ I am particularly interested in language theory, semigroup theory, automata theo
 
 I am currently an intern in IRIF, Paris (virtual) under the guidance of Prof. Thomas Colcombet and Prof. Daniela Petrisan.
 
-<hr>
+<hr style="border:1px solid gray">
 
 #### Contact
 

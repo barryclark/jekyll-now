@@ -8,7 +8,7 @@ permalink: /work/
 
 
 ## Publication
-<hr style="border:1px solid gray"> </hr>
+<hr>
 
 * Varieties of Reversible Regular languages<br/>
 Amaldev Manuel, **Dhruv Nevatia**<br/>
@@ -43,7 +43,7 @@ Amaldev Manuel, **Dhruv Nevatia**<br/>
 
 
 
-<hr>
+<hr style="border:1px solid gray">
 
 #### Contact
 
