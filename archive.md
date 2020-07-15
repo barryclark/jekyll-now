@@ -4,6 +4,21 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### July 15th thoughts & takeaways:
+
+* I'd like to shout out some fantastic modeling work done by Will Barbour and Vanderbilt. [They created a "rebound calculator"] (https://lab-work.github.io/therebound/) that estimates travel time impacts based on mode changes due to COVID-19. 
+* Here's a plot I created using the tool they included in their post. The big takeaway being that congestion in cities with more transit riders will be impacted much more than car-dependent cities like Austin. I compare a scenario where we kept the same mode split as we did in 2018 versus one where everyone drove alone. 
+
+![config.yml]({{site.baseurl}}/images/AustinVSsf.png) 
+
+* My initial thinking was have been that we would actually see improved traffic congestion in a post-COVID world. It's possible that is what we'll see in a car-dependent city like Austin but that won't be the same story in San Francisco or New York. It's also possible that we could see higher numbers of remote workers, especially if congestion got really much worse. I also didn't look at job losses, which would have a similar impact as working remotely. 
+
+* Working remotely also generates trips, generally shorter, home-based trips and these aren't taken into account in more commute-centered modeling like this.
+
+* One of the biggest riders of transit in Austin are school children. I wonder what the impact on school bus ridership will be.
+
+***
+
 ### July 11th thoughts & takeaways:
 
 * Not a whole lot changed over the past week, same trends that we've been seeing since the spike in cases began a few weeks ago. US mobility trends from Apple is also seeing a decrease.
