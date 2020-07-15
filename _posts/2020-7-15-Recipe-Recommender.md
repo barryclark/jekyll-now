@@ -5,7 +5,7 @@ title: "First Project: The DONO Recipe Recommender"
 
 **Video**  
 To avoid issues of TLDR, I have included a video presentation that encapsulates my recipe recommender along with a quick demonstration.  
-<iframe width="420" height="315" src="https://www.loom.com/share/92358075f85d40cca10eb881ffbfc7bc" frameborder="0" allowfullscreen></iframe>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/92358075f85d40cca10eb881ffbfc7bc" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 **Problem**  
 Over the years, regular home cooking has dipped drastically with each succeeding generation, from 64% with millennials to 55% with Gen Z (Charlebois, 2020). In the same study, 68% of Canadians claimed to want to spend more time with home-cooking (likely higher now with COVID-19). I believe retailers can a play a huge role here – the goal of my capstone project is to address this by building a recommender system that suggests recipes based on the users’ shopping patterns and recipes they enjoy. This would benefit both the shopper and the retailer as it offers a personalized shopping experience and an opportunity to increase shoppers’ basket size.
