@@ -18,13 +18,10 @@ between the ‘starting’ cell and ‘ending’ cell along the trajectory.
 <h2>
 Loading the files
 </h2>
-In this example, we will be using the [HSMM data
-set](http://www.bioconductor.org/packages/release/data/experiment/html/HSMMSingleCell.html)
-of differentiating myoblasts developed by [Trapnell et
-al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4122333/). The data is
+In this example, we will be using the [HSMM data set](http://www.bioconductor.org/packages/release/data/experiment/html/HSMMSingleCell.html)
+of differentiating myoblasts developed by [Trapnell et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4122333/). The data is
 already FPKM normalized so we will add a pseudocount and log-transform
-the data. Here we will generate a
-[SingleCellExperiment](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html)
+the data. Here we will generate a [SingleCellExperiment](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html)
 object to contain our expression matrix.
 
 ``` r
