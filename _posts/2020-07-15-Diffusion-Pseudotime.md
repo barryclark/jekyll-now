@@ -1,3 +1,8 @@
+---
+layout: post
+title: Trajectory Analysis with Diffusion Pseudotime
+---
+
 The beauty of single-cell RNA-seq is the ability to delineate the cell
 state of each single-cell. This brings a novel advantage when
 considering developmental trajectories during organ development or cell
