@@ -30,92 +30,7 @@ object to contain our expression matrix.
 ``` r
 library(HSMMSingleCell)
 library(SingleCellExperiment)
-```
-
-    ## Loading required package: SummarizedExperiment
-
-    ## Loading required package: GenomicRanges
-
-    ## Loading required package: stats4
-
-    ## Loading required package: BiocGenerics
-
-    ## Loading required package: parallel
-
-    ## 
-    ## Attaching package: 'BiocGenerics'
-
-    ## The following objects are masked from 'package:parallel':
-    ## 
-    ##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
-    ##     clusterExport, clusterMap, parApply, parCapply, parLapply,
-    ##     parLapplyLB, parRapply, parSapply, parSapplyLB
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     IQR, mad, sd, var, xtabs
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     anyDuplicated, append, as.data.frame, basename, cbind, colnames,
-    ##     dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
-    ##     grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
-    ##     order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
-    ##     rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
-    ##     union, unique, unsplit, which, which.max, which.min
-
-    ## Loading required package: S4Vectors
-
-    ## 
-    ## Attaching package: 'S4Vectors'
-
-    ## The following object is masked from 'package:base':
-    ## 
-    ##     expand.grid
-
-    ## Loading required package: IRanges
-
-    ## Loading required package: GenomeInfoDb
-
-    ## Loading required package: Biobase
-
-    ## Welcome to Bioconductor
-    ## 
-    ##     Vignettes contain introductory material; view with
-    ##     'browseVignettes()'. To cite Bioconductor, see
-    ##     'citation("Biobase")', and for packages 'citation("pkgname")'.
-
-    ## Loading required package: DelayedArray
-
-    ## Loading required package: matrixStats
-
-    ## 
-    ## Attaching package: 'matrixStats'
-
-    ## The following objects are masked from 'package:Biobase':
-    ## 
-    ##     anyMissing, rowMedians
-
-    ## Loading required package: BiocParallel
-
-    ## 
-    ## Attaching package: 'DelayedArray'
-
-    ## The following objects are masked from 'package:matrixStats':
-    ## 
-    ##     colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     aperm, apply, rowsum
-
-``` r
 library(scater) #http://bioconductor.org/packages/release/bioc/html/scater.html
-```
-
-    ## Loading required package: ggplot2
-
-``` r
 data(HSMM_expr_matrix)
 data(HSMM_sample_sheet)
 m = log10(HSMM_expr_matrix + 1)
@@ -135,7 +50,7 @@ HSMM <- runPCA(HSMM, ncomponents = 50)
 plotReducedDim(HSMM, dimred="PCA", colour_by="Hours")
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
 We can order each cell using the first principal component. The result
 appear to be flipped which could be resolved using `rev()`.
@@ -151,7 +66,7 @@ ggplot(as.data.frame(colData(HSMM)), aes(x = pseudotime_PC1, y = Hours,
     ggtitle("Cells ordered by first principal component")
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-3-1.png)
 <h2>
 Diffusion Mapping
 </h2>
@@ -166,24 +81,6 @@ has been implemented in the R packaged
 
 ``` r
 library(destiny)
-```
-
-    ## 
-    ## Attaching package: 'destiny'
-
-    ## The following object is masked from 'package:SummarizedExperiment':
-    ## 
-    ##     distance
-
-    ## The following object is masked from 'package:GenomicRanges':
-    ## 
-    ##     distance
-
-    ## The following object is masked from 'package:IRanges':
-    ## 
-    ##     distance
-
-``` r
 matrix <- assay(HSMM, i = 'logcounts') #  Prepare a counts matrix with labeled rows and columns. 
 
 dm <- DiffusionMap(t(matrix), n_pcs = 50) # Make a diffusion map.
@@ -191,7 +88,7 @@ reducedDim(HSMM, type = 'DC') <- dm@eigenvectors
 plotReducedDim(HSMM, dimred="DC", colour_by="Hours")
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 As you can see, the temporal ordering of the cells is better resolved in
 the diffusion map as opposed to PCA. In addition, it looks like there
@@ -209,7 +106,7 @@ ggplot(as.data.frame(colData(HSMM)),
     ggtitle("Cells ordered by DC1")
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-5-1.png)
 
 It looks like we can at least resolve the earliest time-point (0 hours)
 and there is some separation with the final time-point (72 hours). Let’s
@@ -223,7 +120,7 @@ ggplot(as.data.frame(colData(HSMM)),
     ggtitle("Cells ordered by Pseudotime")
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
 Now let’s calculate the Diffusion Pseudotime (DPT) by setting the first
 ranked cell as the root cell.
@@ -240,10 +137,10 @@ ggplot(as.data.frame(colData(HSMM)),
     ggtitle("Cells ordered by DPT")
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-7-1.png)
 
 <h2>
-Visualizing Pseudotime
+Visualizing Pseudotime in Different Embeddings
 </h2>
 Here we can compare between `Hours`, `dpt`, and `Pseudotime` on the
 diffusion map embedding.
@@ -256,7 +153,7 @@ p3 <-plotReducedDim(HSMM, dimred="DC", colour_by="Pseudotime")
 p1 + p2 + p3 + plot_layout(nrow=2)
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 We can also use t-stochastic neighbor embedding (t-SNE) for
 visualization. You can see the branching but the large spread of cells
@@ -272,7 +169,7 @@ p3 <-plotReducedDim(HSMM, dimred="TSNE", colour_by="Pseudotime")
 p1 + p2 + p3 + plot_layout(nrow=2)
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 When visualizing by UMAP, we start seeing separation of clusters which
 suggests that there may be two root cells within the population and that
@@ -289,7 +186,7 @@ p3 <-plotReducedDim(HSMM, dimred="UMAP", colour_by="Pseudotime")
 p1 + p2 + p3 + plot_layout(nrow=2)
 ```
 
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 <h2>
 Gene Expression Trends
@@ -302,28 +199,8 @@ will help us re-map from Ensembl to Official Symbol.
 ``` r
 library(AnnotationDbi)
 library(org.Hs.eg.db)
-```
-
-    ## 
-
-``` r
 library(EnsDb.Hsapiens.v86)
-```
 
-    ## Loading required package: ensembldb
-
-    ## Loading required package: GenomicFeatures
-
-    ## Loading required package: AnnotationFilter
-
-    ## 
-    ## Attaching package: 'ensembldb'
-
-    ## The following object is masked from 'package:stats':
-    ## 
-    ##     filter
-
-``` r
 matrix <- assay(HSMM, i = 'logcounts')
 
 Ensembl_id <- rownames(matrix)
@@ -366,14 +243,7 @@ gene <- c('CDK1' , 'ID1', 'MKI67', 'MYOG') #You can modify this list to whicheve
 expr_matrix <- as.data.frame(t(rbind(matrix[gene, , drop = FALSE], dpt = HSMM$dpt, Hours = as.character(HSMM$Hours), Pseudotime = HSMM$Pseudotime)))
 
 df <- pivot_longer(expr_matrix, gene, names_to = 'feature', values_to = 'expr')
-```
 
-    ## Note: Using an external vector in selections is ambiguous.
-    ## ℹ Use `all_of(gene)` instead of `gene` to silence this message.
-    ## ℹ See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>.
-    ## This message is displayed once per session.
-
-``` r
 df$expr <- as.numeric(as.character(df$expr)) #Some of the columns changed to characters after `pivot_longer` for some reason.
 df$dpt <- as.numeric(as.character(df$dpt))
 df$Pseudotime <- as.numeric(as.character(df$Pseudotime))
@@ -388,22 +258,13 @@ adequate since not all cells start at time 0. In other words, they are
 not in synchrony. Ordering cells by pseudotime should resolve this and
 enable a measurement of biological progression regardless if cells are
 in different cell states.
-
 ``` r
 require(ggplot2)
 p <- ggplot(df, mapping = aes(x=Time, y=expr, color=Hours)) + geom_jitter(size=2) + theme_classic() + xlab('DPT') + ylab('Expression') + theme(plot.title = element_text(size=16, hjust =  0.5, face = 'bold'), strip.text = element_text(size=12, face = 'bold') ,strip.background = element_rect(size = 0)) + guides(color = guide_legend(override.aes = list(linetype = 'blank'))) + scale_y_log10() + facet_wrap(~feature,scales = "free_y") 
 p + stat_summary(fun.y=mean, colour="black", geom="line", size = 1)
 ```
 
-    ## Warning: `fun.y` is deprecated. Use `fun` instead.
-
-    ## Warning: Transformation introduced infinite values in continuous y-axis
-
-    ## Warning: Transformation introduced infinite values in continuous y-axis
-
-    ## Warning: Removed 708 rows containing non-finite values (stat_summary).
-
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-14-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-14-1.png)
 
 Here the cells are ordered by `dpt` and we can observe the expected gene
 expression trends.
@@ -413,15 +274,7 @@ p <- ggplot(df, mapping = aes(x=dpt, y=expr, color=Hours)) + geom_jitter(size=2)
 p + geom_smooth(aes(color = expr), method = 'gam', se=F, color = 'black')
 ```
 
-    ## Warning: Transformation introduced infinite values in continuous y-axis
-
-    ## Warning: Transformation introduced infinite values in continuous y-axis
-
-    ## `geom_smooth()` using formula 'y ~ s(x, bs = "cs")'
-
-    ## Warning: Removed 708 rows containing non-finite values (stat_smooth).
-
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
 Likewise, we can look at the original `Pseudotime` and observe fairly
 the same gene expression trends.
@@ -431,15 +284,7 @@ p <- ggplot(df, mapping = aes(x=Pseudotime, y=expr, color=Hours)) + geom_jitter(
 p + geom_smooth(aes(color = expr), method = 'gam', se=F, color = 'black')
 ```
 
-    ## Warning: Transformation introduced infinite values in continuous y-axis
-
-    ## Warning: Transformation introduced infinite values in continuous y-axis
-
-    ## `geom_smooth()` using formula 'y ~ s(x, bs = "cs")'
-
-    ## Warning: Removed 708 rows containing non-finite values (stat_smooth).
-
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-16-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-16-1.png)
 
 <h2>
 Identifying Temporally-regulated Genes/h2&gt;
@@ -450,17 +295,7 @@ changes in the the gene expression trend.
 
 ``` r
 require(gam)
-```
 
-    ## Loading required package: gam
-
-    ## Loading required package: splines
-
-    ## Loading required package: foreach
-
-    ## Loaded gam 1.16.1
-
-``` r
 t <- HSMM$dpt
 var1K <- names(sort(apply(matrix, 1, var),decreasing = TRUE))[1:100] #We select the top variable genes to speed up the calculations. You are more than welcome to use all genes. 
 matrix <- matrix[var1K, ] 
@@ -481,14 +316,7 @@ topgenes <- topgenes[topgenes<0.05] %>% names() #filter for p < 0.05
 expr_matrix <- as.data.frame(t(rbind(matrix[topgenes, , drop = FALSE], dpt = HSMM$dpt, Hours = as.character(HSMM$Hours))))
 
 df <- pivot_longer(expr_matrix, topgenes, names_to = 'feature', values_to = 'expr')
-```
 
-    ## Note: Using an external vector in selections is ambiguous.
-    ## ℹ Use `all_of(topgenes)` instead of `topgenes` to silence this message.
-    ## ℹ See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>.
-    ## This message is displayed once per session.
-
-``` r
 df$expr <- as.numeric(as.character(df$expr)) #Some of the columns changed to characters after `pivot_longer` for some reason.
 df$dpt <- as.numeric(as.character(df$dpt))
 
@@ -496,15 +324,7 @@ p <- ggplot(df, mapping = aes(x=dpt, y=expr, color=Hours)) + geom_jitter(size=2)
 p + geom_smooth(aes(color = expr), method = 'gam', se=F, color = 'black')
 ```
 
-    ## Warning: Transformation introduced infinite values in continuous y-axis
-
-    ## Warning: Transformation introduced infinite values in continuous y-axis
-
-    ## `geom_smooth()` using formula 'y ~ s(x, bs = "cs")'
-
-    ## Warning: Removed 1279 rows containing non-finite values (stat_smooth).
-
-![](Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-17-1.png)
 
 There are additional R libraries that I won’t demonstrate here but feel
 free to explore them. Descriptions are from their websites. More complex
