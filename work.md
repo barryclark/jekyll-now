@@ -13,15 +13,16 @@ permalink: /work/
 * Varieties of Reversible Regular languages<br/>
 Amaldev Manuel, **Dhruv Nevatia**<br/>
 *submitted*
-[[paper](link here)]
+[[PDF](link here)]
 <br/>
 
 
 ## Research internships and projects
+<hr>
 
 ### Ongoing
 
-><strong>An algebraic approach to the Universal automaton</strong><br><i>With Prof. [Thomas Colcombet](https://www.irif.fr/~colcombe/), Prof. [Daniela Petrisan](https://www.irif.fr/~petrisan/)</i><br>
+><strong>An algebraic approach to the Universal automaton</strong><br><i>Summer internship 2020 at IRIF, Paris with Prof. [Thomas Colcombet](https://www.irif.fr/~colcombe/), Prof. [Daniela Petrisan](https://www.irif.fr/~petrisan/)</i><br>
 >>The notion Universal automaton has been studied since the last 50 years. Though complex and large it has many interesting properties and is worth a more careful look. Our goal is to study this automaton in an algebraic perspective.
 <br>
 
@@ -33,13 +34,19 @@ Amaldev Manuel, **Dhruv Nevatia**<br/>
 <br>
 
 ### Past
+
 ><strong>Commutative Algebra</strong><br><i>Summer internship 2018 with Prof. R. Sridharan</i><br>
 >>This was a learning internship in which I studied the fundamentals of Commutative algebra from classic texts by Zariski and Samuel as well as Nathan Jacobson on the subject.
 
 <br>
 
-### Other projects
+### Course projects
 
+><strong>Perturbed timed automata</strong><br>*Timed automata under Prof. [B Srivathsan](https://www.cmi.ac.in/~sri/)*<br>
+>>Determinizability of one clock perturbed timed automata unlike non - perturbed. Gives a construction for the same extending to timed language inclusion decidability hence answering the problem of universality.
+
+><strong>Invariant Model Checking by K-Induction</strong><br>*Model checking and software verification under Prof. [Mandayam Srivas](https://www.cmi.ac.in/~mksrivas/)*<br>
+>>Implementation of invariant model checking algorithm by k-induction in z3.
 
 
 

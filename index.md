@@ -8,7 +8,7 @@ I am a first year graduate student at the [Chennai Mathematical Insitute, Chenna
 My research interests mainly include logic, algebra and automata theory.
 I am particularly interested in language theory, semigroup theory, automata theory include quantitative topics like weighted and timed automata, MSO logic, type theory and model checking. Recently I have also become fond of learning language theory and automata in a categorical perspective.
 
-I am currently an intern in IRIF, Paris (virtual) under the guidance of Prof. Thomas Colcombet and Prof. Daniela Petrisan.
+I am fortunate to be an intern in IRIF, Paris (virtual), currently working under the guidance of Prof. Thomas Colcombet and Prof. Daniela Petrisan.
 
 <hr style="border:1px solid gray">
 
