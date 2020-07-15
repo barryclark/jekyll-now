@@ -37,7 +37,7 @@ We plan events 6-12 months ahead, so unfortunately we can't add extra events to 
 
 As pizza and beer are more than any individual contribution, we order catering ourselves and thank all sponsors equally.
 
-#### Can we bring swag and a banner?
+#### Can we bring swag and a banner? (N/A for virtual events)
 
 You can display a banner inside the room, just bring it on the evening. Please ship swag to this address a week in advance and let us know when to expect arrival:
 
