@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Seurat  Guided Clustering Tutorial
+title: Seurat Guided Clustering Tutorial
 ---
 
 While the vignette on the Seurat website already provides good
