@@ -284,7 +284,7 @@ p + geom_smooth(aes(color = expr), method = 'gam', se=F, color = 'black')
 ![]({{ site.baseurl }}/images/Diffusion-Pseudotime_files/figure-markdown_github/unnamed-chunk-16-1.png)
 
 <h2>
-Identifying Temporally-regulated Genes</h2>
+Identifying Temporally Regulated Genes</h2>
 
 Let’s take it a step further and find significant genes that change with
 `dpt`. Here we employ a Generalized Additive Model to model non-linear
