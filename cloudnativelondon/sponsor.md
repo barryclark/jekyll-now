@@ -15,7 +15,7 @@ Company sizes range from startups to large enterprises, with fintech particularl
 
 * A 30 second introduction at the beginning of the event by your representative (or Cheryl or other host.)
 * Your logo and company information in emails to group members, blog posts and tweets
-* You are welcome to [send a speaker](/cloudnativelondon/speak), but please no sales pitches. Due to high demand, the next available speaking slot is end of 2020.
+* You are welcome to [send a speaker](/cloudnativelondon/speak), but please no sales pitches. Due to high demand, the next available speaking slot is mid-2021.
 * Sponsors who commit for at least twelve months are listed on [https://www.meetup.com/Cloud-Native-London​](https://www.meetup.com/Cloud-Native-London).
 
 Each sponsor contributes £600 (no VAT) per event.
@@ -37,7 +37,7 @@ We plan events 6-12 months ahead, so unfortunately we can't add extra events to 
 
 As pizza and beer are more than any individual contribution, we order catering ourselves and thank all sponsors equally.
 
-#### Can we bring swag and a banner?
+#### Can we bring swag and a banner? (N/A for virtual events)
 
 You can display a banner inside the room, just bring it on the evening. Please ship swag to this address a week in advance and let us know when to expect arrival:
 
