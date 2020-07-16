@@ -89,4 +89,4 @@ And this is how we can translate the ternary operator with two branches. However
 
 # Endnotes
 [^rust_void]: It can also return `()`, which is the Rust equivalent of a `void` value.
-[^cpp_uninitialized]: I have deliberately left out another option: We could try and declare a pointer to the variable without initializing it (we could default initialize variable itself) and then (re)assign to it afterwards in an `if` statement. This, for many reasons, is a very bad solution and I will discount it completely here.
+[^cpp_uninitialized]: I have deliberately left out another option: We could try and declare a pointer to the variable without initializing it (or we could default initialize variable itself) and then (re)assign to it afterwards in an `if` statement. This, for many reasons, is a very bad solution and I will discount it completely here.
