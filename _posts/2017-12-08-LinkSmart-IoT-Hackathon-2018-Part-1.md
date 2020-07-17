@@ -2,7 +2,7 @@ The goal of this Hackaton is to become familiar with several LinkSmart component
 
 In the following steps we will setup the  [DHT Adafruit Library](https://github.com/adafruit/Adafruit_Python_DHT)  and  [LinkSmart Device Gateway](https://docs.linksmart.eu/display/LSI/LinkSmart+Device+Connector)  on a Raspberry Pi 3 in order to read measurements from a  [DHT22](https://learn.adafruit.com/dht/overview)  sensor and publish them in  [SenML](https://tools.ietf.org/html/draft-jennings-senml-09)  format to a MQTT broker.
 
-## 1) Setup the DHT Library
+## Setup the DHT Library
 
 ### 1.  Install the latest stable Docker for debian-stretch (armhf).
 1.  Follow the instructions  **[here](https://docs.docker.com/engine/installation/linux/docker-ce/debian/#install-using-the-repository)** (Tip: stretch>jessy>wheezy). _Too lazy to follow instructions? Skip to step c._
@@ -36,7 +36,7 @@ The SenML output should be similar to:
 **If you didn't get an output similar to that, go back and figure out what went wrong.**
     
 
-## 2) Deploy Device Gateway
+## Deploy Device Gateway
 
 In the following steps, we will use these placeholders:
 
@@ -143,7 +143,7 @@ Refer to  [docker run reference](https://docs.docker.com/engine/reference/run/) 
 
   
 
-## 3) Try it out
+## Try it out
 
 -   Subscribe to the correct topic at the broker with the endpoint configured in DGW configuration.
 -   Get latest measurement from the REST endpoint. The path comes from the names in device agent configuration. e.g.  `curl [http://localhost:8080/rest/dht22/measurements](http://localhost:8080/rest/dht22/measurements)`
