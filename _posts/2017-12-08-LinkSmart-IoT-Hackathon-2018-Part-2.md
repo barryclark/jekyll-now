@@ -273,3 +273,5 @@ Ideas for the Hackaton 2018 - Part 3:
   
 
 [Continue with other hackathons](https://docs.linksmart.eu/display/HOME/LinkSmart+Hackathon+Organization)
+
+_By Farshid Tavakolizadeh._
