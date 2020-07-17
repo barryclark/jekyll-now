@@ -46,7 +46,8 @@ In the following steps, we will use these placeholders:
 
 We'll use the DHT library container (from previous step) to run Device Gateway. The goal is to execute the Python script that reads the measurements and expose the SenML output over networking protocols.
 
-### 1.  Download Device Gateway (`device-gateway-linux-arm`) and make it executable. Deployment instructions on wiki: [https://docs.linksmart.eu/display/DGW](https://docs.linksmart.eu/display/DGW).
+### 1.  Download Device Gateway
+Download `device-gateway-linux-arm` and make it executable. Deployment instructions on wiki: [https://docs.linksmart.eu/display/DGW](https://docs.linksmart.eu/display/DGW).
     
 ### 2.  Configure Device Gateway:  
       
