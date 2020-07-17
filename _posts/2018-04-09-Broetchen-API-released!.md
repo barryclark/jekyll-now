@@ -1,7 +1,7 @@
 
-The LinkSmart team is proud to announce Broetchen API. Major releases are maintained to ensure that the involved services are interoperable, well documented and ready to use. Services of a major release work standalone but can also be integrated into a consistent LinkSmart® platform deployment.
+The LinkSmart team is proud to announce Broetchen API. Major releases are maintained to ensure that the involved services are interoperable, well documented and ready to use. Services of a major release work standalone but can also be integrated into a consistent LinkSmart platform deployment.
 
-Broetchen API is the first major release of next generation LinkSmart®. It includes the basic services for setting up device abstraction, service provisioning, time-series data storage and stream mining/learning functionalities. Broetchen API works seamlessly with the  [SenML](https://tools.ietf.org/html/draft-jennings-senml-10)  data model.
+Broetchen API is the first major release of next generation LinkSmart. It includes the basic services for setting up device abstraction, service provisioning, time-series data storage and stream mining/learning functionalities. Broetchen API works seamlessly with the  [SenML](https://tools.ietf.org/html/draft-jennings-senml-10)  data model.
 
 ![components](https://raw.githubusercontent.com/linksmart/blog/master/_posts/resources/2018-04-09-Broetchen-API-released-components.png)
 
