@@ -1,9 +1,9 @@
 
-In [LinkSmart IoT Hackathon 2018 - Part 1](https://docs.linksmart.eu/display/HOME/2017/12/08/LinkSmart+IoT+Hackathon+2018+-+Part+1), we setup the [LinkSmart® Device Gateway](https://docs.linksmart.eu/display/DGW)  to collect temperature and humidity data from a DHT22 sensor on a Raspberry Pi. The collected data was exposed over a RESTful API and published periodically to a MQTT broker.
+In [LinkSmart IoT Hackathon 2018 - Part 1](https://docs.linksmart.eu/display/HOME/2017/12/08/LinkSmart+IoT+Hackathon+2018+-+Part+1), we setup the [LinkSmart Device Gateway](https://docs.linksmart.eu/display/DGW)  to collect temperature and humidity data from a DHT22 sensor on a Raspberry Pi. The collected data was exposed over a RESTful API and published periodically to a MQTT broker.
 
 In the second part of the hackaton, you will perform the following on your personal computer (x84 architecture):
 
--   Setup [LinkSmart® Historical Datastore](https://docs.linksmart.eu/display/HDS) and configure it to store and aggregate the data being published to the MQTT broker
+-   Setup [LinkSmart Historical Datastore](https://docs.linksmart.eu/display/HDS) and configure it to store and aggregate the data being published to the MQTT broker
 -   Setup Grafana and [Grafana Datasource Plugin for Historical Datastore](https://docs.linksmart.eu/display/HDS/Grafana+Datasource+Plugin+for+Historical+Datastore)  to visualize temperature and humidity data
 
   
