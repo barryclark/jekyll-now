@@ -54,4 +54,5 @@ Broetchen API is the first major release of next generation LinkSmart. It includ
     -   IO API.
 -   The Statement and CEML APIs are CRUD and JSON based, while the IO are write-only (for Input) or read-only (for Output). The APIs are implemented as HTTPS RESTful and MQTT.
 
-_By Marco Jahn._
+---
+_By Marco Jahn_
