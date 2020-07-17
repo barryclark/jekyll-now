@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This blog contains latest news and tech articles by LinkSmart.
+This blog contains latest news, releases and tech articles by LinkSmart.
 
 ### More Information
 
