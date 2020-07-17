@@ -128,4 +128,4 @@ The agent is also able to send e-mails. Create a statement like this (ask [Janni
 [Continue with other hackathons](https://docs.linksmart.eu/display/HOME/LinkSmart+Hackathon+Organization)
 
 ---
-_By Jannis Warnat._
+_By Jannis Warnat_
