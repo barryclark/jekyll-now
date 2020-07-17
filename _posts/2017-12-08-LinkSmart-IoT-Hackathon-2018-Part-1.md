@@ -9,22 +9,27 @@ In the following steps we will setup the  [DHT Adafruit Library](https://github.
 2.  Optional: [Post-installation (Manage Docker as a non-root user)](https://docs.docker.com/engine/installation/linux/linux-postinstall/#manage-docker-as-a-non-root-user), so that docker commands run without  `sudo`. 
 
 ### 2.  Create and enter the directory structure
-    
-    `mkdir`  `-p` `/home/pi/dgw`
-    
-    `cd`  `/home/pi/dgw`
+```bash
+mkdir -p /home/pi/dgw
+cd /home/pi/dgw
+```
     
 ### 3.  Download Adafruit_DHT_SenML.py. This script reads temperature and humidity values from a DHT sensor and prints the measurements in SenML format. (You need appropriate drivers to run it)
-    
-    `wget https:``//code``.linksmart.eu``/projects/LS/repos/linksmart-iot-hackatons/raw/iot-hackaton-2018-part1/Adafruit_DHT_SenML``.py`
+```bash
+wget https://code.linksmart.eu/projects/LS/repos/linksmart-iot-hackatons/raw/iot-hackaton-2018-part1/Adafruit_DHT_SenML.py
+```
     
 ### 4.  Use the following command to download an image with DHT drivers and runs it once. The command tries to read from a  `DHT22`  sensor with data pin connected to  `GPIO 4` and SenML basename  `bn/`. Remove these arguments to see usage instructions.
     
-    `docker run --privileged -``v`  `$(``pwd``):``/home`  `--entrypoint=python --``rm`  `farshidtz``/adafruit_dht`  `Adafruit_DHT_SenML.py 22 4 bn/`
+```bash
+docker run --privileged -v $(pwd):/home --entrypoint=python --rm farshidtz/adafruit_dht Adafruit_DHT_SenML.py 22 4 bn/
+```
     
     The SenML output should be similar to:
     
-    `{``"bn"``:` `"basename/"``,` `"e"``: [{``"v"``: 21.0,` `"u"``:` `"Cel"``,` `"t"``: 1514631068,` `"n"``:` `"Temperature"``}, {``"v"``: 21.0,` `"u"``:` `"%RH"``,` `"t"``: 1514631068,` `"n"``:` `"Humidity"``}]}`
+```json
+{"bn": "basename/", "e": [{"v": 21.0, "u": "Cel", "t": 1514631068, "n": "Temperature"}, {"v": 21.0, "u": "%RH", "t": 1514631068, "n": "Humidity"}]}
+```
     
     **If you didn't get an output similar to that, go back and figure out what went wrong.**
     
@@ -39,145 +44,98 @@ In the following steps, we will use these placeholders:
 
 We'll use the DHT library container (from previous step) to run Device Gateway. The goal is to execute the Python script that reads the measurements and expose the SenML output over networking protocols.
 
-1.  Download Device Gateway (`device-gateway-linux-arm`) and make it executable. Deployment instructions on wiki: [https://docs.linksmart.eu/display/DGW](https://docs.linksmart.eu/display/DGW).
+### 1.  Download Device Gateway (`device-gateway-linux-arm`) and make it executable. Deployment instructions on wiki: [https://docs.linksmart.eu/display/DGW](https://docs.linksmart.eu/display/DGW).
     
-2.  Configure Device Gateway:  
+### 2.  Configure Device Gateway:  
       
     
     1.  Configure the DGW service. Modify (replace  <device-name> with the device name e.g. linksmart-cyan and  <mqtt-broker-uri> with the broker endpoint) and place in `/home/pi/dgw/conf/device-gateway.json`
         
-        `{`
-        
-        `"id"``:` `""``,`
-        
-        `"description"``:` `"Example Gateway"``,`
-        
-        `"publicEndpoint"``:` `"[http://fqdn-of-the-host:8080](http://fqdn-of-the-host:8080/)"``,`
-        
-        `"http"``: {`
-        
-        `"bindAddr"``:` `"0.0.0.0"``,`
-        
-        `"bindPort"``: 8080`
-        
-        `},`
-        
-        `"protocols"``: {`
-        
-        `"REST"``: {`
-        
-        `"location"``:` `"/rest"`
-        
-        `},`
-        
-        `"MQTT"``: {`
-        
-        `"url"``:` `"<mqtt-broker-uri>"``,`
-        
-        `"prefix"``:` `"<device-name>-dgw-"``,`
-        
-        `"offlineBuffer"``: 10000`
-        
-        `}`
-        
-        `}`
-        
-        `}`
+```json
+{
+  "id": "",
+  "description": "Example Gateway",
+  "publicEndpoint": "http://fqdn-of-the-host:8080",
+  "http": {
+    "bindAddr": "0.0.0.0",
+    "bindPort": 8080
+  },
+  "protocols": {
+    "REST": {
+      "location": "/rest"
+    },
+    "MQTT": {
+      "url": "<mqtt-broker-uri>",
+      "prefix": "<device-name>-dgw-",
+      "offlineBuffer": 10000
+    }
+  }
+}
+```
         
     2.  Configure the device agent. Modify (replace  <device-name>s with the device hostname, e.g. linksmart-cyan) and place in `/home/pi/dgw/conf/devices/dht22.json  
         `
         
         With the following configuration, Device Gateway executes the Python script every 120 seconds and exposes the resulting data over two protocols:
         
-        1.  MQTT: Publishes the sensor data to the given topic. The MQTT broker was configured  in step a.
+        i.  MQTT: Publishes the sensor data to the given topic. The MQTT broker was configured  in step a.
             
-        2.  REST: Exposes a REST endpoint to GET the latest collected data. The HTTP server was configured in the  step a.  E.g for getting data: `curl http://<hostname>:8080/rest/dht22/measurements`
+        ii.  REST: Exposes a REST endpoint to GET the latest collected data. The HTTP server was configured in the  step a.  E.g for getting data: `curl http://<hostname>:8080/rest/dht22/measurements`
         
-        `{`
-        
-        `"name"``:` `"dht22"``,`
-        
-        `"description"``:` `"This sensor measures Temperature and Humidity."``,`
-        
-        `"resources"``: [`
-        
-        `{`
-        
-        `"type"``:` `"Resource"``,`
-        
-        `"name"``:` `"measurements"``,`
-        
-        `"agent"``: {`
-        
-        `"type"``:` `"timer"``,`
-        
-        `"interval"``: 120,`
-        
-        `"dir"``:` `null``,`
-        
-        `"exec"``:` `"python /home/dgw/Adafruit_DHT_SenML.py 22 4 <device-name>/"`
-        
-        `},`
-        
-        `"protocols"``: [`
-        
-        `{`
-        
-        `"type"``:` `"MQTT"``,`
-        
-        `"methods"``: [`
-        
-        `"PUB"`
-        
-        `],`
-        
-        `"pub_topic"``:` `"LS/v2/DGW/<device-name>/senml"`
-        
-        `},`
-        
-        `{`
-        
-        `"type"``:` `"REST"``,`
-        
-        `"methods"``: [`
-        
-        `"GET"`
-        
-        `],`
-        
-        `"content-types"``: [`
-        
-        `"application/senml+json"`
-        
-        `]`
-        
-        `}`
-        
-        `]`
-        
-        `}`
-        
-        `]`
-        
-        `}`
+```json
+{
+  "name": "dht22",
+  "description": "This sensor measures Temperature and Humidity.",
+  "resources": [
+    {
+      "type": "Resource",
+      "name": "measurements",
+      "agent": {
+        "type": "timer",
+        "interval": 120,
+        "dir": null,
+        "exec": "python /home/dgw/Adafruit_DHT_SenML.py 22 4 <device-name>/"
+      },
+      "protocols": [
+        {
+          "type": "MQTT",
+          "methods": [
+                "PUB"
+          ],
+          "pub_topic": "LS/v2/DGW/<device-name>/senml"
+        },
+        {
+          "type": "REST",
+          "methods": [
+            "GET"
+          ],
+          "content-types": [
+            "application/senml+json"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
         
     
       
     
-3.  Run the container:
+### 3.  Run the container:
     
     It should be in  [priviledged](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities)  mode in order to access Raspberry Pi GPIO.
     
-    `cd /home/pi/dgw`
-    
-    `docker run --privileged -v $(pwd):/home/dgw --entrypoint=/home/dgw/device-gateway-linux-arm --rm farshidtz/adafruit_dht --conf /home/dgw/conf/device-gateway.json`
-    
-
-  
+```bash
+cd /home/pi/dgw
+docker run --privileged -v $(pwd):/home/dgw --entrypoint=/home/dgw/device-gateway-linux-arm --rm farshidtz/adafruit_dht --conf /home/dgw/conf/device-gateway.json
+```
 
 **If there were no errors**, make a container that starts after boot and runs in detached mode (background):
 
-`docker run --privileged -v $(pwd):/home/dgw --entrypoint=/home/dgw/device-gateway-linux-arm -p 8080:8080 --name dgw_dht --restart=unless-stopped --log-opt max-size=10m -d farshidtz/adafruit_dht --conf /home/dgw/conf/device-gateway.json`
+```bash
+docker run --privileged -v $(pwd):/home/dgw --entrypoint=/home/dgw/device-gateway-linux-arm -p 8080:8080 --name dgw_dht --restart=unless-stopped --log-opt max-size=10m -d farshidtz/adafruit_dht --conf /home/dgw/conf/device-gateway.json
+```
 
 Refer to  [docker run reference](https://docs.docker.com/engine/reference/run/)  to understand the given arguments.
 
