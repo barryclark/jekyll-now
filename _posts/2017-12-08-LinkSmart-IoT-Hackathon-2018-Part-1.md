@@ -14,24 +14,26 @@ mkdir -p /home/pi/dgw
 cd /home/pi/dgw
 ```
     
-### 3.  Download Adafruit_DHT_SenML.py. This script reads temperature and humidity values from a DHT sensor and prints the measurements in SenML format. (You need appropriate drivers to run it)
+### 3.  Download Adafruit_DHT_SenML.py.
+This script reads temperature and humidity values from a DHT sensor and prints the measurements in SenML format. (You need appropriate drivers to run it)
 ```bash
 wget https://code.linksmart.eu/projects/LS/repos/linksmart-iot-hackatons/raw/iot-hackaton-2018-part1/Adafruit_DHT_SenML.py
 ```
     
-### 4.  Use the following command to download an image with DHT drivers and runs it once. The command tries to read from a  `DHT22`  sensor with data pin connected to  `GPIO 4` and SenML basename  `bn/`. Remove these arguments to see usage instructions.
+### 4.  Download an image with DHT drivers and runs it once.
+The command tries to read from a  `DHT22`  sensor with data pin connected to  `GPIO 4` and SenML basename  `bn/`. Remove these arguments to see usage instructions.
     
 ```bash
 docker run --privileged -v $(pwd):/home --entrypoint=python --rm farshidtz/adafruit_dht Adafruit_DHT_SenML.py 22 4 bn/
 ```
     
-    The SenML output should be similar to:
+The SenML output should be similar to:
     
 ```json
 {"bn": "basename/", "e": [{"v": 21.0, "u": "Cel", "t": 1514631068, "n": "Temperature"}, {"v": 21.0, "u": "%RH", "t": 1514631068, "n": "Humidity"}]}
 ```
     
-    **If you didn't get an output similar to that, go back and figure out what went wrong.**
+**If you didn't get an output similar to that, go back and figure out what went wrong.**
     
 
 ## 2) Deploy Device Gateway
@@ -49,7 +51,7 @@ We'll use the DHT library container (from previous step) to run Device Gateway. 
 ### 2.  Configure Device Gateway:  
       
     
-    1.  Configure the DGW service. Modify (replace  <device-name> with the device name e.g. linksmart-cyan and  <mqtt-broker-uri> with the broker endpoint) and place in `/home/pi/dgw/conf/device-gateway.json`
+1.  Configure the DGW service. Modify (replace  <device-name> with the device name e.g. linksmart-cyan and  <mqtt-broker-uri> with the broker endpoint) and place in `/home/pi/dgw/conf/device-gateway.json`
         
 ```json
 {
@@ -73,14 +75,14 @@ We'll use the DHT library container (from previous step) to run Device Gateway. 
 }
 ```
         
-    2.  Configure the device agent. Modify (replace  <device-name>s with the device hostname, e.g. linksmart-cyan) and place in `/home/pi/dgw/conf/devices/dht22.json  
-        `
+2.  Configure the device agent. 
+Modify (replace  <device-name>s with the device hostname, e.g. linksmart-cyan) and place in `/home/pi/dgw/conf/devices/dht22.json`
+
+With the following configuration, Device Gateway executes the Python script every 120 seconds and exposes the resulting data over two protocols:
         
-        With the following configuration, Device Gateway executes the Python script every 120 seconds and exposes the resulting data over two protocols:
-        
-        i.  MQTT: Publishes the sensor data to the given topic. The MQTT broker was configured  in step a.
+* MQTT: Publishes the sensor data to the given topic. The MQTT broker was configured  in step a.
             
-        ii.  REST: Exposes a REST endpoint to GET the latest collected data. The HTTP server was configured in the  step a.  E.g for getting data: `curl http://<hostname>:8080/rest/dht22/measurements`
+* REST: Exposes a REST endpoint to GET the latest collected data. The HTTP server was configured in the  step a.  E.g for getting data: `curl http://<hostname>:8080/rest/dht22/measurements`
         
 ```json
 {
@@ -124,7 +126,7 @@ We'll use the DHT library container (from previous step) to run Device Gateway. 
     
 ### 3.  Run the container:
     
-    It should be in  [priviledged](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities)  mode in order to access Raspberry Pi GPIO.
+It should be in  [priviledged](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities)  mode in order to access Raspberry Pi GPIO.
     
 ```bash
 cd /home/pi/dgw
