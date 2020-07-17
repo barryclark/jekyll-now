@@ -152,3 +152,5 @@ Refer to  [docker run reference](https://docs.docker.com/engine/reference/run/) 
   
 
 [Continue with other hackathons](https://docs.linksmart.eu/display/HOME/LinkSmart+Hackathon+Organization)
+
+_Written by Farshid Tavakolizadeh_
