@@ -147,10 +147,10 @@ Refer to  [docker run reference](https://docs.docker.com/engine/reference/run/) 
 ## Try it out
 
 -   Subscribe to the correct topic at the broker with the endpoint configured in DGW configuration.
--   Get latest measurement from the REST endpoint. The path comes from the names in device agent configuration. e.g.  `curl [http://localhost:8080/rest/dht22/measurements](http://localhost:8080/rest/dht22/measurements)`
+-   Get latest measurement from the REST endpoint. The path comes from the names in device agent configuration. e.g.  [http://localhost:8080/rest/dht22/measurements](http://localhost:8080/rest/dht22/measurements)
 
   
 
 [Continue with other hackathons](https://docs.linksmart.eu/display/HOME/LinkSmart+Hackathon+Organization)
 
-_Written by Farshid Tavakolizadeh_
+_By Farshid Tavakolizadeh_
