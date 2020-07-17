@@ -253,3 +253,23 @@ GET [http://localhost:8085/aggr/b0b39eb0/99e60acc-0683-40fc-9b83-408d89727b0c](h
 ```
 
 ## Grafana - deployment, plugin configuration, usage
+1.  Follow the documentation: [Grafana Datasource Plugin for Historical Datastore](https://docs.linksmart.eu/display/HDS/Grafana+Datasource+Plugin+for+Historical+Datastore)  
+    1.  Plugin Configuration  
+        ![](https://raw.githubusercontent.com/linksmart/blog/master/_posts/resources/2017-12-08-LinkSmart-IoT-Hackathon-2018-Part-2/grafana-config.png)
+    2.  Dashboard / Metrics configuration  
+        ![](https://raw.githubusercontent.com/linksmart/blog/master/_posts/resources/2017-12-08-LinkSmart-IoT-Hackathon-2018-Part-2/grafana-metric-config.png)
+2.  Show Temperature data in Table, Gauge (Singlestat), and Graph  
+      
+    ![](https://raw.githubusercontent.com/linksmart/blog/master/_posts/resources/2017-12-08-LinkSmart-IoT-Hackathon-2018-Part-2/grafana-panel.png)
+
+  
+---
+Ideas for the Hackaton 2018 - Part 3:
+
+-   Setup [LinkSmart Service Catalog](https://docs.linksmart.eu/display/SC) to register the address of the broker and all gateways
+-   Modify the configuration of [LinkSmart Device Gateway](https://docs.linksmart.eu/display/DGW) to discovery broker address and advertise its service information
+-   Extend HDS so that it can discover the broker address
+
+  
+
+[Continue with other hackathons](https://docs.linksmart.eu/display/HOME/LinkSmart+Hackathon+Organization)
