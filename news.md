@@ -3,12 +3,11 @@ layout: page
 title: News
 permalink: /news/
 ---
-
 ## 2019
 
 __November__
  - Presented a poster, “Elucidating how the tumor microenvironment dysregulates Ewing’s sarcoma cell stemness using a scRNA-seq-based differentiation signature," at FusOncC2 in Washington, D.C.
- - Presented current research updates to the Moeller Foundation
+ - Presented research updates to the Moeller Foundation
  
 __April__
  - Research highlighted in _Full Circle_ article titled, ["ASU RESEARCHERS CHIP AWAY THE MYSTERIES OF CANCER METASTASIS"](https://fullcircle.asu.edu/research/asu-researchers-chip-away-mysteries-cancer-metastasis/)
