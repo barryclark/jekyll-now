@@ -288,7 +288,7 @@ Identifying Temporally Regulated Genes</h2>
 
 Let’s take it a step further and find significant genes that change with
 `dpt`. Here we employ a Generalized Additive Model to model non-linear
-changes in the the gene expression trend.
+changes in the gene expression trend.
 
 ``` r
 require(gam)
