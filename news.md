@@ -19,6 +19,9 @@ __December__
  - Featured in [Full Circle](https://fullcircle.asu.edu/graduate/danh-truong/)
  - Graduated from ASU with PhD in Biomedical Engineering with thesis titled _Microfluidic Models of Tumor-Stroma Interactions to Study the Interplay of Cancer Cells with their Surrounding Microenvironment_ and is available through the [ASU Library | Digital Repository](https://repository.asu.edu/items/54067).
 
+__November__
+ - Featured in [The Graduate Insider](https://graduate.asu.edu/newsletter/making-impact/arcs-fellowships-graduate-college-hosts-recognition-event)
+
 __October__
  - Presented an oral presentation, “Gene-expression Profiling of Patient-Derived Fibroblast and Breast Cancer Interactions in a Three-Dimensional (3D) Organotypic Microfluidic Platform," at BMES in Atlanta,GA
 
