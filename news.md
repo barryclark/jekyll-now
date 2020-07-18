@@ -29,6 +29,9 @@ __November__
 
 __October__
  - Presented an oral presentation, “Gene-expression Profiling of Patient-Derived Fibroblast and Breast Cancer Interactions in a Three-Dimensional (3D) Organotypic Microfluidic Platform," at BMES in Atlanta,GA
+ 
+__June__
+ - Patent application US10017724B2 granted. 
 
 __May__
  - Research highlighted in _NAVS_ article titled, ["FDA identifies areas of need for non-animal alternatives"](https://www.navs.org/fda-identifies-areas-of-need-for-non-animal-alternatives/#.XxNrUC2ZN24)
@@ -49,6 +52,9 @@ __January__
  - Awarded the Graduate College Fellowship
 
 ## 2017
+
+__November__
+ - Patent Application US20180052151A1 filed under [Nikkhah, M., & Truong, D. (2018). U.S. Patent Application No. 15/730,335.](https://patents.google.com/patent/US20180052151A1/en)
 
 __October__
  - Awarded the International Foundation for Ethical Research (IFER) Graduate Fellowship
@@ -93,6 +99,7 @@ __January__
 __October__
  - Received SBHSE Block Funding to travel to Tampa, FL for BMES
  - Presented a poster, “Microengineered Breast Cancer Invasion Platform,” at BMES
+ - Patent application US10017724B2 filed under [Nikkhah, M., Kamm, R. D., & Truong, D. (2018). U.S. Patent No. 10,017,724. Washington, DC: U.S. Patent and Trademark Office.](https://patents.google.com/patent/US10017724B2/en)
 
 ## 2014
 
