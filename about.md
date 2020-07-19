@@ -56,15 +56,15 @@ AICVS is a club for artificial intelligence and machine learning enthusiasts, we
       
 5. **Head of Website & Content -Shreya Pawaskar**
 
-  **Team**- 
+    **Team**- 
  
-   * Ira Satvalekar
+      * Ira Satvalekar
 
-   * Eshika Dabhade 
+      * Eshika Dabhade 
 
-   * Anaya Garde 
+      * Anaya Garde 
 
-   * Shreya Hardas
+      * Shreya Hardas
 
 
 ### Contact me
