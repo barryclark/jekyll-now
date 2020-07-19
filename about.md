@@ -23,7 +23,6 @@ AICVS is a club for artificial intelligence and machine learning enthusiasts, we
 * Rutvika Patil 
     
 * Purva Kane
-
 3. **Head of Projects & Internships - Krutika Kulkarni**
 
       **Team**-
@@ -35,7 +34,6 @@ AICVS is a club for artificial intelligence and machine learning enthusiasts, we
 * Riya Kulkarni 
 
  * Bhagyashri Sangtani
-
 4. **Head of Public Relations & Sponsorship - Sai Ghule**
 
     **Team**- 
@@ -53,8 +51,6 @@ AICVS is a club for artificial intelligence and machine learning enthusiasts, we
  * Anshika Dubey
         
 * Payal Mehta
-
-
 5. **Head of Website & Content -Shreya Pawaskar**
 
   **Team**- 
