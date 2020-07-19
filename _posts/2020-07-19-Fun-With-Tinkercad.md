@@ -11,7 +11,7 @@ Unfortunately, I took the course from September to January (2019 to 2020) and no
 
 I thought I would try using Tinkercad’s circuit simulator for a little extra practice, and then this happened: 
 
-![Tinkercad is easy to use on iPads.]({{site.baseurl}}/images/6F727927-546C-461A-8282-831E26FA40EF.jpeg "LED Circuit")
+![Tinkercad is easy to use on iPads.]({{site.baseurl}}/images/3082886E-84FC-48DD-8F95-DF2531EBFEA4.jpeg "LED Circuit")
 
 As you can see, the LED (red one) up top is lighting up, but not the one on the bottom (the green one). I thought I had it rigged up all right, but on an iPad it seems impossible to actually push a pushbutton, so it wouldn’t light up. Go figure. 
 
