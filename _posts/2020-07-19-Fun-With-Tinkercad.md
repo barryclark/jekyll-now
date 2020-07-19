@@ -17,4 +17,4 @@ As you can see, the LED (red one) up top is lighting up, but not the one on the 
 
 Unless I’ve done something wrong with the circuit, which would be just embarrassing… 
 
-This week’s book inspiration is Siddhartha Mukherjee’s The Emperor of All Maladies. I never thought you could get so much information about cancer in one place. 
+This week’s book inspiration is Siddhartha Mukherjee’s _The Emperor of All Maladies_. I never thought you could get so much information about cancer in one place. 
