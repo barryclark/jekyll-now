@@ -67,6 +67,6 @@ AICVS is a club for artificial intelligence and machine learning enthusiasts, we
       * Shreya Hardas
 
 
-### Contact me
+### Contact Us:
 
-[aicvs.cummins@cumminscollege.in](mailto:aicvs.cummins@cumminscollege.in)
+EMAIL : [aicvs.cummins@cumminscollege.in](mailto:aicvs.cummins@cumminscollege.in)
