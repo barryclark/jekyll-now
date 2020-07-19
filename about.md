@@ -9,63 +9,65 @@ AICVS is a club for artificial intelligence and machine learning enthusiasts, we
 ### TEAM 2020-2021
 
 1. **Head Coordinator - Esha Chaugule**  
+
 2. **Head of Research & Development - Radhika Sethi**
 
     **Team**-
 
-* Reena Prasad
+    * Reena Prasad
 
-* Pranjal Shinde 
+    * Pranjal Shinde 
 
-* Shreya Mandal
+    * Shreya Mandal
 
-* Rutvika Patil 
-
-* Purva Kane
+    * Rutvika Patil 
+    
+    * Purva Kane
 
 3. **Head of Projects & Internships - Krutika Kulkarni**
 
     **Team**-
 
-* Reena Prasad
+    * Reena Prasad
 
-* Vibavari G
+    * Vibavari G
 
-* Mahima Malakwade 
+    * Mahima Malakwade 
 
-* Riya Kulkarni 
+    * Riya Kulkarni 
 
-* Bhagyashri Sangtani
+    * Bhagyashri Sangtani
 
 4. **Head of Public Relations & Sponsorship - Sai Ghule**
 
     **Team**- 
 
-* Gauri Gajanan Amin
+    * Gauri Gajanan Amin
 
-* Sakshi Nalawade
+    * Sakshi Nalawade
 
-* Bhakti Chinde
+    * Bhakti Chinde
 
-* Akshat Naoghore
+    * Akshat Naoghore
 
-* Shriya Bhat
+    * Shriya Bhat
 
-* Anshika Dubey
+    * Anshika Dubey
 
-* Payal Mehta
+    * Payal Mehta
 
 
 5. **Head of Website & Content -Shreya Pawaskar**
-   **Team**- 
+
+    **Team**- 
    
-* Ira Satvalekar  
+    * Ira Satvalekar  
 
-* Eshika Dabhade
+    * Eshika Dabhade
 
-* Anaya Garde
+    * Anaya Garde
 
-* Shreya Hardas
+    * Shreya Hardas
 
 
 ### Contact me
