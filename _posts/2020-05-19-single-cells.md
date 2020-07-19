@@ -27,6 +27,8 @@ Below are some publications, tutorials, and workshops that I found helpful.
 
 ## Workshops
 
+- [BioC 2020: Where Software and Biology Connect](https://bioc2020.bioconductor.org/workshops) - Added 2020/07/19. Over 20 workshops related to single-cell analysis. 
+
 - [Orchestrating Single-Cell Analysis with Bioconductor](https://scrnaseq-course.cog.sanger.ac.uk/website/index.html) - This is a very in-depth and comprehensive workshop for single-cell RNA-seq analysis in R using packages from Bioconductor. I have not yet gone through it because I saw it today and it was posted online 2 days ago.
 
 - [ANALYSIS OF SINGLE CELL RNA-SEQ DATA](https://broadinstitute.github.io/2019_scWorkshop/) - This workshop may be a bit outdated now but it runs through the entire workflow of single-cell RNA-seq processing and analysis. I found it incredibly useful as not only does it provide many alternate methods for processing, this workshop also includes the code to run the different packages too. 
