@@ -8,7 +8,7 @@ tags:
   - "2020"
 ---
 
-After my [promotion to VP](https://www.cncf.io/blog/2020/07/08/deepening-end-user-engagement-with-an-enhanced-ecosystem-program/), I'm hiring for an Ecosystem Advocate to join my team at CNCF!
+[Following my promotion to VP](https://www.cncf.io/blog/2020/07/08/deepening-end-user-engagement-with-an-enhanced-ecosystem-program/), I'm hiring for an Ecosystem Advocate to join my team at CNCF!
 
 The CNCF End User Community is a crucial pillar of CNCF. Members share best practices, suggest new CNCF projects, and support the community to remain vendor-neutral. The CNCF End User Community grew by 90% over 2019 and now consists of nearly 150 members. Having fostered the end user ecosystem over the last two years, I’m proud to say that as a result, CNCF enjoys the [largest end user community of any open source foundation or standards body](https://www.cncf.io/blog/2020/07/08/deepening-end-user-engagement-with-an-enhanced-ecosystem-program/).
 
