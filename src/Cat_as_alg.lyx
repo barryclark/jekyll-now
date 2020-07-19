@@ -9,6 +9,7 @@
 \usepackage{graphics,graphicx}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
+\usepackage{knowledge}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -168,7 +169,15 @@ The notes are heavily based on the article
 Categories as Algebra : An essential ingredient in the theory of monoids
  
 \emph default
-by Bret Tilson.
+by Bret Tilson (see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tilson1987categories"
+literal "false"
+
+\end_inset
+
+).
  Since these notes were initially intended for personal use only, definitions
  as well as proofs of many lemmas have been omitted (because they were quite
  natural).
@@ -216,11 +225,11 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Part
+\begin_layout Section
 Categories and Division
 \begin_inset CommandInset label
 LatexCommand label
-name "part:Part-1"
+name "sec:Categories-and-Division"
 
 \end_inset
 
@@ -252,11 +261,11 @@ status open
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Some basic definitions
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Some-basic-definitions"
+name "subsec:Some-basic-definitions"
 
 \end_inset
 
@@ -517,11 +526,11 @@ If
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Fundamental properties of division
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Fundamental-props-division"
+name "subsec:Fund-prop-div"
 
 \end_inset
 
@@ -974,14 +983,30 @@ Any semigroup
 status open
 
 \begin_layout Plain Layout
-The analogous conversion from semigroup to monoids in the 
+The analogous conversion from semigroup to monoids in 
 \color red
-cat_as_alg
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tilson1987categories"
+literal "false"
+
+\end_inset
+
+
 \color inherit
  is fairly different from the one given here but here I adopt the conversion
  stated in 
 \color red
-q-theory
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rhodes2009q"
+literal "false"
+
+\end_inset
+
+
 \color inherit
  which states the former conversion to be categorically incorrect.
  I have made appropriate changes in the results that follow.
@@ -1082,7 +1107,11 @@ Note that consolidation with adjoining an identity does not preserve division,
 \end_inset
 
 .
- We now investigate the relationship between 
+ 
+\end_layout
+
+\begin_layout Standard
+We now investigate the relationship between 
 \begin_inset Formula $S_{\text{\textbf{Cd}}}^{I}\text{ and }T_{\text{\textbf{Cd}}}^{I}$
 \end_inset
 
@@ -1091,6 +1120,79 @@ Note that consolidation with adjoining an identity does not preserve division,
 \end_inset
 
 .
+ For any non-empty set 
+\begin_inset Formula $Q$
+\end_inset
+
+, consider the trivial category with 
+\begin_inset Formula $Q$
+\end_inset
+
+ as the object set and with 
+\emph on
+exactly 
+\emph default
+one arrow per hom-set.
+ Let 
+\begin_inset Formula $B_{Q}$
+\end_inset
+
+ denote the monoid obtained after adjoining an identity to the consolidation
+ of the trivial category.
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $\varphi:S\prec M$
+\end_inset
+
+, where 
+\begin_inset Formula $M$
+\end_inset
+
+ is a monoid and 
+\begin_inset Formula $S$
+\end_inset
+
+ is a category, then 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ induces a division
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\varphi:S_{\text{\textbf{Cd}}}^{I}\prec M\times B_{Q}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $Q=\text{Obj}(S)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "citations_cat_as_alg"
+options "bibtotoc,plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
