@@ -48,7 +48,10 @@ Amaldev Manuel, **Dhruv Nevatia**<br/>
 ><strong>Invariant Model Checking by K-Induction</strong><br>*Model checking and software verification under Prof. [Mandayam Srivas](https://www.cmi.ac.in/~mksrivas/)*<br>
 >>Implementation of invariant model checking algorithm by k-induction in z3.
 
+## Teaching Assistance and workshops
 
+><strong>Introduction to programming in Haskell</strong>*Aug-Nov 2019 at CMI, Chennai*
+><strong>Abstract algebra Workshop for JEST applicants</strong>*Aug-Sept 2018 at CMI-IMSc, Chennai*
 
 <hr style="border:1px solid gray">
 

@@ -15,6 +15,7 @@
 \begin_modules
 theorems-ams
 theorems-ams-extended
+theorems-sec
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -164,23 +165,8 @@ end{titlepage}
 \end_layout
 
 \begin_layout Standard
-The notes are heavily based on the article 
-\emph on
-Categories as Algebra : An essential ingredient in the theory of monoids
- 
-\emph default
-by Bret Tilson (see 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "tilson1987categories"
-literal "false"
-
-\end_inset
-
-).
- Since these notes were initially intended for personal use only, definitions
- as well as proofs of many lemmas have been omitted (because they were quite
- natural).
+These notes were initially intended for personal use only; definitions as
+ well as proofs of many lemmas which were deemed to be clear have been omitted.
  Sorry for the inconvenience.
 \begin_inset Newline newline
 \end_inset
@@ -220,6 +206,42 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Categories as algebra I
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 12cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The notes are heavily based on the article 
+\emph on
+Categories as Algebra : An essential ingredient in the theory of monoids
+ 
+\emph default
+by Bret Tilson (refer 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tilson1987categories"
+literal "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -443,25 +465,27 @@ For every hom-set
 \end_layout
 
 \begin_layout Standard
-Moreover, 
-\begin_inset Formula $S\prec T$
-\end_inset
-
- denotes a 
-\emph on
-division
-\emph default
- between categories 
 \begin_inset Formula $S$
 \end_inset
 
- and 
+ 
+\emph on
+divides
+\emph default
+ 
 \begin_inset Formula $T$
 \end_inset
 
+ if the hom-set relation is injective, denoted by 
+\begin_inset Formula $S\prec T$
+\end_inset
+
 .
- If the two categories divide each other then they are called equivalent
- denoted by 
+ If the two categories divide each other then they are called 
+\emph on
+equivalent 
+\emph default
+denoted by 
 \begin_inset Formula $S\sim T$
 \end_inset
 
@@ -538,6 +562,23 @@ name "subsec:Fund-prop-div"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Trivial Categories
+\end_layout
+
+\begin_layout Standard
 Let 
 \begin_inset Formula $F:X\longrightarrow Y$
 \end_inset
@@ -581,17 +622,16 @@ trivial
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:1.4"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
 \begin_inset Formula $(\implies)$
 \end_inset
 
@@ -809,6 +849,13 @@ Given an indexing set
 \end_inset
 
 , verify the following properties of categories:
+\begin_inset CommandInset label
+LatexCommand label
+name "que:prod-meet-props"
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -873,6 +920,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection*
+Consolidation of a category
 \end_layout
 
 \begin_layout Standard
@@ -1081,9 +1132,8 @@ Note that the graph function doesn't use the fact that the consolidation
 
 \end_layout
 
-\begin_layout Standard
-Note that consolidation with adjoining an identity does not preserve division,
- i.e.
+\begin_layout Note*
+Consolidation with an adjoint identity does not preserve division, i.e.
  
 \begin_inset Formula $S\prec T\text{ does not imply }S_{\text{\textbf{Cd}}}^{I}\prec T_{\text{\textbf{Cd}}}^{I}$
 \end_inset
@@ -1164,7 +1214,7 @@ If
 \begin_layout Proposition
 \begin_inset Formula 
 \[
-\varphi:S_{\text{\textbf{Cd}}}^{I}\prec M\times B_{Q}
+\varphi':S_{\text{\textbf{Cd}}}^{I}\prec M\times B_{Q}
 \]
 
 \end_inset
@@ -1174,6 +1224,507 @@ where
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Proof
+Define the relation 
+\begin_inset Formula $\varphi':S_{\text{\textbf{Cd}}}^{I}\prec M\times B_{Q}$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\begin{align*}
+(c,\,s,\,c')\varphi'=s\varphi\times\{(c,\,c')\}, &  & 1\varphi'=(1,\,1), &  & 0\varphi'=M\times0\,.
+\end{align*}
+
+\end_inset
+
+ Verification that 
+\begin_inset Formula $\varphi'$
+\end_inset
+
+ is a division is straightforward.
+\end_layout
+
+\begin_layout Corollary
+If 
+\begin_inset Formula $S\prec T$
+\end_inset
+
+, then 
+\begin_inset Formula $S_{\text{\textbf{\emph{Cd}}}}^{I}\prec T_{\text{\textbf{\emph{Cd}}}}^{I}\times B_{\text{\emph{Obj}}(S)}$
+\end_inset
+
+.
+ 
+\emph on
+(Hint: 
+\emph default
+Divisions can be composed
+\emph on
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Retract ordering of objects
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be a category and let 
+\begin_inset Formula $c,\,c'\in\text{Obj}(S)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $c$
+\end_inset
+
+ is called a 
+\emph on
+retract
+\emph default
+ of 
+\begin_inset Formula $c'$
+\end_inset
+
+ if there exist arrows 
+\begin_inset Formula $f:c\rightarrow c'$
+\end_inset
+
+ and 
+\begin_inset Formula $h:c'\rightarrow c$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $fh=1_{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be a category, and let 
+\begin_inset Formula $C,\,D\subseteq\text{\emph{Obj}}(S).$
+\end_inset
+
+ If every object in 
+\begin_inset Formula $C$
+\end_inset
+
+ is a retract of some object in 
+\begin_inset Formula $D$
+\end_inset
+
+, then 
+\begin_inset Formula $S(C)\prec S(D)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+In the above proposition if 
+\begin_inset Formula $C=\text{\emph{Obj}}(S)$
+\end_inset
+
+, then 
+\begin_inset Formula $S(D)\sim S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Divisional vs.
+ natural equivalence
+\end_layout
+
+\begin_layout Standard
+We will first show that divisional equivalence is strictly coarser than
+ natural equivalence of categories.
+ When categories are naturally equivalent there exist functors 
+\begin_inset Formula $\varphi:S\longrightarrow T$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi:T\longrightarrow S$
+\end_inset
+
+ with 
+\begin_inset Formula $\varphi\psi$
+\end_inset
+
+ naturally isomorphic to 
+\begin_inset Formula $1_{S}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi\varphi$
+\end_inset
+
+ naturally isomorphic to 
+\begin_inset Formula $1_{T}$
+\end_inset
+
+.
+ Both the functors must be faithful and full thus giving, 
+\begin_inset Formula $S\prec T$
+\end_inset
+
+ and 
+\begin_inset Formula $T\prec S$
+\end_inset
+
+, whence 
+\begin_inset Formula $S\sim T$
+\end_inset
+
+.
+ Now consider the categories 
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{1}\vee\boldsymbol{1}$
+\end_inset
+
+.
+ Both the categories are divisionally equivalent (see Question 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "que:prod-meet-props"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) but naturally equivalent.
+\end_layout
+
+\begin_layout Subsection
+The derived category of a morphism
+\end_layout
+
+\begin_layout Standard
+For a relational morphism 
+\begin_inset Formula $\varphi:S\vartriangleleft T$
+\end_inset
+
+ we associate with every 
+\begin_inset Formula $t\in S\varphi$
+\end_inset
+
+ and every pair 
+\begin_inset Formula $(s',\,t')\in\#\varphi$
+\end_inset
+
+, a function 
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{l}
+[t,\,(s',\,t')]:t\varphi^{-1}\longrightarrow tt'\varphi^{-1},\\
+s[t,\,(s',\,t')]=ss'\,.
+\end{array}
+\end{equation}
+
+\end_inset
+
+ We then define the category 
+\begin_inset Formula $D_{\varphi}$
+\end_inset
+
+, the 
+\emph on
+derived category 
+\emph default
+of the relational morphism 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\text{Obj}(D_{\varphi})=S\varphi,\\
+D_{\varphi}(t_{1},\,t_{2})=\{[t_{1},\,(s,\,t)]\mid(s,\,t)\in\#\varphi,\,t_{1}t=t_{2}\}
+\end{array}
+\]
+
+\end_inset
+
+ with composition given by
+\begin_inset Formula 
+\[
+[t,\,(s',\,t')][tt',\,(s",\,t")]=[t,\,(s's",\,t't")]\,.
+\]
+
+\end_inset
+
+ The identity arrow on each object is the function 
+\begin_inset Formula $[t,\,(1,\,1)]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $\varphi:S\vartriangleleft T$
+\end_inset
+
+ be a relational morphism of monoids.
+ Then 
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:1.12"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(a)]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $[1,\,(s,\,t)]=[1,\,(s',\,t)]\iff s=s'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(b)]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $D_{\varphi}(1)\approx1\varphi^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $(a)$
+\end_inset
+
+ If 
+\begin_inset Formula $[1,\,(s,\,t)]=[1,\,(s',\,t)]$
+\end_inset
+
+, then 
+\begin_inset Formula $s_{0}s=s_{0}s'$
+\end_inset
+
+, for all 
+\begin_inset Formula $s_{0}\in1\varphi^{-1}$
+\end_inset
+
+.
+ Setting 
+\begin_inset Formula $s_{0}=1$
+\end_inset
+
+ yields 
+\begin_inset Formula $s=s'$
+\end_inset
+
+.
+ The converse is clear.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $(b)$
+\end_inset
+
+ 
+\begin_inset Formula $1\varphi^{-1}$
+\end_inset
+
+ is clearly a submonoid of 
+\begin_inset Formula $S$
+\end_inset
+
+, and the function 
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\theta:1\varphi^{-1}\longrightarrow D_{\varphi}(1)\\
+s\theta=[1,\,(s,\,1)]
+\end{array}
+\]
+
+\end_inset
+
+ is evidently a surjective morphism of monoids.
+ In fact, because of 
+\begin_inset Formula $(a)$
+\end_inset
+
+, 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is an isomorphism.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(a)]
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be any monoid and let 
+\begin_inset Formula $\varphi:S\longrightarrow\boldsymbol{1}$
+\end_inset
+
+ be the trivial morphism, then 
+\begin_inset Formula $D_{\varphi}\approx S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(b)]
+\end_layout
+
+\end_inset
+
+ If 
+\begin_inset Formula $\varphi:S\prec T,$
+\end_inset
+
+ then 
+\begin_inset Formula $D_{\varphi}\prec1$
+\end_inset
+
+.
+ 
+\shape italic
+\emph on
+(
+\emph default
+Hint: 
+\emph on
+Apply 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:1.4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ on 
+\begin_inset Formula $D_{\varphi}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
