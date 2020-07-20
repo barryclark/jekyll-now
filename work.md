@@ -50,8 +50,8 @@ Amaldev Manuel, **Dhruv Nevatia**<br/>
 
 ## Teaching Assistance and workshops
 
-><strong>Introduction to programming in Haskell</strong>*Aug-Nov 2019 at CMI, Chennai*
-><strong>Abstract algebra Workshop for JEST applicants</strong>*Aug-Sept 2018 at CMI-IMSc, Chennai*
+><strong>Introduction to programming in Haskell</strong><br>*Aug-Nov 2019 at CMI, Chennai*<br>
+><strong>Abstract algebra Workshop for JEST applicants</strong><br>*Aug-Sept 2018 at CMI-IMSc, Chennai*<br>
 
 <hr style="border:1px solid gray">
 
