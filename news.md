@@ -41,7 +41,7 @@ __April__
  
 __March__
  - Awarded the GPSA Research Grant
- - Research highlighted in _NAVS_ article titled, ["Funding Research to Fight Cancer"](https://www.navs.org/funding-research-fight-cancer/#.XxNqSS2ZN24)\
+ - Research highlighted in _NAVS_ article titled, ["Funding Research to Fight Cancer"](https://www.navs.org/funding-research-fight-cancer/#.XxNqSS2ZN24)
 
 __Feburary__
  - Awarded as an ARCS Burton Scholar by the Phoenix Chapter of Achievement Rewards for College Scientists (ARCS) Foundation 
