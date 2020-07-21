@@ -13,7 +13,7 @@ __April__
  - Research highlighted in _Full Circle_ article titled, ["ASU RESEARCHERS CHIP AWAY THE MYSTERIES OF CANCER METASTASIS"](https://fullcircle.asu.edu/research/asu-researchers-chip-away-mysteries-cancer-metastasis/)
  
 __January__
- - Moved to Houston, Arizona
+ - Moved to Houston, Texas
  - Joined the Ludwig Lab as a Postdoctoral Fellow
 
 ## 2018
