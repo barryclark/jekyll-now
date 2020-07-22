@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Introducci\u00F3;n
+title: Introducción
 permalink: /about/
 ---
 
 Para que pueda surgir lo posible. Es preciso intentar una y otra vez lo imposible.!!
 
-### More Information
-Desarrollador de software
+### ??
+Apasionado por descubrir y experimentar nuevas tecnoligias, pasar de los sistemas inteligetes a las desciciones inteligentes
 
 
 ### Contacto
