@@ -12,4 +12,5 @@ tags:
   - Pluralsight
   - Visual Studio Enterprise
 ---
+
 <http://pluralsight.knowledgeowl.com/help/does-pluralsight-have-a-benefit-for-visual-studio-subscribers>

@@ -15,6 +15,7 @@ tags:
   - IaaS
   - VM
 ---
+
 <p lang="en">
   <img class="alignnone size-medium" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/88616c64-c513-44ac-8259-c201e1798106.png" width="750" height="413" />Nested Virtualization in Azure
 </p>

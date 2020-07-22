@@ -15,6 +15,7 @@ tags:
   - Event
   - Microsoft
 ---
+
 Info about event here <https://www.microsoft.com/en-us/connectevent>
 
 and on channel9 <https://channel9.msdn.com/Events/Connect/2017>
