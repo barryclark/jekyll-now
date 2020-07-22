@@ -40,6 +40,7 @@ __June__
 
 __May__
  - Research highlighted in _NAVS_ article titled, ["FDA identifies areas of need for non-animal alternatives"](https://www.navs.org/fda-identifies-areas-of-need-for-non-animal-alternatives/#.XxNrUC2ZN24)
+ - ["Breast Cancer Cell Invasion into a Three Dimensional Tumor-Stroma Microenvironment"](https://www.nature.com/articles/srep34094) selected for [Editor's choice: tumour microenvironment collection](https://www.nature.com/collections/csxtqfpfwt). 
 
 __April__
  - Awarded the Graduate College Completion Fellowship
@@ -51,7 +52,7 @@ __March__
 
 __Feburary__
  - Awarded as an ARCS Burton Scholar by the Phoenix Chapter of Achievement Rewards for College Scientists (ARCS) Foundation 
- - Research highlighted in _Advanced Science News_ article titled, ["Cancer Metastasis Put Under the Microscope"](https://www.advancedsciencenews.com/cancer-metastasis-put-microscope/)
+ - ["Microﬂuidic Tumor–Vascular Model to Study Breast Cancer Cell Invasion and Intravasation"](https://onlinelibrary.wiley.com/doi/abs/10.1002/adhm.201701257) highlighted in _Advanced Science News_ article titled, ["Cancer Metastasis Put Under the Microscope"](https://www.advancedsciencenews.com/cancer-metastasis-put-microscope/)
  
 __January__
  - Awarded the Graduate College Fellowship
