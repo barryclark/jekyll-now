@@ -6,7 +6,7 @@ permalink: /about/
 
 Para que pueda surgir lo posible. Es preciso intentar una y otra vez lo imposible.!!
 
-### ??
+### En pocas palabras
 Apasionado por descubrir y experimentar nuevas tecnoligias, pasar de los sistemas inteligetes a las desciciones inteligentes
 
 
