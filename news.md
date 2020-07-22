@@ -3,6 +3,11 @@ layout: page
 title: News
 permalink: /news/
 ---
+## 2020
+
+__January__
+ - Highlighted in ASU School of Biological and Health Systems Engineering [2019 Annual Report](https://sbhse.engineering.asu.edu/wp-content/uploads/2020/01/SBHSE-2019-Annual-Report.pdf)
+ 
 ## 2019
 
 __November__
@@ -15,6 +20,7 @@ __April__
 __January__
  - Moved to Houston, Texas
  - Joined the Ludwig Lab as a Postdoctoral Fellow
+ - Featured in [ARCS 2018 Annual Report](https://arcsfoundation.org/files/default/AnnualReport2018/mobile/index.html)
 
 ## 2018
 
@@ -49,6 +55,7 @@ __Feburary__
  
 __January__
  - Awarded the Graduate College Fellowship
+ - Highlighted in ASU School of Biological and Health Systems Engineering [2017 Annual Report](https://sbhse.engineering.asu.edu/wp-content/uploads/2018/11/SBHSE-2017-Annual-Report.pdf)
 
 ## 2017
 
@@ -69,6 +76,9 @@ __March__
  
 __February__
  - Awarded as an ARCS Burton Scholar by the Phoenix Chapter of ARCS Foundation 
+ 
+__January__
+ - Highlighted in ASU School of Biological and Health Systems Engineering [2016 Annual Report](https://sbhse.engineering.asu.edu/wp-content/uploads/2017/09/2015-2016-SBHSE-Annual-Report-WEB2.pdf) 
 
 ## 2016
 
