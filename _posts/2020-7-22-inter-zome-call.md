@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Use hdk::api::call for Inter-Zome Call
-tags: [building-blocks, frontend]
+tags: [building-blocks, holochain]
 author: Tatsuya Sato 
 ---
 Welcome to the blog post on How to Use hdk::api::call for Cross Zome Call! In this blog post, I will be explaining how we can use the `hdk::api::call` to call zome functions from another zome! (Note: We will be focusing on inter-zome calls in this blog post but you can certainly use `hdk::api::call` for bridging between 2 DNAs as well!) I was inspired to write this blog post as I had a really difficult time learning how to use this api approrpiately as there was not enough example of using this api from projects within the community. Hopefully, this blog will help everyone have a smooth sailing using this amazing piece of api from holochain HDK!
