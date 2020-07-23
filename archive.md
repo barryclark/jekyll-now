@@ -4,6 +4,12 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### July 22nd thoughts & takeaways:
+
+* Last week we saw a 2.8% increase in volumes. The moving average has recovered back to where we were in the last week of June. The threat of additional lockdowns seem to have been squashed but schools won't be starting in-person for a while. 
+
+***
+
 ### July 15th thoughts & takeaways:
 
 * I'd like to shout out some fantastic modeling work done by Will Barbour and Vanderbilt. [They created a "rebound calculator"](https://lab-work.github.io/therebound/) that estimates travel time impacts based on mode changes due to COVID-19. 
