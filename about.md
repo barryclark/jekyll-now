@@ -6,9 +6,9 @@ description: "Cheryl Hung's photo, biography and contact details"
 
 <img src="/images/headshot.jpeg" alt="Cheryl Hung, VP Ecosystem, CNCF" class="about-image"/>
 
-Cheryl Hung is VP Ecosystem at the [Cloud Native Computing Foundation](https://www.cncf.io/), home of Kubernetes and part of the Linux Foundation. Her mission is to drive engagement and growth of open source infrastructure and communities, including the 5500+ person meetup she founded, Cloud Native London.
+Cheryl Hung is VP Ecosystem at the [Cloud Native Computing Foundation](https://www.cncf.io/), part of the Linux Foundation. She leads the [CNCF End User Community](https://www.cncf.io/people/end-user-community/), the largest end user community of any open source foundation or standards body. Her mission is to drive adoption of Kubernetes, Prometheus, Envoy and other cloud native technologies.
 
-In addition, Cheryl also keynotes at conferences and advises startups on developer-led growth and open source strategy. She started as a software engineer writing C++ on Google Maps, before moving into engineering management and developer advocacy.  Cheryl holds a Masters in Computer Science from the University of Cambridge, King’s College.
+Additionally, she is a frequent public speaker, founder of the Cloud Native London meetup, and startup advisor. Previously she was a C++ engineer on Google Maps, and holds a Masters in Computer Science from the University of Cambridge, King’s College.
 
 # Contact
 
