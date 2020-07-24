@@ -8,7 +8,7 @@ date: 2020-07-06
 #description:
 #permalink:
 title: 'Replacing the Ternary Operator with Rust-style If Expressions in C++11 - Part 1'
-#comments_id:
+comments_id: 13
 ---
 Right now I am getting into Rust, which lets me see the paradigms of C++ in a new light. This is a small thing, but for example: C++ has `if` *statements* and Rust has `if` *expressions* which can return a value. This inspired me to implement an expressive syntax for mimicking Rust's `if` expressions in C++. To keep things simple, I only targeted the use case of replacing nested ternary operators.
 
