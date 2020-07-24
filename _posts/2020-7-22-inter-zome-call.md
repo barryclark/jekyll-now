@@ -143,7 +143,7 @@ simple functionality to this `Sum` struct to make our life easier! `new()` just 
 struct and `entry()` function will return as the `Entry` type which we can commit to the source chain and DHT.
 Following that, we change the name of the module to `callee_zome` and renamed the entry definition appropriately for `Sum` entry. We also deleted the functions we wont be using.
 
-Next, let's write a simple function named `handle_sum_and_commit` which will accept two `i32` values as arguments that will be morphed into a `Sum` struct which we will commit to the DHT and return its address sa the return value of the function. Let's write this piece of function right below the `sum_entry_def()`.
+Next, let's write a simple function named `handle_sum_and_commit` which will accept two `i32` values as arguments that will be morphed into a `Sum` struct which we will commit to the DHT and return its address as the return value of the function. Let's write this piece of function right below the `sum_entry_def()`.
 
 ```rust
 +    #[zome_fn("hc_public")]
@@ -237,7 +237,7 @@ We passed `hdk::THIS_INSTANCE` for the `instance_handle` saying that the same in
 
 Next, we passed the name of the zome which is `callee`, then pass the address of `hdk::PUBLIC_TOKEN` as the `cap_token` signifying that the token we are using is a public one. (since the zome function `handle_sum_and_commit` in `callee` is an `hc_public` function, this `cap_token` will be accepted). 
 
-Subsequently, we pass the name of the zome function we would like to call (`handle_sum_and_commit`). Lastly, we passed the `call_input` serving as the arguments to `handle_sum_and_commit` function. We uesd `into` here since the `fn_args` parameter of `hdk::call` needs a JsonString. Since we gave `ZomeInput` struct `derive` traits for easy conversion to JSON, this will work without problem and will be converted to `JsonString`. Lastly, we added `?` operator so that if `hdk::call` fails for whatever reason, the `ZomeApiError` will be returned right away. 
+Subsequently, we pass the name of the zome function we would like to call (`handle_sum_and_commit`). Lastly, we passed the `call_input` serving as the arguments to `handle_sum_and_commit` function. We used `into` here since the `fn_args` parameter of `hdk::call` needs a JsonString. Since we gave `ZomeInput` struct `derive` traits for easy conversion to JSON, this will work without problem and will be converted to `JsonString`. Lastly, we added `?` operator so that if `hdk::call` fails for whatever reason, the `ZomeApiError` will be returned right away. 
 (NOTE: The error that will be returned from here is the error from the `hdk::call` itself and not the error that can occur in the `handle_sum_and_commit` function.) 
 
 Next, after setting up the `hdk::call` function, we need to handle the `JsonString` that will be returned from the `hdk::call`. This means that we have to deserialize the returned value from the `hdk::call` and also handle possible parsing error from `serde_json`. This is exactly what we are doing in the last three lines of the function. 
