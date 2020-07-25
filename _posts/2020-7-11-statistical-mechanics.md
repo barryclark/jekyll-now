@@ -6,5 +6,5 @@ In statistical mechanics the objective is to predict simple macroscopic rules fr
 In the other hand, complex theory predicts complex macroscopic behavior from simple microscopic rules.he observer
 - The order depends on the perspective of the observer.
 
-$$ s = -k \ln\omega $$
-$$ H = -\sum p\ln(p)$$
+$ s = -k \ln\omega $
+$ H = -\sum p\ln(p)$
