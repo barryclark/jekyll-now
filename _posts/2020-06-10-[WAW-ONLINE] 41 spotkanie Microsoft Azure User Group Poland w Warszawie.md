@@ -3,7 +3,7 @@ title: WAW-ONLINE 41 Microsoft Azure User Group Poland - Using Azure Functions i
 author: Janusz Nowak
 header:
   teaser: /wp-content/uploads/2020/06/2020-06-10 WAW-ONLINE 41 spotkanie Microsoft Azure User Group Poland w Warszawie.png
-permalink: /Conference-MIMUW-TechTalk-Azure-DevOps-Deploy-Anything-Anywhere/
+permalink: /MAUGP41Using-Azure-Functions-in-advanced-Azure-DevOps-Automation
 categories:
   - Azure Functions
   - Azure DevOps
