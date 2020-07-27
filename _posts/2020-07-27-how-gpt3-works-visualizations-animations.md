@@ -4,6 +4,7 @@ published: True
 title: How GPT3 Works - Visualizations and Animations
 ---
 
+(Live thread, will be updated with new visuals and polish over the next few days)
 
 A trained language model generates text.
 
@@ -147,27 +148,4 @@ The difference with GPT3 is the alternating dense and [sparse self-attention lay
 
 
 
-
-
-<div class="img-div-any-width" markdown="0">
-  <img src="/images/gpt3/02-gpt3-training-language-model.gif" />
-  <br />
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="img-div-any-width" markdown="0">
-  <img src="/images/gpt3/02-gpt3-training-language-model.gif" />
-  <br />
-
-</div>
 
