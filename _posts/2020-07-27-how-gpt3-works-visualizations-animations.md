@@ -149,3 +149,35 @@ The difference with GPT3 is the alternating dense and [sparse self-attention lay
 
 
 
+
+
+
+This is an X-ray of an input and response ("Okay human") within GPT3. Notice how every token flows through the entire layer stack. We don't care about the output of the first words. When the input is done, we start caring about the output. We feed every word back into the model.
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/08-gpt3-tokens-transformer-blocks.gif" />
+  <br />
+
+</div>
+
+
+In the React code generation example (https://twitter.com/sharifshameem/status/1284421499915403264), the description would be the input prompt (in green), in addition to a couple of examples of description=>code, I believe. And the react code would be generated like the pink tokens here token after token.
+
+
+My assumption is that the priming examples and the description are appended as input, with specific tokens separating examples and the results. Then fed into the model.
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/09-gpt3-generating-react-code-example.gif" />
+  <br />
+
+</div>
+
+
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/10-gpt3-fine-tuning.gif" />
+  <br />
+
+</div>
