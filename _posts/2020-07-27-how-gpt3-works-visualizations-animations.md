@@ -1,0 +1,173 @@
+---
+layout: prediction_post
+published: True
+title: How GPT3 Works - Visualizations and Animations
+---
+
+
+A trained language model generates text.
+
+We can optionally pass it some text as input, which influences its output. 
+
+The output is generated from what the model "learned" during its training period where it scanned vast amounts of text.
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/01-gpt3-language-model-overview.gif" />
+  <br />
+
+</div>
+
+
+<!--more-->
+
+
+Training is the process of exposing the model to lots of text. It has been done once and complete. All the experiments you see now are from that one trained model. It was estimated to cost 355 GPU years and cost $4.6m.
+
+
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/02-gpt3-training-language-model.gif" />
+  <br />
+
+</div>
+
+
+The dataset of 300 billion tokens of text is used to generate training examples for the model. For example, these are three training examples generated from the one sentence at the top. 
+
+You can see how you can slide a window across all the text and make lots of examples.
+
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/gpt3-training-examples-sliding-window.png" />
+  <br />
+
+</div>
+
+The model is presented with an example. We only show it the features and ask it to predict the next word. 
+
+The model's prediction will be wrong. We calculate the error in its prediction and update the model so next time it makes a better prediction.
+
+Repeat millions of times
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/03-gpt3-training-step-back-prop.gif" />
+  <br />
+
+</div>
+
+
+
+
+Now let's look at these same steps with a bit more detail.
+
+GPT3 actually generates output one token at a time (let's assume a token is a word for now).
+
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/04-gpt3-generate-tokens-output.gif" />
+  <br />
+
+</div>
+
+
+Please note: This is a description of how GPT-3 works and not a discussion of what is novel about it (which is mainly the ridiculously large scale). The architecture is a transformer decoder model based on this paper https://arxiv.org/pdf/1801.10198.pdf
+
+
+
+
+GPT3 is MASSIVE. It encodes what it learns from training in 175 billion numbers (called parameters). These numbers are used to calculate which token to generate at each run.
+
+The untrained model starts with random parameters. Training finds values that lead to better predictions.
+
+
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/gpt3-parameters-weights.png" />
+  <br />
+
+</div>
+
+
+These numbers are part of hundreds of matrices inside the model. Prediction is mostly a lot of matrix multiplication.
+
+In my [Intro to AI on YouTube](https://youtube.com/watch?v=mSTCzNgDJy4), I showed a simple ML model with one parameter. A good start to unpack this 175B monstrosity.
+
+
+To shed light on how these parameters are distributed and used, we'll need to open the model and look inside.
+
+GPT3 is 2048 tokens wide. That is its "context window". That means it has 2048 tracks along which tokens are processed.
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/05-gpt3-generate-output-context-window.gif" />
+  <br />
+
+</div>
+
+
+Let's follow the purple track. How does a system process the word "robotics" and produce "A"?
+
+High-level steps:
+
+1. Convert the word to [a vector (list of numbers) representing the word](https://jalammar.github.io/illustrated-word2vec/)
+2. Compute prediction
+3. Convert resulting vector to word
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/06-gpt3-embedding.gif" />
+  <br />
+
+</div>
+
+
+
+The important calculations of the GPT3 occur inside its stack of 96 transformer decoder layers. 
+
+See all these layers? This is the "depth" in "deep learning".
+
+Each of these layers has its own 1.8B parameter to make its calculations. 
+
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/07-gpt3-processing-transformer-blocks.gif" />
+  <br />
+
+</div>
+
+
+You can see a detailed explanation of everything inside the decoder in my blog post [The Illustrated GPT2](https://jalammar.github.io/illustrated-gpt2/).
+
+The difference with GPT3 is the alternating dense and [sparse self-attention layers](https://arxiv.org/pdf/1904.10509.pdf).
+
+
+
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/02-gpt3-training-language-model.gif" />
+  <br />
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="img-div-any-width" markdown="0">
+  <img src="/images/gpt3/02-gpt3-training-language-model.gif" />
+  <br />
+
+</div>
+
