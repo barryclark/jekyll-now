@@ -174,7 +174,9 @@ My assumption is that the priming examples and the description are appended as i
 </div>
 
 
+It's impressive that this works like this. Because you just wait until fine-tuning is rolled out for the GPT3. The possibilities will be even more amazing.
 
+Fine-tuning actually updates the model's weights to make the model better at a certain task.
 
 <div class="img-div-any-width" markdown="0">
   <img src="/images/gpt3/10-gpt3-fine-tuning.gif" />
