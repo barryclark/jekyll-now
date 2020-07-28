@@ -4,7 +4,7 @@ published: True
 title: How GPT3 Works - Visualizations and Animations
 ---
 
-(Live thread, will be updated with new visuals and polish over the next few days. Join [the newsletter](http://eepurl.com/gl0BHL) to get updated when completed)
+(Live thread, will be updated with new visuals and polish over the next few days. Join [the mailing list](http://eepurl.com/gl0BHL) to get updated when completed)
 
 A trained language model generates text.
 
