@@ -4,7 +4,7 @@ published: True
 title: How GPT3 Works - Visualizations and Animations
 ---
 
-(Live thread, will be updated with new visuals and polish over the next few days)
+(Live thread, will be updated with new visuals and polish over the next few days. Join [the newsletter](http://eepurl.com/gl0BHL) to get updated when completed)
 
 A trained language model generates text.
 
@@ -23,7 +23,7 @@ The output is generated from what the model "learned" during its training period
 <!--more-->
 
 
-Training is the process of exposing the model to lots of text. It has been done once and complete. All the experiments you see now are from that one trained model. It was estimated to cost 355 GPU years and cost $4.6m.
+Training is the process of exposing the model to lots of text. That process has been completed. All the experiments you see now are from that one trained model. It was estimated to cost 355 GPU years and cost $4.6m.
 
 
 
@@ -131,7 +131,7 @@ The important calculations of the GPT3 occur inside its stack of 96 transformer 
 
 See all these layers? This is the "depth" in "deep learning".
 
-Each of these layers has its own 1.8B parameter to make its calculations. 
+Each of these layers has its own 1.8B parameter to make its calculations. That is where the "magic" happens. This is a high-level view of that process:
 
 
 
