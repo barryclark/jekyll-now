@@ -4,13 +4,13 @@ title: About
 permalink: /about/
 ---
 
-I'm a Swedish student at the Royal Institute of Technology in Stockholm studying towards a Master of Science in Computer Science and Engineering (quite a mouthul).
+I'm a software engineer from Sweden working as a consultant for the awesome company [Netlight](https://www.netlight.com)!
 
 ### Really? Is that all you are?
 
-No, I also spend most of my spare time as a treasurer in the Social Democratic Youth League chapter in Stockholm, together with some organizational positions in the Social Democrats. I'm also an elected official in my municipality of Botkyrka!
+No, I'm also passionate about politics and have a background as an elected official for the Social Democrats. While most of my spare-time used to be consumed by this constructive urge to work for a better society, now all that energy has been directed towards ranting. :)
 
-Whatever time remains is spent geeking out about languages. A lot of my projects center around NLP, and it's also the "major" of my masters programme (data science and language technology). I'm also working on improving my Persian language skills, which is my second mother tongue after Swedish.
+A lot of time is also spent geeking out about languages. The bulk of my projects center around NLP, and that was also the "major" of my master's programme (data science and language technology). I'm also working on improving my Persian language skills, which is my second mother tongue after Swedish.
 
 ### Contact me
 
