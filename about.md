@@ -4,12 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+<center>
+
+*Hi there,*
+
+I'm a passionate backend developer with a keen interest in DevOps and all thing automated, which will hopefully come across in the projects.
+Aside from tech, my other interests include any activity that keeps me moving (Bonus points if adrenaline is involved), these include, *but are not limited to*,
+Mountain Biking, Skiing and Badminton.
+
+*Thanks, Matt*
+
+</center>
+
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+- 21 Years Old
+- Bsc in Computer Science from the University Of Surrey (1st Class)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[matt.j.newberry@gmail.com](mailto:matt.j.newberry@gmail.com)
