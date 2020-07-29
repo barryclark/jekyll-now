@@ -20,9 +20,9 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: https://github.com/mattjnewberry
+  github: mattjnewberry
   instagram:
-  linkedin: https://www.linkedin.com/in/matthew-newberry-793602181/
+  linkedin: matthew-newberry-793602181/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
@@ -75,6 +75,12 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-seo-tag # Creeate SEO tags using the official Jekyll seo tag gem
+
+
+plugins:
+  - jekyll-seo-tag
+
 
 # Exclude these files from your production _site
 exclude:
