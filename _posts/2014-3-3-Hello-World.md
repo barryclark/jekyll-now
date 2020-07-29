@@ -1,10 +1,23 @@
 ---
 layout: post
-title: You're up and running!
+title: Route53, S3, CloudFront, Github Pages and the Stuggles with Hosting
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+It seems only fitting that the first post is about the site you're currently on, so I guess we can call this project a success.
+This post will explain the technologies used to deploy this static site, some tips on getting it working and the endless struggles of routing and DNS caches.
 
+If you're just after the tutorial and don't want to read about a backend developer attempting to build front end (understandable), skip to the [tutorial](#tutorial)
+
+### In The Beginning
+
+*Coming Soon*
+
+### Tutorial
+
+*Coming Soon*
+
+### Closing Thoughts
+
+*Coming Soon*
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
