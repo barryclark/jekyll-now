@@ -10,6 +10,7 @@ tags:
   - Video
   - Meetup
   - "2020"
+published: false
 ---
 
 Our August Cloud Native London virtual meetup kicks off at 6:30pm BST, join us and speakers from Dynatrace, Contino, and Microsoft on Zoom and YouTube!
