@@ -31,3 +31,12 @@ headtitle.addEventListener('mouseleave',() =>{
   mouseCursor.classList.remove('cursor-eye');
   cursorEye.classList.remove('showEye');
 });
+
+// Animations
+
+gsap.to('.briefcase',{
+  scrollTrigger: '.briefcase',
+  x: 500,
+  markers: true,
+  scrub: true
+})

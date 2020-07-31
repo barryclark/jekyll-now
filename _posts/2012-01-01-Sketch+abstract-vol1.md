@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Sketch+Abstract
 layout: post
 author: dactrtr
@@ -26,7 +26,7 @@ The goal was to create a design flow where doing the same product for different 
 
 --- 
 
-*I started this project in february of 2019, at that moment Sketch for teams was a thing yet, and probably now there's some "tricky" way to achieve the same, if you are a Figma lover, pls convince me to change my tools.*
+*I started this project in february of 2019, at that moment Sketch for teams wasn't a thing yet, and probably now there's some "tricky" way to achieve the same, if you are a Figma lover, pls convince me to change my tools.*
 
 ---
 
@@ -52,4 +52,4 @@ TK branches master and subproduct branches
 TK how abstract manages changes and how this allows you to deliver updates to branches
 TK atomic design
 TK libraries
-
+ -->
