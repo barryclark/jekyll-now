@@ -4,6 +4,14 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### August 1st thoughts & takeaways:
+
+* Things have flattened out since the latest spike in cases. 1.2% decrease last week. 
+
+* I've updated the static graphic showing trip types from Google data for Travis County. Check it out!
+
+***
+
 ### July 22nd thoughts & takeaways:
 
 * Last week we saw a 2.8% increase in volumes. The moving average has recovered back to where we were in the last week of June. The threat of additional lockdowns seem to have been squashed but schools won't be starting in-person for a while. 
