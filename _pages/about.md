@@ -8,9 +8,9 @@ I'm an engineer who likes data and automating things.
 
 My entire career has revolved around manufacturing; I've made things ranging from bulk aluminum to satcom equipment. Experience is generally centered around QA, process engineering, and continual improvement. I'll post cool things I find or put together here every now and then.
 
-I've recently started making videos for Real Python, you can check out my profile [here](https://realpython.com/team/jtatusko/)!
+I also make videos for Real Python, you can check out my profile [here](https://realpython.com/team/jtatusko/)!
 
-Python, SQL, VBA.
+Python, Javascript, SQL, VBA.
 
 <br>
 
@@ -24,4 +24,4 @@ Located in Leesburg, VA
 <br>
 <hr>
 
-*Hosted on GitHub, Powered by Jekyll, Forked from jekyll-now by barryclark*
+_Hosted on GitHub, Powered by Jekyll, Forked from jekyll-now by barryclark_
