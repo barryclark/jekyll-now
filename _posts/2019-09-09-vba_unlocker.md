@@ -17,22 +17,22 @@ Full code on [Github](https://github.com/joetats/fun_scripts/blob/master/vba_unl
 
 You will address a number of steps required to modify the Excel file's metadata in an effort to change the password. If you were to do this manually, this is how you would proceed:
 
-* Make a copy of the file
-* Set the extension to .zip
-* Open the file with 7-zip
-* Make a copy of xl/vbaProject.bin
-* Replace the CMG, DPB, and GC values with the ones from a known password
-* Save the modified xl/vbaProject.bin
-* Rename the file extension back to .xlsm
-* Open with Excel and put in the known password
+- Make a copy of the file
+- Set the extension to .zip
+- Open the file with 7-zip
+- Make a copy of xl/vbaProject.bin
+- Replace the CMG, DPB, and GC values with the ones from a known password
+- Save the modified xl/vbaProject.bin
+- Rename the file extension back to .xlsm
+- Open with Excel and put in the known password
 
 This is quite a lengthy process, and one that is straightforward to automate. The tools you'll use are the following:
 
-* MS Office Excel 2016 (64-bit)
-* HxD Editor (Or any hex editor)
-* 7-Zip
-* Text Editor
-* Python 3.7
+- MS Office Excel 2016 (64-bit)
+- HxD Editor (Or any hex editor)
+- 7-Zip
+- Text Editor
+- Python 3.7
 
 ## Preparations
 
@@ -86,7 +86,7 @@ new_filename = f[:f.index('.xlsm')] + '.zip'
 copyfile(f, new_filename)
 ```
 
-This does two things, it generates a new filename that has teh correct .zip extension, and then makes the copy. If you were to run the script here you'd end up with a .zip file with the same name as your orginal workbook.
+This does two things, it generates a new filename that has the correct .zip extension, and then makes the copy. If you were to run the script here you'd end up with a .zip file with the same name as your original workbook.
 
 ### Opening the archive and copying files
 
@@ -104,7 +104,7 @@ with ZipFile('new_arc.zip', 'w') as new_arc:
 
 The first thing that happens is you create a new ZipFile archive that is just called 'new_arc.zip' (which is totally arbitrary). You then open the archive that you 'created' earlier by renaming the workbook.
 
-The ZipFile class has a method called ```namelist()``` which generates a list of filepaths and names for the files in the archive. Here you're just copying everything except the **vbaProject.bin** file to the new archive, file by file.
+The ZipFile class has a method called `namelist()` which generates a list of filepaths and names for the files in the archive. Here you're just copying everything except the **vbaProject.bin** file to the new archive, file by file.
 
 ### Replacing the metadata
 

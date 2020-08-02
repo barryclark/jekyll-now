@@ -5,7 +5,7 @@ title: How to Find the Next HTZ or KODK
 
 Been a while since I posted! COVID has resulted in a lot more time at home, but almost less time overall. With all my cycling events getting cancelled I've doubled down on training, so I'm up to about 10+ hours a week on the bike. Disappointing for this year, but should have some good fitness if we can ever sort this virus out and get back to racing.
 
-I've been using the extra time in quarantine to mess around a bit more in the stock market, and have been able to have a lot of fun with some more volatile stocks. With no trip to Vegas this year for DEFCON, I need to get a bit of gambling in right?
+I've been using the extra time in quarantine to mess around a bit more in the stock market, and have been able to have a lot of fun with some more volatile stocks. With no trip to Vegas this year for DEFCON, I need to get a bit of gambling in, right?
 
 While I love reading about options strategies, I'm a very casual investor and mainly focus on stop-limit orders. These let me target a certain return while accepting a quantified risk, and then just waiting. I don't tend to stare at tickers all day (or even every day) so it's nice to get a notification that an order executed and go check it out.
 
