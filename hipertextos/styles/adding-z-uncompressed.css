@@ -71,14 +71,9 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 #info-seo {text-align:center;}
 /* Page & Header */
 .cover#page-header {background-color: var(--color-black);}
+#page-header.serveis-header {background:linear-gradient(rgba(54,54,54,1),rgba(85,72,85,1));border:none;color: #fff;overflow: hidden;letter-spacing: 0.012em;text-align: center;padding-top:0px;height: 27vh;}
 .medias#page-header {color:#ea6460!important;background-color:rgba(225,225,235,1);background-image: url("/img/portfoli.jpg");background-position:center center;background-attachment: fixed;background-size: cover fixed;background-repeat: no-repeat;border: none;color: #fff;overflow: hidden;text-align: center;height: 32vh;border:none!important;}
-#page-header.medias div h1 {font-weight: 400;letter-spacing: 0.005em;font-size: 1.0em;line-height: 1.7em;margin-bottom: 0px;max-width: 30%;text-align: left;float: left;}
-#page-header.medias div {height: 42px;-webkit-animation: moveFromTop .6s ease both;-moz-animation: moveFromTop .6s ease both;animation: moveFromTop .6s ease both;-webkit-animation-delay: .6s;-moz-animation-delay: .6s;animation-delay: .6s;}
 #phone-fine svg {max-width: 15px;margin-right: 5px;}
-#page-header.medias div a {color: var(--color-white) ;font-weight: 300;letter-spacing: 0.012em !important;font-size: 1.0em;line-height: 1.8em;text-align: right;float: right;text-decoration: none;}
-#page-header.medias a:hover {color: var(--color-link);}
-#page-header.medias h2 {font-size: 3.2em;padding-top: 120px;font-weight: 400;letter-spacing: none;}
-#page-header.medias h5 {padding-top: 140px;font-weight: 200;}
 #follows #icons a {background: transparent;border-radius: 50%;}
 #follows #icons a {width:55px;height:55px;padding-top:12px;margin:0 1% 0 1%;}
 #follows #icons a:hover {}
