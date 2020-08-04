@@ -1,9 +1,10 @@
 /* by Isard Miralles  ADDING EXTRA to About - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.about-cover {background-color:var(--color-black)!important ;background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
+#page-header.about-cover {max-height:72px!important;background:rgba(245,245,245,.95)!important;
+	border:none!important;color: #999;overflow: hidden;letter-spacing: 0.012em;text-align: left;padding-top:10px;}
 #avatar {margin:0 15px 0 0;border-radius:50%;padding:2px;opacity:.7;}
-.cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: transparent;color: var(--color-blue);}
+.cover-page #page-header {}
 .cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
 .cover-page #page-main {color:var(--color-hardgrey);}
 .cover-page #page-main section {padding-right:16px;}
@@ -22,6 +23,7 @@
     .cover-page ul li {font-size:14px;line-height:1.5em;margin-top:5px;padding:0;}
 }
 @media (max-width: 768px) {
+    #page-header.about-cover {display:none;}
     .cover-page h4  {text-align:center;}
     .cover-page p {font-size:15px;line-height:1.5em;}
     .cover-page ul li {font-size:12px;line-height:1.3em;margin-top:5px;padding:0;}
