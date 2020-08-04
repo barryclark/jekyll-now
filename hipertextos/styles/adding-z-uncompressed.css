@@ -71,8 +71,8 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 #info-seo {text-align:center;}
 /* Page & Header */
 .cover#page-header {background-color: var(--color-black);}
-#page-header.work-header {height:72px;background:#eee!important;
-	border:none!important;color: #555;overflow: hidden;letter-spacing: 0.012em;text-align: left;padding-top:2px;}
+#page-header.work-header {height:72px;background:rgba(245,245,245,.95)!important;
+	border:none!important;color: #999;overflow: hidden;letter-spacing: 0.012em;text-align: left;padding-top:10px;}
 #page-header.work-header h1 {font-weight: lighter }
 #page-header.work-header h1 small {padding-left:12px;letter-spacing: 0.001em;font-weight: lighter}
 #phone-fine svg {max-width: 15px;margin-right: 5px;}
@@ -91,7 +91,8 @@ figure em a {border: none;border-bottom;line-height: 0.2em;padding: 12px 4px;}
 .serveis#page-main {padding: 0;}
 
 /* Portfolio Titles */
-#layout h3 u {font-weight: 100;letter-spacing: 0em;font-size:26px;}
+#layout h3 u {font-weight: 100;}
+#layout h3 {text-align: right;font-size:32px;color: #888;line-height: 1em}
 hr.lifting {margin: 0px;height: 1px;}
 #glass-front {min-width:100%;background: rgba(12,12,12,.98) ;padding: 0px !important;}
 
@@ -192,10 +193,6 @@ a.web-img :hover {background:var(--color-hardgrey);color:var(--color-softgrey);}
 
 em small #go-up {background: transparent ;border:thin solid rgba(100,100,100,.2)!important;padding: 12px;border-radius: 50%;margin-bottom:-15px;}
 em small #go-up:hover {background: rgba(0, 0, 0, .3);}
-
-/* Directories - Qweb */
-#directories {text-align:center!important;background-color: var(--color-softgrey);height:86px; }
-#directories div {margin-left:40.6%;}
 
 /* Footer fixed */
 main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--color-white);box-shadow: 0 75px 60px rgba(0, 0, 0, .32);}
@@ -338,6 +335,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 @media (max-width: 1366px) {
     #page-header.cover {padding-top: 69px;height:69vh!important;}
+    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:7vh!important;padding-top: 10px;}
     #web-music {background-position: 100% 69% !important; }
     .cover-justify {min-width:100%;margin:0px;}
     img.dialog-svg {width: 80px !important;height: 70px;}
@@ -363,6 +361,8 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 
 @media (max-width: 1242px) {
     #page-header.cover {height:69vh;padding-top: 69px;}
+    #layout section {padding:4px;}
+    #page-header.work-header {height:7vh!important;padding-top: 10px;}
     .cover#page-header h1 {line-height: 1em;font-size: 45px ;font-weight: normal ;}
     .cover#page-header h2 {line-height: 1.2em;font-size: 16px ;}
     img.dialog-svg {width: 140px;height: 100px;}
@@ -376,7 +376,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #web-music {background-image: url("/img/m-music.jpg")!important;}
 	#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
 	#glassed {background-image: url("/img/m-imacblur.jpg")!important;}
-    .medias#page-header {background-image: url("/img/m-portfoli.jpg")!important;background-repeat: no-repeat;padding-top: 0px;height:27vh;background-size: 100% auto;background-position: top;z-index: 2;background-size: cover fixed;}
+    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:7vh!important;padding-top: 10px;}
     div.masked {background-image: url("/img/m-golden.jpg");}
     #directories div {margin-left:38.6%;}
     #web-grafics .thumb-6 {width: 100%;margin-left:0px;}
@@ -386,10 +386,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 
 @media (max-width: 800px) {
     #page-header.cover {padding-top: 36px;height:72vh;}
-    .medias#page-header {padding-top: 42px;height:18vh;}
-    .medias#page-header h2, .medias#page-header h5 {padding-top:0px;line-height:1em;}
-    .medias#page-header h5 {padding-top:3px;line-height:1em;}
-    .medias#page-header h2 {font-size:2.4em;}
+    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:6vh!important;padding-top: 18px;}
     #textlighting {font-size:16px!important;line-height:1.6em;padding-bottom:15px;}
     .cover img {width: 60px;margin-bottom: 1.8em;}
     .cover#page-header h1 {line-height: .5em;font-size: 38px;}
@@ -447,6 +444,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 	#textlighting {font-size:15px!important;line-height:1.5em;padding-bottom:12px;}
     .cover#page-header h1 {line-height: 1em;font-size: 27px ;}
     .cover#page-header h2 {line-height: 1em;font-size: 12px !important;}
+    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:6vh!important;padding-top: 18px;}
     #glass-front a.cover-links:after {display:none;visibility: hidden;}
     #glass-front .cover-links {padding-top: 32px;margin-top: 0px;padding-bottom: 12px;}
     #web-music {background-image: url("/img/z-music.jpg")!important;}
@@ -491,6 +489,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover img {width: 42px;margin-bottom: .75em;}
     .cover#page-header h1 {line-height: .5em!important;font-size: 21px !important;}
     .cover#page-header h2 {line-height: .75em;font-size: 12px !important;}
+    #page-header.work-header {display:none;}
     #web-grafics h3 {margin-top:-30px;font-size:.92em;}
     #fronters h2 {font-size:2em!important;}
     #covers article .cover-icon {padding:4px;}
