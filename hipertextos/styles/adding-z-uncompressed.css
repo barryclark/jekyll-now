@@ -91,7 +91,7 @@ figure em a {border: none;border-bottom;line-height: 0.2em;padding: 12px 4px;}
 .serveis#page-main {padding: 0;}
 
 /* Portfolio Titles */
-#layout h3 u {font-weight: 300;letter-spacing: 0em}
+#layout h3 u {font-weight: 100;letter-spacing: 0em;font-size:26px;}
 hr.lifting {margin: 0px;height: 1px;}
 #glass-front {min-width:100%;background: rgba(12,12,12,.98) ;padding: 0px !important;}
 
@@ -171,10 +171,9 @@ img.dialog-svg {width: 100%;height: 128px;}
 #page-footer p a {padding:4px;letter-spacing: .032em;font-size: 1.15em;}
 
 /* Classic Gallery */
-.listed .img-icon {width: 32px;}
+.listed .img-icon {width: 26px;}
 .listed u {margin-left: 12px;}
 .listed section {border: none;line-height: 2em;font-size: 0.2em;-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
-.imagens img {margin: 0 !important;padding: 0 !important;border: none;}
 .listed {padding: 0 !important;}
 .listed img {margin: 0 !important;padding: 0 !important;}
 .listed article {border: none;width: 100%;display: block;display: inline-block;margin: 0 !important;padding: 0 !important;-webkit-column-break-inside: avoid;-moz-column-break-inside: avoid;-moz-page-break-inside: avoid;page-break-inside: avoid;}
