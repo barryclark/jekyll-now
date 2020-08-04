@@ -71,8 +71,8 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 #info-seo {text-align:center;}
 /* Page & Header */
 .cover#page-header {background-color: var(--color-black);}
-#page-header.work-header {height:69px;background:#000!important;
-	border:none!important;color: #555;overflow: hidden;letter-spacing: 0.012em;text-align: left;padding-top:10px;}
+#page-header.work-header {height:72px;background:#eee!important;
+	border:none!important;color: #555;overflow: hidden;letter-spacing: 0.012em;text-align: left;padding-top:2px;}
 #page-header.work-header h1 {font-weight: lighter }
 #page-header.work-header h1 small {padding-left:12px;letter-spacing: 0.001em;font-weight: lighter}
 #phone-fine svg {max-width: 15px;margin-right: 5px;}
