@@ -527,7 +527,7 @@ dialog > nav {border-top: var(--one-pixel) solid currentColor;border-bottom: var
 .home-nav {float:left!important;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color: #fff !important;}
 #site-nav label {color: var(--color-grey);border: thin solid transparent;}
-#site-nav label:hover {color: var(--color-soft-grey);border: thin solid #353535;}
+#site-nav label:hover {color: var(--color-soft-grey);text-decoration: none;}
 
 /* Nav input search */
 
