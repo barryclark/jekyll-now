@@ -80,7 +80,6 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 figure em a {border: none;border-bottom;line-height: 0.2em;padding: 12px 4px;}
 #textlighting {font-size:23px!important;letter-spacing: .03em!important;padding-bottom:2.1em;
     text-shadow:0 0 2px rgba(255,255,255,.7), 0 0 8px rgba(255,255,255,.5),  0 0 32px rgba(255,255,255,.5) !important;}
-
 /* Portfolio Nav */
 #page-nav {border: none;color: var(--color-hardgrey);}
 #page-nav a {min-width: 9%;max-height: 100%;}
