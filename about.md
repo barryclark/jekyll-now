@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi! My name is Dennis van Ee and I'm a computer science masters student at the University of California, Los Angeles (UCLA). My interest is mainly in photorealistic rendering (realtime and offline).
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[den.vanee@gmail.com](mailto:den.vanee@gmail.com)
+Feel free to contact me at: [den.vanee@gmail.com](mailto:den.vanee@gmail.com)
