@@ -518,13 +518,13 @@ aside footer + nav,
 section footer + nav,
 dialog > nav {border-top: var(--one-pixel) solid currentColor;border-bottom: var(--one-pixel) solid transparent;padding: var(--twenty-pixel);text-align: right;}
 
-#site-nav {background: var(--color-nav) !important;border-bottom: none;font-size: 16px;color: var(--color-soft);box-shadow: 0 1px 21px rgba(0, 0, 0, .32);}
-#site-nav a {font-weight: 200;min-width: 14%;border: none;letter-spacing: .018em;-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-ms-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;}
+#site-nav {background: var(--color-nav) !important;border-bottom: none;font-size: 16px;color: var(--color-soft);text-align:right!important;}
+.nav-logo {padding:3px 3px 3px 3px!important;margin-right:3px;}
+#site-nav a {font-weight: 400;border: none;letter-spacing: .018em;-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-ms-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;}
 #site-nav a:visited {color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover {color: #fff !important;opacity:.69;text-decoration: none;}
-#site-nav a b {text-transform: uppercase;font-weight: normal ;}
-#site-nav a b:before {border-bottom: thin solid #555;content: ' ';display: block;position: absolute;left: 46%;right: 0;width: 8%;padding-bottom: 2px;}
-#site-nav a b:after {border-bottom: thin solid #555;content: ' ';display: block;position: absolute;left: 46%;right: 0;width: 8%;margin-top: -2px;}
+#site-nav a b {font-weight: lighter ;font-size:18px;}
+#current-nav {float:left!important;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color: #fff !important;}
 #site-nav label {color: var(--color-grey);border: thin solid transparent;}
 #site-nav label:hover {color: var(--color-soft-grey);border: thin solid #353535;}
