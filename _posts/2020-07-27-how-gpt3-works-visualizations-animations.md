@@ -3,8 +3,15 @@ layout: prediction_post
 published: True
 title: How GPT3 Works - Visualizations and Animations
 ---
+<span class="discussion">Discussions:
+<a href="https://news.ycombinator.com/item?id=23967887" class="hn-link">Hacker News (397 points, 97 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/hwxn26/p_how_gpt3_works_visuals_and_animations/" class="">Reddit r/MachineLearning (247 points, 27 comments)</a>
+</span>
+<br />
+<span class="discussion">Translations: <a href="https://www.arnevogel.com/wie-gpt3-funktioniert/">German</a>, <a href="https://blogcn.acacess.com/how-gpt3-works-visualizations-and-animations-zhong-yi">Chinese (Simplified)</a></span>
+<br />
 
-(Live thread, will be updated with new visuals and polish over the next few days. Join [the mailing list](http://eepurl.com/gl0BHL) to get updated when completed)
+The tech world is [abuzz](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential) with GPT3 hype. Massive language models (like GPT3) are starting to surprise us with their abilities. While not yet completely reliable for most businesses to put in front of their customers, these models are showing sparks of cleverness that are sure to accelerate the march of automation and the possibilities of intelligent computer systems. Let's remove the auora of mystery around GPT3 and learn how it's trained and how it works.
+
 
 A trained language model generates text.
 
@@ -162,7 +169,7 @@ This is an X-ray of an input and response ("Okay human") within GPT3. Notice how
 </div>
 
 
-In the React code generation example (https://twitter.com/sharifshameem/status/1284421499915403264), the description would be the input prompt (in green), in addition to a couple of examples of description=>code, I believe. And the react code would be generated like the pink tokens here token after token.
+In the [React code generation example](https://twitter.com/sharifshameem/status/1284421499915403264), the description would be the input prompt (in green), in addition to a couple of examples of description=>code, I believe. And the react code would be generated like the pink tokens here token after token.
 
 
 My assumption is that the priming examples and the description are appended as input, with specific tokens separating examples and the results. Then fed into the model.
