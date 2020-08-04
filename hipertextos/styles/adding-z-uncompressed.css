@@ -92,7 +92,7 @@ figure em a {border: none;border-bottom;line-height: 0.2em;padding: 12px 4px;}
 
 /* Portfolio Titles */
 #layout h3 u {font-weight: 100;}
-#layout h3 {text-align: right;font-size:32px;color: #888;line-height: 1em}
+.gallerist#layout h3 {text-align: right;font-size:32px;color: #888;line-height: 1em}
 hr.lifting {margin: 0px;height: 1px;}
 #glass-front {min-width:100%;background: rgba(12,12,12,.98) ;padding: 0px !important;}
 
