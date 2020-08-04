@@ -71,8 +71,10 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 #info-seo {text-align:center;}
 /* Page & Header */
 .cover#page-header {background-color: var(--color-black);}
-#page-header.serveis-header {background:linear-gradient(rgba(54,54,54,1),rgba(85,72,85,1));border:none;color: #fff;overflow: hidden;letter-spacing: 0.012em;text-align: center;padding-top:0px;height: 27vh;}
-.medias#page-header {color:#ea6460!important;background-color:rgba(225,225,235,1);background-image: url("/img/portfoli.jpg");background-position:center center;background-attachment: fixed;background-size: cover fixed;background-repeat: no-repeat;border: none;color: #fff;overflow: hidden;text-align: center;height: 32vh;border:none!important;}
+#page-header.work-header {background-color:#fff!important;
+	border:none!important;color: #000;overflow: hidden;letter-spacing: 0.012em;
+	text-align: center;padding-top:30px;
+}
 #phone-fine svg {max-width: 15px;margin-right: 5px;}
 #follows #icons a {background: transparent;border-radius: 50%;}
 #follows #icons a {width:55px;height:55px;padding-top:12px;margin:0 1% 0 1%;}
