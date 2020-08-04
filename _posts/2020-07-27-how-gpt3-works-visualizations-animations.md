@@ -12,9 +12,7 @@ title: How GPT3 Works - Visualizations and Animations
 
 The tech world is [abuzz](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential) with GPT3 hype. Massive language models (like GPT3) are starting to surprise us with their abilities. While not yet completely reliable for most businesses to put in front of their customers, these models are showing sparks of cleverness that are sure to accelerate the march of automation and the possibilities of intelligent computer systems. Let's remove the aura of mystery around GPT3 and learn how it's trained and how it works.
 
-## What is novel about GPT3?
-## How GPT3 Works
-## What is next for Language Models?
+
 A trained language model generates text.
 
 We can optionally pass it some text as input, which influences its output. 
