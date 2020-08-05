@@ -29,8 +29,7 @@ bloggin: true
   		{% for post in site.posts %}
     	<div id="layout-result">
       		<article class="anm-fadeIn delay-1000">
-				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        		<div>{% if post.img %}<a href="{{ site.baseurl }}{{ post.url }}"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
+        		<div>{% if post.img %}<a href="{{ site.baseurl }}{{ post.url }}"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>{{ post.excerpt }}</div>
         		<strong>{{ post.category }}</strong>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
