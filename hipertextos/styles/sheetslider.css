@@ -134,7 +134,7 @@
 }
 
 .sh-control {
-    background-image: url(../img/icons/pause.png);
+    background-image: url(https://isardmiralles.com/img/icons/pause.png);
     width: 45px;
     height: 45px;
     bottom: 50px;
@@ -142,7 +142,7 @@
 }
 
 .sh-control.is-active {
-    background-image:url(../img/icons/play.png)
+    background-image:url(https://isardmiralles.com/img/icons/play.png)
 }
 
 .sh-21r9 {
@@ -342,13 +342,13 @@
 }
 
 .sheetSlider input:nth-child(1):checked ~ .sh__arrows label:nth-child(2), .sheetSlider input:nth-child(10):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(2):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(2):checked ~ .sh__arrows label:nth-child(3), .sheetSlider input:nth-child(3):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(3):checked ~ .sh__arrows label:nth-child(4), .sheetSlider input:nth-child(4):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(4):checked ~ .sh__arrows label:nth-child(5), .sheetSlider input:nth-child(5):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(5):checked ~ .sh__arrows label:nth-child(6), .sheetSlider input:nth-child(6):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(6):checked ~ .sh__arrows label:nth-child(7), .sheetSlider input:nth-child(7):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(7):checked ~ .sh__arrows label:nth-child(8), .sheetSlider input:nth-child(8):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(8):checked ~ .sh__arrows label:nth-child(9), .sheetSlider input:nth-child(9):checked:last-of-type ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(9):checked ~ .sh__arrows label:nth-child(10) {
-    background-image: url(../img/icons/right.png);
+    background-image: url(https://isardmiralles.com/img/icons/right.png);
     display: block;
     float:right
 }
 
 .sheetSlider input:nth-child(1):checked ~ input:nth-child(10):last-of-type ~ .sh__arrows label:nth-child(10), .sheetSlider input:nth-child(1):checked ~ input:nth-child(2):last-of-type ~ .sh__arrows label:nth-child(2), .sheetSlider input:nth-child(1):checked ~ input:nth-child(3):last-of-type ~ .sh__arrows label:nth-child(3), .sheetSlider input:nth-child(1):checked ~ input:nth-child(4):last-of-type ~ .sh__arrows label:nth-child(4), .sheetSlider input:nth-child(1):checked ~ input:nth-child(5):last-of-type ~ .sh__arrows label:nth-child(5), .sheetSlider input:nth-child(1):checked ~ input:nth-child(6):last-of-type ~ .sh__arrows label:nth-child(6), .sheetSlider input:nth-child(1):checked ~ input:nth-child(7):last-of-type ~ .sh__arrows label:nth-child(7), .sheetSlider input:nth-child(1):checked ~ input:nth-child(8):last-of-type ~ .sh__arrows label:nth-child(8), .sheetSlider input:nth-child(1):checked ~ input:nth-child(9):last-of-type ~ .sh__arrows label:nth-child(9), .sheetSlider input:nth-child(10):checked ~ .sh__arrows label:nth-child(9), .sheetSlider input:nth-child(2):checked ~ .sh__arrows label:nth-child(1), .sheetSlider input:nth-child(3):checked ~ .sh__arrows label:nth-child(2), .sheetSlider input:nth-child(4):checked ~ .sh__arrows label:nth-child(3), .sheetSlider input:nth-child(5):checked ~ .sh__arrows label:nth-child(4), .sheetSlider input:nth-child(6):checked ~ .sh__arrows label:nth-child(5), .sheetSlider input:nth-child(7):checked ~ .sh__arrows label:nth-child(6), .sheetSlider input:nth-child(8):checked ~ .sh__arrows label:nth-child(7), .sheetSlider input:nth-child(9):checked ~ .sh__arrows label:nth-child(8) {
-    background-image: url(../img/icons/left.png);
+    background-image: url(https://isardmiralles.com/img/icons/left.png);
     display: block;
     float:left
 }
