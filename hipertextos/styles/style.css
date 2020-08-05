@@ -518,14 +518,14 @@ aside footer + nav,
 section footer + nav,
 dialog > nav {border-top: var(--one-pixel) solid currentColor;border-bottom: var(--one-pixel) solid transparent;padding: var(--twenty-pixel);text-align: right;}
 
-#site-nav {background: var(--color-nav) !important;border-bottom: none;font-size: 16px;color: var(--color-soft);text-align:right!important;}
-.nav-logo {padding:3px 3px 3px 3px!important;margin-right:3px;}
-#site-nav a {font-weight: 400;border: none;letter-spacing: .018em;-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-ms-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;}
+#site-nav {background: var(--color-nav) !important;border-bottom: none;font-size: 17px;color: rgba(200,200,200,.75) ;text-align:right!important;}
+.nav-logo {padding:3px 3px 3px 3px!important;margin-right:8px;}
+#site-nav a {font-weight: 300;border: none;letter-spacing: .018em;-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-ms-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;}
 #site-nav a:visited {color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover {color: #fff !important;opacity:.69;text-decoration: none;}
-#site-nav a b {font-weight: lighter ;font-size:18px;}
+#site-nav a b {font-weight: normal ;font-size:21px;}
 .home-nav {float:left!important;}
-#current-nav, #current-nav a:visited, #current-nav:visited {color: #fff !important;}
+#current-nav, #current-nav a:visited, #current-nav:visited {color: var(--color-soft-grey)!important;font-weight: 400!important;}
 #site-nav label {color: var(--color-grey);border: thin solid transparent;}
 #site-nav label:hover {color: var(--color-soft-grey);text-decoration: none;}
 
