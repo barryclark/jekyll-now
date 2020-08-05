@@ -10,7 +10,7 @@ main {border:none!important;padding-bottom: 0 !important;}
 .parallax {background-position:top auto; -webkit-transition: all .0s ease;-moz-transition: all .0s ease;-ms-transition: all .0s ease;-o-transition: all .0s ease;transition: all .0s ease;}
 body {text-align: justify;-moz-hyphens: none;-ms-hyphens: none;-webkit-hyphens: none;-o-hyphens: none;hyphens: none;word-wrap: none;}
 p, ul {font-size: 18px;line-height: 27px;}
-#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
+#page-header.cover {background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 .cover {	-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;-ms-transition: all 1.0s ease;-o-transition: all 1.0s ease;transition: all 1.0s ease;}
 img.apps {border-radius:21%;width:60%;max-width:110px;}
 .cover img {width: 80px;margin-bottom: 1.4em;}
@@ -372,7 +372,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #directories div {margin-left:39.4%;}   
 }
 @media (max-width: 1024px) {
-    #page-header.cover {background-image: url("/img/m-home.jpg")!important;background-position: fixed;z-index: 2;background-size: cover fixed;background-repeat: no-repeat;padding-top: 36px;height:69vh;background-size: 100% auto;background-position: fixed !important;}
+    #page-header.cover {padding-top: 36px;height:69vh;background-size: 100% auto;background-position: fixed !important;}
     #web-music {background-image: url("/img/m-music.jpg")!important;}
 	#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
 	#glassed {background-image: url("/img/m-imacblur.jpg")!important;}
@@ -440,7 +440,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     .cover-links h4 {font-weight: lighter ; font-size: .95em!important;letter-spacing: 0.03em!important}
 }
 @media (max-width: 768px) {
-    #page-header.cover {background-image: url("/img/z-home.jpg")!important;background-position: fixed;background-size: cover fixed;background-repeat: no-repeat;padding-top: 36px;height:54vh;background-size: 100% auto;background-position: fixed !important;}
+    #page-header.cover {padding-top: 36px;height:54vh;background-size: 100% auto;background-position: fixed !important;}
 	#textlighting {font-size:15px!important;line-height:1.5em;padding-bottom:12px;}
     .cover#page-header h1 {line-height: 1em;font-size: 27px ;}
     .cover#page-header h2 {line-height: 1em;font-size: 12px !important;}
