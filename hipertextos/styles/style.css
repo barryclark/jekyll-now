@@ -865,7 +865,7 @@ article, aside {
     border:var(--one-pixel) solid currentColor
 }
 
-#page-footer > div, #page-main > div, #page-nav > div, #page-section > div, #site-nav > div, [id * =page-section] > div {
+#page-header.work-header > div, #page-footer > div, #page-main > div, #page-nav > div, #page-section > div, #site-nav > div, [id * =page-section] > div {
     margin: 0 auto;
     padding: 0 var(--sixteen-pixel);
     position: relative;
