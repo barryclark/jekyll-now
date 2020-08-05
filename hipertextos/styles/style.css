@@ -588,8 +588,6 @@ footer {
 article, aside {
 	border: var(--one-pixel) solid currentColor;
 }
-#site-header > div,
-#page-header > div,
 #page-main > div,
 #site-nav > div,
 #page-nav > div,
