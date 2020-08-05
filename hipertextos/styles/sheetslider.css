@@ -1,11 +1,12 @@
 /*! Sheet Slider v2.2.0 | Copyright: 2018 zkreations | Licensed under MIT | github.com/zkreations/SheetSlider/blob/master/LICENSE */
 .sheetSlider {
-    background-color: #121214;
+    background: #000!important;
     font-size: 8px;
     line-height: 1.5;
     position: relative;
     width: 100%;
-    padding-bottom: 42.857143%;
+    min-height:95vh!important;
+    padding-top:0px!important;
     overflow: hidden;
     -webkit-font-smoothing:antialiased
 }
@@ -64,7 +65,7 @@
 .sh__meta span {
     font-size: 1.7em;
     font-weight: 500;
-    padding-top:.2em
+    padding-top:.3em
 }
 
 .sh__meta h4, .sh__meta span {
@@ -78,7 +79,7 @@
 }
 
 .sh__btns {
-    bottom: 0;
+    top: 97%;
     left: 0;
     right: 0;
     position: absolute;
@@ -89,7 +90,7 @@
 }
 
 .sh__btns label {
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .16);
     cursor: pointer;
     margin: 0 .2em;
     height: 6px;
@@ -98,7 +99,7 @@
 }
 
 .sh__btns label:hover {
-    background-color:rgba(255, 255, 255, 1)
+    background-color:rgba(255, 255, 255, .5)
 }
 
 .sh-control, .sh__arrows {
@@ -110,7 +111,7 @@
     transition: transform .3s;
     box-shadow:0 1px 1px rgba(0, 0, 0, .15)
 }
-
+.sh-control {position:absolute;top:0;right:0;}
 .sh__arrows:hover, .sheetSlider:hover .sh-control, .sheetSlider:hover .sh__arrows {
     transform:translate3d(0, 0, 0)
 }
@@ -401,6 +402,5 @@
 }
 
 .sheetSlider input:nth-child(1):checked ~ .sh__btns label:nth-child(1), .sheetSlider input:nth-child(10):checked ~ .sh__btns label:nth-child(10), .sheetSlider input:nth-child(2):checked ~ .sh__btns label:nth-child(2), .sheetSlider input:nth-child(3):checked ~ .sh__btns label:nth-child(3), .sheetSlider input:nth-child(4):checked ~ .sh__btns label:nth-child(4), .sheetSlider input:nth-child(5):checked ~ .sh__btns label:nth-child(5), .sheetSlider input:nth-child(6):checked ~ .sh__btns label:nth-child(6), .sheetSlider input:nth-child(7):checked ~ .sh__btns label:nth-child(7), .sheetSlider input:nth-child(8):checked ~ .sh__btns label:nth-child(8), .sheetSlider input:nth-child(9):checked ~ .sh__btns label:nth-child(9) {
-    background-color: #009688
+    background-color: #ddd
 }
-
