@@ -31,7 +31,7 @@ bloggin: true
       		<article class="anm-fadeIn delay-1000">
         		<div>{% if post.img %}<a href="{{ site.baseurl }}{{ post.url }}"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>{{ post.excerpt }}</div>
         		<strong>{{ post.category }}</strong>
-      			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
+      			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><img src="https://isardmiralles.com/img/icons/right.png"></a></nav>
       		</article>
     	</div>
   		{% endfor %}
