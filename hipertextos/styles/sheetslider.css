@@ -117,7 +117,7 @@
 }
 
 .sh-control, .sh__arrows label {
-    background-color: #fff;
+    background-color: rgba(210,210,210,.3);
     background-repeat: no-repeat;
     background-position: 50%;
     cursor:pointer
@@ -130,8 +130,8 @@
     height:50px
 }
 
-.sh__arrows label:hover {
-    background-color:rgba(255, 255, 255, .9)
+.sh__arrows label:hover, .sh-control:hover {
+    background-color:rgba(255, 255, 255, .5)
 }
 
 .sh-control {
@@ -139,7 +139,7 @@
     width: 45px;
     height: 45px;
     bottom: 50px;
-    background-color:#fff
+    background-color: rgba(210,210,210,.3);
 }
 
 .sh-control.is-active {
