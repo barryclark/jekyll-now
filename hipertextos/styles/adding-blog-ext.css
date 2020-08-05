@@ -1,7 +1,7 @@
 /* by Isard Miralles  ADDING EXTRA to Blog - CSS */
 /* ------------------------------------------------------------ Resets */
 
-h1 {text-align:right;line-height:.5em;}
+h1 {line-height:.5em;}
 
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
