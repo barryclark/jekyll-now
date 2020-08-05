@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2020"
-published: false
 ---
 
 Our August Cloud Native London virtual meetup kicks off at 6:30pm BST, join us and speakers from Dynatrace, Contino, and Microsoft on Zoom and YouTube!
@@ -32,8 +31,8 @@ See you soon!
 
 ## Cloud Native London September
 
-Our next meetup will be Wednesday 5th August, when we'll be joined by speakers from Redis Labs, Red Hat, Oracle. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/271025836/)
+Our next meetup will be Wednesday 2nd September, when we'll be joined by speakers from Redis Labs, Red Hat, Oracle. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/271025836/)
 
-See you all next month, and as always, stay safe!
+See you all next month!
 
 Cheryl (@oicheryl)
