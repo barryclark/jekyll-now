@@ -35,6 +35,19 @@ bloggin: true
       		</article>
     	</div>
   		{% endfor %}
+		
+		{% for tag in site.tags %}
+    	<div id="layout-result">
+      		<article class="anm-fadeIn delay-1000">
+  			<h3>{{ tag[0] }}</h3>
+  			<ul>
+    			{% for post in tag[1] %}
+      				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    			{% endfor %}
+  			</ul>
+      		</article>
+    	</div>
+		{% endfor %}
   	</div>
 	<em><hr></em>
 	</div>
