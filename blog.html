@@ -14,7 +14,7 @@ bloggin: true
 	<div id="layout">
     	<aside id="side-bar" class="thumb-2">
     		<h5>Accessible</h5>
-					<nav class="nav-scroll anm-moveFromLeftFade">
+					<nav class="nav-scroll">
 						<div>
 							<label for="layout-simple" title="Simple" id="label-simple" class="anm-zoomIn delay-500"><img src="{{ site.baseurl }}/hipertextos/images/icons.svg"><br>Ampliar</label>
 							<label for="layout-list" title="List" id="label-list" class="anm-zoomIn delay-600"><img src="{{ site.baseurl }}/hipertextos/images/list.svg"><br>Llista</label>
@@ -31,12 +31,14 @@ bloggin: true
 					<input type="radio" name="layout" id="layout-cards" aria-hidden="true" hidden>
 					<br>
     		<h5>Etiquetes</h5>
-    		<ul>
-    			<li><a href="xxx">Il·lustració</a></li>
-    			<li>Edició Web</li>
-    			<li>Disseny</li>
-    			<li>Música</li>
-    		</ul>
+    		<nav class="nav-scroll">
+    			<div>
+	    			<label><a href="xxx">Il·lustració</a></label>
+    				<label><a href="xxx">Edició Web</a></label>
+    				<label><a href="xxx">Disseny</a></label>
+    				<label><a href="xxx">Música</a></label>
+    			</div>
+    		</nav>
     	</aside>
 		<div class="bloog">										
   		{% for post in site.posts %}
