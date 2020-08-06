@@ -2,7 +2,6 @@
 /* ------------------------------------------------------------ Resets */
 
 h1 {line-height:.5em;}
-#side-bar {position:absolute;right:0;top:0;color:var(--color-grey) ;background-color: rgba(240,240,240,.90);border:none!important;padding:12px 0 0 6px;min-height:100%; }
 
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
