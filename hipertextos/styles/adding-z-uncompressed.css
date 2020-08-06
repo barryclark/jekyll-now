@@ -74,9 +74,8 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 .cover#page-header {background-color: var(--color-black);}
 #page-header.work-header {height:72px;background:rgba(245,245,245,.95)!important;
 	border:none!important;color: #999;overflow: hidden;letter-spacing: 0.012em;text-align: left;padding-top:10px;}
-#page-header.work-header > div {	margin: 0 auto;padding: 0;position: relative;width: 100%;max-width: var(--page-size);}
-#site-nav div {	margin: 0 auto;padding: 0;position: relative;width: 100%;max-width: var(--page-size);}
-#page-header.work-header h1 {font-weight: lighter; font-size:2.5em;line-height: .9em }
+#page-header.work-header > div {	margin: 0 auto;padding-left: 2%;position: relative;width: 100%;max-width: var(--page-size);}
+#page-header.work-header h1 {font-weight: lighter; font-size:2.1em;line-height: 1em; }
 #page-header.work-header h1 small {padding-left:12px;letter-spacing: 0.001em;font-weight: lighter}
 #phone-fine svg {max-width: 15px;margin-right: 5px;}
 #follows #icons a {background: transparent;border-radius: 50%;}
