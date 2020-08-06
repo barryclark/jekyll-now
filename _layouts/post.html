@@ -30,12 +30,9 @@ comments: true
 				</section>
 				{% endif %}
 				<em><hr></em>
-				<span>[
-  				{% for tag in page.tags %}
-    				{% capture tag_name %}{{ tag }}{% endcapture %}
-    				<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-  				{% endfor %}
-				]</span>
+				<aside id="post-share">
+					{% include share.html %}
+				</aside>
 				<div id="date">
     				<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
   				</div>
