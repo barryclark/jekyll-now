@@ -2,6 +2,7 @@
 /* ------------------------------------------------------------ Resets */
 
 h1 {line-height:.5em;}
+#side-bar {position:absolute;right:0;top:0;background-color: rgba(230,230,230,.75);border:none!important;margin-top:-21px;padding-top:12px;min-height:100%; }
 
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
