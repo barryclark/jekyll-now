@@ -75,7 +75,7 @@ section.cover-justify h5 {text-align:right;margin:0px!important;}
 #page-header.work-header {height:72px;background:rgba(245,245,245,.95)!important;
 	border:none!important;color: #999;overflow: hidden;letter-spacing: 0.012em;text-align: left;padding-top:10px;}
 #page-header.work-header > div {	margin: 0 auto;padding-left: 2%;position: relative;width: 100%;max-width: var(--page-size);}
-#page-header.work-header h1 {font-weight: lighter; font-size:2.1em;line-height: 1em; }
+#page-header.work-header h1 {font-weight: lighter; font-size:2em;line-height: 1em; }
 #page-header.work-header h1 small {padding-left:12px;letter-spacing: 0.001em;font-weight: lighter}
 #phone-fine svg {max-width: 15px;margin-right: 5px;}
 #follows #icons a {background: transparent;border-radius: 50%;}
@@ -337,7 +337,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 @media (max-width: 1366px) {
     #page-header.cover {padding-top: 69px;height:69vh!important;}
-    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:7vh!important;padding-top: 10px;}
+    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:6vh!important;padding-top: 5px;}
     #web-music {background-position: 100% 69% !important; }
     .cover-justify {min-width:100%;margin:0px;}
     img.dialog-svg {width: 80px !important;height: 70px;}
@@ -364,7 +364,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 @media (max-width: 1242px) {
     #page-header.cover {height:69vh;padding-top: 69px;}
     #layout section {padding:4px;}
-    #page-header.work-header {height:7vh!important;padding-top: 10px;}
+    #page-header.work-header {height:6vh!important;padding-top: 5px;}
     .cover#page-header h1 {line-height: 1em;font-size: 45px ;font-weight: normal ;}
     .cover#page-header h2 {line-height: 1.2em;font-size: 16px ;}
     img.dialog-svg {width: 140px;height: 100px;}
@@ -378,7 +378,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
     #web-music {background-image: url("/img/m-music.jpg")!important;}
 	#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
 	#glassed {background-image: url("/img/m-imacblur.jpg")!important;}
-    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:7vh!important;padding-top: 10px;}
+    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:6vh!important;padding-top: 5px;}
     div.masked {background-image: url("/img/m-golden.jpg");}
     #directories div {margin-left:38.6%;}
     #web-grafics .thumb-6 {width: 100%;margin-left:0px;}
@@ -388,7 +388,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 
 @media (max-width: 800px) {
     #page-header.cover {padding-top: 36px;height:72vh;}
-    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:6vh!important;padding-top: 18px;}
+    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:6vh!important;padding-top: 5px;}
     #textlighting {font-size:16px!important;line-height:1.6em;padding-bottom:15px;}
     .cover img {width: 60px;margin-bottom: 1.8em;}
     .cover#page-header h1 {line-height: .5em;font-size: 38px;}
@@ -446,7 +446,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 	#textlighting {font-size:15px!important;line-height:1.5em;padding-bottom:12px;}
     .cover#page-header h1 {line-height: 1em;font-size: 27px ;}
     .cover#page-header h2 {line-height: 1em;font-size: 12px !important;}
-    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:6vh!important;padding-top: 18px;}
+    #page-header.work-header {background:rgba(245,245,245,.95)!important;height:5vh!important;padding-top: 5px;}
     #glass-front a.cover-links:after {display:none;visibility: hidden;}
     #glass-front .cover-links {padding-top: 32px;margin-top: 0px;padding-bottom: 12px;}
     #web-music {background-image: url("/img/z-music.jpg")!important;}
