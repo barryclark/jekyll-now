@@ -909,50 +909,18 @@ nav label {
 	line-height: 16px;
 }
 
-/* Simple view */
-
-.simple article,
-#layout-simple:checked ~ #layout-result article {
-	border: none;
-	border-top: 0px;
-	padding: 16px 0;
-}
-.simple article h3,
-#layout-simple:checked ~ #layout-result article h3 {
-	margin: 0;
-}
-.simple article strong,
-#layout-simple:checked ~ #layout-result article strong {
-	margin: 0;background:var(--color-grey);right:0;padding:6px 12px 9px 12px;position:absolute;margin-top:5px;color:#fff;margin-right: 8px;border-radius: 3px;
-}
-.simple article div,
-#layout-simple:checked ~ #layout-result article div {
-
-}
-.simple article div img,
-#layout-simple:checked ~ #layout-result article div img {
-	height: 310px;
-	margin-bottom: 6px;
-	object-fit: cover;
-	width: 100%;
-}
-.simple article nav,
-#layout-simple:checked ~ #layout-result article nav {
-	display:none;
-}
-.simple article nav a,
-#layout-simple:checked ~ #layout-result article nav a {
-	display:none;
-}
-
 /* List view */
 
 .list article,
 #layout-list:checked ~ #layout-result article {
-	border-color: transparent;
-	height: 330px;
-	margin: 0;
+	border:none;border-bottom: thin solid #dddddd;
+	height: 270px;
+	margin: 0 0 5px 0;
 	padding: 0;
+}
+.list article p,
+#layout-list:checked ~ #layout-result article p {
+    font-size:15px;
 }
 .list article h3,
 #layout-list:checked ~ #layout-result article h3 {
@@ -967,18 +935,17 @@ nav label {
 .list article div,
 #layout-list:checked ~ #layout-result article div {
 	display: block;
-	height: 300px;
-	margin: 0 0 16px;
+	height: 320px;
+	margin: 0 0 16px;padding:0px;
 	overflow: hidden;
 }
 .list article div img,
 #layout-list:checked ~ #layout-result article div img {
-	border-radius: 2%;
-	height: 260px;
+	height: 80%;
 	float: left;
-	margin: 0 12px 0 0;
+	margin: 0 21px 0 0;
 	object-fit: cover;	
-	width: 260px;
+	width: 36%;
 }
 .list article nav,
 #layout-list:checked ~ #layout-result article nav {
@@ -1009,107 +976,47 @@ nav label {
     .list article div img,
     #layout-list:checked ~ #layout-result article div img {width:128px;height:128px;margin:0 12px 12px 0;}
 }
-/* Table view */
 
-.table article,
-#layout-table:checked ~ #layout-result article {
-	border: none;
-	clear: both;
-	display: block;
-	float: none;
-	height: 320px;
-	margin: 0 0 32px;
-	overflow: hidden;
-	vertical-align: bottom;
-	text-align: left;
-	Width: 100%;
-}
-.table article h3,
-.table article strong,
-.table article div,
-#layout-table:checked ~ #layout-result article h3,
-#layout-table:checked ~ #layout-result article strong,
-#layout-table:checked ~ #layout-result article div {
-	border: none;
-	border-top: 12px solid currentColor;
-	clear: none;
-	display: block;
-	float: left;
-	margin: 0 1%;
-	overflow: hidden;
+/* Simple view */
+
+.simple article,
+#layout-simple:checked ~ #layout-result article {
+	border:none;border-bottom: 1px solid #dddddd;
+	border-top: 0px;
 	padding: 16px 0;
-	width: 22.9999999999%; 
 }
-.table article h3,
-#layout-table:checked ~ #layout-result article h3 {
-	line-height: 32px;
-	width: 47.9999999999%;
+.simple article p,
+#layout-simple:checked ~ #layout-result article p {
+	font-size:1.3em;line-height:2em;color:var(--color-hardgrey);
 }
-.table article strong,
-#layout-table:checked ~ #layout-result article strong {
-	padding: 33px 8px 0;
+.simple article h3,
+#layout-simple:checked ~ #layout-result article h3 {
+	margin: 0;position:absolute;top:18px;right:0;padding:9px 16px 0 16px;border-radius:0 0 0 21px; background:rgba(255,255,255,.96) ;
 }
-.table article div,
-#layout-table:checked ~ #layout-result article div {
-	height: 254px;
+.simple article strong,
+#layout-simple:checked ~ #layout-result article strong {
+	margin: 0;background:var(--color-grey);right:0;padding:6px 12px 9px 12px;position:absolute;margin-top:5px;color:#fff;margin-right: 8px;border-radius: 3px;
 }
-.table article div img,
-#layout-table:checked ~ #layout-result article div img {
-	height: 254px;
+.simple article div,
+#layout-simple:checked ~ #layout-result article div {
+
+}
+.simple article div img,
+#layout-simple:checked ~ #layout-result article div img {
+	height: 480px;
+	margin-bottom: 6px;
 	object-fit: cover;
 	width: 100%;
 }
-.table article nav,
-#layout-table:checked ~ #layout-result article nav {
-	border: none;
-	clear: both;
-	margin: 16px 0;
+.simple article nav,
+#layout-simple:checked ~ #layout-result article nav {
+	display:none;
 }
-.table article nav a,
-#layout-table:checked ~ #layout-result article nav a {
-	background-color: var(--color-link) ;margin-left:12px;
-	color: #fff;
+.simple article nav a,
+#layout-simple:checked ~ #layout-result article nav a {
+	display:none;
 }
-@media (max-width: 767px) {
-	.table article,
-	#layout-table:checked ~ #layout-result article {
-		height: auto;
-		width: 100%;
-	}
-	.table article h3,
-	#layout-table:checked ~ #layout-result article h3,
-	#layout-table:checked ~ #layout-result article strong,
-	#layout-table:checked ~ #layout-result article div,
-	#layout-table:checked ~ #layout-result article nav {
-		margin: 0;
-		width: 47.9999999999%;
-	}
-	.table article div,
-	#layout-table:checked ~ #layout-result article div {
-		border: none;
-		height: 208px;
-		margin-bottom: 16px;
-	}
-	.table article div img,
-	#layout-table:checked ~ #layout-result article div img {
-		height: 240px;
-	}
-	.table article nav,
-	#layout-table:checked ~ #layout-result article nav {
-		text-align: left;
-	}
-}
-@media (max-width: 480px) {
-	.table article h3,
-	.table article strong,
-	.table article div,
-	#layout-table:checked ~ #layout-result article h3,
-	#layout-table:checked ~ #layout-result article strong,
-	#layout-table:checked ~ #layout-result article div {
-			margin: 0;
-			width: 100%;
-		}
-}
+
 
 /* ------------------------------------------------------------ Components */
 
@@ -1786,7 +1693,7 @@ dialog,
 	clear: none;
 	display: block;
 	float: left;
-	margin: 0 0.1% 23px;
+	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
