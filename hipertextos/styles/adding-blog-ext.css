@@ -41,6 +41,7 @@ img.img-min {width:125px;float:left;margin:6px 12px 12px 0;;border:1px solid #dd
 
 h3 a {color: var(--color-hardgrey) }
 h3 a:hover {color: var(--color-link); text-decoration:none;}
+h3 a:visited {color: #888;}
 
 /* nav Scroll */
 .nav-scroll {border-bottom:1px solid var(--color-softgrey);max-height:2.8em;margin-top:-10px!important;}
@@ -76,9 +77,9 @@ h3 a:hover {color: var(--color-link); text-decoration:none;}
 .list em u a,
 #layout-list:checked ~ #layout-result em u a {
     padding: 3px;font-size:15px;line-height:27px;
-    border: 1px solid var(--color-hardgrey);
+    border: thin solid var(--color-hardgrey);
     color: var(--color-hardgrey);
-    border-radius: 40px;
+    border-radius: 4px;
     width: 169px;
     margin-top: 21px;}
 .list em u a :hover,
