@@ -23,6 +23,9 @@ portfoli-lead: Treballs destacats
 blog: Blog
 blog-lead: Les meves coses
 
+# Blog section
+paginate: 6
+
 # Web Prices
 basica: 300
 normal: 600
@@ -92,8 +95,6 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-redirect-from # Redirect www
-
-plugins:
   - jekyll-seo-tag
 
 # Exclude these files from your production _site
