@@ -1687,8 +1687,6 @@ dialog,
 
 /* Gallery view */
 
-.gallery img,
-#layout-gallery:checked ~ #layout-result img {border: none;width: 100%;display: block;display: inline-block;margin: 0 !important;padding: 0 !important;-webkit-column-break-inside: avoid;-moz-column-break-inside: avoid;-moz-page-break-inside: avoid;page-break-inside: avoid;}
 
 .gallery article,
 #layout-gallery:checked ~ #layout-result article {
@@ -1700,7 +1698,7 @@ dialog,
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
-	width: 33.133333333%;  
+	width: 33.333333333%;  
 }
 .gallery article h3,
 #layout-gallery:checked ~ #layout-result article h3 {
@@ -1712,24 +1710,23 @@ dialog,
 }
 .gallery article div,
 #layout-gallery:checked ~ #layout-result article div {
-	height: 300px;
+	height: 300px;padding:0 4px 0 4px;
 	overflow: hidden;
 }
 .gallery article div img,
 #layout-gallery:checked ~ #layout-result article div img {
-	height: 290px;
-	overflow: hidden;
+	height: 290px;border:thin solid #ddd;
+	overflow: hidden;border-radius:18px;
 	object-fit: cover;
 	width: 100%;
 }
+.gallery article div img:hover,
+#layout-gallery:checked ~ #layout-result article div img:hover {
+    border-radius:3px;border:thin solid #555;
+}
 .gallery article nav,
 #layout-gallery:checked ~ #layout-result article nav {
-	border-color: transparent;
-	font-size: 26px;
-	line-height: 32px;
-	position: absolute;
-	bottom: 0; left: 0;
-	width: 100%;
+	display:none;
 }
 .gallery article nav a,
 #layout-gallery:checked ~ #layout-result article nav a {
@@ -1739,7 +1736,7 @@ dialog,
 }
 .gallery article:hover nav a,
 #layout-gallery:checked ~ #layout-result article:hover nav a {
-	color: #fff;text-decoration:none;text-shadow: 1px 2px 9px rgba(0,0,0,.9) 
+	color: #fff;text-decoration:none;
 }	
 
 /* Cards view */
@@ -1747,7 +1744,7 @@ dialog,
 .cards article,
 #layout-cards:checked ~ #layout-result article {
 	background-color: #fff;
-	border: none;
+	border: none!important;
 	color: #000;
 	clear: none;
 	display: block;
@@ -1759,7 +1756,7 @@ dialog,
 }
 .cards article:hover,
 #layout-cards:checked ~ #layout-result article:hover {
-	box-shadow: 0 2px 12px rgba(0,0,0,.23);
+	box-shadow: 2px 6px 21px rgba(0,0,0,.76);z-index:1;margin-top:-2px;padding-bottom:2px;
 }
 .cards article h3,
 #layout-cards:checked ~ #layout-result article h3 {
@@ -1771,13 +1768,13 @@ dialog,
 }
 .cards article div,
 #layout-cards:checked ~ #layout-result article div {
-	height: 175px;
+	height: 190px;
 	overflow: hidden;
 	padding: 0;
 }
 .cards article div img,
 #layout-cards:checked ~ #layout-result article div img {
-	height: 186px;
+	height: 190px;
 	overflow: hidden;
 	object-fit: cover;	
 	width: 100%;
