@@ -27,8 +27,7 @@ bloggin: true
 					<input type="radio" name="layout" id="layout-gallery" aria-hidden="true" hidden>
 					<input type="radio" name="layout" id="layout-cards" aria-hidden="true" hidden>
 										
-  <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
+
 		{% for post in site.posts %}
     	<div id="layout-result">
       		<article class="anm-fadeIn delay-1000">
@@ -37,9 +36,16 @@ bloggin: true
       		</article>
     	</div>
   		{% endfor %}
+
+{% for post in paginator.posts %}
+    	<div id="layout-result">
+      		<article class="anm-fadeIn delay-1000">
+        		<div>{% if post.img %}<a href="{{ site.baseurl }}{{ post.url }}"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>{{ post.excerpt }}</div>
+      			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><img src="https://isardmiralles.com/img/icons/right.png"></a></nav>
+      		</article>
+    	</div>
 {% endfor %}
 
-<!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
