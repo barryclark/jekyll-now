@@ -3,6 +3,8 @@
 
 h1 {line-height:.5em;}
 
+.listed article {border: none;width: 100%;display: block;display: inline-block;margin: 0 !important;padding: 0 !important;-webkit-column-break-inside: avoid;-moz-column-break-inside: avoid;-moz-page-break-inside: avoid;page-break-inside: avoid;}
+
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
 #post-video, #post-download, #post-share, #post-header {border:none;}
