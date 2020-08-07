@@ -27,7 +27,9 @@ bloggin: true
 					<input type="radio" name="layout" id="layout-gallery" aria-hidden="true" hidden>
 					<input type="radio" name="layout" id="layout-cards" aria-hidden="true" hidden>
 										
-  		{% for post in site.posts %}
+  <!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+		{% for post in site.posts %}
     	<div id="layout-result">
       		<article class="anm-fadeIn delay-1000">
         		<div>{% if post.img %}<a href="{{ site.baseurl }}{{ post.url }}"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>{{ post.excerpt }}</div>
@@ -35,6 +37,26 @@ bloggin: true
       		</article>
     	</div>
   		{% endfor %}
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
 
   	</div>
 	<em><hr></em>

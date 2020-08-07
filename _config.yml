@@ -24,7 +24,7 @@ blog: Blog
 blog-lead: Les meves coses
 
 # Blog section
-paginate: 6
+paginate: 5
 
 # Web Prices
 basica: 300
