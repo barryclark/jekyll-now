@@ -23,9 +23,6 @@ portfoli-lead: Treballs destacats
 blog: Blog
 blog-lead: Les meves coses
 
-# Blog section
-paginate: 5
-
 # Web Prices
 basica: 300
 normal: 600
