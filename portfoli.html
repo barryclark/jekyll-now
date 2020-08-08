@@ -7,45 +7,45 @@ galleria: true
 
     <main id="page-main" role="main">
 	<div id="layout" class="listed">
-    			<h3 class="anm-moveFromLeftFade delay-300"><u>Creacions</u></h3>
-			<section class="anm-fadeIn delay-1500">
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image1.jpg" alt="Il·lustració digital Bastian i Fújur"></a>
-  </article>
-  <article>
-	<a href="{{ site.baseurl }}/assets/mattepainting/image3.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image3.jpg" alt="Matte Painting per a la banda Sondelvent"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image4.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image4.jpg" alt="Matte Painting per a la banda Old Steam"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image5.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image5.jpg" alt="Matte Painting per a la banda Old Steam"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image6.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image6.jpg" alt="Matte Painting In Out"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image7.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image7.jpg" alt="Matte Painting paisatge amb isard i lluna"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image8.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image8.jpg" alt="Matte Painting the bear"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image2.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image2.jpg" alt="Art conceptual del llop"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image9.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image9.jpg" alt="Mandala Acid"></a>
-  </article>				
-			</section>
-			<hr>
-    			<h3 class="anm-moveFromLeftFade delay-2000"><u>Impressions</u></h3>
+    			<h3 class="anm-moveFromLeftFade delay-2000"><u>Creacions</u></h3>
 			<section class="anm-fadeIn delay-2000">					
 	{% assign image_files = site.static_files | where: "image", true %}
 	{% for image in image_files %}
 	<article>
-    	<a href="{{ site.baseurl }}/assets/print/{{ image.name }}" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/{{ image.name }}" alt="imatge secció impressions"></a>
+    	<a href="{{ site.baseurl }}/assets/creations/{{ image.name }}" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/creations/{{ image.name }}" alt="il·lustració"></a>
 	</article>
 	{% endfor %}
+			</section>
+			<hr>
+    			<h3 class="anm-moveFromLeftFade delay-300"><u>Disseny Gràfic</u></h3>
+			<section class="anm-fadeIn delay-1500">
+  <article>
+    <a href="{{ site.baseurl }}/assets/print/image1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image1.jpg" alt="Il·lustració digital Bastian i Fújur"></a>
+  </article>
+  <article>
+    <a href="{{ site.baseurl }}/assets/print/image2.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image2.jpg" alt="Art conceptual del llop"></a>
+  </article>
+  <article>
+	<a href="{{ site.baseurl }}/assets/print/image3.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image3.jpg" alt="Matte Painting per a la banda Sondelvent"></a>
+  </article>
+  <article>
+    <a href="{{ site.baseurl }}/assets/print/image4.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image4.jpg" alt="Matte Painting per a la banda Old Steam"></a>
+  </article>
+  <article>
+    <a href="{{ site.baseurl }}/assets/print/image5.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image5.jpg" alt="Matte Painting per a la banda Old Steam"></a>
+  </article>
+  <article>
+    <a href="{{ site.baseurl }}/assets/print/image6.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image6.jpg" alt="Matte Painting In Out"></a>
+  </article>
+  <article>
+    <a href="{{ site.baseurl }}/assets/print/image7.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image7.jpg" alt="Matte Painting paisatge amb isard i lluna"></a>
+  </article>
+  <article>
+    <a href="{{ site.baseurl }}/assets/print/image8.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image8.jpg" alt="Matte Painting the bear"></a>
+  </article>
+  <article>
+    <a href="{{ site.baseurl }}/assets/print/image9.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/image9.jpg" alt="Mandala Acid"></a>
+  </article>				
 			</section>
 			<hr>
 	</div><!-- /#Layout -->
