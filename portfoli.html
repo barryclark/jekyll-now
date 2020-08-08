@@ -8,7 +8,16 @@ galleria: true
     <main id="page-main" role="main">
 	<div id="layout" class="listed">
     			<h3 class="anm-moveFromLeftFade delay-2000"><u>Creacions</u></h3>
-			<section class="anm-fadeIn delay-2000">					
+			<section class="anm-fadeIn delay-2000">
+			    <div id="top-ilustration">
+			         <article class="thumb-8">
+                        <a href="{{ site.baseurl }}/assets/destacats/fujur.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/destacats/fujur..jpg" alt="Il·lustració digital de Bastian i Fújur"></a>
+                    </article>
+                    <aside class="thumb-4">
+                        <h5>Vamos Fújur!!</h5>
+                        <p>Passió pel dibuix, la fantasía, la ciencia ficció, els clàssics del cine, les noves tecnologíes i els pintors clàssics.</p>
+                    </aside>
+			    </div>			
 	{% assign image_files = site.static_files | where: "image", true %}
 	{% for image in image_files %}
 	<article>
