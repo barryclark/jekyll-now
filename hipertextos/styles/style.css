@@ -522,12 +522,12 @@ aside footer + nav,
 section footer + nav,
 dialog > nav {border-top: var(--one-pixel) solid currentColor;border-bottom: var(--one-pixel) solid transparent;padding: var(--twenty-pixel);text-align: right;}
 
-#site-nav {background: var(--color-nav) !important;border-bottom: none;font-size: 17px;color: rgba(200,200,200,.75) ;text-align:right!important;}
-.nav-logo {padding:3px 3px 3px 3px!important;margin-right:8px;}
+#site-nav {background: var(--color-nav) !important;border-bottom: none;font-size: 17px;color: rgba(250,250,250,.75) ;text-align:right!important;padding-top:8px;padding-bottom:6px;}
+.nav-logo {padding:1px 1px 1px 1px!important;margin-right:8px;min-width:40px;height:40px;}
 #site-nav a {font-weight: 300;border: none;letter-spacing: .018em;-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-ms-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;}
-#site-nav a:visited {color: var(--color-grey);text-decoration: none;}
+#site-nav a:visited {color: var(--color-soft-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover {color: #fff !important;opacity:.69;text-decoration: none;}
-#site-nav a b {font-weight: normal ;font-size:21px;font-family:"Yesteryear";}
+#site-nav a b {font-weight: lighter ;font-size:30px; font-family:"Yesteryear";z-index:1;padding-left:6px;}
 .home-nav {float:left!important;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color: var(--color-soft-grey)!important;font-weight: 400!important;}
 #site-nav label {color: var(--color-grey);border: thin solid transparent;}
