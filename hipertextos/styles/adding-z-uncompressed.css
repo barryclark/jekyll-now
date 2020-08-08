@@ -379,6 +379,7 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 }
 @media (max-width: 1024px) {
     #page-header.cover {padding-top: 36px;height:69vh;background-size: 100% auto;background-position: fixed !important;}
+    #top-ilustration figure, #top-ilustration div {width:50%;}
     #web-music {background-image: url("/img/m-music.jpg")!important;}
 	#web-oferta {background-image: url("/img/m-imac.jpg")!important;}
 	#glassed {background-image: url("/img/m-imacblur.jpg")!important;}
@@ -393,6 +394,8 @@ main {margin-bottom: 270px;z-index: 1;overflow:hidden;background-color: var(--co
 @media (max-width: 800px) {
     #page-header.cover {padding-top: 36px;height:72vh;}
     #page-header.work-header {background:rgba(245,245,245,.95)!important;height:6vh!important;padding-top: 5px;}
+    #top-ilustration figure, #top-ilustration div {width:100%;padding:0;margin:0;}
+    #top-ilustration figure img {box-shadow:none;border:none;margin-bottom:12px;}
     #textlighting {font-size:16px!important;line-height:1.6em;padding-bottom:15px;}
     .cover img {width: 60px;margin-bottom: 1.8em;}
     .cover#page-header h1 {line-height: .5em;font-size: 38px;}
