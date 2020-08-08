@@ -94,8 +94,9 @@ figure em a {border: none;border-bottom;line-height: 0.2em;padding: 12px 4px;}
 
 /* Portfolio Titles */
 #layout h3 u, #isotipos h3 u,  #paints h3 u  {font-weight: 100;}
-.gallerist #layout h3 {text-align: right;font-size:32px;color: #888;line-height: 1em}
-#isotipos {background:#000;min-width:100%;padding:0 2% 6px 6px!important;}}
+.gallerist #layout h3, .gallerist #isotipos h3, .gallerist #paints h3 {text-align: right;font-size:32px;color: #888;line-height: 1em}
+#isotipos {background:rgba(20,20,20,1); padding-top:21px!important;}
+#isotipos img {border-radius:6px;}
 hr.lifting {margin: 0px;height: 1px;}
 #glass-front {min-width:100%;background: rgba(12,12,12,.98) ;padding: 0px !important;}
 
