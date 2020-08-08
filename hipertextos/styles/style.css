@@ -1526,6 +1526,34 @@ nav strong label mark {
 	}
 }
 
+/* OUT BOX BACGROUND */
+.outbox,
+.outbox-left,
+.outbox-right {
+	position: relative;
+}
+.outbox:after,
+.outbox:before,
+.outbox-left:before,
+.outbox-right:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-color: inherit;
+	color: inherit;
+}
+.outbox:after,
+.outbox-left:before {
+	left: -50%;
+	right: 100%;
+}
+.outbox:before,
+.outbox-right:after {
+	left: 100%;
+	width: calc( (100vw - 100%) / 2 );
+}
+
 /* Basic animations */
 
 dialog,
