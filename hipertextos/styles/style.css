@@ -51,6 +51,10 @@ body {
  * http://applemusic.tumblr.com/
  */
 
+/** Nav Title */ 
+@font-face {font-family: "Yesteryear";font-weight: 400;src: url("https://isardmiralles.com/hipertextos/fonts/yesteryear/Yesteryear-Regular.woff");}
+* {font-family: "Yesteryear";}
+
 /** Ultra Light */
 @font-face {font-family: "San Francisco";font-weight: 100;src: url("https://isardmiralles.com/hipertextos/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");}
 /** Thin */
