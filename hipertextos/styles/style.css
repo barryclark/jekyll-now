@@ -527,7 +527,7 @@ dialog > nav {border-top: var(--one-pixel) solid currentColor;border-bottom: var
 #site-nav a {font-weight: 300;border: none;letter-spacing: .018em;-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-ms-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;}
 #site-nav a:visited {color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover {color: #fff !important;opacity:.69;text-decoration: none;}
-#site-nav a b {font-weight: normal ;font-size:21px;}
+#site-nav a b {font-weight: normal ;font-size:21px;font-family:"Yesteryear";}
 .home-nav {float:left!important;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color: var(--color-soft-grey)!important;font-weight: 400!important;}
 #site-nav label {color: var(--color-grey);border: thin solid transparent;}
