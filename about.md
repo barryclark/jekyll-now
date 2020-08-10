@@ -12,6 +12,6 @@ Cheryl is a frequent speaker ([oicheryl.com](http://oicheryl.com/)) and founder 
 
 # Contact
 
-Submit this form to enquire about paid speaking engagements, advisory and board roles.
+I offer virtual and in-person speaking engagements and panel moderating, typically at events on technology and digital innovation. I also take limited advisory and board roles. Submit this form to set up a call with your details and I will usually get back to you within 24 hours.
 
 <script type="text/javascript" src="https://form.jotformeu.com/jsform/92682794245368"></script>
