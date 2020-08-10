@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![]({{ site.baseurl }}/images/about_pic.jpg)
+![]({{ site.baseurl }}/images/about_pic.jpg =250x)
 
 Hi, my name is Charoo Anand and I am a PhD Economics student at UC Berkeley.
 
