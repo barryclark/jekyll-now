@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Too Much Maths, Too Little History
 header-includes:
     - \usepackage {hyperref}
