@@ -1,7 +1,14 @@
 ---
 layout: post
 title: Too Much Maths, Too Little History
+header-includes:
+    - \usepackage {hyperref}
+    - \hypersetup {colorlinks = true, linkcolor = red, urlcolor = red}
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 One hundred and thirty years ago, there was the ‘methodenstreit’. That means ‘a battle over methods’ in German and it described the contemporary debate in economics. For over a decade, the German Historical School and the Austrian School argued over the correct way to study economics, and whether that constituted detailed historical investigation or mathematized logic.
 
@@ -64,3 +71,4 @@ I don’t expect us to reach a consensus but my aim was to clarify some misconce
 * Different fields in economics require different sets of methods $\implies$Separate debates accordingly
 
 * Critique is only constructive if we’re specifying an alternative $\implies$Specify a framework for incorporating more history
+
