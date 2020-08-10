@@ -4,6 +4,8 @@ title: Too Much Maths, Too Little History
 header-includes:
     - \usepackage {hyperref}
     - \hypersetup {colorlinks = true, linkcolor = red, urlcolor = red}
+    
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
