@@ -19,7 +19,7 @@ Direct debit has much lower transaction fees, so we appreciate you choosing dire
 
 ### Sponsor individual events
 
-For bank transfers:
+For bank transfers, please share your company name, billing email (e.g. accounts@example.com) and mailing address. We will invoice you on the 15th of the month prior to the event:
 
 > **Payee name:** Cloud Native London Ltd  
 > **Sort code:** 60-83-71  
