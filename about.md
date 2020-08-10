@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![]({{ site.baseurl }}/images/about_pic.jpg)
+<img align="left" height="100" src="https://github.com/charooanand/charooanand.github.io/tree/master/images/about_pic.jpg">
 
 Hi, my name is Charoo Anand and I am a PhD Economics student at UC Berkeley.
 
