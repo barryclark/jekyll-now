@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+<img style="padding-right: 20px; padding left: 20px;" align="left" width="200" src="{{ site.baseurl }}/images/about_pic.jpg">
 
-### More Information
+Hi, my name is Charoo Anand and I am a PhD Economics student at UC Berkeley.
 
-A place to include any other types of information that you'd like to include about yourself.
+You cannot find my CV [here]().
 
-### Contact me
+You can email me at [charoo_anand@berkeley.edu](mailto:charoo_anand@berkeley.edu).
 
-[email@domain.com](mailto:email@domain.com)
+This website is very much under construction!
+
+
