@@ -1,16 +1,7 @@
 ---
 layout: post
 title: Too Much Maths, Too Little History
-header-includes:
-    - \usepackage {hyperref}
-    - \hypersetup {colorlinks = true, linkcolor = red, urlcolor = red}
-    
-output: html_document
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 One hundred and thirty years ago, there was the ‘methodenstreit’. That means ‘a battle over methods’ in German and it described the contemporary debate in economics. For over a decade, the German Historical School and the Austrian School argued over the correct way to study economics, and whether that constituted detailed historical investigation or mathematized logic.
 
@@ -22,7 +13,7 @@ However, these discussions rarely reach a satisfying conclusion. I have to assum
 
 Imagine a game of tug of war. On one side stand the mathematicians, with the slogan ‘maths is just the language of economics’ embroidered across their jerseys. The historical team take the other side. ‘But you need more context’ and ‘the model is too simple’ are among their most popular chants and they are guaranteed crowd-pleasers. The audience cheers every time. The game starts and they begin tugging but, quite soon, both teams realise that they have no interest in dragging the other across the line. They continue trash talking a little but no one pulls too hard in either direction. A young econometrician, waiting eagerly on the bench, is then called to sub in. But when the whistle blows, she realises that she doesn’t know which team she’s on. She loves the data, a staunch empiricist like her historical colleagues, but the mathematicians taught her everything. Is it not their models that she estimates? Now everyone stops. They’re all looking at each other. ‘You look at old data, too? Why aren’t you on my team? Wait, am I on your team?’ Unclear on how to proceed or even where to stand, they each concede that the other side make valid points and retreat back to their offices.
 
-If you haven’t watched the ‘Too Much Maths, Too Little History’ debate, that would be my summary\footnote{But also, you can click \href{https://youtu.be/6rXBBqMmIP8}{here} to watch it.}. It motivates a few important points and I will explore them further.
+If you haven’t watched the [‘Too Much Maths, Too Little History’ debate](https://youtu.be/6rXBBqMmIP8), that would be my summar. It motivates a few important points and I will explore them further.
 
 ## Too Much Maths? What is Maths?
 
@@ -34,9 +25,9 @@ That being said, I’d still offer a defence for the theories. Specifically, and
 
 Maybe you’re thinking that this defence is pointless. The proposition was not to replace maths, it was only to offer more history. There’s some truth here. The typical economics undergraduate needn’t take a module in economic history or history of economic thought, unless they choose to. We could be looking at a generation of better economists if we did. That being said, I reject the argument that our education was entirely ahistorical.
 
-An interested student can pick their outside options from any department and, in third year, modules in the history and the philosophy of economics are available. Even our \href{https://www.lse.ac.uk/resources/calendar2020-2021/courseGuides/EC/2020_EC210.htm}{intermediate macro} class, taken by around 650 students each year, is shot through with history. We learn the Malthusian Growth Model, which was penned in 1798, and then we do the Solow model, the 20th century upgrade. We see how Keynes modelled the demand for money and how this subsequently became one side of the IS-LM model, which synthesised Keynesianism with Neoclassical theories. This takes us to the Philips Curve, how it broke down in the 1970s and the policy questions that this raised. We go from hyperinflation in Weimar Germany to the rise of Bitcoin, from the Great Depression to the Euro Crisis. 
+An interested student can pick their outside options from any department and, in third year, modules in the history and the philosophy of economics are available. Even our [intermediate macro](https://www.lse.ac.uk/resources/calendar2020-2021/courseGuides/EC/2020_EC210.htm) class, taken by around 650 students each year, is shot through with history. We learn the Malthusian Growth Model, which was penned in 1798, and then we do the Solow model, the 20th century upgrade. We see how Keynes modelled the demand for money and how this subsequently became one side of the IS-LM model, which synthesised Keynesianism with Neoclassical theories. This takes us to the Philips Curve, how it broke down in the 1970s and the policy questions that this raised. We go from hyperinflation in Weimar Germany to the rise of Bitcoin, from the Great Depression to the Euro Crisis. 
 
-Framing is important. It doesn’t feel so historical when you’re just trying to solve for $dy/dx$ (assuming $N$ is constant). But maybe the issue isn’t that the model takes $N$ as given. Perhaps it’s us taking the models as given. Perhaps we should be reading our course pack as a 200-year evolution of economic thought, intertwined with economic history. I think we’re learning more history than we realise.
+Framing is important. It doesn’t feel so historical when you’re just trying to solve for dy/dx (assuming N is constant). But maybe the issue isn’t that the model takes N as given. Perhaps it’s us taking the models as given. Perhaps we should be reading our course pack as a 200-year evolution of economic thought, intertwined with economic history. I think we’re learning more history than we realise.
 
 
 ## Wait, What is Economics?
@@ -64,13 +55,13 @@ There wasn’t an official winner of the Methodenstreit but, given where we are 
 I don’t expect us to reach a consensus but my aim was to clarify some misconceptions and, in doing so, facilitate a more coherent discussion. I’ll conclude with five points that should preclude the confusion that prematurely ends our debates.
 
 
-* Empiricism does not belong to either side $\implies$ Don’t try to win by claiming it
+* Empiricism does not belong to either side -- Don’t try to win by claiming it
 
-*	Theory is not inherently useless $\implies$ Avoid hasty generalisations of modern theory
+*	Theory is not inherently useless -- Avoid hasty generalisations of modern theory
 
-* Our macro course does teach history $\implies$ Approach courses  with a historical perspective
+* Our macro course does teach history -- Approach courses  with a historical perspective
 
-* Different fields in economics require different sets of methods $\implies$Separate debates accordingly
+* Different fields in economics require different sets of methods -- Separate debates accordingly
 
-* Critique is only constructive if we’re specifying an alternative $\implies$Specify a framework for incorporating more history
+* Critique is only constructive if we’re specifying an alternative -- Specify a framework for incorporating more history
 
