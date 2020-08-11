@@ -6,6 +6,7 @@ permalink: /news/
 ## 2020
 
 __August__
+ - Presented an online oral presentation, “The Mesenchymal Tissue Landscape: A scRNA-seq based Metric of Liposarcoma Differentiation," Columbia Trainee Symposium for Organoids & Organs-on-a-Chip #OOoC2020
  - Highlighted in NAVS Alumni Spotlight [NAVS Alumni Spotlight: IFER Fellowship Recipient Danh Truong](https://www.navs.org/navs-alumni-spotlight-ifer-fellowship-recipient-danh-truong/#.XzFpGi2ZN24)
 
 __January__
