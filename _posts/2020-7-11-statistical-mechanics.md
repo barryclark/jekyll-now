@@ -8,3 +8,6 @@ In the other hand, complex theory predicts complex macroscopic behavior from sim
 
 $ s = -k \ln\omega $
 $ H = -\sum p\ln(p)$
+
+What is the relation of teh definition of irrersivility and the assimetry in Bayes rule.
+$ P(h|D) = \frac{P(D|h) P(h)}{P(D)} $
