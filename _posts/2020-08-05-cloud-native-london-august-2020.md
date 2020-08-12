@@ -16,6 +16,8 @@ We were back with our August Cloud Native London virtual meetup was back on Zoom
 
 ![](/images/August_2020_pic2.PNG)
 
+*KubeCon CloudNativeCon is fast approaching!* [Register with code KCEUVMM20 for 20% off](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/register/)
+
 We are as always immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [xMatters](https://www.xmatters.com/), [Palo Alto Networks](https://www.paloaltonetworks.com/) and [Intel](https://www.intel.co.uk/content/www/uk/en/homepage.html), for your ongoing support and sponsorship.
 
 ### Overview
