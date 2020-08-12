@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "KubeCon + CloudNativeCon Europe - TechBeacon"
+title: "KubeCon + CloudNativeCon Europe: Cloud native goes mainstream - TechBeacon"
 description: "Cheryl Hung, VP Ecosystem at CNCF, talks about the things to look forward to at KubeCon + CloudNativeCon EU"
 image: https://vengreso.com/wp-content/uploads/sbe-uploads/2015/09/75_TechBeacon.jpg
 tags:
@@ -16,6 +16,8 @@ In this TechBeacon article, I highlight trends and sessions to look forward to a
 >
 > That momentum will be on full display at the upcoming KubeCon + CloudNativeCon Europe Virtual, which runs August 17-20. KubeCon conferences are the perfect place > to track big trends, learn best practices, and share knowledge and inspiration.
 >
-> Here are the key topics you can expect to see highlighted in the conference sessions and hallway conversations.[Continue reading...](https://techbeacon.com/enterprise-it/kubeconcloudnativecon-europe-cloud-native-goes-mainstream)
+> Here are the key topics you can expect to see highlighted in the conference sessions and hallway conversations.
+
+[Continue reading...](https://techbeacon.com/enterprise-it/kubeconcloudnativecon-europe-cloud-native-goes-mainstream)
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very interesting about service mesh systems that keep a promise that is not a reality yet in production environments, unfortunately. Great article <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> !. Looking forward for the <a href="https://twitter.com/KubeCon_?ref_src=twsrc%5Etfw">@KubeCon_</a> 2020!! <a href="https://t.co/J55ujPjqJs">https://t.co/J55ujPjqJs</a></p>&mdash; Marcos F. Lobo (@arrayexception) <a href="https://twitter.com/arrayexception/status/1286783997134229504?ref_src=twsrc%5Etfw">July 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

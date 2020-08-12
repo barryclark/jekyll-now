@@ -6,7 +6,6 @@ location: London UK
 image: https://nickandcheryl2018.files.wordpress.com/2019/04/sun-3-speeches-54-of-133.jpg?w=1750&h=
 tags:
   - "2020"
-  - Featured
 ---
 
 *Updated 6 April: My Uncle has also passed away. See below for more.*

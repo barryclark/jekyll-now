@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How the CNCF’s Radar ‘Shows Reality’ - The New Stack"
+title: "How the CNCF’s Radar ‘Shows Reality’ - Interview with The New Stack"
 description: "Cheryl Hung, VP Ecosystem at CNCF, talks about the principles behind the CNCF Technology Radar"
 image: https://cdn.thenewstack.io/media/2020/07/b9e8225f-cncf-vp-cheryl-hung.png
 video: https://www.youtube.com/embed/d3DZdn8n6Ys

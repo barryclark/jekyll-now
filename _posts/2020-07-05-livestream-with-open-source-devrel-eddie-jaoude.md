@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The CNCF Technology Radar - Keynote, Camp Cloud Native"
+title: "The CNCF Technology Radar - Livestream with Eddie Jaoude"
 description: "Watch Cheryl Hung's webinar on the CNCF Technology Radar and how end users are adopting cloud native continuous delivery"
 image: /images/2020-07-05-livestream-with-open-source-devrel-eddie-jaoude.jpg
 video: https://www.youtube.com/embed/CeZsEUbYw-g

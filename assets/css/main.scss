@@ -356,7 +356,9 @@ section {
 }
 
 blockquote {
-  border-color: $light-content-color;
+  border-color: $darker-content-color;
+  color: $darker-content-color;
+  font: message-box;
 }
 
 .list-entry-title {

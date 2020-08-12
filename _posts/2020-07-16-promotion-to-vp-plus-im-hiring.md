@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Promotion to Vice President, plus I'm hiring!"
+title: "Promotion to Vice President, plus I'm hiring for an Ecosystem Advocate!"
 description: "Cheryl Hung is promoted from Director to VP Ecosystem at CNCF"
 image: /images/2020-07-16-promotion-to-vp-plus-im-hiring.gif
 tags:
   - Article
   - "2020"
+  - Featured
 ---
 
 [Following my promotion to VP](https://www.cncf.io/blog/2020/07/08/deepening-end-user-engagement-with-an-enhanced-ecosystem-program/), I'm hiring for an Ecosystem Advocate to join my team at CNCF!

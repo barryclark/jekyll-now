@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "gRPC: Past, present and future - Keynote at gRPC Conf"
+title: "gRPC: Past, present and future - Keynote with Spotify at gRPC Conf"
 description: "Hear about how and why Spotify switched to gRPC with Cheryl Hung, VP Ecosystem at CNCF and Leonardo Pistone, Core Infrastructure Engineer, Spotify"
 image: /images/2020-07-03-grpc-past-present-and-future-keynote-grpcconf.png
 slides: //www.slideshare.net/slideshow/embed_code/key/DQktmXa5q6IkWd
