@@ -92,6 +92,7 @@ jekyll_admin:
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-paginate
+  - jekyll-feed
 # Exclude these files from your production _site
 exclude:
     - Gemfile
