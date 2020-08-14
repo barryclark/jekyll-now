@@ -17,7 +17,7 @@ cd /home/pi/dgw
 ### 3.  Download Adafruit_DHT_SenML.py.
 This script reads temperature and humidity values from a DHT sensor and prints the measurements in SenML format. (You need appropriate drivers to run it)
 ```bash
-wget https://code.linksmart.eu/projects/LS/repos/linksmart-iot-hackatons/raw/iot-hackaton-2018-part1/Adafruit_DHT_SenML.py
+wget https://raw.githubusercontent.com/linksmart/linksmart-iot-hackatons/master/iot-hackaton-2018-part1/Adafruit_DHT_SenML.py
 ```
     
 ### 4.  Download an image with DHT drivers and runs it once.
