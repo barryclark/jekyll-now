@@ -465,25 +465,27 @@ For every hom-set
 \end_layout
 
 \begin_layout Standard
-Moreover, 
-\begin_inset Formula $S\prec T$
-\end_inset
-
- denotes a 
-\emph on
-division
-\emph default
- between categories 
 \begin_inset Formula $S$
 \end_inset
 
- and 
+ 
+\emph on
+divides
+\emph default
+ 
 \begin_inset Formula $T$
 \end_inset
 
+ if the hom-set relation is injective, denoted by 
+\begin_inset Formula $S\prec T$
+\end_inset
+
 .
- If the two categories divide each other then they are called equivalent
- denoted by 
+ If the two categories divide each other then they are called 
+\emph on
+equivalent 
+\emph default
+denoted by 
 \begin_inset Formula $S\sim T$
 \end_inset
 

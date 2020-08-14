@@ -10,6 +10,7 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \usepackage{knowledge}
+\usepackage[all]{xy}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -441,6 +442,7 @@ relational morphism
 , is a relation of categories which additionally satsifies :
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 Every object relation is a function.
 \end_layout
@@ -457,6 +459,7 @@ For every hom-set
 .
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -496,6 +499,120 @@ denoted by
 
  defines a partial order on categories.
  
+\end_layout
+
+\begin_layout Definition*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Division of relational morphisms]
+\end_layout
+
+\end_inset
+
+ Given two relational morphisms 
+\begin_inset Formula $\varphi:S\longrightarrow T$
+\end_inset
+
+ and 
+\begin_inset Formula $\varphi':S'\longrightarrow T'$
+\end_inset
+
+ between categories, we say 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ divides 
+\begin_inset Formula $\varphi'$
+\end_inset
+
+ if there exists a pair 
+\begin_inset Formula $(d,\,\theta)$
+\end_inset
+
+ where 
+\begin_inset Formula $d:S\longrightarrow S'$
+\end_inset
+
+ is a division and 
+\begin_inset Formula $\theta:T\longrightarrow T$
+\end_inset
+
+ is a morphism, such that the following diagram is subcommutative, i.e.
+ 
+\begin_inset Formula $\varphi\theta\subseteq d\varphi'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+xymatrix{
+\end_layout
+
+\begin_layout Plain Layout
+
+	S 
+\backslash
+ar[d]_{
+\backslash
+varphi} 
+\backslash
+ar[r]^d 
+\backslash
+ar@{}[dr]|{
+\backslash
+subseteq} & {S'} 
+\backslash
+ar[d]^{
+\backslash
+varphi '}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	T 
+\backslash
+ar[r]_{
+\backslash
+theta} & T'
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Question
@@ -693,25 +810,7 @@ name "lem:1.4"
 \begin_inset Newline newline
 \end_inset
 
-Now consider the category, 
-\begin_inset Formula $\boldsymbol{A}_{2}$
-\end_inset
 
- defined in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "A-2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- We then have,
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -808,7 +907,22 @@ name "A-2"
 
 \end_inset
 
+Now consider the category, 
+\begin_inset Formula $\boldsymbol{A}_{2}$
+\end_inset
 
+ defined in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "A-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We then have,
 \end_layout
 
 \begin_layout Proposition
@@ -1459,7 +1573,7 @@ For a relational morphism
 \begin_inset Formula $\varphi:S\vartriangleleft T$
 \end_inset
 
- we associate with every 
+ between monoids we associate with every 
 \begin_inset Formula $t\in S\varphi$
 \end_inset
 
@@ -1504,13 +1618,172 @@ D_{\varphi}(t_{1},\,t_{2})=\{[t_{1},\,(s,\,t)]\mid(s,\,t)\in\#\varphi,\,t_{1}t=t
  with composition given by
 \begin_inset Formula 
 \[
-[t,\,(s',\,t')][tt',\,(s",\,t")]=[t,\,(s's",\,t't")]\,.
+[t,\,(s',\,t')][tt',\,(s'',\,t'')]=[t,\,(s's'',\,t't'')]\,.
 \]
 
 \end_inset
 
  The identity arrow on each object is the function 
 \begin_inset Formula $[t,\,(1,\,1)]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We can generalise this definition for relational morphism of categories
+ as,
+\end_layout
+
+\begin_layout Definition*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Derived 2-category of a relational morphism]
+\end_layout
+
+\end_inset
+
+ The 
+\emph on
+derived 2-category
+\emph default
+ 
+\begin_inset Formula $D_{\varphi}$
+\end_inset
+
+ of a relational morphism 
+\begin_inset Formula $\varphi:S\longrightarrow T$
+\end_inset
+
+ between categories is a 2-category defined as, 
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\text{Obj}(D_{\varphi})=\text{Obj}(S\varphi),\\
+\text{Hom}_{D_{\varphi}}(c,\,c')=\text{Hom}_{T}(c,\,c')\cap\text{Arr}(S)\varphi,\\
+\text{Face}_{D_{\varphi}}(t,\,t')=\{[s,\,t'']\mid(s,\,t'')\in\#\varphi,\,tt''=t'\}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Division of 2-categories]
+\end_layout
+
+\end_inset
+
+ A 
+\emph on
+division of 2-categories
+\emph default
+, 
+\begin_inset Formula $\partial:\mathsf{S}\prec\mathsf{T}$
+\end_inset
+
+ is a relation between the 2-categories 
+\begin_inset Formula $\mathsf{S}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathsf{T}$
+\end_inset
+
+ such that,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Every object relation is a function.
+\end_layout
+
+\begin_layout Enumerate
+Every hom-set relation is a function.
+\end_layout
+
+\begin_layout Enumerate
+Every face-set relation is injective such that 
+\begin_inset Formula $x\in\text{Face}(t,\,t')\implies x\partial\neq\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Example
+The relational morphism 
+\begin_inset Formula $\varphi:S\longrightarrow T$
+\end_inset
+
+ between monoids can be interpreted as a relational morphism 
+\begin_inset Formula $\partial:\mathbf{S}\longrightarrow\mathbf{T}$
+\end_inset
+
+ between the categories 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{T}$
+\end_inset
+
+, where 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+ denotes the one object category with the set of elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ as the morphisms with the corresponding composition rules and likewise
+ for 
+\begin_inset Formula $\mathbf{T}$
+\end_inset
+
+.
+ Then the derived 2-category 
+\begin_inset Formula $D_{\partial}$
+\end_inset
+
+ of 
+\begin_inset Formula $\partial$
+\end_inset
+
+ with, 
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\text{Obj}(D_{\partial})=\text{Obj}(\mathbf{T}),\\
+\text{Hom}_{D_{\partial}}(c,\,c)=S\varphi,\\
+\text{Face}_{D_{\partial}}(t,\,t')=\{[s,\,t'']\mid(s,\,t'')\in\#\varphi,\,tt''=t'\}
+\end{array}
+\]
+
+\end_inset
+
+can be used to denote the derived category 
+\begin_inset Formula $D_{\varphi}$
 \end_inset
 
 .
@@ -1571,7 +1844,28 @@ status open
 
 \end_deeper
 \begin_layout Proof
-\begin_inset Formula $(a)$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(a)]
+\end_layout
+
 \end_inset
 
  If 
@@ -1599,8 +1893,15 @@ status open
  The converse is clear.
 \end_layout
 
-\begin_layout Proof
-\begin_inset Formula $(b)$
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(b)]
+\end_layout
+
 \end_inset
 
  
@@ -1634,6 +1935,7 @@ s\theta=[1,\,(s,\,1)]
  is an isomorphism.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1642,7 +1944,13 @@ s\theta=[1,\,(s,\,1)]
 \end_layout
 
 \begin_layout Question
-\begin_inset Formula $ $
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -1725,6 +2033,429 @@ noprefix "false"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "admissible-fact"
+
+\end_inset
+
+Let 
+\begin_inset Formula $\varphi:S\longrightarrow T$
+\end_inset
+
+ be a relational morphism between monoids.
+ An 
+\emph on
+admissible factorization 
+\emph default
+
+\begin_inset Formula $(\alpha,\,W,\,\beta)$
+\end_inset
+
+ of 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ is any factorization of the form 
+\begin_inset Formula 
+\begin{align*}
+\varphi=\alpha^{-1}\beta, &  & \alpha:W\longrightarrow S, &  & \beta:W\longrightarrow T,
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $W$
+\end_inset
+
+ is a monoid, and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ are homomorphisms.
+ We then define an intermediate category 
+\begin_inset Formula $W_{\varphi}$
+\end_inset
+
+ as,
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\text{Obj}(W_{\varphi})=S\varphi,\\
+W_{\varphi}(t,\,t')=\{w\in W\mid t(w\beta)=t'\}
+\end{array}
+\]
+
+\end_inset
+
+ and a quotient morphism 
+\begin_inset Formula $\eta:W_{\varphi}\longrightarrow D_{\varphi}$
+\end_inset
+
+ also known as the 
+\emph on
+representation 
+\emph default
+of 
+\begin_inset Formula $D_{\varphi}$
+\end_inset
+
+ obtained from the factorization, acting as the identity for objects and
+ for hom-sets, 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\eta:W_{\varphi}(t,\,t')\longrightarrow D_{\varphi}(t,\,t'),\\
+w\eta=[w\alpha,\,w\beta].
+\end{array}
+\]
+
+\end_inset
+
+It can be verified that 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is a quotient morphism.
+ 
+\end_layout
+
+\begin_layout Standard
+Representations are sometimes used when established a division 
+\begin_inset Formula $D_{\varphi}\prec V$
+\end_inset
+
+.
+ Given a convenient admissible factorization 
+\begin_inset Formula $(\alpha,\,W,\,\beta)$
+\end_inset
+
+, a relational morphism 
+\begin_inset Formula $\psi:W_{\varphi}\vartriangleleft V$
+\end_inset
+
+ is established.
+ Then, since inverse of a quotient morphism is a division, the composition
+ yields a relational morphism 
+\begin_inset Formula $\eta^{-1}\psi$
+\end_inset
+
+.
+ We then show that the composition is actually a division.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:div-of-derived-gen-cat"
+
+\end_inset
+
+If 
+\begin_inset Formula $\varphi\prec\varphi'$
+\end_inset
+
+ for two relational morphisms 
+\begin_inset Formula $\varphi:S\longrightarrow T$
+\end_inset
+
+ and 
+\begin_inset Formula $\varphi':S'\longrightarrow T'$
+\end_inset
+
+ between categories then 
+\begin_inset Formula $D_{\varphi}\prec D_{\varphi'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next result is a consequence of the previous theorem, nevertheless we
+ provide a proof for the same.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset CommandInset label
+LatexCommand label
+name "prop:div-of-derived-gen-mon"
+
+\end_inset
+
+If 
+\begin_inset Formula $\varphi\prec\varphi'$
+\end_inset
+
+ for two relational morphisms 
+\begin_inset Formula $\varphi:S\longrightarrow T$
+\end_inset
+
+ and 
+\begin_inset Formula $\varphi':S'\longrightarrow T'$
+\end_inset
+
+ between monoids then 
+\begin_inset Formula $D_{\varphi}\prec D_{\varphi'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:div-of-derived-1"
+
+\end_inset
+
+In the following commutative diagram of relational morphisms of monoids,
+ 
+\end_layout
+
+\begin_layout Corollary
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+xymatrix{
+\end_layout
+
+\begin_layout Plain Layout
+
+	& S 
+\backslash
+ar[dl]_
+\backslash
+varphi 
+\backslash
+ar[dr]^{
+\backslash
+varphi '} & 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	T 
+\backslash
+ar[rr]_
+\backslash
+theta & & T'
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+]
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a morphism.
+ Then 
+\begin_inset Formula $D_{\varphi}\prec D_{\varphi'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:div-of-derived-2"
+
+\end_inset
+
+In the following commutative diagram of relational morphisms of monoids,
+ 
+\end_layout
+
+\begin_layout Corollary
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+xymatrix{
+\end_layout
+
+\begin_layout Plain Layout
+
+	S 
+\backslash
+ar[dr]_
+\backslash
+varphi 
+\backslash
+ar[rr]^d & & {S'} 
+\backslash
+ar[dl]^{
+\backslash
+varphi '} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	& T &
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+]
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset Formula $d$
+\end_inset
+
+ is a division.
+ Then 
+\begin_inset Formula $D_{\varphi}\prec D_{\varphi'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+Prove corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:div-of-derived-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:div-of-derived-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ without using proposition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prop:div-of-derived-gen-mon"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\emph on
+(
+\emph default
+Hint : 
+\emph on
+Use the notion of admissible facorizations)
+\end_layout
+
+\begin_layout Subsection
+The derived category theorem
+\end_layout
+
+\begin_layout Standard
+dde
 \end_layout
 
 \begin_layout Standard
