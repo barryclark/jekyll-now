@@ -12,6 +12,8 @@ permalink: /COVID19/archive/
 
 * At the bottom I've included a graphic that I made that summarizes most of the datasets from February to July.
 
+***
+
 ### August 1st thoughts & takeaways:
 
 * Things have flattened out since the latest spike in cases. 1.2% decrease last week. 
