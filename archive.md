@@ -4,6 +4,14 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### August 14th thoughts & takeaways:
+
+* Traffic volumes fell over the past couple of weeks, speeds are up sharply this week. Will have to look into this further to see if there were some changes at our study intersections.
+
+* As for those study intersections, I've [finally included a map of the intersections](https://www.google.com/maps/d/edit?mid=1zGywOn2kiuE8hZK5PRbp72AStodktfoR&usp=sharing) the traffic volumes come from. 
+
+* At the bottom I've included a graphic that I made that summarizes most of the datasets from February to July.
+
 ### August 1st thoughts & takeaways:
 
 * Things have flattened out since the latest spike in cases. 1.2% decrease last week. 
