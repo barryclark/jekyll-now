@@ -117,7 +117,8 @@ With the following configuration, Device Gateway executes the Python script ever
           "methods": [
                 "PUB"
           ],
-          "pub_topic": "LS/v2/DGW/<device-name>/senml"
+          "pub_topic": "LS/v2/DGW/<device-name>/senml",
+          "pub_retained": false
         },
         {
           "type": "REST",
