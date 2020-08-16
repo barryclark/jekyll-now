@@ -46,17 +46,28 @@ In the following steps, we will use these placeholders:
 We'll use the DHT library container (from previous step) to run Device Gateway. The goal is to execute the Python script that reads the measurements and expose the SenML output over networking protocols.
 
 ### 1.  Download Device Gateway
-Download `device-gateway-linux-arm` and make it executable. Deployment instructions on wiki: [https://docs.linksmart.eu/display/DGW](https://docs.linksmart.eu/display/DGW).
+Download the latest v1.x.x `device-gateway-linux-arm` and make it executable. Deployment instructions on [wiki](https://github.com/linksmart/device-gateway/wiki).
+
+TLDR? For v1.2.2 (latest stable at the time of writing):
+```bash
+cd /home/pi/dgw
+wget https://github.com/linksmart/device-gateway/releases/download/v1.2.2/device-gateway-linux-arm
+chmod +x device-gateway-linux-arm
+```
     
 ### 2.  Configure Device Gateway:  
       
     
-1.  Configure the DGW service. Modify (replace  <device-name> with the device name e.g. linksmart-cyan and  <mqtt-broker-uri> with the broker endpoint) and place in `/home/pi/dgw/conf/device-gateway.json`
+1.  Configure the DGW service. Modify the following JSON object and place it in `/home/pi/dgw/conf/device-gateway.json`.
+
+Replace <device-name> with the device name. E.g.: linksmart-cyan
+    
+Replace <mqtt-broker-uri> with the broker endpoint. E.g.: ssl://demo.linksmart.eu:8883
         
 ```json
 {
   "id": "",
-  "description": "Example Gateway",
+  "description": "Example Device Gateway",
   "publicEndpoint": "http://fqdn-of-the-host:8080",
   "http": {
     "bindAddr": "0.0.0.0",
@@ -69,15 +80,17 @@ Download `device-gateway-linux-arm` and make it executable. Deployment instructi
     "MQTT": {
       "url": "<mqtt-broker-uri>",
       "prefix": "<device-name>-dgw-",
-      "offlineBuffer": 10000
+      "offlineBuffer": 100
     }
   }
 }
 ```
         
 2.  Configure the device agent. 
-Modify (replace  <device-name>s with the device hostname, e.g. linksmart-cyan) and place in `/home/pi/dgw/conf/devices/dht22.json`
+Modify the following JSON object and place in `/home/pi/dgw/conf/devices/dht22.json`.
 
+Replace all <device-name>s with the device name. E.g.: linksmart-cyan
+    
 With the following configuration, Device Gateway executes the Python script every 120 seconds and exposes the resulting data over two protocols:
         
 * MQTT: Publishes the sensor data to the given topic. The MQTT broker was configured  in step a.
@@ -120,9 +133,6 @@ With the following configuration, Device Gateway executes the Python script ever
   ]
 }
 ```
-        
-    
-      
     
 ### 3.  Run the container:
     
