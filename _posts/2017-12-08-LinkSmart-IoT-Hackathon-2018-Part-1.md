@@ -4,9 +4,8 @@ In the following steps we will setup the  [DHT Adafruit Library](https://github.
 
 ## Setup the DHT Library
 
-### 1.  Install the latest stable Docker for debian-stretch (armhf).
-1.  Follow the instructions  **[here](https://docs.docker.com/engine/installation/linux/docker-ce/debian/#install-using-the-repository)** (Tip: stretch>jessy>wheezy).
-2.  Optional: [Post-installation (Manage Docker as a non-root user)](https://docs.docker.com/engine/installation/linux/linux-postinstall/#manage-docker-as-a-non-root-user), so that docker commands run without  `sudo`. 
+### 1.  Install the latest stable Docker for Raspbian / Raspberry Pi OS (armhf).
+Follow the instructions **[here](https://docs.docker.com/engine/install/debian)** (Tip in 2020: use the convenience script).
 
 ### 2.  Create and enter the directory structure
 ```bash
