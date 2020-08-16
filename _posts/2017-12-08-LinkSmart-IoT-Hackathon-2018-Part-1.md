@@ -1,6 +1,6 @@
 The goal of this Hackaton is to become familiar with several LinkSmart components and at the same time, create something useful.
 
-In the following steps we will setup the  [DHT Adafruit Library](https://github.com/adafruit/Adafruit_Python_DHT)  and  [LinkSmart Device Gateway](https://docs.linksmart.eu/display/LSI/LinkSmart+Device+Connector)  on a Raspberry Pi 3 in order to read measurements from a  [DHT22](https://learn.adafruit.com/dht/overview)  sensor and publish them in  [SenML](https://tools.ietf.org/html/draft-jennings-senml-09)  format to a MQTT broker.
+In the following steps we will setup the  [DHT Adafruit Library](https://github.com/adafruit/Adafruit_Python_DHT)  and  [LinkSmart Device Gateway](https://github.com/linksmart/device-gateway) on a Raspberry Pi 3 or ZeroW in order to read measurements from a  [DHT22](https://learn.adafruit.com/dht/overview)  sensor and publish them in  [SenML](https://tools.ietf.org/html/rfc8428) format to a MQTT broker.
 
 ## Setup the DHT Library
 
@@ -93,9 +93,9 @@ Replace all <device-name>s with the device name. E.g.: linksmart-cyan
     
 With the following configuration, Device Gateway executes the Python script every 120 seconds and exposes the resulting data over two protocols:
         
-* MQTT: Publishes the sensor data to the given topic. The MQTT broker was configured  in step a.
+* MQTT: Publishes the sensor data to the given topic. The MQTT broker was configured in Device Gateway configuration step.
             
-* REST: Exposes a REST endpoint to GET the latest collected data. The HTTP server was configured in the  step a.  E.g for getting data: `curl http://<hostname>:8080/rest/dht22/measurements`
+* REST: Exposes an HTTP endpoint to GET the latest collected data. The HTTP server was configured in Device Gateway configuration step. The endpoint will be constructed as `<server-address>/<rest-location>/<sensor-device-name>/<resource-name>`. In this example, it will be http://<hostname>:8080/rest/dht22/measurements.
         
 ```json
 {
