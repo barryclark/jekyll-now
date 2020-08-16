@@ -29,7 +29,7 @@ docker run --privileged -v $(pwd):/home --entrypoint=python --rm farshidtz/adafr
 The SenML output should be similar to:
     
 ```json
-{"bn": "basename/", "e": [{"v": 21.0, "u": "Cel", "t": 1514631068, "n": "Temperature"}, {"v": 21.0, "u": "%RH", "t": 1514631068, "n": "Humidity"}]}
+[{"bt": 1597584431.476398, "bn": "bn/", "v": 26.9, "n": "temp"}, {"v": 84.7, "n": "humi"}]
 ```
     
 **If you didn't get an output similar to that, go back and figure out what went wrong.**
