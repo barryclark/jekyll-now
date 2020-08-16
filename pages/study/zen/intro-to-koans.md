@@ -24,22 +24,20 @@ Here's a couple of thoughts to start practicing with Koans.
 
 2. Read this page, relate the quotes and notes to one another, compare with John Tarrant's approach, identify what's the point of the practice for you.
 
-3. Talk about it with a Zen teacher in your Sangha, or a fellow practitioner.
+3. Talk about it with a Zen teacher in your Sangha, or a fellow practitioner. Don't overlook this step. Obtaining guidance can make the practice more relevant.
 
-4. Pick a collection to start with, like the _Mumonkan_ which is easy to access.
+4. Pick a collection to start with (see below), like the _Mumonkan_ which is easy to access.
 
-5. Just do it, see how it goes, raise your concerns during [Dokusan](https://www.lionsroar.com/dharma-dictionary-dokusan/).
+5. Just do it, and see how it goes. Raise your concerns during [Dokusan](https://www.lionsroar.com/dharma-dictionary-dokusan/) with a Zen teacher. Again, this is important. Doing it alone has limitations and concerns, doing it with a friend in the Dharma is easier and also funnier.
 
 ## List of well-known koan collections
 
 - _Hekiganroku_: the [Blue Cliff Record](https://en.wikipedia.org/wiki/Blue_Cliff_Record), a collection of koans originally compiled in Song China in 1125, and then expanded into its present form by Chan master [Yuanwu Keqin](https://en.wikipedia.org/wiki/Yuanwu_Keqin) (1063–1135).
-- _Mumonkan_: the [Gateless Barries](https://en.wikipedia.org/wiki/The_Gateless_Barrier) (or Gateless Gate), a collection of 48 koans compiled in the early 13th century by the Chinese Zen master [Wumen Huikai](https://en.wikipedia.org/wiki/Wumen_Huikai) (1183–1260)
-- _Shōyōroku_: the [Book of Serenity](https://en.wikipedia.org/wiki/Book_of_Equanimity) (or Book of Equanimity), comprises a collection of 100 koans written by the Chan Buddhist master [Hongzhi Zhengjue](https://en.wikipedia.org/wiki/Hongzhi_Zhengjue) (1091–1157), together with commentaries by [Wansong Xingxiu](https://en.wikipedia.org/wiki/Wansong_Xingxiu) (1166–1246)
-- _Shinjoshobogenzo_: Dogen's [Treasury of the True Dharma Eye](https://en.wikipedia.org/wiki/Shinji_Sh%C5%8Db%C5%8Dgenz%C5%8D), 300 cases compiled by the founder of the Soto School of Zen [Eihei Dogen](https://en.wikipedia.org/wiki/D%C5%8Dgen) between 1223-1227
+- _Mumonkan_: the [Gateless Barrier](https://en.wikipedia.org/wiki/The_Gateless_Barrier) (or Gateless Gate), a collection of 48 koans compiled in the early 13th century by the Chinese Zen master [Wumen Huikai](https://en.wikipedia.org/wiki/Wumen_Huikai) (1183–1260).
+- _Shōyōroku_: the [Book of Serenity](https://en.wikipedia.org/wiki/Book_of_Equanimity) (or Book of Equanimity), comprises a collection of 100 koans written by the Chan Buddhist master [Hongzhi Zhengjue](https://en.wikipedia.org/wiki/Hongzhi_Zhengjue) (1091–1157), together with commentaries by [Wansong Xingxiu](https://en.wikipedia.org/wiki/Wansong_Xingxiu) (1166–1246).
+- _Shinjoshobogenzo_: Dogen's [Treasury of the True Dharma Eye](https://en.wikipedia.org/wiki/Shinji_Sh%C5%8Db%C5%8Dgenz%C5%8D), 300 cases compiled by the founder of the Soto School of Zen [Eihei Dogen](https://en.wikipedia.org/wiki/D%C5%8Dgen) between 1223-1227.
 
 ## What are koans?
-
-> What the koan proposes to do is to develop artificially or systematically in the consciousness of the Zen follower what the early masers produced in themselves spontaneously. - ([Suzuki, 1962](#suzuki1962)), ch IV.2
 
 > The literal meaning of the Chinese _kung-an_ (Japanese: _koan_) is "public notice" or "public announcement." Some words of a master or an episode from his life are presented to the disciple as an example for practice and attaining enlightenment. Although the core layer of the koan cases consists of brief reports from the master's life, directives and comments are added by the meditation leader who presents the koan for practice. Short poems revealing the enlightened understanding of the Elders were especially popular. - ([Dumoulin, 1979](#dumoulin1979))
 
@@ -49,15 +47,17 @@ Here's a couple of thoughts to start practicing with Koans.
 
 ## How to approach koans?
 
-> [Beyond the components of a koan, in addition to the case, commentaries, capping verses, footnotes...] finally there is _kyogai_, the way in which a koan affects your consciousness - in other words, the effect it has on your life. This is ultimately where it counts. Because no matter how many hundreds of koans you pass through, if they do not change the way you relate to the rest of the world, then the are nothing but intellectual exercises. [...] Koan introspection is not about gaining information; it is about transforming your life. - ([Loori, 1990](#loori2005))
-
 > Koans are not riddles or puzzles whose trick is in their clever and obscure wording. They are the clearest possible expression of perennial facts which students grasp with focused medication and guidance. - ([Aitken, 1990](#aitken1990))
+
+> What the koan proposes to do is to develop artificially or systematically in the consciousness of the Zen follower what the early masters produced in themselves spontaneously. - ([Suzuki, 1962](#suzuki1962)), ch IV.2
+
+> [Koans support] an awakening to a profound experience of being by way of an encounter with concrete reality. - ([Dumoulin, 1979](#dumoulin1979))
+
+> [Beyond the components of a koan, in addition to the case, commentaries, capping verses, footnotes...] finally there is _kyogai_, the way in which a koan affects your consciousness - in other words, the effect it has on your life. This is ultimately where it counts. Because no matter how many hundreds of koans you pass through, if they do not change the way you relate to the rest of the world, then the are nothing but intellectual exercises. [...] Koan introspection is not about gaining information; it is about transforming your life. - ([Loori, 1990](#loori2005))
 
 > Such themes are pursued with a keen, inquiring spirit, and the process of resolving them may take a long time, many years in some cases. Finally, the student gains a degree of understanding and is ready for subsequent koans to amplify, clarify and deepen the original insight. - ([Aitken, 1990](#aitken1990))
 
 > Logically, all these pointers have no sense, they are beyond rational treatment. We can say that the pointers have no earthly use as they do not give us any clue from which we can start our inference. [...] A slap on the face, a shaking one by the shoulder, or an utterance will most assuredly the work of pointing when the Zen consciousness has attained a certain stage of maturity. - ([Suzuki, 1962](#suzuki1962)), ch IV.3
-
-> [Koans support] an awakening to a profound experience of being by way of an encounter with concrete reality. - ([Dumoulin, 1979](#dumoulin1979))
 
 > Seeing into a koan requires the embodiment of a certain state of consciousness rather than an abstraction of intellectual understanding. It is this direct "seeing into" that the teacher looks for and tests to determine the clarity of the student's understanding. And it is this direct understanding that is a the heart of realization - not the intellectualization of an idea. - ([Loori, 1990](#loori2005))
 
