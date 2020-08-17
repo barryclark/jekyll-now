@@ -25,7 +25,7 @@ Your slides should be informative but also allow you to lead your audience. Add 
 ## Tip #5: In Medias Res
 In medias res storytelling is when you start your presentation in the middle of the story, preferably somehwere interesting, before returning to the beginning to explain how you came to be that point. 
 
-Just like how 'The Iliad' begins nearly ten years into the seige of Troy, before returning to describe the action prior, scientific presentations can easily be told in the same manner.
+Just like how 'The Iliad' begins nearly ten years into the seige of Troy, before returning to describe the action prior, scientific presentations can easily be told in the same manner. For instance, your conclusion found that 'Protein X does action Y in Z setting'. A middle point to this story could be how you observed 'Protein X doing action Y' but not knowing the context. You can use that as your opener and then explain why you study 'Protein X' before reaching your eventual conclusion.  
 
 ## Tip #6: Practice makes perfect. 
 Don't wing it. If you want to be able to deliver your message well, practice! Practice what you will say so you will know what to say when the time comes. Practice your delivery and catch yourself when you use filler words, like 'um' and 'you know'. Try to record your presentation if you can so you can see how the audience would perceive you. 
