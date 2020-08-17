@@ -4,6 +4,18 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### August 17th thoughts & takeaways:
+
+* This update is only for adding the volume projections graphic.
+
+* Currently, the model only is seeing the reported (or projected) COVID-19 deaths and the day of the week. A 3rd degree polynomial provides the best fit for the data.
+
+* Why do you show traffic decreasing? Note that the COVID-19 projections do not account for day-of-week variation while the traffic model does. This may cause some of those future weekend days to be much lower than expected. The weekdays seem more reasonable to me. 
+
+* Ask questions on my twitter or contact me directly. This is my first time doing this so don't this projection super seriously. Please seek official information for making decisions about your health.
+
+***
+
 ### August 14th thoughts & takeaways:
 
 * Traffic volumes fell over the past couple of weeks, speeds are up sharply this week. Will have to look into this further to see if there were some changes at our study intersections.
