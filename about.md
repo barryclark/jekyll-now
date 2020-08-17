@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi 
 
-I am a PhD Candidate at Department of Computational and Data Science (CDS) at Indian Institute of Science. I am very fortunate to be advised by [**Prof.** **Venkatesh Babu**](http://cds.iisc.ac.in/faculty/venky/). Currently I am working on intersection of Machine Learning and Computer Vision.
+I am a PhD Candidate at Department of Computational and Data Science (CDS) at Indian Institute of Science. I am very fortunate to be advised by [**Prof.** **Venkatesh Babu**](http://cds.iisc.ac.in/faculty/venky/). Currently I am working on intersection of Machine Learning and Computer Vision. I am supported by [Prime Minister's Research Fellowship](http://pmrf.in/) in Computer Science.
 
 I previosly completed an honors degree in Computer Science being jointly advised by [**Dr**. **Rajeev** **Sangal**](https://faculty.iiit.ac.in/~sangal/web/) and [**Dr**. **A**.**K**. **Singh**](https://faculty.iiit.ac.in/~sangal/web/) at Department of Computer Science, IIT BHU Varanasi.
 
