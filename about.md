@@ -6,18 +6,15 @@ permalink: /about/
 
 Hi 
 
-I am Harsh Rangwani currently a senior undergraduate at Dept. of Computer Science  and Engineering **IIT** **BHU** **Varanasi**. I currently am an undergraduate research assistant at Natural Language Processing Research Lab at IIT BHU. My research interests broadly lie on the intersection of Machine Learning and Natural Language Processing. I am pursuing an honors degree being jointly advised by [**Dr**. **Rajeev** **Sangal**](https://faculty.iiit.ac.in/~sangal/web/) and [**Dr**. **A**.**K**. **Singh**](https://faculty.iiit.ac.in/~sangal/web/).
+I am a PhD Candidate at Department of Computational and Data Science (CDS) at Indian Institute of Science. I am very fortunate to be advised by [**Prof.** **Venkatesh Babu**](http://cds.iisc.ac.in/faculty/venky/). Currently I am working on intersection of Machine Learning and Computer Vision.
+
+I previosly completed an honors degree in Computer Science being jointly advised by [**Dr**. **Rajeev** **Sangal**](https://faculty.iiit.ac.in/~sangal/web/) and [**Dr**. **A**.**K**. **Singh**](https://faculty.iiit.ac.in/~sangal/web/) at Department of Computer Science, IIT BHU Varanasi.
 
 In the past I have interned with Amazon in Outbound Marketing Automtation team and also have been the lead maintainer of the placement portal [site](www.placement.iitbhu.ac.in). 
 
 In my free time I like to read books and play basketball. 
 
-To know more about me visit:
-- [Linkedin](https://www.linkedin.com/in/harsh-rangwani/)
-- [Github](https://github.com/rangwani-harsh)
-- [Quora](https://www.quora.com/profile/Harsh-Rangwani)
-
-I am actively looking for research opportunities. Here is my detailed [CV](cv_updated.pdf).
+Here is my detailed [CV](cv_updated.pdf).
 
 ### Contact me
 
