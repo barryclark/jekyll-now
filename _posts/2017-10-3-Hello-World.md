@@ -5,7 +5,7 @@ title:  Hello World
 
 ## My blog
 ### First blog post
-This is my first blog on my technical interests.I am interested in the field of Natural Language Processing and Semantic Search. 
+This is my first blog on my technical interests. 
 So stay tuned for some cool and interesting  stuff ahead.
 
 One of my favourite quote
