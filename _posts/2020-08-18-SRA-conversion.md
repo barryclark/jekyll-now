@@ -17,10 +17,9 @@ Typically, this will be performed using High Performance Computing (HPC) with Pl
 
 For example, to get fastq files for the sample:GSM3405962: RNA-seq, SHSY5Y adipocyte diff 7d; Homo sapiens; RNA-Seq, you would go to the [SRP](https://www.ncbi.nlm.nih.gov/sra?term=SRP140638) linked above. 
 
-Go to the corresponding SRA page:
-[https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn]](https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn])
+Go to the corresponding SRA page: [https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn]](https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn])
 
-Copy down the appropriate Accession, `SRR7939701`
+Copy down the appropriate Accession: `SRR7939701`
 
 Type the following into the command line to begin downloading your data:
 
