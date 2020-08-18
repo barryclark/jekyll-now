@@ -55,6 +55,8 @@ baseurl: ""
 
 permalink: /:title/
 
+theme: minima
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
