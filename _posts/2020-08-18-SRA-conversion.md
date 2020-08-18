@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Converting multiple SRA to FASTQ
+title: Converting Multiple SRA to FASTQ
 ---
 
 In this post, I will detail how to download some raw sequence data from GEO/SRA in fastq format.
