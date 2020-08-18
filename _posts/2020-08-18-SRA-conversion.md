@@ -10,7 +10,7 @@ Rauch A, Haakonsson AK, Madsen JGS, Larsen M et al. Osteogenesis depends on comm
 
 The data was deposited at GEO/SRA and is accessible through the GEO data set [GSE113253](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113253). You can further link to the relevant SRP [SRP140638](https://www.ncbi.nlm.nih.gov/sra?term=SRP140638)
 
-Typically, this will be performed using High Performance Computing (HPC) in conjunction Platform Load Sharing Facility (or simply LSF), which is a workload management platform, job scheduler, for distributed high performance computing. Your HPC should have most of the modules needed installed for you already. If not, then please find the related-links below. 
+Typically, this will be performed using High Performance Computing (HPC) with Platform Load Sharing Facility (or simply LSF), which is a workload management platform, job scheduler, for distributed high performance computing. Your HPC should have most of the modules needed installed for you already. If not, then please find the related-links below. 
 
 
 [The SRA toolkit](https://github.com/ncbi/sra-tools)
