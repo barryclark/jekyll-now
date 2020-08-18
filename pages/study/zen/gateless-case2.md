@@ -127,26 +127,32 @@ Old Paichang does not belong to the same side of the mountain, still he deserves
 >
 > Hearing this, the old man __immediately was enlightened__. Making his bows he said, "I am released from the body of a fox."
 
-It sounds quite ironic that, old Paichang has the view of gradual enlightenment, and (seemingly) __because of that__, he is reborn five hundred times as a fox. The irony is that he had to be reborn that many times to one day become enlightened... after hearing the view of sudden enlightenment. The view of gradual enlightenment __became right__ so that old Paichang could realize it is __wrong__. That must be a karmic joke.
+If we were to pick between the view of gradual enlightenment and the view of sudden enlightenment:
+- Which view is related to "Such a person does not fall..."?
+- Which view is related to "With this I was reborn five hundred times as a fox"?
+- Which view is related to "Such a person does not evage..."?
+- Which view is related to "Hearing this, the old man immediately was enlightened."?
+
+Why did old Paichang have to wait for such a long time, go through so many lives, to ultimately be suddenly enlightened? Isn't that ironic?
 
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
 >
 > Paichang said, "Just step here closer, and I'll tell you." Huang-po went up to Paichang and __slapped him in the face__.
 
-We want Paichang to be true when he says _"such a person does not evade"_ karmic law. That should be the good answer to the question, according to this account, right? But he seems as wrong as Old Paichang. Because of that, Paichang gets a slap in the face.
+We want Paichang to be true when he says _"such a person does not evade"_ karmic law. That should be the good answer to the question, according to this account, right? But Paichang seems as wrong as Old Paichang. Because of that, Paichang gets a slap in the face.
 
 So, Sudden enlightenment is not more true, as a view, than gradual?
 
 If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. Could sudden enlightenment be "less wrong" than gradual enlightenment?
 
-Still, Huang-po's slap suggests that none of those answers are actually right.
+Still, Huang-po's slap suggests that none of those answers are actually right. What to make of this?
 
 (Dogen would probably point out that it's an answer made of words, or that it's one view distinct from others, so it's a wrong view. He says _"If you fall into the words and ideas [...] you too will be a fox spirit"_, in comments of case 102)
 
 
 ## A read about the ritual
 
-Ritual and liturgy, is that the answer to the question? Is the ritual of cremation the way to find your way between the two answers? Is it the function, the end of Zen practice and liturgy to pay respect to both answers?
+Ritual and liturgy, is that the answer to the question? Is the ritual of cremation the way to find your way between the two answers? Is it the function, the end of Zen practice and liturgy to pay respect to both answers and hold them simultaneously?
 
 > Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
 
@@ -177,7 +183,7 @@ There the stream meets a boulder, causing the water to stop for a moment.
 
 What has old Paichang done to receive this fruit and live five hundred lives as a fox? What has he done to be released from it today? Why should __this__ prompt five hundred lives as a fox?
 
-> The old man replied, "I am not a human being. __In the far distant past__, in the time of Kasyapa Buddha, __I was___ head priest at this mountain.
+> The old man replied, "I am not a human being. __In the far distant past__, in the time of Kasyapa Buddha, __I was__ head priest at this mountain.
 
 The "I" changes every day. Every instant there's a new "I" emerging and an old "I" ceasing. It is the radical impermanence of the Self, dispersed in Indra's Net.  
 _"In the far distant past ... __I was__ ..."_ - this is so far in the past, how could there be anything left from the "I" that __was__.  
@@ -201,7 +207,7 @@ Enlightenment itself is impermanent?
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given the right answer __each time__ he was asked a question -- __what would have happened then__?"
 
 How many times does one have to answer that question?  
-The answer is not the issue here, the answer did not cause old Paichang to be reborn five hundred times as a fox. There is no relationship between that cause and that effect.
+The answer is a distraction, a reflection in the water. The answer old Paichang gave has nothing to do with him being reborn five hundred times as a fox. There is no relationship between that cause and that effect.
 
 ## Dogen's slap
 
@@ -220,7 +226,7 @@ Some notes:
 - How could there be any causality between old Paichang answering the question and his being reborn as a fox?
 - How could there be any causality between Paichang answering the question and old Paichang being enlightened?
 - How can a single answer be a turning point?
-- How does old Paichang even know he was reborn five hundred lives as a fox? How would a fox know anything about his rebirths? Does he know it with the same mind that answered this damning questions?
+- How does old Paichang even know he was reborn five hundred lives as a fox? How would a fox know anything about their rebirths? Does the fox know it with the same mind that answered this damning questions?
 - Is this whole case just completely wrong? Essentially wrong, being a text, being a **story** with all those causal relationships pointed out, while there are none in the eye of realization?
 
 

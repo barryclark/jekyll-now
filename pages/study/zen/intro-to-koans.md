@@ -59,7 +59,7 @@ Here's a couple of thoughts to start practicing with Koans.
 
 > Logically, all these pointers have no sense, they are beyond rational treatment. We can say that the pointers have no earthly use as they do not give us any clue from which we can start our inference. [...] A slap on the face, a shaking one by the shoulder, or an utterance will most assuredly the work of pointing when the Zen consciousness has attained a certain stage of maturity. - ([Suzuki, 1962](#suzuki1962)), ch IV.3
 
-> Seeing into a koan requires the embodiment of a certain state of consciousness rather than an abstraction of intellectual understanding. It is this direct "seeing into" that the teacher looks for and tests to determine the clarity of the student's understanding. And it is this direct understanding that is a the heart of realization - not the intellectualization of an idea. - ([Loori, 1990](#loori2005))
+> Seeing into a koan requires the embodiment of a certain state of consciousness rather than an abstraction of intellectual understanding. It is this direct "seeing into" that the teacher looks for and tests to determine the clarity of the student's understanding. And it is this direct understanding that is at the heart of realization - not the intellectualization of an idea. - ([Loori, 1990](#loori2005))
 
 > "In answering this, one ought not to cogitate on the meaning of the phrase, nor try to get away from it; do not reason about it, nor altogether abandon reasoning; respond just as you are asked and without deliberation, just as a bell rings when it is struck, just as a man answers when he is called by name. If there were no seeking, no pondering, no contriving as to how to get at the meaning of the phrase, whatever it may be, there would be no answering - hence no awakening." - ([Suzuki, 1962](#suzuki1962)), ch III.5
 
@@ -68,7 +68,7 @@ Here's a couple of thoughts to start practicing with Koans.
 
 ## Practicing with koans
 
-> It is critical to differentiate between koan study and formal koan introspection in the context of a vital teacher-student relationship. Koan study tends to rely on the intellect. It aims to shed light on the basic Buddhist teachings communicated in the koan in a way similar to how a teacher will comment on a case in a teisho, or formal discourse, clarifying the koan's keu points. In koan introspection, on the other hand, a student sits with the koan in zazen, letting go of trying to solve or understand it, and works on the process of embodying it. The teacher then tests the student's direct insight into the koan in dokusan, private face-to-face interviews. - ([Loori, 1990](#loori2005))
+> It is critical to differentiate between koan study and formal koan introspection in the context of a vital teacher-student relationship. Koan study tends to rely on the intellect. It aims to shed light on the basic Buddhist teachings communicated in the koan in a way similar to how a teacher will comment on a case in a teisho, or formal discourse, clarifying the koan's key points. In koan introspection, on the other hand, a student sits with the koan in zazen, letting go of trying to solve or understand it, and works on the process of embodying it. The teacher then tests the student's direct insight into the koan in dokusan, private face-to-face interviews. - ([Loori, 1990](#loori2005))
 
 > The approach to the koan varies with school and master. The content of the koan might, for example, be analyzed and its parts viewed separately, or else it might be grasped as a whole and appropriated to one's inner self. - ([Dumoulin, 1979](#dumoulin1979))
 
@@ -113,11 +113,16 @@ Change of time/sequence
 - What if the story happened with long intervals in between? (ex: add a kalpa between a question and an answer)
 - What if everything happened at once, in the same time? (ex: reducing all events to one instant)
 
-Change of logic
+Change of logic/view
 - What if you hold all point of views in the same time?
 - What if you took the opposite conclusion?
 - What if you hold all views, opposite views, together?
 - What if you denied all the views, hold no view at all?
+
+Finally, reading the koan might suggest one of the participant is right, and the other(s) is wrong. But you can try the following prompts:
+- What if they were both wrong?
+- What if they were both right?
+- What if you considered them both perfectly Enlightened, and their expression a manifestation of their Enlightenment?
 
 ## Bibliography
 
