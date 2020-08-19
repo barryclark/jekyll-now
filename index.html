@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-<div>
-  {{ include about.md| markdownify }}
-</div>
+<section id="about" class="home-section">
+  <div>
+    {{ include about.md| markdownify }}
+  </div>
+</section>
 
 <div class="posts">
   {% for post in site.posts %}
