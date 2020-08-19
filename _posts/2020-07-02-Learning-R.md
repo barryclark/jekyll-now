@@ -7,17 +7,17 @@ This is a curated collection of R educational materials for learning R. I will a
 
 ## Books
 
-- [R Bootcamp](https://r-bootcamp.netlify.app)
+- [R Bootcamp](https://r-bootcamp.netlify.app){:target="_blank"}
 
-- [Learning Statistics with R](https://learningstatisticswithr.com)
+- [Learning Statistics with R](https://learningstatisticswithr.com){:target="_blank"}
 
-- [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
+- [Efficient R programming](https://bookdown.org/csgillespie/efficientR/){:target="_blank"}
 
 ## Videos
 
-- [R for Biologists](https://www.rforbiologists.org)
+- [R for Biologists](https://www.rforbiologists.org){:target="_blank"}
 
-- [DATA SCIENCE WITH R](https://robust-tools.djnavarro.net/)
+- [DATA SCIENCE WITH R](https://robust-tools.djnavarro.net/){:target="_blank"}
 
 
 
