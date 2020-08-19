@@ -15,7 +15,7 @@ __Arizona State University__ Graduate Research Associate (School of Biological a
 ## Education
 
 `2014-18`
-__Arizona State University__ Biomedical Engineering PhD (advisor: Mehdi Nikkhah). My thesis was titled _Microfluidic Models of Tumor-Stroma Interactions to Study the Interplay of Cancer Cells with their Surrounding Microenvironment_ and is available through the [ASU Library | Digital Repository](https://repository.asu.edu/items/54067).
+__Arizona State University__ Biomedical Engineering PhD (advisor: Mehdi Nikkhah). My thesis was titled _Microfluidic Models of Tumor-Stroma Interactions to Study the Interplay of Cancer Cells with their Surrounding Microenvironment_ and is available through the [ASU Library | Digital Repository](https://repository.asu.edu/items/54067){:target="_blank"}.
 
 `2012-14`
 __University of Texas at Arlington & Univesity of Texas Southwestern Medical Center__ MSc Biomedical Engineering
