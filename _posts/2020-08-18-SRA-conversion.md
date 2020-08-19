@@ -8,16 +8,16 @@ In this post, I will detail how to download some raw sequence data from GEO/SRA 
 We will be using data from the following publication as an example:
 Rauch A, Haakonsson AK, Madsen JGS, Larsen M et al. Osteogenesis depends on commissioning of a network of stem cell transcription factors that act as repressors of adipogenesis. Nat Genet 2019 Apr;51(4):716-727. PMID: [30833796](https://pubmed.ncbi.nlm.nih.gov/30833796/)
 
-The data was deposited at GEO/SRA and is accessible through the GEO data set [GSE113253](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113253). You can further link to the relevant SRP [SRP140638](https://www.ncbi.nlm.nih.gov/sra?term=SRP140638)
+The data was deposited at GEO/SRA and is accessible through the GEO data set [GSE113253](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113253){:target="_blank"}. You can further link to the relevant SRP [SRP140638](https://www.ncbi.nlm.nih.gov/sra?term=SRP140638)
 
 Typically, this will be performed using High Performance Computing (HPC) with Platform Load Sharing Facility (or simply LSF), which is a workload management platform, job scheduler, for distributed high performance computing. Your HPC should have most of the modules needed installed for you already. If not, then please find the related-links below. 
 
 
 [The SRA toolkit](https://github.com/ncbi/sra-tools)
 
-For example, to get fastq files for the sample:GSM3405962: RNA-seq, SHSY5Y adipocyte diff 7d; Homo sapiens; RNA-Seq, you would go to the [SRP](https://www.ncbi.nlm.nih.gov/sra?term=SRP140638) linked above. 
+For example, to get fastq files for the sample:GSM3405962: RNA-seq, SHSY5Y adipocyte diff 7d; Homo sapiens; RNA-Seq, you would go to the [SRP](https://www.ncbi.nlm.nih.gov/sra?term=SRP140638){:target="_blank"} linked above. 
 
-Go to the corresponding SRA page: [https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn]](https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn])
+Go to the corresponding SRA page: [https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn]](https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn]){:target="_blank"}
 
 Copy down the appropriate Accession: `SRR7939701`
 
@@ -27,7 +27,7 @@ Type the following into the command line to begin downloading your data:
 prefetch -v SRR7939701
 ```
 
-If you wanted to download multiple files, it is recommended to use the `RunSelector`. On the [SRP](https://www.ncbi.nlm.nih.gov/sra?term=SRP140638) page, you should see a link at the top for [Send results to Run selector](https://www.ncbi.nlm.nih.gov/Traces/study/?WebEnv=MCID_5f3a99e644419764265753ed&query_key=1).
+If you wanted to download multiple files, it is recommended to use the `RunSelector`. On the [SRP](https://www.ncbi.nlm.nih.gov/sra?term=SRP140638){:target="_blank"} page, you should see a link at the top for [Send results to Run selector](https://www.ncbi.nlm.nih.gov/Traces/study/?WebEnv=MCID_5f3a99e644419764265753ed&query_key=1){:target="_blank"}.
 
 Here select the samples or Runs that you want to download by clicking on the appropriate checkboxes. Then download the `Accession List` and the `Metadata` if needed.
 
