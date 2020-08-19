@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div>
+  {{ include about.md| markdownify }}
+</div>
 
 <div class="posts">
   {% for post in site.posts %}
