@@ -18,24 +18,24 @@ Below are some publications, tutorials, and workshops that I found helpful.
 
 ## Tutorials
 
-- [Seurat](https://satijalab.org/seurat/vignettes.html)
+- [Seurat](https://satijalab.org/seurat/vignettes.html){:target="_blank"}
 
-- [Monocle 3](https://cole-trapnell-lab.github.io/monocle3/docs/introduction/)
+- [Monocle 3](https://cole-trapnell-lab.github.io/monocle3/docs/introduction/){:target="_blank"}
 
-- [Scanpy](https://scanpy.readthedocs.io/en/stable/tutorials.html)
+- [Scanpy](https://scanpy.readthedocs.io/en/stable/tutorials.html){:target="_blank"}
 
 
 ## Workshops
 
-- [BioC 2020: Where Software and Biology Connect](https://bioc2020.bioconductor.org/workshops) - Added 2020/07/19. Over 20 workshops related to single-cell analysis. 
+- [BioC 2020: Where Software and Biology Connect](https://bioc2020.bioconductor.org/workshops){:target="_blank"} - Added 2020/07/19. Over 20 workshops related to single-cell analysis. 
 
-- [Orchestrating Single-Cell Analysis with Bioconductor](https://scrnaseq-course.cog.sanger.ac.uk/website/index.html) - This is a very in-depth and comprehensive workshop for single-cell RNA-seq analysis in R using packages from Bioconductor. I have not yet gone through it because I saw it today and it was posted online 2 days ago.
+- [Orchestrating Single-Cell Analysis with Bioconductor](https://scrnaseq-course.cog.sanger.ac.uk/website/index.html){:target="_blank"} - This is a very in-depth and comprehensive workshop for single-cell RNA-seq analysis in R using packages from Bioconductor. I have not yet gone through it because I saw it today and it was posted online 2 days ago.
 
-- [ANALYSIS OF SINGLE CELL RNA-SEQ DATA](https://broadinstitute.github.io/2019_scWorkshop/) - This workshop may be a bit outdated now but it runs through the entire workflow of single-cell RNA-seq processing and analysis. I found it incredibly useful as not only does it provide many alternate methods for processing, this workshop also includes the code to run the different packages too. 
+- [ANALYSIS OF SINGLE CELL RNA-SEQ DATA](https://broadinstitute.github.io/2019_scWorkshop/){:target="_blank"} - This workshop may be a bit outdated now but it runs through the entire workflow of single-cell RNA-seq processing and analysis. I found it incredibly useful as not only does it provide many alternate methods for processing, this workshop also includes the code to run the different packages too. 
 
-- [Analysis of single cell RNA-seq data](https://scrnaseq-course.cog.sanger.ac.uk/website/index.html) - The above workshop and this one may be outdate as well since both were published in 2019. Nonetheless, they still contain useful information including comparisons between different analytical methods, albeit perhaps outdated as well.  
+- [Analysis of single cell RNA-seq data](https://scrnaseq-course.cog.sanger.ac.uk/website/index.html){:target="_blank"} - The above workshop and this one may be outdate as well since both were published in 2019. Nonetheless, they still contain useful information including comparisons between different analytical methods, albeit perhaps outdated as well.  
 
-- [Single Cell Genomics Day: A Practical Workshop](https://satijalab.org/scgd/) - Definitely keep an eye on this as it is updated yearly. This is in-person workshop but the presentations are recorded (some of them) and the slides are posted. It is a good place to check out if you are interested in seeing how the latest techniques are being used. 
+- [Single Cell Genomics Day: A Practical Workshop](https://satijalab.org/scgd/){:target="_blank"} - Definitely keep an eye on this as it is updated yearly. This is in-person workshop but the presentations are recorded (some of them) and the slides are posted. It is a good place to check out if you are interested in seeing how the latest techniques are being used. 
 
 That's it for now. I may update this if I see new information.
 
