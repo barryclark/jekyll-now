@@ -1,8 +1,3 @@
----
-layout: page
-title: About
-permalink: /about/
----
 ## Danh D. Truong
 
 Biomedical Engineering PhD 
