@@ -13,7 +13,7 @@ Loading the files
 </h2>
 The first thing the tutorial asks you to do is download the raw data
 from [10x
-Genomics](https://s3-us-west-2.amazonaws.com/10x.files/samples/cell/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz).
+Genomics](https://s3-us-west-2.amazonaws.com/10x.files/samples/cell/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz){:target="_blank"}.
 The raw data contains three key files within it: barcodes.tsv,
 genes.tsv, and matrix.mtx. You will also notice they are contained in a
 folder called hg19. That simply means the counts were generated using
