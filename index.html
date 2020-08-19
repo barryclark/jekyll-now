@@ -3,7 +3,8 @@ layout: default
 ---
 <section id="about" class="home-section">
   <div>
-    {% include about.md %}
+    {% capture p1 %}{% include about.md %}{% endcapture %}
+    {{ p1 | markdownify }}
   </div>
 </section>
 
