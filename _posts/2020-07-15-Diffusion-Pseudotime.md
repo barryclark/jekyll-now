@@ -18,10 +18,10 @@ between the ‘starting’ cell and ‘ending’ cell along the trajectory.
 <h2>
 Loading the files
 </h2>
-In this example, we will be using the [HSMM data set](http://www.bioconductor.org/packages/release/data/experiment/html/HSMMSingleCell.html)
-of differentiating myoblasts developed by [Trapnell et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4122333/). The data is
+In this example, we will be using the [HSMM data set](http://www.bioconductor.org/packages/release/data/experiment/html/HSMMSingleCell.html){:target="_blank"}
+of differentiating myoblasts developed by [Trapnell et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4122333/){:target="_blank"}. The data is
 already FPKM normalized so we will add a pseudocount and log-transform
-the data. Here we will generate a [SingleCellExperiment](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html)
+the data. Here we will generate a [SingleCellExperiment](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html){:target="_blank"}
 object to contain our expression matrix.
 
 ``` r
@@ -328,17 +328,17 @@ free to explore them. Descriptions are from their websites. More complex
 data sets will have multiple trajectories and branches that could be
 better analyzed with the following packages.
 
--   [Monocle 3](https://cole-trapnell-lab.github.io/monocle3/):
+-   [Monocle 3](https://cole-trapnell-lab.github.io/monocle3/){:target="_blank"}:
     Single-cell transcriptome sequencing (sc-RNA-seq) experiments allow
     us to discover new cell types and help us understand how they arise
     in development. The Monocle 3 package provides a toolkit for
     analyzing single-cell gene expression experiments.
--   [TSCAN](https://www.bioconductor.org/packages/release/bioc/html/TSCAN.html):
+-   [TSCAN](https://www.bioconductor.org/packages/release/bioc/html/TSCAN.html){:target="_blank"}:
     TSCAN enables users to easily construct and tune pseudotemporal cell
     ordering as well as analyzing differentially expressed genes. TSCAN
     comes with a user-friendly GUI written in shiny. More features will
     come in the future.
--   [slingshot](https://bioconductor.org/packages/release/bioc/html/slingshot.html):
+-   [slingshot](https://bioconductor.org/packages/release/bioc/html/slingshot.html){:target="_blank"}:
     Provides functions for inferring continuous, branching lineage
     structures in low-dimensional data. Slingshot was designed to model
     developmental trajectories in single-cell RNA sequencing data and
