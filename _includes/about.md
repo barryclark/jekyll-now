@@ -23,7 +23,10 @@ __University of Texas at Arlington & Univesity of Texas Southwestern Medical Cen
 `2009-14`
 __University of Texas at Arlington__ BSc Biology 
 
-## Awards
+## Awards and Honors
+
+`2018`
+__Graduate Student Speaker__ Ira A. Fulton Schools of Engineering Convocation
 
 `2018` 
 __Completion Fellowship__ ASU Graduate College
