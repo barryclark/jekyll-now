@@ -18,4 +18,13 @@ Once you figure out which NIH organization you plan to submit to, use the [NIH R
 It is difficult to find previous applications but they can be very valuable. You can see how each of the documents are prepared and formatted. If the summary statement is shared, then it becomes even more valuable. You can see how the reviewers scored the application and learn from the weaknesses while incorporating the strengths into your own application. Here are a few sample applications I have found.
 - [Chris Smith's Blog](https://www.christophertsmith.com/funding-resources.html)
 - [NIAID](https://www.niaid.nih.gov/grants-contracts/three-new-f31-sample-applications)
+- [My F31 Submission](#)
+
+## Preparing your research strategy
+The research strategy will be the most important part of your application. It needs to be as persuasive, concise, significant, and innovative as possible. If this seems impossible to you, that is why it is challenging to prepare a good research strategy. There are some key steps in preparing a good research strategy. Make sure to read the e SF424 (R&R) Application Guide for the F31 on _Research Strategy_. It gives you a guideline on the requirements and formatting. The page limit is 6 pages. Typically the F31 provides 3 years of funding so your proposed work needs to be acheivable within this time frame. 
+
+## Additonal Resources
+- [Chris Smith's Blog](https://www.christophertsmith.com/funding-resources.html)
+- [Finding example F30, F31, and F32 NIH NRSA applications](https://medschool.vanderbilt.edu/career-development/2020/04/28/finding-example-nih-nrsa-applications/)
+- [Student Notebook: Writing an NIH F31](https://www.psychologicalscience.org/observer/writing-an-nih-f31)
 
