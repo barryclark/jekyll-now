@@ -10,3 +10,12 @@ You may think that your mentor is the most important person that will aid you in
 
 ## Figure out which funding institute aligns with your research
 There are multiple organizations at the NIH that participate in funding the F31. You will submit your application to only one of these organizations. Each organization has their own mission or high priority research that they will fund. You will need to research each one to see which aligns with your research. Furthermore, once you find an organization, you will need to reach out to the program director to discuss your research strategy. They can often tell you directly if it is within the mission of their organization. 
+
+## Use the NIH RePORTER
+Once you figure out which NIH organization you plan to submit to, use the [NIH RePORTER](https://projectreporter.nih.gov/reporter.cfm) to find out the kind of research it funds and whether your research ideas are on the same level. Select the organization and choose F31 as the award type. A list of funded research will populate your screen. You can click through the links and read their abstracts. Importantly, you can limit your query to your own instituion. Why would you do this? So you can reach out to graduate students in your area that were recently funded. You can discuss with them on their process while preparing the F31 and they may also be willing to share their submission. This leads me to my next tip.
+
+## Find sample applications
+It is difficult to find previous applications but they can be very valuable. You can see how each of the documents are prepared and formatted. If the summary statement is shared, then it becomes even more valuable. You can see how the reviewers scored the application and learn from the weaknesses while incorporating the strengths into your own application. Here are a few sample applications I have found.
+- [Chris Smith's Blog](https://www.christophertsmith.com/funding-resources.html)
+- [NIAID](https://www.niaid.nih.gov/grants-contracts/three-new-f31-sample-applications)
+
