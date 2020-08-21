@@ -31,10 +31,10 @@ __Completion Fellowship__ ASU Graduate College
 `2018` 
 __Graduate College Fellowship__ ASU Graduate College
 
-`2017-2018` 
+`2017-2019` 
 __ARCS Burton Scholar__ Phoenix Chapter of Achievement Rewards for College Scientists Foundation
 
-`2016-2017` 
+`2016-2018` 
 __IFER Graduate Fellowship__ International Foundation for Ethical Research 
 
 `2014-2018` 
