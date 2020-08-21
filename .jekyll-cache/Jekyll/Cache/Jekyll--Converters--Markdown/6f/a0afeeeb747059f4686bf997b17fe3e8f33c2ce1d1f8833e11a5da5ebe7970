@@ -1,0 +1,50 @@
+I"½<p>In this post, I will detail how to download some raw sequence data from GEO/SRA in fastq format.</p>
+
+<p>We will be using data from the following publication as an example:
+Rauch A, Haakonsson AK, Madsen JGS, Larsen M et al. Osteogenesis depends on commissioning of a network of stem cell transcription factors that act as repressors of adipogenesis. Nat Genet 2019 Apr;51(4):716-727. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/30833796/">30833796</a></p>
+
+<p>The data was deposited at GEO/SRA and is accessible through the GEO data set <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113253" target="_blank">GSE113253</a>. You can further link to the relevant SRP <a href="https://www.ncbi.nlm.nih.gov/sra?term=SRP140638">SRP140638</a></p>
+
+<p>Typically, this will be performed using High Performance Computing (HPC) with Platform Load Sharing Facility (or simply LSF), which is a workload management platform, job scheduler, for distributed high performance computing. Your HPC should have most of the modules needed installed for you already. If not, then please find the related-links below.</p>
+
+<p><a href="https://github.com/ncbi/sra-tools">The SRA toolkit</a></p>
+
+<p>For example, to get fastq files for the sample:GSM3405962: RNA-seq, SHSY5Y adipocyte diff 7d; Homo sapiens; RNA-Seq, you would go to the <a href="https://www.ncbi.nlm.nih.gov/sra?term=SRP140638" target="_blank">SRP</a> linked above.</p>
+
+<p>Go to the corresponding SRA page: <a href="https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn]" target="_blank">https://www.ncbi.nlm.nih.gov/sra/SRX4774806[accn]</a></p>
+
+<p>Copy down the appropriate Accession: <code class="language-plaintext highlighter-rouge">SRR7939701</code></p>
+
+<p>Type the following into the command line to begin downloading your data:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>prefetch <span class="nt">-v</span> SRR7939701
+</code></pre></div></div>
+
+<p>If you wanted to download multiple files, it is recommended to use the <code class="language-plaintext highlighter-rouge">RunSelector</code>. On the <a href="https://www.ncbi.nlm.nih.gov/sra?term=SRP140638" target="_blank">SRP</a> page, you should see a link at the top for <a href="https://www.ncbi.nlm.nih.gov/Traces/study/?WebEnv=MCID_5f3a99e644419764265753ed&amp;query_key=1" target="_blank">Send results to Run selector</a>.</p>
+
+<p>Here select the samples or Runs that you want to download by clicking on the appropriate checkboxes. Then download the <code class="language-plaintext highlighter-rouge">Accession List</code> and the <code class="language-plaintext highlighter-rouge">Metadata</code> if needed.</p>
+
+<p>Depending on the nameing convention or format of the <code class="language-plaintext highlighter-rouge">Accession List</code>, you can download all of the Runs with the following:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>prefetch <span class="si">$(</span>&lt;SRA_Acc_List.txt<span class="si">)</span>
+</code></pre></div></div>
+
+<p>Make sure you know where the files will be downloaded to or set it up in the options.</p>
+
+<p>I use the following bash script for converting multiple SRA to fastq. The script will search through my SRA directory for <code class="language-plaintext highlighter-rouge">.SRA</code> files and provide these files as the input for <code class="language-plaintext highlighter-rouge">fasterq-dump</code></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="c">#fasterq-dump script</span>
+<span class="c">#loadmodules</span>
+module load sratoolkit/2.9.4
+module load parallel
+<span class="c">#find directory</span>
+find <span class="nv">$SCRATCH</span>/opt/sra/<span class="k">*</span>sra | parallel <span class="s1">'fasterq-dump -O $SCRATCH/opt/fastq {}'</span>
+</code></pre></div></div>
+
+<p>If you have only one file, then just simply type the following the command line:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fasterq-dump SRR7939701
+</code></pre></div></div>
+
+<p>In another post, I will detail how to align the FASTQ to a reference genome.</p>
+:ET

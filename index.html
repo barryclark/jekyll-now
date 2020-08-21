@@ -2,11 +2,18 @@
 layout: default
 ---
 <section id="about" class="home-section">
-  <div>
-    {% capture p1 %}{% include about.md %}{% endcapture %}
-    {{ p1 | markdownify }}
+  <div style="width: 100%; overflow: hidden;">
+    <div style="width: 650px; float: left;"> 
+      {% capture p1 %}{% include about.md %}{% endcapture %}
+      {{ p1 | markdownify }}
+    </div>
+    <div  class='jekyll-twitter-plugin' style="margin-left: 250px;"> 
+      {% twitter https://twitter.com/danhdtruong maxwidth=200 limit=3 %}
+    </div>
   </div>
 </section>
+
+
 
 <section id="publications" class="home-section">
   <h1> Selected Publications </h1>   
