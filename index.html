@@ -8,6 +8,7 @@ layout: default
           {{ p1 | markdownify }}
         </div>
         <div style="margin-left: 30%;font-size:75%"> 
+            <h2>Recent Posts</h2>
             {% for post in site.posts limit:3 %}
             <article class="post">
               <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
