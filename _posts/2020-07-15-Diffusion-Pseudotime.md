@@ -8,7 +8,9 @@ The beauty of single-cell RNA-seq is the ability to delineate the cell
 state of each single-cell. This brings a novel advantage when
 considering developmental trajectories during organ development or cell
 differentiation. The reason for this is that biological processes are
-not always in synchrony. In other words, not all cells will exist at the
+not always in synchrony. 
+
+In other words, not all cells will exist at the
 same stage of differentiation. In that regard, a sample that is
 sequenced could contain the entire spectrum of cells between early to
 late stages of differention. To quantitate the measure of biological
