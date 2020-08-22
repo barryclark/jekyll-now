@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Preparing an F31
-tags: tips tutorials
+tags: tips 
 ---
 
 The Ruth L. Kirschstein Predoctoral Individual National Research Service Award or the [F31](https://researchtraining.nih.gov/programs/fellowships/f31){:target="_blank"}  is a predoctoral award that provides a stipend and some research allowances for predoctoral students. It is a fellowship provided by the National Institutes of Health (NIH). 
