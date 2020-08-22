@@ -9,7 +9,7 @@ layout: default
         </div>
         <div style="margin-left: 30%;font-size:85%"> 
             <h2>Recent Posts</h2>
-            {% for post in site.posts limit:3 %}
+            {% for post in site.posts limit:4 %}
                 <article class="post">
                   <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
                   <div class="entry">
