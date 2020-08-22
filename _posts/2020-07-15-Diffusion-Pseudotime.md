@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Trajectory Analysis with Diffusion Pseudotime
+tags: single-cell tutorials bioinformatics R
 ---
 
 The beauty of single-cell RNA-seq is the ability to delineate the cell
