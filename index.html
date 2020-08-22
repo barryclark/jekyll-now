@@ -2,10 +2,23 @@
 layout: default
 ---
 <section id="about" class="home-section">
-  <div>
-    {% capture p1 %}{% include about.md %}{% endcapture %}
-    {{ p1 | markdownify }}
-  </div>
+    <div style="width: 100%;">
+        <div style="width: 70%; float: left; ">
+          {% capture p1 %}{% include about.md %}{% endcapture %}
+          {{ p1 | markdownify }}
+        </div>
+        <div style="margin-left: 30%;"> 
+            {% for post in site.posts limit:3 %}
+            <article class="post">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              <div class="entry">
+                {{ post.excerpt }}
+              </div> 
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+            </article>
+          {% endfor %}
+        </div>
+    </div>
 </section>
 
 <section id="publications" class="home-section">
