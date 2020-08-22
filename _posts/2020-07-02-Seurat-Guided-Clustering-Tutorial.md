@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Seurat Guided Clustering Tutorial
+tags: single-cell tutorials bioinformatics R
 ---
 
 While the vignette on the Seurat website already provides good
