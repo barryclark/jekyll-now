@@ -7,10 +7,10 @@ layout: default
           {% capture p1 %}{% include about.md %}{% endcapture %}
           {{ p1 | markdownify }}
         </div>
-        <div style="margin-left: 30%;"> 
+        <div style="margin-left: 30%;font-size:50%"> 
             {% for post in site.posts limit:3 %}
             <article class="post">
-              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
               <div class="entry">
                 {{ post.excerpt }}
               </div> 
