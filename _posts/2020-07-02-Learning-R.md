@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learning R
+tags: list tutorials bioinformatics R
 ---
 
 This is a curated collection of R educational materials for learning R. I will add more as I find them. 
