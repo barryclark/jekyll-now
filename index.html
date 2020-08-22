@@ -2,24 +2,23 @@
 layout: default
 ---
 <section id="about" class="home-section">
-    <div style="width: 100%;">
-        <div style="width: 70%; float: left; ">
+    <div style="width: 100%; overflow: hidden;">
+        <div style="width: 70%; float: left;"> 
           {% capture p1 %}{% include about.md %}{% endcapture %}
           {{ p1 | markdownify }}
         </div>
         <div style="margin-left: 30%;font-size:75%"> 
             <h2>Recent Posts</h2>
             {% for post in site.posts limit:3 %}
-            <article class="post">
-              <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
-              <div class="entry">
-                {{ post.excerpt }}
-              </div> 
-              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-            </article>
+                <article class="post">
+                  <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
+                  <div class="entry">
+                    {{ post.excerpt }}
+                  </div> 
+                  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+                </article>
             {% endfor %}
          </div>
-        </div>
     </div>
 </section>
 
