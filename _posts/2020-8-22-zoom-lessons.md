@@ -14,7 +14,7 @@ questioning needs to find more time in our office meetings.
  
 * Non judgemental kids
 
-eThe kids seem to be less judgemental and everyone joins in with their
+The kids seem to be less judgemental and everyone joins in with their
 own wacky questions, instead of making fun of or sneering at other's questions.
 
 * Hardly a dull moment
