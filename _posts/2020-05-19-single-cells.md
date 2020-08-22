@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single-Cell Notes
-tags: single-cell, list, tutorials, genomics, bioinformatics
+tags: single-cell list tutorials genomics bioinformatics
 ---
 
 I have been working on single-cell data for almost a year now and I will be using this blog to detail what I have learned along with some tips and tricks. 
