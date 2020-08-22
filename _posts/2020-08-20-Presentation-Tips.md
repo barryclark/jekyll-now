@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Presentation Tips
-tags: tutorials tips
+tags: tips
 ---
 Here are some presentation tips that I have used over the years. This post is also for me to put down my thoughts for safekeeping.
 
