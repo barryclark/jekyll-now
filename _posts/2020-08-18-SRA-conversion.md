@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Converting Multiple SRA to FASTQ
+tags: tutorials bioinformatics
 ---
 
 In this post, I will detail how to download some raw sequence data from GEO/SRA in fastq format.
