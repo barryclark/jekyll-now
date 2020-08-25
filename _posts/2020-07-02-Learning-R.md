@@ -14,6 +14,12 @@ This is a curated collection of R educational materials for learning R. I will a
 
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/){:target="_blank"}
 
+## Tutorials/Workshops
+
+- [R Tutorial for Beginners: Learn R Programming Language](https://www.guru99.com/r-tutorial.html){:target="_blank"}
+
+- [Harvard Chan Bioinformatics: Introduction to R](https://hbctraining.github.io/Intro-to-R-flipped/){:target="_blank"}
+
 ## Videos
 
 - [R for Biologists](https://www.rforbiologists.org){:target="_blank"}
