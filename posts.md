@@ -4,7 +4,6 @@ title: Posts
 permalink: /posts/
 ---
 <section id="posts" class="home-section">
-  <h1> Posts </h1> 
   <div class="posts">
     {% for post in site.posts %}
       <article class="post">
