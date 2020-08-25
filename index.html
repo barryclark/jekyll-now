@@ -13,7 +13,7 @@ layout: default
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <br>
             <h2>Recent Posts</h2>
-            {% for post in site.posts limit:4 %}
+            {% for post in site.posts limit:3 %}
                 <article class="post">
                   <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
                   <div class="entry">
