@@ -23,6 +23,10 @@ Here are some useful websites that I have found in the past
 
 [Pe'er Lab](https://github.com/dpeerlab)
 
+### Academia
+  
+[Research Culture: Actionable recommendations from trainees to improve science training](https://elifesciences.org/articles/59806)
 
+[Five tips for boosting diversity on campus](https://www.nature.com/articles/d41586-020-02367-5)
 
 
