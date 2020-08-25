@@ -36,6 +36,7 @@ I submitted my first F31 in April 2016. I later received my summary statement sa
 ## Additonal Resources
 - [Chris Smith's Blog](https://www.christophertsmith.com/funding-resources.html){:target="_blank"}
 - [Finding example F30, F31, and F32 NIH NRSA applications](https://medschool.vanderbilt.edu/career-development/2020/04/28/finding-example-nih-nrsa-applications/){:target="_blank"}
+- [UAB](https://www.uab.edu/ccts/research-commons/grant-help/proposal-development/grant-library/nih-grant-f-series-samples){:target="_blank"}
 - [Student Notebook: Writing an NIH F31](https://www.psychologicalscience.org/observer/writing-an-nih-f31){:target="_blank"}
 - [Getting an NIH Pre-Doc Fellowship (F30/F31)](https://postdocs.ucsf.edu/sites/g/files/tkssra2836/f/wysiwyg/NIH-Predoc-slides-5.24.18.pdf){:target="_blank"}
 - [PARENT F31 PROPOSAL CHECKLIST](https://sites.utexas.edu/adrgs/files/2020/02/F31-Checklist-FORMS-E-2.18.20.pdf){:target="_blank"}
