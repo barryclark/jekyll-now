@@ -8,8 +8,7 @@ permalink: /posts/
   <div class="posts">
     {% for post in site.posts %}
       <article class="post">
-        {{ post.date | date_to_string }}
-        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2> 
+        <b>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b> 
         <div class="entry">
           {{ post.excerpt }}
         </div> 
