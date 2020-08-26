@@ -4,6 +4,19 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### August 26th thoughts & takeaways:
+
+* Last week, traffic volumes ticked up 3.2%. However, over the past two months we've been pretty flat. We have yet to break the daily record set back on June 12th. 
+
+* I've removed the Apple/Austin data comparison figure because I think the data is pretty biased and not very useful. 
+
+* I've changed the volume forecast model to take into account the COVID-19 cases, rather than deaths. This data is from COVIDhub and is an ensemble model. To remove day-of-week affects, I've also decided to go with an average daily traffic per week analysis. 
+
+* I've also included Google search trends data as well as Google mobility data. This allows for a scenario forecast where if we decided to end the lockdown completely we'd see a jump in traffic volumes (but not completely back to February levels), or vice versa where we'd go back to a March-level lockdown.
+
+
+***
+
 ### August 17th thoughts & takeaways:
 
 * This update is only for adding the volume projections graphic.
