@@ -4,7 +4,7 @@ title: Making a Professional Website
 tags: tutorials tips
 ---
 
-As a student or early career researcher, you may have seen a trend in professional websites created by your peers. You may have wondered whether or not you, yourself, should make one. In this post, I will give you a couple of reasons on why you should make a website and give a tutorial on how to do so using [GitHub Pages](https://pages.github.com).
+As a student or early career researcher, you may have seen a trend in professional websites created by your peers. You may have wondered whether or not you, yourself, should make one. In this post, I will give you a couple of reasons on why you should make a website and give a tutorial on how to do so using [GitHub Pages](https://pages.github.com){:target="_blank"}.
 
 ## Why make a website?
 
@@ -20,33 +20,33 @@ As a student or early career researcher, you may have seen a trend in profession
 
 ## Create your website
 
-Creating a website using [GitHub Pages](https://pages.github.com) is free and also fairly easy. First, you will want to have a [GitHub](https://github.com) account, so head over there and create one. Once you have one, it is as easy as creating your own repository. I am going to give you two approaches. In the next steps, we can either create a website from scratch or use Jekyll. Personally, I like Jekyll since it is simpler and has built-in tools for creating content, but others may want to use their own setup. Skip to the Jekyll section if you want to use Jekyll. 
+Creating a website using [GitHub Pages](https://pages.github.com) is free and also fairly easy. First, you will want to have a [GitHub](https://github.com){:target="_blank"} account, so head over there and create one. Once you have one, it is as easy as creating your own repository. I am going to give you two approaches. In the next steps, we can either create a website from scratch or use Jekyll. Personally, I like Jekyll since it is simpler and has built-in tools for creating content, but others may want to use their own setup. Skip to the [Jekyll section](## Using Jekyll) if you want to use Jekyll. 
 
->Jekyll is a static site generator with built-in support for GitHub Pages and a simplified build process. Jekyll takes Markdown and HTML files and creates a complete static website based on your choice of layouts. Jekyll supports Markdown and Liquid, a templating language that loads dynamic content on your site. For more information, see [Jekyll](https://jekyllrb.com).
+>Jekyll is a static site generator with built-in support for GitHub Pages and a simplified build process. Jekyll takes Markdown and HTML files and creates a complete static website based on your choice of layouts. Jekyll supports Markdown and Liquid, a templating language that loads dynamic content on your site. For more information, see [Jekyll](https://jekyllrb.com){:target="_blank"}.
 
 ## Setup
 
-[Create a new repository](https://github.com/new) in your GitHub profile. In the repository name section, type in `yourusername.github.io`, where `yourusername` is your username. My username is `danhtruong`, so I would type in, `danhtruong.github.io`.
+[Create a new repository](https://github.com/new){:target="_blank"} in your GitHub profile. In the repository name section, type in `yourusername.github.io`, where `yourusername` is your username. My username is `danhtruong`, so I would type in, `danhtruong.github.io`.
 
 ![]({{ site.baseurl }}/images/Making-a-professional-website/making_a_repo.png)
 
 Now you can go on over to your new website and view it. You just need to type in the name of your repository. For me it would be, `danhtruong.github.io`. 
 
-It is as simple as that. You will want to start setting up an _index.html_ and additional content for your website. Here is a [tutorial](https://www.w3schools.com/howto/howto_make_a_website.asp) if you are not familiar with using html. 
+It is as simple as that. You will want to start setting up an _index.html_ and additional content for your website. Here is a [tutorial](https://www.w3schools.com/howto/howto_make_a_website.asp) if you are not familiar with using html. You can add these files to your repository. 
 
 ![]({{ site.baseurl }}/images/Making-a-professional-website/new_repo.png)
 
 ## Using Jekyll
 
-I prefer [Jekyll](https://github.com/jekyll/jekyll) since it can generate a website for you as well as provide tools for content creation. You can install it using command line, but forking [Jekyll Now](https://github.com/barryclark/jekyll-now), a repository with Jekyll already set up, would be easier. You can follow the `readme.md` on this or continue below. 
+I prefer [Jekyll](https://github.com/jekyll/jekyll) since it can generate a website for you as well as provide tools for content creation. You can install it using command line, but forking [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"}, a repository with Jekyll already set up, would be easier. You can follow the `readme.md` on this or continue below. 
 
-Go to the [Jekyll Now](https://github.com/barryclark/jekyll-now) page and click on fork. Soon you should have a repository similar to mine. 
+Go to the [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"} page and click on fork. Soon you should have a repository similar to mine. 
 
 Edit the _config.yml_ file and add your site name and description. There are also many other possible options that you can edit as well. 
 
 ![]({{ site.baseurl }}/images/Making-a-professional-website/config.png)
 
-You can edit the file, `/_posts/2014-3-3-Hello-World.md`.
+Let's create your first blog post. You can edit the file, `/_posts/2014-3-3-Hello-World.md`.
 
 Alternatively, you can create a new file and type `/_posts/2020-8-28-Hello-World.md` into the name section. Add the [front matter](https://jekyllrb.com/docs/front-matter/) by typing the following. 
 
@@ -57,7 +57,7 @@ title: Hello, World!
 ---
 ```
 
-This section contains predfined variables for your website. By calling `layout: post`, you are telling Jekyll that this page uses the `post` layout. You can find this specific layout in the `/_layouts/`. The variable `title` provides the title of the post. Now, you can begin typing our your blog post. You will need to be familiar with markdown but here is a [Markdown Cheat Sheet](http://www.jekyllnow.com/Markdown-Style-Guide/) to get you started.
+This section contains predefined variables for your website. By calling `layout: post`, you are telling Jekyll that this page uses the `post` layout. You can find this specific layout in the `/_layouts/`. The variable `title` provides the title of the post. Now, you can begin typing our your blog post. You will need to be familiar with markdown but here is a [Markdown Cheat Sheet](http://www.jekyllnow.com/Markdown-Style-Guide/){:target="_blank"} to get you started.
 
 ``` md
 ---
