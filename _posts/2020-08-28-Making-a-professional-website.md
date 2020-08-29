@@ -38,15 +38,15 @@ It is as simple as that. You will want to start setting up an _index.html_ and a
 
 ## Using Jekyll
 
-I prefer [Jekyll](https://github.com/jekyll/jekyll) since it can generate a website for you as well as provide tools for content creation. You can install it using command line, but forking [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"}, a repository with Jekyll already set up, would be easier. You can follow the `readme.md` on this or continue below. 
+I prefer [Jekyll](https://github.com/jekyll/jekyll) since it can generate a website for you as well as provide tools for content creation. You can install it using command line, but forking [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"}, a repository with Jekyll already set up, would be easier. You can follow the `readme.md` in this [repostitory](https://github.com/barryclark/jekyll-now){:target="_blank"} or continue below. 
 
-Go to the [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"} page and click on fork. Soon you should have a repository similar to mine. 
+Go to the [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"} page and click on fork to fork the repository to yours. Soon you should have a repository similar to mine. 
 
 Edit the _config.yml_ file and add your site name and description. There are also many other possible options that you can edit as well. 
 
 ![]({{ site.baseurl }}/images/Making-a-professional-website/config.png)
 
-Let's create your first blog post. You can edit the file, `/_posts/2014-3-3-Hello-World.md`.
+Let's create your first blog post. You can edit the file `/_posts/2014-3-3-Hello-World.md`.
 
 Alternatively, you can create a new file and type `/_posts/2020-8-28-Hello-World.md` into the name section. Add the [front matter](https://jekyllrb.com/docs/front-matter/) by typing the following. 
 
