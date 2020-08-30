@@ -1,5 +1,5 @@
 ---
-title: "Utilizando a API do Google Drive"
+title: "Reconhecimento de Imagem em Java com Tesseract e Tess4J"
 permalink: "/2020/07/2020-07-13-google-drive-api.html"
 categories: [api, dados, ferramentas]
 ---
