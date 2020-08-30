@@ -12,6 +12,8 @@ Nesse artigo será mostrado com Java como extrair textos editáveis de imagens u
 
 # Uma breve história
 
+<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/2020/08/30-12-51-51-Tesseract_OCR_logo_(Google).png" title="" alt="" data-align="center">
+
 > Fonte: [GitHub - tesseract-ocr/tesseract: Tesseract Open Source OCR Engine ](https://github.com/tesseract-ocr/tesseract#brief-history)
 
 O **Tesseract** foi originalmente desenvolvido na Hewlett-Packard Laboratories Bristol e na Hewlett-Packard Co, Greeley Colorado, entre os anos de 1985 à 1994, com mais algumas mudanças, foi portado para Windows em 1996, além de alguns aprimoramentos em 1998. Em 2005 foi liberado a comunidade pela HP e desde 2006 é desenvolvido pela Google. Mais informações sobre **Tesseract** podem ser encontrada em [https://github.com/tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract).
