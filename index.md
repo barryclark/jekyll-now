@@ -79,6 +79,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 ### <a name="books"></a>Ποια βιβλία να διαβάσω για το Bitcoin;
 
 - Μικρό, εισαγωγικό, μη-τεχνικό βιβλίο: [The Little Bitcoin Book](https://littlebitcoinbook.com)
+- Μικρό, εισαγωγικό, μη-τεχνικό βιβλίο: [21 Lessons: What I've Learned from Falling Down the Bitcoin Rabbit Hole](https://21lessons.com) ([στα Ελληνικά](https://niclick.org/blog/21-mathimata-philosofia/))
 - Μη-τεχνικό βιβλίο για την ιστορία του Bitcoin: [Digital Gold](https://www.harpercollins.com/9780062572066/digital-gold/)
 - Μη-τεχνικά βιβλία για τη χρησιμότητα του Bitcoin: [The Internet of Money](https://theinternetofmoney.info)
 - Τεχνικό βιβλίο για το Bitcoin: [Mastering Bitcoin](https://bitcoinbook.info)
