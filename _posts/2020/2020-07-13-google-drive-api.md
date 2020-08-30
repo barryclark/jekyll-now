@@ -143,7 +143,3 @@ Todo o código está disponível em [GitHub - ivanqueiroz/iqdrive](https://githu
 # Fontes
 
 [Developer's Guide - API Client Library for Java](https://developers.google.com/api-client-library/java/google-api-java-client/dev-guide)
-
-
-
-
