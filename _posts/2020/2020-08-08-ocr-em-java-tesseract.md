@@ -1,6 +1,6 @@
 ---
 title: "Reconhecimento de Imagem em Java com Tesseract e Tess4J"
-permalink: "/2020/07/2020-07-13-google-drive-api.html"
+permalink: "/2020/07/2020-08-30-ocr-java-tesseract-tess4j.html"
 categories: [api, dados, ferramentas]
 ---
 
