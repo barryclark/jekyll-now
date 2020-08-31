@@ -28,5 +28,8 @@ As mentioned earlier, this is a quick exploratory analysis and as you can see, w
 1) Identifying if specific divisions or product categories have more positive/negative reviews, especially for similar words. Is the surrounding context also similar?
 2) In the case of negative reviews containing the word 'fabric', what about the fabric and which type of fabric is commonly raised as a concern?
 3) Could we use methods like KNN or Decision Trees to help us identify demographics that favour our products? 
+4) Beyond the reviews that customers are leaving, we can even go one step further and listen to the conversations that they are having on outlets like Twitter and other social platforms.
+
+So while we may all be apart from each other right now, this may be the best time to start to listening to each other.
 
 
