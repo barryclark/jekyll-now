@@ -11,5 +11,22 @@ Without going into the technicalities of NLP (if you are interested in learning 
 
 ![E-Commerce Dataset Sample](/images/EC NLP 1.png)
 
-As a visual learner myself, through using word clouds, I was able to showcase the key terminology that frequently appear in the reviews so we can easily see what the general topics these conversations are about. And of course, as great as visuals are, it is still important to see numbers so I have included frequency table of these words as well to see exactly how often these words are appearing.
+Note: in this dataset, there are 22,641 reviews made by customers and of which 82% of the reviews, customers claimed they would recommend the item of purchase. 
+
+As a visual learner myself, through using word clouds, I was able to showcase the key terminology (AKA tokens) that frequently appear in the reviews so we can easily see what the general topics these conversations are about. And of course, as great as visuals are, it is still important to see numbers so I have included the frequency tables of these words as well to see exactly how often these words are appearing. This is what I was able to find:
+
+![E-Commerce Dataset Sample](/images/EC NLP 2.png) ![E-Commerce Dataset Sample](/images/EC NLP 3.png)
+
+![E-Commerce Dataset Sample](/images/EC NLP 4.png) ![E-Commerce Dataset Sample](/images/EC NLP 5.png)
+
+Off the bat, there are a few points we can see (to preface, I also took into account words that appear in combination and also the stems of words):
+1) There are similar words that appear in reviews where customers noted they would recommend (for simplicity, we will call these positive reviews) and those that say they would not recommend (negative reviews).
+2) The term 'love' appears proportionately more frequently in positive reviews whereas 'like' appears more frequently in negative reviews.
+3) Looking at the differences in the top 10 words, 'great' does not crack the top 10 for negative reviews, and 'fabric' does not appear in the top 10 words for positive reviews.  
+
+As mentioned earlier, this is a quick exploratory analysis and as you can see, we can easily capture the essence of the reviews. There are many next steps that can be taken to further analyze these conversations/reviews such as:
+1) Identifying if specific divisions or product categories have more positive/negative reviews, especially for similar words. Is the surrounding context also similar?
+2) In the case of negative reviews containing the word 'fabric', what about the fabric and which type of fabric is commonly raised as a concern?
+3) Could we use methods like KNN or Decision Trees to help us identify demographics that favour our products? 
+
 
