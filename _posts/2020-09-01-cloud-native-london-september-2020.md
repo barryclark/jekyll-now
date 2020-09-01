@@ -4,13 +4,12 @@ title: "Cloud Native London September 2020: Redis Labs, Suade Labs, and Oracle"
 description: "join us for three fantastic talks by speakers from Redis Labs, Suade Labs, and Oracle at the Cloud Native London meetup September 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
 image: https://secure.meetupstatic.com/photos/event/e/9/4/6/600_489119718.jpeg
-video: https://www.youtube.com/embed/YzsKp6Je8eY
+video: https://www.youtube.com/embed/ShIGf_2c3Jg
 tags:
   - Photos
   - Video
   - Meetup
   - "2020"
-published: false
 ---
 
 Join us at the September Cloud Native London virtual meetup with speakers from Redis Labs, Suade Labs, and Oracle, from 6:30pm BST on Zoom and YouTube!
