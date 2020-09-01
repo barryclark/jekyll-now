@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London August 2020: Intel, Palo Alto Networks, and Cisco"
 description: "join us for three great talks by speakers from Intel, Palo Alto Networks, and Cisco at the Cloud Native London meetup August 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
-image: /images/August_2020_pic2.PNG
+image: /images/2020-08-05-cloud-native-london-august-2020.jpg
 video: https://www.youtube.com/embed/dEeDIjdZjGI
 tags:
   - Photos
