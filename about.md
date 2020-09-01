@@ -8,8 +8,14 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Dedicated technology professional with strong leadership qualities, strong work ethic, creative, innovative, problem solver, active listener, goal oriented, believer in extra mile service, and lifelong learner 😊.
+
+A little biased towards Apple products and the tools used to manage them ...
+
+Code is shell, python, and golang (at least learning this one).
+
+Interested in device management and automation.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jmattwilson1@gmail.com](mailto:jmattwilson1@gmail.com)
