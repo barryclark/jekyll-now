@@ -4,6 +4,16 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### September 1st thoughts & takeaways:
+
+* Traffic volumes ticked up again last week. I won't expect this to change that much until Austin schools are back in session.
+
+* I've updated the TSA checkpoint data with some of the latest numbers. I find it interesting we dropped below our typical 1% share of USA passengers since the spike in cases in late June. This data is an absolute nightmare to work with (hundreds of PDF pages).
+
+* Micromobility trips have shot up this month. It seems to be in line with students being back in session at UT. Many leases in West Campus start August 1st so that's probably why we see a big tick up around then. Lime has also been giving out $10 in free rides to students last week. 
+
+***
+
 ### August 26th thoughts & takeaways:
 
 * Last week, traffic volumes ticked up 3.2%. However, over the past two months we've been pretty flat. We have yet to break the daily record set back on June 12th. 
