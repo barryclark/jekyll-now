@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing the CNCF Technology Radar - CNCF Webinar"
 description: "Watch Cheryl Hung's webinar on the CNCF Technology Radar and how end users are adopting cloud native continuous delivery"
-image: https://www.cncf.io/wp-content/uploads/2020/06/image2-1536x838.png
+image: https://www.cncf.io/wp-content/uploads/2020/08/image2-768x419-1.png
 slides: //www.slideshare.net/slideshow/embed_code/key/vkLWKQslOPXDJh
 video: https://www.youtube.com/embed/0792Q3l6tK8
 tags:
