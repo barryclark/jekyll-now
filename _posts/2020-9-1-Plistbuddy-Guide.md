@@ -3,7 +3,6 @@ layout: post
 title: PlistBuddy Guide
 ---
 
-# PlistBuddy Guide
 
 ## Why does this doc exist?
 
