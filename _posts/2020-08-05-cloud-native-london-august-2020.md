@@ -14,7 +14,7 @@ tags:
 
 We were back with our August Cloud Native London virtual meetup was back on Zoom and YouTube livestream, welcoming speakers from Intel, Palo Alto Networks, and Cisco, and members from all over the world.
 
-![](/images/August_2020_pic2.PNG)
+![](/images/2020-08-05-cloud-native-london-august-2020.jpg)
 
 *KubeCon CloudNativeCon is fast approaching!* [Register with code KCEUVMM20 for 20% off](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/register/)
 
