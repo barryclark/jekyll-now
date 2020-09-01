@@ -5,52 +5,51 @@ author: stelios
 tags: [api, hands-on, tutorials]
 categories: [Software Development]
 featured: true
-description: ""
+description: "Doordeck provides a robust API and platform for physical and resource access management. This post provides a quick introduction on how to connect to the platform."
 image: assets/images/doordeck/door-green-closed-lock-4291.jpg
 ---
 
 ## A new paradigm 
 
-Physical access has been slow to move to the internet age
-The key has been with us for millenia 
-in the last few decades has been slowly pushed back by the omni-present magnetic and NFC cards 
+Physical access has been slow to move to the internet age. The humble key has been with us for millennia.  
+In the last few decades, it has slowly been replaced in professional environments by magnetic and NFC access cards.  
+However, this is still falling short for the current and future needs of the Internet age.    
 
 ![Card access](../assets/images/doordeck/card-access.png)
 > Typical card access system
 
-Card goes near reader prompting a read of its unique id
-Id travels to controller device where it is checked against the whitelist
-If confirmed, the controller opens the lock
+The way access cards work, is pretty simple.  
+The card goes near the reader prompting a read of its unique identifier. The reader relays the identifier to a central 
+controller device (usually a computer), where it is checked against the whitelist of identifiers.   
+If confirmed, the controller instructs the door's lock to open. 
   
-Cards are easy to lose
-they do not recognize an owner  
-hard to centrally manage (one-time access, instantly revoke, API integration and automation...)  
+Though more flexible compared to keys, card-based systems leave a lot to be desired.  
+Cards are as prone to loss or theft as keys. Once that happens, there is no way of preventing unwanted access without removing 
+from the whitelist first. Cards do not "recognize" an owner.
+In addition, these systems are usually closed and hard to manage and automate centrally (one-time access, instant revocation, 
+API integration and automation...)  
 
-Doordeck <sup>[1](#footnote_1)</sup> builds on top of existing physical card infrastructure and brings it online
+The Doordeck platform <sup>[1](#footnote_1)</sup> builds on top of the [existing offline access card infrastructure][19] and 
+makes it accessible via an API platform.
+This is possible by combining the capabilities of Android and iPhone platforms with public/private key cryptography.
 
 ![Doordeck access](../assets/images/doordeck/doordeck-access.png)
 
-When the user installs the app, it generates a public/private keypair 
-This is securely sent to the Doordeck server and will be used to identify the user from then on 
+Each user is identified by a public/private keypair.  
+Depending on the access mode (direct or as a service), the keypair is generated on the server or the mobile device. 
 
-NFC-enabled mobile phone goes near the Doordeck tile (or scans thew QR code printed on it)
-https://doordeck.com/how-it-installs
+An NFC-enabled mobile phone goes near the [Doordeck tile][20] (or the camera scans thew QR code printed on it).  
+The device makes an API call, requesting access. The call's payload is the tile's id, signed with the user's private key. 
+This means "user X wants to open door 1, associated with tile Y". 
 
-The device requests access by sending the tile's id, signed with its private key 
-This means "user X wants to open door Y"
+The server checks the request against a number of possible rules (user allowed for this door, blackout times,...). If successful, 
+it instructs the access controller to unlock the door.  
 
-The server checks the request against a number of possible rules (user allowed for this door, blackout times,...)
-If successful instructs the controller add-on to unlock the door 
-
-Application --> User
-
-
-This only scratches the surface 
-and will make more sense through a hands-on example
+Let's stretch our hands and see this end-to-end through a hands-on example. 
 
 ## Security as a service
 
-The Doordeck entity model is quite simple 
+The underlying Doordeck entity model is quite simple.
  
 ```
 +-------+         +--------+
@@ -69,21 +68,21 @@ The Doordeck entity model is quite simple
                   +--------+        +-------+
 ```
 
-* A User has access to a number of Sites.  
+* A Doordeck User has access to a number of Sites (i.e. buildings).  
 * Each Site has a number of Locks (doors), for each one of which the User is explicitly permissioned.
-* Each Lock can be associated with a Tile, which is effectively an identifier for the door.
+* Each Lock can be associated with a Tile; this is effectively an identifier for the door.
 
-To do a hands-on test of the API we need to do 3 things:  
-* create an account with Doordeck, and
-* associate the new account with a demo door, and 
-* unlock it!
+For a test of the API we need to do 3 things:  
+1. Create a user account with Doordeck, 
+2. associate the new account with a door (a demo one, for now), and 
+3. unlock it!
 
 We will be calling the [staging version][5] of the API.
 
 ### Creating a user account
 
 This is fairly easy at the [registration portal][3].  
-After logging in, the web app's home screen looks rather sparse; we are not yet associated with any locks.
+After logging in, the web application's home screen looks rather sparse; we are not yet associated with any locks.
 
 ![Doordeck login](../assets/images/doordeck/dd_login.png)
 > Doordeck user login screen
@@ -91,7 +90,7 @@ After logging in, the web app's home screen looks rather sparse; we are not yet 
 ### Associate with the demo door
 
 First we need to discover our user's identifier.  
-Let's call the [login endpoint][4], replacing the `EMAIL` and `PASSWORD` with your credentials.  
+Let's call the [login endpoint][4], replacing the `EMAIL` and `PASSWORD` with your credentials from the registration portal.  
 ```bash
 curl 'https://api.staging.doordeck.com/auth/token/' \
       -X POST \
@@ -105,7 +104,7 @@ Copy the printed token and paste it in the [debugger of jwt.io][2].
 > User id in the authentication token
 
 To associate with the demo door, we will use a [simple web form][6] which has been provided for this reason.  
-Paste your user id and click submit.
+Paste your user id and click Submit.
 
 ![Associate with demo door](../assets/images/doordeck/user_demo_door.png)
 > Associate with demo door
@@ -123,12 +122,13 @@ On [logging in][4], each user is issued with
 * an `authToken` to call the non-sensitive API endpoints, and 
 * a `privateKey` to sign a JWT authentication payload for sensitive operations like [unlock][8]. 
 
-The signed authentication payload is time-constrained and serves to prevent replay attacks.   
+When sending a signed authentication payload, the Doordeck server imposes a time limit of 60 seconds from the time of 
+signing to  is time-constrained and serves to prevent replay attacks.   
 
 This security feature makes it hard to test by hand; one needs to be typing super-fast.  
 For this reason I have created the following utility script, which  
 * takes in your credentials, 
-* logs in
+* logs in to Doordeck,
 * signs a JWT authentication payload, and
 * unlocks the demo door.
 
@@ -191,113 +191,155 @@ curl "https://api.staging.doordeck.com/device/$LOCK_ID/execute" \
  
 Save it as an executable shell script and open a browser to the [demo door's web page][9].
 
-Run the script and... voila!
+Run the script, switch to the demo door's page and... voila!
 
 ![Unlocking the door](../assets/images/doordeck/door_unlock.gif)
 > Door unlocking sequence
 
-## 
+## Security as a Platform
 
-### Prerequisites
+Doordeck takes the concept of secure access further by offering an integration platform.  
+This allows third parties and developers to offer access automation as an add-on service through their existing systems 
+and applications.
+The applications range from [tenant experience applications][10] offered by large commercial property managers, to
+centralized [industrial facility management][11] to vanilla [office management][21]. 
 
-I will assume you are on a Mac. <sup>[2](#footnote_2)</sup> 
-curl
-python 2.7.6
-install pip 
+The conceptual entity model of the Doordeck platform is slightly different.
+
+```
++-------+        +-------+         +-------+         +--------+
+|       |*      1|       |*       1|       |*       *|        |
+| App   +--------+  App  +---------+ Admin +---------+ Site   |
+| User  |        |       |         |       |         |        |
++---+---+        +-------+         +-------+         +--------+
+    | *                                                 1|
+    |                                                    |
+    |                                                    |
+    |                                                   *|
+    |                                                +--------+        +-------+
+    |                                               *|        |1    0+1|       |
+    +------------------------------------------------+ Lock   +--------+ Tile  |
+                                                     |        |        |       |
+                                                     +--------+        +-------+
+``` 
+
+* The Doordeck User (as described in the previous section) is the administrator of...
+* the Application, registered with the Doordeck platform.  
+The Application has a number of...
+* App Users, which it has previously on-boarded and authenticated.  
+The Application takes care of uniquely identifying App Users to Doordeck (id, e-mail...).  
+* The Doordeck Platform allows these App Users access to Locks, by issuing ephemeral security keys.    
+
+Let's see how that works end-to-end, using the staging API.
 
 ### Registering the application
 
-First of all the integrator server application 
-needs to identify itself to the Doordeck API <sup>[3](#footnote_3)</sup> 
+The integrator application needs to identify itself to the Doordeck API. <sup>[2](#footnote_2)</sup> 
 
-The application is registered in the Doordeck portal (https://developer.doordeck.com/)
+We start by registering the application in the [Doordeck portal][12].
 
 ![Register app](../assets/images/doordeck/register-app.png)
 
-The integrator application identifies needs to 1) identify itself and 2) prove its identity.
-
 #### Application identity
 
-Finally the application is going to identify itself using a URL
-This will go in the `iss` field of the incoming JWT
-and is called Auth domain in the Doordeck portal
+The application uniquely identifies itself to the API using a URL.  
+This is called `Auth domain` in the Doordeck portal. Once defined, it will need to be specified verbatim in the `iss` 
+field of all JWTs sent to the API.
 
 ![Auth domain](../assets/images/doordeck/auth-domain.png)
 > Adding the application's external identifier
 
 #### Application security
 
-itself to the Doordeck server with a signature key
+We will also need to upload the public key of the application.  
+The application will sign JWTs with its private key as an authentication step every time it calls the Doordeck API.
 
-and the current user with an OpenID JWT (link?)
-
+The developer portal requires the upload of the public keys in [JWK format][13].  
+For test purposes, this can be generated manually at [https://mkjwk.org/][14], making sure to only select an algorithm 
+from the [relevant RFC-mandated list][15] (e.g. RS256).  
+The website can also generate the keys in PEM format; very useful to automate the local signing of the payloads.  
 ![Generate key](../assets/images/doordeck/mkjwk.png)
+> Manually generating a JWK 
 
-Quickest way to generate a JWK from https://mkjwk.org/
-https://tools.ietf.org/html/rfc7517
+Alternatively, if you have  
+* [Java 14+ installed][16] and 
+* the [lokey Python tool][18] 
 
-Select an algorithm from the RFC list 
-https://tools.ietf.org/html/rfc7518#section-3.1
-
-Same tool can be launched locally
-https://github.com/mitreid-connect/json-web-key-generator
-
-![Paste public key](../assets/images/doordeck/public-key.png)
-> Adding the integrator application identifier
-
-Convert to PEM: https://8gwifi.org/jwkconvertfunctions.jsp
-Run locally: https://8gwifi.org/download.jsp
-
-![Convert to PEM](../assets/images/doordeck/convert-to-pem.png)
-> Converting the JWK to PEM
-
-Save the PEM keys because we will need them when we...
-
-### Generate a user JWT
-
-The calling user's details are encapsulated in a JWT, signed by the application 
-The full list of allowed fields can be found here (https://gist.github.com/mpbarnwell/532d0425abaf22239344151145ba8595#file-openid-fields-md)
-You can use the following template 
+you can take a shortcut and generate the keys using the following little script.  
+The script    
+* downloads the JAR from [Github][17], 
+* generates a 2048 bit RSA key named `my-key`, 
+* creates files `fullKey.jwk` and `publicKey.jwk` in the current directory, and
+* creates `privateAppKey.pem` and `publicAppKey.pem` from them.
 
 <details markdown="1">
   <summary>Click to expand!</summary>
 
+```bash
+#!/bin/bash
+
+curl -L -o json-web-key-generator.jar https://github.com/mitreid-connect/json-web-key-generator/releases/download/json-web-key-generator-0.8.2/json-web-key-generator.jar
+
+java -jar json-web-key-generator.jar -t RSA -s 2048 -i my-key -u sig -p -o fullKey.jwk -P publicKey.jwk
+
+cat fullKey.jwk | lokey to pem > privateAppKey.pem
+
+cat publicKey.jwk | lokey to pem > publicAppKey.pem
 ```
---- Header ---
-{
-  "alg": "RS256",
-  "kid": "REPLACE_ME_WITH_THE_JWK_KID"
-}
+</details>
 
---- Payload ---
-{  
-     "iss":"REPLACE_ME_WITH_YOUR_APPLICATION_AUTH_DOMAIN",
-     "exp":REPLACE_ME_WITH_A_UNIX_TIMESTAMP_FOR_EXPIRY,
-     "iat":REPLACE_ME_WITH_A_UNIX_TIMESTAMP_FOR_ISSUANCE,
-     "aud":"https://api.doordeck.com",
-     "sub":"REPLACE_ME_WITH_YOUR_USER_UNIQUE_ID_CAN_BE_ANYTHING",
-     "email":"some@email.com",
-     "email_verified":true,
-     "telephone":"+441234567890",
-     "telephone_verified":true,
-     "name":"Your TestUser",
-     "locale":"en-gb",
-     "zoneinfo":"Europe/London"
-}
-```  
-</details> 
+Paste the public JWK in the Doordeck portal; this will be your application's identifier.  
+![Paste public key](../assets/images/doordeck/public-key.png)
+> Adding the integrator application identifier
 
-The placeholders `REPLACE_ME` are values which you should replace for things to work.
-You may also want to set the email and phone number to something valid for further testing.
+Save the PEM files because we will need them when we...
 
-Timestamps: https://www.unixtimestamp.com/ 
+### Generate a user JWT
 
-Copy-paste the above template and assemble your final JWT in the online helper at [jwt.io][2].
+As we saw in the previous section, upon [user login][4] we receive a private key with which to sign API call JWTs.  
 
-![JWT creation](../assets/images/doordeck/jwt_io.png)
-> JWT creation in jwt.io
+The case of an Application making API calls is not much different.  
+The Application signs the JWT with its private key and defines the App User details (name, e-mail...) in the JWT's body. 
+Since this is a trusted Application, the App User details are also trusted. 
 
+The following script assembles and tests such a user JWT using  
+* the Application's auth. domain,
+* a user e-mail provided by you,
+* the `privateAppKey.pem` file generated previously, and
+* assuming that the signature algorithm is `RS256` and the Application's key is named `my-key`.
 
+<details markdown="1">
+  <summary>Click to expand!</summary>
+
+```bash
+#!/bin/bash
+
+echo "Please provide your Application auth. domain"
+read -p "Domain: " DOMAIN
+echo "Please provide your Application user's e-mail"
+read -p "E-mail: " EMAIL
+
+IAT=$(date +%s)
+EXP=$((IAT + 600))
+
+echo "Preparing user JWT..."
+
+HEADER='{"alg":"RS256","kid":"my-key"}'
+BODY='{"iss":"'"$DOMAIN"'","iat":'"$IAT"',"exp":'"$EXP"',"aud":"https://api.doordeck.com","sub":"'"$EMAIL"'","email":"'"$EMAIL"'","email_verified":true,"telephone":"+441234567890","telephone_verified":true,"name":"Name '"$EMAIL"'","locale":"en-gb","zoneinfo":"Europe/London"}'
+HEADER_B64=`echo -n $HEADER | base64 | sed 's/+/-/g;s/\//_/g;s/=//g'`
+BODY_B64=`echo -n $BODY | base64 | sed 's/+/-/g;s/\//_/g;s/=//g'`
+SIGNATURE_B64=`echo -n $HEADER_B64.$BODY_B64 | openssl sha256 -sign privateAppKey.pem | base64 | sed 's/+/-/g;s/\//_/g;s/=//g'`
+JWT=`echo -n $HEADER_B64.$BODY_B64.$SIGNATURE_B64`
+
+echo "Validating the user JWT..."
+
+curl -v -X GET \
+  https://api.staging.doordeck.com/platform/auth \
+  -H "Authorization: Bearer $AUTH_TOKEN" 
+```
+</details>
+
+### 
 
 ## Parting thoughts
 
@@ -316,8 +358,7 @@ https://www.buildings.com/news/industry-news/articleid/21265/title/simplify-acce
 ## Footnotes
 
 1. <a name="footnote_1"></a>Full disclaimer: I am an angel investor in Doordeck. 
-2. <a name="footnote_2"></a>It will be easy to follow on another development environment. 
-3. <a name="footnote_3"></a>This section is a condensed version of the guide found [here][1].
+3. <a name="footnote_2"></a>This section is a condensed version of the guide found [here][1].
 
 
   [1]: https://doordeck.com/developer/authenticating-your-users
@@ -329,3 +370,15 @@ https://www.buildings.com/news/industry-news/articleid/21265/title/simplify-acce
   [7]: https://app.doordeck.com/
   [8]: https://developer.doordeck.com/docs/#unlock
   [9]: https://demo.doordeck.com/assets/
+  [10]: https://www.sharplaunch.com/blog/tenant-experience-software-app/
+  [11]: https://en.wikipedia.org/wiki/Facility_management
+  [12]: https://developer.doordeck.com/
+  [13]: https://tools.ietf.org/html/rfc7517
+  [14]: https://mkjwk.org/
+  [15]: https://tools.ietf.org/html/rfc7518#section-3.1
+  [16]: https://gist.github.com/gwpantazes/50810d5635fc2e053ad117b39b597a14
+  [17]: https://github.com/mitreid-connect/json-web-key-generator
+  [18]: https://github.com/jpf/lokey
+  [19]: https://doordeck.com/how-it-installs
+  [20]: https://doordeck.com/blog/unlock-with-a-touch-doordeck-becomes-the-first-keyless-solution-to-use-native-nfc-on-iphone
+  [21]: https://en.wikipedia.org/wiki/Office_managemen
