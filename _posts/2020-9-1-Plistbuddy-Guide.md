@@ -2,10 +2,6 @@
 layout: post
 title: PlistBuddy Guide
 ---
-
-
-## Why does this doc exist?
-
 With the `defaults` command showing some weird behaviors, I wanted to learn another command-line tool that I could work it my workflows.
 
 I put this doc together because I was finding it difficult to locate anything out on the Internet related to `PlistBuddy` that was easy to following or understand. 
