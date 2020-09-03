@@ -23,9 +23,9 @@ Blog này được lập ra trên github page, mọi bài viết sẽ được v
 
 Tên bài viết có định dạng "yyyy-MM-dd-tiêu-đề-bài-viết.md"
 
-Hãy tạo pull request như bình thường để có người review trước khi được public nha nha nha.
+Hãy tạo pull request như bình thường để có người review trước khi được public nha nha nha.<br/>
 
-###Mọi thắc mắc hãy nhắn tin trực tiếp vào [slack team](https://monstar-lab-group.slack.com/archives/G9QF9DXFB) hoặc contact Truong Nguyen V. qua [slack](Https://monstar-lab-group.slack.com/team/U9QBQE78Q) hoặc mail [mail](mailto:truong.nguyen@asiantech.vn?subject=Trao đổi liên quan tới BLKBRD blog!).
+### Mọi thắc mắc hãy nhắn tin trực tiếp vào [slack team](https://monstar-lab-group.slack.com/archives/G9QF9DXFB) hoặc contact Truong Nguyen V. qua [slack](Https://monstar-lab-group.slack.com/team/U9QBQE78Q) hoặc email [mail](mailto:truong.nguyen@asiantech.vn?subject=Trao%20đổi%20liên%20quan%20tới%20BLKBRD%20blog!) .
 
 <!--## Local Development
 
