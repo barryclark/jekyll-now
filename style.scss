@@ -120,6 +120,13 @@ img {
   color: $gray;
 }
 
+.date2 {
+  font-style: italic;
+  color: $gray;
+  font-size: smaller;
+  // text-align: right;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;

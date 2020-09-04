@@ -7,7 +7,9 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <div class="date2">
+        Viết bởi {{post.author}} - Vào ngày {{ post.date | date: "%d/%m/%Y" }}
+      </div>
       <div class="entry">
         {{ post.excerpt }}
       </div>
