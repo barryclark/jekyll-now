@@ -4,10 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
 A little biased towards  products and the tools used to manage them. Code in shell, python, and golang (at least learning this one). Interested in device management and automation.
 
 ### Contact me
