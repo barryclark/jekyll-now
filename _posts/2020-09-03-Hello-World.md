@@ -1,7 +1,7 @@
 ---
 layout: post
-title: You're up and running!
+title: My first post!
 categories: category1 category2
 ---
 
-Your post content here
+My first post content here
