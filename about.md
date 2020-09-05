@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello, it's my first time using github, seems fun!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm currently studying CIT at Cal State Northridge and loving it!
+Currently studying for my CompTia Sec+ and AWS exam so I can not only learn more, but be ready for jobs in that field. 
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Mubasher.ali.881@my.csun.edu](mailto:Mubasher.ali.881@my.csun.edu)
