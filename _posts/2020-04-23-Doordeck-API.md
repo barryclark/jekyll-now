@@ -114,6 +114,8 @@ You can verify the association by refreshing your [home screen][7] in the web ap
 ![Demo door](../assets/images/doordeck/demo_lock.png)
 > Demo door in the web app
 
+In a real-life scenario, the above task would be done by an admin, using the relevant lock update [API call][25]. 
+
 You are all set to...
 
 ### Unlock your first door
@@ -126,7 +128,7 @@ When sending a signed authentication payload, the Doordeck server imposes a time
 signing to  is time-constrained and serves to prevent replay attacks.   
 
 This security feature makes it hard to test by hand; one needs to be typing super-fast.  
-For this reason I have created the following utility script, which  
+For this reason let's use the following utility script, which  
 * takes in your credentials, 
 * logs in to Doordeck,
 * signs a JWT authentication payload, and
@@ -201,7 +203,7 @@ Run the script, switch to the demo door's page and... voila!
 Doordeck takes the concept of secure access further by offering an integration platform.  
 This allows third parties and developers to offer access automation as an add-on service through their existing systems 
 and applications.
-The applications range from [tenant experience applications][10] offered by large commercial property managers, to
+The applications range from [tenant experience applications][10], offered by large property managers, to
 centralized [industrial facility management][11] to vanilla [office management][21]. 
 
 The conceptual entity model of the Doordeck platform is slightly different.
@@ -236,7 +238,7 @@ Let's see how that works end-to-end, using the staging API.
 
 The integrator application needs to identify itself to the Doordeck API. <sup>[2](#footnote_2)</sup> 
 
-We start by registering the application in the [Doordeck portal][12].
+We start by registering the application in the [Doordeck portal][12]. 
 
 ![Register app](../assets/images/doordeck/register-app.png)
 
@@ -288,7 +290,8 @@ cat publicKey.jwk | lokey to pem > publicAppKey.pem
 ```
 </details>
 
-Paste the public JWK in the Doordeck portal; this will be your application's identifier.  
+Paste the public JWK (`publicKey.jwk`) in the Doordeck portal; this will be your application's identifier. 
+
 ![Paste public key](../assets/images/doordeck/public-key.png)
 > Adding the integrator application identifier
 
@@ -302,7 +305,7 @@ The case of an Application making API calls is not much different.
 The Application signs the JWT with its private key and defines the App User details (name, e-mail...) in the JWT's body. 
 Since this is a trusted Application, the App User details are also trusted. 
 
-The following script assembles, tests and saves such a user JWT using  
+The following script assembles, tests and saves such an authentication token using  
 * the Application's auth. domain,
 * a user e-mail provided by you,
 * the `privateAppKey.pem` file generated previously, and
@@ -310,7 +313,7 @@ The following script assembles, tests and saves such a user JWT using
 
 Save the script somewhere as `step1.sh` and run it.
 
-The generated JWT will be valid for 43,200 sec (i.e. 12 hours).
+The generated authentication token will be valid for 43,200 sec (i.e. 12 hours).
 
 <details markdown="1">
   <summary>Click to expand script</summary>
@@ -320,13 +323,13 @@ The generated JWT will be valid for 43,200 sec (i.e. 12 hours).
 
 echo "Please provide your Application auth. domain"
 read -p "Domain: " DOMAIN
-echo "Please provide your Application user's e-mail"
+echo "Please provide your Application User's e-mail"
 read -p "E-mail: " EMAIL
 
 IAT=$(date +%s)
 EXP=$((IAT + 43200))
 
-echo "Preparing the application JWT..."
+echo "Preparing the authentication token JWT..."
 
 HEADER='{"alg":"RS256","typ":"JWT,"kid":"my-key"}'
 BODY='{"iss":"'"$DOMAIN"'","iat":'"$IAT"',"exp":'"$EXP"',"aud":"https://api.doordeck.com","sub":"'"$EMAIL"'","email":"'"$EMAIL"'","email_verified":true,"telephone":"+441234567890","telephone_verified":true,"name":"Name '"$EMAIL"'","locale":"en-gb","zoneinfo":"Europe/London"}'
@@ -347,15 +350,18 @@ echo -n "$JWT" > auth.token
 
 ### Authenticating the device
 
-The 3rd party application on the App User's phone 
-needs to unambiguously and securely identify the user and her phone to Doordeck 
-before unlocking a door.  
+The 3rd party application on the App User's phone needs to unambiguously and securely identify the user and her phone to 
+Doordeck before unlocking a door.  
 
-To achieve this, the [Doordeck mobile SDK][22] generates a new [Ed25519 keypair][23] on the user's login to the device. 
-This is sent to Doordeck and comes back as a signed certificate. 
+To achieve this, the [Doordeck mobile SDK][22] generates a new [Ed25519 keypair][23] with the user logging in to the device.  
+This is sent to Doordeck, "registered" against the App User's "profile" and comes back as a signed certificate.  
+This proves  
+* to the SDK that the server responding is indeed the Doordeck API, and
+* to the Doordeck API that the device belongs to a previously authorized App User (in subsequent unlock attempts).  
 
-To emulate these steps manually, we can use the [Pynacl Python library][24].  
-After installing Pynacl, save the following Python 2.7 script as `ed25519.py`, so that we can call its methods.
+To emulate these steps manually, we can utilize the [Pynacl Python library][24], for generating and handling Ed25519 key material.  
+After installing Pynacl, save the following Python 2.7 script as `ed25519.py` in the current working directory, so that 
+we can call its methods.
 
 <details markdown="1">
   <summary>Click to expand Python script</summary>
@@ -390,8 +396,9 @@ def sign_message():
 ```
 </details>
 ‍
-Next step is to send the public key to the Doordeck API and associate it with the current App User.  
-Building on the previous bash script which has saved an appropriate token, we have the following.
+Let's pretend that the App User has opened the 3rd party mobile application.  
+The SDK generates an Ed25519 keypair and sends the public key to the Doordeck API, along with the current App User's details.    
+We have already constructed and saved an authentication token from the previous script, so we will re-use that token.
 
 <details markdown="1">
   <summary>Click to expand script</summary>
@@ -417,22 +424,22 @@ echo "The userId is: "
 echo "$USER_ID"
 echo -n "$USER_ID" > user.id
 
-cat certs.json | jq .chain
-
+CERTS=$(cat certs.json | jq .chain)
+echo -n "$CERTS" > cert.chain
 ```
 </details>
 
 ‍This script (let's save it as `step2_1.sh`) does the following  
 * Generates a new ephemeral key 
 * Submits it to Doordeck
-* Prints back the Doordeck UUID for the particular App User and saves it for later, and
-* Saves the certificate chain of the ephemeral key for later. 
+* Prints back the Doordeck UUID for the particular App User and saves it for the next step, and
+* Saves the certificate chain of the ephemeral key (again, for the next step). 
 
 Like before, we will need to...
 
-### Associate with the demo door
+### Associate the App User with the demo door
 
-Go to the [web form][6], paste the App User id printed above and click Submit.
+Go to the [web form][6], paste the App User id printed from the script you have just run and click Submit.
 
 ![Associate with demo door](../assets/images/doordeck/user_demo_door.png)
 > Associate with demo door
@@ -441,7 +448,12 @@ And now we are again ready to...
 
 ### Unlock the demo door
 
-The following script (let's call it `step_2_2.sh`) is using all of the artifacts we gathered in our previous steps.
+The following script (let's call it `step_2_2.sh`) is using all of the artifacts we gathered in our previous steps.  
+Namely, it loads  
+* the authentication token, identifying the Application and providing the App User details
+* the UserId and Certificate chain, proving that the user device can be positively identified by a known ephemeral 
+Ed25519 keypair
+* the private key of the Ed25519 keypair, for signing the unlock request and closing the security "loop". 
 
 <details markdown="1">
   <summary><b>Click to expand script</b></summary>
@@ -460,7 +472,7 @@ USER_ID=`cat user.id`
 IAT=$(date +%s)
 EXP=$((IAT + 60))
 
-echo "Preparing JWT auth. payload..."
+echo "Preparing door unlock payload..."
 
 HEADER='{"alg":"EdDSA","typ":"JWT","x5c":"['"$CHAIN"']"}'
 BODY='{"iss":"'"$USER_ID"'","sub":"'"$LOCK_ID"'","nbf":'"$IAT"',"iat":'"$IAT"',"exp":'"$EXP"',"operation":{"type":"MUTATE_LOCK","locked":false,"duration":5}}'
@@ -531,3 +543,4 @@ https://www.buildings.com/news/industry-news/articleid/21265/title/simplify-acce
   [22]: https://github.com/doordeck?q=sdk
   [23]: https://en.wikipedia.org/wiki/EdDSA
   [24]: https://pynacl.readthedocs.io/en/stable/install/
+  [25]: https://developer.doordeck.com/docs/#share-a-lock
