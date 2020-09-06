@@ -331,7 +331,7 @@ EXP=$((IAT + 43200))
 
 echo "Preparing the authentication token JWT..."
 
-HEADER='{"alg":"RS256","typ":"JWT,"kid":"my-key"}'
+HEADER='{"alg":"RS256","typ":"JWT","kid":"my-key"}'
 BODY='{"iss":"'"$DOMAIN"'","iat":'"$IAT"',"exp":'"$EXP"',"aud":"https://api.doordeck.com","sub":"'"$EMAIL"'","email":"'"$EMAIL"'","email_verified":true,"telephone":"+441234567890","telephone_verified":true,"name":"Name '"$EMAIL"'","locale":"en-gb","zoneinfo":"Europe/London"}'
 HEADER_B64=`echo -n $HEADER | base64 | sed 's/+/-/g;s/\//_/g;s/=//g'`
 BODY_B64=`echo -n $BODY | base64 | sed 's/+/-/g;s/\//_/g;s/=//g'`
@@ -384,7 +384,7 @@ def generate_keys():
     f.close()
 
 def sign_message():
-    f = open("public_base64.key", "r")
+    f = open("private_base64.key", "r")
     sk_base64 = f.read()
     f.close()
 
@@ -392,7 +392,7 @@ def sign_message():
 
     sk = SigningKey(sk_base64, Base64Encoder())
     sig = sk.sign(message).signature
-    print(sig),
+    sys.stdout.write(sig)
 ```
 </details>
 ‍
@@ -418,13 +418,13 @@ curl -X POST \
     -H 'content-type: application/json'  \
     --data-binary "{\"ephemeralKey\":\"`cat public_base64.key`\"}" > certs.json
 
-USER_ID=$(cat certs.json | jq .userId)
+USER_ID=$(cat certs.json | jq -r .userId)
 
-echo "The userId is: "
-echo "$USER_ID"
-echo -n "$USER_ID" > user.id
+echo -n "The userId is: "
+echo $USER_ID
+echo -n $USER_ID > user.id
 
-CERTS=$(cat certs.json | jq .chain)
+CERTS=$(cat certs.json | jq .certificateChain)
 echo -n "$CERTS" > cert.chain
 ```
 </details>
@@ -433,8 +433,13 @@ echo -n "$CERTS" > cert.chain
 * Generates a new ephemeral key 
 * Submits it to Doordeck
 * Prints back the Doordeck UUID for the particular App User and saves it for the next step, and
-* Saves the certificate chain of the ephemeral key (again, for the next step). 
+* Saves the certificate chain of the ephemeral key (again, for the next step). <sup>[3](#footnote_3)</sup>
 
+If the App User's e-mail is a valid one, then she will receive a confirmation mail like the following
+
+![Key sharing e-mail](../assets/images/doordeck/key_share_email.png)
+> Key sharing e-mail confirmation
+ 
 Like before, we will need to...
 
 ### Associate the App User with the demo door
@@ -474,7 +479,7 @@ EXP=$((IAT + 60))
 
 echo "Preparing door unlock payload..."
 
-HEADER='{"alg":"EdDSA","typ":"JWT","x5c":"['"$CHAIN"']"}'
+HEADER='{"alg":"EdDSA","typ":"JWT","x5c":'"$CHAIN"'}'
 BODY='{"iss":"'"$USER_ID"'","sub":"'"$LOCK_ID"'","nbf":'"$IAT"',"iat":'"$IAT"',"exp":'"$EXP"',"operation":{"type":"MUTATE_LOCK","locked":false,"duration":5}}'
 HEADER_B64=`echo -n $HEADER | base64 | sed 's/+/-/g;s/\//_/g;s/=//g'`
 BODY_B64=`echo -n $BODY | base64  | sed 's/+/-/g;s/\//_/g;s/=//g'`
@@ -516,7 +521,10 @@ https://www.buildings.com/news/industry-news/articleid/21265/title/simplify-acce
 ## Footnotes
 
 1. <a name="footnote_1"></a>Full disclaimer: I am an angel investor in Doordeck. 
-3. <a name="footnote_2"></a>This section is a condensed version of the guide found [here][1].
+2. <a name="footnote_2"></a>This section is a condensed version of the guide found [here][1].
+3. <a name="footnote_3"></a>Calling this script repeatedly for the same App User will trigger the [Verify Ephemeral Key with Secondary Authentication flow][26].  
+This will be signaled by the API with an HTTP 423. If you are just testing, it might be easier to repeat `step1.sh` with 
+a different user e-mail.
 
 
   [1]: https://doordeck.com/developer/authenticating-your-users
@@ -544,3 +552,4 @@ https://www.buildings.com/news/industry-news/articleid/21265/title/simplify-acce
   [23]: https://en.wikipedia.org/wiki/EdDSA
   [24]: https://pynacl.readthedocs.io/en/stable/install/
   [25]: https://developer.doordeck.com/docs/#share-a-lock
+  [26]: https://developer.doordeck.com/docs/#register-ephemeral-key-with-secondary-authentication
