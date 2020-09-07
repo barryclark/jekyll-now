@@ -17,4 +17,4 @@ I really enjoyed recording this podcast with Andy Snowden, DevOps Engineering Ma
 >
 > In this edition of The New Stack Analysts podcast, Andy Snowden, DevOps engineering manager for EquityZen, discusses how he helped the company begin its cloud native journey and the challenges associated with the move. Alex Williams, founder and publisher of The New Stack; Cheryl Hung, vice president of ecosystem at Cloud Native Computing Foundation (CNCF) and Ken Owens, vice president, cloud native engineering, Mastercard hosted the podcast.
 
-[Continue reading...](https://thenewstack.io/?p=11774627)
+Continue reading...[From One Server to Kubernetes, a Startup’s Story](https://thenewstack.io/?p=11774627)
