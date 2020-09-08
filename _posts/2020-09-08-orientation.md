@@ -6,6 +6,12 @@ categories: Setup
 
 You will be responsible for maintaining your development environment for each course in this program. The specific requirements will change from course to course but the following software will be required for the entire program.
 
+## Streaming App
+We will be running most meetings in Zoom for this program. All participants will need to be signed in to take part in the daily streams.
+
+- [Install Zoom](https://zoom.us/download)
+- [Create Zoom Account](https://zoom.us/signup)
+
 ## Messaging Apps
 We will be predominantly using Slack as the preferred messaging tool for this program. You should see an invite to the SAIT WBDV Slack team sometime during orientation day.
 
@@ -17,7 +23,7 @@ Your instructor also runs a public Discord server where you can find help:
 
 - [Pixels YYC Discord Invite](https://discord.gg/9qZSrCG){:target="_blank"}
 
-## Development Browsers
+## Development Browser
 Regardless of which browser you prefer in your off-time, this course requires Firefox Developer for its superior (for the moment) CSS Dev Tools. Chrome can be optionally used for its Javascript Dev Tools in CPNT 262.
 
 - [Install Firefox Developer Edition](https://nightly.mozilla.org/){:target="_blank"}
@@ -49,3 +55,4 @@ GitHub is a private corporation (now owned by Microsoft) that has built a world-
 1. Read: [A Brief History of Print Design](https://blog.123rf.com/history-print-design/)
 2. Watch: [11 Visual Hierarchy Principles](https://youtu.be/ZXItTIjC0Wk) by [Visme](https://www.youtube.com/channel/UC2isRzoZisjBS6PaGWTDV0Q) (many of their videos are about their proprietary presentation slide builder)
 3. Find an example of print design in your immediate(ish) area (home, office, vehicle, etc) that you love, hate or wouldn't normally notice. You will be discussing your find in a group of 3 or 4 tomorrow.
+4. Decide on a profile pick and update your Brightspace, GitHub, Teams and Zoom.
