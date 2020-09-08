@@ -10,7 +10,7 @@ _[work in progress]_
 - Explore resources to discover Buddhism
 - Provide guidance on creating one's journey into Buddhism
 
-**Motivations** - Discovering Buddhism is an individual journey. No two Buddhism have gone through the same. That's because Buddhism is a diverse and complex and still active domain of thought. As I was once a beginner myself, I tend to let people discover Buddhism on their own, not wanting to interfere with their journey. For that, this page proposed a couple of starting links to initiate that journey.  
+**Motivations** - Discovering Buddhism is an individual journey. No two Buddhists have gone through the same. That's because Buddhism is a diverse and complex and still active domain of thought. As I was once a beginner myself, I tend to let people discover Buddhism on their own, not wanting to interfere with their journey. For that, this page proposed a couple of starting links to initiate that journey.  
 Now, that being said, there are a couple of mistakes and wrong expectations that could be helpful to debug so you start without too many illusions or pre-conceptions or projections. This page will provide a couple of things to be aware of when you start your journey, and traps to avoid.
 
 ## What to be aware of
