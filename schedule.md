@@ -11,7 +11,7 @@ _DSGN 270: Web Design Theory_
 - Day 1: [Visual Hierarchy in Design]({% link _posts/2020-09-09-visual-hierarchy-design.md %})
 - Day 2: User Experience Design
 - Day 3: Mobile Fundamentals
-- Day 3: Copyright & Licensing 
+- Day 4: Copyright & Licensing 
 
 ## September 15 & 16
 _CPNT 201: Git and GitHub_
