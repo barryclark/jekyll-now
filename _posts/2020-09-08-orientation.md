@@ -23,7 +23,7 @@ Regardless of which browser you prefer in your off-time, this course requires Fi
 - [Install Firefox Developer Edition](https://nightly.mozilla.org/){:target="_blank"}
 - [Why are there Four Firefoxes?](https://youtu.be/qQ1oQJJn1nQ){:target="_blank"}
 
-The Mozilla Developer Network (the makers of Firefox) recently launched an entire [Youtube channel](https://www.youtube.com/channel/UCh5UlGiu9d6LegIeUCW4N1w) to teach you all about how to use Firefox Dev Tools.
+The Mozilla Developer Network (the makers of Firefox) recently launched an entire [Youtube channel](https://www.youtube.com/channel/UCh5UlGiu9d6LegIeUCW4N1w){:target="_blank"} to teach developers how to use Firefox Dev Tools.
 
 ## Code Editor
 Most of your time in this course will be spent in your code editor of choice. If you haven't installed one yet, your instructor will be using VS Code (highly recommended).
@@ -40,7 +40,7 @@ If you've been using one you like, stick with it, just as long as it doesn't get
 Unfortunately, the install page isn't very user friendly. If in doubt, both Mac and Windows users can install [GitHub Desktop](https://desktop.github.com/){:target="_blank"}. We will configure Git next week!
 
 ### GitHub
-GitHub is a private corporation (now owned by Microsoft) that has built a world-leading community around Git.
+GitHub is a private corporation (now owned by Microsoft) that has built a world-leading community around Git. All sample code and projects will be hosted by GH and the program website is hosted using [GH Pages](https://pages.github.com/).
 
 1. [Create a GitHub account](https://github.com/){:target="_blank"} if you haven't already. **Don't forget:** your GH username will be seen by potential employers.
 2. _Watch_ and/or _Star_ the [program repository](https://github.com/sait-wbdv){:target="_blank"}.
