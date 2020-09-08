@@ -17,5 +17,6 @@ While this is not a design program, that doesn't mean we have to develop ugly we
 1. Watch: [UX Design Basics - Mental Models](https://www.youtube.com/watch?v=9gM8K4ooavY) by Jamal Nichols
 2. Find an example of product design (a handy tool, piece of equipment, etc) in your immediate(ish) area (home, office, vehicle, etc). You will be discussing your find in a group of 3 or 4 tomorrow.
 3. Skim: [UI Design Patterns](http://ui-patterns.com/patterns)
+4. Skim: Chapters 1, 2 and 3 of _Don't Make Me Think_ by Steve Krug (course textbook)
 4. Read: [What is accessibility?](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility)
 5. Watch: Video: [JAWS Screen Reader Demo](https://youtu.be/2PMuBQ7LyOw) [13m15s] by [Blind Inspirationcase](https://www.youtube.com/channel/UCKHMrCSX3thkIsb3oDD_aJw)
