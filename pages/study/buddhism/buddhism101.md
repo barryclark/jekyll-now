@@ -1,3 +1,4 @@
+---
 layout: page
 title: Buddhism 101 - find your journey
 permalink: /pages/study/buddhism/buddhism101/
