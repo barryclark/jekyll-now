@@ -1,4 +1,7 @@
-# Buddhism 101: find your journey
+layout: page
+title: Buddhism 101 - find your journey
+permalink: /pages/study/buddhism/buddhism101/
+---
 
 _[work in progress]_
 
