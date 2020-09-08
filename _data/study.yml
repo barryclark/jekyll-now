@@ -1,7 +1,9 @@
 toc:
-  - title: Life of the Buddha
+  - title: Buddhism
     subfolderitems:
-      - page: According to the Pali Canon
+      - page: Buddhism 101 - Find your Journey
+        url: /pages/study/buddhism/buddhism101
+      - page: Life of the Buddha according to the Pali Canon
         url: /pages/study/life_buddha/pali_canon
   - title: Zen
     subfolderitems:
