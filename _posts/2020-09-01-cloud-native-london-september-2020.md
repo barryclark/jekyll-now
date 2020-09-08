@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London September 2020: Redis Labs, Suade Labs, and Oracle"
+title: "Cloud Native London Sep 2020: Redis Labs, Suade Labs, and Oracle"
 description: "join us for three fantastic talks by speakers from Redis Labs, Suade Labs, and Oracle at the Cloud Native London meetup September 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
 image: /images/2020-09-01-cloud-native-london-september-2020.jpg
@@ -17,7 +17,7 @@ We were back with three fantastic speakers from Redis Labs, Suade Labs, and Orac
 We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [xMatters](https://www.xmatters.com/), [Palo Alto Networks](https://www.paloaltonetworks.com/), [Redhat](https://www.redhat.com/en), [Redis Labs](https://redislabs.com/), and the [European Cloud Conference](https://europeancloudconference.com/) for your support and sponsorship.
 
 ### Offer for Cloud Native London Meetup members:
-The [European Cloud Conference](https://europeancloudconference.com/) [Microsoft Azure Virtual Tutorial Series](https://europeancloudconference.com/virtual-full-day-tutorial-series/) takes place online from 6-9 and 20-23 October. 
+The [European Cloud Conference](https://europeancloudconference.com/) [Microsoft Azure Virtual Tutorial Series](https://europeancloudconference.com/virtual-full-day-tutorial-series/) takes place online from 6-9 and 20-23 October.
 Select from [8 expert led full day Azure Tutorials](https://europeancloudconference.com/virtual-full-day-tutorial-series/) (Levels 300-400) and [book your ticket now](https://europeancloudconference.com/pricing/) at just €195 per tutorial with the **End of Summer Sale** (Limited offer, ends September 14)
 
 Each Virtual Tutorial provides:
@@ -61,5 +61,4 @@ Our next meetup will be Wednesday 7th October, when we'll be joined by speakers 
 
 Stay safe, stay healthy, and see you next month!
 
-Cheryl (@oicheryl) 
-
+Cheryl (@oicheryl)

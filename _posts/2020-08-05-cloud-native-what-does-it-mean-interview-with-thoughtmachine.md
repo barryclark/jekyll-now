@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native - what does it mean? Interview with ThoughtMachine"
+title: "Cloud Native - what does it mean for finacial services? Interview with ThoughtMachine"
 description: "Cheryl Hung, VP Ecosystem at CNCF, discusses cloud native and financial services"
 image: https://techround.co.uk/wp-content/uploads/2020/03/thought-machine-imagery-1-768x432.jpg
 tags:
