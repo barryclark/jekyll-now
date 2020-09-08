@@ -8,6 +8,10 @@ Orientation
 
 ## September 9-14
 _DSGN 270: Web Design Theory_
+- Day 1: Visual Hierarchy in Design
+- Day 2: Mental Models and User Experience Design
+- Day 3: Mobile Fundamentals
+- Day 3: Copyright & Licensing 
 
 ## September 15 & 16
 _CPNT 201: Git and GitHub_
