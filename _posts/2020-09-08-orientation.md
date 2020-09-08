@@ -16,18 +16,20 @@ We will be running most meetings in Zoom for this program. All participants will
 We will be predominantly using Slack as the preferred messaging tool for this program. You should see an invite to the SAIT WBDV Slack team sometime during orientation day.
 
 - [Install Slack](https://slack.com/intl/en-ca/downloads/){:target="_blank"}
+- Send an email to Tony (tony.grimes@sait.ca) from the email address you'd like your Slack invite sent to. Keep in mind that your SAIT email will eventually be retired after graduation.
+- Tutorials: [Slack 101](https://slack.com/intl/en-ca/resources/slack-101)
 
 Note: The past two cohorts of this program also have access to this Slack team but each cohort has a private channel. Most of our communication will be in this channel but you're free to meet and interact with past students of this program. You may also use MS Teams if you'd like to avoid outside students. 
 
-Your instructor also runs a public Discord server where you can find help:
+Tony also runs a public Discord server where you can find help from local developers:
 
 - [Pixels YYC Discord Invite](https://discord.gg/9qZSrCG){:target="_blank"}
 
 ## Development Browser
 Regardless of which browser you prefer in your off-time, this course requires Firefox Developer for its superior (for the moment) CSS Dev Tools. Chrome can be optionally used for its Javascript Dev Tools in CPNT 262.
 
-- [Install Firefox Developer Edition](https://nightly.mozilla.org/){:target="_blank"}
-- [Why are there Four Firefoxes?](https://youtu.be/qQ1oQJJn1nQ){:target="_blank"}
+- [Install Firefox Developer Edition](https://nightly.mozilla.org/){:target="_blank"} (and regular FF if you haven't)
+- Video: [Why are there Four Firefoxes?](https://youtu.be/qQ1oQJJn1nQ){:target="_blank"}
 
 The Mozilla Developer Network (the makers of Firefox) recently launched an entire [Youtube channel](https://www.youtube.com/channel/UCh5UlGiu9d6LegIeUCW4N1w){:target="_blank"} to teach developers how to use Firefox Dev Tools.
 
@@ -49,10 +51,10 @@ Unfortunately, the install page isn't very user friendly. If in doubt, both Mac 
 GitHub is a private corporation (now owned by Microsoft) that has built a world-leading community around Git. All sample code and projects will be hosted by GH and the program website is hosted using [GH Pages](https://pages.github.com/).
 
 1. [Create a GitHub account](https://github.com/){:target="_blank"} if you haven't already. **Don't forget:** your GH username will be seen by potential employers.
-2. _Watch_ and/or _Star_ the [program repository](https://github.com/sait-wbdv){:target="_blank"}.
+2. _Watch_ and/or _Star_ the [program repository](https://github.com/sait-wbdv/sait-wbdv.github.io){:target="_blank"}.
 
 ## Homework
 1. Read: [A Brief History of Print Design](https://blog.123rf.com/history-print-design/)
 2. Watch: [11 Visual Hierarchy Principles](https://youtu.be/ZXItTIjC0Wk) by [Visme](https://www.youtube.com/channel/UC2isRzoZisjBS6PaGWTDV0Q) (many of their videos are about their proprietary presentation slide builder)
 3. Find an example of print design in your immediate(ish) area (home, office, vehicle, etc) that you love, hate or wouldn't normally notice. You will be discussing your find in a group of 3 or 4 tomorrow.
-4. Decide on a profile pick and update your Brightspace, GitHub, Teams and Zoom.
+4. Decide on a profile pick and update your Brightspace, GitHub, Teams, Zoom, etc.
