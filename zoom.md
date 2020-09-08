@@ -10,8 +10,7 @@ title: "Zoom Meeting Details"
 ## Zoom Stream Expectations
 - Questions are always welcome.
 - When in doubt, mute your mic.
-- Please turn video on during breakout sessions.
-- Video is optional (but is strongly encouraged) during lecture time.
+- Please turn video on during lecture time and breakout sessions.
 - If the instructor misses something important in the comments, speak up!
 - Lateness/Absence: please DM or text Tony _before_ you're already late/absent.
 
