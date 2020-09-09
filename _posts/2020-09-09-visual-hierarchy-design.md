@@ -72,7 +72,7 @@ Summarize your findings and elect a representative to share them with the rest o
 
 ## Clean Up Time!
 - Round table discussion: Visual hierarchy in print and graphic design
-- Exit ticket
+- [Exit ticket](https://padlet.com/acidtone/6696plov59mr8m68)
 - Tomorrow's Objectives
 
 ## Homework for Tomorrow
