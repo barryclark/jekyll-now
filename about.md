@@ -1,15 +1,7 @@
 ---
 layout: page
-title: About
+title: About (WIP)
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I'm an economist by training who has started picking up R on the side. Looking to document my own journey while having fun.
