@@ -26,6 +26,7 @@ While this is not a design program, that doesn't mean we have to develop ugly we
 - Program Overview
   - Tweak to Zoom expectations
 - Slack tour
+  - How to use @mentions
 
 _break_
 
