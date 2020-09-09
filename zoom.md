@@ -2,8 +2,8 @@
 layout: default
 title: "Zoom Meeting Details"
 ---
-
-**Sessions start promptly at 8am**
+**Don't Forget**: You need to be signed into Zoom before you can join the meeting. Sessions start promptly at 8am.
+{:.notice--warning}
 
 ## [Fall 2020 Zoom Room](https://zoom.us/j/99025246009){:target="_blank"}
 
