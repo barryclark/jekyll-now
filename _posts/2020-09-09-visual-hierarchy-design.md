@@ -46,7 +46,7 @@ Tony's very general definition of art:
 Tony's very general definition of design:
 <dl>
   <dt>Design</dt> 
-  <dd>A process that **solves a problem** by extracting meaning (e.g. page heading) from information (e.g. text). Great design is intuitive.</dd>
+  <dd>A process that <strong>solves a problem</strong> by extracting meaning (e.g. page heading) from information (e.g. text). Great design is intuitive.</dd>
 </dl>
 
 See: [A Brief History of Print Design](https://blog.123rf.com/history-print-design/)
