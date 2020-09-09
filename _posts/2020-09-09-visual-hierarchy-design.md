@@ -12,6 +12,7 @@ While this is not a design program, that doesn't mean we have to develop ugly we
   - Briefly summarize the history of print design.
     - Explain ways to make content easier to read.
   - Discuss the underlying principles of visual hierarchy.
+    - Explain some of the differences between designing for web and designing for print.
     - Find examples of websites that could be improved using these principles.
 
 ## 1. Housekeeping
@@ -72,7 +73,7 @@ Summarize your findings and elect a representative to share them with the rest o
 ## Clean Up Time!
 - Round table discussion: Visual hierarchy in print and graphic design
 - Exit ticket
-- Tomorrow
+- Tomorrow's Objectives
 
 ## Homework for Tomorrow
 1. Watch: [UX Design Basics - Mental Models](https://www.youtube.com/watch?v=9gM8K4ooavY) by Jamal Nichols
