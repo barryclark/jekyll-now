@@ -9,7 +9,7 @@ Orientation
 ## September 9-14
 _DSGN 270: Web Design Theory_
 - Day 1: [Visual Hierarchy in Design]({% link _posts/2020-09-09-visual-hierarchy-design.md %})
-- Day 2: User Experience Design
+- Day 2: [User Experience Design and Accessibility]({% link _posts/2020-09-10-ux-accessibility.md %})
 - Day 3: Mobile Fundamentals
 - Day 4: Copyright & Licensing 
 
