@@ -47,4 +47,4 @@ Next, we need to identify where in each page we can obtain the information from.
  raw_tables <- html_nodes(raw, css = ".scrolltable") %>% 
     html_table(trim = TRUE, fill = TRUE)
 ```
-Believe it or not, at this point most of the webscraping is done. The code segments above provide the structure for scraping one table from one page, and the rest of the work lies in cleaning the raw data that has been scraped, and identifying where there needs to be different treatment in either scraping or cleaning the data when expanding this to cover the other pages.
+Believe it or not, at this point most of the webscraping is done. The code segments above provide the structure for scraping from one page, and the rest of the work lies in cleaning the raw data that has been scraped, and identifying where there needs to be different treatment in either scraping or cleaning the data when expanding this to cover the other pages.
