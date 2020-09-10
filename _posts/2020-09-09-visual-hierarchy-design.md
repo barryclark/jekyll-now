@@ -81,4 +81,4 @@ Summarize your findings and elect a representative to share them with the rest o
 3. Skim: [UI Design Patterns](http://ui-patterns.com/patterns)
 4. Skim: Chapters 1, 2 and 3 of _Don't Make Me Think_ by Steve Krug (course textbook)
 4. Read: [What is accessibility?](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility)
-5. Watch: Video: [JAWS Screen Reader Demo](https://youtu.be/2PMuBQ7LyOw) by [Blind Inspirationcase](https://www.youtube.com/channel/UCKHMrCSX3thkIsb3oDD_aJw)
+5. Watch: Video: [JAWS Screen Reader Demo](https://youtu.be/2PMuBQ7LyOw) by [Blind Inspirationcast](https://www.youtube.com/channel/UCKHMrCSX3thkIsb3oDD_aJw)
