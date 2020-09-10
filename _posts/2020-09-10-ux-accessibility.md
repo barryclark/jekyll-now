@@ -18,6 +18,7 @@ Frontend development is unique in web because your software interacts directly w
   - List examples of devices that can be web-enabled.
 
 ## Housekeeping
+- Entry ticket: [Ahead of the Game](https://padlet.com/acidtone/p77ondwmuxya71af)
 - Slack tour
   - best practices
 
