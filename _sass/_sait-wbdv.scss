@@ -10,3 +10,33 @@
   background: #fbd2c6;
   border-radius: 1em;
 }
+
+dl {
+  margin-bottom: 1rem;
+}
+dt {
+  font-weight: bold;
+
+  margin-top: 0.5em;
+}
+dd {
+  margin-top: 0.5em;
+  padding-left: 1em;
+}
+
+figure {
+  margin: 3em auto;
+  width: min-content;
+}
+
+figcaption {
+  width: 80vw;
+  max-width: 60ch;
+
+  font-style: italic;
+}
+
+cite {
+  display: block;
+  font-style: italic;
+}
