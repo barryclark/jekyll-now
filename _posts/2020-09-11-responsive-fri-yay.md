@@ -38,6 +38,8 @@ categories: dsgn270
   <dd></dd>
 </dl>
 
+See [Responsive Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness/)
+
 ### Activity
 
 ### 3. 
