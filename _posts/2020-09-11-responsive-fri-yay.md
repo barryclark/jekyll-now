@@ -70,6 +70,7 @@ See [Responsive Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness/)
 ## Homework
 - [CLI (command line interface) Cheat Sheet](https://www.git-tower.com/blog/command-line-cheat-sheet/)
 - [Configuring Git](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+- [Creating a GitHub Pages Site](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
 - Part 1: [Introduction - Git and GitHub for Poets](https://youtu.be/BCQHnlnPusY)
 - [Why does GitHub recommend HTTPS over SSH?](https://stackoverflow.com/questions/11041729/why-does-github-recommend-https-over-ssh)
 
