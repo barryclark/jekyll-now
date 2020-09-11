@@ -106,9 +106,51 @@ The data looks much better now (below). There's probably more that can be done i
 
 The next step would be to wrap up these earlier steps in a function, and use `map()` to apply our defined function over a list of periods with available info.
 
-To do that, we need to look across the other HDB pages to look for oddities that may significantly affect the scraping. For instance, one notable issue is that prior to Nov 2015, the application rates were displayed as only one table, rather than two, which means that for those periods, we would have to modify `table_2 <- raw_tables[[2]]` to `table_2 <- raw_tables[[1]]`. These older tables also have an additional column for singles application rate, which is no longer present in the newer ones. There are also some differences and inconsistencies in the table headers over time. Most of these differences I spotted while manually browsing - perhaps there's a more technically elegant way to check for such things, but unfortunately I don't know them at this time. 
+```
+get_bto_app_ratios_3Rplus <- function(period){
 
-The modifications to the earlier steps turn out to be a bit fiddly, so I'll skip the detailed explanation here. You can take a look at the full code here **ADD URL TO REPOS**. (You can also make your life easier and deal with less modifications if you focus on a smaller time period.)
+  if(period != "Aug20"){
+    base_url <- "https://services2.hdb.gov.sg/webapp/BP13BTOENQWeb/BP13J011BTO"
+    url <- paste0(base_url, period, ".jsp")
+    } else if(period == "Aug20") {
+      url <- "https://services2.hdb.gov.sg/webapp/BP13BTOENQWeb/AR_Aug2020_BTO?strSystem=BTO"
+  }
+  
+  raw <- read_html(url)
+
+  raw_tables <- html_nodes(raw, css = ".scrolltable") %>% 
+    html_table(trim = TRUE, fill = TRUE)
+
+  table_2 <- raw_tables[[2]]
+
+  colnames(table_2) <- c("proj_name", "flat_type", "num_units", "num_applicants", 
+                       "first_timer_ratio", "second_timer_ratio", "overall_ratio")
+
+   
+  mature_marker <- which(str_detect(table_2$proj_name, "Mature Town") & 
+                         !str_detect(table_2$proj_name, "Non-Mature Town"))
+  
+  table_2 <- table_2 %>% 
+  mutate(date = period,
+         temp_index = row_number(),
+         estate_type = ifelse(temp_index >= mature_marker, "Mature", "Non-mature")) %>% 
+         #compare the row number against the mature marker and assign accordingly
+         
+ filter(str_detect(proj_name, "Project|Mature Town") == FALSE) %>%
+ #remove the headers/dividers that got treated as entries
+ 
+ mutate(proj_name = ifelse(proj_name == "TOTAL", paste("total",period, sep = "_"), proj_name)) %>%
+ select(-temp_index)
+  
+ 
+  print(period)
+  return(table_2)
+}
+```
+
+Before using `map()` though, we need to look across the other HDB pages for oddities that may significantly affect the scraping. For instance, one notable issue is that prior to Nov 2015, the application rates were displayed as only one table, rather than two, which means that for those periods, we would have to modify `table_2 <- raw_tables[[2]]` to `table_2 <- raw_tables[[1]]`. These older tables also have an additional column for singles application rate, which is no longer present in the newer ones. There are also some differences and inconsistencies in the table headers over time. Most of these differences I spotted while manually browsing - perhaps there's a more technically elegant way to check for such things, but unfortunately I don't know them at this time. 
+
+The modifications to the steps in the function turn out to be a bit fiddly, so I'll skip the detailed explanation here. You can take a look at the full code here **ADD URL TO REPOS**. (You can also make your life easier and deal with less modifications if you focus on a smaller time period.)
 
 Finally, it's worth noting at this point that the oldest available info I could find (following the URL structure set out earlier) was for Sep 2014. It could be that the info is simply not available online anymore, or is under a different URL structure - who knows? Regardless, that still gives us 5 complete calendar years of data. Not too shabby, I think.
 
