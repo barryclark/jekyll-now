@@ -4,7 +4,7 @@ title: "OpenBanking & PSD2: Part 1 - Opening up the Banks"
 author: stelios
 tags: [payments, openbanking, fintec, aisp, pisp]
 categories: [Payments, Fintec]
-featured: true
+featured: false
 description: "A 2-part series on OpenBanking and PSD2. This article goes over the high-level concepts and interactions in the PSD2 ecosystem."
 image: assets/images/openbanking/joshua-hoehne-_XBilGRm_AU-unsplash.jpg
 ---
