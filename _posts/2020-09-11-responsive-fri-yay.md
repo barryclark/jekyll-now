@@ -35,14 +35,17 @@ categories: dsgn270
   <dd></dd>
 </dl>
 
-1. Create a public repo on GH, with `Add a README file` unchecked.
+1. Create a public repo on GH, with `Add a README file` **unchecked**.
 2. Click on `Add an existing file`.
 3. Drag and Drop a README.md (or whatevs).
 4. Commit your changes.
 5. Optional: Edit your new file using the GH edit feature.
 6. Optional: Turn on GH Pages
+    - Settings -> scroll to GH Pages
+    - optional: Choose theme
 
-### Activity 1: 
+### Activity 1: Coder-see Coder-do
+In groups of 3 or 4, complete the above steps before
 
 ### 2. Minimally Responsive Text
 #### Definitions
@@ -68,3 +71,4 @@ See [Responsive Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness/)
 
 ## Student Questions
 - How do you connect a local repo to a GitHub repo.
+- Do we check `Add a README file` or not ?!?
