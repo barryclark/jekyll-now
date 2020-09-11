@@ -19,6 +19,7 @@ categories: dsgn270
 
 ## Housekeeping
 - See Agenda
+- [Entry ticket](https://padlet.com/acidtone/hkv45nuaqz49ag22)
 
 ## Agenda
 
