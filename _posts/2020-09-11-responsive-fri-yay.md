@@ -14,6 +14,7 @@ categories: dsgn270
 - Tool Time: 
   - GitHub
     - Switch branches using the GitHub interface.
+    - Upload a repository `README.md` to GH using their drag and drop interface.
   - Codepen
     - Share a Pen to your mobile device for testing purposes.
 
@@ -23,14 +24,25 @@ categories: dsgn270
 
 ## Agenda
 
-### 1. Program Assignment Overview
+### 1. Our first README
 #### Definitions
 <dl>
+  <dt>Repository</dt>
+  <dd></dd>
+  <dt></dt>
+  <dd></dd>
   <dt></dt>
   <dd></dd>
 </dl>
 
-### Activity 1
+1. Create a public repo on GH, with `Add a README file` unchecked.
+2. Click on `Add an existing file`.
+3. Drag and Drop a README.md (or whatevs).
+4. Commit your changes.
+5. Optional: Edit your new file using the GH edit feature.
+6. Optional: Turn on GH Pages
+
+### Activity 1: 
 
 ### 2. Minimally Responsive Text
 #### Definitions
@@ -53,3 +65,6 @@ See [Responsive Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness/)
 ### Clean up time!
 
 ## Homework
+
+## Student Questions
+- How do you connect a local repo to a GitHub repo.
