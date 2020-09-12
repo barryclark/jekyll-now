@@ -68,6 +68,9 @@ kramdown:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
+# Use a theme
+theme: minimal
+
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
