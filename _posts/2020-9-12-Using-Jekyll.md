@@ -27,3 +27,10 @@ Next you can update your site name, avatar and other options using the _config.y
 #### Markdown quick reference
 [Markdown Guilde to Jekyll](https://www.markdownguide.org/tools/jekyll/)
  
+ 
+### Making Jekyll work with Github Pages
+[Getting started with Github Pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source)
+<br>
+As of now this is not working so well. So i will be working upon it to improve it. 
+
+
