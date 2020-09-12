@@ -1,15 +1,18 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
 
-Some information about you!
+Hi This is Manoj ! I am here to share my experiences and things that i learn on daily basis. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+As of now, i like to write about things i learn in technology, 
+management, leadership and spirituality. 
+These are the areas of my concern. 
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[mkumar183@gmail.com](mailto:email@domain.com)
