@@ -1,15 +1,16 @@
 ---
 layout: page
-title: About
+title: 自己紹介
 permalink: /about/
 ---
 
-Some information about you!
+### 名前
 
-### More Information
+### 名前
 
-A place to include any other types of information that you'd like to include about yourself.
+### 名前
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+### 渋谷　沙紀奈（しぶや　さきな）
+ウィスコンシン大学マディソン校農業応用経済学部博士課程２年生。
+研究興味は開発経済、実験経済、性差別、ソーシャルネットワーク、自給農家の経済生活。
+コロナ期間中でウクレレ演奏にはまる。
