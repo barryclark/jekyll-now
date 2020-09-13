@@ -1,0 +1,9 @@
+I"—<p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
+
+<p>Here are simple commands to work with git. I will improve upon it as i keep learning.</p>
+
+<h4 id="start-with-basics">Start with Basics</h4>
+<p><code class="language-plaintext highlighter-rouge">git chec out -b branch</code> <br />
+switches you to a branch</p>
+
+:ET
