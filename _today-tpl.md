@@ -20,7 +20,7 @@ categories:
 
 ### Activity 1
 
-### 2. [Objective 1]
+### 2. [Objective 2]
 #### Learning Objectives
 1. 
 
