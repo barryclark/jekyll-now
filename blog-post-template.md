@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 著者名(publication year): *論文題*
+title: "著者名(publication year): 論文題"
 ---
 
 本論文は[こちら](https://www.aeaweb.org/articles?id=10.1257/jel.20191573)から。
