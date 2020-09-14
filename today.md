@@ -4,12 +4,17 @@ title: Today - Cloning Git Repositories
 ---
 
 ## Housekeeping
+- Cheatsheet walk-throughs
 
 ## 1. Navigate your file system using the "command line"
 ### Learning Objectives
 - Find your current location using the `pwd` command.
 - List the contents of your current directory using the `ls` command.
 - Change your current directory using the `cd` command.
+
+See: 
+- [File and Directory Cheatsheet]({{site.basurl}}/cheatsheets/naming-conventions)
+- [Command Line Cheatsheet]({{site.basurl}}/cheatsheets/command-line)
 
 ### Terminology
 <dl>
@@ -26,8 +31,6 @@ You will be working in groups of 3 or 4. For the purposes of this course, it is 
 - Create a workspace folder on your file system (you may use your OS file explorer) and navigate to it using the command line. This will be needed for the next session.
 - Try navigating to various directories on your system to get accustomed to the command line.
 
-See: [File and Directory Cheatsheet]({{site.basurl}}/cheatsheets/naming-conventions)
-
 ## 2. Cloning a Read-only Repo
 ### Learning Objectives
 - Navigate to your workspace using the Unix command line.
@@ -36,7 +39,7 @@ See: [File and Directory Cheatsheet]({{site.basurl}}/cheatsheets/naming-conventi
 
 See: [Git Cheatsheet]({{site.basurl}}/cheatsheets/git-gh)
 
-## Activity 2
+## Activity 2: Cloning the program repo
 You will be working in groups of 3 or 4.
 1. Navigate to the workspace directory you created earlier.
 2. Clone a copy of one or more the the WBDV program repos. Follow Scenario 1 in the [Creating Repos Cheatsheet]({{site.basurl}}/cheatsheets/git-gh/creating-repos).
