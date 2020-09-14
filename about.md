@@ -4,7 +4,7 @@ title: このブログについて
 permalink: /about/
 ---
 
-![blah]({{ site.baseurl }}/images/blog_photo.png)
+![blah]({{ site.baseurl }}images/blog_photo.png)
 
 ## 趣旨
 
