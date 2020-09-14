@@ -42,7 +42,8 @@ See: [Git Cheatsheet]({{site.basurl}}/cheatsheets/git-gh)
 ## Activity 2: Cloning the program repo
 You will be working in groups of 3 or 4.
 1. Navigate to the workspace directory you created earlier.
-2. Clone a copy of one or more the the WBDV program repos. Follow Scenario 1 in the [Creating Repos Cheatsheet]({{site.basurl}}/cheatsheets/git-gh/creating-repos).
+2. Confirm that you've set your name and email using `git config`. See: [First Time Setup Cheatsheet]({{site.basurl}}/cheatsheets/git-gh/creating-repos)
+3. Clone a copy of one or more the the WBDV program repos. Follow Scenario 1 in the [Creating Repos Cheatsheet]({{site.basurl}}/cheatsheets/git-gh/creating-repos).
 
 When you return to the main room, you will refresh your local repo with fresh changes made by your instructor.
 
