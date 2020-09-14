@@ -25,6 +25,7 @@ See: [How to show or change your Git username or email address](https://alvinale
 
     ```shell
     $ git config --global user.name "Jenn Simmons"
+    $ git config --global user.email johndoe@example.com
     ```
 
 3. To list your global configuration settings:
