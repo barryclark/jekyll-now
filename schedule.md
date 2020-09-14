@@ -3,24 +3,19 @@ layout: default
 title: "SAIT WBDV Program Schedule"
 ---
 # Fall 2020 Schedule
-## September 8
-Orientation
 
-## September 9-14
-_DSGN 270: Web Design Theory_
-- Day 1: [Visual Hierarchy in Design]({% link _posts/2020-09-09-visual-hierarchy-design.md %})
-- Day 2: [User Experience Design and Accessibility]({% link _posts/2020-09-10-ux-accessibility.md %})
-- Day 3: Mobile Fundamentals
-- Day 4: Copyright & Licensing 
+## Week 1: September 8-11
+- T: Orientation
+- W: DSGN 270 Day 1 - [Visual Hierarchy in Design]({% link _posts/2020-09-09-visual-hierarchy-design.md %})
+- R: DSGN 270 Day 2 - [User Experience Design and Accessibility]({% link _posts/2020-09-10-ux-accessibility.md %})
+- F: CPNT 201 Day 1 - GitHub
 
-## September 15 & 16
-_CPNT 201: Git and GitHub_
-
-## September 17
-_CPNT 260: Web Page Construction Fundamentals_
-
-## September 18
-_CPNT 264:  Career & Consulting Essentials_
+## Week 2: September 14-18
+- M: CPNT 201 Day 2 - Creating Git and GitHub Repos
+- T: DSGN 270 Day 3 - Mobile Fundamentals
+- W: DSGN 270 Day 4 - Copyright & Licensing
+- R: CPNT 260 Day 1 - Introduction to HTML/CSS/JS
+- F: CPNT 264 Day 1 - Career & Consulting Essentials
 
 ## September 21 - October 1
 _CPNT 260: Web Page Construction Fundamentals_
