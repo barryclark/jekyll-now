@@ -1,1 +1,5 @@
-www.econ.blog.japan.com
+
+type: CNAME
+host: www.econ.blog.japan.com
+answer: sakina0320.github.io
+TTL: 300
