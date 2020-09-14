@@ -1,53 +1,44 @@
 ---
-title: "Day 5: Git and GitHub"
+title: "Git and GitHub"
 layout: page
+kramdown: 
+  parse_block_html: true
 ---
-
 ## Prerequisites 
 - Git installed
 - VS Code installed
 - Github Account created
+- [Command Line Cheatsheet]({{site.basurl}}/cheatsheets/command-line)
+- [Naming Conventions Cheatsheet]({{site.basurl}}/cheatsheets/naming-conventions)
 
-But FIRST! We need to learn some command line...
+## Terminology
+<dl>
+  <dt>Version Control</dt>
+  <dd>A category of software tools that help a software team manage changes to source code over time.</dd>
+  <dt>Repository (aka repo)</dt>
+  <dd>Technically, a collection of commits, and branches and tags to identify commits. You can think of a repo as a directory of code that is tracked using Git.</dd>
+  <dt>Local Repository</dt>
+  <dd>A repo that is located on your local machine.</dd>
+  <dt>Remote Repository</dt>
+  <dd>A repo that is located on another machine or server. For the purposes of this course, all of your remote repos will be located on GitHub.</dd>
+  <dt>Initialize a Repository</dt>
+  <dd>A method of creating a new repo in the current directory using the `git init` command.</dd>
+  <dt>Linking a Repository</dt>
+  <dd>To associate a local repo on your system to a remote repo (i.e. on GitHub). This is done automatically when you clone a repo. Otherwise, a link can be created using the `git remote` command.</dd>
+  <dt>Clone a Repository</dt>
+  <dd>A method of copying a remote repo to your local system using the `git clone` command.</dd>
+  <dt>Fork a Repository</dt>
+  <dd>A GitHub feature that allows you to copy a third-party GH repo into your GH account. Note: this is <em>not</em> a native Git feature.</dd>
+  <dt>Commit Changes to a Repository</dt>
+  <dd>A saved "snapshot" of the repo at any given time using the `git commit` command.</dd>
+  <dt>Stage a File(s) to be Committed</dt>
+  <dd>Git is an "opt-in" environment. Changes to a file need to be "staged" before they can be committed to a repo. You do this using the `git add` command.</dd>
+  <dt>Pull Changes <em>from</em> a Remote Repository</dt>
+  <dd>To update a local repo with the commits from a remote repo using the `git pull` command. This needs to be done **before you can push changes** (assuming the local and remote repos are out of sync).</dd>
+  <dt>Push Changes <em>to</em> a Remote Repository</dt>
+  <dd>To synchronize a remote repo with the commits from a local repo using the `git push` command.</dd>
+</dl>
 
-## Lecture: Your first git repository (maybe)
-Let's go back to that page of instructions we received after creating our **GitHub** repo. Remember, we'll be starting with the top option: "…or create a new repository on the command line".
-
-### Top Git commands
-- `$ git status`: Show the current status of your repository (repo)
-- `$ git add`: Add file contents to be committed
-- `$ git commit`: Record changes to the repository
-- `$ git push`: Update remote refs along with associated objects
-- `$ git pull`: Fetch from and integrate with another repository or a local branch
-
-### Live-code objectives
-- How will you organize your projects?
-- If you've just installed Git, [set your name and email](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) using the `git config` command described in the Prep. 
-- Create a git repository for the project you've been working on in the HTML/CSS portion of this course.
-  1. Navigate to your project directory on the command line.
-  2. `git status` to make sure you are not already in a repo.
-  3. `git init` to initialize a new repo. This is usually done only once (if that) per project.
-  4. `git status` to see what files are modified/deleted/untracked.
-  5. `git add .` to add all your files for an initial commit
-  6. `git status` to double-check before you commit.
-  7. `git commit -m "concise description of your changes"` to commit your changes.
-  8. `git status` again to confirm that your "working directory is clean".
-  9. Make some changes to your code and start again at Step 4. You should be committing your changes multiple times a day.
-
-When you are ready, enter the last two lines of the GitHub instructions to attach and sync your local and remote repos.
-
-```shell
-$ git remote add origin https://github.com/acidtone/hello-world.git
-$ git push -u origin master
-```
-
-There are two ways to connect your system to GitHub: HTTPS and SSH. It's widely recommended that beginners use the HTTPS option. You will be asked for your login credentials the first time but your terminal should remember this for future connections.
-{: .notice}
-
-### Activity: Project work
-You will be working in teams. Work on your projects as you normally would, but try committing your changes as you go. Get used to the status/add/commit lifecycle of a professional developer.
-
-When you like what you see, push your changes to GH.
-
-## Activity: Publish your website to GH Pages
-You will be working in teams. Go to [pages.github.com](https://pages.github.com/) to get a summary of what GH Pages is and how to use it. Work together to publish each of your projects to a GH Pages website.
+- [First Time Setup]({{site.baseurl}}/cheatsheets/git-gh/setup)
+- [Creating Git (and GitHub) Repositories]({{site.baseurl}}/cheatsheets/git-gh/creating-repos)
+- [The add/commit/push lifecycle]({{site.baseurl}}/cheatsheets/git-gh/add-commit-push)
