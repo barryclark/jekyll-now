@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 3 - Responsiveness and Performance
+title: Day 3 - GitHub
 categories: dsgn270
 ---
 
