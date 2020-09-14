@@ -57,6 +57,9 @@ You will be working in groups of 3 or 4.
 2. Deploy the template on GH Pages. See: Scenario 4 in the [Creating Repos Cheatsheet]({{site.basurl}}/cheatsheets/git-gh/creating-repos).
 3. Change the title of the home page (`title` tag in the `head`) and deploy the change using the [add/commit/push lifecycle]({{site.baseurl}}/cheatsheets/git-gh/add-commit-push).
 
+**Important**: If you were able to push a website template and publish it on GH Pages, submit a link to your repo in [This GH Issue](https://github.com/sait-wbdv/sait-wbdv.github.io/issues/4). We'll be using some of these as examples in tomorrow's lesson.
+{:.notice--info}
+
 Elect a representative from your group to show the class your favourite template.
 
 ### Use cases
