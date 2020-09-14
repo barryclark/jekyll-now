@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a classicist (PhD, ANU 2016)) interested in Greek and Latin scientific writing.  Before returning to humanities (which began of course with a brilliant Latin teacher in high school) I was a programmer and systems analyst in the Australian Public Service specialising in data architecture of large systems.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Particular focus of late is Pliny the Elder's *Historia Naturalis*
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[seford0@gmail.com](mailto:seford0@gmail.com)
