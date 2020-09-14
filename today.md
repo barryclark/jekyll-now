@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Today - Cloning Git Repositories
+title: Today - Creating Git and GitHub Repositories
 ---
 
 ## Housekeeping
