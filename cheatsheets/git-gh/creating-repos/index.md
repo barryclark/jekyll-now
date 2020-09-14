@@ -100,9 +100,9 @@ If you have permissions to push changes to this repo, see this Cheatsheet for th
     $ git commit -m "initial commit"
     ```
 
-Note: To link a local repo to a GitHub repo, see Scenario 3 below.
+Note: To link a local repo to a remote GitHub repo, see Scenario 4 below.
 
-## Scenario 3: 
+## Scenario 3: Create a Burnable Remote repo
 ### Terminology
 <dl>
   <dt>Burnable</dt>
@@ -110,6 +110,11 @@ Note: To link a local repo to a GitHub repo, see Scenario 3 below.
   <dt>Burn the Farm</dt>
   <dd>Tony's expression for deleting a repo or project and rebuilding and start fresh (if needed). There should be nothing left but ashes (no lingering files cluttering up your system/GH account).</dd>
 </dl>
+
+### Assumptions
+- Existing project: Yes
+- Read-only: Yes
+- Local repo: No
 
 1. Create a public repo on GH, with `Add a README file` **unchecked**.
 2. Click on `Add an existing file`.

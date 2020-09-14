@@ -11,6 +11,11 @@ kramdown:
 - [Command Line Cheatsheet]({{site.basurl}}/cheatsheets/command-line)
 - [Naming Conventions Cheatsheet]({{site.basurl}}/cheatsheets/naming-conventions)
 
+## Relevant Cheatsheets
+- [First Time Setup]({{site.baseurl}}/cheatsheets/git-gh/setup)
+- [Creating Git (and GitHub) Repositories]({{site.baseurl}}/cheatsheets/git-gh/creating-repos)
+- [The add/commit/push Lifecycle]({{site.baseurl}}/cheatsheets/git-gh/add-commit-push)
+
 ## Terminology
 <dl>
   <dt>Version Control</dt>
@@ -38,7 +43,3 @@ kramdown:
   <dt>Push Changes <em>to</em> a Remote Repository</dt>
   <dd>To synchronize a remote repo with the commits from a local repo using the `git push` command.</dd>
 </dl>
-
-- [First Time Setup]({{site.baseurl}}/cheatsheets/git-gh/setup)
-- [Creating Git (and GitHub) Repositories]({{site.baseurl}}/cheatsheets/git-gh/creating-repos)
-- [The add/commit/push lifecycle]({{site.baseurl}}/cheatsheets/git-gh/add-commit-push)
