@@ -7,11 +7,20 @@
 }
 
 .notice--warning {
-  margin: auto 3em;
+  margin: 1em 3em;
   padding: 1em 2em;
 
   color: #3d4144;
   background: #fbd2c6;
+  border-radius: 1em;
+}
+
+.notice--info {
+  margin: 1em 3em;
+  padding: 1em 2em;
+
+  color: #3d4144;
+  background: #c6dffb;
   border-radius: 1em;
 }
 
