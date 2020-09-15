@@ -7,20 +7,19 @@ name: Yi Hu (Eve)
 description: PhD student
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/uidmice/uidmice.github.io/blob/master/images/I55A8688.jpeg
-
+avatar: https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1451912270,2889972006&fm=26&gp=0.jpg
 #
 # Flags below are optional
 #
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email: eve.hu@sv.cmu.edu
+  email: yihu@andrew.cmu.edu
   facebook:
   github: uidmice
-  instagram: "@uidmice"
-  linkedin:
-  twitter: "@uidmice"
+  instagram: uidmice
+  linkedin: yi-hu-tong
+  twitter: uidmice
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
