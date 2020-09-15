@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "How things change: A framework for altering the behaviors of others"
+title: "How things change: Altering the behavior of others"
 author: stelios
 tags: [personal development, general knowledge, leadership]
 categories: [General Knowledge, Leadership]
 featured: true
-description: ""
-image: assets/images/common-knowledge/linus-nylund-Q5QspluNZmM-unsplash.jpg
+description: "Things do not just happen. Change of behaviors takes a certain sequence of events. This blog post presents 2 alternative frameworks to influence and change the behavior of others."
+image: assets/images/how-things-change/linus-nylund-Q5QspluNZmM-unsplash.jpg
 ---
 
 In an ever-changing world, it is easy to think that “things just happen”.  
@@ -20,7 +20,7 @@ This blog post discusses 2 frameworks for understanding the mechanics behind cha
 
 Let's start with a visual juxtaposition.
 
-Chances are, dear reader, that you immediately recognize the man on the left, but are not sure about the woman on the right.  
+Chances are that you immediately recognize the man on the left, but are not sure about the woman on the right.  
 He is [Harvey Weinstein][8], a former [movie producer][9].  
 She is [Rose McGowan][7], a Hollywood actress. 
 
@@ -34,13 +34,14 @@ with more trials pending.
 
 That was only the beginning.
 
-Thousands of women (and men) have since come forward with revelations on sexual abuse, resulting in many public figures 
+Thousands of women (and men) have since come forward with revelations of historical sexual abuse, resulting in many public figures 
 been disgraced around the world. This came to be collectively known as the [#metoo movement][15].  
-Most importantly, this kick-started a number of initiatives around the world, focusing on gender inequality in the 
+Most importantly, this also triggered a number of initiatives around the world, focusing on gender inequality in the 
 workplace and society.  
 The #metoo snowball is still rolling.
 
-Now, Harvey W had been at it for 20 years.  
+Here is an interesting question:  
+Harvey W had been at it for 20 years.  
 Countless others before, like him, have been abusing their power. 
 
 Why did it take so long for Harvey W to face justice?  
@@ -64,33 +65,32 @@ We can classify knowledge in 3 different “types”.
 There is a fact and only I know it. Or at least so I think...  
 
 This is knowledge about things which I have experienced in my personal life. 
-It can range from the trivial (e.g. *I stepped on a chewing gum today*) to the very serious (e.g. *I cannot afford to buy 
+It can range from the trivial (e.g. *I stepped on a chewing gum today*) to the very serious (*I cannot afford to buy 
 food for my children*).  
 I am oblivious to the fact that millions of other people might have similar private pieces of information at the same 
 time (e.g. they also cannot afford to buy food).
 
 **Public knowledge**  
-The fact is out there; for anyone with their eyes & ears tuned in.  
+The fact is out there, for anyone with their eyes & ears tuned in.  
 
 Public knowledge is information (facts, articles, news,...) available in the public domain. This could be anything: from 
 truthful facts to fake news.  
 For example, [listed company][19] accounts (P & L, revenue,...) are by law in the public domain. So is a [November 2019 
 article][20] about a little-known city having an influx of patients at its hospitals.
 
-Public domain can also imply any context.  
-E.g. an unrestricted Confluence page in your company's intranet is also public knowledge. In the company's public domain.
+In this discussion, "public domain" means practically any context.  
+For example, an unprotected Confluence page in your company's intranet is also public knowledge in the company's domain.
 
 In brief, we *can* know about public knowledge. But it is not exactly at the forefront of our thought.
 
-**Common knowledge**
+**Common knowledge**  
 Everyone knows that everyone knows. There is no way of denying or hiding.
 
-This is when you know that everyone else also knows the fact. And the important bit is that will almost surely take action.  
+This is when you know that everyone else also knows the fact. And (the important bit) they will almost surely take action.  
 You can no longer ignore the fact, even if you wanted to.
 
-It is also interesting to tie this back to private knowledge, even the trivial sort. <sup>[2](#footnote_2)</sup>   
-Common knowledge is the most interesting type, though it might be a little bit elusive. We will come back to that with 
-some examples in a minute.
+It is also interesting to tie this back to private knowledge, even the trivial sort. <sup>[2](#footnote_2)</sup>  
+As definitions go, it might be a little bit elusive. We will come back to it with some examples later on.
 
 ## Overton window
 
@@ -101,14 +101,15 @@ The 2nd ingredient is the “window of discourse”, a.k.a. [Overton window][22]
 
 This framework describes  
 * the range of ideas tolerated, accepted to be discussed in public and eventually turning into policy, and
-* how society's appetite changes overtime, with ideas and concepts falling in / out of what is acceptable.  
-It describes how “ripe” the environment is to accept a new idea (or reject an old one). 
+* how society's appetite changes over time, with ideas and concepts falling in / out of what is acceptable.  
 
-For example, think how not so long ago it was perfectly acceptable to own slaves or burn people alive.
+In other words, it describes how “ripe” the environment is to accept a new idea (or reject an old one). 
 
-The Overton window concept was originally meant to formalize applicability and success of public policies. However it can 
-very easily be used as a tool in any domain. I would dare say it applies to almost every social situation.   
-From the most important (e.g. *locking everyone up for an indefinite period of time*) to the most mandane (e.g. *should 
+For example, think how, not so long ago, it was perfectly acceptable to own slaves or burn people alive.
+
+The Overton window concept was originally meant to describe the applicability and success of public policies. However it can 
+very easily be used as an idea evaluation tool in any domain. I would dare say it applies to almost every social situation.   
+From the most important (e.g. *locking everyone in their houses for an indefinite period of time*) to the most mandane (e.g. *should 
 we re-decorate the living room, honey?*) 
 
 ## ...and a catalyst 
@@ -121,16 +122,18 @@ The small spec of platinum which will cause a [continuous reaction][23].
 
 The best real-world example is that of a missionary.  
 A person who has the courage to stand in front of an ambivalent (even hostile) crowd and "create" common knowledge. 
-True to their name, missionaries (of the ["Knowledge Game"][24] sort) are driven to influence people around them.
+True to their name, missionaries (of the ["Knowledge Game"][24] sort) are driven, by beliefs of for gain, to influence 
+people around them.
 
-In the archetypical missionary-meets-Hollywood scenario:  
-The tribe is not faring well. Animals are dying, prayers to the gods are not doing anything. But talking about the gods is taboo.  
+Let's consider the archetypical missionary-meets-Hollywood scenario:  
+The tribe is not faring well. Animals are dying, prayers to the gods are not doing anything. But complaining about the gods is taboo.  
 This is both private and public knowledge. Everyone is affected by the malaise and may be having doubts (private knowledge), 
-everyone participates in the ineffective rituals (public knowledge).
+everyone participates in the ineffective rituals (public knowledge).  
 But it is only when the missionary stands in front of everyone and says “your animals are dying, because your gods are 
 fake” that common knowledge is "created".  
-Not because she said something really new.  
-It is because *everyone heard what everyone else also heard*; the crowd's Overton window is shaken, if not shifted.
+Not because the missionary said something "out of this world".  
+It is because *everyone heard what everyone else also heard*. The taboo has been broken and the tribe's Overton window 
+(*we don't talk about or doubt the gods*) is shaken, if not shifted.
 
 The missionary is not always without danger.   
 Ostracisation or persecution might be the result. 
@@ -150,15 +153,15 @@ Let’s put all of the above into perspective with some examples.
 ## Little gravitas, huge persistence
 
 ![Nigel Farage](../assets/images/how-things-change/farrage.png)
-> Image credits: [here][4]
+> Image credits: [here][5]
 
 Sometimes change can take years to happen.  
 Without going very far, the best example of a missionary in recent years is [Nigel Farage][25].
 
 Starting from a point of initial obscurity, he more than made up the lack of gravitas with formidable persistence.  
-He catalyzed the transformation of people’s private (I cannot afford rent, another foreign speaker moved next door, I am 
-not moving up socially,...) and public knowledge (immigration to the UK, struggling middle class,...) into common 
-knowledge (EU participation is a bad deal, the UK has lost its sovereignty,...).  
+He catalyzed the transformation of people’s private knowledge (*I cannot afford rent, another foreign speaker moved next door, I am 
+not moving up socially,...*) and public knowledge (*immigration to the UK, struggling middle class,...*) into common 
+knowledge (*EU participation is a bad deal, the UK has lost its sovereignty,...*).  
 
 The British society's Overton window moved far enough for the [Brexit][27] earthquake to happen.
 
@@ -167,15 +170,17 @@ The British society's Overton window moved far enough for the [Brexit][27] earth
 ![Mario Draghi](../assets/images/how-things-change/draghi.png)
 > Image credits: [here][4]
 
-Let’s look at another example, when change takes literally seconds.  
+Let’s look at another example, when change happens in seconds.  
 All it takes is a formidable missionary.
 
-Summer of 2012, [bond yields of southern EU countries][28] are through the roof, for fear of defaults.  
-Normally, [servicing increasing debt payments][29] is possible via one of 3 ways: cheaper debt (i.e. lower yield), 
-increasing inflation (i.e. more money around to pay for debt) or expanding GDP (i.e. increased economic activity to tax).  
+Spring and summer of 2012, [bond yields of southern EU countries][28] are through the roof, for fear of sovereign defaults.
+  
+As an aside, [servicing increasing debt payments][29] is possible via one of 3 ways: cheaper debt (i.e. lower yield), 
+increasing inflation (i.e. more money around to pay for debt) or expanding GDP (i.e. increased economic activity to tax
+and pay for debt).  
 
 Southern countries had neither of 3 options.  
-A bond yield of 6% was considered the psychological cut-off point, after which they would be unable to service their 
+A bond yield of 6% give-or-take was considered the psychological cut-off point, after which they would be unable to service their 
 debt as is. They would need a "shock": currency devaluation (i.e. inflation), which would fuel exports and growth (i.e.
 GDP expansion).
 
@@ -187,8 +192,8 @@ But without Spain and Italy <sup>[3](#footnote_3)</sup>, it would probably be th
 
 Mr. Draghi [gives a speech][30] and says the (now famous) 3 words “ECB will do **whatever it takes** to save the euro”.
 
-In one sentence the market's public knowledge (ECB intends to [buy EU sovereign bonds][31]) became common knowledge 
-(this elephant will crush the market, all sane traders will back off).  
+In one sentence the market's public knowledge (*ECB intends to [buy EU sovereign bonds][31]*) became common knowledge 
+(*this elephant will crush the market, all sane speculators will back off*).  
 And the euro was spared at that point.
 
 ## Shifting Overton window
@@ -212,8 +217,8 @@ into a new common knowledge?
 Should we ban unnecessary travel? Will climate change denial be outlawed, in a [continuing the trend][36] of dealing with 
 [COVID dissent][37]? 
 
-Remember that once knowledge, any knowledge, becomes common, there is a [paradigm shift][38].  
-The Overton window moves and what was unthinkable or unlikely becomes the new norm.
+Remember this: once common knowledge is created, there is a [paradigm shift][38].  
+The Overton window moves and what was unlikely or even unthinkable becomes the new norm.
 
 # And now to something different!
 
@@ -231,18 +236,19 @@ The archetypical example is that of a religious minority with strict dietary req
 When a minority will not "back down" on its practice (and, importantly, the majority does not really care), then the 
 minority prevails. For example, the UK hospitality industry [catering][43] [halal][42] [meat][41]. 
 
-This behavioral pattern is not restricted just to society and religious groups.  
+This behavioral pattern is not restricted just to society and religion.  
 It can be (and regularly is) replicated across groups of any size and various beliefs. 
 
 Imagine the following not-so-unrealistic example.  
-A single member of a family decides to go vegan; no ifs, not buts. 
-The hypothetical family, instead of cooking 2 meals, decides it is not a big burden to all turn vegan.  
+A single member of a family decides to go vegan; no ifs, not buts.  
+The hypothetical family, instead of cooking 2 meals, decides it is not a big burden to all turn vegan. 
 When this family starts interacting with others (say, social visits), other people now need to cater to this family’s 
-new preferences. If the interaction is very frequent, then they may end up changing behavior.
+new preferences.  
+If the interaction is very frequent, then other people, outside of the family, may end up changing behavior.
 
 One can easily port the same interactions from a social to a professional setting.  
-For example, a team in a company only using Zoom instead of the provided Skype. Or only coding in Python 3, rather than 
-Python 2. 
+For example, a team in a company decides to only use Zoom instead of the provided Skype.  
+Or only coding in Python 3, rather than the company supported Python 2. 
 
 As long as the majority remains flexible <sup>[4](#footnote_4)</sup>, then the minority's **actions** will influence 
 and alter the majority's **actions**.
@@ -252,15 +258,15 @@ and alter the majority's **actions**.
 ![Spheres of influence and control](../assets/images/how-things-change/spheres.png)
 > Spheres of influence and control
 
-Being in any social environment, personal or professional, it is always useful to place things within the [spheres 
+Being in any social environment, personal or professional, it is always useful to place one's actions within the [spheres 
 of influence and control][44].  
 
-**Common knowledge**   
+**Common Knowledge approach**   
 Sits in the sphere of influence.  
 A missionary influences the behavior of a group by turning public knowledge (information) into common knowledge 
 (information which cannot be ignored).
 
-**Intransigent minority**  
+**Intransigent Minority approach**  
 Squarely in the sphere of control.  
 Using only our actions (and stubbornness), given the right circumstances, we can alter other people’s behavior. 
 
@@ -268,27 +274,27 @@ These 2 behavioral frameworks are so simple that can be used effectively in almo
 
 # References
 
-All credit goes to the 2 framework creators:  
-* Dr Ben Hunt, creator of the [Knowledge Game][45]
-* Nassim Nicholas Taleb, and his book [Skin in the Game][46]
+All credit goes to the original framework / theory creators:  
+* Dr Ben Hunt, for the [Knowledge Game][45]
+* Nassim Nicholas Taleb and his book [Skin in the Game][46] for Intransigent Minorities
 
 Any mistakes and omissions are mine.
 
 ## Footnotes
 
-1. <a name="footnote_1"></a>This blog post is based on a presentation given internally at GoCardless.  
+1. <a name="footnote_1"></a>This blog post is based on a presentation given internally at [GoCardless][47].  
 If you found it interesting, why not consider joining a [culture of continuous learning][6]? 
 2. <a name="footnote_2"></a>Consider the example when you stepped on a chewing gum this morning.  
 What if everyone in the country knew that everyone else had also stepped on a chewing gum the same morning? 
 3. <a name="footnote_3"></a>Greece was too small to matter.
-4. <a name="footnote_4"></a>There is a catch here. The minority’s choices should not materially degrade things in the 
-majority's opinion.  
+4. <a name="footnote_4"></a>There is a catch here. The minority’s choices should not materially degrade things, at least 
+not in the majority's opinion.  
 Arguably, halal chicken still tastes like chicken, so no big deal.  
 But a company's team wanting to use, say, carrier pigeons instead of Zoom, might face a very strong backlash.  
 
 
 
-  [1]: https://wikiglobals.com/tag/how-old-is-harvey-weinstein/
+  [1]: https://www.daily-sun.com/post/471451/Harvey-Weinstein-tests-positive-for-COVID19-in-jail
   [2]: https://time.com/4980004/rose-mcgowans-twitter-harvey-weinstein/
   [3]: https://www.caixabankresearch.com/en/economics-markets/monetary-policy/mario-draghi-and-his-parole-parole
   [4]: https://medium.com/@henrikouam/how-low-can-the-european-central-bank-go-4db6a15c8b77
@@ -334,3 +340,4 @@ But a company's team wanting to use, say, carrier pigeons instead of Zoom, might
   [44]: https://www.talkingabout.com.au/3ControlInfluenceConcern
   [45]: https://www.epsilontheory.com/harvey-weinstein-common-knowledge-game/
   [46]: https://en.wikipedia.org/wiki/Skin_in_the_Game_(book)
+  [47]: https://gocardless.com/
