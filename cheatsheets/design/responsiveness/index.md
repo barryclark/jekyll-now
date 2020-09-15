@@ -2,6 +2,9 @@
 layout: page
 title: "Responsive Fundamentals"
 ---
+
+See: [The building blocks of responsive design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/responsive_design_building_blocks)
+
 ## Readable Text
 Readable text is a balance of the following fundamental characteristics of typography:
 - [Font size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) 
