@@ -5,7 +5,7 @@ categories:
 ---
 
 ## Housekeeping
-- CPNT 201: [Assignment 1]({{site.baseurl}}/assessments/cpnt201/assignment-1/responsiveness)
+- CPNT 201: [Assignment 1](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-1)
 - Updated Schedule
 
 ## Lesson Prep

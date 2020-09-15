@@ -10,13 +10,13 @@ title: "SAIT WBDV Program Schedule"
 - F: CPNT 201 Day 1 - GitHub
 
 ## Week 2: September 14-18
-- M: CPNT 201 Day 2 - Creating Git and GitHub Repos
+- M: CPNT 201 Day 2 - [Creating Git and GitHub Repos]({% link _posts/2020-09-14-git-gh.md %})
 - T: DSGN 270 Day 3 - Mobile Fundamentals
 - W: DSGN 270 Day 4 - Copyright & Licensing
 - R: CPNT 260 Day 1 - Long-form text
 - F: CPNT 264 Day 1 - Career & Consulting Essentials
 
-Sunday, Sept 20: [CPNT 201 Assignment 1 Due]({{site.basurl}}/assessments/cpnt201/assignment-1)
+Sunday, Sept 20: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-1)
 
 ## Week 3: September 21-25
 - M: CPNT 260 Day 2 - Figures and HTML Images
