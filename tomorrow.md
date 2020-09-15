@@ -6,7 +6,7 @@ categories:
 ## Homework
 - Read: [Fair dealing at UVic](https://www.uvic.ca/library/featured/copyright/fairdealing/index.php)
 - Read: [Understanding The Copyright License](https://www.smashingmagazine.com/2011/06/understanding-copyright-and-licenses/)
-- Watch: [YouTuber Extortion? MxR Plays v. Jukin](https://youtu.be/5A_i-sB9H0Q)
+- Watch/skim: [YouTuber Extortion? MxR Plays v. Jukin](https://youtu.be/5A_i-sB9H0Q)
 - Skim: [Creative Commons Licenses](https://creativecommons.org/about/cclicenses/)
 - Skim: [Which License Should I Use? MIT vs. Apache vs. GPL](https://exygy.com/blog/which-license-should-i-use-mit-vs-apache-vs-gpl/)
 
