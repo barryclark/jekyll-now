@@ -251,7 +251,7 @@ And now we're ready for some plots!
 
 ### Some exploratory plots
 
-Nothing too fancy here, we'll just take a look at some plots to build our understanding of the excess demand. Let's look at the supply side first - what does the supply of 4R and 5R flats look like?
+Nothing too fancy here, just some basic plots to build our understanding of the excess demand. Let's look at the supply side first - what does the supply of 4R and 5R flats look like?
 
 ```
 clean_combined %>%
@@ -287,4 +287,6 @@ clean_combined %>%
   theme(legend.position = "bottom")
 ```
 
+It looks like the total supply of 4R/5R BTO flats increased from 2015-2017, but have fallen since. The bars for 2020 are set to translucent to indicate that the number is not directly comparable because there is still the Nov 2020 ballot which is not part of this data yet. However, it does look very possible that after the Nov 2020 supply is in, the total for 2020 will surpass that of 2019. What is less clear is whether this is a sustained change or not, as there have been speculations that the higher supply in 2020 is because it was widely expected to be an election year.
 
+![Total supply of 4R/5R BTO flats have increased from 2015-2017, but decreased since. 2020 might signal another reversal.]({{ site.baseurl }}/images/45r_supply.png "Increasing from 2015-2017, but decreasing since. 2020 might signal another reversal.")
