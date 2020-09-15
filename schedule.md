@@ -3,7 +3,6 @@ layout: default
 title: "SAIT WBDV Program Schedule"
 ---
 # Fall 2020 Schedule
-
 ## Week 1: September 8-11
 - T: Orientation
 - W: DSGN 270 Day 1 - [Visual Hierarchy in Design]({% link _posts/2020-09-09-visual-hierarchy-design.md %})
@@ -14,50 +13,98 @@ title: "SAIT WBDV Program Schedule"
 - M: CPNT 201 Day 2 - Creating Git and GitHub Repos
 - T: DSGN 270 Day 3 - Mobile Fundamentals
 - W: DSGN 270 Day 4 - Copyright & Licensing
-- R: CPNT 260 Day 1 - Introduction to HTML/CSS/JS
+- R: CPNT 260 Day 1 - Long-form text
 - F: CPNT 264 Day 1 - Career & Consulting Essentials
 
-## September 21 - October 1
-_CPNT 260: Web Page Construction Fundamentals_
+Sunday, Sept 20: [CPNT 201 Assignment 1 Due]({{site.basurl}}/assessments/cpnt201/assignment-1)
 
-## October 2-8
-_CPNT 201: Web Design Tools & Techniques - Photoshop/Illustrator_
+## Week 3: September 21-25
+- M: CPNT 260 Day 2 - Figures and HTML Images
+- T: CPNT 260 Day 3 - Web Typography
+- W: CPNT 260 Day 4 - Headers and Footers
+- R: CPNT 260 Day 5 - Horizontal Navigation
+- F: CPNT 260 Day 6 - Web Colour
 
-## October 9-22
-_CPNT 262: Web Client & Server Programming - Javascript_
+## Week 4: Sep 28 - Oct 2
+- M: CPNT 260 Day 7 - Hero Sections and Calls to Action
+- T: CPNT 260 Day 8 - Cards and Content Blocks
+- W: CPNT 260 Day 9 - Galleries
+- R: CPNT 260 Day 10 - Web Forms
+- F: CPNT 201 Day 3
 
-## October 23 & 24
-_CPNT 201: - Build Tools_
+## Week 5: October 5-9
+- M: CPNT 201 Day 4
+- T: CPNT 201 Day 5
+- W: CPNT 201 Day 6
+- R: CPNT 201 Day 7
+- F: CPNT 262 Day 1
 
-## October 27 - November 10
-_CPNT 262: Web Client & Server Programming - NodeJS/Mongo_
+## Week 6: Oct 12-16
+- M: Stat 
+- T: CPNT 262 Day 2
+- W: CPNT 262 Day 3
+- R: CPNT 262 Day 4
+- F: CPNT 262 Day 5
 
-## November 12
-_CPNT 264: Career & Consulting Essentials_
+## Week 7: Oct 19-23
+- M: CPNT 262 Day 6
+- T: CPNT 262 Day 7
+- W: CPNT 262 Day 8
+- R: CPNT 262 Day 9
+- F: CPNT 201 Day 8
 
-## November 13
-_CPLN 240: Guest Speaker Day_
+## Week 8: Oct 26-30
+- M: CPNT 201 Day 9
+- T: CPNT 262 Day 10
+- W: CPNT 262 Day 11
+- R: CPNT 262 Day 12
+- F: CPNT 262 Day 13
 
-## November 16
-_CPNT 264: Career & Consulting Essentials_
+## Week 9: Nov 2-6
+- M: CPNT 262 Day 14
+- T: CPNT 262 Day 15
+- W: CPNT 262 Day 16
+- R: CPNT 262 Day 17
+- F: CPNT 262 Day 18
 
-## November 17-25
-_CPNT 200: Content Management Systems - Wordpress_
+## Week 10: Nov 9-13
+- M: CPNT 262 Day 19
+- T: CPNT 262 Day 20
+- W: Stat
+- R: CPNT 264 - Career & Consulting Essentials
+- F: CPLN 240 - Guest Speaker Day
 
-## November 26-30
-_DSGN 270: Social Media/Digital Marketing_
+## Week 11: Nov 16-20
+- M: CPNT 264 - Career & Consulting Essentials
+- T: CPNT 200 - Content Management Systems
+- W: CPNT 200 - Content Management Systems
+- R: CPNT 200 - Content Management Systems
+- F: CPNT 200 - Content Management Systems
 
-## December 1
-_CPNT 264: Career & Consulting Essentials_
+## Week 12: Nov 23-27
+- M: CPNT 200 - Content Management Systems
+- T: CPNT 200 - Content Management Systems
+- W: CPNT 200 - Content Management Systems
+- R: DSGN 270 - Social Media Marketing
+- F: DSGN 270 - Social Media Marketing
 
-## December 2-4
-_CPNT 265: The Business of the Web_
+## Week 13: Nov 30 - Dec 4
+- M: DSGN 270 - Social Media Marketing
+- T: CPNT 264 - Career & Consulting Essentials
+- W: CPNT 265 - The Business of the Web
+- R: CPNT 265 - The Business of the Web
+- F: CPNT 265 - The Business of the Web
 
-## December 7 & 8
-_CPNT 264: Career & Consulting Essentials_
+## Week 14: Dec 7-11
+- M: CPNT 264 - Career & Consulting Essentials
+- T: CPNT 264 - Career & Consulting Essentials
+- W: CPNT 265 - The Business of the Web
+- R: CPNT 265 - The Business of the Web
+- F: CPNT 265 - The Business of the Web
 
-## December 9-17
-_CPNT 265: The Business of the Web_
-
-## December 18
-Final Presentations
+## Week 15: Dec 14-18 
+- M: CPNT 265 - The Business of the Web
+- T: CPNT 265 - The Business of the Web
+- W: CPNT 265 - The Business of the Web
+- R: CPNT 265 - The Business of the Web
+- F: Final Presentations
