@@ -42,6 +42,18 @@ Beyond the obvious difference in screen size, discuss how mobile is different th
 
 Please add a comment your phone make and model in [this Issue](https://github.com/sait-wbdv/sait-wbdv.github.io/issues/7) 
 
+#### Spoilers
+- what are the device differences?
+  - landscape vs portrait
+  - screen size -> hamburger menu
+  - no cursor -> no hover
+  - gestures (with focus on the thumb)
+  - performance
+  - phone calls
+  - location -> maps
+  - camera
+  - accelerometer
+
 ## 2. Common Mobile Design Patterns
 ### Learning Objectives
 - Identify common design patterns for responsive web development.
