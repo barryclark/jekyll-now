@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Today - Universal Design
+title: Today - Responsiveness and Performance
 categories: 
 ---
 
@@ -39,13 +39,6 @@ You will work in groups of 3 or 4 for this activity. Beyond the obvious differen
 
 ## 2. Common Mobile Design Patterns
 
-See: 
-- [Responsive Text Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness)
-- Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
-- Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
-- Codepen: [Puppy Card](https://codepen.io/browsertherapy/pen/mdPWXZb)
-- Codepen: [Basic 1x3 Card Pattern](https://codepen.io/browsertherapy/pen/vYGxRNB)
-
 ### Learning Objectives
 - Identify common design patterns for responsive web development.
 - Explore how the standards of HTML, CSS and Javascript have evolved to better take advantage of mobile web.
@@ -62,7 +55,19 @@ See:
   <dd>A feature of CSS that enable webpage content to adapt to different screen sizes, orientations, aspect ratios and mediums (e.g. print vs screen).</dd>
   <dt>Breakpoint</dt>
   <dd>Points in responsive design where website presentation responds to changing viewport characteristics (width, orientation, etc).</dd>
+  <dt>Hamburger Menu</dt>
+  <dd>A button in websites and apps that typically opens up into a side menu or navigation drawer.</dd>
+  <dt>Card Pattern</dt>
+  <dd>A convenient means of displaying content composed of different types of objects. They are also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length</dd>
 </dl>
+
+See: 
+- [The building blocks of responsive design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/responsive_design_building_blocks)
+- [Responsive Text Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness)
+- Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
+- Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
+- Codepen: [Puppy Card](https://codepen.io/browsertherapy/pen/mdPWXZb)
+- Codepen: [Basic 1x3 Card Pattern](https://codepen.io/browsertherapy/pen/vYGxRNB)
 
 ### Activity: Dev Tools vs Mobile Devices
 You will work in groups of 3 or 4 for this activity.
@@ -81,4 +86,3 @@ After a short demo from your instructor, evaluate your favourite sites using the
 - Which score the highest?
 
 ## Clean up time!
-- Exit Ticket
