@@ -33,12 +33,14 @@ categories:
 </dl>
 
 ### Activity: How is mobile unique?
-You will work in groups of 3 or 4 for this activity. Beyond the obvious difference in screen size, discuss how mobile is different than desktop:
+You will work in groups of 3 or 4 for this activity. 
+
+Beyond the obvious difference in screen size, discuss how mobile is different than desktop:
 - What hardware features do mobile phones have compared to traditional desktop systems?
 - Do users have the same goals when browsing on a phone vs browsing on a laptop or desktop? If not, what's different?
+- What problems are mobile users often trying to solve?
 
 ## 2. Common Mobile Design Patterns
-
 ### Learning Objectives
 - Identify common design patterns for responsive web development.
 - Explore how the standards of HTML, CSS and Javascript have evolved to better take advantage of mobile web.
@@ -65,7 +67,7 @@ See:
 - [The building blocks of responsive design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/responsive_design_building_blocks)
 - [Responsive Text Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness)
 - Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
-- Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
+- Codepen: [Starter - Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/dyMKEzd)
 - Codepen: [Puppy Card](https://codepen.io/browsertherapy/pen/mdPWXZb)
 - Codepen: [Basic 1x3 Card Pattern](https://codepen.io/browsertherapy/pen/vYGxRNB)
 
