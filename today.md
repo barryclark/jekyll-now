@@ -40,6 +40,8 @@ Beyond the obvious difference in screen size, discuss how mobile is different th
 - Do users have the same goals when browsing on a phone vs browsing on a laptop or desktop? If not, what's different?
 - What problems are mobile users often trying to solve?
 
+Please add a comment your phone make and model in [this Issue](https://github.com/sait-wbdv/sait-wbdv.github.io/issues/7) 
+
 ## 2. Common Mobile Design Patterns
 ### Learning Objectives
 - Identify common design patterns for responsive web development.
