@@ -1,70 +1,84 @@
 ---
-layout: page
-title: Today - Creating Git and GitHub Repositories
+layout: post
+title: Today - Universal Design
+categories: 
 ---
 
 ## Housekeeping
-- Cheatsheet walk-throughs
+- CPNT 201: [Assignment 1]({{site.baseurl}}/assessments/cpnt201/assignment-1/responsiveness)
+- Updated Schedule
 
-## 1. Navigate your file system using the "command line"
+## Lesson Prep
+1. Read: [The web and web standards](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards) by the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn) (link to their Learning Area)
+2. Watch: [A brief history of layout](https://youtu.be/E005mjqpZ9Y) by [Layout Land](https://www.youtube.com/c/LayoutLand/)
+3. Watch: The first 7 minutes of [Beyond Media Queries](https://vimeo.com/235428198) by Michael Riethmuller (you can stop at Fluid Typography)
+4. Read: [Designing Card-Based User Interfaces](https://www.smashingmagazine.com/2016/10/designing-card-based-user-interfaces/)
+5. Read: [The Thumb Zone: Designing For Mobile Users](https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/)
+6. Skim: [Mobile vs. Desktop Usage in 2019](https://www.perficient.com/insights/research-hub/mobile-vs-desktop-usage-study)
+7. Watch/Skim: [Mobile in Context: Design Principles of Flow and Navigation](https://youtu.be/OZRczPw1BBw)
+
+## 1. The Evolution of Web Layout
 ### Learning Objectives
-- Find your current location using the `pwd` command.
-- List the contents of your current directory using the `ls` command.
-- Change your current directory using the `cd` command.
-
-See: 
-- [File and Directory Cheatsheet]({{site.basurl}}/cheatsheets/naming-conventions)
-- [Command Line Cheatsheet]({{site.basurl}}/cheatsheets/command-line)
+- Describe responsive design and what problem it tries to solve.
+- List the physical and software characteristics that are unique to mobile devices.
+- Discuss the relative market share of mobile web traffic vs desktop web traffic.
+- Discuss the relative screen time spent on mobile apps vs mobile web sites.
 
 ### Terminology
 <dl>
-  <dt>Command Line Interface (CLI)</dt>
-  <dd>An alternative to Graphical User Interfaces (GUI) that are based on mouse clicks. Terminal apps come in a few flavours; in this course you can use a unix terminal of your choice.</dd>
-  <dt>The Terminal</dt>
-  <dd>A nickname for an application that understands one or more Command Line Interfaces (CLIs).</dd>
-  <dt>Workspace</dt>
-  <dd>A dedicated folder(s) on your system for the projects you'll be working on.</dd>
+  <dt>Desktop vs Mobile Web</dt>
+  <dd>A comparison of web traffic between desktop and mobile platforms.</dd>
+  <dt>Native App vs Web App Screen Time</dt>
+  <dd>A comparison of average time spent "on-screen" between web and native phone applications.</dd>
 </dl>
 
-## Activity 1: Setting up your workspace
-You will be working in groups of 3 or 4. For the purposes of this course, it is recommended you store your repos in a dedicated folder for SAIT projects.
-- Create a workspace folder on your file system (you may use your OS file explorer) and navigate to it using the command line. This will be needed for the next session.
-- Try navigating to various directories on your system to get accustomed to the command line.
+### Activity: How is mobile unique?
+You will work in groups of 3 or 4 for this activity. Beyond the obvious difference in screen size, discuss how mobile is different than desktop:
+- What hardware features do mobile phones have compared to traditional desktop systems?
+- Do users have the same goals when browsing on a phone vs browsing on a laptop or desktop? If not, what's different?
 
-## 2. Cloning a Read-only Repo
+## 2. Common Mobile Design Patterns
+
+See: 
+- [Responsive Text Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness)
+- Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
+- Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
+- Codepen: [Puppy Card](https://codepen.io/browsertherapy/pen/mdPWXZb)
+- Codepen: [Basic 1x3 Card Pattern](https://codepen.io/browsertherapy/pen/vYGxRNB)
+
 ### Learning Objectives
-- Navigate to your workspace using the Unix command line.
-- Clone a read-only repo into your workspace using the `git clone` command.
-- Refresh a local read-only repo using the `git pull` command.
+- Identify common design patterns for responsive web development.
+- Explore how the standards of HTML, CSS and Javascript have evolved to better take advantage of mobile web.
+- Create a block of minimally responsive body text using basic box model properties.
+- Locate the box model diagram in FireFox Developer Tools
 
-See: [Git Cheatsheet]({{site.basurl}}/cheatsheets/git-gh)
+### Terminology
+<dl>
+  <dt>Web Responsiveness</dt>
+  <dd>A Web development concept focusing on making sites look and behave optimally on all personal computing devices, from desktop to mobile.</dd>
+  <dt>Viewport</dt>
+  <dd>The viewable area of a website within the browser window.</dd>
+  <dt>Media Queries</dt>
+  <dd>A feature of CSS that enable webpage content to adapt to different screen sizes, orientations, aspect ratios and mediums (e.g. print vs screen).</dd>
+  <dt>Breakpoint</dt>
+  <dd>Points in responsive design where website presentation responds to changing viewport characteristics (width, orientation, etc).</dd>
+</dl>
 
-## Activity 2: Cloning the program repo
-You will be working in groups of 3 or 4.
-1. Navigate to the workspace directory you created earlier.
-2. Confirm that you've set your name and email using `git config`. See: [First Time Setup Cheatsheet]({{site.basurl}}/cheatsheets/git-gh/setup)
-3. Clone a copy of one or more the the WBDV program repos. Follow Scenario 1 in the [Creating Repos Cheatsheet]({{site.basurl}}/cheatsheets/git-gh/creating-repos).
+### Activity: Dev Tools vs Mobile Devices
+You will work in groups of 3 or 4 for this activity.
 
-When you return to the main room, you will refresh your local repo with fresh changes made by your instructor.
+Compare and contrast the visual appearance of a mobile website between
+1. The virtual mobile simulator in FireFox Dev Tools, and
+2. A real mobile device.
 
-_[lunch]_
+Select a representative from each group to present a summary of your findings to the rest of the class.
 
-## 3. Lab Time
-Let's practice different scenarios.
+## 3. Performance Audits
+You will work in groups of 3 or 4 for this activity.
 
-You will be working in groups of 3 or 4.
-1. Find and download a static html template from [HTML5 Up](https://html5up.net/) (for example).
-2. Deploy the template on GH Pages. See: Scenario 4 in the [Creating Repos Cheatsheet]({{site.basurl}}/cheatsheets/git-gh/creating-repos).
-3. Change the title of the home page (`title` tag in the `head`) and deploy the change using the [add/commit/push lifecycle]({{site.baseurl}}/cheatsheets/git-gh/add-commit-push).
-
-**Important**: If you were able to push a website template and publish it on GH Pages, submit a link to your repo in [This GH Issue](https://github.com/sait-wbdv/sait-wbdv.github.io/issues/4). We'll be using some of these as examples in tomorrow's lesson.
-{:.notice--info}
-
-Elect a representative from your group to show the class your favourite template.
-
-### Use cases
-- Deploy an open-source template to publish a potential portfolio or personal site. (Tony used [HTML5 Up](https://html5up.net/) for his crappy [corporate site](http://sitesol.ca/)).
-- Create a dedicated repo for [Font Awesome](https://fontawesome.com/) icons or some other useful library.
-- Any others?
+After a short demo from your instructor, evaluate your favourite sites using the Performance tab in Chrome Developer Tools.
+- Which sites score the lowest?
+- Which score the highest?
 
 ## Clean up time!
+- Exit Ticket
