@@ -4,7 +4,7 @@ title: "OpenBanking & PSD2: Part 2 - A practical example"
 author: stelios
 tags: [payments, openbanking, fintec, aisp, pisp, hands-on, tutorials]
 categories: [Payments, Fintec]
-featured: true
+featured: false
 description: "A 2-part series on OpenBanking and PSD2. This article gives a step-by-step, hands-on example of how to call an OpenBanking API endpoint, explaining all technical options along the way."
 image: assets/images/openbanking/nesa-by-makers-IgUR1iX0mqM-unsplash.jpg
 ---
