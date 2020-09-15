@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Initial Environment Setup
+title: Week 1T - Initial Environment Setup
 categories: Setup
 ---
 

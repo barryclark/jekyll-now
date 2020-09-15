@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 3 - GitHub
+title: Week 1F - GitHub
 categories: dsgn270
 ---
 

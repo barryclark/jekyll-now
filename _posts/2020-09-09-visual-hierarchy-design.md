@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 1 - Visual Hierarchy in Design
+title: Week 1W - Visual Hierarchy in Design
 categories: dsgn270
 ---
 While this is not a design program, that doesn't mean we have to develop ugly web applications. In the next four days, we will cover fundamental design principles that will (hopefully) make your applications stand out in a crowd.

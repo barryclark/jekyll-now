@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 2 - User Experience Design and Accessibility
+title: Week 1R - User Experience Design and Accessibility
 categories: dsgn270
 ---
 Frontend development is unique in web because your software interacts directly with the user (the backend doesn't have to deal with mouse clicks, for example). Knowing your user is the first step to designing intuitive and accessible applications.
