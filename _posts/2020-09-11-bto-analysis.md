@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Webscraping BTO application info
+title: Webscraping BTO application rates in R
 ---
 
 In recent discussion with friends regarding BTO applications, it seems that no one has much luck in getting a good queue number. I leave open the question of what is considered a "good" queue number, but for disclosure I should say that in recent ballots I do not personally know anyone who obtained a queue number < number of units. The nature of a ballot means that we could all just be unlucky, but the perception that I take away from these chats is that it appears to be more difficult for young couples (relatively) now to successfully ballot for a BTO flat than before. 
@@ -197,6 +197,94 @@ tibble [253 x 9] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
   .. )
   
 ```
-There's clearly some cleaning to be done here. The first timer ratio - a key variable of interest - is a character. It's probably also useful to create a proper date variable for use later.
+There's clearly some cleaning to be done here. The first timer ratio - a key variable of interest - is a character. It's probably also useful to create a proper date variable for use later. I do some cleaning below to create proper date variables, clean out the flat types a bit, and address some type issues. There are warning messages when forcing the application rates to numeric but it's not a big deal in this case - it's because some of the application rates for older studio apartment releases have "NA" or "Not applicable" entries. Those are not the focus here so we can just move on.
+
+```
+clean_combined <- combined_data %>%
+  
+  #create a proper date variable
+  separate(date, into = c("month", "year"), sep = 3) %>%
+  mutate(year = as.numeric(year),
+         year = as.character(2000 + year),
+         date = paste("01", month, year, sep = "-")
+         ) %>% 
+  
+  #clean flat type categories
+  mutate(flat_type = ifelse(flat_type == "", "TOTAL", flat_type),
+         flat_type = if_else(str_detect(flat_type, "5-room"), "5-room", flat_type)) %>% 
+          #some 5-rooms was also tagged as 3GEN. I've simplified them to all be treated as 5-room flats
+  
+  #deal with variable types (e.g. parse date)
+  mutate(date = dmy(date),
+         year = year(date),
+         estate_type = as.factor(estate_type)) %>% 
+  
+  mutate(across(matches("num|ratio"),as.numeric))
+```
+The data is a bit cleaner now, and we should do a cross-check to catch any errors in the webscraping. As I mentioned earlier, one way to cross-check that is to compare construct totals of the scraped info, against the totals that were scraped from the web. We can do that by temporarily filtering out the scraped totals and then re-joining the constructed total with the cleaned data, then compare the two totals. `stopifnot()` will throw up an error if the two totals are not identical. When we're satisfied with the cross-check, we can throw out the scraped totals as we can produce construct totals if those are necessary.
+
+By the way, I recall using the assertive package in the past but I seem to have had some problems with it recently, which is why I went with `stopifnot()`.
+
+```
+crosscheck1 <- clean_combined %>%
+  
+  #construct a total from all non-total entries
+  filter(str_detect(proj_name, "total_") == FALSE) %>% 
+  group_by(date) %>%
+  summarize(num_units  = sum(num_units)) %>% 
+  
+  
+  #after joining, I should now have both the scraped totals and the constructed totals
+  full_join(clean_combined, by = "date") %>%
+  filter(str_detect(proj_name, "total_"))
+  
+
+#if not identical, something has gone wrong and we should check for errors
+stopifnot(identical(crosscheck1$num_units.x, crosscheck1$num_units.y))
+
+#throw out scraped totals
+clean_combined <- clean_combined %>%
+  filter(str_detect(proj_name, "total_") == FALSE)
+```
+
+And now we're ready for some plots!
+
+### Some exploratory plots
+
+Nothing too fancy here, we'll just take a look at some plots to build our understanding of the excess demand. Let's look at the supply side first - what does the supply of 4R and 5R flats look like?
+
+```
+clean_combined %>%
+  
+  #filter out 2014 because incomplete year
+  #filter only 4 or 5 rooms because that's the interest
+  filter(year > 2014, str_detect(flat_type,"4-room|5-room")) %>% 
+    
+  group_by(year, estate_type) %>%
+  summarize(num_units  = sum(num_units)) %>%
+  
+  mutate(year_total = sum(num_units),
+         plot_alpha = ifelse(year == 2020, 0.7, 1)) %>%
+        #plot_alpha is a helper variable for making the 2020 bar translucent
+  
+  ggplot(aes(x = as.factor(year), y = num_units, fill = estate_type, alpha = plot_alpha)) +
+    geom_col() +
+    geom_text(
+      aes(label = num_units),
+      position = position_stack(vjust = 0.5)
+    ) +
+  
+  scale_alpha_continuous(range = c(0.7,1), guide = "none") +
+
+  labs(
+    title = "Number of 4R/5R BTO flats (annual)",
+    x = "",
+    y = "",
+    fill = ""
+    ) +
+  
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
 
 
