@@ -12,7 +12,7 @@ For those who are like me, you would be aware of the [application status page on
 In turn, that means that we can use web scraping from all these different pages to put together a dataset for analysis.
 
 A few comments on scope at this point:
-* I will be focusing on the first-timer application rate for the rest of this post, because I am a first-timer myself, and I am most concerned with the first-timer application rate (basically my "competitors" in the ballot). It may be worth noting that the definition of first-time application rate differs slightly for mature vs non-mature estates, though I'm not sure that it makes a substantive difference.
+* I will be focusing on the first-timer application rate for the rest of this post, because I am a first-timer myself, and I am most concerned with the first-timer application rate (basically my "competitors" in the ballot). From a policy perspective, this may also be the more interesting group because first-timers are likely to be comparatively younger couples who are looking to settle down in the next few years. Anecdotally, it seems that many of the people around me prefer to secure a flat before tying the knot officially, which may then have further implications down the line (e.g. when to have children). It may be worth noting that the definition of first-time application rate differs slightly for mature vs non-mature estates, though I'm not sure that it makes a substantive difference.
 * I will also be focusing on 4-room or 5-room flats (henceforth referred to as "4R" or "5R"). Again this is driven by personal interest - I am interested in balloting only for 4R or 5R flats.
 
 The high-level summary of the overall approach is as follows: The idea is to leverage on patterns in both the URL structure and the content layout in the respective pages to scrape data. Having done that, we would then need to apply some cleaning, possibly with some cross-checks, before producing visualisations in ggplot2. The libraries used are tidyverse, rvest, and lubridate.
@@ -285,8 +285,55 @@ clean_combined %>%
   
   theme_classic() +
   theme(legend.position = "bottom")
+  
 ```
+
+which produces this:
+
+![Total supply of 4R/5R BTO flats have increased from 2015-2017, but decreased since. 2020 might signal another reversal.](/images/45r_supply_small.png)
 
 It looks like the total supply of 4R/5R BTO flats increased from 2015-2017, but have fallen since. The bars for 2020 are set to translucent to indicate that the number is not directly comparable because there is still the Nov 2020 ballot which is not part of this data yet. However, it does look very possible that after the Nov 2020 supply is in, the total for 2020 will surpass that of 2019. What is less clear is whether this is a sustained change or not, as there have been speculations that the higher supply in 2020 is because it was widely expected to be an election year.
 
-![Total supply of 4R/5R BTO flats have increased from 2015-2017, but decreased since. 2020 might signal another reversal.]({{ site.baseurl }}/images/45r_supply.png)
+Okay, what about the demand side? The steps to do this are very similar to the earlier lines for the supply, so I won't repeat them here. Just replace all the `num_units` with `num_applicants`, change the title, and you're set to go.
+
+![Total applicants for 4R/5R BTO flats have generally been increasing over time.](/images/45r_applicants_small.png)
+
+I'm not sure what happened in 2016, but aside from that possibly anomaly, it's a clear upward trend. In particular, the total applicants in 2020 have already exceeded the totals for 2019, even though there's still the Nov 2020 ballot to go! 
+
+Some might argue that this increase is because of more speculative second-time buyers entering the ballot due to some BTO launches which are perceived to be exceptional launches, or because the longer estimated build times driven by COVID-19 or perception of better BTO launches are drawing more speculative applications from younger couples. For the first reason, the publicly available data doesn't have enough granularity to allow us to separate out the second-timer applicants. For the latter two reasons, well, if they are first-timers too, then whatever the reason, the end result is still greater excess demand in the pool. 
+
+Regardless, I'd take this with a pinch of salt just purely because of the inability to separate out the second-timer applicants.
+
+Finally, on to the main interest - the first-timer application rates.
+
+```
+clean_combined %>%
+  
+  #filter out 2014 because incomplete year
+  #filter only 4 or 5 rooms because that's the interest
+  filter(year > 2014, str_detect(flat_type,"4-room|5-room")) %>%
+  
+  ggplot(aes(x = date, y = first_timer_ratio, color = estate_type)) +
+  
+    geom_point(alpha = 0.6, size = 3) +
+    
+    geom_hline(yintercept = 1, linetype = "dashed") + 
+
+    scale_x_date(date_breaks = "1 year", labels = year) +
+  
+    labs(
+      title = "BTO first-timer application rate for 4R/5R (by project)",
+      x = "",
+      y = "",
+      color = ""
+    ) +
+  
+    theme_classic() +
+    theme(legend.position = "bottom")
+```
+
+which produces this:
+
+![Ratios have been particularly high in 2019 and 2020](/images/first_timer_ratio_small.png)
+
+For reference, I have included a dashed line to indicate where the first-timer application rate = 1, so points above the dashed line indicate the presence of excess demand (and vice versa).
