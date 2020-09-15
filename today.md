@@ -104,3 +104,4 @@ After a short demo from your instructor, evaluate your favourite sites using the
 - Which score the highest?
 
 ## Clean up time!
+- [Homework for Tomorrow]({{site.baseurl}}/tomorrow)
