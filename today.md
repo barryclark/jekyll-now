@@ -88,9 +88,11 @@ See:
 ### Activity: Dev Tools vs Mobile Devices
 You will work in groups of 3 or 4 for this activity.
 
-Compare and contrast the visual appearance of a mobile website between
+Compare and contrast the visual appearance of your favourite mobile websites between
 1. The virtual mobile simulator in FireFox Dev Tools, and
 2. A real mobile device.
+
+How accurate is the phone simulator in FireFox (or Chrome)? Submit screencaps to [this Issue](https://github.com/sait-wbdv/sait-wbdv.github.io/issues/8).
 
 Select a representative from each group to present a summary of your findings to the rest of the class.
 
