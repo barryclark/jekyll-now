@@ -39,6 +39,8 @@ layout: page
       /main.css (or styles.css)
     /js
       /app.js (or index.js)
+    /images
+      /logo.png
     /README.md
     ```
 
