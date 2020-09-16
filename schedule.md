@@ -14,6 +14,7 @@ title: "SAIT WBDV Program Schedule"
 - T: DSGN 270 Day 3 - [Mobile Fundamentals]({% link _posts/2020-09-15-responsive-web.md %})
 - W: DSGN 270 Day 4 - Copyright & Licensing
 - R: CPNT 260 Day 1 - Long-form text
+  - [DSGN 270 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/design/assignment-1)
 - F: CPNT 264 Day 1 - Career & Consulting Essentials
 
 Sunday, Sept 20: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-1)
