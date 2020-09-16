@@ -20,7 +20,7 @@ __Non-Fiction__
  - The Emperor of All Maladies: A Biography of Cancer by Siddhartha Mukherjee, MD
  
  __Fiction__
-  - The 7 1/2 Deaths of Evelyn Hardcastle by Stuart Turton
+  - His Dark Materials by Philip Pullman
   - Nemesis Games by James S. A. Corey 
   - Babylon's Ashes by James S. A. Corey 
   - Persepolis Rising by James S. A. Corey
