@@ -5,7 +5,6 @@ categories: dsgn270
 ---
 ## Housekeeping
 - Library
-- CPRG 210 Reference
 
 ## 1. Performance
 ### Learning Objectives
