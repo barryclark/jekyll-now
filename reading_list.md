@@ -24,4 +24,10 @@ __Non-Fiction__
   - Nemesis Games by James S. A. Corey 
   - Babylon's Ashes by James S. A. Corey 
   - Persepolis Rising by James S. A. Corey
+  
+  ## 2018
+ __Fiction__
+  - Leviathan Wakes by James S. A. Corey 
+  - Caliban's War by James S. A. Corey 
+  - Abaddon's Gate by James S. A. Corey
 
