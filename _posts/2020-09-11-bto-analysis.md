@@ -3,9 +3,9 @@ layout: post
 title: Webscraping BTO application rates in R
 ---
 
-In recent discussion with friends regarding BTO applications, it seems that no one has much luck in getting a good queue number. I leave open the question of what is considered a "good" queue number, but for disclosure I should say that in recent ballots I do not personally know anyone who obtained a queue number < number of units. The nature of a ballot means that we could all just be unlucky, but the perception that I take away from these chats is that it appears to be more difficult for young couples (relatively) now to successfully ballot for a BTO flat than before. 
+I haven't had much luck in getting a good BTO queue number. I leave open the question of what is considered a "good" queue number, but for me, I think a reasonable bar for "good" is when the queue number < number of units. The nature of a ballot means that maybe I'm just unlucky, but the perception that I take away from chats with my friends - some of whom also appear to be as unlucky as I am - is that it seems more difficult for young couples now to successfully ballot for a BTO flat than before. 
 
-Is there data to back this up? Well, kinda. 
+Is there data to back this up? Well, kind of. 
 
 For those who are like me, you would be aware of the [application status page on HDB's website](https://www.hdb.gov.sg/cs/infoweb/residential/buying-a-flat/new/buying-process/manage-my-application/application-status). It provides, for each BTO project-flat type, the number of units, applicants, as well as the respective application rates. In particular, I think the application rates give us a measure of excess demand. So, if we can compare the application rates over time, then we can get a sense of how excess demand has evolved over time. Helpfully, although HDB only puts up the links for the three most recent BTO ballot, a quick check of the URL structure allow us to look up past ballot information (up to a point). 
 
@@ -17,7 +17,7 @@ A few comments on scope at this point:
 
 The high-level summary of the overall approach is as follows: The idea is to leverage on patterns in both the URL structure and the content layout in the respective pages to scrape data. Having done that, we would then need to apply some cleaning, possibly with some cross-checks, before producing visualisations in ggplot2. The libraries used are tidyverse, rvest, and lubridate.
 
-One final note - this is my first time webscraping so I may not have implemented it as well as possible, but it also shows that perhaps this isn't as hard as it seems.
+One final note - this is my first time webscraping so I may not have implemented it as well as possible, but I think it also shows that this isn't as hard as it seems.
 
 ### Webscraping to build the dataset
 
@@ -290,13 +290,13 @@ clean_combined %>%
 
 which produces this:
 
-![Total supply of 4R/5R BTO flats have increased from 2015-2017, but decreased since. 2020 might signal another reversal.](/images/45r_supply_small.png)
+![Total supply of 4R/5R BTO flats have increased from 2015-2017, but decreased since. 2020 might signal another reversal.](/2020-09-webscraping-bto/45r_supply_small.png)
 
 It looks like the total supply of 4R/5R BTO flats increased from 2015-2017, but have fallen since. The bars for 2020 are set to translucent to indicate that the number is not directly comparable because there is still the Nov 2020 ballot which is not part of this data yet. However, it does look very possible that after the Nov 2020 supply is in, the total for 2020 will surpass that of 2019. What is less clear is whether this is a sustained change or not, as there have been speculations that the higher supply in 2020 is because it was widely expected to be an election year.
 
 Okay, what about the demand side? The steps to do this are very similar to the earlier lines for the supply, so I won't repeat them here. Just replace all the `num_units` with `num_applicants`, change the title, and you're set to go.
 
-![Total applicants for 4R/5R BTO flats have generally been increasing over time.](/images/45r_applicants_small.png)
+![Total applicants for 4R/5R BTO flats have generally been increasing over time.](/2020-09-webscraping-bto/45r_applicants_small.png)
 
 I'm not sure what happened in 2016, but aside from that possibly anomaly, it's a clear upward trend. In particular, the total applicants in 2020 have already exceeded the totals for 2019, even though there's still the Nov 2020 ballot to go! 
 
@@ -334,6 +334,20 @@ clean_combined %>%
 
 which produces this:
 
-![Ratios have been particularly high in 2019 and 2020](/images/first_timer_ratio_small.png)
+![Ratios have been particularly high in 2019 and 2020](/2020-09-webscraping-bto/first_timer_ratio_small.png)
 
 For reference, I have included a dashed line to indicate where the first-timer application rate = 1, so points above the dashed line indicate the presence of excess demand (and vice versa).
+
+It actually looks a bit messy, but here's what I see:
+* Most launches since 2015 have first-timer application rates which exceeds one, so there's almost always greater demand than supply. Prior to 2019, some launches actually had first-timer ratios below one, and it looks like most of them happened between late 2017 to end-2018. 
+* Quite a number of launches between 2015-2016 had first-timer application rates above five, but they were mostly mature estate launches so that might explain the popularity. Between 2017 and 2019, very few launches had a first-timer application rate above five. However, from 2018 onwards, we start seeing the higher applications rates return.
+* To my eyes, it looks like the overall cluster of first-timer application rates have gone up since 2018. Quite a number of mature estates start seeing first-timer applicant rates beyond ten, and even the ratios for the non-mature estates look like they are edging up. Ten applicants competing for a unit! No wonder it's so hard to get a good queue number.
+* I think the trend in the ratios (high in 2015-2016, fell in 2017-2018, then increased again since), fits broadly with what we saw earlier about the number of units offered and applicants. We saw that the supply of 4R+ BTO flats increased from 2015-2017, then decrease since, and possibly looks to be increasing again this year (relative to 2019). So the dip in ratios in 2017-2018 may be because more applicants were "cleared" off the market in 2016-2017. As for demand, the number of applicants have really jumped in 2019 and 2020, so maybe that's driving the ratios in 2019 and 2020. This is all a bit speculative of course, given that we don't have more in-depth or granular data to study this.
+
+In any case - let's take a look at the same plot but separating the mature estates from the non-mature estates using `facet_grid()`. This time I also set the size of the point to reflect the number of units offered. (I didn't do it previously because it would clutter the plot even further.)
+
+![Ratios have been particularly high in 2019 and 2020](/2020-09-webscraping-bto/first_timer_ratio_facet_small.png)
+
+I don't think this reveals anything particularly new. But I think the edging up in the first-timer application rates is more obvious here for the non-mature estates, and the U-shape trend for the mature estate application rates look quite strong to me here.
+
+Anyway, that's it for now. Leaving aside whether you agree (or not) with my interpretation of the plots, I hope this has shown that webscraping is more accessible than you might have realised. The full code used, including the amended scraping function to account for differences in table structure over time, can be found here.
