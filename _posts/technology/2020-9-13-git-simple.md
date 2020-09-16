@@ -3,32 +3,56 @@ layout: post
 title: Git Simple Commands !
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Here we will discuss few simple commands in Git as per git flow.
 
 [comment]:![_config.yml]({{ site.baseurl }}/images/config.png)
 
-Here are simple commands to work with git. I will improve upon it as i keep learning. 
-
 #### Start with Basics
-`git chec out -b branch` <br>
-switches you to a branch 
+there are two ways you will get started on git repos. 
+1. you will create a repo in git UI and then clone it - I prefer this
+2. Run git init in a folder and then create a repo 
 
-`git checkout -b mybranch1` <br>
-`vi a.txt`  <br>
+`git`
+provides lists of commands available
+
+`git <command> -h`
+provides list of options for each command
+
+`git init`
+initialises a folder to start creating a repo. 
+
+#### working with branches 
+After cloning repo from git, you would like to create a branch to make your 
+commits and then later on merge this branch into master branch. 
+`git checout -b branch` <br>
+creates a local branch and also switches you to the branch. 
+make some changes in files. 
+
 `git status` <br>
-`git add a.txt` <br>
-`git commit -m "change 1: mybranch1: added a line to a.txt"` <br>
-`git push origin mybranch1` <br>
+Gives you list of modified files 
 
-Now changes needs to be merged to master.
+`git diff <filename>` <br>
+you can see what changes you have made to a file 
+
+`git add <filename or . or -A>` <br>
+Adds files to the list of files to be committed. 
+-A adds all files recursively
+
+`git commit -m "commit message"` <br>
+[conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+
+`git push origin mybranch1` <br>
+this command pushes your changes to remote branch 
 
 ### Merging in GitHub
-Before Creating pull request, you will merge your branch to master. 
-After that pull request will be created.
+Mostly you will be merging the branch to master via pull request. In a pull
+request you will expect other reviewers to review your changes prior to 
+merging the changes. 
+ 
 There are few options:  
-- Create a merge commit
-- Squash and merge
-- Rebase and merge
+1. Create a merge commit
+2. Squash and merge
+3. Rebase and merge
 
 ##### Create a merge Commit 
 First, you need to switch to master using the git checkout command, as follows:
