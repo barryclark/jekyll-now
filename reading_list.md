@@ -8,6 +8,7 @@ __Non-Fiction__
  - How to Write a Lot by Paul J. Silva, PhD
  - A PhD IS NOT ENOUGH! by Peter J. Feibelman, PhD
  - On Writing Well by William Zinsser
+ - Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking Mastering the Elements of Good Cooking by Samin Nosrat
  
  __Fiction__
   - The 7 1/2 Deaths of Evelyn Hardcastle by Stuart Turton
