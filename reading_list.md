@@ -5,6 +5,7 @@ permalink: /reading_list/
 ---
 ## 2020
 __Non-Fiction__
+ - How Not to Be Wrong: The Power of Mathematical Thinking by Jordan Ellenberg, PhD
  - How to Write a Lot by Paul J. Silva, PhD
  - A PhD IS NOT ENOUGH! by Peter J. Feibelman, PhD
  - On Writing Well by William Zinsser
