@@ -52,7 +52,7 @@ Select a representative from your group to summarize your findings for the rest 
 </dl>
 
 See:
-- [Copyright Cheatsheet]({{site.baseurl}}/cheatsheets/copyright/open-assets)
+- [Copyright Cheatsheet]({{site.baseurl}}/cheatsheets/copyright)
 - [Privacy Cheatsheet]({{site.baseurl}}/cheatsheets/privacy)
 
 ### Activity: Finding open asset alternatives
@@ -77,3 +77,7 @@ Are there any that should be listed in the Cheatsheet?
 
 ## Clean up time!
 - [Tomorrow's homework and agenda]({{site.baseurl}}/tomorrow)
+
+## Questions
+- Is performance more based on your own system or the actual website? 
+  - A: Both!
