@@ -26,7 +26,7 @@ __Non-Fiction__
   - Babylon's Ashes by James S. A. Corey 
   - Persepolis Rising by James S. A. Corey
   
-  ## 2018
+## 2018
  __Fiction__
   - Leviathan Wakes by James S. A. Corey 
   - Caliban's War by James S. A. Corey 
