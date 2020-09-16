@@ -4,12 +4,18 @@ title: "Canadian Copyright Basics"
 ---
 _Tony is not a lawyer. These learning sessions do not constitute legal advice and they do not create an attorney-client relationship. Besides, Heather and Clarissa wrote most of this._
 
-Source: [A guide to copyright](http://www.cipo.ic.gc.ca/eic/site/cipoInternet-Internetopic.nsf/eng/h_wr02281.html) (Gov. of Canada)
+## Relevant Cheatsheets
+- [Open Source Assets Cheatsheet]({{site.baseurl}}/cheatsheets/copyright/open-assets)
+- [Open Software License Cheatsheet]({{site.baseurl}}/cheatsheets/copyright/open-licenses)
 
 ## What is Copyright?
 - The sole right to produce or reproduce a work or a substantial part of it in any form.
 - The right to perform the work or any substantial part of it.
 - If the work is unpublished, copyright includes the right to publish the work or any substantial part of it.
+
+See:
+- [A guide to copyright](http://www.cipo.ic.gc.ca/eic/site/cipoInternet-Internetopic.nsf/eng/h_wr02281.html) (Gov. of Canada)
+- [Canadian Intellectual Property Office](http://www.cipo.ic.gc.ca/eic/site/cipoInternet-Internetopic.nsf/eng/home)
 
 ## Copyright Protects:
 - literary works 
