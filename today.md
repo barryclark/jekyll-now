@@ -66,7 +66,7 @@ See:
 ### Activity: Finding open asset alternatives
 You will be working in groups of 3 for this activity.
 
-Using [Google Suggest](https://en.ryte.com/wiki/Google_Suggest), find relevant alternatives to the tools and services listed in the [Open-source Assets Cheatsheet]({{site.baseurl}}/cheatsheets/open-assets).
+Using [Google Suggest](https://en.ryte.com/wiki/Google_Suggest), find relevant alternatives to the tools and services listed in the [Open-source Assets Cheatsheet]({{site.baseurl}}/cheatsheets/copyright/open-assets).
 
 Are there any that should be listed in the Cheatsheet?
 
@@ -89,3 +89,5 @@ Are there any that should be listed in the Cheatsheet?
 ## Questions
 - Is performance more based on your own system or the actual website? 
   - A: Both!
+- What's the best liability insurance for software developers?
+  - A: Errors and Omissions
