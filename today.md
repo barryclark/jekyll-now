@@ -1,107 +1,80 @@
 ---
 layout: post
-title: Today - Responsiveness and Performance
-categories: 
+title: Today - Performance, Copyright and Licensing
+categories: dsgn270
 ---
-
 ## Housekeeping
-- CPNT 201: [Assignment 1](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-1)
-- Updated Schedule
+- Library
+- CPRG 210 Reference
 
-## Lesson Prep
-1. Read: [The web and web standards](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards) by the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn) (link to their Learning Area)
-2. Watch: [A brief history of layout](https://youtu.be/E005mjqpZ9Y) by [Layout Land](https://www.youtube.com/c/LayoutLand/)
-3. Watch: The first 7 minutes of [Beyond Media Queries](https://vimeo.com/235428198) by Michael Riethmuller (you can stop at Fluid Typography)
-4. Read: [Designing Card-Based User Interfaces](https://www.smashingmagazine.com/2016/10/designing-card-based-user-interfaces/)
-5. Read: [The Thumb Zone: Designing For Mobile Users](https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/)
-6. Skim: [Mobile vs. Desktop Usage in 2019](https://www.perficient.com/insights/research-hub/mobile-vs-desktop-usage-study)
-7. Watch/Skim: [Mobile in Context: Design Principles of Flow and Navigation](https://youtu.be/OZRczPw1BBw)
-
-## 1. The Evolution of Web Layout
+## 1. Performance
 ### Learning Objectives
-- Describe responsive design and what problem it tries to solve.
-- List the physical and software characteristics that are unique to mobile devices.
-- Discuss the relative market share of mobile web traffic vs desktop web traffic.
-- Discuss the relative screen time spent on mobile apps vs mobile web sites.
+- Define First Contentful Paint (FCP).
+- Define First Meaningful Paint (FMP).
+- Locate the Audit tab in Chrome Developer Tools.
+- Locate the Performance tab in browser Developer Tools
+- Profile a website using the Audit and Performance tabs in Dev Tools.
 
 ### Terminology
 <dl>
-  <dt>Desktop vs Mobile Web</dt>
-  <dd>A comparison of web traffic between desktop and mobile platforms.</dd>
-  <dt>Native App vs Web App Screen Time</dt>
-  <dd>A comparison of average time spent "on-screen" between web and native phone applications.</dd>
+  <dt>First Contentful Paint (FCP)</dt>
+  <dd>The first content that is rendered on the screen when users browse the website. It measures the time from navigation to the time when the browser renders the first piece of content defined in the Document Object Model (DOM). This can be text, an image or canvas render.</dd>
+  <dt>First Meaningful Paint (FMP)</dt>
+  <dd>The primary content of the page is visible. After the first meaningful paint render, it gives meaningful information to the users.</dd>
 </dl>
 
-### Activity: How is mobile unique?
-You will work in groups of 3 or 4 for this activity. 
+> "Whenever you are testing your website on speed testing tools such as Google’s PageSpeed Insights, GTMetrix.com  you see the result with First Contentful Paint and First Meaningful Paint along with other speed metrics. These are important user-centric metrics that can tell you a lot about how long your visitors are waiting for content."
 
-Beyond the obvious difference in screen size, discuss how mobile is different than desktop:
-- What hardware features do mobile phones have compared to traditional desktop systems?
-- Do users have the same goals when browsing on a phone vs browsing on a laptop or desktop? If not, what's different?
-- What problems are mobile users often trying to solve?
+See: [First Contentful Paint (FCP) and First Meaningful Paint (FMP) Explained](https://www.acmethemes.com/blog/first-contentful-paint-and-first-meaningful-paint/)
 
-Please add a comment your phone make and model in [this Issue](https://github.com/sait-wbdv/sait-wbdv.github.io/issues/7) 
-
-#### Spoilers
-- what are the device differences?
-  - landscape vs portrait
-  - screen size -> hamburger menu
-  - no cursor -> no hover
-  - gestures (with focus on the thumb)
-  - performance
-  - phone calls
-  - location -> maps
-  - camera
-  - accelerometer
-
-## 2. Common Mobile Design Patterns
-### Learning Objectives
-- Identify common design patterns for responsive web development.
-- Explore how the standards of HTML, CSS and Javascript have evolved to better take advantage of mobile web.
-- Create a block of minimally responsive body text using basic box model properties.
-- Locate the box model diagram in FireFox Developer Tools
-
-### Terminology
-<dl>
-  <dt>Web Responsiveness</dt>
-  <dd>A Web development concept focusing on making sites look and behave optimally on all personal computing devices, from desktop to mobile.</dd>
-  <dt>Viewport</dt>
-  <dd>The viewable area of a website within the browser window.</dd>
-  <dt>Media Queries</dt>
-  <dd>A feature of CSS that enable webpage content to adapt to different screen sizes, orientations, aspect ratios and mediums (e.g. print vs screen).</dd>
-  <dt>Breakpoint</dt>
-  <dd>Points in responsive design where website presentation responds to changing viewport characteristics (width, orientation, etc).</dd>
-  <dt>Hamburger Menu</dt>
-  <dd>A button in websites and apps that typically opens up into a side menu or navigation drawer.</dd>
-  <dt>Card Pattern</dt>
-  <dd>A convenient means of displaying content composed of different types of objects. They are also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length</dd>
-</dl>
-
-See: 
-- [The building blocks of responsive design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/responsive_design_building_blocks)
-- [Responsive Text Cheatsheet]({{site.baseurl}}/cheatsheets/design/responsiveness)
-- Codepen: [Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/RwaJmbx)
-- Codepen: [Starter - Responsive Text: Max line length with scroll track](https://codepen.io/browsertherapy/pen/dyMKEzd)
-- Codepen: [Puppy Card](https://codepen.io/browsertherapy/pen/mdPWXZb)
-- Codepen: [Basic 1x3 Card Pattern](https://codepen.io/browsertherapy/pen/vYGxRNB)
-
-### Activity: Dev Tools vs Mobile Devices
+### Activity: Performance Audits
 You will work in groups of 3 or 4 for this activity.
 
-Compare and contrast the visual appearance of your favourite mobile websites between
-1. The virtual mobile simulator in FireFox Dev Tools, and
-2. A real mobile device.
-
-How accurate is the phone simulator in FireFox (or Chrome)? Submit screencaps to [this Issue](https://github.com/sait-wbdv/sait-wbdv.github.io/issues/8).
-
-Select a representative from each group to present a summary of your findings to the rest of the class.
-
-## 3. Performance Audits
-You will work in groups of 3 or 4 for this activity.
-
-After a short demo from your instructor, evaluate your favourite sites using the Performance tab in Chrome Developer Tools.
+After a short demo from your instructor, evaluate your favourite sites using the Performance and Lighthouse (an audit tool) tabs in Chrome Dev Tools.
 - Which sites score the lowest?
 - Which score the highest?
+- In each case, what was the FCP and FMP?
+
+Select a representative from your group to summarize your findings for the rest of the class.
+
+## 2. Copyright & Licensing
+### Learning Objectives
+- Describe the concepts of copyright, public domain and Creative Commons.
+- List some of the ways you can legally obtain content to use for free on a website.
+- Explain the potential legal issues around privacy laws and websites.
+- Find tool alternatives with divergent searches.
+
+### Terminology
+<dl>
+  <dt>Copyright</dt>
+  <dd>The exclusive legal right to produce, reproduce, publish or perform an original literary, artistic, dramatic or musical work. The creator is usually the copyright owner. However, an employer—for example, a film studio—may have copyright in works created by employees unless there is an agreement in place stating otherwise.</dd>
+  <dt>License</dt>
+  <dd>Legal terms that allow someone else to use a work for certain purposes and under certain conditions. The copyright owner still retains ownership.</dd>
+</dl>
+
+See:
+- [Copyright Cheatsheet]({{site.baseurl}}/cheatsheets/copyright/open-assets)
+- [Privacy Cheatsheet]({{site.baseurl}}/cheatsheets/privacy)
+
+### Activity: Finding open asset alternatives
+You will be working in groups of 3 for this activity.
+
+Using [Google Suggest](https://en.ryte.com/wiki/Google_Suggest), find relevant alternatives to the tools and services listed in the [Open-source Assets Cheatsheet]({{site.baseurl}}/cheatsheets/open-assets).
+
+Are there any that should be listed in the Cheatsheet?
+
+## 3. Lab Time
+1. Configure and Customize VS Code
+    - configuration
+      - Set tab length to 2 spaces
+    - Extensions
+      - Live Server (currently at v5.6.1)
+      - Bracket Pair Colourizer (currently at v1.0.61)
+      - Optional: HTML/CSS validator of your choice
+        - Tony uses HTMLHint ( currently at v0.8.0). It's ok. 
+      - Search: [best vs code extensions](https://www.google.com/search?q=best+VS+Code+extensions) 
+    - See: [VS Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
+2. ???
 
 ## Clean up time!
-- [Homework for Tomorrow]({{site.baseurl}}/tomorrow)
+- [Tomorrow's homework and agenda]({{site.baseurl}}/tomorrow)
