@@ -30,4 +30,5 @@ __Non-Fiction__
   - Leviathan Wakes by James S. A. Corey 
   - Caliban's War by James S. A. Corey 
   - Abaddon's Gate by James S. A. Corey
+  - Cibola Burn by James S. A. Corey
 
