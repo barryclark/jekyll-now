@@ -8,6 +8,7 @@ __Non-Fiction__
  - How to Write a Lot by Paul J. Silva, PhD
  - A PhD IS NOT ENOUGH! by Peter J. Feibelman, PhD
  - On Writing Well by William Zinsser
+ 
  __Fiction__
   - The 7 1/2 Deaths of Evelyn Hardcastle by Stuart Turton
   - Tiamat's Wrath by James S. A. Corey
@@ -16,6 +17,7 @@ __Non-Fiction__
 ## 2019
 __Non-Fiction__
  - The Emperor of All Maladies: A Biography of Cancer by Siddhartha Mukherjee, MD
+ 
  __Fiction__
   - The 7 1/2 Deaths of Evelyn Hardcastle by Stuart Turton
   - Nemesis Games by James S. A. Corey 
