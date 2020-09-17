@@ -59,13 +59,13 @@ Take either/both articles you have chosen and code them in HTML (using Codepen).
 - `a`: anchor
 - `strong`, `em`: bold and italicize
 - `ul` and/or `ol`: unordered and ordered lists
+- `img`: image as content
 
 ### Stretch Activities
 Once you have the basics figure out, try some of these more advanced concepts:
 - [Customize your list styling](https://css-tricks.com/almanac/properties/l/list-style/)
 - [Style a blockquote with pseudo-elements](https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/)
 - [More cool things you can do with pseudo-elements](https://css-tricks.com/pseudo-element-roundup/)
-
 
 ## 3. Lab Time: Optimize and Validate
 ### Learning Objectives
@@ -83,3 +83,6 @@ Once you have the basics figure out, try some of these more advanced concepts:
     - Copy your Codepen HTML inside the `body` element of your HTML document. 
 3. Validate your HTML file using the [W3C Markup Validation Service](https://validator.w3.org/)
 4. Validate your external CSS file using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+## Clean up time!
+- [Homework for Monday]({{site.baseurl}}/tomorrow)
