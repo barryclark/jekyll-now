@@ -1,0 +1,328 @@
+proj_name,flat_type,num_units,num_applicants,first_timer_ratio,second_timer_ratio,overall_ratio,date,estate_type
+Choa Chu Kang (Keat Hong Verge *),3-room,118,263,1.5,4.1,2.2,Aug20,Non-mature
+Choa Chu Kang (Keat Hong Verge *),4-room,290,683,2.1,8.4,2.4,Aug20,Non-mature
+Tengah (Parc Residences @ Tengah),3-room,99,363,2.5,6.5,3.7,Aug20,Non-mature
+Tengah (Parc Residences @ Tengah),4-room,281,1436,4.3,9.6,5.1,Aug20,Non-mature
+Tengah (Parc Residences @ Tengah),5-room,184,1284,5.3,16.5,7.0,Aug20,Non-mature
+Woodlands (UrbanVille @ Woodlands),3-room,144,896,3.6,12.5,6.2,Aug20,Non-mature
+Woodlands (Champions Bliss / UrbanVille @ Woodlands),4-room,706,4125,4.9,11.2,5.8,Aug20,Non-mature
+Woodlands (UrbanVille @ Woodlands),5-room,438,4297,6.8,26.8,9.8,Aug20,Non-mature
+Ang Mo Kio (Kebun Baru Edge),4-room,240,2568,8.6,50.5,10.7,Aug20,Mature
+Ang Mo Kio (Kebun Baru Edge),5-room,140,3006,12.6,189.3,21.5,Aug20,Mature
+Bishan (Bishan Towers),3-room,80,319,1.7,48.3,4.0,Aug20,Mature
+Bishan (Bishan Towers),4-room,272,1689,4.3,43.5,6.2,Aug20,Mature
+Geylang (Dakota One),3-room,87,787,5.2,88.0,9.0,Aug20,Mature
+Geylang (Dakota One),4-room,334,6394,14.8,106.0,19.1,Aug20,Mature
+Pasir Ris (Costa Grove),3-room,160,436,0.9,37.1,2.7,Aug20,Mature
+Pasir Ris (Costa Grove),4-room,373,1771,3.6,26.9,4.7,Aug20,Mature
+Pasir Ris (Costa Grove),5-room,325,2369,4.0,71.5,7.3,Aug20,Mature
+Tampines (Tampines GreenCrest * / Tampines GreenOpal),3-room,182,486,1.3,28.1,2.7,Aug20,Mature
+Tampines (Tampines GreenGlade * / Tampines GreenCrest * / Tampines GreenOpal),4-room,871,1864,1.7,10.4,2.1,Aug20,Mature
+Tampines (Tampines GreenGlade * / Tampines GreenCrest * / Tampines GreenOpal),5-room,717,1402,1.3,14.1,2.0,Aug20,Mature
+total_Aug20,TOTAL,6041,36438,4.3,23.1,6.0,Aug20,Mature
+Sembawang (Canberra Vista),3-room,124,847,3.7,14.1,6.8,Feb20,Non-mature
+Sembawang (Canberra Vista),4-room,385,3048,6.8,14.4,7.9,Feb20,Non-mature
+Sembawang (Canberra Vista),5-room/ 3GEN,266,3738,10.6,33.9,14.1,Feb20,Non-mature
+Toa Payoh (Toa Payoh Ridge),3-room,102,935,4.3,103.8,9.2,Feb20,Mature
+Toa Payoh (Kim Keat Ripples / Toa Payoh Ridge),4-room,1211,11684,7.6,48.7,9.6,Feb20,Mature
+total_Feb20,TOTAL,2088,20252,7.5,30.8,9.7,Feb20,Mature
+Tengah (Garden Vines @ Tengah / Plantation Village*  / Plantation Grange*),3-room,293,314,0.7,1.9,1.1,Nov19,Non-mature
+Tengah (Garden Vines @ Tengah / Plantation Village*  / Plantation Grange*),4-room,1091,1937,1.5,5.5,1.8,Nov19,Non-mature
+Tengah (Garden Vines @ Tengah / Plantation Village*  / Plantation Grange*),5-room/ 3Gen,886,1801,1.6,8.0,2.0,Nov19,Non-mature
+Ang Mo Kio (Yio Chu Kang Beacon),3-room,87,334,1.8,47.0,3.8,Nov19,Mature
+Ang Mo Kio (Yio Chu Kang Beacon),4-room,235,3806,13.2,77.7,16.2,Nov19,Mature
+Tampines (Tampines GreenSpring),3-room,90,673,3.0,104.5,7.5,Nov19,Mature
+Tampines (Tampines GreenSpring),4-room,218,3257,11.3,90.2,14.9,Nov19,Mature
+Tampines (Tampines GreenSpring),5-room,193,3890,11.7,193.2,20.2,Nov19,Mature
+total_Nov19,TOTAL,3093,16012,3.8,19.9,5.2,Nov19,Mature
+Punggol (Punggol Point Crown / Punggol Point Cove),3-room,189,477,1.4,5.3,2.5,Sep19,Non-mature
+Punggol (Punggol Point Crown / Punggol Point Cove),4-room,872,1915,1.8,4.5,2.2,Sep19,Non-mature
+Punggol (Punggol Point Crown / Punggol Point Cove),5-room,403,1734,2.7,13.6,4.3,Sep19,Non-mature
+Tampines (Tampines GreenGlen),4-room,330,766,1.8,12.2,2.3,Sep19,Mature
+Tampines (Tampines GreenGlen),5-room,319,669,1.6,12.3,2.1,Sep19,Mature
+total_Sep19,TOTAL,2113,5561,1.9,7.5,2.6,Sep19,Mature
+Tengah (Garden Vale @ Tengah / Plantation Acres),3-room,195,267,0.8,2.6,1.4,May19,Non-mature
+Tengah (Garden Vale @ Tengah / Plantation Acres),4-room,507,1700,3.2,4.2,3.4,May19,Non-mature
+Tengah (Garden Vale @ Tengah / Plantation Acres),5-room,471,1501,2.8,5.6,3.2,May19,Non-mature
+Woodlands (Champions Green),3-room,88,239,1.6,5.4,2.7,May19,Non-mature
+Woodlands (Champions Green),4-room,157,1033,6.3,8.2,6.6,May19,Non-mature
+Woodlands (Champions Green),5-room,135,910,6.2,10.1,6.7,May19,Non-mature
+Kallang Whampoa (Kempas Residences),3-room,115,624,3.3,51.4,5.4,May19,Mature
+Kallang Whampoa (Kempas Residences),4-room,318,4959,12.5,78.3,15.6,May19,Mature
+total_May19,TOTAL,1986,11233,5.0,9.6,5.7,May19,Mature
+Jurong West (Boon Lay Glade/Jurong West Jewel),3-room,166,389,1.4,4.6,2.3,Feb19,Non-mature
+Jurong West (Boon Lay Glade/Jurong West Jewel),4-room,431,1987,4.2,7.0,4.6,Feb19,Non-mature
+Jurong West (Boon Lay Glade/Jurong West Jewel),5-room/ 3Gen,277,1894,5.3,15.6,6.8,Feb19,Non-mature
+Sengkang (Fernvale Vines),3-room,92,304,2.0,6.5,3.3,Feb19,Non-mature
+Sengkang (Fernvale Vines),4-room,216,1013,4.2,7.6,4.7,Feb19,Non-mature
+Sengkang (Fernvale Vines),5-room/ 3Gen,188,791,3.3,9.3,4.2,Feb19,Non-mature
+Kallang Whampoa (Kallang Breeze/Towner Crest),3-room,192,715,2.5,28.0,3.7,Feb19,Mature
+Kallang Whampoa (Kallang Breeze/Towner Crest),4-room,663,6976,8.8,43.0,10.5,Feb19,Mature
+total_Feb19,TOTAL,2225,14069,5.4,12.9,6.3,Feb19,Mature
+Sembawang (EastGlen @ Canberra)*,3-room,83,220,1.6,5.1,2.7,Nov18,Non-mature
+Sembawang (EastGlen @ Canberra)*,4-room,131,795,5.4,20.3,6.1,Nov18,Non-mature
+Sembawang (EastGlen @ Canberra)*,5-room,96,668,5.8,33.3,7.0,Nov18,Non-mature
+Sengkang (Fernvale Acres)*,4-room,198,686,2.7,19.3,3.5,Nov18,Non-mature
+Sengkang (Fernvale Acres)*,5-room,132,584,3.3,29.0,4.4,Nov18,Non-mature
+Tengah (Plantation Grove),3-room,119,269,1.5,4.2,2.3,Nov18,Non-mature
+Tengah (Plantation Grove),4-room,536,2118,3.7,5.1,4.0,Nov18,Non-mature
+Tengah (Plantation Grove),5-room/ 3Gen,443,1731,3.4,6.6,3.9,Nov18,Non-mature
+Yishun (Melody Spring @ Yishun)*,3-room,96,119,0.9,2.1,1.2,Nov18,Non-mature
+Yishun (Melody Spring @ Yishun)*,4-room,252,97,0.3,2.2,0.4,Nov18,Non-mature
+Yishun (Melody Spring @ Yishun)*,5-room,108,89,0.6,5.0,0.8,Nov18,Non-mature
+Tampines (Tampines GreenGem),3-room,104,415,1.6,52.0,4.0,Nov18,Mature
+Tampines (Tampines GreenGem),4-room,492,2308,3.8,22.5,4.7,Nov18,Mature
+Tampines (Tampines GreenGem),5-room,330,2062,4.4,42.0,6.2,Nov18,Mature
+total_Nov18,TOTAL,3120,12161,3.2,10.3,3.9,Nov18,Mature
+Punggol (Punggol Point Woods/ Punggol Point Cove),3-room,190,575,1.7,6.2,3.0,Aug18,Non-mature
+Punggol (Punggol Point Woods/ Punggol Point Cove),4-room,645,2682,3.3,8.8,4.2,Aug18,Non-mature
+Punggol (Punggol Point Woods/ Punggol Point Cove),5-room/ 3Gen,386,2861,4.5,24.2,7.4,Aug18,Non-mature
+Yishun (Yishun Glen),3-room,168,259,0.8,3.2,1.5,Aug18,Non-mature
+Yishun (Melody Spring @ Yishun/ Yishun Glen),4-room,742,483,0.6,1.0,0.7,Aug18,Non-mature
+Yishun (Melody Spring @ Yishun/ Yishun Glen),5-room,344,346,0.8,2.2,1.0,Aug18,Non-mature
+total_Aug18,TOTAL,2475,7206,2.1,7.0,2.9,Aug18,Non-mature
+Sengkang (Fernvale Dew),3-room,218,300,0.9,2.5,1.4,May18,Non-mature
+Sengkang (Fernvale Dew),4-room,354,842,2.3,3.0,2.4,May18,Non-mature
+Sengkang (Fernvale Dew),5-room,90,520,4.8,11.7,5.8,May18,Non-mature
+Yishun (Casa Spring @ Yishun),4-room,312,435,1.3,1.8,1.4,May18,Non-mature
+Yishun (Casa Spring @ Yishun),5-room/ 3Gen,228,236,0.8,2.6,1.0,May18,Non-mature
+Tampines (Tampines GreenVines),3-room,98,191,0.9,26.3,1.9,May18,Mature
+Tampines (Tampines GreenVines),4-room,716,875,1.0,5.7,1.2,May18,Mature
+Tampines (Tampines GreenVines),5-room,457,615,0.9,10.3,1.3,May18,Mature
+Toa Payoh (Kim Keat Beacon),3-room,101,235,1.1,25.6,2.3,May18,Mature
+Toa Payoh (Kim Keat Beacon),4-room,441,2334,4.2,25.7,5.3,May18,Mature
+total_May18,TOTAL,3015,6583,1.7,6.3,2.2,May18,Mature
+Choa Chu Kang (Teck Whye View),3-room,84,290,2.5,5.8,3.5,Feb18,Non-mature
+Choa Chu Kang (Teck Whye View),4-room,238,2319,9.8,9.6,9.7,Feb18,Non-mature
+Woodlands (Woodlands Glade),3-room,90,216,1.5,4.5,2.4,Feb18,Non-mature
+Woodlands (Woodlands Glade),4-room,164,361,2.2,2.1,2.2,Feb18,Non-mature
+Woodlands (Woodlands Glade),5-room,90,241,2.4,4.3,2.7,Feb18,Non-mature
+Geylang (Ubi Grove),3-room,80,181,1.3,20.8,2.3,Feb18,Mature
+Geylang (Ubi Grove),4-room,993,2321,2.0,9.6,2.3,Feb18,Mature
+Tampines (Tampines GreenDew),3-room,84,175,0.9,26.5,2.1,Feb18,Mature
+Tampines (Tampines GreenDew/ Tampines GreenFoliage),4-room,644,711,0.9,5.5,1.1,Feb18,Mature
+Tampines (Tampines GreenDew/ Tampines GreenFoliage),5-room,540,455,0.5,6.4,0.8,Feb18,Mature
+total_Feb18,TOTAL,3007,7270,2.0,7.2,2.4,Feb18,Mature
+Punggol (Northshore Edge),4-room,192,511,2.3,4.9,2.7,Nov17,Non-mature
+Punggol (Northshore Edge),5-room,196,396,1.4,5.6,2.0,Nov17,Non-mature
+Sengkang (Anchorvale Village/ Fernvale Glades),3-room,207,413,1.2,4.0,2.0,Nov17,Non-mature
+Sengkang (Fernvale Glades),4-room,390,388,0.8,1.9,1.0,Nov17,Non-mature
+Sengkang (Fernvale Glades),5-room/ 3Gen,273,301,0.9,2.5,1.1,Nov17,Non-mature
+Geylang (Eunos Court),3-room,97,216,1.5,19.3,2.2,Nov17,Mature
+Geylang (Eunos Court),4-room,538,2059,3.2,16.7,3.8,Nov17,Mature
+Tampines (Tampines GreenCourt),3-room,186,215,0.5,14.6,1.2,Nov17,Mature
+Tampines (Tampines GreenCourt),4-room,1228,1182,0.8,3.8,1.0,Nov17,Mature
+Tampines (Tampines GreenCourt),5-room,586,779,1.0,8.1,1.3,Nov17,Mature
+total_Nov17,TOTAL,3893,6460,1.3,5.4,1.7,Nov17,Mature
+Bukit Batok (Sky Vista @ Bukit Batok/ West Scape @ Bukit Batok),3-room,252,411,1.2,2.7,1.6,Aug17,Non-mature
+Bukit Batok (West Scape @ Bukit Batok),4-room,340,814,2.3,2.7,2.4,Aug17,Non-mature
+Bukit Batok (West Scape @ Bukit Batok),5-room,178,451,2.2,4.8,2.5,Aug17,Non-mature
+Sengkang (Rivervale Shores),3-room,174,318,1.1,3.6,1.8,Aug17,Non-mature
+Sengkang (Rivervale Shores),4-room,678,901,1.2,2.2,1.3,Aug17,Non-mature
+Sengkang (Rivervale Shores),5-room,574,876,1.1,4.0,1.5,Aug17,Non-mature
+total_Aug17,TOTAL,2196,3771,1.4,3.1,1.7,Aug17,Non-mature
+WoodlandsMarsiling Grove/ Woodlands Spring,3-room,159,300,1.5,2.9,1.9,May17,Non-mature
+WoodlandsMarsiling Grove/ Woodlands Spring,4-room,521,935,1.8,1.7,1.8,May17,Non-mature
+WoodlandsMarsiling Grove,5-room/ 3Gen,245,410,1.4,3.1,1.7,May17,Non-mature
+YishunForest Spring @ Yishun,3-room,85,126,0.9,2.8,1.5,May17,Non-mature
+YishunForest Spring @ Yishun,4-room,251,283,1.1,1.6,1.1,May17,Non-mature
+YishunForest Spring @ Yishun,5-room,100,148,1.2,3.2,1.5,May17,Non-mature
+BidadariWoodleigh Hillside,3-room,143,170,0.6,13.0,1.2,May17,Mature
+BidadariWoodleigh Hillside,4-room,680,2092,2.7,10.6,3.1,May17,Mature
+BidadariWoodleigh Hillside,5-room/ 3Gen,374,1941,3.5,38.6,5.2,May17,Mature
+GeylangDakota Breeze/ Pine Vista,3-room,300,425,0.9,11.5,1.4,May17,Mature
+GeylangDakota Breeze,4-room,671,3493,4.2,25.0,5.2,May17,Mature
+total_May17,TOTAL,3529,10323,2.4,7.8,2.9,May17,Mature
+Punggol Waterway Sunrise II,"3-room (Income ceiling $6,000)",95,402,2.7,8.0,4.2,Feb17,Non-mature
+Punggol Northshore Cove,"3-room (Income ceiling $12,000)",114,251,1.3,4.3,2.2,Feb17,Non-mature
+Punggol Waterway Sunrise II/ Northshore Cove,4-room,723,1686,2.1,3.9,2.3,Feb17,Non-mature
+Punggol Northshore Cove,5-room,170,958,3.4,18.5,5.6,Feb17,Non-mature
+Clementi Clementi NorthArc/ Clementi Peaks,3-room,218,410,0.9,21.9,1.9,Feb17,Mature
+Clementi Clementi NorthArc/ Clementi Peaks,4-room,766,2633,2.8,15.8,3.4,Feb17,Mature
+Clementi Clementi NorthArc/ Clementi Peaks,5-room/ 3Gen,619,2501,2.7,31.1,4.0,Feb17,Mature
+Tampines Tampines GreenBloom/ Tampines GreenFlora,4-room,306,1161,2.9,20.4,3.8,Feb17,Mature
+Tampines Tampines GreenBloom/ Tampines GreenFlora,5-room/ 3Gen,332,999,1.9,24.3,3.0,Feb17,Mature
+total_Feb17,TOTAL,3343,11001,2.4,12.2,3.3,Feb17,Mature
+Punggol Waterway Sunrise I/ Northshore Trio,3-room,174,401,1.5,4.2,2.3,Nov16,Non-mature
+Punggol Waterway Sunrise I/ Northshore Trio/ Matilda Sundeck,4-room,753,1264,1.5,2.7,1.7,Nov16,Non-mature
+Punggol Waterway Sunrise I/ Matilda Sundeck,5-room/ 3Gen,398,823,1.4,6.0,2.1,Nov16,Non-mature
+Bedok Bedok North Vale,3-room,94,153,0.7,21.8,1.6,Nov16,Mature
+Bedok Bedok South Horizon/ Bedok Beacon,4-room,757,2873,2.6,27.9,3.8,Nov16,Mature
+Bedok Bedok South Horizon,5-room,274,1032,2.5,28.7,3.8,Nov16,Mature
+Bidadari Woodleigh Village/ Woodleigh Glen,3-room,301,323,0.7,8.3,1.1,Nov16,Mature
+Bidadari Woodleigh Village/ Woodleigh Glen,4-room,587,3932,5.8,24.0,6.7,Nov16,Mature
+Kallang/ Whampoa Kallang Residences,3-room,85,282,2.3,24.3,3.3,Nov16,Mature
+Kallang/ Whampoa Kallang Residences,4-room,158,1910,9.7,64.3,12.1,Nov16,Mature
+total_Nov16,TOTAL,3581,12993,2.8,11.3,3.6,Nov16,Mature
+Hougang Buangkok Woods,3-room,97,443,3.3,7.6,4.6,Aug16,Non-mature
+Hougang Buangkok Woods,4-room,250,1163,4.2,7.0,4.7,Aug16,Non-mature
+Sembawang EastDelta @ Canberra,4-room,304,821,2.5,4.0,2.7,Aug16,Non-mature
+Sembawang EastDelta @ Canberra,5-room,266,707,2.2,5.4,2.7,Aug16,Non-mature
+Yishun Valley Spring @ Yishun,3-room,100,330,1.9,6.6,3.3,Aug16,Non-mature
+Yishun Valley Spring @ Yishun,4-room,308,389,1.1,1.9,1.3,Aug16,Non-mature
+Tampines Tampines GreenVerge / Tampines GreenView,3-room,356,505,0.6,16.9,1.4,Aug16,Mature
+Tampines Tampines GreenVerge / Tampines GreenView,4-room,1501,2661,1.4,8.1,1.8,Aug16,Mature
+Tampines Tampines GreenVerge / Tampines GreenView,5-room/ 3Gen,879,2177,1.8,16.6,2.5,Aug16,Mature
+total_Aug16,TOTAL,4061,9196,1.7,7.7,2.3,Aug16,Mature
+Bukit PanjangSenja Heights / Senja Valley,3-room,190,187,0.7,1.7,1.0,May16,Non-mature
+Bukit PanjangSenja Heights / Senja Valley / Senja Ridges,4-room,525,940,1.7,2.1,1.8,May16,Non-mature
+Bukit PanjangSenja Valley / Senja Ridges,5-room/3 Gen,203,583,2.3,6.1,2.9,May16,Non-mature
+SembawangEastCreek @ Canberra,3-room,116,152,0.7,2.9,1.3,May16,Non-mature
+SembawangEastCreek @ Canberra,4-room,350,355,1.0,1.2,1.0,May16,Non-mature
+SembawangEastCreek @ Canberra,5-room,176,216,1.0,2.4,1.2,May16,Non-mature
+Ang Mo KioAng Mo Kio Court,4-room,234,2373,8.4,44.5,10.1,May16,Mature
+Ang Mo KioAng Mo Kio Court,5-room/3 Gen,200,1851,6.3,66.3,9.3,May16,Mature
+BedokBedok North Woods,3-room,110,282,1.2,30.4,2.6,May16,Mature
+BedokBedok North Woods,4-room,247,1739,5.6,35.4,7.0,May16,Mature
+total_May16,TOTAL,2351,8678,3.1,7.6,3.7,May16,Mature
+Bukit BatokWest Plains @ Bukit Batok,3-room,187,377,1.5,3.2,2.0,Feb16,Non-mature
+Bukit BatokWest Plains @ Bukit Batok,4-room,410,931,2.2,2.8,2.3,Feb16,Non-mature
+Bukit BatokWest Plains @ Bukit Batok,5-room,384,587,1.4,2.4,1.5,Feb16,Non-mature
+SengkangAnchorvale Plains,3-room,96,482,3.4,9.1,5.0,Feb16,Non-mature
+SengkangAnchorvale Plains,4-room,260,1267,4.5,6.9,4.9,Feb16,Non-mature
+SengkangAnchorvale Plains,5-room,117,832,5.7,15.2,7.1,Feb16,Non-mature
+BidadariAlkaff Oasis,3-room,340,441,0.7,13.5,1.3,Feb16,Mature
+BidadariAlkaff Oasis,4-room,800,4967,5.4,22.2,6.2,Feb16,Mature
+BidadariAlkaff Oasis,5-room/3Gen,236,3343,9.8,103.5,14.2,Feb16,Mature
+total_Feb16,TOTAL,2830,13227,3.9,10.8,4.7,Feb16,Mature
+PunggolWaterfront I @ Northshore / Waterfront II @ Northshore/ Northshore StraitsView,3-room,329,469,1.0,2.5,1.4,Nov15,Non-mature
+PunggolWaterfront I @ Northshore / Waterfront II @ Northshore/ Northshore StraitsView,4-room,1021,1665,1.4,3.1,1.6,Nov15,Non-mature
+PunggolWaterfront I @ Northshore / Waterfront II @ Northshore/ Northshore StraitsView,5-room/3Gen,534,1345,1.5,8.5,2.5,Nov15,Non-mature
+Bukit BatokWest Quarry @ Bukit Batok,3-room,79,198,2.0,3.7,2.5,Nov15,Non-mature
+Bukit BatokWest Quarry @ Bukit Batok,4-room,220,653,2.9,3.4,3.0,Nov15,Non-mature
+HougangHougang RiverCourt,4-room,155,711,4.3,6.2,4.6,Nov15,Non-mature
+HougangHougang RiverCourt,5-room/3Gen,130,429,2.5,7.8,3.3,Nov15,Non-mature
+SengkangFernvale Woods,3-room,135,231,1.3,2.8,1.7,Nov15,Non-mature
+SengkangFernvale Woods,4-room,226,370,1.5,2.3,1.6,Nov15,Non-mature
+SengkangFernvale Woods,5-room,192,197,0.9,1.9,1.0,Nov15,Non-mature
+BidadariAlkaff CourtView / Alkaff LakeView,3-room,567,829,0.8,15.0,1.5,Nov15,Mature
+BidadariAlkaff CourtView / Alkaff LakeView / Alkaff Vista,4-room,1229,6664,4.5,22.4,5.4,Nov15,Mature
+BidadariAlkaff Vista,5-room,151,3517,15.3,188.1,23.3,Nov15,Mature
+total_Nov15,TOTAL,4968,17278,2.8,8.3,3.5,Nov15,Mature
+Punggol Northshore Residences I / Northshore Residences II,2-room,546,2969,0.5,0.5,5.4,May15,Non-mature
+Punggol Northshore Residences I / Northshore Residences II,3-room,112,367,2.3,5.6,3.3,May15,Non-mature
+Punggol Northshore Residences I / Northshore Residences II,4-room,519,1001,1.7,3.2,1.9,May15,Non-mature
+Punggol Northshore Residences I / Northshore Residences II,5-room,225,658,1.8,9.2,2.9,May15,Non-mature
+Sembawang EastLink I @ Canberra / EastLink II @ Canberra,2-room,403,1652,0.2,0.4,4.1,May15,Non-mature
+Sembawang EastLink I @ Canberra / EastLink II @ Canberra,3-room,255,314,0.9,2.1,1.2,May15,Non-mature
+Sembawang EastLink I @ Canberra / EastLink II @ Canberra,4-room,383,1428,3.3,6.0,3.7,May15,Non-mature
+ClementiClementi Crest,4-room,229,1995,6.8,47.5,8.7,May15,Mature
+ClementiClementi Crest,5-room,156,2173,9.1,116.4,13.9,May15,Mature
+TampinesTampines GreenWeave,Studio Apartment,224,236,Not Applicable,Not Applicable,1.1,May15,Mature
+TampinesTampines GreenWeave,3-room,80,317,2.1,40.0,4.0,May15,Mature
+TampinesTampines GreenWeave,4-room,465,1488,2.6,14.4,3.2,May15,Mature
+TampinesTampines GreenWeave,5-room/3Gen,447,1170,2.0,15.3,2.6,May15,Mature
+total_May15,"TOTAL
+											(including Studio Apartment)",4044,15768,"Not
+											Applicable","Not
+											Applicable",3.9,May15,Mature
+"Bukit Batok West
+											Edge @ Bukit Batok  (Standard Contract)",2-room,628,1013,0.1,0.4,1.6,Feb15,Non-mature
+"Bukit Batok West
+											Edge @ Bukit Batok  (Standard Contract)",3-room,108,328,2.1,5.2,3.0,Feb15,Non-mature
+"Bukit Batok West
+											Edge @ Bukit Batok / West Rock @ Bukit Batok 
+											(Standard Contract)",4-room,864,767,0.8,1.2,0.9,Feb15,Non-mature
+"Bukit Batok West
+											Edge @ Bukit Batok / West Rock @ Bukit Batok 
+											(Standard Contract)",5-room/3Gen,442,460,0.8,2.5,1.0,Feb15,Non-mature
+"Hougang Buangkok
+											Parkvista / Buangkok Tropica  (Standard
+											Contract)",2-room,483,2128,0.2,0.5,4.4,Feb15,Non-mature
+"Hougang Buangkok
+											Parkvista / Buangkok Tropica  (Standard
+											Contract)",3-room,185,418,1.4,4.4,2.3,Feb15,Non-mature
+"Hougang Buangkok
+											Parkvista / Buangkok Tropica  (Standard
+											Contract)",4-room,535,807,1.3,2.6,1.5,Feb15,Non-mature
+"Geylang
+											MacPherson Spring  (Standard Contract)","Studio
+											Apartment",168,421,NA,NA,2.5,Feb15,Mature
+"Geylang
+											MacPherson Spring  (Standard Contract)",3-room,204,420,1.2,18.5,2.1,Feb15,Mature
+"Geylang
+											MacPherson Spring  (Standard Contract)",4-room,378,2991,6.9,28.3,7.9,Feb15,Mature
+total_Feb15,"TOTAL
+											(including Studio Apartment)",3995,9753,"Not
+											Applicable","Not
+											Applicable",2.4,Feb15,Mature
+"Sembawang
+				Sun Breeze 
+				(Standard Contract)",2-room,278,687,0.1,0.3,2.5,Nov14,Non-mature
+"Sembawang
+				Sun Breeze 
+				(Standard Contract)",3-room,116,109,0.6,1.7,0.9,Nov14,Non-mature
+"Sembawang
+				Sun Breeze 
+				(Standard Contract)",4-room,306,273,0.9,1.0,0.9,Nov14,Non-mature
+"Sengkang  
+				Anchorvale Fields 
+				(Standard Contract)",2-room,224,2270,0.2,0.7,10.1,Nov14,Non-mature
+"Sengkang  
+				Anchorvale Fields 
+				(Standard Contract)",3-room,63,264,2.6,8.1,4.2,Nov14,Non-mature
+"Sengkang  
+				Anchorvale Fields 
+				(Standard Contract)",4-room,224,773,3.2,4.7,3.5,Nov14,Non-mature
+"Yishun	  
+				(Blossom Spring @ Yishun/ Meadow Spring @ Yishun 
+				(Standard Contract)",2-room,442,957,0.1,0.3,2.2,Nov14,Non-mature
+"Yishun	  
+				(Blossom Spring @ Yishun/ Meadow Spring @ Yishun 
+				(Standard Contract)",3-room,207,133,0.5,1.0,0.6,Nov14,Non-mature
+"Yishun	  
+				(Blossom Spring @ Yishun/ Meadow Spring @ Yishun 
+				(Standard Contract)",4-room,470,289,0.6,1.0,0.6,Nov14,Non-mature
+"Tampines 
+				Tampines GreenEdge/ Tampines GreenRidges 
+				(Standard Contract)",3-room,608,549,0.4,9.9,0.9,Nov14,Mature
+"Tampines 
+				Tampines GreenEdge/ Tampines GreenRidges 
+				(Standard Contract)",4-room,938,2378,2.1,11.2,2.5,Nov14,Mature
+"Tampines 
+				Tampines GreenEdge/ Tampines GreenRidges 
+				(Standard Contract)",5-room/3Gen,401,1819,3.3,27.5,4.5,Nov14,Mature
+total_Nov14,,4277,10501,1.4,3.1,2.5,Nov14,Mature
+"Bukit Batok
+				West Terra @ Bukit Batok 
+				(Standard Contract)",2-room,462,1366,0.1,0.3,3.0,Sep14,Non-mature
+"Bukit Batok
+				West Terra @ Bukit Batok 
+				(Standard Contract)",3-room,261,439,1.1,3.1,1.7,Sep14,Non-mature
+"Bukit Batok
+				West Terra @ Bukit Batok 
+				(Standard Contract)",4-room,616,1220,1.7,3.7,2.0,Sep14,Non-mature
+"Bukit Batok
+				West Terra @ Bukit Batok 
+				(Standard Contract)",5-room,454,914,1.6,4.6,2.0,Sep14,Non-mature
+"Hougang  
+				Buangkok Square 
+				(Standard Contract)",2-room,317,2470,0.3,1.0,7.8,Sep14,Non-mature
+"Hougang  
+				Buangkok Square 
+				(Standard Contract)",3-room,116,423,2.0,7.6,3.6,Sep14,Non-mature
+"Hougang  
+				Buangkok Square / Buangkok Edgeview 
+				(Standard Contract)",4-room,524,879,1.3,3.6,1.7,Sep14,Non-mature
+"Hougang  
+				Buangkok Edgeview 
+				(Standard Contract)",5-room/ 3Gen,235,489,1.5,5.5,2.1,Sep14,Non-mature
+"Jurong West 
+				Yung Ho Spring I / Yung Ho Spring II
+				(Standard Contract)",2-room,411,635,0.1,0.4,1.5,Sep14,Non-mature
+"Jurong West 
+				Yung Ho Spring I / Yung Ho Spring II
+				(Standard Contract)",3-room,230,226,0.7,1.7,1.0,Sep14,Non-mature
+"Jurong West 
+				Yung Ho Spring I 
+				(Standard Contract)",4-room,266,498,1.5,4.2,1.9,Sep14,Non-mature
+"Kallang Whampoa
+				St George's Towers
+				(Standard Contract)",Studio Apartment,151,521,Not Applicable,Not Applicable,3.5,Sep14,Mature
+"Kallang Whampoa
+				St George's Towers
+				(Standard Contract)",3-room,124,472,2.1,36.8,3.8,Sep14,Mature
+"Kallang Whampoa
+				St George's Towers
+				(Standard Contract)",4-room,463,3900,6.9,36.9,8.4,Sep14,Mature
+total_Sep14,TOTAL (including Studio Apartment),4630,14452,Not Applicable,Not Applicable,3.1,Sep14,Mature
