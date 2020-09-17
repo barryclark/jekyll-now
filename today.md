@@ -60,6 +60,13 @@ Take either/both articles you have chosen and code them in HTML (using Codepen).
 - `strong`, `em`: bold and italicize
 - `ul` and/or `ol`: unordered and ordered lists
 
+### Stretch Activities
+Once you have the basics figure out, try some of these more advanced concepts:
+- [Customize your list styling](https://css-tricks.com/almanac/properties/l/list-style/)
+- [Style a blockquote with pseudo-elements](https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/)
+- [More cool things you can do with pseudo-elements](https://css-tricks.com/pseudo-element-roundup/)
+
+
 ## 3. Lab Time: Optimize and Validate
 ### Learning Objectives
 - Define the rules for naming web pages.
