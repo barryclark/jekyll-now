@@ -12,7 +12,7 @@ title: "SAIT WBDV Program Schedule"
 ## Week 2: September 14-18
 - M: CPNT 201 Day 2 - [Creating Git and GitHub Repos]({% link _posts/2020-09-14-git-gh.md %})
 - T: DSGN 270 Day 3 - [Mobile Fundamentals]({% link _posts/2020-09-15-responsive-web.md %})
-- W: DSGN 270 Day 4 - Copyright & Licensing
+- W: DSGN 270 Day 4 - [Performance, Copyright & Licensing]({% link _posts/2020-09-16-performance-copyright.md %})
 - R: CPNT 260 Day 1 - Long-form text
   - [DSGN 270 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/design/assignment-1)
 - F: CPNT 264 Day 1 - Career & Consulting Essentials
@@ -24,6 +24,7 @@ Sunday, Sept 20: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/assess
 - T: CPNT 260 Day 3 - Web Typography
 - W: CPNT 260 Day 4 - Headers and Footers
 - R: CPNT 260 Day 5 - Horizontal Navigation
+  - [DSGN 270 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/design/assignment-2)
 - F: CPNT 260 Day 6 - Web Colour
 
 ## Week 4: Sep 28 - Oct 2
