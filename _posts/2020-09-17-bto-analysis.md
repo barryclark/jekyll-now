@@ -29,7 +29,8 @@ Let's go through the key parts of the webscraping approach.
 
 We first need to identify the patterns in the URL structure. The first observation is that the URL structure is different for the latest launch (Aug 2020 at the point of writing) compared to previous launches. For Aug 2020, the URL is `https://services2.hdb.gov.sg/webapp/BP13BTOENQWeb/AR_Aug2020_BTO?strSystem=BTO`, but the ones for Feb 2020 and Nov 2019 are `https://services2.hdb.gov.sg/webapp/BP13BTOENQWeb/BP13J011BTOFeb20.jsp` and `https://services2.hdb.gov.sg/webapp/BP13BTOENQWeb/BP13J011BTONov19.jsp` respectively. So a reasonable guess is that we could amend the URL for Feb 2020/Nov 2019 and replace it with a previous month in which there was a BTO ballot to access the earlier BTO application information. That does turn out to be the case! For example, if we replace the `Feb20` in the URL for Feb 2020 with `Feb16` we can [access the Feb 2016 info](https://services2.hdb.gov.sg/webapp/BP13BTOENQWeb/BP13J011BTOFeb16.jsp). Knowing the URL pattern means that we can feed the source URLs in easily later on.
 
-```
+{% highlight r %}
+```r
 period <- "Feb20" #define some period here, but let me just use Feb 2020 as an example
   
   if(period != "Aug20") {
@@ -41,11 +42,12 @@ period <- "Feb20" #define some period here, but let me just use Feb 2020 as an e
     
       url <- "https://services2.hdb.gov.sg/webapp/BP13BTOENQWeb/AR_Aug2020_BTO?strSystem=BTO"
   }
-```
+ ```
+{% endhighlight %}
 
 Next, we need to identify where in each page we can obtain the information from. At a glance, the webpage looks reasonably static (a more dynamic website might present complications), and if we view the page source (right click -> view page source), we can see that the information does appear within the HTML code. This means that if we can identify patterns in the HTML code which isolate the information we want, then we can scrape that information without also bringing in things that we _don't_ want. In this case, it looked to me like the information was sitting within the `<table class = "scrolltable">` tag, and that's what I rely on to identify the relevant part of the HTML code.
 
-```
+```r
  raw <- read_html(url)
 
  raw_tables <- html_nodes(raw, css = ".scrolltable") %>% 
@@ -73,7 +75,7 @@ Here's what the Feb 2020 data looks like at this point. The scraping worked and 
 
 We want to fix the column headers and remove the headers/table dividers that got read in as rows. From our own contextual knowledge, we also know that the split between mature and non-mature estates is an important one for BTO application rates, so let's try to preserve that info in a new variable.
 
-```
+```r
 #fix column names
     colnames(table_2) <- c("proj_name", "flat_type", "num_units", "num_applicants", 
                        "first_timer_ratio", "second_timer_ratio", "overall_ratio")
@@ -110,7 +112,7 @@ The data looks much better now (below). There's probably more that can be done i
 
 The next step would be to wrap up these earlier steps in a function, and use `map()` to apply our defined function over a list of periods with available info.
 
-```
+```r
 get_bto_app_ratios_3Rplus <- function(period){
 
   if(period != "Aug20"){
@@ -160,7 +162,7 @@ Finally, it's worth noting at this point that the oldest available info I could 
 
 Once we're done modifying and defining the function, let's bring the data in. I also create a csv just to preserve a raw copy of the data as-scraped, which I find this helpful for pinpointing where things have gone wrong if there are subsequent problems, but of course it's not strictly necessary.
 
-```
+```r
   all_periods <- c("Aug20", "Feb20", 
                    "Nov19", "Sep19", "May19", "Feb19", 
                    "Nov18", "Aug18", "May18", "Feb18",
@@ -176,7 +178,7 @@ Once we're done modifying and defining the function, let's bring the data in. I 
   str(combined_data)
 ```
 
-```
+```r
 tibble [253 x 9] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
  $ proj_name         : chr [1:253] "Choa Chu Kang (Keat Hong Verge *)" "Choa Chu Kang (Keat Hong Verge *)" "Tengah (Parc Residences @ Tengah)" "Tengah (Parc Residences @ Tengah)" ...
  $ flat_type         : chr [1:253] "3-room" "4-room" "3-room" "4-room" ...
@@ -203,7 +205,7 @@ tibble [253 x 9] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
 ```
 There's clearly some cleaning to be done here. The first timer ratio - a key variable of interest - is a character, not numeric. It's probably also useful to create a proper date variable for use later. I do some cleaning below to create proper date variables, clean out the flat types a bit, and address some type issues. There are warning messages when forcing the application rates to numeric but it's not a big deal in this case - it's because some of the application rates for older studio apartment releases have "NA" or "Not applicable" entries. Those are not the focus here so we can just move on.
 
-```
+```r
 clean_combined <- combined_data %>%
   
   #create a proper date variable
@@ -229,7 +231,7 @@ The data is a bit cleaner now, and we should do a cross-check to catch any error
 
 By the way, I recall using the assertive package in the past but I seem to have had some problems with it recently, which is why I went with `stopifnot()`.
 
-```
+```r
   crosscheck1 <- clean_combined %>%
 
     #construct a total from all non-total entries
@@ -257,7 +259,7 @@ And now we're ready for some plots!
 
 Nothing too fancy here, just some basic plots to build our understanding of the excess demand. Let's look at the supply side first - what does the supply of 4R and 5R flats look like?
 
-```
+```r
   clean_combined %>%
 
     #filter out 2014 because incomplete year
@@ -310,7 +312,7 @@ Regardless, I'd take this with a pinch of salt just purely because of the inabil
 
 Finally, on to the main interest - the first-timer application rates.
 
-```
+```r
   clean_combined %>%
 
     #filter out 2014 because incomplete year
