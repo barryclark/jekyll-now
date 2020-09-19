@@ -84,5 +84,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - aws/
 
 # theme: jekyll-theme-architect

@@ -34,3 +34,4 @@ Next you can update your site name, avatar and other options using the _config.y
 As of now this is not working so well. So i will be working upon it to improve it. 
 
 
+[Markdown Basics](https://www.markdownguide.org/basic-syntax/)

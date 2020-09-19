@@ -97,3 +97,32 @@ this cannot be done by git branch -d command
 ##### lists all branches
 `git branch -a` <br>
 lists all remote and local branches 
+
+##### git difftool 
+git difftool --tool=vimdiff <filename>
+
+##### Amending last git commit 
+**amending message only** <br>
+git commit --amend -m "new message"
+
+**amending files only** <br>
+git commit --amend --no-edit <file with changes>
+git push -f origin <branch> 
+*do not for push in master or public repos*
+
+
+##### Git blame 
+is there a way to find history of a file in git 
+git history in UI of bitbucket
+
+
+##### Moving from gitlab to github in simple way
+[Follow this link](https://android.jlelse.eu/how-to-migrate-gitlab-bitbucket-to-github-in-a-simple-way-e38bc60b1547)
+1. Inside your GitHub team page, create an empty private repo with the same name of Bitbucket/GitLab repo that you want to transfer.
+2. Copy your newly created repo link, either in HTTPS or SSH. For example, git@github.com:team-name/repo-name.git (SSH type)
+3. Inside your local project folder, change the remote URL under.git/config ‘s file to your copied GitHub's one. The content looks similar as follows. [remote "origin"]
+url = git@github.com:team-name/repo-name.git
+fetch = +refs/heads/*:refs/remotes/origin/*
+4. Do a git push: git push --all . It will push all codes and commit history on your newly GitHub repository.
+5. Done. After that, when we push new commits, it will push to GitHub only.
+6. The Bitbucket/GitLab repo now can be archived to ‘Read-only’ mode.

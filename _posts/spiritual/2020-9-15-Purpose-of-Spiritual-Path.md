@@ -1,14 +1,23 @@
 ---
 layout: post
-title: You're up and running!
+title: Purpose of Spiritual Effort!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+[comment]:![_config.yml]({{ site.baseurl }}/images/config.png)
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+#### Purpose of spiritual effort is.. 
+- To know what we really are as Soul 
+- Self-realization (soul realization)
+- Knowing what is God
+- To change ourselves towards better being 
+- To attain a state in which we are happy forever
+- To liberate ourselves from senses 
+- To become one with all
+- To become one with God  
+- To gain supreme consciousness 
 
-The easiest way to make your first post is 
-to edit this one. Go into /_posts/ and update 
-the Hello World markdown file. 
-For more instructions head over to 
-the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+There is one thing that is common in all this. That is change. 
+And this change is in yourself. This change is towards becoming 
+more humble, less selfish, more altrustic person. This is also 
+same as soul realization or God realization. 
+fsjfsdf

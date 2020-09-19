@@ -1,16 +1,18 @@
 ---
 layout: post
-title: You're up and running!
+title: Docker common commands
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+> docker pull ubuntu  
+> docker run -i -t ubuntu:latest /bin/bash
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+##### saving changes to docker 
+> docker commit 9aefd4092ca5 ubuntu-react:v10
 
-The easiest way to make your first post is 
-to edit this one. Go into /_posts/ and update 
-the Hello World markdown file. 
-For more instructions head over to 
-the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+##### running docker on a port with a volume mount 
+> docker run -i -t -p 3001:3000 -v /Users/kumarman/git-projects/reactdocker/my-app:/my-app ubuntu-react:v10 /bin/bash -c "cd my-app/ && npm start"
+path is absolute here
 
-{: style="background-color: grey ; color: white ; font-size: 18px"  }
+> use cp command to copy whole directory as well 
+sdfsdfdsfsd
+sdfsdfdsfsd

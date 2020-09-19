@@ -3,14 +3,13 @@ layout: post
 title: Information and Knowledge
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+##### What is Information ? 
+Events that occur throughout this universe form pieces of information. If you think of information as an
+object it will have following members: 
+- Place
+- Time 
+- Entities/Actors Involved 
+- What occurred ? 
+- Outcome 
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is 
-to edit this one. Go into /_posts/ and update 
-the Hello World markdown file. 
-For more instructions head over to 
-the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
-
-{: style="background-color: grey ; color: white ; font-size: 18px"  }
+[comment]:{: style="background-color: grey ; color: white ; font-size: 18px"  }
