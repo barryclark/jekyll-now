@@ -1,0 +1,1 @@
+aws s3 sync _site/ s3://mk-personal-bucket --acl public-read
