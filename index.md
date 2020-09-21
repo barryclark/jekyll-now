@@ -17,7 +17,7 @@ title: SAIT WBDV Program Schedule
 - M: CPNT 201 Day 2 - [Creating Git and GitHub Repos]({% link _posts/2020-09-14-git-gh.md %})
 - T: DSGN 270 Day 3 - [Mobile Fundamentals]({% link _posts/2020-09-15-responsive-web.md %})
 - W: DSGN 270 Day 4 - [Performance, Copyright & Licensing]({% link _posts/2020-09-16-performance-copyright.md %})
-- R: CPNT 260 Day 1 - Long-form text
+- R: CPNT 260 Day 1 - [Long-form text]({% link _posts/2020-09-17-long-form.md %})
   - [DSGN 270 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/design/assignment-1)
 - F: CPNT 264 Day 1 - Career & Consulting Essentials
 
