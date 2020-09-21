@@ -3,51 +3,54 @@ layout: post
 title: "Physical Access as a Service: Using the Doordeck API"
 author: stelios
 tags: [api, hands-on, tutorials]
-categories: [Software Development]
+categories: [Software Development, ]
 featured: true
 description: "Doordeck provides a robust API and platform for physical and resource access management. This post provides a quick introduction on how to connect to the platform."
 image: assets/images/doordeck/door-green-closed-lock-4291.jpg
 ---
 
-## A new paradigm 
+Physical access has been slow to move to the internet age.  
+This post provides a hands-on overview of the Doordeck platform and its integration capabilities.   
 
-Physical access has been slow to move to the internet age. The humble key has been with us for millennia.  
-In the last few decades, it has slowly been replaced in professional environments by magnetic and NFC access cards.  
-However, this is still falling short for the current and future needs of the Internet age.    
+# A new paradigm 
+
+The humble key has been with us for millenia.  
+In the last few decades, it has been replaced by magnetic and NFC access cards.  
 
 ![Card access](../assets/images/doordeck/card-access.png)
 > Typical card access system
 
-The way access cards work, is pretty simple.  
-The card goes near the reader prompting a read of its unique identifier. The reader relays the identifier to a central 
-controller device (usually a computer), where it is checked against the whitelist of identifiers.   
-If confirmed, the controller instructs the door's lock to open. 
+Access cards work in a pretty simple way.  
+1. The card goes near the reader, prompting a read of its unique identifier. 
+2. The reader relays the identifier to a central controller device (usually a computer), via fixed wiring, where... 
+3. it is checked against the whitelist of card identifiers.   
+4. If the card is in the whitelist, the controller instructs the door's lock to open. 
   
 Though more flexible compared to keys, card-based systems leave a lot to be desired.  
-Cards are as prone to loss or theft as keys. Once that happens, there is no way of preventing unwanted access without removing 
-from the whitelist first. Cards do not "recognize" an owner.
-In addition, these systems are usually closed and hard to manage and automate centrally (one-time access, instant revocation, 
-API integration and automation...)  
+Cards can be lost or stolen as easily as keys. Once that happens, there is no way of preventing unwanted access without 
+manually removing the card id from the whitelist first. Cards do not "recognize" an owner.  
+In addition, card-based systems are usually closed and installed on-premise. This makes them hard to manage and automate centrally.  
+If not offered out of the box, extensibility (one-time access, instant revocation, complex automation...) may be impossible.    
 
-The Doordeck platform <sup>[1](#footnote_1)</sup> builds on top of the [existing offline access card infrastructure][19] and 
-makes it accessible via an API platform.
-This is possible by combining the capabilities of Android and iPhone platforms with public/private key cryptography.
+The Doordeck platform <sup>[1](#footnote_1)</sup> builds on top of the [already installed offline access card infrastructure][19] and 
+makes it extensible via an API platform.
+This becomes possible by combining the capabilities of Android / iPhone platforms with public/private key cryptography.
 
 ![Doordeck access](../assets/images/doordeck/doordeck-access.png)
 
-Each user is identified by a public/private keypair.  
-Depending on the access mode (direct or as a service), the keypair is generated on the server or the mobile device. 
+1. An NFC-enabled mobile phone goes near the [Doordeck tile][20] (or the camera scans the QR code printed on it).  
+2. The device makes an API call, requesting access. The call's payload is the tile's id, signed with the user's private key. 
+This means "user X wants to open door ABC, associated with tile Y". 
+3. The server checks the request against a number of possible rules (user allowed for this door, blackout times,...). 
+4. If successful, it instructs the access controller to... 
+5. unlock the door.  
 
-An NFC-enabled mobile phone goes near the [Doordeck tile][20] (or the camera scans thew QR code printed on it).  
-The device makes an API call, requesting access. The call's payload is the tile's id, signed with the user's private key. 
-This means "user X wants to open door 1, associated with tile Y". 
+In this model, each user is identified by a public/private keypair. Depending on the access mode (direct or as a service), 
+the keypair is generated on the Doordeck server or the mobile device. 
 
-The server checks the request against a number of possible rules (user allowed for this door, blackout times,...). If successful, 
-it instructs the access controller to unlock the door.  
+Let's see all of this in action through a hands-on example. 
 
-Let's stretch our hands and see this end-to-end through a hands-on example. 
-
-## Security as a service
+# Security as a service
 
 The underlying Doordeck entity model is quite simple.
  
@@ -69,8 +72,8 @@ The underlying Doordeck entity model is quite simple.
 ```
 
 * A Doordeck User has access to a number of Sites (i.e. buildings).  
-* Each Site has a number of Locks (doors), for each one of which the User is explicitly permissioned.
-* Each Lock can be associated with a Tile; this is effectively an identifier for the door.
+* Each Site has a number of Locks (doors). The User is explicitly permissioned for each one of them.
+* Each Lock can be associated with a Tile. This is effectively an identifier for the door.
 
 For a test of the API we need to do 3 things:  
 1. Create a user account with Doordeck, 
@@ -79,15 +82,15 @@ For a test of the API we need to do 3 things:
 
 We will be calling the [staging version][5] of the API.
 
-### Creating a user account
+## Creating a user account
 
 This is fairly easy at the [registration portal][3].  
 After logging in, the web application's home screen looks rather sparse; we are not yet associated with any locks.
 
 ![Doordeck login](../assets/images/doordeck/dd_login.png)
-> Doordeck user login screen
+> Doordeck user portal screen
 
-### Associate with the demo door
+## Associate with the demo door
 
 First we need to discover our user's identifier.  
 Let's call the [login endpoint][4], replacing the `EMAIL` and `PASSWORD` with your credentials from the registration portal.  
@@ -99,11 +102,12 @@ curl 'https://api.staging.doordeck.com/auth/token/' \
         | jq -r '.authToken'
 ```
 Copy the printed token and paste it in the [debugger of jwt.io][2].  
+This will show us the internal identifier of the User.
 
 ![User id in the JWT](../assets/images/doordeck/jwt_user_id.png)
 > User id in the authentication token
 
-To associate with the demo door, we will use a [simple web form][6] which has been provided for this reason.  
+To associate with the demo door, we will use a [simple web form][6], which exists to facilitate testing.  
 Paste your user id and click Submit.
 
 ![Associate with demo door](../assets/images/doordeck/user_demo_door.png)
@@ -114,21 +118,22 @@ You can verify the association by refreshing your [home screen][7] in the web ap
 ![Demo door](../assets/images/doordeck/demo_lock.png)
 > Demo door in the web app
 
-In a real-life scenario, the above task would be done by an admin, using the relevant lock update [API call][25]. 
+In a real-life scenario, the task of associating a User to a Lock, would be done by an admin, using the relevant 
+lock update [API call][25]. 
 
 You are all set to...
 
-### Unlock your first door
+## Unlock your first door
 
-On [logging in][4], each user is issued with  
+On making a [login API call][4], each user is issued with  
 * an `authToken` to call the non-sensitive API endpoints, and 
 * a `privateKey` to sign a JWT authentication payload for sensitive operations like [unlock][8]. 
 
-When sending a signed authentication payload, the Doordeck server imposes a time limit of 60 seconds from the time of 
-signing to  is time-constrained and serves to prevent replay attacks.   
+When sending a signed authentication payload, the Doordeck server imposes a time limit of up to 60 seconds from the time of 
+signing to making the API call. This time constrain serves to prevent replay attacks.   
 
-This security feature makes it hard to test by hand; one needs to be typing super-fast.  
-For this reason let's use the following utility script, which  
+This security feature also makes it hard to test the API by hand; one needs to be typing super-fast.  
+For this reason I have created the following utility script, which  
 * takes in your credentials, 
 * logs in to Doordeck,
 * signs a JWT authentication payload, and
@@ -144,7 +149,7 @@ echo "Please provide your Doordeck user credentials"
 read -p "Email: " USER
 read -s -p "Password: " PWD
 
-LOCK_ID="ad8fb900-4def-11e8-9370-170748b9fca8"
+DEMO_LOCK_ID="ad8fb900-4def-11e8-9370-170748b9fca8"
 
 echo "Retrieving token for user $USER..."
 
@@ -174,7 +179,7 @@ EXP=$((IAT + 60))
 echo "Preparing JWT auth. payload..."
 
 HEADER='{"alg":"RS256","typ":"JWT"}'
-BODY='{"iss":"'"$USER_ID"'","sub":"'"$LOCK_ID"'","nbf":'"$IAT"',"iat":'"$IAT"',"exp":'"$EXP"',"operation":{"type":"MUTATE_LOCK","locked":false,"duration":5}}'
+BODY='{"iss":"'"$USER_ID"'","sub":"'"$DEMO_LOCK_ID"'","nbf":'"$IAT"',"iat":'"$IAT"',"exp":'"$EXP"',"operation":{"type":"MUTATE_LOCK","locked":false,"duration":5}}'
 HEADER_B64=`echo -n $HEADER | base64 | sed 's/+/-/g;s/\//_/g;s/=//g'`
 BODY_B64=`echo -n $BODY | base64  | sed 's/+/-/g;s/\//_/g;s/=//g'`
 SIGNATURE_B64=`echo -n $HEADER_B64.$BODY_B64 | openssl sha256 -sign privatekey.pem | base64 | sed 's/+/-/g;s/\//_/g;s/=//g'`
@@ -182,7 +187,7 @@ JWT=`echo -n $HEADER_B64.$BODY_B64.$SIGNATURE_B64`
 
 echo "Unlocking demo door..."
 
-curl "https://api.staging.doordeck.com/device/$LOCK_ID/execute" \
+curl "https://api.staging.doordeck.com/device/$DEMO_LOCK_ID/execute" \
   -X POST \
   -H "Authorization: Bearer $AUTH_TOKEN" \
   -H "Content-type: application/json;charset=UTF-8" \
@@ -190,21 +195,22 @@ curl "https://api.staging.doordeck.com/device/$LOCK_ID/execute" \
 
 ```
 </details>
- 
-Save it as an executable shell script and open a browser to the [demo door's web page][9].
+  
+Save the above script as an executable shell script and open a browser to the [demo door's web page][9].
 
 Run the script, switch to the demo door's page and... voila!
 
 ![Unlocking the door](../assets/images/doordeck/door_unlock.gif)
 > Door unlocking sequence
 
-## Security as a Platform
+# Security as a Platform
 
-Doordeck takes the concept of secure access further by offering an integration platform.  
+Doordeck takes the concept of secure access further by offering an integration platform. 
+
 This allows third parties and developers to offer access automation as an add-on service through their existing systems 
-and applications.
+and applications.  
 The applications range from [tenant experience applications][10], offered by large property managers, to
-centralized [industrial facility management][11] to vanilla [office management][21]. 
+centralized [industrial facility management][11] to vanilla [office management][21].  
 
 The conceptual entity model of the Doordeck platform is slightly different.
 
@@ -228,21 +234,21 @@ The conceptual entity model of the Doordeck platform is slightly different.
 * The Doordeck User (as described in the previous section) is the administrator of...
 * the Application, registered with the Doordeck platform.  
 The Application has a number of...
-* App Users, which it has previously on-boarded and authenticated.  
+* App Users, which it has previously onboarded and authenticated.  
 The Application takes care of uniquely identifying App Users to Doordeck (id, e-mail...).  
 * The Doordeck Platform allows these App Users access to Locks, by issuing ephemeral security keys.    
 
 Let's see how that works end-to-end, using the staging API.
 
-### Registering the application
+## Registering the application
 
-The integrator application needs to identify itself to the Doordeck API. <sup>[2](#footnote_2)</sup> 
+The integrator Application needs to identify itself to the Doordeck API. <sup>[2](#footnote_2)</sup> 
 
 We start by registering the application in the [Doordeck portal][12]. 
 
 ![Register app](../assets/images/doordeck/register-app.png)
 
-#### Application identity
+### Application identity
 
 The application uniquely identifies itself to the API using a URL.  
 This is called `Auth domain` in the Doordeck portal. Once defined, it will need to be specified verbatim in the `iss` 
@@ -251,7 +257,7 @@ field of all JWTs sent to the API.
 ![Auth domain](../assets/images/doordeck/auth-domain.png)
 > Adding the application's external identifier
 
-#### Application security
+### Application security
 
 We will also need to upload the public key of the application.  
 The application will sign JWTs with its private key as an authentication step every time it calls the Doordeck API.
@@ -259,7 +265,8 @@ The application will sign JWTs with its private key as an authentication step ev
 The developer portal requires the upload of the public keys in [JWK format][13].  
 For test purposes, this can be generated manually at [https://mkjwk.org/][14], making sure to only select an algorithm 
 from the [relevant RFC-mandated list][15] (e.g. RS256).  
-The website can also generate the keys in PEM format; very useful to automate the local signing of the payloads.  
+The website can also generate the keys in PEM format. We will needd PEM to automate the local signing of the payloads.  
+
 ![Generate key](../assets/images/doordeck/mkjwk.png)
 > Manually generating a JWK 
 
@@ -269,10 +276,10 @@ Alternatively, if you have
 
 you can take a shortcut and generate the keys using the following little script.  
 The script    
-* downloads the JAR from [Github][17], 
+* downloads the mkjwk JAR from [Github][17], 
 * generates a 2048 bit RSA key named `my-key`, 
 * creates files `fullKey.jwk` and `publicKey.jwk` in the current directory, and
-* creates `privateAppKey.pem` and `publicAppKey.pem` from them.
+* creates `privateAppKey.pem` and `publicAppKey.pem` derived from them.
 
 <details markdown="1">
   <summary><b>Click to expand script</b></summary>
@@ -290,16 +297,16 @@ cat publicKey.jwk | lokey to pem > publicAppKey.pem
 ```
 </details>
 
-Paste the public JWK (`publicKey.jwk`) in the Doordeck portal; this will be your application's identifier. 
+Paste the public JWK (`publicKey.jwk`) in the Doordeck portal. This will be used to verify your application's API calls. 
 
 ![Paste public key](../assets/images/doordeck/public-key.png)
 > Adding the integrator application identifier
 
 Save the PEM files because we will need them when we...
 
-### Generate an application JWT
+## Generate an application JWT
 
-As we saw in the previous section, upon [user login][4] we receive a private key with which to sign API call JWTs.  
+As we saw in the previous section, upon [user login][4], we receive a private key with which to sign API call JWTs.  
 
 The case of an Application making API calls is not much different.  
 The Application signs the JWT with its private key and defines the App User details (name, e-mail...) in the JWT's body. 
@@ -348,20 +355,20 @@ echo -n "$JWT" > auth.token
 ```
 </details>
 
-### Authenticating the device
+## Authenticating the device
 
 The 3rd party application on the App User's phone needs to unambiguously and securely identify the user and her phone to 
 Doordeck before unlocking a door.  
 
-To achieve this, the [Doordeck mobile SDK][22] generates a new [Ed25519 keypair][23] with the user logging in to the device.  
+To achieve this, the [Doordeck mobile SDK][22] generates a new [Ed25519 keypair][23], when the user logs in to the device.  
 This is sent to Doordeck, "registered" against the App User's "profile" and comes back as a signed certificate.  
 This proves  
 * to the SDK that the server responding is indeed the Doordeck API, and
 * to the Doordeck API that the device belongs to a previously authorized App User (in subsequent unlock attempts).  
 
 To emulate these steps manually, we can utilize the [Pynacl Python library][24], for generating and handling Ed25519 key material.  
-After installing Pynacl, save the following Python 2.7 script as `ed25519.py` in the current working directory, so that 
-we can call its methods.
+After installing Pynacl, save the following Python 2.7 script as `ed25519.py` in the current working directory; we will be 
+calling its methods.
 
 <details markdown="1">
   <summary>Click to expand Python script</summary>
@@ -396,8 +403,10 @@ def sign_message():
 ```
 </details>
 ‍
+
 Let's pretend that the App User has opened the 3rd party mobile application.  
-The SDK generates an Ed25519 keypair and sends the public key to the Doordeck API, along with the current App User's details.    
+The SDK generates an Ed25519 keypair and sends the public key to the Doordeck API, along with the current App User's details.
+   
 We have already constructed and saved an authentication token from the previous script, so we will re-use that token.
 
 <details markdown="1">
@@ -442,7 +451,7 @@ If the App User's e-mail is a valid one, then she will receive a confirmation ma
  
 Like before, we will need to...
 
-### Associate the App User with the demo door
+## Associate the App User with the demo door
 
 Go to the [web form][6], paste the App User id printed from the script you have just run and click Submit.
 
@@ -451,7 +460,7 @@ Go to the [web form][6], paste the App User id printed from the script you have 
 
 And now we are again ready to...
 
-### Unlock the demo door
+## Unlock the demo door
 
 The following script (let's call it `step_2_2.sh`) is using all of the artifacts we gathered in our previous steps.  
 Namely, it loads  
@@ -504,26 +513,28 @@ Run the script, switch to the demo door's page and watch the door being unlocked
 ![Unlocking the door](../assets/images/doordeck/door_unlock_2.gif)
 > Door unlocking sequence
 
-## Parting thoughts
+# Parting thoughts
 
-Competition 
+Connecting physical access to the online world is a necessity.  
 
-https://www.getkisi.com/access-control-system
+As expected there are various other systems attempting to achieve this. 
+These range from adding mobile access as an [afterthought][27] to high capex costs for [Bluetooth readers][28] to 
+complete [door hardware replacement][29].
 
-https://tapkey.com/
+Doordeck occupies a sweet spot in the physical access vertical, as it [balances][30] 3 almost competing priorities:    
+* security, 
+* extensibility both for integrators and for expansion to [other][31] [sub-verticals][32], and 
+* minimizing capex by re-use of existing physical infrastructure.
 
-http://www.controlsoft.com/controlsoft-mobile-access.asp
-
-Bluetooth is double edged sword
-https://www.buildings.com/news/industry-news/articleid/21265/title/simplify-access-control-with-smartphones
-
+As organisations find a new modus operandi post-Covid (socially and financially), the Doordeck platform will provide 
+solutions to many of the new challenges they face.
 
 ## Footnotes
 
 1. <a name="footnote_1"></a>Full disclaimer: I am an angel investor in Doordeck. 
 2. <a name="footnote_2"></a>This section is a condensed version of the guide found [here][1].
 3. <a name="footnote_3"></a>Calling this script repeatedly for the same App User will trigger the [Verify Ephemeral Key with Secondary Authentication flow][26].  
-This will be signaled by the API with an HTTP 423. If you are just testing, it might be easier to repeat `step1.sh` with 
+This will be signaled by the API with an HTTP 423 return code. If you are just testing, it might be easier to repeat `step1.sh` with 
 a different user e-mail.
 
 
@@ -553,3 +564,9 @@ a different user e-mail.
   [24]: https://pynacl.readthedocs.io/en/stable/install/
   [25]: https://developer.doordeck.com/docs/#share-a-lock
   [26]: https://developer.doordeck.com/docs/#register-ephemeral-key-with-secondary-authentication
+  [27]: http://www.controlsoft.com/controlsoft-mobile-access.asp
+  [28]: https://www.getkisi.com/how-it-works
+  [29]: https://tapkey.com/ 
+  [30]: https://doordeck.com/features
+  [31]: https://doordeck.com/product-integrations/smart-printers
+  [32]: https://doordeck.com/product-integrations/smart-elevators
