@@ -33,7 +33,7 @@ Sunday, Sept 20: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/assess
 
 ## Week 4: Sep 28 - Oct 2
 - M: CPNT 260 Day 7 - Galleries
-- T: CPNT 260 Day 8 - Side Menus
+- T: CPNT 260 Day 8 - Hamburger Menus
 - W: CPNT 260 Day 9 - Registration and Login
 - R: CPNT 260 Day 10 - Final Exam
 - F: CPNT 201 Day 3 - Image Optimization
