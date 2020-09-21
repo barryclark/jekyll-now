@@ -3,7 +3,7 @@ layout: post
 title: "Brander and Taylor (1998): The Simple Economics of Easter Island: A Ricardo-Malthus Model of Renewable Resource Use"
 ---
 
-今日は、UBCの[Branderさん](https://www.sauder.ubc.ca/people/james-brander)とカルガリー大の[Taylorさん](https://www.mstaylor1.org/)さん（以下BT）のAER論文について話したいと思います。
+今日は、UBCの[Branderさん](https://www.sauder.ubc.ca/people/james-brander)とカルガリー大の[Taylorさん](https://www.mstaylor1.org/)（以下BT）のAER論文について話したいと思います。
 論文は[こちら](https://www.jstor.org/stable/116821)からダウンロードできます。
 
 一昔前の論文で渋いチョイスかもしれませんが、環境経済学の理論の論文の中でお気に入りの論文なので、取り上げてみました。
