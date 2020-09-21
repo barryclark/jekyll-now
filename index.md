@@ -24,19 +24,19 @@ title: SAIT WBDV Program Schedule
 Sunday, Sept 20: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-1)
 
 ## Week 3: September 21-25
-- M: CPNT 260 Day 2 - Full Viewport Containers
-- T: CPNT 260 Day 3 - Web Typography
-- W: CPNT 260 Day 4 - Headers and Footers
-- R: CPNT 260 Day 5 - Horizontal Navigation
+- M: CPNT 260 Day 2 - [Full Viewport Containers]({% link _posts/2020-09-21-full-viewport-containers.md %})
+- T: CPNT 260 Day 3 - [Navigation and Colour]({% link _posts/2020-09-22-navigation-colour.md %})
+- W: CPNT 260 Day 4 - [Cards and Typography]({% link _posts/2020-09-23-cards-typography.md %})
+- R: CPNT 260 Day 5 - [Headers and Footers]({% link _posts/2020-09-24-headers-footers.md %})
   - [DSGN 270 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/design/assignment-2)
-- F: CPNT 260 Day 6 - Web Colour
+- F: CPNT 260 Day 6 - [Fluid Typography]({% link _posts/2020-09-25-fluid-typography.md %})
 
 ## Week 4: Sep 28 - Oct 2
-- M: CPNT 260 Day 7 - Hero Sections and Calls to Action
-- T: CPNT 260 Day 8 - Cards and Content Blocks
-- W: CPNT 260 Day 9 - Galleries
-- R: CPNT 260 Day 10 - Web Forms
-- F: CPNT 201 Day 3
+- M: CPNT 260 Day 7 - Galleries
+- T: CPNT 260 Day 8 - Side Menus
+- W: CPNT 260 Day 9 - Registration and Login
+- R: CPNT 260 Day 10 - Final Exam
+- F: CPNT 201 Day 3 - Image Optimization
 
 ## Week 5: October 5-9
 - M: CPNT 201 Day 4
