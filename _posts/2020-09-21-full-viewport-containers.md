@@ -12,6 +12,11 @@ categories: cpnt260
 - Play: [Flexbox Froggy](https://flexboxfroggy.com/)
 - Play: [Flexbox Zombies](https://geddski.teachable.com/p/flexbox-zombies)
 
+## Housekeeping
+- New Home Page
+- [CPNT 260 Assignment Overview](https://github.com/sait-wbdv/assessments/tree/master/cpnt260)
+- Dailies
+
 ## 1. Centering elements in the viewport
 ### Learning Objectives
 - Wrap web page content in a semantic container.
