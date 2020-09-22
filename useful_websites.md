@@ -8,20 +8,22 @@ Here are some useful websites that I have found in the past
 
 ### Blogs
 
-[Jekyll Now](http://github.com/barryclark/jekyll-now/)
+[Jekyll Now](http://github.com/barryclark/jekyll-now/): Jekyll Now makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
 
-[DNA CONFESSES DATA SPEAKS](https://divingintogeneticsandgenomics.rbind.io)
+[DNA CONFESSES DATA SPEAKS](https://divingintogeneticsandgenomics.rbind.io): computational biologist working on genomics, epigenomics and transcriptomics
 
-[Dave Tang's Blog](https://davetang.org/muse/)
+[Dave Tang's Blog](https://davetang.org/muse/): computational biologist who is interested in genomics & machine learning
 
 [Tim Stuart](https://timoast.github.io/blog/)
+
+[Undergrad in the Lab](https://www.undergradinthelab.com): Tips, tricks, and strategies to get the most out of your undergraduate research experience #UndergradInTheLab
 
   
 ### Repositories
   
-[Greenleaf Lab](https://github.com/GreenleafLab)
+[Greenleaf Lab](https://github.com/GreenleafLab): (sc)ATAC-seq packages and scripts from the Greenleaf LAb
 
-[Pe'er Lab](https://github.com/dpeerlab)
+[Pe'er Lab](https://github.com/dpeerlab): code and scripts from the Dana Pe'er Lab
 
 ### Academia
   
