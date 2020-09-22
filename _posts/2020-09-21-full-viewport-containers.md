@@ -28,7 +28,7 @@ categories: cpnt260
   - [Flexbox Basics and Terminology](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-basics) in the Complete Guide to Flexbox
   - [What are Viewport Units](https://css-tricks.com/fun-viewport-units/#what-are-viewport-units)
 
-See Objective 1 in the [Tissue Illusion Coding Challenge](http://browsertherapy.com/challenges/tissue-contrast/)
+Sample Code: See Objective 1 in the [Tissue Illusion Coding Challenge](http://browsertherapy.com/challenges/tissue-contrast/)
 
 ### Activity: Center a Puppy in the Viewport
 Using this [Puppy Card starter code](https://codepen.io/browsertherapy/pen/mdPWXZb):
@@ -43,7 +43,11 @@ Using this [Puppy Card starter code](https://codepen.io/browsertherapy/pen/mdPWX
 - Create a full viewport hero section using `header` and CSS images.
 - Overlap a readable heading over a hero image using Flexbox, `background-position` and `linear-gradient()`.
 
-See Objective 2 in the [Tissue Illusion Coding Challenge](http://browsertherapy.com/challenges/tissue-contrast/)
+Sample Code:
+- See Objective 2 in the [Tissue Illusion Coding Challenge](http://browsertherapy.com/challenges/tissue-contrast/)
+- [Hero image]({{site.baseurl}}/sample-code/frontend/heros/hero-image) 
+- [Hero image with gradients]({{site.baseurl}}/sample-code/frontend/heros/hero-gradient) 
+
 
 ### Activity: Create a readable hero heading
 Locate the long-form content you marked up last class (if you don't have any, you can use [this sample content](https://codepen.io/browsertherapy/pen/vYGQKqv)). Let's add a hero section to it.
@@ -61,4 +65,5 @@ Locate the long-form content you marked up last class (if you don't have any, yo
 Try to reproduce one or more of the hero sections showcased in this article: [The power of hero image design: 35 striking case studies to inspire your own](https://www.canva.com/learn/hero-images/).
 
 ## Clean-up Time!
+- Set Assignment Due Dates
 - [Tomorrow]({% link _posts/2020-09-22-navigation-colour.md %})
