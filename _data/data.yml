@@ -203,6 +203,14 @@
   url: https://www.northwind.gr/
   category_gr: Ανάκτηση δεδομένων
   category_en: Data recovery
+  location_gr: Πάτρα, Αχαΐα, Ελλάδα
+  location_en: Patras, Achaia, Greece
+
+- company_gr: Datamind
+  company_en: Datamind
+  url: https://www.datamind.gr
+  category_gr: Ανάκτηση δεδομένων
+  category_en: Data recovery
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα και Αθήνα, Αττική, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece and Athens, Attica, Greece
 
@@ -771,16 +779,16 @@
   url: https://www.facebook.com/LennonEcoGastrobar/
   category_gr: Καφετέρια
   category_en: Cafe
-  location_gr: Πάτρα, Ελλάδα
-  location_en: Patras, Greece
+  location_gr: Πάτρα, Αχαΐα, Ελλάδα
+  location_en: Patras, Achaia, Greece
 
 - company_gr: Pytheas Group
   company_en: Pytheas Group
   url: http://www.pytheasgroup.gr
   category_gr: Αμμοβολές
   category_en: Sand blasting specialists
-  location_gr: Πάτρα, Ελλάδα
-  location_en: Patras, Greece
+  location_gr: Πάτρα, Αχαΐα, Ελλάδα
+  location_en: Patras, Achaia, Greece
 
 - company_gr: Apela
   company_en: Apela
