@@ -26,6 +26,7 @@ categories: cpnt260
 - Remove the default styles of an unordered list.
 - Modify links to look like navigation buttons.
 - Create a horizontal navigation bar using Flexbox.
+- Inspect a Flexbox using Developer Tools (currently Firefox-only?).
 
 Sample Code: [Basic Horizontal Navigation]({{site.baseurl}}/sample-code/frontend/navigation/basic-horizontal)
 
