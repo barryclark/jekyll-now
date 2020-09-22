@@ -21,7 +21,7 @@ title: SAIT WBDV Program Schedule
   - [DSGN 270 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/design/assignment-1)
 - F: CPNT 264 Day 1 - Career & Consulting Essentials
 
-Sunday, Sept 20: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-1)
+Sunday, Sept 20 @ 8pm: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-1)
 
 ## Week 3: September 21-25
 - M: CPNT 260 Day 2 - [Full Viewport Containers]({% link _posts/2020-09-21-full-viewport-containers.md %})
@@ -31,12 +31,16 @@ Sunday, Sept 20: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/assess
   - [DSGN 270 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/design/assignment-2)
 - F: CPNT 260 Day 6 - [Fluid Typography]({% link _posts/2020-09-25-fluid-typography.md %})
 
+Sunday, Sept 27 @ 8pm: [CPNT 260 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-1)
+
 ## Week 4: Sep 28 - Oct 2
 - M: CPNT 260 Day 7 - Galleries
 - T: CPNT 260 Day 8 - Hamburger Menus
 - W: CPNT 260 Day 9 - Registration and Login
 - R: CPNT 260 Day 10 - Final Exam
 - F: CPNT 201 Day 3 - Image Optimization
+
+Sunday, Oct 4 @ 8pm: CPNT 260 Assignment 3 Due
 
 ## Week 5: October 5-9
 - M: CPNT 201 Day 4
