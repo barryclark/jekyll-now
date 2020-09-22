@@ -4,6 +4,18 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### September 22nd thoughts & takeaways:
+
+* It's that time of year where the intersection volumes data goes haywire due to some cold fronts and weather. I assume the city just loses communications with the devices for a period of time. I've gone back and filled in the missing data using an intersection average % of the day's total. 
+
+* Obviously this isn't perfect and now I am showing August 28th as a record high traffic day (since March 13). A peak before the Labor Day weekend is now pretty clear as well. This was followed by two weeks of decreasing volumes. 
+
+* The Governor's re-opening plan continued again the past week. This opened restaurants to 75% capacity among other things, however this is definitely not getting the media coverage his "phase 1 re-opening" did back on May 1st. I'll say it again, until in-person school returns we probably won't see any significant increase in traffic volumes.
+
+* Last weekend we saw over 14,000 micromobility trips for the first time since March 6th. The city is classifying all of the vehicles as "scooters" in the data they publish since JUMP e-bikes were removed back in March. The city seems to not include Revel mopeds in this dataset and classifies the Wheels e-bikes as "sit down scooters". 
+
+***
+
 ### September 1st thoughts & takeaways:
 
 * Traffic volumes ticked up again last week. I won't expect this to change that much until Austin schools are back in session.
