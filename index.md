@@ -40,14 +40,17 @@ Sunday, Sept 27 @ 8pm: [CPNT 260 Assignment 1 Due](https://github.com/sait-wbdv/
 - R: CPNT 260 Day 10 - Final Exam
 - F: CPNT 201 Day 3 - Image Optimization
 
-Sunday, Oct 4 @ 8pm: CPNT 260 Assignment 3 Due
+Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-2)
 
 ## Week 5: October 5-9
 - M: CPNT 201 Day 4
 - T: CPNT 201 Day 5
 - W: CPNT 201 Day 6
 - R: CPNT 201 Day 7
+  - [CPNT 260 Assignment 3 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-3)
 - F: CPNT 262 Day 1
+
+Sunday, Oct 11 @ 8pm: [CPNT 260 Final Project Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/final)
 
 ## Week 6: Oct 12-16
 - M: Stat 
