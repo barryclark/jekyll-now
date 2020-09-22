@@ -35,4 +35,5 @@ Here are some useful websites that I have found in the past
 
 [Academic Career Readiness Assessment (ACRA)](https://career.ucsf.edu/phds/academic/acra)
 
+[Mentoring Plans for Postdoctoral Scholars](https://www.nationalpostdoc.org/page/MentoringPlans)
 
