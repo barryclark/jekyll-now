@@ -27,7 +27,7 @@ Sunday, Sept 20 @ 8pm: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/
 - M: CPNT 260 Day 2 - [Full Viewport Containers]({% link _posts/2020-09-21-full-viewport-containers.md %})
 - T: CPNT 260 Day 3 - [Navigation and Colour]({% link _posts/2020-09-22-navigation-colour.md %})
 - W: CPNT 260 Day 4 - [Media Queries and Typography]({% link _posts/2020-09-23-media-queries-typography.md %})
-- R: CPNT 260 Day 5 - [Headers and Footers]({% link _posts/2020-09-24-headers-footers.md %})
+- R: CPNT 260 Day 5 - [Headers, Footers and Cards]({% link _posts/2020-09-24-headers-footers.md %})
   - [DSGN 270 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/design/assignment-2)
 - F: CPNT 260 Day 6 - [Fluid Typography]({% link _posts/2020-09-25-fluid-typography.md %})
 

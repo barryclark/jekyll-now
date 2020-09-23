@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 3R - Headers and Footers
+title: Week 3R - Headers, Footers and Cards
 categories: cpnt260
 ---
 ## Homework
@@ -36,11 +36,12 @@ categories: cpnt260
 
 ## 3. Sticky Footers with GitHub Links
 ### Learning Objectives
-- Push a footer to the bottom of the viewport when there's little content.
-- Add an icon font to a page using pseudo-elements.
+- Using Flexbox, push a footer to the bottom of the viewport when there's little content.
+- Add an icon font to a page using a content delivery network (CDN) and pseudo-elements.
 - Explore the limitations of viewport units on mobile.
 
-### Activity: Deploy a full viewport design to GH Pages
+## Activities: 
+### 1. Deploy a full viewport design to GH Pages
 
 ## Clean-up Time!
 - [Tomorrow]({% link _posts/2020-09-25-fluid-typography.md %})
