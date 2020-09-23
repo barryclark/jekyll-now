@@ -54,4 +54,4 @@ Did hero section example you used this morning come with a live demo?
 
 ## Clean-up Time!
 - Submit a link to today's code in Brightspace.
-- [Tomorrow]({% link _posts/2020-09-23-cards-typography.md %})
+- [Tomorrow]({% link _posts/2020-09-23-media-queries-typography.md %})
