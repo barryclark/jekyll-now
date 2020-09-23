@@ -3,6 +3,9 @@ layout: post
 title: Week 3W - Media Queries and Typography
 categories: cpnt260
 ---
+## Housekeeping
+- [Assignment 1](https://github.com/sait-wbdv/assessments/tree/master/cpnt260)
+
 ## Homework
 1. Review
     - [Responsive Design Cheatsheet]({{site.baseurl}}/cheatsheets/responsive-design/)
