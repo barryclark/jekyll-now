@@ -27,7 +27,7 @@ categories: cpnt260
 3. Declare conditional styles using a `min-width` media query.
 4. Declare conditional styles using an `orientation` media query.
 
-**Source Code**: [Media queries]
+**Source Code**: [Media queries]({{site.baseurl}}/sample-code/frontend/media-queries)
 
 ## 2. Project: Pinball manual 
 ### Learning Objectives
