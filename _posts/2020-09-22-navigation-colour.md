@@ -9,6 +9,7 @@ categories: cpnt260
     - Skim: [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
 2. Values and Units
     - [em and rem units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#Relative_length_units)
+    - [Confused About REM and EM?](https://j.eremy.net/confused-about-rem-and-em/) by Jeremy Church
     - [Why you shouldn't set font-sizes using em](https://youtu.be/pautqDqa54I) by Kevin Powell
 3. Lists and Links
     - Skim: [Styling lists](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists)
