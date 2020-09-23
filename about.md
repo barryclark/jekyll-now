@@ -20,7 +20,7 @@ permalink: /about/
 専門は開発経済学、特に関心がある分野はリスクシェアリング、技術採択、気候変動。
 研究テーマは「お祭りへの出費とリスクシェアリングとの関係」「天候が監査官の仕事に与える影響」など。
 好きな作家は山崎ナオコーラ。
-[Twitter](https://twitter.com/mizuhiro_suzuki) [Github](https://github.com/mizuhirosuzuki)
+[Twitter](https://twitter.com/mizuhiro_suzuki) [GitHub](https://github.com/mizuhirosuzuki)
 
 ### 元橋　一輝（もとはし　かずき）
 タフツ大学経済学部・フレッチャースクール博士課程３年。専門は開発経済学、環境経済学。関心は、発展途上国における環境・健康改善技術の技術採択と社会ネットワークの役割、発展途上国政府の施策の環境面の影響、環境規制の執行とその過程の腐敗など。趣味はヨガでヨガインストラクター養成コースを受講中。スパイスからカレーを作ることもハマりつつある。
