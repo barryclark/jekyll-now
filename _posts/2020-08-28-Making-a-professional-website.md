@@ -4,11 +4,11 @@ title: Making a Professional Website
 tags: tutorials tips
 ---
 
-As a student or early career researcher, you may have seen a trend in professional websites created by your peers. You may have wondered whether or not you, yourself, should make one. In this post, I will give you a couple of reasons on why you should make a website and give a tutorial on how to do so using [GitHub Pages](https://pages.github.com){:target="_blank"}.
+As a student or early-career researcher, you may have seen a trend in professional websites created by your peers. You may have wondered whether or not you, yourself, should make one. In this post, I will give you a couple of reasons why you should make a website and give a tutorial on how to do so using [GitHub Pages](https://pages.github.com){:target="_blank"}.
 
 ## Why make a website?
 
-- The biggest reason that I believe in for creating your own website is to be able to share your research, highlight your progress, and advocate for yourself.
+- The most prominent reason that I believe in when creating your own website is to be able to share your research, highlight your progress, and advocate for yourself.
 
 - Your website also serves as an interactive CV that can provide a more visually appealing platform to present yourself. 
 
@@ -16,7 +16,7 @@ As a student or early career researcher, you may have seen a trend in profession
 
 - You can also use your website as a professional history. You can keep track of your research progress and highlight achievements along the way.
 
-- While websites like LinkedIn and Twitter, can be good sources of visibility. They have their own agenda with set templates for expressing yourself. Having your own website will allow complete control on how you are presented. It lets you control your message.
+- While websites like LinkedIn and Twitter can be good sources of visibility. They have their own agenda with set templates for expressing yourself. Having your own website will allow complete control of how you are presented. It lets you control your message.
 
 ## Create your website
 
