@@ -17,4 +17,7 @@ categories: cpnt260
 - Use CSS math functions to implement fluid typography.
 - Create a fluid typography fallback for `clamp` using `calc()`.
 
-## 2. Open Lab Time
+## 2. Add a presentational logo to a Home link
+- Add a header logo using pseudo-elements and Font Awesome.
+
+## 3. Open Lab Time

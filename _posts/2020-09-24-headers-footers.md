@@ -10,6 +10,7 @@ categories: cpnt260
     - [Responsive Design Cheatsheet]({{site.baseurl}}/cheatsheets/responsive-design/)
     - [Git and GitHub Cheatsheet]({{site.baseurl}}/cheatsheets/git-gh/)
 2. Box Model
+    - Read: [What does auto do in margin:0 auto?](https://stackoverflow.com/questions/3170772/what-does-auto-do-in-margin0-auto/3170774)
     - Watch: [You can do that with margins?](https://youtu.be/Azfj1efPAH0)
 3. Flexbox
     - Watch: [Flexbox items](https://youtu.be/4Oi5xpjoCRk) by Kevin Powell
@@ -24,8 +25,10 @@ categories: cpnt260
 ### Learning Objectives
 - Discuss the most common page header layouts
 - Visually split a primary navigation menu using `margin: auto`.
-- Visually split a primary navigation menu using `align-self`.
 - Create a header with a left-aligned logo and a right-aligned nav menu using nested Flex containers.
+
+**Source Code**: [Split horizontal navigation list with home link]({{site.baseurl}}/sample-code/frontend/page-headers/margin-split)
+
 
 ## 2. Two item Flexbox cards
 ### Learning Objectives
@@ -34,14 +37,17 @@ categories: cpnt260
   - is in a row orientation on desktop, and;
   - is in a column orientation on mobile.
 
-## 3. Sticky Footers with GitHub Links
-### Learning Objectives
-- Using Flexbox, push a footer to the bottom of the viewport when there's little content.
-- Add an icon font to a page using a content delivery network (CDN) and pseudo-elements.
-- Explore the limitations of viewport units on mobile.
+**Source Code**: [Demo: Grow, Shrink and Basis]({{site.baseurl}}/sample-code/frontend/flexbox)
 
-## Activities: 
-### 1. Deploy a full viewport design to GH Pages
+## 3. Lab Time
+### Activites
+1. DSGN 270 Assignment 2
+2. CPNT 260 Assignment 1
+3. Prep for next week: Combine your code from previous classes to create a full home page, containing:
+    - Navigation: Split navigation with a left-aligned Home link and right-aligned navigation menu;
+    - Hero section: Level 1 heading with tagline
+    - Main content: Long-form text
+    - Footer: Basic footer with centred copyright date.
 
 ## Clean-up Time!
 - [Tomorrow]({% link _posts/2020-09-25-fluid-typography.md %})
