@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Week 3F - Fluid Typography
+title: Week 3F - Fluid Typography and Font Icons
 categories: cpnt260
 ---
 ## Homework
 1. CSS math functions
-    - Read: [`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
-    - Read: [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min)
-    - Read: [`max()`](https://developer.mozilla.org/en-US/docs/Web/CSS/max)
     - Read: [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)
+    - Read: [`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+    - Skim: [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min)
+    - Skim: [`max()`](https://developer.mozilla.org/en-US/docs/Web/CSS/max)
 2. Fluid Typography
     - Skim: [Fluid Typography](https://css-tricks.com/snippets/css/fluid-typography/) on CSS Tricks
     - Watch: The first 16 minutes of [Beyond Media Queries](https://vimeo.com/235428198) by Michael Riethmuller (you can stop at _Solving Problems with calc()_)
@@ -19,21 +19,28 @@ categories: cpnt260
     - Read: The pseudo-elements section of [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
 4. Dev Life
     - Read: [Writing CSS Algorithms](https://notlaura.com/writing-css-algorithms/)
+    - Optional Video: [CSS Algorithms](https://youtu.be/panKf9hzUfQ). This is a lecture Lara does that's based on the above article. She talks about how to write algorithms starting [@21:15](https://youtu.be/panKf9hzUfQ?t=1279).
 
 ## 1. Introduction to CSS math functions
 ### Learning Objectives
-- Use CSS math functions to implement fluid typography.
-- Create a fluid typography fallback for `clamp` using `calc()`.
+- Use `clamp()` to implement fluid typography.
+- Optional: Create a fluid typography fallback for `clamp` using `calc()`.
 
-## 2. Add a presentational logo to a Home link
+## 2. Add a presentational icons and HTML entities
 ### Learning Objectives
+- Include Font Awesome Icons into the `head` of an HTML document using a content delivery network (CDN)
 - Add a header logo using pseudo-elements and Font Awesome.
+- Add a copyright symbol to a footer using 
 
 ## 3. Open Lab Time
 ### Learning Objectives
 - Walk-through your code from this week.
-  - What code is not needed?
+  - What code is not needed? Are there any declarations that serve no purpose, either from a failed solution or redundant functionality?
   - What needs to be optimized?
+  - Is the project unfinished? If so, add reminder comments to your code that summarize these objectives for the next time you work on the project. Don't assume your next session will be tomorrow. Projects are often "left on the shelf" for long periods of time between sessions so be descriptive.
+- Optimize
+  - Are there better ways to refactor your CSS to be more efficient/effective based on new knowledge you've gained since you first solved the problem?
+  - Find potentially reusable blocks of code that you can use for other projects. Refactor your type selectors into class selectors so that your declarations are more portable. 
   - Separate the re-usable portions of your code into separate files, such as:
     - reset.css - code that you will include in most projects to reset default browser styles;
     - fonts.css - typeface declarations and imports that might be useful for multiple projects;
