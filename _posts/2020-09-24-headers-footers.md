@@ -37,9 +37,10 @@ categories: cpnt260
 
 ## 3. Lab Time
 ### Activites
-1. DSGN 270 Assignment 2
-2. CPNT 260 Assignment 1
-3. Prep for next week: Combine your code from previous classes to create a full home page, containing:
+1. Card Hunt: You will be working in groups of 3 or 4. Find as many examples of card designs. Take screen caps of the most common configurations. During lab time, try duplicating a card design that interests you.
+2. DSGN 270 Assignment 2
+3. CPNT 260 Assignment 1
+4. Prep for next week: Combine your code from previous classes to create a full home page, containing:
     - Navigation: Split navigation with a left-aligned Home link and right-aligned navigation menu;
     - Hero section: Level 1 heading with tagline
     - Main content: Long-form text
