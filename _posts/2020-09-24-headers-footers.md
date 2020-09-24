@@ -16,11 +16,6 @@ categories: cpnt260
 3. Flexbox
     - Watch: [Flexbox items](https://youtu.be/4Oi5xpjoCRk) by Kevin Powell
     - See: `align-self` in [The Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-4. Footers
-    - Read: [Sticky Footer, Five Ways](https://css-tricks.com/couple-takes-sticky-footer/)
-5. Icon Fonts
-    - Watch: [Setting up Font Awesome icons as pseudo-elements](https://youtu.be/lMBa7gLWyO4)
-    - Read: The pseudo-elements section of [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
 
 ## 1. Internal Page Headers
 ### Learning Objectives

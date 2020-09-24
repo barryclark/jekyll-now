@@ -4,13 +4,21 @@ title: Week 3F - Fluid Typography
 categories: cpnt260
 ---
 ## Homework
-- CSS math functions
-  - Read: [`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
-  - Read: [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min)
-  - Read: [`max()`](https://developer.mozilla.org/en-US/docs/Web/CSS/max)
-  - Read: [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)
-- Skim: [Fluid Typography](https://css-tricks.com/snippets/css/fluid-typography/) on CSS Tricks
-- Watch: The first 16 minutes of [Beyond Media Queries](https://vimeo.com/235428198) by Michael Riethmuller (you can stop at _Solving Problems with calc()_)
+1. CSS math functions
+    - Read: [`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+    - Read: [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min)
+    - Read: [`max()`](https://developer.mozilla.org/en-US/docs/Web/CSS/max)
+    - Read: [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)
+2. Fluid Typography
+    - Skim: [Fluid Typography](https://css-tricks.com/snippets/css/fluid-typography/) on CSS Tricks
+    - Watch: The first 16 minutes of [Beyond Media Queries](https://vimeo.com/235428198) by Michael Riethmuller (you can stop at _Solving Problems with calc()_)
+3. Icon fonts and HTML Entities
+    - Read: [HTML Entities](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Entity_references_Including_special_characters_in_HTML)
+    - Reference: [List of XML and HTML character entity references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
+    - Watch: [Setting up Font Awesome icons as pseudo-elements](https://youtu.be/lMBa7gLWyO4)
+    - Read: The pseudo-elements section of [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
+4. Dev Life
+    - Read: [Writing CSS Algorithms](https://notlaura.com/writing-css-algorithms/)
 
 ## 1. Introduction to CSS math functions
 ### Learning Objectives
@@ -18,6 +26,15 @@ categories: cpnt260
 - Create a fluid typography fallback for `clamp` using `calc()`.
 
 ## 2. Add a presentational logo to a Home link
+### Learning Objectives
 - Add a header logo using pseudo-elements and Font Awesome.
 
 ## 3. Open Lab Time
+### Learning Objectives
+- Walk-through your code from this week.
+  - What code is not needed?
+  - What needs to be optimized?
+  - Separate the re-usable portions of your code into separate files, such as:
+    - reset.css - code that you will include in most projects to reset default browser styles;
+    - fonts.css - typeface declarations and imports that might be useful for multiple projects;
+    - main.css - project-specific code that you have optimized and cleaned-up.
