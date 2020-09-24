@@ -7,6 +7,7 @@ categories: cpnt260
 1. Review
     - [Document and Website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
     - [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML)
+    - [`flex` property](https://css-tricks.com/almanac/properties/f/flex/)
     - [Responsive Design Cheatsheet]({{site.baseurl}}/cheatsheets/responsive-design/)
     - [Git and GitHub Cheatsheet]({{site.baseurl}}/cheatsheets/git-gh/)
 2. Box Model
