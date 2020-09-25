@@ -37,6 +37,8 @@ categories: cpnt260
 - Use `clamp()` to implement fluid typography.
 - Optional: Create a fluid typography fallback for `clamp` using `calc()`.
 
+**Sample Code**: [Basic Fluid Typography]({{site.baseurl}}/sample-code/frontend/fluid-typography/margin-split)
+
 ## 3. Open Lab Time
 ### Learning Objectives
 - Walk-through your code from this week.
