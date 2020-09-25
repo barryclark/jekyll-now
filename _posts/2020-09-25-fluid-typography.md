@@ -43,11 +43,11 @@ categories: cpnt260
 
 ## 3. Open Lab Time
 ### Learning Objectives
-- Walk-through your code from this week.
+- **Walk-through** your code from this week.
   - What code is not needed? Are there any declarations that serve no purpose, either from a failed solution or redundant functionality?
   - What needs to be optimized?
   - Is the project unfinished? If so, add reminder comments to your code that summarize these objectives for the next time you work on the project. Don't assume your next session will be tomorrow. Projects are often "left on the shelf" for long periods of time between sessions so be descriptive.
-- Optimize
+- **Optimize**
   - Are there better ways to refactor your CSS to be more efficient/effective based on new knowledge you've gained since you first solved the problem?
   - Find potentially reusable blocks of code that you can use for other projects. Refactor your type selectors into class selectors so that your declarations are more portable. 
   - Separate the re-usable portions of your code into separate files, such as:
