@@ -16,8 +16,10 @@ categories: cpnt260
     - Read: [HTML Entities](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Entity_references_Including_special_characters_in_HTML)
     - Reference: [List of XML and HTML character entity references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
     - Read: [Font Awesome - Basic Use](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
+    - Advanced: Font Awesome using pseudo-elements
         - Read: The pseudo-elements section of [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
-        - Advanced: [Setting up Font Awesome icons as pseudo-elements](https://youtu.be/lMBa7gLWyO4)
+        - Watch: [Before and After pseudo elements explained](https://youtu.be/zGiirUiWslI)
+        - Watch: [Setting up Font Awesome icons as pseudo-elements](https://youtu.be/lMBa7gLWyO4)
 4. Dev Life
     - Read: [Writing CSS Algorithms](https://notlaura.com/writing-css-algorithms/)
     - Optional Video: [CSS Algorithms](https://youtu.be/panKf9hzUfQ). This is a lecture Lara does that's based on the above article. She talks about how to write algorithms starting [@21:15](https://youtu.be/panKf9hzUfQ?t=1279).
