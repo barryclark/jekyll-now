@@ -54,3 +54,6 @@ categories: cpnt260
     - reset.css - code that you will include in most projects to reset default browser styles;
     - fonts.css - typeface declarations and imports that might be useful for multiple projects;
     - main.css - project-specific code that you have optimized and cleaned-up.
+
+## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-09-28-grid-layout-galleries.md %})
