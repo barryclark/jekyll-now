@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 3F - Fluid Typography and Font Icons
+title: Week 3F - Fluid Typography and Icon Fonts
 categories: cpnt260
 ---
 ## Homework
