@@ -34,10 +34,10 @@ Sunday, Sept 20 @ 8pm: [CPNT 201 Assignment 1 Due](https://github.com/sait-wbdv/
 Sunday, Sept 27 @ 8pm: [CPNT 260 Assignment 1 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-1)
 
 ## Week 4: Sep 28 - Oct 2
-- M: CPNT 260 Day 7 - Galleries
-- T: CPNT 260 Day 8 - Hamburger Menus
-- W: CPNT 260 Day 9 - Registration and Login
-- R: CPNT 260 Day 10 - Final Exam
+- M: CPNT 260 Day 7 - [Galleries and Grid Layout]({% link _posts/2020-09-28-grid-layout-galleries.md %})
+- T: CPNT 260 Day 8 - [Registration and Login]({% link _posts/2020-09-29-login-registration.md %})
+- W: CPNT 260 Day 9 - [Progressive Enhancement]({% link _posts/2020-09-30-progressive-enhancement.md %})
+- R: CPNT 260 Day 10 - [Search Strategies, Final Exam]({% link _posts/2020-09-30-progressive-enhancement.md %})
 - F: CPNT 201 Day 3 - Image Optimization
 
 Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-2)
