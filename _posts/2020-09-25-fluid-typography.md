@@ -29,7 +29,7 @@ categories: cpnt260
 - Add a copyright symbol to a footer using 
 
 **Sample Code** 
-- See Font Awesome in [Icon Font Sample Code]({{site.baseurl}}/sample-code/frontend/page-headers/margin-split)
+- See Font Awesome in [Icon Font Sample Code]({{site.baseurl}}/sample-code/frontend/icon-fonts)
 - HTML Entities
 
 ## 2. Introduction to CSS math functions
@@ -37,7 +37,7 @@ categories: cpnt260
 - Use `clamp()` to implement fluid typography.
 - Optional: Create a fluid typography fallback for `clamp` using `calc()`.
 
-**Sample Code**: [Basic Fluid Typography]({{site.baseurl}}/sample-code/frontend/fluid-typography/margin-split)
+**Sample Code**: [Basic Fluid Typography]({{site.baseurl}}/sample-code/frontend/fluid-typography)
 
 ## 3. Open Lab Time
 ### Learning Objectives
