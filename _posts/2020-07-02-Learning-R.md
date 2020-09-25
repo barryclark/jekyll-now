@@ -14,6 +14,9 @@ This is a curated collection of R educational materials for learning R. I will a
 
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/){:target="_blank"}
 
+- [An Introduction to Statistical Learning with Applications in R](http://faculty.marshall.usc.edu/gareth-james/ISL/){:target="_blank"}
+
+
 ## Tutorials/Workshops
 
 - [R Tutorial for Beginners: Learn R Programming Language](https://www.guru99.com/r-tutorial.html){:target="_blank"}
