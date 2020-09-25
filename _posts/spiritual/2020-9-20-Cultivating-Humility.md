@@ -1,19 +1,22 @@
 ---
 layout: post
-title: Five Qualities of a Good Devotee 
+title: Cultivating Humility  
 ---
 
-![_config.yml]({{ site.baseurl }}/images/daya-mata.jpg)  
+**1. Realize youself as a soul and not this body and this mind** 
 
-**1. Develop Sincere Yearning For God**
 
-**2. Loyalty and Dedication to God and to the Guru Whose Path One Chooses.**
+**2. Know that all are children of God** 
 
-**3. Behave in a way to Inspire Others Towards God**  
+**3. Have Gratitude towards God and Guru**
 
-**4. Strive Constantly for Humility** 
+**4. Observe and Learn from others**
+All the capabilities that this mind has collected have come from grade of God 
+and these are purely to serve the purpose of God. If you are able to do something
+that can help others then have that gratitude towards God. Have that sincerity
+and serve sincerely to those God has counted you for.  
 
-**5. Set Aside Time Every Day for Meditation**
+**5. Uplift weak, poor and those who are in need** 
 
-Reference:
-*These are taken from a Chapter Qualities of a Devotee by Gyan Mata ~ Only Love*
+ 
+

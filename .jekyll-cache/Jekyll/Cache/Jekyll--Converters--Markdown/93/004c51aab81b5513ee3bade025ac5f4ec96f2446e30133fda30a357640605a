@@ -1,0 +1,22 @@
+I"�<blockquote>
+  <p>docker pull ubuntu  
+docker run -i -t ubuntu:latest /bin/bash</p>
+</blockquote>
+
+<h5 id="saving-changes-to-docker">saving changes to docker</h5>
+<blockquote>
+  <p>docker commit 9aefd4092ca5 ubuntu-react:v10</p>
+</blockquote>
+
+<h5 id="running-docker-on-a-port-with-a-volume-mount">running docker on a port with a volume mount</h5>
+<blockquote>
+  <p>docker run -i -t -p 3001:3000 -v /Users/kumarman/git-projects/reactdocker/my-app:/my-app ubuntu-react:v10 /bin/bash -c “cd my-app/ &amp;&amp; npm start”
+path is absolute here</p>
+</blockquote>
+
+<blockquote>
+  <p>use cp command to copy whole directory as well 
+sdfsdfdsfsd
+sdfsdfdsfsd</p>
+</blockquote>
+:ET

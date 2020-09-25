@@ -1,0 +1,52 @@
+I"�<p><img src="/images/bamboo.png" alt="_config.yml" /></p>
+
+<p><img src="/images/bamboo-stages.png" alt="_config.yml" /></p>
+
+<p><img src="/images/bamboo-tasks.png" alt="_config.yml" /></p>
+
+<p>Bamboo: Tool for build and automated deployement. 
+At schoology: used for build mostly.</p>
+
+<p>There are Stages and Tasks</p>
+
+<p>Each stage has set of tasks. Different types of tests like unit tests, UI Tests,
+Integration tests etc.</p>
+
+<p>Madan Kapoor  7:35 PM
+https://bitbucket.schoologize.com/projects/SYS/repos/chef-policies/browse</p>
+
+<p>Manoj Kumar  7:35 PM
+okay</p>
+
+<p>Madan Kapoor  7:35 PM
+A policy file for bamboo docker agent https://bitbucket.schoologize.com/projects/SYS/repos/chef-policies/browse/bamboo-docker-agent/Policyfile.rb
+7:35
+it has a list of recipes and attributes</p>
+
+<p>Manoj Kumar  7:35 PM
+okay
+New</p>
+
+<p>Madan Kapoor  7:35 PM
+recipes are present in cookbooks in https://bitbucket.schoologize.com/projects/SYS/repos/chef-repo/browse/cookbooks</p>
+
+<p>for installation of datadog , docker etc
+New
+7:36
+default[‘bamboo’][‘agent_capabilities’][‘isolated_build’] = true
+default[‘bamboo’][‘agent_capabilities’][‘system.builder.command.jq’] = ‘/usr/bin/jq’
+default[‘bamboo’][‘agent_capabilities’][‘system.builder.command.aws’] = ‘/usr/local/bin/aws’
+default[‘bamboo’][‘agent_capabilities’][‘system.builder.command.python’] = ‘/usr/bin/python’
+7:36
+extra capabilities
+7:36
+apart from docker</p>
+
+<p>Madan Kapoor  7:42 PM
+We are using docker image schoology-docker.jfrog.io/node-build:10.15
+7:42
+https://bitbucket.schoologize.com/projects/DKR/repos/node-build/browse</p>
+
+<p>7:42
+https://bitbucket.schoologize.com/projects/APP/repos/msft-teams/browse/Makefile#22</p>
+:ET

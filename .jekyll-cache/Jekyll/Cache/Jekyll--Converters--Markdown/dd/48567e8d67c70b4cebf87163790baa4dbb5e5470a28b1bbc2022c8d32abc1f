@@ -1,0 +1,34 @@
+I"Û<p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
+
+<h4 id="why-i-used-jekyll-and-github-for-my-blogs-">Why I used Jekyll and GitHub for my Blogs ?</h4>
+<ol>
+  <li>I wanted to be able to write from plain text editor rather than using OneNote or any other notebook.</li>
+  <li>I wanted source control of my blogs</li>
+  <li>I wanted versioning of my blogs</li>
+</ol>
+
+<h4 id="process-of-installing-jekyll-and-using-it">process of installing Jekyll and using it</h4>
+<ul>
+  <li><a href="https://howchoo.com/git/how-to-blog-in-markdown-using-github-and-jekyll-now">How to blog in markdown and jekyll</a></li>
+  <li><a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/">Build-blog-jekyll-github-pages</a></li>
+</ul>
+
+<h4 id="commands-for-installing-jekyll">Commands for installing Jekyll</h4>
+<ol>
+  <li>sudo gem install github-pages</li>
+  <li>jekyll serve â€“watch (starts server at 4000 port)</li>
+  <li>sudo gem install bundler</li>
+</ol>
+
+<h4 id="installing-theme-documentation">Installing theme documentation</h4>
+
+<h4 id="markdown-quick-reference">Markdown quick reference</h4>
+<p><a href="https://www.markdownguide.org/tools/jekyll/">Markdown Guilde to Jekyll</a></p>
+
+<h3 id="making-jekyll-work-with-github-pages">Making Jekyll work with Github Pages</h3>
+<p><a href="https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source">Getting started with Github Pages</a>
+<br />
+As of now this is not working so well. So i will be working upon it to improve it.</p>
+
+<p><a href="https://www.markdownguide.org/basic-syntax/">Markdown Basics</a></p>
+:ET

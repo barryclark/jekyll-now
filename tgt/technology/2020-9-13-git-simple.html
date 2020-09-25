@@ -1,0 +1,95 @@
+<p>Here we will discuss few simple commands in Git as per git flow.</p>
+
+<h4 id="start-with-basics">Start with Basics</h4>
+<p>there are two ways you will get started on git repos.</p>
+<ol>
+  <li>you will create a repo in git UI and then clone it - I prefer this</li>
+  <li>Run git init in a folder and then create a repo</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">git</code>
+provides lists of commands available</p>
+
+<p><code class="language-plaintext highlighter-rouge">git &lt;command&gt; -h</code>
+provides list of options for each command</p>
+
+<p><code class="language-plaintext highlighter-rouge">git init</code>
+initialises a folder to start creating a repo.</p>
+
+<h4 id="working-with-branches">working with branches</h4>
+<p>After cloning repo from git, you would like to create a branch to make your 
+commits and then later on merge this branch into master branch. 
+<code class="language-plaintext highlighter-rouge">git checout -b branch</code> <br />
+creates a local branch and also switches you to the branch. 
+make some changes in files.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git status</code> <br />
+Gives you list of modified files</p>
+
+<p><code class="language-plaintext highlighter-rouge">git diff &lt;filename&gt;</code> <br />
+you can see what changes you have made to a file</p>
+
+<p><code class="language-plaintext highlighter-rouge">git add &lt;filename or . or -A&gt;</code> <br />
+Adds files to the list of files to be committed. 
+-A adds all files recursively</p>
+
+<p><code class="language-plaintext highlighter-rouge">git commit -m "commit message"</code> <br />
+<a href="https://www.conventionalcommits.org/en/v1.0.0-beta.2/">conventional commits</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">git push origin mybranch1</code> <br />
+this command pushes your changes to remote branch</p>
+
+<h3 id="merging-in-github">Merging in GitHub</h3>
+<p>Mostly you will be merging the branch to master via pull request. In a pull
+request you will expect other reviewers to review your changes prior to 
+merging the changes.</p>
+
+<p>There are few options:</p>
+<ol>
+  <li>Create a merge commit</li>
+  <li>Squash and merge</li>
+  <li>Rebase and merge</li>
+</ol>
+
+<h5 id="create-a-merge-commit">Create a merge Commit</h5>
+<p>First, you need to switch to master using the git checkout command, as follows:</p>
+
+<p><code class="language-plaintext highlighter-rouge">git checkout master</code> <br />
+You can now execute the git merge command to merge the new feature into the master branch:</p>
+
+<p><code class="language-plaintext highlighter-rouge">git merge remotes/origin/mybranch1</code> <br />
+If this step is completed successfully, your feature_1_beta branch will be fully integrated with the master branch.</p>
+
+<p><em>Troubleshooting 1</em><br />
+There are git conflicts <br />
+When Git encounters a conflict, it adds 
+«««&lt; and ======= to highlight the parts that caused the conflict 
+and need to be resolved.</p>
+
+<p><em>Troubleshooting 2</em><br />
+fatal: refusing to merge unrelated histories
+git merge remotes/origin/mybranch1 –allow-unrelated-histories
+using this option it is able to merge it. I still need to dig more into 
+why getting this error.</p>
+
+<h5 id="squash-and-merge">Squash and merge</h5>
+<p>It squashes all commits into a single commit in master. Good if you do not 
+want to preserve history of commits in branch.</p>
+
+<p><img src="/images/squash vs merge.png" alt="_config.yml" /></p>
+
+<h5 id="rebase-and-merge">Rebase and merge</h5>
+<p><code class="language-plaintext highlighter-rouge">git:(mybranch2)$ git rebase master</code>
+when above command is issues from mybranch2
+then in case master is ahead of mybranch2 then all changes
+from master will come into mybranch2 
+It resets the header to latest commits before merge (I need to check more on this
+) but may be it helps in resolving conflicts.</p>
+
+<h4 id="delete-a-remote-branch">delete a remote branch</h4>
+<p><code class="language-plaintext highlighter-rouge">git push origin --delete mybranch1</code>
+this cannot be done by git branch -d command</p>
+
+<h5 id="lists-all-branches">lists all branches</h5>
+<p><code class="language-plaintext highlighter-rouge">git branch -a</code> <br />
+lists all remote and local branches</p>
