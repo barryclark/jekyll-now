@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: 2020 Is A Mental State 
+title: 2020 is a Mental State 
 ---
 
 It's been a while, hasn't it? 
