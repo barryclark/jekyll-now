@@ -4,7 +4,6 @@ title: "Playing Cards Against Containers in support of Black Girls Code - Livest
 description: "Watch a livestreamed game of Cards Against Containers with Cheryl Hung, VP Ecosystem at CNCF"
 image: /images/2020-08-18-cards-against-containers-for-a-cause.png
 video: https://www.youtube.com/embed/Z79214RpmFk
-published: false
 tags:
   - Video
   - "2020"

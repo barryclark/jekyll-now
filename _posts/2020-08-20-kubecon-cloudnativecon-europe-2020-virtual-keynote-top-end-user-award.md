@@ -4,7 +4,6 @@ title: "Keynote: CNCF Top End User Award 2020 - KubeCon Europe 2020"
 description: "Watch Zalando receive the CNCF Top End User Award 2020, presented by Cheryl Hung, VP Ecosystem at CNCF"
 image: https://i.ytimg.com/vi/DoNKJAHfGak/hqdefault.jpg
 video: https://www.youtube.com/embed/DoNKJAHfGak
-published: false
 tags:
   - Video
   - "2020"

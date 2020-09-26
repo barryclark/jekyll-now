@@ -4,7 +4,6 @@ title: "End User Community Adoption of Cloud Native Principles & Lessons Learned
 description: "Watch a panel with Mastercard, Spotify, Condé Nast and Lunar, with Cheryl Hung, VP Ecosystem at CNCF"
 image: https://i.ytimg.com/vi/sAiOqSmN-B0/hqdefault.jpg
 video: https://www.youtube.com/embed/sAiOqSmN-B0
-published: false
 tags:
   - Video
   - "2020"
