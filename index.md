@@ -225,7 +225,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2020-09-22
+Τελευταία ενημέρωση: 2020-09-27
 
 <!-- <div class="posts">
   {% for post in site.posts %}

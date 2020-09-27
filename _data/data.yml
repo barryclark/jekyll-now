@@ -86,6 +86,14 @@
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
+- company_gr: Dolce Kazana
+  company_en: Dolce Kazana
+  url: https://www.facebook.com/Dolce-Kazana-208130476055820
+  category_gr: Ζαχαροπλαστείο
+  category_en: Patisserie
+  location_gr: Θεολόγος, Φθιώτιδα, Ελλάδα
+  location_en: Theologos, Fthiotida, Greece
+
 - company_gr: Delta Strom
   company_en: Delta Strom
   url: https://deltastrom.com
@@ -203,16 +211,16 @@
   url: https://www.northwind.gr/
   category_gr: Ανάκτηση δεδομένων
   category_en: Data recovery
-  location_gr: Πάτρα, Αχαΐα, Ελλάδα
-  location_en: Patras, Achaia, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα και Αθήνα, Αττική, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece and Athens, Attica, Greece
 
 - company_gr: Datamind
   company_en: Datamind
   url: https://www.datamind.gr
   category_gr: Ανάκτηση δεδομένων
   category_en: Data recovery
-  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα και Αθήνα, Αττική, Ελλάδα
-  location_en: Thessaloniki, Macedonia, Greece and Athens, Attica, Greece
+  location_gr: Πάτρα, Αχαΐα, Ελλάδα
+  location_en: Patras, Achaia, Greece
 
 - company_gr: Ratio Legal Services
   company_en: Ratio Legal Services

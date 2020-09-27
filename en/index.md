@@ -60,7 +60,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2020-09-22
+Last update: 2020-09-27
 
 <!-- <div class="posts">
   {% for post in site.posts %}
