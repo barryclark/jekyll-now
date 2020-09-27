@@ -80,6 +80,8 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Μη-τεχνικό βιβλίο για την ιστορία του Bitcoin: [Digital Gold](https://www.harpercollins.com/9780062572066/digital-gold/)
 - Μη-τεχνικά βιβλία για τη χρησιμότητα του Bitcoin: [The Internet of Money](https://theinternetofmoney.info)
 - Τεχνικό βιβλίο για το Bitcoin: [Mastering Bitcoin](https://bitcoinbook.info)
+- Τεχνικό βιβλίο για το Bitcoin: [Programming Bitcoin](https://programmingbitcoin.com)
+- Τεχνικό βιβλίο για το Bitcoin: [Bitcoin Programming](https://kkarasavvas.com/assets/bitcoin-textbook.pdf)
 - [Άλλα βιβλία](https://www.lopp.net/bitcoin-information/books.html)
 
 ### <a name="compare"></a>Σε τι διαφέρει το Bitcoin από μετρητά, από καταθέσεις στην τράπεζα, από το χρυσό και τις πιστωτικές κάρτες;
