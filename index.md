@@ -23,7 +23,6 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Ποια είναι η τρέχουσα ισοτιμία του Bitcoin σε Ευρώ;](#exchangerate)
 - [Διάβασα ότι στην Ευρωπαϊκή Ένωση οι συναλλαγές με Bitcoin εξαιρούνται από το ΦΠΑ, είναι αλήθεια;](#VAT)
 - [Πως μπορώ να δω μια πληρωμή με Bitcoin από κοντά;](#demo)
-- [Έχω Bitcoin και θέλω να καταθέσω Ευρώ σε λογαριασμό τρίτου σε Ελληνική τράπεζα ή σε τράπεζα της Ευρωζώνης](#bitcointosepa)
 - [Πως μπορώ να δεχτώ έμβασμα σε τράπεζα της Ευρωζώνης και να μετατρέψω τα Ευρώ σε Bitcoin;](#sepatobitcoin)
 - [Πως θα διαφημίσω ότι δέχομαι Bitcoin ως τρόπο πληρωμής;](#promote)
 - [Ποια άλλα κρυπτονομίσματα υπάρχουν πέρα από το Bitcoin;](#cryptocurrencies)
@@ -66,11 +65,9 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Στα 60+ Bitcoin ATM που εμφανίζει ο χάρτης της [Coin ATM Radar](https://coinatmradar.com/country/83/bitcoin-atm-greece/). Τα περισσότερα από αυτά ανήκουν στην [Bcash Greece](https://bcash.eu/gr/) ([δείτε τα βίντεο με οδηγίες χρήσης](https://www.youtube.com/channel/UCo4WSs5gFgp9RgvR2f-1okg/videos)) και στην [iQ CashNow](https://www.iqcashnow.com/?lang=el).
 
 - Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
-- Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες. <strike>Ένα ανταλλακτήριο που δέχεται Ελληνικές κάρτες είναι το Coinbase και χρεώνει 3,99%. Το Coinbase κάνει δεκτές μόνο κάρτες στις οποίες έχει ενεργοποιηθεί ο μηχανισμός 3D Secure για ασφαλείς συναλλαγές στο Internet. Για τις κάρτες Visa αυτός ο μηχανισμός είναι γνωστός ως Verified by Visa και για τις κάρτες MasterCard είναι γνωστός ως MasterCard SecureCode. Κάρτες που πρόσφατα (2017) έγιναν δεκτές στο Coinbase είναι χρεωστικές κάρτες της Alpha Bank και της Eurobank. Η Τράπεζα Πειραιώς δεν υποστηρίζει πλέον 3D Secure στις κάρτες της.</strike>
-- <strike>Στο ανταλλακτήριο www.btcgreece.com που δέχεται εμβάσματα σε Ελληνικό τραπεζικό λογαριασμό.</strike>
+- Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες.
 - Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [[Localbitcoins](https://localbitcoins.com/), στο [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), στο [HodlHodl](https://hodlhodl.com), στο [Bisq](https://bisq.network) ή στο [Paxful](https://paxful.com). Με αυτούς μπορείτε να ανταλλάξετε Ευρώ με όποιον τρόπο θέλετε π.χ. χέρι-με-χέρι, Paypal, Western Union, Πειραιώς Λεφτά Στο Λεπτό, τραπεζική μεταφορά κλπ.
 - Από το ανταλλακτήριο [BCash](https://bcash.gr/) με κατάθεση σε Ελληνική τράπεζα μέχρι €5000 την ημέρα με προμήθεια 9%.
-- <strike>Από το ανταλλακτήριο Chip-Chap με κατάθεση μετρητών στα μηχανήματα EasyPay της Τράπεζας Πειραιώς.</strike>
 
 ### <a name="bitcoin.org"></a>Που μπορώ να μάθω περισσότερα για το Bitcoin;
 
@@ -165,18 +162,11 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 Επισκευτείτε κάποιο από τα καταστήματα του πίνακα. Ελάτε σε κάποια [συνάντησή μας στην Αθήνα](https://www.meetup.com/BlockchainGreece-0/) ή στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/). Γράψτε στο [Ελληνικό τμήμα του Bitcoin Talk](https://bitcointalk.org/gr). Γραφτείτε στο [Slack](http://bitcoingreece.herokuapp.com) (online chat) μας. Δείτε αυτό το [βίντεο](https://www.youtube.com/watch?v=9qgqPvc6kgM) για το πως φτιάχνετε ένα πορτοφόλι και στέλνετε και λαμβάνετε Bitcoin.
 
-### <a name="bitcointosepa"></a> Έχω Bitcoin και θέλω να καταθέσω Ευρώ σε λογαριασμό τρίτου σε Ελληνική τράπεζα ή σε τράπεζα της Ευρωζώνης
-
-Μπορείτε να χρησιμοποιήσετε κάποια από αυτές τις υπηρεσίες:
-
-- [Bitwala](https://bitwa.la)
-- [AAVE](https://pay.aave.com)
-
 ### <a name="sepatobitcoin"></a> Πως μπορώ να δεχτώ έμβασμα σε τράπεζα της Ευρωζώνης και να μετατρέψω τα Ευρώ σε Bitcoin;
 
 Μπορείτε να χρησιμοποιήσετε:
 
-- <strike>www.cashila.com</strike>
+- Η [Bitwala](https://bitwala.com) προσφέρει λογαριασμούς Ευρώ με δικό σας IBAN και πορτοφόλια Bitcoin.
 
 ### <a name="promote"></a>  Πως θα διαφημίσω ότι δέχομαι Bitcoin ως τρόπο πληρωμής;
 
