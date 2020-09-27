@@ -210,7 +210,6 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 - Bitcoin nodes που τρέχουν στην [Ελλάδα](https://bitnodes.earn.com/nodes/?q=Greece) και στην [Κύπρο](https://bitnodes.earn.com/nodes/?q=Cyprus)
 - Το [Coinomi multicurrency wallet](https://coinomi.com)
-- Το [Arctus multicurrency wallet](https://arctus.io)
 - Το [University of Nicosia δωρεάν MOOC Introduction to Digital Currencies και το MSc in Digital Currency](https://digitalcurrency.unic.ac.cy)
 - Η [Synaphea](https://synaphea.com) Enterprise Blockchain Solutions
 - Η [norbloc](https://norbloc.com)
@@ -223,6 +222,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Η [Bcash Greece](https://bcash.gr) φτιάχνει Bitcoin ATMs
 - Η συμβουλευτική [SignedBlock](https://signedblock.com)
 - Η [mytracknet](https://www.mytracknet.com)
+- Η [BLOCK.CO](https://block.co)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
