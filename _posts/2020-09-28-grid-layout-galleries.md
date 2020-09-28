@@ -6,6 +6,7 @@ categories: cpnt260
 ## Homework
 1. [Flexbox vs. CSS Grid — Which is Better?](https://youtu.be/hs3piaN4b5I) by Jenn Simmons
 2. CSS Grid Basics
+    - Read: [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
     - Watch: [The Big Picture: Grid Basics](https://youtu.be/FEnRpy9Xfes) by Jenn Simmons
     - Watch: [Defining a Grid](https://gridbyexample.com/video/series-define-a-grid/) by Rachel Andrew
     - Watch: [The fr unit](https://gridbyexample.com/video/series-the-fr-unit/) by Rachel Andrew
@@ -16,12 +17,23 @@ categories: cpnt260
     - Watch: [Using Flexbox + CSS Grid Together: Easy Gallery Layout](https://youtu.be/dQHtT47eH0M) by Jenn Simmons
 4. For Wednesday: [7-Part Series - Resilient CSS](https://www.youtube.com/playlist?list=PLbSquHt1VCf1kpv9WRGMCA9_Nn4vCLZ9Y) by Jenn Simmons
 
-## 1. CSS Grid Layout Crash Course
+## 1. Classic two-column layout with CSS Grid
 ### Learning Objectives
+1. Define a grid container with `display: grid`.
+2. Define the columns of a grid container with `grid-template-columns` and the `fr` unit.
+3. Span a `header` and `footer` across two columns with `grid-column`.
+4. Create a gutter between items with `grid-gap`.
 
-## 2. Flexbox and Grid Galleries
+**Sample Code**: [Grid Examples]({{site.baseurl}}/sample-code/frontend/grid/)
+
+## 3. Simple Flexbox Gallery
 ### Learning Objectives
+1. Define a flex container container 6 or more square Lorem Picsum images as items.
+2. Set the container to wrap the items into more than one line.
+3. Justify the items within the container so that the last line of items is always centered.
+4. Reduce the number of flex items to 3. Are the items large/small enough at different screen widths?
 
-## Activities: 
+See Example 1 below:
+- [Gallery Examples]({{site.baseurl}}/sample-code/frontend/galleries/) sample code.
 
 ## Clean-up Time!
