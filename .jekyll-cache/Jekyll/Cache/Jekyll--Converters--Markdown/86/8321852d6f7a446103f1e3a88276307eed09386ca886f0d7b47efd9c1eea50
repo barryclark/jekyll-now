@@ -1,0 +1,15 @@
+I"„<h5 id="unicorn">Unicorn</h5>
+<p>Someone with unique skills. difficult to hire and find.</p>
+
+<h5 id="cdn">CDN</h5>
+<p>Its distributed storage i am assuming like Haddop.</p>
+
+<h5 id="cloudfront">CloudFront</h5>
+<p>Its CDN Service by AWS</p>
+
+<h5 id="route-53">Route 53</h5>
+<p>For getting public domains</p>
+
+<h5 id="edge-locations">Edge locations</h5>
+<p>For DNS Entries of websites</p>
+:ET

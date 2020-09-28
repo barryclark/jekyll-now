@@ -1,0 +1,80 @@
+I"Ã
+<p>https://stackabuse.com/authentication-and-authorization-with-jwts-in-express-js/</p>
+
+<h5 id="difference-between-oauth-10-and-20">Difference between Oauth 1.0 and 2.0</h5>
+<p>OAuth 1.0 only handled web workflows, but OAuth 2.0 considers non-web clients as well. Better separation of duties. Handling resource requests and handling user authorization can be decoupled in OAuth 2.0. Basic signature workflow.</p>
+
+<h5 id="introduce-middleware">Introduce middleware</h5>
+<p>We introduced express middleware in order to perform this authentication
+prior to calling the client application. In our case client application
+is rendered at server side so we did not have to pass any tokens
+to this application.</p>
+
+<h5 id="how-oath-signatures-are-generated">How Oath Signatures are Generated</h5>
+<p>Oath signature is generated based on below method: <br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   const oauth_signature = crypto  
+     .createHmac('sha1', signing_key) 
+     .update(signature_base_string) 
+     .digest() 
+     .toString('base64'); 
+</code></pre></div></div>
+
+<h5 id="full-code-including-constructing-base-string">Full code including constructing base string</h5>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    const encodedKey = encodeURIComponent(k);
+    const encodedValue = escape(ordered[k]); // in our case had to skip certain elements 
+
+    // in our case had to re-encode certain parameters
+    if (encodedParameters === '') {
+      encodedParameters += encodeURIComponent(`${encodedKey}=${encodedValue}`);
+    } else {
+      encodedParameters += encodeURIComponent(`&amp;${encodedKey}=${encodedValue}`);
+    }
+
+  const method = 'POST';
+  const base_url = 'http://localhost:3000/';
+  const encodedUrl = encodeURIComponent(base_url);
+  const signature_base_string = `${method}&amp;${encodedUrl}&amp;${encodedParameters}`;
+
+  const secret_key = `yoursecretkey`; // this needs to be moved to config later
+  const signing_key = `${secret_key}&amp;`; //as token is missing in our case.
+  const crypto = require('crypto');
+
+  const oauth_signature = crypto
+    .createHmac('sha1', signing_key)
+    .update(signature_base_string)
+    .digest()
+    .toString('base64');
+</code></pre></div></div>
+
+<p>Its important here to know how the signature_base_string is formed. 
+In our case, this was formed by http method (POST or GET), url that 
+is to be called (redirect url) and then all the parameters that 
+form post is doing. How signature is constructed should be published by the receiver.
+This was the main issue in our implementation. There were several
+parameters that were re-encoded and that ended up inserting additional 
+characters.</p>
+
+<p>Below url helped me in doing some quick experiments and trying to match 
+string used by calling application. 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent#:~:text=The%20encodeURIComponent()%20function%20encodes,two%20%22surrogate%22%20characters">Encoding</a></p>
+
+<h5 id="how-to-match-base-string">How to match base string</h5>
+<p>In order match base string, i used vimdiff. I put two windows side by side
+and ensure their width was same by matching first line (fortunately 
+first line was matching). Then we matched line by line (since its all wrapped)
+so this was a laborious exercise. But by looking at each parameters we could 
+figure out where the problems were. Using above url we encoded twice and checked
+if it was a double encoding problem.</p>
+
+<h5 id="escape-function">escape function</h5>
+<p>This function replaces colon (:) by %3A.</p>
+
+<h5 id="references-">References <br /></h5>
+<p>Best Article: 
+<a href="https://medium.com/@pandeysoni/how-to-create-oauth-1-0a-signature-in-node-js-7d477dead170">Create Oath1.0 Signature</a> <br />
+<a href="https://oauth1.wp-api.org/docs/advanced/Web.html">Oath wp documentation</a> <br />
+<a href="https://meyerweb.com/eric/tools/dencoder/">Decode url</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent#:~:text=The%20encodeURIComponent()%20function%20encodes,two%20%22surrogate%22%20characters">Encoding Experiment</a></p>
+
+:ET
