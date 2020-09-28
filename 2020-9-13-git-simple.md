@@ -1,7 +1,4 @@
----
-layout: post
-title: Git Simple Commands !
----
+### Git Simple Commands !
 
 Here we will discuss few simple commands in Git as per git flow.
 

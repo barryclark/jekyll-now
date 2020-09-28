@@ -1,11 +1,6 @@
----
-layout: post
-title: Using Jekyll with Github for my Blogs
----
+### Using Jekyll with Github for my Blogs
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-[comment]: ![_config.yml]({{ site.baseurl }}/images/config.png) 
 
 #### Why I used Jekyll and GitHub for my Blogs ?
 1. I wanted to be able to write from plain text editor rather than using OneNote or any other notebook. 
@@ -22,7 +17,6 @@ Next you can update your site name, avatar and other options using the _config.y
 3. sudo gem install bundler
 
 #### Installing theme documentation
-
 
 #### Markdown quick reference
 [Markdown Guilde to Jekyll](https://www.markdownguide.org/tools/jekyll/)

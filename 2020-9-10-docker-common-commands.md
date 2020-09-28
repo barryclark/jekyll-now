@@ -1,7 +1,4 @@
----
-layout: post
-title: Docker common commands
----
+### Docker common commands
 
 > docker pull ubuntu  
 > docker run -i -t ubuntu:latest /bin/bash

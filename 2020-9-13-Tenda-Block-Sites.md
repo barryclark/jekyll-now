@@ -1,7 +1,4 @@
----
-layout: post
-title: Blocking Unwanted Sites From My Tenda Router !
----
+### Blocking Unwanted Sites From My Tenda Router !
 
 ### Control at device level 
 1. login to tenda : http://192.168.0.1/index.html
