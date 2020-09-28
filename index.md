@@ -67,7 +67,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 - Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
 - Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες.
-- Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [[Localbitcoins](https://localbitcoins.com/), στο [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), στο [HodlHodl](https://hodlhodl.com), στο [Bisq](https://bisq.network) ή στο [Paxful](https://paxful.com). Με αυτούς μπορείτε να ανταλλάξετε Ευρώ με όποιον τρόπο θέλετε π.χ. χέρι-με-χέρι, Paypal, Western Union, Πειραιώς Λεφτά Στο Λεπτό, τραπεζική μεταφορά κλπ.
+- Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [Localbitcoins](https://localbitcoins.com/), στο [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), στο [HodlHodl](https://hodlhodl.com), στο [Bisq](https://bisq.network) ή στο [Paxful](https://paxful.com). Με αυτούς μπορείτε να ανταλλάξετε Ευρώ με όποιον τρόπο θέλετε π.χ. χέρι-με-χέρι, Paypal, Western Union, Πειραιώς Λεφτά Στο Λεπτό, τραπεζική μεταφορά κλπ.
 - Από το ανταλλακτήριο [BCash](https://bcash.gr/) με κατάθεση σε Ελληνική τράπεζα μέχρι €5000 την ημέρα με προμήθεια 9%.
 
 ### <a name="bitcoin.org"></a>Που μπορώ να μάθω περισσότερα για το Bitcoin;
