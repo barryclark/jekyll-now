@@ -18,6 +18,8 @@ Here are some useful websites that I have found in the past
 
 [Undergrad in the Lab](https://www.undergradinthelab.com){:target="_blank"}: Tips, tricks, and strategies to get the most out of your undergraduate research experience #UndergradInTheLab
 
+[Matt Might](http://matt.might.net/articles/){:target="_blank"}: blog.might.net is really just a collection of short articles
+
   
 ### Repositories
   
