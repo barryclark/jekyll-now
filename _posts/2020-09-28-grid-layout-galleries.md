@@ -15,7 +15,6 @@ categories: cpnt260
     - Watch: [Build a Classic Layout FAST in CSS Grid](https://youtu.be/KOvGeFUHAC0) by Miriam Suzanne
     - Watch: [Incredibly Easy Layouts with CSS Grid](https://youtu.be/tFKrK4eAiUQ) by Jenn Simmons
     - Watch: [Using Flexbox + CSS Grid Together: Easy Gallery Layout](https://youtu.be/dQHtT47eH0M) by Jenn Simmons
-4. For Wednesday: [7-Part Series - Resilient CSS](https://www.youtube.com/playlist?list=PLbSquHt1VCf1kpv9WRGMCA9_Nn4vCLZ9Y) by Jenn Simmons
 
 ## 1. Classic two-column layout with CSS Grid
 ### Learning Objectives
@@ -25,6 +24,9 @@ categories: cpnt260
 4. Create a gutter between items with `grid-gap`.
 
 **Sample Code**: [Grid Examples]({{site.baseurl}}/sample-code/frontend/grid/)
+
+## 2. HTML Images: Aspect Ratio
+Objective: To understand the importance of image aspect ratio, and be able to preserve aspect ratio in HTML images using CSS (or, more accurately, how not to break it in the first place).
 
 ## 3. Simple Flexbox Gallery
 ### Learning Objectives
