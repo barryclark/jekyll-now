@@ -35,3 +35,6 @@ https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-distribution-s
 
 https://collab.schoologize.com/pages/viewpage.action?pageId=92414851
 https://ci.schoologize.com/deploy/viewDeploymentResult.action?deploymentResultId=413075050
+
+
+[Serverlesss Best Practices](https://medium.com/@PaulDJohnston/serverless-best-practices-b3c97d551535)
