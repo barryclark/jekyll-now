@@ -8,7 +8,7 @@ categories: cpnt260
     - [Git and GitHub Cheatsheet]({{site.baseurl}}/cheatsheets/git-gh/)
 2. Sticky Footers
     - Read the last two methods: [Sticky Footer, Five Ways](https://css-tricks.com/couple-takes-sticky-footer/)
-    - 
+    - [Sticky Footer Tutorial](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
 3. Web forms
     - [How to structure a form](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form)
     - [Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
