@@ -4,7 +4,7 @@ title: 天候の変動の経済学ー実証研究のトレンドと気候変動�
 ---
 [第一回](https://www.econblogjapan.com/Akerlof2020/)は経済学界の流れ、[２回目](https://www.econblogjapan.com/BranderTaylor1998/)は理論の話だったので、今回は実証側の話をタイムリーなトピックと絡めてしようと思います。筆者は北カリフォルニア在住なのですが、アメリカ西海岸では２０２０年８月中旬から１ヶ月ほど山火事が続き、2万平方メートル（おおよそ四国ぐらい）以上の土地が燃えたとのことです。山火事は毎年この時期になると西海岸の各地で発生するのですが、近年の山火事のペース、そのなかでも今年の発生数が突出していることが[こちら](https://www.nytimes.com/interactive/2020/09/24/climate/fires-worst-year-california-oregon-washington.html)の記事などでわかると思います。
 
-({{ site.baseurl }}/images/om-malik-KdWKBg9_EVo-unsplash.jpg)
+![サンフランシスコも、火事による大気汚染で昼間でもこの色]({{ site.baseurl }}/images/om-malik-KdWKBg9_EVo-unsplash.jpg)
 
 気候変動による[環境や経済へのダメージがすでに起こっている](https://www.nbcbayarea.com/news/california/ewsom-climate-change-responsible-for-california-wildfires/2361893/)という事を実感させられる事例ですが、現在経済学界でもこの界隈の研究は進んでいます。今回は概要を掴むために"Dell, Jones, and Olken (2014): What Do We Learn from the Weather? The New Climate–Economy Literature”から面白いと思った点を引出していきます。（[こちら](https://www.aeaweb.org/articles?id=10.1257/jel.52.3.740)からダウンロードできます。）このペーパーはかなり奥が深いので今回は最初半分の実証のアプローチ、及び大まかな文献のまとめにフォーカスしたいと思います。
 
