@@ -65,3 +65,18 @@ title: 天候の変動の経済学ー実証研究のトレンドと気候変動�
 
 最近、太平洋にある島国のキリバスが、[政府主導で近隣のフィジーに土地を購入し自国民を移住させる計画](https://www.nytimes.com/2016/07/03/world/asia/climate-change-kiribati.html)をしていることを知り驚愕しました。
 もちろん、理由は気候変動により文字通り国が消えてしまうから。気候変動 &rarr; 移住 &rarr;マクロ経済指標及び構造変化みたいな話も気になります。
+
+### **文献：**
+Acemoglu, Daron, Simon Johnson, and James A. Robinson. "The colonial origins of comparative development: An empirical investigation." American Economic Review 91.5 (2001): 1369-1401.
+
+Barrios, Salvador, Luisito Bertinelli, and Eric Strobl. "Trends in rainfall and economic growth in Africa: A neglected cause of the African growth tragedy." The Review of Economics and Statistics 92.2 (2010): 350-366.
+
+Deschênes, Olivier, and Michael Greenstone. "Climate change, mortality, and adaptation: Evidence from annual fluctuations in weather in the US." American Economic Journal: Applied Economics 3.4 (2011): 152-85.
+
+Dell, Melissa, Benjamin F. Jones, and Benjamin A. Olken. "Temperature shocks and economic growth: Evidence from the last half century." American Economic Journal: Macroeconomics 4.3 (2012): 66-95.
+
+Dell, Melissa, Benjamin F. Jones, and Benjamin A. Olken. "What do we learn from the weather? The new climate-economy literature." Journal of Economic Literature 52.3 (2014): 740-98.
+
+Diamond, Jared. Guns, germs and steel: a short history of everybody for the last 13,000 years. Random House, 2013.
+
+Hsiang, Solomon M. "Temperatures and cyclones strongly associated with economic production in the Caribbean and Central America." Proceedings of the National Academy of sciences 107.35 (2010): 15367-15372.
