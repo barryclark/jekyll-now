@@ -33,8 +33,6 @@ works based on events. for many of the aws services there are plugins.
 for serverless there are plugins to monitor. 
 
 
-
-
 ##### Links 
 [chef Policy](https://bitbucket.schoologize.com/projects/SYS/repos/chef-policies/browse)
 [A policy file for bamboo docker agent](https://bitbucket.schoologize.com/projects/SYS/repos/chef-policies/browse/bamboo-docker-agent/Policyfile.rb)
