@@ -1,2 +1,0 @@
-# Objectives
-- Define information architecture.
