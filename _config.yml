@@ -9,7 +9,7 @@ name: Javier Castillo
 description: Virtual and Ephemeral Network Engineer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://raw.githubusercontent.com/javcasalc/jekyll-now/master/images/foto-cara.png
 
 #
 # Flags below are optional
@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: javier.castillo.alcibar@gmail.com
   facebook:
   flickr:
   github: javcasalc
@@ -37,7 +37,7 @@ footer-links:
 disqus: javcasalc
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: G-5MMQ6T4DP7
+google_analytics: UA-179254610-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
