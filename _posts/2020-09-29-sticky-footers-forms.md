@@ -3,6 +3,13 @@ layout: post
 title: Week 4T - Login and Registration Forms
 categories: cpnt260
 ---
+## Housekeeping
+- [Assignment 2: Team Card](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-2)
+- Credit for new team card examples:
+  - screencap
+  - project assets
+  - finished code
+
 ## Homework
 1. Review
     - [Git and GitHub Cheatsheet]({{site.baseurl}}/cheatsheets/git-gh/)
@@ -35,4 +42,5 @@ Objective: To understand the issues behind styling forms, and learn some of the 
 **Activity**: See [Styling basics 1](https://developer.mozilla.org/en-US/docs/Learn/Forms/Test_your_skills:_Styling_basics)
 
 ## Clean-up Time!
+- Brightspace submission
 - [Tomorrow]({% link _posts/2020-09-30-progressive-enhancement.md %})
