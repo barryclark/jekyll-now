@@ -35,7 +35,7 @@ Sunday, Sept 27 @ 8pm: [CPNT 260 Assignment 1 Due](https://github.com/sait-wbdv/
 
 ## Week 4: Sep 28 - Oct 2
 - M: CPNT 260 Day 7 - [Galleries and Grid Layout]({% link _posts/2020-09-28-grid-layout-galleries.md %})
-- T: CPNT 260 Day 8 - [Registration and Login]({% link _posts/2020-09-29-login-registration.md %})
+- T: CPNT 260 Day 8 - [Sticky Footers and Forms]({% link _posts/2020-09-29-sticky-footers-forms.md %})
 - W: CPNT 260 Day 9 - [Progressive Enhancement]({% link _posts/2020-09-30-progressive-enhancement.md %})
 - R: CPNT 260 Day 10 - [Search Strategies, Final Exam]({% link _posts/2020-09-30-progressive-enhancement.md %})
 - F: CPNT 201 Day 3 - Image Optimization
