@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 4R - Search Strategies, Final Exam
+title: Week 4R - Review, Final Exam
 categories: cpnt260
 ---
 ## Homework

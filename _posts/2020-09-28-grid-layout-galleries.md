@@ -39,3 +39,4 @@ See Example 1 below:
 - [Gallery Examples]({{site.baseurl}}/sample-code/frontend/galleries/) sample code.
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-09-29-sticky-footers-forms.md %})
