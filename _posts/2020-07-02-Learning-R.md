@@ -33,6 +33,7 @@ This is a curated collection of R educational materials for learning R. I will a
 
 - [DATA SCIENCE WITH R](https://robust-tools.djnavarro.net/){:target="_blank"}
 
+- [Get R Done](https://www.youtube.com/channel/UCKFp00-PRnuc1Dx4DaUmJBg){:target="_blank"}
 
 
 
