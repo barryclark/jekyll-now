@@ -37,7 +37,12 @@ Objective: To understand what the concept of feature detection is, and be able t
 This will be a live code session with Progressive Enhancement Example 4, above.
 
 ## Activity: The future, future, future...
-1. Find a new(ish) CSS property (not covered in class today) that interests you.
+1. Find a new(ish) CSS property (not covered in class today) that interests you. Examples:
+    - Search: "[new css properties 2020](https://www.google.com/search?q=new+css+properties+2020)"
+    - [CSS blend modes](https://css-tricks.com/basics-css-blend-modes/)
+    - [`filter` property](https://css-tricks.com/almanac/properties/f/filter/)
+    - [masking with text](https://css-tricks.com/how-to-do-knockout-text/)
+    - [`initial-letter`](https://css-tricks.com/almanac/properties/i/initial-letter/)
 2. Investigate its current browser support.
 3. Create a demo of this property.
 4. Using what you've learned about CSS overrides and feature detection, can you refactor this project to be at least useable in non-supported browsers?
