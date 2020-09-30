@@ -12,6 +12,7 @@ categories: cpnt260
   - [Can I Use?](https://caniuse.com/)
 - Lecture for tomorrow?
 - Prep for [Friday]({% link _posts/2020-10-02-raster-image-optimization.md %}): Images!
+- [Final Project]({{site.baseurl}}/assessments/cpnt260/final)
 
 ## Homework
 1. Pre-requisites
