@@ -1,10 +1,9 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-# # About me
 Network Architect with more than 20 years of experience. I like solving complex problems and building solutions that span multiple layers of IT stack.
 All information, opinions, etc. in this blog are my own and do not reflect the views of my past, current or future employers. Please use all provided code at your own risk :)
 
@@ -12,7 +11,7 @@ All information, opinions, etc. in this blog are my own and do not reflect the v
 
 Everything here is written with [Emacs](https://www.spacemacs.org/)
 
-#### Interests
+### Interests
 - Network Automation
 - Network Design
 - SDN
