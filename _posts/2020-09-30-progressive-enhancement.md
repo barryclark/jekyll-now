@@ -3,6 +3,16 @@ layout: post
 title: Week 4W - Progressive Enhancement
 categories: cpnt260
 ---
+## Housekeeping
+- HTML Images and Web forms links
+- Exam time for tomorrow
+- Exam will cover:
+  - Any readings given for homework
+  - FireFox Dev Tools
+  - [Can I Use?](https://caniuse.com/)
+- Lecture for tomorrow?
+- Prep for [Friday]({% link _posts/2020-10-02-raster-image-optimization.md %}): Images!
+
 ## Homework
 1. Pre-requisites
     - Read: [CSS Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) on MDN
