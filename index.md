@@ -38,7 +38,7 @@ Sunday, Sept 27 @ 8pm: [CPNT 260 Assignment 1 Due](https://github.com/sait-wbdv/
 - T: CPNT 260 Day 8 - [Sticky Footers and Forms]({% link _posts/2020-09-29-sticky-footers-forms.md %})
 - W: CPNT 260 Day 9 - [Progressive Enhancement]({% link _posts/2020-09-30-progressive-enhancement.md %})
 - R: CPNT 260 Day 10 - [Search Strategies, Final Exam]({% link _posts/2020-09-30-progressive-enhancement.md %})
-- F: CPNT 201 Day 3 - Image Optimization
+- F: CPNT 201 Day 3 - [Image Optimization]({% link _posts/2020-10-02-raster-image-optimization.md %})
 
 Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-2)
 

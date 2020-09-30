@@ -1,15 +1,19 @@
 ---
 layout: post
 title: Week 4F - Raster Image Optimization
-categories: cpnt260
+categories: cpnt201
 ---
 ## Homework
 1. Review
     - [First Contentful Paint (FCP) and First Meaningful Paint (FMP) Explained](https://www.acmethemes.com/blog/first-contentful-paint-and-first-meaningful-paint/)
-2. Image Formats and Compression
+    - Reference: [Image file type and format guide](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types)
+2. Sample images: 
+    - Find 5 or more images that you've taken or designed so we can optimize their file size. 
+    - _Do not_ use Lorem Picsum (or similar services) since these images are probably already optimized.
+    - Try to find diverse image types such as photos, logos, graphic design, etc.
+3. Image Formats and Compression
     - Watch: [Image compression deep-dive](https://youtu.be/F1kYBnY6mwg) by Jake and Surma
-    - 
-3. Image `width` and `height` attributes
+4. Image `width` and `height` attributes
     - Read: [Setting Height And Width On Images Is Important Again](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/)
     - Watch: [Do This to Improve Image Loading on Your Website](https://youtu.be/4-d_SoCHeWE)
 
@@ -21,8 +25,6 @@ categories: cpnt260
 4. Complete two performance audits on your project page using Chrome Lighthouse: once with the original image file and a second with the optimized image file.
 
 ## 2. Image `width` and `height` attributes
-### Learning Objectives
-
 
 ## Activities: 
 

@@ -19,8 +19,18 @@ categories: cpnt260
 ## 1. CSS Overrides
 Objective: To understand the concept of CSS overides, and be able to progressively enhance a hero section for browsers that don't support viewport units.
 
+**Sample Code and Activities**: [Progressive Enhancement Examples]({{site.baseurl}}/sample-code/frontend/progressive-enhancement/)
+
 ## 2. Feature Detection
 Objective: To understand what the concept of feature detection is, and be able to implement suitable solutions in CSS.
+
+This will be a live code session with Progressive Enhancement Example 4, above.
+
+## Activity: The future, future, future...
+1. Find a new(ish) CSS property (not covered in class today) that interests you.
+2. Investigate its current browser support.
+3. Create a demo of this property.
+4. Using what you've learned about CSS overrides and feature detection, can you refactor this project to be at least useable in non-supported browsers?
 
 ## Clean-up Time!
 - [Tomorrow]({% link _posts/2020-10-01-review-final-exam.md %})
