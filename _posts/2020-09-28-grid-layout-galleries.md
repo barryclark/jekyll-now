@@ -28,7 +28,7 @@ categories: cpnt260
 ## 2. HTML Images: Aspect Ratio
 Objective: To understand the importance of image aspect ratio, and be able to preserve aspect ratio in HTML images using CSS (or, more accurately, how not to break it in the first place).
 
-**Sample Code**: [Examples of HTML and CSS Images](https://codepen.io/browsertherapy/pen/oNxRLOX) Codepen
+**Sample Code**: [Examples of HTML and CSS Images](https://codepen.io/acidtone/pen/vYBQGEq) Codepen
 
 ## 3. Simple Flexbox Gallery
 ### Learning Objectives
