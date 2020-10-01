@@ -1,6 +1,7 @@
 ---
 layout: post 
 title: Happy Mid-Autumn Festival
+---
 
 Happy Mid-Autumn Festival! 
 
@@ -18,4 +19,4 @@ So yes! Bring on the new solo series! I love seeing him finally being brought in
 
 I have been taking Biology for the past month, and I’ve surprised myself with how much I’ve been enjoying it. I thought it would be a slog trying to memorize all the terms (which it is), but I seem to be doing alright so far. French has actually become a little tedious, the opposite of my expectations, which worries me. Hopefully I find something to sink my teeth into that will bring me out of this slump. 
 
-This week’s book recommendation, is, obviously, the first issue of Shang Chi (2020), written by Gene Luen Yang. Go check it out! 
+This week’s book recommendation, is, obviously, the first issue of _Shang Chi (2020)_, written by Gene Luen Yang. Go check it out! 
