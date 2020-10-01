@@ -11,8 +11,13 @@ categories: cpnt260
 - Break out rooms will be available.
 
 ## 2. 10am: Final Exam
+- Material Covered
+  - Any readings given for homework
+  - Use of FireFox Dev Tools
+  - Use of [Can I Use?](https://caniuse.com/)
 - 20 MC questions
-- 25 minutes (2 minutes grace)
+- 25 minutes (2-minute grace period)
+- Review of answers after exam
 
 ## 3. Open Lab Time
 
