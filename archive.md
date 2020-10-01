@@ -4,6 +4,14 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### October 1st thoughts & takeaways:
+
+* This past week saw traffic volumes decrease about 7%. This is the biggest weekly decrease since March. Its not entirely clear but I assume it has to do with people staying close to home now that virtual schooling is in full swing (for the time being).
+
+* I've added another update to the TSA checkpoint data. We set a new daily record for passenger traffic during the Labor Day weekend. The 4th of July and Memorial Day also saw a similar bump in Austin air travel. 
+
+***
+
 ### September 22nd thoughts & takeaways:
 
 * It's that time of year where the intersection volumes data goes haywire due to some cold fronts and weather. I assume the city just loses communications with the devices for a period of time. I've gone back and filled in the missing data using an intersection average % of the day's total. 
