@@ -95,4 +95,4 @@ Select a representative from each group to present a summary of your findings to
 Pushed to tomorrow.
 
 ## Clean up time!
-- [Homework for Tomorrow]({{site.baseurl}}/tomorrow)
+- [Tomorrow]({% link _posts/2020-09-16-performance-copyright.md %})

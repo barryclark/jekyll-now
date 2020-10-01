@@ -85,7 +85,7 @@ Are there any that should be listed in the Cheatsheet?
 2. ???
 
 ## Clean up time!
-- [Tomorrow's homework and agenda]({{site.baseurl}}/tomorrow)
+- [Tomorrow]({% link _posts/2020-09-17-long-form.md %})
 
 ## Questions
 - Is performance more based on your own system or the actual website? 

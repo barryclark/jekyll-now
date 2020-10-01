@@ -17,4 +17,4 @@ categories: cpnt260
 ## 3. Open Lab Time
 
 ## Clean-up Time!
-- Don't forget about images!
+- Don't forget about images for [Tomorrow]({% link _posts/2020-10-02-raster-image-optimization.md %})!
