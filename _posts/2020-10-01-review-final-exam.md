@@ -6,12 +6,15 @@ categories: cpnt260
 ## Homework
 1. Review
 
-## 1. 
-### Learning Objectives
+## 1. Review
+- Open Q&A
+- Break out rooms will be available.
 
-## 2.
-### Learning Objectives
+## 2. 10am: Final Exam
+- 20 MC questions
+- 25 minutes (2 minutes grace)
 
-## Activities: 
+## 3. Open Lab Time
 
 ## Clean-up Time!
+- Don't forget about images!
