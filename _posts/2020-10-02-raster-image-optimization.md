@@ -35,7 +35,7 @@ categories: cpnt201
 ## 2. Lossy Compression
 ### Activity 1: Squooshing high-frequency images with WebP (Lossy)
 Optimize an image file size using [Squoosh.app](https://squoosh.app/):
-1. Pick a high frequency image (try [jank]({{site.baseurl}}/assets/images/source/jank.png) and upload it to Squoosh.
+1. Pick a high frequency image (try [jank](https://github.com/sait-wbdv/assets/blob/main/images/source/jank.png) and upload it to Squoosh.
 2. Zoom the image to the size it will be on the web page (and resist the urge to zoom).
 3. Choose `WebP` encoder under "Compress".
 4. Turn down Quality until the image "looks bad".
