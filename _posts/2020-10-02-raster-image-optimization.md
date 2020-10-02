@@ -54,6 +54,7 @@ categories: cpnt201
 Optimize an image file size using [Squoosh.app](https://squoosh.app/):
 1. Pick a high frequency image (try [jank](https://github.com/sait-wbdv/assets/blob/main/images/source/jank.png) and upload it to Squoosh.
 2. Zoom the image to the size it will be on the web page (and resist the urge to zoom).
+    - To account for high resolution displays, take the native size of your image and zoom out so it's about 50% of its original size.
 3. Choose `WebP` encoder under "Compress".
 4. Turn down Quality until the image "looks bad".
 5. Increase Effort (to max?).
@@ -78,6 +79,7 @@ Optimize an image file size using [Squoosh.app](https://squoosh.app/):
 ### Activity 3: Squooshing low-frequency images with WebP (Lossless)
 1. Pick a low-frequency image (something with a lot of flat colour) and upload it to Squoosh.
 2. Zoom the image to the size it will be on the web page (and resist the urge to zoom).
+    - To account for high resolution displays, take the native size of your image and zoom out so it's about 50% of its original size.
 3. Choose `WebP` encoder under "Compress".
 4. Click `Lossless` to enable the low-frequency encoder.
 5. Increase `Effort` (to max?).
