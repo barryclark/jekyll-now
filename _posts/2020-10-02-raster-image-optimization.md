@@ -56,10 +56,11 @@ Optimize an image file size using [Squoosh.app](https://squoosh.app/):
 2. Zoom the image to the size it will be on the web page (and resist the urge to zoom).
 3. Choose `WebP` encoder under "Compress".
 4. Turn down Quality until the image "looks bad".
-5. Advanced Settings: 
+5. Increase Effort (to max?).
+6. Advanced Settings: 
     - try toggling `Auto adjust filter strength`;
     - try adjusting `Spatial noise shaping`.
-6. Download and save your optimized files in a `full` directory next to your `source` directory.
+7. Download and save your optimized files in a `full` directory next to your `source` directory.
 
 ### Activity 2: Creating JPEG image for Safari
 1. Choose `MozJPEG` encoder under "Compress".
