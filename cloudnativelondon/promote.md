@@ -17,9 +17,7 @@ To help cover running costs, we ask for a donation of £200 (no VAT), payable by
 {% include stripe-donate-test.html %}
 {% endif %}
 
-Once received, we will follow up on your content to share.
-
-## Example events
+Once received, we will follow up on your content to share. Here are past examples:
 
 > [**Helm Summit**](https://events.linuxfoundation.org/events/helm-summit-2019/) is taking place in Amsterdam, Netherlands on September 11-12. Use HELM19B20 for a 20% discount off the ticket price.
 
