@@ -42,6 +42,8 @@ categories: cpnt201
   <dd>The digital information in an image that controls pixel brightness.</dd>
 </dl>
 
+---
+
 **Sample Source Images**: [Tony's Raw Screencaps](https://github.com/sait-wbdv/assets/)
 
 ---
