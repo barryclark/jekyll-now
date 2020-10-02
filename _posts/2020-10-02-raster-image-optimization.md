@@ -13,7 +13,7 @@ categories: cpnt201
     - Try to find diverse image types such as photos, logos, graphic design, etc.
 3. Image Formats and Compression
     - Watch: [Image compression deep-dive](https://youtu.be/F1kYBnY6mwg) by Jake and Surma
-    - Read: [`picture`] element
+    - Read: [`picture` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)
 4. Image `width` and `height` attributes
     - Read: [Setting Height And Width On Images Is Important Again](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/)
     - Watch: [Do This to Improve Image Loading on Your Website](https://youtu.be/4-d_SoCHeWE)
