@@ -28,6 +28,20 @@ categories: cpnt201
 3. Distinguish between high and low frequency imagery.
 4. Predict whether lossless or lossy compression will be best for a particular image.
 
+### Terminology
+<dl>
+  <dt>Image encoder</dt>
+  <dd>A library/module that converts one image format to another. Not all encoders are created equal.</dd>
+  <dt>High Frequency Imagery</dt>
+  <dd>Parts of an image (or the whole image) where colour and contrast change a lot from one pixel to the next. Example: a photo of a busy intersection.</dd>
+  <dt>Low Frequency Imagery</dt>
+  <dd>Parts of an image (or the whole image) where colour and contrast change very little from one pixel to the next. Example: a vector logo or other image with a lot of flat colour.</dd>
+  <dt>Colour Data</dt>
+  <dd>The digital information in an image that controls pixel colour. Also called chroma data.</dd>
+  <dt>Brightness Data</dt>
+  <dd>The digital information in an image that controls pixel brightness.</dd>
+</dl>
+
 **Sample Source Images**: [Tony's Raw Screencaps](https://github.com/sait-wbdv/assets/)
 
 ---
