@@ -43,10 +43,10 @@ Sunday, Sept 27 @ 8pm: [CPNT 260 Assignment 1 Due](https://github.com/sait-wbdv/
 Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-2)
 
 ## Week 5: October 5-9
-- M: CPNT 201 Day 4
-- T: CPNT 201 Day 5
-- W: CPNT 201 Day 6
-- R: CPNT 201 Day 7
+- M: CPNT 201 Day 4 - Image Editors and Image `width`/`height` Attributes
+- T: CPNT 201 Day 5 - Resource Hints
+- W: CPNT 201 Day 6 - Vector Editors
+- R: CPNT 201 Day 7 - SVG Fundamentals
   - [CPNT 260 Assignment 3 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-3)
 - F: CPNT 262 Day 1
 
