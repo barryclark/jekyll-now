@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 4F - Raster Image Optimization
+title: Week 4F - Raster Image Optimization with Squoosh.app
 categories: cpnt201
 ---
 ## Housekeeping
@@ -23,7 +23,7 @@ categories: cpnt201
 
 ## 1. Image formats Overview
 ### Learning Objectives
-1. Define a codec.
+1. Define image encoder.
 2. Distinguish between lossless, lossy compression.
 3. Distinguish between high and low frequency imagery.
 4. Predict whether lossless or lossy compression will be best for a particular image.
@@ -35,7 +35,7 @@ categories: cpnt201
 ## 2. Lossy Compression
 ### Activity 1: Squooshing high-frequency images with WebP (Lossy)
 Optimize an image file size using [Squoosh.app](https://squoosh.app/):
-1. Pick a high frequency image (try [jank]({{site.baseurl}}/assets/_source/images/jank.png) and upload it to Squoosh.
+1. Pick a high frequency image (try [jank]({{site.baseurl}}/assets/images/source/jank.png) and upload it to Squoosh.
 2. Zoom the image to the size it will be on the web page (and resist the urge to zoom).
 3. Choose `WebP` encoder under "Compress".
 4. Turn down Quality until the image "looks bad".
