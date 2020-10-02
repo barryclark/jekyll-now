@@ -5,6 +5,7 @@ categories: cpnt201
 ---
 ## Housekeeping
 - Exam fixes
+- Saturday Office Hours: 12pm-???
 
 ## Homework
 1. Review
