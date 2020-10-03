@@ -42,3 +42,5 @@ Here are some useful websites that I have found in the past
 [Writing a K99/R00 Grant · SBAmin.com](https://k99.sbamin.com/){:target="_blank"}
 
 [Research Culture: Why scientific societies should involve more early-career researchers](https://elifesciences.org/articles/60829){:target="_blank"}
+
+[Research Culture: A Selection of Articles](https://elifesciences.org/collections/edf1261b/research-culture-a-selection-of-articles){:target="_blank"}
