@@ -9,7 +9,7 @@ categories:
 tags:
   - k8s
   - mejora continua
-published: false
+published: true
 ---
 # k8s Cheatsheet 
 
