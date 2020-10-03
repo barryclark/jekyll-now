@@ -6,6 +6,7 @@ https://www.econblogjapan.com/
 
 テンプレート：
 + ブログポストのテンプレートはblog-post-template.mdを参照してください。
++ ブログポストのファイル名はyear-month-day-title.mdの形式に従ってください。（別形式だと反映されないのです。）
 
 手順：
 1. 新しいブランチで草稿
