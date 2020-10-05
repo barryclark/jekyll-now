@@ -124,3 +124,4 @@ A client would like to start a company blog and has asked you for a proof-of-con
     5. Reload your page, to confirm  the browser is recognizing your `width` and `height` attributes. There should be an empty in the page layout that is `width` x `height`.
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-10-06-srcset-lazy-loading.md %})
