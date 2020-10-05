@@ -7,6 +7,7 @@ categories: cpnt201
 - CPNT 260 [Assignment 1](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-1)
 - Student Showcase
 - Scenarios
+- Soon: Aplha test of Tony's Bounty Bonus Point Program
 
 ## Homework
 1. Review
