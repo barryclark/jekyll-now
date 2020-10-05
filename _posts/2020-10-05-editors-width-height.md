@@ -4,7 +4,7 @@ title: Week 5M - Image Editors and `width`/`height` Attributes
 categories: cpnt201
 ---
 ## Housekeeping
-- CPNT 260 Assignment 1
+- CPNT 260 [Assignment 1](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-1)
 - Student Showcase
 - Scenarios
 
