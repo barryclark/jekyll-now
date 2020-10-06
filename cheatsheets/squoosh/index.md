@@ -20,13 +20,12 @@ title: "Quoosh Image Compression"
 
 ## Popular Tasks
 Compress :
-- [_high frequency_ images with WebP](#compress-and-image-with-webp-lossy) (Lossy)
-- [_high frequency_ images with MozJPEG](#compress-and-image-with-mozjpeg)
-- [_low frequency_ images with WebP](#compress-and-image-with-webp-lossless) (Lossless)
-- [_low frequency_ images with OxiPNG](#compress-and-image-with-oxipng)
+- [_high frequency_ images with WebP](#compress-an-image-with-webp-lossy) (Lossy)
+- [_high frequency_ images with MozJPEG](#compress-an-image-with-mozjpeg)
+- [_low frequency_ images with WebP](#compress-an-image-with-webp-lossless) (Lossless)
+- [_low frequency_ images with OxiPNG](#compress-an-image-with-oxipng)
 
-### Compress and image with WebP (Lossy)
-Optimize an image file size using [Squoosh.app](https://squoosh.app/):
+### Compress an image with WebP (Lossy)
 1. Pick a high frequency image (e.g. a "real" photo, not a logo) and upload it to Squoosh.
 2. Zoom the image to the size it will be on the web page (and resist the urge to zoom).
     - To account for high resolution displays, take the native size of your image and zoom out so it's about 50% of its original size.
