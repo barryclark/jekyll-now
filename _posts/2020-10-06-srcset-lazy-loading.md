@@ -42,7 +42,7 @@ categories: cpnt201
 
 ---
 
-## 3. Improving performance with native lazy loading
+## 3. Improving network performance with native lazy loading
 - [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
 - [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#manage-network-resources-with-native-lazy-loading)
 - [Finished]({{site.baseurl}}/sample-code/frontend/image-performance/lazy-loading)
