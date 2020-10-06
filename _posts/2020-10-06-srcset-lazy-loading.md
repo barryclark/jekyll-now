@@ -37,13 +37,15 @@ categories: cpnt201
 
 ## 2. Controlling image asset size using `srcset`
 - [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
-- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#optimize-image-bandwidth-with-srcset) 
+- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#optimize-image-bandwidth-with-srcset)
+- [Finished]({{site.baseurl}}/sample-code/frontend/image-performance/srcset)
 
 ---
 
 ## 3. Improving performance with native lazy loading
 - [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
 - [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#manage-network-resources-with-native-lazy-loading)
+- [Finished]({{site.baseurl}}/sample-code/frontend/image-performance/lazy-loading)
 
 ---
 
