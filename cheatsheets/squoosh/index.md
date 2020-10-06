@@ -4,6 +4,13 @@ title: "Quoosh Image Compression"
 ---
 [Quoosh.app](https://squoosh.app)
 
+## Popular Tasks
+Compress :
+- [_high frequency_ images with WebP](#compress-an-image-with-webp-lossy) (Lossy)
+- [_high frequency_ images with MozJPEG](#compress-an-image-with-mozjpeg)
+- [_low frequency_ images with WebP](#compress-an-image-with-webp-lossless) (Lossless)
+- [_low frequency_ images with OxiPNG](#compress-an-image-with-oxipng)
+
 ## Terminology
 <dl>
   <dt>Image encoder</dt>
@@ -17,13 +24,6 @@ title: "Quoosh Image Compression"
   <dt>Brightness Data</dt>
   <dd>The digital information in an image that controls pixel brightness.</dd>
 </dl>
-
-## Popular Tasks
-Compress :
-- [_high frequency_ images with WebP](#compress-an-image-with-webp-lossy) (Lossy)
-- [_high frequency_ images with MozJPEG](#compress-an-image-with-mozjpeg)
-- [_low frequency_ images with WebP](#compress-an-image-with-webp-lossless) (Lossless)
-- [_low frequency_ images with OxiPNG](#compress-an-image-with-oxipng)
 
 ### Compress an image with WebP (Lossy)
 1. Pick a high frequency image (e.g. a "real" photo, not a logo) and upload it to Squoosh.
