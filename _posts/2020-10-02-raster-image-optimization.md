@@ -60,7 +60,7 @@ Optimize an image file size using [Squoosh.app](https://squoosh.app/):
     - try adjusting `Spatial noise shaping`.
 7. Download and save your optimized files in a `full` directory next to your `source` directory.
 
-### Activity 2: Creating JPEG image for Safari
+### Creating JPEG image (for Safari)
 1. Choose `MozJPEG` encoder under "Compress".
 2. Reduce `Quality` until the image "looks bad".
 3. Advanced Settings:

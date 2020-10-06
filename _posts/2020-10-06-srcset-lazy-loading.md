@@ -11,7 +11,7 @@ categories: cpnt201
 2. File prep
     - Small, medium and large sample images.
     - Sample Hero section or other page segment that uses a large image on Desktop and smaller on mobile.
-    - Sample blog page with multiple images that you need to scroll to.
+    - Sample blog page with multiple images that you need to scroll through.
 3. `srcset`
     - Read: [Responsive Images: If you’re just changing resolutions, use `srcset`](https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/)
     - Watch: [Figuring Out Responsive Images](https://css-tricks.com/video-screencasts/133-figuring-responsive-images/)
@@ -21,10 +21,23 @@ categories: cpnt201
     - Read: [Native Lazy Loading](https://css-tricks.com/native-lazy-loading/) by CSS Tricks
     - Watch: [Lazy loading is too easy now](https://youtu.be/AActXSWxsRo) by Kevin Powell
 
-## 1. Controlling image asset size using `srcset`
+**[Image Performance Sample Code]**
+- [GH Pages]({{site.baseurl}}/sample-code/frontend/image-performance/)
+- [GH Repo](https://github.com/sait-wbdv/sample-code/tree/master/frontend/image-performance)
 
-## 2. Improving performance with native lazy loading
+## 1. Defining minimally responsive images
+- [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
+- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#define-minimally-responsive-images)
 
-## 3. Open Lab Time
+## 2. Controlling image asset size using `srcset`
+- [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
+- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#optimize-image-bandwidth-with -srcset) 
+
+## 3. Improving performance with native lazy loading
+- [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
+- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#manage-network-resources-with-native-lazy-loading)
+
+## Open Lab Time
+### Secenario?
 
 ## Clean-up Time!
