@@ -7,6 +7,7 @@ categories: cpnt201
 1. Prep
     1. Go to Tony's [Band Name Generator](https://acidtone.github.io/namor/) and click for a new combination of words until you find a new product that a startup (either yours or a potential client) might think is the "next big thing".
     2. Based on the phrase you've chosen, find one or more [Font Awesome](https://fontawesome.com/) icons (or similar) that you can use to create a quick company/product logo for your startup.
+        - Example: [Tony's Browser Therapy Logo](https://sait-wbdv.github.io/sample-code/assets/images/logos/browser-therapy.svg)
     3. Download the SVG versions of your icons so you can import them into Figma for the lesson.
 2. Figma
     - Reference: [Figma Tutorial Video Playlist](https://www.youtube.com/playlist?list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4)
@@ -24,5 +25,7 @@ categories: cpnt201
 ## 3. Explore some of the extra design and collaboration tools in Figma
 
 ## 4. Open Lab Time
+### Scenario
+You have a startup company (either yours or a client) that needs a quick and dirty SVG logo for a weekend hackathon. No one on the team is a graphic designer so you decide to create a logo using open source icons and Figma.
 
 ## Clean-up Time!
