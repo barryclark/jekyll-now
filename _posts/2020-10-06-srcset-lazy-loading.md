@@ -21,23 +21,35 @@ categories: cpnt201
     - Read: [Native Lazy Loading](https://css-tricks.com/native-lazy-loading/) by CSS Tricks
     - Watch: [Lazy loading is too easy now](https://youtu.be/AActXSWxsRo) by Kevin Powell
 
-**[Image Performance Sample Code]**
+---
+
+## Image Performance Sample Code
 - [GH Pages]({{site.baseurl}}/sample-code/frontend/image-performance/)
 - [GH Repo](https://github.com/sait-wbdv/sample-code/tree/master/frontend/image-performance)
+
+---
 
 ## 1. Defining minimally responsive images
 - [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
 - [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#define-minimally-responsive-images)
 
+---
+
 ## 2. Controlling image asset size using `srcset`
 - [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
-- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#optimize-image-bandwidth-with -srcset) 
+- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#optimize-image-bandwidth-with-srcset) 
+
+---
 
 ## 3. Improving performance with native lazy loading
 - [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
 - [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#manage-network-resources-with-native-lazy-loading)
 
+---
+
 ## Open Lab Time
 ### Secenario?
+
+---
 
 ## Clean-up Time!
