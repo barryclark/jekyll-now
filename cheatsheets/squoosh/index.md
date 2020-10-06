@@ -1,7 +1,10 @@
-# Quoosh Cheatsheet
+---
+layout: page
+title: "Quoosh Image Compression"
+---
 [Quoosh.app](https://squoosh.app)
 
-### Terminology
+## Terminology
 <dl>
   <dt>Image encoder</dt>
   <dd>A library/module that converts one image format to another. Not all encoders are created equal.</dd>
@@ -16,7 +19,11 @@
 </dl>
 
 ## Popular Tasks
-
+Compress :
+- [_high frequency_ images with WebP](#compress-and-image-with-webp-lossy) (Lossy)
+- [_high frequency_ images with MozJPEG](#compress-and-image-with-mozjpeg)
+- [_low frequency_ images with WebP](#compress-and-image-with-webp-lossless) (Lossless)
+- [_low frequency_ images with OxiPNG](#compress-and-image-with-oxipng)
 
 ### Compress and image with WebP (Lossy)
 Optimize an image file size using [Squoosh.app](https://squoosh.app/):
