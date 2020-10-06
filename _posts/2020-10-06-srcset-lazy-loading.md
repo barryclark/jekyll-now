@@ -55,3 +55,4 @@ categories: cpnt201
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-10-07-vector-editors.md %})
