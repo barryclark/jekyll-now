@@ -37,7 +37,7 @@ categories: cpnt201
 
 ## 2. Controlling image asset size using `srcset`
 - [Starter Blog Home Page]({{site.baseurl}}/sample-code/frontend/image-performance/starter)
-- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#optimize-image-bandwidth-with-srcset) 
+- [Instructions]({{site.baseurl}}/sample-code/frontend/image-performance/#optimize-network-bandwidth-with-srcset-attribute) 
 
 ---
 
