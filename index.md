@@ -57,6 +57,7 @@ Sunday, Oct 11 @ 8pm: [CPNT 260 Final Project Due](https://github.com/sait-wbdv/
 - T: CPNT 262 Day 2
 - W: CPNT 262 Day 3
 - R: CPNT 262 Day 4
+  - [CPNT 201 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-2)
 - F: CPNT 262 Day 5
 
 ## Week 7: Oct 19-23
