@@ -46,7 +46,7 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - M: CPNT 201 Day 4 - [Image Editors and Image `width`/`height` Attributes]({% link _posts/2020-10-05-editors-width-height.md %})
 - T: CPNT 201 Day 5 - [Image `srcset` and Lazy Loading]({% link _posts/2020-10-06-srcset-lazy-loading.md %})
 - W: CPNT 201 Day 6 - [Vector Editors]({% link _posts/2020-10-07-vector-editors.md %})
-- R: CPNT 201 Day 7 - SVG Fundamentals
+- R: CPNT 201 Day 7 - [SVG Fundamentals]({% link _posts/2020-10-08-svg-fundamentals.md %})
   - [CPNT 260 Assignment 3 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-3)
 - F: CPNT 262 Day 1
 
