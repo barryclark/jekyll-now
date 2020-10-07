@@ -99,6 +99,7 @@ You and a classmate/friend/colleague pair up on a web development project.
   - Search: "[figma templates](https://www.google.com/search?q=figma+templates)"
   - Explore: [Best design resources websites every developer should bookmark](https://dev.to/theme_selection/best-design-resources-websites-every-developer-should-bookmark-1p5d) by ThemeSelection
     - [Video version](https://youtu.be/fAK9NxsR3es) by Adrian Twarog
+
 ---
 
 ## Activity 2: Pen Tool Pracice
