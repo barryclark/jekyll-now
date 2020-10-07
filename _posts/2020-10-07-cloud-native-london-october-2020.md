@@ -13,7 +13,7 @@ tags:
 published: false
 ---
 
-Tonight, Cloud Native London welcomes three speakers from American Express, Pendo, and Containous for our October virtual meetup, from 6:30pm BST on Zoom and YouTube.
+Tonight, Cloud Native London welcomes three speakers from American Express, Pendo, and Containous for our October virtual meetup, from 6:45pm BST on Zoom and YouTube.
 
 [Join us on Zoom](https://zoom.us/my/cherylhung) using the password: 'cheryl' or watch via the Youtube livestream.
 
