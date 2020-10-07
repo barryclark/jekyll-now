@@ -36,6 +36,7 @@ categories: cpnt201
   <dt>Stroke</dt>
   <dd>The SVG version of <code>border</code>.</dd>
 </dl> 
+
 ---
 
 ## Scenarios
@@ -67,8 +68,10 @@ You and a classmate/friend/colleague pair up on a web development project.
       - Fill/Stroke
     - Masks
     - Pathfinder
+2. Demo: Trace an image
+3. Demo: Pathfinder
 
-### Quality of Life Tips
+## Quality of Life Tips
 - Hotkeys!
   - See Activites below for finding a hotkey cheat sheet for Figma.
   - Tony's Top 5 vector editor shortcuts:
@@ -77,6 +80,10 @@ You and a classmate/friend/colleague pair up on a web development project.
     3. `shift` + _drag_: Proportional re-sizing and equal `x`/`y` dimensions when creating shapes
     4. `alt`/`option` + _drag_: Re-size from the object's centre (instead of default from top-left)
     5. `alt`/`option` when in Pen mode: Toggles from pen to anchor tool. Very handy!
+
+## Sample files
+- [Logos Tony has made](https://github.com/sait-wbdv/sample-code/tree/master/assets/images/logos)
+- [Tony's pinball diagrams](https://github.com/sait-wbdv/sample-code/tree/master/assets/images/pinball)
 
 ---
 
