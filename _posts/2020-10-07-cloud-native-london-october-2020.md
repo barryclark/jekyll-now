@@ -13,9 +13,9 @@ tags:
 published: false
 ---
 
-See three great speakers from American Express, Pendo, and Containous at the September Cloud Native London virtual meetup, from 6:30pm BST on Zoom and YouTube!
+Tonight, Cloud Native London welcomes three speakers from American Express, Pendo, and Containous for our October virtual meetup, from 6:30pm BST on Zoom and YouTube.
 
-[Join us on Zoom](https://zoom.us/my/cherylhung) using the password: 'cheryl' or catch the Youtube livestream.
+[Join us on Zoom](https://zoom.us/my/cherylhung) using the password: 'cheryl' or watch via the Youtube livestream.
 
 ### Our agenda for 7th October 2020 is (times in BST):
 
@@ -26,12 +26,14 @@ See three great speakers from American Express, Pendo, and Containous at the Sep
 * 8:30 Kubernetes Ingress Today and Tomorrow (Kevin Crawley, Containous)
 * 9:00 Wrap up
 
-We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [xMatters](https://www.xmatters.com/), and [Palo Alto Networks](https://www.paloaltonetworks.com/), for your continued and enthusiastic support and sponsorship.
+Thank you [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [xMatters](https://www.xmatters.com/), and [Palo Alto Networks](https://www.paloaltonetworks.com/), for your continued and enthusiastic support and sponsorship.
+
+Use **KCNAVMEET10** for 10% off registration to KubeCon + CloudNativeCon, coming very soon from November 17-20.
 
 ## Cloud Native London November
 
 Our next meetup will be Wednesday 4th November, when we'll be joined by speakers from Megaport, Sysdig, and Nutanix. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/271103132/)
 
-Stay safe and see you soon!
+See all you soon!
 
 Cheryl (@oicheryl) 
