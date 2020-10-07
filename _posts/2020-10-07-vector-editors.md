@@ -74,6 +74,7 @@ You and a classmate/friend/colleague pair up on a web development project.
 ## Quality of Life Tips
 - Hotkeys!
   - See Activites below for finding a hotkey cheat sheet for Figma.
+    - [Tony's current fave cheat sheet](https://usethekeyboard.com/figma/)
   - Tony's Top 5 vector editor shortcuts:
     1. `space` + _drag_: Pan the screen
     2. `command`/`control?`: Toggle selection tool
