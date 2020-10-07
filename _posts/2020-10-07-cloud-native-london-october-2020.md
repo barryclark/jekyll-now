@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloud Native London October 2020: American Express, Pendo, and Containous"
-description: "three great speakers from American Express, Pendo, and Containous join us at the Cloud Native London meetup October 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
+description: "American Express, Pendo, and Containous join the Cloud Native London meetup October 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
 image: https://secure.meetupstatic.com/photos/event/e/9/4/6/600_489119718.jpeg
 video: https://www.youtube.com/embed/1wcYP7n-s0o
@@ -10,14 +10,13 @@ tags:
   - Video
   - Meetup
   - "2020"
-published: false
 ---
 
-Tonight, Cloud Native London welcomes three speakers from American Express, Pendo, and Containous for our October virtual meetup, from 6:45pm BST on Zoom and YouTube.
+Tonight I'm welcoming speakers from American Express, Pendo, and Containous for the Cloud Native London October virtual meetup, from 6:45pm BST on Zoom and YouTube.
 
 [Join us on Zoom](https://zoom.us/my/cherylhung) using the password: 'cheryl' or watch via the Youtube livestream.
 
-### Our agenda for 7th October 2020 is (times in BST):
+### Aenda for 7th October 2020 (times in BST):
 
 * 6:45 Kick off
 * 7:15 Open Policy Agent: your passport to enterprise interoperability (Alex Jones, American Express)
