@@ -3,6 +3,11 @@ layout: post
 title: Week 5R - SVG Fundamentals
 categories: cpnt201
 ---
+## Housekeeping
+- Prep for Javasript
+  - New Library entries
+  - Tuesday: Node installed
+
 ## Homework
 1. Review
     - [Anchor element: Linking to an element on the same page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_element_on_the_same_page)
