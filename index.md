@@ -48,7 +48,7 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - W: CPNT 201 Day 6 - [Vector Editors]({% link _posts/2020-10-07-vector-editors.md %})
 - R: CPNT 201 Day 7 - [SVG Fundamentals]({% link _posts/2020-10-08-svg-fundamentals.md %})
   - [CPNT 260 Assignment 3 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-3)
-- F: CPNT 262 Day 1
+- F: CPNT 262 Day 1 - [Hello Dobby]({% link _posts/2020-10-09-hello-dobby.md %})
 
 Sunday, Oct 11 @ 8pm: [CPNT 260 Final Project Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/final)
 
