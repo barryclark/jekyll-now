@@ -7,6 +7,11 @@ categories: cpnt201
 - Prep for Javasript
   - New Library entries
   - Tuesday: Node installed
+- Figma bounties!
+  - 5 bonus points to be applied to CPNT 201 Assignment 3. Congratulations to the weiners:
+    - Mike
+    - Nana
+    - Lynn
 
 ## Homework
 1. Review
