@@ -32,6 +32,7 @@ See [SVG Terminology](https://sait-wbdv.github.io/sample-code/frontend/svg/#term
 - `width` and `height` attributes set an optional default size for the `svg` that can be overridden with CSS.
 - `svg` is its own specification with its own style properties. Although you can style them with CSS, you need to use the proper `svg` properties. For example, use `fill` instead of `background-color`.
 - A lower precision will result in a smaller file size but very low values might affect the detail of your designs.
+
 ---
 
 ## 1. Anatomy of an optimized SVG
