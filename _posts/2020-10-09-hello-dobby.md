@@ -3,6 +3,11 @@ layout: post
 title: Week 5F - Hello Dobby
 categories: cpnt262
 ---
+## Housekeeping
+- CPNT 201 Assignment 1
+- Today's Bounty
+- Node!
+
 ## Homework
 - Javascript Fundamentals
   - MDN Textbook
