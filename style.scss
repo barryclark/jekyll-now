@@ -217,21 +217,13 @@ table {
   }
 }
 
-.bgblur::before {
-  background: inherit;
-  z-index: -1;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-}
-
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 40px 60px;
+  margin: 20px auto 0 auto;
   width:80%;
-  opacity: 0.6;
   color: white;
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
   
   @include mobile {
     text-align: center;

@@ -21,8 +21,9 @@ HTTP request가 요청되고 connected가 이어지지만 결국 나오는 결�
 
 
 아무리 login을 하거나
-```
---no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"
+
+```bash
+--no-check-certificate --no-cookies --header "Cookie:oraclelicense=accept-securebackup-cookie"
 ```
 
 이런 header를 추가해줘도 쉽사리 Download 되지는 않았다.
@@ -49,13 +50,14 @@ linux wget으로 google drive에 access하는 것? **[EASY]**
 4. 3번의 FILEID 위치의 해시값을 기억하자. 뒤에 쓰일 FILEID 값이다.
 5. wget으로 해당 파일을 원하는 linux server에 다운로드 한다
 
-```
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?
-export=download&confirm=$(wget --quiet --save-cookies /tmp/
-cookies.txt --keep-session-cookies --no-check-certificate 'https://
-docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/
-.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O FILENAME && rm -rf 
-/tmp/cookies.txt
+```bash
+wget --load-cookies /tmp/cookies.txt \
+"https://docs.google.com/uc?export=download&confirm=$( \
+wget --quiet --save-cookies /tmp/cookies.txt \
+--keep-session-cookies --no-check-certificate \
+'https://docs.google.com/uc?export=download&id=FILEID'  \
+-O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" \
+ -O FILENAME && rm -rf /tmp/cookies.txt
 
 FILENAME : 다운받을 파일의 이름을 임의로 정해주면 된다
 FILEID : 구글 드라이브에 업로드한 파일의 ID값
