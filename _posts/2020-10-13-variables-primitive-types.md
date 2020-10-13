@@ -118,7 +118,9 @@ The js engine then executes the code line-by-line as you'd expect. Things to con
   - Try building the [Number guessing game](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash) (you read the homework, right?).
   - Read [Storing the information you need - variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables) and try completing Variables 1-3 of the [companion variables exercises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_variables).
 
-If you find any fun or engaging exercises, let your instructor know!
+Request: Let your instructor know if:
+- you find any fun or engaging exercises they might get added to the list of potential activities;
+- you find any problems or improvements with the MDN exercises (Tony would like to try submitting a Pull Request to improve MDN).
 
 ## Clean-up Time!
 - [Tomorrow]({% link _posts/2020-10-14-stateful-css-toggles.md %})
