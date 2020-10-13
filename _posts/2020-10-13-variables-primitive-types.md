@@ -105,6 +105,7 @@ Every javascript application starts it's life in two phases:
 The js engine "skims" the code (called "hoisting") and it:
 - Creates a memory space for each variable and sets their value to `undefined`. Important: this means that all variables start their lives as `undefined` and will continue to be so until they are assigned another value.
 - Function statements (which we haven't covered yet) are saved into memory but not invoked.
+
 ### 2. Execution phase
 The js engine then executes the code line-by-line as you'd expect. Things to consider:
 - Never set a variable to `undefined`. Javascript allows you to do it but please, don't. Set it to `null` instead.
