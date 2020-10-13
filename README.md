@@ -14,3 +14,6 @@ https://www.econblogjapan.com/
 3. コメンターはコメントを書いたら、草稿者のブランチへのpull requestを出す。
 4. 草稿者はpull requestをもらったらコメントマージ。コメンターのブランチは草稿者が消す。
 5. 草稿者のブランチをマスターブランチにマージ。（ブログサイトに即時反映される。）
+
+注意：
+１．数式はMathJaxでサポートされている。数式は$$でサンドイッチしてください。詳しくはこちらへ。https://lyk6756.github.io/2016/11/25/write_latex_equations.html
