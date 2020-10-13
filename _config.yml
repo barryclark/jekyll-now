@@ -2,7 +2,7 @@
 # This file contains configuration flags to customize your site
 #
 # Name of your site (displayed in the header)
-theme: jekyll-theme-cayman
+theme: jekyll-theme-architect
 name: AICVS CUMMINS
 
 # Short bio or description (displayed in the header)
