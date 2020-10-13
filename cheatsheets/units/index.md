@@ -36,7 +36,7 @@ title: CSS Units
   - The advance measure (width) of the glyph "0" of the element's font.
   - Tony loooooves setting setting text boxes in `ch` units.
   - Warning: the value of `ch` changes with different `font-family` declarations. Don't use `ch` if you need a consitent width.
-  - See: [Lenth comparison: rem vs ch](https://codepen.io/browsertherapy/pen/RwRPrvm)
+  - See: [Length comparison: rem vs ch](https://codepen.io/browsertherapy/pen/RwRPrvm)
 
 # Viewport
 - `vh`, `vw`, `vmin`, `vmax`
