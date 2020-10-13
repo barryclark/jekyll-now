@@ -40,3 +40,4 @@ categories: cpnt262
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-10-15-numbers-strings-coersion.md %})

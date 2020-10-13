@@ -43,3 +43,4 @@ See: [Code Challenge - CSS Toggles with element.classList](http://browsertherapy
 ## Open Lab Time
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-10-13-variables-primitive-types.md %})

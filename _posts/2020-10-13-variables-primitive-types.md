@@ -25,7 +25,6 @@ categories: cpnt262
 
 ---
 
-## 1. Variable Assignment
 ### Terminology
 <dl>
   <dt>Name/Value Pair</dt>
@@ -62,7 +61,10 @@ categories: cpnt262
   </dd>
 </dl>
 
-## `const` vs `let` vs `var`
+---
+
+## 1. Variable Assignment
+### `const` vs `let` vs `var`
 Variables should be intially declared (a name created in memory) with a declaration keyword. This is only needed when the variable is first created. Of the three keywords available, it is recommended you try them in this order
 1. `const`: The value of a constant can't be changed through reassignment, and it can't be redeclared. This is the safest way to declare a variable.
 2. `let`: If you need to reassign/redeclare a variable later (see common errors below), you should use `let`.
@@ -71,40 +73,42 @@ Variables should be intially declared (a name created in memory) with a declarat
 ---
 
 ## 2. Common assignment syntax errors
-- Calling a variable that hasn't been declared:
+### Calling a variable that hasn't been declared:
 
-  ```
-  Uncaught ReferenceError: 'whatever' is not defined
-  ```
+```
+Uncaught ReferenceError: 'whatever' is not defined
+```
 
-  Probably the most common syntax error: trying to use a variable that doesn't exist. Best solution: declare the variable so it exists!
+Probably the most common syntax error: trying to use a variable that doesn't exist. Best solution: declare the variable so it exists!
 
-- Re-assigning a `const` variable:
+### Re-assigning a `const` variable:
 
-  ```
-  Uncaught TypeError: invalid assignment to const 'whatever'
-  ```
+```
+Uncaught TypeError: invalid assignment to const 'whatever'
+```
 
-  You tried to reassign a constant. Try declaring with `let` if you need to reassign.
+You tried to reassign a constant. Try declaring with `let` if you need to reassign.
 
-- Missing assignment on `const` variable:
+### Missing assignment on `const` variable:
 
-  ```
-  Uncaught SyntaxError: missing = in const declaration
-  ```
+```
+Uncaught SyntaxError: missing = in const declaration
+```
 
-  The `const` keyword requires that you assign the variable with a value at the time of creation. If you need to create a variable without assigning it, use `let`.
+The `const` keyword requires that you assign the variable with a value at the time of creation. If you need to create a variable without assigning it, use `let`.
 
 ---
 
 ## 3. "hoisting" and `undefined`
 Every javascript application starts it's life in two phases:
-1. Creation phase - The js engine "skims" the code (called "hoisting") and it:
-    - Creates a memory space for each variable and sets their value to `undefined`. Important: this means that all variables start their lives as `undefined` and will continue to be so until they are assigned another value.
-    - Function statements (which we haven't covered yet) are saved into memory but not invoked.
-2. Execution phase - The js engine then executes the code line-by-line as you'd expect. Things to consider:
-    - Never set a variable to `undefined`. Javascript allows you to do it but please, don't. Set it to `null` instead.
-    - If a variable is not assigned (using the `=` assignment operator) a variable will continue to be `undefined`. Note: this does not apply to `const` variables since they are assigned when they are declared.
+### 1. Creation phase
+The js engine "skims" the code (called "hoisting") and it:
+- Creates a memory space for each variable and sets their value to `undefined`. Important: this means that all variables start their lives as `undefined` and will continue to be so until they are assigned another value.
+- Function statements (which we haven't covered yet) are saved into memory but not invoked.
+### 2. Execution phase
+The js engine then executes the code line-by-line as you'd expect. Things to consider:
+- Never set a variable to `undefined`. Javascript allows you to do it but please, don't. Set it to `null` instead.
+- If a variable is not assigned (using the `=` assignment operator) a variable will continue to be `undefined`. Note: this does not apply to `const` variables since they are assigned when they are declared.
 
 ---
 
@@ -117,3 +121,4 @@ Every javascript application starts it's life in two phases:
 If you find any fun or engaging exercises, let your instructor know!
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-10-14-stateful-css-toggles.md %})
