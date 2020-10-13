@@ -84,5 +84,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+ 
+plugins:
+  - jemoji # Enable emoji
 
 theme: jekyll-theme-slate
