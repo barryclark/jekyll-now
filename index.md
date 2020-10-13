@@ -53,18 +53,18 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 Sunday, Oct 11 @ 8pm: [CPNT 260 Final Project Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/final)
 
 ## Week 6: Oct 12-16
-- M: Stat 
-- T: CPNT 262 Day 2
-- W: CPNT 262 Day 3
-- R: CPNT 262 Day 4
+- M: Stat
+- T: CPNT 262 Day 2 - [Assignment and Primitive Types]({% link _posts/2020-10-13-variables-primitive-types.md %})
+- W: CPNT 262 Day 3 - [Stateful CSS Toggles]({% link _posts/2020-10-14-stateful-css-toggles.md %})
+- R: CPNT 262 Day 4 - [Strings, Numbers and Coersion]({% link _posts/2020-10-15-numbers-strings-coersion.md %})
   - [CPNT 201 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-2)
-- F: CPNT 262 Day 5
+- F: CPNT 262 Day 5 - [Forms, Expressions and Conditionals]({% link _posts/2020-10-16-forms-expressions-conditionals.md %})
 
 ## Week 7: Oct 19-23
-- M: CPNT 262 Day 6
-- T: CPNT 262 Day 7
-- W: CPNT 262 Day 8
-- R: CPNT 262 Day 9
+- M: CPNT 262 Day 6 - Arrays and `forEach` Loops
+- T: CPNT 262 Day 7 - JSON Galleries
+- W: CPNT 262 Day 8 - Functions and Scope
+- R: CPNT 262 Day 9 - Review, Exam?
 - F: CPNT 201 Day 8
 
 ## Week 8: Oct 26-30
