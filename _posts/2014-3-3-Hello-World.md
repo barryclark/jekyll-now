@@ -105,7 +105,7 @@ body {
       <img src="/../Images/zaid3.jpg" class="maxsizing">
       <br>
       <p><b>Zaid sits in the dirt waiting for females to come to him.</b></p>
-      <p>In previous years Dr. Primrose has successfully patted Zaid's head and so she approached him with her hand extended. However, this time something was different. Zaid watched her calmly as she moved closer. He didn't move, he just watched. His eyes focused intently on her hand. "There's a good boy, Zaid" she said. Zaid's left eye twitched slightly. She was inches away from him now. "Not this time, bitch" Zaid muttered under his breath.</p>
+      <p>In previous years Dr. Primrose has successfully patted Zaid's head and so she approached him with her hand extended. However, this time something was different. Zaid watched her calmly as she moved closer. He didn't move, he just watched. His eyes focused intently on her hand. "There's a good boy, Zaid" she said. Zaid's left eye twitched slightly. She was inches away from him now. "Not this time, bitch" Zaid muttered under his breath.</p>
     </div> <div class="card">
       
       <img src="/../Images/zaid4.jpg" class="maxsizing">
