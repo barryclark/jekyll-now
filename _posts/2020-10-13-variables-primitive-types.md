@@ -103,7 +103,7 @@ The `const` keyword requires that you assign the variable with a value at the ti
 Every javascript application starts it's life in two phases:
 ### 1. Creation phase
 The js engine "skims" the code (called "hoisting") and it:
-- Creates a memory space for each variable and sets their value to `undefined`. Important: this means that all variables start their lives as `undefined` and will continue to be so until they are assigned another value.
+- Creates a memory space for each variable set with the `var` and sets their value to `undefined`. Important: this means that all variables start their lives as `undefined` and will continue to be so until they are assigned another value.
 - Function statements (which we haven't covered yet) are saved into memory but not invoked.
 
 ### 2. Execution phase
@@ -114,7 +114,9 @@ The js engine then executes the code line-by-line as you'd expect. Things to con
 ---
 
 ## Activities
-- `typeof`: Go back to the [CSS Toggles](http://browsertherapy.com/challenges/css-toggles-with-classlist/) exercise from yesterday. Use the [`typeof` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) to determine the value type of various objects and variables used in the exercise.
+- `typeof`: Go back to the [CSS Toggles](http://browsertherapy.com/challenges/css-toggles-with-classlist/) exercise from yesterday. 
+  - Use the [`typeof` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) to find and example of every value type in the DOM (or in the exercise).
+  - Try to replicate the errors listed above.
 - Beginners: Complete the first 7 challenges of the Free Code Camp [Basic Javascript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/) course. You can stop at "Adding Two Numbers" but keep going if you're in the groove!
 - Everyone: 
   - Try building the [Number guessing game](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash) (you read the homework, right?).

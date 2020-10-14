@@ -4,6 +4,7 @@ title: Week 6W - Stateful CSS Toggles
 categories: cpnt262
 ---
 ## Housekeeping
+- [CPNT 201 Assignment 3](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-3)
 
 ## Homework
 - Review: 
@@ -20,12 +21,16 @@ categories: cpnt262
 
 ---
 
-## 1. Checkboxes and the DOM
-
+## 1. SVG with checkbox toggle
+1. Create a hamburger menu icon in Figma.
+2. Optimize icon using [SVG OMG](https://jakearchibald.github.io/svgomg/).
+3. Add inline SVG to a sample page.
+4. Hopefully: using a checkbox and label, transform the menu into an animated "X" when clicked (and toggle back).
 
 ---
 
 ## 2. Menus and absolute positioning
+Absolute positioning demo?
 
 ---
 
@@ -34,7 +39,7 @@ categories: cpnt262
   - is a horizontal flexbox on desktop;
   - is replaced with a hamburger icon on mobile.
 2. Add a checkbox and label to the hamburger icon.
-3. Using the Stateful CSS Toggle covered in today's lesson, add a click handler to the checkbox so that the menu is displayed vertically (using either `flex-direction`, for example) when the hangurger icon is clicked.
+3. Using the Stateful CSS Toggle covered in today's lesson, add a click handler to the checkbox so that the menu is displayed vertically (using either `flex-direction`, for example) when the hamgurger icon is clicked.
 4. Bonus: Try swapping out the hamburger icon for an "X" icon when the menu is visible.
 
 ---

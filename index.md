@@ -61,6 +61,7 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 
 ## Week 7: Oct 19-23
 - M: CPNT 262 Day 6 - Arrays and `forEach` Loops
+  - [CPNT 201 Assignment 3 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-3)
 - T: CPNT 262 Day 7 - JSON Galleries
 - W: CPNT 262 Day 8 - Functions and Scope
 - R: CPNT 262 Day 9 - Review, Exam?
