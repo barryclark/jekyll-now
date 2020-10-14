@@ -82,7 +82,7 @@ body {
 <body>
 
 <div class="footer">
-  <img src="/_posts/Images/Header.png" class="maxsizing">
+  <img src="/images/Header.png" class="maxsizing">
 </div>
 
 <div class="row">
