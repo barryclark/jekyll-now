@@ -82,7 +82,7 @@ body {
 <body>
 
 <div class="footer">
-  <img src="/..blob/master_posts/Images/Header.png" class="maxsizing">
+  <img src="/blob/master_posts/Images/Header.png" class="maxsizing">
 </div>
 
 <div class="row">
@@ -96,32 +96,32 @@ body {
     </div>
      <div class="card">
     
-      <img src="/../Images/zaid2.jpg" class="maxsizing">
+      <img src="/blob/master_posts/Images/zaid2.jpg" class="maxsizing">
       <br>
       <p><b>Male Proboscis Monkey 'Zaidâ€' in Bako National Park, Borneo, Malaysia.</b></p>
       <p>Dr. Sofia Primrose, an anthropologist at Cambridge University leads a team of researchers into the jungles of Malaysia each year to study the mating rituals of these fascinating creatures. Dr. Primrose first encountered Zaid in 2016. He was sitting alone in the dirt with a look of perplexed curiosity. The other monkeys in the harem were mating and playing, but not Zaid. He liked to watch.</p>
     </div> <div class="card">
     
-      <img src="/../Images/zaid3.jpg" class="maxsizing">
+      <img src="/blob/master_posts/Images/zaid3.jpg" class="maxsizing">
       <br>
       <p><b>Zaid sits in the dirt waiting for females to come to him.</b></p>
       <p>In previous years Dr. Primrose has successfully patted Zaid's head and so she approached him with her hand extended. However, this time something was different. Zaid watched her calmly as she moved closer. He didn't move, he just watched. His eyes focused intently on her hand. "There's a good boy, Zaid" she said. Zaid's left eye twitched slightly. She was inches away from him now. "Not this time, bitch" Zaid muttered under his breath.</p>
     </div> <div class="card">
       
-      <img src="/../Images/zaid4.jpg" class="maxsizing">
+      <img src="/blob/master_posts/Images/zaid4.jpg" class="maxsizing">
       <br>
       <p><b>Zaid screeches and bares his teeth prior to attacking Dr. Primrose.</b></p>
       <p>According to the horrified research team, Zaid erupted into a violent frenzy and latched onto Dr. Primrose's arm, screeching and ripping away her flesh with his teeth. The attack lasted mere minutes but the damage was so severe that Dr. Primrose had to be air lifted to Rajah Charles Brooke Memorial Hospital. Her arm could not be saved.</p>
     </div> <div class="card">
       
-      <img src="/../Images/arm.jpg" class="maxsizing">
+      <img src="/blob/master_posts/Images/arm.jpg" class="maxsizing">
       <br>
       <p><b>Zaid's vicious attack left Dr. Primrose without an arm.</b></p>
       <p>Dr. Primrose underwent several hours of surgery to stop the bleeding and has since recovered from the traumatic experience. She is adamant that Zaid was speaking muffled English to her during the senseless attack but these claims have been dismissed as confusion and shock from her injuries.</p>
     </div>
     <div class="card">
       
-      <img src="/../Images/zaid5.jpg" class="maxsizing">
+      <img src="/blob/master_posts/Images/zaid5.jpg" class="maxsizing">
       <br>
       <p>Zaid has since become somewhat of a legend. Each year groups of curious travellers visit Borneo hoping to capture footage of him speaking or mating. To this day, no such footage exists.</p>
       
@@ -130,13 +130,13 @@ body {
   <div class="rightcolumn">
     <div class="card">
       <h2>About Me</h2>
-      <img src="/../Images/explorer.jpg" class="maxsizing">
+      <img src="/blob/master_posts/Images/explorer.jpg" class="maxsizing">
       <br>
       <p>Professor Asrama Berkumpule is a world renowned anthropologist who has devoted his life to the exploration of Earth's most mystifying lands and rarest species.</p>
     </div>
     <div class="card">
       <h3>Favourite Tree</h3>
-      <img src="/../Images/willow.jpg" class="maxsizing">
+      <img src="/blob/master_posts/Images/willow.jpg" class="maxsizing">
       <br>
       </div>
     <div class="card">
