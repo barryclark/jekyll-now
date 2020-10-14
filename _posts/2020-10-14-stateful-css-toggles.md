@@ -12,7 +12,7 @@ categories: cpnt262
   - [Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
   - [Code Challenge - CSS Toggles with element.classList](http://browsertherapy.com/challenges/css-toggles-with-classlist/)
 - Checkboxes
-  - Read: ['<input type="checkbox">'](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) on MDN
+  - Read: [`<input type="checkbox">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) on MDN
   - Read: [:checked pseudo-selector](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked) on MDN
 - Extras
   - Skim: [Positioning elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning) on MDN
