@@ -93,38 +93,32 @@ body {
       <img src="/images/zaid1.jpg" class="maxsizing">
 	 <br>
       <p>The proboscis monkey or long-nosed monkey, known as the bekantan in Indonesia, is a reddish-brown arboreal Old World monkey with an unusually large nose. It is endemic to the southeast Asian island of Borneo and it is here that a group of researchers have recently taken keen interest in a male proboscis named Zaid.</p>
-    </div>
-     <div class="card">
-    
+    </div>	  
+     <div class="card">    
       <img src="/images/zaid2.jpg" class="maxsizing">
       <br>
       <p><b>Male Proboscis Monkey 'Zaidâ€' in Bako National Park, Borneo, Malaysia.</b></p>
       <p>Dr. Sofia Primrose, an anthropologist at Cambridge University leads a team of researchers into the jungles of Malaysia each year to study the mating rituals of these fascinating creatures. Dr. Primrose first encountered Zaid in 2016. He was sitting alone in the dirt with a look of perplexed curiosity. The other monkeys in the harem were mating and playing, but not Zaid. He liked to watch.</p>
-    </div> <div class="card">
-    
+    </div> <div class="card">    
       <img src="/images/zaid3.jpg" class="maxsizing">
       <br>
       <p><b>Zaid sits in the dirt waiting for females to come to him.</b></p>
       <p>In previous years Dr. Primrose has successfully patted Zaid's head and so she approached him with her hand extended. However, this time something was different. Zaid watched her calmly as she moved closer. He didn't move, he just watched. His eyes focused intently on her hand. "There's a good boy, Zaid" she said. Zaid's left eye twitched slightly. She was inches away from him now. "Not this time, bitch" Zaid muttered under his breath.</p>
-    </div> <div class="card">
-      
+    </div> <div class="card">      
       <img src="/images/zaid4.jpg" class="maxsizing">
       <br>
       <p><b>Zaid screeches and bares his teeth prior to attacking Dr. Primrose.</b></p>
       <p>According to the horrified research team, Zaid erupted into a violent frenzy and latched onto Dr. Primrose's arm, screeching and ripping away her flesh with his teeth. The attack lasted mere minutes but the damage was so severe that Dr. Primrose had to be air lifted to Rajah Charles Brooke Memorial Hospital. Her arm could not be saved.</p>
-    </div> <div class="card">
-      
+    </div> <div class="card">      
       <img src="/images/arm.jpg" class="maxsizing">
       <br>
       <p><b>Zaid's vicious attack left Dr. Primrose without an arm.</b></p>
       <p>Dr. Primrose underwent several hours of surgery to stop the bleeding and has since recovered from the traumatic experience. She is adamant that Zaid was speaking muffled English to her during the senseless attack but these claims have been dismissed as confusion and shock from her injuries.</p>
     </div>
-    <div class="card">
-      
+    <div class="card">      
       <img src="/images/zaid5.jpg" class="maxsizing">
       <br>
-      <p>Zaid has since become somewhat of a legend. Each year groups of curious travellers visit Borneo hoping to capture footage of him speaking or mating. To this day, no such footage exists.</p>
-      
+      <p>Zaid has since become somewhat of a legend. Each year groups of curious travellers visit Borneo hoping to capture footage of him speaking or mating. To this day, no such footage exists.</p>      
     </div>
   </div>
   <div class="rightcolumn">
@@ -145,7 +139,6 @@ body {
     </div>
   </div>
 </div>
-
 <div class="footer">
   <h2>Our Planet</h2>
 </div>
