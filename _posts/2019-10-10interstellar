@@ -20,7 +20,7 @@
 
 </head>
 </head>
-<body background="InterstellarBack.jpg">
+<body background="/images/Interstellar/InterstellarBack.jpg">
 
 
 <header role="banner">
@@ -173,3 +173,4 @@ function displayPanel(tabToActivate) {
 </script>
 </body>
 </html>
+
