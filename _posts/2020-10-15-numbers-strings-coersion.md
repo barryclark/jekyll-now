@@ -18,7 +18,7 @@ categories: cpnt262
     - Read: [Boolean values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) on MDN
     - Read: [Type coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion) on MDN
     - Read: [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
-    - Watch: [JS Type Casting, Converting, and Coercion](https://youtu.be/mat1O5JI2fg)
+    - Watch: [JS Type Casting, Converting, and Coercion](https://youtu.be/mat1O5JI2fg) by Steve Griffith
 
 ---
 
@@ -26,7 +26,7 @@ categories: cpnt262
 <dl>
   <dt>Dynamic Types</dt>
   <dd>You don't tell the engine what type of data a variable holds. It figures it out while your code is running.</dd>
-  <dt>Coersion</dt>
+  <dt>Coercion</dt>
   <dd>Converting a value from one type to another.</dd>
   <dt>Expression</dt>
   <dd>A line of code that returns a value.</dd>
@@ -56,6 +56,11 @@ Live Demo: Comparison operators and coersion
 
 See: [Casting Sample Code](https://gist.github.com/prof3ssorSt3v3/253a945ce2bed2b92805d4e43b5a7614) by Steve Griffith in [JS Type Casting, Converting, and Coercion](https://youtu.be/mat1O5JI2fg)
 
+### Key Takeaways
+- Use `===` instead of `==` whenever possible (or until you understand the difference). 
+- Avoid chaining comparison operators for 3 or more operands.
+- `NaN` and another `NaN` are never equal.
+
 ---
 
 ## 2. String methods
@@ -71,8 +76,11 @@ See: [Food form starter code](https://github.com/sait-wbdv/sample-code/tree/mast
 ---
 
 ## Activities
-1. [MDN Strings exercises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Strings)
-2. Free Code Camp: Starting at [Adding two numbers](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/add-two-numbers-with-javascript) complete lessons 8-36 of the Free Code Camp [Basic Javascript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/) course. You can stop at [Store Multiple Values in one Variable using JavaScript Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays).
+1. MDN: Test your skills:
+    - [Strings](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Strings)
+    - [Math](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math)
+2. You Don't Know JS Exercises: [Types and Grammar]](https://ydkjs-exercises.com/types-grammar/ch4/q1)
+3. Free Code Camp: Starting at [Adding two numbers](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/add-two-numbers-with-javascript) complete lessons 8-36 of the Free Code Camp [Basic Javascript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/) course. You can stop at [Store Multiple Values in one Variable using JavaScript Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays).
 
 ---
 
