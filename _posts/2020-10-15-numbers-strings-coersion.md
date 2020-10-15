@@ -12,6 +12,7 @@ categories: cpnt262
     - Read: [Useful string methods](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)
     - Watch: [JavaScript Strings](https://youtu.be/09BwruU4kiY) by Mosh
     - Watch: [20 String Methods in 7 Minutes](https://youtu.be/VRz0nbax0uI) by Free Code Camp
+    - Read: [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) on MDN
 2. Coersion and Sameness
     - Read: [Boolean values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) on MDN
     - Read: [Type coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion) on MDN
