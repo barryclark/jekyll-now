@@ -79,7 +79,7 @@ See: [Food form starter code](https://github.com/sait-wbdv/sample-code/tree/mast
 1. MDN: Test your skills:
     - [Strings](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Strings)
     - [Math](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math)
-2. You Don't Know JS Exercises: [Types and Grammar]](https://ydkjs-exercises.com/types-grammar/ch4/q1)
+2. You Don't Know JS Exercises: [Types and Grammar](https://ydkjs-exercises.com/types-grammar/ch4/q1)
 3. Free Code Camp: Starting at [Adding two numbers](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/add-two-numbers-with-javascript) complete lessons 8-36 of the Free Code Camp [Basic Javascript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/) course. You can stop at [Store Multiple Values in one Variable using JavaScript Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays).
 
 ---
