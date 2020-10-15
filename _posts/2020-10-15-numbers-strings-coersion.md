@@ -10,27 +10,67 @@ categories: cpnt262
     - Read: [Basic math in JavaScript — numbers and operators](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math)
     - Read: [Handling text - strings in Javascript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings)
     - Read: [Useful string methods](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)
-2. Booleans
+    - Watch: [JavaScript Strings](https://youtu.be/09BwruU4kiY) by Mosh
+    - Watch: [20 String Methods in 7 Minutes](https://youtu.be/VRz0nbax0uI) by Free Code Camp
+2. Coersion and Sameness
     - Read: [Boolean values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) on MDN
-3. Coersion and Sameness
     - Read: [Type coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion) on MDN
     - Read: [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+    - Watch: [JS Type Casting, Converting, and Coercion](https://youtu.be/mat1O5JI2fg)
 
 ---
 
-## 1. String methods
+## Terminology
+<dl>
+  <dt>Dynamic Types</dt>
+  <dd>You don't tell the engine what type of data a variable holds. It figures it out while your code is running.</dd>
+  <dt>Coersion</dt>
+  <dd>Converting a value from one type to another.</dd>
+  <dt>Expression</dt>
+  <dd>A line of code that returns a value.</dd>
+  <dt>Operator</dt>
+  <dd>A special function that usually takes two arguments (operands) from either side of the operator (infix notation).
+    <dl>
+      <dt>Comparison Operator</dt>
+      <dd>Compares its operands and returns a boolean value based on whether the comparison is true or false.</dd>
+      <dt>Arithmetic Operator</dt>
+      <dd>Takes numerical values (either literals or variables) as their operands and returns a single numerical value.</dd>
+    </dl>
+  </dd>
+  <dt>Equal</dt>
+  <dd>Where two values are "equal" but the value types are not compared.</dd>
+  <dt>Identical</dt>
+  <dd>Where two values are equal AND the value types are also identical.</dd>
+  <dt>Concatenation</dt>
+  <dd>Joining two or more strings into one.</dd>
+  <dt>Template Literal</dt>
+  <dd>The ES6 method of concatenation, replacing the need for using the `+` operator on strings.</dd>
+</dl>
 
 ---
 
-## 2. Adding and concatenation
+## 1. Coersion and Sameness
+Live Demo: Comparison operators and coersion
+
+See: [Casting Sample Code](https://gist.github.com/prof3ssorSt3v3/253a945ce2bed2b92805d4e43b5a7614) by Steve Griffith in [JS Type Casting, Converting, and Coercion](https://youtu.be/mat1O5JI2fg)
 
 ---
 
-## 3. Coersion and Sameness
+## 2. String methods
+**Sample Code**: [String methods](https://github.com/sait-wbdv/sample-code/tree/master/js-base/strings/string-methods.js), copied from [20 String Methods in 7 Minutes](https://youtu.be/VRz0nbax0uI) by Free Code Camp
+
+---
+
+## 3. Arithmetic operators and concatenation
+Live Demo: Adding text content to a page using the DOM.
+
+See: [Food form starter code](https://github.com/sait-wbdv/sample-code/tree/master/frontend/form-name-food/)
 
 ---
 
 ## Activities
+1. [MDN Strings exercises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Strings)
+2. Free Code Camp: Starting at [Adding two numbers](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/add-two-numbers-with-javascript) complete lessons 8-36 of the Free Code Camp [Basic Javascript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/) course. You can stop at [Store Multiple Values in one Variable using JavaScript Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays).
 
 ---
 
