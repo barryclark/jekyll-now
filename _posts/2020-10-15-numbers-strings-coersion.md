@@ -4,7 +4,8 @@ title: Week 6R - Strings, Numbers and Coersion
 categories: cpnt262
 ---
 ## Housekeeping
-    
+- [260 Assignment 3 Feeback Key](https://github.com/sait-wbdv/assessments/blob/master/cpnt260/assignment-3/feedback-key.md) (so far)
+
 ## Homework
 1. Numbers and Strings:
     - Read: [Basic math in JavaScript — numbers and operators](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math)
