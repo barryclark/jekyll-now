@@ -60,10 +60,10 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
   - [CPNT 201 Assignment 2 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-2)
 
 ## Week 7: Oct 19-23
-- M: CPNT 262 Day 6 - Arrays and `forEach` Loops
+- M: CPNT 262 Day 6 - [Functions, Events and Scope]({% link _posts/2020-10-19-functions-scope.md %})
   - [CPNT 201 Assignment 3 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-3)
-- T: CPNT 262 Day 7 - JSON Galleries
-- W: CPNT 262 Day 8 - Functions and Scope
+- T: CPNT 262 Day 7 - Loops, Objects and JSON
+- W: CPNT 262 Day 8 - Asynchronous JS and `fetch()`
 - R: CPNT 262 Day 9 - Review, Exam?
 - F: CPNT 201 Day 8
 

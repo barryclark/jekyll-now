@@ -4,6 +4,7 @@ title: Week 6F - Forms Arrays and Conditionals
 categories: cpnt262
 ---
 ## Housekeeping
+- [CPNT 260 Assignment 3](https://github.com/sait-wbdv/assessments/tree/master/cpnt260/assignment-3)
 
 ## Homework
 1. Review
@@ -17,17 +18,36 @@ categories: cpnt262
     - Read: [Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
     - Watch: [Introduction to Arrays with JavaScript](https://youtu.be/arIhhRd1RPc) by Steve Griffith
 4. Reference
+    - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+    - [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+    - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) (**adding** an item to the **end** of an array)
+    - [Array.prototype.pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) (**removing** an item from the **end** of an array)
+    - [Array.prototype.unshift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) (**adding** an item to the **beginning** of an array)
+    - [Array.prototype.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) (**removing** an item from the **beginning** of any array)
     - [HTMLFormElement.elements](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/elements)
 5. Optional: Menu Upgrade
   - Read: [Making an Accessible Hamburger Menu](http://www.ashleysheridan.co.uk/blog/Making+an+Accessible+Hamburger+Menu) by Ashley Sheridan​
 
 ---
 
-## 1. `if`, `else` and `else if`
+## Terminology
+<dl>
+  <dt>First-in / First-out (FIFO)</dt>
+  <dd>The first item added to an array (e.g. using <code>unshift()</code>) is the first item removed from an array (e.g. using <code>shift()</code>).</dd>
+  <dt>First-in / Last-out (FILO)</dt>
+  <dd>The first item added to an array (e.g. using <code>unshift()</code>) is the last item removed from an array (e.g. using <code>pop()</code>).</dd>
+</dl>
 
 ---
 
-## 2. Web Forms and the DOM
+## 1. Web Forms and conditional code
+
+**Sample Code**: [Calculator](https://github.com/sait-wbdv/sample-code/tree/master/frontend/calculator)
+
+---
+
+## 2. Introduction to arrays and array methods
+**Sample Code**: [Arrays](https://github.com/sait-wbdv/sample-code/tree/master/js-base/arrays/)
 
 ---
 
@@ -40,4 +60,4 @@ categories: cpnt262
 ---
 
 ## Clean-up Time!
-- Tomorrow
+- [Tomorrow]({% link _posts/2020-10-19-functions-scope.md %})
