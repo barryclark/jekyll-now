@@ -40,14 +40,14 @@ categories: cpnt262
 
 ---
 
-## 1. Web Forms and conditional code
-
-**Sample Code**: [Calculator](https://github.com/sait-wbdv/sample-code/tree/master/frontend/calculator)
+## 1. Introduction to arrays and array methods
+**Sample Code**: [Arrays](https://github.com/sait-wbdv/sample-code/tree/master/js-base/arrays/)
 
 ---
 
-## 2. Introduction to arrays and array methods
-**Sample Code**: [Arrays](https://github.com/sait-wbdv/sample-code/tree/master/js-base/arrays/)
+## 2. Web Forms and conditional code
+
+**Sample Code**: [Calculator](https://github.com/sait-wbdv/sample-code/tree/master/frontend/calculator)
 
 ---
 
