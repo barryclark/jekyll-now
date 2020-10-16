@@ -35,7 +35,10 @@ categories: cpnt262
 ---
 
 ## Activities
-
+1. Test your skills on MDN
+    - [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Functions)
+    - [Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Events)
+    
 ---
 
 ## Clean-up Time!
