@@ -18,7 +18,6 @@ categories: cpnt262
     - Read: [Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
     - Watch: [Introduction to Arrays with JavaScript](https://youtu.be/arIhhRd1RPc) by Steve Griffith
 4. Reference
-    - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
     - [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
     - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) (**adding** an item to the **end** of an array)
     - [Array.prototype.pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) (**removing** an item from the **end** of an array)
@@ -54,9 +53,8 @@ categories: cpnt262
 ## Activities
 1. Continue with Arrays
     - Try joining two arrays
-    - Try splitting and array
     - Questions to ask:
-        - Are `join()` and `split()` expressions?
+        - Is `join()` an expression?
         - How can you find out?
         - If yes, what is returned?
 2. MDN: Test your skills
