@@ -38,7 +38,11 @@ categories: cpnt262
 1. Test your skills on MDN
     - [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Functions)
     - [Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Events)
-    
+2. Free Code Camp - [Basic Javascript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/):
+    - Functions - Lessons 47-55: 
+        - Starting at [Write Reusable JavaScript with Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions) 
+        - Stop (optional) at [Understanding Boolean Values](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-boolean-values)
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-10-20-loops-objects-json.md %})
