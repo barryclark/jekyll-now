@@ -20,4 +20,5 @@ Seriously I am happy to get in touch, get some feedback or share some thoughts. 
 
 ### Disclaimer
 
-This blog was created with [jekyll](https://jekyllrb.com/) using the [jekyll-now theme](https://github.com/barryclark/jekyll-now) by barry clark. All credits to them.
+This blog was created with [jekyll](https://jekyllrb.com/) using the [jekyll-now theme](https://github.com/barryclark/jekyll-now).
+
