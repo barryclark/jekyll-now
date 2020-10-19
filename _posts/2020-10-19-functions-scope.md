@@ -3,6 +3,9 @@ layout: post
 title: Week 7M - Functions, Events and Scope
 categories: cpnt262
 ---
+## Housekeeping
+- [CPNT 262 Assignment Schedule](https://github.com/sait-wbdv/assessments/tree/master/cpnt262)
+
 ## Homework
 1. Functions
     - Read: [Functions - reusable blocks of code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
