@@ -74,10 +74,19 @@ Many definitions from Tony Alicea's [Javascript: Understanding the Weird Parts](
 ---
 
 ## Activities
-1. Test your skills on MDN
+1. Build a tip calculator
+    - Build a page with a form that accepts two numbers:
+        1. Bill total
+        2. Tip percentage
+    - Write a function that 
+        - accepts two parameters: bill total and tip percentage;
+        - calculates the proper tip amount;
+        - Displays the tip amount on the web page.
+    - Attach this function to the `submit` event of the form.
+2. Test your skills on MDN
     - [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Functions)
     - [Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Events)
-2. Free Code Camp - [Basic Javascript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/):
+3. Free Code Camp - [Basic Javascript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/):
     - Functions - Lessons 47-55: 
         - Starting at [Write Reusable JavaScript with Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions) 
         - Stop (optional) at [Understanding Boolean Values](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-boolean-values)
