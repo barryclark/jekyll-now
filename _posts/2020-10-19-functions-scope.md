@@ -47,6 +47,8 @@ Many definitions from Tony Alicea's [Javascript: Understanding the Weird Parts](
   <dd>Where variables live, and how they relate to each other in memory.</dd>
   <dt>Scope</dt>
   <dd>Where a variable is available in your code, and if it's truly the same variable or a new copy.</dd>
+  <dt>Global Scope</dt>
+  <dd>Any code that runs outside of a function.</dd>
 </dl>
 
 ---
