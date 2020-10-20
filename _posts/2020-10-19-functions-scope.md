@@ -12,7 +12,6 @@ categories: cpnt262
     - Read: [Build your own function](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Build_your_own_function)
     - Read: [Function return values](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values)
     - Read: [Function expression](https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Operators/function)
-    - Reference: [MDN Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
     - Watch (by Steve Griffith):
         - [Introduction to Functions in JavaScript](https://youtu.be/W6QaDqud66Y)
         - [JavaScript Function Parameters](https://youtu.be/dxbsN6_C5PI)
@@ -20,6 +19,7 @@ categories: cpnt262
 2. Events
     - Read: [Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
     - Watch: [Introduction to JavaScript Event Listeners](https://youtu.be/EaRrmOtPYTM) by Steve Griffith
+    - Reference: [MDN Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 3. Scope
     - Watch: [Variable Scope](https://youtu.be/FyWdrCZZavQ)
 
@@ -97,4 +97,4 @@ Many definitions from Tony Alicea's [Javascript: Understanding the Weird Parts](
 ---
 
 ## Clean-up Time!
-- [Tomorrow]({% link _posts/2020-10-20-loops-objects-json.md %})
+- [Tomorrow]({% link _posts/2020-10-20-loops-foreach-random.md %})

@@ -62,9 +62,9 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 ## Week 7: Oct 19-23
 - M: CPNT 262 Day 6 - [Functions, Events and Scope]({% link _posts/2020-10-19-functions-scope.md %})
   - [CPNT 201 Assignment 3 Due](https://github.com/sait-wbdv/assessments/tree/master/cpnt201/assignment-3)
-- T: CPNT 262 Day 7 - Loops, Objects and JSON
-- W: CPNT 262 Day 8 - Asynchronous JS and `fetch()`
-- R: CPNT 262 Day 9 - Review, Exam?
+- T: CPNT 262 Day 7 - [Loops, forEach and Random indexes]({% link _posts/2020-10-20-loops-foreach-random.md %})
+- W: CPNT 262 Day 8 - [Importing `mjs` and Looping Objects]({% link _posts/2020-10-21-mjs-objects.md %})
+- R: CPNT 262 Day 9 - [Asynchronous JS and `fetch()`]({% link _posts/2020-10-22-async-fetch.md %})
 - F: CPNT 201 Day 8
 
 ## Week 8: Oct 26-30
