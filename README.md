@@ -1,4 +1,4 @@
 # Blog Website: 
-ehmsu.github.io
+https://ehmsu.github.io
 
 _Forked from barryclark/jekyllnow_
