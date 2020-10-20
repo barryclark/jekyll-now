@@ -11,6 +11,7 @@ categories: cpnt262
     - [Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
 2. Random Numbers
     - [`Math.random()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+    - [Generating random whole numbers in JavaScript in a specific range?](https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range)
 2. Loops
     - Read: [Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
     - Watch: [`for` Loop](https://www.youtube.com/watch?v=s9wW2PpJsmQ) by Mosh Hamedani
@@ -51,7 +52,10 @@ Build a web page that dynamically creates a list of Lorem Picsum images based on
 ---
 
 ## Activities
-1. MDN: Test your skills
+1. Refactor `getRandomInt()`
+    - The function created this morning has an issue: it doesn't check of the arguments are valid numbers.
+    - Using conditionals check to make sure that numbers are used for arguments. If not, return an error message.
+2. MDN: Test your skills
     - [Loops](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Loops)
     - [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Test_your_skills:_JSON)
     
