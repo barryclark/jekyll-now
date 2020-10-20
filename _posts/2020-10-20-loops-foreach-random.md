@@ -3,6 +3,9 @@ layout: post
 title: Week 7T - Loops, Array.forEach and Random indexes
 categories: cpnt262
 ---
+## Housekeeping
+- Updated: [CPNT 262 Assignment Schedule](https://github.com/sait-wbdv/assessments/tree/master/cpnt262)
+
 ## Homework
 1. Review
     - [Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
@@ -20,7 +23,14 @@ categories: cpnt262
 
 ---
 
-## 1. Classic interview question: FizzBuzz
+## 1. Randomly selecting array elements
+Enough about loops. Sometimes you just want a random item from an array. For example, maybe you want to display a random image from an array of Lorem Picsum IDs.
+
+**Starter Code**: [Random Lorem Picsum Animal](https://github.com/sait-wbdv/sample-code/blob/master/frontend/array-random-index/animals-starter/index.html)
+
+---
+
+## 2. Classic interview question: FizzBuzz
 Using a `for` loop, print a series of numbers from 1 to 100 such that:
 - if the number is divisible by 3, print 'Fizz';
 - if the number is divisible by 5, print 'Buzz';
@@ -29,19 +39,12 @@ Using a `for` loop, print a series of numbers from 1 to 100 such that:
 
 ---
 
-## 2. Higher order loops: `Array.forEach()`
+## 3. Higher order loops: `Array.forEach()`
 The `for` loop is a classic method of repeating code but it's very "unjavascript". In javascript, the `array` value type has a `forEach()` method that allows us to run a function for each item in an array.
 
 Build a web page that dynamically creates a list of Lorem Picsum images based on an array of image IDs.
 
 **Starter Code**: [Lorem Picsum Animals](https://github.com/sait-wbdv/sample-code/blob/master/frontend/loop-gallery/basic-starter/index.html)
-
----
-
-## 3. Randomly selecting array elements
-Enough about loops. Sometimes you just want a random item from an array. For example, maybe you want to display a random image from an array of Lorem Picsum IDs.
-
-**Starter Code**: [Random Lorem Picsum Animal](https://github.com/sait-wbdv/sample-code/blob/master/frontend/array-random-index/animals-starter/index.html)
 
 ---
 
