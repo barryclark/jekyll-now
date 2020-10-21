@@ -11,7 +11,7 @@ A post dedicated to measuring the impact ~~and recovery~~ of COVID-19 in the Aus
 
 Here's a map
 
-<iframe src='/maps/election_map.html.html'
+<iframe src='/maps/election_map.html'
         width='100%' height='400px'>
 </iframe>
 
