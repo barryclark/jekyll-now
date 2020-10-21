@@ -5,6 +5,8 @@ categories: cpnt262
 ---
 ## Homework
 1. CRUD
+    - Read: [How to use Fetch API for CRUD operations](https://dev.to/duhbhavesh/how-to-use-fetch-api-for-crud-operations-57a0)
+    - Reference: [Create, read, update and delete](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) on Wikipedia
 2. Asynchronous JS
     - Read:
         - [Asynchronous Javascript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
@@ -24,11 +26,11 @@ categories: cpnt262
 
 ---
 
-## 2. `fetch`ing JSON with Promises
+## 2. Introduction to Promises
 
 ---
 
-## 3. 
+## 3. Retreiving data with `fetch()`
 
 ---
 
