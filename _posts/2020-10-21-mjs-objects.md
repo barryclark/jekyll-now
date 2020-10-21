@@ -15,9 +15,11 @@ categories: cpnt262
     - [Dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors)
     - [Manipulating documents](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
 2. Objects
-    - [Introducing objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
-    - [Object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
-    - [Looping through objects with `for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+    - Read: [Introducing objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+    - Read: [Object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+    - Read: [Looping through objects with `for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+    - Read: [Array.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+    - Read: [Iterating through JavaScript Objects — 5 Techniques](https://medium.com/backticks-tildes/iterating-through-javascript-objects-5-techniques-and-performance-tests-42b4a222a92b)
 3. ES Modules
     - Read: [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
     - Read: [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
