@@ -45,7 +45,12 @@ categories: cpnt262
 
 ---
 
-## 3. Advanced DOM manipulation?
+## 3. Array of Objects: Finding an object by ID
+Looping through all objects in an array is pretty straight but what if you need to find an object by its ID (or other property)?
+
+[Array.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) to the rescue!
+
+Aside: [Iterating through JavaScript Objects — 5 Techniques](https://medium.com/backticks-tildes/iterating-through-javascript-objects-5-techniques-and-performance-tests-42b4a222a92b)
 
 ---
 
