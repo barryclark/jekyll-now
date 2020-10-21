@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Test
+title: Voter Turnout in the Age of COVID
 excerpt_separator: <!--more-->
 ---
 
-A post dedicated to measuring the impact ~~and recovery~~ of COVID-19 in the Austin area. 
+A post tracking Travis County voter turnout at a precinct-level.
 
 <!--more-->
-
-
-Here's a map
 
 <iframe src='/maps/election_map.html'
         width='100%' height='400px'>
 </iframe>
-
 
 Charlie
