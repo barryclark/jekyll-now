@@ -34,7 +34,7 @@ categories: cpnt262
 
 ### ES Module Takeaways
 - The `.mjs` file extension is not required but recommended. If you encounter a JavaScript MIME type error, try using `.js`
-- When linking to a module with `type="module"` you need to add a `./` to relative paths in `src`.
+- You need to add a `./` to relative paths when you use the `import` statement.
 - Because particular MIME types are required for ES Modules to function, a server is required to serve the files. In other words, you need to be running Live Server or a node server; you cannot just open the html file from your file system.
 
 ---
