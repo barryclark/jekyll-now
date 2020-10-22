@@ -80,4 +80,4 @@ Demonstration: Sending a GET request to a public JSON API.
 ---
 
 ## Clean-up Time!
-- [Tomorrow]({% link 2020-10-23-npm-gitignore.md %})
+- [Tomorrow]({% link _posts/2020-10-23-npm-gitignore.md %})
