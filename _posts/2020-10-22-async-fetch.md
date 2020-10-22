@@ -61,7 +61,7 @@ Demonstration: Sending a GET request to a public JSON API.
 
 ## 3. Introduction to `fetch()` and Promises
 
-**Starter Code**: [Retreiving data asynchronously with `fetch()`](https://github.com/sait-wbdv/sample-code/tree/master/frontend/ahttps://github.com/sait-wbdv/sample-code/tree/master/frontend/fetchsync)
+**Starter Code**: [Retreiving data asynchronously with `fetch()`](https://github.com/sait-wbdv/sample-code/tree/master/frontend/fetch)
 
 ### Key Takeaways
 - Asynchronous functions execute long after your original script has finished.
