@@ -33,8 +33,8 @@ categories: cpnt262
   <dd>One process handles all requests, one command at a time. The Jacascript run-time environment is single threaded. In other languages, such as PHP, the server is multi-threaded: a new process is created for each individual server request.</dd>
   <dt>Synchronous</dt>
   <dd>One at a time (and in order)</dd>
-  <dd>Execution Stack</dd>
-  <dt>The environment where currently running code is executed. When Javascript runs one of your scripts, it will run the commands in the current execution stack. When it's finished running your code, the current execution stack will be empty.</dt>
+  <dt>Execution Stack</dt>
+  <dd>The environment where currently running code is executed. When Javascript runs one of your scripts, it will run the commands in the current execution stack. When it's finished running your code, the current execution stack will be empty.</dd>
   <dt>The Heap</dt>
   <dd>A dark, mysterous place deep in the Javascript engine. This is where Javascript connects to outside systems like memory, graphics, network services, etc.</dd>
   <dt>Event Queue</dt>
