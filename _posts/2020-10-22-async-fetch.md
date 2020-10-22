@@ -63,6 +63,10 @@ Demonstration: Sending a GET request to a public JSON API.
 
 **Starter Code**: [Retreiving data asynchronously with `fetch()`](https://github.com/sait-wbdv/sample-code/tree/master/frontend/fetch)
 
+### Side Sample Code
+- [Finding a random item in an array](https://github.com/sait-wbdv/sample-code/tree/master/frontend/array-random-index)
+- [Looping through an array of numbers](https://github.com/sait-wbdv/sample-code/tree/master/frontend/loop-gallery)
+
 ### Key Takeaways
 - Asynchronous functions execute long after your original script has finished.
 - There's an initial (asynchronous) step for JSON data because it has to be converted to a javascript object.
