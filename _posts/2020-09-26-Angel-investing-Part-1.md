@@ -209,6 +209,10 @@ https://www.inc.com/magazine/201603/burt-helm/pharmapacks-amazon-warehouse.html
 Knowledge of trends
 knowledge of markets 
 to front-run 
+* **Exclusivity**  
+This applies mainly to resale of products or software 
+regional representative 
+where exclusivity keeps out the competition and creates a single supply source 
 
 **Process**  
 
@@ -249,19 +253,112 @@ At some-point a competitor service company will emerge
 with either more efficient use of technology 
 or better customer pricing 
 The only outcome of these is that undifferentiated service companies sooner or later have a 
-[price race to the bottom][20] <sup>[8](#footnote_8)</sup> 
+[price race to the bottom][20] <sup>[9](#footnote_9)</sup> 
  
 **Product**  
 
-A product company is  
+A product business is producing and offering something much 
+more complicated than the physical products defined in the *Produce* section
 
+Let's start with the [textbook definition][24]  
+> a product is an object or system made available for consumer use; it is anything that can be offered to a market to 
+> satisfy the desire or need of a customer... A service is also regarded to as a type of product.
+
+In this case a product is the clever combination, layering and packaging of simpler tools and services
+so that the whole is more valuable than the sum of the parts 
+This could be a physical item (e.g. iPhone, Google Glass) or an online offering (e.g. [Medium][25])
+
+It is worth unpacking the above terms for a second 
+* Combination  
+Engineering effort, glueing together and filling in the cracks
+* Layering  
+the different components of the product cannot just be thrown together
+there has to be a logic and a sequence in the way they are presented to / interact with the user 
+* Packaging  
+Sleak design, seamless user experience
+
+It should be clear that the above are much easier said than done
+however this is where the value of a product company lies
+
+The added value of the above combination offers a range of advantages
+* Branding : differentiation from the competition
+* customer stickiness: possibly other than price, there is little incentive to change for another product <sup>[10](#footnote_10)</sup>
+* monetization: a good product is something that the customer is willing to pay for. It is also a solid base for the 
+company to continue layering monetizable services and offerings on top
 
 **Platform**  
 
+In the business model peking order 
+platform businesses is at the top step 
+
+Let's see another [textbook definition][26]  
+> A platform is a business model that creates value by facilitating exchanges between two or more interdependent groups, 
+> usually consumers and producers.
+
+Some of the biggest companies in the worlds are platforms 
+* Amazon Marketplace and Alibaba: matching merchants and buyers
+* Airbnb: matching home-owners with vacationers
+* Uber: matching car owners with riders
+and the list goes on
+
+At the heart of a platform's success 
+is the ability to create and maintain a [network effect][27]
+i.e. the more participants on the platform, the better the quality of the product/service offering
+
+It is easy to think that a platform is just a beautiful website
+It is way, way more than that 
+
+It needs to get **a lot** of things right
+* Acquisition  
+A platform is only successful if it can acquire both supply (e.g. merchants) and demand (e.g. buyers) in large and 
+balanced numbers. Imbalances in the acquisition process result at best in [economic distortions][28] and at worst in 
+participants just not bothering. 
+* Process & Product 
+A platform combines characteristics of both a Process/Service and a Product. 
+Times 2-3 (for all different participants). 
+And on steroids (in order to maintain and enhance the network effect)
+So all the considerations of the previous sections apply here, multiple times 
+in order to build trust
+* Branding and marketing  
+Attacting large numbers of people is not easy 
+Marketing is a constant fight for attention
+Ideal situation if the brand becomes synonymous with the marketplace <sup>[11](#footnote_11)</sup>
+* Customer support  
+People interacting with anything are a liability
+Even more so with other people
+No amount of technology can be a substitute for top-notch support from the get-go 
+* Economics  
+A platform is essentially its own micro-economy 
+Just like any economy it needs constant monitoring and curation to avoid imbalances of pricing and supply/demand
+
+Getting all of the above right is pretty damn hard 
+So the term ["unicorn"][29] is quite befitting for their rarity 
 
 **Patent / Royalties**
 
+worth mentioning as it is an interesting one
 
+A business built around one or more inventions 
+The inventions can be truly anything: from biochemistry and material engineering to an innovative disaster shelter
+
+The business then licenses out the manufacturing and/or commercialisation of the "thing"
+to other entities 
+and receives part of the proceeds 
+either as a percentage of sales or as fixed royalties 
+
+Best example is [Arm][30]
+
+The key thing to note here is that 
+these businesses depend almost entirely on legal structures for their survival 
+Once an innovative "thing" is in the public domain 
+the only thing that stops competitors from illicitly replicating it is the enforcement of [IP law][31]
+This can be a problem, especially with countries offering [weak protections][32] 
+
+Also worth noting that [franchise business development][33] 
+falls in this category and is a huge part   
+franchises can be complex business processes (e.g. McDonalds)
+as they are consumer-facing 
+marketing and branding is key 
 
 # Letter A 
 
@@ -319,7 +416,9 @@ With everything found online and the ability to [outsource inventory management]
 9. <a name="footnote_9"></a>A great example of this race is payments in the UK.  
 [OpenBanking][21] has been a huge leveller, lowering the barrier-to-entry in the payments service space. This has lead to an 
 explosion of service companies and a rapid price competition, to the point of [almost being uneconomical][22]. 
-
+10. <a name="footnote_10"></a>As the driver of any German car can happily attest.
+11. <a name="footnote_11"></a>Think how so many businesses now describe themselves as "The Airbnb of...". Or the fact 
+that any form of ride-sharing is an "uber". What does this tell about the dominance of these platform brands?
 
 
   [1]: https://businesstown.com/300-best-small-business-ideas/
@@ -345,3 +444,13 @@ explosion of service companies and a rapid price competition, to the point of [a
   [21]: https://www.openbanking.org.uk/ 
   [22]: https://ordohq.com/pricing/
   [23]: https://en.wikipedia.org/wiki/Consulting_firm
+  [24]: https://en.wikipedia.org/wiki/Product_(business)
+  [25]: https://medium.com/
+  [26]: https://www.applicoinc.com/blog/what-is-a-platform-business-model/
+  [27]: https://www.investopedia.com/terms/n/network-effect.asp
+  [28]: https://en.wikipedia.org/wiki/Platform_economy
+  [29]: https://en.wikipedia.org/wiki/Unicorn_(finance)
+  [30]: https://en.wikipedia.org/wiki/Arm_Holdings
+  [31]: https://en.wikipedia.org/wiki/Intellectual_property
+  [32]: https://en.wikipedia.org/wiki/Intellectual_property_in_China
+  [33]: https://www.investopedia.com/terms/f/franchise.asp
