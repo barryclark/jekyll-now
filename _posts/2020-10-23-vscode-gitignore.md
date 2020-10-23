@@ -4,6 +4,13 @@ title: Week 7F - VS Code Extensions and .gitignore
 categories: cpnt201
 ---
 
+## Housekeeping
+- [CPNT 262 Assignment Schedule](https://github.com/sait-wbdv/assessments/tree/master/cpnt262)
+  - [Assignment 2](https://github.com/sait-wbdv/assessments/tree/master/cpnt262/assignment-2) and moved up to Oct 30.
+  - Two assignments merged and re-scheduled.
+- [CPNT 201 Assignment Schedule](https://github.com/sait-wbdv/assessments/tree/master/cpnt201)
+  - Assignment 4 pushed to Nov 2.
+
 ## Homework
 1. `.gitignore`
     - [Ignoring Files](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files) on GitHub Docs
