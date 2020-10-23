@@ -22,7 +22,7 @@ Although we'll eventually need npm for CPNT 262, it is no longer needed for CPNT
 ---
 
 ## 2. Ignoring files globally in Git
-It's important that you have a global `.gitignore` file configured before we begin working with NodeJS. There are important files and directories that should not be included in your project repos.
+There are certain files created by particular editors, IDEs, operating systems, etc., that do not belong in a repository. But adding system-specific files to the repo's `.gitignore` is considered a poor practice. This file should only exclude files and directories that are a part of the package that should not be versioned (such as the node_modules directory) as well as files that are generated (and regenerated) as artifacts of a build process.
 
 Sources:
 - [subfuzion .gitgnore](https://gist.github.com/subfuzion/db7f57fff2fb6998a16c)
