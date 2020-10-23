@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Week 7F - NPM and .gitignore
-categories: cpnt201
+title: Week 8F - npm and package.json
+categories: cpnt262
 ---
 ## Homework
 1. Review
@@ -15,20 +15,27 @@ categories: cpnt201
         - [The `package.json` guide](https://nodejs.dev/learn/the-package-json-guide)
         - [The `package-lock.json` file](https://nodejs.dev/learn/the-package-lock-json-file)
         - [Semantic Versioning using npm](https://nodejs.dev/learn/semantic-versioning-using-npm)
-3. `.gitignore`
-    - [Ignoring Files](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files) on GitHub Docs
 
 ---
 
-## 1. Introduction to NPM
+## Terminology
+Source: [Learn and Understand NodeJS](https://www.udemy.com/course/understand-nodejs/) (Paid Udemy course) by Tony Alicea
+<dl>
+  <dt>npm Package</dt>
+  <dd>Third-party code that is managed and maintained with a package management system.</dd>
+  <dt>Package Management System</dt>
+  <dd>Software that automates installing and updating packages, including their versions and dependencies.</dd>
+  <dt>Dependency</dt>
+  <dd>Code that another set of code depends on to function. If you use that code in your app, it's a dependency. Your app depends on it.</dd>
+</dl>
 
 ---
 
-## 2. NPM `node_modules` directory
+## 1. Introduction to npm
 
 ---
 
-## 3. Ignoring files in Git
+## 2. npm `node_modules` directory
 
 ---
 
