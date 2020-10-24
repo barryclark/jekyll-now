@@ -7,7 +7,7 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 <style>
-	body { margin: 0; padding: 0; }
+    body { margin: 0; padding: 0; }
 
     h2,
       h3 {
@@ -22,7 +22,7 @@
         margin: 10px;
         text-align: left;}
 
-	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
         /**
     * Set rules for how the map overlays
     * (information box and legend) will be displayed
@@ -118,13 +118,13 @@
 <div class="map-overlay" id="legend"></div>
 <div class='map-overlay' id='features'><h2>Travis County Voter Turnout Map</h2>
     <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
-        <div id='pd2'><p>UNOFFICAL - Updated: Oct. 19th</p></div></div></div>
+        <div id='pd2'><p>UNOFFICAL - Updated: Oct. 23rd</p></div></div></div>
     
 <script>
-	mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxpZTIzNDMiLCJhIjoiY2tnaWlnOTRyMGk5djJybGYzaThqeXQzdyJ9.kRWf1VawXRygKy2w7hNT1w';
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxpZTIzNDMiLCJhIjoiY2tnaWlnOTRyMGk5djJybGYzaThqeXQzdyJ9.kRWf1VawXRygKy2w7hNT1w';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/charlie2343/ckgiebjg000a019o4hklx82k3',
+        style: 'mapbox://styles/charlie2343/ckgjy2anp1kbm1amvehn0h1ql',
         center: [-97.747875,30.268937],
         zoom: 10
     });
@@ -146,7 +146,7 @@
             'id': 'fills',
             'type': 'fill',
             'source': 'precincts',
-            'layout': {},
+            'layout': {'visibility':'visible'},
             'paint': {
                 'fill-color': [
                 'interpolate',
@@ -169,6 +169,35 @@
         },
         'waterway-label'
         );
+
+        map.addLayer({
+            'id': 'fills2016',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','right_percent_2016_number'],
+                0,
+                '#edf8e9',
+                0.2,
+                '#bae4b3',
+                0.4,
+                '#74c476',
+                0.6,
+                '#31a354',
+                0.8,
+                '#006d2c'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );
+
         var legendlayers = [
               '0-19%', 
               '20-39%', 
@@ -206,7 +235,7 @@
               //You can adjust the values of the popup to match the headers of your CSV. 
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
 
-              var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.right_active_registered + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + e.features[0].properties.right_turnout +`</h4>`; 
+              var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.right_active_registered + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + e.features[0].properties.right_turnout +`</h4>` + `<h4>` + `<b>` + `Percent of 2016 Turnout: ` + `</b>` + e.features[0].properties.right_percent_2016_number +`</h4>`; 
 
               new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
@@ -217,6 +246,8 @@
     }
 
     );
+
+
 </script>
 
 </body>
