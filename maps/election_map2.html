@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Travis County Voter Turnout</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+<style>
+    body { margin: 0; padding: 0; }
+
+    h2,
+      h3 {
+        margin: 10px;
+        font-size: 1.2em;
+      }
+      h3 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.85em;
+        margin: 10px;
+        text-align: left;}
+
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        /**
+    * Set rules for how the map overlays
+    * (information box and legend) will be displayed
+    * on the page. */
+
+     
+    .map-overlay {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.8);
+      margin-right: 20px;
+      font-family: Arial, sans-serif;
+      overflow: auto;
+      border-radius: 3px;
+    }
+
+    #features {
+        top: 0;
+        height: 115px;
+        margin-top: 20px;
+        width: 325px;
+      }
+    #legend {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 100px;
+        margin-bottom: 40px;
+        width: 100px;
+      }
+      .legend-key {
+        display: inline-block;
+        border-radius: 20%;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+      }
+
+       /* Popup styling */
+
+    .mapboxgl-popup {
+      padding-bottom: 5px;
+    }
+
+    .mapboxgl-popup-close-button {
+      display: none;
+    }
+
+    .mapboxgl-popup-content {
+      font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+      padding: 0;
+      width: 250px;
+    }
+
+    .mapboxgl-popup-content-wrapper {
+      padding: 1%;
+    }
+
+    .mapboxgl-popup-content h3 {
+      background: rgb(61, 59, 59);
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      display: block;
+      padding: 15px;
+      font-weight: 700;
+      margin-top: -5px;
+    }
+
+    .mapboxgl-popup-content h4 {
+      margin: 0;
+      display: block;
+      padding: 10px 3px 10px 10px;
+      font-weight: 400;
+    }
+    .mapboxgl-container {
+      cursor: pointer;
+    }
+
+    .mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
+      margin-top: 3px;
+    }
+
+    .mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
+      border-bottom-color: rgb(61, 59, 59);
+    }
+
+</style>
+</head>
+<body>
+<div id='map'></div>
+<div class="map-overlay" id="legend"></div>
+<div class='map-overlay' id='features'><h2>Travis County Voter Turnout Map</h2>
+    <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
+        <div id='pd2'><p>UNOFFICAL - Updated: Oct. 23rd</p></div></div></div>
+    
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxpZTIzNDMiLCJhIjoiY2tnaWlnOTRyMGk5djJybGYzaThqeXQzdyJ9.kRWf1VawXRygKy2w7hNT1w';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/charlie2343/ckgjy2anp1kbm1amvehn0h1ql',
+        center: [-97.747875,30.268937],
+        zoom: 10
+    });
+    var hoveredStateId = null;
+
+    // disable map rotation using right click + drag
+    map.dragRotate.disable();
+ 
+    // disable map rotation using touch rotation gesture
+    map.touchZoomRotate.disableRotation();
+
+    map.on('load', function () {
+        map.addSource('precincts', {
+            'type': 'geojson',
+            'data':
+                'https://raw.githubusercontent.com/Charlie-Henry/Travis_County_Turnout/main/Travis_County_Election_Turnout.geojson'
+        });
+        map.addLayer({
+            'id': 'fills',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','right_turnout_number'],
+                0,
+                '#eff3ff',
+                0.2,
+                '#bdd7e7',
+                0.4,
+                '#6baed6',
+                0.6,
+                '#3182bd',
+                0.8,
+                '#08519c'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );
+
+        map.addLayer({
+            'id': 'fills2016',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'visible'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','right_percent_2016_number'],
+                0,
+                '#edf8e9',
+                0.2,
+                '#bae4b3',
+                0.4,
+                '#74c476',
+                0.6,
+                '#31a354',
+                0.8,
+                '#006d2c'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );
+
+        var legendlayers = [
+              '0-19%', 
+              '20-39%', 
+              '40-59%', 
+              '60-79%', 
+              '80-100%', 
+            ];
+            var colors = [
+              '#eff3ff', 
+              '#bdd7e7', 
+              '#6baed6', 
+              '#3182bd', 
+              '#08519c', 
+            ];
+
+            for (i = 0; i < legendlayers.length; i++) {
+              var layer = legendlayers[i];
+              var color = colors[i];
+              var item = document.createElement('div');
+              var key = document.createElement('span');
+              key.className = 'legend-key';
+              key.style.backgroundColor = color;
+
+              var value = document.createElement('span');
+              value.innerHTML = layer;
+              item.appendChild(key);
+              item.appendChild(value);
+              legend.appendChild(item);
+            }
+
+             map.on('click','fills', function (e) {
+              //var coordinates = e.features[0].geometry.coordinates.slice();
+
+              //set popup text 
+              //You can adjust the values of the popup to match the headers of your CSV. 
+              // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
+
+              var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.right_active_registered + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + e.features[0].properties.right_turnout +`</h4>` + `<h4>` + `<b>` + `Percent of 2016 Turnout: ` + `</b>` + e.features[0].properties.right_percent_2016_number +`</h4>`; 
+
+              new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(description)
+                .addTo(map);
+            });
+        
+    }
+
+    );
+
+
+</script>
+
+</body>
+</html>
