@@ -6,7 +6,7 @@
 name: Pierre Segonne
 
 # Short bio or description (displayed in the header)
-# description: q
+description: MSc Student - DTU & CentraleSupélec
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/pierresegonne/pierresegonne.github.io/master/images/avatar.jpg
@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/pierresegonne/pierresegonne.github.io/
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: 
+  email: pierre.segonne@protonmail.com
   facebook: 
   flickr:
   github: pierresegonne
@@ -26,7 +26,7 @@ footer-links:
   linkedin: psegonne
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: pierre_segonne
   stackoverflow: users/11552392/pierresegonne # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
