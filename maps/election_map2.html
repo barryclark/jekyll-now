@@ -182,13 +182,13 @@
                 ['get','right_percent_2016_number'],
                 0,
                 '#edf8e9',
-                0.2,
-                '#bae4b3',
                 0.4,
-                '#74c476',
+                '#bae4b3',
                 0.6,
-                '#31a354',
+                '#74c476',
                 0.8,
+                '#31a354',
+                1.0,
                 '#006d2c'],
                 'fill-outline-color' : "#f2f2f2",
                 'fill-opacity': 0.75
@@ -199,18 +199,18 @@
         );
 
         var legendlayers = [
-              '0-19%', 
-              '20-39%', 
+              '0-39%', 
               '40-59%', 
               '60-79%', 
-              '80-100%', 
+              '80-99%', 
+              '100%+', 
             ];
             var colors = [
-              '#eff3ff', 
-              '#bdd7e7', 
-              '#6baed6', 
-              '#3182bd', 
-              '#08519c', 
+              '#edf8e9', 
+              '#bae4b3', 
+              '#74c476', 
+              '#31a354', 
+              '#006d2c', 
             ];
 
             for (i = 0; i < legendlayers.length; i++) {
@@ -228,14 +228,14 @@
               legend.appendChild(item);
             }
 
-             map.on('click','fills', function (e) {
+             map.on('click','fills2016', function (e) {
               //var coordinates = e.features[0].geometry.coordinates.slice();
 
               //set popup text 
               //You can adjust the values of the popup to match the headers of your CSV. 
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
 
-              var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.right_active_registered + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + e.features[0].properties.right_turnout +`</h4>` + `<h4>` + `<b>` + `Percent of 2016 Turnout: ` + `</b>` + e.features[0].properties.right_percent_2016_number +`</h4>`; 
+              var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.right_active_registered + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + e.features[0].properties.right_turnout +`</h4>` + `<h4>` + `<b>` + `Percent of 2016 Turnout: ` + `</b>` + e.features[0].properties.right_percent_2016 +`</h4>`; 
 
               new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
