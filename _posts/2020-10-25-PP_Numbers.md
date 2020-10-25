@@ -1,7 +1,11 @@
 ---
 layout: post
 title: A Polar Visualisation of Prime Numbers
+comments: True
+share: True
 ---
+
+Blabla bla
 
 ```python
 import matplotlib.pyplot as plt
@@ -31,9 +35,34 @@ plt.scatter(x,y, c=colors/255., s=1)
 plt.show()
 ```
 
+
+another example 
+
+```python
+from tensorflow.examples.tutorials.mnist import input_data
+
+def load(config):
+
+  # The `config` argument is here unused, but you can treat it
+  # as a dict of keys and values accessible as attributes - it acts
+  # like an AttrDict
+
+  dataset = input_data.read_data_sets('.')  # download MNIST
+  # to the current working dir and load it
+  return dataset
+```
+
+a figure 
+
 <figure id='pp_numbers'>
   <img style="display: box; margin: auto" src="{{site.url}}/images/posts/pp_numbers/pp.png" alt="pp numbers"/>
   <figcaption align='center'>
   <b>Fig 1:</b> The Stacked Capsule Autoencoder (SCAE) is composed of a Part Capsule Autoencoder (PCAE) followed by an Object Capsule Autoencoder (OCAE). It can decompose an image into its parts and group parts into objects.
   </figcaption>
 </figure>
+
+A math example
+
+$$
+y_{n} = \sum_{n=1}^{N} x_{n}
+$$

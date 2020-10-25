@@ -13,5 +13,11 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  {% include disqus.html %}
+  {% if page.share %}
+    {% include share.html %}
+  {% endif %}
+  <div style="padding: 20px;"></div>
+  {% if page.comments %}
+    {% include comments.html %}
+  {% endif %}
 </article>

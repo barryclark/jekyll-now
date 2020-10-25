@@ -1,0 +1,26 @@
+<div class="share-bar">
+    <h3>Share this:</h3>
+    <div class="share-buttons">
+      <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fexample.com%2F" -->
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}"
+      class="share-button facebook" target="_blank">
+        <i class="fa fa-facebook-square"></i>Facebook
+      </a>
+  
+      <a  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      class="share-button twitter" target="_blank">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter
+      </a>
+  
+      <a  href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      class="share-button google-plus" target="_blank">
+        <i class="fa fa-google-plus-square" aria-hidden="true"></i>Google+
+      </a>
+  
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
+      class="share-button linkedin"
+      target="_blank">
+      <i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a>
+    </div>
+  </div>
+  
