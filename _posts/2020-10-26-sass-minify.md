@@ -17,7 +17,8 @@ categories: cpnt201
 
 ## 1. Sass Basics
 - Configuration: Live Sass Compiler
-  - set `savePath` to `../css`
+  - Open Extension Setttings -> `Live Sass Compile › Settings: Formats`
+    - set `"savePath": "~/../css"`
 - `.sass` vs `.scss`
 - Nesting
 - The Ampersand
