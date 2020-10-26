@@ -114,11 +114,97 @@ You can check the Code live [here]()
 
 Glad you asked. Well remember **Tag Dispatching**? Or even better **SFINAE** all that stuff you had to do in order to specifically select an overload for a specific function. Lets do something about that!
 
-An Implementation using **Tag Dispatching**:
+For our use case we want to optimize our `length` function for containers that are continously stored in memory and whose length can be computed simply by subtracting `begin` from `end`.
+
+So here's an Implementation using **Tag Dispatching**:
 
 ```cpp
+template<class Iterator>
+[[nodiscard]] int length(Iterator begin, Iterator end) noexcept 
+{
+    return _length(begin, end, Iterator::iterator_category);
+}
+
+template<class Iterator>
+[[nodiscard]] int _length(Iterator begin, Iterator end, std::random_access_iterator_tag) noexcept
+{
+    return end - begin;
+}
+
+template<class Iterator>
+[[nodiscard]] int _length(Iterator begin, Iterator end, std::forward_iterator_tag) noexcept
+{
+       int result = 0;
+       for(;begin != end; ++begin, ++result);
+       return result;
+}
+```
+
+I think thats how most STL containers do such optimizations. It works because each iterator has a typedef called `iterator::category`. For the vector it is of type `std::random_access_iterator_tag` for the list it is of type `std::forward_iterator_tag`. Looks quite verbose doesn't it?
+
+Well since this is C++ we can make it even more complicated. Lets try using **SFINAE**:
+
+```cpp
+template<class Iterator>
+[[nodiscard]] int length(Iterator begin, Iterator end, 
+    std::enable_if_t<std::is_same<Iterator::iterator_category,
+         std::random_access_iterator_tag>::value, void_t>* = nullptr)noexcept 
+{
+    return end - begin;
+}
+
+template<class Iterator>
+[[nodiscard]] int length(Iterator begin, Iterator end, 
+    std::enable_if_t<std::is_same<Iterator::iterator_category,
+            std::forward_iterator_tag>::value, void_t>* = nullptr ) noexcept 
+{
+    int result = 0;
+    for(;begin != end; ++begin, ++result);
+    return result;
+}
+```
+Whenever I see `enable_if` I have to resist the urge of skipping the code with the attitude "Its probably not that important to understand this, I probably don't need to know this to solve my current problem"...
+
+
+Now the same thing using Concepts, we just add a second overload using the Concept `std::random_access_iterator`:
+
+```cpp
+// This we had before for any iterator
+template<std::forward_iterator Iterator>
+[[nodiscard]] int length(Iterator begin, Iterator end) noexcept
+{
+    int result = 0;
+    for(;begin != end; ++begin, ++result);
+    return result;
+}
+
+// This is our newly added Concept that optimizes for random access iterators
+template<std::random_access_iterator Iterator>
+[[nodiscard]] int length(Iterator begin, Iterator end) noexcept
+{
+    return end - begin;
+};
+```
+
+**Nice**, we got rid of a lot of boiler plate and complicated language mechanics! The overload resolution takes the Concepts into account and does all the work for us.
+
+This of course has the same advantage of clearer Error Messages, just compare when we put in something that does no have the `typedef iterator_category` into the templates
 
 ```
+//TODO
+```
+
+against what happens with the overloads using Concepts
+
+```
+//TODO
+```
+
+## So how does the overload resolution work for Concepts?
+
+//TODO
+
+
 
 # Resources
 
