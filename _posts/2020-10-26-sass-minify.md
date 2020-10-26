@@ -17,7 +17,7 @@ categories: cpnt201
 
 ## 1. Sass Basics
 - Configuration: Live Sass Compiler
-    
+  - set `savePath` to `../css`
 - `.sass` vs `.scss`
 - Nesting
 - The Ampersand
@@ -28,9 +28,12 @@ categories: cpnt201
 
 ## 2. Sass Imports
 
+**Activity Starter Code**: [Page Header Refactor](https://github.com/sait-wbdv/sample-code/tree/master/frameworks/sass/page-header)
+
 ---
 
 ## 3. CSS/JS Minification
+Problem: We can't disable CSS and JS minification individually?
 
 ---
 
@@ -39,4 +42,4 @@ categories: cpnt201
 ---
 
 ## Clean-up Time!
-- Early dismissal at 11:30am.
+- [Tomorrow]({% link _posts/2020-10-27-this-command-line.md %})

@@ -68,8 +68,8 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - F: CPNT 201 Day 8 - [NPM, node_modules and .gitignore]({% link _posts/2020-10-23-vscode-gitignore.md %})
 
 ## Week 8: Oct 26-30
-- M: CPNT 201 Day 9 - JS/CSS Tools: Sass and Minify
-- T: CPNT 262 Day 10 - `this` and the Command Line
+- M: CPNT 201 Day 9 - [JS/CSS Tools: Sass and Minify]({% link _posts/2020-10-26-sass-minify.md %})
+- T: CPNT 262 Day 10 - [`this` and the Command Line]({% link _posts/2020-10-27-this-command-line.md %})
 - W: CPNT 262 Day 11 - Custom Modules
 - R: CPNT 262 Day 12 - Built-in Modules
 - F: CPNT 262 Day 13 - [npm and `package.json`]({% link _posts/2020-10-30-npm-package-json.md %})

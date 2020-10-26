@@ -112,3 +112,4 @@ Sources:
 
 ## Clean-up Time!
 - Early dismissal at 11:30am.
+- [Tomorrow]({% link _posts/2020-10-26-sass-minify.md %})
