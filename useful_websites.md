@@ -20,6 +20,8 @@ Here are some useful websites that I have found in the past
 
 [Matt Might](http://matt.might.net/articles/){:target="_blank"}: blog.might.net is really just a collection of short articles
 
+[Matthew Young](https://constantamateur.github.io){:target="_blank"}: Things I'm trying to understand. Mostly maths, programming and science.
+
   
 ### Repositories
   
