@@ -200,18 +200,57 @@ against what happens with the overloads using Concepts
 //TODO
 ```
 
+You can check and experiment with the Code [here](TODO).
+
 ## So how does the overload resolution work for Concepts?
 
+Well, according to the standard the more constrained Concept wins.
 //TODO
 
+# Creating your own Concepts
 
+Finally the good stuff, eh? Well depends, actually the stl provides a lot of things that you can use and combine in order to create new Concepts and I really recommend to do so. If you know the [type_traits](TODO) library you should already be familiar with most of them since for every `type_trait` there is now also a corresponding Concept based on said `type_trait`.
+
+Okay so lets put some **"Butter by die Fische"** here is a self defined Concept:
+```cpp
+template<typename T>
+concept A_Number = std::is_integral<T>::value || sd::is_floating_point<T>::value;
+```
+
+So when we take a look at the previously used `std::forward_iterator` Concept we can see its defined exactly in that way (a little bit more verbose but still quite easy to read):
+
+```cpp
+template<class I>
+  concept forward_iterator =
+    std::input_iterator<I> && 
+    std::derived_from</ITER_CONCEPT*/<I>, std::forward_iterator_tag> &&
+    std::incrementable<I> &&
+    std::sentinel_for<I, I>;
+```
+
+And of course since this is C++ there is more than one way to define a Concept. The above one is called **function concept** the below one **variable concept**:
+```cpp
+template<typename T>
+concept Equal(){
+  return requires(T a, T b) {
+    { a == b } -> bool;
+    { a != b } -> bool;
+  };
+}
+```
+Lets translate what the above means: Th
+
+# What else could there be?
+
+* Well the require clause pretty much can go wherever you like
+* Concept as return type
+* conept for function parameters
+
+# TLDR
+
+Use Concepts to define your Function Interfaces!
 
 # Resources
 
 [cppreference](https://en.cppreference.com/w/cpp/language/constraints)
 [modernescpp](https://www.modernescpp.com/index.php/defintion-of-concepts)
-
-
-
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
