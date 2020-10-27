@@ -9,7 +9,13 @@ categories: cpnt262
     - MDN: 
         - [Introducing objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
         - [Object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
-2. 
+        - [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+2. Nerd Drama
+    - Skim: [Node Modules at War: Why CommonJS and ES Modules Can’t Get Along](https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1)
+3. CommonJS Modules in Node.js
+    - Read: [Export a Module in Node.js](https://www.tutorialsteacher.com/nodejs/nodejs-module-exports) by Tutorials Teacher
+    - Watch: 15:22 - 33:00 of [Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4&t=922s) by Mosh Hamedani
+    - Watch: [Creating a Module in Node.js](https://youtu.be/Cxo4UKpHv5s) by Mosh Hamedani
 
 ---
 
@@ -17,11 +23,11 @@ categories: cpnt262
 
 ---
 
-## 1. What is a Node Module?
+## 1. What is a CommonJS Module?
 
 ---
 
-## 2. Creating a custom Node module
+## 2. Creating a custom greet module
 
 ---
 
