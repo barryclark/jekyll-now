@@ -108,7 +108,7 @@ template<std::forward_iterator Iterator>
 
 Aaaand we are saved! Clear error message caught at compile time, could it be better? Well... sadly concepts (or at least the forward_iterator concept) cannot save us from everything. Remember the line `auto same_types = length("string2", "string");` that will compile even with the Concept, even though it makes no sense whatsoever. This is because `const char*` satisfies all Constraints of the `std::forward_iterator` Concept (just like probably any pointer, but lets take a look at that further down).
 
-You can check the Code live [here]()
+You can check the Code live [here](https://godbolt.org/z/bvG8e9)
 
 # But apart from catching Errors at Compile Time and Giving clear Error Messages, what have Concepts ever done for us?
 
@@ -119,12 +119,6 @@ For our use case we want to optimize our `length` function for containers that a
 So here's an Implementation using **Tag Dispatching**:
 
 ```cpp
-template<class Iterator>
-[[nodiscard]] int length(Iterator begin, Iterator end) noexcept 
-{
-    return _length(begin, end, Iterator::iterator_category);
-}
-
 template<class Iterator>
 [[nodiscard]] int _length(Iterator begin, Iterator end, std::random_access_iterator_tag) noexcept
 {
@@ -138,25 +132,32 @@ template<class Iterator>
        for(;begin != end; ++begin, ++result);
        return result;
 }
+
+template<class Iterator>
+[[nodiscard]] int length(Iterator begin, Iterator end) noexcept 
+{
+    return _length(begin, end, typename Iterator::iterator_category{});
+}
 ```
 
-I think thats how most STL containers do such optimizations. It works because each iterator has a typedef called `iterator::category`. For the vector it is of type `std::random_access_iterator_tag` for the list it is of type `std::forward_iterator_tag`. Looks quite verbose doesn't it?
+I think thats how most STL containers do such optimizations. It works because every iterator has a typedef called `iterator::category`. For the vector it is of type `std::random_access_iterator_tag` for the list it is of type `std::forward_iterator_tag`. Looks quite verbose doesn't it?
 
-Well since this is C++ we can make it even more complicated. Lets try using **SFINAE**:
+Well since this is C++ we can make it even more complicated. Lets try the same using **SFINAE**:
 
 ```cpp
 template<class Iterator>
 [[nodiscard]] int length(Iterator begin, Iterator end, 
-    std::enable_if_t<std::is_same<Iterator::iterator_category,
-         std::random_access_iterator_tag>::value, void_t>* = nullptr)noexcept 
+    std::enable_if_t<std::is_same<typename Iterator::iterator_category,
+         std::random_access_iterator_tag>::value, void>* = nullptr)noexcept 
 {
     return end - begin;
 }
 
+// We could be better here by checking for the actual iterator type but this is easier ;)
 template<class Iterator>
 [[nodiscard]] int length(Iterator begin, Iterator end, 
-    std::enable_if_t<std::is_same<Iterator::iterator_category,
-            std::forward_iterator_tag>::value, void_t>* = nullptr ) noexcept 
+    std::enable_if_t<std::negation_v<std::is_same<typename Iterator::iterator_category,
+            std::random_access_iterator_tag>>, void>* = nullptr ) noexcept 
 {
     int result = 0;
     for(;begin != end; ++begin, ++result);
@@ -188,19 +189,28 @@ template<std::random_access_iterator Iterator>
 
 **Nice**, we got rid of a lot of boiler plate and complicated language mechanics! The overload resolution takes the Concepts into account and does all the work for us.
 
-This of course has the same advantage of clearer Error Messages, just compare when we put in something that does no have the `typedef iterator_category` into the templates
+When we put in something that does no have the `typedef iterator_category` (like `int`) into the templates we actually get quite a good error message with Clang, so not much difference to Concepts from this perspective (I was positively surprised by this).
 
 ```
-//TODO
-```
+<source>:78:24: error: no matching function for call to 'length'
 
-against what happens with the overloads using Concepts
+    auto wrong_types = length(3,-4);
 
-```
-//TODO
-```
+                       ^~~~~~
 
-You can check and experiment with the Code [here](TODO).
+<source>:31:19: note: candidate template ignored: substitution failure [with Iterator = int]: type 'int' cannot be used prior to '::' because it has no members
+
+[[nodiscard]] int length(Iterator begin, Iterator end, 
+
+                  ^
+
+<source>:40:19: note: candidate template ignored: substitution failure [with Iterator = int]: type 'int' cannot be used prior to '::' because it has no members
+
+[[nodiscard]] int length(Iterator begin, Iterator end, 
+
+                  ^
+```
+You can check and experiment with the Code [here](https://godbolt.org/z/Ge3b4d).
 
 ## So how does the overload resolution work for Concepts?
 
@@ -209,7 +219,7 @@ Well, according to the standard the more constrained Concept wins.
 
 # Creating your own Concepts
 
-Finally the good stuff, eh? Well depends, actually the stl provides a lot of things that you can use and combine in order to create new Concepts and I really recommend to do so. If you know the [type_traits](TODO) library you should already be familiar with most of them since for every `type_trait` there is now also a corresponding Concept based on said `type_trait`.
+Finally the good stuff, eh? Well depends, actually the stl provides a lot of things that you can use and combine in order to create new Concepts and I really recommend to do so. If you know the [type_traits](https://en.cppreference.com/w/cpp/header/type_traits) library you should already be familiar with most of them since for every `type_trait` there is now also a corresponding Concept based on said `type_trait`.
 
 Okay so lets put some **"Butter by die Fische"** here is a self defined Concept:
 ```cpp
