@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting PAID in Angel Investing - Part 1"
+title: "Getting PAID: A intro to Angel Investing - Part 1"
 author: stelios
 tags: [investing, general knowledge, angel investing]
 categories: [General Knowledge, Investing, Angel Investing]
@@ -57,29 +57,24 @@ By consequence of the above, nothing in these posts constitutes investment advic
 Let me repeat:
 Not. Investment. Advice.
 
-Private equity is unregulated
- opaque 
-and completely illiquid
+Private equity is unregulated, opaque and completely [illiquid][36].  
 Let's also not forget 2 other facts:    
-* the startups that succeed are almost a rounding error, and
+* the startups that succeed are almost a [rounding error][37], and
 * the world is brimming with scammers.
 
-In other words there are much better parking spots for your money 
+In other words, there are much better parking spots for your money.
 
-In addition, nothing in these posts constitutes endorsement or disapproval of anything or anyone.
-I may offer some examples to make a point, but they are exactly that: examples. 
-No fanboy, no dissing.
+Also, nothing in these posts constitutes endorsement or disapproval of anything or anyone.  
+I may offer some examples to make a point, but they are exactly that: examples. No fanboy, no dissing.
 
-Finally, the opinions are only mine.
-They do not represent those of any present or past employer.
+Finally, the opinions are only mine. They do not represent those of any present or past employer.
 
 ## Credits / TL;DR
 
-All credit goes to Nick Ogden and his very insightful presentation to SyndicateRoom
-https://youtu.be/wcg0gKO_Vyk?t=2294
-
-Really helped me convert my scattered thoughts into something which resembles a framework   
-If you only have a few minutes to spare, you can just skip these posts watch the presentation 
+All credit goes to [Nick Ogden][35] and his very insightful [presentation to SyndicateRoom][34].  
+Really helped me convert my scattered thoughts into something which resembles a framework. 
+ 
+If you only have a few minutes to spare, you can just skip these posts and watch his presentation instead. 
 
 # Intro
 
@@ -90,7 +85,7 @@ A business is a very complicated system. A lot of different and opposing "forces
 equilibrium.  
 A successful business even more so.  
 Contrary to the popular myth that it ["only takes a good idea"][1] to succeed, the reality is somewhat different.  
-A new business has a number of things stacked up against it.   
+A new business has a lot of things stacked up against it.   
 
 Of course, we intuitively know that [some ventures thrive][2], some in a huge way. So much so that in the last 15 years 
 there is a global startup culture (link)
@@ -98,7 +93,8 @@ The digitization of everything (link) has lowered the barrier to entry (link) fo
 is not enough. <sup>[1](#footnote_1)</sup>  
 
 Any new startup-in-the-making 
-has a number of "lenses" to be viewed with  
+has a number of "lenses" to be viewed with
+in order to gage the probability of success  
 
 In the whole lifecycle of the business (from fledgling idea to small to large venture) 
 all of these aspects become equally important 
@@ -116,6 +112,10 @@ Or Get PAID Tons, if you want to remember it.
 The letter P stands for the **What** of the business
 In product management (link) lingo this is the user **Problem** that it solves
 In other words, how would one describe the business in a couple of sentences?
+
+In very early ventures 
+the idea is one of the most important bits 
+to be accepted to an [accelerator][45]
 
 This can be further broken down in 2 parts.
 
@@ -154,10 +154,11 @@ or has identified a novel solution for a domain filled with sub-par alternatives
 
 Not all ventures are created equal 
 Depending on *exactly what* they are doing
-they come with their own specific challenges, economics and required skill-sets <sup>[5](#footnote_5)</sup>
+they come with their own specific challenges, economics, potential returns and required skill-sets <sup>[5](#footnote_5)</sup>
 
 Needless to say that  
-* these categories do not cover everything under the sun, and 
+* these categories are my own classification, 
+* they do not cover everything under the sun, and 
 * not every business out there will fall neatly in a single category.
 
 **Produce**  
@@ -331,12 +332,13 @@ No amount of technology can be a substitute for top-notch support from the get-g
 A platform is essentially its own micro-economy 
 Just like any economy it needs constant monitoring and curation to avoid imbalances of pricing and supply/demand
 
+Technology platform 
+
+
 Getting all of the above right is pretty damn hard 
 So the term ["unicorn"][29] is quite befitting for their rarity 
 
 **Patent / Royalties**
-
-worth mentioning as it is an interesting one
 
 A business built around one or more inventions 
 The inventions can be truly anything: from biochemistry and material engineering to an innovative disaster shelter
@@ -355,37 +357,159 @@ the only thing that stops competitors from illicitly replicating it is the enfor
 This can be a problem, especially with countries offering [weak protections][32] 
 
 Also worth noting that [franchise business development][33] 
-falls in this category and is a huge part   
-franchises can be complex business processes (e.g. McDonalds)
-as they are consumer-facing 
-marketing and branding is key 
+is a huge part of this category    
+franchises are almost always consumer-facing, usually offering an at-first-sight simple service (e.g. McDonalds and 
+American-style fast-food, DPD and [last-mile logistics][38],...)
+Behind the scenes they are usually complex businesses, due to complex processes, complex supply chains or both 
+marketing and branding is key
+to ensure customer loyalty and differentiate between different offerings  
 
 # Letter A 
 
 ![Letter A](../assets/images/angel-part1/rich-smith-L8lqR8i_Uug-unsplash.jpg)
 > Photo by Rich Smith on Unsplash
 
+Having covered the "What" of the business
+moving on to letter 
 A for Accounting a.k.a the "How Much"
+
+This is where we can get an idea about the profitability (or even plain viability) of the business
 
 ## Assumptions & Hopes 
 
-(a.k.a. Business plan)
+A also stands for assumptions & hopes a.k.a. the Business plan
 
-TAM
+Let's see the [textbook definition][39] 
+> A business plan is a formal written document containing business goals, the methods on how these goals can be attained, 
+> and the time frame within which these goals need to be achieved.
 
-Model (subscription vs per transaction)
+The first thought that comes to mind is that of a long, [formal document][41] 
+A lot of time [spent typing rather than doing][40] 
+This tends to put a lot of people off
+
+They key thing to note here is that the business plan document is not the goal
+The thinking and research that goes into the document is the goal
+The document itself is just the prompt to trigger this process.
+
+If the founder(s) have built the exact same business before and have deep domain knowledge
+then a business plan is a wasted effort; they have all the answers in their heads.
+For everyone else it is a necessary exercise
+
+Some key aspects of the business plan creation
+
+### TAM & TM
+The [total addressable market][42] describes the size of the opportunity 
+Startups are all about growth  
+knowing that the total market value has many zeros behind it, gets everyone very excited 
+Who doesn't want to ride the next rocket to the moon?
+
+What is probably more important though is to realistically define the initial [target market][43] 
+Which cohort of customers would buy from this business in its first few years? 
+Who are they? What are their characteristics and preferences? 
+How many are they? Where can they be found, how can the business reach them?  
+
+Depending on the nature of the business, the answers to these questions may be crystal clear
+Or not <sup>[12](#footnote_12)</sup>
+
+The important bit here is to have a clear distinction between  
+* the size of the TAM (when the business has reached world domination), and
+* the possibly more humble initial TM (when the business will be struggling to make end meet)    
+
+Clearly identifying and defining the TM will keep the business' efforts focused 
+Once that segment of the market is captured, 
+the business can apply the ["tip of the spear strategy"][44] and expand to other TAM segments
+
+### Competition
+
+Another important bit of this exercise is identifying the competition
+The previous step identified the size of the pie
+this one how many are eating from it
+
+It might be tempting to just skip 
+but [identifying competitors][46] can lead to some useful qualitative conclusions 
+both for the founder and investors 
+* Validation of the opportunity  
+Having other businesses in the same space is a confirmation that there are customers willing to pay for the product
+or service. 
+* Competitive opportunity  
+The identified competitors' short-comings and mistakes are opportunities to take advantage of (and mistakes to avoid).
+* Customer awareness  
+A corollary of the above is that customers are already aware of the product type
+It is a very different effort to market [something invented than something innovative][47] (hint: inventions take much 
+more customer education).
+* Pricing reference  
+Determining what is fair value from a customer's point-of-view may turn out to be a long, hit-and-miss process. 
+Having one or more reference price points greatly accelerates the [price discovery][48] for the new product/service. 
+
+With regards to the actual quantitative outcome of this exercise, there are 3 possible outcomes  
+* No competitors  
+Being early 
+either something that noone wants or the beginning of a new big thing  
+In this case it takes conviction (on the part of the founders) and persuasion (for both customers and investors) 
+to believe that it is something useful
+* Some competitors  
+This is a validation that there is a market 
+In this case winning is a matter of execution 
+* Too many competitors  
+Qualifying the word "many" is a bit subjective 
+in general if it's a crowded and small market it might not be a good sign 
+especially if this new business does not have a true differentiating factor 
+it is a different discussion if the market is huge, in which case there is space for everyone
+
+Identifying competition is not meant to dissuade 
+Having competitors in a field is actually a good thing
+helps keep the business' efforts grounded and focused 
+
+### Pricing  
+
+a.k.a. How to charge for things and (hopefully) make money
+
+The first aspect is "how much"
+This can be answered more easily if there are already players in the market
+Looking at their prices, can provide some data points to use as a basis and guide
+Then based on that decide the price strategy 
+undercut competition
+or go on par and above (superior service / luxury product)
+
+There are 2 basic revenue models: [per purchase and subscription][49] 
+
+The first one is straight-forward
+make a sale and get paid 
+the full price (if a producer/provider) or a percentage (if a middleman)
+
+The subscription model is getting 
+more and more attention 
+with all kinds of unlikely businesses applying this (think subscription razors)
+
+The main reason for this shift 
+is the predictable [revenue stream][50] and (to an extent) the [counter-cyclicality][51] of subscriptions <sup>[13](#footnote_13)</sup>
+
+Constructing [pricing models][52] for subscription businesses has become [almost a science][53].  
+Almost invariably every business offers an initial [freemium][54] tier (to get feet "through the door") and then follows 
+a ["Johnnie Walker"][55] pricing structure <sup>[14](#footnote_14)</sup>
 
 ### CAC & LTV
 
+
+
+### Hiring and costs
+
+
 ### Revenue & Projections
 
+In my humble opinion the most important deliverable of this process is the cash-flow spreadsheet
+whereas one can be creative with words  
 
-## Follow-up rounds 
-
-## Runway
+Period of hyper-volatility
 
 
+## Runway & Follow-up rounds 
 
+
+# In our next episode
+
+![Next episode](../assets/images/angel-part1/charles-deluvio-r-fBT5l_AwA-unsplash.jpg)
+> Photo by Charles Deluvio on Unsplash
 
 ## Footnotes
 
@@ -419,6 +543,15 @@ explosion of service companies and a rapid price competition, to the point of [a
 10. <a name="footnote_10"></a>As the driver of any German car can happily attest.
 11. <a name="footnote_11"></a>Think how so many businesses now describe themselves as "The Airbnb of...". Or the fact 
 that any form of ride-sharing is an "uber". What does this tell about the dominance of these platform brands?
+12. <a name="footnote_12"></a>Another simplistic example.  
+The TAM of coffee drinkers around the world is just enormous. But the servicable and target markets are completely 
+different when considering a neighborhood coffee shop and a coffee-at-home subscription service.
+13. <a name="footnote_13"></a>In plain words, as a consumer you are more likely to "forget" that you have a subscription 
+for something, than if you pay for it each time. This helps smooth out the ups and downs of your personal financial 
+situation. It also makes you a more reliable "asset" in the subscription business' books.
+14. <a name="footnote_14"></a>Where the bottom tier has just-about-enough features for a lower price (red label) and the 
+top tier(s) a full feature set (with diminishing customer value) for a much higher price (blue label). This guides the 
+subscriber to the middle option(s), which look like the best value-for-money (black label).
 
 
   [1]: https://businesstown.com/300-best-small-business-ideas/
@@ -454,3 +587,25 @@ that any form of ride-sharing is an "uber". What does this tell about the domina
   [31]: https://en.wikipedia.org/wiki/Intellectual_property
   [32]: https://en.wikipedia.org/wiki/Intellectual_property_in_China
   [33]: https://www.investopedia.com/terms/f/franchise.asp
+  [34]: https://youtu.be/wcg0gKO_Vyk?t=2294
+  [35]: https://www.altfi.com/people/nick-ogden
+  [36]: https://investinganswers.com/dictionary/l/liquid-market
+  [37]: https://review42.com/what-percentage-of-startups-fail
+  [38]: https://drivers.dpd.co.uk/become-your-own-boss
+  [39]: https://en.wikipedia.org/wiki/Business_plan
+  [40]: https://knowledge.wharton.upenn.edu/article/burn-the-business-plan/
+  [41]: https://www.princes-trust.org.uk/help-for-young-people/tools-resources/business-tools/business-plans
+  [42]: https://en.wikipedia.org/wiki/Total_addressable_market
+  [43]: https://en.wikipedia.org/wiki/Target_market
+  [44]: https://cdixon.org/2010/12/26/the-thin-edge-of-the-wedge-strategy
+  [45]: https://en.wikipedia.org/wiki/Startup_accelerator
+  [46]: https://www.bizjournals.com/bizjournals/how-to/growth-strategies/2016/05/6-advantages-to-knowing-your-competition.html
+  [47]: https://www.uk-cpi.com/blog/the-difference-between-invention-and-innovation
+  [48]: https://www.investopedia.com/terms/p/pricediscovery.asp
+  [49]: https://redvike.com/subscription-vs-purchase-business-model/
+  [50]: https://corporatefinanceinstitute.com/resources/knowledge/accounting/revenue-streams/
+  [51]: https://www.investopedia.com/terms/c/countercyclicalstock.asp
+  [52]: https://gocardless.com/guides/posts/subscription-business-model/
+  [53]: https://www.zuora.com/guides/defining-a-winning-subscription-pricing-model/
+  [54]: https://en.wikipedia.org/wiki/Freemium
+  [55]: https://en.wikipedia.org/wiki/Johnnie_Walker#Blends
