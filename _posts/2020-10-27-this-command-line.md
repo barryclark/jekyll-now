@@ -39,7 +39,7 @@ categories: cpnt262
 
 ## 1. The Global Object and the `this` keyword
 
-See: [@26:05](https://youtu.be/MiUdnv_T98A?t=1565) of Javascript the Weird Parts by Tony Alicea
+See: [@26:05](https://youtu.be/Bv_5Zv5c-Ts?t=1565) of Javascript the Weird Parts by Tony Alicea
 
 ---
 
