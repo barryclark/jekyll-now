@@ -110,7 +110,7 @@ Aaaand we are saved! Clear error message caught at compile time, could it be bet
 
 You can check the Code live [here](https://godbolt.org/z/bvG8e9)
 
-# But apart from catching Errors at Compile Time and Giving clear Error Messages, what have Concepts ever done for us?
+# But apart from catching Errors at Compile Time and giving clear Error Messages, what have Concepts ever done for us?
 
 Glad you asked. Well remember **Tag Dispatching**? Or even better **SFINAE** all that stuff you had to do in order to specifically select an overload for a specific function. Lets do something about that!
 
@@ -164,13 +164,13 @@ template<class Iterator>
     return result;
 }
 ```
-Whenever I see `enable_if` I have to resist the urge of skipping the code with the attitude "Its probably not that important to understand this, I probably don't need to know this to solve my current problem"...
+Easy, right? ...
 
 
 Now the same thing using Concepts, we just add a second overload using the Concept `std::random_access_iterator`:
 
 ```cpp
-// This we had before for any iterator
+// This we had before for any forward iterator
 template<std::forward_iterator Iterator>
 [[nodiscard]] int length(Iterator begin, Iterator end) noexcept
 {
@@ -212,16 +212,11 @@ When we put in something that does no have the `typedef iterator_category` (like
 ```
 You can check and experiment with the Code [here](https://godbolt.org/z/Ge3b4d).
 
-## So how does the overload resolution work for Concepts?
-
-Well, according to the standard the more constrained Concept wins.
-//TODO
-
 # Creating your own Concepts
 
 Finally the good stuff, eh? Well depends, actually the stl provides a lot of things that you can use and combine in order to create new Concepts and I really recommend to do so. If you know the [type_traits](https://en.cppreference.com/w/cpp/header/type_traits) library you should already be familiar with most of them since for every `type_trait` there is now also a corresponding Concept based on said `type_trait`.
 
-Okay so lets put some **"Butter by die Fische"** here is a self defined Concept:
+Okay so lets put some **"Butter bei die Fische"** here is a self defined Concept:
 ```cpp
 template<typename T>
 concept A_Number = std::is_integral<T>::value || sd::is_floating_point<T>::value;
@@ -240,6 +235,7 @@ template<class I>
 
 And of course since this is C++ there is more than one way to define a Concept. The above one is called **function concept** the below one **variable concept**:
 ```cpp
+// TODO good example! Real Life
 template<typename T>
 concept Equal(){
   return requires(T a, T b) {
@@ -248,19 +244,56 @@ concept Equal(){
   };
 }
 ```
+
+Lets translate what the above means:
+TODO
+
+## A more practical example!
+
+
 Lets translate what the above means: Th
 
-# What else could there be?
+# What happens if I have Concepts, Templates and Regular Function Overloads?
 
-* Well the require clause pretty much can go wherever you like
+Short Answer: **Overload Resolution**
+
+Long Answer: I am not actually sure myself how this works but according to the standard the most constrained/specialized Thing wins. Lets try with an example:
+
+```cpp
+
+//TODO
+
+```
+
+
+# Trivia
+
+Again C++, so lots of ways to do things. Applying a Concept can be done in one of the following ways, which are all equal...
+
+```cpp
+template<typename T>
+requires variable_concept<T>
+void with_requires_clause(T vc){};
+
+template<variable_concept T>
+void replacing_typename(T vc){};
+
+void implicit_template(variable_concept vc){}
+```
+
+
 * Concept as return type
 * conept for function parameters
 
+
+
 # TLDR
 
-Use Concepts to define your Function Interfaces!
+Use Concepts to define your Function Interfaces! They provide clearer error messages, earlier error detection and tell other developers what your function expects.
 
 # Resources
 
 [cppreference](https://en.cppreference.com/w/cpp/language/constraints)
 [modernescpp](https://www.modernescpp.com/index.php/defintion-of-concepts)
+[studiofreya](https://studiofreya.com/cpp/concepts/function-and-variable-concepts/)
+[brevzin](https://brevzin.github.io/c++/2018/10/20/concepts-declarations/)
