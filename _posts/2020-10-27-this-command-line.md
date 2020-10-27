@@ -47,7 +47,7 @@ See: [@26:05](https://youtu.be/MiUdnv_T98A?t=1565) of Javascript the Weird Parts
 
 ## 3. Greetings from the Command Line
 
-**Sample Code**: [process.argv](https://github.com/sait-wbdv/sample-code/tree/master/node/argv)
+**Sample Code**: [process.argv](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/argv)
 
 ---
 
