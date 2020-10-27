@@ -20,6 +20,10 @@ categories: cpnt262
     - Watch: [Node.js Tutorial for Beginners](https://youtu.be/TlB_eWDSMt4)
 4. Node from the Command Line
     - [How to parse command line arguments](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/)
+5. Very Important: Harry Potter
+    - [Forbidden Forest](https://harrypotter.fandom.com/wiki/Forbidden_Forest)
+    - [Dobby](https://www.google.com/search?q=dobby)
+    - [Hagrid](https://www.google.com/search?q=hagrid)
 
 ---
 
