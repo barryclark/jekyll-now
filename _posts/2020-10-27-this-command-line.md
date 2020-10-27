@@ -56,3 +56,4 @@ See: [@26:05](https://youtu.be/Bv_5Zv5c-Ts?t=1565) of Javascript the Weird Parts
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-10-28-custom-modules.md %})
