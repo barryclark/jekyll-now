@@ -24,7 +24,7 @@ categories: cpnt262
 
 ---
 
-## 2. HTTP Overview
+## 2. Overview: HTTP request/response cycle
 
 ---
 
