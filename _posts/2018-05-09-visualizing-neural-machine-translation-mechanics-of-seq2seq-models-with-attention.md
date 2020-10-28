@@ -3,7 +3,7 @@ layout: prediction_post
 published: True
 title: Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
 ---
-<span class="discussion">Translations: <a href="https://blog.csdn.net/qq_41664845/article/details/84245520">Chinese (Simplified)</a>, <a href="https://tips-memo.com/translation-jayalmmar-attention">Japanese</a>, <a href="https://nlpinkorean.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/">Korean</a>, <a href="https://habr.com/ru/post/486158/">Russian</a></span>
+<span class="discussion">Translations: <a href="https://blog.csdn.net/qq_41664845/article/details/84245520">Chinese (Simplified)</a>, <a href="https://tips-memo.com/translation-jayalmmar-attention">Japanese</a>, <a href="https://nlpinkorean.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/">Korean</a>, <a href="https://habr.com/ru/post/486158/">Russian</a>, <a href="https://medium.com/@SenemAktas/n%C3%B6ral-makine-%C3%A7eviri-modelini-g%C3%B6rselle%C5%9Ftirme-seq2seq-modelinin-attention-mekanizmas%C4%B1-b12581b5a1df">Turkish</a>"</span>
 <br />
 <span class="discussion">Watch: MIT's <a href="https://youtu.be/53YvP6gdD7U?t=335">Deep Learning State of the Art</a> lecture referencing this post</span>
 
