@@ -15,7 +15,7 @@ categories: cpnt201
 1. `.gitignore`
     - [Ignoring Files](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files) on GitHub Docs
 
-Note: `npm` has been moved to [Friday, October 30]({% link _posts/2020-10-30-npm-package-json.md %}).
+Note: `npm` has been moved to [Friday, October 30]({% link _posts/2020-11-02-npm-package-json.md %}).
 
 ---
 
