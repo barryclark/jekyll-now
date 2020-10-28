@@ -4,7 +4,7 @@ published: True
 title: A Visual and Interactive Guide to the Basics of Neural Networks
 ---
 <span class="discussion">Discussions:
-<a href="https://news.ycombinator.com/item?id=13183171" class="hn-link">Hacker News (63 points, 8 comments)</a>, <a href="https://www.reddit.com/r/programming/comments/5igdix/a_visual_and_interactive_guide_to_the_basics_of/" class="">Reddit r/programming (312 points, 37 comments)</a>
+<a href="https://news.ycombinator.com/item?id=13183171" class="hn-link">Hacker News (63 points, 8 comments)</a>, <a href="https://www.reddit.com/r/programming/comments/5igdix/a_visual_and_interactive_guide_to_the_basics_of/" class="">Reddit r/programming (312 points, 37 comments)</span></a>
 <br />
 <span class="discussion">Translations: <a href="https://camporeale.github.io/guia-interactiva-visual-conceptos-basicos-redes-neuronales/">Spanish</a>
 </span>
