@@ -55,24 +55,25 @@ Modules allow us, as developers, to create code that is:
 
 ### Key Takeaways
 1. Modules use functions behind the scenes to create protected environments for our code.
-2. The `require()` function that you pass a path to. It supports three types of modules:
-    - Built-in modules: code that Node has built into its core functionality such as the `http` module:
+2. The `require()` is a function that you pass a path to. It supports three types of modules:
+    - **Built-in modules**: code that Node has built into its core functionality such as the `http` module:
 
         ```js
         const http = require('http');
         ```
     
-    - Custom modules: your own code that your write yourself. For these modules to work correctly, **you must `require` them with a `./` at the beginning of your file path**.
+    - **Custom modules**: your own code that your write yourself. For these modules to work correctly, **you must `require` them with a `./` at the beginning of your file path**.
 
         ```js
         const tipCalulator = require('./tip-calculator');
         ```
 
-    - Third-party modules: code that must be installed using `npm`. The `require` path will look much like built-in modules, but you will receive a "Module not found" error if you haven't installed the module using `npm`.
+    - **Third-party modules**: code that must be installed using `npm`. The `require` path will look much like built-in modules, but **you will receive a "Module not found" error if you haven't installed the module using `npm`**.
 
         ```js
         const express = require('express');
         ```
+
 3. `module.exports` is what the `require` function _returns_. It starts as an empty object and we can add to it or reassign it entirely.
 
 ---
@@ -86,6 +87,20 @@ Modules allow us, as developers, to create code that is:
 ## 3. Nested modules: Dictionary data
 
 Live code: Definitions module
+
+---
+
+## Acitivites
+1. Create eight new Node modules. Each one should export a different value type that we've covered in this course:
+    - `undefined`
+    - `boolean`
+    - `string`
+    - `number`
+    - `null`
+    - `array`
+    - `function`
+    - `object`
+2. See: [Module Activities](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/modules)
 
 ---
 
