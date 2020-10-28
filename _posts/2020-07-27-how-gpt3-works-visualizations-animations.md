@@ -7,7 +7,7 @@ title: How GPT3 Works - Visualizations and Animations
 <a href="https://news.ycombinator.com/item?id=23967887" class="hn-link">Hacker News (397 points, 97 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/hwxn26/p_how_gpt3_works_visuals_and_animations/" class="">Reddit r/MachineLearning (247 points, 27 comments)</a>
 </span>
 <br />
-<span class="discussion">Translations: <a href="https://www.arnevogel.com/wie-gpt3-funktioniert/">German</a>, <a href="https://blogcn.acacess.com/how-gpt3-works-visualizations-and-animations-zhong-yi">Chinese (Simplified)</a>, < href="https://habr.com/ru/post/514698/">Russian</a></span>
+<span class="discussion">Translations: <a href="https://www.arnevogel.com/wie-gpt3-funktioniert/">German</a>, <a href="https://blogcn.acacess.com/how-gpt3-works-visualizations-and-animations-zhong-yi">Chinese (Simplified)</a>, <a href="https://habr.com/ru/post/514698/">Russian</a></span>
 <br />
 
 The tech world is [abuzz](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential) with GPT3 hype. Massive language models (like GPT3) are starting to surprise us with their abilities. While not yet completely reliable for most businesses to put in front of their customers, these models are showing sparks of cleverness that are sure to accelerate the march of automation and the possibilities of intelligent computer systems. Let's remove the aura of mystery around GPT3 and learn how it's trained and how it works.
