@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 8F - npm and package.json
+title: Week 9M - npm and package.json
 categories: cpnt262
 ---
 
