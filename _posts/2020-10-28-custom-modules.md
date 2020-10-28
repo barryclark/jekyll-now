@@ -80,7 +80,7 @@ Modules allow us, as developers, to create code that is:
 
 ## 2. Creating a custom module
 
-**Sample Code**: [3 stages of `greet`](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/modules)
+**Sample Code**: [Three stages of `greet`](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/modules)
 
 ---
 
