@@ -49,9 +49,9 @@ categories: cpnt262
 
 ## 1. Why do we need modules?
 Modules allow us, as developers, to create code that is:
-- Reusable: In general, code is reusable if it's located in it's own file or set of files. IT shouldn't be located in the same file as other code.
-- Maintainable: Related to the above point, code that is in its own file (or set of files) can have it's own version, GH repo, etc.
-- Safe: It's a coder's duty to write code that doesn't accidentally interfere with other code.
+- **Reusable**: In general, code is reusable if it's located in it's own file or set of files. IT shouldn't be located in the same file as other code.
+- **Maintainable**: Related to the above point, code that is in its own file (or set of files) can have it's own version, GH repo, etc.
+- **Safe**: It's a coder's duty to write code that doesn't accidentally interfere with other code.
 
 ### Review
 1. Functions in Javascript are first-class: they can be passed as a value like any other variable type. When we pass a function as an argument (i.e. a value) to another function, we call it a callback function.
