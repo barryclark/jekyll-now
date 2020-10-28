@@ -71,11 +71,10 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - M: CPNT 201 Day 9 - [JS/CSS Tools: Sass and Minify]({% link _posts/2020-10-26-sass-minify.md %})
 - T: CPNT 262 Day 10 - [`this` and the Command Line]({% link _posts/2020-10-27-this-command-line.md %})
 - W: CPNT 262 Day 11 - [Custom Modules]({% link _posts/2020-10-28-custom-modules.md %})
-- R: CPNT 262 Day 12 - Built-in Modules
-- F: CPNT 262 Day 13 - [npm and `package.json`]({% link _posts/2020-10-30-npm-package-json.md %})
-
+- R: CPNT 262 Day 12 - [Built-in `http` Module]({% link _posts/2020-10-29-builtin-modules-http.md %})
+- F: CPNT 262 Day 13 - Built-in `fs` Module
 ## Week 9: Nov 2-6
-- M: CPNT 262 Day 14
+- M: CPNT 262 Day 14 - [npm and `package.json`]({% link _posts/2020-11-02-npm-package-json.md %})
 - T: CPNT 262 Day 15
 - W: CPNT 262 Day 16
 - R: CPNT 262 Day 17
