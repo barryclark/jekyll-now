@@ -3,6 +3,10 @@ layout: post
 title: Week 8W - Custom Modules
 categories: cpnt262
 ---
+## Housekeeping
+- Updated [`argv` activities](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/argv)
+- Nominations for six devops leads.
+
 ## Homework
 1. Review
     - W7M: [Functions]({% link _posts/2020-10-19-functions-scope.md %})
