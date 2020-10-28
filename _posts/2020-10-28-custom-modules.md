@@ -88,9 +88,19 @@ Modules allow us, as developers, to create code that is:
 
 ---
 
-## 3. Nested modules: Dictionary data
+## 3. Nested modules: Greet data
 
-Live code: Definitions module
+Live code: Upgraded `greet` module
+
+### The "algorithm design process"
+1. Plan
+    1. Use case: user enters a language on the command line, then, a greeting in that language is logged to the console.
+    2. What kind of "interface" do we want for this module?
+        - function? It will accept one argument, `greet(language)`
+        - Use that language option to find the proper greeting in an array? Maybe?
+2. Brute Force
+3. Walk-through
+4. Optimize/Refactor
 
 ---
 
