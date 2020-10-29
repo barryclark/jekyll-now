@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 8F - Built-in fs and `path` Modules
+title: Week 8F - Built-in fs and path Modules
 categories: cpnt262
 ---
 ## Homework
