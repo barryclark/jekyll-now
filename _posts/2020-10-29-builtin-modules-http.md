@@ -40,7 +40,7 @@ categories: cpnt262
 
 ## 2. Building a basic web server with Node's `http`
 
-**Sample code**: [Node `http` module](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/builtin.js)
+**Sample code**: [Node `http` module](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/)
 
 ### Key Takeaways
 - You still have to load built-in modules into your application using `require()`. The path should _not_ include a leading `./`. You can omit the `.js` file extension.
