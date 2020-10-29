@@ -15,6 +15,7 @@ categories: cpnt262
     - Reference: [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) on MDN
 4. `url` Module
     - Reference: [npm `url` Documentation](https://www.npmjs.com/package/url)
+    - Reference: [Node 'url' Documentation](https://nodejs.org/docs/latest/api/url.html)
 
 ---
 
@@ -30,6 +31,10 @@ categories: cpnt262
 ## 1. Overview: Built-in Modules and the HTTP request/response cycle
 
 **Sample code**: [View a list of Node's built-in modules](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/builtin.js)
+
+### Key Takeaways
+- `http` will be replaced with `express` later in the course but `express` uses Node's built-in modules under the hood.
+- The [`path` module](https://nodejs.org/docs/latest/api/path.html) will still be used often after we move to `express` and `mongoose`.
 
 ---
 
@@ -60,3 +65,4 @@ categories: cpnt262
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-10-30-builtin-modules-fs.md %})
