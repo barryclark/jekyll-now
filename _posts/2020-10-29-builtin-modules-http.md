@@ -36,6 +36,19 @@ categories: cpnt262
 - `http` will be replaced with `express` later in the course but `express` uses Node's built-in modules under the hood.
 - The [`path` module](https://nodejs.org/docs/latest/api/path.html) will still be used often after we move to `express` and `mongoose`.
 
+### The request/response cycle according to Tony
+1. The client sends a GET request to the server.
+2. Using the HTTP protocol, the Internet routes the request to our server.
+3. The server takes the request headers and:
+    - builds a `request` object that represents the information contained in the headers;
+    - builds a `response` object that represents the information that will eventually become the headers and body of our response.
+4. The server passes these new objects to our application callback function(s).
+5. Our application then:
+    - reads any useful information from the `request` object.
+    - makes the needed modifications to the `response` object.
+6. When the time comes, the server converts the response object into a response string and sends it back to the client.
+7. The process ends.
+
 ---
 
 ## 2. Building a basic web server with Node's `http`
