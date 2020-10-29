@@ -13,26 +13,49 @@ categories: cpnt262
     - Reference: ['http' Documentation](https://nodejs.org/api/http.html)
 3. HTTP Protocol
     - Reference: [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) on MDN
+4. `url` Module
+    - Reference: [npm `url` Documentation](https://www.npmjs.com/package/url)
 
 ---
 
 ## Terminology
+- See: 
+  - [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+  - [HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+  - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+  - [npm `url` Documentation](https://www.npmjs.com/package/url)
 
 ---
 
-## 1. Overview: Built-in Modules
+## 1. Overview: Built-in Modules and the HTTP request/response cycle
+
+**Sample code**: [View a list of Node's built-in modules](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/builtin.js)
 
 ---
 
-## 2. Overview: HTTP request/response cycle
+## 2. Building a basic web server with Node's `http`
+
+**Sample code**: [Node `http` module](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/builtin.js)
+
+### Key Takeaways
+- You still have to load built-in modules into your application using `require()`. The path should _not_ include a leading `./`. You can omit the `.js` file extension.
+- When running a server from the command line, the window will no longer be functional so will need to open a second terminal to use Git, etc. `Ctrl`+`C` will stop the server.
+- **Important**: The node server will need to be stopped and restarted before any of your changes will take effect. We will find a way around this when we cover npm.
 
 ---
 
-## 3. Building a basic web server
+## 3. Building a JSON endpoint
+
+**Sample code**: [Static JSON Endpoint](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/2-json-endpoint.js)
+
+### Key Takeaways
+- The MIME Type should be `application/json` and _not_ `text/json`.
+- `JSON.stringify()` converts any Javascript object into JSON. This is needed to send the data over the Internet.
 
 ---
 
 ## Activities
+- [Static endpoints HTML with `url.parse()`](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/static-endpoints)
 
 ---
 
