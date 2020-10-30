@@ -32,11 +32,15 @@ Source: [Learn and Understand NodeJS](https://www.udemy.com/course/understand-no
 
 ---
 
-## 1. Introduction to npm
+## 1. Introduction to npm and the `node_modules` directory
 
 ---
 
-## 2. npm `node_modules` directory
+## 2. Installing `nodemon` as a "dev" dependency
+
+---
+
+## 3. Installing express(!)
 
 ---
 
