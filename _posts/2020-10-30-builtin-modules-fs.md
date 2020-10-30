@@ -36,7 +36,8 @@ categories: cpnt262
 **Sample code**: [Reading Files](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/fs)
 
 ### Key Takeaways
-
+- Use of `fs.readFileSync()` is discouraged. Nothing else can happen on the server until the file is read from the file system.
+- `fs.readFile()` accepts and error-first callback. If nothing bad happened, `error` will be `null`. Otherwise, `error` is an object(?) that contains details of what went wrong.
 
 ---
 
