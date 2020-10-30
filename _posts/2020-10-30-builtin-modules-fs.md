@@ -15,6 +15,7 @@ categories: cpnt262
     - Watch: [How To Read a File With Node.js](https://youtu.be/uvRwF1JFqt0) by Junior Developer Central
     - Watch: [Returning Files from Node JS Web Servers](https://youtu.be/3a9S3wubxLw) by Steve Griffith
     - Read: [Writing files in Node.js](https://stackoverflow.com/questions/2496710/writing-files-in-node-js) on Stack Overflow
+    - Reference: [Node `fs` Documentation](https://nodejs.org/api/fs.html)
 3. `path` Module
     - Reference: [Node `path` Documentation](https://nodejs.org/docs/latest/api/path.html)
 4. RESTful APIs
@@ -33,6 +34,9 @@ categories: cpnt262
 ## 1. Reading files asynchonously using the `fs` module
 
 **Sample code**: [Reading Files](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/fs)
+
+### Key Takeaways
+
 
 ---
 
