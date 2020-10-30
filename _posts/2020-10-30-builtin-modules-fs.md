@@ -1,8 +1,12 @@
 ---
 layout: post
-title: Week 8F - Built-in fs and path Modules
+title: Week 8F - Built-in fs and endpoint parameters
 categories: cpnt262
 ---
+
+## Housekeeping
+- [Sample Code Fixes](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/3-request-url)
+
 ## Homework
 1. Review
   - Read: [How to use Fetch API for CRUD operations](https://dev.to/duhbhavesh/how-to-use-fetch-api-for-crud-operations-57a0) on dev.to
@@ -15,7 +19,6 @@ categories: cpnt262
     - Reference: [Node `path` Documentation](https://nodejs.org/docs/latest/api/path.html)
 4. RESTful APIs
     - Read: [What Is a REST API?](https://www.sitepoint.com/developers-rest-api/) on SitePoint
-
 
 ---
 
@@ -33,7 +36,7 @@ categories: cpnt262
 
 ---
 
-## 2. Creating dynamic JSON endpoints with the `path` module
+## 2. Creating dynamic JSON endpoints
 
 **Sample code**: [Parsing endpoint parameters](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/4-path-params.js) in [`http` sample code](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/)
 
