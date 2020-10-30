@@ -38,6 +38,7 @@ categories: cpnt262
 ### Key Takeaways
 - Use of `fs.readFileSync()` is discouraged. Nothing else can happen on the server until the file is read from the file system.
 - `fs.readFile()` accepts and error-first callback. If nothing bad happened, `error` will be `null`. Otherwise, `error` is an object(?) that contains details of what went wrong.
+- `promisify` is overkill unless you sepcifically need to read a inside a promise.
 
 ---
 
