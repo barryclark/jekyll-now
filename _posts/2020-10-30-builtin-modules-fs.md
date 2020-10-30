@@ -5,7 +5,7 @@ categories: cpnt262
 ---
 
 ## Housekeeping
-- [Sample Code Fixes](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/3-request-url)
+- [Sample Code Fixes](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/3-request-url.js)
 
 ## Homework
 1. Review
