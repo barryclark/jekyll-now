@@ -74,7 +74,7 @@ categories: cpnt262
 ---
 
 ## Activities
-- [Static endpoints HTML with `url.parse()`](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/static-endpoints)
+- [Static HTML endpoints](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/static-endpoints)
 
 ---
 
