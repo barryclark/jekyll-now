@@ -44,6 +44,7 @@ categories: cpnt262
 ---
 
 ## Activities
+- [Send a file as a `http` response](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/fs/json-response)
 - [Dynamic Endpoints](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/dynamic-endpoints)
 
 ---
