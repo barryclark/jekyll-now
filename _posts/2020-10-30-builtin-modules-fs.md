@@ -14,20 +14,28 @@ categories: cpnt262
 3. `path` Module
     - Reference: [Node `path` Documentation](https://nodejs.org/docs/latest/api/path.html)
 4. RESTful APIs
-    - [What Is a REST API?](https://www.sitepoint.com/developers-rest-api/) on SitePoint
+    - Read: [What Is a REST API?](https://www.sitepoint.com/developers-rest-api/) on SitePoint
 
 
 ---
 
 ## Terminology
+<dl>
+  <dt>Error-first Callback</dt>
+  <dd>A callback function that accepts an error object as its first argument.</dd>
+</dl>
 
 ---
 
 ## 1. Reading files asynchonously using the `fs` module
 
+**Sample code**: [Reading Files](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/fs)
+
 ---
 
 ## 2. Creating dynamic JSON endpoints with the `path` module
+
+**Sample code**: [Parsing endpoint parameters](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/4-path-params.js) in [`http` sample code](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/)
 
 ---
 
@@ -36,6 +44,7 @@ categories: cpnt262
 ---
 
 ## Activities
+- [Dynamic Endpoints](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http/dynamic-endpoints)
 
 ---
 
