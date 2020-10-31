@@ -1,6 +1,6 @@
 ---
 layout: page
-title: test page
+title: Gallery
 ---
 A test page with a test image
 
