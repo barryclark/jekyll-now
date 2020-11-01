@@ -49,7 +49,9 @@ namespace detail
   {
       static_assert(sizeof...(Is)==sizeof...(Ts),"Indices must have same number of elements as tuple types!");
       static_assert(sizeof...(Ts)>0, "Cannot insert empty tuple into stream.");
+      auto last = sizeof...(Ts); // assuming index sequence 0,...,N-1
 
+      
       return ((os << std::get<Is>(tuple) << (Is != last ? "\r\n" : "")),...);
   }
 }
