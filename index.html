@@ -2,12 +2,15 @@
 layout: default
 ---
 
+
+<div class="posts">
+  {% for post in site.posts %}
+    <p>test content</p>
+
 <div>
   <p>test content</p>
 </div>
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
