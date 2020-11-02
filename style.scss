@@ -241,6 +241,12 @@ nav {
 // .main
 //
 
+
+.intro > p {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
