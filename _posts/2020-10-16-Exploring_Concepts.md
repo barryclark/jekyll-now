@@ -235,14 +235,15 @@ template<class I>
 
 And of course since this is C++ there is more than one way to define a Concept. The above one is called **function concept** the below one **variable concept**:
 ```cpp
-// TODO good example! Real Life
-template<typename T>
-concept Equal(){
-  return requires(T a, T b) {
-    { a == b } -> bool;
-    { a != b } -> bool;
+template<typename T, typename U>
+concept MyFirstConcept
+  = requires(T&& a, U&& b) 
+  {
+    typename T::membertype;     
+    swap(std::forward<T>(a), std::forward<U>(b));
+    { a == b } -> std::same_as<bool>; 
+    { a + 1} noexcept -> std::convertible_to<T>; 
   };
-}
 ```
 
 Lets translate what the above means:
@@ -293,7 +294,8 @@ Use Concepts to define your Function Interfaces! They provide clearer error mess
 
 # Resources
 
-[cppreference](https://en.cppreference.com/w/cpp/language/constraints)
-[modernescpp](https://www.modernescpp.com/index.php/defintion-of-concepts)
-[studiofreya](https://studiofreya.com/cpp/concepts/function-and-variable-concepts/)
-[brevzin](https://brevzin.github.io/c++/2018/10/20/concepts-declarations/)
+* [cppreference](https://en.cppreference.com/w/cpp/language/constraints)
+* [some basics](https://www.modernescpp.com/index.php/defintion-of-concepts)
+* [some more basics](https://studiofreya.com/cpp/concepts/function-and-variable-concepts/)
+* [What concepts cannot do](https://brevzin.github.io/c++/2018/10/20/concepts-declarations/)
+* [How to test concepts](https://andreasfertig.blog/2020/08/cpp20-concepts-testing-constrained-functions/)
