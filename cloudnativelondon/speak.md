@@ -2,6 +2,13 @@
 redirect_from: /cnl-speak
 ---
 
+Your talk should be
+* Targeted at a technical audience
+* Related to the CNCF projects or aligned with the Cloud Native Definition at https://github.com/cncf/toc/blob/master/DEFINITION.md
+* At least 80% vendor neutral.
+
+Each event typically gets 200-300 attendees ([see past meetups](http://www.oicheryl.com/#meetup)). For companies who sponsor events, see [Sponsoring a Cloud Native London meetup](oicheryl.com/cnl-sponsor).
+
 <script type="text/javascript" src="https://form.jotform.com/jsform/202446622615350"></script>
 
 <!-- <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSciBUZbu0xWp7fLtpSRES6HT8kxF6PgpOsAdnObpWZF7MY4Fg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> --!>
