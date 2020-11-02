@@ -69,4 +69,5 @@ Source: First three definitions from [Learn and Understand NodeJS](https://www.u
 ---
 
 ## Clean-up Time!
-- Dont' forget to submit your code to the appropriate Daily Code dropbox on Brightspace.
+- Don't forget to submit your code to the appropriate Daily Code dropbox on Brightspace.
+- [Tomorrow]({% link _posts/2020-11-03-static-express-heroku.md %})
