@@ -12,9 +12,9 @@ categories: cpnt262
     - Read: [Express/Node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
     - Read: [Setting up a Node development environment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment)
     - Read: [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
-    - [Using Express Middleware](https://expressjs.com/en/guide/using-middleware.html)
+    - Read: [Using Express Middleware](https://expressjs.com/en/guide/using-middleware.html)
 4. Heroku
-    - [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+    - Skim: [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
 ---
 
