@@ -3,6 +3,10 @@ layout: post
 title: Week 9M - npm and package.json
 categories: cpnt262
 ---
+## Housekeeping
+- CPNT 262 Exercises and Assignment 1 Marks
+- CPNT 262 [Assignment 3](https://github.com/sait-wbdv/assessments/tree/master/cpnt262)
+- Daily Code dropboxes in Brightspace: Days 14-20
 
 ## Homework
 1. Review

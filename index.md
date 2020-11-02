@@ -82,8 +82,8 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - F: CPNT 262 Day 18 - Express Custom Modules
 
 ## Week 10: Nov 9-13
-- M: CPNT 262 Day 19
-- T: CPNT 262 Day 20
+- M: CPNT 262 Day 19 - Mongoose Models
+- T: CPNT 262 Day 20 - POST requests with Mongoose
 - W: Stat
 - R: CPNT 264 - Career & Consulting Essentials
 - F: CPLN 240 - Guest Speaker Day
