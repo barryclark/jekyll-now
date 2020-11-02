@@ -13,6 +13,8 @@ categories: cpnt262
     - Read: [Setting up a Node development environment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment)
     - Read: [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
     - Read: [Using Express Middleware](https://expressjs.com/en/guide/using-middleware.html)
+3. `dotenv`
+    - [dotenv Documentation](https://www.npmjs.com/package/dotenv) on the npm Registry
 4. Heroku
     - Complete: [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
