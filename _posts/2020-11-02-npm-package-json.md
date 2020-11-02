@@ -34,17 +34,26 @@ Source: [Learn and Understand NodeJS](https://www.udemy.com/course/understand-no
 
 ## 1. Introduction to npm and the `node_modules` directory
 
----
-
-## 2. Installing `nodemon` as a "dev" dependency
+**Cheatsheet**: [npm Introduction](https://github.com/sait-wbdv/sample-code/tree/master/backend/npm)
 
 ---
 
-## 3. Installing express(!)
+## 2. Installing development dependencies
+
+**Activity**: [Initialize a new project and install nodemon](https://github.com/sait-wbdv/sample-code/tree/master/backend/npm/hello-npm)
+
+---
+
+## 3. Installing production dependencies
+
+**Activity**: [Install momentjs in an existing project](https://github.com/sait-wbdv/sample-code/tree/master/backend/npm/hello-moment)
 
 ---
 
 ## Activities
+- [Initialize a new project and install nodemon](https://github.com/sait-wbdv/sample-code/tree/master/backend/npm/hello-npm)
+- [Install momentjs in an existing project](https://github.com/sait-wbdv/sample-code/tree/master/backend/npm/hello-moment)
+- [Installing project dependencies from a cloned repo](https://github.com/sait-wbdv/sample-code/tree/master/backend/npm/hello-npm-install)
 
 ---
 
