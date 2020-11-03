@@ -488,23 +488,125 @@ Constructing [pricing models][52] for subscription businesses has become [almost
 Almost invariably every business offers an initial [freemium][54] tier (to get feet "through the door") and then follows 
 a ["Johnnie Walker"][55] pricing structure <sup>[14](#footnote_14)</sup>
 
-### CAC & LTV
+### Customer acquisition
 
+A customer is usually considered an asset: "get them through the door and count the money". 
+But if acquiring customers is too expensive, then they can become a liability.
+The business plan is essentially the complex answer to the following simple equation   
+> ACoP = LTV - CAC
 
+where ACoP is "Any Chance of Profitability"
+
+#### CAC
+
+Customer Acquisition Cost
+A few [companies out there][56] have such a strong brand that their [CAC][57] is unbelievably close to zero.
+The more people buy their product and service, the more they are delighted and spread the word, the more friend they 
+tell about: [virtuous cycle][61].  
+For everyone else customer acquisition is a hard and expensive business.  
+In fact, most startups, whether [B2B][59] or [B2C][60], are just a wealth transfer mechanism: from investors
+[to Google and Facebook][58].
+
+How are customers going to be acquired? 
+Company will not have Tesla's brand from day 1 
+Which channels 
+
+online 
+keyword bidding 
+PPC costs 
+affiliate networks
+
+offline  
+cold calling, appointments in-person or in trade shows 
+if the business depends on customer volumes (i.e. many little customers than a few big ones) 
+how is this going to scale 
+
+#### LTV 
+
+The other side of the equation is the [Lifetime Value][62] of the Customer.
+
+If this is a subscription model, how long is the customer expected to stay loyal?
+If a per purchase model, is the customer expected to return and buy again?
+How often?
+
+The answer to the LTV question is the correct combination of 
+* pricing i.e. how much is the customer expected to pay while transacting with the business, and 
+* [customer churn][63], i.e. what probability is there for the customer not returning
+
+Depending on the type of business 
+churn's importance can range from critical (e.g. subscription, like Netflix) to irrelevant (e.g. selling low cost items
+on eBay)  
 
 ### Hiring and costs
 
+without the right people, the job cannot be done
+without the right tools the job cannot be done 
+
+Let's start by tools and services
+this includes everything from cloud infrastructure 
+to payroll software and ISO certification
+
+The same business plan can be capital-intensive 
+with costs front-loaded (e.g. purchase of a $5000 server) 
+or helping cash-flow (e.g. leasing of the same server for $500/month)
+Purchasing rather than leasing/renting is usually a tell-tale sign of a poorly thought bad business  
+Unless there is a really good reason, optimising cash-flow [trumps everything else][64] in the list of priorities  
+
+The second important aspect of costs 
+sometimes the highest 
+is people
+Hiring talent is super-important
+to deliver on a plan
+hire too early and you end up not only wasting money
+but time managing and interacting with people who have little to do 
+hire too late and you cannot deliver 
+
+New joiners are meant to both drive the milestones in the plan as well as re-act to them
+E.g. a new salesperson to drive up customer bookings, new customer support people *after* the bookings have materialized
 
 ### Revenue & Projections
 
 In my humble opinion the most important deliverable of this process is the cash-flow spreadsheet
-whereas one can be creative with words  
+One can be creative with words 
+but there is no hiding behind numbers
 
-Period of hyper-volatility
+From a founder's PoV there is bias to action 
+and the only resource in abundance is time
+so there is a natural tendency to start doing and [figure things later][65] 
+This is perfectly fine; it is the doing that brings results, not the thinking per se
 
+From an investor's PoV, though, the cash-flow spreadsheet 
+is one of the few ways to truly peer into the company's strategy
+This is not b/c it is a crystal ball or b/c everything will go according to plan
+It is b/c all of the assumptions, hopes and blind spots have been crystallized in the numbers
+If the [burn rate][66] is too large, then revenue targets will be unrealistic in order to cover it
+Or perhaps the CAC is incredibly optimistic
+Or a crucial expense has not been included (e.g. regulatory)
 
-## Runway & Follow-up rounds 
+A careful read and close scrutiny are a much cheaper way of gaging the business' future 
+than investing capital and waiting to see how things turn out  
 
+## Runway & Funding rounds 
+
+Few businesses are profitable from the get-go
+The rest will need additional funding in order to live another day and keep growing
+
+This introduces us to two important concepts: [runway][67] and [funding rounds][68]
+
+The runway is the length of time a company can continue operating before running out of cash
+In plain words it is  
+> Runway = cash in the bank / monthly burn rate
+
+If the burn rate cannot be reduced (i.e. expenses reduced or revenue increased), then the [equity][69] needs to be increased 
+That is capital in the bank, that is additional funding rounds.
+
+A funding round is a full-time job on its own <sup>[15](#footnote_15)</sup>
+The founders need to reach out and have meetings with tens - if not hundreds - of prospective investors.
+Prepare performance data reports, legal paperwork, answer questions,...  
+This is a process that usually takes a few months to complete.  
+As a consequence, during a fund raise, there is reduced ability to look after the business itself 
+Therefore this is not something that can just be started on a whim if the runway gets suddenly shortened 
+It takes careful financial planning, well in advance  
 
 # In our next episode
 
@@ -552,6 +654,7 @@ situation. It also makes you a more reliable "asset" in the subscription busines
 14. <a name="footnote_14"></a>Where the bottom tier has just-about-enough features for a lower price (red label) and the 
 top tier(s) a full feature set (with diminishing customer value) for a much higher price (blue label). This guides the 
 subscriber to the middle option(s), which look like the best value-for-money (black label).
+15. <a name="footnote_15"></a>I will try and cover funding rounds in more detail in a subsequent part of this series.
 
 
   [1]: https://businesstown.com/300-best-small-business-ideas/
@@ -609,3 +712,17 @@ subscriber to the middle option(s), which look like the best value-for-money (bl
   [53]: https://www.zuora.com/guides/defining-a-winning-subscription-pricing-model/
   [54]: https://en.wikipedia.org/wiki/Freemium
   [55]: https://en.wikipedia.org/wiki/Johnnie_Walker#Blends
+  [56]: https://www.marketingstrategy.com/marketing-strategy-studies/how-tesla-used-a-0-marketing-strategy-to-dominate-a-market/
+  [57]: https://neilpatel.com/blog/customer-acquisition-cost
+  [58]: https://techstartups.com/2019/10/26/startups-spend-almost-50-percent-investments-facebook-google-ads/
+  [59]: https://www.shopify.co.uk/encyclopedia/business-to-business-b2b
+  [60]: https://www.investopedia.com/terms/b/btoc.asp
+  [61]: https://en.wikipedia.org/wiki/Virtuous_circle_and_vicious_circle
+  [62]: https://en.wikipedia.org/wiki/Customer_lifetime_value
+  [63]: https://www.investopedia.com/terms/c/churnrate.asp
+  [64]: https://www.gapcap.co.uk/whats-biggest-sme-killer/
+  [65]: https://www.cbsnews.com/news/go-ahead-write-a-killer-business-plan-just-be-willing-to-tear-it-up/
+  [66]: https://www.investopedia.com/terms/b/burnrate.asp
+  [67]: https://www.oreilly.com/library/view/the-agile-startup/9781118744482/xhtml/Chapter04_11.html
+  [68]: https://www.investopedia.com/articles/personal-finance/102015/series-b-c-funding-what-it-all-means-and-how-it-works.asp
+  [69]: https://www.investopedia.com/terms/e/equity.asp
