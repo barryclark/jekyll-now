@@ -12,6 +12,7 @@ categories: cpnt262
 ## Homework
 1. Review: 
     - [Anatomy of an HTTP Transaction](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
+    - [Node `http` sample code](https://github.com/sait-wbdv/sample-code/tree/master/backend/node/http)
 2. Express
     - Watch: The first 20 minutes of [How to build a REST API with Node js & Express](https://youtu.be/pKd0Rpw7O48) by Mosh Hamedani (we'll eventually cover most of this video)
     - Read: [Express/Node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
