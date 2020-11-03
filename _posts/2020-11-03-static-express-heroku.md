@@ -4,6 +4,11 @@ title: Week 9T - Static Assets with Express and Heroku
 categories: cpnt262
 ---
 
+## Tooltime
+- environment variables
+  - command not found
+  - `env` terminal command
+
 ## Homework
 1. Review: 
     - [Anatomy of an HTTP Transaction](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
@@ -24,15 +29,21 @@ categories: cpnt262
 
 ---
 
-## 1. Installing `express`
+## 1. Install `express` into a new npm project
+
+**Activity**: [Installing Express from scratch](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/)
 
 ---
 
 ## 2. Using `express.static()` to serve static files
 
+**Sample Code Walk-through**: [Hello Express](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/hello-express)
+
 ---
 
 ## 3. Deploying a simple static express website to Heroku
+
+**Activity**: [Deploy an Express app to Heroku](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/heroku)
 
 ---
 
