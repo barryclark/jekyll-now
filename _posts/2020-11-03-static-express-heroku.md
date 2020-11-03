@@ -48,6 +48,8 @@ categories: cpnt262
 ---
 
 ## Activities
+- Deploy your best/favourite static website to Heroku.
+- Reafactor your favourite Codepen into a static website and deploy it to Heroku.
 
 ---
 
