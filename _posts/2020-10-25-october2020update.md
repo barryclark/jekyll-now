@@ -22,7 +22,7 @@ I started writing a build guide for the first ZBCE prototype on [Instructables](
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/october2020-images/instructables-preview.png)
 
 ### Learning how to use Fusion 360 😵
-The prototype is basically, done I just need to design an enclosure for it. I've used Fusion 360 to design simple things before, but I am definitely still an amateur. I'm trying to get better at CAD, here is an awesome resource I used to help me learn [3D Design Class](https://www.instructables.com/class/3D-Design-Class/).
+The prototype is basically done I just need to design an enclosure for it. I've used Fusion 360 to design simple things before, but I am definitely still an amateur. I'm trying to get better at CAD, here is an awesome resource I used to help me learn [3D Design Class](https://www.instructables.com/class/3D-Design-Class/).
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/october2020-images/fusion360-design.png)
 
