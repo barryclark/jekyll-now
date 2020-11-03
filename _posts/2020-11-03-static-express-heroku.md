@@ -25,10 +25,6 @@ categories: cpnt262
 
 ---
 
-## Terminology
-
----
-
 ## 1. Install `express` into a new npm project
 
 **Activity**: [Installing Express from scratch](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/)
@@ -54,3 +50,4 @@ categories: cpnt262
 ---
 
 ## Clean-up Time!
+- Don't forget to submit your code to the appropriate Daily Code dropbox on Brightspace.
