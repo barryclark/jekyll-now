@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 9T - Serrving Static Files with Express and Heroku
+title: Week 9T - Serving Static Files with Express and Heroku
 categories: cpnt262
 ---
 
@@ -50,7 +50,7 @@ categories: cpnt262
 
 ## Activities
 - Deploy your best/favourite static website to Heroku.
-- Reafactor your favourite Codepen into a static website and deploy it to Heroku.
+- Refactor your favourite Codepen into a static website and deploy it to Heroku.
 
 ---
 
