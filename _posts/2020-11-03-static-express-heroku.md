@@ -4,6 +4,10 @@ title: Week 9T - Serrving Static Files with Express and Heroku
 categories: cpnt262
 ---
 
+## Housekeeping
+- Bounty for early dismissal
+  - Deploy an Express website of your choice to Heroku and you can go home early! Post your Heroku URL in brightspace.
+
 ## Tooltime
 - environment variables
   - command not found
