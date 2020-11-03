@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 9T - Static Assets with Express and Heroku
+title: Week 9T - Serrving Static Files with Express and Heroku
 categories: cpnt262
 ---
 
