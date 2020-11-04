@@ -14,7 +14,9 @@ categories: cpnt262
     - [Model-view-controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) on Wikipedia
 3. Express Routes
     - Watch: The first 20 minutes of [How to build a REST API with Node js & Express](https://youtu.be/pKd0Rpw7O48) by Mosh Hamedani (we'll eventually cover most of this video)
-    - Read: [Express Routes](https://expressjs.com/en/guide/routing.html) in the ExpressJS Documentaion
+    - Read: [Express Routes](https://expressjs.com/en/guide/routing.html) in the ExpressJS Documentation
+4. Postman
+    - [The Basics of Using Postman for API Testing](https://youtu.be/t5n07Ybz7yI)
 
 ---
 
