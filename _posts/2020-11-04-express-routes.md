@@ -28,7 +28,7 @@ categories: cpnt262
   <dd>A URI is a string that refers to a resource. We know these best as URLs. <a href="https://danielmiessler.com/study/difference-between-uri-url/">All URLs are URIs</a>, but not all URIs are URLs.</dd>
   <dt>Route</dt>
   <dd>An HTTP method combined with a URL. For example: <code>GET https://example.com/api/animals</code></dd>
-<dl>
+</dl>
 
 ---
 
