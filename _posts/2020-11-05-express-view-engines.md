@@ -10,12 +10,12 @@ categories: cpnt262
 2. View Engines
     - [Using template engines with Express](https://expressjs.com/en/guide/using-template-engines.html)
     - Watch: Starting @24:30 [ExpressJS Crash Course](https://youtu.be/gnsO8-xJ8rs?t=1468)
-      - Search: [node pug tutorial](https://www.google.com/search?q=node+pug+tutorial)
     - [EJS](https://ejs.co/)
       - Search: [node ejs tutorial](https://www.google.com/search?q=node+ejs+tutorial)
       - Reference: [EJS home page](https://ejs.co/)
       - Reference: [EJS tag reference](https://www.npmjs.com/package/ejs#tags)
     - [Pug](https://pugjs.org/api/getting-started.html) by Brad Traversy
+      - Search: [node pug tutorial](https://www.google.com/search?q=node+pug+tutorial)
     - [Handlebars](https://handlebarsjs.com/)
       - Search: [node handlebars tutorial](https://www.google.com/search?q=node+handlebars+tutorial)
 3. `response.locals`
