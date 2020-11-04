@@ -45,11 +45,15 @@ The three parts of the MVC software-design pattern can be described as follows:
 
 ---
 
-## 2. Overview: Express routes
+## 2. Overview: Routes
+
+**Cheatsheet**: [Express Routes](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/routes)
 
 ---
 
-## 3. Creating HTML GET endpoints in Express
+## 3. Handling POST requests in Express
+
+**Cheatsheet**: [`express.urlencoded` Middleware](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/routes/post-requests)
 
 ---
 
@@ -58,3 +62,4 @@ The three parts of the MVC software-design pattern can be described as follows:
 ---
 
 ## Clean-up Time!
+- Don't forget to submit your code to the appropriate Daily Code dropbox on Brightspace.
