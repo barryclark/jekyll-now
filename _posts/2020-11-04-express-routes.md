@@ -16,7 +16,7 @@ categories: cpnt262
     - Watch: The first 20 minutes of [How to build a REST API with Node js & Express](https://youtu.be/pKd0Rpw7O48) by Mosh Hamedani (we'll eventually cover most of this video)
     - Read: [Express Routes](https://expressjs.com/en/guide/routing.html) in the ExpressJS Documentation
 4. Postman
-    - [The Basics of Using Postman for API Testing](https://youtu.be/t5n07Ybz7yI)
+    - Watch: [The Basics of Using Postman for API Testing](https://youtu.be/t5n07Ybz7yI)
 
 ---
 
