@@ -65,3 +65,4 @@ The three parts of the MVC software-design pattern can be described as follows:
 
 ## Clean-up Time!
 - Don't forget to submit your code to the appropriate Daily Code dropbox on Brightspace.
+- [Tomorrow]({% link _posts/2020-11-05-express-view-engines.md %})
