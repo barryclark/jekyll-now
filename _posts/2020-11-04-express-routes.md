@@ -21,6 +21,14 @@ categories: cpnt262
 ---
 
 ## Terminology
+<dl>
+  <dt>HTTP Request Method</dt>
+  <dd>The desired action to be performed for a given resource. These are defined in the HTTP specification. The most common methods we will cover are <code>GET</code>, <code>POST</code>, <code>PUT</code> and <code>DELETE</code></dd>
+  <dt>HTTP Uniform Resource Identifier (URI)</dt>
+  <dd>A URI is a string that refers to a resource. We know these best as URLs. <a href="https://danielmiessler.com/study/difference-between-uri-url/">All URLs are URIs</a>, but not all URIs are URLs.</dd>
+  <dt>Route</dt>
+  <dd>An HTTP method combined with a URL. For example: <code>GET https://example.com/api/animals</code></dd>
+<dl>
 
 ---
 
