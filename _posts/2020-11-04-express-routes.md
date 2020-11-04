@@ -58,6 +58,7 @@ The three parts of the MVC software-design pattern can be described as follows:
 ---
 
 ## Activities
+- see: [Route Activities](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/routes#activities)
 
 ---
 
