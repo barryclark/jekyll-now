@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2020"
-published: false
 ---
 
 Join three great speakers from Megaport, Sysdig, and Nutanix at the November Cloud Native London virtual meetup, on Zoom and YouTube from 6:30pm BST!
