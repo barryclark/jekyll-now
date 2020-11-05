@@ -28,7 +28,7 @@ categories: cpnt262
   <dd>A URI is a string that refers to a resource. We know these best as URLs. <a href="https://danielmiessler.com/study/difference-between-uri-url/">All URLs are URIs</a>, but not all URIs are URLs.</dd>
   <dt>Route</dt>
   <dd>An HTTP method combined with a URL. For example: <code>GET https://example.com/api/animals</code></dd>
-<dl>
+</dl>
 
 ---
 
@@ -45,16 +45,24 @@ The three parts of the MVC software-design pattern can be described as follows:
 
 ---
 
-## 2. Overview: Express routes
+## 2. Overview: Routes
+
+**Cheatsheet**: [Express Routes](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/routes)
 
 ---
 
-## 3. Creating HTML GET endpoints in Express
+## 3. Handling POST requests in Express
+
+**Cheatsheet**: [`express.urlencoded` Middleware](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/routes/post-requests)
 
 ---
 
 ## Activities
+- [Postman Practice](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/routes#activity)
+- [Register form POST request ](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/routes/post-requests#activity)
 
 ---
 
 ## Clean-up Time!
+- Don't forget to submit your code to the appropriate Daily Code dropbox on Brightspace.
+- [Tomorrow]({% link _posts/2020-11-05-express-view-engines.md %})

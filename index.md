@@ -78,7 +78,7 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - M: CPNT 262 Day 14 - [npm and `package.json`]({% link _posts/2020-11-02-npm-package-json.md %})
 - T: CPNT 262 Day 15 - [Static Express Websites and Heroku]({% link _posts/2020-11-03-static-express-heroku.md %})
 - W: CPNT 262 Day 16 - [Express Controllers and Routes]({% link _posts/2020-11-04-express-routes.md %})
-- R: CPNT 262 Day 17 - Express Views with EJS/Pug/handlebars
+- R: CPNT 262 Day 17 - [Express Views with EJS/Pug/handlebars]({% link _posts/2020-11-05-express-view-engines.md %})
 - F: CPNT 262 Day 18 - Express Custom Modules
 
 ## Week 10: Nov 9-13
