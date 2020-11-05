@@ -48,7 +48,7 @@ You will be working in groups of 3-4:
         - create a collective Git repo;
         - add teammates as collaborators;
     - Team Lead:
-        
+        - Help coordinate tasks and break ties
     - Other jobs assigned as needed. Examples:
         - Copywriting
         - Data entry
