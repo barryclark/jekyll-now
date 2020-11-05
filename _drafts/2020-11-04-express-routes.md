@@ -9,7 +9,10 @@ categories: cpnt262
     - [What Is a REST API?](https://www.sitepoint.com/developers-rest-api/) on SitePoint
 2. Model-View-Controller
     - [MVC](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
-    
+
+3. Postman
+    - [The Basics of Using Postman for API Testing](https://youtu.be/t5n07Ybz7yI)
+
 ---
 
 ## Terminology
