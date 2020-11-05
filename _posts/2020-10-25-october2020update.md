@@ -27,7 +27,7 @@ The prototype is basically done I just need to design an enclosure for it. I've 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/october2020-images/fusion360-design.png)
 
 ### Building Discord Community 👨‍👩‍👦
-The idea behind this was to help foster an opensource community for our project. Hopefully, we can attract some great community members and partners who would love to help us with our mission. If you are interested in joining the community here's an [invite link](https://discord.gg/A4aQHR).
+The idea behind this was to help foster an opensource community for our project. Hopefully, we can attract some great community members and partners who would love to help us with our mission. If you are interested in joining the community here's an [invite link](https://discord.gg/mGKVVpxTPr).
 
 ### Created an About Page for ZBCE 📰
 I created a about page for new members for ZBCE on this [blog](https://zotbins.github.io/zbceblog/about/). In this about page I go over the mission of the project, the community values, a [Public Roadmap](https://github.com/orgs/zotbins/projects/9), and a contributing guide. Let me know what you think! This is my first time trying to start an open source community, so I appreciate any input.
@@ -40,6 +40,6 @@ I was experimenting with creating a new SQL database for ZBCE datalogging. I've 
 ### Learning About More Sustainability Resources 🌱
 I stumbled upon this comprehensive resource for all sorts of sustainability technologies and topics: [Awesome Sustainable Technology](https://github.com/protontypes/awesome-sustainable-technology).
 
-Okay, thanks for reading this first monthly update. I know this might have been a lot. Please let me know if you have any thoughts about anything on [Discord](https://discord.gg/A4aQHR). I would love some feedback so I don't feel like I'm just writing to myself. Have a great day!
+Okay, thanks for reading this first monthly update. I know this might have been a lot. Please let me know if you have any thoughts about anything on [Discord](https://discord.gg/mGKVVpxTPr). I would love some feedback so I don't feel like I'm just writing to myself. Have a great day!
 
 -- Owen

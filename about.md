@@ -30,7 +30,7 @@ We're just getting started and we have a long way to go. Here is our [Road Map](
 ### Contributing
 Here are some following ways you can contribute:
 
-- Join our [Discord](https://discord.gg/A4aQHR) server and contribute to our growing community
+- Join our [Discord](https://discord.gg/mGKVVpxTPr) server and contribute to our growing community
 - Submit bugs by opening an issue on our [Github](https://github.com/zotbins). Please make sure that bugs are reported in detail and is reproducible.
 - Write some documentation for a repository and we can add it to our GitHub Wiki Page
 - Improve our project documentation
