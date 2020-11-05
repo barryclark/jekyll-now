@@ -44,17 +44,17 @@ You will be working in groups of 3-4:
   - one template partial (header, footer, nav, etc);
   - one `page` template representing an HTML file in the site map.
 4. Each team should assign the following jobs:
-  - Devops: 
-    - create a collective Git repo;
-    - add teammates as collaborators;
-  - Team Lead:
-    - Help coordinate tasks and break ties
-  - Other jobs assigned as needed. Examples:
-    - Copywriting
-    - Data entry
-    - Research
-    - Imagery
-    - Heroku setup
+    - Devops: 
+        - create a collective Git repo;
+        - add teammates as collaborators;
+    - Team Lead:
+        
+    - Other jobs assigned as needed. Examples:
+        - Copywriting
+        - Data entry
+        - Research
+        - Imagery
+        - Heroku setup
 
 ### Planning it out
 
