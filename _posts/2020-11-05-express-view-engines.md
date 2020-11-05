@@ -11,6 +11,7 @@ categories: cpnt262
     - [Using template engines with Express](https://expressjs.com/en/guide/using-template-engines.html)
     - Watch: Starting @24:30 [ExpressJS Crash Course](https://youtu.be/gnsO8-xJ8rs?t=1468)
     - [EJS](https://ejs.co/)
+      - [How To Use EJS to Template Your Node Application](https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application)
       - Search: [node ejs tutorial](https://www.google.com/search?q=node+ejs+tutorial)
       - Reference: [EJS home page](https://ejs.co/)
       - Reference: [EJS tag reference](https://www.npmjs.com/package/ejs#tags)
