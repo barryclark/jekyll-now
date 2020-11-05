@@ -79,7 +79,20 @@ You will be working in groups of 3-4:
     - the rest of the team
         1. `git pull`
         2. `npm install`
-    
+9. README.md
+    - Create a group charter: who's responsible for what?
+        - Tony
+            - home page
+            - navigation partial
+        - Jina
+            - features
+            - header partial
+        - Patrick
+            - contact
+            - footer partial
+        - Jayden
+            - shop
+            - contact form partial
 
 
 ---
@@ -92,3 +105,5 @@ You will be working in groups of 3-4:
 ---
 
 ## Clean-up Time!
+- Don't forget to submit your code to the appropriate Daily Code dropbox on Brightspace.
+- [Tomorrow]({% link _posts/2020-11-06-express-json-routes.md %})
