@@ -57,6 +57,30 @@ You will be working in groups of 3-4:
         - Heroku setup
 
 ### Planning it out
+1. Pick a theme
+2. Pick a template/site
+    - move to `_source` folder in project root
+3. Create GH repo
+4. Assign Collaborators
+4. Push `_source` to GH
+5. All team members: 
+    1. clone repo
+6. Look for repeating page elements to turn into partials.
+7. Decide on an overall strategy when it comes to partials
+8. Delegate tasks
+    - One person:
+        1. Create the folder structure
+        2. add a `.gitignore`, if needed
+        2. `npm init`
+        3. Install
+            - `express`
+            - `ejs`
+        4. Push the changes
+    - the rest of the team
+        1. `git pull`
+        2. `npm install`
+    
+
 
 ---
 
