@@ -3,6 +3,12 @@ layout: post
 title: Week 9R - Express Views and View Engines
 categories: cpnt262
 ---
+## Housekeeping
+- [CPNT 262 Assignment 4](https://github.com/sait-wbdv/assessments/tree/master/cpnt262/assignment-4) (so far)
+  - Due: Wednesday November 11 @ 11:59pm
+  - Worth: 20% of final mark
+  - JSON portion to be released tomorrow
+- Discussion on assignment schedule
 
 ## Homework
 1. Review
@@ -32,7 +38,7 @@ categories: cpnt262
 
 ## 2. Group Activity: Template hacking
 You will be working in groups of 3-4:
-1. As a group: decide on a team/company/product name;
+1. As a group: decide on a team/company/product name (when in doubt, try Tony's [random name generator](https://acidtone.github.io/namor/));
 2. Find a free, modern static HTML template to form the basis of your website.
 3. Each team member will be responsible for creating:
   - one template partial (header, footer, nav, etc);
@@ -45,8 +51,12 @@ You will be working in groups of 3-4:
     - Help coordinate tasks and break ties
   - Other jobs assigned as needed. Examples:
     - Copywriting
+    - Data entry
+    - Research
     - Imagery
     - Heroku setup
+
+### Planning it out
 
 ---
 
