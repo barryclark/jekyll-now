@@ -22,7 +22,7 @@ categories: cpnt262
 
 ---
 
-## 2. Sever-side vs client-side rendering
+## 2. Server-side vs client-side rendering
 
 **Cheatsheet**: [Dobby vs Hargid](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/dobby-vs-hagrid)
 
