@@ -82,7 +82,7 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - F: CPNT 262 Day 18 - [JSON GET Endpoints with Custom Modules]({% link _posts/2020-11-06-express-json-routes.md %})
 
 ## Week 10: Nov 9-13
-- M: CPNT 262 Day 19 - Mongoose Models
+- M: CPNT 262 Day 19 - [Models and MongoDB Atlas]({% link _posts/2020-11-09-models-mongodb-atlas.md %})
 - T: CPNT 262 Day 20 - POST requests with Mongoose
 - W: Stat
 - R: CPNT 264 - Career & Consulting Essentials
