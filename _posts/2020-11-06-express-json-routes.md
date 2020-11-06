@@ -8,6 +8,7 @@ categories: cpnt262
 1. Review
     - [Custom modules]({% link _posts/2020-10-28-custom-modules.md %})
     - [Express routes]({% link _posts/2020-11-04-express-routes.md %})
+    - [Asynchronous JS and `fetch()`]({% link _posts/2020-10-22-async-fetch.md %})
 2. RESTful JSON endpoints
     - Watch: The first 20 minutes of [How to build a REST API with Node js & Express](https://youtu.be/pKd0Rpw7O48) by Mosh Hamedani
     - Read: [Send a JSON response using Express](https://flaviocopes.com/express-send-json-response/)
@@ -15,23 +16,21 @@ categories: cpnt262
 
 ---
 
-## Terminology
+## 1. Review of `fetch()` and RESTful APIs
+
+**Review**: [Asynchronous JS and `fetch()`]({% link _posts/2020-10-22-async-fetch.md %})
 
 ---
 
-## 1. Review of RESTful API best practices
+## 2. Sever-side vs client-side rendering
 
----
-
-## 2. JSON endpoints with custom modules
+**Cheatsheet**: [Dobby vs Hargid](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/dobby-vs-hagrid)
 
 ---
 
 ## 3. Lab-time
 
----
-
-## Activities
+**Activity**: [Refactor Animal Gallery](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/gallery-refactor)
 
 ---
 
