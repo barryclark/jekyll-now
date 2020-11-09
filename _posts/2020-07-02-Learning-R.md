@@ -16,6 +16,7 @@ This is a curated collection of R educational materials for learning R. I will a
 
 - [An Introduction to Statistical Learning with Applications in R](http://faculty.marshall.usc.edu/gareth-james/ISL/){:target="_blank"}
 
+= [Another Book on Data Science](https://www.anotherbookondatascience.com){:target="_blank"}
 
 ## Tutorials/Workshops
 
