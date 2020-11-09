@@ -83,7 +83,7 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 
 ## Week 10: Nov 9-13
 - M: CPNT 262 Day 19 - [Models and MongoDB Atlas]({% link _posts/2020-11-09-models-mongodb-atlas.md %})
-- T: CPNT 262 Day 20 - [POST requests with Mongoose]({% link _posts/2020-11-10-mongoose-crud.md %})
+- T: CPNT 262 Day 20 - [Mongoose CRUD and POST Requests]({% link _posts/2020-11-10-mongoose-crud.md %})
 - W: Stat
 - R: CPNT 264 - Career & Consulting Essentials
 - F: CPLN 240 - Guest Speaker Day
