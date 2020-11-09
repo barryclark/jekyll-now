@@ -8,8 +8,7 @@ categories: cpnt262
 - 260 Final Project marks are published
 - 262 Assignment updates
   - [Assignment 4](https://github.com/sait-wbdv/assessments/tree/master/cpnt262/assignment-4) officially announced
-  - New [CPNT 262 Assignment Schedule]
-(https://github.com/sait-wbdv/assessments/tree/master/cpnt262)
+  - New [CPNT 262 Assignment Schedule](https://github.com/sait-wbdv/assessments/tree/master/cpnt262)
     - Assignment 4: Due Friday, Nov 13 
     - Assignment 5: Due Monday, Nov 16
       - addignment details will be announced tomorrow
