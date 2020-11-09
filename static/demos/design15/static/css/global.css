@@ -1,0 +1,61 @@
+/* FONTS */
+@font-face {
+	font-family: "Gilroy";
+	font-weight: bold;
+	src: url("../resources/fonts/Gilroy/Gilroy-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Wondar Quason";
+	font-weight: regular;
+	src: url("../resources/fonts/WondarQuason/wondar-quason.ttf");
+}
+
+/* GENERAL */
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 0px;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+html,body {
+	overflow-x: hidden;
+	width: 100%;
+	min-width: 320px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background-color: white; 
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header#bodyHeader, main#bodyMain {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+@media all and (max-width: 1000px) {
+	header#bodyHeader, main#bodyMain {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+header#bodyHeader {
+	padding-top: 56px;
+}
+
+header#bodyHeader h1 {
+	font-family: "Gilroy", sans-serif;
+	font-size: 28px;
+	line-height: 28px;
+}

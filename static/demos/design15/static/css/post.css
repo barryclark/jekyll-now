@@ -1,0 +1,64 @@
+main {
+	width: 726px;
+	margin: 0 auto;
+	margin-top: 56px;
+	font-size: 20px;
+}
+
+/* POST HEADER */
+
+header#postHeader {
+	width: 100%;
+}
+
+a#postBackA {
+	font-weight: 700;
+	font-size: 17px;
+	margin-bottom: 24px;
+}
+
+header#postHeader img {
+	width: 100%;
+}
+
+/* POST ARTICLE */
+
+article#postArticle {
+	width: 100%;
+}
+
+article#postArticle header, article#postArticle h1 {
+	font-family: "LeagueSpartan", sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+
+article#postArticle header {
+	font-size: 42px;
+}
+
+article#postArticle h1 {
+	margin-top: 56px;
+	font-size: 28px;
+}
+
+article#postArticle h2 {
+	margin-bottom: 24px;
+}
+
+article#postArticle p, article#postArticle li {
+	font-size: 17px;
+	line-height: 23px;
+}
+
+article#postArticle p {
+	margin-bottom: 24px;
+}
+
+article#postArticle img {
+	width: 100%;
+}
+
+article#postArticle ul {
+	list-style-position: inside;
+}

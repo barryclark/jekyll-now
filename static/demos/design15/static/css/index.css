@@ -1,0 +1,99 @@
+/* BODY MAIN */
+
+header#indexHeader {
+	padding-top: 179px;
+	padding-bottom: 224px;
+}
+
+header#indexHeader h1 {
+	font-family: "Wondar Quason", sans-serif;
+	font-size: 137px;
+	line-height: 125px;
+}
+
+/* PROJECT SECTION */
+
+section#indexProjectsSection article {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 80px;
+
+	position: relative;
+}
+
+@media all and (max-width: 1000px) {
+	section#indexProjectsSection article {
+		margin-bottom: 60px;
+	}
+}
+
+
+section#indexProjectsSection article div.projectShadowDiv {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+
+	text-align: center;
+}
+
+div.projectShadowDiv svg {
+	display: inline-block;
+}
+
+section#indexProjectsSection article video {
+	position: relative;
+	z-index: 100;
+}
+
+article#bmwProjectArticle {
+	background: #89B3D9;
+}
+
+article#bmwProjectArticle div.projectShadowDiv svg {
+	width: 593px;
+	height: 460px;
+	margin-top: 198.26px;
+}
+
+article#bmwProjectArticle video {
+	margin: 167px auto;
+
+	width: 636.02px;
+	height: 478.35px;
+}
+
+article#sunyProjectArticle {
+	background: #F2E8C9;
+}
+
+article#sunyProjectArticle div.projectShadowDiv svg {
+	width: 271px;
+	height: 545px;
+	margin-top: 201.9px;
+}
+
+article#sunyProjectArticle video {
+	margin: 163px auto;
+	width: 321.93px;
+	height: 572.21px;
+}
+
+article#pucpProjectArticle {
+	background: #CAD1D9;
+}
+
+article#pucpProjectArticle div.projectShadowDiv svg {
+	width: 270px;
+	height: 668px;
+	margin-top: 202.9px;
+}
+
+article#pucpProjectArticle video {
+	margin: 163px auto;
+	width: 321.03px;
+	height: 697.09px;
+
+	border-radius: 32px;
+}

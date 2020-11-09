@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 593 460" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible">
+    <title>bmwShadow Copy@redux</title>
+    <defs>
+        <filter x="-20.6%" y="-26.6%" width="141.3%" height="153.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="40.8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="bmwShadow-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.45">
+        <rect id="Rectangle" fill="#012648" filter="url(#filter-1)" x="0" y="0" width="593" height="460"></rect>
+    </g>
+</svg>
