@@ -4,6 +4,18 @@ title: Week 10M - Models and MongoDB Atlas
 categories: cpnt262
 ---
 
+## Housekeeping
+- 260 Final Project marks are published
+- 262 Assignment updates
+  - [Assignment 4](https://github.com/sait-wbdv/assessments/tree/master/cpnt262/assignment-4) officially announced
+  - New [CPNT 262 Assignment Schedule]
+(https://github.com/sait-wbdv/assessments/tree/master/cpnt262)
+    - Assignment 4: Due Friday, Nov 13 
+    - Assignment 5: Due Monday, Nov 16
+      - addignment details will be announced tomorrow
+    - Final Project: Due Friday, Nov 20
+      - groups and assignment details will be  announced tomorrow 
+
 ## Homework
 1. Review
     - [Create, read, update and delete](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) on Wikipedia
