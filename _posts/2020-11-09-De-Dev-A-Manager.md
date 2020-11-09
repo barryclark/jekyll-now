@@ -18,44 +18,44 @@ Hace casi 1 año que decidí cambiar mi rol como desarrollador y pasarme al mund
 Os quiero explicar mi experiencia personal.  
 Otros desarrolladores, en otros momentos, en otras circunstancias, pueden tener experiencias diferentes.  
 Tampoco tengo claro que hubiera pasado si hubiera sabido estas cosas antes de hacer el cambio de rol.  
-A lo mejor es necesario vivirlas y aprender por el camino para llegar a dónde estoy hoy.  
+A lo mejor es necesario vivirlas y aprender por el camino para llegar a donde estoy hoy.  
 
 ## 1. Hacer el cambio por las razones correctas
-Sí un desarrollador me dijera que quiere cambiar su carrera profesional y ejercer un rol de manager, lo primero que haría es preguntarle ¿cuáles son las razones para hacer ese cambio?  
+Si un desarrollador me dijera que quiere cambiar su carrera profesional y ejercer un rol de manager, lo primero que haría es preguntarle ¿cuáles son las razones para hacer ese cambio?  
 Es muy importante hacer el cambio por las razones correctas.   
-Por ejemplo, en España todavía hay muchas empresas en las que llegado a cierto nivel técnico tienes que hacer el cambio a la gestión para ganar más dinero. Suponiendo que ya ganas lo suficiente para tener tus necesisades cubiertas, si solo vas a hacer el cambio para ganar más dinero, mi consejo es que busques una empresa que te pague lo que crees que vales por hacer lo que realmente te gusta y te motiva.  
+Por ejemplo, en España todavía hay muchas empresas en las que llegado a cierto nivel técnico tienes que hacer el cambio a la gestión para ganar más dinero. Suponiendo que ya ganas lo suficiente para tener tus necesidades cubiertas, si solo vas a hacer el cambio para ganar más dinero, mi consejo es que busques una empresa que te pague lo que crees que vales por hacer lo que realmente te gusta y te motiva.  
 Cambiar a un rol de gestión para ganar más dinero, sino te gusta, pronto se te olvidará el dinero y no irás agusto a trabajar.
 
-## 2. ¿Por qué es importante hace el cambio por las razones correctas?
+## 2. ¿Por qué es importante hacer el cambio por las razones correctas?
 Pongo un ejemplo simplista. Ejercer un rol de manager no es como arreglar un problema en producción, en el que te metes, sufres un poco, lo arreglas y se acabó....  
 Ayudar a arreglar los problemas que tienes como manager son de largo recorrido y vas a tardar tiempo en arreglarlos.  
 Si no estás haciendo lo que te gusta cada día es muy frustrante.  
 Lo podías equiparar a trabajar cada día con la tecnología que más odies. Durante unos días, no hay problema, pero cuando ves que para aportar algo tardarás meses o años, se te hace un mundo. 
 
 ## 3. ¿Voy a ganar más dinero como manager?
-No tiene porque ser así.  
+No tiene porqué ser así.  
 En tu empresa deberías cobrar por tu experiencia, pero sobretodo por el impacto y el valor que aportas.   
 En la compañía que trabajo actualmente, un desarrollador puede cobrar más que un manager.   
 Desarrollo y gestión son dos carreras profesionales paralelas y tú decides cual sigues. 
 
-## 4. ¿Pero entonces si puedo ganar mas dinero como desarrollador para que cambio de rol?
+## 4. ¿Pero entonces si puedo ganar más dinero como desarrollador para qué cambio de rol?
 Cada uno puede tener sus razones.  
 Yo por ejemplo quería resolver problemas que como desarrollador eran muy difíciles de resolver pero como manager si son abordables:  
-- Mejorar el  rendimiento de equipos.
+- Mejorar el  rendimiento de los equipos.
 - Cambiar la cultura de desarrollo de la compañía.
 - Cambiar las interacciones de los equipos con los stakeholders.
 - Cambiar la velocidad a la que pasan la cosas.
 
 
 ## 5. El ciclo de recompensa
-Uno de lo mayores cambios que hay al pasar de desarrollar a gestionar es el ciclo de recompensa.  
+Uno de los mayores cambios que hay al pasar de desarrollar a gestionar es el ciclo de recompensa.  
 Cómo desarrolladores estamos acostumbrados a ciclos de recompensa muy cortos.  
-Tiras unas líneas de código y tienes algo visible, funcionando y en muchos casos ya lo usan tus clientes. ¡Buah, que subidón! ¡Qué buenos somos!  
+Tiras unas líneas de código y tienes algo visible, funcionando y en muchos casos ya lo usan tus clientes. ¡Buah, qué subidón! ¡Qué buenos somos!  
 Esto como manager no pasa, los ciclos de recompensa son muy largos, de meses o incluso años.  
 No cambias el rumbo de un equipo en unos días, no ayudas a otra persona a crecer profesionalmente en unas semanas.  
-Si no tienes claro esto, cada día será muy frustante porque tendrás la sensación de no haber hecho nada.  
+Si no tienes claro esto, cada día será muy frustrante porque tendrás la sensación de no haber hecho nada.  
 Verás los resultados de tus acciones de hoy, en unas semanas o meses, te hayas equivocado o hayas acertado.   
-Pero cuando ves los resultado y ves a la gente crecer y convertirse en mejores técnicos o a equipos empezar a funcionar como una maquina engrasada, es muy gratificante.
+Pero cuando ves los resultado y ves a la gente crecer y convertirse en mejores técnicos o a equipos empezar a funcionar como una máquina engrasada, es muy gratificante.
 
 ## 6. Dejar de hacer las cosas y empezar a conseguir que las cosas pasen
 Uno de los aspectos más difíciles cuando pasas de desarrollador a manager es dejar de hacer las cosas y empezar a conseguir que las cosas pasen sin hacerlas tú.  
@@ -73,19 +73,19 @@ Además puedes generar el precedente de que aquí lo importante eres tú y no el
 
 ## 8. Pasas de trabajar con la tecnología más puntera del mercado a trabajar con la más antigua, las personas.  
 Mucha gente me dice, ¡pero si yo trabajo con personas! ¡Trabajo en equipo cada día!   
-Pero que sepas resolver los problemas de tú código o que hagas pairing con tus compañeros, no tiene nada que ver con resolver los problemas de un equipo, hacer crecer a una persona o gestionar los conflictos entre personas.   
-Una vez tomes la senda de la gestión, la tecnología queda relegada a un segundo plano.  
+Pero que sepas resolver los problemas de tu código o que hagas pairing con tus compañeros, no tiene nada que ver con resolver los problemas de un equipo, hacer crecer a una persona o gestionar los conflictos entre personas.   
+Una vez que tomes la senda de la gestión, la tecnología queda relegada a un segundo plano.  
 
 ## 9. No intentes arreglar todo el universo a la vez
 El problema es que verás muchas cosas a mejorar y tu instinto de solucionologo-resolvedor de problemas saltará y lo querrá arreglar todo.  
 No quieras cambiar demasiadas cosas a la vez.  
-Mira, entiende los equipos, busca la causa raíz de los problemas que tienen, busca que tenemos que cambiar para tener más impacto y veté a por ello.  
-Los pequeños cambios cosméticos, rápidos pero que no arreglan el problema raíz, pueden servir para ponerte una medallita y acortar el ciclo de recompensa, pero el problema no lo has arreglado y volverá tarde o tempramo por mucha pintura que hayas puesto.
+Mira, entiende los equipos, busca la causa raíz de los problemas que tienen, busca que tenemos que cambiar para tener más impacto y vete a por ello.  
+Los pequeños cambios cosméticos, rápidos pero que no arreglan el problema raíz, pueden servir para ponerte una medallita y acortar el ciclo de recompensa, pero el problema no lo has arreglado y volverá tarde o temprano por mucha pintura que hayas puesto.
 
 ## 10. Te darás cuenta de cosas que antes no veías
 Por ejemplo, como desarrollador puedes percibir que un compañero no es bueno técnicamente, no hace el trabajo con el nivel de calidad que tú querrías, parece que vaya a la suya, etc..   
 Como manager muchas veces tienes que ayudar a esa persona porque de otra manera tendrá que dejar la empresa.  
-La enfocas, le das un propósito y un camino a recorrer y verás que muchas veces el problema no era la persona por si sola, sino el momento, el proyecto, los compañeros....  
+La enfocas, le das un propósito y un camino a recorrer y verás que muchas veces el problema no era la persona por sí sola, sino el momento, el proyecto, los compañeros....  
 Este tipo de cosas no sueles percibirlas como desarrollador y cuando consigues enderezarlas, son muy gratificantes.
 
 ## 11. Tus palabras son muy importantes porque tus palabras como manager serán usadas para bien o para mal. 
@@ -98,13 +98,13 @@ Esta frase la usa el equipo cuando tiene que justificar porque está haciendo ci
 *"Es que mi manager dijo…."*
 Cómo desarrollador puedes ser más ambiguo en tus palabras, aunque no deberías, pero como manager tienes que ser claro y no puedes dar esperanzas a tus equipos de cosas que sabes que no van a pasar. Estarás destruyendo la confianza con tu equipo.
 Tienes que ser sincero, si algo no va a poder ser, no des esperanzas.  
-Se asertivo y realista pero empático.... Es muy fácil de decir pero muy difícil de hacer.
+Sé asertivo y realista pero empático.... Es muy fácil de decir pero muy difícil de hacer.
 Por ejemplo, si sabes que tu empresa no será 100% remoto no des esperanzas a la gente con un ya veremos, nunca se sabe, a lo mejor....
-Ser sincero puede hacer que haya gente que deje la empresa. No ser sincero hará que las personas pierdan la confianza en ti y en la empresa, será muy muy dificil recuperlas y posiblemente se irá más gente que si hubieras sido sincero. 
+Ser sincero puede hacer que haya gente que deje la empresa. No ser sincero hará que las personas pierdan la confianza en ti y en la empresa, será muy muy difícil recuperarla y posiblemente se irá más gente que si hubieras sido sincero. 
 Al final como manager tienes que ser coherente con tus actos y cumplir con tu palabra.  
 
 Y hasta aquí lo que he ido aprendiendo en mi camino en el cambio de rol.
-Seguro que me dejo muchas cosas, así que añadidlas en los comentario!
+Seguro que me dejo muchas cosas, así que añadidlas en los comentarios!
 
 > Talent wins games, but teamwork and intelligence wins championships. - Michael Jordan -
 
