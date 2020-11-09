@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Marido, padre de 3 dragones y me relajo y descanso cada día desarrollando @habitaclia y @fotocasa en @AdevintaSpain 
 
-### More Information
+### Contacto
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[nikey_es@yahoo.es](mailto:nikey_es@yahoo.es)
+[nikey_es@yahoo.es](mailto:nikey_es@yahoo.es)  
+[https://twitter.com/nikey_es](https://twitter.com/nikey_es)  
+[https://www.linkedin.com/in/jorge-castro-nistal](https://www.linkedin.com/in/jorge-castro-nistal)  
+[https://github.com/nikeyes](https://github.com/nikeyes)  
