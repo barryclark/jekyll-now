@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Gallery
 ---
 A test page with a test image
