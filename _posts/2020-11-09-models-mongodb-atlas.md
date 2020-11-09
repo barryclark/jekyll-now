@@ -63,3 +63,4 @@ See: [Creating and configuring a MongoDB Atlas account](https://github.com/sait-
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-11-10-mongoose-crud.md %})
