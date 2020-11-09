@@ -101,10 +101,12 @@ Tienes que ser sincero, si algo no va a poder ser, no des esperanzas.
 Se asertivo y realista pero empático.... Es muy fácil de decir pero muy difícil de hacer.
 Por ejemplo, si sabes que tu empresa no será 100% remoto no des esperanzas a la gente con un ya veremos, nunca se sabe, a lo mejor....
 Ser sincero puede hacer que haya gente que deje la empresa. No ser sincero hará que las personas pierdan la confianza en ti y en la empresa, será muy muy dificil recuperlas y posiblemente se irá más gente que si hubieras sido sincero. 
-Al final como manager tienes que ser coherente con tus actos y cumplir con tu palabra.
+Al final como manager tienes que ser coherente con tus actos y cumplir con tu palabra.  
 
 Y hasta aquí lo que he ido aprendiendo en mi camino en el cambio de rol.
 Seguro que me dejo muchas cosas, así que añadidlas en los comentario!
+
+> Talent wins games, but teamwork and intelligence wins championships. - Michael Jordan -
 
 
 
