@@ -15,17 +15,29 @@ categories: cpnt262
 
 ---
 
-## 1. Connecting MongoDB Atlas to Heroku
+## Housekeeping
+- [Assignment 5](https://github.com/sait-wbdv/assessments/tree/master/cpnt262/assignment-5)
+- [Final Project](https://github.com/sait-wbdv/assessments/tree/master/cpnt262/final)
 
 ---
 
-## 2. Overview: Mongoose CRUD and importing data
+## 1. Overview: Mongoose CRUD and importing data
 
-**Sample Code**: [Animals Import](https://github.com/sait-wbdv/sample-code/tree/master/backend/mongoose/hello-mongoose)
+**Sample Code**: [Animals Import](https://github.com/sait-wbdv/sample-code/tree/master/backend/mongoose/animals)
+
+---
+
+## 2. Connecting MongoDB Atlas to Heroku
+
+See: [How to host a RESTful Node.js server with MongoDB Atlas database on Heroku](https://dev.to/cpclark360/how-to-host-a-restful-node-js-server-with-mongodb-atlas-database-on-heroku-1opl)
+
+We only need to add our `Config Vars`. Most of these steps were completed yesterday. Ignore the CORS instructions unless you run into a cross-domain issue.
 
 ---
 
 ## 3. POST requests with Mongoose
+
+**Sample Code**: [Definitions](https://github.com/sait-wbdv/sample-code/tree/master/backend/mongoose/definitions)
 
 ---
 
