@@ -5,7 +5,8 @@ permalink: /gallery/
 ---
 A test page with a test image
 
-![testing a linked image from flickr ](https://www.flickr.com/photos/twyst/50129708597)
+![testing a linked image from flickr](https://www.flickr.com/photos/twyst/50129708597)
+
 ![a photograph of a skein of multicolored yarn, internal link](../images/spun_yarn.jpeg)
 
 HTML, internal link with quotation marks:
@@ -22,3 +23,6 @@ HTML, external link, without quotation marks:
 
 Markdown with new syntax
 ![test](../images/spun_yarn.jpeg =100x200)
+
+Markdown with added CSS styling
+![test](../images/spun_yarn.jpeg){:height="700px" width="400px"}
