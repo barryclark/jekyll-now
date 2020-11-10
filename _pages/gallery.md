@@ -1,7 +1,7 @@
 ---
 layout: default
 title: gallery1
-permalink: /gallery1/
+permalink: /gallery/
 images:
   - image_path: ../images/dyed_fiber_blue-yellow.jpeg
     title: Dyed fiber
