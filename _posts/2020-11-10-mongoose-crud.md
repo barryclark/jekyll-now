@@ -21,6 +21,8 @@ categories: cpnt262
 
 ## 2. Overview: Mongoose CRUD and importing data
 
+**Sample Code**: [Animals Import](https://github.com/sait-wbdv/sample-code/tree/master/backend/mongoose/hello-mongoose)
+
 ---
 
 ## 3. POST requests with Mongoose
