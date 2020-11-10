@@ -19,3 +19,6 @@ HTML, external link, with quotation marks:
 
 HTML, external link, without quotation marks:
 <img source=https://www.flickr.com/photos/twyst/50129708597 width=50px />
+
+Markdown with new syntax
+![test](../images/spun_yarn.jpeg =100x200)
