@@ -1,6 +1,6 @@
 ---
 layout: default
-title: gallery1
+title: gallery
 permalink: /gallery/
 images:
   - image_path: ../images/dyed_fiber_blue-yellow.jpeg
