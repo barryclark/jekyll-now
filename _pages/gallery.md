@@ -1,28 +1,13 @@
 ---
-layout: post
+layout: default
 title: gallery
 permalink: /gallery/
 ---
 A test page with a test image
 
-![testing a linked image from flickr](https://www.flickr.com/photos/twyst/50129708597)
 
-![a photograph of a skein of multicolored yarn, internal link](../images/spun_yarn.jpeg)
+![a photograph of a skein of multicolored yarn, internal link](../images/spun_yarn.jpeg) {:height="100px"}
 
-HTML, internal link with quotation marks:
-<img source="../images/spun_yarn.jpeg" width="50px" />
-
-HTML, internal link, without quotation marks:
-<img source=../images/spun_yarn.jpeg width=50px />
-
-HTML, external link, with quotation marks:
-<img source="https://www.flickr.com/photos/twyst/50129708597" width="50px" />
-
-HTML, external link, without quotation marks:
-<img source=https://www.flickr.com/photos/twyst/50129708597 width=50px />
-
-Markdown with new syntax
-![test](../images/spun_yarn.jpeg =100x200)
 
 Markdown with added CSS styling
 ![test](../images/spun_yarn.jpeg){:height="700px" width="400px"}
