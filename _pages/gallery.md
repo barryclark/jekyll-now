@@ -1,6 +1,7 @@
 ---
 layout: post
 title: gallery
+permalink: /gallery/
 ---
 A test page with a test image
 
