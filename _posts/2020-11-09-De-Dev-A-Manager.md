@@ -14,7 +14,7 @@ published: true
 
 > First rule of leadership: everything is your fault. - Hopper, A Bug’s Life - 
 
-🎙 Si eres más de escuchar que de leer, puede escuchar mi experiencia en el [capítulo 13](https://podcast.carlosble.com/podcast/e13-developer-se-convierte-en-manager/) del podcast *{experiencias.de.un.programador();}* de [Carlos Blé](https://twitter.com/carlosble)
+:studio_microphone: Si eres más de escuchar que de leer, puede escuchar mi experiencia en el [capítulo 13](https://podcast.carlosble.com/podcast/e13-developer-se-convierte-en-manager/) del podcast *{experiencias.de.un.programador();}* de [Carlos Blé](https://twitter.com/carlosble)
 
 Hace casi 1 año que decidí cambiar mi rol como desarrollador y pasarme al mundo de la gestión.  
 Os quiero explicar mi experiencia personal.  
