@@ -22,6 +22,13 @@ Otros desarrolladores, en otros momentos, en otras circunstancias, pueden tener 
 Tampoco tengo claro que hubiera pasado si hubiera sabido estas cosas antes de hacer el cambio de rol.  
 A lo mejor es necesario vivirlas y aprender por el camino para llegar a donde estoy hoy.  
 
+## 0. Aviso para navegantes
+Me han grabado en mis primeros dias como manager en estos videos de pocos segundos.
+https://twitter.com/darylginn/status/1181217370389524481
+https://twitter.com/BrianPBosche/status/1275946311167049729
+
+Parece broma pero los primeros días yo tenía esa sensación.
+
 ## 1. Hacer el cambio por las razones correctas
 Si un desarrollador me dijera que quiere cambiar su carrera profesional y ejercer un rol de manager, lo primero que haría es preguntarle ¿cuáles son las razones para hacer ese cambio?  
 Es muy importante hacer el cambio por las razones correctas.   
