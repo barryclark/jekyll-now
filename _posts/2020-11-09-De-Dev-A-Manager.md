@@ -22,7 +22,7 @@ Otros desarrolladores, en otros momentos, en otras circunstancias, pueden tener 
 Tampoco tengo claro que hubiera pasado si hubiera sabido estas cosas antes de hacer el cambio de rol.  
 A lo mejor es necesario vivirlas y aprender por el camino para llegar a donde estoy hoy.  
 
-## 1. Gestiona tus expectativas para los primeros días
+## 1. Los primeros días no vas a saber donde estas
 A mi me grabaron en mis primeros dias como manager y lo publicaron en Twitter. :scream:
 <a href="https://twitter.com/darylginn/status/1181217370389524481" target="_blank">https://twitter.com/darylginn/status/1181217370389524481</a>  
 [https://twitter.com/darylginn/status/1181217370389524481](https://twitter.com/darylginn/status/1181217370389524481)  
