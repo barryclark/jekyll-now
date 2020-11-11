@@ -14,6 +14,8 @@ published: true
 
 > First rule of leadership: everything is your fault. - Hopper, A Bug’s Life - 
 
+Si eres más de escuchar que de leer, puede escuchar mi experiencia en el [capítulo 13](https://podcast.carlosble.com/podcast/e13-developer-se-convierte-en-manager/) del podcast *{experiencias.de.un.programador();}* de [Carlos Blé](https://twitter.com/carlosble)
+
 Hace casi 1 año que decidí cambiar mi rol como desarrollador y pasarme al mundo de la gestión.  
 Os quiero explicar mi experiencia personal.  
 Otros desarrolladores, en otros momentos, en otras circunstancias, pueden tener experiencias diferentes.  
@@ -38,7 +40,7 @@ En tu empresa deberías cobrar por tu experiencia, pero sobretodo por el impacto
 En la compañía que trabajo actualmente, un desarrollador puede cobrar más que un manager.   
 Desarrollo y gestión son dos carreras profesionales paralelas y tú decides cual sigues. 
 
-## 4. ¿Pero entonces si puedo ganar más dinero como desarrollador para qué cambio de rol?
+## 4. Pero entonces si puedo ganar más dinero como desarrollador ¿para qué cambio de rol?
 Cada uno puede tener sus razones.  
 Yo por ejemplo quería resolver problemas que como desarrollador eran muy difíciles de resolver pero como manager si son abordables:  
 - Mejorar el  rendimiento de los equipos.
