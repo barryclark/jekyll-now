@@ -27,7 +27,7 @@ A mi me grabaron en mis primeros dias como manager y lo publicaron en Twitter. :
 [https://twitter.com/darylginn/status/1181217370389524481](https://twitter.com/darylginn/status/1181217370389524481)  
 [https://twitter.com/BrianPBosche/status/1275946311167049729](https://twitter.com/BrianPBosche/status/1275946311167049729)  
 
-Yo tenía esa sensación los primeros días como manager en equipos con los que nunca había trabajado.  
+Yo tenía esa sensación los primeros días como manager.  
 Poco a poco irás encontrando tu sitio en los equipos y dónde puedes aportar más.  
 
 ## 2. Hacer el cambio por las razones correctas
