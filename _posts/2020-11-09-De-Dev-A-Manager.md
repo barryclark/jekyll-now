@@ -23,12 +23,12 @@ Tampoco tengo claro que hubiera pasado si hubiera sabido estas cosas antes de ha
 A lo mejor es necesario vivirlas y aprender por el camino para llegar a donde estoy hoy.  
 
 ## 1. Gestiona tus expectativas para los primeros días
-A mi me grabaron en mis primeros dias como manager y lo publicaron en Twitter. ::scream::
-https://twitter.com/darylginn/status/1181217370389524481
-https://twitter.com/BrianPBosche/status/1275946311167049729
+A mi me grabaron en mis primeros dias como manager y lo publicaron en Twitter. ::scream::  
+https://twitter.com/darylginn/status/1181217370389524481  
+https://twitter.com/BrianPBosche/status/1275946311167049729  
 
-Yo tenía esa sensación los primeros días como manager en equipos con los que nunca había trabajado. 
-Poco a poco irás encontrando tu sitio en los equipos y dónde puedes aportar más.
+Yo tenía esa sensación los primeros días como manager en equipos con los que nunca había trabajado.  
+Poco a poco irás encontrando tu sitio en los equipos y dónde puedes aportar más.  
 
 ## 2. Hacer el cambio por las razones correctas
 Si un desarrollador me dijera que quiere cambiar su carrera profesional y ejercer un rol de manager, lo primero que haría es preguntarle ¿cuáles son las razones para hacer ese cambio?  
