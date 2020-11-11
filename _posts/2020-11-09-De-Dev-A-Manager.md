@@ -23,7 +23,7 @@ Tampoco tengo claro que hubiera pasado si hubiera sabido estas cosas antes de ha
 A lo mejor es necesario vivirlas y aprender por el camino para llegar a donde estoy hoy.  
 
 ## 1. Gestiona tus expectativas para los primeros días
-A mi me grabaron en mis primeros dias como manager y lo publicaron en Twitter. ::scream::  
+A mi me grabaron en mis primeros dias como manager y lo publicaron en Twitter. :scream:  
 https://twitter.com/darylginn/status/1181217370389524481  
 https://twitter.com/BrianPBosche/status/1275946311167049729  
 
