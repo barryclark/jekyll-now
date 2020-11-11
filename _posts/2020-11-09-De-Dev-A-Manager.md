@@ -14,7 +14,7 @@ published: true
 
 > First rule of leadership: everything is your fault. - Hopper, A Bug’s Life - 
 
-:studio_microphone: Si eres más de escuchar que de leer, puede escuchar mi experiencia en el [capítulo 13](https://podcast.carlosble.com/podcast/e13-developer-se-convierte-en-manager/) del podcast *{experiencias.de.un.programador();}* de [Carlos Blé](https://twitter.com/carlosble)
+:studio_microphone: Si eres más de escuchar que de leer, puede escuchar mi experiencia en el <a href="https://podcast.carlosble.com/podcast/e13-developer-se-convierte-en-manager/" target="_blank">capítulo 13</a> del podcast *{experiencias.de.un.programador();}* de <a href="https://twitter.com/carlosble" target="_blank">Carlos Blé</a>  
 
 Hace casi 1 año que decidí cambiar mi rol como desarrollador y pasarme al mundo de la gestión.  
 Os quiero explicar mi experiencia personal.  
@@ -24,11 +24,11 @@ A lo mejor es necesario vivirlas y aprender por el camino para llegar a donde es
 
 ## 1. Los primeros días no vas a saber donde estas
 A mi me grabaron en mis primeros dias como manager y lo publicaron en Twitter. :scream:
-<a href="https://twitter.com/darylginn/status/1181217370389524481" target="_blank">https://twitter.com/darylginn/status/1181217370389524481</a>  
-[https://twitter.com/darylginn/status/1181217370389524481](https://twitter.com/darylginn/status/1181217370389524481)  
-[https://twitter.com/BrianPBosche/status/1275946311167049729](https://twitter.com/BrianPBosche/status/1275946311167049729)  
 
-Yo tengo la sensación que estuve haciendo eso los primeros días como manager.  
+<a href="https://twitter.com/darylginn/status/1181217370389524481" target="_blank">https://twitter.com/darylginn/status/1181217370389524481</a>  
+<a href="https://twitter.com/BrianPBosche/status/1275946311167049729" target="_blank">https://twitter.com/BrianPBosche/status/1275946311167049729</a>  
+
+Yo tengo la sensación de que estuve haciendo eso mis primeros días como manager.  
 Poco a poco irás encontrando tu sitio en los equipos y dónde puedes aportar más.  
 
 ## 2. Hacer el cambio por las razones correctas
