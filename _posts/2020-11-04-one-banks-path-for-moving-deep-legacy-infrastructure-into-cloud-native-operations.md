@@ -11,7 +11,9 @@ tags:
 
 Another podcast in my end user series featuring MUFG!
 
-In this podcast I talk with Michael Lierberman from MUFG (Mitsubishi UFJ Financial Group) who also co-chairs the CNCF Financial Services User Group. We're joined by Alex Williams and Dave Zolotusky, the newest End User Representative on the CNCF Technical Oversight Committee. [Listen the podcast on The New Stack](https://thenewstack.io/one-banks-path-for-moving-deep-legacy-infrastructure-into-cloud-native-operations/):
+In this podcast I talk with Michael Lierberman from MUFG (Mitsubishi UFJ Financial Group) who also co-chairs the CNCF Financial Services User Group. We're joined by Alex Williams and Dave Zolotusky, the newest End User Representative on the CNCF Technical Oversight Committee.
+
+[Listen the podcast on The New Stack](https://thenewstack.io/one-banks-path-for-moving-deep-legacy-infrastructure-into-cloud-native-operations/):
 
 
 > Some legacy infrastructures are certainly more difficult than others to shift into cloud native operations. Financial services, for instance, have many regulatory, compliance and data-management challenges, which are further amplified if the company has an especially large international presence.
