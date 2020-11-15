@@ -15,9 +15,13 @@ title: Posts by category
     <h3 class="category-head">{{ category_name | capitalize }}</h3>
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
+    <ul class="categories">
+    <li>
     <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
     </article>
+    </li>
+    </ul>
     {% endfor %}
   </div>
 {% endfor %}
