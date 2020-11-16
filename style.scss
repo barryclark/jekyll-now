@@ -20,6 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helveticaNeue;
+  font-weight: 300;
   color: $gray;
 }
 
@@ -212,6 +213,7 @@ img {
   color: $gray;
   text-align: right;
   font-family: $helvetica;
+  font-weight: 300;
   font-size: 18px;
 
   @include mobile {
