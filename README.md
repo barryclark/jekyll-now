@@ -1,4 +1,4 @@
-# Breva Solutions blog
+# Personal blog
 
 Built using the [Mediumish theme](https://github.com/wowthemesnet/mediumish-theme-jekyll). 
 
