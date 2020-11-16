@@ -7,7 +7,7 @@ title: The Illustrated Transformer
 <a href="https://news.ycombinator.com/item?id=18351674" class="hn-link">Hacker News (65 points, 4 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/8uh2yz/p_the_illustrated_transformer_a_visual_look_at/" class="">Reddit r/MachineLearning (29 points, 3 comments)</a>
 </span>
 <br />
-<span class="discussion">Translations: <a href="https://blog.csdn.net/yujianmin1990/article/details/85221271">Chinese (Simplified)</a>, <a href="https://tips-memo.com/translation-jayalmmar-transformer">Japanese</a>, <a href="https://nlpinkorean.github.io/illustrated-transformer/">Korean</a>, <a href="https://habr.com/ru/post/486358/">Russian</a>, <a href="https://hackernoon.com/el-transformador-ilustrado-una-traduccion-al-espanol-0y73wwp">Spanish</a></span>
+<span class="discussion">Translations: <a href="https://blog.csdn.net/yujianmin1990/article/details/85221271">Chinese (Simplified)</a>, <a href="https://a-coles.github.io/post/transformer-illustre/">French</a>, <a href="https://tips-memo.com/translation-jayalmmar-transformer">Japanese</a>, <a href="https://nlpinkorean.github.io/illustrated-transformer/">Korean</a>, <a href="https://habr.com/ru/post/486358/">Russian</a>, <a href="https://hackernoon.com/el-transformador-ilustrado-una-traduccion-al-espanol-0y73wwp">Spanish</a></span>
 <br />
 <span class="discussion">Watch: MIT's <a href="https://youtu.be/53YvP6gdD7U?t=432">Deep Learning State of the Art</a> lecture referencing this post</span>
 
