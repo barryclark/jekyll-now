@@ -3,6 +3,8 @@ layout: default
 title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι Bitcoin στην Ελλάδα
 ---
 
+![](/images/Bitcoin_4_year_cycle.png)
+
 Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/), στη Θεσσαλονίκη [#1](https://www.meetup.com/BlockchainGreece-1/) [#2](https://www.meetup.com/Greek-Cryptocurrency-community/), στη [Λευκωσία και τη Λεμεσό](https://www.meetup.com/Decentralized-Cyprus-Meetups/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
 
 - [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
@@ -93,6 +95,8 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 
 ### <a name="compare"></a>Σε τι διαφέρει το Bitcoin από μετρητά, από καταθέσεις στην τράπεζα, από το χρυσό και τις πιστωτικές κάρτες;
 
+![](/images/Bitcoin_emission.jpeg)
+
 - Μπορείτε να στείλετε Bitcoin σε κάποιον μέσω του Internet.
 - Δεν μπορεί να σας εμποδίσει κάποιος να στείλετε Bitcoin οπουδήποτε στον κόσμο.
 - Μπορείτε να στείλετε υποδιαίρεση του Bitcoin.
@@ -108,6 +112,8 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Το Bitcoin, όπως τα μετρητά και ο χρυσός, και σε αντίθεση με τις τραπεζικές καταθέσεις, δεν έχει counterparty (αντισυμβαλλόμενο) από τον οποίο εξαρτώμαστε. Το Bitcoin θεωρείται [base money](https://cryptovoices.com/basemoney).
 
 ### <a name="valuation"></a>Ποια είναι κάποια μοντέλα αποτίμησης του Bitcoin;
+
+![](/images/Bitcoin_Stock-To-Flow_S2F_model.png)
 
 - Το [μοντέλο αποτίμησης του Bitcoin Stock-to-Flow](https://100trillionusd.github.io/#one), διαθέσιμο και στα Ελληνικά.
 - Οι [εκθέσεις αποτίμησης του Bitcoin των Greyscale, Paul Tudor Jones, MicroStrategy, Fidelity και VanEck](https://github.com/100trillionUSD/bitcoin).
@@ -237,7 +243,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2020-10-28
+Τελευταία ενημέρωση: 2020-11-16
 
 <!-- <div class="posts">
   {% for post in site.posts %}
