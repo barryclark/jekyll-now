@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helveticaNeue;
+  font: 18px/1.4 $helvetica;
   font-weight: 300;
   color: $gray;
 }
@@ -33,6 +33,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helvetica;
+  font-weight: 300;
   color: $darkerGray;
 
   line-height: 1.5;
