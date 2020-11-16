@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Angel Investing: Getting PAID - Part 1"
+title: "Angel Investing: Getting PAID - Part 3"
 author: stelios
 tags: [investing, general knowledge]
 categories: [General Knowledge, Investing]
@@ -16,7 +16,7 @@ I cover the rest of my personal framework
  
 # Letter I
 
-![Letter I](../assets/images/angel-part2/thea-m-y3ZcWAgVphU-unsplash.jpg)
+![Letter I](../assets/images/angel-part3/thea-m-y3ZcWAgVphU-unsplash.jpg)
 > Photo by Thea M. on Unsplash
 
 Qualifies the What
@@ -28,7 +28,7 @@ Defensible moat
 
 # Letter D
 
-![Letter D](../assets/images/angel-part2/arthur-mazi-6148mnVnY-s-unsplash.jpg)
+![Letter D](../assets/images/angel-part3/arthur-mazi-6148mnVnY-s-unsplash.jpg)
 > Photo by Arthur Mazi on Unsplash
 
 2 aspects here, completely orthogonal
@@ -45,7 +45,7 @@ This is the Why not
 
 # Bonus - Letter T 
 
-![Letter T](../assets/images/angel-part2/jonathan-farber-QgeIMfZJgFs-unsplash.jpg)
+![Letter T](../assets/images/angel-part3/jonathan-farber-QgeIMfZJgFs-unsplash.jpg)
 > Photo by Jonathan Farber on Unsplash
 
 2 different aspects again 
@@ -71,7 +71,7 @@ Pedigree e.g. Cazoo
 
 # In the next episode
 
-![Coming soon](../assets/images/angel-part2/)
+![Coming soon](../assets/images/angel-part3/)
 > Photo by Mollie Sivaram on Unsplash
 
 Talk about 
