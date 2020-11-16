@@ -41,9 +41,8 @@ objects and as ephemeral—and often fragile—sources in their own right.
 allow them to communicate their own historical research to a broader public in 
 digital format.
 
-Click [here](https://docs.google.com/document/d/e/2PACX-1vRPvBDiCU6VjQxC-F1qKW_SY0HiT_WL08xS7Bpwx9WU_e2LLnCA1_uMjWnd3lPEw4nVjp6vrCIJW1ue/pub) to view the complete syllabus.
-
 
 ### Questions about the course?
 
-Contact me at [melissa.reynolds@princeton.edu](mailto:melissa.reynolds@princeton.edu)
+Click [here](https://docs.google.com/document/d/e/2PACX-1vRPvBDiCU6VjQxC-F1qKW_SY0HiT_WL08xS7Bpwx9WU_e2LLnCA1_uMjWnd3lPEw4nVjp6vrCIJW1ue/pub) 
+to view the complete syllabus. Or you can email me at [melissa.reynolds@princeton.edu](mailto:melissa.reynolds@princeton.edu).
