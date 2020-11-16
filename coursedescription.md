@@ -4,17 +4,6 @@ title: Course Description
 permalink: /coursedescription/
 ---
 
-<style type="text/css">
-    .image-right {
-      display: block;
-      width: 275px;
-      height: 275px;
-      margin-left: 10px;
-      margin-right: auto;
-      float: right;
-    }
-    </style>
-     
 How do the methods, materials, and technologies of human communication shape 
 religion, politics, popular culture, and the circulation of knowledge? Can we 
 tie the invention of writing to the origins of cities? Would the ‘religions of the book’ 
@@ -26,7 +15,7 @@ from its origins in the ancient Near East to its diffusion over the World Wide W
 Weekly units will focus on ‘revolutions’ within the history of communication to highlight 
 how ‘new’ technologies of communication often spur broader cultural and societal change.
 
-![Cuneiform tablet](https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/Clay%20tablet%20with%20pre-cuneiform%20writing.jpg?raw=true){: .image-right }
+![Cuneiform tablet](https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/Clay%20tablet%20with%20pre-cuneiform%20writing.jpg?raw=true#right){: width="300px" }
 In addition to weekly thematic lectures and readings on the history of communication, 
 the course will also introduce students to new digital methods of historical research a
 nd archival preservation. Our latest revolution in communication—the emergence of digital 
