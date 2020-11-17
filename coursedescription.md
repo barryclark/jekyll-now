@@ -15,7 +15,7 @@ from its origins in the ancient Near East to its diffusion over the World Wide W
 Weekly units will focus on ‘revolutions’ within the history of communication to highlight 
 how ‘new’ technologies of communication often spur broader cultural and societal change.
 
-![Cuneiform tablet](https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/Clay%20tablet%20with%20pre-cuneiform%20writing.jpg?raw=true#right){: width="300px" }
+![Cuneiform tablet](https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/Clay%20tablet%20with%20pre-cuneiform%20writing.jpg?raw=true#right){: width="175px" }
 In addition to weekly thematic lectures and readings on the history of communication, 
 the course will also introduce students to new digital methods of historical research a
 nd archival preservation. Our latest revolution in communication—the emergence of digital 
