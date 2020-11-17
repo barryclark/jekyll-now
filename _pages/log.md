@@ -34,11 +34,8 @@ images:
     gauge: 4000 ypp
   	image_path: ../images/spun_yarn_yellow-blue-purple.jpeg
     
-    
-    
-    
 ---
-
+<p>This table shows a log of my yarn production.</p>
 
 <table class="sortable">
 	<thead>
