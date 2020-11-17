@@ -185,14 +185,11 @@ img[src*='#center'] {
 }
 
 .site-banner {
-  width: 400px;
-  height: 80px;
   margin-right: 0px;
 
   @include mobile {
     float: none;
     display: block;
-    width: 350px;
   }
   
   img {
@@ -207,7 +204,6 @@ img[src*='#center'] {
     float: none;
     margin-top: 150px;
     display: block;
-    margin: 0 auto;
   }
 }
 
