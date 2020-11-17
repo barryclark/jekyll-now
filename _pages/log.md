@@ -5,9 +5,6 @@ permalink: /log/
     
 images:
   - title: Blue-faced Leicester/Cormo cross
-	weight: 100g
-    yards: 1000 yards
-    gauge: 4000 ypp
   	image_path: ../images/spun_fiber_blue.jpeg
 
 ---
