@@ -4,12 +4,20 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Love programming, Tinkering, breaking and building things from scratch.
+- Love working with embedded microcontrollers ( Arudino and Raspi)
+- Script kiddy with advance electrical knowlege 
+- Able to reverse engineer small electical equipment 
+- Build own IOT devices with ESP32 and ESP8266 dev boards
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Background in Industrial Programming and equipment.
+Fav robot ( Denso )
+Fav OS - Any but prefer linux
+Fav lang - python
+Fav hobby - build equipment to test network and increase wireless security.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[harsimransidhuit@gmmail.com](mailto:harsimransidhuit@gmail.com)
