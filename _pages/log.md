@@ -4,8 +4,8 @@ title: log
 permalink: /log/
     
 images:
-  - title: Blue-faced Leicester/Cormo cross
-  	image_path: ../images/spun_fiber_blue.jpeg
+  - image_path: ../images/dyed_fiber_blue-yellow.jpeg
+    title: Dyed fiber (Merino and/or Columbia, hand-dyed)
 
 ---
 <p>This table shows a log of my yarn production.</p>
