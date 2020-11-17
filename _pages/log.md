@@ -6,6 +6,7 @@ permalink: /log/
 images:
   - image_path: ../images/dyed_fiber_blue-yellow.jpeg
     title: Dyed fiber (Merino and/or Columbia, hand-dyed)
+    weight: 100g
 
 ---
 <p>This table shows a log of my yarn production.</p>
