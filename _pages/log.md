@@ -54,7 +54,7 @@ images:
     <td>{{ image.weight}}</td>
     <td>{{ image.yards}}</td>
     <td>{{ image.gauge}}</td>
-    <td><img src="{{ image.image_path }}" alt="{{ image.title}}" title="{{ image.title}}"/></td>
+    <td><img src="{{ image.image_path }}" height="50px" alt="{{ image.title}}" title="{{ image.title}}"/></td>
     </tr>
   {% endfor %}
   
