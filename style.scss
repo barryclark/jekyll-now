@@ -257,6 +257,11 @@ table {
 	border: 1px solid $lightGray;
 }
 
+thead > tr {
+	font-weight: bold;
+	color: $grayBlue;
+}
+
 tr.log > td {
 	text-align: left;
 	vertical-align: top;
