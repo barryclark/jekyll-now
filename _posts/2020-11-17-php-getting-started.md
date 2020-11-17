@@ -58,6 +58,8 @@ Once we have PHP/MySQL installed and running:
 
 ## 3. Template Partials with `include()` and `require()`
 
+**Activity**: [Brochureware website partials](https://github.com/sait-wbdv/php-sample-code/tree/main/examples/brochureware)
+
 ---
 
 ## Clean-up Time!
