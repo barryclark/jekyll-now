@@ -18,7 +18,7 @@ Owen Yang, who was one of the founders of ZotBins graduated from UCI and now wit
 ## ZBCE Team
 This ZBCE project was initiated by [Owen Yang](https://okyang.github.io). Right now it's just him...🙃.
 
-## Ecosystem
+## ZBCE 4-layer IoT Architecture
 ![](https://github.com/zotbins/zbceblog/blob/master/images/ZBCE%204-layer%20IoT%20Architecture.png)
 
 ## Values
