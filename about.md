@@ -8,7 +8,7 @@ permalink: /about/
 To better inform all actors in the [Municipal Solid Waste](https://en.wikipedia.org/wiki/Municipal_solid_waste) Stream system to help close the [loop](https://en.wikipedia.org/wiki/Circular_economy) for a sustainable society.
 
 ## About ZotBins
-ZotBins is system of Smart Waste Bins with a suite of web-based applications to collect and analyze real-time waste data. Through IoT, ZotBins is able to use waste data to encourage zero waste practices from a behavioral approach while also demonstrating use of quantifiable data to improve waste systems holistically. This system has been able to help find useful waste related insights at the University of California, Irvine. To learn more visit https://zotbins.github.io or view our video: [The ZotBins Solution To Waste Management Using Internet Of Things](https://drive.google.com/file/d/17qivpLKUAzRKFz9qOGgAjZ7EFtGo4lE2/view?usp=sharing)
+ZotBins is system of Smart Waste Bins with a suite of web-based applications to collect and analyze real-time waste data. Through IoT, ZotBins is able to use waste data to encourage zero waste practices from a behavioral approach while also demonstrating use of quantifiable data to improve waste systems holistically. This system has been able to help find useful waste related insights at the University of California, Irvine. To learn more visit https://zotbins.github.io or view our video: [The ZotBins Solution To Waste Management Using Internet Of Things](https://drive.google.com/file/d/17qivpLKUAzRKFz9qOGgAjZ7EFtGo4lE2/view?usp=sharing).
 
 ## How it Started
 In 2017, a team of undergraduate students at the University of California, joined a Hackathon hosted by [UCI TIPPERS](http://tippers.ics.uci.edu/) and created ZotBins to help make waste management more efficient while also encouraging more zero waste practices. With the guidance of professors and graduate students from the TIPPERS research group, the team was able to grow from 4 to over 15 individuals all working on the ZotBins project. Together they have been able to build and deploy a network of 9 smart bins on campus that are currently making a positive impact for UCI.
@@ -16,7 +16,7 @@ In 2017, a team of undergraduate students at the University of California, joine
 Owen Yang, who was one of the founders of ZotBins graduated from UCI and now with ZotBins Community Edition (ZBCE), he intends to further work with the new [ZotBins](https://zotbins.github.io) team to help further expand the concept of ZotBins where any city, business, university, classroom, or home could implement a smart waste system.
 
 ## ZBCE Team
-This ZBCE project was initiated by [Owen Yang](https://okyang.github.io). Right now it's just him...🙃. He's looking for a buddy who would want to help work on this project.
+This ZBCE project was initiated by [Owen Yang](https://okyang.github.io). Right now it's just him...🙃.
 
 ## Ecosystem
 ![](https://github.com/zotbins/zbceblog/blob/master/images/ZBCE%204-layer%20IoT%20Architecture.png)
