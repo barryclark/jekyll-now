@@ -214,8 +214,13 @@ img[src*='#center'] {
   cursor: pointer;
   font-family: $helvetica;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 0px;
+  
+   @include mobile {
+    text-align: center;
+    margin: 0px 0;
+    }
 }
 
 .site-description {
@@ -227,6 +232,7 @@ img[src*='#center'] {
   font-size: 18px;
 
   @include mobile {
+    text-align: center;
     margin: 0px 0;
   }
 }
