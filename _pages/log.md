@@ -2,37 +2,6 @@
 layout: default
 title: log
 permalink: /log/
-images:
-  - title: Blue-faced Leicester/Cormo cross, hand-dyed
-	weight: 100g
-    yards: 1000 yards
-    gauge: 4000 ypp
-  	image_path: ../images/spun_fiber_blue.jpeg
-  - title: Merino and/or Columbia, hand-dyed
-	weight: 200g
-    yards: 2000 yards
-    gauge: 4000 ypp
-	image_path: ../images/spun_yarn_blue-green.jpeg
-  - title: Merino and/or Columbia, hand-dyed
-	weight: 150g
-    yards: 1000 yards
-    gauge: 3000 ypp
-  	image_path: ../images/spun_yarn_greens.jpeg
-  - title: Merino and/or Columbia, hand-dyed
-	weight: 200g
-    yards: 100 yards
-    gauge: 40 ypp
-  	image_path: ../images/spun_yarn_pastels.jpeg
-  - title: Merino and/or Columbia, hand-dyed
-	weight: 100g
-    yards: 1000 yards
-    gauge: 4000 ypp
-  	image_path: ../images/spun_yarn_pastels2.jpeg
-  - title: Merino and/or Columbia, hand-dyed
-	weight: 100g
-    yards: 1000 yards
-    gauge: 4000 ypp
-  	image_path: ../images/spun_yarn_yellow-blue-purple.jpeg
     
 ---
 <p>This table shows a log of my yarn production.</p>
@@ -60,4 +29,3 @@ images:
   
   	</tbody>
 </table>
-
