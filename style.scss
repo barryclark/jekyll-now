@@ -253,6 +253,10 @@ nav {
 // .main
 //
 
+table {
+	border: 1px solid $lightGray;
+}
+
 tr.log > td {
 	text-align: center;
 	vertical-align: top;
