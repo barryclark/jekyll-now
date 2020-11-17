@@ -258,9 +258,10 @@ table {
 }
 
 tr.log > td {
-	text-align: center;
+	text-align: left;
 	vertical-align: top;
 	padding: 1ex 1ex 1ex 1ex;
+	border: 1px solid $lightGray;	
 
 }
 

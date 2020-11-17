@@ -4,12 +4,35 @@ title: log
 permalink: /log/
     
 images:
-  - image_path: ../images/dyed_fiber_blue-yellow.jpeg
-    title: Dyed fiber (Merino and/or Columbia, hand-dyed)
+  - image_path: ../images/spun_fiber_blue.jpeg
+    title: Blue-faced Leicester/Cormo cross
     weight: 100g
     gauge: 4000 ypp
     yards: 1000 yards
 
+  - image_path: ../images/spun_yarn_blue-green.jpeg
+    title: Merino and/or Columbia
+    weight: 100g
+    gauge: 4000 ypp
+    yards: 1000 yards
+
+  - image_path: ../images/spun_yarn_greens.jpeg
+    title: Merino and/or Columbia
+    weight: 100g
+    gauge: 4000 ypp
+    yards: 1000 yards
+
+  - image_path: ../images/spun_yarn_pastels.jpeg
+    title: Merino and/or Columbia
+    weight: 100g
+    gauge: 4000 ypp
+    yards: 1000 yards
+
+  - image_path: ../images/spun_yarn_pastels2.jpeg
+    title: Merino and/or Columbia
+    weight: 100g
+    gauge: 4000 ypp
+    yards: 1000 yards
 
 ---
 <p>This table shows a log of my yarn production.</p>
