@@ -11,6 +11,13 @@ categories: cpnt200
     - Watch: [PHP Tutorial #26 - Getting Data From a Database](https://youtu.be/WGuyxGJW9hs)
     - Watch: [PHP Tutorial #27 - Rendering Data to the Browser](https://youtu.be/3T8bp9DlypU)
     - Watch: [#31 - Getting a Single Record](https://youtu.be/G8OYy-y3C9A)
+    - Reference:
+        - [mysqli_query](https://www.php.net/manual/en/mysqli.query.php)
+        - [mysqli](https://www.php.net/manual/en/class.mysqli.php)
+3. PHP Loops
+    - Reference: 
+        - [foreach()](https://www.php.net/manual/en/control-structures.foreach.php)
+        - [while()](https://www.php.net/manual/en/control-structures.while.php)
 
 ---
 
