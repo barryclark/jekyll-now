@@ -5,34 +5,29 @@ permalink: /log/
     
 images:
   - image_path: ../images/spun_fiber_blue.jpeg
-    title: Blue-faced Leicester/Cormo cross
+    title: Foster Blues (Blue-faced Leicester/Cormo)
     weight: 100g
     gauge: 4000 ypp
     yards: 1000 yards
 
   - image_path: ../images/spun_yarn_blue-green.jpeg
-    title: Merino and/or Columbia
-    weight: 100g
-    gauge: 4000 ypp
-    yards: 1000 yards
+    title: Deep Water (Merino and/or Columbia)
+    weight: 143g
+    gauge: 1628 ypp
+    yards: 514 yards
 
   - image_path: ../images/spun_yarn_greens.jpeg
-    title: Merino and/or Columbia
-    weight: 100g
-    gauge: 4000 ypp
-    yards: 1000 yards
+    title: Fog Forest (Merino and/or Columbia)
+    weight: 190g
+    gauge: 1020 ypp
+    yards: 428 yards
 
   - image_path: ../images/spun_yarn_pastels.jpeg
-    title: Merino and/or Columbia
-    weight: 100g
-    gauge: 4000 ypp
-    yards: 1000 yards
+    title: Soft Rainbow (Merino and/or Columbia)
+    weight: 191 g
+    gauge: 877 ypp
+    yards: 370 yards
 
-  - image_path: ../images/spun_yarn_pastels2.jpeg
-    title: Merino and/or Columbia
-    weight: 100g
-    gauge: 4000 ypp
-    yards: 1000 yards
 
 ---
 <p>This table shows a log of my yarn production.</p>
@@ -54,7 +49,7 @@ images:
     <td>{{ image.weight}}</td>
     <td>{{ image.yards}}</td>
     <td>{{ image.gauge}}</td>
-    <td><img src="{{ image.image_path }}" height="50px" alt="{{ image.title}}" title="{{ image.title}}"/></td>
+    <td><img src="{{ image.image_path }}" height="200px" alt="{{ image.title}}" title="{{ image.title}}"/></td>
     </tr>
   {% endfor %}
   
