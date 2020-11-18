@@ -6,39 +6,57 @@ permalink: /log/
 images:
   - image_path: ../images/spun_fiber_blue.jpeg
     title: Foster Blues (Blue-faced Leicester/Cormo)
-    weight: 1000g
+    weight: 1000
     gauge: 4000
     yards: 1000 
 
   - image_path: ../images/spun_yarn_blue-green.jpeg
     title: Deep Water (Merino and/or Columbia)
-    weight: 143g
+    weight: 143
     gauge: 1628
     yards: 514
 
   - image_path: ../images/spun_yarn_greens.jpeg
     title: Fog Forest (Merino and/or Columbia)
-    weight: 190g
+    weight: 190
     gauge: 1020
     yards: 428
 
   - image_path: ../images/spun_yarn_pastels.jpeg
     title: Soft Rainbow (Merino and/or Columbia)
-    weight: 191g
+    weight: 191
     gauge: 877
     yards: 370
 
+  - image_path: ../images/grey_unknown.jpeg
+    title: Grey and Fuzzy (unknown breed)
+    weight: ?
+    gauge: ?
+    yards: ?
+
+  - image_path: ../images/gotland.jpeg
+    title: Elvish (Gotland)
+    weight: ?
+    gauge: ?
+    yards: ?
+
+  - image_path: ../images/romney_alpaca.jpeg
+    title: Gentle (Romney and alpaca blend)
+    weight: ?
+    gauge: ?
+    yards: ?
+
 
 ---
-<p>This table shows a log of my yarn production.</p>
+<p>This table shows a log of my yarn production. The columns are sortable (just click on the heading and then on the little sort triangle).</p>
 
 <table class="sortable">
 	<thead>
 		<tr class="log">
-			<td>Name</td>
-			<td>Weight</td>
+			<td>Name and breed</td>
+			<td>Weight (g)</td>
 			<td>Yards</td>
-			<td>Gauge</td>
+			<td>Gauge (ypp)</td>
 			<td>Image</td>
 		</tr>
 	</thead>
