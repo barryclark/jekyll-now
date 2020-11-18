@@ -30,21 +30,21 @@ images:
 
   - image_path: ../images/grey_unknown.jpeg
     title: Grey and Fuzzy (unknown breed)
-    weight: ?
-    gauge: ?
-    yards: ?
+    weight: 10
+    gauge: 10
+    yards: 10
 
   - image_path: ../images/gotland.jpeg
     title: Elvish (Gotland)
-    weight: ?
-    gauge: ?
-    yards: ?
+    weight: 10
+    gauge: 10
+    yards: 10
 
   - image_path: ../images/romney_alpaca.jpeg
     title: Gentle (Romney and alpaca blend)
-    weight: ?
-    gauge: ?
-    yards: ?
+    weight: 10
+    gauge: 10
+    yards: 10
 
 
 ---
