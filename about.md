@@ -16,7 +16,7 @@ In 2017, a team of undergraduate students at the University of California, joine
 Owen Yang, who was one of the founders of ZotBins graduated from UCI and now with ZotBins Community Edition (ZBCE), he intends to further work with the new [ZotBins](https://zotbins.github.io) team to help further expand the concept of ZotBins where any city, business, university, classroom, or home could implement a smart waste system.
 
 ## ZBCE Team
-This ZBCE project was initiated by [Owen Yang](https://okyang.github.io). Right now it's just him...🙃.
+This ZBCE project was initiated by [Owen Yang](https://okyang.github.io). It currently has a few people in the community and has a strong connection with the ZotBins team at UCI. 
 
 ## ZBCE 4-layer IoT Architecture
 
@@ -44,16 +44,16 @@ ZBCE is just getting started and there's a long way to go. Here is our [Road Map
 
 ## Contributing
 Here are some following ways you can contribute:
-- Join our [Discord](https://discord.gg/mGKVVpxTPr) server and contribute to our growing community
+- Join the [Discord](https://discord.gg/mGKVVpxTPr) server and contribute to our growing community
 - Submit bugs by opening an issue on our [Github](https://github.com/zotbins). Please make sure that bugs are reported in detail and is reproducible.
 - Write some documentation for a [ZBCE repository](https://github.com/orgs/zotbins/teams/community-edition/repositories) and we can add it to our GitHub Wiki Page
 - Look for open issues on our [ZBCE repositories](https://github.com/orgs/zotbins/teams/community-edition/repositories)
 - Suggest new features in our Discord Server
-- Contribute to our crowd-sourcing projects. Occasionally, we will have certain projects that require crowd-sourced data, and would love people to help.
+- Contribute to crowd-sourcing projects. Occasionally, there will be certain projects that require crowd-sourced data.
 - Submit user feedback through feedback forms or polls in our Discord community
 - Lookout for more requests for help on our Discord server
 
-Overall, if you contribute to our project, we will feature your username on respective GitHub repositories. We really appreciate the help. For more ideas about how you can contribute to open source projects in general, feel free to take a look GitHub's [Open Source Guides](https://opensource.guide/how-to-contribute/).
+Any help is really appreciated. For more ideas about how you can contribute to open source projects in general, feel free to take a look GitHub's [Open Source Guides](https://opensource.guide/how-to-contribute/).
 
 
 ## Contact
