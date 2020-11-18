@@ -40,6 +40,8 @@ I was experimenting with creating a new SQL database for ZBCE datalogging. I've 
 ### Learning About More Sustainability Resources 🌱
 I stumbled upon this comprehensive resource for all sorts of sustainability technologies and topics: [Awesome Sustainable Technology](https://github.com/protontypes/awesome-sustainable-technology).
 
+---
+
 Okay, thanks for reading this first monthly update. I know this might have been a lot. Please let me know if you have any thoughts about anything on [Discord](https://discord.gg/mGKVVpxTPr). I would love some feedback so I don't feel like I'm just writing to myself. Have a great day!
 
 -- Owen
