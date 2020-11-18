@@ -56,6 +56,12 @@ Once we have PHP/MySQL installed and running:
         $ cd ~/.bitnami/stackman/machines/xampp/volumes/root/htdocs
         ```
 
+        If that doesn't work, try this:
+
+        ```shell
+        $ cd /opt/lampp/htdocs
+        ```
+
     - Location on PC
 
         ```shell
@@ -64,7 +70,7 @@ Once we have PHP/MySQL installed and running:
         
 2. Clone the [PHP Sample Code](https://github.com/sait-wbdv/php-sample-code) repository into this directory.
 3. Create your own `in-class` in this directory so you can store your own code.
-3. Browse to the [`localhost:8080`](http://localhost:8080) (or whichever domain your system is configured to use).
+4. Browse to the [`localhost:8080`](http://localhost:8080) (or whichever domain your system is configured to use).
 
 ---
 
