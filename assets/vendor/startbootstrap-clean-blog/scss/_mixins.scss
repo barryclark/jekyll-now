@@ -1,0 +1,68 @@
+// Mixins
+// Bootstrap Button Variant
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  border-color: $border;
+  background-color: $background;
+  &.focus,
+  &:focus {
+    color: $color;
+    border-color: darken($border, 25%);
+    background-color: darken($background, 10%);
+  }
+  &:hover {
+    color: $color;
+    border-color: darken($border, 12%);
+    background-color: darken($background, 10%);
+  }
+  &.active,
+  &:active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    border-color: darken($border, 12%);
+    background-color: darken($background, 10%);
+    &.focus,
+    &:focus,
+    &:hover {
+      color: $color;
+      border-color: darken($border, 25%);
+      background-color: darken($background, 17%);
+    }
+  }
+  &.active,
+  &:active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &.focus,
+    &:focus,
+    &:hover {
+      border-color: $border;
+      background-color: $background;
+    }
+  }
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+@mixin transition-all() {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@mixin serif-font() {
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+@mixin sans-serif-font() {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

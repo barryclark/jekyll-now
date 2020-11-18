@@ -1,0 +1,42 @@
+// Styling for the post page
+.post-preview {
+  > a {
+    color: $gray-900;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+    }
+    > .post-title {
+      font-size: 30px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    > .post-subtitle {
+      font-weight: 300;
+      margin: 0 0 10px;
+    }
+  }
+  > .post-meta {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: $gray-600;
+    > a {
+      text-decoration: none;
+      color: $gray-900;
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    > a {
+      > .post-title {
+        font-size: 36px;
+      }
+    }
+  }
+}
