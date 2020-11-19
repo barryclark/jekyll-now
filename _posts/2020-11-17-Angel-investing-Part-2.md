@@ -5,11 +5,13 @@ author: stelios
 tags: [investing, general knowledge, angel investing]
 categories: [General Knowledge, Investing, Angel Investing]
 featured: true
-description: "."
+description: "The second article in a series on angel investing. In this article, I am discussing the 'How much' of the business"
 image: assets/images/angel-part2/charles-forerunner-3fPXt37X6UQ-unsplash.jpg
 ---
 
 In this second part of the series I will cover some considerations on the financials of a potential investment.  
+
+You can find part 1 [here][46].
 
 # Letter A 
 
@@ -300,10 +302,9 @@ milestones and future dates when it would go out for the next one.
 ![Stay tuned](../assets/images/angel-part2/pexels-anthony-157557.jpg)
 > Photo by Anthony from Pexels
 
-In the next article of this series, we will discuss letters I (Innovation, the "What is New" of the business) and D 
+In the [next article][47] of this series, we will discuss letters I (Innovation, the "What is New" of the business) and D 
 (Distribution / Delivery, the "How" of the business).  
 Keep safe!
-
 
 ## Footnotes
 
@@ -369,3 +370,5 @@ type of exposure would an annual budget of £1000 get it?
   [43]: https://www.theeword.co.uk/blog/what-is-influencer-marketing-and-how-does-it-work
   [44]: https://www.nih.gov/news-events/nih-research-matters/how-drug-marketing-may-influence-prescriptions
   [45]: https://www.forentrepreneurs.com/startup-killer/
+  [46]: https://sgerogia.github.io/Angel-investing-Part-1/
+  [47]: https://sgerogia.github.io/Angel-investing-Part-3/

@@ -4,7 +4,7 @@ title: "How things change: Altering the behavior of others"
 author: stelios
 tags: [personal development, general knowledge, leadership]
 categories: [General Knowledge, Leadership]
-featured: true
+featured: false
 description: "Things do not just happen. Change of behaviors takes a certain sequence of events. This blog post presents 2 alternative frameworks to influence and change the behavior of others."
 image: assets/images/how-things-change/linus-nylund-Q5QspluNZmM-unsplash.jpg
 ---

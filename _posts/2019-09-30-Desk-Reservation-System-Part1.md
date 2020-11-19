@@ -5,7 +5,7 @@ author: stelios
 tags: [software, opencv, spring, kotlin, hackathon, hands-on]
 categories: [Software Development]
 featured: 
-description: "A utility script on how to mine Slack for important ChatOps messages."
+description: "A post on a using OpenCV to create a desk reservation system."
 image: assets/images/desk-reservation-1/hackathon.jpeg
 ---
 

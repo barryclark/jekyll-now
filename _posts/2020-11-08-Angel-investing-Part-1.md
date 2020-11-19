@@ -5,7 +5,7 @@ author: stelios
 tags: [investing, general knowledge, angel investing]
 categories: [General Knowledge, Investing, Angel Investing]
 featured: true
-description: "These articles are an introduction to angel investing from an outsider's point-of-view."
+description: "An introduction to angel investing from an outsider's point-of-view. In this article I am discussing the 'What' of the business"
 image: assets/images/angel-part1/markus-spiske-vrbZVyX2k4I-unsplash.jpg
 ---
 
@@ -403,6 +403,9 @@ In the not-so-often case they get it right, their extremely low operational over
 In the next part of this series, I will cover numbers and projections, a.k.a. letter A.  
 Stay tuned!
 
+Part2 is [here][67].
+Part3 is [here][68].
+
 ## Footnotes
 
 1. <a name="footnote_1"></a>Otherwise all software developers would be successful business people.
@@ -505,4 +508,6 @@ only [29 employees][64] (as of Nov 2020).
   [64]: https://www.owler.com/company/franco-nevada
   [65]: https://www.investopedia.com/terms/m/marketcapitalization.asp
   [66]: https://www.sitepoint.com/if-youre-considering-startup-accelerators-read-this/
+  [67]: https://sgerogia.github.io/Angel-investing-Part-2/
+  [68]: https://sgerogia.github.io/Angel-investing-Part-3/
   
