@@ -49,7 +49,7 @@ I only had about two days til the coach tickets were released and three days aft
 
 ## How could this be improved for next year?
 * The main thing holding the app back from increasing its chances of getting tickets is the limit of 60 requests per minute per IP address. Simply adding another device and IP and you've doubled your chances. So the current lack of scalability is limiting. I won't be scaling this up as I don't think it's very ethical but if I were to do it I would do something like this: 
-dockerize the app and stick it on EC2 instances. Put a good VPN in front of each instance so that requests are not coming from an IP within AWS's IP range. And if you're using VPN's you might as well spread them around the globe so you have more chance of hitting their US/Asia servers (if they exist). 
+dockerize the app and stick it on ECS instances. Put a good VPN in front of each instance so that requests are not coming from an IP within AWS's IP range. And if you're using VPN's you might as well spread them around the globe so you have more chance of hitting their US/Asia servers (if they exist). 
 * Automate entering your registration and card details. I think this is quite a bit more risky, you'd likely be matching with CSS selectors to find the input fields and buttons to click, things such as class names and ID's could easily be different year to year and break this.
 
 
