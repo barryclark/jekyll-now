@@ -32,7 +32,7 @@ categories: cpnt200
 
 ## 2. Connecting to a database with PHP
 
-**Sample Code**: [Brochureware starter](https://github.com/sait-wbdv/php-sample-code/tree/master/php-db/rentals)
+**Sample Code**: [Rentals starter](https://github.com/sait-wbdv/php-sample-code/tree/master/php-db/rentals)
 
 ---
 
