@@ -39,7 +39,7 @@ images:
 
   - image_path: ../images/gotland.jpeg
     title: Elvish (Gotland)
-    desc: This Gotland fiber was exceptionally difficult to spin, being quite coarse and almost entirely lacking in crimp, so that it tended to fly apart.  
+    desc: This Gotland fiber was exceptionally difficult to spin, being quite coarse and almost entirely lacking in crimp, so that it tended to fly apart. Although it needed a fair amount of twist to hold the yarn together, that same twist tended to make a very dense and heavy yarn. I"m not sure I would spin this again, although Gotland has its enthusiasts. A closely related breed of wool was apparently used in the Lord of the Rings movies to make the dark grey cloaks that resemble chain mail, hence the name of this yarn.
     weight: 10
     gauge: 10
     yards: 10
@@ -47,7 +47,7 @@ images:
 
   - image_path: ../images/spun_yarn_greens.jpeg
     title: Fog Forest (Merino and Columbia)
-    desc: This batch of fiber included some Merino and some Columbia roving, which feel somewhat different. I should probably have divided them equally to create a more consistent yarn but instead I allowed them to mix more or less randomly. 
+    desc: This batch of fiber included some Merino and some Columbia roving, which feel somewhat different. I should probably have divided them equally to create a more consistent yarn but instead I allowed them to mix more or less randomly, so the yarn has some softer patches (the Merino) and some that have a little more tooth (the Columbia).
     weight: 190
     gauge: 1020
     yards: 428
