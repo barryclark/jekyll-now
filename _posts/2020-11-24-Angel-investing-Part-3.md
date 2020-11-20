@@ -37,20 +37,38 @@ textbook [definition][3]
 That was a long one!
 
 The key word to note is "Combination" 
-of existing 
+of existing technologies, services and processes
 
-Key questions to ask
+3 key questions to answer
 
 How does it differ from everything else out there?
 eventually brand will be the differentiating factor 
-until brand is built 
+until brand is built
+how is this product/service tangibly different to every other competitor?
+For example the first [app-based banks][4] were truly innovative, 
+with a completely different approach to the formation of the banking relationship, compared to incumbents  
+with the number of neobanks growing, both [personal][5] and [business][6], the "innovation differential" is inevitably 
+becoming smaller     
 
 what is the unique selling point of this innovation
-benefits 
-customer perception and experience
+the innovation might result in cost savings and a [profitable operation][2] for the business itself
+but what are the tangible benefits for the customer?
+Is the customer's life made substantially easier <sup>[1](#footnote_1)</sup> 
+Are the economic benefits and incentives for the customer real ?   
+Are they enough for the customer to adopt the offering (and also abandon the competitors)?  
+Will the customer's perception and experience be superior to other offerings?
+How will that be?
+
+How hard is it to copy?
 
 
 
+You may have noticed that this section is full of questions 
+but little answers 
+this is because there is no prescription for innovation
+Instead it is a slightly nebulous concept, sharing many similarities to the [economic moat][7] of mature companies. 
+Just like with any defense structure, it purely depends on the particular circumstances. 
+you cannot prescribe it in advance, but you know a [good one][8] when you see it.  
 
 ## And a word on invention
 
@@ -88,7 +106,7 @@ that fictitious enterprise would have probably gone bankrupt for lack of tractio
 Fast forward 12 years later 
 because of all the *innovative* products and services built around it (from smart contracts to integration with the main 
 financial plumbing to exchanges to custodial solutions) 
-an ever growing part of the "market" <sup>[1](#footnote_1)</sup> is now embracing it   
+an ever growing part of the "market" <sup>[2](#footnote_2)</sup> is now embracing it   
 
 # Letter D
 
@@ -145,12 +163,17 @@ and some closing thoughts
 
 ## Footnotes
 
-1. <a name="footnote_1"></a>I am using the word market in the widest possible sense: from companies and government 
+1. <a name="footnote_1"></a>This question inevitably takes us back to the identification of a tangible [customer problem][1].
+2. <a name="footnote_2"></a>I am using the word market in the widest possible sense: from companies and government 
 institutions to the general public. 
-
+ 
 
 
   [1]: https://sgerogia.github.io/Angel-investing-Part-1/
   [2]: https://sgerogia.github.io/Angel-investing-Part-2/
   [3]: https://en.wikipedia.org/wiki/Innovation
-  [4]: 
+  [4]: https://en.wikipedia.org/wiki/Neobank
+  [5]: https://moneytothemasses.com/banking/the-best-app-only-bank-in-the-uk
+  [6]: https://www.dumbfunded.co.uk/app-based-business-banking/#Quick-Compare-Business
+  [7]: https://www.investopedia.com/ask/answers/05/economicmoat.asp
+  [8]: https://en.wikipedia.org/wiki/Fortifications_of_Vauban_UNESCO_World_Heritage_Sites
