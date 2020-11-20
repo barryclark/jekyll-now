@@ -23,7 +23,7 @@ images:
 
   - image_path: ../images/spun_fiber_blue.jpeg
     title: Foster Blues (Blue-faced Leicester/Cormo)
-    desc: This fiber comes from a neighbor who is still trying out different sheep shearers; this particular fleece had a lot of second cuts, i.e. short bits of wool resulting from a second pass with the clippers, undesirable in fleece intended for spinning which made for a somewhat lumpy yarn. But apart from that, it's a very appealing fiber: fine and lustrous with a beautiful crimp. 
+    desc: This fiber comes from a neighbor who is still trying out different sheep shearers; this particular fleece had a lot of second cuts, i.e. short bits of wool resulting from a second pass with the clippers, undesirable in fleece intended for spinning which made for a somewhat lumpy yarn. But apart from that, it's a very appealing fiber, fine and lustrous with a beautiful crimp. 
     weight: 1000
     gauge: 4000
     yards: 1000
