@@ -96,7 +96,7 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - F: CPNT 200 Day 4 - [`$_GET` Global Variable]({% link _posts/2020-11-20-get-global-variable.md %})
 
 ## Week 12: Nov 23-27
-- M: CPNT 200 Day 5 - [Installing Wordpress]({% link _posts/2020-11-23-installing-wp.md.md %})
+- M: CPNT 200 Day 5 - [Installing Wordpress]({% link _posts/2020-11-23-installing-wp.md %})
 - T: CPNT 200 - Content Management Systems
 - W: CPNT 200 - Content Management Systems
 - R: DSGN 270 - Social Media Marketing
