@@ -7,7 +7,7 @@ images:
 
   - image_path: ../images/grey_unknown.jpeg
     title: Grey and Fuzzy (unknown breed)
-    desc: This yarn was a delight to spin! 
+    desc: This yarn was a delight to spin! The fiber came from a local wool producer at the RI Fiber Festival and the preparation was light and beautifully clean. 
     weight: 10
     gauge: 10
     yards: 10
@@ -15,7 +15,7 @@ images:
 
   - image_path: ../images/romney_alpaca.jpeg
     title: Gentle (Romney and alpaca blend)
-    desc: This yarn was a delight to spin! 
+    desc: This was another delightful fiber, very light and soft, with enough crimp to hold together well even when spun fine. This was my first experiment in applying my friend Iris's advice to "spin soft, ply hard" to make a lofty yarn, and it was a revelation. 
     weight: 10
     gauge: 10
     yards: 10
