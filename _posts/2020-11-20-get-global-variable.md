@@ -4,6 +4,9 @@ title: Week 11F - Introduction to WordPress
 categories: cpnt200
 ---
 
+## Housekeeping
+- [Assignment 2](https://github.com/sait-wbdv/assessments/tree/master/cpnt200)
+
 ## Homework
 1. Review
     - [SQL examples for beginners: SQL SELECT statement usage](https://www.sqlshack.com/sql-examples-for-beginners-sql-select-statement-usage/)
@@ -28,7 +31,7 @@ categories: cpnt200
 
 See: [How to install WordPress](https://wordpress.org/support/article/how-to-install-wordpress/)
 
-Note: This installation is for reference and playing around. We will not be deploying this instance. 
+Note: This installation is for reference and playing around with the interface. We will not be deploying this instance. 
 
 ---
 
