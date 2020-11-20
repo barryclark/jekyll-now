@@ -66,15 +66,15 @@ images:
 ---
 <p>This table shows a log of my yarn production. The columns are sortable (just click on the heading and then on the little sort triangle).</p>
 
-<table class="sortable">
+<table class="sortable" width="100%">
 	<thead>
 		<tr class="log">
-			<td>Name and breed</td>
-			<td>Weight (g)</td>
-			<td>Yards</td>
-			<td>Gauge (ypp)</td>
-			<td>Image</td>
-			<td>Date completed</td>
+			<td width="30%">Name and breed</td>
+			<td width="10%">Weight (g)</td>
+			<td width="10%">Yards</td>
+			<td width="10%">Gauge (ypp)</td>
+			<td width="30%">Image</td>
+			<td width="10%">Date completed</td>
 		</tr>
 	</thead>
 	<tbody>
