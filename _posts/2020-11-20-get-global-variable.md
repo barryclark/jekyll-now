@@ -41,5 +41,5 @@ Note: This installation is for reference and playing around with the interface. 
 ---
 
 ## Clean-up Time!
-- **Optional client hunt**: Find a pub/restaurant/etc that has a poopy menu when displayed on mobile. Ask the manager (or other decision maker) if you can redesign their site for your group assignment. Example: [Alumni Sandwich Shop](https://alumnisandwiches.com/menu).
+- **Optional client hunt**: Find a pub/restaurant/etc that has a poopy menu when displayed on mobile. Ask the manager (or other decision maker) if you can redesign their site for your group assignment (get it "on record" with an email request). Example: [Alumni Sandwich Shop](https://alumnisandwiches.com/menu).
 - [Tomorrow]({% link _posts/2020-11-23-installing-wp.md %})
