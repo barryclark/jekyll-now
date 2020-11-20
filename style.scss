@@ -255,7 +255,6 @@ nav {
 
 table {
 	border: 1px solid $lightGray;
-	font-size: 80%;
 }
 
 thead > tr {
@@ -266,6 +265,7 @@ thead > tr {
 tr.log > td {
 	text-align: left;
 	vertical-align: top;
+	font-size: 70%;
 	padding: 1ex 1ex 1ex 1ex;
 	border: 1px solid $lightGray;	
 
