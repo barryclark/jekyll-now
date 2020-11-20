@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 11F - Introduction to WordPress
+title: Week 11F - $_GET Global Variable
 categories: cpnt200
 ---
 
