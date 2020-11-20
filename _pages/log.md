@@ -23,7 +23,7 @@ images:
 
   - image_path: ../images/spun_fiber_blue.jpeg
     title: Foster Blues (Blue-faced Leicester/Cormo)
-    desc: This fiber comes from a neighbor who is still trying out different sheep shearers; this particular fleece had a lot of second cuts. 
+    desc: This fiber comes from a neighbor who is still trying out different sheep shearers; this particular fleece had a lot of second cuts, i.e. 
     weight: 1000
     gauge: 4000
     yards: 1000
