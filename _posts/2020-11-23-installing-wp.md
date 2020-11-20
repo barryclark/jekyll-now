@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 11F - Introduction to WordPress
+title: Week 12M - Introduction to WordPress
 categories: cpnt200
 ---
 
