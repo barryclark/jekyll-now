@@ -15,7 +15,7 @@ images:
 
   - image_path: ../images/romney_alpaca.jpeg
     title: Gentle (Romney and alpaca blend)
-    desc: This was another delightful fiber, very light and soft, with enough crimp to hold together well even when spun fine. This was my first experiment in applying my friend Iris's advice to "spin soft, ply hard" to make a lofty yarn, and it was a revelation. 
+    desc: This was another delightful fiber, very light and soft, with enough crimp to hold together well even when spun fine. This was my first experiment in applying my friend Iris's advice to spin soft, ply hard to make a lofty yarn, and it was a revelation. 
     weight: 10
     gauge: 10
     yards: 10
@@ -23,7 +23,7 @@ images:
 
   - image_path: ../images/spun_fiber_blue.jpeg
     title: Foster Blues (Blue-faced Leicester/Cormo)
-    desc: This fiber comes from a neighbor who is still trying out different sheep shearers; this particular fleece had a lot of "second cuts" (i.e. short bits of wool resulting from a second pass with the clippers, undesirable in fleece intended for spinning) which made for a somewhat lumpy yarn. But apart from that, it's a very appealing fiber: fine and lustrous with a beautiful crimp. 
+    desc: This fiber comes from a neighbor who is still trying out different sheep shearers; this particular fleece had a lot of second cuts (i.e. short bits of wool resulting from a second pass with the clippers, undesirable in fleece intended for spinning) which made for a somewhat lumpy yarn. But apart from that, it's a very appealing fiber: fine and lustrous with a beautiful crimp. 
     weight: 1000
     gauge: 4000
     yards: 1000
@@ -39,7 +39,7 @@ images:
 
   - image_path: ../images/gotland.jpeg
     title: Elvish (Gotland)
-    desc: This Gotland fiber was exceptionally difficult to spin, being quite coarse and almost entirely lacking in crimp, so that it tended to fly apart. Although it needed a fair amount of twist to hold the yarn together, that same twist tended to make a very dense and heavy yarn. I"m not sure I would spin this again, although Gotland has its enthusiasts. A closely related breed of wool was apparently used in the Lord of the Rings movies to make the dark grey cloaks that resemble chain mail, hence the name of this yarn. 
+    desc: This Gotland fiber was exceptionally difficult to spin, being quite coarse and almost entirely lacking in crimp, so that it tended to fly apart. Although it needed a fair amount of twist to hold the yarn together, that same twist tended to make a very dense and heavy yarn. I'm not sure I would spin this again, although Gotland has its enthusiasts. A closely related breed of wool was apparently used in the Lord of the Rings movies to make the dark grey cloaks that resemble chain mail, hence the name of this yarn. 
     weight: 10
     gauge: 10
     yards: 10
