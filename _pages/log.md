@@ -47,7 +47,7 @@ images:
 
   - image_path: ../images/spun_yarn_greens.jpeg
     title: Fog Forest (Merino and Columbia)
-    desc: This batch of fiber included some Merino and some Columbia roving, which feel somewhat different. I should probably have divided them equally to create a more consistent yarn but instead I allowed them to mix more or less randomly, so the yarn has some softer patches (the Merino) and some that have a little more tooth (the Columbia). 
+    desc: This batch of fiber included some Merino and some Columbia roving, which feel somewhat different. I should probably have divided them equally to create a more consistent yarn but instead I allowed them to mix more or less randomly. 
     weight: 190
     gauge: 1020
     yards: 428
