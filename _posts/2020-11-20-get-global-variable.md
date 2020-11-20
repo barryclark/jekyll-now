@@ -6,6 +6,7 @@ categories: cpnt200
 
 ## Housekeeping
 - [Assignment 2](https://github.com/sait-wbdv/assessments/tree/master/cpnt200)
+- Industry Guests for Final Presentations?
 
 ## Homework
 1. Review
