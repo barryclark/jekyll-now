@@ -39,7 +39,7 @@ images:
 
   - image_path: ../images/gotland.jpeg
     title: Elvish (Gotland)
-    desc: This Gotland fiber was exceptionally difficult to spin, being quite coarse and almost entirely lacking in crimp, so that it tended to fly apart. Although it needed a fair amount of twist to hold the yarn together, that same twist tended to make a very dense and heavy yarn. I'm not sure I would spin this again, although Gotland has its enthusiasts. A closely related breed of wool was apparently used in the Lord of the Rings movies to make the dark grey cloaks that resemble chain mail, hence the name of this yarn. 
+    desc: This Gotland fiber was exceptionally difficult to spin, being quite coarse and almost entirely lacking in crimp, so that it tended to fly apart.  
     weight: 10
     gauge: 10
     yards: 10
