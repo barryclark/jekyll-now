@@ -15,7 +15,7 @@ categories: cpnt200
     
 ---
 
-## 1. Manual WP installation with XAMPP
+## 1. Group Selection
 
 ---
 

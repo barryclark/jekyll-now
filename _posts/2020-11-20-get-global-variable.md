@@ -20,9 +20,15 @@ categories: cpnt200
 
 ## 1. Passing URL parameters with `$_GET`
 
+**Sample Code**: [Vehicle rentals](https://github.com/sait-wbdv/php-sample-code/tree/master/php-db/rentals)
+
 ---
 
-## 2. WP Admin Tour
+## 2. Installing Wordpress locally
+
+See: [How to install WordPress](https://wordpress.org/support/article/how-to-install-wordpress/)
+
+Note: This installation is for reference and playing around. We will not be deploying this instance. 
 
 ---
 
