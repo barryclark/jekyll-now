@@ -4,6 +4,10 @@ title: Week 11W - Relational Databases and MySQL/MariaDB
 categories: cpnt200
 ---
 
+## Housekeeping
+- [CPNT200 Assignment Breakdown](https://github.com/sait-wbdv/assessments/tree/master/cpnt200)
+- Added to Yesterday: [Example PHP Directory Structure](https://github.com/sait-wbdv/php-sample-code#example-php-directory-structure)
+
 ## Homework
 1. SQL Syntax
     - Read: [SQL Syntax](https://www.w3schools.com/sql/sql_syntax.asp) from w3schools (and the world ends...)
