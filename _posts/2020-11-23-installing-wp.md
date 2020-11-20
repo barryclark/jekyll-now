@@ -12,6 +12,7 @@ categories: cpnt200
     - [The Best Setup for Your Local WordPress Development Environment](https://deliciousbrains.com/wordpress-local-development-environment/) on Delicious Brains
 3. CMS Basics: Posts vs Pages
     - Read: [Post vs. Page](https://wordpress.com/support/post-vs-page/) on Wordpress.com
+    
 ---
 
 ## 1. Manual WP installation with XAMPP

@@ -27,4 +27,4 @@ categories: cpnt200
 ---
 
 ## Clean-up Time!
-- [Tomorrow]({% link _posts/2020-11-20-installing-wp.md %})
+- [Tomorrow]({% link _posts/2020-11-20-get-global-variable.md %})

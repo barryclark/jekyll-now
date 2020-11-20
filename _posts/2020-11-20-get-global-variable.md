@@ -1,0 +1,34 @@
+---
+layout: post
+title: Week 11F - Introduction to WordPress
+categories: cpnt200
+---
+
+## Homework
+1. Review
+    - [SQL examples for beginners: SQL SELECT statement usage](https://www.sqlshack.com/sql-examples-for-beginners-sql-select-statement-usage/)
+    - [PHP Tutorial #26 - Getting Data From a Database](https://youtu.be/WGuyxGJW9hs)
+    - [PHP Tutorial #27 - Rendering Data to the Browser](https://youtu.be/3T8bp9DlypU)
+    - [#31 - Getting a Single Record](https://youtu.be/G8OYy-y3C9A)
+2. Global variables
+    - Reference: 
+        - [$_GET](https://www.php.net/manual/en/reserved.variables.get.php)
+        - [$_POST](https://www.php.net/manual/en/reserved.variables.post.php)
+        - [$_SESSION](https://www.php.net/manual/en/reserved.variables.session.php) 
+
+---
+
+## 1. Passing URL parameters with `$_GET`
+
+---
+
+## 2. WP Admin Tour
+
+---
+
+## 3. Open Lab-time
+
+---
+
+## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-11-23-installing-wp.md.md %})
