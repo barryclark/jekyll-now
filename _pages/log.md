@@ -80,7 +80,7 @@ images:
 	<tbody>
   {% for image in page.images %}
     <tr class="log">
-    <td class="txt">{{ image.title}}<br/>{{ image.desc}}</td>
+    <td class="txt"><strong>{{ image.title}}</strong><br/>{{ image.desc}}</td>
     <td class="num">{{ image.weight}}</td>
     <td class="num">{{ image.yards}}</td>
     <td class="num">{{ image.gauge}}</td>
