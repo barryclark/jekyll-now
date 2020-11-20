@@ -40,4 +40,4 @@ Note: This installation is for reference and playing around with the interface. 
 ---
 
 ## Clean-up Time!
-- [Tomorrow]({% link _posts/2020-11-23-installing-wp.md.md %})
+- [Tomorrow]({% link _posts/2020-11-23-installing-wp.md %})
