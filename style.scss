@@ -81,7 +81,10 @@ a {
 
 ul.photo-gallery {
 	columns: 3;
-	list-style-type: none;}
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	}
 
 ul.categories {
 	list-style-type: none;}
