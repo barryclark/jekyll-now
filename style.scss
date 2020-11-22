@@ -165,6 +165,7 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  font-weight: 700;
   background-image: url('../images/banner_thin_adjusted.jpg');
 }
 
@@ -230,7 +231,6 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-  font-weight: 700;
 
   @include mobile {
     float: none;
