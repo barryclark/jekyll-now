@@ -29,6 +29,7 @@ categories: cpnt200
 
 [How Tony used to walk uphill both ways](https://wordpress.org/support/article/how-to-install-wordpress/)
   - Note: This installation will be for reference only because Local and Flywheel will hide a lot of code and database details from us.
+  - **Pro-tip**: On the "Information needed" page that asks for an account username, DON'T use `admin`. That's honey for hack bots. 
 
 ---
 
@@ -40,3 +41,4 @@ categories: cpnt200
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-11-24-wp-tour-analytics.md %})
