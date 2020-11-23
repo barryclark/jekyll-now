@@ -1,8 +1,8 @@
 <template>
   <header>
-    <nav class="row">
+    <nav style="float: initial;" class="header row">
       <div class="col s6 valign-wrapper">
-        <img class="left square-icon" alt="corder dojo tachikawa" src="../assets/cd-tachikawa.png" />
+        <img class="circle left square-icon" alt="corder dojo tachikawa" src="../assets/dojo-logo.jpg" />
         <h1 class='title'>Corder Dojo 立川</h1>
       </div>
       <ul class="col valign-wrapper">
@@ -22,12 +22,12 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
+// export default {
+//   name: 'HelloWorld',
+//   props: {
+//     msg: String
+//   }
+// }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -41,6 +41,17 @@ nav {
   height: initial;
   justify-content: space-between;
 }
+@media screen and (min-width: 1020px) and (max-width: 1275px) {
+  nav {
+    display: flex;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 1020px) {
+  nav {
+    display: block;
+  }
+}
+
 h1 {
   font-size: initial;
   line-height: initial;
@@ -59,6 +70,13 @@ li {
 }
 a {
   color: #42b983;
+}
+.header {
+  background-color: #2F7DC0;
+  background-image: url('../assets/tachikawa_back_03.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
 }
 .inner-icon {
   margin: 12px;
