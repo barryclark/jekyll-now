@@ -5,7 +5,7 @@ date: April 16, 2019
 time: 15:50 UTC-4
 ---
 
-This is more of an addendum to [Travelling Salesperson]({{ site.url }}/posts/April/2019-4-15-2Travelling-Sales-Person).
+This is more of an addendum to [Travelling Salesperson]({{ site.url }}/posts/2019/April/2019-4-15-2Travelling-Sales-Person).
 I quickly made a solution to Minimum Spanning Tree problem. This algorithm runs in $$O(\alpha(E)E\log(E))$$ time. This is the Inverse Ackerman function $$\alpha$$, and it grows incredibly slow, $$\alpha (2^{2^{2^{65533}}} - 3) = 4$$. So the analysis of this algorithm would basically be $$O(E\log(E))$$, however our set-up is always a connected graph, so we can just denote it as $$E=n(n-1)/2$$, which is ~$$n^2$$. And for when $$n=|V|$$, our algorithm runs in $$O(\alpha(n^2)n^2 2\log(n))$$ which is $$O(n^2\log(n))$$. For a more detailed analysis, check Wikipedia's for a simple to follow one [here](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm#Complexity).
 
 ![]({{ site.url }}/images/tsp/kruskal1.gif)
