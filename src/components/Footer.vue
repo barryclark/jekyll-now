@@ -1,0 +1,88 @@
+<template>
+  <footer>
+    <nav>
+      <ul class="row valign-wrapper">
+        <li>スタッフ紹介</li>
+        <li>メンバー募集</li>
+        <li>開催の様子</li>
+        <li>ご支援のお願い</li>
+        <li>お問い合わせ</li>
+        <li>
+          <a href="https://lin.ee/vhWQhPP">
+            <img class="valign-wrapper" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+          </a>
+        </li>
+      </ul>
+      <div class="row s6 valign-wrapper">
+        <img class="circle left square-icon" alt="corder dojo tachikawa" src="../assets/dojo-logo.jpg" />
+        <h6 class='copyright'>C2020 Corder Dojo Tachikawa</h6>
+      </div>
+    </nav>
+
+  </footer>
+</template>
+
+<script>
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+footer {
+  font-size: 18px;
+  height: initial;
+}
+nav {
+  background: #2F7DC0;
+  box-shadow: initial;
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  justify-content: center;
+}
+@media screen and (min-width: 1020px) and (max-width: 1275px) {
+  nav {
+    display: flex;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 1020px) {
+  nav {
+    display: block;
+  }
+}
+h1 {
+  font-size: initial;
+  line-height: initial;
+  margin: initial;
+}
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+.header {
+  background-color: #2F7DC0;
+  background-image: url('../assets/tachikawa_back_03.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+}
+.inner-icon {
+  margin: 12px;
+}
+.square-icon {
+  height: 36px;
+  width: 36px;
+}
+.copyright {
+  font-size: 1em;
+}
+</style>
