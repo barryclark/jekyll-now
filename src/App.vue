@@ -1,17 +1,23 @@
 <template>
   <Header />
-  <Hero msg="Welcome to Your Vue.js App" />
+  <Hero />
+  <SecondHero />
+  <Footer />
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
+import SecondHero from './components/SecondHero.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Hero
+    Hero,
+    SecondHero,
+    Footer
   }
 }
 </script>
