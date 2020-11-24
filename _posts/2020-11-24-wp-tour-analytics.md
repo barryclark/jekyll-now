@@ -23,18 +23,40 @@ categories: cpnt200
 ---
 
 ## 1. WP Tour
+### Key Takeaways
+1. Posts - great for content that:
+    - has an author(s);
+    - has a category;
+        - See Codex: [Post Categories](https://en.support.wordpress.com/posts/categories/)
+    - can be tagged;
+        - See Codex: [Post Tags](https://en.support.wordpress.com/posts/tags/)
+    - has a date:
+        - is organized by date;
+        - needs to be scheduled.
+    - each post type can be assigned a page template
+        - See Codex: [Post Templates](https://developer.wordpress.org/themes/template-files-section/post-template-files/)
+    - don't support custom templates
+    - can be customized by setting a [Post Format](https://developer.wordpress.org/themes/functionality/post-formats/) (the theme must explicitly support this)
+2. Pages - great for content that:
+    - is important enough to be in the primary navigation;
+    - doesn't change often;
+    - requires structured layouts
+        - See Codex: 
+            - [Page Templates](https://developer.wordpress.org/themes/template-files-section/page-template-files/)
+                - [Custom Templates](https://developer.wordpress.org/themes/template-files-section/page-template-files/#creating-a-custom-page-template-for-one-specific-page)
+                - [Template Partials](https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#content-slug-php)
+            - Note: Template pages overide custom pages
 
 ---
 
 ## 2. Google Analytics
-
 ### Prerequisites
 1. [Google Analytics Account](https://analytics.google.com/)
 2. Domain Name - Your choice of domain and registrar. Pick a domain that you can use for different projects in the future. Perhaps a name for your company?
 
 ---
 
-## 3. SEO and Rank Math 
+## 3. Plugin: Rank Math
 
 ---
 
