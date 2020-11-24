@@ -4,6 +4,9 @@ title: Week 12T - Wordpress Tour and Analytics
 categories: cpnt200
 ---
 
+## Housekeeping
+- Assignment 3: [Final Requirements](https://github.com/sait-wbdv/assessments/tree/master/cpnt200/assignment-3) and Groups announced tomorrow
+
 ## Homework
 1. Wordpress Tour
     - [Basic Usage](https://wordpress.org/support/category/basic-usage/)
@@ -51,6 +54,11 @@ categories: cpnt200
                 - [Custom Templates](https://developer.wordpress.org/themes/template-files-section/page-template-files/#creating-a-custom-page-template-for-one-specific-page)
                 - [Template Partials](https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#content-slug-php)
             - Note: Template pages overide custom pages
+
+### Activites
+- Install a theme of your choice.
+- Install [Rank Math](https://rankmath.com/)
+- Install Contact Form 7
 
 ---
 
