@@ -24,7 +24,12 @@ categories: cpnt200
 
 ## 1. WP Tour
 ### Key Takeaways
-1. Posts - great for content that:
+1. Plugins
+    - The number one source of blog bloat:
+        - Beware of client projects that have more than 20 plugins;
+        - Beware of plugins that are more than a major version out of date;
+        - Beware of plugins that are no longer maintained.
+2. Posts - great for content that:
     - has an author(s);
     - has a category;
         - See Codex: [Post Categories](https://en.support.wordpress.com/posts/categories/)
@@ -37,7 +42,7 @@ categories: cpnt200
         - See Codex: [Post Templates](https://developer.wordpress.org/themes/template-files-section/post-template-files/)
     - don't support custom templates
     - can be customized by setting a [Post Format](https://developer.wordpress.org/themes/functionality/post-formats/) (the theme must explicitly support this)
-2. Pages - great for content that:
+3. Pages - great for content that:
     - is important enough to be in the primary navigation;
     - doesn't change often;
     - requires structured layouts
@@ -56,8 +61,11 @@ categories: cpnt200
 
 ---
 
-## 3. Plugin: Rank Math
+## 3. SEO Plugins: Rank Math
+
+**Walk-through**: [Rank Math](https://rankmath.com/)
 
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-11-25-block-editor-extras.md %})

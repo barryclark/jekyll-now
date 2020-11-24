@@ -98,8 +98,8 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 ## Week 12: Nov 23-27
 - M: CPNT 200 Day 5 - [Installing Wordpress]({% link _posts/2020-11-23-installing-wp.md %})
 - T: CPNT 200 - [Wordpress Tour and Analytics]({% link _posts/2020-11-24-wp-tour-analytics.md %})
-- W: CPNT 200 - Content Management Systems
-- R: DSGN 270 - Social Media Marketing
+- W: CPNT 200 - [Block Editor and Extras]({% link _posts/2020-11-25-block-editor-extras.md %})
+- R: CPNT 200 - [Wordpress Lab Day]({% link _posts/2020-11-26-wp-lab-day.md %})
 - F: DSGN 270 - Social Media Marketing
 
 ## Week 13: Nov 30 - Dec 4
