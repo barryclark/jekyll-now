@@ -331,7 +331,30 @@ Thats what the last line of our concept declaration is called:
   };
 ```
 
-I don't know exactly why this is required but I see the `requires` keyword here a little bit like `noexcept` it kinda works by evaluating to a boolean expression similar to `noexcept( noexcept(...))` doubling as a specifier and keyword.
+It is actually very important to distuingish here between the simple requirement and the Nested one. The simple one just checks if the expression is valid while the nested one treats what is following as a predicate which it evaluates.
+
+As an example consider this requires expressions:
+
+```cpp
+requires (T v) { 
+  sizeof(v) <= 4;
+};
+```
+Did you think this concept only works for types whose size is smaller than 4 bytes? Well it doesn't it is fulfilled for any type `T` for which the expression `sizeof(T) <= 4` which is probably true for all types (at least I cannot think of any for which it is not true)
+
+If you want a concept that is only fulfilled when the types size is actually smaller than 4 bytes, you have to write it like this:
+
+```cpp
+requires (T v) { 
+  requires sizeof(v) <= 4;
+};
+```
+
+Test it for yourself [here](https://godbolt.org/z/oqh95Y)
+
+I see the `requires` keyword here a little bit like `noexcept` it kinda works by evaluating to a boolean expression similar to `noexcept( noexcept(...))` doubling as a specifier and operator.
+
+There is an absolutely amazing article [here](https://akrzemi1.wordpress.com/2020/01/29/requires-expression/) covering anything you can possible know about requires expressions and more. I highly recommend taking a look.
 
 ## Putting it all together
 
@@ -354,13 +377,13 @@ The Concept is fulfilled for the types `T` and `U` when all of the following are
 * There is a function `swap` that compiles for arguments of type `T` and `U`
 * `T::membertype` is an actual type
 * The expression `a == b` compiles, is noexcept and returns a boolean
-* Allocating `T` with new returns a pointer to `T` 
+* Allocating `T` with new returns a pointer to `T`, notice that anything after requires here must be true!
 
 Granted this is a pretty arbitrary (and useless) concept, however it serves as an example of all the different ways you can introduce constraints. For something more real worldish carry on reading.
 
 ## A more practical example!
 
-Lets use concepts for something actually useful and make our own observer system. We explore how we can use concepts in a real world use case.
+Lets use concepts for something actually useful and make our own observer system. We have the following requirements. Any signal can be connected to any other function as long as the signatures and return types match. 
 
 //TODO
 
@@ -570,10 +593,9 @@ requires std::is_integral<T>::value || std::is_floating_point<T>::value
 void with_requires_clause(T vc){};
 ```
 
-* You cannot constrain a concept with a new concept, however you can redeclare the same concept with exactly the same order or constraints.
-
 * Concept as return type
-* conept for function parameters
+* conept for function parameters 
+* You can use any compile time boolean expression as concept constraint
 * Requires outside of Concepts
 
 
