@@ -129,7 +129,25 @@ solutions. Bitcoin now has firm and exponential traction with a growing part of 
 
 The How of the business
 
+online 
+keyword bidding 
+PPC costs 
+affiliate networks
 
+offline  
+cold calling, appointments in-person or in trade shows 
+if the business depends on customer volumes (i.e. many little customers than a few big ones) 
+how is this going to scale 
+
+
+
+The third question to answer is "How do I know that I am not throwing money away?"
+
+The importance of offline advertising is thinning over time, as people come to see the real world as a disruption to 
+their online activity.  
+
+For specific non-digitally native customer segments (e.g. baby boomers and early GenX'ers)
+Offline maybe the only still has value to reach
 
 
 # Bonus - Letter T 
@@ -173,7 +191,7 @@ and some closing thoughts
 
 ## Footnotes
 
-1. <a name="footnote_1"></a>No channels to fallback on for redundancy, no ability to "paper over" technology's gaps with 
+1. <a name="footnote_1"></a>No channels to fall back on for redundancy, no ability to "paper over" technology's gaps with 
 a visit to the local branch.
 2. <a name="footnote_2"></a>This question inevitably takes us back to the identification of a tangible [customer problem][1].
 3. <a name="footnote_3"></a>To be clear, I am not talking about complexity of usage. The product could be the most 
