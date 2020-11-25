@@ -1,6 +1,6 @@
 ---
 layout: post
-title: October 2020 Updates 🎃
+title: 🎃 October 2020 Updates: Getting Started with Open Source 
 ---
 
 Hello!
