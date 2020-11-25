@@ -4,6 +4,9 @@ title: Week 12W - The Block Editor, Category Pages and Menus
 categories: cpnt200
 ---
 
+## Housekeeping
+- [Assignment 3](https://github.com/sait-wbdv/assessments/tree/master/cpnt200/assignment-3)
+
 ## Homework
 1. Block Editor
     - Read: [How to Use the New WordPress Block Editor](https://www.codeinwp.com/blog/wordpress-gutenberg-guide/)
