@@ -17,6 +17,8 @@ categories: cpnt200
 
 ## 1. Block Editor Overview
 
+**Sample Content**: [Blanco Food Menu](https://github.com/sait-wbdv/sample-code/blob/master/pdfs/blanco_food_menu_NOV2020-web.pdf)
+
 ---
 
 ## 2. Category Pages
