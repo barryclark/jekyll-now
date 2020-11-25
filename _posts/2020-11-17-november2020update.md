@@ -1,6 +1,6 @@
 ---
 layout: post
-title: November 2020 Updates 🦃
+title: November 2020 Updates - Prototyping Sensor Module v0 🦃
 ---
 
 Hello!
