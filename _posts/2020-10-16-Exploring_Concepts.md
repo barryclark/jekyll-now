@@ -236,23 +236,133 @@ template<class I>
 And of course since this is C++ there is more than one way to define a Concept. The above one is called **function concept** the below one **variable concept**:
 ```cpp
 template<typename T, typename U>
-concept MyFirstConcept
+concept OurFirstConcept
   = requires(T&& a, U&& b) 
   {
-    typename T::membertype;     
     swap(std::forward<T>(a), std::forward<U>(b));
-    { a == b } -> std::same_as<bool>; 
-    { a + 1} noexcept -> std::convertible_to<T>; 
+    typename T::membertype;     
+    { a == b } noexcept -> std::same_as<bool>;
+    requires std::same_as<T*, decltype(new T)>;
   };
 ```
 
-Lets translate what the above means:
-TODO
+Looking weird? Well thats a bit of everything that can be in the requires expression (the `{}` following `requires(...)`), namely:
+* simple requirement
+* type requirement
+* compound requirement
+* nested requirement
+
+So lets translate what the above means and how we would use it.
+
+### How to use it
+
+Well we need a template function or a template class that makes use of our concept. Lets stick to the function and leave the class as an exercise to the reader. First thing that grabs your eye should be that this weird concept actually requires two template paramters so our function also needs two. Oherwise the compiler will complain. This is how I would use it.
+
+```cpp
+template<typename T, typename U>
+void func(T&&) requires OurFirstConcept<T,U>
+{};
+```
+
+Since we now have a concept using two parameters we actually need the requires clause, at least I could not find a way to do it without, if somebody has one please let me know.
+
+### Simple requirement
+
+Back to our `OurFirstConcept` the first line in the requires expression is called a **Simple Requirement**:
+
+```cpp
+= requires(T&& a, U&& b) 
+  {
+    swap(std::forward<T>(a), std::forward<U>(b));
+   ...
+  }
+```
+
+The first line with `swap` is a simple requirement it just requires that the exression `swap(std::forward<T>(a), std::forward<U>(b))` is valid and does compile, it does not evaluate it. Here is just means there is a function `swap` that can be used to on arguments of type `T` and `U`.  
+
+It could as well be something like `a + b` meaning you defined the `operator+` for the types `T` and `U`.
+
+### Type requirement
+
+```cpp
+  = requires(T&& a, U&& b) 
+  {
+    ...
+    typename T::membertype;
+    ...
+  };
+```
+
+Thats quite simple it means what you probably thought: `membertype` is available as a nested **type** within `T`. Notice that membertype must be a **type**, **not a member!** We could use this to make sure that each iterator we pass to a our length function actually defines a type `iterator_category` leading to a clean error message if we pass in integers.
+
+Additionally to requiring nested types you can also require that a template specialization or an alias for a template exists like this
+
+```cpp
+  = requires(T&& a, U&& b) 
+  {
+    typename S<T>; // Requires class S to specialize for the type T.
+  };
+```
+
+### Compound Requirement
+
+Thats what the 3rd line in the requires expression is called:
+
+```cpp
+  = requires(T&& a, U&& b) 
+  {
+    ...
+    { a == b } noexcept -> std::same_as<bool>;
+    ...
+  };
+```
+
+This is kind of an extension of the simple requirement. In addition to the expression `a == b` being valid (it must compile), this also requires a specific return type `bool` as well as that the `operator==` is noexcept, only then this **Compound Requirement** will be fulfilled.
+
+### Nested Requirement
+
+Thats what the last line of our concept declaration is called:
+
+```cpp
+  = requires(T&& a, U&& b) 
+  {
+    ...
+    requires std::same_as<T*, decltype(new T)>;
+  };
+```
+
+I don't know exactly why this is required but I see the `requires` keyword here a little bit like `noexcept` it kinda works by evaluating to a boolean expression similar to `noexcept( noexcept(...))` doubling as a specifier and keyword.
+
+## Putting it all together
+
+So lets finally translate what this means, can you explain what exactly this concept is constrained to?
+
+```cpp
+template<typename T, typename U>
+concept OurFirstConcept
+  = requires(T&& a, U&& b) 
+  {
+    swap(std::forward<T>(a), std::forward<U>(b));
+    typename T::membertype;     
+    { a == b } noexcept -> std::same_as<bool>;
+    requires std::same_as<T*, decltype(new T)>;
+  };
+```
+
+The Concept is fulfilled for the types `T` and `U` when all of the following are fulfilled:
+
+* There is a function `swap` that compiles for arguments of type `T` and `U`
+* `T::membertype` is an actual type
+* The expression `a == b` compiles, is noexcept and returns a boolean
+* Allocating `T` with new returns a pointer to `T` 
+
+Granted yup this is pretty arbitrary (and useless) concept, however it serves as an example of all the different ways you can introduce constraints. For a more real worldish example carry on reading.
 
 ## A more practical example!
 
+Lets use concepts for something actually useful and make our own observer system. We explore how we can use concepts in a real world use case.
 
-Lets translate what the above means: Th
+//TODO
 
 # What happens if I have Concepts, Templates and Regular Function Overloads?
 
@@ -279,18 +389,30 @@ void with_requires_clause(T vc){};
 template<variable_concept T>
 void replacing_typename(T vc){};
 
-void implicit_template(variable_concept vc){}
+void implicit_template(variable_concept auto vc){}
+```
+
+Personally I like the second one best but we will see what will over time become the canonical way to do things. The advantage with the requires clause is that you can use conjunctions and disjunctions within it so you can combine some concepts without the need to create a new one.
+
+```cpp
+template<typename T>
+requires std::is_integral<T>::value || std::is_floating_point<T>::value
+void with_requires_clause(T vc){};
 ```
 
 
+
+* You cannot constrain a concept with a new concept, however you can redeclare the same concept with exactly the same order or constraints.
+
 * Concept as return type
 * conept for function parameters
+* Requires outside of Concepts
 
-
+ell other developers what your function expects
 
 # TLDR
 
-Use Concepts to define your Function Interfaces! They provide clearer error messages, earlier error detection and tell other developers what your function expects.
+Use Concepts to define your Function Interfaces! They provide clearer error messages, earlier error detection and help make your intention clear to other decelopers (This is in my humble opinion the biggest advantage).
 
 # Resources
 
@@ -299,3 +421,4 @@ Use Concepts to define your Function Interfaces! They provide clearer error mess
 * [some more basics](https://studiofreya.com/cpp/concepts/function-and-variable-concepts/)
 * [What concepts cannot do](https://brevzin.github.io/c++/2018/10/20/concepts-declarations/)
 * [How to test concepts](https://andreasfertig.blog/2020/08/cpp20-concepts-testing-constrained-functions/)
+* [A little more about the requires keyword](https://akrzemi1.wordpress.com/2020/01/29/requires-expression/)
