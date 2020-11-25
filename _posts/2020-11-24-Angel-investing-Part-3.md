@@ -123,11 +123,12 @@ solutions. Bitcoin now has firm and exponential traction with a growing part of 
 ![Letter D](../assets/images/angel-part3/arthur-mazi-6148mnVnY-s-unsplash.jpg)
 > Photo by Arthur Mazi on Unsplash
 
-2 aspects here, completely orthogonal
+2 aspects here somewhat related
 
-## Delivery
+## Distribution
 
-The How of the business
+the Where of the business
+i.e. where does the business "meet" its customers
 
 online 
 keyword bidding 
@@ -150,44 +151,22 @@ For specific non-digitally native customer segments (e.g. baby boomers and early
 Offline maybe the only still has value to reach
 
 
-# Bonus - Letter T 
+## Delivery
 
-![Letter T](../assets/images/angel-part3/jonathan-farber-QgeIMfZJgFs-unsplash.jpg)
-> Photo by Jonathan Farber on Unsplash
+The How of the business
 
-2 different aspects again 
-
-## Team 
-
-This is the Who
-
-For some people this is the most important
-
-### Experience
-
-Presentable
-Eloquent
-Pedigree e.g. Cazoo
-
-### Complementary
-
-
-
-### Passion 
 
 
 # In the next episode
 
-![Coming soon](../assets/images/angel-part3/)
-> Photo by Mollie Sivaram on Unsplash
+![Coming soon](../assets/images/angel-part3/pexels-kaique-rocha-242140.jpg)
+> Photo by Kaique Rocha from Pexels
 
 Talk about 
+the letter T (Team, the "Who" of the business)
+and discuss on your approach as an angel 
 
-incentives
-platforms 
-yourself as an angel 
-
-and some closing thoughts 
+Keep safe!
 
 ## Footnotes
 

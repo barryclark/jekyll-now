@@ -303,8 +303,10 @@ milestones and future dates when it would go out for the next one.
 > Photo by Anthony from Pexels
 
 In the [next article][47] of this series, we will discuss letters I (Innovation, the "What is New" of the business) and D 
-(Distribution / Delivery, the "How" of the business).  
+(Distribution & Delivery, the "Where" and "How" of the business).  
+
 Keep safe!
+
 
 ## Footnotes
 
