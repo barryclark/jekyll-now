@@ -219,7 +219,7 @@ Finally the good stuff, eh? Well depends, actually the stl provides a lot of thi
 Okay so lets put some **"Butter bei die Fische"** here is a self defined Concept:
 ```cpp
 template<typename T>
-concept A_Number = std::is_integral<T>::value || sd::is_floating_point<T>::value;
+concept A_Number = std::is_integral<T>::value || std::is_floating_point<T>::value;
 ```
 
 So when we take a look at the previously used `std::forward_iterator` Concept we can see its defined exactly in that way (a little bit more verbose but still quite easy to read):
@@ -356,7 +356,7 @@ The Concept is fulfilled for the types `T` and `U` when all of the following are
 * The expression `a == b` compiles, is noexcept and returns a boolean
 * Allocating `T` with new returns a pointer to `T` 
 
-Granted yup this is pretty arbitrary (and useless) concept, however it serves as an example of all the different ways you can introduce constraints. For a more real worldish example carry on reading.
+Granted this is a pretty arbitrary (and useless) concept, however it serves as an example of all the different ways you can introduce constraints. For something more real worldish carry on reading.
 
 ## A more practical example!
 
@@ -368,18 +368,188 @@ Lets use concepts for something actually useful and make our own observer system
 
 Short Answer: **Overload Resolution**
 
-Long Answer: I am not actually sure myself how this works but according to the standard the most constrained/specialized Thing wins. Lets try with an example:
+The compiler has some ways to figure out which concepts are more constrained than others and will always select the most constrained one first. This is similar to the normal template overload resolution that we are already used to and quite intuitive. 
+
+Lets play around with it a little bit
 
 ```cpp
 
-//TODO
+#include <concepts>
+#include <type_traits>
+#include <iostream>
+
+/*************************************************************************************/
+// Concepts
+template<typename T>
+concept is_int = std::is_integral<T>::value;
+
+template<typename T>
+concept is_a_number = std::is_integral<T>::value || std::is_floating_point<T>::value;
+
+template<typename T>
+concept a_small_number = std::is_integral<T>::value && std::is_same<T, char>::value;
+
+/*************************************************************************************/
+// Overloaded Functions
+
+void overloaded_function(is_int auto value)
+{
+    std::cout << "Overloaded function with concept is_int: " << value << std::endl;
+}
+
+void overloaded_function(is_a_number auto value)
+{
+    std::cout << "Overloaded function with concept is_a_number: " << value << std::endl;
+}
+
+void overloaded_function(a_small_number auto value)
+{
+    std::cout << "Overloaded function with concept a_small_number: " << value << std::endl;
+}
+
+// Unspecialized Template
+void overloaded_function(auto anything)
+{
+    std::cout << "Overloaded function as unspecialized template: " << anything << std::endl;
+}
+
+// Specialized template
+template<>
+void overloaded_function<int>(int only_ints)
+{
+    std::cout << "Overloaded function as specialized template: " << only_ints << std::endl;
+}
+
+// Function overload
+void overloaded_function(int x)
+{
+    std::cout << "Overloaded function, no template: " << x << std::endl;    
+}
+
+
+/*************************************************************************************/
+// Lets use them
+
+int main()
+{
+    overloaded_function(10);
+    overloaded_function(10.0);
+}
 
 ```
+(You can see the above code for yourself [here](https://godbolt.org/z/KGM7Tx))
 
+
+Here we have a bit of everything, multiple concepts, a regular template, a specialized template and a regular overloaded function.
+
+If you check above Code you will notice it won't actually compile. On Clang I get the following error:
+
+```
+<source>:42:6: error: function template specialization 'overloaded_function' ambiguously refers to more than one function template; explicitly specify additional template arguments to identify a particular function template
+void overloaded_function<int>(int only_ints)
+     ^
+<source>:35:6: note: function template 'overloaded_function<int>' matches specialization [with anything:auto = int]
+void overloaded_function(auto anything)
+     ^
+<source>:24:6: note: function template 'overloaded_function<int>' matches specialization [with value:auto = int]
+void overloaded_function(is_a_number auto value)
+     ^
+<source>:19:6: note: function template 'overloaded_function<int>' matches specialization [with value:auto = int]
+void overloaded_function(is_int auto value)
+     ^
+1 error generated.
+Compiler returned: 1
+```
+
+The Problem is the template specialization it conflicts with our concepts in a way that the compiler is unable to figure out which one he should use. Lets comment out the specialized template for now and go further.
+
+Running the Code now will output:
+
+```
+Overloaded function, no template: 10
+Overloaded function with concept is_a_number: 10
+```
+
+As expected the function without any template/concept is taken first, so lets comment that out and see how far we can go.
+
+Now your code should look like [this](https://godbolt.org/z/reMcEY) and surprise we got some compiler errors yet again:
+
+```
+<source>:59:5: error: call to 'overloaded_function' is ambiguous
+    overloaded_function(10);
+    ^~~~~~~~~~~~~~~~~~~
+<source>:19:6: note: candidate function [with value:auto = int]
+void overloaded_function(is_int auto value)
+     ^
+<source>:24:6: note: candidate function [with value:auto = int]
+void overloaded_function(is_a_number auto value)
+     ^
+<source>:8:18: note: similar constraint expressions not considered equivalent; constraint expressions cannot be considered equivalent unless they originate from the same concept
+concept is_int = std::is_integral<T>::value;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+<source>:11:23: note: similar constraint expression here
+concept is_a_number = std::is_integral<T>::value || std::is_floating_point<T>::value;
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+Compiler returned: 1
+```
+
+This is interesting, apparently my version of clang has trouble identifying the same expressions while using concepts, however there is a fix instead of using the type_trait `std::is_integral` we can reuse our concept `is_int` for the others.
+
+```cpp
+template<typename T>
+concept is_int = std::is_integral<T>::value;
+
+template<typename T>
+concept is_a_number = is_int<T> || std::is_floating_point<T>::value;
+
+template<typename T>
+concept a_small_number = is_int<T> && std::is_same<T, char>::value;
+```
+This will fix the compiler error. Clang is now able to arrange the concepts in terms of constraints and will choose the most constrained one, leading to the following output:
+
+```
+Overloaded function with concept is_int: 10
+Overloaded function with concept is_a_number: 10
+```
+
+The working code can be found [here](https://godbolt.org/z/afj8TY)
+
+**Yay** we got the integer one since we passed in an integer, makes sense, doesn't it?
+
+Lets check what happens if we comment out that one.
+
+```
+Overloaded function with concept is_a_number: 10
+Overloaded function with concept is_a_number: 10
+```
+
+Awesome it fell back to the more general, less constrained case. Believe me (or try for yourself) if you comment out that one it will fall back to the unspecialized template.
+
+But wait what about the `a_small_number` one? Well lets try, cast your int to a char before calling `overloaded_function` and you will find the following order of evaluation 
+
+* small_number
+* is_int
+* a_number
+* template
+
+Right, but we changed our concepts a little bit for the compiler, what was it again with the specialized template function? Try now commenting it in again and surprise it actually works and it is selected as preferred overload.
+
+So in general the compilers order of choice is:
+* non template function
+* specialized template
+* concepts starting with most constrained to least constrained one
+* regular template
+
+The final code is [here](https://godbolt.org/z/ocWGq7)
+
+**Note** 
+
+When you define multiple similar concepts try to reuse them. This makes it possible for the compiler to select the correct overloads. Boolean expressions like `std::is_integral` will not be regarded as the same concept constraints and result in ambiguity when performing overload resolution.
 
 # Trivia
 
-Again C++, so lots of ways to do things. Applying a Concept can be done in one of the following ways, which are all equal...
+Well its C++, so lots of ways to do things. Applying a Concept can be done in one of the following ways, which are all equal...
 
 ```cpp
 template<typename T>
@@ -392,7 +562,7 @@ void replacing_typename(T vc){};
 void implicit_template(variable_concept auto vc){}
 ```
 
-Personally I like the second one best but we will see what will over time become the canonical way to do things. The advantage with the requires clause is that you can use conjunctions and disjunctions within it so you can combine some concepts without the need to create a new one.
+Personally I like the second one best but we will see what will over time become the canonical way to do things. The advantage with the requires clause is that you can use conjunctions and disjunctions within it so you can combine some concepts without the need to create a new one, like this for example:
 
 ```cpp
 template<typename T>
@@ -400,15 +570,12 @@ requires std::is_integral<T>::value || std::is_floating_point<T>::value
 void with_requires_clause(T vc){};
 ```
 
-
-
 * You cannot constrain a concept with a new concept, however you can redeclare the same concept with exactly the same order or constraints.
 
 * Concept as return type
 * conept for function parameters
 * Requires outside of Concepts
 
-ell other developers what your function expects
 
 # TLDR
 
