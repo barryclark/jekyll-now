@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🦃 November 2020 Updates: Designing, Building, Testing, and Publishing the Sensor Module 
+title: 🦃 November 2020 Updates: Designing, Building, Testing, and Publishing the Sensor Module v0 
 ---
 
 Hello!
