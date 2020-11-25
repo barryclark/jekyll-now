@@ -1,6 +1,6 @@
 ---
 layout: post
-title: October 2020 Updates - Getting Started with ZBCE 🎃
+title: 🎃 Oct. 2020 Updates - Getting Started with ZBCE 
 ---
 
 Hello!
