@@ -15,7 +15,8 @@ tags:
 published: false
 ---
 
-- Brella.io
+- Brella.io: https://next.brella.io/
+- Icebreaker: https://icebreaker.video/
 - Estella Medrano
   Pendiente dar feedback sobre: https://medium.com/@stlmedrano/convenci%C3%B3n-de-nombres-para-pruebas-unitarias-unit-test-76f643fb73a8
   Post de los sandwiches iterativos e incremnetales: https://www.linkedin.com/pulse/cena-%C3%A1gil-estela-medrano-jim%C3%A9nez?trk=public_profile_article_view
