@@ -9,14 +9,11 @@ name: UrbanMakerKraft
 description: A blog about Urban Making
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/Urban Maker Kraft.png
+avatar: /images/YouTube Cover Image.png
 
 #
 # Flags below are optional
 #
-
-#theme
-theme: jekyll-theme-architect
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -31,7 +28,7 @@ footer-links:
   rss: # just type anything here for a working RSS icon
   twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: /channel/UCHlV6ItbddImXqc4QhRuQSw
+  youtube: https://www.youtube.com/channel/UCHlV6ItbddImXqc4QhRuQSw
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
