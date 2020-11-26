@@ -383,7 +383,18 @@ Granted this is a pretty arbitrary (and useless) concept, however it serves as a
 
 ## A more practical example!
 
-Lets use concepts for something actually useful and make our own observer system. We have the following requirements. Any signal can be connected to any other function as long as the signatures and return types match. 
+Lets use concepts for something actually useful and make our signaling system. We want to be able to attach a signal to any member function as long as the signatures match through a connect method. However we do not want the users to enforce deriving from an Interface. In order to keep life time issues at bay we use a subscription object which has to live as a member inside the connected class.
+
+Emitting the signal will call the corresponding members of all connected objects that are alive at that moment. When the lifetime of connected object ends it will take itself automatically off the the subscription list.
+
+Hope you get the picture, its pretty standard like `boost::signals` or `Qts Signals and Slots` we just keep it simpler.
+
+We will have a signal that will take any function signature as template parameter.
+
+```cpp
+template<typename T>
+class Signal
+```
 
 //TODO
 
@@ -593,11 +604,41 @@ requires std::is_integral<T>::value || std::is_floating_point<T>::value
 void with_requires_clause(T vc){};
 ```
 
-* Concept as return type
-* conept for function parameters 
-* You can use any compile time boolean expression as concept constraint
-* Requires outside of Concepts
+### You can use Concepts to constrain Return Types
 
+```cpp
+auto Constrained_Return_Type() -> std::is_integral<bool>
+{
+    return 10;// will provoke a compiler error
+}
+```
+
+This can probably be used in a similar way to `SFINAE` for overload resolution. And also make your intention clearer ;).
+
+### You can use any compile time boolean expression as concept constraint
+
+```cpp
+constexpr bool always_true(){return true;}
+
+template<typename T>
+concept Using_A_Constexpr_bool_expression = always_true();
+```
+
+### Require expressions are not constrained to Concepts
+
+Require Expressions can be used to do some nifty tricks and are not bound to concepts alone. You can use it in a way to turn some compiler errors into boolean predicates that can be used for example for testing.
+
+```cpp
+// Testing a Concept
+template<typename T>
+concept always_false = requires{requires false;};
+
+// We need this helper to turn our concept into a boolean value it works through the "nested" requires, if you remove the requires inside it will turn into a compiler error.
+template<typename T>
+constexpr bool testing_our_concept = requires(T value) {requires always_false<T>;};
+ 
+static_assert(!testing_our_concept<int>);
+```
 
 # TLDR
 
@@ -610,4 +651,4 @@ Use Concepts to define your Function Interfaces! They provide clearer error mess
 * [some more basics](https://studiofreya.com/cpp/concepts/function-and-variable-concepts/)
 * [What concepts cannot do](https://brevzin.github.io/c++/2018/10/20/concepts-declarations/)
 * [How to test concepts](https://andreasfertig.blog/2020/08/cpp20-concepts-testing-constrained-functions/)
-* [A little more about the requires keyword](https://akrzemi1.wordpress.com/2020/01/29/requires-expression/)
+* [A little more (or everything) about the requires keyword](https://akrzemi1.wordpress.com/2020/01/29/requires-expression/)
