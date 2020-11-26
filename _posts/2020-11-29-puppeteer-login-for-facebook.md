@@ -101,7 +101,7 @@ We are going to check if Facebook cookies exist (they won't yet) and if so use t
 So let's see how the ```loginWithSession``` and ```loginWithCredentials``` methods work. 
 
 ```loginWithSession``` is straightforward. We replace our chromiums cookies with the cookies we loaded containing the Facebook session cookies. If the Facebook session cookies are valid then Facebook will be logged in already when we load the Facebook home page.   
-```
+``
   loginWithSession: async (cookies, page) => {
     console.log('Logging into Facebook using cookies');
     await page.setCookie(...cookies);
@@ -111,20 +111,26 @@ So let's see how the ```loginWithSession``` and ```loginWithCredentials``` metho
       throw error;
     });
   },
-```
+``
 
 The ```isLoggedIn``` method here loads facebook and waits for the element ```<div role="feed">``` to appear on the page. This element seems to appear on many pages when logged in to Facebook. 
 
-```
+``
 const isLoggedIn = async (page) => {
   await page.goto(FACEBOOK_URL, {
     waitUntil: 'networkidle2',
   });
   await page.waitForSelector('div[role=feed]');
 };
-```
+S``
 
 The ```loginWithCredentials``` method enters our username and password and submits. But there is one step before submitting which is deleting the Facebook cookie banner if it appears. If we don't remove it then we are left unable to click the login button. 
+
+
+![_config.yml]({{ site.baseurl }}/images/facebook-cookie-banner.jpg)
+*The Facebook cookie banner*
+
+
 
 ```
   loginWithCredentials: async (username, password, page) => {
@@ -155,7 +161,6 @@ The ```loginWithCredentials``` method enters our username and password and submi
     });
   },
 ```
-![_config.yml]({{ site.baseurl }}/images/facebook-cookie-banner.jpg)
 
 
 ### Scraping Facebook
@@ -172,8 +177,8 @@ My use case required collecting links that were posted into Facebook groups. So 
     }));
 ```
 
-A problem I've ran into and I'd like to try solve is how to scroll endlessly in Facebook. Yes it's fairly easy to jump to the bottom of the page and wait for Facebook to load more content. But unfortunately Puppeteer is memory hungry. After some time of scrolling endlessly your memory usage will shoot up. I think a good solution would be to delete posts from a feed after you have scraped them. This piece of code would be a <a href="https://stackoverflow.com/a/50869650" target="_blank">good start</a>. 
+A problem I've ran into and I'd like to try solve is how to scroll endlessly in Facebook. Yes it's fairly easy to jump to the bottom of the page and wait for Facebook to load more content. But unfortunately Puppeteer is memory hungry. After some time of scrolling endlessly your memory usage will shoot up. I think a good solution would be to delete news feed posts from the DOM after you have scraped them. <a href="https://stackoverflow.com/a/50869650" target="_blank"> This StackoverFlow answer would be a good start</a>. 
 
 And with many scraping solutions, what works today may not work tomorrow as websites evolve and update.
 
-P.S you should not save your cookie to a local file, if someone gets access to it then that's your Facebook comprimised. I've used AWS Systems Manager Parameter Store to securely store mine.
+P.S be careful saving your Facebook session cookie to a local file, if someone gets access to it then that's your Facebook comprimised. I've used AWS Systems Manager Parameter Store to securely store mine.
