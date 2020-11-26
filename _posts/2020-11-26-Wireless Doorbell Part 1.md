@@ -12,5 +12,5 @@ But before everything else, a bit of context:
 My current doorbell is a rather old design that actually uses a *mechanical* switch to manually open and close a circuit to a solenoid. This meant that there was a wire running from inside the house to the outside switch box where the doorbell switch was located. 
 This was really what spurred me to convert my doorbell to *wireless* as repurposing this wire (which was literally a standard multi-core copper wire) to transmit power rather than signal was something which would allow me to power the WiFi chip directly via the *mains* instead of having to deal with batteries (something I try to avoid as much as possible especially when we are dealing with WiFi).
 
-{% include youtube_embed.html id="" %}  
+{% include youtube_embed.html id="i-Zetl8BYZ4"%}  
 ![Test Picture 1](/images/Doorbell 1.jpg)
