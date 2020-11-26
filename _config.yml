@@ -9,12 +9,12 @@ name: UrbanMakerKraft
 description: A blog about Urban Making
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/Profile Pic.jpeg
+avatar: /images/Profile Pic.jpg
 
 #
 # Flags below are optional
 #
-
+theme: jekyll-theme-architect
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
