@@ -1,174 +1,243 @@
-/* POST */
-article#mainPostArticle {
-	width: 100%;
-	text-align: left;
-	margin-bottom: 9.96vw;
-}
+/* POST HEADER */
 
-article#mainPostArticle > *{
-	width: 100%;
-}
-
-header#postHeader, section#postContentSection {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: left;
-	    -ms-flex-align: left;
-	        align-items: left;
-}
-
-/*Header*/
 header#postHeader {
-	margin-top: 11.03vw;
-	width: 37.10vw;
-	margin-left: 9.96vw;
+	background: #89B3D9;
+	margin-top: 98px;
+	padding-top: 112px;
+	padding-bottom: 150px;
 }
 
-header#postHeader a,  header#postHeader a *{
-	font-family: "Lora", serif;
-	font-weight: normal;
-	font-size: 1.757vw;
-	text-decoration: none;
-	text-align: left;
+@media all and (max-width: 1000px) {
+	header#postHeader {
+		padding-top: 98px;
+		padding-bottom: 120px;
+	}
 }
 
-header#postHeader a:before {
-	content: "← ";
+@media all and (max-width: 600px) {
+	header#postHeader {
+		margin-top: 64px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }
 
 header#postHeader hgroup {
-	margin-top: 2.1vw;
-	margin-bottom: 1vw;
+	width: 636.02px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media all and (max-width: 1000px) {
+	header#postHeader hgroup {
+		width: 100%;
+		padding-left: 60px;
+		padding-right: 60px;
+		box-sizing: border-box;
+	}
+}
+
+@media all and (max-width: 600px) {
+	header#postHeader hgroup {
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-bottom: 40px;
+	}
 }
 
 header#postHeader hgroup h1 {
-	font-family: "LeagueSpartan", sans-serif;
-	font-weight: bold;
-	font-size: 3.71vw;
-	text-transform: uppercase;
-}
+	font-family: "Wondar Quason", sans-serif;
+	font-size: 123px;
+	line-height: 112px;
 
-header#postHeader hgroup h2 {
-	margin-top: 0.39vw;
-	font-family: "Lora", serif;
-	font-weight: normal;
-	font-size: 1.757vw;
-}
-
-/*Content*/
-section#postContentSection{
 	width: 100%;
 }
 
-section#postContentSection > * {
-	width: 52.24vw;
-	margin-left: 9.96vw;
+
+
+@media all and (max-width: 1000px) {
+	header#postHeader hgroup h1 {
+		font-size: 100px;
+		line-height: 92px;
+	}
 }
 
-section#postContentSection h1 {
-	margin-top: 4.68vw;
-	font-family: "LeagueSpartan", sans-serif;
-	font-weight: bold;
-	font-size: 1.95vw;
-	text-transform: uppercase;
+@media all and (max-width: 600px) {
+	header#postHeader hgroup h1 {
+		font-size: 53px;
+		line-height: 48px;
+	}
 }
 
-section#postContentSection h2 {
-	margin-top: 2.34vw;
-	font-family: "Lora", serif;
-	font-weight: bold;
-	font-size: 2.34vw;
+header#postHeader section#postHeaderHeroSection {
+	margin-left: 202px;
+	margin-right: 202px;
+
+	position: relative;
 }
 
-section#postContentSection h3 {
-	margin-top: 2.34vw;
-	font-family: "Lora", serif;
-	font-weight: bold;
-	font-size: 1.56vw;/*16px*/
+@media all and (max-width: 1000px) {
+	header#postHeader section#postHeaderHeroSection {
+		margin-left: 60px;
+		margin-right: 60px;
+	}
 }
 
-section#postContentSection p, section#postContentSection p * {
-	margin-top: 1.56vw;
-	font-family: "Lora", serif;
-	font-size: 1.56vw;/*16px*/
-	line-height: 2.53vw;
+@media all and (max-width: 600px) {
+	header#postHeader section#postHeaderHeroSection {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
 }
 
-section#postContentSection p a {
-	font-weight: 700;
+div.projectShadowDiv svg {
+	display: inline-block;
 }
 
-section#postContentSection ul, section#postContentSection ol {
-	margin-top: 1.56vw;
-	list-style-position: inside;
+section#postHeaderHeroSection iframe {
+	position: relative;
+	z-index: 100;
 }
 
-section#postContentSection li, section#postContentSection li * {
-	font-family: "Lora", serif;
-	font-weight: normal;
-	font-size: 1.56vw;/*16px*/
-	line-height: 2.53vw;
+section#postHeaderHeroSection div.projectShadowDiv {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+
+	text-align: center;
 }
 
-section#postContentSection p img {
-	margin-top: 0.78vw;
-	margin-bottom: 0.78vw;
+@media all and (max-width: 1000px) {
+	section#postHeaderHeroSection div.projectShadowDiv {
+		margin-top: 0px;
+		top: 7%;
+		left: 3.4%;
+		right: 3.4%;
+		bottom: -3.5%;
+	}
+}
+
+section#postHeaderHeroSection div.projectShadowDiv svg {
+	width: 593px;
+	height: 460px;
+	margin-top: 35.28px;
+}
+
+@media all and (max-width: 1000px) {
+	section#postHeaderHeroSection div.projectShadowDiv svg {
+		width: 100%;
+		height: 100%;
+		margin-top: 0px;
+	}
+}
+
+section#postHeaderHeroSection iframe {
+	width: 636.02px;
+	height: 478.35px;
+}
+
+@media all and (max-width: 1000px) {
+	section#postHeaderHeroSection iframe {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* POST ARTICLE */
+
+article.postArticle {
+	
+}
+
+article.postArticle section.paragraphSection {
+	width: 637px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+@media all and (max-width: 600px) {
+	article.postArticle section.paragraphSection {
+		width: auto;
+		margin-left: 0px;
+		margin-right: 0px;
+
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+}
+
+article.postArticle section.paragraphSection h1 {
+	font-family: "Wondar Quason", sans-serif;
+	font-size: 66px;
+	line-height: 60px;
+	margin-bottom: 39px;
+}
+
+@media all and (max-width: 600px) {
+	article.postArticle section.paragraphSection h1 {
+		font-size: 42px;
+		line-height: 38px;
+		margin-bottom: 28px;
+	}
+}
+
+article.postArticle section.paragraphSection p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	line-height: 39px;
+}
+
+@media all and (max-width: 600px) {
+	article.postArticle section.paragraphSection p {
+		font-size: 17px;
+		line-height: 28px;
+	}
+}
+
+article.postArticle section.paragraphSection p:nth-of-type(n+2) {
+	margin-top: 39px;
+}
+
+@media all and (max-width: 600px) {
+	article.postArticle section.paragraphSection p:nth-of-type(n+2) {
+		margin-top: 28px;
+	}
+}
+
+article.postArticle section.pictureSection {
+	margin-left: -80px;
+	margin-right: -80px;
+	padding: 80px;
+	box-sizing: border-box;
+	position: relative;
+
+	background: #89B3D9;
+}
+
+@media all and (max-width: 1000px) {
+	article.postArticle section.pictureSection {
+		margin-left: -60px;
+		margin-right: -60px;
+		padding: 60px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	article.postArticle section.pictureSection {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding: 20px;
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+}
+
+article.postArticle section.pictureSection img {
 	width: 100%;
-}
-
-section#postContentSection p img.landscape, section#postContentSection p video.landscape{
-	width: 52.24vw;
-}
-
-section#postContentSection p img.portrait, section#postContentSection p video.portrait {
-	height: 52.24vw;
-	width: auto;
-}
-
-/* Gallery */
-div#postContentGallery {
-	width: 100%;
-	margin-top: 2.34vw;
-	margin-left: 0px;
-}
-
-div#postContentGallery ul{
-	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	list-style: none;
-	-ms-flex-wrap: nowrap;
-	    flex-wrap: nowrap;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-}
-
-div#postContentGallery ul li:first-of-type {
-	margin-left: 9.96vw;
-}
-
-div#postContentGallery ul li + li {
-	margin-left: 2.34vw;
-}
-
-div#postContentGallery ul li:last-of-type {
-	padding-right: 9.96vw;
-}
-
-div#postContentGallery ul li.landscape img{
-	width: 52.24vw;
-}
-
-div#postContentGallery ul li.portrait img{
-	height: 52.24vw;
 }
