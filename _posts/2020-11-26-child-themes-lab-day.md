@@ -21,7 +21,7 @@ categories: cpnt200
 
 ## 1. The simplest theme
 
-**Sample Code**: [Broken Theme](https://github.com/sait-wbdv/php-sample-code/tree/main/wordpress/wp-content/broken)
+**Sample Code**: [Broken Theme](https://github.com/sait-wbdv/php-sample-code/tree/main/wordpress/wp-content/themes/broken)
 
 ### Activity: Fix a broken theme
 1. Copy the `broken` theme folder into your Local wordpress themes directory:
@@ -59,7 +59,7 @@ categories: cpnt200
 
 ## 2. Making a Child Theme based on Underscores
 
-**Sample Code**: [Underscores Starter Theme](https://github.com/sait-wbdv/php-sample-code/tree/main/wordpress/wp-content/underscores)
+**Sample Code**: [Underscores Starter Theme](https://github.com/sait-wbdv/php-sample-code/tree/main/wordpress/wp-content/themes/underscores)
 - Note: you can generate your own version of this theme on the [Underscores website](https://underscores.me/).
 
 ### Activity: Create an Underscores Child Theme
