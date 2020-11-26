@@ -12,11 +12,15 @@ categories: cpnt200
 
 ---
 
-## 1. Overview: Child Themes
+## 1. The simplest theme
 
 ---
 
-## 2. Open Lab Time
+## 2. Overview: The simplest theme
+
+---
+
+## 3. Open Lab Time
 
 ---
 
