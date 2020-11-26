@@ -5,27 +5,27 @@ permalink: /gallery/
 images:
   - image_path: ../images/dyed_fiber_blue-yellow.jpeg
     title: Dyed fiber (Merino and/or Columbia, hand-dyed)
-  - image_path: ../images/dyed_fiber_blue.jpeg
+  - image_path: ../images/dyed_fiber_foster_blues.jpeg
     title: Dyed fiber (Blue-faced Leicester/Cormo cross, hand-dyed)
-  - image_path: ../images/dyed_fiber_pastels.jpeg
+  - image_path: ../images/dyed_fiber_field_flowers.jpeg
     title: Dyed fiber (Merino and/or Columbia, hand-dyed)
-  - image_path: ../images/dyed_fiber_yellow-blue-purple.jpeg
+  - image_path: ../images/dyed_fiber_maine_day.jpeg
     title: Dyed fiber (Merino and/or Columbia, hand-dyed)
-  - image_path: ../images/unplied_singles_pastels.jpeg
+  - image_path: ../images/unplied_singles_field_flowers.jpeg
     title: Unplied singles (Merino and/or Columbia, hand-dyed)
-  - image_path: ../images/unplied_singles_blue.jpeg
+  - image_path: ../images/unplied_singles_foster_blues.jpeg
     title: Unplied singles (Blue-faced Leicester/Cormo cross, hand-dyed)
-  - image_path: ../images/spun_fiber_blue.jpeg
+  - image_path: ../images/spun_fiber_foster_blues.jpeg
     title: Spun yarn (Blue-faced Leicester/Cormo cross, hand-dyed)
-  - image_path: ../images/spun_yarn_blue-green.jpeg
+  - image_path: ../images/spun_yarn_deep_water_.jpeg
     title: Spun yarn (Merino and/or Columbia, hand-dyed)
-  - image_path: ../images/spun_yarn_greens.jpeg
+  - image_path: ../images/spun_yarn_fog_forest.jpeg
     title: Spun yarn (Merino and/or Columbia, hand-dyed)
-  - image_path: ../images/spun_yarn_pastels.jpeg
+  - image_path: ../images/spun_yarn_field_flowers.jpeg
     title: Spun yarn (Merino and/or Columbia, hand-dyed)
-  - image_path: ../images/spun_yarn_pastels2.jpeg
+  - image_path: ../images/spun_yarn_field_flowers2.jpeg
     title: Spun yarn (Merino and/or Columbia, hand-dyed)
-  - image_path: ../images/spun_yarn_yellow-blue-purple.jpeg
+  - image_path: ../images/spun_yarn_maine_day.jpeg
     title: Spun yarn (Merino and/or Columbia, hand-dyed)
   - image_path: ../images/spun_yarns1.jpeg
     title: Spun yarns (Merino and/or Columbia, hand-dyed)
