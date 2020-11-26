@@ -143,3 +143,4 @@ Now that you know how Page templates work in Wordpress, find a file that is asso
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-11-27-social-collaboration.md %})
