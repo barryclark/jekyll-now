@@ -101,7 +101,8 @@ We are going to check if Facebook cookies exist (they won't yet) and if so use t
 So let's see how the ```loginWithSession``` and ```loginWithCredentials``` methods work. 
 
 ```loginWithSession``` is straightforward. We replace our chromiums cookies with the cookies we loaded containing the Facebook session cookies. If the Facebook session cookies are valid then Facebook will be logged in already when we load the Facebook home page.   
-``
+
+```
   loginWithSession: async (cookies, page) => {
     console.log('Logging into Facebook using cookies');
     await page.setCookie(...cookies);
@@ -111,18 +112,18 @@ So let's see how the ```loginWithSession``` and ```loginWithCredentials``` metho
       throw error;
     });
   },
-``
+```
 
 The ```isLoggedIn``` method here loads facebook and waits for the element ```<div role="feed">``` to appear on the page. This element seems to appear on many pages when logged in to Facebook. 
 
-``
+```
 const isLoggedIn = async (page) => {
   await page.goto(FACEBOOK_URL, {
     waitUntil: 'networkidle2',
   });
   await page.waitForSelector('div[role=feed]');
 };
-S``
+```
 
 The ```loginWithCredentials``` method enters our username and password and submits. But there is one step before submitting which is deleting the Facebook cookie banner if it appears. If we don't remove it then we are left unable to click the login button. 
 
