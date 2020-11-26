@@ -34,4 +34,6 @@ published: false
   http://twitch.tv/OscarMartinDEV http://twitch.tv/flutter_es
 - Carlos Albadalejo
   Montando proyecto para ofrecer Perks a empresas paises nórdicos, casas rurales en el sur de Europa
+  Le recomiendo: nolegaltech.com
+  "Acabo de terminar una charla de 40 minutos con Bárbara, de esa empresa. La verdad es que ha sido muy buena recomendación. Gracias!"
   
