@@ -1,5 +1,19 @@
 
-
+---
+layout: post
+title: Tarugoconf 2020 - Sofa Edition 
+categories:
+  - buenas prácticas
+  - management
+  - gestión
+  - aprendizaje
+  - eventos
+tags:
+  - eventos
+  - gestión
+  - management
+published: false
+---
 
 - Brella.io
 - Estella Medrano
