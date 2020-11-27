@@ -23,7 +23,6 @@ categories: dsgn270
 
 ---
 
-## 2. Breakout Activity
 ### Terminology
 <dl>
   <dt>Homophily</dt>
@@ -34,7 +33,7 @@ categories: dsgn270
   <dd>Individuals will find others similar to themselves regardless of the group setting.</dd>
 </dl>
 
-
+## 2. Breakout Activity
 In groups of 4-5, analyze the effect of social tools on niche culture:
 
 **Cameras mandatory, comb your hair**
