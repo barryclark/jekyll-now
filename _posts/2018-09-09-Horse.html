@@ -1,0 +1,143 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #383838;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  background: #A9A9A9;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 0px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Image max size */
+.maxsizing {
+  max-width: 100%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="footer">
+  <img src="/images/Zaid/Header.png" class="maxsizing">
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>A Cold Horse Becomes Warm</h2>
+      <h5> Dec 7, 2017</h5>
+      <img src="/images/Horse/horses-cover.jpg" class="maxsizing">
+	 <br>
+      <p>Winter is coming, and as you all know, this means it will get colder. Proper precautions need to be taken to keep your horse warm, and the first step is to source a suitable ‘warming blanket’.</p>
+    </div>	  
+     <div class="card">    
+      <img src="/images/Horse/horse-on-back.jpg" class="maxsizing">
+      <br>
+      <p><b>A good Warming Blank must be…</b></p>
+      <p><ul>
+           <li>Warm but not too warm</li>
+           <li>Pink and dirty looking</li>
+           <li>Horrid smelling</li>
+	   <li>Stupid looking</li>
+        </ul>
+      </p>    
+    </div> 
+    <div class="card">      
+      <img src="/images/Horse/horse-pink-blanket.jpg" class="maxsizing">
+      <br>
+      <p><b>Snoring Leisa</b></p>
+      <p>After a lengthy day of shopping for a ‘warming blanket’, Leisa is all tuckered out. She isn’t cold though, for she is sporting her new ‘warming blanket’.</p>
+    </div> <div class="card">      
+      <img src="/images/Horse/neigh.jpg" class="maxsizing">
+      <br>
+      <p><b>Everyone loves Leisa's smile</b></p>
+      <p>Leisa is screeching her mating call as loud as she can. She does this every morning around 2am.</p>
+    </div>
+    </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="/images/Zaid/explorer.jpg" class="maxsizing">
+      <br>
+      <p>Professor Asrama Berkumpule is a world renowned anthropologist who has devoted his life to the exploration of Earth's most mystifying lands and rarest species.</p>
+    </div>
+    <div class="card">
+      <h3>Favourite Tree</h3>
+      <img src="/images/Zaid/willow.jpg" class="maxsizing">
+      <br>
+      </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>I go to cool places.</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2>Our Planet</h2>
+</div>
+</body>
+</html>

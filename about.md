@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I once watched a moth crawl along a fence for several meters. Why did it not fly?
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+If you are ever curious about what goes on behind the curtain, you simply need to ask the man.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Sent an Owl, I'd love to hear all about it.
+###[email@domain.com](mailto:email@domain.com)
