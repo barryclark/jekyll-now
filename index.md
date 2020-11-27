@@ -100,12 +100,12 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - T: CPNT 200 - [Wordpress Tour and Analytics]({% link _posts/2020-11-24-wp-tour-analytics.md %})
 - W: CPNT 200 - [Block Editor and Extras]({% link _posts/2020-11-25-block-editor-extras.md %})
 - R: CPNT 200 - [Wordpress Lab Day]({% link _posts/2020-11-26-child-themes-lab-day.md %})
-- F: DSGN 270 - Social Media Marketing
+- F: DSGN 270 - [Social collaboration]({% link _posts/2020-11-27-social-collaboration.md %})
 
 ## Week 13: Nov 30 - Dec 4
-- M: DSGN 270 - Social Media Marketing
+- M: DSGN 270 - Copyright and Income
 - T: CPNT 264 - Career & Consulting Essentials
-- W: CPNT 265 - The Business of the Web
+- W: DSGN 270 - Social tools: Student pick!
 - R: CPNT 265 - The Business of the Web
 - F: CPNT 265 - The Business of the Web
 

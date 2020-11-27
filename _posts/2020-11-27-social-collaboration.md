@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Week 12F - Social Collaboration
-categories: cpnt200
+categories: dsgn270
 ---
 
 ## Homework
@@ -54,7 +54,7 @@ After the session, Tony will pick volunteers for a Fishbowl discussion on the be
 
 ## 3. Guest Speaker: Kyle Marshall
 ### Questions for Kyle!
-Submit questions in the `breakfast-club` Slack channel and upvote your faves.
+Submit questions in the `breakfast-club` Slack channel and upvote your faves. Note: he doesn't have access to the Slack team.
 
 ---
 
