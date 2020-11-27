@@ -17,12 +17,6 @@ categories: dsgn270
 
 ---
 
-## 1. Principles of Social Collaboration
-
-**Cheat Sheets**: [Social Tools]({{site.baseurl}}/cheatsheets/social)
-
----
-
 ### Terminology
 <dl>
   <dt>Homophily</dt>
@@ -32,6 +26,14 @@ categories: dsgn270
   <dt>Choice Homophily</dt>
   <dd>Individuals will find others similar to themselves regardless of the group setting.</dd>
 </dl>
+
+---
+
+## 1. Principles of Social Collaboration
+
+**Cheat Sheets**: [Social Tools]({{site.baseurl}}/cheatsheets/social)
+
+---
 
 ## 2. Breakout Activity
 In groups of 4-5, analyze the effect of social tools on niche culture:
