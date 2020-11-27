@@ -1,86 +1,95 @@
-#
-# This file contains configuration flags to customize your site
-#
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+paginate: 100 # it will paginate after this number
+language: 'en-uk'
+words_per_minute: 200
 
-# Name of your site (displayed in the header)
-name: UrbanMakerKraft
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /jasper2/
 
-# Short bio or description (displayed in the header)
-description: A blog about Urban Making
+# Website info
+title: Ghost
+description: The professional publishing platform
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
+CNAME: #add cname for website to be created
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/Profile Pic.jpg
+# Social info
+navigation: True # show the navbar links
+subscribers: True # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: tryghost # replace by your username
+facebook: ghost # replace by your username
 
-#
-# Flags below are optional
-#
-theme: jekyll-theme-architect
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: urbanmakerkraft
-  facebook:
-  flickr:
-  github: RCPilot1604
-  instagram: 
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: channel/UCHlV6ItbddImXqc4QhRuQSw
-  googleplus: # anything in your profile username that comes after plus.google.com/
+# Disqus
+disqus: False
+disqus_shortname: jekyller # replace with your disqus username
 
+# Google Analytics
+google_analytics: UA-69281367-1 # replace with your GA tracking identifier
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus: urbanmakerkraft
+# Permalinks
+permalink: /:title
+# permalink: /author/:author
+# permalink: /tag/:tag
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+# Authors' info in `_data/authors.yml`
+# Tags' info in `_data/tags_info.yml`
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
+# gems and other configs
+plugins_dir: [_plugins]
+plugins: [jekyll-paginate, jekyll-feed]
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+feed:
+  path: feed.xml
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
 
-permalink: /:title/
+# Settings for building master branch with travis-ci
+# with jekyll-travis
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: False
+lsi: False
+username: jekyller
+repo: jasper2
+branch: master
+relative_source: ../jasper2/
+destination: ../jasper2-pages/
+production_url:  https://jekyller.github.io/jasper2/
+source_url:  https://github.com/jekyller/jasper2/
 
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
 exclude:
+  - assets/css
+  - node_modules
+  - vendor
+  - .travis.yml
   - Gemfile
   - Gemfile.lock
+  - GHOST.txt
+  - gulpfile.js
   - LICENSE
+  - package.json
+  - package-lock.json
+  - Rakefile
   - README.md
-  - CNAME
+  - script.py
+  - changelog.md
+  - "*.Rmd"
+  - .git*

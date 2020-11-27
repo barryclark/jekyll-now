@@ -1,0 +1,57 @@
+---
+layout: post
+current: post
+cover:  assets/images/advanced.jpg
+navigation: True
+title: Advanced Markdown tips
+date: 2017-07-27 05:00:00
+tags: [Getting started]
+class: post-template
+subclass: 'post'
+author: ghost
+---
+
+
+<p>There are lots of powerful things you can do with the Ghost editor</p>
+<p>If you've gotten pretty comfortable with <a href="/the-editor/">all the basics</a> of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown!</p>
+<p>As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.</p>
+<h2 id="specialformatting">Special formatting</h2>
+<p>As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:</p>
+<ul>
+<li><s>strike through</s></li>
+<li><mark>highlight</mark></li>
+<li>*escaped characters*</li>
+</ul>
+<h2 id="writingcodeblocks">Writing code blocks</h2>
+<p>There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, <code>like this</code>. Larger snippets of code can be displayed across multiple lines using triple back ticks:</p>
+<pre><code>.my-link {
+    text-decoration: underline;
+}
+</code></pre>
+<p>If you want to get really fancy, you can even add syntax highlighting using <a href="http://prismjs.com/">Prism.js</a>.</p>
+<h2 id="fullbleedimages">Full bleed images</h2>
+<p>One neat trick which you can use in Markdown to distinguish between different types of images is to add a <code>#hash</code> value to the end of the source URL, and then target images containing the hash with special styling. For example:</p>
+<p><img src="https://casper.ghost.org/v1.0.0/images/walking.jpg#full" alt="walking"></p>
+<p>which is styled with...</p>
+<pre><code>img[src$=&quot;#full&quot;] {
+    max-width: 100vw;
+}
+</code></pre>
+<p>This creates full-bleed images in the Casper theme, which stretch beyond their usual boundaries right up to the edge of the window. Every theme handles these types of things slightly differently, but it's a great trick to play with if you want to have a variety of image sizes and styles.</p>
+<h2 id="referencelists">Reference lists</h2>
+<p><strong>The quick brown <a href="https://en.wikipedia.org/wiki/Fox" title="Wikipedia: Fox">fox</a>, jumped over the lazy <a href="https://en.wikipedia.org/wiki/Dog" title="Wikipedia: Dog">dog</a>.</strong></p>
+<p>Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.</p>
+<h2 id="creatingfootnotes">Creating footnotes</h2>
+<p>The quick brown fox<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> jumped over the lazy dog<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
+<p>Footnotes are a great way to add additional contextual details when appropriate. Ghost will automatically add footnote content to the very end of your post.</p>
+<h2 id="fullhtml">Full HTML</h2>
+<p>Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Ghost editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Foxes are red <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Dogs are usually not red <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>

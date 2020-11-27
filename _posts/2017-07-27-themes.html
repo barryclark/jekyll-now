@@ -1,0 +1,30 @@
+---
+layout: post
+current: post
+cover:  assets/images/design.jpg
+navigation: True
+title: Setting up your own Ghost theme
+date: 2017-07-27 04:00:00
+tags: [Getting started]
+class: post-template
+subclass: 'post'
+author: ghost
+---
+
+<p>Creating a totally custom design for your publication</p>
+<p>Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes. However, Ghost can also be completely themed to suit your needs. Rather than just giving you a few basic settings which act as a poor proxy for code, we just let you write code.</p>
+<p>There are a huge range of both free and premium pre-built themes which you can get from the <a href="http://marketplace.ghost.org">Ghost Theme Marketplace</a>, or you can simply create your own from scratch.</p>
+<p><a href="http://marketplace.ghost.org"><img src="https://casper.ghost.org/v1.0.0/images/marketplace.jpg" alt="marketplace"></a></p>
+<blockquote>
+<p>Anyone can write a completely custom Ghost theme, with just some solid knowledge of HTML and CSS</p>
+</blockquote>
+<p>Ghost themes are written with a templating language called handlebars, which has a bunch of dynamic helpers to insert your data into template files. Like <code>{{author.name}}</code>, for example, outputs the name of the current author.</p>
+<p>The best way to learn how to write your own Ghost theme is to have a look at <a href="https://github.com/TryGhost/Casper">the source code for Casper</a>, which is heavily commented and should give you a sense of how everything fits together.</p>
+<ul>
+<li><code>default.hbs</code> is the main template file, all contexts will load inside this file unless specifically told to use a different template.</li>
+<li><code>post.hbs</code> is the file used in the context of viewing a post.</li>
+<li><code>index.hbs</code> is the file used in the context of viewing the home page.</li>
+<li>and so on</li>
+</ul>
+<p>We've got <a href="http://themes.ghost.org/docs/about">full and extensive theme documentation</a> which outlines every template file, context and helper that you can use.</p>
+<p>If you want to chat with other people making Ghost themes to get any advice or help, there's also a <strong>#themes</strong> channel in our <a href="https://slack.ghost.org">public Slack community</a> which we always recommend joining!</p>
