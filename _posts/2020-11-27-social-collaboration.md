@@ -34,9 +34,10 @@ categories: dsgn270
   <dd>Individuals will find others similar to themselves regardless of the group setting.</dd>
 </dl>
 
-**Cameras mandatory, comb your hair**
 
 In groups of 4-5, analyze the effect of social tools on niche culture:
+
+**Cameras mandatory, comb your hair**
 - Share a niche community of your choice that you are a member of. We'll define "niche" as one not shared by another member of your breakout group.
 - Is this group created through Induced or Choice Homophily?
 - Did this niche exist before 2005?
