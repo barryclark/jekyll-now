@@ -19,7 +19,7 @@ categories: cpnt200
 
 ## 1. Principles of Social Collaboration
 
-**Cheat Sheets**: [Social Tools]({% link cheatsheets/social %})
+**Cheat Sheets**: [Social Tools]({{site.baseurl}}/cheatsheets/social)
 
 ---
 
