@@ -33,6 +33,8 @@ published: false
     - Metabase vs Superset vs Excel (pero como bajo esto a Excel para hacer mi gráfico como yo quiero?)
     - Problemas de Egos, Recelos, Silos
     - Monitorizamos la Calidad del dato: Deequ, alertas y métricas para vivir tranquilo en el dia a día y solo actual cuando es necesarios  
+    - Metabase, Superset (Reporting)
+    - Deequ (Calidad del dato)
 - Oscar Martín Martín
     - Comunidad Flutter
     - https://medium.com/@omartinma
