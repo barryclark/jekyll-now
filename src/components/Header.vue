@@ -13,7 +13,7 @@
         <li>お問い合わせ</li>
         <li>
           <a href="https://lin.ee/vhWQhPP">
-            <img class="valign-wrapper" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+            <img class="line-img" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
           </a>
         </li>
       </ul>
@@ -34,6 +34,9 @@
 <style scoped>
 header {
   font-size: 18px;
+  height: initial;
+}
+img {
   height: initial;
 }
 nav {
@@ -80,6 +83,9 @@ a {
 }
 .inner-icon {
   margin: 12px;
+}
+.line-img {
+  height: 32px;
 }
 .square-icon {
   height: 48px;
