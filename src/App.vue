@@ -1,8 +1,11 @@
 <template>
-  <Header />
-  <Hero />
-  <SecondHero />
-  <Footer />
+  <div>
+    <Header />
+    <Hero />
+    <SecondHero />
+    <Footer />
+    <t-button>Example button</t-button>
+  </div>
 </template>
 
 <script>
