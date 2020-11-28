@@ -50,5 +50,6 @@ published: false
 ##Tarugoff
 ### Datamierding
 Resumen y conclusiones: https://docs.google.com/document/d/1DEQbhDS81I8RoRZSElExBZ7swcBPHqUboyhlrW6Y2KM/edit?pli=1#
+Deequ: https://aws.amazon.com/es/blogs/big-data/test-data-quality-at-scale-with-deequ/
 Deequ: https://cprosenjit.medium.com/implementing-data-quality-with-amazon-deequ-apache-spark-adcdf7c0a8da
   
