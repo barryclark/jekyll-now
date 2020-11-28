@@ -67,6 +67,9 @@ published: false
 así el que llega en diagonal pueda hacerlo así y no tenerse que leer todo para obtener la información que viene buscando.
     - Donut: (https://www.donut.com/) bot de slack, crea reunione aleatorias con la gente que está apuntada. Para conocer gente dentro de la empresa. A nivel de compañía.
     - Tenemos un canal de Discord que se llama Cocina y vas a hacer lo que quieras, gente toca la guitarra, otras veces hablamos, etc..
+    - Meet abierto, pero todos en silencio a lo suyo y cuando alguien tiene que hablar, habla. No tienes porque estar en un meet hablado siempre.
+    - Dinámicas para conocernos no obligatorias, cuidado por ejemplo con el vamos de cervezas porque pueden generar exclusión, habrá gente que no quiera y es lícito. Hacerlo siempre en horario de trabajo y que sea inclusivo.
+    
   
   
   
