@@ -69,7 +69,20 @@ así el que llega en diagonal pueda hacerlo así y no tenerse que leer todo para
     - Tenemos un canal de Discord que se llama Cocina y vas a hacer lo que quieras, gente toca la guitarra, otras veces hablamos, etc..
     - Meet abierto, pero todos en silencio a lo suyo y cuando alguien tiene que hablar, habla. No tienes porque estar en un meet hablado siempre.
     - Dinámicas para conocernos no obligatorias, cuidado por ejemplo con el vamos de cervezas porque pueden generar exclusión, habrá gente que no quiera y es lícito. Hacerlo siempre en horario de trabajo y que sea inclusivo.
+    - ¿Jaam?: Herramienta que ves la gente disponible y salas para entrar a hablar con quien esté.
+    - Cuando llegabamos a la Daily nos poníamos a hablar de nuestras cosas y luego hacíamos la Daily
+    - Tenemos un bot que los lunes a las 9 de la mañana te pregunta ¿Qué has hecho este fin de semana? y eso genera conversaciónes y luego un café virtual y un canal Random
+    - Buscar vínculos con el equipo que sean inclusivos.
+    - Sesgo del superviviente: gente muy igual que les guste lo mismo, el que viene nuevo si es diferente es un problema.
     
+### Conclusiones 
+- En las reuniones que no son de trabajo no se tienen que tomar decisiones
+- Respetar tiempo y personas
+- Comunicación escrita, pero crecen los malosentendidos, apender a comunicarnos de manera escrita
+- Buscar las técnicas partiendo de los problemas
+- Valorar si las técnicas están funcioando
+- Podemos abrir cualquier tipo de canal, de maquillaje, series..... para hablar de otras cosas
+- 
   
   
   
