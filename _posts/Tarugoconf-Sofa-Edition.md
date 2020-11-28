@@ -49,7 +49,21 @@ published: false
     
 ##Tarugoff
 ### Datamierding
-Resumen y conclusiones: https://docs.google.com/document/d/1DEQbhDS81I8RoRZSElExBZ7swcBPHqUboyhlrW6Y2KM/edit?pli=1#
-Deequ: https://aws.amazon.com/es/blogs/big-data/test-data-quality-at-scale-with-deequ/
-Deequ: https://cprosenjit.medium.com/implementing-data-quality-with-amazon-deequ-apache-spark-adcdf7c0a8da
+- Resumen y conclusiones: https://docs.google.com/document/d/1DEQbhDS81I8RoRZSElExBZ7swcBPHqUboyhlrW6Y2KM/edit?pli=1#
+- Deequ: https://aws.amazon.com/es/blogs/big-data/test-data-quality-at-scale-with-deequ/
+- Deequ: https://cprosenjit.medium.com/implementing-data-quality-with-amazon-deequ-apache-spark-adcdf7c0a8da
+
+### Conversaciones de pasillo en remoto
+- Karumi: Somos remotos con oficina
+- Zonas horarias es importante por ejemplo para hacer reuniones
+- Conversaicon de pasillo: 
+    - Técnicas: todas aquellas decisiones que tomas por ejemplo cuando vas a ayudar alguien y el del al lado oye como lo vamos a resoler y estamos alineado
+    - Las que hacen equipo: 
+    
+ Cosas que hacemos:
+  - Todas las decisiones se toman por escrito. Hablamos, debatimos pero luego la decisión o en slack, una PR o Ticket y todo el mundo hace ACK. Es un trabajo extra, pero luego vale la pena porque tenemos todo documentado.
+  - 
+  - 
+  - 
+  
   
