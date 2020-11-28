@@ -28,7 +28,7 @@ published: false
     - Post de los sandwiches iterativos e incremnetales: https://www.linkedin.com/pulse/cena-%C3%A1gil-estela-medrano-jim%C3%A9nez?trk=public_profile_article_view
     - https://enfamilialohacemosmejor.blogspot.com/2020/06/entendiendo-scratchjr.html
 - Juan Riaza  
-    - Se dedica a scrapping dentro de Idelista.
+    - Se dedica a scrapping.
     - ¿Poruqé hay menos inmuebles en Albacete? (Es el scrapper, el Spark, la ingesta, el pipelina....)
     - Metabase vs Superset vs Excel (pero como bajo esto a Excel para hacer mi gráfico como yo quiero?)
     - Problemas de Egos, Recelos, Silos
