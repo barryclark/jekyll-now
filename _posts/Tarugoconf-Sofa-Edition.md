@@ -58,12 +58,15 @@ published: false
 - Zonas horarias es importante por ejemplo para hacer reuniones
 - Conversaicon de pasillo: 
     - Técnicas: todas aquellas decisiones que tomas por ejemplo cuando vas a ayudar alguien y el del al lado oye como lo vamos a resoler y estamos alineado
-    - Las que hacen equipo: 
+    - Las que hacen equipo: hablar de otras cosas, desconectar, etc...
     
- Cosas que hacemos:
-  - Todas las decisiones se toman por escrito. Hablamos, debatimos pero luego la decisión o en slack, una PR o Ticket y todo el mundo hace ACK. Es un trabajo extra, pero luego vale la pena porque tenemos todo documentado.
-  - 
-  - 
-  - 
+- Cosas que hacemos:
+    - Todas las decisiones se toman por escrito. Hablamos, debatimos pero luego la decisión o en slack, una PR o Ticket y todo el mundo hace ACK. Es un trabajo extra, pero luego vale la pena porque tenemos todo documentado.
+    - Por escrito es mucho más fácil mal interpretarse
+    - Crear canales atómicos para que se agrupe la información por temática.
+así el que llega en diagonal pueda hacerlo así y no tenerse que leer todo para obtener la información que viene buscando.
+    - Donut: (https://www.donut.com/) bot de slack, crea reunione aleatorias con la gente que está apuntada. Para conocer gente dentro de la empresa. A nivel de compañía.
+    - Tenemos un canal de Discord que se llama Cocina y vas a hacer lo que quieras, gente toca la guitarra, otras veces hablamos, etc..
+  
   
   
