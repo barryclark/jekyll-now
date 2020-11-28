@@ -75,13 +75,19 @@ así el que llega en diagonal pueda hacerlo así y no tenerse que leer todo para
     - Buscar vínculos con el equipo que sean inclusivos.
     - Sesgo del superviviente: gente muy igual que les guste lo mismo, el que viene nuevo si es diferente es un problema.
     
-### Conclusiones 
+#### Conclusiones 
 - En las reuniones que no son de trabajo no se tienen que tomar decisiones
 - Respetar tiempo y personas
 - Comunicación escrita, pero crecen los malosentendidos, apender a comunicarnos de manera escrita
 - Buscar las técnicas partiendo de los problemas
 - Valorar si las técnicas están funcioando
 - Podemos abrir cualquier tipo de canal, de maquillaje, series..... para hablar de otras cosas
+
+
+### Motivar en timpos de crisis
+- Cada vez más distanciados
+- Por ejemplo hemos hecho escape room virtual
+- Como manager reforzar lo que hemos hecho juntos
 - 
   
   
