@@ -88,7 +88,7 @@ así el que llega en diagonal pueda hacerlo así y no tenerse que leer todo para
 - Cada vez más distanciados
 - Por ejemplo hemos hecho escape room virtual
 - Como manager reforzar lo que hemos hecho juntos
-- 
+-   
   
   
   
