@@ -45,4 +45,9 @@ published: false
     - Montando proyecto para ofrecer Perks a empresas paises nórdicos, casas rurales en el sur de Europa
     - Le recomiendo: nolegaltech.com
     - "Acabo de terminar una charla de 40 minutos con Bárbara, de esa empresa. La verdad es que ha sido muy buena recomendación. Gracias!"
+    
+    
+##Tarugoff
+### Datamierding
+Resumen y conclusiones: https://docs.google.com/document/d/1DEQbhDS81I8RoRZSElExBZ7swcBPHqUboyhlrW6Y2KM/edit?pli=1#
   
