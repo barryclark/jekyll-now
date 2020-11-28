@@ -2,23 +2,34 @@
 layout: default
 ---
 
-<article id="mainPostArticle">
-	<header id="postHeader">
-		<a href="/">
-			Back to home
-		</a>
+<style>
+	header#postHeader, p.imgParent {
+		background: {{ page.backgroundColor | escape }}
+	}
+</style>
 
-		<hgroup>
-			<h1>{{ page.title }}</h1>
-			<h2>
-				{% for role in page.roles %}
-					{{ role }}{% unless forloop.last %}, {% endunless %}
-				{% endfor %}
-			</h2>
-		</hgroup>
-	</header>
+<header id="postHeader">
+	<hgroup>
+		{% if page.titleLines.size > 0 %}
+			{% for titleLine in page.titleLines %}
+				<h1>{{ titleLine }}</h1>
+			{% endfor %}
+		{% else %}
+			<h1>{{ title }}</h1>
+		{% endif %}
+	</hgroup>
 
-	<section id="postContentSection">
-		{{ content }}
+	<section id ="heroSection" class="{{ page.device }}">
+		<div>
+			<div>
+				<iframe src="https://player.vimeo.com/video/{{ page.heroVimeoId }}?autoplay=1&loop=1&background=1" frameborder="0" allow="autoplay; loop"></iframe>
+			</div>
+		</div>
 	</section>
+</header>
+
+<article id="postArticle" class="{{ page.device }}">
+	{{ content }}
 </article>
+
+<script type="text/javascript" src="/static/js/post.js"></script>
