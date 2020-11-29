@@ -26,6 +26,7 @@ export default {
 
 <style>
 body {
+  color: #0F0F0F;
   font-family: Nanum Gothic;
 }
 h1 {
