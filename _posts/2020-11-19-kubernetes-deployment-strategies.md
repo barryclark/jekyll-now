@@ -17,7 +17,7 @@ It's often called reckless due to the downtime that occurs with it but there are
 * No two versions of your app will be alive at one time. This means you won't need to handle things like sticky sessions for users. It can be useful if your old and new code isn't able to co-exist.
 * You will have some downtime that can be useful for doing data migrations/transformations that aren't possible on a live system.
 
-### The bad
+### The Bad
 * Rollouts take time. You must wait for the old version to be killed and then wait for the new version to be brought up.
 * Rollbacks will take a similar amount of time.
 
@@ -32,7 +32,7 @@ If maxSurge is one and maxUnavailable is one it will kill one and bring up a new
 ### The Good
 * No down time.
 
-### The bad
+### The Bad
 * Rollouts and rollbacks can take time (although their time can be reduced greatly by playing with maxSurge and maxUnavailable).
 * Old and new versions of code must be able to co-exist.
 * Users may experience both versions of the app if sticky sessions are not handled. 
@@ -54,7 +54,7 @@ I think this is a pretty good deployment strategy and provides a lot of advantag
 * You can QA in the identical stack.
 * No two version will be in use at the same time.
 
-### The bad
+### The Bad
 * It can be expensive to run an identical production stack.
 
 
@@ -73,7 +73,7 @@ You can use any metric you want to determine if your canary is healthy but some 
 * It can handle rollbacks automatically.
 * It provides much more confidence when releasing new features.
 
-### The bad
+### The Bad
 * It can be very slow to rollout depending on how long it takes to evaluate if your canary is healthy.
 * Sticky sessions might be required if your old and new code is incompatible.
 * It can be tricky to implement using just the tools Kubernetes provides (but there are a lot of solutions out there like Harness.io to help you).
