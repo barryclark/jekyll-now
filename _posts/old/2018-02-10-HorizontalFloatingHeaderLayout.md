@@ -2,6 +2,7 @@
 layout: post
 title: Horizontal Floating Header Layout
 roles: [iOS Developer, UX/UI Designer]
+published: false
 ---
 
 ![](/static/media/posts/HorizontalFloatingHeaderLayout/horizontal-banner.jpg)

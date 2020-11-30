@@ -38,11 +38,14 @@ header#indexHeader h1 {
 /* PROJECT SECTION */
 
 section#indexProjectsSection article {
+	position: relative;
 	text-align: center;
 	width: 100%;
 	margin-bottom: 80px;
 
-	position: relative;
+	padding-top: 164px;
+	padding-bottom: 164px;
+	box-sizing: border-box;
 }
 
 @media all and (max-width: 1000px) {
@@ -54,36 +57,109 @@ section#indexProjectsSection article {
 @media all and (max-width: 600px) {
 	section#indexProjectsSection article {
 		margin-bottom: 64px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 		overflow: hidden;
 	}
 }
 
-section#indexProjectsSection article div.projectShadowDiv {
+section.indexProjectThumbnailSection {
+	position: relative;
+	margin: 0px auto;
+}
+
+section#indexProjectsSection article.ipad section.indexProjectThumbnailSection {
+	width: 636px;
+}
+
+section#indexProjectsSection article.iphone section.indexProjectThumbnailSection,
+section#indexProjectsSection article.iphoneX section.indexProjectThumbnailSection {
+	width: 322px;
+}
+
+@media all and (max-width: 1000px) {
+	section#indexProjectsSection article.ipad section.indexProjectThumbnailSection {
+		width: auto;
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+
+	section#indexProjectsSection article.iphone section.indexProjectThumbnailSection,
+	section#indexProjectsSection article.iphoneX section.indexProjectThumbnailSection {
+		width: auto;
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	section#indexProjectsSection article.ipad section.indexProjectThumbnailSection {
+		width: auto;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	section#indexProjectsSection article.iphone section.indexProjectThumbnailSection,
+	section#indexProjectsSection article.iphoneX section.indexProjectThumbnailSection {
+		width: auto;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+div.indexProjectThumbnailDiv {
+	width: 100%;
+	position: relative;
+}
+
+section#indexProjectsSection article.ipad div.indexProjectThumbnailWrapperDiv {
+	padding-top: calc( 768 / 1024 * 100%);
+}
+
+section#indexProjectsSection article.iphone div.indexProjectThumbnailWrapperDiv {
+	padding-top: calc( 667 / 375 * 100%);
+}
+
+section#indexProjectsSection article.iphoneX div.indexProjectThumbnailWrapperDiv {
+	padding-top: calc( 812 / 375 * 100%);
+}
+
+div.indexProjectThumbnailWrapperDiv > div {
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+div.indexProjectThumbnailWrapperDiv div.indexProjectShadowDiv {
+	top: 7%;
+	left: 4%;
+	right: 4%;
+	bottom: -3%;
+
+	filter: blur(40.48px);
+	opacity: 0.45;
+}
+
+div.indexProjectThumbnailWrapperDiv iframe, div.indexProjectThumbnailWrapperDiv img {
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+}
+
+section#indexProjectsSection article.iphoneX div.indexProjectThumbnailWrapperDiv img {
+	border-radius: 34px; 
+}
+
+section#indexProjectsSection article a {
+	display: block;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-
-	text-align: center;
-}
-
-div.projectShadowDiv svg {
-	display: inline-block;
-}
-
-section#indexProjectsSection article iframe, section#indexProjectsSection article picture {
-	position: relative;
-	z-index: 100;
-	pointer-events: none;
-}
-
-section#indexProjectsSection article picture {
-	display: inline-block;
-}
-
-section#indexProjectsSection article picture img{
-	width: 100%;
 }
 
 section#indexProjectsSection article footer {
@@ -104,162 +180,8 @@ section#indexProjectsSection article footer h1 {
 	width: 100%;
 }
 
-section#indexProjectsSection article a {
-	display: block;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-
-	z-index: 101;
-}
-
 @media all and (min-width: 1001px) {
-	section#indexProjectsSection article a:hover ~ footer{
+	section#indexProjectsSection article a:hover footer {
 		opacity: 0.8;
-	}
-}
-
-article#bmwProjectArticle {
-	background: #89B3D9;
-}
-
-article#bmwProjectArticle div.projectShadowDiv svg {
-	width: 593px;
-	height: 460px;
-	margin-top: 198.26px;
-}
-
-@media all and (max-width: 1000px) {
-	section#indexProjectsSection article#bmwProjectArticle div.projectShadowDiv {
-		top: calc(80px + 5%);
-		left: calc(80px + 3%);
-		right: calc(80px + 3%);
-		bottom: calc(80px - 2%);
-	}
-}
-
-@media all and (max-width: 600px) {
-	section#indexProjectsSection article#bmwProjectArticle div.projectShadowDiv {
-		top: calc(40px + 5%);
-		left: calc(40px + 3%);
-		right: calc(40px + 3%);
-		bottom: calc(40px - 2%);
-	}
-}
-
-article#bmwProjectArticle iframe {
-	margin: 167px auto;
-
-	width: 636.02px;
-	height: 478.35px;
-}
-
-article#bmwProjectArticle footer h1 {
-	color: #286297;
-}
-
-article#sunyProjectArticle {
-	background: #F2E8C9;
-}
-
-article#sunyProjectArticle div.projectShadowDiv svg {
-	width: 271px;
-	height: 545px;
-	margin-top: 201.9px;
-}
-
-@media all and (max-width: 1000px) {
-	section#indexProjectsSection article#sunyProjectArticle div.projectShadowDiv {
-		top: calc(80px + 5%);
-		left: calc(80px + 5%);
-		right: calc(80px + 5%);
-		bottom: calc(80px - 2%);
-	}
-}
-
-@media all and (max-width: 600px) {
-	section#indexProjectsSection article#sunyProjectArticle div.projectShadowDiv {
-		top: calc(40px + 5%);
-		left: calc(40px + 5%);
-		right: calc(40px + 5%);
-		bottom: calc(40px - 2%);
-	}
-}
-
-article#sunyProjectArticle iframe {
-	margin: 163px auto;
-	width: 321.93px;
-	height: 572.21px;
-}
-
-article#sunyProjectArticle footer h1 {
-	color: #AA9A6A;
-}
-
-article#pucpProjectArticle {
-	background: #CAD1D9;
-}
-
-article#pucpProjectArticle div.projectShadowDiv svg {
-	width: 270px;
-	height: 668px;
-	margin-top: 202.9px;
-}
-
-@media all and (max-width: 1000px) {
-	section#indexProjectsSection article#pucpProjectArticle div.projectShadowDiv {
-		top: calc(80px + 5%);
-		left: calc(80px + 5%);
-		right: calc(80px + 5%);
-		bottom: calc(80px - 2%);
-	}
-}
-
-@media all and (max-width: 600px) {
-	section#indexProjectsSection article#pucpProjectArticle div.projectShadowDiv {
-		top: calc(40px + 5%);
-		left: calc(40px + 5%);
-		right: calc(40px + 5%);
-		bottom: calc(40px - 2%);
-	}
-}
-
-article#pucpProjectArticle picture {
-	margin: 163px auto;
-	width: 321.03px;
-	height: 697.09px;
-
-	border-radius: 32px;
-}
-
-article#pucpProjectArticle picture img {
-	border-radius: 32px;
-}
-
-article#pucpProjectArticle footer h1 {
-	color: #738396;
-}
-
-@media all and (max-width: 1000px) {
-	article#bmwProjectArticle iframe, article#sunyProjectArticle iframe,  article#pucpProjectArticle picture {
-		box-sizing: border-box;
-		margin: 0px;
-		padding: 80px;
-		width: 100%;
-		height: auto;
-	}
-
-	article#bmwProjectArticle div.projectShadowDiv svg, article#sunyProjectArticle div.projectShadowDiv svg, article#pucpProjectArticle div.projectShadowDiv svg {
-		width: 100%;
-		height: 100%;
-		margin-top: 0px;
-	}
-}
-
-@media all and (max-width: 600px) {
-	article#bmwProjectArticle iframe, article#sunyProjectArticle iframe,  article#pucpProjectArticle picture {
-		padding: 40px;
 	}
 }

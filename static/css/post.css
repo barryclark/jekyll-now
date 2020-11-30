@@ -135,17 +135,21 @@ section#heroSection div div {
 	bottom: 0px;
 }
 
-section#heroSection iframe {
+section#heroSection iframe, section#heroSection img {
 	width: 100%;
 	height: 100%;
+}
 
-	box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07);
+section#heroSection div.shadowDiv {
+	position: absolute;
+	display: block;
+	top: 7%;
+	left: 4%;
+	right: 4%;
+	bottom: -3%;
+
+	filter: blur(40.48px);
+	opacity: 0.45;
 }
 
 /* POST ARTICLE */
@@ -160,14 +164,14 @@ article#postArticle {
 	}	
 }
 
-article#postArticle h1, article#postArticle p {
+article#postArticle h1, article#postArticle p, article#postArticle ul {
 	width: 637px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 @media all and (max-width: 600px) {
-	article#postArticle h1, article#postArticle p {
+	article#postArticle h1, article#postArticle p, article#postArticle ul {
 		width: auto;
 		margin-left: 0px;
 		margin-right: 0px;
@@ -186,21 +190,29 @@ article#postArticle h1 {
 @media all and (max-width: 600px) {
 	article#postArticle h1 {
 		font-size: 42px;
-		line-height: 38px;
+		line-height: 46px;
 
 		margin-top: 64px;
 		margin-bottom: 28px;
 	}
 }
 
-article#postArticle p {
+article#postArticle p, article#postArticle li, article#postArticle strong {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 24px;
 	line-height: 42px;
 }
 
+article#postArticle strong {
+	font-weight: 700;
+}
+
+article#postArticle ul {
+	list-style: inside;
+}
+
 @media all and (max-width: 600px) {
-	article#postArticle p {
+	article#postArticle p, article#postArticle li, article#postArticle strong {
 		font-size: 17px;
 		line-height: 28px;
 	}

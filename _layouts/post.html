@@ -6,6 +6,9 @@ layout: default
 	header#postHeader, p.imgParent {
 		background: {{ page.backgroundColor | escape }}
 	}
+	div.shadowDiv {
+		background: {{ page.shadowColor | escape }}
+	}
 </style>
 
 <header id="postHeader">
@@ -15,14 +18,20 @@ layout: default
 				<h1>{{ titleLine }}</h1>
 			{% endfor %}
 		{% else %}
-			<h1>{{ title }}</h1>
+			<h1>{{ page.title }}</h1>
 		{% endif %}
 	</hgroup>
 
 	<section id ="heroSection" class="{{ page.device }}">
 		<div>
+			<div class="shadowDiv">
+			</div>
 			<div>
+				{% if page.heroVimeoId %}
 				<iframe src="https://player.vimeo.com/video/{{ page.heroVimeoId }}?autoplay=1&loop=1&background=1" frameborder="0" allow="autoplay; loop"></iframe>
+				{% else %}
+				<img src="/static/media/index/thumbnails/{{ page.heroImgName }}">
+				{% endif %}
 			</div>
 		</div>
 	</section>

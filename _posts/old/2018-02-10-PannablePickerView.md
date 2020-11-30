@@ -2,6 +2,7 @@
 layout: post
 title: Pannable PickerView
 roles: [iOS Developer, UX/UI Designer]
+published: false
 ---
 
 <p>
