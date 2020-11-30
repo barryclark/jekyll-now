@@ -18,6 +18,11 @@ title: Principles of Social Collaboration
   <dd>A group of people who share a craft or a profession.</dd>
 </dl>
 
+## Key Takeaways
+- A small minority of users are responsible for the majority of the content.
+- Social collaboration in software is very effective. See: [Steve Bomber on Open Source](https://youtu.be/sPQViNNOAkw?t=758)
+- Social tools are value agnostic. See [Pro-Ana](https://youtu.be/sPQViNNOAkw?t=1032).
+
 ## Broadcast vs Communications Media
 Classic media production falls under two broad classifications:
 - **Broadcast media**: One-to-many messaging. Examples include books, newspapers, radio, television, move theatres.

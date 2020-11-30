@@ -25,7 +25,33 @@ title: Streaming and Copyright
   - 900,000 views per day -> $2500-$3000/day -> ~$1M/year (if monetized)
   - Tens of thousands of Patreon supporters -> ~$250,000/year (at $1-2$/month/Patron)
 
-## Music
+### Key Takeaways
+**Tony is not a lawyer**, but we watches them on Youtube
+
+- TLDR; Even if you have a valid claim of Fair Use, you can still get sued and it'll cost a lot of money to win.
+- See: [Canadian Copyright Basics](https://sait-wbdv.github.io/cheatsheets/copyright/)
+- American Copyright
+  - by default, you need permission/license to use a copyrighted work
+  - exceptions under Fair Use
+  - 4 Factors that must be balanced:
+    1. [The purpose and character of the use](https://youtu.be/5A_i-sB9H0Q?t=508);
+        - "By far the most important factor"
+        - Also referred to as a "transformative work" such as a clear commentary/criticism purpose.
+    2. [The nature of the copyrighted work](https://youtu.be/5A_i-sB9H0Q?t=580)
+        - Is the work factual or fictional in nature?
+        - Factual works have less protection than fictional works.
+        - Is considered the least important of the four factors.
+    3. [The amount and substantiality of the portion used](https://youtu.be/5A_i-sB9H0Q?t=605)
+        - People are only allowed to use the minimum amount necessary to get the point of their commentary/criticism across.
+    4. [The effect of the use upon the potential market](https://youtu.be/5A_i-sB9H0Q?t=643)
+        - Your work can't replace the need for the original work.
+- Parody is often protected but satire is almost never protected.
+  - Parody comments on the underlying work.
+  - Satire comments on the world at large.
+
+---
+
+## Streaming Music
 ### [Twitch is in serious trouble](https://youtu.be/E7wnROhHBH4) by Hoeg Law
 - [Don't stream music on Twitch](https://youtu.be/E7wnROhHBH4?t=932)
 - [How to avoid DMCA notifications](https://youtu.be/E7wnROhHBH4?t=1253)
