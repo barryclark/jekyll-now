@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London June 2020: EXELERYS, DataStax, and CloudSkiff"
 description: "See three great talks by speakers from EXELERYS, DataStax, and CloudSkiff at the Cloud Native London meetup June 2020, hosted by Cheryl Hung, Director of Ecosystem at CNCF"
 location: London, UK
-image: https://secure.meetupstatic.com/photos/event/e/9/4/6/600_489119718.jpeg
+image: /images/June_CNL.PNG
 video: https://www.youtube.com/embed/yX2GoXB70iA
 tags:
   - Photos
