@@ -103,9 +103,9 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - F: DSGN 270 - [Social collaboration]({% link _posts/2020-11-27-social-collaboration.md %})
 
 ## Week 13: Nov 30 - Dec 4
-- M: DSGN 270 - [Tools, Income and Copyright]({% link _posts/2020-11-30-tools-income-copyright.md %})
+- M: DSGN 270 - [Social Income and Copyright]({% link _posts/2020-11-30-income-copyright.md %})
 - T: CPNT 264 - Career & Consulting Essentials
-- W: DSGN 270 - Student pick?
+- W: DSGN 270 - Contracting in Social Media
 - R: CPNT 265 - The Business of the Web
 - F: CPNT 265 - The Business of the Web
 

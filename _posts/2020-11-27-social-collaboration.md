@@ -61,4 +61,4 @@ Submit questions in the `breakfast-club` Slack channel and upvote your faves. No
 ---
 
 ## Clean-up Time!
-- [Tomorrow]({% link _posts/2020-11-30-tools-income-copyright.md %})
+- [Tomorrow]({% link _posts/2020-11-30-income-copyright.md %})
