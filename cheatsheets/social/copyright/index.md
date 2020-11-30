@@ -11,7 +11,14 @@ title: Streaming and Copyright
   <dd>"If the owner asserts their rights to their own content, your video will be removed from your channel and you will also receive a copyright strike. Three copyright strikes and your channel will be terminated. In extreme cases, you could find yourself in legal hot water and have to defend yourself in court."</dd>
 </dl>
 
-### [YouTuber Extortion? MxR Plays v. Jukin](https://youtu.be/5A_i-sB9H0Q) by Legal Eagle
+---
+
+**Tony is not a lawyer**, but we watches them on Youtube
+
+---
+
+### [YouTuber Extortion? MxR Plays v. Jukin](https://youtu.be/5A_i-sB9H0Q) 
+by Legal Eagle
 - [Summary of the situation](https://youtu.be/5A_i-sB9H0Q?t=78)
 - [Summary of American copyright law](https://youtu.be/5A_i-sB9H0Q?t=340)
 - [Review of the MxR videos in question](https://youtu.be/5A_i-sB9H0Q?t=721)
@@ -26,8 +33,6 @@ title: Streaming and Copyright
   - Tens of thousands of Patreon supporters -> ~$250,000/year (at $1-2$/month/Patron)
 
 ### Key Takeaways
-**Tony is not a lawyer**, but we watches them on Youtube
-
 - TLDR; Even if you have a valid claim of Fair Use, you can still get sued and it'll cost a lot of money to win.
 - See: [Canadian Copyright Basics](https://sait-wbdv.github.io/cheatsheets/copyright/)
 - American Copyright
@@ -52,7 +57,8 @@ title: Streaming and Copyright
 ---
 
 ## Streaming Music
-### [Twitch is in serious trouble](https://youtu.be/E7wnROhHBH4) by Hoeg Law
+### [Twitch is in serious trouble](https://youtu.be/E7wnROhHBH4) 
+by Hoeg Law
 - [Don't stream music on Twitch](https://youtu.be/E7wnROhHBH4?t=932)
 - [How to avoid DMCA notifications](https://youtu.be/E7wnROhHBH4?t=1253)
 - [Streaming in-game music](https://youtu.be/E7wnROhHBH4?t=1336)
