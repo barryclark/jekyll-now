@@ -3,6 +3,10 @@ layout: post
 title: Week 13M - Tools, Income and Copyright
 categories: dsgn270
 ---
+
+## Housekeeping
+- [DSGN 270 Assignment 3](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/)
+
 ## Home Work
 1. Income
     - [How Many YouTubers Actually Make a Living Doing This?](https://youtu.be/L7e0tkXPOjA)
@@ -16,13 +20,22 @@ categories: dsgn270
 
 ## 1. Online revenue streams
 
----
-
-## 2. Tools of the Trade
+**Cheat Sheet**: [Social Media and Income]({{site.baseurl}}/cheatsheets/social/income)
 
 ---
 
-## 3. Streaming and Copyright
+## 2. Streaming and Copyright
+
+**Cheat Sheet**: [Streaming and Copyright]({{site.baseurl}}/cheatsheets/social/copyright)
+
+---
+
+## Activities
+1. Calculate the Dream: Find your favourite Youtube streamer and calculate:
+    - How many videos do they publish per day/week/month?
+    - How many total views do they average per day/week/month?
+    - Based on a CPM of $1, how much does this channel make per month/year?
+2. Work on [DSGN 270 Assignment 3](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/social/assignment-3)
 
 ---
 
