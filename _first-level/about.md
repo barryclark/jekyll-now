@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 ### Justin Baum
-I am a student at the University of South Carolina studying Computer Science and have decided to drop my Math degree to pursue industry. I enjoy many fields, including Graph Theory, Elliptic Curve Arithmetic, and Complexity Theory, as well as many other things. I enjoy playing and watching basketball as well.
+I am a student at the University of South Carolina studying Computer Science and have decided to drop my math degree for a math minor to pursue industry. I enjoy many fields, including Graph Theory, Elliptic Curve Arithmetic, and Complexity Theory, as well as many other things. I enjoy playing and watching basketball as well.
 
 I currently work as a Software Engineer at NineFX Inc, where I have been working since August 2018. Previously I had only had experience working on projects solely by myself.
 
