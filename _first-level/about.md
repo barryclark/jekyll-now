@@ -5,15 +5,16 @@ permalink: /about/
 ---
 
 ### Justin Baum
-I am a student at the University of South Carolina studying Mathematics and Computer Science. I enjoy many fields, including Graph Theory, Elliptic Curve Arithmetic, and Complexity Theory, as well as many other things. I enjoy playing and watching basketball as well.
+I am a student at the University of South Carolina studying Computer Science and have decided to drop my Math degree to pursue industry. I enjoy many fields, including Graph Theory, Elliptic Curve Arithmetic, and Complexity Theory, as well as many other things. I enjoy playing and watching basketball as well.
 
-I currently work as a Software Engineer Intern at NineFX Inc, where I have been working since August 2018. Previously I had only had experience working on projects solely by myself.
+I currently work as a Software Engineer at NineFX Inc, where I have been working since August 2018. Previously I had only had experience working on projects solely by myself.
 
-I currently am the Treasurer at [ACM@USC](https://acm.cse.sc.edu).
+I currently am the President at [ACM@USC](https://acm.cse.sc.edu).
 
 I really enjoy writing Ocaml, Haskell, Python, C++, and Java, in that order, but esoteric projects are not only a major interest for me, but pretty much all I do.
 
 Awards:
+* 2020 USC@ACM Codeathon Coordinator 
 * 2019 USC@ACM Fall Codeathon 145/146/240/350 Coordinator and Problem Writer
 * 2019 Fall - Pi Mu Epsilon Mathematics Society Member
 * 2019 USC@ACM Spring Codeathon 240: 1st Place
