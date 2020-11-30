@@ -48,7 +48,7 @@ def someFunctionReturningNan():
     """
     On POSIX this should fail
 
-    >>> someFunctionReturingNan()
+    >>> someFunctionReturningNan()
     NaN
 
     On Windows the following should fail.
@@ -70,38 +70,17 @@ When run `python3 test.py -v`:
 
 ```
 $ python3 test.py -v
-Trying:
-    someFunctionReturingNan()
-Expecting:
-    NaN
 **********************************************************************
-File "/Users/justinbaum/.../test.py", line 7, in __main__.someFunctionReturningNan
+File "/Users/justinbaum/justinba1010.github.io/test.py", line 7, in __main__.someFunctionReturningNan
 Failed example:
-    someFunctionReturingNan()
-Exception raised:
-    Traceback (most recent call last):
-      File "/usr/local/Cellar/python@3.9/3.9.0_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/doctest.py", line 1336, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest __main__.someFunctionReturningNan[0]>", line 1, in <module>
-        someFunctionReturingNan()
-    NameError: name 'someFunctionReturingNan' is not defined
-Trying:
     someFunctionReturningNan()
-Expecting:
+Expected:
+    NaN
+Got:
     nan
-ok
-Trying:
-    isnan(someFunctionReturningNan())
-Expecting:
-    True
-ok
-1 items had no tests:
-    __main__
 **********************************************************************
 1 items had failures:
    1 of   3 in __main__.someFunctionReturningNan
-3 tests in 2 items.
-2 passed and 1 failed.
 ***Test Failed*** 1 failures.
 ```
 
