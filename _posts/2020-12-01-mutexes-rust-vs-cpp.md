@@ -8,7 +8,7 @@ date: 2020-12-01
 #description:
 #permalink:
 title: 'Mutexes in Rust and C++: Protecting Data versus Protecting Code'
-comments_id: 
+comments_id: 17
 ---
 
 I have been using Rust in production for a couple of months now and there is lots about it that I like. One neat thing is that Rust's compile time guarantees make memory and thread safety much harder to mess up from the get go. This allows Rust programmers to confidently use some paradigms that are harder to use correctly in C++. One such example is protecting shared data with mutexes, which works very differently in Rust than in C++. This post is about exploring those fundamental differences.
