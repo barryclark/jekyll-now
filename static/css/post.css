@@ -239,6 +239,25 @@ article#postArticle p.imgParent {
 	position: relative;
 }
 
+article#postArticle p.imgParent ~ p.imgParent {
+	background: transparent;
+}
+
+article#postArticle p.imgParent ~ p.imgParent:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 9%;
+	left: 12%;
+	right: 12%;
+	bottom: 3%;
+
+	filter: blur(40.48px);
+	opacity: 0.25;
+	background: #797979;
+	z-index: -1;
+}
+
 @media all and (max-width: 1000px) {
 	article#postArticle p.imgParent {
 		margin-left: -60px;
@@ -259,14 +278,14 @@ article#postArticle p.imgParent {
 	}
 }
 
-article#postArticle p.imgParent img {
+article#postArticle p img {
 	display: block;
 }
 
-article.ipad p.imgParent img {
+article.ipad p img {
 	width: 100%;
 }
 
-article.iphone p.imgParent img {
+article.iphone p img {
 	width: 70%;
 }
