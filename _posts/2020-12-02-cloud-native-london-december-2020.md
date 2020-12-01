@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Cloud Native London December 2020: solo.io, Nectar, and Red Sift"
-description: "three fantastic speakers from solo.io, Nectar, and Red Sift join us at the Cloud Native London meetup December 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
+title: "Cloud Native London December 2020: Solo.io, Nectar, and Red Sift"
+description: "three fantastic speakers from Solo.io, Nectar, and Red Sift join us at the Cloud Native London meetup December 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
 image: https://secure.meetupstatic.com/photos/event/e/9/4/6/600_489119718.jpeg
 video: https://www.youtube.com/embed/gjs5MT05ZRo
@@ -13,20 +13,20 @@ tags:
 published: false
 ---
 
-Hang out with us and three great speakers from solo.io, Nectar, and Red Sift at the December Cloud Native London virtual meetup, on Rambly and YouTube from 6:30pm GMT!
+Hang out with us and three great speakers from Solo.io, Nectar, and Red Sift at the December Cloud Native London virtual meetup, on Rambly and YouTube from 6:30pm GMT!
 
 [Join us on Rambly](https://rambly.app/#/rooms/twitch:cloudnativelon) or catch the Youtube livestream.
 
 ### Our agenda for 2nd December 2020 is (times in GMT):
 
 * 6:45 Kick off
-* 7:15 The challenges of exposing and connecting microservices (Denis Jannot, solo.io)
+* 7:15 The challenges of exposing and connecting microservices (Denis Jannot, Solo.io)
 * 7:45 Sharing Kubernetes Apps: Can we do Better? (Xavier Millot, Nectar)
 * 8:15 Break
 * 8:30 Moving to the cloud with evidence (Peter Parkanyi, Red Sift)
 * 9:00 Wrap up
 
-We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [Palo Alto Networks](https://www.paloaltonetworks.com/), and [Nectar](https://www.codenectar.com/) for your enthusiastic and generous support and sponsorship.
+We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/) and [Palo Alto Networks](https://www.paloaltonetworks.com/) for your enthusiastic and generous support and sponsorship.
 
 ## Cloud Native London January
 
