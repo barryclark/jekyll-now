@@ -52,7 +52,7 @@ A "loss-making innovation" would sound like a 3-word joke. In the case of neoban
 resulted in radically smaller operating costs (no branches, less staff, simpler IT systems).  
 But what are the tangible benefits for the customer?  
 Is the customer's life made substantially easier? <sup>[2](#footnote_2)</sup> Are there economic benefits and incentives 
-for the customer? If the benefits are limited, is there a convincing story or ["higher purpose"][15] that the company 
+for the customer? If the benefits are limited, is there a convincing story or ["higher purpose"][15] that the innovation 
 embodies, which would do the trick?      
 Are the incentives and business story enough for the customer to adopt the offering (and also abandon the competitors)? 
 Will the customer's perception and experience be superior to other offerings? How will that be?
@@ -64,11 +64,10 @@ Is the differentiating factor the complex application of technology, back-end pr
 all of the above? Is it by any chance something that is already covered by an existing patent, real or [troll][16]? <sup>[4](#footnote_4)</sup>   
 How long would it take someone else to figure things out, implement and successfully launch?
 
-
 You may have noticed that this section is full of questions and provides few answers. That is because there is no 
 prescription for innovation. Instead it is a slightly nebulous concept, sharing many similarities to the [economic moat][7] 
 of mature companies.  
-I think it is no coincidence that a lot of startups are touting Artificial Intelligence (AI), or blockchain and smart 
+I think it is no coincidence that a lot of startups are touting Artificial Intelligence (AI) or blockchain and smart 
 contracts as their innovation advantage in their pitch decks. These are equally powerful (when used correctly) as much 
 as they are opaque to scrutiny from other stakeholders (if used incorrectly). They are easier to initially claim as 
 innovative difference (and harder to actually apply in practice), 
@@ -80,7 +79,10 @@ But, over time, you can kind-of guess a [good moat][8] when you see it.
 
 ## And a word on invention
 
-It is worth noting that innovation is different to invention. Again, going back to the [textbook definition][10]  
+![Invention](../assets/images/angel-part3/pexels-thisisengineering-3861457.jpg)
+> Photo by ThisIsEngineering from Pexels
+
+It is worth noting that invention is different to innovation. Again, going back to the [textbook definition][10]  
 > An invention is a unique or novel device, method, composition or process...  An invention that achieves a completely 
 > unique function or result may be a radical breakthrough. Such works are novel and not obvious to others skilled in the 
 > same field.
@@ -92,8 +94,8 @@ This is because of two key reasons:
 
 * **Creation of new processes**  
 We may not realise it, but almost every item around us requires a number of processes built and tailored around it. From 
-safety usage guidelines, to manufacturing processes to supply chains and economies of scale. All of these "secondary 
-things" are what makes products accessible and profitable.  
+safety usage guidelines, to manufacturing processes and equipment to supply chains and economies of scale. All of these 
+"secondary things" are what makes products accessible and profitable.  
 A true invention may lack some or all of these from the get-go. 
 
 * **Market recognition and adoption**  
@@ -109,8 +111,8 @@ potentially much greater.
 
 Let's drive this argument home with a widely known example: Bitcoin.    
 When the [Satoshi whitepaper][12] was first published in October 2008, Bitcoin had all the characteristics of an invention. 
-Had Bitcoin been invented by a commercial enterprise, it would be impossible to market it as a hard money alternative, 
-let alone true hard money. Other than a small group of digital money enthusiasts, it was something completely new. That 
+If Bitcoin had been invented by a commercial enterprise, it would be impossible to market it as a money alternative, 
+let alone true hard money. Other than a small group of cryptography enthusiasts, it was something completely new. That 
 fictitious enterprise would have [probably gone bankrupt][13] for lack of traction, if viewed under a "conservative" lens.
 
 Fast forward 12 years later.  
@@ -123,12 +125,119 @@ solutions. Bitcoin now has firm and exponential traction with a growing part of 
 ![Letter D](../assets/images/angel-part3/arthur-mazi-6148mnVnY-s-unsplash.jpg)
 > Photo by Arthur Mazi on Unsplash
 
-2 aspects here somewhat related
+The next aspect to consider is composed of
+2 aspects 
+somewhat related
 
 ## Distribution
 
-the Where of the business
+Distribution is the "Where" of the business
 i.e. where does the business "meet" its customers
+
+2 interrelated concepts
+
+Let's give an example of a completely fictitious product to highlight and discuss these concepts. <sup>[6](#footnote_6)</sup>
+ 
+> The business is using [OpenBanking][17] to allow one-click checkouts and payments in physical retail stores.  
+> When paying, the customer is presented with a QR code to scan with her smartphone. This triggers an [OpenBanking 
+> authorisation][18] and completes the payment from customer to merchant. 
+
+### Customer service
+The first element of distribution is "customer service"
+
+What will be the channels or touch-points through which the business serves its customers?
+How will the product/service be delivered and used by customers? Will the channel be a digital or a physical one? 
+Can the business confidently implement the channel and easily scale it, once it gains traction? 
+
+In the example product above (OpenBanking checkout) the distribution channel almost stands out: mobile.  
+The minimum viable product is a mobile app which will allow the consumer to scan the QR code and start the payment process
+This electronic channel requires some specific skills from the company, for example  
+* mobile development engineering: support for iPhone and Android
+* UX design: seamless user experience 
+* backend systems: secure communications, data handling etc to support the transaction.
+
+This also inevitably points to 2 different things: 
+* **App installation**  
+The only way of getting the app on consumer's phones is via the major [app stores][20]. This means establishing a 
+relationship with Apple/Google and ensuring that the app conforms to their T&Cs.
+* **Customer support**  
+The mobile app is the "way in" to the system for the consumer 
+it will also be the main channel for support in case things go wrong
+This means the app must provide a straight-forward way for company support agents to communicate with (and solve issues of)
+the payer
+
+The payer mobile app is not the end of the story.  
+There is another distribution channel which is crucial for the success of the business: the "physical presence" in the 
+merchant's store. This is a requirement for the generation of the QR code for the shopper
+This could be done in a number of ways: a small tablet where the merchant types in the price, maybe something connected 
+to the existing [POS terminal][19] to generate the QR code automatically or something else.
+
+In all cases, the business must be able to do the following  
+* **Merchant partnership**  
+Establish a partnership with the merchant 
+Give incentives to join the network 
+Right level of discounts and promotions
+Make sure they are fit to join the network: KYC and AML 
+And then make sure they stay in Engagement, regular communications  
+feeling valued 
+
+* **Device procurement and installation**  
+If the business chooses a physical device to generate the QR code
+it will need to create a supply chain to get it to the hands of the merchants
+design, produce, order and ship it, all in a timely manner so that there are no delays
+
+* **Merchant support**    
+After the merchant has joined 
+need to offer support
+from the moment they unpack and try to install the device 
+to many months later when the system is down 
+or they have questions about a payment
+
+It becomes clear that our fictitious business has the characteristics of a [Platform][1], 
+as defined in [Part 1][1] 
+Therefore it needs to establish and maintain 2 separate customer service channels  
+
+### Customer acquisition 
+
+![Waiting for customers](../assets/images/angel-part3/adli-wahid-l5HwCfSXMt0-unsplash.jpg)
+> Photo by Adli Wahid on Unsplash
+
+We touched upon the economics of customer acquisition when [discussing CAC in Part 2][21] 
+This section is about the mechanics and the rationale
+
+
+
+From a "costs and numbers" point-of-view, we can distinguish these channels in 2 broad categories. 
+
+
+
+* **Online**  
+Online customer acquisition is almost a [new science field][36]. It continuously grows and spurs new completely different 
+verticals. Each one with its own considerations and expense profile. A quick list  
+  * [Organic SEO][42]: The business is attracting attention based on the content it produces 
+  * [Keyword auctions][38], [PPC][37] and [banners][39]: Displaying advertisements on search results and platforms, after 
+  price bidding for the slot. The actual bidding mechanism may be [completely different][40] for each platform.  
+  * [Affiliate networks][41]
+  * [Influencers][43], the evolution of affiliate networks for a video-first age
+
+* **Offline**  
+This is all types of old-school marketing. A non-exhaustive list of offline channels  
+  * Traditional marketing: TV, radio and print advertisements, outdoor signage,...
+  * Trade shows and conferences: This has traditionally been the most efficient way to get a lot of people's focused 
+  attention. It remains to be seen what will happen post-COVID.
+  * In-person meetings: From in-person [drug marketing][44] to pre-sales demos and "warming up" decision-makers in the 
+  enterprise space 
+
+The second question to answer is *How much will it cost?*.
+
+Online is almost always on a pay-as-you-go basis, which is friendlier to company cash flow. However due to large 
+competition for advertising space auctions, the business can easily have runaway marketing costs. It is important to 
+have realistic [projections and estimations][45] for online CAC.   
+
+Offline marketing tends to be upfront investment, in large chunks. For example printing leaflets, running a radio 
+campaign, setting up a kiosk and exhibiting at a conference. The important thing is to have realistic estimations as to  
+* how much offline marketing will cost (this implies some knowledge of the marketing space prices)
+* how much offline marketing *should* cost in order to be effective. <sup>[5](#footnote_5)</sup> 
 
 online 
 keyword bidding 
@@ -164,7 +273,7 @@ The How of the business
 
 Talk about 
 the letter T (Team, the "Who" of the business)
-and discuss on your approach as an angel 
+and discuss your approach as an angel 
 
 Keep safe!
 
@@ -180,7 +289,8 @@ becomes successful. The existence (or not) of patents really does not matter in 
 business model is built [around patents][1].  
 5. <a name="footnote_5"></a>I am using the word market in the widest possible sense: from companies and government 
 institutions to the general public. 
- 
+6. <a name="footnote_6"></a>In this context, let's disregard every other aspect which could make this particular 
+example venture unfeasible.
 
 
   [1]: https://sgerogia.github.io/Angel-investing-Part-1/
@@ -199,3 +309,8 @@ institutions to the general public.
   [14]: https://howbankswork.com/banking-framework/channels/
   [15]: https://sujanpatel.com/marketing/7-companies-killing-brand-driven-storytelling/
   [16]: https://www.investopedia.com/terms/p/patent-troll.asp
+  [17]: https://www.openbanking.org.uk/customers/what-is-open-banking/
+  [18]: https://sgerogia.github.io/OpenBanking-Part2/
+  [19]: https://en.wikipedia.org/wiki/Point_of_sale
+  [20]: https://en.wikipedia.org/wiki/App_store
+  [21]: https://sgerogia.github.io/Angel-investing-Part-2/#:~:text=Customer%20Acquisition%20Cost
