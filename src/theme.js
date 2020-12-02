@@ -1,11 +1,12 @@
-const TInput = {
-  classes: 'border-2 block w-full rounded text-gray-800',
-  // Optional variants
+const TTitle = {
+  classes: '',
   variants: {
-    // ...
-  },
-  // Optional fixedClasses
-  // fixedClasses: '',
+    heading: 'text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9',
+    body: 'mt-2 text-base leading-6 text-gray-500',
+    subtitle: 'text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase',
+    badge: 'px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800',
+    link: 'text-indigo-600 hover:text-indigo-900 underline'
+  }
 }
 
 const TButton = {
@@ -20,8 +21,8 @@ const TButton = {
 }
 
 const settings = {
-  TInput,
-  TButton,
+  TTitle,
+  TButton
 }
 
 export default settings

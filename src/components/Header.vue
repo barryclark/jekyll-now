@@ -40,6 +40,7 @@ img {
   height: initial;
 }
 nav {
+  background-color: initial;
   display: flex;
   height: initial;
   justify-content: space-between;
@@ -75,11 +76,13 @@ a {
   color: #42b983;
 }
 .header {
-  background-color: #2F7DC0;
-  background-image: url('../assets/tachikawa_back_03.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right top;
+  background: url('../assets/border-bg.svg') repeat center center;
+  background-color: #fff;
+  color: #0F0F0F;
+  height: 64px;
+  margin-bottom: initial;
+  position: fixed;
+  z-index: 100;
 }
 .inner-icon {
   margin: 12px;
