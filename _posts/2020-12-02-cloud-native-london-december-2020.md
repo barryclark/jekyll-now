@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2020"
-published: false
 ---
 
 Hang out with us and three great speakers from Solo.io, Nectar, and Red Sift at the December Cloud Native London virtual meetup, on Rambly and YouTube from 6:30pm GMT!
