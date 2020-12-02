@@ -13,7 +13,6 @@ categories: dsgn270
 ---
 
 ## 2. Social for Nerds: Pull Requests
-See:
 - [How to make your first pull request on GitHub](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/)
 - [DSGN 270 Assignment 4](https://github.com/sait-wbdv/assessments/tree/master/dsgn270/#assignment-4-fork-and-fix)
 

@@ -105,9 +105,9 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 ## Week 13: Nov 30 - Dec 4
 - M: DSGN 270 - [Social Income and Copyright]({% link _posts/2020-11-30-income-copyright.md %})
 - T: CPNT 264 - Career & Consulting Essentials
-- W: DSGN 270 - Contracting in Social Media
-- R: CPNT 265 - The Business of the Web
-- F: CPNT 265 - The Business of the Web
+- W: DSGN 270 - [Dark Social, Nerdy Social]({% link _posts/2020-11-30-dark-social-nerdy-social.md %})
+- R: CPNT 265 - AARRR Metics and agile
+- F: CPNT 265 - Presentation Secrets of Steve Jobs
 
 ## Week 14: Dec 7-11
 - M: CPNT 264 - Career & Consulting Essentials
