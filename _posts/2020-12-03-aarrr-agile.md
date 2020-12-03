@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Week 13R - AARRR Metrics and Agile Development
-categories: cpnt262
+categories: cpnt265
 
 ---
 
