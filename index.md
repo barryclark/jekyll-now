@@ -119,6 +119,6 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 ## Week 15: Dec 14-18 
 - M: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-14-flex-day-03.md %})
 - T: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-15-flex-day-04.md %})
-- W: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-15-flex-day-05.md %})
-- R: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-15-flex-day-06.md %})
+- W: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-16-flex-day-05.md %})
+- R: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-17-flex-day-06.md %})
 - F: [Final Presentations]({% link _posts/2020-12-18-final-presentations.md %})
