@@ -4,6 +4,8 @@ title: Week 13F - Group Selection and Product Ideation
 categories: cpnt265
 ---
 
+**9am Start**
+
 ## Homework
 1. Project Ideas!
     - Watch: [Lean Canvas Step-by-step](https://youtu.be/7o8uYdUaFR4)
