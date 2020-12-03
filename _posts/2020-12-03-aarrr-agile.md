@@ -21,7 +21,7 @@ Video: [AAARR](https://www.youtube.com/watch?v=CcDpxG_Wz-k)
 ## 3. Agile and Lean Canvas
 - [Agile Methodologies]({{site.baseurl}}/cheatsheets/business/agile)
 - Example: [Lean Canvas Intro - Uber](https://youtu.be/pvIN9STpzCQ)
-
+- [Lean Canvas Step-by-step](https://youtu.be/7o8uYdUaFR4)
 ### Activity
 1. Form groups of 3-4 (these will not be your final group for Assignment 1 and 2)
 2. Create an imaginary product or service to practice the Lean Canvas
