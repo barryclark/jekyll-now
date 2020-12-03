@@ -9,6 +9,7 @@ categories: cpnt265
 2. Portfolio Ideas!
 3. E-commerce research
     - [Shopify/Etsy/Shopping Cart Cheatsheets](https://sait-wbdv.github.io/cheatsheets/business/ecommerce/)
+4. Ask for a Flywheel trial extension
 
 ---
 
