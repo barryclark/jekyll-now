@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Week 13F - Presentation Secrets and Ideation
+title: Week 13F - Group Selection and Product Ideation
 categories: cpnt265
 ---
 
 ## Homework
 1. Project Ideas!
-2. E-commerce research
+2. Portfolio Ideas!
+3. E-commerce research
     - [Shopify/Etsy/Shopping Cart Cheatsheets](https://sait-wbdv.github.io/cheatsheets/business/ecommerce/)
 
 ---
