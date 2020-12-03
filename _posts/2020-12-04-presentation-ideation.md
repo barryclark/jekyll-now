@@ -2,18 +2,24 @@
 layout: post
 title: Week 13F - Presentation Secrets and Ideation
 categories: cpnt265
+---
+
+## Homework
+1. Project Ideas!
+2. E-commerce research
+    - [Shopify/Etsy/Shopping Cart Cheatsheets](https://sait-wbdv.github.io/cheatsheets/business/ecommerce/)
 
 ---
 
-## 1. Presentation Secrets of Steve Jobs
+## 1. Group Selection
 
 ---
 
-## 2. Idea Pitches
+## 2. Lean Canvas
 
 ---
 
-## 3. Group Selection
+## 3. Idea Pitches
 
 ---
 
