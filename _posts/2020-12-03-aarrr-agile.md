@@ -32,3 +32,4 @@ Video: [AAARR](https://www.youtube.com/watch?v=CcDpxG_Wz-k)
 ---
 
 ## Clean-up Time!
+- [Tomorrow]({% link _posts/2020-12-04-presentation-ideation.md %})
