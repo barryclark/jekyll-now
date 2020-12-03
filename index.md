@@ -112,13 +112,13 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 ## Week 14: Dec 7-11
 - M: CPNT 264 - [Career & Consulting Essentials]
 - T: CPNT 264 - [Career & Consulting Essentials]
-- W: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-09-flex-day-01.md %})
-- R: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-10-flex-day-02.md %})
-- F: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-11-mvp-presentations.md %})
+- W: CPNT 265 - [Flex Day 01]({% link _posts/2020-12-09-flex-day-01.md %})
+- R: CPNT 265 - [Flex Day 02]({% link _posts/2020-12-10-flex-day-02.md %})
+- F: CPNT 265 - [MVP Presentation]({% link _posts/2020-12-11-mvp-presentations.md %})
 
 ## Week 15: Dec 14-18 
-- M: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-14-flex-day-03.md %})
-- T: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-15-flex-day-04.md %})
-- W: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-16-flex-day-05.md %})
-- R: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-17-flex-day-06.md %})
+- M: CPNT 265 - [Flex Day 03]({% link _posts/2020-12-14-flex-day-03.md %})
+- T: CPNT 265 - [Flex Day 04]({% link _posts/2020-12-15-flex-day-04.md %})
+- W: CPNT 265 - [Flex Day 05]({% link _posts/2020-12-16-flex-day-05.md %})
+- R: CPNT 265 - [Flex Day 06]({% link _posts/2020-12-17-flex-day-06.md %})
 - F: [Final Presentations]({% link _posts/2020-12-18-final-presentations.md %})
