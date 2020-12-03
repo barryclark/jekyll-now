@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Web Development: Contracting
+title: Web Development - Contracting
 ---
 
 ## DNS Enumeration Audit

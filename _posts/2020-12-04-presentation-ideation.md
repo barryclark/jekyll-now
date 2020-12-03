@@ -5,15 +5,15 @@ categories: cpnt262
 
 ---
 
-## 1. 
+## 1. Presentation Secrets of Steve Jobs
 
 ---
 
-## 2. 
+## 2. Idea Pitches
 
 ---
 
-## 3. 
+## 3. Group Selection
 
 ---
 
