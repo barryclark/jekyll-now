@@ -21,7 +21,7 @@ categories: cpnt265
 
 ---
 
-## 2. Lean Canvas
+## 2. Lean Canvas Ideation
 
 ---
 
