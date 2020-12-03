@@ -12,7 +12,7 @@ title: Introduction to E-commerce
     - Wholesale Ted
       - [Create a Dropshipping Store with Shopify & Aliexpress (UPDATED Shopify Tutorial for 2019)](https://www.youtube.com/watch?v=Fsq6ohxLQX4)
     - Sebastian Ghiorghiu
-      - [Dropshipping In 2019 - 2020 | Everything You Should Know](https://www.youtube.com/watch?v=7hpIRP8Nph8)
+      - [Dropshipping In 2019 - 2020: Everything You Should Know](https://www.youtube.com/watch?v=7hpIRP8Nph8)
     - Justin Painter
       - shortcut: [Meme page and Influencer MArketing](https://youtu.be/1SAsQis-8eg?t=519)
   - print on demand
@@ -29,7 +29,7 @@ title: Introduction to E-commerce
       - [195](https://youtu.be/yiWQqHQ-KcM?t=195): Hire a designer (and get yourself out of the picture)
       - [490](https://youtu.be/yiWQqHQ-KcM?t=490): e-books
 - Etsy
-    - [Etsy vs Shopify Pros and Cons | Which is right for you?](https://www.youtube.com/watch?v=_nMrGWkchgs) by Merch Lifestyle
+    - [Etsy vs Shopify Pros and Cons: Which is right for you?](https://www.youtube.com/watch?v=_nMrGWkchgs) by Merch Lifestyle
 
 ## Buying and selling products or services online Web
 - Email
