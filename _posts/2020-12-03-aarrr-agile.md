@@ -12,9 +12,9 @@ categories: cpnt265
 
 ---
 
-## 2. AAARR Metrics
+## 2. AARRR Metrics
 
-Video: [AAARR](https://www.youtube.com/watch?v=CcDpxG_Wz-k)
+Video: [AARRR](https://www.youtube.com/watch?v=CcDpxG_Wz-k)
 
 ---
 
