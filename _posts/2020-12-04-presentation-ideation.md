@@ -6,6 +6,7 @@ categories: cpnt265
 
 ## Homework
 1. Project Ideas!
+    - [Lean Canvas Step-by-step](https://youtu.be/7o8uYdUaFR4)
 2. Portfolio Ideas!
 3. E-commerce research
     - [Shopify/Etsy/Shopping Cart Cheatsheets](https://sait-wbdv.github.io/cheatsheets/business/ecommerce/)
