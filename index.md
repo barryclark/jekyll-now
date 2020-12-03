@@ -106,19 +106,19 @@ Sunday, Oct 4 @ 8pm: [CPNT 260 Assignment 2 Due](https://github.com/sait-wbdv/as
 - M: DSGN 270 - [Social Income and Copyright]({% link _posts/2020-11-30-income-copyright.md %})
 - T: CPNT 264 - Career & Consulting Essentials
 - W: DSGN 270 - [Dark Social, Nerdy Social]({% link _posts/2020-12-02-dark-social-nerdy-social.md %})
-- R: CPNT 265 - AARRR Metics and agile
-- F: CPNT 265 - Presentation Secrets of Steve Jobs
+- R: CPNT 265 - [AARRR Metics and agile]({% link _posts/2020-12-03-aarrr-agile.md %})
+- F: CPNT 265 - [Presentation Secrets of Steve Jobs]({% link _posts/2020-12-04-presentation-ideation.md %})
 
 ## Week 14: Dec 7-11
-- M: CPNT 264 - Career & Consulting Essentials
-- T: CPNT 264 - Career & Consulting Essentials
-- W: CPNT 265 - The Business of the Web
-- R: CPNT 265 - The Business of the Web
-- F: CPNT 265 - The Business of the Web
+- M: CPNT 264 - [Career & Consulting Essentials]
+- T: CPNT 264 - [Career & Consulting Essentials]
+- W: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-09-flex-day-01.md %})
+- R: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-10-flex-day-02.md %})
+- F: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-11-mvp-presentations.md %})
 
 ## Week 15: Dec 14-18 
-- M: CPNT 265 - The Business of the Web
-- T: CPNT 265 - The Business of the Web
-- W: CPNT 265 - The Business of the Web
-- R: CPNT 265 - The Business of the Web
-- F: Final Presentations
+- M: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-14-flex-day-03.md %})
+- T: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-15-flex-day-04.md %})
+- W: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-15-flex-day-05.md %})
+- R: CPNT 265 - [The Business of the Web]({% link _posts/2020-12-15-flex-day-06.md %})
+- F: [Final Presentations]({% link _posts/2020-12-18-final-presentations.md %})
