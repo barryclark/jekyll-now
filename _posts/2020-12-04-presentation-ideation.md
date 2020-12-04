@@ -27,6 +27,8 @@ categories: cpnt265
 ---
 
 ## 2. Lean Canvas
+1. Code Skull Demo
+2. Breakout sessions
 
 ---
 
