@@ -19,15 +19,18 @@ categories: cpnt265
 
 ---
 
-## 1. Group Selection
+## 1. Tony's Repo Pitch
+
+[Code Skull](https://github.com/codeskull)
+  - [Project Homepage](https://codeskull.github.io/)
 
 ---
 
-## 2. Lean Canvas Ideation
+## 2. Lean Canvas
 
 ---
 
-## 3. Idea Pitches
+## 3. Pitches
 
 ---
 
