@@ -6,7 +6,7 @@ permalink: /log/
 images:
 
   - image_path: ../images/spun_yarn_coopworth.jpg
-    title: Coopworth Knobbly
+    title: Coopworth Knobbly (Coopworth)
     desc: One of my first spinning efforts, and the first fleece I ever bought. The fiber preparation and the spinning are very uneven and the fleece itself was all sorts of different shades of brown and grey, so the resulting yarn is all over the place.
     weight: 1229
     gauge: 687
@@ -14,7 +14,7 @@ images:
     date: 2008-01-20
 
   - image_path: ../images/spun_yarn_ashford.jpeg
-    title: Ashford Brick
+    title: Ashford Brick (Merino)
     desc: This yarn was an early learning experience, using commercially dyed Merino roving from Ashford. 
     weight: 242
     gauge: 827
