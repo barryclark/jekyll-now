@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London December 2020: Solo.io, Nectar, and Red Sift"
 description: "three fantastic speakers from Solo.io, Nectar, and Red Sift join us at the Cloud Native London meetup December 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
-image: /images/CNL_2020-12-02_Rambly.jpp
+image: /images/CNL_2020-12-02_Rambly.jpg
 video: https://www.youtube.com/embed/3MG3ZR6_IRM
 tags:
   - Photos
