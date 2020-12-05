@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hey, I go by vel0rum and I'm currently working in the field of defensive network operations (blue team stuff). In the next few years I want to transition into penetration testing (red team stuff). 
+
+I'll be doing a number of qualifications and training courses and basically writing down here everything I learn. I may also upload a video or two to YouTube so I can reference them later/use for revision. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm 26 years old and live in the UK.
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[](mailto:email@domain.com)
