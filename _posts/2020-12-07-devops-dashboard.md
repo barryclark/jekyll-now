@@ -3,7 +3,7 @@ layout: post
 title: "Getting full transparency throughout your DevOps process"
 subtitle: 
 category: dev
-tags: [development, devops, monitoring]
+tags: [development, devops]
 author: Frank Enders
 editor_email: frank.enders@haufe-lexware.com
 header-img: "images/new/Exportiert_15.jpg"
