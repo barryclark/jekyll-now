@@ -6,7 +6,7 @@ category: dev
 tags: [development, devops, monitoring]
 author: Frank Enders
 editor_email: frank.enders@haufe-lexware.com
-header-img: "images/new/Exportiert_45.jpg"
+header-img: "images/new/Exportiert_15.jpg"
 ---
 
 # Getting full transparency throughout your DevOps process
