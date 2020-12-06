@@ -110,7 +110,7 @@ The dashboard we ended up with, is [Smashing](https://smashing.github.io/), the 
 Smashing allows placing widgets on a board, which fetch their data from arbitrary sources but presenting them in a unified way and a unified layout.
 There is a [whole bunch of widgets available](https://github.com/Smashing/smashing/wiki/Additional-Widgets) to fetch data from certain services (e.g. _GitLab_, _GitHub_, _Google Analytics_, _NewRelic_, _Jira_, ...). Nevertheless, it is quite easy to write widgets to present data from any service, which provides some kind of API access.
 
-## Connecting a custom source
+### Connecting a custom source
 
 Connecting to a custom data source is quite easy. Dashing/Smashing uses so-called `Jobs` to periodically fetch data from various sources and display the metrics on the board.
 These `Jobs` are Ruby files and are located within your dashboard's `jobs` subfolder. 
@@ -227,7 +227,7 @@ def getFurtherMetrics(baseUri, accessToken, groupId, artifactId)
 end
 ```
 
-## Embed already rendered widgets
+### Embedding already rendered widgets
 
 Besides the possibility to render sever meters / widgets from source data, `Smashing` also allows integrating already rendered widgets. This is done using the `data-view="Iframe"`. We are using this to embed a full page Kibana dashboard (using max values for `data-sizex` and `data-sizey`):
 
@@ -243,7 +243,7 @@ Besides the possibility to render sever meters / widgets from source data, `Smas
 
 TIP: The `embed=true` URL parameter leads to hiding unnecessary control elements, like the search bar. So it automatically opens it in full-screen mode.
 
-## Automatically browse through several dashboards
+### Automatically browse through several dashboards
 
 As shown above, one quickly has more meters than fit on one screen. To keep your dashboards neat and clear - allowing spotting the most important elements at first glance - you can consider splitting the meters to various dashboards.
 
@@ -255,7 +255,7 @@ Having the plugin installed and configured, you can start the browsing mode by a
 https://your.dashboard:3030/_cycle?duration=30
 ```
 
-## Securing access
+### Securing access
 
 Depending on where you run the dashboard and which data it contains, you may want to restrict access to it.
 That can be done i.e. via `BasicAuth`. Within Dashing's configuration (`config.ru`) you'll find a placeholder for it:
@@ -301,7 +301,7 @@ DashingContrib.configure do
 end
 ```
 
-## Dockerize the Dashboard
+### Dockerize the Dashboard
 
 Finally, we dockerized the dashboard. Allowing us to deploy it to a local workstation, which is attached to a big screen, or to deploy it to some cloud service - which for sure is needed if you have distributed teams. Or, like these days, home-office becomes more important.
 
@@ -316,7 +316,7 @@ By that, technology helps to support the culture, whereas culture leads to impro
 
 ## Endnotes and Literature
 
-<a name="manif">1</a>: Aiming in that direction, Jez Humble, author of `Continuous Delivery (2010)`, felt the urge starting to work on a [`DevOps Manifesto`](https://sites.google.com/a/jezhumble.net/devops-manifesto/), which stresses `DevOps` to be rather a "philosophy" and a "cultural, professional movement with attitude and values" rather than "a role, a set of tools" or "a prescriptive process".
+<a name="manif">1</a>: Aiming in that direction, Jez Humble, author of `Continuous Delivery (2010)`, felt the urge starting to work on a [`DevOps Manifesto`](https://sites.google.com/a/jezhumble.net/devops-manifesto/), which stresses `DevOps` to be rather a "_philosophy_" and a "_cultural, professional movement with attitude and values_" rather than "_a role, a set of tools_" or "_a prescriptive process_".
 
 <a name="rep">2</a>: `rep`: [State of DevOps Report](https://puppet.com/resources/)
 
