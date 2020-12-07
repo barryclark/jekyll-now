@@ -115,7 +115,7 @@ There is a [whole bunch of widgets available](https://github.com/Smashing/smashi
 Connecting to a custom data source is quite easy. Dashing/Smashing uses so-called `Jobs` to periodically fetch data from various sources and display the metrics on the board.
 These `Jobs` are Ruby files and are located within your dashboard's `jobs` subfolder. 
 
-The relevant parts of our job, which fetches data from `SonarQube` look like this:
+The relevant parts of our job, which fetches data from `SonarQube` looks like this:
 
 Since we have different jobs for different repositories / applications, we extracted some commonly used methods into `sonar_methods.rb`.
 These methods are included in our actual job:
@@ -229,7 +229,7 @@ end
 
 ### Embedding already rendered widgets
 
-Besides the possibility to render sever meters / widgets from source data, `Smashing` also allows integrating already rendered widgets. This is done using the `data-view="Iframe"`. We are using this to embed a full page Kibana dashboard (using max values for `data-sizex` and `data-sizey`):
+Besides the possibility to render widgets from source data, `Smashing` also allows integrating already rendered widgets. This is done using the `data-view="Iframe"`. We are using this to embed a full page Kibana dashboard (using max values for `data-sizex` and `data-sizey`):
 
 ```html
 <div class="gridster">
