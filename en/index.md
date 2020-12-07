@@ -9,6 +9,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 
 - [Which companies, stores and professionals accept Bitcoin in Greece?](#merchant-table)
 - [How can I buy Bitcoin in Greece?](#buybitcoin)
+- [Who regulates cryptocurrency in Greece?](#regulator)
 - [What cryptocurrency and blockchain projects are there in Greece and Cyprus?](#projects)
 
 ### <a name="merchant-table"></a>Which companies, stores and professionals accept Bitcoin in Greece?
@@ -40,7 +41,11 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - From a private Bitcoin trader you can find on [Localbitcoins](https://localbitcoins.com/), at the [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), on [HodlHodl](https://hodlhodl.com), on [Bisq](https://bisq.network) or on [Paxful](https://paxful.com). You can exchange Euros with them using any method you want, e.g. in person, via Paypal, Western Union, Piraeus Bank Instant Cash (Lefta Sto Lepto), bank transfer etc.
 - From the [BCash](https://bcash.gr/) Bitcoin exchange via deposit at a Greek bank. They sell up to €5000 of Bitcoin per person per day and charge a 9% fee.
 
-### <a name="projects"></a> What cryptocurrency and blockchain projects are there in Greece and Cyprus?
+### <a name="regulator"></a>Who regulates cryptocurrency in Greece?
+
+Cryptocurrency in Greece is currently only regulated from an AML (Anti Money Laundering) point of view, according to law [4557/2018](https://www.taxheaven.gr/law/4557/2018) (the linked law text is fully up-to-date), as modified by law [4734/2020](https://www.taxheaven.gr/law/4734/2020). The latter is known as the [European Union's AMLD5 Directive](https://www.sygna.io/blog/what-is-amld5-anti-money-laundering-directive-five-a-guide/). The regulated entities are only cryptocurrency exchanges based in Greece, of which there are 1 or 2, and the Bitcoin ATMs. The regulator is the [Hellenic Capital Markets Commission](http://www.hcmc.gr).
+
+### <a name="projects"></a>What cryptocurrency and blockchain projects are there in Greece and Cyprus?
 
 - Bitcoin nodes running in [Greece](https://bitnodes.earn.com/nodes/?q=Greece) and [Cyprus](https://bitnodes.earn.com/nodes/?q=Cyprus)
 - The [Coinomi multicurrency wallet](https://coinomi.com)
@@ -61,7 +66,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2020-11-27
+Last update: 2020-12-07
 
 <!-- <div class="posts">
   {% for post in site.posts %}
