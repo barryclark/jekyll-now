@@ -20,4 +20,4 @@ Fav hobby - build equipment to test network and increase wireless security.
 
 ### Contact me
 
-[harsimransidhuit@gmmail.com](mailto:harsimransidhuit@gmail.com)
+[harsimransidhuit@gmail.com](mailto:harsimransidhuit@gmail.com)
