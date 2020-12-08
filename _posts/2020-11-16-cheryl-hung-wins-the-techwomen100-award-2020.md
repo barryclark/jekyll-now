@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cheryl Hung wins the #TechWomen100 Individual Award 2020"
+title: "Cheryl Hung, winner of the #TechWomen100 Individual Award 2020"
 description: "Announcement of the #TechWomen100 Award winner Cheryl Hung, VP Ecosystem at CNCF"
 image: /images/2020-11-16-cheryl-hung-wins-the-techwomen100-award-2020.jpeg
 tags:
