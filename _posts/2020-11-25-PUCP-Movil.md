@@ -20,6 +20,8 @@ My consultation required an open collaboration with the IT department and market
 
 The result was an app centered in students  daily needs when in campus that best represented the university branding and prestige.
 
+![Schedule screen of PUCP Movil app.](/static/media/posts/pucp/picture1.jpg)
+
 # Team
 
 - Project Manager
@@ -29,6 +31,10 @@ The result was an app centered in students  daily needs when in campus that best
 
 My role as UX/UI Designer involved getting to know students needs and help define the app’s new set of features.
 
+![Early sketch of Home screen.](/static/media/posts/pucp/picture2.jpg)
+
+![Low fidelity prototype of PUCP Movil app.](/static/media/posts/pucp/picture3.jpg)
+
 # The Challenge
 
 ‘PUCP Móvil’ v1 was built as an initiative by the IT department, a direct response from competitor universities’ presence at the App Store.
@@ -36,6 +42,8 @@ My role as UX/UI Designer involved getting to know students needs and help defin
 Unfortunately, no formal design practice was applied and its feature and capabilities didn’t actually address users everyday problems.
 
 Some initial resistance against structural changes in v2 was expected. Thankfully good communication made the team aligned on an important fact: good design is good business.
+
+![A screenshot from PUCP Movil app V.](/static/media/posts/pucp/picture4.png)
 
 # Getting to know students needs
 
@@ -67,6 +75,8 @@ The team was then committed to help v2 become the center of campus life, startin
 - Cafeteria ordering
 
 Importantly, all the available information shown by v1 was still there, categorized and presented in a more cohesive way.
+
+!['Reserve a ' PUCP Movil app V1.](/static/media/posts/pucp/picture5.jpg)
 
 # Services taking center stage
 

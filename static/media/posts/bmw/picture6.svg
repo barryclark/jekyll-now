@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="768px" viewBox="0 0 1024 768" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1 Home Copy 14</title>
+    <g id="1-Home-Copy-14" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F8F8FA" x="0" y="0" width="1024" height="768"></rect>
+        <g id="Flow-Rectangle-Copy-9" transform="translate(33.000000, 333.000000)">
+            <rect id="Rectangle" stroke="#ABABAB" stroke-width="0.7" fill="#FFFFFF" x="0.35" y="0.35" width="194.3" height="102.3"></rect>
+            <text id="Title" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="72.7958984" y="39">Client </tspan>
+                <tspan x="30.7890625" y="57">approaches kiosk </tspan>
+                <tspan x="43.3911133" y="75">besides a car</tspan>
+            </text>
+        </g>
+        <line x1="228" y1="384.747925" x2="257.5" y2="384.5" id="Line-Copy-9" stroke="#979797" stroke-linecap="square"></line>
+        <path id="Line-Copy-14" d="M279.21185,43.8228113 L288.249982,48.2457267 L279.288771,52.8224826 L279.254,48.822 L258.504273,48.9999817 L258.004292,49.0042551 L257.995745,48.0042916 L258.495727,48.0000183 L279.245,47.822 L279.21185,43.8228113 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-17" d="M531,77 L540,81.5 L531,86 L531,82 L480,82 L480,81 L531,81 L531,77 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-22" d="M531,229 L540,233.5 L531,238 L531,234 L511,234 L511,233 L531,233 L531,229 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-21" d="M788,229 L797,233.5 L788,238 L788,234 L734,234 L734,233 L788,233 L788,229 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-23" d="M638,129 L638,177 L642,177 L637.5,186 L633,177 L637,177 L637,129 L638,129 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-18" d="M531,380 L540,384.5 L531,389 L531,385 L480,385 L480,384 L531,384 L531,380 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-19" d="M531,537 L540,541.5 L531,546 L531,542 L480,542 L480,541 L531,541 L531,537 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-20" d="M531,683 L540,687.5 L531,692 L531,688 L480,688 L480,687 L531,687 L531,683 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-15" d="M279.21185,379.822811 L288.249982,384.245727 L279.288771,388.822483 L279.254,384.822 L258.504273,384.999982 L258.004292,385.004255 L257.995745,384.004292 L258.495727,384.000018 L279.245,383.822 L279.21185,379.822811 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-16" d="M278.21185,547.822811 L287.249982,552.245727 L278.288771,556.822483 L278.254,552.822 L257.504273,552.999982 L257.004292,553.004255 L256.995745,552.004292 L257.495727,552.000018 L278.245,551.822 L278.21185,547.822811 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line-Copy-3" d="M279.17433,718.145935 L288.249927,722.491454 L279.328153,727.144621 L279.26,723.145 L258.508546,723.499927 L258.008619,723.508473 L257.991527,722.508619 L258.491454,722.500073 L279.242,722.145 L279.17433,718.145935 Z" fill="#979797" fill-rule="nonzero"></path>
+        <line x1="257.5" y1="721.086294" x2="257.5" y2="362.913706" id="Line-2-Copy" stroke="#979797" stroke-linecap="square" transform="translate(257.500000, 542.000000) scale(1, -1) translate(-257.500000, -542.000000) "></line>
+        <line x1="257.5" y1="361.5" x2="257.5" y2="48.5" id="Line-2-Copy-2" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="511" y1="233.5" x2="511" y2="81.5" id="Line-2-Copy-3" stroke="#979797" stroke-linecap="square"></line>
+        <g id="Group" transform="translate(287.000000, 336.000000)">
+            <rect id="Rectangle" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Selects-‘Features’" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="68.0952148" y="44">Selects </tspan>
+                <tspan x="55.4931641" y="62">‘Features’</tspan>
+            </text>
+        </g>
+        <g id="Group-2" transform="translate(288.000000, 488.000000)">
+            <rect id="Rectangle-Copy-2" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Selects-‘Gallery’" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="68.0952148" y="44">Selects </tspan>
+                <tspan x="59.6938477" y="62">‘Gallery’</tspan>
+            </text>
+        </g>
+        <g id="Group-3" transform="translate(287.000000, 639.000000)">
+            <rect id="Rectangle-Copy-3" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Selects-‘Specificati" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="68.0952148" y="44">Selects </tspan>
+                <tspan x="30.2890625" y="62">‘Specifications’</tspan>
+            </text>
+        </g>
+        <g id="Group-3-Copy" transform="translate(540.000000, 639.000000)">
+            <rect id="Rectangle-Copy-3" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Reads-about-tech-spe" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="30.2890625" y="44">Reads about tech </tspan>
+                <tspan x="38.6904297" y="62">specifications</tspan>
+            </text>
+        </g>
+        <g id="Group-3-Copy-2" transform="translate(540.000000, 488.000000)">
+            <rect id="Rectangle-Copy-3" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Sees-pictures-and-vi" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="42.8911133" y="44">Sees pictures </tspan>
+                <tspan x="55.4931641" y="62">and videos</tspan>
+            </text>
+        </g>
+        <g id="Group-3-Copy-3" transform="translate(540.000000, 336.000000)">
+            <rect id="Rectangle-Copy-3" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Reads-about-features" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="51.2924805" y="35">Reads about </tspan>
+                <tspan x="47.0917969" y="53">features and </tspan>
+                <tspan x="55.4931641" y="71">highlights</tspan>
+            </text>
+        </g>
+        <g id="Group-3-Copy-6" transform="translate(540.000000, 185.000000)">
+            <rect id="Rectangle-Copy-3" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Requests-a-quote" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="55.4931641" y="44">Requests a</tspan>
+                <tspan x="76.496582" y="62">quote</tspan>
+            </text>
+        </g>
+        <g id="Group-3-Copy-4" transform="translate(540.000000, 33.000000)">
+            <rect id="Rectangle-Copy-3" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Selects-color,-wheel" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="38.6904297" y="35">Selects color, </tspan>
+                <tspan x="30.2890625" y="53">wheels, interior </tspan>
+                <tspan x="38.6904297" y="71">and accesories</tspan>
+            </text>
+        </g>
+        <g id="Group-4" transform="translate(287.000000, 33.000000)">
+            <rect id="Rectangle-Copy" fill="#ECECEC" x="0" y="0" width="195" height="96"></rect>
+            <text id="Selects-‘Customize’" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="68.0952148" y="44">Selects </tspan>
+                <tspan x="51.2924805" y="62">‘Customize’</tspan>
+            </text>
+        </g>
+        <g id="Flow-Rectangle-Copy-10" transform="translate(796.000000, 182.000000)">
+            <rect id="Rectangle" stroke="#ABABAB" stroke-width="0.7" fill="#FFFFFF" x="0.35" y="0.35" width="194.3" height="102.3"></rect>
+            <text id="Title" font-family="Monaco" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="60.1938477" y="39">Sales rep </tspan>
+                <tspan x="43.3911133" y="57">continues the </tspan>
+                <tspan x="47.5917969" y="75">sale process</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

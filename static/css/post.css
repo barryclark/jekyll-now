@@ -109,20 +109,28 @@ header#postHeader section.iphoneX > div {
 		width: auto;
 	}
 
-	header#postHeader section.ipad, 
-	header#postHeader section.iphone, 
-	header#postHeader section.iphoneX {
+	header#postHeader section.ipad {
 		margin-left: 60px;
 		margin-right: 60px;
+	}
+
+	header#postHeader section.iphone, 
+	header#postHeader section.iphoneX {
+		margin-left: 140px;
+		margin-right: 140px;
 	}
 }
 
 @media all and (max-width: 600px) {
-	header#postHeader section.ipad, 
-	header#postHeader section.iphone, 
-	header#postHeader section.iphoneX {
+	header#postHeader section.ipad {
 		margin-left: 40px;
 		margin-right: 40px;
+	}
+
+	header#postHeader section.iphone, 
+	header#postHeader section.iphoneX {
+		margin-left: 60px;
+		margin-right: 60px;
 	}
 }
 
@@ -138,6 +146,16 @@ section#heroSection div div {
 section#heroSection iframe, section#heroSection img {
 	width: 100%;
 	height: 100%;
+}
+
+section#heroSection img {
+	border-radius: 42px;
+}
+
+@media all and (max-width: 600px) {
+	section#heroSection img {
+		border-radius: 28px;
+	}
 }
 
 section#heroSection div.shadowDiv {
@@ -197,7 +215,7 @@ article#postArticle h1 {
 	}
 }
 
-article#postArticle p, article#postArticle li, article#postArticle strong {
+article#postArticle p, article#postArticle li, article#postArticle strong, article#postArticle a {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 24px;
 	line-height: 42px;
@@ -205,6 +223,11 @@ article#postArticle p, article#postArticle li, article#postArticle strong {
 
 article#postArticle strong {
 	font-weight: 700;
+}
+
+article#postArticle a {
+	text-decoration: underline;
+	color: #2e86de;
 }
 
 article#postArticle ul {
@@ -241,9 +264,11 @@ article#postArticle p.imgParent {
 
 article#postArticle p.imgParent ~ p.imgParent {
 	background: transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
-article#postArticle p.imgParent ~ p.imgParent:before {
+/*article#postArticle p.imgParent ~ p.imgParent:before {
 	content: "";
 	position: absolute;
 	display: block;
@@ -256,7 +281,7 @@ article#postArticle p.imgParent ~ p.imgParent:before {
 	opacity: 0.25;
 	background: #797979;
 	z-index: -1;
-}
+}*/
 
 @media all and (max-width: 1000px) {
 	article#postArticle p.imgParent {
@@ -280,12 +305,77 @@ article#postArticle p.imgParent ~ p.imgParent:before {
 
 article#postArticle p img {
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-article.ipad p img {
+article.ipad p img,
+article.ipad p h3 {
 	width: 100%;
 }
 
-article.iphone p img {
-	width: 70%;
+article.iphoneX p img,
+article.iphone p img,
+article.iphone p h3,
+article.iphoneX p h3 {
+	width: 40%;
+}
+
+article.iphoneX p img {
+	border-radius: 50px;
+	border: solid 0.5px #b2bec3;
+}
+
+@media all and (max-width: 600px) {
+	article.iphoneX p img {
+		border-radius: 28px;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	article.iphoneX p img,
+	article.iphone p img,
+	article.iphone p h3,
+	article.iphoneX p h3 {
+		width: 60%;
+	}
+}
+
+@media all and (max-width: 600px) {
+	article.iphone p img,
+	article.iphoneX p img,
+	article.iphone p h3,
+	article.iphoneX p h3 {
+		width: 70%;
+	}
+}
+
+article#postArticle p h3 {
+	margin-top: 4px;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+	article#postArticle p h3 {
+		text-align: left;
+	}
+}
+
+@media all and (max-width: 600px) {
+	article#postArticle p h3 {
+		font-size: 14px;
+	}
+}
+
+article#postArticle p.imgParent h3 {
+	display: none;
+}
+
+article#postArticle p.imgParent ~ p.imgParent h3 {
+	display: block;
 }
