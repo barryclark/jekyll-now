@@ -2,7 +2,7 @@
 layout: post
 title: "Cheryl Hung wins the #TechWomen100 Individual Award 2020"
 description: "Announcement of the #TechWomen100 Award winner Cheryl Hung, VP Ecosystem at CNCF"
-image: https://wearethecity.com/wp-content/uploads/2019/07/D-xwZkmXkAAzEWh.jpg-large-e1562766308676.jpeg
+image: /images/2020-11-16-cheryl-hung-wins-the-techwomen100-award-2020.jpeg
 tags:
   - Article
   - "2020"
