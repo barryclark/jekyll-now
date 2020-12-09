@@ -171,7 +171,7 @@ The score is calculated by taking the dot product of the <span class="decoder">q
 <br />
 
 
-The **third and forth steps** are to divide the scores by 8 (the square root of the dimension of the key vectors used in the paper -- 64. This leads to having more stable gradients. There could be other possible values here, but this is the default), then pass the result through a softmax operation. Softmax normalizes the scores so they're all positive and add up to 1.
+The **third and fourth steps** are to divide the scores by 8 (the square root of the dimension of the key vectors used in the paper -- 64. This leads to having more stable gradients. There could be other possible values here, but this is the default), then pass the result through a softmax operation. Softmax normalizes the scores so they're all positive and add up to 1.
 
 
 <br />
