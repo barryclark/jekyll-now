@@ -78,3 +78,4 @@ Twitterでの本ブログのコメント・拡散も歓迎です。その際は�
 ただ、モデル自体は面白く、信念をアップデートする仮定のモデルの組み方なども勉強になりました！
 
 ### **文献：**
+Fogli, A. and Veldkamp, L., 2011. Nature or nurture? Learning and the geography of female labor force participation. Econometrica, 79(4), pp.1103-1138.
