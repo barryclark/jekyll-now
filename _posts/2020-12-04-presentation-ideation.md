@@ -16,7 +16,11 @@ categories: cpnt265
 - Creatives: 1 Skull
   - Jina, Lynn
 
-### Pitches
+### Stage
+- Mike: 2 Skulls
+- Patrick: 2 Skulls
+- Brett/Josh: 2 Skulls each
+
 
 ## Homework
 1. Project Ideas!
