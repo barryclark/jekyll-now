@@ -2,6 +2,14 @@
 layout: post
 title: Week 14F - Mini Presentations
 categories: cpnt265
+---
+
+## Bounties
+- Mini-lectures
+  - Avery: Shopify
+  - Emil/Nhat: Dog-E-Date
+- Video Tutorial
+  - Brett
 
 ---
 
@@ -9,11 +17,11 @@ categories: cpnt265
 
 ---
 
-## 2. 
+## 2. Lab Time
 
 ---
 
-## 3. 
+## 3. Presentations
 
 ---
 
