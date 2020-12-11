@@ -10,10 +10,12 @@ categories: cpnt265
   - Emil/Nhat: Dog-E-Date
 - Video Tutorial
   - Brett
+- Lean Canvas
+  - Offanel
 
 ---
 
-## 1. 
+## 1. YAML Roster Review
 
 ---
 
