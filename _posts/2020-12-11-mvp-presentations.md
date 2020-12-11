@@ -28,9 +28,9 @@ categories: cpnt265
 ---
 
 ## 3. Presentations
-- Petal Post
-- Team 2
-- Quick Buds
+1. Quick Buds
+2. Pog Champs
+3. Petal Post
 
 ---
 
