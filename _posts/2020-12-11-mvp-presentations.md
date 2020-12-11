@@ -12,10 +12,14 @@ categories: cpnt265
   - Brett
 - Lean Canvas
   - Offanel
+- Coach of Year +1s: 1 Skull
+  - Vincent
+  - Jayden
 
 ---
 
 ## 1. YAML Roster Review
+- 
 
 ---
 
@@ -24,6 +28,10 @@ categories: cpnt265
 ---
 
 ## 3. Presentations
+- Petal Post
+- Team 2
+- Quick Buds
+- Dog-E-Date
 
 ---
 
