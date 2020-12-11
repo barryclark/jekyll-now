@@ -31,7 +31,6 @@ categories: cpnt265
 - Petal Post
 - Team 2
 - Quick Buds
-- Dog-E-Date
 
 ---
 
