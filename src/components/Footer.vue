@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="footer">
     <nav>
       <ul class="row valign-wrapper">
         <li>スタッフ紹介</li>
@@ -9,7 +9,7 @@
         <li>お問い合わせ</li>
         <li>
           <a href="https://lin.ee/vhWQhPP">
-            <img class="valign-wrapper" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+            <img class="valign-wrapper line-img" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
           </a>
         </li>
       </ul>
@@ -32,8 +32,9 @@ footer {
   height: initial;
 }
 nav {
-  background: #2F7DC0;
+  background: initial;
   box-shadow: initial;
+  color: #0F0F0F;;
   display: flex;
   flex-direction: column;
   height: initial;
@@ -68,15 +69,19 @@ li {
 a {
   color: #42b983;
 }
-.header {
-  background-color: #2F7DC0;
-  background-image: url('../assets/tachikawa_back_03.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right top;
+.footer {
+  background: url('../assets/back_01.png') repeat center center;
+  background-color: #fff;
+  color: #0F0F0F;
+  margin-bottom: initial;
+  z-index: 100;
+  box-shadow: 0 -3px -1px 2px rgba(0,0,0,0.12);
 }
 .inner-icon {
   margin: 12px;
+}
+.line-img {
+  height: 32px;
 }
 .square-icon {
   height: 36px;

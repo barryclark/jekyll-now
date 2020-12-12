@@ -76,7 +76,7 @@ a {
   color: #42b983;
 }
 .header {
-  background: url('../assets/border-bg.svg') repeat center center;
+  background: url('../assets/back_01.png') repeat center center;
   background-color: #fff;
   color: #0F0F0F;
   height: 64px;
