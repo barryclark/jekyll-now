@@ -4,6 +4,9 @@
     <Hero />
     <SecondHero />
     <ThirdContainer />
+    <FourthContainer />
+    <FifthContainer />
+    <SixthContainer />
     <Footer />
   </div>
 </template>
@@ -13,6 +16,9 @@ import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
 import SecondHero from './components/SecondHero.vue'
 import ThirdContainer from './components/ThirdContainer.vue'
+import FourthContainer from './components/FourthContainer.vue'
+import FifthContainer from './components/FifthContainer.vue'
+import SixthContainer from './components/SixthContainer.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -22,6 +28,9 @@ export default {
     Hero,
     SecondHero,
     ThirdContainer,
+    FourthContainer,
+    FifthContainer,
+    SixthContainer,
     Footer
   }
 }
