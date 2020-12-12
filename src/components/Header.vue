@@ -85,6 +85,17 @@
               <li>開催の様子</li>
               <li>ご支援のお願い</li>
               <li>お問い合わせ</li>
+              <li>
+                <a href="https://lin.ee/vhWQhPP" style="margin-left: -30px;">
+                  <img
+                    class="line-img"
+                    src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                    alt="友だち追加"
+                    height="36"
+                    border="0"
+                  >
+                </a>
+              </li>
             </ul>
           </div>
         </transition>
@@ -167,7 +178,7 @@ a {
   color: #42b983;
 }
 .header {
-  background: url("../assets/border-bg.svg") repeat center center;
+  background: url("../assets/back_01.png") repeat center center;
   background-color: #fff;
   color: #0f0f0f;
   height: 64px;
@@ -189,21 +200,26 @@ a {
   font-size: 2rem;
 }
 
+/* ハンバーガーメニュースタイル */
 /*ボタン*/
 .hamburger_btn {
   position: fixed; /*常に最上部に表示したいので固定*/
   top: 0;
   right: 0;
-  width: 70px;
-  height: 72px;
+  width: 64px;
+  height: 56px;
   cursor: pointer;
   z-index: 50;
+  border: 1px solid;
+  border-color: grey;
+  text-align: center;
+  margin-top: 4px;
 }
 
 .hamburger_btn .line {
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 16px;
   width: 32px;
   height: 2px;
   background: #333333;
