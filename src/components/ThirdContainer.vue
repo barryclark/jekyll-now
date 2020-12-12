@@ -3,7 +3,7 @@
     <main class='lg:container flex items-center'>
       <img src="../assets/pc_02.png" />
       <div class="container hero-box">
-        <t-tag variant="heading" class='text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
+        <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
           参加方法
         </t-tag>
         <t-tag tag-name="p" variant="body" class='pt-5 text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
@@ -13,7 +13,7 @@
         <t-tag tag-name="p" variant="body" class='pt-5 text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
           またconnpass内のCorderDojo立川グループのメンバーになっていただくことで、イベントの募集案内やお知らせをメールで受け取ることが出来ます。
         </t-tag>
-        <div class="col s12 m5 p-0">
+        <div class="pt-5">
           <div class="card-panel">
             <span>
               次回開催予定
