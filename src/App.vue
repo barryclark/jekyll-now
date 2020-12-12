@@ -3,6 +3,7 @@
     <Header />
     <Hero />
     <SecondHero />
+    <ThirdContainer />
     <Footer />
   </div>
 </template>
@@ -11,6 +12,7 @@
 import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
 import SecondHero from './components/SecondHero.vue'
+import ThirdContainer from './components/ThirdContainer.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -19,6 +21,7 @@ export default {
     Header,
     Hero,
     SecondHero,
+    ThirdContainer,
     Footer
   }
 }
