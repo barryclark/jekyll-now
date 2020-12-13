@@ -17,9 +17,13 @@ The last 3 months during 2019 I was in Orlando with my family, sounds like fun, 
 
 ## Started coding 4 real
 
+<video width="320" height="auto" controls >
+	<source src="https://i.imgur.com/94mw3tW.mp4">
+	Your crappy browser, or mobile, doesn't support video tag.
+</video>
 I did my first website when I was 14 y.o., that was 21 years ago, that has been a lot of time reading about **HTML**, **CSS** and **JS**, and a bunch of other technologies and software, **press F to pay respect to Macromedia Flash**. This year I took the leap of faith, and ask at my previous job if I can help the devs with all the frontend work, and well, everything went kinda smooth and now I have a new job and my actual position is **UI Frontend Developer** .  I also start to take seriously learning about coding Apple apps (yes now you can do multiplatform apps) took a couple of courses, started to read a lot, bought more courses and books and kickstarted a serie of instagram post where I pick some random but *good looking* UIs and code it, lots of fun and lots of learning, maybe I should start posting here some of those UI.
 
-## Did a Couple of streams
+## Did a Couple of Live Streams
 
 With my little experiment in SwiftUI, I decided that the easiest way to learn/share, was doing streamings, this lead me to a couple of **weeks** of learning about streaming, and was a lot of fun, sadly my computer wasn’t able to manage the stream, and while I was coding in xcode, so I moved to my iPad to do the coding, I also learnt how to stream into Instragram Live. For sure I’ll do a couple of streamings.
 
