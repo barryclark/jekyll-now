@@ -77,5 +77,17 @@ Twitterでの本ブログのコメント・拡散も歓迎です。その際は�
 
 ただ、モデル自体は面白く、信念をアップデートする仮定のモデルの組み方なども勉強になりました！
 
+#### **鈴木:**
+
+開発経済学では [Foster and Rosenzweig (1995)](https://www.jstor.org/stable/2138708?seq=1#metadata_info_tab_contents) や [Banerjee et al. (2013)](https://science.sciencemag.org/content/341/6144/1236498.editor-summary)のように、広い意味での「新技術」の効果の情報が拡散する、というモデルないし研究がよく見られると思います。
+今回の論文もこの系列にあるように思いますが、「母親の雇用の効果」を考えている点で新規性があるのかなと思いました。
+その背後にあるのが「近年の女性の労働参加の増加を説明したい」というモチベーションであるのも素晴らしいと思います。
+
+論文の内容からはかなり外れますが、[Hotz and Miller (1993)](https://www.jstor.org/stable/2298122?seq=1#metadata_info_tab_contents) では夫婦の避妊の意思決定のモデルを考えていて、そこでは家計の所得として夫の所得のみを考えています。
+データはアメリカの National Fertility Survey で1970年と1976年の調査結果です。
+当時は夫の所得のみを考慮することが正当化され得たのかもしれませんが、近年の女性の労働参加を鑑みるに、今ならモデルをたてる上でも夫婦両者の労働参加の意思決定を組み込む必要があるでしょう。
+このように、「昔のモデルで考えられた想定が今では成り立たない」ということは十分ありえ、だからこそ「モデルを構築する上で背景知識は重要ですね」という話になるのかなとぼんやり思いました。
+
+
 ### **文献：**
 Fogli, A. and Veldkamp, L., 2011. Nature or nurture? Learning and the geography of female labor force participation. Econometrica, 79(4), pp.1103-1138.
