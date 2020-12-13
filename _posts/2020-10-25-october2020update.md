@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🎃 Oct. 2020 Updates - Getting Started with ZBCE 
+title: 🎃 Oct. 2020 Updates - Getting Started with Open Source, ZBCE
 ---
 
 Hello!

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🦃 Nov. 2020 Updates - Prototyping Sensor Module v0 
+title: 🦃 Nov. 2020 Updates - Prototyping a Sensor Module for your Trash Bin v0
 ---
 
 Hello!
