@@ -19,7 +19,7 @@ The 2021 goal is set all of this in a digital way, maybe make an app or keep eve
 </figcaption>
 </figure>
 
-The last 3 months during 2019 I was in Orlando with my family, sounds like fun, but most of the time I was just at home working, and just that, like everyone. I didn’t see my nephews so often, and slowly started to get drained in this *lost in time* feeling, so I started a **bullet journal**. I’ve always had a sketchbook next to me, and this idea of writing down daily, was nothing weird, so was really easy to adopt, gotta say that already been doing this during a year, and *maaaan* this helps a lot when you are at home **24/7**. So we can say that I was in a "pandemic camp" during the last 3 months of 2019. Lately haven’t writing a lot but that’s caused by my **new job**. 
+The last 3 months during 2019 I was in Orlando with my family, sounds like fun, but most of the time I was just at home working, and just that, like everyone. I didn’t see my nephews so often, and slowly started to get drained in this *lost in time* feeling, so started a **bullet journal**. I’ve always had a sketchbook next to me, and this idea of writing down daily, was nothing weird, so was really easy to adopt, gotta say that already been doing this during a year, and *maaaan* this helps a lot when you are at home **24/7**. So we can say that I was in a "pandemic camp" during the last 3 months of 2019. Lately haven’t writing a lot but that’s caused by my **new job**. 
 
 ## Started coding 4 real
 
@@ -42,7 +42,7 @@ With my little experiment in SwiftUI, I decided that the easiest way to learn/sh
 
 The quarantine got me into just staying at home, so what you can do to besides playing videogames all day?, droning hard!. Started to fly some brushless drone, and smashing it, part of the learning, I even had to solder the Rx, baby steps friends, baby steps. The video is a fun session with my sister's dogs.
 
-## Went back to santiago
+## Went back to Santiago
 
 With my new position I also change to a new Job, as usual most of the jobs are in Santiago so came back to home, I’ve been in this new position for a few weeks so not much to talk about it yet, but it’s a cool place with cool ppl.
 
