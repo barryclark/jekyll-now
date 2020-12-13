@@ -19,7 +19,7 @@ The 2021 goal is set all of this in a digital way, maybe make an app or keep eve
 </figcaption>
 </figure>
 
-The last 3 months during 2019 I was in Orlando with my family, sounds like fun, but most of the time I was just at home working, and just that, since everyone was working, I didn’t see my nephews so often, and slowly I started to get drained in this *lost in time* feeling, so I started a **bullet journal** since I’m a designer I’ve always had a sketchbook next to me, and this idea of writing down daily, was nothing weird for me, so was really to adopt, gotta say that I already been doing this during a year, and *maaaan* this helps a lot when you are at home **24/7** so we can say that I was in a "pandemic camp" during the last 3 months of 2019. Lately haven’t writing a lot but that’s caused by my new job. 
+The last 3 months during 2019 I was in Orlando with my family, sounds like fun, but most of the time I was just at home working, and just that, like everyone. I didn’t see my nephews so often, and slowly started to get drained in this *lost in time* feeling, so I started a **bullet journal**. I’ve always had a sketchbook next to me, and this idea of writing down daily, was nothing weird, so was really easy to adopt, gotta say that already been doing this during a year, and *maaaan* this helps a lot when you are at home **24/7**. So we can say that I was in a "pandemic camp" during the last 3 months of 2019. Lately haven’t writing a lot but that’s caused by my **new job**. 
 
 ## Started coding 4 real
 
@@ -27,11 +27,11 @@ The last 3 months during 2019 I was in Orlando with my family, sounds like fun, 
 	<source src="https://i.imgur.com/350e0BG.mp4">
 	Your crappy browser, or mobile, doesn't support video tag.
 </video>
-I did my first website when I was 14 y.o., that was 21 years ago, that has been a lot of time reading about **HTML**, **CSS** and **JS**, and a bunch of other technologies and software, **press F to pay respect to Macromedia Flash**. This year I took the leap of faith, and ask at my previous job if I can help the devs with all the frontend work, and well, everything went kinda smooth and now I have a new job and my actual position is **UI Frontend Developer** .  I also start to take seriously learning about coding Apple apps (yes now you can do multiplatform apps) took a couple of courses, started to read a lot, bought more courses and books and kickstarted a serie of instagram post where I pick some random but *good looking* UIs and code it, lots of fun and lots of learning, maybe I should start posting here some of those UI.
+I did my first website when I was 14 y.o., that was 21 years ago, that has been a lot of time reading about **HTML**, **CSS** and **JS**, and a bunch of other technologies and software, **press F to pay respect to Macromedia Flash**. This year took the leap of faith, and ask at my previous job if can I help the devs with all the frontend work, and well, everything went kinda smooth and now have a new job and my actual position is **UI Frontend Developer** . Also start to take seriously learning about coding Apple apps (yes now you can do multiplatform apps, which makes it really intersting) took a couple of courses, started to read a lot, bought more courses and books and kickstarted a serie of instagram post where I pick some random but *good looking* UIs and code it, lots of fun and lots of learning, maybe I should start posting here some of those UI and write how's the approach.
 
 ## Did a Couple of Live Streams
 
-With my little experiment in SwiftUI, I decided that the easiest way to learn/share, was doing streamings, this lead me to a couple of **weeks** of learning about streaming, and was a lot of fun, sadly my computer wasn’t able to manage the stream, and while I was coding in xcode, so I moved to my iPad to do the coding, I also learnt how to stream into Instragram Live. For sure I’ll do a couple of streamings.
+With my little experiment in SwiftUI, I decided that the easiest way to learn/share, was doing streamings, this lead me to a couple of **weeks** of learning about streaming, and was a lot of fun, sadly my computer wasn’t able to manage the stream, and while I was coding in Xcode, so I moved to my iPad to do the coding, also learnt how to stream into Instragram Live. For sure I’ll do a couple of streamings.
 
 ## Drone hard
 
@@ -40,10 +40,10 @@ With my little experiment in SwiftUI, I decided that the easiest way to learn/sh
 	Your crappy browser, or mobile, doesn't support video tag.
 </video>
 
-The quarantine got me into just staying at home, so what you can do to besides playing videogames all day?, droning hard!. Started to fly some brushless drone, and smashing it, part of the learning, I even had to solder the Rx, baby steps friends, baby steps.
+The quarantine got me into just staying at home, so what you can do to besides playing videogames all day?, droning hard!. Started to fly some brushless drone, and smashing it, part of the learning, I even had to solder the Rx, baby steps friends, baby steps. The video is a fun session with my sister's dogs.
 
 ## Went back to santiago
 
-With my new position I also change to a new Job, as usual most of the jobs are in Saniago so I came back to home town, I’ve been in this new position for a few weeks so not much to talk about it yet, but it’s a cool place with cool ppl.
+With my new position I also change to a new Job, as usual most of the jobs are in Santiago so came back to home, I’ve been in this new position for a few weeks so not much to talk about it yet, but it’s a cool place with cool ppl.
 
-That’s pretty much my mayor update, I want to write more entries as seems to be blogs will return to be a good source of info and expression, still getting up to date with all this **woke** thing and everything else in the *exterior world*.
+That’s pretty much my mayor update about the **good things** of this year, I want to write more entries as seems to be blogs will return to be a good source of info and expression, still getting up to date with all this **woke** thing and everything else in the *exterior world*.
