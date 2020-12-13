@@ -15,7 +15,7 @@ Holy fuck!, this year has been a total trashfire, wasn’t so bad at the beggini
 <figure class="figimg">
    <img src="https://i.imgur.com/dcPukb8.jpg" alt="journaling">
 <figcaption>
-"nunca voy a usar matemáticas fuera del colegio" si, caleta.
+The 2021 goal is set all of this in a digital way, maybe make an app or keep everything in boring MD files.
 </figcaption>
 </figure>
 
