@@ -7,14 +7,6 @@ image:
     feature:
 ---
 
----
-layout:  post
-title:  Mayor Update
-titledesc: 2.0
-author: dactrtr
-image:
-    feature:
----
 # 2020 what a year!
 
 Holy fuck!, this year has been a total trashfire, wasn’t so bad at the beggining, actually was kinda fine, finished a couple of SwiftUI tutorials and was all about the swiftuitrain (im still but lately been leaving my swift learning kinda off, also my russian) but then, Covid, and we all know what had bring to us, but let’s do a little recap of what I’ve been doing this year, a couple of thing that I’m proud an a bunch of things that are random facts.
