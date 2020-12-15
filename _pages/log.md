@@ -21,6 +21,45 @@ images:
     yards: 442
     date: 2008-03-30
 
+  - image_path: ../images/foster.jpeg
+    title: Foster Celadon (Blue-faced Leicester/Cormo)
+    desc: Hand-dyed fiber from my neighbor's sheep 
+    weight: 150
+    gauge: 906
+    yards: 300
+    date: 2018-12-29
+
+  - image_path: ../images/foster.jpeg
+    title: Foster Winedark (Blue-faced Leicester/Cormo)
+    desc: Hand-dyed fiber from my neighbor's sheep 
+    weight: 208
+    gauge: 936
+    yards: 430
+    date: 2018-12-29
+
+  - image_path: ../images/foster.jpeg
+    title: Foster Bluejay (Blue-faced Leicester/Cormo)
+    desc: Hand-dyed fiber from my neighbor's sheep 
+    weight: 151
+    gauge: 1014
+    yards: 338
+    date: 2019-01-30
+
+  - image_path: ../images/foster.jpeg
+    title: Foster Tideline (Blue-faced Leicester/Cormo)
+    desc: Hand-dyed fiber from my neighbor's sheep 
+    weight: 179
+    gauge: 1098
+    yards: 434
+    date: 2019-01-30
+
+  - image_path: ../images/foster.jpeg
+    title: Foster Blue Skies (Blue-faced Leicester/Cormo)
+    desc: Hand-dyed fiber from my neighbor's sheep 
+    weight: 245
+    gauge: 961
+    yards: 520
+    date: 2019-01-30
 
   - image_path: ../images/spun_yarn_coggeshall.jpeg
     title: Coggeshall (unknown breed)
@@ -112,11 +151,11 @@ images:
 
   - image_path: ../images/spun_yarns1.jpeg
     title: Total
-    desc: All of my spinning since May 2020 
-    weight: 6420
+    desc: All of my spinning since January 2008 
+    weight: 7353
     gauge: n/a
-    yards: 12266
-    as of: 2020-11-25
+    yards: 14288
+    as of: 2020-12-13
 
 
 ---
