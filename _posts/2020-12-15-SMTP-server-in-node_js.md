@@ -1,18 +1,15 @@
 ---
 layout: post
-title: need to learn/rething before you will aspire to be IT Architect 
+title: SMTP server in node.js? 
 ---
 
-Some books/learing for start:
-- [justinamiller / SoftwareArchitect](https://github.com/justinamiller/SoftwareArchitect) via [patoarchitekci.io/21/](https://patoarchitekci.io/21/)
-- like Architectual Thinking (internal IBM training)
-- [dwmkerr / hacker-laws](https://github.com/dwmkerr/hacker-laws/blob/master/README.md)
-- ["Modeling Enterprise Architecture with TOGAF" by Philippe Desfray, Gilbert Raymond ](https://learning.oreilly.com/library/view/modeling-enterprise-architecture/9780124199842/)
-- ["Governance of Enterprise IT based on COBIT®5" by By Geoff Harmer](https://learning.oreilly.com/library/view/governance-of-enterprise/9781849285193/)
-- ["Cracking the IT Architect Interview", by Sameer Paradkar, Publisher: Packt Publishing, Release Date: November 2016](https://learning.oreilly.com/library/view/cracking-the-it/9781787121690/)
-- ["IT Architecture For Dummies", by Kalani Kirk Hausman, Susan L. Cook, Publisher: For Dummies, Release Date: November 2010](https://learning.oreilly.com/library/view/it-architecture-for/9780470554234/) 
-- ["Thinking Architecturally",  Nathaniel Schutta 2018 O’Reilly Media. ] (https://learning.oreilly.com/library/view/thinking-architecturally/9781492034421)
+https://github.com/haraka/Haraka 
+> Haraka is a highly scalable node.js email server with a modular plugin architecture. Haraka can serve thousands of concurrent connections and deliver thousands of messages per second. Haraka and plugins are written in asynchronous JS and are very fast.
 
+>Haraka has very good spam protection (see plugins) and works well as a filtering MTA. It also works well as a MSA running on port 587 with auth and dkim_sign plugins enabled.
 
+>Haraka makes no attempt to be a mail store (like Exchange or Postfix/Exim/Qmail), a LDA, nor an IMAP server (like Dovecot or Courier). Haraka is typically used with such systems.
 
+>Haraka has a scalable outbound mail delivery engine built in. Mail marked as relaying (such as via an auth plugin) is automatically queued for outbound delivery.
 
+It looks strange. But I can imagine that it could be useful. 
