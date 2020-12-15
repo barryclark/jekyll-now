@@ -167,7 +167,7 @@ images:
 			<td width="30%">Name and breed</td>
 			<td width="10%">Weight (g)</td>
 			<td width="10%">Yards</td>
-			<td width="10%">Gauge (ypp)</td>
+			<td width="10%">Gauge (<a href="https://woolery.com/yarn-weights-helpful-explanation/">ypp</a>)</td>
 			<td width="30%">Image</td>
 			<td width="10%">Date completed</td>
 		</tr>
