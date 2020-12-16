@@ -128,9 +128,9 @@ images:
   - image_path: ../images/spun_yarn_rough-shupe.jpeg
     title: Rough Shupe (Romney)
     desc: This was a big project to spin an entire Romney fleece for a sweater. 
-    weight: 239
-    gauge: 702
-    yards: 370
+    weight: 1663
+    gauge: 710
+    yards: 2606
     date: 2013-02-02
 
   - image_path: ../images/foster.jpeg
