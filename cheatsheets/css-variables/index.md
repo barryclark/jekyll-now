@@ -20,7 +20,7 @@ title: "CSS Variables"
     }
     ```
 
-3. JS: Generate a random number from 0-360 (your new hue angle):
+3. JS: Generate a random number from 0-359 (your new hue angle):
 
     ```js
     const randHue = Math.floor(Math.random() * Math.floor(360));
