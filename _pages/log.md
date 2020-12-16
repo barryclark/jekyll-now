@@ -101,7 +101,7 @@ images:
     yards: 116
     date: 2009-01-03
 
-  - image_path: ../images/spun_fiber_green_pearl.jpeg
+  - image_path: ../images/spun_yarn_green_pearl.jpeg
     title: Green Pearl
     desc:  An early experiment in hand-dyeing
     weight: 48
@@ -189,7 +189,7 @@ images:
     yards: 3434
     date: 2020-08-22
 
-  - image_path: ../images/spun_fiber_foster_blues.jpeg
+  - image_path: ../images/spun_yarn_foster_blues.jpeg
     title: Foster Blues (Blue-faced Leicester/Cormo)
     desc: This fleece had a lot of second cuts, i.e. short bits of wool resulting from a second pass with the clippers, undesirable in fleece intended for spinning, which made for a somewhat lumpy yarn.  But apart from that, it's a very appealing fiber, fine and lustrous with a beautiful crimp.
     weight: 307
