@@ -13,13 +13,125 @@ images:
     yards: 1864
     date: 2008-01-20
 
-  - image_path: ../images/spun_yarn_ashford.jpeg
+  - image_path: ../images/spun_yarn_firecracker.jpeg
+    title: Firecracker (Merino)
+    desc:  One of my very first spinning attempts, with fiber I dyed using Kool-Aid.
+    weight: 85
+    gauge: 938
+    yards: 176
+    date: 2007-02-21
+
+  - image_path: ../images/spun_yarn_limpopo.jpeg
+    title: Limpopo (Merino)
+    desc:  One of my very first spinning attempts, with fiber I dyed using Kool-Aid.
+    weight: 38
+    gauge: 894
+    yards: 75
+    date: 2007-02-21
+
+  - image_path: ../images/spun_yarn_black_cherry.jpeg
+    title: Black Cherry
+    desc:  One of my very first spinning attempts, with fiber I dyed using Kool-Aid.
+    weight: 121
+    gauge: 562
+    yards: 150
+    date: 2007-02-21
+
+  - image_path: ../images/placeholder.jpeg
+    title: Vagabond (unknown fiber)
+    desc: This yarn was a very early learning experience; no idea what the fiber is. Unplied single. Date uncertain.
+    weight: 696
+    gauge: 624
+    yards: 958
+    date: 2008-01-01
+
+  - image_path: ../images/placeholder.jpeg
+    title: Romney Knobbly (Romney)
+    desc: This yarn spun from a Romney fleece, not carded for uniformity but with a lot of the different colors of the wool left unblended. Early spinning, very uneven
+    weight: 1215
+    gauge: 783
+    yards: 2100
+    date: 2008-01-20
+    
+  - image_path: ../images/spun_yarn_ashford-brick.jpeg
     title: Ashford Brick (Merino)
     desc: This yarn was an early learning experience, using commercially dyed Merino roving from Ashford. 
-    weight: 242
-    gauge: 827
-    yards: 442
+    weight: 692
+    gauge: 780
+    yards: 1192
     date: 2008-03-30
+
+  - image_path: ../images/spun_yarn_ashford-oxide.jpeg
+    title: Ashford Oxide (Merino)
+    desc: This yarn was another early learning experience, using commercially dyed Merino roving from Ashford. 
+    weight: 468
+    gauge: 1055
+    yards: 1090
+    date: 2008-04-21    
+
+  - image_path: ../images/spun_yarn_handdyed_samples.jpeg
+    title: Goldenrod
+    desc:  An early experiment in hand-dyeing
+    weight: 121
+    gauge: 562
+    yards: 150
+    date: 2009-01-03
+
+  - image_path: ../images/spun_yarn_handdyed_samples.jpeg
+    title: New Growth
+    desc:  An early experiment in hand-dyeing
+    weight: 121
+    gauge: 562
+    yards: 150
+    date: 2009-01-03
+
+  - image_path: ../images/spun_yarn_nacre.jpeg
+    title: Nacre
+    desc:  An early experiment in hand-dyeing
+    weight: 121
+    gauge: 562
+    yards: 150
+    date: 2009-01-03
+
+  - image_path: ../images/spun_yarn_handdyed_samples.jpeg
+    title: Bluefinch
+    desc:  An early experiment in hand-dyeing
+    weight: 57
+    gauge: 922
+    yards: 116
+    date: 2009-01-03
+
+  - image_path: ../images/spun_fiber_green_pearl.jpeg
+    title: Green Pearl
+    desc:  An early experiment in hand-dyeing
+    weight: 48
+    gauge: 1321
+    yards: 140
+    date: 2009-01-03
+
+  - image_path: ../images/spun_yarn_handdyed_samples.jpeg
+    title: Greenfinch
+    desc:  An early experiment in hand-dyeing
+    weight: 58
+    gauge: 922
+    yards: 118
+    date: 2009-01-03
+
+  - image_path: ../images/placeholder.jpeg
+    title: Wombat (unknown, possibly alpaca?)
+    desc:  Unknown fiber, but very soft and well spun. Date is approximate.
+    weight: 824
+    gauge: 972
+    yards: 824
+    date: 2010-01-01
+
+  - image_path: ../images/spun_yarn_rough-shupe.jpeg
+    title: Rough Shupe (Romney)
+    desc: This was a big project to spin an entire Romney fleece for a sweater. 
+    weight: 239
+    gauge: 702
+    yards: 370
+    date: 2013-02-02
 
   - image_path: ../images/foster.jpeg
     title: Foster Celadon (Blue-faced Leicester/Cormo)
@@ -149,6 +261,23 @@ images:
     yards: 392
     date: 2020-11-29
 
+  - image_path: ../images/spun_yarn_beach-plum.jpeg
+    title: Beach Plum (BFL/Cormo)
+    desc: This is a three-ply yarn made with fleece from my neighbor's Blue-faced Leicester X Cormo sheep, dyed with pokeberry dye.
+    weight: 56
+    gauge: 906
+    yards: 112
+    date: 2020-12-12
+
+  - image_path: ../images/placeholder.jpeg
+    title: Cappucino (BFL/Cormo + llama blend)
+    desc: This is a three-ply yarn made with a mix of fleece from my neighbor's Blue-faced Leicester X Cormo sheep plus llama fiber from my friend Jacqueline. Just a sample so far but it is delightful, very light and soft and even.
+    weight: 18
+    gauge: 906
+    yards: 36
+    date: 2020-12-15
+
+
   - image_path: ../images/spun_yarns1.jpeg
     title: Total
     desc: All of my spinning since January 2008 
@@ -156,6 +285,8 @@ images:
     gauge: n/a
     yards: 14288
     as of: 2020-12-13
+
+
 
 
 ---
