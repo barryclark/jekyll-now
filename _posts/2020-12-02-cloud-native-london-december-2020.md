@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London December 2020: Welcoming Solo.io, Nectar, and Red Sift"
+title: "Cloud Native London December 2020: featuring Solo.io, Nectar, and Red Sift"
 description: "three fantastic speakers from Solo.io, Nectar, and Red Sift join us at the Cloud Native London meetup December 2020, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
 image: /images/CNL_2020-12-02_Rambly.jpg
@@ -12,7 +12,7 @@ tags:
   - "2020"
 ---
 
-Joining us for a lively December Cloud Native London virtual meetup via Zoom, Rambly, and the YouTube/Twitch livestreams were three great speakers from Solo.io, Nectar, and Red Sift. 
+Joining us for a lively December Cloud Native London virtual meetup via Zoom, Rambly, and the YouTube/Twitch livestreams were three great speakers from Solo.io, Nectar, and Red Sift.
 
 We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), and [Palo Alto Networks](https://www.paloaltonetworks.com/) for your enthusiastic and generous support and sponsorship.
 
@@ -39,7 +39,7 @@ Finally, we returned from our break with Peter Parkanyi from Red Sift who talked
 And before we close, our three speakers this month:
 ![](/images/CNL_2020-12-02_Zoom.PNG)
 
-And a group photo from Rambly! 
+And a group photo from Rambly!
 ![](/images/CNL_2020-12-02_Rambly.jpg)
 
 
@@ -49,4 +49,4 @@ Our next meetup will be Wednesday 6th January, when we'll be joined by speakers 
 
 Stay safe and see you soon!
 
-Cheryl (@oicheryl) 
+Cheryl (@oicheryl)
