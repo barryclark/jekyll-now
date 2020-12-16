@@ -4,7 +4,6 @@ title: "Are certifications worth it? Keynote at KubeCon CloudNativeCon NA 2020"
 description: "Cheryl Hung, VP Ecosystem at CNCF, keynotes at KubeCon CloudNativeCon NA 2020"
 image: /images/2020-11-17-keynote-are-certifications-worth-it.png
 video: https://www.youtube.com/embed/ZByl-a-eghc
-published: false
 tags:
   - Video
   - "2020"
