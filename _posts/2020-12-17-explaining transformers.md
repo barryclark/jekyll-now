@@ -1,6 +1,6 @@
 ---
 layout: prediction_post
-published: False
+published: True
 title: Interfaces for Explaining Transformer Language Models
 ---
 
