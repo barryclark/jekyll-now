@@ -1,6 +1,6 @@
 ---
 layout: prediction_post
-published: False
+published: True
 title: Interfaces for Explaining Transformer Language Models
 ---
 
@@ -45,8 +45,7 @@ title: Interfaces for Explaining Transformer Language Models
             d3: "https://d3js.org/d3.v5.min",
             "d3-array": "https://d3js.org/d3-array.v2.min",
             jquery: "https://code.jquery.com/jquery-3.5.1.min",
-            oldEcco: ecco_url + 'ecco',
-            katex: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min",
+            "katex": "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min",
             ecco: ecco_url + 'ecco-bundle.min',
             xregexp: 'https://cdnjs.cloudflare.com/ajax/libs/xregexp/3.2.0/xregexp-all.min',
             'bibtexParse' : '/js/bibtexParse'
@@ -790,40 +789,37 @@ We illustrate how some key interpretability methods apply to transformer-based l
     </li>
 </ul>
 <script>
-    require(['d3', 'katex'], (d3, katex) => {
+require(['d3', 'katex'], (d3, katex) => {
+    katex.render("X_i ",
+        d3.select("#input_term").node(),
+        {throwOnError: false});
+
+    katex.render("n ",
+        d3.select("#n_length").node(),
+        {throwOnError: false});
+
+    katex.render("X_{1:n} ",
+        d3.select("#input_embeddings").node(),
+        {throwOnError: false});
 
 
-        katex.render("X_i ",
-            d3.select("#input_term").node(),
-            {throwOnError: false});
+    katex.render("f_c (X_{1:n}) ",
+        d3.select("#function_score").node(),
+        {throwOnError: false});
 
+    const math = d3.select("#grad").node()
+    katex.render("\\nabla _{X_i} f_c (X_{1:n}) ", math, {
+        throwOnError: false
+    });
+})
 
-        katex.render("n ",
-            d3.select("#n_length").node(),
-            {throwOnError: false});
-
-        katex.render("X_{1:n} ",
-            d3.select("#input_embeddings").node(),
-            {throwOnError: false});
-
-
-        katex.render("f_c (X_{1:n}) ",
-            d3.select("#function_score").node(),
-            {throwOnError: false});
-
-        const math = d3.select("#grad").node()
-        katex.render("\\nabla _{X_i} f_c (X_{1:n}) ", math, {
-            throwOnError: false
-        });
-    })
-
-    // require(['d3', 'katex'], (d3, katex) => {
-    //
-    //     const math = d3.select("#math").node()
-    //     katex.render(" \\lVert \\nabla _{X_i} f_c (X_{1:n})  X_i\\lVert_2", math, { //\cdot
-    //         throwOnError: false
-    //     });
-    // })
+// require(['d3', 'katex'], (d3, katex) => {
+//
+//     const math = d3.select("#math").node()
+//     katex.render(" \\lVert \\nabla _{X_i} f_c (X_{1:n})  X_i\\lVert_2", math, { //\cdot
+//         throwOnError: false
+//     });
+// })
 
 </script>
 <div id="math"></div>
