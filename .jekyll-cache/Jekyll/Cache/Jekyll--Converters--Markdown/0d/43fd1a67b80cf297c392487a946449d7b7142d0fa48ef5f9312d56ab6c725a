@@ -1,0 +1,43 @@
+I"j<p>AWS EC2에 Jenkins를 설치하여, React 앱을 지속적으로 배포가 가능하도록 배포 환경을 구축해볼게요.</p>
+
+<p>다음과 같은 순서로 가이드가 진행될거에요.</p>
+
+<ol>
+  <li>
+    <p>EC2 인스턴스 생성 및 접속</p>
+  </li>
+  <li>
+    <p>EC2에 JAVA 설치 및 환경변수 설정</p>
+  </li>
+  <li>
+    <p>EC2에 Jenkins 설치</p>
+  </li>
+  <li>
+    <p>React App Git Push</p>
+  </li>
+  <li>
+    <p>Jenkins와 Github 저장소 연결</p>
+  </li>
+  <li>
+    <p>배포하기</p>
+  </li>
+</ol>
+
+<h2 id="1-ec2-인스턴스-생성-및-접속">1. EC2 인스턴스 생성 및 접속</h2>
+
+<h6 id="1-amazon-linnux2-ami를-선택하세요">1. Amazon Linnux2 AMI를 선택하세요.</h6>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-1.png" alt="Alt text" /></p>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-2.png" alt="Alt text" /></p>
+
+<p><a href="www.jenkins.io/doc/book/scaling/hardware-recommendations/">젠킨스 공식 문서</a></p>
+
+<p>Jenkins 공식 사이트 하드웨어 권장 사항이에요.</p>
+
+<p>프로젝트 규모에 따라 메모리 사용 범위가 200MB ~ 70GB이상까지 사용될 수 있고,</p>
+
+<p>각 노드 연결에는 2 ~ 3개의 스레드가 필요하며…</p>
+
+<p>대충 요약하자면 사용자가 알아서 경험하고, 최적의 인스턴스 설정을 찾으라는거 같아요.</p>
+:ET

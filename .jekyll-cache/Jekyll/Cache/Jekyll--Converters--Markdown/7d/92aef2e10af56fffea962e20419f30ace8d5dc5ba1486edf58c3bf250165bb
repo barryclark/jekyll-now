@@ -1,0 +1,12 @@
+I"b<ol>
+  <li>React App을 github 저장소에 push 해주세요.</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd React App 폴더
+$ git init
+$ git add .
+$ git commit -m "메세지"
+$ git remote add origin https://저장소 주소.git
+$ git push origin master
+</code></pre></div></div>
+:ET
