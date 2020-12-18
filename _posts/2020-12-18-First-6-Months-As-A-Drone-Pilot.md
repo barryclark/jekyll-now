@@ -19,7 +19,7 @@ On the same trip I took this photo of Moose Mountain, and other Montana Mountain
 
 #### This is at Priest Lake:
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0200.JPG?raw=true" style="max-width:100%"/>
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0200.jpg?raw=true" style="max-width:100%"/>
 
 I happened to be in Priest Lake right after it snowed and I had my drone - was very happy with how this photo turned out. I simply pulled over on the side of the road and flew and captured this.
 
