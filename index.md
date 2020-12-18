@@ -89,6 +89,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Μικρό, εισαγωγικό, μη-τεχνικό βιβλίο: [21 Lessons: What I've Learned from Falling Down the Bitcoin Rabbit Hole](https://21lessons.com) ([στα Ελληνικά](https://niclick.org/blog/21-mathimata-philosofia/))
 - Μη-τεχνικό βιβλίο για την ιστορία του Bitcoin: [Digital Gold](https://www.harpercollins.com/9780062572066/digital-gold/)
 - Μη-τεχνικά βιβλία για τη χρησιμότητα του Bitcoin: [The Internet of Money](https://theinternetofmoney.info)
+- Μη-τεχνικό βιβλίο για τη χρησιμότητα του Bitcoin ως εναλλακτική του Δολλαρίου και του χρυσού: [The Bitcoin Standard: The Decentralized Alternative to Central Banking](https://saifedean.com/thebitcoinstandard/)
 - Τεχνικό βιβλίο για το Bitcoin: [Mastering Bitcoin](https://bitcoinbook.info)
 - Τεχνικό βιβλίο για το Bitcoin: [Programming Bitcoin](https://programmingbitcoin.com)
 - Τεχνικό βιβλίο για το Bitcoin: [Bitcoin Programming](https://kkarasavvas.com/assets/bitcoin-textbook.pdf)
