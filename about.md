@@ -45,6 +45,8 @@ Pursuing our passions and being motivated to take initiative. That's how this pr
 ZBCE is just getting started and there's a long way to go. Here is our [Road Map](https://github.com/orgs/zotbins/projects/9)
 
 ## Contributing
+This project is not all about coding. It also requires a vast set of skills including digital design, documentation, feedback, and more. All contributions are important to help this project thrive, not just the ones from pull requests.
+
 Here are some following ways you can contribute:
 - Join the [Discord](https://discord.gg/mGKVVpxTPr) server and contribute to our growing community
 - Submit bugs by opening an issue on our [Github](https://github.com/zotbins). Please make sure that bugs are reported in detail and is reproducible.
@@ -55,7 +57,7 @@ Here are some following ways you can contribute:
 - Submit user feedback through feedback forms or polls in our Discord community
 - Lookout for more requests for help on our Discord server
 
-Any help is really appreciated. For more ideas about how you can contribute to open source projects in general, feel free to take a look GitHub's [Open Source Guides](https://opensource.guide/how-to-contribute/).
+Any help is really appreciated. For more ideas about how you can contribute to open source projects feel free to message community members on [Discord](https://discord.gg/mGKVVpxTPr) or take a look GitHub's [Open Source Guides](https://opensource.guide/how-to-contribute/).
 
 
 ## Contact
