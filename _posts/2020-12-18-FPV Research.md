@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Initial Research on custom FPV drones
 ---
 
 I've been geeking on FPV drone stuff like this https://www.youtube.com/watch?v=fEm22P_ARgs
