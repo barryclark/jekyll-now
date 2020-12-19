@@ -1,0 +1,48 @@
+Ever wanted to scrape the data from an interactive map to run some analyses of your own on it? Only to find that the map didn't have easy access to the data?
+
+I did. Over at Edgap. While doing a lesson To Explore, Understand, and Respond to Social Injustice [https://evanrushton.blogspot.com/2020/12/book-club-high-school-mathematics.html]
+
+I could probably find a data store with the US SAT/ACT scores for a large number of schools from 2016 and then grab the census tract data and wrangle it until I could do the following analysis. However, I felt that I would learn something useful by trying to scrape the data from the interactive map.
+
+#Scraping
+I first tryied inspecting elements to see if they were pulling from a defined file or url. No.
+
+Then I looked ta the page source to see if there was an obvious script that was doing the work. Well, yes, but it was dynamically typing the url depending on the zoom window.
+
+So I figured I would grab the appropriate zoom window for the sample I want to analyze, and then look at the network output to look for anywhere that data was being loaded to use in the previous lines of code. Bingo.
+
+I found 3 json files and 1 csv. This is the head of the contents in them,
+
+#Cleaning
+So now I need to load all of these into an R session and wrangle it.
+
+I did this
+
+then this
+
+and finally this
+
+to get this. Tada
+
+#Exploration
+The question I am interested in is whether we can predict SAT scores with a given postal code or census tract.
+
+Note: You are not a test score. I believe we should measure what we value, not arbitrarily value what we measure. However, this is a data challenge accepted. So even though SAT scores may be shit, they still make pretty graphs.
+
+pretty graph 1
+
+pretty graph 2
+
+pretty graph 3
+
+#Analysis
+I threw many features into a model to see what was what and to look at interactions. ANOVA? ANCOVA? GLM?
+
+Result 1
+
+Result 2
+
+Result 3
+
+kop _crushton
+ 
