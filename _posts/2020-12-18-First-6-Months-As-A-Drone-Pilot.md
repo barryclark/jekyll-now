@@ -9,7 +9,7 @@ title: My first 6 months as a Drone Pilot
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0113.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
 
-I live about 5-10 minutes from Lake Pend Orielle and I've lived here for a while and had never seen Mount Pend Orielle; so I drove up to Lookout Pass to see it. In this photo the drone is at 6,800 feet elevation, 400 feet above the 6400ft Lunch Peak. On the right is Mount Pend Orielle, and in the distance on the left is the lake with the same name.
+I live about 5-10 minutes from Lake Pend Orielle and I've lived here for a while and had never seen Mount Pend Orielle; so I drove up to Lunch Peak to see it. In this photo the drone is at 6,800 feet elevation, 400 feet above the 6400ft Lunch Peak. On the right is Mount Pend Orielle, and in the distance on the left is the lake with the same name.
 
 #### Idaho/Montana Border:
 
