@@ -15,7 +15,7 @@ I live about 5-10 minutes from Lake Pend Orielle and I've lived here for a while
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0111.jpg?raw=true" style="max-width:100%"/>
 
-On the same trip I took this photo of Moose Mountain, and other Montana Mountains that I could see from Idaho's airspace.
+On the same trip I took this photo of Moose Mountain, and other Montana Mountains that I could see from Idaho's airspace. I bet you can tell which mountain is Moose Mountain.
 
 #### This is at Priest Lake:
 
