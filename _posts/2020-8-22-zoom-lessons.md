@@ -1,3 +1,4 @@
+
 I have been accompanying my daughter in her online zoom classes
 for the last few weeks. I believe there are some lessons that we (the
 adults) can learn from the kids and carry into to our own life,
