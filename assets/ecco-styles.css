@@ -41,6 +41,7 @@
 /* Special case: need less spacing when showing factors */
 .factor .token{
     margin: 0px 1px;
+    padding: 2px 0;
 }
 
 .factor .sequence-indicator {
