@@ -3,7 +3,7 @@ layout: post
 title: My first 6 months as a Drone Pilot
 ---
 
->I've flown my Mavic Air 2 for about 6 months now and I have loved it. I've really enjoyed getting up in the air and taking the best photos that I can. Here's a couple of my favorite photos that I've taken, and then I'm going to talk about next steps for me and FPV
+>I've flown my Mavic Air 2 for about 6 months now and I have loved it. I've really enjoyed getting up in the air and taking the best photos that I can. Here's a couple of my favorite photos that I've taken, and then I'm going to talk about next steps for me and my drone **videos**
 
 #### **This is where I live:**
 
@@ -37,10 +37,11 @@ So incredibly happy to have a reason to fly in the Bay Area, the air space is ve
 
 ### What's next? 
 
-> I crashed my drone in the Rio Grand (it survived and is fine) and have been looking at sportier drones that won't go down so hard, ones that are more aimed for flying very quickly and around obstacles. My Mavic Air 2 is phenomenal, but it serves a specific purpose, and I need to be flying - and RACING - FPV. Stay tuned!
+> I crashed my Mavic Air 2 in the Rio Grand (it survived and is fine) and ever since then I have been looking at sportier drones that won't go down so hard, ones that are more aimed for flying very quickly and around obstacles. My Mavic Air 2 is phenomenal - just look at these 5 shots on the 180 Degree panoramic mode! One of these images is 20 MB!! I have to lower the quality on my photos significantly to display them here. My Mavic serves a specific purpose, which to me is the photos. For videos, I need to be flying - and RACING - FPV. Stay tuned!
+
 ___ 
 
-> Youtube channel coming soon and I'll show you highlights from the drone videos I've done!
+> For full resolution videos and photos, contact me
 
 ___
 
