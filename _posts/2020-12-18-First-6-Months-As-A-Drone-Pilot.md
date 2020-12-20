@@ -27,7 +27,7 @@ I happened to be in Priest Lake right after it snowed and I had my drone - was v
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0236.jpg?raw=true" style="max-width:100%"/>
 
-I was in California and I was trying to fly my drone somewhere. My sister in law is the Parish Administrator for a church which is right next to UC Berkeley and they needed a roof inspection so I did it for free. I flew around and got a long video for their architect to look at, and when I was in the air I took the opportunity to snag some photos of Berkeley. On a clearer day you would be able to see the Golden Gate Bridge in these photos.
+I was in California and I was trying to fly my drone somewhere. My sister-in-law is the Parish Administrator for a church which is right next to UC Berkeley and they needed a roof inspection so I did it for free. I flew around and got a long video for their architect to look at, and when I was in the air I took the opportunity to snag some photos of Berkeley. On a clearer day you would be able to see the Golden Gate Bridge in these photos.
 
 #### Memorial Stadium, UC Berkeley
 
