@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🦃 Nov. 2020 Updates - Prototyping a Sensor Module for your Trash Bin v0
+title: 🦃 Nov. 2020 Updates - Prototyping a Sensor Module for your Trash Bin
 ---
 
 Hello!
@@ -13,7 +13,7 @@ Last month, I was working on creating my [Instructables](https://www.instructabl
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/november2020-images/instructables_published.png)
 
-I also entered the Instructables into the [battery powered contest](https://www.instructables.com/contest/battery2020/). I'm hoping to win be one of the finalists in the contest. You can help support the project by voting at the bottom of my [Instructables page](https://www.instructables.com/Battery-Powered-Simple-Waste-Auditing-Data-Logger-/) in a Desktop View. Thanks for the support! 😃
+I also entered the Instructables into the [battery powered contest](https://www.instructables.com/contest/battery2020/). I'm hoping to be one of the finalists in the contest. You can help support the project by voting at the bottom of my [Instructables page](https://www.instructables.com/Battery-Powered-Simple-Waste-Auditing-Data-Logger-/) in a Desktop View. Thanks for the support! 😃
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/november2020-images/instructables_vote.png)
 
