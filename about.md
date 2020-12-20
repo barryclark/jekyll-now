@@ -15,9 +15,3 @@ I live in beautiful North Idaho where there is so much natural beauty to film fr
 ### Contact
 
 Follow me/DM me on instagram: [justinmurdock7b](https://www.instagram.com/justinmurdock7b/?hl=en)
-
-___
-
-### Advertisements Below
-
-<script data-ad-client="ca-pub-2939242151861967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
