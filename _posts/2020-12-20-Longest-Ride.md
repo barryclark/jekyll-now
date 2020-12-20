@@ -12,7 +12,7 @@ Taking a MetroBike where it has never gone before.
 
 # The data
 
-Here is the map of the MetroBike (formerly BCycle) trips going back to 2013. 
+Here is the map of the MetroBike (formerly BCycle) trips going back to 2015. 
 
 <iframe width="100%" height="400px" src="https://flowmap.blue/11odTn4_kytEo2O9LxAXGbZspXM_OLFsX__mpxRAvAOc/5f18087/embed" frameborder="0" allowfullscreen></iframe>
 
