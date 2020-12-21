@@ -5,13 +5,13 @@ title: Snowy Mountain Adventure
 
 > Only locals will know what I mean when I say these photos were taken at "The Switchback", and that's all the information I'll provide on this location. These are some big photos, give your internet time to load them.
 
-#### Clearly I'm very happy to be flying and blogging
+#### Clearly I'm very happy to be flying and blogging.
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/2020-12-20_Schweitzer_Profile_Pic.jpg?raw=true" style="max-height: 100%; max-width:100%"/>
 
 A friend took this shot of me last when I flew yesterday. Shot on a Canon M6. This was my first time flying since I got the tablet mount for my drone. So far my favorite thing about my drone has been the panoramic mode. It hovers in one place, takes 18 photos at different angles, and stitches them together. Having the tablet hooked up to the drone now gives me a huge advantage. After I take a panoramic photo, I can look at the photo I've just taken on the iPad instead of my phone which normally connects to my DJI controller. 
 
-The tablet with its larger size makes it so much easier to see all the details of my shots compared to my phone which is just too small of a screen to notice fine details in these panoramas which have so much detail. I can see on the iPad a lot more information and it's super nice to actually get the shot I'm looking for and know that I've got it. The worst thing is when you get home and look at your shots, and now that you are looking at it on your computer you notice something is halfway in the frame, or the photo is messed up in such a way that you can't fix it in post. You can't re-take the photo when you get home. 10/10 do recommend the tablet mount. There are affiliate links at the bottom of this post for the PolarPro tablet mount, the Canon M6, and the DJI Mavic Air 2.
+The tablet with its larger size makes it so much easier to see all the details of my shots compared to my phone which is just too small of a screen to notice fine details in these panoramas which have so much detail. I can see a lot more information on the iPad and it's super nice to actually get the shot I'm looking for and know that I've got it. The worst thing is when you get home and look at your shots, and now that you are looking at it on your computer you notice something is halfway in the frame, or the photo is messed up in such a way that you can't fix it in post. You can't re-take the photo when you get home. 10/10 do recommend the tablet mount. There are affiliate links at the bottom of this post for the PolarPro tablet mount, the Canon M6, and the DJI Mavic Air 2.
 
 ___
 
@@ -19,7 +19,7 @@ ___
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/2020-12-20-Switchback-7-3.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
 
-This is the spot we pulled to the side of the road, the hairpin turn on the left.
+This is the spot where we pulled to the side of the road, the hairpin turn on the left.
 
 ___
 
