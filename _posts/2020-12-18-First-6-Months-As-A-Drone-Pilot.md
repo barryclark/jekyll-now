@@ -46,4 +46,4 @@ ___
 ___
 
 #### _**I LOVE DRONES**_
-#### _Follow me on Instagram:_ [**justinmurdock7b**](https://www.instagram.com/justinmurdock7b/?hl=en)
+#### _Follow me/DM me on Instagram:_ [**justinmurdock7b**](https://www.instagram.com/justinmurdock7b/?hl=en)
