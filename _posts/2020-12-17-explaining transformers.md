@@ -82,10 +82,6 @@ explainingApp.vizHeroFactors();
 </style>
 
 
-<div id="warning" style="background-color: #ffffc9; border: 1px solid #666; font-size:80%; padding:10px;display:none">
-Please refresh the page. There was an error loading the scripts on the page. If the error presists, please let me know on <a href="https://github.com/jalammar/ecco/discussions/11">Github</a>.
-</div>
-
 
 <p>Interfaces for exploring transformer language models by looking at input saliency and neuron activation.</p>
 
