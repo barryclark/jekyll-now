@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>照片墙</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            list-style: none;
+        }
+
+        html, body, ul {
+            width: 100%;
+            height: 100%;
+        }
+
+        #wall {
+            position: relative;
+        }
+
+        #wall li {
+            width: 320px;
+            height: 426px;
+            box-shadow: 0 0 15px #000;
+            position: absolute;
+
+            transition: all 1s;
+        }
+
+        #wall li img {
+            width: 320px;
+            height: 426px;
+        }
+
+        #wall li.current {
+            left: 50% !important;
+            top: 50% !important;
+            transform: rotate(0) translate(-50%, -50%) scale(1.2, 1.2) !important;
+            z-index: 9;
+        }
+    </style>
+</head>
+<body>
+    <ul id="wall">
+<li style="left: 20.2127px; top: 9.05357px; transform: rotate(201.963deg);"class><img src="lixinyue01.jpg" alt=""></li>
+<li style="left: 671.764px; top: 16.997px; transform: rotate(242.119deg);"class><img src="lixinyue02.jpg" alt=""></li>
+<li style="left: 60.7133px; top: 77.803px; transform: rotate(322.957deg);"class><img src="lixinyue03.jpg" alt=""></li>
+<li style="left: 709.178px; top: 188.341px; transform: rotate(256.177deg);"class><img src="lixinyue04.jpg" alt=""></li>
+<li style="left: 649.367px; top: 194.158px; transform: rotate(89.1892deg);"class><img src="lixinyue05.jpg" alt=""></li>
+<li style="left: 139.49px; top: 41.9941px; transform: rotate(24.1365deg);"class><img src="lixinyue06.jpg" alt=""></li>
+<li style="left: 74.1605px; top: 172.609px; transform: rotate(14.4316deg);"class><img src="lixinyue08.jpg" alt=""></li>
+<li style="left: 530.967px; top: 200.142px; transform: rotate(118.939deg);"class><img src="lixinyue09.jpg" alt=""></li>
+    </ul>
+
+    <script>
+        window.onload = function () {
+            var wall = document.getElementById('wall');
+            // 照片左上角的最大位置
+            var maxWidth = document.documentElement.clientWidth - 320;
+            var maxHeight = document.documentElement.clientHeight - 426;
+
+            // 1. 动态创建 li 标签
+            for (var i = 0; i < 0; ++i) {
+                // 1.1 创建标签
+                var li = document.createElement("li");
+                wall.appendChild(li);
+
+                // 1.2 创建 img 标签
+                var img = document.createElement("img");
+                if (i < 9)
+                    img.src = "images/mn0" + (i+1) + ".jpg";
+                else
+                    img.src = "images/mn" + (i+1) + ".jpg";
+                li.appendChild(img);
+
+                // 随机位置
+                li.style.left = Math.random()*maxWidth + 'px';
+                li.style.top = Math.random()*maxHeight + 'px';
+
+                // 随机角度
+                li.style.transform = 'rotate(' + Math.random()*360 + 'deg)';
+            }
+
+            var allLis = wall.children;
+            for (var i = 0; i < allLis.length; ++i) {
+                var li = allLis[i];
+                // 监听点击事件
+                li.onclick = function () {
+                    for (var j = 0; j < allLis.length; ++j)
+                        allLis[j].className = '';
+                    this.className = "current";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>百度一下，你就知道</title>
+  <style>
+    .top {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      _width: 1000px;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    #left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      height: 60px;
+      padding-left: 24px;
+    }
+
+    #right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 100;
+      height: 60px;
+      padding-right: 24px;
+    }
+
+    .main {
+      height: 60%;
+      min-height: 185px;
+      max-height: 310px;
+      position: relative;
+      z-index: 0;
+      text-align: center;
+      margin-top: 22px;
+    }
+
+    a.l,
+    a.r {
+      margin-right: 31px;
+      margin-top: 19px;
+      display: inline-block;
+      position: relative;
+      color: #222;
+      font: 13px/23px Arial, sans-serif;
+      text-decoration: none
+    }
+
+    a:hover {
+      color: #315efb;
+      text-decoration: none;
+    }
+
+    a.d {
+      overflow: hidden;
+      font-family: inherit;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      outline: 0;
+      border: 0;
+
+      border-radius: 6px;
+      padding: 0;
+
+      cursor: pointer;
+      height: 24px;
+      width: 48px;
+      line-height: 24px;
+      color: #fff !important;
+      background-color: #4e71f2;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0px;
+      margin-left: 1px;
+      font-size: 13px;
+    }
+
+    .i {
+      margin-top: 44.4px;
+      margin-left: -17px;
+    }
+
+    #s {
+      width: 512px;
+      height: 16px;
+      padding: 12px 16px;
+      padding-right: 16px;
+      font-size: 16px;
+      margin: 0;
+      vertical-align: top;
+      outline: 0;
+      box-shadow: none;
+      border-radius: 10px 0 0 10px;
+      border: 2px solid #c4c7ce;
+      background: #fff;
+      color: #222;
+      overflow: hidden;
+      width: 480px !important;
+      padding-right: 48px !important
+    }
+
+    #bb {
+      cursor: pointer;
+      width: 108px;
+      height: 44px;
+      line-height: 45px;
+      line-height: 44px\9;
+      padding: 0;
+      background: 0 0;
+      background-color: rgba(0, 0, 0, 0);
+      background-color: #4e6ef2;
+      border-radius: 0 10px 10px 0;
+      font-size: 17px;
+      color: #fff;
+      box-shadow: none;
+      font-weight: 400;
+      border: none;
+      outline: 0;
+    }
+
+    #c {
+      background-position: 0 -51px;
+      right: 16px;
+      margin-top: -9px;
+      background: #fff url(https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/searchbox/nicon-10750f3f7d.png) no-repeat;
+      background-position-x: 0%;
+      background-position-y: -48px;
+      width: 24px;
+      height: 20px;
+      z-index: 1;
+      position: absolute;
+      right: 420px;
+      top: 195px;
+    }
+
+    .footster {
+      margin-bottom: 500px;
+      text-align: center;
+    }
+
+    #fu {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.8em;
+    }
+
+    #xu {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top">
+    <div id="left">
+      <a class="l" href="#">新闻</a><a class="l" href="#">hao123</a><a class="l" href="#">地图</a><a class="l"
+        href="#">视频</a><a class="l" href="#">贴吧</a><a class="l" href="#">学术</a><a class="l" href="#">更多</a>
+    </div>
+    <div id="right">
+      <a class="r" href="#">设置</a><a class="d" href="#">登录</a>
+    </div>
+  </div>
+  <div class="main">
+    <div>
+      <img class="i" src="baidutupian.png" alt="" height="129" width="270">
+    </div>
+    <div>
+      <input id="s" type="text"><span id="c"></span><span id="bbb"><button id="bb">百度一下</button></span>
+    </div>
+  </div>
+  <div class="footster" style="margin-top: 440px;">
+    <div class="f_l" id="xu">
+      <a href="#">设为首页</a>
+      <a href="#">关于百度</a>
+      <a href="#">About Baidu</a>
+      <a href="#">百度营销</a>
+      <a href="#">使用百度前必读</a>
+      <a href="#">意见反馈</a>
+      <a href="#">帮助中心</a>
+    </div>
+    <div class="f_r" id="fu">
+      <span>©2020 Baidu</span>
+      <span>(京)-经营性-2017-0020</span>
+      <span>京公网安备11000002000001号</span>
+      <span>京ICP证030173号</span>
+
+    </div>
+  </div>
+</body>
+
+</html>
