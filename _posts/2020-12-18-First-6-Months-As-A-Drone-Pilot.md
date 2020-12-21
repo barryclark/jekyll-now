@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My first 6 months as a Drone Pilot
+title: My first 6 months as a Drone Pilot (5 photos)
 ---
 
 >I've flown my Mavic Air 2 for about 6 months now and I have loved it. I've really enjoyed getting up in the air and taking the best photos that I can. Here's a couple of my favorite photos that I've taken, and then I'm going to talk about next steps for me and my drone **videos**
