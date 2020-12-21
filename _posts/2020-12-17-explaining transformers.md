@@ -847,6 +847,7 @@ This concludes the first article in the series. Be sure to click on <a href="htt
     Hadeel Al-Negheimish,
     Isabelle Augenstein,
     Jasmijn Bastings,
+    Najla Alariefy,
     Najwa Alghamdi,
     Pepa Atanasova, and
     Sebastian Gehrmann.
