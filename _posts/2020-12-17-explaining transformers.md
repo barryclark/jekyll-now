@@ -1,41 +1,52 @@
 ---
 layout: article
-published: False
+published: True
 title: Interfaces for Explaining Transformer Language Models
 ---
+
+
+<script>
+window.ecco = {}
+// css http://localhost:8000/ecco/ https://storage.googleapis.com/ml-intro/ecco
+// const dataPath = 'https://storage.googleapis.com/ml-intro/dt/'
+const dataPath = '/data/'
+var ecco_url = '/assets/'
+ 
+</script>
 
 <script type="module">
 
 import * as explainingApp from "/js/explaining-app.js";
 
-
 function showRefreshWarning(){
-var warning = document.getElementById("warning");
-
-warning.style.display = "block";
+    var warning = document.getElementById("warning");
+    warning.style.display = "block";
 }
 
-try{
-    explainingApp.vizHeroSaliency();
-    explainingApp.vizHeroFactors();
-    explainingApp.vizShakespeare();
-    explainingApp.EUSaliency();
-    explainingApp.vizOnes();
-    explainingApp.vizAnswer();
-    explainingApp.saliencyFormulas();
-    explainingApp.vizCounting();
-    explainingApp.vizCountingTwoFactors();
-    explainingApp.vizCountingFiveFactors();
-    explainingApp.vizEUFactors();
-    explainingApp.vizXMLFactors();
-    explainingApp.vizPianoFactors();
-}
-catch(err){
-    showRefreshWarning()
-}
-
+// Show the hero explorables, even in homepage preview
+explainingApp.vizHeroSaliency();
+explainingApp.vizHeroFactors();
+        
+// 
 // Only process citations on the page, not in homepage preview
  if (window.location.pathname =='/explaining-transformers/'){
+    try{
+        explainingApp.vizShakespeare();
+        explainingApp.EUSaliency();
+        explainingApp.vizOnes();
+        explainingApp.vizAnswer();
+        explainingApp.saliencyFormulas();
+        explainingApp.vizCounting();
+        explainingApp.vizCountingTwoFactors();
+        explainingApp.vizCountingFiveFactors();
+        explainingApp.vizEUFactors();
+        explainingApp.vizXMLFactors();
+        explainingApp.vizPianoFactors();
+    }
+    catch(err){
+        showRefreshWarning()
+    }
+    
     explainingApp.citations();
  }
 
@@ -70,65 +81,6 @@ catch(err){
 
 </style>
 
-<script>
-window.ecco = {}
-    // css http://localhost:8000/ecco/ https://storage.googleapis.com/ml-intro/ecco
-    // const dataPath = 'https://storage.googleapis.com/ml-intro/dt/'
-    const dataPath = '/data/'
-    var ecco_url = '/assets/'
-    //'https://storage.googleapis.com/ml-intro/ecco/'
-    requirejs.config({
-        urlArgs: "bust=" + (new Date()).getTime(),
-        nodeRequire: require,
-        shim: {
-        //     // Ecco requires these libraries. Without this shim configuration, errors occure
-        //     // where requireJS loads ecco and these libraries in a different order, leading
-        //     // their references inside ecco to be "undefined".
-        //     'ecco':{
-        //         deps:['d3', 'd3-array', 'xregexp'],
-        //         export: 'ecco'
-        //         },
-        //     'jquery':{
-        //         deps: ['ecco']
-        //         },
-        //     'd3-array':{
-        //         deps: ['d3']
-        //       },
-        //     'katex':{
-        //         deps: ['d3']
-        //         },
-            'bibtexParse':{
-                deps: ['d3', 'katex'],
-                exports: 'BibtexParse'
-                },
-            // 'citations': {
-            //     deps: ['bibtexParse'],
-            //     exports: 'Citations'
-            //    }
-        },
-        paths: {
-            "d3": "https://d3js.org/d3.v6.min",
-            // "d3-array": "https://d3js.org/d3-array.v2.min",
-            "jquery": "https://code.jquery.com/jquery-3.5.1.min",
-            "katex": "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min",
-            // "xregexp": 'https://cdnjs.cloudflare.com/ajax/libs/xregexp/3.2.0/xregexp-all.min',
-            "ecco": ecco_url + 'ecco-bundle.min',
-            "bibtexParse" : '/js/bibtexParse',
-            'citations': '/js/citations'
-        }
-    });
-    
-    // Process citations if we're on the post's page, but not on homepage
-    // require(['citations'], function(citations,){
-    //     console.log(citations);
-    //     if (window.location.pathname =='/explaining-transformers/'){
-    //         console.log('adding citations')
-    //         // d3.select('head').append('script').attr('src', '/js/citations.js')
-    //     }
-    // })
-
-</script>
-
 
 <div id="warning" style="background-color: #ffffc9; border: 1px solid #666; font-size:80%; padding:10px;display:none">
 Please refresh the page. There was an error loading the scripts on the page. If the error presists, please let me know on <a href="https://github.com/jalammar/ecco/discussions/11">Github</a>.
@@ -141,17 +93,14 @@ Please refresh the page. There was an error loading the scripts on the page. If 
 <div style="background: hsl(0, 0%, 97%);;
 border-top: 1px solid rgba(0, 0, 0, 0.1);;" class="l-screen">
 
-    <div  class="l-page">
+<div  class="l-page">
 <figure>
-    
     <figcaption style="margin-top:20px">
         <strong>Explorable #1:</strong>  Input saliency of a list of countries generated by a language model<br/>
          <strong style="color:purple">Tap or hover over</strong> the <strong>output tokens</strong>:<br/><br/>
     </figcaption>
     <div id="viz_hero_saliency" class="ecco fig" style="max-width: 700px"></div>
     <br style="clear:both"/>
-
-
     <figcaption style="margin-top:20px">
     <br />
         <strong>Explorable #2:</strong>  Neuron activation analysis reveals four groups of neurons, each is associated with generating a certain type of token<br/>
@@ -236,7 +185,7 @@ We illustrate how some key interpretability methods apply to transformer-based l
     for GPT-based<cite key="radford2018improving"></cite> models from the HuggingFace transformers library<cite key="wolf2019huggingface"></cite>.
 </p>
 
-<p>If we're to impose the three components we're examining to the architecture of the transformer, it would look like the following figure.</p>
+<p>If we're to impose the three components we're examining to explore the architecture of the transformer, it would look like the following figure.</p>
 <figure>
     <img src="/images/explaining/transformer-input-saliency-hidden-states-neuron-activations.png"/>
     <figcaption>
@@ -380,7 +329,6 @@ We illustrate how some key interpretability methods apply to transformer-based l
         <strong>
             Figure: Gradient-based input saliency
         </strong>
-
     </figcaption>
 </figure>
 
@@ -399,7 +347,6 @@ We illustrate how some key interpretability methods apply to transformer-based l
         <strong>
             Figure: Gradient X input calculation and aggregation
         </strong>
-
     </figcaption>
 </figure>
 
