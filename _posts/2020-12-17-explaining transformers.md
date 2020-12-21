@@ -455,7 +455,7 @@ We illustrate how some key interpretability methods apply to transformer-based l
     <div id="viz_123" class="ecco"></div>
 </figure>
 
-<p style="padding-top:45px;clear:both">By using the methods we'll discuss in Article #2 (following the lead of <a href="https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens">nostalgebraist</a>), we can produce a graphic that exposes the probabilities of output tokens after each layer in the model. This looks at the hidden state after each layer, and displays the ranking of the ultimately produced output token in that layer.</p>
+<p style="padding-top:45px;clear:both">By using the methods we'll discuss in Article #2 (following the lead of <a href="https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens">nostalgebraist</a><cite key="nostalgebraist2020"></cite>), we can produce a graphic that exposes the probabilities of output tokens after each layer in the model. This looks at the hidden state after each layer, and displays the ranking of the ultimately produced output token in that layer.</p>
 
 <p>For example, in the first step, the model produced the token " 4". The first column tells us about that process. The bottom most cell in that column shows that the token " 4" was ranked #1 in probability after the last layer. Meaning that the last layer (and thus the model) gave it the highest probability score. The cells above indicate the ranking of the token " 4" after each layer.</p>
 
