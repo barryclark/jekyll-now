@@ -129,14 +129,16 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 
 ### <a name="wallet"></a>Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;
 
-Μια λίστα με πορτοφόλια Bitcoin είναι αναρτημένη στο [bitcoin.org](https://bitcoin.org/en/choose-your-wallet), [εδώ](http://bitcoinx.io/wallets/) και [εδώ](https://en.bitcoin.it/wiki/Software). Εδώ μπορείτε να δείτε ένα [βίντεο](https://www.youtube.com/watch?v=9qgqPvc6kgM) για το πως φτιάχνετε ένα πορτοφόλι CoPay.
+Μια λίστα με πορτοφόλια Bitcoin είναι αναρτημένη στο [bitcoin.org](https://bitcoin.org/en/choose-your-wallet). Εδώ μπορείτε να δείτε ένα [βίντεο](https://www.youtube.com/watch?v=9qgqPvc6kgM) για το πως φτιάχνετε ένα πορτοφόλι CoPay. Άλλη λίστα με [έμπιστα πορτοφόλια Bitcoin](https://www.lopp.net/bitcoin-information/recommended-wallets.html).
 
-### <a name="greekwallet"></a> Αναζητώ ένα πορτοφόλι Bitcoin που να λειτουργεί στα Ελληνικά
+Προσοχή: ποτέ δεν ψάχνουμε στο Google ή στο Gooble Play ή στο Apple AppStore για "Bitcoin wallet" γιατί θα πέσουμε σε ψεύτικα πορτοφόλια που θα μας κλέψουν τα Bitcoin.
+
+### <a name="greekwallet"></a>Αναζητώ ένα πορτοφόλι Bitcoin που να λειτουργεί στα Ελληνικά
 
 Δοκιμάστε τα:
 
-- [Coinomi](https://coinomi.com), τρέχει σε Android. Είναι thin client.
-- [Electrum](https://electrum.org) τρέχει σε Windows, Mac, Linux, Android. Είναι thin client.
+- [Coinomi](https://coinomi.com), τρέχει σε Android και iOS.
+- [Electrum](https://electrum.org) τρέχει σε Windows, Mac, Linux, Android.
 
 ### <a name="paymentsinperson"></a> Τι χρειάζομαι για να δέχομαι πληρωμές σε κατάστημα;
 
