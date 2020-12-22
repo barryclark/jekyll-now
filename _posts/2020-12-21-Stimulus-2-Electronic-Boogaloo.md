@@ -67,10 +67,14 @@ This is another brand option for high-end goggles. Fat Shark seems to be a trust
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=juliusakula-20&marketplace=amazon&region=US&placement=B0711H4D3K&asins=B0711H4D3K&linkId=da34ce4891e9e6956c4b3325d39d4a66&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
 
-https://www.youtube.com/watch?v=f8HXBizoLK8
+
+[![Fat Shark HDO](http://img.youtube.com/vi/f8HXBizoLK8/0.jpg)](http://www.youtube.com/watch?v=f8HXBizoLK8 "Fat Shark HDO")
+
 
 With the Eachine EV800D I can have a functioning pair of FPV goggles, which will be great for starting, especially at a price point of $130. I will be limited on my range and really won't be able to fly that well according to some of these FPV racers. I imagine flying well to be defined as 
-https://www.youtube.com/watch?v=1sfR8ny2BQ0
+
+
+[![Eachine EV800D](http://img.youtube.com/vi/1sfR8ny2BQ0/0.jpg)](http://www.youtube.com/watch?v=1sfR8ny2BQ0 "Eachine EV800D")
 
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=juliusakula-20&marketplace=amazon&region=US&placement=B076BWMTL7&asins=B076BWMTL7&linkId=d62d2219529d06f7bbf63f4afa8dc9b1&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
