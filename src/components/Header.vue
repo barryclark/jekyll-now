@@ -1,33 +1,135 @@
 <template>
   <header>
-    <nav style="float: initial;" class="header row">
-      <div class="col s6 valign-wrapper">
-        <img class="circle left square-icon" alt="corder dojo tachikawa" src="../assets/dojo-logo.jpg" />
+    <!-- PC表示 -->
+    <nav
+      style="float: initial;"
+      class="header row"
+      v-if="!smallSize"
+    >
+      <div class="col s4 valign-wrapper">
+        <img
+          class="circle left square-icon"
+          alt="corder dojo tachikawa"
+          src="../assets/dojo-logo.jpg"
+        />
         <h1 class='title'>Corder Dojo 立川</h1>
       </div>
-      <ul class="col valign-wrapper">
-        <li>スタッフ紹介</li>
-        <li>メンバー募集</li>
-        <li>開催の様子</li>
-        <li>ご支援のお願い</li>
-        <li>お問い合わせ</li>
-        <li>
-          <a href="https://lin.ee/vhWQhPP">
-            <img class="line-img" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
-          </a>
-        </li>
-      </ul>
+      <div class="col s8">
+        <ul class="col valign-wrapper">
+          <li>スタッフ紹介</li>
+          <li>メンバー募集</li>
+          <li>開催の様子</li>
+          <li>ご支援のお願い</li>
+          <li>お問い合わせ</li>
+          <li>
+            <a href="https://lin.ee/vhWQhPP">
+              <img
+                class="line-img"
+                src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                alt="友だち追加"
+                height="36"
+                border="0"
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- スマホ表示 -->
+    <nav
+      style="float: initial;"
+      class="header row"
+      v-if="smallSize"
+    >
+      <div class="col s4 valign-wrapper">
+        <a
+          href="#"
+          data-target="mobile-demo"
+          class="sidenav-trigger"
+        ><i class="material-icons">menu</i></a>
+        <img
+          class="circle left square-icon"
+          alt="corder dojo tachikawa"
+          src="../assets/dojo-logo.jpg"
+        />
+        <h1 class='title'>Corder Dojo 立川</h1>
+      </div>
+      <div class="col s8">
+        <!--ハンバーガーメニューのボタン-->
+        <div
+          class="hamburger_btn"
+          v-on:click='ActiveBtn=!ActiveBtn'
+        >
+          <span
+            class="line line_01"
+            v-bind:class="{'btn_line01':ActiveBtn}"
+          ></span>
+          <span
+            class="line line_02"
+            v-bind:class="{'btn_line02':ActiveBtn}"
+          ></span>
+          <span
+            class="line line_03"
+            v-bind:class="{'btn_line03':ActiveBtn}"
+          ></span>
+        </div>
+        <!--サイドバー-->
+        <transition name="menu">
+          <div
+            class="menu"
+            v-show="ActiveBtn"
+          >
+            <ul>
+              <li>スタッフ紹介</li>
+              <li>メンバー募集</li>
+              <li>開催の様子</li>
+              <li>ご支援のお願い</li>
+              <li>お問い合わせ</li>
+              <li>
+                <a href="https://lin.ee/vhWQhPP" style="margin-left: -30px;">
+                  <img
+                    class="line-img"
+                    src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                    alt="友だち追加"
+                    height="36"
+                    border="0"
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </transition>
+      </div>
     </nav>
   </header>
 </template>
 
 <script>
-// export default {
-//   name: 'HelloWorld',
-//   props: {
-//     msg: String
-//   }
-// }
+export default {
+  data() {
+    return {
+      smallSize: Boolean,
+      ActiveBtn: false,
+    };
+  },
+  name: "HelloWorld",
+  props: {
+    Small: Number,
+  },
+  methods: {
+    handleResize: function () {
+      if (window.innerWidth <= 1300) {
+        this.smallSize = true;
+      } else {
+        this.smallSize = false;
+      }
+    },
+  },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -76,9 +178,9 @@ a {
   color: #42b983;
 }
 .header {
-  background: url('../assets/back_01.png') repeat center center;
+  background: url("../assets/back_01.png") repeat center center;
   background-color: #fff;
-  color: #0F0F0F;
+  color: #0f0f0f;
   height: 64px;
   margin-bottom: initial;
   position: fixed;
@@ -96,5 +198,97 @@ a {
 }
 .title {
   font-size: 2rem;
+}
+
+/* ハンバーガーメニュースタイル */
+/*ボタン*/
+.hamburger_btn {
+  position: fixed; /*常に最上部に表示したいので固定*/
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 56px;
+  cursor: pointer;
+  z-index: 50;
+  border: 1px solid;
+  border-color: grey;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.hamburger_btn .line {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 32px;
+  height: 2px;
+  background: #333333;
+  text-align: center;
+}
+
+.hamburger_btn .line_01 {
+  top: 16px;
+  transition: 0.4s ease;
+}
+.hamburger_btn .line_02 {
+  top: 26px;
+  transition: 0.4s ease;
+}
+.hamburger_btn .line_03 {
+  top: 36px;
+  transition: 0.4s ease;
+}
+
+.btn_line01 {
+  transform: translateY(10px) rotate(-45deg);
+  transition: 0.4s ease;
+}
+.btn_line02 {
+  transition: 0.4s ease;
+  opacity: 0;
+}
+.btn_line03 {
+  transform: translateY(-10px) rotate(45deg);
+  transition: 0.4s ease;
+}
+
+/*サイドバー*/
+.menu-enter-active,
+.menu-leave-active {
+  transition: opacity 0.4s;
+}
+.menu-enter,
+.menu-leave-to {
+  opacity: 0;
+}
+.menu-leave,
+.menu-enter-to {
+  opacity: 1;
+}
+
+.menu li {
+  list-style: none;
+  line-height: 1;
+  padding: 1rem;
+}
+.menu {
+  background-color: rgba(197, 197, 197, 0.671);
+  z-index: 30;
+  padding: 2rem 1rem;
+  position: fixed;
+  width: 20rem;
+  height: 80rem;
+  top: 0;
+  right: 0;
+}
+.menu a {
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+}
+.menu ul {
+  margin: 1rem;
+  padding: 0;
 }
 </style>
