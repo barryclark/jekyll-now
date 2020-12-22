@@ -11,7 +11,7 @@ ___
 
 ### Audio
 
-The thing I need more than anything right now is a lavalier microphone for better audio when I take videos. A few months ago I ordered a lav mic - the Movo brand, and it was so terrible I returned it after one use. With two microphones, you would expect Person 1 to be on Channel 1, and Person 2 to be on Channel 2. With the Movo, Person 1 and 2 were on Channel 1, so there was no way to isolate the sound. Imagine doing an interview, but when one person is talking you can hear the other person breathing or drinking water. This Comica has good reviews and I was really impressed with the sound quality and the range. I'll be buying this and have about $300 leftover.
+The thing I need more than anything right now is a Lavalier Microphone for better audio when I take videos. A few months ago I ordered a lav mic - the Movo brand, and it was so terrible I returned it after one use. With two microphones, you would expect Person 1 to be on Channel 1, and Person 2 to be on Channel 2. With the Movo, Person 1 and 2 were on Channel 1, so there was no way to isolate the sound. Imagine doing an interview, but when one person is talking you can hear the other person breathing or drinking water. This Comica has good reviews and I was really impressed with the sound quality and the range. I'll be buying this and have about $300 leftover.
 
 This will allow me to set my phone up on a tripod, mic myself up, connect my tablet to my drone, and fly while doing commentary/voiceover.
   
