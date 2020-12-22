@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stimulus 2: Electronic Shopping Boogaloo
+title: Stimulus 2, Electronics Shopping Boogaloo
 ---
 
 > I used the first stimulus check to buy my Mavic Air 2. With another $600 on the way, I thought I'd compile a huge list of links for possible ways to enjoy this christmas bonus. Note that all links below may support me.
