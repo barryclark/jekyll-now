@@ -7,11 +7,9 @@ title: Stimulus 2, Electronics Shopping Boogaloo
 
 ### Stimulus Shopping list for media & audio supplies
 
-___
-
 ### FPV
 
-I am currently **extremely** interested in flying Freestyle FPV. My Mavic Air 2 is an awesome drone for what it was designed for - cinematic footage and photography. The world of freestyle FPV and drone racing is a completely different ball game. You are getting as close to your subjects as possible and doing flips and acrobatics. You may have seen [JohnnyFPV](https://www.youtube.com/channel/UC7O8KgJdsE_e9op3vG-p2dg "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible with the Mavic. My drone automatically stabilizes very well, and it is simply impossible to do flips. Plus the FPV drones are cheaper, and you are guaranteed to crash your drone flying in this style.
+I, personally, am currently **extremely** interested in flying **Freestyle FPV**. My Mavic Air 2 is an awesome drone for what it was designed for - cinematic footage and photography. The world of freestyle FPV and drone racing is a completely different ball game. You are getting as close to your subjects as possible and doing flips and acrobatics. You may have seen [JohnnyFPV](https://www.youtube.com/channel/UC7O8KgJdsE_e9op3vG-p2dg "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible with the Mavic. My drone automatically stabilizes very well, and it is simply impossible to do flips. Plus the FPV drones are cheaper, and you are guaranteed to crash your drone flying in this style.
 
 #### FPV Controller:
 
