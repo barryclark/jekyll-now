@@ -242,6 +242,9 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- His mind is the entire world, samsara and nirvana, conditioned and free from conditioning.
 
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- A person is conditioned to appear, and so is conditioned to cease. What has the nature of enlightenment is unconditioned.
+
 ### Answers trying to be stupid
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
@@ -262,4 +265,7 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 \- _All dharmas are marked by emptiness; they neither arise nor cease, are neither defiled nor pure, neither increase nor decrease._ \[[Prajñāpāramitāhṛdaya Sūtra](https://en.wikipedia.org/wiki/Heart_Sutra)\]
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
-\- _Sakyamuni Buddha saw the morning star and was enlightened, and he said, "I, and the great earth and beings, simultaneously achieve the Way."_ \[[Denkōroku](https://en.wikipedia.org/wiki/Denkoroku), case 1, Sakyamuni, trad. Francis H. Cook\]
+\- _Sakyamuni Buddha saw the morning star and was enlightened, and he said, "I, and the great earth and beings, simultaneously achieve the Way._ \[[Denkōroku](https://en.wikipedia.org/wiki/Denkoroku), case 1, Sakyamuni, trad. Francis H. Cook\]
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- _There are these three characteristics that define the conditioned. An arising is seen, a vanishing is seen, and its alteration while it persists is seen. There are three characteristics that define the unconditioned. No arising is seen, no vanishing is seen, and no alteration while it persists is seen._ [AN, I 152, 47 (7)]
