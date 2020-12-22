@@ -9,22 +9,9 @@ title: Stimulus 2, Electronics Shopping Boogaloo
 
 ___
 
-### Audio
-
-An accessory I need more than anything right now is a [Lavalier Microphone](https://www.amazon.com/dp/B0856V2C5Q/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=57438679284ee330005ef349588dd5fc&creativeASIN=B0856V2C5Q "Lavalier Microphone on Amazon") for better audio when I take videos. A few months ago I ordered a lav mic - the Movo brand, and it was so terrible I returned it after one use. With two microphones, you would expect Person 1 to be on Channel 1, and Person 2 to be on Channel 2. With the Movo, Person 1 and 2 were on Channel 1, so there was no way to isolate the sound. Imagine doing an interview, but when one person is talking you can hear the other person breathing or drinking water. This Comica has good reviews and I was really impressed with the sound quality and the range. I'll be buying this and have about $300 leftover.
-
-This will allow me to set my phone up on a tripod, mic myself up, connect my tablet to my drone, and fly while doing commentary/voiceover.
-  
-#### Comica Lavalier Microphone system:
-
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=juliusakula-20&marketplace=amazon&region=US&placement=B0856V2C5Q&asins=B0856V2C5Q&linkId=57438679284ee330005ef349588dd5fc&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
-    </iframe>
-
-___
-
 ### FPV
 
-I am currently extremely interested in flying Freestyle FPV. My Mavic Air 2 is an awesome drone for what it was designed for - cinematic footage and photography. The world of freestyle FPV and drone racing is a completely different ball game. You are getting as close to your subjects as possible and doing flips and acrobatics. You may have seen [JohnnyFPV](https://www.youtube.com/channel/UC7O8KgJdsE_e9op3vG-p2dg "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible with the Mavic. My drone automatically stabilizes very well, and it is simply impossible to do flips. Plus the FPV drones are cheaper, and you are guaranteed to crash your drone flying in this style.
+I am currently **extremely** interested in flying Freestyle FPV. My Mavic Air 2 is an awesome drone for what it was designed for - cinematic footage and photography. The world of freestyle FPV and drone racing is a completely different ball game. You are getting as close to your subjects as possible and doing flips and acrobatics. You may have seen [JohnnyFPV](https://www.youtube.com/channel/UC7O8KgJdsE_e9op3vG-p2dg "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible with the Mavic. My drone automatically stabilizes very well, and it is simply impossible to do flips. Plus the FPV drones are cheaper, and you are guaranteed to crash your drone flying in this style.
 
 #### FPV Controller:
 
@@ -79,3 +66,17 @@ With the Eachine EV800D I can have a functioning pair of FPV goggles, which will
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=juliusakula-20&marketplace=amazon&region=US&placement=B076BWMTL7&asins=B076BWMTL7&linkId=d62d2219529d06f7bbf63f4afa8dc9b1&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
+
+
+### Audio
+
+An accessory I need more than anything right now is a [Lavalier Microphone](https://www.amazon.com/dp/B0856V2C5Q/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=57438679284ee330005ef349588dd5fc&creativeASIN=B0856V2C5Q "Lavalier Microphone on Amazon") for better audio when I take videos. A few months ago I ordered a lav mic - the Movo brand, and it was so terrible I returned it after one use. With two microphones, you would expect Person 1 to be on Channel 1, and Person 2 to be on Channel 2. With the Movo, Person 1 and 2 were on Channel 1, so there was no way to isolate the sound. Imagine doing an interview, but when one person is talking you can hear the other person breathing or drinking water. This Comica has good reviews and I was really impressed with the sound quality and the range. I'll be buying this and have about $300 leftover.
+
+This will allow me to set my phone up on a tripod, mic myself up, connect my tablet to my drone, and fly while doing commentary/voiceover.
+  
+#### Comica Lavalier Microphone system:
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=juliusakula-20&marketplace=amazon&region=US&placement=B0856V2C5Q&asins=B0856V2C5Q&linkId=57438679284ee330005ef349588dd5fc&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+
+
