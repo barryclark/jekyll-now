@@ -479,10 +479,9 @@ We illustrate how some key interpretability methods apply to transformer-based l
     
    
 
-<p>We can plot the activations of the neurons in layer 4 to get a sense of neuron activity. That is what the figure
-    on the side shows.</p>
+<p>We can plot the activations of the neurons in layer 4 to get a sense of neuron activity. That is what the first of the following three figures shows.</p>
 
-<p>It is difficult to gain any interpretation from looking at activations during one forward pass through the model.</p>
+<p>It is difficult, however, to gain any interpretation from looking at activations during one forward pass through the model.</p>
 
 <p>
     The figures below show neuron activations while five tokens are generated (' 4 , 5 , 6'). To get around the
@@ -703,7 +702,6 @@ We illustrate how some key interpretability methods apply to transformer-based l
 <p>This interface is a good companion for hidden state examinations which can highlight a specific layer of
     interest, and using this interface we can focus our analysis on that layer of interest. It is straight-forward
     to apply this method to specific layers of interest. Hidden-state evolution diagrams, for example,
-    indicate that layer #0 does a lot of heavy lifting as it often tends to shortlist the tokens that make it to the
     indicate that layer #0 does a lot of heavy lifting as it often tends to shortlist the tokens that make it to the
     top of the probability distribution. The following figure showcases ten factors applied to the activations
     of layer 0 in response to a passage by Fyodor Dostoyevsky:</p>
