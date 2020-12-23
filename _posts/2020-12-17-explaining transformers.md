@@ -15,15 +15,13 @@ let ecco_url = '/assets/'
 </script>
 
 <script type="module">
-// Safari on iPad doesn't recognize the definition above.
-let dataPath = '/data/' 
-let ecco_url = '/assets/'
 
 import * as explainingApp from "/js/explaining-app.js";
 
 function showRefreshWarning(){
     var warning = document.getElementById("warning");
     warning.style.display = "block";
+    warning.innerHTML = 'Please refresh the page. There was an error loading the scripts on the page. If the error presists, please let me know on <a href="https://github.com/jalammar/ecco/discussions/11">Github</a>.'
 }
 
 // Show the hero explorables, even in homepage preview
@@ -55,7 +53,7 @@ explainingApp.vizHeroFactors();
 
 </script>
 
-<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+
 <link id='css' rel="stylesheet" type="text/css" href="https://storage.googleapis.com/ml-intro/ecco/html/styles.css?6">
 
 
@@ -85,6 +83,7 @@ explainingApp.vizHeroFactors();
 </style>
 
 
+<div id="warning" style="background-color: #ffffc9; border: 1px solid #666; font-size:80%; padding:10px;display:none"></div>
 
 <p>Interfaces for exploring transformer language models by looking at input saliency and neuron activation.</p>
 
