@@ -9,12 +9,15 @@ title: Interfaces for Explaining Transformer Language Models
 window.ecco = {}
 // css http://localhost:8000/ecco/ https://storage.googleapis.com/ml-intro/ecco
 // const dataPath = 'https://storage.googleapis.com/ml-intro/dt/'
-const dataPath = '/data/'
-var ecco_url = '/assets/'
+let dataPath = '/data/'
+let ecco_url = '/assets/'
  
 </script>
 
 <script type="module">
+// Safari on iPad doesn't recognize the definition above.
+let dataPath = '/data/' 
+let ecco_url = '/assets/'
 
 import * as explainingApp from "/js/explaining-app.js";
 
