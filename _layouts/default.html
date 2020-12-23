@@ -44,7 +44,12 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          <a href="{{ site.baseurl }}/">Blog Homepage</a> | Socials:
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
           {% include svg-icons.html %}
         </footer>
       </div>
