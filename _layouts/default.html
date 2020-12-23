@@ -44,8 +44,12 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
           <!-- back-to-top icon, then social media -->
-          <a href="/"><img src="https://raw.githubusercontent.com/murdockfpv/murdockfpv.github.io/master/images/MurdockFPV_Avatar.jpg" style="width: 40px; height: 40px; display: inline-block;border-radius: 20px;"></a>
+          <a href="/"><img src="{{ site.avatar }}" style="width: 40px; height: 40px; display: inline-block;border-radius: 20px;"></a>
           {% include svg-icons.html %}
         </footer>
       </div>
