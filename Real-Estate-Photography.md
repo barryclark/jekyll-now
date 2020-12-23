@@ -4,7 +4,7 @@ title: Real Estate Photography - Justin Murdock
 permalink: /photography/
 ---
 
-> My camera in the sky can capture incredible images of properties. Allow these images to load, I uploaded the highest resolution I possibly could and it may take time to load in your browser depending on your internet. _Wi-fi reccomended on your phone if you do not have an unlimited data plan_. This page is a photo album from one location.
+> My camera in the sky can capture incredible images of properties. This page is a photo album from one location.
 
 ### From above:
 
