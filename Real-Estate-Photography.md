@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Real Estate Photography - Justin Murdock
+title: Real Estate Photographer, Justin Murdock
 permalink: /photography/
 ---
 
