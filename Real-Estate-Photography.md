@@ -4,19 +4,19 @@ title: Real Estate Photography - Justin Murdock
 permalink: /photography/
 ---
 
-> My camera in the sky can capture incredible images of properties. Allow these images to load, I uploaded the highest resolution I possibly could and it may take time to load in your browser depending on your internet. _Wi-fi reccomended on your phone if you do not have an unlimited data plan_.
+> My camera in the sky can capture incredible images of properties. Allow these images to load, I uploaded the highest resolution I possibly could and it may take time to load in your browser depending on your internet. _Wi-fi reccomended on your phone if you do not have an unlimited data plan_. This page is a photo album from one location.
 
 ### From above:
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/sunnyside_4.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
 
-Photos from the sky can provide more context for a building and details about its surroundings. If you want aerial photos from any angle, I can produce these images. I can review the photos as I take them, and make sure I have exactly what I need by the end of the shoot. I have 3 batteries which last 30 minutes each, and I would review footage between each battery. To shoot photos on your location requires an hour and a half to two hours on site.
+If you need aerial photos, I can produce images like these. I can review the photos as I take them, and make sure I have exactly what I need by the end of the shoot. I have 3 batteries which last 30 minutes each, and I would review footage between each battery. To shoot photos on your location requires an hour and a half to two hours on site.
 
 ### From From any height:
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/sunnyside_3.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
 
-I can get a clear shot of your property from any height, up to 400 feet above ground level. I can also take photos from near the ground, or even on the ground if desired. It's a pretty fantastic camera, 48MP.
+I can get a clear shot of your property from any height, up to **400 feet** above ground level. I can also take photos from near the ground, or even on the ground if desired. It's a pretty fantastic camera at 48MP.
 
 ### From From any angle:
 
@@ -28,7 +28,7 @@ I can get a clear shot of your property from any angle, and actually, all angles
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/sunnyside_1.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
 
-I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a serious of photos from different angles and stiches them together.
+I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a serious of photos from different angles and then stiches them together. It can also do 360-degree VR Photos, like in [google street view](https://www.google.com/streetview/).
 
 * For more of my photos, check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/First-6-Months-As-A-Drone-Pilot/)
 
