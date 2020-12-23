@@ -30,12 +30,12 @@ I can get a clear shot of your property from any angle, and actually, all angles
 
 I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a serious of photos from different angles and stiches them together.
 
-* Check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/First-6-Months-As-A-Drone-Pilot/) for more photos I took.
+* For more of my photos, check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/First-6-Months-As-A-Drone-Pilot/)
 
-> I am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. These photos are of the only real estate property where I've been given permission to fly and capture photos and keep them in my portfolio, so even though I only had 10 minues to fly I was still super greatful. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get excellent photos of your property! Thank you
+> I am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. These photos are of the only real estate property where I've been given permission to fly and capture photos and keep them in my portfolio, so even though I only had ten minues to fly I was still super greatful. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get excellent photos of your property! Thank you
 
 
-* If you have reached this page, you have heard of me through word of mouth and already have my contact information. I'm not comfortable posting my cell phone number on the internet, I get enough robo-calls as it is. Please text me or call and leave a message if you are interested in these services. Thank you for your interest.
+* If you have reached this page, you have heard of me through word of mouth and you already have my contact information. Please text me or call and leave a message, to begin arranging my services. _**Thank you for your interest.**_
 
 ___
 
