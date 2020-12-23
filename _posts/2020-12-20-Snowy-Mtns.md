@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Snowy Mountain Adventure
+title: Snowy Mountain Adventure (4 photos)
 ---
 
 > Only locals will know what I mean when I say these photos were taken at "The Switchback", and that's all the information I'll provide on this location. These are some big photos, give your internet time to load them.
@@ -55,4 +55,4 @@ ___
 ___
 
 #### _**I LOVE DRONES**_
-#### _Follow me on Instagram:_ [**justinmurdock7b**](https://www.instagram.com/justinmurdock7b/?hl=en)
+#### _Follow me/DM me on Instagram:_ [**justinmurdock7b**](https://www.instagram.com/justinmurdock7b/?hl=en)
