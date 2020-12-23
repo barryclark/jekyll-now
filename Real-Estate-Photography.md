@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Real Estate Photography - Justin Murdock
-permalink: /real-estate/
+permalink: /apex/
 ---
 
 > My camera in the sky can capture incredible images of properties. Allow these images to load, I uploaded the highest resolution I possibly could and may take time to load depending on your internet. Wi-fi reccomended on your phone if you do not have an unlimited data plan.
