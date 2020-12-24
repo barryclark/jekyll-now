@@ -28,11 +28,11 @@ I can get a clear shot of your property from any angle, and actually, all angles
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/sunnyside_1.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
 
-I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a serious of photos from different angles and then stiches them together. It can also do 360-degree VR Photos, like in [google street view](https://www.google.com/streetview/).
+I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a series of photos from different angles and then stiches them together. It can also do 360-degree VR Photos, like in [google street view](https://www.google.com/streetview/).
 
 * For more of my photos, check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/First-6-Months-As-A-Drone-Pilot/)
 
-> I am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. These photos are of the only real estate property where I've been given permission to fly and capture photos and keep them in my portfolio, so even though I only had ten minues to fly I was able to get these photos. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get excellent photos of your property! Thank you.
+> I am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. These photos are of the only real estate property where I've been given permission to fly and capture photos and keep them in my portfolio, and I only had ten minues to fly. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get excellent photos of your property! Thank you.
 
 
 * If you have reached this page, you have heard of me through word of mouth and therefore you already have my contact information. Please text me or call and leave a message, to begin arranging my services. _**Thank you for your interest.**_
