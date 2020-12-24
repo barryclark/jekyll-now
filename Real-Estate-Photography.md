@@ -32,8 +32,7 @@ I can capture both your property, and the view from your property in a single ph
 
 * For more of my photos, check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/First-6-Months-As-A-Drone-Pilot/)
 
-> I am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. These photos are of the only real estate property where I've been given permission to fly and capture photos and keep them in my portfolio, and I only had ten minues to fly. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get excellent photos of your property! Thank you.
-
+>  am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get excellent photos of your property! Thank you. 
 
 * If you have reached this page, you have heard of me through word of mouth and therefore you already have my contact information. Please text me or call and leave a message, to begin arranging my services. _**Thank you for your interest.**_
 
