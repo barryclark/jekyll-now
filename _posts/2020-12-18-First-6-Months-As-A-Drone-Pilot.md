@@ -1,9 +1,11 @@
 ---
 layout: post
-title: My first 6 months as a Drone Pilot (5 photos)
+title: Landscape Photography (5 panoramic photos)
 ---
 
 >I've flown my Mavic Air 2 for about 6 months now and I have loved it. I've really enjoyed getting up in the air and taking the best photos that I can. Here's a couple of my favorite photos that I've taken.
+
+### Landscape Photography/My first 6 months as a Drone Pilot
 
 #### **This is where I live:**
 
@@ -37,7 +39,7 @@ So incredibly happy to have a reason to fly in the Bay Area, the air space is ve
 
 ### What's next? 
 
-> I have been looking at sportier drones that are more suited for flying very quickly and around obstacles. My Mavic Air 2 is phenomenal - just look at these 5 shots on the 180 Degree panoramic mode! One of these images is 20 MB!! I have to lower the quality on my photos significantly to display them here. My Mavic serves a specific purpose, which to me is the photos. For videos, I need to be flying - and RACING - FPV. Stay tuned!
+> I have been looking at sportier drones that are more suited for flying very quickly and around obstacles. My Mavic Air 2 is phenomenal - just look at these 5 shots on panoramic mode! I have to lower the quality on my photos significantly to display them here. My Mavic serves a specific purpose, which to me is the photos. For videos, I need to be flying - and RACING - FPV. Stay tuned!
 
 ___ 
 
