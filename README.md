@@ -1,6 +1,4 @@
-# VIEW Justin Murdock's Blog: [AkulaFPV](https://akulafpv.github.io/)
-
-Murdock Aerial Imagery DBA AkulaFPV
+# VIEW Justin Murdock's Blog: [MurdockFPV](https://murdockfpv.github.io/)
 
 Justin Murdock (owner)
 
