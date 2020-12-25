@@ -34,7 +34,7 @@ I can capture both your property, and the view from your property in a single ph
 
 > I am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get excellent photos of your property! Thank you. 
 
-* If you have reached this page, you have heard of me through word of mouth and therefore you already have my contact information. Please text me or call and leave a message, to begin arranging my services. _**Thank you for your interest.**_
+* If you have reached this page, you have heard of me through word of mouth and therefore you already have my contact information. Please text me or call and leave a message, to begin arranging my services. Check out my [pricing](/pricing/)_.**Thank you for your interest.**_
 
 ___
 
