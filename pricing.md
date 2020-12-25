@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drone Mission Pricing, Real Estate Photography, Justin Murdock
+title: Drone Mission Pricing, Real Estate Photography
 permalink: /pricing/
 ---
 
