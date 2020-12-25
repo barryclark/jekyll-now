@@ -30,7 +30,7 @@ I can get a clear shot of your property from any angle, and actually, all angles
 
 I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a series of photos from different angles and then stiches them together. It can also do 360-degree VR Photos, like in [google street view](https://www.google.com/streetview/).
 
-* For more of my photos, check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/First-6-Months-As-A-Drone-Pilot/)
+* For more of my photos, check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/Landscape-Photography/)
 
 > I am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get excellent photos of your property! Thank you. 
 
