@@ -3,7 +3,7 @@ layout: post
 title: Landscape Photography (5 panoramic photos)
 ---
 
->I've flown my Mavic Air 2 for about 6 months now and I have loved it. I've really enjoyed getting up in the air and taking the best photos that I can. Here's a couple of my favorite photos that I've taken.
+> I've flown my Mavic Air 2 for about 6 months now and I have loved it. I've really enjoyed getting up in the air and taking the best photos that I can. Here's a couple of my favorite photos that I've taken.
 
 ### Landscape Photography/My first 6 months as a Drone Pilot
 
