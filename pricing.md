@@ -19,4 +19,4 @@ permalink: /pricing/
 
 I recommend that on any shoot we use all 3 of my batteries. Total, I would fly roughly 90 minutes to capture dozens of photos. Between each battery I will review the images and be able to make immediate improvements to the shots. Using three batteries gives you two opportunities to review these photos with me immediately before I fly again, giving us a great system to be precise about the photos we truly want.
 
-#### Back to [Real Estate Photography page](/photography/)
+#### _Back to [Real Estate Photography page](/photography/)_
