@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Dec. 2020 Updates -
+title: ❄️ Dec. 2020 Updates - Managing Your Trash Data
 ---
 
 Hello!
@@ -9,16 +9,16 @@ As of this month ZBCE is officially starting with Phase 3 of the Roadmap. For mo
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/december2020-images/Moving_on_to_Phase_III.png)
 
-### Database Schema for your Trash
+### Database Schema for your Trash 📚
 This is just a first draft of the database schema to store all relevant waste related data. Some key ideas behind this schema was to include some modularity for including different type of data metrics while also being flexible enough to handle all sorts of bin types. Bins can vary a lot from the type of trash they are supposed to accept (eg. compost, mixed paper, comingled recycling, landfill) and can also vary depending on what sensors are deployed on them. This is just a draft for now and will definitely be improved moving forward. Huge thanks to Grace, Primal, and others for giving their input.
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/december2020-images/ZotBins%20Database%20Schema.png)
 
-### Setting up a LAMP Server
+### Setting up a LAMP Server 💡
 This was another learning experience for me and also a test to see how replicable it was to setup a [RESTful API](https://en.wikipedia.org/wiki/Representational_state_transfer). The LAMP tech stack that I decided to use was Linux (operating system), Apache (web server), MySQL (database), and Python (CGI scripting), which makes this tech stack a [LAMP](https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29) stack. With the help of a [tutorial](https://db.tannercrook.com/cit-225/lamp-stack-with-flask/) I found I was able to get my RESTful API client up and running pretty quickly.
 
 
-### Revisiting Power Consumption for the Sensor Module
+### Revisiting Power Consumption for the Sensor Module ⚡
 In the [November 2020 Updates](https://zotbins.github.io/zbceblog/november2020update/) I calculated that the sensor module could theoretically operate for 559.62 hours. However, after testing the sensor module I found that the sensor module was able to collect data for 91 hours (~ 4 days). Here were my following suspicions:
 1. Flash LED was consuming power during Deep Sleep (I could see a dim light from the flash LED)
 2. Flash LED might be on for too long when taking photos (sometimes for ~ 4 seconds)
