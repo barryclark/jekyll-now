@@ -21,21 +21,9 @@ On the same trip I took this photo of Moose Mountain, and other Montana Mountain
 
 #### This is at Priest Lake:
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0200.jpg?raw=true" style="max-width:100%"/>
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0200.JPG?raw=true" style="max-width:100%"/>
 
 I happened to be in Priest Lake right after it snowed and I had my drone - was very happy with how this photo turned out. I simply pulled over on the side of the road and flew and captured this.
-
-#### This is from a roof inspection I did in Berkeley, California (my first drone job!)
-
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0236.jpg?raw=true" style="max-width:100%"/>
-
-I was in California and I was trying to fly my drone somewhere. My sister-in-law is the Parish Administrator for a church which is right next to UC Berkeley and they needed a roof inspection so I did it for free. I flew around and got a long video for their architect to look at, and when I was in the air I took the opportunity to snag some photos of Berkeley. On a clearer day you would be able to see the Golden Gate Bridge in these photos.
-
-#### Memorial Stadium, UC Berkeley
-
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0244.jpg?raw=true" style="max-width:100%"/>
-
-So incredibly happy to have a reason to fly in the Bay Area, the air space is very much controlled and there are not many places you can fly, legally. I'll be honest I was getting very frustrated with how many places you cannot fly - No National Parks, no state or local parks, you can't fly over densely populated residential areas (basically the entire Bay Area), you can't take off on someone's private property without permission. 3 international airports in the vicinity mean you can only fly to 150 feet depending on exactly where you are. So many rules... and the experience of flying in California was drastically different from my experiences flying in Idaho, but a very good experience to have - really put my aeronautical knowledge of regulations to the test. It is also a very dense city without many open areas to fly. The only place it seemed I would be able to fly is Cesar Chavez park, AKA the Berkeley Marina. They have been doing drone racing there for 15 years, and they have their kite festival there, so everyone is accustomed to that airspace being used. I didn't want to fly there that day due to the fog over the bay, and the place I flew was much more interesting anyway - the tall buildings you can see are Downtown Oakland in the fog on the left, Emeryville in the middle, and Downtown Berkeley on the right. On a clear day you could see San Francisco and the Golden Gate Bridge. I could talk about this photo for hours. My high school is in this photo. The first apartment I moved into out of high school is in this photo. I was stunned to see it from this angle and had to take a moment just to be extremely grateful for the opportunities that life offers me. I've spent so much time in so many of the places you can see in this photo -- so many memories with family and some of my best friends.
 
 ### What's next? 
 
