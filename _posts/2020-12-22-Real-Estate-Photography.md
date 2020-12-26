@@ -10,7 +10,7 @@ If you need aerial photos, I can produce images like these. I can review the pho
 
 I can get a clear shot of your property from any height, up to **400 feet** above ground level. I can get a clear shot of your property from all angles.
 
-I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a series of photos from different angles and then stiches them together. It can also do 360-degree VR Photos.
+I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a series of photos from different angles and then stiches them together. I can also take 360-degree VR Photos.
 
 ### From above:
 
