@@ -37,5 +37,3 @@ ___
 * ~$20 to Garfield Bay or Rapid Lightning Road
 * ~$30 to Priest River or Clark Fork
 * ~$100 to Spokane, WA or Troy, MT
-
-### _Back to [Real Estate Photography page](/photography/)_
