@@ -16,9 +16,15 @@ permalink: /pricing/
 
 I recommend that on any shoot we use all 3 of my batteries. Total, I would fly roughly 90 minutes to capture dozens of photos. Between each battery I will review the images and be able to make immediate improvements to the shots. Using three batteries gives you two opportunities to review these photos with me immediately before I fly again, giving us a great system to be precise about the photos we truly want.
 
+___
+
+### _Back to [Real Estate Photography page](/photography/)_
+
+___
+
 #### _**Controlled Airspace**_
 
-**This applies to CDA and Spokane only** but there are additional considerations when flying in or near controlled airspace. Based on your address I will determine how our flight will be affected by controlled airspaces (usually, height cielings) or if I will need to request Airspace Authorization (which I am licensed to do). Because of these additional airspace considerations in these areas, I charge an additional $50 fee per mission in the general area of CDA and Spokane. This ensures an FAA compliant flight.
+> **This applies to _CDA and Spokane_ only** but there are additional considerations for me when flying in or near controlled airspace. Based on your address I will determine how our flight will be affected by controlled airspaces (usually, height cielings) or if I will need to request Airspace Authorization (which I am licensed to do). Because of these additional airspace considerations in these areas, I charge an additional $50 fee per mission in the general area of CDA and Spokane. This ensures an FAA compliant flight.
 
 #### _**Travel Compensation**_
 
@@ -28,8 +34,8 @@ I recommend that on any shoot we use all 3 of my batteries. Total, I would fly r
 
 **20 minutes out of town or more**: $1.50/mile, one way. 
 
-* ~$20 to Garfield Bay or Rapid Lightning Road, 
-* ~$30 to Priest River, or Clark Fork
+* ~$20 to Garfield Bay or Rapid Lightning Road
+* ~$30 to Priest River or Clark Fork
 * ~$100 to Spokane, WA or Troy, MT
 
 ### _Back to [Real Estate Photography page](/photography/)_
