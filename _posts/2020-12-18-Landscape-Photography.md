@@ -27,7 +27,7 @@ I happened to be in Priest Lake right after it snowed and I had my drone - was v
 
 ### What's next? 
 
-> I have been looking at sportier drones that are more suited for flying very quickly and around obstacles. My Mavic Air 2 is phenomenal - just look at these 5 shots on panoramic mode! I have to lower the quality on my photos significantly to display them here. My Mavic serves a specific purpose, which to me is the photos. For videos, I need to be flying - and RACING - FPV. Stay tuned!
+> I have been looking at sportier drones that are more suited for flying very quickly and around obstacles. My Mavic Air 2 is phenomenal - just look at these shots on panoramic mode! I have to lower the quality on my photos significantly to display them here. My Mavic serves a specific purpose, which to me is the photos. For videos, I need to be flying - and RACING - FPV. Stay tuned!
 
 ___ 
 
