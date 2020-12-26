@@ -28,11 +28,12 @@ I can capture both your property, and the view from your property in a single ph
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/sunnyside_1.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
 
-* For more of my photos, check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/Landscape-Photography/)
-
 > I am a carpenter, and the photos on this page are from a ten minute flight session while I was on my lunch break. Let me use all 3 batteries (90 minutes) on my drone at your location, and I can get the perfect photos that you need for your listing!
 
-* If you have reached this page through word of mouth or facebook then you already have my contact information. Please text me or call and leave a message, to begin arranging my services. _**[Check out my pricing](/pricing/). Thank you for your interest.**_
+* For more of my photos, check out my [**Landscape Photography blog post**](https://murdockfpv.github.io/Landscape-Photography/)
+* If you have reached this page through word of mouth or facebook then you already have my contact information. Please text me or call and leave a message, to begin arranging my services. 
+
+## _**[Check out my pricing](/pricing/). Thank you for your interest.**_
 
 ___
 
