@@ -18,13 +18,16 @@ I recommend that on any shoot we use all 3 of my batteries. Total, I would fly r
 
 #### _**Controlled Airspace**_
 
-This applies to CDA and Spokane only but there are additional considerations when flying in or near controlled airspace. Based on your address I will determine how our flight will be affected by controlled airspaces (usually, height cielings) or if I will need to request Airspace Authorization (which I am licensed to do). Because of these additional airspace considerations in these areas, I charge an additional $50 fee per mission in the general area of CDA and Spokane. This ensures an FAA compliant flight.
+**This applies to CDA and Spokane only** but there are additional considerations when flying in or near controlled airspace. Based on your address I will determine how our flight will be affected by controlled airspaces (usually, height cielings) or if I will need to request Airspace Authorization (which I am licensed to do). Because of these additional airspace considerations in these areas, I charge an additional $50 fee per mission in the general area of CDA and Spokane. This ensures an FAA compliant flight.
 
 #### _**Travel Compensation**_
 
-* **Within 20 minutes of Sandpoint, ID**: No transportation compensation required. 
+**Within 20 minutes of Sandpoint, ID**: No transportation compensation required. 
+
 * Local service: Sandpoint, Dover, Kootenai, Ponderay and near parts of Sagle.
-* **20 minutes out of town or more**: $1.50/mile, one way. 
+
+**20 minutes out of town or more**: $1.50/mile, one way. 
+
 * ~$20 to Garfield Bay or Rapid Lightning Road, 
 * ~$30 to Priest River, or Clark Fork
 * ~$100 to Spokane, WA or Troy, MT
