@@ -8,7 +8,7 @@ permalink: /pricing/
 
 #### _**Drone Mission Pricing**_
 
-* I am a commercially licensed and registered Drone Pilot. I have insurance for my UAS flights. I am an experienced Aerial Photographer.
+* I am a commercially licensed and registered UAV Pilot. I have insurance for my drone flights. I am an experienced Aerial Photographer.
 
 #### I have 3 batteries, each of which lasts 34 minutes.
 
