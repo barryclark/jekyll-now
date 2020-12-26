@@ -8,7 +8,7 @@ permalink: /photography/
 
 If you need aerial photos, I can produce images like these. I can review the photos as I take them, and make sure I have exactly what I need by the end of the shoot. I have 3 batteries which last 30 minutes each, and I would review footage between each battery. To shoot photos on your location requires an hour and a half to two hours on site.
 
-I can get a clear shot of your property from any height, up to **400 feet** above ground level. I can also take photos from near the ground, or even on the ground if desired. It's a pretty fantastic camera at 48MP. I can get a clear shot of your property from all angles.
+I can get a clear shot of your property from any height, up to **400 feet** above ground level. I can get a clear shot of your property from all angles.
 
 I can capture both your property, and the view from your property in a single photo by using the Panoramic Mode on my drone. This holds the position of the drone while the drone takes a series of photos from different angles and then stiches them together. It can also do 360-degree VR Photos.
 
