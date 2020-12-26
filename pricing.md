@@ -23,10 +23,10 @@ This applies to CDA and Spokane only but there are additional considerations whe
 #### _**Travel Compensation**_
 
 * **Within 20 minutes of Sandpoint, ID**: No transportation compensation required. 
-* examples: Sandpoint, Dover, Kootenai, Ponderay and near parts of Sagle.
+* Local service: Sandpoint, Dover, Kootenai, Ponderay and near parts of Sagle.
 * **20 minutes out of town or more**: $1.50/mile, one way. 
-* examples: ~$20 to Garfield Bay or Rapid Lightning Road, 
-* examples: ~$30 to Priest River, or Clark Fork
-* examples: ~$100 to Spokane, WA or Troy, MT
+* ~$20 to Garfield Bay or Rapid Lightning Road, 
+* ~$30 to Priest River, or Clark Fork
+* ~$100 to Spokane, WA or Troy, MT
 
-#### _Back to [Real Estate Photography page](/photography/)_
+### _Back to [Real Estate Photography page](/photography/)_
