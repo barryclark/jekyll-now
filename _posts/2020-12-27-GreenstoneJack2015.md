@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 環境と開発の経済学：Envirodevonomics
+title: 環境経済学×開発経済学：Envirodevonomics
 ---
 
-今日は、シカゴ大の[Greenstone先生](https://www.michaelgreenstone.com/)とUCサンタバーバラ校の[Jack先生](http://kelseyjack.bren.ucsb.edu/)のレビュー論文["Envirodevonomics: A Research Agenda for an Emerging Field"](https://www.aeaweb.org/articles?id=10.1257/jel.53.1.5)について話したいと思います。
+今回は、シカゴ大の[Greenstone先生](https://www.michaelgreenstone.com/)とUCサンタバーバラ校の[Jack先生](http://kelseyjack.bren.ucsb.edu/)のレビュー論文["Envirodevonomics: A Research Agenda for an Emerging Field"](https://www.aeaweb.org/articles?id=10.1257/jel.53.1.5)について話したいと思います。
 
-タイトルからも分かるように、Envirodevonomics = Environmental Economics + Development Economicsのようになっていて、環境経済学と開発経済学の接点にあたる研究について考察されています。今までの先行研究を振り返るとともに、今後の研究課題について触れられていて、環境と開発の研究の全体像が整理されています。2015年と少し古くはなっていますが、まだ使えると思います。
+タイトルからも分かるように、Envirodevonomics = Environmental Economics × Development Economicsのようになっていて、環境経済学と開発経済学の接点にあたる研究について考察されています。今までの先行研究を振り返るとともに、今後の研究課題について触れられていて、環境と開発の研究の全体像が整理されています。2015年と少し古くはなっていますが、まだ使えると思います。
 
 私がPhD出願の際に本ペーパーを見て、このような研究をしていきたいなぁと思うきっかけになりました。ただ、若干専門的で一般の人向けには読みにくい印象ではあります。
 
@@ -33,7 +33,7 @@ GreenstoneとJack（以下GJ）は、上記の質問に対して、４つの理�
 
 1. 消費の限界効用が高い
 2. 環境の質を改善するための限界費用が高い
-3. ポリティカル・エコノミーやレントシーキング（⇒発展途上国の政治体制に関わりますね）
+3. ポリティカル・エコノミーやレントシーキング（発展途上国の政治体制に関わる）
 4. 限界支払意思額が市場の失敗によって歪められて真の値より小さくなる
 
 ここでは、モデルの詳細には立ち入らず、構成要素やインプリケーションについて述べることとする。本モデルにおいて、代表的個人が、環境の質（e）、健康（h(s,e)）、消費（c）に依存する効用関数（u(e,h(s,e),c)）を、予算制約下の元で最大化する。
@@ -61,25 +61,25 @@ GreenstoneとJack（以下GJ）は、上記の質問に対して、４つの理�
 
 限界費用の高さは、必ずしも限界削減費用の高さを反映しているわけではない。環境汚染防止技術の導入がまだあまり進んでいない発展途上国では、先進国に比べて、限界削減費用が低い状況であろう。そこで、本ペーパーでは、政策の設計・執行の問題点にフォーカスしている。良くない政策の設計により限界削減費用が高い部分での汚染防止の取り組みを促す他、不十分な執行能力によって集中的に規模の経済を働かせた環境対策ができない。
 
-前者の政策の設計に関連して、間違った政策の結果を考察したものとして、Field, Glennesrtster and Hussam (2011)がある。バングラデシュで、井戸の飲水のヒ素について啓蒙活動をしたところ、人々は井戸の水から汚染された表流水の水を使うようになって、下痢が増えたことを示した。このように、ある政策がどのような予期せぬ結果をもたらしうるか考えなければならない。
+前者の政策の設計に関連して、間違った政策の結果を考察したものとして、Field, Glennerster and Hussam (2011)がある。バングラデシュで、井戸の飲水のヒ素について啓蒙活動をしたところ、人々は井戸の水から汚染された表流水の水を使うようになって、下痢が増えたことを示した。このように、ある政策がどのような予期せぬ結果をもたらしうるか考えなければならない。
 
 上記のプログラムに留まらず、環境規制も、規制を受ける主体の行動によって、予期せぬ結果をもたらす可能性がある。例えば、Davis (2008)は、メキシコで、自動車のナンバープレートで自動車の走行を規制しようとしたところ、登録車が増えてしまった。それは、人々が規制を回避するために、違うナンバープレートの付いた新たな自動車を導入したからとのことである。
 
-また、政策の内容はともかく、そのターゲッティングが悪いことで、限界費用が高くなることがある。Davis et al. (2014)では、メキシコでのエコ家電への補助金プログラムが、あまり電力消費量の削減につながらず、エアコンでは逆に電力消費量が増えた。その理由としては、エネルギー効率の悪いとても古い家電から置き換わらなかったことや、新しいエコ家電はエネルギー効率は高いものの、新たな機能が増えているのでそれによって電力消費量が増えていたことが考察されている。
+また、政策の内容はともかく、そのターゲティングが悪いことで、限界費用が高くなることがある。Davis et al. (2014)では、メキシコでのエコ家電への補助金プログラムが、あまり電力消費量の削減につながらず、エアコンでは逆に電力消費量が増えた。その理由としては、エネルギー効率の悪いとても古い家電から置き換わらなかったことや、新しいエコ家電はエネルギー効率は高いものの新たな機能が増えているのでそれによって電力消費量が増えていたことが考察されている。
 
 後者の不十分な執行能力については、まずは租税徴収能力の低さがある。税収を元に政府から集中的に環境に投資することがコスト効率的だが、発展途上国では租税徴収能力が低い。
 
 また、中央での環境政策の執行能力が低いと、分権化することで地方政府に権限を移譲して、環境政策のモニタリングや説明責任を改善していくことがある。分権化は、各行政区域内の環境はよくなるが、隣接する行政区域に汚染を移し替えるインセンティブも生まれる。Lipscomb and Mobarak (2011)は、ブラジルの郡の分割に着目して、河川沿いで下流の地域ほど水質汚染が進むことを示した。
 
-今までは、政府の政策の設計や執行に着目してきたが、この政府の公的なアクションと、企業や個人の私的なアクションの相互作用も考える必要がある。Benett (2011)は、水供給インフラの改善によって、水衛生に対する投資が少なくなったことを示した。この私的なアクションの結果も加味しないと、公共投資の界費用は過小評価されてしまう。
+今までは、政府の政策の設計や執行に着目してきたが、この政府の公的なアクションと、企業や個人の私的なアクションの相互作用も考える必要がある。Benett (2012)は、水供給インフラの改善によって、水衛生に対する投資が少なくなったことを示した。この私的なアクションの結果も加味しないと、公共投資の界費用は過小評価されてしまう。
 
-その他、安く環境改善を達成できる諸々の政策が整理されているが、雑多な印象を受けたので、ここでは割愛する。
+その他、低コストで環境改善を達成できる諸々の政策が整理されているが、雑多な印象を受けたので、ここでは割愛する。
 
 #### 先行研究：ポリティカル・エコノミーやレントシーキング
 
 ポリティカルエコノミーによって、社会計画者の最大化問題が歪められてしまう。政策決定者や官僚が、自己の効用をその問題に加えてしまうことがありうる。先進国でもありうるが、発展途上国ではより先鋭化する問題かと思う。
 
-例えば、彼らがレントシーキングに走ることで、環境保護の政策が執行されないことがある。Burgess et al. (2013)では、インドネシアにおいて、石油価格が低い際に、森林の資源価値が高いため、違法な伐採が増えることを示した。また、政治的なサポートが受けられないグループ（貧困層、女性等）が住む地域の環境が特に悪化する可能性もある。Environmental Justiceにもつながる問題である。
+例えば、彼らがレントシーキングに走ることで、環境保護の政策が執行されないことがある。Burgess et al. (2012)では、インドネシアにおいて、石油価格が低い際に、森林の資源価値が高いため、違法な伐採が増えることを示した。また、政治的なサポートが受けられないグループ（貧困層、女性等）が住む地域の環境が特に悪化する可能性もある。Environmental Justiceにもつながる問題である。
 
 #### 先行研究：市場の失敗と行動バイアス
 
@@ -87,11 +87,11 @@ GreenstoneとJack（以下GJ）は、上記の質問に対して、４つの理�
 
 第一に、環境に関わる情報を与えることで、支払意思額が上がる他、自己防衛への投資が増えることが明らかになっている。例えば、Jalan and Somanathan (2008)では、水道水の水質を伝えることで、水が汚いと学習した人々が家庭内の水浄化により投資するようになった。以上から分かるように、適切な情報がないことで支払意思額が低くなっている可能性がある。
 
-第二に、所有権に関して、所有権をより保証された形にすると、土壌の環境改善に対する投資が増えたことが示されている（Ali, Deininger and Goldstein, 2011）。
+第二に、所有権に関して、所有権をより保証された形にすると、土壌の環境改善に対する投資が増えたことが示されている（Ali, Deininger and Goldstein, 2014）。
 
 第三に、不十分なクレジットによって、環境改善に必要な初期投資を確保できないため、環境改善に投資していない可能性がある。この要因は一番多く検討されている気がするが、浄水フィルター、トイレなどで研究がなされている。
 
-行動バイアスについては、あっさりデフォルトや埋没費用効果が触れられている。埋没費用効果については、Ashraf et al. (2010)は興味深い研究をしており、家庭用水浄化剤を自分がどれだけ払ったか（どれほど埋没費用があるか）で、その後の浄化剤の使用率がどう変わるのか検討している。埋没費用効果に基づくと、埋没費用が多いほど使用率が高くなるはずだが、その結果が得られなかった。
+行動バイアスについては、あっさりデフォルトや埋没費用効果が触れられている。埋没費用効果については、Ashraf et al. (2010)は興味深い研究をしている。家庭用水浄化剤を自分がどれだけ払ったか（どれほど埋没費用があるか）で、その後の浄化剤の使用率がどう変わるのか検討している。埋没費用効果に基づくと、埋没費用が多いほど使用率が高くなるはずだが、その結果が得られなかった。
 
 ### **意見・感想：**
 
@@ -102,7 +102,7 @@ GreenstoneとJack（以下GJ）は、上記の質問に対して、４つの理�
 
 他方で、４本立てに簡潔にまとめた結果として、色々な研究を４つの軸になんとか押し込めていて、若干読みにくい部分があった。特に、「環境の質を改善するための限界費用が高い」の要因では、多様な研究が入っていて、わかりにくい印象を受けた。要約している際にも感じたが、もう少し整理が必要な気がした。
 
-とはいえ、とても良いまとめで、私によって思い出深いペーパーなので、今回ご紹介できて嬉しいです。
+とはいえ、とても良いまとめで、私にとって思い出深いペーパーなので、今回ご紹介できて嬉しいです。
 
 ### **最後の一言**
 
@@ -110,7 +110,7 @@ GreenstoneとJack（以下GJ）は、上記の質問に対して、４つの理�
 
 本ブログ記事に対するご感想や、本ブログ全体に関わるご意見などがあれば、econ.blog.japan@gmail.comまでご連絡ください！
 
-また、Twitterアカウントの@EconJapanのフォローもよければお願いします。Twitterでの本ブログのコメント・拡散も歓迎です。その際は、＃econjapanblogをお使いください！
+また、Twitterアカウントの@EconJapanのフォローもよければお願いします。Twitterでの本ブログのコメント・拡散も歓迎です。その際は、#econjapanblogをお使いください！
 
 元橋一輝
 
@@ -128,8 +128,6 @@ GreenstoneとJack（以下GJ）は、上記の質問に対して、４つの理�
 後者は「環境の質の低下にはこれだけのコストが伴いますよ、だからこれだけの（公共）投資は正当化されますね」という議論の根拠として用いることができ、環境問題の改善に資すると考えられます。
 と、書いていて思ったのですが、これでは定量化が難しいアウトカムへの影響が軽視されてしまうので、これはどんな問題にも言えることですが、こういった定量的な評価のしづらい問題を意思決定の過程にどう組み込むかも大事な論点だなとふんわり思いました。
 
-
-
 #### **渋谷：**
 
 #### **中村：**
@@ -138,10 +136,28 @@ GreenstoneとJack（以下GJ）は、上記の質問に対して、４つの理�
 
 Adhvaryu, Achyuta, Namrata Kala, and Anant Nyshadham. "The light and the heat: Productivity co-benefits of energy-saving technology." Review of Economics and Statistics (2014): 1-36.
 
+Ali, D. A., Deininger, K., & Goldstein, M. (2014). Environmental and gender impacts of land tenure regularization in Africa: Pilot evidence from Rwanda. Journal of Development Economics, 110, 262-275.
+
+Alix-Garcia, J., McIntosh, C., Sims, K. R., & Welch, J. R. (2013). The ecological footprint of poverty alleviation: evidence from Mexico's Oportunidades program. Review of Economics and Statistics, 95(2), 417-435.
+
+Ashraf, N., Berry, J., & Shapiro, J. M. (2010). Can higher prices stimulate product use? Evidence from a field experiment in Zambia. American Economic Review, 100(5), 2383-2413.
+
+Bennett, D. (2012). Does clean water make you dirty? Water supply and sanitation in the Philippines. Journal of Human Resources, 47(1), 146-173.
+
+Burgess, R., Hansen, M., Olken, B. A., Potapov, P., & Sieber, S. (2012). The political economy of deforestation in the tropics. The Quarterly Journal of Economics, 127(4), 1707-1754.
+
+Davis, L. W. (2008). The effect of driving restrictions on air quality in Mexico City. Journal of Political Economy, 116(1), 38-81.
+
+Davis, L. W., Fuchs, A., & Gertler, P. (2014). Cash for coolers: evaluating a large-scale appliance replacement program in Mexico. American Economic Journal: Economic Policy, 6(4), 207-38.
+
+Dean, J. T. (2019). Noise, cognitive function, and worker productivity. mimeo.
+
 Ebenstein, Avraham, Victor Lavy, and Sefi Roth. "The long-run economic consequences of high-stakes examinations: Evidence from transitory variation in pollution." American Economic Journal: Applied Economics 8.4 (2016): 36-65.
+
+Field, E., Glennerster, R., & Hussam, R. (2011). Throwing the baby out with the drinking water: Unintended consequences of arsenic mitigation efforts in Bangladesh. Work. Pap., Dep. Econ, Harvard Univ., Cambridge, MA.
 
 Greenstone, M., & Jack, B. K. (2015). Envirodevonomics: A research agenda for an emerging field. Journal of Economic Literature, 53(1), 5-42.
 
+Jalan, J., & Somanathan, E. (2008). The importance of being informed: Experimental evidence on demand for environmental quality. Journal of development Economics, 87(1), 14-28.
 
-
-あとで他のものを追加！
+Lipscomb, M., & Mobarak, A. M. (2011). Decentralization and the political economy of water pollution: Evidence from the re-drawing of county borders in Brazil. Review of Economics Studies
