@@ -5,7 +5,7 @@ title: 環境と開発の経済学：Envirodevonomics
 
 今日は、シカゴ大の[Greenstone先生](https://www.michaelgreenstone.com/)とUCサンタバーバラ校の[Jack先生](http://kelseyjack.bren.ucsb.edu/)のレビュー論文["Envirodevonomics: A Research Agenda for an Emerging Field"](https://www.aeaweb.org/articles?id=10.1257/jel.53.1.5)について話したいと思います。
 
-タイトルからも分かるように、Envirodevonomics = Environmental Economics + Development Economicsのようになっていて、環境経済学と開発経済学の接点にあたる研究について考察されています。今までの先行研究を振り返るとともに、今後の研究課題について触れられていて、環境と開発の研究の全体像が整理されています。2015年として少し古くはなっていますが、まだ使えると思います。
+タイトルからも分かるように、Envirodevonomics = Environmental Economics + Development Economicsのようになっていて、環境経済学と開発経済学の接点にあたる研究について考察されています。今までの先行研究を振り返るとともに、今後の研究課題について触れられていて、環境と開発の研究の全体像が整理されています。2015年と少し古くはなっていますが、まだ使えると思います。
 
 私がPhD出願の際に本ペーパーを見て、このような研究をしていきたいなぁと思うきっかけになりました。ただ、若干専門的で一般の人向けには読みにくい印象ではあります。
 
@@ -118,11 +118,30 @@ GreenstoneとJack（以下GJ）は、上記の質問に対して、４つの理�
 
 #### **鈴木：**
 
+とてもおもしろい論文でした！
+温暖化などの環境問題における途上国のプレゼンスの高まりを考えると「開発経済×環境経済」というのは今後重要性の増していく分野ではないかと思います。
+記事の初めに元橋さんが「2015年と少し古く」とおっしゃっていますが、たしかにこの分野の近年の発展を鑑みるとこの5年で扱う手法・トピックに変化があるのかもしれませんね。
+ぼくはこの分野について全く詳しくないので、このあたり気になります。
+
+提示されている枠組みについて、この論文では「環境の質が改善ないし悪化するメカニズム」に焦点が当てられていると思います。
+他方、「環境の質が経済的・社会的なアウトカムにどのように影響を与えるか」というのも近年盛んに研究が行われている分野で、例えば記事の中で紹介があった「騒音が労働生産性に与える影響」に加え、「気温が労働生産性に与える影響 ([Adhvaryu et al. (2020)](https://www.mitpressjournals.org/doi/full/10.1162/rest_a_00886?mobileUi=0))」「大気汚染が学力試験の結果に与える影響 ([Ebenstein et al. (2016)](https://www.aeaweb.org/articles?id=10.1257/app.20150213))」などが例として挙げられます。
+後者は「環境の質の低下にはこれだけのコストが伴いますよ、だからこれだけの（公共）投資は正当化されますね」という議論の根拠として用いることができ、環境問題の改善に資すると考えられます。
+と、書いていて思ったのですが、これでは定量化が難しいアウトカムへの影響が軽視されてしまうので、これはどんな問題にも言えることですが、こういった定量的な評価のしづらい問題を意思決定の過程にどう組み込むかも大事な論点だなとふんわり思いました。
+
+
+
 #### **渋谷：**
 
 #### **中村：**
 
 ### **文献：**
+
+Adhvaryu, Achyuta, Namrata Kala, and Anant Nyshadham. "The light and the heat: Productivity co-benefits of energy-saving technology." Review of Economics and Statistics (2014): 1-36.
+
+Ebenstein, Avraham, Victor Lavy, and Sefi Roth. "The long-run economic consequences of high-stakes examinations: Evidence from transitory variation in pollution." American Economic Journal: Applied Economics 8.4 (2016): 36-65.
+
 Greenstone, M., & Jack, B. K. (2015). Envirodevonomics: A research agenda for an emerging field. Journal of Economic Literature, 53(1), 5-42.
+
+
 
 あとで他のものを追加！
