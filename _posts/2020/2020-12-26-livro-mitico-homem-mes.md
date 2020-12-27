@@ -4,8 +4,6 @@ permalink: "/2020/12/2020-12-26-livro-mitico-homem-mes.html"
 categories: [engenharia, software, gestao, metodologia]
 ---
 
-# Leitura do livro: O Mítico Homem-Mês
-
 No início desse ano comprei o livro [O Mítico Homem-Mês](https://www.amazon.com.br/M%C3%ADtico-Homem-M%C3%AAs-Ensaios-Engenharia-Software/dp/8550802530) por vê-lo em uma lista de livros que todo desenvolvedor de software deveria ler, e ao pesquisar sobre o mesmo, a sinopse me deixou curioso o suficiente para investir na compra. O livro foi escrito em 1975 por [Frederick P. Brooks Jr](https://en.wikipedia.org/wiki/Fred_Brooks) respeitado professor e considerado o criador do mainframe [IBM System/360](https://pt.wikipedia.org/wiki/IBM_System/360), atuando como gerente de desenvolvimento no projeto. A biografia de Brooks fala por si só, recomendo uma pesquisa prévia sobre o mesmo pois no artigo irei abordar apenas o livro.
 
 ## A abordagem do autor
