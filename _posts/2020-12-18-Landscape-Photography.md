@@ -21,7 +21,7 @@ title: Landscape Photography (3 panoramic photos)
 
 #### Clark Fork:
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0131.jpg?raw=true" style="max-width:100%"/>
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/DJI_0133-2.jpg?raw=true" style="max-width:100%"/>
 
 #### Kootenai Falls:
 
