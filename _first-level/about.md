@@ -29,4 +29,4 @@ Awards:
 	* We ended up being the only USC team to place, and yes `Gamecork` was misspelled.
 * 2017 USC@ACM Fall Codeathon 146: 1st Place
 
-[Resume]({{ site.url }}/assets/pdfs/Resume.pdf)
+[Resume]({{ site.url }}/assets/pdfs/Baum,%20Justin%20-%20Resume.pdf)
