@@ -121,6 +121,21 @@ img {
   max-width: 100%;
 }
 
+figure {
+  //border: 1px #cccccc solid;
+  padding: 4px;
+  //margin: auto;
+  max-width: 100%;
+}
+
+figcaption {
+  color: $gray;
+  font-style: italic;
+  padding: 2px;
+  text-align: left;
+  font-size: 0.9em
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
