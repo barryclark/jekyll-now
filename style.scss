@@ -130,10 +130,10 @@ figure {
 
 figcaption {
   color: $gray;
-  font-style: italic;
+  //font-style: italic;
   padding: 2px;
   text-align: left;
-  font-size: 0.9em
+  font-size: 0.85em
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -306,6 +306,10 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+.footnotes {
+  font-size: 0.8em;
 }
 
 .float-left {
