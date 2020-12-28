@@ -7,11 +7,19 @@ I could probably find a data store with the US SAT/ACT scores for a large number
 #Scraping
 I first tryied inspecting elements to see if they were pulling from a defined file or url. No.
 
-Then I looked ta the page source to see if there was an obvious script that was doing the work. Well, yes, but it was dynamically typing the url depending on the zoom window.
+Then I looked at the page source to see if there was an obvious script that was doing the work. Well, yes, but it was dynamically typing the url depending on the zoom window.
 
-So I figured I would grab the appropriate zoom window for the sample I want to analyze, and then look at the network output to look for anywhere that data was being loaded to use in the previous lines of code. Bingo.
+So I figured I would grab the appropriate zoom window for the sample I want to analyze, and then look at the network output to look for anywhere that data was being loaded to use in the previous lines of code. Bingo, I found 3 json files and 1 csv. Upon inspection they were short lists... because a lot of the visualized data was already cached. 
+So I cleared the browser cache and reloaded the same zoom window. This yielded quite a lot more files
 
-I found 3 json files and 1 csv. This is the head of the contents in them,
+[screenshot of network panel]
+
+#Merging
+Here is the head of one of the csvs,
+
+Here is the head of one of the jsons,
+
+Merging csv can be done easily on the command line, but json needs more finesse.
 
 #Cleaning
 So now I need to load all of these into an R session and wrangle it.
