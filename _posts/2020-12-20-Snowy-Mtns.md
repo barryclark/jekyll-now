@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Snowy Mountain Adventure (5 photos)
+title: Snowy Mountain Adventure (4 photos)
 ---
 
 > Only locals will know what I mean when I say these photos were taken at "The Switchback", and that's all the information I'll provide on this location. These are some big photos, give your internet time to load them.
@@ -29,13 +29,6 @@ ___
 
 Another shot from the Canon M6 of me flying.
 
-___
-
-#### Snowy Mountain Road:
-
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/2020-12-20-Schweitzer-Mountain-2.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
-
-Another freeze-frame from a 4K video I took.
 ___
 
 #### Snowy Panorama of Lake Pend Orielle
