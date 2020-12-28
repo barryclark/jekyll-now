@@ -31,6 +31,13 @@ Another shot from the Canon M6 of me flying.
 
 ___
 
+#### Snowy Mountain Road:
+
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/2020-12-20-Schweitzer-Mountain-2.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
+
+Another freeze-frame from a 4K video I took.
+___
+
 #### Snowy Panorama of Lake Pend Orielle
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/2020-12-20_Schweitzer_Panorama_Web.jpg?raw=true" style="max-height: 100%; max-width: 100%"/>
@@ -54,5 +61,5 @@ ___
 
 ___
 
-#### _**I LOVE DRONES**_
+#### _**I LOVE DRONES**_  _**[Blog homepage](/)**_ 
 #### _Follow me on Instagram:_ [**justinmurdock7b**](https://www.instagram.com/justinmurdock7b/?hl=en)
