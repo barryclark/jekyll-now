@@ -1,0 +1,313 @@
+I"�*<p>AWS EC2에 Jenkins를 설치하여, React 앱을 지속적으로 배포가 가능하도록 배포 환경을 구축해볼게요.</p>
+
+<p>다음과 같은 순서로 가이드가 진행될거에요.</p>
+
+<ol>
+  <li>
+    <p>EC2 인스턴스 생성 및 접속</p>
+  </li>
+  <li>
+    <p>EC2에 JAVA 설치 및 환경변수 설정</p>
+  </li>
+  <li>
+    <p>EC2에 Jenkins 설치</p>
+  </li>
+  <li>
+    <p>Github 저장소 생성</p>
+  </li>
+  <li>
+    <p>Jenkins 설정 및 job 생성</p>
+  </li>
+  <li>
+    <p>배포하기</p>
+  </li>
+</ol>
+
+<h2 id="1-ec2-인스턴스-생성-및-접속">1. EC2 인스턴스 생성 및 접속</h2>
+
+<ul>
+  <li>Amazon Linnux2 AMI를 선택하세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-1.png" alt="Alt text" /></p>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-2.png" alt="Alt text" /></p>
+
+<p><a href="www.jenkins.io/doc/book/scaling/hardware-recommendations/">젠킨스 공식 문서</a></p>
+
+<p>Jenkins 공식 사이트 하드웨어 권장 사항이에요.</p>
+
+<p>프로젝트 규모에 따라 메모리 사용 범위가 200MB ~ 70GB이상까지 사용될 수 있고,</p>
+
+<p>각 노드 연결에는 2 ~ 3개의 스레드가 필요하며…</p>
+
+<p>대충 요약하자면 사용자가 알아서 경험하고, 최적의 인스턴스 설정을 찾으라는거 같아요.</p>
+
+<ul>
+  <li>일반적인 규모의 프로젝트에서 Jenkins를 구동하기 위해서는 최소 <strong>1-2GB</strong>의 램이 필요해요.</li>
+</ul>
+
+<p>넉넉하게 t2.medium이상을 선택하시는 걸 추천할게요.</p>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-3.png" alt="Alt text" /></p>
+
+<ul>
+  <li>EC2 인스턴스에 접속하기 위해서는 <strong>키 페어 파일</strong>이 필요해요. 키 페어 이름을 입력하고, 키페어 다운로드를 해주세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-4.png" alt="Alt text" /></p>
+
+<ul>
+  <li>저는 <strong>“deploy-test”</strong> 라는 폴더를 생성하여 키페어 파일을 다운받았어요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-5.png" alt="Alt text" /></p>
+
+<ul>
+  <li>키 페어 다운로드를 마친 후, 인스턴스 시작을 눌러 주세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-6.png" alt="Alt text" /></p>
+
+<ul>
+  <li>터미널을 키고, 다음 명령어를 입력하세요.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd PEM 파일이 있는 폴더
+$ sudo ssh -i ./PEM 파일명.pem ec2-user@퍼블릭 IPv4 주소
+</code></pre></div></div>
+
+<p><strong>PEM 파일명</strong> : 5에서 생성한 키페어 파일명입니다.</p>
+
+<p><strong>퍼블릭 IPv4 주소</strong> : EC2 공개 IP주소입니다. 아래에서 확인할 수 있습니다.</p>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-7.png" alt="Alt text" /></p>
+
+<ul>
+  <li>다음과 같이 EC2 인스턴스로 접속하세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-instance-create-8.png" alt="Alt text" /></p>
+
+<h2 id="2-ec2-인스턴스-생성-및-접속">2. EC2 인스턴스 생성 및 접속</h2>
+
+<ul>
+  <li>설치 가능한 JAVA 버전을 확인하세요.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum list | grep jdk
+</code></pre></div></div>
+
+<p><img src="/images/2020-12-17-CICD/EC2-java-install-1.png" alt="Alt text" /></p>
+
+<ul>
+  <li>JAVA 설치</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install java-1.8.0-openjdk
+</code></pre></div></div>
+
+<p><img src="/images/2020-12-17-CICD/EC2-java-install-2.png" alt="Alt text" /></p>
+
+<p>y를 입력하시면 설치가 진행됩니다.</p>
+
+<ul>
+  <li>JAVA 설치 확인</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ java -version
+</code></pre></div></div>
+
+<p><img src="/images/2020-12-17-CICD/EC2-java-install-3.png" alt="Alt text" /></p>
+
+<ul>
+  <li>JAVA 컴파일러도 설치합니다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install java-1.8.0-openjdk-devel.x86_64
+</code></pre></div></div>
+
+<ul>
+  <li>환경변수 설정</li>
+</ul>
+
+<p>환경변수를 설정하기 위해 다음과 같이 입력하여, java의 경로를 알아내세요.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ which java
+/usr/bin/java
+
+$ readlink -f /usr/bin/java
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-1.amzn2.0.1.x86_64/jre/bin/java
+</code></pre></div></div>
+
+<ul>
+  <li>vi 편집기를 이용하여 환경변수를 설정하겠습니다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vi /etc/profile
+</code></pre></div></div>
+
+<p>vi 편집에 관한 자세한 내용은 아래 링크에 잘 정리 되어 있어요.
+<a href="blockdmask.tistory.com/25">vi 명령어 정리</a></p>
+
+<ul>
+  <li>맨 마지막으로 이동( Shift + g )한 뒤, i를 눌러 insert모드로 변환한 뒤, 환경변수 설정값 입력하세요.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-1.amzn2.0.1.x86_64/jre/bin/java
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=$JAVA_HOME/jre/lib:$JAVA_HOME/lib/tools.jar
+</code></pre></div></div>
+
+<p>입력 후 ESC를 눌러 insert모드를 종료하고 :w !sudo tee %를 입력(root 권한으로 저장 후 종료)하여 vi편집기를 종료하세요.</p>
+
+<h2 id="3-ec2에-jenkins-설치">3. EC2에 Jenkins 설치</h2>
+
+<ul>
+  <li>아래의 명령어를 입력하여 Jenkins를 설치하세요.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+$ sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+$ yum install jenkins
+</code></pre></div></div>
+
+<ul>
+  <li>Jenkins를 구동해 주세요.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service jenkins start
+</code></pre></div></div>
+
+<ul>
+  <li>Jenkins를 서버가 부팅 될때마다 실행되도록 설정해 주세요.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo chkconfig — add jenkins
+</code></pre></div></div>
+
+<ul>
+  <li>EC2 인스턴스 대시보드로가서, 보안 -&gt; 보안그룹에서 다음과 같이 포트를 개방해 주세요.
+(3000 - React, 8080 - Jenkins)</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-install-1.png" alt="Alt text" /></p>
+
+<ul>
+  <li>EC2 인스턴스 공용 IP : 8080으로 접속하면, 갑자기 다음과 같이 비밀번호를 입력하나는 화면이 뜰거에요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-install-2.png" alt="Alt text" /></p>
+
+<ul>
+  <li>아래 명령어를 입력하시면 admin 초기 비밀번호를 알 수 있습니다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+이 줄에 비밀번호가 출력됩니다.
+</code></pre></div></div>
+
+<p>비밀번호를 복사하여 입력하고, Continue를 클릭하세요.</p>
+
+<ul>
+  <li>Install suggested plugins 를 클릭하세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-install-3.png" alt="Alt text" /></p>
+
+<ul>
+  <li>관리자 정보를 입력하고, Save and Continue를 클릭해 주세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-install-4.png" alt="Alt text" /></p>
+
+<ul>
+  <li>Jenkins Url을 입력하라는 창이 뜰거에요. 디폴트 값으로 두고, Save and Finish를 눌러주세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-install-5.png" alt="Alt text" /></p>
+
+<ul>
+  <li>Jenkins 설치까지 완료됬습니다.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-install-6.png" alt="Alt text" /></p>
+
+<h2 id="4-github-저장소-생성">4. Github 저장소 생성</h2>
+
+<ul>
+  <li>
+    <p>Github 저장소를 생성해 주세요.
+<img src="/images/2020-12-17-CICD/EC2-repository-create-0.png" alt="Alt text" /></p>
+  </li>
+  <li>
+    <p>CRA로 React App을 생성해주세요.</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npx create-react-app jenkins-test
+</code></pre></div></div>
+
+<ul>
+  <li>package.json의 “script”를 다음과 같이 수정해주세요.
+이유는 3000번 포트로 고정해서 호스팅하기 위해서 입니다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"scripts": {
+    "start": "PORT=3000 react-scripts start",
+    .
+    .
+    .
+  },
+</code></pre></div></div>
+
+<ul>
+  <li>React App을 github 저장소에 push 해주세요.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd React App 폴더
+$ git init
+$ git add .
+$ git commit -m "메세지"
+$ git remote add origin https://저장소 주소.git
+$ git push origin master
+</code></pre></div></div>
+
+<h2 id="5-jenkins-설정-및-job-생성">5. Jenkins 설정 및 job 생성</h2>
+
+<ul>
+  <li>Jenkins 관리 &gt; 플러그인 관리 &gt; 설치 가능 &gt; Node JS 검색 후 설치해 주세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-setting-0.png" alt="Alt text" /></p>
+
+<ul>
+  <li>플러그인을 설치했으면 이제 빌드에 사용할 NodeJS 버전을 정의해야 합니다. Jenkins 관리 &gt; Global Tool Configuration으로 이동합니다.
+Add NodeJS 버튼을 눌러 빌드에 사용할 NodeJS 버전을 정의해 주세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-setting-1.png" alt="Alt text" /></p>
+
+<ul>
+  <li>Jenkins &gt; 새로운 Item &gt; Freestyle project
+프로젝트 명을 입력하고 OK 버튼을 눌러주세요.</li>
+</ul>
+
+<p><img src="/images/2020-12-17-CICD/EC2-jenkins-setting-2.png" alt="Alt text" /></p>
+
+<ul>
+  <li>
+    <p>소스코드 관리 &gt; RepoistoryURL에 “프로젝트 url.git”을 입력 해주세요.
+<img src="/images/2020-12-17-CICD/EC2-jenkins-setting-3.png" alt="Alt text" /></p>
+  </li>
+  <li>
+    <p>소스코드 관리 &gt; Credentials &gt; Add</p>
+  </li>
+</ul>
+
+<h6 id="username--github-계정">UserName : Github 계정</h6>
+
+<h6 id="password--github-비밀번호">Password : Github 비밀번호</h6>
+
+<p>입력 후 ‘Add’를 눌러주세요.</p>
+:ET
