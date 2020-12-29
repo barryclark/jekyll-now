@@ -6,7 +6,7 @@
 name: Geo's Notepad
 
 # Short bio or description (displayed in the header)
-description: C++, Maths and other things
+description: Mostly Programming and Math
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/geo-ant/blog/master/images/badge-geo.png
@@ -26,7 +26,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/

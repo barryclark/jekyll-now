@@ -44,10 +44,10 @@ I'll use $$t$$ as a time and consequently refer to $$\nu$$ as a frequency just f
 
 $$ \mathcal{F}^{-1}\left\{F(\nu)\right\}(t) = \int_{-\infty}^{\infty} \text{d}\nu F(\nu) \exp(i\, 2\pi\nu t)=f(t).$$
 
-The Fourier transform has all kinds of [properties](https://en.wikipedia.org/wiki/Fourier_transform#Properties_of_the_Fourier_transform) that make it worthwhile as a tool for analysing functions[^notation]. Although it is obvious from the notation, it is very important to note that the Fourier Transform is continuous in time and in frequency. Thus it is sometimes also referred to as the Continuous Time Fourier Transform (CTFT). This is not what we use in signal processing, where we use the *discrete* Fourier Transform (DFT) of a finite number of discrete samples.
+The Fourier transform has all kinds of [properties](https://en.wikipedia.org/wiki/Fourier_transform#Properties_of_the_Fourier_transform) that make it worthwhile as a tool for analyzing functions[^notation]. Although it is obvious from the notation, it is very important to note that the Fourier Transform is continuous in time and in frequency. Thus it is sometimes also referred to as the Continuous Time Fourier Transform (CTFT). This is not what we use in signal processing, where we use the *discrete* Fourier Transform (DFT) of a finite number of discrete samples.
 
 ## The Discrete Fourier Transform (DFT)
-This transform is what we are actually using in all kinds of signal processing. It is defined on a finite sequence $$f[n], n=0,1,\dots,N-1$$ with $$N$$ elements. At this point in the article just assume that the DFT has nothing to do with the FT and just falls out of the sky as some kind of transformation applied to a finite sequence of numbers. Of course is not a coincidence that I named the finite sequence $$f[n]$$, but at this point just assume it has nothing to do with the function $$f(t)$$ above[^dft_ft]. So the DFT of the sequence $$f[n], n=0,1,\dots,N-1$$ is defined as
+This transform is what we are actually using in all kinds of signal processing. It is defined on a finite sequence $$f[n], n=0,1,\dots,N-1$$ with $$N$$ elements. At this point in the article just assume that the DFT has nothing to do with the FT. It just falls out of the sky as some kind of transformation applied to a finite sequence of numbers. Of course it is not a coincidence that I named the finite sequence $$f[n]$$, but at this point just assume it has nothing to do with the function $$f(t)$$ above[^dft_ft]. So the DFT of the sequence $$f[n], n=0,1,\dots,N-1$$ is defined as
 
 $$F[k] := \mathcal{DFT}\{f[n]\}[k] = \sum_{n=0}^{N-1}f[n]\exp\left(-i\,\frac{2\pi}{N} k n\right),$$
 
@@ -55,7 +55,7 @@ which is an infinite discrete sequence of index $$k\in \mathbb{Z}$$. Note that t
 
 $$f[n] = \mathcal{DFT}^{-1}\{F[k]\}[n] = \frac{1}{M}\sum_{k=0}^{N-1}F[k]\exp\left(i\,\frac{2\pi}{N} k n\right).$$
 
-Again, see this as some transformation on sequences which is (yet) unrelated to the FT. Just see this as an [invertible transform](https://math.stackexchange.com/questions/3454134/simple-proof-of-inverse-discrete-fourier-transformation-idft) on finite sequences. It is worth noting that the sequence reproduced by the DFT is also $$N$$-periodic, whereas the original sequence was only given on $$n=0,1,\dots,N-1$$. We will understand in the course of the article how the DFT and the FT relate and what the reason for the periodicity is.
+Again, see this as some transformation on sequences which is (yet) unrelated to the FT. It is just an [invertible transform](https://math.stackexchange.com/questions/3454134/simple-proof-of-inverse-discrete-fourier-transformation-idft) on finite sequences. It is worth noting that the sequence reproduced by the DFT is also $$N$$-periodic, whereas the original sequence was only given on $$n=0,1,\dots,N-1$$. We will understand in the course of the article how the DFT and the FT relate and what the reason for the periodicity is.
 
 ## The Fourier Series (FS / CTFS)
 Before we dive into how the FT and the DFT relate, let's mention the Fourier Series (FS) for completeness. The Fourier Series lets us write periodic functions as a linear combination of plane waves. It is not absolutely vital for this article to understand the FS, but it is connected to both the FT and the DFT. Furthermore it is sometimes useful to write a periodic function as a Fourier Series to easier calculate its Fourier Transform.
@@ -72,19 +72,18 @@ This series is applicable only to periodic functions which are *continuous* in t
 
 
 # Going Discrete
-Now we'll have a look at how to get from the FT to the DFT. We'll do that by looking at the *continuous* FT of a sampled function, which is gives us the [Discrete Time Fourier Transform (DTFT)](https://cnx.org/contents/xkitXNix@1/Lecture-8-The-Discrete-Time-Fourier-Transform-DTFT). We'll use this variant of the Fourier Transform to make a little detour into the [Sampling Theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem) and related equations. It's not strictly necessary to cover the Sampling Theorem on our way from the FT to the DFT, but this topic is so vastly important that we'll spend some time on it.
-
+Now we'll have a look at how to get from the FT to the DFT. We'll do that by looking at the *continuous* FT of a sampled function, which  gives us the [Discrete Time Fourier Transform (DTFT)](https://cnx.org/contents/xkitXNix@1/Lecture-8-The-Discrete-Time-Fourier-Transform-DTFT). We'll use this variant of the Fourier Transform to make a little detour into the [Sampling Theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem) and related equations.
 
 ## Sampling
-Sampling is related to an integral transformation of a continuous time signal. A useful mental model of sampling[^sampling] is that a "measured" function value a given sampling point $$t_k$$ is given as an integral $$f_k = \int_{t_k -\epsilon}^{t_k + \epsilon} \text{d}t \,p(t-t_k)f(t)$$ in a neighborhood of $$t_k$$. Here $$p(t)$$ is some peak or impulse function. Let's now say we are sampling our function on infinitely many equidistant time points with sampling period $$\Delta T$$ such that $$t_k = k \cdot \Delta T, \, k\in \mathbb{Z}$$. Then our sampled function $$\hat{f}(t)$$ is given as the product of our function $$f(t)$$ with an infinitely periodic impulse train $$\sum_k p(t-k\cdot \Delta T)$$. The integral is part of the measurement process and not of the sampled function.
+Sampling is related to an integral transformation of a continuous time signal. A useful mental model of sampling[^sampling] is that a "measured" function value at a given sampling point $$t_k$$ is given as an integral $$f_n = \int_{t_n -\epsilon}^{t_n + \epsilon} \text{d}t \,p(t-t_n)f(t)$$ in a neighborhood of $$t_n$$. Here $$p(t)$$ is some peak or impulse function. Let's now say we are sampling our function on infinitely many equidistant time points with sampling period $$\Delta T$$ such that $$t_n = n \cdot \Delta T, \, n\in \mathbb{Z}$$. Then our sampled function $$\hat{f}(t)$$ is given as the product of our function $$f(t)$$ with an infinitely periodic impulse train $$\sum_{n\in\mathbb{Z}} p(t-n\cdot \Delta T)$$. The integral is part of the measurement process and not of the sampled function.
 
-The simplest conceivable sampling (ideal sampling) is when the impulse train $$III_{\Delta T}(t)$$ consists of infinitely narrow peaks[^peaks_convolve]
+The simplest conceivable sampling ([ideal sampling](https://www.tutorialspoint.com/signals_and_systems/signals_sampling_techniques.htm)) is when the impulse train $$III_{\Delta T}(t)$$ consists of infinitely narrow peaks[^peaks_convolve]
 
 $$ III_{\Delta T}(t) = \sum_{n=-\infty}^{\infty} \delta(t-n\Delta T),$$
 
 which is the [Dirac comb](https://en.wikipedia.org/wiki/Dirac_comb). Our sampled function $$\hat{f}(t)$$ is written as
 
-$$\hat{f}(t) = f(t)\cdot III_{\Delta T}(t) = \sum_{n=-\infty}^{\infty} f(t)\delta(t-n\Delta T) , $$
+$$\hat{f}(t) = f(t)\cdot III_{\Delta T}(t) = \sum_{n=-\infty}^{\infty} f(t)\delta(t-n\Delta T). \label{f_hat_sampling_def}$$
 
 Although the sampled function looks like a collection of discrete values it is a continuous function, which is nonzero only at an infinite sequence of discrete points. Mathematically, it is the original function periodically superimposed with itself and multiplied with a periodic weighting function. This has profound implications for its Fourier Transform.
 
@@ -106,26 +105,27 @@ I have used the [convolution theorem](https://en.wikipedia.org/wiki/Convolution_
 
 $$\hat{F}(\nu) = \frac{1}{\Delta T}\sum_{n=-\infty}^{\infty} F(\nu-n\cdot \frac{1}{\Delta T}).$$
 
-We can see that this is an infinite superposition of the Fourier transform of the continuous function. It is periodic in $$\nu$$-space with period $$1/\Delta T$$. Figure 1 visualizes this connection between the Fourier Transforms of the continuous and the sampled function[^sampling_continouos].
+We can see that this is an infinite superposition of the Fourier transform of the continuous function. It is periodic in $$\nu$$-space with period $$1/\Delta T$$. Sampling in the time domain leads to this superposition in the Fourier domain (and vice versa). Figure 1 visualizes this connection between the Fourier Transforms of the continuous and the sampled function[^sampling_continouos].
 
 <figure>
- <img src="/blog/images/fourier-dft/fourier-of-sampled.svg" alt="Trulli" style="width:100%">
- <figcaption>Figure 1. <b>A</b> The continuous and bandlimited function f(t) is sampled with a Dirac comb with period &Delta;T. This is the sampling period. This function becomes the sampled function <span style="text-decoration:overline">f</span>(t), which is nonzero only at the sampling points. <span style="white-space: nowrap;"><b>B</b> Schematic</span> Fourier Transformation F(&nu;) of the continuous function f(t). Since the function is bandlimited, the Fourier Transform is nonzero only in a finite interval [-&nu;<sub>max </sub>,&nu;<sub>max</sub>].  <span style="white-space: nowrap;"><b>C</b> Schematic</span> Fourier Transform of the sampled function. It is a periodic sum of the Fourier Transform of the continuous function with period 1/&Delta;T. If the Nyquist sampling criterion is satisfied, then the copies of the Fourier Transform will not overlap. Otherwise they will overlap and lead to aliasing. </figcaption>
+ <img src="/blog/images/fourier-dft/fourier-of-sampled.svg" alt="Visualization of the FT and DTFT" style="width:100%">
+ <figcaption>Figure 1. <b>A</b> The continuous and bandlimited function f(t) is sampled with a Dirac comb with period &Delta;T. This is the sampling period. The sampled function is nonzero only at the sampling points. <span style="white-space: nowrap;"><b>B</b> Schematic</span> Fourier Transformation F(&nu;) of the continuous function f(t). Since the function is bandlimited, the Fourier Transform is nonzero only in a finite interval [-&nu;<sub>max </sub>,&nu;<sub>max</sub>].  <span style="white-space: nowrap;"><b>C</b> Schematic</span> Fourier Transform of the sampled function. It is a periodic sum of the Fourier Transform of the continuous function with period 1/&Delta;T. If the Nyquist sampling criterion is satisfied, then the copies of the Fourier Transform will not overlap. Otherwise they will overlap and lead to aliasing. </figcaption>
 </figure>
 
 ### The Sampling Theorem
 
-We can from Figure 1 that if a function is bandlimited[^bandlimited] in such a way that the individual Fourier Transforms $$F(\nu)$$ do not overlap in $$\hat{F}(\nu)$$, then we can go back to the original Fourier Transform by clipping $$\hat{F}(\nu)$$ e.g. in the interval $$\left[-\frac{1}{2} \frac{1}{\Delta T}, \frac{1}{2} \frac{1}{\Delta T}\right]$$. This would yield the original Fourier Transform and thus a way to reconstruct the original, *non-sampled* function $$f(t)$$. We'll do that in a more formal way in a moment, but we'll first have a quick look at what the non-overlapping condition implies. Formally it is stated as
+From Figure 1 we learn that if a function is bandlimited[^bandlimited] in such a way that the individual Fourier Transforms $$F(\nu)$$ do not overlap in $$\hat{F}(\nu)$$, then we can obtain the original Fourier Transform by clipping $$\hat{F}(\nu)$$. We just have to clip one period, e.g. in the interval $$\left[-\frac{1}{2} \frac{1}{\Delta T}, \frac{1}{2} \frac{1}{\Delta T}\right]$$. This yields the original Fourier Transform and thus a way to reconstruct the original, *non-sampled* function $$f(t)$$. We'll do that in a more formal way in a moment, but we'll first have a quick look at what the non-overlapping condition implies. Formally it is stated as
 
 $$\frac{1}{\Delta T} > 2 \nu_{max}$$
 
-and it means the sampling *frequency* (inverse of the sampling period) must be greater than twice the maximum frequency in the signal. Only then are we able to reconstruct a continuos function from a sampled version, because no information is lost or distorted. This is the famous [Nyquist-Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem). Now let's see what inverting
+and it means the sampling *frequency* (inverse of the sampling period) must be greater than twice the maximum frequency in the signal. Only then are we able to reconstruct a continuos function from a sampled version, because no information is lost or distorted. This is the famous [Nyquist-Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem).
 
-# TODO: Interpolation FORMULA !!!!!!!!!!!
+### The Whittaker-Shannon Interpolation Formula
+!!!!!!!!!TODO ADD THIS SECTION ON INVERTING THAT!!!!!!!!!
 
 IE Inverse FT of sampled! Whittaker Shannon interpolation formula https://en.wikipedia.org/wiki/Whittaker%E2%80%93Shannon_interpolation_formula
 
-## The Discrete Time Fourier Transform and the Discrete Fourier Transform
+## The Discrete Time Fourier Transform (DTFT) and the Discrete Fourier Transform (DFT)
 This concludes our little detour into the sampling theorem and interpolation. Let's now revisit the Fourier Transform of a sampled function !!EQUATION!! and write it in an alternative way using the original definition of the Fourier Transform.
 
 $$\begin{eqnarray}
@@ -135,7 +135,14 @@ $$\begin{eqnarray}
              &=& \sum_{n=-\infty}^{\infty} f(n\cdot \Delta T) \exp\left(-i\,2\pi \nu n \cdot \Delta T\right)
 \end{eqnarray}$$
 
-The infinite sum expression is called the *Discrete Time Fourier Transform* (DTFT) and it is a function that takes function values at infinitely many discrete time points and transforms them to a function that is continuous in frequency. This is already getting us close to the DFT, but not quite there. We the time sequence to be finite and furthermore we also want discrete frequencies. Let's tackle the problem of discrete frequecies first. From !!EQUATION!! we already know that the DTFT is periodic in $$\nu$$ with period $$1/\Delta T$$, so we only have to sample one period of it. We could sample the period $$\left[-\frac{1}{2} \frac{1}{\Delta T}, \frac{1}{2} \frac{1}{\Delta T}\right]$$, but for notational convenience one usually samples the period $$[0,1/Delta T]$$. So we will also do that here, but will have to remember that we sampled two adjacent half periods with the zero frequency at the first index[^dft_ordering]. So the  !!!IMAGE HERE TO EXPLAIN!!! This, by the way explains the layout of the FFT frequecies, which are often a source of confusion. We uniformly sample the interval $$[0,1/\Delta T]$$ at $$M$$ points using the discrete frequencies $$\nu_m$$ with
+The infinite sum expression is called the *Discrete Time Fourier Transform* (DTFT) and it is a function that takes function values at infinitely many discrete time points and transforms them to a function that is continuous in frequency. This is already getting us close to the DFT, but not quite there. We the time sequence to be finite and furthermore we also want discrete frequencies. Let's tackle the problem of discrete frequecies first. From !!EQUATION!! we already know that the DTFT is periodic in $$\nu$$ with period $$1/\Delta T$$, so we only have to sample one period of it. We could sample the period $$\left[-\frac{1}{2} \frac{1}{\Delta T}, \frac{1}{2} \frac{1}{\Delta T}\right)$$, but for notational convenience one usually samples the period $$[0,1/\Delta T)$$. So we will also do that here. It is important to remember that we sampled two adjacent half periods with the zero frequency at the first index[^dft_ordering], as seen in Figure 2.
+
+<figure>
+ <img src="/blog/images/fourier-dft/sampling-fourier.svg" alt="Sampling the DTFT" style="width:100%">
+ <figcaption>Figure 2. Sampling one period of the periodic DTFT. We uniformly sample two adjacent half periods of the DTFT in the Interval [0,&Delta;T<sup>-1</sup>). The zero frequency component is at index 0 followed by the positive frequency components up to the Nyquist frequency 0.5 &Delta;T<sup>-1</sup> and finally the negative frequency components in reverse order.</figcaption>
+</figure>
+
+This sampling is the reason for the [layout of the FFT frequecies](http://www.fftw.org/fftw3_doc/The-1d-Discrete-Fourier-Transform-_0028DFT_0029.html#The-1d-Discrete-Fourier-Transform-_0028DFT_0029), which are so often a source of confusion. We uniformly sample the interval $$[0,1/\Delta T)$$ at $$M$$ points using the discrete frequencies $$\nu_m$$ with
 
 $$\nu_m = \frac{m}{M} \frac{1}{\Delta T},\, m=0,1,\dots,M-1.$$
 
@@ -143,10 +150,10 @@ Now we switch to sequence notation using
 
 $$\begin{eqnarray}
 \hat{F}[m] &:=& \hat{F}(\nu_m) = \hat{F}\left(\frac{m}{M} \frac{1}{\Delta T}\right) \,m=0,1,\dots,M-1\\
-      f[n] &:=& f(n\cdot \Delta T), \, n \in \mathbb{Z}
+      f[n] &:=& f(n\cdot \Delta T), \, n \in \mathbb{Z} \label{sequence_f_and_function_f_t}
 \end{eqnarray}$$
 
-Note that the first sequence is of finite length, but the second one is still infinite. Now lets look at $$\hat{F}[m]$$ again:
+Note that the first sequence is of finite length, but the second one is still infinite. Now let's look at $$\hat{F}[m]$$ again:
 
 $$\hat{F}[m] = \sum_{n=-\infty}^{\infty} f[n]\exp\left(-i\,\frac{2\pi}{M}mn\right).$$
 
@@ -156,17 +163,45 @@ $$\begin{eqnarray}
 \hat{F}[m] &=& \sum_{k=-\infty}^{\infty} \sum_{n=0}^{M-1} f[n-kM]\exp\left(-i\,\frac{2\pi}{M}mn + i\,2\pi k\right) \\
            &=& \sum_{k=-\infty}^{\infty} \sum_{n=0}^{M-1} f[n-kM]\exp\left(-i\,\frac{2\pi}{M}mn\right) \\
            &=& \sum_{n=0}^{M-1} \left(\sum_{k=-\infty}^{\infty} f[n-kM]\right) \exp\left(-i\,\frac{2\pi}{M}mn\right)\\
-           &=& \sum_{n=0}^{M-1} \tilde{f}[n] \exp\left(-i\,\frac{2\pi}{M}mn\right) \\
-           \text{with } \tilde{f}[n] &:=& \sum_{k=-\infty}^{\infty} f[n-kM] , n \in \mathbb{Z}\\
+           &=& \sum_{n=0}^{M-1} \tilde{f}[n] \exp\left(-i\,\frac{2\pi}{M}mn\right) \label{DFT_from_DTFT} \\
+           &=& \mathcal{DFT}\{\tilde{f}[n]\}[m] \label{DFT_and_DTFT}\\
+           \text{with } \tilde{f}[n] &:=& \sum_{k=-\infty}^{\infty} f[n-kM] , n \in \mathbb{Z} \label{f_tilde_sequence_def}  \\
 \end{eqnarray}$$
 
-So in equation !!EQUATION!! we have reproduced our DFT formula !!EQUIATION!!!, but we had to define a new sequence $$\tilde{f}[n]$$, which is clearly related to the sequence $$f[n]$$ of function values but is not quite the same. The key to understanding what the DFT really computes is understanding this new sequence. 
+So in equation $$\eqref{DFT_from_DTFT}$$ we have reproduced our DFT expression, but we had to define a new sequence $$\tilde{f}[n]$$, which is clearly related to the sequence $$f[n]$$ of function values but is not quite the same. The key to understanding what the DFT really computes is understanding this new sequence.
+
+## What the DFT Really Computes
+So now for the final piece of the puzzle, where the answer to [this question](https://dsp.stackexchange.com/questions/72231/how-is-the-dtft-of-a-periodic-sampled-signal-linked-to-the-dft) on [dsp.stackexchange](https://dsp.stackexchange.com/) really helped me overcome a mental block I had. From equation $$\eqref{f_tilde_sequence_def}$$ we see that the sequence $$\tilde{f}[n]$$ is $$M$$-periodic in $$n$$, i.e. $$\tilde{f}[n+lM]=\tilde{f}[n],\, l\in \mathbb{Z}$$. So the DFT of this *periodized* sequence is related to the values of the Fourier Transform of the function $$f(t)$$ via the equations we derived above. But how is the periodized sequence related to the function values? Well, of course by equation $$\tilde{f_tilde_sequence_def}$$, but that is an infinite sum and does not really help us, or does it? Let's take one step back.
+
+In we sample a function in reality, we are not really sampling by equation $$\eqref{f_hat_sampling_def}$$. Apart from the fact that we are not sampling ideally, the key fact here is that we are not sampling infinitely many points. We are only sampling $$f(t)$$ on an interval. That means we are *always implicitly* multiplying the function with a rectangular windowing function $$W_T(t)$$ that sets the function values outside this window to zero
+
+$$W_T(t) = \begin{cases}
+    1,& \text{if } t \in [0,T] \\
+    0,              & \text{else}
+\end{cases}.$$
+
+So actually we could have written our sampled and windowed function as
+
+$$\hat{f}^{\prime}(t) := \hat{f}(t)\cdot W_T(t) =   W_T(t)\cdot f(t) \cdot III_{\Delta T}.$$
+
+If we sample M samples using a sampling interval
+
+$$\Delta T = \frac{T}{M},$$
+
+If we now let $$f[n]$$ describe the values of the windowed function, instead of the function itself, then we have
+
+$$f[n] = W_T(n\cdot\Delta T) f(n\cdot \Delta t),$$
+
+for which we have $$f[n]=0 \,\forall\, n \not\in [0,M-1]$$. The sequence $$\tilde{f}[n]$$ for this windowed function values is just the infinite repetition of the sequence values in $$[0,M-1]$$, where the $$f[n]$$ are the function values at the sample points. This is what the DFT really computes. The DFT computes the values of the Fourier Transform of a *windowed* function. The rectangular windowing is always implicit in the DFT, because of the finite sampling. We can see the effects of windowing on the computed Fourier Transform by repeating the calculations in !!!EQUATION!!! while including a window function. I won't repeat the calculations here, but for a rectangular window our DTFT will be folded with a $$sinc$$ function. We can [modify the window function](https://www.edn.com/windowing-functions-improve-fft-results-part-ii/) by multiplying the samples with an extra windowing function, but we can never get rid of the windowing itself. It is inherent in our finite sampling interval. See also the famous paper by Albert Nuttall [Nuttall1981].
+
+
 
 # Literature
 [Gonzalez2018] Gonzalez, RC, Woods, RE. 2018.  *Digital Image Processing*. (4<sup>th</sup> Edition). Pearson.
 
 [Langton2019] Langton, C, Levin, V. 2019. *Intuitive Guide to Fourier Analysis and Spectral Estimation*. (2<sup>nd</sup> Edition). Mountcastle Academic.
 
+[Nuttall1981] Nuttall, A. 1981. *Some windows with very good sidelobe behavior*. IEEE Transactions on Acoustics, Speech, and Signal Processing. [doi: 10.1109/TASSP.1981.1163506](https://ieeexplore.ieee.org/document/1163506).
 # Endnotes
 [^sum_subranges]: Specifically $$\sum_{k=-\infty}^{\infty} a[k]= \sum_{k=-\infty}^{\infty} \sum_{l=0}^{L-1} a[l-kL]$$ for any suitable infinite series. Think of this like splitting a `for` loop over one running index into two for loops over two indices total, just like accessing a 2D array.
 [^sum_convergence]: Convergence of infinite series is [its own beast](https://math.stackexchange.com/questions/357224/absolutely-convergent-series-and-conditionally-convergent-series-rearrangement). I won't bother with the details and assume the conditions are fulfilled for what I am doing.
@@ -176,7 +211,7 @@ So in equation !!EQUATION!! we have reproduced our DFT formula !!EQUIATION!!!, b
 [^conv_delta]: Also not that the *convolution* of a function $$g(t)$$ with the delta distribution $$\delta(t-t_0)$$ is $$g(t) \star \delta(t-t_0) = g(t-t_0)$$. Do not confuse the convolution with the delta function with the [sifting property](https://mathworld.wolfram.com/SiftingProperty.html).
 [^peaks_convolve]: If we want to sample with another function with finite width, we just have to convolve the dirac comb with an appropriate peak. This, of course, has consequences in Fourier space, see the [Convolution Theorem](https://en.wikipedia.org/wiki/Convolution_theorem).
 [^dft_ft]: Of course the DFT and the FT are related and so are $$f(t)$$ and $$f[n]$$, but the whole point of this article is to show how exactly they are related.
-[^ctfs_resource]: See [here](https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Signal_Processing_and_Modeling/Book%3A_Signals_and_Systems_(Baraniuk_et_al.)/06%3A_Continuous_Time_Fourier_Series_(CTFS)/6.02%3A_Continuous_Time_Fourier_Series_(CTFS)) for a very good resource on the CTFS and its properties.
+[^ctfs_resource]: See [here](https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Signal_Processing_and_Modeling/Book%3A_Signals_and_Systems_(Baraniuk_et_al.)/06%3A_Continuous_Time_Fourier_Series_(CTFS)/6.02%3A_Continuous_Time_Fourier_Series_(CTFS)) for a nice resource on the CTFS and its properties.
 [^FFT]: In image processing we commonly use the [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) which just a fast implementation of the DFT.
 [^math_rigor]: For example, I won't be bothered with checking if reordering integrals, partial derivatives, sums  etc. is one hundred percent mathematically sound. I also won't not bother with stating convergence criteria for integrals, series and such.
 [^well_behaved]: See, this is what I meant when I said I'll use math like a physicist.
