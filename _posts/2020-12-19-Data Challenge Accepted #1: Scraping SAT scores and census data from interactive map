@@ -19,6 +19,7 @@ So I figured I would grab the appropriate zoom window for the sample I want to a
 
 #Merging
 Here is the head of one of the csv files,
+
 ```csv
 school_name,Type,OneYr,MRYear,roll,RollingYears,Notes,lat,lon,member,MAGNET_TEXT,CHARTER_TEXT,TOTFRL,DIRCERT,NSLP_STATUS
 Frazier Mountain High,SAT,1040,2016,-1,-1,Note: California no longer releases SAT averages.,34.799506,-118.891645,,No,No,154,108,NSLPNO
@@ -28,17 +29,97 @@ Fillmore Senior High,SAT,1022,2016,-1,-1,Note: California no longer releases SAT
 Santa Paula High,SAT,978,2016,-1,-1,Note: California no longer releases SAT averages.,34.356329,-119.070484,,No,No,1386,660,NSLPCEO
 ```
 Here is the head of one of the json files,
+
 ```json
 {"type":"FeatureCollection","features":[{"geometry":{"type":"Polygon","coordinates":[[[-118.378222,34.643084],[-118.37779,34.64197],...,[-118.378222,34.643084]]]},"type":"Feature","properties":{"med_fam_inc":"92063","prop_children_married_fam":"0.729303548","pop_nat_amer":"0","pop":"5772","NAMELSAD10":"Census Tract 9201.02","pop_asian":"409","INTPTLAT10":"+34.6330733","prop_unemployed":"0.081774844","AWATER10":12194738.0,"TRACTCE10":"920102","pop_hl":"2032","prop_youth_disengage":"0.024752475","pop_black":"224","NAME10":"9201.02","ALAND10":615735934.0,"FUNCSTAT10":"S","prop_fam_below_1.85_pov":"0.232323232","COUNTYFP10":"037","enrolled_priv_school":"93","GEOID10":"06037920102","STATEFP10":"06","med_hh_inc":"69762","enrolled_pub_school":"1210","pop_white":"2960","prop_25_64_bach_or_higher":"0.345797188","MTFCC10":"G5020","INTPTLON10":"-118.6002393"}}]}
 ```
-Merging csv can be done easily on the command line with awk (credit to [Marek Gra`c](https://apple.stackexchange.com/questions/80611/merging-multiple-csv-files-without-merging-the-header)),
+
+##Merge multiple csv files on the command line with awk 
+(credit to [Marek Gra`c](https://apple.stackexchange.com/questions/80611/merging-multiple-csv-files-without-merging-the-header)),
 
 ```bash
 awk '(NR == 1) || (FNR > 1)' file*.csv > bigfile.csv
 ```
-, but json needs more finesse.
+, but json needs more finesse with jq.
+
+The jq 'keys' returns the fields of our json objects,
+
+```bash
+waste:json ERushton$ jq 'keys' 411.json
+[
+  "features",
+  "type"
+]
+```
+
+##Merge multiple json files on the command line with jq 
+Credit to [Inian response to Satish](https://unix.stackexchange.com/questions/610461/how-to-merge-arrays-from-multiple-json-files-with-jq?rq=1)), 
+
+```bash
+jq -nc '{ features: [ inputs.features ] | add }' *.json > merged.json
+```
+
+#Checking
+To check that the csv merged properly I checked for one header row and counted all of the rows to be equal to the toal of the individual csvs and checked that the head and tail are correct. 
+
+```bash
+waste:csv ERushton$ wc *.csv
+       6      45     798 203 (1).csv
+       8      61    1056 203 (2).csv
+      20     181    2748 203 (3).csv
+     139    1187   18256 204 (1).csv
+      14     115    1854 204 (2).csv
+     225    2372   32719 204 (3).csv
+       2       9     249 205 (1).csv
+      29     247    3830 205.csv
+     436    4210   60656 merged.csv
+     879    8427  122166 total
+```
+Since there are 4210 lines in merged.csv and the total lines are 8427. This makes sense because we removed 7 lines which were repeat header rows in the n-1 files that aren't the first file. Leaving 8420, which is double the length of the merged file.
+
+To check that the json merged I counted how many values the 'features' key had with `jq length`.
+ 
+```bash
+waste:json ERushton$ jq -r '.features | length' *.json 
+2
+30
+18
+2
+2
+11
+48
+38
+26
+6
+13
+74
+219
+806
+261
+160
+43
+6
+686
+507
+133
+2
+137
+114
+6
+1
+4
+1
+3356
+waste:json ERushton$ jq -r '.features | length' *.json | awk '{ SUM += $1} END { print SUM }'
+6712
+```
+The last file in the directory has 3356 'features:' values which is the sum of the rest, given that 6712 is 2 * 3356.
+
+To more completely check we can look at the distribution of some values in the data later when we are exploring.
 
 #Cleaning
+Next I wanted to get all of the data into a dataframe or datatable in R, and prepare it for exploration and analysis.
+
 So now I need to load all of these into an R session and wrangle it.
 
 I did this
