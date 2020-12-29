@@ -340,7 +340,7 @@ requires (T v) {
   sizeof(v) <= 4;
 };
 ```
-Did you think this concept only works for types whose size is smaller than 4 bytes? Well it doesn't it is fulfilled for any type `T` for which the expression `sizeof(T) <= 4` which is probably true for all types (at least I cannot think of any for which it is not true)
+Did you think this concept only works for types whose size is smaller than 4 bytes? Well it doesn't it is fulfilled for any type `T` for which the expression `sizeof(T) <= 4` which is probably true for all types (at least I cannot think of any for which it is not true).
 
 If you want a concept that is only fulfilled when the types size is actually smaller than 4 bytes, you have to write it like this:
 
@@ -383,20 +383,108 @@ Granted this is a pretty arbitrary (and useless) concept, however it serves as a
 
 ## A more practical example!
 
-Lets use concepts for something actually useful and make our signaling system. We want to be able to attach a signal to any member function as long as the signatures match through a connect method. However we do not want the users to enforce deriving from an Interface. In order to keep life time issues at bay we use a subscription object which has to live as a member inside the connected class.
+Lets use concepts for something actually useful and pretend we are making our own signaling system. If you are familiar with `Boost::Signals2` or `Qt-Signals-and-Slots` then this should be easy for you to imagine.
 
-Emitting the signal will call the corresponding members of all connected objects that are alive at that moment. When the lifetime of connected object ends it will take itself automatically off the the subscription list.
+Basically a signal keeps a list of receivers and when emitted will call all **functions**, **lambdas** and **member-functions** with the provided arguments. `Boost::Signals2` actually can do a lot more and is an amazing piece of software engineering. I highly recommend taking a look [here](https://github.com/boostorg/signals2).
 
-Hope you get the picture, its pretty standard like `boost::signals` or `Qts Signals and Slots` we just keep it simpler.
+An issue with calling **member-functions** arises from the lifetime of the instances those functions belong to. You do not want to call any member function on an already destroyed object. The c++ way of solving that problem is to use a [RAII](https://en.cppreference.com/w/cpp/language/raii)-Type which is used as member and disconnect itself from all signals when the destructor is called.
 
-We will have a signal that will take any function signature as template parameter.
+Something along the lines of:
+
+```cpp
+struct Subscription
+{
+    ~Subscription()
+    {
+        // disconnect from all signals
+    };
+};
+
+struct Receiver
+{
+    Receiver() = default;
+    Subscription m_subscription;
+};
+```
+
+Now when Receiver is destroyed the subscription will be destroyed and everything will be cleand up properly.
+
+One way to achieve this is to design a parent class that has this member and will be inherited by our `Receiver` however since we are exploring **Concepts** we will take a different approach. Actually the only thing we need in order to properly manage the lifetime is a member of type Subscription. So lets write a `concept` for that:
 
 ```cpp
 template<typename T>
-class Signal
+concept Is_Subscribable = requires(T&& target)
+{
+    requires std::same_as<Subscription, decltype(target.m_subscription)>;
+};
 ```
 
-//TODO
+This will determine that a member with name `m_subscription` of type `Subscription` is available. If it is not we will get a clear error message, something along the lines of:
+
+```shell
+<source>:45:29: error: no matching member function for call to 'connect'
+    source.signal_something.connect(wannabe_receiver);
+    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+<source>:20:10: note: candidate template ignored: constraints not satisfied [with target:auto = WannabeReceiver]
+    void connect(Is_Subscribable auto target) {};
+         ^
+<source>:20:18: note: because 'WannabeReceiver' does not satisfy 'Is_Subscribable'
+    void connect(Is_Subscribable auto target) {};
+                 ^
+<source>:15:57: note: because 'std::same_as<Subscription, decltype(target.m_subscription)>' would be invalid: no member named 'm_subscription' in 'WannabeReceiver'
+    requires std::same_as<Subscription, decltype(target.m_subscription)>;
+```
+
+Eh voila, we just enforced a member with a certain type without using inheritance or the [detection idiom](https://people.eecs.berkeley.edu/~brock/blog/detection_idiom.php#:~:text=The%20detection%20idiom%20is%20what,that%20are%20much%20more%20expressive.). [Here](https://godbolt.org/z/dfcfn6) is the full code producing the above error message:
+
+```cpp
+#include <type_traits>
+#include <concepts>
+
+struct Subscription
+{
+    ~Subscription()
+    {
+        // disconnect from all signals
+    };
+};
+
+template<typename T>
+concept Is_Subscribable = requires(T&& target)
+{
+    requires std::same_as<Subscription, decltype(target.m_subscription)>;
+};
+
+struct Signal
+{
+    void connect(Is_Subscribable auto target) {};
+};
+
+struct Signaller
+{
+    Signal signal_something;
+};
+
+struct Receiver
+{
+    Receiver() = default;
+    Subscription m_subscription;
+};
+
+struct WannabeReceiver
+{};
+
+int main()
+{
+    Signaller source;
+    Receiver receiver;
+    WannabeReceiver wannabe_receiver;
+    source.signal_something.connect(receiver);
+    source.signal_something.connect(wannabe_receiver);
+}
+```
+
+I know this might not be the best example and in this form only works as long as m_subscription is public, but hey this is my first blog post, gotta have some room for improvement ;).
 
 # What happens if I have Concepts, Templates and Regular Function Overloads?
 
@@ -640,7 +728,7 @@ constexpr bool testing_our_concept = requires(T value) {requires always_false<T>
 static_assert(!testing_our_concept<int>);
 ```
 
-# TLDR
+# TL;DR
 
 Use Concepts to define your Function Interfaces! They provide clearer error messages, earlier error detection and help make your intention clear to other decelopers (This is in my humble opinion the biggest advantage).
 
