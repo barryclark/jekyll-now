@@ -29,7 +29,7 @@ title: Landscape Photography (5 panoramic photos)
 
 ___ 
 
-> For full resolution videos and photos, contact me
+> Full resolution videos and images available on request
 
 ___
 
