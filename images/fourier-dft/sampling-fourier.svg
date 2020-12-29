@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="sampling-fourier.svg">
+   sodipodi:docname="sampling-fourier.svg"
+   inkscape:export-filename="/home/georgios/bitmap.png"
+   inkscape:export-xdpi="299.85291"
+   inkscape:export-ydpi="299.85291">
   <defs
      id="defs2">
     <marker
@@ -567,9 +570,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="353.8933"
-     inkscape:cy="212.91726"
+     inkscape:zoom="5.6"
+     inkscape:cx="597.19145"
+     inkscape:cy="147.74482"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -628,7 +631,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -864,7 +867,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
     <rect
-       style="opacity:1;fill:#525252;fill-opacity:0.29500002;stroke:#b41818;stroke-width:0.52900058;stroke-miterlimit:4;stroke-dasharray:1.05800116, 0.52900058000000005;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#525252;fill-opacity:0.29500002;stroke:#9e9e9e;stroke-width:0.52900058;stroke-miterlimit:4;stroke-dasharray:1.05800116, 0.52900058000000005;stroke-dashoffset:0;stroke-opacity:1"
        id="rect2051"
        width="46.831306"
        height="29.368792"
