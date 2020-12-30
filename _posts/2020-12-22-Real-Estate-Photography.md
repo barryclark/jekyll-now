@@ -4,9 +4,9 @@ title: Real Estate Photography - Justin Murdock
 permalink: /photography/
 ---
 
-> I am a comercially licensed UAV Pilot with a registered drone for hire. My camera-in-the-sky can capture incredible images. This page contains a photo album from a ten-minute flight session. **Photos may take some time to load, this page has full-quality images**
+> I am a comercially licensed UAV Pilot with a registered drone for hire. My camera-in-the-sky can capture incredible images. This page contains a photo album from a ten-minute flight session. Photos have been reduced in quality by a factor of 10 so that they load faster.
 
-If you need aerial photos, I can produce images like these. I can review the photos as I take them, and make sure I have exactly what I need by the end of the shoot. I have 3 batteries which last 30 minutes each, and I would review footage between each battery. To shoot photos on your location requires an hour and a half to two hours on site.
+If you need aerial photos, I can produce images like these images below. I can review the photos as I take them, and make sure I have exactly what I need by the end of the shoot. I have 3 batteries which last 30 minutes each, and I would review footage between each battery. To shoot photos on your location requires an hour and a half to two hours on site.
 
 I can get a clear shot of your property from any height, up to **400 feet** above ground level. I can get a clear shot of your property from all angles.
 
