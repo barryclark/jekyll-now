@@ -1,0 +1,14 @@
+{
+    "left" : {
+        "panelheight" : 737,
+        "splitterpos" : 240,
+        "topwindowstate" : "HIDE",
+        "windowheight" : 775
+    },
+    "right" : {
+        "panelheight" : 737,
+        "splitterpos" : 464,
+        "topwindowstate" : "NORMAL",
+        "windowheight" : 775
+    }
+}
