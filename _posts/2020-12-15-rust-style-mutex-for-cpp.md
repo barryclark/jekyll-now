@@ -8,7 +8,7 @@ date: 2020-12-01
 #description:
 #permalink:
 title: 'Rust-style mutexes for C++'
-comments_id:
+comments_id: 18
 ---
 
 In the [previous post](/blog/2020/mutexes-rust-vs-cpp/) on concurrency we have explored the different paradigms for protecting shared data with mutexes in Rust versus C++. Here we will look at emulating a Rust `Arc<Mutex<T>>` type to protect concurrent access to a shared resource of type `T` in C++.
