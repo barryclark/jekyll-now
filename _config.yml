@@ -1,25 +1,27 @@
-title:              Jay Coder
-email:
-description:        Jay's Blog
-author:             Jay Lin
-baseurl:            "/"
-url:                "https://jay-coder.github.io/"
+# Dependencies
+markdown:         kramdown
+highlighter:      Rouge
 
-# Social Profiles
-twitter_username:   
-github_username:    jay-coder
-facebook_username:  
-instagram_username:  
-linkedin_username:  jaycoder
+# Permalinks
+permalink:        pretty
 
-# Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-135437161-1 # out your google-analytics code
+# Setup
+title:            Jay Coder
+tagline:          'Jay&apos;s Blog'
+description:      'Solve real world problems by leveraging the latest and greatest Microsoft technologies (.NET Core, Azure).'
+url:              http://hyde.getpoole.com
+baseurl:          /
 
-# Build settings
-markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+author:
+  name:           'Jay Lin'
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/jay-coder
+
+plugins: [jekyll-paginate, jekyll-gist]
