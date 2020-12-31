@@ -11,6 +11,7 @@ video: https://www.youtube.com/embed/WS0OcCUt4io
 tags:
   - Slides
   - "2019"
+  - Featured
 ---
 
 * When proposing a project to be hosted by the CNCF, the goal is to show relevance, adoption and a healthy community.
