@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2019"
-  - Featured
 ---
 
 As I wrap up my first year at CNCF along with the decade, here's a look back at my year in numbers, my favourite moments and most viewed talks.
