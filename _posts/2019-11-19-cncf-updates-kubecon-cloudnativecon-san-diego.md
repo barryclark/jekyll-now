@@ -11,7 +11,6 @@ video: https://www.youtube.com/embed/Sjjwv6chZr0
 tags:
   - Slides
   - "2019"
-  - Featured
 ---
 
 * We’re happy to announce that over 500 members have joined CNCF, including five new Platinum and Gold members.
