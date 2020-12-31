@@ -7,6 +7,7 @@ video: https://www.youtube.com/embed/ZByl-a-eghc
 tags:
   - Video
   - "2020"
+  - Featured
 ---
 
 If you missed [KubeCon + CloudNativeCon NA Virtual 2020](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/), here's my keynote!
