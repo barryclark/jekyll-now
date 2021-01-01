@@ -4,9 +4,40 @@ title: Stimulus 2, Electronics Shopping Boogaloo
 permalink: /fpv-shopping-list/
 ---
 
-> Curious about FPV and looking at getting started? I put together some introductory information as well as links to products you ought to buy if you are getting started flying FPV!
+> Curious about FPV and looking at getting started with Drones!? I put together some industry information as well as links to products you ought to buy if you are getting started with flying FPV!
 
 ## FPV
+
+This whole article will be a lengthy read, but the quickest summary possible would be these 3 links:
+
+* [$99 FPV DRONE: Mobula](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
+* [$219 FPV GOGGLES: FatShark Scout](
+https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20)
+* [$218 FPV CONTROLLER: Taranais X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20)
+
+Total $540 before tax.
+
+The three items above are a combination of a First-Person-View quad-copter, a UAV Radio (universal, is not included with the drone), and $200 goggles (goggles not included with the drone) instead of $650 goggles. That would be the most reasonable getting-started shopping list for FPV. Fat shark sells a pair of goggles for $100 cheaper [$120 FatShark RECON](
+https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) if your budget is tighter. If you have time to read more info about drones the rest of this page goes over many other options for the drones and different features you can choose from when you are building your own drone. Drone setups become a lot more expensive when you add gopros to the shopping list, try to make them capable of going 100MPH+, or have astounding range of 4+ miles; But your controller (UAV Radio) and your FPV Goggles will be able to connect to any FPV drone. That's why I put a simple, $100 tinyWhoop (that is the style of drone) for the beginner/cheap setup. Every time you crash your custom built drone, you might end up needing to replace an arm or motor. The semi-crash-resistant tinywhoop will be a good learner's drone.
+ 
+_tiny whoops**:**_
+
+So first things first a **whoop** is a drone which has ducts around the propellors. The ducts actually generate more lift for the drone and make the motors more effecient, despite the extra weight. A whoop has a different chassis than a racing drone. Another added benefit of the ducting around your propellors is that it provides protection for flying indoors. You won't destroy your drywall flying down your hallway. A tiny-whoop is tiny, compare to a cine-whoop which is a full size drone meant to carry a high quality camera for cinematic shots. All the tiny-whoops I've seen have about 1 inch props. Racing quads have 4-5 inch props. A tiny whoop is a drone which is meant to be as small as possible rather than as powerful as possible. 
+
+Advantages of tiny-whoop:
+
+* The ducting around the propellors makes them ideal for flying inside
+* Price point is much cheaper
+* They will train you to fly better drones by using the same controller that you might use for a bigger, more powerful drone
+
+If your budget is even lower, you can get goggles from a good brand cheaper -- [$120 Fat Shark Recon](
+https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20)
+
+___
+
+> That concludes the abbreviated shopping list. The rest of this page will discuss different options for different drones, different controllers or different goggles. Any links on this entire page are affiliate links, where I would earn a comission, so if you did use these links I would be thrilled about my first affiliate-link-click-purchase-commission chain of events that could start a domino effect of being a drone dude instead of a carpenter ??
+
+___
 
 I, personally, am **extremely** interested in flying **Freestyle FPV** and **Racing** in the near future, and so I have put much research into a best shopping list for a beginner. My Mavic Air 2 is an awesome drone for what it was designed for - [cinematic footage and photography (a blog post)](https://murdockfpv.github.io/First-6-Months-As-A-Drone-Pilot/). The world of freestyle FPV and drone racing is a completely different ball game from the shots you can do with a mavic. Your goal as an FPV pilot is to get as close to your subjects as possible and do flips and acrobatics. You may have seen [JohnnyFPV](https://www.youtube.com/watch?v=jJyPa7KIu6I&start=317 "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible to do with the Mavic - it doesn't allow itself to become upside-down (_something that happens halfway into a flip_). My drone automatically stabilizes very well, and it is simply impossible to do flips. Plus the FPV drones are cheaper, and flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guarunteed to crash your drone **multiple times** per "session", flying Freestyle or Racing. The two links above should show you the difference between my landscape photography and the best FPV pilot in the world capturing gopro video on a custom built drone. When I linked the Johnny FPV video previously, I linked the video where it starts at about the 5 minute mark. In the first 5 minutes though, he crashes one of his drones. FPV is a different and more advanced category than the photography category. My main goal with the Mavic Air 2 is to not crash it.
 
@@ -83,6 +114,9 @@ Rotor Riot review 3 different BUDGET fat shark goggles [From a person who prefer
 
 Some Budget goggles with great reviews for $79 - Hawkeye. Uses mirrors to increase focal distance and reduce eye strain. Amazing review. https://www.youtube.com/watch?v=u0SG3hAZkrM
 
+#### Drones
+
+
 ### Audio
 
 An accessory I need more than anything right now is a [Lavalier Microphone](https://www.amazon.com/dp/B0856V2C5Q/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=57438679284ee330005ef349588dd5fc&creativeASIN=B0856V2C5Q "Lavalier Microphone on Amazon") for better audio when I take videos. A few months ago I ordered a lav mic - the Movo brand, and it was so terrible I returned it after one use. With two microphones, you would expect Person 1 to be on Channel 1, and Person 2 to be on Channel 2. With the Movo, Person 1 and 2 were on Channel 1, so there was no way to isolate the sound. Imagine doing an interview, but when one person is talking you can hear the other person breathing or drinking water. This Comica has good reviews and I was really impressed with the sound quality and the range. I'll be buying this and have about $300 leftover.
@@ -94,4 +128,5 @@ This will allow me to set my phone up on a tripod, mic myself up, connect my tab
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=juliusakula-20&marketplace=amazon&region=US&placement=B0856V2C5Q&asins=B0856V2C5Q&linkId=57438679284ee330005ef349588dd5fc&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
 
-
+ADD li-po charger to shopping list (balance charge, discharger, etc)
+ADD battery not included to initial summary list
