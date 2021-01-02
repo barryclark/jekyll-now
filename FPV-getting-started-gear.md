@@ -125,7 +125,7 @@ I think anyone getting started might want to try a pre-built, ready to fly drone
 3. A drone, unless you just play the Drone Simulator.
 4. Many LiPO batteries for the drone, and a LiPO battery charger.
 
-If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I hope you like drones as much as I do.
+> If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I hope you like drones as much as I do.
 
 ___
 
