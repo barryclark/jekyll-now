@@ -11,8 +11,7 @@ permalink: /fpv-shopping-list/
 This whole article will be a lengthy read, but the quickest summary possible would be these 3 links:
 
 * [$99 FPV DRONE: Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
-* [$219 FPV GOGGLES: Fat Shark Scout](
-https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20)
+* [$219 FPV GOGGLES: Fat Shark Scout](https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20)
 * [$218 FPV CONTROLLER: Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20)
 
 Total $540 before tax. The drone should come with a couple batteries and a charger.
@@ -27,16 +26,12 @@ Drone setups become a lot more expensive when you try to make them capable of go
 
 For the controller I chose the Taranis X9D over the Q X7 because while the Q X7 is $100 cheaper, it doesn't have the feature of simply being able to plug in the controller and charge it. The Q X7 you must buy a battery seperately and charge it which seems like a big pain. The X9D is a good controller that you could use for the [Drone Racing League Simulator game on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/) game or for any drone in real life.
 
-The Scout and Recon are Fat Shark's budget options compared to their professional goggles. With FPV Goggles, you can connect two pairs to the same video feed when flying and have a spectator watch while you fly, so I plan on getting the cheaper goggles first and upgrading later and keeping my old ones. If I ever were to buy the [$699 DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6) or [$739 Fat Shark HDO2(Dominator) FPV Goggles](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV) it would be cool to have a spare pair of goggles like the [$220 Fat Shark Scout](
+The Scout and Recon are Fat Shark's budget options compared to their high end goggles. With FPV Goggles, you can connect two pairs to the same video feed when flying and have a spectator watch while you fly, so I plan on getting the cheaper goggles first and upgrading later and keeping my old ones. If I ever were to buy the [$699 DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6) or [$739 Fat Shark HDO2(Dominator) FPV Goggles](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV) it would be cool to have a spare pair of goggles like the [$220 Fat Shark Scout](
 https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V9TDG5G/ref=sr_1_2?tag=juliusakula-20) or [$130 FatShark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) goggles to lend to a friend for a fly-along.
 
 ___
 
-> That concludes the abbreviated shopping list. The rest of this page will discuss different options for different drones, different controllers or different goggles
-
-___
-
-> Thanks for reading! If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you!
+> **That concludes the abbreviated shopping list**. The rest of this page will discuss different options for different drones, different controllers or different goggles. Thanks for reading! If you use any of the links on this page to purchase a drone/controller/goggles of your own, thank you!
 
 ___
 
@@ -77,7 +72,7 @@ ___
 The next thing needed for an FPV setup are the goggles. Choosing a unit has been pretty tough for me, but I have discovered the contenders by researching goggles used by racing world championship winners.
 
 * With no budget, I wouldn't hesitate to get the [$700 DJI Digital FPV Goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon"). Digital FPV (as opposed to Analog FPV) has a much higher range, higher video quality in your goggles, and just seems like the new thing that eventually most people will have (in my opinion). 
-* There is a [$15 module](https://www.amazon.com/dp/B08LMWTBJ9/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=244f65767a12fb94480c419cec08cf7a&creativeASIN=B08LMWTBJ9 "Analog Receiver Module Adapter Board on Amazon") that you can install into your goggles to make them backwards compatible with analog drones, which is absolutely something I would do, and I would want to get [different antennas](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR "iFlight HD Patch LHCP Directional Antennas on Amazon"). 
+* There is a [$15 module](https://www.amazon.com/dp/B08LMWTBJ9/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=244f65767a12fb94480c419cec08cf7a&creativeASIN=B08LMWTBJ9 "Analog Receiver Module Adapter Board on Amazon") that you can install into your [DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon") to make them backwards compatible with analog drones, which is absolutely something I would do, and I would want to get [different antennas](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR "iFlight HD Patch LHCP Directional Antennas on Amazon"). 
 * This whole setup would run over $700, just for the goggles part of the FPV setup (controller and drone bought seperately).
 * Fat Shark is another brand option for high-end goggles. Fat Shark seems to be a trusted brand for some time now, and the [$540 Fat Shark HDO "Dominator" Goggles](https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X "Fat Shark Dominator HDO2 FPV Goggles on Amazon") seem to be a very popular choice. I trust they are doing something right. 
 * However, they are not that much cheaper than DJI and it is [$740 with all the accessories](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV "Fat Shark HDO2 FPV Goggles + Module and Antenna on Amazon"), and that doesn't include a [battery](https://www.amazon.com/dp/B0711H4D3K/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=da34ce4891e9e6956c4b3325d39d4a66&creativeASIN=B0711H4D3K "Fat Shark High Capacity Headset Battery on Amazon"). 
@@ -114,17 +109,14 @@ ___
 
 > There are so, so many options for drones, and build-it-yourself drones are the way to go for performace. Building drones yourself involves soldering wires and is a pretty involved process, but not too much for a resourceful person. You'd need to watch tutorials on soldering if you've never done that before. There is definetly a youtube rabbit hole for building drones. 
 
-#### Here are some youtube videos which can be food for thought as you consider building your own drone.
+#### While I can't tell you from experience the best way to build a drone from scratch (There are youtube links below), I can show you some other very appealing ready-to-fly drones besides the Mobula6.
 
-* DRONE SIMULATOR!! [Nurk FPV "The First things you should buy when getting into FPV"](https://www.youtube.com/watch?v=J6NSeg-rD0c&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=1&t=7s). - About two minutes into the video he talks about buying a controller first, and playing the drone simulator before even buying a drone. Playing the drone simulator can make you a good drone pilot before you ever fly a real drone. Find the Drone Racing Simulator game on Steam.
-* YOUR FIRST DRONE BUILD! [Joshua Bardwell - "FPV Drone Budget Build Full Tutorial - Part 1 - Assembly"
-](https://www.youtube.com/watch?v=FEittnx42Zc&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=4). - This video's description contains SO MANY links... soldering tutorials and has links to soldering irons to buy and also every drone component in the video, you can buy and follow along to the video and viola you now know how to build drones. I think this is an excellent getting started series. Not very thrilling, but informative and educational.
-* Building a Drone with $99 to spend [UAVFutures - "Build a PRO FPV Racing Drone for ONLY $99 Full guide - 2018 UAVFUTURES $99 Build"](https://www.youtube.com/watch?v=GFNGUDT_9_c&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=5&t=381s)
-* Building a drone with $200 to spend [$200 FPV Drone Build & Set Up! - The Rotor Riot Budget Build](https://www.youtube.com/watch?v=ZyQOkRjt_h0&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=3)
+Different ready-to-fly racing drones (batteries not included): 
 
-___
-
-#### While I can't tell you from experience the best way to build a drone from scratch (check out the youtube links above), I can show you some other very appealing ready-to-fly drones besides the Mobula6.
+* [$240 Emax Hawk Pro 5" 6s battery class Racing Quad](https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20) (4S battery choose 2400KV / 6S battery choose 1700KV) The 6S version would be very fast.
+* [$190 ARRIS X220 5" Racing Drone, 4S battery class](https://www.amazon.com/ARRIS-Quadcopter-Racing-Stardard-Version/dp/B072NZJK9L/ref=sr_1_8?tag=juliusakula-20)
+* [$250 iFlight Nazgul5 V2 5inch, 6S battery class FPV Racing Drone Freestyle Quadcopter BNF Built with TBS Crossfire Nano Rx](https://www.amazon.com/iFlight-Nazgul5-Freestyle-Quadcopter-Crossfire/dp/B08KXWM9S9/ref=sr_1_47?tag=juliusakula-20) Crossfire makes this drone have a much longer range.
+* [$400 ARRIS Dazzle 5 Inch, 4S battery class FPV Racing Drone (comes with Q X7 Controller)](https://www.amazon.com/ARRIS-Quadcopter-Radiolink-Transmitter-Flycolor/dp/B074TDGSMQ/ref=sr_1_52?tag=juliusakula-20)
 
 A cinewhoop with a gopro mount: 
 
@@ -134,13 +126,17 @@ A cinewhoop with a gopro mount:
 * [$27 3d printed gopro mount for the drone and GoPro 5/6/7](https://www.amazon.com/iFlight-Adjustable-Mounting-Bumblebee-Hornet-Cinewhoop/dp/B088D59W9W/ref=pd_bxgy_2/134-2264898-1544041?tag=juliusakula-20)
 * [$230 GoPro Hero 7 Black](https://www.amazon.com/GoPro-HERO7-Black-Commerce-Stabilization/dp/B083CNLVN3/ref=sr_1_3?tag=juliusakula-20)
 
-To get a cinewhoop in the air, you'd need to purchase a controller and goggles, and you'd need to spend $273 on the drone, close to $530 if you want to add the gopro mount and a gopro.
+To get a cinewhoop in the air, you'd need to purchase a controller and goggles, and you'd need to spend $273 on the drone, or close to $530 if you want to add the gopro mount and a gopro to that drone. This cinewhoop with a gopro, the Taranis X9D controller, and Fat Shark Scout goggles altogether is about $970, about the same budget as the Mavic Air 2 fly more combo - but you can fly inside, do flips and fly FPV using goggles!
 
-Ready-to-fly racing drones: 
+#### Here are some youtube videos which can be food for thought as you consider _building your own drone._
 
-* [Emax Hawk Pro 5" Racing Quad](https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20) (4S battery choose 2400KV / 6S battery choose 1700KV)
-* [ARRIS X220 5" props 4S battery](https://www.amazon.com/ARRIS-Quadcopter-Racing-Stardard-Version/dp/B072NZJK9L/ref=sr_1_8?tag=juliusakula-20)
-* [iFlight Nazgul5 V2 5inch 6S FPV Racing Drone Freestyle Quadcopter BNF Built with TBS Crossfire Nano Rx](https://www.amazon.com/iFlight-Nazgul5-Freestyle-Quadcopter-Crossfire/dp/B08KXWM9S9/ref=sr_1_47?tag=juliusakula-20)
+* DRONE SIMULATOR!! [Nurk FPV "The First things you should buy when getting into FPV"](https://www.youtube.com/watch?v=J6NSeg-rD0c&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=1&t=7s). - About two minutes into the video he talks about buying a controller first, and playing the drone simulator before even buying a drone. Playing the drone simulator can make you a good drone pilot before you ever fly a real drone. Find the Drone Racing Simulator game on Steam.
+* YOUR FIRST DRONE BUILD! [Joshua Bardwell - "FPV Drone Budget Build Full Tutorial - Part 1 - Assembly"
+](https://www.youtube.com/watch?v=FEittnx42Zc&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=4). - This video's description contains SO MANY links... soldering tutorials and has links to soldering irons to buy and also every drone component in the video, you can buy and follow along to the video and viola you now know how to build drones. I think this is an excellent getting started series. Not very thrilling, but informative and educational.
+* Building a Drone with $99 to spend [UAVFutures - "Build a PRO FPV Racing Drone for ONLY $99 Full guide - 2018 UAVFUTURES $99 Build"](https://www.youtube.com/watch?v=GFNGUDT_9_c&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=5&t=381s)
+* Building a drone with $200 to spend [$200 FPV Drone Build & Set Up! - The Rotor Riot Budget Build](https://www.youtube.com/watch?v=ZyQOkRjt_h0&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=3)
+
+___
 
 ### In conclusion
 
@@ -153,7 +149,7 @@ I think anyone getting started might want to try a pre-built, ready to fly drone
 
 ___
 
-> If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I will earn a comission on any products linked on this page, except for the [Drone Racing League Simulator on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/).
+> If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I will earn a comission on any products linked on this page, except for the [Drone Racing League Simulator on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/). If you'd like to add me on Steam and race each other, my Steam "Friend Code" is 43723941. The simulator can be played with a mouse and keyboard, but is best with a real controller such as the [Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20).
 
 ___
 
