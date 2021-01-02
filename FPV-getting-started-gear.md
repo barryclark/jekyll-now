@@ -42,7 +42,7 @@ ___
 
 ### Goals
 
-* I, personally, am **extremely** interested in flying **Freestyle FPV** and **Racing** in the near future, and so I have put a lot of research into how to get started with that. 
+* I am **extremely** interested in flying **Freestyle FPV** and **Racing**, so I have put a lot of research into how to get started with that. 
 * [The Mavic Air 2](
 https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp/B08HJMM93P/ref=sr_1_4?tag=juliusakula-20) is an awesome drone for what it was designed for - [cinematic footage and photography (my blog post)](https://murdockfpv.github.io/Landscape-Photography/). I don't consider it an FPV Drone because you do not wear FPV goggles. 
 * The world of freestyle FPV and drone racing is a completely different world compared to the type of flying a Mavic does. Your goal as an FPV pilot is to get as close to your subjects as possible and do flips and acrobatics. 
