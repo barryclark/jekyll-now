@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Stimulus 2, Electronics Shopping Boogaloo
+title: A beginner FPV Drone shopping list
 permalink: /fpv-shopping-list/
 ---
 
-> Curious about FPV and looking at getting started with Drones!? I put together some industry information as well as links to products you ought to buy if you are getting started with flying FPV!
+> Curious about FPV and looking at getting started with Drones!? I put together some industry information as well as links to products you ought to buy if you are getting started with flying FPV! If you use any of the links on this page, thank you!
 
 ## FPV
 
@@ -17,15 +17,17 @@ https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=
 
 Total $540 before tax. The drone should come with a couple batteries and a charger.
 
-Can be ~$200 cheaper with [$119 FPV GOGGLES: Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) and [$125 FPV CONTROLLER: Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) instead. Total $345 with the Mobula6 tiny whoop.
+Can be ~$200 cheaper with [$119 FPV GOGGLES: Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) and [$125 FPV CONTROLLER: Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) instead. Total would be $345 with the [$99 Mobula6 drone](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20).
 
-The three items above are a combination of a First-Person-View quad-copter, a UAV Radio (universal, is not included with the drone), and $200 goggles (goggles not included with the drone) instead of the $650 goggles JohnnyFPV uses, the [Fat Shark Dominators](https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X "Fat Shark Dominator HDO2 FPV Goggles on Amazon"). That would be the most reasonable getting-started shopping list for FPV.  
+The three items above are a combination of a First-Person-View quad-copter, a UAV Radio (universal, is not included with the drone), and $200 goggles (also not included with the drone) instead of the $650 goggles that pro drone-racers use - the Fat Shark Dominators (links below). I have found that the above links would be the most reasonable getting-started shopping list for FPV.  
 
 > If you have time to read more info about drones, the rest of this page covers many other options for the drones and different features you can choose when you are building your own drone. 
 
-Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range VTX (video transmitter). But your controller (UAV Radio) and your FPV Goggles will be able to connect to any FPV drone. That's why I put a simple, $100 tiny whoop (that is the style of drone) for the beginner/cheap setup. Every time you crash your custom built drone, you might end up needing to replace an arm or motor. The semi-crash-resistant tiny whoop is a good learner's drone.
+Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range VTX (video transmitter). But your controller (UAV Radio) and your FPV Goggles will be able to connect to any FPV drone. That's why I put the real deal for the goggles and controller but a simple, $100 drone (in the "tiny whoop" category of drones) for the beginner/cheap setup. Every time you crash your $400 custom built drone, you risk needing to replace a motor or propellors. The inexpensive and semi-crash-resistant tiny whoop is a great learner's drone.
 
-I chose the Fat Shark Scout rather than the Recon for the goggles because there are some key features on the more expensive model that I think are worth it and would last longer before the need for an upgrade. The two most important features to me are the fact that the Scout has two antennas instead of one, and the Scout has a port on it to connect to a ground station or an external monitor. At some point I might want to have two pairs of goggles because you can connect two pairs of goggles to the same video feed when flying and have a spectator watch while you fly. if I ever were to buy the [$699 DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6) or [$739 Fat Shark HDO2(Dominator) FPV Goggles](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV) it would be cool to have a pair of the less expensive goggles like the [$220 Fat Shark Scout](
+For the controller I chose the Taranis X9D over the Q X7 because while the Q X7 is $100 cheaper, it doesn't have the feature of simply being able to plug in the controller and charge it. The Q X7 you must buy a battery seperately and charge it which seems like a big pain. The X9D is a good controller that you could use for the [Drone Racing League Simulator game on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/) game or for any drone in real life.
+
+The Scout and Recon are Fat Shark's budget options compared to their professional goggles. With FPV Goggles, you can connect two pairs to the same video feed when flying and have a spectator watch while you fly, so I plan on getting the cheaper goggles first and upgrading later and keeping my old ones. If I ever were to buy the [$699 DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6) or [$739 Fat Shark HDO2(Dominator) FPV Goggles](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV) it would be cool to have a spare pair of goggles like the [$220 Fat Shark Scout](
 https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V9TDG5G/ref=sr_1_2?tag=juliusakula-20) or [$130 FatShark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) goggles to lend to a friend for a fly-along.
 
 ___
@@ -34,15 +36,21 @@ ___
 
 ___
 
-> If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you!
+> Thanks for reading! If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you!
+
 ___
 
 ### Goals
 
-I, personally, am **extremely** interested in flying **Freestyle FPV** and **Racing** in the near future, and so I have put much research into a best shopping list for a beginner FPV Pilot. [The $1000 Mavic Air 2](
-https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp/B08HJMM93P/ref=sr_1_4?tag=juliusakula-20) is an awesome drone for what it was designed for - [cinematic footage and photography (my blog post)](https://murdockfpv.github.io/Landscape-Photography/). I don't consider it an FPV Drone because you do not wear FPV goggles. The world of freestyle FPV and drone racing is a completely different world compared to the shots you can do with a Mavic. Your goal as an FPV pilot is to get as close to your subjects as possible and do flips and acrobatics. You may have seen [JohnnyFPV](https://www.youtube.com/watch?v=jJyPa7KIu6I&start=317 "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible to do with the Mavic - it doesn't allow itself to become upside-down (_something that happens halfway into a flip_). My Mavic Air 2 automatically stabilizes very well, and it is simply impossible to do flips. Plus the FPV drones are cheaper, and flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guarunteed to crash your drone **multiple times** per "session", flying freestyle or racing. FPV is a different and more advanced category than the photography category. My main goal with the Mavic Air 2 is to not crash it.
-
-Now, on the subject of drones crashing, [Nurk FPV has a video (27:00+)](https://www.youtube.com/watch?v=RKVx8-43eZg) in which he shows that he packs _**6**_ drones for a flight/video shoot. That may seem excessive but if you watch FPV videos this is not unreasonable considering how often he crashes, and the video is eye opening to the experience of being a highly skilled pilot who travels to do video work for clients. I recommend watching a lot of videos if you are interested in FPV. It is helpful to understand your goals with drones in order to know which drone is best for you. I was initially surprised to learn that there really is no such thing as a drone that "does it all".
+* I, personally, am **extremely** interested in flying **Freestyle FPV** and **Racing** in the near future, and so I have put a lot of research into how to get started with that. 
+* [The Mavic Air 2](
+https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp/B08HJMM93P/ref=sr_1_4?tag=juliusakula-20) is an awesome drone for what it was designed for - [cinematic footage and photography (my blog post)](https://murdockfpv.github.io/Landscape-Photography/). I don't consider it an FPV Drone because you do not wear FPV goggles. 
+* The world of freestyle FPV and drone racing is a completely different world compared to the type of flying a Mavic does. Your goal as an FPV pilot is to get as close to your subjects as possible and do flips and acrobatics. 
+* You may have seen [JohnnyFPV](https://www.youtube.com/watch?v=jJyPa7KIu6I&start=317 "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible to do with the Mavic. 
+* The Mavic doesn't allow itself to become upside-down (_something that happens halfway into a flip_). My Mavic Air 2 automatically stabilizes very well, and it is simply impossible to do flips. 
+* FPV drones are cheaper, and flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guarunteed to crash your drone **multiple times** per "session", flying freestyle or racing.
+* FPV is a different and more advanced category than the photography category. My main goal with the Mavic Air 2 is to not crash it. 
+* It is helpful to understand your goals with drones in order to know which drone is best for you. I was initially surprised to learn that there really is no such thing as a drone that "does it all".
 
 ### FPV Shopping list
 
@@ -68,17 +76,18 @@ ___
 
 The next thing needed for an FPV setup are the goggles. Choosing a unit has been pretty tough for me, but I have discovered the contenders by researching goggles used by racing world championship winners.
 
-With no budget, I wouldn't hesitate to get the [$700 DJI Digital FPV Goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon"). Digital FPV (as opposed to Analog FPV) has a much higher range, higher video quality in your goggles, and just seems like the new thing that eventually most people will have (in my opinion). There is a [$15 module](https://www.amazon.com/dp/B08LMWTBJ9/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=244f65767a12fb94480c419cec08cf7a&creativeASIN=B08LMWTBJ9 "Analog Receiver Module Adapter Board on Amazon") that you can install into your goggles to make them backwards compatible with analog drones, which is absolutely something I would do, and I would want to get [different antennas](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR "iFlight HD Patch LHCP Directional Antennas on Amazon"). It is also recommended to get a different head strap. This whole setup would run over $700, just for the goggles part of the FPV setup (controller and drone bought seperately).
-
-Fat Shark is another brand option for high-end goggles. Fat Shark seems to be a trusted brand for some time now, and the [$540 Fat Shark HDO "Dominator" Goggles](https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X "Fat Shark Dominator HDO2 FPV Goggles on Amazon") seem to be a very popular choice. I trust they are doing something right. However, they are not that much cheaper than DJI and it is [$740 with all the accessories](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV "Fat Shark HDO2 FPV Goggles + Module and Antenna on Amazon"), and that doesn't include a [battery](https://www.amazon.com/dp/B0711H4D3K/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=da34ce4891e9e6956c4b3325d39d4a66&creativeASIN=B0711H4D3K "Fat Shark High Capacity Headset Battery on Amazon"). 
-
-For additional reading (please come back!), [this article](https://blog.dronetrest.com/everything-you-need-to-know-about-buying-fpv-goggles/) describes the difference between box goggles and low profile goggles. I think the new Fat Shark box goggles don't look so bad. The low profile goggles seems like things would be too close to my eyes and I might get nauseous.
+* With no budget, I wouldn't hesitate to get the [$700 DJI Digital FPV Goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon"). Digital FPV (as opposed to Analog FPV) has a much higher range, higher video quality in your goggles, and just seems like the new thing that eventually most people will have (in my opinion). 
+* There is a [$15 module](https://www.amazon.com/dp/B08LMWTBJ9/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=244f65767a12fb94480c419cec08cf7a&creativeASIN=B08LMWTBJ9 "Analog Receiver Module Adapter Board on Amazon") that you can install into your goggles to make them backwards compatible with analog drones, which is absolutely something I would do, and I would want to get [different antennas](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR "iFlight HD Patch LHCP Directional Antennas on Amazon"). 
+* This whole setup would run over $700, just for the goggles part of the FPV setup (controller and drone bought seperately).
+* Fat Shark is another brand option for high-end goggles. Fat Shark seems to be a trusted brand for some time now, and the [$540 Fat Shark HDO "Dominator" Goggles](https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X "Fat Shark Dominator HDO2 FPV Goggles on Amazon") seem to be a very popular choice. I trust they are doing something right. 
+* However, they are not that much cheaper than DJI and it is [$740 with all the accessories](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV "Fat Shark HDO2 FPV Goggles + Module and Antenna on Amazon"), and that doesn't include a [battery](https://www.amazon.com/dp/B0711H4D3K/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=da34ce4891e9e6956c4b3325d39d4a66&creativeASIN=B0711H4D3K "Fat Shark High Capacity Headset Battery on Amazon"). 
+* For additional reading (please come back!), [this article](https://blog.dronetrest.com/everything-you-need-to-know-about-buying-fpv-goggles/) describes the difference between box goggles and low profile goggles. I think the new Fat Shark box goggles (The Recon and Scout) don't look so bad. The low profile goggles seems like things would be too close to my eyes and I might get nauseous.
 
 ___
 
 ### Drones
 
-### My #1 reccomendation for a beginner, ready-to-fly, cheap drone would be:
+#### My #1 reccomendation for a cheap, beginner, ready-to-fly drone would be:
 
 * [$99 FPV TINY-WHOOP DRONE: Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
 
@@ -115,7 +124,7 @@ ___
 
 ___
 
-#### While I can't tell you the best way to build a drone from scratch (check out the youtube links above), I can show you some other very appealing ready-to-fly drones besides the Mobula6.
+#### While I can't tell you from experience the best way to build a drone from scratch (check out the youtube links above), I can show you some other very appealing ready-to-fly drones besides the Mobula6.
 
 A cinewhoop with a gopro mount: 
 
@@ -126,6 +135,12 @@ A cinewhoop with a gopro mount:
 * [$230 GoPro Hero 7 Black](https://www.amazon.com/GoPro-HERO7-Black-Commerce-Stabilization/dp/B083CNLVN3/ref=sr_1_3?tag=juliusakula-20)
 
 To get a cinewhoop in the air, you'd need to purchase a controller and goggles, and you'd need to spend $273 on the drone, close to $530 if you want to add the gopro mount and a gopro.
+
+Ready-to-fly racing drones: 
+
+* [Emax Hawk Pro 5" Racing Quad](https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20) (4S battery choose 2400KV / 6S battery choose 1700KV)
+* [ARRIS X220 5" props 4S battery](https://www.amazon.com/ARRIS-Quadcopter-Racing-Stardard-Version/dp/B072NZJK9L/ref=sr_1_8?tag=juliusakula-20)
+* [iFlight Nazgul5 V2 5inch 6S FPV Racing Drone Freestyle Quadcopter BNF Built with TBS Crossfire Nano Rx](https://www.amazon.com/iFlight-Nazgul5-Freestyle-Quadcopter-Crossfire/dp/B08KXWM9S9/ref=sr_1_47?tag=juliusakula-20)
 
 ### In conclusion
 
@@ -138,7 +153,7 @@ I think anyone getting started might want to try a pre-built, ready to fly drone
 
 ___
 
-> If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I hope you like drones as much as I do.
+> If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I will earn a comission on any products linked on this page, except for the [Drone Racing League Simulator on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/).
 
 ___
 
