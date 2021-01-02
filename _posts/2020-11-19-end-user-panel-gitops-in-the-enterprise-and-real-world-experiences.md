@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "End User Panel, GITOPS in the Enterprise, KubeCon CloudNativeCon NA 2020"
+title: "End User Panel, GITOPS in the Enterprise - KubeCon CloudNativeCon NA 2020"
 description: "Cheryl Hung, VP Ecosystem at CNCF, hosts a CNCF End User Community panel at KubeCon CloudNativeCon NA 2020"
 image: /images/2020-11-19-end-user-panel-gitops-in-the-enterprise-and-real-world-experiences.png
 video: https://www.youtube.com/embed/qlbVMj1L9dY
