@@ -35,6 +35,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - [Ποια άλλα κρυπτονομίσματα υπάρχουν πέρα από το Bitcoin;](#cryptocurrencies)
 - [Τι πρέπει να προσέχω όταν αγοράζω ή επενδύω σε κρυπτονομίσματα;](#scams)
 - [Έχω οικιακό τιμολόγιο €0,10/KWh της ΔΕΗ, μπορώ να κάνω mining κρυπτονομισμάτων;](#electricitycost)
+- [Τα κρυπτονομίσματα μου ανέβηκαν πολύ, πώς μπορώ να βοηθήσω τον τόπο μου και τους συνανθρώπους μου;](#philanthropy)
 - [Ποια projects σχετικά με κρυπτονομίσματα και blockchain υπάρχουν στην Ελλάδα και στην Κύπρο;](#projects)
 
 ### <a name="merchant-table"></a>Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;
@@ -234,9 +235,19 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [UCA](https://www.youtube.com/watch?v=utyqmJFwM7M), [OneCoin/OneLife](https://www.kathimerini.gr/1055057/interactive/epikairothta/ereynes/sta-ixnh-ths-vasilissas-twn-kryptonomismatwn), Yellow Trading Coin (YTC), S-coin/Coinspace, BitClub, Cryptonex/Bitcoin Revolution. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/](http://www.badbitcoin.org/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
-### <a name="electricitycost"></a> Έχω οικιακό τιμολόγιο €0,10/KWh της ΔΕΗ, μπορώ να κάνω mining κρυπτονομισμάτων;
+### <a name="electricitycost"></a>Έχω οικιακό τιμολόγιο €0,10/KWh της ΔΕΗ, μπορώ να κάνω mining κρυπτονομισμάτων;
 
 [Το οικιακό τιμολόγιο της ΔΕΗ](https://bitcoinx.gr/ποιό-είναι-το-κόστος-της-κιλοβατώρας/) για κατανάλωση 2000-3000KWh ανά τετράμηνο, μετά όλους τους φόρους και τις προσαυξήσεις, είναι €0,2189375/KWh.
+
+### <a name="philanthropy"></a>Τα κρυπτονομίσματα μου ανέβηκαν πολύ, πώς μπορώ να βοηθήσω τον τόπο μου και τους συνανθρώπους μου;
+
+- Χρηματοδοτήστε υποτροφίες ή εκπαιδευτικά ιδρύματα
+- Χρηματοδοτήστε νεοφυείς επιχειρήσεις ή funds που επενδύουν σε νεοφυείς επιχειρήσεις ή οργανισμούς που προωθούν την επιχειρηματικότητα
+- Χρηματοδοτήστε τις τέχνες, τον πολιτισμό και την προστασία της φύσης
+- Χρηματοδοτήστε νοσοκομεία και οργανισμούς συμπαράστασης ατόμων με ασθένειες και ειδικές ανάγκες
+- Χρηματοδοτήστε την ιατρική έρευνα
+- Χρηματοδοτήστε οργανισμούς αρωγής αστέγων και ατόμων που αντιμετωπίζουν προβλήματα επιβίωσης
+- Χρηματοδοτήστε την άμυνα της χώρας
 
 ### <a name="projects"></a>Ποια projects σχετικά με κρυπτονομίσματα και blockchain υπάρχουν στην Ελλάδα και στην Κύπρο;
 
@@ -259,7 +270,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2021-01-02
+Τελευταία ενημέρωση: 2021-01-03
 
 <!-- <div class="posts">
   {% for post in site.posts %}
