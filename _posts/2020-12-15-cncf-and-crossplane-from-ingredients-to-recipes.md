@@ -4,7 +4,6 @@ title: "CNCF and Crossplane From Ingredients to Recipes - Keynote, Crossplane Da
 description: "Cheryl Hung, VP Ecosystem at CNCF, presents at Crossplane Day 2020"
 image: /images/2020-12-15-cncf-and-crossplane-from-ingredients-to-recipes.png
 video: https://www.youtube.com/embed/tw8CMbQ26ZE
-published: false
 tags:
   - Video
   - "2020"
