@@ -8,23 +8,34 @@ permalink: /fpv-shopping-list/
 
 ## FPV
 
-This whole article will be a lengthy read, but the quickest summary possible would be these 3 links:
+This whole article will be a lengthy read, but the first things I will mention are the cheapest options I have found over many, many hours of research of FPV drone gear. The goal is to put on VR goggles, be connected to a quadcopter, and fly around like a bird. The cheapest all-in-one solution I found was this TinyHawk drone which included a pair of very low-end goggles and a controller:
+
+* [$165 Ready-To-Fly TinyHawk with Controller and Goggles](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj)
+
+I was shocked to find a system where all 3 components (the drone, the goggles, and the controller) were included for SO cheap. 
+
+* The goggles do not have a DVR function and the drone does not have a microSD card slot, so you would not be able to record footage with this setup. 
+* You get what you pay for, the controller looks like a gaming console controller and its not a "serious" drone, but can provide a first-experience flying and would be fun.
+* Typically, you buy your drone, goggles, and controller seperately. There are hundreds or thousands of options for that, and to make the process easier I've selected the cheapest/best options if you wanted the real deal for your controller and some better goggles. 
+* By picking a good pair of goggles and a good controller, you are free to buy any drone you want that suits your needs.
+
+Next are the cheapest and best combination of components that I could find to purchase seperately. These are still cheap options, but much better if drones are something you are strongly interested in.
 
 * [$99 FPV DRONE: Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
 * [$219 FPV GOGGLES: Fat Shark Scout](https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20)
 * [$218 FPV CONTROLLER: Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20)
 
-Total $540 before tax. The drone should come with a couple batteries and a charger.
+Total $540 before tax. The drone should come with a couple batteries and a charger. This is a very good controller (professional), the best of the cheaper style of goggles, and a cheapo drone just to have something to fly. More drones are linked in the drone section of this page.
 
 Can be ~$200 cheaper with [$119 FPV GOGGLES: Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) and [$125 FPV CONTROLLER: Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) instead. Total would be $345 with the [$99 Mobula6 drone](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20).
 
-The three items above are a combination of a First-Person-View quad-copter, a UAV Radio (universal, is not included with the drone), and $200 goggles (also not included with the drone) instead of the $650 goggles that pro drone-racers use - the Fat Shark Dominators (links below). I have found that the above links would be the most reasonable getting-started shopping list for FPV.  
+The three items above are a combination of a First-Person-View quad-copter, a drone controller, and $200 goggles (also not included with the drone) instead of the $650 goggles that pro drone-racers use - the Fat Shark Dominators (links below). I have found that the above links would be the most reasonable getting-started shopping list for FPV.  
 
 > If you have time to read more info about drones, the rest of this page covers many other options for the drones and different features you can choose when you are building your own drone. 
 
-Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range VTX (video transmitter). But your controller (UAV Radio) and your FPV Goggles will be able to connect to any FPV drone. That's why I put the real deal for the goggles and controller but a simple, $100 drone (in the "tiny whoop" category of drones) for the beginner/cheap setup. Every time you crash your $400 custom built drone, you risk needing to replace a motor or propellors. The inexpensive and semi-crash-resistant tiny whoop is a great learner's drone.
+Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range Crossfire VTX (video transmitter). But your controller and your FPV Goggles will be able to connect to any FPV drone. That's why I put the real deal for the goggles and controller but a simple, $100 drone (in the "tiny whoop" category of drones) for the beginner/cheap setup. Every time you crash your $400 custom built drone, you risk needing to replace a motor or propellors. The inexpensive and semi-crash-resistant tiny whoop is a great learner's drone.
 
-For the controller I chose the Taranis X9D over the Q X7 because while the Q X7 is $100 cheaper, it doesn't have the feature of simply being able to plug in the controller and charge it. The Q X7 you must buy a battery seperately and charge it which seems like a big pain. The X9D is a good controller that you could use for the [Drone Racing League Simulator game on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/) game or for any drone in real life.
+For the controller I chose the Taranis X9D over the Q X7 because while the Q X7 is $100 cheaper, it doesn't have the feature of simply being able to plug in the controller and charge it. The Q X7 you must buy a battery seperately and charge it which seems like a big pain. The X9D is a good controller that you could use for the [Drone Racing League Simulator game on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/) game, or for any drone in real life.
 
 The Scout and Recon are Fat Shark's budget options compared to their high end goggles. With FPV Goggles, you can connect two pairs to the same video feed when flying and have a spectator watch while you fly, so I plan on getting the cheaper goggles first and upgrading later and keeping my old ones. If I ever were to buy the [$699 DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6) or [$739 Fat Shark HDO2(Dominator) FPV Goggles](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV) it would be cool to have a spare pair of goggles like the [$220 Fat Shark Scout](
 https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V9TDG5G/ref=sr_1_2?tag=juliusakula-20) or [$130 FatShark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) goggles to lend to a friend for a fly-along.
@@ -149,7 +160,7 @@ I think anyone getting started might want to try a pre-built, ready to fly drone
 
 ___
 
-> If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I will earn a comission on any products linked on this page, except for the [Drone Racing League Simulator on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/). If you'd like to add me on Steam and race each other, my Steam "Friend Code" is 43723941. The simulator can be played with a mouse and keyboard, but is best with a real controller such as the [Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20).
+> If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I will earn a comission on any products linked on this page, except for the [Drone Racing League Simulator on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/). If you'd like to race each other on the Drone Sim add me on Steam: my Steam "Friend Code" is 43723941. The simulator can technically be played with a mouse and keyboard, but is best with a real controller such as the [Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20).
 
 ___
 
