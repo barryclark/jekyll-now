@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: isardmiralles.com
+Token: a5140530a9f675649df01994f8ebfaad53488d3dda3935999d9aa2a7ee4eb875
