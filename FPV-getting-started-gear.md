@@ -200,11 +200,15 @@ Different **ready-to-fly racing drones** (batteries not included):
 
 All of this combined, to fly a **cinewhoop** with a gopro mounted: 
 
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/24_cinewhoop.jpg?raw=true" width=300 />
+
 * [$240 iFlight green 3 inch cinewhoop 4S Drone](https://www.amazon.com/iFlight-Green-3inch-CineWhoop-Receiver/dp/B08CN6F6L1/ref=cm_cr_arp_d_product_top?tag=juliusakula-20)
 * [$18 Small 4S Battery (1550mah)](https://www.amazon.com/GOLDBAT-1500mAh-Softcase-Battery-Airplane/dp/B07LGYSGZH/ref=sr_1_6?tag=juliusakula-20)
 * [$15 4S Battery Charger](https://www.amazon.com/Blomiky-14-8V-Battery-Charger-Balance/dp/B07ZD6PZWN?tag=juliusakula-20)
 * [$27 3d printed gopro mount for the drone and GoPro 5/6/7](https://www.amazon.com/iFlight-Adjustable-Mounting-Bumblebee-Hornet-Cinewhoop/dp/B088D59W9W/ref=pd_bxgy_2/134-2264898-1544041?tag=juliusakula-20)
 * [$230 GoPro Hero 7 Black](https://www.amazon.com/GoPro-HERO7-Black-Commerce-Stabilization/dp/B083CNLVN3/ref=sr_1_3?tag=juliusakula-20)
+
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/25_gopro.jpg?raw=true" width=300 />
 
 To get a cinewhoop in the air, you'd need to purchase a controller and goggles, and you'd need to spend $273 on the drone, or close to $530 if you want to add the gopro mount and a gopro to that drone. This cinewhoop with a gopro, the Taranis X9D controller, and Fat Shark Scout goggles altogether is about $970 - about the same budget as the Mavic Air 2 fly more combo - but you can fly inside, do flips and fly FPV using goggles!
 
