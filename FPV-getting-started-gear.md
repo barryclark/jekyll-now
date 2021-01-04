@@ -79,7 +79,7 @@ https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp
 * The Mavic doesn't allow itself to become upside-down (_something that happens halfway into a flip_). My Mavic Air 2 automatically stabilizes very well, and it is simply impossible to do flips. 
 * FPV drones are cheaper, and flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guarunteed to crash your drone **multiple times** per "session", flying freestyle or racing.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/26_drone_pile.jpg?raw=true" style="width:50%"/>
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/26_drone_pile.jpg?raw=true" style="width:240px"/>
 
 * FPV is a different and more advanced category than the photography category. My main goal with the Mavic Air 2 is to not crash it. 
 * It is helpful to understand your goals with drones in order to know which drone is best for you. I was initially surprised to learn that there really is no such thing as a drone that "does it all".
@@ -122,7 +122,7 @@ The next thing needed for an FPV setup are the goggles. Choosing a unit has been
 
 * With no budget, I wouldn't hesitate to get the [DJI Digital FPV Goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon"). Digital FPV (as opposed to Analog FPV) has a much higher range, higher video quality in your goggles, and just seems like the new thing that eventually most people will have (in my opinion). 
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/27_dji_analog_module.jpg?raw=true" description="$15 Analog Module for DJI FPV Goggles" product_aff_link="
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/27_dji_analog_adapter.jpg?raw=true" description="$15 Analog Module for DJI FPV Goggles" product_aff_link="
 https://www.amazon.com/Receiver-Adapter-Digital-Fatshark-RapidFire/dp/B08LMWTBJ9/ref=sr_1_2?tag=juliusakula-20" %}
 
 * There is a [$15 module](https://www.amazon.com/dp/B08LMWTBJ9/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=244f65767a12fb94480c419cec08cf7a&creativeASIN=B08LMWTBJ9 "Analog Receiver Module Adapter Board on Amazon") that you can install into your [DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon") to make them backwards compatible with analog drones, which is absolutely something you should do, unless you exclusively fly drones that you built yourself, each with the $180 DJI Air Unit inside them. It is recommended to get different [different antennas for the DJI goggles](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR "iFlight HD Patch LHCP Directional Antennas on Amazon"). 
@@ -132,17 +132,17 @@ https://www.amazon.com/Receiver-Adapter-Digital-Fatshark-RapidFire/dp/B08LMWTBJ9
 
 * This whole setup would run over $700, just for the goggles part of the FPV setup (controller and drone bought seperately).
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/15_fat_shark_dominator.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/15_fat_shark_dominator.jpg?raw=true" description="$540 Fat Shark HDO "Dominator" Goggles" product_aff_link="https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X" %}
 
-* Fat Shark is another brand option for high-end goggles. Fat Shark seems to be a trusted brand for some time now, and the [$540 Fat Shark HDO "Dominator" Goggles](https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X "Fat Shark Dominator HDO2 FPV Goggles on Amazon") seem to be a very popular choice. I trust they are doing something right.
+* Fat Shark is another brand option for high-end goggles. Fat Shark seems to be a trusted brand for some time now, and the [Fat Shark HDO "Dominator" Goggles](https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X "Fat Shark Dominator HDO2 FPV Goggles on Amazon") seem to be a very popular choice. I trust they are doing something right.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/16_fat_shark_crossfire.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/16_fat_shark_crossfire.jpg?raw=true" description="$740 Fat Shark HDO "Dominator" Goggles With accessories" product_aff_link="https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV" %}
 
-* However, they are not that much cheaper than DJI and it is [$740 with all the accessories](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV "Fat Shark HDO2 FPV Goggles + Module and Antenna on Amazon"), and that doesn't include a [battery](https://www.amazon.com/dp/B0711H4D3K/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=da34ce4891e9e6956c4b3325d39d4a66&creativeASIN=B0711H4D3K "Fat Shark High Capacity Headset Battery on Amazon"). 
+* However, they are not that much cheaper than DJI and it is over $700 [with all the accessories](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV "Fat Shark HDO2 FPV Goggles + Module and Antenna on Amazon"), and that doesn't include a [battery](https://www.amazon.com/dp/B0711H4D3K/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=da34ce4891e9e6956c4b3325d39d4a66&creativeASIN=B0711H4D3K "Fat Shark High Capacity Headset Battery on Amazon"). 
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/17_inside_high_end.jpg?raw=true" width=300 />
 
-* For additional reading (please come back!), [this article](https://blog.dronetrest.com/everything-you-need-to-know-about-buying-fpv-goggles/) describes the difference between box goggles and low profile goggles. I think the new Fat Shark box goggles (The Recon and Scout) don't look so bad. The low profile goggles seems like everything would be too close to my eye balls and I just feel like I might get nauseous with those.
+* For additional reading (please come back!), [this article](https://blog.dronetrest.com/everything-you-need-to-know-about-buying-fpv-goggles/) describes the difference between box goggles and low profile goggles. I think the new budget Fat Shark box goggles (The Recon and Scout) don't look so bad. The low profile goggles seems like everything would be too close to my eye balls and I just feel like I might get nauseous with those, and the low profile goggles are very expensive.
 
 <img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/18_inside_box.jpg?raw=true" width=300 />
 
@@ -152,9 +152,7 @@ ___
 
 #### My #1 reccomendation for a cheap, beginner, ready-to-fly drone would be:
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/2_mobula6.jpg?raw=true" width=300 />
-
-* [$99 FPV TINY-WHOOP DRONE: Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/2_mobula6.jpg?raw=true" description="$99 FPV TINY-WHOOP: Mobula6" product_aff_link="https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20" %}
 
 _Tiny Whoops_**:**
 
@@ -177,50 +175,36 @@ Disadvantages of tiny-whoop
 
 ___
 
-> There are so, so many options for drones, and build-it-yourself drones are the way to go for performace. Building drones yourself involves soldering wires and is a pretty involved process, but not too much for a resourceful person. You'd need to watch tutorials on soldering if you've never done that before. There is definetly a youtube rabbit hole for building drones. 
+> There are so, so many options for drones, and build-it-yourself drones are the way to go for performace. For a beginner I might recommend a ready-to-fly(RTF), pre-built drone. Building drones yourself involves soldering wires and is a pretty involved process, but not too much for a resourceful person. You'd need to watch tutorials on soldering if you've never done that before. There is definetly a youtube rabbit hole for building drones.
 
-#### While I can't tell you from experience the best way to build a drone from scratch (There are youtube links below), I can show you some other very appealing ready-to-fly drones besides the Mobula6.
+#### Different **ready-to-fly racing drones** (batteries not included): 
 
-Different **ready-to-fly racing drones** (batteries not included): 
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/19_drone1.jpg?raw=true" description="$240 Emax Hawk Pro 5\" 6s battery class Racing Quad" product_aff_link="](https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20" %}
 
+* ^ (4S battery choose 2400KV / 6S battery choose 1700KV) The 6S version would be very fast.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/19_drone1.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/20_drone2.jpg?raw=true" description="$190 ARRIS X220 5\" Racing Drone, 4S battery class" product_aff_link="https://www.amazon.com/ARRIS-Quadcopter-Racing-Stardard-Version/dp/B072NZJK9L/ref=sr_1_8?tag=juliusakula-20" %}
 
-* [$240 Emax Hawk Pro 5" 6s battery class Racing Quad](https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20) (4S battery choose 2400KV / 6S battery choose 1700KV) The 6S version would be very fast.
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/21_drone3.jpg?raw=true" description="$250 iFlight Nazgul5 V2 5\", 6S battery class with Crossfire" product_aff_link="https://www.amazon.com/iFlight-Nazgul5-Freestyle-Quadcopter-Crossfire/dp/B08KXWM9S9/ref=sr_1_47?tag=juliusakula-20" %}
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/20_drone2.jpg?raw=true" width=300 />
+* Crossfire makes this drone have a much longer range.
 
-* [$190 ARRIS X220 5" Racing Drone, 4S battery class](https://www.amazon.com/ARRIS-Quadcopter-Racing-Stardard-Version/dp/B072NZJK9L/ref=sr_1_8?tag=juliusakula-20)
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/22_drone4combo.jpg?raw=true" description="$400 ARRIS Dazzle 5 Inch, 4S battery class FPV Racing Drone (comes with Q X7 Controller)" product_aff_link="https://www.amazon.com/ARRIS-Quadcopter-Radiolink-Transmitter-Flycolor/dp/B074TDGSMQ/ref=sr_1_52?tag=juliusakula-20" %}
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/21_drone3.jpg?raw=true" width=300 />
+#### Cinewhoop Drones
 
-* [$250 iFlight Nazgul5 V2 5inch, 6S battery class FPV Racing Drone Freestyle Quadcopter BNF Built with TBS Crossfire Nano Rx](https://www.amazon.com/iFlight-Nazgul5-Freestyle-Quadcopter-Crossfire/dp/B08KXWM9S9/ref=sr_1_47?tag=juliusakula-20) Crossfire makes this drone have a much longer range.
+The four links below combined, to fly this **cinewhoop** with a gopro mounted: 
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/22_drone4combo.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/24_cinewhoop.jpg?raw=true" description="$240 iFlight green 3 inch cinewhoop 4S Drone" product_aff_link="https://www.amazon.com/iFlight-Green-3inch-CineWhoop-Receiver/dp/B08CN6F6L1/ref=cm_cr_arp_d_product_top?tag=juliusakula-20" %}
 
-* [$400 ARRIS Dazzle 5 Inch, 4S battery class FPV Racing Drone (comes with Q X7 Controller)](https://www.amazon.com/ARRIS-Quadcopter-Radiolink-Transmitter-Flycolor/dp/B074TDGSMQ/ref=sr_1_52?tag=juliusakula-20)
-
-All of this combined, to fly a **cinewhoop** with a gopro mounted: 
-
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/24_cinewhoop.jpg?raw=true" width=300 />
-
-* [$240 iFlight green 3 inch cinewhoop 4S Drone](https://www.amazon.com/iFlight-Green-3inch-CineWhoop-Receiver/dp/B08CN6F6L1/ref=cm_cr_arp_d_product_top?tag=juliusakula-20)
+* [$240 Pre-built 3" cinewhoop drone](https://www.amazon.com/iFlight-Green-3inch-CineWhoop-Receiver/dp/B08CN6F6L1/ref=cm_cr_arp_d_product_top?tag=juliusakula-20)
 * [$18 Small 4S Battery (1550mah)](https://www.amazon.com/GOLDBAT-1500mAh-Softcase-Battery-Airplane/dp/B07LGYSGZH/ref=sr_1_6?tag=juliusakula-20)
 * [$15 4S Battery Charger](https://www.amazon.com/Blomiky-14-8V-Battery-Charger-Balance/dp/B07ZD6PZWN?tag=juliusakula-20)
 * [$27 3d printed gopro mount for the drone and GoPro 5/6/7](https://www.amazon.com/iFlight-Adjustable-Mounting-Bumblebee-Hornet-Cinewhoop/dp/B088D59W9W/ref=pd_bxgy_2/134-2264898-1544041?tag=juliusakula-20)
-* [$230 GoPro Hero 7 Black](https://www.amazon.com/GoPro-HERO7-Black-Commerce-Stabilization/dp/B083CNLVN3/ref=sr_1_3?tag=juliusakula-20)
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/25_gopro.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/25_gopro.jpg?raw=true" description="$230 GoPro Hero 7 Black" product_aff_link="https://www.amazon.com/GoPro-HERO7-Black-Commerce-Stabilization/dp/B083CNLVN3/ref=sr_1_3?tag=juliusakula-20" %}
 
 To get a cinewhoop in the air, you'd need to purchase a controller and goggles, and you'd need to spend $273 on the drone, or close to $530 if you want to add the gopro mount and a gopro to that drone. This cinewhoop with a gopro, the Taranis X9D controller, and Fat Shark Scout goggles altogether is about $970 - about the same budget as the Mavic Air 2 fly more combo - but you can fly inside, do flips and fly FPV using goggles!
-
-#### Here are some youtube videos which can be food for thought as you consider _building your own drone._
-
-* DRONE SIMULATOR!! [Nurk FPV "The First things you should buy when getting into FPV"](https://www.youtube.com/watch?v=J6NSeg-rD0c&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=1&t=7s). - About two minutes into the video he talks about buying a controller first, and playing the drone simulator before even buying a drone. Playing the drone simulator can make you a good drone pilot before you ever fly a real drone. Find the Drone Racing Simulator game on Steam.
-* YOUR FIRST DRONE BUILD! [Joshua Bardwell - "FPV Drone Budget Build Full Tutorial - Part 1 - Assembly"
-](https://www.youtube.com/watch?v=FEittnx42Zc&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=4). - This video's description contains SO MANY links... soldering tutorials and has links to soldering irons to buy and also every drone component in the video, you can buy and follow along to the video and viola you now know how to build drones. I think this is an excellent getting started series. Not very thrilling, but informative and educational.
-* Building a Drone with $99 to spend [UAVFutures - "Build a PRO FPV Racing Drone for ONLY $99 Full guide - 2018 UAVFUTURES $99 Build"](https://www.youtube.com/watch?v=GFNGUDT_9_c&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=5&t=381s)
-* Building a drone with $200 to spend [$200 FPV Drone Build & Set Up! - The Rotor Riot Budget Build](https://www.youtube.com/watch?v=ZyQOkRjt_h0&list=PL8PM0sBqDJTHhTA9U-Q8c13RHr7gX3S54&index=3)
 
 ___
 
@@ -237,7 +221,7 @@ ___
 
 > If you use any of the links on this page and purchase a drone/controller/goggles of your own, thank you! I will earn a comission on any products linked on this page, except for the [Drone Racing League Simulator on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/). If you'd like to race each other on the Drone Simulator add me on Steam: my Steam "Friend Code" is 43723941. The simulator can technically be played with a mouse and keyboard, but would be best with a real controller such as the [Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20).
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/23_drl-sim.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/23_drl-sim.jpg?raw=true" description="Drone Racing League Simulator on Steam" product_aff_link="https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator" %}
 
 ___
 
