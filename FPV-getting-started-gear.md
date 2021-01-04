@@ -103,7 +103,7 @@ There are a few components to an FPV setup. The first that comes to mind for me 
 
 * This controller is one of many controllers that are fully integrated with the Drone Racing Simulator, so I can practice flying my drone without flying my drone - and risking consequences of flying a physical drone in the real world (crashes that damage the drone). The Drone Simulator uses real physics for its game engine - it is a game on PC, it connects to any real Drone Controller to the video game and with using real physics, it feels like almost the real thing, especially when you also have your FPV Goggles connected to the game as well. 
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/23_drl-sim.jpg.jpg?raw=true" description="Drone Racing League Simulator on Steam" product_aff_link="https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/23_drl-sim.jpg?raw=true" description="Drone Racing League Simulator on Steam" product_aff_link="https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/" %}
 
 * The Drone Simulator is an excellent way to practice. You could virtually practice flying your tiny-whoop or practice flying a racing drone with your real controller. You can also virtually fly at night and when it is cloudy, allowing the option to practice 24/7. This controller connects to any drone as well as any flight goggles. The [Taranis X9D](https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76 "FrSky Taranis X9D Plus on Amazon") is fully featured... My favorite feature of the X9D over the Q X7 is that you can simply plug in the controller to charge it, whereas the Q X7 you must remove the battery and charge/swap the batteries for the remote control. That sounds like way too much of a pain, and the Q X7 remote doesn't even come with it's own battery. 
 * Many racers are using Taranis and they have has been around a long time - there are many mods available for it and there's a huge community to support their controllers. 
@@ -127,12 +127,11 @@ https://www.amazon.com/Receiver-Adapter-Digital-Fatshark-RapidFire/dp/B08LMWTBJ9
 
 * There is a [$15 module](https://www.amazon.com/dp/B08LMWTBJ9/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=244f65767a12fb94480c419cec08cf7a&creativeASIN=B08LMWTBJ9 "Analog Receiver Module Adapter Board on Amazon") that you can install into your [DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon") to make them backwards compatible with analog drones, which is absolutely something you should do, unless you exclusively fly drones that you built yourself, each with the $180 DJI Air Unit inside them. It is recommended to get different [different antennas for the DJI goggles](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR "iFlight HD Patch LHCP Directional Antennas on Amazon"). 
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/13_DJI_patch_anteanna.jpg?raw=true" description="$55 Patch Antenna for DJI FPV Goggles" product_aff_link="https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR" %}
-
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/13_DJI_patch_antaenna.jpg?raw=true" description="$55 Patch Antenna for DJI FPV Goggles" product_aff_link="https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR" %}
 
 * This whole setup would run over $700, just for the goggles part of the FPV setup (controller and drone bought seperately).
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/15_fat_shark_dominator.jpg?raw=true" description="$540 Fat Shark HDO "Dominator" Goggles" product_aff_link="https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/15_fat_shark_dominator.jpg?raw=true" description="$540 Fat Shark HDO \"Dominator\" Goggles" product_aff_link="https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X" %}
 
 * Fat Shark is another brand option for high-end goggles. Fat Shark seems to be a trusted brand for some time now, and the [Fat Shark HDO "Dominator" Goggles](https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X "Fat Shark Dominator HDO2 FPV Goggles on Amazon") seem to be a very popular choice. I trust they are doing something right.
 
@@ -179,7 +178,7 @@ ___
 
 #### Different **ready-to-fly racing drones** (batteries not included): 
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/19_drone1.jpg?raw=true" description="$240 Emax Hawk Pro 5\" 6s battery class Racing Quad" product_aff_link="](https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/19_drone1.jpg?raw=true" description="$240 Emax Hawk Pro 5\" 6s battery class Racing Quad" product_aff_link="https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20" %}
 
 * ^ (4S battery choose 2400KV / 6S battery choose 1700KV) The 6S version would be very fast.
 
