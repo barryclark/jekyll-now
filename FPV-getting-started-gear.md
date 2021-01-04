@@ -34,11 +34,11 @@ Total $540 before tax. The drone should come with a couple batteries and a charg
 
 The three items above are a combination of a (1) VR Goggles, (2) a drone with a camera that connects to your goggles, and (3) a radio controller to fly the drone. I have found that the above products would be basically the most reasonable (cheapest while still being good quality) getting-started shopping list for FPV droning. The controller above has a charging port which allows you to charge it rather than deal with removing the battery from the controller to charge it, a little more expensive but I think worth it.
 
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20" %}
+
 * Can be ~$200 cheaper with [$125 FPV CONTROLLER: Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) and [$119 FPV GOGGLES: Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) instead. 
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="(3/3) $125 FPV CONTROLLER: Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20" %}
-
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/5_fat_shark_recon.jpg?raw=true" description="$119 FPV GOGGLES: Fat Shark Recon" product_aff_link="https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/5_fat_shark_recon.jpg?raw=true" description="Fat Shark Recon" product_aff_link="https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20" %}
 
 * Total would be $345 with the same cheap Mobula6 drone. With either of theses setups ($345-$540), you would be able to record footage in two ways: with the goggle's DVR function, or you can put a microSD card into the drone.
 
@@ -48,17 +48,16 @@ Drone setups become a lot more expensive when you try to make them capable of go
 
 For the controller I chose the Taranis X9D over the Q X7 because while the Q X7 is $100 cheaper, it doesn't have the feature of simply being able to plug in the controller and charge it. The Q X7 you must buy a battery seperately and charge it which seems like a big pain. The X9D is a good controller that you could use for the [Drone Racing League Simulator game on Steam](https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/) game, or for any drone in real life.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/3_fat_shark_scout.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/3_fat_shark_scout.jpg?raw=true" description="$219 Fat Shark Scout" product_aff_link="https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20" %}
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/5_fat_shark_recon.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/5_fat_shark_recon.jpg?raw=true" description="$119 Fat Shark Recon" product_aff_link="https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20" %}
 
 The Scout and Recon are Fat Shark's budget options compared to their high end goggles. With FPV Goggles, you can connect two pairs to the same video feed when flying and have a spectator watch while you fly, so I plan on getting the cheaper goggles first and upgrading later and keeping my old ones. If I ever were to buy the [$699 DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6) or [$739 Fat Shark HDO2(Dominator) FPV Goggles](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV) it would be cool to have a spare pair of goggles like the [$220 Fat Shark Scout](
 https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V9TDG5G/ref=sr_1_2?tag=juliusakula-20) or [$130 FatShark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) goggles to lend to a friend for a fly-along.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/12_DJI_digital_fpv.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/12_DJI_digital_fpv.jpg?raw=true" description="$699 DJI Digital FPV goggles" product_aff_link="https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6" %}
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/16_fat_shark_crossfire.jpg?raw=true" width=300 />
-
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/16_fat_shark_crossfire.jpg?raw=true" description="$739 Fat Shark HDO2(Dominator) FPV Goggles with Crossfire" product_aff_link="https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV" %}
 
 ___
 
@@ -68,17 +67,22 @@ ___
 
 ### Goals
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/8_mavic_air_2.jpg?raw=true" width=300 />
+___
+
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/8_mavic_air_2.jpg?raw=true" description="$The Mavic Air 2" product_aff_link="https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp/B08HJMM93P/ref=sr_1_4?tag=juliusakula-20" %}
 
 * I am **extremely** interested in flying **Freestyle FPV** and **Racing**, so I have put a lot of research into how to get started with that. 
 * [The Mavic Air 2](
-https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp/B08HJMM93P/ref=sr_1_4?tag=juliusakula-20) is an awesome drone for what it was designed for - [cinematic footage and photography (my blog post)](https://murdockfpv.github.io/Landscape-Photography/). I don't consider it an FPV Drone because you do not wear FPV goggles. 
+https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp/B08HJMM93P/ref=sr_1_4?tag=juliusakula-20) is an awesome drone for what it was designed for - [cinematic footage and photography (my blog post)](https://murdockfpv.github.io/Landscape-Photography/). It is not an FPV Drone because you do not wear FPV goggles. 
+
+<a href="https://click.dji.com/AM3xWWSBapfPfncvR9ggBg?pm=ad_image" target=_blank><img src="https://u.djicdn.com/uploads/ad_image_file/file/4196/480_70_US_CA.jpg"></a>
+
 * The world of freestyle FPV and drone racing is a completely different world compared to the type of flying a Mavic does. Your goal as an FPV pilot is to get as close to your subjects as possible and do flips and acrobatics. 
 * You may have seen [JohnnyFPV](https://www.youtube.com/watch?v=jJyPa7KIu6I&start=317 "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible to do with the Mavic. 
 * The Mavic doesn't allow itself to become upside-down (_something that happens halfway into a flip_). My Mavic Air 2 automatically stabilizes very well, and it is simply impossible to do flips. 
 * FPV drones are cheaper, and flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guarunteed to crash your drone **multiple times** per "session", flying freestyle or racing.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/10-johnny-fpv-redbull-brokendrone.png?raw=true" width=300 />
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/26_drone_pile?raw=true" width=300 />
 
 * FPV is a different and more advanced category than the photography category. My main goal with the Mavic Air 2 is to not crash it. 
 * It is helpful to understand your goals with drones in order to know which drone is best for you. I was initially surprised to learn that there really is no such thing as a drone that "does it all".
