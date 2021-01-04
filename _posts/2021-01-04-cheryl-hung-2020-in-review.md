@@ -2,7 +2,7 @@
 layout: post
 title: "My personal favourite moments of 2020 and what I've learned going into 2021"
 description: "A review of 2020 from Cheryl Hung, VP Ecosystem at CNCF"
-image: /images/2020-05-18-were-all-mad-here-the-state-of-cloud-native-software.jpeg
+image: /images/2020-02-27-cherylhung-1.JPG
 tags:
   - Photos
   - Video
