@@ -12,7 +12,7 @@ _written by Justin Murdock, on Jan 3, 2021_
 
 This whole article will be a lengthy read, but the first things I will mention are the cheapest options that I have found after many, many hours of FPV drone gear research. The goal is to put on VR goggles, be connected to a quadcopter, and fly around like a bird. The cheapest all-in-one solution I found was this TinyHawk drone which included a pair of very low-end goggles and a controller:
 
-{% include image.html url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/1_emax_rtf.jpg?raw=true" description="EMAX TinyHawk Ready-To-Fly" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/1_emax_rtf.jpg?raw=true" description="EMAX TinyHawk Ready-To-Fly" product_aff_link="https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj" %}
 
 * [$165 Ready-To-Fly TinyHawk with Controller and Goggles](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj)
 
