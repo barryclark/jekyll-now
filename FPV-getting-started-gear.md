@@ -69,7 +69,7 @@ ___
 
 ___
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/8_mavic_air_2.jpg?raw=true" description="$The Mavic Air 2" product_aff_link="https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp/B08HJMM93P/ref=sr_1_4?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/8_mavic_air_2.jpg?raw=true" description="The Mavic Air 2" product_aff_link="https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp/B08HJMM93P/ref=sr_1_4?tag=juliusakula-20" %}
 
 * I am **extremely** interested in flying **Freestyle FPV** and **Racing**, so I have put a lot of research into how to get started with that. 
 * [The Mavic Air 2](
@@ -95,21 +95,22 @@ https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp
 There are a few components to an FPV setup. The first that comes to mind for me is the controller, also known as the _radio_. 
 
 * Typically, an **FPV controller** is different than the Mavic-style controller, because the left stick is not centered. On FPV the left up-and-down stick movement controls _throttle_**, not** _altitude_, so by default the left stick on an FPV controller stays all the way down because the throttle defaults to off. 
-* The left stick on the Mavic controller controls the _altitude_ and the stick centers itself in the middle similar to a joystick on an Xbox/PS controller. You can move the stick up or down to increase or decrease altitude, respectively, it is very simple. An FPV drone controller's left stick would not reset to the center, but rather would snap to the bottom and would control _throttle_ rather than _altitude_.
-* At any rate, after much research, the [FrSky Taranis X9D](https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76 "FrSky Taranis X9D Plus on Amazon") is the controller I think I would purchase.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/4_taranis_x9d.jpg?raw=true" width=300 />
+* The left stick on the Mavic controller controls the _altitude_ and the stick centers itself in the middle similar to a joystick on an Xbox/PS controller. You can move the stick up or down to increase or decrease altitude, respectively, it is very simple. An FPV drone controller's left stick would not reset to the center, but rather would snap to the bottom and would control _throttle_ rather than _altitude_.
+* The [FrSky Taranis X9D](https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76 "FrSky Taranis X9D Plus on Amazon") is the controller I think I would purchase.
+
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/4_taranis_x9d.jpg?raw=true" description="$219 FrSky Taranis X9D" product_aff_link="https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76" %}
 
 * This controller is one of many controllers that are fully integrated with the Drone Racing Simulator, so I can practice flying my drone without flying my drone - and risking consequences of flying a physical drone in the real world (crashes that damage the drone). The Drone Simulator uses real physics for its game engine - it is a game on PC, it connects to any real Drone Controller to the video game and with using real physics, it feels like almost the real thing, especially when you also have your FPV Goggles connected to the game as well. 
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/23_drl-sim.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/23_drl-sim.jpg.jpg?raw=true" description="Drone Racing League Simulator on Steam" product_aff_link="https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/" %}
 
-* The Drone Simulator is an excellent way to practice. You could virtually practice flying your tiny-whoop or practice flying a racing drone with your real controller. You can also virtually fly at night and when it is cloudy, allowing the option to practice 24/7. This controller connects to any drone as well as any flight goggles. The [$220 Taranis X9D](https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76 "FrSky Taranis X9D Plus on Amazon") is fully featured... My favorite feature of the X9D over the Q X7 is that you can simply plug in the controller to charge it, whereas the Q X7 you must remove the battery and charge/swap the batteries for the remote control. That sounds like way too much of a pain, and the Q X7 remote doesn't even come with it's own battery. 
+* The Drone Simulator is an excellent way to practice. You could virtually practice flying your tiny-whoop or practice flying a racing drone with your real controller. You can also virtually fly at night and when it is cloudy, allowing the option to practice 24/7. This controller connects to any drone as well as any flight goggles. The [Taranis X9D](https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76 "FrSky Taranis X9D Plus on Amazon") is fully featured... My favorite feature of the X9D over the Q X7 is that you can simply plug in the controller to charge it, whereas the Q X7 you must remove the battery and charge/swap the batteries for the remote control. That sounds like way too much of a pain, and the Q X7 remote doesn't even come with it's own battery. 
 * Many racers are using Taranis and they have has been around a long time - there are many mods available for it and there's a huge community to support their controllers. 
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="$120 Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9" %}
 
-* The [$120 Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9 "FrSky Taranis Q X7 on Amazon") is cheaper but does not include a battery or have a simple plug-to-recharge function which made me feel like the extra $100 for the X9D was worth it for ease-of-use. There are several brands for controllers I just get the impression from Taranis and the silver X9D especially that that is a serious down-to-business drone controller.
+* The [Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9 "FrSky Taranis Q X7 on Amazon") is cheaper but does not include a battery or have a simple plug-to-recharge function which made me feel like the extra $100 for the X9D was worth it for ease-of-use. There are several brands for controllers I just get the impression from Taranis and the silver X9D especially that that is a serious down-to-business drone controller.
 
 ___
 
@@ -117,12 +118,17 @@ ___
 
 The next thing needed for an FPV setup are the goggles. Choosing a unit has been pretty tough for me, but I have discovered the contenders by researching goggles used by racing world championship winners.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/12_DJI_digital_fpv.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/12_DJI_digital_fpv.jpg?raw=true" description="$700 DJI Digital FPV Goggles" product_aff_link="https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6" %}
 
-* With no budget, I wouldn't hesitate to get the [$700 DJI Digital FPV Goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon"). Digital FPV (as opposed to Analog FPV) has a much higher range, higher video quality in your goggles, and just seems like the new thing that eventually most people will have (in my opinion). 
-* There is a [$15 module](https://www.amazon.com/dp/B08LMWTBJ9/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=244f65767a12fb94480c419cec08cf7a&creativeASIN=B08LMWTBJ9 "Analog Receiver Module Adapter Board on Amazon") that you can install into your [DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon") to make them backwards compatible with analog drones, which is absolutely something I would do, and I would want to get [different antennas](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR "iFlight HD Patch LHCP Directional Antennas on Amazon"). 
+* With no budget, I wouldn't hesitate to get the [DJI Digital FPV Goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon"). Digital FPV (as opposed to Analog FPV) has a much higher range, higher video quality in your goggles, and just seems like the new thing that eventually most people will have (in my opinion). 
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/14_omni_anteanna.jpg?raw=true" width=300 />
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/27_dji_analog_module.jpg?raw=true" description="$15 Analog Module for DJI FPV Goggles" product_aff_link="
+https://www.amazon.com/Receiver-Adapter-Digital-Fatshark-RapidFire/dp/B08LMWTBJ9/ref=sr_1_2?tag=juliusakula-20" %}
+
+* There is a [$15 module](https://www.amazon.com/dp/B08LMWTBJ9/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=244f65767a12fb94480c419cec08cf7a&creativeASIN=B08LMWTBJ9 "Analog Receiver Module Adapter Board on Amazon") that you can install into your [DJI Digital FPV goggles](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6 "DJI Digital HD FPV Goggles on Amazon") to make them backwards compatible with analog drones, which is absolutely something you should do, unless you exclusively fly drones that you built yourself, each with the $180 DJI Air Unit inside them. It is recommended to get different [different antennas for the DJI goggles](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR "iFlight HD Patch LHCP Directional Antennas on Amazon"). 
+
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/13_DJI_patch_anteanna.jpg?raw=true" description="$55 Patch Antenna for DJI FPV Goggles" product_aff_link="https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR" %}
+
 
 * This whole setup would run over $700, just for the goggles part of the FPV setup (controller and drone bought seperately).
 
