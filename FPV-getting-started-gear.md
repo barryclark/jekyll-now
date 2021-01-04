@@ -138,12 +138,11 @@ The next thing needed for an FPV setup are the goggles. Choosing a unit has been
 
 * However, they are not that much cheaper than DJI and it is [$740 with all the accessories](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV "Fat Shark HDO2 FPV Goggles + Module and Antenna on Amazon"), and that doesn't include a [battery](https://www.amazon.com/dp/B0711H4D3K/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=da34ce4891e9e6956c4b3325d39d4a66&creativeASIN=B0711H4D3K "Fat Shark High Capacity Headset Battery on Amazon"). 
 
-
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/18_inside_box.jpg?raw=true" width=300 />
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/17_inside_high_end.jpg?raw=true" width=300 />
 
 * For additional reading (please come back!), [this article](https://blog.dronetrest.com/everything-you-need-to-know-about-buying-fpv-goggles/) describes the difference between box goggles and low profile goggles. I think the new Fat Shark box goggles (The Recon and Scout) don't look so bad. The low profile goggles seems like everything would be too close to my eye balls and I just feel like I might get nauseous with those.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/17_inside_high_end.jpg?raw=true" width=300 />
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/18_inside_box.jpg?raw=true" width=300 />
 
 ___
 
