@@ -12,6 +12,8 @@ _written by Justin Murdock, on Jan 3, 2021_
 
 This whole article will be a lengthy read, but the first things I will mention are the cheapest options that I have found after many, many hours of FPV drone gear research. The goal is to put on VR goggles, be connected to a quadcopter, and fly around like a bird. The cheapest all-in-one solution I found was this TinyHawk drone which included a pair of very low-end goggles and a controller:
 
+![TinyHawk Drone](https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/1_emax_rtf.jpg?raw=true)
+
 * [$165 Ready-To-Fly TinyHawk with Controller and Goggles](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj)
 
 I was shocked to find a system where all 3 components (the drone, the goggles, and the controller) were included for that price. 
@@ -22,8 +24,16 @@ I was shocked to find a system where all 3 components (the drone, the goggles, a
 
 Next are the cheapest and best combination of components that I could find to purchase seperately. These are still cheap options, but much better if drones are something you are strongly interested in.
 
+![Mobula Drone](https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/2_mobula6.jpg?raw=true)
+
 * [$99 FPV DRONE: Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
+
+![Goggles Fat Shark Scout](https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/3_fat_shark_scout.jpg?raw=true)
+
 * [$219 FPV GOGGLES: Fat Shark Scout](https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20)
+
+![CONTROLLER: Taranis X9D](https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/4_taranis_x9d.jpg?raw=true)
+
 * [$218 FPV CONTROLLER: Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20)
 
 Total $540 before tax. The drone should come with a couple batteries and a charger. This is a very good controller (professional), the best of the cheaper style of goggles(box goggle, it has DVR), and a cheapo drone just to have something to fly. More drones are linked in the drone section of this page. You would probably want a good controller and goggles before you got a good drone, so flying a starter drone - a 1S battery class tiny drone - I think is a good move.
