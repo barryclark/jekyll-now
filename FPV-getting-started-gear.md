@@ -79,7 +79,7 @@ https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp
 * The Mavic doesn't allow itself to become upside-down (_something that happens halfway into a flip_). My Mavic Air 2 automatically stabilizes very well, and it is simply impossible to do flips. 
 * FPV drones are cheaper, and flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guarunteed to crash your drone **multiple times** per "session", flying freestyle or racing.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/26_drone_pile?raw=true" style="width:50%"/>
+<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/26_drone_pile.jpg?raw=true" style="width:50%"/>
 
 * FPV is a different and more advanced category than the photography category. My main goal with the Mavic Air 2 is to not crash it. 
 * It is helpful to understand your goals with drones in order to know which drone is best for you. I was initially surprised to learn that there really is no such thing as a drone that "does it all".
