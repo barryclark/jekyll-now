@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+// import VueRouter from 'vue-router'
 import VueTailwind from 'vue-tailwind'
+import router from './router.js';
 
 import 'materialize-css/dist/css/materialize.min.css'
 import 'material-design-icons/iconfont/material-icons.css'
@@ -11,6 +13,6 @@ import settings from './theme.js'
 Vue.use(VueTailwind, settings);
 
 new Vue({
-  el: "#app",
+  router,
   render: h => h(App)
-});
+}).$mount('#app-container');

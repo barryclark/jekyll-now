@@ -15,11 +15,31 @@
       </div>
       <div class="col s8 flex justify-end">
         <ul class="col valign-wrapper">
-          <li>スタッフ紹介</li>
-          <li>メンバー募集</li>
-          <li>開催の様子</li>
-          <li>ご支援のお願い</li>
-          <li>お問い合わせ</li>
+          <li>
+            <router-link to="/staffs">
+              スタッフ紹介
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/members">
+              メンバー募集
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/events">
+              開催の様子
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/support">
+              ご支援のお願い
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/contact">
+              お問い合わせ
+            </router-link>
+          </li>
           <li>
             <a href="https://lin.ee/vhWQhPP">
               <img
@@ -78,12 +98,32 @@
             class="menu"
             v-show="ActiveBtn"
           >
-            <ul>
-              <li>スタッフ紹介</li>
-              <li>メンバー募集</li>
-              <li>開催の様子</li>
-              <li>ご支援のお願い</li>
-              <li>お問い合わせ</li>
+            <ul id="test">
+              <li>
+                <a href="/staffs">
+                  スタッフ紹介
+                </a>
+              </li>
+              <li>
+                <router-link to="/members">
+                  メンバー募集
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/events">
+                  開催の様子
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/support">
+                  ご支援のお願い
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/contact">
+                  お問い合わせ
+                </router-link>
+              </li>
               <li>
                 <a href="https://lin.ee/vhWQhPP" style="margin-left: -30px;">
                   <img
@@ -111,7 +151,6 @@ export default {
       ActiveBtn: false,
     };
   },
-  name: "HelloWorld",
   props: {
     Small: Number,
   },
@@ -122,7 +161,7 @@ export default {
       } else {
         this.smallSize = false;
       }
-    },
+    }
   },
   created() {
     window.addEventListener("resize", this.handleResize);
