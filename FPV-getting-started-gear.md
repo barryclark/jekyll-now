@@ -177,9 +177,8 @@ ___
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/22_drone4combo.jpg?raw=true" description="$400 ARRIS Dazzle 5 Inch, 4S battery class FPV Racing Drone (comes with Q X7 Controller)" product_aff_link="https://www.amazon.com/ARRIS-Quadcopter-Radiolink-Transmitter-Flycolor/dp/B074TDGSMQ/ref=sr_1_52?tag=juliusakula-20" %}
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/28_air_unit_drone.jpg?raw=true" description="$475 iFlight Titan XL5 5 inch, 6S battery class with DJI Digital FPV Air Unit, GPS & GoPro mount" product_aff_link="
-https://www.amazon.com/iFlight-Titan-Adjustable-Camera-Protector/dp/B08J3VTLY4?tag=juliusakula-20" %}
-* The "air unit" that connects this drone to the DJI goggles is $180, which is what makes the drone itself that much more expensive. The video quality and range is next-level.
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/28_air_unit_drone.jpg?raw=true" description="$475 iFlight Titan XL5 5 inch, 6S battery class with DJI Digital FPV Air Unit, GPS & GoPro mount" product_aff_link="https://www.amazon.com/iFlight-Titan-Adjustable-Camera-Protector/dp/B08J3VTLY4?tag=juliusakula-20" %}
+* The "air unit" that connects this drone to the DJI goggles is $180, which is what makes the drone itself that much more expensive. The video feed quality and range is next-level.
 
 ### Cinewhoop Drones
 
