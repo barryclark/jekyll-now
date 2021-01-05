@@ -8,7 +8,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img class="img" src="../../assets/card_2.png">
+              <img class="carousel-img" src="../../assets/card_2.png">
             </div>
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 text-center'>
@@ -22,7 +22,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img class="img" src="https://lh3.googleusercontent.com/lDPrGvYT1exvQLOKIhcZvgAmIV3OUhaFHgNvUlEluJouA7AyeUuqr8Zf7Kv2KxROM6dWzuLLGharLA6piMPuYzCUaRu_iVVe5_9KedXLWo-0J6PsYzLTnp6hwoWOgDAuUDgXxNeOXA=w2400">
+              <img class="carousel-img" src="https://lh3.googleusercontent.com/lDPrGvYT1exvQLOKIhcZvgAmIV3OUhaFHgNvUlEluJouA7AyeUuqr8Zf7Kv2KxROM6dWzuLLGharLA6piMPuYzCUaRu_iVVe5_9KedXLWo-0J6PsYzLTnp6hwoWOgDAuUDgXxNeOXA=w2400">
             </div>
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 text-center'>
@@ -36,7 +36,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img class="img" src="../../assets/card_3.jpg">
+              <img class="carousel-img" src="../../assets/card_3.jpg">
             </div>
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 text-center'>
@@ -61,8 +61,8 @@ main { width: 100%; }
   opacity: 0.8;
   width: 640px;
 }
-.img {
-  height: 40vh;
+.carousel-img {
+  height: 28vh;
 }
 .sixth-container {
   display: flex;

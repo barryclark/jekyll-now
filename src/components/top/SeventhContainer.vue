@@ -5,8 +5,8 @@
         初めての方へ
       </t-tag>
       <div class="flex row">
-        <div class="col s12 m7">
-          <div class="card">
+        <div class="col s12 m5">
+          <div class="card m5">
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
                 パソコンの準備
@@ -18,8 +18,8 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m7">
-          <div class="card">
+        <div class="col s12 m5">
+          <div class="card m5">
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
                 LINE
@@ -33,8 +33,8 @@
         </div>
       </div>
       <div class="flex row">
-        <div class="col s12 m7">
-          <div class="card">
+        <div class="col s12 m5">
+          <div class="card m5">
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
                 課題やカリキュラムを使用しない、ライブ感のあるDojoです
@@ -49,20 +49,15 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m7">
-          <div class="card">
+        <div class="col s12 m5">
+          <div class="card m5">
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
-                なにかあれば
+                オフラインでの活動について
               </t-tag>
-              <p>
-                れいぶんれいぶんれいぶんれいぶんれいぶ
-                んれいぶんれいぶんれいぶんれいぶんれい
-                ぶんれいぶんれいぶんれいぶんれいぶん
-                れいぶんれいぶんれいぶんれいぶんれいぶ
-                んれいぶんれいぶんれいぶんれいぶんれい
-                ぶんれいぶんれいぶんれいぶんれいぶん
-              </p>
+              <p class="link-color">※ 現在はオンラインのみでの活動を実施しています。</p>
+              <p>Wifiの用意はしていますが、非常に繋がりにくい状態となっています。</p>
+              <p>できるだけ、インターネットを使わなくてもでプログラミングできるような環境づくりを心がけてください。</p>
             </div>
           </div>
         </div>
@@ -85,5 +80,11 @@ main { width: 100%; }
   justify-content: center;
   /* height: 640px; */
   width: 100%;
+}
+.link-color {
+  color: #F2718A;
+}
+.card .card-content {
+  height: 40vh;
 }
 </style>

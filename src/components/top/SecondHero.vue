@@ -7,7 +7,7 @@
           プログラミングをして作成したゲームやアニメーション
           などの作品を発表ができる場です。
           多くの人に頑張りを見てもことができるのと、
-          フィードバックを得ることによって更によりよい作品づくりを促せます。
+          フィードバックを得ることによって更によりよい作品づくりを促します。
         </p>
       </div>
       <div class="card-folder">
@@ -16,8 +16,8 @@
             <div class="card">
               <div class="card-content">
                 <span class="card-title">みんなでつくる</span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+                <p>ひとりひとりが主体的にプログラミングを楽しめるように。</p>
+                <p>参加者もメンターも、年齢は関係ありません。</p>
               </div>
             </div>
           </div>
@@ -26,9 +26,9 @@
           <div class="col s12">
             <div class="card">
               <div class="card-content">
-                <span class="card-title">みんなでつくる</span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+                <span class="card-title">オフラインでの活動</span>
+                <p>Scratch未経験のニンジャにも、メンターや先輩ニンジャが丁寧にサポート。</p>
+                <p>作りたいもののアイデアを積極的に出しましょう。</p>
               </div>
             </div>
           </div>
@@ -37,9 +37,9 @@
           <div class="col s12">
             <div class="card">
               <div class="card-content">
-                <span class="card-title">みんなでつくる</span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+                <span class="card-title">オンラインでの活動</span>
+                <p>Zoomを使用してプログラミングをしていきます。</p>
+                <p>作品ができたら、みんなで発表会も実施します。</p>
               </div>
             </div>
           </div>
