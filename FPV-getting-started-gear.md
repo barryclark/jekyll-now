@@ -10,7 +10,7 @@ _written by Justin Murdock, on Jan 3, 2021_
 
 ## FPV
 
-First things first I will mention are the **cheapest options** that I have found after many, many hours of **FPV drone gear** research. The goal is to put on VR goggles, be connected to a quadcopter, and fly around like a bird. The cheapest all-in-one solution I found was this TinyHawk drone which included a pair of very low-end goggles and a controller:
+First things first I will mention are the **cheapest options** that I have found after many, many hours of **FPV drone gear** research. The goal is to put on VR goggles, be connected to a quadcopter, and fly around like a bird. The cheapest all-in-one solution I found was this TinyHawk drone which included a pair of low-end goggles and a controller:
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/1_emax_rtf.jpg?raw=true" description="EMAX TinyHawk Ready-To-Fly" product_aff_link="https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj" %}
 
@@ -19,7 +19,7 @@ First things first I will mention are the **cheapest options** that I have found
 I was shocked to find a system where all 3 components (the drone, the goggles, and the controller) were included for that price. 
 
 * Typically, you buy your drone, goggles, and controller seperately. There are hundreds of options for that and millions of combinations of options for that, and so to make the process easier I've selected the cheapest/best options if you wanted the real deal for your controller and some better goggles. Once you have a good pair of goggles and a good controller, you can use those to fly any drone. I think when you are starting out the best thing to invest in is the goggles and the controller. You don't just want a racing drone with 5 inch propellors powered by a 6S battery unless you generally know how to fly it already.
-* The goggles do not have a DVR function and the drone does not have a microSD card slot, so you would not be able to record footage with it. 
+* These cheap goggles do not have a DVR function and the drone does not have a microSD card slot, so you would not be able to record footage with it. 
 * You get what you pay for, the controller looks like its for a gaming console and its not a "serious" controller, but overall it would provide a "first experience" flying and would be fun.
 
 ___ 
@@ -44,13 +44,11 @@ The three items above are a combination of a (1) a drone with a camera, (2) VR G
 
 * Total would be $345 with the same cheap Mobula6 drone. With either of theses setups ($345-$540), you would be able to record footage in two ways: with the goggle's DVR function, or you can put a microSD card into the drone.
 
-> If you have time to read more info about drones, the rest of this page covers many other options for the drones and different features you can choose when you are building your own drone. 
-
 Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range Crossfire VTX (video transmitter). But your controller and your FPV Goggles will be able to connect to any FPV drone. That's why I put the real deal for the goggles and controller but a simple, $100 drone (in the "tiny whoop" category of drones) for the beginner/cheap setup. Every time you crash your $400 custom built drone, you risk needing to replace a motor or propellors. The inexpensive and semi-crash-resistant tiny whoop is a great learner's drone.
 
 ___
 
-> **That concludes the abbreviated shopping list**. The rest of this page will discuss different options for different drones, different controllers or different goggles. Thanks for reading! If you use any of the links on this page to purchase a drone/controller/goggles of your own, thank you!
+> **That concludes the abbreviated shopping list**. The rest of this page will discuss different options for different drones, different controllers and different goggles. Thanks for reading! If you use any of the links on this page to purchase a drone/controller/goggles of your own, thank you! [Click here](#recommendations-based-on-budget) to skip to the summary.
 
 ___
 
@@ -62,7 +60,7 @@ https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp
 * The world of freestyle FPV and drone racing is a completely different world compared to the type of flying a Mavic does. Your goal as an FPV pilot is to get as close to your subjects as possible and do flips and acrobatics. 
 * You may have seen [JohnnyFPV](https://www.youtube.com/watch?v=jJyPa7KIu6I&start=317 "JohnnyFPV YouTube Channel") on YouTube -- that style of flying looks like so much fun and it just isn't possible to do with the Mavic. 
 * The Mavic doesn't allow itself to become upside-down (_something that happens halfway into a flip_). My Mavic Air 2 automatically stabilizes very well, and it is simply impossible to do flips. 
-* Flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guarunteed to crash your drone **multiple times** per "session", flying freestyle or racing.
+* Flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guaranteed to crash your drone **multiple times** per "session", flying freestyle or racing.
 
 {% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/26_drone_pile.jpg?raw=true" description="Broken drones!"%}
 
@@ -71,9 +69,7 @@ https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp
 
 ## FPV Shopping list
 
-> There are many, many different options when it comes to drones, controllers, and goggles.
-
-### More options on Controllers and Goggles
+> There are many, many different options when it comes to controllers, and goggles, and drones.
 
 ## FPV Controller:
 
@@ -219,7 +215,7 @@ I think anyone getting started might want to try a pre-built, ready to fly drone
 3. A drone, unless you just play the Drone Simulator.
 4. Many LiPO batteries for the drone, and a LiPO battery charger.
 
-### Reccomendations based on **budget**:
+### Recommendations based on **budget**:
 
 1. **Lowest $165**
  * [(1/1) $165 All-In-One EMAX Tinyhawk w/ Goggles & Controller](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj)
