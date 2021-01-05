@@ -2,11 +2,31 @@
   <footer class="footer">
     <nav>
       <ul class="row valign-wrapper">
-        <li>スタッフ紹介</li>
-        <li>メンバー募集</li>
-        <li>開催の様子</li>
-        <li>ご支援のお願い</li>
-        <li>お問い合わせ</li>
+        <li>
+          <router-link class="router-link" to="/staffs">
+            スタッフ紹介
+          </router-link>
+        </li>
+        <li>
+          <router-link class="router-link" to="/members">
+            メンバー募集
+          </router-link>
+        </li>
+        <li>
+          <router-link class="router-link" to="/events">
+            開催の様子
+          </router-link>
+        </li>
+        <li>
+          <router-link class="router-link" to="/support">
+            ご支援のお願い
+          </router-link>
+        </li>
+        <li>
+          <router-link class="router-link" to="/contact">
+            お問い合わせ
+          </router-link>
+        </li>
         <li>
           <a href="https://lin.ee/vhWQhPP">
             <img class="valign-wrapper line-img" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
@@ -82,6 +102,10 @@ a {
 }
 .line-img {
   height: 32px;
+}
+.router-link {
+  color: #000;
+  font-size: 1em;
 }
 .square-icon {
   height: 36px;
