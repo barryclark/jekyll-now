@@ -143,7 +143,7 @@ https://www.amazon.com/Receiver-Adapter-Digital-Fatshark-RapidFire/dp/B08LMWTBJ9
 
 {% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/17_inside_high_end.jpg?raw=true" description="The view inside high-end goggles"%}
 
-{% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/18_inside_box.jpg?raw=true" description="The view inside "box" goggles"%}
+{% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/18_inside_box.jpg?raw=true" description="The view inside box goggles"%}
 
 ___
 
