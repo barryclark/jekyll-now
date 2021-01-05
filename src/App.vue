@@ -9,6 +9,8 @@
     <SixthContainer />
     <SeventhContainer />
     <EighthContainer />
+    <SupportFirstContainer />
+    <SupportSecondContainer />
     <Footer />
   </div>
 </template>
@@ -23,6 +25,8 @@ import FifthContainer from './components/FifthContainer.vue'
 import SixthContainer from './components/SixthContainer.vue'
 import SeventhContainer from './components/SeventhContainer.vue'
 import EighthContainer from './components/EighthContainer.vue'
+import SupportFirstContainer from './components/SupportFirstContainer.vue'
+import SupportSecondContainer from './components/SupportSecondContainer.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -37,6 +41,8 @@ export default {
     SixthContainer,
     SeventhContainer,
     EighthContainer,
+    SupportFirstContainer,
+    SupportSecondContainer,
     Footer
   }
 }
