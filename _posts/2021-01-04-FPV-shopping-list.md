@@ -95,7 +95,7 @@ ___
 
 ## FPV Goggles:
 
-The next thing needed for an FPV setup are the goggles. Choosing a unit has been pretty tough for me, but I have discovered the contenders by researching goggles used by racing world championship winners.
+The next thing needed for an FPV setup are the goggles. Choosing a unit has been pretty tough for me, but I have discovered the contenders by researching goggles used by racing world championship winners. With FPV Goggles, you can connect two pairs to the same video feed when flying and have a spectator watch while you fly, so I plan on getting the cheaper goggles first and upgrading later and keeping my old ones. 
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/12_DJI_digital_fpv.jpg?raw=true" description="$700 DJI Digital FPV Goggles" product_aff_link="https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6" %}
 
@@ -130,7 +130,7 @@ ___
 
 ___
 
-The Scout and Recon are Fat Shark's budget options compared to their high end goggles. With FPV Goggles, you can connect two pairs to the same video feed when flying and have a spectator watch while you fly, so I plan on getting the cheaper goggles first and upgrading later and keeping my old ones. 
+The Scout and Recon are Fat Shark's budget options compared to their high end goggles. These box goggles are Fat Sharks newest products.
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/3_fat_shark_scout.jpg?raw=true" description="$219 Fat Shark Scout" product_aff_link="https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20" %}
 
