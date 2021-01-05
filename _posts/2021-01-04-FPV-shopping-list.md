@@ -21,7 +21,9 @@ I was shocked to find a system where all 3 components (the drone, the goggles, a
 * Typically, you buy your drone, goggles, and controller seperately. There are hundreds of options for that and millions of combinations of options for that, and so to make the process easier I've selected the cheapest/best options if you wanted the real deal for your controller and some better goggles. Once you have a good pair of goggles and a good controller, you can use those to fly any drone. I think when you are starting out the best thing to invest in is the goggles and the controller. You don't just want a racing drone with 5 inch propellors powered by a 6S battery unless you generally know how to fly it already.
 * These cheap goggles do not have a DVR function and the drone does not have a microSD card slot, so you would not be able to record footage with it. 
 * You get what you pay for, the controller looks like its for a gaming console and its not a "serious" controller, but overall it would provide a "first experience" flying and would be fun.
+* Another option at a similar price point would be the Tinyhawk 2, which has exposed propellors and would not be as good for flying inside.
 
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/31_emax_tinyhawk2.jpg?raw=true" description="EMAX TinyHawk 2 Ready-To-Fly, 2 inch, 2S battery" product_aff_link="https://www.amazon.com/Tinyhawk-Freestyle-Beginners-Carbon-7000KV/dp/B08DKJF84L/ref=sr_1_2?tag=juliusakula-20" %}
 ___ 
 
 Next are the **cheapest and best** combination of components that I could find to purchase seperately. These are still budget options, but much better if drones are something you are seriously interested in.
@@ -216,8 +218,8 @@ I think anyone getting started might want to try a pre-built, ready to fly drone
 
 ### Recommendations based on **budget**:
 
-1. **Lowest $165**
- * [(1/1) $165 All-In-One EMAX Tinyhawk w/ Goggles & Controller](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj)
+1. **Lowest, under $200**
+ * [(1/1) $165 All-In-One EMAX Tinyhawk w/ Goggles & Controller](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj) or [(1/1 $190  All-In-One EMAX Tinyhawk 2 w/ Goggles & Controller (amazon)](https://www.amazon.com/Tinyhawk-Freestyle-Beginners-Carbon-7000KV/dp/B08DKJF84L/ref=sr_1_2?tag=juliusakula-20)
 2. Low-Mid: $345
   * [(1/3) $119 Goggles, Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20), 
   * [(2/3) $125 Controller, FrSky Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) 
