@@ -79,7 +79,7 @@ https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp
 * The Mavic doesn't allow itself to become upside-down (_something that happens halfway into a flip_). My Mavic Air 2 automatically stabilizes very well, and it is simply impossible to do flips. 
 * FPV drones are cheaper, and flying Freestyle FPV you are **guaranteed** to crash your drone. You are almost guarunteed to crash your drone **multiple times** per "session", flying freestyle or racing.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/26_drone_pile.jpg?raw=true" style="width:240px"/>
+{% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/26_drone_pile.jpg?raw=true" description="Broken drones!"%}
 
 * FPV is a different and more advanced category than the photography category. My main goal with the Mavic Air 2 is to not crash it. 
 * It is helpful to understand your goals with drones in order to know which drone is best for you. I was initially surprised to learn that there really is no such thing as a drone that "does it all".
@@ -139,11 +139,11 @@ https://www.amazon.com/Receiver-Adapter-Digital-Fatshark-RapidFire/dp/B08LMWTBJ9
 
 * However, they are not that much cheaper than DJI and it is over $700 [with all the accessories](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV "Fat Shark HDO2 FPV Goggles + Module and Antenna on Amazon"), and that doesn't include a [battery](https://www.amazon.com/dp/B0711H4D3K/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=da34ce4891e9e6956c4b3325d39d4a66&creativeASIN=B0711H4D3K "Fat Shark High Capacity Headset Battery on Amazon"). 
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/17_inside_high_end.jpg?raw=true" width=300 />
-
 * For additional reading (please come back!), [this article](https://blog.dronetrest.com/everything-you-need-to-know-about-buying-fpv-goggles/) describes the difference between box goggles and low profile goggles. I think the new budget Fat Shark box goggles (The Recon and Scout) don't look so bad. The low profile goggles seems like everything would be too close to my eye balls and I just feel like I might get nauseous with those, and the low profile goggles are very expensive.
 
-<img src="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/18_inside_box.jpg?raw=true" width=300 />
+{% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/17_inside_high_end.jpg?raw=true" description="The view inside high-end goggles"%}
+
+{% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/18_inside_box.jpg?raw=true" description="The view inside "box" goggles"%}
 
 ___
 
