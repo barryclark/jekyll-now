@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A beginner FPV Drone shopping list
+title: FPV Drone Shopping List
 permalink: /fpv-shopping-list/
 ---
 
