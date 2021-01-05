@@ -44,7 +44,7 @@ The three items above are a combination of a (1) a drone with a camera, (2) VR G
 
 * Total would be $345 with the same cheap Mobula6 drone. With either of theses setups ($345-$540), you would be able to record footage in two ways: with the goggle's DVR function, or you can put a microSD card into the drone.
 
-Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range Crossfire VTX (video transmitter). But your controller and your FPV Goggles will be able to connect to any FPV drone. That's why I put the real deal for the goggles and controller but a simple, $100 drone (in the "tiny whoop" category of drones) for the beginner/cheap setup. Every time you crash your $400 custom built drone, you risk needing to replace a motor or propellors. The inexpensive and semi-crash-resistant tiny whoop is a great learner's drone.
+Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range Crossfire VTX (video transmitter). But your controller and your FPV Goggles will be able to connect to any FPV drone. That's why I put the real deal for the goggles and controller but a simple, $100 drone (in the "tiny whoop" category of drones) for my recommended beginner setup. Every time you crash your $400 custom built drone, you risk needing to replace a motor or propellors. The inexpensive and semi-crash-resistant tiny whoop is a great learner's drone.
 
 ___
 
