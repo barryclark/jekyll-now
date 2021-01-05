@@ -10,7 +10,7 @@ _written by Justin Murdock, on Jan 3, 2021_
 
 ## FPV
 
-This whole article will be a lengthy read, but the first things I will mention are the **cheapest options** that I have found after many, many hours of **FPV drone gear** research. The goal is to put on VR goggles, be connected to a quadcopter, and fly around like a bird. The cheapest all-in-one solution I found was this TinyHawk drone which included a pair of very low-end goggles and a controller:
+First things first I will mention are the **cheapest options** that I have found after many, many hours of **FPV drone gear** research. The goal is to put on VR goggles, be connected to a quadcopter, and fly around like a bird. The cheapest all-in-one solution I found was this TinyHawk drone which included a pair of very low-end goggles and a controller:
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/1_emax_rtf.jpg?raw=true" description="EMAX TinyHawk Ready-To-Fly" product_aff_link="https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj" %}
 
@@ -18,11 +18,13 @@ This whole article will be a lengthy read, but the first things I will mention a
 
 I was shocked to find a system where all 3 components (the drone, the goggles, and the controller) were included for that price. 
 
-* The goggles do not have a DVR function and the drone does not have a microSD card slot, so you would not be able to record footage with it. 
-* You get what you pay for, the controller looks like its for a gaming console controller and its not a "serious" controller, but overall it would provide a "first experience" flying and would be fun.
 * Typically, you buy your drone, goggles, and controller seperately. There are hundreds of options for that and millions of combinations of options for that, and so to make the process easier I've selected the cheapest/best options if you wanted the real deal for your controller and some better goggles. Once you have a good pair of goggles and a good controller, you can use those to fly any drone. I think when you are starting out the best thing to invest in is the goggles and the controller. You don't just want a racing drone with 5 inch propellors powered by a 6S battery unless you generally know how to fly it already.
+* The goggles do not have a DVR function and the drone does not have a microSD card slot, so you would not be able to record footage with it. 
+* You get what you pay for, the controller looks like its for a gaming console and its not a "serious" controller, but overall it would provide a "first experience" flying and would be fun.
 
-Next are the cheapest and best combination of components that I could find to purchase seperately. These are still cheap options, but much better if drones are something you are strongly interested in.
+___ 
+
+Next are the cheapest and best combination of components that I could find to purchase seperately. These are still cheap options, but much better if drones are something you are seriously interested in.
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/2_mobula6.jpg?raw=true" description="(1/3) $99 FPV DRONE: Mobula6" product_aff_link="https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20" %}
 
@@ -30,13 +32,13 @@ Next are the cheapest and best combination of components that I could find to pu
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/4_taranis_x9d.jpg?raw=true" description="(3/3) $218 FPV CONTROLLER: Taranis X9D" product_aff_link="https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20" %}
 
-Total $540 before tax. The drone should come with a couple batteries and a charger. This is a very good controller (professional), the best of the cheaper style of goggles(box goggle, it has DVR), and a cheapo drone just to have something to fly. More drones are linked in the drone section of this page. You would probably want a good controller and goggles before you got a good drone, so flying a starter drone - a 1S battery class tiny drone - I think is a good move.
+Total $540 before tax. The drone should come with a couple batteries and a charger. This is a very good controller (professional), the best of the cheaper style of goggles(box goggle), and a cheapo drone just to have something to fly. More drones are linked in the drone section of this page. You would probably want a good controller and goggles before you got a good drone, so flying a starter drone - a 1S battery class tiny drone - I think is a good move.
 
-The three items above are a combination of a (1) VR Goggles, (2) a drone with a camera that connects to your goggles, and (3) a radio controller to fly the drone. I have found that the above products would be basically the most reasonable (cheapest while still being good quality) getting-started shopping list for FPV droning. The controller above has a charging port which allows you to charge it rather than deal with removing the battery from the controller to charge it, a little more expensive but I think worth it.
-
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="$125 Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20" %}
+The three items above are a combination of a (1) a drone with a camera, (2) VR Goggles that connect to your drone's camera, and (3) a radio controller to fly the drone. I have found that the above products would be basically the most reasonable (cheapest while still being good quality) getting-started shopping list for FPV droning. The controller above has a charging port which allows you to charge it rather than deal with removing the battery from the controller to charge it, a little more expensive but I think worth it.
 
 * Can be ~$200 cheaper with [$125 FPV CONTROLLER: Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) and [$119 FPV GOGGLES: Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) instead. 
+
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="$125 Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20" %}
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/5_fat_shark_recon.jpg?raw=true" description="$119 Fat Shark Recon" product_aff_link="https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20" %}
 
@@ -78,22 +80,21 @@ https://www.amazon.com/DJI-Auto-Activated-Bundle-Drone-Quadcopter-ActiveTrack/dp
 There are a few components to an FPV setup. The first that comes to mind for me is the controller, also known as the _radio_. 
 
 * Typically, an **FPV controller** is different than the Mavic-style controller, because the left stick is not centered. On FPV the left up-and-down stick movement controls _throttle_**, not** _altitude_, so by default the left stick on an FPV controller stays all the way down because the throttle defaults to off. 
-
-* The left stick on the Mavic controller controls the _altitude_ and the stick centers itself in the middle similar to a joystick on an Xbox/PS controller. You can move the stick up or down to increase or decrease altitude, respectively, it is very simple. An FPV drone controller's left stick would not reset to the center, but rather would snap to the bottom and would control _throttle_ rather than _altitude_.
+* The left stick on the Mavic controller controls the _altitude_ and the stick centers itself in the middle similar to a joystick on an Xbox/PS controller. You can move the stick up or down to increase or decrease altitude, respectively, it is very simple. A Mavic is always holding position.
 * The [FrSky Taranis X9D](https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76 "FrSky Taranis X9D Plus on Amazon") is the controller I think I would purchase.
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/4_taranis_x9d.jpg?raw=true" description="$219 FrSky Taranis X9D" product_aff_link="https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76" %}
 
 * This controller is one of many controllers that are fully integrated with the Drone Racing Simulator, so I can practice flying my drone without flying my drone - and risking consequences of flying a physical drone in the real world (crashes that damage the drone). The Drone Simulator uses real physics for its game engine - it is a game on PC, it connects to any real Drone Controller to the video game and with using real physics, it feels like almost the real thing, especially when you also have your FPV Goggles connected to the game as well. 
 
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="$120 Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9" %}
+
+* The [Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9 "FrSky Taranis Q X7 on Amazon") is cheaper but does not include a battery or have a simple plug-to-recharge function which made me feel like the extra $100 for the X9D was worth it for ease-of-use. There are several brands for controllers I just get the impression from Taranis and the silver X9D especially that that is a serious down-to-business drone controller.
+
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/23_drl-sim.jpg?raw=true" description="Drone Racing League Simulator on Steam" product_aff_link="https://store.steampowered.com/app/641780/The_Drone_Racing_League_Simulator/" %}
 
 * The Drone Simulator is an excellent way to practice. You could virtually practice flying your tiny-whoop or practice flying a racing drone with your real controller. You can also virtually fly at night and when it is cloudy, allowing the option to practice 24/7. This controller connects to any drone as well as any flight goggles. The [Taranis X9D](https://www.amazon.com/dp/B07VRP1V76/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=31dc48948db0bdc72a5f43178fcc9450&creativeASIN=B07VRP1V76 "FrSky Taranis X9D Plus on Amazon") is fully featured... My favorite feature of the X9D over the Q X7 is that you can simply plug in the controller to charge it, whereas the Q X7 you must remove the battery and charge/swap the batteries for the remote control. That sounds like way too much of a pain, and the Q X7 remote doesn't even come with it's own battery. 
 * Many racers are using Taranis and they have has been around a long time - there are many mods available for it and there's a huge community to support their controllers. 
-
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="$120 Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9" %}
-
-* The [Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9 "FrSky Taranis Q X7 on Amazon") is cheaper but does not include a battery or have a simple plug-to-recharge function which made me feel like the extra $100 for the X9D was worth it for ease-of-use. There are several brands for controllers I just get the impression from Taranis and the silver X9D especially that that is a serious down-to-business drone controller.
 
 ___
 
