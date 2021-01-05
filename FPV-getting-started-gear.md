@@ -128,15 +128,19 @@ https://www.amazon.com/Receiver-Adapter-Digital-Fatshark-RapidFire/dp/B08LMWTBJ9
 
 * For additional reading (please come back!), [this article](https://blog.dronetrest.com/everything-you-need-to-know-about-buying-fpv-goggles/) describes the difference between box goggles and low profile goggles. I think the new budget Fat Shark box goggles (The Recon and Scout) don't look so bad. The low profile goggles seems like everything would be too close to my eye balls and I just feel like I might get nauseous with those, and the low profile goggles are very expensive.
 
+___
+
 {% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/17_inside_high_end.jpg?raw=true" description="The view inside high-end goggles"%}
+
+___
 
 {% include simpleimage.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/18_inside_box.jpg?raw=true" description="The view inside box goggles"%}
 
 ___
 
-### Drones
+## Drones
 
-#### My #1 reccomendation for a cheap, beginner, ready-to-fly drone would be:
+### My #1 reccomendation for a cheap, beginner, ready-to-fly drone would be:
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/2_mobula6.jpg?raw=true" description="$99 FPV TINY-WHOOP: Mobula6" product_aff_link="https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20" %}
 
