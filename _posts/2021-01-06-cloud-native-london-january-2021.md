@@ -26,7 +26,7 @@ Welcome 2021 with us and three speakers from Sainsburys, Hazelcast, and Exelerys
 * 8:30 Securing DevOps CI/CD Pipelines in the Cloud – 2021 Update (Jesus Escolar, Exelerys)
 * 9:00 Wrap up
 
-We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), and [CircleCI](https://circleci.com/) for your enthusiastic and generous support and sponsorship.
+We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), and [Humio](https://humio.com/) for your enthusiastic and generous support and sponsorship.
 
 ## Cloud Native London February
 
