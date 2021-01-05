@@ -25,7 +25,7 @@ I was shocked to find a system where all 3 components (the drone, the goggles, a
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/31_emax_tinyhawk2.jpg?raw=true" description="EMAX TinyHawk 2 Ready-To-Fly" product_aff_link="https://www.amazon.com/Tinyhawk-Freestyle-Beginners-Carbon-7000KV/dp/B08DKJF84L/ref=sr_1_2?tag=juliusakula-20" %}
 
-* $190 Ready-To-Fly "TinyHawk2 " 2 inch propellors, 2S battery, WITH Controller and Goggles
+* $190 Ready-To-Fly "TinyHawk 2" 2 inch propellors, 2S battery, WITH Controller and Goggles
 ___ 
 
 Next are the **cheapest and best** combination of components that I could find to purchase seperately. These are still budget options, but much better if drones are something you are seriously interested in.
