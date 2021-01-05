@@ -86,7 +86,7 @@ There are a few components to an FPV setup. The first that comes to mind for me 
 
 * This controller is one of many controllers that are fully integrated with the Drone Racing Simulator, so I can practice flying my drone without flying my drone - and risking consequences of flying a physical drone in the real world (crashes that damage the drone). The Drone Simulator uses real physics for its game engine - it is a game on PC, it connects to any real Drone Controller to the video game and with using real physics, it feels like almost the real thing, especially when you also have your FPV Goggles connected to the game as well. 
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="$120 Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="$120 Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20" %}
 
 * The [Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9 "FrSky Taranis Q X7 on Amazon") is cheaper but does not include a battery or have a simple plug-to-recharge function which made me feel like the extra $100 for the X9D was worth it for ease-of-use. There are several brands for controllers I just get the impression from Taranis and the silver X9D especially that that is a serious down-to-business drone controller.
 
