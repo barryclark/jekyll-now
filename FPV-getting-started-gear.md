@@ -131,11 +131,11 @@ https://www.amazon.com/Receiver-Adapter-Digital-Fatshark-RapidFire/dp/B08LMWTBJ9
 
 * This whole setup would run over $700, just for the goggles part of the FPV setup (controller and drone bought seperately).
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/15_fat_shark_dominator.jpg?raw=true" description="$540 Fat Shark HDO \"Dominator\" Goggles" product_aff_link="https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/15_fat_shark_dominator.jpg?raw=true" description="$540 Fat Shark HDO Dominator Goggles" product_aff_link="https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X" %}
 
 * Fat Shark is another brand option for high-end goggles. Fat Shark seems to be a trusted brand for some time now, and the [Fat Shark HDO "Dominator" Goggles](https://www.amazon.com/dp/B083QC5V7X/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=62835af7b5e317a600365a7670277597&creativeASIN=B083QC5V7X "Fat Shark Dominator HDO2 FPV Goggles on Amazon") seem to be a very popular choice. I trust they are doing something right.
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/16_fat_shark_crossfire.jpg?raw=true" description="$740 Fat Shark HDO "Dominator" Goggles With accessories" product_aff_link="https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/16_fat_shark_crossfire.jpg?raw=true" description="$740 Fat Shark HDO Dominator Goggles With accessories" product_aff_link="https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV" %}
 
 * However, they are not that much cheaper than DJI and it is over $700 [with all the accessories](https://www.amazon.com/dp/B083F815JV/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=45a4522ca246b3d7c7c35bd8e5bcf680&creativeASIN=B083F815JV "Fat Shark HDO2 FPV Goggles + Module and Antenna on Amazon"), and that doesn't include a [battery](https://www.amazon.com/dp/B0711H4D3K/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=da34ce4891e9e6956c4b3325d39d4a66&creativeASIN=B0711H4D3K "Fat Shark High Capacity Headset Battery on Amazon"). 
 
@@ -178,13 +178,13 @@ ___
 
 #### Different **ready-to-fly racing drones** (batteries not included): 
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/19_drone1.jpg?raw=true" description="$240 Emax Hawk Pro 5\" 6s battery class Racing Quad" product_aff_link="https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/19_drone1.jpg?raw=true" description="$240 Emax Hawk Pro 5inch 6s battery class Racing Quad" product_aff_link="https://www.amazon.com/EMAX-FRSKY-Racing-Drone-2400KV/dp/B07YF3CJL1/ref=sr_1_7?tag=juliusakula-20" %}
 
 * ^ (4S battery choose 2400KV / 6S battery choose 1700KV) The 6S version would be very fast.
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/20_drone2.jpg?raw=true" description="$190 ARRIS X220 5\" Racing Drone, 4S battery class" product_aff_link="https://www.amazon.com/ARRIS-Quadcopter-Racing-Stardard-Version/dp/B072NZJK9L/ref=sr_1_8?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/20_drone2.jpg?raw=true" description="$190 ARRIS X220 5inch Racing Drone, 4S battery class" product_aff_link="https://www.amazon.com/ARRIS-Quadcopter-Racing-Stardard-Version/dp/B072NZJK9L/ref=sr_1_8?tag=juliusakula-20" %}
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/21_drone3.jpg?raw=true" description="$250 iFlight Nazgul5 V2 5\", 6S battery class with Crossfire" product_aff_link="https://www.amazon.com/iFlight-Nazgul5-Freestyle-Quadcopter-Crossfire/dp/B08KXWM9S9/ref=sr_1_47?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/21_drone3.jpg?raw=true" description="$250 iFlight Nazgul5 V2 5inch, 6S battery class with Crossfire" product_aff_link="https://www.amazon.com/iFlight-Nazgul5-Freestyle-Quadcopter-Crossfire/dp/B08KXWM9S9/ref=sr_1_47?tag=juliusakula-20" %}
 
 * Crossfire makes this drone have a much longer range.
 
