@@ -14,7 +14,7 @@ First things first I will mention are the **cheapest options** that I have found
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/1_emax_rtf.jpg?raw=true" description="EMAX TinyHawk Ready-To-Fly" product_aff_link="https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj" %}
 
-* $165 Ready-To-Fly "TinyHawk" WITH Controller and Goggles
+* $165 Ready-To-Fly "TinyHawk" 1 inch propellors, 1S battery, WITH Controller and Goggles
 
 I was shocked to find a system where all 3 components (the drone, the goggles, and the controller) were included for that price. 
 
@@ -23,7 +23,9 @@ I was shocked to find a system where all 3 components (the drone, the goggles, a
 * You get what you pay for, the controller looks like its for a gaming console and its not a "serious" controller, but overall it would provide a "first experience" flying and would be fun.
 * Another option at a similar price point would be the Tinyhawk 2, which has exposed propellors and would not be as good for flying inside.
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/31_emax_tinyhawk2.jpg?raw=true" description="EMAX TinyHawk 2 Ready-To-Fly, 2 inch, 2S battery" product_aff_link="https://www.amazon.com/Tinyhawk-Freestyle-Beginners-Carbon-7000KV/dp/B08DKJF84L/ref=sr_1_2?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/31_emax_tinyhawk2.jpg?raw=true" description="EMAX TinyHawk 2 Ready-To-Fly" product_aff_link="https://www.amazon.com/Tinyhawk-Freestyle-Beginners-Carbon-7000KV/dp/B08DKJF84L/ref=sr_1_2?tag=juliusakula-20" %}
+
+* $190 Ready-To-Fly "TinyHawk2 " 2 inch propellors, 2S battery, WITH Controller and Goggles
 ___ 
 
 Next are the **cheapest and best** combination of components that I could find to purchase seperately. These are still budget options, but much better if drones are something you are seriously interested in.
