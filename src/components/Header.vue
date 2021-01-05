@@ -5,38 +5,38 @@
       class="header row"
       v-if="!smallSize"
     >
-      <div class="col s4 valign-wrapper">
+      <router-link class="router-link col s4 valign-wrapper" to="/">
         <img
           class="circle left square-icon"
           alt="corder dojo tachikawa"
           src="../assets/dojo-logo.jpg"
         />
         <h1 class='title'>Corder Dojo 立川</h1>
-      </div>
+      </router-link>
       <div class="col s8 flex justify-end">
         <ul class="col valign-wrapper">
           <li>
-            <router-link to="/staffs">
+            <router-link class="router-link" to="/staffs">
               スタッフ紹介
             </router-link>
           </li>
           <li>
-            <router-link to="/members">
+            <router-link class="router-link" to="/members">
               メンバー募集
             </router-link>
           </li>
           <li>
-            <router-link to="/events">
+            <router-link class="router-link" to="/events">
               開催の様子
             </router-link>
           </li>
           <li>
-            <router-link to="/support">
+            <router-link class="router-link" to="/support">
               ご支援のお願い
             </router-link>
           </li>
           <li>
-            <router-link to="/contact">
+            <router-link class="router-link" to="/contact">
               お問い合わせ
             </router-link>
           </li>
@@ -100,27 +100,27 @@
           >
             <ul id="test">
               <li>
-                <a href="/staffs">
+                <router-link class="router-link" to="/staffs">
                   スタッフ紹介
-                </a>
+                </router-link>
               </li>
               <li>
-                <router-link to="/members">
+                <router-link class="router-link" to="/members">
                   メンバー募集
                 </router-link>
               </li>
               <li>
-                <router-link to="/events">
+                <router-link class="router-link" to="/events">
                   開催の様子
                 </router-link>
               </li>
               <li>
-                <router-link to="/support">
+                <router-link class="router-link" to="/support">
                   ご支援のお願い
                 </router-link>
               </li>
               <li>
-                <router-link to="/contact">
+                <router-link class="router-link" to="/contact">
                   お問い合わせ
                 </router-link>
               </li>
@@ -212,8 +212,9 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
+.router-link {
+  color: #000;
+  font-size: 1em;
 }
 .header {
   background: url("../assets/back_01.png") repeat center center;

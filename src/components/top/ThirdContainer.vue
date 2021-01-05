@@ -1,7 +1,7 @@
 <template>
   <div class="third-container relative bg-white overflow-hidden row">
     <main class='lg:container flex items-center'>
-      <img src="../assets/pc_02.png" />
+      <img src="../../assets/pc_02.png" />
       <div class="container hero-box">
         <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
           参加方法

@@ -63,7 +63,7 @@ export default {
 }
 .hero {
   background-color: #69C19F;
-  background-image: url('../assets/tachikawa_back_04.png');
+  background-image: url('../../assets/tachikawa_back_04.png');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center bottom;

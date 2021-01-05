@@ -8,7 +8,7 @@
       <div class="card">
         <a href="https://www.tachikawa-shakyo.or.jp/" target="_blank">
           <div class="card-content">
-            <img src="../assets/shakyo_banner.jpg" />
+            <img src="../../assets/shakyo_banner.jpg" />
           </div>
         </a>
       </div>
@@ -27,7 +27,7 @@ main { width: 100%; }
   margin-bottom: initial;
 }
 .sixth-container {
-  background: url('../assets/pic_03.png') no-repeat top center;
+  background: url('../../assets/pic_03.png') no-repeat top center;
   background-size: 140% auto;
   display: flex;
   justify-content: center;

@@ -8,7 +8,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img class="img" src="../assets/card_2.png">
+              <img class="img" src="../../assets/card_2.png">
             </div>
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 text-center'>
@@ -36,7 +36,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img class="img" src="../assets/card_3.jpg">
+              <img class="img" src="../../assets/card_3.jpg">
             </div>
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 text-center'>

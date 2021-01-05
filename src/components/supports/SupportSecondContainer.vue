@@ -1,29 +1,27 @@
 <template>
-  <div class="fourth-container relative bg-white overflow-hidden row">
+  <div class="support_second-container relative bg-white overflow-hidden row">
     <main class='lg:container flex items-center'>
-      <div class="container hero-box">
+      <div class="container support_second-box">
         <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
-          参加の流れ
+          ご支援・ご協力のお願い
         </t-tag>
         <t-tag tag-name="p" variant="body" class='pt-5 text-center text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
-          connpass登録後、メールアドレスをお送りします。
-        </t-tag>
-        <t-tag tag-name="p" variant="body" class='pt-5 text-center text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
-          オンラインではZoomを使用しますので、ご家庭の環境で動作確認をお願いいたします。
+          ご支援・ご協力をお願い致します。
         </t-tag>
       </div>
-      <img src="../assets/pc_02.png" />
+      <img class="rounded-full h-48 w-48 flex items-center justify-center" src="../../assets/dojo-logo.jpg" />
+
     </main>
   </div>
 </template>
 
 <style scoped>
 main { width: 100%; }
-.hero-box {
+.support_second-box {
   opacity: 0.8;
   width: 640px;
 }
-.fourth-container {
+.support_second-container {
   background: #FFF25A;
   display: flex;
   justify-content: center;

@@ -1,48 +1,26 @@
 <template>
   <div>
-    <Header />
-    <Hero />
-    <SecondHero />
-    <ThirdContainer />
-    <FourthContainer />
-    <FifthContainer />
-    <SixthContainer />
-    <SeventhContainer />
-    <EighthContainer />
-    <SupportFirstContainer />
-    <SupportSecondContainer />
+    <Header  />
+    <router-view/>
+    <router-view name="sec"/>
+    <router-view name="third"/>
+    <router-view name="fourth"/>
+    <router-view name="fifth"/>
+    <router-view name="sixth"/>
+    <router-view name="seventh"/>
+    <router-view name="eighth"/>
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import Hero from './components/Hero.vue'
-import SecondHero from './components/SecondHero.vue'
-import ThirdContainer from './components/ThirdContainer.vue'
-import FourthContainer from './components/FourthContainer.vue'
-import FifthContainer from './components/FifthContainer.vue'
-import SixthContainer from './components/SixthContainer.vue'
-import SeventhContainer from './components/SeventhContainer.vue'
-import EighthContainer from './components/EighthContainer.vue'
-import SupportFirstContainer from './components/SupportFirstContainer.vue'
-import SupportSecondContainer from './components/SupportSecondContainer.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Hero,
-    SecondHero,
-    ThirdContainer,
-    FourthContainer,
-    FifthContainer,
-    SixthContainer,
-    SeventhContainer,
-    EighthContainer,
-    SupportFirstContainer,
-    SupportSecondContainer,
     Footer
   }
 }
@@ -58,4 +36,5 @@ h1 {
   line-height: initial;
   margin: initial;
 }
+
 </style>

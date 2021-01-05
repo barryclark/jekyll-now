@@ -24,7 +24,7 @@ main { width: 100%; }
   width: 640px;
 }
 .support_first-container {
-  background: url('../assets/person-using-macbook-pro-on-person-s-lap-1181298.jpg') no-repeat right bottom;
+  background: url('../../assets/person-using-macbook-pro-on-person-s-lap-1181298.jpg') no-repeat right bottom;
   background-size: contain;
   margin: 0 auto;
   height: 640px;

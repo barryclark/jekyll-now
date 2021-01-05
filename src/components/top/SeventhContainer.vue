@@ -27,7 +27,7 @@
               <p>
                 CoderDojo受付開始や開催直前のお知らせなどを配信します。是非登録してください。
               </p>
-              <img src="../assets/line_barcode.png" />
+              <img src="../../assets/line_barcode.png" />
             </div>
           </div>
         </div>
