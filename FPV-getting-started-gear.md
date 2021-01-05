@@ -24,19 +24,20 @@ I was shocked to find a system where all 3 components (the drone, the goggles, a
 
 ___ 
 
-Next are the cheapest and best combination of components that I could find to purchase seperately. These are still cheap options, but much better if drones are something you are seriously interested in.
+Next are the **cheapest and best** combination of components that I could find to purchase seperately. These are still budget options, but much better if drones are something you are seriously interested in.
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/2_mobula6.jpg?raw=true" description="(1/3) $99 FPV DRONE: Mobula6" product_aff_link="https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20" %}
+
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/4_taranis_x9d.jpg?raw=true" description="(1/3) $218 FPV CONTROLLER: Taranis X9D" product_aff_link="https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20" %}
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/3_fat_shark_scout.jpg?raw=true" description="(2/3) $219 FPV GOGGLES: Fat Shark Scout" product_aff_link="https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20" %}
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/4_taranis_x9d.jpg?raw=true" description="(3/3) $218 FPV CONTROLLER: Taranis X9D" product_aff_link="https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/2_mobula6.jpg?raw=true" description="(3/3) $99 FPV DRONE: Mobula6" product_aff_link="https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20" %}
 
 Total $540 before tax. The drone should come with a couple batteries and a charger. This is a very good controller (professional), the best of the cheaper style of goggles(box goggle), and a cheapo drone just to have something to fly. More drones are linked in the drone section of this page. You would probably want a good controller and goggles before you got a good drone, so flying a starter drone - a 1S battery class tiny drone - I think is a good move.
 
-The three items above are a combination of a (1) a drone with a camera, (2) VR Goggles that connect to your drone's camera, and (3) a radio controller to fly the drone. I have found that the above products would be basically the most reasonable (cheapest while still being good quality) getting-started shopping list for FPV droning. The controller above has a charging port which allows you to charge it rather than deal with removing the battery from the controller to charge it, a little more expensive but I think worth it.
+The three items above are a combination of a (1) a radio controller to fly your drone (2) VR Goggles that connect to your drone's camera, and (3) a tiny drone to fly. I have found that the above products would be basically the most reasonable (cheapest while still being good quality) getting-started shopping list for FPV droning. The controller above has a charging port which allows you to charge it rather than deal with removing the battery from the controller to charge it, a little more expensive but I think worth it.
 
-* Can be ~$200 cheaper with [$125 FPV CONTROLLER: Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) and [$119 FPV GOGGLES: Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) instead. 
+* **Can be ~$200 cheaper** with [$125 FPV CONTROLLER: Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) and [$119 FPV GOGGLES: Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20) instead. 
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/6_taranis_x7.jpg?raw=true" description="$125 Taranis Q X7" product_aff_link="https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20" %}
 
@@ -44,11 +45,11 @@ The three items above are a combination of a (1) a drone with a camera, (2) VR G
 
 * Total would be $345 with the same cheap Mobula6 drone. With either of theses setups ($345-$540), you would be able to record footage in two ways: with the goggle's DVR function, or you can put a microSD card into the drone.
 
-Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range Crossfire VTX (video transmitter). But your controller and your FPV Goggles will be able to connect to any FPV drone. That's why I put the real deal for the goggles and controller but a simple, $100 drone (in the "tiny whoop" category of drones) for my recommended beginner setup. Every time you crash your $400 custom built drone, you risk needing to replace a motor or propellors. The inexpensive and semi-crash-resistant tiny whoop is a great learner's drone.
+Drone setups become a lot more expensive when you try to make them capable of going 100MPH+, add GoPro cameras to your drone shopping list or try to make a drone have a range of 4+ miles with a long range Crossfire VTX (video transmitter). Your controller and your FPV Goggles will be able to connect to any FPV drone. That's why I put the real deal for the controller and goggles but a simple, $100 drone (in the "tiny whoop" category of drones) for my recommended beginner setup. Every time you crash your $400 custom built drone, you risk needing to replace a motor or propellors. The inexpensive and semi-crash-resistant tiny whoop is a great learner's drone.
 
 ___
 
-> **That concludes the abbreviated shopping list**. The rest of this page will discuss different options for different drones, different controllers and different goggles. Thanks for reading! If you use any of the links on this page to purchase a drone/controller/goggles of your own, thank you! [Click here](#recommendations-based-on-budget) to skip to the summary.
+> **That concludes the abbreviated shopping list**. The rest of this page will discuss different options for different drones, different controllers and different goggles. Thanks for reading! If you use any of the links on this page to purchase a drone/controller/goggles of your own, a special thanks to you! [**Click here**](#recommendations-based-on-budget) to skip to the summary.
 
 ___
 
