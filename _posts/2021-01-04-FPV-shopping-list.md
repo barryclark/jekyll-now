@@ -219,7 +219,7 @@ I think anyone getting started might want to try a pre-built, ready to fly drone
 ### Recommendations based on **budget**:
 
 1. **Lowest, under $200**
- * [(1/1) $165 All-In-One EMAX Tinyhawk w/ Goggles & Controller](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj) or [(1/1 $190  All-In-One EMAX Tinyhawk 2 w/ Goggles & Controller (amazon)](https://www.amazon.com/Tinyhawk-Freestyle-Beginners-Carbon-7000KV/dp/B08DKJF84L/ref=sr_1_2?tag=juliusakula-20)
+ * [(1/1) $165 All-In-One EMAX Tinyhawk w/ Goggles & Controller](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj) for indoor flying or [(1/1 $190  All-In-One EMAX Tinyhawk 2 w/ Goggles & Controller (amazon)](https://www.amazon.com/Tinyhawk-Freestyle-Beginners-Carbon-7000KV/dp/B08DKJF84L/ref=sr_1_2?tag=juliusakula-20) for outdoors.
 2. Low-Mid: $345
   * [(1/3) $119 Goggles, Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20), 
   * [(2/3) $125 Controller, FrSky Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) 
