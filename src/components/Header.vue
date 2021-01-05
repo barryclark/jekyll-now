@@ -2,7 +2,6 @@
   <header>
     <!-- PC表示 -->
     <nav
-      style="float: initial;"
       class="header row"
       v-if="!smallSize"
     >
@@ -14,7 +13,7 @@
         />
         <h1 class='title'>Corder Dojo 立川</h1>
       </div>
-      <div class="col s8">
+      <div class="col s8 flex justify-end">
         <ul class="col valign-wrapper">
           <li>スタッフ紹介</li>
           <li>メンバー募集</li>

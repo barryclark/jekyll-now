@@ -6,7 +6,7 @@
         <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
           参加方法
         </t-tag>
-        <t-tag tag-name="p" variant="body" class='pt-5 text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
+        <t-tag tag-name="p" variant="body" class='py-8 text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
           参加お申し込みにはイベント管理サービス「connpass」のアカウント登録が必要です。
           各回の詳細な情報については、お申し込みページにてご確認ください。
         </t-tag>
@@ -15,7 +15,7 @@
         </t-tag>
         <div class="pt-5">
           <div class="card-panel">
-            <span>
+            <span class="markup-red">
               次回開催予定
               第1回&nbsp;11月11日&nbsp;11:00~12:00&nbsp;&nbsp;オンライン
             </span>
@@ -32,6 +32,9 @@ main { width: 100%; }
   background: #fff;
   opacity: 0.8;
   width: 640px;
+}
+.markup-red {
+  color: #F2718A;
 }
 .third-container {
   display: flex;

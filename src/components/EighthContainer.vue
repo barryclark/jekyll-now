@@ -6,9 +6,11 @@
         協賛
       </t-tag>
       <div class="card">
-        <div class="card-content">
-          <img src="" />
-        </div>
+        <a href="https://www.tachikawa-shakyo.or.jp/" target="_blank">
+          <div class="card-content">
+            <img src="../assets/shakyo_banner.jpg" />
+          </div>
+        </a>
       </div>
 
     </main>
@@ -21,7 +23,12 @@ main { width: 100%; }
   opacity: 0.8;
   width: 640px;
 }
+.row {
+  margin-bottom: initial;
+}
 .sixth-container {
+  background: url('../assets/pic_03.png') no-repeat top center;
+  background-size: 140% auto;
   display: flex;
   justify-content: center;
   height: 640px;

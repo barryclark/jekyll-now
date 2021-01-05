@@ -1,7 +1,7 @@
 <template>
   <div class="sixth-container relative bg-white overflow-hidden row">
     <main class='lg:container items-center flex flex-col justify-evenly'>
-      <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 text-center'>
+      <t-tag variant="heading" class='text-white py-5 text-2xl leading-8 font-semibold tracking-tight font-display sm:text-3xl sm:leading-9 text-center'>
         今後の活動
       </t-tag>
 
@@ -21,8 +21,7 @@
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Role
-                </th>
-                <th scope="col" class="relative px-6 py-3">
+                </th> <th scope="col" class="relative px-6 py-3">
                   <span class="sr-only">Edit</span>
                 </th>
               </tr>
@@ -129,7 +128,7 @@
           </table>
         </div>
         <t-tag variant="heading" class='my-24 pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 text-center'>
-          そのほかの教室の開催情報はこちら
+          そのほかの教室の開催情報は<span class="link-color">こちら</span>から
         </t-tag>
       </div>
     </main>
@@ -142,8 +141,11 @@ main { width: 100%; }
   opacity: 0.8;
   width: 640px;
 }
+.link-color {
+  color: #F2718A;
+}
 .sixth-container {
-  background: url('../assets/tachikawa_back_06.png') no-repeat right bottom;
+  background-color: #F8B300;
   background-size: cover;
   background-position: 70% 30%;
   display: flex;

@@ -3,14 +3,16 @@
     <div class="hero-inner">
       <h2 class="title">子どもが活躍できる場づくりを目指しています。</h2>
       <div class="description">
-        <p>プログラミングをして作成したゲームやアニメーション</p>
-        <p>などの作品を発表ができる場です。</p>
-        <p>多くの人に頑張りを見てもことができるのと、</p>
-        <p>フィードバックを得ることによって更によりよい作品づくりを促せます。</p>
+        <p class="py-8">
+          プログラミングをして作成したゲームやアニメーション
+          などの作品を発表ができる場です。
+          多くの人に頑張りを見てもことができるのと、
+          フィードバックを得ることによって更によりよい作品づくりを促せます。
+        </p>
       </div>
       <div class="card-folder">
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12">
             <div class="card">
               <div class="card-content">
                 <span class="card-title">みんなでつくる</span>
@@ -21,7 +23,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12">
             <div class="card">
               <div class="card-content">
                 <span class="card-title">みんなでつくる</span>
@@ -32,7 +34,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12">
             <div class="card">
               <div class="card-content">
                 <span class="card-title">みんなでつくる</span>
