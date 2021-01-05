@@ -134,6 +134,18 @@ ___
 
 ___
 
+The Scout and Recon are Fat Shark's budget options compared to their high end goggles. With FPV Goggles, you can connect two pairs to the same video feed when flying and have a spectator watch while you fly, so I plan on getting the cheaper goggles first and upgrading later and keeping my old ones. 
+
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/3_fat_shark_scout.jpg?raw=true" description="$219 Fat Shark Scout" product_aff_link="https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20" %}
+
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/5_fat_shark_recon.jpg?raw=true" description="$119 Fat Shark Recon" product_aff_link="https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20" %}
+
+The cheapest goggles I've found come with the TinyHawk, but can be purchased seperately for $45. They do not have a DVR function to record footage from your flights.
+
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/29_emax_goggles.jpg?raw=true" description="$45 Emax Transporter Goggles" product_aff_link="https://emax-usa.com/products/emax-transporter-fpv-goggles?ref=7P96ayzbPSlSj" %}
+
+___
+
 ## Drones
 
 ### My #1 reccomendation for a cheap, beginner, ready-to-fly drone would be:
