@@ -177,8 +177,8 @@ ___
 
 {% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/22_drone4combo.jpg?raw=true" description="$400 ARRIS Dazzle 5 Inch, 4S battery class FPV Racing Drone (comes with Q X7 Controller)" product_aff_link="https://www.amazon.com/ARRIS-Quadcopter-Radiolink-Transmitter-Flycolor/dp/B074TDGSMQ/ref=sr_1_52?tag=juliusakula-20" %}
 
-{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/28_air_unit_drone.jpg?raw=true" description="$475 iFlight Titan XL5 5 inch, 6S battery class with DJI Digital FPV Air Unit & GPS" product_aff_link="
-https://www.amazon.com/iFlight-Racing-Freestyle-Quadcopter-Digital/dp/B088NLDKZW/ref=sr_1_13?tag=juliusakula-20" %}
+{% include image.html img_url="https://github.com/murdockfpv/murdockfpv.github.io/blob/master/images/list-2021-01-03/28_air_unit_drone.jpg?raw=true" description="$475 iFlight Titan XL5 5 inch, 6S battery class with DJI Digital FPV Air Unit, GPS & GoPro mount" product_aff_link="
+https://www.amazon.com/iFlight-Titan-Adjustable-Camera-Protector/dp/B08J3VTLY4?tag=juliusakula-20" %}
 * The "air unit" that connects this drone to the DJI goggles is $180, which is what makes the drone itself that much more expensive. The video quality and range is next-level.
 
 ### Cinewhoop Drones
@@ -207,13 +207,30 @@ I think anyone getting started might want to try a pre-built, ready to fly drone
 3. A drone, unless you just play the Drone Simulator.
 4. Many LiPO batteries for the drone, and a LiPO battery charger.
 
-Reccomendations based on budget:
+### Reccomendations based on **budget**:
 
-1. Lowest: [$165 All-In-One EMAX Tinyhawk w/ Goggles & Controller](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj)
-2. Low-Mid: $345 -- [$119 Goggles, Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20), [$125 Controller, FrSky Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) [$99 Drone, Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
-3. Mid (My top reccomendation!): $540 --[$219 Goggles, Fat Shark Scout](https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20), [$218 Controller, FrSky Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20), [$99 Drone, Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
-4. High-mid: $910 -- [$219 Goggles, Fat Shark Scout](https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20), [$218 Controller, FrSky Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20), [$240 Cinewhoop drone](https://www.amazon.com/iFlight-Green-3inch-CineWhoop-Receiver/dp/B08CN6F6L1/ref=cm_cr_arp_d_product_top?tag=juliusakula-20), [$230 GoPro](https://www.amazon.com/GoPro-HERO7-Black-Commerce-Stabilization/dp/B083CNLVN3/ref=sr_1_3?tag=juliusakula-20)
-5. Highest: $1450 -- [$218 Controller, FrSky Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20), [$700 Goggles, DJI Digital FPV](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6), [$55 Patch Antenna for goggles](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR), [$475 Drone, 5inch propellors 6S battery with DJI Air Unit & GPS](https://www.amazon.com/iFlight-Racing-Freestyle-Quadcopter-Digital/dp/B088NLDKZW/ref=sr_1_13?dchild=1&keywords=drone+with+air+unit&qid=1609863480&sr=8-13)
+1. **Lowest $165**
+ * [(1/1) $165 All-In-One EMAX Tinyhawk w/ Goggles & Controller](https://emax-usa.com/products/tinyhawk-rtf-kit-including-googles-and-radio?ref=7P96ayzbPSlSj)
+2. Low-Mid: $345
+  * [(1/3) $119 Goggles, Fat Shark Recon](https://www.amazon.com/Shark-Recon-Goggles-Drone-Racing/dp/B07T27C78F/ref=sr_1_1?tag=juliusakula-20), 
+  * [(2/3) $125 Controller, FrSky Taranis Q X7](https://www.amazon.com/FrSky-Taranis-Channels-Transmitter-Controller/dp/B072559WH9?tag=juliusakula-20) 
+  * [(3/3) $99 Drone, Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
+3. **Mid: $540 (_best recommendation_)**
+ * [(1/3) $219 Goggles, Fat Shark Scout](https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20)
+ * [(2/3) $218 Controller, FrSky Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20)
+ * [(3/3) $99 Drone, Mobula6](https://www.amazon.com/Happymodel-Mobula6-Brushless-Crazybee-Controller/dp/B081F7ZG74/ref=sr_1_1?tag=juliusakula-20)
+4. High-mid: $910
+ * [(1/4) $219 Goggles, Fat Shark Scout](https://www.amazon.com/Fat-Shark-Scout-FPV-Goggles/dp/B07V7Y3WX3/ref=sr_1_2?tag=juliusakula-20)
+ * [(2/4) $218 Controller, FrSky Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20)
+ * [(3/4) $240 Cinewhoop drone](https://www.amazon.com/iFlight-Green-3inch-CineWhoop-Receiver/dp/B08CN6F6L1/ref=cm_cr_arp_d_product_top?tag=juliusakula-20)
+ * [(4/4) $230 GoPro Hero 7 Black](https://www.amazon.com/GoPro-HERO7-Black-Commerce-Stabilization/dp/B083CNLVN3/ref=sr_1_3?tag=juliusakula-20)
+5. Highest: $1680
+ * [(1/5) $218 Controller, FrSky Taranis X9D](https://www.amazon.com/FrSky-Taranis-Access-Telemetry-Silver/dp/B07VRP1V76/ref=sr_1_1?tag=juliusakula-20)
+ * [(2/5) $700 Goggles, DJI Digital FPV](https://www.amazon.com/dp/B07WQQ5KQ6/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=3d54faceba12fe3c8dbfaa3dc9278635&creativeASIN=B07WQQ5KQ6)
+ * [(3/5) $55 Patch Antenna for goggles](https://www.amazon.com/dp/B08MT3RGWR/ref=as_sl_pc_tf_til?tag=juliusakula-20&linkCode=w00&linkId=1618f261ce8735a4ba4da0a118fd06df&creativeASIN=B08MT3RGWR)
+ * [(4/5) $475 Drone, 5inch 6S battery with DJI Air Unit, GPS & GoPro mount](
+https://www.amazon.com/iFlight-Titan-Adjustable-Camera-Protector/dp/B08J3VTLY4?tag=juliusakula-20)
+ * [(5/5) $230 GoPro Hero 7 Black](https://www.amazon.com/GoPro-HERO7-Black-Commerce-Stabilization/dp/B083CNLVN3/ref=sr_1_3?tag=juliusakula-20)
 
 ___
 
