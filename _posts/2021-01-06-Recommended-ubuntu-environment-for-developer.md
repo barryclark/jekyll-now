@@ -1,25 +1,20 @@
 ---
 layout: post
-title: Recommended Mac environment for developers
+title: Recommended Ubuntu environment for developers
 ---
 
 There are a lot of cool applications, tools and computer magic tricks (really a lot!!).
 
 ![](../images/the_matrix_gun_rack.jpg)
 
-So from my experience, these are recommended for developers on a Mac machine (even some of those also for Ubuntu).
+So from my experience, these are recommended for developers on a Ubuntu machine.
 
 Note: There some recommendations which are not free, they will be marked as :neutral_face:.
 
-Package Manager
----------------
+Customizing Terminal
+--------------------
 
-[Homebrew](https://brew.sh/) - A package manager for Mac, a very basic tool and a must-have for daily use.
-
-Custom Terminal
----------------
-
-* [iTerm](https://www.iterm2.com/) - For a nicer and more comfortable terminal iTerm is recommended, and for guake like experience (drop down terminal) please refer to [this guide](https://stackoverflow.com/questions/30850430/iterm2-hide-show-like-guake).
+* [guake](http://guake-project.org/) - A quick access (by shortcut) and nicer terminal experience please check this out.
 
 
 Custom Shells
@@ -40,7 +35,7 @@ Shell.
 Git Commandline
 ---------------
 
-* [Fork](https://git-fork.com/) - A very useful git GUI, that enables all most used git commands in a very comfortable and clear UI.
+* [GitKraken](https://www.gitkraken.com/) - A very useful git GUI, that enables all most used git commands in a very comfortable and clear UI.
 * [Hub](https://github.com/github/hub) - hub is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier. That allows something cool like 'goto' command (='hub browse') from a git repo, that will open the browser on that repo in the current branch
 * [Macro for git commands guide](https://githowto.com/aliases) - Setting terminal macros for git commands, if for simplifying complex git commands or easy to remember commands.
 * [Setting up git graph](http://think-like-a-git.net/sections/graphs-and-git/visualizing-your-git-repository.html) - A command line option to show a git repo history graph.
@@ -56,19 +51,9 @@ Python
 Notes
 -----
 
-Note keeping, there are a lot of options out there, a couple of the best:
+Note keeping, there are a lot of options out there, I love to use:
 * [Google Keep](https://keep.google.com/) - Very easy-to-use with a lot of abilities (Dividing to categories, reminders by time or location and a lot more), Android Apple (iOS OSX) clients are available.
-* [Bear](http://www.bear-writer.com/) - Also very easy to use, and sync perfectly with all your Apple devices and can incorporate code snippets.
 
-Quick Actions
--------------
-
-* [Alfred](https://www.alfredapp.com/) - At is basic core abilities, it is similar to spotlight. But can be greatly extended with plugins, like phrase shortcuts and etc. :neutral_face:
-
-Custom Touch Action
--------------------
-
-[BetterTouchTool](https://folivora.ai/) -  Allows you to customize various input devices (touchpad, apple mouse or key sequence) on your Mac. Not free :neutral_face:
 
 I will update my recommendations along the way, there will always be something cooler and new in the future.
 Until next time :)
