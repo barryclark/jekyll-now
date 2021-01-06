@@ -11,6 +11,8 @@ import SeventhContainer from './components/top/SeventhContainer.vue'
 import EighthContainer from './components/top/EighthContainer.vue'
 import SupportFirstContainer from './components/supports/SupportFirstContainer.vue'
 import SupportSecondContainer from './components/supports/SupportSecondContainer.vue'
+import Graph from './components/staffs/Graph.vue'
+import Members from './components/staffs/Members.vue'
 
 Vue.use(Router)
 
@@ -34,7 +36,10 @@ export default new Router({
     {
       path: '/staffs',
       name: 'staff',
-      component: App
+      components: {
+        default: Graph,
+        sec: Members,
+      }
     },
     {
       path: '/members',
