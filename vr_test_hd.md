@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VR Photo Preview 
-permalink: /vr_test/
+permalink: /vr_test_hd/
 ---
 
 <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
