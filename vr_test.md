@@ -8,7 +8,7 @@ permalink: /vr_test/
 
 ## VR photo test!
 
-<script src="https://aframe.io/releases/0.2.0/aframe.min.js">
+<script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
 <a-scene>
   <a-sky src="https://aframe.io/aframe/examples/boilerplate/panorama/puydesancy.jpg" rotation="0 -20 0"></a-sky>
 </a-scene>
