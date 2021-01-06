@@ -10,10 +10,9 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
-Welcome 2021 with us and three speakers from Sainsburys, Hazelcast, and Exelerys at the January Cloud Native London virtual meetup, on Rambly and YouTube from 6:30pm GMT!
+Welcome 2021 with us and three speakers from Sainsburys, Hazelcast, and Exelerys at the January Cloud Native London virtual meetup, on Rambly / YouTube from 6:30pm GMT!
 
 [Join us on Rambly](https://rambly.app/#/rooms/twitch:cloudnativelon) or catch the Youtube livestream.
 
