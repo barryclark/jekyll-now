@@ -38,7 +38,7 @@ $$F[k] := \mathcal{DFT}\{f[n]\}[k] = \sum_{n=0}^{N-1}f[n]\exp\left(-i\,\frac{2\p
 
 which is an infinite sequence with index $$k\in \mathbb{Z}$$. Note that the sequence is $$N$$-periodic in $$k$$, because of the exponential term. So the DFT is completely defined e.g. by its values on $$k=0,1,\dots,N-1$$, which is why we usually only give it on these values. The Inverse DFT (IDFT) is an operation that converts the DFT $$F[k],\, k=0,1,\dots,N-1$$ back to the original sequence:
 
-$$f[n] = \mathcal{DFT}^{-1}\{F[k]\}[n] = \frac{1}{M}\sum_{k=0}^{N-1}F[k]\exp\left(i\,\frac{2\pi}{N} k n\right).$$
+$$f[n] = \mathcal{DFT}^{-1}\{F[k]\}[n] = \frac{1}{N}\sum_{k=0}^{N-1}F[k]\exp\left(i\,\frac{2\pi}{N} k n\right).$$
 
 Again, view this as some transformation on sequences which is (yet) unrelated to the FT. It is just an [invertible transform](https://math.stackexchange.com/questions/3454134/simple-proof-of-inverse-discrete-fourier-transformation-idft) on finite sequences. It is worth noting that the sequence reproduced by the DFT is also $$N$$-periodic, whereas the original sequence was only given on $$n=0,1,\dots,N-1$$. We will understand in the course of the article how the DFT and the FT relate and what the reason for the periodicity is.
 
@@ -207,7 +207,9 @@ This periodic extension is the reason for the periodicity of the DFT. It is not 
 
 Now lets see how $$F^{(w)}[k]$$ relates to the Fourier Transform of the original function. By proceeding analogous to the calculations in equations $$\eqref{Fourier_of_Sampled_Calc}$$ and $$\eqref{Fourier_of_Sampled}$$, we arrive at
 
-$$ F^{(w)}[k] = \left(\frac{1}{\Delta\! T}\sum_{n\in\mathbb{Z}} F(\nu-n\cdot \frac{1}{\Delta\! T})\right) \star \mathcal{F}\left\{W_T(t)\right\}(\nu) = \mathcal{DFT}\left\{(w\cdot f)[n]\right\},$$
+$$\begin{eqnarray} F^{(w)}[k] &=& \left(\left.\frac{1}{\Delta\! T}\sum_{m\in\mathbb{Z}} F\left(\nu-m\cdot \frac{1}{\Delta\! T}\right) \star \mathcal{F}\left\{W_T(t)\right\}(\nu)\right)\right|_{\nu=\nu_k} \\
+ &=& \mathcal{DFT}\left\{(w\cdot f)[n]\right\}[k],\, k\in \mathbb{Z}
+\end{eqnarray}$$
 
 which is what the Discrete Fourier Transform actually computes. The Discrete Fourier Transform of a finite sequence always implies a windowing of the underlying continuos function.
 
