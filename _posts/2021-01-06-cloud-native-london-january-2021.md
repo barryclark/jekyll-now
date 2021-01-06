@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London January 2021: Sainsburys, Hazelcast, and Exelerys"
 description: "three speakers from Sainsburys, Hazelcast, and Exelerys join us at the Cloud Native London meetup January 2021, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
-image: ![](/images/CNL_2020-12-02_Rambly.jpg)
+image: /images/CNL_2020-12-02_Rambly.jpg
 video: https://www.youtube.com/embed/ntXwpBF1NME
 tags:
   - Photos
