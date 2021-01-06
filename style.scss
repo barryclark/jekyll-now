@@ -283,6 +283,40 @@ footer {
   text-align: center;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.column_3 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
