@@ -1,12 +1,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <div id="container"></div>
-<div id="info">
-  360 panorama demo.<br><a href="/">Back to Blog Homepage</a>.
+<div style="position: absolute; top: 0px; width: 100%; color: #ffffff; padding: 5px; font-family:Monospace; font-size:13px; font-weight: bold; text-align:center;">
+  {{ include.description }}
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
 <script>
-var _IMAGE_ = "https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/2294472375_24a3b8ef46_o.jpg";
+var _IMAGE_ = "{{ include.img_url }}";
 var camera, scene, renderer;
 var isUserInteracting = false,
 onMouseDownMouseX = 0, onMouseDownMouseY = 0,
