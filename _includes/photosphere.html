@@ -30,7 +30,7 @@ function init() {
   scene.add( mesh );
   renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio( window.devicePixelRatio );
-  renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setSize( window.innerWidth * 0.5, window.innerHeight * 0.5 );
   container.appendChild( renderer.domElement );
   document.addEventListener( 'mousedown', onDocumentMouseDown, false );
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
