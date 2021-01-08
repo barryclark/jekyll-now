@@ -232,6 +232,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Ένα κρυπτονόμισμα ή επενδυτικό σχήμα που σας ανταμείβει για να εγγράφετε άλλους σε αυτό με ποσοστά, είναι απάτη.
 - Πολλές από τις «επενδυτικές ευκαιρίες» σε cloud mining είναι απάτες. Σκεφτείτε, αν κάποιοι έχουν εξοπλισμό που μπορεί να κάνει επικερδές mining σε κρυπτονομίσματα, γιατί να τον νοικιάσουν σε εσάς;
 - Ένα ανταλλακτήριο που πουλάει ένα κρυπτονόμισμα σε πολύ χαμηλή τιμή (π.χ. πουλάει Bitcoin στη μισή τιμή σε σχέση με άλλα ανταλλακτήρια) είναι απάτη.
+- Αν σας παίρνουν τηλέφωνο για να σας μιλήσουν για επενδύσεις είναι απάτη.
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [UCA](https://www.youtube.com/watch?v=utyqmJFwM7M), [OneCoin/OneLife](https://www.kathimerini.gr/1055057/interactive/epikairothta/ereynes/sta-ixnh-ths-vasilissas-twn-kryptonomismatwn), Yellow Trading Coin (YTC), S-coin/Coinspace, BitClub, Cryptonex/Bitcoin Revolution. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/](http://www.badbitcoin.org/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
@@ -270,7 +271,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2021-01-03
+Τελευταία ενημέρωση: 2021-01-09
 
 <!-- <div class="posts">
   {% for post in site.posts %}
