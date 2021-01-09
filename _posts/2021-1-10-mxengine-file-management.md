@@ -13,13 +13,13 @@ The first step the engine is need to perform when it is being launched, is to de
 
 During development it is also a good idea to switch application working directory to the user's source/resource directory. It is much easier for a game developer to store code sources, game objects and configs in one place, for example in his project directory. Using output binary directory as resource storage is error-prone: it can be cleared accidentally by a programmer or switched to other folder due to different IDE settings. As a bonus, when resource folder is separated from build folder, we do not have to copy all files to the binary directory or force user to hardcode the path to the root directory in the config. Also, binary and source directories can be easily detected and tracked by the build system, such as CMake. For example, in MxEngine I used some interesting tricks to perform working directory setup depending on how the engine is launched:
 
-```cmake
+{% highlight cmake %}
 # add macro definitions to built executable
 target_compile_definitions(${EXECUTABLE_NAME} PUBLIC MXENGINE_PROJECT_SOURCE_DIRECTORY="${CMAKE_CURRENT_SOURCE_DIR}")
 target_compile_definitions(${EXECUTABLE_NAME} PUBLIC MXENGINE_PROJECT_BINARY_DIRECTORY="${CMAKE_CURRENT_BINARY_DIR}")
-```
+{% endhighlight %}
 
-```cpp
+{% highlight cpp %}
 #if defined(MXENGINE_PROJECT_SOURCE_DIRECTORY) && defined(MXENGINE_PROJECT_BINARY_DIRECTORY)
 inline void LaunchFromSourceDirectory()
 {
@@ -30,8 +30,7 @@ inline void LaunchFromSourceDirectory()
 		std::filesystem::current_path(MXENGINE_PROJECT_SOURCE_DIRECTORY);
 	}
 }
-#endif
-```
+{% endhighlight %}
 
 If the executable is launched from CMake build directory, this means that the game is built by developer and we need to switch to the source directory. Otherwise no actions are performed as the game is probably launched from folder which already contains all necessary resources. Note that in the code above I use C++17 `std::filesystem` library to check current working directory and set a new one. In my opinion, filesystem library is one of the best things standard brought to us, and you should definitely use it if you are targeting modern language versions.
 
@@ -39,7 +38,7 @@ If the executable is launched from CMake build directory, this means that the ga
 
 When we are finally determined the root directory of our game, the good idea is to process all files: check if engine config presents in directory, load all system resources like shaders and lookup-textures, maybe generate some data for later use. Scanning process is very easy: you can simply check if file or directory exists by calling `std::filesystem::exists`, get file extensions by invoking member function `std::filesystem::filepath::extenstion` or even look through directories recursively using `std::filesystem::recursive_directory_iterator`:
 
-```cpp
+{% highlight cpp %}
 void FileManager::InitializeRootDirectory(const std::filesystem::path& directory)
 {
     using fs = std::filesystem;
@@ -58,7 +57,7 @@ void FileManager::InitializeRootDirectory(const std::filesystem::path& directory
         }
     }    
 }
-```
+{% endhighlight %}
 
  Note that in the code above I create a proximate file path from the entry got by directory iterator. This is a good idea if you plan to use these paths later, and especially if you are planning to serialize them for game distribution. Proximate paths are relative to the root directory and so they remain valid even if someone decide to move game folder to another place. Because of that, try to avoid loading resources from arbitrary filepaths - it is better to create a copy of the folder inside your root directory first, and then load from it. When the user decide to release his game, he will not have to look for absolute paths in the project and replace them with local, as everything already lies there it should.
 
@@ -66,7 +65,7 @@ void FileManager::InitializeRootDirectory(const std::filesystem::path& directory
 
 When the user wants to load resource from the code, he usually writes a string which somehow identifies the file. It can be a simple relative path to the requested resource, such as `level1/enemies/monster1` or some kind of associated name: `Level1.Enemies.Monster1`. And each time we have to allocate a string, convert it to a valid path, go to the file manager and ask: did you have a file `...`? You see that this process is rather slow and memory consuming. To fix this, we will perform the following optimization: let's convert all our file paths to some fixed format (unix-like paths, dot-separated paths, etc.) and then perform hashing. As a result, it will become possible to use simple integers as resource identifiers through all our system and go back to the path representation only when the file is actually needed to be loaded. The hashing can be performed with any simple algorithm, such as *crc32*, and can be done at compile-time on modern C++ versions:
 
-```cpp
+{% highlight cpp %}
 static constexpr uint32_t crc_table[256] =
 {
 	0x00000000, 0x77073096, 0xee0e612c, 0x990951ba, 0x076dc419, 0x706af48f,
@@ -130,7 +129,7 @@ constexpr StringId operator ""_id(const char* s, size_t size)
 {
 	return crc32(s, size);
 }
-```
+{% endhighlight %}
 
 With this code any string can be hashed at runtime via `crc32` function, or at compile time by wrapping it with `STRING_ID("smth")` macro or by adding `"smth"_id` postfix. After that we can create a global hash table which will map string hashes to actual paths and perform fast look-ups based on hash. And even if our database become so large that the collision will occur, we will easily spot it at the time of engine initialization, as all our files are contained inside project root directory. In such cases the developer simply need to think up a different name for a file, which is not a big deal in most cases.
 
