@@ -156,7 +156,15 @@
   category_gr: Δικηγόροι
   category_en: Lawyers
   location_gr: Αθήνα, Αττική, Ελλάδα
-  location_en: Athens, Attica, Greece  
+  location_en: Athens, Attica, Greece
+
+- company_gr: Τσιότσικας & Συνεργάτες
+  company_en: Tsiotsikas & Partners
+  url: https://www.itlawyers.gr/
+  category_gr: Δικηγόροι
+  category_en: Lawyers
+  location_gr: Νέα Ερυθραία, Αττική, Ελλάδα
+  location_en: New Erythrea, Attica, Greece
 
 - company_gr: Ιωάννης Ιγγλεζάκης
   company_en: Ioannis Igglezakis
@@ -414,6 +422,14 @@
   location_gr: Ηράκλειο, Κρήτη, Ελλάδα
   location_en: Heraklion, Crete, Greece
 
+- company_gr: MDC Stiakakis
+  company_en: MDC Stiakakis
+  url: https://www.mdcstiakakis.gr/
+  category_gr: Σύμβουλοι επιχειρήσεων
+  category_en: Business consultants
+  location_gr: Ηράκλειο, Κρήτη, Ελλάδα
+  location_en: Heraklion, Crete, Greece
+
 - company_gr: Miniweb
   company_en: Miniweb
   url: http://miniweb.gr
@@ -557,6 +573,14 @@
   category_en: IT solutions
   location_gr: Θεσσαλονίκη και Χαλκιδική, Ελλάδα
   location_en: Thessaloniki and Halkidiki, Greece
+
+- company_gr: Βυζάντιο
+  company_en: Vyzantio
+  url: https://byzantio.business.site/
+  category_gr: Supermarket
+  category_en: Supermarket
+  location_gr: Νέα Μουδανιά, Χαλκιδική, Ελλάδα
+  location_en: Nea Moudania, Halkidiki, Greece
 
 - company_gr: Hotwater
   company_en: Hotwater
@@ -796,7 +820,7 @@
   category_gr: Mini super market. <a href="http://www.okmarkets.gr/index.php?option=com_multimaps&view=multimaps&Itemid=73&lang=el">Ιστοσελίδα franchise</a>
   category_en: Mini super market. <a href="http://www.okmarkets.gr/index.php?option=com_multimaps&view=multimaps&Itemid=73&lang=el">Franchise page</a>
   location_gr: Αγία Παρασκευή, Αττική, Ελλάδα
-  location_en: Agia Paraskevi, Attica, Greece  
+  location_en: Agia Paraskevi, Attica, Greece
 
 - company_gr: Lennon Eco-gastrobar
   company_en: Lennon Eco-gastrobar
@@ -1003,6 +1027,14 @@
   url: 
   category_gr: Ηλεκτρικά είδη - εγκαταστάσεις 2104815981
   category_en: Electrical shop tel. 2104815981
+  location_gr: Πειραιάς, Αττική, Ελλάδα
+  location_en: Piraeus, Attica, Greece
+
+- company_gr: Κουφώματα Σπαθαράκης
+  company_en: Koufomata Spatharakis
+  url: https://www.spatharakis.gr/
+  category_gr: Κουφώματα
+  category_en: Window and door frames
   location_gr: Πειραιάς, Αττική, Ελλάδα
   location_en: Piraeus, Attica, Greece
   
