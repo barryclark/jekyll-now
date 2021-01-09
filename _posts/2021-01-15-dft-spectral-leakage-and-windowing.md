@@ -54,43 +54,60 @@ From !!EQUATION!! above we know that the DFT actually calculates provided that w
 
 $$\mathcal{DFT}\left\{ f[n]\right\}[k]=  \left(\left.\frac{1}{\Delta\! T}\sum_{m\in\mathbb{Z}} F\left(\nu-m\cdot \frac{1}{\Delta\! T}\right) \star \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu)\right)\right|_{\nu=\nu_k},\, k\in \mathbb{Z}. \label{DFT_expression_convolution_sum} $$
 
-So now lets look at the convolution term separately. We just have to calculate the convolution of $$F(\nu)$$ with the FT of the window function and can then use the translation property of the convolution to find an expression for the convolution with $$F(\nu-\frac{m}{\Delta T})$$. Lets first find an expression for the FT of the rectangular function:
+So now lets look at the convolution term separately. We just have to calculate the convolution of $$F(\nu)$$ with the FT of the window function and can then use the translation property of the convolution to find an expression for the convolution with $$F(\nu-\frac{m}{\Delta T})$$. Let's first find an expression for the FT of the rectangular function:
+
+
+!!!!!!!!!!!!TODO !!!!!!!!!!!!!!!!!!!!!
+CAUTION Wolfram uses the other convention +i for the forward fourier transform
+https://www.wolframalpha.com/input/?i=fourier%28f%28t%2FT-1%2F2%29%2Ct%29
+The result I obtained is correct, but we cannot just use the scale and shift as I did.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 $$\begin{eqnarray}
 \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu)
- &=& \exp(-i\,\pi \nu) \cdot \mathcal{F}\left\{\text{rect}\left(\frac{t}{T}\right)\right\}(\nu) \\
- &=& \exp(-i\,\pi \nu)T  \cdot  \mathcal{F}\left\{\text{rect}(t)\right\}(T\nu) \\
- &=& T \, \exp(-i\,\pi \nu) \cdot \text{sinc}(T\nu),
+ &=& T \cdot  \mathcal{F}\left\{\text{rect}\left(t-\frac{T}{2}\right)\right\}(T\nu) \\
+ &=& T \exp\left(-i\,2\pi \frac{\nu T}{2}\right) \cdot \mathcal{F}\{\text{rect}(t)\}(T \nu) \\
+ &=& T \, \exp(-i\,\pi \nu T) \cdot \text{sinc}(T\nu),
 \end{eqnarray}$$
 
-where we have first used the [time shifting](https://en.wikipedia.org/wiki/Fourier_transform#Translation_/_time_shifting) property and second the [scaling property](https://en.wikipedia.org/wiki/Fourier_transform#Time_scaling) of the Fourier Transform. With $$\text{sinc}$$ we denote the *normalized* sinc function $$\text{sinc(x)} = \frac{sin(\pi x)}{\pi x}$$. Next, let's see what the convolution with $$F(\nu)$$, the bandlimited Fourier Transform of $$f(t)$$, results in. For that we use the fact that we can express $$F(\nu)$$ as a Fourier Series due to the fact that $$f(t)$$ is periodic.
+where we have first used the [scaling property](https://en.wikipedia.org/wiki/Fourier_transform#Time_scaling) property and second the [time shifting](https://en.wikipedia.org/wiki/Fourier_transform#Translation_/_time_shifting) of the Fourier Transform. With $$\text{sinc}$$ we denote the *normalized* sinc function $$\text{sinc(x)} = \frac{sin(\pi x)}{\pi x}$$. Next, let's see what the convolution with $$F(\nu)$$, the bandlimited Fourier Transform of $$f(t)$$, results in. We use the fact that we can express $$F(\nu)$$ as a Fourier Series because $$f(t)$$ is periodic.
 
 $$\begin{eqnarray}
-F(\nu) \star \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu) &=&  T \, \exp(-i\,\pi \nu)\cdot F(\nu) \star \text{sinc}(T\nu) \\
- &=& T \, \exp(-i\,\pi \nu) \cdot \sum_{l\in \mathbb{Z}} c[l] \delta(\nu-\frac{l}{T})\star\text{sinc}(T\nu) \\
- &=& T \, \exp(-i\,\pi \nu) \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}(T\nu-l). \\
+F(\nu) \star \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu)
+ &=& T \, \exp(-i\,\pi \nu T)\cdot F(\nu) \star \text{sinc}(T\nu) \\
+ &=& T \, \exp(-i\,\pi \nu T) \cdot \sum_{l\in \mathbb{Z}} c[l] \delta\left(\nu-\frac{l}{T}\right)\star\text{sinc}(T\nu) \\
+ &=& T \, \exp(-i\,\pi \nu T) \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}(T\nu-l). \\
 \end{eqnarray}$$
 
 Now we can apply [translational equivalence](https://en.wikipedia.org/wiki/Convolution#Translational_equivariance) property of the convolution to obtain
 
 $$\begin{eqnarray}
-F(\nu &-& \frac{m}{\Delta\!T}) \star \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu) \\
-  &=& \left.T \, \exp(-i\,\pi \nu') \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}(T\nu'-l)\right|_{\nu'=\nu-\frac{m}{\Delta\!T}} \\
-  &=& T \, \exp\left(-i\,\pi \left(\nu-\frac{m}{\Delta\!T}\right)\right) \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}\left(T\left(\nu-\frac{m}{\Delta\!T}\right)-l\right).
+F\left(\nu - \frac{m}{\Delta\!T}\right) &\star& \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu) \\
+  &=& \left.T \, \exp(-i\,\pi \nu' T) \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}(T\nu'-l)\right|_{\nu'=\nu-\frac{m}{\Delta\!T}} \\
+  &=& T \, \exp(-i\,\pi (T \nu-m N)) \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}(T\nu-m N-l), \label{convolution_inside_dft}
 \end{eqnarray}$$
 
 To calculate the value of the DFT at index $$k$$ we have to evaluate this expression at the frequency $$\nu = \nu_k = \frac{k}{N} \frac{1}{\Delta\!T} = \frac{k}{T}$$. Let's have a look at the sinc expression first.
 
 $$
-\text{sinc}\left(T\left(\nu_k-\frac{m}{\Delta\!T}\right)-l\right)
- = \text{sinc}(k-mN-l) = \delta[k-mN-l],
+\text{sinc}(T\nu_k-m N-l) = \text{sinc}(k-mN-l) = \delta[k-mN-l],
 $$
 
-with the single index [Kronecker Delta](https://en.wikipedia.org/wiki/Kronecker_delta) or unit sample function $$\delta[j] = \delta_{j0},\, j\in \mathbb{Z}$$. The fact that we can always write $$\sum_{m\in\mathbb{Z}}g[m]\delta[m-m_0] = g[m_0]$$ allows us to greatly simplify equation $$\eqref{DFT_expression_convolution_sum}$$ by plugging in the results we obtained so far. ????????????? TRUE OR NOT????
-
+because $$\text{sinc}(j)=\delta [j], j\in \mathbb{Z}$$, using the single index [Kronecker Delta](https://en.wikipedia.org/wiki/Kronecker_delta) or unit sample function $$\delta[j] = \delta_{j0},\, j\in \mathbb{Z}$$. Next, we'll use the [sifting property](https://en.wikipedia.org/wiki/Kronecker_delta#Properties_of_the_delta_function) of the Kronecker delta to simplify equation $$\eqref{convolution_inside_dft}$$ at $$\nu=\nu_k$$:
 
 $$\begin{eqnarray}
-\mathcal{DFT}\{f[n]\} =
+\left.F\left(\nu - \frac{m}{\Delta\!T}\right) \star \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu)\right|_{\nu = \nu_k}
+ &=&  T \, \exp(-i\,\pi (T\nu_k-m N)) \cdot c[k-mN] \\
+ &=&  T \, \exp(-i\,\pi (k-m N)) \cdot c[k-mN] \\
+ &=& T \cdot (-1)^{(k-m N)}  \cdot c[k-mN]
+\end{eqnarray}$$
+
+so that we have for the DFT at index $$k$$
+
+$$\begin{eqnarray}
+\mathcal{DFT}\{f[n]\}[k]
+ &=& \frac{T}{\Delta\!T} \sum_{m \in \mathbb{Z}} (-1)^{(k-m N)} \cdot c[k-mN] \\
+ &=& N \cdot (-1)^k \cdot \sum_{m \in \mathbb{Z}} (-1)^{m N} \cdot c[k-mN]
 \end{eqnarray}$$
 
 # Endnotes
