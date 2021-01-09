@@ -38,77 +38,57 @@ $$c[n] := c_n = \frac{1}{T}\int_{-T/2}^{T/2}\text{d}t\,f(t)\exp\left(-i \frac{2\
 
 Using the definition of the FT from the [previous post](/blog/2020/the-discrete-fourier-transform/) we know that the FT of any plane wave is a delta peak, i.e. $$\mathcal{F}\{\exp(-i\,2\pi \nu_0 t)\}(\nu)=\delta(\nu-\nu_0)$$, such that
 
-$$F(\nu) := \mathcal{F}\{f(t)\} = \sum_{l\in \mathbb{Z}} c[l] \delta(\nu-\frac{l}{T}).$$
+$$F(\nu) := \mathcal{F}\{f(t)\} = \sum_{m\in \mathbb{Z}} c[m] \delta(\nu-\frac{m}{T}) \label{FT_of_periodic_function}.$$
 
-That means the FT of a periodic function is nonzero only at discrete (but infinite) sequence of frequencies which are integer multiples of the inverse period $$\frac{1}{T}$$. Note that if the function f(t) is bandlimited this means there exists an $$n_0 \in \mathbb{N}$$, such that $$c[n]=0$$ for all $$\vert n \vert>n_0$$.
+That means the FT of a periodic function is nonzero only at discrete (but infinite) sequence of frequencies which are integer multiples of the inverse period $$\frac{1}{T}$$.
 
-## The DFT of a Periodic Function
+Now let's make some observations which are going to be helpful later. Let's assume that our function is bandlimited, which means that $$F(\nu)=0,\, \forall \nu>\nu_{max}$$. Note that if the function f(t) is bandlimited this means there exists an $$N_{max} \in \mathbb{N}$$, such that $$c[n]=0$$ for all $$\vert n \vert>N_{max}$$.
+
+## The FT of a Periodic, Windowed, And Sampled Function
 Let's assume we have, as above, a bandlimited periodic function $$f(t)$$ with period $$T$$. Lets denote our uniform sampling period with $$\Delta T$$ and assume that we have [sampled fine enough](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem) so we won't run into aliasing issues. We sample a full period[^full_period] $$[0,T)$$ using $$N$$ samples on sampling points $$t_n$$ so that
 
 $$\begin{eqnarray}
 t_n &=& n \Delta\!T,\,n=0,1,\dots,N-1 \\
-\Delta T &=& \frac{T}{N}
+\Delta T &=& \frac{T}{N}.
 \end{eqnarray}$$
 
-From !!EQUATION!! above we know that the DFT actually calculates provided that we apply an additional, explicit window function to our data:
+In the frequency domain we sample the interval $$[0,\frac{1}{\Delta\!T}]$$ of the Discrete Time Fourier Transform uniformly at frequencies
 
-$$\mathcal{DFT}\left\{ f[n]\right\}[k]=  \left(\left.\frac{1}{\Delta\! T}\sum_{m\in\mathbb{Z}} F\left(\nu-m\cdot \frac{1}{\Delta\! T}\right) \star \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu)\right)\right|_{\nu=\nu_k},\, k\in \mathbb{Z}. \label{DFT_expression_convolution_sum} $$
+$$\nu_k = \frac{k}{N} \frac{1}{\Delta\!T} = \frac{k}{T}, k=0,1,\dots,N-1,$$
 
-So now lets look at the convolution term separately. We just have to calculate the convolution of $$F(\nu)$$ with the FT of the window function and can then use the translation property of the convolution to find an expression for the convolution with $$F(\nu-\frac{m}{\Delta T})$$. Let's first find an expression for the FT of the rectangular function:
+which are actually the points that we are sampling the DFT on !!TODO SMOOTH THIS, BRING STRUCTURE!!!
 
+Rewriting !!EQUATION!! we know that the DFT actually calculates provided that we apply an additional, explicit window function to our data:
 
-!!!!!!!!!!!!TODO !!!!!!!!!!!!!!!!!!!!!
-CAUTION Wolfram uses the other convention +i for the forward fourier transform
-https://www.wolframalpha.com/input/?i=fourier%28f%28t%2FT-1%2F2%29%2Ct%29
-The result I obtained is correct, but we cannot just use the scale and shift as I did.
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-$$\begin{eqnarray}
-\mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu)
- &=& T \cdot  \mathcal{F}\left\{\text{rect}\left(t-\frac{T}{2}\right)\right\}(T\nu) \\
- &=& T \exp\left(-i\,2\pi \frac{\nu T}{2}\right) \cdot \mathcal{F}\{\text{rect}(t)\}(T \nu) \\
- &=& T \, \exp(-i\,\pi \nu T) \cdot \text{sinc}(T\nu),
+$$\begin{eqnarray}\mathcal{DFT}\left\{ f[n]\right\}[k]
+&=&  \mathcal{F}\left\{f(t)\cdot III_{\Delta\!T}(t) \cdot \text{rect}\left(\frac{t}{T}-\frac{1}{2}\right)\right\}(\nu_k)\\
+&=& \left.F(\nu) \star \mathcal{F}\left\{III_{\Delta\!T}(t)\right\}(\nu) \star \mathcal{F}\left\{\text{rect}\left(\frac{t}{T}-\frac{1}{2}\right)\right\}(\nu)\right|_{\nu=\nu_k} \\
 \end{eqnarray}$$
 
-where we have first used the [scaling property](https://en.wikipedia.org/wiki/Fourier_transform#Time_scaling) property and second the [time shifting](https://en.wikipedia.org/wiki/Fourier_transform#Translation_/_time_shifting) of the Fourier Transform. With $$\text{sinc}$$ we denote the *normalized* sinc function $$\text{sinc(x)} = \frac{sin(\pi x)}{\pi x}$$. Next, let's see what the convolution with $$F(\nu)$$, the bandlimited Fourier Transform of $$f(t)$$, results in. We use the fact that we can express $$F(\nu)$$ as a Fourier Series because $$f(t)$$ is periodic.
-
-$$\begin{eqnarray}
-F(\nu) \star \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu)
- &=& T \, \exp(-i\,\pi \nu T)\cdot F(\nu) \star \text{sinc}(T\nu) \\
- &=& T \, \exp(-i\,\pi \nu T) \cdot \sum_{l\in \mathbb{Z}} c[l] \delta\left(\nu-\frac{l}{T}\right)\star\text{sinc}(T\nu) \\
- &=& T \, \exp(-i\,\pi \nu T) \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}(T\nu-l). \\
-\end{eqnarray}$$
-
-Now we can apply [translational equivalence](https://en.wikipedia.org/wiki/Convolution#Translational_equivariance) property of the convolution to obtain
-
-$$\begin{eqnarray}
-F\left(\nu - \frac{m}{\Delta\!T}\right) &\star& \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu) \\
-  &=& \left.T \, \exp(-i\,\pi \nu' T) \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}(T\nu'-l)\right|_{\nu'=\nu-\frac{m}{\Delta\!T}} \\
-  &=& T \, \exp(-i\,\pi (T \nu-m N)) \cdot \sum_{l\in \mathbb{Z}} c[l] \text{sinc}(T\nu-m N-l), \label{convolution_inside_dft}
-\end{eqnarray}$$
-
-To calculate the value of the DFT at index $$k$$ we have to evaluate this expression at the frequency $$\nu = \nu_k = \frac{k}{N} \frac{1}{\Delta\!T} = \frac{k}{T}$$. Let's have a look at the sinc expression first.
+Let's look at the Fourier Transforms seperately and perform the convolution step by step from right to left. The Fourier Transform of the shifted and scaled rectangular function is[^shifted_rect_ft]
 
 $$
-\text{sinc}(T\nu_k-m N-l) = \text{sinc}(k-mN-l) = \delta[k-mN-l],
+\mathcal{F}\left\{\text{rect}\left(\frac{t}{T}-\frac{1}{2}\right)\right\}(\nu) = T\,\exp(-i\pi T\nu)\,\text{sinc}(T\nu),
 $$
 
-because $$\text{sinc}(j)=\delta [j], j\in \mathbb{Z}$$, using the single index [Kronecker Delta](https://en.wikipedia.org/wiki/Kronecker_delta) or unit sample function $$\delta[j] = \delta_{j0},\, j\in \mathbb{Z}$$. Next, we'll use the [sifting property](https://en.wikipedia.org/wiki/Kronecker_delta#Properties_of_the_delta_function) of the Kronecker delta to simplify equation $$\eqref{convolution_inside_dft}$$ at $$\nu=\nu_k$$:
+where $$\text{sinc}(t)=\frac{\sin(\pi t)}{\pi t}$$ is the *normalized* sinc function. Next, the [FT of the Dirac comb](https://en.wikipedia.org/wiki/Dirac_comb#Fourier_transform) is
+
+$$
+\mathcal{F}\left\{III_{\Delta\!T}(t)\right\}(\nu) = \frac{1}{\Delta\!T}III_{\Delta\!T}(\nu).
+$$
+
+Now let's convolve the Dirac comb with the FT of the rectangular function:
 
 $$\begin{eqnarray}
-\left.F\left(\nu - \frac{m}{\Delta\!T}\right) \star \mathcal{F}\left\{\text{rect}\left(\frac{t-\frac{T}{2}}{T}\right)\right\}(\nu)\right|_{\nu = \nu_k}
- &=&  T \, \exp(-i\,\pi (T\nu_k-m N)) \cdot c[k-mN] \\
- &=&  T \, \exp(-i\,\pi (k-m N)) \cdot c[k-mN] \\
- &=& T \cdot (-1)^{(k-m N)}  \cdot c[k-mN]
+&\mathcal{F}&\left\{III_{\Delta\!T}(t)\right\}(\nu) \star \mathcal{F}\left\{\text{rect}\left(\frac{t}{T}-\frac{1}{2}\right)\right\}(\nu) \\
+ &=& \frac{T}{\Delta\!T} \sum_{l \in \mathbb{Z}} \delta\left(\nu-\frac{l}{\Delta\!T}\right) \star \exp(-i\pi T\nu)\,\text{sinc}(T\nu) \\
+ &=& N \sum_{l \in \mathbb{Z}} \exp(-i\pi (T\nu-l N))\,\text{sinc}(T\nu-l N).
 \end{eqnarray}$$
 
-so that we have for the DFT at index $$k$$
+So far so good. Now for the final step of the convolution, which is to convolve $$F(\nu)$$ with that expression. For that we will plug in the representation of $$F(\nu)$$ from eq. $$\eqref{FT_of_periodic_function}$$:
 
-$$\begin{eqnarray}
-\mathcal{DFT}\{f[n]\}[k]
- &=& \frac{T}{\Delta\!T} \sum_{m \in \mathbb{Z}} (-1)^{(k-m N)} \cdot c[k-mN] \\
- &=& N \cdot (-1)^k \cdot \sum_{m \in \mathbb{Z}} (-1)^{m N} \cdot c[k-mN]
-\end{eqnarray}$$
+!!!!!!!! TODO HIER WEITER!!!!!!!!!!!
 
 # Endnotes
 [^full_period]: We can do an analogous calculation for when $$[0,T)$$ contains an integer number of periods. So I am going to stick to sampling one period without loss of generality.
+[^shifted_rect_ft]: See [this answer](https://dsp.stackexchange.com/questions/1389/how-does-shift-and-scaling-inside-of-a-function-affect-its-fourier-transform) on StackExchange and [this calculation](https://www.wolframalpha.com/input/?i=Fourier%28f%28t%2FT-1%2F2%29%2Ct%29) on Wolfram Alpha. Note that both derivations use a different sign convention and the circular frequency $$\omega$$ instead of $$2 \pi \nu$$. Note also, that trying to derive this with using the shifting and scaling property one after the other will lead to [wrong results and sadness](https://www.quora.com/How-can-I-calculate-the-Fourier-transform-of-a-scaled-and-shifted-signal-Which-order-should-I-respect).
