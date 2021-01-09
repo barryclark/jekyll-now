@@ -3,7 +3,7 @@ layout: post
 title: I have read Game Engine Architecture book. Here is what I think about it
 ---
 
-![_config.yml]({{ site.baseurl }}/images/game-engine-architecture-book.png)
+![game engine architecture book]({{ site.baseurl }}/images/game-engine-architecture-book.png)
 
 Yesterday evening I ended up reading one of the biggest and one of the most interesting books in my life - Game Engine Architecture by Jason Gregory ([@jqgregory](https://twitter.com/jqgregory)). It contains an unimaginable amount of knowledge about almost all aspects of game engine: rendering, physics, audio, animations, resource management... and this list goes on. If you are planning (or already writing) your own game engine, you definitely should read this book. I would recommend going through the first chapters of the GAE even if you are not planning to go deep into engine dev - 1-4 chapters contain necessary information for any programmer: they teach you about memory management, parallelism, computer architecture and development tools like compilers, version control systems and profilers. I was a bit upset to find out that the book does not cover AI and networking subsystems. The third edition brought to us chapter about parallelism, so who knows, maybe forth edition will cover remaining topics? the book already covers so many aspects of game engine development, so adding remaining pieces will make it a truly ultimate source of knowledge.
 
