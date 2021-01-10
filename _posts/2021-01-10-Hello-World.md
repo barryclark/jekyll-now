@@ -15,3 +15,5 @@ It's not my first blog. So I have some experience.
 I'm curious how this will go on.
 
 -Aaron
+
+P.S. If you don't want to miss a new article you can subscribe to my newsletter: https://seu2.cleverreach.com/f/280885-279362/
