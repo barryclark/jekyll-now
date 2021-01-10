@@ -16,4 +16,4 @@ I'm curious how this will go on.
 
 -Aaron
 
-P.S. If you don't want to miss a new article you can subscribe to my newsletter: [](https://seu2.cleverreach.com/f/280885-279362/)
+P.S. If you don't want to miss a new article you can subscribe to my newsletter: [Link](https://seu2.cleverreach.com/f/280885-279362/)
