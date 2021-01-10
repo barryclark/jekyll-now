@@ -10,6 +10,8 @@ This blog is inspired by other developers who also make something like I do here
 
 My goal is to write every month at least 2 articles.
 
+It's not my first blog. So I have some experience.
+
 I'm curious how this will go on.
 
 -Aaron
