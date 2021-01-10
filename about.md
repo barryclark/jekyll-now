@@ -4,12 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello I'm Aaron.
 
-### More Information
+I'm a college student from Switzerland.
 
-A place to include any other types of information that you'd like to include about yourself.
+In my free time I like to program. I also help out on the Microsoft [PowerToys](https://github.com/microsoft/powertoys) project. There I label issues and search for duplicates.
 
-### Contact me
+Programming languages I can programm:
+* PHP (very good)
+* Javascript
+* Python
+* a bit C#
+* Minecraft Commands
 
-[email@domain.com](mailto:email@domain.com)
+Markup languages:
+* HTML
+* A bit XAML
+
+Programming Languages I could program in the past:
+* Minecraft plugins with Java
+
+I also own a ECDL/ICDL base certificate. (https://member.sophiatesting.com/data/pdffiles/d2581f6771d13239b99fa478930cff9d.pdf?cache=1610264602499)
