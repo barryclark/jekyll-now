@@ -7,7 +7,7 @@ date: 2021-01-15
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'The DFT: Spectral Leakage, Windowing, and Periodic Functions'
+title: 'Understanding the DFT: Spectral Leakage, Windowing, and Periodicity'
 comments_id:
 ---
 TODO introduction: this post is not so much about different windowing strategies, because there is already excellent work on it. More about where this effect comes from and why it does not seem to appear when the functions are periodic.
@@ -44,7 +44,7 @@ That means the FT of a periodic function is nonzero only at discrete (but infini
 
 Now let's make some observations which are going to be helpful later. Let's assume that our function is bandlimited, which means that $$F(\nu)=0,\, \forall \nu>\nu_{max}$$. Note that if the function f(t) is bandlimited this means there exists an $$N_{max} \in \mathbb{N}$$, such that $$c[n]=0$$ for all $$\vert n \vert>N_{max}$$.
 
-## The FT of a Periodic, Windowed, And Sampled Function
+## Calculating the FT of a Periodic, Windowed, And Sampled Function
 Let's assume we have, as above, a bandlimited periodic function $$f(t)$$ with period $$T$$. Lets denote our uniform sampling period with $$\Delta T$$ and assume that we have [sampled fine enough](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem) so we won't run into aliasing issues. We sample a full period[^full_period] $$[0,T)$$ using $$N$$ samples on sampling points $$t_n$$ so that
 
 $$\begin{eqnarray}
@@ -85,10 +85,40 @@ $$\begin{eqnarray}
  &=& N \sum_{l \in \mathbb{Z}} \exp(-i\pi (T\nu-l N))\,\text{sinc}(T\nu-l N).
 \end{eqnarray}$$
 
-So far so good. Now for the final step of the convolution, which is to convolve $$F(\nu)$$ with that expression. For that we will plug in the representation of $$F(\nu)$$ from eq. $$\eqref{FT_of_periodic_function}$$:
+So far so good. And now for the final step of the convolution, which is to convolve $$F(\nu)$$ with that expression. For that we will plug in the representation of $$F(\nu)$$ from eq. $$\eqref{FT_of_periodic_function}$$. Furthermore, we will evaluate the result of this convolution at $$\nu=\nu_k=\frac{k}{T}$$.
 
-!!!!!!!! TODO HIER WEITER!!!!!!!!!!!
+$$\begin{eqnarray}
+&\mathcal{F}&\left\{f(t)\cdot III_{\Delta\!T}(t) \cdot \text{rect}\left(\frac{t}{T}-\frac{1}{2}\right)\right\}(\nu_k) \\
+ &=& N \left.\sum_{l\in \mathbb{Z}}\sum_{m \in \mathbb{Z}} c[m] \, \delta\left(\nu-\frac{m}{T}\right)\star (\exp(i \,\pi (T\nu-l N))\,\text{sinc}(T\nu - l N)) )\right|_{\nu=\nu_k=\frac{k}{T}} \\
+ &=& N \sum_{l\in \mathbb{Z}}\sum_{m \in \mathbb{Z}} c[m] \,\exp(i \,\pi (k-l N -m))\,\text{sinc}(k - l N -m))  \\
+ &=& N \sum_{l \in \mathbb{Z}} c[k-l N] \\
+ &=& N \cdot \widetilde{c}[k], \text{ with } \widetilde{c}[k] := \sum_{l \in \mathbb{Z}} c[k-l N]
+\end{eqnarray}$$
+
+Here we have used the fact that the normalized sinc of any integer argument is one exactly if the argument is zero and zero otherwise. This allowed us to sift the sum over $$m$$, because the only nonzero term occurs when $$m = k- l N$$ is true [^exponential_term]. Note also, that we introduced the periodic summation $$\widetilde{c}[k]$$, which is a concept that we encountered in the previous article in the context of the finite sequence of function values. We assumed that our original function $$f$$ is bandlimited and further that our sampling frequency is higher than twice the Nyquist frequency. We can easily see that this means that the Fourier coefficients satisfy $$c[k]=0 \; \forall \; \vert k\vert>\frac{N}{2}$$, which means that the (non periodized) sequence $$c[k]$$ has at most $$N$$ nonzero values. This, in turn, means that the periodic summation $$\widetilde{c}[k]$$ is just the infinite repetion of the $$N$$ nonzero values of $$c[k]$$.
+
+## Significance for the DFT
+What we have calculated previously is exactly the expression for the DFT
+
+$$\mathcal{DFT}\{f[n]\}=N \widetilde{c}[k],$$
+
+where we have assumed that a $$T$$-periodic function $$f(t)$$ was sampled on $$N$$ points which span exactly one period $$[0,T)$$ of this function. We can interpret this result in two ways, which will each teach us something about the DFT.
+
+### Spectral Leakage and the DFT of Periodic Signals
+Our primary motivator was to learn something about spectral leakage. We already saw that spectral leakage is caused by the windowing that is always implicit in the DFT. It means that the FT of the sampled function is convolved with the FT of the windowing function. This will always alter the shape of the FT compared to the FT of the non-windowed function.
+
+<figure>
+ <img src="/blog/images/fourier-dft-periodic/sinc-and-leakage.svg" alt="Leakage and Sinc" style="width:100%">
+ <figcaption>Figure 1. Illustration of the effect of sampling and windowing on a single plane wave. <b>A</b> An integer number of  periods of the plane wave is sampled. Here the sampling points and the sinc in the Fourier domain align in such a way, that only the expected frequency of the original plane wave is visible. <b>B</b> When we don't sample an integer number of periods, sampling points do not align with the zero crossing of the sinc function in Fourier space. Now we observe is <i>spectral leakage</i>, because frequencies other than the expected are nonzero.</figcaption>
+</figure>
+
+For periodic functions this is no different, but the math aligns in a special way for them. The Fourier Series lets us write every periodic function as a sequence of plane waves, whose FT is a delta peak. Because of the implicit rectangular window they will be convolved with a sinc, to also give sinc functions in Fourier space which are centered at the corresponding frequency. But by sampling exactly one period we have aligned the samples in Fourier space in such a way that we are only sampling the central peak of the sinc and all other samples fall on zero crossings. While the periodic signals are just as affected by the windowing, this "coincidence" makes the DFT free of noticeable spectral leakage. Figure 1, which is inspired by [this great article](https://www.edn.com/windowing-functions-improve-fft-results-part-i/), gives a visual explanation.
+
+### The Inherent Periodicity of the DFT
+Up to now I have thought of $$f(t)$$ as some kind of infinite periodic function like $$f(t)=\sin(t)$$ where we have just "clipped" one period $$T=2\pi$$.
+
 
 # Endnotes
 [^full_period]: We can do an analogous calculation for when $$[0,T)$$ contains an integer number of periods. So I am going to stick to sampling one period without loss of generality.
 [^shifted_rect_ft]: See [this answer](https://dsp.stackexchange.com/questions/1389/how-does-shift-and-scaling-inside-of-a-function-affect-its-fourier-transform) on StackExchange and [this calculation](https://www.wolframalpha.com/input/?i=Fourier%28f%28t%2FT-1%2F2%29%2Ct%29) on Wolfram Alpha. Note that both derivations use a different sign convention and the circular frequency $$\omega$$ instead of $$2 \pi \nu$$. Note also, that trying to derive this with using the shifting and scaling property one after the other will lead to [wrong results and sadness](https://www.quora.com/How-can-I-calculate-the-Fourier-transform-of-a-scaled-and-shifted-signal-Which-order-should-I-respect).
+[^exponential_term]: Note also, that for $$m = k- l N$$, the exponential term becomes $$\exp(0)=1$$.
