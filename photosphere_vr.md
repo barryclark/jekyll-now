@@ -8,4 +8,6 @@ permalink: /photosphere_vr/
 
 {% include PHOTOSPHERE.html img_url="/images/DJI_0354.JPG" id="viewer1" %}
 
+___
+
 {% include PHOTOSPHERE.html img_url="/images/DJI_0358.JPG" id="viewer2" %}
