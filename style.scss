@@ -194,7 +194,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $white;
+  color: #e1d89f;
   cursor: pointer;
   font-family: "Computer Modern", Times, serif;
   font-weight: 300;
@@ -227,14 +227,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $white;
+    color: #e1d89f;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $white;
+      color: #e1d89f;
     }
   }
 }
