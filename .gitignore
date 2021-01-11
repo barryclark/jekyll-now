@@ -4,6 +4,8 @@ _site
 .jekyll-metadata
 .bundle
 .sass-cache
+.directory
+_posts/_*.md
 Gemfile
 Gemfile.lock
 node_modules
