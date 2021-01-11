@@ -5,4 +5,7 @@ permalink: /photosphere_vr/
 ---
 
 {% include PHOTOSPHERE_LIBRARY.html %}
+
+{% include PHOTOSPHERE.html img_url="/images/DJI_0354.JPG" id="viewer" %}
+
 {% include PHOTOSPHERE.html img_url="/images/DJI_0358.JPG" id="viewer" %}
