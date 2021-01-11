@@ -1,0 +1,16 @@
+<div id="{{include.id}}"></div>
+
+<style>
+  /* the viewer container must have a defined size */
+  #{{include.id}} {
+    width: 100vw;
+    height: 50vh;
+  }
+</style>
+
+<script>
+  var viewer = new PhotoSphereViewer.Viewer({
+    container: document.querySelector('#{{include.id}}'),
+    panorama: '{{include.img_url}}'
+  });
+</script>
