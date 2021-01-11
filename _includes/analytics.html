@@ -14,3 +14,15 @@
 	</script>
 	<!-- End Google Analytics -->
 {% endif %}
+
+{% if site.clicky %}
+    <script>
+        var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push({{ site.clicky }});
+    </script>
+    <script async src="//static.getclicky.com/js"></script>
+    <noscript>
+        <p>
+            <img alt="Clicky" width="1" height="1" src="//in.getclicky.com/{{ site.clicky }}ns.gif" />
+        </p>
+    </noscript>
+{% endif %}
