@@ -18,9 +18,9 @@ html {
 }
 
 body {
-  	background: #4b5d67;
+  	background: #374045;
   font: 18px/1.4 $helvetica;
-  color: #87556f;
+  color: #e1d89f;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: #59405c;
+  color: #d89216;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +61,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #59405c;
+  color: #d89216;
 }
 
 p {
@@ -152,13 +152,13 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-color: #59405c;
+  background-color: #2c061f;
 }
 
 .masthead {
  
   padding: 20px 0;
-  border-bottom: 1px solid #59405c;
+  border-bottom: 1px solid #2c061f;
 
   @include mobile {
     text-align: center;
@@ -277,7 +277,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: #59405c;
+  background-color: #2c061f;
 }
 
 footer {
