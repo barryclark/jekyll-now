@@ -20,7 +20,7 @@ html {
 body {
   	background: #4b5d67;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: #87556f;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: #59405c;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +61,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $darkerGray;
+  color: #59405c;
 }
 
 p {
@@ -152,13 +152,13 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-color: $blue;
+  background-color: #59405c;
 }
 
 .masthead {
  
   padding: 20px 0;
-  border-bottom: 1px solid $blue;
+  border-bottom: 1px solid #59405c;
 
   @include mobile {
     text-align: center;
@@ -277,7 +277,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $blue;
+  background-color: #59405c;
 }
 
 footer {
