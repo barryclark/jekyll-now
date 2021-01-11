@@ -13,9 +13,6 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    {% if jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
   </head>
 
   <body>
@@ -55,5 +52,9 @@
       </div>
     </div>
 
+    <!-- Analytics for the website -->
+    {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
   </body>
 </html>
