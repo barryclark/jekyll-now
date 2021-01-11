@@ -19,7 +19,7 @@ html {
 
 body {
   	background: #374045;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 "Computer Modern", Times, serif;
   color: #e1d89f;
 }
 
@@ -196,7 +196,7 @@ img {
   margin: 0;
   color: $white;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: "Computer Modern", Times, serif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -215,7 +215,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: "Computer Modern", Times, serif;
   font-size: 18px;
   
   @include mobile {
