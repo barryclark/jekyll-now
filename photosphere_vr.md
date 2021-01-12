@@ -10,7 +10,7 @@ permalink: /photosphere_vr/
 
 ___
 
-{% include PHOTOSPHERE.html caption="Bird Nest © Justin Murdock" img_url="/images/DJI_0354.JPG" id="viewer1" default_lat="-1.57" default_long="5.07" default_zoom="70" %}
+{% include PHOTOSPHERE.html caption="Bird Nest © Justin Murdock" img_url="/images/DJI_0354.JPG" id="viewer1" default_lat="-1.57" default_long="5.02" default_zoom="70" %}
 
 ___
 
