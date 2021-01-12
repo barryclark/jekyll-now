@@ -8,13 +8,13 @@ permalink: /photosphere_vr/
 
 ## Bird Nest
 
-{% include PHOTOSPHERE.html img_url="/images/DJI_0354.JPG" id="viewer1" default_lat=0 default_long=0 %}
+{% include PHOTOSPHERE.html img_url="/images/DJI_0354.JPG" id="viewer1" default_lat=-1.5 default_long=0 %}
 
 ___
 
 ## Bridge
 
-{% include PHOTOSPHERE.html img_url="/images/DJI_0358.JPG" id="viewer2" default_lat=0 default_long=0 %}
+{% include PHOTOSPHERE.html img_url="/images/DJI_0358.JPG" id="viewer2" default_lat=-0.5 default_long=3.14 %}
 
 
 ___
