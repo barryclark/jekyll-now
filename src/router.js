@@ -37,8 +37,9 @@ export default new Router({
       path: '/staffs',
       name: 'staff',
       components: {
-        default: Graph,
-        sec: Members,
+        default: Hero,
+        sec: Graph,
+        third: Members
       }
     },
     {
