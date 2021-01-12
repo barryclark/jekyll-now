@@ -6,14 +6,14 @@ permalink: /photosphere_vr/
 
 {% include PHOTOSPHERE_LIBRARY.html %}
 
-## Bird Nest
-
-{% include PHOTOSPHERE.html img_url="/images/DJI_0354.JPG" id="viewer1" default_lat="-1.57" default_long="5.0" default_zoom="70" %}
+> Check out these VR Photos taken from my drone!
 
 ___
 
-## Bridge
+{% include PHOTOSPHERE.html caption="Bird Nest © Justin Murdock" img_url="/images/DJI_0354.JPG" id="viewer1" default_lat="-1.57" default_long="5.07" default_zoom="70" %}
 
-{% include PHOTOSPHERE.html img_url="/images/DJI_0358.JPG" id="viewer2" default_lat="-0.6" default_long="3" default_zoom="30" %}
+___
+
+{% include PHOTOSPHERE.html caption="Above a Bridge © Justin Murdock" img_url="/images/DJI_0358.JPG" id="viewer2" default_lat="-0.6" default_long="3" default_zoom="30" %}
 
 ___
