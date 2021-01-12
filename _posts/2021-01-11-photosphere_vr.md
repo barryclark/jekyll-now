@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Photosphere VR Photo Preview 
-permalink: /VR_Photos/
+permalink: /vrphotos/
 ---
 
 {% include PHOTOSPHERE_LIBRARY.html %}
