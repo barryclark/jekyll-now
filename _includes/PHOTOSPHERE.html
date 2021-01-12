@@ -11,6 +11,9 @@
 <script>
   var viewer = new PhotoSphereViewer.Viewer({
     container: document.querySelector('#{{ include.id }}'),
-    panorama: '{{ include.img_url }}'
+    panorama: '{{ include.img_url }}',
+    touchmoveTwoFingers: true,
+    defaultLong: {{ include.default_long }},
+    defaultLat: {{ include.default_lat }}
   });
 </script>
