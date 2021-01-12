@@ -215,7 +215,7 @@ which is what the Discrete Fourier Transform actually computes. The Discrete Fou
 
 It is easy to forget that the windowing exists when we don't *explicitly* apply a weighting function to the sampled data, because setting $$w(t)=1$$ leaves us just with the sequence of sampled function values on the right hand side. But the window does not vanish on the left hand side, because for $$w(t)=1$$ it becomes the rectangular function. In the Fourier domain we are *always* convolving with a windowing function. If we don't apply an explicit window, the implicit rectangular window will result in a normalized $$\text{sinc}$$ function in the Fourier domain. Any window leads to a smearing of the Fourier Transform of the continuos function, which is a phenomenon that is known as [spectral leakage](https://en.wikipedia.org/wiki/Spectral_leakage). By [explicitly modifying the window function](https://www.edn.com/windowing-functions-improve-fft-results-part-i/) we can combat the effects of spectral leakage, but never remove it entirely. See also the famous work by Albert Nuttall on window functions [Nuttall1981].
 
-# Conclusion
+# III. Conclusion
 This is it. We have seen what the DFT actually computes and how it is related to the Fourier Transform of a continuous function. There is loads more to say about the FT and the DFT, but I'll leave that for a later article.
 
 # Links and Further Reading
