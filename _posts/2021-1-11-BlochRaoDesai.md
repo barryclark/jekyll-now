@@ -1,4 +1,4 @@
-+---
+---
 layout: post
 title: "Bloch, Rao and Desai (2003): Wedding Celebrations as Conspicuous Consumption: Signaling Social Status in Rural India"
 ---
