@@ -12,19 +12,20 @@ comments_id:
 ---
 TODO introduction: this post is not so much about different windowing strategies, because there is already excellent work on it. More about where this effect comes from and why it does not seem to appear when the functions are periodic.
 
-# I. Recap: The DFT
+# I. Recap: The Discrete Fourier Transform
 
 ## The Implicit Window and What the DFT Actually Computes
-Let's first do a tiny recap on what the DFT actually computes based on my [previous post](/blog/2020/the-discrete-fourier-transform/) on the subject.
+In the [previous article](/blog/2020/the-discrete-fourier-transform/) on the subject we saw how the DFT of a finite sequence of function values $$f[n]$$, $$n=0,1,\dots N-1$$ was related to the Fourier Transform of the sampled and windowed function $$f(t)$$ with $$f[n]=f(n\Delta T)$$.
 
-TODO add recap. Also explain what F is: Fourier transfom of f(t).
+$$\mathcal{DFT}\{f[n]\}[k] = \mathcal{F}\{f(t)\cdot W(t)\cdot III_{\Delta\!T}(t),$$
+
+where $$III_{\Delta\!T}, which originates from the sampling, is the Dirac comb with period $$\Delta\!T$$ and $$W(t)$$ is a windowing funciton. Even if we are not explicitly windowing our sampled data, we are always at implicitly applying a rectangular window by restricting our samples to some finite interval $$[0,T)$$.
 
 ## How The Implicit Window Leads to Spectral Leakage
 
-TODO write this up: basically the fact that we are convolving the DTFT with the a window in F-space is the reason. Illustrate that for one frequency, where we don't sample a whole period of a sin. As a lead in to the next section say, that there is one case where the stars align.
+The implicit window will lead to a convolution with the FT of the window function in Fourier space. This is the origin of spectral leakage and that could be all she wrote. However, we don't always observe the effects of spectral leakagr, for example when taking the DFT of a whole period of a periodic function[^whole period]. Next, we will explore the reasons for this and learn something more about the DFT on the way.
 
-
-# II. Spectral Leakage and Periodic Functions
+# Spectral Leakage and Periodic Functions
 There is a special case where spectral leakage is not apparent for the DFT, which is when we calculate the DFT of a periodic function where we have sampled an integer number of periods. This fact has often handwavingly been explained to me by the DFT somehow implying a periodicity and that TODO do further
 
 ## The Fourier Transform of a Periodic Function
@@ -125,7 +126,7 @@ If you're like me, you have probably thought of $$f(t)$$ as some kind of infinit
 
 Just assume that we sample and window our function $$f(t)$$ as above and then periodically extend this function[^periodic_summation]. Lets call this periodized function $$\widetilde{f}(t)$$. Obviously, the DFT of $$\widetilde{f}(t)$$ and our windowed function $$f(t)$$ will produce the same results for the DFT. That is why people go on about the periodic nature of the DFT. For this periodic function we would not observe spectral leakage, but for the clipped function we will. So it's all a matter of expectation management. If you measure your expectation against the FT of the unclipped function, then you will observe leakage, and otherwise you get exactly what you expect[^gibbs_phenomenon]. So at the end of the day the DFT gives us the sampled values of the Fourier Transform of a periodic extension of the windowed function.
 
-# III. Conclusion
+# Conclusion
 By going through some tedious calculations, we could see that --as so often in life-- whether something is an artifact or not is a matter of expectation management. All joking aside, this really helped me understand why the periodic nature of the DFT is always emphasized and how it manifests. For some further reading on spectral leakage and how to mitigate its effects by applying an explicit window to the sampled data, I'll refer you to [this series of articles](https://www.edn.com/windowing-functions-improve-fft-results-part-i/).
 
 
@@ -136,3 +137,4 @@ By going through some tedious calculations, we could see that --as so often in l
 [^periodic_summation]: If we wrote this formally, this will give us the periodic summation of the function $$f$$, which is something that should be familiar from the last article. The DFT actually operates on one period of this periodic summation. We've come full circle.
 [^gibbs_phenomenon]: If the periodic continuation introduces discontinuous jumps, then we'll also observe the [Gibbs Phenomenon](https://en.wikipedia.org/wiki/Gibbs_phenomenon).
 [^sampling_delta]: Except for this $$\delta$$-distribution in there, which gets smoothed away if we think finite binning. See also the [discussion on sampling](/blog/2020/the-discrete-fourier-transform/#sampling) in the previous article.
+[^whole period]: More generally, an integer number of periods.
