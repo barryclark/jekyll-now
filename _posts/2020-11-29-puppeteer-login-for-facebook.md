@@ -7,9 +7,9 @@ I wanted to automate the process of getting some information out of a Facebook g
 ## The Problems I Seen
 I thought this would be as simple as instructing Puppeteer to enter my username and password and click login. I was mistaken. 
 
-The first road block I ran into was the MFA I had enabled on my account. I had to disable this on my account when I wanted to scrape. The next thing that impeded me was a cookie banner that appears when loading Facebook for the first time from a browser, it blocked me from clicking the login button. 
+The first road block I ran into was the MFA I had enabled on my account. I had to disable this on my account when I wanted to scrape. The next thing that impeded me was a cookie banner that appeared when loading Facebook for the first time from a browser, it blocked me from clicking the login button. 
 
-Finally Facebook will become aware that something suspicious is going on with your account pretty quickly if you try to repeatedly login with a username and password. I found this happened super fast (usually on the first attempt at login) when I ran this on the cloud. When this happens they redirect you to an authenticion flow where you have to do something like confirm a code sent to your email or enter some personal information about yourself. To avoid hitting these security barriers I found reusing our Facebook session was a decent solution.
+Finally Facebook will become aware that something suspicious is going on with your account pretty quickly if you try to repeatedly login with a username and password. I found this happened super fast (usually on the first attempt at login) when I ran this on the cloud. When this happens they redirect you to an authentication flow where you have to do something like confirm a code sent to your email or enter some personal information about yourself. To avoid hitting these security barriers I found reusing our Facebook session was a decent solution.
 
 ## The Solution
 See all of <a href="https://github.com/jackohara/puppeteer-login-for-facebook" target="_blank">the code here</a>. 
@@ -178,8 +178,8 @@ My use case required collecting links that were posted into Facebook groups. So 
     }));
 ```
 
-A problem I've ran into and I'd like to try solve is how to scroll endlessly in Facebook. Yes it's fairly easy to jump to the bottom of the page and wait for Facebook to load more content. But unfortunately Puppeteer is memory hungry. After some time of scrolling endlessly your memory usage will shoot up. I think a good solution would be to delete news feed posts from the DOM after you have scraped them. <a href="https://stackoverflow.com/a/50869650" target="_blank"> This StackoverFlow answer would be a good start</a>. 
+A problem I've run into and I'd like to try solve is how to scroll endlessly on Facebook. Yes it's fairly easy to jump to the bottom of the page and wait for Facebook to load more content. But unfortunately Puppeteer is a memory hungry beast. After some time of scrolling endlessly your memory usage will shoot up. I think a good solution would be to delete news feed posts from the DOM after you have scraped them. <a href="https://stackoverflow.com/a/50869650" target="_blank"> This StackoverFlow answer would be a good start</a>. 
 
 And with many scraping solutions, what works today may not work tomorrow as websites evolve and update.
 
-P.S be careful saving your Facebook session cookie to a local file, if someone gets access to it then that's your Facebook comprimised. I've used AWS Systems Manager Parameter Store to securely store mine.
+P.S be careful saving your Facebook session cookie to a local file, if someone gets access to it then that's your Facebook compromised. I've used AWS Systems Manager Parameter Store to securely store mine.
