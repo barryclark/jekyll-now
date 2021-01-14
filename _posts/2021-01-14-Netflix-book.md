@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Book review - No Rules Rules
-category: general, book_review
+category: general book_review
 ---
 
 <img alt="Book cover" src="https://m.media-amazon.com/images/I/414KRC8ts+L.jpg" height="200" />
 
-|                  |                                        |
+| | |
 |------------------|----------------------------------------|
 | **Title**        | No rules rules                         |
 | **Subtitle**     | Netflix and the culture of reinovation |
 | **Authors**      | Reed Hastings, Erin Meyer              |
-| **Amazon links** * |<a target="_blank" href="https://www.amazon.com/gp/product/1984877860/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1984877860&linkCode=as2&tag=roundcheckbox-20&linkId=083103988562196e251f34616c838e15">No Rules Rules: Netflix and the Culture of Reinvention</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=roundcheckbox-20&l=am2&o=1&a=1984877860" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />|
-| | * Affiliate link
+| **Amazon links***   |<a target="_blank" href="https://www.amazon.com/gp/product/1984877860/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1984877860&linkCode=as2&tag=roundcheckbox-20&linkId=083103988562196e251f34616c838e15">No Rules Rules: Netflix and the Culture of Reinvention</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=roundcheckbox-20&l=am2&o=1&a=1984877860" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />|
+| | * Affiliate link |
 
 
 I've read this book and I'm very excited about it. 
