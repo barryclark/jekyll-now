@@ -29,6 +29,8 @@ Here are some useful websites that I have found in the past
 
 [Pe'er Lab](https://github.com/dpeerlab){:target="_blank"}: code and scripts from the Dana Pe'er Lab
 
+[Machine Learning & Deep Learning Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials){:target="_blank"}: This repository contains a topic-wise curated list of Machine Learning and Deep Learning tutorials, articles and other resources.
+
 ### Academia
   
 [Research Culture: Actionable recommendations from trainees to improve science training](https://elifesciences.org/articles/59806){:target="_blank"}
