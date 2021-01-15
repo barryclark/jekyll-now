@@ -4,6 +4,8 @@ title: How-to Write An Environment Aware Nuxeo Package?
 excerpt: |
    Generating a ZIP server side can be challenging. This can be a long and blocking task
    which put servers under pressure. With Vert.X we can make it asynchronous which allows to handle concurrency better.
+img_url: /images/2021-01-15-configuration.png
+img_credits: configuration
 ---
 
 
@@ -15,9 +17,9 @@ When deploying a Nuxeo application, we often have some parameters that differ fr
  * specialize some parameters in `nuxeo.conf`: the configuration then becomes the responsibility of the ops team and every change needs to be communicated to them
  * having several Nuxeo templates, one per environment that contains different configuration. The ops team needs to know which template to activate depending on the environment where they deploy.
 
-In a cloud-native world, applications are shipped as container, and the applicative configuration should be embedded in the container. The infrastructure platform should only provide an environment name or type without knowing anything about the application. The options above are then not really usable.
+In a cloud-native world, applications are shipped as container, and the application configuration should be embedded in the container. The infrastructure platform should only provide an environment name or type without knowing anything about the application. The options above are then not really usable.
 
-Thru the usage of the `NUXEO_ENVIROMENT` variable, we will see in this how-to, how we can specify some environment specific configuration in a Nuxeo package and then ship it as a container. The infrastructure platform then just need to specify the type of environment.
+Thru the usage of the `NUXEO_ENVIROMENT` variable, we will see in this how-to, how we can specify some environment-specific configuration in a Nuxeo package and then ship it as a container. The infrastructure platform then just need to specify the type of environment.
 
 
 A Simple Nuxeo Package
@@ -153,7 +155,7 @@ We can see that our configuration has been taken into account.
 Specifying Another Email Prefix For The DEV Environment
 =======================================================
 
-[ACME] is the default prefix. But for a development environment, it may be a problem that the prefix is the same than in production: it could lead to misinterpreation on some test messages. To change that configuration in dev, we could ask the devops team to manage that configuration at the infrastructure level and override it in the global `nuxeo.conf`. The other and better way of doing it is to add a `nuxeo.dev` file next to the `nuxeo.defaults` one and fill it with:
+[ACME] is the default prefix. But for a development environment, it may be a problem that the prefix is the same than in production: it could lead to misinterpretation on some test messages. To change that configuration in dev, we could ask the devops team to manage that configuration at the infrastructure level and override it in the global `nuxeo.conf`. The other and better way of doing it is to add a `nuxeo.dev` file next to the `nuxeo.defaults` one and fill it with:
 ```
 nuxeo.notification.eMailSubjectPrefix="[ACME Dev] "
 ```
@@ -187,14 +189,14 @@ A More Sophisticated Example
 ============================
 
 In the previous example, we just configured an existing Nuxeo configuration parameter bound to an environment. In Nuxeo, the configuration might
-also take the form of contribution to the extension point of a component. Let's say that we want to change the background color of the login box
+also take the form of a contribution to the extension point of a component. Let's say that we want to change the background color of the login box
 in our dev environment to orange so that it can't be taken for the production one. We need to look at [how to customize the login page](https://doc.nuxeo.com/nxdoc/how-to-customize-the-login-page/) to see that we need to extend the `PluggableAuthenticationService`.
 
 Let's add the following file in `nuxeo-acme-package/src/main/resources/install/templates/marketplace-acme/config/login-screen-config.xml.nxftl`:
 
 ```
 <component name="org.nuxeo.login.startup.page.web.contrib.override">
-<#if !((org.nuxeo.prod.environment)??) || (org.nuxeo.prod.environment) != "true">
+<#if !((org.myapp.coloredLoginBox)??) || (org.myapp.coloredLoginBox) != "true">
   <require>org.nuxeo.login.startup.page.web.contrib</require>
 
   <extension point="loginScreen" target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService">
@@ -207,11 +209,11 @@ Let's add the following file in `nuxeo-acme-package/src/main/resources/install/t
 ```
 
 By adding the `.nxftl` extension to the file, it will be treated as a Freemarker template during the startup preprocessing phase.
-Freemarker allows to use conditional structure which brings a lot of power to our configuration mecanism.
+Freemarker allows using a conditional structure which brings a lot of power to our configuration mechanism.
 
 and the following file in `nuxeo-acme-package/src/main/resources/install/templates/marketplace-acme/nuxeo.prod`:
 ```
-org.nuxeo.prod.environment=true
+org.myapp.coloredLoginBox=true
 ```
 
 Now we can rebuild the image and test the result:
@@ -223,7 +225,7 @@ $ docker run -d --name nuxeo -p 8080:8080 nuxeo-acme
 425d138bc6d9b49dee92791296a3a60ec92718dd6b066c9f2821b03e24a6d093
 $ open http://localhost:8080/
 ```
-![Nuxeo Dev](/images/2021-01-11-nuxeo-dev.png)
+![Nuxeo Dev](/images/2021-01-15-nuxeo-dev.png)
 
 ```shell
 $ docker rm -f nuxeo
@@ -231,13 +233,13 @@ nuxeo
 $ docker run -d -e NUXEO_ENVIRONMENT=prod --name nuxeo nuxeo-acme
 $ open http://localhost:8080/
 ```
-![Nuxeo Prod](/images/2021-01-11-nuxeo-prod.png)
+![Nuxeo Prod](/images/2021-01-15-nuxeo-prod.png)
 
 
 Conclusion
 ==========
 
-In this how-to, we've seen how to bundle some environment specific configurations inside a Nuxeo package and then inside a Docker container. It allows developper teams to handle their applicative configuration and removes that responsibility from ops team that then just need to handle very generic configuration like the type of environment. It allows with a few convention to handle very common use case where you want some configuration to be different from an environment type to another (SAML endpoint, external web service endpoint etc...).
+In this how-to, we've seen how to bundle some environment-specific configurations inside a Nuxeo package and then inside a Docker container. It allows developer teams to handle their applicative configuration and removes that responsibility from ops team that then just need to handle very generic configuration like the type of environment. It allows with a few conventions to handle very common use case where you want some configuration to be different from an environment type to another (SAML endpoint, external web service endpoint etc...).
 
 References
 ==========
