@@ -9,6 +9,12 @@ This is a procedure to setup Python projects on your local workstation.
 
 In your 'Documents' folder (or whatever it is called), create a directory and cd into it:
 
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
 ```shell
 mkdir cool-project-name
 cd <META>-.
