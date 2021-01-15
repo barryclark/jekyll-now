@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setup Python Projects
-categories: 12factor
+categories: [12factor, codestyle]
 ---
 
 This is a procedure to setup Python projects on your local workstation.
