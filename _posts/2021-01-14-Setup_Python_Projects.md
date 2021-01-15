@@ -86,10 +86,3 @@ Provide some meaningful test data for your app using a service like [Mockaroo](h
 3. Look at the [Twelve Factors](https://12factor.net/) if you have not yet.
 4. Read [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/).
 
-
-### Example Syntax Highlighting
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
