@@ -9,27 +9,25 @@ This is a procedure to setup Python projects on your local workstation.
 
 In your 'Documents' folder (or whatever it is called), create a directory and cd into it:
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
-```shell
+{% highlight shell %}
 mkdir cool-project-name
 cd <META>-.
-```
+{% endhighlight %}
 
 or, for ZSH users:
-		
-	take cool-project-name
+
+{% highlight ruby %}
+take cool-project-name
+{% endhighlight %}
 
 ### Create Virtual Environment
 
 The virtual environment ensures, that your global Python library installation will not get polluted with different versions of python libraries.
 
-	python3 -m venv .venv
-	source .venv/bin/activate
+{% highlight shell %}
+python3 -m venv .venv
+source .venv/bin/activate
+{% endhighlight %}
 
 (On Windows(TM) installations, the directory is named 'Scripts'.)
 
@@ -39,12 +37,14 @@ Instead of activating, the app can be
 
 Some of the artifacts should (or must) not be versioned, so get you an initial `.gitignore` file
 
-	curl -ls -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
-	git init
-	git add .
-	git commit -am "Initial import"
-	git remote add ...
-	git push --upstream master
+{% highlight shell %}
+curl -ls -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+git init
+git add .
+git commit -am "Initial import"
+git remote add ...
+git push --upstream master
+{% endhighlight %}
 		
 ### Make a Proper Directory Structure
 
@@ -54,21 +54,27 @@ This depends on your current project, but you can find a good starter [here](htt
 
 After installing necessary modules and libraries, freeze them to a file and put it to :
 
-	pip freeze > requirements.txt
+{% highlight shell %}
+pip freeze > requirements.txt
+{% endhighlight %}
 		
 Thus, environment can later be restored from scratch with
 
-	pip install -r requirements.txt
+{% highlight shell %}
+pip install -r requirements.txt
+{% endhighlight %}
 		
 ### Write Some Tests
 
 Before we actually start coding our app, write some tests.
 
-	pip install nose
-	pip install WebTest  # if appropriate
-		
-	vi tests/test_main.py
-	nosetests
+{% highlight shell %}
+pip install nose
+pip install WebTest  # if appropriate
+
+vi tests/test_main.py
+nosetests
+{% endhighlight %}
 
 Provide some meaningful test data for your app using a service like [Mockaroo](https://docs.python-guide.org/writing/structure/).
 
