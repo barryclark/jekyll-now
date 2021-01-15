@@ -5,7 +5,6 @@ excerpt: |
    Generating a ZIP server side can be challenging. This can be a long and blocking task
    which put servers under pressure. With Vert.X we can make it asynchronous which allows to handle concurrency better.
 img_url: /images/2021-01-15-configuration.png
-img_credits: configuration
 ---
 
 
