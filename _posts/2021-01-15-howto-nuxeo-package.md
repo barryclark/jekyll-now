@@ -195,7 +195,7 @@ Let's add the following file in `nuxeo-acme-package/src/main/resources/install/t
 
 ```
 <component name="org.nuxeo.login.startup.page.web.contrib.override">
-<#if !((org.myapp.coloredLoginBox)??) || (org.myapp.coloredLoginBox) != "true">
+<#if !((org.myapp.whiteLoginBox)??) || (org.myapp.whiteLoginBox) != "true">
   <require>org.nuxeo.login.startup.page.web.contrib</require>
 
   <extension point="loginScreen" target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService">
@@ -212,7 +212,7 @@ Freemarker allows using a conditional structure which brings a lot of power to o
 
 and the following file in `nuxeo-acme-package/src/main/resources/install/templates/marketplace-acme/nuxeo.prod`:
 ```
-org.myapp.coloredLoginBox=true
+org.myapp.whiteLoginBox=true
 ```
 
 Now we can rebuild the image and test the result:
