@@ -21,6 +21,7 @@ body {
 	background: $white;
   font: 18px/1.4 $Serif;
   color: $darkGray;
+  font-kerning: auto;
 }
 
 .container {
@@ -40,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $SmallCaps;
   color: $darkerGray;
   font-weight: normal;
+  font-kerning: auto;
 
   line-height: 1.7;
   margin: 1em 0 15px;
