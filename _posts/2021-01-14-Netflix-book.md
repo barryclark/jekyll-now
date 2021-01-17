@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Book review - No Rules Rules
-category: general book_review
+category: book_review
 ---
 
 <img alt="Book cover" src="https://m.media-amazon.com/images/I/414KRC8ts+L.jpg" height="200" />
