@@ -8,7 +8,7 @@ date: 2021-01-17
 #description:
 #permalink:
 title: 'Understanding the DFT: Spectral Leakage, Windowing, and Periodicity'
-comments_id:
+comments_id: 20
 ---
 I was going to write something about how windowing could be used to mitigate the effects of spectral leakage in the DFT. However, I went down a rabbit hole trying to truly understand where spectral leakage comes from and how it relates to the periodicity of the DFT. What I ended up writing, is a post that is more about understanding the DFT and less about windowing, although it plays an important role in this post.
 
