@@ -1,19 +1,43 @@
 <template>
   <div class="hero-container relative bg-white overflow-hidden row">
-    <main class='pt-64'>
+    <main class='py-24'>
       <div class="container hero-box">
-        <div class="rounded-full h-48 w-48 flex items-center justify-center">
-          <img class="bg-contain" src="../../assets/members/placeholder.png" />
-        </div>
-        <span class="inline-flex items-center px-3 rounded-full text-l bg-orange-500 font-medium leading-4 text-white">立川チャンピオン</span>
-        <span class="inline-flex items-center px-3 rounded-full text-m bg-orange-500 font-medium leading-4 text-white">立川チャンピオン</span>        <t-tag variant="heading" class='text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
+        <t-tag class='py-8 text-center font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 ml-4'>
+          スタッフ紹介
+        </t-tag>
+        <section class="flex items-center justify-center">
+          <div class="rounded-full h-48 w-48 bg-red-300 overflow-hidden">
+            <img class="md:object-cover" src="../../assets/members/inocchi.jpg" />
+          </div>
+          <t-tag class='text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9 ml-4'>
+            いのっち
+          </t-tag>
+        </section>
+
+        <article class="text-center">
+          <div class="my-4">
+            <span class="mr-4 inline-flex items-center px-3 rounded-full text-l bg-orange-500 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+            <span class="mr-4 inline-flex items-center px-3 rounded-full text-m bg-orange-500 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+            <span class="inline-flex items-center px-3 rounded-full text-m bg-orange-500 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+          </div>
+          <div class="my-4">
+            <span class="mr-4 inline-flex items-center px-3 rounded-full text-l bg-yellow-400 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+            <span class="mr-4 inline-flex items-center px-3 rounded-full text-m bg-yellow-400 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+            <span class="inline-flex items-center px-3 rounded-full text-m bg-yellow-400 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+          </div>
+          <div class="my-4">
+            <span class="mr-4 inline-flex items-center px-3 rounded-full text-l bg-green-400 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+            <span class="mr-4 inline-flex items-center px-3 rounded-full text-m bg-green-400 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+            <span class="inline-flex items-center px-3 rounded-full text-m bg-green-400 font-medium leading-4 text-white py-1">立川チャンピオン</span>
+          </div>
+        </article>
+
+        <t-tag class='text-left text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
           子どもが活躍できる場づくりを目指しています。
         </t-tag>
-        <t-tag tag-name="p" variant="body" class='pt-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
-          プログラミングをして作成したゲームやアニメーション
-          などの作品を発表ができる場です。
-          多くの人に頑張りを見てもことができるのと、
-          フィードバックを得ることによって更によりよい作品づくりを促せます。
+        <t-tag class='text-left pt-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
+          普段はJavaを使った業務用のWEBアプリケーションの開発や保守をする仕事をしています。プログラミング教育活動に出会い、今は教育に関心があります。
+          私はプログラミングを苦労して習得したので、これから学ぶ子どもたちには楽しく学べる場を提供したいと思い活動をしています。
         </t-tag>
       </div>
     </main>
