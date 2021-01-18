@@ -36,3 +36,14 @@ Compressors are best represented by this picture of a cat:
 ![White cat in a square, transparent box with the word Compression over the top in white text.](https://toaster.sh/i/jwn2.png)
 In essence, they squish your audio down and make it all sound the same level overall when played back. This is useful if artists sing quietly at some points but still want emphasis on vocals. A good example of this is Billie Eilish's Therefore I Am, at the "Stop. What the hell are you talking about?" line.
 In the case of Don't Stop Me Now, though, Freddie's vocals are already compressed, so there's not much I can do to them.
+
+## Master Bus Compression
+
+Master bus compression is the same thing as compression, but instead of only being applied to a single track, it is applied to the whole master bus. Crazy, right? I chose to use a multiband compressor. When used correctly, it not only evens levels, but also adds warmth.
+
+This is how I ended up using master bus compression:
+[![How To Multi Band Compress](http://img.youtube.com/vi/VbTqprYupiQ/0.jpg)](http://www.youtube.com/watch?v=VbTqprYupiQ "How To Multi Band Compress")
+
+I then recorded another take with a "broadcast" preset on. You'll notice that everything is overly squashed, and the highs are very tinny.
+[![How Not To Multi Band Compress](http://img.youtube.com/vi/NhPYXm6mLR0/0.jpg)](http://www.youtube.com/watch?v=NhPYXm6mLR0 "How Not To Multi Band Compress")
+
