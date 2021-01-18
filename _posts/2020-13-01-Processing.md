@@ -33,6 +33,8 @@ On the other hand, used correctly, it can help reduce noise pretty well:
 
 [![Noise Gate Done Right](http://img.youtube.com/vi/VfxleITKdCY/0.jpg)](http://www.youtube.com/watch?v=VfxleITKdCY "Noise Gate Done Right")
 
+By the way, turning up the fade is a must - if your audio source dips below the required level, it will fade it but not cut it which means it still sounds relatively natural in the final mix
+
 ## Compressors
 
 Compressors are best represented by this picture of a cat:
