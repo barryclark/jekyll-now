@@ -2,8 +2,8 @@
 layout: post
 title: How-to Write An Environment Aware Nuxeo Package?
 excerpt: |
-   Generating a ZIP server side can be challenging. This can be a long and blocking task
-   which put servers under pressure. With Vert.X we can make it asynchronous which allows to handle concurrency better.
+   When deploying a Nuxeo application, we often have some parameters that differ from one environment to another. We present
+   an elegant solutions to solve that problem.
 img_url: /images/2021-01-15-configuration.png
 ---
 
