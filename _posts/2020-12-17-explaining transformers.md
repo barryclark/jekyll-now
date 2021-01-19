@@ -1,21 +1,23 @@
 ---
 layout: article
 published: True
+comments: True
 title: Interfaces for Explaining Transformer Language Models
 ---
 
 
 <script>
-window.ecco = {}
-// css http://localhost:8000/ecco/ https://storage.googleapis.com/ml-intro/ecco
-// const dataPath = 'https://storage.googleapis.com/ml-intro/dt/'
-let dataPath = '/data/'
-let ecco_url = '/assets/'
+window.ecco = {};
+
+let dataPath = '/data/';
+let ecco_url = '/assets/';
  
 </script>
 
 <script type="module">
 
+let dataPath = '/data/';
+let ecco_url = '/assets/';
 import * as explainingApp from "/js/explaining-app.js";
 
 function showRefreshWarning(){
@@ -491,7 +493,6 @@ We illustrate how some key interpretability methods apply to transformer-based l
 
 <figure>
     <table style="width:100%" class='graphs-table'>
-    
         <tr>
             <td style="text-align: center;">
                 <img src="/images/explaining/activations-4.PNG" style="max-width: 100px"/>
@@ -511,7 +512,7 @@ We illustrate how some key interpretability methods apply to transformer-based l
                 <img src="/images/explaining/activations_1.PNG" style="max-width: 300px"/>
             </td>
             <td>
-                <figcaption>
+                <figcaption>            
                     <strong>Neuron firings in the FFNN sublayer of Layer 4</strong> <br/>
                     Each row corresponds to a neuron in the feedforward neural network of layer #4. Each column is
                     that neuron's status when a token was generated (namely, the token at the top of the
@@ -858,12 +859,38 @@ This concludes the first article in the series. Be sure to click on <a href="htt
 <references>
 </references>
 
-<script>
+
+<h2>Citation</h2>
+<div style="color: #777;">
+
+If you found this work helpful for your research, please cite it as following:
+
+<div class="cite" markdown="1">
+
+```code
+Alammar, J. (2020). Interfaces for Explaining Transformer Language Models  
+[Blog post]. Retrieved from https://jalammar.github.io/explaining-transformers/
+```
+</div>
+
+<br />
+BibTex:
+
+<div class="cite" markdown="1">
 
 
+```code
+@misc{alammar2020explaining, 
+  title={Interfaces for Explaining Transformer Language Models},
+  author={Alammar, J},
+  year={2020},
+  url={https://jalammar.github.io/explaining-transformers/}
+}
+```
 
+</div>
+</div>
 
-</script>
 
 <script type="text/bibliography">
 
