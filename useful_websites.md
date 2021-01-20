@@ -22,6 +22,8 @@ Here are some useful websites that I have found in the past
 
 [Matthew Young](https://constantamateur.github.io){:target="_blank"}: Things I'm trying to understand. Mostly maths, programming and science.
 
+[CMDLineTips](https://cmdlinetips.com){:target="_blank"}: Python and R Tips. 
+
   
 ### Repositories
   
