@@ -9,7 +9,7 @@ description: "The third article in a series on angel investing. In this article 
 image: assets/images/angel-part2/leanna-cox-ukhn2gy9_CU-unsplash.jpg
 ---
 
-In the third instalment on angel investing, I am discussing the business' defensible moat and its delivery mechanisms.  
+In the third instalment on angel investing, I am discussing the business' defensible moat and its distribution mechanisms.  
 
 You can find part 1 [here][1] and part 2 [here][2].
  
@@ -125,60 +125,67 @@ solutions. Bitcoin now has firm and exponential traction with a growing part of 
 ![Letter D](../assets/images/angel-part3/arthur-mazi-6148mnVnY-s-unsplash.jpg)
 > Photo by Arthur Mazi on Unsplash
 
-The next aspect to consider is composed of
-2 aspects 
-somewhat related
+The next aspect to consider is composed of 2 somewhat related aspects. 
 
 ## Distribution
 
-Distribution is the "Where" of the business
-i.e. where does the business "meet" its customers
-
-2 interrelated concepts
+Distribution is the "Where" of the business. I.e. where does the business "meet" its customers.  
+This is broken down in two interrelated concepts: customer service and customer acquisition.
 
 Let's give an example of a completely fictitious product to highlight and discuss these concepts. <sup>[6](#footnote_6)</sup>
  
-> The business is using [OpenBanking][17] to allow one-click checkouts and payments in physical retail stores.  
+> The business is using [OpenBanking][17] to allow one-click checkouts and payments in **physical retail stores**; the
+> intention is to replace cards.    
 > When paying, the customer is presented with a QR code to scan with her smartphone. This triggers an [OpenBanking 
 > authorisation][18] and completes the payment from customer to merchant. 
 
 ### Customer service
-The first element of distribution is "customer service"
 
-What will be the channels or touch-points through which the business serves its customers?
-How will the product/service be delivered and used by customers? Will the channel be a digital or a physical one? 
-Can the business confidently implement the channel and easily scale it, once it gains traction? 
+![Customer service](../assets/images/angel-part3/pexels-jopwell-1325735.jpg)
+> Photo by Jopwell from Pexels
 
-In the example product above (OpenBanking checkout) the distribution channel almost stands out: mobile.  
-The minimum viable product is a mobile app which will allow the consumer to scan the QR code and start the payment process
-This electronic channel requires some specific skills from the company, for example  
-* mobile development engineering: support for iPhone and Android
-* UX design: seamless user experience 
-* backend systems: secure communications, data handling etc to support the transaction.
+The first element of distribution is serving customers.  
+The key questions to answer here:   
+* What will be the channels or touch-points through which the business serves its customers?
+* How will the product/service be delivered and used by customers? Will the channel be a digital or a physical one? 
+* Can the business confidently implement the channel and easily scale it, once it gains traction? 
 
-This also inevitably points to 2 different things: 
+In the example product above (OpenBanking checkout) the distribution channel almost stands out: mobile. The customer will 
+be using a mobile app (or a mobile site in an MVP) to scan the QR code and start the payment process. 
+
+This electronic channel requires some specific skills from the company. Namely    
+* Mobile development engineering: probably adding support for both iPhone and Android
+* UX design: ensuring a seamless user experience across all platforms 
+* Backend systems engineering: secure communications end-to-end, data handling, connectivity to banks etc to support the 
+transaction.
+
+This also points to 2 different things:  
+
 * **App installation**  
-The only way of getting the app on consumer's phones is via the major [app stores][20]. This means establishing a 
-relationship with Apple/Google and ensuring that the app conforms to their T&Cs.
+(If the company chooses the mobile app route) The only way of getting an app on consumer's phones is via the major 
+[app stores][20]. This means establishing a relationship with Apple/Google and ensuring that the app conforms to their T&Cs.
+
 * **Customer support**  
-The mobile app is the "way in" to the system for the consumer 
-it will also be the main channel for support in case things go wrong
-This means the app must provide a straight-forward way for company support agents to communicate with (and solve issues of)
-the payer
+The mobile app is the "way in" to the payments system for the consumer. It will also be the main channel for support in 
+case things go wrong. This means that the app must provide a straight-forward way for company support agents to 
+communicate with (and solve issues of) the payer.
 
-The payer mobile app is not the end of the story.  
-There is another distribution channel which is crucial for the success of the business: the "physical presence" in the 
-merchant's store. This is a requirement for the generation of the QR code for the shopper
-This could be done in a number of ways: a small tablet where the merchant types in the price, maybe something connected 
-to the existing [POS terminal][19] to generate the QR code automatically or something else.
+The payer mobile app is not the end of the story in this example. There is another distribution channel which is crucial 
+for the success of the business: the "physical presence" in the merchant's store.  
+This is a requirement for the generation of the QR code for the shopper.  
+Generating the QR code could be done in a number of ways: a small tablet where the merchant types in the price, maybe 
+something connected to the existing [POS terminal][19] or something else.
 
-In all cases, the business must be able to do the following  
+So our fictitious payments business must also be able to do the following:
+    
 * **Merchant partnership**  
-Establish a partnership with the merchant 
-Give incentives to join the network 
-Right level of discounts and promotions
-Make sure they are fit to join the network: KYC and AML 
-And then make sure they stay in Engagement, regular communications  
+The business will need to establish a partnership with the merchant, by giving them incentives to join the network. For this, the  
+business may offer some initial discounts and promotions to joining merchants (see next section).  
+This example business is in money processing, so there are requirements to assess the merchants' legality. This means 
+that our business will need to have [KYC][22] and [AML][23] processes to ensure merchants are fit to join the network.   
+After joining, the business needs to make sure that the merchants stay partnered.  
+For this our business would need to have a merchant engagement strategy, with regular communications, gathering of NPS 
+scores etc.   
 feeling valued 
 
 * **Device procurement and installation**  
@@ -205,28 +212,85 @@ Therefore it needs to establish and maintain 2 separate customer service channel
 We touched upon the economics of customer acquisition when [discussing CAC in Part 2][21] 
 This section is about the mechanics and the rationale
 
+To put it simply 
+for a business to acquire customers, the customers need to know the business exists 
+for this to happen 
+the business needs to 
+* know who the customers are 
+* know where they are, and 
+* draw their attention 
 
+#### Identifying customers
 
-From a "costs and numbers" point-of-view, we can distinguish these channels in 2 broad categories. 
+Not serving everyone from the get-go
+At its first steps the business needs to focus on specific customer cohorts 
 
+2 ways of identifying and singling out 
 
+Quantitative 
+cohort analysis
+https://clevertap.com/blog/cohort-analysis/
+Helps define depth and breadth of the target market 
+aspects of their behaviour 
+income, age, percent of population
+or in the case of b2b characteristics of the business (size, revenue,...)  
+help identify specific market segments to focus on
+
+Qualitative 
+customer personas
+https://www.usertesting.com/blog/customer-personas
+More fine-grained 
+based on observation, experience, intuition 
+deep-dive on customer motivations, drivers, wants and needs
+habits, where to target them  
+In the case of b2b 
+roles in the customer organisation who would be champions and decision-makers (https://blog.close.com/b2b-sales-tips-internal-champions-decision-makers/) 
+
+#### Customer location
+
+As close as possible to the point that the need for the product or service materializes 
 
 * **Online**  
-Online customer acquisition is almost a [new science field][36]. It continuously grows and spurs new completely different 
-verticals. Each one with its own considerations and expense profile. A quick list  
-  * [Organic SEO][42]: The business is attracting attention based on the content it produces 
-  * [Keyword auctions][38], [PPC][37] and [banners][39]: Displaying advertisements on search results and platforms, after 
-  price bidding for the slot. The actual bidding mechanism may be [completely different][40] for each platform.  
-  * [Affiliate networks][41]
-  * [Influencers][43], the evolution of affiliate networks for a video-first age
+Most obvious is online 
+push content: advertisements in high-traffic websites (e.g. Facebook, Google, news sites)
+pull content: The business is attracting attention based on the content it produces 
+i.e. content that customers are actively looking for 
+[Organic SEO][42] blog posts that the business itself is creating
+[Affiliate networks][41] and [Influencers][43] trusted third parties generating content on behalf of the business 
+  
+content vs references
 
 * **Offline**  
+The importance of offline advertising is thinning over time, as people come to see the real world as a disruption to 
+their online activity.  
+
+For specific non-digitally native customer segments (e.g. baby boomers and early GenX'ers)
+Offline maybe the only still has value to reach
+
 This is all types of old-school marketing. A non-exhaustive list of offline channels  
   * Traditional marketing: TV, radio and print advertisements, outdoor signage,...
   * Trade shows and conferences: This has traditionally been the most efficient way to get a lot of people's focused 
   attention. It remains to be seen what will happen post-COVID.
-  * In-person meetings: From in-person [drug marketing][44] to pre-sales demos and "warming up" decision-makers in the 
+  * In-person meetings and calls: From in-person [drug marketing][44] to pre-sales demos and "warming up" decision-makers in the 
   enterprise space 
+
+Finally another offline way of getting attention is "copy behaviour" 
+is a stand-out product feature 
+which make it easy for other consumers to spot 
+classic examples are [apple headphones][https://www.businessinsider.com/why-are-apple-headphones-white-2016-5]
+and [brightly coloured cards][https://www.wired.co.uk/article/monzo-card-design] for neobanks 
+
+#### Conversion
+
+incentives vs brand story 
+
+streamline acquisition 
+freemium 
+
+tracking and monitoring
+
+The third question to answer is "How do I know that I am not throwing money away?"
+
 
 The second question to answer is *How much will it cost?*.
 
@@ -238,32 +302,6 @@ Offline marketing tends to be upfront investment, in large chunks. For example p
 campaign, setting up a kiosk and exhibiting at a conference. The important thing is to have realistic estimations as to  
 * how much offline marketing will cost (this implies some knowledge of the marketing space prices)
 * how much offline marketing *should* cost in order to be effective. <sup>[5](#footnote_5)</sup> 
-
-online 
-keyword bidding 
-PPC costs 
-affiliate networks
-
-offline  
-cold calling, appointments in-person or in trade shows 
-if the business depends on customer volumes (i.e. many little customers than a few big ones) 
-how is this going to scale 
-
-
-
-The third question to answer is "How do I know that I am not throwing money away?"
-
-The importance of offline advertising is thinning over time, as people come to see the real world as a disruption to 
-their online activity.  
-
-For specific non-digitally native customer segments (e.g. baby boomers and early GenX'ers)
-Offline maybe the only still has value to reach
-
-
-## Delivery
-
-The How of the business
-
 
 
 # In the next episode
@@ -314,3 +352,5 @@ example venture unfeasible.
   [19]: https://en.wikipedia.org/wiki/Point_of_sale
   [20]: https://en.wikipedia.org/wiki/App_store
   [21]: https://sgerogia.github.io/Angel-investing-Part-2/#:~:text=Customer%20Acquisition%20Cost
+  [22]: https://complyadvantage.com/knowledgebase/kyc/
+  [23]: https://www.investopedia.com/terms/a/aml.asp
