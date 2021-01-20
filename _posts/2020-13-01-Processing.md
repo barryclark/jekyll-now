@@ -14,12 +14,21 @@ N.B - To add plugins in Audition, just go to your effects rack, hit track effect
 
 N.B but twice - I applied a hard limiter to the master, which I'll talk about later on, to stop your ears from being destroyed by clipping on the bad examples.
 
+## Monitoring audio in the mix
+
+Monitoring audio in the mix is really easy with Adobe Audition. Every track has a "solo" function, which isolates just the track highlighted. This can be used to mix certain elements together. In this case, I used solo on Freddie's vocals and the piano to balance the mix between the two.
+
+[![Solo Demo](http://img.youtube.com/vi/7Ih_hjXORG4/0.jpg)](http://www.youtube.com/watch?v=7Ih_hjXORG4 "Solo Demo")
+
 ## Parametric EQ
 
 Parametric EQ is essentially what allows me to edit the tonal properties of the audio track. If you use Logic, like I do on my Mac, all of the EQ plugins are parametric anyway, but parametric essentially just means that it has a graph that you can adjust the parameters on to change the sound of the audio. I'm going to use it on my kickdrum stem to add more punch to the sound.
 When used too much, it sounds like this:
+
 [![A video showing misuse of parametric EQ on a kick drum.](http://img.youtube.com/vi/cI1LsOcH6tg/0.jpg)](http://www.youtube.com/watch?v=cI1LsOcH6tg "How Not To EQ")
+
 When used correctly, it can add warmth and punch:
+
 [![A video showing a better use of parametric EQ on a kick drum.](http://img.youtube.com/vi/l6HUMX3z2r0/0.jpg)](http://www.youtube.com/watch?v=l6HUMX3z2r0 "How To EQ")
 
 ## Noise Gate
