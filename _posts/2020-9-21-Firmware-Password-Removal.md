@@ -4,7 +4,6 @@ title: Remove a macOS Firmware Password
 ---
 
 ![](../images/2020-9-21/mac-firmware-lock-icon.png)
-
 This post is similar to the attached Apple KB with the addition of what to do if you run into an issue where Internet Recovery is unable to find and administrator on the Mac where we want to disable the Firmware Password.
 
 ### Before You Start
