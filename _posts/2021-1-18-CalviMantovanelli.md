@@ -81,3 +81,4 @@ JDEは因果関係の識別にかなりうるさいイメージなので、こ�
 私も日本でキリスト教伝導がどのように人々を影響したか是非研究してみたいです。例えば、今日における人権に関する考え方や、リスクに対する考え方等見れたら面白いなと思います。
 
 ### **文献：**
+Calvi, R., & Mantovanelli, F. G. (2018). Long-term effects of access to health care: Medical missions in colonial India. Journal of Development Economics, 135, 285-303.
