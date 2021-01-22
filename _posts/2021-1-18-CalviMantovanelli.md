@@ -80,5 +80,14 @@ JDEは因果関係の識別にかなりうるさいイメージなので、こ�
 
 私も日本でキリスト教伝導がどのように人々を影響したか是非研究してみたいです。例えば、今日における人権に関する考え方や、リスクに対する考え方等見れたら面白いなと思います。
 
+#### **中村:**
+私も鈴木さんと同感（の考えに便乗）です。でも確かにEconometric Identificationの方に偏りすぎて大まかな感じの因果関係（過去の宣教活動が現在の健康指標に与える影響）になってしまうか、それとも細かいメカニズムについて追求したいんだけど結果因果関係が曖昧になってしまう、という実証研究の恒久的な悩みな気がします。
+あとは、私が個人的におもしろいなと思った関連の論文は：
++ Jedwabさんなどの似た様な研究、コンテクストはアフリカでSpatial Dynamicsなどにも目を向けている物がワーキングペーパーですが[こちら](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=933591)。
++ 私の学部時代の指導教官が書いた、植民地制度が発展に及ぼす影響を小さい島国（日本は入っていない笑）にフォーカスして、風向きを使って測定した物が[こちら](https://ideas.repec.org/a/tpr/restat/v91y2009i2p245-262.html)。
+
 ### **文献：**
 Calvi, R., & Mantovanelli, F. G. (2018). Long-term effects of access to health care: Medical missions in colonial India. Journal of Development Economics, 135, 285-303.
+Feyrer, J., & Sacerdote, B. (2009). Colonialism and modern income: islands as natural experiments. The Review of Economics and Statistics, 91(2), 245-262.
+Jedwab, R., Meier zu Selhausen, F., & Moradi, A. (2018). The economics of missionary expansion: evidence from Africa and implications for development.
+
