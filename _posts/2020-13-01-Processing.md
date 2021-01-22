@@ -46,6 +46,14 @@ Master bus compression is the same thing as compression, but instead of only bei
 
 ## Brickwall Limiter
 
-A brickwall limiter is essentially just an effect that builds a "brick wall" at 0dB, so that audio cannot pass through it, and therefore clip. This can be useful in production for radio imaging, where pushing compression really hard, combined with a brickwall limiter can create a really strong sound which sounds good on FM radio, but otherwise, I mostly use it as a safeguard. Adobe Audition's Multiband Compressor includes a brickwall limiter, which I turned on purely as a safeguard while I was mixing as to not accidentally damage my speakers.
+A brickwall limiter is essentially just an effect that builds a "brick wall" at around -1 dB, so that audio cannot pass through it, and therefore clip. This can be useful in production for radio imaging, where pushing compression really hard, combined with a brickwall limiter can create a really strong sound which sounds good on FM radio, but otherwise, I mostly use it as a safeguard. Adobe Audition's Multiband Compressor includes a brickwall limiter, which I turned on purely as a safeguard while I was mixing as to not accidentally damage my speakers.
 
-## 
+*For the sake of my speakers' health, I turned them off while taking this screenshot. I've intentionally overdriven the mix really badly.*
+
+![Don't do this.](https://toaster.sh/i/ycfk.png) 
+
+You can see that the audio is clipping (indicated by the red bars on the right hand side of the VU meter), but if I apply the brickwall limiter...
+
+![Still don't do this. Make your mix quieter](https://toaster.sh/i/ssyj.png)
+
+The audio is still very, very loud overall (the VU meter was stuck in this position for the whole time) but the brickwall limiter prevents it from clipping. 
