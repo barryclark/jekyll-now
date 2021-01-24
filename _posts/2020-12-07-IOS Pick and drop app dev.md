@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "IOS app dev - kodika.io"
+title:  "Student Giveaways"
 ---
 
 # Kodika.io ! < something to check out
