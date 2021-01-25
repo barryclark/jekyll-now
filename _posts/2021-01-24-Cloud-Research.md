@@ -4,9 +4,11 @@
 
 As a drone pilot, I can get a unique perspective of the sky, because the camera is in the sky. I can rise above trees and get an unobstructed view of a sunset. However, an amazing sunset does not happen every night. Some sunsets are much more aesthetic than others. One such factor is your location, and for me in my area, the best place to take a sunset photo would be anywhere that there is a body of water beneath, which reflects the colors of the sky. The sun paints orange and red and magenta in the sky, and to me the more non-blue and non-grey colors the better the sunset.
 
-I would rate sunsets on a scale of 1-10. A 10/10 sunset would be properly framed with an interesting foreground as well as a vibrant sunset. It would be taken at the correct time where the clouds are at their peak in terms of color. A 10/10 sunset would have the right amount of cloud coverage, not too much and not too litte. The clouds will be at certain altitudes, because clouds that are too low are never lit up by the sun. These are the conditions I am searching for.
+I would rate sunsets on a scale of 1-10. A 10/10 sunset would be properly framed with an interesting foreground as well as a vibrant sunset. It would be taken at the correct time where the clouds are at their peak in terms of color. A 10/10 sunset would have the right amount of cloud coverage, not too much and not too litte. The clouds will be at certain altitudes, because clouds that are too low are never lit up by the sun. These are the variables I seek to understand.
 
-I need to predict a good sunset because I do not want to drive to the "perfect" sunset spot only to have a lame overcast non-sunset and essentially waste an hour of time. So in this effort I have begun to be able to identify the different types of clouds. I am studying the timing of when clouds at certain altitudes become lit up by the sun. There is always an "official" sunset time for any location, and when is the optimal time to take the photo - 10 minutes before sunset? 10 minutes after, when the sun is below the horizon?
+[]()
+
+I need to predict a good sunset because I do not want to drive to the "perfect" sunset spot only to have a lame non-sunset, not get a good photo, and essentially waste an hour. So in this effort I have begun to be able to identify the different types of clouds. I am studying the timing of when clouds at certain altitudes become lit up by the sun. There is always an "official" sunset time for any location, so when is the optimal time to take the photo - 10 minutes before sunset? 10 minutes after?
 
 In just a week of studying, I have already reached some conclusions. I will take it day-by-day and show each discovery from that day.
 
