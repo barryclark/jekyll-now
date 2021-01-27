@@ -18,8 +18,6 @@ To add effects in Audition, select a track to apply effects to (this also includ
 
 Monitoring audio in the mix is really easy with Adobe Audition. Every track has a "solo" function, which isolates just the track highlighted. This can be used to mix certain elements together. In this case, I used solo on Freddie's vocals and the piano to balance the mix between the two.
 
-[![Solo Demo](http://img.youtube.com/vi/7Ih_hjXORG4/0.jpg)](http://www.youtube.com/watch?v=7Ih_hjXORG4 "Solo Demo")
-
 ## Parametric EQ
 
 Parametric EQ is essentially what allows me to edit the tonal properties of the audio track. If you use Logic, like I do on my Mac, all of the EQ plugins are parametric anyway, but parametric essentially just means that it has a graph that you can adjust the parameters on to change the sound of the audio. I'm going to use it on my kickdrum stem to add more punch to the sound.
@@ -56,4 +54,8 @@ You can see that the audio is clipping (indicated by the red bars on the right h
 
 ![Still don't do this. Make your mix quieter](https://toaster.sh/i/ssyj.png)
 
-The audio is still very, very loud overall (the VU meter was stuck in this position for the whole time) but the brickwall limiter prevents it from clipping. 
+The audio is still very, very loud overall (the VU meter was stuck in this position for the whole time) but the brickwall limiter prevents it from clipping.
+
+## Enhancing Stereo Width
+
+Stereo width is effectively the term used for the pseudo-"stage" of sound that is represented by (normally) the left and right channels of audio. Using techniques such as balance and pan, can add lots of dimension to the mix, if used correctly. The Beatles' records do this quite effectively, seperating instrumentals and vocal tracks to the left and right channels almost entirely. Another way to enhance stereo width is with EQ - increasing the EQ on lead tracks in the 2.5-5Khz range (the "presence zone", AKA what we hear the clearest) can add dimension to the final mix pretty easily. Overuse of stereo width can result in a bad mix (imagine if I could only hear the vocals in my left ear for the whole of Bohemian Rhapsody - it wouldn't sound good), but used correctly, it means that your mix will sound wicked, regardless of if on a pair of headphones or a proper stereo speaker setup.
