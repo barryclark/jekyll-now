@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /
 ---
 
 I'm a software engineer from Sweden working as a consultant for the awesome company [Netlight](https://www.netlight.com)!
