@@ -34,7 +34,7 @@ To find meaningful ways to present the data I decided to start a [mind mapping](
 ### Applying Gamification with APIs 🎮
 I started reading a book called *How to Save the World* by Katie Patrick, where she talks about applying gamification principles to solve environmental problems. Katie Patrick is an environmental engineer and software designer, and I started reading her book after watching her present in a video webinar because she talks about some very meaningful ideas that could be applied to ZotBins.
 
-For a long time ZotBins has taken a educational approach, where we try to education users in how to recycle/compost more and waste less. However, sometimes times, this doesn't lead to significant behavioral changes to actually increase recycling and composting rates. This idea, is actually a common problem that Katie Patrick likes to call the Value-Action Gap. She states that from scientific studies that educating people on important environmental topics contributed to mainly peoples environmental values, but doesn't necessarily translate into action.
+For a long time ZotBins has taken a educational approach, where we try to education users in how to recycle/compost more and waste less. However, sometimes, this doesn't lead to significant behavioral changes to actually increase recycling and composting rates. This is actually a common problem that Katie Patrick likes to call the **Value-Action Gap**. She states that scientific studies show educating people on important environmental topics contributed to mainly peoples' environmental values, but doesn't necessarily translate into action. That means that yes, they cared about environmental issues more, but didn't necessarily do anything about it.
 
 Ok, so how do we apply some basic gamification principles to our data. One method is to introduce a simple feedback loop as shown below. If you play any popular game there is a concept of having an HP-bar. You know that if you are low on HP, your bar usually turns red and sometimes it blinks or makes sounds, which motivates you to do something to try to regain your health back into the green zone. This itself already applies a feedback loop!
 1. **Data**: You're low on HP
@@ -52,12 +52,12 @@ We can apply this same concept with our waste data. For example:
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/jan2021-images/feedback_loop.png)
 
-There are actually a bunch of ways and ZotBins has explored options in this past such as introducing point systems for a leaderboard or even converting the points into some sort of crypto currency. Anyways there are plenty of ways that ZotBins can utilize gamification so stay tuned as the project continues to expand!
+There are actually a bunch of ways ZotBins has explored options in the past such as introducing point systems for a leaderboard or even converting the points into some sort of crypto currency. Anyway, there are plenty of ways that ZotBins can utilize gamification so stay tuned as the project continues to expand!
 
 For more ideas in applying gamification principles watch Katie Patrick's video [Five Easy Low Tech Gamification Techniques: How to Save the World](https://www.youtube.com/watch?v=PjeKUbzffCs)
 
 
 ----
-It's already been a pretty busy month for me, but I hope to make some more significant progress and finish phase 3 soon! Stay tuned and have a great day!
+It's already been a pretty busy month for me, but I hope to make some more significant progress and finish phase 3 soon! I've been dealing with a lot of logistical stuff this month so I haven't been as active in developing the project. However, I've been getting a lot of help! Huge shout out to Aishwarya Bhandari and Patrick Nguyen for contributing to the [ZBCE API Repository](https://github.com/zotbins/zbce_api). Stay tuned and have a great day!
 
 -- Owen Y.
