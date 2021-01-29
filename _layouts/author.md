@@ -5,7 +5,7 @@ layout: default
 
 {{ content }}
 
-<h2>Posts by {{ page.name }}:</h2>
+<h3>Posts by {{ page.name }}:</h3>
 <ul>
 {% for post in site.posts %}
 {% if post.author == page.name %}
