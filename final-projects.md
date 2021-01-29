@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Final Projects
-permalink: /finalprojects/
+permalink: /final-projects/
 ---
 
 Over the course of the semester in 'A History of Words,' students will learn a variety of digital skills that they will then apply to a source that they have selected from Princeton University's [digital special collections](https://dpul.princeton.edu).
