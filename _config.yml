@@ -56,3 +56,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
+collections:
+  people:
+    output: true
