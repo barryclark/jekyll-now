@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Course Description
-permalink: /coursedescription/
+permalink: /course-description/
 ---
 
 How do the methods, materials, and technologies of human communication shape 
