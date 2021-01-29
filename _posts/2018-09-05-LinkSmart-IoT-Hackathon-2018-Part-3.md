@@ -104,7 +104,7 @@ Implementation of actuation, in this hackathon, involves performing stimulus-res
 
 #### Example: Send e-mails
 
-The agent is also able to send e-mails. Create a statement like this (ask [Jannis Warnat](https://docs.linksmart.eu/display/~jannis.warnat)  for the password via e-mail or Rocket.Chat):
+The agent is also able to send e-mails. Create a statement like this:
 
 ```json
 {
