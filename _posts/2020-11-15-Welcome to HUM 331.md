@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Melissa Reynolds
 title: Welcome to HUM 331
 ---
 
