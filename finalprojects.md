@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Course Description
+title: Final Projects
 permalink: /finalprojects/
 ---
 
