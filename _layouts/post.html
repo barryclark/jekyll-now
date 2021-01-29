@@ -7,9 +7,6 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
-    <br>
-    <br>
     {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">
     {% for person in site.people %}
     {% if person.name == page.author %}
@@ -22,5 +19,8 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  <div class="date">
+      {{ page.date | date: "%B %e, %Y" }}
 
 </article>
