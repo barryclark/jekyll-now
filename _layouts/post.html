@@ -10,7 +10,7 @@ layout: default
     {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">
     {% for person in site.people %}
     {% if person.name == page.author %}
-    <a href="{{ site.baseurl }}{{ person.url }}">{{ page.author }}</a>
+    <a href="{{ site.baseurl }}{{ person.url }}">{{ page.author }}</a><br>
     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
     {% endif %}
     {% endfor %}
