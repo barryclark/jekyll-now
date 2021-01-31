@@ -251,7 +251,7 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 \- A person is conditioned to appear, and so is conditioned to cease. What has the nature of enlightenment is unconditioned.
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
-\- [Kyogen](https://en.wikipedia.org/wiki/Hsiang-yen_Chih-hsien) heard the tile hit the bamboo and was enlightened. When the tile fell back on the floor, what was heard?
+\- [Kyogen](https://en.wikipedia.org/wiki/Hsiang-yen_Chih-hsien) heard the tile hit the bamboo and was enlightened. When the tile fell back on the floor, what was heard? The story doesn't say a word on this.
 
 ### Answers trying to be stupid
 
