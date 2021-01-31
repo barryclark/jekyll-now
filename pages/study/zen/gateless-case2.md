@@ -52,6 +52,7 @@ _"Such a person does not evade the law of cause and effect"_ is elsewhere render
 Book of Serenity Case 8 has some comments/notes/interjections following the case. Here's two:
 - _"The old man was enlightened at these words - Fox drool is still there."_
 - _"For five hundred lives he couldn't do a thing - If he had known what would happen today, he'd regret not being careful to begin with."_
+- _"I fell into a wild fox body for five hundred lives - You said one doesn't fall into cause and effect."_
 
 # Readings
 
@@ -97,6 +98,10 @@ Someone asking you a question does not mean you have to answer.
 > 'Such a person does not fall under the law of cause and effect.'
 
 A wrong question leads to a wrong answer.
+
+> With this I was reborn five hundred times as a fox.
+
+But... _"You said one doesn't fall into cause and effect."_ [The Book of Serenity, Case 8, added sayings]
 
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
 
@@ -245,6 +250,9 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- A person is conditioned to appear, and so is conditioned to cease. What has the nature of enlightenment is unconditioned.
 
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- [Kyogen](https://en.wikipedia.org/wiki/Hsiang-yen_Chih-hsien) heard the tile hit the bamboo and was enlightened. When the tile fell back on the floor, what was heard?
+
 ### Answers trying to be stupid
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
@@ -269,3 +277,9 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- _There are these three characteristics that define the conditioned. An arising is seen, a vanishing is seen, and its alteration while it persists is seen. There are three characteristics that define the unconditioned. No arising is seen, no vanishing is seen, and no alteration while it persists is seen._ [AN, I 152, 47 (7)]
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- _Without nothing to attain, a Boddhisatva relies on Prajnaparamita, and thus the mind is without hindrance._ \[[Prajñāpāramitāhṛdaya Sūtra](https://en.wikipedia.org/wiki/Heart_Sutra)\]
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- _"Just do good, don't ask about the road ahead."_ [The Book of Serenity, Case 8, added sayings]
