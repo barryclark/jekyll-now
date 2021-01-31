@@ -101,7 +101,7 @@ A wrong question leads to a wrong answer.
 
 > With this I was reborn five hundred times as a fox.
 
-But... _"You said one doesn't fall into cause and effect."_ [The Book of Serenity, Case 8, added sayings]
+But... _"You said one doesn't fall into cause and effect."_
 
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
 
