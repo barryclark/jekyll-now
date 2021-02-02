@@ -3,8 +3,17 @@ layout: page
 title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
+### December 14th, 2020 thoughts & takeaways:
 
-### October 1st thoughts & takeaways:
+* Since I last updated this post, we’ve had the Thanksgiving holiday. Thanksgiving has a reputation of a big traffic day. However, Thanksgiving day was the lowest traffic volume day since April. Since October the weekly moving average is pretty stable at about 70% of pre-pandemic levels.
+
+* Air travel at the Austin airport did just barely break a new daily (pandemic) record of 11,000 passengers through TSA turnstiles on November 8th. The day before Thanksgiving is traditionally the busiest air travel day of the year, Austin had 10,900 passengers. After the initial slowdown, Austin’s share of US passengers has remained stable at about 1% since June which is a good sign for the future.
+
+* Revel mopeds have left Austin. Daily micromobility trips have dropped back down to about 4,500. This probably has more to do with the colder weather, ending of the semester at UT, and the Thanksgiving holiday.
+
+***
+
+### October 1st, 2020 thoughts & takeaways:
 
 * This past week saw traffic volumes decrease about 7%. This is the biggest weekly decrease since March. Its not entirely clear but I assume it has to do with people staying close to home now that virtual schooling is in full swing (for the time being).
 
@@ -12,7 +21,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### September 22nd thoughts & takeaways:
+### September 22nd, 2020 thoughts & takeaways:
 
 * It's that time of year where the intersection volumes data goes haywire due to some cold fronts and weather. I assume the city just loses communications with the devices for a period of time. I've gone back and filled in the missing data using an intersection average % of the day's total. 
 
@@ -24,7 +33,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### September 1st thoughts & takeaways:
+### September 1st, 2020 thoughts & takeaways:
 
 * Traffic volumes ticked up again last week. I won't expect this to change that much until Austin schools are back in session.
 
@@ -34,7 +43,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### August 26th thoughts & takeaways:
+### August 26th, 2020 thoughts & takeaways:
 
 * Last week, traffic volumes ticked up 3.2%. However, over the past two months we've been pretty flat. We have yet to break the daily record set back on June 12th. 
 
@@ -47,7 +56,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### August 17th thoughts & takeaways:
+### August 17th, 2020 thoughts & takeaways:
 
 * This update is only for adding the volume projections graphic.
 
@@ -59,7 +68,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### August 14th thoughts & takeaways:
+### August 14th, 2020 thoughts & takeaways:
 
 * Traffic volumes fell over the past couple of weeks, speeds are up sharply this week. Will have to look into this further to see if there were some changes at our study intersections.
 
@@ -69,7 +78,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### August 1st thoughts & takeaways:
+### August 1st, 2020 thoughts & takeaways:
 
 * Things have flattened out since the latest spike in cases. 1.2% decrease last week. 
 
@@ -77,13 +86,13 @@ permalink: /COVID19/archive/
 
 ***
 
-### July 22nd thoughts & takeaways:
+### July 22nd, 2020 thoughts & takeaways:
 
 * Last week we saw a 2.8% increase in volumes. The moving average has recovered back to where we were in the last week of June. The threat of additional lockdowns seem to have been squashed but schools won't be starting in-person for a while. 
 
 ***
 
-### July 15th thoughts & takeaways:
+### July 15th, 2020 thoughts & takeaways:
 
 * I'd like to shout out some fantastic modeling work done by Will Barbour and Vanderbilt. [They created a "rebound calculator"](https://lab-work.github.io/therebound/) that estimates travel time impacts based on mode changes due to COVID-19. 
 * Here's a plot I created using the tool they included in their post. The big takeaway being that congestion in cities with more transit riders will be impacted much more than car-dependent cities like Austin. I compare a scenario where we kept the same mode split as we did in 2018 versus one where everyone drove alone. 
@@ -98,7 +107,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### July 11th thoughts & takeaways:
+### July 11th, 2020 thoughts & takeaways:
 
 * Not a whole lot changed over the past week, same trends that we've been seeing since the spike in cases began a few weeks ago. US mobility trends from Apple is also seeing a decrease.
 
@@ -108,7 +117,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### July 6th thoughts & takeaways:
+### July 6th, 2020 thoughts & takeaways:
 
 * Over last week, the traffic volume decreased 2.4%. 
 
@@ -124,7 +133,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### July 2nd thoughts & takeaways:
+### July 2nd, 2020 thoughts & takeaways:
 
 * Much the same trends of decreasing traffic have continued, I've added a new chart to track the weekly % change in traffic. More lockdown measures have been rumored to be implemented after the long weekend.
 
@@ -134,7 +143,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### June 29th thoughts & takeaways:
+### June 29th, 2020 thoughts & takeaways:
 
 * The last two weeks have seen decreasing volumes. Last week decreased 6.3%. I guess people are seeing the increasing cases and are deciding to stay home. 
 
@@ -142,7 +151,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### June 26th thoughts & takeaways:
+### June 26th, 2020 thoughts & takeaways:
 
 * Austin and Texas isn't doing so well on the fight against COVID-19. Volumes have started to dip downward, but it may have been caused by poor weather. Father's day was the lowest daily volume we've seen since the end of May.
 
@@ -150,7 +159,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### June 20th thoughts & takeaways:
+### June 20th, 2020 thoughts & takeaways:
 
 * Daily traffic volumes have returned now to beyond 75-80% of pre-lockdown volumes. About half way recovered from the low point of 50-60% drop in April. Still largely on track for a late August recovery projection. Congestion will follow and we've already seen some locations in Austin where congestion is returning. 
 
@@ -162,7 +171,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### June 11th thoughts & takeaways:
+### June 11th, 2020 thoughts & takeaways:
 
 * Traffic volumes increased by 26% in May, [but there are obvious reasons why this isn't the best way to measure the recovery.](https://twitter.com/aniccia/status/1270799838540517376)
 
@@ -174,7 +183,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 31st thoughts & takeaways:
+### May 31st, 2020 thoughts & takeaways:
 
 * The past week has been eventful, to say the least. Between severe weather and protests average speeds have fallen sharply. Traffic incidents have increased as well. 
 
@@ -184,7 +193,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 27th thoughts & takeaways:
+### May 27th, 2020 thoughts & takeaways:
 
 * I've changed some of the plots around and changed the intersections I've been looking at for the volume & speed plots. A few were locations stopped reporting data over the course of the past month so those were removed. 
 
@@ -193,7 +202,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 23rd thoughts & takeaways:
+### May 23rd, 2020 thoughts & takeaways:
 
 * Monday, Tuesday, Wednesday, Thursday's traffic volumes all were very similar. Yesterday only barely higher than the previous Friday which I thought was strange as it was the beginning of the long weekend and with all of the extra businesses that could open. That being said, it was the 2nd busiest day on Austin's roads since the beginning of the lockdown. 
 
@@ -203,7 +212,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 20th thoughts & takeaways:
+### May 20th, 2020 thoughts & takeaways:
 
 * Check out the analysis I did below on travel time and congestion in Austin post-COVID. While traffic volumes have decreased around 40-50%, congestion has reduced 94% and travel times have been reduced by 30%.
 
@@ -211,7 +220,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 18th thoughts & takeaways:
+### May 18th, 2020 thoughts & takeaways:
 
 * Friday night/Saturday morning's inclement weather caused the highest number of reported traffic incidents since the beginning of the lockdown. 
 
@@ -220,7 +229,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 15th thoughts & takeaways:
+### May 15th, 2020 thoughts & takeaways:
 
 * The decreasing trend in the traffic volumes is probably misleading on first glance. First of all, the bad weather on Tuesday reduced traffic volumes significantly. Also, it appears that the weather has caused on data issues at [Braker lane/Mopac]({{site.baseurl}}/images/braker@mopac.PNG). That location appears to now only be reporting half of the daily traffic. 
 
@@ -228,7 +237,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 13th thoughts & takeaways:
+### May 13th, 2020 thoughts & takeaways:
 
 * The huge boost in traffic expected on Mother's Day didn't really happen. The volume on Sunday was higher than the previous week but not far from the trend that has been in place over the past two weeks. 
 
@@ -236,7 +245,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 10th thoughts & takeaways:
+### May 10th, 2020 thoughts & takeaways:
 
 * The traffic volume recovery rate appears to be slowly increasing. This past week's growth is about 6% which is higher than the previous rate of about 10% per month. 
 
@@ -246,7 +255,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 6th thoughts & takeaways:
+### May 6th, 2020 thoughts & takeaways:
 
 * May 3rd & 4th traffic volume and speed data was missing multiple intersections but now seems to be fixed. The volumes on those days was estimated based on the available data on those days as compared to the previous Sunday/Monday. Sunday saw about 4% higher volumes and Monday was 2% less. 
 
@@ -258,7 +267,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 3rd thoughts & takeaways:
+### May 3rd, 2020 thoughts & takeaways:
 
 * Following the lifting the stay-at-home order for Texas, Friday's traffic volume was 8% higher than the previous Friday. The same trend remains true for Saturday's volumes. This was not significantly different than the trend we've been seeing over the past two weeks.
 
@@ -266,7 +275,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### May 1st thoughts & takeaways:
+### May 1st, 2020 thoughts & takeaways:
 
 * The Governor's order to open restaurants and other businesses begins today. Yesterday's volume data was pretty much on par for what we saw last Thursday. Fridays are usually the highest volume day, since daily rush hour traffic combines with people traveling to locations for the weekend or other leisure activities. We'll see how this looks in the data tomorrow morning. I'll be watching the late evening (6-9pm) to see if we're getting higher volumes of people heading out to eat or whatever. 
 
@@ -274,7 +283,7 @@ permalink: /COVID19/archive/
 
 ***
 
-### April 29th thoughts & takeaways:
+### April 29th, 2020 thoughts & takeaways:
 
 * Austin has seen about a 50% in traffic volumes and 10% increase in speeds since the beginning of the lockdown. It's hard to see if the speed data is at all interesting as the data is collected at signalized intersections. Some increased speeds may be caused by speeding drivers, but it also may be caused by decreased congestion. Something to look into later.
 
