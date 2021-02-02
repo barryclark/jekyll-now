@@ -3,6 +3,20 @@ layout: page
 title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
+### February 1st, 2021 thoughts & takeaways:
+
+* I am now showing almost an entire year of data going back to February 1st, 2020.
+
+* There is an interesting bump in traffic in the lead up to Christmas. Boxing day was only eight thousand more vehicles more than Thanksgiving day and the second lowest daily traffic I've recorded.
+
+* January 10th, 2021 was the highest number of traffic incidents recorded since COVID. This was due to a snow "storm" that came in that morning.
+
+* Micromobility trips are down since the students aren't around as much from Thanksgiving-February. Also the weather sometimes doesn't cooperate.  
+
+* January 3rd, 2021 set a new daily record since COVID at the AUS TSA checkpoint. The extra-long weekend caused by New Year's Day falling on a Friday really compressed traveler's schedules. December 8th, 2020 was the least busy day at the airport since Independence Day caused by the lull in leisure and business travel between Thanksgiving and the Holidays.
+
+***
+
 ### December 14th, 2020 thoughts & takeaways:
 
 * Since I last updated this post, we’ve had the Thanksgiving holiday. Thanksgiving has a reputation of a big traffic day. However, Thanksgiving day was the lowest traffic volume day since April. Since October the weekly moving average is pretty stable at about 70% of pre-pandemic levels.
