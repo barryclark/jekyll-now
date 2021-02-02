@@ -3,7 +3,7 @@ layout: page
 title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
-### February 1st, 2021 thoughts & takeaways:
+### February 2nd, 2021 thoughts & takeaways:
 
 * I am now showing almost an entire year of data going back to February 1st, 2020.
 
