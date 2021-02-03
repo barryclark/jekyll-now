@@ -11,7 +11,7 @@ description: "Request to speak at or sponsor Cloud Native London."
   <div class="hero-text">
     <h3>One of the largest and most active developer communities in London.</h3>
     
-    I host meetups on the first Wednesday of every month for 200-300 attendees, with speakers booked through 2020.
+    I host meetups on the first Wednesday of every month for 200-300 attendees, with speakers booked through 2021.
   </div>
 </div>
 </div>
