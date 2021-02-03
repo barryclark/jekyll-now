@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Join us and three great speakers from Red Hat, driftctl, and LINBIT HA-Solutions GmbH at the February Cloud Native London virtual meetup, on Rambly and YouTube from 6:30pm GMT!
