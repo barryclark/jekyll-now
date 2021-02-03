@@ -26,7 +26,7 @@ Join us and three great speakers from Red Hat, driftctl, and LINBIT HA-Solutions
 * 8:30 Replicated block storage with LINSTOR (Robert Altnoeder, LINBIT HA-Solutions GmbH)
 * 9:00 Wrap up
 
-We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [Palo Alto Networks](https://www.paloaltonetworks.com/), [CircleCI](https://circleci.com/), and [Redhat](https://www.redhat.com/en) for your enthusiastic and generous support and sponsorship.
+We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [Palo Alto Networks](https://www.paloaltonetworks.com/), [CircleCI](https://circleci.com/), and [Red Hat](https://www.redhat.com/en) for your enthusiastic and generous support and sponsorship.
 
 ## Cloud Native London March
 
