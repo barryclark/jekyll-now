@@ -57,3 +57,11 @@ Nunnさん系の歴史学チックな論文は大好きのなのですが（同�
 とても面白いロマンがある論文だと思いました。割と細かいテーマに陥りがちな自分としては、このように広い視野で研究テーマを考えたいと思いました。あと、「相関のアベンジャーズ」は良い表現ですね！どこかでまた使いたいです笑。
 
 本論文では気候変動の変動幅を使っているので、これは外生的と考えれば、クロスセクションの分析でもある程度良いような気がします。ただ、気候変動の影響を分析するペーパーでよくなされる、「パネルデータ＋FE入れる」をしていないので、気候変動自体が文化の耐久性にどれほど与えているか、示しにくくなっている気がします。気候変動が他の要因と相関していて、その要因が文化の耐久性に影響を与えている場合は、気候変動自体が影響を与えているわけではないかもしれません。そこで、モデルを作って気候変動が文化の耐久性に与えているチャネルを示して、実証の結果と整合的というしかないのかもしれませんね。
+
+
+### **文献：**
+
+Acemoglu, Daron, Simon Johnson, and James A. Robinson. "The colonial origins of comparative development: An empirical investigation." American economic review 91.5 (2001): 1369-1401.
+
+Giuliano, Paola, and Nathan Nunn. "Understanding Cultural Persistence and Change." The Review of Economic Studies. Forthcoming.
+
