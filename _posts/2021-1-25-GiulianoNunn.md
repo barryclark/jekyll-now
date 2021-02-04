@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 環境変化と文化の耐久性の関わりについて
+title: 文化の耐久性の経済学
 ---
 
 １月（もう２月ですが）のテーマである「祭り、慣習、宗教」、ここまで[祭り](https://www.econblogjapan.com/BlochRaoDesai/)と[宗教](https://www.econblogjapan.com/CalviMantovanelli/)（そして[両方](https://www.econblogjapan.com/Montero2020/)）をカバーしたので、今回は慣習、文化についての論文を取り上げます。
