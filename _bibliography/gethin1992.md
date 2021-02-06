@@ -1,13 +1,11 @@
 ---
 layout: paper
-title: Rupert Gethin, 1992, "The Matikas: Memorization, Mindfulness and the List"
 tags: [Bibliography, Abhidharma, Matikas]
-paper:
-  authors: Rupert Gethin
-  year: 1992
-  title: "The Matikas: Memorization, Mindfulness and the List"
-  download: https://s47fcc2c7bb8760f5.jimcontent.com/download/version/1553316339/module/14021365924/name/Gethin%2C%20Rupert%3B%20The%20M%C4%81tik%C4%81s%20--%20Memorization%2C%20Mindfulness%20and%20the%20List.pdf
-  source:
+authors: Rupert Gethin
+year: 1992
+title: "The Matikas: Memorization, Mindfulness and the List"
+download: https://s47fcc2c7bb8760f5.jimcontent.com/download/version/1553316339/module/14021365924/name/Gethin%2C%20Rupert%3B%20The%20M%C4%81tik%C4%81s%20--%20Memorization%2C%20Mindfulness%20and%20the%20List.pdf
+source: "N/A"
 ---
 
 > Most people coming into contact with Buddhist literature and thought outside traditional Buddhist cultures are probably struck by the fact that it

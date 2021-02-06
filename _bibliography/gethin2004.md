@@ -1,13 +1,11 @@
 ---
 layout: paper
-title: Rupert Gethin, 2004, “On the Practice of Buddhist Meditation According to the Pali Nikāyas and Exegetical Sources”
 tags: [Bibliography, Meditation, Pali Canon]
-paper:
-  authors: Rupert Gethin
-  year: 2004
-  title: “On the Practice of Buddhist Meditation According to the Pali Nikāyas and Exegetical Sources”
-  download: http://www.ahandfulofleaves.org/documents/Articles/On%20the%20Practice%20of%20Buddhist%20Meditation%20According%20to%20the%20Pali%20Nikayas%20and%20Exegetical%20Sources_Gethin_Hamburg_2004.pdf
-  source:
+authors: Rupert Gethin
+year: 2004
+title: “On the Practice of Buddhist Meditation According to the Pali Nikāyas and Exegetical Sources”
+download: http://www.ahandfulofleaves.org/documents/Articles/On%20the%20Practice%20of%20Buddhist%20Meditation%20According%20to%20the%20Pali%20Nikayas%20and%20Exegetical%20Sources_Gethin_Hamburg_2004.pdf
+source: "N/A"
 ---
 
 > _The problem of the term 'meditation'_  

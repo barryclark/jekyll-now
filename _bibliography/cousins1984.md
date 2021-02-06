@@ -1,13 +1,11 @@
 ---
 layout: paper
-title: L.S. Cousins, 1984, "Samatha-yāna and Vipassanā-yāna"
 tags: [Bibliography, Meditation]
-paper:
-  authors: L.S. Cousins
-  year: 1984
-  title: "Samatha-yana and Vipassana-yana"
-  download: http://www.ahandfulofleaves.org/documents/Samatha-yana%20and%20Vipassana-yana_Cousins_1984.pdf
-  source: Buddhist Studies in Honour of Hammalava Saddhātissa – 1984 (Dhammapala, Gombrich, Norman – Editors)
+authors: L.S. Cousins
+year: 1984
+title: "Samatha-yana and Vipassana-yana"
+download: http://www.ahandfulofleaves.org/documents/Samatha-yana%20and%20Vipassana-yana_Cousins_1984.pdf
+source: Buddhist Studies in Honour of Hammalava Saddhātissa – 1984 (Dhammapala, Gombrich, Norman – Editors)
 ---
 
 > Asked about samatha (calm) and vipassana (insight) meditation, a well-known contemporary Thai meditation teacher commented at the end of
