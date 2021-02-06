@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bibliography
+title: Bibliography in Buddhist Studies
 permalink: /pages/study/bibliography
 ---
 
