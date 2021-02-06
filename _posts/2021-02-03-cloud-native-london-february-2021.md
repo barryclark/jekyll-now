@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London February 2021: Red Hat, driftctl, and LINBIT HA-Solutions GmbH"
 description: "three speakers from Red Hat, driftctl, and LINBIT HA-Solutions GmbH join us at the Cloud Native London meetup February 2021, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
-image: /images/CNL_2020-12-02_Rambly.jpg
+image: /images/CNL_2021-02-03_Rambly.jpg
 video: https://www.youtube.com/embed/5_9q1EYtEHY
 tags:
   - Photos
