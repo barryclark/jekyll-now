@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Case 2 : Paichang's Fox
+title: "Paichang's Fox"
 permalink: /pages/study/zen/gateless-case2/
 ---
 
@@ -39,7 +39,8 @@ Translation: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/
 
 ## Notes
 
-Case 2 of Gateless Barrier is also:
+This case can be found as:
+- Case 2 of Gateless Barrier
 - Case 8 of Book of Serenity,
 - Case 102 of Dogen's Shinji Shobogenzo.
 
