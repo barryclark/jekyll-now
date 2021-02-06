@@ -50,7 +50,7 @@ _"Such a person does not evade the law of cause and effect"_ is elsewhere render
 - _"Don't ignore cause and effect"_ (Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005)
 - _"He is not deluded about cause and effect"_ (J.C. Cleary, Wumen's Gate, 2005)
 
-Book of Serenity Case 8 has some comments/notes/interjections following the case. Here's two:
+Book of Serenity Case 8 has some comments/notes/interjections following the case. Here's a few:
 - _"The old man was enlightened at these words - Fox drool is still there."_
 - _"For five hundred lives he couldn't do a thing - If he had known what would happen today, he'd regret not being careful to begin with."_
 - _"I fell into a wild fox body for five hundred lives - You said one doesn't fall into cause and effect."_
