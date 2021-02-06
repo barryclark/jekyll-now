@@ -1,9 +1,8 @@
 ---
 layout: post
-title: You're up and running!
+title: Hello world!
 ---
 
-# HI
 
 ## I'm john with github
 
