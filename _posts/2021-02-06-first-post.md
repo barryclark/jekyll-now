@@ -7,7 +7,7 @@ title: Hello world!
 ## I'm john with github
 
 
-''' python
+''' java
 a='test'
 print(a)
 '''
