@@ -36,6 +36,7 @@ Here's a couple of thoughts to start practicing with Koans.
 - _Mumonkan_: the [Gateless Barrier](https://en.wikipedia.org/wiki/The_Gateless_Barrier) (or Gateless Gate), a collection of 48 koans compiled in the early 13th century by the Chinese Zen master [Wumen Huikai](https://en.wikipedia.org/wiki/Wumen_Huikai) (1183–1260).
 - _Shōyōroku_: the [Book of Serenity](https://en.wikipedia.org/wiki/Book_of_Equanimity) (or Book of Equanimity), comprises a collection of 100 koans written by the Chan Buddhist master [Hongzhi Zhengjue](https://en.wikipedia.org/wiki/Hongzhi_Zhengjue) (1091–1157), together with commentaries by [Wansong Xingxiu](https://en.wikipedia.org/wiki/Wansong_Xingxiu) (1166–1246).
 - _Shinjoshobogenzo_: Dogen's [Treasury of the True Dharma Eye](https://en.wikipedia.org/wiki/Shinji_Sh%C5%8Db%C5%8Dgenz%C5%8D), 300 cases compiled by the founder of the Soto School of Zen [Eihei Dogen](https://en.wikipedia.org/wiki/D%C5%8Dgen) between 1223-1227.
+- _Denkōroku_: [The record of transmitting the light](https://en.wikipedia.org/wiki/Denkoroku) includes 53 enlightenment stories based on the traditional legendary accounts of Dharma transmission in the Sōtō lineage, by [Keizan Jōkin](https://en.wikipedia.org/wiki/Keizan).
 
 ## What are koans?
 
