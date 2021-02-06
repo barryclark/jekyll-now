@@ -8,8 +8,7 @@ title: You're up and running!
 ## I'm john with github
 
 
-'''python
-
+''' python
 a='test'
 print(a)
 '''
