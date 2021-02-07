@@ -2,6 +2,7 @@
 layout: post
 title: python-tutorial-1
 ---
+
 **목차**
 - [1. 파이썬 환경 준비](#1-파이썬-환경-준비)    
     - [1.1. python 설치](#11-python-설치)
