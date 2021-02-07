@@ -26,7 +26,7 @@ title: python-tutorial-1
 지인들에게 적어도 "나 python작성할줄 안다! "  
 라는 말을 **떳떳하게** 할수 있을 것이다.
 
-![정말로](https://github.com/alfonso-john2021/alfonso-john2021.github.io/tree/master/_posts/images/2021-02-07-16-47-21.png)
+![정말로](https://github.com/alfonso-john2021/alfonso-john2021.github.io/blob/master/_posts/image/2021-02-07-16-47-21.png?raw=true)
 
 ***
 
@@ -38,7 +38,7 @@ title: python-tutorial-1
 1.1은 건너뛰어도 좋다.
 
 >그러나 잘 설치가 되었는지 자신이 없다면
->![al](images/2021-02-07-16-49-02.png)
+>![al](https://github.com/alfonso-john2021/alfonso-john2021.github.io/blob/master/_posts/image/2021-02-07-16-49-02.png?raw=true)
 >에서 망설임 없이 지워주자.
 >python 관련 프로그램이 2개 있을텐데, 모두 지워줘야 한다.
 >관리자 권한을 요청한다면, 두려워하지말고 주자.
@@ -51,19 +51,19 @@ mailto:jihu@sw-ms.gne.go.kr 을 눌러
 이 모든걸 하기 전 일단 설치부터 해보자.
 
 먼저 python.org 에 들어가자.
-![python홈페이지](images/2021-02-07-19-45-29.png)
+![python홈페이지](https://github.com/alfonso-john2021/alfonso-john2021.github.io/blob/master/_posts/image/2021-02-07-19-45-29.png?raw=true)
 
 영어가 나왔다고 해서 당황하지말고, 차분하게 Downloads 를 누르자.
 
-![다운로드](images/2021-02-07-19-46-36.png)
+![다운로드](https://github.com/alfonso-john2021/alfonso-john2021.github.io/blob/master/_posts/image/2021-02-07-19-46-36.png?raw=true)
 
 여기서 나오는 대문짝하게 나오는 3.9.1은 **비추천**이다. 호환되는 모듈 수도 적고, 최신 버전이라 안정화도 덜 되어있고....
 ~~속편하고 싶으면 조금 더 아래의 3.8.7을 눌러주자.~~
-![다운로드-인스톨러](images/2021-02-07-19-49-02.png)
+![다운로드-인스톨러](https://github.com/alfonso-john2021/alfonso-john2021.github.io/blob/master/_posts/image/2021-02-07-19-49-02.png/?raw=true)
 
 막상 들어가면 다운로드가 보이지 않을텐데, 원래 그렇다.
 
-안심하고 스크롤을 내려 ![64-bit](images/2021-02-07-19-50-53.png)
+안심하고 스크롤을 내려 ![64-bit](https://github.com/alfonso-john2021/alfonso-john2021.github.io/blob/master/_posts/image/2021-02-07-19-50-53.png?raw=true)
 
 이걸 받아주자. ~~에이설마 32-bit이 아직 있겠어;;~~
 
