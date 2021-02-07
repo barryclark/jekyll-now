@@ -13,7 +13,9 @@ title: python-tutorial-2
 ### 1.1 Vscode
 >[홈페이지](https://code.visualstudio.com/)
 
-링크를 타고 들어간 후 Download for Windows 라고 굉장히 눈에띄는 버튼을 눌러 다운로드 해주자. 
+링크를 타고 들어간 후 Download for Windows 라고 
+
+굉장히 눈에띄는 버튼을 눌러 다운로드 해주자. 
 ![](https://github.com/alfonso-john2021/alfonso-john2021.github.io/blob/master/_posts/image/2021-02-07-21-18-33.png?raw=true)
 
 ***
