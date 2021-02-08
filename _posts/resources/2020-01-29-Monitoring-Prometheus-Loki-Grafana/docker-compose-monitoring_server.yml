@@ -1,0 +1,41 @@
+version: "2.4"
+services:
+  grafana:
+    image: grafana/grafana:7.3.1
+    container_name: grafana
+    ports:
+      - 3000:3000
+    volumes:
+      - ./data/grafana:/var/lib/grafana
+    restart: unless-stopped
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+    - 9090:9090
+    command:
+    - --config.file=/etc/prometheus/prometheus.yml
+    - --storage.tsdb.retention.time=90d
+    - --web.route-prefix=/
+    - --web.external-url=https://example.com/prometheus
+    volumes:
+    - ./conf/:/etc/prometheus/:ro
+    - ./data/prometheus:/prometheus
+    restart: unless-stopped
+    depends_on:
+    - alertmanager
+    user: 5678:5678 
+  alertmanager:
+    image: prom/alertmanager
+    container_name: alertmanager
+    user: 9092:9092
+    volumes:
+      - ./conf:/prometheus
+      - ./data/alertmanager:/data
+    command:
+      - --config.file=/prometheus/alertmanager.yml
+      - --storage.path=/data
+      - --log.level=debug
+    restart: unless-stopped
+   
+

@@ -1,0 +1,42 @@
+groups:
+- name: targets
+  rules:
+  - alert: monitor_service_down
+    expr: up == 0
+    for: 30s
+    labels:
+      severity: critical
+    annotations:
+      summary: "Monitor service non-operational"
+      description: "Service {{ $labels.instance }} is down."
+
+- name: containers in example server
+  rules:
+  - alert: example_server_container_down
+    expr: |
+        (absent(container_memory_usage_bytes{name="container1"}) 
+        or absent(container_memory_usage_bytes{name="container2"}) 
+        or absent(container_memory_usage_bytes{name="container3"}) 
+        or absent(container_memory_usage_bytes{name="nginx"}) 
+        )
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Container '{{ $labels.name }}' down"
+      description:  "container with  name '{{ $labels.name }}' is down for more than one minute in main VM"
+
+- name: containers in monitor server
+  rules:
+  - alert: monitoring_server_container_down
+    expr: |
+        (absent(container_memory_usage_bytes{name="prometheus"}) 
+        or absent(container_memory_usage_bytes{name="grafana"}) 
+        or absent(container_memory_usage_bytes{name="alertmanager"}) 
+        )
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Container '{{ $labels.name }}' down"
+      description:  "container with  name '{{ $labels.name }}' is down for more than one minute on monitoring server"
