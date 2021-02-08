@@ -58,5 +58,9 @@ title: "Cortés, Gamboa, and Rodríguez-Lesmes (2020): Contraception, Intra-hous
 
 #### **元橋:**
 
+ジカウィルスが胎児に対してリスクがあるとは初めて聞きましたが、このようなこともあるのですね。独身女性と既婚女性で行動が違うのは面白い結果ですね。
+
+あとは、ジカウィルスの話を聞いたことから、他のウィルス（今のコロナも？）に対しても科学的根拠がなくても同じように反応したりしないのか見てみるのも面白そうに感じました。ただ、そのために、政府の同キャンペーンの地域ごとのIntensityのデータが必要になりそうですが。ラジオによるものなら地形上の制約も使えるかもしれません。
+
 ### **文献：**
 Cortés, D., Gamboa, L.F. and Rodríguez, P., 2020. Contraception, Intra-household Behaviour and Epidemic: Evidence from the Zika crisis in Colombia (No. 018443).
