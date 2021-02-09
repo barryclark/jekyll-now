@@ -28,7 +28,7 @@ title: python-try
 
 바로 이럴때를 위한 명령이 바로
 
-## 2. try~except~finally
+## 2. try except finally
 
 이다.
 
