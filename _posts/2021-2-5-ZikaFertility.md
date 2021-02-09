@@ -71,7 +71,6 @@ title: "Cortés, Gamboa, and Rodríguez-Lesmes (2020): Contraception, Intra-hous
 あとは、ジカウィルスの話を聞いたことから、他のウィルス（今のコロナも？）に対しても科学的根拠がなくても同じように反応したりしないのか見てみるのも面白そうに感じました。ただ、そのために、政府の同キャンペーンの地域ごとのIntensityのデータが必要になりそうですが。ラジオによるものなら地形上の制約も使えるかもしれません。
 
 ### **文献：**
-
-Ashraf, Nava, Erica Field, and Jean Lee. “Household Bargaining and Excess Fertility: An Experimental Study in Zambia.” American Economic Review 104, no. 7 (July 2014).
+Ashraf, N., Field, E., & Lee, J. (2014). Household bargaining and excess fertility: an experimental study in Zambia. American Economic Review, 104(7), 2210-37.
 
 Cortés, D., Gamboa, L.F. and Rodríguez, P., 2020. Contraception, Intra-household Behaviour and Epidemic: Evidence from the Zika crisis in Colombia (No. 018443).
