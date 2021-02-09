@@ -61,6 +61,8 @@ title: "Cortés, Gamboa, and Rodríguez-Lesmes (2020): Contraception, Intra-hous
 
 これらの点は家庭内関係、経済学的に言えば交渉のプロセスと関連していて、なかなか一筋縄ではいかない難しい問題だと思います。国際援助、あるいは女性のエンパワーメントの視点から考えると、避妊具の使用、特に隠蔽性のあるものは一見女性の地位向上に一律に役立つと言う視点もあると思います。ですが既存の家庭内関係、そして生殖決定におけるモラルハザード（女性側が独断で避妊できる）、それによって起こる精神的なコスト、など複数の視点も重要と言う検証結果なのだと理解しています。
 
+ですので、今回のジカウィルス感染症集団発生が生殖行動に与えた研究結果の中で、家庭内暴力などへの影響がなかったのは、そもそも上記のモラルハザードや精神的コストの問題は普遍的ではないのか、それとも何らかのメカニズムのもとで夫婦関係に影響を与えなかったのか（例えば夫婦両側で妊娠、出産に関するコストへの信念が均等に変化して、生殖行動に関する意見の相違を生み出さなかった、とか）、もう少しメカニズムに関しても深掘りしてほしい、と思いました。
+
 
 #### **元橋:**
 
@@ -69,4 +71,7 @@ title: "Cortés, Gamboa, and Rodríguez-Lesmes (2020): Contraception, Intra-hous
 あとは、ジカウィルスの話を聞いたことから、他のウィルス（今のコロナも？）に対しても科学的根拠がなくても同じように反応したりしないのか見てみるのも面白そうに感じました。ただ、そのために、政府の同キャンペーンの地域ごとのIntensityのデータが必要になりそうですが。ラジオによるものなら地形上の制約も使えるかもしれません。
 
 ### **文献：**
+
+Ashraf, Nava, Erica Field, and Jean Lee. “Household Bargaining and Excess Fertility: An Experimental Study in Zambia.” American Economic Review 104, no. 7 (July 2014).
+
 Cortés, D., Gamboa, L.F. and Rodríguez, P., 2020. Contraception, Intra-household Behaviour and Epidemic: Evidence from the Zika crisis in Colombia (No. 018443).
