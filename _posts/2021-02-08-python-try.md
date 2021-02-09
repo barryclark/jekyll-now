@@ -6,7 +6,7 @@ title: python-try
 **목차**입니다
 
 - [1. try it](#1-try-it)
-- [2. try~except~finally](#2-tryexceptfinally)
+- [2. try except finally](#2-tryexceptfinally)
 - [3. 질문](#3-질문)
 - [다음에는](#다음에는)
 
