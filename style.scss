@@ -276,6 +276,11 @@ nav {
     font-size: 12px;
     color: $gray;
   }
+
+  table, td, th {
+    border: 1px solid #cccccc;
+    padding:5px;
+    }
 }
 
 .wrapper-footer {
@@ -298,6 +303,7 @@ footer {
         padding:5px;
         }
 }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
