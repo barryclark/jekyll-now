@@ -21,5 +21,5 @@ If that were beneficial, you can ask yourself systematically:
 ## Very literally: the coin
 
 I drop a coin in the river, it is lost.  
-It is though? I know where it is. It is in the river!  
-Nothing is ever lost, it's in the river!
+Is it though? I __know__ where it is. It is in the river!  
+Nothing is ever lost, everything is in the river.
