@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Love programming, Tinkering, breaking and building things from scratch.
-- Love working with embedded microcontrollers ( Arudino and Raspi)
+- Love working with embedded microcontrollers ( Arduino and Raspi)
 - Script kiddy with advance electrical knowlege 
 - Able to reverse engineer small electical equipment 
 - Build own IOT devices with ESP32 and ESP8266 dev boards
