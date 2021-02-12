@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+Welcome to my about page!
+
 I am just your average everyday IT guy. I work all day in IT to come home to study all night!
 
 ### More Information
