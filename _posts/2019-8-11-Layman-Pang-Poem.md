@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Layman P'ang, Poem"
-tags: [Notes, Quotes]
+tags: [Quotes]
 ---
 
 > "My daily affairs are quite ordinary;  
