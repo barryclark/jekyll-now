@@ -1,6 +1,7 @@
 ---
 layout: post
 title: python while
+tags: [blog, python]
 ---
 
 - [1. while 사용이 필요한 경우](#1-while-사용이-필요한-경우)

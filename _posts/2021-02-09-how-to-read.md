@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to read + def
+tags: [blog, python]
 ---
 
 ## 0. 함수가 뭐죠?

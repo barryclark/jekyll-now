@@ -1,6 +1,7 @@
 ---
 layout: post
 title: python-tutorial-2
+tags: [blog, python]
 ---
 
 - [1. 다시 시작해보자](#1-다시-시작해보자)

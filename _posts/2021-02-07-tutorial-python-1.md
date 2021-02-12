@@ -1,6 +1,7 @@
 ---
 layout: post
 title: python-tutorial-1
+tags: [blog, python]
 ---
 
 ## 목차
