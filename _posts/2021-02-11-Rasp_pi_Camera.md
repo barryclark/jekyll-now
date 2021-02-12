@@ -6,7 +6,7 @@ title: RaspberryPi camera webserver
 
 ## Pr-requisites ##
 - Raspberry pi ( in this case i have raspi pi 4 )
-- Raspi camera (A link to [Camera](https://addons.mozilla.org/en-CA/firefox/addon/foxyproxy-s) )
+- Raspi camera (A link to [Camera](https://www.buyapi.ca/product/raspberry-pi-8mp-camera-board-v2/) )
 - Host computer ( any with ssh and git )
 
 ##Process 
