@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+紀錄關於投資的想法與信息
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+初 期 試 驗
 
-### Contact me
+### Email
 
-[email@domain.com](mailto:email@domain.com)
+[點 擊 跳 轉 至 我 的 郵 箱](mailto:fancifanci@126.com)
