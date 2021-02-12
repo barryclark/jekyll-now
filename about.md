@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am just your average everyday IT guy. I work all day in IT to come home to study all night!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I think it is pretty cool you clicked this button!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ZacvrIT@gmail.com](mailto:ZacvrIT@gmail.com)
