@@ -3,6 +3,7 @@
 layout: post
 title: Zabbix Open Source Network and App monitoring tool 
 ---
+
 Before we start, let's look at what does network and application monitoring means? 
 
 Network Monitoring: Network monitoring is the use of a system that constantly monitors a computer network for slow or failing components and that notifies the network administrator (via email, SMS or other alarms) in case of outages or other trouble. ... Network monitoring is part of network management.
