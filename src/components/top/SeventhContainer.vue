@@ -4,8 +4,8 @@
       <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
         初めての方へ
       </t-tag>
-      <div class="flex row">
-        <div class="col s12 m5">
+      <div class="flex row-382">
+        <div class="col">
           <div class="card m5">
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
@@ -18,7 +18,7 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m5">
+        <div class="col">
           <div class="card m5">
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
@@ -27,13 +27,13 @@
               <p>
                 CoderDojo受付開始や開催直前のお知らせなどを配信します。是非登録してください。
               </p>
-              <img src="../../assets/line_barcode.png" />
+              <img class="line-img" src="../../assets/line_barcode.png" />
             </div>
           </div>
         </div>
       </div>
       <div class="flex row">
-        <div class="col s12 m5">
+        <div class="col">
           <div class="card m5">
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
@@ -49,7 +49,7 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m5">
+        <div class="col">
           <div class="card m5">
             <div class="card-content">
               <t-tag variant="heading" class='pb-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
@@ -81,10 +81,17 @@ main { width: 100%; }
   /* height: 640px; */
   width: 100%;
 }
+.line-img {
+  height: 112px;
+}
 .link-color {
   color: #F2718A;
 }
 .card .card-content {
-  height: 40vh;
+  height: 256px;
+  width: 32vw;
+}
+.row-382 {
+  height: 382px;
 }
 </style>

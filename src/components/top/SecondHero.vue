@@ -11,7 +11,7 @@
         </p>
       </div>
       <div class="card-folder">
-        <div class="row">
+        <div class="row card-32">
           <div class="col s12">
             <div class="card">
               <div class="card-content">
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row card-32">
           <div class="col s12">
             <div class="card">
               <div class="card-content">
@@ -33,7 +33,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row card-32">
           <div class="col s12">
             <div class="card">
               <div class="card-content">
@@ -58,6 +58,12 @@ export default {
 </script>
 
 <style scoped>
+.card .card-content {
+  height: 168px;
+}
+.card-32 {
+  width: 32vw;
+}
 .card-folder {
   display: flex;
 }

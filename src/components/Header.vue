@@ -26,9 +26,9 @@
             </router-link>
           </li>
           <li>
-            <router-link class="router-link" to="/events">
+            <a class="router-link" href="https://coderdojotachikawa.tamaliver.jp/">
               開催の様子
-            </router-link>
+            </a>
           </li>
           <li>
             <router-link class="router-link" to="/support">
