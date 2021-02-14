@@ -28,3 +28,9 @@ Case 2 of Gateless Barrier is also:
 
 Book of Serenity Case 84 has some comments/notes/interjections following the case. Here's some:
 - _"... he would just raise one finger"_ -- Why expend so much energy?
+
+> Dogen's Shinji Shobogenzo, Case 245, commentary:  
+> _"The truth of \[Chu-chih\]'s teachings is not to be found in the finger. This being the case, you tell me, if the truth is not in the finger, then where is it?"_
+
+> Book of Serenity, Case 84, commentary:
+> _"Xuansha said, 'If I had seen \[Chu-chih\] at the time, I would have broken off his finger.' \[...\] Xuanjiai said, 'Tell me, what did Xuansha mean in speaking that way?' I say, after all he doubts. Yunju Yi said, 'When Xuansha spoke that way, was he agreeing with \[Chu-chih\] or not? If he agreed, why did he say he'd break off his finger? If not, where was \[Chu-chih\]'s fault?' I say, the fault lies in agreeing and disagreeing."_
