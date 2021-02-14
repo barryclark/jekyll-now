@@ -22,7 +22,7 @@ Translation: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/
 
 ## Notes
 
-Case 2 of Gateless Barrier is also:
+Case 3 of Gateless Barrier is also:
 - Case 84 of Book of Serenity, "Judi's 'One Finger'"
 - Case 245 of Dogen's Shinji Shobogenzo, "Juzhi Holds Up One Finger"
 
@@ -34,3 +34,37 @@ Book of Serenity Case 84 has some comments/notes/interjections following the cas
 
 > Book of Serenity, Case 84, commentary:
 > _"Xuansha said, 'If I had seen \[Chu-chih\] at the time, I would have broken off his finger.' \[...\] Xuanjiai said, 'Tell me, what did Xuansha mean in speaking that way?' I say, after all he doubts. Yunju Yi said, 'When Xuansha spoke that way, was he agreeing with \[Chu-chih\] or not? If he agreed, why did he say he'd break off his finger? If not, where was \[Chu-chih\]'s fault?' I say, the fault lies in agreeing and disagreeing."_
+
+## The one finger
+
+> Whenever Chu-chih was aked a question, he simply raised one finder.
+
+The one finger.
+
+> One day a visitor asked Chu-chih's attendent what his master preached. The boy raised a finger.
+
+Not the same finger.
+
+> Hearing of this, Chu-chih cut off the boy's finger with a knife.
+
+Not the same finger.
+
+> As he ran from the room, screaming with pain, Chu-chih called to him. When he turned his head, Chu-chih raised a finger.
+
+The one finger.
+
+> When Chu-chih was about to die, he said to his assembled monks: "I received this one-finger Zen from T'ien-long. I used it all my life but never used it up."
+
+How could you use it up when there's only one finger?
+
+## One
+
+One finger, __one__ finger.
+
+One finger, One world.
+
+One finger, one practice.
+
+One finger, one realization.
+
+One finger, one one.
