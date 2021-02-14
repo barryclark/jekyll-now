@@ -9,7 +9,6 @@ Use this guide to quickly reformat a Mac back to factory settings utilizing a lo
 This guide can be used for a Mac that is having trouble hitting the ABM activation servers during an Automated Device enrollment setup process.
 
 ## What is EraseInstall.app
-
 EraseInstall.app for macOS is designed to allow users to easily erase the HD on their Mac and install a fresh copy of macOS.
 
 The application is a wrapper around the command `startosinstall`.
@@ -17,7 +16,6 @@ The application is a wrapper around the command `startosinstall`.
 <p style="page-break-before: always">
 
 ## Pre-requisites
-
 - USB Thumb drive of at least 16GB
 - A copy of the [EraseInstall.app](https://bitbucket.org/prowarehouse-nl/erase-install/downloads/EraseInstall-1.2.1_897.pkg) utility
 - A copy of the latest [macOS Installer](https://apps.apple.com/us/app/macos-big-sur/id1526878132?mt=12) app compatible with recent Mac hardware.
@@ -26,7 +24,6 @@ The application is a wrapper around the command `startosinstall`.
 
 
 ## Process Overview
-
 1. Build the USB Drive
 2. Getting the Mac Ready
 3. Running EraseInstall
@@ -36,7 +33,6 @@ The application is a wrapper around the command `startosinstall`.
 
 <P style="page-break-before: always">
 ### Running EraseInstall
-
 Once the Mac is on the desktop, run the EraseInstall app.
 
 1. Plug the USB into a Mac that you would like to reformat.
