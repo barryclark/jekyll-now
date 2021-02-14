@@ -44,8 +44,6 @@ Once the Mac is on the desktop, run the EraseInstall app.
 
     <img src="../images/2020-6-1/2_eraseinstall.png" alt="drawing" width="350"/>
 
-<P style="page-break-before: always">
-
 1. The checklist should come up and show all checkmarks. Press **Continue**.
 
     If EraseInstall is unable to locate the macOS Installer on the USB drive open **Finder.app** and copy the installer from the USB drive to the `/Applications` folder on the Mac. Then, run the EraseInstall app again.
