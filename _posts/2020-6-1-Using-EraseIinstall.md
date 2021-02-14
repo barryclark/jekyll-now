@@ -12,8 +12,6 @@ EraseInstall.app for macOS is designed to allow users to easily erase the HD on 
 
 The application is a wrapper around the command `startosinstall`.
 
-<p style="page-break-before: always">
-
 ## Pre-requisites
 
 - USB Thumb drive of at least 16GB
@@ -22,18 +20,13 @@ The application is a wrapper around the command `startosinstall`.
 - A Mac that has already gone through SetupAssistant manually and a local user account has been created.
 - Mac Connected to the internet via Wi-Fi or Ethernet.
 
-
 ## Process Overview
 
 1. Build the USB Drive
 2. Getting the Mac Ready
 3. Running EraseInstall
 
-<p style="page-break-before: always">
-
 ## Process
-
-<P style="page-break-before: always">
 
 ### Running EraseInstall
 
@@ -64,8 +57,6 @@ Once the Mac is on the desktop, run the EraseInstall app.
     <img src="../images/2020-6-1/4_eraseinstall.png" alt="drawing" width="350"/>
 
 1. You should see a **Preparing ...** status and then a percentage completed dialogue.
-
-<P style="page-break-before: always">
 
 1. Once the preparation completes, the Mac should automatically reboot and begin the reinstallation process.
 
