@@ -9,12 +9,15 @@ This guide shows you a few different ways to select a user dialogue window butto
 ## Options
 
 ### Option 1
+
 Using the return (`↩`) key will, by default, always select whichever button is in focus.
 
 ### Option 2
+
 Several dialogue windows will allow you to simply press `⌘` + `first_letter_of_button`
 
 ### Option 3 - My Favorit One 😁
+
 1. Go to `System Preferences > Keybaord > Shortcuts`
 
 2. Check the box next to **Use keyboard navigation to move focus between controls**
