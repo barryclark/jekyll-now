@@ -1,5 +1,7 @@
-# Select a Dialogue Button on macOS with Your Keyboard
-Created: 2021-02-14  
+---
+layout: post
+title: Selecting Dialogue Buttons On Macos With Keyboard
+---
 
 ## About
 

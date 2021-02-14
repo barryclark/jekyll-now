@@ -1,6 +1,7 @@
-# Using the EraseInstall.app
-Created: 2020-06-23  
-Version: v2021.01.1
+---
+layout: post
+title: Using the EraseInstall Tool
+---
 
 <img src="../images/2020-6-1/eraseinstall.png" alt="drawing" width="200"/>
 
