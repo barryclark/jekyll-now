@@ -21,10 +21,10 @@ Several dialogue windows will allow you to simply press `⌘` + `first_letter_of
 1. Go to `System Preferences > Keybaord > Shortcuts`
 
 2. Check the box next to **Use keyboard navigation to move focus between controls**
-
-	![](images/2021-2-14/sys_prefs_keyboard.png)
+    
+    <img src="../images/2021-2-14/sys_prefs_keyboard.png" alt="drawing" width="350"/>
 
 3. Now, you should be able to `⇥` between dialogue buttons and use `space` to select the button.
 
-    ![](images/2021-2-14/select_button_example.png)
+    <img src="../images/2021-2-14/select_button_example.png" alt="drawing" width="200"/>
     
