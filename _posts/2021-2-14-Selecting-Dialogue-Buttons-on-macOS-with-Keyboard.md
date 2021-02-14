@@ -3,7 +3,6 @@ layout: post
 title: Selecting Dialogue Buttons On Macos With Keyboard
 ---
 
-## About
 This guide shows you a few different ways to select a user dialogue window button just using your keyboard.
 
 ## Options

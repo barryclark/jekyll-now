@@ -4,7 +4,7 @@ title: Using the EraseInstall Tool
 ---
 
 <img src="../images/2020-6-1/eraseinstall.png" alt="drawing" width="200"/>
-## About this Guide
+
 Use this guide to quickly reformat a Mac back to factory settings utilizing a locally available copy of the macOS installer app and the EraseInstall.app tool.  
 This guide can be used for a Mac that is having trouble hitting the ABM activation servers during an Automated Device enrollment setup process.
 
