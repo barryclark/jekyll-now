@@ -29,4 +29,5 @@ permalink: /about/
 ### 渋谷　沙紀奈（しぶや　さきな）
 ウィスコンシン大学マディソン校農業応用経済学部博士課程２年生。
 研究興味は開発経済、実験経済、性差別、ソーシャルネットワーク、自給農家の経済生活。
-コロナ期間中でウクレレ演奏にはまる。 [Twitter](https://twitter.com/sakina0320) [GitHub](https://github.com/sakina0320)
+コロナ期間中でウクレレ演奏にはまるが最近忙しいを言い訳に練習を怠っている。JAXA宇宙飛行士の[野口聡一さんの国際宇宙ステーションからのビデオブログ](https://www.youtube.com/channel/UCBVlapkCKb48RrbEKXKouag)にハマっています。
+[Twitter](https://twitter.com/sakina0320) [GitHub](https://github.com/sakina0320)
