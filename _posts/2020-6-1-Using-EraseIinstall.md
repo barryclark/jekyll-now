@@ -3,8 +3,7 @@ layout: post
 title: Using the EraseInstall Tool
 ---
 
-<img src="../images/2020-6-1/eraseinstall.png" alt="drawing" width="200"/>
-
+<img src="../images/2020-6-1/eraseinstall.png" alt="drawing" width="200"/>  
 Use this guide to quickly reformat a Mac back to factory settings utilizing a locally available copy of the macOS installer app and the EraseInstall.app tool.  
 This guide can be used for a Mac that is having trouble hitting the ABM activation servers during an Automated Device enrollment setup process.
 
@@ -31,9 +30,11 @@ The application is a wrapper around the command `startosinstall`.
 3. Running EraseInstall
 
 <p style="page-break-before: always">
+
 ## Process
 
 <P style="page-break-before: always">
+
 ### Running EraseInstall
 
 Once the Mac is on the desktop, run the EraseInstall app.
@@ -49,7 +50,9 @@ Once the Mac is on the desktop, run the EraseInstall app.
 1. If there are multiple macOS installers select the one that is on the USB drive that was created earlier and press **Continue**.
 
     <img src="../images/2020-6-1/2_eraseinstall.png" alt="drawing" width="350"/>
+
 <P style="page-break-before: always">
+
 1. The checklist should come up and show all checkmarks. Press **Continue**.
 
     If EraseInstall is unable to locate the macOS Installer on the USB drive open **Finder.app** and copy the installer from the USB drive to the `/Applications` folder on the Mac. Then, run the EraseInstall app again.
@@ -61,7 +64,9 @@ Once the Mac is on the desktop, run the EraseInstall app.
     <img src="../images/2020-6-1/4_eraseinstall.png" alt="drawing" width="350"/>
 
 1. You should see a **Preparing ...** status and then a percentage completed dialogue.
+
 <P style="page-break-before: always">
+
 1. Once the preparation completes, the Mac should automatically reboot and begin the reinstallation process.
 
     <img src="../images/2020-6-1/rebooting.png" alt="drawing" width="350"/>
