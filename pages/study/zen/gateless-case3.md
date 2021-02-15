@@ -59,9 +59,7 @@ How could you use it up when there's only one finger?
 
 ## One
 
-One finger, __one__ finger.
-
-One finger, One world.
+One finger, one world.
 
 One finger, one practice.
 
