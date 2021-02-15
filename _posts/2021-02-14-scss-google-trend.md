@@ -1,7 +1,7 @@
 ---
 layout: post
 title: scss와 google trend
-tags: [blog, doodles, short]
+tags: [blog, doodles, short, googletrend]
 ---
 
 ## 1. 파일들을 보던 도중
@@ -23,4 +23,4 @@ tags: [blog, doodles, short]
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2431_RC04/embed_loader.js"></script>
 <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"scss","geo":"LR","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=LR&q=scss&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
-무엇이 잘못되었을까
+무엇이 잘못되었을까...
