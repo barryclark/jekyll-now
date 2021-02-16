@@ -31,7 +31,7 @@ assert_eq!(evaluate(f2,&[1.,2.]), 3.); //f2(1.,2.)==3.
 For this article, I am not concerned with any error handling, including checking whether the slice has the correct number of elements to supply the function arguments.
 
 # A Naive Approach
-It seems natural to look for a trait based approach to solve this problem. However, Rust does not have variadic generic arguments like e.g. Modern C++. So it's clear from the get-go that there is going to be some manual labor required for specializing the traits on functions of different argument lengths. That used to be the same for C++ before variadic templates arrived in C++11 and onwards. This is what I tried:
+It seems natural to look for a trait based approach to solve this problem. However, Rust does not have variadic generic arguments like e.g. Modern C++. So it's clear from the get-go that there is going to be some manual labor required for implementing the trait on callables of different argument lengths. That used to be similar for C++ before variadic templates arrived in C++11 and onwards. This is what I tried:
 
 ```rust
 trait VariadicFunction {
@@ -89,7 +89,7 @@ The compiler thinks that the implementations could be conflicting. Intuitively, 
 See? Obscure! But nonetheless, this is a problem because we cannot implement the same trait on two types that satisfy `Fn` with different argument lists. Can we still find a way to pass the variadic function trait through the same interface? Turns out we can.
 
 # Generic Traits to the Rescue
-I probably would have given up here, if I had not --by sheer luck-- come across [actix-web](https://actix.rs/) at work. This crate achieves a similar (but more powerful) effect by letting us pass functions with all kinds of generic arguments [as handlers](https://docs.rs/actix-web/3.3.2/actix_web/struct.Resource.html#method.to). They mention (but don't document) a `Factory` trait which should do pretty much what I want. So I took a look at the [source code](https://github.com/actix/actix-web/blob/web-v3.3.2/src/handler.rs) and saw the magic. If you take a look, you'll see that they also blanket implement the `Factory` trait for `Fn` objects of different sizes manually[^actix_macro]. But then they use a very crafty trick to implement the same trait on different `Fn` types. Haven't we just established that's impossible?
+I probably would have given up here, if I had not --by sheer luck-- come across [actix-web](https://actix.rs/) at work. This crate achieves a similar (but more powerful) effect by letting us pass functions with all kinds of generic arguments [as handlers](https://docs.rs/actix-web/3.3.2/actix_web/struct.Resource.html#method.to). They mention (but don't document) a `Factory` trait which should do pretty much what I want. So I took a look at the [source code](https://github.com/actix/actix-web/blob/web-v3.3.2/src/handler.rs) and saw the magic. If you take a look, you'll see that they also blanket implement the `Factory` trait for `Fn` types of different argument length manually[^actix_macro]. But then they use a very crafty trick to implement the same trait on different `Fn` types. Haven't we just established that's impossible?
 
 Well, I was imprecise. What they actually do is to create a generic trait and then implement *different specializations* of the generic trait on `Fn` types with different argument lists. Different specializations of generic traits are different traits, but they give us the same interface[^from_trait]. We'll leverage this by modifying our trait and making it generic by sticking a type in there that allows us to specialize the trait for different `Fn` types.
 
@@ -98,7 +98,7 @@ trait VariadicFunction<ArgList> {
   fn eval(&self, args: &[f64]) -> f64;
 }
 ```
-We have modified our trait by giving it the generic type parameter `ArgList`. Note that this type does play any role inside the logic of the trait, because it occurs neither in the function argument nor as an associated type. We'll just use it to get different trait specializations that give us the same interface:
+We have modified our trait by giving it the generic type parameter `ArgList`. Note that this type *does not* play any role inside the logic of the trait, because it occurs neither in the function argument nor as an associated type. We'll just use it to get different trait specializations that give us the same interface:
 
 ```rust
 impl<Func> VariadicFunction<f64> for Func
