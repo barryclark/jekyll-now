@@ -33,7 +33,6 @@ I would want viewers of this project to gain a new perspective and insight into 
 One challenge I anticipate with this project is supplementing documents in the digital collections with other external research, especially as there may be little or no information about the authors of these documents besides the documents themselves. On the other hand, this research process can be very exciting and has the potential to produce many interesting and surprising findings! 
 Another concern I have is navigating the scope of the project - there is clearly a depth of information found in just one document and I am interested to see how broadly the final project will span the documents I eventually use for the project. Will the project focus on a few key ideas from just one source? Will multiple sources be brought together? I think that the digital tools used for the project will help answer this question, as one platform may be best suited for a more intense examination, while another might perform well with multiple sources. 
 
-##
-### I am excited to see where this project leads! I am looking forward especially to the research process and to learning how digital methods can illuminate sources in new ways.
+##### I am excited to see where this project leads! I am looking forward especially to the research process and to learning how digital methods can illuminate sources in new ways.
 
 
