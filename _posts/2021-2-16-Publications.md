@@ -1,9 +1,7 @@
 ---
 published: true
 ---
-## Publications
-
-Bored? here, have some of our latest papers.
+## Bored? here, have some of our latest papers.
 
 - Ernesto G. Verga, Susana I. Peluc, Marcos Landi & Leonardo Galetto. (2018). “Variaciones espacio-temporales en la abundancia relativa de alimento potencialmente consumido por aves en bosques fragmentados de Córdoba” Ecología Austral. (aceptado para su publicación).
 - Vergara-Tabares D., Schaaf A., Verga E., Quaglia A., Rojas T, Toledo M., García E., Peluc S. and Díaz A. (2018). Bird assemblages from western Sierras Grandes and Traslasierra valley in central Argentina: an important area for conservation of Chacoan and mountain birds. Brazilian Journal of Ornithology. Vol 26 N0 2.
