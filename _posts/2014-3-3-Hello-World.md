@@ -12,3 +12,5 @@ published: true
 - Franco Montejano
 - Agustìn Dìaz
 - Bartolomè Dìaz
+
+![https://www.idea.conicet.unc.edu.ar/files/ecofisiologia-aves-redux-1024x558.jpg]({{site.baseurl}}/https://www.idea.conicet.unc.edu.ar/files/ecofisiologia-aves-redux-1024x558.jpg)
