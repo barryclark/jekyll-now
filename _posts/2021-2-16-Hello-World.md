@@ -3,7 +3,7 @@ layout: post
 title: Who we are
 published: true
 ---
-![](https://www.idea.conicet.unc.edu.ar/files/ecofisiologia-aves-redux-1024x558.jpg}}/)
+![IMAGE](https://www.idea.conicet.unc.edu.ar/files/ecofisiologia-aves-redux-1024x558.jpg)
 
 - Dra. Susana Peluc 
 - Dr. David Vergara
