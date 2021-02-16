@@ -9,7 +9,8 @@ Doctor Susana Peluc is the PI of the Birds Ecology and Ecophisiology Group (GEEA
 
 ### Research overview
 
-- Environmental factors that can shape life history traits and nestling care parental behaviours. -Feather coloration and their relation with individual phisiologycal status and trigger hormones on native bird species.
+- Environmental factors that can shape life history traits and nestling care parental behaviours. 
+- Feather coloration and their relation with individual phisiologycal status and trigger hormones on native bird species.
 - Endocrine and inmunological effects of the consumption of fruits offered by native and exotics plants.
 - Woody invasive plants as promoters or disruptors of the seed dispersal service provided by native frugivore birds.
 - Impacts of the habitat fragmentation, disturbance and loss over birds in the population and community levels.
