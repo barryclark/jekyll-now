@@ -25,10 +25,10 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
+  margin: 40px auto;
+  max-width: 1400px;
   padding: 0 10px;
-  width: 100%;
+  width: 75%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,28 +46,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: $type-size-2;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: $type-size-3;
 a {
     color: inherit;
   }
 }
 
 h3 {
-  font-size: 20px;
+  font-size: $type-size-4;
 a {
     color: inherit;
   }
 }
 
 h4 {
-  font-size: 16px;
+  font-size: $type-size-5;
 a {
     color: inherit;
   }
@@ -137,7 +137,6 @@ img[src*='#center'] {
 }
 
 .date {
-  font-style: italic;
   color: $gray;
 }
 
@@ -172,12 +171,11 @@ img[src*='#center'] {
 //
 
 .wrapper-masthead {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .masthead {
   padding: 10px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -185,13 +183,13 @@ img[src*='#center'] {
 }
 
 .site-banner {
-  margin-right: 0px;
+  margin-bottom: 10px;
 
   @include mobile {
     float: none;
     display: block;
   }
-  
+
   img {
     border-radius: 5px;
   }
@@ -214,9 +212,9 @@ img[src*='#center'] {
   cursor: pointer;
   font-family: $helvetica;
   font-weight: 300;
-  font-size: 30px;
+  font-size: $type-size-4;
   letter-spacing: 0px;
-  
+
    @include mobile {
     text-align: center;
     margin: 0px 0;
@@ -224,12 +222,13 @@ img[src*='#center'] {
 }
 
 .site-description {
-  margin: -10px 0 0 0;
+  margin: 0;
   color: $gray;
   text-align: right;
   font-family: $helvetica;
   font-weight: 300;
-  font-size: 18px;
+  font-size: $type-size-5;
+  font-style: italic;
 
   @include mobile {
     text-align: center;
@@ -238,10 +237,12 @@ img[src*='#center'] {
 }
 
 nav {
-  float: left;
-  margin-top: 60px; // @TODO: Vertically middle align
+  float: center;
+  margin-top: 15px; // @TODO: Vertically middle align
+  margin-bottom: 10px;
+  border-bottom: 1px solid $lightGray;
   font-family: $helvetica;
-  font-size: 18px;
+  font-size: $type-size-4;
 
   @include mobile {
     float: none;
@@ -251,9 +252,9 @@ nav {
   }
 
   a {
-    margin-right: 20px;
+    margin-right: 50px;
     color: $darkGray;
-    text-align: left;
+    text-align: center;
     font-weight: 300;
     letter-spacing: 0px;
 
@@ -288,13 +289,17 @@ nav {
     font-style: italic;
   }
 
+  .post-header {
+    border-bottom: 1px solid $lightGray;
+  }
+
   .comments {
     margin-top: 10px;
   }
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: $type-size-4;
   }
 }
 

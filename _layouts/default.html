@@ -14,18 +14,20 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
+          <nav>
+            <a href="{{ site.baseurl }}/">STUDENT WORK</a>
+            <a href="{{ site.baseurl }}/course-description">SYLLABUS</a>
+            <a href="{{ site.baseurl }}/final-projects">FINAL PROJECTS</a>
+            <a href="{{ site.baseurl }}/contributors">CONTRIBUTORS</a>
+          </nav>
+
           <a href="{{ site.baseurl }}/" class="site-banner"><img src="{{ site.baseurl }}/images/HUM331.jpg" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <h2 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h2>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/course-description">Course Description</a>
-            <a href="{{ site.baseurl }}/final-projects">Final Projects</a>
-            <a href="{{ site.baseurl }}/contributors">Contributors</a>
-          </nav>
         </header>
       </div>
     </div>
@@ -43,7 +45,7 @@
     </div>
 
     {% include analytics.html %}
-    
+
     {% include open-embed.html %}
   </body>
 </html>
