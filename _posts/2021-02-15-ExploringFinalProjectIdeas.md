@@ -4,7 +4,6 @@ author: Hope Perry
 title: Exploring Final Project Ideas!
 ---
 
-# Exploring Final Project Ideas!
 ## Finding a source
 Last week, when our class explored the Princeton University
 Library digital archives,
