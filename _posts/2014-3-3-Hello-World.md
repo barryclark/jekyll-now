@@ -3,7 +3,7 @@ layout: post
 title: Who we are
 published: true
 ---
-![](https://www.idea.conicet.unc.edu.ar/grupos/ecofisiologia-de-aves/ecofisiologia-aves-redux/)
+![ecofisiologia-aves-redux-1024x558.jpg]({{site.baseurl}}/_posts/ecofisiologia-aves-redux-1024x558.jpg)
 
 - Dra. Susana Peluc 
 - Dr. David Vergara
