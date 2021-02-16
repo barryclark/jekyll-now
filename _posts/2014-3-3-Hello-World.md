@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab members
+title: Who we are
 published: true
 ---
 ![](https://www.idea.conicet.unc.edu.ar/grupos/ecofisiologia-de-aves/ecofisiologia-aves-redux/)
