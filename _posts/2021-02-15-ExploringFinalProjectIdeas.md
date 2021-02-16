@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Hope Perry
-title: Exploring Final Project Ideas!
+title: Exploring Final Project Ideas
 ---
 
 ## Finding a source
@@ -23,6 +23,8 @@ On the very first page of the journal was a detailed map, which appeared to be
 hand-drawn:
 
 ![Journal Page 1](https://iiif-cloud.princeton.edu/iiif/2/58%2F98%2F0f%2F58980fd66cdc4117ad5f49f3dc1060ff%2Fintermediate_file/full/1000,1494/0/default.jpg)
+
+<!--more-->
 
 (via Princeton University Library Special Collections, Western Americana
 Collection: "Journal," Identifier:ark:/88435/qr46r491g)
@@ -46,8 +48,7 @@ Looking through the journal for the first time, I had a lot of questions:
   contact with.
 * What happened to Thomas Adams and the people he was with after he finished the
 journal?
-  * little bit of a spoiler for this too...because he wrote a
-      [second journal](/"https://dpul.princeton.edu/pudl0017/catalog/vh53x083j").
+  * little bit of a spoiler for this too...because he wrote a [second journal](/"https://dpul.princeton.edu/pudl0017/catalog/vh53x083j").
       But still– what about after that?
 
 I am fully aware that no digital tool I make could totally answer _all_ of these
