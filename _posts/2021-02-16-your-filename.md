@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Lab news: Ernesto is out in the field again!
 
