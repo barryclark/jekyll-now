@@ -7,7 +7,7 @@ published: true
 
 Doctor Susana Peluc is the PI of the Birds Ecology and Ecophisiology Group (GEEA) of the Animal Diversity and Ecology Institute (IDEA-CONICET) in Còrdoba, Argentina.
 
-### Main research lines
+### Research overview
 
 - Environmental factors that can shape life history traits and nestling care parental behaviours. -Feather coloration and their relation with individual phisiologycal status and trigger hormones on native bird species.
 - Endocrine and inmunological effects of the consumption of fruits offered by native and exotics plants.
