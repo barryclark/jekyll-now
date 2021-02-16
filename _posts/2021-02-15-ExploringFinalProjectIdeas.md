@@ -2,6 +2,7 @@
 layout: post
 author: Hope Perry
 title: Exploring Final Project Ideas
+excerpt_separator: <!--more-->
 ---
 
 ## Finding a source
