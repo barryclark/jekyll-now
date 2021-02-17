@@ -18,8 +18,8 @@ I would like readers to see the similarities differences in color usage between 
 
 I was personally struck by the chaos and clutter present in Japanese Game Boards as it contrasted with the monotony and simplicity (or at least some sort of clearness/ lack of clutter) of the Japanese portraits. This difference can be seen in the following example pictures:
 
-![Board Game](https://iiif-cloud.princeton.edu/iiif/2/f1%2F92%2Fb3%2Ff192b37b93094021805bbd68ec2cc95a%2Fintermediate_file/full/879,/0/default.jpg "Portrait"){: height="400px" .left-image}
-![Portrait](https://iiif-cloud.princeton.edu/iiif/2/04%2F84%2Fbf%2F0484bf8a5e184c18be03149f1e2cf217%2Fintermediate_file/full/2000,/0/default.jpg "Board Game"){: height="400px" .right-image}
+![Board Game](https://iiif-cloud.princeton.edu/iiif/2/f1%2F92%2Fb3%2Ff192b37b93094021805bbd68ec2cc95a%2Fintermediate_file/full/879,/0/default.jpg "Portrait"){: height="600px" .center-image}
+![Portrait](https://iiif-cloud.princeton.edu/iiif/2/04%2F84%2Fbf%2F0484bf8a5e184c18be03149f1e2cf217%2Fintermediate_file/full/2000,/0/default.jpg "Board Game"){: height="600px" .center-image}
 
 <!--more-->
 
