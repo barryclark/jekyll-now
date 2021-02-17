@@ -230,7 +230,7 @@ img {
   text-align: right;
   font-family: $helvetica;
   font-weight: 300;
-  font-size: $type-size-3;
+  font-size: $type-size-4;
 
   @include mobile {
     text-align: center;
@@ -239,9 +239,8 @@ img {
 }
 
 nav {
-  float: none;
-  display: block;
-  margin-top: 10px; // @TODO: Vertically middle align
+  float: center;
+  margin-top: 15px; // @TODO: Vertically middle align
   margin-bottom: 10px;
   border-bottom: 1px solid $lightGray;
   font-family: $helvetica;
@@ -255,7 +254,7 @@ nav {
   }
 
   a {
-    margin-right: 30px;
+    margin-right: 50px;
     color: $darkGray;
     text-align: center;
     font-weight: 300;
@@ -293,9 +292,11 @@ nav {
 
   .post-header {
     border-bottom: 1px solid $lightGray;
+    margin-bottom: -15px;
   }
 
   .post-title {
+    font: $helvetica;
     margin-bottom: -15px;
     text-transform: uppercase;
   }
