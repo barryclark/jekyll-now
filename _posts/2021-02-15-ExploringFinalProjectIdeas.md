@@ -20,12 +20,12 @@ Although I didn't find that, I did come across
 [one journal](/"https://dpul.princeton.edu/pudl0017/catalog/qr46r491g")
 that intrigued me more than the rest.
 
+<!--more-->
+
 On the very first page of the journal was a detailed map, which appeared to be
 hand-drawn:
 
 ![Journal Page 1](https://iiif-cloud.princeton.edu/iiif/2/58%2F98%2F0f%2F58980fd66cdc4117ad5f49f3dc1060ff%2Fintermediate_file/full/1000,1494/0/default.jpg){: width="500px" .center-image}
-
-<!--more-->
 
 (via Princeton University Library Special Collections, Western Americana
 Collection: "Journal," Identifier:ark:/88435/qr46r491g)

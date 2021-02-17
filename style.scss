@@ -34,7 +34,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helvetica;
   font-weight: 300;
-  color: $darkerGray;
+  color: $darkGray;
 
   line-height: 1.5;
   margin: 1em 0 15px;
@@ -199,7 +199,7 @@ img {
 }
 
 .site-info {
-  float: right;
+  float: none;
 
   @include mobile {
     float: none;
@@ -225,13 +225,12 @@ img {
 }
 
 .site-description {
-  margin: 0;
+  margin: 0 auto;
   color: $gray;
   text-align: right;
   font-family: $helvetica;
   font-weight: 300;
-  font-size: $type-size-5;
-  font-style: italic;
+  font-size: $type-size-3;
 
   @include mobile {
     text-align: center;
@@ -240,8 +239,9 @@ img {
 }
 
 nav {
-  float: center;
-  margin-top: 15px; // @TODO: Vertically middle align
+  float: none;
+  display: block;
+  margin-top: 10px; // @TODO: Vertically middle align
   margin-bottom: 10px;
   border-bottom: 1px solid $lightGray;
   font-family: $helvetica;
@@ -255,7 +255,7 @@ nav {
   }
 
   a {
-    margin-right: 50px;
+    margin-right: 30px;
     color: $darkGray;
     text-align: center;
     font-weight: 300;
@@ -292,7 +292,7 @@ nav {
   }
 
   .post-header {
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $lightGray;
   }
 
   .post-title {
