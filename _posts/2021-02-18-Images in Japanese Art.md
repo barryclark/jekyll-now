@@ -21,8 +21,8 @@ I was personally struck by the chaos and clutter present in Japanese Game Boards
 
 <!--more-->
 
-![Board Game](https://iiif-cloud.princeton.edu/iiif/2/f1%2F92%2Fb3%2Ff192b37b93094021805bbd68ec2cc95a%2Fintermediate_file/full/879,/0/default.jpg "Portrait"){: width="550px" .right-image} 
-![Portrait](https://iiif-cloud.princeton.edu/iiif/2/04%2F84%2Fbf%2F0484bf8a5e184c18be03149f1e2cf217%2Fintermediate_file/full/2000,/0/default.jpg "Board Game"){: height="550px" .left-image}
+![Board Game](https://iiif-cloud.princeton.edu/iiif/2/f1%2F92%2Fb3%2Ff192b37b93094021805bbd68ec2cc95a%2Fintermediate_file/full/879,/0/default.jpg "Portrait"){: width="450px"} 
+![Portrait](https://iiif-cloud.princeton.edu/iiif/2/04%2F84%2Fbf%2F0484bf8a5e184c18be03149f1e2cf217%2Fintermediate_file/full/2000,/0/default.jpg "Board Game"){: width="450px"}
 
 I think that this aesthetic difference is likely the result of a difference in intended message between the two mediums. For example, the simplicity of the portrait may be meant to convey the elegance of its subject. On the other hand, perhaps the clutter of the board game may be indicative of an attempt to cram many aspects of a political ideology into one board, and demonstrate its complexity and intricacy.
 
