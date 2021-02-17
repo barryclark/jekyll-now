@@ -243,7 +243,7 @@ img {
 nav {
   display: inline-flex;
   margin-top: 30px; // @TODO: Vertically middle align
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-family: $helvetica;
   font-size: $type-size-4;
 
@@ -276,11 +276,11 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
   padding-bottom: 1em;
-  border-bottom: 1px $lightGray;
 }
 
 .post {

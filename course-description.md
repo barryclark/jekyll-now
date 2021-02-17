@@ -11,11 +11,11 @@ have flourished in the Middle Ages without the invention of the codex? Is it tru
 the printing press made the Reformation and the Scientific Revolution possible? And did
 newspapers really encourage the Age of Revolutions? All these questions, and more, will
 be answered in the course of the semester, as we trace the history of human communication
-from its origins in the ancient Near East to its diffusion over the World Wide Web.![Cuneiform tablet](https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/Clay%20tablet%20with%20pre-cuneiform%20writing.jpg?raw=true){: width="250px" .right-image}
+from its origins in the ancient Near East to its diffusion over the World Wide Web.
 Weekly units will focus on ‘revolutions’ within the history of communication to highlight
 how ‘new’ technologies of communication often spur broader cultural and societal change.
 
-In addition to weekly thematic lectures and readings on the history of communication,
+![Cuneiform tablet](https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/Clay%20tablet%20with%20pre-cuneiform%20writing.jpg?raw=true){: width="250px" .right-image} In addition to weekly thematic lectures and readings on the history of communication,
 the course will also introduce students to new digital methods of historical research a
 nd archival preservation. Our latest revolution in communication—the emergence of digital
 languages, interfaces, and platforms—has transformed how historians and archivists
