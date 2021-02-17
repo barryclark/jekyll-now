@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Levi Blinder
-title: Welcome to HUM 331
+title: Images in Japanese Art
 ---
 
 ### What are your chosen sources and where are they located?
