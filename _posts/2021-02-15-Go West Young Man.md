@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Hope Perry
-title: Exploring Final Project Ideas
+title: Go West Young Man
 excerpt_separator: <!--more-->
 ---
 
