@@ -247,14 +247,15 @@ nav {
   font-size: $type-size-4;
 
   @include mobile {
-    float: none;
+    text-align: center;
     margin-top: 9px;
-    display: flex;
-    font-size: 12px;
+    display: inline-flex;
+    font-size: 14px;
   }
 
   a {
-    margin-right: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
     color: $darkGray;
     text-align: center;
     font-weight: 300;
