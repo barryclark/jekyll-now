@@ -28,7 +28,11 @@ body {
   margin: 0px auto;
   max-width: 1400px;
   padding: 0 10px;
-  width: 75%;
+  width: 80%;
+
+@include mobile {
+  width: 100%;
+ }
 }
 
 h1, h2, h3, h4, h5, h6 {
