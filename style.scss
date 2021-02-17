@@ -26,13 +26,9 @@ body {
 
 .container {
   margin: 0px auto;
-  max-width: 1400px;
+  max-width: 1000px;
   padding: 0 10px;
-  width: 80%;
-
-@include mobile {
-  width: 100%;
- }
+  width: 100%
 }
 
 h1, h2, h3, h4, h5, h6 {
