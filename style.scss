@@ -249,7 +249,7 @@ nav {
   @include mobile {
     float: none;
     margin-top: 9px;
-    display: flex;
+    display: list-item;
     font-size: 12px;
   }
 
