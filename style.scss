@@ -280,7 +280,7 @@ nav {
 
 .posts > .post:last-child {
   padding-bottom: 1em;
-  border-bottom: none;
+  border-bottom: 1px $lightGray;
 }
 
 .post {
@@ -294,7 +294,6 @@ nav {
   }
 
   .post-header {
-    border-bottom: 1px solid $lightGray;
     margin-bottom: -15px;
   }
 
