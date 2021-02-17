@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kesaputtiyasutta (Kalamasutta)
-tags: [Sutta, Modernism, Matikas]
+tags: [Sutta, Modernism, Matikas, Faith, Karma, Transmigration]
 ---
 
 \[[AN 3.65](https://suttacentral.net/an3.65/en/bodhi)\]
