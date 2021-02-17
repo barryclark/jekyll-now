@@ -179,6 +179,7 @@ img {
 
 .masthead {
   padding: 10px 0;
+  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -243,7 +244,6 @@ nav {
   display: inline-flex;
   margin-top: 30px; // @TODO: Vertically middle align
   margin-bottom: 10px;
-  border-bottom: 1px solid $lightGray;
   font-family: $helvetica;
   font-size: $type-size-4;
 
