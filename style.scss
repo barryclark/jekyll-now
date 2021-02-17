@@ -249,8 +249,8 @@ nav {
   @include mobile {
     float: none;
     margin-top: 9px;
-    display: inline-flex;
-    font-size: $type-size-4;
+    display: flex;
+    font-size: 12px;
   }
 
   a {
