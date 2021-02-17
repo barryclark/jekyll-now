@@ -1,6 +1,7 @@
 ---
 layout: post
 author: José Pablo Fernández García
+excerpt_separator: <!--more-->
 title: The Princeton Campus — A Mapped History
 ---
 ## Introduction
@@ -12,6 +13,8 @@ In the university's nearly 300 year history, Princeton has seen its campus grow 
 In the age of Google Maps and other similar products, maps can be seen simply as tools to help us get through the day. Guiding us from one place to another, informing us of the traffic on various roads, displaying as much information as possible about every business along a street — these are just a handful of the ways a map functions primarily as a tool today. These types of maps traffic strictly in accurate representation and factual information; even the subway maps that are often highly designed in posters and pamphlets are returned to geographical truth.
 
 However, this version of a map diminishes another of their functions: storyteller. While the maps found in phone apps today may be constrained by some representational duty, previous maps have relished in providing snippets of life in the places they illustrate — even if at the cost of greater detail in street layouts or building perimeters. The Princeton campus lends itself well to these storytelling maps with its many years as witness to student life and life outside the Orange Bubble.
+
+<!--more-->
 
 Take these three maps from the Princeton University Library's Special Collections Historic Map Division as examples:
 * A richly drawn black and white [map of the campus](https://maps.princeton.edu/catalog/princeton-np193c00q) circa 1932
