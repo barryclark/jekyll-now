@@ -1,21 +1,21 @@
 ---
 layout: post
 author: Amna Amin
+excerpt_separator: <!--more-->
 title: Activism at Princeton 
 ---
 
 
-# Initial Thoughts
-
-  
+## Initial Thoughts
 
 For my project, the basic topic that I want to look into is activism on college campuses, perhaps solely focused on Princeton. I am interested in this topic partially because I am involved in some activism on campus and also because lots of movements have ties or roots in college campuses. As a result, I believe that looking at activism on campus can also be a good way to see beginnings of and the progression of liberal ideas in society.
 
 This [article](https://www.gse.harvard.edu/news/ed/18/08/student-activism-20) explains the importance and history of student activism which gives more context for my above statements. 
 
-  ![student activists at Princeton](https://library.princeton.edu/sites/default/files/news/images/Studentactivistscropped.png)
+  ![student activists at Princeton](https://library.princeton.edu/sites/default/files/news/images/Studentactivistscropped.png){: width="600px"}
 
-# Sources Used
+<!--more-->
+## Sources Used
 
 Through the university’s finding aid website, I noticed that the university has a lot in the archives on campus activism.
 
@@ -30,9 +30,7 @@ These resources largely fall under these three categories:
 
 I would also be interested in contacting the special collections librarians to get their advice on other sources I could use as I am sure there are a lot.
 
-# Methods
-
-  
+## Methods
 
 As of now, I have a lot of thoughts on potential options for what my project will look like. I am not sure which of these options will be the most feasible so this is basically just a list of my brainstormed ideas
 
