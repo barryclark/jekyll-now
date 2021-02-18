@@ -11,6 +11,5 @@ tags: [Quotes]
 > Who cares about wealth and honor?  
 > Even the poorest thing shines.  
 > My miraculous power and spiritual activity:  
-> Drawing water and carrying wood."
-
-Source: \[unsure\], \[[Layman Pang](https://en.wikipedia.org/wiki/Layman_Pang)\]
+> Drawing water and carrying wood."  
+> Source: \[unsure\], \[[Layman Pang](https://en.wikipedia.org/wiki/Layman_Pang)\]

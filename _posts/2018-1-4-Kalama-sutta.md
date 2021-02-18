@@ -4,9 +4,7 @@ title: Kesaputtiyasutta (Kalamasutta)
 tags: [Sutta, Modernism, Matikas, Faith, Karma, Transmigration]
 ---
 
-\[[AN 3.65](https://suttacentral.net/an3.65/en/bodhi)\]
-
-This sutta is typical of [_upaya_](https://en.wikipedia.org/wiki/Upaya), the Buddha teaching to each individual depending on their needs and capabilities. So who is the buddha teaching to? What do they need? What are their capabilities?
+This sutta is typical of [_upaya_](https://en.wikipedia.org/wiki/Upaya), the Buddha teaching to each individual depending on their needs and capabilities. So who is the buddha teaching to? What do they need? What are their capabilities? \[[AN 3.65](https://suttacentral.net/an3.65/en/bodhi)\]
 
 The _Kalamas_ have seen so many Brahmins come and go, each contradicting/belittling the previous ones. It created perplexity and doubt, scepticism towards any Dharma. Thus, this sutta is offered for those that are **not ready to give benefit of the doubt** to the Buddha, that **cannot put blind faith** in his Dharma.
 

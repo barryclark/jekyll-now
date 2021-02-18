@@ -4,7 +4,7 @@ title: Right Speech
 tags: [Matikas, Speech]
 ---
 
-Definition
+Definition from the suttas.
 
 > _"And what, bhikkhus, is right speech? Abstinence from false speech, abstinence from divisive speech, abstinence from harsh speech, abstinence from idle chatter: this is called right speech."_ \[[SN 45.8](https://suttacentral.net/sn45.8/en/bodhi)\]
 

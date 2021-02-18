@@ -25,11 +25,16 @@ layout: default
         {% endfor %}
       </div>
 
-      <div class="entry">
-        {{ post.content }}
-      </div>
-
-      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a><-->
+      {%if post.title == "Notes" %}
+        <div class="entry">
+          {{ post.content }}
+        </div>
+      {% else %}
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        {% endif %}
     </article>
   {% endfor %}
 </div>
