@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kesaputtiyasutta (Kalamasutta)
+title: Anattalakkhanasutta (Nonself)
 tags: [Sutta, Anatta, Kkhandas]
 ---
 
