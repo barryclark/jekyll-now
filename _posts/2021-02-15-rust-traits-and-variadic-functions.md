@@ -125,7 +125,7 @@ where F: VariadicFunction<ArgList>{
 # Going More Generic
 If you look at the actix code, you'll see that they made the interface much more generic. Furthermore, the argument list actually serves a purpose in their implementation. Since I am mostly interested in using this for numeric functions, I don't need to go super generic, but let's get a little more generic just for fun.
 
-Let's try to get this trait working for functions `Fn(Arg)->Ret`, `Fn(Arg,Arg)->Ret`, and so on. The argument type should always be the same, but the number of arguments can differ. So we can template our trait on a type `Arg`, which indicates our argument type and on a type `Ret` indicating the return type. Furthermore, we need the `ArgList` parameter to generate specializations depending on the argument list of the callable type[^arg_type]:
+Let's try to get this trait working for functions `Fn(Arg)->Ret`, `Fn(Arg,Arg)->Ret`, and so on. The argument type should always be the same, but the number of arguments can differ. So we can template our trait on a type `Arg`, which indicates our argument type and on a type `Ret` indicating the return type. Furthermore, we need the `ArgList` parameter to generate specializations depending on the argument list of the callable type:
 
 ```rust
 pub trait VariadicFunction<Arg,ArgList,Ret> {
@@ -167,4 +167,3 @@ Providing extra generic parameters is a neat way of implementing a trait with th
 # Endnotes
 [^actix_macro]: However, they use a macro to reduce the amount of required monkeywork.
 [^from_trait]: For example `From<f64>` and `From<(f64,f64)>` are different traits.
-[^arg_type]: We could probably do without the explicit `Arg` type and absorb it into the `ArgList`, but I like the type for semantic clarity.
