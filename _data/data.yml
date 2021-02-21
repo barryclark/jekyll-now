@@ -501,6 +501,14 @@
   category_en: Print decorated garmets and accessories
   location_gr: Βόλος, Μαγνησία, Ελλάδα
   location_en: Volos, Magnisia, Greece
+
+- company_gr: Πάπρικα
+  company_en: Paprika
+  url: https://www.facebook.com/Paprikavolos/
+  category_gr: Mini market και οπωροπωλείο
+  category_en: Mini market and fruit & veg store
+  location_gr: Βόλος, Μαγνησία, Ελλάδα
+  location_en: Volos, Magnisia, Greece
   
 - company_gr: Komotini online
   company_en: Komitini online
@@ -814,11 +822,11 @@
   location_gr: Ασπρόπυργος, Αττική, Ελλάδα
   location_en: Aspropyrgos, Attica, Greece
   
-- company_gr: OK Anytime Market Αγίας Παρασκευής
-  company_en: OK Anytime Market Agia Paraskevi
+- company_gr: OK Anytime Market
+  company_en: OK Anytime Market
   url: https://coinmap.org/venue/7702
-  category_gr: Mini super market. <a href="http://www.okmarkets.gr/index.php?option=com_multimaps&view=multimaps&Itemid=73&lang=el">Ιστοσελίδα franchise</a>
-  category_en: Mini super market. <a href="http://www.okmarkets.gr/index.php?option=com_multimaps&view=multimaps&Itemid=73&lang=el">Franchise page</a>
+  category_gr: Mini market, Αγίας Τριάδος 4
+  category_en: Mini market, 4, Agias Triados str.
   location_gr: Αγία Παρασκευή, Αττική, Ελλάδα
   location_en: Agia Paraskevi, Attica, Greece
 
@@ -835,6 +843,14 @@
   url: http://www.pytheasgroup.gr
   category_gr: Αμμοβολές
   category_en: Sand blasting specialists
+  location_gr: Πάτρα, Αχαΐα, Ελλάδα
+  location_en: Patras, Achaia, Greece
+
+- company_gr: Κτίριο
+  company_en: Kritio
+  url: https://ktirio.pro
+  category_gr: Δομικά υλικά
+  category_en: Construction material
   location_gr: Πάτρα, Αχαΐα, Ελλάδα
   location_en: Patras, Achaia, Greece
 
@@ -1003,6 +1019,14 @@
   url: https://www.facebook.com/saplatera.vasiliki
   category_gr: Διαχείριση κοινοχρήστων
   category_en: Building management
+  location_gr: Κιλκίς, Μακεδονία, Ελλάδα
+  location_en: Kilkis, Macedonia, Greece
+
+- company_gr: Θεόδωρος Παπαβραμίδης
+  company_en: Theodoros Papavramidis
+  url:
+  category_gr: Ταξί τηλ. 6972754928
+  category_en: Taxi tel. 6972754928
   location_gr: Κιλκίς, Μακεδονία, Ελλάδα
   location_en: Kilkis, Macedonia, Greece
 
