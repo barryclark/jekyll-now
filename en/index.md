@@ -55,7 +55,7 @@ Cryptocurrency in Greece is currently only regulated from an AML (Anti Money Lau
 - [TaxExperts](https://www.taxexperts.gr) offers cryptocurrency taxation advice
 - [stampd](https://stampd.io)
 - [BitforTip](https://www.bitfortip.com)
-- [CoinLib](https://coinlib.io)
+<strike>- [CoinLib](https://coinlib.io)</strike>
 - The [BlockHero](https://blockhero.ai) portfolio tracker
 - One of [IOHK](https://iohk.io/team/)'s three research centres is in Athens
 - [Bcash Greece](https://bcash.gr) makes Bitcoin ATMs
@@ -66,7 +66,7 @@ Cryptocurrency in Greece is currently only regulated from an AML (Anti Money Lau
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2021-01-22
+Last update: 2021-02-21
 
 <!-- <div class="posts">
   {% for post in site.posts %}
