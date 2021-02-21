@@ -267,7 +267,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Η [TaxExperts](https://www.taxexperts.gr) ασχολείται με θέματα φορολογίας κρυπτονομισμάτων
 - Το [stampd](https://stampd.io)
 - Το [BitforTip](https://www.bitfortip.com)
-- <strike>Το [CoinLib](https://coinlib.io)</strike>
+- <strike>Το CoinLib</strike>
 - Το [BlockHero](https://blockhero.ai) portfolio tracker
 - Ένα από τα τρία ερευνητικά κέντρα της [IOHK](https://iohk.io/team/) βρίσκεται στην Αθήνα
 - Η [Bcash Greece](https://bcash.gr) φτιάχνει Bitcoin ATMs
