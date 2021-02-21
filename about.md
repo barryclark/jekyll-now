@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Ismim Yunus Emre. 1996 Corum, Iskilip dogumluyum. Ilk okulu Corum ve Ankara'da, liseyi Izmir'de, universiteyi de New York ve Ankara'da okudum. Elektrik Elektronik Muhendisiyim. Elektronik cihazlarin donanimlari ve yazilimlariyla ilgileniyorum. C, C++ ve Python bildigim yazilim dilleri arasinda.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Pek yakinda...
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[yunus.ikiz@ieee.metu.edu.tr](mailto:yunus.ikiz@ieee.metu.edu.tr)
