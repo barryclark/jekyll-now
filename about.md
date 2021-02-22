@@ -19,4 +19,4 @@ Doctor Susana Peluc is the PI of the Birds Ecology and Ecophysiology Group (GEEA
 
 ### Contact us
 
-susanapeluc@gmail.com
+suspeluc@gmail.com
