@@ -5,7 +5,7 @@ title: Stock Spike Update!
 
 Added a new look to [Stock Spike](https://stock-spike.com) and split it up into a true front end and back end.
 
-This makes the process of updating the data much easier, and not reliant on a hacked-together git-push-to-update thing that I had going.
+This makes the process of updating the data much easier, and not reliant on a hacked together git-push-to-update thing that I had going.
 
 Most of the same info is still there, so you can see volume spikes after the days trading, and a slightly refined best-return-on-risk puts list. I'm retooling the twitter components at the moment, so hopefully will have that posting alerts again soon.
 
