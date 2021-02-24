@@ -25,8 +25,8 @@ let f2 = |x:f64,y:f64| {x+y};
 I want to be able to pass them to an `evaluate` function that takes the callable and a slice of parameters `&[f64]` and evaluates the functions so that the following assertions hold.
 
 ```rust
-assert_eq!(evaluate(f1,&[1.]), 2.); //f1(1.)==2.
-assert_eq!(evaluate(f2,&[1.,2.]), 3.); //f2(1.,2.)==3.
+assert!(evaluate(f1,&[1.])==f1(1.));
+assert!(evaluate(f2,&[1.,2.])==f2(1.,2.));
 ```
 For this article, I am not concerned with any error handling, including checking whether the slice has the correct number of elements to supply the function arguments.
 
