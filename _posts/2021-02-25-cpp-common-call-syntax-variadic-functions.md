@@ -8,7 +8,7 @@ date: 2021-02-25
 #description:
 #permalink:
 title: 'C++: A Common Interface for Functions Taking Different Numbers of Arguments'
-comments_id: 22
+comments_id: 23
 ---
 
 Inspired by the previous article on creating a common interface to call and pass functions of different numbers of arguments in Rust, I wanted to see if and how I could make this work in C++. I was able to get a very similar thing working in C++ at the expense of some of my sanity. Here we go.
