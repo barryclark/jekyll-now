@@ -7,20 +7,20 @@ date: 2021-02-25
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'A Common Call Syntax for Variadic Functions in C++'
-comments_id:
+title: 'C++: A Common Interface for Functions Taking Different Numbers of Arguments'
+comments_id: 22
 ---
 
-TODO
+Inspired by the previous article on creating a common interface to call and pass functions of different numbers of arguments in Rust, I wanted to see if and how I could make this work in C++. I was able to get a very similar thing working in C++ at the expense of some of my sanity. Here we go.
 
 # Our Goals
-Our goals for this article are very similar to the goals of the [previous article](/blog/2021/rust-traits-and-variadic-functions/), where we wrote a common interface to call and pass functions with different numbers of arguments. In this post, I want to explore whether I can achieve a similar effect in Modern C++. Given two callables, each taking one and two arguments, respectively like so
+Our goals for this article are very similar to the goals of the [previous article](/blog/2021/rust-traits-and-variadic-functions/), where we wrote a common interface to call and pass functions with different numbers of arguments. In this post, I want to explore whether I can achieve a similar effect in Modern C++. Given two callables, each taking one and two arguments, respectively. For example these two callables:
 
 ```c++
 float f1(double x) {return 2*x;}
 auto f2 = [](double x, double y){return x+y;};
 ```
-I want to be able to call them using a common syntax. Specifically, I want to be able to pass them to an `evaluate` function that takes the callable and a vector of parameters (in this case `std::vector<double>`) and evaluates the functions so that the following assertions hold.
+Now, I want to be able to call them using a common syntax. Specifically, I want to pass them to an `evaluate` function that takes the callable and a vector of parameters (in this case `std::vector<double>`) and evaluates the functions so that the following assertions hold.
 
 ```c++
 assert(evaluate(f1,{1.})==f(1.));
@@ -49,7 +49,7 @@ auto evaluate(F&& f, std::vector<T> args) {
 // for functions f(T,T)
 template<typename T, typename F>
 requires std::invocable<F,T,T>
-auto evaluate(F&& f, std::vector<float> args) {
+auto evaluate(F&& f, std::vector<T> args) {
   return std::forward<F>(f)(args[0],args[1]);
 }
 ```
@@ -67,7 +67,7 @@ auto result2 = evaluate<double>(func2, {1.,2.});
 [Try it here](https://wandbox.org/permlink/kTJZ9pf83vbFGdVm). Note that we have to specify the function argument type `T` in our call to evaluate because the compiler is unable to figure it out otherwise. This is a little less elegant than the Rust solution, where the compiler offers much more powerful type inference. However, for my intended use this is completely fine.
 
 ## Generating A Wrapper Type
-The Rust implementation allowed us more than just calling the functions using a common `evaluate` function. It effectively provided a an interface that let us call the functions using the vector argument only. I want to emulate this behavior and create a proxy type in C++ that dispatches a vector of arguments to the individual arguments of the underlying functions. So for the two objects `func1` and `func2` from above I want to be able to write:
+The Rust implementation allowed us more than just calling the functions using a common `evaluate` function. It effectively provided a an interface that let us call the functions using the vector of parameters only. I want to emulate this behavior and create a proxy type in C++ that dispatches elements from a vector to the individual arguments of the underlying functions. So for the two objects `func1` and `func2` from above I want to be able to write:
 
 ```c++
 auto proxy1 = create_proxy<double>(func1);
@@ -98,7 +98,7 @@ auto create_proxy(F&& f) {
    std::make_index_sequence<2>{});
 }
 ```
-Here, we have delegated the actual implementation of creating a proxy to a truly variadic function template `create_proxy_impl`. We are also passing an index sequence to `create_proxy_impl` to help dispatch the elements of the vector to the arguments of the callable.  Note further, that the `create_proxy` methods take the argument type `T` as their first template parameter and `F` as the second. This is so that the user can specify `T`, but can let the compiler deduce the type of the callable `F`. For the `create_proxy_impl` function template, `F` has to go first so we can have the variadic argument type list last. But in this case it doen't hurt, because both `F` and `T` are known types when calling `create_proxy_impl` from the `create_proxy` overloads. The user does not have to bother with finding out the type of the callable.
+If we want to support functions of 3,4,5,... arguments we have to manually implement the appropriate overloads. Note that we have delegated the actual implementation of creating a proxy to a truly variadic function template `create_proxy_impl`. We are also passing an index sequence to `create_proxy_impl` to help dispatch the elements of the vector to the arguments of the callable.  Note further, that the `create_proxy` methods take the argument type `T` as their first template parameter and `F` as the second. This is so that the user can specify `T`, but can let the compiler deduce the type of the callable `F`. For the `create_proxy_impl` function template, `F` has to go first so we can have the variadic argument type list last. But in this case it doesn't hurt, because both `F` and `T` are known types when calling `create_proxy_impl` from the `create_proxy` overloads. The user does not have to bother with finding out the type of the callable.
 
 Now for the implementation of the `create_proxy_impl` helper. Since we want to dispatch the parameters to the function from a vector of `T`s , we have to make sure that all types are the same. We'll do that by implementing a helper structure that checks for that and extracts the type of argument.
 
@@ -124,10 +124,10 @@ auto create_proxy_impl(F&& f, std::integer_sequence<size_t, Is...>) {
   {return f(params[Is]...);};
 }
 ```
-[Try it here](https://wandbox.org/permlink/2aDf7XpvibPXHxOa) to see the full implementation working together. I have focussed on numeric parameters here, but the parameters are free to be generic. Also the return type does not have to be the same as the function argument type. So all in all, we could reproduce something very close to what we were able to do in Rust. Let's now take a look at making it work for versions less than C++20.
+[Try it here](https://wandbox.org/permlink/2aDf7XpvibPXHxOa) to see the full implementation working together. I have focussed on numeric parameters here, but the parameters are free to be of any type. Also the return type does not have to be the same as the function argument type. So all in all, we could reproduce something very close to what we were able to do in Rust. Let's now take a look at making it work for versions less than C++20.
 
 ## Making it Work for C++17
-Making the `evaluate` implementation work for C++17 is straightforward because we only have to substitute our use of concepts with some good ol' [SFINAE](https://en.cppreference.com/w/cpp/language/sfinae) [^sfinae_return_type].
+Making the `evaluate` implementation work for C++17 is pretty straightforward because we only have to substitute our use of concepts with some good ol' [SFINAE](https://en.cppreference.com/w/cpp/language/sfinae).
 
 ```c++
 // C++17: for functions f(T)
@@ -142,22 +142,28 @@ std::invoke_result_t<F,T,T> evaluate(F&& f, std::vector<T> args) {
   return std::forward<F>(f)(args[0],args[1]);
 }
 ```
-[Try it here](https://wandbox.org/permlink/SQo1zNCIarBx1VpR). One problem is that we cannot simply put the `std::invoke_result_t` expression into a default template parameter, because [they don't help with SFINAE](https://stackoverflow.com/questions/15427667/sfinae-working-in-return-type-but-not-as-template-parameter). Because of this, the implementation for the `create_proxy` and `create_proxy_impl` function templates gets hairy quickly. The implementation becomes less complicated if we are willing to sacrifice the `auto` return type from the `create_proxy_impl`, which allows us to return lambdas directly. If we wrap the return type in a `std::function` we can make do with a couple of modifications. [See and play with it here](https://wandbox.org/permlink/3XY2SOxZ2dKv6dWS). However, since we are C++ developers we want to be warm and fuzzy in the knowledge that we squeezed every bit of performance out of our code even at the expense of (a lot of) readability. So here goes nothing:
+[Try it here](https://wandbox.org/permlink/SQo1zNCIarBx1VpR).
+
+One problem is that we cannot simply put the `std::invoke_result_t` expression into a default template parameter, because [they don't help with SFINAE](https://stackoverflow.com/questions/15427667/sfinae-working-in-return-type-but-not-as-template-parameter). We have to make it part of the return type. That is why the implementation for the `create_proxy` and `create_proxy_impl` function templates gets a bit hairy. However, the implementation becomes less complicated if we are willing to sacrifice the `auto` return type from the `create_proxy_impl` for an appropriate `std::function` specialization. [Here is a little demo](https://wandbox.org/permlink/3XY2SOxZ2dKv6dWS).
+
+However, since we are C++ developers we want to be warm and fuzzy in the knowledge that we squeezed every bit of performance out of our code even at the expense of (a lot of) readability. So here goes nothing:
 
 ```c++
 template<typename F, typename ...Ts, size_t ...Is>
 auto create_proxy_impl(F &&f, std::integer_sequence<size_t, Is...>) {
-    // this if constexpr guard needs to be there, because evaluating
-    // the decltype expression below will give otherwise give a compiler error
+    // this if constexpr guard to be there, because evaluating
+    // the decltype expression below will give a compiler error
+    // if f is not callable with the given number of arguments
     if constexpr (std::is_invocable_v<F, Ts...>) {
         return [f = std::forward<F>(f)]
                 (const std::vector<arg_type_t<Ts...>> &params)
                 {return f(params[Is]...);};
     } else {
-        // this is a valid type because the decltype below also gets
-        // evaluated when the function is not invokable this the given
-        // number of arguments
-        return -1;
+        // this branch results in a valid type even when f
+        // is not callable with the given number of arguments.
+        // This type will never be used since the overload of
+        // create_proxy is removed by the enable_if_t anyways
+        return;
     }
 }
 template<typename T, typename F>
@@ -185,10 +191,10 @@ Everything so far has been long and rambling, so I'll keep this section brief-is
 We have already seen that the C++ compiler cannot infer the function argument type `T` the way the Rust compiler can. But there are other limitations and caveats.
 
 ## Passing Generic Functions
-Our implementation does not allows us to pass a function template (without explicitly instantiating it) it to either `evaluate` or `create_proxy`. This makes sense, since a function template is not a type. There [might be a way](https://stackoverflow.com/questions/64278705/template-parameter-deduction-problem-with-c-concepts-and-stdis-same) to go about this using template template parameters, but I am not sure about that and it is going to induce a slew of other complications. However, we can pass a generic lambda to both `evaluate` and `create_proxy`. Why? Because a generic lambda is not a function template but an instance of a closure class with a templated call operator. So the type of this instance is clear to the compiler.
+Our implementation does not allows us to pass a function template (without explicitly instantiating it) to either `evaluate` or `create_proxy`. This makes sense, since a function template is not a type. There [might be a way](https://stackoverflow.com/questions/64278705/template-parameter-deduction-problem-with-c-concepts-and-stdis-same) to go about this using template template parameters, but I am not sure about that and it is going to induce a slew of other complications. However, we can pass a generic lambda to both `evaluate` and `create_proxy`. Why? Because a generic lambda is not a function template at all, but an instance of a closure class with a templated call operator. So the type of this instance is clear to the compiler.
 
 ## Passing Variadic Functions
-We cannot pass variadic functions to our `evaluate` or'`create_proxy` function templates for the same reason as before. Furthermore, we cannot pass variadic lambdas, because the compiler cannot pick a correct overload, since the variadic lambdas are callable with any number of arguments.
+We cannot pass truly variadic functions to our `evaluate` or `create_proxy` function templates for the same reason as before. Furthermore, we cannot pass variadic lambdas, because the compiler cannot pick a correct overload, since the variadic lambdas are callable with any number of arguments. The number of function arguments must be known at compile time and we must manually implement the appropriate overload of `evaluate` and `create_proxy`. We had to do that in Rust as well, albeit for completely different reasons.
 
 ## Type Safety and Implicit Conversions
 C++ allows us to write the following:
@@ -199,7 +205,7 @@ auto result1 = evaluate<int>(func, {1});
 So we can call our evaluate function with an `int` template argument although our function takes `double`. In fact, we can use `evaluate<T>` with any type of template type as long as our `func` can be called with this argument type. So if `T` is convertible to the argument type of the function, we're fine. I actually like this property when dealing with numeric functions. However, it might also produce unexpected results when dealing with type arguments which aren't numeric.
 
 # Conclusion
-What a ride this has been. Kudos to whoever made it this far.
+What a ride this has been. Kudos to whoever made it this far. We have seen that we can produce a very similar interface for calling and passing functions with different argument lengths in C++ and Rust. And while the under the hood implementation for C++17 and below does get somewhat hairy, we *were* able to do it. And at the end of the day, if the API is simple then it does not really matter that the underlying implementation is hard and complex.
 
 # Endnotes
 [^losing_genericity]: At least not if I want some amount of generality (and templates) left in my code.

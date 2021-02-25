@@ -7,7 +7,7 @@ date: 2021-02-15
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'A Common Call Syntax for Variadic Functions in Rust'
+title: 'Rust: A Common Interface for Functions Taking Different Numbers of Arguments'
 comments_id: 21
 ---
 
@@ -18,15 +18,15 @@ What I actually want for my numerics project would be more confusing than illumi
 
 Given two callables with a different number of arguments,
 
-```
+```rust
 fn f1(x:f64) -> f64 {2*x}
 let f2 = |x:f64,y:f64| {x+y};
 ```
 I want to be able to pass them to an `evaluate` function that takes the callable and a slice of parameters `&[f64]` and evaluates the functions so that the following assertions hold.
 
 ```rust
-assert!(evaluate(f1,&[1.])==f1(1.));
-assert!(evaluate(f2,&[1.,2.])==f2(1.,2.));
+assert_eq!(evaluate(f1,&[1.]),f1(1.));
+assert_eq!(evaluate(f2,&[1.,2.]),f2(1.,2.));
 ```
 For this article, I am not concerned with any error handling, including checking whether the slice has the correct number of elements to supply the function arguments.
 
