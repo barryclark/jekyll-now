@@ -4,13 +4,17 @@ title: About
 permalink: /about/
 ---
 
-## Mission
-To better inform all actors in the [Municipal Solid Waste](https://en.wikipedia.org/wiki/Municipal_solid_waste) Stream system and help close the [loop](https://en.wikipedia.org/wiki/Circular_economy) for a sustainable society.
-
-## About ZotBins
 ZotBins is system of Smart Waste Bins with a suite of web-based applications to collect and analyze real-time waste data. Through IoT, ZotBins is able to use waste data to encourage zero waste practices from a behavioral approach while also demonstrating use of quantifiable data to holistically improve waste systems. This system has been able to help find useful waste related insights at the University of California, Irvine. To learn more visit https://[zotbins.github.io](zotbins.github.io) or view our video by clicking on the image below:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/video_thumbnail.png)](http://www.youtube.com/watch?v=gcljm-4PmsE "The ZotBins Solution to Waste Management using Internet of Things")
+
+## Mission
+To better inform all actors in the [Municipal Solid Waste](https://en.wikipedia.org/wiki/Municipal_solid_waste) Stream system and help close the [loop](https://en.wikipedia.org/wiki/Circular_economy) for a sustainable society.
+
+## Goals
+
+1. Help organizations/communities reach a **85% waste diversion rate or more**
+2. Help individuals reduce the average per person disposal rate of [1,704 lbs.](https://www.globalcitizen.org/en/content/americans-produce-most-waste/) per year (in the United States) by **66% or more**
 
 ## How it Started
 In 2017, a team of undergraduate students at the University of California, joined a Hackathon hosted by [UCI TIPPERS](http://tippers.ics.uci.edu/) and created ZotBins to help make waste management more efficient while also encouraging more zero waste practices. With the guidance of professors and graduate students from the TIPPERS research group, the team was able to grow from 4 to over 15 individuals all working on the ZotBins project. Together they have been able to build and deploy a network of 9 smart bins on campus that are currently making a positive impact for UCI.
