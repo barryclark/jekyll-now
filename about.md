@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: 关于我
 permalink: /about/
 ---
 
-Some information about you!
+我的更多信息
 
-### More Information
+<!-- ### 
 
-A place to include any other types of information that you'd like to include about yourself.
+A place to include any other types of information that you'd like to include about yourself. -->
 
-### Contact me
+### 联系我
 
-[email@domain.com](mailto:email@domain.com)
+[ssj1998@163.com](mailto:1998@163.com)
