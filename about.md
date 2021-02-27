@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title: New Graph Environment
 permalink: /about/
 ---
 
-Some information about you!
+Integrity, Innovation, Value
 
-### More Information
+### Contact US
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[info@newgraphenvironment.com](mailto:info@newgraphenvironment.com)
