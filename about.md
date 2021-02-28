@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Integrity, Innovation, Value
+title: Our Mission
 permalink: /about/
 ---
 
