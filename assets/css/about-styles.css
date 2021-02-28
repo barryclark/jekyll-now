@@ -67,15 +67,8 @@ body{
     clear: both;
   }
 
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-   
-  }
+  /* Responsive columns */   
+  
   h3{
     font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -83,7 +76,7 @@ body{
     color:Gray;
    }
    body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .flip-card {
@@ -140,4 +133,18 @@ body{
   ul{
     list-style-type:none;
     padding-left: 0px;
+  }
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      margin-left: 10%;
+    }
+   .content{
+     margin-left: 7%;
+   }
+   .below{
+     margin-left: 52%;;
+   }
   }
