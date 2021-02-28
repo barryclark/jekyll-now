@@ -1,9 +1,9 @@
 ---
 layout: page
-title: New Graph Environment
+title: Integrity, Innovation, Value
 permalink: /about/
 ---
 
-Integrity, Innovation, Value
 
-[test this](test_page.html)
+
+At New Graph Environment we provide practical and innovative environmental research and consulting solutions. We strive to build and maintain working relationships with proponents, scientists, First Nations, stewardship groups, non-profits and regulators through sound science, open communication, integrity and value-added deliverables. We are biologists and computer programmers that develop collaborative open-source programmatic water quality and fisheries assessment tools. We will continue to facilitate aquatic ecosystem restoration with an emphasis on inclusive engagement and knowledge sharing.
