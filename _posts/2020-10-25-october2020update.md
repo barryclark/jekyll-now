@@ -3,9 +3,7 @@ layout: post
 title: 🎃 Oct. 2020 Updates - Getting Started with Open Source, ZBCE
 ---
 
-Hello!
-
-As you may have already know I'm working on an Community Edition of the [ZotBins](https://zotbins.github.io) Ecosystem where any business, university, classroom, or home could implement a smart waste system. Implementing this system will help better inform all actors in the Municipal Solid Waste Stream system and help close the loop for a sustainable society. Just wanted to give a few updates thus far with this project!
+Hello! As you may have already know I'm working on an Community Edition of the [ZotBins](https://zotbins.github.io) Ecosystem where any business, university, classroom, or home could implement a smart waste system. Implementing this system will help better inform all actors in the Municipal Solid Waste Stream system and help close the loop for a sustainable society. Just wanted to give a few updates thus far with this project!
 
 ### New Technology 💻
 Currently, I have been researching different ways to help create an affordable, scalable, and easily deployable sensor module for [ZotBins](https://zotbins.github.io/). I have settled on using the ESP32-CAM, HC-SR04, and a battery pack as some of the main components of this first ZBCE Prototype.

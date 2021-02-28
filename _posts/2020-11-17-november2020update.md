@@ -3,9 +3,7 @@ layout: post
 title: 🦃 Nov. 2020 Updates - Prototyping a Sensor Module for your Trash Bin
 ---
 
-Hello!
-
-This month I was focusing more on developing the sensor module prototype that can be easily attached to bins to collect useful waste related data such as bin fullness and bin waste content (via photos of the trash). In this blog I first start off with an update with my Instructables post. Then, I focus more on what I've done for the electrical design and the hardware design. It's a lot, but I hope you enjoy these updates and maybe even learn a couple useful things along the way! As always, let me know your thoughts or if you have any questions. The best way to contact me is on the [ZotBins Community Discord](https://discord.gg/mGKVVpxTPr).
+Hello! This month I was focusing more on developing the sensor module prototype that can be easily attached to bins to collect useful waste related data such as bin fullness and bin waste content (via photos of the trash). In this blog I first start off with an update with my Instructables post. Then, I focus more on what I've done for the electrical design and the hardware design. It's a lot, but I hope you enjoy these updates and maybe even learn a couple useful things along the way! As always, let me know your thoughts or if you have any questions. The best way to contact me is on the [ZotBins Community Discord](https://discord.gg/mGKVVpxTPr).
 
 ### Instructables Published 📰
 

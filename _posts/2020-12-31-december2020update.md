@@ -3,9 +3,7 @@ layout: post
 title: ❄️ Dec. 2020 Updates - Managing Your Trash Data
 ---
 
-Hello!
-
-As of this month ZBCE is officially starting with Phase 3 of the Roadmap. For more details about the different phases visit this link [here](https://boostnote.io/shared/14a9893a-d4d7-4e40-ac10-4dc1ab77e019). This includes creating a LAMP based server for data endpoints, including basic data analytics, and expanding on the sensor module to make it IoT enabled.  This journey of making ZBCE is still in it's beginning phases, but I'm so glad that I was able to make it to this point. The rest of this blog will also talk more about some progress I have made (with the help of others such as Grace Choe and Primal Pappachan). There's a comment section now in all the blogs if you have any thoughts, suggestions, or questions. There is also the [ZotBins Discord community](https://discord.gg/mGKVVpxTPr) as well.
+Hello! As of this month ZBCE is officially starting with Phase 3 of the Roadmap. For more details about the different phases visit this link [here](https://boostnote.io/shared/14a9893a-d4d7-4e40-ac10-4dc1ab77e019). This includes creating a LAMP based server for data endpoints, including basic data analytics, and expanding on the sensor module to make it IoT enabled.  This journey of making ZBCE is still in it's beginning phases, but I'm so glad that I was able to make it to this point. The rest of this blog will also talk more about some progress I have made (with the help of others such as Grace Choe and Primal Pappachan). There's a comment section now in all the blogs if you have any thoughts, suggestions, or questions. There is also the [ZotBins Discord community](https://discord.gg/mGKVVpxTPr) as well.
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/december2020-images/Moving_on_to_Phase_III.png)
 

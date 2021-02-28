@@ -2,9 +2,7 @@
 layout: post
 title: 🎉 Jan. 2021 Updates - Managing Your Trash Data Part 2
 ---
-Happy New Year everyone!
-
-This month I'll be going over some of the updates for the progress on phase 3 of ZotBins Community Edition. For more details about the different phases visit this link [here](https://boostnote.io/shared/14a9893a-d4d7-4e40-ac10-4dc1ab77e019). As a reminder the goals of phase 3 was to (1) develop an IoT-enabled sensor module to collect all the waste data, (2) develop a working LAMP server with API endpoints, and (3) determine some basic data analytics to process our waste data.
+Happy New Year everyone! This month I'll be going over some of the updates for the progress on phase 3 of ZotBins Community Edition. For more details about the different phases visit this link [here](https://boostnote.io/shared/14a9893a-d4d7-4e40-ac10-4dc1ab77e019). As a reminder the goals of phase 3 was to (1) develop an IoT-enabled sensor module to collect all the waste data, (2) develop a working LAMP server with API endpoints, and (3) determine some basic data analytics to process our waste data.
 
 ### Developing IoT-enabled Sensor Module: Waste Watcher 🔎
 In last month's [blog](https://zotbins.github.io/zbceblog/december2020update/), I demonstrated my new circuit for the sensor module, which I now call Waste Watcher. I still need to test my circuit a bit more thoroughly, but it seems to work for my preliminary tests. I will update you more on this in the next blog.
