@@ -6,7 +6,7 @@
 name: Ecosystem Restoration, Biology, Programming, GIS and Environmental Management
 
 # Short bio or description (displayed in the header)
-description: Innovation, Integrity, Value, Collaboration
+description: Innovation, Integrity, Value
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: images/logo_newgraph_grey_text.png
@@ -18,7 +18,7 @@ avatar: images/logo_newgraph_grey_text.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: info@newgraphenvironment.com
   facebook:
   flickr:
   github: newgraphenvironment/
