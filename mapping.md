@@ -20,4 +20,4 @@ permalink: /mapping/
 
 <br>
 
-![_config.yml]({{ site.baseurl }}/images/dunc_methods.png)
+![](images/dunc_methods.png)
