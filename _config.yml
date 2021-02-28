@@ -9,7 +9,7 @@ name: New Graph Environment - Research and Consulting
 description: Ecosystem Restoration, Biology, Programming, GIS and Environmental Management
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/logo_newgraph_140_140.png
+avatar: images/logo_newgraph_grey_text.png
 
 #
 # Flags below are optional
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: newgraphenvironment/
   # instagram:
-  linkedin: https://www.linkedin.com/public-profile/in/allan-irvine-baab8874/
+  linkedin: https://www.linkedin.com/in/allan-irvine-baab8874
   # pinterest:
   # rss: # just type anything here for a working RSS icon
   # # twitter: jekyllrb
