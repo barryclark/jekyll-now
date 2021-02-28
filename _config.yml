@@ -13,7 +13,11 @@ avatar: https://aicvscummins.weebly.com/uploads/1/2/0/6/120694931/asset-1-4x_1.p
 
 navbar-links:
   Blog: "/"
+  Articles: "articles"
+  Posters: "posters"
   About: "about"
+  Contact: "contact"
+  
 #
 # Flags below are optional
 #
