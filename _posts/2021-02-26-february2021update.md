@@ -2,7 +2,7 @@
 layout: post
 title: ❤️  Feb. 2021 Updates - Managing Your Trash Data Part 3
 ---
-This month I had a lot of fun learning new things such as designing a PCB (Printed Circuit Board) and working with the UCI ZotBins Team to develop our API's. As mentioned in the previous blog, I wanted to finish phase 3 by the end of this and I am happy to announce that we are done! As a reminder the goals of phase 3 was to (1) develop an IoT-enabled sensor module to collect all the waste data, (2) develop a working LAMP server with API endpoints, and (3) determine some basic data analytics to process our waste data. For more details about the different phases visit this link [here](https://boostnote.io/shared/14a9893a-d4d7-4e40-ac10-4dc1ab77e019).
+Hello! This month I had a lot of fun learning new things such as designing a PCB (Printed Circuit Board) and working with the UCI ZotBins Team to develop our API's. As mentioned in the previous blog, I wanted to finish phase 3 by the end of this and I am happy to announce that we are done! As a reminder the goals of phase 3 was to (1) develop an IoT-enabled sensor module to collect all the waste data, (2) develop a working LAMP server with API endpoints, and (3) determine some basic data analytics to process our waste data. For more details about the different phases visit this link [here](https://boostnote.io/shared/14a9893a-d4d7-4e40-ac10-4dc1ab77e019).
 
 I also want to start another phase before we go to phase 4. This in-between phase, will just be a testing and reviewing phase just to make sure that the prototype and system we developed are ready for other people/communities to adopt. However, before moving on to the next phases, I am going to take a break next month.
 
