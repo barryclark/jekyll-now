@@ -18,6 +18,3 @@ permalink: /mapping/
 
 <iframe src="https://www.mapsmadeeasy.com/maps/public_3D/7f9c9658ce804e629cb32f6adaee87fc" scrolling="no" title="Maps Made Easy" width="80%" height="400" frameBorder ="0"></iframe>
 
-<br>
-
-![](images/dunc_methods.png)
