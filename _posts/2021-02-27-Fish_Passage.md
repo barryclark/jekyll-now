@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collaboration
+title: Innovation, Integrity, Value and Collaboration
 ---
 
 ![_config.yml]({{ site.baseurl }}/images/logo_newgraph_grey_text.png)
