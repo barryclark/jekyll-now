@@ -11,6 +11,9 @@ description: A club for artificial intelligence and machine learning enthusiasts
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://aicvscummins.weebly.com/uploads/1/2/0/6/120694931/asset-1-4x_1.png
 
+navbar-links:
+  Blog: "/"
+  About: "about"
 #
 # Flags below are optional
 #
