@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mapping
-permalink: /about/
+permalink: /mapping/
 ---
 
 <iframe src="https://www.mapsmadeeasy.com/maps/public/421d3b7404d74cacad6471612260bb41" scrolling="no" title="Maps Made Easy" width="80%" height="400" frameBorder ="0"></iframe>
