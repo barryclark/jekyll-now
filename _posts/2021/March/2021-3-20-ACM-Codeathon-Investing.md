@@ -22,12 +22,12 @@ Given all the values of memes in chronological order. Then the corresponding mem
 
 ## Input
  
-You will receive an integer `n` that will correspond to the number of memes you will receive on the first line. You will then receive the meme's value `v_i` space delimitted on the same line. Then you will receive the meme names. Meme names will be in the regex `[A-z]` and have length less than or equal to 15 ascii characters.
+You will receive an integer `n` that will correspond to the number of memes you will receive on the first line. You will then receive the meme's value `v_i` space delimitted on the same line. Then you will receive the meme names. Meme names will be in the regex `[A-z]*` and have length less than or equal to 15 ascii characters.
 
 ```
 n
 v_1 v_2 v_3 ... v_n
-m_1 m_1 m_3 ... m_n
+m_1 m_2 m_3 ... m_n
 ```
 
 ## Constraints
