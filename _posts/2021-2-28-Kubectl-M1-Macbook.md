@@ -7,7 +7,7 @@ I've got a kubernetes cluster running in my closet (say that 10x fast) and prefe
 
 Unfortunately... 'brew install kubectl' and 'brew install helm3' didn't want to play nice with my shiny new laptop...
 
-According to this [github issue] (https://github.com/kubernetes/kubernetes/issues/97550#issue-775380450), all we need to do is add 'arm64' as a supported platform, then build from source
+According to this [github issue](https://github.com/kubernetes/kubernetes/issues/97550#issue-775380450), all we need to do is add 'arm64' as a supported platform, then build from source
 
 #### Clone the Kubernetes repo
 ```
