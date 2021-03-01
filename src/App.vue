@@ -29,7 +29,6 @@ export default {
 <style>
 body {
   color: #0F0F0F;
-  font-family: NanumGothic;
 }
 h1 {
   font-size: initial;

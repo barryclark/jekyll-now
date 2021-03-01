@@ -214,7 +214,6 @@ li {
 }
 .router-link {
   color: #000;
-  font-size: 1em;
 }
 .header {
   background: url("../assets/back_01.png") repeat center center;

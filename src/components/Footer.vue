@@ -105,7 +105,6 @@ a {
 }
 .router-link {
   color: #000;
-  font-size: 1em;
 }
 .square-icon {
   height: 36px;
