@@ -1,13 +1,15 @@
 ---
 layout: post
 title: ACM@USC Codeathon - Investing in 2021 - C++
-date: March 21, 2020
+date: March 21, 2021
 time: 0:00 UTC-4
 ---
 
 The greatest thing I learned this year, was imagine every dynamic programming question as some subproblem of knapsack. Once you think of it as knapsack, it feels magnitudes easier to solve if you know the $$O(nW)$$ dynamic solution and $$W$$ is sufficiently a small enough factor. K-dimensional dynamic programming has become a lot easier, but I still struggle from time to time.
 
-I learned through my years going to ICPC that my weakness in algorithm competitions is dynamic programming. Graph algorithms almost feel trivial, divide and conquer can be difficult but do not come up often. I decided to spend the last year or so really trying to get a deep understanding and ability in dynamic programming. Today I feel very comfortable. I found a neat problem, [Min Jumps], and tweaked it to be a little more difficult, and requiring an understanding of the algorithm otherwise trying to tweak the geeks for geeks solution will be futile.
+I learned through my years going to ICPC that my weakness in algorithm competitions is dynamic programming. Graph algorithms almost feel trivial, divide and conquer can be difficult but do not come up often. I decided to spend the last year or so really trying to get a deep understanding and ability in dynamic programming. Today I feel very comfortable. I found a neat problem, [Min Jumps](https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/), and tweaked it to be a little more difficult, and requiring an understanding of the algorithm otherwise trying to tweak the geeks for geeks solution will be futile.
+
+This last month has also been a great opportunity to really pick up on my C++ and algorithms skills. I went ahead and brushed up quite a bit over the last few days, and have decided to try and finish all of AlgoExpert in just C++, [AlgoExpert Solutions](https://github.com/justinba1010/AlgoExpert-Practice).
 
 It begins with an array of positive integers designating how many jumps you can go forward to reach the end from each position. The target is to solve the path of jumps that give the fewest jumps. This is almost knapsack, and thinking it this way makes life a lot easier. Below is the the problem statement and solution.
 
@@ -44,7 +46,7 @@ $$m_i \in [A-z]*$$
 p_1 p_2 ... p_k
 ```
 
-Where you can legally jump from $$p_1$$->$$p_2$$->...$$p_k$$, where $$p_k = v_n$$.
+Where you can legally jump from $$p_1$$->$$p_2$$->...$$p_k$$, where $$p_k = m_n$$.
 
 
 ### Disclaimer
