@@ -2,7 +2,7 @@
 layout: post
 title: ❤️  Feb. 2021 Updates - Managing Your Trash Data Part 3
 ---
-Hello! This month I had a lot of fun learning new things such as designing a PCB (Printed Circuit Board) and working with the UCI ZotBins Team to develop our API's. As mentioned in the previous blog, I wanted to finish phase 3 by the end of this and I am happy to announce that we are done! As a reminder the goals of phase 3 was to (1) develop an IoT-enabled sensor module to collect all the waste data, (2) develop a working LAMP server with API endpoints, and (3) determine some basic data analytics to process our waste data. For more details about the different phases visit this link [here](https://boostnote.io/shared/14a9893a-d4d7-4e40-ac10-4dc1ab77e019).
+Hello! This month I had a lot of fun learning new things such as designing a PCB (Printed Circuit Board) and working with the UCI ZotBins Team to develop our API's. As mentioned in the previous blog, I wanted to finish phase 3 by the end of this month and I am happy to announce that we met that goal! As a reminder the goals of phase 3 was to (1) develop an IoT-enabled sensor module to collect all the waste data, (2) develop a working LAMP server with API endpoints, and (3) determine some basic data analytics to process our waste data. For more details about the different phases visit this link [here](https://boostnote.io/shared/14a9893a-d4d7-4e40-ac10-4dc1ab77e019).
 
 I also want to start another phase before we go to phase 4. This in-between phase, will just be a testing and reviewing phase just to make sure that the prototype and system we developed are ready for other people/communities to adopt. However, before moving on to the next phases, I am going to take a break next month.
 
@@ -22,15 +22,16 @@ Hope to see you there! 😄
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/feb2021-images/zbce_monthly_meet1.png)
 
 ### Hosting Your own API's For Your Waste Data 📔
-With the help of Patrick Nguyen, Aishwarya Bhandari, and Grace Choe, we were able to create some basic RESTful API's. In it's most basic sense, REST APIs allow us to communicate with our database to either request data or submit data. The two types of APIs we mainly used are POST and GET. POST APIs are the type of API's that allow us to **submit** data to our database. These APIs are mainly used by our Waste Watcher modules which can collect data such as bin fullness and send that number to our database. GET APIs are the type of API's that allow us to **receive** data from our database (usually in the form of a [JSON object](https://en.wikipedia.org/wiki/JSON)). These APIs are mainly used by any web-based applications we have such as a website that helps notify facilities management when bins are full. Below are all the APIs that we have created. You can find more details about the APIs in our [guide](https://github.com/zotbins/zbce_api/blob/main/api_guide.md).
+With the help of Patrick Nguyen, Aishwarya Bhandari, and Grace Choe, we were able to create some basic RESTful API's. In it's most basic sense, REST APIs allow us to communicate with our database to either request data or submit data. The two types of APIs we mainly used are POST and GET. POST APIs are the type of API's that allow us to **submit** data to our database. These APIs are mainly used by our [Waste Watcher](https://github.com/zotbins/waste_watcher) modules which can collect data such as bin fullness and send that number to our database. GET APIs are the type of API's that allow us to **receive** data from our database (usually in the form of a [JSON object](https://en.wikipedia.org/wiki/JSON)). These APIs are mainly used by any web-based applications we have such as a website that helps notify facilities management when bins are full. Below are all the APIs that we have created. You can find more details about the APIs in our [guide](https://github.com/zotbins/zbce_api/blob/main/api_guide.md).
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/feb2021-images/zbce_api_table.png)
 
-Though creating APIs may not seem very exciting yet, it is still a necessary step that will allow us to have all sorts of applications. If you look at our 4-layer IoT Architecture in the image below, the APIs reside in the Middleware Layer (more specifically with the LAMP server) and will be the bridge of data flow between all the sensors in the Perception Layer and all the applications in the Application Layer. Being done with a some basic functioning API's, we can finally start testing ZBCE working as an entire system among all the layers. With that said, there is still some improvement to be made such as creating more APIs for data analysis and also transitioning to a faster Python Library called [FastAPI](https://fastapi.tiangolo.com/) instead of what we are currently using, [Flask](https://palletsprojects.com/p/flask/). Thanks Patrick for suggesting this!
+Though creating APIs may not seem very exciting yet, it is still a necessary step that will allow us to have all sorts of applications. If you look at our 4-layer IoT Architecture in the image below, the APIs reside in the Middleware Layer (more specifically with the LAMP server) and will be the bridge of data flow between all the sensors in the Perception Layer and all the applications in the Application Layer. Being done with a some basic functioning API's, we can finally start testing ZBCE working as an entire system among all the layers. With that said, there are still some improvements to be made such as creating more APIs for data analysis and also transitioning to a faster Python Library called [FastAPI](https://fastapi.tiangolo.com/) instead of what we are currently using, [Flask](https://palletsprojects.com/p/flask/). Thanks Patrick for suggesting this!
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/ZBCE_4_layer_IoT_Architecture.png)
 
 Thanks again to all the contributors!
+
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/feb2021-images/contributors.png)
 
 ### Waste Watcher Power Draw Analysis Revisiting 🔋
@@ -48,7 +49,7 @@ I also discovered that the high pitched noise from suspicion 3, did not come fro
 
 ### Designing a Custom PCB for Waste Watcher 📐
 
-I actually had a lot of fun learning about custom PCB design. Why did I learn PCB design? I felt that if I ever wanted to scale ZBCE's [Waste Watcher](https://github.com/zotbins/waste_watcher) into deployable kits that anyone could adopt having a PCB is critical. It would allow me to create the circuits for all the [Waste Watchers](https://github.com/zotbins/waste_watcher) very quickly. Soldering the circuit by hand (what I'm currently doing right now) is fine for now, but soldering dozens of them could quickly become tedious and tiresome. Also, I'm human and will probably make a bunch of mistakes when soldering.
+I actually had a lot of fun learning about custom PCB design. Why did I learn PCB design? I felt that if I ever wanted to scale ZBCE's [Waste Watcher](https://github.com/zotbins/waste_watcher) into deployable kits that anyone could adopt, then having a PCB is critical. It would allow me to create the circuits for all the [Waste Watchers](https://github.com/zotbins/waste_watcher) very quickly. Soldering the circuit by hand (what I'm currently doing right now) is fine for now, but soldering dozens of them could quickly become tedious and tiresome. Also, I'm human and will probably make a bunch of mistakes when soldering.
 
 The software I decided to use was [KiCad](https://www.kicad.org/) because it was free and open-source. To learn how to design a PCB I decided to follow this tutorial [Designing a Raspberry Pi plugin PCB in KiCAD in 20 minutes](https://www.youtube.com/watch?v=PlDOnSHkX2c). The tutorial actually uses a older version of KiCad than what is currently available, but I was still able to follow along. However, for the smoothest possible learning experience I recommend using the same version of KiCad the tutorial uses.
 
@@ -60,7 +61,7 @@ My first step was to create generate a schematic for my circuit. My circuit for 
 
 There are some extra steps after generating the schematic such as generating the netlist and assigning footprints and values to each component, but I won't go over that here. If you're interested just follow the tutorial linked above!
 
-After my schematic was created, I got to do the PCB layout. This basically allowed me to place all the footprints of each component, dictate the cutout of the PCB, add labels, and route connections between pins.
+After my schematic was created, I got to do the PCB layout. This basically allowed me to place all the footprints of each component, dictate the cutout of the PCB, add labels, and route connections between pins as you can see in the image below.
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/feb2021-images/pcb_layout.png)
 
@@ -68,7 +69,7 @@ After the layout I was able to view my PCB in CAD, which was probably the most s
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/feb2021-images/pcb_cad.png)
 
-Finally, I also decided to order my PCB from a vendor in the United States. It's definitely hard to find manufacturers to make PCB's on such a small scale, but I was able to use OshPark (not sponsored) as highlighted in the tutorial video above. They are a pretty great option for makers who may only want a couple PCB's for personal purposes and not a whole lot for manufacturing purposes. I was able to purchase 3 of my PCBs for $6.65 total, which is pretty awesome. They also accept KiCAD files, which was also really convenient for me.
+Finally, I also decided to order my PCB from a vendor in the United States. It's definitely hard to find manufacturers to make PCB's on such a small scale, but I was able to use OshPark (not sponsored) as highlighted in the tutorial video above. They are a pretty great option for makers who may only want a couple PCBs for personal purposes and not a whole lot of PCBs for manufacturing purposes. I was able to purchase 3 of my PCBs for $6.65 total, which is pretty awesome. They also accept KiCAD files, which was also really convenient for me.
 
 ![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/feb2021-images/osh_park_invoice.png)
 
