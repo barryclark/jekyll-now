@@ -31,7 +31,6 @@ footer-links:
   youtube: channel/UCAOvckbaZM8MEh9R83KH9HA
   googleplus: # anything in your profile username that comes after plus.google.com/
 
-
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus: joe-tats
@@ -66,7 +65,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: "highlight"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -90,6 +89,8 @@ include:
   - _tools
   - _pages
   - scope:
-      path: '_pages'
+      path: "_pages"
     values:
       permalink: /:basename/
+
+markdown: GFM
