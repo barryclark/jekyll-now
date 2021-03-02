@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post
+title: Simple Flowcharting
 customjs:
  - http://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js
  - http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js
