@@ -14,7 +14,7 @@ This last month has also been a great opportunity to really pick up on my C++ an
 It begins with an array of positive integers designating how many jumps you can go forward to reach the end from each position. The target is to solve the path of jumps that give the fewest jumps. This is almost knapsack, and thinking it this way makes life a lot easier. Below is the the problem statement and solution.
 
 
-# Investing in 2021
+# 2021 Algorithmic Trading
 
 It has been shown with a high correlation that turning memes into integers, and ordering them chronologically gives you data that you can predict the value of GameStop stock with 70% confidence. Every meme gives a value indicating how many memes forward you can jump. You must move chronologically. Once you have the shortest path through all of the memes, you can use this information to put memes into google reverse image search. If there is more green than red, you invest now. If there is more red than green, you hold. If there is an equal amount of green and red, you have hit the lotto, you should sell your home and buy call options.
 
