@@ -92,5 +92,3 @@ include:
       path: "_pages"
     values:
       permalink: /:basename/
-
-markdown: GFM
