@@ -72,7 +72,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 
 ### <a name="treasuries"></a>Ποιες εισηγμένες σε χρηματιστήριο εταιρείες έχουν μετατρέψει τα αποθεματικά τους σε Bitcoin;
 
-Το Φεβρουάριο του 2021, 22 [εισηγμένες σε χρηματιστήριο εταιρείες είχαν μετατρέψει €2,5δις των αποθεματικών τους σε Bitcoin](https://bitcointreasuries.org). Ανάμεσά τους και η [Tesla](https://www.sec.gov/ix?doc=/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm).
+Το Μάρτιο του 2021, 22 [εισηγμένες σε χρηματιστήριο εταιρείες είχαν μετατρέψει €3,5δις των αποθεματικών τους σε Bitcoin](https://bitcointreasuries.org). Ανάμεσά τους και η [Tesla](https://www.sec.gov/ix?doc=/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm).
 
 ### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin στην Ελλάδα;
 
@@ -287,7 +287,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2021-03-01
+Τελευταία ενημέρωση: 2021-03-03
 
 <!-- <div class="posts">
   {% for post in site.posts %}

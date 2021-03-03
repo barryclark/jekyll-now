@@ -246,6 +246,14 @@
   location_gr: Χαϊδάρι, Αττική, Ελλάδα
   location_en: Haidari, Attica, Greece
 
+- company_gr: Bageas DAF Truck Parts
+  company_en: Bageas DAF Truck Parts
+  url: https://www.bageas.com
+  category_gr: Ανταλλακτικά φορτηγών λεωφορείων DAF
+  category_en: DAF truck and coach parts
+  location_gr: Χαϊδάρι, Αττική, Ελλάδα
+  location_en: Haidari, Attica, Greece
+
 - company_gr: Τετράδιο
   company_en: Tetradio
   url: https://coinmap.org/venue/11653
@@ -645,6 +653,14 @@
   category_en: 3D Printing
   location_gr: Ίλιον, Αττική, Ελλάδα
   location_en: Ilion, Attica, Greece
+
+- company_gr: ACNT
+  company_en: ACNT
+  url: http://acnt.gr
+  category_gr: Λογιστικές υπηρεσίες
+  category_en: Accounting services
+  location_gr: Ίλιον, Αττική, Ελλάδα
+  location_en: Ilion, Attica, Greece
   
 - company_gr: Pharmacy128
   company_en: Pharmacy128
@@ -920,7 +936,7 @@
 
 - company_gr: Here Comes The Paint TShirt Printing
   company_en: Here Comes The Paint TShirt Printing
-  url: http://tshirtprinting.gr
+  url: https://www.facebook.com/DTGtshirtsprinting/
   category_gr: Εκτυπώσεις TShirts
   category_en: TShirt Printing
   location_gr: Αττική, Ελλάδα
