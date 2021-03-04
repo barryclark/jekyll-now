@@ -40,7 +40,7 @@ Munzinger Straße 9
 79111 Freiburg
 
 Telefon: 0761 898 3940
-Telefax: 0761 898 3900
+
 E-Mail: presse(at)haufe-lexware.com
 
 ### Bitte wenden Sie sich bei Fragen an:
