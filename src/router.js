@@ -11,6 +11,7 @@ import SeventhContainer from './components/top/SeventhContainer.vue'
 import EighthContainer from './components/top/EighthContainer.vue'
 import SupportFirstContainer from './components/supports/SupportFirstContainer.vue'
 import SupportSecondContainer from './components/supports/SupportSecondContainer.vue'
+import SupportBack from './components/supports/SupportBack.vue'
 import Graph from './components/staffs/Graph.vue'
 import Members from './components/staffs/Members.vue'
 
@@ -57,7 +58,8 @@ export default new Router({
       name: 'support',
       components: {
         default: SupportFirstContainer,
-        sec: SupportSecondContainer
+        sec: SupportSecondContainer,
+        third: SupportBack
       }
     },
     {
