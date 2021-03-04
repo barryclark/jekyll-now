@@ -18,11 +18,15 @@ Munzinger Straße 9
 79111 Freiburg
 
 **Telefon**: 0761 898-0
+
 **Telefax**: 0761 898-3990
 
 Kommanditgesellschaft, Sitz und Registergericht Freiburg, HRA 701738
+
 Komplementäre: Haufe-Lexware Services Verwaltungs GmbH,
+
 Sitz und Registergericht Freiburg, HRB 704660; Martin Laqua
+
 Geschäftsführung: Birte Hackenjos, Mirza Hayit, Jürgen Spegel, Harald Wagner
 
 ### Public Relations:
