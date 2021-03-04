@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ready, Set... Serverless vs. Containers ​ - Spot by NetApp"
+title: "Ready, Set... Serverless vs. Containers ​ - Panel hosted by Spot by NetApp"
 description: "Cheryl Hung, VP Ecosystem at CNCF, debates the merits of Serverless vs Containers, hosted by Spot by Netapp"
 image: https://i.ytimg.com/vi/svE8mtHg5z4/maxresdefault.jpg
 video: https://www.youtube.com/embed/lnD6K876JY4
