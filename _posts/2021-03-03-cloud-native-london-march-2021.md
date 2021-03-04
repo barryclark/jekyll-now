@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Join us to hear from three great speakers from Logical Clocks, Contino, and StackRox at the March Cloud Native London virtual meetup, on Rambly and YouTube from 6:45pm GMT!
