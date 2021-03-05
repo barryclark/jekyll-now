@@ -1,53 +1,74 @@
 <template id="app">
+  <div class="support_second-container relative bg-white overflow-hidden row">
+    <main class='lg:container flex items-center'>
     <hooper :settings="hooperSettings">
       <slide>
         <div class="images img1">
-          <h2>Slider 1</h2>
-          <img src="/src/assets/loop_1/1.mp4">
+          
+          <video src="../../assets/loop_1/1.mp4" loop controls></video>
         </div>
       </slide>
       <slide>          
         <div class="images img2">
-          <h2>Slider 2</h2>
-          <img src="/src/assets/loop_1/2.mp4">
+          
+          <video src="../../assets/loop_1/2.mp4" loop controls></video>
         </div> 
       </slide>
       <slide>          
         <div class="images img3">
-          <h2>Slider 3</h2>
-          <img src="/src/assets/loop_1/3.png">
+          
+          <video src="../../assets/loop_1/1.mp4" loop controls></video>
         </div>       
       </slide>
       <slide>  
         <div class="images img4">
-          <h2>Slider 4</h2>
+          
+          <video src="../../assets/loop_1/1.mp4" loop controls></video>
         </div> 
       </slide>
       <slide>     
         <div class="images img5">
-          <h2>Slider 5</h2>
+          
+          <video src="../../assets/loop_1/1.mp4" loop controls></video>
         </div>
       </slide>
     </hooper>
+    </main>
+  </div>
 </template>
 
 <style>
+main { width: 100%; }
+.support_second-box {
+  opacity: 0.8;
+  width: 640px;
+}
+.support_second-container {
+  background: #FFF25A;
+  display: flex;
+  justify-content: center;
+  height: 640px;
+  width: 100%;
+}
+video {
+  width: 90%;
+}
 .images {
-  height: 70vh;
+  height: 640px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
 }
 .img1 {
-  background-image: url("../assets/loop_1/1.png");
+  background: lightblue;
 }
 .img2 {
   background: lightblue;
 }
 .img3 {
   background: coral;
-  background-image: url("../assets/loop_1/2.png");
 }
 .img4 {
   background: lightgreen;
