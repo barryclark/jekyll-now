@@ -26,6 +26,9 @@ There are missing areas on this map. Zip codes are not defined as polygon areas,
 
 Population figures are based on 2016 data, which is pretty far out of date now as well. 
 
+Zip codes are self-reported by people filling out forms to get the vaccine. People are human and may not know their own zip code or put down a wrong zip code. For example on college campuses, people may put down their hometown zip code. This data does not include any out of state residents who were vaccinated in Texas, either. 
+
 This is a personal project of mine and is not an official source of public health information. 
 
 Charlie
+
