@@ -37,7 +37,7 @@ Finally, after our break we returned with (Steve Giguere from StackRox who talke
 * Everything as Code is great but new/old security methods for code still apply
 
 And before we close, a group photo from Rambly! 
-![](/images/CNL_2021-03-03_Rambly.jpg)
+![]({{site.baseurl}}/images/CNL_2021-03-03_Rambly.jpg)
 
 ## Cloud Native London April
 
