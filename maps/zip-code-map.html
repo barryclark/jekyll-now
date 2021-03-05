@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Travis County Voter Turnout</title>
+<title>TX Vaccinations By Zip Code</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
@@ -115,10 +115,9 @@
 </head>
 <body>
 <div id='map'></div>
-<div class="map-overlay" id="legend"><p>% of Registered</p></div>
-<div class='map-overlay' id='features'><h2>Travis County Voter Turnout Map</h2>
+<div class='map-overlay' id='features'><h2>Texas Vaccinations by Zip Code</h2>
     <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
-        <div id='pd2'><p>UNOFFICIAL - Complete Early Vote</p></div></div></div>
+        <div id='pd2'><p><a href="https://dshs.texas.gov/coronavirus/AdditionalData.aspx">Data: from TX DSHS 3/2/2021</a></p></div>
     
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxpZTIzNDMiLCJhIjoiY2tnaWlnOTRyMGk5djJybGYzaThqeXQzdyJ9.kRWf1VawXRygKy2w7hNT1w';
@@ -126,7 +125,7 @@
         container: 'map',
         style: 'mapbox://styles/charlie2343/cklwm7q1h0j9217o9guwqlbkd',
         center: [-97.747875,30.268937],
-        zoom: 10
+        zoom: 8
     });
     var hoveredStateId = null;
 
@@ -141,7 +140,10 @@
    //set popup text 
    //You can adjust the values of the popup to match the headers of your CSV. 
    // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
-    var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.right_active_registered + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + e.features[0].properties.right_turnout +`</h4>` + `<h4>` + `<b>` + `Percent of 2016 Turnout: ` + `</b>` + e.features[0].properties.right_percent_2016 +`</h4>`; 
+   pct = e.features[0].properties.percent*100
+   pct = pct.toFixed(2);
+
+    var description = `<h3>`+ `Zip Code: ` + e.features[0].properties.zip_code + `</h3>` + `<h4>` + `<b>` + `Fully Vaccinated: ` + `</b>` + e.features[0].properties.People_Ful + `</h4>` + `<h4>` + `<b>` + `Population (2016): ` + `</b>` + e.features[0].properties.seven +`</h4>` + `<h4>` + `<b>` + `Percent Vaccinated: ` + `</b>` +pct + `%` +`</h4>`; 
 
       new mapboxgl.Popup()
        .setLngLat(e.lngLat)
