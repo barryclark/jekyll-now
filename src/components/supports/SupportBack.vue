@@ -80,7 +80,7 @@ h2 {
   color: #fff
 }
 .hooper {
-  height: 100vh;
+  height: 640px;
 }
 </style>
 
