@@ -3,16 +3,19 @@
       <slide>
         <div class="images img1">
           <h2>Slider 1</h2>
+          <img src="/src/assets/loop_1/1.mp4">
         </div>
       </slide>
       <slide>          
         <div class="images img2">
           <h2>Slider 2</h2>
+          <img src="/src/assets/loop_1/2.mp4">
         </div> 
       </slide>
       <slide>          
         <div class="images img3">
           <h2>Slider 3</h2>
+          <img src="/src/assets/loop_1/3.png">
         </div>       
       </slide>
       <slide>  
@@ -37,13 +40,14 @@
   border-radius: 20px;
 }
 .img1 {
-  background: salmon;
+  background-image: url("../assets/loop_1/1.png");
 }
 .img2 {
   background: lightblue;
 }
 .img3 {
   background: coral;
+  background-image: url("../assets/loop_1/2.png");
 }
 .img4 {
   background: lightgreen;
