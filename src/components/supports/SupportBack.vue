@@ -1,12 +1,12 @@
 <template id="app">
   <div class="support_back-container relative bg-white overflow-hidden row">
-    <main class='lg:container flex items-center'>
-          <div class="container support_back-box">
-        <t-tag variant="heading" class='text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
-          こんにちは
+    
+      <div class="container support_back-box">
+        <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
+          ご支援・ご協力のお願い
         </t-tag>
-        <t-tag tag-name="p" variant="body" class='pt-5 text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
-          こんにちはー
+        <t-tag tag-name="p" variant="body" class='pt-5 text-center text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
+          ご支援・ご協力をお願い致します。
         </t-tag>
       </div>
     <hooper :settings="hooperSettings">
@@ -41,26 +41,24 @@
         </div>
       </slide>
     </hooper>
-    </main>
+    
   </div>
 </template>
 
 <style>
-main {
-  width: 100%; 
-  position: absolute;
-}
-.support_back-box {
+
+div.support_back-box {
   position: absolute;
   z-index: 2;
-  opacity: 0.8;
-  width: 640px;
-  height: 640px;
+  height: 100%;
+  width: 30%;
+  left: 0;
   background: #fff;
+  text-align: center;
+  
 }
 .support_back-container {
-  position: absolute;
-  z-index: 1;
+
   background: #FFF25A;
   display: flex;
   justify-content: center;
