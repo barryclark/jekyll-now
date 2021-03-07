@@ -30,7 +30,7 @@ Next up was Josh Armitag from Contino discussing BDD + Modules = Your Best DevSe
 * Modules should be deep not wide
 * Setting up compliance at scale is simpler than you think
 
-Finally, after our break we returned with (Steve Giguere from StackRox who talked about Lay3r C8ke - Deterministic Security (starting at [1:45:43](https://youtu.be/9yUHJ5So6Rs?t=6343)). His takeaways mentioned:
+Finally, after our break we returned with Steve Giguere from StackRox who talked about Lay3r C8ke - Deterministic Security (starting at [1:45:43](https://youtu.be/9yUHJ5So6Rs?t=6343)). His takeaways mentioned:
 
 * Shift left is hard work and that difficulty scales as you do
 * Providing kubernetes context WILL help you prioritise vulnerable images
