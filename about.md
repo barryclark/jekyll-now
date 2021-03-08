@@ -12,6 +12,11 @@ Cheryl is a regular keynote speaker and founded the [Cloud Native London meetup]
 
 # Contact
 
-I offer virtual and in-person speaking engagements and panel moderating, typically at events on technology and digital innovation. I also take limited advisory and board roles. Submit your proposal below and I will usually respond within 24 hours.
+Outside of CNCF I advise and consult through my company, Cheryl Hung Ltd. Please get in touch if you are looking for any of the following, or you have another proposal. I usually respond within 24 hours.
+
+1. Keynote speaker, host for tech events and panels
+2. Advisor on developer marketing, open source and community strategy
+3. Introductions to VCs (venture capital) for startups, particularly deep tech in Europe
+4. Consulting services on developer content marketing and community building
 
 <script type="text/javascript" src="https://form.jotformeu.com/jsform/92682794245368"></script>
