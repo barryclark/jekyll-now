@@ -3,6 +3,15 @@ layout: page
 title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
+
+### March 8th, 2021 thoughts & takeaways:
+
+* We had quite the winter storm during the week of President's Day. The airport saw no passengers for almost three days and traffic incidents hit record highs. Valentine's Day saw an insane 400 traffic incidents reports. Due to the power outages the city's website and 3-1-1 service was down for parts of February 15th which likely broke a lot of the data collection on the City's end. Many intersections (7 of 13) were not reporting any traffic volumes due to the signal being completely dark. I've averaged the missing data to get a sense of what volumes we might have seen out there.
+
+* The Governor will repeal all of his COVID restrictions as of this Wednesday. The last "re-opening" we had back in May caused traffic volumes to steadily increase until the surge in cases in June/July. With the added re-assurance of vaccinations (for those who have gotten one), it will be interesting to see if traffic will return and if it will break the 70% of normal level we have seen since last summer.  
+
+***
+
 ### February 2nd, 2021 thoughts & takeaways:
 
 * I am now showing almost an entire year of data going back to February 1st, 2020.
