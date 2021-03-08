@@ -12,7 +12,7 @@ Cheryl is a regular keynote speaker and founded the [Cloud Native London meetup]
 
 # Contact
 
-I partner with companies in a personal capacity, please get in touch for any of these topics or other proposals. I usually respond within 24 hours.
+I partner with companies in a personal capacity, [get in touch](/about) if you are looking for any of the following, or you have another proposal.
 
 1. Keynote speaker, panelist, host for tech events
 2. Advisor on developer marketing, open source and community strategy

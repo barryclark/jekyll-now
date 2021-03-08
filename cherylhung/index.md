@@ -5,7 +5,7 @@ description: "Partnering with Cheryl Hung"
 title: Partner with Cheryl
 ---
 
-I partner with companies in a personal capacity, specializing in cloud native and open source strategy. [Get in touch](/about) if you are looking for any of the following, or you have another proposal.
+I partner with companies in a personal capacity, [get in touch](/about) if you are looking for any of the following, or you have another proposal.
 
 1. Keynote speaker, panelist, host for tech events
 2. Advisor on developer marketing, open source and community strategy
