@@ -4,6 +4,8 @@ title: Why am I doing this?
 tags: [Personal]
 ---
 
+> Edit on Mar 9, 2021: This is the actual first post of this website. All previous posts were taken from my personal notes on paper, and labelled with their original date.
+
 There are two extremes that must be avoided.
 
 There is the extreme of narcissism. Sometimes I have these urges to write for sharing publicly my thoughts. There's obviously a delusion of grandeur: I write to be read, to be praised, acclaimed. And this leads to pretentious writing, self-aggrandizing writing, sophistic elaborations, and ultimately just plain bad content.
