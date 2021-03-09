@@ -2,7 +2,7 @@
 layout: post
 author: Paul-Louis Biondi
 excerpt_separator: <!--more-->
-title: Mobilizing Queer Rage: Mapping Key ACT UP Protests in the Fight Against AIDS
+title: Mobilizing Queer Rage—Mapping Key ACT UP Protests in the Fight Against AIDS
 ---
 
 ## Introduction
