@@ -59,6 +59,8 @@ National Park Service. “What Was the Klondike Gold Rush?,” n.d. [https://www
 
 National Park Service. “Wildlife,” n.d. [https://www.nps.gov/dena/learn/nature/wildlife.htm](https://www.nps.gov/dena/learn/nature/wildlife.htm).
 
+National Park Service. "Women Who Went to the Klondike," n.d. [https://www.nps.gov/articles/klgo-klondike-women.htm](https://www.nps.gov/articles/klgo-klondike-women.htm)
+
 SFU Digitized Collections. “British Columbia Postcards Collection.” Accessed March 8, 2021. [https://digital.lib.sfu.ca/islandora/object/bcp:collection](https://digital.lib.sfu.ca/islandora/object/bcp:collection).
 
 “University of Washington Libraries Digital Collections.” Accessed March 8, 2021. [https://content.lib.washington.edu/](https://content.lib.washington.edu/).
