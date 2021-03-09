@@ -1,6 +1,6 @@
 ---
 layout: post
-Author: Levi Blinder
+author: Levi Blinder
 excerpt_separator: <!--more-->
 Title: Early Board Games in Ancient Europe and Asia
 ---
