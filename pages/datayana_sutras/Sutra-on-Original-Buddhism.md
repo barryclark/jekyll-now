@@ -148,12 +148,12 @@ The Blessed One having mastered the Sublime Dhamma Eye that leads to Enlightenme
 
 {% assign objects = page.matikas.objects %}
 {% for object in objects %}
-"Bhikkhux, {{object}} is impermanent, both of the past and the future, not to speak of the present. The cause and condition for the arising of {{object}} is also impermanent. As {{object}} has originated from what is impermanent, how could it be permanent? Thus, {{object}} is impermanent, conditioned, dependently arisen, subject to destruction, to vanishing, to fading away, to cessation. {% if forloop.first or forloop.last %} Seeing Thus, Bhikkhux, the instructed noble disciple experiences distancing towards {{object}} of the past, they do not seek delight in {{object}} of the future, and they are practicing equanimity towards {{object}} of the present, for its fading away and cessation. Experiencing distancing they become dispassionate. Through dispassion their mind is liberated. When it is liberated there comes the knowledge: 'It's liberated.' They understands: 'Destroyed it birth, the holy life has been lived, what had to be done has been done, there is no more for this state of being.'" {% else %} Seeing Thus ... They understands: '... there is no more for this state of being.'" {% endif %}
+"Bhikkhux, {{object}} is impermanent, both of the past and the future, not to speak of the present. The cause and condition for the arising of {{object}} is also impermanent. As {{object}} has originated from what is impermanent, how could it be permanent? Thus, {{object}} is impermanent, conditioned, dependently arisen, subject to destruction, to vanishing, to fading away, to cessation. {% if forloop.first or forloop.last %} Seeing thus, Bhikkhux, the instructed noble disciple experiences distancing towards {{object}} of the past, they do not seek delight in {{object}} of the future, and they are practicing equanimity towards {{object}} of the present, for its fading away and cessation. Experiencing distancing they become dispassionate. Through dispassion their mind is liberated. When it is liberated there comes the knowledge: 'It's liberated.' They understands: 'Destroyed it birth, the holy life has been lived, what had to be done has been done, there is no more for this state of being.'" {% else %} Seeing Thus ... They understands: '... there is no more for this state of being.'" {% endif %}
 {% endfor %}
 
 #### <span style="color:gray">Final Verses</span>
 
-About this is was said:
+About this it was said:
 
 > True Buddhism is an illusion,  
   False Buddhism is real.  
