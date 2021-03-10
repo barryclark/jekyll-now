@@ -63,3 +63,11 @@ a {
 a:hover, a:active {
   color: #4183C4;
 }
+.post blockquote {
+  margin: 1.8em .8em;
+  border-left: 3px solid #5B2C6F;
+  padding: 0.1em 1em;
+  color: #5B2C6F;
+  font-size: 22px;
+  font-style: bold;
+}
