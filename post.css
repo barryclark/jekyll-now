@@ -53,6 +53,9 @@ h4 {
 
 p {
   margin: 15px 0;
+  color: black;
+  text-indent: 5px;
+  text-align: justify;
 }
 
 a {
