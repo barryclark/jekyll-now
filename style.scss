@@ -7,6 +7,14 @@
 
 @import "reset";
 @import "variables";
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+// Font Variables
+$roboto-slab: 'Roboto Slab', serif;   
+$open-sans: 'Open Sans', sans-serif;
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,8 +26,8 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+	background: $purple;
+  font: 18px/1.4 $open-sans;
   color: $darkGray;
 }
 
@@ -31,7 +39,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $roboto-slab;
   color: $darkerGray;
   font-weight: bold;
 
@@ -194,7 +202,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $roboto-slab;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +221,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $roboto-slab;
   font-size: 18px;
 
   @include mobile {
