@@ -8,6 +8,14 @@
 @import "reset";
 @import "variables";
 
+// Import google fonts in here because other method doesn't seem to work?
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+// Font Variables
+$roboto-slab: 'Roboto Slab', serif;   
+$open-sans: 'Open Sans', sans-serif;
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
