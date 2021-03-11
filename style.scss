@@ -27,9 +27,9 @@ html {
 }
 
 body {
-	background: $cream;
-  font: 18px/1.4 $open-sans;
-  color: $darkGray;
+	background: $darkerGray;
+  font: 18px/1.4 $candara;
+  color: $white;
 }
 
 .container {
@@ -40,8 +40,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $roboto-slab;
-  color: $sorbet;
+  font-family: $consolas;
+  color: $hotpink;
   font-weight: bold;
 
   line-height: 1.7;
@@ -126,7 +126,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $white;
 }
 
 // Specify the color of the selection
@@ -201,16 +201,16 @@ img {
 
 .site-name {
   margin: 0;
-  color: $sorbet;
+  color: $hotpink;
   cursor: pointer;
-  font-family: $roboto-slab;
+  font-family: $consolas;
   font-weight: 300;
   font-size: 32px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -221,7 +221,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $roboto-slab;
+  font-family: $consolas;
   font-size: 18px;
 
   @include mobile {
@@ -262,9 +262,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $darkGray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $sorbet;
     font-size: 22px;
     font-style: italic;
   }
@@ -281,14 +281,18 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
+<<<<<<< Updated upstream
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $cream;
+=======
+  background-color: $darkerGray;
+>>>>>>> Stashed changes
 }
 
 footer {
   padding: 20px 0;
-  text-align: center;
+  text-align: left;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

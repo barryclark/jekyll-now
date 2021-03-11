@@ -17,11 +17,17 @@ $white: #fff;
 // Other colours 
 $cream: #EFE1CE;
 $sorbet: #D2386C;
+$hotpink: #FF69B4
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+<<<<<<< Updated upstream
+=======
+$consolas: Consolas, monaco, monospace;
+$candara: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+>>>>>>> Stashed changes
 
 // Mobile breakpoints
 @mixin mobile {
