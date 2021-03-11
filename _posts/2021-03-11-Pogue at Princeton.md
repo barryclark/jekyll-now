@@ -1,6 +1,6 @@
 ---
 layout: post
-Author: José Pablo Fernández García
+author: José Pablo Fernández García
 Title: Pogue at Princeton — One Alumnus' Mark on the University
 excerpt_separator: <!--more-->
 ---
