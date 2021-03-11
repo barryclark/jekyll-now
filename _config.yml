@@ -6,7 +6,8 @@
 name: Datastrophe
 
 # Short bio or description (displayed in the header)
-description: My personal data science portfolio (and else).
+shortdescription: Data Science blog
+description: Thoughts on data, visualisations and machine learning. Python > R.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/u/6808392?s=460&u=f85d70c9fb69cd0c45372f4681b7c24394a0b218&v=4
@@ -25,7 +26,7 @@ footer-links:
   instagram:
   linkedin: camila-varó-453a8452
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: neperiana
   twitter: neperiana
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -37,7 +38,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: G-SPCMN6P553
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
