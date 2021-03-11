@@ -1,8 +1,8 @@
 ---
 layout: post
 author: José Pablo Fernández García
-Title: Pogue at Princeton — One Alumnus' Mark on the University
 excerpt_separator: <!--more-->
+Title: Pogue at Princeton — One Alumnus' Mark on the University
 ---
 The Princeton University campus is riddled with the names and other symbols of countless people. Sure, many of these markers have been placed to note a donation that made possible a walkway, a building, or even an entire college. However, the campus is just as full — if not more full — of reminders of people simply there for historical reasons. This includes halls named after former University presidents, countless portraits of famous University community members, and even small, plain stars honoring those who sacrificed their life in service of the nation.
 
