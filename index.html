@@ -2,17 +2,25 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="blog-grid-container">
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+      <div class="post-card">
+          <div class="card-image-container">
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                  {% if post.image %}
+                      <img class="card-image" src="{{ site.baseurl }}/images/{{ post.image }}" alt="{{ post.title }}">
+                  {% else %}
+                      <img class="card-image" src="{{ site.baseurl }}/images/default-post-image.jpg" alt="{{ post.title }}"> 
+                  {% endif %}
+              </a>
+          </div>
+          <div class="card-body">
+              <h2 class="card-title">
+                  <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              </h2>
+              <span class="post-date">{{ post.date | date_to_string }}</span>
+              <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
+          </div>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
   {% endfor %}
 </div>

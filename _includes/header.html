@@ -11,10 +11,10 @@
                 <a href="{{ site.baseurl }}/about">About</a>
             </nav>
             </header>
-            <div class="site-header-image">
+            <div class="site-header-image" style="background-image: url({{ site.baseurl }}/images/{% if page.image %}{{ page.image }}{% elsif page.title %}default-post-image.jpg{% else %}{{ site.headerimage }}{% endif %})">
             <div class="site-header-image-text">
-                <p class="site-short-description"><span> {{ site.shortdescription }} </span></p><br>
-                <p class="site-description"><span> {{ site.description }} </span></p>
+                <p class="site-short-description"><span>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</span></p><br>
+                <p class="site-description"><span>{% if page.subtitle %}{{ page.subtitle }}{% elsif page.title %}{% else %}{{ site.subtitle }}{% endif %}</span></p>
             </div>
         </div>
     </div>

@@ -6,11 +6,10 @@
 name: Datastrophe
 
 # Short bio or description (displayed in the header)
-shortdescription: Data Science blog
-description: Thoughts on data, visualisations and machine learning. Python > R.
+title: Data Science blog
+subtitle: Thoughts on data, visualisations and machine learning. Python > R.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars.githubusercontent.com/u/6808392?s=460&u=f85d70c9fb69cd0c45372f4681b7c24394a0b218&v=4
 headerimage: mosaic.jpg
 #
 # Flags below are optional
@@ -19,7 +18,7 @@ headerimage: mosaic.jpg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: camila.varo@gmail.com
+  email: camila.varo[at]gmail.com
   facebook:
   flickr:
   github: neperiana
