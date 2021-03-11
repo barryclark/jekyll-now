@@ -5,6 +5,7 @@ _site
 .jekyll-cache
 .bundle
 .sass-cache
+.tweet-cache
 Gemfile
 Gemfile.lock
 node_modules
