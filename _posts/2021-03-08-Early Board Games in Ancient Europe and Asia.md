@@ -4,14 +4,16 @@ author: Levi Blinder
 excerpt_separator: <!--more-->
 Title: Early Board Games in Ancient Europe and Asia
 ---
-<iframe src="https://uploads.knightlab.com/storymapjs/3300ccceabf8b03fdd288fe840c4eea8/dta-2-storymap/index.html" frameborder="0" width="100%" height="800"></iframe>
-<!--more-->
 
 ### What historical narrative are you trying to express?
 
 I am looking at some of the earliest examples of board games to get a sense for how and when board games developed in ancient Europe and Asia.
 
 One particularly interesting aspect of this historical narrative is looking at how board games in different locations arose for different purposes. In an analogous manner to how writing arose or was popularized in different ancient cultures for specific uses such as religion or accounting, many early board games were developed with specific non-entertainment goals in mind. I hope to be able to show both the existence of the motives as well as illustrate how aspects of the board game such as when it was created and the type of game were influenced by these motives and ultimately by the inventing society's culture.
+
+<!--more-->
+
+<iframe src="https://uploads.knightlab.com/storymapjs/3300ccceabf8b03fdd288fe840c4eea8/dta-2-storymap/index.html" frameborder="0" width="100%" height="800"></iframe>
 
 Another interesting part of the narrative to look at is how ideas and games spread between cultures. Many modern games have origins in older games, and we may be able to trace pathways by which these game ideas spread to get from the original older games to their new modern versions. One example of such a path comes from the modern game of Chess. The game was originally 'Chaturanga', a game that was played in India starting some time before 625 ACE (likely a few hundred years prior). This game very much had roots in military practice as the name itself "come from a battle formation mentioned in the Indian epic Mahabhrata, referring to four divisions of an army" ( [wikiwand](https://www.wikiwand.com/en/Chaturanga) ), and the game setup closely resembled an ancient battle formation. After the Islamic Sassanid empire conquered parts of Persia where Chaturanga was played, the game was adopted by Arabs as 'Shatranj' (the name arose from phonetic differences in the languages). Shatranj was closely studied and gave rise to many strategy manuals and even an official ranking system. Additionally, the game was spread to Spain through Islamic conquest, after which point it spread slowly northwards into Europe where it became modern day Chess.
 ^(I didn't include all of this on the story map since there was not enough info about any one game to use one story map tracing its history while focusing on ancient sources, but it would have been confusing to trace multiple histories on the same map)
