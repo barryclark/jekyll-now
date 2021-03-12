@@ -1,5 +1,7 @@
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+</style>
+
 html {
   font-size: 100%;
 }
@@ -16,7 +18,7 @@ body {
   padding: 0 10px;
   width: 100%;
 }
-.post {
+.entry {
   text-align: justify;
   font-family: 'Roboto Slab', serif;
 }
@@ -57,7 +59,7 @@ h4 {
 
 p {
   margin: 15px 0;
-  color: black;
+  color: #1C2833;
   text-indent: 5px;
   text-align: justify;
 }
@@ -68,13 +70,13 @@ a {
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #4183C4;
+  color: #707B7C;
 }
 .post blockquote {
   margin: 1.8em .8em;
-  border-left: 3px solid #5B2C6F;
+  border-left: 3px solid #BA4A00;
   padding: 0.1em 1em;
-  color: #5B2C6F;
+  color: #34495E;
   font-size: 22px;
   font-style: bold;
 }
