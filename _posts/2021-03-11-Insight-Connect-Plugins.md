@@ -83,10 +83,10 @@ def run(self, params):
 
     - Line 46: Your run() function in action.py should return a dictionary with Output.MESSAGE as the key, and your data as the value. The value should match whatever datatype you set in plugin.spec.yaml
 
-```
-def run(self, params):
-    <snip>
-    return {Output.MESSAGE: 'my data here'}
+    ```
+    def run(self, params):
+        <snip>
+        return {Output.MESSAGE: 'my data here'}
 ```
 
 
