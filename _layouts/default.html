@@ -31,6 +31,7 @@
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
             <a href="{{ site.baseurl }}/contact">Contact</a>
+            <a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
           </nav>
         </header>
       </div>
@@ -39,8 +40,6 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-
-    <a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
     
     <div class="wrapper-footer">
       <div class="container">
