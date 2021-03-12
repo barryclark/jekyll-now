@@ -186,7 +186,7 @@ img {
 .masthead {
  
   padding: 20px 0;
-  border-bottom: 1px solid #2c061f;
+  border-bottom: 1px solid var(--main-text-color);
 
   @include mobile {
     text-align: center;
