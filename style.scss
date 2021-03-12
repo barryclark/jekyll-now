@@ -13,14 +13,42 @@
 /* BASE RULES */
 /**************/
 
+html, html[data-theme="light"] {
+	--link-color: rgb(0, 112, 201);
+  --main-background-color: hsl(0, 0%, 90%);
+  --main-text-color: hsl(0, 0%, 20%);
+}
+
+html[data-theme="dark"] {
+  --link-color: rgb( 100, 210, 255);
+  --main-background-color: hsl(0, 0%, 20%);
+  --main-text-color: hsl(0, 0%, 85%); 
+}
+
+
+@media (prefers-color-scheme: dark) {
+    html, html[data-theme="dark"] {
+      --link-color: rgb( 100, 210, 255);
+    	--main-background-color: hsl(0, 0%, 20%);
+    	--main-text-color: hsl(0, 0%, 85%); 
+    }
+
+    html[data-theme="light"] {
+		  --link-color: rgb(0, 112, 201);
+    	--main-background-color: hsl(0, 0%, 90%);
+  	 --main-text-color: hsl(0, 0%, 20%);
+  } 
+}
+
+
 html {
   font-size: 100%;
 }
 
 body {
-  	background: #374045;
+  background-color: var(--main-background-color);
   font: 18px/1.4 "Computer Modern", Times, serif;
-  color: #d7c9d9;
+  color: var(--main-text-color);
 }
 
 .container {
@@ -32,7 +60,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Computer Modern", Times, serif;
-  color: #e1d89f;
+  color: var(--main-text-color);
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +89,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #e1d89f;
+  color: inherit;
 }
 
 p {
@@ -69,7 +97,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: var(--link-color);
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -117,7 +145,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: var(--main-text-color);
 }
 
 // Specify the color of the selection
@@ -152,7 +180,7 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-color: #2c061f;
+  background-color: var(--main-background-color);
 }
 
 .masthead {
@@ -194,7 +222,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: #e1d89f;
+  color: var(--main-text-color);
   cursor: pointer;
   font-family: "Computer Modern", Times, serif;
   font-weight: 300;
@@ -204,7 +232,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: #d7c9d9;
+  color: var(--main-text-color);
   font-size: 16px;
 
   @include mobile {
@@ -227,14 +255,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: #e1d89f;
+    ccolor: var(--link-color);
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: #e1d89f;
+      color: var(--link-color);
     }
   }
 }
@@ -258,7 +286,7 @@ nav {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: var(--main-text-color);
     font-size: 22px;
     font-style: italic;
   }
@@ -277,7 +305,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: #2c061f;
+  background-color: var(--main-background-color);
 }
 
 footer {
