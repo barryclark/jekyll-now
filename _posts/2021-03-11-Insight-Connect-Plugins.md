@@ -4,7 +4,7 @@ title: Insight Connect Plugins ; Part 1
 ---
 
 ## Intro
-Insight Connect is a pretty cool piece of kit from Rapid7. Their biggest sales pitch is "No Code" development of workflows. That sounds neat, but sometimes it's easier just to peel back a few layers and write your own plugins instead. Luckily, they've done a great job at [documenting](https://docs.rapid7.com/insightconnect/create-custom-plugins/). That said, I'm more of a "Cheat Sheet" kinda person... hence this post
+Insight Connect is a pretty cool piece of kit from Rapid7. Their biggest sales pitch is "No Code" development of workflows. That sounds neat, but sometimes it's easier just to peel back a few layers and write your own plugins instead. Luckily, they've done a great job at [documenting](https://docs.rapid7.com/insightconnect/create-custom-plugins/) it. That said, I'm more of a "Cheat Sheet" kinda person... hence this post
 
 ## Concepts
 Before I jump into the copy/pastes, it's helpful to understand a few things:
