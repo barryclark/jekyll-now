@@ -49,7 +49,7 @@ brew install icon-plugin
  ```
 
 
-2. [Download](git_url) a template plugin.spec.yaml file
+2. [Download](https://github.com/hashtagcyber/hashtagcyber.github.io/blob/master/_posts/sample-plugin.spec.yaml) a template plugin.spec.yaml file
 
 
 3. Update the file as needed:
