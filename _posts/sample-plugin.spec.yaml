@@ -1,0 +1,50 @@
+plugin_spec_version: v2
+extension: plugin
+products: [insightconnect]
+name: example # CHANGEME
+title: Example Plugin # CHANGEME
+description: Example plugin for testing # CHANGEME
+version: 1.0.0 # Update after each change or it won't upload
+vendor: community # CHANGEME
+status: []
+tags: []
+hub_tags:
+  use_cases: []
+  keywords: []
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-plugins/tree/master/example
+  license_url: https://github.com/rapid7/insightconnect-plugins/blob/master/LICENSE
+  vendor_url: http://www.rapid7.com
+enable_cache: true
+
+connection:
+  hostname: # In connection.py, access via params.get(Input.HOSTNAME)
+    title: Host
+    description: Enter the hostname
+    type: string # See https://docs.rapid7.com/insightconnect/plugin-spec/#base-types for supported types
+    required: true
+  port: # In connection.py, access via params.get(Input.PORT)
+    description: Enter the port
+    type: integer
+    default: 80
+    required: true
+  credentials: # In connection.py, access username via params.get(Input.CREDENTIALS).get("username")
+    description: Enter the username
+    type: credential_username_password
+    required: true
+
+actions:
+  my_action:
+    title: Say Goodbye # Referenced in the UI
+    description: Emit say goodbye message # Referenced in the UI
+    input:
+      name: # Referenced in code by params.get(Input.NAME)
+        type: string
+        description: Name to say goodbye to
+        required: true
+    output:
+      message: # action.py run() function should return a dict of: {Output.MESSAGE : "YOUR DATA HERE"}
+        title: Message
+        type: string
+        required: true
