@@ -273,7 +273,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .posts > .post:last-child {
@@ -284,7 +284,7 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid var(--main-text-color);
     padding: 0.1em 1em;
     color: var(--main-text-color);
     font-size: 22px;
@@ -303,8 +303,8 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid var(--main-text-color);
+  border-bottom: 1px solid var(--main-text-color);
   background-color: var(--main-background-color);
 }
 
