@@ -1,15 +1,20 @@
 ---
 layout: page
-title: About
+title: A propos
 permalink: /about/
 ---
 
-Some information about you!
 
-### More Information
+## Qui suis-je ?
 
 A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+## Mes projets
 
-[email@domain.com](mailto:email@domain.com)
+### Personnels
+
+### Universitaires
+
+## Contactez-moi
+
+[mathias.hanna3@gmail.com](mailto:mathias.hanna3@gmail.com)
