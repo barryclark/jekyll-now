@@ -1,7 +1,7 @@
 ---
 layout: page
 redirect_from: /cherylhung
-description: "Partnering with Cheryl Hung"
+description: "Partnering with Cheryl Hung as a speaker, advisor, consultant..."
 title: Partner with Cheryl
 ---
 
