@@ -243,7 +243,7 @@ img {
 nav {
   display: inline-flex;
   margin-top: 30px; // @TODO: Vertically middle align
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-family: $helvetica;
   font-size: $type-size-4;
 
@@ -255,7 +255,7 @@ nav {
   }
 
   a {
-    margin-right: 20px;
+    margin-right: 10px;
     margin-left: 20px;
     color: $darkGray;
     text-align: center;
