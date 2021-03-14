@@ -26,7 +26,7 @@ body {
 
 .container {
   margin: 0px auto;
-  max-width: 1100px;
+  max-width: 900px;
   padding: 10px;
   width: 100%
 }
@@ -177,9 +177,14 @@ img {
   margin-bottom: 10px;
 }
 
+.banner-container {
+  margin: 0px auto;
+  max-width: 1600px;
+  width: 100%
+}
+
 .masthead {
   padding: 10px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -187,10 +192,10 @@ img {
 }
 
 .site-banner {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 
   @include mobile {
-    float: none;
+    float: center;
     display: block;
   }
 

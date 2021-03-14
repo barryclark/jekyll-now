@@ -16,23 +16,21 @@
 
   <body>
     <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
+      <header class="masthead clearfix">
+        <div class="container">
           <nav>
             <a href="{{ site.baseurl }}/">STUDENT WORK</a>
             <a href="{{ site.baseurl }}/course-description">SYLLABUS</a>
             <a href="{{ site.baseurl }}/final-projects">FINAL PROJECTS</a>
             <a href="{{ site.baseurl }}/contributors">CONTRIBUTORS</a>
           </nav>
+        </div>
 
+        <div class="banner-container">
           <a href="{{ site.baseurl }}/" class="site-banner"><img src="{{ site.baseurl }}/images/HUM331.jpg" /></a>
+        </div>
 
-          <div class="site-info">
-            <h2 class="site-description"><a href="{{ site.baseurl }}/">{{ site.description }}</a></h2>
-          </div>
-
-        </header>
-      </div>
+      </header>
     </div>
 
     <div id="main" role="main" class="container">
@@ -42,7 +40,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+          {{ site.description }}
         </footer>
       </div>
     </div>

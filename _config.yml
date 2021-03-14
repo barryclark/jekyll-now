@@ -6,11 +6,11 @@
 name: A History of Words
 
 # Short bio or description (displayed in the header)
-description: HUM 331, Princeton University, Spring 2021
+description: Built on Jekyll Now for HUM 331 at Princeton University, Spring 2021
 
 
 footer-links:
-  github: hum-331-princeton
+  github: ###
 
 
 disqus:
