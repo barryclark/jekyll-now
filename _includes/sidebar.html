@@ -1,0 +1,23 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item" class="site-description">
+      {{ site.description }}
+  </div>
+
+  <nav class="sidebar-nav">
+    <h2>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/">HOME</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/contributors">CONTRIBUTORS</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/course-description">SYLLABUS</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/final-projects">FINAL PROJECTS</a>
+    </h2>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    </p>
+  </div>
+</div>

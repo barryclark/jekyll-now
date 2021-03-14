@@ -14,38 +14,31 @@
 
   </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <header class="masthead clearfix">
-        <div class="container">
-          <nav>
-            <a href="{{ site.baseurl }}/">STUDENT WORK</a>
-            <a href="{{ site.baseurl }}/course-description">SYLLABUS</a>
-            <a href="{{ site.baseurl }}/final-projects">FINAL PROJECTS</a>
-            <a href="{{ site.baseurl }}/contributors">CONTRIBUTORS</a>
-          </nav>
-        </div>
+  <body class="theme-base-0d">
 
-        <div class="banner-container">
-          <a href="{{ site.baseurl }}/" class="site-banner"><img src="{{ site.baseurl }}/images/HUM331.jpg" /></a>
-        </div>
+    {% include sidebar.html %}
 
-      </header>
+    <div class="banner-container">
+      <a href="{{ site.baseurl }}/" class="site-banner"><img src="{{ site.baseurl }}/images/HUM331.jpg" /></a>
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+    <div class="wrap">
+        <div id="main" role="main" class="container">
+          {{ content }}
+        </div>
+      </div>
 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {{ site.description }}
+          <p>Built with Jekyll Now & Lanyon on GitHub Pages.</p>
         </footer>
       </div>
     </div>
 
     {% include analytics.html %}
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
+    <script src='{{ site.baseurl}}/script.js'></script>
   </body>
 </html>
