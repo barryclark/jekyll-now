@@ -1,4 +1,0 @@
-# Replaces default mkmf dependencies. Default mkmf dependencies include all libruby headers.
-# We don't need libruby and some of these headers are missing on JRuby (breaking compilation there).
-$(OBJS): $(HDRS)
-
