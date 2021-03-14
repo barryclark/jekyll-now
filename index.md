@@ -1,6 +1,5 @@
 ---
 layout: default
-title: HUM 331 - A History of Words
 ---
 
 ## How do we tell a history of communications technologies with technology?
