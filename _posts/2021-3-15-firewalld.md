@@ -8,6 +8,6 @@ firewalld should be used for simple scenarios while nftables should be used for 
 firewalld rules are translated to nftable rules while nftable rules are not rewritten back to firewalld configs.
 
 ### Reference 
-https://firewalld.org/documentation/
-https://fedoraproject.org/wiki/Firewalld
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/using-and-configuring-firewalld_configuring-and-managing-networking 
+[Link](https://firewalld.org/documentation/)
+[Link](https://fedoraproject.org/wiki/Firewalld)
+[Link](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/using-and-configuring-firewalld_configuring-and-managing-networking )
