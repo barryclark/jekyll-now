@@ -20,11 +20,13 @@
 
 html {
   font-size: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
 	background: $white;
-  font: 16px/1.4 $helvetica;
+  font: 18px/1.6 $helvetica;
   font-weight: 300;
   color: $gray;
 }
@@ -41,12 +43,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: $darkGray;
 
-  line-height: 1.5;
+  line-height: 1.2;
   margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 
@@ -437,3 +439,4 @@ a.sidebar-nav-item:focus {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+@import "variables";
