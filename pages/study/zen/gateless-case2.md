@@ -147,13 +147,11 @@ Why did old Paichang have to wait for such a long time, go through so many lives
 
 We want Paichang to be true when he says _"such a person does not evade"_ karmic law. That should be the good answer to the question, according to this account, right? But Paichang seems as wrong as Old Paichang. Because of that, Paichang gets a slap in the face.
 
-So, Sudden enlightenment is not more true, as a view, than gradual?
+So, Sudden enlightenment is not more true, as a view, than gradual? (_a thousand mistakes, ten thousand mistakes_?)
 
 If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. Could sudden enlightenment be "less wrong" than gradual enlightenment?
 
 Still, Huang-po's slap suggests that none of those answers are actually right. What to make of this?
-
-(Dogen would probably point out that it's an answer made of words, or that it's one view distinct from others, so it's a wrong view. He says _"If you fall into the words and ideas [...] you too will be a fox spirit"_, in comments of case 102)
 
 
 ## A read about the ritual
@@ -162,9 +160,9 @@ Ritual and liturgy, is that the answer to the question? Is the ritual of cremati
 
 > Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
 
-Why does old Paichang request a funeral?
+Why does old Paichang even request a funeral? What's the purpose of it from the perspective of Enlightenment?
 
-Is the ritual requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect? Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured.
+Is the ritual requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect? Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured?
 
 > "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
 
@@ -217,9 +215,9 @@ The answer is a distraction, a reflection in the water. The answer old Paichang 
 
 ## Dogen's slap
 
-At this point in my exploration, after a couple of months, I read Dogen's commentary on this case. It is the chapter of the Shobogenzo titled "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\].
+At this point in my exploration, after a couple of months, I read Dogen's commentary on this case. There are two chapters of the Shobogenzo, one titled "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\], the other "On the Absolute Certainty of Cause and Effect" (_Jinshin Inga_) \[[pdf](http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/088jinshiInga.pdf)\].
 
-Here's some excerpts I took right in the face:
+### Commentary from _Daishugyo_
 
 > If being reduced to the state of a wild fox was the inevitable consequence of answering a trainee’s question inaccurately, then how many thousands of myriad times would the Rinzais and Tokusans of more recent times, along with their disciples, have been reduced to being wild foxes as a consequence? And apart from them, senior monks who have made mistakes over the past two or three hundred years would certainly have become innumerable foxes.
 
@@ -227,7 +225,7 @@ Here's some excerpts I took right in the face:
 
 > In the old man’s remark, “I was reduced to being reborn as a wild fox for five hundred lives,” what is it that was reborn and what was that reduced to? At the very moment when he was reborn as a wild fox, what form did his previous universe now take on? How is the phrase ‘not being subject to causality’ related to his being reborn five hundred times? And where did the pelt that was now lying beneath a rock on the other side of the mountain come from?
 
-Some notes:
+Some notes for myself:
 - How could someone dare to judge old and new Paichang's answer as right or wrong?  
 - How could there be any causality between old Paichang answering the question and his being reborn as a fox?
 - How could there be any causality between Paichang answering the question and old Paichang being enlightened?
@@ -235,6 +233,19 @@ Some notes:
 - How does old Paichang even know he was reborn five hundred lives as a fox? How would a fox know anything about their rebirths? Does the fox know it with the same mind that answered this damning questions?
 - Is this whole case just completely wrong? Essentially wrong, being a text, being a **story** with all those causal relationships pointed out, while there are none in the eye of realization?
 
+### Commentary from _Jinshin Inga_
+
+In this one, Dogen clearly considers Paichang's answer ("he is not blind to cause and effect") as the right answer to the question.
+
+> The folks who are the most in the dark are those who do not know that the teaching of not being subject to cause and effect is a false view.
+
+> The later \[Paichang\]’s principle of not being blind to cause and effect means not ignoring the presence of causality. Hence, the underlying principle is clear: we feel the effects of the causes that we put into action. In sum, if you have not clarified what the Buddha’s Dharma is, do not go about recklessly preaching for the sake of the worldly and the celestial. 
+
+>  Undoubtedly, those who deny cause and effect will, in their fierce pursuit of profits, give rise to false views and thereby become people who sever their own good spiritual roots. 
+
+> To summarize, the principle of cause and effect is quite clear, and it is totally impersonal: those who fabricate evil will fall into a lower state, whereas those who practice good will rise to a higher state, and without the slightest disparity.
+
+>  If you deny causality as a result \[not clearing out about cause and effect\], you will experience excessive misfortune, since you would be as ignorant as an ox or a horse. Even if you have not committed any evil act other than denying cause and effect, the poison of this view will immediately be terrible.
 
 ## Composing an answer?
 
@@ -253,6 +264,9 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- [Kyogen](https://en.wikipedia.org/wiki/Hsiang-yen_Chih-hsien) heard the tile hit the bamboo and was enlightened. When the tile fell back on the floor, what was heard? The story doesn't say a word on this.
+
+\- Does an enlightened person fall under the law of cause and effect or not?  
+\- If they cling to the notion of a person, they fall under the law of cause and effect.
 
 ### Answers trying to be stupid
 
