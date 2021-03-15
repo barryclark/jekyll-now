@@ -14,7 +14,7 @@ digital "tools" that they learn over the semester. As they post, they are learni
 build a static site (like this one) so that they can share their in-depth research on everything from campus activism to
 nineteenth-century travelogues to early Japanese board games, taking advantage of the possibilities of digital storytelling
 and digital analytical methodologies. Check back in May to see those projects, but in the mean time, scroll down to read posts
-featuring their intermediate research, or toggle the menu at the top left check out their bios or to read the course syllabus.
+featuring their intermediate research, or toggle the menu at the top left to check out their bios or to read the course syllabus.
 
 ---
 <br>
