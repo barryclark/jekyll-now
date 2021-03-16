@@ -14,7 +14,7 @@ I partner with companies in a personal capacity, [get in touch](/about) if you a
 
 ## Endorsements
 
-<img src="/cherylhung/christoph-buchli.jpg" alt="Christoph Buchli, Founder and CTO of Helio" class="about-image"/>
+<img src="/partner/christoph-buchli.jpg" alt="Christoph Buchli, Founder and CTO of Helio" class="about-image"/>
 
 [Christoph Buchli](https://www.linkedin.com/in/chbuchli/), Founder and CTO of [Helio](https://helio.exchange), March 2021:
 
