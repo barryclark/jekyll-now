@@ -143,7 +143,7 @@
    pct = e.features[0].properties.percent*100
    pct = pct.toFixed(2);
 
-    var description = `<h3>`+ `Zip Code: ` + e.features[0].properties.zip_code + `</h3>` + `<h4>` + `<b>` + `Fully Vaccinated: ` + `</b>` + e.features[0].properties.People_Ful + `</h4>` + `<h4>` + `<b>` + `Population (2016): ` + `</b>` + e.features[0].properties.seven +`</h4>` + `<h4>` + `<b>` + `Percent Vaccinated: ` + `</b>` +pct + `%` +`</h4>`; 
+    var description = `<h3>`+ `Zip Code: ` + e.features[0].properties.ZIP + `</h3>` + `<h4>` + `<b>` + `Fully Vaccinated: ` + `</b>` + e.features[0].properties.People_Ful + `</h4>` + `<h4>` + `<b>` + `Population (2016): ` + `</b>` + e.features[0].properties.seven +`</h4>` + `<h4>` + `<b>` + `Percent Vaccinated: ` + `</b>` +pct + `%` +`</h4>`; 
 
       new mapboxgl.Popup()
        .setLngLat(e.lngLat)
