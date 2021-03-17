@@ -8,7 +8,7 @@ An interactive map of vaccinations by ZIP code in Texas.
 
 <!--more-->
 
-Updated: March 2nd, 2021
+Updated: March 15th, 2021
 
 <iframe src='/maps/zip-code-map.html'
         width='100%' height='400px'>
