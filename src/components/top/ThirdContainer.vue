@@ -1,7 +1,40 @@
 <template>
   <div class="third-container relative bg-white overflow-hidden row">
     <main class='lg:container flex items-center'>
-      <img src="../../assets/pc_02.png" />
+
+      <hooper :settings="hooperSettings">
+      <slide>
+        <div class="images img1">
+          
+          <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
+        </div>
+      </slide>
+      <slide>          
+        <div class="images img2">
+          
+          <video src="../../assets/loop_1/2.mp4" loop autoplay controls></video>
+        </div> 
+      </slide>
+      <slide>          
+        <div class="images img3">
+          
+          <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
+        </div>       
+      </slide>
+      <slide>  
+        <div class="images img4">
+          
+          <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
+        </div> 
+      </slide>
+      <slide>     
+        <div class="images img5">
+          
+          <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
+        </div>
+      </slide>
+    </hooper>
+
       <div class="container hero-box">
         <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
           参加方法
@@ -42,4 +75,80 @@ main { width: 100%; }
   height: 640px;
   width: 100%;
 }
+
+
+
+video {
+  max-height: 320px;
+  width: 90%;
+}
+.images {
+  height: 320px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+
+}
+.img1 {
+  background: lightblue;
+}
+.img2 {
+  background: lightblue;
+}
+.img3 {
+  background: coral;
+}
+.img4 {
+  background: lightgreen;
+}
+.img5 {
+  background: pink;
+}
+h2 {
+  color: #fff
+}
+.hooper {
+  height: 640px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 320px;
+}
 </style>
+
+<script>
+
+    import { Hooper, Slide } from 'hooper';
+    import 'hooper/dist/hooper.css';
+
+    export default {
+      name: 'App',
+      components: {
+        Hooper,
+        Slide
+      },
+        data() {
+            return {
+                hooperSettings: {
+                    itemsToShow: 1,
+                    infiniteScroll: true,
+                    vertical: true,
+                    centerMode: true,
+                    autoPlay: true,
+                    playSpeed: 3500,
+                    breakpoints: {
+                      480: {
+                        itemsToShow: 1.75
+                      },
+                      640: {
+                        itemsToShow: 2.3
+                      }
+                    }
+                }   
+            }
+        }
+    };
+
+</script>

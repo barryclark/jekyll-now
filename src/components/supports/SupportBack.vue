@@ -1,13 +1,18 @@
 <template id="app">
   <div class="support_back-container relative bg-white overflow-hidden row">
-    
+    <main class='lg:container flex items-center'>
       <div class="container support_back-box">
+      <div>
         <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
-          ご支援・ご協力のお願い
+          ご支援・ご協力のお願い<br>
         </t-tag>
-        <t-tag tag-name="p" variant="body" class='pt-5 text-center text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
+        <t-tag tag-name="p" variant="body" class='py-8 text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
+          ご支援・ご協力をお願い致します。<br>
+        </t-tag>
+        <t-tag tag-name="p" variant="body" class='pt-5 text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
           ご支援・ご協力をお願い致します。
         </t-tag>
+      </div>
       </div>
     <hooper :settings="hooperSettings">
       <slide>
@@ -41,40 +46,54 @@
         </div>
       </slide>
     </hooper>
-    
+    </main>
   </div>
 </template>
 
-<style>
+<style scoped>
 
-div.support_back-box {
+.markup-red {
+  color: #F2718A;
+}
+
+
+main { width: 100%; }
+.support_back-box {
   position: absolute;
   z-index: 2;
-  height: 100%;
+  height: 640px;
   width: 30%;
   left: 0;
   background: #fff;
-  text-align: center;
-  
+  text-align: center; 
 }
-.support_back-container {
+.support_back-box div{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:100%;
+}
 
-  background: #FFF25A;
+.support_back-container {
   display: flex;
-  justify-content: center;
+  align-items: center;
   height: 640px;
   width: 100%;
+  
 }
 video {
+  max-height: 320px;
   width: 90%;
 }
 .images {
-  height: 640px;
-  width: 100%;
+  height: 320px;
+  width: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+
 }
 .img1 {
   background: lightblue;
@@ -95,7 +114,10 @@ h2 {
   color: #fff
 }
 .hooper {
-  height: 640px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 </style>
 
@@ -113,26 +135,22 @@ h2 {
         data() {
             return {
                 hooperSettings: {
+                    itemsToShow: 1,
                     infiniteScroll: true,
                     centerMode: true,
                     autoPlay: true,
                     playSpeed: 3500,
                     breakpoints: {
-                        2400: {
-                            itemsToShow: 5
-                        },
-                        1800: {
-                            itemsToShow: 4
-                        },
-                        1500: {
-                            itemsToShow: 3
-                        },
-                        1100: {
-                            itemsToShow: 2.5
-                        },
-                        0: {
-                            itemsToShow: 1.5
-                        }
+                      480: {
+                        itemsToShow: 1.75
+                      },
+                      640: {
+                        itemsToShow: 2.3
+                      },
+                      1280: {
+                        itemsToShow: 4
+                      }
+
                     }
                 }   
             }
