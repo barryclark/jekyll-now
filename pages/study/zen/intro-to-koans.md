@@ -130,6 +130,7 @@ Finally, reading the koan might suggest one of the participant is right, and the
 - <a name="dumoulin1979">(Dumoulin, 1979)</a> - Heinrich Dumoulin, Zen Enlightenment - Origins and Meaning, 1979, ch 7.
 - <a name="aitken1990">(Aitken, 1990)</a> - [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/search?q=robert+aitken+gateless+barrier).
 - <a name="loori2005">(Loori, 2005)</a> - John Daido Loori, The True Dharma Eye - Zen Master Dogen's Three Hundred Koans, 2005.
+- <a name="nishijima2003">(Nishijima, 2003)</a> - Gudo Nishijima, Master Dogen's Shinji Shobogenzo, in particular [Introduction (pp. iv-v)](https://terebess.hu/zen/dogen/ShinjiIntro.pdf)
 - <a name="suzuki1962">(Suzuki, 1962)</a> - Daisetz T. Suzuki, The Essentials of Zen Buddhism, in particular chapters:
   - ch III.4 - Factors determining the Zen experience
   - ch III.5 - The psychological antecedent and the content of the Zen experience

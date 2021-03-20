@@ -47,8 +47,9 @@ This case can be found as:
 _"Such a person does not evade the law of cause and effect"_ is elsewhere rendered as:
 - _"The law of cause and effect cannot be obscured."_ (Koun Yamada Roshi, The Gateless Gate, 1979)
 - _"He is not blind to cause and effect."_ (Thomas Cleary, Book of Serenity, Case 8, 2005)
-- _"Don't ignore cause and effect"_ (Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005)
 - _"He is not deluded about cause and effect"_ (J.C. Cleary, Wumen's Gate, 2005)
+- _"Do not be unclear about cause and effect."_ (Gudo Nishijima, Master Dogen's Shinji Shobogenzo, Book II case 2, 2003)
+- _"Don't ignore cause and effect"_ (Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005)
 
 Book of Serenity Case 8 has some comments/notes/interjections following the case. Here's a few:
 - _"The old man was enlightened at these words - Fox drool is still there."_
