@@ -22,10 +22,18 @@ main { width: 100%; }
   width: 640px;
 }
 .support_second-container {
-  background: #FFF25A;
   display: flex;
   justify-content: center;
   height: 640px;
   width: 100%;
+
+  background-image: linear-gradient(0deg, rgba(248,179,00, 0.5) 25%, transparent 25%),
+                    linear-gradient(-90deg, rgba(248,179,00, 0.5) 25%, transparent 25%),
+                    linear-gradient(rgba(255,242,90, 0.5) 25%, transparent 25%),
+                    linear-gradient(90deg, rgba(255,242,90, 0.5) 25%, transparent 25%),
+                    linear-gradient(90deg, rgba(105,193,159, 0.5) 50%, transparent 50%),
+                    linear-gradient(rgba(255,242,90, 0.5) 50%, transparent 50%),
+                    linear-gradient(-90deg, rgba(248,179,00, 0) 50%, transparent 50%);
+  background-size: 240px 240px;
 }
 </style>

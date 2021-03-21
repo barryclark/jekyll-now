@@ -147,6 +147,9 @@ h2 {
                       640: {
                         itemsToShow: 2.3
                       },
+                      1040: {
+                        itemsToShow: 3
+                      },
                       1280: {
                         itemsToShow: 4
                       }
