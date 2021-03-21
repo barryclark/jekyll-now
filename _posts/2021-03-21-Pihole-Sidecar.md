@@ -14,7 +14,8 @@ Starting lighttpd
 2021-03-21 18:18:35: (server.c.1461) Opening errorlog failed. Going down.
 ```
 
-### The HackyFix
+### The Quick Fix
+***Note***: K8s probably has a better native solution to ensure containers have write access to mountpaths... but this was easy.
 1. Create the directories on the host
 ```
 mkdir /containers/pihole/logs/lighttpd
