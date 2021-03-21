@@ -85,6 +85,11 @@ main { width: 100%; }
 video {
   max-height: 320px;
   width: 90%;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+video:hover {
+  filter: none;
 }
 .images {
   height: 320px;

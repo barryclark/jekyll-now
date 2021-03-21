@@ -16,6 +16,11 @@
       <div class="col s8 flex justify-end">
         <ul class="col valign-wrapper">
           <li>
+            <router-link class="router-link" to="/">
+              トップ
+            </router-link>
+          </li>
+          <li>
             <router-link class="router-link" to="/staffs">
               スタッフ紹介
             </router-link>
@@ -100,6 +105,11 @@
           >
             <ul id="test">
               <li>
+                <router-link class="router-link" to="/">
+                  トップ
+                </router-link>
+              </li>
+              <li>
                 <router-link class="router-link" to="/staffs">
                   スタッフ紹介
                 </router-link>
@@ -125,7 +135,7 @@
                 </router-link>
               </li>
               <li>
-                <a href="https://lin.ee/vhWQhPP" style="margin-left: -30px;">
+                <a href="https://lin.ee/vhWQhPP">
                   <img
                     class="line-img"
                     src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
@@ -210,11 +220,13 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 .router-link {
   color: #000;
+  white-space: nowrap;
 }
+
 .header {
   background: url("../assets/back_01.png") repeat center center;
   background-color: #fff;
@@ -227,15 +239,16 @@ li {
 .inner-icon {
   margin: 12px;
 }
-.line-img {
+img.line-img {
   height: 32px;
-}
+  }
 .square-icon {
   height: 48px;
   width: 48px;
 }
 .title {
   font-size: 2rem;
+  white-space: nowrap;
 }
 
 /* ハンバーガーメニュースタイル */

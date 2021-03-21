@@ -2,6 +2,12 @@
   <footer class="footer">
     <nav>
       <ul class="row valign-wrapper">
+        <div class="container">
+        <li>
+          <router-link class="router-link" to="/">
+            トップ
+          </router-link>
+        </li>
         <li>
           <router-link class="router-link" to="/staffs">
             スタッフ紹介
@@ -32,13 +38,13 @@
             <img class="valign-wrapper line-img" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
           </a>
         </li>
+        </div>
       </ul>
       <div class="row s6 valign-wrapper">
         <img class="circle left square-icon" alt="corder dojo tachikawa" src="../assets/dojo-logo.jpg" />
         <h6 class='copyright'>C2020 Corder Dojo Tachikawa</h6>
       </div>
     </nav>
-
   </footer>
 </template>
 
@@ -85,6 +91,7 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+  white-space: nowrap;
 }
 a {
   color: #42b983;
@@ -102,6 +109,7 @@ a {
 }
 .line-img {
   height: 32px;
+  margin: 12px 10px;
 }
 .router-link {
   color: #000;
@@ -112,5 +120,11 @@ a {
 }
 .copyright {
   font-size: 1em;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 </style>
