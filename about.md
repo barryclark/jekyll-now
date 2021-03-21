@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Graduated from Teesside University with BSc Computer Science second class honors devision (2:1) in 2014. Currently working as Java Developer. Always looking to network with bright, intelligent and engaging individuals who share common interests. Please feel free to reach out!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+-https://github.com/kanastasov
 
+-https://www.linkedin.com/in/kanastasov/
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[kirilanastasoff@gmail.com](mailto:kirilanastasoff@gmail.com)
