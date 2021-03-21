@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pihole-deployment
+  namespace: pihole-test
+  labels:
+    app: pihole
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pihole
+  template:
+    metadata:
+      labels:
+        app: pihole
+    spec:
+      containers:
+      - name: pihole-logging
+        image: busybox
+        command: ["sh","-c","tail -f /var/log/pihole.log"]
+        volumeMounts:
+        - name: pihole-logs
+          mountPath: /var/log
+      - name: pihole
+        image: pihole/pihole
+        env:
+        - name: TZ
+          valueFrom:
+            configMapKeyRef:
+              name: pihole-env
+              key: TZ
+        - name: DNS1
+          valueFrom:
+            configMapKeyRef:
+              name: pihole-env
+              key: DNS1
+        - name: DNS2
+          valueFrom:
+            configMapKeyRef:
+              name: pihole-env
+              key: DNS2
+        ports:
+        - name: web
+          containerPort: 80
+        - name : dns
+          protocol : UDP
+          containerPort: 53
+        volumeMounts:
+        - name: pihole-adlists
+          mountPath: /etc/pihole/adlists.list
+          subPath: adlists.list
+        - name: pihole-regex
+          mountPath: /etc/pihole/regex.list
+          subPath: regex.list
+        - name: pihole-logs
+          mountPath: /var/log
+      volumes:
+        - name: pihole-adlists
+          configMap:
+            name: pihole-adlists
+        - name: pihole-regex
+          configMap:
+            name: pihole-regex
+        - name: pihole-logs
+          hostPath:
+            path: /containers/pihole/logs
