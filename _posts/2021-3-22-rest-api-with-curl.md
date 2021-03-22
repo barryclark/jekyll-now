@@ -1,43 +1,5 @@
-https://httpbin.org/
-
-From https://developer.wordpress.org/rest-api/glossary/
-HTTP verbs represent the type of action a HTTP client might perform against a resource. These are:
-HEAD 
-GET
-POST
-PUT
-DELETE 
-PATCH
-
-HTTP response status code categories
-
-Informational responses (100–199)
-Successful responses (200–299)
-Redirects (300–399)
-Client errors (400–499)
-Server errors (500–599)
-
-Popular status codes
-200 OK
-301 Moved Permanently
-404 Not Found
-410 Gone (permanent form of 404)
-500 Internal Server Error
-503 Service Unavailable
-
-All popular ones are available at https://en.wikipedia.org/wiki/List_of_HTTP_status_codes and https://developer.mozilla.org/en-US/docs/Web/HTTP/Status 
-
-For verbose output
-curl -v http://www.example.com/
-
-To output to a file
-curl https://reqres.in/api/users > users.json
-curl https://reqres.in/api/users -o users.json
-
-
-GET Request
-
-The default HTTP method is actually a Get
+curl is generally invoked with just a URL. This is basically a GET request  
+```
 # curl -X GET "https://httpbin.org/get"
 {
   "args": {},
@@ -51,9 +13,10 @@ The default HTTP method is actually a Get
   "url": "https://httpbin.org/get"
 }
 #
+```
 
-To execute GET method with parameter
-# curl httpbin.org/get?user=tom
+To execute GET method with parameter(s)  
+`# curl httpbin.org/get?user=tom
 {
   "args": {
     "user": "tom"
@@ -67,7 +30,7 @@ To execute GET method with parameter
   "origin": "49.207.217.136",
   "url": "http://httpbin.org/get?user=tom"
 }
-#
+#`
 
 Use double quotes when using & to include more than one parameter
 # curl "httpbin.org/get?user=tom&type=cat&color=blue"
@@ -87,6 +50,14 @@ Use double quotes when using & to include more than one parameter
   "url": "http://httpbin.org/get?user=tom&type=cat&color=blue"
 }
 #
+For verbose output
+curl -v http://www.example.com/
+
+To output to a file
+curl https://reqres.in/api/users > users.json
+curl https://reqres.in/api/users -o users.json
+
+
 
 POST Request (plain)
 Post is used to add a new content or 'create a resource in the server'.
@@ -253,4 +224,34 @@ Use -v to see verbose output including all headers
 
 
 Use https://httpbin.org/ to test basic api functionality. It even provides a docker image to run locally. 
+
+
+https://httpbin.org/
+
+From https://developer.wordpress.org/rest-api/glossary/
+HTTP verbs represent the type of action a HTTP client might perform against a resource. These are:
+HEAD 
+GET
+POST
+PUT
+DELETE 
+PATCH
+
+HTTP response status code categories
+
+Informational responses (100–199)
+Successful responses (200–299)
+Redirects (300–399)
+Client errors (400–499)
+Server errors (500–599)
+
+Popular status codes
+200 OK
+301 Moved Permanently
+404 Not Found
+410 Gone (permanent form of 404)
+500 Internal Server Error
+503 Service Unavailable
+
+All popular ones are available at https://en.wikipedia.org/wiki/List_of_HTTP_status_codes and https://developer.mozilla.org/en-US/docs/Web/HTTP/Status 
 
