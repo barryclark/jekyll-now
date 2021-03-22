@@ -14,6 +14,7 @@ import SupportSecondContainer from './components/supports/SupportSecondContainer
 import SupportBack from './components/supports/SupportBack.vue'
 import Graph from './components/staffs/Graph.vue'
 import Members from './components/staffs/Members.vue'
+import Contact from './components/contacts/Form.vue'
 
 Vue.use(Router)
 
@@ -65,7 +66,7 @@ export default new Router({
     {
       path: '/contact',
       name: 'contact',
-      component: App
+      component: Contact
     },
     {
       path: '/Product',
