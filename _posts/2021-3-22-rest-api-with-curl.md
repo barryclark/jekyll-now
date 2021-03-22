@@ -1,4 +1,6 @@
-curl is generally invoked with just a URL. This is basically a GET request  
+### GET
+
+curl is generally invoked with just the URL. This is basically an HTTP GET request:   
 ```
 # curl -X GET "https://httpbin.org/get"
 {
@@ -15,8 +17,9 @@ curl is generally invoked with just a URL. This is basically a GET request
 #
 ```
 
-To execute GET method with parameter(s)  
-`# curl httpbin.org/get?user=tom
+To execute the GET method with parameter(s):  
+```
+# curl httpbin.org/get?user=tom
 {
   "args": {
     "user": "tom"
@@ -30,9 +33,11 @@ To execute GET method with parameter(s)
   "origin": "49.207.217.136",
   "url": "http://httpbin.org/get?user=tom"
 }
-#`
+#
+```
 
 Use double quotes when using & to include more than one parameter
+```
 # curl "httpbin.org/get?user=tom&type=cat&color=blue"
 {
   "args": {
@@ -50,18 +55,12 @@ Use double quotes when using & to include more than one parameter
   "url": "http://httpbin.org/get?user=tom&type=cat&color=blue"
 }
 #
-For verbose output
-curl -v http://www.example.com/
+```
 
-To output to a file
-curl https://reqres.in/api/users > users.json
-curl https://reqres.in/api/users -o users.json
+### POST 
 
-
-
-POST Request (plain)
-Post is used to add a new content or 'create a resource in the server'.
-
+Post is used to add a new content or 'create a resource in the server'. To perform a normal (no JSON) POST request:  
+```
 # curl -X POST "https://httpbin.org/post" -d "user=tom&type=cat&color=blue"
 {
   "args": {},
@@ -85,6 +84,7 @@ Post is used to add a new content or 'create a resource in the server'.
   "url": "https://httpbin.org/post"
 }
 #
+```
 
 POST Request (JSON content)
 # curl -X POST "https://httpbin.org/post" -H "Content-Type: application/json" -d '{"user":"tom","type":"cat","color":"blue"}'
@@ -110,6 +110,15 @@ POST Request (JSON content)
   "url": "https://httpbin.org/post"
 }
 #
+For verbose output
+curl -v http://www.example.com/
+
+To output to a file
+curl https://reqres.in/api/users > users.json
+curl https://reqres.in/api/users -o users.json
+
+
+
 Note here the use of double quotes for the json elements and the single quote for the entire json content together.
 
 PUT Request 	
