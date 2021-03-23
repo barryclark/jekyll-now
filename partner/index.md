@@ -10,7 +10,7 @@ I partner with companies in a personal capacity, [get in touch](/about) if you a
 1. Keynote speaker, panelist, host for tech events
 2. Advisor on developer marketing, open source and community strategy
 3. Connecting VCs (venture capital) and startups, particularly deep tech in Europe
-4. Consulting services on cloud native content marketing, customer success and community building
+4. Consulting services on cloud native content marketing and developer community building
 
 ## Endorsements
 
