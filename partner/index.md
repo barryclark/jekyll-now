@@ -14,6 +14,8 @@ I partner with companies in a personal capacity, get in touch if you are looking
 
 <script type="text/javascript" src="https://form.jotformeu.com/jsform/92682794245368"></script>
 
+
+
 <img src="/partner/christoph-buchli.jpg" alt="Christoph Buchli, Founder and CTO of Helio" class="about-image"/>
 
 > Cheryl joined [Helio](https://helio.exchange)'s advisory board in early 2020 to support us with developer relations, community building and open source strategy. Ever since, we've had regular exchange and wouldn't want to miss it ever again!
@@ -26,4 +28,4 @@ I partner with companies in a personal capacity, get in touch if you are looking
 >
 >Overall, working with Cheryl is very pleasant and enjoyable and she makes absolutely sure to be conscious about everyones very limited time, so we always got the most out of our sessions with her.
 
-[Christoph Buchli](https://www.linkedin.com/in/chbuchli/), Founder and CTO of [Helio](https://helio.exchange), March 2021:
+- [Christoph Buchli](https://www.linkedin.com/in/chbuchli/), Founder and CTO of [Helio](https://helio.exchange), March 2021
