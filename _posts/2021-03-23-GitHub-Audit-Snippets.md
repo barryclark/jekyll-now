@@ -2,7 +2,7 @@
 layout: post
 title: Github Audit Snippets
 ---
-# Github Audit Python Snippets
+### Summary
 It blows my mind that I couldn't already find this in a library somewhere. Enterprises need a way to:
 - Tail audit logs (users are added/commits are made/plugins are authorized)
 - Get the corporate email of a github user within the org
