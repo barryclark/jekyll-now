@@ -80,6 +80,7 @@ Notes:
 These two queries allow us to page using nodes.
 - Curly braces are doubled to allow format strings to work.
     - If you want to ditch the format strings, replace them with singles.
+    - Fun Fact: Github pages (well, Jekyll) doesn't like curly braces either... here's a neat [blog](https://blog.slaks.net/2013-06-10/jekyll-endraw-in-code/) on the problem
 - Use the first query when you don't have a cursor (First call to graph)
 - Use the paged query on subsequent calls to reduce duplicates
 
@@ -87,6 +88,7 @@ These two queries allow us to page using nodes.
 <summary> First Query </summary>
 
 ```
+{% raw %}
 solo_query ='''query {{
   organization(login: "{org}") {{
     samlIdentityProvider {{
@@ -112,6 +114,7 @@ solo_query ='''query {{
   }}
 }}
 '''
+{% endraw %}
 ```
 </details>
 
@@ -119,6 +122,7 @@ solo_query ='''query {{
 <summary> Paged Query </summary>
 
 ```
+{% raw %}
 paged_query ='''query {{
   organization(login: "{org}") {{
     samlIdentityProvider {{
@@ -144,6 +148,7 @@ paged_query ='''query {{
   }}
 }}
 '''
+{% endraw %}
 ```
 </details>
 
