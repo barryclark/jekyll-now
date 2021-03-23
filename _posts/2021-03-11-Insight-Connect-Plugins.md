@@ -38,6 +38,7 @@ Before I jump into the copy/pastes, it's helpful to understand a few things:
     - There is no versioning system for Workflows past "Active", and "Draft". Export your workflow if you want to keep it safe.
     - SQS + Slack WILL cause you to hit API limits
     - This is a "scrappy automation" tool IMO... don't expect an enterprise grade HA tool with high verbosity logging.
+    - Don't put underscores in input names... there's an edge case where the variable will be required by the schema, but it won't get parsed correctly by the action class. Errors abound.
 
 ## Copy Paste Time :)
 
@@ -111,7 +112,7 @@ icon-plugin generate --regenerate
 
 8. You can generate sample data to test your plugin locally.
 ```
-icon-plugin sample --sample=action_name
+icon-plugin generate sample --sample=action_name
 ```
 This will create files in the tests directory.
 
