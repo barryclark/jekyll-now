@@ -12,6 +12,8 @@ I partner with companies in a personal capacity, [get in touch](/about) if you a
 3. Connecting VCs (venture capital) and startups, particularly deep tech in Europe
 4. Consulting services on cloud native content marketing and developer community building
 
+<script type="text/javascript" src="https://form.jotformeu.com/jsform/92682794245368"></script>
+
 ## Endorsements
 
 <img src="/partner/christoph-buchli.jpg" alt="Christoph Buchli, Founder and CTO of Helio" class="about-image"/>
