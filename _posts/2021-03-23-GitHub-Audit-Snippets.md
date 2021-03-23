@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Github Audit Snippets
+toc: true
 ---
 ### Summary
 It blows my mind that I couldn't already find this in a library somewhere. Enterprises need a way to:
