@@ -15,7 +15,7 @@ From inside CNCF I have a unique insight into cloud native tech, DevOps and ecos
 🛠 Tech
 1. More Rust in Cloud Native
 1. Cross Cloud becomes (more) real
-1. Web Assembly and eBFP
+1. Web Assembly and eBPF
 1. [Kubernetes on the Edge](https://docs.google.com/document/d/1YFimQftjkTUsxNGTsKdakvP7cJtJgCTqViH2kwJOrsc/edit#)
 
 👩🏻‍💻 DevOps
