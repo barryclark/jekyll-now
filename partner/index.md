@@ -8,9 +8,9 @@ title: Partner with Cheryl
 I partner with companies in a personal capacity, get in touch if you are looking for any of the following, or you have another proposal.
 
 1. Keynote speaker, panelist, host for tech events
-2. Advisor on developer marketing, open source and community strategy
+2. Advisor on open source and developer community strategy
 3. Connecting VCs (venture capital) and startups, particularly deep tech in Europe
-4. Consulting services on cloud native content marketing and developer community building
+4. Consulting on cloud native marketing and developer community building
 
 <script type="text/javascript" src="https://form.jotformeu.com/jsform/92682794245368"></script>
 
