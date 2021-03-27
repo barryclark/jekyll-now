@@ -1,9 +1,9 @@
 ---
 layout: post
-title: First Page
+title: First Article
 ---
 
-Hello World.
+This is a test of the github page.
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
