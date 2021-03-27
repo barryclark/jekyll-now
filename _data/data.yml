@@ -206,6 +206,14 @@
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
 
+- company_gr: Σχολές Οδηγών Δέλτα
+  company_en: Delta Driving Schools
+  url: https://delta-drive.gr
+  category_gr: Σχολή οδηγών
+  category_en: Driving school
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
 - company_gr: Tic Tac
   company_en: Tic Tac
   url: https://tictac.gr
@@ -413,6 +421,14 @@
   category_en: Web development
   location_gr: Ορεστιάδα, Έβρος, Ελλάδα
   location_en: Orestiada, Evros, Greece
+
+- company_gr: insuranceAXD
+  company_en: insuranceAXD
+  url: https://www.insuranceaxd.gr
+  category_gr: Ασφαλιστιστικός σύμβουλος
+  category_en: Insurance agent
+  location_gr: Αλεξανδρούπολη, Έβρος, Ελλάδα
+  location_en: Alexandroupolis, Evros, Greece
 
 - company_gr: BakeMyDay
   company_en: BakeMyDay
