@@ -62,6 +62,14 @@
   location_gr: Μαρούσι, Αττική, Ελλάδα
   location_en: Marousi, Attica, Greece
 
+- company_gr: Ηλεκτροδήλατο
+  company_en: Electrodilato
+  url: https://www.facebook.com/electrodilato/
+  category_gr: Κατάστημα ηλεκτρικών ποδηλάτων
+  category_en: Electric bicycle shop
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
 - company_gr: Μάρμαρα Νικολάκη
   company_en: Nikolaki Marble
   url: https://www.e-marmara.gr/
@@ -811,6 +819,14 @@
   url: https://www.facebook.com/teddywear.gr
   category_gr: Παιδικά ενδύματα και υποδύματα
   category_en: Children's apparel and shoes
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
+- company_gr: Anamo
+  company_en: Anamo
+  url: https://www.anamo.gr/
+  category_gr: Κατάστημα υπολογιστών και τεχνολογίας
+  category_en: Computers and electronics shop
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
 
