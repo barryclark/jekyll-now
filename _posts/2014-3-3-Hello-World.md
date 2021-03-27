@@ -5,10 +5,6 @@ title: First Article
 
 This is a test of the github page.
 
----
-layout: post
-title: Second Article
----
 
 This is the second article
 
