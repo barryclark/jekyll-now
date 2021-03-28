@@ -287,7 +287,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2021-03-27
+Τελευταία ενημέρωση: 2021-03-28
 
 <!-- <div class="posts">
   {% for post in site.posts %}
