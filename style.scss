@@ -221,9 +221,8 @@ img {
   }
 }
 .breadcrumbs {
-  font: $lightGray;
-  font-style: italic;
-  text-align: center;
+  text-transform: uppercase;
+  float: right;
 }
 
 .wrapper-footer {
