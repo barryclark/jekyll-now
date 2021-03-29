@@ -170,11 +170,13 @@ img {
 
 
 .banner-container {
-  background-image: url("./images/HUM331.jpg");
+  background-image: url("https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/HUM331.jpg");
   width: 100%;
 }
 
 #masthead {
+  position: center;
+  top: 100px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
