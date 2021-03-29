@@ -170,18 +170,13 @@ img {
 
 
 .banner-container {
-  display: block;
   background-image: url("https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/HUM331.jpg?raw=true");
   max-height: 500px;
   width: 100%;
 }
 
-.masthead {
-  display: block;
-  width: 900px;
-}
-
 .masthead h1{
+  display: block;
   position: relative;
   top: 80px;
   text-transform: uppercase;
