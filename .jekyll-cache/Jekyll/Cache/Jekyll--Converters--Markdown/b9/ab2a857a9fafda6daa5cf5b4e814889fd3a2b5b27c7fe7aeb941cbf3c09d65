@@ -1,4 +1,4 @@
-I"�q<h2 id="how-do-we-tell-a-history-of-communications-technologies-with-technology">How do we tell a history of communications technologies with technology?</h2>
+I"d<h2 id="how-do-we-tell-a-history-of-communications-technologies-with-technology">How do we tell a history of communications technologies with technology?</h2>
 
 <p>This blog features the research of students in <em>A History of Words: Technologies of
 Communication from Cuneiform to Coding</em> (HUM 331) taught by Professor Melissa Reynolds in
@@ -9,12 +9,12 @@ digital “tools” that they learn over the semester. As they post, they are le
 build a static site (like this one) so that they can share their in-depth research on everything from campus activism to
 nineteenth-century travelogues to early Japanese board games, taking advantage of the possibilities of digital storytelling
 and digital analytical methodologies. Check back in May to see those projects, but in the mean time, scroll down to read posts
-featuring their intermediate research, or toggle the menu at the top left check out their bios or to read the course syllabus.</p>
+featuring their intermediate research, or toggle the menu at the top left to check out their bios or to read the course syllabus.</p>
 
 <hr />
 <p><br /></p>
 
-<div class="posts">
+<div class="posts" id="top">
   
     <article class="post">
       <header class="post-header">
@@ -66,10 +66,6 @@ featuring their intermediate research, or toggle the menu at the top left check 
 </p>
 
 <p>My choice of Einstein also went hand in hand with the access to the archival material I would have through the series of books released by Princeton University Press in 1987. Starting with <a href="https://einsteinpapers.press.princeton.edu/about" title="The Collected Papers of Albert Einstein">The Collected Papers of Albert Einstein</a> Volume 1: The Early Years, 1879-1902”]<a href="https://einsteinpapers.press.princeton.edu/about" title="The Collected Papers of Albert Einstein">1</a> , I slowly but surely tackled German, French, and Hebrew translations with helpful footnotes that indicated the place of the paper in relation to Einstein’s life. I ended up using a miscellaneous collection of texts from Volumes 1-10 in this collection as they pertained to my research. While it became clear that this collection of books would be my primary source for this assignment, however I hoped to expand further out to see what other Universities or institutions had to offer in regard to any letters from or to Einstein. From here I found an additional text by Princeton University Press that housed the love letters between Einstein and his first wife Mileva Maric. As I neared the age of WWII, I also needed to pull from sources like the League of Nations archives and textbooks referencing the making of the atomic bomb. Nearing the end of Einstein’s life, I found myself reaching for more personal letters, and even came across a recent New York Times article regarding one of his final letters he wrote only a year before his death in 1955. Although my sources vary greatly, I feel as if the multitude of organizations and institutions that house these archived documents (or copies/translations of them) are a showcasing of Einstein’s direct impact on different levels of government, educational institutions, and even religious organizations.</p>
-
-<p>In regard to the dates and places that were essential to my narrative, I knew that I had to include Einstein’s birth town of Ulm, Germany as well as where he died in Princeton, New Jersey. But when I was choosing locations in between, I made sure to touch a broad basis and switch my StoryMap to image mode rather than cartography. By doing this I felt as if I was justified in placing certain letters in the location of the recipient such as the letters Einstein wrote to his sister Maja in Italy. In a sense, I thought of these placements as where his words were taking effect, as well as where his personal relationships held a strong footing across the world. This idea of a connection through traveling words was one I hoped my viewers would find.</p>
-
-<p>Watching the historical narrative of Albert Einstein’s life unfold in both space and time allowed me to see a trail of life in papers that I had not been able to wrap my head around before. When we discussed in class the literary culture of societies such as Ancient Rome and even saw in the Cairo Geniza the significance of writing, I wanted to showcase the importance the words written by or for someone had on someone’s life. I believe I was able to capture this to the best of my ability using the StoryMap platform (and not overwhelming my viewers with an influx of information). When choosing supplemental texts or images, I tried my best to stick to a mixture of the document format given by Princeton University Press (typed in German from its original form), as well as some actual photocopies of postcards or other letters that showcased Einstein’s personal informal handwriting. I also chose to only include an image of him in the beginning of my StoryMap, hopefully allowing his persona to change with time and with the words that my viewers read. Creating an engaging visual narrative was definitely difficult because I wanted my viewers to engage most directly with the letters and texts themselves, rather than with vibrant images. Sticking to a black and white theme, I hoped that Einstein’s life could be brought to color by a viewer relating themselves to something they see in some of the more personal letters I chose. With this in mind, my brief captions on the chosen images and texts do not go into detail but rather set the stage for the viewer to see themselves or interpret for themselves.</p>
 
 
       </div>
@@ -292,19 +288,9 @@ that intrigued me more than the rest.</p>
       <a href="/Go-West-Young-Man/" class="read-more">Read More</a>
     </article>
   
-    <article class="post">
-      <header class="post-header">
-      <h2 class="post-title"><a href="/Welcome-to-HUM-331/">Welcome to HUM 331</a></h2>
-      <h4>By Melissa Reynolds on November 15, 2020</h4>
-      </header>
 
-      <div class="entry">
-        <p>Welcome to HUM 331/HIS 336! This semester we’re going to undertake a journey through the history of communications technologies, from ancient Sumer to the modern Twitterverse. In addition to this journey through the past, you’ll also be learning how our latest communications technology–digital technology–is shaping how historians engage with the past. This is our course website where you’ll post digital assignments and your final project to share with your classmates. You’ll access this site via our class repository in GitHub, which means you’ll need to register for a GitHub account (they’re free) if you haven’t already. If you don’t know what a GitHub is, don’t worry–we’ll go over first steps in class. For more information on the course and to view the syllabus, navigate to the Course Description page. Looking forward to a great semester!</p>
-
-      </div>
-
-      <a href="/Welcome-to-HUM-331/" class="read-more">Read More</a>
-    </article>
-  
+  <div class="breadcrumbs">
+    <a href="#top">Return to the top</a>
+  </div>
 </div>
 :ET
