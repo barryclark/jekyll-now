@@ -1,6 +1,6 @@
 <template>
+<main class='lg:container flex items-center'>
   <div class="support_second-container relative bg-white overflow-hidden row">
-    <main class='lg:container flex items-center'>
       <div class="container support_second-box">
         <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
           ご支援・ご協力のお願い
@@ -10,13 +10,14 @@
         </t-tag>
       </div>
       <img class="rounded-full h-48 w-48 flex items-center justify-center color_change" src="../../assets/dojo-logo.jpg" />
-
-    </main>
   </div>
+  </main>
 </template>
 
 <style scoped>
-main { width: 100%; }
+main { width: 100%;
+background-color: #3f1130;
+}
 .support_second-box {
   opacity: 0.8;
   width: 640px;

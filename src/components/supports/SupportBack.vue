@@ -1,124 +1,93 @@
 <template id="app">
-  <div class="support_back-container relative bg-white overflow-hidden row">
-    <main class='lg:container flex items-center'>
-      <div class="container support_back-box">
-      <div>
-        <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
-          ご支援・ご協力のお願い<br>
-        </t-tag>
-        <t-tag tag-name="p" variant="body" class='py-8 text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
-          ご支援・ご協力をお願い致します。<br>
-        </t-tag>
-        <t-tag tag-name="p" variant="body" class='pt-5 text-2xl leading-8 tracking-tight font-display text-gray-900 sm:text-xl sm:leading-9'>
-          ご支援・ご協力をお願い致します。
-        </t-tag>
-      </div>
-      </div>
+<main class='flex items-center'>
+<div class="support_back-container row">
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+<div class="md:flex">
+  <div class="w-full object-contain md:w-72 md:h-full">
     <hooper :settings="hooperSettings">
       <slide>
-        <div class="images img1">
-          
-          <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
-        </div>
+        <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
       </slide>
       <slide>          
-        <div class="images img2">
-          
-          <video src="../../assets/loop_1/2.mp4" loop autoplay controls></video>
-        </div> 
+        <video src="../../assets/loop_1/2.mp4" loop autoplay controls></video>
       </slide>
       <slide>          
-        <div class="images img3">
-          
-          <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
-        </div>       
+        <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>      
       </slide>
       <slide>  
-        <div class="images img4">
-          
-          <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
-        </div> 
+        <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
       </slide>
       <slide>     
-        <div class="images img5">
-          
-          <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
-        </div>
+        <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
       </slide>
     </hooper>
-    </main>
   </div>
+  <div class="p-10">
+    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">ご支援・ご協力のお願い</div>
+    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+    <p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+  </div>
+</div>
+</div>
+<br/>
+<br/>
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+<div class="md:flex">
+  <div class="w-full object-contain md:w-72 md:h-full">
+    <hooper :settings="hooperSettings">
+      <slide>
+        <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
+      </slide>
+      <slide>          
+        <video src="../../assets/loop_1/2.mp4" loop autoplay controls></video>
+      </slide>
+      <slide>          
+        <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>      
+      </slide>
+      <slide>  
+        <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
+      </slide>
+      <slide>     
+        <video src="../../assets/loop_1/1.mp4" loop autoplay controls></video>
+      </slide>
+    </hooper>
+  </div>
+  <div class="p-10">
+    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">ご支援・ご協力のお願い</div>
+    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+    <p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+  </div>
+</div>
+</div>
+</div>
+</main>
 </template>
 
 <style scoped>
-
-.markup-red {
-  color: #F2718A;
+main{
+  background-color: #3f1130;
 }
-
-
-main { width: 100%; }
-.support_back-box {
-  position: absolute;
-  z-index: 2;
-  height: 640px;
-  width: 30%;
-  left: 0;
-  background: #fff;
-  text-align: center; 
+#app {
+  display: flex;
 }
-.support_back-box div{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:100%;
-}
-
 .support_back-container {
-  display: flex;
-  align-items: center;
-  height: 640px;
-  width: 100%;
-  
-}
-video {
-  max-height: 320px;
-  width: 90%;
-}
-.images {
-  height: 320px;
-  width: 320px;
-  display: flex;
+
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+}
 
+
+video {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
-.img1 {
-  background: lightblue;
-}
-.img2 {
-  background: lightblue;
-}
-.img3 {
-  background: coral;
-}
-.img4 {
-  background: lightgreen;
-}
-.img5 {
-  background: pink;
-}
+
 h2 {
   color: #fff
 }
-.hooper {
-  height: 320px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+
 </style>
 
 <script>
@@ -139,22 +108,7 @@ h2 {
                     infiniteScroll: true,
                     centerMode: true,
                     autoPlay: true,
-                    playSpeed: 3500,
-                    breakpoints: {
-                      480: {
-                        itemsToShow: 1.75
-                      },
-                      640: {
-                        itemsToShow: 2.3
-                      },
-                      1040: {
-                        itemsToShow: 3
-                      },
-                      1280: {
-                        itemsToShow: 4
-                      }
-
-                    }
+                    playSpeed: 2500
                 }   
             }
         }
