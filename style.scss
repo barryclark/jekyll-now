@@ -171,13 +171,18 @@ img {
 
 .banner-container {
   background-image: url("../images/HUM331.jpg")
-  font-size: 250px;
-  text-transform: uppercase;
-  font-weight: bold;
   margin: 0px auto;
   width: 100%
 }
 
+#masthead {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 500%;
+  border: 3px white solid;
+  padding: 10px;
+}
 
 .site-banner {
   margin-bottom: 0px;
@@ -192,29 +197,6 @@ img {
   }
 }
 
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  text-align: right;
-  cursor: pointer;
-  font-family: $helvetica;
-  font-weight: 300;
-  font-size: $type-size-4;
-  letter-spacing: 0px;
-
-   @include mobile {
-    text-align: center;
-    margin: 0px 0;
-    }
-}
-
-.site-description {
-  color: $white;
-  font-family: $helvetica;
-  font-weight: 300;
-  font-size: $type-size-4;
-}
 
 
 //
