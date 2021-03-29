@@ -2,7 +2,6 @@
 layout: default
 title: HUM 331
 ---
-<div id="top">
 ## How do we tell a history of communications technologies with technology?
 
 This blog features the research of students in _A History of Words: Technologies of
@@ -18,9 +17,8 @@ featuring their intermediate research, or toggle the menu at the top left to che
 
 ---
 <br>
-</div>
 
-<div class="posts">
+<div class="posts" id="top">
   {% for post in site.posts %}
     <article class="post">
       <header class="post-header">
@@ -35,7 +33,7 @@ featuring their intermediate research, or toggle the menu at the top left to che
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-  
+
   <div class="breadcrumbs">
     <a href="#top">Return to the top</a>
   </div>
