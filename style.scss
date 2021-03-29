@@ -172,13 +172,13 @@ img {
 .banner-container {
   display: block;
   background-image: url("https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/HUM331.jpg?raw=true");
-  max-height: 300px;
+  max-height: 500px;
   width: 100%;
 }
 
 .masthead {
   display: block;
-  width: 450px;
+  width: 900px;
 }
 
 .masthead h1{
@@ -188,9 +188,7 @@ img {
   font-weight: 900;
   color: $white;
   text-align: center;
-  font-size: 250%;
-  border: 3px white solid;
-  padding: 10px;
+  font-size: 300%;
 
   a {
     color: $white;
