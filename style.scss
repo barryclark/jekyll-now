@@ -170,30 +170,9 @@ img {
 
 
 .banner-container {
-  background-image: url("https://github.com/HUM-331-Princeton/HUM-331-Princeton.github.io/blob/master/images/HUM331.jpg?raw=true");
-  height: 400px;
+  width: 100%;
+  margin-bottom: 30px;
 }
-
-.masthead h1{
-  display: block;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: $white;
-  text-align: center;
-  font-size: 300%;
-
-  a {
-    color: $white;
-  }
-}
-
-.site-banner {
-  margin-bottom: 0px;
-
-  @include mobile {
-    float: center;
-    display: block;
-  }
 
   img {
     border-radius: 5px;
