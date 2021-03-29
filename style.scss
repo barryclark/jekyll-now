@@ -171,7 +171,7 @@ img {
 
 .banner-container {
   width: 100%;
-  margin-bottom: 30px;
+  margin: 0 0 50px 0;
 }
 
   img {
@@ -222,6 +222,11 @@ img {
     text-transform: uppercase;
     font-size: $type-size-4;
   }
+}
+.breadcrumbs {
+  font: $lightGray;
+  font-style: italic;
+  text-align: center;
 }
 
 .wrapper-footer {
