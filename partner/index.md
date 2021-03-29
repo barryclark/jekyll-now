@@ -8,7 +8,7 @@ title: Partner with Cheryl
 I partner with companies in a personal capacity, get in touch if you are looking for any of the following, or you have another proposal.
 
 1. Keynote speaker, panelist, host for tech events
-2. Advisor on open source strategy and developer-led growth
+2. Advisor on open source strategy and developer-led growth (typically 1 hour / month in exchange for compensation or shares)
 3. Connecting VCs (venture capital) and startups, particularly deep tech in Europe
 4. Consultant on technical community building and developer advocacy
 
