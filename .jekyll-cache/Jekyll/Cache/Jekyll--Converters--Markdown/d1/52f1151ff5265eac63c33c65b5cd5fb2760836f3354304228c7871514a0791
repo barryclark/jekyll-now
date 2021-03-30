@@ -1,4 +1,4 @@
-I"d<h2 id="how-do-we-tell-a-history-of-communications-technologies-with-technology">How do we tell a history of communications technologies with technology?</h2>
+I"�o<h2 id="how-do-we-tell-a-history-of-communications-technologies-with-technology">How do we tell a history of communications technologies with technology?</h2>
 
 <p>This blog features the research of students in <em>A History of Words: Technologies of
 Communication from Cuneiform to Coding</em> (HUM 331) taught by Professor Melissa Reynolds in
@@ -15,6 +15,38 @@ featuring their intermediate research, or toggle the menu at the top left to che
 <p><br /></p>
 
 <div class="posts" id="top">
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Michelle-Obama-in-The-Daily-Princetonian/">Michelle Obama in *The Daily Princetonian*</a></h2>
+      <h4>By José Pablo Fernández García on March 29, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <p>The Princeton University Library’s <a href="https://papersofprinceton.princeton.edu/princetonperiodicals/?">Papers of Princeton</a> collection offers a rich trove of multiple historic publications from Princeton — both the town and the university. A dive into this collection allows one to reconstruct life in Princeton as far back as the mid 1800s through records detailing everything from the biggest events of the day to the most mundane. In fact, the collection’s comprehensive nature even allows one to construct partial narratives of individual students’ lives in some cases. And in the case of famous alumni, this collection often contains a second story, not of a student’s life as much as of a student’s accomplishments and legacy.</p>
+
+<p>Take, for example, Michelle Obama</p>
+
+      </div>
+
+      <a href="/Michelle-Obama-in-The-Daily-Princetonian/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Encoding-the-Lending-Library/">Encoding the Lending Library</a></h2>
+      <h4>By Sophie Goldman on March 29, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h3 id="motivation-and-background">Motivation and Background</h3>
+<p>For this digital tools assignment, I was interested in encoding a document that contained informational data, such as records or lists. I also hoped to find a source that contained many attributes within one record. While searching the Princeton University Library collections for potential documents, I came across the <a href="https://findingaids.princeton.edu/catalog/C0108">Sylvia Beach Papers</a> and the accompanying <a href="https://shakespeareandco.princeton.edu/">Shakespeare and Company Project</a> by Princeton’s Center for Digital Humanities.  Sylvia Beach (1887 - 1962) owned and ran the Shakespeare and Company bookstore and lending library in Paris, France, serving members of European and American literary communities from 1919 to 1941. The Shakespeare and Company Project maintains a database of the books, members, and documents related to the library, using materials sourced from the Sylvia Beach collections. I was drawn to the lending library cards, which were used to document each library member’s borrowed materials. These cards contained many of the attributes I was hoping to tag, including names, addresses, book titles, and dates. Additionally, the layout of the cards led me to consider interesting questions on how to encode their contents using XML.</p>
+
+
+      </div>
+
+      <a href="/Encoding-the-Lending-Library/" class="read-more">Read More</a>
+    </article>
   
     <article class="post">
       <header class="post-header">

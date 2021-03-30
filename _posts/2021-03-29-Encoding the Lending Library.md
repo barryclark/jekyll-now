@@ -28,7 +28,8 @@ I used the transcriptions of book titles and dates on the Shakespeare and Compan
 
 ### The XML Encoding
 
-``` <div type='all-lending-library-cards'>
+```
+<div type='all-lending-library-cards'>
 	<div type="lending-library-card">
 		<side type="front">
 			<heading>
@@ -49,7 +50,7 @@ I used the transcriptions of book titles and dates on the Shakespeare and Compan
 					<date-start>Oct 26</date-start>
 					<title>The Gambler</title>
 					<date-end>Dec 10</date-end>
-					<title>Walter Rathenau his life and work by	
+					<title>Walter Rathenau his life and work by
 						<author>Count Harry Kessler</author>
 						<publication-info>(
 							<publisher>Gerald Howe Ltd</publisher>
@@ -161,7 +162,7 @@ I used the transcriptions of book titles and dates on the Shakespeare and Compan
 					<title>The Gambler</title>
 					<date-start>Oct 26</date-start>
 					<title>Walter Rathenau his life &amp; work by
-						
+
 						<author>Count Harry Kessler</author>
 						<publication-info>
 							<publisher>Gerald Howe Ltd</publisher>
@@ -172,10 +173,10 @@ I used the transcriptions of book titles and dates on the Shakespeare and Compan
 				</text>
 				<text color="faded-blue">
 					<note>
-						<unclear>Also wants	
+						<unclear>Also wants
 							<author>Christina</author>
 						</unclear>
-						&amp;	
+						&amp;
 						<author>Morand's</author>
 						Books
 					</note>
@@ -188,9 +189,9 @@ I used the transcriptions of book titles and dates on the Shakespeare and Compan
 ```
 
 ### Organizing Information: Categories and Hierarchy
-In order to categorize the information, I created a root tag that nested the separate cards. Within a div element for each card, I separated the encoding further with a `<heading>` element and a `<borrowing-record>` element. This first element contains Wright's name/address, while the second contains the remaining information on the card, including specific borrowed books and notes. 
+In order to categorize the information, I created a root tag that nested the separate cards. Within a div element for each card, I separated the encoding further with a `<heading>` element and a `<borrowing-record>` element. This first element contains Wright's name/address, while the second contains the remaining information on the card, including specific borrowed books and notes.
 
-The first question I encountered was how to encode the dates listed on the cards. While I considered creating an element for each book which would include the borrowing date, data on the book itself, and the return date, many of the books were listed under one borrow date, and it did not feel accurate to repeatedly include the same date if it was not written on the original document. I also considered nesting the information about a book inside the tags related to its borrow date, but chose not to as borrow/return dates were not consistently available for all entries. 
+The first question I encountered was how to encode the dates listed on the cards. While I considered creating an element for each book which would include the borrowing date, data on the book itself, and the return date, many of the books were listed under one borrow date, and it did not feel accurate to repeatedly include the same date if it was not written on the original document. I also considered nesting the information about a book inside the tags related to its borrow date, but chose not to as borrow/return dates were not consistently available for all entries.
 
 This question led me to nest each section of text by color in an element `<text>`, which has an associated attribute to note the color of the text, which implicitly carries information on when a given entry or set of entries was made. Within this element, I included `<date-start>` and `<date-end>` elements to differentiate between the borrow and return dates for each book. This allowed each date to exist as an individual element, rather than being explicitly connected to a particular title. I also included elements for the book's title, author, and publication information when provided. When text was circled, crossed out, or unclear, I added elements to reflect these aspects of the text.
 
@@ -202,13 +203,13 @@ The main challenge I encountered was determining how to translate the clear visu
 
 The other aspect of the card that inspired questions were the various names mentioned. Some, such as Richard Wright's name, were clear, but others, such as "Christina" required additional searches for potential contemporaneous literary figures. In the case of "Christina," I am guessing that the reference is to Australian author Christina Stead, whose name appears in the Shakespeare and Company Project database. In other cases, references to individuals by their initials, such as "O.P.", were not tagged as a name as it was not possible to identify the individual being referenced.
 
-Along with questions about markup, I had a number of questions about the contents of the documents themselves. Why might information on books borrowed in 1946 be located at the bottom of a card which first has dates from 1949? What was the purpose of the two cards, which almost entirely overlap? Why do the two cards refer to Wright by different names? Though I cannot answer these questions, by exploring these cards through the encoding process, I was able to immerse myself in the documents and their construction, gaining an understanding of the sources themselves and the considerations involved in encoding them for research purposes. 
+Along with questions about markup, I had a number of questions about the contents of the documents themselves. Why might information on books borrowed in 1946 be located at the bottom of a card which first has dates from 1949? What was the purpose of the two cards, which almost entirely overlap? Why do the two cards refer to Wright by different names? Though I cannot answer these questions, by exploring these cards through the encoding process, I was able to immerse myself in the documents and their construction, gaining an understanding of the sources themselves and the considerations involved in encoding them for research purposes.
 
 ### References
-“Lending Library Cards for Ellen Wright.” *Shakespeare and Company Project*, version 1.4.1. Center for Digital Humanities, Princeton University. [https://shakespeareandco.princeton.edu/members/wright-ellen/cards/](https://shakespeareandco.princeton.edu/members/wright-ellen/cards/). Accessed March 25, 2021. 
+“Lending Library Cards for Ellen Wright.” *Shakespeare and Company Project*, version 1.4.1. Center for Digital Humanities, Princeton University. [https://shakespeareandco.princeton.edu/members/wright-ellen/cards/](https://shakespeareandco.princeton.edu/members/wright-ellen/cards/). Accessed March 25, 2021.
 
 Quintana, Maria. “Richard Wright (1908-1960)” January 21, 2007. [https://www.blackpast.org/african-american-history/wright-richard-1908-1960/](https://www.blackpast.org/african-american-history/wright-richard-1908-1960/). Accessed March 25, 2021.
 
 _Shakespeare and Company Project_, version 1.4.1. Center for Digital Humanities, Princeton University, 2021. [https://shakespeareandco.princeton.edu](https://shakespeareandco.princeton.edu/). Accessed March 25, 2021.
 
-“Sylvia Beach Papers | Princeton University Library Special Collections.” [https://library.princeton.edu/special-collections/collections/sylvia-beach-papers](https://library.princeton.edu/special-collections/collections/sylvia-beach-papers). Accessed March 25, 2021. 
+“Sylvia Beach Papers | Princeton University Library Special Collections.” [https://library.princeton.edu/special-collections/collections/sylvia-beach-papers](https://library.princeton.edu/special-collections/collections/sylvia-beach-papers). Accessed March 25, 2021.
