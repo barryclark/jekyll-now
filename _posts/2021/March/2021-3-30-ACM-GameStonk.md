@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ACM@USC Codeathon - Investing in 2021 - C++
-date: March 21, 2021
+title: ACM@USC Codeathon - GameStonk - C++
+date: March 30, 2021
 time: 0:00 UTC-4
 ---
 
@@ -14,7 +14,7 @@ This last month has also been a great opportunity to really pick up on my C++ an
 It begins with an array of positive integers designating how many jumps you can go forward to reach the end from each position. The target is to solve the path of jumps that give the fewest jumps. This is almost knapsack, and thinking it this way makes life a lot easier. Below is the the problem statement and solution.
 
 
-# 2021 Algorithmic Trading
+# 2021 GameStonk
 
 It has been shown with a high correlation that turning memes into integers, and ordering them chronologically gives you data that you can predict the value of GameStop stock with 70% confidence. Every meme gives a value indicating how many memes forward you can jump. You must move chronologically. Once you have the shortest path through all of the memes, you can use this information to put memes into google reverse image search. If there is more green than red, you invest now. If there is more red than green, you hold. If there is an equal amount of green and red, you have hit the lotto, you should sell your home and buy call options.
 
@@ -57,32 +57,37 @@ This is not a financial strategy, advice, or anything more than a problem statem
 
 
 ```c++
+/* Copyright 2021
+** Justin Baum
+** MIT License
+*/
+
 #include <vector>
 #include <iostream>
 #include <string>
+#include <climits>
 using namespace std;
 
-typedef pair<int, vector<int> > pairy;
-typedef vector<pairy> wow;
-
-pairy min_number_of_jumps(const vector<int> &array) {
+vector<string> min_number_of_jumps(vector<int> &array, vector<string> &names) {
     int size = array.size();
-    wow jumps = vector<pairy>(size, 
-        pairy(INT_MAX >> 1, vector<int>(0)));
-    jumps[size-1] = pairy(0, vector<int>());
-    for (int i = size - 2; i >= 0; --i) {
-        int forward = min(array[i], size - i - 1);
-        for (int j = 1; j <= forward; ++j) {
-            if (jumps[i + j].first + 1 < jumps[i].first) {
-                jumps[i] = pairy(
-                    jumps[i + j].first + 1,
-                    jumps[i + j].second);
-                jumps[i].second.insert(
-                    jumps[i].second.begin(), i);
-            }
+    vector<string> solution;
+    int steps = array[0];
+    int max_reach = array[0];
+    int max_index = 0;
+    solution.push_back(names[0]);
+    for (int i = 1; i < array.size() - 1; i++) {
+        int new_reach = i + array[i];
+        --steps;
+        if (new_reach > max_reach) {
+            max_index = i;
+            max_reach = new_reach;
+        }
+        if (steps == 0) {
+            solution.push_back(names[max_index]);
+            steps = max_reach - i;
         }
     }
-    return jumps[0];
+    return solution;
 }
 
 int main(void) {
@@ -95,16 +100,17 @@ int main(void) {
         cin >> x;
         array.push_back(x);
     }
-    array.push_back(0);
     for(int _ = 0; _ < n; ++_) {
         string x;
         cin >> x;
         names.push_back(x);
     }
-    pairy x = min_number_of_jumps(array);
-    for(int jump : x.second) {
-        cout << names[jump] << " ";
+    auto x = min_number_of_jumps(array, names);
+    //cout << x.first << endl;
+    for(string name : x) {
+        cout << name << " ";
     }
+    cout << names[n - 1];
     cout << endl;
     return 0;
 }
