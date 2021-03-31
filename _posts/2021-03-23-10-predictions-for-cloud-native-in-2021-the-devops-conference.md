@@ -4,7 +4,7 @@ title: "10 predictions for cloud native in 2021 - Keynote, The DevOps Conference
 description: "Cheryl Hung, VP Ecosystem at CNCF, points out 10 trends to look forward to in cloud native"
 image: /images/2021-03-23-10-predictions-for-cloud-native-in-2021-the-devops-conference.png
 slides: //www.slideshare.net/slideshow/embed_code/key/1JPhHwM5lae2bJ
-video:
+video: https://www.youtube-nocookie.com/embed/SOvYJEzGyLw
 tags:
   - Video
   - "2021"
