@@ -60,7 +60,7 @@ Walking through the list above:
 <details>
 <summary>Expand Code</summary>
 
-```python3
+```python
 #!/usr/bin/env python3
 import boto3
 import logging
@@ -145,10 +145,11 @@ class eni_collector(base_collector):
 
 
 3. Configure `plugin.spec.yaml`
+
 <details>
 <summary>Expand Code</summary>
 
-```python3
+```python
 actions:
   inventory_objects:
     title: InventoryObjects
@@ -184,7 +185,7 @@ actions:
 <details>
 <summary>Expand Code</summary>
 
-```python3
+```python
 <snip>
 import icon_awscollector.util.awscollector as awscollector
 
