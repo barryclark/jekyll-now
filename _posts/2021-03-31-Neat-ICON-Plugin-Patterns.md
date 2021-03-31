@@ -128,7 +128,7 @@ class eni_collector(base_collector):
         super().__init__(base_session, region, role_arn, toolname)
         self.gen_client("ec2")
 
-    def get_interfaces(self):
+    def get_data(self):
         response = []
         pager = self.client.get_paginator('describe_network_interfaces')
         pages = pager.paginate()
@@ -216,7 +216,7 @@ class InventoryObjects(insightconnect_plugin_runtime.Action):
         collect_action = self.choose_datapoint(params.get(Input.DATAPOINT))
         if collect_action is not None:
             collector = collect_action(base_session, region, role)
-            results = collector.get_inventory()
+            results = collector.get_data()
         else:
             results = []
             logging.error("Collect action {} does not exist".format(Input.DATAPOINT))
