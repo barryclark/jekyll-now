@@ -16,17 +16,19 @@ Loop 1604 at Potranco Road was recently converted from an at-grade signalized in
 
 ![config.yml]({{site.baseurl}}/images/SL1604.png) 
 
-The crash data indicates an increase in crash frequency during construction, which is to be expected. After construction crash rates have dropped, but rear-ends make up a higher share of the crash type. This is also to be expected, as the mainlanes no longer are having the cross the intersection at-grade. However, this could also be an indicator of poor operations. 1 person was fatally injured and 20 people were seriously injured over the last 10 years.
+The crash data indicates an increase in crash frequency during construction, which is to be expected. After construction crash rates have dropped, but rear-ends make up a higher share of the crash type. This is also to be expected, as the mainlanes no longer are having the cross the intersection at-grade. However, this could also be an indicator of poor operations. 
+
+One person was fatally injured and twenty people were seriously injured over the last 10 years.
 
 ![config.yml]({{site.baseurl}}/images/crash_data_1604.png) 
 
-Unfortunately, a full year of crash data alone cannot pinpoint a design issue. 
+Unfortunately, this of crash data alone cannot pinpoint a design issue. 
 
 # The Data
 
-The "journey" data is a simple "breadcrumb" style which contains a data point every 3 seconds with speed and location. The data acquired for this project was from [Wejo](https://www.wejo.com/), which aggregates data from vehicle manufacturers. 
+The data acquired for this project was from [Wejo](https://www.wejo.com/), which aggregates data from vehicle manufacturers. The "journey" data is a simple "breadcrumb" style which contains a data point every 3 seconds with speed and location. 
 
-Another dataset is the "events" data where an on-board accelerometer can detect hard acceleration and deceleration. Deceleration or "hard braking" is largely what I focused on as a potential indicator of safety issues. 
+The other dataset acquired is the "events" data where an on-board accelerometer can detect hard acceleration and deceleration. Deceleration or "hard braking" is largely what I focused on as a potential indicator of safety issues. 
 
 # Hard-Braking Breakthrough
 
@@ -46,7 +48,7 @@ Looking at Google streetview, there is a downward sloping hill leading towards t
 
 # The Solution
 
-We recommended that TxDOT should install signage warning drivers of possible queued vehicles ahead. Other solutions could use queue detection with flashing beacons to warn drivers of a queue ahead. Potentially modifying the vertical alignment of the southbound frontage road could also address the sight line issue.
+We recommended that TxDOT should install signage warning drivers of possible stopped vehicles ahead. Other solutions could use queue detection with flashing beacons to warn drivers of a queue ahead. Potentially modifying the vertical alignment of the southbound frontage road could also address the sight line issue.
 
 # Include Connected Vehicle Data in Your Analysis
 
