@@ -18,7 +18,5 @@ Charlie Henry
 
 [charlie@modalshift.co](mailto:charlie@modalshift.co)
 
-[Instragram](https://www.instagram.com/charlie_henry___/)
-
 [Twitter](https://twitter.com/ShiftModal)
 
