@@ -1,4 +1,4 @@
-I"�@<p>The Princeton University Library’s <a href="https://papersofprinceton.princeton.edu/princetonperiodicals/?">Papers of Princeton</a> collection offers a rich trove of multiple historic publications from Princeton — both the town and the university. A dive into this collection allows one to reconstruct life in Princeton as far back as the mid 1800s through records detailing everything from the biggest events of the day to the most mundane. In fact, the collection’s comprehensive nature even allows one to construct partial narratives of individual students’ lives in some cases. And in the case of famous alumni, this collection often contains a second story, not of a student’s life as much as of a student’s accomplishments and legacy.</p>
+I"0@<p>The Princeton University Library’s <a href="https://papersofprinceton.princeton.edu/princetonperiodicals/?">Papers of Princeton</a> collection offers a rich trove of multiple historic publications from Princeton — both the town and the university. A dive into this collection allows one to reconstruct life in Princeton as far back as the mid 1800s through records detailing everything from the biggest events of the day to the most mundane. In fact, the collection’s comprehensive nature even allows one to construct partial narratives of individual students’ lives in some cases. And in the case of famous alumni, this collection often contains a second story, not of a student’s life as much as of a student’s accomplishments and legacy.</p>
 
 <p>Take, for example, Michelle Obama<!--more-->(née Robinson), a member of Princeton’s Class of 1985. During her time as a student, <em>The Daily Princetonian</em> only recorded her presence at the university a handful of times, mostly for her work with the Third World Center (today the Carl A. Fields Center) as a member of its Governance Board. The paper, however, also captures Obama walking the runway for a charity event in one more article. Meanwhile, after Obama’s national profile began to rise with her husband’s political career, <em>The Daily Princetonian</em>’s coverage became far more prolific, reporting on everything from a high school graduation speech she gave to the “lukewarm” relationship she has had with the university since graduating.</p>
 
@@ -27,7 +27,7 @@
 
 <h3 id="the-encoded-text">The Encoded Text</h3>
 <p>What follows is the encoded text for the article “Fashion show benefits Ethiopian relief fund” in the February 26, 1985 <a href="https://papersofprinceton.princeton.edu/princetonperiodicals/?a=d&amp;d=Princetonian19850226-01.1.1">issue</a> of <em>The Daily Princetonian</em>.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div type="news article"&gt;
+<pre><code class="language-XML">&lt;div type="news article"&gt;
   &lt;page num="1"&gt;
     &lt;column num="1-2"&gt;&lt;item num="2"&gt;&lt;border&gt;
       &lt;headline&gt;
@@ -155,7 +155,7 @@
     &lt;/item&gt;&lt;/column&gt;
   &lt;/page&gt;
 &lt;/div&gt;
-</code></pre></div></div>
+</code></pre>
 
 <h3 id="michelle-obamas-photo">Michelle Obama’s Photo</h3>
 <p>And for the reader who has made it this far, here is the photo from the encoded article that shows Obama modeling at a charity fashion show during her senior year.</p>

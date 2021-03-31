@@ -28,7 +28,7 @@ I used the transcriptions of book titles and dates on the Shakespeare and Compan
 
 ### The XML Encoding
 
-```
+```xml
 <div type='all-lending-library-cards'>
 	<div type="lending-library-card">
 		<side type="front">

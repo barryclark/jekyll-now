@@ -33,7 +33,7 @@ Thus, any name followed by a class year was tagged with `<student>` as a contain
 
 ### The Encoded Text ###
 What follows is the encoded text for the article "Fashion show benefits Ethiopian relief fund" in the February 26, 1985 [issue](https://papersofprinceton.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19850226-01.1.1) of *The Daily Princetonian*.
-```
+```XML
 <div type="news article">
   <page num="1">
     <column num="1-2"><item num="2"><border>
