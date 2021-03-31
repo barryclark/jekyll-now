@@ -141,7 +141,7 @@ class eni_collector(base_collector):
                 'account_id': self.account_id, 'region': self.region}
                 response.append(entry)
         return response
-    ```
+```
 </details>
 
 
@@ -178,7 +178,7 @@ actions:
         title: Data
         type: object
         required: true
-    ```
+```
 </details>
 
 4. Use Input.DATAPOINT in action.py
@@ -229,7 +229,7 @@ class InventoryObjects(insightconnect_plugin_runtime.Action):
             "SecurityGroups": awscollector.sg_collector,
         }
         return options.get(datapoint)
-    ```
+```
 </details>
 
 ### The TLDR;
