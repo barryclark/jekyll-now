@@ -58,10 +58,9 @@ Walking through the list above:
 1. Create `icon_pluginname/util/collector.py`
 2. Each class should have a `get_data` method
 <details>
-    <summary>
-    Expand Code
-    </summary>
-```
+  <summary>Expand Code</summary>
+
+  ```python3
 #!/usr/bin/env python3
 import boto3
 import logging
@@ -141,16 +140,15 @@ class eni_collector(base_collector):
                 'account_id': self.account_id, 'region': self.region}
                 response.append(entry)
         return response
-```
+  ```
 </details>
 
 
 3. Configure `plugin.spec.yaml`
 <details>
-<summary>
-Expand Code
-</summary>
-```
+  <summary>Expand Code</summary>
+
+  ```python3
 actions:
   inventory_objects:
     title: InventoryObjects
@@ -178,16 +176,15 @@ actions:
         title: Data
         type: object
         required: true
-```
+  ```
 </details>
 
 4. Use Input.DATAPOINT in action.py
 5. Execute `get_data` and return results
 <details>
-<summary>
-Expand Code
-</summary>
-```
+  <summary>Expand Code</summary>
+  
+  ```python3
 <snip>
 import icon_awscollector.util.awscollector as awscollector
 
@@ -229,7 +226,7 @@ class InventoryObjects(insightconnect_plugin_runtime.Action):
             "SecurityGroups": awscollector.sg_collector,
         }
         return options.get(datapoint)
-```
+  ```
 </details>
 
 ### The TLDR;
