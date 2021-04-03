@@ -1,3 +1,9 @@
+---
+layout: post
+title: Non-negative Matrix Factorization
+tags: tutorials bioinformatics R
+---
+
 In this post, I will be discussing Non-negative Matrix Factorization
 (NMF). NMF is a low-rank approximation algorithm that discovers latent
 features in your data. It is similar to PCA in the sense that they both
