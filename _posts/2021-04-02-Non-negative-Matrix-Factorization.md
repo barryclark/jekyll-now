@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Non-negative Matrix Factorization
+usemathjax: true
 tags: tutorials bioinformatics R
 ---
 
