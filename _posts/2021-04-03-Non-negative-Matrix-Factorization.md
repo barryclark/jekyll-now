@@ -369,14 +369,10 @@ In the case of NMF, we are using the square of the Forbenius norm to measure how
 <div>
 <p><span class="math display">\[||V - WH||_{F}^{2} = \Sigma_{i,j}(V - WH)^{2}_{ij}\]</span></p>
 </div>
-We can see that as <span class="math inline">\(WH\)</span> approaches <span class="math inline">\(V\)</span>, then the equation will slowly converge to zero. Therefore, the optimization can be defined as the following:
-<div>
-<p><span class="math display">\[Minimize ||V - WH||_{F}^{2} with respect to W and H, subject to the constraints W,H \ge 0\]</span></p>
-</div>
-In the paper by Lee &amp; Seung, they introduced the multiplicative update rule to solve for NMF. Please see their original paper for details on the proof. Essentially the update causes the function value to be non-increasing to converge to zero.
-<div>
+<p>We can see that as <span class="math inline">\(WH\)</span> approaches <span class="math inline">\(V\)</span>, then the equation will slowly converge to zero. Therefore, the optimization can be defined as the following:</p>
+<p>Minimize <span class="math inline">\(||V - WH||_{F}^{2}\)</span> with respect to <span class="math inline">\(W\)</span> and <span class="math inline">\(H\)</span>, subject to the constraints <span class="math inline">\(W,H \ge 0\)</span></p>
+<p>In the paper by Lee &amp; Seung, they introduced the multiplicative update rule to solve for NMF. Please see their original paper for details on the proof. Essentially the update causes the function value to be non-increasing to converge to zero.</p>
 <p><span class="math display">\[H_{ik} \leftarrow H_{ik}\frac{(W^{T}V)_{ik}}{(W^{T}WH)_{ik}}\]</span></p>
-</div>
 <div>
 <p><span class="math display">\[W_{kj} \leftarrow W_{kj}\frac{(VH^{T})_{kj}}{(WHH^{T})_{kj}}\]</span></p>
 </div>
@@ -420,55 +416,55 @@ In the paper by Lee &amp; Seung, they introduced the multiplicative update rule 
 ## &#39;)</code></pre>
 <pre class="r"><code>R &lt;- rmatrix(5,6)
 R</code></pre>
-<pre><code>##            [,1]      [,2]      [,3]       [,4]      [,5]      [,6]
-## [1,] 0.87412086 0.8591753 0.2381669 0.05689912 0.6973043 0.6503420
-## [2,] 0.81495388 0.7352183 0.9549480 0.27321662 0.3073933 0.5077807
-## [3,] 0.51374583 0.9971686 0.8533502 0.55234006 0.9874510 0.6516443
-## [4,] 0.07082956 0.4195702 0.8110409 0.28908430 0.9409090 0.6384122
-## [5,] 0.54872302 0.2643405 0.3842576 0.73723061 0.6693175 0.4658784</code></pre>
+<pre><code>##           [,1]       [,2]       [,3]       [,4]      [,5]       [,6]
+## [1,] 0.4007137 0.48988199 0.11730123 0.90561032 0.8786088 0.86731883
+## [2,] 0.2958185 0.06199266 0.20295819 0.12190276 0.2675324 0.60205900
+## [3,] 0.8963035 0.10200525 0.06888566 0.76200470 0.7317623 0.34809631
+## [4,] 0.8569394 0.69137974 0.40093261 0.16341560 0.4682005 0.03118922
+## [5,] 0.9269652 0.63180347 0.35229504 0.01099477 0.1182396 0.19406648</code></pre>
 <pre class="r"><code>nmf_mu_results &lt;- nmf_mu(R)
 cat(&#39;\fMatrix W is:\n&#39;)</code></pre>
 <pre><code>## Matrix W is:</code></pre>
 <pre class="r"><code>print(nmf_mu_results$W)</code></pre>
-<pre><code>##              [,1]       [,2]         [,3]        [,4]        [,5]
-## [1,] 5.174039e-01 0.16744067 0.0118654059 1.115071871 0.146898642
-## [2,] 5.165584e-02 0.79046685 0.4341615553 0.617343712 0.001280782
-## [3,] 6.173197e-01 0.50072434 0.4837761891 0.095256059 0.740978646
-## [4,] 8.997752e-03 0.54822148 0.0000126007 0.004865784 0.858843927
-## [5,] 3.039116e-05 0.04215766 0.8351392297 0.001661441 0.634529872</code></pre>
+<pre><code>##              [,1]         [,2]         [,3]         [,4]         [,5]
+## [1,] 0.2945120085 1.177823e-01 1.407215e+00 0.0076274588 9.419760e-03
+## [2,] 0.0348530558 1.102322e-01 1.578286e-01 0.0001414884 8.664569e-01
+## [3,] 0.0009698899 2.809684e-02 5.126590e-01 1.3105861587 5.523500e-02
+## [4,] 0.9099011251 7.185633e-01 2.546607e-03 0.0021807525 3.153967e-06
+## [5,] 0.8909743283 5.861403e-11 1.484582e-06 0.0130366441 2.806236e-01</code></pre>
 <pre class="r"><code>cat(&#39;Matrix H is:\n&#39;)</code></pre>
 <pre><code>## Matrix H is:</code></pre>
 <pre class="r"><code>print(nmf_mu_results$H)</code></pre>
-<pre><code>##             [,1]      [,2]         [,3]         [,4]        [,5]       [,6]
-## [1,] 0.116835159 0.8225258 0.0320224782 7.012774e-08 0.223271969 0.01425128
-## [2,] 0.116973086 0.5472103 1.0868507682 6.213617e-05 0.078024136 0.22710570
-## [3,] 0.647500924 0.1900561 0.2149798007 6.265618e-01 0.005777789 0.09248447
-## [4,] 0.704448501 0.2869493 0.0000335727 3.637985e-17 0.372321452 0.46281320
-## [5,] 0.002311318 0.1286416 0.2495875438 3.360443e-01 1.041014459 0.59473490</code></pre>
+<pre><code>##             [,1]         [,2]         [,3]         [,4]      [,5]         [,6]
+## [1,] 0.938981765 7.094122e-01 3.315199e-01 7.624112e-03 0.0861642 0.0328688319
+## [2,] 0.001690588 6.152914e-02 1.367573e-01 2.128332e-01 0.5380754 0.0001024716
+## [3,] 0.082623509 1.940418e-01 9.823391e-23 6.219701e-01 0.5583590 0.6051258017
+## [4,] 0.638131482 1.004283e-30 4.027833e-02 3.330218e-01 0.3221636 0.0041240851
+## [5,] 0.287527049 1.124161e-10 2.021005e-01 1.717841e-08 0.1336130 0.5825066726</code></pre>
 <p>Let’s see if we can reconstruct our original matrix and compare it to the <code>nmf</code> function.</p>
 <pre class="r"><code>R</code></pre>
-<pre><code>##            [,1]      [,2]      [,3]       [,4]      [,5]      [,6]
-## [1,] 0.87412086 0.8591753 0.2381669 0.05689912 0.6973043 0.6503420
-## [2,] 0.81495388 0.7352183 0.9549480 0.27321662 0.3073933 0.5077807
-## [3,] 0.51374583 0.9971686 0.8533502 0.55234006 0.9874510 0.6516443
-## [4,] 0.07082956 0.4195702 0.8110409 0.28908430 0.9409090 0.6384122
-## [5,] 0.54872302 0.2643405 0.3842576 0.73723061 0.6693175 0.4658784</code></pre>
+<pre><code>##           [,1]       [,2]       [,3]       [,4]      [,5]       [,6]
+## [1,] 0.4007137 0.48988199 0.11730123 0.90561032 0.8786088 0.86731883
+## [2,] 0.2958185 0.06199266 0.20295819 0.12190276 0.2675324 0.60205900
+## [3,] 0.8963035 0.10200525 0.06888566 0.76200470 0.7317623 0.34809631
+## [4,] 0.8569394 0.69137974 0.40093261 0.16341560 0.4682005 0.03118922
+## [5,] 0.9269652 0.63180347 0.35229504 0.01099477 0.1182396 0.19406648</code></pre>
 <pre class="r"><code>nmf_mu_results$W %*% nmf_mu_results$H</code></pre>
-<pre><code>##            [,1]      [,2]      [,3]      [,4]      [,5]      [,6]
-## [1,] 0.87357012 0.8583248 0.2378039 0.0568093 0.6967435 0.6499335
-## [2,] 0.81450839 0.7348660 0.9544500 0.2725086 0.3069009 0.5068854
-## [3,] 0.51275707 0.9963619 0.8529251 0.5521485 0.9865293 0.6520284
-## [4,] 0.07059933 0.4192751 0.8104827 0.2886516 0.9406641 0.6376700
-## [5,] 0.54832529 0.2639211 0.3837289 0.7364991 0.6692947 0.4649581</code></pre>
+<pre><code>##           [,1]       [,2]       [,3]      [,4]      [,5]       [,6]
+## [1,] 0.4005853 0.48923593 0.11595514 0.9050991 0.8781992 0.86675295
+## [2,] 0.2951732 0.06213302 0.20174658 0.1219386 0.2662568 0.60138055
+## [3,] 0.8955237 0.10189408 0.06811523 0.7612996 0.7310528 0.34783766
+## [4,] 0.8571983 0.69020172 0.40000758 0.1621815 0.4671671 0.03153287
+## [5,] 0.9256147 0.63206838 0.35261495 0.0111353 0.1184658 0.19280505</code></pre>
 <p>We get the same results using the <code>nmf</code> function with the <code>lee</code> method.</p>
 <pre class="r"><code>nmf &lt;- nmf(R, dim(R)[1], method = &#39;lee&#39;)
 basis(nmf) %*% coefficients(nmf)</code></pre>
-<pre><code>##            [,1]      [,2]      [,3]       [,4]      [,5]      [,6]
-## [1,] 0.87412379 0.8591727 0.2381586 0.05700366 0.6972973 0.6503406
-## [2,] 0.81494307 0.7352215 0.9549511 0.27321926 0.3074030 0.5077813
-## [3,] 0.51377009 0.9971649 0.8533473 0.55231354 0.9874615 0.6516436
-## [4,] 0.07082576 0.4195742 0.8110426 0.28908299 0.9409065 0.6384128
-## [5,] 0.54871209 0.2643467 0.3842590 0.73724167 0.6693093 0.4658795</code></pre>
+<pre><code>##           [,1]      [,2]       [,3]       [,4]      [,5]       [,6]
+## [1,] 0.3992716 0.4851242 0.13451318 0.91289882 0.8719353 0.86698917
+## [2,] 0.2961278 0.0636697 0.19479112 0.11394434 0.2736916 0.60313470
+## [3,] 0.8956540 0.1081984 0.07613699 0.74973301 0.7425820 0.34928051
+## [4,] 0.8553733 0.6867311 0.42085554 0.17957373 0.4533049 0.03152422
+## [5,] 0.9295931 0.6391867 0.32236372 0.02893233 0.1384885 0.18994336</code></pre>
 Now we will take a look at another method of implementing NMF. This one is called Stochastic Gradient Descent (SGD). A gradient descent is a first-order iterative optimization algorithm to finding a local minimum for a function that is differentiable. In fact, we used the Block Coordinate Descent in the multiplicative update rule. In SGD, we take the derivative of the cost function like before. However, we will now be focusing on taking the derivative of each variable, setting them to zero or lower, solving for the feature variables, and finally updating each feature. We also add a regularization term in the cost function to control for overfitting.
 <div>
 <p><span class="math display">\[||V - WH||_{F}^{2} = \Sigma_{i,j}(V - WH)^{2}_{ij}\]</span></p>
@@ -486,13 +482,9 @@ Now we will take a look at another method of implementing NMF. This one is calle
 <div>
 <p><span class="math display">\[h_{kj} \leftarrow h_{kj} - \eta \frac{\partial}{\partial h_{kj}}e_{ij}^{2}\]</span></p>
 </div>
-<span class="math inline">\(\eta\)</span> is the learning rate and modifies the magnitude that we update the features. We first solve for $ e_{ij}^{2}$.
-<div>
-<p><span class="math display">\[Using the chain rule, \frac{\partial}{\partial h_{kj}}(v_{ij} - \Sigma_{k=1}^{K}w_{ik}h_{kj}) = \frac{\partial u^{2}}{\partial v} \frac{\partial u}{\partial v}, where u = (v_{ij} - \Sigma_{k=1}^{K}w_{ik}h_{kj}) and \frac{\partial u^{2}}{\partial v} = 2u\]</span></p>
-</div>
-<div>
-<p><span class="math display">\[ \frac{\partial}{\partial h_{kj}}e_{ij}^{2} = 2(v_{ij} - \Sigma_{k=1}^{K}w_{ik}h_{kj}) \frac{\partial}{\partial h_{kj}}(v_{ij} - \Sigma_{k=1}^{K}w_{ik}h_{kj}) + 2\lambda h_{kj} \]</span></p>
-</div>
+<p><span class="math inline">\(\eta\)</span> is the learning rate and modifies the magnitude that we update the features. We first solve for <span class="math inline">\(\frac{\partial}{\partial h_{kj}}e_{ij}^{2}\)</span>.</p>
+<p>Using the chain rule, <span class="math inline">\(\frac{\partial}{\partial h_{kj}}(v_{ij} - \Sigma_{k=1}^{K}w_{ik}h_{kj}) = \frac{\partial u^{2}}{\partial v} \frac{\partial u}{\partial v}\)</span>, where <span class="math inline">\(u = (v_{ij} - \Sigma_{k=1}^{K}w_{ik}h_{kj}) and \frac{\partial u^{2}}{\partial v} = 2u\)</span></p>
+<span class="math display">\[ \frac{\partial}{\partial h_{kj}}e_{ij}^{2} = 2(v_{ij} - \Sigma_{k=1}^{K}w_{ik}h_{kj}) \frac{\partial}{\partial h_{kj}}(v_{ij} - \Sigma_{k=1}^{K}w_{ik}h_{kj}) + 2\lambda h_{kj} \]</span>
 <div>
 <p><span class="math display">\[ \frac{\partial}{\partial h_{kj}}e_{ij}^{2} = -2e_{ij}w_{ik} + 2\lambda h_{kj} \]</span></p>
 </div>
@@ -534,20 +526,20 @@ nmf_sgd &lt;- function(A,steps = 50000, lam = 1e-2, lr = 1e-3){
 }</code></pre>
 <pre class="r"><code>nmf_sgd_results &lt;- nmf_sgd(R)
 R</code></pre>
-<pre><code>##            [,1]      [,2]      [,3]       [,4]      [,5]      [,6]
-## [1,] 0.87412086 0.8591753 0.2381669 0.05689912 0.6973043 0.6503420
-## [2,] 0.81495388 0.7352183 0.9549480 0.27321662 0.3073933 0.5077807
-## [3,] 0.51374583 0.9971686 0.8533502 0.55234006 0.9874510 0.6516443
-## [4,] 0.07082956 0.4195702 0.8110409 0.28908430 0.9409090 0.6384122
-## [5,] 0.54872302 0.2643405 0.3842576 0.73723061 0.6693175 0.4658784</code></pre>
+<pre><code>##           [,1]       [,2]       [,3]       [,4]      [,5]       [,6]
+## [1,] 0.4007137 0.48988199 0.11730123 0.90561032 0.8786088 0.86731883
+## [2,] 0.2958185 0.06199266 0.20295819 0.12190276 0.2675324 0.60205900
+## [3,] 0.8963035 0.10200525 0.06888566 0.76200470 0.7317623 0.34809631
+## [4,] 0.8569394 0.69137974 0.40093261 0.16341560 0.4682005 0.03118922
+## [5,] 0.9269652 0.63180347 0.35229504 0.01099477 0.1182396 0.19406648</code></pre>
 <p>The reconstructed method using our NMF function looks like this:</p>
 <pre class="r"><code>nmf_sgd_results[[1]] %*% t(nmf_sgd_results[[2]])</code></pre>
-<pre><code>##            [,1]      [,2]      [,3]       [,4]      [,5]      [,6]
-## [1,] 0.86870995 0.8557007 0.2419405 0.06061034 0.6940688 0.6466071
-## [2,] 0.80994920 0.7337309 0.9477318 0.27346406 0.3113338 0.5068147
-## [3,] 0.51584066 0.9892813 0.8515871 0.54850331 0.9844065 0.6530801
-## [4,] 0.07404926 0.4218344 0.8063295 0.29116910 0.9352736 0.6339187
-## [5,] 0.54499935 0.2675537 0.3851205 0.73001970 0.6668792 0.4643875</code></pre>
+<pre><code>##           [,1]       [,2]       [,3]       [,4]      [,5]       [,6]
+## [1,] 0.4031416 0.48552160 0.11813207 0.90027221 0.8751664 0.86220859
+## [2,] 0.2947061 0.06484878 0.19910116 0.12492977 0.2659008 0.59531443
+## [3,] 0.8898673 0.10631871 0.07049123 0.75713091 0.7285831 0.34892049
+## [4,] 0.8546253 0.68720686 0.39597605 0.16538414 0.4627980 0.03481928
+## [5,] 0.9205705 0.62716189 0.35232043 0.01176342 0.1231614 0.19201868</code></pre>
 <p>As you can see, it is a near approximation of the original matrix. In another post, I will go into detail the differences between each dimensional reduction technique. See below for more information on NMF.</p>
 <p>Sources and additional information:</p>
 <p><a href="https://papers.nips.cc/paper/1861-algorithms-for-non-negative-matrix-factorization.pdf" class="uri">https://papers.nips.cc/paper/1861-algorithms-for-non-negative-matrix-factorization.pdf</a></p>
