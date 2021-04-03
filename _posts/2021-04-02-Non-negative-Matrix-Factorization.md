@@ -13,9 +13,7 @@ data onto a subspace that maximizes variability for the discovered
 features, while NMF discovers non-negative features that are additive in
 nature. NMF is formally defined as:
 
-$$
-$V \\approx WH$
-$$
+$$V \\approx WH$$
 
 where *V* is a non-negative matrix and both *W* and *H* are unique and
 non-negative matrices. In other words, the matrix *V* is factorized into
