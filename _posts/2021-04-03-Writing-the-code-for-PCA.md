@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing code for PCA
+title: Writing the code for PCA
 tags: tutorials bioinformatics R 
 ---
 
