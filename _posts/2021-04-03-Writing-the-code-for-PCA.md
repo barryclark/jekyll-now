@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Writing the code for PCA
-tags: tutorials bioinformatics R 
+tags: tutorials bioinformatics R machine-learning
 ---
 
 
