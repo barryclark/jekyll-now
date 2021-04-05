@@ -102,4 +102,4 @@ it to be. See you in the next post!
 ```
 
 _The title of this post is derived from the content of the journal entry and
-this [2016 viral video](/https://www.youtube.com/watch?v=vbcc8x7j1Lg)._
+this [2016 viral video](https://www.youtube.com/watch?v=vbcc8x7j1Lg)._
