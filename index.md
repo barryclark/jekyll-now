@@ -2,7 +2,6 @@
 layout: default
 title: HUM 331
 ---
-## How do we tell a history of communications technologies with technology?
 
 This blog features the research of students in _A History of Words: Technologies of
 Communication from Cuneiform to Coding_ (HUM 331) taught by Professor Melissa Reynolds in
