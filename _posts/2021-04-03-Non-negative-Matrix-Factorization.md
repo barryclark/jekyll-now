@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Non-negative Matrix Factorization
-tags: tutorials bioinformatics R machine-learning
+tags: tutorials R machine-learning
 ---
 <html>
 
