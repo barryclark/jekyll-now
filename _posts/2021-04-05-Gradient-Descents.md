@@ -1790,9 +1790,9 @@ proc.time() - ptm</code></pre>
 <p>As you can see, we nearly cut out run time in half by just using stochastic gradient descent.</p>
 <p>Additonal Resources:</p>
 <ul>
-<li><a href="https://towardsdatascience.com/gradient-descent-from-scratch-e8b75fa986cc">https://towardsdatascience.com/gradient-descent-from-scratch-e8b75fa986cc</a>{:target=&quot;_blank&quot;}</li>
-<li><a href="https://www.ocf.berkeley.edu/~janastas/stochastic-gradient-descent-in-r.html">https://www.ocf.berkeley.edu/~janastas/stochastic-gradient-descent-in-r.html</a>{:target=&quot;_blank&quot;}</li>
-<li><a href="https://www.r-bloggers.com/2017/02/implementing-the-gradient-descent-algorithm-in-r/">https://www.r-bloggers.com/2017/02/implementing-the-gradient-descent-algorithm-in-r/</a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://towardsdatascience.com/gradient-descent-from-scratch-e8b75fa986cc">https://towardsdatascience.com/gradient-descent-from-scratch-e8b75fa986cc</a></li>
+<li><a href="https://www.ocf.berkeley.edu/~janastas/stochastic-gradient-descent-in-r.html">https://www.ocf.berkeley.edu/~janastas/stochastic-gradient-descent-in-r.html</a></li>
+<li><a href="https://www.r-bloggers.com/2017/02/implementing-the-gradient-descent-algorithm-in-r/">https://www.r-bloggers.com/2017/02/implementing-the-gradient-descent-algorithm-in-r/</a></li>
 </ul>
 
 
