@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Course Description
+title: Syllabus
 permalink: /syllabus/
 ---
 
 Click [here](https://docs.google.com/document/d/e/2PACX-1vRPvBDiCU6VjQxC-F1qKW_SY0HiT_WL08xS7Bpwx9WU_e2LLnCA1_uMjWnd3lPEw4nVjp6vrCIJW1ue/pub)
-to view the complete course syllabus on Google Docs.
+to view the complete course syllabus in Google Docs.
 
 How do the methods, materials, and technologies of human communication shape
 religion, politics, popular culture, and the circulation of knowledge? Can we
