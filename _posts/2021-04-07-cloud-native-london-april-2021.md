@@ -4,7 +4,7 @@ title: "Cloud Native London April 2021: JFrog, StorageOS, and Snyk"
 description: "three speakers from JFrog, StorageOS, and Snyk join us at the Cloud Native London meetup April 2021, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
 image: /images/CNL_2020-12-02_Rambly.jpg
-video: https://www.youtube.com/embed/5YgjQA87prI
+video: https://www.youtube.com/embed/TjiFLnRZLFc
 tags:
   - Photos
   - Video
