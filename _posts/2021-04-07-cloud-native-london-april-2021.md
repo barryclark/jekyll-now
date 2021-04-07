@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Join us at the April Cloud Native London virtual meetup tonight to hear three fantastic speakers from JFrog, StorageOS, and Snyk, on Rambly and YouTube from 6:45pm BST!
