@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Second entru
+title: Second entry
 ---
 
 # Header
