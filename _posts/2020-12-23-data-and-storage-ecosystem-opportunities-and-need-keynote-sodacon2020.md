@@ -5,7 +5,6 @@ description: "Cheryl Hung, VP Ecosystem at CNCF, presents at SODACON 2020"
 image: https://i.ytimg.com/vi/WMCBjojxhyQ/maxresdefault.jpg
 video: https://www.youtube.com/embed/WMCBjojxhyQ
 slides: //www.slideshare.net/slideshow/embed_code/key/7inFNBVq4Zc2x3
-published: false
 tags:
   - Video
   - "2020"
