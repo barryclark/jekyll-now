@@ -3,6 +3,11 @@ layout: page
 title: News
 permalink: /news/
 ---
+## 2021
+
+__April__
+ - Launched registration for the [10th Annual Postdoc Career Symposium](https://whova.com/portal/registration/apcs_202010)
+
 ## 2020
 
 __August__
