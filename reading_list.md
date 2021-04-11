@@ -3,6 +3,13 @@ layout: page
 title: Reading List
 permalink: /reading_list/
 ---
+
+## 2021
+__Non-Fiction__
+ - Blink: The Power of Thinking Without Thinking by Malcom Gladwell
+ - The Psychology of Money: Timeless lessons on wealth, greed, and happiness by Morgan Housel
+ - Irrational Exuberance by Robert J. Shiller
+
 ## 2020
 __Non-Fiction__
  - How Not to Be Wrong: The Power of Mathematical Thinking by Jordan Ellenberg, PhD
