@@ -15,6 +15,7 @@ import SupportThirdContainer from './components/supports/SupportThirdContainer.v
 import SupportBack from './components/supports/SupportBack.vue'
 import Graph from './components/staffs/Graph.vue'
 import Members from './components/staffs/Members.vue'
+import MembersLogin from './components/staffs/MembersLogin.vue'
 import Contact from './components/contacts/Form.vue'
 
 Vue.use(Router)
@@ -42,7 +43,8 @@ export default new Router({
       components: {
         default: Hero,
         sec: Graph,
-        third: Members
+        third: Members,
+        fourth: MembersLogin
       }
     },
     {

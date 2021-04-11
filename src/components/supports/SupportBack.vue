@@ -60,12 +60,18 @@
 </div>
 </div>
 </div>
+
 </main>
 </template>
 
 <style scoped>
+
+
+
 main{
-  background-color: #3f1130;
+  height: 100%;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 1em, rgba(105,193,159, 0.4) 0, rgba(105,193,159, 0.1) 2em, transparent 0, transparent 1em, rgba(105,193,159, 0.3) 0, rgba(105,193,159, 0.2) 4em, transparent 0, transparent 1em, rgba(170,213,164, 0.6) 0, rgba(170,213,164, 0.2) 2em), repeating-linear-gradient(45deg, transparent, transparent 1em, rgba(105,193,159, 0.4) 0, rgba(105,193,159, 0.1) 2em, transparent 0, transparent 1em, rgba(105,193,159, 0.3) 0, rgba(105,193,159, 0.2) 4em, transparent 0, transparent 1em, rgba(170,213,164, 0.4) 0, rgba(170,213,164, 0.1) 2em), #FFF;
+  background-blend-mode: multiply;
 }
 #app {
   display: flex;
