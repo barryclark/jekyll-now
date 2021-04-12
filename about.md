@@ -18,8 +18,6 @@ Fav OS - Any but prefer linux
 Fav lang - python
 Fav hobby - build equipment to test network and increase wireless security.
 
-<script src="https://tryhackme.com/badge/148051"></script>
-
 ### Contact me
 
 [harsimransidhu770@gmail.com](mailto:harsimransidhu770@gmail.com)
