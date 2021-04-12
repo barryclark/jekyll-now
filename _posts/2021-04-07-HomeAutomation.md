@@ -20,7 +20,7 @@ So i was able to spin up a HASSIO server on my raspi. and let me tell you it is 
 
 Now To explain What is HASSIO > 
 
-# What is HASSIO ?
+## What is HASSIO ?
 
 Home Assistant is an open-source home automation platform running on Python 3. Track and control all devices at home and automate control. 
 - [HASSIO](https://www.home-assistant.io/blog/2016/01/19/perfect-home-automation/)
