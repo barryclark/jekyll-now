@@ -1,47 +1,50 @@
 <template>
   <div>
     <div class="form-container relative overflow-hidden row">
-      <main class='lg:container flex items-center'>
-        <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display text-gray-900 sm:text-3xl sm:leading-9'>
-          お問い合わせ<br>
+      <main class='container flex items-center'>
+        <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display white-text lighten-5-text sm:text-3xl sm:leading-9'>
+          お問い合わせ
         </t-tag>
       </main>
     </div>
-    <!-- formUrl: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScszXtPiIsOfWGg8TrWCd4Am4OU_7p_6YJYk9GG4MMhPuWVlg/formResponse', -->
     <div class="form-container relative overflow-hidden row">
       <div class="container">
-        <form class="col s10" v-show="!submitted" name="contactForm" method="POST" :action="formData.formUrl" @submit.prevent="submitForm()">
-          <listitem v-for="(item, index) in formData" v-bind:key="item" :item="item" :index="index">
+        <t-alert class="" v-show="submitted" variant="error">
+          お問い合わせ内容を送信しました。
+        </t-alert>
+        <form class="col s10" v-show="!submitted" name="contactForm" method="POST" target="hidden_iframe" :action="formUrl" @submit.prevent="submitForm()">
+          <div v-for="(item, index) in formData" v-bind:key="index" :item="item" :index="index">
             <div class="row">
               <div class="input-field col s5" v-if="index!==2">
-                <input id="" :name="item.name" type="text" class="validate">
-                <label for="first_name">{{item.label}}</label>
+                <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="text" class="validate">
+                <label :for="'entry.'+item.name">{{item.label}}</label>
+                <t-tag v-if="index==1" class='white-text lighten-5-text'>
+                  ※返信を必要とする場合は必ず記入してください
+                </t-tag>
               </div>
               <div class="input-field col s5" v-else-if="index==2">
                 <p>
                   <label>{{item.question}}</label>
                 </p>
-                <select>
+                <select :id="'entry.'+item.name" :name="'entry.'+item.name">
                   <option value="" disabled selected>{{item.label}}</option>
-                  <option v-for="(op, idx) in item.options" v-bind:key="op" :item="op" :index="idx" value="1">{{op}}</option>
+                  <option v-for="(op, idx) in item.options" v-bind:key="op" :item="op" :index="idx" :value="op">{{op}}</option>
                 </select>
               </div>
               <div class="row" v-else-if="index==3">
                 <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
-                  <label for="textarea1">Textarea</label>
+                  <textarea :id="'entry.'+item.name" name="item.name" class="materialize-textarea" length="120"></textarea>
+                  <label :for="'entry.'+item.name">Textarea</label>
                 </div>
               </div>
               <div v-else></div>
             </div>
-          </listitem>
+          </div>
 
           <button class="waves-effect waves-light btn">送信</button>
         </form>
       </div>
-
     </div>
-
   </div>
 </template>
 
@@ -62,6 +65,16 @@ select {
 }
 textarea {
   height: 10rem;
+}
+input[type="text"]:not(.browser-default):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
+  color: #fff;
+}
+input[type="text"]:not(.browser-default):focus:not([readonly]), input.valid[type="text"]:not(.browser-default) {
+  box-shadow: 0 1px 0 0 #fff;
+}
+.waves-effect {
+  color: #2F7DC0;
+  background-color: #fafafa;
 }
 </style>
 
@@ -106,7 +119,7 @@ export default {
   },
   methods: {
     submitForm: function() {
-      document.contactForm.subit().then(result => {
+      document.contactForm.submit().then(result => {
         //Slackに通知
         result
       });
@@ -114,7 +127,11 @@ export default {
   },
   created() {
     // this.putsFormData();
-    var thankyouComp = document.createElement("div");
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute('name','hidden_iframe');
+    iframe.setAttribute('style','display: none');
+    document.body.appendChild(iframe);
+    var thankyouComp = document.createElement("t-alert");
     thankyouComp.setAttribute('style', '');
     document.body.appendChild(thankyouComp);
   },
