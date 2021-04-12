@@ -7,55 +7,35 @@
         </t-tag>
       </main>
     </div>
+    <!-- formUrl: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScszXtPiIsOfWGg8TrWCd4Am4OU_7p_6YJYk9GG4MMhPuWVlg/formResponse', -->
     <div class="form-container relative overflow-hidden row">
-      <div class="row">
-        <form class="col s10" v-show="!submitted" name="contactForm" method="POST" :action="formData.doc" @submit.prevent="submitForm()">
-          <!-- <listitem v-bind:key="item.id" v-for="item in formInputs.formData" :item="item" :index="index"></listitem> -->
-          <listitem v-for="(item, index) in formData" v-bind:key="item.formInputs" :item="item" :index="index">
-            <div class="input-field col s5">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">{{item[0]['label']}}</label>
+      <div class="container">
+        <form class="col s10" v-show="!submitted" name="contactForm" method="POST" :action="formData.formUrl" @submit.prevent="submitForm()">
+          <listitem v-for="(item, index) in formData" v-bind:key="item" :item="item" :index="index">
+            <div class="row">
+              <div class="input-field col s5" v-if="index!==2">
+                <input id="" :name="item.name" type="text" class="validate">
+                <label for="first_name">{{item.label}}</label>
+              </div>
+              <div class="input-field col s5" v-else-if="index==2">
+                <p>
+                  <label>{{item.question}}</label>
+                </p>
+                <select>
+                  <option value="" disabled selected>{{item.label}}</option>
+                  <option v-for="(op, idx) in item.options" v-bind:key="op" :item="op" :index="idx" value="1">{{op}}</option>
+                </select>
+              </div>
+              <div class="row" v-else-if="index==3">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+                  <label for="textarea1">Textarea</label>
+                </div>
+              </div>
+              <div v-else></div>
             </div>
           </listitem>
-          <div class="row">
-            <div class="input-field col s5">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
-            </div>
-            <div class="input-field col s5">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="input-field col s10">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s10">
-              <p>
-                <label>Materialize Select</label>
-              </p>
-              <select>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="row">
-              <div class="input-field col s10">
-                <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
-                <label for="textarea1">Textarea</label>
-              </div>
-            </div>
-          </div>
           <button class="waves-effect waves-light btn">送信</button>
         </form>
       </div>
@@ -86,12 +66,41 @@ textarea {
 </style>
 
 <script>
-import formData from './form-data.js'
-
 export default {
   data() {
     return {
-      formData: {},
+      formUrl: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScszXtPiIsOfWGg8TrWCd4Am4OU_7p_6YJYk9GG4MMhPuWVlg/formResponse',
+      formData: [
+      {
+        name: 842797987,
+        question: 'お名前',
+        questionType: 'text',
+        label: 'お名前',
+        validate: true
+      },
+      {
+        name: 1078512650,
+        question: 'メールアドレス',
+        questionType: 'text',
+        label: 'メールアドレス',
+        validate: true
+      },
+      {
+        name: 1506558776,
+        question: 'お問い合わせ区分',
+        questionType: 'radio',
+        label:  'お問い合わせ区分を選択してください',
+        options: ['運営について', 'ボランティア参加について', 'ニンジャ参加について', '取材について'],
+        validate: true
+      },
+      {
+        name: 1668971609,
+        question: 'メッセージ',
+        questionType: 'text',
+        label: 'メッセージ',
+        validate: true
+      }
+      ],
       submitted: false
     };
   },
@@ -101,13 +110,10 @@ export default {
         //Slackに通知
         result
       });
-    },
-    putsFormData: function() {
-      this.formData = formData;
     }
   },
   created() {
-    this.putsFormData();
+    // this.putsFormData();
     var thankyouComp = document.createElement("div");
     thankyouComp.setAttribute('style', '');
     document.body.appendChild(thankyouComp);
