@@ -22,8 +22,8 @@ Now To explain What is HASSIO >
 
 ## What is HASSIO ?
 
-Home Assistant is an open-source home automation platform running on Python 3. Track and control all devices at home and automate control. 
-- [HASSIO](https://www.home-assistant.io/blog/2016/01/19/perfect-home-automation/)
+"Home Assistant is an open-source home automation platform running on Python 3. Track and control all devices at home and automate control" -[HASSIO](https://www.home-assistant.io/blog/2016/01/19/perfect-home-automation/)
 
 I really recommmend starting this as your Home Assistant *****.
+
 You can get your own HASSIO by following their installation intructions : [HASSIO](https://www.home-assistant.io/installation/)
