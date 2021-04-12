@@ -4,8 +4,8 @@ title: "Home Automation open source project"
 ---
 
 # Welcome
-Today, We will talk about home automation with home assistant that runs on Raspi. Have you ever heard about it?
-Well I have, and I am here to tell you about it. So before we get to home assistant, we should understand what is home automation.
+"Today, We will talk about home automation with home assistant that runs on Raspi. Have you ever heard about it?
+Well I have, and I am here to tell you about it. So before we get to home assistant, we should understand what is home automation."
 
 ## What is home automation ?
 
