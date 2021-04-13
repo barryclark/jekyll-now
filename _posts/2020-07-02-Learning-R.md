@@ -18,6 +18,8 @@ This is a curated collection of R educational materials for learning R. I will a
 
 - [Another Book on Data Science](https://www.anotherbookondatascience.com){:target="_blank"}
 
+-[Data Analysis and Prediction Algorithms with R](https://rafalab.github.io/dsbook/){:target="_blank"}
+
 ## Tutorials/Workshops
 
 - [R Tutorial for Beginners: Learn R Programming Language](https://www.guru99.com/r-tutorial.html){:target="_blank"}
