@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: Introducción
 permalink: /about/
 ---
 
-Some information about you!
+Para que pueda surgir lo posible. Es preciso intentar una y otra vez lo imposible.!!
 
-### More Information
+### En pocas palabras
+Apasionado por descubrir y experimentar nuevas tecnoligias, pasar de los sistemas inteligetes a las desciciones inteligentes
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+### Contacto
 
-[email@domain.com](mailto:email@domain.com)
+[maniac787](mailto:maniac787@gmail.com)
