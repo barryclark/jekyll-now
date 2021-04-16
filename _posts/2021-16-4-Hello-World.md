@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lets goo
+title: Lets gooo!
 ---
 
 Welcome to my blog lol
