@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Just a blog about some experiences as a software developer.
 
 ### More Information
 
