@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Class 1 - BioHack Academy
 published: true
 ---
 
