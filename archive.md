@@ -4,6 +4,16 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### April 16th, 2021 thoughts & takeaways:
+
+* During March, the Governor rescinded all COVID restrictions for the state. The City of Austin still has a mask mandate in place, for now. The relaxing of restrictions, along with the roll out of the vaccine have combined to increase traffic volumes to above 80% of normal traffic conditions. Some days have been closer to 90% of typical traffic, especially on weekends and on Fridays.
+
+* Both TSA checkpoint passengers and micromobility trips saw a big spike during spring break. 
+
+* The Google Mobility data shows "residential" trips are at low point since this time last year. This means more trips people are taking are less "home-based" than they were during the height of the lockdowns. 
+
+***
+
 ### March 8th, 2021 thoughts & takeaways:
 
 * We had quite the winter storm during the week of President's Day. The airport saw no passengers for almost three days and traffic incidents hit record highs. Valentine's Day saw an insane 400 traffic incidents reports. Due to the power outages the city's website and 3-1-1 service was down for parts of February 15th which likely broke a lot of the data collection on the City's end. Many intersections (7 of 13) were not reporting any traffic volumes due to the signal being completely dark. I've averaged the missing data to get a sense of what volumes we might have seen out there.
