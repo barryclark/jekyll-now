@@ -14,7 +14,7 @@ After some consideration and reading [the docs](https://docs.mongodb.com/manual/
 
 Instead of storing the references as an ObjectId, for some reason, I was storing them as plain String. At first, this did not cause any problem, which was kind of surpising in hindsight. I was able to implement endpoints to query by id, do projections, filter by certain fields and on.
 
-Then I tried to add an endpoint, wich requires to do a lookup involving multiple documents which are referenced. (in sql lingo: joining tables). 
+Then I tried to add an endpoint, which fetches those nested documents and outputs the parent object and the child object in one Json. This requires an aggregation pipeline with a lookup operation for each nested document (in sql lingo: we want to join tables). 
 
 ```
 db.test_data.aggregate([
@@ -30,7 +30,9 @@ db.test_data.aggregate([
 ```
 This is were the problems started.
 I was getting strange errors regarding the Bson size limit, which did not help a lot to understand what the problem was.
-// TODO real error message
+```
+com.mongodb.MongoCommandException: Command failed with error 10334 (BSONObjectTooLarge): 'BSONObj size: 22881537 (0x15D2501) is invalid. Size must be between 0 and 16793600(16MB) First element: _id: ObjectId('607dadabe9099700b688d510')' on server localhost:27018. The full response is {"ok": 0.0, "errmsg": "BSONObj size: 22881537 (0x15D2501) is invalid. Size must be between 0 and 16793600(16MB) First element: _id: ObjectId('607dadabe9099700b688d510')", "code": 10334, "codeName": "BSONObjectTooLarge"}
+```
 
 ## Solution
 
