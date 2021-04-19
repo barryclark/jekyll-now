@@ -3,8 +3,8 @@ layout: post
 title: fun with mongodb
 ---
 
-Recently I had a problem with mongoDB and Spring data mongoDb, which was mostly my own fault. That is what happens when you go into a project without a realy clue about the technology.
-In Mongodb there are basically 2 ways to refenrence other documentes, or to roughly translate it for people, who like myself, have a much bigger background in sql: a Foreign key relationship.
+Recently I had a problem with mongoDB and Spring data mongoDb, which was mostly my own fault. That is what happens when you go into a project without a real clue about the technology.
+In Mongodb there are basically 2 ways to reference other documents, or to roughly translate it for people, who like myself, have a much bigger background in SQL: a Foreign key relationship.
 1. Manual referencing
 2. DBRef
 
@@ -12,9 +12,9 @@ After some consideration and reading [the docs](https://docs.mongodb.com/manual/
 
 ## Problem
 
-Instead of storing the references as an ObjectId, for some reason, I was storing them as plain String. At first, this did not cause any problem, which was kind of surpising in hindsight. I was able to implement endpoints to query by id, do projections, filter by certain fields and on.
+Instead of storing the references as an ObjectId, for some reason, I was storing them as plain String. At first, this did not cause any problem, which was kind of surprising in hindsight. I was able to implement endpoints to query by id, do projections, filter by certain fields and so on.
 
-Then I tried to add an endpoint, which fetches those nested documents and outputs the parent object and the child object in one Json. This requires an aggregation pipeline with a lookup operation for each nested document (in sql lingo: we want to join tables). 
+Then I tried to add an endpoint, which fetches those nested documents and outputs the parent object and the child object in one JSON. This requires an aggregation pipeline with a lookup operation for each nested document (in SQL lingo: we want to join tables). 
 
 ```
 db.test_data.aggregate([
@@ -28,7 +28,7 @@ db.test_data.aggregate([
         }
     }
 ```
-This is were the problems started.
+This is where the problems started.
 I was getting strange errors regarding the Bson size limit, which did not help a lot to understand what the problem was.
 ```
 com.mongodb.MongoCommandException: Command failed with error 10334 (BSONObjectTooLarge): 'BSONObj size: 22881537 (0x15D2501) is invalid. Size must be between 0 and 16793600(16MB) First element: _id: ObjectId('607dadabe9099700b688d510')' on server localhost:27018. The full response is {"ok": 0.0, "errmsg": "BSONObj size: 22881537 (0x15D2501) is invalid. Size must be between 0 and 16793600(16MB) First element: _id: ObjectId('607dadabe9099700b688d510')", "code": 10334, "codeName": "BSONObjectTooLarge"}
@@ -62,10 +62,10 @@ private String referencedObjectId;
 ```
 
 ## Migration
-Since the old version of the datamodel was already in use on a server, I could not just delete the old data and start from scratch, but I needed a migration script to convert the Strings in the existing data to ObjectIds.
+Since the old version of the data model was already in use on a server, I could not just delete the old data and start from scratch, but I needed a migration script to convert the Strings in the existing data to ObjectIds.
 
 
-I came up with the follwing script, wich is inspired by this [SO post](https://stackoverflow.com/questions/37718005/change-document-value-from-string-to-objectid-using-update-query)
+I came up with the following script, which is inspired by this [SO post](https://stackoverflow.com/questions/37718005/change-document-value-from-string-to-objectid-using-update-query)
 
 ```
 var requests = [];
@@ -103,7 +103,7 @@ if (requests.length > 0)
 ```
 
 ## Spring data mongoTemplate Query
-Now with that Problem out of the way, I only needed to translate the raw mongo query into an eqivalent Spring data query.
+Now with that Problem out of the way, I only needed to translate the raw mongo query into an equivalent Spring data query.
 ```
         LookupOperation lookup1 = Aggregation.lookup("test_data", // Join Table
                 "referencedObjectId",// Query table fields
@@ -121,7 +121,7 @@ TypedAggregation<TestData> typedAggregation =
         List<TestDataDTO> resultList = aggregationResults.getMappedResults();
 ```
 
-With the TestDataDTO just beeing a POJO with the referenced Objects instead of the IDs:
+The TestDataDTO is just a POJO with the referenced Objects instead of the IDs:
 ```
 public class TestDataDTO {
 
