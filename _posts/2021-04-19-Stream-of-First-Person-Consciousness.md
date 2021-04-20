@@ -2,7 +2,7 @@
 layout: post
 author: Savannah Pobre
 excerpt_separator: <!--excerpt-->
-title: Stream of First Person Consciousness--A Look at Three of William Faulkner's Works
+title: Stream of First Person Consciousness - A Look at Three of William Faulkner's Works
 ---
 
 ## The Visualization of the Network
