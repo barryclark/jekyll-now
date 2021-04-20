@@ -7,6 +7,8 @@ permalink: /news/
 
 __April__
  - Launched registration for the [10th Annual Postdoc Career Symposium](https://whova.com/portal/registration/apcs_202010)
+ - Invited as a panelist for a Town Hall to discuss Racism in science with a special focus on Asian trainees and Asian Americans
+ - Presenting DNA Day to high school and middle school students to learn about DNA and biomedical careers
 
 ## 2020
 
