@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Littlepeon: name comes from the game of Warcraft. Was almost killed-off by an opponent. He killed all my warriors but left my grunt soldiers. He went off after the other combatants. Later I came back in an airship and kill them all.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Also called Warcraftpeon on some sites.
 
 ### Contact me
 
