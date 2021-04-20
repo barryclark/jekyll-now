@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>TX Vaccinations By Zip Code</title>
+<title>Travis County 2021 Election Voter Turnout</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
@@ -115,17 +115,18 @@
 </head>
 <body>
 <div id='map'></div>
-<div class='map-overlay' id='features'><h2>Texas Vaccinations by Zip Code</h2>
+<div class="map-overlay" id="legend"><p>% of Registered</p></div>
+<div class='map-overlay' id='features'><h2>Travis County 2021 Voter Turnout</h2>
     <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
-        <div id='pd2'><p><a href="https://dshs.texas.gov/coronavirus/AdditionalData.aspx">Data: from TX DSHS 3/15/2021</a></p></div>
+        <div id='pd2'><p>UNOFFICIAL - Complete Early Vote</p></div></div></div>
     
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxpZTIzNDMiLCJhIjoiY2p1MzBiYWRlMDF3eTRlczdoaHFxMzl0MCJ9.juqQvFAijgos8InomJ-R7A';
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxpZTIzNDMiLCJhIjoiY2tnaWlnOTRyMGk5djJybGYzaThqeXQzdyJ9.kRWf1VawXRygKy2w7hNT1w';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/charlie2343/cklwm7q1h0j9217o9guwqlbkd',
+        style: 'mapbox://styles/charlie2343/ckgjy2anp1kbm1amvehn0h1ql',
         center: [-97.747875,30.268937],
-        zoom: 8
+        zoom: 10
     });
     var hoveredStateId = null;
 
@@ -134,22 +135,93 @@
  
     // disable map rotation using touch rotation gesture
     map.touchZoomRotate.disableRotation();
-            
-   map.on('click','choropleth-fill copy', function (e) {
-   //var coordinates = e.features[0].geometry.coordinates.slice();
-   //set popup text 
-   //You can adjust the values of the popup to match the headers of your CSV. 
-   // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
-   pct = e.features[0].properties.percent*100
-   pct = pct.toFixed(2);
 
-    var description = `<h3>`+ `Zip Code: ` + e.features[0].properties.ZIP + `</h3>` + `<h4>` + `<b>` + `Fully Vaccinated: ` + `</b>` + e.features[0].properties.People_Ful + `</h4>` + `<h4>` + `<b>` + `Population (2016): ` + `</b>` + e.features[0].properties.seven +`</h4>` + `<h4>` + `<b>` + `Percent Vaccinated: ` + `</b>` +pct + `%` +`</h4>`; 
+    map.on('load', function () {
+        map.addSource('precincts', {
+            'type': 'geojson',
+            'data':
+                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Travis%20County%20Turnout.geojson'
+        });
+        map.addLayer({
+            'id': 'fills',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'visible'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','turnout'],
+                0,
+                '#eff3ff',
+                0.2,
+                '#bdd7e7',
+                0.4,
+                '#6baed6',
+                0.6,
+                '#3182bd',
+                0.8,
+                '#08519c'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
 
-      new mapboxgl.Popup()
-       .setLngLat(e.lngLat)
-       .setHTML(description)
-       .addTo(map);
-     });
+        },
+        'waterway-label'
+        );
+
+        var legendlayers = [
+              '0-19%', 
+              '20-39%', 
+              '40-59%', 
+              '60-79%', 
+              '80-100%', 
+            ];
+            var colors = [
+              '#eff3ff', 
+              '#bdd7e7', 
+              '#6baed6', 
+              '#3182bd', 
+              '#08519c', 
+            ];
+
+            for (i = 0; i < legendlayers.length; i++) {
+              var layer = legendlayers[i];
+              var color = colors[i];
+              var item = document.createElement('div');
+              var key = document.createElement('span');
+              key.className = 'legend-key';
+              key.style.backgroundColor = color;
+
+              var value = document.createElement('span');
+              value.innerHTML = layer;
+              item.appendChild(key);
+              item.appendChild(value);
+              legend.appendChild(item);
+            }
+
+             map.on('click','fills', function (e) {
+              //var coordinates = e.features[0].geometry.coordinates.slice();
+
+              //set popup text 
+              //You can adjust the values of the popup to match the headers of your CSV. 
+              // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
+
+              percent = e.features[0].properties.Turnout*100
+              percent = percent.toFixed(2);
+
+              var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.Active_Registered_Voters + `</h4>` + `<h4>` + `<b>` + `Mail-in Votes: ` + `</b>` + e.features[0].properties.Mail_in_Votes + `</h4>`+ `<h4>` + `<b>` + `In Person Votes: ` + `</b>` + e.features[0].properties.Early_Votes + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + percent + `%` +`</h4>`;
+
+              new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(description)
+                .addTo(map);
+            });
+        
+    }
+
+    );
+
 
 </script>
 
