@@ -8,7 +8,7 @@ title: Actors in the MCU
 # Research Summary
 
 The research question I wanted to investigate was which actors in the Marvel Cinemetic Universe (MCU) were in which films. 
-In particular, I wanted to see if certain actors were in more films and which films had the biggest ensemble casts in which actors were also in other films. 
+In particular, I wanted to see if certain actors were in more films and which films had the biggest ensemble casts. 
 For instance, I expected the Avengers movies to have a lot of actors, and I expected those actors to have also been in other MCU movies. I wanted to investigate that
 question since the MCU is one of the biggest and impactful franchises in the modern day. Thus, the actors cast in the movies, especially the ones who appear most frequently, are influential celebrities.
 Additionally, I thought it was interesting to see actors and the movies they were cast in during the silent era, and examining actors in the MCU seemed like the modern day equivalent. 
