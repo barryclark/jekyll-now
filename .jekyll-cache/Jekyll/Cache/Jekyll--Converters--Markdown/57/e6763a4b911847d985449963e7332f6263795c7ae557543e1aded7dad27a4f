@@ -1,0 +1,20 @@
+I"«<h2 id="the-document">The Document</h2>
+<p><a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&amp;d=Princetonian20010309-01.1.1&amp;e=-------en-20--21--txt-txIN-advertisement-ILLUSTRATION-----">Daily Princetonian</a>, Volume 125, Number 26, 9 March 2001</p>
+
+<h2 id="tei-markup">TEI Markup</h2>
+<h3 id="the-daily-princetonian-header">The Daily Princetonian Header</h3>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ad/&gt;</span>
+<span class="nt">&lt;ad/&gt;</span>
+<span class="nt">&lt;ad/&gt;</span>
+<span class="nt">&lt;div1</span> <span class="na">type=</span><span class="s">"nameplate"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;pb/&gt;</span>
+<span class="nt">&lt;head&gt;&lt;i&gt;</span>THE DAILY<span class="nt">&lt;/i&gt;</span> PRINCETONIAN<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;ab&gt;&lt;num</span> <span class="na">type=</span><span class="s">"volume"</span> <span class="na">value=</span><span class="s">"CXXV No.26"</span><span class="nt">&gt;</span>Vol. CXXV, No.26<span class="nt">&lt;/num&gt;</span>
+<span class="nt">&lt;nm</span> <span class="na">type=</span><span class="s">"place"</span><span class="nt">&gt;</span>Princeton, New Jersey<span class="nt">&lt;/nm&gt;</span>,
+<span class="nt">&lt;date</span> <span class="na">value=</span><span class="s">"2001-03-01"</span><span class="nt">&gt;</span>Friday, March 9, 2001<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;date</span> <span class="na">value=</span><span class="s">"2001"</span><span class="nt">&gt;</span>copyright<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;num</span> <span class="na">type=</span><span class="s">"cost"</span> <span class="na">value=</span><span class="s">"30"</span><span class="nt">&gt;</span>30 cents<span class="nt">&lt;/num&gt;&lt;/ab&gt;</span>
+<span class="nt">&lt;/div1&gt;</span>
+</code></pre></div></div>
+
+:ET

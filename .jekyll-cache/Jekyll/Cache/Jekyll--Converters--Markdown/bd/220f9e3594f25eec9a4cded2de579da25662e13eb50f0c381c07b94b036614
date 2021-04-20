@@ -1,0 +1,69 @@
+I"M&<h2 id="the-document">The Document</h2>
+<p><a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&amp;d=Princetonian20010309-01.1.1&amp;e=-------en-20--21--txt-txIN-advertisement-ILLUSTRATION-----">Daily Princetonian</a>, Volume 125, Number 26, 9 March 2001</p>
+
+<h2 id="tei-markup">TEI Markup</h2>
+<h3 id="the-daily-princetonian-header">The Daily Princetonian Header</h3>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ad/&gt;</span>
+<span class="nt">&lt;ad/&gt;</span>
+<span class="nt">&lt;ad/&gt;</span>
+<span class="nt">&lt;div1</span> <span class="na">type=</span><span class="s">"nameplate"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;pb/&gt;</span>
+<span class="nt">&lt;head&gt;&lt;i&gt;</span>THE DAILY<span class="nt">&lt;/i&gt;</span> PRINCETONIAN<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;ab&gt;&lt;num</span> <span class="na">type=</span><span class="s">"volume"</span> <span class="na">value=</span><span class="s">"CXXV No.26"</span><span class="nt">&gt;</span>Vol. CXXV, No.26<span class="nt">&lt;/num&gt;</span>
+<span class="nt">&lt;nm</span> <span class="na">type=</span><span class="s">"place"</span><span class="nt">&gt;</span>Princeton, New Jersey<span class="nt">&lt;/nm&gt;</span>,
+<span class="nt">&lt;date</span> <span class="na">value=</span><span class="s">"2001-03-01"</span><span class="nt">&gt;</span>Friday, March 9, 2001<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;date</span> <span class="na">value=</span><span class="s">"2001"</span><span class="nt">&gt;</span>copyright<span class="nt">&lt;/date&gt;</span>
+<span class="nt">&lt;num</span> <span class="na">type=</span><span class="s">"cost"</span> <span class="na">value=</span><span class="s">"30"</span><span class="nt">&gt;</span>30 cents<span class="nt">&lt;/num&gt;&lt;/ab&gt;</span>
+<span class="nt">&lt;/div1&gt;</span>
+</code></pre></div></div>
+<!--more-->
+<h3 id="the-daily-princetonian-column">The Daily Princetonian Column</h3>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div1</span> <span class="na">type=</span><span class="s">"weekly wrap-up"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;&lt;i&gt;</span>Weekly Wrap-Up<span class="nt">&lt;/i&gt;&lt;/head&gt;</span>
+<span class="nt">&lt;div2</span> <span class="na">type=</span><span class="s">"dean’s list"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>Dean’s List<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;emjup&gt;&lt;/emjup&gt;</span>
+<span class="nt">&lt;p&gt;&lt;i&gt;</span>COACH THOMPSON '88 <span class="nt">&lt;/i &gt;</span> Leads <span class="nt">&lt;tm&gt;</span>Tigers<span class="nt">&lt;/tm&gt;</span> to <span class="nt">&lt;br&gt;</span>Ivy League<span class="nt">&lt;/br&gt;</span> <span class="nt">&lt;sp&gt;</span>championship<span class="nt">&lt;/sp&gt;</span> and gets it right when noting, “I think that cupboard wasn’t as bare as you thought it was.” <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;emjup&gt;&lt;/emjup&gt;</span>
+<span class="nt">&lt;p&gt;&lt;i&gt;</span>UNIVERSITY WORKERS<span class="nt">&lt;/i&gt;</span> <span class="nt">&lt;ttl&gt;</span>Vice president<span class="nt">&lt;/ttl&gt;</span> <span class="nt">&lt;nm&gt;</span>Dick Spies <span class="nt">&lt;/nm&gt;&lt;yr&gt;</span>GS ‘72<span class="nt">&lt;/yr&gt;</span> responds to concerns, promising to look into employment and compensation policies. <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div2&gt;</span>
+<span class="nt">&lt;div3</span> <span class="na">type=</span><span class="s">"dean’s warning"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;emjdwn&gt;&lt;/emjdwn&gt;</span>
+<span class="nt">&lt;p&gt;&lt;i&gt;&lt;tm&gt;</span>QUAKERS<span class="nt">&lt;/tm&gt;&lt;/i&gt;</span> Heavy pre-season favorites to win the <span class="nt">&lt;br&gt;</span>Ivy League<span class="nt">&lt;/br&gt;</span>, <span class="nt">&lt;schl&gt;</span>Penn<span class="nt">&lt;/schl&gt;</span>was mauled by <span class="nt">&lt;schl&gt;</span>Princeton<span class="nt">&lt;/schl&gt;</span> twice en route to a disappointing record. <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;emjdwn&gt;&lt;/emjdwn&gt;</span>
+<span class="nt">&lt;p&gt;&lt;i&gt;&lt;pl&gt;</span>NEW JERSEY<span class="nt">&lt;/pl&gt;&lt;/i&gt;</span> <span class="nt">&lt;wthr&gt;</span>Forecasts<span class="nt">&lt;/wthr&gt;</span> of <span class="nt">&lt;ms&gt;</span>two to three feet<span class="nt">&lt;/ms&gt;</span> of snow for the <span class="nt">&lt;pl&gt;</span>Garden State<span class="nt">&lt;/pl&gt;</span> fail to materialize. <span class="nt">&lt;sar&gt;</span>Seems even <span class="nt">&lt;wthr&gt;</span>blizzards<span class="nt">&lt;/wthr&gt;</span> like to avoid the armpitof <span class="nt">&lt;pl&gt;</span>America<span class="nt">&lt;/pl&gt;</span>.<span class="nt">&lt;/sar&gt;</span> <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div3&gt;</span>
+<span class="nt">&lt;/div1&gt;</span>
+</code></pre></div></div>
+
+<h2 id="tei-tags-cheat-sheet">TEI Tags Cheat Sheet</h2>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- <span class="nt">&lt;ad&gt;</span> = advertisement / image with little text
+- <span class="nt">&lt;i&gt;</span> = italicize
+- <span class="nt">&lt;p&gt;</span> = paragraph
+- <span class="nt">&lt;head&gt;</span> = header
+- <span class="nt">&lt;pb&gt;</span> = page break
+- <span class="nt">&lt;ab&gt;</span> = line break (think ab line in stat)
+- <span class="nt">&lt;num&gt;</span> = number
+- <span class="nt">&lt;yr&gt;</span> = year
+- <span class="nt">&lt;nm&gt;</span> = name
+- <span class="nt">&lt;date&gt;</span> = date
+- <span class="nt">&lt;emjup&gt;</span> = thumbs up emoji
+- <span class="nt">&lt;emjdwn&gt;</span> = thumbs down emoji
+- <span class="nt">&lt;tm&gt;</span> = team name (sports)
+- <span class="nt">&lt;br&gt;</span> = bracket/ conference name (sports)
+- <span class="nt">&lt;schl&gt;</span> = school / University
+- <span class="nt">&lt;pl&gt;</span> = place
+- <span class="nt">&lt;wthr&gt;</span> = weather
+- <span class="nt">&lt;ms&gt;</span> = measurement
+- <span class="nt">&lt;sp&gt;</span> = sports phrases
+- <span class="nt">&lt;sar&gt;</span> = sarcasm
+- <span class="nt">&lt;ttl&gt;</span> = title
+</code></pre></div></div>
+
+<h2 id="the-reflection">The Reflection</h2>
+<p>Since the chosen document is a newspaper, the elements I wanted to preserve for researchers (specifically historians who may reference newspapers for specific events, etc) were dates, names, and organization names (i.e. sports teams, clubs, etc). I ended up tagging all of these aspects within my TEI hierarchy as shown in the TEI tag cheat sheet. In addition to these basic tags that help researchers pick out dates, names, weather, and other common researched events throughout the history of publications, I also chose to use tags like "sar" for sarcasm which is apparent in editorial columns and other advertisements within a newspaper. If I chose to do another column with more text or a complete article I most likely would have used more of these sort of tags so that historians or researchers who were more interested in the literature could pick out phrases that might key into writing style during the time period.</p>
+<p>Categorizing this document should be relatively simple because it is a periodical or newspaper that showcases events and daily life for members of the Princeton community within the duration of a specific date. Unlike prose, or other publications, choosing a newspaper made the categorization of my document easier while it made the TEI hierarchy difficult due to the variety of text sizes, images, and ads. The markup codes I chose to utilize were tags that did not have an explicit hierarchy so that I could preserve the idea of having a lot of equal elements on a page (with emphasis on the header and other words through page breaks and text style such as italics and bolds). </p>
+<p>The textual structure that seems the most appropriate for this document would ideally be in line with a hierarchy that allows for the page to read with the images or emojis as well as the various text fonts and styles, all under the same parent branch. I chose to not break down a complete hierarchy of terms within my code because I want to conserve the idea of having an entire page of the newspaper in view where the reader can decide of their own free will where they want to look. To show this I coded two different elements of the entirety of the newspaper into html/TEI. </p>
+<p>Throughout this process I had a few questions regarding how markup was utilized for Digital Humanity scholars to decide what makes it into the TEI code repository. For example when I was writing up my tags I was constantly unsure when to abbreviate or how to abbreviate so that my code would be understandable to a wider audience. For simplicity, I ended up coding all of my tags as abbreviations and have provided a definition list to avoid any confusion. A more general question that came up regarding markup was how to display the entirety of a document such as a newspaper to the reader in a digital platform. While an image or pdf document can easily show all of the elements of the front page of the newspaper (header, ads, as well as columns and complete articles), it is difficult to convey this in lines of code, even with a hierarchy. This is why I chose to do two separate codes one for a column of announcements called Weekly Wrap-Up, including Dean’s List and Dean’s Warning, and one for the main header for this issue of The Daily Princetonian. </p>
+
+:ET

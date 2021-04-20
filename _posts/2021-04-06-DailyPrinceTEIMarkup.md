@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Savannah Pobre
+excerpt_separator: <!--more-->
 title: The Daily Princeton March 9th, 2001 TEI Markup  
 ---
 
@@ -25,7 +26,7 @@ title: The Daily Princeton March 9th, 2001 TEI Markup
 <num type="cost" value="30">30 cents</num></ab>
 </div1>
 ```
-
+<!--more-->
 ### The Daily Princetonian Column
 ```xml
 <div1 type="weekly wrap-up">
