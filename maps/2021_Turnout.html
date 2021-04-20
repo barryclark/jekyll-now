@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Travis County Voter Turnout</title>
+<title>Travis County 2021 Election Voter Turnout</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
@@ -116,7 +116,7 @@
 <body>
 <div id='map'></div>
 <div class="map-overlay" id="legend"><p>% of Registered</p></div>
-<div class='map-overlay' id='features'><h2>Travis County Voter Turnout Map</h2>
+<div class='map-overlay' id='features'><h2>Travis County 2021 Voter Turnout</h2>
     <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
         <div id='pd2'><p>UNOFFICIAL - Complete Early Vote</p></div></div></div>
     
@@ -207,7 +207,10 @@
               //You can adjust the values of the popup to match the headers of your CSV. 
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
 
-              var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.Active Registered Voters + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + e.features[0].properties.Turnout +`</h4>`;
+              percent = e.features[0].properties.Turnout*100
+              percent = percent.toFixed(2);
+
+              var description = `<h3>`+ `Precinct: ` + e.features[0].properties.pct + `</h3>` + `<h4>` + `<b>` + `Registered Voters: ` + `</b>` + e.features[0].properties.Active_Registered_Voters + `</h4>` + `<h4>` + `<b>` + `Mail-in Votes: ` + `</b>` + e.features[0].properties.Mail_in_Votes + `</h4>`+ `<h4>` + `<b>` + `In Person Votes: ` + `</b>` + e.features[0].properties.Early_Votes + `</h4>` + `<h4>` + `<b>` + `Voter Turnout: ` + `</b>` + percent + `%` +`</h4>`;
 
               new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
