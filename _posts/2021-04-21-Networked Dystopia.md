@@ -2,7 +2,7 @@
 layout: post
 author: Sophie Goldman
 excerpt_separator: <!--more-->
-title: Networked Dystopia: Exploring Setting in Dystopian Film
+title: Networked Dystopia - Exploring Setting in Dystopian Film
 ---
 
 ### What is the role of setting in dystopian movies?
