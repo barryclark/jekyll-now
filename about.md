@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is a blog for my learning and sharing.
 
 ### More Information
 
