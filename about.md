@@ -8,6 +8,8 @@ permalink: /about/
 
 Hi, my name is **Susanna Dong**! I'm a software engineer currently based off of New York City.
 
+![Susanna Dong in Detroit: Become Human cosplay](/images/me_halloween_2018.jpg)
+
 Some random things that I enjoy doing:
 * Learning of all sorts of knowledge.
 * Walking and hiking, especially through nature.
