@@ -7,7 +7,7 @@ Welcome folks to **War(un)lock**, an eldritch tome of knowledge, experience, and
 
 Fun fact - warlocks are one of my least-favorite Dungeons & Dragons classes to play, yet have the coolest vibes.
 
-![War(un)lock](images/warunlock.jpg)
+![War(un)lock](/images/warunlock.jpg)
 
 Note: This is still a work-in-progress!
 
