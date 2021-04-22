@@ -22,13 +22,14 @@ That being said, this blog is going to be a living experiment. The blog
 aesthetic or post structure may be subject to change!
 
 My plan is to structure each blog post with the headers:
-1) What I've been up to - something I've been doing that is more in the
+1. What I've been up to - something I've been doing that is more in the
 realm of "slice of life". It may be a fun thing I've visited, or simply
 chilling in my home.
-2) What I've learned - a cool thing I've learned which I'll deep dive
+2. What I've learned - a cool thing I've learned which I'll deep dive
 into. Think more about "these are the gas laws and why they're important
 to know about".
-3) What I've seen - a random but recent photo on my phone.
+3. What I've seen - a random but recent photo on my phone.
+4. A chapter closed - the equivalent of the conclusion.
 
 As a preview:
 
