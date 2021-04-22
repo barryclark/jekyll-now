@@ -58,3 +58,13 @@ this blog!
 
 Please enjoy this blog! I hope that you enjoy my musings and learnings
 as much as I've recorded in each post.
+
+Thank you to:
+* [Hacker Newsletter](https://hackernewsletter.com) for being my
+treasure trove of knowledge tidbits every Friday for over 2 years.
+* [David Perell](https://perell.com) for providing cool knowledge
+tidbits in a personal and intriguing style.
+* [Ademusoyo](https://www.ademusoyo.com) for inspiring me to start a
+blog in earnest.
+* My colleagues, friends, and family supporting my decision to venture
+into the unknown that is a gap year.
