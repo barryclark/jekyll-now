@@ -31,6 +31,12 @@ to know about".
 3. *What I've seen* - a random but recent photo on my phone.
 4. *A chapter closed* - the equivalent of the conclusion.
 
+Other things I've considered:
+* Adding an email subscription for blog updates.
+* Adding a YouTube vlog, but unlikely due to the high effort. I want
+to maximize my time in my gap year!
+* Write a blog post about a particular topic at a random time.
+
 As a preview:
 
 ### What I've been up to
@@ -114,5 +120,7 @@ treasure trove of knowledge tidbits every Friday for over 2 years.
 tidbits in a personal and intriguing style.
 * [Ademusoyo](https://www.ademusoyo.com) for inspiring me to start a
 blog in earnest.
-* My colleagues, friends, and family supporting my decision to venture
-into the unknown that is a gap year.
+* [Zen Habits](https://zenhabits.net) for being an inspiration for far
+longer than I can remember, and being an oasis during the pandemic.
+* *My colleagues, friends, and family* supporting my decision to
+venture into the unknown that is a gap year.
