@@ -201,11 +201,15 @@
             }
 
              map.on('click','fills', function (e) {
-              //var coordinates = e.features[0].geometry.coordinates.slice();
-
+             const popup = document.getElementsByClassName('mapboxgl-popup');
+             if ( popup.length ) {
+                popup[0].remove();
+             }
+             else {
               //set popup text 
               //You can adjust the values of the popup to match the headers of your CSV. 
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
+                 
 
               percent = e.features[0].properties.Turnout*100
               percent = percent.toFixed(2);
@@ -217,6 +221,7 @@
                 .setHTML(description)
                 .addTo(map);
             });
+             }
         
     }
 
