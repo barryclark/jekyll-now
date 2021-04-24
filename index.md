@@ -11,6 +11,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
 - [Ποιες εισηγμένες σε χρηματιστήριο εταιρείες έχουν μετατρέψει τα αποθεματικά τους σε Bitcoin;](#treasuries)
 - [Πώς μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin στην Ελλάδα;](#buybitcoin)
+- [Υπάρχουν περιορισμοί στις Ελληνικές και Κυπριακές Τράπεζες;](#localbanks)
 - [Μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin μέσω Revolut και Paypal;](#revolutpaypal)
 - [Που μπορώ να μάθω περισσότερα για το Bitcoin;](#bitcoin.org)
 - [Ποια βιβλία να διαβάσω για το Bitcoin;](#books)
@@ -80,11 +81,24 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 ### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin στην Ελλάδα;
 
 - Στα 60+ Bitcoin ATM που εμφανίζει ο χάρτης της [Coin ATM Radar](https://coinatmradar.com/country/83/bitcoin-atm-greece/). Τα περισσότερα από αυτά ανήκουν στην [Bcash Greece](https://bcash.eu/gr/) ([δείτε τα βίντεο με οδηγίες χρήσης](https://www.youtube.com/channel/UCo4WSs5gFgp9RgvR2f-1okg/videos)) και στην [Kurant](https://www.kurant.at/).
-
 - Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
 - Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες.
 - Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [Localbitcoins](https://localbitcoins.com/), στο [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), στο [HodlHodl](https://hodlhodl.com), στο [Bisq](https://bisq.network) ή στο [Paxful](https://paxful.com). Με αυτούς μπορείτε να ανταλλάξετε Ευρώ με όποιον τρόπο θέλετε π.χ. χέρι-με-χέρι, Paypal, Western Union, Πειραιώς Λεφτά Στο Λεπτό, τραπεζική μεταφορά κλπ.
-- Από το ανταλλακτήριο [BCash](https://bcash.gr/) με κατάθεση σε Ελληνική τράπεζα μέχρι €5000 την ημέρα με προμήθεια 9%.
+- Από το ανταλλακτήριο [BCash](https://bcash.gr/en/exchange/) με κατάθεση σε Ελληνική τράπεζα μέχρι €1000 την ημέρα με προμήθεια 10%.
+
+### <a name="localbanks"></a>Υπάρχουν περιορισμοί στις Ελληνικές και Κυπριακές Τράπεζες;
+
+Στην Ελλάδα, η Εθνική Τράπεζα Ελλάδος δηλώνει στο e-banking της ότι εφαρμόζει «μέτρα αυξημένης δέουσας επιμέλειας» και ότι οι συναλλαγές σας από/προς ανταλλακτήρια κρυπτονομισμάτων μπορεί να μην εκτελεστούν.
+
+![](/images/NBG-Crypto-AML.jpeg)
+
+Στην Κύπρο, όλες οι τράπεζες γενικά δεν δέχονται συναλλαγές με ανταλλακτήρια κρυπτονομισμάτων.
+
+Η Τράπεζα Κύπρου στο [Group Customer Acceptance Policy](https://www.bankofcyprus.com/contentassets/a43a89acae0049fab0e35591379bf9e7/group-customer-acceptance-policy.pdf) απαγορεύει συναλλαγές με ανταλακτήρια κρυπτονομισμάτων και επίσης δεν δέχεται ανταλλακτήρια ως πελάτες.
+
+Η Ελληνική Τράπεζα στο [Basic Terms & Conditions of Use of Hellenic Bank Services](https://www.hellenicbank.com/portalserver/content/api/contentstream-id/ba122ca0-b615-4054-878e-cf272e6e3254/8d980d50-1d0f-4e09-aece-c60b7a30b542/Terms/OP%28CD%29123%20EN_12_20.pdf) απαγορεύει στους πελάτες να κάνουν συναλλαγές με ανταλλακτήρια κρυπτονομισμάτων.
+
+Οι περιορισμοί αυτοί προκύπτουν γιατί οι τράπεζες φοβούνται τυχόν πρόστιμα AML σε περίπτωση που οι πελάτες τους ξεπλύνουν μαύρο χρήμα μέσω συναλλαγών με ανταλλακτήρια κρυπτονομισμάτων, ενώ ταυτόχρονα ο έλεγχος των συναλλαγών αυτών έχει κόστος για αυτές.
 
 ### <a name="revolutpaypal"></a>Μπορώ να αγοράσω ή να εξαργυρώσω Bitcoin μέσω Revolut και Paypal;
 
@@ -314,7 +328,7 @@ ii) στο πλαίσιο των Ε.Λ.Π. αποτιμάται στο αποσ�
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2021-04-10
+Τελευταία ενημέρωση: 2021-04-25
 
 <!-- <div class="posts">
   {% for post in site.posts %}

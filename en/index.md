@@ -9,6 +9,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 
 - [Which companies, stores and professionals accept Bitcoin in Greece?](#merchant-table)
 - [How can I buy Bitcoin in Greece?](#buybitcoin)
+- [Do Greek and Cypriot banks impose restrictions?](#localbanks)
 - [Who regulates cryptocurrency in Greece?](#regulator)
 - [What cryptocurrency and blockchain projects are there in Greece and Cyprus?](#projects)
 
@@ -35,11 +36,24 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 ### <a name="buybitcoin"></a>How can I buy Bitcoin in Greece?
 
 - At the 60+ Bitcoin ATMs listed on [Coin ATM Radar](https://coinatmradar.com/country/83/bitcoin-atm-greece/). Most of those Bitcoin ATMs belong to [Bcash Greece](https://bcash.eu/) ([see videos with instructions on how to use their ATMs](https://www.youtube.com/channel/UCo4WSs5gFgp9RgvR2f-1okg/videos)) and to [Kurant](https://www.kurant.at/).
-
 - At any Bitcoin exchange in the world, via a bank transfer. This method incurs the lowest fees, assuming you send the amount using a SEPA transfer (a Greek bank can charge as low as €1 for a SEPA transfer). Some exchanges that accept SEPA transfers are [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) and [BitStamp](https://www.bitstamp.net).
 - At a Bitcoin exchange that accepts debit or credit cards.
 - From a private Bitcoin trader you can find on [Localbitcoins](https://localbitcoins.com/), at the [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), on [HodlHodl](https://hodlhodl.com), on [Bisq](https://bisq.network) or on [Paxful](https://paxful.com). You can exchange Euros with them using any method you want, e.g. in person, via Paypal, Western Union, Piraeus Bank Instant Cash (Lefta Sto Lepto), bank transfer etc.
-- From the [BCash](https://bcash.gr/) Bitcoin exchange via deposit at a Greek bank. They sell up to €5000 of Bitcoin per person per day and charge a 9% fee.
+- From the [BCash](https://bcash.gr/en/exchange/) Bitcoin exchange via deposit at a Greek bank. They sell up to €1000 of Bitcoin per person per day and charge a 10% fee.
+
+### <a name="localbanks"></a>Do Greek and Cypriot banks impose restrictions?
+
+In Greece, the National Bank of Greece have this statement on their e-banking site saying they apply "enhanced due diligence" on transactions to/from cryptocurrency exchanges and that your transactions may be denied.
+
+![](/images/NBG-Crypto-AML.jpeg)
+
+In Cyprus, all banks deny transactions to/from cryptocurrency exchanges.
+
+Bank of Cyprus in their [Group Customer Acceptance Policy](https://www.bankofcyprus.com/contentassets/a43a89acae0049fab0e35591379bf9e7/group-customer-acceptance-policy.pdf) forbid transactions with cryptocurrency exchanges and also do not accept exchanges as customers.
+
+Hellenic Bank in their [Basic Terms & Conditions of Use of Hellenic Bank Services](https://www.hellenicbank.com/portalserver/content/api/contentstream-id/ba122ca0-b615-4054-878e-cf272e6e3254/8d980d50-1d0f-4e09-aece-c60b7a30b542/Terms/OP%28CD%29123%20EN_12_20.pdf) forbid transactions with cryptocurrency exchanges.
+
+These restrictions exist because banks are afraid of the AML fines they face in case customers launder money via transactions with cryptocurrency exchanges, while examining each of those transactions is costly to the banks.
 
 ### <a name="regulator"></a>Who regulates cryptocurrency in Greece?
 
@@ -66,7 +80,7 @@ Cryptocurrency in Greece is currently only regulated from an AML (Anti Money Lau
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2021-03-28
+Last update: 2021-10-25
 
 <!-- <div class="posts">
   {% for post in site.posts %}
