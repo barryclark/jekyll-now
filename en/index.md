@@ -57,7 +57,7 @@ These restrictions exist because banks are afraid of the AML fines they face in 
 
 ### <a name="regulator"></a>Who regulates cryptocurrency in Greece?
 
-Cryptocurrency in Greece is currently only regulated from an AML (Anti Money Laundering) point of view, according to law [4557/2018](https://www.taxheaven.gr/law/4557/2018) (the linked law text is fully up-to-date), as modified by law [4734/2020](https://www.taxheaven.gr/law/4734/2020). The latter is known as the [European Union's AMLD5 Directive](https://www.sygna.io/blog/what-is-amld5-anti-money-laundering-directive-five-a-guide/). The regulated entities are only cryptocurrency exchanges based in Greece, of which there are 1 or 2, and the Bitcoin ATMs. The regulator is the [Hellenic Capital Markets Commission](http://www.hcmc.gr).
+Cryptocurrency in Greece is currently only regulated from an AML (Anti Money Laundering) point of view, according to law [4557/2018](https://www.taxheaven.gr/law/4557/2018) (the linked law text is fully up-to-date), as modified by law [4734/2020](https://www.taxheaven.gr/law/4734/2020). The latter is known as the [European Union's AMLD5 Directive](https://www.sygna.io/blog/what-is-amld5-anti-money-laundering-directive-five-a-guide/). The regulator is the [Hellenic Capital Markets Commission](http://www.hcmc.gr/el_GR/web/portal/mlaundering1) that maintains a Registry of regulated exchanges (4 of them) and custodians (none).
 
 ### <a name="projects"></a>What cryptocurrency and blockchain projects are there in Greece and Cyprus?
 
