@@ -36,10 +36,10 @@ title: Следим за временем оплаты доменов с пом�
 
 4. Создаем элемент данных в web Zabbix
 
-    ![_config.yml]({{ site.baseurl }}/images/zabbix_element-300x295.png)
+    ![_config.yml]({{ site.baseurl }}/images/20161002/zabbix_element-300x295.png)
 
 5. Создаем триггер в web Zabbix
 
-    ![_config.yml]({{ site.baseurl }}/images/zabbix_trigger-300x161.png)
+    ![_config.yml]({{ site.baseurl }}/images/20161002/zabbix_trigger-300x161.png)
 
 Готовый набор на [github](https://github.com/hardworm/zabbix_domain_check)

@@ -62,4 +62,4 @@ title: Фильтры tiny rss
 наркот*
 ```
 
-![_config.yml]({{ site.baseurl }}/images/tinyrss_filter.png)
+![_config.yml]({{ site.baseurl }}/images/20140809/tinyrss_filter.png)
