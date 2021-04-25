@@ -1622,7 +1622,7 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">Text Mining using TidyText</h1>
+
 
 </div>
 
