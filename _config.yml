@@ -17,19 +17,16 @@ avatar: https://raw.githubusercontent.com/hardworm/hardworm.github.io/master/ima
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
   email: hardworm@gmail.com
   facebook:
-  flickr:
   github: hardworm
   instagram: hardworm
   linkedin: hardworm
-  pinterest:
   rss: Rss # just type anything here for a working RSS icon
   twitter: 
   stackoverflow: "users/178949/hardworm" # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  telegram: hardworm
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
