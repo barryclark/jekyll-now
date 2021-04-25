@@ -17,6 +17,15 @@ A post tracking the May 2021 Travis County voter turnout at a precinct-level.
 [Full screen](http://modalshift.co/maps/2021_Turnout.html)
 
 
+# Votes Cast Vs. Not (yet?) Cast:
+
+<iframe src='/maps/turnoutbubbles.html'
+        width='100%' height='400px'>
+</iframe>
+
+[Full screen](http://modalshift.co/maps/turnoutbubbles.html)
+
+
 # What am I looking at?
 
 These maps show voter turnout across voter precincts in Travis County, Texas for the current Spring 2021 election. Travis County is currently in the early voting period. The maps show both in-person and those mail-in ballots that have been received. The County shares voting data daily showing who voted for each day. 
