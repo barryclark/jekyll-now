@@ -24,7 +24,7 @@ I was also surprised to see that Scarlett Johansson was cast in as many films as
 I think this aspect could demonstrate that the MCU wants to include more female characters, but they use the same few in multiple films. 
 
 # Network Image 
-![Network Image](https://github.com/amnaa329/HUM-331-Princeton.github.io/blob/67ffdaff0c4d19b8b38f68639909ae57947d39eb/images/Network%20Image.png) 
+![Network Image](https://github.com/amnaa329/HUM-331-Princeton.github.io/blob/67ffdaff0c4d19b8b38f68639909ae57947d39eb/images/Network%20Image.png?raw=true) 
 
 # Google Sheet 
 
