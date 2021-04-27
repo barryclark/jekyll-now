@@ -24,4 +24,10 @@ Markup languages:
 Programming Languages I could program in the past:
 * Minecraft plugins with Java
 
+My biggest Project currently is my CMS [USOC](https://github.com/case-games/USOC).
+
 I also own a ECDL/ICDL base certificate. (https://member.sophiatesting.com/data/pdffiles/d2581f6771d13239b99fa478930cff9d.pdf?cache=1610264602499)
+
+I'm generally very interested in computers in all ways. (More software then hardware.)
+
+If you want to contact mek, feel free to write to <a href="mailto:aaron.junker@outlook.com">aaron.junker@outlook.com</a> or write a direct mail on twitter <a href="https://twitter.com/theredcuber">@theredcuber</a>.
