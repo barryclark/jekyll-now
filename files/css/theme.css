@@ -60,8 +60,6 @@ body {
 #r-avatar {
     margin-bottom: 1em;
     padding: 2px;
-    background: rgb(191, 211, 16);
-    border-radius: .8em
 }
 
 #r-avatar>img {
