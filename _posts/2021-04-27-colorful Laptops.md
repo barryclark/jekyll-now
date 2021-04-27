@@ -27,7 +27,7 @@ The computers of the last 10 years all had grey or black color.
 
 Why? That's simple! The people have enough of this grey world. Specially after/in this pandemic people want something new, something that looks fancy and cool. They want more color in their life. And this is the start of it.
 
-Retro was a long time in, but I think now that changes to colorful.
+Retro was a long time a trend, but I think now that changes to colorful.
 
 Recently, I looked at my socks drawer and thought: "I want more colorful socks not only black ones".
 
