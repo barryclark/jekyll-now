@@ -10,6 +10,8 @@ I'm a college student from Switzerland.
 
 In my free time I like to program. I also help out on the Microsoft [PowerToys](https://github.com/microsoft/powertoys) project. There I label issues and search for duplicates.
 
+In this blog I'm writing about things I want to. Most of the time about programming or other IT things.
+
 Programming languages I can programm:
 * PHP (very good)
 * Javascript
