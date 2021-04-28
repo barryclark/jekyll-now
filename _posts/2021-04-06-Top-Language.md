@@ -3,9 +3,6 @@ published: true
 ---
 ### Post 2
 
- [Top]({{site.baseurl}}/files/top.html "Top-Language")
-
-
 ![program]({{site.baseurl}}/files/top.html)
 
 
