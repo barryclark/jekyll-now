@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Littlepeon: The name comes from the game of Warcraft. I played it before it became "World of..". Was almost killed by an opponent. He had killed all my warriors but left my grunt soldiers. He left me for dead, saying all that I had left were all these little peons. He went off after the other combatants. I had taken my peons and built a whole new town on another spot on the map. I later came back and killed everyone, winning the game!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Also called Warcraftpeon on some sites.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[littlepeon@yahoo.com](mailto:littlepeon@yahoo.com)
