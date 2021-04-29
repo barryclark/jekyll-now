@@ -3,13 +3,14 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: ILUMH
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: I am Mary Nuella and i created this Christian website to reachout to 
+people all over the globe, with the sole aim of letting them know about Jesus Christ.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar:https://avatars.githubusercontent.com/u/83229543?s=400&u=33f87b3999fdaacc6a09cf08bd59d487acc202b5&v=4
 
 #
 # Flags below are optional
@@ -21,12 +22,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: 
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  rss: anything# just type anything here for a working RSS icon
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
