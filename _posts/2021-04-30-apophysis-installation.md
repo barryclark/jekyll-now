@@ -22,3 +22,11 @@ Hi bkuighj hvg
 
 [audio of tweet](../images/Let’s-make-this--happen-micropost.m4a)
 
+
+
+Tell me what we’re doing 
+
+![This describes it pretty well](../images/Tweeeeerrt-micropostcaptioned.jpg)
+
+[audio of tweet](../images/Tweeeeerrt-micropost.m4a)
+
