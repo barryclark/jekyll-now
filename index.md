@@ -113,14 +113,14 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 
 ### <a name="books"></a>Ποια βιβλία να διαβάσω για το Bitcoin;
 
-- Μικρό, εισαγωγικό, μη-τεχνικό βιβλίο: [The Little Bitcoin Book](https://littlebitcoinbook.com)
+- Μικρό, εισαγωγικό, μη-τεχνικό βιβλίο: [The Little Bitcoin Book: Why Bitcoin Matters for Your Freedom, Finances, and Future](https://littlebitcoinbook.com)
 - Μικρό, εισαγωγικό, μη-τεχνικό βιβλίο: [21 Lessons: What I've Learned from Falling Down the Bitcoin Rabbit Hole](https://21lessons.com) ([στα Ελληνικά](https://niclick.org/blog/21-mathimata-philosofia/))
 - Μη-τεχνικό βιβλίο για την ιστορία του Bitcoin: [Digital Gold](https://www.harpercollins.com/9780062572066/digital-gold/)
 - Μη-τεχνικά βιβλία για τη χρησιμότητα του Bitcoin: [The Internet of Money](https://theinternetofmoney.info)
-- Μικρό, μη-τεχνικό βιβλίο για τη θέση του Bitcoin στην κορυφή του διεθνούς χρηματοπιστωτικού συστήματος: [Layered Money](https://www.layeredmoney.com)
+- Μικρό, μη-τεχνικό βιβλίο για τη θέση του Bitcoin στην κορυφή του διεθνούς χρηματοπιστωτικού συστήματος: [Layered Money: From Gold and Dollars to Bitcoin and Central Bank Digital Currencies](https://www.layeredmoney.com)
 - Μη-τεχνικό βιβλίο για τη χρησιμότητα του Bitcoin ως εναλλακτική του Δολαρίου και του χρυσού: [The Bitcoin Standard: The Decentralized Alternative to Central Banking](https://saifedean.com/thebitcoinstandard/)
-- Τεχνικό βιβλίο για το Bitcoin: [Mastering Bitcoin](https://bitcoinbook.info)
-- Τεχνικό βιβλίο για το Bitcoin: [Programming Bitcoin](https://programmingbitcoin.com)
+- Τεχνικό βιβλίο για το Bitcoin: [Mastering Bitcoin: Programming the Open Blockchain](https://bitcoinbook.info)
+- Τεχνικό βιβλίο για το Bitcoin: [Programming Bitcoin: Learn How to Program Bitcoin from Scratch](https://programmingbitcoin.com)
 - Τεχνικό βιβλίο για το Bitcoin: [Bitcoin Programming](https://kkarasavvas.com/assets/bitcoin-textbook.pdf)
 - [Άλλα βιβλία](https://www.lopp.net/bitcoin-information/books.html)
 
@@ -328,7 +328,7 @@ ii) στο πλαίσιο των Ε.Λ.Π. αποτιμάται στο αποσ�
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2021-04-25
+Τελευταία ενημέρωση: 2021-04-30
 
 <!-- <div class="posts">
   {% for post in site.posts %}
