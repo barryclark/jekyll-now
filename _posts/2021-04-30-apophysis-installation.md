@@ -30,3 +30,19 @@ Tell me what we’re doing
 
 [audio of tweet](../images/Tweeeeerrt-micropost.m4a)
 
+
+
+This is a post 
+
+![](../images/File-file-file-30_Apr_2021_20_34_30-micropost-captioned.jpg)
+
+[audio of tweet](../images/File-file-file-30_Apr_2021_20_34_30-micropost.m4a)
+
+
+
+This is a post 
+
+![Descrbed](../images/Post-30_Apr_2021_20_46_36-captioned.jpg)
+
+[audio of tweet](../images/Post-30_Apr_2021_20_46_36.m4a)
+
