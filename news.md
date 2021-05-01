@@ -7,11 +7,11 @@ permalink: /news/
 
 __May__
  - Launched the [10th Annual Postdoc Career Symposium](https://whova.com/portal/webapp/apcs_202010/)
+ - Presenting DNA Day to high school and middle school students at HISD to learn about DNA and biomedical careers
 
 __April__
  - Launched registration for the [10th Annual Postdoc Career Symposium](https://whova.com/portal/registration/apcs_202010)
  - Invited as a panelist for a Town Hall to discuss Racism in science with a special focus on Asian trainees and Asian Americans
- - Presenting DNA Day to high school and middle school students to learn about DNA and biomedical careers
  - Our [work](https://www.nature.com/articles/s41417-020-00281-6?elqTrackId=33e28c1baada4d84b8381caf73b8803f) was invited to present at the 41st Euro Congress on Cancer Science & Therapy (Cancer Science 2021).
 
 ## 2020
