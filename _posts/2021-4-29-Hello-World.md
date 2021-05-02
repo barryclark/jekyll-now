@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Repent! Give your life to Jesus Christ
+date: 2021-04-29
 published: true
 ---
 ![qhd_3e277893038803e2236a585edff4d3a6](https://user-images.githubusercontent.com/83229543/116561298-199de280-a8fa-11eb-94ff-0f8f8ef4b3f3.jpg)
