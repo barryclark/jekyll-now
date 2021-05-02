@@ -1,7 +1,6 @@
 #
 # This file contains configuration flags to customize your site
-#
-theme: jekyll-theme-so-simple
+
 
 # Name of your site (displayed in the header)
 name: ILUMH
