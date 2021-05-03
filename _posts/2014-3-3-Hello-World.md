@@ -3,8 +3,35 @@ layout: post
 title: You're up and running!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+## Hello World
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+### First Blog Post
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+``` 
+    public class SingletonPattern {
+
+        //It guarantees only one instance is going to be created.
+        //It also guarantees the control of resources, lazily loaded.
+        //Example runtime, logger(maybe), spring beans, graphics managers.
+
+        private static volatile SingletonPattern singletonPattern = null;
+
+        private SingletonPattern(){
+
+        }
+
+        @NotNull public static SingletonPattern getInstance(){
+            if(singletonPattern==null){
+                synchronized (SingletonPattern.class){
+                    if(singletonPattern==null){
+                        singletonPattern = new SingletonPattern();
+                    }
+                }
+            }
+            return singletonPattern;
+        }
+
+    }
+```
+
+Singleton Pattern. 
