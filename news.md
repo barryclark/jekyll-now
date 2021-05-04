@@ -6,6 +6,7 @@ permalink: /news/
 ## 2021
 
 __May__
+ - Awarded the Daniel Benedict Gazan Award in Sarcoma Research
  - Launched the [10th Annual Postdoc Career Symposium](https://whova.com/portal/webapp/apcs_202010/)
  - Presenting DNA Day to high school and middle school students at HISD to learn about DNA and biomedical careers
 
