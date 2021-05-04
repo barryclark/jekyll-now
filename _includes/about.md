@@ -24,6 +24,8 @@ __University of Texas at Arlington & Univesity of Texas Southwestern Medical Cen
 __University of Texas at Arlington__ BSc Biology 
 
 ## Awards and Honors
+`2021`
+__Daniel Benedict Gazan Award in Sarcoma Research__ MD Anderson Cancer Center
 
 `2018`
 __Graduate Student Speaker__ Ira A. Fulton Schools of Engineering Convocation
