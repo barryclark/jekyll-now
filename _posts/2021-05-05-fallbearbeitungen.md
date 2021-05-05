@@ -2,9 +2,7 @@
 layout: post
 title: "Erstellen einer Fallbearbeitung in Markdown"
 ---
-
 ## Motivation
-
 Im Rahmen der Besprechung des ausservertraglichen Haftpflichtrechts in
 der Klasse cW\_18-22 habe ich eine Musterlösung in Markdown verfasst.
 Markdown bietet die Möglichkeit, den gleichen Inhalt in
