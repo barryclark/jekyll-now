@@ -93,7 +93,8 @@ werden. Es muss für jede Aufgabe eine Nummer vergeben werden.
 
 Der Einfachheit halber lasse ich das Skript in RStudio laufen. In
 RStudio kann das ganze File mit dieser Anleitung geöffnet werden. Eine
-passende Datei zum Download findet sich [hier](https://github.com/Jacques-Mock-Schindler/tutorials/blob/main/korrekturworkflow.rmd).
+passende Datei zum Download findet sich
+[hier](https://github.com/Jacques-Mock-Schindler/Jacques-Mock-Schindler.github.io/blob/master/downloads/korrekturworkflow.rmd)
 Das Script kann dann direkt in RStudio ausgeführt werden.
 
 {% highlight bash %}
