@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Workflow für die Rückgabe von Prüfungen"
+abstract: "Das Zurückgeben von Prüfungen sorgt regelmässig für Unruhe in
+den Klassen. Hier beschreibe ich ein Work-Around für dieses Problem."
 ---
-# Workflow für die Rückgabe von Prüfungen
-
 ## Erforderliche Software
 * PDF Annotator
 * Excel
