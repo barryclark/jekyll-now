@@ -4,14 +4,6 @@ title: "Workflow für die Rückgabe von Prüfungen"
 abstract: "Das Zurückgeben von Prüfungen sorgt regelmässig für Unruhe in
 den Klassen. Hier beschreibe ich ein Work-Around für dieses Problem."
 ---
-## Erforderliche Software
-* PDF Annotator
-* Excel
-* PDFtk
-* RStudio
-* gitBash
-* texlive
-
 ## Ausgangslage
 Die Rückgabe von Prüfungen sorgt regelmässig für Unruhe in den Klassen.
 Um dies zu vermeiden, bin ich dazu übergegangen, die korrigierten
@@ -25,6 +17,14 @@ Empfänger zuzustellen.  Daher habe ich in einer verbesserten Variante
 eine Verteilung via SharePoint aufgesetzt.
 
 Hier soll die Vorgehensweise für diese zweite Variante beschrieben werden.
+
+## Erforderliche Software
+* PDF Annotator
+* Excel
+* PDFtk
+* RStudio
+* gitBash
+* texlive
 
 ## Vorbereitung
 Als Vorbereitung für meinen Arbeitsablauf muss ich für jede Klasse auf
