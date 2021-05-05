@@ -385,10 +385,3 @@ fallbearbietung.pdf". Es wäre auch möglich, als Ausgabedatei
 fallbearbeitung.docx, fallbearbeitung.html oder fallbearbeitung.epub zu
 wählen. Die vollständige Liste möglicher Ausgabeformate findet sich auf
 der Startseite von [Pandoc](https://pandoc.org/).
-
-## Pendenzen
-
-Noch offen ist
-
-- [ ] die Verwendung eines externen Vergleichswerkzeuges, mit dem Versionen einander gegenübergestellt werden können
-- [ ] das Zusammenspiel mit einem Vorlagefile
