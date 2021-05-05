@@ -1,4 +1,7 @@
-# Erstellen einer Fallbearbeitung in Markdown
+---
+layout: post
+title: "Erstellen einer Fallbearbeitung in Markdown"
+---
 
 ## Motivation
 
@@ -68,7 +71,7 @@ erfasst worden.
 
 Dazu muss in Zotero das Menu mit dem Zauberstab geöffnet werden und die
 ISBN in das sich öffnende Fenster eingegeben werden.
-![Zotero Zauberstab Menu](Bilder/zauberstabmenu.png)
+![Zotero Zauberstab Menu](/images/zauberstabmenu.png)
 Zotero durchsucht dann verschiedene Bibliothekskataloge nach der
 eingegebenen ISBN und erstellt so einen Eintrag.
 Der Eintrag kann natürlich auch manuell erfolgen, in dem das grüne
@@ -95,7 +98,7 @@ abgewichen.
 Diesen Citation Key brauchen wir später, wenn der Basler
 Kommentar in der Fallbearbeitung als Referenz eingetragen werden soll.
 Der angepasste Eintrag sollte dann so aussehen:
-![Fertiger Eintrag zu BK Art. 41 OR](Bilder/bkor41.png)
+![Fertiger Eintrag zu BK Art. 41 OR](/images/bkor41.png)
 
 Falls man über ein PDF der in Zotero erfassten Quelle verfügt,
 empfiehlt es sich, diese an den Eintrag anzuhängen und nur noch mit
@@ -121,7 +124,7 @@ Plugin verwendet werden. Wenn das entsprechende Symbol in der Menu Liste
 des Browser (hier rot eingerahmt) angeklickt wird, wird der Entscheid in Zotero zusammen mit
 einem Snapshot der Website erfasst.
 
-![Zotero Browser Plugin](Bilder/browser-plugin.png)
+![Zotero Browser Plugin](/images/browser-plugin.png)
 
 Allerdings braucht auch dieser Eintrag noch etwas manuelle Nacharbeit.
 Der Eintrag wird durch das Plugin als Website erfasst. Die richtige Eintragsform ist aber
@@ -133,7 +136,7 @@ vorliegenden Beispiel also `Citation Key:BGE129III331`.
 Der vollständige Eintrag eines Bundesgerichtsentscheides sollte
 folgendermassen aussehen:
 
-![BGE 129 III 331](Bilder/BGE129III331.png)
+![BGE 129 III 331](/images/BGE129III331.png)
 
 Es lohnt sich, aus den gesammelten Materialien "Textbausteine"
 anzulegen. Diese kurzen Textbausteine, die beispielsweise die
@@ -197,7 +200,7 @@ Um ein Repository anzulegen, öffnet man das Menu `File > New
 Repository...` Im sich öffnenden Dialog gibt man dem Repository einen
 Namen.
 
-![Dialog New Repositroy](Bilder/new_repositroy.png)
+![Dialog New Repositroy](/images/new_repositroy.png)
 
 Optional kann an dieser Stelle auf der zweiten Zeile eine Beschreibung
 des Projektes eingegeben werden. Dann wählt man den Ordner, in welchem
@@ -211,7 +214,7 @@ solchen README.md Datei. Wenn alle diese Angaben gemacht sind, geht es
 mit "Create Repository" weiter. Im nächsten Dialog ist darauf zu achten,
 dass "Keep this code private" angewählt ist.
 
-![Dialog Publish Repository](Bilder/publish_repo.png)
+![Dialog Publish Repository](/images/publish_repo.png)
 
 Dann weiter mit "Publish repositroy".
 
@@ -232,7 +235,7 @@ Um eine Version als solche zu kennzeichnen, braucht es einen sogenannten
 "Commit". Dieser kann in GitHub-Desktop erstellt werden. Der
 entsprechende Dialog findet sich in GitHub-Desktop links unten.
 
-![Commit Dialog](Bilder/commit_dialog.png)
+![Commit Dialog](/images/commit_dialog.png)
 
 Die Minimalangabe zur Kennzeichnung der Version ist ein Stichwort. Es
 lohnt sich hier allerdings, etwas mehr als nur "Zwischenstand"
@@ -245,26 +248,26 @@ so präzise wie möglich zusammenzufassen.
 Anschliessend muss im Dialog im Hauptfenster "Push origin" angeklickt
 werden.
 
-![Push origin](Bilder/push_dialog.png)
+![Push origin](/images/push_dialog.png)
 
 Dies führt zur Ablage des aktuellen Arbeitsstandes auf dem Server von
 "GitHub". Die Liste der verschiedenen Versionen kann einerseits unter
 "History" in GitHub-Desktop und andererseits auf dem Server von "GitHub"
 angezeigt werden.
 
-![Versionsliste GitHub-Desktop](Bilder/versionsliste_desktop.png)
+![Versionsliste GitHub-Desktop](/images/versionsliste_desktop.png)
 
 Für die Anzeige der Liste auf dem Server muss die entsprechende Datei
 ausgewählt werden und dann am oberen rechten Rand der Datei "History"
 ausgewählt werden. Dies führt zur Anzeige der Versionen auf dem Server.
 
-![Versionsliste auf GitHub](Bilder/versionsliste_github.png)
+![Versionsliste auf GitHub](/images/versionsliste_github.png)
 
 Durch die Auswahl der gewünschten Version kann der Unterschied zur
 letzten Version angezeigt werden. Dabei werden rot die alten und grün
 die in der gewählten Version neu dazugekommenen Textstellen dargestellt.
 
-![Vergleich zweier Versionen](Bilder/vergleich.png)
+![Vergleich zweier Versionen](/images/vergleich.png)
 
 Auf dem Server können unter folgender Adresse auch beliebige Versionen
 miteinander verglichen werden.
@@ -284,7 +287,7 @@ Zotero gesammelten Materialien in den Text verarbeiten zu können, müssen
 die Referenzen in ein Bibtex-File exportiert werden. Dazu fasst man die
 für die Fallbearbeitung relevanten Zotero-Einträge in einem Ordner
 zusammen. Den so erstellten Ordner exportiert man mittels Rechtsklick.
-![Menu nach Rechtsklick auf Sammlung](Bilder/export.png)
+![Menu nach Rechtsklick auf Sammlung](/images/export.png)
 Im dann erscheinenden Menu wählt man Better BibTex aus und wählt
 unbedingt die Option "Halte Aktuell" aus. So ist sichergestellt, dass
 Einträge, die später in Zotero eingefügt werden, automatisch in das
@@ -349,7 +352,7 @@ in dem sich die Fallbearbeitung befindet, in einem Terminal geöffnet
 werden. In Windows erfolgt dies durch einen Rechtsklick auf den Ordner
 und dann die Wahl des Menu-Punktes "Open in Windows Terminal".
 
-![Open in Windows Terminal](Bilder/windows_terminal.png)
+![Open in Windows Terminal](/images/windows_terminal.png)
 
 Das Terminal ist das schwarze Fenster, in dem Befehle über die Tastatur
 eingegeben werden. Wenn das Terminal-Fenster aufgeht, ist dort der Pfad
@@ -357,9 +360,9 @@ zum aktuellen Ordner mit dem abschliessenden Zeichen `>` zu sehen. Der
 Pfad zum Ordner ist inhaltlich dasselbe, wie in der Adresszeile des
 Windows-Explorers zu sehen ist.
 
-![Pfad im Windows Explorer](Bilder/windows_explorer_paht.png)
+![Pfad im Windows Explorer](/images/windows_explorer_paht.png)
 
-![Pfad im Windows Terminal](Bilder/windows_terminal_paht.png)
+![Pfad im Windows Terminal](/images/windows_terminal_paht.png)
 
 Die Umwandlung des Texte erfolgt über die Eingabe des folgenden Befehls
 über die Tastatur:
