@@ -1,5 +1,5 @@
 ---
- layout: subscribe
- title: Subscribe
- permalink: /subscribe/
- ---
+layout: subscribe
+title: Subscribe
+permalink: /subscribe/
+---
