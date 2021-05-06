@@ -4,24 +4,26 @@ title: "Web Automation - Website Scraping..like a spider or scrapper."
 ---
 
 # Welcome
-"Now, this is a story all about how, My life got flipped in automated style. And I liked to take a minute just sit right there, I'll tell you how i automated my workplace"
+"Now, this is a story all about how, My life got flipped upside down. And I liked to take a minute just sit right there, I'll tell you how i helped my workplace get automated"
 
 ## What is Web automation ?
 
-Home automation gives you access to control devices in your home from a mobile device anywhere in the world. for example, your smart thermostat, smart TV, smart light... pretty much everything with smart. Mr Davis used to say "keep your smart phone and not so smart phone off" while we used to write our exam... ah memories. 
+ Think of all the clicking and typing you do at your desk every day involving websites and web-based applications. All these actions can be automated with web automation.
 
-## What is home assistant ?
+Actions that can be automated include:
 
-Home assistant is home automation hub. or Home automation software to be more precise. It's free and open source and fully local alternative to things like HomeBridge and SmartThings. It gives you the power of home automation without the cloud so you won't depend on internet connection or remote servers. This result in faster operation and reliability. 
+    Filling out forms and fields
+    Scraping content from a web page
+    Extracting and transferring data between applications
+    Clicking buttons and elements
 
-So i was able to spin up a HASSIO server on my raspi. and let me tell you it is awesome, I got so much control over my Iot devices and plus that I can write my own onn esp8266 and esp32. BLE$$ED.
+Every day, in businesses of all sizes, there are scenarios where automating tasks like these would come in handy. For example:
 
-Now To explain What is HASSIO > 
+    Importing contacts into a CRM system from a third-party service
+    Testing the user experience and order handling of an online shop
+    Integrating a web-based ERP-system with a document management platform in the cloud 
 
-## What is HASSIO ?
+"
+- [Source] (https://www.leapwork.com/web-automation)
 
-"Home Assistant is an open-source home automation platform running on Python 3. Track and control all devices at home and automate control" -[HASSIO](https://www.home-assistant.io/blog/2016/01/19/perfect-home-automation/)
 
-I really recommmend starting this as your Home Assistant *****.
-
-You can get your own HASSIO by following their installation intructions : [HASSIO](https://www.home-assistant.io/installation/)
