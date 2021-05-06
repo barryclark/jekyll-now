@@ -12,18 +12,17 @@ title: "Web Automation - Website Scraping..like a spider or scrapper."
 
 Actions that can be automated include:
 
-    Filling out forms and fields
-    Scraping content from a web page
-    Extracting and transferring data between applications
-    Clicking buttons and elements
+   Filling out forms and fields
+   Scraping content from a web page
+   Extracting and transferring data between applications
+   Clicking buttons and elements
 
 Every day, in businesses of all sizes, there are scenarios where automating tasks like these would come in handy. For example:
 
-    Importing contacts into a CRM system from a third-party service
-    Testing the user experience and order handling of an online shop
-    Integrating a web-based ERP-system with a document management platform in the cloud 
+   Importing contacts into a CRM system from a third-party service
+   Testing the user experience and order handling of an online shop
+   Integrating a web-based ERP-system with a document management platform in the cloud 
 
-"
 - [Source] (https://www.leapwork.com/web-automation)
 
 
