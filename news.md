@@ -23,7 +23,7 @@ __August__
  - Highlighted in NAVS Alumni Spotlight [NAVS Alumni Spotlight: IFER Fellowship Recipient Danh Truong](https://www.navs.org/navs-alumni-spotlight-ifer-fellowship-recipient-danh-truong/#.XzFpGi2ZN24)
 
 __January__
- - Highlighted in ASU School of Biological and Health Systems Engineering [2019 Annual Report](https://sbhse.engineering.asu.edu/wp-content/uploads/2020/01/SBHSE-2019-Annual-Report.pdf)
+ - Highlighted research and achievements in ASU School of Biological and Health Systems Engineering [2019 Annual Report](https://sbhse.engineering.asu.edu/wp-content/uploads/2020/01/SBHSE-2019-Annual-Report.pdf)
  
 ## 2019
 
