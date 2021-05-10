@@ -109,7 +109,7 @@ __October__
  - Research highlighted in _NAVS_ article titled, ["Meet the Humane Science 'Class of 2017'"](https://www.navs.org/meet-humane-science-class-2017/#.XxNq3S2ZN24)
 
 __May__
- - Awarded GPSA Jumpstart Research Grant for proposal, "Heterotypic Signaling Influencing Breast Cancer Invasion within 3D Tumor Stroma Platform." 
+ - Awarded GPSA Jumpstart Research Grant for proposal, ["Heterotypic Signaling Influencing Breast Cancer Invasion within 3D Tumor Stroma Platform."](https://gpsa.asu.edu/funding/research/jumpstart-research-grant/past-recipients/)
 
 __April__
  - Presented a poster, “Microengineered Breast Cancer Invasion Platform,” at Molecular, Cellular, & Tissue Bioengineering (MCTB) Symposium in Tempe, AZ
