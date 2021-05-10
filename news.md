@@ -6,9 +6,10 @@ permalink: /news/
 ## 2021
 
 __May__
+ - Concluded the 3-day [10th Annual Postdoc Career Symposium](https://whova.com/portal/webapp/apcs_202010/) with over 400 attendees and initiated plans to build a platform for postdocs in the Texas Medical Center to network
  - Awarded the Daniel Benedict Gazan Award in Sarcoma Research
  - Launched the [10th Annual Postdoc Career Symposium](https://whova.com/portal/webapp/apcs_202010/)
- - Presenting DNA Day to high school and middle school students at HISD to learn about DNA and biomedical careers
+ - Presented DNA Day to high school and middle school students at HISD to learn about DNA and biomedical careers
 
 __April__
  - Launched registration for the [10th Annual Postdoc Career Symposium](https://whova.com/portal/registration/apcs_202010)
