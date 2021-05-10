@@ -47,7 +47,7 @@ __December__
  - Graduated from ASU with PhD in Biomedical Engineering with thesis titled [_Microfluidic Models of Tumor-Stroma Interactions to Study the Interplay of Cancer Cells with their Surrounding Microenvironment_](https://repository.asu.edu/items/54067).
 
 __November__
- - Featured in [The Graduate Insider](https://graduate.asu.edu/newsletter/making-impact/arcs-fellowships-graduate-college-hosts-recognition-event)
+ - Featured as one of the 2018-2019 ARCS scholars in [The Graduate Insider](https://graduate.asu.edu/newsletter/making-impact/arcs-fellowships-graduate-college-hosts-recognition-event)
 
 __October__
  - Presented an oral presentation, “Gene-expression Profiling of Patient-Derived Fibroblast and Breast Cancer Interactions in a Three-Dimensional (3D) Organotypic Microfluidic Platform," at BMES in Atlanta,GA
