@@ -24,7 +24,14 @@ Here are some useful websites that I have found in the past
 
 [CMDLineTips](https://cmdlinetips.com){:target="_blank"}: Python and R Tips. 
 
-  
+
+### Books
+[Deeo Learning](https://www.deeplearningbook.org){:target="_blank"}: The Deep Learning textbook is a resource intended to help students and practitioners enter the field of machine learning in general and deep learning in particular
+
+[Another Book on Data Science](https://www.anotherbookondatascience.com){:target="_blank"}: There has been considerable debate over choosing R vs. Python for Data Science. Based on my limited knowledge/experience, both R and Python are great languages and are worth learning; so why not learn them together?
+
+[R Graphics Cookbook, 2nd edition](https://r-graphics.org){:target="_blank"}: R Graphics Cookbook, a practical guide that provides more than 150 recipes to help you generate high-quality graphs quickly, without having to comb through all the details of R’s graphing systems. 
+
 ### Repositories
   
 [Greenleaf Lab](https://github.com/GreenleafLab){:target="_blank"}: (sc)ATAC-seq packages and scripts from the Greenleaf LAb
