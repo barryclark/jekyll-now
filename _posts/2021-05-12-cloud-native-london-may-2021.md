@@ -20,9 +20,8 @@ Join us and speakers from Ververica and DoiT International at the May Cloud Nati
 
 * 6:45 Kick off
 * 7:15 Simplifying Stateful Serverless Architectures (Konstantin Knauf, Ververica)
-* 7:45 Break
-* 8:00 How to automatically detect and deal with deprecated APIs (Stepan Stipl, DoiT International)
-* 8:30 Wrap up
+* 7:45 How to automatically detect and deal with deprecated APIs (Stepan Stipl, DoiT International)
+* 8:15 Wrap up
 
 We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [Palo Alto Networks](https://www.paloaltonetworks.com/), [CircleCI](https://circleci.com/), and [UMATR](https://www.umatr.io/) for your generous support and sponsorship.
 
