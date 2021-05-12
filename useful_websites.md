@@ -32,6 +32,10 @@ Here are some useful websites that I have found in the past
 
 [R Graphics Cookbook, 2nd edition](https://r-graphics.org){:target="_blank"}: R Graphics Cookbook, a practical guide that provides more than 150 recipes to help you generate high-quality graphs quickly, without having to comb through all the details of R’s graphing systems. 
 
+[Statistical Methods for High Dimensional Biology](https://stat540-ubc.github.io){:target="_blank"}: 
+
+[Data Analysis for the Life Sciences” by Rafael Irizarry and Michael Love](http://genomicsclass.github.io/book/){:target="_blank"}: 
+
 ### Repositories
   
 [Greenleaf Lab](https://github.com/GreenleafLab){:target="_blank"}: (sc)ATAC-seq packages and scripts from the Greenleaf LAb
