@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Join us and speakers from Ververica and DoiT International at the May Cloud Native London virtual meetup tonight on Rambly and YouTube, from 6:45pm BST!
