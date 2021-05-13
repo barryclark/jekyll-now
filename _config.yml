@@ -9,7 +9,7 @@ name: Brian Madden
 description: AWS Solution Architect, Dublin, Ireland
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: 
+avatar:
 
 #
 # Flags below are optional
@@ -18,7 +18,7 @@ avatar:
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: brian.madden@scamall.io
   facebook:
   flickr:
   github: bmadden-arch
