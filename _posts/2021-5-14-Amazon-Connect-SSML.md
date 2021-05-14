@@ -40,7 +40,7 @@ To add in an SSML speech block, drag a **‘Play Prompt’** or **‘Get Custome
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-SSML/BlogImage7.png)
 
-You want to select **‘Text to Speech’**, enter the words you want to include, ensuring the words are between the **<speak>** and **</speak>** tags. It is very important then from the **‘Interpret As’** menu, you select **‘SSML’**. If you don’t select SSML then Connect will ignore any tags you have included. Once you are happy you need to click Save.
+You want to select **‘Text to Speech’**, enter the words you want to include, ensuring the words are between the <speak> and </speak> tags. It is very important then from the **‘Interpret As’** menu, you select **‘SSML’**. If you don’t select SSML then Connect will ignore any tags you have included. Once you are happy you need to click Save.
 
 ## Using SSML to Customise the Voice Experience ##
 
