@@ -80,4 +80,3 @@ You will need to assign either a toll-free or DID (Direct Inward Dialing) teleph
 
 ## Conclusion ##
 We  have all had that experience of phoning into a contact centre and hearing a robotic, impersonal voice on the other end. By leveraging the correct voice and the right SSML tags that more natural sounding experience can be achieved within your Amazon Connect instance. An engaged customer is a happy customer. This is just the start of what can be achieved. I will explore other features of Amazon Connect in subsequent posts that help create positive customer experiences.
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
