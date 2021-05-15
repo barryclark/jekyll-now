@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers::Header renders correctly 1`] = `
+<div
+  className="header"
+>
+  <h3
+    className="title"
+  >
+    <a
+      onClick={[Function]}
+      style={Object {}}
+      target="_blank"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-home"
+      />
+      <span>
+        Your awesome title
+      </span>
+    </a>
+  </h3>
+  <span
+    className="version"
+  >
+    v
+    0.11.0
+  </span>
+</div>
+`;
+
+exports[`Containers::Header renders placeholder title 1`] = `
+<div
+  className="header"
+>
+  <h3
+    className="title"
+  >
+    <a
+      onClick={[Function]}
+      style={Object {}}
+      target="_blank"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-home"
+      />
+      <span>
+        You have no title!
+      </span>
+    </a>
+  </h3>
+  <span
+    className="version"
+  >
+    v
+    0.11.0
+  </span>
+</div>
+`;

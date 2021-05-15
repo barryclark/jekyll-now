@@ -76,6 +76,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-admin #Editor für Jekyll
 
 # Exclude these files from your production _site
 exclude:
@@ -84,3 +85,19 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+#CMS OPTIONEN
+
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
+
+collections:
+  posts:
+    output: true
+    sidebar_label: News

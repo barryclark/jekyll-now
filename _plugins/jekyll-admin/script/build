@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+echo "Building frontend server..."
+npm run build
+
+# Test the size of production bundle
+# Refer `bundlesize.config.json` for list of tested paths.
+npm run test:size

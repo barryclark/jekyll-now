@@ -1,0 +1,4 @@
+---
+---
+
+alert('hello world')

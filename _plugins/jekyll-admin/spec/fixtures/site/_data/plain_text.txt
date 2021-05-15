@@ -1,0 +1,6 @@
+A dummy file to test if regular text files are accessible via the Admin
+interface.
+
+name | age | sex | location
+"John Doe" | 24 | Male | "New York"
+"Jane Doe" | 21 | Female | "New York"

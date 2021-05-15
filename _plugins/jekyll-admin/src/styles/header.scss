@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: white;
+  padding: 0 40px;
+  border-bottom: 1px solid lighten($border-color, 9%);
+  .title {
+    font-weight: normal;
+    a {
+      color: #444444;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .version {
+    color: $inactive-gray;
+  }
+}

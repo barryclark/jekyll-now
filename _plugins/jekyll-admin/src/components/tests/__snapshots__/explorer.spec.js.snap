@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components::Explorer renders correctly 1`] = `
+<div>
+  <div
+    className="content-header"
+  >
+    <ul
+      className="breadcrumbs"
+    >
+      <li>
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Resources
+        </a>
+      </li>
+    </ul>
+    <div
+      className="page-buttons"
+    >
+      <a
+        className="btn btn-active"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        New resource
+      </a>
+    </div>
+    <div
+      className="pull-right"
+    >
+      <input
+        className="field"
+        onKeyPress={[Function]}
+        placeholder="Search by filename"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="content-table"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Filename
+          </th>
+          <th
+            className="th-actions"
+          >
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            className="row-title"
+          >
+            <strong>
+              <a
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-folder"
+                />
+                resource-dir
+              </a>
+            </strong>
+          </td>
+          <td />
+        </tr>
+        <tr>
+          <td
+            className="row-title"
+          >
+            <strong>
+              <a
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-file-text-o"
+                />
+                resource.md
+              </a>
+            </strong>
+          </td>
+          <td>
+            <div
+              className="row-actions"
+            >
+              <button
+                className="btn btn-active btn-delete btn-thin"
+                onClick={[Function]}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-trash"
+                />
+                Delete
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

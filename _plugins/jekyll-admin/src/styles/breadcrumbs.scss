@@ -1,0 +1,20 @@
+.breadcrumbs {
+  margin: 0 30px 0 0;
+  padding: 0;
+  list-style: none;
+  li {
+    float: left;
+    &:not(:last-child):after {
+      content: "/";
+      padding: 0 8px;
+      font-size: 30px;
+    }
+    a {
+      color: #444;
+      font-size: 30px;
+      &:hover {
+        color: $dark-orange;
+      }
+    }
+  }
+}

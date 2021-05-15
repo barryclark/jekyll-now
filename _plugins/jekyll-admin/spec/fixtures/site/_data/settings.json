@@ -1,0 +1,30 @@
+{
+  "content": {
+    "title": "Your awesome title",
+    "gems": [
+      "jekyll-admin"
+    ],
+    "exclude": [
+      "Gemfile",
+      "Gemfile.lock",
+      "README.md"
+    ],
+    "foo": "bar",
+    "defaults": [
+      {
+        "scope": {
+          "path": ""
+        },
+        "values": {
+          "some_front_matter": "default"
+        }
+      }
+    ],
+    "collections": {
+      "puppies": {
+        "foo": "bar",
+        "output": false
+      }
+    }
+  }
+}

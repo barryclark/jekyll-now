@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  padding: 0 40px;
+  border-bottom: 1px solid $border-color-light;
+  h1 {
+    color: #444444;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  ul {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    li {
+      float: left;
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+  @media(max-width: 768px) {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    height: auto;
+    h1 {
+      font-size: 20px;
+    }
+  }
+}

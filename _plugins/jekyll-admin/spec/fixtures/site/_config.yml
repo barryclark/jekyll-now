@@ -1,0 +1,101 @@
+title: Your awesome title
+
+# Load the admin interface and some plugins for testing.
+plugins:
+  - jekyll-admin
+  - jekyll-redirect-from
+
+# Exclude these files from being processed.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+foo: bar
+
+# show draft posts
+show_drafts: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      all: true
+  - scope:
+      path: ''
+      type: pages
+    values:
+      page_only: true
+  - scope:
+      path: "page-dir/test"
+    values:
+      simple_key: >-
+        Write an awesome description for your new site here. You can edit
+        this line in _config.yml. It will appear in your document head meta
+        (for Google search results) and in your feed.xml site description.
+      author:
+        name: John Doe
+        location: New York
+      labels:
+        - issue
+        - bug
+        - next
+      complex_data:
+        simple_key: value
+        object_key:
+          simple_subkey: value
+          object_subkey:
+            simple_subkey: value
+            object_subkey:
+              simple_subkey: value
+            list_subkey:
+              - value_1
+              - value_2
+              - value_3
+              - value_4
+          list_subkey:
+            - value_1
+            - value_2
+            - value_3
+            - value_4
+          nested_list_key:
+            - key_1: value_1a
+              key_2: value_2a
+              image: foo.png
+              date: "May 14 2017 09:00:00"
+            - key_1: value_1b
+              key_2: value_2b
+              image: bar.png
+              date: "May 14 2017 10:30:00"
+          matrix_key:
+            - ['foo', 'bar']
+            - ['lorem', 'ipsum']
+        list_key:
+          - key_1: value_1a
+            key_2: value_2a
+            image: foo.png
+            date: "May 14 2017 09:00:00"
+          - key_1: value_1b
+            key_2: value_2b
+            image: bar.png
+            date: "May 14 2017 10:30:00"
+  - scope:
+      path: ''
+      type: puppies
+    values:
+      breed: ''
+  - scope:
+      path: 'test'
+      type: posts
+    values:
+      post_test_only: true
+
+# Dummy Collection.
+collections:
+  puppies:
+    foo: bar
+    output: false
+
+jekyll_admin:
+  homepage: "posts"

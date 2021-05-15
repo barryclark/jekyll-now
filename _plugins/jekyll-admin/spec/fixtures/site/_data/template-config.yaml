@@ -1,0 +1,83 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files, you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible in the templates via {{ site.myvariable }}.
+title: Your awesome title
+path: /to/north-pole
+raw_content: "foo: bar\nbaz: boo"
+email: your-email@domain.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+author:
+  name: John Doe
+  email: your-email@domain.com
+  web: http://www.example.com
+
+hidden: false
+
+# interactive GUI fields
+image: logo.png
+date: "May 21 2018 09:00:00"
+file:
+  - "file 1"
+  - "file 2"
+  - "file 3"
+cabinet:
+  image: foo.png
+  date: "Apr 09 2017 09:30:00"
+  file:
+    - red-tape
+    - dossier
+    - adverts
+#
+complex_data:
+  simple_key: value
+  object_key:
+    simple_subkey: value
+    object_subkey:
+      simple_subkey: value
+    list_subkey:
+      - value_1
+      - value_2
+      - value_3
+      - value_4
+  list_key:
+    - key_1: value_1a
+      key_2: value_2a
+      image: foo.png
+      date: "May 14 2017 09:00:00"
+    - key_1: value_1b
+      key_2: value_2b
+      image: bar.png
+      date: "May 14 2017 10:30:00"
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-admin
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

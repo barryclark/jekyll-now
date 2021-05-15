@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+script/build
+bundle exec gem release --tag

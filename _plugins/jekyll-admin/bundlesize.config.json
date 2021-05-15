@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "lib/jekyll-admin/public/static/js/*.js",
+      "maxSize": "3 MB",
+      "compression": "none"
+    },
+    {
+      "path": "lib/jekyll-admin/public/static/js/*.js.map",
+      "maxSize": "10 MB",
+      "compression": "none"
+    },
+    {
+      "path": "lib/jekyll-admin/public/static/css/*.css",
+      "maxSize": "100 kB",
+      "compression": "none"
+    },
+    {
+      "path": "lib/jekyll-admin/public/static/css/*.css.map",
+      "maxSize": "400 kB",
+      "compression": "none"
+    }
+  ]
+}

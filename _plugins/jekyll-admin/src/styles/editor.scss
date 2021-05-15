@@ -1,0 +1,20 @@
+@import url('../../node_modules/highlight.js/styles/atom-one-light.css');
+
+.config-editor {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  outline: none;
+  font-size: 14px;
+
+  & + .statusbar {
+    padding: 12px 0;
+    font-size: 12px;
+    color: #959694;
+    text-align: right;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.ace_focus {
+  border-color: $orange;
+}

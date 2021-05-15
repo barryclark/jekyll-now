@@ -1,0 +1,32 @@
+language: ruby
+rvm: 2.4
+before_install:
+  - nvm install 8
+  - gem update --system 3.0.6 --no-document
+install: script/bootstrap
+script: script/cibuild
+cache:
+  bundler: true
+  yarn: true
+  directories:
+    - node_modules
+matrix:
+  include:
+    - rvm: 2.7
+      env: TEST_SUITE=ruby JEKYLL_VERSION="~> 3.8.6"
+    - rvm: 2.7
+      env: TEST_SUITE=ruby JEKYLL_VERSION="~> 3.9"
+    - rvm: 2.7
+      env: TEST_SUITE=ruby JEKYLL_VERSION="~> 4.0"
+env:
+  matrix:
+    - TEST_SUITE=node
+    - TEST_SUITE=ruby JEKYLL_VERSION="~> 3.8.6"
+    - TEST_SUITE=ruby JEKYLL_VERSION="~> 3.9"
+    - TEST_SUITE=ruby JEKYLL_VERSION="~> 4.0"
+# Temporarily disable gathering test coverage stats
+# after_success:
+#   - npm run test:cover:CI
+branches:
+  only:
+    - master

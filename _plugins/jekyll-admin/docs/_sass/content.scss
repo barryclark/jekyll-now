@@ -1,0 +1,57 @@
+.content {
+  padding: 40px;
+  line-height: 1.5;
+  @media(max-width: 768px) {
+    padding: 15px;
+  }
+
+  a {
+    color: $dark-orange;
+    font-weight: 700;
+    &:hover {
+      border-bottom: 1px dotted;
+    }
+  }
+
+  .description {
+    margin: 0 0 25px;
+    padding: 15px;
+    color: #545454;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #fefefe;
+    border-left: 10px solid $dark-orange;
+  }
+
+  .content-header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 35px 0;
+    h1 {
+      margin: 0 40px 0 0;
+      float: left;
+      text-shadow: 1px 1px 1px rgba(68, 68, 68, 0.3);
+    }
+    .page-buttons {
+      display: flex;
+    }
+  }
+
+  .splitter {
+    margin: 15px 0;
+    background: #cfcfcf;
+    border: 0;
+  }
+
+  .improve-me {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid $border-color-light;
+    small {
+      display: block;
+      padding: 2px;
+    }
+  }
+}

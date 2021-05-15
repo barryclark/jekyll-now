@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components::MarkdownEditor renders correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <span
+      className="images-wrapper"
+    >
+      <button
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-picture-o"
+        />
+      </button>
+      <noscript />
+    </span>
+  </div>
+  <div>
+    <textarea />
+  </div>
+</div>
+`;

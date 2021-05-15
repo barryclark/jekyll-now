@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+echo "Running Node tests..."
+
+# We want to run `script/build` on CI to ensure things actually build, but
+# we don't want to have to run `script/build` locally every time we run tests
+#
+# Note: `script/build` runs `npm test` as  part of the build process
+if [ -n "$CI" ]; then
+  script/build
+else
+  npm run test:CI
+fi
