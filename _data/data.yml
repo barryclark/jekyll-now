@@ -22,6 +22,14 @@
   location_gr: Online
   location_en: Online
 
+- company_gr: Mythography Studios ⚡️
+  company_en: Mythography Studios ⚡️
+  url: https://mythographystudios.com/
+  category_gr: Εκδότης βιβλίων του φανταστικού
+  category_en: Science fiction books with Greek mythology
+  location_gr: Online
+  location_en: Online
+
 - company_gr: The Cube
   company_en: The Cube
   url: https://thecube.gr
@@ -221,6 +229,14 @@
   category_en: Driving school
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
+  
+- company_gr: Exit Travel
+  company_en: Exit Travel
+  url: https://exit.travel
+  category_gr: Ταξιδιωτικό πρακτορείο
+  category_en: Travel agency
+  location_gr: Θεσσαλονίκη και Καβάλα, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki and Kavala, Macedonia, Greece
 
 - company_gr: Tic Tac
   company_en: Tic Tac
@@ -829,6 +845,14 @@
   category_en: Dentist
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
+  
+- company_gr: Σύγχρονη Οδοντιατρική
+  company_en: Sychroni Odontiatriki
+  url: https://www.facebook.com/Sigxroni.Odontiatriki
+  category_gr: Οδοντιατρείο
+  category_en: Dentist
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: Teddywear
   company_en: Teddywear
@@ -1131,6 +1155,14 @@
   url: https://tokalathimou.gr
   category_gr: Κατάστημα ηλεκτρονικών
   category_en: Electronics
+  location_gr: Πειραιάς, Αττική, Ελλάδα
+  location_en: Piraeus, Attica, Greece
+  
+- company_gr: Γεώργιος Δουλφής
+  company_en: George Doulfis
+  url: https://doulfis.gr
+  category_gr: Προϊόνται και υπηρεσίες τεχνολογίας
+  category_en: Computer shop and programming services
   location_gr: Πειραιάς, Αττική, Ελλάδα
   location_en: Piraeus, Attica, Greece
 
