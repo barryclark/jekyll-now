@@ -328,7 +328,7 @@ ii) στο πλαίσιο των Ε.Λ.Π. αποτιμάται στο αποσ�
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2021-04-30
+Τελευταία ενημέρωση: 2021-05-16
 
 <!-- <div class="posts">
   {% for post in site.posts %}
