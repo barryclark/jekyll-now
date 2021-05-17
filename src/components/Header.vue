@@ -26,9 +26,9 @@
             </router-link>
           </li>
           <li>
-            <a class="router-link" href="https://activo.jp/articles/72556?via=user105899">
+            <router-link class="router-link" to="/members">
               メンバー募集
-            </a>
+            </router-link>
           </li>
           <li>
             <a class="router-link" href="https://coderdojotachikawa.tamaliver.jp/">
