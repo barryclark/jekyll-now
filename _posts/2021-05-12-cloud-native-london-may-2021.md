@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London May 2021: Ververica and DoiT International"
 description: "two speakers from Ververica and DoiT International join us at the Cloud Native London meetup May 2021, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
-image: /images/CNL_2021_Rambly.jpg
+image: /images/CNL_2021_Rambly.jpeg
 video: https://www.youtube.com/embed/I9q49qOEcaI
 tags:
   - Photos
