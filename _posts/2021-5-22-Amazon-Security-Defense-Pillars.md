@@ -31,7 +31,7 @@ Well-Architected has been developed to help cloud architects build secure, high-
 
 The Framework provides a consistent approach to evaluate architectures and implement designs that will scale over time.
 
-![_config.yml]({{ site.baseurl }}/images/blog/SecurityPillars/BlogImage2.jpg)
+![_config.yml]({{ site.baseurl }}/images/blog/SecurityPillars/BlogImage2.png)
 
 For more information check out the [AWS Well Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
 
