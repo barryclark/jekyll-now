@@ -19,6 +19,8 @@ It was definitely not the best biking experience I’ve had, but I certainly see
 
 Finally, a couple of weeks ago, I also purchased some D&D miniatures to paint. I’ve been doing this activity on occasion since the pandemic started, as it was a good way to spend a couple of hours relaxing, listening to YouTube videos in the background, and painting obscenely small figurines with a tiny paintbrush. For this round, these are [D&D miniatures for the “Elf Paladin”](https://twentysidedstore.com/products/mini-d-d-nolzurs-marvelous-elf-paladin-male?_pos=1&_sid=6ebb5ff71&_ss=r), which looked unique. (Plus, I'm a sucker for sword-wielding minis.)
 
+<img src="/images/blog3-mini_painting.jpg" width="400"> <img src="/images/blog3-minis_done.jpg" width="400">
+
 ### What I’ve learned
 
 Over the past few weeks, I’ve been doing an exercise routine to get back into running and to be able to enjoy the prospect of scuba diving more. Last week, I was able to run around 4 miles in about 50 minutes. That’s around a 12:30 pace, which is more of a jogging pace, but I’ve always come out of the jog feeling satisfied and not about to keel over. My goal is to be able to continuously jog a 10k, which I’ve never done before. I’ve done a bit of noodling on the internet to find tips, and I wanted to share my findings and experiences here.
@@ -66,6 +68,8 @@ Sometimes, it’s a matter of “failing fast” - accept that the workout didn�
 A fun fact - I currently run 4 times per day. And yet, I’ve progressed from a 20-minute jog to around a 50-minute jog in a couple of weeks. Rest days are nice to give space for actual rest, or to do different physical activities like biking or swimming. It makes sure that you don’t get bored of doing the same thing everyday. It also helps to not overexert the same muscles everyday and potentially cause injury.
 
 ### What I’ve seen
+
+<img src="/images/blog3-logo_wip.jpg" width="400"> <img src="/images/warunlock_logo.png" width="400">
 
 Tada - custom title! Now that I have an email list set up, the next thing I wanted to do was to create a logo to plaster on the blog and emails. This logo came out from:
 * An idea inspired in the shower
