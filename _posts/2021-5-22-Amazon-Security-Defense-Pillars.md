@@ -1,8 +1,7 @@
 ---
 layout: post
-title: The Layer Cake: Using Layers to Increase Security Posture
+title: The Layer Cake - Using Layers to Increase Security Posture in AWS
 ---
-
 ## Introduction
 
 Welcome back to my blog on all things AWS. I know in my first post that I said there was more Amazon Connect posts to follow. There are more posts around Amazon Connect on the horizon but based on the recent cyber incidents in Ireland & USA, I felt a post on security is warranted. The Amazon CTO Dr Vogels says that _"Security is job zero"_ and it is something I agree with wholeheartedly. In this post we will cover our responsibilities when it comes to using AWS and highlight some security services that we can use to add layers to increase our overall security posture. This post is an informational one and does not provide steps on how to configure any of the individual AWS services highlighted. If you want a future post on how to configure and combine some of the services get in contact using the link below.
