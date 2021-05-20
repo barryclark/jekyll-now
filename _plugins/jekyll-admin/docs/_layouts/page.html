@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="post">
+
+  {% if page.description %}
+    <p class="description">{{ page.description }}</p>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</section>

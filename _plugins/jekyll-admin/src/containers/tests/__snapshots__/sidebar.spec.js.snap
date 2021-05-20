@@ -1,0 +1,455 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers::Sidebar does not render hidden links 1`] = `
+<div
+  className="sidebar"
+>
+  <a
+    className="logo"
+    onClick={[Function]}
+    style={Object {}}
+  />
+  <ul
+    className="routes"
+  >
+    <div
+      className="accordion collapsed"
+      onClick={[Function]}
+      style={
+        Object {
+          "maxHeight": 50,
+        }
+      }
+    >
+      <div
+        className="accordion-label"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-briefcase"
+        />
+        Collections
+        <div
+          className="indicator"
+        >
+          <div
+            className="counter"
+          >
+            1
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-book"
+            />
+            Movies
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="splitter"
+    />
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-database"
+        />
+        Data Files
+      </a>
+    </li>
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-file"
+        />
+        Static Files
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-cog"
+        />
+        Configuration
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Containers::Sidebar renders correctly 1`] = `
+<div
+  className="sidebar"
+>
+  <a
+    className="logo"
+    onClick={[Function]}
+    style={Object {}}
+  />
+  <ul
+    className="routes"
+  >
+    <div
+      className="accordion collapsed"
+      onClick={[Function]}
+      style={
+        Object {
+          "maxHeight": 50,
+        }
+      }
+    >
+      <div
+        className="accordion-label"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-briefcase"
+        />
+        Collections
+        <div
+          className="indicator"
+        >
+          <div
+            className="counter"
+          >
+            1
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-book"
+            />
+            Movies
+          </a>
+        </li>
+      </ul>
+    </div>
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-book"
+        />
+        Posts
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-file-text"
+        />
+        Pages
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-database"
+        />
+        Data Files
+      </a>
+    </li>
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-file"
+        />
+        Static Files
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-cog"
+        />
+        Configuration
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Containers::Sidebar renders with custom collection labels 1`] = `
+<div
+  className="sidebar"
+>
+  <a
+    className="logo"
+    onClick={[Function]}
+    style={Object {}}
+  />
+  <ul
+    className="routes"
+  >
+    <div
+      className="accordion collapsed"
+      onClick={[Function]}
+      style={
+        Object {
+          "maxHeight": 50,
+        }
+      }
+    >
+      <div
+        className="accordion-label"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-briefcase"
+        />
+        Collections
+        <div
+          className="indicator"
+        >
+          <div
+            className="counter"
+          >
+            2
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-book"
+            />
+            Tutorials
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-book"
+            />
+            Docs
+          </a>
+        </li>
+      </ul>
+    </div>
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-book"
+        />
+        Posts
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-file-text"
+        />
+        Pages
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-database"
+        />
+        Data Files
+      </a>
+    </li>
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-file"
+        />
+        Static Files
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-cog"
+        />
+        Configuration
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Containers::Sidebar renders with zero collections 1`] = `
+<div
+  className="sidebar"
+>
+  <a
+    className="logo"
+    onClick={[Function]}
+    style={Object {}}
+  />
+  <ul
+    className="routes"
+  >
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-book"
+        />
+        Posts
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-file-text"
+        />
+        Pages
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-database"
+        />
+        Data Files
+      </a>
+    </li>
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-file"
+        />
+        Static Files
+      </a>
+    </li>
+    <div
+      className="splitter"
+    />
+    <li>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-cog"
+        />
+        Configuration
+      </a>
+    </li>
+  </ul>
+</div>
+`;

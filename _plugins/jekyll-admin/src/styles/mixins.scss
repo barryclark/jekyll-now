@@ -1,0 +1,42 @@
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
+@mixin user-select($select...) {
+  -webkit-user-select: $select;    /* Chrome all / Safari all */
+     -moz-user-select: $select;    /* Firefox all */
+      -ms-user-select: $select;    /* IE 10+ */
+       -o-user-select: $select;
+          user-select: $select;
+}
+@mixin translateX($px) {
+  -webkit-transform: translateX($px);
+  -ms-transform: translateX($px);
+  transform: translateX($px);
+}
+
+@mixin btn($color, $border-color, $cursor: pointer, $opacity: 1, $hover-fx: true) {
+  cursor: $cursor;
+  opacity: $opacity;
+  background-color: $color;
+  box-shadow: 0 1px 0 $border-color;
+  &:hover {
+    @if ($hover-fx) {
+      background-color: lighten($color, 5%);
+    } @else {
+      background-color: $color;
+    }
+  }
+}
+
+@mixin nodrag() {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

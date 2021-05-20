@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+script/branding
+
+if [ -z "$TEST_SUITE" ]
+then
+  script/cibuild-node
+  script/cibuild-ruby
+elif [ -x "script/cibuild-$TEST_SUITE" ]
+then
+  script/cibuild-$TEST_SUITE
+else
+  echo "Unknown test suite."
+  exit 1
+fi

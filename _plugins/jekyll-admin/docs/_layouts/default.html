@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div id="root">
+      <div class="wrapper">
+
+        {% include sidebar.html %}
+
+        <div class="container">
+
+          <div class="header">
+            <h1>Jekyll Admin - {{ page.title | escape }}</h1>
+            <ul class="pull-right">
+              <li>
+                <a href="https://github.com/{{ site.github.repository_nwo }}/" target="_blank">
+                  <img
+                    src="https://img.shields.io/github/stars/jekyll/jekyll-admin.svg?style=for-the-badge&logo=github"
+                    alt="Stars for Repository at GitHub"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://rubygems.org/gems/jekyll-admin" target="_blank">
+                  <img src="https://img.shields.io/gem/v/jekyll-admin.svg?style=for-the-badge" alt="Gem">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="content">
+            {{ content }}
+
+            <div class="improve-me">
+              <small>
+                These docs are open-source.
+              </small>
+              <small>
+                You can
+                <a href="https://github.com/{{ site.github.repository_nwo }}/edit/master/docs/{{ page.path }}">
+                  edit this page on GitHub
+                </a>
+                and send us a pull request to improve it.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ 'assets/highlight.min.js' | relative_url }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var routes = document.querySelector('.routes')
+        var menuIcon = document.querySelector('.menu-icon')
+        menuIcon.addEventListener("click", function(e) {
+          e.preventDefault()
+          routes.classList.toggle('open')
+        });
+      };
+    </script>
+  </body>
+</html>

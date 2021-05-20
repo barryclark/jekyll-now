@@ -1,0 +1,198 @@
+.field {
+  background-color: #fff;
+  color: #555;
+  outline: 0;
+  width: 100%;
+  height: 2.286em;
+  padding: .429em .857em;
+  border: 1px solid lighten($border-color, 7%);
+  font-size: 14px;
+  border-radius: $border-radius;
+  &:focus {
+    border-color: $border-color-focus;
+  }
+}
+
+.field-label {
+  width: 100%;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  display: block;
+}
+
+.input-title,
+.input-path {
+  textarea {
+    display:inline-block;
+    margin: 5px 0 30px 0;
+    padding: 0;
+    width: 100%;
+    color: #757575;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    resize: vertical;
+    background: none;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid $border-color;
+    box-shadow: none;
+    &:focus {
+      color: #000 !important;
+      border-bottom: 2px solid $border-color-focus;
+    }
+    &:hover {
+      color: #444;
+    }
+  }
+}
+
+.input-title {
+  textarea {
+    min-height: 51px;
+    font-size: 42px;
+  }
+}
+
+.input-path {
+  textarea {
+    margin-top: 10px;
+    min-height: 30px;
+    font-size: 20px;
+  }
+  .tooltip {
+    i {
+      margin: 0 0 0 10px;
+    }
+    .tooltip-text:after {
+      left: 11%;
+    }
+  }
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    margin-left: 20px;
+  }
+
+  .switch input {display:none;}
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    @include transition(.4s);
+    border-radius: 30px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    @include transition(.4s);
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: $dark-orange;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px $dark-orange;
+  }
+
+  input:checked + .slider:before {
+    @include translateX(20px);
+  }
+}
+
+.datafile-path {
+  margin-bottom: 8px;
+
+  fieldset {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 0;
+    border-color: transparent;
+
+    &.filename { width: 84%; }
+    &.file-type { width: 15%; }
+
+    &:first-of-type { margin-left: 0; }
+    &:last-of-type { margin-right: 0; }
+  }
+
+  legend {
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  input, select {
+    min-height: 46px;
+    padding: 11px 10px;
+    width: 100%;
+    color: white;
+    background-color: #2b2b2b;
+    border: 1px solid transparent;
+    border-radius: $border-radius;
+  }
+
+  input {
+    &:disabled { background-color: #4d4d4d; }
+    &:focus { outline: none; border-color: $dark-orange; }
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px #2b2b2b inset;
+      -webkit-text-fill-color: white;
+    }
+  }
+
+  select {
+    font-size: 15px;
+    color: #ddd;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:focus { outline: none; border-color: $dark-orange; }
+
+    option {
+      min-height: 21px;
+      &:hover { background-color: $dark-orange; }
+    }
+  }
+
+  .file-type {
+    legend {
+      position: relative;
+
+      // custom dropdown arrow
+      &:after {
+        content: "\25BC";
+        position: absolute;
+        top: 28px;
+        right: -54px;
+        padding: 12px 9px;
+        color: #bbb;
+        vertical-align: middle;
+        pointer-events: none;
+        border-left: 1px solid #454545;
+      }
+    }
+  }
+}

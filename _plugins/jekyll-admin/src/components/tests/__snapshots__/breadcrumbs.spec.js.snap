@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components::Breadcrumbs renders correctly 1`] = `
+<ul
+  className="breadcrumbs"
+>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Posts
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      1
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Components::Breadcrumbs renders correctly 2`] = `
+<ul
+  className="breadcrumbs"
+>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Pages
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      1
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      2
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Components::Breadcrumbs renders correctly 3`] = `
+<ul
+  className="breadcrumbs"
+>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Data Files
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      1
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      2
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      3
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Components::Breadcrumbs renders correctly 4`] = `
+<ul
+  className="breadcrumbs"
+>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Drafts
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      1
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      2
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      3
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      4
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Components::Breadcrumbs renders correctly 5`] = `
+<ul
+  className="breadcrumbs"
+>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Collections
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      1
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      2
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      3
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      4
+    </a>
+  </li>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      5
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Components::Breadcrumbs renders correctly 6`] = `
+<ul
+  className="breadcrumbs"
+>
+  <li>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Static Files
+    </a>
+  </li>
+</ul>
+`;

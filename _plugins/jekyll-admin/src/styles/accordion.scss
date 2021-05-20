@@ -1,0 +1,26 @@
+.accordion {
+  position: relative;
+  overflow-y: hidden;
+  @include transition(max-height 0.5s);
+  .accordion-label {
+    display: block;
+    padding: 15px 20px;
+  }
+  .indicator {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .counter {
+    min-width: 20px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .chevrons {
+    font-size: 14px;
+    i { margin: 0 }
+  }
+}

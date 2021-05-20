@@ -1,0 +1,139 @@
+.dropzone {
+  text-align: center;
+  padding: 20px;
+  color: #9098A3;
+  background-color: #fafafa;
+  border: 2px dashed lighten($border-color, 9%);
+  border-radius: $border-radius;
+  position: relative;
+  .preview-info {
+    padding: 40px;
+    i {
+      display: inline;
+      font-size: 96px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+.dropzone-active {
+  background-color: $dark-orange;
+  color: white;
+}
+
+.static-list {
+  padding: 25px;
+  background-color: #fcfcfc;
+  border: 1px solid lighten($border-color, 9%);
+}
+
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  .file-preview {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lighten($border-color, 12%);
+    background-color: #fff;
+    margin: 10px 7px;
+    position: relative;
+    border-radius: $border-radius;
+    &:hover .delete{
+      opacity: 1;
+    }
+    a { height: 150px; }
+    div {
+      display: table;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      i {
+        display: table-cell;
+        color: #ccc;
+        font-size: 64px;
+        vertical-align: middle;
+      }
+    }
+    span.theme-indicator {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      text-align: left;
+      background: $dark-red;
+      i {
+        margin: 0;
+        padding: 8px 7px 7px;
+        color: white;
+        font-size: 16px;
+      }
+    }
+    span.filename {
+      padding: 5px;
+      font-size: 14px;
+      line-height: 2;
+      text-align: center;
+      width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-top: 1px solid lighten($border-color, 9%);
+      border-bottom: 1px solid lighten($border-color, 9%);
+    }
+    img {
+      @include nodrag();
+      object-fit: contain;
+      width: 150px;
+      height: 150px;
+    }
+    .delete {
+      padding-bottom: 4px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 250ms ease;
+      background: #cf3f3f;
+      border: none;
+    }
+  }
+  .splitter {
+    margin-top: 25px;
+    opacity: 0.5
+  }
+  .preview-tip {
+    margin-bottom: -5px;
+    width: calc(100% - 0px); // override flex-wrap css
+  }
+}
+
+.preview-info {
+  padding: 20px;
+  text-align: center;
+  color: #454545;
+  i {
+    display: inline;
+    font-size: 96px;
+    margin: 0;
+  }
+  h2, h4 {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.btn-upload {
+  font-size: 24px;
+  i {
+    margin-right: 10px;
+  }
+}

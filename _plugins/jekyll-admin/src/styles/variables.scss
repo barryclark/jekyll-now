@@ -1,0 +1,32 @@
+$sidebar-width: 220px;
+$content-side-width: 200px;
+
+$orange: #ffcc00;
+$dark-orange: #ff9900;
+$dark-red: #f44336;
+$green: #8bc34a;
+$off-white: #fafafa;
+$white: #fcfcfc;
+$dark-gray: #727272;
+$inactive-gray: #9ea1a3;
+$new: #68BD6A;
+$new-hover: #80ce81;
+
+$background-color: #f8f8f8;
+
+$border-color: darken($background-color, 15%);
+$border-color-focus: $orange;
+$border-radius: 2px;
+
+$btn-initial: #9ea1a3;
+$btn-initial-border: #828282;
+$btn-fat-hover: $dark-orange;
+$btn-fat-hover-border: $dark-orange;
+$btn-active: #ff6e00;
+$btn-active-border: #dd5c00;
+$btn-inactive: $btn-initial !important;
+$btn-inactive-border: $btn-initial-border !important;
+$btn-success: #8dcf3f;
+$btn-success-border: #6ba329;
+$btn-danger: #ff6868;
+$btn-danger-border: #bc0000;

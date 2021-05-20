@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+script/branding
+bundle install
+yarn install

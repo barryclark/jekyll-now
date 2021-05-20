@@ -1,0 +1,5 @@
+---
+foo: bar
+---
+
+# Draft Post
