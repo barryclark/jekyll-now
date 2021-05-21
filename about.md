@@ -21,6 +21,8 @@ I'm currently based off of New York City, and grew up in the suburbs of northern
 
 ### About War(un)lock
 
+<img src="/images/warunlock_logo.png" width="250" />
+
 #### The Background
 
 A while back, I created a Medium account to write blog posts. The ambition fell through, as:
