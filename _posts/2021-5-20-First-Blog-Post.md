@@ -1,6 +1,6 @@
 ---
 layout: post
-title: | Data Scientist |
+title: "| Data Scientist |"
 ---
 
 +What do I think being a data scientist is about?
