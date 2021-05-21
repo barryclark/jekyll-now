@@ -24,6 +24,8 @@ Here are some useful websites that I have found in the past
 
 [CMDLineTips](https://cmdlinetips.com){:target="_blank"}: Python and R Tips. 
 
+[fiveMinuteStats](https://stephens999.github.io/fiveMinuteStats/index.html){:target="_blank"}: Learn statistics in R
+
 
 ### Books
 [Deeo Learning](https://www.deeplearningbook.org){:target="_blank"}: The Deep Learning textbook is a resource intended to help students and practitioners enter the field of machine learning in general and deep learning in particular
