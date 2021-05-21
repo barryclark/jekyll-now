@@ -25,55 +25,47 @@ Finally, a couple of weeks ago, I also purchased some D&D miniatures to paint. I
 
 Over the past few weeks, I’ve been doing an exercise routine to get back into running and to be able to enjoy the prospect of scuba diving more. Last week, I was able to run around 4 miles in about 50 minutes. That’s around a 12:30 pace, which is more of a jogging pace, but I’ve always come out of the jog feeling satisfied and not about to keel over. My goal is to be able to continuously jog a 10k, which I’ve never done before. I’ve done a bit of noodling on the internet to find tips, and I wanted to share my findings and experiences here.
 
-A particular jogging article invoked my memory of my love-hate relationship with my high school P.E. classes. On one hand, I enjoyed P.E. because I genuinely enjoyed playing sports and always passed the class feeling healthier. On the other hand, the fitness tests were the worst things in the world. The athletes in the class blew through the fitness test without an issue, while the others (including me) lagged behind on the track field. The [pacer test](https://fitnessgram.net/pacertest/) was particularly terrible, and I was always left out of breath and tasting blood at the back of my throat. I could hold my ground on the sit-ups, but that was about it. It sucked.
+A particular jogging article invoked my memory of my love-hate relationship with my high school P.E. classes. While I genuinely enjoyed playing sports, the fitness tests were the worst. The athletes in the class blew through the fitness test without an issue, while the others (including me) lagged behind on the track field. The [pacer test](https://fitnessgram.net/pacertest/) was particularly terrible, and I was always left out of breath and tasting blood at the back of my throat. I could hold my ground on the sit-ups, but that was about it. It sucked.
 
-Throughout high school and college, I’ve done fencing to keep up with my fitness. It involved a combination of tactics and power-based movements. I eventually supplemented my fencing practice with strength training and treadmill running. Leg day was never a problem, but I still had issues with running longer than 2 miles at a time until a year into this workout montage. I decided not to continue the sport after college, mostly because of the amount of equipment to carry and maintain.
+Throughout high school and college, I’ve done fencing to keep up with my fitness. It involved a combination of tactics and power-based movements. I eventually supplemented my fencing practice with strength training and treadmill running. Leg day was never a problem, but I still had issues with running longer than 2 miles at a time until a year into this workout montage. I decided not to continue the sport after college because of the amount of equipment to carry and maintain.
 
-So what’s the point of explaining my background? Getting back into running for fitness has been a lot of reconditioning my brain around running. Running is now becoming my physical maintenance, rather than a supplement to a sport or a requirement for class. Most of the types of fitness and sports I’ve been able to keep up with were more power-based and sprint-based - a lot of anaerobic workouts. That is to say, a burst of power without needing oxygen to sustain the power. The fitness things I’ve learned in the past won’t work for the aerobic long-distance running.
+Getting back into running now has been a lot of reconditioning my brain around running. Running is now my physical maintenance, rather than a supplement to a sport or a requirement for class. Most of the types of fitness and sports I’ve been able to keep up with were mostly anaerobic workouts - short bursts of power without needing oxygen to sustain the power. The training I’ve learned in the past won’t work for the aerobic long-distance running.
 
 As I went through some articles on how to run better, there were running tips that only dig through the reasons on a very superficial level. As a nerd, I decided to dig more into what actually goes on while I’m jogging and exercising. (It’s a long list of articles that I didn’t keep track of, but [one article from Livestrong](https://www.livestrong.com/article/531257-the-effects-of-jogging-every-day/) is an example that I’ve saved.)
 
 #### Your breathing is a muscle, and it needs to be conditioned.
 
-Your entire heart is a muscle, and the diaphragm is the muscle that sits under your lungs to really help get air into the lungs. Your heart and your lungs help to bring that sweet, sweet oxygen into the rest of your body. Your body needs that oxygen to break down the stored fuel in your body (particularly glycogen in the muscles when running), so your muscles can continue keep up with the running.
+Your heart and your lungs help to bring that sweet, sweet oxygen into the rest of your body. Your body needs that oxygen to break down the stored fuel in your body (particularly glycogen in the muscles when running), so your muscles can continue keep up with the running.
 
-Like lifting weights in the gym, going too fast too soon on running can result in injuries, pain, and discouragement from trying again. I’ve fallen into this trap of running too fast to keep up, and giving up on consistently running because the suffering outweighed the benefits.
+Your entire heart is a muscle, and the diaphragm is the muscle that sits under your lungs to really help get air into the lungs. Like lifting weights in the gym, going too fast too soon on running can result in injuries, pain, and discouragement from trying again. I’ve fallen into this trap of running too fast to keep up, and end up unable to catch my breath before my legs were tired.
 
-Before I got my COVID-19 vaccine, I took longer walks to keep up with my fitness. Running with a mask was impossible for me because my fitness was not good enough to get oxygen through a mask. However, the longer walks have made me more patient with running longer distances, since I can cover more distance with the same amount of time!
-
-Even though I jog at a slower pace, I could focus more on my breathing, how my feet are hitting the pavement, my mental state, etc. Eventually, I could start adding an extra 5 minutes of jogging, or be able to do a sprint here or there without feeling winded afterwards. Literally, training to run is a marathon, not a sprint.
+Even though I jog at a slower pace, I could focus more on my breathing, how my feet are hitting the pavement, and my mental state. Once I got into a flow, I could start adding an extra 5 minutes of jogging, or be able to do a sprint occasionally without feeling winded afterwards.
 
 #### Breathing through the stomach vs. chest.
 
-Speaking of the diaphragm… it is THE muscle of breathing. It sits underneath your lungs. When it contracts, it causes your lungs to have a negative pressure, so air automatically fills your lungs. When it relaxes, it causes your lungs to have a positive pressure, so air automatically exits your lungs. Magic, right? That is why every running article out in the Internet emphasizes breathing from the stomach.
+The diaphragm is THE muscle of breathing that sits underneath your lungs. When it contracts, it causes your lungs to have a negative pressure, so air automatically fills your lungs. When it relaxes, it causes your lungs to have a positive pressure, so air automatically exits your lungs. Magic, right? That is why every running article out in the Internet emphasizes breathing from the stomach.
 
-Why is there the talk about chest breathing not being ideal? Chest breathing involves the muscles around your neck, shoulders, and chest to lift your rib cage. Lifting the rib cage creates negative and positive pressures to let air through your lungs. However, that method pulls your bones against gravity. That takes a lot more effort to breathe than breathing from the stomach.
+What about chest breathing? Chest breathing involves the muscles around your neck, shoulders, and chest to lift your rib cage. Lifting the rib cage creates negative and positive pressures to let air through your lungs. However, that method pulls your bones against gravity. That takes a lot more effort to breathe than breathing from the stomach.
 
 #### Learning how to accept setbacks.
 
-Have you had the time where you set up a great routine for an exercise habit you wanted to build? You kept it up for a couple of weeks, but then something came up and you had to skip a workout, or you felt like you needed to catch up and ended up injuring yourself, so you paused for a week, and now you’re behind. Then in a few weeks, that exercise “habit” became a thing of the past. Oh yes, me included.
-
-For the first couple of runs, I’ve timed myself to get a baseline of how fast I ran vs. where I was in the track. There were days where I hit a massive streak of runs, and other times I’ve massively missed my target.
+There were days where I hit a streak of runs, and other times I’ve massively missed my target distance, or felt more exhausted than usual. I fear the many times where this small setback will pile up, and eventually this exercise "habit" will be a thing of the past.
 
 One thing I keep in mind is that the setback may be due to a number of factors, including:
 * *It’s too hot outside and I’m exhausted.* I may need to rearrange my schedule to run in the mornings more, and make sure I hydrate myself in advance.
-* *I’m getting out of breath.* I take a couple of minutes to take a walk and catch my breath. After 5 minutes, I resume jogging. Any jogging is good jogging.
-* *I woke up at 2am for no reason, then tilted because a pigeon `s***` on my shirt as I was walking to the track, so I went back to my apartment to change shirts.* (Yes, this happened to me recently). Well, I’m happy I did some jogging, and I’m going to get some better sleep tonight.
+* *I’m running out of breath during my jog.* I take a couple of minutes to take a walk and catch my breath, then think why I was running out of breath. Did I pace myself? Did I breathe through my stomach? After 5 minutes, I resume jogging.
+* *I woke up at 2am for no reason, then tilted because a pigeon `s***` on me as I was walking to the track, so I went back to my apartment to change shirts.* Well, I’m happy I went out and did some jogging, and I’m going to get some better sleep tonight.
 * *I’m just not running as well as I was the previous jog.* Have I been eating as well as I should’ve? Did I hydrate myself? Am I ruminating about something?
 
-The ultimate goal is to get myself on my feet and get healthier. This would involve a combination of making time and space for it, being consistent, and giving some slack if things doesn't work out despite everything else.
-
-#### Rest days are no joke.
-
-A fun fact - I currently run 4 times per day. And yet, I’ve progressed from a 20-minute jog to around a 50-minute jog in a couple of weeks. Rest days are nice to give space for actual rest, or to do different physical activities like biking or swimming. It makes sure that you don’t get bored of doing the same thing everyday. It also helps to not overexert the same muscles everyday and potentially cause injury.
+The ultimate goal is to get myself on my feet and get healthier. This would involve a combination of making time and space for it, being consistent, and giving some slack if things don't work out despite everything I've tried.
 
 #### Jogging alone is not great for losing weight.
 
 This was something that stood out to me in high school. I gained 5 pounds when I started P.E., and then lost 7 pounds when the school year ended and I stopped regularly running - a net 2 pound lost.
 
-The same thing happened to me as I started my jogging routine. Without changing my diet as I started, I instantly gained 5 pounds. My guess is that I gained more muscle and started drinking more water to hydrate properly. Despite the weight gain, the benefits of having better heart health is well worth it. (BUT I hope to start burning some fat after a couple of weeks.)
+The same thing happened to me as I started my jogging routine. Without changing my diet as I started jogging, I gained 5 pounds almost overnight. My guess is that I gained more muscle and started drinking more water to hydrate properly. Despite the weight gain, the benefits of having better heart health is well worth it. (BUT I hope to start burning some fat after a couple of weeks.)
 
-Articles I've come across have been wishy-washy about whether jogging makes for good weight loss. They agree more that diet is essential for both weight loss and exercise performance.
+Articles I've come across have been wishy-washy about whether jogging makes for good weight loss. They agree more that diet is essential for both weight loss and exercise performance. (I'll write a future blog post on diet and cooking, as I've spent a lot of time on everything FOOD.)
 
 As a last tip: reward yourself occasionally after exercising, but NEVER with food! The last thing you want is to offset the calories you've burned with a calorie bomb, and associate exercise with food.
 
