@@ -1,0 +1,46 @@
+---
+layout: default
+title: Portfolio
+description: 'Clancy blog features productivity, tips, inspiration. Find out how to set up a successful blog or how to make yours even
+better!'
+---
+
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-10 col-d-12">
+        <div class="hero__inner">
+          {% if page.title %}
+            <h1 class="hero__title">{{ page.title }}</h1>
+          {% endif %}
+          {% if page.description %}
+            <p class="hero__description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+
+<div class="portfolio__gallery animate">
+  <div class="container">
+    <div class="row">
+      {% for photo in site.data.settings.portfolio.portfolio__gallery %}
+      <div class="col col-4 col-d-6 col-t-12">
+        <div class="portfolio__item">
+          <a href="{% if photo.video %}{{photo.video}}{% else %}{{photo.image}}{% endif %}" class="portfolio__link glightbox" {% if photo.video %}aria-label="Video"{% else %}data-glightbox='title: {{photo.title}}; description: {{photo.description}}; descPosition: bottom;'{% endif %}>
+            <span class="portfolio__icon"><i class="ion ion-ios-eye"></i></span>
+            <img data-src="{{photo.image}}" class="portfolio__image lazy" alt="{{photo.title}}">
+          </a>
+         </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% include pagination.html %}
+
+{% include section-subscribe.html %}
