@@ -3,7 +3,7 @@ layout: post
 title: "| Data Scientist |"
 ---
 
-## What do I think being a data scientist is about?**
+## What do I think being a data scientist is about?
 
 It is a bit vague to define the field of data science. It should be somewhere in the middle of software engineering and statistics.
 Here is a pithy definition float across many blogs:  
