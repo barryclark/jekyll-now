@@ -14,9 +14,10 @@
     flex-wrap: wrap;
     padding: $base-spacing-unit;
   
-    // @media only screen and (max-width: $tablet) {
-    //   padding: 40px $base-spacing-unit;
-    // }
+    @media only screen and (max-width: $tablet) {
+      // padding: 40px $base-spacing-unit;
+      text-align: center;
+    }
   }
 }
 
