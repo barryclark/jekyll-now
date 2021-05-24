@@ -1,7 +1,5 @@
 ---
-layout: page
 title: About  
-permalink: /about/
 author: Soohee Jung  
 date: May 23,2021  
 output:  
@@ -21,5 +19,5 @@ I want to be a **data scientist** after graduation
 
 ### Contact me
 
-[sjung7@ncsu.edu](sjung7@ncsu.edu)  
+[sjung7@ncsu.edu](mailto: sjung7@ncsu.edu)  
 [linkedin](https://www.linkedin.com/in/soohee-jung-2ba256201/)
