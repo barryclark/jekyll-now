@@ -1,11 +1,11 @@
 /* Header */
 .header {
-
+  border-bottom: 1px solid #e0e0e0;
   position: fixed;
   top: 0px;
   width: 100%;
   z-index: 999;
-  // background-color: wheat;
+  background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 100%); 
 
   .header__inner {
     position: relative;
