@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About  
+permalink: /about/
 author: Soohee Jung  
 date: May 23,2021  
 output:  
@@ -8,7 +9,6 @@ output:
         toc:TRUE  
         toc_float: TRUE  
         code_folding: hide
-permalink: /about/
 ---
 
 *Soohee Jung*  
