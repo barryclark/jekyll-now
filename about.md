@@ -1,15 +1,25 @@
 ---
 layout: page
-title: About
+title: About  
+author: Soohee Jung  
+date: May 23,2021  
+output:  
+    html_document:  
+        toc:TRUE  
+        toc_float: TRUE  
+        code_folding: hide
 permalink: /about/
 ---
 
-Some information about you!
+*Soohee Jung*  
 
-### More Information
+### More about me
 
-A place to include any other types of information that you'd like to include about yourself.
+I am a **Korean-American**  
+Masters student at North Carolina State University in **Statistics**  
+I want to be a **data scientist** after graduation
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[sjung7@ncsu.edu](sjung7@ncsu.edu)
+[linkedin](https://www.linkedin.com/in/soohee-jung-2ba256201/)
