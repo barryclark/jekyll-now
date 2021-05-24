@@ -16,38 +16,16 @@
         </div>
       </div>
     </div>
-    
-    <div class="portfolio__gallery animate">
-        <div class="container">
-            <div class="row">
-                {% for article in site.data.settings.now.now__content %}
-                <div class="article col col-4 col-d-6 col-t-12">
-            <div class="article__inner">
-    
-                <div class="article__head">
-                    <time class="article__date" datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date_to_string }}</time>
-                    {% if article.image %}
-                    <a class="article__image" href="{{post.url | prepend: site.baseurl}}">
-                    <img class="lazy" data-src="{{site.baseurl}}{{article.image}}" alt="{{article.title}}">
-                    </a>
-                    {% endif %}
-                </div>
-        
-            <div class="article__content">
-        
-                <h2 class="article__title">
-                <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-                </h2>
-        
-                <p class="article__excerpt">{% if article.description %}{{ article.description }}{% else %}{{ article.content | strip_html | truncate: 80 }}{% endif %}</p>
-        
-            </div>
-            </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
+
+    <div class="container">
+      <div class="row">
+        {% if site.posts.size > 0 %}
+          {% for post in site.posts offset:0 limit:3 %}
+            {% include article.html %}
+          {% endfor %}
+        {% endif %}
+      </div>
     </div>
 
-  </section>
-  <!-- end now -->
+</section>
+<!-- end now -->
