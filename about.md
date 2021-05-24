@@ -1,11 +1,11 @@
 ---
-title: About  
-author: Soohee Jung  
-date: May 23,2021  
+title: "About"   
+author: "Soohee Jung"  
+date: "May 23,2021"  
 output:  
     html_document:  
-        toc:TRUE  
-        toc_float: TRUE  
+        toc: true  
+        toc_float: true  
         code_folding: hide
 ---
 
