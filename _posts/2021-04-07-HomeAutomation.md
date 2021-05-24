@@ -26,3 +26,17 @@ Now To explain What is HASSIO >
 I really recommmend starting this as your Home Assistant *****.
 
 You can get your own HASSIO by following their installation intructions : [HASSIO](https://www.home-assistant.io/installation/)
+
+## Why use home automation/assistant ?
+
+Home assistant is Home Automation Hub. Or Home Automation Software to be more precise. It’s free and open source and fully local alternative to things like HomeBridge and SmartThings. It gives you the power of home automation without the cloud so you won’t depend on internet connection or remote servers. This results in faster operation and reliability. At least as long as you know how to properly set it all up, because in this you’re the only one to blame if something fails
+  - [Source](https://community.home-assistant.io/t/homeassistant-for-newcomers-what-it-is-what-is-hassio-hassos-hassbian-101-and-cookies/123004)
+
+TBH, Why the hell not?. In couple of years we are going to have everything smart or I-O-T in our home network!. We need some kind of device to manage all that and keep our network secure.
+
+## How can this help me with everyday task?
+
+Currently, I got a automation script running on HASSIO to automate my heating and cooling in a room. let me tell you the best part is!, this is possible without thermostat. By just flashing custom firmware on ESP8266, which is an IOT device that lets my HASSIO know abobut temperature via DHT111 temperature sensor connected to it.
+
+Now this is just a tip of the iceberg. if you would like to explore more of HASSIO projects created by best commmunity in the world here it is : [WORLD](https://www.reddit.com/r/homeassistant/)
+
