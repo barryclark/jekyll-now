@@ -1,0 +1,55 @@
+---
+layout: default
+title: Now
+description: 'Clancy blog features productivity, tips, inspiration. Find out how to set up a successful blog or how to make yours even
+better!'
+---
+
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-10 col-d-12">
+        <div class="hero__inner">
+          {% if page.title %}
+            <h1 class="hero__title">{{ page.title }}</h1>
+          {% endif %}
+          {% if page.description %}
+            <p class="hero__description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+
+<div class="portfolio__gallery animate">
+  <div class="container">
+    <div class="row">
+      {% for article in site.data.settings.now.now__content %}
+      <div class="article col col-4 col-d-6 col-t-12">
+        <div class="article__inner">
+          <div class="article__head">
+            {% if article.image %}
+            <a class="article__image" href="">
+              <img class="lazy" data-src="{{article.image}}" alt="{{article.title}}">
+            </a>
+            {% endif %}
+          </div>
+      
+          <div class="article__content">
+      
+            <h2 class="article__title">
+              <a href=""></a>
+            </h2>
+      
+            <p class="article__excerpt"></p>
+      
+          </div>
+        </div>
+      </div>      
+      {% endfor %}
+    </div>
+  </div>
+</div>
