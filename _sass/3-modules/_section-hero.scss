@@ -1,8 +1,13 @@
 /* Hero */
 .hero {
-  background-color: var(--light-gray);
+  background-color: #fafafa;
   margin-bottom: 40px;
   padding: 56px 0 32px 0;
+  // background: rgb(240,240,240);
+  // background: -moz-linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 50%);
+  // background: -webkit-linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 50%);
+  // background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 50%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f0",endColorstr="#ffffff",GradientType=1); 
 
   @media only screen and (max-width: $desktop) {
     margin: 0px 0px 32px 0px;
@@ -16,13 +21,18 @@
 
   // adjusted for subsections
   .hero-2 {
-    background-color: var(--light-gray);
+    background-color: #fafafa;
     margin-bottom: 40px;
-    padding: 80px 0 32px 0;
+    padding: 112px 0 32px 0;
 
     @media only screen and (max-width: $desktop) {
       padding: 116px 0 32px 0;
     }
+
+  }
+
+  .hero-2 .hero__title {
+    margin-bottom: 0px !important;
   }
 
 .hero__inner {
