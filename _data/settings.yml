@@ -26,7 +26,7 @@ menu__settings:
 # Hero Settings
 hero:
   hero__title: Hey! I'm Ivo, a freelance Product Designer, teacher, musician and hand model*
-  hero__description: Here you can <a href="/now">see what I'm doing right now</a>, <a href="/portfolio">check out my portfolio</a>, <a href="/blog">read my adventures learning new stuff</a> and <a href="/about">know a little bit more about me</a>.
+  hero__description: In this digital space you can <a href="/now">see what I'm doing right now</a>, <a href="/portfolio">check out my work</a>, <a href="/blog">read how I struggle to learn web development</a> and <a href="/about">know a little bit more about me</a>.
 
 
 #-------------------------------
