@@ -22,7 +22,7 @@
                   ※返信を必要とする場合は必ず記入してください
                 </t-tag>
               </div>
-              <div class="input-field col s5" v-else-if="index==2">
+              <div class="input-field col s5" v-else-if="index==3">
                 <p>
                   <label>{{item.question}}</label>
                 </p>
@@ -31,7 +31,7 @@
                   <option v-for="(op, idx) in item.options" v-bind:key="op" :item="op" :index="idx" :value="op">{{op}}</option>
                 </select>
               </div>
-              <div class="row" v-else-if="index==3">
+              <div class="row" v-else-if="index==2">
                 <div class="input-field col s12">
                   <textarea :id="'entry.'+item.name" name="item.name" class="materialize-textarea" length="120"></textarea>
                   <label :for="'entry.'+item.name">Textarea</label>
@@ -82,7 +82,7 @@ input[type="text"]:not(.browser-default):focus:not([readonly]), input.valid[type
 export default {
   data() {
     return {
-      formUrl: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScszXtPiIsOfWGg8TrWCd4Am4OU_7p_6YJYk9GG4MMhPuWVlg/formResponse',
+      formUrl: 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSe2itdG3fNJkTk59WOM9rMv4E5pZ3O2A4EWDxJIYXQRfML2CQ/formResponse',
       formData: [
       {
         name: 842797987,
@@ -98,16 +98,16 @@ export default {
         label: 'メールアドレス',
         validate: true
       },
+      // {
+      //   name: 1668971609,
+      //   question: 'お問い合わせ区分',
+      //   questionType: 'pulldown',
+      //   label:  'お問い合わせ区分を選択してください',
+      //   options: ['運営について', 'ボランティア参加について', 'ニンジャ参加について', '取材について'],
+      //   validate: true
+      // },
       {
         name: 1506558776,
-        question: 'お問い合わせ区分',
-        questionType: 'radio',
-        label:  'お問い合わせ区分を選択してください',
-        options: ['運営について', 'ボランティア参加について', 'ニンジャ参加について', '取材について'],
-        validate: true
-      },
-      {
-        name: 1668971609,
         question: 'メッセージ',
         questionType: 'text',
         label: 'メッセージ',
@@ -119,10 +119,11 @@ export default {
   },
   methods: {
     submitForm: function() {
-      document.contactForm.submit().then(result => {
-        //Slackに通知
-        result
-      });
+      document.contactForm.submit();
+      // document.contactForm.submit().then(result => {
+      //   //Slackに通知
+      //   result
+      // });
     }
   },
   created() {
