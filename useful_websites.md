@@ -38,6 +38,8 @@ Here are some useful websites that I have found in the past
 
 [Data Analysis for the Life Sciences” by Rafael Irizarry and Michael Love](http://genomicsclass.github.io/book/){:target="_blank"}: 
 
+[Computational Genomics with R](https://compgenomr.github.io/book/){:target="_blank"}: 
+
 ### Repositories
   
 [Greenleaf Lab](https://github.com/GreenleafLab){:target="_blank"}: (sc)ATAC-seq packages and scripts from the Greenleaf LAb
