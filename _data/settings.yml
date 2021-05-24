@@ -25,7 +25,7 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hey! I'm Ivo, a freelance Product Designer, teacher, musician and hand model.
+  hero__title: Hey! I'm Ivo, a freelance Product Designer, teacher, musician and hand model*
   hero__description: Here you can <a href="/now">see what I'm doing right now</a>, <a href="/portfolio">check out my portfolio</a>, <a href="/blog">read my adventures learning new stuff</a> and <a href="/about">know a little bit more about me</a>.
 
 
@@ -35,7 +35,7 @@ portfolio:
   portfolio__title: Portfolio
   portfolio__gallery:
     - image: /images/gallery-01.jpg
-      title: Samantha Gades
+      title: No More Haters
       description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
 
     - image: /images/gallery-02.jpg
@@ -52,19 +52,28 @@ portfolio:
 now:
   now__title: Now
   now__content:
+    - image: /images/commit-sans.jpg
+      title: Commit Sans
+      description: Software, handmade with love
+
+      # image: /images/gallery-01.jpg
+    - image: /images/community-tools.png
+      title: Community Tools
+      description: Tools to help people connect
+
     - body: hola qué cosa
       image: /images/gallery-01.jpg
-      title: Samantha Gades
+      title: Fictizia
       description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
 
     - body: hola qué cosa
       image: /images/gallery-01.jpg
-      title: Samantha Gades
+      title: A New Sun
       description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
 
     - body: hola qué cosa
       image: /images/gallery-01.jpg
-      title: Samantha Gades
+      title: Trash Slayer
       description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
 
 
