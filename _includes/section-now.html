@@ -18,12 +18,11 @@
     </div>
 
     <div class="container">
-      <div class="row">
-        {% if site.posts.size > 0 %}
-          {% for post in site.posts offset:0 limit:3 %}
-            {% include article.html %}
-          {% endfor %}
-        {% endif %}
+      <ul>
+        {% for news in site.data.settings.now.now__content limit:3 %}
+          <li>{{news}}</li>
+        {% endfor %}
+      </ul>
       </div>
     </div>
 
