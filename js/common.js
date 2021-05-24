@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
   /* =======================================================
   // Menu + Theme Switcher + Toggle list view
   ======================================================= */
-  menuOpenIcon.addEventListener("click", () => {
-    menuOpen();
-  });
+  // menuOpenIcon.addEventListener("click", () => {
+  //   menuOpen();
+  // });
 
-  menuCloseIcon.addEventListener("click", () => {
-    menuClose();
-  });
+  // menuCloseIcon.addEventListener("click", () => {
+  //   menuClose();
+  // });
 
-  toggleTheme.addEventListener("click", () => {
-    darkMode();
-  });
+  // toggleTheme.addEventListener("click", () => {
+  //   darkMode();
+  // });
 
   if (portfolioViewButton) {
     portfolioViewButton.addEventListener("click", () => {
@@ -31,13 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  function menuOpen() {
-    menuList.classList.add("is-open");
-  }
+  // function menuOpen() {
+  //   menuList.classList.add("is-open");
+  // }
 
-  function menuClose() {
-    menuList.classList.remove("is-open");
-  }
+  // function menuClose() {
+  //   menuList.classList.remove("is-open");
+  // }
 
 
   // Theme Switcher
