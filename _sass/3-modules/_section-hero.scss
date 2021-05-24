@@ -1,16 +1,26 @@
 /* Hero */
 .hero {
-  margin: 96px 0;
+  background-color: var(--light-gray);
+  margin-bottom: 40px;
+  padding: 56px 0 32px 0;
 
   @media only screen and (max-width: $desktop) {
-    margin: 40px 0;
+    margin: 0px 0px 32px 0px;
+    padding: 0px 0px 40px 0px;
+    .row {
+      flex-direction: column-reverse;
+    }
   }
+
 }
 
 .hero__inner {
+  @media only screen and (max-width: $desktop) {
+    margin-top: -40px;
+  }
   .hero__title {
-    margin-bottom: 32px;
-    font-size: 68px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
     line-height: 1.2;
     color: var(--heading-font-color);
 
@@ -23,7 +33,7 @@
     }
 
     @media only screen and (max-width: $tablet) {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       font-size: 40px;
     }
 
