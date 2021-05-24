@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Who's this guy?
 permalink: /about/
 image: '/images/01.jpg'
 ---
