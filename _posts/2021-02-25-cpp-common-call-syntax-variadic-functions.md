@@ -144,44 +144,32 @@ std::invoke_result_t<F,T,T> evaluate(F&& f, std::vector<T> args) {
 ```
 [Try it here](https://wandbox.org/permlink/SQo1zNCIarBx1VpR).
 
-One problem is that we cannot simply put the `std::invoke_result_t` expression into a default template parameter, because [they don't help with SFINAE](https://stackoverflow.com/questions/15427667/sfinae-working-in-return-type-but-not-as-template-parameter). We have to make it part of the return type. That is why the implementation for the `create_proxy` and `create_proxy_impl` function templates gets a bit hairy. However, the implementation becomes less complicated if we are willing to sacrifice the `auto` return type from the `create_proxy_impl` for an appropriate `std::function` specialization. [Here is a little demo](https://wandbox.org/permlink/3XY2SOxZ2dKv6dWS).
+One problem is that we cannot simply put the `std::invoke_result_t` expression into a default template type parameter, see e.g. [here](https://wandbox.org/permlink/kK3jH2304C6ez0Ki). The problem is that default template type parameters [do participate in SFINAE](https://stackoverflow.com/questions/16302977/static-assertions-and-sfinae/16304778#16304778), but they [do not participate in overload resolution](https://stackoverflow.com/questions/50392652/sfinae-not-working-with-a-very-simple-example). We work around that by making `std::invoke_result_t` part of the return type.
 
-However, since we are C++ developers we want to be warm and fuzzy in the knowledge that we squeezed every bit of performance out of our code even at the expense of (a lot of) readability. So here goes nothing:
+While this behavior does not bother us that much for the `evaluate` implementation, it becomes more annoying when we try to implement `create_proxy`. *Iff* we are willing to sacrifice the `auto` return type from the `create_proxy_impl` for an appropriate `std::function` specialization, then the implementation is pretty straightforward. [Try it here](https://wandbox.org/permlink/3XY2SOxZ2dKv6dWS).
+
+However, since we are C++ developers we want to be comforted by the knowledge that we squeezed every bit of performance out of our code, even at the expense of our sanity. So here goes nothing:
 
 ```c++
 template<typename F, typename ...Ts, size_t ...Is>
-auto create_proxy_impl(F &&f, std::integer_sequence<size_t, Is...>) {
-    // this if constexpr guard to be there, because evaluating
-    // the decltype expression below will give a compiler error
-    // if f is not callable with the given number of arguments
-    if constexpr (std::is_invocable_v<F, Ts...>) {
-        return [f = std::forward<F>(f)]
-                (const std::vector<arg_type_t<Ts...>> &params)
-                {return f(params[Is]...);};
-    } else {
-        // this branch results in a valid type even when f
-        // is not callable with the given number of arguments.
-        // This type will never be used since the overload of
-        // create_proxy is removed by the enable_if_t anyways
-        return;
-    }
+auto create_proxy_impl(F &&f, std::integer_sequence<size_t, Is...>, std::enable_if_t<std::is_invocable_v<F,Ts...>,int>  =0) {
+    return [f = std::forward<F>(f)](const std::vector<arg_type_t<Ts...>> &params) { return f(params[Is]...); };
 }
+
 template<typename T, typename F>
-std::enable_if_t<std::is_invocable_v<F, T>,
-  decltype(create_proxy_impl<F, T>(std::declval<F>(), std::make_index_sequence<1>{}))>
-create_proxy(F &&f) {
+decltype(create_proxy_impl<F, T>(std::declval<F>(), std::make_index_sequence<1>{})) create_proxy(F &&f) {
     return create_proxy_impl<F, T>(std::forward<F>(f),
                                    std::make_index_sequence<1>{});
 }
+
 template<typename T, typename F>
-std::enable_if_t<std::is_invocable_v<F, T, T>,
-  decltype(create_proxy_impl<F, T, T>(std::declval<F>(), std::make_index_sequence<2>{}))>
-create_proxy(F &&f) {
+decltype(create_proxy_impl<F, T, T>(std::declval<F>(), std::make_index_sequence<2>{})) create_proxy(F &&f) {
     return create_proxy_impl<F, T, T>(std::forward<F>(f),
                                       std::make_index_sequence<2>{});
 }
 ```
-Well, such is the beautiful mess that is C++. [Try it here](https://wandbox.org/permlink/K6YrdocresQAQEcb)
+Well, such is the beautiful mess that is C++. [Try it here](https://wandbox.org/permlink/gH4SyI5ulVDGJAGD). This might not look that complicated at first, but it took me quite a while to figure this out (for a less elegant solution see [here](https://wandbox.org/permlink/K6YrdocresQAQEcb)). Note that we cannot use the `auto` return
+type in both `create_proxy_impl` overloads and that we had to stick a  default `int` argument (guarded by a `std::enable_if_t`) into the argument list of `create_proxy_impl`.
 
 ### C++14 and Below
 Everything so far has been long and rambling, so I'll keep this section brief-ish. C++14 has no fold expressions, which we used in the `static_assert` of our `arg_type` helper struct template. Those must be replaced by a recursive metafunction call from our standard template metaprogramming bag of tricks. Furthermore, C++14 does not have `std::is_invocable` but is has `std::result_of`, which [is a little more dicey](https://en.cppreference.com/w/cpp/types/result_of) but should do what we want. In C++11, `std::result_of` is even more iffy and I'm not completely sure it will do what we want. Also, in C++11 we don't have the [generalized lambda capture](https://isocpp.org/wiki/faq/cpp14-language#lambda-captures) used to forward the callable into the closure, so we'll have to work around that as well.
