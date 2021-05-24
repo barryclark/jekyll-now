@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Web Automation - Website Scraping..like a spider or scrapper."
+title: "Web Automation"
 ---
 
 # Welcome
