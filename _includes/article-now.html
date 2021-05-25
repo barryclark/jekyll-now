@@ -1,0 +1,24 @@
+<div class="article now col col-4 col-d-6 col-t-12">
+  <a href="{{news.url | prepend: site.baseurl}}">
+    <div class="article__inner">
+
+      <div class="article__head">
+        {% if news.image %}
+        <a class="article__image" href="{{news.url | prepend: site.baseurl}}">
+          <img class="lazy" data-src="{{site.baseurl}}{{news.image}}" alt="{{news.title}}">
+        </a>
+        {% endif %}
+      </div>
+
+      <div class="article__content">
+
+        <h2 class="article__title">
+          <span href="">{{ news.title }}</span>
+        </h2>
+
+        <p class="article__excerpt">{% if news.description %}{{ news.description }}{% else %}{{ news.content | strip_html | truncate: 80 }}{% endif %}</p>
+
+      </div>
+    </div>
+  </a>
+</div>
