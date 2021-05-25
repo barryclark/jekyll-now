@@ -34,7 +34,7 @@
               <div class="row" v-else-if="index==2">
                 <div class="input-field col s12">
                   <textarea :id="'entry.'+item.name" name="item.name" class="materialize-textarea" length="120"></textarea>
-                  <label :for="'entry.'+item.name">Textarea</label>
+                  <label :for="'entry.'+item.name">メッセージ</label>
                 </div>
               </div>
               <div v-else></div>
