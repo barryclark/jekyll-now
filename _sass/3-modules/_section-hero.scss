@@ -10,15 +10,19 @@
   // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f0",endColorstr="#ffffff",GradientType=1); 
 
   // adjust home button position
-  button {
+  .button {
     margin-top: -24px;
+    text-align: center;
   }
 
-  @media only screen and (max-width: $desktop) {
+  @media only screen and (max-width: $desktop - 1) {
     margin: 0px 0px 32px 0px;
     padding: 0px 0px 40px 0px;
     .row {
       flex-direction: column-reverse;
+    }
+    .button {
+      margin-top: 24px;
     }
   }
 
@@ -26,12 +30,12 @@
 
   // adjusted for subsections
   .hero-2 {
-    background-color: #fafafa;
+    background-color: var(--light-gray);
     margin-bottom: 40px;
     padding: 112px 0 32px 0;
 
     @media only screen and (max-width: $desktop) {
-      padding: 116px 0 32px 0;
+      padding: 116px 0 16px 0;
     }
 
   }
