@@ -8,21 +8,21 @@
             <div class="section__head">
                 <span>
                     <h2 class="section__title">Now</h2>
-                    <!-- <h5 class="section__title">It's happening</h5> -->
+                    <p>Its happening! Stuff that Im involved in right now</p>
                 </span>
-              <a class="section__link" href="{{ '/now' | relative_url }}">View all</a>
+              <a class="section__link" href="{{ '/now' | relative_url }}">View more</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <ul>
-        {% for news in site.data.settings.now.now__content limit:3 %}
-          <li>{{news}}</li>
-        {% endfor %}
-      </ul>
+      <div class="container">
+        <div class="row">
+          {% for news in site.data.settings.now.now__content limit:3 %}
+            {% include article-now.html %}
+          {% endfor %}
+        </div>
       </div>
     </div>
 
