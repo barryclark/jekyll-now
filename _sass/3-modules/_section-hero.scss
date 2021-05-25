@@ -2,12 +2,17 @@
 .hero {
   background-color: #fafafa;
   margin-bottom: 40px;
-  padding: 56px 0 32px 0;
+  padding: 72px 0 56px 0;
   // background: rgb(240,240,240);
   // background: -moz-linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 50%);
   // background: -webkit-linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 50%);
   // background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 50%);
   // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f0",endColorstr="#ffffff",GradientType=1); 
+
+  // adjust home button position
+  button {
+    margin-top: -24px;
+  }
 
   @media only screen and (max-width: $desktop) {
     margin: 0px 0px 32px 0px;
