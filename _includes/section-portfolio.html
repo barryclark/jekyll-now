@@ -5,7 +5,10 @@
     <div class="row">
       <div class="col col-12">
         <div class="section__head">
-          <h2 class="section__title">{{ site.data.settings.portfolio.portfolio__title }}</h2>
+          <span>
+            <h2 class="section__title">{{ site.data.settings.portfolio.portfolio__title }}</h2>
+            <p>Its happening! Stuff that Im involved in right now</p>
+          </span>
           <a class="section__link" href="{{ '/portfolio' | relative_url }}">View more</a>
           <!-- <div class="portfolio__view">
             <div class="portfolio__toggle">
@@ -24,14 +27,8 @@
   <div class="portfolio__gallery animate">
     <div class="container">
       <div class="row">
-        {% for photo in site.data.settings.portfolio.portfolio__gallery %}
-        <div class="col col-4 col-d-6 col-t-12">
-          <div class="portfolio__item">
-            <a href="{% if photo.video %}{{photo.video}}{% else %}{{photo.image}}{% endif %}" class="portfolio__link" {% if photo.video %}aria-label="Video"{% else %}data-glightbox='title: {{photo.title}}; description: {{photo.description}}; descPosition: bottom;'{% endif %}>
-              <img data-src="{{photo.image}}" class="portfolio__image lazy" alt="{{photo.title}}">
-            </a>
-           </div>
-        </div>
+        {% for card in site.data.settings.portfolio.portfolio__gallery %}
+          {% include card.html %}
         {% endfor %}
       </div>
     </div>
