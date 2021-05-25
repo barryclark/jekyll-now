@@ -36,11 +36,17 @@ portfolio:
   portfolio__gallery:
     - image: /images/gallery-01.jpg
       title: No More Haters
-      description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
+      description: Games to fight hate speech
+      client: maldita.es
 
     - image: /images/gallery-02.jpg
-      title: Paula Vermeulen
+      title: Community Tools
       description: Gray mountain covered by mountain <a href="https://unsplash.com/photos/_f2m3mEkaaU">Unsplash</a>
+      client: Google
+
+    - image: /images/gallery-03.jpg
+      title: 
+      description: White wooden table near brown chair <a href="https://unsplash.com/photos/nvzvOPQW0gc">Unsplash</a>
 
     - image: /images/gallery-03.jpg
       title: Bench Accounting
@@ -55,16 +61,18 @@ now:
     - image: /images/commit-sans.jpg
       title: Commit Sans
       description: Software, handmade with love
+      url: commit-sans
 
       # image: /images/gallery-01.jpg
     - image: /images/community-tools.png
       title: Community Tools
       description: Tools to help people connect
+      url: community-tools
 
-    - body: hola qué cosa
-      image: /images/gallery-01.jpg
+    - image: /images/gallery-01.jpg
       title: Fictizia
       description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
+      url: commit-sans
 
     - body: hola qué cosa
       image: /images/gallery-01.jpg
