@@ -279,3 +279,44 @@
     display: none;
   }
 }
+
+// mobile nav
+@media only screen and (max-width: $desktop) {
+  .main-nav {
+    position: fixed;
+    bottom: 0;
+    height: 56px;
+    background: var(--light-gray);
+    width: 100%;
+    z-index: 4;
+    left: 0;
+    border-top: 1px solid #e0e0e0;
+    opacity: 1;
+    visibility: visible;
+    top: auto;
+    padding: 0 16px;
+    display: flex;
+  }
+
+  .main-nav .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .nav__list .nav__item {
+    margin: 0px;
+  }
+
+  .main-nav .nav__list .nav__item .nav__link {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .main-nav .nav__list .nav__item .nav__link.nav__link--current {
+    color: var(--brand-color);
+    background: #e0e0e0;
+    border-radius: 16px;
+  }
+
+}
