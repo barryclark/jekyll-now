@@ -11,9 +11,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @media only screen and (max-width: $mobile) {
-    font-size: 18px;
-  }
+  // @media only screen and (max-width: $mobile) {
+  //   font-size: 18px;
+  // }
 }
 
 *::selection {
@@ -233,4 +233,16 @@ table td {
 // helpers
 .align-self-center {
   align-self: center;
+}
+
+.margin-top {
+  @media only screen and (max-width: $desktop - 1) {
+    padding-top: 64px;
+  }
+}
+
+body {
+  @media only screen and (max-width: $desktop - 1) {
+    padding-bottom: 64px;
+  }
 }
