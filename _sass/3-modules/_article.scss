@@ -72,3 +72,25 @@
   font-size: 16px;
   color: var(--text-alt-color);
 }
+
+.now {
+
+  .article__inner {
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+  }
+  
+  .article__title {
+    margin-bottom: 0px;
+  }
+
+  .article__content {
+    padding: ($base-spacing-unit);
+  }
+
+  .article__image {
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 0px;
+  }
+
+}
