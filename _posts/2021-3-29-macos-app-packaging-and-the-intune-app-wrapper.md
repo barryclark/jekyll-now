@@ -27,5 +27,5 @@ Here's what I found so far ... ( if you're interested 😁 )
     - The downside here is that reporting becomes a challenge.
         - Custom Attributes may be able to help here.
 
-In conclusion, macOS LOB app deployment still has some rough edges, and I do not think that it is ready for most Enterprise customers that are looking for a macOS solution that must contain 3rd party app packaging support (Jamf, WSO, MaaS360, MobileIron, Addigy, Kanji, etc). From what I can find online and in the Intune macOS slack channel is that Microsoft has plans to fix some of these issues in their package wrapper tool, but no ETA at present.
+In conclusion, macOS LOB app deployment still has some rough edges, and I do not think that it is ready for most Enterprise customers that are looking for a macOS solution that must contain 3rd party app packaging support (Jamf, WSO, MaaS360, Addigy, Kandji, etc). From what I can find online and in the Intune macOS slack channel is that Microsoft has plans to fix some of these issues in their package wrapper tool, but no ETA at present.
     
