@@ -20,12 +20,10 @@ I want to be a **data scientist** after graduation
 
 Statistics, SAS, R, Languages(Korean, English, Chinese)
 
-## Contact me {.tabset}
-
-### Email  
+## Contact me  
+ 
 [email](mailto:sjung7@ncsu.edu)  
 
-### Linkedin  
 [linkedin](https://www.linkedin.com/in/soohee-jung-2ba256201/)  
 
 ![](https://raw.githubusercontent.com/sjung7nc/sjung7nc.github.io/master/images/ny.jpg)
