@@ -1,9 +1,6 @@
-
-
+---
 layout: post
-
 title: I have watched Computer Architecture course from ETHZ. Here is what I think about it
-
 ---
 
 ![preview]({{ site.baseurl }}/images/computer-architecture-review-preview.png)
