@@ -2,7 +2,7 @@
 layout: post
 tags: rust varpro
 #categories: []
-date: 2021-05-31
+date: 2021-05-27
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
@@ -26,7 +26,7 @@ If we look at the mathematical notation of the functions $$\phi_j(t,\boldsymbol{
 
 Assume we have a model that depends on 2 nonlinear parameters $$\mu,\nu$$, which means $$\boldsymbol{\alpha}=(\mu,\nu)^T$$. Furthermore, we have 2 base functions like so $$\phi_1=\phi_1(t,\mu,\nu)$$ and $$\phi_1=\phi_2(t,\nu)$$. We can see that the base functions each depend on their own subset of the total model parameters. Different functions might depend on different subsets of parameters. Furthermore, the number of parameters can vary from function to function. So instead of making model functions take their parameters as a vector, I decided I would make a variadic function interface that allows me to pass the functions in a way that is intuitive and easy to read for the implementor. Rust --at the time of writing-- does not have variadic functions, so I had to use a trick that I explained in this [previous post](/blog/2021/rust-traits-and-variadic-functions/).
 
-Eventually, I ended up with simple interface for building a model function from a set of base functions with derivatives. I can implement the functions
+Eventually, I ended up with a simple interface for building a model function from a set of base functions with derivatives. I can implement the functions
 $$\phi_1=\phi_1(t,\mu,\nu)$$ and $$\phi_1=\phi_2(t,\nu)$$ in Rust like so [^types]:
 
 ```rust
