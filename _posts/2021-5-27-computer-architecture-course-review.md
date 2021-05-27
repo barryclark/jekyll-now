@@ -13,6 +13,8 @@ In this post I plan to talk about pros and cons of ETHZ CA course and give a bri
 
 ## What does ETHZ Computer Architecture course cover?
 
+![meme]({{ site.baseurl }}/images/meltdown-spectre-meme.png)
+
 The roadmap of the course is pretty usual and follows most of popular computer architecture books. It starts from the ground goes up, bringing new and new abstractions on what was covered before. Such course structure is really good for a student, as the process of studying is more like "inventing new technologies using existing knowledge based on older lectures" and not like "revealing how black-boxed technologies work, going deeper and deeper". Starting from the concept of transistor, the course builds up the understanding of logic gates, combinational and sequential logic, ALUs and registers and so on. To my surprise, it also covers some not mainstream, but quite interesting topics, for example systolic arrays. So here is a full list of key concepts discussed in lectures in their original order:
 
 - Computer architecture, its field and architectures overview: CPUs, FPGAs, GPUs, TPUs
