@@ -42,12 +42,24 @@ The roadmap of the course is pretty usual and follows most of popular computer a
 - Branch prediction
 
 - VLIW and systolic arrays
-- Fine-Grained Multithreading and SIMD Processors
+- Fine-grained multithreading and SIMD Processors
 
 - Graphics Processing Units and GPU Programming
 
-- Memory Organization: technologies, hierarchies, caches
+- Memory organization: technologies, hierarchies, caches
 
 - Cache issues and multiprocessor cache designs
 
 - Virtual memory
+
+## What I especially liked
+
+![tomasulo-algorithm]({{ site.baseurl }}/images/tomasulo-algorithm.png)
+
+I already had a superficial knowledge of most concepts covered in lectures, but that was definitely not enough. This was the main reason why I started watching the course in the first place.  So, comparing me before watching this course and after finishing it, I can certainly say that I learned a lot. My huge respect to professor Multu - pipelining and Out-of-Order execution (including Tomasulo algorithm) were explained accessibly and really well. Caches were also covered in great detail, with parallels in design of virtual memory. I have learned new design concepts, like VLIW and systolic arrays, which to my regret, I did not known before. I also liked the idea of questioning every new introduced concept, showing it pros and cons and comparing it to alternatives. The key is that there is no best design decision - every idea has some tradeoffs that computer architect make when designing a system. Such skeptical look encourages students to think more and analyze stuff, not simply memorizing that "this is good" and "this is bad".
+
+## What can be done better
+
+![warp-scheduling]({{ site.baseurl }}/images/warp-scheduling.png)
+
+TODO
