@@ -62,4 +62,10 @@ I already had a superficial knowledge of most concepts covered in lectures, but 
 
 ![warp-scheduling]({{ site.baseurl }}/images/warp-scheduling.png)
 
-TODO
+As a graphics developer, one of my aims was to learn GPU architecture. And yes, it was covered in lectures, but not so detailed as I would like. Certainly that was because the course aims to cover a wide range of topics and cannot go into every detail in each one, but it is needed to say that if you, like me,  want to study GPU architecture, this course will be a good start, but will definitely be not enough. One of the most today's challenging topics, branch prediction, was also explained quite fast, leaving modern standard prediction algorithms for self learning. Of course there is masters computer architecture course which focuses more deeply on exact concepts, but I wish that as much as possible of them might be learned from bachelors one.
+
+## What's next
+
+As I already said, one computer architecture course even from top-10 university will not be enough to become computer architect or professional C++ developer. The learning route of a professional never was a straight line and even I am not sure what to do next. Maybe I will watch [ETHZ CA master course](https://www.youtube.com/watch?v=c3mPdZA-Fmc&list=PL5Q2soXY2Zi9xidyIgBxUz7xRPS-wisBN&index=1) in the future, luckily it is also available on youtube. Maybe I will finally read [Structured Computer Organization](https://www.amazon.com/Structured-Computer-Organization-Andrew-Tanenbaum/dp/0132916525) which has been dusting on my shelf for a year. Maybe some papers from Nvidia and AMD would be enough, who knows:)
+
+Anyway, I am really glad that there are such good people like prof. Mutlu, who allows us to receive high-level education for free. Universities will not lose any of their students if their lectures are available online for free, and their reputation will only increase, as more and more people will know the real quality of education they provide. So, do not forget to learn new technologies, share your knowledge and do good things for others! I hope this article was helpful for you, as usual if you have any questions and suggestions, or found mistake in the article, feel free to [contact me](https://t.me/momodeve).
