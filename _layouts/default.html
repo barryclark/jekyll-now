@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
@@ -13,27 +16,125 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="{{ site.baseurl }}/">{{ site.name }}"><span>That</span><span><p class="site-description">{{ site.description }}</p></span></a>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="{{ site.baseurl }}/about">About</a></li>
+                    <li><a href="{{ site.baseurl }}/">Bolg</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
+
+    <div class="blockgu">
+        <blockquote>
+            <h2>hello word</h2>
+        </blockquote>
+
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Watch a video
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awesome features</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120906!2d-118.43209796322542!3d34.10028430183922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1611702818717!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+  <!--upload!-->
+  
+   <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+  
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
@@ -47,5 +148,28 @@
     </div>
 
     {% include analytics.html %}
-  </body>
-</html>
+  
+  
+  <!--upload!-->
+  
+  
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+</html> 
