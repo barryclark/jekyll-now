@@ -38,8 +38,8 @@ a submission file should have looked like.
 The winners of this competition were:
 
 <ol>
-<li> Akanksha Hatle , Score : 0.98076
-<li> Radhika Wadekar , Score : 0.98076
+<li> Akanksha Hatle , Score : 0.98076</li>
+<li> Radhika Wadekar , Score : 0.98076</li>
 </ol>
   
 The participants who made submissions were given a Completion Certificate
