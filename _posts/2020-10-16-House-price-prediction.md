@@ -21,9 +21,9 @@ new to Machine Learning and Kaggle , were provided.
 The winners of the competition were
 
 <ol>
-<li> 1st: Vaishnavi Khilari  , Score : 3.69578
-<li> 2nd: Sejal Kshirsagar  , Score :  3.89530
-<li> 3rd: Nupur Shah  , Score :  3.94156
+<li> 1st: Vaishnavi Khilari  , Score : 3.69578</li>
+<li> 2nd: Sejal Kshirsagar  , Score :  3.89530</li>
+<li> 3rd: Nupur Shah  , Score :  3.94156</li>
 </ol>
 
 When Vaishnavi was asked to give some tips for beginners, she said "<em>Firstly, I
