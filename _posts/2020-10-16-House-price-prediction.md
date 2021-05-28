@@ -19,6 +19,7 @@ level. To make sure that everyone was on the same page , tutorials for people
 new to Machine Learning and Kaggle , were provided.
 
 The winners of the competition were
+
 <ol>
 <li> 1st: Vaishnavi Khilari  , Score : 3.69578
 <li> 2nd: Sejal Kshirsagar  , Score :  3.89530
