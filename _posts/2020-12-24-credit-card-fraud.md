@@ -31,8 +31,8 @@ was not provided.
 
 The winners of the competition were:
 <ol>
-<li> Sakshi Ingale | Score : 0.99961
-<li> Nidhi Suryavanshi | Score : 0.99961
+<li> Sakshi Ingale | Score : 0.99961</li>
+<li> Nidhi Suryavanshi | Score : 0.99961</li>
 </ol>
 
 The fact that one of the winners was a second year , when the
