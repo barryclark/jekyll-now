@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+	background: $darkBackground;
   font: 18px/1.4 $Serif;
-  color: $darkGray;
+  color: $lightForeground;
   font-kerning: auto;
 }
 
@@ -39,7 +39,7 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $SmallCaps;
-  color: $darkerGray;
+  color: $lightForeground;
   font-weight: normal;
   font-kerning: auto;
 
@@ -81,7 +81,7 @@ p {
 }
 
 a {
-  color: $darkGray;
+  color: $lightForeground;
   text-decoration: underline;
 	cursor: pointer;
   &:hover, &:active {
@@ -184,7 +184,7 @@ figcaption {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $separatorColor;
 
   @include mobile {
     text-align: center;
@@ -220,7 +220,7 @@ figcaption {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $lightForeground;
   cursor: pointer;
   font-family: $SmallCaps;
   font-weight: 300;
@@ -230,7 +230,7 @@ figcaption {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $lightForeground;
   font-size: 16px;
 
   @include mobile {
@@ -253,14 +253,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $lightForeground;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $lightForeground;
     }
   }
 }
@@ -271,7 +271,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $separatorColor;
 }
 
 .posts > .archive-link {
@@ -300,9 +300,9 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid $separatorColor;
+  border-bottom: 1px solid $separatorColor;
+  background-color: $darkBackground;
 }
 
 footer {
