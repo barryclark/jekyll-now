@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include meta.html %}
+</head>
+
+<body class="not-found-page">
+
+    {% include header.html %}
+
+    <main role="main">
+        <section class="text-center py-3">
+            <div class="container-lg">
+                <h1>{{ page.title }}</h1>
+            </div>
+        </section>
+        <div class="py-5 bg-light">
+            <div class="container-lg">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div>
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                        </div>
+                        <div class="font-dark">404</div>
+                        <div class="mb-4">
+                            {{ content }}
+                        </div>
+                        <div>
+                            <a href="/" class="btn btn-secondary">
+                                Go back
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+
+    {% include analytics.html %}
+
+</body>
+</html>

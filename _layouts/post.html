@@ -2,16 +2,17 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
+<section class="py-3">
+  <div class="container-lg">
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
+<div class="py-5 bg-light post">
+  <div class="container-lg">
     {{ content }}
+    {% include disqus.html %}
+    <div class="date">
+      {{ page.date | date: "%B %e, %Y" }} by {{ site.author }}
+    </div>
   </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+</div>
