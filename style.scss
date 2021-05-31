@@ -22,6 +22,11 @@ body {
   font: 18px/1.4 $Serif;
   color: $lightForeground;
   font-kerning: auto;
+
+  @include mobile {
+    background: $darkBackground;
+    color: $lightForeground;
+  }
 }
 
 .container {
