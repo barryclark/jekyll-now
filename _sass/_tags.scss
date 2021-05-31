@@ -4,10 +4,10 @@
 
 .post-tag {
   display: inline-block;
-  background: rgba(blue, 0.10);
+  background: lightslategray;
   padding: 0 .5rem;
   border-radius: 4px;
-  color: blue;
+  color: black;
   font-size: 70%;
   &:before {
     content: "\f02b";
@@ -16,7 +16,7 @@
   }
   &:hover {
     text-decoration: none;
-    background: lightblue;
+    background: darkgray;
     color: white;
   }
 }
