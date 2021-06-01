@@ -4,7 +4,7 @@ title: AI for Everyone Ashish Salunkhe
 ---
 
 
-AICVS hosted its Webinar Series AICVS 2..0 with its first session on 13th March 2021 on “AI for Everyone”. The speaker for the 1st webinar was Mr. Ashish Salunkhe. Ashish is currently a software engineer at Persistent Systems, Pune . He completed his undergraduate degree in Computer Engineering from PCCOER. Ashish works in ML and full stack web applications. In this session, Ashish articulated his journey in ML and AI and how beginners can get started in this field.
+AICVS hosted its Webinar Series AICVS 2.0 with its first session on 13th March 2021 on “AI for Everyone”. The speaker for the 1st webinar was Mr. Ashish Salunkhe. Ashish is currently a software engineer at Persistent Systems, Pune . He completed his undergraduate degree in Computer Engineering from PCCOER. Ashish works in ML and full stack web applications. In this session, Ashish articulated his journey in ML and AI and how beginners can get started in this field.
 
 
 The session began with an overview of the current scenario in AI and its significance in fighting COVID by early outbreak warning systems, identifying mask violators, detecting misinformation, peer-to-peer AI tracing of COVID-19 etc.
@@ -52,7 +52,6 @@ Model/ Hypothesis: Representation learnt by applying ML algorithms
 
 Predictions/ Inference: Output of model
 
->>Attach link to ML cheat sheet
 
 
 
@@ -130,4 +129,4 @@ If you are an undergraduate student aspiring to get started with ML, you may tak
 First year students can start by learning Excel, LateX, Python, R. During the second year a student can pick up an application skill (Android etc). During the third year, one can start participating in hackathons, competitive coding, doing depth specialisations. Final year can be utilised in doing internships, independent projects, freelancing, writing research papers and working on a good BE Final project. If you aim to go for Master’s abroad, you may take the GRE in SEM 6 and TOEFL in SEM 7 and apply for universities by the end of SEM 7.   
 
 
-Here’s the link to the webinar: https://www.youtube.com/watch?v=Oe_DP4xateI
+Here’s the link to the webinar: [Link](https://www.youtube.com/watch?v=Oe_DP4xateI)
