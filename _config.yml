@@ -22,7 +22,7 @@ footer-links:
   facebook:
   flickr:
   github: 
-  instagram:
+  instagram: happyseizure
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
@@ -37,17 +37,17 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-39024220-2
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: www.happyseizure.com
+url: https://happyseizure.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/happy-seizure"
+# baseurl: "/happy-seizure"
 
 #
 # !! You don't need to change any of the configuration flags below !!
