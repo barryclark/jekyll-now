@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Join us at the June Cloud Native London virtual meetup tonight on Rambly and YouTube to hear three fantastic speakers from Shipa, Suade Labs, and Kasten by Veeam, from 6:45pm BST!
