@@ -36,6 +36,8 @@ Short-term? Possibly.
 
 Long-term? No way. The region is growing at an incredibly fast clip, and Austin will come out of the post-pandemic world as an even more attractive option for internal migration. Our metropolitan planning organization, [CAMPO estimates the region will double in population by 2045.](https://47kzwj6dn1447gy9z7do16an-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/2045-SED-Forecast-Documentation-ABC-DRAFT-FINAL.pdf) This growth will overwhelm any short-term gains from those who work-from-home.
 
+***
+
 # The Data
 
 I get all of my traffic data from the [Austin Open Data Portal](https://data.austintexas.gov/). I have updating graphics and monthly takeaways on my [Measuring COVID-19 post](http://modalshift.co/COVID19/).
