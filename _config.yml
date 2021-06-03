@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: LeMonde21's blog 
+name: LeMonde21's Blog 
 
 # Short bio or description (displayed in the header)
-description: My works
+description: #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/u/60875716?v=4
@@ -21,14 +21,14 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: https://github.com/LeMonde21
+  github: LeMonde21
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: LeMonde_21
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: user/LeMonde21
+  youtube: https://www.youtube.com/LeMonde21
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
