@@ -4,16 +4,15 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
-### June 2nd, 2021 thoughts & takeaways:
+### June 4th, 2021 thoughts & takeaways:
+
+* A big jump in passenger traffic at the airport over the course of May. The last day of available data (Saturday, May 15th) shows 99% of normal pre-covid passenger traffic. The weekends are  
 
 * Traffic volumes did moderately tick up over May to about 85% of February 2020 conditions.
 
 * I wrote separate post theorizing, [Did COVID Fix Austin's Traffic Forever?](http://modalshift.co/TrafficFuture/)
 
 * [The uptick in traffic incidents is likely caused by the 4th wettest May on record.](https://www.kxan.com/weather/weather-blog/may-brings-above-normal-rainfall-to-central-texas/)
-
-* The airport appears to be poised to be very close to normal after the next update in passenger numbers.
-
 
 ***
 
