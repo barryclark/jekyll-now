@@ -29,6 +29,16 @@
 </div>
 </div> 
 </div>
+<div class="">
+  <iframe src="https://member-cd.web.app/?dojo=tachikawa" width="100%" height="100" id="member-frame" frameborder="0" scrolling="yes" allowfullscreen></iframe>
+  <script>
+    window.addEventListener('message', function(e) {
+      if(e.origin=="https://member-cd.web.app"){
+        document.getElementById('member-frame').height = e.data + 120;
+      }
+    }, false);
+  </script>
+</div>
 </main>
 </template>
 
