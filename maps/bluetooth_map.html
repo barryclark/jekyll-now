@@ -146,9 +146,12 @@
             'id': 'line',
             'type': 'line',
             'source': 'bluetooth',
-            'layout': {'visibility':'visible'},
+            'layout': {
+              'visibility':'visible',
+              'line-offset':5
+              },
             'paint': {
-                'fill-color': [
+                'line-color': [
                 'interpolate',
                 ['linear'],
                 ['get','2019_Speed'],
@@ -162,8 +165,6 @@
                 '#31a354',
                 1,
                 '#006d2c'],
-                'fill-outline-color' : "#f2f2f2",
-                'fill-opacity': 0.75
             }
 
         },
