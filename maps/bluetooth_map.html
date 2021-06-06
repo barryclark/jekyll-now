@@ -143,7 +143,7 @@
                 'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/2019_2021_Bluetooth.geojson'
         });
         map.addLayer({
-            'id': 'line',
+            'id': '2019',
             'type': 'line',
             'source': 'bluetooth',
             'layout': {
@@ -170,6 +170,61 @@
         'waterway-label'
         );
 
+        map.addLayer({
+            'id': '2020',
+            'type': 'line',
+            'source': 'bluetooth',
+            'layout': {
+              'visibility':'none'
+              },
+            'paint': {
+                'line-offset': 5,
+                'line-color': [
+                'interpolate',
+                ['linear'],
+                ['get','2020_Speed'],
+                0.25,
+                '#d50303',
+                0.5,
+                '#be6200',
+                0.75,
+                '#939000',
+                1,
+                '#50b300'
+                ],
+            }
+
+        },
+        'waterway-label'
+        );
+
+        map.addLayer({
+            'id': '2021',
+            'type': 'line',
+            'source': 'bluetooth',
+            'layout': {
+              'visibility':'none'
+              },
+            'paint': {
+                'line-offset': 5,
+                'line-color': [
+                'interpolate',
+                ['linear'],
+                ['get','2021_Speed'],
+                0.25,
+                '#d50303',
+                0.5,
+                '#be6200',
+                0.75,
+                '#939000',
+                1,
+                '#50b300'
+                ],
+            }
+
+        },
+        'waterway-label'
+        );
         var legendlayers = [
               '0-10%', 
               '10-20%', 
@@ -207,6 +262,48 @@
     }
 
     );
+
+var toggleableLayerIds = ['2021', '2020', '2019'];
+for (var i = 0; i < toggleableLayerIds.length; i++) {
+    var id = toggleableLayerIds[i];
+
+    var link = document.createElement('a');
+    link.href = '#';
+
+    if (id === '2019') {
+      link.className = 'active';
+    }
+    else {
+      link.className = '';
+    }
+    link.textContent = id;
+
+    link.onclick = function (e) {
+        var clickedLayer = this.textContent;
+        e.preventDefault();
+        e.stopPropagation();
+
+
+        for (var j = 0; j<toggleableLayerIds.length; j++){
+          var id2 = toggleableLayerIds[j];
+          map.setLayoutProperty(id2, 'visibility', 'none');
+          document.getElementById("menu").childNodes[j].className = ''
+        }
+
+        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+        if (visibility === 'visible') {
+            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+        }
+    };
+
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
+}
 
 
 </script>
