@@ -5,7 +5,7 @@ layout: default
 <p>Sort by category</p>
 <ul>
   {% for category in site.categories %}
-    <li><a href="/category/{{category}}">{{category}}</a></li>
+    <li><a href="/category/{{category.name}}">{{category.name}}</a></li>
   {% endfor %}
 </ul>
 <div class="posts">
