@@ -3,7 +3,6 @@ layout: post
 title: Colorful Computers! The trend behind colors.
 description: The new computers are colorful. Here's why.
 category: general
-comments: false
 ---
 
 <small>Please note that all links with * are affiliate links</small>
