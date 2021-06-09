@@ -1,4 +1,4 @@
-{% if page.comments != "false" %}
+{% if page.comments != false %}
 	{% if site.disqus %}
 		<div class="comments">
 			<div id="disqus_thread"></div>
@@ -17,7 +17,7 @@
 		</div>
 	{% endif %}
 {% endif %}
-{% if page.comments == "false" %}
+{% if page.comments == false %}
 	<div>
 		<p>Comments are turned off for this page</p>
 	</div>
