@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Tarek Khalfaoui
 
-### More Information
+![Tarek Khalfaoui]({{ site.baseurl }}/images/taa-300x254.jpg "Tarek Khalfaoui")
 
-A place to include any other types of information that you'd like to include about yourself.
+Full-Stack Developer, grado en ingeneria informática especializado en tecnologías Web experiencia en desarrollo PHP Y Python. Las competencias incluyen frontend, backend y Frameworks.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[tariik21@gmail.com](mailto:email@domain.com)
