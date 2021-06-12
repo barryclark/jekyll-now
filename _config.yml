@@ -31,11 +31,11 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
+https://github.com/TeeheeTypes/TeeheeTypes.github.io/commit/1d3f019082d2bc98f7d30a7d56e3710f100e0dec#commitcomment-52080389
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:https://github.com/TeeheeTypes/TeeheeTypes.github.io/commit/1d3f019082d2bc98f7d30a7d56e3710f100e0dec#commitcomment-52080389
-
+disqus:
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
