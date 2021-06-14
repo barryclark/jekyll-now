@@ -50,3 +50,14 @@ Twitterでの本ブログのコメント・拡散も歓迎です。その際は�
 中村
 
 ### **コメント**
+
+
+
+### **文献**
+Alsan, Marcella, and Marianne Wanamaker. "Tuskegee and the health of black men." The  Quarterly Journal of Economics 133.1 (2018): 407-455.
+
+Alsan, Marcella, Owen Garrick, and Grant Graziani. "Does diversity matter for health? Experimental evidence from Oakland." American Economic Review 109.12 (2019): 4071-4111.
+
+Lowes, Sara, and Eduardo Montero. "The legacy of colonial medicine in central africa." American Economic Review 111.4 (2021): 1284-1314.
+
+Martinez-Bravo, Monica, and Andreas Stegmann. "In vaccines we trust? The effects of the CIA’s vaccine ruse on immunization in Pakistan." Journal of the European Economic Association (2018).
