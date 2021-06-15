@@ -4,7 +4,13 @@ published: True
 title: YouTube Series - Jay's Intro to AI
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mSTCzNgDJy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ <div style="text-align:center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mSTCzNgDJy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="
+width: 100%;
+max-width: 560px;"
+allowfullscreen></iframe>
+</div>
 
 Check out the first video in my new series introducing the general public to AI and machine learning.
 

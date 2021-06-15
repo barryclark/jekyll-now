@@ -14,5 +14,9 @@ Introducing the <a href="https://ex.pegg.io">Explainable AI Cheat Sheet</a>, you
  
  <div style="text-align:center">
  
- <iframe width="560" height="315" src="https://www.youtube.com/embed/Yg3q5x7yDeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/Yg3q5x7yDeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ style="
+ width: 100%;
+ max-width: 560px;"
+ allowfullscreen></iframe>
 </div>
