@@ -9,6 +9,14 @@ title: The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)
 <br />
 <span class="discussion">Translations: <a href="https://blog.csdn.net/qq_41664845/article/details/84787969">Chinese (Simplified)</a>, <a href="https://a-coles.github.io/post/bert-illustre/">French</a>, <a href="https://tech-magazine.opt.ne.jp/entry/2020/05/01/132654">Japanese</a>, <a href="https://nlpinkorean.github.io/illustrated-bert/">Korean</a>, <a href="http://blog.class.vision/1397/09/bert-in-nlp/">Persian</a>, <a href="https://habr.com/ru/post/487358/">Russian</a></span>
 
+<strong>2021 Update:</strong> I created this brief and highly accessible video intro to BERT
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ioGry-89gqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+style="
+width: 100%;
+max-width: 560px;"
+allowfullscreen></iframe>
+
+
 The year 2018 has been an inflection point for machine learning models handling text (or more accurately, Natural Language Processing or NLP for short). Our conceptual understanding of how best to represent words and sentences in a way that best captures underlying meanings and relationships is rapidly evolving. Moreover, the NLP community has been putting forward incredibly powerful components that you can freely download and use in your own models and pipelines <span class="faded_text">(It's been referred to as <a href="http://ruder.io/nlp-imagenet/">NLP's ImageNet moment</a>, referencing how years ago similar developments accelerated the development of machine learning in Computer Vision tasks)</span>.
 
 <div class="img-div-any-width" markdown="0">
