@@ -186,7 +186,6 @@ that our business will need to have [KYC][22] and [AML][23] processes to ensure 
 After joining, the business needs to make sure that the merchants stay partnered.  
 For this our business would need to have a merchant engagement strategy, with regular communications, gathering of NPS 
 scores etc.   
-feeling valued 
 
 * **Device procurement and installation**  
 If the business chooses a physical device to generate the QR code
