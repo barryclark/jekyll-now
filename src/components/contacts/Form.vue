@@ -15,27 +15,25 @@
         <form class="col s10" v-show="!submitted" name="contactForm" method="POST" target="hidden_iframe" :action="formUrl" @submit.prevent="submitForm()">
           <div v-for="(item, index) in formData" v-bind:key="index" :item="item" :index="index">
             <div class="row">
-              <div class="input-field col s5" v-if="index!==2">
-                <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="text" class="validate">
-                <label :for="'entry.'+item.name">{{item.label}}</label>
+              <div class="input-field col s8" v-if="index!==2">
+                <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="text" class="validate white-text">
+                <label class='white-text' :for="'entry.'+item.name">{{item.label}}</label>
                 <t-tag v-if="index==1" class='white-text lighten-5-text'>
                   ※返信を必要とする場合は必ず記入してください
                 </t-tag>
               </div>
-              <div class="input-field col s5" v-else-if="index==3">
+              <div class="input-field col s8" v-else-if="index==3">
                 <p>
-                  <label>{{item.question}}</label>
+                  <label class='white-text'>{{item.question}}</label>
                 </p>
                 <select :id="'entry.'+item.name" :name="'entry.'+item.name">
                   <option value="" disabled selected>{{item.label}}</option>
                   <option v-for="(op, idx) in item.options" v-bind:key="op" :item="op" :index="idx" :value="op">{{op}}</option>
                 </select>
               </div>
-              <div class="row" v-else-if="index==2">
-                <div class="input-field col s12">
-                  <textarea :id="'entry.'+item.name" name="item.name" class="materialize-textarea" length="120"></textarea>
-                  <label :for="'entry.'+item.name">メッセージ</label>
-                </div>
+              <div class="input-field col s12" v-else-if="index==2">
+                <textarea :id="'entry.'+item.name" name="item.name" class="materialize-textarea" length="120"></textarea>
+                <label class='white-text' :for="'entry.'+item.name">メッセージ</label>
               </div>
               <div v-else></div>
             </div>
@@ -63,18 +61,36 @@
 select {
   display: block;
 }
-textarea {
+textarea.materialize-textarea {
+  border-bottom: solid 1px #fff;
+  color: #fff;
+  font-size: 1.6rem;
   height: 10rem;
 }
-input[type="text"]:not(.browser-default):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
-  color: #fff;
+.input-field > label, button {
+  font-size: 1.6rem;
 }
-input[type="text"]:not(.browser-default):focus:not([readonly]), input.valid[type="text"]:not(.browser-default) {
-  box-shadow: 0 1px 0 0 #fff;
+input[type="text"]:not(.browser-default) {
+  border-bottom: solid 1px #fff;
+  font-size: 1.6rem;
+  height: 4rem;
 }
 .waves-effect {
   color: #2F7DC0;
   background-color: #fafafa;
+}
+
+
+@media screen and (max-width:599px) {
+  .form-container {
+    background-color: #2F7DC0;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+  }
 }
 </style>
 
