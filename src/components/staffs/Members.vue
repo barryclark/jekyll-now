@@ -30,8 +30,8 @@
 </div> 
 <br/>
 <br/>
-<div class="w-screen h-screen mx-auto bg-white shadow-md overflow-hidden md:max-w-6x1">
-  <iframe src="https://member-cd.web.app/?dojo=tachikawa" width="99%" height="100%" id="member-frame" frameborder="0" scrolling="yes" allowfullscreen></iframe>
+<div class="w-screen min-h-300 bg-white">
+  <iframe src="https://member-cd.web.app/?dojo=tachikawa" width="99%" id="member-frame" frameborder="0" scrolling="yes" allowfullscreen></iframe>
 </div> 
 </div>
 </main>
@@ -60,6 +60,11 @@ h2 {
 </style>
 
 <script>
+    window.addEventListener('message', function(e) {
+      if(e.origin=="https://member-cd.web.app"){
+        document.getElementById('member-frame').height = e.data + 120;
+      }
+    }, false);
 
 
 </script>
