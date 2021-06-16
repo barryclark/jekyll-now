@@ -3,6 +3,8 @@
 <div class="support_back-container row">
     <t-tag class='py-8 text-center font-semibold tracking-tight font-display text-white text-3xl ml-4'>
         メンター紹介
+        メンター紹介
+        メンター紹介
     </t-tag>
     <br/>
     <br/>
