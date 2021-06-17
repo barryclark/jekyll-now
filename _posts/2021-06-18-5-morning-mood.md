@@ -27,7 +27,7 @@ It’s not to say this analogy gives me a free pass to drop out of exercising or
 #### On doodling
 On the thread of illustrating, I was in need of some storage for a collection of loose electronics. I had a spare cardboard box of the perfect size. I painted the sides of the box in an acrylic white, then drew some of my favorite media on each side with [a black felt pen](https://www.jetpens.com/Marvy-Le-Pen-Technical-Drawing-Pen-0.5-mm-Black/pd/9808).
 
-<div style="text-align:center"><img src="/images/blog5/blog5-jsrf.jpg" width="200"> <img src="/images/blog5/blog5-fma.jpg" width="200"> <img src="/images/blog5/blog5-cr.jpg" width="200"> <img src="/images/blog5/blog5-octopath.jpg" width="200"></div>
+<div style="text-align:center"><img src="/images/blog5/blog5-jsrf.jpg" width="250"> <img src="/images/blog5/blog5-fma.jpg" width="250"> <img src="/images/blog5/blog5-cr.jpg" width="250"> <img src="/images/blog5/blog5-octopath.jpg" width="250"></div>
 
 *From left to right - [Jet Set Radio Future](https://www.rockpapershotgun.com/20-years-on-jet-set-radio-is-still-influencing-developers), Fullmetal Alchemist, [Critical Role](https://www.artstation.com/artwork/q9EW5R), Octopath Traveler. All of these drawings were referenced from other images on the Internet, but I couldn’t find the links to some of them afterwards.*
 
@@ -66,7 +66,7 @@ As you go out to enjoy the summer outdoors, be sure to protect your skin so you 
 
 ### What I’ve seen
 
-<div style="text-align:center"><img src="/images/blog5/blog5-taiyaki.jpg" width="300"> <img src="/images/blog5/blog5-ramen.jpg" width="300"> <img src="/images/blog5/blog5-nutella.jpg" width="300"></div>
+<div style="text-align:center"><img src="/images/blog5/blog5-taiyaki.jpg" width="250"> <img src="/images/blog5/blog5-ramen.jpg" width="250"> <img src="/images/blog5/blog5-nutella.jpg" width="250"></div>
 
 *Taiyaki soft serve (left). Ramen with duck leg (center). Giant Nutella pizza (right).*
 
