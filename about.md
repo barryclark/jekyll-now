@@ -8,14 +8,14 @@ permalink: /about/
 
 Hi, my name is **Susanna Dong**!
 
+<div align="center"><img src="/images/me_halloween_2018.jpg" width="400" /></div>
+
 Some random things that I enjoy doing:
 * Learning all sorts of things.
 * Walking and hiking, especially through nature.
 * Games of many sorts - tabletop and video!
 * Illustrations and worldbuilding.
 * Food, lots of food.
-
-![Susanna Dong in Detroit: Become Human cosplay](/images/me_halloween_2018.jpg)
 
 I'm currently based off of New York City, and grew up in the suburbs of northern Georgia. I've been working as a software/data engineer for a handful of years. (As of May 2021) I'm currently taking a gap year off of work.
 
