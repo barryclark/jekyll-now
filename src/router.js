@@ -13,9 +13,8 @@ import SupportFirstContainer from './components/supports/SupportFirstContainer.v
 import SupportSecondContainer from './components/supports/SupportSecondContainer.vue'
 import SupportThirdContainer from './components/supports/SupportThirdContainer.vue'
 import SupportBack from './components/supports/SupportBack.vue'
-import Graph from './components/staffs/Graph.vue'
+import MemberIntroduction from './components/staffs/MemberIntroduction.vue'
 import Members from './components/staffs/Members.vue'
-import MembersLogin from './components/staffs/MembersLogin.vue'
 import Contact from './components/contacts/Form.vue'
 
 Vue.use(Router)
@@ -41,10 +40,8 @@ export default new Router({
       path: '/staffs',
       name: 'staff',
       components: {
-        default: Hero,
-        sec: Graph,
-        third: Members,
-        fourth: MembersLogin
+        default: MemberIntroduction,
+        sec: Members
       }
     },
     {
