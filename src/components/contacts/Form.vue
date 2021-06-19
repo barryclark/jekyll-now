@@ -15,25 +15,34 @@
         <form class="col s10" v-show="!submitted" name="contactForm" method="POST" target="hidden_iframe" :action="formUrl" @submit.prevent="submitForm()">
           <div v-for="(item, index) in formData" v-bind:key="index" :item="item" :index="index">
             <div class="row">
-              <div class="input-field col s8" v-if="index!==2">
-                <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="text" class="validate white-text">
-                <label class='white-text' :for="'entry.'+item.name">{{item.label}}</label>
-                <t-tag v-if="index==1" class='white-text lighten-5-text'>
+              <div class="input-field col s5" v-if="index==0">
+                <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="text" class="validate">
+                <label :for="'entry.'+item.name" class="white-text">{{item.label}}</label>
+              </div>
+              <div class="input-field col s5" v-if="index==1">
+                <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="text" class="validate">
+                <label :for="'entry.'+item.name" class="white-text">{{item.label}}</label>
+                <t-tag class='white-text lighten-5-text'>
                   ※返信を必要とする場合は必ず記入してください
                 </t-tag>
               </div>
-              <div class="input-field col s8" v-else-if="index==3">
+              <div class="input-field col s5" v-else-if="index==2">
                 <p>
-                  <label class='white-text'>{{item.question}}</label>
+                  <label class="white-text">{{item.question}}</label>
                 </p>
-                <select :id="'entry.'+item.name" :name="'entry.'+item.name">
-                  <option value="" disabled selected>{{item.label}}</option>
-                  <option v-for="(op, idx) in item.options" v-bind:key="op" :item="op" :index="idx" :value="op">{{op}}</option>
-                </select>
+                <p>
+                  <label v-for="(op, idx) in item.options" v-bind:key="op" :item="op" :index="idx" @click='checke = op' class="white-text">
+                    <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="radio" v-model='checke' :value='checke' />
+                    <span>{{op}}</span>
+                  </label>
+                </p>
               </div>
-              <div class="input-field col s12" v-else-if="index==2">
-                <textarea :id="'entry.'+item.name" name="item.name" class="materialize-textarea" length="120"></textarea>
-                <label class='white-text' :for="'entry.'+item.name">メッセージ</label>
+              <div class="row" v-else-if="index==3">
+                <div class="input-field col s12">
+                  <textarea :id="'entry.'+item.name" :name="'entry.'+item.name" class="materialize-textarea" length="120">
+                  </textarea>
+                  <label :for="'entry.'+item.name" class="white-text">メッセージ</label>
+                </div>
               </div>
               <div v-else></div>
             </div>
@@ -114,33 +123,30 @@ export default {
         label: 'メールアドレス',
         validate: true
       },
-      // {
-      //   name: 1668971609,
-      //   question: 'お問い合わせ区分',
-      //   questionType: 'pulldown',
-      //   label:  'お問い合わせ区分を選択してください',
-      //   options: ['運営について', 'ボランティア参加について', 'ニンジャ参加について', '取材について'],
-      //   validate: true
-      // },
       {
-        name: 1506558776,
+        name: 781055325,
+        question: 'お問い合わせ区分',
+        questionType: 'radio',
+        label:  'お問い合わせ区分を選択してください',
+        options: ['Dojoの活動に関するお問い合わせ', 'メンター参加について', 'Ninja参加について', 'その他'],
+        validate: true
+      },
+      {
+        name: 1668971609,
         question: 'メッセージ',
         questionType: 'text',
         label: 'メッセージ',
         validate: true
       }
       ],
-      submitted: false
+      submitted: false,
+      checke: 'その他'
     };
   },
   methods: {
     submitForm: function() {
       document.contactForm.submit();
-      // document.contactForm.submit().then(result => {
-      //   //Slackに通知
-      //   result
-      // });
-    }
+    },
   },
   created() {
     // this.putsFormData();
@@ -151,6 +157,6 @@ export default {
     var thankyouComp = document.createElement("t-alert");
     thankyouComp.setAttribute('style', '');
     document.body.appendChild(thankyouComp);
-  },
+  }
 }
 </script>
