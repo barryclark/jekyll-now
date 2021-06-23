@@ -12,8 +12,10 @@ I wanted to track how the state of Texas has been doing on returning to "normal"
 
 The return to the office hasn't been even. The cities and the Permian Basin are lagging behind the more rural areas of the state.
 
+Created with: Python + Geopandas
 ![config.yml]({{site.baseurl}}/visualizations/Texas-Mobility-Maps/TX%20Google%20Workplaces.gif) 
 
+[Project repo](https://github.com/Charlie-Henry/ModalShift/tree/master/visualizations/Texas-Mobility-Maps)
 
 ***
 
