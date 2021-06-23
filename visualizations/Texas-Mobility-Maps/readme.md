@@ -1,1 +1,1 @@
-text
+![Animated choropleth map of Texas counties showing the changes to travel to workplaces caused by the COVID-19 pandemic.](https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/visualizations/Texas-Mobility-Maps/TX%20Google%20Workplaces.gif "Workplace trips since COVID-19")
