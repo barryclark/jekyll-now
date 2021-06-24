@@ -30,6 +30,19 @@ Created with: Google apps script, plotly studio
 
 ***
 
-# More Coming soon
+## Austin MetroBike Trips Visualization
+
+Using a tool called [flowmap.blue](https://flowmap.blue) I was able to quickly visualize multiple years of docked bicycle data. It is featured on [flowmap.blue's examples page.](https://flowmap.blue/#examples) 
+
+[Link to the interactive](https://flowmap.blue/11odTn4_kytEo2O9LxAXGbZspXM_OLFsX__mpxRAvAOc/5f18087)
+
+Created with: Python, Google sheets
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Video of <a href="https://twitter.com/ATXMetroBike?ref_src=twsrc%5Etfw">@ATXMetroBike</a> trips from 2015 to 2020. <a href="https://t.co/dcUSltaPG3">https://t.co/dcUSltaPG3</a> <a href="https://t.co/UpxtwVJ4jV">pic.twitter.com/UpxtwVJ4jV</a></p>&mdash; Charlie Henry (@ShiftModal) <a href="https://twitter.com/ShiftModal/status/1397224474018189324?ref_src=twsrc%5Etfw">May 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+***
+
+# Interactive Mapping 
 
 ***
