@@ -20,10 +20,10 @@ The reliability is calculated using Buffer Time Index (BTI) which is based on th
 
 ## Required Downloads
 
-(Individual traffic matches.)[https://data.austintexas.gov/Transportation-and-Mobility/Bluetooth-Travel-Sensors-Individual-Traffic-Match-/x44q-icha]
+[Individual traffic matches.](https://data.austintexas.gov/Transportation-and-Mobility/Bluetooth-Travel-Sensors-Individual-Traffic-Match-/x44q-icha)
 
 ***
 
 ## Visualization
 
-(The interactive map is available here.)[http://modalshift.co/maps/bluetooth_map.html] This was created with Mapbox GL JS and the geoJSON and html is located in the (maps folder)[https://github.com/Charlie-Henry/ModalShift/blob/master/maps/bluetooth_map.html]. 
+[The interactive map is available here.](http://modalshift.co/maps/bluetooth_map.html] This was created with Mapbox GL JS and the geoJSON and html is located in the (maps folder)[https://github.com/Charlie-Henry/ModalShift/blob/master/maps/bluetooth_map.html) 
