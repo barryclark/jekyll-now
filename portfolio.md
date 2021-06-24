@@ -60,3 +60,19 @@ Created with: Python, Mapbox GL JS
 [Full Screen](http://modalshift.co/maps/bluetooth_map.html)
 
 ***
+
+## TxDOT Lufkin District ITS Projects Map
+
+An interactive map with a Google Sheet backend that enables TxDOT to track their progress in implementing their district's ITS plan. 
+
+Created with: Google Sheets, Mapbox GL JS
+
+[Project repo](https://github.com/Charlie-Henry/Lufkin-ITS-Projects)
+
+<iframe src='https://raw.githubusercontent.com/Charlie-Henry/Lufkin-ITS-Projects/main/index.html'
+        width='100%' height='400px'>
+</iframe>
+
+[Full Screen](https://charlie-henry.github.io/Lufkin-ITS-Projects/)
+
+# Presentations
