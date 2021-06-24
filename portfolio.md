@@ -45,14 +45,18 @@ Created with: Python, Google sheets
 
 # Interactive Mapping 
 
-## Bluetooth Sensor Travel Times Visualized
+## Bluetooth Sensor Travel Times Performance and Visualization
 
-The city of Austin publishes travel time data using bluetooth sensors. These are largely no longer maintained but some sensors are still operational. I was interested in how COVID-19 impacted travel times and congestion.
+The city of Austin publishes travel time data using bluetooth sensors. These are largely no longer maintained but some sensors are still operational. I was interested in how COVID-19 impacted travel times and congestion. Using methodology from the Federal Highway Administration, I calculated some performance measures for each segment.
 
 Created with: Python, Mapbox GL JS
+
+[Project repo](https://github.com/Charlie-Henry/ModalShift/tree/master/visualizations/Bluetooth-Mapping)
 
 <iframe src='/maps/bluetooth_map.html'
         width='100%' height='400px'>
 </iframe>
+
+[Full Screen](http://modalshift.co/maps/bluetooth_map.html)
 
 ***
