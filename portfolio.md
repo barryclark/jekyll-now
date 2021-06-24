@@ -18,9 +18,18 @@ Created with: Python + Geopandas
 
 ![config.yml]({{site.baseurl}}/visualizations/Texas-Mobility-Maps/TX%20Google%20Workplaces.gif) 
 
+***
+
+## COVID-19 Mobility Impacts Dashboard
+
+Starting in April 2020, [I created a blogpost](https://modalshift.co/COVID19/) tracking the changes to Austin's mobility caused by COVID-19. Using data sourced from the City's open data portal, I created some live-updating charts showing vehicle volume, micromobility trips, and traffic incidents. About every month I create a full report showing trends in the data along with a few takeways of mine. Check out my archive of my thoughts & takeaways, too.
+
+Created with: Google apps script, plotly studio
+
+![config.yml]({{site.baseurl}}/images/Combined.png)
 
 ***
 
-# More Coming soon... Interactive Mapping 
+# More Coming soon
 
 ***
