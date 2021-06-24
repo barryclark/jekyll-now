@@ -136,6 +136,11 @@
     map.touchZoomRotate.disableRotation();
             
    map.on('click','choropleth-fill copy', function (e) {
+   const popup = document.getElementsByClassName('mapboxgl-popup');
+             if ( popup.length ) {
+                popup[0].remove();
+             }
+             else {
    //var coordinates = e.features[0].geometry.coordinates.slice();
    //set popup text 
    //You can adjust the values of the popup to match the headers of your CSV. 
@@ -149,6 +154,7 @@
        .setLngLat(e.lngLat)
        .setHTML(description)
        .addTo(map);
+             }
      });
 
 </script>
