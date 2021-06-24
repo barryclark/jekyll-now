@@ -65,9 +65,22 @@ Twitterでの本ブログのコメント・拡散も歓迎です。その際は�
 あるいは、単に学力への影響が小さく統計的な検定力に問題があった可能性も考えられます。
 何が政策的な目的で、それを測るアウトカムとして何が適切なのかを考えることの重要性を思い出させてくれる論文です。
 
+#### 中村
+現在クラスター、個人レベルでのRandomized phase-inの実験をしているので、Worm Warsは私にとっても興味深い事例です。この議論について簡単にまとめると、２０１５年出版の[Davey et al.](https://academic.oup.com/ije/article/44/5/1581/2594562) によるレプリケーションの記事の中で、データ処理や統計分析の手法において特定の代価案を複数利用すると、統計的有意性が見受けられないという結果を提示しています。それに対してMiguel and Kremerの[反駁](https://academic.oup.com/ije/article/44/5/1593/2594563)、レプリケーションの共著者らによる[反々駁](https://academic.oup.com/ije/article/44/5/1596/2594564?sid=751962a4-41da-406e-821f-ce43e1cce64d)に繋がり、メディアや政策界隈(Miguel and KrememrはDeworm the Worldなど保健支援の方にも政策インパクトがあったので）も巻き込んだ、という話です。
+
+Hicks,Miguel, and Kremerやその他の経済学者のブログなどでも挙げられていますが、統計的なメインのポイントは「Davey et al.のレプリケーションの中での問題点は統計精度をあえて落とし、かつ正直あまり正統性がよく見えない方針を複数採用しないとMiguel and Kremerの統計的有意性をNullにできない」、です。解析に関してもPreーanalysis planの重要性などが最近取り上げられていますが、逆に過度な前設定によって起こる弊害などもあるのでなかなか一概には言えない難しい問題です。
+
+この件に関して、学術論文よりもブログなどの方がとっかかり着きやすいと思う方には[Blattman](https://chrisblattman.com/2015/07/23/dear-journalists-and-policymakers-what-you-need-to-know-about-the-worm-wars/)や[Ozler](https://blogs.worldbank.org/impactevaluations/worm-wars-review-reanalysis-miguel-and-kremer-s-deworming-study)などがおすすめです。でも正直学術論文もそこまで読みにくくはないと思いますし、実証実験の統計手法やそれに関するややこしい点を学ぶという観点からは面白いと思います。RCTのレプリケーションに関するシステマティックな問題点に関しては[Young (2019)](https://personal.lse.ac.uk/YoungA/ChannellingFisherQJE.pdf)などもおすすめです。
 
 ### **文献：**
+Davey, C., Aiken, A. M., Hayes, R. J., & Hargreaves, J. R. (2015). Re-analysis of health and educational impacts of a school-based deworming programme in western Kenya: a statistical replication of a cluster quasi-randomized stepped-wedge trial. International journal of epidemiology, 44(5), 1581-1592.
+
+Hargreaves, J. R., Aiken, A. M., Davey, C., & Hayes, R. J. (2015). Authors’ Response to: Deworming externalities and school impacts in Kenya. International journal of epidemiology, 44(5), 1596-1599.
+
+Hicks, Joan Hamory, Michael Kremer, and Edward Miguel. "Commentary: Deworming externalities and schooling impacts in Kenya: a comment on Aiken et al.(2015) and Davey et al.(2015)." International Journal of Epidemiology 44.5 (2015): 1593-1596.
 
 Miguel, E. and Kremer, M., 2004. Worms: identifying impacts on education and health in the presence of treatment externalities. Econometrica, 72(1), pp.159-217.
 
 Kremer, M. and Miguel, E., 2007. The illusion of sustainability. The Quarterly journal of economics, 122(3), pp.1007-1065.
+
+Young, A. (2019). Channeling fisher: Randomization tests and the statistical insignificance of seemingly significant experimental results. The Quarterly Journal of Economics, 134(2), 557-598.
