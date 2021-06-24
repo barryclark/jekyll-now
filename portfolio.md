@@ -75,5 +75,12 @@ Created with: Google Sheets, Mapbox GL JS
 
 [Full Screen](https://charlie-henry.github.io/Lufkin-ITS-Projects/)
 
+***
+
 # Presentations
 
+South by Southwest 2019 Lightning Talk: Unlocking the future of Transportation with Open Data
+
+Open Austin July 2020 Meeting: Measuring COVID-19 Update - [Presentation slides](https://docs.google.com/presentation/d/1KSpYtZUCd4QDFFznqJ6ZJngQLanqOHeZcMB6Tsh4EpE/edit?usp=sharing)
+
+Saving Lives with Connected Vehicle Data: [Link to webinar recording](https://drive.google.com/file/d/112bk87Vqy6t0zd_MniikZ-y010n0e3Ny/view)
