@@ -68,7 +68,7 @@ Twitterでの本ブログのコメント・拡散も歓迎です。その際は�
 #### 中村
 現在クラスター、個人レベルでのRandomized phase-inの実験をしているので、Worm Warsは私にとっても興味深い事例です。この議論について簡単にまとめると、２０１５年出版の[Davey et al.](https://academic.oup.com/ije/article/44/5/1581/2594562) によるレプリケーションの記事の中で、データ処理や統計分析の手法において特定の代価案を複数利用すると、統計的有意性が見受けられないという結果を提示しています。それに対してMiguel and Kremerの[反駁](https://academic.oup.com/ije/article/44/5/1593/2594563)、レプリケーションの共著者らによる[反々駁](https://academic.oup.com/ije/article/44/5/1596/2594564?sid=751962a4-41da-406e-821f-ce43e1cce64d)に繋がり、メディアや政策界隈(Miguel and KrememrはDeworm the Worldなど保健支援の方にも政策インパクトがあったので）も巻き込んだ、という話です。
 
-Hicks,Miguel, and Kremerやその他の経済学者のブログなどでも挙げられていますが、統計的なメインのポイントは「Davey et al.のレプリケーションの中での問題点は統計精度をあえて落とし、かつ正直あまり正統性がよく見えない方針を複数採用しないとMiguel and Kremerの統計的有意性をNullにできない」、です。解析に関してもPreーanalysis planの重要性などが最近取り上げられていますが、逆に過度な前設定によって起こる弊害などもあるのでなかなか一概には言えない難しい問題です。
+Hicks, Miguel, and Kremerやその他の経済学者のブログなどでも挙げられていますが、統計的なメインのポイントは「Davey et al.のレプリケーションの中での問題点は統計精度をあえて落とし、かつ正直あまり正統性がよく見えない方針を複数採用しないとMiguel and Kremerの統計的有意性をNullにできない」、です。解析に関してもPreーanalysis planの重要性などが最近取り上げられていますが、逆に過度な前設定によって起こる弊害などもあるのでなかなか一概には言えない難しい問題です。
 
 この件に関して、学術論文よりもブログなどの方がとっかかり着きやすいと思う方には[Blattman](https://chrisblattman.com/2015/07/23/dear-journalists-and-policymakers-what-you-need-to-know-about-the-worm-wars/)や[Ozler](https://blogs.worldbank.org/impactevaluations/worm-wars-review-reanalysis-miguel-and-kremer-s-deworming-study)などがおすすめです。でも正直学術論文もそこまで読みにくくはないと思いますし、実証実験の統計手法やそれに関するややこしい点を学ぶという観点からは面白いと思います。RCTのレプリケーションに関するシステマティックな問題点に関しては[Young (2019)](https://personal.lse.ac.uk/YoungA/ChannellingFisherQJE.pdf)などもおすすめです。
 
