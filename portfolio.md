@@ -45,4 +45,14 @@ Created with: Python, Google sheets
 
 # Interactive Mapping 
 
+## Bluetooth Sensor Travel Times Visualized
+
+The city of Austin publishes travel time data using bluetooth sensors. These are largely no longer maintained but some sensors are still operational. I was interested in how COVID-19 impacted travel times and congestion.
+
+Created with: Python, Mapbox GL JS
+
+<iframe src='/maps/bluetooth_map.html'
+        width='100%' height='400px'>
+</iframe>
+
 ***
