@@ -31,8 +31,13 @@
             </router-link>
           </li>
           <li>
+            <a class="router-link" href="https://coderdojo-tachikawa.connpass.com/">
+              次回の開催予定
+            </a>
+          </li>
+          <li>
             <a class="router-link" href="https://coderdojotachikawa.tamaliver.jp/">
-              開催の様子
+              開催報告
             </a>
           </li>
           <li>
