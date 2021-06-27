@@ -5,18 +5,17 @@
         <t-tag variant="heading" class='text-center text-2xl leading-8 font-semibold tracking-tight font-display white-text lighten-5-text sm:text-3xl sm:leading-9'>
           お問い合わせ
         </t-tag>
+        <iframe name="hidden_iframe" id='iframe' style="/* display: none */">
+        </iframe>
       </main>
     </div>
     <div class="form-container relative overflow-hidden row">
       <div class="container">
-        <t-alert class="" v-show="submitted" variant="error">
-          お問い合わせ内容を送信しました。
-        </t-alert>
-        <form class="col s10" v-show="!submitted" name="contactForm" method="POST" target="hidden_iframe" :action="formUrl" @submit.prevent="submitForm()">
+        <form class="col s10" name="contactForm" method="POST" target="hidden_iframe" :action="formUrl" @submit.prevent="submitForm()">
           <div v-for="(item, index) in formData" v-bind:key="index" :item="item" :index="index">
             <div class="row">
               <div class="input-field col s5" v-if="index==0">
-                <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="text" class="validate">
+                <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="text" class="validate" required>
                 <label :for="'entry.'+item.name" class="white-text">{{item.label}}</label>
               </div>
               <div class="input-field col s5" v-if="index==1">
@@ -32,7 +31,7 @@
                 </p>
                 <p>
                   <label v-for="(op, idx) in item.options" v-bind:key="op" :item="op" :index="idx" @click='checke = op' class="white-text">
-                    <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="radio" v-model='checke' :value='checke' />
+                    <input :id="'entry.'+item.name" :name="'entry.'+item.name" type="radio" v-model='checke' :value='checke' required>
                     <span>{{op}}</span>
                   </label>
                 </p>
@@ -47,8 +46,7 @@
               <div v-else></div>
             </div>
           </div>
-
-          <button class="waves-effect waves-light btn">送信</button>
+          <button v-on:click="submitted = true" class="waves-effect waves-light btn">送信</button>
         </form>
       </div>
     </div>
@@ -140,23 +138,30 @@ export default {
       }
       ],
       submitted: false,
-      checke: 'その他'
+      checke: 'その他',
+      success: 'my-10 relative flex items-center p-4 border-l-4  rounded shadow-sm bg-green-50 border-green-500'
     };
+  },
+  props: {
+    checked: Boolean,
+    message: Object
   },
   methods: {
     submitForm: function() {
-      document.contactForm.submit();
-    },
-  },
-  created() {
-    // this.putsFormData();
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute('name','hidden_iframe');
-    iframe.setAttribute('style','display: none');
-    document.body.appendChild(iframe);
-    var thankyouComp = document.createElement("t-alert");
-    thankyouComp.setAttribute('style', '');
-    document.body.appendChild(thankyouComp);
+      const promise = new Promise((resolve, reject) => {
+        resolve(document.contactForm.submit());
+        // エラーログor通知？
+        reject(console.log('rj'));
+      });
+      promise.then((value) => {
+        console.log('test' + value);
+        const div = document.createElement('div')
+        div.className = this.success;
+        div.innerText = 'お問い合わせを送信しました';
+        const app = document.contactForm;
+        document.getElementsByClassName('container')[1].insertBefore(div, app)
+      });
+    }
   }
 }
 </script>

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 // import VueRouter from 'vue-router'
-import VueTailwind from 'vue-tailwind/dist/full'
+import VueTailwind from 'vue-tailwind'
 import router from './router.js';
 
 import 'materialize-css/dist/css/materialize.min.css'
