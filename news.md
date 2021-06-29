@@ -6,7 +6,7 @@ permalink: /news/
 ## 2021
 
 __June__
- - Our work, _EMT-related transcription factors and YAP/TAZ orchestrate cell fate and metastasis in osteosarcoma_, was presented at the 41st Euro Congress on Cancer Science & Therapy (Cancer Science 2021)
+ - Our work, [_EMT-related transcription factors and YAP/TAZ orchestrate cell fate and metastasis in osteosarcoma_](https://cancerscience.insightconferences.com), was presented at the 41st Euro Congress on Cancer Science & Therapy (Cancer Science 2021)
 
 __May__
  - Concluded the 3-day [10th Annual Postdoc Career Symposium](https://whova.com/portal/webapp/apcs_202010/) with over 400 attendees and initiated plans to build a platform for postdocs in the Texas Medical Center to network
