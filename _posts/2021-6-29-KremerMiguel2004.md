@@ -72,6 +72,14 @@ Hicks, Miguel, and Kremerやその他の経済学者のブログなどでも挙�
 
 この件に関して、学術論文よりもブログなどの方がとっかかり着きやすいと思う方には[Blattman](https://chrisblattman.com/2015/07/23/dear-journalists-and-policymakers-what-you-need-to-know-about-the-worm-wars/)や[Ozler](https://blogs.worldbank.org/impactevaluations/worm-wars-review-reanalysis-miguel-and-kremer-s-deworming-study)などがおすすめです。でも正直学術論文もそこまで読みにくくはないと思いますし、実証実験の統計手法やそれに関するややこしい点を学ぶという観点からは面白いと思います。RCTのレプリケーションに関するシステマティックな問題点に関しては[Young (2019)](https://personal.lse.ac.uk/YoungA/ChannellingFisherQJE.pdf)などもおすすめです。
 
+#### 元橋
+
+有名論文の紹介ありがとうございます！テーマは親しみやすい割に手法が少し込み入っていて読みにくい印象があったのですが（Econometricaっぽさがありますね）、もう一度復習したことで、より理解が深まった気がします。
+
+波及効果を集まった初期の論文としてとても参考になりますね。最近、Social interactionやネットワーク関係のペーパー読んでた際に、ピア効果を見る手法として、自分がつながっている人の行動の平均をRegressionの右辺に入れるReduced form Linear in meansモデルに触れましたが、このペーパーはまさにそのコンセプトを使っていると思いました。どちらが先か分かりませんが。ただ、このペーパーでは周りのTreatment割合を入れるというよりは、Treatmentの人数と全体の人数を両方入れる形にしていますね。どちらの場合もやっていることは変わらないと思いますが。
+
+最近は、波及効果を見る際に、クラスターレベルでランダム化して、クラスター内のTreatmentのSaturationを変えるようなデザインにすることが多いと思います。そうすると、今回のケースでは学校内の波及効果も実験ベースの手法で推定することができますね。ただ、彼らの学校間の波及効果の推定方法は、予算上・実務上、個人レベルでランダム化したことで、個人間の波及効果が問題になるときにまだ使える気がしますね。
+
 ### **文献：**
 Davey, C., Aiken, A. M., Hayes, R. J., & Hargreaves, J. R. (2015). Re-analysis of health and educational impacts of a school-based deworming programme in western Kenya: a statistical replication of a cluster quasi-randomized stepped-wedge trial. International journal of epidemiology, 44(5), 1581-1592.
 
