@@ -1,18 +1,19 @@
 ---
 
 layout: post  
-title: The problem with the Windows Feedback  Hub app.  
+title: My feedback for the Windows Feedback Hub.
+description: In this article I'm sharing my feedback for the Windows Feedback Hub.
 category: general
 
 ---
 
-![www.drwindows.de/news/wp-content/uploads/2018/1...](https://www.drwindows.de/news/wp-content/uploads/2018/10/feedback_hub.jpg)
+![Big banner with Feedback Hub logo](https://user-images.githubusercontent.com/58633848/124374821-948acd00-dc9e-11eb-8853-d9cc2f106575.png)
 
-First of all, I want to say: That's my personal point of view. I could be wrong with some things I'm saying in this article.
+{% include ownOpinion.md %}
 
 ## What exactly is the Feedback Hub?
 
-The Feedback Hub is an App for Windows 10. It's for giving Microsoft Feedback and collect bug reports. But that don't work as it should.
+The Feedback Hub is an App for Windows 10 and Windows 11 for providing Feedback on Windows and Apllications which run on Windows. Microsoft first created the Insider Hub, so that the testers of the Windows 10 beta were able to provide feedback. On March 17, 2016 it was merged into a new app called Feedback Hub, accesible for everyone.
 
 ## Why is that not working?
 
