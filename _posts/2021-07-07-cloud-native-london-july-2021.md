@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Join us and two great speakers from Capgemini UK and Edgeless Systems at the July Cloud Native London virtual meetup from 6:45pm BST tonight, on Rambly and YouTube! 
