@@ -1,10 +1,10 @@
 ---
-published: false
-title: 'Paintings Album Release - July, 2021'
+published: true
+title: 'Paintings Album Release - August, 2021'
 ---
-![Grief Album]({{taylorjhawkins.com}}/images/paintings-album.png)
+![Paintings Album]({{taylorjhawkins.com}}/images/paintings-album.png)
 
-I'm releasing my second (but debut vocal) album, **Paintings**, as **Taylor J Hawkins**, on **July, 2021**. 
+I'm releasing my second (but debut vocal) album, **Paintings**, as **Taylor J Hawkins**, in **August, 2021**. 
 It will be available on Spotify, ITunes, and other digital distribution platforms. 
 
 The material was mostly recorded this past year (2020-2021), with [Reaper](https://www.reaper.fm/), my current DAW, in my home studio.
