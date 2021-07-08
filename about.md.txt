@@ -4,7 +4,11 @@ title: About
 permalink: /about/
 ---
 
+<<<<<<< HEAD:about.md.txt
 数据储存
+=======
+数 据 储 存
+>>>>>>> 1f621584a0153e6af6a8ca412c0f7332b7a64c58:about.md
 
 ### More Information
 
