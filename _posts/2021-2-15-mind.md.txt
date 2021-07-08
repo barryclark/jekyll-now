@@ -6,9 +6,9 @@ title: 2020-2021/743场LOL比赛部分数据汇总
 
 2021.2.24
 
-blue_kill	blue_team	red_kill	red_team		单1双2	time		
+blue_kill	blue_team	red_kill	red_team		单1双2	time  
 15	WE	8	LNG	23	1	"32 :
-                            57"		
+                            57"  
 23	WE	6	LNG	29	1	"31 :
                             54"		
 4	RW	13	V5	17	1	"25 :
