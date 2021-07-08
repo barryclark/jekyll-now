@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-紀錄關於投資的想法與信息
+数 据 储 存
 
 ### More Information
 
