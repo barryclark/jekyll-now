@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London July 2021: Capgemini UK and Edgeless Systems"
 description: "speakers from Capgemini UK and Edgeless Systems join us at the Cloud Native London meetup July 2021, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
-image: /images/CNL_April_Rambly.jpg
+image: /images/2021-07-07-cloud-native-london-july-2021.png
 video: https://www.youtube.com/embed/_AE_mvyQXu4
 tags:
   - Photos
@@ -12,23 +12,27 @@ tags:
   - "2021"
 ---
 
-Join us and two great speakers from Capgemini UK and Edgeless Systems at the July Cloud Native London virtual meetup from 6:45pm BST tonight, on Rambly and YouTube! 
-
-[Join us on Rambly](https://rambly.app/#/rooms/twitch:cloudnativelon) or catch the Youtube livestream.
-
-### Our agenda for 7th July 2021 is (times in BST):
-
-* 6:45 Kick off
-* 7:15 Making Logs Work for you with Fluentd (Phil Wilkins, Capgemini UK)
-* 7:45 Scalable Confidential Computing on Kubernetes with Marblerun (Felix Schuster, Edgeless Systems)
-* 8:15 Wrap up
+We welcomed two great speakers from Capgemini UK and Edgeless Systems to our July Cloud Native London virtual meetup, joining us via Zoom, Rambly, and the YouTube/Twitch livestreams. 
 
 We are immensely grateful to [Tecknuovo](https://www.tecknuovo.com/), [Humio](https://humio.com/), [Palo Alto Networks](https://www.paloaltonetworks.com/), [CircleCI](https://circleci.com/), [UMATR](https://www.umatr.io/), and [Netapp](https://www.netapp.com/) for your generous support and sponsorship.
 
-## Cloud Native London August
+### Overview
 
-Our next meetup will be Wednesday 4th August, when we'll be joined by speakers from JFrog, Shipa, and more. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/275886221/)
+Our first speaker was Phil Wilkins from Capgemini UK kicking us off for the evening with a discussion of Making Logs Work for you with Fluentd (starting at [27:29](https://youtu.be/_AE_mvyQXu4?t=1649)). His takeaways talked about:
 
-Stay safe and see you soon!
+* A better sense of the art of the possible with Fluentd.
+* Different viewpoints when it comes monitoring and logs.
+* Why Fluentd is worth considering when looking at your logging options.
+
+Then Felix Schuster from Edgeless Systems wrapped up our evening talking about Scalable Confidential Computing on Kubernetes with Marblerun (starting at [1:01:38](https://youtu.be/_AE_mvyQXu4?t=3698)). He talked about how: 
+
+* Confidential computing is an exciting new security paradigm.
+* Confidential computing used to be hard to use, but the tooling is improving rapidly.
+* Confidential computing and cloud-native are growing together.
+
+And of course, our usual group photo from Rambly! 
+![](/images/2021-07-07-cloud-native-london-july-2021.png)
+
+Stay safe, stay healthy, and see you next month!
 
 Cheryl (@oicheryl) 
