@@ -246,6 +246,14 @@
   location_gr: Θεσσαλονίκη και Καβάλα, Μακεδονία, Ελλάδα
   location_en: Thessaloniki and Kavala, Macedonia, Greece
 
+- company_gr: Leader Travel
+  company_en: Leader Travel
+  url: https://leadertravel.gr/
+  category_gr: Ταξιδιωτικό πρακτορείο
+  category_en: Travel agency
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
 - company_gr: Tic Tac
   company_en: Tic Tac
   url: https://tictac.gr
@@ -346,7 +354,7 @@
   company_en: Priona Resort
   url: https://priona.gr/
   category_gr: Ενοικίαση δωματίων
-  category_en: Rooms to rent
+  category_en: Rooms to let
   location_gr: Σκοτίνα, Πιερία, Ελλάδα
   location_en: Skotina, Pieria, Greece
 
@@ -373,6 +381,22 @@
   category_en: Rooms to Let
   location_gr: Ίος, Κυκλάδες, Ελλάδα
   location_en: Ios, Cyclades, Greece
+
+- company_gr: MyHome Rooms To Let
+  company_en: MyHome Rooms To Let
+  url: https://myhomeperisteri.business.site/
+  category_gr: Ενοικιαζόμενα διαμερίσματα
+  category_en: Rooms to Let
+  location_gr: Περιστέρι, Αττική, Ελλάδα
+  location_en: Peristeri, Attica, Greece
+
+- company_gr: Falafel brunch restaurant ⚡️
+  company_en: Falafel brunch restaurant ⚡️
+  url: https://www.facebook.com/falafel.amorgos/
+  category_gr: Εστιατόριο brunch
+  category_en: Brunch restaurant
+  location_gr: Αμοργός, Κυκλάδες, Ελλάδα
+  location_en: Amorgos, Cyclades, Greece
 
 - company_gr: Σανδάλια Σάββας
   company_en: Savvas Sandals
@@ -1189,6 +1213,14 @@
   category_en: Wine bar restaurent
   location_gr: Μύκονος, Ελλάδα
   location_en: Mykonos, Greece
+
+- company_gr: Τσικολάτας εκπαιδευτικά σεμινάρια
+  company_en: Tsikolatas training seminars
+  url: https://tsikolatas.com/
+  category_gr: Εκπαιδευτικά σεμινάρια
+  category_en: Training seminars
+  location_gr: Online, Ελλάδα
+  location_en: Online, Greece
 
 - company_gr: KLOSTI
   company_en: KLOSTI
