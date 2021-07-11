@@ -7,7 +7,7 @@ title: The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)
 <a href="https://news.ycombinator.com/item?id=18751469" class="hn-link">Hacker News (98 points, 19 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/a3ykzf/r_the_illustrated_bert_and_elmo_how_nlp_cracked/" class="">Reddit r/MachineLearning (164 points, 20 comments)</a>
 </span>
 <br />
-<span class="discussion">Translations: <a href="https://blog.csdn.net/qq_41664845/article/details/84787969">Chinese (Simplified)</a>, <a href="https://a-coles.github.io/post/bert-illustre/">French</a>, <a href="https://tech-magazine.opt.ne.jp/entry/2020/05/01/132654">Japanese</a>, <a href="https://nlpinkorean.github.io/illustrated-bert/">Korean</a>, <a href="http://blog.class.vision/1397/09/bert-in-nlp/">Persian</a>, <a href="https://habr.com/ru/post/487358/">Russian</a></span>
+<span class="discussion">Translations: <a href="https://blog.csdn.net/qq_41664845/article/details/84787969">Chinese (Simplified)</a>, <a href="https://a-coles.github.io/2020/11/15/bert-illustre.html">French</a>, <a href="https://tech-magazine.opt.ne.jp/entry/2020/05/01/132654">Japanese</a>, <a href="https://nlpinkorean.github.io/illustrated-bert/">Korean</a>, <a href="http://blog.class.vision/1397/09/bert-in-nlp/">Persian</a>, <a href="https://habr.com/ru/post/487358/">Russian</a></span>
 
 <strong>2021 Update:</strong> I created this brief and highly accessible video intro to BERT
 
