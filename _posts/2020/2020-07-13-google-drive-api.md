@@ -28,11 +28,11 @@ O meu primeiro passo para entender como interagir com o Drive foi ir na document
 
 Para ter acesso a API é necessário ter uma conta na Google e criar um projeto no gerenciador de APIs (em [Google Cloud Platform](https://code.google.com/apis/console/?api=drive)):
 
-<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/2020/07/14-10-21-28-01-console-google.png" title="Console Google" alt="Console Google" data-align="center">
+<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/2020/07/13/01-console-google.png" title="Console Google" alt="Console Google" data-align="center">
 
 Após criar o projeto deve-se gerar as credenciais para acesso ao OAuth2:
 
-![Criar credenciais](https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/2020/07/14-11-44-41-02-console-google.png)
+![Criar credenciais](https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/2020/07/13/02-console-google.png)
 
 As credenciais são salvas em um arquivo no formato de json e é necessário para o próximo passo.
 
@@ -64,9 +64,9 @@ private static final List<String> SCOPES = Collections.singletonList(DriveScopes
 
 O `DriveScopes.DRIVE` define acesso completo ao Drive. Para outros tipos sugiro ver o *enum*. Com o *flow* configurado é necessário instanciar um servidor local para receber as credenciais do OAuth2, caso não tenha um *token* salvo, nesse momento da execução, é aberta uma janela do browser solicitando a permissão de utilizar o Drive:
 
-<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/2020/07/14-12-52-48-03-autenticao.png" title="" alt="Primeira tela de autenticação" data-align="center">
+<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/2020/07/13/03-autenticao.png" title="" alt="Primeira tela de autenticação" data-align="center">
 
-<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/2020/07/14-12-53-21-04-autenticacao.png" title="" alt="Segunda tela de autenticação" data-align="center">
+<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/2020/07/13/04-autenticacao.png" title="" alt="Segunda tela de autenticação" data-align="center">
 
 No código eu criei um método `autenticacao` que realiza todo o processo e retorna um `Credential` já pronto:
 
