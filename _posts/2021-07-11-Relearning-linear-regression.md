@@ -78,26 +78,34 @@ $$b = A^{-1}\hat{Y}$$
 But wait - we can't inverse $$A$$! $$A$$ is Nx1 so it's definitely not invertible. Instead, we can multipy it by its transpose to get a square matrix:
 
 $$A^{T}Ab = \hat{Y}$$
+
 $$b = (A^{T}A)^{-1}\hat{Y}$$
 
 Can we definitely inverse $$A^{T}A$$? (TODO)
 
-The common equation you'll probably see is b = (A^T * A)^-1 * A^T * Y
+The common equation you'll probably see is $$b = (A^{T}A)^{-1}A^{T}Y$$
 
-A^T * Y = Y . C(A) because of the Hermitian adjoint. 
+$$A^{T} * Y = Y \cdot C(A)$$ because of the Hermitian adjoint. 
 
 
 Okay cool, that looks great. But _why_ does that work? Why does that give us the same solution as minimizing the cost function? Well, because minimizing the least squares sum
 of the points in the original problem is actually the same thing as projecting Y onto C(A).
 
-We project Y onto C(A), and the point is that the projection of Y should be "similar" to Y. So in some sense, the distance between Y and Y-hat should be minimal. 
+We project $$Y$$ onto $$C(A)$$, and the point is that the projection of $$Y$$ should be "similar" to $$Y$$. So in some sense, the distance between $$Y$$ and $$\hat{Y}$$ should be minimal. 
 In some sense, you could view this as a minimization problem. On the other hand, we know from basic geometry that the shortest distance between two points is
-a line between them. And this line is orthogonal to C(A). 
-So Y-hat - Y (latex TODO?) looks like sqrt of all points etc (TODO). Which you can rewrite as sigma notation (TODO). 
-Now that should look familiar. 
+a line between them. And this line is orthogonal to $$C(A)$$. 
+So $$\hat{Y} - Y$$ looks like 
 
-Because in some sense, when we project Y onto C(A) and we calculate the square root of the pairwise differences, we're really computing the vertical distance between two points 
-in the original space. 
+$$\sqrt{(\hat{y}_{1}-y_{1})^2 + (\hat{y}_2 - y_2)^2 ... + (\hat{y}_N - y_N)^2}$$
+
+which can be rewritten as
+
+$$\sqrt{\sum_{n=1}^{N} (\hat{y}_n - y_n)^2}$$
+
+which should remind of us our least squares cost function.
+
+
+Because in some sense, when we project Y onto C(A) and we calculate the square root of the pairwise differences, we're really computing the vertical distance between two points in the original space. 
 
 So what about other cost functions? What if we used absolute value instead of least squares? Or what about Deming regression? What's the equivalent thing to do in N space? (pca? TODO)
 
