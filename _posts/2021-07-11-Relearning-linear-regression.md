@@ -45,7 +45,7 @@ So let's go back to the points we had above. We're solving a 2-dimensional linea
 (1,3), (1,5), (2,3), (3,4), (3,6), (3,7), ..., (10,6), (10,11), (10,12). Since we're ultimately trying to find a single linear solution (of the form $$y = cx + b$$) that fits these points,
 you can rewrite your points as a system of linear equations.
 
-$$y=3x\\y=5x\\2y=3x\\3y=4x\\...$$
+$$x=3\\x=5\\2x=3\\3x=4\\...$$
 
 And we can straightforwardly rewrite this in matrix notation as
 
