@@ -1,11 +1,10 @@
-I recently realized that I didn't understand linear regression as well as I thought as I did.
+## Why write this?
+
+I recently realized that I didn't understand linear regression as well as I thought as I did when I came across this [twitter thread](https://twitter.com/lightspringfox/status/1412581659745001474).
 
 ![twitter thread image](https://user-images.githubusercontent.com/1283020/125213633-ebc50a80-e267-11eb-8ddc-b8d8b9c9aea7.png)
 
-<sub>From this [twitter thread](https://twitter.com/lightspringfox/status/1412581659745001474)
-</sub>
-
-Okay, so maybe I don't know _exactly_ how to do it with linear algebra but I can intuitively draw a best fit for a set of points, so I should be able to work from there.
+Okay, I thought, so maybe I don't know _exactly_ how to do it with linear algebra but I intuitively know how to draw a best fit for a set of points, so I should be able to work from there and develop a more rigorous algorithm of what I'm doing by intuition.
 
 For example, for this set of points (TODO), I'd draw a line looking like this (TODO).
 
@@ -13,25 +12,20 @@ Except that's not correct if you're using least squares. This is the correct fit
 
 ![image](https://user-images.githubusercontent.com/1283020/125233340-2e500c80-e293-11eb-9533-7187f527cd3b.png)
 
-Oh. Oops.
+Oh. Oops. Looks like I need to learn linear regression for real.
 
-I drew the major line which minimizes the euclidean distance between the points and the line, but that's not actually useful for prediction (in typical cases).
-That's because if I'm given an input, I want to guess the output for _that_ input. Basically, I'd want to look at the points with the same X value (assuming I have them),
-and then guess the mean Y value as my prediction. Do you see what I mean? We're _given_ the X value, so we're not changing that. But when do the euclidean distance minimization,
-then you _do_ change the X value. So that's kind of silly (in some cases, it's actually a reasonable thing to do. We'll cover that later). So since we want to _only_ change the Y value,
+It's pretty easy to google for basic blog posts about linear regression, so why am I writing another one? Well, for one, it's helping me to consolidate my learnings into notes. But also, I found the blogs to be unsatisfactory in giving me a deep understanding. I didn't just want to see know how to solve the least squares problem, I wanted to know _why_ the "how" worked. 
+
+I'll try to cite the blogs and stackexchange posts that I came across and relied on as I built up my understanding. I've also included them at the end.
+
+The tweet talks about the least squares problem, but I'm going to focus on just the linear least squares problem. It seems like there are two approaches to solving the problem. One approach defines a cost function that describes how good/bad the model is, and then minimizes that cost function. The other approach uses linear algebra to project the data onto a line. This is the one I struggled to develop an intuition for, because the approach never explicitly uses a cost function or derivative, so it wasn’t clear to me how a solution could just “emerge”.
+
+## What went wrong with my drawing?
+
+Going back to my poor line of fit: I drew the line which minimizes the euclidean distance between the points and the line, but that's not actually useful for prediction (in typical cases).
+That's because if I'm given an input, I want to guess the output for _that_ input. We're _given_ the X value, so we're not trying to change anything related to that. But when we do the euclidean distance minimization,
+then you _do_ change the X value. So that's kind of silly (again, in typical cases). So since we want to _only_ change the Y value,
 that means we're changing the vertical value of the point, or in other words, minimizing the vertical distance. Which ends up being the least squares formula.
-
-So it seems like I needed to relearn regression, or perhaps really learn it for the first time.
-
-It's pretty easy to google for basic blog posts about linear regression, so why am I writing another one?
-Because I found the blogs to be unsatisfactory in giving me a deep understanding.
-The whole point of this was to learn and _really_ understand how linear regression works and, importantly, why the explanation-of-how is valid.
-
-I'll try to cite the blogs and stackexchange posts that I came across and relied on as I built up my understanding.
-
-So just to
-
-It seems like there are two approaches to solving the linear regression problem. One approach defines a cost function that describes how good/bad the model is, and then minimizes that cost function. The other approach uses linear algebra. This is the one I struggled to develop an intuition for, because the approach never explicitly uses a cost function or derivative, so it wasn’t clear to me how a solution could just “emerge”.
 
 ### Calculus approach
 
@@ -71,7 +65,8 @@ to project it onto our line/plane. But of course, that's circular reasoning beca
 
 To project $$Y$$ onto $$C(A)$$, we can use $$Y \cdot \hat{A}$$ where $$\hat{A}$$ is the normalized vector of $$A$$.
 
-So now that we've projected $$Y$$ onto $$C(A)$$, we have a new vector $$\hat{Y}$$. So our equation is now $$Ab = \hat{Y}$$. Which is solvable!
+So now that we've projected $$Y$$ onto $$C(A)$$, we have a new vector $$\hat{Y}$$. So our equation is now $$Ab = \hat{Y}$$. Which is solvable! 
+We want to isolate $$b$$ so we should "divide" by $$A$$ on both sides. 
 
 $$b = A^{-1}\hat{Y}$$
 
@@ -81,19 +76,20 @@ $$A^{T}Ab = \hat{Y}$$
 
 $$b = (A^{T}A)^{-1}\hat{Y}$$
 
-So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because if it weren’t then $$Ab = 0$$ would have a solution where $$b \neq 0$$. And at least for our 2d example, this is obviously not possible since if we have any data points where $$x_i \neq 0$$ then $$x_i * b = 0 iff b = 0$$.
+So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because if it weren’t then $$Ab = 0$$ would have a solution where $$b \neq 0$$. And at least for our 2d example, this is obviously not possible since if we have any data points where $$x_i \neq 0$$ then $$x_i * b = 0$ iff $$b = 0$$.
 
-If you look at other blogs or stackexchange posts or even wikipedia pages, the common equation you'll probably see is $$b = (A^{T}A)^{-1}A^{T}Y$$.
+Cool, so we're pretty much done. However, if you look at other blogs or stackexchange posts or even wikipedia pages, the common final equation you'll probably see is $$b = (A^{T}A)^{-1}A^{T}Y$$.
 
-We can relate our equation to this more common one 
+We can relate our equation to this more common one
 
-$$A^{T} * Y = Y \cdot C(A)$$ because of the Hermitian adjoint.
+$$A^{T}Y = Y \cdot C(A) = \hat{Y}$$ because of the Hermitian adjoint.
 
+#### _Why_ does this work?
 
-Okay cool, that looks great. But _why_ does that work? Why does that give us the same solution as minimizing the cost function? Well, because minimizing the least squares sum
-of the points in the original problem is actually the same thing as projecting Y onto C(A).
+Okay cool, what we did looks great. But _why_ does that work? Why does this projection approach give us the same solution as minimizing the least squares cost function? Well, because minimizing the least squares sum
+of the points in the original problem is actually the same thing as projecting $$Y$$ onto $$C(A)$$.
 
-We project $$Y$$ onto $$C(A)$$, and the whole point of a projection is that the resulting vector should be “similar” to $$Y$$ in a meaningful way. In other words, the distance between $$Y$$ and $$\hat{Y}$$ should be minimal.
+The whole point of a projection is that the resulting vector should be “similar” to the original in a meaningful way. In other words, the distance between $$Y$$ and $$\hat{Y}$$ should be minimal.
 We know from basic geometry that the shortest distance between two points is
 a line between them.
 So $$\hat{Y} - Y$$ looks like
