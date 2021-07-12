@@ -107,3 +107,16 @@ Remember that each row in $$Y$$ corresponds to one of our data points. So projec
 #### Other cost functions
 So what about other cost functions? What if we used absolute value instead of least squares? Or what about Deming regression? What's the equivalent thing to do in N space? (pca? TODO)
 
+## Citations
+
+### Citations
+Linear algebra approach - https://medium.com/@andrew.chamberlain/the-linear-algebra-view-of-least-squares-regression-f67044b7f39b
+Why projecting is same thing as least squares - https://math.stackexchange.com/questions/3750293/relationship-between-projections-and-least-squares
+Showing why euclidean distance is nonsense in problem space - https://math.stackexchange.com/questions/2837161/does-least-squares-approximate-solution-minimize-the-orthogonal-distance-of-b
+More about projection vs least square - https://math.stackexchange.com/questions/1298261/difference-between-orthogonal-projection-and-least-squares-solution
+Philosophy about vertical distance - https://stats.stackexchange.com/questions/319041/why-does-linear-regression-use-a-cost-function-based-on-the-vertical-distance-be
+Calculus approach - https://math.stackexchange.com/questions/131590/derivation-of-the-formula-for-ordinary-least-squares-linear-regression
+Another calc - https://towardsdatascience.com/linear-regression-derivation-d362ea3884c2
+Lin alg derivation of normal equation - https://math.stackexchange.com/questions/644834/least-squares-in-a-matrix-form?rq=1
+Column space - https://towardsdatascience.com/what-is-column-space-with-a-machine-learning-example-8f8a8d4ec6c
+“Common sense” vs best fit + PCA - https://stats.stackexchange.com/questions/332819/line-of-best-fit-does-not-look-like-a-good-fit-why
