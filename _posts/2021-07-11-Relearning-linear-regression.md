@@ -109,7 +109,6 @@ So what about other cost functions? What if we used absolute value instead of le
 
 ## Citations
 
-### Citations
 Linear algebra approach - https://medium.com/@andrew.chamberlain/the-linear-algebra-view-of-least-squares-regression-f67044b7f39b
 Why projecting is same thing as least squares - https://math.stackexchange.com/questions/3750293/relationship-between-projections-and-least-squares
 Showing why euclidean distance is nonsense in problem space - https://math.stackexchange.com/questions/2837161/does-least-squares-approximate-solution-minimize-the-orthogonal-distance-of-b
