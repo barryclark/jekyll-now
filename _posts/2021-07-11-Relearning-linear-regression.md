@@ -76,7 +76,7 @@ $$A^{T}Ab = \hat{Y}$$
 
 $$b = (A^{T}A)^{-1}\hat{Y}$$
 
-So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because if it weren’t then $$Ab = 0$$ would have a solution where $$b \neq 0$$. And at least for our 2d example, this is obviously not possible since if we have any data points where $$x_i \neq 0$$ then $$x_i * b = 0$ iff $$b = 0$$.
+So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because if it weren’t then $$Ab = 0$$ would have a solution where $$b \neq 0$$. And at least for our 2d example, this is obviously not possible since if we have any data points where $$x_i \neq 0$$ then $$x_i * b = 0$$ iff $$b = 0$$.
 
 Cool, so we're pretty much done. However, if you look at other blogs or stackexchange posts or even wikipedia pages, the common final equation you'll probably see is $$b = (A^{T}A)^{-1}A^{T}Y$$.
 
