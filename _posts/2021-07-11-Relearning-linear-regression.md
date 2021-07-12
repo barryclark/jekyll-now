@@ -12,7 +12,7 @@ Except that's not correct if you're using least squares. This is the correct fit
 
 ![image](https://user-images.githubusercontent.com/1283020/125233340-2e500c80-e293-11eb-9533-7187f527cd3b.png)
 
-Oh. Oops. Looks like I need to learn linear regression for real.
+Oh. Oops. Looks like I need to learn linear regression beyond just importing scikit-learn.
 
 It's pretty easy to google for basic blog posts about linear regression, so why am I writing another one? Well, for one, it's helping me to consolidate my learnings into notes. But also, I found the blogs to be unsatisfactory in giving me a deep understanding. I didn't just want to see know how to solve the least squares problem, I wanted to know _why_ the "how" worked. 
 
@@ -111,13 +111,13 @@ So what about other cost functions? What if we used absolute value instead of le
 
 ## Citations
 
-Linear algebra approach - https://medium.com/@andrew.chamberlain/the-linear-algebra-view-of-least-squares-regression-f67044b7f39b
-Why projecting is same thing as least squares - https://math.stackexchange.com/questions/3750293/relationship-between-projections-and-least-squares
-Showing why euclidean distance is nonsense in problem space - https://math.stackexchange.com/questions/2837161/does-least-squares-approximate-solution-minimize-the-orthogonal-distance-of-b
-More about projection vs least square - https://math.stackexchange.com/questions/1298261/difference-between-orthogonal-projection-and-least-squares-solution
-Philosophy about vertical distance - https://stats.stackexchange.com/questions/319041/why-does-linear-regression-use-a-cost-function-based-on-the-vertical-distance-be
-Calculus approach - https://math.stackexchange.com/questions/131590/derivation-of-the-formula-for-ordinary-least-squares-linear-regression
-Another calc - https://towardsdatascience.com/linear-regression-derivation-d362ea3884c2
-Lin alg derivation of normal equation - https://math.stackexchange.com/questions/644834/least-squares-in-a-matrix-form?rq=1
-Column space - https://towardsdatascience.com/what-is-column-space-with-a-machine-learning-example-8f8a8d4ec6c
-“Common sense” vs best fit + PCA - https://stats.stackexchange.com/questions/332819/line-of-best-fit-does-not-look-like-a-good-fit-why
+[Linear algebra approach](https://medium.com/@andrew.chamberlain/the-linear-algebra-view-of-least-squares-regression-f67044b7f39b)
+[Why projecting is same thing as least squares](https://math.stackexchange.com/questions/3750293/relationship-between-projections-and-least-squares)
+[Showing why euclidean distance is nonsense in problem space](https://math.stackexchange.com/questions/2837161/does-least-squares-approximate-solution-minimize-the-orthogonal-distance-of-b)
+[More about projection vs least square](https://math.stackexchange.com/questions/1298261/difference-between-orthogonal-projection-and-least-squares-solution)
+[Philosophy about vertical distance](https://stats.stackexchange.com/questions/319041/why-does-linear-regression-use-a-cost-function-based-on-the-vertical-distance-be)
+[Calculus approach](https://math.stackexchange.com/questions/131590/derivation-of-the-formula-for-ordinary-least-squares-linear-regression)
+[Another calculus approach](https://towardsdatascience.com/linear-regression-derivation-d362ea3884c2)
+[Lin alg derivation of normal equation](https://math.stackexchange.com/questions/644834/least-squares-in-a-matrix-form?rq=1)
+[Column space](https://towardsdatascience.com/what-is-column-space-with-a-machine-learning-example-8f8a8d4ec6c)
+[“Common sense” vs best fit + PCA](https://stats.stackexchange.com/questions/332819/line-of-best-fit-does-not-look-like-a-good-fit-why)
