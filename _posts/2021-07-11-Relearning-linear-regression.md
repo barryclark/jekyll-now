@@ -73,14 +73,14 @@ To project $$Y$$ onto $$C(A)$$, we can use $$Y \cdot \hat{A}$$ where $$\hat{A}$$
 
 So now that we've projected $$Y$$ onto $$C(A)$$, we have a new vector $$\hat{Y}$$. So our equation is now $$Ab = \hat{Y}$$. Which is solvable! 
 
-b = A^-1 * Y-hat
+$$b = A^{-1}\hat{Y}$$
 
-But wait - we can't inverse A! A is Nx1 so it's definitely not invertible. Instead, we can multipy it by its transpose so get a square matrix:
+But wait - we can't inverse $$A$$! $$A$$ is Nx1 so it's definitely not invertible. Instead, we can multipy it by its transpose to get a square matrix:
 
-A^T * A * b = Y-hat
-b = (A^T * A) ^ -1 * Y-hat
+$$A^{T}Ab = \hat{Y}$$
+$$b = (A^{T}A)^{-1}\hat{Y}$$
 
-Can we definitely inverse (A^T * A)? (TODO)
+Can we definitely inverse $$A^{T}A$$? (TODO)
 
 The common equation you'll probably see is b = (A^T * A)^-1 * A^T * Y
 
