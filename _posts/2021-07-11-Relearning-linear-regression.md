@@ -1,13 +1,11 @@
 I recently realized that I didn't understand linear regression as well as I thought as I did.
 
-$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
-
 ![twitter thread image](https://user-images.githubusercontent.com/1283020/125213633-ebc50a80-e267-11eb-8ddc-b8d8b9c9aea7.png)
 
 <sub>From this [twitter thread](https://twitter.com/lightspringfox/status/1412581659745001474)
 </sub>
 
-Maybe I don't know _exactly_ how to do it with linear algebra but I can intuitively draw a best fit for a set of points, so I should be able to work from there.
+Okay, so maybe I don't know _exactly_ how to do it with linear algebra but I can intuitively draw a best fit for a set of points, so I should be able to work from there.
 
 For example, for this set of points (TODO), I'd draw a line looking like this (TODO).
 
@@ -40,8 +38,8 @@ and determine the best fit from that. (TODO)
 ### Linear algebra approach
 
 Like I said, I struggled to inuitively understand this approach. Defining a cost function and minimizing it made sense to me. You can start with a terrible fit and optimize it.
-But I couldn't understand how you could just "get" the optimal solution in a closed form formula. [This post](https://medium.com/@andrew.chamberlain/the-linear-algebra-view-of-least-squares-regression-f67044b7f39b)
-was the first one I looked at that introduced the linear algebra solution. Even though the logic is sound, I found myself very confused by it.
+But I couldn't understand how you could just "get" the optimal solution in a closed form formula that didn't involve any derivatives (or even the cost function!). [This post](https://medium.com/@andrew.chamberlain/the-linear-algebra-view-of-least-squares-regression-f67044b7f39b)
+was the first one I looked at that introduced the linear algebra solution. Even though the logic is sound, I found myself confused by certain steps.
 
 So let's go back to the points we had above. We're solving a 2-dimensional linear regression. So you have all your points e.g 
 (1,3), (1,5), (2,3), (3,4), (3,6), (3,7), ..., (10,6), (10,11), (10,12). Since we're ultimately trying to find a single linear solution (of the form y = cx + b) that fits these points,
@@ -52,6 +50,9 @@ show the system (TODO)
 And we can straightforwardly rewrite this in matrix notation as
 
 latex of matrix math (TODO)
+
+$$\begin{bmatrix}1\\1\\2\\3\\3\\3\\...\\10\\10\\10\end{bmatrix} \begin{bmatrix}x\end{bmatrix} = \begin{bmatrix}3\\5\\3\\4\\6\\7\\...\\6\\11\\12\end{bmatrix}$$
+
 
 We'll call the leftmost matrix A. If we were working in higher dimensions, A would have more columns. But since we're just solving a 2D problem, and therefore have a single predictor variable X, we have just 1 column.
 The second matrix we'll call b. why is it 1x1 (TODO) And we're equating it to Y. Which is also Nx1 because we're predicting a single variable.
