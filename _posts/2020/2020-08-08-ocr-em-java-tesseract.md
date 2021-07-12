@@ -12,7 +12,7 @@ Nesse artigo será mostrado com Java como extrair textos editáveis de imagens u
 
 # Uma breve história
 
-<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/2020/08/30-12-51-51-Tesseract_OCR_logo_(Google).png" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/2020/08/30-12-51-51-Tesseract_OCR_logo_(Google).png" title="" alt="" data-align="center">
 
 > Fonte: [GitHub - tesseract-ocr/tesseract: Tesseract Open Source OCR Engine ](https://github.com/tesseract-ocr/tesseract#brief-history)
 
@@ -51,7 +51,7 @@ Os comandos instalam o Tesseract com suporte a língua portuguesa.
 
 Na internet realizei uma pesquisa sobre modelos de ofícios judiciais e logo encontrei a seguinte imagem:
 
-<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/2020/08/30-11-24-06-teste.png" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/2020/08/30-11-24-06-teste.png" title="" alt="" data-align="center">
 
 A imagem possui uma boa qualidade e atende bem os requisitos do Tesseract. O projeto de exemplo foi criado para ser construído em Maven, logo é necessário configurar a dependência:
 
@@ -94,7 +94,7 @@ public class LerImagem {
 
 No Linux é necessário configurar o *Datapath* do Tesseract além da linguagem do texto (no caso português). Após passar a imagem para o método *doOcr* o retorno é a String resultante do reconhecimento, que ao ser impressa, traz o seguinte resultado:
 
-<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/2020/08/30-12-18-59-resultado-tess4j.png" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/2020/08/30-12-18-59-resultado-tess4j.png" title="" alt="" data-align="center">
 
 A taxa de assertividade foi bem alta, e poderia ser contornada com algum processo de correção de texto posterior.
 
