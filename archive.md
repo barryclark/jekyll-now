@@ -4,6 +4,18 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### July 12th, 2021 thoughts & takeaways:
+
+* June airport passenger traffic was 99% of "normal", as compared to February 2020. I'd expect the 4th of July weekend to be a big spike in the data.
+
+* Daily traffic volumes ticked up by about 5% in June to about 90% of normal traffic conditions. 
+
+* As theorized, the spike in incidents in May was likely caused by the rainy weather. The daily rate has fallen down to about 125 incidents per day. 
+
+* The Google mobility data is something I have been watching closely over the past couple weeks. Travel to workplaces is still only about 65% of pre-covid numbers. Travel to Transit Stations has actually surpassed the workplaces category and is 70% of pre-covid. 
+
+***
+
 ### June 4th, 2021 thoughts & takeaways:
 
 * A big jump in passenger traffic at the airport over the course of May. The last day of available data (Saturday, May 15th) shows 99% of normal pre-covid passenger traffic. The weekends are  
