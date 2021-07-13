@@ -6,11 +6,17 @@ I recently realized that I didn't understand linear regression as well as I thou
 
 Okay, I thought, so maybe I don't know _exactly_ how to do it with linear algebra but I intuitively know how to draw a best fit for a set of points, so I should be able to work from there and develop a more rigorous algorithm of what I'm doing by intuition.
 
-For example, for this set of points (TODO), I'd draw a line looking like this (TODO).
+For example, for this set of points 
+
+![data points](https://user-images.githubusercontent.com/1283020/125375441-e508c700-e33d-11eb-91f7-31c8fb0d328c.png)
+
+I'd draw a line looking like this
+
+![my line fit](https://user-images.githubusercontent.com/1283020/125375730-6eb89480-e33e-11eb-96e2-638cb8a93305.png)
 
 Except that's not correct if you're using least squares. This is the correct fit.
 
-![image](https://user-images.githubusercontent.com/1283020/125233340-2e500c80-e293-11eb-9533-7187f527cd3b.png)
+![correct line fit](https://user-images.githubusercontent.com/1283020/125375825-94de3480-e33e-11eb-985d-56ee11efe284.png)
 
 Oh. Oops. Looks like I need to learn linear regression beyond just importing scikit-learn.
 
