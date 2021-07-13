@@ -6,7 +6,7 @@ I recently realized that I didn't understand linear regression as well as I thou
 
 Okay, I thought, so maybe I don't know _exactly_ how to do it with linear algebra but I intuitively know how to draw a best fit for a set of points, so I should be able to work from there and develop a more rigorous algorithm of what I'm doing by intuition.
 
-For example, for this set of points 
+For example, for this set of points, what line would you draw? 
 
 ![data points](https://user-images.githubusercontent.com/1283020/125375441-e508c700-e33d-11eb-91f7-31c8fb0d328c.png)
 
@@ -62,9 +62,9 @@ our notation is valid for all dimensions.
 
 Now of course, if you actually tried to solve this solution, you wouldn't be able to. This is because $$Y$$ isn't in the column space of $$A$$ (referred to as $$C(A)$$.
 
-> I needed a reminder for what a column space was, so I'll include one here. If you don't need it, feel free to skip ahead to the next paragraph.
+I needed a reminder for what a column space was, so I'll include one here. If you don't need it, feel free to skip ahead to the next paragraph.
 
-> The column space of a matrix $$A$$ is essentially the _range_ of the matrix, analogous to the range of a function. It describes the space of all possible linear
+The column space of a matrix $$A$$ is essentially the _range_ of the matrix, analogous to the range of a function. It describes the space of all possible linear
 combinations of the columns of $$A$$. Since our matrix has just one column, its column space is actually just a line. If it had two columns, the column space would span a plane. But a line _where_? Well, say $$A$$ has n rows. Then $$C(A)$$ would be a line in n-space. So in our case, $$C(A)$$ is just a line parallel to the column vector $$A$$. Note that $$Y$$ is also a vector in n-space. And of course, more likely than not, $$Y$$ does not lie on the line $$C(A)$$.
 
 So in order to make the problem solvable, we need to project $$Y$$ onto $$C(A)$$. This is where I got confused when I was learning. The blogs often used 2D or 3D examples
