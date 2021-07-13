@@ -75,6 +75,8 @@ The projection $$\hat{Y}$$ of $$Y$$ onto $$C(A)$$ is given by:
 
 $$\hat{Y} = \dfrac{Y \cdot A}{A \cdot A}A$$
 
+To visualize why: $$\dfrac{Y \cdot A}{A \cdot A}$$ will give us a scalar value. So we're essentially just computing some extension or contraction of $$A$$, which makes sense because $$A$$ _is_ our column space when we have just one predictor variable. $$\dfrac{Y \cdot A}{A \cdot A}$$ is basically getting ... (TODO)
+
 Now we can use $$\hat{Y}$$ to create a modified equation $$Ab = \hat{Y}$$. Which is solvable! 
 We want to isolate $$b$$ so we should "divide" by $$A$$ on both sides by inverting $$A$$. 
 But wait - we can't invert $$A$$ because $$A$$ is Nx1 so it's definitely not invertible. Instead, we can multiply it by its transpose to get a square matrix:
@@ -107,30 +109,26 @@ $$Ab = Y$$ still, but now $$A$$ is Nx2 instead of Nx1 and $$b$$ is 2x1 instead o
 
 The column space of $$A$$ now spans a 2d plane instead of just a line. So we need to project $$Y$$ onto this plane.
 
-$$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
-
-To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. If it helps, you can break it down into two parts: $$AA^{T}X$$ will project _and dilate_ a given vector $$X$$ onto $$C(A)$$. $$(A^TA)^{-1}$$ normalizes the vector so that it's a projection with no dilation.   
-
-- basically show why AA^T makes sense
-- show why (A^TA)^-1 is a normalizing factor
-- then clean up this whole section. possibly rework the whole thing including 2d case to be more abstract
-
 The projection equation changes slightly. Instead of computing the projection of $$Y$$ onto a single vector, we now need to compute the projection of $$Y$$ onto
 several vectors and sum them. These vectors are the column vectors of $$A$$ which form a basis for the column space of $$A$$. This will give us a vector that lies
 in $$C(A)$$ and is closest to $$Y$$. 
-
-However, if we plug this into our normal equation, we can no longer simplify as much as we did last time.
-Luckily, there's an identity that we can use to simplify the equation a bit. 
-
-(TODO your paragraph ordering got fked up)
 
 Now for each vector $$u_{i}$$ in the basis of $$C(A)$$ (two in our case), we compute 
 
 $$\hat{y}_{i} = \dfrac{y_{i} \cdot u_{i}}{u_{i} \cdot u_{i}}u_{i}$$
 
-Where $$\hat{Y} = \begin{bmatrix}y_1\\y_2\end{bmatrix}$$
+$$Y = y_{1} + y_{2}$$
 
-So now we can no longer simplify the normal equation like we did in the 2d case. 
+But if we plug this into our normal equation, we can no longer simplify it like we did in the 2d case. Instead, we'll want to rewrite the projection of $$Y$$
+using different notation that will allow us to simplify a bit. 
+
+$$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
+
+To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. If it helps, you can break it down into two parts: $$AA^{T}X$$ will project _and dilate_ a given vector $$X$$ onto $$C(A)$$. $$(A^TA)^{-1}$$ normalizes the vector so that it's a projection with no dilation.
+
+This is analogous to our other equation because ... (TODO)
+
+So now if we plug that into our normal equation, we can cancel the terms (TODO) and get ... (TODO)
 
 The thing that frustrated me about the other examples online is that you can derive the normal equation from $$Ab = Y$$, but we _know_ this equation isn't solvable. So why is the normal equation solvable? It's because when you use $$Ab = \hat{Y}$$, which is solvable, there are terms that actually cancel out when
 you isolate $$b$$. 
@@ -158,7 +156,7 @@ Remember that each row in $$Y$$ corresponds to one of our data points. So projec
 Still, you might be bugged about the fact that gradient descent feels like we're computing something in iterations, whereas a solution seems to just fall out of this approach. I think the insight here is that even though the notation gives us a nice closed-form solution, we still need to actually _compute_ the matrix math.
 And because of the projection's relation to the least squares minimization, we're computing a function that requires us to iterate over every data point in $$Y$$ and $$A$$.  
 
-My understanding of the "magic" is that projecting $$Y$$ onto $$C(A)$$  
+My understanding of the "magic" is that projecting $$Y$$ onto $$C(A)$$ ... (TODO)
 
 #### Other cost functions
 So what about other cost functions? What if we used absolute value instead of least squares? Or what about Deming regression? What's the equivalent thing to do in N space? (pca? TODO)
