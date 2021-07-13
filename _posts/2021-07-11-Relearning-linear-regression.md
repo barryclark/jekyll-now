@@ -109,7 +109,7 @@ The column space of $$A$$ now spans a 2d plane instead of just a line. So we nee
 
 $$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
 
-To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. If you assume that $$A$$ is orthonormal, then $$AA^{T}$$ is a projection onto $$C(A)$$ because ... (TODO)
+To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. If it helps, you can break it down into two parts: $$AA^{T}X$$ will project _and dilate_ a given vector $$X$$ onto $$C(A)$$. $$(A^TA)^{-1}$$ normalizes the vector so that it's a projection with no dilation.   
 
 - basically show why AA^T makes sense
 - show why (A^TA)^-1 is a normalizing factor
@@ -132,6 +132,9 @@ Where $$\hat{Y} = \begin{bmatrix}y_1\\y_2\end{bmatrix}$$
 
 So now we can no longer simplify the normal equation like we did in the 2d case. 
 
+The thing that frustrated me about the other examples online is that you can derive the normal equation from $$Ab = Y$$, but we _know_ this equation isn't solvable. So why is the normal equation solvable? It's because when you use $$Ab = \hat{Y}$$, which is solvable, there are terms that actually cancel out when
+you isolate $$b$$. 
+ 
 #### _Why_ does this work?
 
 Okay cool, what we did looks great. But _why_ does that work? Why does this projection approach give us the same solution as minimizing the least squares cost function? Well, because minimizing the least squares sum
