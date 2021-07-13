@@ -103,11 +103,24 @@ So this gives us exactly the matrix of coefficients that we want for $$b$$!
 
 #### But what if we have two or more predictors?
 
+- show generalization of the dot product equation, explain that it's a linear combo of vectors in A
+- briefly explain proof of matrix equation
+- explain that we can reconcile matrix eq as linear combo b/c the columns AA^T are themselves LCs of A's columns
+  - need to get more confident about what exactly (A^TA)^-1 does. esp b/c it isn't commutative
+    - can you show that A(A^TA)^-1 is... uh... well it's not orthonormal... b/c you still multiply by A^T. it has to be something slightly different
+    - i think the idea is that if A isn't orthonormal, then AA^T will... warp y in some undesired way. so (A^TA)^-1 undoes that warping
+
+
 Ideally not much should change, but I did take some shortcuts since we were working in 2d regression. Let's say we're working in 3d now.
 
 $$Ab = Y$$ still, but now $$A$$ is Nx2 instead of Nx1 and $$b$$ is 2x1 instead of 1x1. 
 
-The column space of $$A$$ now spans a 2d plane instead of just a line. So we need to project $$Y$$ onto this plane.
+The column space of $$A$$ now spans a 2d plane instead of just a line. So we need to project $$Y$$ onto this plane. Before, $$Y$$ was simply a contraction or extension of the vector $$A$$. But now we have the columns of $$A$$ that form a basis for $$C(A)$$. Note that though the columns are almost definitely independent, they probably aren't orthogonal. Now $$\hat{Y}$$ is a linear combination of these basis vectors. 
+
+If we say $$A = \begin{matrix}a_1 | a_2\end{matrix}$$, where $$a_i$$ are column vectors, then $$\hat{Y} = x_1 * a_1 + x_2 + a_2$$ for some scalar values $$x_i$$. 
+We can then define $$x = \begin{matrix}x_1 \\ x_2\end{matrix}$$.
+
+So we want to find $$x$$ satisfying $$Ax = \hat{Y}$$. 
 
 The projection equation changes slightly. Instead of computing the projection of $$Y$$ onto a single vector, we now need to compute the projection of $$Y$$ onto
 several vectors and sum them. These vectors are the column vectors of $$A$$ which form a basis for the column space of $$A$$. This will give us a vector that lies
