@@ -91,9 +91,29 @@ but as far as I understand, the equation is _only_ solvable if $$Y$$ is projecte
 
 We can go another step further. We know $$\hat{Y} = \dfrac{Y \cdot A}{A \cdot A}A$$ so we can plug that into the normal equation:
 
-$$b = (A^{T}A)^{-1}A^{T}\dfrac{Y \cdot A}{A \cdot A}A \\ b = \dfrac{Y \cdot A}{A \cdot A}(A^{T}A)^{-1}A^{T}A \\ b = \dfrac{Y \cdot A}{A \cdot A}I_{1}$$
+$$b = (A^{T}A)^{-1}A^{T}\dfrac{Y \cdot A}{A \cdot A}A$$ 
+
+$$b = \dfrac{Y \cdot A}{A \cdot A}(A^{T}A)^{-1}A^{T}A$$
+
+$$b = \dfrac{Y \cdot A}{A \cdot A}I_{1}$$
 
 So this gives us exactly the matrix of coefficients that we want for $$b$$!
+
+#### But what if we have two or more predictors?
+
+Ideally not much should change, but I did take some shortcuts since we were working in 2d regression. Let's say we're working in 3d now.
+
+$$Ab = Y$$ still, but now $$A$$ is Nx2 instead of Nx1 and $$b$$ is 2x1 instead of 1x1. 
+
+The column space of $$A$$ now spans a 2d plane instead of just a line. So we need to project $$Y$$ onto this plane.
+
+The projection equation changes slightly. Now for each vector $$u_{i}$$ in the basis of $$C(A)$$ (two in our case), we compute 
+
+$$\hat{y}_{i} = \dfrac{y_{i} \cdot u_{i}}{u_{i} \cdot u_{i}}u_{i}$$
+
+Where $$\hat{Y} = \begin{bmatrix}y_1\\y_2\end{bmatrix}$$
+
+So now we can no longer simplify the normal equation like we did in the 2d case. 
 
 #### _Why_ does this work?
 
@@ -117,6 +137,8 @@ Remember that each row in $$Y$$ corresponds to one of our data points. So projec
 
 Still, you might be bugged about the fact that gradient descent feels like we're computing something in iterations, whereas a solution seems to just fall out of this approach. I think the insight here is that even though the notation gives us a nice closed-form solution, we still need to actually _compute_ the matrix math.
 And because of the projection's relation to the least squares minimization, we're computing a function that requires us to iterate over every data point in $$Y$$ and $$A$$.  
+
+My understanding of the "magic" is that projecting $$Y$$ onto $$C(A)$$  
 
 #### Other cost functions
 So what about other cost functions? What if we used absolute value instead of least squares? Or what about Deming regression? What's the equivalent thing to do in N space? (pca? TODO)
