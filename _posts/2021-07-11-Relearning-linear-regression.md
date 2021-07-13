@@ -83,7 +83,7 @@ $$A^{T}Ab = A^{T}\hat{Y}$$
 
 $$b = (A^{T}A)^{-1}A^{T}\hat{Y}$$
 
-So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because if it weren’t then $$Ab = 0$$ would have a solution where $$b \neq 0$$. And at least for our 2d example, this is obviously not possible since if we have any data points where $$x_i \neq 0$$ then $$x_i * b = 0$$ iff $$b = 0$$.
+So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because if it weren’t then $$Ab = 0$$ would have a solution where $$b \neq 0$$. And at least for our 2d example, this is obviously not possible since if we have any data points where $$x_i \neq 0$$ then $$x_i * b = 0$$ iff $$b = 0$$. (TODO - think your logic is wrong. wouldn't it be A^TAb = 0? and that's no longer trivially false)
 
 If you've read other linear regression explanations, then the above equation probably looks similar, and it's called the normal equation. 
 My derivation yields different notation than what I've seen elsewhere. Other people use $$\hat{b}$$ and $$Y$$ to denote a modified solution,
@@ -91,9 +91,7 @@ but as far as I understand, the equation is _only_ solvable if $$Y$$ is projecte
 
 We can go another step further. We know $$\hat{Y} = \dfrac{Y \cdot A}{A \cdot A}A$$ so we can plug that into the normal equation:
 
-$$b = (A^{T}A)^{-1}A^{T}\dfrac{Y \cdot A}{A \cdot A}A$$
-$$b = \dfrac{Y \cdot A}{A \cdot A}(A^{T}A)^{-1}A^{T}A$$
-$$b = \dfrac{Y \cdot A}{A \cdot A}I_{1}$$
+$$b = (A^{T}A)^{-1}A^{T}\dfrac{Y \cdot A}{A \cdot A}A \\ b = \dfrac{Y \cdot A}{A \cdot A}(A^{T}A)^{-1}A^{T}A \\ b = \dfrac{Y \cdot A}{A \cdot A}I_{1}$$
 
 So this gives us exactly the matrix of coefficients that we want for $$b$$!
 
@@ -144,3 +142,5 @@ So what about other cost functions? What if we used absolute value instead of le
 [Column space](https://towardsdatascience.com/what-is-column-space-with-a-machine-learning-example-8f8a8d4ec6c)
 
 [“Common sense” vs best fit + PCA](https://stats.stackexchange.com/questions/332819/line-of-best-fit-does-not-look-like-a-good-fit-why)
+
+[A good primer on regression and the normal equation](http://mlwiki.org/index.php/Normal_Equation)
