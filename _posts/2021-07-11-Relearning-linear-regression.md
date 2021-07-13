@@ -71,7 +71,7 @@ So in order to make the problem solvable, we need to project $$Y$$ onto $$C(A)$$
 and described $$C(A)$$ as a plane. So I assumed that $$C(A)$$ was a plane in the same space as the original linear regression problem itself. So I kept thinking it meant that for each data point, we needed
 to project it onto our line/plane. But of course, that's circular reasoning because we don't actually have a line yet. And also, that "projection" likely isn't orthogonal. Of course, my thinking didn't really make sense, but I'm including it here in case someone else is confused because of the different spaces described by the rows and columns. The linear regression problem has the same dimension as the number of columns in $$A$$ + 1 for $$Y$$. Whereas the column space is concerned with the number of rows in $$A$$. Basically, the more data points / rows you have, the more data points that you need to move onto some common line. 
 
-To project $$Y$$ onto $$C(A)$$, we can use $$Y \cdot \hat{A}$$ where $$\hat{A}$$ is the normalized vector of $$A$$.
+$$proj_{C(A)}Y = \dfrac{y \cdot \hat{A}}{\hat{A} \cdot \hat{A}}\hat{A}
 
 So now that we've projected $$Y$$ onto $$C(A)$$, we have a new vector $$\hat{Y}$$. So our equation is now $$Ab = \hat{Y}$$. Which is solvable! 
 We want to isolate $$b$$ so we should "divide" by $$A$$ on both sides. 
