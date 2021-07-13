@@ -107,7 +107,24 @@ $$Ab = Y$$ still, but now $$A$$ is Nx2 instead of Nx1 and $$b$$ is 2x1 instead o
 
 The column space of $$A$$ now spans a 2d plane instead of just a line. So we need to project $$Y$$ onto this plane.
 
-The projection equation changes slightly. Now for each vector $$u_{i}$$ in the basis of $$C(A)$$ (two in our case), we compute 
+$$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
+
+To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. If you assume that $$A$$ is orthonormal, then $$AA^{T}$$ is a projection onto $$C(A)$$ because ... (TODO)
+
+- basically show why AA^T makes sense
+- show why (A^TA)^-1 is a normalizing factor
+- then clean up this whole section. possibly rework the whole thing including 2d case to be more abstract
+
+The projection equation changes slightly. Instead of computing the projection of $$Y$$ onto a single vector, we now need to compute the projection of $$Y$$ onto
+several vectors and sum them. These vectors are the column vectors of $$A$$ which form a basis for the column space of $$A$$. This will give us a vector that lies
+in $$C(A)$$ and is closest to $$Y$$. 
+
+However, if we plug this into our normal equation, we can no longer simplify as much as we did last time.
+Luckily, there's an identity that we can use to simplify the equation a bit. 
+
+(TODO your paragraph ordering got fked up)
+
+Now for each vector $$u_{i}$$ in the basis of $$C(A)$$ (two in our case), we compute 
 
 $$\hat{y}_{i} = \dfrac{y_{i} \cdot u_{i}}{u_{i} \cdot u_{i}}u_{i}$$
 
