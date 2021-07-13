@@ -71,26 +71,29 @@ So in order to make the problem solvable, we need to project $$Y$$ onto $$C(A)$$
 and described $$C(A)$$ as a plane. So I assumed that $$C(A)$$ was a plane in the same space as the original linear regression problem itself. So I kept thinking it meant that for each data point, we needed
 to project it onto our line/plane. But of course, that's circular reasoning because we don't actually have a line yet. And also, that "projection" likely isn't orthogonal. Of course, my thinking didn't really make sense, but I'm including it here in case someone else is confused because of the different spaces described by the rows and columns. The linear regression problem has the same dimension as the number of columns in $$A$$ + 1 for $$Y$$. Whereas the column space is concerned with the number of rows in $$A$$. Basically, the more data points / rows you have, the more data points that you need to move onto some common line. 
 
-$$proj_{C(A)}Y = \dfrac{y \cdot \hat{A}}{\hat{A} \cdot \hat{A}}\hat{A}$$
+$$\hat{Y} = proj_{C(A)}Y = \dfrac{Y \cdot A}{A \cdot A}A$$
 
-So now that we've projected $$Y$$ onto $$C(A)$$, we have a new vector $$\hat{Y}$$. So our equation is now $$Ab = \hat{Y}$$. Which is solvable! 
-We want to isolate $$b$$ so we should "divide" by $$A$$ on both sides. 
-
-$$b = A^{-1}\hat{Y}$$
-
+So now that we've projected $$Y$$ onto $$C(A)$$, we have a new vector $$\hat{Y}$$. So our modified equation is now $$Ab = \hat{Y}$$. Which is solvable! 
+We want to isolate $$b$$ so we should "divide" by $$A$$ on both sides.
 But wait - we can't inverse $$A$$! $$A$$ is Nx1 so it's definitely not invertible. Instead, we can multiply it by its transpose to get a square matrix:
 
-$$A^{T}Ab = \hat{Y}$$
+$$A^{T}Ab = A^{T}\hat{Y}$$
 
-$$b = (A^{T}A)^{-1}\hat{Y}$$
+$$b = (A^{T}A)^{-1}A^{T}\hat{Y}$$
+
+If you've read other linear regression explanations, then this equation probably looks similar, and it's called the normal equation. 
+My derivation yields different notation than what I've seen elsewhere. Other people use $$\hat{b}$$ and $$Y$$ to denote a modified solution,
+but as far as I understand, the equation is _only_ solvable if $$Y$$ is projected onto $$C(A)$$. 
 
 So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because if it weren’t then $$Ab = 0$$ would have a solution where $$b \neq 0$$. And at least for our 2d example, this is obviously not possible since if we have any data points where $$x_i \neq 0$$ then $$x_i * b = 0$$ iff $$b = 0$$.
 
-Cool, so we're pretty much done. However, if you look at other blogs or stackexchange posts or even wikipedia pages, the common final equation you'll probably see is $$b = (A^{T}A)^{-1}A^{T}Y$$.
+We can go another step further. We know $$\hat{Y} = \dfrac{Y \cdot A}{A \cdot A}A$$ so we can plug that into the normal equation:
 
-We can relate our equation to this more common one
+$$b = (A^{T}A)^{-1}A^{T}\dfrac{Y \cdot A}{A \cdot A}A$$
+$$b = \dfrac{Y \cdot A}{A \cdot A}(A^{T}A)^{-1}A^{T}A$$
+$$b = \dfrac{Y \cdot A}{A \cdot A}I_{1}$$
 
-$$A^{T}Y = Y \cdot C(A) = \hat{Y}$$ because of the Hermitian adjoint.
+So this gives us exactly the matrix of coefficients that we want for $$b$$!
 
 #### _Why_ does this work?
 
