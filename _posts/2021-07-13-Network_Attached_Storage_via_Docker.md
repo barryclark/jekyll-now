@@ -4,7 +4,7 @@ title: "Create your own icloud but better - NAS"
 ---
 
 # Welcome
-"NAS I am not talking about american rapper.
+"NAS, I am not talking about american rapper.
 I recently switched from android to apple, and I am already tired of 'my icloud is full!'. thus birth my own Network Attached Storage >> best part I can connect external storage too ;)"
 
 ## What is NAS?
