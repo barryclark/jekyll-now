@@ -142,7 +142,7 @@ $$A = \begin{matrix}a_{11} & a_{12} & ... & a_{1k}\\a_{21} & a_{22} & ... & a_{2
 
 and
 
-$$A^T = \begin{matrix}a_{11} & a_{21} & ... & a_{k1}\\a_{12} & a_{22} & ... & a_{k2}\\ \vdots \\a_{1N} & a_{2N} & ... & a_{kN}\end{matrix}$$
+$$A^T = \begin{matrix}a_{11} & a_{21} & ... & a_{N1}\\a_{12} & a_{22} & ... & a_{N2}\\ \vdots \\a_{1k} & a_{2k} & ... & a_{Nk}\end{matrix}$$
 
 So
 
