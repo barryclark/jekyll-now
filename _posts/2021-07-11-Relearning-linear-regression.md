@@ -146,7 +146,7 @@ $$A^T = \begin{bmatrix}a_{11} & a_{21} & ... & a_{N1}\\a_{12} & a_{22} & ... & a
 
 So
 
-$$AA^T = \begin{bmatrix}a_{11}a_{11} & a_{12}a_{12} & ... & a_{1N}a_{1N}\\ \vdots \\a_{N1}a_{N1} & a_{N2}a_{N2} & ... & a_{NN}a_{NN}\end{bmatrix}$$
+$$AA^T = \begin{bmatrix}a_{11}a_{11} + a_{12}a_{12} + ... + a_{1k}a_{1k} & ... & a_{11}a_{N1} + a_{12}a_{N2} + ... + a_{1k}a_{Nk} \\ \vdots \\a_{N1}a_{N1} & a_{N2}a_{N2} & ... & a_{NN}a_{NN}\end{bmatrix}$$
 
 Which could be rewritten as
 
