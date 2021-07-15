@@ -45,7 +45,7 @@ I view the two approaches as having different equations. The calculus approach i
 - separate: $$\sum{i=1}^{N} x_{i} * \hat{y_{i}} - \sum{i=1}^{N} b * x_{i}^2 = 0$$ 
 - $$\sum{i=1}^{N} x_{i} * \hat{y_{i}} = \sum{i=1}^{N} b * x_{i}^2$$
 - $$\sum{i=1}^{N} x_{i} * \hat{y_{i}} = b * \sum{i=1}^{N} x_{i}^2$$
-- b = \dfrac{\sum{i=1}^{N} x_{i} * \hat{y_{i}}}{\sum{i=1}^{N} x_{i}^2}$$
+- $$b = \dfrac{\sum{i=1}^{N} x_{i} * \hat{y_{i}}}{\sum{i=1}^{N} x_{i}^2}$$
 
 ### Linear algebra approach
 
