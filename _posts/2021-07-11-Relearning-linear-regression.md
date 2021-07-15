@@ -130,11 +130,14 @@ To prove why this is the case would take too much space here. You can read [this
 1. $$Y - \hat{Y}$$ must be orthogonal to $$C(A)$$
 2. Therefore $$Y - \hat{Y}$$ is orthogonal to $$Ab$$ which is a vector in $$C(A)$$
 3. So the dot product $$Ab \cdot (Y - \hat{Y}) = 0$$
-4. Rewrite $$Ab$$ as $$b \cdot A^T$$ so you end up with $$b \cdot (A^{T}(Y - \hat{Y}) = 0$$ for all possible vectors $$b$$ of size Kx1 where K is the number of columns in $$A$$
-5. The only way that's possible is if $$(A^{T}(Y - \hat{Y}) = 0$$
-6. From there it's pretty easy to show $$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
+4. Rewrite $$Ab$$ as $$b \cdot A^T$$ so you end up with $$b \cdot (A^{T}(Y - \hat{Y})) = 0$$ for all possible vectors $$b$$ of size Kx1 where K is the number of columns in $$A$$
+5. The only way that's possible is if $$(A^{T}(Y - \hat{Y})) = 0$$
+6. Remember that $$\hat{Y} = Ax$$ for some $$x$$, so $$(A^{T}(Y - Ax)) = 0$$
+7. $$A^{T}Y = A^{T}Ax$$
+8. $$(A^{T}A)^{-1}A^{T}Y = x$$
+9. Multiply both sides by $$A$$: $$A(A^{T}A)^{-1}A^{T}Y = Ax = \hat{Y}$$
 
-So even though the proof makes sense to me, I struggled to understand it geometrically. I think it's useful to compare what this equation is really doing compared to our original linear combination equation. If we define $$P_{C(A)} = A(A^{T}A)^{-1}A^{T}$$ then $$P_{C(A)}Y$$ is a linear combination of the columns of $$P_{C(A)}$$. If we assume for now that $$A$$ is orthonormal, then we can drop $$(A^{T}A)^{-1}$$. So now we have a linear combination of the columns of $$AA^T$$. If we enumerate the row by column multiplication, we'll see that the columns of $$AA^T$$ are themselves linear combinations of the columns of $$A$$:
+So even though the proof makes sense to me, I struggled to understand geometrically how/why $$A(A^{T}A)^{-1}A^{T}$$ is a projection operator. I think it's useful to compare what this equation is really doing compared to our original linear combination equation. If we define $$P_{C(A)} = A(A^{T}A)^{-1}A^{T}$$ then $$P_{C(A)}Y$$ is a linear combination of the columns of $$P_{C(A)}$$. If we assume for now that $$A$$ is orthonormal, then we can drop $$(A^{T}A)^{-1}$$. So now we have a linear combination of the columns of $$AA^T$$. If we enumerate the row by column multiplication, we'll see that the columns of $$AA^T$$ are themselves linear combinations of the columns of $$A$$:
 
 Say
 
@@ -189,8 +192,6 @@ Remember that each row in $$Y$$ corresponds to one of our data points. So projec
 
 Still, you might be bugged about the fact that gradient descent feels like we're computing something in iterations, whereas a solution seems to just fall out of this approach. I think the insight here is that even though the notation gives us a nice closed-form solution, we still need to actually _compute_ the matrix math.
 And because of the projection's relation to the least squares minimization, we're computing a function that requires us to iterate over every data point in $$Y$$ and $$A$$.  
-
-My understanding of the "magic" is that projecting $$Y$$ onto $$C(A)$$ ... (TODO)
 
 #### Other cost functions
 So what about other cost functions? What if we used absolute value instead of least squares? Or what about Deming regression? What's the equivalent thing to do in N space? (pca? TODO)
