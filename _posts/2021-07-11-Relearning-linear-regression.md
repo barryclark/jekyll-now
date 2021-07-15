@@ -130,26 +130,29 @@ To prove why this is the case would take too much space here. You can read [this
 1. $$Y - \hat{Y}$$ must be orthogonal to $$C(A)$$
 2. Therefore $$Y - \hat{Y}$$ is orthogonal to $$Ab$$ which is a vector in $$C(A)$$
 3. So the dot product $$Ab \cdot (Y - \hat{Y}) = 0$$
-4. Rewrite $$Ab$$ as $$b \codt A^T$$ so you end up with $$b \cdot (A^{T}(Y - \hat{Y}) = 0$$ for all possible vectors $$b$$ of size Kx1 where K is the number of columns in $$A$$
+4. Rewrite $$Ab$$ as $$b \cdot A^T$$ so you end up with $$b \cdot (A^{T}(Y - \hat{Y}) = 0$$ for all possible vectors $$b$$ of size Kx1 where K is the number of columns in $$A$$
 5. The only way that's possible is if $$(A^{T}(Y - \hat{Y}) = 0$$
 6. From there it's pretty easy to show $$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
 
-So even though the proof makes sense to me, I struggled to understand it geometrically. I think it's useful to compare what this equation is really doing compared to our original linear combination equation. If we define $$P_{C(A)} = A(A^{T}A)^{-1}A^{T}$$ then $$P_{C(A)}Y}$$ is a linear combination of the columns of $$P_{C(A)}$$. If we assume for now that $$A$$ is orthonormal, then we can drop $$(A^{T}A)^{-1}$$. So now we have a linear combination of the columns of $$AA^T$$. If we enumerate the row by column multiplication, we'll see that the columns of $$AA^T$$ are themselves linear combinations of the columns of $$A$$:
+So even though the proof makes sense to me, I struggled to understand it geometrically. I think it's useful to compare what this equation is really doing compared to our original linear combination equation. If we define $$P_{C(A)} = A(A^{T}A)^{-1}A^{T}$$ then $$P_{C(A)}Y$$ is a linear combination of the columns of $$P_{C(A)}$$. If we assume for now that $$A$$ is orthonormal, then we can drop $$(A^{T}A)^{-1}$$. So now we have a linear combination of the columns of $$AA^T$$. If we enumerate the row by column multiplication, we'll see that the columns of $$AA^T$$ are themselves linear combinations of the columns of $$A$$:
 
 Say
 
-$$A = \begin{matrix}a_{11} & a_{12} & ... & a_{1k}\\a_{21} & a_{22} & ... & a_{2k}\\...\\a_{N1} & a_{N2} & ... & a_{Nk}\end{matrix}$$
+$$A = \begin{matrix}a_{11} & a_{12} & ... & a_{1k}\\a_{21} & a_{22} & ... & a_{2k}\\ \vdots \\a_{N1} & a_{N2} & ... & a_{Nk}\end{matrix}$$
+
 and
-$$A^T = \begin{matrix}a_{11} & a_{21} & ... & a_{k1}\\a_{12} & a_{22} & ... & a_{k2}\\...\\a_{1N} & a_{2N} & ... & a_{kN}\end{matrix}$$
+
+$$A^T = \begin{matrix}a_{11} & a_{21} & ... & a_{k1}\\a_{12} & a_{22} & ... & a_{k2}\\ \vdots \\a_{1N} & a_{2N} & ... & a_{kN}\end{matrix}$$
 
 So
-$$AA^T = \begin{matrix}a_{11}a_{11} & a_{12}a_{12} & ... & a_{1N}a_{1N}\\...\\a_{N1}a_{N1} & a_{N2}a_{N2} & ... & a_{NN}a_{NN}\end{matrix}$$
+
+$$AA^T = \begin{matrix}a_{11}a_{11} & a_{12}a_{12} & ... & a_{1N}a_{1N}\\ \vdots \\a_{N1}a_{N1} & a_{N2}a_{N2} & ... & a_{NN}a_{NN}\end{matrix}$$
 
 Which could be rewritten as
 
 $$AA^T = \begin{matrix}a_{1}a_{1} | a_{2}a_{2} | ... | a_{N}a_{N}\end{matrix}$$
 
-If $$A$$ isn't orthonormal then we need $$(A^{T}A)^{-1]$$ to normalize the projection so that it's orthogonal to $$C(A)$$ rather than be at an oblique angle. 
+If $$A$$ isn't orthonormal then we need $$(A^{T}A)^{-1}$$ to normalize the projection so that it's orthogonal to $$C(A)$$ rather than be at an oblique angle. 
 
 So now if we plug $$P_{C(A)}Y$$ into the normal equation:
 
