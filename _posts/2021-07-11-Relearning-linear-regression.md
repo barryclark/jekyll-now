@@ -166,8 +166,7 @@ $$A^{T}Ab = A^{T}Y$$
 
 $$b = (A^{T}A)^{-1}A^{T}Y$$
 
-The thing that frustrated me about the other examples online is that you can derive the normal equation from $$Ab = Y$$, but we _know_ this equation isn't solvable. So why is the normal equation solvable? It's because when you use $$Ab = \hat{Y}$$, which is solvable, there are terms that actually cancel out when
-you isolate $$b$$. 
+The thing that frustrated me about the other examples online is that they would seem to skip over the projection equation and just derive the normal equation from $$Ab = Y$$ (which you can do symbolically), but we _know_ this original equation isn't solvable. So why is the normal equation solvable? It's because when you use $$Ab = \hat{Y}$$, which is solvable, there are terms that actually cancel out when you isolate $$b$$. 
 
 What's the geometric interpretation of this? Well $$Ab = Y$$ means we're hoping to find some linear combination of the column vectors of $$A$$ that sum to $$Y$$. 
 We know this isn't possible however. So we instead try to solve for $$Ab = \hat{Y}$$ knowing that $$\hat{Y}$$ lies in $$C(A)$$. If you look at $$Ab = A(A^{T}A)^{-1}A^{T}Y$$, this is basically saying that a linear combination of the columns of $$A$$ can sum to a projection of $$Y$$ onto $$C(A)$$. If we could just invert $$A$$, it would reduce to our final equation, but we have to take the intermediate step of multiplying it by its transpose to guarantee invertibility.
