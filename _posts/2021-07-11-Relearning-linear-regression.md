@@ -35,6 +35,18 @@ I view the two approaches as having different equations. The calculus approach i
 
 ### Calculus approach
 
+- have all these data points
+- write as system of linear equations
+- admit that we can't solve it perfectly
+- so approximate it: $$A\hat{b} = Y$$
+- define cost function for learning: $$\sum{i=1}^{N} (\hat{y_{i}} - y_{i})^2 = $$\sum{i=1}^{N} (\hat{y_{i}} - b * x_{i})^2$$
+- derive, and we're looking for where derivative = 0: $$dS = \sum{i=1}^{N} -2x_{i} * (\hat{y_{i}} - b * x_{i}) = 0$$
+- $$\sum{i=1}^{N} x_{i} * (\hat{y_{i}} - b * x_{i}) = 0 = \sum{i=1}^{N} (x_{i} * \hat{y_{i}} - b * x_{i}^2)$$
+- separate: $$\sum{i=1}^{N} x_{i} * \hat{y_{i}} - \sum{i=1}^{N} b * x_{i}^2 = 0$$ 
+- $$\sum{i=1}^{N} x_{i} * \hat{y_{i}} = \sum{i=1}^{N} b * x_{i}^2$$
+- $$\sum{i=1}^{N} x_{i} * \hat{y_{i}} = b * \sum{i=1}^{N} x_{i}^2$$
+- b = \dfrac{\sum{i=1}^{N} x_{i} * \hat{y_{i}}}{\sum{i=1}^{N} x_{i}^2}$$
+
 ### Linear algebra approach
 
 Like I said, I struggled to intuitively understand this approach. Defining a cost function and minimizing it made sense to me. You can start with a terrible fit and optimize it.
