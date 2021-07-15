@@ -1,5 +1,3 @@
-## Why write this?
-
 I recently realized that I didn't understand linear regression as well as I thought as I did when I came across this [twitter thread](https://twitter.com/lightspringfox/status/1412581659745001474).
 
 ![twitter thread image](https://user-images.githubusercontent.com/1283020/125213633-ebc50a80-e267-11eb-8ddc-b8d8b9c9aea7.png)
@@ -25,13 +23,15 @@ That's because if I'm given an input, I want to guess the output for _that_ inpu
 then you _do_ change the X value. So that's kind of silly (again, in typical cases). So since we want to _only_ change the Y value,
 that means we're changing the vertical value of the point, or in other words, minimizing the vertical distance. Which ends up being the least squares formula.</sup></sub>
 
-It's pretty easy to google for basic blog posts about linear regression, so why am I writing another one? Well, for one, it's helping me to consolidate my learnings into notes. But also, I found the blogs to be unsatisfactory in giving me a deep understanding. I didn't just want to see know how to solve the least squares problem, I wanted to know _why_ the "how" worked.
+It's pretty easy to google for basic blog posts about linear regression, so why am I writing another one? Well, for one, it's helping me to consolidate my learnings into notes. But also, I found the blogs to be unsatisfactory in giving me a deep understanding. I didn't just want to see how to solve the least squares problem, I wanted to know _why_ the "how" worked. 
 
 I'll try to cite the blogs and stackexchange posts that I came across and relied on as I built up my understanding. I've also included them at the end.
 
 <sub><sup>The tweet only says "least squares problem", which might refer to a more general problem, but I'm going to focus on just the linear least squares problem for simplicity purposes.</sup></sub> 
 
-It seems like there are two approaches to solving the problem. One approach defines a cost function that describes how good/bad the model is, and then minimizes that cost function. The other approach uses linear algebra to project the data onto a line. This is the one I struggled to develop an intuition for, because the approach never explicitly uses a cost function or derivative, so it wasn’t clear to me how a solution could just “emerge”.
+It seems like there are two approaches to solving the problem. One approach defines a cost function that describes how good/bad the model is, and then minimizes that cost function. The other approach uses linear algebra to project the data onto a line. This is the one I struggled to develop an intuition for, because the approach never explicitly uses a cost function or derivative, so it wasn’t clear to me how a solution could just “emerge”. 
+
+I view the two approaches as having different equations. The calculus approach is solving $$A\hat{b} \approx Y$$ by trying to find some $$\hat{b}$$ that gets us close to a good solution. The linear algebra approach is solving $$Ab = \hat{Y}$$ where we give up on solving $$Ab = Y$$ which is likely impossible, and instead solving a similar problem where we move all the points onto a hypothetical line.  
 
 ### Calculus approach
 
@@ -40,6 +40,8 @@ It seems like there are two approaches to solving the problem. One approach defi
 Like I said, I struggled to intuitively understand this approach. Defining a cost function and minimizing it made sense to me. You can start with a terrible fit and optimize it.
 But I couldn't understand how you could just "get" the optimal solution in a closed form formula that didn't involve any derivatives (or even the cost function!). [This post](https://medium.com/@andrew.chamberlain/the-linear-algebra-view-of-least-squares-regression-f67044b7f39b)
 was the first one I looked at that introduced the linear algebra solution. Even though the logic is sound, I found myself confused because I feel that it glosses over important steps.
+
+Part of the reason I'm emphasizing the _why_ of this approach so much is that in order to make sense of $$Ab = \hat{Y}$$, I visualized it as moving all our data points so that they fit some hypothetical line perfectly. This is a geometric interpretation so I wanted to be able to draw some kind of isomorphism between all the linear algebra operations and some geometric interpretation so that ultimately, I could see how there's meaning in the way we move the data points. 
 
 So let's go back to the points we had above. We're solving a 2-dimensional linear regression. So you have all your points e.g
 (1,3), (1,5), (2,3), (3,4), (3,6), (3,7), ..., (10,6), (10,11), (10,12). Since we're ultimately trying to find a single linear solution (of the form $$y = cx + b$$) that fits these points,
