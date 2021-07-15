@@ -20,18 +20,18 @@ Except that's not correct if you're using least squares. This is the correct fit
 
 Oh. Oops. Looks like I need to learn linear regression beyond just importing scikit-learn.
 
-It's pretty easy to google for basic blog posts about linear regression, so why am I writing another one? Well, for one, it's helping me to consolidate my learnings into notes. But also, I found the blogs to be unsatisfactory in giving me a deep understanding. I didn't just want to see know how to solve the least squares problem, I wanted to know _why_ the "how" worked. 
+<sub><sup>What went wrong? I drew the line which minimizes the euclidean distance between the points and the line, but that's not actually useful for prediction (in typical cases).
+That's because if I'm given an input, I want to guess the output for _that_ input. We're _given_ the X value, so we're not trying to change anything related to that. But when we do the euclidean distance minimization,
+then you _do_ change the X value. So that's kind of silly (again, in typical cases). So since we want to _only_ change the Y value,
+that means we're changing the vertical value of the point, or in other words, minimizing the vertical distance. Which ends up being the least squares formula.</sup></sub>
+
+It's pretty easy to google for basic blog posts about linear regression, so why am I writing another one? Well, for one, it's helping me to consolidate my learnings into notes. But also, I found the blogs to be unsatisfactory in giving me a deep understanding. I didn't just want to see know how to solve the least squares problem, I wanted to know _why_ the "how" worked.
 
 I'll try to cite the blogs and stackexchange posts that I came across and relied on as I built up my understanding. I've also included them at the end.
 
-The tweet talks about the least squares problem, but I'm going to focus on just the linear least squares problem. It seems like there are two approaches to solving the problem. One approach defines a cost function that describes how good/bad the model is, and then minimizes that cost function. The other approach uses linear algebra to project the data onto a line. This is the one I struggled to develop an intuition for, because the approach never explicitly uses a cost function or derivative, so it wasn’t clear to me how a solution could just “emerge”.
+<sub><sup>The tweet only says "least squares problem", which might refer to a more general problem, but I'm going to focus on just the linear least squares problem for simplicity purposes.</sup></sub> 
 
-## What went wrong with my drawing?
-
-Going back to my poor line of fit: I drew the line which minimizes the euclidean distance between the points and the line, but that's not actually useful for prediction (in typical cases).
-That's because if I'm given an input, I want to guess the output for _that_ input. We're _given_ the X value, so we're not trying to change anything related to that. But when we do the euclidean distance minimization,
-then you _do_ change the X value. So that's kind of silly (again, in typical cases). So since we want to _only_ change the Y value,
-that means we're changing the vertical value of the point, or in other words, minimizing the vertical distance. Which ends up being the least squares formula.
+It seems like there are two approaches to solving the problem. One approach defines a cost function that describes how good/bad the model is, and then minimizes that cost function. The other approach uses linear algebra to project the data onto a line. This is the one I struggled to develop an intuition for, because the approach never explicitly uses a cost function or derivative, so it wasn’t clear to me how a solution could just “emerge”.
 
 ### Calculus approach
 
@@ -39,7 +39,7 @@ that means we're changing the vertical value of the point, or in other words, mi
 
 Like I said, I struggled to intuitively understand this approach. Defining a cost function and minimizing it made sense to me. You can start with a terrible fit and optimize it.
 But I couldn't understand how you could just "get" the optimal solution in a closed form formula that didn't involve any derivatives (or even the cost function!). [This post](https://medium.com/@andrew.chamberlain/the-linear-algebra-view-of-least-squares-regression-f67044b7f39b)
-was the first one I looked at that introduced the linear algebra solution. Even though the logic is sound, I found myself confused by certain steps.
+was the first one I looked at that introduced the linear algebra solution. Even though the logic is sound, I found myself confused because I feel that it glosses over important steps.
 
 So let's go back to the points we had above. We're solving a 2-dimensional linear regression. So you have all your points e.g
 (1,3), (1,5), (2,3), (3,4), (3,6), (3,7), ..., (10,6), (10,11), (10,12). Since we're ultimately trying to find a single linear solution (of the form $$y = cx + b$$) that fits these points,
@@ -67,15 +67,14 @@ I needed a reminder for what a column space was, so I'll include one here. If yo
 The column space of a matrix $$A$$ is essentially the _range_ of the matrix, analogous to the range of a function. It describes the space of all possible linear
 combinations of the columns of $$A$$. Since our matrix has just one column, its column space is actually just a line. If it had two columns, the column space would span a plane. But a line _where_? Well, say $$A$$ has n rows. Then $$C(A)$$ would be a line in n-space. So in our case, $$C(A)$$ is just a line parallel to the column vector $$A$$. Note that $$Y$$ is also a vector in n-space. And of course, more likely than not, $$Y$$ does not lie on the line $$C(A)$$.
 
-So in order to make the problem solvable, we need to project $$Y$$ onto $$C(A)$$. This is where I got confused when I was learning. The blogs often used 2D or 3D examples
-and described $$C(A)$$ as a plane. So I assumed that $$C(A)$$ was a plane in the same space as the original linear regression problem itself. So I kept thinking it meant that for each data point, we needed
-to project it onto our line/plane. But of course, that's circular reasoning because we don't actually have a line yet. And also, that "projection" likely isn't orthogonal. Of course, my thinking didn't really make sense, but I'm including it here in case someone else is confused because of the different spaces described by the rows and columns. The linear regression problem has the same dimension as the number of columns in $$A$$ + 1 for $$Y$$. Whereas the column space is concerned with the number of rows in $$A$$. Basically, the more data points / rows you have, the more data points that you need to move onto some common line. 
+So in order to make the problem solvable, we need to project $$Y$$ onto $$C(A)$$. This is where I got confused when I was learning. The blog examples were often solving a 2D or 3D regression problem, and would also describe $$C(A)$$ as a plane. 
+So I assumed that $$C(A)$$ was a plane in the same space as the original linear regression problem itself, rather than in the column space. So I kept thinking it meant that for each data point, we needed to somehow project it onto our yet-to-exist solution line/plane. It's circular reasoning, and also the "projection" here wouldn't be orthogonal unless the solution line is horizontal. Of course, my thinking didn't really make sense, but I'm including it here in case someone else is confused because of the different spaces described by the rows and columns. The linear regression problem has the same dimension as the number of columns in $$A$$ + 1 for $$Y$$. Whereas the column space is concerned with the number of rows / data points in $$A$$. 
 
-The projection $$\hat{Y}$$ of $$Y$$ onto $$C(A)$$ is given by:
+For our example, the projection $$\hat{Y}$$ of $$Y$$ onto $$C(A)$$ is given by:
 
 $$\hat{Y} = \dfrac{Y \cdot A}{A \cdot A}A$$
 
-To visualize why: $$\dfrac{Y \cdot A}{A \cdot A}$$ will give us a scalar value. So we're essentially just computing some extension or contraction of $$A$$, which makes sense because $$A$$ _is_ our column space when we have just one predictor variable. $$\dfrac{Y \cdot A}{A \cdot A}$$ is basically getting ... (TODO)
+To visualize why: $$\dfrac{Y \cdot A}{A \cdot A}$$ will give us a scalar value. So we're essentially just computing some extension or contraction of $$A$$, which makes sense because $$A$$ _is_ our column space when we have just one predictor variable. To understand $$\dfrac{Y \cdot A}{A \cdot A}$$ you can picture the two vectors $$Y$$ and $$A$$. Rotate the picture so that $$A$$ is pointing horizontally to the right. Assume for now that $$Y$$ also points generally right isntead of left. If you draw a straight line down from the end of $$Y$$ to $$A$$, that will give you how "long" $$Y$$ is "along" $$A$$.
 
 Now we can use $$\hat{Y}$$ to create a modified equation $$Ab = \hat{Y}$$. Which is solvable! 
 We want to isolate $$b$$ so we should "divide" by $$A$$ on both sides by inverting $$A$$. 
@@ -85,10 +84,12 @@ $$A^{T}Ab = A^{T}\hat{Y}$$
 
 $$b = (A^{T}A)^{-1}A^{T}\hat{Y}$$
 
-So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because if it weren’t then $$Ab = 0$$ would have a solution where $$b \neq 0$$. And at least for our 2d example, this is obviously not possible since if we have any data points where $$x_i \neq 0$$ then $$x_i * b = 0$$ iff $$b = 0$$. (TODO - think your logic is wrong. wouldn't it be A^TAb = 0? and that's no longer trivially false)
+So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because it would require the columns of $$A^{T}A$$ to not be linearly independent. That means at least one column is a multiple of another. ... (TODO)
+
+
 
 If you've read other linear regression explanations, then the above equation probably looks similar, and it's called the normal equation. 
-My derivation yields different notation than what I've seen elsewhere. Other people use $$\hat{b}$$ and $$Y$$ to denote a modified solution,
+My derivation yields different notation than what I've seen elsewhere. Some other people use $$\hat{b}$$ and $$Y$$ to denote a modified solution,
 but as far as I understand, the equation is _only_ solvable if $$Y$$ is projected onto $$C(A)$$, so I prefer to show that by using the projection of $$Y$$. 
 
 We can go another step further. We know $$\hat{Y} = \dfrac{Y \cdot A}{A \cdot A}A$$ so we can plug that into the normal equation:
@@ -99,17 +100,9 @@ $$b = \dfrac{Y \cdot A}{A \cdot A}(A^{T}A)^{-1}A^{T}A$$
 
 $$b = \dfrac{Y \cdot A}{A \cdot A}I_{1}$$
 
-So this gives us exactly the matrix of coefficients that we want for $$b$$!
+So this gives us exactly the coefficient that we want for our regression slope.
 
 #### But what if we have two or more predictors?
-
-- show generalization of the dot product equation, explain that it's a linear combo of vectors in A
-- briefly explain proof of matrix equation
-- explain that we can reconcile matrix eq as linear combo b/c the columns AA^T are themselves LCs of A's columns
-  - need to get more confident about what exactly (A^TA)^-1 does. esp b/c it isn't commutative
-    - can you show that A(A^TA)^-1 is... uh... well it's not orthonormal... b/c you still multiply by A^T. it has to be something slightly different
-    - i think the idea is that if A isn't orthonormal, then AA^T will... warp y in some undesired way. so (A^TA)^-1 undoes that warping
-
 
 Ideally not much should change, but I did take some shortcuts since we were working in 2d regression. Let's say we're working in 3d now.
 
@@ -117,7 +110,7 @@ $$Ab = Y$$ still, but now $$A$$ is Nx2 instead of Nx1 and $$b$$ is 2x1 instead o
 
 The column space of $$A$$ now spans a 2d plane instead of just a line. So we need to project $$Y$$ onto this plane. Before, $$Y$$ was simply a contraction or extension of the vector $$A$$. But now we have the columns of $$A$$ that form a basis for $$C(A)$$. Now $$\hat{Y}$$ is a linear combination of these basis vectors which will lie somewhere on the plane spanned by $$C(A)$$.  
 
-We'll need to generalize the equation we used above in the 2d case.
+We'll need to generalize the equation we used above in the 2d case:
 
 $$\hat{Y} = \dfrac{Y \cdot A}{A \cdot A}A$$
 
@@ -125,22 +118,38 @@ becomes
 
 $$\hat{Y} = \dfrac{Y \cdot u_1}{u_1 \cdot u_1}u_1 + \dfrac{Y \cdot u_2}{u_2 \cdot u_2}u_2$$
 
-where $$u_i$$ form an orthogonal basis for $$C(A)$$. So essentially $$\hat{Y}$$ is a linear combination of vectors that span $$C(A)$$.
+where the vectors $$u_1$$ and $$u_2$$ form an orthogonal basis for $$C(A)$$. <sup>This equation also generalizes for any number of dimensions</sup> So essentially $$\hat{Y}$$ is a linear combination of vectors that span $$C(A)$$.
 
 Unfortunately, if we plug this into the normal equation, we can't simplify it like we did in the 2d case. Instead we'll want to use matrix notation to 
-give us terms that we can futher simplify. 
+give us terms that we can futher simplify:
 
 $$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
 
-To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. (TODO give some brief steps overview of proof)
+To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. Basically, it kind of goes like: 
 
-So even though the proof makes sense to me, I struggled to understand it geometrically. I think it's useful to compare what this equation is really doing to our
-original linear combination equation. (TODO about inverse) If we define $$P_{C(A)} = A(A^{T}A)^{-1}A^{T}$$ then $$P_{C(A)}Y}$$ is a linear combination of the columns of $$P_{C(A)}$$. If we assume for now that $$A$$ is orthonormal, then we can drop $$(A^{T}A)^{-1}$$. So now we have a linear combination of the columns of $$AA^T$$. If we enumerate the row by column multiplication, we'll see that the columns of $$AA^T$$ are themselves linear combinations of the columns of $$A$$:
+1. $$Y - \hat{Y}$$ must be orthogonal to $$C(A)$$
+2. Therefore $$Y - \hat{Y}$$ is orthogonal to $$Ab$$ which is a vector in $$C(A)$$
+3. So the dot product $$Ab \cdot (Y - \hat{Y}) = 0$$
+4. Rewrite $$Ab$$ as $$b \codt A^T$$ so you end up with $$b \cdot (A^{T}(Y - \hat{Y}) = 0$$ for all possible vectors $$b$$ of size Kx1 where K is the number of columns in $$A$$
+5. The only way that's possible is if $$(A^{T}(Y - \hat{Y}) = 0$$
+6. From there it's pretty easy to show $$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
 
-(TODO blow out the AA^T matrix math to show LCs)
+So even though the proof makes sense to me, I struggled to understand it geometrically. I think it's useful to compare what this equation is really doing compared to our original linear combination equation. If we define $$P_{C(A)} = A(A^{T}A)^{-1}A^{T}$$ then $$P_{C(A)}Y}$$ is a linear combination of the columns of $$P_{C(A)}$$. If we assume for now that $$A$$ is orthonormal, then we can drop $$(A^{T}A)^{-1}$$. So now we have a linear combination of the columns of $$AA^T$$. If we enumerate the row by column multiplication, we'll see that the columns of $$AA^T$$ are themselves linear combinations of the columns of $$A$$:
 
-(TODO about inverse)
+Say
 
+$$A = \begin{matrix}a_{11} & a_{12} & ... & a_{1k}\\a_{21} & a_{22} & ... & a_{2k}\\...\\a_{N1} & a_{N2} & ... & a_{Nk}\end{matrix}$$
+and
+$$A^T = \begin{matrix}a_{11} & a_{21} & ... & a_{k1}\\a_{12} & a_{22} & ... & a_{k2}\\...\\a_{1N} & a_{2N} & ... & a_{kN}\end{matrix}$$
+
+So
+$$AA^T = \begin{matrix}a_{11}a_{11} & a_{12}a_{12} & ... & a_{1N}a_{1N}\\...\\a_{N1}a_{N1} & a_{N2}a_{N2} & ... & a_{NN}a_{NN}\end{matrix}$$
+
+Which could be rewritten as
+
+$$AA^T = \begin{matrix}a_{1}a_{1} | a_{2}a_{2} | ... | a_{N}a_{N}\end{matrix}$$
+
+If $$A$$ isn't orthonormal then we need $$(A^{T}A)^{-1]$$ to normalize the projection so that it's orthogonal to $$C(A)$$ rather than be at an oblique angle. 
 
 So now if we plug $$P_{C(A)}Y$$ into the normal equation:
 
