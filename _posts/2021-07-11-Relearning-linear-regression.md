@@ -115,36 +115,50 @@ Ideally not much should change, but I did take some shortcuts since we were work
 
 $$Ab = Y$$ still, but now $$A$$ is Nx2 instead of Nx1 and $$b$$ is 2x1 instead of 1x1. 
 
-The column space of $$A$$ now spans a 2d plane instead of just a line. So we need to project $$Y$$ onto this plane. Before, $$Y$$ was simply a contraction or extension of the vector $$A$$. But now we have the columns of $$A$$ that form a basis for $$C(A)$$. Note that though the columns are almost definitely independent, they probably aren't orthogonal. Now $$\hat{Y}$$ is a linear combination of these basis vectors. 
+The column space of $$A$$ now spans a 2d plane instead of just a line. So we need to project $$Y$$ onto this plane. Before, $$Y$$ was simply a contraction or extension of the vector $$A$$. But now we have the columns of $$A$$ that form a basis for $$C(A)$$. Now $$\hat{Y}$$ is a linear combination of these basis vectors which will lie somewhere on the plane spanned by $$C(A)$$.  
 
-If we say $$A = \begin{matrix}a_1 | a_2\end{matrix}$$, where $$a_i$$ are column vectors, then $$\hat{Y} = x_1 * a_1 + x_2 + a_2$$ for some scalar values $$x_i$$. 
-We can then define $$x = \begin{matrix}x_1 \\ x_2\end{matrix}$$.
+We'll need to generalize the equation we used above in the 2d case.
 
-So we want to find $$x$$ satisfying $$Ax = \hat{Y}$$. 
+$$\hat{Y} = \dfrac{Y \cdot A}{A \cdot A}A$$
 
-The projection equation changes slightly. Instead of computing the projection of $$Y$$ onto a single vector, we now need to compute the projection of $$Y$$ onto
-several vectors and sum them. These vectors are the column vectors of $$A$$ which form a basis for the column space of $$A$$. This will give us a vector that lies
-in $$C(A)$$ and is closest to $$Y$$. 
+becomes
 
-Now for each vector $$u_{i}$$ in the basis of $$C(A)$$ (two in our case), we compute 
+$$\hat{Y} = \dfrac{Y \cdot u_1}{u_1 \cdot u_1}u_1 + \dfrac{Y \cdot u_2}{u_2 \cdot u_2}u_2$$
 
-$$\hat{y}_{i} = \dfrac{y_{i} \cdot u_{i}}{u_{i} \cdot u_{i}}u_{i}$$
+where $$u_i$$ form an orthogonal basis for $$C(A)$$. So essentially $$\hat{Y}$$ is a linear combination of vectors that span $$C(A)$$.
 
-$$Y = y_{1} + y_{2}$$
-
-But if we plug this into our normal equation, we can no longer simplify it like we did in the 2d case. Instead, we'll want to rewrite the projection of $$Y$$
-using different notation that will allow us to simplify a bit. 
+Unfortunately, if we plug this into the normal equation, we can't simplify it like we did in the 2d case. Instead we'll want to use matrix notation to 
+give us terms that we can futher simplify. 
 
 $$\hat{Y} = A(A^{T}A)^{-1}A^{T}Y$$
 
-To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. If it helps, you can break it down into two parts: $$AA^{T}X$$ will project _and dilate_ a given vector $$X$$ onto $$C(A)$$. $$(A^TA)^{-1}$$ normalizes the vector so that it's a projection with no dilation.
+To prove why this is the case would take too much space here. You can read [this](http://math.bu.edu/people/paul/242/projection_matrices_handout.pdf) for a rigorous proof of why that equation is a projection of $$Y$$ onto $$C(A)$$. (TODO give some brief steps overview of proof)
 
-This is analogous to our other equation because ... (TODO)
+So even though the proof makes sense to me, I struggled to understand it geometrically. I think it's useful to compare what this equation is really doing to our
+original linear combination equation. (TODO about inverse) If we define $$P_{C(A)} = A(A^{T}A)^{-1}A^{T}$$ then $$P_{C(A)}Y} is a linear combination of the columns of $$P_{C(A)}$$. If we assume for now that $$A$$ is orthonormal, then we can drop $$(A^{T}A)^{-1}$$. So now we have a linear combination of the columns of $$AA^T$$. If we enumerate the row by column multiplication, we'll see that the columns of $$AA^T$$ are themselves linear combinations of the columns of $$A$$:
 
-So now if we plug that into our normal equation, we can cancel the terms (TODO) and get ... (TODO)
+(TODO blow out the AA^T matrix math to show LCs)
+
+(TODO about inverse)
+
+
+So now if we plug $$P_{C(A)}Y$$ into the normal equation:
+
+$$Ab = A(A^{T}A)^{-1}A^{T}Y$$
+
+$$A^{T}Ab = A^{T}A(A^{T}A)^{-1}A^{T}Y$$
+
+we can cancel the terms:
+
+$$A^{T}Ab = A^{T}Y$$
+
+$$b = (A^{T}A)^{-1}A^{T}Y$$
 
 The thing that frustrated me about the other examples online is that you can derive the normal equation from $$Ab = Y$$, but we _know_ this equation isn't solvable. So why is the normal equation solvable? It's because when you use $$Ab = \hat{Y}$$, which is solvable, there are terms that actually cancel out when
 you isolate $$b$$. 
+
+What's the geometric interpretation of this? Well $$Ab = Y$$ means we're hoping to find some linear combination of the column vectors of $$A$$ that sum to $$Y$$. 
+We know this isn't possible however. So we instead try to solve for $$Ab = \hat{Y}$$ knowing that $$\hat{Y}$$ lies in $$C(A)$$. If you look at $$Ab = A(A^{T}A)^{-1}A^{T}Y$$, this is basically saying that a linear combination of the columns of $$A$$ can sum to a projection of $$Y$$ onto $$C(A)$$. If we could just invert $$A$$, it would reduce to our final equation, but we have to take the intermediate step of multiplying it by its transpose to guarantee invertibility.
  
 #### _Why_ does this work?
 
