@@ -133,8 +133,8 @@ To prove why this is the case would take too much space here. You can read [this
 4. Rewrite $$Ab$$ as $$b \cdot A^T$$ so you end up with $$b \cdot (A^{T}(Y - \hat{Y})) = 0$$ for all possible vectors $$b$$ of size Kx1 where K is the number of columns in $$A$$
 5. The only way that's possible is if $$(A^{T}(Y - \hat{Y})) = 0$$
 6. Remember that $$\hat{Y} = Ax$$ for some $$x$$, so $$(A^{T}(Y - Ax)) = 0$$
-7. $$A^{T}Y = A^{T}Ax$$
-8. $$(A^{T}A)^{-1}A^{T}Y = x$$
+7. Distibute and add: $$A^{T}Y = A^{T}Ax$$
+8. Invert: $$(A^{T}A)^{-1}A^{T}Y = x$$
 9. Multiply both sides by $$A$$: $$A(A^{T}A)^{-1}A^{T}Y = Ax = \hat{Y}$$
 
 So even though the proof makes sense to me, I struggled to understand geometrically how/why $$A(A^{T}A)^{-1}A^{T}$$ is a projection operator. I think it's useful to compare what this equation is really doing compared to our original linear combination equation. If we define $$P_{C(A)} = A(A^{T}A)^{-1}A^{T}$$ then $$P_{C(A)}Y$$ is a linear combination of the columns of $$P_{C(A)}$$. If we assume for now that $$A$$ is orthonormal, then we can drop $$(A^{T}A)^{-1}$$. So now we have a linear combination of the columns of $$AA^T$$. If we enumerate the row by column multiplication, we'll see that the columns of $$AA^T$$ are themselves linear combinations of the columns of $$A$$:
