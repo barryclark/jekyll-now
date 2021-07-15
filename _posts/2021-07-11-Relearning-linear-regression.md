@@ -187,9 +187,9 @@ We know this isn't possible however. So we instead try to solve for $$Ab = \hat{
 #### What about an intercept?
 
 If we want to have an intercept, then our equation looks like $$Ab + c = Y$$ where $$c$$ is Nx1 and all values of $$c$$ should be identical. 
-We can rewrite $$c$$ as $$\bm{1}x$$ where $$\bm{1}$$ is an Nx1 vectors of 1s and $$x$$ is a 1x1 vector. 
-So then $$Ab + \bm{1}x$$ would be the same thing as $$\hat{A}\hat{b}$$ where $$\hat{A} = \begin{bmatrix}a_{1} | a_{2} | ... | a_{k} | \bm{1}\end{bmatrix}$$
-and $$\hat{b} = \begin{bmatrix}b_{1}\\b_{2}\\ \vdots \\b_{k}\\b_{k+1}\end{bmatrix}. 
+We can rewrite $$c$$ as $$\vec{1}x$$ where $$\vec{1}$$ is an Nx1 vectors of 1s and $$x$$ is a 1x1 vector. 
+So then $$Ab + \vec{1}x$$ would be the same thing as $$\hat{A}\hat{b}$$ where $$\hat{A} = \begin{bmatrix}a_{1} | a_{2} | ... | a_{k} | \vec{1}\end{bmatrix}$$
+and $$\hat{b} = \begin{bmatrix}b_{1}\\b_{2}\\ \vdots \\b_{k}\\b_{k+1}\end{bmatrix}$$. 
 So essentially we can rewrite $$Ab + c = Y$$ into form $$Ab = Y$$ and solve like normal.
  
 #### _Why_ does this work?
