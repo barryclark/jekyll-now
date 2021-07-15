@@ -184,6 +184,14 @@ The thing that frustrated me about the other examples online is that they would 
 What's the geometric interpretation of this? Well $$Ab = Y$$ means we're hoping to find some linear combination of the column vectors of $$A$$ that sum to $$Y$$. 
 We know this isn't possible however. So we instead try to solve for $$Ab = \hat{Y}$$ knowing that $$\hat{Y}$$ lies in $$C(A)$$. If you look at $$Ab = A(A^{T}A)^{-1}A^{T}Y$$, this is basically saying that a linear combination of the columns of $$A$$ can sum to a projection of $$Y$$ onto $$C(A)$$. If we could just invert $$A$$, it would reduce to our final equation, but we have to take the intermediate step of multiplying it by its transpose to guarantee invertibility.
  
+#### What about an intercept?
+
+If we want to have an intercept, then our equation looks like $$Ab + c = Y$$ where $$c$$ is Nx1 and all values of $$c$$ should be identical. 
+We can rewrite $$c$$ as $$\bm{1}x$$ where $$\bm{1}$$ is an Nx1 vectors of 1s and $$x$$ is a 1x1 vector. 
+So then $$Ab + \bm{1}x$$ would be the same thing as $$\hat{A}\hat{b}$$ where $$\hat{A} = \begin{bmatrix}a_{1} | a_{2} | ... | a_{k} | \bm{1}\end{bmatrix}$$
+and $$\hat{b} = \begin{bmatrix}b_{1}\\b_{2}\\ \vdots \\b_{k}\\b_{k+1}\end{bmatrix}. 
+So essentially we can rewrite $$Ab + c = Y$$ into form $$Ab = Y$$ and solve like normal.
+ 
 #### _Why_ does this work?
 
 Okay cool, what we did looks great. But _why_ does that work? Why does this projection approach give us the same solution as minimizing the least squares cost function? Well, because minimizing the least squares sum
@@ -209,6 +217,11 @@ And because of the projection's relation to the least squares minimization, we'r
 
 #### Other cost functions
 So what about other cost functions? What if we used absolute value instead of least squares? Or what about Deming regression? What's the equivalent thing to do in N space? (pca? TODO)
+
+- i think if we wanted to use another cost function, the way to do so would be to write it out in terms of $$\hat{y}$$ and $$y$$
+- then determine whatever geometric function leads $$\hat{y} - y$$ to look like, you know? like... hmm... that equation is euclidean distance right? and not just pairwise subtract? or am i dumb? wel... it's both? b/c subtraction is always just the direct line. and two lines always form a plane so there's always an orthogonal line btwn them and it's just basically... 
+- like, distance is euclidean yes. but line is orthogonal so euclidean ends up just being vertical distance
+- so if you want any other kind of equation, then can't use orthogonal line
 
 ## Citations
 
