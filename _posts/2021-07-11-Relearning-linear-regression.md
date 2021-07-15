@@ -146,11 +146,7 @@ $$A^T = \begin{bmatrix}a_{11} & a_{21} & ... & a_{N1}\\a_{12} & a_{22} & ... & a
 
 So
 
-$$AA^T = \begin{bmatrix}a_{11}a_{11} + a_{12}a_{12} + ... + a_{1k}a_{1k} & ... & a_{11}a_{N1} + a_{12}a_{N2} + ... + a_{1k}a_{Nk} \\ \vdots \\a_{N1}a_{N1} & a_{N2}a_{N2} & ... & a_{NN}a_{NN}\end{bmatrix}$$
-
-Which could be rewritten as
-
-$$AA^T = \begin{bmatrix}a_{1}a_{1} | a_{2}a_{2} | ... | a_{N}a_{N}\end{bmatrix}$$
+$$AA^T = \begin{bmatrix}a_{11}a_{11} + a_{12}a_{12} + ... + a_{1k}a_{1k} & ... & a_{11}a_{N1} + a_{12}a_{N2} + ... + a_{1k}a_{Nk} \\ \vdots \\a_{N1}a_{11} + a_{N2}a_{12} + ... + a_{Nk}a_{1k} & ... & a_{N1}a_{N1} + a_{N2}a_{N2} + ... + a_{Nk}a_{Nk} \end{bmatrix}$$
 
 If $$A$$ isn't orthonormal then we need $$(A^{T}A)^{-1}$$ to normalize the projection so that it's orthogonal to $$C(A)$$ rather than be at an oblique angle. 
 
