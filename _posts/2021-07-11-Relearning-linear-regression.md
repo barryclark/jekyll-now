@@ -138,19 +138,19 @@ So even though the proof makes sense to me, I struggled to understand it geometr
 
 Say
 
-$$A = \begin{matrix}a_{11} & a_{12} & ... & a_{1k}\\a_{21} & a_{22} & ... & a_{2k}\\ \vdots \\a_{N1} & a_{N2} & ... & a_{Nk}\end{matrix}$$
+$$A = \begin{bmatrix}a_{11} & a_{12} & ... & a_{1k}\\a_{21} & a_{22} & ... & a_{2k}\\ \vdots \\a_{N1} & a_{N2} & ... & a_{Nk}\end{bmatrix}$$
 
 and
 
-$$A^T = \begin{matrix}a_{11} & a_{21} & ... & a_{N1}\\a_{12} & a_{22} & ... & a_{N2}\\ \vdots \\a_{1k} & a_{2k} & ... & a_{Nk}\end{matrix}$$
+$$A^T = \begin{bmatrix}a_{11} & a_{21} & ... & a_{N1}\\a_{12} & a_{22} & ... & a_{N2}\\ \vdots \\a_{1k} & a_{2k} & ... & a_{Nk}\end{bmatrix}$$
 
 So
 
-$$AA^T = \begin{matrix}a_{11}a_{11} & a_{12}a_{12} & ... & a_{1N}a_{1N}\\ \vdots \\a_{N1}a_{N1} & a_{N2}a_{N2} & ... & a_{NN}a_{NN}\end{matrix}$$
+$$AA^T = \begin{bmatrix}a_{11}a_{11} & a_{12}a_{12} & ... & a_{1N}a_{1N}\\ \vdots \\a_{N1}a_{N1} & a_{N2}a_{N2} & ... & a_{NN}a_{NN}\end{bmatrix}$$
 
 Which could be rewritten as
 
-$$AA^T = \begin{matrix}a_{1}a_{1} | a_{2}a_{2} | ... | a_{N}a_{N}\end{matrix}$$
+$$AA^T = \begin{bmatrix}a_{1}a_{1} | a_{2}a_{2} | ... | a_{N}a_{N}\end{bmatrix}$$
 
 If $$A$$ isn't orthonormal then we need $$(A^{T}A)^{-1}$$ to normalize the projection so that it's orthogonal to $$C(A)$$ rather than be at an oblique angle. 
 
