@@ -98,9 +98,7 @@ $$A^{T}Ab = A^{T}\hat{Y}$$
 
 $$b = (A^{T}A)^{-1}A^{T}\hat{Y}$$
 
-So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because it would require the columns of $$A^{T}A$$ to not be linearly independent. That means at least one column is a multiple of another. ... (TODO)
-
-
+So technically $$A^{T}A$$ might not be invertible, but for our practical purposes, we can assume it is because it would require the columns of $$A^{T}A$$ to not be linearly independent. I'm unable to prove this in a rigorous way, but you can look at the columns of $$A^{T}A$$ and see that they most likely are linearly independent because it's not clear how to separate out the terms to show an equality with 0. Alternatively, [we know](https://math.stackexchange.com/questions/1872323/if-i-generate-a-random-matrix-what-is-the-probability-of-it-to-be-singular) the probability of randomly generating a non-invertible matrix is 0, so we can safely assume ours is invertible.
 
 If you've read other linear regression explanations, then the above equation probably looks similar, and it's called the normal equation. 
 My derivation yields different notation than what I've seen elsewhere. Some other people use $$\hat{b}$$ and $$Y$$ to denote a modified solution,
@@ -216,12 +214,9 @@ Still, you might be bugged about the fact that gradient descent feels like we're
 And because of the projection's relation to the least squares minimization, we're computing a function that requires us to iterate over every data point in $$Y$$ and $$A$$.  
 
 #### Other cost functions
-So what about other cost functions? What if we used absolute value instead of least squares? Or what about Deming regression? What's the equivalent thing to do in N space? (pca? TODO)
+This post dealt with least squares, but we could also consider other cost functions. I mentioned near the beginning that in typical cases, we care about the vertical distance of points to our fit, as opposed to the euclidean distance. In some cases, it might be appropriate to use the euclidean distance instead. Such a regression is called a Deming regression. It can be interpreted as allowing for error not just in the predicted variable, but also in the predictors.
 
-- i think if we wanted to use another cost function, the way to do so would be to write it out in terms of $$\hat{y}$$ and $$y$$
-- then determine whatever geometric function leads $$\hat{y} - y$$ to look like, you know? like... hmm... that equation is euclidean distance right? and not just pairwise subtract? or am i dumb? wel... it's both? b/c subtraction is always just the direct line. and two lines always form a plane so there's always an orthogonal line btwn them and it's just basically... 
-- like, distance is euclidean yes. but line is orthogonal so euclidean ends up just being vertical distance
-- so if you want any other kind of equation, then can't use orthogonal line
+Instead of using least squares, we could have also used absolute value. It's easy enough to redo the calculus approach (though harder because $$abs(x)$$ is non-differentiable at 0). But how could we do it with the linear algebra approach? To be honest, I'm not actually sure yet. I think you can start by looking at $$\hat{Y} - Y$$ and getting it to match your intended cost function. Then figure out what geometric function corresponds to such a distance. 
 
 ## Citations
 
