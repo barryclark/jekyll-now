@@ -4,8 +4,6 @@ title: This is how the bike-sharing trends in New York look like
 tags: [prophet, time-series-analysis]
 ---
 
-## Introduction
-
 Bike-sharing is marketed as a means of transportation that is cheaper than taxis or subway passes, saves time when going crosstown, gives a healthy dose of exercise, and is good for the environment. All those benefits are just plain facts. What I wanted to know is whether people do find it convenient and like to use it?
 
 In order to find an answer to this question, I decided to analyze the publicly available [Citi Bike trip data](https://www.citibikenyc.com/system-data). Having 20,000 bikes and over 1,300 stations across Manhattan, Brooklyn, Queens, the Bronx and Jersey City, the Citi Bike collects a large volume of data.
