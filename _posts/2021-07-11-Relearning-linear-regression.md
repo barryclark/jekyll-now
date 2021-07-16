@@ -39,7 +39,7 @@ I view the two approaches as having different equations. The calculus approach i
 - write as system of linear equations
 - admit that we can't solve it perfectly
 - so approximate it: $$A\hat{b} = Y$$
-- define cost function for learning: $$\sum_{i=1}^{N} (\hat{y_{i}} - y_{i})^2 = $$\sum_{i=1}^{N} (\hat{y_{i}} - b * x_{i})^2$$
+- define cost function for learning: $$\sum_{i=1}^{N} (\hat{y_{i}} - y_{i})^2 = \sum_{i=1}^{N} (\hat{y_{i}} - b * x_{i})^2$$
 - derive, and we're looking for where derivative = 0: $$dS = \sum_{i=1}^{N} -2x_{i} * (\hat{y_{i}} - b * x_{i}) = 0$$
 - $$\sum_{i=1}^{N} x_{i} * (\hat{y_{i}} - b * x_{i}) = 0 = \sum_{i=1}^{N} (x_{i} * \hat{y_{i}} - b * x_{i}^2)$$
 - separate: $$\sum_{i=1}^{N} x_{i} * \hat{y_{i}} - \sum_{i=1}^{N} b * x_{i}^2 = 0$$ 
@@ -241,3 +241,6 @@ Instead of using least squares, we could have also used absolute value. It's eas
 [“Common sense” vs best fit + PCA](https://stats.stackexchange.com/questions/332819/line-of-best-fit-does-not-look-like-a-good-fit-why)
 
 [A good primer on regression and the normal equation](http://mlwiki.org/index.php/Normal_Equation)
+
+[Probability of a random matrix being singular is 0](https://math.stackexchange.com/questions/1872323/if-i-generate-a-random-matrix-what-is-the-probability-of-it-to-be-singular)
+
