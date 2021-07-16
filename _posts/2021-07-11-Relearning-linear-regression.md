@@ -35,17 +35,28 @@ I view the two approaches as having different equations. The calculus approach i
 
 ### Calculus approach
 
-- have all these data points
-- write as system of linear equations
-- admit that we can't solve it perfectly
-- so approximate it: $$A\hat{b} = Y$$
-- define cost function for learning: $$\sum_{i=1}^{N} (y_{i} - \hat{y_{i}})^2 = \sum_{i=1}^{N} (y_{i} - b * x_{i})^2$$
-- derive, and we're looking for where derivative = 0: $$dS = \sum_{i=1}^{N} -2x_{i} * (y_{i} - b * x_{i}) = 0$$
-- $$\sum_{i=1}^{N} x_{i} * (y_{i} - b * x_{i}) = 0 = \sum_{i=1}^{N} (x_{i} * y_{i} - b * x_{i}^2)$$
-- separate: $$\sum_{i=1}^{N} x_{i} * y_{i} - \sum_{i=1}^{N} b * x_{i}^2 = 0$$ 
-- $$\sum_{i=1}^{N} x_{i} * y_{i} = \sum_{i=1}^{N} b * x_{i}^2$$
-- $$\sum_{i=1}^{N} x_{i} * y_{i} = b * \sum_{i=1}^{N} x_{i}^2$$
-- $$b = \dfrac{\sum_{i=1}^{N} x_{i} * y_{i}}{\sum_{i=1}^{N} x_{i}^2}$$
+So we have all these data points. We can rewrite them as a system of linear equations. And rewrite that in matrix notation: $$Ab = Y$$. 
+There almost definitely does not exist any $$b$$ that satisfies this equation. So the best we can do is some approximation: $$A\hat{b} \approx Y$$
+How do we define a best approximation? We need some way to compare different possible values for $$\hat{b}$$. So we define a cost function that describes
+how far off our solution is from reality, and seek to minimize this function. 
+
+A popular choice of cost function is least squares: $$S = \sum_{i}^{N}(y_{i} - \hat{y_{i}}$$. This post isn't really concerned with _why_ least squares is a popular choice. This [stackexchange post](https://math.stackexchange.com/questions/63238/why-do-we-use-a-least-squares-fit) does a good job of explaining why. For starters, it's probably the simplest reasonable cost function to calculate. But I also learned from writing this blog that there's a pretty beautiful relation between least squares and the smallest distance between $$Y$$ and $$\hat{Y}$$ when you consider them as vectors in N-dimensional space. I cover that a little bit in the linear algebra approach section. 
+
+We can rewrite our cost function as $$\sum_{i=1}^{N} (y_{i} - \hat{y_{i}})^2 = \sum_{i=1}^{N} (y_{i} - b * x_{i})^2$$.
+
+We wish to minimize it with respect to the input coefficients. For which we have just one for now. 
+
+To minimize, we want to find where its derivative is 0: $$dS = \sum_{i=1}^{N} -2x_{i} * (y_{i} - b * x_{i}) = 0$$
+
+Then it is a matter of reducing the equation:
+
+1. separate: $$\sum_{i=1}^{N} x_{i} * y_{i} - \sum_{i=1}^{N} b * x_{i}^2 = 0$$ 
+2. $$\sum_{i=1}^{N} x_{i} * y_{i} = \sum_{i=1}^{N} b * x_{i}^2$$
+3. $$\sum_{i=1}^{N} x_{i} * y_{i} = b * \sum_{i=1}^{N} x_{i}^2$$
+4. $$b = \dfrac{\sum_{i=1}^{N} x_{i} * y_{i}}{\sum_{i=1}^{N} x_{i}^2}$$
+
+If we had more coefficients, then we'd no longer be deriving along just one dimension. We'd need to write out the partial derivatives with respect to each of the coefficients to build the gradient. If we have $$k$$ coefficients, then the best line would be described as a point in k-space where the gradient is zero for all of the coefficients. 
+We can guarantee that such a point exists because our least squares cost function is strictly convex, meaning that if a line is drawn between any two points on the curve, all points on the line lie above the curve. This is because the least squares function is a paraboloid function. The implication of it being strictly convex means there's no local up-and-downs, so there has to be a unique global minimum. 
 
 ### Linear algebra approach
 
@@ -244,3 +255,4 @@ Instead of using least squares, we could have also used absolute value. It's eas
 
 [Probability of a random matrix being singular is 0](https://math.stackexchange.com/questions/1872323/if-i-generate-a-random-matrix-what-is-the-probability-of-it-to-be-singular)
 
+[Why use least squares](https://math.stackexchange.com/questions/63238/why-do-we-use-a-least-squares-fit)
