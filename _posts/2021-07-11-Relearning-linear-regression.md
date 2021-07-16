@@ -39,13 +39,13 @@ I view the two approaches as having different equations. The calculus approach i
 - write as system of linear equations
 - admit that we can't solve it perfectly
 - so approximate it: $$A\hat{b} = Y$$
-- define cost function for learning: $$\sum_{i=1}^{N} (\hat{y_{i}} - y_{i})^2 = \sum_{i=1}^{N} (\hat{y_{i}} - b * x_{i})^2$$
-- derive, and we're looking for where derivative = 0: $$dS = \sum_{i=1}^{N} -2x_{i} * (\hat{y_{i}} - b * x_{i}) = 0$$
-- $$\sum_{i=1}^{N} x_{i} * (\hat{y_{i}} - b * x_{i}) = 0 = \sum_{i=1}^{N} (x_{i} * \hat{y_{i}} - b * x_{i}^2)$$
-- separate: $$\sum_{i=1}^{N} x_{i} * \hat{y_{i}} - \sum_{i=1}^{N} b * x_{i}^2 = 0$$ 
-- $$\sum_{i=1}^{N} x_{i} * \hat{y_{i}} = \sum_{i=1}^{N} b * x_{i}^2$$
-- $$\sum_{i=1}^{N} x_{i} * \hat{y_{i}} = b * \sum_{i=1}^{N} x_{i}^2$$
-- $$b = \dfrac{\sum_{i=1}^{N} x_{i} * \hat{y_{i}}}{\sum_{i=1}^{N} x_{i}^2}$$
+- define cost function for learning: $$\sum_{i=1}^{N} (y_{i} - \hat{y_{i}})^2 = \sum_{i=1}^{N} (y_{i} - b * x_{i})^2$$
+- derive, and we're looking for where derivative = 0: $$dS = \sum_{i=1}^{N} -2x_{i} * (y_{i} - b * x_{i}) = 0$$
+- $$\sum_{i=1}^{N} x_{i} * (y_{i} - b * x_{i}) = 0 = \sum_{i=1}^{N} (x_{i} * y_{i} - b * x_{i}^2)$$
+- separate: $$\sum_{i=1}^{N} x_{i} * y_{i} - \sum_{i=1}^{N} b * x_{i}^2 = 0$$ 
+- $$\sum_{i=1}^{N} x_{i} * y_{i} = \sum_{i=1}^{N} b * x_{i}^2$$
+- $$\sum_{i=1}^{N} x_{i} * y_{i} = b * \sum_{i=1}^{N} x_{i}^2$$
+- $$b = \dfrac{\sum_{i=1}^{N} x_{i} * y_{i}}{\sum_{i=1}^{N} x_{i}^2}$$
 
 ### Linear algebra approach
 
