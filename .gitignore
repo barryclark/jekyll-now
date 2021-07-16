@@ -6,6 +6,7 @@ _site
 .sass-cache
 .directory
 _posts/_*.md
+.jekyll-cache/*
 Gemfile
 Gemfile.lock
 node_modules
