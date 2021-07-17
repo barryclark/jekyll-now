@@ -6,3 +6,18 @@ layout: default
   <p>I am Yash Verma and this is my personal homepage.</p>
   <p>I'm a Generalist Operator, working on the adoption of climate mitigation solutions.</p>
 </div>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
