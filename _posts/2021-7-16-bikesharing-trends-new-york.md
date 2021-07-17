@@ -71,3 +71,6 @@ Firstly, we looked at the general trend and discovered that it is steadily incre
 Next, we examined the yearly and weekly seasonality. As expected, the weather and air temperature have a massive influence on the baseline trend. Furthermore, the holiday season in the middle of summer has a negative impact on the number of rented bikes. And during the most severe restrictions due to lockdown, the negative effect reached over -60%.
 
 And finally, bank holidays have also adverse effects on bike rentals, except Memorial Day.
+
+---
+The repository with the code is available [here](https://kubekmonika.github.io/bikesharing-trends-new-york/).
