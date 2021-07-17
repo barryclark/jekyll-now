@@ -207,16 +207,16 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Cormorant Garamond";
   font-weight: 300;
-  font-size: 28px;
+  font-size: 36px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 24px;
 
   @include mobile {
     margin: 3px 0;
