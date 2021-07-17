@@ -6,7 +6,7 @@
 name: Monika Kubek
 
 # Short bio or description (displayed in the header)
-description: Young Data Analyst's blog
+description: Get hold of your data
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/16413288?s=400&u=ffc79419a2b8ad448bf3fe664585061c6b27da90&v=4
@@ -19,14 +19,13 @@ avatar: https://avatars3.githubusercontent.com/u/16413288?s=400&u=ffc79419a2b8ad
 footer-links:
   dribbble:
   email: kubek.monika@tutamail.com
-  facebook: https://www.facebook.com/monika.kubek.1
   flickr:
   github: kubekmonika
   instagram: https://www.instagram.com/monikakubek
   linkedin: https://www.linkedin.com/in/monika-kubek
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/

@@ -2,19 +2,29 @@
 layout: default
 ---
 
-<h1>{{ page.title | capitalize }}</h1>
+<!-- <h1>{{ page.title | capitalize }}</h1> -->
 
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        <div class="date">
-          {{ post.date | date: "%d %B %Y" }}
-        </div>
+      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="img">
+        {% if post.image.teaser %}
+          <img src="{{ site.url }}/images/{{ post.image.teaser }}" alt="imager" itemprop="image">
+        {% endif %}
+      </a>
+
+      <h2>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <div class="date">
+        {{ post.date | date: "%d %B %Y" }}
+      </div>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | strip_html | truncate: 260 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
