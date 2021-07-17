@@ -73,4 +73,4 @@ Next, we examined the yearly and weekly seasonality. As expected, the weather an
 And finally, bank holidays have also adverse effects on bike rentals, except Memorial Day.
 
 ---
-The repository with the code is available [here](https://kubekmonika.github.io/bikesharing-trends-new-york/).
+The repository with the code is available [here](https://github.com/kubekmonika/citibike-analysis).
