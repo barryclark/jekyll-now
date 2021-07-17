@@ -29,9 +29,9 @@ html {
 }
 
 body {
-  background: #F1ECC3;
+  background: #C9D8B6;
   font-family: "Nunito";
-  color: #515E63;
+  color: #C9D8B6;
 }
 
 .container {
@@ -44,7 +44,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cormorant Garamond";
-  color: #515E63;
+  color: #C9D8B6;
   font-weight: bold;
 
   line-height: 1.7;
@@ -73,7 +73,7 @@ h3 {
 
 h4 {
   font-size: 21px;
-  color: #515E63;
+  color: #C9D8B6;
 }
 
 p {
@@ -82,11 +82,11 @@ p {
 }
 
 a {
-  color: #57837B;
+  color: #F1ECC3;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: #57837B;
+    color: #F1ECC3;
   }
 }
 
@@ -136,11 +136,11 @@ img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: #C9D8B6;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: #C9D8B6;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -169,7 +169,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #C9D8B6;
 
   @include mobile {
     text-align: center;
@@ -255,7 +255,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #C9D8B6;
 }
 
 .posts > .post:last-child {
@@ -266,7 +266,7 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid #C9D8B6;
     padding: 0.1em 1em;
     color: $gray;
     font-size: 22px;
