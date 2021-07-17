@@ -210,12 +210,14 @@ img {
   font-family: "Cormorant Garamond";
   font-weight: 300;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: #C9D8B6;
   font-family: "Nunito";
+  text-decoration: none;
 
   @include mobile {
     margin: 3px 0;
@@ -241,6 +243,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    text-decoration: none;
 
     @include mobile {
       margin: 0 10px;
