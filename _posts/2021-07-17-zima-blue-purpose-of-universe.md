@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "Zima Blue Philosophy: Purpose of Universe"
 ---
