@@ -290,7 +290,10 @@ nav {
 // }
 
 .wrapper-footer{
-  height: 20px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
 footer {
