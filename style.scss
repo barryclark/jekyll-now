@@ -283,10 +283,17 @@ nav {
   }
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+// .wrapper-footer {
+//   margin-top: 50px;
+//   border-top: 1px solid #ddd;
+//   border-bottom: 1px solid #ddd;
+// }
+
+.wrapper-footer{
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
 }
 
 footer {
