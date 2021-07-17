@@ -132,16 +132,16 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: #C9D8B6;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: #C9D8B6;
   background: #C9D8B6;
 }
 ::selection {
-  color: $black;
+  color: #C9D8B6;
   background: #C9D8B6;
 }
 
@@ -272,7 +272,7 @@ nav {
     margin: 1.8em .8em;
     border-left: 2px solid #C9D8B6;
     padding: 0.1em 1em;
-    color: $gray;
+    color: #C9D8B6;
     font-size: 22px;
     font-style: italic;
   }
