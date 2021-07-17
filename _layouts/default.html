@@ -22,15 +22,19 @@
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <p class="site-description">
+              {{ site.description }}
+            </p>
+            <p class="site-name">
+              By {{ site.name }}
+            </p>
           </div>
 
           <nav>
             {% for item in site.data.navigation %}
-            
+
                 {% capture url %}{{ site.baseurl }}{{ item.link }}{% endcapture %}
-                
+
                 <a href="{{ url }}"{% if page.url == url %}style="font-weight: bold;"{% endif %}>
                     {{ item.name }}
                 </a>

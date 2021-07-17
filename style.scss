@@ -49,6 +49,9 @@ h1 {
   a {
     color: inherit;
   }
+  @include mobile {
+    font-size: 25px;
+  }
 }
 
 h2 {
@@ -56,15 +59,24 @@ h2 {
   a {
     color: inherit;
   }
+  @include mobile {
+    font-size: 20px;
+  }
 }
 
 h3 {
   font-size: 20px;
 }
+@include mobile {
+  font-size: 16px;
+}
 
 h4 {
   font-size: 18px;
   color: $gray;
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 p {
@@ -199,22 +211,21 @@ img {
 }
 
 .site-name {
-  margin: 0;
+  margin: 2px;
   color: $darkGray;
-  cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: 0px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 28px;
 
   @include mobile {
-    margin: 3px 0;
+    margin: 1px 0;
   }
 }
 
@@ -267,6 +278,10 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 
   .comments {
@@ -276,6 +291,36 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  .entry {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @include mobile {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .img {
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+    }
+
+    @include mobile {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
   }
 }
 

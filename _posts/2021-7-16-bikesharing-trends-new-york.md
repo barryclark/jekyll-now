@@ -2,6 +2,10 @@
 layout: post
 title: This is how the bike-sharing trends in New York look like
 tags: [prophet, time-series-analysis]
+image:
+  feature:
+  teaser: blog/bikesharing-trends-new-york/model.png
+  thumb:
 ---
 
 Bike-sharing is marketed as a means of transportation that is cheaper than taxis or subway passes, saves time when going crosstown, gives a healthy dose of exercise, and is good for the environment. All those benefits are just plain facts. What I wanted to know is whether people do find it convenient and like to use it?
