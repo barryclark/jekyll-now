@@ -209,14 +209,14 @@ img {
   cursor: pointer;
   font-family: "Cormorant Garamond";
   font-weight: 300;
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Nunito";
 
   @include mobile {
