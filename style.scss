@@ -13,13 +13,23 @@
 /* BASE RULES */
 /**************/
 
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/fonts/CormorantGaramond.ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito.ttf");
+}
+
 html {
   font-size: 100%;
 }
 
 body {
 	background: $white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Nunito";
   color: $darkGray;
 }
 
@@ -32,7 +42,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Cormorant Garamond";
   color: $darkerGray;
   font-weight: bold;
 
@@ -214,7 +224,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Cormorant Garamond";
   font-size: 18px;
 
   @include mobile {
