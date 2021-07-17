@@ -1,6 +1,6 @@
 ---
 published: true
-title: 'Paintings Album Release - August, 2021'
+title: 'Paintings Album Release - July 16, 2021'
 ---
 ![Paintings Album]({{taylorjhawkins.com}}/images/paintings-album.png)
 
