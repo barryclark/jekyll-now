@@ -289,8 +289,15 @@ nav {
 //   border-bottom: 1px solid #ddd;
 // }
 
-.wrapper-footer{
+.wrapper-footer-fixed{
   position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.wrapper-footer{
+  position: inherit;
   bottom: 0;
   text-align: center;
   width: 100%;
