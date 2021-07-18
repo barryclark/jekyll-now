@@ -5,9 +5,9 @@ title: What makes a great test?
 
 Ideally tests would be fast, reliable, easy to own, easy to maintain, etc. Let's make a list that we can use when creating, improving, or evaluating our tests.
 
-| Name | Definition | Notes |
-|-|-|
-| Fast          | At least 1000 test cases per second per CPU core.                     | No network, no disk, no sleeping. |
+| Name          | Definition                                                            | Notes                                          |
+|---------------|-----------------------------------------------------------------------|------------------------------------------------|
+| Fast          | At least 1000 test cases per second per CPU core.                     | No network, no disk, no sleeping.              |
 | Reliable      | Multiple runs with no changes always give the same results            | No network, no race conditions, no system prerequisites. |
 | Independent   | Can run any 2 tests at the same time with no interference             | Order independent, leaves system unchanged. |
 | Diagnosable   | When a test fails, it is immediately obvious why                      | Tests are well-named and specific; assertions are rich and informative. |
@@ -19,6 +19,6 @@ Ideally tests would be fast, reliable, easy to own, easy to maintain, etc. Let's
 | Relevant | A passing test indicates that something of business value is correct and present in the system. A failing test tells us that something of business value is missing or broken. | |
 | Easy to write | The test framework and tooling and language and norms all make it easy to create a new test without a lot of rigamarole. |
 
-You may notice a lot of overlap with "FIRST-ness".
+(You may notice a lot of overlap with "FIRST-ness".)
 
 
