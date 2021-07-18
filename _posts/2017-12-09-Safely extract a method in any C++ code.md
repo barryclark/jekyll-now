@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Safely extract a method in any C++ code
+title: Safely extract a function in any C++ code
 ---
+
+Given arbitrarily-complex C++ code with incomplete test coverage (aka The Real World) how can you extract a function, without relying on complete understanding or complete test coverage to ensure correctness of the refactoring?
 
 ([Reposted](https://jbazuzicode.blogspot.com/2017/02/safely-extract-method-in-any-c-code.html) to improve formatting).
 
