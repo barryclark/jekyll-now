@@ -48,7 +48,7 @@ Here's a couple of thoughts to start practicing with Koans.
 
 ## How to approach koans?
 
-> Koans are not riddles or puzzles whose trick is in their clever and obscure wording. They are the clearest possible expression of perennial facts which students grasp with focused medication and guidance. - ([Aitken, 1990](#aitken1990))
+> Koans are not riddles or puzzles whose trick is in their clever and obscure wording. They are the clearest possible expression of perennial facts which students grasp with focused meditation and guidance. - ([Aitken, 1990](#aitken1990))
 
 > What the koan proposes to do is to develop artificially or systematically in the consciousness of the Zen follower what the early masters produced in themselves spontaneously. - ([Suzuki, 1962](#suzuki1962)), ch IV.2
 

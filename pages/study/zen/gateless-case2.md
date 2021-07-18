@@ -143,12 +143,14 @@ If we were to pick between the view of gradual enlightenment and the view of sud
 Why did old Paichang have to wait for such a long time, go through so many lives, to ultimately be suddenly enlightened? Isn't that ironic?
 
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
->
+
+Could you really do that? Answer correctly to this hard question even the very first time you're being asked? Is answering wrongly a natural step for someone on the path to enlightenment?
+
 > Paichang said, "Just step here closer, and I'll tell you." Huang-po went up to Paichang and __slapped him in the face__.
 
-We want Paichang to be true when he says _"such a person does not evade"_ karmic law. That should be the good answer to the question, according to this account, right? But Paichang seems as wrong as Old Paichang. Because of that, Paichang gets a slap in the face.
+Can Paichang's answer - _"such a person does not evade"_ karmic law - be considered "true" if the fruit of that answer is to get slapped in the face?
 
-So, Sudden enlightenment is not more true, as a view, than gradual? (_a thousand mistakes, ten thousand mistakes_?)
+Is Sudden enlightenment, as a view, not "more true" than gradual? (_a thousand mistakes, ten thousand mistakes_?)
 
 If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. Could sudden enlightenment be "less wrong" than gradual enlightenment?
 
