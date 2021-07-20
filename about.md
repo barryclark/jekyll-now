@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Welcome to my technical blog. I created this blog to record my learning of computer science knowledge. If you have any questions or want to discuss with me , please email me.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[laifukun@gmail.com](mailto:laifukun@gmail.com)
