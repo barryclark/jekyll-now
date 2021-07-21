@@ -34,7 +34,7 @@ Created with: Google apps script, plotly studio
 
 Using a tool called [flowmap.blue](https://flowmap.blue) I was able to quickly visualize multiple years of docked bicycle data. It is featured on [flowmap.blue's examples page.](https://flowmap.blue/#examples) 
 
-[Link to the interactive](https://flowmap.blue/11odTn4_kytEo2O9LxAXGbZspXM_OLFsX__mpxRAvAOc/5f18087)
+[Link to the interactive](https://flowmap.blue/1SCmQHSfvgYhPz5VFzg5LBtqY3OSfHzTutKkpneWVL4Q)
 
 Created with: Python, Google sheets
 
