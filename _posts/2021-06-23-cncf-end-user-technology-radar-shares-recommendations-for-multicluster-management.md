@@ -4,7 +4,7 @@ title: "Developer Advocacy and Open source - Podcast #30 with alphalist.CTO"
 description: "Cheryl Hung, VP Ecosystem at CNCF, discusses cloud native on alphalist.CTO"
 image: https://images.podigee-cdn.net/400x,sLfBcS686NxVEHD_7tZRKqrRHZNMB8gBKZqRBrXEwfUc=/https://cdn.podigee.com/uploads/u15933/a32b95b0-833d-4dc2-9812-56b2199df231.png
 tags:
-  - Article
+  - Podcast
   - "2021"
 ---
 
