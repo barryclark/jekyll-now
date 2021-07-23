@@ -8,7 +8,7 @@ tags:
   - "2021"
 ---
 
-Check out the podcast on (Podigee)[https://alphalist.podigee.io/30-cheryl-hung-cloud-native-computing-foundation] || (Apple) https://podcasts.apple.com/podcast/id1512227295 || (Spotify) https://open.spotify.com/show/08QvFNH32V1yRiwfNQhTYx || (Deezer) https://www.deezer.com/show/1202312.
+Check out the podcast on [Podigee](https://alphalist.podigee.io/30-cheryl-hung-cloud-native-computing-foundation), [Apple](https://podcasts.apple.com/podcast/id1512227295), [Spotify](https://open.spotify.com/show/08QvFNH32V1yRiwfNQhTYx), or [Deezer](https://www.deezer.com/show/1202312).
 
 Thank you Tobias for the invitation! In this podcast we discuss the following questions/topics:
 
