@@ -1,20 +1,19 @@
 ---
 layout: post
-title: "CNCF End User Technology Radar shares recommendations for multicluster management, ITOps Times"
-description: "Cheryl Hung, VP Ecosystem at CNCF, discusses the CNCF Tech Radar June 2021 on Multi Cluster Management with ITOpsTimes"
-image: /images/2021-06-23-cncf-end-user-technology-radar-shares-recommendations-for-multicluster-management.png
+title: "Developer Advocacy and Open source - Podcast #30 with alphalist.CTO"
+description: "Cheryl Hung, VP Ecosystem at CNCF, discusses cloud native on alphalist.CTO"
+image: https://images.podigee-cdn.net/400x,sLfBcS686NxVEHD_7tZRKqrRHZNMB8gBKZqRBrXEwfUc=/https://cdn.podigee.com/uploads/u15933/a32b95b0-833d-4dc2-9812-56b2199df231.png
 tags:
   - Article
   - "2021"
 ---
 
-[CNCF End User Technology Radar shares recommendations for multicluster management, ITOps Times](https://www.itopstimes.com/contain/cncf-end-user-technology-radar-shares-recommendations-for-mutlicluster-management/)
+Check out the podcast on (Podigee)[https://alphalist.podigee.io/30-cheryl-hung-cloud-native-computing-foundation] || (Apple) https://podcasts.apple.com/podcast/id1512227295 || (Spotify) https://open.spotify.com/show/08QvFNH32V1yRiwfNQhTYx || (Deezer) https://www.deezer.com/show/1202312.
 
->The Cloud Native Computing Foundation (CNCF) is trying to make it easier for companies to choose a multicluster management solution for their environments with the release of its fifth CNCF End User Technology Radar. The radar is a guide to emerging technologies that are chosen based on feedback from the CNCF End User Community.
->
->According to the CNCF, distributed and multi-cloud deployments have benefits like improved availability, reduced latency, and scalability, but also increases complexity because each cluster has to be individually deployed and managed.
->
->The CNCF End User Technology Radar for multicluster management is divided into two categories: 1) cluster deployment, and 2) core services and add-ons. This is intended to differentiate between tools used for deployment and management. Each sub-category is further divided into tools to Adopt, Trial, or Assess.
+Thank you Tobias for the invitation! In this podcast we discuss the following questions/topics:
 
-
-[Read more: CNCF End User Technology Radar shares recommendations for multicluster management, ITOps Times](https://www.itopstimes.com/contain/cncf-end-user-technology-radar-shares-recommendations-for-mutlicluster-management/)
+* The importance of Developer Advocacy 👩‍💻
+* How #edgecomputing is the next frontier in #cloudnative ☁️
+* Why #kubernetes is not for everyone and has to become easier
+* Why End-User companies should contribute to the #opensource 🆓
+* Her childhood dream of becoming a Google Engineer and where she is holding with it!
