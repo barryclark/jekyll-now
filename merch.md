@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Merch
+permalink: /merch/
 published: true
 ---
 
