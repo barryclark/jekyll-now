@@ -18,18 +18,68 @@
    </teiHeader>
    <text>
       <body>
-         <lg>
-            <head>Eggs</head>
-            <l>Let's think of <seg ana="eggs">eggs</seg></l>
-            <l>They have no legs</l>
-            <l><seg ana="chickens">Chickens</seg> come from <seg ana="eggs">eggs</seg>,</l>
-            <l>But they have legs.</l>
-            <l>The plot thickens—</l>
-            <l><seg ana="eggs">Eggs</seg> come from <seg ana="chickens">chickens</seg></l>
-            <l>But have no legs under 'em:</l>
-            <l>What a conundrum!</l>
-            <byline>Ogden Nash</byline>
-         </lg>
+         <div>
+            <head>Nonsense Poetry</head>
+            <div>
+               <head>Eggs</head>
+               <byline>Ogden Nash</byline>
+               <lg>
+                  <l>Let's think of <seg ana="eggs">eggs</seg></l>
+                  <l>They have no legs</l>
+                  <l><seg ana="chickens">Chickens</seg> come from <seg ana="eggs">eggs</seg>,</l>
+                  <l>But they have legs.</l>
+                  <l>The plot thickens—</l>
+                  <l><seg ana="eggs">Eggs</seg> come from <seg ana="chickens">chickens</seg></l>
+                  <l>But have no legs under 'em:</l>
+                  <l>What a conundrum!</l>
+               </lg>
+            </div>
+            <div>
+               <head>The Owl and the Pussycat</head>
+               <byline>Edward Lear</byline>
+               <lg>
+                  <l>The owl and the pussycat went to sea</l>
+                  <l>In a beautiful pea-green boat</l>
+                  <l>They took some money</l>
+                  <l>And plenty of honey</l>
+                  <l>Wrapped up in a five-pound note</l>
+                  <l>The owl looked up at the stars above</l>
+                  <l>And sang to a small <seg xml:id="n001">guitar</seg>,</l>
+                   <note target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</note>
+                  <l>O Lovely Pussy! O Pussy my love!</l>
+                  <l>What a beautiful pussy you are</l>
+                  <l>You are, you are,</l>
+                  <l>What a beautiful pussy you are!</l>
+               </lg>
+               <lg>
+                  <l>Pussy said to the owl,</l>
+                  <l>You elegant fowl!</l>
+                  <l>How marvellous sweet you sing!</l>
+                  <l>O let us be married,</l>
+                  <l>Too long we have tarried!</l>
+                  <l>But what shall we do for a ring?</l>
+                  <l>So they sailed away for a year and a day</l>
+                  <l>To the land where the Bong-tree grows,</l>
+                  <l>And there in a wood, a Piggy-wig stood</l>
+                  <l>With a ring in the end of his nose,</l>
+                  <l>His nose, his nose,</l>
+                  <l>With a ring in the end of his nose.</l>
+               </lg>
+               <lg>
+                  <l>O Pig, are you willing</l>
+                  <l>To sell for one shilling</l>
+                  <l>Your ring? Said the piggy, <said>I will!</said></l>
+                  <l>So they bore it away, and were married next day</l>
+                  <l>By the turkey who lives on the hill.</l>
+                  <l>They dined on quince, and plenty of mince,</l>
+                  <l>Served up with a runcible spoon,</l>
+                  <l>And hand in hand, by the edge of the sand,</l>
+                  <l>They danced by the light of the moon—</l>
+                  <l>The moon, the moon—</l>
+                  <l>They danced by the light of the moon.</l>
+               </lg>
+            </div>
+         </div>
       </body>
    </text>
 </TEI>

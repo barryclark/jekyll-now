@@ -353,9 +353,12 @@ tei-div.textpart {
 tei-div > tei-head {
   font-size: 170%;
   text-indent: -0.5em;
+  font-weight: 200;
 }
 tei-div > tei-div > tei-head {
   font-size: 155%;
+  font-style:italic;
+  color: blue;
 }
 tei-div > tei-div > tei-div > tei-head {
   font-size: 140%;
