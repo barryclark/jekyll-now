@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Let's Think of Eggs</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Test document, unpublished</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <lg>
+            <head>Eggs</head>
+            <l>Let's think of <seg ana="eggs">eggs</seg></l>
+            <l>They have no legs</l>
+            <l><seg ana="chickens">Chickens</seg> come from <seg ana="eggs">eggs</seg>,</l>
+            <l>But they have legs.</l>
+            <l>The plot thickens—</l>
+            <l><seg ana="eggs">Eggs</seg> come from <seg ana="chickens">chickens</seg></l>
+            <l>But have no legs under 'em:</l>
+            <l>What a conundrum!</l>
+            <byline>Ogden Nash</byline>
+         </lg>
+      </body>
+   </text>
+</TEI>
