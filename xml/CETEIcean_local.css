@@ -748,8 +748,18 @@ tei-seg {
   font-style:italic;
 }
 
-seg[ana="theme1"] {
+tei-seg[ana="theme1"] {
     color:red;    
+}
+
+tei-seg[ana="theme2"] {
+    color:aqua;    
+}
+tei-seg[ana="theme3"] {
+    color:purple;    
+}
+tei-seg[ana="theme4"] {
+    color:orange;    
 }
 
 tei-sense {
