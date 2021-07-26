@@ -558,6 +558,17 @@ tei-musicNotation:before {
 tei-node {
   display: none;
 }
+tei-note {
+  display: block;
+  color:red;
+  border:thin black solid;
+  position:absolute;
+  right:10px;
+  left:75%;
+  top:0;
+  
+}
+
 tei-notesstmt {
   display: none;
 }
@@ -734,8 +745,13 @@ tei-secl>*:last-child:after {
   white-space: pre;
 }
 tei-seg {
-  outline: 0px solid transparent;
+  font-style:italic;
 }
+
+seg[ana="theme1"] {
+    color:red;    
+}
+
 tei-sense {
   display: block;
   margin-top: 0;
