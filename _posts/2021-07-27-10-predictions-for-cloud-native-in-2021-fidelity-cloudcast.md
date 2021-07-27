@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "10 predictions for cloud native in 2021 - Keynote, The DevOps Conference"
+title: "10 predictions for cloud native in 2021 - Fidelity CloudCast"
 description: "Cheryl Hung, VP Ecosystem at CNCF, points out 10 trends to look forward to in cloud native"
 image: /images/2021-03-23-10-predictions-for-cloud-native-in-2021-the-devops-conference.png
-slides: //www.slideshare.net/slideshow/embed_code/key/1JPhHwM5lae2bJ
-video: https://www.youtube-nocookie.com/embed/SOvYJEzGyLw
+slides: //www.slideshare.net/slideshow/embed_code/key/b7xQmvZaRjM0bT
 tags:
   - Video
   - Slides
@@ -29,4 +28,4 @@ From inside CNCF I have a unique insight into cloud native tech, DevOps and ecos
 1. Service mesh consolidation
 1. [End user driven open source](http://radar.cncf.io)
 
-Cloud native deployments are getting bigger and more complex, and so you need to stay on top of the latest developments. The best way to do so is to meet the practitioners and community at [KubeCon + CloudNativeCon Virtual EU, May 4-7](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/). See you there!
+Thank you Fidelity CloudCast for inviting me to share my view on the where cloud native is today and where it's going next.
