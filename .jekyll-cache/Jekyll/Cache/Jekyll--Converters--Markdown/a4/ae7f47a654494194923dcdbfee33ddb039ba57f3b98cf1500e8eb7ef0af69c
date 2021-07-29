@@ -1,0 +1,44 @@
+I"�<p>We were recently discussing within the team how to enrich our customer experience during long wait times in our <a href="https://www.twilio.com/flex">Twilio Flex</a> cloud contact centre. A few Ideas came to mind.</p>
+
+<p>Hold Music? Yeah that’s cool, but not everybody has the same tastes, maybe we could allow the customer to choose their preferred genre of music (check back again soon for that!).</p>
+
+<p>Play an article or podcast episode to a customer? Again, a great idea but what about if the customer absolutely hates what we have to offer? Also, I’m not sure an episode of your favourite podcast would sound the same when using <a href="https://support.twilio.com/hc/en-us/articles/223180588-Best-Practices-for-Audio-Recordings">Twilio’s best practices for audio recording</a></p>
+
+<p>We decided in the end on plain and simple hold music, of the most non offensive generic  kind so to please and upset our captive audience in equal measures…</p>
+
+<p>However, during the discussion I tabled the idea of giving the user the choice to play a simple quiz while holding on to service their boring insurance policy? Is that even possible with Twilio? Lets find out…</p>
+
+<p><img src="https://i.pinimg.com/736x/b5/73/29/b57329122ba8ed572341a88101392488.jpg" alt="music meme | Dudes be like, Funny meme pictures, Studio" />
+First things first, we need give our customer the option to either wait on hold or play our quiz game, this is pretty simple to achieve with <a href="https://www.twilio.com/studio">Twilio Studio</a>.</p>
+
+<p>Firstly lets add our “Gather Input on Call” widget to let the customer know they will be facing a wait and give them the option:
+//image
+now we can connect our 2 split widgets to split based on if the user pressed a key or said that they did want to play, using</p>
+
+<p><code class="language-plaintext highlighter-rouge">widgets.play_game_question.Digits</code></p>
+
+<p>for key press, or</p>
+
+<p>widgets.play_game_question.SpeechResult</p>
+
+<p>for speech
+//image</p>
+
+<p>After this, you can send the call to an agent in flex and even introduce the game as I have using the “Say/Play” widget, should you want to:
+//image</p>
+
+<p>//Question meme</p>
+
+<p>Now for the fun part… getting the questions together and in a format that the customer can interact with… my tools of choice for this? <a href="https://www.twilio.com/docs/runtime/functions">Twilio Serverless Functions</a> and <a href="https://www.twilio.com/docs/voice/twiml">TwiML</a>.</p>
+
+<p>Firstly I found a great API that would provide me trivia questions, with answers… props to <a href="https://opentdb.com/">Open Trivia DB</a>. After this, I got to work creating a serverless function that would fetch questions from the API and generate the the TwiML to read it to the person on the phone and gather the answer. Here’s the code I used:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>enter code here for function Secondly, I created the function that is called by the "Gather" TwiML that asks the question, here's the code I used for that:
+
+enter code here The finial part of the puzzle is to take the url for our questions function and add it as a "HOLD MUSIC TWIML URL" to our widget that sends the call to flex from our studio flow //Image
+</code></pre></div></div>
+
+<p>And now we have a fully functioning quiz game that can be used instead of listening to that generic hold music that we all hate. Great, right?</p>
+
+<p>Full code can be found here, hope you enjoyed reading!</p>
+:ET

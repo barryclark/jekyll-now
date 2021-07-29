@@ -6,7 +6,7 @@
 name: Jordan Hanley
 
 # Short bio or description (displayed in the header)
-description: Web Developer
+description: Web Application Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://eu.ui-avatars.com/api/?name=Jordan+Hanley
@@ -37,7 +37,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: G-61RDLKW0KM
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
