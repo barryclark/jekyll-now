@@ -1,0 +1,88 @@
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  {% if page.title %}
+    <meta content="article" property="og:type">
+  {% else %}
+    <meta content="website" property="og:type">
+  {% endif %}
+  {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+    <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+  {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {% endif %}
+  {% if page.date %}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    <meta content="{{ site.url }}/about/" property="article:author">
+  {% endif %}
+  {% if page.img %}
+    <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}" property="og:image">
+  {% else %}
+    <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.author-img }}" property="og:image">
+  {% endif %}
+  {% if page.categories %}
+    {% for category in page.categories limit:1 %}
+    <meta content="{{ category }}" property="article:section">
+    {% endfor %}
+  {% endif %}
+  {% if page.tags %}
+    {% for tag in page.tags %}
+    <meta content="{{ tag }}" property="article:tag">
+    {% endfor %}
+  {% endif %}
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ site.site-twitter }}">
+    <meta name="twitter:creator" content="@{{ site.social-twitter }}">
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}">
+  {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+  {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% endif %}
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+    <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+  {% if page.img %}
+    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}">
+  {% else %}
+    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.author-img }}">
+  {% endif %}
+
+	<meta name="description" content="{{ page.description }}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="{{ "/assets/img/favicon/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+	<link rel="apple-touch-icon" href="{{ "/assets/img/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/img/favicon/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ "/assets/img/favicon/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{{ "/assets/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+	<!-- Styles -->
+	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+</head>

@@ -1,0 +1,21 @@
+<div class="container">
+  <nav class="pagination" role="pagination">
+    <ul>
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <p><a class="newer-posts" href="{{ site.baseurl }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></p>
+        {% else %}
+        <p><a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></p>
+        {% endif %}
+      {% endif %}
+
+      {% if paginator.total_pages > 1 %}
+      <p><span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span></p>
+      {% endif %}
+      
+      {% if paginator.next_page %}
+      <p><a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+      {% endif %}
+    </ul>
+  </nav>
+</div>
