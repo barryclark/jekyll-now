@@ -128,7 +128,7 @@ exports.handler = async function(context, event, callback) {
   }
 };
 ```
-Secondly, I created the function that is referenced by the "Gather" TwiML we made above, here's the code I used for that:
+Now we can create the function that is referenced by the "Gather" TwiML we made above, here's the code I used for that:
 
 ```
 exports.handler = function(context, event, callback) {
