@@ -8,11 +8,11 @@ fig-caption: # Add figcaption (optional)
 tags: [Twilio, Javascript]
 ---
 
-We were recently discussing within the team how to reduce customer frustration during long wait times in our [Twilio Flex](https://www.twilio.com/flex) powered contact centre. A few Ideas came to mind. 
+We were recently discussing within the team how to reduce customer frustration during long wait times in our [Twilio Flex](https://www.twilio.com/flex){:target="_blank"} powered contact centre. A few Ideas came to mind. 
 
 Hold Music? Yeah that's cool, but not everybody has the same tastes, maybe we could allow the customer to choose their preferred genre of music?.
 
-Play an article or podcast episode to a customer? Again, a great idea but what if the customer absolutely hates what we have to offer? Also, I'm not sure an episode of your favourite podcast would sound the same when using [Twilio's best practices for audio recording](https://support.twilio.com/hc/en-us/articles/223180588-Best-Practices-for-Audio-Recordings)
+Play an article or podcast episode to a customer? Again, a great idea but what if the customer absolutely hates what we have to offer? Also, I'm not sure an episode of your favourite podcast would sound the same when using [Twilio's best practices for audio recording](https://support.twilio.com/hc/en-us/articles/223180588-Best-Practices-for-Audio-Recordings){:target="_blank"}
 
 We decided in the end on plain and simple hold music, of the most non offensive generic  kind so to please and upset our captive audience in equal measures...
 
@@ -20,13 +20,13 @@ However, during the discussion I tabled the idea of giving the user the choice t
 
 ---
 
-![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/studio_meme.png)
+![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/studio_meme.png){:target="_blank"}
 
-First things first, we need give our customer the option to either wait on hold or play our quiz game, this is pretty simple to achieve with [Twilio Studio](https://www.twilio.com/studio). 
+First things first, we need give our customer the option to either wait on hold or play our quiz game, this is pretty simple to achieve with [Twilio Studio](https://www.twilio.com/studio){:target="_blank"}. 
 
 Lets add our "Gather Input on Call" widget to let the customer know they will be facing a wait and give them the option:
 
-![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/gather_widget.png)
+![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/gather_widget.png){:target="_blank"}
 
 now we can connect our 2 split widgets to split based on if the user pressed a key or said that they did want to play, using
 ```
@@ -37,17 +37,17 @@ for key press, or for speech its
 widgets.play_game_question.SpeechResult
 ```
 
-![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/split_widget.png)
+![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/split_widget.png){:target="_blank"}
 
 After this, you can send the call to an agent in flex with the quiz enabled, or disabled depending on the users choice:
 
-![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/send_to_flex_widget.png)
+![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/send_to_flex_widget.png){:target="_blank"}
 
 ---
 
 ![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/questions_meme.png)
 
-Now for the fun part... getting the questions together and in a format that the caller can interact with... my tools of choice for this? [Twilio Serverless Functions](https://www.twilio.com/docs/runtime/functions),  [TwiML](https://www.twilio.com/docs/voice/twiml) and an awesome API I found [Open Trivia DB](https://opentdb.com/).
+Now for the fun part... getting the questions together and in a format that the caller can interact with... my tools of choice for this? [Twilio Serverless Functions](https://www.twilio.com/docs/runtime/functions){:target="_blank"},  [TwiML](https://www.twilio.com/docs/voice/twiml){:target="_blank"} and an awesome API I found [Open Trivia DB](https://opentdb.com/){:target="_blank"}.
 
 We can get to work creating a serverless function that would fetch questions from the API and generate the the TwiML to read it to the person on the phone and gather the answer. Here's the code I used:
 ```
@@ -158,8 +158,8 @@ exports.handler = function(context, event, callback) {
 
 The finial part of the puzzle is to take the url for our questions function and add it as a "HOLD MUSIC TWIML URL" to our widget that sends the call to flex from our studio flow, this will mean that the quiz continues to play until the call is answered by an agent
 
-![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/hold_music.png)
+![_config.yml]({{ site.baseurl }}/assets/img/twilio-quiz/hold_music.png){:target="_blank"}
 
 And there we have it, a fully functioning quiz game that can be used instead of listening to that generic hold music that we all hate. Great, right?
 
-Full code can be found [here](https://github.com/jords1987/twilio-quiz), hope you enjoyed reading!
+Full code can be found [here](https://github.com/jords1987/twilio-quiz){:target="_blank"}, hope you enjoyed reading!
