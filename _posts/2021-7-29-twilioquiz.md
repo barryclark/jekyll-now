@@ -115,7 +115,7 @@ exports.handler = async function(context, event, callback) {
       response.say('Next Question');
     }
     //Now we loop around the function to get the next 10 questions
-    response.redirect('https://testfacebookfunctions-2019.twil.io/question');
+    response.redirect('`https://${context.DOMAIN_NAME}/questions`');
 
     // This callback is what is returned in response to this function being invoked.
     // It's really important! E.g. you might respond with TWiML here for a voice or SMS response.

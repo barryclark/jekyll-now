@@ -1,6 +1,6 @@
-I"0<p>We were recently discussing within the team how to reduce customer frustration during long wait times in our <a href="https://www.twilio.com/flex">Twilio Flex</a> powered contact centre. A few Ideas came to mind.</p>
+I"7<p>We were recently discussing within the team how to reduce customer frustration during long wait times in our <a href="https://www.twilio.com/flex">Twilio Flex</a> powered contact centre. A few Ideas came to mind.</p>
 
-<p>Hold Music? Yeah that’s cool, but not everybody has the same tastes, maybe we could allow the customer to choose their preferred genre of music (check back again soon for that!).</p>
+<p>Hold Music? Yeah that’s cool, but not everybody has the same tastes, maybe we could allow the customer to choose their preferred genre of music?.</p>
 
 <p>Play an article or podcast episode to a customer? Again, a great idea but what if the customer absolutely hates what we have to offer? Also, I’m not sure an episode of your favourite podcast would sound the same when using <a href="https://support.twilio.com/hc/en-us/articles/223180588-Best-Practices-for-Audio-Recordings">Twilio’s best practices for audio recording</a></p>
 
@@ -14,21 +14,20 @@
 
 <p>First things first, we need give our customer the option to either wait on hold or play our quiz game, this is pretty simple to achieve with <a href="https://www.twilio.com/studio">Twilio Studio</a>.</p>
 
-<p>Firstly lets add our “Gather Input on Call” widget to let the customer know they will be facing a wait and give them the option:</p>
+<p>Lets add our “Gather Input on Call” widget to let the customer know they will be facing a wait and give them the option:</p>
 
 <p><img src="/images/twilio-quiz/gather_widget.png" alt="_config.yml" /></p>
 
 <p>now we can connect our 2 split widgets to split based on if the user pressed a key or said that they did want to play, using</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>widgets.play_game_question.Digits
 </code></pre></div></div>
-<p>for key press, or</p>
+<p>for key press, or for speech its</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>widgets.play_game_question.SpeechResult
 </code></pre></div></div>
-<p>for speech</p>
 
 <p><img src="/images/twilio-quiz/split_widget.png" alt="_config.yml" /></p>
 
-<p>After this, you can send the call to an agent in flex and even introduce the game as I have using the “Say/Play” widget, should you want to:</p>
+<p>After this, you can send the call to an agent in flex with the quiz enabled, or disabled depending on the users choice:</p>
 
 <p><img src="/images/twilio-quiz/send_to_flex_widget.png" alt="_config.yml" /></p>
 
@@ -36,9 +35,9 @@
 
 <p><img src="/images/twilio-quiz/questions_meme.png" alt="_config.yml" /></p>
 
-<p>Now for the fun part… getting the questions together and in a format that the customer can interact with… my tools of choice for this? <a href="https://www.twilio.com/docs/runtime/functions">Twilio Serverless Functions</a>,  <a href="https://www.twilio.com/docs/voice/twiml">TwiML</a> and an awesome API I found <a href="https://opentdb.com/">Open Trivia DB</a>.</p>
+<p>Now for the fun part… getting the questions together and in a format that the caller can interact with… my tools of choice for this? <a href="https://www.twilio.com/docs/runtime/functions">Twilio Serverless Functions</a>,  <a href="https://www.twilio.com/docs/voice/twiml">TwiML</a> and an awesome API I found <a href="https://opentdb.com/">Open Trivia DB</a>.</p>
 
-<p>After this, I got to work creating a serverless function that would fetch questions from the API and generate the the TwiML to read it to the person on the phone and gather the answer. Here’s the code I used:</p>
+<p>We can get to work creating a serverless function that would fetch questions from the API and generate the the TwiML to read it to the person on the phone and gather the answer. Here’s the code I used:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// This is your new function. To start, set the name and path on the left.
 const fetch = require("node-fetch");
 const VoiceResponse = require('twilio').twiml.VoiceResponse;
@@ -121,7 +120,7 @@ exports.handler = async function(context, event, callback) {
   }
 };
 </code></pre></div></div>
-<p>Secondly, I created the function that is referenced by the “Gather” TwiML we made above, here’s the code I used for that:</p>
+<p>Now we can create the function that is referenced by the “Gather” TwiML we made above, here’s the code I used for that:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exports.handler = function(context, event, callback) {
   // Here's an example of setting up some TWiML to respond to with this function
@@ -143,7 +142,7 @@ exports.handler = async function(context, event, callback) {
 };
 </code></pre></div></div>
 
-<p>The finial part of the puzzle is to take the url for our questions function and add it as a “HOLD MUSIC TWIML URL” to our widget that sends the call to flex from our studio flow</p>
+<p>The finial part of the puzzle is to take the url for our questions function and add it as a “HOLD MUSIC TWIML URL” to our widget that sends the call to flex from our studio flow, this will mean that the quiz continues to play until the call is answered by an agent</p>
 
 <p><img src="/images/twilio-quiz/hold_music.png" alt="_config.yml" /></p>
 
