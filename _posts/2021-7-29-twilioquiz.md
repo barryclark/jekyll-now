@@ -151,7 +151,7 @@ exports.handler = function(context, event, callback) {
 };
 ```
 
-The finial part of the puzzle is to take the url for our questions function and add it as a "HOLD MUSIC TWIML URL" to our widget that sends the call to flex from our studio flow
+The finial part of the puzzle is to take the url for our questions function and add it as a "HOLD MUSIC TWIML URL" to our widget that sends the call to flex from our studio flow, this will mean that the quiz continues to play until the call is answered by an agent
 
 ![_config.yml]({{ site.baseurl }}/images/twilio-quiz/hold_music.png)
 
