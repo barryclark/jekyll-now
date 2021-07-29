@@ -14,8 +14,8 @@ Only need to do these steps once.
 `echo 'eval "$(rbenv init -)"' >> ~/.bash_profile`  
 `source ~/.bash_profile`
 1. **Ruby 2.5.7**  
-`rbenv install 2.5.7`  
-`rbenv global 2.5.7`
+`rbenv install 3.0.2`  
+`rbenv global 3.0.2`
 1. **Bundler**  
 `gem install bundler`
 
