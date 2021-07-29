@@ -5,7 +5,7 @@ title: Hold on... you can do that?
 
 We were recently discussing within the team how to reduce customer frustration during long wait times in our [Twilio Flex](https://www.twilio.com/flex) powered contact centre. A few Ideas came to mind. 
 
-Hold Music? Yeah that's cool, but not everybody has the same tastes, maybe we could allow the customer to choose their preferred genre of music (check back again soon for that!).
+Hold Music? Yeah that's cool, but not everybody has the same tastes, maybe we could allow the customer to choose their preferred genre of music?.
 
 Play an article or podcast episode to a customer? Again, a great idea but what if the customer absolutely hates what we have to offer? Also, I'm not sure an episode of your favourite podcast would sound the same when using [Twilio's best practices for audio recording](https://support.twilio.com/hc/en-us/articles/223180588-Best-Practices-for-Audio-Recordings)
 
@@ -19,7 +19,7 @@ However, during the discussion I tabled the idea of giving the user the choice t
 
 First things first, we need give our customer the option to either wait on hold or play our quiz game, this is pretty simple to achieve with [Twilio Studio](https://www.twilio.com/studio). 
 
-Firstly lets add our "Gather Input on Call" widget to let the customer know they will be facing a wait and give them the option:
+Lets add our "Gather Input on Call" widget to let the customer know they will be facing a wait and give them the option:
 
 ![_config.yml]({{ site.baseurl }}/images/twilio-quiz/gather_widget.png)
 
@@ -27,15 +27,14 @@ now we can connect our 2 split widgets to split based on if the user pressed a k
 ```
 widgets.play_game_question.Digits
 ```
-for key press, or 
+for key press, or for speech its
 ```
 widgets.play_game_question.SpeechResult
 ```
-for speech
 
 ![_config.yml]({{ site.baseurl }}/images/twilio-quiz/split_widget.png)
 
-After this, you can send the call to an agent in flex and even introduce the game as I have using the "Say/Play" widget, should you want to:
+After this, you can send the call to an agent in flex with the quiz enabled, or disabled depending on the users choice:
 
 ![_config.yml]({{ site.baseurl }}/images/twilio-quiz/send_to_flex_widget.png)
 
