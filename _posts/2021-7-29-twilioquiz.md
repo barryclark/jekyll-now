@@ -44,7 +44,7 @@ After this, you can send the call to an agent in flex with the quiz enabled, or 
 
 Now for the fun part... getting the questions together and in a format that the caller can interact with... my tools of choice for this? [Twilio Serverless Functions](https://www.twilio.com/docs/runtime/functions),  [TwiML](https://www.twilio.com/docs/voice/twiml) and an awesome API I found [Open Trivia DB](https://opentdb.com/).
 
-After this, I got to work creating a serverless function that would fetch questions from the API and generate the the TwiML to read it to the person on the phone and gather the answer. Here's the code I used:
+We can get to work creating a serverless function that would fetch questions from the API and generate the the TwiML to read it to the person on the phone and gather the answer. Here's the code I used:
 ```
 // This is your new function. To start, set the name and path on the left.
 const fetch = require("node-fetch");
