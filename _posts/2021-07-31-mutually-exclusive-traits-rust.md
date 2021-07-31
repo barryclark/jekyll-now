@@ -193,7 +193,7 @@ where T: LogTask<Level=Info> {
     }
 }
 ```
-We can use now send log messages with different levels to the `Logger` instance by using the general `Executor` interface like so
+Finally, we are able to send log messages with different levels to the `Logger` instance by using the general `Executor` interface:
 ```rust
 logger.handle(ErrorMessage("this is bad".to_string()));
 logger.handle(InfoMessage("fyi".to_string()));
@@ -201,7 +201,7 @@ logger.handle(InfoMessage("fyi".to_string()));
 [Try it on the Playround](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=501ceb37db04476813dd7499503f4d91) and be sure to check out RustyYato's [original answer](https://users.rust-lang.org/t/implementing-mutually-exclusive-traits-and-trait-bounds/62291/5).
 
 # Conclusion
-Getting mutually exclusive traits and blanket implementations working in Rust was a fun journey. We have to combine that fact that generic traits of different types are different traits *as well as* the fact that associated types can be used as mutually exclusive restrictions in trait bounds. Neither alone will do yet, but we can combine these facts to achieve the effect of mutually exclusive traits.
+Getting mutually exclusive traits and blanket implementations working in Rust was a fun journey. We have to combine the fact that generic traits of different types are different traits *as well as* the fact that associated types can be used as mutually exclusive restrictions in trait bounds. Neither alone will suffice at the time of writing.
 
 # Endnotes
 [^silly]: Again, this is a silly example. But it is self-contained and we'll eventually get to sweet, sweet generic programming. So disregard for now that we could just add another field to our logging message and decide what to do at runtime.
