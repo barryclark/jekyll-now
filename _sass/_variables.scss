@@ -3,27 +3,7 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
-$darkRed: #A70000;
-
-// Grays
-$black: #000;
-$darkerGray: rgb(133, 133, 133);
-$darkGray: rgb(163, 163, 163);
-$gray: rgb(165, 165, 165);
-$lightGray: rgb(204, 204, 204);
-$white: #fff;
-
-$darkBackground: #171717;
-$lightForeground: #efe9ef; 
-$separatorColor: $lightForeground;
-
-
-// Font stacks
-//$helvetica: Helvetica, Arial, sans-serif;
-//$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-//$georgia: Georgia, serif;
+@import "colors.scss";
 
 //Font stacks new
 //see:http://sebrink.de/Google-Webfonts-for-my-Jekyll/
