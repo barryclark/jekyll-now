@@ -61,7 +61,7 @@ impl LogLevel for Info {}
 Before we play with this new trait, let's take a step back and understand why we have to use associated types in the context of mutually exclusive traits.
 
 ## Why Associated Types?
-Take a look at this blanket implementation for any kind of logging task that can be converted into an `i32` number.
+Take a look at the following blanket implementation for any kind of logging task that can be converted into an `i32` number:
 ```rust
 impl<T> Executor<T> for Logger 
 where T: Task + Into<i32> {
