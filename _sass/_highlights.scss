@@ -4,9 +4,12 @@
   color: #fbf1c7;
   background-color: #282828;
 }*/
+
+@import "variables.scss";
+
 div.highlight {
-  color: #fbf1c7;
-  background-color: #282828;
+  color: $lightForeground;
+  background-color: $codeBackground;
   padding: 7px 7px 7px 10px;
   //border: 1px solid #ddd;
   //-moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
