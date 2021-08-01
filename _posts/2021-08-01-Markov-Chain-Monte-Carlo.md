@@ -4,13 +4,21 @@ The goal of this post is to learn about Markov Chain Monte Carlo. What is it, wh
 Markov Chain Monte Carlo (MCMC) _sounds_ cool. Maybe you know what Markov chains are and/or maybe you know what Monte Carlo methods are. 
 I was familiar with both, but I had no idea what MCMC is. 
 
-In a frustratingly short description - MCMC is a way to sample from a probability distribution. There's so much more to it than that, but that is essentially the heart of it. 
+In a frustratingly short description - MCMC is a way to approximate an integral. There's so much more to it than that, but that is essentially the heart of it. 
 
-But what is it _really_? Where does it get its name from? To understand that, we'll need to understand a few things first. 
+But what is it _really_? Where does it get its name from? Why does it pop up in statistics? To understand that, we'll need to understand a few things first. 
 So I'll try to describe it, and then we can work through the explanations that hopefully get us to understanding the description.
 
-MCMC is a way of estimating an intractable integral. It turns out that this is very useful for sampling from distributions in Bayesian statistics. 
-But I didn't even know what that meant at first. What makes an integral intractable? Well, there's sort of two, overloaded definitions here:
+MCMC is a way of estimating an intractable integral. It turns out that this is very useful for sampling from distributions in Bayesian statistics.
+Its name comes from the fact that it uses Monte Carlo sampling to estimate an integral, and the process for generating the Monte Carlo samples 
+is actually a Markov chain.
+
+But I didn't even know what that meant at first.
+- What makes an integral intractable?
+- Why is estimating an integral useful in Bayesian statistics?
+- What even is Bayesian statistics; how is it meaningfully different from general "statistics"?
+
+**What makes an integral intractable?** Well, there's sort of two, overloaded definitions here:
 
 1. the integral cannot be solved analytically
 2. the integral cannot be computed in closed form (i.e it involves some infinite summation)
@@ -18,7 +26,7 @@ But I didn't even know what that meant at first. What makes an integral intracta
 If the integral could be solved analytically, we wouldn't need extensive computation. If it's not analyticall solvable, _and_ it involves some infinite summation,
 then you can't compute that finitely. So you need to approximate the integral. 
 
-Why is this useful in Bayesian statistics? Because of Bayes' formula. 
+**Why is this useful in Bayesian statistics?** Because of Bayes' formula. 
 
 $$P(H | D) = \dfrac{P(D | H)P(H)}{P(D)}$$
 
@@ -41,3 +49,5 @@ How would you sample from a uniform distribution? What about a normal distributi
 Now that we appreciate the difficult in sampling from a distribution, we can appreciate the motivation behind the development of MCMC. 
 
 TODO
+
+I found it useful to think of the Markov chain part of MCMC as kind of just a coincidence? I mean, it's probably not coincidental, but I like to think that when Metropolis was originally developing this method, he basically just wanted to get at the Monte Carlo samples however he could. Rejection sampling is a nice way of shaking out the proper ratio that you want, and it just so happens that rejection sampling in this way can be perfectly described as a Markov process. I don't think he was actively thinking of Markov chains and how could he apply it to this problem. I mention this because I initially found the MCMC name confusing. How could someone possibly use a Markov chain with this stuff? But I think it's more of an after-the-fact description. It could've been called rejection-sampling Monte Carlo, until someone quickly realized that this is actually a Markov process. 
