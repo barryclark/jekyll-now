@@ -84,6 +84,15 @@ We can see clearly that this doesn't align well with our prior model at all.
 
 So now we can start computing our posterior. (TODO how do you handle multiple params? one at a time or what?)
 
+So we want $$P(D|H)P(H)$$. Even as I was writing this, I kind of got confused: wait, what does $$P(H)$$ even _mean_? How do we calculate that? Let's say for now that we're just focusing on $$\mu$$. Then this means that we're looking for $$P(D|\mu)P(\mu)$$. 
+This should hopefully be more clear. We said earlier that for our prior model, we were modeling $$\mu$$ as normally distributed. That's our $$P(\mu)$$!
+
+What about $$P(D|\mu)$$? This the likelihood function. TODO
+
+So we said that computing $$P(D)$$ is too difficult. Instead we'll get at $$P(\mu|D)$$ by using rejection sampling. 
+
+TODO
+
 ### Random things I haven't worked into writing yet
 
 I found it useful to think of the Markov chain part of MCMC as kind of just a coincidence? I mean, it's probably not coincidental, but I like to think that when Metropolis was originally developing this method, he basically just wanted to get at the Monte Carlo samples however he could. Rejection sampling is a nice way of shaking out the proper ratio that you want, and it just so happens that rejection sampling in this way can be perfectly described as a Markov process. I don't think he was actively thinking of Markov chains and how could he apply it to this problem. I mention this because I initially found the MCMC name confusing. How could someone possibly use a Markov chain with this stuff? But I think it's more of an after-the-fact description. It could've been called rejection-sampling Monte Carlo, until someone quickly realized that this is actually a Markov process. 
