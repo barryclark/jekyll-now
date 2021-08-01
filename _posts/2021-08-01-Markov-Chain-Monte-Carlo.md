@@ -70,6 +70,20 @@ I was familiar with Bayes' formula, but I don't think I appreciated the meaning 
 - normal distro
 - general distro
 
+## A real world example
+
+Let's say we want to model daily SPY returns. We'll model it as a normal distribution. We have two parameters to define: the mean $$\mu$$ and the variance $$\sigma^2$$. Now we can choose to assume single point values for these initially, or we can start by admitting uncertainty and defining these parameters themselves as distributions. 
+We'll say that $$\mu$$ is normally distributed with mean 0 and standard deviation 1. And $$\sigma$$ is also normally distributed with mean 1 and standard deviation 1. (TODO show plots of them).
+
+So basically we're saying that on average, we expect the daily return for SPY to be 0, with a standard deviation of 1%. This might not be a very good guess, but we don't have much to go off of yet except for our own past experience and wisdom. 
+Once we fit it with data and generate a posterior, we'll have a better model. And that's the whole point, after all.
+
+So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. If we plot them as a histogram: TODO histogram
+
+We can see clearly that this doesn't align well with our prior model at all.
+
+So now we can start computing our posterior. (TODO how do you handle multiple params? one at a time or what?)
+
 ### Random things I haven't worked into writing yet
 
 I found it useful to think of the Markov chain part of MCMC as kind of just a coincidence? I mean, it's probably not coincidental, but I like to think that when Metropolis was originally developing this method, he basically just wanted to get at the Monte Carlo samples however he could. Rejection sampling is a nice way of shaking out the proper ratio that you want, and it just so happens that rejection sampling in this way can be perfectly described as a Markov process. I don't think he was actively thinking of Markov chains and how could he apply it to this problem. I mention this because I initially found the MCMC name confusing. How could someone possibly use a Markov chain with this stuff? But I think it's more of an after-the-fact description. It could've been called rejection-sampling Monte Carlo, until someone quickly realized that this is actually a Markov process. 
