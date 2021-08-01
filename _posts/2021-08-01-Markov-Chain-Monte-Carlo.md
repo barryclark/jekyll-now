@@ -80,7 +80,7 @@ Once we fit it with data and generate a posterior, we'll have a better model. An
 
 So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. If we plot them as a histogram:
 
-![image](https://user-images.githubusercontent.com/1283020/127783715-91e4210f-f3cf-4ae4-abf4-188acf0e5708.png)
+![prior-vs-data](https://user-images.githubusercontent.com/1283020/127783739-43b27cb3-0a66-4006-a1db-534019ac9faa.png)
 
 We can see clearly that this doesn't align well with our prior model at all.
 
