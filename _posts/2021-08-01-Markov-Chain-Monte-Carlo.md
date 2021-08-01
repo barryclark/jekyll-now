@@ -72,3 +72,6 @@ A lot of the blogs would do the MCMC stuff and then show some graph of the distr
 The whole point is that you've made some axiomatic assumption about a model family for your data, and then from there, you have to figure out the best value for your parameters.
 Instead of forcing yourself to pick a single best value, you can admit that you don't really know perfectly, and instead describe your parameters as distributions themselves. The mean is _probably_ 0 but it might be positive or negative as well.
 Now another important note is that the modek of your parameters does not need to be remotely the same model as your data! You could have skew-normal data, or beta distributed data - but most likely, you'll want to model the uncertainty of your parameters as normal distributions. 
+
+Another aspect of this that helped me understand this stuff was that the posterior distribution is basically just another way of saying that you are fitting your model to data. So you do have to choose a model initially. You could choose a linear model! But then we could solve it with linear regression.
+But basically what we're doing here is learning a model (i.e learning the best parameters for our model). 
