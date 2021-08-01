@@ -40,3 +40,6 @@ A high concentration serious/fatal child crashes are in East Austin, St. John, O
 # The Data
 
 Austin's crash data is maintained by TxDOT and the City of Austin. See their Vision Zero Data viewer here: (https://visionzero.austin.gov/viewer/)
+
+I've defined "child" as someone under the age of 16. For demographic data, I used the [Texas Demographic Center's Population Estimates for Travis County.](https://demographics.texas.gov/Data/TPEPP/Estimates/)
+
