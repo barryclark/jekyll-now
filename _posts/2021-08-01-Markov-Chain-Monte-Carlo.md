@@ -48,6 +48,14 @@ How would you sample from a uniform distribution? What about a normal distributi
 
 Now that we appreciate the difficult in sampling from a distribution, we can appreciate the motivation behind the development of MCMC. 
 
+### Next section
+So now we know why we want MCMC. We have a model and we have some data. We want to fit the model to the data. We are obstructed by the evidence.
+Note that if we ignore the evidence component, then we at least have a function that is proportional to our desired posterior distribution. 
+If it were a discrete distribution, it'd be quite easy to make statements about it because we could easily compute the relative probabilities of the outputs.
+But because it's continuous we don't get so lucky. 
+
+TODO explain why we only need a function that is proportional to posterior. Does it need to sum to 1? How is that any different than normalizing constant?
+
 ### A quick aside about Bayesian stats and inference
 
 I was familiar with Bayes' formula, but I don't think I appreciated the meaning of the equation in the context of MCMC originally.
