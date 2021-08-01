@@ -106,6 +106,14 @@ We can see clearly that this doesn't align well with our prior model at all.
 
 So now we can start computing our posterior. (TODO how do you handle multiple params? one at a time or what?)
 
+- TOOO actually do the posterior fitting now. what do we have to do? 
+- we admit that we can't figure out P(D)... 
+- how tf does the rejection sampling provably work? like why is that validly equivalent?
+- how do you even compute likelihood? wtf does that mean? for every value in the data, calculate likelihood if we fix mean to that one proposed value? and average that or something?
+- so if you do that enough times, you should have a distro of your mean
+- and then you can plug that new mean distro into your model and see different result
+- BUT AGAIN why is the ratio even valid to do? like where tf does the ratio come from? why can we do that?
+
 So we want $$P(D|H)P(H)$$. Even as I was writing this, I kind of got confused: wait, what does $$P(H)$$ even _mean_? How do we calculate that? Let's say for now that we're just focusing on $$\mu$$. Then this means that we're looking for $$P(D|\mu)P(\mu)$$. 
 This should hopefully be more clear. We said earlier that for our prior model, we were modeling $$\mu$$ as normally distributed. That's our $$P(\mu)$$!
 
