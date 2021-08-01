@@ -91,7 +91,19 @@ What about $$P(D|\mu)$$? This the likelihood function. TODO
 
 So we said that computing $$P(D)$$ is too difficult. Instead we'll get at $$P(\mu|D)$$ by using rejection sampling. 
 
-TODO
+The sampling is pretty straightforward (for our example - there are more sophisticated sampling methods). 
+
+(TODO - you're kind of explaining the theory here b/c you haven't written it down yet. consider whether you want to separate the theory and assume reader
+is familiar at this point by the time we do example)
+
+We will basically be generating a stream of numbers from a normal distribution (this distribution doesn't have any relation to our data or models). 
+For each of these numbers, we compute the likelihood function using this number as the new $$\mu$$. We then compare this likelihood to the likelihood
+of the previously selected $$\mu$$. If it's better, we accept it. If it's worse, we accept it with probability (TODO whatever the ratio equation is).
+
+We do this for a long time until the distribution has converged (think - if we picked some insane starting value for the $$\mu$$ proposal, then 
+we'd accept most of the subsequent proposals, which could warp the distribution). 
+
+So now we have a new model for $$\mu$$, which essentially means that we have a new model for our data. 
 
 ### Random things I haven't worked into writing yet
 
