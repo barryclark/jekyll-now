@@ -60,6 +60,12 @@ TODO explain why we only need a function that is proportional to posterior. Does
 
 I was familiar with Bayes' formula, but I don't think I appreciated the meaning of the equation in the context of MCMC originally.
 
+When I describe Bayesian inference to some friends, their eyes glaze over. Writing the formula down is one thing, but trying to describe it verbally is an awful mouthful.
+I think it's helpful to point out that we all do Bayesian inference all the time - just without realizing it necessarily.
+For anyone that's played competitive sports, we typically use such inference. For example, say you're a defender in soccer. You know that like 90% of people are right-footed. So by default, when you play against someone new, you're going to defend them as if they're right-footed: force them onto their left etc. But say you're playing against someone one day, and you notice that they're dribbling against you with their left foot. 
+You don't know for sure, but there's a better chance than usual that they're left-footed. If you watched them warmup and they used their left foot mostly, you can probably guess even before you play that they're left-footed. 
+This is essentially Bayesian inference. In general, we know from experience that most people are right-footed. But in this particular case, now that we've collected data from our opponent's warmup, we have reason to believe that they're actually left-footed. 
+
 - what do the symbols really mean?
 - what is the likelihood function, really?
 - wtf is the evidence / marginal probability?
@@ -72,10 +78,24 @@ I was familiar with Bayes' formula, but I don't think I appreciated the meaning 
 
 ## A real world example
 
-Let's say we want to model daily SPY returns. We'll model it as a normal distribution. We have two parameters to define: the mean $$\mu$$ and the variance $$\sigma^2$$. Now we can choose to assume single point values for these initially, or we can start by admitting uncertainty and defining these parameters themselves as distributions. 
-We'll say that $$\mu$$ is normally distributed with mean 0 and standard deviation 1. And $$\sigma$$ is also normally distributed with mean 1 and standard deviation 1. (TODO show plots of them).
+I struggled to understand many of the blogs because they didn't use an example. So I hope to illustrate MCMC using a concrete example. 
 
-So basically we're saying that on average, we expect the daily return for SPY to be 0, with a standard deviation of 1%. This might not be a very good guess, but we don't have much to go off of yet except for our own past experience and wisdom. 
+Let's say we want to model daily SPY returns. For starters, we can say daily returns are normally distributed. We don't have any data to look at right now, but we have some rough assumptions about how markets work, so let's go from there: we could say the mean $$\mu$$ is 0 and the standard deviation $$\sigma$$ is 0.0001 - or, in other words, 1 basis point. 
+
+TODO - plot of normal here?
+
+But let's be a bit more realistic. We definitely _don't_ know the best values for $$\mu$$ and $$\sigma$$. Why should we pretend that we do by choosing a single value for each? Instead, let's admit uncertainty and instead describe $$\mu$$ and $$\sigma$$ probabilistically. 
+
+We can assume for now that their distributions are normal. Note that these normal distributions are _not_ related to our normal distribution of the data. The data distribution model family could be anything - skew-normal, beta, etc - and we'd still probably want to model our parameters as normally distributed. 
+Unless you have some reason to think your guess about your parameters is biased, then a normal distribution is a very reasonable "shape" to describe your parameters.
+
+So let's say $$\mu ~ \mathcal{N}(0, 0.0001)$$ and $$\sigma ~ \mathcal{N}(0.0001, 0.0001)$$. 
+
+Why did I pick those values? I don't really know! They're just a best guess for now. I know from previous experience that the mean can't be _that_ far from 0, and I know that the standard deviation can't be _that_ far from 1 basis point. 
+
+TODO - plot of hierchical model here: what does the ultimate distro look like for data?
+
+So basically we're saying that on average, we expect the daily return for SPY to be 0, with a standard deviation of 0.01% (i.e 1 basis point). This might not be a very good guess, but we don't have much to go off of yet except for our own past experience. 
 Once we fit it with data and generate a posterior, we'll have a better model. And that's the whole point, after all.
 
 So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. If we plot them as a histogram:
@@ -89,7 +109,7 @@ So now we can start computing our posterior. (TODO how do you handle multiple pa
 So we want $$P(D|H)P(H)$$. Even as I was writing this, I kind of got confused: wait, what does $$P(H)$$ even _mean_? How do we calculate that? Let's say for now that we're just focusing on $$\mu$$. Then this means that we're looking for $$P(D|\mu)P(\mu)$$. 
 This should hopefully be more clear. We said earlier that for our prior model, we were modeling $$\mu$$ as normally distributed. That's our $$P(\mu)$$!
 
-What about $$P(D|\mu)$$? This the likelihood function. TODO
+What about $$P(D|\mu)$$? This is the likelihood function. TODO
 
 So we said that computing $$P(D)$$ is too difficult. Instead we'll get at $$P(\mu|D)$$ by using rejection sampling. 
 
