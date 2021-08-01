@@ -102,6 +102,8 @@ We will basically be generating a stream of numbers from a normal distribution (
 For each of these numbers, we compute the likelihood function using this number as the new $$\mu$$. We then compare this likelihood to the likelihood
 of the previously selected $$\mu$$. If it's better, we accept it. If it's worse, we accept it with probability (TODO whatever the ratio equation is).
 
+TODO - do the series of probability selections
+
 We do this for a long time until the distribution has converged (think - if we picked some insane starting value for the $$\mu$$ proposal, then 
 we'd accept most of the subsequent proposals, which could warp the distribution). 
 
