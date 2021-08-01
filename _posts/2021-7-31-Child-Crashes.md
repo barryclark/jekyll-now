@@ -39,3 +39,4 @@ A high concentration serious/fatal child crashes are in East Austin, St. John, O
 
 # The Data
 
+Austin's crash data is maintained by TxDOT and the City of Austin. See their Vision Zero Data viewer here: (https://visionzero.austin.gov/viewer/)
