@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Austin's Child Crashes</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+<style>
+    body { margin: 0; padding: 0; }
+
+    h2,
+      h3 {
+        margin: 10px;
+        font-size: 1.2em;
+      }
+      h3 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.85em;
+        margin: 10px;
+        text-align: left;}
+
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        /**
+    * Set rules for how the map overlays
+    * (information box and legend) will be displayed
+    * on the page. */
+
+     
+    .map-overlay {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.8);
+      margin-right: 20px;
+      font-family: Arial, sans-serif;
+      overflow: auto;
+      border-radius: 3px;
+    }
+
+    #features {
+        top: 0;
+        height: 115px;
+        margin-top: 20px;
+        width: 325px;
+      }
+
+</style>
+</head>
+<body>
+<div id='map'></div>
+<div class='map-overlay' id='features'><h2>Austin's Child Crashes</h2>
+    <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
+        <div id='pd2'><p>Serious/Fatal Crashes: Jan 2010 - May 2021</p></div></div></div>
+    
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxpZTIzNDMiLCJhIjoiY2tnaWlnOTRyMGk5djJybGYzaThqeXQzdyJ9.kRWf1VawXRygKy2w7hNT1w';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/charlie2343/ckrsgf6b15kef18nwdjznqh5e',
+        center: [-97.747875,30.268937],
+        zoom: 10
+    });
+    var hoveredStateId = null;
+
+    // disable map rotation using right click + drag
+    map.dragRotate.disable();
+ 
+    // disable map rotation using touch rotation gesture
+    map.touchZoomRotate.disableRotation();
+</script>
+
+</body>
+</html>
