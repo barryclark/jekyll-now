@@ -78,7 +78,9 @@ We'll say that $$\mu$$ is normally distributed with mean 0 and standard deviatio
 So basically we're saying that on average, we expect the daily return for SPY to be 0, with a standard deviation of 1%. This might not be a very good guess, but we don't have much to go off of yet except for our own past experience and wisdom. 
 Once we fit it with data and generate a posterior, we'll have a better model. And that's the whole point, after all.
 
-So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. If we plot them as a histogram: TODO histogram
+So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. If we plot them as a histogram:
+
+![image](https://user-images.githubusercontent.com/1283020/127783715-91e4210f-f3cf-4ae4-abf4-188acf0e5708.png)
 
 We can see clearly that this doesn't align well with our prior model at all.
 
