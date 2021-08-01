@@ -48,6 +48,27 @@ How would you sample from a uniform distribution? What about a normal distributi
 
 Now that we appreciate the difficult in sampling from a distribution, we can appreciate the motivation behind the development of MCMC. 
 
-TODO
+### A quick aside about Bayesian stats and inference
+
+I was familiar with Bayes' formula, but I don't think I appreciated the meaning of the equation in the context of MCMC originally.
+
+- what do the symbols really mean?
+- what is the likelihood function, really?
+- wtf is the evidence / marginal probability?
+
+### Sampling from a distribution
+
+- uniform distro: Mersenne twister or linear feedback (simplest)
+- normal distro
+- general distro
+
+### Random things I haven't worked into writing yet
 
 I found it useful to think of the Markov chain part of MCMC as kind of just a coincidence? I mean, it's probably not coincidental, but I like to think that when Metropolis was originally developing this method, he basically just wanted to get at the Monte Carlo samples however he could. Rejection sampling is a nice way of shaking out the proper ratio that you want, and it just so happens that rejection sampling in this way can be perfectly described as a Markov process. I don't think he was actively thinking of Markov chains and how could he apply it to this problem. I mention this because I initially found the MCMC name confusing. How could someone possibly use a Markov chain with this stuff? But I think it's more of an after-the-fact description. It could've been called rejection-sampling Monte Carlo, until someone quickly realized that this is actually a Markov process. 
+
+One of the things that really frustrated me initially came from me misunderstanding what MCMC actually does. I naively thought it was just a way of getting "some" model to arise for your data. But that doesn't really make sense. The "best" model for you data would just be the histogram itself in some sense, but we know that's definitely overfitting. But unless you describe some function, there's no _model_ to actually be fitting to the data. So you _need_ to have a model describable by some parameters.
+This could be a normal distribution, or a skew-normal, or something else. But your prior model will be described by some parameters. And these parameters could just be a best guess! And the cool part is - you don't even need to pick a single value for your parameters. That's kind of the neat thing going on here that I didn't appreciate initially.
+A lot of the blogs would do the MCMC stuff and then show some graph of the distribution of _our parameters_. But that's not what I cared about. I wanted to model my _data_. But the really important realization is that if you have a function of parameters, then if you have a distribution of your parameters, then you _do_ have a model of your data. 
+The whole point is that you've made some axiomatic assumption about a model family for your data, and then from there, you have to figure out the best value for your parameters.
+Instead of forcing yourself to pick a single best value, you can admit that you don't really know perfectly, and instead describe your parameters as distributions themselves. The mean is _probably_ 0 but it might be positive or negative as well.
+Now another important note is that the modek of your parameters does not need to be remotely the same model as your data! You could have skew-normal data, or beta distributed data - but most likely, you'll want to model the uncertainty of your parameters as normal distributions. 
