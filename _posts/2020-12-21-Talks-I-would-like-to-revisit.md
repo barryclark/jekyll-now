@@ -112,11 +112,5 @@ It's very inspiring to see Megan talking passionately about her career. Being he
 <br>
 <br>
 
-<div>
-<a href="https://www.youtube.com/watch?v=mjAWVZq6wlw">Hayayo Miyazaki</a>
-</div>
-Studio Ghibli's movies are home :D
-Interesting to get insights from behind the scenes. I've also found making notes to be very helpful while developing something new.
-
 Links:
 1. <a href="http://www.paulgraham.com/articles.html">Paul Graham's essays</a>
