@@ -145,6 +145,8 @@ If we choose the estimated expected value of $$\mu$$ and $$\sigma$$ to use as th
 
 Huh, okay. That's pretty disappointing. No doubt the fit is better, but it's still pretty bad.
 
+TODO ugh. the above graph isn't even true. that's the posterior with sigma divided by .2 for whatever reason. no idea why the fit is so fugly otherwise
+
 Well that's because it was probably not great to assume returns are normally distributed! So what could we do? You could try doing MCMC but with a Cauchy distribution (fat tails basically) - or we can try a non-parametric estimation. I will try to cover that in another post soon.
 
 ### Random things I haven't worked into writing yet
