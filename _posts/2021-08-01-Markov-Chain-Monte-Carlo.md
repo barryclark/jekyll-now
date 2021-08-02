@@ -123,6 +123,10 @@ probability $$\dfrac{P(D|\mu_{p},\sigma_{p})}{P(D|\mu_{c},\sigma_{c})}$$.
 This entire algorithm can fit into a short python program:
 ```python
 def likelihood(mu, sigma, data):
+    """note this isn't performing the correct operation. 
+    but if you try to use multiplication, the value will vanish b/c our data
+    has outlier values that are unexplainable by a normal model
+    """
     acc = 1
     for x in stats.norm(mu, sigma).pdf(data):
         if not np.isnan(x):
