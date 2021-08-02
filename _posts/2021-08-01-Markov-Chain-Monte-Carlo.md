@@ -35,7 +35,7 @@ then you can't compute that finitely. So you need to approximate the integral. T
 
 I was familiar with Bayes' formula, but I don't think I appreciated the meaning of the equation in the context of MCMC originally.
 
-$$P(H|D) = \dfrac{P(D|H)P(H)}{P(D)}$$
+$$P(H \mid D) = \dfrac{P(D \mid H)P(H)}{P(D)}$$
 
 Where $$H$$ is our hypothesis and $$D$$ is our data. 
 Basically this is saying, if you have some prior hypothesis $$H$$, you can make a better, updated hypothesis (the posterior) once you've seen some data $$D$$.
@@ -60,8 +60,8 @@ that we need to do just that when determining a posterior distribution. A poster
 
 So MCMC can do two things for us. 
 First, it helps us avoid calculating $$P(D)$$ directly, 
-which allows us to get $$P(H|D)$$ more easily. 
-Second, it allows us to sample from $$P(H|D)$$ as well. 
+which allows us to get $$P(H \mid D)$$ more easily. 
+Second, it allows us to sample from $$P(H \mid D)$$ as well. 
 
 To appreciate the second point, it's important to understand that sampling from a distribution is non-trivial.
 
@@ -77,10 +77,10 @@ How would you sample from a uniform distribution? What about a normal distributi
 So now we know why we want MCMC. We have a model and we have some data. We want to fit the model to the data. We are obstructed by the difficulty in computing $$P(D)$$, the evidence.
 Note that if we ignore the evidence component, then we at least have a function that is proportional to our desired posterior distribution.
 
-$$P(H|D) = \dfrac{1}{P(D)}P(D|H)P(H)$$
+$$P(H \mid D) = \dfrac{1}{P(D)}P(D \mid H)P(H)$$
 
 So essentially $$\dfrac{1}{P(D)}$$ normalizes 
-$$P(D|H)P(H)$$ 
+$$P(D \mid H)P(H)$$ 
 so that we get a well behaved PDF. 
 
 **TODO** explain why we only need a function that is proportional to posterior. Does it need to sum to 1? How is that any different than normalizing constant?
@@ -120,7 +120,7 @@ We can see clearly that this doesn't align well with our prior model at all.
 
 So now we can start computing our posterior. 
 
-So we want $$P(D|H)P(H)$$. Even as I was writing this, I kind of got confused: wait, what does $$P(H)$$ even _mean_? How do we calculate that? Well, our hypothesis/model is parameterized by two variables: $$\mu$$ and $$\sigma$$. We said earlier that for our prior model, we were modeling $$\mu$$ and $$\sigma$$ each as normally distributed. So we can rewrite $$P(H)$$ as $$P(\mu,\sigma)$$ which is basically the joint probability of our two variables: for a given pair $$(\mu,\sigma)$$, how likely is that pair explainable by our prior model for the parameters?
+So we want $$P(D \mid H)P(H)$$. Even as I was writing this, I kind of got confused: wait, what does $$P(H)$$ even _mean_? How do we calculate that? Well, our hypothesis/model is parameterized by two variables: $$\mu$$ and $$\sigma$$. We said earlier that for our prior model, we were modeling $$\mu$$ and $$\sigma$$ each as normally distributed. So we can rewrite $$P(H)$$ as $$P(\mu,\sigma)$$ which is basically the joint probability of our two variables: for a given pair $$(\mu,\sigma)$$, how likely is that pair explainable by our prior model for the parameters?
 
 We said that computing $$P(D)$$ is too difficult. Instead we'll get at our posterior by using rejection sampling. 
 
@@ -141,7 +141,7 @@ have nothing to do with the distributions we've already mentioned. So we now hav
 
 For each of the proposed number pairs, we compute the likelihood function using this pair as the new $$\mu$$ and $$\sigma$$. We then compare this likelihood to the likelihood
 of the previously accepted $$\mu$$ and $$\sigma$$. If the proposal is better, we accept it. If it's worse, we accept it with 
-probability $$\dfrac{P(D|\mu_{p},\sigma_{p})}{P(D|\mu_{c},\sigma_{c})}$$. If we reject it, we simply don't have a new sample yet, and will try again. So theoretically if you choose a very bad way of picking proposals, it could take you a longer time to generate samples. 
+probability $$\dfrac{P(D \mid \mu_{p},\sigma_{p})}{P(D \mid \mu_{c},\sigma_{c})}$$. If we reject it, we simply don't have a new sample yet, and will try again. So theoretically if you choose a very bad way of picking proposals, it could take you a longer time to generate samples. 
 
 This entire algorithm can fit into a short python program:
 ```python
@@ -210,7 +210,7 @@ Ideally, we could sample from our distribution independently, but this form of r
 
 Say the first proposal value is (0.005, 0.008). Then we'd compute the likelihood function for this pair, multiply by the probability of this pair coming from our prior model for $$\mu$$ and $$\sigma$$, and then compare to the same computation for our initial pair.
 
-$$\dfrac{P(D|0.005,0.008)P(0.005,0.008)}{P(D|0.001,0.003)P(0.001,0.003)} = 0.599$$
+$$\dfrac{P(D \mid 0.005,0.008)P(0.005,0.008)}{P(D \mid 0.001,0.003)P(0.001,0.003)} = 0.599$$
 
 So say we generate a random number between 0 and 1 that is less than 0.599. We'd accept this new pair (0.005,0.008) and repeat the process using this one as the current sample.
 
