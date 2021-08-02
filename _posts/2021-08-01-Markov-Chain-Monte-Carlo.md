@@ -141,13 +141,14 @@ So now we have a new model for $$\mu$$ and $$\sigma$$, which essentially means t
 
 If we choose the estimated expected value of $$\mu$$ and $$\sigma$$ to use as the parameters in a normal distribution:
 
-![image](https://user-images.githubusercontent.com/1283020/127796892-1b7edf88-2944-4927-b81e-827c3c4ed9cb.png)
+![post-prior-data](https://user-images.githubusercontent.com/1283020/127807903-2e0b46ef-62a5-43be-b947-2d943739c356.png)
 
-Huh, okay. That's pretty disappointing. No doubt the fit is better, but it's still pretty bad.
+Hm, okay. That's not a huge difference. Our prior was pretty good after all. Also the posterior still isn't that great of a fit. Why not? I think it could be two things mainly. 
 
-TODO ugh. the above graph isn't even true. that's the posterior with sigma divided by .2 for whatever reason. no idea why the fit is so fugly otherwise
+First, I've found through playing with this data (and dummy data) that the choice of prior parameters matters a lot. 
+If you choose a terrible prior intentionally, you'll still the effects of that in your posterior. 
 
-Well that's because it was probably not great to assume returns are normally distributed! So what could we do? You could try doing MCMC but with a Cauchy distribution (fat tails basically) - or we can try a non-parametric estimation. I will try to cover that in another post soon.
+Second, and probably more important, is that modeling stock returns as a normal distribution is probably inherently flawed. So what could we do? You could try doing MCMC but with a Cauchy distribution (fat tails basically) - or we can try a non-parametric estimation. I will try to cover that in another post soon.
 
 ### Random things I haven't worked into writing yet
 
