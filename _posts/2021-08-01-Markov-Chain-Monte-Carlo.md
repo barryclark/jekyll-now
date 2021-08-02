@@ -121,6 +121,8 @@ What about $$P(D|\mu)$$? This is the likelihood function. TODO
 
 So we said that computing $$P(D)$$ is too difficult. Instead we'll get at $$P(\mu|D)$$ by using rejection sampling. 
 
+TODO - if we're really just doing it per parameter, which we assume is normal - then why do we need MCMC? and _can_ we even do the params separately?
+
 The sampling is pretty straightforward (for our example - there are more sophisticated sampling methods). 
 
 (TODO - you're kind of explaining the theory here b/c you haven't written it down yet. consider whether you want to separate the theory and assume reader
