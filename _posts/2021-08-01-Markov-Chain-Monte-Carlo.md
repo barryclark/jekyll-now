@@ -160,3 +160,8 @@ Now another important note is that the modek of your parameters does not need to
 
 Another aspect of this that helped me understand this stuff was that the posterior distribution is basically just another way of saying that you are fitting your model to data. So you do have to choose a model initially. You could choose a linear model! But then we could solve it with linear regression.
 But basically what we're doing here is learning a model (i.e learning the best parameters for our model). 
+
+
+### Things I still need to work out
+- _why_ does the ratio for sampling work out? like why are we allowed to do this and say it's good?
+- seriously, why the _fuck_ is this useful? you need to define a prior model right? like wtf do you do about stocks which CLEARLY aren't normal? like how the fuck do you desribe a model parametrically yet you can't fucking fit it properly? this shit is so fucking annoying
