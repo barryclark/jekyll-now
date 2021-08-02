@@ -63,7 +63,13 @@ Second, it allows us to sample from $$P(H|D)$$ as well.
 
 To appreciate the second point, it's important to understand that sampling from a distribution is non-trivial.
 
-How would you sample from a uniform distribution? What about a normal distribution? TODO
+How would you sample from a uniform distribution? What about a normal distribution?
+
+### Sampling from a distribution
+
+- uniform distro: Mersenne twister or linear feedback (simplest)
+- normal distro
+- general distro
 
 Now that we appreciate the difficult in sampling from a distribution, we can appreciate the motivation behind the development of MCMC. 
 
@@ -73,14 +79,7 @@ Note that if we ignore the evidence component, then we at least have a function 
 If it were a discrete distribution, it'd be quite easy to make statements about it because we could easily compute the relative probabilities of the outputs.
 But because it's continuous we don't get so lucky. 
 
-TODO explain why we only need a function that is proportional to posterior. Does it need to sum to 1? How is that any different than normalizing constant?
-
-
-### Sampling from a distribution
-
-- uniform distro: Mersenne twister or linear feedback (simplest)
-- normal distro
-- general distro
+**TODO** explain why we only need a function that is proportional to posterior. Does it need to sum to 1? How is that any different than normalizing constant?
 
 ## A real world example
 
