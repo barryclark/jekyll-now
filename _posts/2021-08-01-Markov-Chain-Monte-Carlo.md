@@ -125,19 +125,27 @@ TODO - if we're really just doing it per parameter, which we assume is normal - 
 
 The sampling is pretty straightforward (for our example - there are more sophisticated sampling methods). 
 
-(TODO - you're kind of explaining the theory here b/c you haven't written it down yet. consider whether you want to separate the theory and assume reader
-is familiar at this point by the time we do example)
-
 We will basically be generating a stream of numbers from a normal distribution (this distribution doesn't have any relation to our data or models). 
 For each of these numbers, we compute the likelihood function using this number as the new $$\mu$$. We then compare this likelihood to the likelihood
-of the previously selected $$\mu$$. If it's better, we accept it. If it's worse, we accept it with probability (TODO whatever the ratio equation is).
+of the previously selected $$\mu$$. If it's better, we accept it. If it's worse, we accept it with probability $$\dfrac{P(D|\mu_{proposed})}{P(D|\mu_{current})}$$.
 
-TODO - do the series of probability selections
+So for example, we can choose an arbitrary number as the initial $$\mu$$ value. Note that you can pick something crazy, but it'll just take slightly longer to converge to the stationary distribution. Say we choose 0. 
+
+Then for the first iteration, we choose a random proposal value for $$\mu$$. We sample from a normal distribution - but we could use a uniform if we wanted too. (TODO - confirm that you actually can and that it doesn't screw it up)
+
+Say the first proposal value is 0.005. Then we'd compute the likelihood function for both of these $$\mu$$ values. TODO actually do the work here
+We see that our current value is better. So we then divide (TODO actually make it work as multiplicative prob) and basically generate a random uniform number between 0 and 1. Let's say it was less than our ratio, so we accept the proposal value. 
 
 We do this for a long time until the distribution has converged (think - if we picked some insane starting value for the $$\mu$$ proposal, then 
 we'd accept most of the subsequent proposals, which could warp the distribution). 
 
 So now we have a new model for $$\mu$$, which essentially means that we have a new model for our data. 
+
+### Multiple parameters
+Now say we didn't fix $$\sigma$$. How do we do it now? Pretty much the same thing. Instead of choosing a single new proposal value, we choose new values for
+both $$\mu$$ and $$\sigma$$ as if we're picking a new point in 2-d space. 
+
+TODO - show the posterior distribution fit
 
 ### Random things I haven't worked into writing yet
 
