@@ -82,8 +82,6 @@ I struggled to understand many of the blogs because they didn't use an example. 
 
 Let's say we want to model daily SPY returns. For starters, we can say daily returns are normally distributed. We don't have any data to look at right now, but we have some rough assumptions about how markets work, so let's go from there: we could say the mean $$\mu$$ is 0 and the standard deviation $$\sigma$$ is 0.0001 - or, in other words, 1 basis point. 
 
-TODO - plot of normal here?
-
 But let's be a bit more realistic. We definitely _don't_ know the best values for $$\mu$$ and $$\sigma$$. Why should we pretend that we do by choosing a single value for each? Instead, let's admit uncertainty and instead describe $$\mu$$ and $$\sigma$$ probabilistically. 
 
 We can assume for now that their distributions are normal. Note that these normal distributions are _not_ related to our normal distribution of the data. The data distribution model family could be anything - skew-normal, beta, etc - and we'd still probably want to model our parameters as normally distributed. 
@@ -100,7 +98,7 @@ Once we fit it with data and generate a posterior, we'll have a better model. An
 
 So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. If we plot them as a histogram:
 
-![prior-vs-data](https://user-images.githubusercontent.com/1283020/127783739-43b27cb3-0a66-4006-a1db-534019ac9faa.png)
+![prior-vs-data](https://user-images.githubusercontent.com/1283020/127808316-a4260fe8-9882-4e6e-a489-bc9cf799e675.png)
 
 We can see clearly that this doesn't align well with our prior model at all.
 
