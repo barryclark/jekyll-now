@@ -4,7 +4,7 @@ The goal of this post is to learn about Markov Chain Monte Carlo. What is it, wh
 Markov Chain Monte Carlo (MCMC) _sounds_ cool. Maybe you know what Markov chains are and/or maybe you know what Monte Carlo methods are. 
 I was familiar with both, but I had no idea what MCMC is. 
 
-In a frustratingly short description - MCMC is a way to approximate an integral. There's so much more to it than that, but that is essentially the heart of it. 
+In a frustratingly short description - MCMC is a way to approximate an integral. That certainly wasn't the answer I was expecting when I learned about it. There's so much more to it than that, but that is essentially the heart of it. 
 
 But what is it _really_? Where does it get its name from? Why does it pop up in statistics? To understand that, we'll need to understand a few things first. 
 So I'll try to describe it, and then we can work through the explanations that hopefully get us to understanding the description.
