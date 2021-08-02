@@ -188,7 +188,7 @@ while i < 20000:
 
 Here are the results I got from running this code: 
 
-![mu-sigma-hists](https://user-images.githubusercontent.com/1283020/127878562-c81bc5db-69f9-4f06-bf59-5ac266837e90.png)
+![mu-sigma-hists](https://user-images.githubusercontent.com/1283020/127893963-2acd37c0-f93c-40e4-a2b1-6eb69cc1bb3c.png)
 
 These are the histograms of the sampled posterior values for $$\mu$$ and $$\sigma$$.
 
@@ -196,7 +196,7 @@ These are the histograms of the sampled posterior values for $$\mu$$ and $$\sigm
 
 These are the traces for $$\mu$$ and $$\sigma$$. This is just plotting how the current $$\mu$$ and $$\sigma$$ are changing over time.
 
-![image](https://user-images.githubusercontent.com/1283020/127891200-b9985ff2-fa05-408e-9195-ddc021a8ebcf.png)
+![autocorr](https://user-images.githubusercontent.com/1283020/127891200-b9985ff2-fa05-408e-9195-ddc021a8ebcf.png)
 
 These are the auto-correlation graphs for $$\mu$$ (orange) and $$\sigma$$ (blue). The graph for $$\mu$$ doesn't look great and implies our samples are likely
 too dependent, but oh well for now. 
