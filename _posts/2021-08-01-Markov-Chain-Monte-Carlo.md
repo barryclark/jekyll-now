@@ -48,7 +48,7 @@ This is essentially Bayesian inference. In general, we know from experience that
 
 I think the [wiki article](https://en.wikipedia.org/wiki/Bayesian_inference#Formal_explanation) on Bayesian inference does a good job of describing the symbols here.
 
-#### So why is MCMC useful?**
+#### So why is MCMC useful?
 
 Basically because integrals appear often in Bayesian statistics.
 It turns out that actually calculating the posterior invovles an often times intractable integral because of the denominator $$P(D)$$.
@@ -72,7 +72,7 @@ How would you sample from a uniform distribution? What about a normal distributi
 - uniform distro: Mersenne twister or linear feedback (simplest)
 - normal distro
 - general distro
-- 
+
 ## How and why does MCMC work?
 So now we know why we want MCMC. We have a model and we have some data. We want to fit the model to the data. We are obstructed by the difficulty in computing $$P(D)$$, the evidence.
 Note that if we ignore the evidence component, then we at least have a function that is proportional to our desired posterior distribution.
