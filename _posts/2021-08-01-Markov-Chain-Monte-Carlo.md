@@ -39,7 +39,9 @@ I was often confused in MCMC describers because they so often presented MCMC exc
 MCMC _is_ useful for determining a posterior distribution, but it's not used exclusively for that. MCMC can be used to estimate an integral and it so turns out
 that we need to do just that when determining a posterior distribution. A posterior distribution is basically just fitting a model to data, kind of like how we fit a linear regression model to data.
 
-So MCMC can do two things for us. First, it helps us avoid calculating $$P(D)$$ directly, which allows us to get $$P(H|D)$$ more easily. 
+So MCMC can do two things for us. 
+First, it helps us avoid calculating $$P(D)$$ directly, 
+which allows us to get $$P(H|D)$$ more easily. 
 Second, it allows us to sample from $$P(H|D)$$ as well. 
 
 To appreciate the second point, it's important to understand that sampling from a distribution is non-trivial.
