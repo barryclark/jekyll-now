@@ -79,7 +79,9 @@ Note that if we ignore the evidence component, then we at least have a function 
 
 $$P(H|D) = \dfrac{1}{P(D)}P(D|H)P(H)$$
 
-So essentially $$\dfrac{1}{P(D)}$$ normalizes $$P(D|H)P(H)$$ so that we get a well behaved PDF. 
+So essentially $$\dfrac{1}{P(D)}$$ normalizes 
+$$P(D|H)P(H)$$ 
+so that we get a well behaved PDF. 
 
 **TODO** explain why we only need a function that is proportional to posterior. Does it need to sum to 1? How is that any different than normalizing constant?
 - try to use this proportional aspect with the sampling to explain the markov part
