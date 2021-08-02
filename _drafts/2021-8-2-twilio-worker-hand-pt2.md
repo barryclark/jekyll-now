@@ -117,7 +117,17 @@ you should be able to see in the Teams tab, when you raise your worker hand, onl
 
 ![]({{ site.baseurl }}/assets/img/agent-hand/teams_hand_raised.png)
 
-You may have noticed that when you interact with the button on the Teams tab, the drawer opens for that worker. I could not work around this using `preventDefault()` so for now I introduced a `canInteract: boolean` to the component, for the main header I set this to true and for the supervisor I set it to false.
+A bonus feature here (yes, some would call a bug!) is that the supervisors are able to lower the hand of the agent. we need to modify the code in the component a little to stop the default event happening on the worker table when we click the button... Add this to your raise/lower event handlers to see
+```
+handleRaiseHand = async (e: MouseEvent<HTMLButtonElement>) => {
+  e.stopPropagation(); //this will stop the event bubbling through
+  ...
+}
+handleLowerHand = async (e: MouseEvent<HTMLButtonElement>) => {
+  e.stopPropagation(); //this will stop the event bubbling through
+  ...
+}
+``` 
 
 ### Conclusion
 In this part we used Twilio flex to persist the state of our workers hand, we used the [Flex Manager](https://www.twilio.com/docs/flex/developer/ui/manager){:target="_blank"} to access all of the things we need to communicate securely with flex and gain some context of our worker.
