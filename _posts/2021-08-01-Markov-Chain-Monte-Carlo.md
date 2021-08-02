@@ -114,38 +114,38 @@ So now we can start computing our posterior. (TODO how do you handle multiple pa
 - and then you can plug that new mean distro into your model and see different result
 - BUT AGAIN why is the ratio even valid to do? like where tf does the ratio come from? why can we do that?
 
-So we want $$P(D|H)P(H)$$. Even as I was writing this, I kind of got confused: wait, what does $$P(H)$$ even _mean_? How do we calculate that? Let's say for now that we're just focusing on $$\mu$$. Then this means that we're looking for $$P(D|\mu)P(\mu)$$. 
-This should hopefully be more clear. We said earlier that for our prior model, we were modeling $$\mu$$ as normally distributed. That's our $$P(\mu)$$!
+So we want $$P(D|H)P(H)$$. Even as I was writing this, I kind of got confused: wait, what does $$P(H)$$ even _mean_? How do we calculate that? Well, our hypothesis/model is parameterized by two variables: $$\mu$$ and $$\sigma$$. So we can rewrite $$P(D|H)$$ as $$P(D|\mu,\sigma)$$ which is the likelihood function - how likely are we to see a data point $$d$$ given our model parameters?
+This should hopefully be more clear. We said earlier that for our prior model, we were modeling $$\mu$$ and $$\sigma$$ each as normally distributed. So we can rewrite $$P(H)$$ as $$P(\mu,\sigma)$$ which is basically the joint probability of our two variables. 
 
-What about $$P(D|\mu)$$? This is the likelihood function. TODO
-
-So we said that computing $$P(D)$$ is too difficult. Instead we'll get at $$P(\mu|D)$$ by using rejection sampling. 
-
-TODO - if we're really just doing it per parameter, which we assume is normal - then why do we need MCMC? and _can_ we even do the params separately?
+So we said that computing $$P(D)$$ is too difficult. Instead we'll get at our posterior by using rejection sampling. 
 
 The sampling is pretty straightforward (for our example - there are more sophisticated sampling methods). 
 
-We will basically be generating a stream of numbers from a normal distribution (this distribution doesn't have any relation to our data or models). 
-For each of these numbers, we compute the likelihood function using this number as the new $$\mu$$. We then compare this likelihood to the likelihood
-of the previously selected $$\mu$$. If it's better, we accept it. If it's worse, we accept it with probability $$\dfrac{P(D|\mu_{proposed})}{P(D|\mu_{current})}$$.
+We will basically be generating a stream of numbers from two normal distributions for $$\mu$$ and $$\sigma$$ (these distributions don't have any relation to our data or models, we could choose to use a uniform here if we really wanted). 
+For each of these number pairs, we compute the likelihood function using this pair as the new $$\mu$$ and $$\sigma$$. We then compare this likelihood to the likelihood
+of the previously selected $$\mu$$ and $$\sigma$$. If it's better, we accept it. If it's worse, we accept it with probability $$\dfrac{P(D|\mu_{p},\sigma_{p)}{P(D|\mu_{c},\sigma_{c})}$$. TODO explain p = proposal, c = current
 
-So for example, we can choose an arbitrary number as the initial $$\mu$$ value. Note that you can pick something crazy, but it'll just take slightly longer to converge to the stationary distribution. Say we choose 0. 
+So for example, we can choose arbitrary numbers as the initial values for $$\mu$$ and $$\sigma$$. Note that you can pick something crazy, but it'll just take slightly longer to converge to the stationary distribution. Say we choose $$\mu = 0$$ and $$\sigma = 0.0001$$.
 
-Then for the first iteration, we choose a random proposal value for $$\mu$$. We sample from a normal distribution - but we could use a uniform if we wanted too. (TODO - confirm that you actually can and that it doesn't screw it up)
+Then for the first iteration, we choose a random proposal value for each of $$\mu$$ and $$\sigma$$. Like I said earlier, we use a normal distribution to sample from, but we could use many other samplings methods as well. Technically speaking, the choice of method _does_ matter because we care about reducing autocorrelation between our samples.
+Ideally, we could sample from our distribution independently, but this form of rejection sampling is after all a Markov chain, which means there will be some dependence on the previous value. If you choose a poor method, you might observe higher autocorrelation. 
 
+TODO update for mu and sigma
 Say the first proposal value is 0.005. Then we'd compute the likelihood function for both of these $$\mu$$ values. TODO actually do the work here
 We see that our current value is better. So we then divide (TODO actually make it work as multiplicative prob) and basically generate a random uniform number between 0 and 1. Let's say it was less than our ratio, so we accept the proposal value. 
 
 We do this for a long time until the distribution has converged (think - if we picked some insane starting value for the $$\mu$$ proposal, then 
 we'd accept most of the subsequent proposals, which could warp the distribution). 
 
-So now we have a new model for $$\mu$$, which essentially means that we have a new model for our data. 
+So now we have a new model for $$\mu$$ and $$\sigma$$, which essentially means that we have a new model for our data. 
 
-### Multiple parameters
-Now say we didn't fix $$\sigma$$. How do we do it now? Pretty much the same thing. Instead of choosing a single new proposal value, we choose new values for
-both $$\mu$$ and $$\sigma$$ as if we're picking a new point in 2-d space. 
+If we choose the estimated expected value of $$\mu$$ and $$\sigma$$ to use as the parameters in a normal distribution:
 
-TODO - show the posterior distribution fit
+![image](https://user-images.githubusercontent.com/1283020/127796892-1b7edf88-2944-4927-b81e-827c3c4ed9cb.png)
+
+Huh, okay. That's pretty disappointing. No doubt the fit is better, but it's still pretty bad.
+
+Well that's because it was probably not great to assume returns are normally distributed! So what could we do? You could try doing MCMC but with a Cauchy distribution (fat tails basically) - or we can try a non-parametric estimation. I will try to cover that in another post soon.
 
 ### Random things I haven't worked into writing yet
 
@@ -160,8 +160,3 @@ Now another important note is that the modek of your parameters does not need to
 
 Another aspect of this that helped me understand this stuff was that the posterior distribution is basically just another way of saying that you are fitting your model to data. So you do have to choose a model initially. You could choose a linear model! But then we could solve it with linear regression.
 But basically what we're doing here is learning a model (i.e learning the best parameters for our model). 
-
-
-### Things I still need to work out
-- _why_ does the ratio for sampling work out? like why are we allowed to do this and say it's good?
-- seriously, why the _fuck_ is this useful? you need to define a prior model right? like wtf do you do about stocks which CLEARLY aren't normal? like how the fuck do you desribe a model parametrically yet you can't fucking fit it properly? this shit is so fucking annoying
