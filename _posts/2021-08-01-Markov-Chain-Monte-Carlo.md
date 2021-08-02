@@ -128,6 +128,7 @@ The sampling is pretty straightforward (for our example; there are more sophisti
 
 We will basically be generating a stream of numbers from two normal distributions for $$\mu$$ and $$\sigma$$.
 
+---
 **Quick aside**
 
 I want to make a note here because I got confused about this many times. The distributions here for picking new proposal values for $$\mu$$ and $$\sigma$$
