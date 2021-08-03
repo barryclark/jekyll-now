@@ -75,6 +75,15 @@ How would you sample from a uniform distribution? What about a normal distributi
 
 ## How and why does MCMC work?
 So now we know why we want MCMC. We have a model and we have some data. We want to fit the model to the data. We are obstructed by the difficulty in computing $$P(D)$$, the evidence.
+
+---
+**Quick aside**
+
+One of the things that initially frustrated me about MCMC came from my misunderstanding what MCMC actually does. I naively thought it was just a way of getting "some" model to arise for your data. But MCMC is a way to fit a _parametric_ model to data. MCMC requires you to specify a model with parameters, and then you're only adjusting those parameters. 
+Those parameters themselves can be modeled as distributions. I was confused when the blogs would do all this work and then finish with a plot of the posterior model for the parameters, instead of for the data. But it's important to realize that if you have a posterior for your parameters, then you have a posterior for your data as well! Since your data model is defined entirely by those parameters.
+
+---
+
 Note that if we ignore the evidence component, then we at least have a function that is proportional to our desired posterior distribution.
 
 $$P(H \mid D) = \dfrac{1}{P(D)}P(D \mid H)P(H)$$
@@ -83,16 +92,27 @@ So essentially $$\dfrac{1}{P(D)}$$ normalizes
 $$P(D \mid H)P(H)$$ 
 so that we get a well behaved PDF. 
 
-**TODO** explain why we only need a function that is proportional to posterior. Does it need to sum to 1? How is that any different than normalizing constant?
-- try to use this proportional aspect with the sampling to explain the markov part
+Even though we don't know how to compute our posterior, we do know that it exists. Our goal then is to construct a Markov chain with a stationary distribution
+equal to our desired posterior distribution. If we can do this, then we can run the Markov chain for a long time, and it will essentially be like sampling from the posterior.
 
-I found it useful to think of the Markov chain part of MCMC as kind of just a coincidence? I mean, it's probably not coincidental, but I like to think that when Metropolis was originally developing this method, he basically just wanted to get at the Monte Carlo samples however he could. Rejection sampling is a nice way of shaking out the proper ratio that you want, and it just so happens that rejection sampling in this way can be perfectly described as a Markov process. I don't think he was actively thinking of Markov chains and how could he apply it to this problem. I mention this because I initially found the MCMC name confusing. How could someone possibly use a Markov chain with this stuff? But I think it's more of an after-the-fact description. It could've been called rejection-sampling Monte Carlo, until someone quickly realized that this is actually a Markov process. 
+The Markov chain we're creating has a continuous state space over $$\mu$$ and $$\sigma$$. We need to define a transition function such that repeated iterations
+of the process converge to the posterior $$P(H \mid D) = CP(D \mid H)P(H)$$ where $$C$$ is some normalizing constant. 
 
-One of the things that really frustrated me initially came from my misunderstanding what MCMC actually does. I naively thought it was just a way of getting "some" model to arise for your data. But MCMC is a way to fit a _parametric_ model to data. MCMC requires you to specify a model with parameters, and then you're only adjusting those parameters.
-Another thing to note is that the parameters themselves can come from a distribution. This is a core concept in hierchical modeling, but it definitely tripped me up when I was learning about MCMC. We're not talking about starting and ending with a single value for our parameter. We start with a distribution and we end with a different one. 
-A lot of the blogs would do the MCMC stuff and then show some graph of the distribution of _our parameters_. But that's not what I cared about. I wanted to model my _data_. But the really important realization is that if you have a function of parameters, then if you have a distribution of your parameters, then you _do_ have a model of your data. 
-Instead of forcing yourself to pick a single best value, you can admit that you don't really know perfectly, and instead describe your parameters as distributions themselves. The mean is _probably_ 0 but it might be positive or negative as well.
-Now another important note is that the model of your parameters does not need to be remotely the same model as your data! You could have skew-normal data, or beta distributed data - but most likely, you'll want to model the uncertainty of your parameters as normal distributions. 
+We can choose an arbitrary initial state $$(\mu_0,\sigma_0)$$. We propose some new state $$p = (\mu_p,\sigma_p)$$. The probability that we accept $$p$$ should be 
+equal to the posterior. We could maybe transition to it with probability $$min(1, P(D \mid p)P(p))$$ but what about $$C$$? 
+
+It's useful to note the _relative_ likelihood of observing certain samples from a distribution. It's easier to highlight with a discrete distribution.
+Imagine we know the distribution of favorite number between 1 and 10. Say 7 is extremely popular, with 50% of people saying it's their favorite. 6 on the other hand is very unpopular, with only 5% of the population saying it's their favorite. We should expect to see 7 ten times as often as we see 6. 
+
+We can do something similar for our posterior distribution. If we have two samples $$p_1$$ and $$p_2$$, then 
+
+$$\dfrac{p_2}{p_1} = \dfrac{\dfrac{P(D \mid p_2)P(p_2)}{P(D)}}{\dfrac{P(D \mid p_1)P(p_1)}{P(D)}} = \dfrac{P(D \mid p_2)P(p_2)}{P(D \mid p_1)P(p_1)}$$
+
+This is great! We now have a function to describe $$P(H \mid D)$$ that avoids $$P(D)$$ entirely and is described by two possible samples. 
+
+So going back to our Markov chain, we can try to construct the transition function to be equal to $$\dfrac{P(D \mid p)P(p)}{P(D \mid p_c)P(p_c)}$$
+
+This is readily doable if we define the transition function as $$min(1, \dfrac{P(D \mid p)P(p)}{P(D \mid p_c)P(p_c)})$$. 
 
 ## A real world example
 
