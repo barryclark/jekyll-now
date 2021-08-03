@@ -219,6 +219,7 @@ These are the histograms of the sampled posterior values for $$\mu$$ and $$\sigm
 ![mu-sigma-trace](https://user-images.githubusercontent.com/1283020/127878812-a57a4aaa-473f-4051-a55b-1681449c676a.png)
 
 These are the traces for $$\mu$$ and $$\sigma$$. This is just plotting how the current $$\mu$$ and $$\sigma$$ are changing over time.
+It's good for a sanity check to ensure our samples have converged and are also not overly autocorrelated.
 
 ![autocorr](https://user-images.githubusercontent.com/1283020/127891200-b9985ff2-fa05-408e-9195-ddc021a8ebcf.png)
 
