@@ -112,7 +112,11 @@ This is great! We now have a function to describe $$P(H \mid D)$$ that avoids $$
 
 So going back to our Markov chain, we can try to construct the transition function to be equal to $$\dfrac{P(D \mid p)P(p)}{P(D \mid p_c)P(p_c)}$$
 
-This is readily doable if we define the transition function as $$min(1, \dfrac{P(D \mid p)P(p)}{P(D \mid p_c)P(p_c)})$$. 
+This is readily doable if we define the probability of transitioning to state $$p$$ as $$min(1, \dfrac{P(D \mid p)P(p)}{P(D \mid p_c)P(p_c)})$$. 
+
+For this to be useful, we want to propose reasonable $$p$$ values. We could maybe sample uniformly from some finite space. Or, as we'll do in this post, 
+we can sample from a normal distribution centered at the current value, $$p_c$$. This is more efficient because if we're sampling uniformly, we'll get any random value which not be good, so we'd end up rejecting lots of samples. 
+Instead, if we sample near $$p_c$$ the new proposed value $$p$$ should be relatively similar in likelihood, and therefore more likely to be accepted.
 
 ## A real world example
 
