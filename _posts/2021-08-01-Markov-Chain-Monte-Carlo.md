@@ -252,5 +252,6 @@ Hm, okay. That's not a huge difference. The posterior still isn't that great of 
 
 First, I've found through playing with this data (and dummy data) that the choice of prior parameters matters a lot. 
 If you choose a terrible prior initially, you'll still see the effects of that in your posterior. 
+If you want, you can run MCMC again, except this time, use the posterior as the prior. At some point, this would have to be considered overfitting. 
 
 Second, and probably more important, is that modeling stock returns as a normal distribution is probably inherently flawed. So what could we do? You could try doing MCMC but with a Cauchy distribution (fat tails basically) - or we can try a non-parametric estimation. I will try to cover that in another post soon.
