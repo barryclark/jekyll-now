@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Replace Supplier with Supplies" and friends
+title: _Replace Supplier with Supplies_ and friends
 ---
 
 Here are three very specific uses of Extract Method on a function that takes an unwieldy object as an input, to help make code cleaner and easier to test. I learned these from Arlo Belshee.
