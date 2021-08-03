@@ -8,7 +8,7 @@ Hello there! thanks for stopping by!<br>
 <br>
 I am Kailash, I'm an indie app developer. <br>
 
-I'm currently building a mobile application that enable people to voice tape their memories.(Think making mixtapes for your future self!). Hoping to get the app in playstore soon!<br>
+I'm currently building a mobile application that enables people to voice tape their memories.(Think making mixtapes for your future self!). Hoping to get the app in playstore soon!<br>
 <br>
 I really like making things better and
 I'm very happy about the impact I'm able to make by working on technology.<br>
