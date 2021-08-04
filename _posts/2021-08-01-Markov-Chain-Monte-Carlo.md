@@ -127,7 +127,7 @@ Let's say we want to model daily SPY returns. For starters, we can say daily ret
 But let's be a bit more realistic. We definitely _don't_ know the best values for $$\mu$$ and $$\sigma$$. Why should we pretend that we do by choosing a single value for each? Instead, let's admit uncertainty and instead describe $$\mu$$ and $$\sigma$$ probabilistically. 
 
 We can assume for now that their distributions are normal. Note that these normal distributions are _not_ related to our normal distribution of the data. The data distribution model family could be anything - skew-normal, beta, etc - and we'd still probably want to model our parameters as normally distributed. 
-Unless you have some reason to think your guess about your parameters is biased, then a normal distribution is a very reasonable "shape" to describe your parameters.
+Unless you have some reason to think your guess about your parameters is biased, then a normal distribution is a very reasonable "shape" to describe your parameters. (TODO - is this true? if so then why bother with MCMC at all? you can easily integrate a normal)
 
 So let's say $$\mu \sim \mathcal{N}(0, 0.01)$$ and $$\sigma \sim \mathcal{N}(0.01, 0.005)$$. 
 
