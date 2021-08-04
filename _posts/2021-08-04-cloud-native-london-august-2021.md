@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Two great speakers from  JFrog and Shipa join us tonight at the August Cloud Native London virtual meetup from 6:45pm BST tonight, on Rambly and YouTube! 
