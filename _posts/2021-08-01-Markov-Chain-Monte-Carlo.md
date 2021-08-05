@@ -19,7 +19,7 @@ But I didn't really know what that meant at first.
 - What even is Bayesian statistics; how is it meaningfully different from general "statistics"?
 - Why is sampling from a distribution difficult?
 
-### What makes an integral intractable?** 
+### What makes an integral intractable?
 
 Well, there's sort of two, overloaded definitions here:
 
@@ -122,21 +122,31 @@ Instead, if we sample near $$p_c$$ the new proposed value $$p$$ should be relati
 
 I struggled to understand many of the blogs I read because they didn't use an example. So I hope to illustrate MCMC using a concrete example. That said, I found [this blog](https://twiecki.io/blog/2015/11/10/mcmc-sampling/) to do a pretty good job of explaining the algorithm. 
 
-Let's say we want to model daily SPY returns. For starters, we can say daily returns are normally distributed. We don't have any data to look at right now, but we have some rough assumptions about how markets work, so let's go from there: we could say the mean $$\mu$$ is 0 and the standard deviation $$\sigma$$ is 0.01 - or, in other words, 1%. 
+Let's say we want to model daily SPY returns. I actually did a first draft of this that tried to model them as a normal distribution. The results were lackluster. I'd normally include them for transparency sake, but in the interest of brevity, I'm excluding them. The point is that I tried one type of model first, didn't like it, and tried again with a second model.
+
+So we're going to model the returns as a t-distribution. To be honest, I don't know if this is bad practice, since I think t-distributions are meant to be stand-ins for normal distributions when you don't have a lot of data.
+
+We don't have any data to look at right now, but we have some rough assumptions about how markets work, so let's go from there: we could say the mean $$\mu$$ is 0 and the standard deviation $$\sigma$$ is 0.01 - or, in other words, 1%. t-distributions also have a degrees-of-freedom (DF) parameter, but I'm less interested in fitting that for now (you can feel free too, I'm just taking a lazy shortcut). Let's say DF=20.
 
 But let's be a bit more realistic. We definitely _don't_ know the best values for $$\mu$$ and $$\sigma$$. Why should we pretend that we do by choosing a single value for each? Instead, let's admit uncertainty and instead describe $$\mu$$ and $$\sigma$$ probabilistically. 
 
-We can assume for now that their distributions are normal. Note that these normal distributions are _not_ related to our normal distribution of the data. The data distribution model family could be anything - skew-normal, beta, etc - and we'd still probably want to model our parameters as normally distributed. 
-Unless you have some reason to think your guess about your parameters is biased, then a normal distribution is a very reasonable "shape" to describe your parameters. (TODO - is this true? if so then why bother with MCMC at all? you can easily integrate a normal)
+For $$mu$$, we can model it as a normal distribution. For $$sigma$$, since it's non-negative, we can model is as a half-normal distribution. We'll try to choose reasonable parameters for these, but again, these are prior models, so there's a good chance our choices will be bad.
 
-So let's say $$\mu \sim \mathcal{N}(0, 0.01)$$ and $$\sigma \sim \mathcal{N}(0.01, 0.005)$$. 
+So we have
 
-Why did I pick those values? I don't really know! They're just a best guess for now. I know from previous experience that the mean can't be _that_ far from 0, and I know that the standard deviation can't be _that_ far from 1%. 
+$$y \sim t(\mu, \sigma, DF=50)$$
 
-So basically we're saying that on average, we expect the daily return for SPY to be 0, with a standard deviation of 1%. This might not be a very good guess, but we don't have much to go off of yet except for our own past experience. 
+$$\mu ~ \mathcal{N}(0, 0.01)$$
+
+$$\sigma \sim h(0, 0.01)$$
+
 Once we fit it with data and generate a posterior, we'll have a better model. And that's the whole point, after all.
 
-So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. If we plot them as a histogram along with our prior model:
+So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. 
+
+- TODO explain how we can't plot our model, instead need to sample - and i'm skipping ahead by doing so
+
+If we plot them as a histogram along with our prior model:
 
 ![prior-vs-data](https://user-images.githubusercontent.com/1283020/127808316-a4260fe8-9882-4e6e-a489-bc9cf799e675.png)
 
@@ -245,14 +255,21 @@ If you're familiar with Markov chains, this is basically just saying that it tak
 
 So now we have a new model for $$\mu$$ and $$\sigma$$, which essentially means that we have a new model for our data. 
 
-If we choose the estimated expected value of $$\mu$$ and $$\sigma$$ to use as the parameters in a normal distribution:
+I was initially frustrated when I saw many of the explainers I was reading conclude with plots of the parameter posteriors. I want to simulate data, not parameters! And honestly, it's not exactly _trivial_ to generate fake data. It is if you know what you're doing, but I didn't!
 
-![post-prior-data](https://user-images.githubusercontent.com/1283020/127807903-2e0b46ef-62a5-43be-b947-2d943739c356.png)
+The key insight is that you're interested in the posterior predictive distribution $$P(D* \mid D)$$ which we can get by continuing to sample parameters $$\theta$$ and for each $$\theta_i$$, draw $$D* ~ P(D | \theta_i)$$. How do we draw that though? 
+Well, we actually just plug in the parameter values from $$\theta_i$$ into our data model and sample from that. 
+This too got me scratching my head a bit: what if our data model is complicated and it's difficult to sample? I think the idea is that if that happens, you
+can rewrite it as a posterior distribution where the given is some latent variable, and then use MCMC to sample.
 
-Hm, okay. That's not a huge difference. The posterior still isn't that great of a fit. Why not? I think it could be two things mainly. 
+- TODO do you even need MCMC in that case? if the components themselves aren't terrible, then uhhh you can sample individual component params, and plug those in, and then calculate that? b/c it's very unlikely that your model itself is intractable to calculate for single values
+
+![post-sample](https://user-images.githubusercontent.com/1283020/128387034-5d0266bc-2be2-43ac-99f5-ad1fe48b5e12.png)
+
+Hm, okay. The posterior still isn't that great of a fit. Why not? I think it could be two things mainly. 
 
 First, I've found through playing with this data (and dummy data) that the choice of prior parameters matters a lot. 
-If you choose a terrible prior initially, you'll still see the effects of that in your posterior. 
-If you want, you can run MCMC again, except this time, use the posterior as the prior. At some point, this would have to be considered overfitting. 
+If you choose a bad prior initially, you'll still see the effects of that in your posterior. 
+If you want, you can run MCMC again, except this time, use the posterior as the prior. I don't know if that's sacrilege, as it starts to become overfitting if you do it enough times. 
 
-Second, and probably more important, is that modeling stock returns as a normal distribution is probably inherently flawed. So what could we do? You could try doing MCMC but with a Cauchy distribution (fat tails basically) - or we can try a non-parametric estimation. I will try to cover that in another post soon.
+Second, and probably more important, is that modeling stock returns as a symmetric t-distribution is probably inherently flawed. So what could we do? You could try doing MCMC but with a more involved data model - or we can try a non-parametric estimation. I will try to cover that in another post soon.
