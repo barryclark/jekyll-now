@@ -41,23 +41,21 @@ Finally, **riding a car or plane** was the fastest, most expensive, and dullest 
 
 ### What I’ve learned
 
-What do bike brakes, IV drips, and fire hoses have in common? Fluid mechanics! Yes, I've been still thinking about how cool fluid mechanics are, even after shelving my scuba diving certification for the time being. Its applications surrounds us - literally, like pipes!
+What do bike brakes, IV drips, and fire hoses have in common? **Fluid mechanics!** I've been still thinking about how cool fluid mechanics are, even after shelving my scuba diving certification for the time being. Its applications surround us - literally, like pipes! In order to keep the blog post short, I've barely scratched the surface of this topic.
 
-#### Background
+#### Background - under pressure!
 
-Before going into fluid mechanics, a bit of background is needed:
+Pressure is the amount of force exerted over a given cross-sectional area. The exact formula is `P = F/A`. This is why, for example, a syringe's tiny needle can pierce one's skin with a relatively soft jab, while poking skin with the blunt end of a pencil might only result in an annoyed friend. *Did you know?* Flight attendants in the early days of commercial flight couldn't wear high heels because their weight would cause the heels to pierce through the airplane floor from the immense pressure!
 
-Pressure is the amount of force exerted over a given cross-sectional area. The exact formula is `P = F/A`. This is why, for example, a syringe's tiny needle can pierce skin with a relatively soft jab. *Did you know?* Flight attendants in the early days of commercial flight couldn't wear high heels because their weight would cause the heels to pierce through the airplane floor from the immense pressure!
-
-Pressure can also be expressed relative to the depth of an object in a fluid, or the relative height of a fluid. (`P = hpg`, and the Interwebs has articles on how to derive this.) *Did you know?* IV bags are hung higher so that the fluid's pressure is higher than the pressure in a patient's vein, so the fluid flows into the patient.
+Pressure can also be expressed relative to the depth of an object in a fluid, or the relative height of a fluid. (`P = hpg`, and the Interwebs has articles on the specific variables and how to derive this formula.) *Did you know?* IV bags are hung higher than the patient so the fluid's pressure is higher than the pressure in a patient's vein. This pressure difference results in the fluid to flow into the patient.
 
 #### Pascal's Principle
 
-One of the coolest things I've learned about fluid mechanics is [Pascal's Principle](https://en.wikipedia.org/wiki/Pascal%27s_law). In short, if a fluid is contained in a closed container, a pressure change in the container is transmitted throughout the fluid without any loss. Why is this so important to know?
+One of the coolest things I've learned about fluid mechanics is [Pascal's Principle](https://en.wikipedia.org/wiki/Pascal%27s_law). In short, if a fluid is contained in a closed container, a pressure change in the container is transmitted throughout the fluid without any loss. Why is this important to know?
 
-**Fluid pressure distributes evenly.** That means the pressure change can occur at one end, and cause pressure change throughout a potentially long container. Bike brakes, for example, can use a hydraulic system to brake a wheel by squeezing the lever on the handlebar.
+**Fluid pressure distributes evenly throughout the container.** That means the pressure change can occur at one end, and cause uniform pressure change throughout a potentially long container. Bike brakes, for example, can use a hydraulic system to brake the rear wheel by squeezing the lever on the handlebar.
 
-Since fluid pressure distributes evenly, the **force adjusts accordingly based on the cross-sectional area.** If a small force is exerted on one end with a small cross-sectional area, the other end with a larger cross-sectional area will exert a larger force. The [hydraulic press](https://en.wikipedia.org/wiki/Hydraulic_press) is a great demonstration of Pascal's Principle in action.
+Since fluid pressure distributes evenly, the **force adjusts accordingly based on the cross-sectional area of the container.** According to the formula `P = F1/A1 = F2/A2`, if a small force is exerted on one end with a small cross-sectional area, the other end with a larger cross-sectional area will exert a larger force. This seems non-intuitive (to me at least), but it has led to many engineering breakthroughs. The [hydraulic press](https://en.wikipedia.org/wiki/Hydraulic_press) is a great demonstration of Pascal's Principle in action.
 
 Note that Pascal's Principle doesn't apply to a fire hose once the water is let loose - since the fire hose is no longer a closed container!
 
