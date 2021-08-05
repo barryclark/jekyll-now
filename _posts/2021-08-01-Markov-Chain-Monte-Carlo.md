@@ -178,6 +178,8 @@ For each of the proposed number pairs, we compute the likelihood function using 
 of the previously accepted $$\mu$$ and $$\sigma$$. If the proposal is better, we accept it. If it's worse, we accept it with 
 probability $$\dfrac{P(D \mid \mu_{p},\sigma_{p})}{P(D \mid \mu_{c},\sigma_{c})}$$. If we reject it, we simply don't have a new sample yet, and will try again. So theoretically if you choose a very bad way of picking proposals, it could take you a longer time to generate samples. 
 
+- **TODO** update the code
+
 This entire algorithm can fit into a short python program:
 ```python
 def likelihood(mu, sigma, data):
@@ -222,19 +224,18 @@ while i < 20000:
 
 Here are the results I got from running this code: 
 
-![mu-sigma-hists](https://user-images.githubusercontent.com/1283020/127893963-2acd37c0-f93c-40e4-a2b1-6eb69cc1bb3c.png)
+![mu-sigma-hists](https://user-images.githubusercontent.com/1283020/128391243-95f43f13-9421-48fd-af8e-1bfcaf680582.png)
 
 These are the histograms of the sampled posterior values for $$\mu$$ and $$\sigma$$.
 
-![mu-sigma-trace](https://user-images.githubusercontent.com/1283020/127878812-a57a4aaa-473f-4051-a55b-1681449c676a.png)
+![my-sigma-trace](https://user-images.githubusercontent.com/1283020/128391346-ffcd3383-c128-4142-9f53-93cbb8496ee8.png)
 
 These are the traces for $$\mu$$ and $$\sigma$$. This is just plotting how the current $$\mu$$ and $$\sigma$$ are changing over time.
 It's good for a sanity check to ensure our samples have converged and are also not overly autocorrelated.
 
-![autocorr](https://user-images.githubusercontent.com/1283020/127891200-b9985ff2-fa05-408e-9195-ddc021a8ebcf.png)
+![autocorr](https://user-images.githubusercontent.com/1283020/128391433-7fb0a03e-9649-4a63-b448-8fa1f50c70a1.png)
 
-These are the auto-correlation graphs for $$\mu$$ (orange) and $$\sigma$$ (blue). The graph for $$\mu$$ doesn't look great and implies our samples are likely
-too dependent, but oh well for now. 
+These are the auto-correlation graphs for $$\mu$$ (orange) and $$\sigma$$ (blue). 
 
 #### Doing it by hand
 
