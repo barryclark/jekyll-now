@@ -136,21 +136,23 @@ So we have
 
 $$y \sim t(\mu, \sigma, DF=50)$$
 
-$$\mu ~ \mathcal{N}(0, 0.01)$$
+$$\mu \sim \mathcal{N}(0, 0.01)$$
 
 $$\sigma \sim h(0, 0.01)$$
 
 Once we fit it with data and generate a posterior, we'll have a better model. And that's the whole point, after all.
 
 So let's say we've collected data. We have the daily returns for SPY going back the last 10 years. 
+I'd like to plot the data histogram next to our prior model as a visual sanity check of how far off we are.
 
-- TODO explain how we can't plot our model, instead need to sample - and i'm skipping ahead by doing so
+The thing is though that our model is hierarchical, so it's not trivial to draw it like we would with a normal curve.
+We could just use single values for the parameters, but that's misleading. Instead we can sample from our prior and plot that histogram for comparsion.
 
-If we plot them as a histogram along with our prior model:
+We sample from our prior by repeatedly sampling $$\mu$$ and $$\sigma$$ from their distributions, plugging those in as single values for the data model, and then sampling from that distribution.
 
-![prior-vs-data](https://user-images.githubusercontent.com/1283020/127808316-a4260fe8-9882-4e6e-a489-bc9cf799e675.png)
+![prior-vs-data](https://user-images.githubusercontent.com/1283020/128525294-d2386a97-00d6-47f2-9dd8-0dbb9b389f22.png)
 
-We can see clearly that this doesn't align well with our prior model at all. 
+Orange is the data and blue is our model. We can see clearly that our model doesn't align very well. 
 
 So now we can start computing our posterior. 
 
@@ -182,44 +184,52 @@ probability $$\dfrac{P(D \mid \mu_{p},\sigma_{p})}{P(D \mid \mu_{c},\sigma_{c})}
 
 This entire algorithm can fit into a short python program:
 ```python
-def likelihood(mu, sigma, data):
-    """note this isn't performing the correct operation. 
-    but if you try to use multiplication, the value will vanish b/c our data
-    has outlier values that are unexplainable by a normal model
+def likelihood(u,g, data):
+    """
+    the algorithm here is incorrect b/c it adds the pdf values instead of multiplying them,
+    but I found using log probability or multiplication led to unstable results
     """
     acc = 1
-    for x in stats.norm(mu, sigma).pdf(data):
+    for x in stats.t.pdf(data, df=50, loc=u, scale=g):
         if not np.isnan(x):
             acc += x
     return acc
+ 
+def prior(u, g):
+    u_p = stats.norm(0.001, 0.01).pdf(u)
+    g_p = stats.halfnorm(0, 0.001).pdf(g)
+    return u_p * g_p
 
+def sample(u_c, g_c):
+    likelihood_current = likelihood(u_c, g_c, spy['%Return'])
+    prob_current = likelihood_current * prior(u_c, g_c)
 
-def prior(mu, sigma):
-    mu_p = stats.norm(0, 0.01).pdf(mu)
-    sigma_p = stats.norm(0.01, 0.005).pdf(sigma)
-    return mu_p * sigma_p
-    
-mu = 0.001
-sigma = 0.003
-i = 0
-# spy['%Return'] is a pandas dataframe column of daily percent change in SPY
-likelihood_current = likelihood(mu, sigma, spy['%Return'])
-prob_current = likelihood_current * prior(mu, sigma)
-samples = [(mu, sigma)]
-while i < 20000:
-    if i % 1000 == 0:
-        print(f'{i}th step')
-    i += 1
-    mu_p = np.random.normal(mu, 0.001)
-    sigma_p = np.random.normal(sigma, 0.001)
-    likelihood_p = likelihood(mu_p, sigma_p, spy['%Return'])
-    prob_p = likelihood_p * prior(mu_p, sigma_p)
+    u_p = np.random.normal(u_c, 0.001)
+    g_p = np.random.normal(g_c, 0.001)
+
+    likelihood_p = likelihood(u_p, g_p, spy['%Return'])
+    prob_p = likelihood_p * prior(u_p, g_p)
     r = np.random.uniform()
     if r < prob_p / prob_current:
-        samples.append((mu_p, sigma_p))
-        mu = mu_p
-        sigma = sigma_p
-        prob_current = prob_p
+        return u_p, g_p
+        
+    return None 
+
+u = 0.001
+g = 0.01
+i = 0
+likelihood_current = likelihood(u, g, spy['%Return'])
+prob_current = likelihood_current * prior(u, g)
+samples = [(u, g)]
+while i < 10000:
+    if i % 1000 == 0:
+        print(f'{i}th step', len(samples))
+    i += 1
+    theta = sample(u, g)
+    if theta is None:
+        continue
+    u,g = theta
+    samples.append((u,g))
 ```
 
 Here are the results I got from running this code: 
@@ -260,17 +270,11 @@ I was initially frustrated when I saw many of the explainers I was reading concl
 
 The key insight is that you're interested in the posterior predictive distribution $$P(D* \mid D)$$ which we can get by continuing to sample parameters $$\theta$$ and for each $$\theta_i$$, draw $$D* ~ P(D | \theta_i)$$. How do we draw that though? 
 Well, we actually just plug in the parameter values from $$\theta_i$$ into our data model and sample from that. 
-This too got me scratching my head a bit: what if our data model is complicated and it's difficult to sample? I think the idea is that if that happens, you
-can rewrite it as a posterior distribution where the given is some latent variable, and then use MCMC to sample.
 
-- TODO do you even need MCMC in that case? if the components themselves aren't terrible, then uhhh you can sample individual component params, and plug those in, and then calculate that? b/c it's very unlikely that your model itself is intractable to calculate for single values
+![post-vs-sample](https://user-images.githubusercontent.com/1283020/128529225-e2546eec-2abe-4be6-82ed-afce23d966f6.png)
 
-![post-sample](https://user-images.githubusercontent.com/1283020/128387034-5d0266bc-2be2-43ac-99f5-ad1fe48b5e12.png)
+That looks a lot better! 
 
-Hm, okay. The posterior still isn't that great of a fit. Why not? I think it could be two things mainly. 
+But as I said above, this wasn't the first run. My normal model results were lackluster, and I also played with the prior parameters a bit before the fit looked this good. I found from doing this exercise that the prior matters more than I would've thought. 
 
-First, I've found through playing with this data (and dummy data) that the choice of prior parameters matters a lot. 
-If you choose a bad prior initially, you'll still see the effects of that in your posterior. 
-If you want, you can run MCMC again, except this time, use the posterior as the prior. I don't know if that's sacrilege, as it starts to become overfitting if you do it enough times. 
-
-Second, and probably more important, is that modeling stock returns as a symmetric t-distribution is probably inherently flawed. So what could we do? You could try doing MCMC but with a more involved data model - or we can try a non-parametric estimation. I will try to cover that in another post soon.
+Also, it's possible that modeling returns like this as a symmetric t-distribution is inherently flawed. We could try MCMC with a more complicated model, or we could try using non-parametric estimation. I will try to cover that in another post soon.
