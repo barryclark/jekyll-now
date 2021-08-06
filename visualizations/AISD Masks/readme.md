@@ -5,3 +5,9 @@ Source: https://www.austinisd.org/sites/default/files/dept/communications/Survey
 Question #1: "Do you plan to send your child to school wearing a mask?
 
 Question #2: "Do you want school staff to make sure that your child wears a mask throughout the day?"
+
+![Elementary Schools](https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/visualizations/AISD%20Masks/Elementary%20Schools%20Q1.png)
+
+![Middle Schools](https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/visualizations/AISD%20Masks/Middle%20Schools%20Q1.png)
+
+![alt text](https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/visualizations/AISD%20Masks/High%20Schools%20Q1.png)
