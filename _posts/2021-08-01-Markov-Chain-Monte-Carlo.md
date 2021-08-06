@@ -180,8 +180,6 @@ For each of the proposed number pairs, we compute the likelihood function using 
 of the previously accepted $$\mu$$ and $$\sigma$$. If the proposal is better, we accept it. If it's worse, we accept it with 
 probability $$\dfrac{P(D \mid \mu_{p},\sigma_{p})}{P(D \mid \mu_{c},\sigma_{c})}$$. If we reject it, we simply don't have a new sample yet, and will try again. So theoretically if you choose a very bad way of picking proposals, it could take you a longer time to generate samples. 
 
-- **TODO** update the code
-
 This entire algorithm can fit into a short python program:
 ```python
 def likelihood(u,g, data):
