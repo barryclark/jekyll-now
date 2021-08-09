@@ -276,7 +276,7 @@ a, at least in my opinion, strange quark in C++ and C.
 
 ---
 
-In regards to C++ there is one additional that can help
+In regards to C++ there is one addition that can help
 remove this weirdness. [`std::experimental::propagate_const`](https://en.cppreference.com/w/cpp/experimental/propagate_const)
 makes it so that pointers and references give access to
 const objects when acted on in const methods.
