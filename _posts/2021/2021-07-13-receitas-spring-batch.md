@@ -1,5 +1,5 @@
 ---
-title: "Receitas de Spring Batch"
+title: "Dicas de Spring Batch"
 permalink: "/2020/13/2021-07-13-receitas-spring-batch.html"
 categories: [spring, batch, dados, ferramentas]
 ---
