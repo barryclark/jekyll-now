@@ -230,7 +230,7 @@ then this works fine, but this time I can't explain
 where the `const` has gone. I assume this works
 because the machine code under the hood works the
 same way as before. Disecting the mess that is
-https://en.cppreference.com/w/cpp/language/operator_member_access#Built-in_member_access_operators
+[Built-in member access operators](https://en.cppreference.com/w/cpp/language/operator_member_access#Built-in_member_access_operators)
 leaves me with more questions than answers.
 
 ---
@@ -261,14 +261,14 @@ int main(void)
 ```
 
 then I can get some clarity from
-https://en.cppreference.com/w/c/language/operator_member_access#Member_access_through_pointer
-which clarity says
+[C member access through pointer](https://en.cppreference.com/w/c/language/operator_member_access#Member_access_through_pointer)
+which clearly says
 
 ```
 If the type pointed to by the left operand is const or volatile qualified, the result is also qualified.
 ```
 
-One day I'll get the motivation to clarify that the cpp
+One day I'll get the motivation to clarify that the C++
 definition has equivalent language to mean the same thing.
 
 So all in all with these examples we've come to learn of
