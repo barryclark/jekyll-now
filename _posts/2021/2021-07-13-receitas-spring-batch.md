@@ -146,6 +146,9 @@ o `Processor` irá transformar, executar regras ou tratar os dados e o `ItemWrit
 Espero que esse artigo seja encarado como o que é, uma série de dicas que não são a bala de prata, mas que podem se encaixar em algum problema que algum leitor
 precise resolver. Sugestões e _feedbacks_ serão bem-vindos!
 
+### Código
+* [https://github.com/ivanqueiroz/spring-batch-dicas](https://github.com/ivanqueiroz/spring-batch-dicas)
+
 ### Fontes
 
 * https://docs.spring.io/spring-batch/docs/4.3.x/reference/html/index.html
