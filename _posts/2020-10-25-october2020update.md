@@ -12,17 +12,17 @@ Currently, I have been researching different ways to help create an affordable, 
 - Rechargeable AA Batteries (~$5 for 3 units)
 - Battery Case (~$0.76 per unit)
 
-![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/october2020-images/new-technology.png)
+![](../images/october2020-images/new-technology.png)
 
 ### 1st Draft of Instructables ✏️
 I started writing a build guide for the first ZBCE prototype on [Instructables](https://www.instructables.com). Here's a quick preview for now.
 
-![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/october2020-images/instructables-preview.png)
+![](../images/october2020-images/instructables-preview.png)
 
 ### Learning how to use Fusion 360 😵
 The prototype is basically done I just need to design an enclosure for it. I've used Fusion 360 to design simple things before, but I am definitely still an amateur. I'm trying to get better at CAD, here is an awesome resource I used to help me learn [3D Design Class](https://www.instructables.com/class/3D-Design-Class/).
 
-![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/october2020-images/fusion360-design.png)
+![](../images/october2020-images/fusion360-design.png)
 
 ### Building Discord Community 👨‍👩‍👦
 The idea behind this was to help foster an opensource community for our project. Hopefully, we can attract some great community members and partners who would love to help us with our mission. If you are interested in joining the community here's an [invite link](https://discord.gg/mGKVVpxTPr).
@@ -33,7 +33,7 @@ I created an about page for new members for ZBCE on this [blog](https://zotbins.
 ### Experimenting with ORMs 📚
 I was experimenting with creating a new SQL database for ZBCE datalogging. I've learned about this concept called [Object-relational mapping](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping). It's a really neat concept and is great for developing a RESTful API service for storing data. I'm using a tool called [SQLAlchemy](https://www.sqlalchemy.org/) for Python which really allows me to develop my database schema quickly, query the database, and modify the database. It's also super neat, because you can actually use this library with all sorts of SQL databases such as MySQL, PostgreSQL, SQLlite, and more. That means it has flexible deployment options. Here's a quick screenshot of my code I used to develop a quick database in Python. It looks pretty neat!
 
-![](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/october2020-images/sql-orm-preview.png)
+![](../images/october2020-images/sql-orm-preview.png)
 
 ### Learning About More Sustainability Resources 🌱
 I stumbled upon this comprehensive resource for all sorts of sustainability technologies and topics: [Awesome Sustainable Technology](https://github.com/protontypes/awesome-sustainable-technology).
