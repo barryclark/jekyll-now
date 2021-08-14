@@ -562,11 +562,6 @@ tei-note {
   display: block;
   color:red;
   border:thin black solid;
-  position:absolute;
-  right:10px;
-  left:75%;
-  top:0;
-  
 }
 
 tei-notesstmt {

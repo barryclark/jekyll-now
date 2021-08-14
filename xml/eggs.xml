@@ -46,7 +46,7 @@
                   <l>Wrapped up in a five-pound note</l>
                   <l>The owl looked up at the stars above</l>
                   <l>And sang to a small <seg ana="theme1" xml:id="n001">guitar</seg>,</l>
-                   <note target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</note>
+                   <note place="end" target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</note>
                   <l>O Lovely Pussy! O Pussy my love!</l>
                   <l>What a beautiful pussy you are</l>
                   <l>You are, you are,</l>
