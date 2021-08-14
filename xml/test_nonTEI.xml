@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/css" href="CETEIcean_local_nonTEI.css"?>
 <text>
     <para>A test paragraph to see what happens</para>
-    <para>Another paragraph</para>
+    <para>Another paragraph with a <ref target="https://www.wwp.northeastern.edu">link to the WWP</ref></para>
     <verse>
         <h>A Short Poem</h>
         <line>This is how we do poetry</line>
