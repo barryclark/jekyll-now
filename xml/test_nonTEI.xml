@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="CETEIcean_local_nonTEI.css"?>
-<text>
+<TEI>
+    <text>
     <para>A test paragraph to see what happens</para>
     <para>Another paragraph with a <ref target="https://www.wwp.northeastern.edu">link to the WWP</ref></para>
     <verse>
@@ -9,3 +10,4 @@
         <line>In my simple encoding.</line>
     </verse>
 </text>
+</TEI>
