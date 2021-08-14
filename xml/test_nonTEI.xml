@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="CETEIcean_local_nonTEI.css"?>
-<TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <text>
     <para>A test paragraph to see what happens</para>
     <para>Another paragraph with a <ref target="https://www.wwp.northeastern.edu">link to the WWP</ref></para>
