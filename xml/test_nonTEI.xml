@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CETEIcean_local_nonTEI.css"?>
 <text>
     <para>A test paragraph to see what happens</para>
     <para>Another paragraph</para>

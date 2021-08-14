@@ -8,7 +8,8 @@ title: TEI
 <div id="archives">
 <h1>TEI documents using CETEIcean</h1>
 <p><em><a href="../xml/eggs.html">Nonsense poetry</a></em></p>
-<p><em><a href="../xml/test_nonTEI.html">Test non-TEI document</a></em></p>
+<p><em><a href="../xml/test_nonTEI.html">Test non-TEI document, HTML version</a></em></p>
+<p><em><a href="../xml/test_nonTEI.xml">Test non-TEI document, XML version</a></em></p>
 
 
 </div>

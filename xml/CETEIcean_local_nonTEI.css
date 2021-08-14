@@ -1,9 +1,14 @@
 text {
+    display:block;
     background-color:aqua;
 }
 para {
+    display:block;
     font-weight:bold;
 }
 verse {
     color:red;
+}
+line {
+    display:block;
 }
