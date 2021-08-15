@@ -8,19 +8,20 @@ jhf-para {
 }
 jhf-verse {
     display:block;
-    color:red;
     margin:1em;
 }
 jhf-line {
     display:block;
 }
-jhf-author:before {
+jhf-author {
     display:block;
+}
+jhf-author:before {
     content: "By ";
 }
 jhf-line:after {
     content:attr(n);
-    text-align:right;
+    text-align:justify;
 }
 jhf-h {
     font-size:150%;
