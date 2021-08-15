@@ -1,6 +1,7 @@
 jhf-text {
     display:block;
     background-color:olive;
+    margin:1em;
 }
 jhf-para {
     display:block;
@@ -8,14 +9,28 @@ jhf-para {
 jhf-verse {
     display:block;
     color:red;
+    margin:1em;
 }
 jhf-line {
     display:block;
 }
 jhf-author:before {
-    content: "By "
+    display:block;
+    content: "By ";
 }
 jhf-line:after {
     content:attr(n);
-    text-align:right
+    text-align:right;
+}
+jhf-h {
+    font-size:150%;
+}
+jhf-seg[ana="chickens"] {
+    color:blue;
+    font-size:120%;
+}
+
+jhf-seg[ana="eggs"] {
+    color:orange;
+    font-size:120%;
 }
