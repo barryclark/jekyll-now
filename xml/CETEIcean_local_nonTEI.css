@@ -1,14 +1,14 @@
-tei-text {
+jhf-text {
     display:block;
     background-color:aqua;
 }
-tei-para {
+jhf-para {
     display:block;
     font-weight:bold;
 }
-tei-verse {
+jhf-verse {
     color:red;
 }
-tei-line {
+jhf-line {
     display:block;
 }
