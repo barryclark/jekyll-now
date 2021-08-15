@@ -1,14 +1,21 @@
 jhf-text {
     display:block;
-    background-color:aqua;
+    background-color:olive;
 }
 jhf-para {
     display:block;
-    font-weight:bold;
 }
 jhf-verse {
+    display:block;
     color:red;
 }
 jhf-line {
     display:block;
+}
+jhf-author:before {
+    content: "By "
+}
+jhf-line:after {
+    content:attr(n);
+    text-align:right
 }

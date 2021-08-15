@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JHF xmlns="http://www.diegesis.net/ns/jhf">
+   <text>
+      
+         <division>
+            <h>Nonsense Poetry</h>
+            <division>
+               <h>Eggs</h>
+               <author>Ogden Nash</author>
+               <verse>
+                  <line n="1">Let's think of <seg ana="eggs">eggs</seg></line>
+                  <line>They have no legs</line>
+                  <line><seg ana="chickens">Chickens</seg> come from <seg ana="eggs">eggs</seg>,</line>
+                  <line>But they have legs.</line>
+                  <line n="5">The plot thickens—</line>
+                  <line><seg ana="eggs">Eggs</seg> come from <seg ana="chickens">chickens</seg></line>
+                  <line>But have no legs under 'em:</line>
+                  <line>What a conundrum!</line>
+               </verse>
+               <para>With a test <ref target="https://www.wwp.northeastern.edu">link</ref></para>
+            </division>
+            <division>
+               <h>The Owl and the Pussycat</h>
+               <author>Edward Lear</author>
+               <verse>
+                  <line n="1">The owl and the pussycat went to sea</line>
+                  <line>In a beautiful pea-green boat</line>
+                  <line>They took some money</line>
+                  <line>And plenty of honey</line>
+                  <line n="5">Wrapped up in a five-pound note</line>
+                  <line>The owl looked up at the stars above</line>
+                  <line>And sang to a small <seg ana="theme1" xml:id="n001">guitar</seg>,</line>
+                   <note place="end" target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</note>
+                  <line>O Lovely Pussy! O Pussy my love!</line>
+                  <line>What a beautiful pussy you are</line>
+                  <line n="10">You are, you are,</line>
+                  <line>What a beautiful pussy you are!</line>
+               </verse>
+               <verse>
+                  <line>Pussy said to the owl,</line>
+                  <line>You elegant fowl!</line>
+                  <line>How marvellous sweet you sing!</line>
+                  <line n="15">O let us be married,</line>
+                  <line>Too long we have tarried!</line>
+                  <line>But what shall we do for a ring?</line>
+                  <line>So they sailed away for a year and a day</line>
+                  <line>To the land where the Bong-tree grows,</line>
+                  <line n="20">And there in a wood, a Piggy-wig stood</line>
+                  <line>With a ring in the end of his nose,</line>
+                  <line>His nose, his nose,</line>
+                  <line>With a ring in the end of his nose.</line>
+               </verse>
+               <verse>
+                  <line>O Pig, are you willing</line>
+                  <line n="25">To sell for one shilling</line>
+                  <line>Your ring? Said the piggy, <said>I will!</said></line>
+                  <line>So they bore it away, and were married next day</line>
+                  <line>By the turkey who lives on the hill.</line>
+                  <line>They dined on quince, and plenty of mince,</line>
+                  <line n="30">Served up with a runcible spoon,</line>
+                  <line>And hand in hand, by the edge of the sand,</line>
+                  <line>They danced by the light of the moon—</line>
+                  <line>The moon, the moon—</line>
+                  <line>They danced by the light of the moon.</line>
+               </verse>
+            </division>
+         </division>
+      
+   </text>
+</JHF>
