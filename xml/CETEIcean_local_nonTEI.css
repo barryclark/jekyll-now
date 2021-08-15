@@ -1,14 +1,14 @@
-tei_text {
+tei-text {
     display:block;
     background-color:aqua;
 }
-tei_para {
+tei-para {
     display:block;
     font-weight:bold;
 }
-tei_verse {
+tei-verse {
     color:red;
 }
-tei_line {
+tei-line {
     display:block;
 }
