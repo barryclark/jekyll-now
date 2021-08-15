@@ -12,8 +12,8 @@
     <script>
       var CETEIcean = new CETEI();
       CETEIcean.getHTML5('test_nonTEI.xml', function(data) {
-        document.getElementById("TEI").innerHTML = "";
-        document.getElementById("TEI").appendChild(data);
+        document.getElementById("JHF").innerHTML = "";
+        document.getElementById("JHF").appendChild(data);
         CETEIcean.addStyle(document, data);
       });
 
