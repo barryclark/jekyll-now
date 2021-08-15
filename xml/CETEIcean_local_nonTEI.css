@@ -3,6 +3,10 @@ jhf-text {
     background-color:olive;
     margin:1em;
 }
+jhf-division {
+    display:block;
+}
+
 jhf-para {
     display:block;
 }
@@ -23,9 +27,14 @@ jhf-line:after {
     content:attr(n);
     text-align:justify;
 }
-jhf-h {
+division > jhf-h {
+    font-size:180%;
+}
+
+division > division > jhf-h {
     font-size:150%;
 }
+
 jhf-seg[ana="chickens"] {
     color:blue;
     font-size:120%;
