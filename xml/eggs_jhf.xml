@@ -25,12 +25,12 @@
                <verse>
                   <line n="1">The owl and the pussycat went to sea</line>
                   <line>In a beautiful pea-green boat</line>
-                  <line>They took some money</line>
+                  <line>They took some <seg ana="exchange">money</seg></line>
                   <line>And plenty of honey</line>
-                  <line n="5">Wrapped up in a five-pound note</line>
+                  <line n="5">Wrapped up in a <seg ana="exchange">five-pound note</seg></line>
                   <line>The owl looked up at the stars above</line>
-                  <line>And sang to a small <seg ana="theme1" xml:id="n001">guitar</seg>,</line>
-                   <note place="end" target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</note>
+                  <line>And sang to a small <seg ana="music" xml:id="n001">guitar</seg>, <note place="end" target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</note></line>
+                   
                   <line>O Lovely Pussy! O Pussy my love!</line>
                   <line>What a beautiful pussy you are</line>
                   <line n="10">You are, you are,</line>
@@ -39,11 +39,11 @@
                <verse>
                   <line>Pussy said to the owl,</line>
                   <line>You elegant fowl!</line>
-                  <line>How marvellous sweet you sing!</line>
+                  <line>How marvellous sweet you <seg ana="music">sing</seg>!</line>
                   <line n="15">O let us be married,</line>
                   <line>Too long we have tarried!</line>
                   <line>But what shall we do for a ring?</line>
-                  <line>So they sailed away for a year and a day</line>
+                  <line>So they sailed away for a <orig>year</orig><reg>yore</reg> and a day</line>
                   <line>To the land where the Bong-tree grows,</line>
                   <line n="20">And there in a wood, a Piggy-wig stood</line>
                   <line>With a ring in the end of his nose,</line>
@@ -52,7 +52,7 @@
                </verse>
                <verse>
                   <line>O Pig, are you willing</line>
-                  <line n="25">To sell for one shilling</line>
+                  <line n="25">To sell for <seg ana="exchange">one shilling</seg></line>
                   <line>Your ring? Said the piggy, <said>I will!</said></line>
                   <line>So they bore it away, and were married next day</line>
                   <line>By the turkey who lives on the hill.</line>

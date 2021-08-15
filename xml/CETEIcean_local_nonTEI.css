@@ -34,3 +34,20 @@ jhf-seg[ana="eggs"] {
     color:orange;
     font-size:120%;
 }
+jhf-seg[ana="music"] {
+    color:purple;
+    font-size:120%;
+}
+jhf-seg[ana="exchange"] {
+    color:yellow;
+    font-size:120%;
+}
+jhf-reg:before {
+    content:"<"    
+}
+jhf-reg:after {
+    content:">"    
+}
+jhf-orig {
+    text-decoration:line-through;
+}
