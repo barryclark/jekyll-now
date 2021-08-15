@@ -7,11 +7,11 @@ Happy New Year everyone! This month I'll be going over some of the updates for t
 ### Developing IoT-enabled Sensor Module: Waste Watcher 🔎
 In last month's [blog](https://zotbins.github.io/zbceblog/december2020update/), I demonstrated my new circuit for the sensor module, which I now call Waste Watcher. I still need to test my circuit a bit more thoroughly, but it seems to work for my preliminary tests. I will update you more on this in the next blog.
 
-![](../images/jan2021-images/waste_watcher_v1.jpg)
+![](../assets/img/jan2021-images/waste_watcher_v1.jpg)
 
 I have also updated the [Waste Watcher](https://github.com/zotbins/waste_watcher#quick-start) repository with some quick start guides to help others build and deploy their own sensor modules. If you check it out, let me know what you think in the comments below!
 
-![](../images/jan2021-images/waste_watcher_quickstart1.png)
+![](../assets/img/jan2021-images/waste_watcher_quickstart1.png)
 
 ### LAMP Server 💡
 There's not much to update here. I Just need to finish writing a setup guide so anyone can deploy their own LAMP server on their network. I explain more about this in last month's [blog](https://zotbins.github.io/zbceblog/december2020update/).
@@ -27,7 +27,7 @@ Currently our system is able to collect the following waste data:
 
 To find meaningful ways to present the data I decided to start a [mind mapping](https://en.wikipedia.org/wiki/Mind_map) exercise as shown below. Starting from the center I classify 4 different API calls: break-beam, photo, ultrasonic, and weight all related to waste data mentioned above. From each of those classes, I develop the type of analysis that users would want to see. For example, for the break beam bubble, one analysis that would be useful is seeing the amount of times the number of bins was used per hour (usage/hr). Then from that metric we may want to determine, how much more recycling or compost bins were used (usage diversion) or track the amount of times used over a period of time (usage vs. time). From there, I also determine how this analysis will be used. For example, keeping track of usage vs. time could quantify how much landfill bins were used less. This could be a real-time statistic that could be used to apply gamification principles, which I will explore in the section below.
 
-![](../images/jan2021-images/zbce_api_mind_map.png)
+![](../assets/img/jan2021-images/zbce_api_mind_map.png)
 
 ### Applying Gamification with APIs 🎮
 I started reading a book called *How to Save the World* by Katie Patrick, where she talks about applying gamification principles to solve environmental problems. Katie Patrick is an environmental engineer and software designer, and I started reading her book after watching her present in a video webinar because she talks about some very meaningful ideas that could be applied to ZotBins.
@@ -48,7 +48,7 @@ We can apply this same concept with our waste data. For example:
 4. **Reward**: Your bin HP restores.
 5. **Try Again**: Your bin "dies" (we'll need to workshop this)! You didn't reduce your waste and/or recycle and compost more.
 
-![](../images/jan2021-images/feedback_loop.png)
+![](../assets/img/jan2021-images/feedback_loop.png)
 
 There are actually a bunch of ways ZotBins has explored options in the past such as introducing point systems for a leaderboard or even converting the points into some sort of crypto currency. Anyway, there are plenty of ways that ZotBins can utilize gamification so stay tuned as the project continues to expand!
 
