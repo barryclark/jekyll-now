@@ -8,7 +8,7 @@ var CETEI = (function () {
       "rng": "http://relaxng.org/ns/structure/1.0",
       "jhf": "http://www.diegesis.net/ns/jhf"
     },
-    "tei": {
+    "jhf": {
       "eg": ["<pre>","</pre>"],
       // inserts a link inside <ptr> using the @target; the link in the
       // @href is piped through the rw (rewrite) function before insertion
