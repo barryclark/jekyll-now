@@ -27,11 +27,11 @@ jhf-line:after {
     content:attr(n);
     text-align:justify;
 }
-division > jhf-h {
+jhf-division > jhf-h {
     font-size:180%;
 }
 
-division > division > jhf-h {
+jhf-division > jhf-division > jhf-h {
     font-size:150%;
 }
 
