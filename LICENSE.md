@@ -1,4 +1,7 @@
-# License for Jekyll Now
+# License Information
+This repository contains components of several others, each of which has different licensing provisions. Those licenses are given below. Based on those licenses, all of the materials in this repository are freely available for use, copying, distribution, etc., as long as the license statement is included as credit is given to the creators.
+
+## License for Jekyll Now
 The MIT License (MIT)
 
 Copyright (c) 2015 Barry Clark
@@ -20,7 +23,7 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# License for CETEIcean
+## License for CETEIcean
 (Original license)[https://raw.githubusercontent.com/TEIC/CETEIcean/master/LICENSE.md]
 Copyright (c) 2016, Hugh Cayless and Raffaele Viglianti.
 All rights reserved.
@@ -33,7 +36,7 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# License for all other materials
+## License for all other materials
 Creative Commons Legal Code
 
 CC0 1.0 Universal
