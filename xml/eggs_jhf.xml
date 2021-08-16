@@ -17,7 +17,7 @@
                   <line>But have no legs under 'em:</line>
                   <line>What a conundrum!</line>
                </verse>
-               <para>With a test <ref target="https://www.wwp.northeastern.edu">link</ref></para>
+               <para>With a test <linkage url="https://www.wwp.northeastern.edu">link</linkage></para>
             </division>
             <division>
                <h>The Owl and the Pussycat</h>
