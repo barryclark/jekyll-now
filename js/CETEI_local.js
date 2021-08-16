@@ -5,8 +5,8 @@ var CETEI = (function () {
     "namespaces": {
       "tei": "http://www.tei-c.org/ns/1.0",
       "teieg": "http://www.tei-c.org/ns/Examples",
-      "rng": "http://relaxng.org/ns/structure/1.0",
-      "jhf": "http://www.diegesis.net/ns/jhf"
+      "rng": "http://relaxng.org/ns/structure/1.0"
+      // "jhf": "http://www.diegesis.net/ns/jhf"
     },
     "jhf": {
       "eg": ["<pre>","</pre>"],
