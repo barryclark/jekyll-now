@@ -155,7 +155,7 @@ colorApp.claim(6, "YOLO Teal", "I love Teal and I will steal it!", {from: accoun
 ![Console doulbe-claim](../assets/images/hello-world-nft/console-double-claim.png)  
 As expected, the contract enforces uniqueness.
 
-# Using the app to view metadata 
+# Using the dApp  
 
 It's now time to use our React dApp to give a better user experience.
 
@@ -210,7 +210,7 @@ the contract, plus gas fees for the execution of the method).
 When the transaction is complete (i.e. Ganache has mined the new block), we can see the transaction in Metamask...  
 ![Metamask transactions](../assets/images/hello-world-nft/metamask-txn.png)  
 and our dApp showing the new owner.  
-![Metamask transactions](../assets/images/hello-world-nft/react-red.png)
+![Claimed red](../assets/images/hello-world-nft/react-red.png)
 
 Awesome result!
 
