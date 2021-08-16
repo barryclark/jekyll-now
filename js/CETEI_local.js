@@ -15,7 +15,7 @@ var CETEI = (function () {
       "ptr": ["<a href=\"$rw@target\">$@target</a>"],
       // wraps the content of the <ref> in an HTML link
       "linkage": [
-        ["[url]", ["<a href=\"$rw@target\">","</a>"]]
+        ["[url]", ["<a href=\"$rw@url\">","</a>"]]
       ],
       "graphic": function(elt) {
         let content = new Image();
