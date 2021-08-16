@@ -2,6 +2,8 @@
 This repository contains components of several others, each of which has different licensing provisions. Those licenses are given below. Based on those licenses, all of the materials in this repository are freely available for use, copying, distribution, etc., as long as the license statement is included as credit is given to the creators.
 
 ## License for Jekyll Now
+(Link to original license)[https://github.com/barryclark/jekyll-now/blob/master/LICENSE]
+
 The MIT License (MIT)
 
 Copyright (c) 2015 Barry Clark
@@ -24,7 +26,8 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## License for CETEIcean
-(Original license)[https://raw.githubusercontent.com/TEIC/CETEIcean/master/LICENSE.md]
+(Link to original license)[https://raw.githubusercontent.com/TEIC/CETEIcean/master/LICENSE.md]
+
 Copyright (c) 2016, Hugh Cayless and Raffaele Viglianti.
 All rights reserved.
 
