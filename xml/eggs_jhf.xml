@@ -29,7 +29,7 @@
                   <line>And plenty of honey</line>
                   <line n="5">Wrapped up in a <seg ana="exchange">five-pound note</seg></line>
                   <line>The owl looked up at the stars above</line>
-                  <line>And sang to a small <seg ana="music" xml:id="n001">guitar</seg>, <note place="end" target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</note></line>
+                  <line>And sang to a small <seg ana="music" xml:id="n001">guitar</seg>, <endnote target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</endnote></line>
                    
                   <line>O Lovely Pussy! O Pussy my love!</line>
                   <line>What a beautiful pussy you are</line>

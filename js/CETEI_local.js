@@ -49,9 +49,8 @@ var CETEI = (function () {
           return dl;
         }
       ]],
-      "note": [
-        // Make endnotes
-        ["[place=end]", function(elt){
+      // Make endnotes
+      "endnote": function(elt) {
           if (!this.noteIndex){
             this["noteIndex"] = 1;
           } else {
@@ -75,9 +74,9 @@ var CETEI = (function () {
           note.innerHTML = elt.innerHTML;
           notes.appendChild(note);
           return content;
-        }],
+        },
         ["_", ["(",")"]]
-      ],
+      ,
       "teiHeader": function(e) {
         this.hideContent(e, false);
       },
