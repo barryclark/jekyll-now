@@ -12,6 +12,6 @@ Over the years, I've learnt to give more importance to journey(effort) than dest
 <br>
 Outside work, I enjoy going to new places, reading fiction, watching sci-fi, going around the city with my bike, meeting friends for coffee, learning to play the piano. I love swimming and have been doing that regularly for years. I'm a huge fan of animation movies(Especially, every work from Studio Ghibli,<a href="https://www.youtube.com/watch?v=mjAWVZq6wlw"> Miyazaki</a> being a great inspiration.)<br>
 <br>
-I've always hated school. YES, so much so I would put that in my bio. Getting older(wiser?) has taught me it's primarily because of not being interested in mainstream, difficulty in finding <a href="https://srikailash.github.io/A-social-app-we-created/">like minded friends</a>, withdrawing from social politics and being painfully shy. I consider that my caterpillar stage, it has gotten so much better once I started my professional career.<br>
+I've always hated school. YES, so much so I would put that in my bio. Getting older(wiser?) has taught me it's primarily because of not being interested in mainstream, difficulty in finding <a href="https://srikailash.github.io/A-social-app-we-created/">like minded friends</a>, withdrawal from social politics and being painfully shy. I consider that my caterpillar stage, it has gotten so much better once I started my professional career.<br>
 <br>
 I work best when I can self pace or in small groups with a common goal.
