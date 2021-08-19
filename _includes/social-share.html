@@ -1,0 +1,55 @@
+<!-- Check if any share-links are active -->
+{% assign any-share-links = false %}
+{% for links in site.share-links-active %}
+  {% if links[1] == true %}
+    {% assign any-share-links = true %}
+  {% endif %}
+{% endfor %}
+
+{% if any-share-links %}
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  {% if site.share-links-active.twitter %}
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.facebook %}
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.linkedin %}
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.vk %}
+    <a href="https://vk.com/share.php?url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-vk" title="Share on VK">
+      <span class="fab fa-fw fa-vk" aria-hidden="true"></span>
+      <span class="sr-only">VK</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.reddit %}
+    <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-reddit" title="Share on Reddit">
+      <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
+      <span class="sr-only">Reddit</span>
+    </a>
+  {% endif %}
+
+</section>
+
+{% endif %}

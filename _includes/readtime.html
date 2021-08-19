@@ -1,0 +1,16 @@
+<!--- "ReadTime on GitHub Jekyll" (c) 2020 Ruby Griffith Ramirez, MIT License -->
+
+{% assign ReadTime = page.content | strip_html | number_of_words %}
+{% assign calcReadTime = ReadTime | float %}
+{% assign finalReadTime = calcReadTime | divided_by:200 | round: 2 %}
+{% assign number = finalReadTime | round %}
+{% if number >= 1 %}
+  {% assign yesReadTime = number | append: " minute read" %}
+  <span class="post-meta"><span class="d-none d-md-inline middot">&middot;</span> {{ yesReadTime }}</span>
+{% elsif number < 1 %}
+  {% assign minReadTime = '&lt; 1 minute read' %}
+  <span class="post-meta"><span class="d-none d-md-inline middot">&middot;</span> {{ minReadTime }}</span>
+{% else %}
+  {% assign nilReadTime = number | replace:'0',' ' %}
+  {{ nilReadTime }}
+{% endif %}

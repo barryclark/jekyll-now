@@ -1,0 +1,39 @@
+{% if site.post_search %}
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+      {% for post in site.posts %} \
+        { \
+          "title"    : "{% if post.title != "" %}{{ post.title | escape }}{% else %}{{ post.excerpt | strip_html | escape | strip }}{%endif%}", \
+          "category" : "{{ post.tags | join: \', \' }}", \
+          "url"      : "{{ site.baseurl }}{{ post.url }}", \
+          "date"     : "{{ post.date | date: "%B %e, %Y" | default: "January 1, 1970" }}" \
+        }, \
+      {% endfor %} \
+      {% for page in site.html_pages %}{% if page.title != "{title}" and page.title != "404 - Page not found" %} \
+        { \
+          "title"    : "{% if page.title != "" %}{{ page.title | escape }}{% else %}{{ page.excerpt | strip_html | escape | strip }}{% endif %}", \
+          "category" : "{% if page.tags %}{{ page.tags | join: \', \' }}{% else %}page{% endif %}", \
+          "url"      : "{{ site.baseurl }}{{ page.url }}", \
+          "date"     : "{{ page.date | date: '%B %e, %Y' | default: "January 1, 1970" }}" \
+        }{% unless forloop.last %},{% endunless %} \
+      {% endif %}{% endfor %} \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+{% endif %}
