@@ -35,9 +35,9 @@ readonly state : WorkerHandState = {
 }
 ```
 
-Sync stores a a json document with the state that you pass to it, to create or retrieve a document you need to give it a name. For this we will use our worker sid with "-HandState" appended. To get the worker sid and our client that will interact with sync we can use a property in our component and populate that propery in our plugins `init()`.
+Twilio Sync, along with some metadata, stores a json document with the state that you pass to it, to create or retrieve a document you need to give it a name. For this we will use our worker sid with "-HandState" appended. To get the worker sid and our client that will interact with sync we can use a property in our component and populate that propery in our plugin's `init()`.
 
-lets do that by adding this code in our component
+let's do that by adding this code in our component
 ```
 import { Worker } from "twilio-taskrouter";
 import { SyncClient } from "twilio-sync";
@@ -47,20 +47,29 @@ interface OwnProps {
   syncClient: SyncClient;
 }
 ```
-and in our `init()` in `RaiseHandPlugin.ts` replace our code that adds our components with the code below which uses the workerclient and insightsclient from our Flex manager instance
+and in our `init()` in `RaiseHandPlugin.ts` replace our code that adds our components with the code below which uses the workerclient and insightsclient from our Flex manager instance.
 ```
-flex.MainHeader.Content.add(<WorkerHand key="worker-hand" worker={manager.workerClient} syncClient={manager.insightsClient} />, {
-      sortOrder: -1,
-      align: 'end'
-    });
+flex.MainHeader.Content.add(
+  <WorkerHand key="worker-hand" 
+              worker={manager.workerClient} 
+              syncClient={manager.insightsClient} />, 
+  { sortOrder: -1, align: 'end'});
 
-    flex.WorkersDataTable.Content.add(<ColumnDefinition key="agent-hand-custom" header={""} content={item => <WorkerHand key={`worker-${item.worker.sid}-hand`} worker={item.worker} syncClient={manager.insightsClient} />}/>, {sortOrder:0});
+flex.WorkersDataTable.Content.add(
+  <ColumnDefinition key="agent-hand-custom" 
+                    header={""} 
+                    content={item => 
+                      <WorkerHand key={`worker-${item.worker.sid}-hand`} 
+                                  worker={item.worker} 
+                                  syncClient={manager.insightsClient} />
+                    }/>
+  ,{sortOrder:0});
 ```
-in our component we can now add a constant for a sync doc name that is unique to our worker
+This enables us to add to our component a constant for a sync doc name that is unique to our worker.
 ```
 readonly workerHandStateDocName = `${this.props.worker.sid}-HandState`;
 ```
-we can now introduce some logic to work with sync and retreive/update the state for our workers hand, the full code can be found [here](get-full-code){:target="_blank"} but I will show you some key points below.
+We can now introduce some logic to work with sync and retreive/update the state for our workers hand, the full code can be found [here](https://github.com/jords1987/plugin-raise-hand/blob/main/src/components/worker-hand/worker-hand.tsx){:target="_blank"} but I will show you some key points below.
 In our `componentDidMount()` we will grab the initial state of the document and more importantly will subscribe to updates of that document
 ```
 async componentDidMount() {
@@ -84,9 +93,9 @@ handleDocUpdate = async (state: WorkerHandState) => {
   });
 };
 ```
-Its worth noting at this point, if you try to retrieve a sync document that doesnt exist, it will be created for you. This is why we do not need to do any up front work to create the document for each worker. Awesome, right!
+It's worth noting at this point, if you try to retrieve a sync document that doesnt exist, it will b`e created for you. This is why we do not need to do any up front work to create the document for each worker. Brilliant, right!
 
-With all of that in place we can switch our button handlers to simply get the current state and update it, our subscription to sync updates will take care of the rest, here is the one for raising a hand, you can implement the same for lowering
+With all of that in place we can switch our button handlers to simply get the current state and update it, our subscription to sync updates will take care of the rest, here is the one for raising a hand, you can implement the same for lowering.
 ```
 handleRaiseHand = async () => {
   var syncDoc = await this.props.syncClient.document(
@@ -98,12 +107,19 @@ handleRaiseHand = async () => {
   syncDoc.update(docState);
 };
 ```
-An important part (and full disclosure had me scratching my head for a while) we need to switch our conditional logic in our render function to check `this.state.isRaised` rather than `this.props.isRaised`.
-Then, with all that in place we should now be able to safely delete the state and actions in `/components/worker-hand.container.ts` and `/states/worker-hand.ts`
+An important part (and full disclosure had me scratching my head for a while), we need to switch our conditional logic in our render function to check `this.state.isRaised` rather than `this.props.isRaised`.
+Then, with all of that in place we should now be able to safely delete the state and actions in `/components/worker-hand.container.ts` and `/states/worker-hand.ts`
 
 Now one thing to do for cleanliness, change the way our component is registered to give each one a unique key. To do this head to our plugins `init()` and use this code to register the component in the "Teams" view
 ```
-flex.WorkersDataTable.Content.add(<ColumnDefinition key="agent-hand-custom" header={""} content={item => <WorkerHand key={`worker-${item.worker.sid}-hand`} worker={item.worker} syncClient={manager.insightsClient} canInteract={false}/>}/>, {sortOrder:0});
+flex.WorkersDataTable.Content.add(
+  <ColumnDefinition key="agent-hand-custom" 
+                    header={""} 
+                    content={item => 
+                      <WorkerHand key={`worker-${item.worker.sid}-hand`} 
+                                  worker={item.worker} 
+                                  syncClient={manager.insightsClient}/>}/>
+  , {sortOrder:0});
 ```
 
 Now is also a good time to go ahead and remove the default component that comes when the flex CLI boilerplates a plugin for you.
@@ -113,11 +129,11 @@ When you run your plugin using:
 twilio flex:plugins:start
 ```
 
-you should be able to see in the Teams tab, when you raise your worker hand, only your hand is now raised
+You should be able to see in the Teams tab, when you raise your worker hand, only your hand is now raised
 
 ![]({{ site.baseurl }}/assets/img/agent-hand/teams_hand_raised.png)
 
-A bonus feature here (yes, some would call a bug!) is that the supervisors are able to lower the hand of the agent. we need to modify the code in the component a little to stop the default event happening on the worker table when we click the button... Add this to your raise/lower event handlers to see
+A bonus feature here (yes, some would call a bug!) is that the supervisors are able to lower the hand of the agent. We need to modify the code in the component a little to stop the default event happening on the worker table when we click the button... Add this to your raise/lower event handlers to see
 ```
 handleRaiseHand = async (e: MouseEvent<HTMLButtonElement>) => {
   e.stopPropagation(); //this will stop the event bubbling through
@@ -130,10 +146,10 @@ handleLowerHand = async (e: MouseEvent<HTMLButtonElement>) => {
 ``` 
 
 ### Conclusion
-In this part we used Twilio flex to persist the state of our workers hand, we used the [Flex Manager](https://www.twilio.com/docs/flex/developer/ui/manager){:target="_blank"} to access all of the things we need to communicate securely with flex and gain some context of our worker.
+In this part we used Twilio Sync to persist the state of our workers hand, we used the [Flex Manager](https://www.twilio.com/docs/flex/developer/ui/manager){:target="_blank"} to access all of the things we need to communicate securely with Sync and gain some context of our worker.
 
 Heres a challenge, can you implement functionality to lower a users hand when they logout? (hint: you can use twilios [Actions Framework](https://assets.flex.twilio.com/docs/releases/flex-ui/1.27.0/Actions.html){:target="_blank"})
 
-Full code for both parts of this can be found [here](get-code). Some of you may discover my initial attempt at re-creating the user card in the flex "Teams" tab. This worked, however twilio do not (at the time of writing) provide the functionality to remove the default worker card
+Full code for both parts of this can be found [here](https://github.com/jords1987/plugin-raise-hand). Some of you may discover my initial attempt at re-creating the user card in the flex "Teams" tab. This worked, however twilio do not (at the time of writing) provide the functionality to remove the default worker card
 
 Thanks for reading!

@@ -16,7 +16,7 @@ We can achieve this using a custom flex plugin and some of the other twilio prod
 If you dont have a flex enabled project you can get one for free [here](http://www.twilio.com/referral/f0TwNm){:target="_blank"}. You can also install the twilio CLI [here](https://www.twilio.com/docs/twilio-cli/quickstart){:target="_blank"}. For now, I will assume you do, so lets create our template plugin using the twilio CLI. 
 
 ```
-twilio flex:plugins:create raise-hand --install --typescript`
+twilio flex:plugins:create raise-hand --install --typescript
 ```
 
 I like to leave the default CustomTaskList component that the template comes with in the folder structure until we have completed development of our component. This often comes in handy to refer back to.
@@ -36,7 +36,7 @@ components
         |- worker-hand.ts
 ```
 
-we can now put all of the boilerplate code into these files. I wont include all of that here, but you can see what I did from [this commit](https://test.com){:target="_blank"}.
+we can now put all of the boilerplate code into these files. I wont include all of that here, but you can see what I did from [this commit](https://github.com/jords1987/plugin-raise-hand/commit/5425e3fd79976b316f2c80be09d4df7ba5fb9430){:target="_blank"}.
 
 ### Getting in a state
 
@@ -152,7 +152,6 @@ We will also add this for each worker as a column to our 'Teams' tab, you can do
 ```
 flex.WorkersDataTable.Content.add(<ColumnDefinition key="agent-hand-custom" header={""} content={item => <WorkerHand key={`worker-hand`} />}/>, {sortOrder:0});
 ```
-(You can find docs on teams view programability [here](https://www.twilio.com/docs/flex/end-user-guide/insights/monitor-agent-activity#teams-view-programmability){:target="_blank"})
 
 Now lets run our component and see it in action
 ```
@@ -228,9 +227,9 @@ and
 
 Awesome!
 
-Now head over to the "Teams" tab in flex, can you spot the problem we have by using the redux state store?? Dont worry we will fix it in the second part of this post
+Now head over to the "Teams" tab in flex, can you spot the problem we have by using the redux state store? Dont worry we will fix it in the second part of this post
 
 ### Conclusion
 We have created our code that will store the state of our workers hand (raised/lowered). We have also written the worker view component that we need to show to the worker to allow them to interact. But at the moment, it's pretty useless... 
 
-The worker can raise their hand, but when 1 worker raises their hand, the supervisor sees all. Check out [part 2]({{ site.baseurl }}/twilio-worker-hand-pt2){:target="_blank"} where we will fix our state store issues, for this we will also need to get to grips with [Twilio Sync](https://www.twilio.com/sync){:target="_blank"}.
+The worker can raise their hand, but when 1 worker raises their hand, the supervisor sees all. Check out [part 2]({{ site.baseurl }}/twilio-worker-hand-pt2){:target="_blank"} where we will fix our state storage issues, for this we will also need to get to grips with [Twilio Sync](https://www.twilio.com/sync){:target="_blank"}.
