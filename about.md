@@ -6,7 +6,7 @@ permalink: /about/
 
 ZotBins is system of Smart Waste Bins with a suite of web-based applications to collect and analyze real-time waste data. Through IoT, ZotBins is able to use waste data to encourage zero waste practices from a behavioral approach while also demonstrating use of quantifiable data to holistically improve waste systems. This system has been able to help find useful waste related insights at the University of California, Irvine. To learn more visit https://[zotbins.github.io](zotbins.github.io) or view our video by clicking on the image below:
 
-[![IMAGE ALT TEXT](https://raw.githubusercontent.com/zotbins/zbceblog/master/images/video_thumbnail.png)](http://www.youtube.com/watch?v=gcljm-4PmsE "The ZotBins Solution to Waste Management using Internet of Things")
+[![IMAGE ALT TEXT](assets/img/video_thumbnail.png)](http://www.youtube.com/watch?v=gcljm-4PmsE "The ZotBins Solution to Waste Management using Internet of Things")
 
 ## Mission
 To better inform all actors in the [Municipal Solid Waste](https://en.wikipedia.org/wiki/Municipal_solid_waste) Stream system and help close the [loop](https://en.wikipedia.org/wiki/Circular_economy) for a sustainable society.
