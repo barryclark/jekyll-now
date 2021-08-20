@@ -56,7 +56,9 @@ def get_next(link_header):
 ### Get the logs
 I'm returning the cursor as well as the log_data. Persisting the cursor would allow you to pickup where you left off on subsequent queries and ***REDUCES*** (but does not eliminate) duplicates.
 ```
-def get_logs(auth, url, log_data=[]):
+def get_logs(auth, url, log_data=None):
+    if log_data is None:
+        log_data = []
     url = url.rstrip(">").lstrip("<")
     ans = requests.get(url, auth=auth)
     next_url = get_next(ans.headers.get("Link"))
@@ -158,7 +160,9 @@ The GraphQL endpoint uses an Authorization header with bearer token instead of b
 - Provide a token and the Github Org name, receive the response edges
 
 ```
-def get_users(org, token, cursor=None, user_data=[]):
+def get_users(org, token, cursor=None, user_data=None):
+    if user_data is None:
+        user_data = []
     url = 'https://api.github.com/graphql'
     headers = {'Authorization': 'bearer {token}'.format(token=token)}
     if cursor is None:
