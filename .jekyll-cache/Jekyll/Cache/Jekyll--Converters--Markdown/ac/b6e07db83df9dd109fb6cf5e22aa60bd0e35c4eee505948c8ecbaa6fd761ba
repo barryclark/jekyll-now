@@ -1,0 +1,272 @@
+I"	6<h2 id="introduction">Introduction</h2>
+
+<p>For this project, I wanted to continue looking at activism and queer activism, but specifically on Princeton’s campus. While looking through the Princeton University Archives, I came across the Queer Graduate Caucus Records, 2015-2017. This particular document from their archives is an open letter to the University administration in 2016, outlining the ways in which university policies fail its queer (graduate) students as well as suggestions for the university to address these shortcomings and create policies and spaces that support queer students.</p>
+
+<p>I think that this document is interesting and potentially useful when looking at activism and social movements on campus as it captures a moment in which a student organization is seeking to engage with a large institution to create change on a policy level. They are going through existing systems, as an outside entity themselves. Thus, I think what is useful through the XML markup is looking at the structures, people, and authority hierarchies with which the Queer Graduate Caucus engages. The XML tagging and creation of hierarchy allows people to consider the relationality of individuals and advocacy organization to structural power, the affirmation and rejection of institutions in social movements and advocacy groups, and the hierarchies within the institution itself.</p>
+
+<p>Because this document is born digital, there is no picture of it attached to the post.</p>
+
+<h2 id="the-queer-graduate-caucus-open-letter-to-the-administration">The Queer Graduate Caucus’ Open Letter to the Administration</h2>
+
+<pre><code class="language-XML">
+&lt;XML&gt;
+	&lt;openletter&gt;
+		&lt;addressed&gt;To whom it may concern&lt;/addressed&gt; –
+
+		&lt;intro&gt;
+			&lt;sit&gt;In light of the larger discussions on the topic of
+				&lt;iss&gt;diversity&lt;/iss&gt; and
+				&lt;iss&gt;inclusion&lt;/iss&gt; which have been happening on
+				&lt;place&gt;campus&lt;/place&gt;
+				&lt;time&gt;of late&lt;/time&gt;
+			&lt;/sit&gt;, the
+			&lt;org&gt;Queer Graduate Caucus&lt;/org&gt; would like to highlight some concerns relating to
+			&lt;comm&gt;LGBTQIA+
+				&lt;body&gt;graduate students&lt;/body&gt;
+			&lt;/comm&gt;.
+			&lt;time&gt;Last year&lt;/time&gt; several of our
+			&lt;position&gt;officers&lt;/position&gt; were included in
+			&lt;dialogue&gt;panel discussions and conversations&lt;/dialogue&gt; with
+			&lt;position&gt;administrators&lt;/position&gt; and some of these issues were raised, but as we have not yet received a
+			&lt;dialogue&gt; response&lt;/dialogue&gt; from the
+			&lt;body&gt;administration&lt;/body&gt; about their disposition we consider it worthwhile to reiterate them.
+
+		&lt;/intro&gt;
+		&lt;demand1&gt;
+			&lt;sit&gt;
+				&lt;time&gt;After third year&lt;/time&gt;,
+
+				&lt;body&gt;
+					&lt;persons&gt;graduate students&lt;/persons&gt;
+				&lt;/body&gt; are no longer guaranteed
+
+				&lt;aid&gt;on-campus housing&lt;/aid&gt;
+			&lt;/sit&gt;. The most common destinations for these individuals are
+
+			&lt;place&gt;Philadelphia&lt;/place&gt; and
+
+			&lt;place&gt; New York City&lt;/place&gt;. In the state of
+
+			&lt;place&gt;Pennsylvania&lt;/place&gt;, there are
+
+			&lt;iss&gt;no
+
+				&lt;authority&gt;laws&lt;/authority&gt; protecting against discrimination on the basis of
+
+				&lt;identity&gt;sexual orientation&lt;/identity&gt; or
+
+				&lt;identity&gt;gender identity&lt;/identity&gt;
+			&lt;/iss&gt;. This includes
+
+			&lt;iss&gt;housing discrimination&lt;/iss&gt;. Even though the
+
+			&lt;place&gt;city of New York&lt;/place&gt; has
+
+			&lt;authority&gt;ordinances&lt;/authority&gt; aiming to prevent this, the search for apartments is fraught with additional risks for
+
+			&lt;comm&gt;LGBTQIA+ people&lt;/comm&gt;;
+
+			&lt;iss&gt;there is a constant need to screen potential
+
+				&lt;persons&gt;roommates&lt;/persons&gt; and
+
+				&lt;persons&gt;landlords&lt;/persons&gt; for
+
+				&lt;marg&gt;homophobic&lt;/marg&gt; or
+
+				&lt;marg&gt;transphobic&lt;/marg&gt; attitudes in order to avoid not only discrimination but also harassment
+
+			&lt;/iss&gt;. Additionally,
+
+			&lt;iss&gt;
+				&lt;comm&gt;
+					&lt;body&gt;graduate students&lt;/body&gt; of color
+
+				&lt;/comm&gt; must negotiate around
+
+				&lt;marg&gt;racism&lt;/marg&gt; during housing searches
+
+			&lt;/iss&gt;. This not only places a considerable burden on
+
+			&lt;body&gt;graduate students&lt;/body&gt; in the form of the
+
+			&lt;resource&gt;time&lt;/resource&gt; involved in such housing searches, but also restricts their ability to find
+
+			&lt;resource&gt;affordable&lt;/resource&gt; housing off campus. Therefore, we consider it paramount that the
+
+			&lt;institution&gt;Graduate School&lt;/institution&gt; and the
+
+			&lt;body&gt;
+				&lt;institution&gt;University's&lt;/institution&gt; housing administration
+
+			&lt;/body&gt; renew their commitment to providing
+
+			&lt;resource&gt;affordable&lt;/resource&gt;
+			&lt;aid&gt;on-campus housing&lt;/aid&gt; sufficient to meet
+
+			&lt;body&gt;graduate student&lt;/body&gt; demand.
+
+			&lt;aid&gt;Information&lt;/aid&gt; about housing and housing options should also be more effectively distributed to new
+
+			&lt;body&gt;graduate students&lt;/body&gt;.
+
+
+		&lt;/demand1&gt;
+		&lt;demand1&gt;
+			&lt;sit&gt;
+				&lt;time&gt;After third year&lt;/time&gt;,
+				&lt;body&gt;
+					&lt;persons&gt;graduate students&lt;/persons&gt;
+				&lt;/body&gt; are no longer guaranteed
+				&lt;aid&gt;on-campus housing&lt;/aid&gt;
+			&lt;/sit&gt;. The most common destinations for these individuals are
+			&lt;place&gt;Philadelphia&lt;/place&gt; and
+			&lt;place&gt; New York City&lt;/place&gt;. In the state of
+			&lt;place&gt;Pennsylvania&lt;/place&gt;, there are
+			&lt;iss&gt;no
+				&lt;authority&gt;laws&lt;/authority&gt; protecting against discrimination on the basis of
+				&lt;identity&gt;sexual orientation&lt;/identity&gt; or
+				&lt;identity&gt;gender identity&lt;/identity&gt;
+			&lt;/iss&gt;. This includes
+			&lt;iss&gt;housing discrimination&lt;/iss&gt;. Even though the
+			&lt;place&gt;city of New York&lt;/place&gt; has
+			&lt;authority&gt;ordinances&lt;/authority&gt; aiming to prevent this, the search for apartments is fraught with additional risks for
+			&lt;comm&gt;LGBTQIA+ people&lt;/comm&gt;;
+			&lt;iss&gt;there is a constant need to screen potential
+				&lt;persons&gt;roommates&lt;/persons&gt; and
+				&lt;persons&gt;landlords&lt;/persons&gt; for
+				&lt;marg&gt;homophobic&lt;/marg&gt; or
+				&lt;marg&gt;transphobic&lt;/marg&gt; attitudes in order to avoid not only discrimination but also harassment
+			&lt;/iss&gt;. Additionally,
+			&lt;iss&gt;
+				&lt;comm&gt;
+					&lt;body&gt;graduate students&lt;/body&gt; of color
+				&lt;/comm&gt; must negotiate around
+				&lt;marg&gt;racism&lt;/marg&gt; during housing searches
+			&lt;/iss&gt;. This not only places a considerable burden on
+			&lt;body&gt;graduate students&lt;/body&gt; in the form of the
+			&lt;resource&gt;time&lt;/resource&gt; involved in such housing searches, but also restricts their ability to find
+			&lt;resource&gt;affordable&lt;/resource&gt; housing off campus. Therefore, we consider it paramount that the
+			&lt;institution&gt;Graduate School&lt;/institution&gt; and the
+			&lt;body&gt;
+				&lt;institution&gt;University's&lt;/institution&gt; housing administration
+			&lt;/body&gt; renew their commitment to providing
+			&lt;resource&gt;affordable&lt;/resource&gt;
+			&lt;aid&gt;on-campus housing&lt;/aid&gt; sufficient to meet
+			&lt;body&gt;graduate student&lt;/body&gt; demand.
+			&lt;aid&gt;Information&lt;/aid&gt; about housing and housing options should also be more effectively distributed to new
+			&lt;body&gt;graduate students&lt;/body&gt;.
+
+		&lt;/demand1&gt;
+		&lt;demand2&gt;
+			&lt;aid&gt;
+				&lt;institution&gt;Princeton's&lt;/institution&gt; Student Health Plan
+			&lt;/aid&gt; is admirable in that it allows for coverage of several medical options for
+			&lt;comm&gt;
+				&lt;persons&gt;transgender students&lt;/persons&gt;
+			&lt;/comm&gt;. However, the
+			&lt;iss&gt;
+				&lt;authority&gt;official policy&lt;/authority&gt; arbitrarily excludes certain procedures on the grounds of their being "cosmetic" without providing any rationale for the distinction
+			&lt;/iss&gt;. This
+			&lt;authority&gt;policy&lt;/authority&gt; is rooted in
+			&lt;marg&gt;cissexism&lt;/marg&gt; and should be revised with the participation of
+			&lt;comm&gt;
+				&lt;persons&gt;transgender students&lt;/persons&gt;
+			&lt;/comm&gt; and
+			&lt;authority&gt;professionals expert in transgender medicine&lt;/authority&gt;.
+
+		&lt;/demand2&gt;
+		&lt;demand3&gt;
+            This organization, the
+			&lt;org&gt;Queer Graduate Caucus&lt;/org&gt;, currently has
+			&lt;iss&gt;no
+				&lt;resource&gt;annual budget&lt;/resource&gt;
+			&lt;/iss&gt;. In order to hold even small events, we must go through the drawn-out process of requesting
+			&lt;aid&gt;co-sponsorship&lt;/aid&gt; and
+			&lt;aid&gt;funds&lt;/aid&gt; from several other organizations,
+			&lt;body&gt;programs&lt;/body&gt;, and
+			&lt;body&gt;departments&lt;/body&gt;. This makes
+			&lt;iss&gt;the task of event organization very unwieldy and unreliable&lt;/iss&gt;. With the generosity and support of many
+			&lt;position&gt;administrators&lt;/position&gt; and
+			&lt;position&gt;fellow
+				&lt;body&gt;student&lt;/body&gt; leaders
+			&lt;/position&gt;, we have been able to hold significant, well-attended events such as last Fall's
+			&lt;event&gt;"Transitioning History with Susan Stryker,"&lt;/event&gt; but only with exceptional
+			&lt;resource&gt;effort&lt;/resource&gt; and
+			&lt;resource&gt;time&lt;/resource&gt; investment by our
+			&lt;position&gt;officers&lt;/position&gt;. In
+			&lt;authority&gt;
+				&lt;position&gt;President&lt;/position&gt; Eisgruber's
+			&lt;/authority&gt; response to the
+			&lt;org&gt;Task Force for Diversity and Inclusion&lt;/org&gt;, he wrote that the
+			&lt;comm&gt;
+				&lt;institution&gt;Princeton University&lt;/institution&gt; community
+			&lt;/comm&gt; could anticipate an
+			&lt;quote&gt;"increase in
+				&lt;aid&gt;funding&lt;/aid&gt; for
+				&lt;body&gt;student&lt;/body&gt; initiatives, including those housed in the
+				&lt;body&gt;Fields Center&lt;/body&gt;,
+				&lt;body&gt;Women's Center&lt;/body&gt;, and
+				&lt;body&gt;LGBT Center&lt;/body&gt;, as well as for
+				&lt;comm&gt;identity-based student&lt;/comm&gt; organizations."
+			&lt;/quote&gt; We humbly request that this include our organization.
+
+		&lt;/demand3&gt;
+		&lt;demand4&gt;
+            Finally, we would like to emphasize the importance of including
+			&lt;body&gt;graduate students&lt;/body&gt; (as well as
+			&lt;bod&gt;undergraduate students
+			&lt;/body&gt;) in the decision-making process surrounding issues which directly affect our lives. Regular
+			&lt;aid&gt;communication&lt;/aid&gt; between
+			&lt;position&gt;administrators&lt;/position&gt; and
+			&lt;position&gt;
+				&lt;body&gt;graduate student &lt;/body&gt;leaders
+			&lt;/position&gt; would facilitate this, and would enhance the
+			&lt;comm&gt;campus community&lt;/comm&gt;.
+
+		&lt;/demand4&gt;
+		&lt;conclusion&gt; We look forward to further discussion with you on these matters. &lt;/conclusion&gt;
+		&lt;signature&gt;
+			&lt;org&gt;The Queer Graduate Caucus&lt;/org&gt;
+            Ariana Myers,
+			&lt;position&gt;President&lt;/position&gt;
+            David Peterson,
+			&lt;position&gt;Treasurer&lt;/position&gt;
+		&lt;/signature&gt;
+	&lt;/openletter&gt;
+&lt;/XML&gt;
+
+</code></pre>
+
+<h2 id="tags">Tags</h2>
+
+<p>For my tags, I focused on three main types: primary actors (in the sense of who is involved or addressed), the issues being addressed (about diversity and inclusion), and the structure of the document.</p>
+
+<p>Primary actors:</p>
+<ul>
+  <li><em>Body</em> calls attention to organizational structures of people that make up the institution and other organizations; bodies indicate dialogue and engagement</li>
+  <li><em>Institution</em> is used to refer to the structural power (Princeton in this case), which tends to be unresponsive (as outlined at the beginning of the letter)</li>
+  <li><em>Organizations</em> indicates groups that seek to address the problems identified (activist and advocacy groups)</li>
+  <li><em>Community</em> shows the people being affected by these policies, introducing a human element to this otherwise structural interaction (organization to institution)</li>
+  <li><em>Position</em> is a more general tag to indicate some level of power within either an organization, body, or institution; also serves to humanize</li>
+</ul>
+
+<p>Issues:</p>
+<ul>
+  <li><em>Situation</em> is used to indicate the present situation at Princeton with regards to administrative responses</li>
+  <li><em>Issue</em> delineates the issues that face queer graduate students</li>
+  <li><em>Marginalization</em> &lt;/marg&gt; denotes when key terms for sources of discrimination are used (racism, homophobia, etc.)</li>
+  <li><em>Authority</em> confers a source of power from which these issues emanate and/or can be addressed</li>
+</ul>
+
+<p>Physical:</p>
+<ul>
+  <li><em>Introduction</em> outlines the past action in regards to the issues</li>
+  <li><em>Demands</em> that the Queer Graduate Caucus is making to Princeton/s administration; there are 4 in total and all relate to queer student wellness (health, housing, representation, spaces)</li>
+  <li><em>Signature</em> gives credit, and a name, to the organization and leaders sponsoring</li>
+</ul>
+
+<h2 id="source">Source</h2>
+
+<p>To find the letter by the Queer Graduate Caucus, visit the Princeton University Archives <a href="https://findingaids.princeton.edu/catalog/AC468">Queer Graduate Caucus Records, 2015-2017</a>. There, you can also find more of their administrative records as well as an archive of their events from that time period.</p>
+:ET

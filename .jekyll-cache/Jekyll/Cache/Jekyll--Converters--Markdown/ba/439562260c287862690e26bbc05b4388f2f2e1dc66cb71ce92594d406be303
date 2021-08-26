@@ -1,0 +1,215 @@
+I"Z<h3 id="motivation-and-background">Motivation and Background</h3>
+<p>For this digital tools assignment, I was interested in encoding a document that contained informational data, such as records or lists. I also hoped to find a source that contained many attributes within one record. While searching the Princeton University Library collections for potential documents, I came across the <a href="https://findingaids.princeton.edu/catalog/C0108">Sylvia Beach Papers</a> and the accompanying <a href="https://shakespeareandco.princeton.edu/">Shakespeare and Company Project</a> by Princeton’s Center for Digital Humanities.  Sylvia Beach (1887 - 1962) owned and ran the Shakespeare and Company bookstore and lending library in Paris, France, serving members of European and American literary communities from 1919 to 1941. The Shakespeare and Company Project maintains a database of the books, members, and documents related to the library, using materials sourced from the Sylvia Beach collections. I was drawn to the lending library cards, which were used to document each library member’s borrowed materials. These cards contained many of the attributes I was hoping to tag, including names, addresses, book titles, and dates. Additionally, the layout of the cards led me to consider interesting questions on how to encode their contents using XML.</p>
+
+<!--more-->
+
+<h3 id="ellen-wright">Ellen Wright</h3>
+<p>Through the Shakespeare and Company Project website, I selected the collection of <a href="https://shakespeareandco.princeton.edu/members/wright-ellen/cards/0d89fdbb-a48a-4bfa-8690-c53234d02331/">all cards associated with Ellen Wright</a>, an American living in Paris with her husband, the acclaimed African American author Richard Wright. There are two cards associated with Wright, pictured below:</p>
+
+<p><img src="https://iiif.princeton.edu/loris/figgy_prod/13%2Fe8%2F39%2F13e839f94ac344f7bc0a5793c5c4df80%2Fintermediate_file.jp2/full/450,/0/default.jpg" alt="Front of Card 1" /></p>
+
+<p><img src="https://iiif.princeton.edu/loris/figgy_prod/93%2Fdd%2F4d%2F93dd4d3a5fa048ed8e88685bd2df1e0c%2Fintermediate_file.jp2/full/450,/0/default.jpg" alt="Front of Card 2" /></p>
+
+<h6 id="image-credits-wright-ellen-sylvia-beach-papers-c0108-manuscripts-division-department-of-special-collections-princeton-university-library">Image Credits: <a href="https://findingaids.princeton.edu/catalog/C0108_c3762">Wright, Ellen; Sylvia Beach Papers, C0108, Manuscripts Division, Department of Special Collections, Princeton University Library</a></h6>
+
+<p>Though there is overlap between the information on the two cards, I chose to encode them both. I did not encode the backs of the cards, as the first card is blank on the reverse, and the other side of second card is an advertisement from the Princeton Bank and Trust Company.</p>
+
+<h3 id="important-elements">Important Elements</h3>
+<p>When encoding these cards, I began by identifying the key items that formed the basis of the borrowing records: the borrow date, the book title, and the return date. I also encoded the heading on the top of each card, which contained the library member’s name and home address. Another key aspect of these cards were the other library members mentioned, many of whom were accomplished authors themselves, such as Richard Wright and Gertrude Stein. Finally, I noted that the handwritten text on each card changed color multiple times, a result of the process by which the card was updated over the span of months each time Wright borrowed or returned books. Though the particular colors used may not have much significance, they provide evidence for the ways the card changed over time. By capturing the key information about an individual’s borrowing habits in this encoded form, it is possible to analyze this data more effectively and systematically compare Wright’s records with those of other library members.</p>
+
+<p>I used the transcriptions of book titles and dates on the Shakespeare and Company Project database to confirm my reading of the cards. However, as I wanted to encode the card in full, I also had to parse the notes and other markings on each card.</p>
+
+<h3 id="the-xml-encoding">The XML Encoding</h3>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">'all-lending-library-cards'</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"lending-library-card"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;side</span> <span class="na">type=</span><span class="s">"front"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;heading&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"blue"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;member-name&gt;</span>Mrs Richard WRIGHT<span class="nt">&lt;/member-name&gt;</span>
+					<span class="nt">&lt;address&gt;</span>14 rue M. le Prince, Paris VI<span class="nt">&lt;/address&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+			<span class="nt">&lt;/heading&gt;</span>
+			<span class="nt">&lt;borrowing-record&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"blue"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Sept 19 1949<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>The Pasquier Chronicles<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Oct 26<span class="nt">&lt;/date-end&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Christine<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Oct 26<span class="nt">&lt;/date-end&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Lafcadio's Adventures<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Oct 26<span class="nt">&lt;/date-end&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Oct 26<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>The Gambler<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Dec 10<span class="nt">&lt;/date-end&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Walter Rathenau his life and work by
+						<span class="nt">&lt;author&gt;</span>Count Harry Kessler<span class="nt">&lt;/author&gt;</span>
+						<span class="nt">&lt;publication-info&gt;</span>(
+							<span class="nt">&lt;publisher&gt;</span>Gerald Howe Ltd<span class="nt">&lt;/publisher&gt;</span>
+							<span class="nt">&lt;address&gt;</span>23 Soho Square London<span class="nt">&lt;/address&gt;</span>
+							<span class="nt">&lt;year&gt;</span>1929<span class="nt">&lt;/year&gt;</span>
+							)
+						<span class="nt">&lt;/publication-info&gt;</span>
+					<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;note&gt;</span>O.P. to send to
+						<span class="nt">&lt;member-name&gt;</span>Richard Wright<span class="nt">&lt;/member-name&gt;</span>
+					<span class="nt">&lt;/note&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'black'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;note&gt;</span>returned			
+						<span class="nt">&lt;date-end&gt;</span>June 1952<span class="nt">&lt;/date-end&gt;</span>
+						By
+						<span class="nt">&lt;member-name&gt;</span>R. W.<span class="nt">&lt;/member-name&gt;</span>
+					<span class="nt">&lt;/note&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"blue"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Dec 13<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Middle of the Journey<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Dec 19<span class="nt">&lt;/date-end&gt;</span>
+					<span class="nt">&lt;note&gt;</span>
+						<span class="nt">&lt;circled&gt;</span>
+							<span class="nt">&lt;member-name&gt;</span>Ellen Wright<span class="nt">&lt;/member-name&gt;</span>
+							<span class="nt">&lt;unclear&gt;</span>pg 81 to SB<span class="nt">&lt;/unclear&gt;</span>
+						<span class="nt">&lt;/circled&gt;</span>
+					<span class="nt">&lt;/note&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Heidegger<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Dec 19<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Party Going<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'light-blue'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Jan 9<span class="nt">&lt;/date-end&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'blue'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Goodbye to all that<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'light-blue'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Jan 9<span class="nt">&lt;/date-end&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Jan 9<span class="nt">&lt;/date-start&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'black'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;unclear&gt;</span>19--<span class="nt">&lt;/unclear&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'light-blue'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Little Women - Little Women Married<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'blue'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Feb 4<span class="nt">&lt;/date-end&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'light-blue'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Mr Norris Changes Trains<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'blue'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Feb 4<span class="nt">&lt;/date-end&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">'black'</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Nov 3 1946<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>A Serial Universe<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;note&gt;</span>returned<span class="nt">&lt;/note&gt;</span>
+					<span class="nt">&lt;note&gt;</span>(Composition
+						<span class="nt">&lt;member-name&gt;</span>Gertrude Stein<span class="nt">&lt;/member-name&gt;</span>
+						. gave copy to
+						<span class="nt">&lt;member-name&gt;</span>R W<span class="nt">&lt;/member-name&gt;</span>)
+					<span class="nt">&lt;/note&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>June 20 1946<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>The Negro in our History<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Proletarian Literature<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+			<span class="nt">&lt;/borrowing-record&gt;</span>
+		<span class="nt">&lt;/side&gt;</span>
+		<span class="nt">&lt;side</span> <span class="na">type=</span><span class="s">"reverse"</span><span class="nt">&gt;&lt;/side&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"lending-library-card"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;side</span> <span class="na">type=</span><span class="s">"front"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;heading&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"purple"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;member-name&gt;</span>Ellen Wright<span class="nt">&lt;/member-name&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"black"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;address&gt;</span>14 rue M. le Prince<span class="nt">&lt;/address&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+			<span class="nt">&lt;/heading&gt;</span>
+			<span class="nt">&lt;borrowing-record&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"purple"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Sept 19 1949<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>The Pasquier Chronicles<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"blue"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Oct 26<span class="nt">&lt;/date-end&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"purple"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;strikethrough&gt;</span>
+						<span class="nt">&lt;title&gt;</span>The Close<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;/strikethrough&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Christine<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"blue"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Oct 26 1949<span class="nt">&lt;/date-end&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"purple"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Lafcadio's Adventures<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"blue"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;date-end&gt;</span>Oct 26 1949<span class="nt">&lt;/date-end&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Oct 26 1949<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>The Gambler<span class="nt">&lt;/title&gt;</span>
+					<span class="nt">&lt;date-start&gt;</span>Oct 26<span class="nt">&lt;/date-start&gt;</span>
+					<span class="nt">&lt;title&gt;</span>Walter Rathenau his life <span class="ni">&amp;amp;</span> work by
+
+						<span class="nt">&lt;author&gt;</span>Count Harry Kessler<span class="nt">&lt;/author&gt;</span>
+						<span class="nt">&lt;publication-info&gt;</span>
+							<span class="nt">&lt;publisher&gt;</span>Gerald Howe Ltd<span class="nt">&lt;/publisher&gt;</span>
+							<span class="nt">&lt;address&gt;</span>23 Soho Square London<span class="nt">&lt;/address&gt;</span>
+							<span class="nt">&lt;year&gt;</span>1929<span class="nt">&lt;/year&gt;</span>
+						<span class="nt">&lt;/publication-info&gt;</span>
+					<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+				<span class="nt">&lt;text</span> <span class="na">color=</span><span class="s">"faded-blue"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;note&gt;</span>
+						<span class="nt">&lt;unclear&gt;</span>Also wants
+							<span class="nt">&lt;author&gt;</span>Christina<span class="nt">&lt;/author&gt;</span>
+						<span class="nt">&lt;/unclear&gt;</span>
+						<span class="ni">&amp;amp;</span>
+						<span class="nt">&lt;author&gt;</span>Morand's<span class="nt">&lt;/author&gt;</span>
+						Books
+					<span class="nt">&lt;/note&gt;</span>
+				<span class="nt">&lt;/text&gt;</span>
+			<span class="nt">&lt;/borrowing-record&gt;</span>
+		<span class="nt">&lt;/side&gt;</span>
+		<span class="nt">&lt;side</span> <span class="na">type=</span><span class="s">"reverse"</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h3 id="organizing-information-categories-and-hierarchy">Organizing Information: Categories and Hierarchy</h3>
+<p>In order to categorize the information, I created a root tag that nested the separate cards. Within a div element for each card, I separated the encoding further with a <code class="language-plaintext highlighter-rouge">&lt;heading&gt;</code> element and a <code class="language-plaintext highlighter-rouge">&lt;borrowing-record&gt;</code> element. This first element contains Wright’s name/address, while the second contains the remaining information on the card, including specific borrowed books and notes.</p>
+
+<p>The first question I encountered was how to encode the dates listed on the cards. While I considered creating an element for each book which would include the borrowing date, data on the book itself, and the return date, many of the books were listed under one borrow date, and it did not feel accurate to repeatedly include the same date if it was not written on the original document. I also considered nesting the information about a book inside the tags related to its borrow date, but chose not to as borrow/return dates were not consistently available for all entries.</p>
+
+<p>This question led me to nest each section of text by color in an element <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code>, which has an associated attribute to note the color of the text, which implicitly carries information on when a given entry or set of entries was made. Within this element, I included <code class="language-plaintext highlighter-rouge">&lt;date-start&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;date-end&gt;</code> elements to differentiate between the borrow and return dates for each book. This allowed each date to exist as an individual element, rather than being explicitly connected to a particular title. I also included elements for the book’s title, author, and publication information when provided. When text was circled, crossed out, or unclear, I added elements to reflect these aspects of the text.</p>
+
+<p>Finally, I tagged individuals mentioned within the entries and notes on the cards. In some cases, where an individual was referred to in relation to their own work, I chose to use the <code class="language-plaintext highlighter-rouge">&lt;author&gt;</code> tag. When the note referred to the behavior or actions of a given individual, I checked if they were also members of Shakespeare and Company and tagged them using <code class="language-plaintext highlighter-rouge">&lt;member-name&gt;</code>, the same tag used in the heading to identify Wright.</p>
+
+<h3 id="questions-and-challenges">Questions and Challenges</h3>
+
+<p>The main challenge I encountered was determining how to translate the clear visual layout of the card to a text-based list of elements. For example, a human reader can distinguish which borrow and return dates are associated with each book by observing how the dates in the left and right margins align with the book titles in the center column of the card. However, in a list format, it is more difficult to describe the alignment of different elements. I chose to enter the text as I read it from left to right, entering each item as a separate element. In making this decision, I chose to focus my encoding on the content of the card itself, rather than its exact layout.</p>
+
+<p>The other aspect of the card that inspired questions were the various names mentioned. Some, such as Richard Wright’s name, were clear, but others, such as “Christina” required additional searches for potential contemporaneous literary figures. In the case of “Christina,” I am guessing that the reference is to Australian author Christina Stead, whose name appears in the Shakespeare and Company Project database. In other cases, references to individuals by their initials, such as “O.P.”, were not tagged as a name as it was not possible to identify the individual being referenced.</p>
+
+<p>Along with questions about markup, I had a number of questions about the contents of the documents themselves. Why might information on books borrowed in 1946 be located at the bottom of a card which first has dates from 1949? What was the purpose of the two cards, which almost entirely overlap? Why do the two cards refer to Wright by different names? Though I cannot answer these questions, by exploring these cards through the encoding process, I was able to immerse myself in the documents and their construction, gaining an understanding of the sources themselves and the considerations involved in encoding them for research purposes.</p>
+
+<h3 id="references">References</h3>
+<p>“Lending Library Cards for Ellen Wright.” <em>Shakespeare and Company Project</em>, version 1.4.1. Center for Digital Humanities, Princeton University. <a href="https://shakespeareandco.princeton.edu/members/wright-ellen/cards/">https://shakespeareandco.princeton.edu/members/wright-ellen/cards/</a>. Accessed March 25, 2021.</p>
+
+<p>Quintana, Maria. “Richard Wright (1908-1960)” January 21, 2007. <a href="https://www.blackpast.org/african-american-history/wright-richard-1908-1960/">https://www.blackpast.org/african-american-history/wright-richard-1908-1960/</a>. Accessed March 25, 2021.</p>
+
+<p><em>Shakespeare and Company Project</em>, version 1.4.1. Center for Digital Humanities, Princeton University, 2021. <a href="https://shakespeareandco.princeton.edu/">https://shakespeareandco.princeton.edu</a>. Accessed March 25, 2021.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>“Sylvia Beach Papers</td>
+      <td>Princeton University Library Special Collections.” <a href="https://library.princeton.edu/special-collections/collections/sylvia-beach-papers">https://library.princeton.edu/special-collections/collections/sylvia-beach-papers</a>. Accessed March 25, 2021.</td>
+    </tr>
+  </tbody>
+</table>
+:ET

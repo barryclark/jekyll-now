@@ -1,0 +1,20 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+
+  <nav class="sidebar-nav">
+    <h2>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/">HOME</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/contributors">CONTRIBUTORS</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/syllabus">SYLLABUS</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/final-projects">FINAL PROJECTS</a>
+    </h2>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    </p>
+  </div>
+</div>

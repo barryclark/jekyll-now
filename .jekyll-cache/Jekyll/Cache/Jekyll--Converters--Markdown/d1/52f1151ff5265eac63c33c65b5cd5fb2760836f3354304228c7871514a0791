@@ -1,0 +1,328 @@
+I"�o<h2 id="how-do-we-tell-a-history-of-communications-technologies-with-technology">How do we tell a history of communications technologies with technology?</h2>
+
+<p>This blog features the research of students in <em>A History of Words: Technologies of
+Communication from Cuneiform to Coding</em> (HUM 331) taught by Professor Melissa Reynolds in
+the Humanities Council and History Department at Princeton University in Spring 2021. Throughout the semester,
+students will be posting their research on archival materials held in Princeton Library’s
+<a href="https://library.princeton.edu/special-collections/welcome">Special Collections</a> using various
+digital “tools” that they learn over the semester. As they post, they are learning how to use Jekyll, GitHub Pages, and Markdown to
+build a static site (like this one) so that they can share their in-depth research on everything from campus activism to
+nineteenth-century travelogues to early Japanese board games, taking advantage of the possibilities of digital storytelling
+and digital analytical methodologies. Check back in May to see those projects, but in the mean time, scroll down to read posts
+featuring their intermediate research, or toggle the menu at the top left to check out their bios or to read the course syllabus.</p>
+
+<hr />
+<p><br /></p>
+
+<div class="posts" id="top">
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Michelle-Obama-in-The-Daily-Princetonian/">Michelle Obama in *The Daily Princetonian*</a></h2>
+      <h4>By José Pablo Fernández García on March 29, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <p>The Princeton University Library’s <a href="https://papersofprinceton.princeton.edu/princetonperiodicals/?">Papers of Princeton</a> collection offers a rich trove of multiple historic publications from Princeton — both the town and the university. A dive into this collection allows one to reconstruct life in Princeton as far back as the mid 1800s through records detailing everything from the biggest events of the day to the most mundane. In fact, the collection’s comprehensive nature even allows one to construct partial narratives of individual students’ lives in some cases. And in the case of famous alumni, this collection often contains a second story, not of a student’s life as much as of a student’s accomplishments and legacy.</p>
+
+<p>Take, for example, Michelle Obama</p>
+
+      </div>
+
+      <a href="/Michelle-Obama-in-The-Daily-Princetonian/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Encoding-the-Lending-Library/">Encoding the Lending Library</a></h2>
+      <h4>By Sophie Goldman on March 29, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h3 id="motivation-and-background">Motivation and Background</h3>
+<p>For this digital tools assignment, I was interested in encoding a document that contained informational data, such as records or lists. I also hoped to find a source that contained many attributes within one record. While searching the Princeton University Library collections for potential documents, I came across the <a href="https://findingaids.princeton.edu/catalog/C0108">Sylvia Beach Papers</a> and the accompanying <a href="https://shakespeareandco.princeton.edu/">Shakespeare and Company Project</a> by Princeton’s Center for Digital Humanities.  Sylvia Beach (1887 - 1962) owned and ran the Shakespeare and Company bookstore and lending library in Paris, France, serving members of European and American literary communities from 1919 to 1941. The Shakespeare and Company Project maintains a database of the books, members, and documents related to the library, using materials sourced from the Sylvia Beach collections. I was drawn to the lending library cards, which were used to document each library member’s borrowed materials. These cards contained many of the attributes I was hoping to tag, including names, addresses, book titles, and dates. Additionally, the layout of the cards led me to consider interesting questions on how to encode their contents using XML.</p>
+
+
+      </div>
+
+      <a href="/Encoding-the-Lending-Library/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/US-Military-Oregon-Trail/">The US Military on (and off) the Oregon Trail</a></h2>
+      <h4>By Hope Perry on March 11, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <p>I was excited to begin this digital tools assignment because of the StoryMaps format, and I was happy to start delving into the 19th century American West. I decided that for this project I wanted to explore some of the broader pieces of American Manifest Destiny. Since I knew that I wanted my topic to be connected to the journal that I plan to use in my final project, I began by scanning and reading the 1853 <a href="https://dpul.princeton.edu/pudl0017/catalog/qr46r491g">journal of Thomas Adams</a> from the beginning, jotting down locations he mentioned as I read (if you want to learn more about this source, you can read my previous post <a href="https://hum-331-princeton.github.io/Go-West-Young-Man/">here</a>). The best part of this stage was frantically searching the names of rivers and lakes, since those were the most frequently referenced landmarks. It got a little tricky for the pages when he was in Minnesota, though– they don’t call it the “Land of 10,000 Lakes” for no reason!</p>
+
+
+      </div>
+
+      <a href="/US-Military-Oregon-Trail/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Pogue-at-Princeton/">Pogue at princeton</a></h2>
+      <h4>By José Pablo Fernández García on March 11, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <p>The Princeton University campus is riddled with the names and other symbols of countless people. Sure, many of these markers have been placed to note a donation that made possible a walkway, a building, or even an entire college. However, the campus is just as full — if not more full — of reminders of people simply there for historical reasons. This includes halls named after former University presidents, countless portraits of famous University community members, and even small, plain stars honoring those who sacrificed their life in service of the nation.</p>
+
+<h3 id="why-pogues-story">Why Pogue’s Story?</h3>
+
+<p>There are so many of these markers to be discovered that it is likely impossible for any individual to fully take stock of the history behind every last corner of the University campus. But taking note of just one of these markers can open a window into lives lived in days way gone by yet still very much present today.</p>
+
+<p>For me, it was Samuel Franklin Pogue, Class of 1904, who caught my attention</p>
+
+      </div>
+
+      <a href="/Pogue-at-Princeton/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/For-the-Love-of-Life-Through-Letters-A-Tribute-to-Albert-Einstein/">For The Love of Life Through Letters - A Tribute to Albert Einstein</a></h2>
+      <h4>By Savannah Pobre on March 11, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h2 id="the-reflection">The Reflection</h2>
+<p>Within this StoryMap Assignment I hoped to form a continuation of what I discussed in my first Digital Tools Assignment. As I began to narrow down my ideas, and the realization sunk in that tackling a multitude of love letters throughout history would be an impossible task to manage in a short period of time like one semester. Instead, I chose to stick to the idea of tracing someone’s life as it related to what was happening in history at that moment as well as how it influenced their interpersonal relationships. Still obsessed with the object of letters, both handwritten and typed, I stuck firm with the idea of tracing someone’s life through the words they wrote (and sometimes the words others wrote about them).  Now, the only task left was to pluck a person out of history whose public life is well known but misconstrued at times. Somebody who can be found among the ranks of the greats, who seems untouchable and almost divinely-influenced by the work they produced in their field. While the names of greats throughout modern history floated around in my thought process, it took a simple trip outside of my dorm room to (quite literally) encounter the path of a great. Currently, I am residing in Walker Hall, home of a gorgeous arch that houses the Einstein Walk plaque that signifies the path that Albert Einstein would walk from his home to his office on Princeton’s campus. Maybe it was divine inspiration, or the quantum mechanics gods sending one last whiff of pre-midterms hope my way, nonetheless I had found a  great in someone that has a direct influence on our University and in my personal academic studies; Albert Einstein.</p>
+
+<p align="center">
+  <img width="600" height="400" src="https://paw.princeton.edu/sites/default/files/styles/feature_image/public/images/content/einstein-1951-500x704_5.jpg?itok=4l4W1OM_" />
+</p>
+
+<p>My choice of Einstein also went hand in hand with the access to the archival material I would have through the series of books released by Princeton University Press in 1987. Starting with <a href="https://einsteinpapers.press.princeton.edu/about" title="The Collected Papers of Albert Einstein">The Collected Papers of Albert Einstein</a> Volume 1: The Early Years, 1879-1902”]<a href="https://einsteinpapers.press.princeton.edu/about" title="The Collected Papers of Albert Einstein">1</a> , I slowly but surely tackled German, French, and Hebrew translations with helpful footnotes that indicated the place of the paper in relation to Einstein’s life. I ended up using a miscellaneous collection of texts from Volumes 1-10 in this collection as they pertained to my research. While it became clear that this collection of books would be my primary source for this assignment, however I hoped to expand further out to see what other Universities or institutions had to offer in regard to any letters from or to Einstein. From here I found an additional text by Princeton University Press that housed the love letters between Einstein and his first wife Mileva Maric. As I neared the age of WWII, I also needed to pull from sources like the League of Nations archives and textbooks referencing the making of the atomic bomb. Nearing the end of Einstein’s life, I found myself reaching for more personal letters, and even came across a recent New York Times article regarding one of his final letters he wrote only a year before his death in 1955. Although my sources vary greatly, I feel as if the multitude of organizations and institutions that house these archived documents (or copies/translations of them) are a showcasing of Einstein’s direct impact on different levels of government, educational institutions, and even religious organizations.</p>
+
+
+      </div>
+
+      <a href="/For-the-Love-of-Life-Through-Letters-A-Tribute-to-Albert-Einstein/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Finally-Off-for-Alaska/">Finally Off for Alaska</a></h2>
+      <h4>By Sophie Goldman on March 10, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h3 id="journeys-and-journals">Journeys and Journals</h3>
+
+<blockquote>
+  <p>This unknown region had long attracted me. With a desire to know more about the country extending from the McKinley range of Mountains to the Southern Coast, we determined to explore the valley of the Great Shushitna and its principal tributaries, which drain thousands of square miles in the very heart of Alaska. - Nellie Martin Wade, “Through Interior Alaska on Horseback and The Scenic Coast Route”</p>
+</blockquote>
+
+<p>For this digital tools assignment, I chose to explore the <a href="https://findingaids.princeton.edu/collections/C0140/c65810-06143">manuscript</a> by Nellie Martin Wade that I discussed in my <a href="https://hum-331-princeton.github.io/Thinking-About-Sources-and-Methods/">last post</a>. This manuscript includes a highly organized narrative of Wade’s trip to Alaska in 1907, whose goals and motivations are described in the above quote. I was particularly struck by the language and poetic tone of Wade’s writing. I wanted to find a way to capture her descriptions and express them through images by mapping out the journey she describes in her journal. Along this goal, I hoped to contextualize her journey and better understand what external factors might have led Wade to visit Alaska, as well as who else came to Alaska before Wade.</p>
+
+
+      </div>
+
+      <a href="/Finally-Off-for-Alaska/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Mobilization-of-ACTUP/">Mobilizing Queer Rage—Mapping Key ACT UP Protests in the Fight Against AIDS</a></h2>
+      <h4>By Paul-Louis Biondi on March  8, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h2 id="introduction">Introduction</h2>
+
+<p>In thinking about mapping and what maps can reveal to a reader, my thoughts kept centering around the physical use and acessibility of space (or lack thereof). Activism and advocacy, as redefined by <strong>ACT UP</strong> and the AIDS activism movement, centered itself around the usage of space, often creating, finding, invading spaces in order to bring awareness to the issues at hand. New York City, a city which simulatenously unites and sgregates, acted as one of the main places for ACT UP demonstrations and actions through the ’80s and ’90s - the other being Washington D.C. Entering exclusionary spaces, such as Wall Street or the New York Stock Exchange, which were not made for marginalized identities, or public places like Central Park, meant for public consumption rather than political revolution, becomes a transgressive and radical act. ACT UP embraced this mentality and sought to shake up people’s perceptions through their activism. In this way, ACT UP was able to target pharmaceutical comapnies and other corporations that profited from the AIDS epidemic as well as hold the government accountable for its lack of response.</p>
+
+<p>Thus in this mapping project, I sought to use StoryMaps to present a narrative through which a reader could see the development of ACT UP demonstrations by the powerless in spaces made for the powerful.</p>
+
+
+      </div>
+
+      <a href="/Mobilization-of-ACTUP/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Early-Board-Games-in-Ancient-Europe-and-Asia/">Early board games in ancient europe and asia</a></h2>
+      <h4>By Levi Blinder on March  8, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h3 id="what-historical-narrative-are-you-trying-to-express">What historical narrative are you trying to express?</h3>
+
+<p>I am looking at some of the earliest examples of board games to get a sense for how and when board games developed in ancient Europe and Asia.</p>
+
+<p>One particularly interesting aspect of this historical narrative is looking at how board games in different locations arose for different purposes. In an analogous manner to how writing arose or was popularized in different ancient cultures for specific uses such as religion or accounting, many early board games were developed with specific non-entertainment goals in mind. I hope to be able to show both the existence of the motives as well as illustrate how aspects of the board game such as when it was created and the type of game were influenced by these motives and ultimately by the inventing society’s culture.</p>
+
+
+      </div>
+
+      <a href="/Early-Board-Games-in-Ancient-Europe-and-Asia/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Images-in-Japanese-Art/">Images in Japanese Art</a></h2>
+      <h4>By Levi Blinder on February 18, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h3 id="what-are-your-chosen-sources-and-where-are-they-located">What are your chosen sources and where are they located?</h3>
+
+<p>The sources that I am considering using are:</p>
+<ul>
+  <li>
+    <p>First, a collection of Japanese Board Games dating from the 19th century and first half of the 20th century that can be found in the PUL <a href="https://dpul.princeton.edu/cotsen/browse/japanese-game-boards">Japanese Game Boards</a></p>
+  </li>
+  <li>
+    <p>Secondly, I am also considering using Japanese Portraits from the 18th and 19th century that can be found in the PUL <a href="https://dpul.princeton.edu/ga_treasures/browse/japanese-and-chinese-prints-and-drawings-donated-by-gillett-g-griffin">Japanese and Chinese Prints and Drawings Collection</a></p>
+  </li>
+</ul>
+
+<h3 id="what-would-you-like-your-readersviewers-to-know-about-the-sources">What would you like your readers/viewers to know about the sources?</h3>
+
+<p>I would like readers to see the similarities differences in color usage between Japanese game boards and portraits and understand what such comparisons could tell us about the role and status of these items in Japanese society.</p>
+
+<p>I was personally struck by the chaos and clutter present in Japanese Game Boards as it contrasted with the monotony and simplicity (or at least some sort of clearness/ lack of clutter) of the Japanese portraits. This difference can be seen in the following example pictures:</p>
+
+
+      </div>
+
+      <a href="/Images-in-Japanese-Art/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/The-Princeton-Campus-A-Mapped-History/">The Princeton Campus — A Mapped History</a></h2>
+      <h4>By José Pablo Fernández García on February 17, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h2 id="introduction">Introduction</h2>
+
+<p>In the university’s nearly 300 year history, Princeton has seen its campus grow dramatically from the individual Nassau Hall that once contained everything except the bathrooms to hundreds of acres from Nassau Street to across Carnegie Lake. Every step in this expansion from colonial college to modern research university has shaped life on campus, and in turn, campus life has been embedded into the physical campus itself. This can readily be seen in some of the maps created of the campus throughout the 20th century.</p>
+
+<h2 id="the-stories-a-map-holds">The Stories A Map Holds</h2>
+
+<p>In the age of Google Maps and other similar products, maps can be seen simply as tools to help us get through the day. Guiding us from one place to another, informing us of the traffic on various roads, displaying as much information as possible about every business along a street — these are just a handful of the ways a map functions primarily as a tool today. These types of maps traffic strictly in accurate representation and factual information; even the subway maps that are often highly designed in posters and pamphlets are returned to geographical truth.</p>
+
+<p>However, this version of a map diminishes another of their functions: storyteller. While the maps found in phone apps today may be constrained by some representational duty, previous maps have relished in providing snippets of life in the places they illustrate — even if at the cost of greater detail in street layouts or building perimeters. The Princeton campus lends itself well to these storytelling maps with its many years as witness to student life and life outside the Orange Bubble.</p>
+
+
+      </div>
+
+      <a href="/The-Princeton-Campus-A-Mapped-History/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Activism-at-Princeton/">Activism at Princeton</a></h2>
+      <h4>By Amna Amin on February 17, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h2 id="initial-thoughts">Initial Thoughts</h2>
+
+<p>For my project, the basic topic that I want to look into is activism on college campuses, perhaps solely focused on Princeton. I am interested in this topic partially because I am involved in some activism on campus and also because lots of movements have ties or roots in college campuses. As a result, I believe that looking at activism on campus can also be a good way to see beginnings of and the progression of liberal ideas in society.</p>
+
+<p>This <a href="https://www.gse.harvard.edu/news/ed/18/08/student-activism-20">article</a> explains the importance and history of student activism which gives more context for my above statements.</p>
+
+<p><img src="https://library.princeton.edu/sites/default/files/news/images/Studentactivistscropped.png" alt="student activists at Princeton" width="600px" /></p>
+
+
+      </div>
+
+      <a href="/Activism-at-Princeton/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Thinking-About-Sources-and-Methods/">Thinking About Sources and Methods</a></h2>
+      <h4>By Sophie Goldman on February 16, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h2 id="sources">Sources</h2>
+<p>I am interested in exploring private forms of communication (diaries, letters, etc.) from the <a href="https://dpul.princeton.edu/pudl0017">Western Americana Collection</a>. In particular, I am curious about women’s perspectives on exploration and settlement in the Western United States in the late 19th and early 20th centuries. Most of the written materials in the collection were produced by men, especially those surrounding exploration. I found one <a href="https://figgy.princeton.edu/catalog/d622ff36-1c99-4991-81a6-4885e9f23107">manuscript</a> (pictured below) written by Nellie Martin Wade titled “Through Interior Alaska on Horseback and the Scenic Coast Route” on her exploration of Alaska in the early 20th century. Notably, Wade includes in the title page that she is the “first woman to explore the Great Shushitna Valley and the Mt. McKinley Range.”</p>
+
+
+      </div>
+
+      <a href="/Thinking-About-Sources-and-Methods/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Parks-as-spaces-of-exclusion/">Parks as Spaces of Exclusion</a></h2>
+      <h4>By Paul-Louis Biondi on February 16, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h2 id="introduction">Introduction</h2>
+<p>As we delve further into the digital humanities this semester, I am interested in exploring the development of public parks in 1930s New York and their roles in reifying and perpetuating social norms. The public park movement presented itself as a way to introduce open, green spaces into otherwise crowded, grey, concrete cities. But public parks acted as exclusionary spaces in the 1930s, both in their construction and patronage. Many of the iconic parks of New York such as Central Park were built in part by the Works Progress Administration of the New Deal and influenced by the City Beautification Movement, which promoted neo-classical building styles and Euro-centric models of beautification. At the same time as space was being created for the express purpose of leisure, the city of New York was itself undergoing changes in its composition. The Homeowners Loan Corporation, formed as a part of the New Deal, began categorizing neighborhoods according to how risky they believed loans to people in those neighborhoods would be. This marks the beginning of what we call today redlining, which served as a way of limiting the spaces in which poor people, people of color, and immigrants could exist. Thus, New York is undergoing this paradoxical change in the 1930s, wherein space is being both created and limited.</p>
+
+<p><img src="https://images.squarespace-cdn.com/content/v1/545a686fe4b059216c7cb8cc/1555108619754-H4YPTDL4S51SC1JAPJ9Z/ke17ZwdGBToddI8pDm48kPywePQIGQ6MGw-HhOE94B0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnApu_BwOoAh4uP2q_yJrReaR6SIOkgte9pq6iuz7SIMF7dARm6JjDKU1b9C1p8PByQ/dpr_d_1723.jpg?format=1500w" alt="1875 Plan for Central Park" title="1875 Central Park Plan" /></p>
+
+
+      </div>
+
+      <a href="/Parks-as-spaces-of-exclusion/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Love-Letters-from-the-Past/">Love Letters from the Past</a></h2>
+      <h4>By Savannah Pobre on February 15, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h2 id="the-idea">The Idea:</h2>
+
+<p><img src="https://www.princeton.edu/sites/default/files/styles/scale_1440/public/images/2019/12/TSEliot_banner.jpg?itok=m2XmHYYU" alt="Love Letters T.S. Elliot and Emily Hale" width="550px" class="left-image" /></p>
+
+<p>After taking some time to research Digital Humanities (DH) projects that are currently published from university research teams across the world, I believe I have found the type of website or digital platform that I would want to create for my final project in HUM 331. While digital humanities projects range across historical time periods, and also utilize different website formats and platforms, I am hoping to bring to fruition the idea of letting an old manuscript or archived document “come  to life” in a format that directly reflects the origins of my selected texts. To better put this concept into perspective, I want to provide an example of a more generic website format for a DH project such as the <a href="https://coloredconventions.org/">Colored Conventions Project</a>. If you click on the link you are taken directly to a website that houses a way to see the efforts of black organizations since the 19th century. While the style of the site is pleasing to the eye, I am hoping to take the approach of an interactive site such as <a href="https://www.unjustlyexposed.com/">Exposed</a>. In this take on a digital humanity project, creator Sharon Daniel and programmer Erik Loyer showcase the inhumanity of the United States criminal justice system through an interactive experience where the site visitor clicks keys on their computer to move across varying statements from different prisoners in the past two years. The quotes that stick out from these hearings, the most truthful, and shocking, are displayed in a bold font in the center of the screen as the lottery-style slots roll through.</p>
+
+
+      </div>
+
+      <a href="/Love-Letters-from-the-Past/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+      <header class="post-header">
+      <h2 class="post-title"><a href="/Go-West-Young-Man/">Go West Young Man</a></h2>
+      <h4>By Hope Perry on February 15, 2021</h4>
+      </header>
+
+      <div class="entry">
+        <h2 id="finding-a-source">Finding a source</h2>
+<p>Last week, when our class explored the Princeton University
+Library digital archives,
+I was excited to see what Firestone’s special collections had to offer. I
+decided to look at the
+<a href="/&quot;https://dpul.princeton.edu/pudl0017&quot;">Western Americana Collection</a>,
+since I knew I wanted a source that was written in English. If you scroll the
+collection, you’ll undoubtedly notice the many photographs and newspaper
+clippings. But I was interested in the many journals and letters handwritten
+by those who had traveled West during the 19th Century. I clicked through a
+lot of journals– I was specifically hoping to find one written by a woman.
+Although I didn’t find that, I did come across
+<a href="/&quot;https://dpul.princeton.edu/pudl0017/catalog/qr46r491g&quot;">one journal</a>
+that intrigued me more than the rest.</p>
+
+
+      </div>
+
+      <a href="/Go-West-Young-Man/" class="read-more">Read More</a>
+    </article>
+  
+
+  <div class="breadcrumbs">
+    <a href="#top">Return to the top</a>
+  </div>
+</div>
+:ET
