@@ -10,8 +10,9 @@ description: Data Manager
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/jlrelihan/jlrelihan.github.io/master/images/IMG_8058.jpg
+#Banner image
 header: yes
-header_sm: images/Dahlias.jpg
+header_sm: images/Dahlias.JPG
 #
 # Flags below are optional
 #
