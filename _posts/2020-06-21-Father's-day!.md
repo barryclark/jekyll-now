@@ -8,15 +8,14 @@ title: Analysis of my dad's work
 
 
 My dad makes gold ornaments, I remember getting ready on Sunday mornings as a kid to go with my dad to 
-deliver customers orders, but spent years after that detached from his business because of
-being busy at school. I am very happy to finally be able to relate to his work as
-a software engineer. 
+deliver customers orders. I've spent years after that detached from his business because of
+being busy at school. Finally, I am happy to be able to relate to his work as a software engineer. 
 
-This father's day I've spent some time analysing his business, hope you have fun reading it!
+This father's day I've spent some time analyzing his business, hope you like reading it!
 
 **How it all started?** 
 
-My dad was learning the skill from his uncle. There was good learning curve for a while however he didn't see 
+My dad was learning the skill from his uncle. There was good learning curve for a while, however, he didn't see 
 enough growth potential financially, so he decided to start on his own.
 When i asked him what gave him enough confidence that he will acquire customers, he 
 said his focus was on delivering good results for a few customers intially so they become loyal and return. 
@@ -40,7 +39,7 @@ of similar orders(in most cases).
 **work debt(in any form):**
 
 Since tech debt is a big thing, I asked him if they have similar problems,
-Apparenly, value of hours spent is far less than material costs, so it is easier to get 
+Apparently, value of hours spent is far less than material costs, so it is easier to get 
 the original material(or metal in this case) back and re-do it. 
 
 **Experimentation:**
@@ -55,7 +54,7 @@ to get something others have.(FOMO aka market standards :P)
 
 **What is work usually like:**
 
-He said it varies based on the order, I will try to summarise steps for above picture
+He said it varies based on the order, I will try to summarize steps for above picture
 - Gold biscuit is cut into pieces
 - It is melted and turned to a sheet
 - Then it's cut into required shape and drilling is done for stones
@@ -91,7 +90,7 @@ He said worst case scenario is that he doesn't make any money on the order.
 
 **Future of work and views on automation:**
 
-He said that it has changed a lot since he started but he doesn't see it going fully automatatic.
+He said that it has changed a lot since he started but he doesn't see it going fully automatic.
 
 **What does he have to say about gold obsession?**
 
