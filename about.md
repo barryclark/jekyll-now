@@ -3,6 +3,7 @@ layout: page
 title: About
 author: Jennifer Relihan
 date: "August 28, 2021"
+<meta charset="utf-8"/>
 permalink: /about/
 ---
 
