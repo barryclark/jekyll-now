@@ -12,7 +12,7 @@ My name is Jennifer Relihan and I am a data manager at a agriculture biotechnolo
 I live here with my husband (Tom), two cats (Boo and Sylive), and dog (Pepper). Gardening is my hobby and obsession and you'll find me in the garden at our home any chance I can get. 
 
 ![](images/cats.jpg)
-![](images/Pepper_at_window.jpg)
+![](images/Pepper_at_window.JPG)
 ![](images/Coreopsis.jpg)
 ![](images/Handful_of_Dahlias.jpg)
 
