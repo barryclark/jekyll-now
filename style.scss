@@ -287,3 +287,10 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+@import"{{ site.theme }}"; 
+.page-header{
+color:#ffff;
+background-color:#A067AB;
+background-image:linear-gradient(120deg,#5073B8,#A067AB);
+}
