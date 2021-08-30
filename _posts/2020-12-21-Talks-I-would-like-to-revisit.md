@@ -21,14 +21,14 @@ How happy is the blameless vestel's lot!<br>
 <a href="https://www.ted.com/talks/jonathan_haidt_the_moral_roots_of_liberals_and_conservatives">The moral roots of Liberals and Conservatives</a><br>
 </div>
 I like that this talk is very analytical.
-His insight on role religion plays in shaping society and POV on Grand Canyon vs older civilisations is really interesting.
+His insight on role religion plays in shaping society and POV on Grand Canyon vs older civilizations is really interesting.
 <br>
 <br>
 
 <div>
 <a href="https://jvns.ca/blog/2018/09/30/some-possible-career-goals/">Some possible career goals</a><br>
 </div>
-  This post has really changed the way i look at work and career. Definitely recommed giving it a read and checking out
+  This post has really changed the way i look at work and career. Definitely recommend giving it a read and checking out
   her other posts.
 <br>
 <br>
@@ -43,7 +43,7 @@ His insight on role religion plays in shaping society and POV on Grand Canyon vs
 <div>
 <a href="https://www.ted.com/talks/chieh_huang_confessions_of_a_recovering_micromanager?language=en">Confessions of a recovering micromanager</a><br>
 </div>
-This talk made me realise how small details can radically change the experience. Worth watching for the laugh!
+This talk made me realise how small details can radically change the experience.
 <br>
 <br>
 
@@ -109,6 +109,13 @@ I remember reading about Walden in school(9th grade), good to revisit it now(rem
 <a href="https://www.ted.com/talks/megan_mcarthur_a_nasa_astronaut_s_lessons_on_fear_confidence_and_preparing_for_spaceflight">A NASA astronaut's lesson on fear, confidence and preparing for spaceflight</a>
 </div>
 It's very inspiring to see Megan talking passionately about her career. Being helpless causes people to be more anxious about problems is a good insight I got from this talk. Explains why my mom gets more anxious when I travel than me.
+<br>
+<br>
+
+<div>
+<a href="https://perell.com/essay/50-ideas-that-changed-my-life/">50 ideas that changed my life - David Perell's blog</a>
+</div>
+Super insightful!
 <br>
 <br>
 
