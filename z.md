@@ -1,4 +1,4 @@
 ---
 redirect_to:
-  - https://zoom.us/my/cherylhung?pwd=c0YrTWJZcTluUnBidFV3NWIrbkY1QT09
+  - https://zoom.us/j/3517251983?pwd=aUFkRldObGZpS2kyQVhmbTRpa1JZdz09
 ---
