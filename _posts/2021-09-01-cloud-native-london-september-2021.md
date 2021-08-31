@@ -4,7 +4,7 @@ title: "Cloud Native London September 2021: Palo Alto Networks and Helio AG"
 description: "speakers from Palo Alto Networks and Helio AG join us at the Cloud Native London meetup September 2021, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
 image: /images/CNL_April_Rambly.jpg
-video: https://www.youtube.com/embed/v=7ppVCcz39PI
+video: https://www.youtube.com/embed/R1OjzCjhcEw
 tags:
   - Photos
   - Video
