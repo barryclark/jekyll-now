@@ -10,7 +10,7 @@ I have been volunteering at my local [Code Club](https://www.codeclub.org.uk/) a
 
 ### More Information
 
-I am a big fan on online/self-paced learning - in particular [PluralSight](https://app.pluralsight.com/library/).
+I am a big fan of online/self-paced learning - in particular [PluralSight](https://app.pluralsight.com/library/).
 You can view my PluralSight profile [here](https://app.pluralsight.com/profile/julian-joseph)
 
 ### Contact me
