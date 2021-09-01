@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Joining us tonight are some great speakers from  Palo Alto Networks and Helio AG at the September Cloud Native London virtual meetup, from 6:45pm BST tonight, on Rambly and YouTube! 
