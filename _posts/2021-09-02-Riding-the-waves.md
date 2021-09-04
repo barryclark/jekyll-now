@@ -55,6 +55,10 @@ Seemingly simple, functioning systems can be harder to build and easier to opera
 
 Time can answer a few questions.
 
+**Evolution**
+
+Systems evolve with time. Almost none started as the same version.
+
 **Fitting in**
 
 Fitting in can be easier if a common ground can be established.
