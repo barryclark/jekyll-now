@@ -5,9 +5,7 @@ title: Riding the waves
 
 ![_config.yml]({{ site.baseurl }}/images/waves.jpg)
 
-Hope this one liner thoughts of myself can help you expand your thinking horizons. 
-These are mostly from my experience and I plan to update them as I "grow".
-While I think this guide helps build a different perspective, I strongly agree that sometimes it's easier said than done.
+I've put down some one liner thoughts for different scenarios, hope they can can serve as food for thought. I plan to keep updating them while I "grow" :P
 
 **Legacy**
 
