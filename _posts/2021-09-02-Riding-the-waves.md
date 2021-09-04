@@ -7,6 +7,7 @@ title: Riding the waves
 
 Hope this one liner thoughts of myself can help you expand your thinking horizons. 
 These are mostly from my experience and I plan to update them as I "grow".
+While I think this guide helps build a different perspective, I strongly agree that sometimes it's easier said than done.
 
 **Legacy**
 
@@ -34,7 +35,7 @@ Change can be scary, it can help to understand the impact.
 
 **Anxiety**
 
-Anxiety comes from feeling out of control. While it cannot be completely eliminated, being aware of where it's coming from can make us feel slightly better.
+Anxiety comes from feeling out of control. While it cannot be completely eliminated, being aware of where it's coming from, can make us feel slightly better.
 
 **Problems**
 
@@ -96,4 +97,4 @@ Being aware of not completely understanding can humble us while learning.
 
 It's important to be aware of influence that's being laid upon.
 
-While I think this guide helps build a different perspective, I strongly agree that sometimes it's easier said than done.
+
