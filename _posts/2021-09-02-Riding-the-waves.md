@@ -5,7 +5,7 @@ title: Riding the waves
 
 ![_config.yml]({{ site.baseurl }}/images/waves.jpg)
 
-I've put down some one liner thoughts for different scenarios, hope they can can serve as food for thought. I plan to keep updating them while I "grow" :P
+I've put down some one liner thoughts for different scenarios, hope they can can serve as food for thought. I plan to keep updating them as I "grow" :P
 
 **Legacy**
 
