@@ -91,7 +91,7 @@ It can help to also understand quality while analyzing for quantity.
 
 **Understanding**
 
-Being aware of how much we don't understanding a concept/situation can humble us while learning.
+Being aware of how much we don't understand a concept/situation can humble us while learning.
 
 **Influence**
 
