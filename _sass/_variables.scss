@@ -1,10 +1,9 @@
-
 //
 // VARIABLES
 //
 
 // Colors
-$blue: #4183C4;
+$blue: #4183c4;
 
 // Grays
 $black: #000;
@@ -17,7 +16,10 @@ $white: #fff;
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$lato: Lato, Helvetica Neue, Arial, sans-serif;
 $georgia: Georgia, serif;
+$merriweather: "Merriweather", "Georgia", serif;
+$montserrat: Montserrat, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
