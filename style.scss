@@ -80,7 +80,7 @@ a {
   cursor: pointer;
   &:hover,
   &:active {
-    color: $blue;
+    color: $united-nations-blue;
   }
 }
 
@@ -166,11 +166,13 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-image: url("images/header.jpg");
+  background-size: cover;
+  background-color: $royal-blue-dark;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -206,7 +208,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $rose-madder;
   cursor: pointer;
   font-family: $montserrat;
   font-weight: 300;
@@ -216,7 +218,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $baby-powder;
   font-size: 16px;
 
   @include mobile {
@@ -239,14 +241,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $lightGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $united-nations-blue;
     }
   }
 }
@@ -287,9 +289,10 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-image: url("images/footer.jpg");
+  background-size: cover;
+  background-color: $royal-blue-dark;
 }
 
 footer {
