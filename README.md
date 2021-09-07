@@ -1,0 +1,3 @@
+### Local development
+
+`jekyll serve`
