@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi there, welcome to my space. you can call me natan.
+I'm a gregarious person and easy to talk to, anyway i'm currently focusing my study in web development, feel free to contact.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+- 👯 I’m looking for my first job as a Web Developer
+- 🔭 I’m currently learning Next.Js
+- 🤔 Life Motto : "Don't be a regular person"
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[natanaelcaesario09@gmail.com.com](mailto:natanaelcaesario09@gmail.com)
