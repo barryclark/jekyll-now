@@ -3,11 +3,11 @@ layout: post
 title: Deep Lore - CKAD Exam Prep
 ---
 
-Hi folks, welcome to **War(un)lock - Deep Lore Edition**! This is the first blog post where I'll post an extra blog that may not fit well with the regularly blog posts. Why?
+Hi folks, welcome to **War(un)lock - Deep Lore Edition**! This post will be dedicated on **preparing for the Certified Kubernetes Application Developer (CKAD) exam**. This is the first blog post where I'll post an extra blog that may not fit well with the regularly blog posts. Why?
 1. All of the content is relevant to a small audience.
 2. It's so much in-depth content, it would mask the day-to-day updates.
 
-This post will be dedicated on **preparing for the Certified Kubernetes Application Developer (CKAD) exam**. Since I will be renewing my certification this month, and folks have regularly asked me about the certification exam, I wanted to post my study plan and resources to prepare.
+Since I will be renewing my certification this month, and folks have regularly asked me about the certification exam, I wanted to post my study plan and resources that I've used to prepare for the exam. I hope that, if you decide to take the CKAD certification exam yourself, you will find this blog post helpful!
 
 <div style="text-align:center"><img src="/images/blog11/blog11-ckad.jpg" width="500"></div>
 
