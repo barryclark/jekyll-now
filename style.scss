@@ -8,6 +8,7 @@
 @import "reset";
 @import "variables";
 @import "colors";
+@import "layout";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -165,7 +166,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   background-image: url("images/header.jpg");
   background-size: cover;
   background-color: $royal-blue-dark;
@@ -257,9 +258,29 @@ nav {
 // .main
 //
 
+.posts {
+  h1 {
+    margin: 0.75em 0 15px;
+    color: $black;
+  }
+}
+
 .posts > .post {
-  padding-bottom: 2em;
+  // padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+  margin: 10px 0 0;
+
+  a {
+    color: $darkerGray;
+    &:hover,
+    &:active {
+      color: $united-nations-blue;
+    }
+  }
+
+  h2 {
+    margin: 0 0 15px;
+  }
 }
 
 .posts > .post:last-child {

@@ -10,6 +10,13 @@ $georgia: Georgia, serif;
 $merriweather: "Merriweather", "Georgia", serif;
 $montserrat: Montserrat, sans-serif;
 
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
