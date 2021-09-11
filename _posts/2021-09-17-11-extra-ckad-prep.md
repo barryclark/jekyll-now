@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep Lore: CKAD Exam Prep
+title: Deep Lore - CKAD Exam Prep
 ---
 
 Hi folks, welcome to War(un)lock - Deep Lore Edition! This is the first blog post where I'll post an extra blog that may not fit well with the regularly blog posts. Why?
