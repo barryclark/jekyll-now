@@ -287,7 +287,8 @@ footer {
 .page-header{
 color:#9FE2BF;
 background-color:#9FE2BF;
-background-image:![](images/Dahilas.jpg);
+background-image: url("Dahilas.jpg");
+	
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
