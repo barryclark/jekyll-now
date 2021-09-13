@@ -33,7 +33,6 @@ selecting data tables in R by using SQL instead of R packages.
 ## Example R Markdown Output
 
 ``` r
+png(filename="iris_plot.png")
 plot(iris)
 ```
-
-![](~/ST558/repos/jlrelihan.github.io/_imagesunnamed-chunk-1-1.png)<!-- -->
