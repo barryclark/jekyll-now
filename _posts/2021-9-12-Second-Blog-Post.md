@@ -1,7 +1,7 @@
 Programming Background
 ================
 Jennifer Relihan
-9/12/2021
+09/12/2021
 
 ## Programming Background
 
@@ -30,7 +30,7 @@ database.
 I do find that since I’ve been using MYSQL, I have a muche easier time
 selecting data tables in R by using SQL instead of R packages.
 
-## Example R Markdown Output
+## Example R Markdown output
 
 ``` r
 knitr::opts_chunk$set(fig.path = "~/ST558/repos/jlrelhian.github.io/images")
