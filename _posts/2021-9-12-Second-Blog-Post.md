@@ -31,8 +31,3 @@ I do find that since I’ve been using MYSQL, I have a muche easier time
 selecting data tables in R by using SQL instead of R packages.
 
 ## Example R Markdown Output
-
-``` r
-png(filename="iris_plot.png")
-plot(iris)
-```
