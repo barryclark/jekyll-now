@@ -33,8 +33,8 @@ selecting data tables in R by using SQL instead of R packages.
 ## Example R Markdown Output
 
 ``` r
-knitr::opts_chunk$set(fig.path = "../images/")
+knitr::opts_chunk$set(fig.path = "~/ST558/repos/jlrelhian.github.io/images")
 plot(iris)
 ```
 
-![](C:/Users/jscha/OneDrive/Documents/ST558/repos/jlrelihan.github.io/_posts/2021-9-12-Second-Blog-Post_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](C:/Users/jscha/OneDrive/Documents/ST558/repos/jlrelihan.github.io/_posts/2021-9-12-Second-Blog-Post_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
