@@ -1,7 +1,12 @@
 Programming Background
 ================
 Jennifer Relihan
-09/12/2021
+9/12/2021
+
+``` r
+knitr::opts_chunk$set(fig.path = "../images/")
+knitr::opts_chunk$set(warning = FALSE, message=FALSE)
+```
 
 ## Programming Background
 
@@ -30,11 +35,10 @@ database.
 I do find that since I’ve been using MYSQL, I have a muche easier time
 selecting data tables in R by using SQL instead of R packages.
 
-## Example R Markdown output
+## Example R Markdown Output
 
 ``` r
-knitr::opts_chunk$set(fig.path = "~/ST558/repos/jlrelhian.github.io/images")
 plot(iris)
 ```
 
-![](C:/Users/jscha/OneDrive/Documents/ST558/repos/jlrelihan.github.io/_posts/2021-9-12-Second-Blog-Post_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](../images/unnamed-chunk-1-1.png)<!-- -->
