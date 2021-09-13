@@ -3,11 +3,6 @@ Programming Background
 Jennifer Relihan
 9/12/2021
 
-``` r
-knitr::opts_chunk$set(fig.path = "../images/")
-knitr::opts_chunk$set(warning = FALSE, message=FALSE)
-```
-
 ## Programming Background
 
 I knew R prior to the course when I learned how to use it at work. I
@@ -41,4 +36,4 @@ selecting data tables in R by using SQL instead of R packages.
 plot(iris)
 ```
 
-![](../images/unnamed-chunk-1-1.png)<!-- -->
+![](~/ST558/repos/jlrelihan.github.io/_imagesunnamed-chunk-1-1.png)<!-- -->
