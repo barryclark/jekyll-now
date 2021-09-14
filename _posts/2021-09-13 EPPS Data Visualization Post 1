@@ -8,12 +8,12 @@ Two research scientists Martin Wattenberg and Fernanda Viegas from IBM Research 
 This is a web site where many people could upload their own data, create interactive visualizations, and carry on conversations. Although Many Eyes was 
 decommissioned by IBM in 2015, its ideas live on in many other visualization products. 
 
-![images](https://MinShiMia.github.io/images/Donald%20Trump%20Twitter%20Plot1.png)
+![images](https://MinShiMia.github.io/images/manyeyes-intro.png)
 
 
 
 DATA.GOV is the home of the U.S. Government's open data. 
-![images](https://MinShiMia.github.io/images/Donald%20Trump%20Twitter%20Plot2.png)
+![images](https://MinShiMia.github.io/images/DATAGOV.png)
 
 
 At the same time, journalism also include lots of data visualization in their coverages. Now, many media companies, such as the New York Times, BBC Online, etc. 
@@ -30,8 +30,6 @@ The big companies, for instance, Google also has a project which aims at making 
 As for the tools for data visualization, flare is one. Flare is an ActionScript library for creating visualizations that run in the Adobe Flash Player. From 
 basic charts and graphs to complex interactive graphics, the toolkit supports data management, visual encoding, animation, and interaction techniques. 
 Even better, flare features a modular design that lets developers create customized visualization techniques without having to reinvent the wheel.
-![images](https://MinShiMia.github.io/images/Donald%20Trump%20Twitter%20Plot2.png)
-
 
 Protovis (https://mbostock.github.io/protovis/), is another graphical approach to visualization. Protovis composes custom views of data with simple marks such as 
 bars and dots. Unlike low-level graphics libraries that quickly become tedious for visualization, Protovis defines marks through dynamic properties that encode 
