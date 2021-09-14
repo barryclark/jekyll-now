@@ -1,4 +1,3 @@
-Programming Background
 ================
 Jennifer Relihan
 9/12/2021
@@ -33,5 +32,5 @@ selecting data tables in R by using SQL instead of R packages.
 ## Example R Markdown Output
 
 
-![](images/plot_iris.jpg)
+![Iris Plot](/images/plot_iris.jpg)
 
