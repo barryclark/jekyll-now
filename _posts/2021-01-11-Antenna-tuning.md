@@ -47,3 +47,26 @@ NOTE: The values on the Smith chart are S-parameter values, and not impedance va
 
 ![tuning-seriesC](/images/tunning_seriesC.png)
 
+Doing the same as before, but now sweeping the values of the series capacitor, we can reach the center of the Smith chart with a 0.7 pF capacitor. This leads to the following result:
+
+![tuning-lowband](/images/antenna_tunning_lowband.png)
+
+The 2.4 GHz band is done. As you can see, the 5 GHz moved as well, however, it's movement was small and actually beneficial, since now we can match the 5 GHz band by simply adding a shunt capacitor. Conversely, if we'd use a series inductor, as mentioned above, the 5 GHz band would move to a value with large inductance which would require a series capacitor to match it. But the series capacitor would then move the lowest frequency band away from the tune we've reached. The figure below shows the comparison of the low band match between the CL circuit described thus far and the single series inductor.
+
+![tuning-lowband_2](/images/antenna_tunning_lowband_2.png)
+
+You can see what I described previously. At 2.4 GHz we get a good match, but at 5.5 GHz the impedance moves to a place where it's difficult to match without affecting back the lowest band.
+
+Going back to our circuit, as mentioned above, the thing left to do is to add a shunt capacitor to match the 5 GHz band. Following the same procedure as before, we get to a value of approximately 0.5 pF to match the 5 GHz band.
+
+![tuning-shuntC](/images/tunning_shuntC.png)
+
+This circuit, leads us to the following final results (in blue). Which is not bad, but can be improved. If we teak the latest shunt capacitor a bit off the center, by using a 0.3 pF capacitor instead of 0.5 pF, we may get a better match at the 2 GHz band (in red).
+
+![tuning-highband](/images/antenna_tunning_highband.png)
+
+Now, this is all good and all, but the truth is, in a real PCB, you have tracks in between the components, and these are not ideal, they have parasitics due to the nature of their packages, as well as parasitics which are formed between them and the PCB tracks. All these effects are considerable at GHz frequencies and they'll impact the matching. If one simulates the circuit behavior in such a manner, it will fail miserably in a real application. But I'll leave a demonstration of such scenario for my next post (which I seriously hope won't take so long).
+
+That's all for today.
+
+Stay tuned (in whatever bands you want)!
