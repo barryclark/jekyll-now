@@ -32,5 +32,7 @@ selecting data tables in R by using SQL instead of R packages.
 
 ## Example R Markdown Output
 
+![](images/cats.jpg)
+
 ![](images/plot_iris.jpg)
 
