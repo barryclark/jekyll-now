@@ -60,14 +60,19 @@ Seemingly simple, functioning systems can be harder to build and easier to opera
 Putting in conscious effort into something almost never goes wasted.
 
 **Criticism**
+
 Negative criticism, although hurts at the instant can also be used as a fuel.
 
 **Haters**
+
 It's important to realise not everyone has your best interests but being reminded of purpose you've set for yourself in the past can help.
 
 **Dreams**
 
+Use them to keep you moving!
+
 **Exceptions**
+
 When analyzing a scenario making sure it's not an exception/one-off can be helpful.
 
 **Time**
