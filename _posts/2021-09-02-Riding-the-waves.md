@@ -3,13 +3,17 @@ layout: post
 title: Riding the waves
 ---
 
-![_config.yml]({{ site.baseurl }}/images/waves.jpg)
+![_config.yml]({{ site.baseurl }}/images/waves.gif)
 
 I've put down some one liner thoughts for different scenarios, hope they can can serve as food for thought. I plan to keep updating them as I "grow" :P
 
 **Legacy**
 
 Things built over time can have good lessons to offer.
+
+**Toolkit**
+
+When solving problems make sure you have proper toolkit.
 
 **Judgement**
 
@@ -50,6 +54,21 @@ It can help to understand how much control we have over situations we are dwelli
 **Simplicity**
 
 Seemingly simple, functioning systems can be harder to build and easier to operate.
+
+**Effort**
+
+Putting in conscious effort into something almost never goes wasted.
+
+**Criticism**
+Negative criticism, although hurts at the instant can also be used as a fuel.
+
+**Haters**
+It's important to realise not everyone has your best interests but being reminded of purpose you've set for yourself in the past can help.
+
+**Dreams**
+
+**Exceptions**
+When analyzing a scenario making sure it's not an exception/one-off can be helpful.
 
 **Time**
 
@@ -98,5 +117,3 @@ Being aware of how much we don't understand a concept/situation can humble us wh
 **Influence**
 
 It's important to be aware of influence that's being laid upon.
-
-
