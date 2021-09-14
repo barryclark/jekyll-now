@@ -31,3 +31,5 @@ I do find that since I’ve been using MYSQL, I have a much easier time
 selecting data tables in R by using SQL instead of R packages.
 
 ## Example R Markdown Output
+![](images/plot_iris.jpg)
+
