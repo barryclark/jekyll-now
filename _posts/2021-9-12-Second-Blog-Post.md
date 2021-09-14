@@ -27,7 +27,7 @@ as the column values so I use R to get it in the correct format and as a
 quality check to ensure there are no errors being loaded into the
 database.
 
-I do find that since I’ve been using MYSQL, I have a muche easier time
+I do find that since I’ve been using MYSQL, I have a much easier time
 selecting data tables in R by using SQL instead of R packages.
 
 ## Example R Markdown Output
