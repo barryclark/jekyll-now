@@ -18,4 +18,9 @@ I also fizzle around with embedded circuits and other RF electronics, so I might
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[antenna.guy.blog@gmail.com](mailto:antenna.guy.blog@gmail.com)
+
+#### Avatar picture
+
+Photo by <a href="https://unsplash.com/@gillesrollandmonnet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gilles Rolland-Monnet</a> on <a href="https://unsplash.com/s/photos/antenna?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
