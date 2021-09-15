@@ -36,6 +36,7 @@ def sum_numbers(*args):
 print(sum_numbers(1, 2, 3))
 ```
 Now we can see we can pass whatever length of numbers we like. 
+
 **Notes**: `args` is not forced to use. It's allowed to use whatever word we like, such as `*integer` or `*numbers` but `*args` is the most common way.
 
 Compared to `*args`, `**kwargs` is not a tuple of params but a dictionary that contains keys and values. The keys will be the params' name while the values will be the params' values. See the example below:
