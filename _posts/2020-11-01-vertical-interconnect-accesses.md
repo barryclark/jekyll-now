@@ -16,6 +16,7 @@ I've been cooking this post for a while, but due to several reasons (laziness), 
 Now, this stuff is no secret, you can read the [High-Speed Digital Design: A Handbook of Black Magic](https://books.google.pt/books?id=H5SsQgAACAAJ&hl=pt-PT&source=gbs_book_other_versions) by Howard W. Johnson and Martin Graham and you'd learn most of this stuff. The issue is, most electronics engineers don't actually read this book unless they work with Signal Integrity topics, but believe me if I say everyone can benefit from getting to know about it. And not only those poor EMC engineers, that have to dwell into the deepness of electronic hell, to fight the evil forces of the electromagnetic and restore the balance to the force(s)... quite literally.
 
 ![Gandalf](/images/gandalf.gif)
+
 (me, fightning the nasty harmonics. Or the way I picture it in my head...)
 
 Well, that would be a pretty lame post if I'd just leave it at that. So I'm going to try to show the limits of the application of vias on RF tracks, especially in 2- and 4-layer FR-4 PCBs, which are used most frequently, especially (but not exclusively) in the hobbyist world.
