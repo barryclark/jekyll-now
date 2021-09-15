@@ -44,11 +44,30 @@ The continuous phase progression is easy to understand given that the other elem
 
 With that out of the way, let's get back to the point of this post, which is about the feeding network as shown in the first figure. Now, as my grandma used to say, "there's many ways to tie a tie", so there's many ways to produce said feeding network. The most obvious and straightforward method is as I've shown in my previous post:
 
-![wilkinson](/images/wilkinson_nw.jpg)
+![wilkinson](/images/wilkinson_nw.JPG)
 
 It's a Wilkinson power divider, followed by delay lines. The main issue with this implementation, is that a microstrip line with quarter-wavelength length (90 degrees of electrical length) in FR-4 substrate at 900 MHz, is 46.1 mm long, and for that implementation you have one branch with 180º, that's 92.2 mm and the other with 270º, that's a whooping 138.3 mm length. Of course you can make curves and meander it around, but that's still a lot of track to cover. And when you think that these lines have a huge loss given FR-4 being a very poor substrate material for RF tracks, you really start to look for better alternatives.
 
 One alternative is as shown in [Qiang Liu's paper](https://ieeexplore.ieee.org/document/7042302), which is actually a combination of two structures, first an out-of-phase (180º) power splitter, described in [J. X. Chen's paper](https://digital-library.theiet.org/content/journals/10.1049/el_20061767), plus two miniaturized arbitrary phase difference couplers, as described in [Yongle Wu's paper](https://ieeexplore.ieee.org/document/6515706). As in the following picture:
 
 ![qiangliu](/images/qiangliu_nw.jpg)
+
+NOTE: I could have done this schemes in a computer, but I'm lazy-artistic and I enjoyed doing them on hand.
+
+The middle section represents the out-of-phase power splitter and the top and bottom sections are the arbitrary phase difference couplers, in this case, tuned for 90º phase difference between ports. 
+
+Let's break it down...
+
+![breakitdown](/images/breakitdown.gif)
+
+The out-of-phase power splitter is actually a pretty simple and clever structure. It's made with two microstrip lines on top of each other, with a common ground plane in the middle, and the signal is fed into one of the lines with respect to the other, so they're naturally out-of-phase (180º). In order to accomplish the 50  Ω  impedance at the output ports, an impedance transition of 25 to 50  Ω  is necessary, which is achieved with a quarter-wavelength section of line with  $Z_1=Z_0/2–\sqrt(2)=35.35$Ω . Here's an illustration of that section (ground plane is hidden so bottom layer is visible).
+
+![splitter](/images/splitter.png)
+
+The coupler is a little more complex, nevertheless, the principle for design is not complicated. There's essentially two different sections, one at the middle with the highest impedances, and the left and right sections, being equal, with lower impedances. They're composed of coupled microstrip line sections, with a given length and even/odd impedance characteristic, determined based on the intended phase delay between each of the ports. These impedances can be calculated from the following expressions:
+
+$Z_e1=2k\sqrt(1−C^2)\sin(\phi)/[(k+1)C]$
+$Z_e2=\sqrt(Z_e1^2/(1+Z_e1Z_o1)$
+$Z_o1=Z_e1/k$ 
+$Z_o2=Z_e2/k$
 
