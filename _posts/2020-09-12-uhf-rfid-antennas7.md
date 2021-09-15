@@ -66,8 +66,11 @@ The out-of-phase power splitter is actually a pretty simple and clever structure
 
 The coupler is a little more complex, nevertheless, the principle for design is not complicated. There's essentially two different sections, one at the middle with the highest impedances, and the left and right sections, being equal, with lower impedances. They're composed of coupled microstrip line sections, with a given length and even/odd impedance characteristic, determined based on the intended phase delay between each of the ports. These impedances can be calculated from the following expressions:
 
-$Z_e1=2k\sqrt(1−C^2)\sin(\phi)/[(k+1)C]$
-$Z_e2=\sqrt(Z_e1^2/(1+Z_e1Z_o1)$
-$Z_o1=Z_e1/k$ 
-$Z_o2=Z_e2/k$
+$$Z_{e1}=2k\sqrt(1−C^2)\sin(\phi)/[(k+1)C]$$
+
+$$Z_{e2}=\sqrt(Z_{e1}^2/(1+Z_{e1}Z_{o1})$$
+
+$$Z_{o1}=Z_{e1}/k$$
+
+$$Z_{o2}=Z_{e2}/k$$
 
