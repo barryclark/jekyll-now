@@ -44,7 +44,7 @@ The continuous phase progression is easy to understand given that the other elem
 
 With that out of the way, let's get back to the point of this post, which is about the feeding network as shown in the first figure. Now, as my grandma used to say, "there's many ways to tie a tie", so there's many ways to produce said feeding network. The most obvious and straightforward method is as I've shown in my previous post:
 
-![wilkinson](/images/wilkinson_nw.JPG)
+![wilkinson](/images/wilkinson_nw.jpg)
 
 It's a Wilkinson power divider, followed by delay lines. The main issue with this implementation, is that a microstrip line with quarter-wavelength length (90 degrees of electrical length) in FR-4 substrate at 900 MHz, is 46.1 mm long, and for that implementation you have one branch with 180º, that's 92.2 mm and the other with 270º, that's a whooping 138.3 mm length. Of course you can make curves and meander it around, but that's still a lot of track to cover. And when you think that these lines have a huge loss given FR-4 being a very poor substrate material for RF tracks, you really start to look for better alternatives.
 
@@ -84,7 +84,30 @@ As you can see, with those values for even/odd impedance, the width and separati
 
 All of this put together results in the following:
 
-(ADD PICTURE OF QIANG LIU NETWORK IMPLEMENTED)
+![couplers](/images/couplers.png)
 
 The ground plane is transparent in this picture so all the layers are visible. Nevertheless, between the top and bottom PCB's, there's a common ground for both microstrip lines, it's border can be seen in the bottom section of the picture, at the input section, there's no ground in between the two feed pads.
 Then, when combined with the four PIFA antennas from before, placed at a distance from  11.2 mm from the ground plane of the couplers board, result in the following structure, wielding the results shown:
+
+![complete](/images/quadrifilar_complete.png)
+
+Complete quadrifilar structure perspective view
+
+![radiation](/images/radiation_3d.png)
+
+Radiation pattern (Gain) at 900 MHz
+
+![sparameters](/images/sparameters.png)
+
+Reflection coefficient
+
+![gain_ar](/images/radiation.png)
+
+Gain and axial-ratio with frequency
+
+The impedance bandwidth as well as the circular polarization bandwidth are quite wide. But the trade-off is the gain, especially when implementing such a distribution network on a very lossy substrate, reducing the radiation efficiency to values in the order of 70%, the maximum RHCP gain is 3.0 dBic.
+
+I wanted to show another method to have a sequential phase difference 4-port distribution network, but this post is getting rather long, so I'm going to leave that to a further opportunity. As usual, I'll upload the design files for this antenna on my GitHub.
+
+
+Stay tuned!
