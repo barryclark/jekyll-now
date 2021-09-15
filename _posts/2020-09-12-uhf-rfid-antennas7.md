@@ -74,3 +74,17 @@ $$Z_{o1}=Z_{e1}/k$$
 
 $$Z_{o2}=Z_{e2}/k$$
 
+where  $C$  is the coupling coefficient, 3-dB in this case, and $\phi$ is the phase difference between ports, 90º in this case. The $k$ factor is a value between 1 and 2, that balances the bandwidth of operation of the coupler, with its potential size and design constraints. In Qiang Liu's paper they've set $k$ to 1.2, which is a good compromise between size, bandwidth and the feasible separation between tracks for fabrication, wielding the following parameter values for the couplers lines, $Z_{e1}=54.5 \Omega$, $Z_{o1}=45.5 \Omega$, $Z_{e2}=38.5\Omega$ and $Z_{o2}=32.0 \Omega$.
+
+So now you just need to design said couplers and you're rightfully asking, "how to design such coupled lines with those even and odd mode impedances?". Well, there are some closed form equations to determine the physical parameters of the lines based on the impedance parameters, and the easiest and fastest way is to use an online calculator, [like this one](http://wcalc.sourceforge.net/cgi-bin/coupled_microstrip.cgi), instead doing all those calculations by hand.Here's an example of one of the sections with $Z_{e1}$ and $Z_{o1}$ impedances:
+
+![lines_calc](/images/coupled_lines_calc.png)
+
+As you can see, with those values for even/odd impedance, the width and separation spaces for the coupled microstrip lines are very close to the dimensions used by Qiang Liu in his paper. Still, this is just to obtain an approximate result, these are then further optimized in simulation, and given the wide bandwidth of operation, working with just slide deviations is ok.
+
+All of this put together results in the following:
+
+(ADD PICTURE OF QIANG LIU NETWORK IMPLEMENTED)
+
+The ground plane is transparent in this picture so all the layers are visible. Nevertheless, between the top and bottom PCB's, there's a common ground for both microstrip lines, it's border can be seen in the bottom section of the picture, at the input section, there's no ground in between the two feed pads.
+Then, when combined with the four PIFA antennas from before, placed at a distance from  11.2 mm from the ground plane of the couplers board, result in the following structure, wielding the results shown:
