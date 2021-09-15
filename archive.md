@@ -4,6 +4,18 @@ title: Thoughts & Takeaways Archive
 permalink: /COVID19/archive/
 ---
 
+### September 15th, 2021 thoughts & takeaways:
+
+* I've included a new chart below that will update every evening that shows the last 7 day's traffic broken down by time of day. The morning peak is still almost non-existent and nowhere near the pre-pandemic levels.
+
+* June, July, August were all 88 to 89% of normal conditions with no discernible bump after the return to school in early August. 
+
+* Now that students are back on campus at UT, mircomobility trips have reached a new record high.
+
+* Airport passengers peaked back during the 4th of July Holiday. Since then, there has been a pretty steep drop off to March 2021 levels. The lack of business travel has really caused there to be a steeper drop off during the "shoulder" seasons of the late summer/early fall. 
+
+***
+
 ### July 12th, 2021 thoughts & takeaways:
 
 * June airport passenger traffic was 99% of "normal", as compared to February 2020. I'd expect the 4th of July weekend to be a big spike in the data.
