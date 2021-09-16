@@ -4,14 +4,18 @@ title: UHF RFID Antennas - VI - Quadrifilar antenna (Part I)
 ---
 
 Hey there folks! 
- 
+
+{:refdef: style="text-align: center;"}
 ![](/images/hello.gif)
+{: refdef}
 
 Today I'm heading back to the RFID reader antennas topic. This time, I'm covering another typical antenna found in these readers, which is the quadrifilar antenna. In this particular case, a printed implementation of the quadrifilar antenna. These antennas are composed of four arms, either monopoles or PIFA type elements, where each of the elements is fed with a 90º phase delay in between in order to create a circularly polarized radiation. Another common place for quadrifilar antennas is the helix type antennas used for VHF and UHF band communications and GNSS applications. These are very popular among HAMs and also some commercial applications. Here's some examples:
 
+{:refdef: style="text-align: center;"}
 ![helix](/images/quadrifilar_helix.png) | ![pifa](/images/quadrifilar.png)
 :-------------------------:|:-------------------------:
 Quadrifilar helix antenna | Quadrifilar PIF-Antenna
+{: refdef}
 
 The main feature of this implementation (Quadrifilar PIFA) is the polarization purity, wide bandwidth (due to impedance stability with frequency of the elements of the antennas, when placed above a ground plane), associated with a rather compact package. Yes, there are smaller antennas, but you trade performance for size and the quadrifilar usually gives a good compromise.
 
@@ -23,7 +27,9 @@ In this post I'll go through the process of designing such an antenna and focus 
  
 I'll start with designing the IFA: IFAs are pretty old antennas, no busy covering the particularities of it. But if you're interested, you can check [this page](https://www.antenna-theory.com/antennas/patches/pifa.php), has a lot of useful resources. It's easy, you just design an arm on a PCB, place it at some distance from a ground plane (on the picture below, the antenna arm is in the top PCB while the ground is in the bottom PCB), feed it at a given distance from one of the arms edges and place a short circuit pin at that end. Like this:
 
+{:refdef: style="text-align: center;"}
 ![](/images/quadrifilar_prespective.png)
+{: refdef}
 
 NOTE: gray zones are dielectric (FR4), yellow zones are copper.
 
