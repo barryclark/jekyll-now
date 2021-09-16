@@ -63,7 +63,7 @@ Now, looking more closely, there's slight differences. The maximum electric fiel
 So all this stuff just to say that, unless you're working on RF applications beyond 5 GHz of frequency, you should not worry jack about the 90º bends and by all means use them. Just bear in mind the space savings that those 45º curves provide... and how satisfying it is to look at those lines all lined up making curves together...
 
 {:refdef: style="text-align: center;"}
-![](/images/noshitsherlock.gif)
+![](/images/ocd.gif)
 {: refdef}
 
 Well that's it for today. Next post I'll try to get back to antenna topics, but I hope to release one about 'via' transitions on RF tracks soon.
