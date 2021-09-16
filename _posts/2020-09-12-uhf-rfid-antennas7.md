@@ -11,13 +11,9 @@ So the idea is to create a system which has one single input port and four outpu
 
 But how exactly does that work and why the antenna becomes circularly polarized, when the single element of the antenna has linear polarization? Well, if you generate two orthogonal electric field components with a 90º phase difference between them, then the resulting field in the direction of radiation varies circularly. To the left or to the right depending on which component comes first. Here's two poor animations I've put together in Python to illustrate the effect (I made an effort alright?):
 
-![efield-linear](/images/linear_pol_corr.gif)
-
-Electric field components with 0º phase
-
-![efield-circular](/images/circular_pol_corr.gif)
-
-Electric field components with 90º phase
+![efield-linear](/images/linear_pol_corr.gif) | ![efield-circular](/images/circular_pol_corr.gif)
+:-------------------------:|:-------------------------:
+Electric field components with 0º phase | Electric field components with 90º phase
 
 So, since we have elements generating linear polarization but one orthogonal to the other, if they're fed in phase, they'll generate a linear, but slant polarization, like the animation on the left. But, if they're fed with a 90º phase difference we get a circular polarization, like the one shown on the right.
 
@@ -89,21 +85,13 @@ All of this put together results in the following:
 The ground plane is transparent in this picture so all the layers are visible. Nevertheless, between the top and bottom PCB's, there's a common ground for both microstrip lines, it's border can be seen in the bottom section of the picture, at the input section, there's no ground in between the two feed pads.
 Then, when combined with the four PIFA antennas from before, placed at a distance from  11.2 mm from the ground plane of the couplers board, result in the following structure, wielding the results shown:
 
-![complete](/images/quadrifilar_complete.png)
-
-Complete quadrifilar structure perspective view
-
-![radiation](/images/radiation_3d.png)
-
-Radiation pattern (Gain) at 900 MHz
-
-![sparameters](/images/sparameters.png)
-
-Reflection coefficient
-
-![gain_ar](/images/radiation.png)
-
-Gain and axial-ratio with frequency
+![complete](/images/quadrifilar_complete.png) | ![radiation](/images/radiation_3d.png)
+:-------------------------:|:-------------------------:
+Complete quadrifilar structure perspective view | Radiation pattern (Gain) at 900 MHz
+:-------------------------:|:-------------------------:
+![sparameters](/images/sparameters.png) | ![gain_ar](/images/radiation.png)
+:-------------------------:|:-------------------------:
+Reflection coefficient | Gain and axial-ratio with frequency
 
 The impedance bandwidth as well as the circular polarization bandwidth are quite wide. But the trade-off is the gain, especially when implementing such a distribution network on a very lossy substrate, reducing the radiation efficiency to values in the order of 70%, the maximum RHCP gain is 3.0 dBic.
 
