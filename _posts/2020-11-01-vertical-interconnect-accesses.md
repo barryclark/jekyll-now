@@ -34,8 +34,8 @@ The simulation structure is microstrip line, tuned for 50  Ω , split in the mid
 
 Here's the simulation models for 2-layers and 4-layers examples: 
 {:refdef: style="text-align: center;"}
-![2layers](/images/microstrip_line_1.png) | ![4layers](/images/microstrip_line_2.png)
-:----------------------------||---------------------:
+![2layers](/images/microstrip_line_1.png)  
+![4layers](/images/microstrip_line_2.png)
 {: refdef}
 For the 2-layer example I've modeled the dielectric as FR-4, while for the 4-layer board I've based the PCB on the [OSH Park 4-layer stackup](https://docs.oshpark.com/services/four-layer/). 
 
