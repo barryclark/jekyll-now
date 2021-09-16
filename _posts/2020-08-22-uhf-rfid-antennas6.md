@@ -11,11 +11,9 @@ Hey there folks!
 
 Today I'm heading back to the RFID reader antennas topic. This time, I'm covering another typical antenna found in these readers, which is the quadrifilar antenna. In this particular case, a printed implementation of the quadrifilar antenna. These antennas are composed of four arms, either monopoles or PIFA type elements, where each of the elements is fed with a 90º phase delay in between in order to create a circularly polarized radiation. Another common place for quadrifilar antennas is the helix type antennas used for VHF and UHF band communications and GNSS applications. These are very popular among HAMs and also some commercial applications. Here's some examples:
 
-{:refdef: style="text-align: center;"}
 ![helix](/images/quadrifilar_helix.png) | ![pifa](/images/quadrifilar.png)
 :-------------------------:|:-------------------------:
 Quadrifilar helix antenna | Quadrifilar PIF-Antenna
-{: refdef}
 
 The main feature of this implementation (Quadrifilar PIFA) is the polarization purity, wide bandwidth (due to impedance stability with frequency of the elements of the antennas, when placed above a ground plane), associated with a rather compact package. Yes, there are smaller antennas, but you trade performance for size and the quadrifilar usually gives a good compromise.
 
@@ -47,7 +45,9 @@ You might be wondering why I'm not showing any S-parameters. Well, because, at t
 
 Ok, so we have our base antenna, now we just replicate three times the same design, rotate each element by 90º in relation to the previous and give some slight separation between the elements, so that the distance between each of the arms and the center of the antennas is roughly a quarter of the wavelength, ending up with the antenna as proposed in Qiang Liu's paper, like so:
 
+{:refdef: style="text-align: center;"}
 ![](/images/quadrifilar_complete_prespective.png)
+{: refdef}
 
 Now, in order to obtain a circular polarization radiation, you just feed each of the elements, with the same power amplitude and a 90º phase difference between them. To avoid designing the feeding network to have to check for the array, in CST you can just add a port to each element and then setup the simultaneous excitation in the 'Excitation settings' menu, within the 'Simulation setup' panel.
 
@@ -63,21 +63,29 @@ As you can see from the results above, the overall directivity of the antenna in
 
 For the matching network I picked up the design from the Xuefeng Zhao's paper, which is a Wilkinson power divider, with one output delayed by 90º, then followed by delay lines of 180º in each branch, as in the following construction:
 
+{:refdef: style="text-align: center;"}
 ![](/images/feeding_nw.png)
+{: refdef}
 
 Combining this matching network with the antenna results we can finally have a glimpse at the expected impedance operating frequency, given by the S parameters at the single port input at the entrance of the Wilkinson power divider. Here it is:
 
+{:refdef: style="text-align: center;"}
 ![](/images/spara.png)
+{: refdef}
 
 To actually find the whole covered band, we have to look from 500 to 1300 MHz, to discover the impedance bandwidth of this antenna is between 700 and 1100 MHz. Plus, the radiation results for the combination of the matching network with the antenna elements are also very good. The axial ratio is below 3 dB (circularly polarized) through 820 to 980 MHz (more than necessary) as well as the efficiencies ranging above 95% for the whole spectrum. Here's the plot:
 
+{:refdef: style="text-align: center;"}
 ![](/images/radiation_w_freq_quad.png)
+{: refdef}
 
-owever, the truth is that these results are based on a simulation of ideal transmission lines with a perfect transition to the feeding points of the antenna. This efficiency results are only from the antenna radiation and don't take into account the loss effect of the feeding network. For that, the feeding network 3D EM model should be simulated and integrated with the antenna. Nevertheless, these results give a pretty good indication that we're in the right track, and prove all the advantage points I referred at the beginning of this post. The two downsides of this antenna topology versus the air core microstrip patch I've shown in previous posts, are the lower gain and the more complex implementation. 
+However, the truth is that these results are based on a simulation of ideal transmission lines with a perfect transition to the feeding points of the antenna. This efficiency results are only from the antenna radiation and don't take into account the loss effect of the feeding network. For that, the feeding network 3D EM model should be simulated and integrated with the antenna. Nevertheless, these results give a pretty good indication that we're in the right track, and prove all the advantage points I referred at the beginning of this post. The two downsides of this antenna topology versus the air core microstrip patch I've shown in previous posts, are the lower gain and the more complex implementation. 
  
 The smaller gain is a direct consequence of the reduced size of the antenna. We're trading size for gain, that's an essential rule in antenna design, you always sacrifice on gain to achieve smaller package antennas, with some exceptions for more complex techniques with metamaterials and such...
 
+{:refdef: style="text-align: center;"}
 ![](/images/going.gif)
+{: refdef}
 
 ...but that's a story for another time!
  
