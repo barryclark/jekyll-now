@@ -17,7 +17,8 @@ Now, this stuff is no secret, you can read the [High-Speed Digital Design: A Han
 
 {:refdef: style="text-align: center;"}
 ![Gandalf](/images/gandalf.gif)
-
+{: refdef}
+{:refdef: style="text-align: center;"}
 (me, fightning the nasty harmonics. Or the way I picture it in my head...)
 {: refdef}
 
