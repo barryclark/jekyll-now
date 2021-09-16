@@ -26,13 +26,9 @@ And now you're wondering, "Wait, but if you only need to excite two fields with 
 Now seriously, the other two elements are there to balance the main-lobe direction. You see, the only way to make it with only two elements, is if the two elements are physically co-located, so that their phase centers are in the same spot. SPOILER ALERT: This is possible, but that's another pots.
 Since in the example of the quadrifilar antenna each element is apart from another, their phase-centers are separated, this will cause the radiation pattern to tilt towards the opposite side of the fed elements.
 
-![two-elements](/images/two_ports_90.png)
-
-Only two elements fed.
-
-![efield-circular](/images/four_ports_90.png)
-
-All four elements fed.
+![two-elements](/images/two_ports_90.png) | ![efield-circular](/images/four_ports_90.png)
+:-------------------------:|:-------------------------:
+Only two elements fed | All four elements fed.
 
 The continuous phase progression is easy to understand given that the other elements are in opposition of phase. The element in the bottom is generating an electric field with the exact same polarization component, but in opposition of phase, the same happens to the element of the left side in relation to the element on the right. If these were to be fed in phase, the field components would cancel between them, and you end up with...
 
@@ -88,9 +84,7 @@ Then, when combined with the four PIFA antennas from before, placed at a distanc
 ![complete](/images/quadrifilar_complete.png) | ![radiation](/images/radiation_3d.png)
 :-------------------------:|:-------------------------:
 Complete quadrifilar structure perspective view | Radiation pattern (Gain) at 900 MHz
-:-------------------------:|:-------------------------:
 ![sparameters](/images/sparameters.png) | ![gain_ar](/images/radiation.png)
-:-------------------------:|:-------------------------:
 Reflection coefficient | Gain and axial-ratio with frequency
 
 The impedance bandwidth as well as the circular polarization bandwidth are quite wide. But the trade-off is the gain, especially when implementing such a distribution network on a very lossy substrate, reducing the radiation efficiency to values in the order of 70%, the maximum RHCP gain is 3.0 dBic.
