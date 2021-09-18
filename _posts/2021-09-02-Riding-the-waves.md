@@ -3,7 +3,7 @@ layout: post
 title: Riding the waves
 ---
 
-![_config.yml]({{ site.baseurl }}/images/waves.gif)
+![_config.yml]({{ site.baseurl }}/images/waves.jpg)
 
 I've put down some one liner thoughts for different scenarios, hope they can can serve as food for thought. I plan to keep updating them as I "grow" :P
 
@@ -42,6 +42,11 @@ Anxiety comes from feeling out of control. While it cannot be completely elimina
 **Problems**
 
 Seemingly small problems can be big, given the situation.
+
+**Emotional downtimes**
+
+Downtime may not be as bad when you zoom out of the situation.
+
 
 **Popularity**
 
