@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "I'm delighted to announce my new role as engineering manager at Apple"
-description: "Announcing Cheryl move to Apple as an engineering manager"
+title: "I'm delighted to announce my new role as engineering manager at Apple!"
+description: "Announcing Cheryl's move to Apple as an engineering manager"
 location: London, UK
 image: /images/headshot.jpeg
 tags:
