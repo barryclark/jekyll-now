@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CNCF End User Community Provides Insights into K8s Cluster Management with Tech Radar"
+title: "CNCF End User Community Tech Radar, K8s Cluster Management"
 description: "Cheryl Hung, VP Ecosystem at CNCF, discusses the CNCF Tech Radar June 2021 on Multi Cluster Management"
 image: https://lh4.googleusercontent.com/6ggigRY_AJ1htG4LSydDEo7J3Xh7VhQVIZpEOfVI_o_AsBLStO3ZEsPMi39cxuFSi0BBPGYtsqG85wlEIGgB02N0ryDwe7QrwoOL9-GrI6m_dU1hvXJl6B4D0CFAS_gEdfOffYZx
 video: https://www.youtube.com/embed/mjg_x9iYEIc
