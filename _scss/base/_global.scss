@@ -1,0 +1,30 @@
+@include selection {
+  background: $theme-color;
+  color: $white;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: $font-serif;
+  text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  text-rendering:optimizelegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+  font-weight: 400;
+  color: $title-color;
+  letter-spacing: -.025rem;
+}
+
+code {
+  color: #666;
+}

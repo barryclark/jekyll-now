@@ -1,0 +1,84 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="sidebar-personal-info">
+      <div class="sidebar-personal-info-section">
+        <a href="https://avatars.githubusercontent.com/u/22164578?v=4">
+          <img src="https://avatars.githubusercontent.com/u/22164578?v=4" title="View on Github" alt="View on Github" />
+        </a>
+      </div>
+      <div class="sidebar-personal-info-section">
+        <p>{{ site.author.description }}</p>
+      </div>
+      {% if site.author.contact %}
+      {% assign len = site.author.contact | size %}
+      {% assign current_index = 0 %}
+      <div class="sidebar-personal-info-section">
+        <p> Follow me: 
+        {% for contact in site.author.contact %}
+        {% assign iconname = contact[0] %}
+        {% if contact[0] == 'email' %}
+        {% assign iconname = 'envelope' %}
+        {% endif %}
+        <a href="{{ contact[1] }}">
+          <i class="fa fa-{{ iconname }}" aria-hidden="true"></i>
+        </a>
+        {% assign current_index = current_index | plus: 1 %}
+        {% if current_index != len %}|{% endif %}
+        {% endfor %}
+        </p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    {% for nav in site.nav %}
+      {% assign is_relative = nav[1][0] | slice: 0 %}
+      {% assign url = nav[1][0] %}
+      {% if is_relative == '/' %}
+        {% assign url = nav[1][0] | prepend: site.baseurl %}
+      {% endif %}
+
+      {% assign sub_len = nav[1] | size | minus: 1 %}
+
+      <span class="{% if sub_len > 0 %}foldable{% endif %}">
+        <a class="sidebar-nav-item {% if page.url == nav[1][0] %}active{% endif %}" href="{{ url }}">
+          {{ nav[0] }}
+        </a>
+
+        {% for i in (1..sub_len) %}
+          {% for sub_nav in nav[1][i] %}
+            {% assign sub_is_relative = sub_nav[1] | slice: 0 %}
+            {% assign sub_url = sub_nav[1] %}
+            {% if sub_is_relative == '/' %}
+              {% assign sub_url = sub_nav[1] | prepend: site.baseurl %}
+            {% endif %}
+              <a class="sidebar-nav-item sidebar-nav-item-sub {% if page.url == sub_nav[1] %}active{% endif %}" href="{{ sub_url }}">
+                {{ sub_nav[0] }}
+              </a>
+          {% endfor %}
+        {% endfor %}
+      </span>
+
+    {% endfor %}
+
+    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. This work is liscensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+    </p>
+  </div>
+
+  <div class="sidebar-item">
+    <p>
+    Powered by <a href="http://jekyllrb.com">jekyll</a> and <a href="http://codinfox.github.io">codinfox-lanyon</a>
+    </p>
+  </div>
+</div>

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The Usage of *args and **kwargs in Python
+category: Dev
+tags: [python, syntax]
 ---
 
 ### What
