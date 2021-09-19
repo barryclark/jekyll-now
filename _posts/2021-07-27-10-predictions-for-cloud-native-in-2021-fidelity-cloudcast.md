@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "10 predictions for cloud native in 2021 - Fidelity CloudCast"
+title: "10 trends and predictions for cloud native in 2021 - Fidelity CloudCast"
 description: "Cheryl Hung, VP Ecosystem at CNCF, points out 10 trends to look forward to in cloud native"
 image: /images/2021-03-23-10-predictions-for-cloud-native-in-2021-the-devops-conference.png
 slides: //www.slideshare.net/slideshow/embed_code/key/b7xQmvZaRjM0bT
