@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London August 2021: JFrog and Shipa"
+title: "Cloud Native London August 2021: Melissa McKay, JFrog and Bruno Andrade, Shipa"
 description: "speakers from JFrog and Shipa join us at the Cloud Native London meetup July 2021, hosted by Cheryl Hung, VP Ecosystem at CNCF"
 location: London, UK
 image: /images/2021-08-04-cloud-native-london-august-2021.jpeg
