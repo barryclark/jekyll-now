@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 2021-09-21 EPPS Data Visualization Post 2 -- Notes from Keynote Session: Dr. Edward Tufte
+title: 2021-09-21 EPPS Data Visualization Post 2
 ---
 
-
-Here are the notes from the video as follows: 
+Here are the notes from the video -- Dr. Edward Tufteas' The Future of Data Analysis: 
 
 Data analysis is about turning information into conclusions. Analytical thinking is about accessing and evaluating the relationship between information and conclusion. 
 Tufte's work is about the relationship between evidence, inference and conclusions, making people smarter.
