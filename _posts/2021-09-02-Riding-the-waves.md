@@ -92,6 +92,10 @@ Systems evolve with time. Almost none started as the same version.
 
 Fitting in can be easier if a common ground can be established.
 
+**Groups**
+
+Common goal can tie groups together.
+
 **Actions**
 
 Actions can pretty much always have more impact than words.
