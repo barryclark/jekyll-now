@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 2021-09-21 EPPS Data Visualization Post 2 -- Notes from Keynote Session: Dr. Edward Tufte -- The Future of Data Analysis
-
+title: 2021-09-21 EPPS Data Visualization Post 2 -- Notes from Keynote Session: Dr. Edward Tufte
 ---
 
 
