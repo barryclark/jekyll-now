@@ -6,38 +6,32 @@ navigation_weight: 5
 permalink: /impressum/
 ---
 
-Raul Firu
-(verantwortlich i.S.d. § 55 Abs. 2 RStV)
+Holger Reinhardt (verantwortlich i.S.d. § 55 Abs. 2 RStV)
 
 ### Anschrift:
 
 Haufe-Lexware Services GmbH & Co. KG
 
-Ein Unternehmen der Haufe Gruppe
+Ein Unternehmen der Haufe Group SE
 
 Munzinger Straße 9 
 79111 Freiburg
 
 **Telefon**: 0761 898-0
+
 **Telefax**: 0761 898-3990
 
-Kommanditgesellschaft, Sitz Freiburg
-Registergericht Freiburg, HRA 4408
+Kommanditgesellschaft, Sitz und Registergericht Freiburg, HRA 701738
 
-Komplementäre: Haufe-Lexware Verwaltungs GmbH, Sitz Freiburg, 
-Registergericht Freiburg, HRB 5557; Martin Laqua
+Komplementäre: Haufe-Lexware Services Verwaltungs GmbH,
 
-Geschäftsführung: Isabel Blank, Markus Dränert, Jörg Frey, Birte Hackenjos, Randolf Jessl, Markus Reithwiesner, Joachim Rotzinger, Dr. Carsten Thies
+Sitz und Registergericht Freiburg, HRB 704660; Martin Laqua
 
-Beiratsvorsitzende: Andrea Haufe
-
-Steuernummer: 06392/11008
-
-Umsatzsteuer-Identifikationsnummer: DE 812398835
+Geschäftsführung: Birte Hackenjos, Mirza Hayit, Jürgen Spegel, Harald Wagner
 
 ### Public Relations:
 
-Haufe-Lexware GmbH & Co. KG 
+Haufe-Lexware Services GmbH & Co. KG 
 
 Public Relations
 
@@ -45,8 +39,8 @@ Munzinger Straße 9
 
 79111 Freiburg
 
-Telefon: 0761 898 3940
-Telefax: 0761 898 3900
+Telefon: 0761 898 3900
+
 E-Mail: presse(at)haufe-lexware.com
 
 ### Bitte wenden Sie sich bei Fragen an:
