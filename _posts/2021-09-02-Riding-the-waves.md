@@ -27,6 +27,9 @@ Qualities(Example: Trustworthiness, introversion, ..) can be a spectrum instead 
 
 Confidence can be situational.
 
+<a href="https://youtu.be/UM7iL0HCcM0?t=60">Ringo Starr talks about being nervous before performing</a><br>
+
+
 **Validation**
 
 It can be helpful to check if validation is being sought at the right place.
@@ -46,7 +49,6 @@ Seemingly small problems can be big, given the situation.
 **Emotional downtimes**
 
 Downtime may not be as bad when you zoom out of the situation.
-
 
 **Popularity**
 
