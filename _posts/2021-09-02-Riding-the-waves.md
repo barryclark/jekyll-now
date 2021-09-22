@@ -40,7 +40,7 @@ Change can be scary, it can help to understand the impact.
 
 **Anxiety**
 
-Anxiety comes from feeling out of control. While it cannot be completely eliminated, being aware of where it's coming from, can make us feel slightly better.
+Anxiety comes from feeling out of control. While it cannot be completely eliminated, being aware of where it's coming from by asking yourself why, can make us feel slightly better. Anxiety can help us explore new possibilities and make us grow as a person.
 
 **Problems**
 
