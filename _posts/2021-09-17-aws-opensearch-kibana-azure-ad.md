@@ -63,6 +63,8 @@ The last step in Azure AD is to download the Federation Metadata XML file and to
 {:.center}
 ![]( /images/aws-opensearch-kibana-azure-ad/azure-ad-download-xml.png){:style="width:100%"}
 
+REMEMBER: the Enterprise application uses a selfsigned certificate which is valid for 3 years - keep a record of this, in case you are running the setup in production.
+
 # Step 6
 Login into your AWS account, go to the OpenSearch service, select the Actions drop-down button, click on Modify authentication and in the "SAML authentication for OpenSearch Dashboards/Kibana" section, click on "Import from XML file" and select the file you just downloaded in the previous step. You will see that the "IdP entity ID" section will auto update with the Azure Enterprise application ID. The last step is to add in the "Optional SAML settings - Roles key" section the "http://schemas.microsoft.com/ws/2008/06/identity/claims/groups" value.
 
