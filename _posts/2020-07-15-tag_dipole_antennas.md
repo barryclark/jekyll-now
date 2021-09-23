@@ -29,7 +29,7 @@ So you just have to calculate the equivalent series impedance of this circuit  $
 
 $$R_s=\frac{R_p}{1+Q_p^2}$$
 
-$$X_s=\frac{X_p}{1+\(\frac{1}{Q_p^2}\)}$$
+$$X_s=\frac{X_p}{1+\frac{1}{Q_p^2}}$$
 
 $$Q_p=\frac{R_p}{X_p}$$
 
@@ -126,7 +126,7 @@ where:
 - $P_t$  is the transmitted power by the reader antenna
 - $G_t$ is the gain of the reader antenna
 - $G_r$ is the gain of the tag antenna
-- $\tau$ which represents the matching between the chip impedance and antenna impedance, given by $\tau=\frac{4R_c R_a}{|Z_c+Z_a|^2}
+- $\tau$ which represents the matching between the chip impedance and antenna impedance, given by $\tau=\frac{4R_c R_a}{|Z_c+Z_a|^2}$
 - $P_{th}$ which is the minimum power threshold to activate the tag
 
 Being $Z_c=R_c+jX_c$ the chip impedance and $Z_a=R_a+jX_a$ the antenna impedance.
