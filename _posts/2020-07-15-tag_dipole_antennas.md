@@ -104,6 +104,7 @@ Actually, we nearly achieved impedance values closed to the intended ones, but a
 {: refdef}
 
 So, with these relationships in mind, and also with the length of the dipole, in this case by making small adjustments to the length between the last arm section and the 'M' termination (Ltune), we can make a few sweeps until we reach the spot! 😎
+
 And we end up with something like the following:
 
 {:refdef: style="text-align: center;"}
@@ -126,8 +127,8 @@ where:
 - $P_t$  is the transmitted power by the reader antenna
 - $G_t$ is the gain of the reader antenna
 - $G_r$ is the gain of the tag antenna
-- $\tau$ which represents the matching between the chip impedance and antenna impedance is given by:
-$\tau=\frac{4R_c R_a}{|Z_c+Z_a|^2}$
+- $\tau$ which represents the matching between the chip impedance and antenna impedance, and is given by:
+$\tau=\frac{4R_cR_a}{|Z_c+Z_a|^2}$
 - $P_{th}$ which is the minimum power threshold to activate the tag
 
 Being $Z_c=R_c+jX_c$ the chip impedance and $Z_a=R_a+jX_a$ the antenna impedance.
