@@ -27,12 +27,20 @@ I'll start simple. I picked a 100 mm long microstrip line, with 50  Ω  characte
 
 Ok so here are the example lines I'll be comparing. They are, in order, a 90 degree bended line (I), an optimum chamfered 90 degree line (II), a 45 degree curved line (III) and a rounded corner line (IV). They all have exactly 100 mm of length and simulated from 0.1 to 20 GHz. 
 
-(ADD LINE MODEL IMAGES)
+![](/images/ninetydeg.png) | ![](/images/opt.png)
+:-------------------------:|:-------------------------:
+90 degree bend (I) | Mitered 90 degree bend (II)
+![](/images/fortyfive.png) | ![](/images/round.png)
+ 45 degree curves (III)  | Rounded corners (IV)
 
 
 Below there's the S-parameter results for each of these lines. Remember, S(1,1) and S(2,2) we want below -10 dB, while S(2,1) and S(1,2) (which in this case are perfectly reciprocal) we want as close to 0 dB as possible. In the pictures below, the red line is the S(1,1) and the green line is the S(2,1).
 
-(ADD S-PARAMS OF THE LINE SIMULATIONS)
+![](/images/sparam_90deg_bend.png) | ![](/images/sparam_opt_bend.png)
+:-------------------------:|:-------------------------:
+90 degree bend (I) | Mitered 90 degree bend (II)
+![](/images/sparam_45deg_bend.png) | ![](/images/sparam_round.png)
+ 45 degree curves (III)  | Rounded corners (IV)
 
 Looking solely at the impedance perspective, if you're working below 5 GHz, by all means, do 90 degree bends (well actually, try to read further to see the rest of the analysis)! But, if you're working, say, at 5.8 GHz for 802.11ac or something similar, then you may want to chop the edges on those 90 degree corners, see example (II). But beyond that point, you most certainly should look for 45 degree curves or rounded corners, both have very similar performances up to 10 GHz, but, if you want to move to higher frequencies, then make round corners, so that the line width is maintained at all times.
 Nevertheless, if you want to work beyond 5 GHz, then you should surely use other material for your PCB because FR-4 ain't gonna do, as you can see from the Insertion Loss (S(2,1)) which is considerably high (more then 3 dB), regardless of the trace type.
@@ -49,8 +57,11 @@ We've seen the curve responses from an impedance perspective, but what about oth
 
 The following plots show the electric field intensity of probes at a distance of 5 mm away (in the 'z' direction), around the corners and at the center of the line path.
 
-(ADD ELETRIC FIELD RESULTS)
-
+![](/images/efield_leftprobe_freq.png) | ![](/images/efield_leftprobe_time.png)
+:-------------------------:|:-------------------------:
+Electric field at corner in frequency domain | Electric field at corner in time domain
+![](/images/efield_middleprobe_freq.png) | ![](/images/efield_middleprobe_time.png)
+Electric field at middle in frequency domain  | Electric field at middle in time domain
 
 Looking at these results, although there are some particularities, I think it's safe to say that the electric field intensity for all examples is pretty close. This means that each of these examples generates a similar amount of radiation, and that means that they have more or less the same susceptibility to EMI problems.
 
