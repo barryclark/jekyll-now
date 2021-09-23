@@ -119,4 +119,42 @@ The impedance response with frequency is shown in the following picture. And if 
 
 And, as well said in [Rao's paper](https://doi.org/10.1109/TAP.2005.859919) I mentioned above in this post, the most important parameters for a tag, is the reading range you can achieve with it. Thankfully, they have a nice expression to help us calculate the theoretical range we could achieve with this tag, given by the following:
 
-$$r=\frac{\lambda}{4\pi}\sqrt{\frac{P_TG_TG_R\tau}{P_{th}}$$
+$$r=\frac{\lambda}{4\pi}\sqrt{\frac{P_t G_t G_r\tau}{P_{th}}$$
+
+where:
+
+- $P_t$  is the transmitted power by the reader antenna
+- $G_t$ is the gain of the reader antenna
+- $G_r$ is the gain of the tag antenna
+- $\tau$ which represents the matching between the chip impedance and antenna impedance, given by $\tau=\frac{4R_c R_a}{|Z_c+Z_a|^2}
+- $P_{th}$ which is the minimum power threshold to activate the tag
+
+Being $Z_c=R_c+jX_c$ the chip impedance and $Z_a=R_a+jX_a$ the antenna impedance.
+
+If this resembles the Radar equation to you, well, that's because it is the Radar equation! With a slight adaptation to make it fit the backscatter narrative with the $\tau$ and the $P_{th}$  parameters. Also notice that this expression does not account for de-polarization losses. But it is safe to assume it especially if we're using a circularly polarized antenna at the reader. We just need to remember to use the circularly polarized gain of the antenna in the  Gt  term, instead of the maximum gain.
+
+To calculate the reading range we have nearly all the parameters, except for the gain of the tag antenna (for the gain of the reader antenna, we'll be using the values from the dual-feed microstrip patch antenna from my previous post). So let's take a look at the radiation characteristics of the tag antenna. The following picture shows the farfield radiation pattern as well as the $E_{\theta}/E_{\phi}$  relation, that will indicate the polarization direction of the radiation. The maximum antenna gain of the tag is rather low, at around 1 dBi. But that's fairly usual. Smaller tags than this can have even smaller gains. It's not so uncommon to find UHF RFID tag antennas with gains around -3 dBi.
+
+{:refdef: style="text-align: center;"}
+![](/images/radiation.png)
+{: refdef}
+
+From the above plot on the right, the polarization is linear and horizontal (along X axis). One can also look at the surface current variation:
+
+{:refdef: style="text-align: center;"}
+![](/images/tag1_01.gif)
+{: refdef}
+
+But this time the surface current distribution could be misleading, because the highest current density is focused around the inductive ring and there the current flows up and down. But, if you look closely, when the current is pointing down on the left, its pointing up on the right side of the ring. This inversed current flow will nullify each other, so the current flow is either pointing towards the right or the left at any given time. Hence, we have a linear and horizontal (along X axis direction) polarization.
+
+For the purpose of estimating the reading range of this tag, I've considered the output power of the reader to be 1 W (30 dBm), the limit by FCC regulation, the $P_{th}$ of the tag as given in the datasheet of -17.5 dBm, which with the gains mentioned and with the impedances simulated for the tag antenna, we reach the following result:
+
+{:refdef: style="text-align: center;"}
+![](/images/range.png)
+{: refdef}
+
+That's nearly 15 meters of reading range. Pretty impressive, but well, this is all theoretical. In practice the range is probably much smaller, but I believe it can probably achieve ranges in the order of 10 meters.
+
+Well, that's it for today folks! This was a rather long post. I'll try to manufacture this one but I have to find some way to test it, since I no longer have my UHF RFID reader. I'll eventually post results if I find a way to test it.
+
+Stay tuned!
