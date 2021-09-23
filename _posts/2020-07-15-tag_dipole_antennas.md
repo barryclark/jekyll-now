@@ -119,14 +119,15 @@ The impedance response with frequency is shown in the following picture. And if 
 
 And, as well said in [Rao's paper](https://doi.org/10.1109/TAP.2005.859919) I mentioned above in this post, the most important parameters for a tag, is the reading range you can achieve with it. Thankfully, they have a nice expression to help us calculate the theoretical range we could achieve with this tag, given by the following:
 
-$$r=\frac{\lambda}{4\pi}\sqrt{\frac{P_t G_t G_r\tau}{P_{th}}$$
+$$r=\frac{\lambda}{4\pi}\sqrt{\frac{P_tG_tG_r\tau}{P_{th}}}$$
 
 where:
 
 - $P_t$  is the transmitted power by the reader antenna
 - $G_t$ is the gain of the reader antenna
 - $G_r$ is the gain of the tag antenna
-- $\tau$ which represents the matching between the chip impedance and antenna impedance, given by $\tau=\frac{4R_c R_a}{|Z_c+Z_a|^2}$
+- $\tau$ which represents the matching between the chip impedance and antenna impedance is given by:
+$\tau=\frac{4R_c R_a}{|Z_c+Z_a|^2}$
 - $P_{th}$ which is the minimum power threshold to activate the tag
 
 Being $Z_c=R_c+jX_c$ the chip impedance and $Z_a=R_a+jX_a$ the antenna impedance.
