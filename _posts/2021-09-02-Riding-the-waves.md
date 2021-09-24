@@ -5,11 +5,13 @@ title: Riding the waves
 
 ![_config.yml]({{ site.baseurl }}/images/waves.jpg)
 
-I've put down some one liner thoughts for different scenarios, hope they can can serve as food for thought. I plan to keep updating them as I "grow" :P
+I've put down some one liner thoughts for different scenarios, hope they can can serve as food for thought. I plan to keep updating them as I "grow" and tag them with relevant art(paintings, speeches, talks, interviews, ...) :P
 
 **Legacy**
 
 Things built over time can have good lessons to offer.
+
+<a href="https://youtu.be/VKiDPSuCIuQ?t=89">Bo Burnham about long term work</a><br>
 
 **Toolkit**
 
