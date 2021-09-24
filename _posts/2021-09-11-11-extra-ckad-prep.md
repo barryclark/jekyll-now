@@ -13,6 +13,15 @@ Since I will be renewing my certification this month, and folks have regularly a
 
 Note that I won't go into Kubernetes concepts in this blog post. If you want to learn, you'll have to learn that yourself with this helpful guide. ;)
 
+*Update 24 Sept 2021:* I passed the CKAD! :-) Due to daytime construction near my home, I took the exam in the evening, which is not my preferred test-taking time. However, I generally felt better taking the exam this time around. I already knew the intense pace it would bring, so the adrenaline didn't turn to nerves this time around. I also already knew the material conceptually and in practice for a few years now, which contributed to the confidence. Monst importantly, I don't have to retake the intense exam for another 3 years!
+
+*Update 24 Sept 2021:* Note that this guide was compiled before the [changes to the CKAD exam at the end of September 2021](https://training.linuxfoundation.org/ckad-program-change-2021/). The study plan is agnostic to the exam content, and the practice problems are still applicable for a good 80% of the exam. For the other 20%, the following have been recently added to the CKAD:
+* *Discover and use resources that extend Kubernetes (CRD).* This is cool to highlight the extensibility of the platform. I learned this conceptually, but never had to implement this in the exam or in a professional project.
+* *Use the Helm package manager to deploy existing packages.* If you've used Kubernetes in a job, you'll likely come across Helm. It is the equivalent of a YAML templating tool.
+* *Use Ingress rules to expose applications.* A type of network resource used to expose web applications with a provided DNS name, and slightly higher-level than Services.
+* *Understand API deprecations.* The CKAD disables the use of deprecated CLI and API functions. It looks like the exam will test on how to handle version deprecation scenarios.
+* Other topics were more explicitly stated or clarified. As long as you know how to deploy pods and deployments, you will be able to handle a majority of cases.
+
 ### Background
 
 Kubernetes is a container management platform software. It addresses the issue of how to manage containers and applications. How should they be deployed, maintained, scaled, accessed, etc.? Kubernetes provides a soltuion through a comprehensive and extensible platform, alongside a lot of nautical-themed jargon.
@@ -69,6 +78,7 @@ If you'd like to get a CKAD certification yourself, I wanted to leave a list of 
 * [bmuschko/ckad-prep](https://github.com/bmuschko/ckad-prep). Another GitHub repo for CKAD exam practice questions, but these don't have answer banks.
 * [twajr/ckad-prep-notes](https://github.com/twajr/ckad-prep-notes). A GitHub repo for CKAD tips and tricks.
 * [kubectl cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/). A useful reference for learning Kubernetes terminal commands. Speed is key in this exam, so it's useful to know what commands are available!
+* [killer.sh](http://killer.sh). The Linux Foundation provides two free practice exams, which simulate the actual exam quite well. The exam is a bit longer and more intense than the actual exam, so be sure to practice and learn from the experience!
 
 In addition, I went through a few tutorials learning about Vim and Bash. I’m comfortable with using Vim (if only because I learned it from a Vim superfan), but I’m quite rusty on Bash syntax. Learning both helps with getting comfortable with the terminal.
 
