@@ -102,7 +102,7 @@ Then, when combined with the four PIFA antennas from before, placed at a distanc
 ![complete](/images/quadrifilar_complete.png) | ![radiation](/images/radiation_3d.png)
 :-------------------------:|:-------------------------:
 Complete quadrifilar structure perspective view | Radiation pattern (Gain) at 900 MHz
-![sparameters](/images/sparameters.png) | ![gain_ar](/images/radiation.png)
+![sparameters](/images/sparameters.png) | ![gain_ar](/images/radiation-ar-wfreq.png)
 Reflection coefficient | Gain and axial-ratio with frequency
 
 The impedance bandwidth as well as the circular polarization bandwidth are quite wide. But the trade-off is the gain, especially when implementing such a distribution network on a very lossy substrate, reducing the radiation efficiency to values in the order of 70%, the maximum RHCP gain is 3.0 dBic.
