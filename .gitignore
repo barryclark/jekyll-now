@@ -8,3 +8,5 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+event.html
+article-page.html
