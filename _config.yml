@@ -12,11 +12,13 @@ description: A club for artificial intelligence and machine learning enthusiasts
 avatar: https://aicvscummins.weebly.com/uploads/1/2/0/6/120694931/asset-1-4x_1.png
 
 navbar-links:
-  Blog: "/"
-  Articles: "articles"
-  Posters: "posters"
-  About: "about"
+  Home: "home"
   Contact: "contact"
+  About: "about"
+  Blog: "/"
+  
+  
+  
   
 #
 # Flags below are optional
