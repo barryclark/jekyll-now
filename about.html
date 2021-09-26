@@ -3,7 +3,9 @@ layout: page
 share-title: "AICVS | About us"
 css: "assets/css/about-styles.css"
 --->
-  <<meta charset="UTF-8">
+  <!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AICVS Cummins</title>
@@ -11,11 +13,16 @@ css: "assets/css/about-styles.css"
 
     <!-------Custom css-------->
     <link rel="stylesheet" href="assets/css/about-styles.css">
+    <link rel=¨stylesheet¨ type=¨text/css¨ href=¨homepage.css¨>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <!------ google fonts------>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
 
      <!--Bootstrap-->
@@ -31,16 +38,48 @@ css: "assets/css/about-styles.css"
      <!-- <link rel="stylesheet" type="text/css" href="css/articles.css"> -->
      <link rel="alternate" type="application/rss+xml" title="AICVS CUMMINS - A club for artificial intelligence and machine learning enthusiasts" href="/feed.xml">
  
+<!-- Navbar (sit on top) -->
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="home.html" class="w3-bar-item w3-wide"> <img class="" src="./images/logo.jpg" alt="Logo" width="40" height="40"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="home.html" class="w3-bar-item w3-button"><i class="fas fa-eject"></i> HOME</a>
+      <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="/" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+<!--<a href="event.html" class="w3-bar-item w3-button"><i class="fas fa-calendar-alt"></i> EVENTS</a>-->
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-id-card"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <!--<a href="/" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>-->
+  <!--<a href="event.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>-->
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
 
 <div class="content">
-  <h1>ABOUT</h1>
-  <hr style="border-top: 2px solid #393e46">
+  <h1 class="para2"><strong>TEAM</strong></h1>
+                                    
   <h3 class="para">AICVS is a club for artificial intelligence and machine learning enthusiasts,
     we host a lot of talks, discussions, study groups to bring about a practical understanding of AI and computer vision.
     Guest lectures from industry professionals help guide beginners through interesting concepts in Artificial Intelligence,
     while groups focused on ML research are made with the intention of deeper understanding of AI.</h3>
 </div>
-<hr class="below" >
+
+
+ 
 <div class="intro">
   <h1  class="year">AICVS Student Committee 2021-22</h1>
   <div class="row">
@@ -160,9 +199,11 @@ css: "assets/css/about-styles.css"
           <div class="flip-card-back">
             <h1 class="info">Team</h1>
             <ul>
+              <li>Reena Prasad</li>
               <li>Pranjal Shinde</li>
               <li>Shreya Mandal</li>
               <li>Rutvika Patil</li>
+              <li>Purva Kane</li>
             </ul>
           </div>
         </div>
@@ -238,7 +279,19 @@ css: "assets/css/about-styles.css"
   </div>
 </div>
 
-<body>
+
+  <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="about.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fab fa-linkedin"></i></a>
+    <a href="aicvs.cummins@cumminscollege.in" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    <a href="https://www.twitter.com/aicvs" class="text-light"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fab fa-youtube"></i></a>
+  </div>
+</footer>
+
   <script>
     $('.flip').click(function() {
       $(this).find('.card').addClass('flipped').mouseleave(function() {
@@ -247,4 +300,7 @@ css: "assets/css/about-styles.css"
       return true;
     });
   </script>
+
+  <script src="home.js"></script>
 </body>
+</html>

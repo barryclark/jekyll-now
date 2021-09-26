@@ -1,157 +1,170 @@
 body{
-    background-color: white;
-    text-align:center;
-    line-height: 0;
-  }
-  .para{
-    font-size: 1.5rem;
-  }
-  .heading{
-    color:black;
-    font-size: 1.6rem;
-    text-align: center;
-    margin-bottom: 4.5%;
-    line-height: 1.7rem;;
-    margin-top: 5%;
-  }
-  .below{
-  border: dotted #393e46 6px;
-  border-bottom: none;
-  width: 4%;
-  /* margin:  auto; */
-  }
-.year{
-    text-align: center;
-    font-size: 3.5rem;
-  }
-  .headname{
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  img{
-    margin-top: 5%;
-    width: 90%;
-  }
-  h2{
-    font-size: 1.5rem;
-  }
-  h3{
-    width: 70%;
-    text-align: center;
-    margin-left: 15%;
-  }
-  hr{
-    width: 50%;
-
-  }
-  .content {
-  margin-top: 50px;
-  margin-bottom: 50px;
-    text-align: center;
-  }
-  .column {
-    float: unset;
-    width: 30%;
-    padding: 0 5px;
-    margin-top: 30px;
-    margin-left: 20px;
-  }
-  .scard{
-    margin-left: 15%;
-    margin-right: 3%;
-  }
-.scard1{
-    margin-left: 33%;
-    margin-right: 34%;
-  }
-  /* Remove extra left and right margins, due to padding */
-  .row {margin: 0px -5px 0 -5px;}
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  /* Responsive columns */   
+  background-color: white;
+  text-align:center;
+  line-height: 0;
+}
+.para2
+{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 3.0rem;
   
-  h3{
-    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color:Gray;
-   }
-   body {
-    font-family: "Times New Roman", Times, serif;
-  }
+}
+.para{
+  text-align: center;
+  padding-left: 490px;
+  
+ 
+}
+.heading{
+  color:black;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 4.5%;
+  line-height: 1.7rem;;
+  margin-top: 5%;
+}
+.below{
+border: dotted #393e46 6px;
+border-bottom: none;
+width: 4%;
+padding-left: 60px;
 
-  .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 450px;
-    perspective: 1000px;
-    margin-left: 20%;
-    margin-bottom: 20%;
-    margin-top: 15%;
-    border-radius:50%;
-  }
+/* margin:  auto; */
+}
+.year{
+  text-align: center;
+  font-size: 3.5rem;
+}
+.headname{
+  font-size: 1.2rem;
+  text-align: center;
+}
+img{
+  margin-top: 5%;
+  width: 90%;
+}
+h2{
+  font-size: 1.5rem;
+}
+h3{
+  width: 70%;
+  text-align: center;
+  margin-left: 15%;
+}
+hr{
+  width: 50%;
 
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
+}
+.content {
+margin-top: 50px;
+margin-bottom: 50px;
+  text-align: center;
+}
+.column {
+  float: unset;
+  width: 30%;
+  padding: 0 5px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.scard{
+  margin-left: 15%;
+  margin-right: 3%;
+}
+.scard1{
+  margin-left: 33%;
+  margin-right: 34%;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0px -5px 0 -5px;}
 
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
+/* Responsive columns */   
 
-  .flip-card-front {
-    background-color:#f1f1f1;
-    color: black;
-  }
+h3{
+  font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color:Gray;
+ }
+ body {
+  font-family: "Times New Roman", Times, serif;
+}
 
-  .flip-card-back {
-    background-color: #f4f4f4;
-    color: black;
-    transform: rotateY(180deg);
-  }
-  .info{
-    margin-top: 10%;
-    margin-bottom: 15%;
-  }
-  li{
-    align-items: center;
-    margin-bottom: 5%;
-  }
-  ul{
-    list-style-type:none;
-    padding-left: 0px;
-  }
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  perspective: 1000px;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  margin-top: 15%;
+  border-radius:50%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:#f1f1f1;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #f4f4f4;
+  color: black;
+  transform: rotateY(180deg);
+}
+.info{
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+li{
+  align-items: center;
+  margin-bottom: 5%;
+}
+ul{
+  list-style-type:none;
+  padding-left: 0px;
+}
 @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-      margin-left: 10%;
-    }
-   .content{
-     margin-left: 7%;
-   }
-   .below{
-     margin-left: 52%;;
-   }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 10%;
   }
+
+ .content{
+   margin-left: 47%;
+ }
+ .below{
+   margin-left: 52%;;
+ }
+}
