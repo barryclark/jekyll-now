@@ -86,6 +86,14 @@
   location_gr: Μαρούσι, Αττική, Ελλάδα
   location_en: Marousi, Attica, Greece
 
+- company_gr: Paramarketing SEO Agency
+  company_en: Paramarketing SEO Agency
+  url: https://paramarketing.gr
+  category_gr: SEO agency
+  category_en: SEO agency
+  location_gr: Μαρούσι, Αττική, Ελλάδα
+  location_en: Marousi, Attica, Greece
+
 - company_gr: Design Individuals
   company_en: Design Individuals
   url: http://designindividuals.gr
@@ -811,6 +819,38 @@
   url: https://www.facebook.com/eltapagrati/
   category_gr: Ταχυδρομείο
   category_en: Post Office
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+  
+- company_gr: A&D Coiffure
+  company_en: A&D Coiffure
+  url: https://www.facebook.com/adathens
+  category_gr: Κομμωτήριο
+  category_en: Coiffure
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Nailroom47
+  company_en: Nailroom47
+  url: https://www.nailroom47.gr
+  category_gr: Μανικιούρ-Πεντικιούρ
+  category_en: Nail salon
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Photo Zachakou
+  company_en: Photo Zachakou
+  url: https://photo-zachakou.gr
+  category_gr: Φωτογραφείο
+  category_en: Photographer
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: SuBass Studio
+  company_en: SuBass Studio
+  url: https://www.facebook.com/SuBassStudio/
+  category_gr: Studio ηχογράφησης
+  category_en: Recording studio
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
