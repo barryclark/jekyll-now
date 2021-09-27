@@ -9,7 +9,7 @@ I've put down some one liner thoughts for different scenarios, hope they can can
 
 **Legacy**
 
-Things built over time can have good lessons to offer.
+Things built over time can have good lessons to offer. Example: Growth vs preservation
 
 <a href="https://youtu.be/VKiDPSuCIuQ?t=89">Bo Burnham about long term work</a><br>
 
@@ -95,6 +95,10 @@ Systems evolve with time. Almost none started as the same version.
 **Fitting in**
 
 Fitting in can be easier if a common ground can be established.
+
+**Loneliness**
+
+We often think we are the only one experiencing a certain scenario which makes us more lonely.
 
 **Groups**
 
