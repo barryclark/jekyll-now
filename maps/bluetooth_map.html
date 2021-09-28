@@ -90,9 +90,9 @@
         padding: 10px;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         line-height: 18px;
-        height: 130;
+        height: 150;
         margin-bottom: 40px;
-        width: 120px;
+        width: 200px;
       }
       .legend-key {
         display: inline-block;
@@ -156,7 +156,7 @@
 </head>
 <body>
 <div id='map'></div>
-<div class="map-overlay" id="legend"><p>% of Free-Flow</p></div>
+<div class="map-overlay" id="legend"><p>Buffer Time Index (Reliability) Congested Segments = Thick Lines</p></div>
 <div class='map-overlay' id='features'><h2>Austin Bluetooth Travel Times</h2>
     <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
         <div id='pd2'><p>4:30-5:30 PM: Tuesdays, Wednesdays, Thursdays</p></div></div></div>
@@ -220,20 +220,20 @@
               'visibility':'none'
               },
             'paint': {
-                'line-width' : 2,
+                'line-width' : ['match',['get','2020 Congested'],'Not Congested',2,'Congested',5,2],
                 'line-offset': 5,
                 'line-color': [
                 'interpolate',
                 ['linear'],
-                ['get','2020 Speed Ratio'],
-                0.25,
-                '#d50303',
-                0.5,
-                '#be6200',
+                ['get','2020 BTI'],
                 0.75,
+                '#50b300',
+                1.0,
                 '#939000',
-                1,
-                '#50b300'
+                1.25,
+                '#be6200',
+                1.50,
+                '#d50303'
                 ],
             }
 
@@ -249,20 +249,20 @@
               'visibility':'none'
               },
             'paint': {
-                'line-width' : 2,
+                'line-width' : ['match',['get','2021 Congested'],'Not Congested',2,'Congested',5,2],
                 'line-offset': 5,
                 'line-color': [
                 'interpolate',
                 ['linear'],
-                ['get','2021 Speed Ratio'],
+                ['get','2021 BTI'],
                 0.25,
-                '#d50303',
+                '#50b300',
                 0.5,
-                '#be6200',
-                0.75,
                 '#939000',
+                0.75,
+                '#be6200',
                 1,
-                '#50b300'
+                '#d50303'
                 ],
             }
 
@@ -276,10 +276,10 @@
               '> 1.00', 
             ];
             var colors = [
-              '#d50303', 
-              '#be6200', 
-              '#939000', 
               '#50b300', 
+              '#939000', 
+              '#be6200', 
+              '#d50303', 
             ];
 
             for (i = 0; i < legendlayers.length; i++) {
