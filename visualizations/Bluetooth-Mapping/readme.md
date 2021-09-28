@@ -2,7 +2,7 @@
 
 ## Outputs
 
-This script creates a table (2019-2021 PMs v2.csv) of performance measures for the average weekday (Tuesday, Wednesday, Thursday) PM peak hour (4:30 to 5:30) for Austin's bluetooth segments for three years: 2019, 2020, and 2021. 
+This script creates a table (2019-2021 PMs v3.csv) of performance measures for the average weekday (Tuesday, Wednesday, Thursday) PM peak hour (4:30 to 5:30) for Austin's bluetooth segments for three years: 2019, 2020, and 2021. 
 
 ***
 
@@ -18,9 +18,11 @@ The reliability is calculated using Buffer Time Index (BTI) which is based on th
 
 ***
 
-## Required Downloads
+## Required Packages
 
-[Individual traffic matches.](https://data.austintexas.gov/Transportation-and-Mobility/Bluetooth-Travel-Sensors-Individual-Traffic-Match-/x44q-icha)
+[Sodapy](https://github.com/xmunoz/sodapy), and make sure you type in your app token.
+
+Geopandas, Pandas
 
 ***
 
