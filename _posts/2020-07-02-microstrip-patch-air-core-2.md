@@ -39,3 +39,20 @@ The cool thing about the circular polarization techniques is that they also incr
 
 To demonstrate the stuff stated above, I built and simulated two microstrip patch antennas, using technique I and V. The .dxf of the designs are on github, they can be used to build a PCB layout, these are designed on regular 60 mil (1.6 mm) thick FR-4.
 
+![](/images/corner_cut_profile.png) | ![](/images/hybrid_profile.png)
+:-------------------------:|:-------------------------:
+ Microstrip patch with corners cut | Microstrip patch with dual feed
+![](/images/corner_cut_profile2.png) | ![](/images/hybrid_profile_2.png)
+Microstrip patch with corners cut (backplate)  | Microstrip patch with dual feed (backplate)
+
+When you compare the S11 between both antennas, you can see the matched frequency bandwidth of the circularly polarized patches are much wider then the linearly polarized from last post, and that, as mentioned in this post, the dual feed method provides and even wider matched frequency band. So wide, I had to simulate the antenna between 0.7 and 1.2 GHz to find out the edges of the matched frequency band.
+
+![](/images/cuts_vs_hybrid.png) | ![](/images/cuts_vs_hybrid_wider.png)
+
+Besides impedance match, the circular polarization bandwidth is also much wider in the dual-feed technique. Coming at the cost of a degradation in the gain of the antenna.
+
+{:refdef: style="text-align: center;"}
+![](/images/gain_axialr.jpg)
+{: refdef}
+
+Now, both of these antennas have RHCP (Right Hand Circular Polarization). This can be seen in the radiation gain results, but can also be easily observed in the surface current distribution, as shown below.
