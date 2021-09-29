@@ -52,7 +52,38 @@ When you compare the S11 between both antennas, you can see the matched frequenc
 Besides impedance match, the circular polarization bandwidth is also much wider in the dual-feed technique. Coming at the cost of a degradation in the gain of the antenna.
 
 {:refdef: style="text-align: center;"}
-![](/images/gain_axialr.jpg)
+![](/images/gain_axialr.png)
 {: refdef}
 
 Now, both of these antennas have RHCP (Right Hand Circular Polarization). This can be seen in the radiation gain results, but can also be easily observed in the surface current distribution, as shown below.
+
+{:refdef: style="text-align: center;"}
+![](/images/hybrid_currents.gif)
+{: refdef}
+
+Unlike the current distribution on the microstrip patch from last post, in which the arrows either pointed upwards or downwards, in this case they rotate with varying phase. Now you're probably thinking "Hey, you said they were RHCP but the arrows are rotating counter-clockwise!"
+
+{:refdef: style="text-align: center;"}
+![](/images/liar.gif)
+{: refdef}
+
+Now hold your horses Anakin before you get any respiratory problems and such. Actually, the convention about the polarization directions, is judged by the variation of the vector of the electric field when the wave travels away from the antenna! Check out this [awesome video](https://youtu.be/84AcKIcF7VY) for more information on polarization. 
+
+{:refdef: style="text-align: center;"}
+![](/images/obi-wan.gif)
+{: refdef}
+
+Finally, to finish up, here's a summary comparison of both implementations to the requirements we defined on last post.
+
+Parameter | Value | ![](/images/corner_cut_profile.png) | ![](/images/hybrid_profile.png)
+:-------------------------:|:-------------------------:
+Frequency bandwidth (MHz)| 865.1 - 927.2 | ✅ | ✅
+Minimum in-band Gain (dBc) | 4.0 | ✅ | ✅
+Maximum in-band axial ratio | 4.0 | ❌ | ✅
+Polarization | RHCP | ✅ | ✅
+
+So, according to this summary, to comply with all the requirements, the air-core microstrip patch with dual feed technique is the best choice. However, if we reduce the usable band to just the FCC band, then the single feed corners cut antenna is better. It can always be tuned to have the circular polarization at the ETSI band instead. But, in the current design, the dual feed antenna has another advantage, that it can produce LHCP or RHCP depending on the port of the hybrid square that is fed with the signal. So it is a compromise between cost/complexity and performance, as always.
+
+If you paid close attention to the antenna pictures, you should be wondering what could be those circular rings on the patch. Remember that I said in the beginning of this post, we needed to compensate the increased inductance of the feed pin? Yeah, right, so this post is already long so... I'll soon make a shorter post explaining about those circular rings that are found around the feed points in both antennas.
+
+Stay tuned! (pun intended)
