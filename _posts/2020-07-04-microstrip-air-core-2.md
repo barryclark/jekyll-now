@@ -18,7 +18,6 @@ Also, the microstrip patch antennas are coaxially fed, the pin of the coax, at h
 Here's the variation of the input impedance of the microstrip patch with the variation in height (h) between the patch and the ground plane:
 
 ![](/images/zre_w_h.png) | ![](/images/zim_w_h.png)
-:-------------------------:|:-------------------------:
 
 The plot on the left is the variation of the real part. Two things become clear from it: 1. We can confirm the relationship between the resonant frequency of the antenna with variation of height of the substrate; 2. The variation of impedance with frequency is smoother as the substrate height increases. That is why the microstrip patch antenna increases bandwidth with the height of the dielectric. The plot on the right is the variation of the reactive part, and besides the two points mentioned before, it's also visible the increase in reactance with the increased height, which means the input impedance is more inductive as the height increases. This effect can also be seen by looking at the Smith chart. In the Smith chart, what happens is that the impedances are more and more concentrated on the top side of the Smith chart, referred as the inductive side of the Smith chart. Conversely, the lower half of the Smith chart is the capacitive side of the Smith chart.
 
