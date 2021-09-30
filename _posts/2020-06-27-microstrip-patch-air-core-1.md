@@ -15,7 +15,7 @@ Now, as I already mentioned, I’m not going to dwell on the theory of microstri
 So, first thing to do is to gather the requirements for the antenna. In this particular case, we’re aiming for an antenna that can cover the whole world bands, should have circular polarization, a minimum in-band gain of 4 dBc and maximum in-band axial ratio of 4. Summarizing:
 
 Frequency bandwidth (MHz)	| 865.1 – 927.2 (center @ 896.2)
-|-------------------------:----------------------|
+|-------------------------|----------------------|
  Minimum in-band Gain (dBc)	| 4.0
  Maximum in-band axial ratio	| <4.0
  Polarization	| RHCP or LHCP
