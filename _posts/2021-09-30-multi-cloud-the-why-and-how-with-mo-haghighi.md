@@ -4,7 +4,6 @@ title: "Cheryl Hung chats with Mo Haghighi, IBM on Multi-cloud: The Why and How"
 description: "Cheryl Hung chats with Mo on why multi-cloud is important, who can benefit and how to overcome resistance to change"
 image: /images/2021-09-30-multi-cloud-the-why-and-how-with-mo-haghighi.png
 video: https://www.youtube.com/embed/WrKeLUTVYno
-published: false
 tags:
   - Video
   - "2021"
