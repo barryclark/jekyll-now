@@ -31,7 +31,9 @@ There's several antennas on both sides of the system, especially if you starts l
 
 On the 'Reader' side, the antenna choice is usually a compromise between the size and weight to the gain and bandwidth. Higher gain antennas allow longer reading ranges for the RFID system, but gain of antennas is intimately connected to their size, and many applications sacrifice reading distance to have a more compact solution. The three typical antennas found on commercial RFID products are the good old microstrip patch antenna, either with an air core or with ceramic core and the quadrifilar spiral antenna. Here's some examples:
 
-(ADD TABLE WITH READER ANTENNAS)
+![](/images/microstrip_air_core.jpg) | ![](/images/patch_ceramic.png) | ![](/images/quadrifilar-2.png)
+|------------------------------------|--------------------------------|--------------------------------|
+Microstrip patch air core	| Microstrip patch ceramic core |	Quadrifilar spiral antenna 
 
 On the 'Tag' side there's less variety. Even though there's a lot of different and weird designs for these antennas, most of them are based on the same antenna principle, only changing the shapes to conform to different sizes, make them more square or more rectangular, or round, etc. Most tag antennas are based around dipoles with a T-matching network, however, there's a few variations to this rule, one is the 4-arm crossed dipole antenna found in some commercial 'Tags' as well other more exotic antenna implementations for 'Tags' that work under special conditions, like attached to metallic objects. Here's some examples:
 
