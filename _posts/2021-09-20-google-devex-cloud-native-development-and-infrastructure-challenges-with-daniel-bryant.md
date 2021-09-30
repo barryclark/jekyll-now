@@ -4,6 +4,7 @@ title: "Google DevEx, Cloud Native Development, and Infrastructure Challenges, w
 description: "Cheryl Hung discusses her views on Developer Experience based on Google Borg"
 image: /images/2021-09-20-google-devex-cloud-native-development-and-infrastructure-challenges-with-daniel-bryant.png
 tags:
+  - Podcast
   - "2021"
 ---
 
