@@ -16,6 +16,7 @@ Some random things that I enjoy doing:
 * Games of many sorts - tabletop and video!
 * Illustrations and worldbuilding.
 * Food, lots of food.
+* Housekeeping for my cat.
 
 I'm currently based off of New York City, and grew up in the suburbs of northern Georgia. I've been working as a software/data engineer for a handful of years. (As of May 2021) I'm currently taking a gap year off of work.
 
