@@ -40,10 +40,10 @@ And here are some excellent thoughts from the videoes as shown in the pictures.
 
 ![images](https://MinShiMia.github.io/images/TheFutureOfDataAnalysis10.png)
 
-We should always ask ourselves that how do I know that, how does what I see come to be seen by me.
+"We should always ask ourselves that how do I know that, how does what I see come to be seen by me.
 
 For what they show us is what we see. What we find is what we see. What we see is what we see.
 
-And what we see may not contain the answer.
+And what we see may not contain the answer."
 
 
