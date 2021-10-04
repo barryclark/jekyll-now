@@ -5,7 +5,7 @@ title: Riding the waves
 
 ![_config.yml]({{ site.baseurl }}/images/waves.jpg)
 
-I've put down some one liner thoughts for different scenarios, hope they can can serve as food for thought. I plan to keep updating them as I "grow" and tag them with relevant art(paintings, speeches, talks, interviews, ...) :P
+I've put down some one liner thoughts for different scenarios, hope they can serve as food for thought. I plan to keep updating them as I "grow" and tag them with relevant art(paintings, speeches, talks, interviews, ...) :P
 
 **Legacy**
 
@@ -47,6 +47,10 @@ Anxiety comes from feeling out of control. While it cannot be completely elimina
 **Problems**
 
 Seemingly small problems can be big, given the situation.
+
+**Fear**
+
+Fear does actually help us in so many aspects.
 
 **Emotional downtimes**
 
