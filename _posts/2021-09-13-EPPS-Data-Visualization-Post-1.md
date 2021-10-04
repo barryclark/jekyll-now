@@ -45,5 +45,5 @@ visual complexity, data blog.
 Academically, there is a conference, named IEEE Information Visualization Conference (IEEE InfoVis), where researchers publish papers and share their ideas of 
 data visualization. 
 
-The data visualization field is more competitive nowadays! 
+The data visualization field becomes more competitive nowadays! 
 
