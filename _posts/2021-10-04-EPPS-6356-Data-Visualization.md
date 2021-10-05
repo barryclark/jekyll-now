@@ -3,9 +3,10 @@ layout: post
 title: Data Science - Data Visualization
 ---
 
-[Hans Rosling chart](/files/Rosling_animate.gif)
+[2021-09-13-EPPS-Data-Visualization-Post-1](https://github.com/MinShiMia/Data-Visualization/blob/65ddb957aff3ebb60d3f1e40ed3d7a8844823c44/2021-09-13-EPPS-Data-Visualization-Post-1.md
+![image](https://user-images.githubusercontent.com/65604919/135942664-12564b84-ced9-43fa-b579-25f1211b887c.png))
 
-[SHapley Additive exPlanations (SHAP): Vote for Tsai 2016](/files/Shap_votetsai2016.svg "Predictor probabilities of DPP vote in 2016")
+[2021-09-21-EPPS-Data-Visualization-Post-2](https://github.com/MinShiMia/Data-Visualization/blob/65ddb957aff3ebb60d3f1e40ed3d7a8844823c44/2021-09-21-EPPS-Data-Visualization-Post-2.md)
 
 [Stata output using dyndoc](/stata/hpidyndoc1.html "Stata dyndoc output")
 
