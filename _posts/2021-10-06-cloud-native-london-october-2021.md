@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloud Native London October 2021: CloudBolt and AWS"
-description: "speakers from CloudBolt and AWS join us at the Cloud Native London meetup October 2021, hosted by Cheryl Hung, VP Ecosystem at CNCF"
+description: "speakers from CloudBolt and AWS join us at the Cloud Native London meetup October 2021, hosted by Cheryl Hung, Engineering Manager at Apple"
 location: London, UK
 image: /images/CNL_April_Rambly.jpg
 video: https://www.youtube.com/embed/BAqs3H1d-lg
