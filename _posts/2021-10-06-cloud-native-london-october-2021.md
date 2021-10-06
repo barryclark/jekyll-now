@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Joining us tonight at the October Cloud Native London virtual meetup are two great speakers from CloudBolt and AWS, from 6:45pm BST tonight, on Rambly and YouTube! 
