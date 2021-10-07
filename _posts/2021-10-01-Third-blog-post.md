@@ -23,3 +23,6 @@ connect fully. I had an easier time with the COVID data. Once I figured
 it out I felt like the rest was a lot easier. In the future, I think I
 will join an office hour session if I get stuck on the API or a similar
 issue because I would have rather used that data set.
+
+Link to blog github repo: https://github.com/jlrelihan/jlrelihan.github.io
+Link to project github repo: https://github.com/jlrelihan/Project-1
