@@ -17,6 +17,7 @@ higher confirmed cases. Part of this may be an artifact of them being a
 larger state but in the case of Texas and Florida these make sense
 because of the lax protocols during COVID.
 
+
 I thought the most difficult thing in the project was connecting to the
 API. I first tried with the Pokemon API but could not figure out how to
 connect fully. I had an easier time with the COVID data. Once I figured
