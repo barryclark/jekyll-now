@@ -1,7 +1,6 @@
+================ Jennifer Relihan 10/01/2021
+
 Project One Blog
-================
-Jennifer Relihan
-10/01/2021
 
 For the project I used the COVID API. I wrote 6 API interaction
 functions in order to query the data and pull specific information out
