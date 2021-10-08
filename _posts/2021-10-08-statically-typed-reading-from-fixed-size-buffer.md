@@ -7,8 +7,8 @@ date: 2021-10-08
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'C++ Metaprogramming: Statically Typed Reading from a Fixed Size Buffer'
-comments_id: 
+title: 'C++ Metaprogramming: Safer Reading from Buffers'
+comments_id: 29
 ---
 
 At work I am currently getting into embedded programming with C. And while there are some things I learned to appreciate about the simplicity of C, two of the things I really miss are templates and serious type safety. The constant need for fiddling with arrays of bytes and reinterpreting their contents made me wonder if there is a neat way of doing it in C++. This, of course, gives me an excuse to work out my C++ template metaprogramming muscles, which have atrophied somewhat.
