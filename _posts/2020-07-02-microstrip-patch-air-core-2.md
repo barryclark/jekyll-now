@@ -76,7 +76,7 @@ Now hold your horses Anakin before you get any respiratory problems and such. Ac
 Finally, to finish up, here's a summary comparison of both implementations to the requirements we defined on last post.
 
 Parameter | Value | ![](/images/corner_cut_profile.png) | ![](/images/hybrid_profile.png)
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+-------------------------|-------------------------|-------------------------|-------------------------
 Frequency bandwidth (MHz)| 865.1 - 927.2 | ✅ | ✅
 Minimum in-band Gain (dBc) | 4.0 | ✅ | ✅
 Maximum in-band axial ratio | 4.0 | ❌ | ✅
