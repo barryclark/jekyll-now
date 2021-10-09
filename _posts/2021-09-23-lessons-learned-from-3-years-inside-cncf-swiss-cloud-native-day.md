@@ -4,9 +4,11 @@ title: "Lessons learned from 3 years inside CNCF - Keynote at Swiss Cloud Native
 description: "Cheryl Hung, Engineering Manager at Apple, reflects on her time at CNCF"
 image: /images/2021-09-23-lessons-learned-from-3-years-inside-cncf-swiss-cloud-native-day.jpeg
 slides: //www.slideshare.net/slideshow/embed_code/key/M12gcAzWwwja5d
+video: https://www.youtube.com/embed/sCOx1uzPw6A
 tags:
   - Slides
   - "2021"
+  - Video
 ---
 
 I discuss my journey inside CNCF, home of Kubernetes and one of the top open source foundations, some hard truths about community, and thoughts on the future of cloud native.
