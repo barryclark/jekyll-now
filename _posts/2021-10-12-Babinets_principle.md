@@ -1,3 +1,8 @@
+---
+layout: post
+title: Babinet's principle, slot antennas and why does it matter for PCB design
+---
+
 Hello folks,
 
 I've been quite lazy lately, spending a lot of time on Netflix and useless stuff, like watching "A day in the life of (some profession)" on YouTube, just to regret spending 5, 10, 100 minutes gathering completely useless information, but dazzled just by the aesthetics of how these videos are done. 
