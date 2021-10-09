@@ -39,7 +39,7 @@ On the 'Tag' side there's less variety. Even though there's a lot of different a
 
 [](/images/dipole_1.jpg) | ![](/images/4arm_dipole_tag.jpg) | ![](/images/metal_tag.png)
 |------------------------------------|--------------------------------|--------------------------------|
-Dipole with T-matching network |	Double-dipole | RFID tag for Metal objects
+Dipole |	Double-dipole | RFID tag for Metal objects
 
 Besides the examples shown above, there's a lot of variants for all sorts of applications, but the antenna types usually revolve around dipoles or the more specific constructions for tags that are to be attached to metallic surfaces.
 
