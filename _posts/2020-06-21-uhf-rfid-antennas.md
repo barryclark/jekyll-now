@@ -38,8 +38,8 @@ Microstrip patch air core	| Microstrip patch ceramic core |	Quadrifilar spiral a
 
 On the 'Tag' side there's less variety. Even though there's a lot of different and weird designs for these antennas, most of them are based on the same antenna principle, only changing the shapes to conform to different sizes, make them more square or more rectangular, or round, etc. Most tag antennas are based around dipoles with a T-matching network, however, there's a few variations to this rule, one is the 4-arm crossed dipole antenna found in some commercial 'Tags' as well other more exotic antenna implementations for 'Tags' that work under special conditions, like attached to metallic objects. Here's some examples:
 
-[](/images/dipole_1.png) | ![](/images/4arm_dipole_tag.jpg) | ![](/images/metal_tag.png)
-|------------------------------------|--------------------------------|--------------------------------|
+![](/images/dipole_1.png) | ![](/images/4arm_dipole_tag.jpg) | ![](/images/metal_tag.png)
+|--------------------------|----------------------------------|---------------------------|
 Dipole |	Double-dipole | RFID tag for Metal objects
 
 
