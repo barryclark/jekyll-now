@@ -75,12 +75,13 @@ Now hold your horses Anakin before you get any respiratory problems and such. Ac
 
 Finally, to finish up, here's a summary comparison of both implementations to the requirements we defined on last post.
 
-Parameter | Value | ![](/images/corner_cut_profile.png) | ![](/images/hybrid_profile.png)
--------------------------|-------------------------|-------------------------|-------------------------
-Frequency bandwidth (MHz)| 865.1 - 927.2 | ✅ | ✅
-Minimum in-band Gain (dBc) | 4.0 | ✅ | ✅
-Maximum in-band axial ratio | 4.0 | ❌ | ✅
-Polarization | RHCP | ✅ | ✅
+Parameter                  | Value         | Corners cut microstrip | Dual feed microstrip
+---------------------------|---------------|------------------------|-------------------------
+Frequency bandwidth (MHz)  | 865.1 - 927.2 | ✅                     | ✅
+Minimum in-band Gain (dBc) | 4.0           | ✅                     | ✅
+Maximum in-band axial ratio| 4.0           | ❌                     | ✅
+Polarization               | RHCP          | ✅                     | ✅
+
 
 So, according to this summary, to comply with all the requirements, the air-core microstrip patch with dual feed technique is the best choice. However, if we reduce the usable band to just the FCC band, then the single feed corners cut antenna is better. It can always be tuned to have the circular polarization at the ETSI band instead. But, in the current design, the dual feed antenna has another advantage, that it can produce LHCP or RHCP depending on the port of the hybrid square that is fed with the signal. So it is a compromise between cost/complexity and performance, as always.
 
