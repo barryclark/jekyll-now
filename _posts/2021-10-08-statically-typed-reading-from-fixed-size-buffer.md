@@ -11,10 +11,10 @@ title: 'C++ Metaprogramming: Safer Reading from Buffers'
 comments_id: 29
 ---
 
-At work I am currently getting into embedded programming with C. And while there are some things I learned to appreciate about the simplicity of C, two of the things I really miss are templates and serious type safety. The constant need for fiddling with arrays of bytes and reinterpreting their contents made me wonder if there is a neat way of doing it in C++. This, of course, gives me an excuse to work out my C++ template metaprogramming muscles, which have atrophied somewhat.
+I am currently getting into embedded programming with C at work and while there are some things I learned to appreciate about the simplicity of C, two of the things I really miss are generics and stricter type safety. I wondered if C++ can offer a safer way of reading types from arrays of bytes. This, of course, gives me an excuse to work out my C++ template metaprogramming muscles, which have atrophied a little.
 
 # API Goal
-Let's say I have fixed size array of 8 bytes, and I want to read the first two bytes as a `int16_t`, the next four bytes a an `int32_t` and the next two bytes as `uint16_t` again. How can I express this intuitively in C++17? Here's what I came up with:
+I want to provide an API that allows us to copy elements from a buffer using static types and compile time bounds checking. Let's take a look at a concrete example: say I have a fixed size array of 8 bytes, and I want to read the first two bytes as an `int16_t`, the next four bytes as an `int32_t`, and the final two bytes as an `uint16_t`. How can I express this intuitively in C++17? Here's what I came up with:
 
 ```c++
 uint8_t buf[] = /* an array with compile-time known size*/
@@ -26,17 +26,17 @@ This feels reasonably intuitive to me. Since we know the size of the buffer at c
 # Pseudocode
 Let's use a little bit of (C++ _inspired_, but definitely not C++) pseudocode:
 ```rust
-fn copy_from_buffer<Ts..., size_t N>(bytes[N]) -> tuple<Ts...> {
+fn copy_from_buffer<...Ts, size_t N>(bytes[N]) -> tuple<Ts...> {
     size_t offset = 0;
     tuple<Ts...> copied_values{};
     foreach T in Ts... {
-        copied_values (for type T) = *(reinterpret_cast<T*>( (&bytes[0]) + offset));
+        copied_values [at T] = *(reinterpret_cast<T*>( (&bytes[0]) + offset));
         offset += sizeof(T);
     }
     return copied_values;
 }
 ```
-Obviously, we want to return a tuple of the desired types. To assign each element of the tuple, we iterate over the types and reinterpret cast the associated memory to a pointer of that type. Then, we dereference the pointer to copy it into our tuple. While doing so, we keep track of the sizes of the types and accumulate them in an `offset` variable that we use to find the beginning of the next type in memory. So much for the theory. The problem is that the pseudocode given above is imperative, but C++ template metaprogramming (TMP) isn't [^cpptmp].
+A good solution is to return a tuple of the desired types so that the structured binding capabilites come for free. That's the easy part. To assign each element of the tuple, we iterate over the types and reinterpret cast the associated memory to a pointer of that type. Then, we dereference the pointer to copy it into our tuple. While doing so, we keep track of the sizes of the types and accumulate them in an `offset` variable that we use to find the beginning of the next type in memory. So much for the theory. The problem is that the pseudocode given above is imperative, but C++ template metaprogramming (TMP) isn't [^cpptmp].
 
 # Implementation
 We'll start by collecting the puzzle pieces we need and plug them together at the end of this section.
@@ -58,7 +58,7 @@ constexpr T partial_sum(T const t, Ts const... ts) {
 ```
 Here, we have a `constexpr` function that sums `Nelem` elements of a given list of numbers. So `partial_sum<3>(1,1,1,1)` is `3`, while `partial_sum<1>(1,1,1,1)` is `1` and `partial_sum<0>(1,1,1,1)` is `0`. This is the building block we need to transform the sequence of types into the sequence of offsets.
 
-To express a sequence of types in C++ TMP we use `std::tuple<Ts...>`, but how do we express a sequence of integer numbers? Well, [`std::integer_sequence`](https://en.cppreference.com/w/cpp/utility/integer_sequence) of course. It takes the type of the number and a variadic list of compile time constants of that type. Thus, to pass the sequence `<0,2,6>` we create an instance of type `std::integer_sequence<size_t,0,2,6>`. Now we know how to write a metafunction `make_offset_sequence` that transforms a sequence of types into a sequence of offsets. 
+To express a sequence of types in C++ TMP we use `std::tuple<Ts...>`, but how do we express a sequence of integer numbers? Well, [`std::integer_sequence`](https://en.cppreference.com/w/cpp/utility/integer_sequence) of course. It takes the _type_ of the integer and a variadic list of compile time constants of that type. Thus, to pass the sequence `<0,2,6>` we create a type `std::integer_sequence<size_t,0,2,6>`. Now we know how to write a metafunction `make_offset_sequence` that transforms a sequence of types into a sequence of offsets. 
 
 ```c++ 
 // a helper function
@@ -109,7 +109,7 @@ constexpr std::tuple<Ts...> copy_from_buffer(BufType const (&buffer)[N]) {
 The latter function is the one we are interested in, but we need a helper function again to pass an index sequence that enumerates the types. The final `copy_from_buffer` function provides compile time safety with regards to the size of the buffer. It also works with other buffer types than bytes and provides the intuitive interface we were looking for.
 
 # Conclusion
-So this is it. A safer way of reinterpreting elements from a buffer that provides compile time bounds checking and as much type safety as possible. We might ask if it was really necessary do complicated metaprogramming just to achieve this simple effect [^heresy]. Couldn't we have used a memory copy into `struct`s? Yes and no. As far as I know, a `struct` can have padding bytes inserted by the compiler and I would not bet on the memory layout being portable across compilers. There are ways to pack structures, but they are not standardized as far as I am aware [^packing]. So, as always, metaprogramming is best ;)
+So this is it. A safer way of reinterpreting elements from a buffer that provides compile time bounds checking and as much type safety as possible. We might ask if it was really necessary do complicated metaprogramming just to achieve this simple effect [^heresy]. Couldn't we have used a memory copy into `struct`s? Maybe. As far as I know, a `struct` can have padding bytes inserted by the compiler and I would not bet on the memory layout being portable across compilers. There are ways to pack structures, but they are not standardized as far as I am aware [^packing]. So, as always, metaprogramming is best ;)
 
 Feel free to check out the code in [this github repo](https://github.com/geo-ant/MetaProgrammingShenanigans/).
 
