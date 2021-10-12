@@ -13,4 +13,4 @@ title: Data Science - Data Visualization
 
 [Data-Visualization-Assignment-3](https://github.com/MinShiMia/Data-Visualization/blob/65ddb957aff3ebb60d3f1e40ed3d7a8844823c44/2021-10-03-EPPS-Data-Visualization-Assignment-3.md)
 
-[Data-Visualization-Assignment-4](https://github.com/MinShiMia/Data-Visualization/blob/7caa1c021880a45b426620ed2a4a4edab70db245/Assignment4.pdf)
+[Data-Visualization-Assignment-4](https://github.com/MinShiMia/Data-Visualization/blob/5de1b8005240fb4856d8149f5eaed81355b1ae05/Assigment4.html)
