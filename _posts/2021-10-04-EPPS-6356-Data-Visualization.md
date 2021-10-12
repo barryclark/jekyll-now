@@ -17,5 +17,5 @@ title: Data Science - Data Visualization
 
 [Data-Visualization-Assignment-4-Rmd](https://github.com/MinShiMia/MinShiMia.github.io/blob/bfe1f9e9519e8ef5477a2d7aa689954398763b23/_posts/Assigment4.Rmd)
 
-[Data-Visualization-Assignment-4-PDF](https://github.com/MinShiMia/MinShiMia.github.io/blob/bfe1f9e9519e8ef5477a2d7aa689954398763b23/_posts/Assigment4.pdf)
+[Data-Visualization-Assignment-4-PDF](https://github.com/MinShiMia/MinShiMia.github.io/blob/28d0c45d49ba12cf3998f4b9d0040fb613bd4e9a/_posts/Assignment4.pdf)
 
