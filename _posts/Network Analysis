@@ -1,0 +1,43 @@
+I completed MITx: 6.419x Data Analysis: Statistical Modeling and Computation in Applications in Summer '21 and the highlight for me was analyzing criminal network data. This post outlines a network analysis of social media data as a practical application of what I learned in that course.
+
+I have two personally interesting networks to explore, (1) #MTBoS is a community of math teachers who blog and share their practice on twitter; and (2) #atlantaactors are actors trying to make a name for themselves in Atlanta on instagram.
+
+In order to visualize and analyze nodes and edges for each of these networks I will collect and store a list of users and an associated variable of interest.
+
+# Math Twitter Blogosphere MTBoS 
+As a member of the MTBoS for over a decade, I have found tons of activities, thoughts on assessment and feedback, and a wealth of professional advise. I think a network of the users who retweet and get retweeted would create an interesting visualization of how information gets shared across the MTBoS and highlight who some of the more obvious kingpins are as well as some of the lesser known but highly influential players are. If this work interests you, please get in touch as there are many extensions that could be pursued.
+
+## Selecting Tweets and Users
+I did an advanced search on twitter for #mtbos or #iteachmath with a minimum of 100 retweets in the past 3 years.
+  (#mtbos OR #iteachmath) min_retweets:100 until:2021-10-08 since:2018-01-01
+
+## Scraping Data
+The resulting list of 95 tweets is rendered with react on the client side. This can be scraped with BeautifulSoup and a Selenium webdriver.
+```
+from bs4 import BeautifulSoup
+from selenium import webdriver
+url = "https://twitter.com/search?q=(%23mtbos%20OR%20%23iteachmath)%20min_retweets%3A100%20until%3A2021-10-08%20since%3A2018-01-01&src=typed_query" 
+browser = webdriver.Chrome("path_to_chromedriver")
+tweets=[]
+browser.get(url)
+
+# Retrieve all of the anchor tags with unique class
+# Repeat this code block after translateY to reveal next set of tweets
+soup = BeautifulSoup(browser.page_source, "html.parser")
+results = soup.findAll('a',{'class':"r-1q142lx"})
+for result in results:
+  tweet = result["href"]
+  tweets.append(tweet)
+
+print(tweets)
+```
+I scrolled the page in the webdriver until the element after the last element of the previous scrape was the first element of the new scrape. I was able to track each element by the translateY value of the element.style field as demonstrated by the first div of the fourth batch of tweets with translateY(17607 px) and the next after the last div with translateY(23122 px) in the screenshots below.
+![Fourth Tweet Batch](17607.png "translateY(17607 px)") ![Fifth Tweet Batch](23122.png "translateY(23122 px)")
+
+Clicking 'People' on the navigation bar provides a list of users who were scraped in the same way as tweets above using the unique class identifier "r-1wbh5a2", which resulted in 266 users.
+
+
+## Retweet Lookup
+
+
+The old twitter API allows
