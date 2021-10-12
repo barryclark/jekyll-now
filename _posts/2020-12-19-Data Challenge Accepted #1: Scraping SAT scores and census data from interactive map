@@ -1,6 +1,6 @@
 Ever wanted to scrape the data from an interactive map to run some analyses of your own on it? Only to find that the map didn't have easy access to the data?
 
-I did. Over at Edgap. While doing a lesson [To Explore, Understand, and Respond to Social Injustice](https://evanrushton.blogspot.com/2020/12/book-club-high-school-mathematics.html)
+I did. Over at [Edgap](https://www.edgap.org/). While doing a lesson [To Explore, Understand, and Respond to Social Injustice](https://evanrushton.blogspot.com/2020/12/book-club-high-school-mathematics.html).
 
 I could probably find a data store with the US SAT/ACT scores for a large number of schools from 2016 and then grab the census tract data and wrangle it until I could do the following analysis. However, I felt that I would learn something useful by trying to scrape the data from the interactive map.
 
@@ -13,7 +13,7 @@ function EdGapLayer() {
 }
 ```
 
-So I figured I would grab the appropriate zoom window for the sample I want to analyze, and then look at the network output to look for anywhere that data was being loaded to use in the previous lines of code. Bingo, I found 3 json files and 1 csv. Upon inspection they were short lists... because a lot of the visualized data was already cached.  So I cleared the browser cache and reloaded the same zoom window. This yielded quite a lot more files,
+So I figured I would grab the appropriate zoom window for the sample I want to analyze, and then look at the network output to look for anywhere that data was being loaded to use in the previous lines of code. Bingo, I found 3 json files and 1 csv. Upon inspection they were short lists... because a lot of the visualized data was already cached. So I cleared the browser cache and reloaded the same zoom window. This yielded quite a lot more files,
 
 ![screenshot of network panel](https://github.com/evanrushton/evanrushton.github.io/blob/master/images/edgap-network-2020-12-20.png)
 
@@ -108,15 +108,15 @@ $ jq -r '.features | length' *.json
 4
 1
 3356
-waste:json ERushton$ jq -r '.features | length' *.json | awk '{ SUM += $1} END { print SUM }'
+$ jq -r '.features | length' *.json | awk '{ SUM += $1} END { print SUM }'
 6712
 ```
-The last file in the directory has 3356 'features:' values which is the sum of the rest, given that 6712 is 2 * 3356.
+The merging appears to be successful. The last file in the directory has 3356 'features:' values which is the sum of the rest, given that 6712 is 2 * 3356. 
 
 To more completely check we can look at the distribution of some values in the data later when we are exploring.
 
 # Cleaning
-Next I wanted to get all of the data into a dataframe or datatable in R, and prepare it for exploration and analysis.
+Next I put all of the data into a dataframe in R to prepare it for exploration and analysis.
 
 So now I need to load all of these into an R session and wrangle it.
 
