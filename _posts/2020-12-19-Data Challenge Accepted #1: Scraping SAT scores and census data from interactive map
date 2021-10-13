@@ -4,7 +4,7 @@ I did. Over at [Edgap](https://www.edgap.org/). While doing a lesson [To Explore
 
 I could probably find a data store with the US SAT/ACT scores for a large number of schools from 2016 and then grab the census tract data and wrangle it until I could do the following analysis. However, I felt that I would learn something useful by trying to scrape the data from the interactive map.
 
-# Scraping
+# Scraping Data
 I first tried inspecting elements to see if they were pulling from a defined file or url. No. Then I looked at the page source to see if there was an obvious script that was doing the work. Well, yes, but it was dynamically typing the url depending on the zoom window.
 
 ```js
@@ -17,7 +17,7 @@ So I figured I would grab the appropriate zoom window for the sample I want to a
 
 ![screenshot of network panel](https://github.com/evanrushton/evanrushton.github.io/blob/master/images/edgap-network-2020-12-20.png)
 
-# Merging
+# Merging Files
 Here is the head of one of the csv files,
 
 ```csv
@@ -57,7 +57,7 @@ Credit to [Inian response to Satish](https://unix.stackexchange.com/questions/61
 $ jq -nc '{ features: [ inputs.features ] | add }' *.json > merged.json
 ```
 
-# Checking
+## Checking Merged Files
 To check that the csv merged properly I checked for one header row and counted all of the rows to be equal to the toal of the individual csvs and checked that the head and tail were correct. 
 
 ```bash
@@ -115,23 +115,32 @@ The merging appears to be successful. The last file in the directory has 3356 'f
 
 To more completely check we can look at the distribution of some values in the data later when we are exploring.
 
-# Cleaning
-Next I put all of the data into a dataframe in R to prepare it for exploration and analysis.
+# Wrangling
+Next I load these merged files in R to join the csv and json data into a dataframe to prepare it for exploration and analysis.
 
-So now I need to load all of these into an R session and wrangle it.
+## Loading Data
+The csv and json files can be quickly loaded in R.
 
-I did this
+```R
+schSAT <- read.csv("./Data/csv/merged.csv", header=TRUE) 
+nhIncome <- fromJSON(file="./Data/json/merged.json")
+```
 
-then this
+## Joining Data
+Each school row contains (lat, lon) that can be used to find the corresponding neighborhood from the polygons in the json file.
+```R
 
-and finally this
+```
 
-to get this. Tada
+Once the corresponding neighborhood is found, the additional properties can be joined for each school row.
+```R
+
+```
 
 #Exploration
 The question I am interested in is whether we can predict SAT scores with a given postal code or census tract.
 
-Note: You are not a test score. I believe we should measure what we value, not arbitrarily value what we measure. However, this is a data challenge accepted. So even though SAT scores may be shit, they still make pretty graphs.
+Note: You are not a test score. I believe we should measure what we value, not arbitrarily value what we measure. However, this is a data challenge accepted. So even though SAT scores may be narrow metrics, they still make pretty graphs. Onward!
 
 pretty graph 1
 
