@@ -12,7 +12,7 @@ Amazon Lex is a service for building conversational interfaces using voice and t
 
 ## Amazon Connect Integration ##
 
-Amazon Lex is natively integrated within contact flows, routing, and chat allowing you to service customers directly. There is no coding required to add Natural Language Understanding (NLU) powered chatbots. The context of the conversations id passed automatically when escalated to a human agent. Amazon Connect chat supports asynchronous messaging, enabling you to give your customers and agents the ability to message without being available at the same time.
+Amazon Lex is natively integrated within contact flows, routing, and chat allowing you to service customers directly. There is no coding required to add Natural Language Understanding (NLU) powered chatbots. The context of the conversations is passed automatically when escalated to a human agent. Amazon Connect chat supports asynchronous messaging, enabling you to give your customers and agents the ability to message without being available at the same time.
 
 ## Creating a Simple Bot ##
 
@@ -28,11 +28,11 @@ Next will provide a unique name and description for the Bot. After that we want 
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage2.png)
 
-Our bot is not intended to be used by children so will select "No" for Coppa. Add any tags that you may require to identify your bot at later date. For now I'm going to leave my tags blank.
+Our bot is not intended to be used by children so will select "No" for COPPA requirements. Add any tags that you may require to identify your bot at later date. For now I'm going to leave my tags blank.
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage3.png)
 
-Finally we want to add any languages and voices that we want to support with our Bot. The last step is to click done.
+Finally we want to add any additional languages and voices that we want to support with our Bot. The last step is to click done.
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage4.png)
 
@@ -48,7 +48,7 @@ Next we add our sample utterances to the intent. Sample utterances are words or 
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage7.png)
 
-In order to capture the name and email address we need to use Slots. Amazon Lex supports built-in slot types that define how data in the slot is recognized and handled. Any slots that are Amazon.SlotName are built-in slot types that Lex knows about already. We are adding two slots one for each piece of data we want to get from the customer. Lex will not proceed to transfer to agent until such time as both slots contain a value.
+In order to capture the name we need to use Slots. Amazon Lex supports built-in slot types that define how data in the slot is recognized and handled. Any slots that are Amazon.SlotName are built-in slot types that Lex knows about already. We add a slot for each piece of data we want to get from the customer. Lex will not proceed to transfer to agent until such time as all slots contain a value.
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage8.png)
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage9.png)
@@ -66,11 +66,11 @@ Once the bot has been built we can test it by clicking on the Test button.
 
 ## Whitelist Lex Bot for use in Amazon Connect ##
 
-Now that the Lex bot has been built it needs to be whitelisted for use with Amazon Connect. From the AWS Management Console go to Amazon Connect service. Select the Connect instance that you want to add the Bot too. Next select Contact Flows under the instance
+Now that the Lex bot has been built it needs to be whitelisted for use with Amazon Connect. From the AWS Management Console go to Amazon Connect service. Select the Connect instance that you want to add the bot too. Next select Contact Flows under the instance
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage15.png)
 
-Select your Bot from the drop down and the relevant alias. Then click Add Amazon Lex Bot. Note a Bot can have multiple aliases.
+Select your Bot from the drop down and the relevant alias. Then click Add Amazon Lex Bot. **Note a bot can have multiple aliases.**
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage16.png)
 
@@ -110,7 +110,7 @@ As we are using an Amazon Lex **v2** bot, the language attribute in Amazon Conne
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage19.png)
 
-Next we add a Get Customer Input block, were we select our Bot and alias.
+Next we add a Get Customer Input block, were we select our bot and alias.
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImage18.png)
 
@@ -149,6 +149,9 @@ You can read more about adding Amazon Connect Chat to your website at the [Amazo
 The end goal is always improving the customer experience so they come back in the future. By leveraging bots we are releasing our human agents from low value work to higher value work that will help with customer retention and positivity towards the enterprise. In my previous post I showed you how to enable Contact Lens. Using the output from Contact Lens, your Quality review team should be able to identify infrequent or slow processes that would be ideal for your first bot. As you gain more experience with Lex, in the future you should be looking to combine with other AWS services such as Kendra or other AI and machine learning services to turn your bot into a fully functioning virtual assistant. Stay tuned for future blog posts.
 
 ## Recent Amazon Connect Announcements ##
+
  *[Amazon Connect Voice ID Now Generally Available](https://aws.amazon.com/connect/voice-id/)
+
  *[Amazon Connect Wisdom Now Generally Available](https://aws.amazon.com/connect/wisdom/)
+
  *[Amazon Connect High Volume Outbound Communication Preview Available](https://aws.amazon.com/about-aws/whats-new/2021/09/amazon-connect-communications/)
