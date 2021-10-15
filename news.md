@@ -5,6 +5,9 @@ permalink: /news/
 ---
 ## 2021
 
+__October__
+ - Participated in a workshop to guide students applying for a PhD program
+
 __June__
  - Held a workshop to teach highschool and undergraduate students how to "_Craft an effective abstract_."
  - Our work, [_EMT-related transcription factors and YAP/TAZ orchestrate cell fate and metastasis in osteosarcoma_](https://cancerscience.insightconferences.com), was presented at the 41st Euro Congress on Cancer Science & Therapy (Cancer Science 2021)
