@@ -19,7 +19,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4;
   color: $darkGray;
 }
@@ -196,7 +196,6 @@ img {
   cursor: pointer;
   font-weight: 300;
   font-size: 28px;
-  letter-spacing: 1px;
 }
 
 .site-description {
@@ -226,7 +225,6 @@ nav {
     color: $darkGray;
     text-align: right;
     font-weight: 300;
-    letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
