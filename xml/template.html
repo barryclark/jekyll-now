@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Non-TEI XML Data in CETEIcean</title>
+    <!-- The <link> element below points to your copy of the CETEIcean CSS file. To style your document, you'll need to edit that CSS file. If you want to use CETEIcean with TEI data rather than your own home-brew XML, change the path in the line below to point to the CETEI.css file instead  -->
+    <link rel="stylesheet" href="CETEIcean_local.css" media="screen">
+  </head>
+  <body>
+    <!-- This <div> is a fallback when the JavaScript fails -->
+    <div id="TEI">
+      Sadly, this page will not work in Internet Explorer and some older browsers. We suggest you use a newer version of Chrome or Firefox.
+    </div>
+    
+    <!-- This <script> element invokes the localized version of the CETEIcean JavaScript, which processes your XML file and provides styling and functionality. If you want to use CETEIcean with TEI data rather than your own home-brew XML, change the path in the line below to point to the CETEI.js file instead.-->
+    <script src="../js/CETEI_local.js"></script>
+
+  <!-- This <script> element references your XML file, and transforms it into HTML5. When you create a new XML file, you'll need to make a copy of this HTML template, and change the filename on line 19 below to point to your XML file. -->
+    <script>
+      var CETEIcean = new CETEI();
+      CETEIcean.getHTML5('template.xml', function(data) {
+        document.getElementById("TEI").innerHTML = "";
+        document.getElementById("TEI").appendChild(data);
+        CETEIcean.addStyle(document, data);
+      });
+
+      // Alternatively, use then()
+      // (new CETEI).getHTML5('testTEI.xml').then(function(data){
+      //   document.getElementById("TEI").appendChild(data);
+      // });
+
+    </script>
+  </body>
+</html>
+

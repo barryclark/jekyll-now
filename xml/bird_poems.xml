@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="complex_poem.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<collection>
+    <header>
+        <contributors>
+            <author xml:id="ogden_nash"></author>
+        </contributors>
+        <date>2021-10-14</date>
+        <topics>
+            <topic xml:id="eggs">Anything related to eggs</topic>
+            <topic xml:id="poultry">Anything related to poultry</topic>
+        </topics>
+    </header>
+    <poem type="stanzaic" by="#ogden_nash" topic="#eggs #poultry"> 
+        <title>Let's Think of Eggs</title>
+        <stanza type="crazy">
+            <line>Let's think of <hi>eggs</hi></line>
+            <line>They have no <emph>legs</emph>!</line>
+            <line>Chickens come from eggs,</line>
+            <line>But they have legs.</line>
+        </stanza>
+        <stanza type="crazy">
+            <line>The plot thickens—</line>
+            <line>Eggs come from chickens,</line>
+            <line>But have no legs under 'em—</line>
+            <line>What a conundrum!</line>
+        </stanza>
+    </poem>
+    <poem type="ode" topic="poultry" by="#ogden_nash">
+        <title>Behold the Duck</title>
+        <line>Behold the duck!</line>
+        <line>It does not cluck,</line>
+        <line>A cluck it lacks—</line>
+        <line>It quacks!</line>
+        <line>It's especially fond</line>
+        <line>Of a puddle or pond;</line>
+        <line>When it dines or sups,</line>
+        <line>It bottoms-ups!</line>
+    </poem>
+    <poem by="#emily_dickinson" topic="#poultry" type="stanzaic">
+        <title>A Bird Came Down the Walk</title>
+        <stanza type="quatrain">
+            <line>A bird came down the Walk —</line>
+            <line>He did not know I saw —</line>
+            <line>He bit an Angle worm in halves</line>
+            <line>And ate the fellow, raw,</line>
+        </stanza>
+        <stanza type="quatrain">
+            <line>And then, he drank a Dew</line>
+            <line>From a convenient Grass —</line>
+            <line>And then hopped side-wise to the wall</line>
+            <line>To let a Beetle pass —</line>
+        </stanza>
+    </poem>
+</collection>
