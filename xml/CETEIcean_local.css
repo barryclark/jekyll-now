@@ -11,10 +11,15 @@ jhf-poem {
     display:block;
     background-color:gray;
 }
-jhf-line {
+jhf-poem > jhf-line {
     display:block;
+    background-color: purple;
 }
 
+jhf-stanza > jhf-line {
+    display:block;
+    background-color: purple;
+}
 
 /* Styles for eggs_jhf.xml */
 jhf-text {
@@ -33,8 +38,9 @@ jhf-verse {
     display:block;
     margin:1em;
 }
-jhf-line {
+jhf-verse > jhf-line {
     display:block;
+    background-color:aqua;
 }
 jhf-author {
     display:block;
