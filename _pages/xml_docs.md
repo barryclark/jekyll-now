@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /tei/
+permalink: /xml/
 title: XML
 ---
 
