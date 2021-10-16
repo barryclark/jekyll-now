@@ -22,18 +22,18 @@
          <div>
             <head>Spinning</head>
             <figure>
-               <graphic url="../images/spun_yarn_beach-plum.jpeg"/>
+               <graphic height="400px" url="../images/spun_yarn_beach-plum.jpeg"/>
                <figDesc>Spun yarn</figDesc>
             </figure>
             <figure>
-               <graphic url="../images/spun_yarn_field_flowers.jpeg"/>
+               <graphic height="400px" url="../images/spun_yarn_field_flowers.jpeg"/>
                <figDesc>More spun yarn</figDesc>
             </figure>
          </div>
          <div>
             <head>Weaving</head>
             <figure>
-               <graphic url="../images/goose-eye_twill.jpeg"/>
+               <graphic height="400px" url="../images/goose-eye_twill.jpeg"/>
                <figDesc>Goose-eye twill</figDesc>
             </figure>
          </div>

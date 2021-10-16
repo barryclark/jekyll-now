@@ -1,3 +1,22 @@
+/* Styles for Avian poetry */
+jhf-header {
+    background-color:aqua;
+    font-style:italic;
+    font-family:arial, helvetica, sans-serif;
+}
+jhf-topic {
+    display:block;
+}
+jhf-poem {
+    display:block;
+    background-color:gray;
+}
+jhf-line {
+    display:block;
+}
+
+
+/* Styles for eggs_jhf.xml */
 jhf-text {
     display:block;
     background-color:olive;
