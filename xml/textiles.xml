@@ -18,14 +18,17 @@
   </teiHeader>
   <text>
       <body>
-         <p>This is an experiment in representing images with TEI and CETEIcean.</p>
+         <head>A Gallery of Fiber</head>
+         <p>This is an experiment in representing images with TEI and CETEIcean. It is also a record of experimentation with fiber, including spinning, hand-dyeing, and weaving.</p>
          <div>
             <head>Spinning</head>
             <figure>
+               <head>A skein of hand-spun yarn, spun from wool dyed with pokeberry.</head>
                <graphic height="400px" url="../images/spun_yarn_beach-plum.jpeg"/>
                <figDesc>Spun yarn</figDesc>
             </figure>
             <figure>
+               <head>A skein of hand-spun yarn, spun from wool dyed with acid dyes.</head>
                <graphic height="400px" url="../images/spun_yarn_field_flowers.jpeg"/>
                <figDesc>More spun yarn</figDesc>
             </figure>
