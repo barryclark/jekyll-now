@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="complex_poem.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<collection>
+<collection xmlns="http://www.diegesis.net/ns/jhf">
     <header>
         <contributors>
             <author xml:id="ogden_nash"></author>
