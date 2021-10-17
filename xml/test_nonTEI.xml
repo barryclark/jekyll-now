@@ -2,7 +2,7 @@
 <JHF xmlns="http://www.diegesis.net/ns/jhf">
     <text>
     <para>A test paragraph to see what happens</para>
-    <para>Another paragraph with a <ref target="https://www.wwp.northeastern.edu">link to the WWP</ref></para>
+    <para>Another paragraph with a <linkage target="https://www.wwp.northeastern.edu">link to the WWP</linkage></para>
     <verse>
         <h>A Short Poem</h>
         <line>This is how we do poetry</line>

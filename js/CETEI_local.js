@@ -13,7 +13,7 @@ var CETEI = (function () {
       // inserts a link inside <ptr> using the @target; the link in the
       // @href is piped through the rw (rewrite) function before insertion
       "ptr": ["<a href=\"$rw@target\">$@target</a>"],
-      // wraps the content of the <ref> in an HTML link
+      // wraps the content of the <linkage> in an HTML link
       "linkage": [
         ["[url]", ["<a href=\"$rw@url\">","</a>"]]
       ],
