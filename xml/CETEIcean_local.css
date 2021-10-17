@@ -1,10 +1,19 @@
 /* Styles for Avian poetry */
+jhf-collection {
+    border: thick solid blue;
+    padding: 1em;
+}
+
+jhf-collection > jhf-title {
+    font-size:200%;
+    color:purple;
+}
+
 jhf-header {
-    background-color:aqua;
     font-style:italic;
     font-family:arial, helvetica, sans-serif;
-    border-bottom:thin blue solid;
 }
+
 jhf-topic {
     display:block;
 }
@@ -19,7 +28,8 @@ jhf-author:before {
 
 jhf-poem {
     display:block;
-    background-color:gray;
+    border:thin solid purple;
+    padding: 2em;
 }
 
 jhf-poem > jhf-title {

@@ -9,10 +9,14 @@ var CETEI = (function () {
       "jhf": "http://www.diegesis.net/ns/jhf"
     },
     "jhf": {
+      
+      // formats the given element as code with <pre>
       "eg": ["<pre>","</pre>"],
-      // inserts a link inside <ptr> using the @target; the link in the
+      
+      // inserts a link inside the given element using the @target; the link in the
       // @href is piped through the rw (rewrite) function before insertion
       "ptr": ["<a href=\"$rw@target\">$@target</a>"],
+      
       // wraps the content of the <linkage> in an HTML link
       "linkage": [
         ["[url]", ["<a href=\"$rw@url\">","</a>"]]

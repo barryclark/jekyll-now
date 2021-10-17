@@ -2,6 +2,7 @@
 <?xml-model href="complex_poem.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <collection xmlns="http://www.diegesis.net/ns/jhf">
     <header>
+        <title>A Collection of Avian Poetry</title>
         <contributors>
             <author xml:id="ogden_nash">Nash, Ogden</author>
             <author xml:id="emily_dickinson">Dickinson, Emily</author>
