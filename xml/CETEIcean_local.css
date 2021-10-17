@@ -10,7 +10,7 @@ jhf-topic {
 }
 
 jhf-topic:before {
-    content:attr(label);
+    content:attr(label)" :";
 }
 
 jhf-author:before {
@@ -21,6 +21,13 @@ jhf-poem {
     display:block;
     background-color:gray;
 }
+
+jhf-poem > jhf-title {
+    font-size:140%;
+    color: purple;
+    
+}
+
 jhf-poem > jhf-line {
     display:block;
 }
