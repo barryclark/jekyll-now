@@ -29,7 +29,7 @@
                   <line>And plenty of honey</line>
                   <line n="5">Wrapped up in a <seg ana="exchange">five-pound note</seg></line>
                   <line>The owl looked up at the stars above</line>
-                  <line>And sang to a small <seg ana="music" xml:id="n001">guitar</seg>, <endnote target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</endnote></line>
+                  <line>And sang to a small <seg ana="music" xml:id="n001">guitar</seg>, <note target="#n001">Possibly a ukelele, though these were not common in England in Lear's time.</note></line>
                    
                   <line>O Lovely Pussy! O Pussy my love!</line>
                   <line>What a beautiful pussy you are</line>
@@ -38,7 +38,7 @@
                </verse>
                <verse>
                   <line>Pussy said to the owl,</line>
-                  <line>You elegant fowl!</line>
+                  <line>You elegant fowl! <note place="end">An endnote!</note></line>
                   <line>How marvellous sweet you <seg ana="music">sing</seg>!</line>
                   <line n="15">O let us be married,</line>
                   <line>Too long we have tarried!</line>
