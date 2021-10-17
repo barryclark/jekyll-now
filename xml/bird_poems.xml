@@ -3,12 +3,13 @@
 <collection xmlns="http://www.diegesis.net/ns/jhf">
     <header>
         <contributors>
-            <author xml:id="ogden_nash"></author>
+            <author xml:id="ogden_nash">Nash, Ogden</author>
+            <author xml:id="emily_dickinson">Dickinson, Emily</author>
         </contributors>
         <date>2021-10-14</date>
         <topics>
-            <topic xml:id="eggs">Anything related to eggs</topic>
-            <topic xml:id="poultry">Anything related to poultry</topic>
+            <topic label="Egg-related" xml:id="eggs">Anything related to eggs</topic>
+            <topic label="Poultry-related" xml:id="poultry">Anything related to poultry</topic>
         </topics>
     </header>
     <poem type="stanzaic" by="#ogden_nash" topic="#eggs #poultry"> 

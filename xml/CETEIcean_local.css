@@ -3,22 +3,34 @@ jhf-header {
     background-color:aqua;
     font-style:italic;
     font-family:arial, helvetica, sans-serif;
+    border-bottom:thin blue solid;
 }
 jhf-topic {
     display:block;
 }
+
+jhf-topic:before {
+    content:attr(label);
+}
+
+jhf-author:before {
+    content: "By ";
+}
+
 jhf-poem {
     display:block;
     background-color:gray;
 }
 jhf-poem > jhf-line {
     display:block;
-    background-color: purple;
 }
 
 jhf-stanza > jhf-line {
     display:block;
-    background-color: purple;
+}
+
+jhf-stanza {
+    margin-bottom: 1em;
 }
 
 /* Styles for eggs_jhf.xml */
