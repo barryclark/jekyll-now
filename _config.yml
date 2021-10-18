@@ -3,13 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Maxwell R&D | Engineering Blog
+name: R&D | Engineering Blog
 
 # Short bio or description (displayed in the header)
 description: Learnings, ideas, and stories from the team that designs and builds Maxwell. 
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/maxwell_m.png
 
 #
 # Flags below are optional
