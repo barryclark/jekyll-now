@@ -4,7 +4,9 @@
 //
 
 // Colors
-$blue: #4183C4;
+$theme: #358550;
+$theme_dark: #1B4533;
+$theme_light: #98EDB1;
 
 // Grays
 $black: #000;
@@ -19,6 +21,7 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 $founderGroteskRegular: "FoundersGroteskRegular", Helvetica, Arial, sans-serif;
+$tiemposHeadlineRegular: "TiemposHeadlineRegular", Times New Roman, serif;
 
 // Mobile breakpoints
 @mixin mobile {

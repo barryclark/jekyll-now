@@ -1,0 +1,43 @@
+.hero {
+    position: relative;
+    background-image: url("/images/maxwell-header.png");
+    background-color: $theme_dark;
+    height: 162px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mobile {
+        background-position: left;
+    }
+}
+.site-info {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    @include mobile {
+        padding-top: 0.8rem;
+    }
+}
+
+.site-name {
+    text-align: center;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: $tiemposHeadlineRegular;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 1px;
+    a:hover {
+        color: $theme_light;
+    }
+}
+
+.site-description {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 16px;
+
+    @include mobile {
+        margin: 3px 0;
+    }
+}
