@@ -1,43 +1,53 @@
 .hero {
     position: relative;
-    background-image: url("/images/maxwell-header.png");
-    background-color: $theme_dark;
-    height: 162px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include mobile {
-        background-position: left;
-    }
 }
 .site-info {
     width: 100%;
     margin: 0 auto;
     position: absolute;
+    top: 0;
+    left: 0;
     @include mobile {
-        padding-top: 0.8rem;
+        padding-top: 0.9rem;
+    }
+}
+
+.site-logo{
+    width: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include mobile {
+        width: 50px;
     }
 }
 
 .site-name {
+    position: absolute;
+    width: 100%;
+    margin: 4rem auto;
     text-align: center;
-    cursor: pointer;
-    color: whitesmoke;
+    color: $theme_dark;
     font-family: $tiemposHeadlineRegular;
     font-weight: 300;
     font-size: 28px;
     letter-spacing: 1px;
-    a:hover {
-        color: $theme_light;
+    @include mobile {
+        font-size: 22px;
+        margin: 1rem auto;
     }
 }
 
 .site-description {
+    position: absolute;
+    width: 100%;
+    margin: 7rem auto;
     text-align: center;
-    color: whitesmoke;
-    font-size: 16px;
+    color: black;
+    font-size: 18px;
 
     @include mobile {
-        margin: 3px 0;
+        margin: 3rem auto;
     }
 }
