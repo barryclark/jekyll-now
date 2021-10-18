@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "hero";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -31,7 +32,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $founderGroteskRegular;
+  font-family: $tiemposHeadlineRegular;
   color: $darkerGray;
   font-weight: bold;
 
@@ -69,11 +70,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $theme;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $theme;
   }
 }
 
@@ -193,36 +194,6 @@ img {
   }
 }
 
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: Arial;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
@@ -245,7 +216,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $theme;
     }
   }
 }
@@ -304,4 +275,8 @@ footer {
 @font-face {
   font-family: "FoundersGroteskRegular";
   src: url("../fonts/FoundersGrotesk-Regular.otf");
+}
+@font-face {
+  font-family: "TiemposHeadlineRegular";
+  src: url("../fonts/TiemposHeadline-Regular.otf");
 }
