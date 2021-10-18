@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $founderGroteskRegular;
   color: $darkGray;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $founderGroteskRegular;
   color: $darkerGray;
   font-weight: bold;
 
@@ -207,7 +207,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: Arial;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -226,7 +226,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $founderGroteskRegular;
   font-size: 18px;
 
   @include mobile {
@@ -300,3 +300,8 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+@font-face {
+  font-family: "FoundersGroteskRegular";
+  src: url("../fonts/FoundersGrotesk-Regular.otf");
+}
