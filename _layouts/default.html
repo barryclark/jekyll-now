@@ -11,8 +11,9 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    {% include animated-illustration-header.html %}
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
   </head>
 
   <body>
@@ -20,8 +21,10 @@
       <div class="container">
         <header class="masthead clearfix">
           <div class="hero">
+              {% include animated-illustration.html %}
               <div class="site-info">
-                  <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                  <a href="{{ site.baseurl }}/"><img class="site-logo" src="/images/maxwell-logo-dark-green.png"/></a>
+                  <h1 class="site-name">{{ site.name }}</h1>
                   <p class="site-description">{{ site.description }}</p>
               </div>
           </div>
@@ -49,4 +52,5 @@
 
     {% include analytics.html %}
   </body>
+  {% include animated-illustration-footer.html %}
 </html>
