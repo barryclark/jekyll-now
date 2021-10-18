@@ -6,8 +6,6 @@ author_name: Rutul Davè
 author_github_username: stockandawe
 ---
 
-![Maxwell Illustration](/images/posts/introducing-blog.png)
-
 Earlier this year when we introduced [Maxwell's operating principles](https://himaxwell.com/resources/blog/introducing-maxwells-operating-principles/){:target="_blank"},
 we highlighted the idea of the ["bicycle of the mind"](https://www.youtube.com/watch?v=KmuP8gsgWb8&ab_channel=k0rthaj){:target="_blank"}. For us at Maxwell,
 the "bicycle of the mind" captures the role of technology as a whole to amplify human ability to spectacular magnitudes.
