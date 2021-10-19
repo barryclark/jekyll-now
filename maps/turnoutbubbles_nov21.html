@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Travis County 2021 Election Voter Turnout</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+<style>
+    body { margin: 0; padding: 0; }
+
+    h2,
+      h3 {
+        margin: 10px;
+        font-size: 1.2em;
+      }
+      h3 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.85em;
+        margin: 10px;
+        text-align: left;}
+
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        /**
+    * Set rules for how the map overlays
+    * (information box and legend) will be displayed
+    * on the page. */
+    #menu {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 20px;
+        left: 20px;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    #menu a:last-child {
+        border: none;
+    }
+
+    #menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+    }
+
+    #menu a.active:hover {
+        background: #3074a4;
+    }
+    .map-overlay {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.8);
+      margin-right: 20px;
+      font-family: Arial, sans-serif;
+      overflow: auto;
+      border-radius: 3px;
+    }
+
+    #features {
+        top: 0;
+        height: 115px;
+        margin-top: 20px;
+        width: 325px;
+      }
+    #maplegend {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        margin-bottom: 40px;
+      }
+      .maplegend-key {
+        display: inline-block; 
+        width: 25px;
+        height: 10px;
+        margin-right: 5px;
+      }
+    #legend {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 130;
+        margin-bottom: 40px;
+        width: 120px;
+      }
+      .legend-key {
+        display: inline-block;
+        border-radius: 20%;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+      }
+
+       /* Popup styling */
+
+    .mapboxgl-popup {
+      padding-bottom: 5px;
+    }
+
+    .mapboxgl-popup-close-button {
+      display: none;
+    }
+
+    .mapboxgl-popup-content {
+      font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+      padding: 0;
+      width: 250px;
+    }
+
+    .mapboxgl-popup-content-wrapper {
+      padding: 1%;
+    }
+
+    .mapboxgl-popup-content h3 {
+      background: rgb(61, 59, 59);
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      display: block;
+      padding: 15px;
+      font-weight: 700;
+      margin-top: -5px;
+    }
+
+    .mapboxgl-popup-content h4 {
+      margin: 0;
+      display: block;
+      padding: 10px 3px 10px 10px;
+      font-weight: 400;
+    }
+    .mapboxgl-container {
+      cursor: pointer;
+    }
+
+    .mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
+      margin-top: 3px;
+    }
+
+    .mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
+      border-bottom-color: rgb(61, 59, 59);
+    }
+
+</style>
+<nav id="menu"></nav>
+</head>
+<body>
+<div id='map'></div>
+<div class='map-overlay' id='features'><h2>Travis County 2021 Voter Turnout</h2>
+    <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
+        <div id='pd2'><p>UNOFFICIAL - Through End of Early Voting</p></div></div></div>
+    
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxpZTIzNDMiLCJhIjoiY2tnaWlnOTRyMGk5djJybGYzaThqeXQzdyJ9.kRWf1VawXRygKy2w7hNT1w';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/charlie2343/ckgjy2anp1kbm1amvehn0h1ql',
+        center: [-97.747875,30.268937],
+        zoom: 10
+    });
+    var hoveredStateId = null;
+
+    // disable map rotation using right click + drag
+    map.dragRotate.disable();
+ 
+    // disable map rotation using touch rotation gesture
+    map.touchZoomRotate.disableRotation();
+
+    map.on('load', function () {
+        map.addSource('precincts', {
+            'type': 'geojson',
+            'data':
+                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Travis%20County%20Turnout%20Nov%2021.geojson'
+        });
+
+        map.addSource('markers', {
+            'type': 'geojson',
+            'data':
+                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Precinct%20Markers%20nov%2021.geojson'
+        });
+
+        map.addLayer({
+            'id': 'fills',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'visible'},
+            'paint': {
+                'fill-color': "#BABAB9",
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.5
+            }
+
+        },
+        'waterway-label'
+        );
+
+        map.addLayer({
+            'id': 'Votes Cast',
+            'type': 'circle',
+            'source': 'markers',
+            'layout': {'visibility':'visible'},
+            'paint': {
+                'circle-color': "#fddd28",
+                'circle-stroke-color' : "#a5911d",
+                'circle-opacity': 0.25,
+                'circle-stroke-opacity': 0.90,
+                'circle-stroke-width': 1,
+                'circle-radius': [
+                'interpolate',
+                ['linear'],
+                ['get','Votes_Total'],
+                0,
+                1,
+                13000,
+                50]
+            }
+
+        },
+        'waterway-label'
+        );
+
+        map.addLayer({
+            'id': 'Votes Not Cast',
+            'type': 'circle',
+            'source': 'markers',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'circle-color': "#22A6F9",
+                'circle-stroke-color' : "#1873AD",
+                'circle-opacity': 0.25,
+                'circle-stroke-opacity': 0.90,
+                'circle-stroke-width': 1,
+                'circle-radius': [
+                'interpolate',
+                ['linear'],
+                ['get','Potential_Votes'],
+                0,
+                1,
+                13000,
+                50]
+            }
+
+        },
+        'waterway-label'
+        );             
+        
+    }
+    );
+
+var toggleableLayerIds = ['Votes Cast', 'Votes Not Cast'];
+for (var i = 0; i < toggleableLayerIds.length; i++) {
+    var id = toggleableLayerIds[i];
+
+    var link = document.createElement('a');
+    link.href = '#';
+
+    if (id === 'Votes Cast') {
+      link.className = 'active';
+    }
+    else {
+      link.className = '';
+    }
+    link.textContent = id;
+
+    link.onclick = function (e) {
+        var clickedLayer = this.textContent;
+        e.preventDefault();
+        e.stopPropagation();
+
+
+        for (var j = 0; j<toggleableLayerIds.length; j++){
+          var id2 = toggleableLayerIds[j];
+          map.setLayoutProperty(id2, 'visibility', 'none');
+          document.getElementById("menu").childNodes[j].className = ''
+        }
+
+        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+        if (visibility === 'visible') {
+            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+        }
+    };
+
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
+}
+
+
+
+</script>
+
+</body>
+</html>
