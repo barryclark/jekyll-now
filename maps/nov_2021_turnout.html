@@ -140,7 +140,7 @@
         map.addSource('precincts', {
             'type': 'geojson',
             'data':
-                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Travis%20County%20Turnout.geojson'
+                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Travis%20County%20Turnout%20Nov%2021.geojson'
         });
         map.addLayer({
             'id': 'fills',
@@ -154,13 +154,13 @@
                 ['get','Turnout'],
                 0,
                 '#edf8e9',
-                0.10,
+                0.02,
                 '#bae4b3',
-                0.20,
+                0.04,
                 '#74c476',
-                0.30,
+                0.06,
                 '#31a354',
-                0.40,
+                0.08,
                 '#006d2c'],
                 'fill-outline-color' : "#f2f2f2",
                 'fill-opacity': 0.75
@@ -171,11 +171,11 @@
         );
 
         var legendlayers = [
-              '0-10%', 
-              '10-20%', 
-              '20-30%', 
-              '30-40%', 
-              '40-100%', 
+              '0-2%', 
+              '2-4%', 
+              '4-6%', 
+              '6-8%', 
+              '8-100%', 
             ];
             var colors = [
               '#edf8e9', 
