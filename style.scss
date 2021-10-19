@@ -38,12 +38,12 @@ body {
 
 code {
   font-family: $Monospace;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $SmallCaps;
+  font-family: $Headings;
   color: $lightForeground;
   font-weight: normal;
   font-kerning: auto;
@@ -227,7 +227,7 @@ figcaption {
   margin: 0;
   color: $lightForeground;
   cursor: pointer;
-  font-family: $SmallCaps;
+  font-family: $Headings;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -246,7 +246,7 @@ figcaption {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $SmallCaps;
+  font-family: $Headings;
   font-size: 18px;
 
   @include mobile {
