@@ -70,11 +70,9 @@ Click on Add App
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage14.png)
 
-Browse to the executable for the relevant application. For any browser based applications you will need to select the browser. You will add the URL in the next step.
+Browse to the executable for the relevant application. For any browser based applications you will need to select the browser. Once you have selected your browser fill in the details similar to below. Change the instance name to your Connect instance name and click Save and then Next.
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage15.png)
-
-Once you have selected your browser fill in the details similar to below. Change the instance name to your Connect instance name and click Next
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage16.png)
 
