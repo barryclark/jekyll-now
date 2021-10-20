@@ -16,7 +16,7 @@ Amazon Lex is natively integrated within contact flows, routing, and chat allowi
 
 ## Creating a Simple Bot ##
 
-To get started you need to login into the AWS Management Console and select the Lex service. This can be found under Machine Learning. Later I will be using Connect in Frankfurt (EU-CENTRAL-1) so I'm going to deploy my Lex bot in Frankfurt as well. With the recent upgrades to Connect UI it is no longer important that both are in same region as can select the region when whitelisting within Connnect.
+To get started you need to login into the AWS Management Console and select the Lex service. This can be found under Machine Learning. Later I will be using Connect in Frankfurt (EU-CENTRAL-1) so I'm going to deploy my Lex bot in Frankfurt as well. With the recent upgrades to Connect UI it is no longer important that both are in same region as can select the region when whitelisting within Connect.
 
 ![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-Lex/BlogImageConsole.png)
 
