@@ -7,7 +7,9 @@ title: "Securing SSH"
 Quick how-to secure your ssh on linux server.
 ## Instructions
 
-1. ##Adduser userName   
+1. First add user
+// sudo adduser <UserName>
+
 
  
 
