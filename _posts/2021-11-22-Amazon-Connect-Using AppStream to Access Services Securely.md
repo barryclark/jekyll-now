@@ -91,7 +91,7 @@ Once your application has successfully launched click on the Continue button. Ap
 
 Once you are happy with all the changes click on Disconnect and Create Image.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage21.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage21.png)
 
 We now need to go back to AppStream 2.0 console to complete the setup of the Fleet and Stack.
 
@@ -101,29 +101,29 @@ A Fleet is used to configure how many streaming instances are required to servic
 
 In the menu select Fleets and click Create Fleet
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage23.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage23.png)
 
 Fill in the Fleet details
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage25.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage25.png)
 
 Select the correct image that you want to associate with the Fleet
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage26.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage26.png)
 
 Configure the Fleet to match your requirements depending on environment. As this is for test I'm going to select General purpose small instance and on demand billing. You also configure the time out sessions for your users.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage27.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage27.png)
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage28.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage28.png)
 
 You now need to set size of your fleet. The Minimum capacity should be set to min number of users you expect to use the application at one time. The max number of users should be set to total number of users. The desired capacity should be equal or greater than your min capacity.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage29.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage29.png)
 
 Final step is to add the Fleet to the relevant VPC.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage30.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage30.png)
 
 ## Create Stack ##
 
@@ -131,19 +131,19 @@ In AppStream 2.0 a stack is used to implement policies on how our agents interac
 
 In the menu select Stack and click Create Stack.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage31.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage31.png)
 
 Fill in the Stack name details and associate to the fleet you created in previous step.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage32.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage32.png)
 
 Configure any storage requirements that you want to enable for your agents.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage33.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage33.png)
 
 Enable or disable clipboard, file transfer, printing and application setting persistence depending on your security team requirements.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage34.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-Connect-AppStream/BlogImage34.png)
 
 If you don't have Active Directory you can use User Pools to test. Within AppStream 2.0 User Pools add your user and email address. You associate the user to the stack. They will get email from AppStream 2.0 will initial password and secure URL to the created application.
 
