@@ -2,6 +2,9 @@
     position: relative;
     height: 235.753px;
     background-color: #E5FAEB;
+    @include mobile {
+        height: 122.17px;
+    }
 }
 .site-info {
     width: 100%;
