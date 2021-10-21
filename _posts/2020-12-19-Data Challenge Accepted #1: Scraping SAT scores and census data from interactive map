@@ -28,6 +28,7 @@ Carpinteria Senior High,SAT,1069,2016,-1,-1,Note: California no longer releases 
 Fillmore Senior High,SAT,1022,2016,-1,-1,Note: California no longer releases SAT averages.,34.403654,-118.914785,,No,No,788,406,NSLPPRO2
 Santa Paula High,SAT,978,2016,-1,-1,Note: California no longer releases SAT averages.,34.356329,-119.070484,,No,No,1386,660,NSLPCEO
 ```
+
 Here is the head of one of the json files,
 
 ```json
@@ -113,10 +114,10 @@ $ jq -r '.features | length' *.json | awk '{ SUM += $1} END { print SUM }'
 ```
 The merging appears to be successful. The last file in the directory has 3356 'features:' values which is the sum of the rest, given that 6712 is 2 * 3356. 
 
-To more completely check we can look at the distribution of some values in the data later when we are exploring.
+As another check I plotted a map of the data during exploration and checked that all rows were unique once they were in dataframes.
 
 # Wrangling
-Next I load these merged files in R to join the csv and json data into a dataframe to prepare it for exploration and analysis.
+Next I loaded these merged files in R to join the csv and json data into a dataframe for exploration and analysis.
 
 ## Loading Data
 The csv and json files can be quickly loaded in R.
@@ -156,6 +157,8 @@ Result 1
 Result 2
 
 Result 3
+
+__ % of the variation in SAT scores is explained by median household income of the census tract the school is in. Correlation is not causation, but it does give one pause to consider why this might be true.
 
 kop _crushton
  
