@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -11,9 +11,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    {% include animated-illustration-header.html %}
-
-
   </head>
 
   <body>
@@ -23,7 +20,7 @@
           <div class="hero">
               {% include animated-illustration.html %}
               <div class="site-info">
-                  <a href="{{ site.baseurl }}/"><img class="site-logo" src="/images/maxwell-logo-dark-green.png"/></a>
+                  <a href="{{ site.baseurl }}/"><img alt="" class="site-logo" src="/images/maxwell-logo-dark-green.png"/></a>
                   <h1 class="site-name">{{ site.name }}</h1>
                   <p class="site-description">{{ site.description }}</p>
               </div>

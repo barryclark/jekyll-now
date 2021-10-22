@@ -1,3 +1,20 @@
-<script type="text/javascript" src="https://himaxwell.net/wp-content/themes/Maxwell/resources/js/parts/cali2.js?ver=5.8.1" id="maxwell-lottie2-js"></script>
-<script type="text/javascript" src="https://himaxwell.net/wp-content/themes/Maxwell/resources/js/parts/sw2.js?ver=5.8.1" id="maxwell-lottie4-js"></script>
-<script type="text/javascript" src="https://himaxwell.net/wp-content/themes/Maxwell/resources/js/parts/ne2.js?ver=5.8.1" id="maxwell-lottie6-js"></script>
+<script  type="text/javascript">
+  function loadScript(url)
+  {
+    // adding the script element to the head as suggested before
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+    script.async = true;
+
+    // fire the loading
+    head.appendChild(script);
+  }
+  document.addEventListener("DOMContentLoaded", function(){
+    loadScript('js/cali1.js')
+    loadScript('js/cali2.js')
+    loadScript('js/sw1.js')
+    loadScript('js/ne1.js')
+  });
+</script>
