@@ -89,61 +89,61 @@ I will walk you through the Advanced Setup where we will leverage Simple AD Dire
 
 Directory Services will launch. You want to select Simple AD and then click Next.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage6.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage6.png)
 
 Select Small directory, gave it a name as well as a DNS name. The DNS name does not need to be publically resolveable.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage7.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage7.png)
 
 Enter the local administrator password and description for the directory. Then click Next.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage8.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage8.png)
 
 Next select the relevant VPC and private subnets. If you have existing directory service in a shared services account, it is best practice to peer that VPC with your new WorkSpaces VPC.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage9.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage9.png)
 
 Review the configuration and then select Create Directory.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage10.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage10.png)
 
 Once the directory is finished creating it will show similar to below in WorkSpaces. Before we can use the directory it must be registered. Select the directory and click on Actions then Register
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage11.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage11.png)
 
 Select your two private subnets and if you want to enable Self-Service and WorkDocs. Then click on Register. The status of the directory will change to Active and Yes.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage12.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage12.png)
 
 Next go to WorkSpaces and click Launch WorkSpaces.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage13.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage13.png)
 
 You want to select the directory from the dropdown that contains the users you want to use. Click on the Next Step and the users screen will open where we can add new users to the Directory or select existing users from the Directory.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage14.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage14.png)
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage15.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage15.png)
 
 Once you have selected the users, click Next Step.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage16.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage16.png)
 
 Select the WorkSpace operating system, CPU and memory requirements to match your needs.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage17.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage17.png)
 
 Modify the root volume and user volume to your needs or keep the default. Click on Next Step to Continue.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage18.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage18.png)
 
 Select the type of billing you require and turn on encryption for root and user volumes. **N.B If turning on encryption select /alias/aws/workspaces or you will get error that users cannot access the key.**
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage19.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage19.png)
 
 Review configuration and click on Launch WorkSpaces to create the individual WorkSpace.
 
-[_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage20.png)
+![_config.yml]({{ site.baseurl }}/images/blog/Amazon-WorkSpaces-Intro/BlogImage20.png)
 
 That is all there is to creating the WorkSpace. The users will receive an email with instructions on where to download the WorkSpaces client and how to connect once the WorkSpace has been provisioned.
 
