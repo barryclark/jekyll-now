@@ -148,7 +148,7 @@ Review configuration and click on Launch WorkSpaces to create the individual Wor
 That is all there is to creating the WorkSpace. The users will receive an email with instructions on where to download the WorkSpaces client and how to connect once the WorkSpace has been provisioned.
 
 
-**N.B Delete all WorkSpace created, once finished testing. Also deregister the Directory Service, remove the WorkDocs association if you enabled before you delete the Simple AD to stop incurring unnecessary costs.**
+**N.B Delete all WorkSpace created, once finished testing. Also deregister the Directory Service, remove the WorkDocs association by going to WorkDocs within the Console. You will need to carry out these steps before you can delete the Simple AD otherwise you will get application association warnings.**
 
 ## Conclusion ##
 
