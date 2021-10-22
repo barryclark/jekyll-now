@@ -3,14 +3,14 @@ layout: default
 ---
 
 <article class="post">
-  <h1 style="font-size:170%">{{ page.title | markdownify }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
+  <h1 class="page-title">{{ page.title | markdownify }}</h1>
 
   <div class="date">
     Posted {{ page.date | date: "%Y-%m-%d" }}
+  </div>
+
+  <div class="entry">
+    {{ content }}
   </div>
 
   <div>

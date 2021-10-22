@@ -59,10 +59,19 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 24px;//orig 30px
+  font-weight: 900;
   a {
     color: inherit;
     text-decoration: none;
   }
+}
+// style for the site name
+h1.site-name {
+  font-family: $Gothic;
+}
+// style for the blog post title
+h1.page-title {
+  font-family: $Gothic;
 }
 
 h2 {
@@ -151,6 +160,8 @@ figcaption {
 .date {
   font-style: italic;
   color: $gray;
+  font-size: 0.85em;
+  text-align: right;
 }
 
 // Specify the color of the selection
