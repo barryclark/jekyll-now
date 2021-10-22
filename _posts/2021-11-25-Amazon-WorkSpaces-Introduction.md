@@ -2,7 +2,7 @@
 layout: post
 title: Amazon WorkSpaces - Introduction to Desktop as a Service (DaaS)
 ---
-## Introduction - What is Desktop as a Service (DaaS)##
+## Introduction - What is Desktop as a Service (DaaS) ##
 
 Desktop as a Service (DaaS) provides desktop services via a public or private cloud service. It is essential a virtual desktop infrastructure (VDI) that a third party provider manages. The third party service provider assumes the responsibility for managing the desktop infrastructure. The DaaS on offer from AWS is called Amazon WorkSpaces. In this post I’m going to discuss some of WorkSpaces features and benefits. After that I will walk you through how to get started with WorkSpaces in your account.
 
