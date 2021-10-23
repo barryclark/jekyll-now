@@ -33,7 +33,37 @@ Ha hecho cosas como: <a href="https://ladonacion.es/" target="_blank">https://la
 
 Si queréis podéis colaborar a que pueda  continuar con su trabajo: <a href="https://www.patreon.com/jaime_gomez_obregon" target="_blank">https://www.patreon.com/jaime_gomez_obregon</a> 
 
-Aquí puedes ver lo que opinan los asistentes sobre la charla: <a href="https://twitter.com/search?q=%23tarugo21%20%40jaimeobregon&src=typed_query" target="_blank">https://twitter.com/search?q=%23tarugo21%20%40jaimeobregon&src=typed_query</a> 
+Aquí puedes ver lo que comentaban los asistentes: <a href="https://twitter.com/search?q=%23tarugo21%20%40jaimeobregon&src=typed_query" target="_blank">https://twitter.com/search?q=%23tarugo21%20%40jaimeobregon&src=typed_query</a> 
 
 
+
+#
+# Palabras Mágicas
+
+![EvaJaneiro_Tarugo.jpeg]({{ site.baseurl }}/images/2021-10-23-TarugoConf-2021/EvaJaneiro_Tarugo.jpeg) 
+
+Después descubrí el UX Writing de la mano de  <a href="https://twitter.com/evajaneirouxw" target="_blank">https://twitter.com/evajaneirouxw</a> y lo importante de la escritura y el impacto que tiene en todo lo que hacemos en el software.  
+
+Algunas cosas parecen obvias cuando las escuchas pero no aplicamos correctamente en la mayoría de los casos.
+
+
+Aquí puedes ver lo que comentaban los asistentes: <a href="https://twitter.com/search?q=%23tarugo21%20%40EvaJaneiroUXW&src=typed_query" target="_blank">https://twitter.com/search?q=%23tarugo21%20%40EvaJaneiroUXW&src=typed_query</a> 
+
+#
+# Cómo construir tu propio páncreas
+
+![AntonioSantos_Tarugo.jpeg]({{ site.baseurl }}/images/2021-10-23-TarugoConf-2021/AntonioSantos_Tarugo.jpeg)
+
+Gracias a <a href="https://twitter.com/wottam" target="_blank">https://twitter.com/wottam</a> he conocido la historia de como con tecnología open source se pueden salvar vidas.  
+Es muy inspirador conocer la historia de como nació el primer páncreas open source para diabéticos de la mano de <a href="https://twitter.com/jcostik" target="_blank">@jcostik</a> <a href="https://twitter.com/danamlewis" target="_blank">@danamlewis</a>  y <a href="https://twitter.com/scottleibrand" target="_blank">@scottleibrand</a>
+
+Además pudimos ver como regulaba la insulina de @wottam en directo ¡Impresionante!  
+Te dejo los links relacionados con su charla: <a href="https://linktr.ee/tarugoconf" target="_blank">https://linktr.ee/tarugoconf</a>
+
+Aquí puedes ver lo que comentaban los asistentes: <a href="https://twitter.com/search?q=%23tarugo21%20%40wottam&src=typed_query" target="_blank">https://twitter.com/search?q=%23tarugo21%20%40wottam&src=typed_query</a>
+
+
+
+
+<a href="" target="_blank"></a>
 
