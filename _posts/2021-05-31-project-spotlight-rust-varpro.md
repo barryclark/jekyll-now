@@ -3,6 +3,7 @@ layout: post
 tags: rust varpro
 #categories: []
 date: 2021-05-27
+last_updated:
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:

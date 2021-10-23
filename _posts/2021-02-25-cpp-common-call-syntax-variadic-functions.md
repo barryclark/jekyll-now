@@ -3,6 +3,7 @@ layout: post
 tags: rust template-metaprogramming generic-programming c++ c++17
 #categories: []
 date: 2021-02-25
+last_updated:
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:

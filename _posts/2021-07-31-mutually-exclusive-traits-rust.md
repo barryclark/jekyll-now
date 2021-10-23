@@ -3,6 +3,7 @@ layout: post
 tags: rust
 #categories: []
 date: 2021-07-31
+last_updated:
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
