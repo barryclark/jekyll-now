@@ -24,7 +24,7 @@ Descubres cómo se está usando la tecnología, para qué se puede usar y cómo 
 
 ![JaimeObregon_Tarugo.jpeg]({{ site.baseurl }}/images/2021-10-23-TarugoConf-2021/JaimeObregon_Tarugo.jpeg) 
 
-Este año he descubierto a <a href="https://twitter.com/JaimeObregon" target="_blank">https://twitter.com/JaimeObregon</a> y como está aportando transparencia a la administración pública sin trabajar para ella.
+Este año he descubierto a <a href="https://twitter.com/JaimeObregon" target="_blank">https://twitter.com/JaimeObregon</a> y cómo está aportando transparencia a la administración pública sin trabajar para ella.
 Esta haciendo un trabajo de investigación, periodismo y de servicio a la comunidad que es impresionante.
 
 Todos sus análisis están hechos con datos públicos. Muchas veces no son fáciles de conseguir, pero son públicos.
@@ -54,16 +54,117 @@ Aquí puedes ver lo que comentaban los asistentes: <a href="https://twitter.com/
 
 ![AntonioSantos_Tarugo.jpeg]({{ site.baseurl }}/images/2021-10-23-TarugoConf-2021/AntonioSantos_Tarugo.jpeg)
 
-Gracias a <a href="https://twitter.com/wottam" target="_blank">https://twitter.com/wottam</a> he conocido la historia de como con tecnología open source se pueden salvar vidas.  
+Gracias a <a href="https://twitter.com/wottam" target="_blank">@wottam</a> he conocido la historia de como con tecnología open source se pueden salvar vidas.  
 Es muy inspirador conocer la historia de como nació el primer páncreas open source para diabéticos de la mano de <a href="https://twitter.com/jcostik" target="_blank">@jcostik</a> <a href="https://twitter.com/danamlewis" target="_blank">@danamlewis</a>  y <a href="https://twitter.com/scottleibrand" target="_blank">@scottleibrand</a>
 
-Además pudimos ver como regulaba la insulina de @wottam en directo ¡Impresionante!  
+Además pudimos ver como regulaba la insulina de <a href="https://twitter.com/wottam" target="_blank">@wottam</a> en directo.  
+¡Impresionante!  
 Te dejo los links relacionados con su charla: <a href="https://linktr.ee/tarugoconf" target="_blank">https://linktr.ee/tarugoconf</a>
 
 Aquí puedes ver lo que comentaban los asistentes: <a href="https://twitter.com/search?q=%23tarugo21%20%40wottam&src=typed_query" target="_blank">https://twitter.com/search?q=%23tarugo21%20%40wottam&src=typed_query</a>
 
+#
+# Cómo hacer las Américas en 2021
+
+![Americas_Tarugo.jpeg]({{ site.baseurl }}/images/2021-10-23-TarugoConf-2021/Americas_Tarugo.jpeg) 
+
+No pude estar atento a la charla que dieron <a href="https://twitter.com/varisb" target="_blank">@varisb</a> y <a href="https://twitter.com/diegoteca" target="_blank">@diegoteca</a> porque ya tenía a mis hijos con el "¿y esto cuándo acaba?"   
+
+Me quedo con los aprendizajes que resumió : <a href="https://twitter.com/javilopezcam" target="_blank">@javilopezcam</a>
+1. Sé humilde y escucha.
+2. Intégrate. Vé para allá.
+3. Déjate de prejuicios.
+4. Cultiva relaciones personales.
+5. Rodéate de buenos asesores.
+6. Y de quien ya lo haya hecho antes allí.
+7. Tropicaliza tu negocio.
+8. Latam es MUCHOS mercados.
+
+<a href="https://twitter.com/javilopezcam/status/1451609218801352712?s=20" target="_blank">https://twitter.com/javilopezcam/status/1451609218801352712?s=20</a>
+
+Aquí puedes ver lo que comentaban los asistentes:: <a href="https://twitter.com/search?q=%40diegoteca%20%20%20%40varisb%20%20%23tarugo21&src=typed_query" target="_blank">https://twitter.com/search?q=%40diegoteca%20%20%20%40varisb%20%20%23tarugo21&src=typed_query</a>
+
+#
+# La historia de la primera programadora de España
+
+![PazGimeno_Tarugo.jpeg]({{ site.baseurl }}/images/2021-10-23-TarugoConf-2021/PazGimeno_Tarugo.jpeg) 
+
+Y llegó el momento de conocer a Paz Gimeno. 
+
+Posiblemente sea la primera programadora española.  
+
+Puedes leer un poquito de su historia aquí: <a href="https://www.xataka.com/historia-tecnologica/yo-programaba-decada-60-asi-trabajaban-primeros-programadores-espana" target="_blank">https://www.xataka.com/historia-tecnologica/yo-programaba-decada-60-asi-trabajaban-primeros-programadores-espana</a>
+
+Tanto el reportaje como la entrevista que le han hecho la convierten en un referente de feminismo y liberad para las mujeres.  
+Siempre estuvo apoyada siempre por su familia y sobretodo por su marido ("ella era la especial y nunca alardeó de ello").
+
+Fue una entrevista emotiva, motivadora y descubrimos que ¡las informáticas también se jubilan!
+
+Puedes seguir el hilo resumen de la entrevista que hizo <a href="https://twitter.com/lauralacarra" target="_blank">@LauraLacarra</a> aquí: <a href="https://twitter.com/LauraLacarra/status/1451617164486746117" target="_blank">https://twitter.com/LauraLacarra/status/1451617164486746117</a>
+
+Y puedes leer los comentarios de los asistentes aquí: <a href="https://twitter.com/search?q=%23tarugo21%20paz%20gimeno&src=typed_query&f=top" target="_blank">https://twitter.com/search?q=%23tarugo21%20paz%20gimeno&src=typed_query&f=top</a> 
 
 
 
-<a href="" target="_blank"></a>
+#
+# Menores y Redes Sociales: la realidad que no conoces
+
+![Pablo_Tarugo.jpeg]({{ site.baseurl }}/images/2021-10-23-TarugoConf-2021/Pablo_Tarugo.jpeg) 
+
+Y llegó <a href="https://twitter.com/pduchement" target="_blank">@PDuchement</a> con un duro toque de realidad.
+
+La charla más dura de la Tarugo. 
+
+Necesaria y que te abre los ojos sobre la realidad entre menores, redes sociales y privacidad. La combinación perfecta para que haya problemas.
+
+Es una charla que debería ser obligatoria en todos los colegios desde primaria hasta la universidad....
+Y parece que no soy el único que lo piensa: <a href="https://twitter.com/PDuchement/status/1451676263018532866?s=20" target="_blank">https://twitter.com/PDuchement/status/1451676263018532866?s=20</a>
+
+Fue una charla que posiblemente no admitirían en otros eventos, pero ignorar el problema no hará que desaparezca.
+Tenemos mucho que aprender sobre menores y privacidad en las redes.
+Esta charla te da la mejor herramienta de control parental……… los padres.
+
+Aquí puedes ver lo que opinaban los asistentes: https://twitter.com/search?q=%23tarugo21%20%40PDuchement&src=typed_query
+
+
+#
+# Reportaje + charla sorpresa
+
+![Ousman_Tarugo.jpeg]({{ site.baseurl }}/images/2021-10-23-TarugoConf-2021/Ousman_Tarugo.jpeg) 
+
+Y cuando ya creíamos que terminaba la Tarugo……
+
+Conocimos la historia de <a href="https://twitter.com/ousmanumar" target="_blank">@ousmanumar</a> 
+
+Cualquier cosa que escriba no hace justicia a lo que está haciendo este hombre en Ghana. 
+
+Una charla inspiradora, motivadora y que demuestra que con ganas, constancia y esfuerzo de puede llegar a cambiar la vida de cientos de personas y algún día cambiar cambiar un país.
+
+Está resolviendo el problema de la pobreza y la inmigración desde la raíz, creando prosperidad y no dando caridad para todos sus compatriotas de Ganga.
+
+Si quieres saber que está haciendo aquí tienes su fundación: <a href="https://nascoict.org/" target="_blank">https://nascoict.org/</a> 
+
+¿Necesitas desarrolladores fullstack? búscalos en: <a href="https://nascoict.org/nascotech-es/" target="_blank">https://nascoict.org/nascotech-es/</a> 
+
+Todos los beneficios son para pagar a los desarrolladores y el resto se reinvierte en formar a más personas y en ayudar a todas la comunidad en todos los proyectos de sanidad, educación, mujer, medio ambiente, etc, que llevan desde la fundación.
+
+Algunas de sus frases en la Tarugo:
+"No hacemos caridad, creamos prosperidad"
+"Basta de alimentar estómagos, lo que hace falta es alimentar mentes"
+"Quiero que tengan educación y un sueldo digno"
+
+Twitter estaba volcado con su historia: https://twitter.com/search?q=%40ousmanumar%20%23tarugo21&src=typed_query
+
+
+#
+# ¿Ya sabes porque voy a la Tarugo? 
+
+Y después de todo esto ¿crees que he aprendido algo de tecnología? Yo sí y mucho.
+
+!Gracias Tarugo!
+
+Nos vemos en 1 año 
+
+P.D. La Jerocleta volvió a fallar...
+
 
