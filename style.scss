@@ -18,14 +18,14 @@ html {
 }
 
 body {
-	background: $darkBackground;
+	background: $backgroundColor;
   font: 19px/1.4 $Serif;
-  color: $lightForeground;
+  color: $foregroundColor;
   font-kerning: auto;
 
   @include mobile {
-    background: $darkBackground;
-    color: $lightForeground;
+    background: $backgroundColor;
+    color: $foregroundColor;
   }
 }
 
@@ -44,7 +44,7 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $Headings;
-  color: $lightForeground;
+  color: $foregroundColor;
   font-weight: normal;
   font-kerning: auto;
 
@@ -97,7 +97,7 @@ p {
 }
 
 a {
-  color: $lightForeground;
+  color: $foregroundColor;
   text-decoration: underline;
 	cursor: pointer;
   &:hover, &:active {
@@ -144,6 +144,8 @@ figure {
   padding: 4px;
   //margin: auto;
   max-width: 100%;
+  background-color: var(--dark-color); //images are designed for dark background
+  border-radius: 5px;
 }
 
 figcaption {
@@ -238,7 +240,7 @@ figcaption {
 
 .site-name {
   margin: 0;
-  color: $lightForeground;
+  color: $foregroundColor;
   cursor: pointer;
   font-family: $Headings;
   font-weight: 300;
@@ -248,7 +250,7 @@ figcaption {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $lightForeground;
+  color: $foregroundColor;
   font-size: 16px;
 
   @include mobile {
@@ -271,14 +273,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $lightForeground;
+    color: $foregroundColor;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $lightForeground;
+      color: $foregroundColor;
     }
   }
 }
@@ -320,7 +322,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid $separatorColor;
   border-bottom: 1px solid $separatorColor;
-  background-color: $darkBackground;
+  background-color: $backgroundColor;
 }
 
 footer {

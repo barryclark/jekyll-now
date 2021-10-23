@@ -8,7 +8,7 @@
 @import "variables.scss";
 
 div.highlight {
-  color: $lightForeground;
+  color: var(--bright-color);
   background-color: $codeBackground;
   padding: 7px 7px 7px 10px;
   //border: 1px solid #ddd;

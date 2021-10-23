@@ -6,7 +6,7 @@ layout: default
   <h1 class="page-title">{{ page.title | markdownify }}</h1>
 
   <div class="date">
-    Posted {{ page.date | date: "%Y-%m-%d" }}
+    Posted {{ page.date | date: "%Y-%m-%d" }} {%if page.last_updated %}, Last Updated {{page.last_updated | last_updated "Y%-%m-%d"}} {% endif %}
   </div>
 
   <div class="entry">

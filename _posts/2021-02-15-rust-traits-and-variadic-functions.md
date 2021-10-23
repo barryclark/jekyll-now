@@ -3,6 +3,7 @@ layout: post
 tags: rust template-metaprogramming generic-programming
 #categories: []
 date: 2021-02-15
+last_updated:
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
