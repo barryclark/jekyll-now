@@ -9,30 +9,30 @@ $darkRed: #A70000;
 
 // light and dark mode according to browser settings
 // see here: https://derekkedziora.com/blog/dark-mode-revisited
+// these are the colors for LIGHT MODE
 html { 
   --dark-color: #171717;
   --bright-color: #efe9ef;
   --background-color : var(--bright-color);
   --foreground-color : var(--dark-color);
+  --code-background : #d6d6d6;
 }
 
+// these are the colors for DARK MODE
 @media (prefers-color-scheme: dark) {
 	html {
 	--dark-color: #171717;
   --bright-color: #efe9ef;
   --background-color : var(--dark-color);
-  --foreground-color : var(--bright-color);	
+  --foreground-color : var(--bright-color);
+  --code-background : #282828;
   }
 }
 
 // Grays
 $black: #000;
-$darkerGray: rgb(133, 133, 133);
-$darkGray: rgb(163, 163, 163);
 $gray: rgb(128, 128, 128);
 $lightGray: rgb(204, 204, 204);
-$white: #fff;
-$codeBackground : #282828;
 
 $darkColor: var(--dark-color);
 $backgroundColor: var(--background-color);//#171717;
