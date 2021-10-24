@@ -8,8 +8,8 @@
 @import "variables.scss";
 
 div.highlight {
-  color: var(--bright-color);
-  background-color: $codeBackground;
+  color: var(--foreground-color);
+  background-color: var(--code-background);
   padding: 7px 7px 7px 10px;
   //border: 1px solid #ddd;
   //-moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
@@ -33,12 +33,12 @@ div.highlight {
 
 /*Comments*/
 .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
-  color: #928374;
-  font-style: italic;
+  color: #1d7ca1;
+  //font-style: italic;
 }
 /*Comment. Preproc*/
 .highlight .cp {
-  color: #fbf1c7;
+  color: var(--foreground-color);
   font-style: italic;
 }
 /*Name.Tag*/
@@ -51,7 +51,7 @@ div.highlight {
 }
 /*Punctuation*/
 .highlight .p, .highlight .pi {
-  color: #fbf1c7;
+  color: var(--foreground-color);
 }
 /*Generic.Inserted*/
 .highlight .gi {
@@ -86,44 +86,44 @@ div.highlight {
 }
 /*Strings*/
 .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #fbf1c7;
+  color: var(--foreground-color);
   font-style: italic;
 }
 /*String.Interpol*/
 .highlight .si {
-  color: #fbf1c7;
+  color: var(--foreground-color);
   font-style: italic;
 }
 /*String.Regex*/
 .highlight .sr {
-  color: #fbf1c7;
+  color: var(--foreground-color);
   font-style: italic;
 }
 /*String.Escape*/
 .highlight .se {
-  color: #fbf1c7;
+  color: var(--foreground-color);
 }
 /*Name.Namespace*/
 .highlight .nn {
-  color: #fbf1c7;
+  color: var(--foreground-color);
 }
 /*Name.Class*/
 .highlight .nc {
-  color: #fbf1c7;
+  color: var(--foreground-color);
 }
 /*Name.Constant*/
 .highlight .no {
-  color: #fbf1c7;
+  color: var(--foreground-color);
 }
 /*Name.Attribute*/
 .highlight .na {
-  color: #fbf1c7;
+  color: var(--foreground-color);
 }
 /*Numbers*/
 .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
-  color: #fbf1c7;
+  color: var(--foreground-color);
 }
 /*String.Symbol*/
 .highlight .ss {
-  color: #fbf1c7;
+  color: var(--foreground-color);
 }
