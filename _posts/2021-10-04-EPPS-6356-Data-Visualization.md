@@ -17,3 +17,6 @@ title: Data Science - Data Visualization
 
 [Data-Visualization-Assignment-4](https://minshimia.github.io/Data-Visualization/files/Assignment4.html)
 
+[Shiny-Apps-1](https://minshimia.shinyapps.io/part-1-code/?_ga=2.104875075.1723091339.1635220030-1378908856.1635220030)
+
+[Shiny-Apps-2](https://minshimia.shinyapps.io/ShinyVisualization/?_ga=2.104875971.1723091339.1635220030-1378908856.1635220030)
