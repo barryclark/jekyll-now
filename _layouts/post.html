@@ -10,7 +10,34 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }} by <a href="https://github.com/{{page.author_github_username}}">{{ page.author_name }}<img class="author-avatar" src="{{ page.author_avatar }}" /></a>
+    Written on {{ page.date | date: '%B %e, %Y' }} by
+    <a href="https://github.com/{{ page.author_github_username }}"
+      >{{ page.author_name }}<img class="author-avatar" src="{{ page.author_avatar }}"
+    /></a>
+  </div>
+
+  <hr />
+
+  <div class="join">
+    At Maxwell, we live our values (<a
+      href="https://himaxwell.com/resources/blog/introducing-maxwells-operating-principles/?utm_source=engineering-blog&utm_medium=blog&utm_campaign={{
+        page.title
+      }}&utm_id=engineering-blog"
+      target="_blank"
+      rel="noopener"
+      >ROCKS</a
+    >) everyday.
+    <strong
+      ><a
+        href="https://jobs.lever.co/himaxwell?utm_source=engineering-blog&utm_medium=blog&utm_campaign={{
+          page.title
+        }}&utm_id=engineering-blog"
+        target="_blank"
+        rel="noopener"
+      >
+        Come join us</a
+      ></strong
+    >.
   </div>
 
   {% include disqus.html %}
