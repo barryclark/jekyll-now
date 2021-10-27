@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 
 A post tracking the November 2021 Travis County voter turnout at a precinct-level.
 
-Last Update: Data through October 25th
+Last Update: Data through October 26th
 
 <!--more-->
 
