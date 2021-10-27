@@ -10,18 +10,22 @@ Checking whether third-party cookies are enabled has always been a game of whack
 
 ![](/images/posts/10-22-2021-checking-for-third-party-cookies-in-2021/cookies.jpeg)
 
+[Skip to the solution](#tldr--how-to-reliably-check-if-third-party-cookies-are-enabled-with-javascript)
+
 
 ## Introduction
 
-When working with iframes, one often needs to interact with third-party cookies. In situations where one's app is loading a third-party site into an iframe and requires third-party cookies to function, users will encounter a wholly broken experience.
+At Maxwell, we integrate with a lot of third-party clients. These clients occasionally require the use of an iframe for seamless integration. Often, these iframes have an authentication flow that requires the use of third-party cookies.
+
+We encountered a bug where one integration required the user to enable third-party cookies on their browser. To solve the UX issue this caused, we wanted to give the user a message indicating that they needed to enable third-party cookies before utilizing this integration.
 
 At first, it seems that the simplest approach is to use JavaScript to check that third-party cookies are enabled. We can then fail gracefully and give the user a chance to reconcile the issue.
 
-Upon further digging, however, we find that checking for third-party cookies is not entirely "easy." But it is doable, and we'll discuss how here.
+Unfortunately, as is often the case, what seems simple is not always easy. Most of the first solutions that pop up are hacky workarounds in the browser. But, it is possible to check for third-party cookies in a relatively pain-free way, and we'll discuss how here.
 
 ## Unreliable Techniques
 
-If one searches for ways to check for third-party cookies with JavaScript, they will find a plethora of techniques that are at best unreliable and at worst deprecated.
+If one searches for ways to check for third-party cookies with JavaScript, they will find a plethora of techniques that are at best unreliable, and at worst deprecated.
 
 ### What Makes a Technique Unreliable?
 
@@ -224,11 +228,19 @@ This page will accurately return the third-party cookie status for all major bro
 
 To check if this is working, we can run our application’s function (above) in Firefox Private browsing. We should see that cookies are _not_ enabled in Firefox Private browsing, but that cookies _are_ enabled in regular Firefox browsing.
 
+## Wrapping Up
+
+An important aspect of problem solving is to keep the core problem in mind and not let yourself get distracted. My favorite part of this solution is that it mostly exemplifies that approach: to check if we can set third-party cookies, we try to set a third-party cookie. No browser hacks or random NPM packages needed.
+
+Of course, I wouldn't call this solution "easy" in its conception, but it maintains simplicity in practice. And as we know is often the case, what seems simple is not always easy. 
+
+
+
 
 -----------
 
 
-## tl;dr -- Quick Start Instructions
+## tl;dr -- How To Reliably Check If Third-Party Cookies Are Enabled With JavaScript
 
 ### 1. Create an HTML page with the following contents 
 ```html
