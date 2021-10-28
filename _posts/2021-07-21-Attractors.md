@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strange attractors - Does probability exist ?
+title: Strange attractors and probability Theory
 comments: True
 share: True
 ---
