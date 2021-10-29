@@ -9,13 +9,18 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date">
+  <div style="margin-bottom: 32px;"></div>
+
+  <div class="date" style="font-style: 15px; margin-bottom: 8px;">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   {% if page.share %}
     {% include share.html %}
   {% endif %}
+
+  <div style="margin-bottom: 64px;"></div>
+
   <div style="padding: 20px;"></div>
   {% if page.comments %}
     {% include comments.html %}

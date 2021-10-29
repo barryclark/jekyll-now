@@ -1,12 +1,14 @@
 /* Share Bar */
 .share-bar {
-  font-size: 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
 }
 
 /* Title */
 .share-bar h3 {
-  margin-bottom: 5px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 100;
   float: left;
 }
 
@@ -19,7 +21,7 @@
   display: inline-flex;
   align-items: center;
   padding: 3px 10px 2px 8px;
-  margin: 10px;
+  margin: 0 0 0 8px;
   color: #fff;
   background-color: #333;
   border-radius: 2px;
