@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tutorial | Creating a Form With React + Redux
+title: Tutorial | Creating a form With react + redux
 comments: True
 share: True
 ---

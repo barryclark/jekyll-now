@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animating a 3D scatterplot With Matplotlib
+title: Animating a 3D scatterplot with matplotlib
 comments: True
 share: True
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Normalizing Flows Are Not Magic
+title: Normalizing flows are not magic
 comments: True
 share: True
 ---

@@ -1,11 +1,18 @@
 ---
 layout: post
-title: A Polar Visualisation of Prime Numbers
+title: A Polar visualisation of prime numbers
 comments: True
 share: True
 ---
 
-Blabla bla
+Prime numbers exhibit an interesting structure. Projecting them onto a 2D plane results in:
+
+<div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center;">
+    <img src="../../resources/posts/2020-10-25/pp.png" style="width: 100%; max-width: 100%; overflow: hidden; margin: 16px 0;">
+    <span style="color: #666; font-size: 13px; font-style: italic;">Projection of prime numbers on a 2D plane.</span>
+</div>
+
+The image was generated with the following code:
 
 ```python
 import matplotlib.pyplot as plt
@@ -34,35 +41,3 @@ axes.set_ylim([-100000,100000])
 plt.scatter(x,y, c=colors/255., s=1)
 plt.show()
 ```
-
-
-another example 
-
-```python
-from tensorflow.examples.tutorials.mnist import input_data
-
-def load(config):
-
-  # The `config` argument is here unused, but you can treat it
-  # as a dict of keys and values accessible as attributes - it acts
-  # like an AttrDict
-
-  dataset = input_data.read_data_sets('.')  # download MNIST
-  # to the current working dir and load it
-  return dataset
-```
-
-a figure 
-
-<figure id='pp_numbers'>
-  <img style="display: box; margin: auto" src="{{site.url}}/images/posts/pp_numbers/pp.png" alt="pp numbers"/>
-  <figcaption align='center'>
-  <b>Fig 1:</b> The Stacked Capsule Autoencoder (SCAE) is composed of a Part Capsule Autoencoder (PCAE) followed by an Object Capsule Autoencoder (OCAE). It can decompose an image into its parts and group parts into objects.
-  </figcaption>
-</figure>
-
-A math example
-
-$$
-y_{n} = \sum_{n=1}^{N} x_{n}
-$$
