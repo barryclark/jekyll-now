@@ -137,7 +137,7 @@ code {
   color: #cb4b16;
 } /* Keyword.Constant */
 .highlight .kd {
-  color: #268bd2;
+  color: var(--color-prettylights-syntax-entity);
 } /* Keyword.Declaration */
 .highlight .kn {
   color: var(--color-prettylights-syntax-keyword);
@@ -161,7 +161,7 @@ code {
   color: var(--color-prettylights-syntax-string);
 } /* Literal.String */
 .highlight .na {
-  color: #93a1a1;
+  color: var(--color-prettylights-syntax-constant);
 } /* Name.Attribute */
 .highlight .nb {
   color: var(--color-prettylights-syntax-entity);
@@ -191,7 +191,7 @@ code {
   color: var(--color-fg-default);
 } /* Name.Namespace */
 .highlight .nx {
-  color: #555;
+  color: var(--color-prettylights-syntax-variable);
 } /* Name.Other */
 .highlight .py {
   color: var(--color-fg-default);
@@ -245,13 +245,13 @@ code {
   color: var(--color-prettylights-syntax-string);
 } /* Literal.String.Other */
 .highlight .sr {
-  color: #dc322f;
+  color: var(--color-prettylights-syntax-variable);
 } /* Literal.String.Regex */
 .highlight .s1 {
-  color: #2aa198;
+  color: var(--color-prettylights-syntax-string);
 } /* Literal.String.Single */
 .highlight .ss {
-  color: #2aa198;
+  color: var(--color-prettylights-syntax-string);
 } /* Literal.String.Symbol */
 .highlight .bp {
   color: var(--color-prettylights-syntax-constant);
