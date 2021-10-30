@@ -228,7 +228,6 @@ $$
 p(\theta, \mu, \tau \lvert y, \sigma) &\propto p(y, \theta, \sigma, \mu, \tau)\\
 &= \prod_{i=1}^{8}\mathcal{N}(y_i\lvert\theta_i,\sigma_i)\prod_{i=1}^{8}\mathcal{N}(\theta_i\lvert\mu,\tau)\mathcal{N}(\mu\lvert0,5)\text{Half-Cauchy}(\tau\lvert 0,5)\, .
 \end{align}
-
 $$
 
 The problem space has 10 dimensions ($$\theta$$ for each school, $$\theta$$ and $$\mu$$). To study the fit of the variational approximation, visualisations will be restricted to $$\theta$$ and $$\tau$$ for the first school. As displayed below, the posterior has an interesting shape, with a strong neck that has been shown in practice to be difficult for any kind of approximate posterior distribution to fit perfectly.
@@ -237,7 +236,6 @@ The problem space has 10 dimensions ($$\theta$$ for each school, $$\theta$$ and 
     <img src="../../resources/posts/2020-06-27/eight_schools_true_posterior.png" style="width: 100%; overflow: hidden; margin: 16px 0;">
     <span style="color: #666; font-size: 13px; font-style: italic;">True posterior p(𝜃,log(𝜏)) for the first school in case of 𝜇 = 0.</span>
 </div>
-
 
 The resulting approximation with planar flows and a flow depth of 32 results in the following approximation. It is clearly not satisfactory as it does not explore at all the neck of the true posterior distribution (in blue are MCMC samples for reference, please look into my full report for more details).
 
@@ -249,7 +247,6 @@ The resulting approximation with planar flows and a flow depth of 32 results in 
 To study whether we can hope to achieve a better fit with a greater depth of flow, as hinted by D. Rezende and S. Mohamed, an experiment was ran, using a simplified model, considering only the first two schools (hence reducing the dimensionality of the problem), recording performance with varying flow depth.
 
 The following 4 figures display the evolution of the obtained variational approximation with increasing depth of flow. From top left to bottom right, the flow lengths are, 10, 20, 40, 80.
-
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center;">
     <div style="display: flex; width: 125%;">
@@ -272,7 +269,7 @@ There is a quite clear improvement of the fit of the approximate posterior and a
 
 The measured diagnostics (over 5 training runs and for each trained model, 5 sets of generated samples) indicate that up to a depth of 80, the deepening of the flow leads to an increased fitting ability. It nevertheless shows that this effect as a limit, as for a depth of 128 layers, the increase in performance becomes unclear. A possible explanation for this phenomenon is the vanishing gradient problem; the deeper the flow is, the more difficult it becomes to propagate gradients throughout and to train the model efficiently.
 
-## Conclusion 
+## Conclusion
 
 This study detailed how normalizing flows, which are constituted by a succession of invertible mappings, can transform probability distributions, Gaussian typically, into new distributions, with highly complex features. Normalizing flows, employed together with an automatic and differentiated approach to variational inference, relying on Monte Carlo gradient estimation for the optimisation of the ELBO function, provides an efficient, scalable and versatile way to approximate arbitrarily complex posterior distribution of probabilistic models.
 
