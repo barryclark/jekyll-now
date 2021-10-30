@@ -23,6 +23,8 @@ html {
 body {
   margin: 2rem;
   overflow-x: hidden;
+  padding: 0 10px;
+  background: $white;
 }
 
 .container {
@@ -164,7 +166,7 @@ div.wrapper-masthead {
 }
 
 .masthead {
-  padding: 30px 0;
+  padding: 50px 0;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -205,7 +207,7 @@ div.wrapper-masthead {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 40px;
   letter-spacing: 1px;
 }
 
