@@ -1,0 +1,203 @@
+.r-grey {
+    color: rgba(0, 0, 0, .4);
+}
+
+body {
+    background: #F0F0F0;
+    overflow-x: auto;
+}
+
+#paper {
+    width: 68rem;
+    margin: 1.5rem auto;
+}
+
+@media print {
+    body {
+        background: white;
+        color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+#r-sidebar {
+    padding: 0;
+}
+
+#r-sidebar-content {
+    position: relative;
+    padding: 1.5em;
+}
+
+#r-sidebar h1,
+#r-sidebar p,
+#r-sidebar .flex-table {
+    color: white;
+}
+
+#r-main {
+    background: white;
+    padding: 0 0 2em;
+}
+
+.r-side-back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.r-side-back.r-color {
+    background: #025968;
+}
+
+.r-side-back.r-image {
+    background: url("./images/circles_2.0-ca98f1da6796.svg") center bottom -24rem / 300% no-repeat
+}
+
+#r-avatar {
+    margin-bottom: 1em;
+    padding: 2px;
+    background: rgb(191, 211, 16);
+    border-radius: .8em
+}
+
+#r-avatar>img {
+    border-radius: .8em;
+}
+
+.r-side-table .cell:first-child {
+    font-size: .8em
+}
+
+.r-side-table .cell:not(:first-child) {
+    font-weight: bold;
+}
+
+.icon.r-social {
+    padding: .2em 0 !important;
+    margin-bottom: .3em;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 100em;
+    background: white;
+    color: #00658d;
+    font-size: 1.5em
+}
+
+#r-name {
+    display: flex;
+    align-items: center;
+    margin: 4em 3em 1em 0;
+}
+
+#r-name>div:first-child {
+    flex: 1;
+}
+
+#r-name h1 {
+    font-size: 2.7em;
+    line-height: 1;
+}
+
+#r-name h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #00658d
+}
+
+.r-header {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.r-header h1 {
+    padding-bottom: .2em;
+    display: inline-block;
+    border-bottom: 2px solid #ccc;
+    margin: 0;
+}
+
+.r-section {
+    padding: 2.8em 2rem 0;
+}
+
+.ui.unstackable.items.r-items>.item>.image,
+.ui.unstackable.items.r-items>.item>.image>img {
+    width: 4.6rem !important;
+}
+
+.r-items .item .image img {
+    max-height: 4.6rem;
+}
+
+.r-items.r-timeline .item:not(:last-child) .image {
+    min-height: 6.1rem;
+}
+
+.r-items.r-timeline .item:not(:last-child) .image::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5.4rem;
+    bottom: -1.3em;
+    right: 50%;
+    width: 2px;
+    background: #ccc
+}
+
+.r-items.r-timeline .item:not(:last-child) .image.default::after {
+    top: 4.4rem;
+}
+
+.r-items.r-timeline .item:not(:last-child) .image.default.edu::after {
+    top: 3.8rem;
+}
+
+.ui.items.r-items>.item .meta>a:not(.ui):not(:hover) {
+    color: inherit;
+}
+
+.r-items .content h2 {
+    font-size: 1.3rem;
+}
+
+.r-items .content h2 a {
+    color: inherit
+}
+
+
+/*.r-items.ui.items>.item:last-child {*/
+
+
+/*    margin-bottom: 0;*/
+
+
+/*}*/
+
+.r-items.ui.items>.item {
+    margin: 0;
+    /* Avoid using `avoid`! */
+    /*break-inside: avoid;*/
+}
+
+.r-items.ui.items>.item:not(:first-child) {
+    padding-top: 1.5em;
+}
+
+.r-grade {
+    width: 3em;
+    height: 3em;
+    background: #eee;
+    border-radius: .4em;
+    font-size: 1.6em;
+    margin-left: .3em
+}
+
+.r-side-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
