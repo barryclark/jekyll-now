@@ -30,7 +30,7 @@ We are immensely grateful to [Humio](https://humio.com/), [Palo Alto Networks](h
 
 ## Cloud Native London December 
 
-Our next meetup will be our Xmas meetup, on Wednesday 1st December, when we'll be joined by speakers from StorageOS, UBS, and VMWare . [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/275886291/). From November to January, the meetup will be hosted by Hubert Bosiacki, so please do come along and welcome him. 
+Our next meetup will be our Xmas meetup, on Wednesday 1st December, when we'll be joined by speakers from StorageOS, UBS, and VMWare . [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/275886291/).  
 
 Stay safe and see you soon!
 
