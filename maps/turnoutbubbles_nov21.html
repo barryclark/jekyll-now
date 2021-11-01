@@ -167,7 +167,7 @@
 </head>
 <body>
 <div id='map'></div>
-<div class='map-overlay' id='features'><h2>Travis County 2021 Voter Turnout</h2>
+<div class='map-overlay' id='features'><h2>Travis/Williamson County 2021 Voter Turnout</h2>
     <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
         <div id='pd2'><p>UNOFFICIAL - Through All of Early Voting</p></div></div></div>
     
@@ -176,7 +176,7 @@
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/charlie2343/ckgjy2anp1kbm1amvehn0h1ql',
-        center: [-97.747875,30.268937],
+        center: [-97.72170571247655,30.436253601790646],
         zoom: 10
     });
     var hoveredStateId = null;
@@ -191,13 +191,13 @@
         map.addSource('precincts', {
             'type': 'geojson',
             'data':
-                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Travis%20County%20Turnout%20Nov%2021.geojson'
+                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Wilco-Travis%20Nov21%20Early.geojson'
         });
 
         map.addSource('markers', {
             'type': 'geojson',
             'data':
-                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Precinct%20Markers%20nov%2021.geojson'
+                'https://raw.githubusercontent.com/Charlie-Henry/ModalShift/master/maps/Wilco-Travis%20Precinct%20Markers%20nov%2021.geojson'
         });
 
         map.addLayer({
