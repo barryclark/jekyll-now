@@ -1,0 +1,65 @@
+body {
+    background-color: #96cc0e;
+    color: #ba391c;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+}
+
+
+/* header container */
+
+.container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 2048 title */
+
+h1#title {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+
+/* score container and score title */
+
+div#score-container {
+    position: relative;
+    float: right;
+    background-color: #615346;
+    color: rgb(205, 192, 180);
+    height: 25px;
+    padding: 15px 0px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/*  numeric score */
+
+div#score {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+
+/* instructions subheader */
+
+p#instructions {
+    position: relative;
+    float: left;
+}
+
+
+/* bolded 2048 in instructions */
+
+span {
+    font-weight: bold;
+}

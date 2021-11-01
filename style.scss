@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 25px;
   a {
     color: inherit;
   }
@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 h4 {
@@ -165,9 +165,9 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 150px;
+  height: 150px;
+  margin-right: 14px;
 
   @include mobile {
     float: none;
@@ -195,8 +195,8 @@ img {
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-weight: 280;
+  font-size: 33px;
   letter-spacing: 1px;
 }
 
