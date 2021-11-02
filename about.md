@@ -4,10 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
 The purpose to create this blog was to give me a reason to write more and reduce the time procrastinating through YouTube or mindlessly navigating through the Web trying to find something of interest, in the end spending countless hours of useless web surfing without learning anything meaningful. I hope that owning this blog will force me to sit down to write ideas and actually get to spend more time structuring content around a subject that has interested me for nearly ten years at the time of this writing. 
 
 Now that the reason is out of the way, and being it a little bit selfish, I'll state that there's a more altruistic reason behind the thematic choice for the blog. The main thematic of this blog is Antennas. There are several websites dedicated to it and there's countless of academic books around the subject. Therefore, this page is not going to be about the theory of antennas, or to show the basic concepts around the antenna subject in an academic way as you often find in the internet. Even though I might post some equations here and there and even make a few posts about theory, for consistency and completeness sake, that's not the main point, for that there's already several, YouTube and Web, pages, here I'll post a more personal view about antennas. 
