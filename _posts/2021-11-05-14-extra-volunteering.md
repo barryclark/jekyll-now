@@ -12,7 +12,7 @@ Hi folks, welcome to **War(un)lock - Deep Lore Edition**! Since I’ve mentioned
 
 <div align="center"><img src="/images/blog14/blog14-disappointed.jpeg" width=350 /></div>
 
-*<div align="center">Monty is disappointed whenever I leave for my volunteering shift, so he goes to his comfort box.</div>*
+*Monty is disappointed whenever I leave for my volunteering shift, so he goes to his comfort box.*
 
 ### Background
 
