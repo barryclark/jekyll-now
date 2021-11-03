@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2021"
-published: false
 ---
 
 Joining us tonight at the November Cloud Native London virtual meetup are three fantastic speakers from Authorizon, Humio, and Ververica, from 6:45pm GMT on Rambly and YouTube! 
