@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Journey to first completed project: LMake
+title: Journey to first completed project
 ---
 
 With this article I will describe the journey of creating an application to create other applications... kinda crazy right! It really isn't. What LMake is resembles more to what *GNU Make* is than to what a compiler is. 
