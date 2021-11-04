@@ -264,7 +264,215 @@
 
         },
         'waterway-label'
-        );             
+        );  
+
+        map.addLayer({
+            'id': 'TX Prop 1',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Prop1-%For'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );
+        map.addLayer({
+            'id': 'TX Prop 2',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Prop2-%For'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );   
+        map.addLayer({
+            'id': 'TX Prop 3',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Prop3-%For'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        ); 
+        map.addLayer({
+            'id': 'TX Prop 4',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Prop4-%For'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );     
+        map.addLayer({
+            'id': 'TX Prop 5',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Prop5-%For'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );   
+        map.addLayer({
+            'id': 'TX Prop 6',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Prop6-%For'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );   
+        map.addLayer({
+            'id': 'TX Prop 7',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Prop7-%For'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        ); 
+        map.addLayer({
+            'id': 'TX Prop 8',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Prop8-%For'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        ); 
+        map.addLayer({
+            'id': 'Biden %',
+            'type': 'fill',
+            'source': 'precincts',
+            'layout': {'visibility':'none'},
+            'paint': {
+                'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get','Biden'],
+                0.0,
+                '#7b3294',
+                0.5,
+                '#f7f7f7',
+                1.0,
+                '#008837'],
+                'fill-outline-color' : "#f2f2f2",
+                'fill-opacity': 0.75
+            }
+
+        },
+        'waterway-label'
+        );
         
     }
     );
@@ -296,7 +504,7 @@ for (i = 0; i < legendlayers.length; i++) {
               legend.appendChild(item);
             }
 
-var toggleableLayerIds = ['Austin Prop A', 'Austin Prop B', '(May) Austin Prop B'];
+var toggleableLayerIds = ['Austin Prop A', 'Austin Prop B', '(May) Austin Prop B','TX Prop 1','TX Prop 2','TX Prop 3','TX Prop 4','TX Prop 5','TX Prop 6','TX Prop 7','TX Prop 8','Biden %'];
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
 
