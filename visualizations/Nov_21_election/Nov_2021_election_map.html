@@ -167,6 +167,7 @@
 </head>
 <body>
 <div id='map'></div>
+<div class="map-overlay" id="legend"><p>% For</p></div>
 <div class='map-overlay' id='features'><h2>Travis/Williamson County 2021 Voter Turnout</h2>
     <div id='pd1'><p><a href="https://twitter.com/shiftmodal">by Charlie Henry</a></p></div>
         <div id='pd2'><p>UNOFFICIAL - Through All of Early Voting</p></div></div></div>
@@ -205,11 +206,11 @@
                 ['linear'],
                 ['get','PropA-%For'],
                 0.0,
-                '#2166ac',
+                '#af8dc3',
                 0.5,
                 '#f7f7f7',
                 1.0,
-                '#b2182b'],
+                '#7fbf7b'],
                 'fill-outline-color' : "#f2f2f2",
                 'fill-opacity': 0.75
             }
@@ -229,11 +230,11 @@
                 ['linear'],
                 ['get','PropB-%For'],
                 0.0,
-                '#D23600',
+                '#af8dc3',
                 0.5,
                 '#f7f7f7',
                 1.0,
-                '#360259'],
+                '#7fbf7b'],
                 'fill-outline-color' : "#f2f2f2",
                 'fill-opacity': 0.75
             }
@@ -244,6 +245,31 @@
         
     }
     );
+var legendlayers = [
+              '0%', 
+              '50%', 
+              '100%', 
+            ];
+var colors = [
+              '#af8dc3', 
+              '#f7f7f7', 
+              '#7fbf7b', 
+            ];
+
+for (i = 0; i < legendlayers.length; i++) {
+              var layer = legendlayers[i];
+              var color = colors[i];
+              var item = document.createElement('div');
+              var key = document.createElement('span');
+              key.className = 'legend-key';
+              key.style.backgroundColor = color;
+
+              var value = document.createElement('span');
+              value.innerHTML = layer;
+              item.appendChild(key);
+              item.appendChild(value);
+              legend.appendChild(item);
+            }
 
 var toggleableLayerIds = ['Austin Prop A', 'Austin Prop B'];
 for (var i = 0; i < toggleableLayerIds.length; i++) {
