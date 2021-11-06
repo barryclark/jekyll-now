@@ -45,7 +45,7 @@ $$
 
 Amongst my personal favourites are De Jong and Clifford's attractors. Their dynamics are captured by a remarkably simple set of equations, and yet, they result in intricate fractal patterns contained in æsthetic attractors.
 
-<div style="display: flex; justify-content: space-around; margin-bottom: 32px;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 32px;">
   <div>
   <div markdown="1">
   **Clifford's attractor**
@@ -58,7 +58,7 @@ Amongst my personal favourites are De Jong and Clifford's attractors. Their dyna
   $$
   </div>
   <div style="display: flex; flex-direction: column; align-items:center;">
-  <img src="../../resources/posts/2021-07-21/clifford.png" style="width: 150px; overflow: hidden; margin: 16px 0;">
+  <img src="../../resources/posts/2021-07-21/clifford.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
   <span style="color: #666; font-size: 13px; font-style: italic;">Cliffor Attractor</span>
   </div>
   </div>
@@ -74,7 +74,7 @@ Amongst my personal favourites are De Jong and Clifford's attractors. Their dyna
   $$
   </div>
   <div style="display: flex; flex-direction: column; align-items:center;">
-  <img src="../../resources/posts/2021-07-21/de_jong.png" style="width: 150px; overflow: hidden; margin: 16px 0;">
+  <img src="../../resources/posts/2021-07-21/de_jong.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
   <span style="color: #666; font-size: 13px; font-style: italic;">De Jong Attractor</span>
   </div>
   </div>
