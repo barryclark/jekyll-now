@@ -14,6 +14,8 @@ Or suppose I want to change a few lines of code in a god class, or in a function
 
 # Code already in production
 
+Hyrum's Law
+
 TDD promises that as long as you strictly follow the Red/Green/Refactor cycle, you can safely modify code and be sure that you're not breaking any existing behaviors, thanks to the excellent code coverage. For example, if you want to fix a bug, first write a test for the bug, then make the test pass, and then you're ready to ship.
 
 Once code is being used by someone else (whether it's an API or a product feature or whatever), people might use the code in ways you didn't anticipate, and therefore don't have tests for. People don't usually read documentation, they just push buttons / call an API until they get a result they like.
@@ -21,6 +23,7 @@ Once code is being used by someone else (whether it's an API or a product featur
 Any behavior change you make might inadvertently break someone.
 
 Therefore we need safe refactoring, to get to the point where new features can be added without modifying existing code. (Open/Closed Principle).
+
 
 # Missing Modularity
 
