@@ -49,13 +49,14 @@ Amongst my personal favourites are De Jong and Clifford's attractors. Their dyna
   <div>
   <div markdown="1">
   **Clifford's attractor**
-
+  <div style="height: 1px;"></div>
   $$
   \begin{align}
   \frac{dx}{dt} &= x + \sin(\alpha y) + \gamma\,\cos(\alpha x)\\
   \frac{dy}{dt} &= y + \sin(\beta x) + \delta\,\cos(\beta x)
   \end{align}
   $$
+  <div style="height: 16px;"></div>
   </div>
   <div style="display: flex; flex-direction: column; align-items:center;">
   <img src="../../resources/posts/2021-07-21/clifford.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
@@ -65,13 +66,14 @@ Amongst my personal favourites are De Jong and Clifford's attractors. Their dyna
   <div>
   <div markdown="1">
   **De Jong's attractor**
-
+  <div style="height: 1px;"></div>
   $$
   \begin{align}
   \frac{dx}{dt} &= x + \sin(\alpha y) - \cos(\beta x)\\
   \frac{dy}{dt} &= y + \sin(\gamma x) - \cos(\delta x)
   \end{align}
   $$
+  <div style="height: 16px;"></div>
   </div>
   <div style="display: flex; flex-direction: column; align-items:center;">
   <img src="../../resources/posts/2021-07-21/de_jong.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
@@ -80,7 +82,7 @@ Amongst my personal favourites are De Jong and Clifford's attractors. Their dyna
   </div>
 </div>
 
-Back to determinism and probabilities. What do strange attractors have to say about determinism ?
+Back to determinism and probabilities. What do strange attractors have to say about determinism?
 As described by Ilya Prigogine and Isabelle Stengers in their essay *Entre le temps et l'éternité*, these systems blur, or make disappear altogether, the causal link between causes and effects. Indeed, the notion of cause and effect presupposes the ability to define trajectories.
 
 State trajectories define the evolution of any element of the universe, and as such, constitue the record of effects that applied on it. But in the case of these strange attractors the notion of trajectory becomes meaningless. Any infinitely small variation in the definition of the element whose trajectory is investigated results in entirely different outcomes. As a result, the existence of edge-case systems for which the reduction of a continuous spectrum of possibles into definite, discrete elements with fixed properties results in a disappearing of our ability to define their trajectory of evolution and consequently seriously challenges the hard determinism of Laplace.
