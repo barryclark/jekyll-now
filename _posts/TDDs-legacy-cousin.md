@@ -25,7 +25,11 @@ Any behavior change you make might inadvertently break someone.
 Therefore we need safe refactoring, to get to the point where new features can be added without modifying existing code. (Open/Closed Principle).
 
 
-# Missing Modularity
+# Other concerns
+
+There are other kinds of technical debt that don't interfere directly with TDD, and aren't addressed by TDD. These need their own techniques.
+
+## Missing modularity
 
 Missing modularity is an important class of technical debt that has a big impact on an organization's ability to deliver. By "Missing modularity" I mean the situation where multiple teams need to work in the same code. If it's seen as "shared code" then typically no one will tend to it, allowing it to get steadily worse. If it's seen as "owned code", then the owning team must be vigilant to changes by other folks, and anyone changing this code must navigate the gauntlet of the owning team's approval. 
 
@@ -35,5 +39,12 @@ To keep code quality and productivity high, we need good modularity: I can build
 
 <link to Arlo's articles here>
 
+## Continuous delivery
+              
+## Local readability
 
+## Safeguarding and #BugsZero
 
+Some parts of Safeguarding and #BugsZero are TDD/refactoring/test-related but not all.
+              
+              
