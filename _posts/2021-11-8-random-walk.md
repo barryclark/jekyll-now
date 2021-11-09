@@ -14,7 +14,7 @@ $F - B = k$
 To find the probability we have first to find the total number of configurations of the $n$ steps. Which is similar to 
 find all the possible configurations of tossing a coin $n$ times; that is $2^{n}$.
 
-$\omaega(n)$ is the total number of configurations. Now we need to calculate the number of configurations that have $F$ forward steps.
+$\omega(n)=2^{n}$ is the total number of configurations. Now we need to calculate the number of configurations that have $F$ forward steps.
 That is similar to find all the ways you can fill $F$ boxes in an array of $n$ boxes.
 
 - For the first space you have $n$ options.
