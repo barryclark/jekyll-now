@@ -11,7 +11,7 @@ $F + B = n$
 
 $F - B = k$
 
-__The combinatorial part
+__The combinatorial part__
 
 To calculate the probability, we have first to find the total number of configurations of the $n$ steps. Which is similar to 
 find all the possible configurations of tossing a coin $n$ times; that is $2^{n}$.
