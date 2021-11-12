@@ -35,6 +35,8 @@ Missing modularity is an important class of technical debt that has a big impact
 
 To keep code quality and productivity high, we need good modularity: I can build my feature without touching code that belongs to other teams, and other teams can build their feature without needing my permission.
 
+This is Single Responsibility Principle - a module (or cluster) should only have one reason to change, and a reason to change should be expressible in a module (or cluster). If not, refactor to make this true, then make the change.
+
 <Diamond module picture>
 
 <link to Arlo's articles here>
