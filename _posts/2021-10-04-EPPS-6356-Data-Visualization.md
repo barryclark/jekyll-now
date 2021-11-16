@@ -17,10 +17,9 @@ title: Data Science - Data Visualization
 
 [Data-Visualization-Assignment-4](https://minshimia.github.io/Data-Visualization/files/Assignment4.html)
 
-[Shiny-Apps-1](https://minshimia.shinyapps.io/part-1-code/?_ga=2.104875075.1723091339.1635220030-1378908856.1635220030)
+[Shiny-Apps-1-Final-Project-Data-Summary](https://minshimia.shinyapps.io/ShinyVisualization/?_ga=2.212342356.1992921603.1637065837-1378908856.1635220030)
 
-[Shiny-Apps-2](https://minshimia.shinyapps.io/ShinyVisualization/?_ga=2.104875971.1723091339.1635220030-1378908856.1635220030)
+[Shiny-Apps-2-Final-Project-Data-Visualization1](https://minshimia.shinyapps.io/ShinyVisualization2/?_ga=2.224186843.1992921603.1637065837-1378908856.1635220030)
 
-[Dashboard-for-Data-Visualization-Project](https://minshimia.github.io/Data-Visualization/files/Dashboard.html)
+[EPPS 6356 Final Project](https://minshimia.github.io/Data-Visualization/files/Datavisualization_html.html)
 
-[RMarkDown File](https://minshimia.github.io/Data-Visualization/files/Datavisualization_htmltemplate.html)
