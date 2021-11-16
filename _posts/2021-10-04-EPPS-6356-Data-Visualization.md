@@ -21,5 +21,5 @@ title: Data Science - Data Visualization
 
 [Shiny-Apps-2-Final-Project-Data-Visualization1](https://minshimia.shinyapps.io/ShinyVisualization2/?_ga=2.224186843.1992921603.1637065837-1378908856.1635220030)
 
-[EPPS 6356 Final Project](https://minshimia.github.io/Data-Visualization/final_project/Datavisualization.html)
+[EPPS 6356 Data Visualization Final Project](https://minshimia.github.io/Data-Visualization/final_project/Datavisualization.html)
 
