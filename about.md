@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm recently a political science Ph.D. candidate, majoring in international relations, specially China-Japan relations, China-U.S. relations, and International Organizations Research; minoring in Political Institutions and American Politics. I'm also enrolled in Social Data Analytics and Research data analysis master program. Deploying programming skills to explore international relations and public policy efficiently and more in-depth is my research goal. 
+I'm recently a political science Ph.D. candidate, majoring in international relations, specially China-Japan relations, China-U.S. relations, and International Organizations Research; minoring in Political Institutions and American Politics. I'm also enrolled in Social Data Analytics and Research data analysis master program. Using programming skills to explore international relations and public policy efficiently and more in-depth is my research goal. 
 
 
 ### More Information
