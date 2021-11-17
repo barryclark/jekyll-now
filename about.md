@@ -9,7 +9,7 @@ I'm recently a political science Ph.D. candidate, majoring in international rela
 
 ### More Information
 
-Python is my favorite programming language, and I'm more advanced at it. I also have experience with R, Stata, Javascript, and Java. I am eager to apply the skills I have learned in the future intership. Please feel free to contact me if there is any research position or internship opportunity open.
+Python is my favorite programming language, and I'm more advanced at it. I also have experience with R, Stata, JavaScript, and Java. I am eager to apply the skills I have learned in the future intership. Please feel free to contact me if there is any research position or internship opportunity open.
 I look forward to your contact and to working with you in the future!  
 
 ### Contact me
