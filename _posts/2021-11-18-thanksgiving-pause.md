@@ -11,4 +11,4 @@ Until then, **Monty and I wish you all a good and safe Thanksgiving!**
 
 <div align="center"><img src="/images/monty-pose.jpg" width="350" /></div>
 
-*<div align="center">Monty posing for the cam. Also me when I'm inevitably stuffed after Thanksgiving dinner.</div>*
+*Monty posing for the cam. Also me when I'm inevitably stuffed after Thanksgiving dinner.*
