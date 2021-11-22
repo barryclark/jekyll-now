@@ -11,6 +11,8 @@ description: Bakend Developer
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://es.gravatar.com/userimage/9125488/d8b4f80fcd3ef1b72c8e943a341e6edc.png
 
+theme: jekyll-theme-hacker
+
 #
 # Flags below are optional
 #
