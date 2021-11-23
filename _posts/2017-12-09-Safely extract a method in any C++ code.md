@@ -23,7 +23,7 @@ Thanks to Llewellyn Falco and Arlo Belshee who said the right things at the righ
 
 # The recipe.
 
-*Edit 2018-09-01* An updated version of this recipe is now available on GitHub, along with a growing catalog of provably-safe refactorings. You should go there instead.
+*Edit 2018-09-01* [An updated version of this recipe is now available on GitHub](https://github.com/digdeeproots/provable-refactorings/blob/master/recipes/core-6/extract-function/cpp.md), along with a growing catalog of provably-safe refactorings. You should go there instead.
 
 If you get to the end of step 1, the refactoring is possible - it will produce a valid result.
 
