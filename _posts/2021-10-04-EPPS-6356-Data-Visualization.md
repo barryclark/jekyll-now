@@ -3,13 +3,13 @@ layout: post
 title: Data Science - Data Visualization
 ---
 
-[EPPS-6356-Final-Project-Report](https://minshimia.github.io/Data-Visualization/final_project/Final_Project.html)
+[EPPS-6356-Final-Project-Report](https://minshimia.github.io/Data-Visualization/Final_Project/Final_Project.html)
 
-[EPPS-6356-Final-Project-Data-Visualization-2-Dashboard](https://minshimia.github.io/Data-Visualization/final_project/Final_project_dashboard1.html)
+[EPPS-6356-Final-Project-Data-Visualization-2-(Dashboard)](https://minshimia.github.io/Data-Visualization/Final_Project/Final_project_dashboard1.html)
 
-[EPPS-6356-Final-Project-Data-Visualization-1-Shiny-App](https://minshimia.shinyapps.io/ShinyVisualization2/?_ga=2.66321447.823149622.1637639880-1378908856.1635220030)
+[EPPS-6356-Final-Project-Data-Visualization-1-(Shiny-App)](https://minshimia.shinyapps.io/ShinyVisualization2/?_ga=2.109530508.806633011.1638242661-1378908856.1635220030)
 
-[EPPS-6356-Final-Project-Data-Summay-Shiny-App](https://minshimia.shinyapps.io/ShinyVisualization/?_ga=2.158005555.823149622.1637639880-1378908856.1635220030)
+[EPPS-6356-Final-Project-Data-Summay-(Shiny-App)](https://minshimia.shinyapps.io/ShinyVisualization/?_ga=2.39357098.806633011.1638242661-1378908856.1635220030)
 
 [Data-Visualization-Assignment-4](https://minshimia.github.io/Data-Visualization/files/Assignment4.html)
 
