@@ -7,7 +7,7 @@ I've always been amazed with computer graphics, and looking at recent advancemen
 
 I had tried before GPU accelerated rendering with OpenGL, but I had never advanced more than a textured quad, so 2021's summer was the time to finally tackle this curiosity with a own built PBR renderer written in C++ and vulkan.
 
-In this writeup we'll talk about how modern graphics work, the PBR magic and how the project went.
+In this writeup we'll talk about how modern graphics work, the PBR and how the project went.
 
 ## Modern realtime rendering
 Rasterization is what modern video games use to create those beautiful graphics. There are more kinds of rendering techniques apart from rasterization like ray tracing or path tracing, but they all suffer to produce enough frames per second to make the illusion of movement, so it was not interesting for me.
@@ -16,16 +16,16 @@ Rasterization works by converting triangles into pixels and drawing them by usin
 
 Those object’s vertices come on what we call model space. This means that all the vertices are located relative to the root of the model. But this object needs to be located somewhere in the world, so what we do is transform all the vertices to position them on the world. This transformation is done using matrices. By multiplying the position vector of a vertex with the transformation matrix we basically move the vertex into the world position. 
 
-After we’ve moved model’s vertices into world space, we encounter a problem: we can’t move our head around in this world, so what do we do... let’s move the whole world to make the illusion of moving our heads! Those transformations are done by using what’s called the view matrix.
+After we’ve moved model’s vertices into world space, we encounter a problem: we can’t move our head around in this world, so what do we do? Let’s move the whole world to make the illusion of moving our heads! Those transformations are done by using what’s called the view matrix.
 
-Well, we already have the things in front of us, the work is already done right? Wrong. The world is in the position we want, but reality has something strange called perspective that we need to simulate so that things look real. That’s done using the projection matrix. 
+Well, we already have the things in front of us, the work is already done, right? Wrong. The world is in the position we want, but reality has something strange called perspective that we need to simulate so that things look real. That’s done using the projection matrix. 
 
-All those matrices are typically provided by math libraries like GLM or CGLM.
+All those matrices are typically provided by math libraries like [GLM](https://github.com/g-truc/glm) or [CGLM](https://github.com/recp/cglm).
 
 Once the vertices are positioned where they should be, we need to light the pixels appropriately. There are several ways to calculate how much light has hit a particular part of the mesh and how much of that light gets reflected into the camera, but for this project the Cook-Torrance method has been chosen, as it creates accurate and beautiful lighting. For more information about how Cook-Torrance works you can check the documentation on the [repository](https://github.com/IkerGalardi/PBR-Renderer/blob/main/doc/SoftwareDocumention.pdf).
 
 ## Results
-So… how far did the project get? I got a realistic looking image, but the promise of using vulkan was too much for the project. Vulkan itself is a pretty complex API, so combining that with learning how PBR math magic works was a pretty bad idea. After some thinking, the graphics API was changed to OpenGL and the focus was put into understanding how that PBR magic works.
+So... how far did the project get? I got a realistic looking image, but the promise of using vulkan was too much for the project. Vulkan itself is a pretty complex API, so combining that with learning how PBR math works was a pretty bad idea. After some thinking, the graphics API was changed to OpenGL and the focus was put into understanding how that PBR works.
 
 ![Example Rendered Image](https://github.com/IkerGalardi/ikergalardi.github.io/blob/master/images/tiles_render.png?raw=true)
 
