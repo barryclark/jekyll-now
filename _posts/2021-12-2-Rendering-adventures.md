@@ -41,7 +41,7 @@ The structure of the program itself is a bit weird as well, as given the short t
 
 Before trying to do anything else with the project, the previous points should be addressed to be able to work more comfortably and not go crazy. Almost all the engine should be rewritten for that, so it probably would be easier to redo the project from scratch.
 
-# Bored of computer graphics?
+## Bored of computer graphics?
 Not at all. Since summer I’ve found many resources about this topic, including how Epic games approached UE4’s rendering engine and had an idea on combining more advanced  techniques like deferred rendering and ray tracing that would be interesting to try to implement. 
 
 But for now no more advancements will be done as University is keeping me pretty busy and I have more short term projects applying some newly learned topics. 
