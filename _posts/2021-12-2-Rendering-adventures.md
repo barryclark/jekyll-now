@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Journey to first completed project
+title: Rendering adventures
 ---
 
 I've always been amazed with computer graphics, and looking at recent advancements with ray tracing, and the great upgrade that Unreal Engine 4 supposed over Unreal Engine 3 with the physically based rendering (PBR from now on) work flow made me more curious.
