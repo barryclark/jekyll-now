@@ -5,8 +5,6 @@ title: Data Science - Data Visualization
 
 [EPPS-6356-Final-Project-Report](https://minshimia.github.io/Data-Visualization/Final_Project/Final_Project.html)
 
-[EPPS-6356-Final-Project-Data-Visualization-4-(Dashboard)](https://minshimia.github.io/Data-Visualization/Final_Project/Final_project_dashboard3.html)
-
 [EPPS-6356-Final-Project-Data-Visualization-3-(Dashboard)](https://minshimia.github.io/Data-Visualization/Final_Project/Final_project_dashboard2.html)
 
 [EPPS-6356-Final-Project-Data-Visualization-2-(Dashboard)](https://minshimia.github.io/Data-Visualization/Final_Project/Final_project_dashboard1.html)
