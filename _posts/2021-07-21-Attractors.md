@@ -5,6 +5,11 @@ comments: True
 share: True
 ---
 
+<div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center;">
+    <img src="../../resources/posts/2021-07-21/attractor_header.png" style="width: 45%; overflow: hidden; margin: 16px 0;">
+    <span style="color: #666; font-size: 13px; font-style: italic;">Strange attractor goes wow.</span>
+</div>
+
 In the early XIXe century, in its seminal essay *Essai philosophique sur les probabilités*, French mathematician Pierre-Simon de Laplace laid the foundation of probabilities as the theory for capturing the universe's dynamics conditioned on our own inability to observe all of its machinery.
 
 He envisioned that an intellect, that could at any moment know all the physical properties of every component of the universe, and all forces that apply to them, could predict perfectly both the future and past evolution of the universe. Recognising the inaccessibility of such knowledge in practice, he thereupon suggested to use probabilities to generate informed guesses on the occurence of future effects. This strongly ties his intuition to hard determinism, or linear causality; $$\forall e \,,\exists C\,, e = f(C)$$, with $$e$$ an effect and $$C$$ a set of causes.
