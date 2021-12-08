@@ -6,7 +6,7 @@ permalink: /news/
 ## 2021
 
 __October__
- - Participated in a workshop to guide students applying for a PhD program
+ - Participated in a Project SHORT workshop to help guide students applying for a PhD program
 
 __June__
  - Held a workshop to teach highschool and undergraduate students how to "_Craft an effective abstract_."
