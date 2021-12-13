@@ -19,7 +19,7 @@ This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might
 
 1. Clone down your fork `git clone https://github.com/himaxwell/himaxwell.github.io.git`
 2. `bundle install`
-3. `jekyll serve --watch --drafts`
+3. `bundle exec jekyll serve --watch --drafts`
 4. View your website at http://127.0.0.1:4000/
 
 ## Moar (from Jekyll Now)!
