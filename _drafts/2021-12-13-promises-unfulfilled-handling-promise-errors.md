@@ -42,7 +42,7 @@ In almost all cases, either method will work. There is one major exception, howe
 
 ## Differences between the two methods
 
-Despite the nearly-identical implementations, there is one major difference. When either (1) an error is thrown in the `.then()` handler, or (2) the `.then()` handler returns a rejected Promise, only the `.catch()` function will  catch the error.
+Despite the nearly-identical implementations, there is one major difference. When either (1) an error is thrown in the `.then()` handler, or (2) the `.then()` handler returns a rejected Promise, only the `.catch()` function will catch the error.
 
 ```javascript
 Promise.resolve()
@@ -55,7 +55,7 @@ Promise.resolve()
 
 ### Why would we reject a Promise in the `.then()` function?
 
-A rejected Promise would most commonly occur when chaining Promises together. Consider a series of inter-dependant API calls:
+A rejected Promise would most commonly occur when chaining Promises together. Consider a series of interdependent API calls:
 
 ```javascript
 firstApiCall()
