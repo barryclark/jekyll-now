@@ -8,6 +8,8 @@ author_github_username: regexpressyourself
 
 In a recent Lunch and Learn with the Maxwell engineering team, we noticed two different ways to handle a rejected Promise. One can either include a second argument to the Promise's `.then()` function, or add a `.catch()` function. Curious to learn more, I decided to dig in further.
 
+![](/images/posts/2021-12-13-promises-unfulfilled-handling-promise-errors/detour.jpeg)
+
 ## The two methods of catching rejected Promises
 
 **Method #1**: The first method to handle a rejected Promise involves adding a second callback to the `.then()` function:
