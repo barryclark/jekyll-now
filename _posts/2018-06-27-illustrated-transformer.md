@@ -259,7 +259,7 @@ If we do the same self-attention calculation we outlined above, just eight diffe
 
 This leaves us with a bit of a challenge. The feed-forward layer is not expecting eight matrices -- it's expecting a single matrix (a vector for each word). So we need a way to condense these eight down into a single matrix.
 
-How do we do that? We concat the matrices then multiple them by an additional weights matrix WO.
+How do we do that? We concat the matrices then multiply them by an additional weights matrix WO.
 
 
 <div class="img-div-any-width" markdown="0">
