@@ -10,6 +10,12 @@ In a recent Lunch and Learn with the Maxwell engineering team, we noticed two di
 
 ![](/images/posts/2021-12-13-promises-unfulfilled-handling-promise-errors/detour.jpeg)
 
+## Why not `async` / `await`?
+
+At Maxwell, we tend to prefer `async` / `await` for handling asynchronous functionality. With `async` / `await`, we can use `try` / `catch` blocks to handle any errors and avoid any need to catch errors on a Promise directly. 
+
+However, `async` / `await` is just syntactic sugar around Promises. By learning more about what's going on "under the hood," we can better implement, debug, and describe what our asynchronous code is actually doing.
+
 ## The two methods of catching rejected Promises
 
 **Method #1**: The first method to handle a rejected Promise involves adding a second callback to the `.then()` function:
