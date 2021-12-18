@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: Sobre mí
 permalink: /about/
 ---
 
-Some information about you!
+Investigador y docente de Matemáticas. Mi área de especialización es la simulación y análisis de Sistemas Dinámicos y Neurocomputacionales (aunque la Historia y la Filosofía de la Ciencia también están dentro de mis intereses). Actualmente poseo una posición postdoctoral en <a href="https://www.conicet.gov.ar/">CONICET</a>, y me desempeño como auxiliar docente en el <a href = "https://www.matematica.uns.edu.ar/default.php">Departamento de Matemática</a> de la <a href="https://uns.edu.ar">Universidad Nacional del Sur</a>.
 
-### More Information
+### Más información
 
-A place to include any other types of information that you'd like to include about yourself.
+Podés consultar mi <a href = "https://uliseschialva.github.io/cv-online/">Currículim Vitae</a>.
 
-### Contact me
+### Contacto
 
-[email@domain.com](mailto:email@domain.com)
+[uchialva@gmail.com](mailto:uchialva@gmail.com)
