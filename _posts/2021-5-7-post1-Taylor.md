@@ -10,7 +10,7 @@ Abajo presento los resultados básicos del tema
 
 # El diferencial
 
-<p><b>Definición:</b> Diremos que la funci\'on $z = f(x,y)$ es diferenciable en el punto $(x_0,y_0)$ si est\'a un\'ivocamente definida en un entorno de este punto y su incremento se expresa as\'i:
+<p><b>Definición:</b> Diremos que la función $$z = f(x,y)$$ es diferenciable en el punto $(x_0,y_0)$ si est\'a un\'ivocamente definida en un entorno de este punto y su incremento se expresa as\'i:
 \begin{equation}
 \Delta z_0 = f(x_0+\Delta x_0,y_0+\Delta y_0)-f(x_0,y_0) = \mathrm{A}\Delta x_0+\mathrm{B}\Delta y_0+o(\rho)\quad\quad (1),
 \end{equation}
