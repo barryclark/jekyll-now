@@ -21,7 +21,8 @@ Se llama diferencial total de una función diferenciable a la parte lineal de \e
 dz_0 = \mathrm{A}\Delta x_0+\mathrm{B}\Delta y_0.
 \label{dif1}
 \end{equation}
-\end{definition}
+
+
 En particular, si $x$ e $y$ son variables independientes, obtendremos que $dx = \Delta x$ y $dy = \Delta y$, por lo que en un punto genérico $(x,y)$ la expresión \eqref{dif1} se puede escribir de la siguiente forma:
 \begin{equation}
 dz = df(x,y) = f_x(x,y)dx +f_y(x,y)dy,
