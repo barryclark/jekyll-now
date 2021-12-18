@@ -33,7 +33,7 @@ dz = df(x,y) = f_x(x,y)dx +f_y(x,y)dy,
 
 <b>Diferenciales sucesivos y la fórmula simbólica:</b> Observando la expresión \eqref{dif1} del diferencial de $z = f(x,y)$:
 \begin{equation}
-df = f_x(x,y)\Delta x+f_y(x,y)\delta y,
+df = f_x(x,y)\Delta x+f_y(x,y)\Delta y,
 \end{equation}
 vemos que $df$ depende de $x$ e $y$ (pues las derivadas parciales son funciones del par $(x,y)$), y también de los incrementos $\Delta x$ y $\Delta y$.
 
