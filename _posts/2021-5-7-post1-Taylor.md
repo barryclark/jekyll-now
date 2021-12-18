@@ -8,45 +8,56 @@ title: Polinomio de Taylor en dos variables
 
 Abajo presento los resultados básicos del tema
 
-# El diferencial
+\begin{document}
+\begin{center}
+\small{Concurso de Asistente -- An\'alisis Matem\'atico I (5551) \& An\'alisis Matem\'atico II (5552)}
+\end{center}
+\vspace{-0.5em}
+\hrule
+\vspace{1.5em}
 
-<p><b>Definición:</b> Diremos que la función $$inline z = f(x,y)$$ es diferenciable en el punto $(x_0,y_0)$ si est\'a un\'ivocamente definida en un entorno de este punto y su incremento se expresa as\'i:
+\begin{center}
+{\Large \textbf{Polinomio y f\'ormula de Taylor en varias variables}}
+\end{center}
+\subsection*{El diferencial}
+\begin{definition} Diremos que la funci\'on $z = f(x,y)$ es diferenciable en el punto $(x_0,y_0)$ si est\'a un\'ivocamente definida en un entorno de este punto y su incremento se expresa as\'i:
 \begin{equation}
-\Delta z_0 = f(x_0+\Delta x_0,y_0+\Delta y_0)-f(x_0,y_0) = \mathrm{A}\Delta x_0+\mathrm{B}\Delta y_0+o(\rho)\quad\quad (1),
+\Delta z_0 = f(x_0+\Delta x_0,y_0+\Delta y_0)-f(x_0,y_0) = \mathrm{A}\Delta x_0+\mathrm{B}\Delta y_0+o(\rho),
+\label{incremento}
 \end{equation}
-como funci\'on lineal homog\'enea de los incrementos independientes $\Delta x_0$, $\Delta y_0$ con coeficientes constantes $\mathrm{A}$ y $\mathrm{B}$, y $\rho$ es un infinit\'esimo de orden superior a $\sqrt{\Delta x_0^2+\Delta y_0^2}$.</p>
+como funci\'on lineal homog\'enea de los incrementos independientes $\Delta x_0$, $\Delta y_0$ con coeficientes constantes $\mathrm{A}$ y $\mathrm{B}$, y $\rho$ es un infinit\'esimo de orden superior a $\sqrt{\Delta x_0^2+\Delta y_0^2}$.
 
-Se llama diferencial total de una funci\'on diferenciable a la parte lineal de (1), y es designado por
+Se llama diferencial total de una funci\'on diferenciable a la parte lineal de \eqref{incremento}, y es designado por
 \begin{equation}
-dz_0 = \mathrm{A}\Delta x_0+\mathrm{B}\Delta y_0\quad\quad (2).
+dz_0 = \mathrm{A}\Delta x_0+\mathrm{B}\Delta y_0.
 \label{dif1}
 \end{equation}
 \end{definition}
-En particular, si $x$ e $y$ son variables independientes, obtendremos que $dx = \Delta x$ y $dy = \Delta y$, por lo que en un punto gen\'erico $(x,y)$ la expresi\'on (2) se puede escribir de la siguiente forma:
+En particular, si $x$ e $y$ son variables independientes, obtendremos que $dx = \Delta x$ y $dy = \Delta y$, por lo que en un punto gen\'erico $(x,y)$ la expresi\'on \eqref{dif1} se puede escribir de la siguiente forma:
 \begin{equation}
-dz = df(x,y) = f_x(x,y)dx +f_y(x,y)dy\quad\quad(3),
+dz = df(x,y) = f_x(x,y)dx +f_y(x,y)dy,
 \label{df1}
 \end{equation}
-que se denomina {\it expresi\'on anal\'itica del diferencial}, para distinguirla de la definici\'on (2).
+que se denomina {\it expresi\'on anal\'itica del diferencial}, para distinguirla de la definici\'on \eqref{dif1}.
 %%%%
 %%%%%
 \subsection*{Diferenciales sucesivos: f\'ormula simb\'olica}
-Observando la expresi\'on (2) del diferencial de $z = f(x,y)$:
-\begin{equation}
+Observando la expresi\'on \eqref{dif1} del diferencial de $z = f(x,y)$:
+\begin{equation*}
 df = f_x(x,y)\Delta x+f_y(x,y)\delta y,
-\end{equation}
+\end{equation*}
 vemos que $df$ depende de $x$ e $y$ (pues las derivadas parciales son funciones del par $(x,y)$), y tambi\'en de los incrementos $\Delta x$ y $\Delta y$.
 
 Si damos valores constantes a los incrementos $\Delta x$ y $\Delta y$, el diferencial es una funci\'on \'unicamente de $(x,y)$, y considerada como una func\'on de estas dos variables podr\'a tener a su vez un diferencial que llamaremos {\it diferencial segundo de $f$} e indicaremos con $d^2f$:
-\begin{equation}
+\begin{equation*}
 d^2f = d(df).
-\end{equation}
+\end{equation*}
 An\'alogamente representaremos el diferencial tercer, cuarto,..., de en\'esimo orden de $f(x,y)$ por $d^3f$, $d^4f$,...,$d^nf$.
 En general, si existen y son continuas las derivadas $n$-\'esimas en el punto considerado y $x$ e $y$ son variables independientes, entonces $dx = \Delta x$ y $dy = \Delta y$ y se verifica la siguiente {\it f\'ormula simb\'olica}
 \begin{equation}
 \begin{split}
 d^nf &= \left(dx\frac{\partial}{\partial x}+dy\frac{\partial}{\partial y}\right)^{(n)}f(x,y)\\
-&= \sum_{i = 0}^{n}{n\choose i}dx^{(n-i)}dy^{i}\frac{\partial^nf}{\partial x^{(n-i)}\partial y^i}(x,y)\quad\quad(4).
+&= \sum_{i = 0}^{n}{n\choose i}dx^{(n-i)}dy^{i}\frac{\partial^nf}{\partial x^{(n-i)}\partial y^i}(x,y).
 \end{split}
 \label{difsym}
 \end{equation}
