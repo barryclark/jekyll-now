@@ -8,24 +8,12 @@ title: Polinomio de Taylor en dos variables
 
 Abajo presento los resultados básicos del tema
 
-\begin{document}
-\begin{center}
-\small{Concurso de Asistente -- An\'alisis Matem\'atico I (5551) \& An\'alisis Matem\'atico II (5552)}
-\end{center}
-\vspace{-0.5em}
-\hrule
-\vspace{1.5em}
-
-\begin{center}
-{\Large \textbf{Polinomio y f\'ormula de Taylor en varias variables}}
-\end{center}
-\subsection*{El diferencial}
-\begin{definition} Diremos que la funci\'on $z = f(x,y)$ es diferenciable en el punto $(x_0,y_0)$ si est\'a un\'ivocamente definida en un entorno de este punto y su incremento se expresa as\'i:
+<p><b>Definición:</b>Diremos que la funci\'on $z = f(x,y)$ es diferenciable en el punto $(x_0,y_0)$ si est\'a un\'ivocamente definida en un entorno de este punto y su incremento se expresa as\'i:
 \begin{equation}
 \Delta z_0 = f(x_0+\Delta x_0,y_0+\Delta y_0)-f(x_0,y_0) = \mathrm{A}\Delta x_0+\mathrm{B}\Delta y_0+o(\rho),
 \label{incremento}
 \end{equation}
-como funci\'on lineal homog\'enea de los incrementos independientes $\Delta x_0$, $\Delta y_0$ con coeficientes constantes $\mathrm{A}$ y $\mathrm{B}$, y $\rho$ es un infinit\'esimo de orden superior a $\sqrt{\Delta x_0^2+\Delta y_0^2}$.
+como funci\'on lineal homog\'enea de los incrementos independientes $\Delta x_0$, $\Delta y_0$ con coeficientes constantes $\mathrm{A}$ y $\mathrm{B}$, y $\rho$ es un infinit\'esimo de orden superior a $\sqrt{\Delta x_0^2+\Delta y_0^2}$.<\p>
 
 Se llama diferencial total de una funci\'on diferenciable a la parte lineal de \eqref{incremento}, y es designado por
 \begin{equation}
@@ -38,22 +26,22 @@ En particular, si $x$ e $y$ son variables independientes, obtendremos que $dx = 
 dz = df(x,y) = f_x(x,y)dx +f_y(x,y)dy,
 \label{df1}
 \end{equation}
-que se denomina {\it expresi\'on anal\'itica del diferencial}, para distinguirla de la definici\'on \eqref{dif1}.
-%%%%
-%%%%%
-\subsection*{Diferenciales sucesivos: f\'ormula simb\'olica}
-Observando la expresi\'on \eqref{dif1} del diferencial de $z = f(x,y)$:
+    que se denomina <i>expresi\'on anal\'itica del diferencial</i>, para distinguirla de la definici\'on \eqref{dif1}.
+
+    <b>Diferenciales sucesivos: f\'ormula simb\'olica</b>
+<p>Observando la expresi\'on \eqref{dif1} del diferencial de $z = f(x,y)$:
 \begin{equation*}
 df = f_x(x,y)\Delta x+f_y(x,y)\delta y,
 \end{equation*}
-vemos que $df$ depende de $x$ e $y$ (pues las derivadas parciales son funciones del par $(x,y)$), y tambi\'en de los incrementos $\Delta x$ y $\Delta y$.
+vemos que $df$ depende de $x$ e $y$ (pues las derivadas parciales son funciones del par $(x,y)$), y tambi\'en de los incrementos $\Delta x$ y $\Delta y$.</p>
 
-Si damos valores constantes a los incrementos $\Delta x$ y $\Delta y$, el diferencial es una funci\'on \'unicamente de $(x,y)$, y considerada como una func\'on de estas dos variables podr\'a tener a su vez un diferencial que llamaremos {\it diferencial segundo de $f$} e indicaremos con $d^2f$:
-\begin{equation*}
+<p>Si damos valores constantes a los incrementos $\Delta x$ y $\Delta y$, el diferencial es una funci\'on \'unicamente de $(x,y)$, y considerada como una func\'on de estas dos variables podr\'a tener a su vez un diferencial que llamaremos {\it diferencial segundo de $f$} e indicaremos con $d^2f$:
+\begin{equation}
 d^2f = d(df).
-\end{equation*}
-An\'alogamente representaremos el diferencial tercer, cuarto,..., de en\'esimo orden de $f(x,y)$ por $d^3f$, $d^4f$,...,$d^nf$.
-En general, si existen y son continuas las derivadas $n$-\'esimas en el punto considerado y $x$ e $y$ son variables independientes, entonces $dx = \Delta x$ y $dy = \Delta y$ y se verifica la siguiente {\it f\'ormula simb\'olica}
+\end{equation}
+    </p>
+<p>An\'alogamente representaremos el diferencial tercer, cuarto,..., de en\'esimo orden de $f(x,y)$ por $d^3f$, $d^4f$,...,$d^nf$.
+En general, si existen y son continuas las derivadas $n$-\'esimas en el punto considerado y $x$ e $y$ son variables independientes, entonces $dx = \Delta x$ y $dy = \Delta y$ y se verifica la siguiente <i> f\'ormula simb\'olica</i>
 \begin{equation}
 \begin{split}
 d^nf &= \left(dx\frac{\partial}{\partial x}+dy\frac{\partial}{\partial y}\right)^{(n)}f(x,y)\\
@@ -61,17 +49,16 @@ d^nf &= \left(dx\frac{\partial}{\partial x}+dy\frac{\partial}{\partial y}\right)
 \end{split}
 \label{difsym}
 \end{equation}
-%%
-\noindent\fbox{
-    \parbox{\textwidth}{
-Hay que se\~nalar que la expresi\'on anterior no constituye una definici\'on del diferencial $n$-\'esimo. Se trata s\'olo de una expresi\'on que, bajo ciertas condiciones sobre las derivadas parciales, permite obtener dicho diferencial.}}
-%%%%
-%%%%%
-\subsection*{F\'ormula de Taylor para dos variables}
-Supongamos que la funci\'on $z = f(x,y)$ tiene en un entorno $\mathcal{U}$ del punto $(a,b)$ derivadas parciales continuas hasta el orden $(n+1)$ inclusive. Sean $h,k$ tales que el rect\'angulo formado por los v\'ertices 
-\begin{equation*}
+    </p>
+
+<i>Hay que se\~nalar que la expresi\'on anterior no constituye una definici\'on del diferencial $n$-\'esimo. Se trata s\'olo de una expresi\'on que, bajo ciertas condiciones sobre las derivadas parciales, permite obtener dicho diferencial.</i>
+
+    
+    <b>F\'ormula de Taylor para dos variables</b>
+<p>Supongamos que la funci\'on $z = f(x,y)$ tiene en un entorno $\mathcal{U}$ del punto $(a,b)$ derivadas parciales continuas hasta el orden $(n+1)$ inclusive. Sean $h,k$ tales que el rect\'angulo formado por los v\'ertices 
+\begin{equation}
 \{(a,b),(a+h,b),(a,b+k),(a+h,b+k)\}
-\end{equation*}
+\end{equation}
 est\'e contenido en el entorno $\mathcal{U}$, entonces se verifica la {\it f\'ormula de Taylor}:
 \begin{equation}
 \begin{split}
@@ -85,8 +72,7 @@ donde
 R_n(h,k) = \frac{1}{(n+1)!}\left[h\frac{\partial}{\partial x}+k\frac{\partial}{\partial y}\right]^{(n+1)}f(a+h\theta,b+k\theta),\quad\left(0<\theta<1\right).
 \label{resto}
 \end{equation}
-%%%
-%%%
+    </p>
 Si en \eqref{taylor1} se pasa el primer t\'ermino del miembro derecho al primero, empleando la notaci\'on diferencial, podemos escribir la f\'ormula de Taylor como
 \begin{equation}
 \Delta f(a,b) = \sum_{i = 1}^{n}\frac{d^if(a,b)}{i!}+\frac{d^{(n+1)}f(a+h\theta,b+k\theta)}{(n+1)!},\quad\left(0<\theta<1\right),
