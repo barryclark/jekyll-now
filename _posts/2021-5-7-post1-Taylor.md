@@ -9,13 +9,45 @@ title: Polinomio de Taylor en dos variables
 Abajo presento los resultados básicos del tema
 
 # El diferencial
+\documentclass[12pt,letterpaper]{article}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+%\usepackage{enumerate}
+%\usepackage[ansinew]{inputenc}
+\usepackage{enumitem}
+\usepackage[right=2cm,left=3cm,top=2cm,bottom=2cm,headsep=0cm,footskip=0.5cm]{geometry}
+\usepackage[dvips]{graphicx}
+\usepackage{mathspec}
+%\usepackage{OldStandard}
+%\usepackage[T1]{fontenc}
+%\usepackage{xltxtra} 
+%\defaultfontfeatures{Mapping=tex-text}
+%\setallmainfonts{OldStandard}
+%%%%
+\addto\captionsspanish{\renewcommand{\refname}{Bibliograf\'ia.}}
+\newtheorem{definition}{Definici\'on}	
+%%%%%
+%%%%%
+\begin{document}
+\begin{center}
+\small{Concurso de Asistente -- An\'alisis Matem\'atico I (5551) \& An\'alisis Matem\'atico II (5552)}
+\end{center}
+\vspace{-0.5em}
+\hrule
+\vspace{1.5em}
 
-<p><b>Definición:</b> Diremos que la funci\'on $$z = f(x,y)$$ es diferenciable en el punto $$(x_0,y_0)$$ si est\'a un\'ivocamente definida en un entorno de este punto y su incremento se expresa as\'i:
+\begin{center}
+{\Large \textbf{Polinomio y f\'ormula de Taylor en varias variables}}
+\end{center}
+\subsection*{El diferencial}
+\begin{definition} Diremos que la funci\'on $z = f(x,y)$ es diferenciable en el punto $(x_0,y_0)$ si est\'a un\'ivocamente definida en un entorno de este punto y su incremento se expresa as\'i:
 \begin{equation}
 \Delta z_0 = f(x_0+\Delta x_0,y_0+\Delta y_0)-f(x_0,y_0) = \mathrm{A}\Delta x_0+\mathrm{B}\Delta y_0+o(\rho),
 \label{incremento}
 \end{equation}
-como funci\'on lineal homog\'enea de los incrementos independientes $$\Delta x_0$$, $$\Delta y_0$$ con coeficientes constantes $$\mathrm{A}$$ y $$\mathrm{B}$$, y $$\rho$$ es un infinit\'esimo de orden superior a $$\sqrt{\Delta x_0^2+\Delta y_0^2}$$.<\p>
+como funci\'on lineal homog\'enea de los incrementos independientes $\Delta x_0$, $\Delta y_0$ con coeficientes constantes $\mathrm{A}$ y $\mathrm{B}$, y $\rho$ es un infinit\'esimo de orden superior a $\sqrt{\Delta x_0^2+\Delta y_0^2}$.
 
 Se llama diferencial total de una funci\'on diferenciable a la parte lineal de \eqref{incremento}, y es designado por
 \begin{equation}
