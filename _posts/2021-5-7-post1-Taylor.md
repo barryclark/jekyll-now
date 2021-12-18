@@ -6,7 +6,7 @@ title: Polinomio de Taylor en dos variables
 
 <i> Aquí los pueden descargar: <a href = "https://drive.google.com/file/d/1pQJFa5nNHgjibx8G1PQB3EaAsqJagjVb/view?usp=sharing">Resultados</a>, <a href="https://drive.google.com/file/d/1pJi5mmGerrfOUmi2_OkzloG8k099ztJy/view?usp=sharing">Demostración</a>, <a href="https://drive.google.com/file/d/1WORhSLhlQ8JPgoqidI4b6vuflTpd8Lxq/view?usp=sharing">Ejercicios</a></i>
 
-#Resultados básicos
+# Resultados básicos
 
 <b>Definición:</b>Diremos que la función $z = f(x,y)$ es diferenciable en el punto $(x_0,y_0)$ si está unívocamente definida en un entorno de este punto y su incremento se expresa así:
 \begin{equation}
