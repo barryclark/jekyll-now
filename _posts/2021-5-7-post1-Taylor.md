@@ -32,9 +32,9 @@ dz = df(x,y) = f_x(x,y)dx +f_y(x,y)dy,
 
 
 <b>Diferenciales sucesivos y la fórmula simbólica:</b> Observando la expresión \eqref{dif1} del diferencial de $z = f(x,y)$:
-\begin{equation*}
+\begin{equation}
 df = f_x(x,y)\Delta x+f_y(x,y)\delta y,
-\end{equation*}
+\end{equation}
 vemos que $df$ depende de $x$ e $y$ (pues las derivadas parciales son funciones del par $(x,y)$), y también de los incrementos $\Delta x$ y $\Delta y$.
 
 Si damos valores constantes a los incrementos $\Delta x$ y $\Delta y$, el diferencial es una función únicamente de $(x,y)$, y considerada como una función de estas dos variables podrá tener a su vez un diferencial que llamaremos <i> diferencial segundo de $f$</i> e indicaremos con $d^2f$:
@@ -51,7 +51,6 @@ d^nf &= \left(dx\frac{\partial}{\partial x}+dy\frac{\partial}{\partial y}\right)
 \end{split}
 \label{difsym}
 \end{equation}
-    </p>
 
 <i>Hay que señalar que la expresión anterior no constituye una definición del diferencial $n$-ésimo. Se trata sólo de una expresión que, bajo ciertas condiciones sobre las derivadas parciales, permite obtener dicho diferencial.</i>
 
