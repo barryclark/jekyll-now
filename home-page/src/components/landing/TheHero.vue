@@ -13,7 +13,7 @@
       </p>
     </div>
     <div class="col-lg-6 mx-auto py-4">
-      <base-button>Projects</base-button>
+      <base-button>Projects (Coming soon...)</base-button>
     </div>
   </div>
 </template>
