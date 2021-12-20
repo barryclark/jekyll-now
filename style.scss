@@ -18,8 +18,7 @@ html {
 }
 
 body {
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(12,3,83,1) 100%);
+  background: $black;
   font: 18px/1.4 $helvetica;
   color: #ddd;
 }
@@ -276,7 +275,8 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: #333;
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(18 250 50)
 }
 
 footer {
