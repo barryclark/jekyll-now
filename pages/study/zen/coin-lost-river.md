@@ -10,7 +10,7 @@ Related: Read the short article on [How to Practice Zen Koans](https://www.lions
 
 ## Prompts
 
-If that were beneficial, you can ask yourself systematically:
+One thing I did to deepen my investigation of this koan was to contemplate different facets of it systematically. For instance, for every meaning or "reading" that comes to mind, you can ask yourself:
 - What is lost?
 - How is it lost?
 - What is the river?
@@ -20,7 +20,7 @@ If that were beneficial, you can ask yourself systematically:
 
 My own elaborations and prompts on this koan. Remember, the investigation **has to be your own** (see [introduction](../intro-to-koans)).
 
-## Very literally: the coin
+## Very literally... a coin
 
 I drop a coin in the river, it is lost.  
 Is it though? I __know__ where it is. It is in the river!  
@@ -39,7 +39,7 @@ No thing belongs to me, every thing is found.
 If the world was _mine_, if I found the river, nothing would ever be lost.  
 It is because I keep thinking in terms of mine / not mine that I keep loosing my coins in the river.
 
-## My friend
+## My friend (that passed away)
 
 _What is lost?_ - I lost my friend, my friend is lost.  
 _How is it lost?_ - By passing away, by death, by dissolution of the body, by impermanence. She is lost for me, hidden, engulfed by the river.  
