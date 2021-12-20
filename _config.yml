@@ -1,15 +1,15 @@
 #
 # This file contains configuration flags to customize your site
-#
+#https://avatars.githubusercontent.com/u/8672357
 
 # Name of your site (displayed in the header)
 name: 'Der Benji'
 
 # Short bio or description (displayed in the header)
-description: 'Father, DevSecOps, InfoSec enthusiast, agilist with common sense, and anarchistic chaot (AD&D: Chaotic Good)'
+description: 'Father, DevSecOps, InfoSec enthusiast, agilist with common sense'
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: 'https://avatars.githubusercontent.com/u/8672357?v=4'
+avatar: 'https://avatars.githubusercontent.com/u/8672357'
 
 #
 # Flags below are optional
