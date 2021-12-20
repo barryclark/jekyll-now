@@ -137,7 +137,7 @@ Old Paichang does not belong to the same side of the mountain, still he deserves
 If we were to pick between the view of gradual enlightenment and the view of sudden enlightenment:
 - Which view is related to "Such a person does not fall..."?
 - Which view is related to "With this I was reborn five hundred times as a fox"?
-- Which view is related to "Such a person does not evage..."?
+- Which view is related to "Such a person does not evade..."?
 - Which view is related to "Hearing this, the old man immediately was enlightened."?
 
 Why did old Paichang have to wait for such a long time, go through so many lives, to ultimately be suddenly enlightened? Isn't that ironic?
@@ -206,6 +206,12 @@ No you're not. _"Fox drool is still there."_
 Before and after the turning point are the same. Old Paichang was enlightened but there was __no evasion__, precisely __because__ an enlightened person _"does **not** evade the law of cause and effect"_.
 
 But still, __something__ must have turned, but __what__ ? __What__ could be _"released from the body of the fox"_ ?
+
+> What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
+
+Yes. What would have happened then? What **then**?
+
+What is the effect of **this** cause? Is there any even?
 
 ## Unsorted notes
 
