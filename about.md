@@ -1,9 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: /whoami
+permalink: /whoami/
 ---
-## /whoami
 
 Hi, I'm Benji - A Cloud Security Engineer who is interrested in cloud native technologies, DevOps culture and Security that isn't based on Excel. 
 
