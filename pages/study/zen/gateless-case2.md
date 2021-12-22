@@ -310,6 +310,8 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 
 ## Closing notes
 
+Answering the koan is enacting the law of cause and effect, to translate it into action.
+
 How could one even formulate an answer?  
 If one did, and if it was wrong, then they would be reborn as a fox.  
 If one did, and if it was right, what would happen then?
