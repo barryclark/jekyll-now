@@ -38,9 +38,10 @@ More reliable though is to publish the libraries to pypi and do a normal pip ins
 $ docker build -t . my-docker-image
 $ docker save -o /absolute/path/to/save/tar/file.tar my-docker-image
 $ rsync -avze 'ssh -i ~/.ssh/my-ssh-key' my-docker-image.tar myuser@my.remote.box.ip:/my/home/dir/
+$ (on the remote box) docker load < my-docker-image.tar
 ```
 
 ## Setup cronjob
 If the code needs to run on some schedule, I believe it's easier to write the cronjob on the host to run the docker image, 
-instead of running the image always and having the cronjob inside of it.
+instead of running the image always and having the cronjob inside of it. 
 
