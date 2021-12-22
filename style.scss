@@ -8,8 +8,13 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
-$body-background: black !default;
-$body-foreground: black !default;
+@import "default_colors";
+
+$body-background: $cod-grey !default;
+$body-foreground: $gallery !default;
+$header: $default !default;
+$blockquote-color: $silver-chalice !default;
+$blockquote-border: $dove-grey !default;
 
 
 /**************/
@@ -31,6 +36,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: overlay;
+  font: 18px/1.4 $helvetica;
   background: $body-background url("https://raw.githubusercontent.com/BenjiTrapp/benjitrapp.github.io/master/images/bkg.png") 0 0;
   color: $body-foreground;
 }
