@@ -34,9 +34,9 @@ html {
 }
 
 body {
-  background: $black;
+  background: $#010409;
   background-image: url("https://raw.githubusercontent.com/BenjiTrapp/benjitrapp.github.io/master/images/bkg.png");
-  background-color: $black;
+  background-color: $#010409;
   overflow-y: overlay;
 }
 
@@ -303,7 +303,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   background: rgb(0,0,0);
-  background-image: linear-gradient(#28ff00, black);
+  background-image: linear-gradient(#28ff00, #010409);
 }
 
 footer {
