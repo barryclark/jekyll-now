@@ -8,13 +8,6 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
-@import "default_colors";
-
-$body-background: $cod-grey !default;
-$body-foreground: $gallery !default;
-$header: $default !default;
-$blockquote-color: $silver-chalice !default;
-$blockquote-border: $dove-grey !default;
 
 
 /**************/
@@ -25,20 +18,11 @@ html {
   font-size: 100%;
 }
 
-//body {
-//  background: $black;
-//  font: 18px/1.4 $helvetica;
-//  color: #ddd;
-//}
-
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  background: $black;
+  background-image: url("https://raw.githubusercontent.com/BenjiTrapp/benjitrapp.github.io/master/images/bkg.png");
+  background-color: $black;
   overflow-y: overlay;
-  font: 18px/1.4 $helvetica;
-  background: $body-background url("https://raw.githubusercontent.com/BenjiTrapp/benjitrapp.github.io/master/images/bkg.png") 0 0;
-  color: $body-foreground;
 }
 
 .container {
