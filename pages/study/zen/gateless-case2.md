@@ -258,7 +258,7 @@ In this one, Dogen clearly considers Paichang's answer ("he is not blind to caus
 
 ## Composing an answer?
 
-After Dogen's slap, I was suggested to focus on the question. I started writing answers that came to be, trying to capture all those glimpses of understanding I had earlier in this process. Still not satisfied with any of those, probably never will be.
+After Dogen's slap, I was suggested to focus on the question. I started writing answers that came to me, trying to capture all those glimpses of understanding I had earlier in this process. Still not satisfied with any of those, probably never will be.
 
 ### Answers trying to be clever
 
@@ -307,3 +307,19 @@ After Dogen's slap, I was suggested to focus on the question. I started writing 
 
 \- Does an enlightened person fall under the law of cause and effect or not?  
 \- _"Just do good, don't ask about the road ahead."_ [The Book of Serenity, Case 8, added sayings]
+
+## Closing notes
+
+How could one even formulate an answer?  
+If one did, and if it was wrong, then they would be reborn as a fox.  
+If one did, and if it was right, what would happen then?
+
+Would enlightenment happen?
+If there is no evasion, then nothing would happen.  
+Cause and effect. What is the answer that has no effect?
+
+Would that one be able to answer the question once more? What between one answer (wrong), and the other? What between one answer (right) and the other? How can it be once more, if it has no effect?
+
+What is "happen"? Cause, effect, cause and effect. What's "and"? "I, **and** the great earth and beings, simultaneously achieve the way".
+
+Closing, for now.
