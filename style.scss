@@ -12,6 +12,7 @@
 // colors
 $background: #0d1117;
 $gray-border: #30363d;
+$light-lime: #7ee787;
 
 /**************/
 /* BASE RULES */
@@ -65,7 +66,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $light-lime;
 }
 
 p {
@@ -121,7 +122,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $light-lime;
 }
 
 // Specify the color of the selection
@@ -258,7 +259,7 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $light-lime;
     padding: 0.1em 1em;
     color: $lightGray;
     font-size: 22px;
@@ -279,7 +280,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   background: rgb(0,0,0);
-  background-image: linear-gradient(#28ff00, $background);
+  background-image: linear-gradient(#28ff00, ,$background);
 }
 
 footer {
