@@ -9,6 +9,9 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+// colors
+$background: #0d1117;
+$gray-border: #30363d;
 
 /**************/
 /* BASE RULES */
@@ -19,7 +22,7 @@ html {
 }
 
 body {
-  background: #010409;
+  background: $background;
   font: 18px/1.4 $helvetica;
   color: #ddd;
 }
@@ -276,7 +279,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   background: rgb(0,0,0);
-  background-image: linear-gradient(#28ff00, #010409);
+  background-image: linear-gradient(#28ff00, $background);
 }
 
 footer {
