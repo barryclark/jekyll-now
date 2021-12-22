@@ -30,7 +30,7 @@ an arg, or if you want, you can follow the answer on this [SO post](https://stac
 
 ## Relative imports
 If you're importing from places that won't live in the docker container, then this obviously won't work.
-In some cases, I've copied the library directories into app project directory and install from there.
+In some cases, I've copied the library directories into the app project directory and use `sys` relative imports.
 More reliable though is to publish the libraries to pypi and do a normal pip install.
 
 ## Upload docker image to remote box
