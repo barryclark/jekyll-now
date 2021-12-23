@@ -324,4 +324,6 @@ Would that one be able to answer the question once more? What between one answer
 
 What is "happen"? Cause, effect, cause and effect. What's "and"? "I, **and** the great earth and beings, simultaneously achieve the way".
 
+Like Paichang releasing Old Paichang from the body of a fox, Enlightenment doesn't happen suddenly now, it happens for all past simultaneously.
+
 Closing, for now.
