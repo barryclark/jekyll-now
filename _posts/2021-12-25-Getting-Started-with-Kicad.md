@@ -45,6 +45,15 @@ The tutorial is available at:
 
 <img src="../images/kicad-getting-to-blinky-3d-view.png" alt="KiCad project" width="500"/>
 
+## Getting Into Production
+
+You can get your designed PCB produced for as low as 7$, including shipment! Simply generate the Gerber and Drill files and upload them to your favorite PCB maker. JLCPCB is a good place to start:
+
+<img src="../images/kicad-getting-to-blinky-production.png" alt="KiCad project" width="500"/>
+
+
 ## Resources
 
 <a href='../resources/getting-to-blinky-6-0.zip'>Project Source File</a>
+
+*Thanks for reading, and see you next time!*
