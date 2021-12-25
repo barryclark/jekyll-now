@@ -47,5 +47,4 @@ The tutorial is available at:
 
 ## Resources
 
-(right click and hit download)
 <a href='../resources/getting-to-blinky-6-0.zip'>Project Source File</a>
