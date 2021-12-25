@@ -44,3 +44,8 @@ The tutorial is available at:
 ### 6. Your First PCB!
 
 <img src="../images/kicad-getting-to-blinky-3d-view.png" alt="KiCad project" width="500"/>
+
+## Resources
+
+(right click and hit download)
+<a href='../resources/getting-to-blinky-6-0.zip'>Project Source File</a>
