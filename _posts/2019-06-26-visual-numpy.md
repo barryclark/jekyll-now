@@ -8,7 +8,7 @@ title: A Visual Intro to NumPy and Data Representation
 <a href="https://news.ycombinator.com/item?id=20282985" class="hn-link">Hacker News (366 points, 21 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/c5nc89/p_a_visual_intro_to_numpy_and_data_representation/" class="">Reddit r/MachineLearning (256 points, 18 comments)</a>
 </span>
 <br />
-<span class="discussion">Translations: <a href="http://www.junphy.com/wordpress/index.php/2019/10/24/visual-numpy/">Chinese 1</a>, <a href="https://github.com/kevingo/blog/blob/master/ML/visual-numpy.md">Chinese 2</a>, <a href="https://note.mu/sayajewels/n/n95edaedb0fc5">Japanese</a></span>
+<span class="discussion">Translations: <a href="http://www.junphy.com/wordpress/index.php/2019/10/24/visual-numpy/">Chinese 1</a>, <a href="https://github.com/kevingo/blog/blob/master/ML/visual-numpy.md">Chinese 2</a>, <a href="https://note.mu/sayajewels/n/n95edaedb0fc5">Japanese</a>, <a href="https://chloamme.github.io/translation/2021/12/20/visual-numpy-korean.html">Korean</a></span>
 
 
 

@@ -5,7 +5,7 @@ title: A Visual Guide to Using BERT for the First Time
 ---
 
 
-<span class="discussion">Translations: <a href="http://www.junphy.com/wordpress/index.php/2020/10/20/a-visual-guide-using-bert/">Chinese</a>, <a href="https://habr.com/ru/post/498144/">Russian</a></span>
+<span class="discussion">Translations: <a href="http://www.junphy.com/wordpress/index.php/2020/10/20/a-visual-guide-using-bert/">Chinese</a>, <a href="https://chloamme.github.io/translation/2021/12/22/a-visual-guide-to-using-bert-for-the-first-time-korean.html">Korean</a>, <a href="https://habr.com/ru/post/498144/">Russian</a></span>
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/distilBERT/bert-distilbert-sentence-classification.png"/>
