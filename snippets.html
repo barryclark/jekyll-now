@@ -1,0 +1,21 @@
+---
+layout: page
+title: Snippets
+permalink: /snippets/
+---
+<div class="prose">
+  <h2>Snippets</h2>
+  {% if site.snippets == nil %}
+    <p>No posts...yet.</p>
+  {% else %}
+  {% for snippet in site.snippets %}
+    <article>
+      <h3><a href="{{ site.baseurl }}{{ snippet.url }}">{{ snippet.title }}</a></h3>
+      <div class="entry">
+        {{ snippet.excerpt }}
+      </div>
+      <a href="{{ site.baseurl }}{{ snippet.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+{% endif %}
+</div>

@@ -1,0 +1,56 @@
+I"7<p>Level: Easy</p>
+
+<p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
+
+<p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
+
+<p>You can return the answer in any order.</p>
+
+<hr />
+
+<h4 id="example-1">Example 1:</h4>
+<div class="code-header flex justify-end">
+    <button class="copy-code-button grid grid-flow-col items-center gap-1 border-none px-1 py-2 before:content-['Copy'] after:content-['📋'] after:block" aria-label="Copy code to clipboard"></button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+</code></pre></div></div>
+
+<h4 id="example-2">Example 2:</h4>
+<div class="code-header flex justify-end">
+    <button class="copy-code-button grid grid-flow-col items-center gap-1 border-none px-1 py-2 before:content-['Copy'] after:content-['📋'] after:block" aria-label="Copy code to clipboard"></button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: nums = [3,2,4], target = 6
+Output: [1,2]
+</code></pre></div></div>
+
+<h4 id="example-3">Example 3:</h4>
+<div class="code-header flex justify-end">
+    <button class="copy-code-button grid grid-flow-col items-center gap-1 border-none px-1 py-2 before:content-['Copy'] after:content-['📋'] after:block" aria-label="Copy code to clipboard"></button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: nums = [3,3], target = 6
+Output: [0,1]
+</code></pre></div></div>
+
+<h2 id="solution">Solution</h2>
+<div class="code-header flex justify-end">
+    <button class="copy-code-button grid grid-flow-col items-center gap-1 border-none px-1 py-2 before:content-['Copy'] after:content-['📋'] after:block" aria-label="Copy code to clipboard"></button>
+</div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">twoSum</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">nums</span><span class="p">,</span> <span class="nx">target</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">hash</span> <span class="o">=</span> <span class="p">{};</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="kd">const</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">target</span> <span class="o">-</span> <span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+    <span class="k">if</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="nx">hash</span><span class="p">[</span><span class="nx">j</span><span class="p">])</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span><span class="p">){</span>
+      <span class="k">return</span> <span class="p">[</span><span class="nx">hash</span><span class="p">[</span><span class="nx">j</span><span class="p">],</span> <span class="nx">i</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="nx">hash</span><span class="p">[</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">i</span><span class="p">;</span>
+  <span class="p">}</span>
+   <span class="k">return</span> <span class="p">[];</span>
+<span class="p">};</span>
+</code></pre></div></div>
+:ET

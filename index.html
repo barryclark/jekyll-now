@@ -1,18 +1,31 @@
 ---
 layout: default
+pagination: 
+  enabled: true
 ---
 
-<div class="posts">
+<div class="prose">
+  <h1>
+    Snippets and Leetcode solution notes for myself
+  </h1>
+  <h2>Leetcode solutions</h2>
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+    <article>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
       <div class="entry">
         {{ post.excerpt }}
       </div>
-
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
+  {% endfor %}
+  <h2>Snippets</h2>
+  {% for snippet in site.snippets %}
+    <article>
+      <h3><a href="{{ site.baseurl }}{{ snippet.url }}">{{ snippet.title }}</a></h3>
+      <div class="entry">
+        {{ snippet.excerpt }}
+      </div>
+      <a href="{{ site.baseurl }}{{ snippet.url }}" class="read-more">Read More</a>
+      </article>
   {% endfor %}
 </div>
