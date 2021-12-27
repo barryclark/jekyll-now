@@ -341,13 +341,13 @@ pre code {
 
 
 
-<div id="header">
+#<div id="header">
 
 
 
-<h1 class="title toc-ignore">Non-negative Matrix Factorization</h1>
+#<h1 class="title toc-ignore">Non-negative Matrix Factorization</h1>
 
-</div>
+#</div>
 
 
 In this post, I will be discussing Non-negative Matrix Factorization (NMF). NMF is a low-rank approximation algorithm that discovers latent features in your data. It is similar to PCA in the sense that they both reduce high-dimensional data into lower dimensions for better understanding of the data. The major difference is that PCA projects data onto a subspace that maximizes variability for the discovered features, while NMF discovers non-negative features that are additive in nature. NMF is formally defined as:
@@ -355,7 +355,7 @@ In this post, I will be discussing Non-negative Matrix Factorization (NMF). NMF 
 <p><span class="math display">\[V \approx W H\]</span></p>
 </div>
 <p>where <span class="math inline">\(V\)</span> is a non-negative matrix and both <span class="math inline">\(W\)</span> and <span class="math inline">\(H\)</span> are unique and non-negative matrices. In other words, the matrix <span class="math inline">\(V\)</span> is factorized into two matrices <span class="math inline">\(W\)</span> and <span class="math inline">\(H\)</span>, where <span class="math inline">\(W\)</span> is the features matrix or the basis and <span class="math inline">\(H\)</span> is the coefficient matrix. Typically, this means that <span class="math inline">\(H\)</span> represents a coordinate system that uses <span class="math inline">\(W\)</span> to reconstruct <span class="math inline">\(V\)</span>. We can consider that <span class="math inline">\(V\)</span> is a linear combination of column vectors of <span class="math inline">\(W\)</span> using the coordinate system in <span class="math inline">\(H\)</span>, <span class="math inline">\(v_{i} = Wh_{i}\)</span>.</p>
-<p>Here, I will describe two algorithms to solve for NMF using iterative updates of <span class="math inline">\(W\)</span> and <span class="math inline">\(H\)</span>. First, we will consider the cost function. A cost function is a function that quantifies or measures the error between the predicted values and the expected values. The Mean Squared Error (MSE), or L2 loss is one of the most popular cost functions in linear regressions. Given an linear equation <span class="math inline">\(y = mx + b\)</span>, MSE is:</p>
+<p>Here, I will describe two algorithms to solve for NMF using iterative updates of <span class="math inline">\(W\)</span> and <span class="math inline">\(H\)</span>. First, we will consider a cost function that quantifies or measures the error between the predicted values and the expected values. The Mean Squared Error (MSE), or L2 loss is one of the most popular cost functions in linear regressions. Given an linear equation <span class="math inline">\(y = mx + b\)</span>, MSE is:</p>
 <div>
 <p><span class="math display">\[MSE = \frac{1}{N}\Sigma_{i=1}^{n}(y_{i}-(mx_{i}+b))^{2} \]</span></p>
 </div>
@@ -369,7 +369,7 @@ In the case of NMF, we are using the square of the Forbenius norm to measure how
 </div>
 <p>We can see that as <span class="math inline">\(WH\)</span> approaches <span class="math inline">\(V\)</span>, then the equation will slowly converge to zero. Therefore, the optimization can be defined as the following:</p>
 <p>Minimize <span class="math inline">\(||V - WH||_{F}^{2}\)</span> with respect to <span class="math inline">\(W\)</span> and <span class="math inline">\(H\)</span>, subject to the constraints <span class="math inline">\(W,H \ge 0\)</span></p>
-<p>In the paper by Lee &amp; Seung, they introduced the multiplicative update rule to solve for NMF. Please see their original paper for details on the proof. Essentially the update causes the function value to be non-increasing to converge to zero.</p>
+<p>In the paper by Lee &amp; Seung, they introduced the multiplicative update rule to solve for NMF. Please see their original paper for details on the proof. Essentially the multiplicative update causes the function output to be non-increasing to converge to zero.</p>
 <p><span class="math display">\[H_{ik} \leftarrow H_{ik}\frac{(W^{T}V)_{ik}}{(W^{T}WH)_{ik}}\]</span></p>
 <div>
 <p><span class="math display">\[W_{kj} \leftarrow W_{kj}\frac{(VH^{T})_{kj}}{(WHH^{T})_{kj}}\]</span></p>
