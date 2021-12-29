@@ -1,5 +1,5 @@
 ---
 layout: post
 title: Manage Your Environment
-categories: 12factor
+categories: suckless
 ---
