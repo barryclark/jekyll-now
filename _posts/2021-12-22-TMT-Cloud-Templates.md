@@ -9,4 +9,4 @@ These are some first steps to create Templates for cloud based Threat Models. Th
 
 ![_config.yml]({{ site.baseurl }}/images/blog_2021_23_12_tmt.png)
 
-Based on this example threat model the output with it's containing risks and threats looks like [this](https://github.com/BenjiTrapp/tmt-cloud-templates/blob/main/samples/aws/full_report.htm)
+Based on this example threat model the output with it's containing risks and threats looks like [this](/assets/posts/aws_tmt_report.htm)
