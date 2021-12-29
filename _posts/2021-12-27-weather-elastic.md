@@ -1,9 +1,7 @@
 ---
-title: "Elasticsearch Weather"
+title: "Bringing Weather Data to Elasticsearch"
 date: 2021-12-29T19+01:00
 ---
-
-# Bringing Weather Data to Elasticsearch
 
 The following Logstash configuration polls the [Weather Underground API](https://docs.google.com/document/d/1eKCnKXI9xnoMGRRzOL1xPCBihNV2rOet08qpE_gArAY/edit) and stores the document into Elasticsearch.
 
