@@ -4,7 +4,8 @@ title: Test Post
 ---
 
 # Title1
-Random Text
+year-month-day-title.md
+2021-1-1-testpost.md
 
 ## Title2
 Random Text
