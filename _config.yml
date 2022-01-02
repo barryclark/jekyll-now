@@ -9,39 +9,38 @@ name: Snowy
 description: The variety show for ramblings
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/profile_images/1372234279288119296/v1VQgsLB_400x400.jpg
-
+avatar: https://avatars.githubusercontent.com/u/45722564
 #
 # Flags below are optional
 #
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: 
-  instagram:
-  linkedin:
-  pinterest:
+  #dribbble:
+  #email:
+  #facebook:
+  #flickr:
+  github: https://github.com/TheSnowWight
+  #instagram:
+  #linkedin:
+  #pinterest:
   rss: rss-icon # just type anything here for a working RSS icon
   twitter: https://twitter.com/TheSnowWight
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  #stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  #youtube: # channel/<your_long_string> or user/<user-name>
+  #googleplus: # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+#disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+#google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://thesnowwight.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
