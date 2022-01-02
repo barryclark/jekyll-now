@@ -10,4 +10,4 @@ permalink: /about/
 
 ### Contact me
 
-[Twitter](link:https://twitter.com/TheSnowWight)
+[Twitter](https://twitter.com/TheSnowWight)
