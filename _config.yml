@@ -20,12 +20,12 @@ footer-links:
   #email:
   #facebook:
   #flickr:
-  github: https://github.com/TheSnowWight
+  github: TheSnowWight
   #instagram:
   #linkedin:
   #pinterest:
   rss: rss-icon # just type anything here for a working RSS icon
-  twitter: https://twitter.com/TheSnowWight
+  twitter: TheSnowWight
   #stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   #youtube: # channel/<your_long_string> or user/<user-name>
   #googleplus: # anything in your profile username that comes after plus.google.com/
@@ -40,7 +40,7 @@ footer-links:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://thesnowwight.github.io/
+url: https://thesnowwight.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
