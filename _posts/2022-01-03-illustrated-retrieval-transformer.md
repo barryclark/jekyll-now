@@ -134,8 +134,6 @@ RETRO Architecture at a High Level
 
 RETRO's architecture is an encoder stack and a decoder stack.
 
-The 7.5B parameter model has 32 layers in each stack.
-
 <div class="img-div" markdown="0">
   <img src="/images/retro/Retro-transformer-encoder-decoder-stacks-2.png" />
   <br />
