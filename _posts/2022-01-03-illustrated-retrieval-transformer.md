@@ -13,7 +13,7 @@ title: The Illustrated Retrieval Transformer
 
 The last few years saw the rise of Large Language Models (LLMs) -- machine learning models that rapidly improve how machines process and generate language. Some of the highlights since 2017 include:
 
-*   The original [Transformer](/illustrated-transformer/) breaks previous performance record for machine translation
+*   The original [Transformer](/illustrated-transformer/) breaks previous performance records for machine translation.
 * [BERT](/illustrated-bert/) popularizes the pre-training then finetuning process, as well as Transformer-based contextualized word embeddings. It then rapidly starts to power [Google Search](https://blog.google/products/search/search-language-understanding-bert/) and [Bing Search](https://azure.microsoft.com/en-us/blog/bing-delivers-its-largest-improvement-in-search-experience-using-azure-gpus/).
 * [GPT-2](/illustrated-gpt2/) demonstrates the machine's ability to write as well as humans do.
 * First [T5](https://arxiv.org/abs/1910.10683), then [T0](https://huggingface.co/bigscience/T0pp) push the boundaries of transfer learning (training a model on one task, and then having it do well on other adjacent tasks) and posing a lot of different tasks as text-to-text tasks.
@@ -33,8 +33,7 @@ RETRO was presented in the paper [Improving Language Models by Retrieving from T
 
 <!--more-->
 
-What RETRO Adds to the NLP Landscape?---An Intuitive Approach
------------------------------------------------------------
+## Why This is Important: Separating Language Information from World Knowledge Information
 
 Language modeling trains models to predict the next word--to fill-in-the-blank at the end of the sentence, essentially.
 
@@ -143,13 +142,12 @@ The 7.5B parameter model has 32 layers in each stack.
   A RETRO transformer consists of an encoder stack (to process the neighbors) and a decoder stack (to process the input)
 </div>
 
-The encoder is made up of standard Transformer encoder blocks (self-attention + FFNN).
+The encoder is made up of standard Transformer encoder blocks (self-attention + FFNN). To my best understanding, Retro uses an encoder made up of two Transformer Encoder Blocks.
 
 The decoder stack interleaves two kinds of decoder blocks:
 
--   Standard transformer decoder block (ATTN + FFNN)
-
--   RETRO decoder block (ATTN + Chunked cross attention (CCA) + FFNN)
+* Standard transformer decoder block (ATTN + FFNN)
+* RETRO decoder block (ATTN + Chunked cross attention (CCA) + FFNN)
 
 <div class="img-div" markdown="0">
   <img src="/images/retro/retro-transformer-blocks-4.png" />
