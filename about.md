@@ -30,6 +30,10 @@ Hi 👋, I'm Benji - A Cloud Security Engineer who is interrested in cloud nativ
 <img src="https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white"/>&nbsp;
 <img src="https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white"/>&nbsp;
 
+#### My GitHub Metrics
+
+![Metrics](https://metrics.lecoq.io/BenjiTrapp?template=classic&base.header=0&isocalendar=1&languages=1&introduction=1&habits=1&stars=1&gists=1&lines=1&repositories=1&traffic=1&repositories=100&repositories.batch=100&repositories.forks=false&repositories.affiliations=owner&isocalendar.duration=half-year&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&introduction.title=true&habits.from=200&habits.days=14&habits.facts=true&habits.charts=false&habits.trim=false&stars.limit=4&config.timezone=Europe%2FBerlin)
+
 
 #### Meet me on GitHub
 
@@ -43,4 +47,9 @@ Hi 👋, I'm Benji - A Cloud Security Engineer who is interrested in cloud nativ
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=BenjiTrapp&row=1" alt="Git Trophies">
 </p>
+
+
+#### Random Joke
+
+![Jokes Card](https://readme-jokes.vercel.app/api)
 
