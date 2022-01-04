@@ -115,7 +115,7 @@ share-links-active:
 disqus: "terremotocentroitalia"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-47474515-3"
+#google_analytics: "UA-47474515-3"
 
 jekyll-crosseverything_to_medium:
   enabled: false
