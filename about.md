@@ -40,8 +40,9 @@ Hi 👋, I'm Benji - A Cloud Security Engineer who is interrested in cloud nativ
   <img src="https://github-profile-trophy.vercel.app/?username=BenjiTrapp&row=1" alt="Git Trophies">
 </p>
 
-
 #### Random Joke
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
+#### Spotify
+ [![Spotify](https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/el_benjo)
