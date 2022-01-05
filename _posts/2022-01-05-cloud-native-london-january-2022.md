@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2022"
-published: false
 ---
 
 Kicking off 2022 at Cloud Native London, three great speakers from Komodor, Livecycle, and Pulumi join us at the Cloud Native London virtual meetup tonight, from 6:45pm GMT on Rambly and YouTube! Hubert will be hosting.
