@@ -20,22 +20,20 @@ In a nutshell, the generation of electricityMap's data is a multi-stage process.
     <span style="color: #666; font-size: 13px; font-style: italic;">A simplified overview of the electricityMap infrastructure. Thanks Felix for the figure!</span>
 </div>
 
-
-
 This data is at the core of our mission: __to organise the world's electricity data to drive the transition towards a truly decarbonised electricity system__. This global ambition has two important consequences. We must firstly be able to overcome data sources becoming erroneous or unavailable at any moment. Secondly, we must come up with clever ways to generate truthful data for regions of the world where reliable public electrical data sources are unavailable.
 
 These consequences reveal my other current responsibilities; develop and maintain a wide range of models to capture the dynamics of electrical production per factor and exchanges in vastly different areas of the world, and have enough domain expertise to ensure that they behave according to what is physically possible.
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center; margin: 16px 0 32px;">
     <img src="../../resources/posts/2021-12-16/emap_team.JPG" style="width: 75%; overflow: hidden; margin: 16px 0;">
-    <span style="color: #666; font-size: 13px; font-style: italic;">The electricityMap team. (PS: yes, thank you Nick!)</span>
+    <span style="color: #666; font-size: 13px; font-style: italic;">The electricityMap team. (PS: yes, thank you Nick! See here the <a href="https://cloud.google.com/blog/topics/sustainability/the-year-in-carbon-free-energy-at-google">announcement</a> for a 1,000,000€ grant from Google.)</span>
 </div>
 
 These responsabilities are far reaching and evolve rapidly as electricityMap scales up. It is impossible to be highly specialised when only 11 (10 bright + me) people are fighting for something that is way too big for them only. The good news is that as electricityMap grows, I am constantly able to redefine my role as a data scientist, and the practices I should adopt to help the team be succesful.
 
-Recently, we opened a [position](https://electricitymap.org/jobs/index.html) to find a brilliant mind that can become the most knowledgeable about our data quality. At the same time, I started delivering on tasks whose scope overflowed into the realm of data engineering. The former event, because it will most likely reduce the scope of my responsabilities, pushed me to redefine what I, as a data scientist, should focus my efforts on. The latter [inpsired by this more common trend in SE] revealed to me the necessity of defining and implementing good practices for successfully delivering on that newly defined scope.
+Recently, we opened a [position](https://electricitymap.org/jobs/index.html) to find a brilliant mind that can become the most knowledgeable about our data quality. At the same time, I started delivering on tasks whose scope overflowed into the realm of data engineering. The former event, because it will most likely reduce the scope of my responsabilities, pushed me to redefine what I, as a data scientist, should focus my efforts on. The latter, because it is much more common within software/data engineering, revealed to me the necessity of defining and implementing good practices for successfully delivering on that newly defined scope.
 
-Hence this blog post, which aims at capturing my current thoughts and practices as a data scientist for electricityMap. For that reason, it might get updated occasionally.
+Hence this blog post, which aims at capturing my current thoughts around the data scientist role and practices that should be more widely adopted within the profession. This opinion piece is a reflection of the prism through which I perceive my work. It is therefore highly influenced by my work for electricityMap, my previous interrogations between research and industry, and my relative freshness within this position. For that reason, it might get updated occasionally.
 
 #### Table of content:
 
@@ -49,8 +47,6 @@ Hence this blog post, which aims at capturing my current thoughts and practices 
 
 ## The data scientist role
 
-[TODO: add a disclaimer regarding semantics / definition of titles?]
-
 Data scientist are often described as _part mathematician, part computer scientist and part trend-spotter_$$^1$$ by corporates that don't really understand that finding someone that can be a stellar mathematician, computer scientist and analyst at once might be extremely hard. I would tend to think that a company that looks for all three competencies in a single individual has an immature data infrastructure and lacks the experience to realise that asking a single individual to do it all might be counterproductive.
 
 This thought pattern has probably been harmful to many recent graduates who have been developing and researching state of the art machine learning and optimisation models during their studies to end up having to spend most of their time researching data sources, and frying their brains over complex software architecturing problems.
@@ -59,11 +55,11 @@ The previous description could actually corresponds to three different jobs; the
 
 This means that in most cases, recruiting a data scientist should be preceded by hiring a data engineer, who will be much better suited for building up the infrastructure that will support the forthcoming modelling efforts. With libraries like [sklearn](https://scikit-learn.org/stable/) or [PyTorch](https://pytorch.org/), any talented data engineer would already be able to build up a decent pipeline for predictions or estimations without a deep understanding of the models themselves.
 
-With the infrastructure already built up, a data scientist can then generate tremendous value, by capturing and accumulating marginal gains from guiding the creation of automated Q&A systems, ensuring consistency between data distributions [TODO: make clearer], and researching and putting in production new models. [TODO: add sentence about my opinion on putting models in prod, maybe ref https://eugeneyan.com/writing/end-to-end-data-science/#:~:text=Instead%2C%20I%20have%20a%20simple,methodology%2C%20and%20process%20that%20works.]
+With the infrastructure already built up, a data scientist can then generate tremendous value, by capturing and accumulating marginal gains from guiding the creation of automated Q&A systems, ensuring consistency between data distributions (distributional shifts are common with real world dynamic data), and researching and putting in production new models$$^2$$.
 
-Meanwhile, the data analyst's constant interactions with the end data, and accumulated experience can increase the engagement with and actionability of the data, and generate customer-side insights for improving the overall quality of the generated data. [TODO: this might be too specific, accumulated experience is unclear]
+Meanwhile, the visualisations generated, trends identified and domain expertise accumulated by a data analyst through its constant interaction with the end data can increase the engagement with and actionability of the data, and generate customer-side insights. This will definitely help improving the overall quality of the generated data, and make sure that it fits the business requirements.
 
-In the end, the compound efforts of a unified data team should produce the data visualisations, insights generation and domain knowledge required for any given task.
+In the end, it is the compound efforts of a unified data team that should produce the data visualisations, insights generation and domain knowledge required for any given task.
 
 Within this understanding of the data scientist role, and its strong ties to the other data positions, I tend to define the objectives of the data scientist as:
 
@@ -73,7 +69,12 @@ Within this understanding of the data scientist role, and its strong ties to the
 
 - Researching (and implementing) new models. One needs to deserve the _scientist_ part of his title, and any data scientist should leverage his modelling expertise to unlock varied benefits from different model classes. Furthermore, the field of machine learning has been receiving a lot of attention (no pun intended) these last years, leading to fast developments and paradigm changes (think transformers for example). The consequence is that the expertise a data scientist has over a certain class of models can quickly become outdated, and the time spent keeping up with new models will be rewarded in terms of increased model performance later on.
 
-[TODO: Introduce diff with ML eng and Research scientist. Explain that the DS role can be split up even further in teams with more maturity]
+<div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center;">
+    <img src="../../resources/posts/2021-12-16/roles.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
+    <span style="color: #666; font-size: 13px; font-style: italic;">The data scientist role can further be broken down between pure modelling (leaning towards research scientist) and the practical implementation of models (machine learning scientist).</span>
+</div>
+
+In much larger organisations, these different responsabilites might be too large for one person alone. In this case, the data scientist role can be further split up into machine learning engineers, who will inherit the practical implementation of models within the data pipeline, and research scientist, who can focus only on the modelling and research aspects.
 
 Better understanding one's responsabilities is essential to prioritise work efficiently, but it doesn't help on actually delivering on the work that has been prioritised. Learning a lot from my colleagues, I've come to realise that the adoption of simple principles does.
 
@@ -92,7 +93,9 @@ The requirements should cover expected accuracy, robustness, scalability and mod
 
 ### Invest in tooling
 
-Tooling is crucial as it defines how easy it will be to take a model from an experimentation phase to a production-ready application. The way machine learning is commonly taught, with an emphasis on creating one-off notebooks or scripts that do not need to take into consideration dependencies and inter-operability, does not translate well to real world problems tackled by cross-functional teams. Having proper tooling shared by all in the team is essential, yet mostly invisible, to allow fast iterations and adoption of models performing better. [TODO: add example of bad pattern?]
+Tooling is crucial as it defines how easy it will be to take a model from an experimentation phase to a production-ready application. The way machine learning is commonly taught, with an emphasis on creating one-off notebooks or scripts that do not need to take into consideration dependencies and inter-operability, does not translate well to real world problems tackled by cross-functional teams. Having proper tooling shared by all in the team is essential, yet mostly invisible, to allow fast iterations and adoption of models performing better.
+
+At the opposite, the absence of proper tooling can easily lead to a mountain of technical debt where the combined efforts of poor code quality, naming conventions and architecturing will seriously undermine the maintainability, testability and scalibity of any model. (Just look at any graduate student's thesis code for a good example, especially the _data_processing_final_v2.py_ file)
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center;">
     <img src="../../resources/posts/2021-12-16/meme_jupyter_name.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
@@ -106,11 +109,9 @@ Next, the adoption of internal tools that facilitate the development of any new 
 Finally, using the tools already setup should simplify the separation of concerns for the various essential parts of the data science workflow. Time invested into converting each of these steps (data fetching, data preparation, features generation, training, validation, evaluation, serving etc) into their own independent module should be rewarded pretty quickly in terms of adaptability, testability and scalabity of the system.
 ### Test first, then debug
 
-[TODO: Include a sentence about testing the data itself]
+In software engineering, it is very common practice to test every piece of production-ready code. From unit testing, to end-to-end testing, frameworks for reliably testing individual logic and their global cooperation ensure that the produced software (mostly) behaves as expected. In data science, whether due to the sometimes non-deterministic nature of the models used, the additional burden of testing the data itself, or to the hubris of the data scientist (that's what you get when a job gets so much hype), testing is not as strictly mandated. The consequence is that important parts of the modelling infrastructure can get adopted in production without a full test coverage. This directly affects the reliability and hence the trustworthyness of the models' output.
 
-In software engineering, it is very common practice to test every piece of production-ready code. From unit testing, to end-to-end testing, frameworks for reliably testing individual logic and their global cooperation ensure that the produced software (mostly) behaves as expected. In data science, whether due to the sometimes non-deterministic nature of the models used, or to the hubris of the data scientist (that's what you get when a job gets so much hype), testing is not as strictly mandated. The consequence is that important parts of the modelling infrastructure can get adopted in production without a full test coverage. This directly affects the reliability and hence the trustworthyness of the models' output.
-
-I don't want here to expand precisely on how to test data science systems in practice, as it would extend beyond the scope of this post, and also because good resources already exist out there$$^2$$. Instead, I want to provide a simple, but sticky rule. As often as possible, __write first a test that isolates a bug under investigation__ [TODO: make clearer]. This has multiple benefits; speeding up the investigation by focusing it, providing a direct way to verify that the fix indeed fixes the bug without introducing any regression somewhere else, and expanding test coverage without much effort!
+I don't want here to expand precisely on how to test data science systems in practice, as it would extend beyond the scope of this post, and also because good resources already exist out there$$^3$$. Instead, I want to provide two simple, but sticky rules. Firstly, as often as possible when debugging, __write first a test that isolates and replicates the bug under investigation__. This has multiple benefits; speeding up the investigation by focusing it, providing a direct way to verify that the fix indeed fixes the bug without introducing any regression somewhere else, and expanding test coverage without much effort! Secondly, __always test the data itself__. Machine learning systems have an additional dependency on the data compared to standard software systems, and the testing setup must account for it.
 ## Conclusion
 
 I hope that you found this post instructive. As hinted earlier, I mostly wrote up this post to help me structure my thoughts around the development of my role working for electricityMap, but I would be thrilled to hear your opinion on the definition of the data scientist role and what principles he/she should adopt to succesfully get his new ideas and models implemented in the real world. I'm only beginning my journey and still have a lot to learn from the community ✌️.
@@ -119,5 +120,6 @@ Thanks for reading!
 
 <div style="margin-top: 16px;">
   <span style="color: #666; font-size: 13px; font-style: italic;">1: source, <a href="https://www.sas.com/en_us/insights/analytics/what-is-a-data-scientist.html">SAS</a></span><br>
-  <span style="color: #666; font-size: 13px; font-style: italic;">2: See for example the extensive tutorial from <a href="https://madewithml.com/courses/mlops/testing/">MadeWithML</a></span>
+  <span style="color: #666; font-size: 13px; font-style: italic;">2: Some might argue that putting models in production, because it is mostly an engineering task, should be delegated to someone else that has a stronger emphasis on software engineering. In the line of what Eugene Yan defends in his <a href="https://eugeneyan.com/writing/end-to-end-data-science/#:~:text=Instead%2C%20I%20have%20a%20simple,methodology%2C%20and%20process%20that%20works">Unpopular opinion - Data scientists should be more end-to-end</a>, I tend to think that letting data scientists own the entire process from getting data to delivering value based on identified patterns result in faster execution and output that is more in line with the context and the business requirements.</span><br>
+  <span style="color: #666; font-size: 13px; font-style: italic;">3: See for example the extensive tutorial from <a href="https://madewithml.com/courses/mlops/testing/">MadeWithML</a></span>
 </div>
