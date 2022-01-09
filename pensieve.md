@@ -12,7 +12,7 @@ Benjis Denkarium to persist some chaotic memories
       <h1><a href="{{ site.baseurl }}{{ memory.url }}">{{ memory.title }}</a></h1>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ memory.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ memory.url }}" class="read-more">Read More</a>
