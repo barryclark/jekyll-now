@@ -277,6 +277,38 @@ nav {
   }
 }
 
+//
+
+.memories > .memory {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.memories > .memory:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.memory {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $light-lime;
+    padding: 0.1em 1em;
+    color: $lightGray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
