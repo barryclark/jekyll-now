@@ -7,7 +7,7 @@ Benjis Denkarium to persist some chaotic memories
 
 <div class="memories">
   {% for memory in site.memories %}
-    <article class="memories">
+    <article class="memory">
 
       <h1><a href="{{ site.baseurl }}{{ memory.url }}">{{ memory.title }}</a></h1>
 
