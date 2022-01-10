@@ -1,5 +1,5 @@
 ---
-layout: memory
+layout: post
 title: Chart of the IAM ID Prefixes.
 ---
 
