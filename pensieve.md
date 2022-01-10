@@ -6,6 +6,9 @@ Benjis Denkarium to persist some chaotic memories
 
   {% for thing in site.pages %}
    {{ thing.identifier }}
+   {{ thing.page }}      
+   {{ thing.title }}
+   {{ thing.content }}
    <br>
     {% if thing.identifier contains 'memories' %}
       {{ thing.title }}
