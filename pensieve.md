@@ -4,14 +4,14 @@ layout: default
 Benjis Denkarium to persist some chaotic memories
 ![_config.yml]({{ site.baseurl }}/images/pensieve.png)
 
-  {% for thing in site.pages %}
+<!--   {% for thing in site.pages %}
    {{ thing }}
    <br>
     {% if thing.page contains 'memories' %}
       {{ thing.title }}
       {{ thing.content }}
     {% endif %}
-  {% endfor %}
+  {% endfor %} -->
 
 <div class="memories">
   {% for memory in site.memories %}
