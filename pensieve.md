@@ -5,11 +5,10 @@ Benjis Denkarium to persist some chaotic memories
 ![_config.yml]({{ site.baseurl }}/images/pensieve.png)
 
   {% for thing in site.pages %}
-    <br>
-    {{ thing.identifier }}
-    {{ thing.title }}
-    {{ thing.path }}
-    <br>
+    {% if thing.identifier == 'memories/' %}
+      {{ thing.title }}
+      {{ thing.content }}
+    {% endif %}
   {% endfor %}
 
 <div class="memories">
