@@ -2,8 +2,6 @@
 layout: default
 ---
 Benjis Denkarium to persist some chaotic memories
-![_config.yml]({{ site.baseurl }}/images/pensieve.png)
-
 
 <div class="memories">
   {% for memory in site.memories %}
@@ -19,3 +17,5 @@ Benjis Denkarium to persist some chaotic memories
     </article>
   {% endfor %}
 </div>
+
+![_config.yml]({{ site.baseurl }}/images/pensieve.png)
