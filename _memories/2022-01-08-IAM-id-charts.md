@@ -3,8 +3,7 @@ layout: memory
 title: Chart of the IAM ID Prefixes.
 ---
 
-
-[Source](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-unique-ids)
+IAM uses the following prefixes to indicate what type of resource each unique ID applies to
 
 | Prefix | Entity Type                  |
 | ------ | ---------------------------  |
@@ -20,3 +19,6 @@ title: Chart of the IAM ID Prefixes.
 | AROA   | Role                         |
 | ASCA   | Certificate                  |
 | ASIA   | Temporary (AWS STS) keys     |
+
+[Source](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-unique-ids)
+
