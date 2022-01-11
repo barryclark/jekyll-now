@@ -1,6 +1,6 @@
 ---
 layout: memory
-title: Python KeyLogger - Dirty little snitch :feelsgood:
+title: Python KeyLogger - Dirty little snitch
 ---
 
 Tiny implementation of a KeyLogger with some nice features like:
