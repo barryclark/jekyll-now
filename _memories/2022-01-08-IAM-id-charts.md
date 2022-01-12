@@ -6,7 +6,7 @@ title: AWS - Chart of the IAM ID Prefixes
 IAM uses the following prefixes to indicate what type of resource each unique ID applies to:
 
 | Prefix | Entity Type                  |
-| ------ | ---------------------------  |
+| :----: | :-------------------------:  |
 | ABIA   | AWS STS service bearer token |
 | ACCA   | Context-specific credential  |
 | AGPA   | Group                        |
