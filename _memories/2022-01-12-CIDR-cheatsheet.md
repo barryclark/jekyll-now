@@ -3,6 +3,8 @@ layout: memory
 title: CheatSheet - Calculation of CIDR ranges 
 ---
 
+Tiny write-up about CIDR notation an nets.
+
 CIDR        Total number    Network             Description:
 Notation:   of addresses:   Mask:
 --------------------------------------------------------------
