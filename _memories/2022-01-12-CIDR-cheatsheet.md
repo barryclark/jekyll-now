@@ -4,7 +4,7 @@ title: CheatSheet - Calculation of CIDR ranges
 ---
 
 Tiny write-up about CIDR notation an nets.
-
+```
 CIDR        Total number    Network             Description:
 Notation:   of addresses:   Mask:
 --------------------------------------------------------------
@@ -53,3 +53,4 @@ Reserved Space:
     172.16.0.0/12
     192.168.0.0/16
     169.254.0.0/16
+```
