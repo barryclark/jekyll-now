@@ -14,6 +14,7 @@ $background: #0d1117;
 $gray-border: #30363d;
 $light-lime: #7ee787;
 $slime: #28ff00;
+$dark-grey: #0d0c0c
 
 /**************/
 /* BASE RULES */
@@ -320,6 +321,13 @@ footer {
   padding: 20px 0;
   text-align: center;
   color: $darkerGray;
+}
+
+.highlight {
+  background-color: #0d0c0c;
+  padding: 7px 7px 7px 10px;
+  -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
