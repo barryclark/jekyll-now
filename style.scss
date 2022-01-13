@@ -323,14 +323,14 @@ footer {
   color: $darkerGray;
 }
 
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
+
 .highlight {
   background-color: #0d0c0c;
   padding: 7px 7px 7px 10px;
   -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
