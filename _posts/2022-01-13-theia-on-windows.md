@@ -1,3 +1,8 @@
+---
+layout : post
+title : theia on windows 환경설정
+---
+
 ##### Prerequsites
 > https://github.com/eclipse-theia/theia/blob/master/doc/Developing.md#building-on-windows
 - scoop
