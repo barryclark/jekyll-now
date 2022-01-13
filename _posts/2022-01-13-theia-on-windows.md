@@ -4,7 +4,7 @@ title : theia on windows 환경설정
 ---
 
 ##### Prerequsites
-> https://github.com/eclipse-theia/theia/blob/master/doc/Developing.md#building-on-windows
+
 - scoop
     - install
         https://github.com/ScoopInstaller/Scoop#installation
@@ -24,6 +24,9 @@ title : theia on windows 환경설정
 - windows-build-tools
     - install with powershell Admin
         ```npm --add-python-to-path install --global --production windows-build-tools```
+
+>출처: https://github.com/eclipse-theia/theia/blob/master/doc/Developing.md#building-on-windows
+
 
 ##### additionals
 - git
