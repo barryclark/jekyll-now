@@ -3,7 +3,11 @@ layout: memory
 title: CheatSheet - Calculation of CIDR ranges 
 ---
 
-Tiny write-up about CIDR notation an nets.
+Tiny write-up about CIDR notation an nets. 
+
+[CIDR Notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+
 ```
 CIDR        Total number    Network             Description:
 Notation:   of addresses:   Mask:
