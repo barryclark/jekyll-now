@@ -280,10 +280,10 @@ a 5% chance of incorrectly rejecting the null hypothesis, then
 performing 100 multiple comparisons will result in 5 incorrect
 rejections or false positives. A simple way to correct for this is
 [Bonferroni
-correction](https://mathworld.wolfram.com/BonferroniCorrection.html),
+correction](https://mathworld.wolfram.com/BonferroniCorrection.html){:target="_blank"} ,
 which just divides the alpha by the number of total comparisons. There
 are additional methods, which you can read more
-[here](https://www.biochemia-medica.com/en/journal/21/3/10.11613/BM.2011.029/fullArticle).
+[here](https://www.biochemia-medica.com/en/journal/21/3/10.11613/BM.2011.029/fullArticle){:target="_blank"} .
 
 To compare multiple groups, we will perform a One-Way ANOVA. While
 t-tests compare only two groups, an ANOVA can compare three or more
@@ -335,7 +335,7 @@ Now with we can try with Bonferroni correction.
     ## P value adjustment method: bonferroni
 
 The result is still the same, but it may not always be the case. See
-[here](https://benwhalley.github.io/just-enough-r/multiple-comparisons.html).
+[here](https://benwhalley.github.io/just-enough-r/multiple-comparisons.html){:target="_blank"} .
 
 If we wanted to plot the resulting p-values, then we can use the package
 `ggpubr`.
@@ -380,9 +380,12 @@ the `*` symbol for the following:
 
 ![]({{ site.baseurl }}/images/EDA_files/figure-markdown_strict/unnamed-chunk-25-1.png)
 
-\#Additional Resources - [R for Data Science: Exploratory Data
-Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html) - [How
+Additional Resources
+------------------
+- [R for Data Science: Exploratory Data
+Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html){:target="_blank"} 
+- [How
 to do a t-test or ANOVA for more than one variable at once in
-R](https://statsandr.com/blog/how-to-do-a-t-test-or-anova-for-many-variables-at-once-in-r-and-communicate-the-results-in-a-better-way/#anova)
+R](https://statsandr.com/blog/how-to-do-a-t-test-or-anova-for-many-variables-at-once-in-r-and-communicate-the-results-in-a-better-way/#anova){:target="_blank"} 
 - [Application of Student’s t-test, Analysis of Variance, and
-Covariance](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6813708/)
+Covariance](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6813708/){:target="_blank"} 
