@@ -330,11 +330,20 @@ footer {
 .highlight {
   background-color: #0d0c0c;
   padding: 7px 7px 7px 10px;
-  /* border: 1px solid #ddd; */
   -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-  /* -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1); */
+  -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-  /* margin: 20px 0 20px 0; */
+  margin: 20px 0 20px 0;
+  overflow: auto;
+}
+
+pre.highlight {
+  background-color: #0d0c0c;
+  padding: 7px 7px 7px 10px;
+  -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  margin: 20px 0 20px 0;
   overflow: auto;
 }
 
