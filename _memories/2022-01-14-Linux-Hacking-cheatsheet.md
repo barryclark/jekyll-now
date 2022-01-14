@@ -1,3 +1,8 @@
+--
+layout: memory
+title: CheatSheet - Unordered Notes from CTFs and HTB 
+---
+
 # Benji's Hacking Cheatsheet
     List of commands and techniques to while conducting any kind of hacking
     "The quieter you become, The more you’re able to hear"
