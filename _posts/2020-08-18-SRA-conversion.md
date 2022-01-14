@@ -32,7 +32,7 @@ If you wanted to download multiple files, it is recommended to use the `RunSelec
 
 Here select the samples or Runs that you want to download by clicking on the appropriate checkboxes. Then download the `Accession List` and the `Metadata` if needed.
 
-Depending on the nameing convention or format of the `Accession List`, you can download all of the Runs with the following:
+Depending on the naming convention or format of the `Accession List`, you can download all of the Runs with the following:
 ``` sh
 prefetch $(<SRA_Acc_List.txt)
 ```

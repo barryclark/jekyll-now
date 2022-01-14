@@ -139,9 +139,9 @@ head(pbmc@meta.data, 5)
 
 Seurat recommends a threshold for filtering for the QC metrics.
 
--   Cells are filtereed for unique feature counts over 2,500 or less
+-   Cells are filtered for unique feature counts over 2,500 or less
     than 200
--   Cells are filtereed for &lt;5% mitochondrial counts
+-   Cells are filtered for &lt;5% mitochondrial counts
 
 ``` r
 # Visualize QC metrics as a violin plot
@@ -228,7 +228,7 @@ attr(qc.percent.mt, "thresholds")
     ##    lower   higher 
     ##     -Inf 4.436775
 
-Another reason to use adapative thresholds is if your data contains
+Another reason to use adaptive thresholds is if your data contains
 multiple batches. In this case, you would detect the QC threshold for
 each batch rather than for your entire dataset. It makes little sense to
 a single threshold from a data set with samples from multiple batches.
@@ -248,7 +248,7 @@ Normalizing the data
 After filtering out the low quality cells from the dataset, the next
 step is to normalize the data. By default, `Seurat` employs a
 global-scaling normalization method “LogNormalize” that normalizes the
-feature expression measurements for each cell by diviing by the total
+feature expression measurements for each cell by dividing by the total
 expression, multiplies the result by a scale factor (10,000 by default),
 and then log-transforms the result to obtain the normalized data.
 
@@ -258,7 +258,7 @@ pbmc <- NormalizeData(pbmc)
 
 It is common to identify highly variable features or genes for
 dimensional reduction. By reducing your analysis to the highly variable
-genes, you account for most of the biolgical heterogeneity or factors in
+genes, you account for most of the biological heterogeneity or factors in
 your data and hopefully ignore a majority of the noise while reducing
 computational work and time. As such, the highly variable genes should
 enable us to isolate the real biological signals.
@@ -342,7 +342,7 @@ DimPlot(pbmc, reduction = "pca")
 
 ![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-20-1.png)
 
-Let’s inspect the contribution of each of the prinicpal components.
+Let’s inspect the contribution of each of the principal components.
 Typically only the the principal components containing a majority of the
 variance is used. This can be estimated by using an ‘elbow plot’ and
 observing where there is a large drop off in variance.
@@ -393,7 +393,7 @@ often clustered to empirically define groups of cells within the data
 that have similar expression profiles. This generates discrete groupings
 of cells for the downstream analysis. `Seurat` uses a graph-based
 clustering approach. There are additional approaches such as k-means
-clustering or hierachical clustering.
+clustering or hierarchical clustering.
 
 The major advantage of graph-based clustering compared to the other two
 methods is its scalability and speed. Simply, `Seurat` first constructs
@@ -503,7 +503,7 @@ plot1 +  plot2 + plot3 + plot_layout(nrow = 2)
 
 ![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-26-1.png)
 
-We can see that cells are clustered closer toether while also providing
+We can see that cells are clustered closer together while also providing
 some global relationship between the clusters within the UMAP embedding.
 tSNE generates some similar clusters with the same local relationship
 but the global relationship can not be estimated using tSNE. In
@@ -516,7 +516,7 @@ to resolve the differences between the clusters unlike UMAP and tSNE.
 Finding Marker Genes
 </h2>
 To interpret our clusters, we can identify the genes and markers that
-drive separation of the clusters. `Seurat` canfind these markers via
+drive separation of the clusters. `Seurat` can find these markers via
 differential expression. By default, `FindAllMarkers` uses Wilcoxon
 rank-sum (Mann-Whitney-U) test to find DEs. You can choose which test by
 modifying the `test.use` parameter. If you have blocking factors (i.e.,
@@ -870,7 +870,7 @@ plot1 + plot2
 
 ![]({{ site.baseurl }}/images/Seurat-Guided-Clustering-Tutorial_files/figure-markdown_github/unnamed-chunk-40-1.png)
 
-We can see that the predicted labels and manually anotated labels match
+We can see that the predicted labels and manually annotated labels match
 up pretty well. Your choice of reference data and parameters can be used
 to further fine-tine the predicted labels. Here we used a bulk reference
 data set but a single-cell reference data that is well-annotated set

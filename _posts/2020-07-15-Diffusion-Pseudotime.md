@@ -252,7 +252,7 @@ df$Time <- as.numeric(as.character(df$Hours)) #Generated a separate column for p
 
 To put it into perspective, we first order the cells based on time and
 you can see there gene expression trend is difficult to resolve. We
-expect an increase of MYOG over time but the trendline is flat. As
+expect an increase of MYOG over time but the trend line is flat. As
 discussed earlier, time as a measure of biological progress may not be
 adequate since not all cells start at time 0. In other words, they are
 not in synchrony. Ordering cells by pseudotime should resolve this and
