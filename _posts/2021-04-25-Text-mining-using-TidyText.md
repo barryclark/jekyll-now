@@ -1785,7 +1785,7 @@ Latent Semantic Analysis
 words &lt;- tf_idf_matrix[[1]] 
 tf_idf_matrix &lt;- tf_idf_matrix[,-1] #Removing the column containing the words
 rownames(tf_idf_matrix) &lt;- words</code></pre>
-<p>LSA is a dimensional reduction technique similar to PCA. In fact, to perform it, we calculate the singular value decomposition (SVD) on the document-term matrix. See my other post to learn more about <a href="Writing-the-code-for-PCA">SVD</a>.</p>
+<p>LSA is a dimensional reduction technique similar to PCA. In fact, to perform it, we calculate the singular value decomposition (SVD) on the document-term matrix. See my other post to learn more about <a href="https://danhdtruong.com/Writing-the-code-for-PCA/">SVD</a>.</p>
 <p><span class="math display">\[M = U \Sigma V^{T}\]</span> By using LSA, we will reduce our high-dimensional data into lower dimensional data to do one of three things:</p>
 <ul>
 <li>Reduce the data to save on computational work.</li>

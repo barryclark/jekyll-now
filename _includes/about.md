@@ -2,7 +2,7 @@
 
 Biomedical Engineering PhD 
 
-I am a postdoctoral fellow at UT MD Anderson Cancer Center. I study mesenchymal tissue differentiation as a model for understanding the plasticity of soft tissue sarcomas and osteosarcoma. My research interests are cancer biology, phenotypic plasticity, and machine learninig. My favorite book series is the The Expanse but I also love The Lord of the Rings and The Legend of Drizzt series. 
+I am a postdoctoral fellow at UT MD Anderson Cancer Center. I study mesenchymal tissue differentiation as a model for understanding the plasticity of soft tissue sarcomas and bone sarcomas. My research interests are cancer biology, phenotypic plasticity, and machine learning. My favorite book series is the The Expanse but I also love The Lord of the Rings and The Legend of Drizzt series. 
 
 ## Experience
 
@@ -21,7 +21,7 @@ __University of Texas at Arlington__ Undergraduate Research Assistant (Departmen
 __Arizona State University__ Biomedical Engineering PhD (advisor: Mehdi Nikkhah). My thesis was titled _Microfluidic Models of Tumor-Stroma Interactions to Study the Interplay of Cancer Cells with their Surrounding Microenvironment_ and is available through the [ASU Library | Digital Repository](https://repository.asu.edu/items/54067){:target="_blank"}.
 
 `2012-14`
-__University of Texas at Arlington & Univesity of Texas Southwestern Medical Center__ MSc Biomedical Engineering
+__University of Texas at Arlington & University of Texas Southwestern Medical Center__ MSc Biomedical Engineering
 
 `2009-14`
 __University of Texas at Arlington__ BSc Biology 
