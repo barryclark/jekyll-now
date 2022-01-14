@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 마크다운 문법
 ---
 출처 : https://gist.github.com/ihoneymon/652be052a0727ad59601

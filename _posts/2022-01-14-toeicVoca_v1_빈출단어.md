@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 토익 voca v1. 빈출단어 100
 ---
 #####

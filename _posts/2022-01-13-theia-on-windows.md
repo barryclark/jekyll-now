@@ -1,5 +1,5 @@
 ---
-layout : post
+layout : page
 title : theia on windows 환경설정
 ---
 

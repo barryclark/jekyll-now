@@ -1,5 +1,5 @@
 ---
-layout : post
+layout : page
 title : URI, URL, URN 차이
 ---
 
