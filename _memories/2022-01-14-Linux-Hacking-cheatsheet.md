@@ -8,7 +8,7 @@ title: CheatSheet - Unordered Notes from CTFs and HTB
     "The quieter you become, The more you’re able to hear"
     
 <center>
-<p style="text-align:center;"><img src="./images/kali.png" alt="Logo"></p>
+<p style="text-align:center;"><img src="/images/kali.png" alt="Logo"></p>
 </center>
 
 #### Apply the best nmap scanning strategy for all size networks
