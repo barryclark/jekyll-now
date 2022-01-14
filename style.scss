@@ -327,6 +327,17 @@ footer {
 @import "highlights";
 @import "svg-icons";
 
+.highlight {
+  background-color: #0d0c0c;
+  padding: 7px 7px 7px 10px;
+  /* border: 1px solid #ddd; */
+  -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  /* -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1); */
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  /* margin: 20px 0 20px 0; */
+  overflow: auto;
+}
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #808080 } /* Comment */
 .highlight .err { color: #F00000; background-color: #F0A0A0 } /* Error */
