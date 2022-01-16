@@ -62,13 +62,14 @@ collections:
   memories:
     output: true
 
-# defaults:
-# -
-#   scope:
-#     path: "memories"
-#     type: "memory"
-#   values:
-#     identifier: "memory"
+# Tipue search settings
+tipue_search:
+  include:
+    pages: true
+    collections: [memories]
+  exclude:
+    files: [search.html]
+
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
