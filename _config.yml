@@ -68,7 +68,7 @@ tipue_search:
     pages: true
     collections: [memories]
   exclude:
-    files: [search.html]
+    files: [search.html, about.html]
 
 
 # Jekyll 3 now only supports Kramdown for Markdown
