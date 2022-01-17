@@ -8,7 +8,7 @@ Benjis [Denkarium](https://harrypotter.fandom.com/wiki/Pensieve) helps to persis
 ---
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
+<input type="text" id="search-input" placeholder="Search memories ...">
 <ul id="results-container"></ul>
 </div>
 
