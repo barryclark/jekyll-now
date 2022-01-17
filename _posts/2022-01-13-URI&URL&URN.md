@@ -1,6 +1,7 @@
 ---
 layout : page
 title : URI, URL, URN 차이
+categories: [development, Things should be known]
 ---
 
 >URI는 식별하고, URL은 위치를 가르킨다

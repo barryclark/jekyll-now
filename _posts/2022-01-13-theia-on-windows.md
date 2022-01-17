@@ -1,6 +1,7 @@
 ---
 layout : page
 title : theia on windows 환경설정
+categories: [development, Crumbles from workplace]
 ---
 
 ##### Prerequsites

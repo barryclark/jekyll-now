@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  토익 voca v1. 고난이도 단어 100
+categories: [English, Toeic, vocabulary]
 ---
 출처 : https://www.youtube.com/watch?v=FaEJ2OzpdPw&list=PLE3_zCQheA3OLdJGE_Mzf_s7wiZAwgeZI&index=10
 

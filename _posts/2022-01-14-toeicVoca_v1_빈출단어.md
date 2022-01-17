@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 토익 voca v1. 빈출단어 100
+categories: [English, Toeic, vocabulary]
 ---
 #####
 출처 : https://www.youtube.com/watch?v=5vOE_CYyJXI
