@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: none
 ---
 
 [
@@ -16,12 +16,14 @@ layout: default
   ,
   {% for memory in site.memories %}
     {
+      {% if memory.title != nil %}
         "title"    : "{{ memory.title | escape }}",
         "category" : "{{ memory.category }}",
         "tags"     : "{{ memory.tags | join: ', ' }}",
-        "url"      : "{{ memory.baseurl }}{{ page.url }}",
+        "url"      : "{{ site.baseurl }}{{ memory.url }}",
         "date"     : "{{ memory.date }}",
-        "content"  : {{ memory.content | jsonify }}
+        "content"  : {{ memory.excerpt | jsonify }}
+      {% endif %}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
