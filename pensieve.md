@@ -6,6 +6,7 @@ Benjis [Denkarium](https://harrypotter.fandom.com/wiki/Pensieve) helps to persis
 ![_config.yml]({{ site.baseurl }}/images/pensieve.png)
 
 ---
+
 <!-- HTML elements for search -->
 <input type="text" id="search-input" placeholder="Search blog posts..">
 <ul id="results-container"></ul>
@@ -13,23 +14,8 @@ Benjis [Denkarium](https://harrypotter.fandom.com/wiki/Pensieve) helps to persis
 <!-- or without installing anything -->
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 
-<!-- Html Elements for Search -->
-<!-- <div id="search-container">
-    <input type="text" id="search-input" placeholder="search...">
-    <ul id="results-container"></ul>
-    </div>
-
-    <script src="/js/search-script.js" type="text/javascript"></script>
-    
-    <!-- Configuration -->
-    <script>
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '/search.json'
-    })
-    </script> -->
 ---
+
 <br>
 <br>
 
