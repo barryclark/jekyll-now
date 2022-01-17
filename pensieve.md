@@ -8,7 +8,7 @@ Benjis [Denkarium](https://harrypotter.fandom.com/wiki/Pensieve) helps to persis
 ---
 
 <!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="Search blog posts..">
+<input type="text" id="search-input" placeholder="Search for memories ...">
 <ul id="results-container"></ul>
 
 <!-- or without installing anything -->
