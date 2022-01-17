@@ -9,8 +9,21 @@ layout: none
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}",
-      "content"  : {{ page.content | jsonify }}
+      "content"  : {{ post.content | jsonify }}
     } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for memory in site.memories %}
+   {
+     {% if page.title != nil %}
+        "title"    : "{{ memory.title | escape }}",
+        "category" : "{{ memory.category }}",
+        "tags"     : "{{ memory.tags | join: ', ' }}",
+        "url"      : "{{ memory.baseurl }}{{ page.url }}",
+        "date"     : "{{ memory.date }}",
+        "content"  : {{ memory.content | jsonify }}
+     {% endif %}
+   } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
   {% for page in site.pages %}
