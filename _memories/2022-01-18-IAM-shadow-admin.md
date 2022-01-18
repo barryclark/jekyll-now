@@ -63,4 +63,4 @@ Mind the gap and power of IAM permissions. Both Policies are equal:
 
 ## SkyArk (AWS) Demo
 
-![](https://github.com/Hechtov/Photos/blob/master/SkyArk/SkyArk-shortVideo.gif)
+![]({{ site.baseurl }}/images/SkyArk-shortVideo.gif)
