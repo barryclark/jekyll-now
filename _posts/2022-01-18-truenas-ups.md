@@ -82,4 +82,5 @@ Aaaaand .... it worked 🚀🎉✅.
 This is my final configuration now:
 * General settings:
   ![general-settings](/images/truenas-ups/general-settings.png)
-* 
+* Other settings:
+  ![other-settings](/images/other-settings.md)
