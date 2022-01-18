@@ -45,11 +45,13 @@ Characteristics of a Shadow Admin:
 * Hidden in Masses of Permissions and Accounts
 
 Hiding a Shadow Admin:
-• Use benign names: “readOnly, viewer"
-• Attach permissions to legitimate group
-• Deny read access to the account
+* Use benign names: `readOnly`, `viewer`
+* Attach permissions to legitimate group
+* Deny read access to the account
 
-Mind the gap and power of IAM permissions. Both Policies are equal:
+Mind the power of IAM permissions and the confused deputy. 
+
+Both Policies are equal:
 
 ##### AdministratorFullAccess
 ![]({{ site.baseurl }}/images/AdminFullAccess.png)
