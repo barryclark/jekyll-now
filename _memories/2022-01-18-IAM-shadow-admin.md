@@ -61,3 +61,6 @@ If you ever write an IAM, S3, etc. Policy…
 
 ![]({{ site.baseurl }}/images/MindTheAstrix.png)
 
+## SkyArk (AWS) Demo
+
+![](https://github.com/Hechtov/Photos/blob/master/SkyArk/SkyArk-shortVideo.gif)
