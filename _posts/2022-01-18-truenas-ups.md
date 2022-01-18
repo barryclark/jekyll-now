@@ -85,4 +85,4 @@ This is my final configuration now:
   Where the `password` uses the default value of `fixmepass`.
   However, I think any other password would also have worked.
 * Other settings:
-  ![other-settings]({{ site.baseurl }}/images/truenas-ups/other-settings.md)
+  ![other-settings]({{ site.baseurl }}/images/truenas-ups/other-settings.png)
