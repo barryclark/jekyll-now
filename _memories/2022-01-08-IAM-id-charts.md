@@ -5,6 +5,7 @@ title: AWS - Chart of the IAM ID Prefixes
 
 IAM uses the following prefixes to indicate what type of resource each unique ID applies to:
 
+```markdown
 | Prefix | Entity Type                  |
 | :----: | :-------------------------:  |
 | ABIA   | AWS STS service bearer token |
@@ -19,6 +20,7 @@ IAM uses the following prefixes to indicate what type of resource each unique ID
 | AROA   | Role                         |
 | ASCA   | Certificate                  |
 | ASIA   | Temporary (AWS STS) keys     |
+```
 
 [AWS Source](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-unique-ids)
 
