@@ -3,7 +3,7 @@ layout: memory
 title: AWS Shadow Admin & IAM Policy Magic  
 ---
 
-Prevent Creation of AWS Schadow Admins by giving attention on the following IAM permissions that can lead to shadow admin privileges
+Prevent Creation of AWS Schadow Admins by giving attention on the following IAM permissions that can lead to shadow admin privileges in different ways:
 
 ### 1. CreateAccessKey
 An attacker with just `CreateAccessKey` IAM API permission could abuse it to create a new access key to another IAM admin account. An entity (user/group/role) with this permission in it’s policy is as powerful as other full admin users with the `AdministratorAccess` permissions. Compromising an account with this policy alone will allow the attacker to gain a new privileged access key and continue to execute malicious actions in the environment on behalf of the target user he has just created a new access key for.
@@ -36,3 +36,28 @@ Like `CreateAccessKey`, with the permissions to `CreatePolicyVersion` and `SetDe
 Like `CreateLoginProfile`, with these permissions to modify Instance Profiles, an attacker could create a new privileged instance profile and attach it to a compromised EC2 instance that he possesses.
 
 [Source - SkyArk](https://github.com/cyberark/SkyArk)
+
+## AWS Shadow Admin 
+
+Characteristics of a Shadow Admin:
+* Combinations of Permissions to create a Tier 0 Account
+* Control Other Privileged Entities
+* Hidden in Masses of Permissions and Accounts
+
+Hiding a Shadow Admin:
+• Use benign names: “readOnly, viewer"
+• Attach permissions to legitimate group
+• Deny read access to the account
+
+Mind the gap and power of IAM permissions. Both Policies are equal:
+
+##### AdministratorFullAccess
+![]({{ site.baseurl }}/images/AdminFullAccess.png)
+
+##### Shadow Admin with the same power
+![]({{ site.baseurl }}/images/AWSShadowAdmin.png)
+
+If you ever write an IAM, S3, etc. Policy…
+
+![]({{ site.baseurl }}/images/MindTheAstrix.png)
+
