@@ -1,3 +1,9 @@
+---
+layout: post
+title: Exploratory Data Analysis in R
+tags: tutorials bioinformatics R machine-learning
+---
+
 In this post, we will be analyzing data as if we were looking at it for
 the first time. This is called ‘Exploratory Data Analysis’. We will
 visualize the data and gather insights from the `iris` data set.
