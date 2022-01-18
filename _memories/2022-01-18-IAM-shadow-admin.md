@@ -57,7 +57,7 @@ Mind the gap and power of IAM permissions. Both Policies are equal:
 ##### Shadow Admin with the same power
 ![]({{ site.baseurl }}/images/AWSShadowAdmin.png)
 
-If you ever write an IAM, S3, etc. Policy…
+#####If you ever write an IAM, S3, etc. Policy … MIND THE ASTERIX
 
 ![]({{ site.baseurl }}/images/MindTheAstrix.png)
 
