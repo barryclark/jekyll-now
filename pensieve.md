@@ -6,6 +6,7 @@ Benjis [Denkarium](https://harrypotter.fandom.com/wiki/Pensieve) helps to persis
 ![_config.yml]({{ site.baseurl }}/images/pensieve.png)
 
 ---
+<!-- TODO: Styling https://www.mikedane.com/web-development/css/styling-search-bar/ -->
 <!-- Html Elements for Search -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="Search memories ...">
