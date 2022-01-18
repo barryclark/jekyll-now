@@ -81,6 +81,8 @@ Aaaaand .... it worked 🚀🎉✅.
 
 This is my final configuration now:
 * General settings:
-  ![general-settings](/images/truenas-ups/general-settings.png)
+  ![general-settings]({{ site.baseurl }}/images/truenas-ups/general-settings.png)
+  Where the `password` uses the default value of `fixmepass`.
+  However, I think any other password would also have worked.
 * Other settings:
-  ![other-settings](/images/other-settings.md)
+  ![other-settings]({{ site.baseurl }}/images/other-settings.md)
