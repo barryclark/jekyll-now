@@ -6,7 +6,6 @@ tags: tutorials R
 
 In this post, we will explore conditional probability and how it relates to Bayes' Theorem.
 
-<!DOCTYPE html>
 
 <html>
 
@@ -1617,13 +1616,7 @@ pre code {
 
 
 
-<div id="header">
 
-
-
-<h1 class="title toc-ignore">Conditional Probability with R</h1>
-
-</div>
 
 
 
