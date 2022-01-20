@@ -37,7 +37,7 @@ I am an engineer and (data) science enthusiast. I am interested in understanding
 
 ### Publications
 
-TBD
+* [Robust uncertainty estimates with out-of-distribution pseudo-inputs training](https://arxiv.org/abs/2201.05890) - _pending pres_
 
 ### Contact me
 
