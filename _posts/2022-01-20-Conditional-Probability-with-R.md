@@ -4,7 +4,7 @@ title: Conditional Probability with R
 tags: tutorials R 
 ---
 
-In this post, we will explore conditional probability and how it relates to Bayes' Theorem.
+*Tabspace*In this post, we will explore conditional probability and how it relates to Bayes' Theorem.
 
 
 <html>
