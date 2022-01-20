@@ -16,7 +16,7 @@ As I write this introduction, I have been working as a data scientist for [elect
 In a nutshell, the generation of electricityMap's data is a multi-stage process. Firstly, varied data points from numerous public data sources about electricity are aggregated. Secondly, they are validated and standardised against a reference schema. Finally, they are run through our flow-tracing algorithm for the generation of worldwide real-time hourly electricity consumption figures; and their associated greenhouse gas emissions.
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center; margin: 16px 0 32px;">
-    <img src="../../resources/posts/2021-12-16/emap_infra.png" style="width: 100%; overflow: hidden; margin: 16px 0;">
+    <img src="../../resources/posts/2022-01-20/emap_infra.png" style="width: 100%; overflow: hidden; margin: 16px 0;">
     <span style="color: #666; font-size: 13px; font-style: italic;">A simplified overview of the electricityMap infrastructure. Thanks <a href="https://electricitymap.org/blog/data-pipeline/">Felix</a> for the figure!</span>
 </div>
 
@@ -25,7 +25,7 @@ This data is at the core of our mission: __to organise the world's electricity d
 These consequences reveal my other current responsibilities; develop and maintain a wide range of models to capture the dynamics of electrical production per factor and exchanges in vastly different areas of the world, and have enough domain expertise to ensure that they behave according to what is physically possible.
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center; margin: 16px 0 32px;">
-    <img src="../../resources/posts/2021-12-16/emap_team.JPG" style="width: 75%; overflow: hidden; margin: 16px 0;">
+    <img src="../../resources/posts/2022-01-20/emap_team.JPG" style="width: 75%; overflow: hidden; margin: 16px 0;">
     <span style="color: #666; font-size: 13px; font-style: italic;">The electricityMap team. (PS: yes, thank you Nick! See here the <a href="https://cloud.google.com/blog/topics/sustainability/the-year-in-carbon-free-energy-at-google">announcement</a> for a 1,000,000€ grant from Google.)</span>
 </div>
 
@@ -70,7 +70,7 @@ Within this understanding of the data scientist role, and its strong ties to the
 - Researching (and implementing) new models. One needs to deserve the _scientist_ part of his title, and any data scientist should leverage his modelling expertise to unlock varied benefits from different model classes. Furthermore, the field of machine learning has been receiving a lot of attention (no pun intended) these last years, leading to fast developments and paradigm changes (think transformers for example). The consequence is that the expertise a data scientist has over a certain class of models can quickly become outdated, and the time spent keeping up with new models will be rewarded in terms of increased model performance later on.
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../../resources/posts/2021-12-16/roles.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
+    <img src="../../resources/posts/2022-01-20/roles.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
     <span style="color: #666; font-size: 13px; font-style: italic;">The data scientist role can further be broken down between pure modelling (leaning towards research scientist) and the practical implementation of models (machine learning scientist).</span>
 </div>
 
@@ -87,7 +87,7 @@ There is an inherent risk within data science related to the hybrid position it 
 The requirements should cover expected accuracy, robustness, scalability and model freshness.
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../../resources/posts/2021-12-16/meme_wasting_time.webp" style="width: 75%; overflow: hidden; margin: 16px 0;">
+    <img src="../../resources/posts/2022-01-20/meme_wasting_time.webp" style="width: 75%; overflow: hidden; margin: 16px 0;">
     <span style="color: #666; font-size: 13px; font-style: italic;">A common pitfall.</span>
 </div>
 
@@ -98,7 +98,7 @@ Tooling is crucial as it defines how easy it will be to take a model from an exp
 On the opposite, the absence of proper tooling can easily lead to a mountain of technical debt where the combined efforts of poor code quality, naming conventions and architecture will seriously undermine the maintainability, testability and scalability of any model. (Just look at any graduate student's thesis code for a good example, especially the _data_processing_final_v2.py_ file)
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../../resources/posts/2021-12-16/meme_jupyter_name.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
+    <img src="../../resources/posts/2022-01-20/meme_jupyter_name.png" style="width: 75%; overflow: hidden; margin: 16px 0;">
     <span style="color: #666; font-size: 13px; font-style: italic;">Another common pitfall. Credit <a href="https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/">Joel Grus</a>.</span>
 </div>
 
