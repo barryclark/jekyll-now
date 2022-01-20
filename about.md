@@ -16,7 +16,7 @@ I joined [Tomorrow](https://www.tmrow.com/) in March 2020, where I work as a dat
 
 ### Publications
 
-TBD
+* [Robust uncertainty estimates with out-of-distribution pseudo-inputs training](https://arxiv.org/abs/2201.05890) - _pending pres_
 
 ### Projects
 
