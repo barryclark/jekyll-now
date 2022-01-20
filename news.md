@@ -3,6 +3,11 @@ layout: page
 title: News
 permalink: /news/
 ---
+## 2022
+
+__January__
+ - Our commentary, [_Understanding sarcoma drug resistance one cell at a time_](https://cdrjournal.com/article/view/4464), is now available online.
+
 ## 2021
 
 __October__
