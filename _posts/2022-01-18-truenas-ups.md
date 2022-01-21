@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure TrueNas 🖥 for a UPS 🔋
+title: Configure TrueNas Scale 🖥 for a UPS 🔋
 ---
 
 Power outages are very rare, especially in Germany 🇩🇪.
