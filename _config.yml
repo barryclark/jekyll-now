@@ -4,7 +4,7 @@
 
 name: Martin Patz
 description: Deep Learning Expert, Low-power Edge processors, Self-hosting, Mountaineering
-avatar: https://raw.githubusercontent.com/patzm/patzm/master/images/profile.jpg
+avatar: https://raw.githubusercontent.com/patzm/patzm.github.io/master/images/profile.jpg
 
 #
 # Flags below are optional
@@ -42,7 +42,7 @@ url: patzm.github.io
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/patzm"
+baseurl: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!
