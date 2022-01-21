@@ -40,6 +40,10 @@ Hi 👋, I'm Benji - A Cloud Security Engineer who is interrested in cloud nativ
   <img src="https://github-profile-trophy.vercel.app/?username=BenjiTrapp&row=1" alt="Git Trophies">
 </p>
 
+#### Meet me on HTB (retired)
+![nyctophobia](https://www.hackthebox.eu/badge/image/226686)
+
+
 #### 😆 Random Joke
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
