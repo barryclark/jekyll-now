@@ -4,11 +4,11 @@ title: List of various Cloud Metadata Service Addresses
 ---
 
 ### IPv6 Tests
-http://[::ffff:169.254.169.254]
-http://[0:0:0:0:0:ffff:169.254.169.254]
+    http://[::ffff:169.254.169.254]
+    http://[0:0:0:0:0:ffff:169.254.169.254]
 
 ### AWS 
-Amazon Web Services (No Header Required), from http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories
+Amazon Web Services (No Header Required) [Source](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories)
 
     http://169.254.169.254/latest/meta-data/iam/security-credentials/dummy
     http://169.254.169.254/latest/user-data
@@ -21,7 +21,8 @@ Amazon Web Services (No Header Required), from http://docs.aws.amazon.com/AWSEC2
     http://169.254.169.254/latest/meta-data/public-keys/[ID]/openssh-key
 
 ### ECS Task : https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v2.html
-http://169.254.170.2/v2/credentials/
+
+    http://169.254.170.2/v2/credentials/
 
 ### Google Cloud (Header Sometimes Required)
 Source:  https://cloud.google.com/compute/docs/metadata
@@ -47,7 +48,7 @@ Source:  https://cloud.google.com/compute/docs/metadata
     http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/?recursive=true&alt=json
 
 ### Digital Ocean (No Header Required)
-Source ->  https://developers.digitalocean.com/documentation/metadata/
+[Source](https://developers.digitalocean.com/documentation/metadata/)
 
     http://169.254.169.254/metadata/v1.json
     http://169.254.169.254/metadata/v1/ 
