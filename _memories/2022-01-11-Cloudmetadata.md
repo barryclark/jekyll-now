@@ -8,7 +8,7 @@ title: List of various Cloud Metadata Service Addresses
     http://[0:0:0:0:0:ffff:169.254.169.254]
 
 ### AWS 
-Amazon Web Services (No Header Required) [Source](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories)
+> Amazon Web Services (No Header Required) [Source](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories)
 
     http://169.254.169.254/latest/meta-data/iam/security-credentials/dummy
     http://169.254.169.254/latest/user-data
@@ -20,14 +20,15 @@ Amazon Web Services (No Header Required) [Source](http://docs.aws.amazon.com/AWS
     http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
     http://169.254.169.254/latest/meta-data/public-keys/[ID]/openssh-key
 
-### ECS Task : https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v2.html
+### ECS Task : 
+> https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v2.html
 
     http://169.254.170.2/v2/credentials/
 
 ### Google Cloud (Header Sometimes Required)
-Source:  https://cloud.google.com/compute/docs/metadata
-  - Requires the header "Metadata-Flavor: Google" or "X-Google-Metadata-Request: True" on API v1
-  - Most endpoints can be accessed via the v1beta API without a header
+> Source:  https://cloud.google.com/compute/docs/metadata
+>  - Requires the header "Metadata-Flavor: Google" or "X-Google-Metadata-Request: True" on API v1
+>  - Most endpoints can be accessed via the v1beta API without a header
 
     ```  
     http://169.254.169.254/computeMetadata/v1/
@@ -48,7 +49,7 @@ Source:  https://cloud.google.com/compute/docs/metadata
     http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/?recursive=true&alt=json
 
 ### Digital Ocean (No Header Required)
-[Source](https://developers.digitalocean.com/documentation/metadata/)
+> [Source](https://developers.digitalocean.com/documentation/metadata/)
 
     http://169.254.169.254/metadata/v1.json
     http://169.254.169.254/metadata/v1/ 
@@ -70,24 +71,24 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/instance
     http://169.254.169.254/metadata/instance/network/interface/0/ipv4/ipAddress/0/publicIpAddress?api-version=2017-04-02&format=text
 
 ### Oracle Cloud (No Header Required)
-Source: https://docs.us-phoenix-1.oraclecloud.com/Content/Compute/Tasks/gettingmetadata.htm
+> Source: https://docs.us-phoenix-1.oraclecloud.com/Content/Compute/Tasks/gettingmetadata.htm
     
     http://169.254.169.254/opc/v1/instance/
 
 ### Alibaba Cloud
-Source: https://www.alibabacloud.com/help/faq-detail/49122.htm
+> Source: https://www.alibabacloud.com/help/faq-detail/49122.htm
 
     http://100.100.100.200/latest/meta-data/
     http://100.100.100.200/latest/meta-data/instance-id
     http://100.100.100.200/latest/meta-data/image-id
 
 ### OpenStack/RackSpace 
-Source: https://docs.openstack.org/nova/latest/user/metadata-service.html
+> Source: https://docs.openstack.org/nova/latest/user/metadata-service.html
 
     http://169.254.169.254/openstack	 
 
 ### Oracle Cloud
-Source:  https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/stcsg/retrieving-instance-metadata.html
+> Source:  https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/stcsg/retrieving-instance-metadata.html
 
     http://192.0.0.192/latest/
     http://192.0.0.192/latest/user-data/
@@ -95,7 +96,7 @@ Source:  https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/stcsg/retrievi
     http://192.0.0.192/latest/attributes/
 
 ### Kubernetes
-Debug Services (https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/)
+> Debug Services (https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/)
 
     https://kubernetes.default.svc.cluster.local
     https://kubernetes.default
