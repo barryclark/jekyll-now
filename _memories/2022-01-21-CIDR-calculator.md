@@ -12,7 +12,7 @@ Long Story short, here's the code:
 import argparse
 import json
 import re
-
+import sys
 
 valid_ip = "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/([0-3]?[0-9])$"
 
@@ -68,5 +68,16 @@ if __name__ == '__main__':
     parser.add_argument("ip", help='(string) IP-Address with CIDR range e.g. 1.2.3.4/16')
     parser.add_argument("--pretty", type=str2bool, nargs='?', const=True, default=False, help="Pretty print the output JSON")
     args = parser.parse_args()
+    
+    if len(sys.argv) <= 1:
+        parser.print_help()
+        sys.exit(1)
+
+    if not args.ip:
+        print("IP address required!")
+        parser.print_help()
+        sys.exit(1)
+        
     print(netmask(args.ip, args.pretty))
+
 ```
