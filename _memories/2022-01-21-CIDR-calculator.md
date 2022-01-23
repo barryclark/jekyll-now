@@ -9,6 +9,7 @@ the life a little easier there is an optional pretty print option. Otherwise jq 
 Long Story short, here's the code:
 
 ```python
+#!/usr/bin/env python3
 import argparse
 import json
 import re
