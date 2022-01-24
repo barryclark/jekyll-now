@@ -63,7 +63,7 @@ In the following, I arranged my notes in "reads": I related the notes to an aspe
 
 These notes offer an account of my way to "process" this case, in order to support others' own processes. Indeed, I tried to keep **only the investigative side** of my notes, getting rid of my own thoughts to keep only the prompts, the nudges, the questions. I offer those hoping they can be **useful prompts for your own investigation**.
 
-Remember, the investigation **has to be your own** (see [introduction](./intro-to-koans)).
+Remember, the investigation **has to be your own** (see [introduction](../intro-to-koans)).
 
 ## A read about being wrong all the time
 

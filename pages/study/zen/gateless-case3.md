@@ -45,7 +45,7 @@ Book of Serenity Case 84 has some comments/notes/interjections following the cas
 
 # Readings
 
-When I read cases, I tend to take notes: some thoughts that are prompted by reading the text, or coming later remembering the text, or just unprompted. I offer those hoping they can be useful prompts for [your own investigation](./intro-to-koans).
+When I read cases, I tend to take notes: some thoughts that are prompted by reading the text, or coming later remembering the text, or just unprompted. I offer those hoping they can be useful prompts for [your own investigation](../intro-to-koans).
 
 ## The one finger
 
