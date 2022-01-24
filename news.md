@@ -6,6 +6,8 @@ permalink: /news/
 ## 2022
 
 __January__
+ - Our preprint, [_The Androgen Receptor: A Therapeutic Target in Desmoplastic Small Round Cell Sarcoma_](https://www.biorxiv.org/content/10.1101/2022.01.20.477146v1), is now available online.
+ - Our preprint, [_Dissociation protocols used for sarcoma tissues bias the transcriptome observed in single-cell and single-nucleus RNA sequencing_](https://www.biorxiv.org/content/10.1101/2022.01.21.476982v1), is now available online.
  - Our commentary, [_Understanding sarcoma drug resistance one cell at a time_](https://cdrjournal.com/article/view/4464), is now available online.
 
 ## 2021
