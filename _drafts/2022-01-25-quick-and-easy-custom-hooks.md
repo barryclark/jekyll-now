@@ -27,7 +27,7 @@ Essentially, hooks are functions that run on each render of a component. They ar
 
 We can compose custom hooks by leveraging other hooks like `useEffect` and `useState`. This allows us to write custom hooks that can monitor pieces of application state and send information back to our components to handle the UI when things change.
 
-While all this can be done at the component level, using custom hooks allows us to easier separate the heavy logic from the UI.
+While all this can be done at the component level, using custom hooks makes it easier to separate the heavy logic from the UI.
 
 ### Share logic
 
@@ -176,8 +176,8 @@ Notice very little has changed. This works functionally the same as before, but 
 
 To extract a custom hook from a complex component:
 1. Take all the logic above your component's JSX, and move it to a custom hook. 
-2. Return any data needed in your component from your custom hook.
-3. Call the custom hook from your component, and pull out whatever data is needed.
+2. Return any data you might need from your custom hook.
+3. Call the custom hook from your component, pulling out whatever data is needed.
 4. Add parameters to your hook as needed to allow for reusability in multiple components.
 5. Done! You have a new custom hook ready to use.
 
