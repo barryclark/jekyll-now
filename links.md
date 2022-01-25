@@ -5,7 +5,7 @@ permalink: /links/
 ---
 
 
-### Interesting GitHub Repos:
+## Interesting GitHub Repos:
 
 - <a class="link" href="https://github.com/r0f1/datascience">Currated list of great Data Science sources</a>
 - <a class="link" href="https://github.com/aaronwangy/Data-Science-Cheatsheet/blob/main/Data_Science_Cheatsheet.pdf">Data Science theory for pre interview review</a>
