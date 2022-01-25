@@ -33,8 +33,11 @@ A place to include any other types of information that you'd like to include abo
 ### Hacker Rank Badges:
 
 <p>
-<img src="https://github.com/coreymcculley/coreymcculley/blob/main/HackerRankBadges.png" class="rounded-1 mr-3" width="640" height="200" alt="HackerRank">
-<p/>
+<img src="https://github.com/coreymcculley/HackerRank-Solutions-1/blob/master/Badges/10_days_of_javascript_5_star.png?raw=true" class="rounded-1 mr-3" width="64" height="64" alt="JS 5 star">
+<img src="https://github.com/coreymcculley/HackerRank-Solutions-1/blob/master/Badges/10_days_of_statistics_5_star.png?raw=true" class="rounded-1 mr-3" width="64" height="64" alt="Stats 5 star">
+<img src="https://github.com/coreymcculley/HackerRank-Solutions-1/blob/master/Badges/30_days_of_code_5_star.png?raw=true" class="rounded-1 mr-3" width="64" height="64" alt="30 D Code 5 Star">
+<img src="https://github.com/coreymcculley/HackerRank-Solutions-1/blob/master/Badges/sql_5_star.png?raw=true" class="rounded-1 mr-3" width="64" height="64" alt="SQL 5 Star">
+<img src="https://github.com/coreymcculley/HackerRank-Solutions-1/blob/master/Badges/python_5_star.png?raw=true" class="rounded-1 mr-3" width="64" height="64" alt="Python 5 Star"><p/>
 
 ### Familar With:
 
