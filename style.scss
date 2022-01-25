@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: #268BD2;
+	background: #96c9ee;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -203,7 +203,7 @@ img {
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 22px;
 
   @include mobile {
     margin: 3px 0;
@@ -275,7 +275,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: #daeaf5 ;
 }
 
 footer {
