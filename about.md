@@ -12,9 +12,6 @@ Engineer in the Oil and Gas industry who is looking to to branch out into a more
 - Chances to further my knowledge through collaborations in exciting new projects and ideas
 - Book recommendations (both Professional and Recreational)
 - Networking with like minded individuals
-<!-- ### More Information
-
-A place to include any other types of information that you'd like to include about yourself. -->
 
 ### Primary Languages/Tools:
 
