@@ -15,8 +15,7 @@ para outras pessoas assim como me ajudaram muito.
 ## Primeira dica: Spring Batch pode ou não rodar com o Spring Boot
 
 O Spring Boot facilita a configuração de projetos Spring e muitas vezes é fácil ter impressão que todos os projetos precisam rodar com ele, mas isso é falso.
-Apesar de particularmente recomendar o uso do Spring Boot, o Spring Batch é um _framework_ independente, construído para ajudar na construção de aplicações _
-batch_ mais robustas, sejam elas _web_ ou não.
+Apesar de particularmente recomendar o uso do Spring Boot, o Spring Batch é um _framework_ independente, construído para ajudar na construção de aplicações _batch_ mais robustas, sejam elas _web_ ou não.
 
 Para alcançar o objetivo a ferramenta disponibiliza um modelo de funcionamento que visa padronizar o código implementado para a aplicação. Nada melhor do que a
 documentação para explicar: [Spring Batch Introduction](https://docs.spring.io/spring-batch/docs/4.3.x/reference/html/index-single.html#spring-batch-intro)
@@ -55,9 +54,7 @@ Quando a classe de configuração é anotada com `@EnableBatchProcessing` o Spri
 usuário, mas e quando não quiser persistir as informações de execução na base principal? As vezes a informação da execução não vai ser utilizada, ou em casos em
 que a execução é controlada externamente não é necessário persistir, nesses casos é possível definir outro _datasource_ para o _JobRepository_.
 
-Em muitos exemplos que achei é utilizado o `MapJobRepositoryFactoryBean`, mas é um erro! Essa classe é para usar em ambientes de desenvolvimento, pois não é _
-thread safe_ e pode apresentar problemas em ambiente produtivo, uma melhor alternativa é utilizar um banco em memória (como H2, HSQL ou Derby) que lida melhor
-com transação e _threads_.
+Em muitos exemplos que achei é utilizado o `MapJobRepositoryFactoryBean`, mas é um erro! Essa classe é para usar em ambientes de desenvolvimento, pois não é _thread safe_ e pode apresentar problemas em ambiente produtivo, uma melhor alternativa é utilizar um banco em memória (como H2, HSQL ou Derby) que lida melhor com transação e _threads_.
 
 Para configurar bancos diferentes:
 
