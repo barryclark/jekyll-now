@@ -14,4 +14,4 @@ permalink: /links/
 - <a class="link" href="https://github.com/academic/awesome-datascience">Overview of Data Science</a>
 - <a class="link" href="https://github.com/coreymcculley/Data-Analysis">Data Science Projects</a>
 
-### Test
+### Tester
