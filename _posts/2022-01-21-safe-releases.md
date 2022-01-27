@@ -6,7 +6,7 @@ author_name: Xavier Hocquet
 author_github_username: xhocquet
 ---
 
-Continuous integration and deployment is a core tenet of agile development and fundamental to a high-performing technology organization, as researcg by Gene Kim and colleagues have shown[[1]](https://itrevolution.com/book/accelerate/). Deploying frequently results in smaller releases, more frequent updates for your users, quicker feedback from real users, and a tighter feedback loop between business decisions and shipped products.
+Continuous integration and deployment is a core tenet of agile development and fundamental to a high-performing technology organization, as research by Gene Kim and colleagues have shown[[1]](https://itrevolution.com/book/accelerate/). Deploying frequently results in smaller releases, more frequent updates for your users, quicker feedback from real users, and a tighter feedback loop between business decisions and shipped products.
 
 The worst enemy of continuous deployment is a broken build. The larger the engineering team, the worse it is. Incompatible code and inconsistent DB state will trickle down your development process and cost engineers time and your business money. I believe a strong understanding of the basics and a standard playbook to follow are the most effective tools at our disposal to avoid common pitfalls around release issues.
 
@@ -18,7 +18,7 @@ Below, I will outline the release cycle and common pitfalls with a focus on Maxw
 
 Many modern apps follow this 4-step deploy cycle (of course, your setup may vary).
 
-Steps one and two are safe for most apps. You click a deploy button or execute a CLI command, perhaps from your CI tool, which kicks off the build process for your new release. This happens on a release server, so nothing should be changing on your production servers yet.
+Steps one and two are safe for most apps. You click on a deploy button or execute a CLI command, perhaps from your CI tool, which kicks off the build process for your new release. This happens on a release server, so nothing should be changing on your production servers yet.
 
 A build process can vary widely, but with Ruby we don't have much to worry about besides running `bundler` and fetching dependencies. For our frontend, we run `rails assets:precompile` which ends up preparing our Javascript assets with webpacker.
 
@@ -35,7 +35,7 @@ This is a sensitive step because your tasks will be executed against data source
 
 ## Step 4 - Danger Zone 2 - Deploying code to production
 
-Finally, your new build is pushed to production servers. In AWS, this happens when we update our ECS task definitions and refresh the cluster. In Heroku, the proces is a combination of some helpful tools around releases like [Preboot](https://devcenter.heroku.com/articles/preboot) and the [Release Phase](https://devcenter.heroku.com/articles/release-phase)  as well as their own secret sauce. While these tools are helpful, they don't eliminate the need for planning safe releases.
+Finally, your new build is pushed to production servers. In AWS, this happens when we update our ECS task definitions and refresh the cluster. In Heroku, the process is a combination of some helpful tools around releases like [Preboot](https://devcenter.heroku.com/articles/preboot) and the [Release Phase](https://devcenter.heroku.com/articles/release-phase)  as well as their own secret sauce. While these tools are helpful, they don't eliminate the need for planning safe releases.
 
 The main risk here is that your new code will begin serving requests as soon as the first new server initializes. If your code depends on a new table and you haven't created it yet on your production app, that code will immediately begin to fail.
 
@@ -46,7 +46,7 @@ Besides these two danger zones, here's a few other things you should consider be
 
 ### Does your release contain long-running data migrations?
 
-A common task in engineers perform is migrating data to a new column, or adding a new calculated field to a table. Since Rails [loves sharp knives](https://rubyonrails.org/doctrine#provide-sharp-knives) and provides you with full ActiveRecord in migration files, it can tempting to just write a loop and populate a bunch of records with `.create`.
+A common task in engineers perform is migrating data to a new column, or adding a new calculated field to a table. Since Rails [loves sharp knives](https://rubyonrails.org/doctrine#provide-sharp-knives) and provides you with full ActiveRecord in migration files, it can be tempting to just write a loop and populate a bunch of records with `.create`.
 
 This is dangerous! Without knowing exactly how long a migration can take, you run the risk of timing out your release commands or consuming all available resources and failing the build. Depending on your configuration and whether you moved this outside of a transaction, this could leave you with an inconsistent DB state.
 
@@ -74,11 +74,11 @@ Keeping that in mind, here's a plan to release this change:
 
 First and foremost, we'll want to create a new `email` column on the `user_details` table. Stopping here would mean no data in the new column and nothing for our code to use.
 
-To ensure data is fully synched by the time the second release comes along, we'll want two things:
+To ensure data is fully synced by the time the second release comes along, we'll want two things:
  * Modify any code that previously set `email` on the `user` table to also update the `user_details` table. By updating both, we will make sure that any updates after our population scripts are reflected in the second table.
- * An asynchronous task to backpopulate emails in the new table. Based on our additional considerations, we should not be populating large amounts of data in the migration itself. So a typical approach here would be to ship a rake task or other script that can be run on the server once the release goes out.
+ * An asynchronous task to back-populate emails in the new table. Based on our additional considerations, we should not be populating large amounts of data in the migration itself. So a typical approach here would be to ship a rake task or other script that can be run on the server once the release goes out.
 
-Once this release is deployed, we can execute our data population task/script. Since it lives outside of a migration, we can handle any long-running tasks by splitting work up or putting it in a background queue. Once the data population is done, we are done with the first release and our DB is in a state where it is ready to receive calls from new code
+Once this release is deployed, we can execute our data population task/script. Since it lives outside of a migration, we can handle any long-running tasks by splitting work up or putting it in a background queue. Once the data population is done, we are done with the first release and our DB is in a state where it is ready to receive calls from the new code.
 
 ### Release 2 - Updates to the application code
 
@@ -94,6 +94,6 @@ It is now safe to drop the old `user.email` column since code is no longer using
 
 ## Fin
 
-The first time people see all these steps, a common reaction is "dang, that's a lot of steps"! I agree, however there is a real tradeoff between the complexity caused by splitting up releases vs. the risk associated with all-in-one releases. Investing in your CI/CD will also allow large data migrations to become manageable to more developers by simplifying releases to merging a pull request.
+The first time people see all these steps, a common reaction is "dang, that's a lot of steps"! I agree, however there is a real trade off between the complexity caused by splitting up releases vs. the risk associated with all-in-one releases. Investing in your CI/CD will also allow large data migrations to become manageable to more developers by simplifying releases to merging a pull request.
 
 Greenfield projects and smaller startups have a higher risk tolerance and may find it acceptable to ship quick and break releases every once in a while. As you scale, quality requirements will increase and downtime will result in more and more headaches for you and your customers. Simple strategies around how to plan clean releases with multiple people releasing code to production helps us avoid common issues which can have domino effects on an entire team.
