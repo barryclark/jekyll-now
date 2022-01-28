@@ -3,6 +3,9 @@ layout: post
 title: Non-negative Matrix Factorization
 tags: tutorials R machine-learning
 ---
+
+In this post, I will be discussing Non-negative Matrix Factorization (NMF).
+
 <html>
 
 <head>
@@ -341,16 +344,10 @@ pre code {
 
 
 
-#<div id="header">
 
 
 
-#<h1 class="title toc-ignore">Non-negative Matrix Factorization</h1>
-
-#</div>
-
-
-In this post, I will be discussing Non-negative Matrix Factorization (NMF). NMF is a low-rank approximation algorithm that discovers latent features in your data. It is similar to PCA in the sense that they both reduce high-dimensional data into lower dimensions for better understanding of the data. The major difference is that PCA projects data onto a subspace that maximizes variability for the discovered features, while NMF discovers non-negative features that are additive in nature. NMF is formally defined as:
+NMF is a low-rank approximation algorithm that discovers latent features in your data. It is similar to PCA in the sense that they both reduce high-dimensional data into lower dimensions for better understanding of the data. The major difference is that PCA projects data onto a subspace that maximizes variability for the discovered features, while NMF discovers non-negative features that are additive in nature. NMF is formally defined as:
 <div>
 <p><span class="math display">\[V \approx W H\]</span></p>
 </div>
