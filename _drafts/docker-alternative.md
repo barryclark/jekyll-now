@@ -28,9 +28,16 @@ Despite of the fact, that there are different tools, which are addressing buildi
 - [jib](https://github.com/GoogleContainerTools/jib) unofficially by Google, Java ecosystem centric, so only JVM is needed.
 - [kaniko](https://github.com/GoogleContainerTools/kaniko) another unofficial tool by Google, main focus eliminate docker in docker privilege escalation and build image on k8s pods.
 - [buildpacks](https://www.cncf.io/projects/buildpacks/) OS agnostic framework by CNCF, turns source code into optimized image, supports Ruby, Go, Python, Java. But installed Docker is needed.
-- Linux VM based solutions like pure VirtualBox VM or any VM plus Vagrant. 
+- Linux VM based solutions like pure VirtualBox VM or any VM plus Vagrant. Linux VM is started on Mac or Windows developer's host potentially with volumes mapping.
 
 This last option looks most viable for me and main reason, why i did not work much with Vagrant by HC was Docker. Also another one tool by HC looks pretty interesting here: Packer, it can be used for VM image preparation to enable unification of development environment.
+
+## Linux VM
+
+For some developers this is a good known way to work inside Linux VM.
+
+<!--TODO extend Linux VM part with vs code remote explorer -->
+
 
 ## summary
 
