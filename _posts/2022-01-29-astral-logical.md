@@ -1,3 +1,7 @@
+---
+published: true
+title: 'Astral Logical Album Release - February 24, 2022'
+---
 ![Astral Logical Album]({{taylorjhawkins.com}}/images/astral-logical-album.png)
 I'm releasing my third album, **Astral Logical**, as **Taylor J Hawkins**, in **February, 2022**. 
 It will be available on Spotify, ITunes, and other digital distribution platforms. 
