@@ -4,6 +4,13 @@ title: Reading List
 permalink: /reading_list/
 ---
 
+## 2022
+__Non-Fiction__
+ - Machine Learning with R, the tidyverse and mlr by Hefin I. Rhys
+
+__Fiction__
+ - Sword of Destiny by Andrzej Sapkowski
+
 ## 2021
 __Non-Fiction__
  - Blink: The Power of Thinking Without Thinking by Malcom Gladwell
