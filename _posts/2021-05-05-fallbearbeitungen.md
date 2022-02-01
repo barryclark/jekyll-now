@@ -2,9 +2,7 @@
 layout: post
 title: "Erstellen einer Fallbearbeitung in Markdown"
 ---
-
 ## Motivation
-
 Im Rahmen der Besprechung des ausservertraglichen Haftpflichtrechts in
 der Klasse cW\_18-22 habe ich eine Musterlösung in Markdown verfasst.
 Markdown bietet die Möglichkeit, den gleichen Inhalt in
@@ -20,10 +18,10 @@ einzusetzen.
 
 Für das Projekt braucht es folgende Software:
 
-* **Texteditor** - Grundsätzlich gib es auf jedem Computer einen Texteditor.
-  Die meisten vorinstallierten Editoren sind allerdings ziemlich
-  rudimentär.
-  Aus Gründen des Komforts empfehle ich hier [Typora](https://typora.io/).
+* **Texteditor** - Grundsätzlich gib es auf jedem Computer einen
+Texteditor.  Die meisten vorinstallierten Editoren sind allerdings
+ziemlich rudimentär. Ein einfacher aber beliebig erweiterbarer
+Texteditor ist [Atom](https://atom.io/).
 
 * **Pandoc** - [Pandoc ](https://pandoc.org/) ist das Programm, mit dem Texte von
   unterschiedlichsten Ausgangsformaten in die unterschiedlichsten
@@ -284,12 +282,12 @@ einem Klick auf das Clip Board-Symbol kopiert werden.
 
 Besondere Erwähnung verdient die Verarbeitung von Referenzen. Um die in
 Zotero gesammelten Materialien in den Text verarbeiten zu können, müssen
-die Referenzen in ein Bibtex-File exportiert werden. Dazu fasst man die
+die Referenzen in ein YAML-File exportiert werden. Dazu fasst man die
 für die Fallbearbeitung relevanten Zotero-Einträge in einem Ordner
 zusammen. Den so erstellten Ordner exportiert man mittels Rechtsklick.
 ![Menu nach Rechtsklick auf Sammlung](/images/export.png)
-Im dann erscheinenden Menu wählt man Better BibTex aus und wählt
-unbedingt die Option "Halte Aktuell" aus. So ist sichergestellt, dass
+Im dann erscheinenden Menu wählt man `Format: Better CSL YAML` aus und wählt
+unbedingt die Option `Halte Aktuell` aus. So ist sichergestellt, dass
 Einträge, die später in Zotero eingefügt werden, automatisch in das
 exportierte BibTeX-File eingefügt werden.
 Als Speicherort muss unbedingt der gleiche Ordner gewählt werden, in dem
@@ -298,7 +296,7 @@ An der Stelle, an der eine Referenz eingefügt werden soll, ist ein
 Eintrag in der folgenden Form vorzunehmen:
 `[@CitationKey,Seitenzahl]` Wenn also auf den Entscheid BGE 129 III 331
 E. 2.1 verwiesen werden soll, dann wird an der entsprechenden Stelle
-`[@BGE129III331, E.2.1]` geschrieben. Die Vorschau von Typora wird dies
+`[@BGE129III331, E.2.1]` geschrieben. Die Vorschau von ATOM wird dies
 noch in genau der Form darstellen. Die Umwandlung in die für
 Fallbearbeitung erforderliche Form erfolgt in einem nächsten Schritt.
 
@@ -342,7 +340,7 @@ Im vorliegenden Beispielfall sieht der YAML-Header folgendermassen aus.
   papersize: a4
   lang: de-CH
 # Angaben zur Bibliographie
-  bibliography: bibliography.bib               # Aus Zotero exportiertes Datenbankfile
+  bibliography: bibliography.yaml               # Aus Zotero exportiertes Datenbankfile
   csl: juristische-zitierweise-schweizer.csl   # Darstellung der bibliographischen Angaben
   ---
 ```
