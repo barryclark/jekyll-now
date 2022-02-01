@@ -46,7 +46,7 @@ Besides these two danger zones, here's a few other things you should consider be
 
 ### Does your release contain long-running data migrations?
 
-A common task in engineers perform is migrating data to a new column, or adding a new calculated field to a table. Since Rails [loves sharp knives](https://rubyonrails.org/doctrine#provide-sharp-knives) and provides you with full ActiveRecord in migration files, it can be tempting to just write a loop and populate a bunch of records with `.create`.
+A common task engineers perform is migrating data to a new column, or adding a new calculated field to a table. Since Rails [loves sharp knives](https://rubyonrails.org/doctrine#provide-sharp-knives) and provides you with full ActiveRecord in migration files, it can be tempting to just write a loop and populate a bunch of records with `.create`.
 
 This is dangerous! Without knowing exactly how long a migration can take, you run the risk of timing out your release commands or consuming all available resources and failing the build. Depending on your configuration and whether you moved this outside of a transaction, this could leave you with an inconsistent DB state.
 
