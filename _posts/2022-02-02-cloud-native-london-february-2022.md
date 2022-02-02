@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2022"
-published: false
 ---
 
 Our February Cloud Native London virtual meetup tonight is showcasing a great speaker from Ondat, starting from 6:45pm GMT on Rambly and YouTube! Hubert will be hosting.
