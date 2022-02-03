@@ -4,7 +4,8 @@ published: True
 title: The Illustrated Retrieval Transformer
 ---
 <span class="discussion">Discussion: <a href="https://github.com/jalammar/jalammar.github.io/discussions/21">Discussion Thread</a> for comments, corrections, or any feedback. </span>
-
+<br />
+<span class="discussion">Translations: <a href="https://habr.com/ru/post/648705/">Russian</a>
 <br />
 
 **Summary**: The latest batch of language models can be much smaller yet achieve GPT-3 like performance by being able to query a database or search the web for information. A key indication is that building larger and larger models is not the only way to improve performance.
@@ -169,7 +170,7 @@ Decoder blocks process the input text just like a GPT would. It applies self-att
   Input prompt passes through standard decoder block containing self-attention and FFNN layers
 </div>
 
-It's only when a RETRO decoder is reached do we start to incorporate the retrieved information. Every third block starting from 9 is a RETRO block (that allows its input to attend to the neighbors). So layers 9, 12, 15...32 are RETRO blocks.
+It's only when a RETRO decoder is reached do we start to incorporate the retrieved information. Every third block starting from 9 is a RETRO block (that allows its input to attend to the neighbors). So layers 9, 12, 15...32 are RETRO blocks. (The two smaller Retro models, and the Retrofit models have these layers starting from the 6th instead of the 9th layer).
 
 <div class="img-div" markdown="0">
   <img src="/images/retro/retro-decoder-attention-2.png" />
