@@ -1,0 +1,1 @@
+[EPPS 6354 Information Management Assignment 1](https://github.com/MinShiMia/SQL-Information-Management/blob/df7e33e643d0ccfd05d51564d12315837e8ea0c3/Assignments/EPPS%206354%20Assignment%201.%20Min_Shi.Rmd![image](https://user-images.githubusercontent.com/65604919/152434531-98d55a46-6d94-4b23-8a6f-025586614cb7.png)
