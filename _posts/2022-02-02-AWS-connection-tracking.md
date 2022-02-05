@@ -3,6 +3,7 @@ layout: post
 title: AWS Connection Tracking
 ---
 
+Let's have some fun with AWS Security Groups and a feature which could also be a bug.
 Sources: [Official AWS SG Connection Tracking Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html)
 
 ## What’s AWS Connection Tracking?
