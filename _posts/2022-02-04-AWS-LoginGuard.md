@@ -11,4 +11,5 @@ If the event `AwsConsoleSignin` get's triggered, the Event Bridge shall trigger 
 
 
 [AWS-LoginGuard Repo](https://github.com/BenjiTrapp/AWS-LoginGuard)
-**Currently still work in progress''
+
+**Currently still work in progress**
