@@ -406,10 +406,10 @@ pre.highlight {
 .highlight .mh { color: #005080; font-weight: bold } /* Literal.Number.Hex */
 .highlight .mi { color: #7979dc; font-weight: bold } /* Literal.Number.Integer */
 .highlight .mo { color: #4000E0; font-weight: bold } /* Literal.Number.Oct */
-.highlight .sb { background-color: #0d0c0c } /* Literal.String.Backtick */
+.highlight .sb { background-color: #0d0c0c; } /* Literal.String.Backtick */
 .highlight .sc { color: #0040D0 } /* Literal.String.Char */
 .highlight .sd { color: #D04020 } /* Literal.String.Doc */
-.highlight .s2 { background-color: #0d0c0c } /* Literal.String.Double */
+.highlight .s2 { background-color: #0d0c0c; } /* Literal.String.Double */
 .highlight .se {color: #606060;font-weight: bold;background-color: #0d0c0c;} /* Literal.String.Escape */
 .highlight .sh { background-color: $highlight-bg } /* Literal.String.Heredoc */
 .highlight .si { background-color: $highlight-bg } /* Literal.String.Interpol */
