@@ -21,7 +21,7 @@ From time to time it's very helpful to run the bash in strict mode. Sadly I forg
   - With these settings, certain common errors will cause the script to immediately fail, explicitly and loudly. Otherwise, you can get hidden bugs that are discovered only when they blow up in production.
 
     `set -euxo pipefail` is short for:
-    ```
+    ```bash
     set -e
     set -u
     set -o pipefail
@@ -44,7 +44,7 @@ From time to time it's very helpful to run the bash in strict mode. Sadly I forg
 #### set -u
 * Affects variables. When set, a reference to any variable you haven't previously defined - with the exceptions of $* and $@ - is an error, and causes the program to immediately exit. Languages like Python, C, Java and more all behave the same way, for all sorts of good reasons. One is so typos don't create new variables without you realizing it. For example:
 
-    ```
+    ```bash
     #!/bin/bash
     firstName="Aaron"
     fullName="$firstname Maxwell"
@@ -57,7 +57,7 @@ From time to time it's very helpful to run the bash in strict mode. Sadly I forg
 #### set -o pipefail
 * This setting prevents errors in a pipeline from being masked. If any command in a pipeline fails, that return code will be used as the return code of the whole pipeline. By default, the pipeline's return code is that of the last command even if it succeeds. Imagine finding a sorted list of matching lines in a file:
 
-    ```
+    ```bash
     $ grep some-string /non/existent/file | sort
     grep: /non/existent/file: No such file or directory
     % echo $?
@@ -68,7 +68,7 @@ From time to time it's very helpful to run the bash in strict mode. Sadly I forg
 - This empty string is then passed through sort, which happily accepts it as valid input, and returns a status code of 0. 
 - This is fine for a command line, but bad for a shell script: you almost certainly want the script to exit right then with a nonzero exit code... like this:
 
-    ```
+    ```bash
     $ set -o pipefail
     $ grep some-string /non/existent/file | sort
     grep: /non/existent/file: No such file or directory
@@ -78,7 +78,7 @@ From time to time it's very helpful to run the bash in strict mode. Sadly I forg
 #### Setting IFS
 * The IFS variable - which stands for Internal Field Separator - controls what Bash calls word splitting. When set to a string, each character in the string is considered by Bash to separate words. This governs how bash will iterate through a sequence. For example, this script:
 
-    ```
+    ```bash
     #!/bin/bash
     IFS=$' '
     items="a b c"
@@ -102,7 +102,7 @@ From time to time it's very helpful to run the bash in strict mode. Sadly I forg
 * For the second loop, "words" are separated by a newline, which means bash considers the whole value of "items" as a single word. If IFS is more than one character, splitting will be done on any of those characters.
 * Got all that? The next question is, why are we setting IFS to a string consisting of a tab character and a newline? Because it gives us better behavior when iterating over a loop. By "better", I mean "much less likely to cause surprising and confusing bugs". This is apparent in working with bash arrays:
 
-    ```
+    ```bash
     #!/bin/bash
     names=(
     "Aaron Maxwell"
@@ -140,7 +140,7 @@ From time to time it's very helpful to run the bash in strict mode. Sadly I forg
     ```
 Or consider a script that takes filenames as command line arguments:
 
-    ```
+    ```bash
     for arg in $@; do
         echo "doing something with file: $arg"
     done
