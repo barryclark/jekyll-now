@@ -4,6 +4,10 @@ title: News
 permalink: /news/
 ---
 ## 2022
+__February__
+
+ - I joined the [junior editorial board](https://urldefense.com/v3/__https://cdrjournal.com/editorsYouth/index__;!!PfbeBCCAmug!2ZwdODvrAcdmJUJJ2UtWrnr1VZGQSulkqDEdmBIxZ6PRozAxiMs9CP72m1rKQ4sdU40$) of Cancer Drug Resistance. 
+ 
 
 __January__
  - Our preprint, [_The Androgen Receptor: A Therapeutic Target in Desmoplastic Small Round Cell Sarcoma_](https://www.biorxiv.org/content/10.1101/2022.01.20.477146v1), is now available online.
