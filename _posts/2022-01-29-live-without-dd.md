@@ -22,15 +22,15 @@ Software Development Lifecycle or SDLC can be formalized differently, but usuall
 
 Goal of development phase is to develop change, test it locally and pull it into source code management system.
 
-Despite of the fact, that there are different tools, which are addressing building containerized applications, all of them (what i'm aware of) are for Linux or using Docker under the hood:
+Despite of the fact, that there are different tools, which are addressing building containerized applications, near all of them (what i'm aware of) are for Linux, Linux VM or using Docker under the hood:
 
-- [containers](https://github.com/containers/) by Redhat, common use case, currently can be used under Linux only.
+- [Rancher Desktop](https://rancherdesktop.io/) by Rancher Labs looks very promising, supports Mac and Win, provides nerdctl as cli for containerd. 
+- [containers](https://github.com/containers/) by Redhat, common use case, currently can be used under Linux only. Podman can be used on Mac or Windows as remote client. And for Windows there is connection to WSL2 (Windows Subsystem for Linux).
 - [jib](https://github.com/GoogleContainerTools/jib) unofficially by Google, Java ecosystem centric, so only JVM is needed.
 - [kaniko](https://github.com/GoogleContainerTools/kaniko) another unofficial tool by Google, main focus eliminate docker in docker privilege escalation and build image on k8s pods.
 - [buildpacks](https://www.cncf.io/projects/buildpacks/) OS agnostic framework by CNCF, turns source code into optimized image, supports Ruby, Go, Python, Java. But installed Docker is needed.
-- Linux VM based solutions like pure VirtualBox VM or any VM plus Vagrant. Linux VM is started on Mac or Windows developer's host potentially with volumes mapping.
-
-This last option looks most viable for me and main reason why i did not work much with Vagrant before was Docker on Mac or Win. Also another one tool by HC looks pretty interesting here: Packer, it can be used for VM image preparation to enable unification of development environment.
+- Plethora of Linux VM based solutions like pure VirtualBox VM with GUI, Linux VM plus podman as remote client where Linux VM is started manually or under the hood on Mac or Windows developer's host. 
+  This last option looks viable for me and and was first choise before i was told, that there is Rancher Desktop project. Also another one tool by HC looks pretty interesting here: Packer, it can be used for VM image preparation to enable unification of development environment.
 
 ## Linux VM
 
@@ -41,13 +41,21 @@ For some developers this is a good known way to work inside Linux VM on host OS,
 * how to prebake and distribute VM for development environment unification
   If you want to enable unified development environment to speed up onboarding and change distribution, you can try to introduce on org, domain or team level prebuilt VM image or disc sharing, that is reconfigured for development. One of the possible implementations could looks like HC Packer configuration that builds VirtualBox disk and saves it on S3 bucket. What can be easily wrapped in CI/CD process.
 
+## Rancher Desktop
+
+Looks very promising despite of current beta status as an OSS Docker Desktop substitution. Both Win (also WSL2 integration is provided if corresponding check box is activated) and Mac are supported. For image and container management, there is `nerdctl` tool with Docker comparable syntax, what makes learning curve smoother.
+
 ## summary
 
-Switch to paid plan or to VM based approach. If VM work mode is totally new to you, try development process inside VM first.
+Switch to (list is ordered):
+1. Rancher Desktop
+2. paid plan
+3. Linux VM based solution
 
 ## links
 
 - [containers](https://github.com/containers/)
+- [podman and WSL2](https://www.redhat.com/sysadmin/podman-windows-wsl2)
 - [jib](https://github.com/GoogleContainerTools/jib)
 - [kaniko](https://github.com/GoogleContainerTools/kaniko)
 - [buildpacks](https://www.cncf.io/projects/buildpacks/)
@@ -55,3 +63,4 @@ Switch to paid plan or to VM based approach. If VM work mode is totally new to y
 - [vagrant learning](https://learn.hashicorp.com/collections/vagrant/getting-started)
 - [packer](https://www.packer.io/)
 - [GitHub codespaces](https://github.com/features/codespaces)
+- [Rancher Desktop](https://rancherdesktop.io/)
