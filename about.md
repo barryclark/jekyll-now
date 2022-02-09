@@ -7,8 +7,6 @@ permalink: /about/
 
 korea student
 
-@ imoji = widnow + .
-
 
 ### More Information
 
