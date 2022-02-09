@@ -4,8 +4,9 @@ title: Welcome 💻
 permalink: /about/
 ---
 
-
 korea student
+
+EULJI.Univ
 
 
 ### More Information
