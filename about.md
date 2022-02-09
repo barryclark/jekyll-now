@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+KOREA
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Hello This is a place where everyone, including myself, can share useful IT information.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[helen66626662@gmail.com](mailto:helen66626662@gmail.com)
