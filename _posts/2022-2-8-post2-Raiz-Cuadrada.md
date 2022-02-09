@@ -32,7 +32,7 @@ y así sucesivamente: cada vez que aparezca $\sqrt{N}-a$ lo reemplazamos por $\f
 Un método mucho más fácil de recordar que aquellas recetas tradicionales con varios pasos.
 
 <b>Un ejemplo:</b>
-<p align="justify"> Hagamos una ilustración sencilla hallando $\sqrt{2}$. Entonces $N = 2$, $a = 1$ y $b = N-a^2 = 1$. Tomemos sólo la aproximación de considerar los \emph{cinco} primeros pasos:</p>
+<p align="justify"> Hagamos una ilustración sencilla hallando $\sqrt{2}$. Entonces $N = 2$, $a = 1$ y $b = N-a^2 = 1$. Tomemos sólo la aproximación de considerar los cinco primeros pasos:</p>
 \begin{equation}
 \sqrt{2} = 1+\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2+...}}}}}}\approx 1+\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2}}}}},
 \end{equation}
@@ -45,3 +45,5 @@ Trabajemos la última fracción:
 \end{aligned}
 \end{equation}
 y con esta aproximación resulta $\sqrt{2}\approx 1.414285714$, es decir, obtuvimos cuatro decimales exactos.
+
+<b>A modo de conclusión</b>, lo anterior podría expresarse como un teorema "sea $N\in\mathbb{R}$, $a\in\{z\in\mathbb{Z}: a^2<N\}$, entonces bla, bla, bla...", y luego viene la demostración que cerramos con un bello $\blacksquare$. Pero sería injusto hacer eso con el razonamiento precioso y riguroso de Cataldi. Sucede que la estructura <a href = "https://es.wikipedia.org/wiki/Nicolas_Bourbaki", target = "_blank">bourbakista</a> de la matemática a la que estamos acostumbrados desde mediados del siglo XX, si bien constituye un gran logro intelectual, no le hace justicia al <i>pensamiento</i> matemático, que a menudo (por no decir casi siempre) sucede como en el ejemplo anterior: se parte de una expresión (en este caso $\sqrt{N}-a$), se procede de manera lógica y rigurosa, y al final obtenemos un resultado que jamás habríamos esperado. Busquen cualquier libro de matemática previo a 1950, verán que este es el camino con el que se presentan la mayoría de los resultados.
