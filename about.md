@@ -4,7 +4,7 @@ title: Welcome 💻
 permalink: /about/
 ---
 
-korea student
+korea student   YHI
 
 EULJI.Univ
 
