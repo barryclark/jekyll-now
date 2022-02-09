@@ -8,6 +8,9 @@ recetas que sólo la cercanı́a de un examen puede llevarnos a estudiar, inclus
 <p align="justify"> Sin embargo, cada tanto hay salvadores que nos recuerdan que la matemática siempre consigue escaparse, exhibir su belleza y mostrar que es mucho más que aquellas reglas a memorizar, aquellos programas de estudio o esos artı́culos profesionales y estériles, publicados en revistas serias y que sólo servirán para
 aburrir a nuestros nietos cuando los mostremos e intentemos justificar en qué gastamos nuestra juventud.</p>
 
+
+# El origen del método
+
 <p align="justify">Leyendo la <a href ="http://www.librosmaravillosos.com/historiadelamatematica/index.html" target = "_blank" >Historia de la Matemática</a> de Rey Pastor, encontré este desarrollo para la raı́z cuadrada, debido al matemático renacentista Pietro Cataldi (1552-1626). Hermoso, simple, riguroso... un poema en forma de <a href = "https://es.wikipedia.org/wiki/Fracci%C3%B3n_continua" target= "_blank">fracción continua</a>.</p>
 
 <b>El <del>método</del> soneto de Cataldi</b>
