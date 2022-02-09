@@ -6,6 +6,7 @@ title: Hágalo Usted mismo: la raíz cuadrada
 Hay distintos métodos para hallar la  <a href = "https://es.wikipedia.org/wiki/Ra%C3%ADz_cuadrada#C%C3%A1lculo_de_ra%C3%ADces_cuadradas" target="_blank">raíz cuadrada</a> de un número positivo a mano, pero sus reglas por lo general requieren varios pasos. Son unas de esas
 recetas que sólo la cercanı́a de un examen puede llevarnos a estudiar, incluso si somos matemáticos (ya sea que lo seamos en modo <i>amateur</i> o <i>profesional</i> ).
 
+####
 Sin embargo, cada tanto hay salvadores que nos recuerdan que la matemática siempre consigue escaparse, exhibir su belleza y mostrar que es mucho más que
 aquellas reglas a memorizar, aquellos programas de estudio o esos artı́culos profesionales y estériles, publicados en revistas serias y que sólo servirán para
 aburrir a nuestros nietos cuando los mostremos e intentemos justificar en qué gastamos nuestra juventud.
