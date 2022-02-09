@@ -10,7 +10,9 @@ Podés consultar mi <a href = "https://uliseschialva.github.io/cv-online/">Curr�
 
 ### Sobre este sitio
 
-<p style="text-align:justify;">El objetivo es exponer distintos tópicos de mi trabajo, proyectos, y algunas reflexiones, experiencias y observaciones sobre el quehacer científico, en particular el matemático.</p>
+<p style="text-align:justify;">El objetivo es exponer distintos tópicos de mi trabajo, proyectos, y algunas experiencias y reflexiones sobre el quehacer científico, en particular el matemático.</p>
+
+<p style = "text-align:justify;"><i>Disclaimer:</i> No hago divulgación, sólo me gusta pensar en vol alta. A veces delante de otras personas :D</p>
 
 
 ### Contacto
