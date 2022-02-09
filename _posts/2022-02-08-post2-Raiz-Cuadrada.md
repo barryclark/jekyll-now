@@ -17,19 +17,19 @@ Leyendo la <a href ="http://www.librosmaravillosos.com/historiadelamatematica/in
 <b>El <del>método</del> soneto de Cataldi</b>
 
 Sea calcular $\sqrt{N}$ y llamemos $a\in\mathbb{N}$ al mayor entero tal que $a^2<N$. Entonces haremos:
-\begin{equation*}
+\begin{equation}
 \sqrt{N}-a = \frac{\overbrace{N-a^2}^{b}}{\sqrt{N}+a}=\frac{b}{2a+\sqrt{N}-a}.
-\end{equation*}
+\end{equation}
 Luego, tendremos 
-\begin{equation*}
+\begin{equation}
 \sqrt{N} =a+\frac{b}{2a+\sqrt{N}-a},
-\end{equation*}
+\end{equation}
 y en esta última expresión, donde está $\sqrt{N}-a$ ponemos la fórmula que ya obtuvimos previamente, y nos queda
-\begin{equation*}
+\begin{equation}
 \sqrt{N} =a+\frac{b}{2a+\underbrace{\sqrt{N}-a}_ {\frac{b}{2a+\sqrt{N}-a}}} = a+\frac{b}{2a+\frac{b}{2a+\sqrt{N}-a}},
-\end{equation*}
+\end{equation}
 y así sucesivamente: cada vez que aparezca $\sqrt{N}-a$ lo reemplazamos por $\frac{b}{2a+\sqrt{N}-a}$. Así conseguimos
-\begin{equatio
+\begin{equation}
 \sqrt{N} = a+\frac{b}{2a+\frac{b}{2a+\frac{b}{2a+\frac{b}{2a+\frac{b}{...}}}}}.
 \end{equation}
 
