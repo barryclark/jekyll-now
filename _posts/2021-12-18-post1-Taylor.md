@@ -2,7 +2,7 @@
 layout: post
 title: Polinomio de Taylor en dos variables
 ---
-<i>Lo siguiente son algunos apuntes que armé para un concurso recientemente rendido, el tema de exposición fue la Fórmula de Taylor en dos variables. Salí segundo, pero creo que los apuntes me quedaron lindos. Son básicamente tres apuntes: uno con resultados (sin demostraciones), otro con la demostración de la fórmula de Taylor y un tercero con ejercicios resueltos.</i>
+<i>Lo siguiente son algunos apuntes que armé para un concurso recientemente rendido, el tema de exposición fue la Fórmula de Taylor en dos variables. Salí segundo, pero creo que los apuntes quedaron lindos. Son tres apuntes: uno con resultados (sin demostraciones), otro con la demostración de la fórmula de Taylor y un tercero con ejercicios resueltos.</i>
 
 <i> Aquí los pueden descargar: <a href = "https://drive.google.com/file/d/1pQJFa5nNHgjibx8G1PQB3EaAsqJagjVb/view?usp=sharing" target="_blank">Resultados</a>, <a href="https://drive.google.com/file/d/1pJi5mmGerrfOUmi2_OkzloG8k099ztJy/view?usp=sharing" target="_blank">Demostración</a>, <a href="https://drive.google.com/file/d/1WORhSLhlQ8JPgoqidI4b6vuflTpd8Lxq/view?usp=sharing" target="_blank">Ejercicios</a></i>
 
