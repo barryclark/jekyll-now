@@ -1,12 +1,13 @@
 ---
 layout: page
-title: About
+title: Welcome 💻
 permalink: /about/
 ---
 
-# KOREA student💻 
 
-//widnow + .
+korea student
+
+@ imoji = widnow + .
 
 
 ### More Information
