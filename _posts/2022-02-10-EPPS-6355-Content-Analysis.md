@@ -1,1 +1,6 @@
-[Content Analysis Final Project -- Framing 2018 U.S.-China Trade War During Trump Era](https://minshimia.github.io/Content-Analysis-Using-ML/Framing US-China Trade War/Final_Project.html)
+---
+layout: post
+title: Data Science - Information Management
+---
+
+[Content Analysis -- Framing 2018 U.S.-China Trade War During Trump Era](https://minshimia.github.io/Content-Analysis-Using-ML/Framing US-China Trade War/Final_Project.html)
