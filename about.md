@@ -8,7 +8,7 @@ published: true
 
 The best way to learn is to just build it.
 
-This blog will give a behind the scenes look at the trials and tribulations on my quest to $1M ARR.
+This blog will give a behind the scenes look at the trials and tribulations on my quest to 10k users.
 
 ### Contact me
 
