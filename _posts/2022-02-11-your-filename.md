@@ -79,12 +79,44 @@ We started working on a server-side web analytics solution and testing the marke
 
 After about a month of building, two things happened:
 
-We had enough time to see if our working styles meshed, which they did.
-- An idea popped up from a client request that we both believed in.
+* We had enough time to see if our working styles meshed, which they did.
+* An idea popped up from a client request that we both believed in.
 
 Long story short, instead of beating your head against a wall trying to find the perfect idea, just start!
 
 Start with anything, inspiration will come, staying stagnant will just make you another wantrepreneur.
+
+## Maintaining communication
+
+When it comes to remote cofounders the importance of communication is multiplied. Setting up the proper channels and maintaining a clear schedule is critical for success.
+
+Keeping your teammate informed of your daily/weekly goals helps motivate and set accountability.
+
+It’s very easy to procrastinate when you’re “the boss” but when you see your cofounder working their ass off and you’re doing nothing, that guilt should set in. Unless of course, you’re a prick.
+
+Our main communication hub is Slack and we have integrated all of our tools to send notifications to this platform. This is our main dashboard and it helps keeps us on the same page for the health of the business.
+
+Figure out what works for your duo and run with it. For us, we will have one or two calls a week and then for the smaller topics, just send each other audios clips.
+
+This style has worked for us because when a thought is fresh, you can send a quick audio snippet and the other can listen to it when they have time.
+
+Getting sidetracked is a big problem, so try to stay on goal and not overcommunicate with long phone calls every day.
+
+One piece of advice that I can share when it comes to communication is that tone is not conveyed properly over text. I can’t count the number of times I’ve seen people get upset over an email or Slack message from a misunderstanding in tone.
+
+In this digital world, don’t forget how to communicate. Jumping to conclusions or negatives will just set your team back. Clarify before making an unnecessary enemy.
+
+## Trust your gut
+
+There is no one size fits all formula to finding a cofounder. People aren’t predictable. It takes time to find the right fit.
+
+The one constant is your gut because no matter who you choose, you’re going to have to take a chance.
+
+You could get burned or feel like you’re doing all the work, that’s just collateral damage in the life of an entrepreneur.
+
+All that you can do is work with the information you’re given and decide if you believe in your cofounder. When it works, it works and you’ll eventually see success.
+
+That’s what we’re working towards with Accordably and we’re excited to see what’s next for this project.
 
 
 
