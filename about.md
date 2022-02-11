@@ -2,14 +2,14 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
 
-### More Information
+The best way to learn is to just build it.
 
-A place to include any other types of information that you'd like to include about yourself.
+This blog will give a behind the scenes look at the trials and tribulations on my journey to $1M ARR.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[hello@cannon.wtf](mailto:hello@cannon.wtf)
