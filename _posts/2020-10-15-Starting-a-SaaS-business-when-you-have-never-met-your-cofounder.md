@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Starting a SaaS business when you’ve never met your cofounder
 
@@ -117,7 +117,3 @@ You could get burned or feel like you’re doing all the work, that’s just col
 All that you can do is work with the information you’re given and decide if you believe in your cofounder. When it works, it works and you’ll eventually see success.
 
 That’s what we’re working towards with Accordably and we’re excited to see what’s next for this project.
-
-
-
-
