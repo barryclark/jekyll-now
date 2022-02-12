@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enumerate AWS AccountIds 
+title: Enumerate AWS AccountIDs 
 ---
 
 ### A different approach to an AWS whois
 Ever found some AWS credentials and wondered how to find out what they are used for, or if they are even valid?
 
-The most common method is to use `sts:get-caller-identity` ([AWS Documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html) as an API call for that sake. This also doesn’t require any special permissions to perfom the call.
+The most common method is to use `sts:get-caller-identity` [AWS Documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html) as an API call for that sake. This also doesn’t require any special permissions to perfom the call.
 
-This option might get monitored since it became very popular (see [twitter](https://twitter.com/SpenGietz/status/1283846678194221057) and has a high chance to trigger an alarm. 
+This option might get monitored since it became very popular (see [twitter](https://twitter.com/SpenGietz/status/1283846678194221057)) and has a high chance to trigger an alarm. 
 As a sneaky cloud ninja we can use another approach. Luckily some calls are returning valuable info if an Error occured. So we can use another AWS Service to disclose the Account ID (by accident). The following approach is certainly not a comprehensive list, and note that the principal needs to **NOT have IAM permissions** to use this call to return the information as an error.
 But not every API calls exhibit to this kind of behavior. A failed EC2 API call f.e. will return a variant of the following output:
 ```bash
