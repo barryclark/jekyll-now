@@ -3,7 +3,7 @@ layout: post
 title: Enumerate AWS AccountIDs 
 ---
 
-### A approach to schiebe an AWS whois
+### An approach to achieve an AWS whois
 Ever found some AWS credentials and wondered how to find out what they are used for, or if they are even valid?
 
 The most common method is to use `sts:get-caller-identity` ([AWS Documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html)) as an API call for that sake. This also doesn’t require any special permissions to perfom the call.
