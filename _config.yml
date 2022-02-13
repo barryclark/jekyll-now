@@ -30,7 +30,8 @@ locale: "en"
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+#theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -117,16 +118,13 @@ tag_archive:
 comments:
   provider: "disqus"
   disqus:
-    shortname: "jnowwwak"
+    shortname: "janono"
  
 analytics:
   provider: "google"
   google:
     tracking_id: "UA-141219604-1"
     anonymize_ip: false      
-
-compress_html:
-  clippings: all
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

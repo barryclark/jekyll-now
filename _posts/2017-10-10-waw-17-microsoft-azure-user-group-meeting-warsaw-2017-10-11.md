@@ -1,6 +1,6 @@
 ---
 id: 127
-title: 'Microsoft Azure User Group meeting in Warsaw 17 [WAW] 2017-10-11'
+title: "Microsoft Azure User Group meeting in Warsaw 17 [WAW] 2017-10-11"
 date: 2017-10-10T18:08:28+02:00
 author: Janusz Nowak
 
@@ -16,6 +16,7 @@ tags:
   - Warsaw
 format: image
 ---
+
 <div class="llorix-one-lite-video-container">
   <div id="meetup_oembed" style="height:286px">
     <div style="max-height:246px;overflow:hidden">

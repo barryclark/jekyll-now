@@ -23,6 +23,7 @@ tags:
   - Open Source
   - vsts
 ---
+
 There was awesome new few days ago on <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-devops/" target="_blank" rel="noopener">Azure blog</a> about changing Vsts to Azure DevOps, on fist look it look to be not important.
 
 <img class="wp-image-317 size-medium alignleft" src="/wp-content/uploads/2018/09/index-hero-300x258.jpg" alt="Azure DevOps" width="300" srcset="/wp-content/uploads/2018/09/index-hero-300x258.jpg 300w, /wp-content/uploads/2018/09/index-hero-768x659.jpg 768w, /wp-content/uploads/2018/09/index-hero-1024x879.jpg 1024w, /wp-content/uploads/2018/09/index-hero.jpg 1118w" sizes="(max-width: 300px) 100vw, 300px" />
@@ -33,11 +34,11 @@ I assume there will be more very good staff coming and this is just start.
 
 The VSTS was spitted in 5 services:
 
-## <img class="alignnone size-full wp-image-334" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Pipelines.png" alt="" width="30" />  Azure Pipelines
+## <img class="alignnone size-full wp-image-334" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Pipelines.png" alt="" width="30" /> Azure Pipelines
 
 CI/CD that works with any language, platform, and cloud. Connect to GitHub or any Git repository and deploy continuously. <a href="https://azure.microsoft.com/services/devops/pipelines/" target="_blank" rel="noopener">Learn More ></a>
 
-## <img class="alignnone size-full wp-image-333" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Boards.png" alt="" width="33" />  Azure Boards
+## <img class="alignnone size-full wp-image-333" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Boards.png" alt="" width="33" /> Azure Boards
 
 Powerful work tracking with Kanban boards, backlogs, team dashboards, and custom reporting. <a href="https://azure.microsoft.com/services/devops/boards/" target="_blank" rel="noopener">Learn more ></a>
 
@@ -45,11 +46,11 @@ Powerful work tracking with Kanban boards, backlogs, team dashboards, and custom
 
 Maven, npm, and NuGet package feeds from public and private sources. <a href="https://azure.microsoft.com/services/devops/artifacts/" target="_blank" rel="noopener">Learn more ></a>
 
-## <img class="alignnone size-full wp-image-335" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Repos.png" alt="" width="32" />  Azure Repos
+## <img class="alignnone size-full wp-image-335" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Repos.png" alt="" width="32" /> Azure Repos
 
 Unlimited cloud-hosted private Git repos for your project. Collaborative pull requests, advanced file management, and more. <a href="https://azure.microsoft.com/services/devops/repos/" target="_blank" rel="noopener">Learn more ></a>
 
-## <img class="alignnone size-full wp-image-336" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Test-Plans.png" alt="" width="29" />  Azure Test Plans
+## <img class="alignnone size-full wp-image-336" style="font-size: 16px;" src="/wp-content/uploads/2018/09/Azure-Test-Plans.png" alt="" width="29" /> Azure Test Plans
 
 All in one planned and exploratory testing solution. <a href="https://azure.microsoft.com/services/devops/test-plans/" target="_blank" rel="noopener">Learn more ></a>
 
@@ -57,27 +58,27 @@ All in one planned and exploratory testing solution. <a href="https://azure.micr
 
 On [GitHub marketplace](https://github.com/marketplace/azure-pipelines) there is extension
 
-<img class="alignnone size-full wp-image-324" src="/wp-content/uploads/2018/09/2018-09-13-08_05_51-Window.png" alt="" width="1086" srcset="/wp-content/uploads/2018/09/2018-09-13-08_05_51-Window.png 1086w, /wp-content/uploads/2018/09/2018-09-13-08_05_51-Window-300x285.png 300w, /wp-content/uploads/2018/09/2018-09-13-08_05_51-Window-768x731.png 768w, /wp-content/uploads/2018/09/2018-09-13-08_05_51-Window-1024x974.png 1024w" sizes="(max-width: 1086px) 100vw, 1086px" /> 
+<img class="alignnone size-full wp-image-324" src="/wp-content/uploads/2018/09/2018-09-13-08_05_51-Window.png" alt="" width="1086" srcset="/wp-content/uploads/2018/09/2018-09-13-08_05_51-Window.png 1086w, /wp-content/uploads/2018/09/2018-09-13-08_05_51-Window-300x285.png 300w, /wp-content/uploads/2018/09/2018-09-13-08_05_51-Window-768x731.png 768w, /wp-content/uploads/2018/09/2018-09-13-08_05_51-Window-1024x974.png 1024w" sizes="(max-width: 1086px) 100vw, 1086px" />
 
 Azure Pipelines Pricing free for public and private repositories
 
-  * Linux, macOS, and Windows
-  * 10 free parallel jobs for public repositories
-  * Unlimited minutes for public repositories
-  * 1 free parallel job for private repositories (1,800 minutes per month)
+- Linux, macOS, and Windows
+- 10 free parallel jobs for public repositories
+- Unlimited minutes for public repositories
+- 1 free parallel job for private repositories (1,800 minutes per month)
 
-<img class="alignnone size-full wp-image-325" src="/wp-content/uploads/2018/09/2018-09-13-08_06_04-Window.png" alt="" width="1063" srcset="/wp-content/uploads/2018/09/2018-09-13-08_06_04-Window.png 1063w, /wp-content/uploads/2018/09/2018-09-13-08_06_04-Window-300x136.png 300w, /wp-content/uploads/2018/09/2018-09-13-08_06_04-Window-768x348.png 768w, /wp-content/uploads/2018/09/2018-09-13-08_06_04-Window-1024x463.png 1024w" sizes="(max-width: 1063px) 100vw, 1063px" /> 
+<img class="alignnone size-full wp-image-325" src="/wp-content/uploads/2018/09/2018-09-13-08_06_04-Window.png" alt="" width="1063" srcset="/wp-content/uploads/2018/09/2018-09-13-08_06_04-Window.png 1063w, /wp-content/uploads/2018/09/2018-09-13-08_06_04-Window-300x136.png 300w, /wp-content/uploads/2018/09/2018-09-13-08_06_04-Window-768x348.png 768w, /wp-content/uploads/2018/09/2018-09-13-08_06_04-Window-1024x463.png 1024w" sizes="(max-width: 1063px) 100vw, 1063px" />
 
 How to activate it for GitHub, by pressing Install it and confirming order you will be redirected to
 
-<img class="alignnone size-full wp-image-326" src="/wp-content/uploads/2018/09/2018-09-13-08_06_19-Window.png" alt="" width="1047"  srcset="/wp-content/uploads/2018/09/2018-09-13-08_06_19-Window.png 1047w, /wp-content/uploads/2018/09/2018-09-13-08_06_19-Window-300x144.png 300w, /wp-content/uploads/2018/09/2018-09-13-08_06_19-Window-768x369.png 768w, /wp-content/uploads/2018/09/2018-09-13-08_06_19-Window-1024x492.png 1024w" sizes="(max-width: 1047px) 100vw, 1047px" /> 
+<img class="alignnone size-full wp-image-326" src="/wp-content/uploads/2018/09/2018-09-13-08_06_19-Window.png" alt="" width="1047"  srcset="/wp-content/uploads/2018/09/2018-09-13-08_06_19-Window.png 1047w, /wp-content/uploads/2018/09/2018-09-13-08_06_19-Window-300x144.png 300w, /wp-content/uploads/2018/09/2018-09-13-08_06_19-Window-768x369.png 768w, /wp-content/uploads/2018/09/2018-09-13-08_06_19-Window-1024x492.png 1024w" sizes="(max-width: 1047px) 100vw, 1047px" />
 
 Azure DevOps site where you will have option to login and create Azure Devops organization or use existing one
 
-<img class="alignnone size-full wp-image-327" src="/wp-content/uploads/2018/09/2018-09-13-08_06_55-Window.png" alt="" width="542" srcset="/wp-content/uploads/2018/09/2018-09-13-08_06_55-Window.png 542w, /wp-content/uploads/2018/09/2018-09-13-08_06_55-Window-214x300.png 214w" sizes="(max-width: 542px) 100vw, 542px" /><img class="alignnone size-full wp-image-328" src="/wp-content/uploads/2018/09/2018-09-13-08_09_28-Window.png" alt="" width="532" height="607" srcset="/wp-content/uploads/2018/09/2018-09-13-08_09_28-Window.png 532w, /wp-content/uploads/2018/09/2018-09-13-08_09_28-Window-263x300.png 263w" sizes="(max-width: 532px) 100vw, 532px" /> 
+<img class="alignnone size-full wp-image-327" src="/wp-content/uploads/2018/09/2018-09-13-08_06_55-Window.png" alt="" width="542" srcset="/wp-content/uploads/2018/09/2018-09-13-08_06_55-Window.png 542w, /wp-content/uploads/2018/09/2018-09-13-08_06_55-Window-214x300.png 214w" sizes="(max-width: 542px) 100vw, 542px" /><img class="alignnone size-full wp-image-328" src="/wp-content/uploads/2018/09/2018-09-13-08_09_28-Window.png" alt="" width="532" height="607" srcset="/wp-content/uploads/2018/09/2018-09-13-08_09_28-Window.png 532w, /wp-content/uploads/2018/09/2018-09-13-08_09_28-Window-263x300.png 263w" sizes="(max-width: 532px) 100vw, 532px" />
 
 And after that you can see all repositories from GitHub with option for create pipeline for them 🙂
 
-<img class="alignnone size-full wp-image-329" src="/wp-content/uploads/2018/09/2018-09-13-08_10_06-Window.png" alt="" width="1362" srcset="/wp-content/uploads/2018/09/2018-09-13-08_10_06-Window.png 1362w, /wp-content/uploads/2018/09/2018-09-13-08_10_06-Window-300x231.png 300w, /wp-content/uploads/2018/09/2018-09-13-08_10_06-Window-768x590.png 768w, /wp-content/uploads/2018/09/2018-09-13-08_10_06-Window-1024x787.png 1024w" sizes="(max-width: 1362px) 100vw, 1362px" /> 
+<img class="alignnone size-full wp-image-329" src="/wp-content/uploads/2018/09/2018-09-13-08_10_06-Window.png" alt="" width="1362" srcset="/wp-content/uploads/2018/09/2018-09-13-08_10_06-Window.png 1362w, /wp-content/uploads/2018/09/2018-09-13-08_10_06-Window-300x231.png 300w, /wp-content/uploads/2018/09/2018-09-13-08_10_06-Window-768x590.png 768w, /wp-content/uploads/2018/09/2018-09-13-08_10_06-Window-1024x787.png 1024w" sizes="(max-width: 1362px) 100vw, 1362px" />
 
 I assume there will be even more good staff coming with Azure DevOps boosting a lot Open Source world and not only 🙂

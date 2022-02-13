@@ -22,6 +22,7 @@ tags:
   - azurefunction
   - paas
 ---
+
 ## Azure Function benchmark for .Net 4.7 vs .Net Core beta, how much request per seconds we can squeeze?
 
 There was some benchmark done by my colleague [Roberto](https://robertoprevato.github.io/Comparing-Linux-hosted-to-Windows-hosted-ASP-NET-Core-applications-in-Azure-Application-Service-Plan/) about running application on app service plan vs app service plan for docker.
@@ -30,7 +31,7 @@ That inspired me for some other approach to run the same code sample but on azur
 
 The size of machine for app service plan is S1, testing approach is ab benchmark tool running under windows hosted in azure, do not hit network limits or CPU the machine size is DS5_V2
 
-<img class="size-full wp-image-239 alignleft" src="/wp-content/uploads/2017/10/s1.png" alt="" width="183" height="327" srcset="/wp-content/uploads/2017/10/s1.png 183w, /wp-content/uploads/2017/10/s1-168x300.png 168w" sizes="(max-width: 183px) 100vw, 183px" /><img class="size-full wp-image-240 alignleft" src="/wp-content/uploads/2017/10/DS5_V2.jpg" alt="" width="188" height="327" srcset="/wp-content/uploads/2017/10/DS5_V2.jpg 188w, /wp-content/uploads/2017/10/DS5_V2-172x300.jpg 172w" sizes="(max-width: 188px) 100vw, 188px" /> 
+<img class="size-full wp-image-239 alignleft" src="/wp-content/uploads/2017/10/s1.png" alt="" width="183" height="327" srcset="/wp-content/uploads/2017/10/s1.png 183w, /wp-content/uploads/2017/10/s1-168x300.png 168w" sizes="(max-width: 183px) 100vw, 183px" /><img class="size-full wp-image-240 alignleft" src="/wp-content/uploads/2017/10/DS5_V2.jpg" alt="" width="188" height="327" srcset="/wp-content/uploads/2017/10/DS5_V2.jpg 188w, /wp-content/uploads/2017/10/DS5_V2-172x300.jpg 172w" sizes="(max-width: 188px) 100vw, 188px" />
 
 &nbsp;
 
@@ -54,7 +55,7 @@ The size of machine for app service plan is S1, testing approach is ab benchmark
 
 The setup is pre compiled Azure Function running .Net 4.7
 
-<img class="alignnone size-full wp-image-246" src="/wp-content/uploads/2017/10/fun-runtime.jpg" alt="" width="205" height="72" /> 
+<img class="alignnone size-full wp-image-246" src="/wp-content/uploads/2017/10/fun-runtime.jpg" alt="" width="205" height="72" />
 
 <pre class="EnlighterJSRAW" data-enlighter-language="csharp">public static class Function1
 {        
@@ -108,7 +109,7 @@ The setup is pre compiled Azure Function running .Net 4.7
 
 vs Azure Function .Net Core having kestrel under hood in beta version
 
-<img class="alignnone size-full wp-image-243" src="/wp-content/uploads/2017/10/functionbeta.png" alt="" width="235" height="89" /> 
+<img class="alignnone size-full wp-image-243" src="/wp-content/uploads/2017/10/functionbeta.png" alt="" width="235" height="89" />
 
 <pre class="EnlighterJSRAW" data-enlighter-language="csharp">#r "Newtonsoft.Json"
 
@@ -161,7 +162,7 @@ using Newtonsoft.Json;
 }
 </pre>
 
-Cmd for testing  ab -n 5000 -c 150 -l http://&#8230;&#8230; ?s=&#8221;&#8221; s=1, s=10 , s=100
+Cmd for testing ab -n 5000 -c 150 -l http://&#8230;&#8230; ?s=&#8221;&#8221; s=1, s=10 , s=100
 
 ab results :
 
