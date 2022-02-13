@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Reflections
-permalink: /reflections/
+title: Blog
+permalink: /blog/
 ---
 
 <div class="posts">
