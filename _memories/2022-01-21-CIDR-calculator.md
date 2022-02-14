@@ -14,6 +14,7 @@ import argparse
 import json
 import re
 import sys
+from netaddr import IPNetwork
 
 valid_ip = "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/([0-3]?[0-9])$"
 
@@ -42,14 +43,16 @@ def netmask(cidr, pretty_print):
 	netmask = netmask + '0.' * abs((4-(len(netmask.split('.'))-1)))
 
 	netmask = netmask[:-1]
+	ip_list = list(IPNetwork(cidr))
 
 	d = {'cidr': cidr,
-		 'netmask': netmask,
-		 'netmask_binary': host_bits,
-		 'num_hosts': num_hosts,
-		 'network_bits': net_bits,
-		 'host_bits': num_host_bits,
-	}
+             'min_addr': str(ip_list[0]),
+             'max_addr': str(ip_list[-1]),
+	     'netmask': netmask,
+	     'netmask_binary': host_bits,
+             'num_hosts': num_hosts,
+	     'network_bits': net_bits,
+             'host_bits': num_host_bits}
 
 	return json.dumps(d, indent=4, sort_keys=True) if pretty_print else json.dumps(d)
 
@@ -80,5 +83,4 @@ if __name__ == '__main__':
         sys.exit(1)
         
     print(netmask(args.ip, args.pretty))
-
 ```
