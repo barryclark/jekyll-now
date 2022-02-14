@@ -3,23 +3,22 @@ layout: post
 title: "Überlegungen zur Textredaktion in unformatiertem Text"
 ---
 
-> ## Motivation
-> Textredaktion ist eine zentrale Arbeit eines jeden Wissensarbeiters.
-> Die Office-Suite von Microsoft und damit Microsoft Word hat sich dabei
-> als Quasi-Standard etabliert.
->
-> Word gibt vielen Anwendern ein Gefühl der Sicherheit, weil man
-> vermeintlich die Kontrolle über die Darstellung der erstellten
-> Dokumente hat. Verlockend ist auch die Möglichkeit, in Echtzeit mit
-> anderen 
-> zusammenzuarbeiten und dabei den Versionsverlauf des Dokumentes
-> anzeigen zu lassen.
-> 
-> Das Verfassen des Textes darf jedoch nicht mit seiner schlussendlichen
-> Darstellung verwechselt werden. Ich erachte es im Gegenteil als
-> sinnvoll die Textredaktion von seiner Darstellung zu trennen.
-> 
-> Mit dieser Anleitung möchte ich eine mögliche Vorgehensweise aufzeigen.
+## Motivation
+Textredaktion ist eine zentrale Arbeit eines jeden Wissensarbeiters.
+Die Office-Suite von Microsoft und damit Microsoft Word hat sich dabei
+als Quasi-Standard etabliert.
+
+Word gibt vielen Anwendern ein Gefühl der Sicherheit, weil man
+vermeintlich die Kontrolle über die Darstellung der erstellten
+Dokumente hat. Verlockend ist auch die Möglichkeit, in Echtzeit mit
+anderen zusammenzuarbeiten und dabei den Versionsverlauf des Dokumentes
+anzeigen zu lassen.
+ 
+Das Verfassen des Textes darf jedoch nicht mit seiner schlussendlichen
+Darstellung verwechselt werden. Ich erachte es im Gegenteil als
+sinnvoll die Textredaktion von seiner Darstellung zu trennen.
+ 
+Mit dieser Anleitung möchte ich eine mögliche Vorgehensweise aufzeigen.
 
 
 ## Software Voraussetzungen
