@@ -173,8 +173,8 @@ ohne grossen Aufwand funktioniert.
 Ich habe mich für Github entschieden, weil dies ein externes Backup und
 eine Versionskontrolle gleichzeitig sicherstellt. Dies funktioniert in
 Visual Studio Code sehr einfach. In der Seitenliste muss das Symbol für
-die Versionskontrolle (![Symbol
-Versionskontrolle](/images/versionskonrolle.png)) ausgewählt werden. In dieser
+die Versionskontrolle (![SymbolVersionskontrolle](/images/versionskonrolle.png))
+ausgewählt werden. In dieser
 Spalte können die letzten Änderungen mit dem Plus-Symbol vorgemerkt
 werden. Mit dem Korrekturhakensymbol öffnet sich dann ein Fenster für
 eine Texteingabe. In dieser Texteingabe ist eine kurze Zusammenfassung
