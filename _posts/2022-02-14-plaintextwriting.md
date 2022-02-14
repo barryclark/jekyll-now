@@ -1,4 +1,7 @@
-# Überlegungen zur Textredaktion in unformatiertem Text
+---
+layout: post
+title: "Überlegungen zur Textredaktion in unformatiertem Text"
+---
 
 > ## Motivation
 > Textredaktion ist eine zentrale Arbeit eines jeden Wissensarbeiters.
