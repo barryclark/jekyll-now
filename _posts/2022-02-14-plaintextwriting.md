@@ -96,7 +96,6 @@ noch ein paar Einstellungen in Visual Studio Code zu ändern:
     "editor.minimap.maxColumn": 72,
     "rewrap.autoWrap.enabled": true,
   }
-
   ```
 
 * Rechtschreibeprüfung: Eine Rechtschreibeprüfung ist in eine gute
