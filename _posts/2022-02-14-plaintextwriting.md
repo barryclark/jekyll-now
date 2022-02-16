@@ -87,6 +87,7 @@ noch ein paar Einstellungen in Visual Studio Code zu ändern:
 
   Falls die Datei `settings.json` leer ist, sollte folgender
   Inhalt eingefüllt werden: 
+
   ```
   {
     "editor.wordWrap": "on",
@@ -94,7 +95,8 @@ noch ein paar Einstellungen in Visual Studio Code zu ändern:
     "files.autoSave": "afterDelay",
     "editor.minimap.maxColumn": 72,
     "rewrap.autoWrap.enabled": true,
- }
+  }
+
   ```
 
 * Rechtschreibeprüfung: Eine Rechtschreibeprüfung ist in eine gute
