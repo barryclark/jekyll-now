@@ -80,10 +80,22 @@ noch ein paar Einstellungen in Visual Studio Code zu ändern:
   an, die Datei `settings.json` zu bearbeiten. In dieser Datei ist an
   den Positionen `"editor.wordWrapColumn":` und
   `"editor.minimap.maxColumn":` je der Wert `72` einzutragen (anstelle
-  von 72 kann auch ein anderer Wert gewählt werden).
+  von `72` kann auch ein anderer Wert gewählt werden).
 
   Damit der Zeilenumbruch automatisch erfolgt, muss noch die Erweiterung
   `Rewrap` installiert werden.
+
+  Falls die Datei `settings.json` leer ist, sollte folgender
+  Inhalt eingefüllt werden: 
+  ```
+  {
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 72,
+    "files.autoSave": "afterDelay",
+    "editor.minimap.maxColumn": 72,
+    "rewrap.autoWrap.enabled": true,
+ }
+  ```
 
 * Rechtschreibeprüfung: Eine Rechtschreibeprüfung ist in eine gute
   Sache. Dazu ist die Erweiterung `Spell Right` zu installieren. Diese
