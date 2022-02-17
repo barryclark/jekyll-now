@@ -27,9 +27,7 @@ Personally, I would recommend checking out different digital communities, you’
 
 Indiehackers have a specific group called “Looking to partner up” and you will find a wide variety of people looking to start a business.
 
-That’s where I met [Jannis](https://gebauer.dev/), the cofounder of Accordably.
-
-[Jannis](https://gebauer.dev/){:target="\_blank"}
+That’s where I met [Jannis](https://gebauer.dev/){:target="\_blank"}, the cofounder of Accordably.
 
 ![alex-jannis.png]({{site.baseurl}}/_posts/alex-jannis.png)
 
