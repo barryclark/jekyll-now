@@ -29,6 +29,8 @@ Indiehackers have a specific group called “Looking to partner up” and you wi
 
 That’s where I met [Jannis](https://gebauer.dev/), the cofounder of Accordably.
 
+[Jannis](https://gebauer.dev/){:target="\_blank"}
+
 ## What to look for when choosing a cofounder?
 
 The ideal match is someone who is the complete opposite of your skillset. Think of it like an ice hockey team. If your team was all goalies, you’d get nowhere. You need balance and different strengths to help push your product over the top.
