@@ -29,7 +29,7 @@ Indiehackers have a specific group called “Looking to partner up” and you wi
 
 That’s where I met [Jannis](https://gebauer.dev/){:target="\_blank"}, the cofounder of Accordably.
 
-![alex-jannis.png]({{site.baseurl}}/_posts/alex-jannis.png)
+![]({{site.baseurl}}/https://github.com/boomahora/boomahora.github.io/blob/6db0701684da4e6e52adaa8d5da47790a6add73f/images/alex-jannis.png)
 
 ## What to look for when choosing a cofounder?
 
