@@ -6,6 +6,7 @@ title: MITRE ATT&CK Bash Oneliner
 MITRE ATT&CK is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
 
 => [https://attack.mitre.org](https://attack.mitre.org)
+=> [Getting started guide](https://www.mitre.org/sites/default/files/publications/mitre-getting-started-with-attack-october-2019.pdf)
 
 The Oneliner below require curl and jq installed 
 
