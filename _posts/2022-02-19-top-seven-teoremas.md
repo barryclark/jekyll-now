@@ -3,7 +3,7 @@ layout: post
 title: Top Seven de Teoremas Históricos
 ---
 
-<p align = "justify"><i>En este pequeño artículo expongo una lista con los que considero, son los Siete Teoremas más importantes de la Matemática. Aunque no enunciaremos formalmente los teoremas ni nos meteremos con sus demostraciones (para eso pueden consultar los links que estarán más abajo), sólo hablaremos de la importancia histórica de cada uno de estos magníficos resultados.</i></p>
+<p align = "justify"><i>En este pequeño artículo expongo una lista con los que considero, son los Siete Teoremas más importantes de la Matemática. Aunque no enunciaremos formalmente los teoremas ni nos meteremos con sus demostraciones (para eso pueden consultar los links que estarán más abajo), sí hablaremos de la importancia histórica de cada uno de estos magníficos resultados.</i></p>
 
 <p align="justify">"Un matemático es una persona que convierte café en teoremas" solía decir <a href= "https://es.wikipedia.org/wiki/Paul_Erd%C5%91s" target = "_blank">Paul Erdös</a>, aunque está el rumor de que en realidad utilizó el término "anfetaminas" en vez de "café", en referencia a su adicción. En todo caso, razón no le faltaba: los teoremas son los ladrillos del edificio matemático, mientras que las definiciones y los axiomas pueden considerarse como los cimientos (y si queremos ser más exquisitos en la analogía, los criterios de belleza, coherencia lógica y simplicidad serían las plomadas y escuadras que permiten ver si estamos levantando de manera correcta la pared).</p>
 
