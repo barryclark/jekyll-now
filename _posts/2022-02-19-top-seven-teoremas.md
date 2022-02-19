@@ -91,12 +91,12 @@ title: Top Seven de Teoremas Históricos
 </p>
 
 <p id="footnote-3">
-   3. Hubo muchísima investigación en Europa durante la Edad Media. Si cree que se trató de una edad oscura, ande con cuidado: puede significar que usted es un estúpido. En tal caso, no se preocupe, se cura leyendo.
+   3. Hubo muchísima investigación en Europa durante la Edad Media. Si cree que se trató de una edad oscura, ande con cuidado: puede significar que usted está desinformado. En tal caso, no se preocupe, se cura leyendo.
       <a href="#footnote-3-ref" title="return to text">&#8617;</a>
 </p>
 
 <p id="footnote-4">
-   4. En lenguaje moderno, diríamos que $\mathcal{C}_2$ es la \emph{integral} de $\mathcal{C}_1$.
+   4. En lenguaje moderno, diríamos que $\mathcal{C}_2$ es la <i>integral</i> de $\mathcal{C}_1$.
       <a href="#footnote-4-ref" title="return to text">&#8617;</a>
 </p>
 
