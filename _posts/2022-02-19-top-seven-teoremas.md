@@ -81,6 +81,7 @@ title: Top Seven de Teoremas Históricos
 
 <p align="justify">A modo de conclusión, remarquemos que cuesta comentar de manera sencilla la profundidad de este resultado, pero los dos Teoremas de Incompletitud son mucho más que teoremas: realmente constituyen  una de las cumbres del pensamiento abstracto humano. Su demostración no sólo ha influído en las matemáticas desde entonces (que se tornaron más modestas, buscando sistemas simples que resulten útiles a los objetivos particulares de cada matemático), también estos resultados redefinieron qué entendemos por conocimiento, qué entendemos por coherencia, qué entendemos por verdad. Un resultado que a fin de cuentas no está nada mal para un sistema de pensamiento como el matemático, que inició hace 2500 años, con Thales jugando a dibujar triángulos en la arena.</p>
 
+<h4> Notas al pie</h4>
 <p id="footnote-1">
    1. En honor a la verdad, un buen matemático no siempre consigue demostrar lo que él quisiera, pero a menudo saber reconocer <i>la pregunta correcta</i> vale más que mil teoremas tontos, aún si no se es capaz de resolverla en el momento.
       <a href="#footnote-1-ref" title="return to text">&#8617;</a> 
