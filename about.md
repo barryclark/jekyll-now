@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Wang Junshi is a statistics student. But he is also very interested in theoretical statistics(causal inference, statistical inference, statistical learning, time series analysis, biostat) and is open for all interesting opportunities in these fields. He has strong sense of social responsibility and is ready to commit and serve.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+My HKU Undergraduate Capstone Course: [STAT3799 Semi-supervised Learning Based on NW Estimator](https://github.com/wjshku/STAT3799)
+
+Forecasting Project I am now working on: [Statistics in Forecasting](https://github.com/wjshku/Forecasting)
+
+Courses I like: Statistical Inference......Stay Tuned
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[wjshku@connect.hku.hk](mailto:wjshku@connect.hku.hk)
