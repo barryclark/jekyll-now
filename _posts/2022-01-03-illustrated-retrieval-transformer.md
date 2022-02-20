@@ -5,7 +5,7 @@ title: The Illustrated Retrieval Transformer
 ---
 <span class="discussion">Discussion: <a href="https://github.com/jalammar/jalammar.github.io/discussions/21">Discussion Thread</a> for comments, corrections, or any feedback. </span>
 <br />
-<span class="discussion">Translations: <a href="https://habr.com/ru/post/648705/">Russian</a>
+<span class="discussion">Translations:  <a href="https://chloamme.github.io/2022/01/08/illustrated-retrieval-transformer-korean.html">Korean</a>, <a href="https://habr.com/ru/post/648705/">Russian</a>
 <br />
 
 **Summary**: The latest batch of language models can be much smaller yet achieve GPT-3 like performance by being able to query a database or search the web for information. A key indication is that building larger and larger models is not the only way to improve performance.
