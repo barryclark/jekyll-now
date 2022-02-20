@@ -226,9 +226,10 @@ In diesem Dialog kann ausgewählt werden, welche Version in welche andere
 Version integriert werden soll. In meinem Beispiel soll die Variante
 *220220-Beispiel-Branch* in *master* integriert werden.
 ![Pull Request Dialog](../images/220220_create_pull_request.jpg)
-
-
-Dort
-steht neben dem Versionierungssymbol der Name des aktuellen `Branch`.
-Wenn man auf diesen Namen klickt, öffnet sich eine Eingabezeile in der
-der Name des neuen `Branch` festgelegt werden kann.
+Daraufhin öffnet sich ein Fenster mit allen Steuerungsmöglichkeiten für
+diesen `Pull Request`. Zentral ist der Button `Merge Pull Request`.
+Bevor die Textvarianten zusammengeführt werden, können diese miteinander
+verglichen werden. Dazu öffnet man eine Gegenüberstellung in dem man im
+Fenster am Rand den Namen des Files. Dies öffnet ein Vergleichsfenster.
+Wenn man mit den Änderungen einverstanden ist, können die Texte
+zusammengeführt werden.
