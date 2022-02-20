@@ -4,6 +4,11 @@ published: False
 title: The Illustrated Retro Transformer 
 ---
 
+
+<span class="discussion">
+Translations: <a href="https://chloamme.github.io/2022/01/08/illustrated-retrieval-transformer-korean.html">Korean</a>
+</span>
+
 looking at DeepMind's Retro Transformer, which at 7.5B parameters is on par with GPT3 and models 25X its size in knowledge-intensive tasks. 
 
 A big moment for Large Language Models (LLMs) for reasons I'll mention in this thread.
