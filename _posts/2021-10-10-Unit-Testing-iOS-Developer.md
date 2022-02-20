@@ -15,17 +15,17 @@ Unit testing adalah proses pengujian terhadap fungsi, method, atau langkah dari 
 Unit Testing di iOS Development
 Sebagai iOS Developer kita juga dapat menulis unit test pada project kita, untuk melakukan unit test ini dapat dilakukan dengan mudah karena XCode sudah menyediakannya sehingga tidak perlu menggunakan 3rd party framework untuk melakukan unit test. Untuk melakukan unit test dengan XCode dapat dilakukan dengan cara berikut.
 
-    ![add new target](images/assets/target.jpeg)
+    ![add new target](images/assets/target.jpeg?raw=true)
 
 pada editor pilih File->New->Target 
 
 
-    ![add new target](images/assets/bundle.jpeg)
+    ![Testing Bundle](images/assets/bundle.jpeg?raw=true)
 
 setelah itu akan muncul window dialog yang akan menampilkan pilihan new target, pilih unit testing bundle kemudian pilih next
 
 
-    ![add new target](images/assets/unittesttest.jpeg)
+    ![Add Unit Test](images/assets/unittesttest.jpeg?raw=true)
 
 kemudian akan muncul setup pada new target yang akan dibuat, pilih nama sesuai yang anda inginkan saja. Kemudian pilih lanjut.
 
@@ -87,6 +87,6 @@ Untuk memulai menulis unit test code diatas, kita beralih ke unit testting targe
 
 untuk menjalankan unit test tersebut dapat kita tekan "Command + U", hasilnya terlihat seperti berikut ini:
 
-    ![add new target](images/running.jpeg)
+    ![Result Testing](images/running.jpeg?raw=true)
 
 terlihat bahwa indicator hijau menandakan bahwa hasil test berjalan lancar, jika hasil test berjalan dengan baik seperti itu maka kita sudah lebih tenang dalam menulis code atau coding karena code kita sudah teruji dengan unit test yang kita buat. Oke, mungkin sekian dulu pembahasan tentang unit test pada iOS Development. Jika ada pertanyaan jangan ragu untuk bertanya. Terima Kasih
