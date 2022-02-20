@@ -202,7 +202,22 @@ Dies geschieht, in dem man sogenannte `Branches` erstellt. Dies würde
 aber den Rahmen dieser Einleitung sprengen.
 
 
-Einen `Branch` kann man in der Statuszeile unten rechts erstellen. Dort
+Einen `Branch` kann man in der Statuszeile unten rechts erstellen.
+![Statuszeile](../images/220220_statuszeile.jpg)
+Man klickt dazu auf das Wort neben dem Versionsverwaltungszeichen (im
+Beispiel master). Dies öffnet einen Auswahldialog am oberen Rand des
+Fensters.
+![Auswahldialog für Branches](../images/220220_new_branch.jpg) In diesem
+Fenster gibt man den Namen für den neuen `Branch` ein und wählt neuen
+Branch erstellen (Der Menüpunkt `Neuen Branch erstellen aus` gibt einem
+eine detaillierter Kontrolle über die Einstellungen.).
+
+Die Weiterentwicklung des Textes erfolgt nun in diesem neuen `Branch`.
+Der Originaltext in `master` bleibt davon unberührt.
+Sobald der Text im neu erstellten `Branch` fertiggestellt ist, kann er
+mit einem sogenannten `Pull Request` in den Haupttext eingefügt werden.
+
+Dort
 steht neben dem Versionierungssymbol der Name des aktuellen `Branch`.
 Wenn man auf diesen Namen klickt, öffnet sich eine Eingabezeile in der
 der Name des neuen `Branch` festgelegt werden kann.
