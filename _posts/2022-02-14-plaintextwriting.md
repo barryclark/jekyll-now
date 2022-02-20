@@ -200,3 +200,9 @@ Im Unterfenster `FILE HISTORY` kann der Verlauf der Arbeit nachvollzogen
 werden. Git und Github ermöglichen es auch, Textvarianten zu erstellen.
 Dies geschieht, in dem man sogenannte `Branches` erstellt. Dies würde
 aber den Rahmen dieser Einleitung sprengen.
+
+
+Einen `Branch` kann man in der Statuszeile unten rechts erstellen. Dort
+steht neben dem Versionierungssymbol der Name des aktuellen `Branch`.
+Wenn man auf diesen Namen klickt, öffnet sich eine Eingabezeile in der
+der Name des neuen `Branch` festgelegt werden kann.
