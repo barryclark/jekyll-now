@@ -200,3 +200,36 @@ Im Unterfenster `FILE HISTORY` kann der Verlauf der Arbeit nachvollzogen
 werden. Git und Github ermöglichen es auch, Textvarianten zu erstellen.
 Dies geschieht, in dem man sogenannte `Branches` erstellt. Dies würde
 aber den Rahmen dieser Einleitung sprengen.
+
+
+Einen `Branch` kann man in der Statuszeile unten rechts erstellen.
+![Statuszeile](../images/220220_statuszeile.jpg)
+Man klickt dazu auf das Wort neben dem Versionsverwaltungszeichen (im
+Beispiel master). Dies öffnet einen Auswahldialog am oberen Rand des
+Fensters.
+![Auswahldialog für Branches](../images/220220_new_branch.jpg) In diesem
+Fenster gibt man den Namen für den neuen `Branch` ein und wählt neuen
+Branch erstellen (Der Menüpunkt `Neuen Branch erstellen aus` gibt einem
+eine detaillierter Kontrolle über die Einstellungen.).
+
+Die Weiterentwicklung des Textes erfolgt nun in diesem neuen `Branch`.
+Der Originaltext in `master` bleibt davon unberührt.
+Sobald der Text im neu erstellten `Branch` fertiggestellt ist, kann er
+mit einem sogenannten `Pull Request` in den Haupttext eingefügt werden.
+Am einfachsten kann ein solcher `Pull Request` mit Hilfe der Erweiterung
+*GitHub Pull Requests and Issues* erstellt werden. Wenn diese
+installiert ist, findet sich unter dem Menü Versionskontrolle
+(![Vresionskontrolle](../images/220220_versions_logo.jpg)) ein Icon,
+mit dem der entsprechende Dialog aufgerufen werden kann (![Pull
+Request](../images/220220_pull_request.jpg)).
+In diesem Dialog kann ausgewählt werden, welche Version in welche andere
+Version integriert werden soll. In meinem Beispiel soll die Variante
+*220220-Beispiel-Branch* in *master* integriert werden.
+![Pull Request Dialog](../images/220220_create_pull_request.jpg)
+Daraufhin öffnet sich ein Fenster mit allen Steuerungsmöglichkeiten für
+diesen `Pull Request`. Zentral ist der Button `Merge Pull Request`.
+Bevor die Textvarianten zusammengeführt werden, können diese miteinander
+verglichen werden. Dazu öffnet man eine Gegenüberstellung in dem man im
+Fenster am Rand den Namen des Files. Dies öffnet ein Vergleichsfenster.
+Wenn man mit den Änderungen einverstanden ist, können die Texte
+zusammengeführt werden.
