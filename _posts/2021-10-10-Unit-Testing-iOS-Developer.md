@@ -1,3 +1,9 @@
+---
+layout: post
+title: Unit Testing iOS Developer
+published: true
+---
+
 Unit Testing
 
 Berapa banyak dari anda yang menulis code disertai dengan unit testing? atau bahkan anda baru pertama kali mendengar tentang unit testing? Jika itu benar maka hal itu bukanlah hal yang buruk.
