@@ -88,7 +88,7 @@ noch ein paar Einstellungen in Visual Studio Code zu ändern:
   Falls die Datei `settings.json` leer ist, sollte folgender
   Inhalt eingefüllt werden: 
 
-  ```
+  ```json
   {
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 72,
@@ -111,7 +111,7 @@ Formatierung wird durch den weiter unten beschriebenen Prozess
 gesteuert. Der Text muss damit nur strukturiert werden. Dafür stellt
 Markdown die folgenden Gliederungselemente zur Verfügung.
 
-```
+```md
 # Titel
 
 ## Untertitel
@@ -155,7 +155,7 @@ wie die Ausgabe für jedes gewünschte Format aussehen soll. Hier eine
 kurzes Beispiel eines solchen Haders für die Ausgabe eines PDF in A4 mit
 Schriftgrösse 11pt.
 
-```
+```yaml
 ---
 title: Titel des Dokuments
 author: Name des Autors
