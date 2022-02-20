@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Sanjaya Wisnu
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Saat ini saya bekerja sebagai iOS Developer disebuah perusahaan fintech. Mempunyai ketertarikan dalam membangun aplikasi dan belajar ilmu IT. Jika sedang luang saya kadang berolahraga sepeda, membaca manhwa dan juga mendengarkan electronic music. 
+
+Terima Kasih sudah mengunjungi halaman saya. Salam!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[overdongo@gmail.com](mailto:overdongo@gmail.com)
