@@ -1,7 +1,6 @@
 ---
 title: "K-means from scratch in R"
 layout: post
-output: html_document
 tags: bioinformatics tips tutorials machine-learning
 ---
 

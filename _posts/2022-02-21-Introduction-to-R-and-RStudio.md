@@ -1,7 +1,6 @@
 ---
 title: "Introduction to R and RStudio"
 layout: post
-output: html_document
 tags: bioinformatics tips tutorials 
 ---
 
