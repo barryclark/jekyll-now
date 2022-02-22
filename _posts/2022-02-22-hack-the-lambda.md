@@ -17,7 +17,7 @@ Since a Lambda function is stateless and sandboxed, the code gets injected and e
 <br>
 
 <p align="center">
-<img width="600" src="/images/reverse-htl.png">
+<img width="600" src="/images/reverse-eng-htl.png">
 </p>
 
 With the anatomy of AWS Lambda in mind it’s time to reverse engineer and find out if there are some interesting. Let`s perform a temple run to look behind the curtain. To do so we rely on some Python scripting. All source code used can be found here: https://github.com/BenjiTrapp/smashing-aws-lambda
