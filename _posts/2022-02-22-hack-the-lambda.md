@@ -142,7 +142,7 @@ Here's what we can do, based on the three areas and our attack strategy:
 * ...surely much more nasty things
 
 <p align="center">
-<img width="600" src="/images/lambda-iam.png">
+<img width="700" src="/images/lambda-iam.png">
 </p>
 
 In the reverse engineering part above we already learned that IAM credentials are passt into the Lamda function via environment variables. Let’s do one step back, and rethink our attack vectors. As an adversary it can be hard to read environment variables, so we need anothe weakness to achieve this. Those weaknesses could be:
