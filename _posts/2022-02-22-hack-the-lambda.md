@@ -150,18 +150,19 @@ In the reverse engineering part above we already learned that IAM credentials ar
 1. [XML External Entities (XXE)](https://cwe.mitre.org/data/definitions/1030.html) to achive the ability to read files
 2. [Server Side Ressource Forgery (SSRF)]( CWE - CWE-918: Server-Side Request Forgery (SSRF) (4.6) (mitre.org)) which is the most likely variant of both. Since [everything is a file](https://en.wikipedia.org/wiki/Everything_is_a_file) it`s easy to get your hand on files from outside and even bypass firewalls, because it allows the file protocol 
 
-
+<br>
 <p align="center">
-<img width="600" src="/images/lets-raid.png">
+<img width="250" src="/images/lets-raid.png">
 </p>
 
 With both weaknesses in mind we can access the IAM credentials by reading the file `/proc/self/environ`. 
 In the case that a direct call on `/proc/self/environ` is blocked by a WAF – it sometimes work to read the environment variables of other processes. This can be achieved by reading `/proc/##/environ`,  where '##' is a digit (usually) between 1 and 20.
 > Good to know: Unlike the IAM credentials which are associated with EC2 instances, there is no [GuardDuty](/aws/avoiding-detection/steal-keys-undetected/) alert in place to watch stolen Lambda credentials.
 Beside the IAM credentials a Lambda function also has event data present. These are usually passed into the function when it‘s starting. This data is made available to the function via the [runtime interface](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html). Unlike IAM credentials, this data can be accessed over genuine SSRF at `http://localhost:9001/2018-06-01/runtime/invocation/next`. This will include information about what invoked the Lambda function and may be valuable depending on the context that is injected. From this point there are a lot of options thinkable. Command Injection ist he most likely attack path for this
-   
+ 
+<br><br>
 <p align="center">
-<img width="600" src="/images/e30fa9fdb78da311be32f4da56a67db1.png">
+<img width="500" src="/images/e30fa9fdb78da311be32f4da56a67db1.png">
 </p>
 
 Take a look [here](https://github.com/BenjiTrapp/smashing-aws-lambda) 
