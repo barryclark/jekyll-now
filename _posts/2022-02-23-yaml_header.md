@@ -136,6 +136,10 @@ mehrspaltige Layout wieder endet muss der Befehl `\end{multicols}`
 eingefügt werden. 
 Der Text kann dabei nicht nur zweispaltig gesetzt werden.
 
+Falls der Abstand zwischen den Spalten zu klein sein sollte, kann er mit
+dem Befehl `\setlength{\columnsep}{48pt}` im YAML-Header angepasst
+werden. Es kann natürlich ein anderer Wert als `48pt}` eingesetzt werden.
+
 ### Zeilennummerierung
 
 Falls im Text die Zeilen nummeriert werden sollten, ist auch dies
