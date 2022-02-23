@@ -136,4 +136,17 @@ mehrspaltige Layout wieder endet muss der Befehl `\end{multicols}`
 eingefügt werden. 
 Der Text kann dabei nicht nur zweispaltig gesetzt werden.
 
+### Zeilennummerierung
+
+Falls im Text die Zeilen nummeriert werden sollten, ist auch dies
+möglich. Für diese Aufgabe ist das Packet `lineno` im YAML-Header
+einzubinden.
+
+```yaml
+\usepackage{lineno}
+```
+
+Die Option `[modulo]` nummeriert die Zeilen nur, wenn sie ein Vielfaches
+von fünf bildet.
+
 
