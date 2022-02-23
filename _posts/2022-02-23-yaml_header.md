@@ -3,6 +3,12 @@ layout: post
 title: "YAML-Header Vorlagen"
 ---
 
+## Motivation
+
+Ein YAML-Header vereinfacht die Transformation des .md-files in das
+gewünschte Ausgabeformat. Angestrebt ist, dass im Terminal lediglich 
+`pandoc mein_file.md -- -o output.pdf` ausgeführt werden muss.
+
 ## Header für kurze Texte
 
 Für Texte wie kleine Rechtsfälle oder Essays reicht ein kurzer Header
