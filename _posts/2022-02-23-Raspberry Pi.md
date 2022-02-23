@@ -2,7 +2,6 @@
 ---
 layout: post
 title: Raspberry Pi
-CustomVariable : <value>
 ---
 
 # How to install Raspbian on Raspberry Pi
