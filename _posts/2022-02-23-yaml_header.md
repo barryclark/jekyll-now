@@ -158,10 +158,10 @@ von fünf bildet.
 Um in Markdown Bilder einzufügen, verwendet man den Befehl 
 `![Bildlegende](/Pfad/zum/Bild.jpg)`. 
 Dies führt für die Ausgabe eines PDF standardmässig zu einer
-Bildunterschrift "Bildlegende". Das untenstehende Bild wurde mit dem
-Befehl `![Pfäffikersee](../images/see.jpg)` eingebunden.
+Bildunterschrift "Bildlegende".
 
-![Pfäffikersee](../images/see.jpg)
+Ein Abbildungsverzeichnis kann erstellt werden, indem man an der
+gewünschten Stelle den Befehl `\listoffigures` einfügt.
 
 
 
