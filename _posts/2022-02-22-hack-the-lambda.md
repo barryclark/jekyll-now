@@ -93,7 +93,7 @@ def lambda_handler(event, context):
     
     return {'statusCode': 200}
 ```
-After running the code and using some of the known facts regarding AWS Lambda, we can round it up to the following list:
+After running the code and using some of the known facts regarding AWS Lambda, we can wrap it up to the following list:
 * Runs on an Amazon Linux (RHEL derivative).
 * According to environment variables, it runs in - EC2 but must be some kind of container system
 * Read-only file system - this tackles persistance
@@ -146,7 +146,7 @@ Here's what we can do - based on the three sections identified in our attack str
 <img width="700" src="/images/lambda-iam.png">
 </p>
 
-In the reverse engineering part above we already learned that IAM credentials are passt into the Lamda function via environment variables. Let’s do one step back, and rethink our attack vectors. As an adversary it can be hard to read environment variables, so we need anothe weakness to achieve this. Those weaknesses could be:
+In the reverse engineering part above we already learned that IAM credentials are passed into the Lamda function via environment variables. Let’s go one step back, and rethink our attack vectors. As an adversary it can be hard to read environment variables, so we need to abuse another weakness to achieve this. Those weaknesses could be:
 
 1. [XML External Entities (XXE)](https://cwe.mitre.org/data/definitions/1030.html) to achive the ability to read files
 2. [Server Side Ressource Forgery (SSRF)]( CWE - CWE-918: Server-Side Request Forgery (SSRF) (4.6) (mitre.org)) which is the most likely variant of both. Since [everything is a file](https://en.wikipedia.org/wiki/Everything_is_a_file) it`s easy to get your hand on files from outside and even bypass firewalls, because it allows the file protocol 
