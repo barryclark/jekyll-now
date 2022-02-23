@@ -26,4 +26,3 @@ Step 5: Click on Raspberry Pi OS Lite (32-bit)
 Step 6: Reinsert the SD Card
 Step 7: Open the Boot folder aka SD Card's folder
 Step 8: Create an ssh file in boot folder. Make sure the file doesn’t have any extensions, should be only 'ssh' 
-![image](https://user-images.githubusercontent.com/22066581/155429614-416942fd-7d2b-4ade-b672-4726e5381dc6.png)
