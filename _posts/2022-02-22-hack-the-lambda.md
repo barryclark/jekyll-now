@@ -93,8 +93,7 @@ def lambda_handler(event, context):
     
     return {'statusCode': 200}
 ```
-After running the code and using some of the known facts regarding AWS Lambda we can round it up:
-Known facts:
+After running the code and using some of the known facts regarding AWS Lambda, we can round it up to the following list:
 * Runs on an Amazon Linux (RHEL derivative).
 * According to environment variables it runs in EC2 but must be some kind of container system
 * Read-only file system
@@ -128,16 +127,17 @@ Based on our attack strategy we have a too complex blob, to manage this blob bet
 <img width="600" src="/images/lambda-architecture-busted.png">
 </p>
 
-1.	Outer Attack Surface -> The way in
+1.	Outer Attack Surface -> The way inside
 2.	Inner Attack Surface -> If we made it inside, there are plenty of things we can use to leverage an attack
 3.	IAM -> The Quote of Jeff Bryner (@0x7eff) says it all: IAM is the “killer feature” and the “killer feature”
+
 Here's what we can do, based on the three areas and our attack strategy:
 * Compromise data 
 * Abuse business logic
 * Bypass authentication
 * Leak secrets
 * Denial of service
-* Financial exhaustion
+* Financial exhaustion/ Denial of Wallet
 * Execute malicious code
 * ...surely much more nasty things
 
@@ -155,8 +155,9 @@ In the reverse engineering part above we already learned that IAM credentials ar
 <img width="250" src="/images/lets-raid.png">
 </p>
 
-With both weaknesses in mind we can access the IAM credentials by reading the file `/proc/self/environ`. 
-In the case that a direct call on `/proc/self/environ` is blocked by a WAF – it sometimes work to read the environment variables of other processes. This can be achieved by reading `/proc/##/environ`,  where '##' is a digit (usually) between 1 and 20.
+With both weaknesses in mind, we can access the IAM credentials by reading the file `/proc/self/environ`. 
+In the case that a direct call on `/proc/self/environ` is blocked by a WAF – it sometimes work to read the environment variables of other processes. This can be achieved by reading `/proc/##/environ`, where '##' is a digit (usually) between 1 and 20.
+
 > Good to know: Unlike the IAM credentials which are associated with EC2 instances, there is no [GuardDuty](/aws/avoiding-detection/steal-keys-undetected/) alert in place to watch stolen Lambda credentials.
 Beside the IAM credentials a Lambda function also has event data present. These are usually passed into the function when it‘s starting. This data is made available to the function via the [runtime interface](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html). Unlike IAM credentials, this data can be accessed over genuine SSRF at `http://localhost:9001/2018-06-01/runtime/invocation/next`. This will include information about what invoked the Lambda function and may be valuable depending on the context that is injected. From this point there are a lot of options thinkable. Command Injection ist he most likely attack path for this
  
