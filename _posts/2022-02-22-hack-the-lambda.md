@@ -254,7 +254,7 @@ Use this runner on your local machine to invoke the tsunami and test if the vict
 
 <br><br>
 <p align="center">
-<img width="500" src="/images/mitigation.png">
+<img width="250" src="/images/mitigation.png">
 </p>
 
 Now it's time to stop the kids who are playing around and check the options we have to mitigate this attack:
