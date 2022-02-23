@@ -175,7 +175,6 @@ Code zeigt die möglichen Formatierungen.
 |   12   |   12  |     12   |       12  |
 |  123   |   123 |    123   |      123  |
 |    1   |     1 |      1   |        1  |
-:Table Tabellenbeschreibung
 ```
 
 Dieser Code führt zu folgender Tabelle:
@@ -185,4 +184,11 @@ Dieser Code führt zu folgender Tabelle:
 |   12   |   12  |     12   |       12  |
 |  123   |   123 |    123   |      123  |
 |    1   |     1 |      1   |        1  |
-: Table Tabellenbeschreibung
+
+Der Übersicht willen sind im Code-Beispiel die Spalten schön
+ausgerichtet; dies ist aber nicht nötig.
+
+Um die Tabelle zu beschriften, ist unterhalb der Tabelle der Befehl
+`:Table Tabellenbeschriftung` einzufügen. Aus diesen
+Tabellenbeschriftungen kann mit dem Befehl `\listoftables` ein
+Tabellenverzeichnis erstellt werden.
