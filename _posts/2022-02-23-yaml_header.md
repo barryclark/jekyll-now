@@ -163,6 +163,26 @@ Bildunterschrift "Bildlegende".
 Ein Abbildungsverzeichnis kann erstellt werden, indem man an der
 gewünschten Stelle den Befehl `\listoffigures` einfügt.
 
+### Tabellen und Tabellenverzeichnis
 
+Tabellen in Markdown sind auf den ersten Blick nicht so leicht
+zugänglich. Aber auch Sie werden als reiner Text eingefügt. Der folgende
+Code zeigt die möglichen Formatierungen.
 
+```markdown
+| rechts | links | standard | zentriert |
+|-------:|:------|----------|:---------:|
+|   12   |   12  |     12   |       12  |
+|  123   |   123 |    123   |      123  |
+|    1   |     1 |      1   |        1  |
+:Table Tabellenbeschreibung
+```
 
+Dieser Code führt zu folgender Tabelle:
+
+| rechts | links | standard | zentriert |
+|-------:|:------|----------|:---------:|
+|   12   |   12  |     12   |       12  |
+|  123   |   123 |    123   |      123  |
+|    1   |     1 |      1   |        1  |
+: Table Tabellenbeschreibung
