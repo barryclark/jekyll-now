@@ -78,6 +78,8 @@ Beispiel ein Inhaltsverzeichnis oder ein Abbildungsverzeichnis erstellt
 werden können. Oft gibt es auch Vorgaben bezüglich der Ränder oder des
 Zeilenabstands.
 
+### Inhaltsverzeichnis
+
 Ein Inhaltsverzeichnis kann mit dem LaTEX-Befehl `\tableofcontents` an
 der gewünschten Stelle eingefügt werden. Damit die LaTEX-Engine den
 Titel für das Inhaltsverzeichnis in der gewünschten Sprache ausgibt,
@@ -94,3 +96,25 @@ Damit wird das LaTEX Packet `babel` eingebunden. In den eckigen Klammern
 kann angegeben werden, in welche Sprache die LaTEX Standardtexte
 übersetzt werden sollen. So ist sichergestellt, dass das
 "Inhaltsverzeichnis" so und nicht "Contents" heisst.
+
+### Seitenränder
+
+Eine präzise Steuerung der Seitenränder ermöglicht das Packet
+`geometry`. Dieses kann analog zum Packet `babel`eingebunden werden. Die
+Seitenränder werden dann als Parameter in den eckigen Klammern
+definiert.
+
+```yaml
+\usepackage[a4paper,
+            left=2cm,
+            right=3cm,
+            top=4cm,
+            bottom=3cm]{geometry}
+```
+
+Im Beispiel wird der linke Rand auf 2cm, der rechte Rand auf 3cm, der
+Rand oben an der Seite auf 4cm und der untere Rand auf 3cm festgelegt.
+Die Werte sind beliebig wählbar und könnten auch in anderen
+Masseinheiten angegeben werden.
+
+
