@@ -12,11 +12,16 @@ Here is the link to the [Imager](https://www.raspberrypi.com/software/)
 ## Instructions
 
 Step 1: Make sure your computer can recognize the sd card
+  
 Step 2: Open Raspberry pi Imager 
+
 Step 3: Click on Choose OS
-Step 4: Click on Raspberry Pi OS(32-bit) 
-Step 5: Click on Choose Storage
-Step 5: Click on your SD Card
+
+  Step 4: Click on Raspberry Pi OS(32-bit) 
+
+  Step 5: Click on Choose Storage
+
+  Step 5: Click on your SD Card
 
 ## Instructions for Headless OS
 
