@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Raspberry Pi Tutorials"
