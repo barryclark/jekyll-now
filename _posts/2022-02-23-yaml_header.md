@@ -11,15 +11,16 @@ Beispiel dürfte das wesentliche abdecken.
 
 ```yaml
 ---
+# Angaben für das Deckblatt
 title: Titel
 author: Verfasser
 date: 23.02.2022
 
-# Bibliographie
+# Angaben zum Inhalt und zur Darstellung der Bibliographie
 bibliography: Bibliographie.yaml
 csl: chicago-note-bibliography.csl
 
-# output
+# Angaben zum Layout
 output: 
     pdf_document:
         latex_engine: xelatex
@@ -27,8 +28,23 @@ output:
     papersize: a4
     lang: de-CH 
 ---
-
 ````
 
 Der Header bietet die Möglichkeit, Kommentare einzufügen. Kommentare
-werden mit einer Raute gekennzeichnet.
+helfen einem, die Funktion bestimmter Teile des Headers zu verstehen,
+wenn man sich zu einem späteren Zeitpunkt wieder mit dem Text
+beschäftigt.
+Kommentare werden mit einer Raute gekennzeichnet.
+
+Zu den Elementen des Headers im Einzelnen:
+
+* *Angaben für das Deckblatt*: Diese Angaben sind wahrscheinlich
+  selbsterklärend.
+* *Angaben zum Inhalt und zur Darstellung der Bibliographie*: Der
+  Eintrag `bibliography` gibt an, in welcher Datei die bibliographischen
+  Angaben abgespeichert sind. Wie eine solche Datei erstellt wird, ist
+  in einem separaten Beitrag dargestellt.
+
+  Der Eintrag `csl` legt die Darstellung der Belege und des
+  Literaturverzeichnisses fest. Entsprechende Vorlagen finden sich
+  beispielsweise unter [https://www.zotero.org/styles].
