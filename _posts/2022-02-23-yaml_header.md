@@ -179,11 +179,7 @@ Code zeigt die möglichen Formatierungen.
 
 Dieser Code führt zu folgender Tabelle:
 
-| rechts | links | standard | zentriert |
-|-------:|:------|----------|:---------:|
-|   12   |   12  |     12   |       12  |
-|  123   |   123 |    123   |      123  |
-|    1   |     1 |      1   |        1  |
+![Tabelle](../images/220223_tabelle.jpg)
 
 Der Übersicht willen sind im Code-Beispiel die Spalten schön
 ausgerichtet; dies ist aber nicht nötig.
