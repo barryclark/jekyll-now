@@ -5,7 +5,7 @@ title: "Raspberry Pi Tutorials"
 ---
 
 # How to install Raspbian on Raspberry Pi
-Simple tutoriala to install Raspbian OS on raspberry pi by using Raspberry pi imager.
+Simple tutorial to install Raspbian OS on raspberry pi by using Raspberry pi imager.
 Here is the link to the [Imager](https://www.raspberrypi.com/software/)
 
 ## Instructions
