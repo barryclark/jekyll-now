@@ -26,8 +26,12 @@ Step 3: Click on Choose OS
 ## Instructions for Headless OS
 
 Step 4: Click on Raspberry Pi OS (Other)
-Step 5: Click on Raspberry Pi OS Lite (32-bit)
+  
+  Step 5: Click on Raspberry Pi OS Lite (32-bit)
 <Wait till Imager completed the job>
-Step 6: Reinsert the SD Card
-Step 7: Open the Boot folder aka SD Card's folder
-Step 8: Create an ssh file in boot folder. Make sure the file doesn’t have any extensions, should be only 'ssh' 
+
+  Step 6: Reinsert the SD Card
+
+  Step 7: Open the Boot folder aka SD Card's folder
+
+  Step 8: Create an ssh file in boot folder. Make sure the file doesn’t have any extensions, should be only 'ssh' 
