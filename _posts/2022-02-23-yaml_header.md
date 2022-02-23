@@ -120,4 +120,20 @@ Rand oben an der Seite auf 4cm und der untere Rand auf 3cm festgelegt.
 Die Werte sind beliebig wählbar und könnten auch in anderen
 Masseinheiten angegeben werden.
 
+### Mehrspaltiges Layout
+
+Es ist möglich, den Text in ein mehrspaltiges Layout zu setzen. Dazu
+muss im YAML-Header das Packet `multicol` eingebunden werden. Das geht
+gleich, wie die anderen Pakete.
+
+```yaml
+\usepackage{multicol}
+```
+
+Im Text muss dann an der Stelle, an der der mehrspaltige Text beginnen
+soll, der Befehl `\begin{multicols}{2}` eingefügt werden. Dort wo das
+mehrspaltige Layout wieder endet muss der Befehl `\end{multicols}`
+eingefügt werden. 
+Der Text kann dabei nicht nur zweispaltig gesetzt werden.
+
 
