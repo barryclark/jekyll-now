@@ -77,3 +77,20 @@ Formatierungen, die über die oben dargestellten hinausgehen. So muss zum
 Beispiel ein Inhaltsverzeichnis oder ein Abbildungsverzeichnis erstellt
 werden können. Oft gibt es auch Vorgaben bezüglich der Ränder oder des
 Zeilenabstands.
+
+Ein Inhaltsverzeichnis kann mit dem LaTEX-Befehl `\tableofcontents` an
+der gewünschten Stelle eingefügt werden. Damit die LaTEX-Engine den
+Titel für das Inhaltsverzeichnis in der gewünschten Sprache ausgibt,
+muss der YAML-Header angepasst werden. Zwischen dem Kommentar `# Angaben
+zum Layout`und der Zeile `output:` muss folgender Inhalt eingefügt
+werden:
+
+```yaml
+header-includes:
+    - \usepackage[german]{babel}
+```
+
+Damit wird das LaTEX Packet `babel` eingebunden. In den eckigen Klammern
+kann angegeben werden, in welche Sprache die LaTEX Standardtexte
+übersetzt werden sollen. So ist sichergestellt, dass das
+"Inhaltsverzeichnis" so und nicht "Contents" heisst.
