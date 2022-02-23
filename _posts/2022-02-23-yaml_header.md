@@ -69,3 +69,11 @@ Zu den Elementen des Headers im Einzelnen:
   Der Eintrag `lang` legt die Sprache des Ausgabedokumentes fest. Dies
   ist wichtig für die Steuerung der Trennungen und für die Darstellung
   von Sonderzeichen.
+
+## Umfangreichere Formatierungen
+
+Umfangreichere Arbeiten wie zum Beispiel Seminararbeiten brauchen
+Formatierungen, die über die oben dargestellten hinausgehen. So muss zum
+Beispiel ein Inhaltsverzeichnis oder ein Abbildungsverzeichnis erstellt
+werden können. Oft gibt es auch Vorgaben bezüglich der Ränder oder des
+Zeilenabstands.
