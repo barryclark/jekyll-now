@@ -153,4 +153,16 @@ einzubinden.
 Die Option `[modulo]` nummeriert die Zeilen nur, wenn sie ein Vielfaches
 von fünf bildet.
 
+### Bildlegenden
+
+Um in Markdown Bilder einzufügen, verwendet man den Befehl 
+`![Bildlegende](/Pfad/zum/Bild.jpg)`. 
+Dies führt für die Ausgabe eines PDF standardmässig zu einer
+Bildunterschrift "Bildlegende". Das untenstehende Bild wurde mit dem
+Befehl `![Pfäffikersee](../images/see.jpg)` eingebunden.
+
+![Pfäffikersee](../images/see.jpg)
+
+
+
 
