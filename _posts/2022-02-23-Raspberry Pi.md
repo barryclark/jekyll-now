@@ -27,7 +27,6 @@ Step 5: Click on your SD Card
 Step 4: Click on Raspberry Pi OS (Other)
   
 Step 5: Click on Raspberry Pi OS Lite (32-bit)
-<Wait till Imager completed the job>
 
 Step 6: Reinsert the SD Card
 
