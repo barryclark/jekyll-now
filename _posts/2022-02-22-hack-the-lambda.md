@@ -172,7 +172,7 @@ Beside the IAM credentials a Lambda function also has event data present. These 
 <img width="500" src="/images/postels-law.png">
 </p>
 
-Postel‘s Law is to be honest actually a pretty awesome academic concept for the development of Internet standards. His Law affected RFC 761 regarding the TCP Protocol and had the intention of a freethinking pioneer. Since also bad or stupid people are also using the internet today, he laid the baseline for DDoS. To understand the options to mitigate, we need to understand possible attacks. Therefore let's create a playground for this ([GitHub-Repo is here](https://github.com/BenjiTrapp/smashing-aws-lambda))
+Postel‘s Law is to be honest, actually a pretty awesome academic concept for the development of Internet standards. His Law affected RFC 761 regarding the TCP Protocol and had the intention of a freethinking pioneer. Since bad or stupid people are also using the internet today, he laid the baseline for DDoS. To understand the options to mitigate, we need to understand possible attacks. Therefore let's create a playground for this ([GitHub-Repo is here](https://github.com/BenjiTrapp/smashing-aws-lambda))
 
 Let's start with our Victim Function:
 ```python
@@ -258,7 +258,7 @@ Use this runner on your local machine to invoke the tsunami and test if the vict
 </p>
 
 Now it's time to stop the kids who are playing around and check the options we have to mitigate this attack:
-* Check your code - Make sure your code does not "hang" on unexpected input. You should carefully check all edge cases and think about possible inputs that may cause function timeouts, ReDoS attacks, or long payloads. An attacker may take advantage of this weakness.
+* Check your code - Make sure your code does not "hang" on unexpected input. You should carefully check all edge cases and think about possible inputs that may cause function timeouts, [ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS) attacks, or long payloads. An attacker may take advantage of this weakness.
 * If you don't want to get a huge bill at some point — set up the billing alerts. It's very easy and fast to set up (it's better to do it through AWS Budgets than through AWS SNS and AWS Cloudwatch), but it's very useful — you will be informed in case of a problem.
 * The AWS Lambda has a default limit on the number of concurrent executions per account per region. And if your functions exceed this limit, additional user requests will be throttled by AWS with 429 status as it was described earlier. But the concurrency level can be set on per-function bases. Besides AWS Lambda, th e API Gateway supports throttling as well. The defaults are reasonable, but you can alter them however you like. For example, you can allow 5 calls per second if it makes sense for your application, after which the API Gateway will block additional requests.
 * Use AWS Cloudfront: HTTP and HTTPS requests sent to CloudFront can be monitored, and access to application resources can be controlled at the edge locations using AWS WAF. Based on the conditions you specify in the AWS WAF, such as the IP addresses from which the requests originate or the values of query strings, traffic can be allowed, blocked, or allowed and counted for further investigation
