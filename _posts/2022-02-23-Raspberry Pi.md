@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: "Raspberry Pi"
+title: "Raspberry Pi Tutorials"
 ---
 
 # How to install Raspbian on Raspberry Pi
