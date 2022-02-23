@@ -97,6 +97,9 @@ kann angegeben werden, in welche Sprache die LaTEX Standardtexte
 übersetzt werden sollen. So ist sichergestellt, dass das
 "Inhaltsverzeichnis" so und nicht "Contents" heisst.
 
+Falls man die Titel gerne nummeriert hat, ist der Pandoc-Befehl
+anzupassen. Er muss dann den Parameter `--number-sections` beinhalten.
+
 ### Seitenränder
 
 Eine präzise Steuerung der Seitenränder ermöglicht das Packet
