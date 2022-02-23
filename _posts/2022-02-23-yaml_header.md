@@ -7,7 +7,7 @@ title: "YAML-Header Vorlagen"
 
 Ein YAML-Header vereinfacht die Transformation des .md-files in das
 gewünschte Ausgabeformat. Angestrebt ist, dass im Terminal lediglich 
-`pandoc mein_file.md --citeproc -o output.pdf` ausgeführt werden muss.
+`pandoc mein_file.md --citeproc -o output.fte` ausgeführt werden muss.
 
 ## Header für kurze Texte
 
