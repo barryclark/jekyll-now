@@ -191,4 +191,5 @@ ausgerichtet; dies ist aber nicht nötig.
 Um die Tabelle zu beschriften, ist unterhalb der Tabelle der Befehl
 `:Table Tabellenbeschriftung` einzufügen. Aus diesen
 Tabellenbeschriftungen kann mit dem Befehl `\listoftables` ein
-Tabellenverzeichnis erstellt werden.
+Tabellenverzeichnis erstellt werden. Das Tabellenverzeichnis wird dabei
+genau an der Stelle eingefügt, an der der Befehl im Text steht.
