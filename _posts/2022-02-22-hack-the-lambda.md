@@ -258,6 +258,7 @@ Use this runner on your local machine to invoke the tsunami and test if the vict
 </p>
 
 Now it's time to stop the kids who are playing around and check the options we have to mitigate this attack:
+* The no-brainer - Increase the [Concurrency Limit](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html)
 * Check your code - Make sure your code does not "hang" on unexpected input. You should carefully check all edge cases and think about possible inputs that may cause function timeouts, [ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS) attacks, or long payloads. An attacker may take advantage of this weakness.
 * If you don't want to get a huge bill at some point — set up the billing alerts. It's very easy and fast to set up (it's better to do it through AWS Budgets than through AWS SNS and AWS Cloudwatch), but it's very useful — you will be informed in case of a problem.
 * The AWS Lambda has a default limit on the number of concurrent executions per account per region. And if your functions exceed this limit, additional user requests will be throttled by AWS with 429 status as it was described earlier. But the concurrency level can be set on per-function bases. Besides AWS Lambda, th e API Gateway supports throttling as well. The defaults are reasonable, but you can alter them however you like. For example, you can allow 5 calls per second if it makes sense for your application, after which the API Gateway will block additional requests.
